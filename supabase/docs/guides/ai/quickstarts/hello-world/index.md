@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:52:11.008Z"
 content_hash: "fe367b87b7926997f472b103f62f7299280082912a2d375c26a43605d60d6e34"
 menu_path: ["AI & Vectors","AI & Vectors","Python Examples","Python Examples","Creating and managing collections","Creating and managing collections"]
 section_path: ["AI & Vectors","AI & Vectors","Python Examples","Python Examples","Creating and managing collections","Creating and managing collections"]
-nav_prev: {"path": "supabase/docs/guides/ai/quickstarts/face-similarity/index.md", "title": "Face similarity search"}
-nav_next: {"path": "supabase/docs/guides/ai/quickstarts/generate-text-embeddings/index.md", "title": "Generate Embeddings"}
+nav_prev: {"path": "supabase/docs/guides/ai/quickstarts/generate-text-embeddings/index.md", "title": "Generate Embeddings"}
+nav_next: {"path": "supabase/docs/guides/ai/quickstarts/text-deduplication/index.md", "title": "Semantic Text Deduplication"}
 ---
 
 # 

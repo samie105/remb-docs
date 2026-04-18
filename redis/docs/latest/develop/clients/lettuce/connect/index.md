@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:46:42.919Z"
 content_hash: "8df55614df69d24f953575a70472cdbe823be025d12bed189f5be1fe0ff2cfa2"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Connect with Redis client API libraries","→","Connect with Redis client API libraries","→\n      \n        Lettuce guide (Java)","→","Lettuce guide (Java)","→\n      \n        Connect to the server","→","Connect to the server"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Connect with Redis client API libraries","→","Connect with Redis client API libraries","→\n      \n        Lettuce guide (Java)","→","Lettuce guide (Java)","→\n      \n        Connect to the server","→","Connect to the server"]
-nav_prev: {"path": "redis/docs/latest/develop/clients/jedis/connect/index.md", "title": "Connect to the server"}
-nav_next: {"path": "redis/docs/latest/develop/clients/nodejs/connect/index.md", "title": "Connect to the server"}
+nav_prev: {"path": "redis/docs/latest/develop/clients/lettuce/amr/index.md", "title": "Connect to Azure Managed Redis"}
+nav_next: {"path": "redis/docs/latest/develop/clients/lettuce/queryjson/index.md", "title": "Index and query documents"}
 ---
 
 # Connect to the server

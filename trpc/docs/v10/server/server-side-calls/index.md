@@ -10,7 +10,7 @@ content_hash: "cdda10cb27a01a7fff367772184ff1583583e60cbc51ddf747ac830be9313947"
 menu_path: ["Server Side Calls"]
 section_path: []
 nav_prev: {"path": "trpc/docs/v10/server/routers/index.md", "title": "Define Routers"}
-nav_next: {"path": "trpc/docs/v10/subscriptions/index.md", "title": "Subscriptions / WebSockets"}
+nav_next: {"path": "trpc/docs/v10/server/validators/index.md", "title": "Input & Output Validators"}
 ---
 
 You may need to call your procedure(s) directly from the same server they're hosted in, `createCallerFactory()` can be used to achieve this. This is useful for server-side calls and for integration testing of your tRPC procedures.

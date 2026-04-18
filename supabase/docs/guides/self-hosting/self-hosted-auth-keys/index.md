@@ -10,7 +10,7 @@ content_hash: "9511a3b517eaa0539a3467e66f582f8eea7f3476a0e6de4c5e144b700e648d5c"
 menu_path: ["Self-Hosting","Self-Hosting","How-to Guides","How-to Guides","Configure new API keys","Configure new API keys"]
 section_path: ["Self-Hosting","Self-Hosting","How-to Guides","How-to Guides","Configure new API keys","Configure new API keys"]
 nav_prev: {"path": "supabase/docs/guides/self-hosting/restore-from-platform/index.md", "title": "Restore a Platform Project to Self-Hosted"}
-nav_next: {"path": "supabase/docs/guides/self-hosting/self-hosted-oauth/index.md", "title": "Configure Social Login (OAuth) Providers"}
+nav_next: {"path": "supabase/docs/guides/self-hosting/self-hosted-functions/index.md", "title": "Self-Hosted Functions"}
 ---
 
 # 

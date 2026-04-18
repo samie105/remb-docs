@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:43:25.273Z"
 content_hash: "b23d3b14c977f4b2acdb0f61f91da84d40e20874ae24b39ebf1f088eada20bdc"
 menu_path: ["Usage with React"]
 section_path: []
-nav_prev: {"path": "trpc/docs/v9/react-mutations/index.md", "title": "useMutation()"}
-nav_next: {"path": "trpc/docs/v9/react-queries/index.md", "title": "useQuery()"}
+nav_prev: {"path": "trpc/docs/v9/quickstart/index.md", "title": "Quickstart"}
+nav_next: {"path": "trpc/docs/v9/react-mutations/index.md", "title": "useMutation()"}
 ---
 
 info

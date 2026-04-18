@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:39:20.472Z"
 content_hash: "ef176fd9506d8a1d29d5f122b38371469eff0ff348c9881ae0c0a9fb1da5c9ee"
 menu_path: ["PostgreSQL: Documentation: 18: 53.18. pg_publication_tables"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/logical-replication-col-lists.html/index.md", "title": "PostgreSQL: Documentation: 18: 29.5.\u00a0Column Lists"}
-nav_next: {"path": "postgres/docs/current/indexes-multicolumn.html/index.md", "title": "PostgreSQL: Documentation: 18: 11.3.\u00a0Multicolumn Indexes"}
+nav_prev: {"path": "postgres/docs/current/view-pg-prepared-xacts.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.17.\u00a0pg_prepared_xacts"}
+nav_next: {"path": "postgres/docs/current/view-pg-replication-origin-status.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.19.\u00a0pg_replication_origin_status"}
 ---
 
 Development Versions: [devel](https://www.postgresql.org/docs/devel/view-pg-publication-tables.html "PostgreSQL devel - 53.18. pg_publication_tables")

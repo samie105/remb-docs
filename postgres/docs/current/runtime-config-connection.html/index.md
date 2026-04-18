@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:53:48.979Z"
 content_hash: "3c365d09bfa5c760f1aa9c92c12a382468e6f372f34003354c709c0e0703880e"
 menu_path: ["PostgreSQL: Documentation: 18: 19.3. Connections and Authentication"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/index-unique-checks.html/index.md", "title": "PostgreSQL: Documentation: 18: 63.5.\u00a0Index Uniqueness Checks"}
-nav_next: {"path": "postgres/docs/current/infoschema-sql-implementation-info.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.49.\u00a0sql_implementation_info"}
+nav_prev: {"path": "postgres/docs/current/runtime-config-compatible.html/index.md", "title": "PostgreSQL: Documentation: 18: 19.13.\u00a0Version and Platform Compatibility"}
+nav_next: {"path": "postgres/docs/current/runtime-config-preset.html/index.md", "title": "PostgreSQL: Documentation: 18: 19.15.\u00a0Preset Options"}
 ---
 
 ### 19.3.1. Connection Settings [#](#RUNTIME-CONFIG-CONNECTION-SETTINGS)

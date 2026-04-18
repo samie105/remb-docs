@@ -9,7 +9,7 @@ last_crawled_at: "2026-04-18T16:34:28.846Z"
 content_hash: "c9ac0aeed7045b33ef66ef0efebf9c9bd358e32ed2931e2810a4e1bdbcb970f6"
 menu_path: ["AI & Vectors","AI & Vectors","Search","Search","Semantic search","Semantic search"]
 section_path: ["AI & Vectors","AI & Vectors","Search","Search","Semantic search","Semantic search"]
-nav_prev: {"path": "supabase/docs/guides/ai/python-clients/index.md", "title": "Choosing a Client"}
+nav_prev: {"path": "supabase/docs/guides/ai/rag-with-permissions/index.md", "title": "RAG with Permissions"}
 nav_next: {"path": "supabase/docs/guides/ai/structured-unstructured/index.md", "title": "Structured and Unstructured"}
 ---
 

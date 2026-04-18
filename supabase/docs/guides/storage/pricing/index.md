@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:50:58.922Z"
 content_hash: "f18acb9f2550849eb2cd9b9419762ec510095da89f2d3a4deedebf0cd05a30fb"
 menu_path: ["Storage","Storage","File Buckets","File Buckets","Pricing","Pricing"]
 section_path: ["Storage","Storage","File Buckets","File Buckets","Pricing","Pricing"]
-nav_prev: {"path": "supabase/docs/guides/self-hosting/self-hosted-saml-sso/index.md", "title": "Configure SAML SSO"}
-nav_next: {"path": "supabase/docs/guides/storage/quickstart/index.md", "title": "Storage Quickstart"}
+nav_prev: {"path": "supabase/docs/guides/storage/management/download-objects/index.md", "title": "Download Objects"}
+nav_next: {"path": "supabase/docs/guides/storage/production/scaling/index.md", "title": "Storage Optimizations"}
 ---
 
 # 

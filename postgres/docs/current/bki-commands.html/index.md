@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:37:15.989Z"
 content_hash: "97fa5d6b9687b0a31e14e3996ddcd916750691c5af55be1bc16280b59f1e78e9"
 menu_path: ["PostgreSQL: Documentation: 18: 68.4. BKI Commands"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/sql-merge.html/index.md", "title": "PostgreSQL: Documentation: 18: MERGE"}
-nav_next: {"path": "postgres/docs/current/runtime-config-short.html/index.md", "title": "PostgreSQL: Documentation: 18: 19.18.\u00a0Short Options"}
+nav_prev: {"path": "postgres/docs/current/basic-archive.html/index.md", "title": "PostgreSQL: Documentation: 18: F.5.\u00a0basic_archive \u2014 an example WAL archive module"}
+nav_next: {"path": "postgres/docs/current/bki-example.html/index.md", "title": "PostgreSQL: Documentation: 18: 68.6.\u00a0BKI Example"}
 ---
 
 Create a table named _`tablename`_, and having the OID _`tableoid`_, with the columns given in parentheses.

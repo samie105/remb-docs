@@ -9,7 +9,7 @@ last_crawled_at: "2026-04-18T16:37:18.657Z"
 content_hash: "2599a83a038cd7d61f43419e3d06cde8f773de6d3951b609048194be6b8f6436"
 menu_path: ["Benchmarking"]
 section_path: []
-nav_prev: {"path": "fastify/docs/latest/Guides/Testing/index.md", "title": "Testing"}
+nav_prev: {"path": "fastify/docs/latest/Reference/index.md", "title": "Index"}
 nav_next: {"path": "fastify/docs/latest/Guides/Contributing/index.md", "title": "Contributing To Fastify"}
 ---
 

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:39:12.323Z"
 content_hash: "89505de8896ce5be2ed9adbbbf5e2667e195d31c0f678c46a0a69f92ab125480"
 menu_path: ["PostgreSQL: Documentation: 18: 29.5. Column Lists"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/queries-values.html/index.md", "title": "PostgreSQL: Documentation: 18: 7.7.\u00a0VALUES Lists"}
-nav_next: {"path": "postgres/docs/current/view-pg-publication-tables.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.18.\u00a0pg_publication_tables"}
+nav_prev: {"path": "postgres/docs/current/logical-replication-architecture.html/index.md", "title": "PostgreSQL: Documentation: 18: 29.9.\u00a0Architecture"}
+nav_next: {"path": "postgres/docs/current/logical-replication-publication.html/index.md", "title": "PostgreSQL: Documentation: 18: 29.1.\u00a0Publication"}
 ---
 
 Each publication can optionally specify which columns of each table are replicated to subscribers. The table on the subscriber side must have at least all the columns that are published. If no column list is specified, then all columns on the publisher are replicated. See [CREATE PUBLICATION](https://www.postgresql.org/docs/current/sql-createpublication.html "CREATE PUBLICATION") for details on the syntax.

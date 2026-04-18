@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:39:14.242Z"
 content_hash: "deb7e8558863f81d20e23750c18287e4dce21bb5ccbb36079596a6216e299063"
 menu_path: ["Auth","Auth","More","More","More","Sessions","Sessions","User sessions","User sessions"]
 section_path: ["Auth","Auth","More","More","More","Sessions","Sessions","User sessions","User sessions"]
-nav_prev: {"path": "supabase/docs/guides/auth/server-side/index.md", "title": "Server-Side Rendering"}
-nav_next: {"path": "supabase/docs/guides/auth/signout/index.md", "title": "Signing out"}
+nav_prev: {"path": "supabase/docs/guides/auth/server-side/migrating-to-ssr-from-auth-helpers/index.md", "title": "Migrating to the SSR package from Auth Helpers"}
+nav_next: {"path": "supabase/docs/guides/auth/sessions/implicit-flow/index.md", "title": "Implicit flow"}
 ---
 
 # 

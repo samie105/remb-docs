@@ -10,7 +10,7 @@ content_hash: "010622ad3abf9a8dedef9ad077fc75c8ed0cc08a71ab8ad2bfe4e445816b5e4d"
 menu_path: ["Start with Supabase","Start with Supabase","Framework Quickstarts","Framework Quickstarts","iOS SwiftUI","iOS SwiftUI"]
 section_path: ["Start with Supabase","Start with Supabase","Framework Quickstarts","Framework Quickstarts","iOS SwiftUI","iOS SwiftUI"]
 nav_prev: {"path": "supabase/docs/guides/getting-started/quickstarts/hono/index.md", "title": "Use Supabase with Hono"}
-nav_next: {"path": "supabase/docs/guides/getting-started/quickstarts/laravel/index.md", "title": "Use Supabase with Laravel"}
+nav_next: {"path": "supabase/docs/guides/getting-started/quickstarts/kotlin/index.md", "title": "Use Supabase with Android Kotlin"}
 ---
 
 # 

@@ -10,7 +10,7 @@ content_hash: "dd15d247599e455c6b0f18b571d10f18ed6e54b3f1e5da656c5cca7c7f6a58f7"
 menu_path: ["Migrate from TypeORM to Drizzle"]
 section_path: []
 nav_prev: {"path": "drizzle/docs/migrate/migrate-from-sequelize/index.md", "title": "Migrate from Sequelize to Drizzle"}
-nav_next: {"path": "drizzle/docs/tutorials/bun-railway-pg/index.md", "title": "Drizzle with Bun and PostgreSQL on Railway"}
+nav_next: {"path": "drizzle/docs/rqb-fundamentals/index.md", "title": "404"}
 ---
 
 This guide provides a straightforward approach to migrating a basic **TypeORM** project to **Drizzle ORM**. Although the example focuses on `PostgreSQL`, the process is similar for other supported databases.

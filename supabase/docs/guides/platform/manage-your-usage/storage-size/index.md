@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:00:20.858Z"
 content_hash: "af4018369260e0858d740220134539a273d2999592d6a8091edc2a87eaf7e944"
 menu_path: ["Platform","Platform","More","More","More","Manage your usage","Manage your usage","Storage Size","Storage Size"]
 section_path: ["Platform","Platform","More","More","More","Manage your usage","Manage your usage","Storage Size","Storage Size"]
-nav_prev: {"path": "supabase/docs/guides/platform/mfa/org-mfa-enforcement/index.md", "title": "Enforce MFA on Organization"}
-nav_next: {"path": "supabase/docs/guides/platform/migrating-to-supabase/amazon-rds/index.md", "title": "Migrate from Amazon RDS to Supabase"}
+nav_prev: {"path": "supabase/docs/guides/platform/manage-your-usage/realtime-peak-connections/index.md", "title": "Manage Realtime Peak Connections usage"}
+nav_next: {"path": "supabase/docs/guides/platform/mfa/org-mfa-enforcement/index.md", "title": "Enforce MFA on Organization"}
 ---
 
 # 

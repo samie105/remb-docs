@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:36:41.361Z"
 content_hash: "47758d7705c8e63b77a97bad3d58d10701548faef1b95ba2852b2b8855c9e59e"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Manage Redis","→","Manage Redis","→\n      \n        Redis security","→","Redis security","→\n      \n        ACL","→","ACL"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Manage Redis","→","Manage Redis","→\n      \n        Redis security","→","Redis security","→\n      \n        ACL","→","ACL"]
-nav_prev: {"path": "redis/docs/latest/operate/kubernetes/release-notes/8-0-6-releases/8-0-6-8-december2025/index.md", "title": "Redis Enterprise for Kubernetes 8.0.6-8 (December 2025) release notes"}
-nav_next: {"path": "redis/docs/latest/operate/oss_and_stack/management/admin/index.md", "title": "Redis administration"}
+nav_prev: {"path": "redis/docs/latest/operate/oss_and_stack/management/security/index.md", "title": "Redis security"}
+nav_next: {"path": "redis/docs/latest/operate/oss_and_stack/management/security/encryption/index.md", "title": "TLS"}
 ---
 
 # ACL

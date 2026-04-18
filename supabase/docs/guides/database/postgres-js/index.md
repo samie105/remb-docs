@@ -10,7 +10,7 @@ content_hash: "fd884cc657ac4fec93e6091869c505519b0cc749ee3e3742b75d5e2434fc3c2c"
 menu_path: ["Database","Database","ORM Quickstarts","ORM Quickstarts","Postgres.js","Postgres.js"]
 section_path: ["Database","Database","ORM Quickstarts","ORM Quickstarts","Postgres.js","Postgres.js"]
 nav_prev: {"path": "supabase/docs/guides/database/pgadmin/index.md", "title": "Connecting with pgAdmin"}
-nav_next: {"path": "supabase/docs/guides/database/psql/index.md", "title": "Connecting with PSQL"}
+nav_next: {"path": "supabase/docs/guides/database/postgres/cascade-deletes/index.md", "title": "Cascade Deletes"}
 ---
 
 # 

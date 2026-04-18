@@ -10,7 +10,7 @@ content_hash: "cbcd8728a6301148b4e8b8f1b26eca113d0c21afb9cc935ab6d572636565ea08"
 menu_path: ["querystring - Node documentation"]
 section_path: []
 nav_prev: {"path": "deno/deno/api/node/punycode/index.md", "title": "punycode - Node documentation"}
-nav_next: {"path": "deno/deno/api/node/process/index.md", "title": "process - Node documentation"}
+nav_next: {"path": "deno/deno/api/node/readline/index.md", "title": "readline - Node documentation"}
 ---
 
 ### Usage in Deno

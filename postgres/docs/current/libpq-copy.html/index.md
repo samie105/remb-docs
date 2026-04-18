@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:43:17.731Z"
 content_hash: "37cadcec73c273139b1f763f902a795c9838fde7bda6a0859af16cfea6c93b4d"
 menu_path: ["PostgreSQL: Documentation: 18: 32.10. Functions Associated with the COPY Command"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/rules-update.html/index.md", "title": "PostgreSQL: Documentation: 18: 39.4.\u00a0Rules on INSERT, UPDATE, and DELETE"}
-nav_next: {"path": "postgres/docs/current/view-pg-policies.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.15.\u00a0pg_policies"}
+nav_prev: {"path": "postgres/docs/current/libpq-control.html/index.md", "title": "PostgreSQL: Documentation: 18: 32.11.\u00a0Control Functions"}
+nav_next: {"path": "postgres/docs/current/libpq-envars.html/index.md", "title": "PostgreSQL: Documentation: 18: 32.15.\u00a0Environment Variables"}
 ---
 
 The `COPY` command in PostgreSQL has options to read from or write to the network connection used by libpq. The functions described in this section allow applications to take advantage of this capability by supplying or consuming copied data.

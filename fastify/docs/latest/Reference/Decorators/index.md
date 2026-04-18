@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:32:35.422Z"
 content_hash: "ab42cf2b8a225fae307004258aa1e4adfae554598db92037cc1af89699a27c00"
 menu_path: ["Decorators"]
 section_path: []
-nav_prev: {"path": "fastify/docs/latest/Reference/Encapsulation/index.md", "title": "Encapsulation"}
-nav_next: {"path": "fastify/docs/latest/Reference/HTTP2/index.md", "title": "HTTP2"}
+nav_prev: {"path": "fastify/docs/latest/Reference/ContentTypeParser/index.md", "title": "ContentTypeParser"}
+nav_next: {"path": "fastify/docs/latest/Reference/Encapsulation/index.md", "title": "Encapsulation"}
 ---
 
 Version: latest (v5.8.x)

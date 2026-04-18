@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:56:24.290Z"
 content_hash: "f1a37acd4792716cbb26cf7d7d3a0c52c511a4fe3e74672d061b99bd3e15e19e"
 menu_path: ["Enable compression for WebSocket messages"]
 section_path: []
-nav_prev: {"path": "bun/bun/docs/guides/util/version/index.md", "title": "Get the current Bun version"}
-nav_next: {"path": "bun/bun/docs/guides/websocket/pubsub/index.md", "title": "Build a publish-subscribe WebSocket server"}
+nav_prev: {"path": "bun/bun/docs/guides/util/which-path-to-executable-bin/index.md", "title": "Get the path to an executable bin file"}
+nav_next: {"path": "bun/bun/docs/guides/websocket/context/index.md", "title": "Set per-socket contextual data on a WebSocket"}
 ---
 
 [Skip to main content](#content-area)

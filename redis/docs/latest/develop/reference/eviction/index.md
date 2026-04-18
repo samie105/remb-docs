@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:07:34.304Z"
 content_hash: "f1dfcadc84f6c88b3b65dd5c29ba28343c72f613ce56616707be74caec33511d"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis reference","→","Redis reference","→\n      \n        Key eviction","→","Key eviction"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis reference","→","Redis reference","→\n      \n        Key eviction","→","Key eviction"]
-nav_prev: {"path": "redis/docs/latest/develop/clients/nodejs/error-handling/index.md", "title": "Error handling"}
-nav_next: {"path": "redis/docs/latest/operate/oss_and_stack/install/install-stack/homebrew/index.md", "title": "Install Redis Open Source on macOS"}
+nav_prev: {"path": "redis/docs/latest/develop/reference/command-tips/index.md", "title": "Redis command tips"}
+nav_next: {"path": "redis/docs/latest/develop/reference/key-specs/index.md", "title": "Command key specifications"}
 ---
 
 # Key eviction

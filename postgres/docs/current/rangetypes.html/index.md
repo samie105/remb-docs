@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:34:33.681Z"
 content_hash: "cd5e26f51b97d380ea81fec5757fe40ccc087e64ebc822eadec9ae0d04551e4b"
 menu_path: ["PostgreSQL: Documentation: 18: 8.17. Range Types"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/jit-extensibility.html/index.md", "title": "PostgreSQL: Documentation: 18: 30.4.\u00a0Extensibility"}
-nav_next: {"path": "postgres/docs/current/sql-delete.html/index.md", "title": "PostgreSQL: Documentation: 18: DELETE"}
+nav_prev: {"path": "postgres/docs/current/query-path.html/index.md", "title": "PostgreSQL: Documentation: 18: 51.1.\u00a0The Path of a Query"}
+nav_next: {"path": "postgres/docs/current/recovery-config.html/index.md", "title": "PostgreSQL: Documentation: 18: O.1.\u00a0recovery.conf file merged into postgresql.conf"}
 ---
 
 Range types are data types representing a range of values of some element type (called the range's _subtype_). For instance, ranges of `timestamp` might be used to represent the ranges of time that a meeting room is reserved. In this case the data type is `tsrange` (short for “timestamp range”), and `timestamp` is the subtype. The subtype must have a total order so that it is well-defined whether element values are within, before, or after a range of values.

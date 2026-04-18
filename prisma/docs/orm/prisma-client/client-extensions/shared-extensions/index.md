@@ -9,7 +9,7 @@ last_crawled_at: "2026-04-18T16:53:28.380Z"
 content_hash: "276de5ae44e51d7c60dabc163f21e1beb43a438d94186f0023e163f412b3f827"
 menu_path: ["Shared Prisma Client extensions"]
 section_path: []
-nav_prev: {"path": "prisma/docs/orm/prisma-schema/overview/location/index.md", "title": "Schema location"}
+nav_prev: {"path": "prisma/docs/orm/prisma-client/client-extensions/result/index.md", "title": "Add custom fields and methods to query results"}
 nav_next: {"path": "prisma/docs/orm/prisma-client/client-extensions/shared-extensions/permit-rbac/index.md", "title": "Fine-Grained Authorization (Permit)"}
 ---
 

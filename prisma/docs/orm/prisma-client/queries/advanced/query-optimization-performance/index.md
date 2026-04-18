@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:54:55.186Z"
 content_hash: "1831d26c50b40b5371be3337e4b457a43adf5954ba0d84098ed8f916e55e4ce3"
 menu_path: ["Query optimization"]
 section_path: []
-nav_prev: {"path": "prisma/docs/orm/prisma-client/setup-and-configuration/databases-connections/connection-management/index.md", "title": "Connection management"}
-nav_next: {"path": "prisma/docs/orm/prisma-client/setup-and-configuration/databases-connections/connection-pool/index.md", "title": "Connection pool"}
+nav_prev: {"path": "prisma/docs/orm/prisma-client/observability-and-logging/sql-comments/index.md", "title": "SQL comments"}
+nav_next: {"path": "prisma/docs/orm/prisma-client/queries/aggregation-grouping-summarizing/index.md", "title": "Aggregation, grouping, and summarizing"}
 ---
 
 This page covers identifying and optimizing query performance with Prisma ORM.

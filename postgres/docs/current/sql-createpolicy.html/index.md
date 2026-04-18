@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:51:41.267Z"
 content_hash: "d3ab36d5e9f576aa87bbfdc756072fb73614923c471a872f87f1dc2562e3f821"
 menu_path: ["PostgreSQL: Documentation: 18: CREATE POLICY"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/catalog-pg-publication-rel.html/index.md", "title": "PostgreSQL: Documentation: 18: 52.42.\u00a0pg_publication_rel"}
-nav_next: {"path": "postgres/docs/current/app-psql.html/index.md", "title": "PostgreSQL: Documentation: 18: psql"}
+nav_prev: {"path": "postgres/docs/current/sql-createopfamily.html/index.md", "title": "PostgreSQL: Documentation: 18: CREATE OPERATOR FAMILY"}
+nav_next: {"path": "postgres/docs/current/sql-createprocedure.html/index.md", "title": "PostgreSQL: Documentation: 18: CREATE PROCEDURE"}
 ---
 
 CREATE POLICY — define a new row-level security policy for a table

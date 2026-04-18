@@ -9,7 +9,7 @@ last_crawled_at: "2026-04-18T17:16:51.069Z"
 content_hash: "3baa598ba8d6ea1be5db4db2a29519e470f3fe88651989a03008c2bf1532fc94"
 menu_path: ["Drizzle ORM - undefined"]
 section_path: []
-nav_prev: {"path": "drizzle/docs/latest-releases/drizzle-orm-v03010/index.md", "title": "Drizzle ORM - DrizzleORM v0.30.10 release"}
+nav_prev: {"path": "drizzle/docs/latest-releases/drizzle-orm-v1beta2/index.md", "title": "New Features"}
 nav_next: {"path": "drizzle/docs/migrate/migrate-from-prisma/index.md", "title": "Migrate from Prisma to Drizzle"}
 ---
 

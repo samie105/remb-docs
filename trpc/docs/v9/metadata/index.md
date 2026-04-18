@@ -10,7 +10,7 @@ content_hash: "c3d0e04a96080e288096b5508e2239467b959e080900b1c48abc40d455132dfc"
 menu_path: ["Route Metadata"]
 section_path: []
 nav_prev: {"path": "trpc/docs/v9/merging-routers/index.md", "title": "Merging Routers"}
-nav_next: {"path": "trpc/docs/v9/love/index.md", "title": "Testimonials / Love"}
+nav_next: {"path": "trpc/docs/v9/middlewares/index.md", "title": "Middlewares"}
 ---
 
 Route metadata allows you to add an optional route specific `meta` property which will be available in all `middleware` function parameters.

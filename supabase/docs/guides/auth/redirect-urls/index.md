@@ -9,7 +9,7 @@ last_crawled_at: "2026-04-18T16:39:02.032Z"
 content_hash: "5ad605c60681b9468725ce3e86334ae14af57bd56d7d8acf1a41243503f92700"
 menu_path: ["Auth","Auth","Configuration","Configuration","Redirect URLs","Redirect URLs"]
 section_path: ["Auth","Auth","Configuration","Configuration","Redirect URLs","Redirect URLs"]
-nav_prev: {"path": "supabase/docs/guides/auth/phone-login/index.md", "title": "Phone Login"}
+nav_prev: {"path": "supabase/docs/guides/auth/rate-limits/index.md", "title": "Rate limits"}
 nav_next: {"path": "supabase/docs/guides/auth/server-side/index.md", "title": "Server-Side Rendering"}
 ---
 

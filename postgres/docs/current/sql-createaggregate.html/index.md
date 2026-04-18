@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:41:47.251Z"
 content_hash: "7421348936e253829b3dcdb8c5e4dc62c8b6383e7b806e044d0cc3f5edf66568"
 menu_path: ["PostgreSQL: Documentation: 18: CREATE AGGREGATE"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/app-dropdb.html/index.md", "title": "PostgreSQL: Documentation: 18: dropdb"}
-nav_next: {"path": "postgres/docs/current/ecpg-connect.html/index.md", "title": "PostgreSQL: Documentation: 18: 34.2.\u00a0Managing Database Connections"}
+nav_prev: {"path": "postgres/docs/current/sql-create-access-method.html/index.md", "title": "PostgreSQL: Documentation: 18: CREATE ACCESS METHOD"}
+nav_next: {"path": "postgres/docs/current/sql-createcast.html/index.md", "title": "PostgreSQL: Documentation: 18: CREATE CAST"}
 ---
 
 CREATE AGGREGATE — define a new aggregate function

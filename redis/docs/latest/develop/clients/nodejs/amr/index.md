@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:47:21.534Z"
 content_hash: "e36c2430c1d959561ae33bff4ea44b3fd399c7729136c6f8b3f830a0034baac8"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Connect with Redis client API libraries","→","Connect with Redis client API libraries","→\n      \n        node-redis guide (JavaScript)","→","node-redis guide (JavaScript)","→\n      \n        Connect to Azure Managed Redis","→","Connect to Azure Managed Redis"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Connect with Redis client API libraries","→","Connect with Redis client API libraries","→\n      \n        node-redis guide (JavaScript)","→","node-redis guide (JavaScript)","→\n      \n        Connect to Azure Managed Redis","→","Connect to Azure Managed Redis"]
-nav_prev: {"path": "redis/docs/latest/integrate/amazon-bedrock/create-knowledge-base/index.md", "title": "Create a Bedrock knowledge base"}
-nav_next: {"path": "redis/docs/latest/operate/rc/subscriptions/bring-your-own-cloud/cloud-account-settings/index.md", "title": "Create and edit Cloud accounts"}
+nav_prev: {"path": "redis/docs/latest/develop/clients/nodejs/index.md", "title": "node-redis guide (JavaScript)"}
+nav_next: {"path": "redis/docs/latest/develop/clients/nodejs/connect/index.md", "title": "Connect to the server"}
 ---
 
 # Connect to Azure Managed Redis

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:51:03.954Z"
 content_hash: "b6263ae483ee884c9fc0aa843e5b86e1f3d2b9e5e050e6da7d6c76efdf76ad70"
 menu_path: ["PostgreSQL: Documentation: 18: CLUSTER"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/sql-dropschema.html/index.md", "title": "PostgreSQL: Documentation: 18: DROP SCHEMA"}
-nav_next: {"path": "postgres/docs/current/plperl-trusted.html/index.md", "title": "PostgreSQL: Documentation: 18: 43.5.\u00a0Trusted and Untrusted PL/Perl"}
+nav_prev: {"path": "postgres/docs/current/sql-close.html/index.md", "title": "PostgreSQL: Documentation: 18: CLOSE"}
+nav_next: {"path": "postgres/docs/current/sql-comment.html/index.md", "title": "PostgreSQL: Documentation: 18: COMMENT"}
 ---
 
 CLUSTER — cluster a table according to an index

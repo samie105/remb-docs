@@ -10,7 +10,6 @@ content_hash: "37b0f23b86f6672664d712a35cdbc5bba89cf3b3510e97fe83907341eb76296c"
 menu_path: ["Telemetry","Telemetry","Logging & observability","Logging & observability","Sentry integration","Sentry integration"]
 section_path: ["Telemetry","Telemetry","Logging & observability","Logging & observability","Sentry integration","Sentry integration"]
 nav_prev: {"path": "supabase/docs/guides/telemetry/reports/index.md", "title": "Reports"}
-nav_next: {"path": "supabase/docs/guides/ai/examples/headless-vector-search/index.md", "title": "Adding generative Q&A for your documentation"}
 ---
 
 # 

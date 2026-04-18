@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:22:52.424Z"
 content_hash: "eaae47b56bc6ad5d09c3df1a05d0e3bafadb7763167cc747176b6205db0d182e"
 menu_path: ["Drizzle with Encore"]
 section_path: []
-nav_prev: {"path": "drizzle/docs/tutorials/bun-railway-pg/index.md", "title": "Drizzle with Bun and PostgreSQL on Railway"}
-nav_next: {"path": "drizzle/docs/tutorials/drizzle-nextjs-neon/index.md", "title": "Todo App with Neon Postgres"}
+nav_prev: {"path": "drizzle/docs/tutorials/drizzle-nextjs-neon/index.md", "title": "Todo App with Neon Postgres"}
+nav_next: {"path": "drizzle/docs/tutorials/drizzle-with-neon/index.md", "title": "Drizzle with Neon Postgres"}
 ---
 
 # macOS

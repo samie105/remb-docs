@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:42:41.566Z"
 content_hash: "fa9346bdab51af6e988f7b82b42f9c86c7d697304c928559346f95a0825c57da"
 menu_path: ["PostgreSQL: Documentation: 18: 36.8. Procedural Language Functions"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/indexes-ordering.html/index.md", "title": "PostgreSQL: Documentation: 18: 11.4.\u00a0Indexes and ORDER BY"}
-nav_next: {"path": "postgres/docs/current/ddl-identity-columns.html/index.md", "title": "PostgreSQL: Documentation: 18: 5.3.\u00a0Identity Columns"}
+nav_prev: {"path": "postgres/docs/current/xaggr.html/index.md", "title": "PostgreSQL: Documentation: 18: 36.12.\u00a0User-Defined Aggregates"}
+nav_next: {"path": "postgres/docs/current/xfunc.html/index.md", "title": "PostgreSQL: Documentation: 18: 36.3.\u00a0User-Defined Functions"}
 ---
 
 36.8. Procedural Language Functions

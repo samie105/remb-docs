@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:46:41.834Z"
 content_hash: "d7de8775a50dd204a7375d60d505ecb0419aef9901701fe53643e861054b0418"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Connect with Redis client API libraries","→","Connect with Redis client API libraries","→\n      \n        Jedis guide (Java)","→","Jedis guide (Java)","→\n      \n        Connect to the server","→","Connect to the server"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Connect with Redis client API libraries","→","Connect with Redis client API libraries","→\n      \n        Jedis guide (Java)","→","Jedis guide (Java)","→\n      \n        Connect to the server","→","Connect to the server"]
-nav_prev: {"path": "redis/docs/latest/operate/oss_and_stack/management/config/index.md", "title": "Redis configuration"}
-nav_next: {"path": "redis/docs/latest/develop/clients/lettuce/connect/index.md", "title": "Connect to the server"}
+nav_prev: {"path": "redis/docs/latest/develop/clients/jedis/amr/index.md", "title": "Connect to Azure Managed Redis"}
+nav_next: {"path": "redis/docs/latest/develop/clients/jedis/prob/index.md", "title": "Probabilistic data types"}
 ---
 
 # Connect to the server

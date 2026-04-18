@@ -10,7 +10,7 @@ content_hash: "076ae0d6770ef6f993d146a0bdbf724882be1aa450b719cc45783e4a63e1d057"
 menu_path: ["Web APIs"]
 section_path: []
 nav_prev: {"path": "bun/bun/docs/runtime/watch-mode/index.md", "title": "Watch Mode"}
-nav_next: {"path": "bun/bun/docs/runtime/utils/index.md", "title": "Utils"}
+nav_next: {"path": "bun/bun/docs/runtime/workers/index.md", "title": "Workers"}
 ---
 
 [Skip to main content](#content-area)

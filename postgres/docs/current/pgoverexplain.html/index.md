@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:45:38.876Z"
 content_hash: "1d82b5a4689cef985627c507390b0cf6c19b6e7015c5b88aa1149e2293ff685a"
 menu_path: ["PostgreSQL: Documentation: 18: F.29. pg_overexplain — allow EXPLAIN to dump even more details"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/indexes-types.html/index.md", "title": "PostgreSQL: Documentation: 18: 11.2.\u00a0Index Types"}
-nav_next: {"path": "postgres/docs/current/brin.html/index.md", "title": "PostgreSQL: Documentation: 18: 65.5.\u00a0BRIN Indexes"}
+nav_prev: {"path": "postgres/docs/current/pglogicalinspect.html/index.md", "title": "PostgreSQL: Documentation: 18: F.28.\u00a0pg_logicalinspect \u2014 logical decoding components inspection"}
+nav_next: {"path": "postgres/docs/current/pgprewarm.html/index.md", "title": "PostgreSQL: Documentation: 18: F.30.\u00a0pg_prewarm \u2014 preload relation data into buffer caches"}
 ---
 
 Development Versions: [devel](https://www.postgresql.org/docs/devel/pgoverexplain.html "PostgreSQL devel - F.29. pg_overexplain — allow EXPLAIN to dump even more details")

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:39:02.786Z"
 content_hash: "dfe08d2d1d3a677d6efd29498a3850b6c2b8358c5e4d9c16c9de4e9ca0c407bd"
 menu_path: ["Convert an ArrayBuffer to an array of numbers"]
 section_path: []
-nav_prev: {"path": "bun/bun/docs/guides/binary/arraybuffer-to-blob/index.md", "title": "Convert an ArrayBuffer to a Blob"}
-nav_next: {"path": "bun/bun/docs/guides/binary/arraybuffer-to-buffer/index.md", "title": "Convert an ArrayBuffer to a Buffer"}
+nav_prev: {"path": "bun/bun/docs/guides/index.md", "title": "Guides"}
+nav_next: {"path": "bun/bun/docs/guides/binary/arraybuffer-to-blob/index.md", "title": "Convert an ArrayBuffer to a Blob"}
 ---
 
 [Skip to main content](#content-area)

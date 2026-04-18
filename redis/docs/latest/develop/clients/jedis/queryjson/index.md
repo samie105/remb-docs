@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:48:17.010Z"
 content_hash: "791bee5c42eec18e2720e5d69dfa7fa200d57efb870a57c9f1b48af45730c9c7"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Connect with Redis client API libraries","→","Connect with Redis client API libraries","→\n      \n        Jedis guide (Java)","→","Jedis guide (Java)","→\n      \n        Index and query documents","→","Index and query documents"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Connect with Redis client API libraries","→","Connect with Redis client API libraries","→\n      \n        Jedis guide (Java)","→","Jedis guide (Java)","→\n      \n        Index and query documents","→","Index and query documents"]
-nav_prev: {"path": "redis/docs/latest/develop/ai/search-and-query/indexing/field-and-type-options/index.md", "title": "Field and type options"}
-nav_next: {"path": "redis/docs/latest/develop/ai/search-and-query/administration/gc/index.md", "title": "Garbage collection"}
+nav_prev: {"path": "redis/docs/latest/develop/clients/jedis/prob/index.md", "title": "Probabilistic data types"}
+nav_next: {"path": "redis/docs/latest/develop/clients/jedis/transpipe/index.md", "title": "Pipelines and transactions"}
 ---
 
 # Index and query documents

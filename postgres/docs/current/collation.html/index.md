@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:54:13.020Z"
 content_hash: "870905e1a48b16d0e4872d20f59569ead55ad6886ace6aec85dd2b0f514bbc3d"
 menu_path: ["PostgreSQL: Documentation: 18: 23.2. Collation Support"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/sslinfo.html/index.md", "title": "PostgreSQL: Documentation: 18: F.42.\u00a0sslinfo \u2014 obtain client SSL information"}
-nav_next: {"path": "postgres/docs/current/protocol-logicalrep-message-formats.html/index.md", "title": "PostgreSQL: Documentation: 18: 54.9.\u00a0Logical Replication Message Formats"}
+nav_prev: {"path": "postgres/docs/current/catalog-pg-tablespace.html/index.md", "title": "PostgreSQL: Documentation: 18: 52.56.\u00a0pg_tablespace"}
+nav_next: {"path": "postgres/docs/current/color-when.html/index.md", "title": "PostgreSQL: Documentation: 18: N.1.\u00a0When Color is Used"}
 ---
 
 The collation feature allows specifying the sort order and character classification behavior of data per-column, or even per-operation. This alleviates the restriction that the `LC_COLLATE` and `LC_CTYPE` settings of a database cannot be changed after its creation.

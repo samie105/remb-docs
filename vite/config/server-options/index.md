@@ -10,7 +10,7 @@ content_hash: "ab1c519ceea2ec3f7e92add5e45388954474af8c5fc04c303398bed7e26bfbda"
 menu_path: ["Server Options ​"]
 section_path: []
 nav_prev: {"path": "vite/config/preview-options/index.md", "title": "Preview Options \u200b"}
-nav_next: {"path": "vite/config/ssr-options/index.md", "title": "SSR Options \u200b"}
+nav_next: {"path": "vite/config/shared-options/index.md", "title": "Shared Options \u200b"}
 ---
 
 Unless noted, the options in this section are only applied to dev.

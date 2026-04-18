@@ -10,7 +10,7 @@ content_hash: "d968957851af253270b1fc2c7104c51cb8707533cecb1f3fd133ae60eafea940"
 menu_path: ["Run Bun as a daemon with systemd"]
 section_path: []
 nav_prev: {"path": "bun/bun/docs/guides/ecosystem/sveltekit/index.md", "title": "Build an app with SvelteKit and Bun"}
-nav_next: {"path": "bun/bun/docs/guides/ecosystem/upstash/index.md", "title": "Bun Redis with Upstash"}
+nav_next: {"path": "bun/bun/docs/guides/ecosystem/tanstack-start/index.md", "title": "Use TanStack Start with Bun"}
 ---
 
 # describe the app

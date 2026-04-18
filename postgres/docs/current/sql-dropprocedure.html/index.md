@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:46:22.138Z"
 content_hash: "bb42ab030768b06372a1d9830a10a01118cef4c5bb56d6b9b2659746363e0680"
 menu_path: ["PostgreSQL: Documentation: 18: DROP PROCEDURE"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/sql-prepare.html/index.md", "title": "PostgreSQL: Documentation: 18: PREPARE"}
-nav_next: {"path": "postgres/docs/current/rules-views.html/index.md", "title": "PostgreSQL: Documentation: 18: 39.2.\u00a0Views and the Rule System"}
+nav_prev: {"path": "postgres/docs/current/sql-droplanguage.html/index.md", "title": "PostgreSQL: Documentation: 18: DROP LANGUAGE"}
+nav_next: {"path": "postgres/docs/current/sql-droprole.html/index.md", "title": "PostgreSQL: Documentation: 18: DROP ROLE"}
 ---
 
 DROP PROCEDURE — remove a procedure

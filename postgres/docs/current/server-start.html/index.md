@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:43:44.937Z"
 content_hash: "47705e72bf07c6e0f3ff72181d0b6ec78e4e4cfc17bc2f04a3039714678953ab"
 menu_path: ["PostgreSQL: Documentation: 18: 18.3. Starting the Database Server"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/sql-notify.html/index.md", "title": "PostgreSQL: Documentation: 18: NOTIFY"}
-nav_next: {"path": "postgres/docs/current/plpython-funcs.html/index.md", "title": "PostgreSQL: Documentation: 18: 44.1.\u00a0PL/Python Functions"}
+nav_prev: {"path": "postgres/docs/current/server-shutdown.html/index.md", "title": "PostgreSQL: Documentation: 18: 18.5.\u00a0Shutting Down the Server"}
+nav_next: {"path": "postgres/docs/current/source-conventions.html/index.md", "title": "PostgreSQL: Documentation: 18: 55.4.\u00a0Miscellaneous Coding Conventions"}
 ---
 
 Before anyone can access the database, you must start the database server. The database server program is called `postgres`.

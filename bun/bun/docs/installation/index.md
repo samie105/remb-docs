@@ -9,8 +9,7 @@ last_crawled_at: "2026-04-18T17:02:53.187Z"
 content_hash: "e526f403d65500393cddd6ad80c0fc95abb05c305c1429ae4448d0b88437e1fe"
 menu_path: ["Installation"]
 section_path: []
-nav_next: {"path": "bun/bun/docs/pm/bunx/index.md", "title": "bunx"}
-nav_prev: {"path": "bun/bun/docs/guides/write-file/unlink/index.md", "title": "Delete a file"}
+nav_next: {"path": "bun/bun/docs/index.md", "title": "Welcome to Bun"}
 ---
 
 # Output: 1.x.y

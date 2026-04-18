@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:41:50.354Z"
 content_hash: "c1e567f11692e45e584ceb109d5c5d952aa08eefa55d4719d0e95671a4c42d07"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis reference","→","Redis reference","→\n      \n        Redis modules API","→","Redis modules API","→\n      \n        Modules API for native types","→","Modules API for native types"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis reference","→","Redis reference","→\n      \n        Redis modules API","→","Redis modules API","→\n      \n        Modules API for native types","→","Modules API for native types"]
-nav_prev: {"path": "redis/docs/latest/operate/oss_and_stack/install/archive/install-redis/install-redis-on-mac-os/index.md", "title": "Install Redis on macOS"}
-nav_next: {"path": "redis/docs/latest/integrate/redis-data-integration/data-pipelines/prepare-dbs/aws-aurora-rds/aws-aur-pgsql/index.md", "title": "Prepare AWS Aurora PostgreSQL/AWS RDS PostgreSQL for RDI"}
+nav_prev: {"path": "redis/docs/latest/develop/reference/modules/modules-blocking-ops/index.md", "title": "Redis modules and blocking commands"}
+nav_next: {"path": "redis/docs/latest/develop/reference/protocol-spec/index.md", "title": "Redis serialization protocol specification"}
 ---
 
 # Modules API for native types

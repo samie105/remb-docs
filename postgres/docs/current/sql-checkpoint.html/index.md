@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:52:50.813Z"
 content_hash: "4f1aae90fe8f8ad39f281a7878237316ecb25256698a2b36b8f618de0e92c342"
 menu_path: ["PostgreSQL: Documentation: 18: CHECKPOINT"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/ecpg-sql-commands.html/index.md", "title": "PostgreSQL: Documentation: 18: 34.14.\u00a0Embedded SQL Commands"}
-nav_next: {"path": "postgres/docs/current/infoschema-sequences.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.47.\u00a0sequences"}
+nav_prev: {"path": "postgres/docs/current/sql-call.html/index.md", "title": "PostgreSQL: Documentation: 18: CALL"}
+nav_next: {"path": "postgres/docs/current/sql-close.html/index.md", "title": "PostgreSQL: Documentation: 18: CLOSE"}
 ---
 
 CHECKPOINT — force a write-ahead log checkpoint

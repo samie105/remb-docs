@@ -9,7 +9,7 @@ last_crawled_at: "2026-04-18T16:33:48.366Z"
 content_hash: "44ca7c40d5d906c555b4d32d1b0bef980ed926c0996692a21d3492d1d70155cf"
 menu_path: ["AI & Vectors","AI & Vectors","Third-Party Tools","Third-Party Tools","Hugging Face","Hugging Face"]
 section_path: ["AI & Vectors","AI & Vectors","Third-Party Tools","Third-Party Tools","Hugging Face","Hugging Face"]
-nav_prev: {"path": "supabase/docs/guides/ai/going-to-prod/index.md", "title": "Going to Production"}
+nav_prev: {"path": "supabase/docs/guides/ai/google-colab/index.md", "title": "Google Colab"}
 nav_next: {"path": "supabase/docs/guides/ai/hybrid-search/index.md", "title": "Hybrid search"}
 ---
 

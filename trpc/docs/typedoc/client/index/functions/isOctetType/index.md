@@ -10,7 +10,7 @@ content_hash: "d12e566512948753e0d43d02672443fd4f1a0dc0dc5dd2de0bf95a56ba295905"
 menu_path: ["Function: isOctetType()"]
 section_path: []
 nav_prev: {"path": "trpc/docs/typedoc/client/index/functions/isNonJsonSerializable/index.md", "title": "Function: isNonJsonSerializable()"}
-nav_next: {"path": "trpc/docs/typedoc/client/index/functions/retryLink/index.md", "title": "Function: retryLink()"}
+nav_next: {"path": "trpc/docs/typedoc/client/index/functions/isTRPCClientError/index.md", "title": "Function: isTRPCClientError()"}
 ---
 
 Function: isOctetType() | tRPC

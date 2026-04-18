@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:56:44.322Z"
 content_hash: "d932092c592ece100a913b1df46ade3ee4f99c07432fc4d339bdf60aedd0556b"
 menu_path: ["Database","Database","Examples","Examples","Replicating from Supabase to External Postgres","Replicating from Supabase to External Postgres"]
 section_path: ["Database","Database","Examples","Examples","Replicating from Supabase to External Postgres","Replicating from Supabase to External Postgres"]
-nav_prev: {"path": "supabase/docs/guides/database/postgres/roles/index.md", "title": "Postgres Roles"}
-nav_next: {"path": "supabase/docs/guides/database/postgres/row-level-security/index.md", "title": "Row Level Security"}
+nav_prev: {"path": "supabase/docs/guides/database/postgres/row-level-security/index.md", "title": "Row Level Security"}
+nav_next: {"path": "supabase/docs/guides/database/postgres/timeouts/index.md", "title": "Timeouts"}
 ---
 
 # 

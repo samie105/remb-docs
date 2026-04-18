@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:57:27.135Z"
 content_hash: "dc68141421e14db55c3cd93918f3eeabda57b75ae578f75e414d6ddf61cf0387"
 menu_path: ["bun install"]
 section_path: []
-nav_prev: {"path": "bun/bun/docs/pm/cli/link/index.md", "title": "bun link"}
-nav_next: {"path": "bun/bun/docs/pm/cli/outdated/index.md", "title": "bun outdated"}
+nav_prev: {"path": "bun/bun/docs/pm/cli/info/index.md", "title": "bun info"}
+nav_next: {"path": "bun/bun/docs/pm/cli/link/index.md", "title": "bun link"}
 ---
 
 # Install dependencies for all workspaces except `pkg-c`

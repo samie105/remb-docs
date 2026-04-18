@@ -10,7 +10,7 @@ content_hash: "062850f0abc0bbbbe4800bb78df033b88893f875479b6d20288815bdc2305899"
 menu_path: ["Logger Link"]
 section_path: []
 nav_prev: {"path": "trpc/docs/client/links/localLink/index.md", "title": "Local Link"}
-nav_next: {"path": "trpc/docs/client/links/splitLink/index.md", "title": "Split Link"}
+nav_next: {"path": "trpc/docs/client/links/retryLink/index.md", "title": "Retry Link"}
 ---
 
 `loggerLink` is a link that lets you implement a logger for your tRPC client. It allows you to see more clearly what operations are queries, mutations, or subscriptions, their requests, and responses. The link, by default, prints a prettified log to the browser's console. However, you can customize the logging behavior and the way it prints to the console with your own implementations.

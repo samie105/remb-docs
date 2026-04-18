@@ -9,7 +9,7 @@ last_crawled_at: "2026-04-18T16:47:12.130Z"
 content_hash: "65f0c1892cb0602d48fb3dd8fc7863d5381d21097250b4d84cd23beb1070bdb1"
 menu_path: ["Custom model and field names"]
 section_path: []
-nav_prev: {"path": "prisma/docs/orm/prisma-client/queries/relation-queries/index.md", "title": "CRUD"}
+nav_prev: {"path": "prisma/docs/orm/prisma-client/queries/transactions/index.md", "title": "Transactions and batch queries"}
 nav_next: {"path": "prisma/docs/orm/prisma-client/setup-and-configuration/database-polyfills/index.md", "title": "Database polyfills"}
 ---
 

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:53:59.980Z"
 content_hash: "aceefea9bfff273e10b2fc2870babf3d99d60d3da77e7fd8cb59dffd49beba6c"
 menu_path: ["PostgreSQL: Documentation: 18: TYPE"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/xtypes.html/index.md", "title": "PostgreSQL: Documentation: 18: 36.13.\u00a0User-Defined Types"}
-nav_next: {"path": "postgres/docs/current/sql-begin.html/index.md", "title": "PostgreSQL: Documentation: 18: BEGIN"}
+nav_prev: {"path": "postgres/docs/current/ecpg-sql-execute-immediate.html/index.md", "title": "PostgreSQL: Documentation: 18: EXECUTE IMMEDIATE"}
+nav_next: {"path": "postgres/docs/current/ecpg-sql-var.html/index.md", "title": "PostgreSQL: Documentation: 18: VAR"}
 ---
 
 TYPE — define a new data type

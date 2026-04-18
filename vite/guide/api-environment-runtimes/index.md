@@ -10,7 +10,7 @@ content_hash: "58f06bb17c90240bd2f92d2c3ca0a8aa3d89dadb3bb2ba2b7ebd24d89ec6dcc0"
 menu_path: ["Environment API for Runtimes ​"]
 section_path: []
 nav_prev: {"path": "vite/guide/api-environment-frameworks/index.md", "title": "Environment API for Frameworks \u200b"}
-nav_next: {"path": "vite/config/dep-optimization-options/index.md", "title": "Dep Optimization Options \u200b"}
+nav_next: {"path": "vite/guide/badges/index.md", "title": "Compatibility Badges \u200b"}
 ---
 
 ## Environment API for Runtimes [​](#environment-api-for-runtimes)

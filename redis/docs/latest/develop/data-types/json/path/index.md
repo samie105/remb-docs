@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:56:25.666Z"
 content_hash: "124960db67314ccffce67daa3e784314efb7531d85d99173b17e865aa40f8383"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis data types","→","Redis data types","→\n      \n        JSON","→","JSON","→\n      \n        Path","→","Path"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis data types","→","Redis data types","→\n      \n        JSON","→","JSON","→\n      \n        Path","→","Path"]
-nav_prev: {"path": "redis/docs/latest/integrate/redis-data-integration/data-pipelines/pipeline-config/index.md", "title": "Pipeline configuration file"}
-nav_next: {"path": "redis/docs/latest/integrate/redis-data-integration/data-pipelines/prepare-dbs/aws-aurora-rds/aws-rds-sqlserver/index.md", "title": "Prepare Microsoft SQL Server on AWS RDS for RDI"}
+nav_prev: {"path": "redis/docs/latest/develop/data-types/json/indexing_json/index.md", "title": "Index/Search JSON documents"}
+nav_next: {"path": "redis/docs/latest/develop/data-types/json/performance/index.md", "title": "Performance"}
 ---
 
 # Path

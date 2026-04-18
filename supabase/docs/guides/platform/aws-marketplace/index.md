@@ -10,7 +10,7 @@ content_hash: "ba1d86ddcd8969a483ddb77032ceb9bea258b550ac7d7bfd94df80cd3e32bd51"
 menu_path: ["Platform","Platform","More","More","More","AWS Marketplace","AWS Marketplace","Overview","Overview"]
 section_path: ["Platform","Platform","More","More","More","AWS Marketplace","AWS Marketplace","Overview","Overview"]
 nav_prev: {"path": "supabase/docs/guides/platform/access-control/index.md", "title": "Access Control"}
-nav_next: {"path": "supabase/docs/guides/platform/backups/index.md", "title": "Database Backups"}
+nav_next: {"path": "supabase/docs/guides/platform/aws-marketplace/account-setup/index.md", "title": "Account Setup"}
 ---
 
 # 

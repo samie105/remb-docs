@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:14:54.726Z"
 content_hash: "a25708dae70d1dfde89ed6be875a1c4782d6e61c98f488652532e43b5dda7fa3"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Rust client for Redis","→","Rust client for Redis"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Rust client for Redis","→","Rust client for Redis"]
-nav_prev: {"path": "redis/docs/latest/develop/use-cases/leaderboard/rust/index.md", "title": "Redis leaderboard with Rust"}
-nav_next: {"path": "redis/docs/latest/develop/ai/redisvl/user_guide/svs_vamana/index.md", "title": "SVS-VAMANA Vector Search"}
+nav_prev: {"path": "redis/docs/latest/integrate/riot/quick-start/index.md", "title": "Getting started"}
+nav_next: {"path": "redis/docs/latest/integrate/spring-framework-cache/index.md", "title": "Spring Data Redis"}
 ---
 
 # Rust client for Redis

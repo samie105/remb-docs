@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:39:09.161Z"
 content_hash: "886b991bdebbe64ec4cc4e344d51403988cef6a2bad7ffda9ad7dd04d244dfab"
 menu_path: ["Extended Metadata ​"]
 section_path: []
-nav_prev: {"path": "vite/guide/index.md", "title": "Plugin Registry Guide \u200b"}
-nav_next: {"path": "vite/guide/discovery/index.md", "title": "Plugin Discovery \u200b"}
+nav_prev: {"path": "vite/guide/discovery/index.md", "title": "Plugin Discovery \u200b"}
+nav_next: {"path": "vite/guide/patches/index.md", "title": "Registry Patches \u200b"}
 ---
 
 For additional metadata beyond peer dependencies, you can add a `compatiblePackages` field to your `package.json`. This field contains compatibility information for your plugin.

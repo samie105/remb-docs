@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:07:11.642Z"
 content_hash: "a429484cee586ae2f2a3525a444ab56abbb19fe8c6c94f18b8a9902582288845"
 menu_path: ["Drizzle ORM - SQL Timestamp as a default value"]
 section_path: []
-nav_prev: {"path": "drizzle/docs/guides/toggling-a-boolean-field/index.md", "title": "Drizzle ORM - SQL Toggle value"}
-nav_next: {"path": "drizzle/docs/guides/unique-case-insensitive-email/index.md", "title": "Drizzle ORM - Unique and Case-Insensitive Email Handling"}
+nav_prev: {"path": "drizzle/docs/guides/select-parent-rows-with-at-least-one-related-child-row/index.md", "title": "Drizzle ORM - Select parent rows with at least one related child row"}
+nav_next: {"path": "drizzle/docs/guides/toggling-a-boolean-field/index.md", "title": "Drizzle ORM - SQL Toggle value"}
 ---
 
 Drizzle | SQL Timestamp as a default value

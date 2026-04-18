@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:48:19.924Z"
 content_hash: "216f61370032ec073bdf7c81a86fa1470b58c11192ebdc02a6b24d58552be8dc"
 menu_path: ["PostgreSQL: Documentation: 18: pgbench"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/ddl-alter.html/index.md", "title": "PostgreSQL: Documentation: 18: 5.7.\u00a0Modifying Tables"}
-nav_next: {"path": "postgres/docs/current/release-18.html/index.md", "title": "PostgreSQL: Documentation: 18: E.4.\u00a0Release 18"}
+nav_prev: {"path": "postgres/docs/current/pgarchivecleanup.html/index.md", "title": "PostgreSQL: Documentation: 18: pg_archivecleanup"}
+nav_next: {"path": "postgres/docs/current/pgbuffercache.html/index.md", "title": "PostgreSQL: Documentation: 18: F.25.\u00a0pg_buffercache \u2014 inspect PostgreSQL buffer cache state"}
 ---
 
 ## Description

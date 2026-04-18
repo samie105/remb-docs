@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:35:07.947Z"
 content_hash: "3d07d67e4f1f091064dd569d793b069e59cc1d266fea50b771043a1c5c2d4550"
 menu_path: ["PostgreSQL: Documentation: 18: SET SESSION AUTHORIZATION"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/rules-privileges.html/index.md", "title": "PostgreSQL: Documentation: 18: 39.5.\u00a0Rules and Privileges"}
-nav_next: {"path": "postgres/docs/current/indexes-intro.html/index.md", "title": "PostgreSQL: Documentation: 18: 11.1.\u00a0Introduction"}
+nav_prev: {"path": "postgres/docs/current/sql-set-role.html/index.md", "title": "PostgreSQL: Documentation: 18: SET ROLE"}
+nav_next: {"path": "postgres/docs/current/sql-set-transaction.html/index.md", "title": "PostgreSQL: Documentation: 18: SET TRANSACTION"}
 ---
 
 SET SESSION AUTHORIZATION — set the session user identifier and the current user identifier of the current session

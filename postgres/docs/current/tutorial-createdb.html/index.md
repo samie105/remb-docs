@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:38:04.169Z"
 content_hash: "501789a8b74c75da249c83748820fc36526b47fe318e395ebd5413b3a998af41"
 menu_path: ["PostgreSQL: Documentation: 18: 1.3. Creating a Database"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/app-pgresetwal.html/index.md", "title": "PostgreSQL: Documentation: 18: pg_resetwal"}
-nav_next: {"path": "postgres/docs/current/runtime-config-statistics.html/index.md", "title": "PostgreSQL: Documentation: 18: 19.9.\u00a0Run-time Statistics"}
+nav_prev: {"path": "postgres/docs/current/tutorial-concepts.html/index.md", "title": "PostgreSQL: Documentation: 18: 2.2.\u00a0Concepts"}
+nav_next: {"path": "postgres/docs/current/tutorial-delete.html/index.md", "title": "PostgreSQL: Documentation: 18: 2.9.\u00a0Deletions"}
 ---
 
 The first test to see whether you can access the database server is to try to create a database. A running PostgreSQL server can manage many databases. Typically, a separate database is used for each project or for each user.

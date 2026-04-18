@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:52:02.859Z"
 content_hash: "6f61d6f8d8c11c9a1011693710d87e4b0624a4b564d0d411378ab42af49aca89"
 menu_path: ["PostgreSQL: Documentation: 18: 53.5. pg_backend_memory_contexts"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/gssapi-enc.html/index.md", "title": "PostgreSQL: Documentation: 18: 18.10.\u00a0Secure TCP/IP Connections with GSSAPI Encryption"}
-nav_next: {"path": "postgres/docs/current/plperl-triggers.html/index.md", "title": "PostgreSQL: Documentation: 18: 43.6.\u00a0PL/Perl Triggers"}
+nav_prev: {"path": "postgres/docs/current/view-pg-available-extensions.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.3.\u00a0pg_available_extensions"}
+nav_next: {"path": "postgres/docs/current/view-pg-config.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.6.\u00a0pg_config"}
 ---
 
 The view `pg_backend_memory_contexts` displays all the memory contexts of the server process attached to the current session.

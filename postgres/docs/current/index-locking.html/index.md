@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:51:19.644Z"
 content_hash: "c5e600530fa18ee365512c7cdee6d068c23863d3eee41c794374090d96d09ed3"
 menu_path: ["PostgreSQL: Documentation: 18: 63.4. Index Locking Considerations"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/sql-refreshmaterializedview.html/index.md", "title": "PostgreSQL: Documentation: 18: REFRESH MATERIALIZED VIEW"}
-nav_next: {"path": "postgres/docs/current/sql-values.html/index.md", "title": "PostgreSQL: Documentation: 18: VALUES"}
+nav_prev: {"path": "postgres/docs/current/index-functions.html/index.md", "title": "PostgreSQL: Documentation: 18: 63.2.\u00a0Index Access Method Functions"}
+nav_next: {"path": "postgres/docs/current/index-scanning.html/index.md", "title": "PostgreSQL: Documentation: 18: 63.3.\u00a0Index Scanning"}
 ---
 
 Index access methods must handle concurrent updates of the index by multiple processes. The core PostgreSQL system obtains `AccessShareLock` on the index during an index scan, and `RowExclusiveLock` when updating the index (including plain `VACUUM`). Since these lock types do not conflict, the access method is responsible for handling any fine-grained locking it might need. An `ACCESS EXCLUSIVE` lock on the index as a whole will be taken only during index creation, destruction, or `REINDEX` (`SHARE UPDATE EXCLUSIVE` is taken instead with `CONCURRENTLY`).

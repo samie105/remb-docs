@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:02:48.777Z"
 content_hash: "f8363742e4ee3edbd6fb2a88ba33bb3262a0c9442eae6fafbca8cbb433d1f614"
 menu_path: ["Writing tests"]
 section_path: []
-nav_prev: {"path": "bun/bun/docs/typescript/index.md", "title": "TypeScript"}
-nav_next: {"path": "bun/bun/docs/typescript-6/index.md", "title": "TypeScript 6 and 7"}
+nav_prev: {"path": "bun/bun/docs/test/snapshots/index.md", "title": "Snapshots"}
+nav_next: {"path": "bun/bun/docs/typescript/index.md", "title": "TypeScript"}
 ---
 
 Define tests with a Jest-like API imported from the built-in `bun:test` module. Long term, Bun aims for complete Jest compatibility; at the moment, a limited set of expect matchers are supported.

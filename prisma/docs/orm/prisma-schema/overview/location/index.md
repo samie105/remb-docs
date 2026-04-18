@@ -10,7 +10,6 @@ content_hash: "0a28ddc0076b2649ebbc910a48f167990f506088f43cbb9392ce6d9afef53625"
 menu_path: ["Schema location"]
 section_path: []
 nav_prev: {"path": "prisma/docs/orm/prisma-schema/overview/generators/index.md", "title": "Generators"}
-nav_next: {"path": "prisma/docs/orm/prisma-client/client-extensions/shared-extensions/index.md", "title": "Shared Prisma Client extensions"}
 ---
 
 # All files must be inside the `prisma/` directory

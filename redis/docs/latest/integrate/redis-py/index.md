@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:44:02.610Z"
 content_hash: "d4107f2f605b22c9162148f633affd8e0127f0146f188b68a5fa5b294aab091c"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Python client for Redis","→","Python client for Redis"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Python client for Redis","→","Python client for Redis"]
-nav_prev: {"path": "redis/docs/latest/operate/rc/changelog/version-release-notes/index.md", "title": "Redis version release notes and breaking changes"}
-nav_next: {"path": "redis/docs/latest/develop/clients/redis-py/index.md", "title": "redis-py guide (Python)"}
+nav_prev: {"path": "redis/docs/latest/integrate/redis-mcp/index.md", "title": "Redis MCP"}
+nav_next: {"path": "redis/docs/latest/integrate/redisinsight/index.md", "title": "Redis Insight"}
 ---
 
 # Python client for Redis

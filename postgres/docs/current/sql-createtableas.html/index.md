@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:50:56.828Z"
 content_hash: "fcb91f069d078da1107506dcee8b072db5efd5d9d3799e038dd3ca4fcf98c089"
 menu_path: ["PostgreSQL: Documentation: 18: CREATE TABLE AS"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/logical-replication-upgrade.html/index.md", "title": "PostgreSQL: Documentation: 18: 29.13.\u00a0Upgrade"}
-nav_next: {"path": "postgres/docs/current/infoschema-routine-table-usage.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.44.\u00a0routine_table_usage"}
+nav_prev: {"path": "postgres/docs/current/sql-createsubscription.html/index.md", "title": "PostgreSQL: Documentation: 18: CREATE SUBSCRIPTION"}
+nav_next: {"path": "postgres/docs/current/sql-createtsparser.html/index.md", "title": "PostgreSQL: Documentation: 18: CREATE TEXT SEARCH PARSER"}
 ---
 
 CREATE TABLE AS — define a new table from the results of a query

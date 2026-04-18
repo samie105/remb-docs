@@ -10,7 +10,7 @@ content_hash: "eb7d6dbe2f9d629ee4d3d28443e8917e2838733990e0e31baafdae45ebd0f2a3"
 menu_path: ["Storage","Storage","Analytics Buckets","Analytics Buckets","Pricing","Pricing"]
 section_path: ["Storage","Storage","Analytics Buckets","Analytics Buckets","Pricing","Pricing"]
 nav_prev: {"path": "supabase/docs/guides/storage/analytics/limits/index.md", "title": "Analytics Buckets Limits"}
-nav_next: {"path": "supabase/docs/guides/storage/buckets/creating-buckets/index.md", "title": "Creating Buckets"}
+nav_next: {"path": "supabase/docs/guides/storage/analytics/query-with-postgres/index.md", "title": "Query with Postgres"}
 ---
 
 # 

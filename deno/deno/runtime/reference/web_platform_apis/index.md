@@ -10,7 +10,6 @@ content_hash: "bca42a5c99c8f77bac1da3fb797d977873327054d3246cc635c4b06a53ccfc62"
 menu_path: ["Web Platform APIs"]
 section_path: []
 nav_prev: {"path": "deno/deno/runtime/reference/std/xml/index.md", "title": "@std/xml"}
-nav_next: {"path": "deno/deno/api/deno/index.md", "title": "Deno Namespace APIs"}
 ---
 
 On this page

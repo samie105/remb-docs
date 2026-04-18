@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:37:08.154Z"
 content_hash: "1e156bccc84eb73f80b68f2239c3a58b8701f267153a147dbe76228c08d770e4"
 menu_path: ["Testing"]
 section_path: []
-nav_prev: {"path": "fastify/docs/latest/Guides/Database/index.md", "title": "Database"}
-nav_next: {"path": "fastify/docs/latest/Guides/Benchmarking/index.md", "title": "Benchmarking"}
+nav_prev: {"path": "fastify/docs/latest/Guides/Style-Guide/index.md", "title": "Fastify Style Guide"}
+nav_next: {"path": "fastify/docs/latest/Guides/Write-Plugin/index.md", "title": "How to write a good plugin"}
 ---
 
 Version: latest (v5.8.x)

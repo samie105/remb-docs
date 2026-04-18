@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:49:40.749Z"
 content_hash: "c7c42c65532f9991a9e8a2e65ce1aaa882ddf3741cab2e6513bc114612a7917a"
 menu_path: ["PostgreSQL: Documentation: 18: 47.3. Streaming Replication Protocol Interface"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/contrib-dblink-connect.html/index.md", "title": "PostgreSQL: Documentation: 18: dblink_connect"}
-nav_next: {"path": "postgres/docs/current/query-path.html/index.md", "title": "PostgreSQL: Documentation: 18: 51.1.\u00a0The Path of a Query"}
+nav_prev: {"path": "postgres/docs/current/logicaldecoding-two-phase-commits.html/index.md", "title": "PostgreSQL: Documentation: 18: 47.10.\u00a0Two-phase Commit Support for Logical Decoding"}
+nav_next: {"path": "postgres/docs/current/logicaldecoding-writer.html/index.md", "title": "PostgreSQL: Documentation: 18: 47.7.\u00a0Logical Decoding Output Writers"}
 ---
 
 The commands

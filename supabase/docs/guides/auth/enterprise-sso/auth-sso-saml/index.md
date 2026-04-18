@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:53:19.719Z"
 content_hash: "19fc921bad6748291686b4e862f41fdaaa882503c54d9202b19e036aa6a6bb77"
 menu_path: ["Auth","Auth","More","More","More","Enterprise SSO","Enterprise SSO","SAML 2.0","SAML 2.0"]
 section_path: ["Auth","Auth","More","More","More","Enterprise SSO","Enterprise SSO","SAML 2.0","SAML 2.0"]
-nav_prev: {"path": "supabase/docs/guides/auth/debugging/error-codes/index.md", "title": "Error Codes"}
-nav_next: {"path": "supabase/docs/guides/auth/oauth-server/getting-started/index.md", "title": "Getting Started with OAuth 2.1 Server"}
+nav_prev: {"path": "supabase/docs/guides/auth/enterprise-sso/index.md", "title": "Enterprise Single Sign-On"}
+nav_next: {"path": "supabase/docs/guides/auth/general-configuration/index.md", "title": "General configuration"}
 ---
 
 # 

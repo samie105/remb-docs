@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:37:01.264Z"
 content_hash: "604752dcc51b1a7903a9e77d1e9cfbb4f643a1f63bd9cfa8562a393f3af516b2"
 menu_path: ["http2 - Node documentation"]
 section_path: []
-nav_prev: {"path": "deno/deno/api/node/https/index.md", "title": "https - Node documentation"}
-nav_next: {"path": "deno/deno/api/node/inspector/index.md", "title": "inspector - Node documentation"}
+nav_prev: {"path": "deno/deno/api/node/http/index.md", "title": "http - Node documentation"}
+nav_next: {"path": "deno/deno/api/node/https/index.md", "title": "https - Node documentation"}
 ---
 
 ### Usage in Deno

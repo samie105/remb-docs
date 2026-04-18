@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:36:24.740Z"
 content_hash: "2fc265d7e268a1de3a4a3560e28ba6d7f5c4d2d4ae0b73d7e9e589de126a153f"
 menu_path: ["Bundler"]
 section_path: []
-nav_prev: {"path": "bun/bun/docs/bundler/hot-reloading/index.md", "title": "Hot reloading"}
-nav_next: {"path": "bun/bun/docs/bundler/loaders/index.md", "title": "Loaders"}
+nav_prev: {"path": "bun/bun/docs/index.md", "title": "Welcome to Bun"}
+nav_next: {"path": "bun/bun/docs/bundler/bytecode/index.md", "title": "Bytecode Caching"}
 ---
 
 # CommonJS bytecode

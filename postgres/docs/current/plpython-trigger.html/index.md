@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:40:50.719Z"
 content_hash: "ec2bd94de23f7ea30949fd06970c3d39c191870450855f2b10c575352bfbde1c"
 menu_path: ["PostgreSQL: Documentation: 18: 44.5. Trigger Functions"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/ecpg-sql-whenever.html/index.md", "title": "PostgreSQL: Documentation: 18: WHENEVER"}
-nav_next: {"path": "postgres/docs/current/xfunc.html/index.md", "title": "PostgreSQL: Documentation: 18: 36.3.\u00a0User-Defined Functions"}
+nav_prev: {"path": "postgres/docs/current/plpython-funcs.html/index.md", "title": "PostgreSQL: Documentation: 18: 44.1.\u00a0PL/Python Functions"}
+nav_next: {"path": "postgres/docs/current/pltcl-config.html/index.md", "title": "PostgreSQL: Documentation: 18: 42.11.\u00a0PL/Tcl Configuration"}
 ---
 
 When a function is used as a trigger, the dictionary `TD` contains trigger-related values:

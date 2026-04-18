@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:50:02.937Z"
 content_hash: "12bf0e6a122adf10e0e83faed9afe0d5c2269c298d6b20ff65228c7cc638da84"
 menu_path: ["PostgreSQL: Documentation: 18: VACUUM"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/spi-spi-getnspname.html/index.md", "title": "PostgreSQL: Documentation: 18: SPI_getnspname"}
-nav_next: {"path": "postgres/docs/current/plperl-under-the-hood.html/index.md", "title": "PostgreSQL: Documentation: 18: 43.8.\u00a0PL/Perl Under the Hood"}
+nav_prev: {"path": "postgres/docs/current/sql-update.html/index.md", "title": "PostgreSQL: Documentation: 18: UPDATE"}
+nav_next: {"path": "postgres/docs/current/sql-values.html/index.md", "title": "PostgreSQL: Documentation: 18: VALUES"}
 ---
 
 VACUUM — garbage-collect and optionally analyze a database

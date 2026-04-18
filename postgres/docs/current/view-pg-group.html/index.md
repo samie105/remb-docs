@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:50:31.139Z"
 content_hash: "4b4a8116fe15a8ea6e45601264e673d8bb72ece9c669c0bb9342b7b8d6a9a62d"
 menu_path: ["PostgreSQL: Documentation: 18: 53.9. pg_group"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/app-pgcreatesubscriber.html/index.md", "title": "PostgreSQL: Documentation: 18: pg_createsubscriber"}
-nav_next: {"path": "postgres/docs/current/protocol-overview.html/index.md", "title": "PostgreSQL: Documentation: 18: 54.1.\u00a0Overview"}
+nav_prev: {"path": "postgres/docs/current/view-pg-file-settings.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.8.\u00a0pg_file_settings"}
+nav_next: {"path": "postgres/docs/current/view-pg-hba-file-rules.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.10.\u00a0pg_hba_file_rules"}
 ---
 
 Development Versions: [devel](https://www.postgresql.org/docs/devel/view-pg-group.html "PostgreSQL devel - 53.9. pg_group")

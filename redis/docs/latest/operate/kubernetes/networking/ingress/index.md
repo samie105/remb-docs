@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:03:39.539Z"
 content_hash: "7a9042e48d00fc03157aa5d9a3d1a1e9a3ef19bd836ed834ab2ae0ec72f22f4c"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Enterprise for Kubernetes","→","Redis Enterprise for Kubernetes","→\n      \n        Networking","→","Networking","→\n      \n        Configure Ingress for external routing","→","Configure Ingress for external routing"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Enterprise for Kubernetes","→","Redis Enterprise for Kubernetes","→\n      \n        Networking","→","Networking","→\n      \n        Configure Ingress for external routing","→","Configure Ingress for external routing"]
-nav_prev: {"path": "redis/docs/latest/integrate/hiredis/index.md", "title": "C client for Redis"}
-nav_next: {"path": "redis/docs/latest/develop/clients/ioredis/index.md", "title": "ioredis guide (JavaScript)"}
+nav_prev: {"path": "redis/docs/latest/operate/kubernetes/networking/database-connectivity/index.md", "title": "Database connectivity"}
+nav_next: {"path": "redis/docs/latest/operate/kubernetes/re-databases/db-controller/index.md", "title": "Manage Redis Enterprise databases for Kubernetes"}
 ---
 
 # Configure Ingress for external routing

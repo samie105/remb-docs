@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:52:44.256Z"
 content_hash: "8e4e639560079f4e44f5f1c4098fff5370522ab816fd299830bbede7c5cd1728"
 menu_path: ["Data sources"]
 section_path: []
-nav_prev: {"path": "prisma/docs/orm/prisma-schema/data-model/views/index.md", "title": "Views"}
-nav_next: {"path": "prisma/docs/orm/prisma-schema/overview/index.md", "title": "Overview of Prisma Schema"}
+nav_prev: {"path": "prisma/docs/orm/prisma-schema/overview/index.md", "title": "Overview of Prisma Schema"}
+nav_next: {"path": "prisma/docs/orm/prisma-schema/overview/generators/index.md", "title": "Generators"}
 ---
 
 Overview

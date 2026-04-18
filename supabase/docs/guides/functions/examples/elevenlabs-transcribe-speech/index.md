@@ -9,7 +9,7 @@ last_crawled_at: "2026-04-18T16:57:29.354Z"
 content_hash: "055d8bd456b33176b8005617b73ed8c70f772060f9cb9cf73c6f39025c2eeb2f"
 menu_path: ["Edge Functions","Edge Functions","Third-Party Tools","Third-Party Tools","Speech Transcription with ElevenLabs","Speech Transcription with ElevenLabs"]
 section_path: ["Edge Functions","Edge Functions","Third-Party Tools","Third-Party Tools","Speech Transcription with ElevenLabs","Speech Transcription with ElevenLabs"]
-nav_prev: {"path": "supabase/docs/guides/functions/examples/discord-bot/index.md", "title": "Building a Discord Bot"}
+nav_prev: {"path": "supabase/docs/guides/functions/examples/elevenlabs-generate-speech-stream/index.md", "title": "Streaming Speech with ElevenLabs"}
 nav_next: {"path": "supabase/docs/guides/functions/examples/github-actions/index.md", "title": "GitHub Actions"}
 ---
 

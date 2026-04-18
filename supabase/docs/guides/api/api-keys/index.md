@@ -9,7 +9,7 @@ last_crawled_at: "2026-04-18T16:34:54.301Z"
 content_hash: "426ca15951eb99b039f2842a2089fd416487bdc8c355a81a3fcb2913c1357103"
 menu_path: ["Data REST API","Data REST API","Security","Security","How API Keys work","How API Keys work"]
 section_path: ["Data REST API","Data REST API","Security","Security","How API Keys work","How API Keys work"]
-nav_prev: {"path": "supabase/docs/guides/ai/vector-columns/index.md", "title": "Vector columns"}
+nav_prev: {"path": "supabase/docs/guides/api/index.md", "title": "Data REST API"}
 nav_next: {"path": "supabase/docs/guides/api/automatic-retries-in-supabase-js/index.md", "title": "How to do automatic retries with supabase-js"}
 ---
 

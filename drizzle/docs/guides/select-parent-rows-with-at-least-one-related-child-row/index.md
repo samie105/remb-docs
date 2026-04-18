@@ -10,7 +10,7 @@ content_hash: "b7c63c949566d45371868402aecabf86f75189c4d817ff6fea84f86c72df2cb6"
 menu_path: ["Drizzle ORM - Select parent rows with at least one related child row"]
 section_path: []
 nav_prev: {"path": "drizzle/docs/guides/seeding-with-partially-exposed-tables/index.md", "title": "Drizzle ORM - Seeding Partially Exposed Tables with Foreign Key"}
-nav_next: {"path": "drizzle/docs/guides/toggling-a-boolean-field/index.md", "title": "Drizzle ORM - SQL Toggle value"}
+nav_next: {"path": "drizzle/docs/guides/timestamp-default-value/index.md", "title": "Drizzle ORM - SQL Timestamp as a default value"}
 ---
 
 Drizzle | Select parent rows with at least one related child row

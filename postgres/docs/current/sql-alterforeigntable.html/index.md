@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:52:24.683Z"
 content_hash: "cd54a08e298513c9a420a6c9d84bf732b6a512637bccc68b5ef44bc393962d0b"
 menu_path: ["PostgreSQL: Documentation: 18: ALTER FOREIGN TABLE"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/datetime-input-rules.html/index.md", "title": "PostgreSQL: Documentation: 18: B.1.\u00a0Date/Time Input Interpretation"}
-nav_next: {"path": "postgres/docs/current/app-pgcontroldata.html/index.md", "title": "PostgreSQL: Documentation: 18: pg_controldata"}
+nav_prev: {"path": "postgres/docs/current/sql-alterdomain.html/index.md", "title": "PostgreSQL: Documentation: 18: ALTER DOMAIN"}
+nav_next: {"path": "postgres/docs/current/sql-altergroup.html/index.md", "title": "PostgreSQL: Documentation: 18: ALTER GROUP"}
 ---
 
 ALTER FOREIGN TABLE — change the definition of a foreign table

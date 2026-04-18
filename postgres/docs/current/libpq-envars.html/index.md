@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:49:47.836Z"
 content_hash: "a9f6762a427ee21baa215b01250425347df9c11b945f8268df4cee7758a8ad35"
 menu_path: ["PostgreSQL: Documentation: 18: 32.15. Environment Variables"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/external-interfaces.html/index.md", "title": "PostgreSQL: Documentation: 18: H.1.\u00a0Client Interfaces"}
-nav_next: {"path": "postgres/docs/current/view-pg-indexes.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.12.\u00a0pg_indexes"}
+nav_prev: {"path": "postgres/docs/current/libpq-copy.html/index.md", "title": "PostgreSQL: Documentation: 18: 32.10.\u00a0Functions Associated with the COPY Command"}
+nav_next: {"path": "postgres/docs/current/libpq-notice-processing.html/index.md", "title": "PostgreSQL: Documentation: 18: 32.13.\u00a0Notice Processing"}
 ---
 
 The following environment variables can be used to select default connection parameter values, which will be used by [`PQconnectdb`](postgres/docs/current/libpq-connect.html/index.md#LIBPQ-PQCONNECTDB), [`PQsetdbLogin`](postgres/docs/current/libpq-connect.html/index.md#LIBPQ-PQSETDBLOGIN) and [`PQsetdb`](postgres/docs/current/libpq-connect.html/index.md#LIBPQ-PQSETDB) if no value is directly specified by the calling code. These are useful to avoid hard-coding database connection information into simple client applications, for example.

@@ -9,7 +9,7 @@ last_crawled_at: "2026-04-18T16:48:43.324Z"
 content_hash: "734f1bdad99201f9686c87af4c152b35777fde0065f64974524ad75edd35cd13"
 menu_path: ["Realtime","Realtime","Deep dive","Deep dive","Architecture","Architecture"]
 section_path: ["Realtime","Realtime","Deep dive","Deep dive","Architecture","Architecture"]
-nav_prev: {"path": "supabase/docs/guides/resources/glossary/index.md", "title": "Glossary"}
+nav_prev: {"path": "supabase/docs/guides/realtime/index.md", "title": "Realtime"}
 nav_next: {"path": "supabase/docs/guides/realtime/authorization/index.md", "title": "Realtime Authorization"}
 ---
 

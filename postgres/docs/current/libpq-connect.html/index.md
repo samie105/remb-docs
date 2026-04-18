@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:34:57.304Z"
 content_hash: "bac525a35b396b6d7a732747620d87fbf7310896e5b0249f4cdc4ad24b12775f"
 menu_path: ["PostgreSQL: Documentation: 18: 32.1. Database Connection Control Functions"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/runtime-config-query.html/index.md", "title": "PostgreSQL: Documentation: 18: 19.7.\u00a0Query Planning"}
-nav_next: {"path": "postgres/docs/current/app-pgreceivexlog.html/index.md", "title": "PostgreSQL: Documentation: 18: O.5.\u00a0pg_receivexlog renamed to pg_receivewal"}
+nav_prev: {"path": "postgres/docs/current/libpq-async.html/index.md", "title": "PostgreSQL: Documentation: 18: 32.4.\u00a0Asynchronous Command Processing"}
+nav_next: {"path": "postgres/docs/current/libpq-control.html/index.md", "title": "PostgreSQL: Documentation: 18: 32.11.\u00a0Control Functions"}
 ---
 
 ### 32.1.2. Parameter Key Words [#](#LIBPQ-PARAMKEYWORDS)

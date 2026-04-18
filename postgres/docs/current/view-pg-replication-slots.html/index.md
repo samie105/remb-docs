@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:35:40.484Z"
 content_hash: "642196f48df3af282fa8808a194ab415756323d20cb942b53ae942dfae263654"
 menu_path: ["PostgreSQL: Documentation: 18: 53.20. pg_replication_slots"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/runtime-config-replication.html/index.md", "title": "PostgreSQL: Documentation: 18: 19.6.\u00a0Replication"}
-nav_next: {"path": "postgres/docs/current/functions-admin.html/index.md", "title": "PostgreSQL: Documentation: 18: 9.28.\u00a0System Administration Functions"}
+nav_prev: {"path": "postgres/docs/current/view-pg-replication-origin-status.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.19.\u00a0pg_replication_origin_status"}
+nav_next: {"path": "postgres/docs/current/view-pg-roles.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.21.\u00a0pg_roles"}
 ---
 
 Column Type

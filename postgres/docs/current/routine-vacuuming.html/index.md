@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:42:22.555Z"
 content_hash: "da0878f0e578f2cd2df708d976eded982ef7560b9a1b169fddc80c1d54aec46a"
 menu_path: ["PostgreSQL: Documentation: 18: 24.1. Routine Vacuuming"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/catalog-pg-shseclabel.html/index.md", "title": "PostgreSQL: Documentation: 18: 52.50.\u00a0pg_shseclabel"}
-nav_next: {"path": "postgres/docs/current/bki-structure.html/index.md", "title": "PostgreSQL: Documentation: 18: 68.5.\u00a0Structure of the Bootstrap BKI File"}
+nav_prev: {"path": "postgres/docs/current/role-removal.html/index.md", "title": "PostgreSQL: Documentation: 18: 21.4.\u00a0Dropping Roles"}
+nav_next: {"path": "postgres/docs/current/rowtypes.html/index.md", "title": "PostgreSQL: Documentation: 18: 8.16.\u00a0Composite Types"}
 ---
 
 PostgreSQL databases require periodic maintenance known as _vacuuming_. For many installations, it is sufficient to let vacuuming be performed by the _autovacuum daemon_, which is described in [Section 24.1.6](https://www.postgresql.org/docs/current/routine-vacuuming.html#AUTOVACUUM "24.1.6. The Autovacuum Daemon"). You might need to adjust the autovacuuming parameters described there to obtain best results for your situation. Some database administrators will want to supplement or replace the daemon's activities with manually-managed `VACUUM` commands, which typically are executed according to a schedule by cron or Task Scheduler scripts. To set up manually-managed vacuuming properly, it is essential to understand the issues discussed in the next few subsections. Administrators who rely on autovacuuming may still wish to skim this material to help them understand and adjust autovacuuming.

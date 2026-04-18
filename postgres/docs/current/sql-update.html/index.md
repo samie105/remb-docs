@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:49:18.903Z"
 content_hash: "0d4db5bd6fdf5763cf865fb877487a6cb6b578cc0852d6c0d92b069d70c08429"
 menu_path: ["PostgreSQL: Documentation: 18: UPDATE"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/catalog-pg-statistic.html/index.md", "title": "PostgreSQL: Documentation: 18: 52.51.\u00a0pg_statistic"}
-nav_next: {"path": "postgres/docs/current/ecpg-sql-deallocate-descriptor.html/index.md", "title": "PostgreSQL: Documentation: 18: DEALLOCATE DESCRIPTOR"}
+nav_prev: {"path": "postgres/docs/current/sql-unlisten.html/index.md", "title": "PostgreSQL: Documentation: 18: UNLISTEN"}
+nav_next: {"path": "postgres/docs/current/sql-vacuum.html/index.md", "title": "PostgreSQL: Documentation: 18: VACUUM"}
 ---
 
 UPDATE — update rows of a table

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:00:45.275Z"
 content_hash: "8b671ff3850fdd24ed066c77c460f189ddb341890665c1b79a7d60211299e1c7"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis data types","→","Redis data types","→\n      \n        JSON","→","JSON","→\n      \n        Use cases","→","Use cases"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis data types","→","Redis data types","→\n      \n        JSON","→","JSON","→\n      \n        Use cases","→","Use cases"]
-nav_prev: {"path": "redis/docs/latest/integrate/terraform-provider-for-redis-cloud/index.md", "title": "Terraform provider for Redis Cloud"}
-nav_next: {"path": "redis/docs/latest/develop/ai/redisvl/user_guide/index.md", "title": "User Guides"}
+nav_prev: {"path": "redis/docs/latest/develop/data-types/json/resp3/index.md", "title": "Guide for migrating from RESP2 to RESP3 replies"}
+nav_next: {"path": "redis/docs/latest/develop/data-types/probabilistic/hyperloglogs/index.md", "title": "HyperLogLog"}
 ---
 
 # Use cases

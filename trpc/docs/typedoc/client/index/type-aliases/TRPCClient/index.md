@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:52:20.591Z"
 content_hash: "5d8a0ee05fea36803f341d1776cee0be23b0984819704311ffd032d570129740"
 menu_path: ["Type Alias: TRPCClient<TRouter>"]
 section_path: []
-nav_prev: {"path": "trpc/docs/typedoc/client/index/type-aliases/inferRouterProxyClient/index.md", "title": "Type Alias: inferRouterProxyClient<TRouter>"}
-nav_next: {"path": "trpc/docs/typedoc/client/index/type-aliases/TRPCFetch/index.md", "title": "Type Alias: TRPCFetch()"}
+nav_prev: {"path": "trpc/docs/typedoc/client/index/type-aliases/LocalLinkOptions/index.md", "title": "Type Alias: LocalLinkOptions<TRouter>"}
+nav_next: {"path": "trpc/docs/typedoc/client/index/type-aliases/TRPCClientErrorLike/index.md", "title": "Type Alias: TRPCClientErrorLike<TInferrable>"}
 ---
 
 > **TRPCClient**<`TRouter`\>: `DecoratedProcedureRecord`<{ `errorShape`: `TRouter`\[`"_def"`\]\[`"_config"`\]\[`"$types"`\]\[`"errorShape"`\]; `transformer`: `TRouter`\[`"_def"`\]\[`"_config"`\]\[`"$types"`\]\[`"transformer"`\]; }, `TRouter`\[`"_def"`\]\[`"record"`\]> & `object`

@@ -10,7 +10,7 @@ content_hash: "b724c9efce5c63e7737908768617f6ac0d3cdba390abe8e2cf6fe147a7564206"
 menu_path: ["Step1"]
 section_path: []
 nav_prev: {"path": "trpc/docs/v10/getting-started/index.md", "title": "Getting Started"}
-nav_next: {"path": "trpc/docs/v10/landing-intro/Step3/index.md", "title": "Step3"}
+nav_next: {"path": "trpc/docs/v10/landing-intro/Step2/index.md", "title": "Step2"}
 ---
 
 ts

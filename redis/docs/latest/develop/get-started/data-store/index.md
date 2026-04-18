@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:39:40.599Z"
 content_hash: "aac67aacbda765b65ef6133d77f017ba334a6635f8534d8251c6756fe7a9fbc2"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Quick starts","→","Quick starts","→\n      \n        Redis as an in-memory data structure store quick start guide","→","Redis as an in-memory data structure store quick start guide"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Quick starts","→","Quick starts","→\n      \n        Redis as an in-memory data structure store quick start guide","→","Redis as an in-memory data structure store quick start guide"]
-nav_prev: {"path": "redis/docs/latest/operate/rc/subscriptions/bring-your-own-cloud/iam-resources/index.md", "title": "Create IAM resources for AWS cloud accounts"}
-nav_next: {"path": "redis/docs/latest/operate/kubernetes/networking/database-connectivity/index.md", "title": "Database connectivity"}
+nav_prev: {"path": "redis/docs/latest/develop/data-types/timeseries/use_cases/index.md", "title": "Use cases"}
+nav_next: {"path": "redis/docs/latest/develop/get-started/document-database/index.md", "title": "Redis as a document database quick start guide"}
 ---
 
 # Redis as an in-memory data structure store quick start guide

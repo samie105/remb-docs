@@ -10,7 +10,7 @@ content_hash: "af14119a7f58afc8f78157236893ba7914a479cef5101597cf41af1ba85d2eca"
 menu_path: ["Example Apps"]
 section_path: []
 nav_prev: {"path": "trpc/docs/concepts/index.md", "title": "Concepts"}
-nav_next: {"path": "trpc/docs/v10/index.md", "title": "tRPC"}
+nav_next: {"path": "trpc/docs/client/index.md", "title": "tRPC Client"}
 ---
 
 ## Official[​](#official "Direct link to Official")

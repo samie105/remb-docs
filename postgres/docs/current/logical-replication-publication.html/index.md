@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:52:59.555Z"
 content_hash: "94f851e09fb8f7af0f30c6710d98f9124a8517f5979dfb3e115dd2ba2742d695"
 menu_path: ["PostgreSQL: Documentation: 18: 29.1. Publication"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/view-pg-aios.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.2.\u00a0pg_aios"}
-nav_next: {"path": "postgres/docs/current/datetime-config-files.html/index.md", "title": "PostgreSQL: Documentation: 18: B.4.\u00a0Date/Time Configuration Files"}
+nav_prev: {"path": "postgres/docs/current/logical-replication-col-lists.html/index.md", "title": "PostgreSQL: Documentation: 18: 29.5.\u00a0Column Lists"}
+nav_next: {"path": "postgres/docs/current/logical-replication-quick-setup.html/index.md", "title": "PostgreSQL: Documentation: 18: 29.14.\u00a0Quick Setup"}
 ---
 
 A _publication_ can be defined on any physical replication primary. The node where a publication is defined is referred to as _publisher_. A publication is a set of changes generated from a table or a group of tables, and might also be described as a change set or replication set. Each publication exists in only one database.

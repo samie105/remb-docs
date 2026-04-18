@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:57:59.970Z"
 content_hash: "da91284ef9ad6d9a94c8ecd789f37c7422e314a6113a36e93130b6d92ad29a18"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Redis Open Source and Redis Software","→","Redis Open Source and Redis Software","→\n      \n        Deprecated Redis Open Source features and modules","→","Deprecated Redis Open Source features and modules","→\n      \n        Triggers and functions","→","Triggers and functions","→\n      \n        Concepts","→","Concepts","→\n      \n        Cluster support","→","Cluster support"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Redis Open Source and Redis Software","→","Redis Open Source and Redis Software","→\n      \n        Deprecated Redis Open Source features and modules","→","Deprecated Redis Open Source features and modules","→\n      \n        Triggers and functions","→","Triggers and functions","→\n      \n        Concepts","→","Concepts","→\n      \n        Cluster support","→","Cluster support"]
-nav_prev: {"path": "redis/docs/latest/develop/ai/search-and-query/advanced-concepts/aggregations-syntax/index.md", "title": "FT.AGGREGATE order of operations"}
-nav_next: {"path": "redis/docs/latest/develop/programmability/lua-debugging/index.md", "title": "Debugging Lua scripts in Redis"}
+nav_prev: {"path": "redis/docs/latest/operate/oss_and_stack/stack-with-enterprise/deprecated-features/triggers-and-functions/concepts/binary_data/index.md", "title": "Binary data"}
+nav_next: {"path": "redis/docs/latest/operate/oss_and_stack/stack-with-enterprise/deprecated-features/triggers-and-functions/concepts/function_flags/index.md", "title": "Function flags"}
 ---
 
 # Cluster support

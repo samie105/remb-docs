@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:56:40.425Z"
 content_hash: "761951b9e106c87baf4fe2e9f660fc3f1ec151dc84f4882d48e568019fd2667d"
 menu_path: ["Append content to a file"]
 section_path: []
-nav_prev: {"path": "bun/bun/docs/guides/write-file/basic/index.md", "title": "Write a string to a file"}
-nav_next: {"path": "bun/bun/docs/guides/write-file/blob/index.md", "title": "Write a Blob to a file"}
+nav_prev: {"path": "bun/bun/docs/guides/websocket/simple/index.md", "title": "Build a simple WebSocket server"}
+nav_next: {"path": "bun/bun/docs/guides/write-file/basic/index.md", "title": "Write a string to a file"}
 ---
 
 [Skip to main content](#content-area)

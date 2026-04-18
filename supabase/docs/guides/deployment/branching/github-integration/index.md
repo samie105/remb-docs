@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:57:10.424Z"
 content_hash: "42d40640f2228f8aaea2dcd330ce7923e6dc2c2d60c77cf9aa78b746c9fd00f4"
 menu_path: ["Deployment & Branching","Deployment & Branching","Branching","Branching","Branching via GitHub","Branching via GitHub"]
 section_path: ["Deployment & Branching","Deployment & Branching","Branching","Branching","Branching via GitHub","Branching via GitHub"]
-nav_prev: {"path": "supabase/docs/guides/deployment/branching/integrations/index.md", "title": "Integrations"}
-nav_next: {"path": "supabase/docs/guides/deployment/branching/troubleshooting/index.md", "title": "Troubleshooting"}
+nav_prev: {"path": "supabase/docs/guides/deployment/branching/dashboard/index.md", "title": "Branching via the dashboard"}
+nav_next: {"path": "supabase/docs/guides/deployment/branching/integrations/index.md", "title": "Integrations"}
 ---
 
 # 

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:34:20.282Z"
 content_hash: "1e148204d47a33ddb5a0c3e5f918815c8c7d2728bf4b8013e55ee866bdb20221"
 menu_path: ["CockroachDB column types"]
 section_path: []
-nav_prev: {"path": "drizzle/docs/column-types/mssql/index.md", "title": "MSSQL column types"}
-nav_next: {"path": "drizzle/docs/column-types/singlestore/index.md", "title": "SingleStore column types"}
+nav_prev: {"path": "drizzle/docs/graphql/index.md", "title": "drizzle-graphql"}
+nav_next: {"path": "drizzle/docs/column-types/mssql/index.md", "title": "MSSQL column types"}
 ---
 
 WARNING

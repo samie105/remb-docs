@@ -10,7 +10,7 @@ content_hash: "dfae88183de892ffb55870cd567ab09a49770c3ca82cfb4da5869374e0807c2a"
 menu_path: ["worker_threads - Node documentation"]
 section_path: []
 nav_prev: {"path": "deno/deno/api/node/wasi/index.md", "title": "wasi - Node documentation"}
-nav_next: {"path": "deno/deno/api/node/vm/index.md", "title": "vm - Node documentation"}
+nav_next: {"path": "deno/deno/api/node/zlib/index.md", "title": "zlib - Node documentation"}
 ---
 
 ### Usage in Deno

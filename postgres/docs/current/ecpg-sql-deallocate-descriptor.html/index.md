@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:49:19.543Z"
 content_hash: "14224790e0f5852846201d30c50abac58c2d22b5d1449bc7d1c436b148dc26cc"
 menu_path: ["PostgreSQL: Documentation: 18: DEALLOCATE DESCRIPTOR"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/sql-update.html/index.md", "title": "PostgreSQL: Documentation: 18: UPDATE"}
-nav_next: {"path": "postgres/docs/current/catalog-pg-publication-namespace.html/index.md", "title": "PostgreSQL: Documentation: 18: 52.41.\u00a0pg_publication_namespace"}
+nav_prev: {"path": "postgres/docs/current/ecpg-sql-connect.html/index.md", "title": "PostgreSQL: Documentation: 18: CONNECT"}
+nav_next: {"path": "postgres/docs/current/ecpg-sql-declare-statement.html/index.md", "title": "PostgreSQL: Documentation: 18: DECLARE STATEMENT"}
 ---
 
 February 26, 2026: [PostgreSQL 18.3, 17.9, 16.13, 15.17, and 14.22 Released!](/about/news/postgresql-183-179-1613-1517-and-1422-released-3246/)

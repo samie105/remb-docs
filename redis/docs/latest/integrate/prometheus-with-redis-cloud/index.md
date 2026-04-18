@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:08:28.249Z"
 content_hash: "dcded5cb0111251a95b9be1d724a84345a384f2cd088d2244e725f64d610c367"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Prometheus and Grafana with Redis Cloud","→","Prometheus and Grafana with Redis Cloud"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Prometheus and Grafana with Redis Cloud","→","Prometheus and Grafana with Redis Cloud"]
-nav_prev: {"path": "redis/docs/latest/operate/rs/installing-upgrading/install/prepare-install/index.md", "title": "Prepare to install Redis Software"}
-nav_next: {"path": "redis/docs/latest/commands/redis-6-2-commands/index.md", "title": "Redis 6.2 Commands Reference"}
+nav_prev: {"path": "redis/docs/latest/integrate/php-redis/index.md", "title": "PHP client for Redis"}
+nav_next: {"path": "redis/docs/latest/integrate/prometheus-with-redis-enterprise/index.md", "title": "Prometheus and Grafana with Redis Software"}
 ---
 
 # Prometheus and Grafana with Redis Cloud

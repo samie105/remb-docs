@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:02:30.984Z"
 content_hash: "65c97011915d1628e36ff84b25eeb72601dda218c2029a378f2dd0cd03686c62"
 menu_path: ["Test runner"]
 section_path: []
-nav_prev: {"path": "bun/bun/docs/test/lifecycle/index.md", "title": "Lifecycle hooks"}
-nav_next: {"path": "bun/bun/docs/test/reporters/index.md", "title": "Test Reporters"}
+nav_prev: {"path": "bun/bun/docs/runtime/yaml/index.md", "title": "YAML"}
+nav_next: {"path": "bun/bun/docs/test/code-coverage/index.md", "title": "Code coverage"}
 ---
 
 # run all tests or test suites with "addition" in the name

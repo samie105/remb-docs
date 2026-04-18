@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:53:28.537Z"
 content_hash: "7e76268651f49b260d9d127ee226059d53f6d3b99826cbd01d595e72d7840df6"
 menu_path: ["PostgreSQL: Documentation: 18: 35.48. sql_features"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/extend-extensions.html/index.md", "title": "PostgreSQL: Documentation: 18: 36.17.\u00a0Packaging Related Objects into an Extension"}
-nav_next: {"path": "postgres/docs/current/view-pg-timezone-abbrevs.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.33.\u00a0pg_timezone_abbrevs"}
+nav_prev: {"path": "postgres/docs/current/infoschema-sequences.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.47.\u00a0sequences"}
+nav_next: {"path": "postgres/docs/current/infoschema-sql-implementation-info.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.49.\u00a0sql_implementation_info"}
 ---
 
 The table `sql_features` contains information about which formal features defined in the SQL standard are supported by PostgreSQL. This is the same information that is presented in [Appendix D](https://www.postgresql.org/docs/current/features.html "Appendix D. SQL Conformance"). There you can also find some additional background information.

@@ -10,7 +10,7 @@ content_hash: "aef62c3d3abc1f99d9d93f4da8b4b952d0a46989b03bb971bd64b06cfa9a1d56"
 menu_path: ["bun create"]
 section_path: []
 nav_prev: {"path": "bun/bun/docs/runtime/streams/index.md", "title": "Streams"}
-nav_next: {"path": "bun/bun/docs/runtime/toml/index.md", "title": "TOML"}
+nav_next: {"path": "bun/bun/docs/runtime/templating/init/index.md", "title": "bun init"}
 ---
 
 # Assuming bun detected imports to @/components/ui/accordion and @/components/ui/button

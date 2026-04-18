@@ -9,7 +9,7 @@ last_crawled_at: "2026-04-18T16:52:41.159Z"
 content_hash: "c95985abe29000f45d26e2d0686b3ea7a2dc91b6812b6896965848eab75fa535"
 menu_path: ["Auth","Auth","More","More","More","Auth Hooks","Auth Hooks","Before User Created hook","Before User Created hook"]
 section_path: ["Auth","Auth","More","More","More","Auth Hooks","Auth Hooks","Before User Created hook","Before User Created hook"]
-nav_prev: {"path": "supabase/docs/guides/api/rest/postgrest-error-codes/index.md", "title": "Error Codes"}
+nav_prev: {"path": "supabase/docs/guides/auth/auth-hooks/index.md", "title": "Auth Hooks"}
 nav_next: {"path": "supabase/docs/guides/auth/auth-hooks/custom-access-token-hook/index.md", "title": "Custom Access Token Hook"}
 ---
 

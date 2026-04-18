@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:03:21.815Z"
 content_hash: "7bd185be31c856641344b23c51d25019e9a91b8d52b78f984dd62521d1c1cf5c"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Software","→","Redis Software","→\n      \n        Monitoring with metrics and alerts","→","Monitoring with metrics and alerts","→\n      \n        Get started with monitoring Redis Software","→","Get started with monitoring Redis Software"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Software","→","Redis Software","→\n      \n        Monitoring with metrics and alerts","→","Monitoring with metrics and alerts","→\n      \n        Get started with monitoring Redis Software","→","Get started with monitoring Redis Software"]
-nav_prev: {"path": "redis/docs/latest/operate/oss_and_stack/stack-with-enterprise/deprecated-features/triggers-and-functions/concepts/function_flags/index.md", "title": "Function flags"}
-nav_next: {"path": "redis/docs/latest/develop/ai/redisvl/user_guide/hash_vs_json/index.md", "title": "Hash vs JSON Storage"}
+nav_prev: {"path": "redis/docs/latest/operate/rs/installing-upgrading/quickstarts/redis-enterprise-software-quickstart/index.md", "title": "Redis Software quickstart"}
+nav_next: {"path": "redis/docs/latest/operate/rs/security/access-control/index.md", "title": "Access control"}
 ---
 
 # Get started with monitoring Redis Software

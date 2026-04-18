@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:48:47.381Z"
 content_hash: "4cc167416d80183e2660446189e4b40abf17aec04e49f18b8a49637282371784"
 menu_path: ["PostgreSQL: Documentation: 18: 41.6. Control Structures"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/rule-system.html/index.md", "title": "PostgreSQL: Documentation: 18: 51.4.\u00a0The PostgreSQL Rule System"}
-nav_next: {"path": "postgres/docs/current/infoschema-role-usage-grants.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.39.\u00a0role_usage_grants"}
+nav_prev: {"path": "postgres/docs/current/plperl-under-the-hood.html/index.md", "title": "PostgreSQL: Documentation: 18: 43.8.\u00a0PL/Perl Under the Hood"}
+nav_next: {"path": "postgres/docs/current/plpgsql-cursors.html/index.md", "title": "PostgreSQL: Documentation: 18: 41.7.\u00a0Cursors"}
 ---
 
 Control structures are probably the most useful (and important) part of PL/pgSQL. With PL/pgSQL's control structures, you can manipulate PostgreSQL data in a very flexible and powerful way.

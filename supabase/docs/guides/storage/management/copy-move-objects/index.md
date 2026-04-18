@@ -9,7 +9,7 @@ last_crawled_at: "2026-04-18T17:01:18.727Z"
 content_hash: "12ad762704a68569b1f3ca0475f080abd0aeea381695126a179a18fc68528138"
 menu_path: ["Storage","Storage","More","More","More","Management","Management","Copy / Move Objects","Copy / Move Objects"]
 section_path: ["Storage","Storage","More","More","More","Management","Management","Copy / Move Objects","Copy / Move Objects"]
-nav_prev: {"path": "supabase/docs/guides/storage/debugging/error-codes/index.md", "title": "Error Codes"}
+nav_prev: {"path": "supabase/docs/guides/storage/debugging/logs/index.md", "title": "Logs"}
 nav_next: {"path": "supabase/docs/guides/storage/management/delete-objects/index.md", "title": "Delete Objects"}
 ---
 

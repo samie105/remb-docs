@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:00:35.939Z"
 content_hash: "f3d7325b9e220889ed6404523baa310eb1ca1aeb40c24cd98972d25d0ac1567a"
 menu_path: ["Platform","Platform","More","More","More","Migrating to Supabase","Migrating to Supabase","MySQL","MySQL"]
 section_path: ["Platform","Platform","More","More","More","Migrating to Supabase","Migrating to Supabase","MySQL","MySQL"]
-nav_prev: {"path": "supabase/docs/guides/platform/migrating-to-supabase/neon/index.md", "title": "Migrate from Neon to Supabase"}
-nav_next: {"path": "supabase/docs/guides/platform/migrating-to-supabase/render/index.md", "title": "Migrate from Render to Supabase"}
+nav_prev: {"path": "supabase/docs/guides/platform/migrating-to-supabase/mssql/index.md", "title": "Migrate from MSSQL to Supabase"}
+nav_next: {"path": "supabase/docs/guides/platform/migrating-to-supabase/neon/index.md", "title": "Migrate from Neon to Supabase"}
 ---
 
 # 

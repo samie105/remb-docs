@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:34:36.305Z"
 content_hash: "7ba58f5329be295a41b2b4875a6503afa29532121729f339a313c42c6004ff6c"
 menu_path: ["tRPC Client"]
 section_path: []
-nav_prev: {"path": "trpc/docs/v10/client/react/useQuery/index.md", "title": "useQuery()"}
-nav_next: {"path": "trpc/docs/v10/client/react/useUtils/index.md", "title": "useUtils"}
+nav_prev: {"path": "trpc/docs/v10/client/react/useUtils/index.md", "title": "useUtils"}
+nav_next: {"path": "trpc/docs/v10/client/vanilla/aborting-procedure-calls/index.md", "title": "Aborting Procedure Calls"}
 ---
 
 Version: 10.x

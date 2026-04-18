@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:44:51.103Z"
 content_hash: "a577395a968fb98c061994374e6f77aaf01366e67bcdec4ffc058b8d43897c0d"
 menu_path: ["getStaticPaths RSS helper is not available anymore."]
 section_path: []
-nav_prev: {"path": "astro/en/reference/errors/get-static-paths-expected-params/index.md", "title": "Missing params property on getStaticPaths route."}
-nav_next: {"path": "astro/en/reference/errors/get-static-paths-invalid-route-param/index.md", "title": "Invalid route parameter returned by getStaticPaths()."}
+nav_prev: {"path": "astro/en/reference/errors/get-static-paths-invalid-route-param/index.md", "title": "Invalid route parameter returned by getStaticPaths()."}
+nav_next: {"path": "astro/en/reference/errors/get-static-paths-required/index.md", "title": "getStaticPaths() function required for dynamic routes."}
 ---
 
 # getStaticPaths RSS helper is not available anymore.

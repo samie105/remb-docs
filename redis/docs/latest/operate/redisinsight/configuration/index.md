@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:02:29.908Z"
 content_hash: "726488816b9e56a15bd435a8367357555081ac34ab115871c500acc42d79b81c"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Insight","→","Redis Insight","→\n      \n        Redis Insight configuration settings","→","Redis Insight configuration settings"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Insight","→","Redis Insight","→\n      \n        Redis Insight configuration settings","→","Redis Insight configuration settings"]
-nav_prev: {"path": "redis/docs/latest/develop/reference/clients/index.md", "title": "Redis client handling"}
-nav_next: {"path": "redis/docs/latest/operate/rc/databases/active-active/create-active-active-database/index.md", "title": "Create an Active-Active database"}
+nav_prev: {"path": "redis/docs/latest/operate/rc/subscriptions/bring-your-own-cloud/iam-resources/index.md", "title": "Create IAM resources for AWS cloud accounts"}
+nav_next: {"path": "redis/docs/latest/operate/redisinsight/install/index.md", "title": "Install Redis Insight"}
 ---
 
 # Redis Insight configuration settings

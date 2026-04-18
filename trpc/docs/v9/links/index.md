@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:42:21.353Z"
 content_hash: "59fd3ee7e1dcd499f5aa8d50484c3db123808be5558b187e1a9f2812cd78abd4"
 menu_path: ["Links & Request Batching"]
 section_path: []
-nav_prev: {"path": "trpc/docs/v9/infer-types/index.md", "title": "Inferring Types"}
-nav_next: {"path": "trpc/docs/v9/invalidateQueries/index.md", "title": "invalidateQueries"}
+nav_prev: {"path": "trpc/docs/v9/invalidateQueries/index.md", "title": "invalidateQueries"}
+nav_next: {"path": "trpc/docs/v9/love/index.md", "title": "Testimonials / Love"}
 ---
 
 Similar to urql's [_exchanges_](https://formidable.com/open-source/urql/docs/architecture/) or Apollo's [links](https://www.apollographql.com/docs/react/api/link/introduction/). Links enables you to customize the flow of data between tRPC Client and the tRPC-server.

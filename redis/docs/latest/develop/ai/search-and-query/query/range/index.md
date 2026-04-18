@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:51:49.915Z"
 content_hash: "80ce26536d86835e7f0fcda459a7f7f66bdbd795f15130daf298d59e20771379"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        Redis Search","→","Redis Search","→\n      \n        Querying data","→","Querying data","→\n      \n        Range queries","→","Range queries"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        Redis Search","→","Redis Search","→\n      \n        Querying data","→","Querying data","→\n      \n        Range queries","→","Range queries"]
-nav_prev: {"path": "redis/docs/latest/operate/oss_and_stack/stack-with-enterprise/deprecated-features/triggers-and-functions/quick_start_cli/index.md", "title": "Quick start using redis-cli"}
-nav_next: {"path": "redis/docs/latest/operate/oss_and_stack/reference/internals/rdd/index.md", "title": "Redis design draft #2 (historical)"}
+nav_prev: {"path": "redis/docs/latest/develop/ai/search-and-query/query/geo-spatial/index.md", "title": "Geospatial queries"}
+nav_next: {"path": "redis/docs/latest/develop/ai/search-and-query/query/vector-search/index.md", "title": "Vector search"}
 ---
 
 # Range queries

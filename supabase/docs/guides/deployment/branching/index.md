@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:42:47.376Z"
 content_hash: "aa282f85b7715d02b4dc05690851ad63f101b1a0bf0a8d66b6f01448538e8707"
 menu_path: ["Deployment & Branching","Deployment & Branching","Branching","Branching","Overview","Overview"]
 section_path: ["Deployment & Branching","Deployment & Branching","Branching","Branching","Overview","Overview"]
-nav_prev: {"path": "supabase/docs/guides/database/testing/index.md", "title": "Testing Your Database"}
-nav_next: {"path": "supabase/docs/guides/database/vault/index.md", "title": "Vault"}
+nav_prev: {"path": "supabase/docs/guides/deployment/index.md", "title": "Deployment & Branching"}
+nav_next: {"path": "supabase/docs/guides/deployment/branching/configuration/index.md", "title": "Configuration"}
 ---
 
 # 

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:45:51.188Z"
 content_hash: "819f51f1365121ad1c2c7c873c739d8385162322118b875652d2436ba54695e5"
 menu_path: ["Edge Functions","Edge Functions","Advanced Features","Advanced Features","WebSockets","WebSockets"]
 section_path: ["Edge Functions","Edge Functions","Advanced Features","Advanced Features","WebSockets","WebSockets"]
-nav_prev: {"path": "supabase/docs/guides/getting-started/ai-prompts/index.md", "title": "AI Prompts"}
-nav_next: {"path": "supabase/docs/guides/getting-started/ai-skills/index.md", "title": "Agent Skills"}
+nav_prev: {"path": "supabase/docs/guides/functions/wasm/index.md", "title": "Using Wasm modules"}
+nav_next: {"path": "supabase/docs/guides/getting-started/ai-prompts/index.md", "title": "AI Prompts"}
 ---
 
 # 

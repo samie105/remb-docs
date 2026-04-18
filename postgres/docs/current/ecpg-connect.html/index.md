@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:41:49.944Z"
 content_hash: "1814bbe8ba559d5a50eaafc1493f540e6995f3314d8402e7bf75663462c9f37c"
 menu_path: ["PostgreSQL: Documentation: 18: 34.2. Managing Database Connections"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/sql-createaggregate.html/index.md", "title": "PostgreSQL: Documentation: 18: CREATE AGGREGATE"}
-nav_next: {"path": "postgres/docs/current/pgsurgery.html/index.md", "title": "PostgreSQL: Documentation: 18: F.34.\u00a0pg_surgery \u2014 perform low-level surgery on relation data"}
+nav_prev: {"path": "postgres/docs/current/ecpg-concept.html/index.md", "title": "PostgreSQL: Documentation: 18: 34.1.\u00a0The Concept"}
+nav_next: {"path": "postgres/docs/current/ecpg-cpp.html/index.md", "title": "PostgreSQL: Documentation: 18: 34.13.\u00a0C++ Applications"}
 ---
 
 This section describes how to open, close, and switch database connections.

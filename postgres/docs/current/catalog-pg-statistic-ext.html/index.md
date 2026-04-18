@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:45:54.119Z"
 content_hash: "9cfcb9f47f006707f188a5afa3130f53f38dcf9ae4e4aa4428ea649e47eab149"
 menu_path: ["PostgreSQL: Documentation: 18: 52.52. pg_statistic_ext"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/git.html/index.md", "title": "PostgreSQL: Documentation: 18: I.1.\u00a0Getting the Source via Git"}
-nav_next: {"path": "postgres/docs/current/infoschema-referential-constraints.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.34.\u00a0referential_constraints"}
+nav_prev: {"path": "postgres/docs/current/catalog-pg-statistic-ext-data.html/index.md", "title": "PostgreSQL: Documentation: 18: 52.53.\u00a0pg_statistic_ext_data"}
+nav_next: {"path": "postgres/docs/current/catalog-pg-statistic.html/index.md", "title": "PostgreSQL: Documentation: 18: 52.51.\u00a0pg_statistic"}
 ---
 
 The catalog `pg_statistic_ext` holds definitions of extended planner statistics. Each row in this catalog corresponds to a _statistics object_ created with [`CREATE STATISTICS`](https://www.postgresql.org/docs/current/sql-createstatistics.html "CREATE STATISTICS").

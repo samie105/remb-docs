@@ -10,7 +10,7 @@ content_hash: "78379d01c8ce25a7441d6cb5da1a9f84f022f9d286606bb669423092473605bd"
 menu_path: ["Building Windows"]
 section_path: []
 nav_prev: {"path": "bun/bun/docs/project/bindgen/index.md", "title": "Bindgen"}
-nav_next: {"path": "bun/bun/docs/project/license/index.md", "title": "License"}
+nav_next: {"path": "bun/bun/docs/project/contributing/index.md", "title": "Contributing"}
 ---
 
 # scoop seems to be buggy if you install llvm and the rest at the same time

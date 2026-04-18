@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:52:18.956Z"
 content_hash: "97b45e23a096d2cf6561f74935b90ece3a618b21f48a03c67ae5c86614135685"
 menu_path: ["PostgreSQL: Documentation: 18: 54.4. Streaming Replication Protocol"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/datetime-invalid-input.html/index.md", "title": "PostgreSQL: Documentation: 18: B.2.\u00a0Handling of Invalid or Ambiguous Timestamps"}
-nav_next: {"path": "postgres/docs/current/index-scanning.html/index.md", "title": "PostgreSQL: Documentation: 18: 63.3.\u00a0Index Scanning"}
+nav_prev: {"path": "postgres/docs/current/protocol-overview.html/index.md", "title": "PostgreSQL: Documentation: 18: 54.1.\u00a0Overview"}
+nav_next: {"path": "postgres/docs/current/queries-order.html/index.md", "title": "PostgreSQL: Documentation: 18: 7.5.\u00a0Sorting Rows (ORDER BY)"}
 ---
 
 To initiate streaming replication, the frontend sends the `replication` parameter in the startup message. A Boolean value of `true` (or `on`, `yes`, `1`) tells the backend to go into physical replication walsender mode, wherein a small set of replication commands, shown below, can be issued instead of SQL statements.

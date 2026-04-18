@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:14:07.144Z"
 content_hash: "9c706c7ee2ed5c59c8d4eba83f2f4153134eeb5b25edea68821f98c316612299"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        Redis Search","→","Redis Search","→\n      \n        Administration","→","Administration","→\n      \n        Extend existing search and query features","→","Extend existing search and query features"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        Redis Search","→","Redis Search","→\n      \n        Administration","→","Administration","→\n      \n        Extend existing search and query features","→","Extend existing search and query features"]
-nav_prev: {"path": "redis/docs/latest/develop/ai/search-and-query/query/combined/index.md", "title": "Combined queries"}
-nav_next: {"path": "redis/docs/latest/integrate/fusioncache/index.md", "title": "FusionCache for C#/.NET"}
+nav_prev: {"path": "redis/docs/latest/develop/ai/search-and-query/administration/design/index.md", "title": "Internal design"}
+nav_next: {"path": "redis/docs/latest/develop/ai/search-and-query/administration/gc/index.md", "title": "Garbage collection"}
 ---
 
 # Extend existing search and query features

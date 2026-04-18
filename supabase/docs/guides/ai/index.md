@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:31:53.474Z"
 content_hash: "369ef20503b6c6106725d9a8e4ba023e36e208fc941d455d9d284e59f4fd4dc4"
 menu_path: ["AI & Vectors","AI & Vectors","Overview","Overview"]
 section_path: ["AI & Vectors","AI & Vectors","Overview","Overview"]
-nav_prev: {"path": "supabase/docs/guides/api/index.md", "title": "Data REST API"}
-nav_next: {"path": "supabase/docs/guides/auth/index.md", "title": "Auth"}
+nav_prev: {"path": "supabase/docs/guides/getting-started/index.md", "title": "Getting Started"}
+nav_next: {"path": "supabase/docs/guides/ai/automatic-embeddings/index.md", "title": "Automatic embeddings"}
 ---
 
 # 

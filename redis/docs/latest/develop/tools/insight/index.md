@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:43:28.308Z"
 content_hash: "bc59e33941cf42b00593e05eacf3b9be1706fdd0647d3563fab80c939b698fbc"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Client tools","→","Client tools","→\n      \n        Redis Insight","→","Redis Insight"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Client tools","→","Client tools","→\n      \n        Redis Insight","→","Redis Insight"]
-nav_prev: {"path": "redis/docs/latest/integrate/redis-data-integration/index.md", "title": "Redis Data Integration"}
-nav_next: {"path": "redis/docs/latest/integrate/redisinsight/index.md", "title": "Redis Insight"}
+nav_prev: {"path": "redis/docs/latest/develop/tools/cli/index.md", "title": "Redis CLI"}
+nav_next: {"path": "redis/docs/latest/develop/tools/insight/copilot-faq/index.md", "title": "Redis Copilot FAQ"}
 ---
 
 # Redis Insight

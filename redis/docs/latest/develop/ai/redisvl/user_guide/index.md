@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:00:49.010Z"
 content_hash: "d0118a6f4798913ea068965bfacc5ff33f551dc963b82e245ff4a8c448c6c5db"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        RedisVL","→","RedisVL","→\n      \n        User Guides","→","User Guides"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        RedisVL","→","RedisVL","→\n      \n        User Guides","→","User Guides"]
-nav_prev: {"path": "redis/docs/latest/develop/data-types/json/use_cases/index.md", "title": "Use cases"}
-nav_next: {"path": "redis/docs/latest/develop/clients/jedis/vecsets/index.md", "title": "Vector set embeddings"}
+nav_prev: {"path": "redis/docs/latest/develop/ai/redisvl/overview/index.md", "title": "Overview"}
+nav_next: {"path": "redis/docs/latest/develop/ai/redisvl/user_guide/getting_started/index.md", "title": "Getting Started with RedisVL"}
 ---
 
 # User Guides

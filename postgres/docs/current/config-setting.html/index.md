@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:45:32.480Z"
 content_hash: "867c9fcf4cb2e28ec7b9f636743ef100d4a5fd0503c6fdbdfee13558f2a9ff7b"
 menu_path: ["PostgreSQL: Documentation: 18: 19.1. Setting Parameters"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/sql-copy.html/index.md", "title": "PostgreSQL: Documentation: 18: COPY"}
-nav_next: {"path": "postgres/docs/current/sql-alterlanguage.html/index.md", "title": "PostgreSQL: Documentation: 18: ALTER LANGUAGE"}
+nav_prev: {"path": "postgres/docs/current/color-which.html/index.md", "title": "PostgreSQL: Documentation: 18: N.2.\u00a0Configuring the Colors"}
+nav_next: {"path": "postgres/docs/current/connect-estab.html/index.md", "title": "PostgreSQL: Documentation: 18: 51.2.\u00a0How Connections Are Established"}
 ---
 
 ### 19.1.1. Parameter Names and Values [#](#CONFIG-SETTING-NAMES-VALUES)

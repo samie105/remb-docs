@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:56:53.617Z"
 content_hash: "bfd405b89af8df7914d52ec2e4aa6179c2fda7107c8dfc3d2a33fec1eb40db90"
 menu_path: ["Database","Database","More","More","More","Prisma","Prisma","Prisma troubleshooting","Prisma troubleshooting"]
 section_path: ["Database","Database","More","More","More","Prisma","Prisma","Prisma troubleshooting","Prisma troubleshooting"]
-nav_prev: {"path": "supabase/docs/guides/database/replication/manual-replication-faq/index.md", "title": "Manual Replication FAQ"}
-nav_next: {"path": "supabase/docs/guides/database/replication/manual-replication-monitoring/index.md", "title": "Manual Replication Monitoring"}
+nav_prev: {"path": "supabase/docs/guides/database/prisma/index.md", "title": "Prisma"}
+nav_next: {"path": "supabase/docs/guides/database/psql/index.md", "title": "Connecting with PSQL"}
 ---
 
 # Errors

@@ -9,7 +9,7 @@ last_crawled_at: "2026-04-18T16:36:01.588Z"
 content_hash: "1650c59db8dac9573c855fee24804180fbda8bbc0fd495863cea4c6bcd213f54"
 menu_path: ["Auth","Auth","Architecture","Architecture"]
 section_path: ["Auth","Auth","Architecture","Architecture"]
-nav_prev: {"path": "supabase/docs/guides/api/sql-to-rest/index.md", "title": "SQL to REST API Translator"}
+nav_prev: {"path": "supabase/docs/guides/auth/index.md", "title": "Auth"}
 nav_next: {"path": "supabase/docs/guides/auth/audit-logs/index.md", "title": "Auth Audit Logs"}
 ---
 

@@ -9,7 +9,7 @@ last_crawled_at: "2026-04-18T16:53:41.664Z"
 content_hash: "ba76f0f05149bbaa048dab2ed0b17b3b9dff5ebfbae5b387aa9dcaee49b6c654"
 menu_path: ["Deploy to Cloudflare Workers & Pages"]
 section_path: []
-nav_prev: {"path": "prisma/docs/orm/prisma-client/client-extensions/shared-extensions/permit-rbac/index.md", "title": "Fine-Grained Authorization (Permit)"}
+nav_prev: {"path": "prisma/docs/orm/prisma-client/deployment/deploy-prisma/index.md", "title": "Deploy Prisma ORM"}
 nav_next: {"path": "prisma/docs/orm/prisma-client/deployment/edge/deploy-to-deno-deploy/index.md", "title": "Deploy to Deno Deploy"}
 ---
 

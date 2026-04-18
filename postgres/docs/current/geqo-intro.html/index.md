@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:53:26.096Z"
 content_hash: "a82bd2a7582f460f13098c26ff1e563931b81a9d1330741cd6d128065c6b13e1"
 menu_path: ["PostgreSQL: Documentation: 18: 61.1. Query Handling as a Complex Optimization Problem"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/sql-reindex.html/index.md", "title": "PostgreSQL: Documentation: 18: REINDEX"}
-nav_next: {"path": "postgres/docs/current/extend-extensions.html/index.md", "title": "PostgreSQL: Documentation: 18: 36.17.\u00a0Packaging Related Objects into an Extension"}
+nav_prev: {"path": "postgres/docs/current/functions-xml.html/index.md", "title": "PostgreSQL: Documentation: 18: 9.15.\u00a0XML Functions"}
+nav_next: {"path": "postgres/docs/current/gin.html/index.md", "title": "PostgreSQL: Documentation: 18: 65.4.\u00a0GIN Indexes"}
 ---
 
 Among all relational operators the most difficult one to process and optimize is the _join_. The number of possible query plans grows exponentially with the number of joins in the query. Further optimization effort is caused by the support of a variety of _join methods_ (e.g., nested loop, hash join, merge join in PostgreSQL) to process individual joins and a diversity of _indexes_ (e.g., B-tree, hash, GiST and GIN in PostgreSQL) as access paths for relations.

@@ -9,7 +9,7 @@ last_crawled_at: "2026-04-18T16:37:46.428Z"
 content_hash: "3fea5525e8f4b3199a831e0bd7c876d15a247a5fb4ffa866f8dd0897b4aee462"
 menu_path: ["Delay Accepting Requests"]
 section_path: []
-nav_prev: {"path": "fastify/docs/latest/Guides/Contributing/index.md", "title": "Contributing To Fastify"}
+nav_prev: {"path": "fastify/docs/latest/Guides/Database/index.md", "title": "Database"}
 nav_next: {"path": "fastify/docs/latest/Guides/Detecting-When-Clients-Abort/index.md", "title": "Detecting When Clients Abort"}
 ---
 

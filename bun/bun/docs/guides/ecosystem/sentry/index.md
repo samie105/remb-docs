@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:46:10.854Z"
 content_hash: "a9927e817f2f56a78ec2ce604ecfe7382e57797cb8e260c7099d3d5aff479bd9"
 menu_path: ["Add Sentry to a Bun app"]
 section_path: []
-nav_prev: {"path": "bun/bun/docs/guides/ecosystem/prisma-postgres/index.md", "title": "Use Prisma Postgres with Bun"}
-nav_next: {"path": "bun/bun/docs/guides/ecosystem/remix/index.md", "title": "Build an app with Remix and Bun"}
+nav_prev: {"path": "bun/bun/docs/guides/ecosystem/remix/index.md", "title": "Build an app with Remix and Bun"}
+nav_next: {"path": "bun/bun/docs/guides/ecosystem/solidstart/index.md", "title": "Build an app with SolidStart and Bun"}
 ---
 
 [Skip to main content](#content-area)

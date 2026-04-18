@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:05:27.706Z"
 content_hash: "cbe9b1a8eb87fae0a9e9fd15684687c48bdcbcd75a019fc8c3f666047c8a4a57"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Write-behind (preview)","→","Write-behind (preview)","→\n      \n        Quickstart","→","Quickstart"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Write-behind (preview)","→","Write-behind (preview)","→\n      \n        Quickstart","→","Quickstart"]
-nav_prev: {"path": "redis/docs/latest/develop/ai/search-and-query/query/index.md", "title": "Querying data"}
-nav_next: {"path": "redis/docs/latest/operate/rs/security/recommended-security-practices/index.md", "title": "Recommended security practices"}
+nav_prev: {"path": "redis/docs/latest/integrate/write-behind/installation/index.md", "title": "Installation"}
+nav_next: {"path": "redis/docs/latest/integrate/write-behind/reference/data-transformation-block-types/add_field/index.md", "title": "add_field"}
 ---
 
 # Quickstart

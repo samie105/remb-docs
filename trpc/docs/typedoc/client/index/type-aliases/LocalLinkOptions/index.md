@@ -10,7 +10,7 @@ content_hash: "24c3654596640f75ebe4b9c5f2076a64f23e58977b588a6d75aff280fa967dd0"
 menu_path: ["Type Alias: LocalLinkOptions<TRouter>"]
 section_path: []
 nav_prev: {"path": "trpc/docs/typedoc/client/index/type-aliases/HTTPBatchStreamLinkOptions/index.md", "title": "Type Alias: HTTPBatchStreamLinkOptions<TRoot>"}
-nav_next: {"path": "trpc/docs/typedoc/client/index/type-aliases/inferRouterProxyClient/index.md", "title": "Type Alias: inferRouterProxyClient<TRouter>"}
+nav_next: {"path": "trpc/docs/typedoc/client/index/type-aliases/TRPCClient/index.md", "title": "Type Alias: TRPCClient<TRouter>"}
 ---
 
 > **LocalLinkOptions**<`TRouter`\>: `object` & `TransformerOptions`<`inferClientTypes`<`TRouter`\>>

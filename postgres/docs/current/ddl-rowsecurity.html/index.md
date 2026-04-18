@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:36:55.899Z"
 content_hash: "1908b90d8c806ddebc705390cada11a824b59f89780b743bb758d529239846b0"
 menu_path: ["PostgreSQL: Documentation: 18: 5.9. Row Security Policies"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/infoschema-enabled-roles.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.25.\u00a0enabled_roles"}
-nav_next: {"path": "postgres/docs/current/continuous-archiving.html/index.md", "title": "PostgreSQL: Documentation: 18: 25.3.\u00a0Continuous Archiving and Point-in-Time Recovery (PITR)"}
+nav_prev: {"path": "postgres/docs/current/ddl-priv.html/index.md", "title": "PostgreSQL: Documentation: 18: 5.8.\u00a0Privileges"}
+nav_next: {"path": "postgres/docs/current/ddl-schemas.html/index.md", "title": "PostgreSQL: Documentation: 18: 5.10.\u00a0Schemas"}
 ---
 
 In addition to the SQL-standard [privilege system](https://www.postgresql.org/docs/current/ddl-priv.html "5.8. Privileges") available through [GRANT](https://www.postgresql.org/docs/current/sql-grant.html "GRANT"), tables can have _row security policies_ that restrict, on a per-user basis, which rows can be returned by normal queries or inserted, updated, or deleted by data modification commands. This feature is also known as _Row-Level Security_. By default, tables do not have any policies, so that if a user has access privileges to a table according to the SQL privilege system, all rows within it are equally available for querying or updating.

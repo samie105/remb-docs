@@ -10,7 +10,7 @@ content_hash: "ec3c3c4085ff05b48fbca0606f4ca50b206484490804b49e63483345b09479e5"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        New Relic with Redis Software","→","New Relic with Redis Software"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        New Relic with Redis Software","→","New Relic with Redis Software"]
 nav_prev: {"path": "redis/docs/latest/integrate/new-relic-with-redis-cloud/index.md", "title": "New Relic with Redis Cloud"}
-nav_next: {"path": "redis/docs/latest/operate/oss_and_stack/management/persistence/index.md", "title": "Redis persistence"}
+nav_next: {"path": "redis/docs/latest/integrate/node-redis/index.md", "title": "Node.js client for Redis"}
 ---
 
 # New Relic with Redis Software

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:33:12.940Z"
 content_hash: "cb1f2c0be4134f0e237aea652b458901fc0f244bdc9207b1d1348bf4a7c525c0"
 menu_path: ["Hooks"]
 section_path: []
-nav_prev: {"path": "fastify/docs/latest/Reference/Errors/index.md", "title": "Errors"}
-nav_next: {"path": "fastify/docs/latest/Reference/Lifecycle/index.md", "title": "Lifecycle"}
+nav_prev: {"path": "fastify/docs/latest/Reference/HTTP2/index.md", "title": "HTTP2"}
+nav_next: {"path": "fastify/docs/latest/Reference/LTS/index.md", "title": "LTS"}
 ---
 
 Version: latest (v5.8.x)

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:31:59.285Z"
 content_hash: "0219b82500a4ba8bf914f4ae9502d129b04a062a58ec8096b75ec312707ae0cf"
 menu_path: ["PostgreSQL: Documentation: 18: F.12. dict_int — example full-text search dictionary for integers"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/trigger-interface.html/index.md", "title": "PostgreSQL: Documentation: 18: 37.3.\u00a0Writing Trigger Functions in C"}
-nav_next: {"path": "postgres/docs/current/pgtrgm.html/index.md", "title": "PostgreSQL: Documentation: 18: F.35.\u00a0pg_trgm \u2014 support for similarity of text using trigram matching"}
+nav_prev: {"path": "postgres/docs/current/default-roles.html/index.md", "title": "PostgreSQL: Documentation: 18: O.2.\u00a0Default Roles Renamed to Predefined Roles"}
+nav_next: {"path": "postgres/docs/current/docguide-style.html/index.md", "title": "PostgreSQL: Documentation: 18: J.6.\u00a0Style Guide"}
 ---
 
 `dict_int` is an example of an add-on dictionary template for full-text search. The motivation for this example dictionary is to control the indexing of integers (signed and unsigned), allowing such numbers to be indexed while preventing excessive growth in the number of unique words, which greatly affects the performance of searching.

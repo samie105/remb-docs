@@ -9,7 +9,7 @@ last_crawled_at: "2026-04-18T16:42:59.741Z"
 content_hash: "295c6e8ab7fbf59168a39c923f738e726cd2e3e7c37692f6767655c37dd29003"
 menu_path: ["Environment variables"]
 section_path: []
-nav_prev: {"path": "prisma/docs/orm/more/comparisons/prisma-and-typeorm/index.md", "title": "TypeORM"}
+nav_prev: {"path": "prisma/docs/orm/more/dev-environment/editor-setup/index.md", "title": "Editor setup"}
 nav_next: {"path": "prisma/docs/orm/more/troubleshooting/bundler-issues/index.md", "title": "Bundler issues"}
 ---
 

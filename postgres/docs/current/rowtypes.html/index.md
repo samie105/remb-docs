@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:49:15.540Z"
 content_hash: "96865d300a158bc733b9ca4fb951600e15dbdf0ed32ea69318f1a4289dbe7a85"
 menu_path: ["PostgreSQL: Documentation: 18: 8.16. Composite Types"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/perm-functions.html/index.md", "title": "PostgreSQL: Documentation: 18: 21.6.\u00a0Function Security"}
-nav_next: {"path": "postgres/docs/current/catalog-pg-statistic.html/index.md", "title": "PostgreSQL: Documentation: 18: 52.51.\u00a0pg_statistic"}
+nav_prev: {"path": "postgres/docs/current/routine-vacuuming.html/index.md", "title": "PostgreSQL: Documentation: 18: 24.1.\u00a0Routine Vacuuming"}
+nav_next: {"path": "postgres/docs/current/rule-system.html/index.md", "title": "PostgreSQL: Documentation: 18: 51.4.\u00a0The PostgreSQL Rule System"}
 ---
 
 A _composite type_ represents the structure of a row or record; it is essentially just a list of field names and their data types. PostgreSQL allows composite types to be used in many of the same ways that simple types can be used. For example, a column of a table can be declared to be of a composite type.

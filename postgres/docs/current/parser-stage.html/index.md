@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:51:53.933Z"
 content_hash: "628371c11f8b1fd7fd867c62bddc09a5106272f81a7405da2a815de7d6c19777"
 menu_path: ["PostgreSQL: Documentation: 18: 51.3. The Parser Stage"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/jit-reason.html/index.md", "title": "PostgreSQL: Documentation: 18: 30.1.\u00a0What Is JIT compilation?"}
-nav_next: {"path": "postgres/docs/current/spgist.html/index.md", "title": "PostgreSQL: Documentation: 18: 65.3.\u00a0SP-GiST Indexes"}
+nav_prev: {"path": "postgres/docs/current/parallel-safety.html/index.md", "title": "PostgreSQL: Documentation: 18: 15.4.\u00a0Parallel Safety"}
+nav_next: {"path": "postgres/docs/current/passwordcheck.html/index.md", "title": "PostgreSQL: Documentation: 18: F.24.\u00a0passwordcheck \u2014 verify password strength"}
 ---
 
 Development Versions: [devel](https://www.postgresql.org/docs/devel/parser-stage.html "PostgreSQL devel - 51.3. The Parser Stage")

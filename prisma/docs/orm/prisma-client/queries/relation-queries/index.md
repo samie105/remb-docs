@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:46:56.684Z"
 content_hash: "0a58a46fe33c5a52879d4ee8a5c04df25799802777d826d5b2064ff6a20cfe1d"
 menu_path: ["CRUD"]
 section_path: []
-nav_prev: {"path": "prisma/docs/orm/prisma-client/queries/aggregation-grouping-summarizing/index.md", "title": "Aggregation, grouping, and summarizing"}
-nav_next: {"path": "prisma/docs/orm/prisma-client/setup-and-configuration/custom-model-and-field-names/index.md", "title": "Custom model and field names"}
+nav_prev: {"path": "prisma/docs/orm/prisma-client/queries/crud/index.md", "title": "CRUD"}
+nav_next: {"path": "prisma/docs/orm/prisma-client/queries/transactions/index.md", "title": "Transactions and batch queries"}
 ---
 
 This page describes how to perform CRUD operations with Prisma Client:

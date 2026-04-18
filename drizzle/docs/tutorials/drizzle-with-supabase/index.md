@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:24:03.144Z"
 content_hash: "6895a2653fdd15bd1b2457e8a5b826a9861a5abecdf13b7531e5def913842f31"
 menu_path: ["Drizzle with Supabase Database"]
 section_path: []
-nav_prev: {"path": "drizzle/docs/tutorials/drizzle-with-supabase-edge-functions/index.md", "title": "Drizzle with Supabase Edge Functions"}
-nav_next: {"path": "drizzle/docs/tutorials/drizzle-with-turso/index.md", "title": "Drizzle with Turso"}
+nav_prev: {"path": "drizzle/docs/tutorials/drizzle-with-nile/index.md", "title": "Drizzle with Nile Database"}
+nav_next: {"path": "drizzle/docs/tutorials/drizzle-with-supabase-edge-functions/index.md", "title": "Drizzle with Supabase Edge Functions"}
 ---
 
 This tutorial demonstrates how to use Drizzle ORM with [Supabase Database](https://supabase.com/docs/guides/database/overview). Every Supabase project comes with a full [Postgres](https://www.postgresql.org/) database.

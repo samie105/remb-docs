@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:48:03.773Z"
 content_hash: "650eab8ef7672817128351a8c11bd938d7ce4e4fe4a41ce636c2dff7cdfa4a3d"
 menu_path: ["PostgreSQL: Documentation: 18: 53.37. pg_views"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/app-postgres.html/index.md", "title": "PostgreSQL: Documentation: 18: postgres"}
-nav_next: {"path": "postgres/docs/current/sql-unlisten.html/index.md", "title": "PostgreSQL: Documentation: 18: UNLISTEN"}
+nav_prev: {"path": "postgres/docs/current/view-pg-user.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.35.\u00a0pg_user"}
+nav_next: {"path": "postgres/docs/current/view-pg-wait-events.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.38.\u00a0pg_wait_events"}
 ---
 
 Development Versions: [devel](https://www.postgresql.org/docs/devel/view-pg-views.html "PostgreSQL devel - 53.37. pg_views")

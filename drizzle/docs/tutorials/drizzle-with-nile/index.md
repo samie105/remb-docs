@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:23:51.541Z"
 content_hash: "afc10e3d599529fda2bb975b867c903e7cc80b29fe85fb3031560418b219f5ae"
 menu_path: ["Drizzle with Nile Database"]
 section_path: []
-nav_prev: {"path": "drizzle/docs/tutorials/drizzle-with-netlify-edge-functions-neon/index.md", "title": "Drizzle with Netlify Edge Functions and Neon Postgres"}
-nav_next: {"path": "drizzle/docs/tutorials/drizzle-with-supabase-edge-functions/index.md", "title": "Drizzle with Supabase Edge Functions"}
+nav_prev: {"path": "drizzle/docs/tutorials/drizzle-with-netlify-edge-functions-supabase/index.md", "title": "Drizzle with Netlify Edge Functions and Supabase Database"}
+nav_next: {"path": "drizzle/docs/tutorials/drizzle-with-supabase/index.md", "title": "Drizzle with Supabase Database"}
 ---
 
 # create a tenant

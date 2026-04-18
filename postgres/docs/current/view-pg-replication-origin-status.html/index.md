@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:37:46.295Z"
 content_hash: "398431ae89be41265b6a9b0dea1b839fda896224c75561e1c498896733981311"
 menu_path: ["PostgreSQL: Documentation: 18: 53.19. pg_replication_origin_status"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/ecpg-sql-disconnect.html/index.md", "title": "PostgreSQL: Documentation: 18: DISCONNECT"}
-nav_next: {"path": "postgres/docs/current/sql-droprule.html/index.md", "title": "PostgreSQL: Documentation: 18: DROP RULE"}
+nav_prev: {"path": "postgres/docs/current/view-pg-publication-tables.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.18.\u00a0pg_publication_tables"}
+nav_next: {"path": "postgres/docs/current/view-pg-replication-slots.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.20.\u00a0pg_replication_slots"}
 ---
 
 Development Versions: [devel](https://www.postgresql.org/docs/devel/view-pg-replication-origin-status.html "PostgreSQL devel - 53.19. pg_replication_origin_status")

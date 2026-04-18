@@ -9,7 +9,7 @@ last_crawled_at: "2026-04-18T16:52:08.539Z"
 content_hash: "ff23121c28a1c090bc40bd6bf08fa06e109d0aff0c954c5c2054e49de17135b4"
 menu_path: ["Type Alias: HTTPBatchLinkOptions<TRoot>"]
 section_path: []
-nav_prev: {"path": "trpc/docs/typedoc/client/index/interfaces/WebSocketClientOptions/index.md", "title": "Interface: WebSocketClientOptions"}
+nav_prev: {"path": "trpc/docs/typedoc/client/index/type-aliases/CreateTRPCClient/index.md", "title": "Type Alias: CreateTRPCClient<TRouter>"}
 nav_next: {"path": "trpc/docs/typedoc/client/index/type-aliases/HTTPBatchStreamLinkOptions/index.md", "title": "Type Alias: HTTPBatchStreamLinkOptions<TRoot>"}
 ---
 

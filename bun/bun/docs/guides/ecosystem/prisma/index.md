@@ -10,7 +10,7 @@ content_hash: "321aa8a2a78178bbb4ab7c6aca00647b78d946f3693e17973310521ceace9cac"
 menu_path: ["Use Prisma with Bun"]
 section_path: []
 nav_prev: {"path": "bun/bun/docs/guides/ecosystem/pm2/index.md", "title": "Run Bun as a daemon with PM2"}
-nav_next: {"path": "bun/bun/docs/guides/ecosystem/qwik/index.md", "title": "Build an app with Qwik and Bun"}
+nav_next: {"path": "bun/bun/docs/guides/ecosystem/prisma-postgres/index.md", "title": "Use Prisma Postgres with Bun"}
 ---
 
 **Note** — Prisma’s dynamic subcommand loading system currently requires npm to be installed alongside Bun. This affects certain CLI commands like `prisma init`, `prisma migrate`, etc. Generated code works perfectly with Bun using the new `prisma-client` generator.

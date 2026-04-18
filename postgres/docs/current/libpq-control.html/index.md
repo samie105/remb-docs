@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:41:21.349Z"
 content_hash: "fc5eb1cd40906afbf6e0d3ed9406192000429b46fb0dd08f4fbb4f877f3e0cdf"
 menu_path: ["PostgreSQL: Documentation: 18: 32.11. Control Functions"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/external-admin-tools.html/index.md", "title": "PostgreSQL: Documentation: 18: H.2.\u00a0Administration Tools"}
-nav_next: {"path": "postgres/docs/current/sql-dropcollation.html/index.md", "title": "PostgreSQL: Documentation: 18: DROP COLLATION"}
+nav_prev: {"path": "postgres/docs/current/libpq-connect.html/index.md", "title": "PostgreSQL: Documentation: 18: 32.1.\u00a0Database Connection Control Functions"}
+nav_next: {"path": "postgres/docs/current/libpq-copy.html/index.md", "title": "PostgreSQL: Documentation: 18: 32.10.\u00a0Functions Associated with the COPY Command"}
 ---
 
 These functions control miscellaneous details of libpq's behavior.

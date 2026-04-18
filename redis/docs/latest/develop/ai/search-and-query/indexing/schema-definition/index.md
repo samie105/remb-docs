@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:44:53.798Z"
 content_hash: "a36cc6e01335b44a76925b6a172eb6b5c9b41387376fb0ac49041454290a9ad0"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        Redis Search","→","Redis Search","→\n      \n        Indexing","→","Indexing","→\n      \n        Schema definition","→","Schema definition"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        Redis Search","→","Redis Search","→\n      \n        Indexing","→","Indexing","→\n      \n        Schema definition","→","Schema definition"]
-nav_prev: {"path": "redis/docs/latest/integrate/riot/index.md", "title": "RIOT-X"}
-nav_next: {"path": "redis/docs/latest/develop/clients/patterns/indexes/index.md", "title": "Secondary indexing"}
+nav_prev: {"path": "redis/docs/latest/develop/ai/search-and-query/indexing/geoindex/index.md", "title": "Geospatial indexing"}
+nav_next: {"path": "redis/docs/latest/develop/ai/search-and-query/query/index.md", "title": "Querying data"}
 ---
 
 # Schema definition

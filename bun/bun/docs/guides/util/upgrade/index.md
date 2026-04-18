@@ -10,7 +10,7 @@ content_hash: "23708b2600862785b3e9295983644687904d600796703f165514e256b160287e"
 menu_path: ["Upgrade Bun to the latest version"]
 section_path: []
 nav_prev: {"path": "bun/bun/docs/guides/util/sleep/index.md", "title": "Sleep for a fixed number of milliseconds"}
-nav_next: {"path": "bun/bun/docs/guides/util/which-path-to-executable-bin/index.md", "title": "Get the path to an executable bin file"}
+nav_next: {"path": "bun/bun/docs/guides/util/version/index.md", "title": "Get the current Bun version"}
 ---
 
 # Output: 1.x.y

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:15:41.443Z"
 content_hash: "b102d9a0d6b12a18e40e4477e52541692f508e451d4fb8a60518415575ebe332"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Write-behind (preview)","→","Write-behind (preview)","→\n      \n        Write-behind reference","→","Write-behind reference","→\n      \n        Data transformation block types","→","Data transformation block types","→\n      \n        add_field","→","add_field"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Write-behind (preview)","→","Write-behind (preview)","→\n      \n        Write-behind reference","→","Write-behind reference","→\n      \n        Data transformation block types","→","Data transformation block types","→\n      \n        add_field","→","add_field"]
-nav_prev: {"path": "redis/docs/latest/integrate/redis-data-integration/reference/data-transformation/add_field/index.md", "title": "add_field"}
-nav_next: {"path": "redis/docs/latest/develop/ai/search-and-query/query/aggregation/index.md", "title": "Aggregation queries"}
+nav_prev: {"path": "redis/docs/latest/integrate/write-behind/quickstart/write-behind-guide/index.md", "title": "Quickstart"}
+nav_next: {"path": "redis/docs/latest/operate/kubernetes/architecture/index.md", "title": "Redis Enterprise for Kubernetes architecture"}
 ---
 
 # add\_field

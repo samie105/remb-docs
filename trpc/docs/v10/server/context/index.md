@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:39:11.721Z"
 content_hash: "3a7d2df7143e3f7e0c86054f02c06137a4a4f1c7ee83f104b44952a2cdcce1e6"
 menu_path: ["Context"]
 section_path: []
-nav_prev: {"path": "trpc/docs/v10/server/data-transformers/index.md", "title": "Data Transformers"}
-nav_next: {"path": "trpc/docs/v10/server/error-formatting/index.md", "title": "Error Formatting"}
+nav_prev: {"path": "trpc/docs/v10/server/caching/index.md", "title": "Response Caching"}
+nav_next: {"path": "trpc/docs/v10/server/data-transformers/index.md", "title": "Data Transformers"}
 ---
 
 Your context holds data that all of your tRPC procedures will have access to, and is a great place to put things like database connections or authentication information.

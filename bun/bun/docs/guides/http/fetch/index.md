@@ -10,7 +10,7 @@ content_hash: "d19015194da905826dba3fd95aec7f95b75c3cc0a476d26f969afe9888412bf8"
 menu_path: ["Send an HTTP request using fetch"]
 section_path: []
 nav_prev: {"path": "bun/bun/docs/guides/http/cluster/index.md", "title": "Start a cluster of HTTP servers"}
-nav_next: {"path": "bun/bun/docs/guides/html-rewriter/extract-social-meta/index.md", "title": "Extract social share images and Open Graph tags"}
+nav_next: {"path": "bun/bun/docs/guides/http/fetch-unix/index.md", "title": "fetch with unix domain sockets in Bun"}
 ---
 
 [Skip to main content](#content-area)

@@ -9,7 +9,7 @@ last_crawled_at: "2026-04-18T17:24:26.223Z"
 content_hash: "3b0970dcc35119bd31de98622397a0ef02afed5e7380cf1c03bf36ace0d3d6bc"
 menu_path: ["Drizzle with Turso"]
 section_path: []
-nav_prev: {"path": "drizzle/docs/tutorials/drizzle-with-supabase/index.md", "title": "Drizzle with Supabase Database"}
+nav_prev: {"path": "drizzle/docs/tutorials/drizzle-with-supabase-edge-functions/index.md", "title": "Drizzle with Supabase Edge Functions"}
 nav_next: {"path": "drizzle/docs/tutorials/drizzle-with-vercel/index.md", "title": "Drizzle with Vercel Postgres"}
 ---
 

@@ -9,7 +9,7 @@ last_crawled_at: "2026-04-18T16:41:52.187Z"
 content_hash: "a9e952e3746ec62912377c0bc3ff995e841b555d8a338261ad98dc1ca9edf943"
 menu_path: ["Convert a Uint8Array to a string"]
 section_path: []
-nav_prev: {"path": "bun/bun/docs/guides/binary/typedarray-to-dataview/index.md", "title": "Convert a Uint8Array to a DataView"}
+nav_prev: {"path": "bun/bun/docs/guides/binary/typedarray-to-readablestream/index.md", "title": "Convert a Uint8Array to a ReadableStream"}
 nav_next: {"path": "bun/bun/docs/guides/deployment/aws-lambda/index.md", "title": "Deploy a Bun application on AWS Lambda"}
 ---
 

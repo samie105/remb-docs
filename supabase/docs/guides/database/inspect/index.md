@@ -10,7 +10,7 @@ content_hash: "bff9970055ebe4b3f4967080562c7f3273265584d8a1fe081b8317c23d03ec5b"
 menu_path: ["Database","Database","Debugging","Debugging","Debugging and monitoring","Debugging and monitoring"]
 section_path: ["Database","Database","Debugging","Debugging","Debugging and monitoring","Debugging and monitoring"]
 nav_prev: {"path": "supabase/docs/guides/database/import-data/index.md", "title": "Import data into Supabase"}
-nav_next: {"path": "supabase/docs/guides/database/functions/index.md", "title": "Database Functions"}
+nav_next: {"path": "supabase/docs/guides/database/joins-and-nesting/index.md", "title": "Querying Joins and Nested tables"}
 ---
 
 # 

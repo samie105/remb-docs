@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:35:29.478Z"
 content_hash: "4b13c17eb630ac376e6cf47ad163f02e19e646fa87af723040235af1201dcf28"
 menu_path: ["Data REST API","Data REST API","Quickstart","Quickstart"]
 section_path: ["Data REST API","Data REST API","Quickstart","Quickstart"]
-nav_prev: {"path": "supabase/docs/guides/api/custom-claims-and-role-based-access-control-rbac/index.md", "title": "Custom Claims & Role-based Access Control (RBAC)"}
-nav_next: {"path": "supabase/docs/guides/api/securing-your-api/index.md", "title": "Securing your API"}
+nav_prev: {"path": "supabase/docs/guides/api/hardening-data-api/index.md", "title": "Hardening the Data API"}
+nav_next: {"path": "supabase/docs/guides/api/rest/auto-generated-docs/index.md", "title": "Auto-generated documentation"}
 ---
 
 # 

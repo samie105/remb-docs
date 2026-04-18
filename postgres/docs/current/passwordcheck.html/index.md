@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:50:47.905Z"
 content_hash: "2453b2142f36dafa159e3a4ab9e9ee75fab68e02d65e31164dc42e132917b37e"
 menu_path: ["PostgreSQL: Documentation: 18: F.24. passwordcheck — verify password strength"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/sql-dropindex.html/index.md", "title": "PostgreSQL: Documentation: 18: DROP INDEX"}
-nav_next: {"path": "postgres/docs/current/color-which.html/index.md", "title": "PostgreSQL: Documentation: 18: N.2.\u00a0Configuring the Colors"}
+nav_prev: {"path": "postgres/docs/current/parser-stage.html/index.md", "title": "PostgreSQL: Documentation: 18: 51.3.\u00a0The Parser Stage"}
+nav_next: {"path": "postgres/docs/current/perm-functions.html/index.md", "title": "PostgreSQL: Documentation: 18: 21.6.\u00a0Function Security"}
 ---
 
 The `passwordcheck` module checks users' passwords whenever they are set with [CREATE ROLE](https://www.postgresql.org/docs/current/sql-createrole.html "CREATE ROLE") or [ALTER ROLE](https://www.postgresql.org/docs/current/sql-alterrole.html "ALTER ROLE"). If a password is considered too weak, it will be rejected and the command will terminate with an error.

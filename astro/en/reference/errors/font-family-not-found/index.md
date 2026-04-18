@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:44:42.847Z"
 content_hash: "158114429e257867fccac5b41b3f6c474b904e99e6223d1ded9372d701233cef"
 menu_path: ["Font family not found"]
 section_path: []
-nav_prev: {"path": "astro/en/reference/errors/forbidden-rewrite/index.md", "title": "Forbidden rewrite to a static route."}
-nav_next: {"path": "astro/en/reference/errors/generate-content-types-error/index.md", "title": "Failed to generate content types."}
+nav_prev: {"path": "astro/en/reference/errors/file-parser-not-found/index.md", "title": "File parser not found"}
+nav_next: {"path": "astro/en/reference/errors/forbidden-rewrite/index.md", "title": "Forbidden rewrite to a static route."}
 ---
 
 # Font family not found

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:45:19.752Z"
 content_hash: "c1ca9e136e7b916668c2e1cfba864bbbee1efb6cc349f610737000b61e03e0bf"
 menu_path: ["Create custom Prisma Client queries"]
 section_path: []
-nav_prev: {"path": "prisma/docs/orm/prisma-client/client-extensions/type-utilities/index.md", "title": "Type utilities"}
-nav_next: {"path": "prisma/docs/orm/prisma-client/debugging-and-troubleshooting/debugging/index.md", "title": "Debugging"}
+nav_prev: {"path": "prisma/docs/orm/prisma-client/client-extensions/model/index.md", "title": "Add custom methods to your models"}
+nav_next: {"path": "prisma/docs/orm/prisma-client/client-extensions/result/index.md", "title": "Add custom fields and methods to query results"}
 ---
 
 You can use the `query` [Prisma Client extensions](prisma/docs/orm/prisma-client/client-extensions/index.md) component type to hook into the query life-cycle and modify an incoming query or its result.

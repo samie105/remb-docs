@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:48:57.746Z"
 content_hash: "2d18322ee4331a6aa751a71053941ce5fba5f78e85e14acd26b89a0898bf898b"
 menu_path: ["OpenAPI (alpha)"]
 section_path: []
-nav_prev: {"path": "trpc/docs/rpc/index.md", "title": "HTTP RPC Specification"}
-nav_next: {"path": "trpc/docs/server/adapters/index.md", "title": "Overview"}
+nav_prev: {"path": "trpc/docs/migrate-from-v10-to-v11/index.md", "title": "Migrate from v10 to v11"}
+nav_next: {"path": "trpc/docs/rpc/index.md", "title": "HTTP RPC Specification"}
 ---
 
 caution

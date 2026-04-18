@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:44:59.675Z"
 content_hash: "efd322b8af32defdac958d8e484e1dc5a30786f13ad645c778a73850d1e8dba1"
 menu_path: ["Image not found."]
 section_path: []
-nav_prev: {"path": "astro/en/reference/errors/i18n-not-enabled/index.md", "title": "i18n Not Enabled"}
-nav_next: {"path": "astro/en/reference/errors/image-missing-alt/index.md", "title": "Image missing required \"alt\" property."}
+nav_prev: {"path": "astro/en/reference/errors/image-missing-alt/index.md", "title": "Image missing required \"alt\" property."}
+nav_next: {"path": "astro/en/reference/errors/incompatible-descriptor-options/index.md", "title": "Cannot set both densities and widths"}
 ---
 
 # Image not found.

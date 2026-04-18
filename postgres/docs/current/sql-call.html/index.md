@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:53:42.956Z"
 content_hash: "6e3f1f36ab811dc0d8123bc6e3b5ae2e52c90e3db51e3d427660dfc6aef7c6de"
 menu_path: ["PostgreSQL: Documentation: 18: CALL"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/functions-geometry.html/index.md", "title": "PostgreSQL: Documentation: 18: 9.11.\u00a0Geometric Functions and Operators"}
-nav_next: {"path": "postgres/docs/current/index-unique-checks.html/index.md", "title": "PostgreSQL: Documentation: 18: 63.5.\u00a0Index Uniqueness Checks"}
+nav_prev: {"path": "postgres/docs/current/sql-begin.html/index.md", "title": "PostgreSQL: Documentation: 18: BEGIN"}
+nav_next: {"path": "postgres/docs/current/sql-checkpoint.html/index.md", "title": "PostgreSQL: Documentation: 18: CHECKPOINT"}
 ---
 
 CALL — invoke a procedure

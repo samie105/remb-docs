@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:34:49.855Z"
 content_hash: "1690d665f2f21f2dacabac72491fbca49354081e67ab0ff9f125b3ac3fe1925c"
 menu_path: ["Aborting Procedure Calls"]
 section_path: []
-nav_prev: {"path": "trpc/docs/v10/client/react/useUtils/index.md", "title": "useUtils"}
-nav_next: {"path": "trpc/docs/v10/client/vanilla/setup/index.md", "title": "Set up a tRPC Client"}
+nav_prev: {"path": "trpc/docs/v10/client/vanilla/index.md", "title": "tRPC Client"}
+nav_next: {"path": "trpc/docs/v10/client/vanilla/infer-types/index.md", "title": "Inferring Types"}
 ---
 
 tRPC adheres to the industry standard when it comes to aborting procedures. All you have to do is pass an `AbortSignal` to the query or mutation options, and call the `AbortController` instance's `abort` method if you need to cancel the request.

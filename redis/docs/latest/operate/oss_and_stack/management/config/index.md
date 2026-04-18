@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:46:39.571Z"
 content_hash: "d654d7b170e1852c87b6b10ea090ab36dc0bb359e23420723053c605ba423b0b"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Manage Redis","→","Manage Redis","→\n      \n        Redis configuration","→","Redis configuration"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Manage Redis","→","Manage Redis","→\n      \n        Redis configuration","→","Redis configuration"]
-nav_prev: {"path": "redis/docs/latest/operate/oss_and_stack/install/install-stack/apt/index.md", "title": "Install Redis Open Source on Linux"}
-nav_next: {"path": "redis/docs/latest/develop/clients/jedis/connect/index.md", "title": "Connect to the server"}
+nav_prev: {"path": "redis/docs/latest/operate/oss_and_stack/management/admin/index.md", "title": "Redis administration"}
+nav_next: {"path": "redis/docs/latest/operate/oss_and_stack/management/optimization/index.md", "title": "Optimizing Redis"}
 ---
 
 # Redis configuration

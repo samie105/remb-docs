@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:45:14.002Z"
 content_hash: "abce144a704eda2abb3663418b9ed7f0758ce7a9c395e36d2b40972e2eabe915"
 menu_path: ["Type utilities"]
 section_path: []
-nav_prev: {"path": "prisma/docs/orm/prisma-client/client-extensions/result/index.md", "title": "Add custom fields and methods to query results"}
-nav_next: {"path": "prisma/docs/orm/prisma-client/client-extensions/query/index.md", "title": "Create custom Prisma Client queries"}
+nav_prev: {"path": "prisma/docs/orm/prisma-client/client-extensions/shared-extensions/permit-rbac/index.md", "title": "Fine-Grained Authorization (Permit)"}
+nav_next: {"path": "prisma/docs/orm/prisma-client/debugging-and-troubleshooting/debugging/index.md", "title": "Debugging"}
 ---
 
 Client Extensions

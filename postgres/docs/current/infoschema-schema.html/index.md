@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:52:08.664Z"
 content_hash: "504b3623226caa8d3fd3c4516c6948ad7fdbf26abf9ba3057a90f40dd1c8c139"
 menu_path: ["PostgreSQL: Documentation: 18: 35.1. The Schema"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/plperl-triggers.html/index.md", "title": "PostgreSQL: Documentation: 18: 43.6.\u00a0PL/Perl Triggers"}
-nav_next: {"path": "postgres/docs/current/sql-close.html/index.md", "title": "PostgreSQL: Documentation: 18: CLOSE"}
+nav_prev: {"path": "postgres/docs/current/infoschema-routines.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.45.\u00a0routines"}
+nav_next: {"path": "postgres/docs/current/infoschema-schemata.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.46.\u00a0schemata"}
 ---
 
 The information schema itself is a schema named `information_schema`. This schema automatically exists in all databases. The owner of this schema is the initial database user in the cluster, and that user naturally has all the privileges on this schema, including the ability to drop it (but the space savings achieved by that are minuscule).

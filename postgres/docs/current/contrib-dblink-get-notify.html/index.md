@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:34:09.475Z"
 content_hash: "4e09686fa531cdfc054c2b56d065dad36950c8a60cd97072d5f88ad8dfb7a3f4"
 menu_path: ["PostgreSQL: Documentation: 18: dblink_get_notify"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/ecpg-develop.html/index.md", "title": "PostgreSQL: Documentation: 18: 34.17.\u00a0Internals"}
-nav_next: {"path": "postgres/docs/current/catalog-pg-shdepend.html/index.md", "title": "PostgreSQL: Documentation: 18: 52.48.\u00a0pg_shdepend"}
+nav_prev: {"path": "postgres/docs/current/contrib-dblink-function.html/index.md", "title": "PostgreSQL: Documentation: 18: dblink"}
+nav_next: {"path": "postgres/docs/current/datatype-xml.html/index.md", "title": "PostgreSQL: Documentation: 18: 8.13.\u00a0XML Type"}
 ---
 
 dblink\_get\_notify — retrieve async notifications on a connection

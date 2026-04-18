@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:46:26.258Z"
 content_hash: "5f7c234d2b114d8e1a8d3df736575051e31744ec9bb7e402782ec6eb67a8a656"
 menu_path: ["PostgreSQL: Documentation: 18: ALTER INDEX"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/rules-views.html/index.md", "title": "PostgreSQL: Documentation: 18: 39.2.\u00a0Views and the Rule System"}
-nav_next: {"path": "postgres/docs/current/infoschema-role-column-grants.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.35.\u00a0role_column_grants"}
+nav_prev: {"path": "postgres/docs/current/sql-altergroup.html/index.md", "title": "PostgreSQL: Documentation: 18: ALTER GROUP"}
+nav_next: {"path": "postgres/docs/current/sql-alterlanguage.html/index.md", "title": "PostgreSQL: Documentation: 18: ALTER LANGUAGE"}
 ---
 
 ALTER INDEX — change the definition of an index

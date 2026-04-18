@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:38:37.525Z"
 content_hash: "eac9273cfc9bc7deba4bef6da0cd24419cf56eff3491599effe7a2aeae4b40b5"
 menu_path: ["PostgreSQL: Documentation: 18: 12.11. Limitations"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/runtime-config-wal.html/index.md", "title": "PostgreSQL: Documentation: 18: 19.5.\u00a0Write Ahead Log"}
-nav_next: {"path": "postgres/docs/current/infoschema-foreign-data-wrappers.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.27.\u00a0foreign_data_wrappers"}
+nav_prev: {"path": "postgres/docs/current/textsearch-features.html/index.md", "title": "PostgreSQL: Documentation: 18: 12.4.\u00a0Additional Features"}
+nav_next: {"path": "postgres/docs/current/textsearch-parsers.html/index.md", "title": "PostgreSQL: Documentation: 18: 12.5.\u00a0Parsers"}
 ---
 
 The current limitations of PostgreSQL's text search features are:

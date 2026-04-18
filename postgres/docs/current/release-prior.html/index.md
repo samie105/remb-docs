@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:53:10.989Z"
 content_hash: "ee30c7596ee9d630ad3db838802de389dc862703369768917344223118409335"
 menu_path: ["PostgreSQL: Documentation: 18: E.5. Prior Releases"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/tutorial-fk.html/index.md", "title": "PostgreSQL: Documentation: 18: 3.3.\u00a0Foreign Keys"}
-nav_next: {"path": "postgres/docs/current/ssh-tunnels.html/index.md", "title": "PostgreSQL: Documentation: 18: 18.11.\u00a0Secure TCP/IP Connections with SSH Tunnels"}
+nav_prev: {"path": "postgres/docs/current/release-18.html/index.md", "title": "PostgreSQL: Documentation: 18: E.4.\u00a0Release 18"}
+nav_next: {"path": "postgres/docs/current/role-membership.html/index.md", "title": "PostgreSQL: Documentation: 18: 21.3.\u00a0Role Membership"}
 ---
 
 February 26, 2026: [PostgreSQL 18.3, 17.9, 16.13, 15.17, and 14.22 Released!](/about/news/postgresql-183-179-1613-1517-and-1422-released-3246/)

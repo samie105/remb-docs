@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:50:27.242Z"
 content_hash: "8e128fe5b28661928b4e8e63e490ffc6fab5404ee0159134d187555b4977e0f5"
 menu_path: ["Self-Hosting","Self-Hosting","Self-Hosting with Docker","Self-Hosting with Docker"]
 section_path: ["Self-Hosting","Self-Hosting","Self-Hosting with Docker","Self-Hosting with Docker"]
-nav_prev: {"path": "supabase/docs/guides/self-hosting/enable-mcp/index.md", "title": "Enabling MCP Server Access"}
-nav_next: {"path": "supabase/docs/guides/self-hosting/postgres-upgrade-17/index.md", "title": "Upgrade to Postgres 17"}
+nav_prev: {"path": "supabase/docs/guides/self-hosting/custom-email-templates/index.md", "title": "Custom Email Templates"}
+nav_next: {"path": "supabase/docs/guides/self-hosting/enable-mcp/index.md", "title": "Enabling MCP Server Access"}
 ---
 
 # 

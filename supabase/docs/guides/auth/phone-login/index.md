@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:38:49.142Z"
 content_hash: "3dba2ff0417b11d40d339be845145e567fd254c5c702db4515a6ce6f29eeb31f"
 menu_path: ["Auth","Auth","Flows (How-tos)","Flows (How-tos)","Phone Login","Phone Login"]
 section_path: ["Auth","Auth","Flows (How-tos)","Flows (How-tos)","Phone Login","Phone Login"]
-nav_prev: {"path": "supabase/docs/guides/auth/rate-limits/index.md", "title": "Rate limits"}
-nav_next: {"path": "supabase/docs/guides/auth/redirect-urls/index.md", "title": "Redirect URLs"}
+nav_prev: {"path": "supabase/docs/guides/auth/passwords/index.md", "title": "Password-based Auth"}
+nav_next: {"path": "supabase/docs/guides/auth/quickstarts/astrojs/index.md", "title": "Use Supabase Auth with Astro"}
 ---
 
 # 

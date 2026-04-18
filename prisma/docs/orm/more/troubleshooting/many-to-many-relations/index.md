@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:43:54.898Z"
 content_hash: "ca0bf4fd96f0ac5908b730400a5c47f79a2fca56070f90b870547e44ea82f002"
 menu_path: ["Many-to-many relations"]
 section_path: []
-nav_prev: {"path": "prisma/docs/orm/more/troubleshooting/nextjs/index.md", "title": "Next.js"}
-nav_next: {"path": "prisma/docs/orm/more/troubleshooting/nuxt/index.md", "title": "Nuxt"}
+nav_prev: {"path": "prisma/docs/orm/more/troubleshooting/graphql-autocompletion/index.md", "title": "GraphQL autocompletion"}
+nav_next: {"path": "prisma/docs/orm/more/troubleshooting/nextjs/index.md", "title": "Next.js"}
 ---
 
 Troubleshooting

@@ -10,7 +10,7 @@ content_hash: "7d39b07dd48b74ae169f75f69e2e8e4eaf2ef744bee77f6729f14e39d25cbf1a"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Manage Redis","→","Manage Redis","→\n      \n        Optimizing Redis","→","Optimizing Redis","→\n      \n        Diagnosing latency issues","→","Diagnosing latency issues"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Manage Redis","→","Manage Redis","→\n      \n        Optimizing Redis","→","Optimizing Redis","→\n      \n        Diagnosing latency issues","→","Diagnosing latency issues"]
 nav_prev: {"path": "redis/docs/latest/operate/oss_and_stack/management/optimization/latency-monitor/index.md", "title": "Redis latency monitoring"}
-nav_next: {"path": "redis/docs/latest/operate/oss_and_stack/install/archive/install-redis/install-redis-on-linux/index.md", "title": "Install Redis on Linux"}
+nav_next: {"path": "redis/docs/latest/operate/oss_and_stack/management/optimization/memory-optimization/index.md", "title": "Memory optimization"}
 ---
 
 # Diagnosing latency issues

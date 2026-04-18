@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:55:09.903Z"
 content_hash: "d32e45d73fabe1dffef46f4a5a907aa49839dbc99858a41b60919ca68c8f508f"
 menu_path: ["Get Started with Drizzle and Gel in existing project"]
 section_path: []
-nav_prev: {"path": "drizzle/docs/get-started/effect-postgresql-new/index.md", "title": "Get Started with Drizzle and Effect PostgreSQL"}
-nav_next: {"path": "drizzle/docs/get-started/mssql-existing/index.md", "title": "Get Started with Drizzle and MSSQL in existing project"}
+nav_prev: {"path": "drizzle/docs/get-started/expo-new/index.md", "title": "Get Started with Drizzle and Expo"}
+nav_next: {"path": "drizzle/docs/get-started/gel-new/index.md", "title": "Get Started with Drizzle and Gel"}
 ---
 
 ## Get Started with Drizzle and Gel in existing project

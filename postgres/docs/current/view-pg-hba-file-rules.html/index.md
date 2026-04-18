@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:50:15.962Z"
 content_hash: "53fd81f4b97e1b735aefdaa4698c926dfdebf6e0e3fe53f6808c993f4666a9a9"
 menu_path: ["PostgreSQL: Documentation: 18: 53.10. pg_hba_file_rules"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/xact-locking.html/index.md", "title": "PostgreSQL: Documentation: 18: 67.2.\u00a0Transactions and Locking"}
-nav_next: {"path": "postgres/docs/current/spi-spi-scroll-cursor-move.html/index.md", "title": "PostgreSQL: Documentation: 18: SPI_scroll_cursor_move"}
+nav_prev: {"path": "postgres/docs/current/view-pg-group.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.9.\u00a0pg_group"}
+nav_next: {"path": "postgres/docs/current/view-pg-ident-file-mappings.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.11.\u00a0pg_ident_file_mappings"}
 ---
 
 Development Versions: [devel](https://www.postgresql.org/docs/devel/view-pg-hba-file-rules.html "PostgreSQL devel - 53.10. pg_hba_file_rules")

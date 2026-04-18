@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:53:23.086Z"
 content_hash: "9f401903b9fc1e52cd725f65e7b5c8cf9be7cd2b1bcac94d9f968f331d7e1025"
 menu_path: ["PostgreSQL: Documentation: 18: pg_basebackup"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/runtime-config-compatible.html/index.md", "title": "PostgreSQL: Documentation: 18: 19.13.\u00a0Version and Platform Compatibility"}
-nav_next: {"path": "postgres/docs/current/sql-reindex.html/index.md", "title": "PostgreSQL: Documentation: 18: REINDEX"}
+nav_prev: {"path": "postgres/docs/current/app-pg-dumpall.html/index.md", "title": "PostgreSQL: Documentation: 18: pg_dumpall"}
+nav_next: {"path": "postgres/docs/current/app-pgchecksums.html/index.md", "title": "PostgreSQL: Documentation: 18: pg_checksums"}
 ---
 
 pg\_basebackup — take a base backup of a PostgreSQL cluster

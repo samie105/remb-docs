@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:36:45.533Z"
 content_hash: "280cbd4e95ec704a6e2f4593d43fee904ed5bd2d05034474df80d5836d0aa7f4"
 menu_path: ["PostgreSQL: Documentation: 18: LOCK"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/functions-string.html/index.md", "title": "PostgreSQL: Documentation: 18: 9.4.\u00a0String Functions and Operators"}
-nav_next: {"path": "postgres/docs/current/sql-set-transaction.html/index.md", "title": "PostgreSQL: Documentation: 18: SET TRANSACTION"}
+nav_prev: {"path": "postgres/docs/current/sql-listen.html/index.md", "title": "PostgreSQL: Documentation: 18: LISTEN"}
+nav_next: {"path": "postgres/docs/current/sql-merge.html/index.md", "title": "PostgreSQL: Documentation: 18: MERGE"}
 ---
 
 LOCK — lock a table

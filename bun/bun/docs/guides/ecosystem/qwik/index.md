@@ -9,7 +9,7 @@ last_crawled_at: "2026-04-18T16:45:36.796Z"
 content_hash: "1fe81360723b153aec83a33fa4aa9d6f00a0fcd8e74eae75700ba22ffcd0baf2"
 menu_path: ["Build an app with Qwik and Bun"]
 section_path: []
-nav_prev: {"path": "bun/bun/docs/guides/ecosystem/prisma/index.md", "title": "Use Prisma with Bun"}
+nav_prev: {"path": "bun/bun/docs/guides/ecosystem/prisma-postgres/index.md", "title": "Use Prisma Postgres with Bun"}
 nav_next: {"path": "bun/bun/docs/guides/ecosystem/react/index.md", "title": "Build a React app with Bun"}
 ---
 

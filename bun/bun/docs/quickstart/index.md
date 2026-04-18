@@ -10,7 +10,7 @@ content_hash: "9126a4769072094c734842f0a2806b2360495ba6a124776201aafffab7e0415a"
 menu_path: ["Quickstart"]
 section_path: []
 nav_prev: {"path": "bun/bun/docs/project/roadmap/index.md", "title": "Roadmap"}
-nav_next: {"path": "bun/bun/docs/runtime/auto-install/index.md", "title": "Auto-install"}
+nav_next: {"path": "bun/bun/docs/runtime/index.md", "title": "Bun Runtime"}
 ---
 
 ## Overview

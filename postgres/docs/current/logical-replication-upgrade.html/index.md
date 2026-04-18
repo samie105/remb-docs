@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:50:54.061Z"
 content_hash: "87774f66f4f2ac390311b667b186d28c44398fa60b93295157fb1d621d1ca89c"
 menu_path: ["PostgreSQL: Documentation: 18: 29.13. Upgrade"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/view-pg-file-settings.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.8.\u00a0pg_file_settings"}
-nav_next: {"path": "postgres/docs/current/sql-createtableas.html/index.md", "title": "PostgreSQL: Documentation: 18: CREATE TABLE AS"}
+nav_prev: {"path": "postgres/docs/current/logical-replication-subscription.html/index.md", "title": "PostgreSQL: Documentation: 18: 29.2.\u00a0Subscription"}
+nav_next: {"path": "postgres/docs/current/logicaldecoding-catalogs.html/index.md", "title": "PostgreSQL: Documentation: 18: 47.5.\u00a0System Catalogs Related to Logical Decoding"}
 ---
 
 Development Versions: [devel](https://www.postgresql.org/docs/devel/logical-replication-upgrade.html "PostgreSQL devel - 29.13. Upgrade")

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:49:38.480Z"
 content_hash: "5f5f8d1f458dd5fd89e3ac70d3d2baa4237456392f1fcffc773314e7d18a3817"
 menu_path: ["PostgreSQL: Documentation: 18: B.6. History of Units"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/textsearch-psql.html/index.md", "title": "PostgreSQL: Documentation: 18: 12.10.\u00a0psql Support"}
-nav_next: {"path": "postgres/docs/current/contrib-dblink-connect.html/index.md", "title": "PostgreSQL: Documentation: 18: dblink_connect"}
+nav_prev: {"path": "postgres/docs/current/datetime-posix-timezone-specs.html/index.md", "title": "PostgreSQL: Documentation: 18: B.5.\u00a0POSIX Time Zone Specifications"}
+nav_next: {"path": "postgres/docs/current/dblink.html/index.md", "title": "PostgreSQL: Documentation: 18: F.11.\u00a0dblink \u2014 connect to other PostgreSQL databases"}
 ---
 
 The SQL standard states that “Within the definition of a ‘datetime literal’, the ‘datetime values’ are constrained by the natural rules for dates and times according to the Gregorian calendar”. PostgreSQL follows the SQL standard's lead by counting dates exclusively in the Gregorian calendar, even for years before that calendar was in use. This rule is known as the _proleptic Gregorian calendar_.

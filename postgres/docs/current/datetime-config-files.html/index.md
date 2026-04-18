@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:53:02.356Z"
 content_hash: "79a991f101d5de15b04d13b8c3a0a373848961295c6e2277edc08b6deccc04f4"
 menu_path: ["PostgreSQL: Documentation: 18: B.4. Date/Time Configuration Files"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/logical-replication-publication.html/index.md", "title": "PostgreSQL: Documentation: 18: 29.1.\u00a0Publication"}
-nav_next: {"path": "postgres/docs/current/app-reindexdb.html/index.md", "title": "PostgreSQL: Documentation: 18: reindexdb"}
+nav_prev: {"path": "postgres/docs/current/datatype-xml.html/index.md", "title": "PostgreSQL: Documentation: 18: 8.13.\u00a0XML Type"}
+nav_next: {"path": "postgres/docs/current/datetime-input-rules.html/index.md", "title": "PostgreSQL: Documentation: 18: B.1.\u00a0Date/Time Input Interpretation"}
 ---
 
 Since timezone abbreviations are not well standardized, PostgreSQL provides a means to customize the set of abbreviations accepted in datetime input. There are two sources for these abbreviations:

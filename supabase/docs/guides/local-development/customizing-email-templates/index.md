@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:46:36.833Z"
 content_hash: "aaa210c85328a3a5a85b0710b498391045cb53c5c40856ad4dd7fc541e345347"
 menu_path: ["Local Dev / CLI","Local Dev / CLI","Local development","Local development","Customizing email templates","Customizing email templates"]
 section_path: ["Local Dev / CLI","Local Dev / CLI","Local development","Local development","Customizing email templates","Customizing email templates"]
-nav_prev: {"path": "supabase/docs/guides/local-development/declarative-database-schemas/index.md", "title": "Declarative database schemas"}
-nav_next: {"path": "supabase/docs/guides/local-development/managing-config/index.md", "title": "Managing config and secrets"}
+nav_prev: {"path": "supabase/docs/guides/local-development/cli/testing-and-linting/index.md", "title": "Testing and linting"}
+nav_next: {"path": "supabase/docs/guides/local-development/declarative-database-schemas/index.md", "title": "Declarative database schemas"}
 ---
 
 # 

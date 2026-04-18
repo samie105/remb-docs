@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:56:29.625Z"
 content_hash: "a76e2f3926c929f58f5681a76b4df3be3ded3e5ebfd1e03dafc03c6b5b645ed7"
 menu_path: ["Build a publish-subscribe WebSocket server"]
 section_path: []
-nav_prev: {"path": "bun/bun/docs/guides/websocket/compression/index.md", "title": "Enable compression for WebSocket messages"}
-nav_next: {"path": "bun/bun/docs/guides/websocket/context/index.md", "title": "Set per-socket contextual data on a WebSocket"}
+nav_prev: {"path": "bun/bun/docs/guides/websocket/context/index.md", "title": "Set per-socket contextual data on a WebSocket"}
+nav_next: {"path": "bun/bun/docs/guides/websocket/simple/index.md", "title": "Build a simple WebSocket server"}
 ---
 
 Bun’s server-side `WebSocket` API provides a native pub-sub API. Sockets can be subscribed to a set of named channels using `socket.subscribe(<name>)`; messages can be published to a channel using `socket.publish(<name>, <message>)`. This code snippet implements a single-channel chat server.

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:04:59.533Z"
 content_hash: "9ed544d406db7c302d603ad30bfc2a16580dc9fc1c77469282d897a664597ba7"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Connect with Redis client API libraries","→","Connect with Redis client API libraries","→\n      \n        Jedis guide (Java)","→","Jedis guide (Java)","→\n      \n        Probabilistic data types","→","Probabilistic data types"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Connect with Redis client API libraries","→","Connect with Redis client API libraries","→\n      \n        Jedis guide (Java)","→","Jedis guide (Java)","→\n      \n        Probabilistic data types","→","Probabilistic data types"]
-nav_prev: {"path": "redis/docs/latest/integrate/redis-data-integration/data-pipelines/prepare-dbs/aws-aurora-rds/index.md", "title": "Prepare AWS RDS and Aurora databases for RDI"}
-nav_next: {"path": "redis/docs/latest/develop/clients/nodejs/prob/index.md", "title": "Probabilistic data types"}
+nav_prev: {"path": "redis/docs/latest/develop/clients/jedis/connect/index.md", "title": "Connect to the server"}
+nav_next: {"path": "redis/docs/latest/develop/clients/jedis/queryjson/index.md", "title": "Index and query documents"}
 ---
 
 # Probabilistic data types

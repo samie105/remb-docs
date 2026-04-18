@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:03:42.069Z"
 content_hash: "816da457726edf84251e1d4448185fbe1f7b4faeed0db6ab8fc089e0cf88aa9d"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Connect with Redis client API libraries","→","Connect with Redis client API libraries","→\n      \n        ioredis guide (JavaScript)","→","ioredis guide (JavaScript)"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Connect with Redis client API libraries","→","Connect with Redis client API libraries","→\n      \n        ioredis guide (JavaScript)","→","ioredis guide (JavaScript)"]
-nav_prev: {"path": "redis/docs/latest/operate/kubernetes/networking/ingress/index.md", "title": "Configure Ingress for external routing"}
-nav_next: {"path": "redis/docs/latest/develop/clients/hiredis/issue-commands/index.md", "title": "Issue commands"}
+nav_prev: {"path": "redis/docs/latest/develop/clients/hiredis/issue-commands/index.md", "title": "Issue commands"}
+nav_next: {"path": "redis/docs/latest/develop/clients/jedis/index.md", "title": "Jedis guide (Java)"}
 ---
 
 # ioredis guide (JavaScript)

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:40:23.057Z"
 content_hash: "d0b9dc4b628f3050291dd62001460f30adf35ade5b59a0f6fa689a67d9a8c1b2"
 menu_path: ["PostgreSQL: Documentation: 18: 53.17. pg_prepared_xacts"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/xaggr.html/index.md", "title": "PostgreSQL: Documentation: 18: 36.12.\u00a0User-Defined Aggregates"}
-nav_next: {"path": "postgres/docs/current/queries-order.html/index.md", "title": "PostgreSQL: Documentation: 18: 7.5.\u00a0Sorting Rows (ORDER BY)"}
+nav_prev: {"path": "postgres/docs/current/view-pg-prepared-statements.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.16.\u00a0pg_prepared_statements"}
+nav_next: {"path": "postgres/docs/current/view-pg-publication-tables.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.18.\u00a0pg_publication_tables"}
 ---
 
 Development Versions: [devel](https://www.postgresql.org/docs/devel/view-pg-prepared-xacts.html "PostgreSQL devel - 53.17. pg_prepared_xacts")

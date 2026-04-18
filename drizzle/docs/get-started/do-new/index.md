@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:53:47.631Z"
 content_hash: "339976b15e1ce52c329b7a5bc8c5fd658d0008c159b460cdb1ced4cb9b4603c5"
 menu_path: ["Get Started with Drizzle and SQLite Durable Objects"]
 section_path: []
-nav_prev: {"path": "drizzle/docs/get-started/d1-new/index.md", "title": "Get Started with Drizzle and D1"}
-nav_next: {"path": "drizzle/docs/get-started/do-existing/index.md", "title": "Get Started with Drizzle and SQLite Durable Objects in existing project"}
+nav_prev: {"path": "drizzle/docs/get-started/do-existing/index.md", "title": "Get Started with Drizzle and SQLite Durable Objects in existing project"}
+nav_next: {"path": "drizzle/docs/get-started/effect-postgresql-existing/index.md", "title": "Get Started with Drizzle and Effect PostgreSQL in existing project"}
 ---
 
 # Bind a Durable Object. Durable objects are a scale-to-zero compute primitive based on the actor model.

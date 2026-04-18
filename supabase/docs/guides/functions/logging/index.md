@@ -9,7 +9,7 @@ last_crawled_at: "2026-04-18T16:44:51.901Z"
 content_hash: "b7cea6d2f7b1b909a0faa8b2b721a1b8fd1aeeaa8923b757e75f88c3e42a5678"
 menu_path: ["Edge Functions","Edge Functions","Debugging","Debugging","Logging","Logging"]
 section_path: ["Edge Functions","Edge Functions","Debugging","Debugging","Logging","Logging"]
-nav_prev: {"path": "supabase/docs/guides/functions/kysely-postgres/index.md", "title": "Type-Safe SQL with Kysely"}
+nav_prev: {"path": "supabase/docs/guides/functions/limits/index.md", "title": "Limits"}
 nav_next: {"path": "supabase/docs/guides/functions/pricing/index.md", "title": "Pricing"}
 ---
 

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:40:16.894Z"
 content_hash: "d2020fba4a4d108d2158dfa60bd7f9b61ca17920dfaa5af7283132b593f7b92c"
 menu_path: ["Convert a Buffer to an ArrayBuffer"]
 section_path: []
-nav_prev: {"path": "bun/bun/docs/guides/binary/blob-to-string/index.md", "title": "Convert a Blob to a string"}
-nav_next: {"path": "bun/bun/docs/guides/binary/blob-to-typedarray/index.md", "title": "Convert a Blob to a Uint8Array"}
+nav_prev: {"path": "bun/bun/docs/guides/binary/blob-to-typedarray/index.md", "title": "Convert a Blob to a Uint8Array"}
+nav_next: {"path": "bun/bun/docs/guides/binary/buffer-to-blob/index.md", "title": "Convert a Buffer to a blob"}
 ---
 
 [Skip to main content](#content-area)

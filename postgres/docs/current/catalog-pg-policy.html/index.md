@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:34:24.961Z"
 content_hash: "5c08a42748f21e87a72014a72c88e5ccc02b810eb4c11a944cc965be1ab802ef"
 menu_path: ["PostgreSQL: Documentation: 18: 52.38. pg_policy"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/infoschema-domain-udt-usage.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.22.\u00a0domain_udt_usage"}
-nav_next: {"path": "postgres/docs/current/jit-extensibility.html/index.md", "title": "PostgreSQL: Documentation: 18: 30.4.\u00a0Extensibility"}
+nav_prev: {"path": "postgres/docs/current/catalog-pg-operator.html/index.md", "title": "PostgreSQL: Documentation: 18: 52.34.\u00a0pg_operator"}
+nav_next: {"path": "postgres/docs/current/catalog-pg-proc.html/index.md", "title": "PostgreSQL: Documentation: 18: 52.39.\u00a0pg_proc"}
 ---
 
 Development Versions: [devel](https://www.postgresql.org/docs/devel/catalog-pg-policy.html "PostgreSQL devel - 52.38. pg_policy")

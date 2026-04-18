@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:52:31.311Z"
 content_hash: "f225fdeed1a9596cbe167dc549198eb77745916ad34bb5ecf38fcac3f52dc53e"
 menu_path: ["Table inheritance"]
 section_path: []
-nav_prev: {"path": "prisma/docs/orm/prisma-schema/data-model/unsupported-database-features/index.md", "title": "Unsupported database features (Prisma Schema)"}
-nav_next: {"path": "prisma/docs/orm/prisma-schema/data-model/views/index.md", "title": "Views"}
+nav_prev: {"path": "prisma/docs/orm/prisma-schema/data-model/relations/troubleshooting-relations/index.md", "title": "Troubleshooting relations"}
+nav_next: {"path": "prisma/docs/orm/prisma-schema/data-model/unsupported-database-features/index.md", "title": "Unsupported database features (Prisma Schema)"}
 ---
 
 Learn about the use cases and patterns for table inheritance in Prisma ORM that enable usage of union types or polymorphic structures in your application.

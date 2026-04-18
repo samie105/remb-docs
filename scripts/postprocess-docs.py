@@ -187,10 +187,26 @@ def process_slug(slug: str):
     toc_urls = load_toc_order(manifest_dir)
 
     # Build ordered list following toc, then any extras not in toc
+    # Deduplicate by output path so files with multiple URLs only appear once
     visited_urls_in_toc = [u for u in toc_urls if u in manifest]
     in_toc_set = set(visited_urls_in_toc)
-    extras = [u for u in manifest if u not in in_toc_set]
-    ordered_urls = visited_urls_in_toc + extras
+    # Track which output paths are already in the ordered list
+    seen_paths = set()
+    deduped_toc = []
+    for u in visited_urls_in_toc:
+        op = outputpath_to_local(manifest[u]["outputPath"], slug, manifest_dir)
+        if op not in seen_paths:
+            seen_paths.add(op)
+            deduped_toc.append(u)
+    # Add extras (sorted for determinism), skipping already-seen paths
+    extras = sorted(u for u in manifest if u not in in_toc_set)
+    deduped_extras = []
+    for u in extras:
+        op = outputpath_to_local(manifest[u]["outputPath"], slug, manifest_dir)
+        if op not in seen_paths:
+            seen_paths.add(op)
+            deduped_extras.append(u)
+    ordered_urls = deduped_toc + deduped_extras
 
     # Build url -> local path mapping for link rewriting
     url_to_local = {}

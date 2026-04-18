@@ -10,7 +10,7 @@ content_hash: "79e30ce0038e006a260cf9cbf50247ee489efc2d208c6f2fdb7deb4f93b47f76"
 menu_path: ["Edge Functions","Edge Functions","Examples","Examples","CORS support for invoking from the browser","CORS support for invoking from the browser"]
 section_path: ["Edge Functions","Edge Functions","Examples","Examples","CORS support for invoking from the browser","CORS support for invoking from the browser"]
 nav_prev: {"path": "supabase/docs/guides/functions/connect-to-postgres/index.md", "title": "Integrating with Supabase Database (Postgres)"}
-nav_next: {"path": "supabase/docs/guides/functions/debugging-tools/index.md", "title": "Local Debugging"}
+nav_next: {"path": "supabase/docs/guides/functions/dart-edge/index.md", "title": "Dart Edge"}
 ---
 
 # 

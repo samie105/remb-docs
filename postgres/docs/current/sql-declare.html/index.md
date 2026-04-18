@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:42:10.756Z"
 content_hash: "f56d7488d72f4c56643e348ab91bc185f51f855620f243ddc01d2f6c237d1b17"
 menu_path: ["PostgreSQL: Documentation: 18: DECLARE"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/plpgsql-development-tips.html/index.md", "title": "PostgreSQL: Documentation: 18: 41.12.\u00a0Tips for Developing in PL/pgSQL"}
-nav_next: {"path": "postgres/docs/current/contrib-dblink-function.html/index.md", "title": "PostgreSQL: Documentation: 18: dblink"}
+nav_prev: {"path": "postgres/docs/current/sql-createtype.html/index.md", "title": "PostgreSQL: Documentation: 18: CREATE TYPE"}
+nav_next: {"path": "postgres/docs/current/sql-delete.html/index.md", "title": "PostgreSQL: Documentation: 18: DELETE"}
 ---
 
 ## Description

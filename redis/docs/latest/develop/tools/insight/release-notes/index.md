@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:10:53.722Z"
 content_hash: "f22474a2ff52f0c1615ef879a9adf294f33f665f575d4ccd74c60c4cc00cc551"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Client tools","→","Client tools","→\n      \n        Redis Insight","→","Redis Insight","→\n      \n        Redis Insight release notes","→","Redis Insight release notes"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Client tools","→","Client tools","→\n      \n        Redis Insight","→","Redis Insight","→\n      \n        Redis Insight release notes","→","Redis Insight release notes"]
-nav_prev: {"path": "redis/docs/latest/integrate/railway-redis/index.md", "title": "Redis on Railway"}
-nav_next: {"path": "redis/docs/latest/develop/tools/redis-for-vscode/release-notes/index.md", "title": "Redis for VS Code release notes"}
+nav_prev: {"path": "redis/docs/latest/develop/tools/insight/rdi-connector/index.md", "title": "RDI in Redis Insight"}
+nav_next: {"path": "redis/docs/latest/develop/tools/insight/release-notes/v.2.14.0/index.md", "title": "RedisInsight v2.14.0, November 2022"}
 ---
 
 # Redis Insight release notes

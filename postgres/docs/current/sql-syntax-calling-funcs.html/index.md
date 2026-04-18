@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:42:16.284Z"
 content_hash: "f3fabd356676e0488634296f9dd01b80a1abb7b8a5af1f0bc33a35ae37f9d591"
 menu_path: ["PostgreSQL: Documentation: 18: 4.3. Calling Functions"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/contrib-dblink-function.html/index.md", "title": "PostgreSQL: Documentation: 18: dblink"}
-nav_next: {"path": "postgres/docs/current/catalog-pg-shseclabel.html/index.md", "title": "PostgreSQL: Documentation: 18: 52.50.\u00a0pg_shseclabel"}
+nav_prev: {"path": "postgres/docs/current/sql-start-transaction.html/index.md", "title": "PostgreSQL: Documentation: 18: START TRANSACTION"}
+nav_next: {"path": "postgres/docs/current/sql-syntax-lexical.html/index.md", "title": "PostgreSQL: Documentation: 18: 4.1.\u00a0Lexical Structure"}
 ---
 
 PostgreSQL allows functions that have named parameters to be called using either _positional_ or _named_ notation. Named notation is especially useful for functions that have a large number of parameters, since it makes the associations between parameters and actual arguments more explicit and reliable. In positional notation, a function call is written with its argument values in the same order as they are defined in the function declaration. In named notation, the arguments are matched to the function parameters by name and can be written in any order. For each notation, also consider the effect of function argument types, documented in [Section 10.3](https://www.postgresql.org/docs/current/typeconv-func.html "10.3. Functions").

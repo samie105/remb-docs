@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:55:42.758Z"
 content_hash: "0128b63de6782cf04797a10d56eb13f4d0064861301cf663a0eecb74a0d55bc1"
 menu_path: ["Relation mode"]
 section_path: []
-nav_prev: {"path": "prisma/docs/orm/prisma-schema/data-model/relations/self-relations/index.md", "title": "Self-relations"}
-nav_next: {"path": "prisma/docs/orm/prisma-schema/data-model/relations/troubleshooting-relations/index.md", "title": "Troubleshooting relations"}
+nav_prev: {"path": "prisma/docs/orm/prisma-schema/data-model/relations/referential-actions/index.md", "title": "Referential actions"}
+nav_next: {"path": "prisma/docs/orm/prisma-schema/data-model/relations/self-relations/index.md", "title": "Self-relations"}
 ---
 
 Questions answered in this page

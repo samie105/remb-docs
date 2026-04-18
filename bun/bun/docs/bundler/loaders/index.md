@@ -9,7 +9,7 @@ last_crawled_at: "2026-04-18T16:36:48.946Z"
 content_hash: "a353d9306d953609c0f40a19d751b12318ea89a8f3b39936f28d357245209e9a"
 menu_path: ["Loaders"]
 section_path: []
-nav_prev: {"path": "bun/bun/docs/bundler/index.md", "title": "Bundler"}
+nav_prev: {"path": "bun/bun/docs/bundler/html-static/index.md", "title": "HTML & static sites"}
 nav_next: {"path": "bun/bun/docs/bundler/minifier/index.md", "title": "Minifier"}
 ---
 

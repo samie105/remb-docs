@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:40:31.846Z"
 content_hash: "040d5828571dc9648ae42607319f96057a9aec044315b7fc56e9858bd12341c2"
 menu_path: ["PostgreSQL: Documentation: 18: CREATE TEXT SEARCH TEMPLATE"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/sql-dropcast.html/index.md", "title": "PostgreSQL: Documentation: 18: DROP CAST"}
-nav_next: {"path": "postgres/docs/current/infoschema-foreign-table-options.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.30.\u00a0foreign_table_options"}
+nav_prev: {"path": "postgres/docs/current/sql-createtsparser.html/index.md", "title": "PostgreSQL: Documentation: 18: CREATE TEXT SEARCH PARSER"}
+nav_next: {"path": "postgres/docs/current/sql-createtype.html/index.md", "title": "PostgreSQL: Documentation: 18: CREATE TYPE"}
 ---
 
 CREATE TEXT SEARCH TEMPLATE — define a new text search template

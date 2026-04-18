@@ -10,7 +10,7 @@ content_hash: "24c07cbfe8a50a4232bc76147794ff1534329386ab4df806f7870fb1056d6628"
 menu_path: ["net - Node documentation"]
 section_path: []
 nav_prev: {"path": "deno/deno/api/node/module/index.md", "title": "module - Node documentation"}
-nav_next: {"path": "deno/deno/api/node/path/index.md", "title": "path - Node documentation"}
+nav_next: {"path": "deno/deno/api/node/os/index.md", "title": "os - Node documentation"}
 ---
 
 ### Usage in Deno

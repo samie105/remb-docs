@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:49:48.022Z"
 content_hash: "4354504a03bba4383fe80048ba30b93daa155f5a2fbad3ee6c3e55190eec3c59"
 menu_path: ["PostgreSQL: Documentation: 18: 53.12. pg_indexes"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/libpq-envars.html/index.md", "title": "PostgreSQL: Documentation: 18: 32.15.\u00a0Environment Variables"}
-nav_next: {"path": "postgres/docs/current/sql-reassign-owned.html/index.md", "title": "PostgreSQL: Documentation: 18: REASSIGN OWNED"}
+nav_prev: {"path": "postgres/docs/current/view-pg-ident-file-mappings.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.11.\u00a0pg_ident_file_mappings"}
+nav_next: {"path": "postgres/docs/current/view-pg-locks.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.13.\u00a0pg_locks"}
 ---
 
 The view `pg_indexes` provides access to useful information about each index in the database.

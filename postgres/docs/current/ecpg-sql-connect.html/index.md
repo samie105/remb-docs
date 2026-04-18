@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:51:28.345Z"
 content_hash: "d0df23783e944960d92c6740d1f11a896897942e2f41ca7fc6cd270b625d4a63"
 menu_path: ["PostgreSQL: Documentation: 18: CONNECT"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/datetime-julian-dates.html/index.md", "title": "PostgreSQL: Documentation: 18: B.7.\u00a0Julian Dates"}
-nav_next: {"path": "postgres/docs/current/view-pg-config.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.6.\u00a0pg_config"}
+nav_prev: {"path": "postgres/docs/current/ecpg-sql-commands.html/index.md", "title": "PostgreSQL: Documentation: 18: 34.14.\u00a0Embedded SQL Commands"}
+nav_next: {"path": "postgres/docs/current/ecpg-sql-deallocate-descriptor.html/index.md", "title": "PostgreSQL: Documentation: 18: DEALLOCATE DESCRIPTOR"}
 ---
 
 CONNECT — establish a database connection

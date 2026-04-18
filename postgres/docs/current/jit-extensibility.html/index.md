@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:34:28.634Z"
 content_hash: "9f7d22786b925adf7771deab210f16394cbee9f552baa438a8250f8dfb6488b1"
 menu_path: ["PostgreSQL: Documentation: 18: 30.4. Extensibility"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/catalog-pg-policy.html/index.md", "title": "PostgreSQL: Documentation: 18: 52.38.\u00a0pg_policy"}
-nav_next: {"path": "postgres/docs/current/rangetypes.html/index.md", "title": "PostgreSQL: Documentation: 18: 8.17.\u00a0Range Types"}
+nav_prev: {"path": "postgres/docs/current/infoschema-sql-implementation-info.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.49.\u00a0sql_implementation_info"}
+nav_next: {"path": "postgres/docs/current/jit-reason.html/index.md", "title": "PostgreSQL: Documentation: 18: 30.1.\u00a0What Is JIT compilation?"}
 ---
 
 Development Versions: [devel](https://www.postgresql.org/docs/devel/jit-extensibility.html "PostgreSQL devel - 30.4. Extensibility")

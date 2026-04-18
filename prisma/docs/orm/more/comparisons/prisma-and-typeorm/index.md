@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:42:46.229Z"
 content_hash: "913accea346d171433144aefa1318fd68e52c14db789a59f16975fabc32d68c7"
 menu_path: ["TypeORM"]
 section_path: []
-nav_prev: {"path": "prisma/docs/orm/more/dev-environment/editor-setup/index.md", "title": "Editor setup"}
-nav_next: {"path": "prisma/docs/orm/more/dev-environment/environment-variables/index.md", "title": "Environment variables"}
+nav_prev: {"path": "prisma/docs/orm/more/comparisons/prisma-and-sequelize/index.md", "title": "Sequelize"}
+nav_next: {"path": "prisma/docs/orm/more/dev-environment/editor-setup/index.md", "title": "Editor setup"}
 ---
 
 This page compares Prisma ORM and [TypeORM](https://typeorm.io/). If you want to learn how to migrate from TypeORM to Prisma ORM, check out this [guide](https://www.prisma.io/docs/guides/switch-to-prisma-orm/from-sql-orms).

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:06:06.854Z"
 content_hash: "16e6612ada75c59b765bb681d33ed64a931db3f87af89353c7668ddc3d51e18b"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Manage Redis","→","Manage Redis","→\n      \n        Redis replication","→","Redis replication"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Manage Redis","→","Manage Redis","→\n      \n        Redis replication","→","Redis replication"]
-nav_prev: {"path": "redis/docs/latest/develop/ai/redisvl/api/index.md", "title": "RedisVL API"}
-nav_next: {"path": "redis/docs/latest/integrate/redis-data-integration/installation/reqsummary/index.md", "title": "Requirements summary"}
+nav_prev: {"path": "redis/docs/latest/operate/oss_and_stack/management/persistence/index.md", "title": "Redis persistence"}
+nav_next: {"path": "redis/docs/latest/operate/oss_and_stack/management/scaling/index.md", "title": "Scale with Redis Cluster"}
 ---
 
 # Redis replication

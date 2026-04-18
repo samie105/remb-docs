@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:53:24.029Z"
 content_hash: "34b689f9c9770d9f3615ba3d4c1251a3cf555ee9d046b600eda403ed4b00aad4"
 menu_path: ["PostgreSQL: Documentation: 18: REINDEX"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/app-pgbasebackup.html/index.md", "title": "PostgreSQL: Documentation: 18: pg_basebackup"}
-nav_next: {"path": "postgres/docs/current/geqo-intro.html/index.md", "title": "PostgreSQL: Documentation: 18: 61.1.\u00a0Query Handling as a Complex Optimization Problem"}
+nav_prev: {"path": "postgres/docs/current/sql-refreshmaterializedview.html/index.md", "title": "PostgreSQL: Documentation: 18: REFRESH MATERIALIZED VIEW"}
+nav_next: {"path": "postgres/docs/current/sql-set-role.html/index.md", "title": "PostgreSQL: Documentation: 18: SET ROLE"}
 ---
 
 ## Description

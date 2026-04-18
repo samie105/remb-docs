@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:51:50.290Z"
 content_hash: "bc6c87a5fe6fdf0af9b208f67617f80e0cf9c47969b9e03d4ca4b342eb01c795"
 menu_path: ["Function: unstable_httpSubscriptionLink()"]
 section_path: []
-nav_prev: {"path": "trpc/docs/typedoc/client/index/functions/unstable_localLink/index.md", "title": "Function: unstable_localLink()"}
-nav_next: {"path": "trpc/docs/typedoc/client/index/interfaces/Encoder/index.md", "title": "Interface: Encoder"}
+nav_prev: {"path": "trpc/docs/typedoc/client/index/functions/unstable_httpBatchStreamLink/index.md", "title": "Function: unstable_httpBatchStreamLink()"}
+nav_next: {"path": "trpc/docs/typedoc/client/index/functions/unstable_localLink/index.md", "title": "Function: unstable_localLink()"}
 ---
 
 > **unstable\_httpSubscriptionLink**<`TInferrable`, `TEventSource`\>(`opts`): [`TRPCLink`](trpc/docs/typedoc/client/index/type-aliases/TRPCLink/index.md)<`TInferrable`\>

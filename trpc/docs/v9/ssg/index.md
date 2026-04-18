@@ -10,7 +10,7 @@ content_hash: "bba6196367a3ecee6f0caba939997a4c565fcdd13f5d2eff3b656cd6942d647d"
 menu_path: ["Static Site Generation"]
 section_path: []
 nav_prev: {"path": "trpc/docs/v9/sponsors/index.md", "title": "Sponsors"}
-nav_next: {"path": "trpc/docs/v9/ssr/index.md", "title": "Server-Side Rendering"}
+nav_next: {"path": "trpc/docs/v9/ssg-helpers/index.md", "title": "SSG Helpers"}
 ---
 
 Static site generation requires executing tRPC queries inside `getStaticProps` on each page.

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:48:41.074Z"
 content_hash: "6ee356a3619b234e85d963ca28ab681d30169be327ca27c05e97cbfd8b70e2cf"
 menu_path: ["PostgreSQL: Documentation: 18: 51.4. The PostgreSQL Rule System"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/sql-createpublication.html/index.md", "title": "PostgreSQL: Documentation: 18: CREATE PUBLICATION"}
-nav_next: {"path": "postgres/docs/current/plpgsql-control-structures.html/index.md", "title": "PostgreSQL: Documentation: 18: 41.6.\u00a0Control Structures"}
+nav_prev: {"path": "postgres/docs/current/rowtypes.html/index.md", "title": "PostgreSQL: Documentation: 18: 8.16.\u00a0Composite Types"}
+nav_next: {"path": "postgres/docs/current/rules-privileges.html/index.md", "title": "PostgreSQL: Documentation: 18: 39.5.\u00a0Rules and Privileges"}
 ---
 
 PostgreSQL supports a powerful _rule system_ for the specification of _views_ and ambiguous _view updates_. Originally the PostgreSQL rule system consisted of two implementations:

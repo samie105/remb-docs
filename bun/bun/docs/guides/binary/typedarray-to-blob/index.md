@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:41:18.217Z"
 content_hash: "62ce14e352e5bee168418a4827f098c7d00f407284538e0b4165d869f7bee4ee"
 menu_path: ["Convert a Uint8Array to a Blob"]
 section_path: []
-nav_prev: {"path": "bun/bun/docs/guides/binary/dataview-to-string/index.md", "title": "Convert a DataView to a string"}
-nav_next: {"path": "bun/bun/docs/guides/binary/typedarray-to-arraybuffer/index.md", "title": "Convert a Uint8Array to an ArrayBuffer"}
+nav_prev: {"path": "bun/bun/docs/guides/binary/typedarray-to-arraybuffer/index.md", "title": "Convert a Uint8Array to an ArrayBuffer"}
+nav_next: {"path": "bun/bun/docs/guides/binary/typedarray-to-buffer/index.md", "title": "Convert a Uint8Array to a Buffer"}
 ---
 
 [Skip to main content](#content-area)

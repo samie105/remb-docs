@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:58:28.196Z"
 content_hash: "27787c0884c591345bd0a47ddaaa1fd7b4943a496008abb6ba2e3cf3f7093d88"
 menu_path: ["Start with Supabase","Start with Supabase","Framework Quickstarts","Framework Quickstarts","Refine","Refine"]
 section_path: ["Start with Supabase","Start with Supabase","Framework Quickstarts","Framework Quickstarts","Refine","Refine"]
-nav_prev: {"path": "supabase/docs/guides/getting-started/quickstarts/ruby-on-rails/index.md", "title": "Use Supabase with Ruby on Rails"}
-nav_next: {"path": "supabase/docs/guides/getting-started/quickstarts/solidjs/index.md", "title": "Use Supabase with SolidJS"}
+nav_prev: {"path": "supabase/docs/guides/getting-started/quickstarts/redwoodjs/index.md", "title": "Use Supabase with RedwoodJS"}
+nav_next: {"path": "supabase/docs/guides/getting-started/quickstarts/ruby-on-rails/index.md", "title": "Use Supabase with Ruby on Rails"}
 ---
 
 # 

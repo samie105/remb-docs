@@ -9,7 +9,7 @@ last_crawled_at: "2026-04-18T16:33:17.249Z"
 content_hash: "1f9a12e8c4ceb145f634edd63d428a41a8e324c4a3f0728d5cc712f44f54915f"
 menu_path: ["Lifecycle"]
 section_path: []
-nav_prev: {"path": "fastify/docs/latest/Reference/Hooks/index.md", "title": "Hooks"}
+nav_prev: {"path": "fastify/docs/latest/Reference/LTS/index.md", "title": "LTS"}
 nav_next: {"path": "fastify/docs/latest/Reference/Logging/index.md", "title": "Logging"}
 ---
 

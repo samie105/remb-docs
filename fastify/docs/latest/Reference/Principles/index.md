@@ -10,7 +10,7 @@ content_hash: "645bce4e4fafcee1a07eaa201bc5a1a52873a7a3bcc6402174b092cce0be9c66"
 menu_path: ["Technical Principles"]
 section_path: []
 nav_prev: {"path": "fastify/docs/latest/Reference/Plugins/index.md", "title": "Plugins"}
-nav_next: {"path": "fastify/docs/latest/Reference/Request/index.md", "title": "Request"}
+nav_next: {"path": "fastify/docs/latest/Reference/Reply/index.md", "title": "Reply"}
 ---
 
 Version: latest (v5.8.x)

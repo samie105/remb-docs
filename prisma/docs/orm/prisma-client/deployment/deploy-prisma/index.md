@@ -10,7 +10,7 @@ content_hash: "03e655e472215c125c9269c2db31605bbf2c2d8cf7d30125e8bc1e9871cf284f"
 menu_path: ["Deploy Prisma ORM"]
 section_path: []
 nav_prev: {"path": "prisma/docs/orm/prisma-client/deployment/deploy-migrations-from-a-local-environment/index.md", "title": "Deploy migrations from a local environment"}
-nav_next: {"path": "prisma/docs/orm/prisma-client/observability-and-logging/logging/index.md", "title": "Logging"}
+nav_next: {"path": "prisma/docs/orm/prisma-client/deployment/edge/deploy-to-cloudflare/index.md", "title": "Deploy to Cloudflare Workers & Pages"}
 ---
 
 Deployment

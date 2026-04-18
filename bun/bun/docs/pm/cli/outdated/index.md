@@ -9,7 +9,7 @@ last_crawled_at: "2026-04-18T16:57:30.897Z"
 content_hash: "ac14b71cf4f8fe1aa43a7516621ed7555ddb4843b723a9e80f95815263bd1a16"
 menu_path: ["bun outdated"]
 section_path: []
-nav_prev: {"path": "bun/bun/docs/pm/cli/install/index.md", "title": "bun install"}
+nav_prev: {"path": "bun/bun/docs/pm/cli/link/index.md", "title": "bun link"}
 nav_next: {"path": "bun/bun/docs/pm/cli/patch/index.md", "title": "bun patch"}
 ---
 

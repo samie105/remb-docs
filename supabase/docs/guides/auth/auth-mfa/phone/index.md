@@ -9,7 +9,7 @@ last_crawled_at: "2026-04-18T16:53:06.703Z"
 content_hash: "e522a67cd52176d7af3d7cf90619745061767ce7e1db72909303daea78a9b449"
 menu_path: ["Auth","Auth","More","More","More","Multi-Factor Authentication","Multi-Factor Authentication","Phone","Phone"]
 section_path: ["Auth","Auth","More","More","More","Multi-Factor Authentication","Multi-Factor Authentication","Phone","Phone"]
-nav_prev: {"path": "supabase/docs/guides/auth/auth-hooks/send-sms-hook/index.md", "title": "Send SMS Hook"}
+nav_prev: {"path": "supabase/docs/guides/auth/auth-mfa/index.md", "title": "Multi-Factor Authentication"}
 nav_next: {"path": "supabase/docs/guides/auth/auth-mfa/totp/index.md", "title": "Multi-Factor Authentication (TOTP)"}
 ---
 

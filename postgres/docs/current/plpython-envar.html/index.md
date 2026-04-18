@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:36:29.950Z"
 content_hash: "b5a48a5d55e1fa04fe06569287b4559537ff8cdb95e7b212b6d53b957e29e62c"
 menu_path: ["PostgreSQL: Documentation: 18: 44.11. Environment Variables"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/runtime-config-resource.html/index.md", "title": "PostgreSQL: Documentation: 18: 19.4.\u00a0Resource Consumption"}
-nav_next: {"path": "postgres/docs/current/app-pgrecvlogical.html/index.md", "title": "PostgreSQL: Documentation: 18: pg_recvlogical"}
+nav_prev: {"path": "postgres/docs/current/plpython-database.html/index.md", "title": "PostgreSQL: Documentation: 18: 44.6.\u00a0Database Access"}
+nav_next: {"path": "postgres/docs/current/plpython-funcs.html/index.md", "title": "PostgreSQL: Documentation: 18: 44.1.\u00a0PL/Python Functions"}
 ---
 
 Some of the environment variables that are accepted by the Python interpreter can also be used to affect PL/Python behavior. They would need to be set in the environment of the main PostgreSQL server process, for example in a start script. The available environment variables depend on the version of Python; see the Python documentation for details. At the time of this writing, the following environment variables have an affect on PL/Python, assuming an adequate Python version:

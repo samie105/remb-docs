@@ -10,7 +10,7 @@ content_hash: "69ed385338400d02264b00fac7c24b8b65e0dfba4ba0e003f17d27096c6e17f4"
 menu_path: ["Drizzle ORM - Vector similarity search with pgvector extension"]
 section_path: []
 nav_prev: {"path": "drizzle/docs/guides/upsert/index.md", "title": "Drizzle ORM - Upsert Query"}
-nav_next: {"path": "drizzle/docs/latest-releases/drizzle-kit-v0232/index.md", "title": "Drizzle ORM - Drizzle Kit v0.23.2 release"}
+nav_next: {"path": "drizzle/docs/json-functions/index.md", "title": "404"}
 ---
 
 Drizzle | Vector similarity search with pgvector extension

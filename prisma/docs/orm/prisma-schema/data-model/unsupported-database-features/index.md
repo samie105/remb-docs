@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:52:26.196Z"
 content_hash: "09997552140c05084f5297dd986736067b6f1540fc5dc6aa32e898604cc94150"
 menu_path: ["Unsupported database features (Prisma Schema)"]
 section_path: []
-nav_prev: {"path": "prisma/docs/orm/prisma-schema/data-model/models/index.md", "title": "Models"}
-nav_next: {"path": "prisma/docs/orm/prisma-schema/data-model/table-inheritance/index.md", "title": "Table inheritance"}
+nav_prev: {"path": "prisma/docs/orm/prisma-schema/data-model/table-inheritance/index.md", "title": "Table inheritance"}
+nav_next: {"path": "prisma/docs/orm/prisma-schema/data-model/views/index.md", "title": "Views"}
 ---
 
 Data Model

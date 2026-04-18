@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:32:08.822Z"
 content_hash: "65318e30a8cf188a6b5c31c05d5a6252a39ee3c43892cbf9d148ea93f4a368cb"
 menu_path: ["PostgreSQL: Documentation: 18: pg_receivewal"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/logicaldecoding-catalogs.html/index.md", "title": "PostgreSQL: Documentation: 18: 47.5.\u00a0System Catalogs Related to Logical Decoding"}
-nav_next: {"path": "postgres/docs/current/app-pg-dumpall.html/index.md", "title": "PostgreSQL: Documentation: 18: pg_dumpall"}
+nav_prev: {"path": "postgres/docs/current/app-pgcreatesubscriber.html/index.md", "title": "PostgreSQL: Documentation: 18: pg_createsubscriber"}
+nav_next: {"path": "postgres/docs/current/app-pgreceivexlog.html/index.md", "title": "PostgreSQL: Documentation: 18: O.5.\u00a0pg_receivexlog renamed to pg_receivewal"}
 ---
 
 pg\_receivewal — stream write-ahead logs from a PostgreSQL server

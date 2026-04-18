@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:32:32.442Z"
 content_hash: "c700cdbf85648113e079d44a46cc5685af88c8c76628e65aac9c9cfb99e15794"
 menu_path: ["Encapsulation"]
 section_path: []
-nav_prev: {"path": "fastify/docs/latest/Reference/ContentTypeParser/index.md", "title": "ContentTypeParser"}
-nav_next: {"path": "fastify/docs/latest/Reference/Decorators/index.md", "title": "Decorators"}
+nav_prev: {"path": "fastify/docs/latest/Reference/Decorators/index.md", "title": "Decorators"}
+nav_next: {"path": "fastify/docs/latest/Reference/Errors/index.md", "title": "Errors"}
 ---
 
 # curl -H 'authorization: Bearer abc123' http://127.0.0.1:8000/one{"answer":42}# curl http://127.0.0.1:8000/two{"answer":42,"foo":"foo"}# curl http://127.0.0.1:8000/three{"answer":42,"foo":"foo","bar":"bar"}

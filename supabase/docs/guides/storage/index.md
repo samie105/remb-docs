@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:32:49.630Z"
 content_hash: "c0a35e93234b914b5119f2a035b9399e4b9f31c1e7f8a6d519c120817a9df60f"
 menu_path: ["Storage","Storage","Overview","Overview"]
 section_path: ["Storage","Storage","Overview","Overview"]
-nav_prev: {"path": "supabase/docs/guides/self-hosting/index.md", "title": "Self-Hosting"}
-nav_next: {"path": "supabase/docs/guides/telemetry/index.md", "title": "Telemetry"}
+nav_prev: {"path": "supabase/docs/guides/self-hosting/self-hosted-saml-sso/index.md", "title": "Configure SAML SSO"}
+nav_next: {"path": "supabase/docs/guides/storage/analytics/connecting-to-analytics-bucket/index.md", "title": "Iceberg Catalog"}
 ---
 
 # 

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:41:04.679Z"
 content_hash: "635e256ad7611beb438f559b47466c9c2621c65507b46599d46bd98385d75fcc"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Install Redis Open Source","→","Install Redis Open Source","→\n      \n        Install Redis Community Edition or Redis Stack","→","Install Redis Community Edition or Redis Stack","→\n      \n        Install Redis","→","Install Redis"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Install Redis Open Source","→","Install Redis Open Source","→\n      \n        Install Redis Community Edition or Redis Stack","→","Install Redis Community Edition or Redis Stack","→\n      \n        Install Redis","→","Install Redis"]
-nav_prev: {"path": "redis/docs/latest/operate/redisinsight/install/install-on-desktop/index.md", "title": "Install on desktop"}
-nav_next: {"path": "redis/docs/latest/develop/ai/search-and-query/administration/design/index.md", "title": "Internal design"}
+nav_prev: {"path": "redis/docs/latest/operate/kubernetes/release-notes/8-0-6-releases/8-0-6-8-december2025/index.md", "title": "Redis Enterprise for Kubernetes 8.0.6-8 (December 2025) release notes"}
+nav_next: {"path": "redis/docs/latest/operate/oss_and_stack/install/archive/install-redis/install-redis-from-source/index.md", "title": "Install Redis from Source"}
 ---
 
 # Install Redis

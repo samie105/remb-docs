@@ -9,7 +9,7 @@ last_crawled_at: "2026-04-18T16:54:19.676Z"
 content_hash: "afe90f1178d1f55a472a43d9a0feb432aa3553edc916314ca0ac48a1a2fe503f"
 menu_path: ["Convert a ReadableStream to a Uint8Array"]
 section_path: []
-nav_prev: {"path": "bun/bun/docs/guides/streams/to-json/index.md", "title": "Convert a ReadableStream to JSON"}
+nav_prev: {"path": "bun/bun/docs/guides/streams/to-string/index.md", "title": "Convert a ReadableStream to a string"}
 nav_next: {"path": "bun/bun/docs/guides/test/bail/index.md", "title": "Bail early with the Bun test runner"}
 ---
 

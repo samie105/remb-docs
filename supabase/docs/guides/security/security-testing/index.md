@@ -10,7 +10,7 @@ content_hash: "921eaa5ebc8c5249845b1c96c9613d6f67cf1ada7a632c82d40ecf9f8d912c1a"
 menu_path: ["Security","Security","Product security","Product security","Security testing","Security testing"]
 section_path: ["Security","Security","Product security","Product security","Security testing","Security testing"]
 nav_prev: {"path": "supabase/docs/guides/security/product-security/index.md", "title": "Secure configuration of Supabase products"}
-nav_next: {"path": "supabase/docs/guides/self-hosting/copy-from-platform-s3/index.md", "title": "Copy Storage Objects from Platform"}
+nav_next: {"path": "supabase/docs/guides/security/soc-2-compliance/index.md", "title": "SOC 2 Compliance and Supabase"}
 ---
 
 # 

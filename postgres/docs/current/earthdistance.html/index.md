@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:47:40.239Z"
 content_hash: "7b158ce330ea25313c0e63384b360ea681640577a693f79cf14ba4cc9cf118ab"
 menu_path: ["PostgreSQL: Documentation: 18: F.14. earthdistance — calculate great-circle distances"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/functions-uuid.html/index.md", "title": "PostgreSQL: Documentation: 18: 9.14.\u00a0UUID Functions"}
-nav_next: {"path": "postgres/docs/current/btree.html/index.md", "title": "PostgreSQL: Documentation: 18: 65.1.\u00a0B-Tree Indexes"}
+nav_prev: {"path": "postgres/docs/current/dynamic-trace.html/index.md", "title": "PostgreSQL: Documentation: 18: 27.5.\u00a0Dynamic Tracing"}
+nav_next: {"path": "postgres/docs/current/ecpg-commands.html/index.md", "title": "PostgreSQL: Documentation: 18: 34.3.\u00a0Running SQL Commands"}
 ---
 
 Development Versions: [devel](https://www.postgresql.org/docs/devel/earthdistance.html "PostgreSQL devel - F.14. earthdistance — calculate great-circle distances")

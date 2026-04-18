@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:48:25.466Z"
 content_hash: "bda02bd7974b7d1b8e15e082ac49ba3d6640e0170026a1184e234019fb51aa44"
 menu_path: ["PostgreSQL: Documentation: 18: E.4. Release 18"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/pgbench.html/index.md", "title": "PostgreSQL: Documentation: 18: pgbench"}
-nav_next: {"path": "postgres/docs/current/locking-indexes.html/index.md", "title": "PostgreSQL: Documentation: 18: 13.7.\u00a0Locking and Indexes"}
+nav_prev: {"path": "postgres/docs/current/release-18-3.html/index.md", "title": "PostgreSQL: Documentation: 18: E.1.\u00a0Release 18.3"}
+nav_next: {"path": "postgres/docs/current/release-prior.html/index.md", "title": "PostgreSQL: Documentation: 18: E.5.\u00a0Prior Releases"}
 ---
 
 *   Increase the logging granularity of server variable [log\_connections](https://www.postgresql.org/docs/current/runtime-config-logging.html#GUC-LOG-CONNECTIONS) (Melanie Plageman) [§](https://postgr.es/c/9219093ca)

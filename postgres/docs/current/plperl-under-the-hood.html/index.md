@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:50:05.959Z"
 content_hash: "22dbbe96f467ffc86632e3fb57342dbb04118484926e9fd1ea6e8b84e6248ed6"
 menu_path: ["PostgreSQL: Documentation: 18: 43.8. PL/Perl Under the Hood"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/sql-vacuum.html/index.md", "title": "PostgreSQL: Documentation: 18: VACUUM"}
-nav_next: {"path": "postgres/docs/current/gssapi-auth.html/index.md", "title": "PostgreSQL: Documentation: 18: 20.6.\u00a0GSSAPI Authentication"}
+nav_prev: {"path": "postgres/docs/current/plperl-trusted.html/index.md", "title": "PostgreSQL: Documentation: 18: 43.5.\u00a0Trusted and Untrusted PL/Perl"}
+nav_next: {"path": "postgres/docs/current/plpgsql-control-structures.html/index.md", "title": "PostgreSQL: Documentation: 18: 41.6.\u00a0Control Structures"}
 ---
 
 Development Versions: [devel](https://www.postgresql.org/docs/devel/plperl-under-the-hood.html "PostgreSQL devel - 43.8. PL/Perl Under the Hood")

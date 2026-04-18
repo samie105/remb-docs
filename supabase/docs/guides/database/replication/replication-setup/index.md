@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:57:04.432Z"
 content_hash: "34ba106435fd775213e2c87dbae307b4e84d36249077a0f4093aad5c763d7d2b"
 menu_path: ["Database","Database","More","More","More","Replication","Replication","Setting up","Setting up"]
 section_path: ["Database","Database","More","More","More","Replication","Replication","Setting up","Setting up"]
-nav_prev: {"path": "supabase/docs/guides/deployment/branching/configuration/index.md", "title": "Configuration"}
-nav_next: {"path": "supabase/docs/guides/deployment/branching/dashboard/index.md", "title": "Branching via the dashboard"}
+nav_prev: {"path": "supabase/docs/guides/database/replication/replication-monitoring/index.md", "title": "Replication Monitoring"}
+nav_next: {"path": "supabase/docs/guides/database/secure-data/index.md", "title": "Securing your data"}
 ---
 
 # 

@@ -9,7 +9,7 @@ last_crawled_at: "2026-04-18T16:44:46.006Z"
 content_hash: "e899a4fac823db07c535ad1d8b43956eb7a1d1b1126a2ead08d08230da8e9046"
 menu_path: ["Failed to generate content types."]
 section_path: []
-nav_prev: {"path": "astro/en/reference/errors/font-family-not-found/index.md", "title": "Font family not found"}
+nav_prev: {"path": "astro/en/reference/errors/forbidden-rewrite/index.md", "title": "Forbidden rewrite to a static route."}
 nav_next: {"path": "astro/en/reference/errors/get-entry-deprecation-error/index.md", "title": "Invalid use of getDataEntryById or getEntryBySlug function."}
 ---
 

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:53:17.039Z"
 content_hash: "cce71e70be6df6e60c2e25062d5b55c168107ea6a40dc05127c8701a851b3af7"
 menu_path: ["PostgreSQL: Documentation: 18: F.49. uuid-ossp — a UUID generator"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/parallel-plans.html/index.md", "title": "PostgreSQL: Documentation: 18: 15.3.\u00a0Parallel Plans"}
-nav_next: {"path": "postgres/docs/current/functions-subquery.html/index.md", "title": "PostgreSQL: Documentation: 18: 9.24.\u00a0Subquery Expressions"}
+nav_prev: {"path": "postgres/docs/current/using-explain.html/index.md", "title": "PostgreSQL: Documentation: 18: 14.1.\u00a0Using EXPLAIN"}
+nav_next: {"path": "postgres/docs/current/vacuumlo.html/index.md", "title": "PostgreSQL: Documentation: 18: vacuumlo"}
 ---
 
 The `uuid-ossp` module provides functions to generate universally unique identifiers (UUIDs) using one of several standard algorithms. There are also functions to produce certain special UUID constants. This module is only necessary for special requirements beyond what is available in core PostgreSQL. See [Section 9.14](https://www.postgresql.org/docs/current/functions-uuid.html "9.14. UUID Functions") for built-in ways to generate UUIDs.

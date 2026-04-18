@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:34:13.335Z"
 content_hash: "1d303e28f4110ee8091359fbe6cdca4a1ed9a417dc05d60a2b8e0351f78db899"
 menu_path: ["PostgreSQL: Documentation: 18: 52.48. pg_shdepend"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/contrib-dblink-get-notify.html/index.md", "title": "PostgreSQL: Documentation: 18: dblink_get_notify"}
-nav_next: {"path": "postgres/docs/current/ecpg-sql-execute-immediate.html/index.md", "title": "PostgreSQL: Documentation: 18: EXECUTE IMMEDIATE"}
+nav_prev: {"path": "postgres/docs/current/catalog-pg-publication.html/index.md", "title": "PostgreSQL: Documentation: 18: 52.40.\u00a0pg_publication"}
+nav_next: {"path": "postgres/docs/current/catalog-pg-shdescription.html/index.md", "title": "PostgreSQL: Documentation: 18: 52.49.\u00a0pg_shdescription"}
 ---
 
 Development Versions: [devel](https://www.postgresql.org/docs/devel/catalog-pg-shdepend.html "PostgreSQL devel - 52.48. pg_shdepend")

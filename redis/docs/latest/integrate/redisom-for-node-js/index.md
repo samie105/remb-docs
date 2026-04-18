@@ -9,7 +9,7 @@ last_crawled_at: "2026-04-18T17:14:37.933Z"
 content_hash: "a4fedbffbb4ec57180f41efe844872918166ce22004e9ccc0c804915fa22af43"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        RedisOM for Node.js","→","RedisOM for Node.js"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        RedisOM for Node.js","→","RedisOM for Node.js"]
-nav_prev: {"path": "redis/docs/latest/integrate/redisom-for-java/index.md", "title": "RedisOM for Java"}
+nav_prev: {"path": "redis/docs/latest/integrate/redisom-for-net/index.md", "title": "RedisOM for .NET"}
 nav_next: {"path": "redis/docs/latest/integrate/redisom-for-python/index.md", "title": "RedisOM for Python"}
 ---
 

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:49:49.910Z"
 content_hash: "1ae72fe5633c80794a1132946583961c7878d557f3199523da2a80e68aab0605"
 menu_path: ["Realtime","Realtime","Usage","Usage","Settings","Settings"]
 section_path: ["Realtime","Realtime","Usage","Usage","Settings","Settings"]
-nav_prev: {"path": "supabase/docs/guides/realtime/realtime-with-nextjs/index.md", "title": "Using Realtime with Next.js"}
-nav_next: {"path": "supabase/docs/guides/realtime/reports/index.md", "title": "Realtime Reports"}
+nav_prev: {"path": "supabase/docs/guides/realtime/reports/index.md", "title": "Realtime Reports"}
+nav_next: {"path": "supabase/docs/guides/realtime/subscribing-to-database-changes/index.md", "title": "Subscribing to Database Changes"}
 ---
 
 # 

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:40:43.174Z"
 content_hash: "61be889edd147a43e1b799284aef14dca9312514a8f46a0b7ede91e018bcebb2"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        RedisVL","→","RedisVL","→\n      \n        User Guides","→","User Guides","→\n      \n        Getting Started with RedisVL","→","Getting Started with RedisVL"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        RedisVL","→","RedisVL","→\n      \n        User Guides","→","User Guides","→\n      \n        Getting Started with RedisVL","→","Getting Started with RedisVL"]
-nav_prev: {"path": "redis/docs/latest/develop/programmability/functions-intro/index.md", "title": "Redis functions"}
-nav_next: {"path": "redis/docs/latest/develop/data-types/probabilistic/hyperloglogs/index.md", "title": "HyperLogLog"}
+nav_prev: {"path": "redis/docs/latest/develop/ai/redisvl/user_guide/index.md", "title": "User Guides"}
+nav_next: {"path": "redis/docs/latest/develop/ai/redisvl/user_guide/hash_vs_json/index.md", "title": "Hash vs JSON Storage"}
 ---
 
 # Getting Started with RedisVL

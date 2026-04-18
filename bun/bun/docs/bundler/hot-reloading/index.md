@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:35:04.940Z"
 content_hash: "525a14476d702131bb5033e104e2fc99aa128f3eb73b2d2a691dc1ef2c13dfe8"
 menu_path: ["Hot reloading"]
 section_path: []
-nav_prev: {"path": "bun/bun/docs/bundler/html-static/index.md", "title": "HTML & static sites"}
-nav_next: {"path": "bun/bun/docs/bundler/index.md", "title": "Bundler"}
+nav_prev: {"path": "bun/bun/docs/bundler/fullstack/index.md", "title": "Fullstack dev server"}
+nav_next: {"path": "bun/bun/docs/bundler/html-static/index.md", "title": "HTML & static sites"}
 ---
 
 Hot Module Replacement (HMR) allows you to update modules in a running application without needing a full page reload. This preserves the application state and improves the development experience.

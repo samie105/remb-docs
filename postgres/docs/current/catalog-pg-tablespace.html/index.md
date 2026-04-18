@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:53:36.182Z"
 content_hash: "426e935a3ea5f869920f5fce2067ee61db9f4947f59e1c82bd011c2149bcbdd0"
 menu_path: ["PostgreSQL: Documentation: 18: 52.56. pg_tablespace"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/sql-droplanguage.html/index.md", "title": "PostgreSQL: Documentation: 18: DROP LANGUAGE"}
-nav_next: {"path": "postgres/docs/current/using-explain.html/index.md", "title": "PostgreSQL: Documentation: 18: 14.1.\u00a0Using EXPLAIN"}
+nav_prev: {"path": "postgres/docs/current/catalog-pg-subscription.html/index.md", "title": "PostgreSQL: Documentation: 18: 52.54.\u00a0pg_subscription"}
+nav_next: {"path": "postgres/docs/current/collation.html/index.md", "title": "PostgreSQL: Documentation: 18: 23.2.\u00a0Collation Support"}
 ---
 
 Development Versions: [devel](https://www.postgresql.org/docs/devel/catalog-pg-tablespace.html "PostgreSQL devel - 52.56. pg_tablespace")

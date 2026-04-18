@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:45:03.121Z"
 content_hash: "d6f47b9e2a6c4707bad55953fe38bf15fcdcd1bb8fb7da853ab0ea1daef4b9ab"
 menu_path: ["Edge Functions","Edge Functions","Getting started","Getting started","Quickstart (Dashboard)","Quickstart (Dashboard)"]
 section_path: ["Edge Functions","Edge Functions","Getting started","Getting started","Quickstart (Dashboard)","Quickstart (Dashboard)"]
-nav_prev: {"path": "supabase/docs/guides/functions/pricing/index.md", "title": "Pricing"}
-nav_next: {"path": "supabase/docs/guides/functions/quickstart/index.md", "title": "Getting Started with Edge Functions"}
+nav_prev: {"path": "supabase/docs/guides/functions/quickstart/index.md", "title": "Getting Started with Edge Functions"}
+nav_next: {"path": "supabase/docs/guides/functions/recursive-functions/index.md", "title": "Recursive / Nested Function Calls"}
 ---
 
 # 

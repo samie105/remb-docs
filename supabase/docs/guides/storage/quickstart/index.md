@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:51:06.232Z"
 content_hash: "e9b271872773c9d94d48840e99090493af1a4de4df92adc834e112bfceded062"
 menu_path: ["Storage","Storage","File Buckets","File Buckets","Quickstart","Quickstart"]
 section_path: ["Storage","Storage","File Buckets","File Buckets","Quickstart","Quickstart"]
-nav_prev: {"path": "supabase/docs/guides/storage/pricing/index.md", "title": "Pricing"}
-nav_next: {"path": "supabase/docs/guides/telemetry/log-drains/index.md", "title": "Log Drains"}
+nav_prev: {"path": "supabase/docs/guides/storage/production/scaling/index.md", "title": "Storage Optimizations"}
+nav_next: {"path": "supabase/docs/guides/storage/s3/authentication/index.md", "title": "S3 Authentication"}
 ---
 
 # 

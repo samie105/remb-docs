@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:56:41.980Z"
 content_hash: "77467d146d49c2fab63bc1d2ad3400fb03d520786496a0cdf79a77a732ff7778"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        Redis Search","→","Redis Search","→\n      \n        Best practices","→","Best practices","→\n      \n        Index management best practices for Redis Search","→","Index management best practices for Redis Search"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        Redis Search","→","Redis Search","→\n      \n        Best practices","→","Best practices","→\n      \n        Index management best practices for Redis Search","→","Index management best practices for Redis Search"]
-nav_prev: {"path": "redis/docs/latest/develop/tools/insight/copilot-faq/index.md", "title": "Redis Copilot FAQ"}
-nav_next: {"path": "redis/docs/latest/operate/rc/changelog/version-release-notes/8-4/index.md", "title": "Redis 8.4 release notes and breaking changes"}
+nav_prev: {"path": "redis/docs/latest/develop/ai/search-and-query/best-practices/dev-to-prod-best-practices/index.md", "title": "Move from Development to Production with Redis Search"}
+nav_next: {"path": "redis/docs/latest/develop/ai/search-and-query/best-practices/scalable-query-best-practices/index.md", "title": "Best practices for Redis Search performance"}
 ---
 
 # Index management best practices for Redis Search

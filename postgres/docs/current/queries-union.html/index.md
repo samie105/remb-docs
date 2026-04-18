@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:45:49.829Z"
 content_hash: "9a987f3dfb092e620dffb623b7b09d985d89977a3da668ede2c84205711a3f06"
 menu_path: ["PostgreSQL: Documentation: 18: 7.4. Combining Queries (UNION, INTERSECT, EXCEPT)"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/plpgsql-trigger.html/index.md", "title": "PostgreSQL: Documentation: 18: 41.10.\u00a0Trigger Functions"}
-nav_next: {"path": "postgres/docs/current/git.html/index.md", "title": "PostgreSQL: Documentation: 18: I.1.\u00a0Getting the Source via Git"}
+nav_prev: {"path": "postgres/docs/current/queries-select-lists.html/index.md", "title": "PostgreSQL: Documentation: 18: 7.3.\u00a0Select Lists"}
+nav_next: {"path": "postgres/docs/current/queries-values.html/index.md", "title": "PostgreSQL: Documentation: 18: 7.7.\u00a0VALUES Lists"}
 ---
 
 The results of two queries can be combined using the set operations union, intersection, and difference. The syntax is

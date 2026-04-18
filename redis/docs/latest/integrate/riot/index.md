@@ -10,7 +10,7 @@ content_hash: "374777973dc910de4865e6b19ed32740373c0c93450298e982a4a3fd4380ad6b"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        RIOT-X","→","RIOT-X"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        RIOT-X","→","RIOT-X"]
 nav_prev: {"path": "redis/docs/latest/integrate/redisvl/index.md", "title": "RedisVL"}
-nav_next: {"path": "redis/docs/latest/develop/ai/search-and-query/indexing/schema-definition/index.md", "title": "Schema definition"}
+nav_next: {"path": "redis/docs/latest/integrate/riot/docs/index.md", "title": "Documentation"}
 ---
 
 # RIOT-X

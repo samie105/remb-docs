@@ -9,7 +9,7 @@ last_crawled_at: "2026-04-18T16:42:50.782Z"
 content_hash: "7d5394bdc8ae7a6a9e3d89aba722f411cf035a8514125530185339a1a1bcdbd5"
 menu_path: ["Middlewares"]
 section_path: []
-nav_prev: {"path": "trpc/docs/v9/love/index.md", "title": "Testimonials / Love"}
+nav_prev: {"path": "trpc/docs/v9/metadata/index.md", "title": "Route Metadata"}
 nav_next: {"path": "trpc/docs/v9/nextjs/index.md", "title": "Usage with Next.js"}
 ---
 

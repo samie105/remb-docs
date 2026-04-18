@@ -10,7 +10,7 @@ content_hash: "5cbedc2a6bef21526e1fb2beae6d96f8370fb0004e4909a8fbb2db38b0e000ca"
 menu_path: ["Testing and linting"]
 section_path: []
 nav_prev: {"path": "supabase/docs/guides/local-development/cli/getting-started/index.md", "title": "Supabase CLI"}
-nav_next: {"path": "supabase/docs/guides/local-development/testing/overview/index.md", "title": "Testing Overview"}
+nav_next: {"path": "supabase/docs/guides/local-development/customizing-email-templates/index.md", "title": "Customizing email templates"}
 ---
 
 # 

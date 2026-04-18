@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:55:08.745Z"
 content_hash: "7917fc92ebeaf1a95faf7717b8ded0a37202f06e79242ab9792cd018f562e9fa"
 menu_path: ["Auth","Auth","Third-party auth","Third-party auth","Clerk","Clerk"]
 section_path: ["Auth","Auth","Third-party auth","Third-party auth","Clerk","Clerk"]
-nav_prev: {"path": "supabase/docs/guides/auth/third-party/auth0/index.md", "title": "Auth0"}
-nav_next: {"path": "supabase/docs/guides/auth/third-party/overview/index.md", "title": "Third-party auth"}
+nav_prev: {"path": "supabase/docs/guides/auth/third-party/aws-cognito/index.md", "title": "Amazon Cognito (Amplify)"}
+nav_next: {"path": "supabase/docs/guides/auth/third-party/firebase-auth/index.md", "title": "Firebase Auth"}
 ---
 
 # 

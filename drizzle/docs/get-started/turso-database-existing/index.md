@@ -10,7 +10,7 @@ content_hash: "2b11f24274bb74b9fc39b4d2e1e838f9e21aafd88ce3a63c71d746bfc821f584"
 menu_path: ["Get Started with Drizzle and Turso Database in existing project"]
 section_path: []
 nav_prev: {"path": "drizzle/docs/get-started/tidb-new/index.md", "title": "Get Started with Drizzle and TiDB"}
-nav_next: {"path": "drizzle/docs/get-started/turso-existing/index.md", "title": "Get Started with Drizzle and Turso Cloud in existing project"}
+nav_next: {"path": "drizzle/docs/get-started/turso-database-new/index.md", "title": "Get Started with Drizzle and Turso Database"}
 ---
 
 ## Get Started with Drizzle and Turso Database in existing project

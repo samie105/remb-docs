@@ -10,7 +10,7 @@ content_hash: "f4a76f95b882d99bcafa79465bc5073510e75fb94377c31c6ab062479b9eda0d"
 menu_path: ["Context"]
 section_path: []
 nav_prev: {"path": "trpc/docs/server/caching/index.md", "title": "Response Caching"}
-nav_next: {"path": "trpc/docs/server/error-formatting/index.md", "title": "Error Formatting"}
+nav_next: {"path": "trpc/docs/server/data-transformers/index.md", "title": "Data Transformers"}
 ---
 
 Your context holds data that all of your tRPC procedures will have access to, and is a great place to put things like authentication information.

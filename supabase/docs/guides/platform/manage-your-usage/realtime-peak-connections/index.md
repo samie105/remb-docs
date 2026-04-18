@@ -10,7 +10,7 @@ content_hash: "1da45d24da7146c089b58902fb562dbb725644a753bb3147ce34bb96bd7504b6"
 menu_path: ["Platform","Platform","More","More","More","Manage your usage","Manage your usage","Realtime Peak Connections","Realtime Peak Connections"]
 section_path: ["Platform","Platform","More","More","More","Manage your usage","Manage your usage","Realtime Peak Connections","Realtime Peak Connections"]
 nav_prev: {"path": "supabase/docs/guides/platform/manage-your-usage/realtime-messages/index.md", "title": "Manage Realtime Messages usage"}
-nav_next: {"path": "supabase/docs/guides/platform/mfa/org-mfa-enforcement/index.md", "title": "Enforce MFA on Organization"}
+nav_next: {"path": "supabase/docs/guides/platform/manage-your-usage/storage-size/index.md", "title": "Manage Storage size usage"}
 ---
 
 # 

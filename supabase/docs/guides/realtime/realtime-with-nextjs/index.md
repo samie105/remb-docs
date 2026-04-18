@@ -10,7 +10,7 @@ content_hash: "bed1ce3e981ca745710bfe4e44530481c885467dee25f8da7091e553ec234f8f"
 menu_path: ["Realtime","Realtime","Guides","Guides","Using Realtime with Next.js","Using Realtime with Next.js"]
 section_path: ["Realtime","Realtime","Guides","Guides","Using Realtime with Next.js","Using Realtime with Next.js"]
 nav_prev: {"path": "supabase/docs/guides/realtime/realtime-user-presence/index.md", "title": "Using Realtime Presence with Flutter"}
-nav_next: {"path": "supabase/docs/guides/realtime/settings/index.md", "title": "Settings"}
+nav_next: {"path": "supabase/docs/guides/realtime/reports/index.md", "title": "Realtime Reports"}
 ---
 
 # 

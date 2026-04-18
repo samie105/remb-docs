@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:47:46.737Z"
 content_hash: "a89f94412443ec1d31572a91fc713357d7ed7874ed8f420f3a2d9ce80295b756"
 menu_path: ["PostgreSQL: Documentation: 18: 35.38. role_udt_grants"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/ecpg-sql-declare.html/index.md", "title": "PostgreSQL: Documentation: 18: DECLARE"}
-nav_next: {"path": "postgres/docs/current/textsearch-parsers.html/index.md", "title": "PostgreSQL: Documentation: 18: 12.5.\u00a0Parsers"}
+nav_prev: {"path": "postgres/docs/current/infoschema-role-table-grants.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.37.\u00a0role_table_grants"}
+nav_next: {"path": "postgres/docs/current/infoschema-role-usage-grants.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.39.\u00a0role_usage_grants"}
 ---
 
 Development Versions: [devel](https://www.postgresql.org/docs/devel/infoschema-role-udt-grants.html "PostgreSQL devel - 35.38. role_udt_grants")

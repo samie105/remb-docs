@@ -10,7 +10,7 @@ content_hash: "9102c929f5953a8eb5d2fb181bc85b80d586a91180575ee0c73d9894af65dfcb"
 menu_path: ["REPL"]
 section_path: []
 nav_prev: {"path": "bun/bun/docs/runtime/redis/index.md", "title": "Redis"}
-nav_next: {"path": "bun/bun/docs/runtime/secrets/index.md", "title": "Secrets"}
+nav_next: {"path": "bun/bun/docs/runtime/s3/index.md", "title": "S3"}
 ---
 
 # 42

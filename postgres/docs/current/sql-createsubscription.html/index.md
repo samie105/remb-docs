@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:32:52.300Z"
 content_hash: "db516e336480ab49e3900944651ae6c01fd922bdd8afdb29cf77275e2ea79608"
 menu_path: ["PostgreSQL: Documentation: 18: CREATE SUBSCRIPTION"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/gist.html/index.md", "title": "PostgreSQL: Documentation: 18: 65.2.\u00a0GiST Indexes"}
-nav_next: {"path": "postgres/docs/current/sql-set-role.html/index.md", "title": "PostgreSQL: Documentation: 18: SET ROLE"}
+nav_prev: {"path": "postgres/docs/current/sql-createstatistics.html/index.md", "title": "PostgreSQL: Documentation: 18: CREATE STATISTICS"}
+nav_next: {"path": "postgres/docs/current/sql-createtableas.html/index.md", "title": "PostgreSQL: Documentation: 18: CREATE TABLE AS"}
 ---
 
 CREATE SUBSCRIPTION — define a new subscription

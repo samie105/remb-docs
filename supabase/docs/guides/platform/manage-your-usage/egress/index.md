@@ -10,7 +10,7 @@ content_hash: "110ca542d0335d10c1a233572789362d57a381efeb388987a90708c7f73b641e"
 menu_path: ["Platform","Platform","More","More","More","Manage your usage","Manage your usage","Egress","Egress"]
 section_path: ["Platform","Platform","More","More","More","Manage your usage","Manage your usage","Egress","Egress"]
 nav_prev: {"path": "supabase/docs/guides/platform/manage-your-usage/edge-function-invocations/index.md", "title": "Manage Edge Function Invocations usage"}
-nav_next: {"path": "supabase/docs/guides/platform/manage-your-usage/log-drains/index.md", "title": "Manage Log Drain usage"}
+nav_next: {"path": "supabase/docs/guides/platform/manage-your-usage/ipv4/index.md", "title": "Manage IPv4 usage"}
 ---
 
 # 

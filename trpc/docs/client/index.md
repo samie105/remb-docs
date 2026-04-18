@@ -9,7 +9,7 @@ last_crawled_at: "2026-04-18T16:44:28.996Z"
 content_hash: "876b6723937b2287c92decf47ed9796e88f63d1493b6b0e9d4300a366a1ddc71"
 menu_path: ["tRPC Client"]
 section_path: []
-nav_prev: {"path": "trpc/docs/v9/vanilla/index.md", "title": "Vanilla client"}
+nav_prev: {"path": "trpc/docs/example-apps/index.md", "title": "Example Apps"}
 nav_next: {"path": "trpc/docs/client/cors/index.md", "title": "Send cookies cross-origin"}
 ---
 

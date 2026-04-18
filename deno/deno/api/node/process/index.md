@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:39:07.118Z"
 content_hash: "6c06ade3bfcc2f55d544d4bcf5f200ff6e5ada1b475683f46b4d1273681d0dd0"
 menu_path: ["process - Node documentation"]
 section_path: []
-nav_prev: {"path": "deno/deno/api/node/querystring/index.md", "title": "querystring - Node documentation"}
-nav_next: {"path": "deno/deno/api/node/readline/index.md", "title": "readline - Node documentation"}
+nav_prev: {"path": "deno/deno/api/node/perf_hooks/index.md", "title": "perf_hooks - Node documentation"}
+nav_next: {"path": "deno/deno/api/node/punycode/index.md", "title": "punycode - Node documentation"}
 ---
 
 ### Usage in Deno

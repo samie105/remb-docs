@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:55:11.145Z"
 content_hash: "0cb12ba8a1e6ef83f7770745c458862cb221f11b39eba312f07fcdbc5e18426e"
 menu_path: ["Configure Prisma Client with PgBouncer"]
 section_path: []
-nav_prev: {"path": "prisma/docs/orm/prisma-client/setup-and-configuration/databases-connections/index.md", "title": "Database connections"}
-nav_next: {"path": "prisma/docs/orm/prisma-schema/data-model/relations/index.md", "title": "Relations"}
+nav_prev: {"path": "prisma/docs/orm/prisma-client/setup-and-configuration/databases-connections/connection-pool/index.md", "title": "Connection pool"}
+nav_next: {"path": "prisma/docs/orm/prisma-client/setup-and-configuration/error-formatting/index.md", "title": "Configuring error formatting"}
 ---
 
 # PgBouncer (pooled) connection string used by Prisma Client.

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:58:03.796Z"
 content_hash: "fbe6a03d3371be92f06aff4704b321560ae5e1bddbeae13b5861d08cc1d112d6"
 menu_path: ["Edge Functions","Edge Functions","Examples","Examples","Handling Stripe Webhooks","Handling Stripe Webhooks"]
 section_path: ["Edge Functions","Edge Functions","Examples","Examples","Handling Stripe Webhooks","Handling Stripe Webhooks"]
-nav_prev: {"path": "supabase/docs/guides/getting-started/quickstarts/astrojs/index.md", "title": "Use Supabase with Astro"}
-nav_next: {"path": "supabase/docs/guides/getting-started/quickstarts/expo-react-native/index.md", "title": "Use Supabase with Expo React Native"}
+nav_prev: {"path": "supabase/docs/guides/functions/examples/slack-bot-mention/index.md", "title": "Slack Bot Mention Edge Function"}
+nav_next: {"path": "supabase/docs/guides/functions/examples/telegram-bot/index.md", "title": "Building a Telegram Bot"}
 ---
 
 # 

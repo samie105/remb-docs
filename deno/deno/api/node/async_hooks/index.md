@@ -9,7 +9,7 @@ last_crawled_at: "2026-04-18T16:32:58.642Z"
 content_hash: "326d51ea472b57473034f2b671db6cebf4cefdc4eebb87f6959a7a849989cdd9"
 menu_path: ["async_hooks - Node documentation"]
 section_path: []
-nav_prev: {"path": "deno/deno/api/node/index.md", "title": "Node.js Built-in APIs"}
+nav_prev: {"path": "deno/deno/api/node/assert/strict/index.md", "title": "namespace assert.strict"}
 nav_next: {"path": "deno/deno/api/node/buffer/index.md", "title": "buffer - Node documentation"}
 ---
 

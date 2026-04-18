@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:47:53.106Z"
 content_hash: "3ece95f5665b0391c67da3816890d3e9143938806e56a758ac6e531429ff269d"
 menu_path: ["PostgreSQL: Documentation: 18: 52.40. pg_publication"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/sql-comment.html/index.md", "title": "PostgreSQL: Documentation: 18: COMMENT"}
-nav_next: {"path": "postgres/docs/current/ecpg-variables.html/index.md", "title": "PostgreSQL: Documentation: 18: 34.4.\u00a0Using Host Variables"}
+nav_prev: {"path": "postgres/docs/current/catalog-pg-publication-rel.html/index.md", "title": "PostgreSQL: Documentation: 18: 52.42.\u00a0pg_publication_rel"}
+nav_next: {"path": "postgres/docs/current/catalog-pg-shdepend.html/index.md", "title": "PostgreSQL: Documentation: 18: 52.48.\u00a0pg_shdepend"}
 ---
 
 The catalog `pg_publication` contains all publications created in the database. For more on publications see [Section 29.1](https://www.postgresql.org/docs/current/logical-replication-publication.html "29.1. Publication").

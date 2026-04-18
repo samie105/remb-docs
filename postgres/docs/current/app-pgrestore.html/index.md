@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:42:54.281Z"
 content_hash: "036cdbf1f579ffcd17c790a3e9d4a5af99dd8fb4a3bfab52ccab641777d6883b"
 menu_path: ["PostgreSQL: Documentation: 18: pg_restore"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/bloom.html/index.md", "title": "PostgreSQL: Documentation: 18: F.6.\u00a0bloom \u2014 bloom filter index access method"}
-nav_next: {"path": "postgres/docs/current/release-18-1.html/index.md", "title": "PostgreSQL: Documentation: 18: E.3.\u00a0Release 18.1"}
+nav_prev: {"path": "postgres/docs/current/app-pgresetxlog.html/index.md", "title": "PostgreSQL: Documentation: 18: O.4.\u00a0pg_resetxlog renamed to pg_resetwal"}
+nav_next: {"path": "postgres/docs/current/app-pgrewind.html/index.md", "title": "PostgreSQL: Documentation: 18: pg_rewind"}
 ---
 
 pg\_restore accepts the following command line arguments.

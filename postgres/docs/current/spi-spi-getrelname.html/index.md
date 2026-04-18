@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:39:41.412Z"
 content_hash: "df3b528a705c7a37f78e75c281ecb00434db4dab0730c9e0c85dad82934ae602"
 menu_path: ["PostgreSQL: Documentation: 18: SPI_getrelname"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/catalog-pg-shdescription.html/index.md", "title": "PostgreSQL: Documentation: 18: 52.49.\u00a0pg_shdescription"}
-nav_next: {"path": "postgres/docs/current/sql-altergroup.html/index.md", "title": "PostgreSQL: Documentation: 18: ALTER GROUP"}
+nav_prev: {"path": "postgres/docs/current/spi-spi-getnspname.html/index.md", "title": "PostgreSQL: Documentation: 18: SPI_getnspname"}
+nav_next: {"path": "postgres/docs/current/spi-spi-gettype.html/index.md", "title": "PostgreSQL: Documentation: 18: SPI_gettype"}
 ---
 
 February 26, 2026: [PostgreSQL 18.3, 17.9, 16.13, 15.17, and 14.22 Released!](/about/news/postgresql-183-179-1613-1517-and-1422-released-3246/)

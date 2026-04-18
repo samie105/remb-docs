@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:38:36.011Z"
 content_hash: "426b6e79963489baa8840e58255e6298e246d83d17ebaffaf42c9695f6acbe84"
 menu_path: ["PostgreSQL: Documentation: 18: 19.5. Write Ahead Log"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/rules-status.html/index.md", "title": "PostgreSQL: Documentation: 18: 39.6.\u00a0Rules and Command Status"}
-nav_next: {"path": "postgres/docs/current/textsearch-limitations.html/index.md", "title": "PostgreSQL: Documentation: 18: 12.11.\u00a0Limitations"}
+nav_prev: {"path": "postgres/docs/current/runtime-config-vacuum.html/index.md", "title": "PostgreSQL: Documentation: 18: 19.10.\u00a0Vacuuming"}
+nav_next: {"path": "postgres/docs/current/sasl-authentication.html/index.md", "title": "PostgreSQL: Documentation: 18: 54.3.\u00a0SASL Authentication"}
 ---
 
 `wal_level` (`enum`) [#](#GUC-WAL-LEVEL)

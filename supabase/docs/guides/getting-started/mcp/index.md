@@ -10,7 +10,7 @@ content_hash: "ddca93aeeca1c900d0c72b3f06d428771df6cdd1b3d80c76d634aa3fa08096dd"
 menu_path: ["Start with Supabase","Start with Supabase","AI Tools","AI Tools","Supabase MCP server","Supabase MCP server"]
 section_path: ["Start with Supabase","Start with Supabase","AI Tools","AI Tools","Supabase MCP server","Supabase MCP server"]
 nav_prev: {"path": "supabase/docs/guides/getting-started/features/index.md", "title": "Features"}
-nav_next: {"path": "supabase/docs/guides/integrations/build-a-supabase-oauth-integration/index.md", "title": "Build a Supabase Integration"}
+nav_next: {"path": "supabase/docs/guides/getting-started/quickstarts/astrojs/index.md", "title": "Use Supabase with Astro"}
 ---
 
 # 

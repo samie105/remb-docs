@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:53:27.761Z"
 content_hash: "84f4529917bbd30f6903d5303c2136d97597ab592cc4e95b98d8cd821062f549"
 menu_path: ["PostgreSQL: Documentation: 18: 36.17. Packaging Related Objects into an Extension"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/geqo-intro.html/index.md", "title": "PostgreSQL: Documentation: 18: 61.1.\u00a0Query Handling as a Complex Optimization Problem"}
-nav_next: {"path": "postgres/docs/current/infoschema-sql-features.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.48.\u00a0sql_features"}
+nav_prev: {"path": "postgres/docs/current/explicit-locking.html/index.md", "title": "PostgreSQL: Documentation: 18: 13.3.\u00a0Explicit Locking"}
+nav_next: {"path": "postgres/docs/current/extend-type-system.html/index.md", "title": "PostgreSQL: Documentation: 18: 36.2.\u00a0The PostgreSQL Type System"}
 ---
 
 # cannot be relocatable because of use of @extschema@

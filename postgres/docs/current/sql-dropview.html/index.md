@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:33:12.682Z"
 content_hash: "62974256be4b8e1197f72de02209a1e12080fe86c27cfde034290d8ab3fbec0e"
 menu_path: ["PostgreSQL: Documentation: 18: DROP VIEW"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/pgtesttiming.html/index.md", "title": "PostgreSQL: Documentation: 18: pg_test_timing"}
-nav_next: {"path": "postgres/docs/current/view-pg-rules.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.22.\u00a0pg_rules"}
+nav_prev: {"path": "postgres/docs/current/sql-droptsparser.html/index.md", "title": "PostgreSQL: Documentation: 18: DROP TEXT SEARCH PARSER"}
+nav_next: {"path": "postgres/docs/current/sql-end.html/index.md", "title": "PostgreSQL: Documentation: 18: END"}
 ---
 
 DROP VIEW — remove a view

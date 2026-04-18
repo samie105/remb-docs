@@ -9,7 +9,7 @@ last_crawled_at: "2026-04-18T16:49:51.363Z"
 content_hash: "4042d6e308d3e7972c22047b0c4c1b21bb1e44773fef4feef857a68bd4422301"
 menu_path: ["Error Handling"]
 section_path: []
-nav_prev: {"path": "trpc/docs/server/data-transformers/index.md", "title": "Data Transformers"}
+nav_prev: {"path": "trpc/docs/server/error-formatting/index.md", "title": "Error Formatting"}
 nav_next: {"path": "trpc/docs/server/merging-routers/index.md", "title": "Merging Routers"}
 ---
 

@@ -9,7 +9,7 @@ last_crawled_at: "2026-04-18T16:47:31.251Z"
 content_hash: "0c25d5fe88e267aac35d65b19ffbfab7c4afd5ef7477bd134597b76629c8e5c1"
 menu_path: ["Configuring error formatting"]
 section_path: []
-nav_prev: {"path": "prisma/docs/orm/prisma-client/queries/transactions/index.md", "title": "Transactions and batch queries"}
+nav_prev: {"path": "prisma/docs/orm/prisma-client/setup-and-configuration/databases-connections/pgbouncer/index.md", "title": "Configure Prisma Client with PgBouncer"}
 nav_next: {"path": "prisma/docs/orm/prisma-client/setup-and-configuration/introduction/index.md", "title": "Introduction to Prisma Client"}
 ---
 

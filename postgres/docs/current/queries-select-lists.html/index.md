@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:33:26.610Z"
 content_hash: "277f5e230b955900b1cbf8443563d3e72057cef0e66c4fe7c4b3a7289b7bd6fd"
 menu_path: ["PostgreSQL: Documentation: 18: 7.3. Select Lists"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/sql-createtype.html/index.md", "title": "PostgreSQL: Documentation: 18: CREATE TYPE"}
-nav_next: {"path": "postgres/docs/current/infoschema-domains.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.23.\u00a0domains"}
+nav_prev: {"path": "postgres/docs/current/queries-overview.html/index.md", "title": "PostgreSQL: Documentation: 18: 7.1.\u00a0Overview"}
+nav_next: {"path": "postgres/docs/current/queries-union.html/index.md", "title": "PostgreSQL: Documentation: 18: 7.4.\u00a0Combining Queries (UNION, INTERSECT, EXCEPT)"}
 ---
 
 As shown in the previous section, the table expression in the `SELECT` command constructs an intermediate virtual table by possibly combining tables, views, eliminating rows, grouping, etc. This table is finally passed on to processing by the _select list_. The select list determines which _columns_ of the intermediate table are actually output.

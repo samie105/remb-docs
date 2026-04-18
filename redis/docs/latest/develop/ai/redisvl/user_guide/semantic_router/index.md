@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:13:09.739Z"
 content_hash: "035e10526162cb22b400ea890980561f1d01f824464b0f907da23a4b5e742d50"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        RedisVL","→","RedisVL","→\n      \n        User Guides","→","User Guides","→\n      \n        Semantic Routing","→","Semantic Routing"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        RedisVL","→","RedisVL","→\n      \n        User Guides","→","User Guides","→\n      \n        Semantic Routing","→","Semantic Routing"]
-nav_prev: {"path": "redis/docs/latest/develop/use-cases/session-store/rust/index.md", "title": "Redis session store with Rust"}
-nav_next: {"path": "redis/docs/latest/operate/oss_and_stack/reference/signals/index.md", "title": "Redis signal handling"}
+nav_prev: {"path": "redis/docs/latest/develop/ai/redisvl/user_guide/rerankers/index.md", "title": "Rerankers"}
+nav_next: {"path": "redis/docs/latest/develop/ai/redisvl/user_guide/session_manager/index.md", "title": "LLM Session Memory"}
 ---
 
 # Semantic Routing

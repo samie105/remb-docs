@@ -10,7 +10,7 @@ content_hash: "78df0d8f90c28d2221d48a6485090e36efcf5bef55bfae8ec52a08e0967b6313"
 menu_path: ["Database","Database","Working with your database (intermediate)","Working with your database (intermediate)","Managing database webhooks","Managing database webhooks"]
 section_path: ["Database","Database","Working with your database (intermediate)","Working with your database (intermediate)","Managing database webhooks","Managing database webhooks"]
 nav_prev: {"path": "supabase/docs/guides/database/vault/index.md", "title": "Vault"}
-nav_next: {"path": "supabase/docs/guides/deployment/going-into-prod/index.md", "title": "Production Checklist"}
+nav_next: {"path": "supabase/docs/guides/deployment/index.md", "title": "Deployment & Branching"}
 ---
 
 # 

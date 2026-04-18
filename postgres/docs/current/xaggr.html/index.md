@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:40:18.551Z"
 content_hash: "30d050949c89083ca9a3c5633f1637554b1d053d130ea42b5ed55cca0b0c275f"
 menu_path: ["PostgreSQL: Documentation: 18: 36.12. User-Defined Aggregates"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/sql-move.html/index.md", "title": "PostgreSQL: Documentation: 18: MOVE"}
-nav_next: {"path": "postgres/docs/current/view-pg-prepared-xacts.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.17.\u00a0pg_prepared_xacts"}
+nav_prev: {"path": "postgres/docs/current/xact-locking.html/index.md", "title": "PostgreSQL: Documentation: 18: 67.2.\u00a0Transactions and Locking"}
+nav_next: {"path": "postgres/docs/current/xfunc-pl.html/index.md", "title": "PostgreSQL: Documentation: 18: 36.8.\u00a0Procedural Language Functions"}
 ---
 
 Aggregate functions in PostgreSQL are defined in terms of _state values_ and _state transition functions_. That is, an aggregate operates using a state value that is updated as each successive input row is processed. To define a new aggregate function, one selects a data type for the state value, an initial value for the state, and a state transition function. The state transition function takes the previous state value and the aggregate's input value(s) for the current row, and returns a new state value. A _final function_ can also be specified, in case the desired result of the aggregate is different from the data that needs to be kept in the running state value. The final function takes the ending state value and returns whatever is wanted as the aggregate result. In principle, the transition and final functions are just ordinary functions that could also be used outside the context of the aggregate. (In practice, it's often helpful for performance reasons to create specialized transition functions that can only work when called as part of an aggregate.)

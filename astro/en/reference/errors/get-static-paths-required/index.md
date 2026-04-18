@@ -9,7 +9,7 @@ last_crawled_at: "2026-04-18T16:44:54.253Z"
 content_hash: "fd7e067ce13297a1700e452c0a08a410a78ea79c24b00b63dc8b4f146484de2b"
 menu_path: ["getStaticPaths() function required for dynamic routes."]
 section_path: []
-nav_prev: {"path": "astro/en/reference/errors/get-static-paths-invalid-route-param/index.md", "title": "Invalid route parameter returned by getStaticPaths()."}
+nav_prev: {"path": "astro/en/reference/errors/get-static-paths-removed-rsshelper/index.md", "title": "getStaticPaths RSS helper is not available anymore."}
 nav_next: {"path": "astro/en/reference/errors/i18n-no-locale-found-in-path/index.md", "title": "The path doesn't contain any locale"}
 ---
 

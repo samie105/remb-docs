@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:41:09.462Z"
 content_hash: "258eb0fbd1eca9ff94192c582fcfe3f4d4545b42919fd499172e42713be9e6f7"
 menu_path: ["PostgreSQL: Documentation: 18: 11.12. Examining Index Usage"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/indexes-opclass.html/index.md", "title": "PostgreSQL: Documentation: 18: 11.10.\u00a0Operator Classes and Operator Families"}
-nav_next: {"path": "postgres/docs/current/infoschema-foreign-tables.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.31.\u00a0foreign_tables"}
+nav_prev: {"path": "postgres/docs/current/index-unique-checks.html/index.md", "title": "PostgreSQL: Documentation: 18: 63.5.\u00a0Index Uniqueness Checks"}
+nav_next: {"path": "postgres/docs/current/indexes-expressional.html/index.md", "title": "PostgreSQL: Documentation: 18: 11.7.\u00a0Indexes on Expressions"}
 ---
 
 Although indexes in PostgreSQL do not need maintenance or tuning, it is still important to check which indexes are actually used by the real-life query workload. Examining index usage for an individual query is done with the [EXPLAIN](https://www.postgresql.org/docs/current/sql-explain.html "EXPLAIN") command; its application for this purpose is illustrated in [Section 14.1](https://www.postgresql.org/docs/current/using-explain.html "14.1. Using EXPLAIN"). It is also possible to gather overall statistics about index usage in a running server, as described in [Section 27.2](https://www.postgresql.org/docs/current/monitoring-stats.html "27.2. The Cumulative Statistics System").

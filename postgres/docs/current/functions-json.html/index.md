@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:47:19.789Z"
 content_hash: "b7d09a46d33581f6f91b47274a71493f9d747bc02ec87dfcf25b7c6c04cf7f72"
 menu_path: ["PostgreSQL: Documentation: 18: 9.16. JSON Functions and Operators"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/xindex.html/index.md", "title": "PostgreSQL: Documentation: 18: 36.16.\u00a0Interfacing Extensions to Indexes"}
-nav_next: {"path": "postgres/docs/current/pltcl-global.html/index.md", "title": "PostgreSQL: Documentation: 18: 42.4.\u00a0Global Data in PL/Tcl"}
+nav_prev: {"path": "postgres/docs/current/functions-info.html/index.md", "title": "PostgreSQL: Documentation: 18: 9.27.\u00a0System Information Functions and Operators"}
+nav_next: {"path": "postgres/docs/current/functions-logical.html/index.md", "title": "PostgreSQL: Documentation: 18: 9.1.\u00a0Logical Operators"}
 ---
 
 `json_array_elements` ( `json` ) → `setof json`

@@ -10,7 +10,7 @@ content_hash: "e4be1626a9436f8b8a920795b79216e73d39d2c0bba08e26be6290d0bdabf49c"
 menu_path: ["Getting Started"]
 section_path: []
 nav_prev: {"path": "supabase/docs/index.md", "title": "Supabase Documentation"}
-nav_next: {"path": "supabase/docs/guides/api/index.md", "title": "Data REST API"}
+nav_next: {"path": "supabase/docs/guides/ai/index.md", "title": "AI & Vectors"}
 ---
 
 # 

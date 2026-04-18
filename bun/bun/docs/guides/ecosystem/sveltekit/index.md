@@ -9,7 +9,7 @@ last_crawled_at: "2026-04-18T16:46:45.867Z"
 content_hash: "4c6316e34d4c07e4548f15ef402bdd012477970153039c94e0f3db84ba48d2e1"
 menu_path: ["Build an app with SvelteKit and Bun"]
 section_path: []
-nav_prev: {"path": "bun/bun/docs/guides/ecosystem/ssr-react/index.md", "title": "Server-side render (SSR) a React component"}
+nav_prev: {"path": "bun/bun/docs/guides/ecosystem/stric/index.md", "title": "Build an HTTP server using StricJS and Bun"}
 nav_next: {"path": "bun/bun/docs/guides/ecosystem/systemd/index.md", "title": "Run Bun as a daemon with systemd"}
 ---
 

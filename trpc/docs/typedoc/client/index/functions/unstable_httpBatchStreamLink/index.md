@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:51:45.745Z"
 content_hash: "480635f3b9fa1512326990ec94cc78d1530bf5d2760012fca41d75908650357e"
 menu_path: ["Function: unstable_httpBatchStreamLink()"]
 section_path: []
-nav_prev: {"path": "trpc/docs/typedoc/client/index/functions/isTRPCClientError/index.md", "title": "Function: isTRPCClientError()"}
-nav_next: {"path": "trpc/docs/typedoc/client/index/functions/unstable_localLink/index.md", "title": "Function: unstable_localLink()"}
+nav_prev: {"path": "trpc/docs/typedoc/client/index/functions/retryLink/index.md", "title": "Function: retryLink()"}
+nav_next: {"path": "trpc/docs/typedoc/client/index/functions/unstable_httpSubscriptionLink/index.md", "title": "Function: unstable_httpSubscriptionLink()"}
 ---
 
 > **unstable\_httpBatchStreamLink**<`TRouter`\>(`opts`): [`TRPCLink`](trpc/docs/typedoc/client/index/type-aliases/TRPCLink/index.md)<`TRouter`\>

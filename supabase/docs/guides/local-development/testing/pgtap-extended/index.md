@@ -10,7 +10,7 @@ content_hash: "a969cc2afbefc84ddc5884e0554c59e8435532728150c88af1ddf7846f4eae3f"
 menu_path: ["Local Dev / CLI","Local Dev / CLI","Testing","Testing","pgTAP advanced guide","pgTAP advanced guide"]
 section_path: ["Local Dev / CLI","Local Dev / CLI","Testing","Testing","pgTAP advanced guide","pgTAP advanced guide"]
 nav_prev: {"path": "supabase/docs/guides/local-development/testing/overview/index.md", "title": "Testing Overview"}
-nav_next: {"path": "supabase/docs/guides/platform/aws-marketplace/account-setup/index.md", "title": "Account Setup"}
+nav_next: {"path": "supabase/docs/guides/platform/index.md", "title": "Supabase Platform"}
 ---
 
 # 

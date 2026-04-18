@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:35:40.801Z"
 content_hash: "24f0f8c0b169e1101ccaf8e21ec45fc022e9ffc66aa470f2b5b08bbd2be96edf"
 menu_path: ["MySQL column types"]
 section_path: []
-nav_prev: {"path": "drizzle/docs/column-types/singlestore/index.md", "title": "SingleStore column types"}
-nav_next: {"path": "drizzle/docs/column-types/sqlite/index.md", "title": "SQLite column types"}
+nav_prev: {"path": "drizzle/docs/column-types/mssql/index.md", "title": "MSSQL column types"}
+nav_next: {"path": "drizzle/docs/column-types/singlestore/index.md", "title": "SingleStore column types"}
 ---
 
 We have native support for all of them, yet if that’s not enough for you, feel free to create **[custom types](drizzle/docs/custom-types/index.md)**.

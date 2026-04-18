@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:49:44.092Z"
 content_hash: "267c104671b1fa82783cc87388827d7982152488911e5e1e005f6384669fc480"
 menu_path: ["PostgreSQL: Documentation: 18: 35.42. routine_routine_usage"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/query-path.html/index.md", "title": "PostgreSQL: Documentation: 18: 51.1.\u00a0The Path of a Query"}
-nav_next: {"path": "postgres/docs/current/external-interfaces.html/index.md", "title": "PostgreSQL: Documentation: 18: H.1.\u00a0Client Interfaces"}
+nav_prev: {"path": "postgres/docs/current/infoschema-routine-privileges.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.41.\u00a0routine_privileges"}
+nav_next: {"path": "postgres/docs/current/infoschema-routine-sequence-usage.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.43.\u00a0routine_sequence_usage"}
 ---
 
 Development Versions: [devel](https://www.postgresql.org/docs/devel/infoschema-routine-routine-usage.html "PostgreSQL devel - 35.42. routine_routine_usage")

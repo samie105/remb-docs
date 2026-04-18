@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:58:42.522Z"
 content_hash: "ebcb1b94be026209a71a5dece43af46abced0d252ea7dc13372569c33d04744b"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Redis Open Source and Redis Software","→","Redis Open Source and Redis Software","→\n      \n        Install and upgrade modules","→","Install and upgrade modules"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Redis Open Source and Redis Software","→","Redis Open Source and Redis Software","→\n      \n        Install and upgrade modules","→","Install and upgrade modules"]
-nav_prev: {"path": "redis/docs/latest/develop/use-cases/time-series-dashboard/go/index.md", "title": "Rolling sensor graph demo with Go"}
-nav_next: {"path": "redis/docs/latest/operate/oss_and_stack/management/sentinel/index.md", "title": "High availability with Redis Sentinel"}
+nav_prev: {"path": "redis/docs/latest/operate/oss_and_stack/stack-with-enterprise/enterprise-capabilities/index.md", "title": "Redis Software and Redis Open Source feature compatibility"}
+nav_next: {"path": "redis/docs/latest/operate/oss_and_stack/stack-with-enterprise/modules-lifecycle/index.md", "title": "Module lifecycle"}
 ---
 
 # Install and upgrade modules

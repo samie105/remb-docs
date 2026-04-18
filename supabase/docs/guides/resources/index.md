@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:32:42.558Z"
 content_hash: "bacdb3ad85259c983e777ce8a49d2803c95b69531cf0931ba85f6cb99d24f7c9"
 menu_path: ["Resources"]
 section_path: []
-nav_prev: {"path": "supabase/docs/guides/security/index.md", "title": "Supabase Security"}
-nav_next: {"path": "supabase/docs/guides/self-hosting/index.md", "title": "Self-Hosting"}
+nav_prev: {"path": "supabase/docs/guides/realtime/subscribing-to-database-changes/index.md", "title": "Subscribing to Database Changes"}
+nav_next: {"path": "supabase/docs/guides/resources/glossary/index.md", "title": "Glossary"}
 ---
 
 # 

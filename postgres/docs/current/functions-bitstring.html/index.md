@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:47:31.460Z"
 content_hash: "e1f9723c8b45c8bf34a3b46ada2c232baf99469f57172dbf0fbc089b16031512"
 menu_path: ["PostgreSQL: Documentation: 18: 9.6. Bit String Functions and Operators"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/ddl-basics.html/index.md", "title": "PostgreSQL: Documentation: 18: 5.1.\u00a0Table Basics"}
-nav_next: {"path": "postgres/docs/current/amcheck.html/index.md", "title": "PostgreSQL: Documentation: 18: F.1.\u00a0amcheck \u2014 tools to verify table and index consistency"}
+nav_prev: {"path": "postgres/docs/current/functions-array.html/index.md", "title": "PostgreSQL: Documentation: 18: 9.19.\u00a0Array Functions and Operators"}
+nav_next: {"path": "postgres/docs/current/functions-geometry.html/index.md", "title": "PostgreSQL: Documentation: 18: 9.11.\u00a0Geometric Functions and Operators"}
 ---
 
 Development Versions: [devel](https://www.postgresql.org/docs/devel/functions-bitstring.html "PostgreSQL devel - 9.6. Bit String Functions and Operators")

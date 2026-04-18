@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:46:24.499Z"
 content_hash: "294a1e67ff6383f118bff8a9c068a6db5947d31171ad61d2b2f2765bb30956ef"
 menu_path: ["PostgreSQL: Documentation: 18: 39.2. Views and the Rule System"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/sql-dropprocedure.html/index.md", "title": "PostgreSQL: Documentation: 18: DROP PROCEDURE"}
-nav_next: {"path": "postgres/docs/current/sql-alterindex.html/index.md", "title": "PostgreSQL: Documentation: 18: ALTER INDEX"}
+nav_prev: {"path": "postgres/docs/current/rules-update.html/index.md", "title": "PostgreSQL: Documentation: 18: 39.4.\u00a0Rules on INSERT, UPDATE, and DELETE"}
+nav_next: {"path": "postgres/docs/current/runtime-config-client.html/index.md", "title": "PostgreSQL: Documentation: 18: 19.11.\u00a0Client Connection Defaults"}
 ---
 
 Views in PostgreSQL are implemented using the rule system. A view is basically an empty table (having no actual storage) with an `ON SELECT DO INSTEAD` rule. Conventionally, that rule is named `_RETURN`. So a view like

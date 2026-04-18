@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:34:17.941Z"
 content_hash: "e67bda69c0d91d299f492697a2e8cbf65d3268aa30f9d170c87cae6fb88b01d3"
 menu_path: ["AI & Vectors","AI & Vectors","Python Client","Python Client","Choosing a Client","Choosing a Client"]
 section_path: ["AI & Vectors","AI & Vectors","Python Client","Python Client","Choosing a Client","Choosing a Client"]
-nav_prev: {"path": "supabase/docs/guides/ai/rag-with-permissions/index.md", "title": "RAG with Permissions"}
-nav_next: {"path": "supabase/docs/guides/ai/semantic-search/index.md", "title": "Semantic search"}
+nav_prev: {"path": "supabase/docs/guides/ai/langchain/index.md", "title": "LangChain"}
+nav_next: {"path": "supabase/docs/guides/ai/quickstarts/face-similarity/index.md", "title": "Face similarity search"}
 ---
 
 # 

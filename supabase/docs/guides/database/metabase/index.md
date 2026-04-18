@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:41:23.847Z"
 content_hash: "35689e0c60b94bb99803f8809b5d0688b8c9961804d3bb5c09d7884851c50a3f"
 menu_path: ["Database","Database","GUI quickstarts","GUI quickstarts","Metabase","Metabase"]
 section_path: ["Database","Database","GUI quickstarts","GUI quickstarts","Metabase","Metabase"]
-nav_prev: {"path": "supabase/docs/guides/database/joins-and-nesting/index.md", "title": "Querying Joins and Nested tables"}
-nav_next: {"path": "supabase/docs/guides/database/json/index.md", "title": "Managing JSON and unstructured data"}
+nav_prev: {"path": "supabase/docs/guides/database/json/index.md", "title": "Managing JSON and unstructured data"}
+nav_next: {"path": "supabase/docs/guides/database/migrating-to-pg-partman/index.md", "title": "Migrate from TimescaleDB to pg_partman"}
 ---
 
 # 

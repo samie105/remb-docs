@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:33:34.933Z"
 content_hash: "64aac02b161b49861e4a7cdc84c0674c0af59bb2ccb7d54ea43282f8135ea119"
 menu_path: ["PostgreSQL: Documentation: 18: O.2. Default Roles Renamed to Predefined Roles"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/infoschema-domains.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.23.\u00a0domains"}
-nav_next: {"path": "postgres/docs/current/pltcl-config.html/index.md", "title": "PostgreSQL: Documentation: 18: 42.11.\u00a0PL/Tcl Configuration"}
+nav_prev: {"path": "postgres/docs/current/ddl-system-columns.html/index.md", "title": "PostgreSQL: Documentation: 18: 5.6.\u00a0System Columns"}
+nav_next: {"path": "postgres/docs/current/dict-int.html/index.md", "title": "PostgreSQL: Documentation: 18: F.12.\u00a0dict_int \u2014 example full-text search dictionary for integers"}
 ---
 
 O.2. Default Roles Renamed to Predefined Roles

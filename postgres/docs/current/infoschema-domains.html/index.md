@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:33:33.127Z"
 content_hash: "606f3435710d080f4255284eade2e3035e01f205cbb82df7dc1f55f54e188b6f"
 menu_path: ["PostgreSQL: Documentation: 18: 35.23. domains"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/queries-select-lists.html/index.md", "title": "PostgreSQL: Documentation: 18: 7.3.\u00a0Select Lists"}
-nav_next: {"path": "postgres/docs/current/default-roles.html/index.md", "title": "PostgreSQL: Documentation: 18: O.2.\u00a0Default Roles Renamed to Predefined Roles"}
+nav_prev: {"path": "postgres/docs/current/infoschema-domain-udt-usage.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.22.\u00a0domain_udt_usage"}
+nav_next: {"path": "postgres/docs/current/infoschema-element-types.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.24.\u00a0element_types"}
 ---
 
 Column Type

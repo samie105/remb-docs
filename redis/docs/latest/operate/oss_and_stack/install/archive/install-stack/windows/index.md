@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:57:26.680Z"
 content_hash: "23083a4a943a0f799213aa4f65dff21378a9a101b04065613f47682a0fea3cd5"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Install Redis Open Source","→","Install Redis Open Source","→\n      \n        Install Redis Community Edition or Redis Stack","→","Install Redis Community Edition or Redis Stack","→\n      \n        Install Redis Stack","→","Install Redis Stack","→\n      \n        Install Redis Stack on Windows","→","Install Redis Stack on Windows"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Install Redis Open Source","→","Install Redis Open Source","→\n      \n        Install Redis Community Edition or Redis Stack","→","Install Redis Community Edition or Redis Stack","→\n      \n        Install Redis Stack","→","Install Redis Stack","→\n      \n        Install Redis Stack on Windows","→","Install Redis Stack on Windows"]
-nav_prev: {"path": "redis/docs/latest/develop/whats-new/8-4/index.md", "title": "Redis 8.4"}
-nav_next: {"path": "redis/docs/latest/develop/tools/insight/release-notes/v2.12.0/index.md", "title": "RedisInsight v2.12.0, October 2022"}
+nav_prev: {"path": "redis/docs/latest/operate/oss_and_stack/install/archive/install-stack/mac-os/index.md", "title": "Install Redis Stack on macOS"}
+nav_next: {"path": "redis/docs/latest/operate/oss_and_stack/install/build-stack/almalinux-rocky-8/index.md", "title": "Build and run Redis Open Source on AlmaLinux/Rocky Linux 8.10"}
 ---
 
 # Install Redis Stack on Windows

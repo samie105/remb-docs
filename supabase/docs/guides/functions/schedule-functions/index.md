@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:45:31.897Z"
 content_hash: "3a74136e7dec30a0358763943a3ca7641240ecb66acff3305085d3babcb254a3"
 menu_path: ["Edge Functions","Edge Functions","Examples","Examples","Scheduling Functions","Scheduling Functions"]
 section_path: ["Edge Functions","Edge Functions","Examples","Examples","Scheduling Functions","Scheduling Functions"]
-nav_prev: {"path": "supabase/docs/guides/functions/secrets/index.md", "title": "Environment Variables"}
-nav_next: {"path": "supabase/docs/guides/functions/status-codes/index.md", "title": "Status codes"}
+nav_prev: {"path": "supabase/docs/guides/functions/routing/index.md", "title": "Handling Routing in Functions"}
+nav_next: {"path": "supabase/docs/guides/functions/secrets/index.md", "title": "Environment Variables"}
 ---
 
 # 

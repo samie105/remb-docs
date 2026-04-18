@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:23:27.499Z"
 content_hash: "fc954875671fe1a3291bda95027646c3b80fc3f2ea94e2483f21b7bd8e3a9a9b"
 menu_path: ["Drizzle with Netlify Edge Functions and Supabase Database"]
 section_path: []
-nav_prev: {"path": "drizzle/docs/tutorials/drizzle-with-neon/index.md", "title": "Drizzle with Neon Postgres"}
-nav_next: {"path": "drizzle/docs/tutorials/drizzle-with-netlify-edge-functions-neon/index.md", "title": "Drizzle with Netlify Edge Functions and Neon Postgres"}
+nav_prev: {"path": "drizzle/docs/tutorials/drizzle-with-netlify-edge-functions-neon/index.md", "title": "Drizzle with Netlify Edge Functions and Neon Postgres"}
+nav_next: {"path": "drizzle/docs/tutorials/drizzle-with-nile/index.md", "title": "Drizzle with Nile Database"}
 ---
 
 #### Create a new Supabase project[](#create-a-new-supabase-project)

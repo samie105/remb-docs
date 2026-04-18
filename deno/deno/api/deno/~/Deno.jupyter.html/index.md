@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:32:15.102Z"
 content_hash: "fac35d1a2a73914642201f084cf24f350054c97c5f517aaefb7f346783545b92"
 menu_path: ["function Deno.jupyter.html"]
 section_path: []
-nav_prev: {"path": "deno/deno/runtime/help/index.md", "title": "Where to get help"}
-nav_next: {"path": "deno/deno/api/deno/index.md", "title": "Deno Namespace APIs"}
+nav_prev: {"path": "deno/deno/api/deno/~/Deno/index.md", "title": "namespace Deno"}
+nav_next: {"path": "deno/deno/api/node/index.md", "title": "Node.js Built-in APIs"}
 ---
 
 # function Deno.jupyter.html

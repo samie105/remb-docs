@@ -10,7 +10,7 @@ content_hash: "010ee1a28535407ebcff667bc321bf329b95f557447668947ba49e0078487745"
 menu_path: ["bun pm"]
 section_path: []
 nav_prev: {"path": "bun/bun/docs/pm/cli/patch/index.md", "title": "bun patch"}
-nav_next: {"path": "bun/bun/docs/pm/cli/remove/index.md", "title": "bun remove"}
+nav_next: {"path": "bun/bun/docs/pm/cli/publish/index.md", "title": "bun publish"}
 ---
 
 # Creates my-package-1.0.0.tgz in current directory

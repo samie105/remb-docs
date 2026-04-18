@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:44:05.390Z"
 content_hash: "d676b7188f06e78713725be1094ff9bca07fee8f47a8f9e3d7a0c5a1f82977d6"
 menu_path: ["vm - Node documentation"]
 section_path: []
-nav_prev: {"path": "deno/deno/api/node/worker_threads/index.md", "title": "worker_threads - Node documentation"}
-nav_next: {"path": "deno/deno/api/node/zlib/index.md", "title": "zlib - Node documentation"}
+nav_prev: {"path": "deno/deno/api/node/v8/index.md", "title": "v8 - Node documentation"}
+nav_next: {"path": "deno/deno/api/node/wasi/index.md", "title": "wasi - Node documentation"}
 ---
 
 ### Usage in Deno

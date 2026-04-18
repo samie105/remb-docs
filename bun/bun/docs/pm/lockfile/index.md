@@ -10,7 +10,7 @@ content_hash: "140b7712571d1f7beeeebaacd89c1330a935acbb00878fd93dc1b7aa4ad9b848"
 menu_path: ["Lockfile"]
 section_path: []
 nav_prev: {"path": "bun/bun/docs/pm/lifecycle/index.md", "title": "Lifecycle scripts"}
-nav_next: {"path": "bun/bun/docs/pm/overrides/index.md", "title": "Overrides and resolutions"}
+nav_next: {"path": "bun/bun/docs/pm/npmrc/index.md", "title": ".npmrc support"}
 ---
 
 [Skip to main content](#content-area)

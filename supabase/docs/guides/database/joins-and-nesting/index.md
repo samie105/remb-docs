@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:41:21.892Z"
 content_hash: "b783f92842c6d10bf39afce84204dbe8e1d052fbf6adee628e48202153c29d22"
 menu_path: ["Database","Database","Working with your database (basics)","Working with your database (basics)","Querying joins and nested tables","Querying joins and nested tables"]
 section_path: ["Database","Database","Working with your database (basics)","Working with your database (basics)","Querying joins and nested tables","Querying joins and nested tables"]
-nav_prev: {"path": "supabase/docs/guides/database/functions/index.md", "title": "Database Functions"}
-nav_next: {"path": "supabase/docs/guides/database/metabase/index.md", "title": "Connecting to Metabase"}
+nav_prev: {"path": "supabase/docs/guides/database/inspect/index.md", "title": "Debugging and monitoring"}
+nav_next: {"path": "supabase/docs/guides/database/json/index.md", "title": "Managing JSON and unstructured data"}
 ---
 
 # 

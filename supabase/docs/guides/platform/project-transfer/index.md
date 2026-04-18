@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:48:01.685Z"
 content_hash: "58983443d4be47c204504577b8a07f5e2c006e29b279fed11684d09f7dad2433"
 menu_path: ["Platform","Platform","Project & Account Management","Project & Account Management","Transfer Project","Transfer Project"]
 section_path: ["Platform","Platform","Project & Account Management","Project & Account Management","Transfer Project","Transfer Project"]
-nav_prev: {"path": "supabase/docs/guides/platform/performance/index.md", "title": "Performance Tuning"}
-nav_next: {"path": "supabase/docs/guides/platform/privatelink/index.md", "title": "PrivateLink"}
+nav_prev: {"path": "supabase/docs/guides/platform/privatelink/index.md", "title": "PrivateLink"}
+nav_next: {"path": "supabase/docs/guides/platform/read-replicas/index.md", "title": "Read Replicas"}
 ---
 
 # 

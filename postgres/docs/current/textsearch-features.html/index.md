@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:33:45.948Z"
 content_hash: "4f33367f188670336be987505a93401ce80cf50c183e6a028207ded679140e8e"
 menu_path: ["PostgreSQL: Documentation: 18: 12.4. Additional Features"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/pltcl-config.html/index.md", "title": "PostgreSQL: Documentation: 18: 42.11.\u00a0PL/Tcl Configuration"}
-nav_next: {"path": "postgres/docs/current/sql-createdatabase.html/index.md", "title": "PostgreSQL: Documentation: 18: CREATE DATABASE"}
+nav_prev: {"path": "postgres/docs/current/textsearch-debugging.html/index.md", "title": "PostgreSQL: Documentation: 18: 12.8.\u00a0Testing and Debugging Text Search"}
+nav_next: {"path": "postgres/docs/current/textsearch-limitations.html/index.md", "title": "PostgreSQL: Documentation: 18: 12.11.\u00a0Limitations"}
 ---
 
 This section describes additional functions and operators that are useful in connection with text search.

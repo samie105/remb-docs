@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:59:04.737Z"
 content_hash: "6b94d65803cf4ec165d6b6b9483be86b0be6fe27f25eee81c77e4a68cebf05bb"
 menu_path: ["Start with Supabase","Start with Supabase","Mobile tutorials","Mobile tutorials","Android Kotlin","Android Kotlin"]
 section_path: ["Start with Supabase","Start with Supabase","Mobile tutorials","Mobile tutorials","Android Kotlin","Android Kotlin"]
-nav_prev: {"path": "supabase/docs/guides/getting-started/tutorials/with-nextjs/index.md", "title": "Build a User Management App with Next.js"}
-nav_next: {"path": "supabase/docs/guides/getting-started/tutorials/with-nuxt-3/index.md", "title": "Build a User Management App with Nuxt 3"}
+nav_prev: {"path": "supabase/docs/guides/getting-started/tutorials/with-ionic-vue/index.md", "title": "Build a User Management App with Ionic Vue"}
+nav_next: {"path": "supabase/docs/guides/getting-started/tutorials/with-nextjs/index.md", "title": "Build a User Management App with Next.js"}
 ---
 
 # 

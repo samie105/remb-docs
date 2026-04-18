@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:50:22.347Z"
 content_hash: "92900f847684583f46ddaae4f1f62658ab9234399c616f638c072f44b4e7f9e6"
 menu_path: ["PostgreSQL: Documentation: 18: 44.6. Database Access"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/datetime-posix-timezone-specs.html/index.md", "title": "PostgreSQL: Documentation: 18: B.5.\u00a0POSIX Time Zone Specifications"}
-nav_next: {"path": "postgres/docs/current/domains.html/index.md", "title": "PostgreSQL: Documentation: 18: 8.18.\u00a0Domain Types"}
+nav_prev: {"path": "postgres/docs/current/plpython-data.html/index.md", "title": "PostgreSQL: Documentation: 18: 44.2.\u00a0Data Values"}
+nav_next: {"path": "postgres/docs/current/plpython-envar.html/index.md", "title": "PostgreSQL: Documentation: 18: 44.11.\u00a0Environment Variables"}
 ---
 
 Development Versions: [devel](https://www.postgresql.org/docs/devel/plpython-database.html "PostgreSQL devel - 44.6. Database Access")

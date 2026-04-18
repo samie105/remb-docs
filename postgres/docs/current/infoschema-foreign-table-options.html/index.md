@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:40:35.847Z"
 content_hash: "8f400d02dc766b4e4821c8271e56aee18e110034d402786612b7d546e1c5f6ae"
 menu_path: ["PostgreSQL: Documentation: 18: 35.30. foreign_table_options"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/sql-createtstemplate.html/index.md", "title": "PostgreSQL: Documentation: 18: CREATE TEXT SEARCH TEMPLATE"}
-nav_next: {"path": "postgres/docs/current/app-pgresetxlog.html/index.md", "title": "PostgreSQL: Documentation: 18: O.4.\u00a0pg_resetxlog renamed to pg_resetwal"}
+nav_prev: {"path": "postgres/docs/current/infoschema-foreign-servers.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.29.\u00a0foreign_servers"}
+nav_next: {"path": "postgres/docs/current/infoschema-foreign-tables.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.31.\u00a0foreign_tables"}
 ---
 
 The view `foreign_table_options` contains all the options defined for foreign tables in the current database. Only those foreign tables are shown that the current user has access to (by way of being the owner or having some privilege).

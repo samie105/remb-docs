@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:49:10.513Z"
 content_hash: "1af3b75c1ab18c02712b2dc13957008e5311e1214e5e47732dbfebf40e5984f5"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Redis with Google Agent Development Kit (ADK)","→","Redis with Google Agent Development Kit (ADK)","→\n      \n        Memory integration patterns","→","Memory integration patterns"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Redis with Google Agent Development Kit (ADK)","→","Redis with Google Agent Development Kit (ADK)","→\n      \n        Memory integration patterns","→","Memory integration patterns"]
-nav_prev: {"path": "redis/docs/latest/develop/ai/redisvl/install/index.md", "title": "Install RedisVL"}
-nav_next: {"path": "redis/docs/latest/integrate/jedis/index.md", "title": "Java client for Redis"}
+nav_prev: {"path": "redis/docs/latest/integrate/google-adk/examples/index.md", "title": "adk-redis examples"}
+nav_next: {"path": "redis/docs/latest/integrate/google-adk/redis-agent-memory/index.md", "title": "Redis Agent Memory"}
 ---
 
 # Memory integration patterns

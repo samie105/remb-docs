@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:35:16.933Z"
 content_hash: "26c6b0a47af6e8a4c5420775dc568d8f9e669820eb26f7721ae01104a68a310e"
 menu_path: ["Data REST API","Data REST API","Security","Security","Hardening the Data API","Hardening the Data API"]
 section_path: ["Data REST API","Data REST API","Security","Security","Hardening the Data API","Hardening the Data API"]
-nav_prev: {"path": "supabase/docs/guides/api/creating-routes/index.md", "title": "Creating API Routes"}
-nav_next: {"path": "supabase/docs/guides/api/custom-claims-and-role-based-access-control-rbac/index.md", "title": "Custom Claims & Role-based Access Control (RBAC)"}
+nav_prev: {"path": "supabase/docs/guides/api/custom-claims-and-role-based-access-control-rbac/index.md", "title": "Custom Claims & Role-based Access Control (RBAC)"}
+nav_next: {"path": "supabase/docs/guides/api/quickstart/index.md", "title": "Build an API route in less than 2 minutes."}
 ---
 
 # 

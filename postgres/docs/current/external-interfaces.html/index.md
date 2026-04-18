@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:49:45.316Z"
 content_hash: "237f9234b6d4134d9dea3ee09dc87cf2b4909cb0c739af99f3ebcabc9ecf0030"
 menu_path: ["PostgreSQL: Documentation: 18: H.1. Client Interfaces"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/infoschema-routine-routine-usage.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.42.\u00a0routine_routine_usage"}
-nav_next: {"path": "postgres/docs/current/libpq-envars.html/index.md", "title": "PostgreSQL: Documentation: 18: 32.15.\u00a0Environment Variables"}
+nav_prev: {"path": "postgres/docs/current/external-extensions.html/index.md", "title": "PostgreSQL: Documentation: 18: H.4.\u00a0Extensions"}
+nav_next: {"path": "postgres/docs/current/external-pl.html/index.md", "title": "PostgreSQL: Documentation: 18: H.3.\u00a0Procedural Languages"}
 ---
 
 There are only two client interfaces included in the base PostgreSQL distribution:

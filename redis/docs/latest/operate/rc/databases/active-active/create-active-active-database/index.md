@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:02:34.446Z"
 content_hash: "89ff6e8f346b78c9d4d28135505cb8cde70c7e875f69dd76afb1c72f832dc4d4"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Cloud","→","Redis Cloud","→\n      \n        Manage databases","→","Manage databases","→\n      \n        Active-Active Redis","→","Active-Active Redis","→\n      \n        Create an Active-Active database","→","Create an Active-Active database"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Cloud","→","Redis Cloud","→\n      \n        Manage databases","→","Manage databases","→\n      \n        Active-Active Redis","→","Active-Active Redis","→\n      \n        Create an Active-Active database","→","Create an Active-Active database"]
-nav_prev: {"path": "redis/docs/latest/operate/redisinsight/configuration/index.md", "title": "Redis Insight configuration settings"}
-nav_next: {"path": "redis/docs/latest/operate/rc/databases/create-database/create-essentials-database/index.md", "title": "Create an Essentials database"}
+nav_prev: {"path": "redis/docs/latest/operate/rc/changelog/version-release-notes/8-4/index.md", "title": "Redis 8.4 release notes and breaking changes"}
+nav_next: {"path": "redis/docs/latest/operate/rc/databases/connect/insight-cloud/index.md", "title": "Use Redis Insight on Redis Cloud"}
 ---
 
 # Create an Active-Active database

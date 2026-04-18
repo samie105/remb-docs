@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:04:20.572Z"
 content_hash: "2d548beffc30b54ec670bdce29488fc020757131a073e51f7d40757fff04fb09"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Redis Data Integration","→","Redis Data Integration","→\n      \n        Data pipelines","→","Data pipelines","→\n      \n        Job files","→","Job files"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Redis Data Integration","→","Redis Data Integration","→\n      \n        Data pipelines","→","Data pipelines","→\n      \n        Job files","→","Job files"]
-nav_prev: {"path": "redis/docs/latest/develop/clients/jedis/index.md", "title": "Jedis guide (Java)"}
-nav_next: {"path": "redis/docs/latest/operate/kubernetes/re-databases/db-controller/index.md", "title": "Manage Redis Enterprise databases for Kubernetes"}
+nav_prev: {"path": "redis/docs/latest/integrate/redis-data-integration/data-pipelines/prepare-dbs/sql-server/index.md", "title": "Prepare SQL Server for RDI"}
+nav_next: {"path": "redis/docs/latest/integrate/redis-data-integration/installation/reqsummary/index.md", "title": "Requirements summary"}
 ---
 
 # Job files

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:47:35.292Z"
 content_hash: "b34bee63346308e55df10475f7253fbaad539c35c32a73787bae7e040a6ffbb3"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Cloud","→","Redis Cloud","→\n      \n        Manage databases","→","Manage databases","→\n      \n        Create a database","→","Create a database","→\n      \n        Create a free database","→","Create a free database"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Cloud","→","Redis Cloud","→\n      \n        Manage databases","→","Manage databases","→\n      \n        Create a database","→","Create a database","→\n      \n        Create a free database","→","Create a free database"]
-nav_prev: {"path": "redis/docs/latest/operate/rc/subscriptions/bring-your-own-cloud/cloud-account-settings/index.md", "title": "Create and edit Cloud accounts"}
-nav_next: {"path": "redis/docs/latest/develop/get-started/document-database/index.md", "title": "Redis as a document database quick start guide"}
+nav_prev: {"path": "redis/docs/latest/operate/rc/databases/create-database/create-flex-database/index.md", "title": "Create a Flex database"}
+nav_next: {"path": "redis/docs/latest/operate/rc/databases/rdi/define/index.md", "title": "Define data pipeline"}
 ---
 
 # Create a free database

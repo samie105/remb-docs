@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:44:07.228Z"
 content_hash: "59b985344102ad23603a4d38ea4881cb98f1a67bc34558d7e31d7168824055bf"
 menu_path: ["PostgreSQL: Documentation: 18: 29.14. Quick Setup"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/catalog-pg-statistic-ext-data.html/index.md", "title": "PostgreSQL: Documentation: 18: 52.53.\u00a0pg_statistic_ext_data"}
-nav_next: {"path": "postgres/docs/current/pgrowlocks.html/index.md", "title": "PostgreSQL: Documentation: 18: F.31.\u00a0pgrowlocks \u2014 show a table's row locking information"}
+nav_prev: {"path": "postgres/docs/current/logical-replication-publication.html/index.md", "title": "PostgreSQL: Documentation: 18: 29.1.\u00a0Publication"}
+nav_next: {"path": "postgres/docs/current/logical-replication-restrictions.html/index.md", "title": "PostgreSQL: Documentation: 18: 29.8.\u00a0Restrictions"}
 ---
 
 First set the configuration options in `postgresql.conf`:

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:51:29.357Z"
 content_hash: "b8ec59866bb549113f3e5e31ba8d48e861c2085095caa26e4788df5d96631244"
 menu_path: ["AI & Vectors","AI & Vectors","Python Examples","Python Examples","Building ChatGPT Plugins","Building ChatGPT Plugins"]
 section_path: ["AI & Vectors","AI & Vectors","Python Examples","Python Examples","Building ChatGPT Plugins","Building ChatGPT Plugins"]
-nav_prev: {"path": "supabase/docs/guides/ai/examples/headless-vector-search/index.md", "title": "Adding generative Q&A for your documentation"}
-nav_next: {"path": "supabase/docs/guides/ai/examples/huggingface-image-captioning/index.md", "title": "Generate image captions using Hugging Face"}
+nav_prev: {"path": "supabase/docs/guides/ai/engineering-for-scale/index.md", "title": "Engineering for Scale"}
+nav_next: {"path": "supabase/docs/guides/ai/examples/headless-vector-search/index.md", "title": "Adding generative Q&A for your documentation"}
 ---
 
 # 

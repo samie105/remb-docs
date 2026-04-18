@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:44:46.590Z"
 content_hash: "b0620eebc89ae4e39aca1ab491f3c642f2c79ace6626aab11024518e1597a63a"
 menu_path: ["Edge Functions","Edge Functions","Platform","Platform","Limits","Limits"]
 section_path: ["Edge Functions","Edge Functions","Platform","Platform","Limits","Limits"]
-nav_prev: {"path": "supabase/docs/guides/functions/http-methods/index.md", "title": "Routing"}
-nav_next: {"path": "supabase/docs/guides/functions/kysely-postgres/index.md", "title": "Type-Safe SQL with Kysely"}
+nav_prev: {"path": "supabase/docs/guides/functions/kysely-postgres/index.md", "title": "Type-Safe SQL with Kysely"}
+nav_next: {"path": "supabase/docs/guides/functions/logging/index.md", "title": "Logging"}
 ---
 
 # 

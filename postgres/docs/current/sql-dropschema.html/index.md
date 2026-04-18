@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:51:01.459Z"
 content_hash: "1b27e2b2e095839acd0da4491bb896cb86537f8d934d1993f2fc87d69ed6937a"
 menu_path: ["PostgreSQL: Documentation: 18: DROP SCHEMA"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/postgres-user.html/index.md", "title": "PostgreSQL: Documentation: 18: 18.1.\u00a0The PostgreSQL User Account"}
-nav_next: {"path": "postgres/docs/current/sql-cluster.html/index.md", "title": "PostgreSQL: Documentation: 18: CLUSTER"}
+nav_prev: {"path": "postgres/docs/current/sql-droprule.html/index.md", "title": "PostgreSQL: Documentation: 18: DROP RULE"}
+nav_next: {"path": "postgres/docs/current/sql-droptable.html/index.md", "title": "PostgreSQL: Documentation: 18: DROP TABLE"}
 ---
 
 DROP SCHEMA — remove a schema

@@ -9,7 +9,7 @@ last_crawled_at: "2026-04-18T16:52:56.984Z"
 content_hash: "225eb4d02546088cc209c26390c3e70964d541cfd05bb759793ccfa8032711b5"
 menu_path: ["PostgreSQL: Documentation: 18: vacuumlo"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/infoschema-sequences.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.47.\u00a0sequences"}
+nav_prev: {"path": "postgres/docs/current/uuid-ossp.html/index.md", "title": "PostgreSQL: Documentation: 18: F.49.\u00a0uuid-ossp \u2014 a UUID generator"}
 nav_next: {"path": "postgres/docs/current/view-pg-aios.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.2.\u00a0pg_aios"}
 ---
 

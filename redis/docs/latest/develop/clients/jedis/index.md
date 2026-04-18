@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:04:15.406Z"
 content_hash: "fec17a78b4b3864f89a3577cafa08ae702d3fb128eddeb3f2fa4f2c61edaa535"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Connect with Redis client API libraries","→","Connect with Redis client API libraries","→\n      \n        Jedis guide (Java)","→","Jedis guide (Java)"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Connect with Redis client API libraries","→","Connect with Redis client API libraries","→\n      \n        Jedis guide (Java)","→","Jedis guide (Java)"]
-nav_prev: {"path": "redis/docs/latest/develop/use-cases/session-store/java-lettuce/index.md", "title": "Redis session store with Java (Lettuce)"}
-nav_next: {"path": "redis/docs/latest/integrate/redis-data-integration/data-pipelines/transform-examples/index.md", "title": "Job files"}
+nav_prev: {"path": "redis/docs/latest/develop/clients/ioredis/index.md", "title": "ioredis guide (JavaScript)"}
+nav_next: {"path": "redis/docs/latest/develop/clients/jedis/amr/index.md", "title": "Connect to Azure Managed Redis"}
 ---
 
 # Jedis guide (Java)

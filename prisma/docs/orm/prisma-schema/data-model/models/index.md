@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:52:17.881Z"
 content_hash: "75d39d25ef03837555987976c7e9d39f92787d8774c1bc41686502023b8bf931"
 menu_path: ["Models"]
 section_path: []
-nav_prev: {"path": "prisma/docs/orm/prisma-schema/data-model/multi-schema/index.md", "title": "Multi-schema"}
-nav_next: {"path": "prisma/docs/orm/prisma-schema/data-model/unsupported-database-features/index.md", "title": "Unsupported database features (Prisma Schema)"}
+nav_prev: {"path": "prisma/docs/orm/prisma-schema/data-model/indexes/index.md", "title": "Indexes"}
+nav_next: {"path": "prisma/docs/orm/prisma-schema/data-model/multi-schema/index.md", "title": "Multi-schema"}
 ---
 
 Learn about the concepts for building your data model with Prisma: Models, scalar types, enums, attributes, functions, IDs, default values and more

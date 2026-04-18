@@ -10,7 +10,7 @@ content_hash: "519aa31e94e1b02d0b2551505e293e05d4a4ace044f8b5b0fb6bf66cf41ab3ba"
 menu_path: ["Sequelize"]
 section_path: []
 nav_prev: {"path": "prisma/docs/orm/more/comparisons/prisma-and-mongoose/index.md", "title": "Mongoose"}
-nav_next: {"path": "prisma/docs/orm/more/dev-environment/editor-setup/index.md", "title": "Editor setup"}
+nav_next: {"path": "prisma/docs/orm/more/comparisons/prisma-and-typeorm/index.md", "title": "TypeORM"}
 ---
 
 Comparisons

@@ -9,7 +9,7 @@ last_crawled_at: "2026-04-18T16:44:45.589Z"
 content_hash: "bd3c84d9bcc6cc694a27c7633ded590aae61e4d6f69538763929ea5570bab94c"
 menu_path: ["Use Neon Postgres through Drizzle ORM"]
 section_path: []
-nav_prev: {"path": "bun/bun/docs/guides/ecosystem/hono/index.md", "title": "Build an HTTP server using Hono and Bun"}
+nav_prev: {"path": "bun/bun/docs/guides/ecosystem/mongoose/index.md", "title": "Read and write data to MongoDB using Mongoose and Bun"}
 nav_next: {"path": "bun/bun/docs/guides/ecosystem/neon-serverless-postgres/index.md", "title": "Use Neon's Serverless Postgres with Bun"}
 ---
 

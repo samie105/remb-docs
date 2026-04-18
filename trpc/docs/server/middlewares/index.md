@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:50:14.172Z"
 content_hash: "8eb38615459671aa01d2a55952a4c18df80466cec0570abe407ed704d6e1a8d0"
 menu_path: ["Middlewares"]
 section_path: []
-nav_prev: {"path": "trpc/docs/server/non-json-content-types/index.md", "title": "Content Types"}
-nav_next: {"path": "trpc/docs/server/overview/index.md", "title": "Backend Usage"}
+nav_prev: {"path": "trpc/docs/server/metadata/index.md", "title": "Metadata"}
+nav_next: {"path": "trpc/docs/server/non-json-content-types/index.md", "title": "Content Types"}
 ---
 
 You can add middleware(s) to a procedure with the `t.procedure.use()` method. The middleware(s) will wrap the invocation of the procedure and must call `opts.next()` and return its result.

@@ -9,7 +9,7 @@ last_crawled_at: "2026-04-18T16:49:28.544Z"
 content_hash: "6c85ff51975bdd5f3b0f803a18cc299baee22a9c6968bd50be82d69556744955"
 menu_path: ["Standalone Adapter"]
 section_path: []
-nav_prev: {"path": "trpc/docs/server/adapters/fetch/index.md", "title": "Fetch / Edge Runtimes Adapter"}
+nav_prev: {"path": "trpc/docs/server/adapters/nextjs/index.md", "title": "Next.js Adapter"}
 nav_next: {"path": "trpc/docs/server/authorization/index.md", "title": "Authorization"}
 ---
 

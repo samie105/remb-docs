@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:50:42.250Z"
 content_hash: "8a01609d8cc51c08ffb675ad0d47e6563a298ad706ee414423509c2eb4070b7a"
 menu_path: ["Self-Hosting","Self-Hosting","How-to Guides","How-to Guides","Self-Hosted Functions","Self-Hosted Functions"]
 section_path: ["Self-Hosting","Self-Hosting","How-to Guides","How-to Guides","Self-Hosted Functions","Self-Hosted Functions"]
-nav_prev: {"path": "supabase/docs/guides/self-hosting/self-hosted-oauth/index.md", "title": "Configure Social Login (OAuth) Providers"}
-nav_next: {"path": "supabase/docs/guides/self-hosting/self-hosted-phone-mfa/index.md", "title": "Configure Phone Login & MFA"}
+nav_prev: {"path": "supabase/docs/guides/self-hosting/self-hosted-auth-keys/index.md", "title": "New API Keys and Asymmetric Authentication"}
+nav_next: {"path": "supabase/docs/guides/self-hosting/self-hosted-oauth/index.md", "title": "Configure Social Login (OAuth) Providers"}
 ---
 
 # 

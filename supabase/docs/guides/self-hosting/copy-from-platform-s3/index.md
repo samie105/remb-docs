@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:50:13.305Z"
 content_hash: "c98662596920ed05acc403c2a2687c752ecd029cfe8967e354a349b081a8af9c"
 menu_path: ["Self-Hosting","Self-Hosting","How-to Guides","How-to Guides","Copy Storage from Platform","Copy Storage from Platform"]
 section_path: ["Self-Hosting","Self-Hosting","How-to Guides","How-to Guides","Copy Storage from Platform","Copy Storage from Platform"]
-nav_prev: {"path": "supabase/docs/guides/security/security-testing/index.md", "title": "Security testing of your Supabase projects"}
-nav_next: {"path": "supabase/docs/guides/security/soc-2-compliance/index.md", "title": "SOC 2 Compliance and Supabase"}
+nav_prev: {"path": "supabase/docs/guides/self-hosting/index.md", "title": "Self-Hosting"}
+nav_next: {"path": "supabase/docs/guides/self-hosting/custom-email-templates/index.md", "title": "Custom Email Templates"}
 ---
 
 # 

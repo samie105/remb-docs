@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:52:11.416Z"
 content_hash: "be29c95f7529c7d3d8502394ab18ff59315c5088e1531cc10410f9b4ffe16f4e"
 menu_path: ["PostgreSQL: Documentation: 18: 53.4. pg_available_extension_versions"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/sql-close.html/index.md", "title": "PostgreSQL: Documentation: 18: CLOSE"}
-nav_next: {"path": "postgres/docs/current/color-when.html/index.md", "title": "PostgreSQL: Documentation: 18: N.1.\u00a0When Color is Used"}
+nav_prev: {"path": "postgres/docs/current/view-pg-aios.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.2.\u00a0pg_aios"}
+nav_next: {"path": "postgres/docs/current/view-pg-available-extensions.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.3.\u00a0pg_available_extensions"}
 ---
 
 The `pg_available_extension_versions` view lists the specific extension versions that are available for installation. See also the [`pg_extension`](https://www.postgresql.org/docs/current/catalog-pg-extension.html "52.22. pg_extension") catalog, which shows the extensions currently installed.

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:34:30.765Z"
 content_hash: "9c97fd3bf0310c7a110d48d039a7092c239fe0287ff62bfc7c1e56be23027a6f"
 menu_path: ["Reply"]
 section_path: []
-nav_prev: {"path": "fastify/docs/latest/Reference/Request/index.md", "title": "Request"}
-nav_next: {"path": "fastify/docs/latest/Reference/Routes/index.md", "title": "Routes"}
+nav_prev: {"path": "fastify/docs/latest/Reference/Principles/index.md", "title": "Technical Principles"}
+nav_next: {"path": "fastify/docs/latest/Reference/Request/index.md", "title": "Request"}
 ---
 
 Version: latest (v5.8.x)

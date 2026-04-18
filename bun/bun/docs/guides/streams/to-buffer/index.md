@@ -10,7 +10,7 @@ content_hash: "c5da3615104c6f483c73167a866cc41c5899edb515a46fb5a42bdb959f932533"
 menu_path: ["Convert a ReadableStream to a Buffer"]
 section_path: []
 nav_prev: {"path": "bun/bun/docs/guides/streams/to-blob/index.md", "title": "Error loading page"}
-nav_next: {"path": "bun/bun/docs/guides/streams/to-string/index.md", "title": "Convert a ReadableStream to a string"}
+nav_next: {"path": "bun/bun/docs/guides/streams/to-json/index.md", "title": "Convert a ReadableStream to JSON"}
 ---
 
 [Skip to main content](#content-area)

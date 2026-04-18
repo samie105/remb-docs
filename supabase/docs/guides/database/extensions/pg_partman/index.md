@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:55:45.552Z"
 content_hash: "6a03c55fdb78ce2ddd4f88b54d83404225e641ac154f29084482f6d5f5ff6a68"
 menu_path: ["Database","Database","Extensions","Extensions","Overview","Overview"]
 section_path: ["Database","Database","Extensions","Extensions","Overview","Overview"]
-nav_prev: {"path": "supabase/docs/guides/database/extensions/pg_plan_filter/index.md", "title": "pg_plan_filter: Restrict Total Cost"}
-nav_next: {"path": "supabase/docs/guides/database/extensions/pg_repack/index.md", "title": "pg_repack: Physical storage optimization and maintenance"}
+nav_prev: {"path": "supabase/docs/guides/database/extensions/pg_net/index.md", "title": "pg_net: Async Networking"}
+nav_next: {"path": "supabase/docs/guides/database/extensions/pg_plan_filter/index.md", "title": "pg_plan_filter: Restrict Total Cost"}
 ---
 
 # 

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:41:52.887Z"
 content_hash: "4a50481b2328068e4813602ca4cecc4db1b9ad20a33a01c60b99ffd3fd2195ea"
 menu_path: ["PostgreSQL: Documentation: 18: 18.5. Shutting Down the Server"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/pgsurgery.html/index.md", "title": "PostgreSQL: Documentation: 18: F.34.\u00a0pg_surgery \u2014 perform low-level surgery on relation data"}
-nav_next: {"path": "postgres/docs/current/ecpg-errors.html/index.md", "title": "PostgreSQL: Documentation: 18: 34.8.\u00a0Error Handling"}
+nav_prev: {"path": "postgres/docs/current/sepgsql.html/index.md", "title": "PostgreSQL: Documentation: 18: F.40.\u00a0sepgsql \u2014 SELinux-, label-based mandatory access control (MAC) security module"}
+nav_next: {"path": "postgres/docs/current/server-start.html/index.md", "title": "PostgreSQL: Documentation: 18: 18.3.\u00a0Starting the Database Server"}
 ---
 
 There are several ways to shut down the database server. Under the hood, they all reduce to sending a signal to the supervisor `postgres` process.

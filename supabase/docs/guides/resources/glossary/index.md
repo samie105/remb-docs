@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:48:41.193Z"
 content_hash: "230b7e671c5ca41b560691eb87bc4bd4086e14601f94da9f8ded8779ceed306c"
 menu_path: ["Resources","Resources","Glossary","Glossary"]
 section_path: ["Resources","Resources","Glossary","Glossary"]
-nav_prev: {"path": "supabase/docs/guides/queues/quickstart/index.md", "title": "Quickstart"}
-nav_next: {"path": "supabase/docs/guides/realtime/architecture/index.md", "title": "Realtime Architecture"}
+nav_prev: {"path": "supabase/docs/guides/resources/index.md", "title": "Resources"}
+nav_next: {"path": "supabase/docs/guides/security/index.md", "title": "Supabase Security"}
 ---
 
 # 

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:37:51.541Z"
 content_hash: "fecb38bd685894214866cf28ba4bc58c53d6e37ba951409c07dbf56ff71ca090"
 menu_path: ["PostgreSQL: Documentation: 18: 35.26. foreign_data_wrapper_options"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/lo-implementation.html/index.md", "title": "PostgreSQL: Documentation: 18: 33.2.\u00a0Implementation Features"}
-nav_next: {"path": "postgres/docs/current/ddl-priv.html/index.md", "title": "PostgreSQL: Documentation: 18: 5.8.\u00a0Privileges"}
+nav_prev: {"path": "postgres/docs/current/infoschema-enabled-roles.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.25.\u00a0enabled_roles"}
+nav_next: {"path": "postgres/docs/current/infoschema-foreign-data-wrappers.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.27.\u00a0foreign_data_wrappers"}
 ---
 
 Development Versions: [devel](https://www.postgresql.org/docs/devel/infoschema-foreign-data-wrapper-options.html "PostgreSQL devel - 35.26. foreign_data_wrapper_options")

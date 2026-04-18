@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:53:07.682Z"
 content_hash: "5ccde8c57101ba9ccbac645ccdcb10fa3f3c5fe78780bb3c4dfaead1a8ce89ed"
 menu_path: ["PostgreSQL: Documentation: 18: LISTEN"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/logicaldecoding-two-phase-commits.html/index.md", "title": "PostgreSQL: Documentation: 18: 47.10.\u00a0Two-phase Commit Support for Logical Decoding"}
-nav_next: {"path": "postgres/docs/current/tutorial-fk.html/index.md", "title": "PostgreSQL: Documentation: 18: 3.3.\u00a0Foreign Keys"}
+nav_prev: {"path": "postgres/docs/current/sql-expressions.html/index.md", "title": "PostgreSQL: Documentation: 18: 4.2.\u00a0Value Expressions"}
+nav_next: {"path": "postgres/docs/current/sql-lock.html/index.md", "title": "PostgreSQL: Documentation: 18: LOCK"}
 ---
 
 LISTEN — listen for a notification

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:14:53.658Z"
 content_hash: "63ec2225a214c56cc02934a2c07539508d2ccbe0f59c096f6a948f4f71729b7e"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Redis leaderboard","→","Redis leaderboard","→\n      \n        Redis leaderboard with Rust","→","Redis leaderboard with Rust"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Redis leaderboard","→","Redis leaderboard","→\n      \n        Redis leaderboard with Rust","→","Redis leaderboard with Rust"]
-nav_prev: {"path": "redis/docs/latest/integrate/redisom-for-python/index.md", "title": "RedisOM for Python"}
-nav_next: {"path": "redis/docs/latest/integrate/rust-redis/index.md", "title": "Rust client for Redis"}
+nav_prev: {"path": "redis/docs/latest/develop/use-cases/leaderboard/ruby/index.md", "title": "Redis leaderboard with Ruby"}
+nav_next: {"path": "redis/docs/latest/develop/use-cases/rate-limiter/index.md", "title": "Token bucket rate limiter with Redis"}
 ---
 
 # Redis leaderboard with Rust

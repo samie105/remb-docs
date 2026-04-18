@@ -9,7 +9,7 @@ last_crawled_at: "2026-04-18T16:46:23.481Z"
 content_hash: "fb10f28db51efd7f45838b97b277cd336fdfe3550b0b20f15a108d0ccee828b7"
 menu_path: ["Invalid slot name."]
 section_path: []
-nav_prev: {"path": "astro/en/reference/errors/remote-image-not-allowed/index.md", "title": "Remote image is not allowed"}
+nav_prev: {"path": "astro/en/reference/errors/render-undefined-entry-error/index.md", "title": "Attempted to render an undefined content collection entry."}
 nav_next: {"path": "astro/en/reference/errors/response-sent-error/index.md", "title": "Unable to set response."}
 ---
 

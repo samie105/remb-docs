@@ -9,7 +9,7 @@ last_crawled_at: "2026-04-18T16:59:50.392Z"
 content_hash: "f407478ddfd3711d8fd390159f7ac82296d3af5b6c1ed3b7784b89c5720c585f"
 menu_path: ["Globals"]
 section_path: []
-nav_prev: {"path": "bun/bun/docs/runtime/file-types/index.md", "title": "File Types"}
+nav_prev: {"path": "bun/bun/docs/runtime/glob/index.md", "title": "Glob"}
 nav_next: {"path": "bun/bun/docs/runtime/hashing/index.md", "title": "Hashing"}
 ---
 

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:05:37.918Z"
 content_hash: "a70bde9210658095df97547aecd894e99a88a921f2869934b98d6bfca11f4fdd"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Commands","→","Commands","→\n      \n        Redis 7.2 Commands Reference","→","Redis 7.2 Commands Reference"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Commands","→","Commands","→\n      \n        Redis 7.2 Commands Reference","→","Redis 7.2 Commands Reference"]
-nav_prev: {"path": "redis/docs/latest/operate/rs/security/recommended-security-practices/index.md", "title": "Recommended security practices"}
-nav_next: {"path": "redis/docs/latest/operate/rc/changelog/version-release-notes/8-0/index.md", "title": "Redis 8.0 release notes and breaking changes"}
+nav_prev: {"path": "redis/docs/latest/commands/redis-6-2-commands/index.md", "title": "Redis 6.2 Commands Reference"}
+nav_next: {"path": "redis/docs/latest/commands/redis-7-4-commands/index.md", "title": "Redis 7.4 Commands Reference"}
 ---
 
 # Redis 7.2 Commands Reference

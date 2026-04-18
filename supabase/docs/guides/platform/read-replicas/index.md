@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:48:06.308Z"
 content_hash: "86374aca24d3ba615a62d9da0b0443080217fb1d574e34ac7814a342249484b9"
 menu_path: ["Platform","Platform","More","More","More","Read Replicas","Read Replicas","Overview","Overview"]
 section_path: ["Platform","Platform","More","More","More","Read Replicas","Read Replicas","Overview","Overview"]
-nav_prev: {"path": "supabase/docs/guides/platform/privatelink/index.md", "title": "PrivateLink"}
-nav_next: {"path": "supabase/docs/guides/platform/regions/index.md", "title": "Available regions"}
+nav_prev: {"path": "supabase/docs/guides/platform/project-transfer/index.md", "title": "Project Transfers"}
+nav_next: {"path": "supabase/docs/guides/platform/read-replicas/getting-started/index.md", "title": "Getting started with Read Replicas"}
 ---
 
 # 

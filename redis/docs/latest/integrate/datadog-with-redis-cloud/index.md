@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:09:20.331Z"
 content_hash: "b7fbf375c2620e2c669d8913f7500719ddfa6017e724b1c93a36055287fb0ce0"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Datadog with Redis Cloud","→","Datadog with Redis Cloud"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Datadog with Redis Cloud","→","Datadog with Redis Cloud"]
-nav_prev: {"path": "redis/docs/latest/develop/reference/command-arguments/index.md", "title": "Redis command arguments"}
-nav_next: {"path": "redis/docs/latest/develop/data-types/json/developer/index.md", "title": "Developer notes"}
+nav_prev: {"path": "redis/docs/latest/integrate/confluent-with-redis-cloud/index.md", "title": "Confluent with Redis Cloud"}
+nav_next: {"path": "redis/docs/latest/integrate/datadog-with-redis-enterprise/index.md", "title": "Datadog with Redis Software"}
 ---
 
 # Datadog with Redis Cloud

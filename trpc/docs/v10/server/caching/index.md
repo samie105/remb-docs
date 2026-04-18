@@ -10,7 +10,7 @@ content_hash: "34de0be4d37337043ae4b821d7133406898ea553e43ebfa7f60a56bcc75db2e7"
 menu_path: ["Response Caching"]
 section_path: []
 nav_prev: {"path": "trpc/docs/v10/server/authorization/index.md", "title": "Authorization"}
-nav_next: {"path": "trpc/docs/v10/server/data-transformers/index.md", "title": "Data Transformers"}
+nav_next: {"path": "trpc/docs/v10/server/context/index.md", "title": "Context"}
 ---
 
 The below examples uses [Vercel's edge caching](https://vercel.com/docs/edge-network/caching) to serve data to your users as fast as possible.

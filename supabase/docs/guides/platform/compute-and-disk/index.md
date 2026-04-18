@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:47:18.995Z"
 content_hash: "ab1cf0a533e2baf99d9e6ab10b3c13c03b95a0e4cc3f236ea66cfd47875f8d6e"
 menu_path: ["Platform","Platform","Platform Configuration","Platform Configuration","Compute and Disk","Compute and Disk"]
 section_path: ["Platform","Platform","Platform Configuration","Platform Configuration","Compute and Disk","Compute and Disk"]
-nav_prev: {"path": "supabase/docs/guides/platform/cost-control/index.md", "title": "Control your costs"}
-nav_next: {"path": "supabase/docs/guides/platform/credits/index.md", "title": "Credits"}
+nav_prev: {"path": "supabase/docs/guides/platform/clone-project/index.md", "title": "Restore to a new project"}
+nav_next: {"path": "supabase/docs/guides/platform/cost-control/index.md", "title": "Control your costs"}
 ---
 
 # 

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:40:39.790Z"
 content_hash: "82eb46ecffe115a15e394158f85343fed9ee8cac0de0df3d60573193d86c5f1b"
 menu_path: ["PostgreSQL: Documentation: 18: O.4. pg_resetxlog renamed to pg_resetwal"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/infoschema-foreign-table-options.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.30.\u00a0foreign_table_options"}
-nav_next: {"path": "postgres/docs/current/seg.html/index.md", "title": "PostgreSQL: Documentation: 18: F.39.\u00a0seg \u2014 a datatype for line segments or floating point intervals"}
+nav_prev: {"path": "postgres/docs/current/app-pgresetwal.html/index.md", "title": "PostgreSQL: Documentation: 18: pg_resetwal"}
+nav_next: {"path": "postgres/docs/current/app-pgrestore.html/index.md", "title": "PostgreSQL: Documentation: 18: pg_restore"}
 ---
 
 Development Versions: [devel](https://www.postgresql.org/docs/devel/app-pgresetxlog.html "PostgreSQL devel - O.4. pg_resetxlog renamed to pg_resetwal")

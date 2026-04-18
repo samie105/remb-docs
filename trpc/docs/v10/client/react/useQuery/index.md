@@ -10,7 +10,7 @@ content_hash: "d90381c5f8cb81ea64a758bf50d432268d26f8595401da7260731c385629bac2"
 menu_path: ["useQuery()"]
 section_path: []
 nav_prev: {"path": "trpc/docs/v10/client/react/useQueries/index.md", "title": "useQueries()"}
-nav_next: {"path": "trpc/docs/v10/client/vanilla/index.md", "title": "tRPC Client"}
+nav_next: {"path": "trpc/docs/v10/client/react/useUtils/index.md", "title": "useUtils"}
 ---
 
 note

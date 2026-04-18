@@ -10,7 +10,7 @@ content_hash: "eabd386bfb2ef3817a3f76d48bf682f0c341cfdd800ee8bf254d884ab78f1927"
 menu_path: ["Usage with Fastify"]
 section_path: []
 nav_prev: {"path": "trpc/docs/v9/express/index.md", "title": "Usage with Express.js"}
-nav_next: {"path": "trpc/docs/v9/header/index.md", "title": "Custom header"}
+nav_next: {"path": "trpc/docs/v9/further-reading/index.md", "title": "Further Reading"}
 ---
 
 ## Example app[​](#example-app "Direct link to Example app")

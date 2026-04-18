@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:36:22.801Z"
 content_hash: "7a25f603caa6a23276814a561f50c37f2e2209d7ac9a53c91ae765738f5d1f0c"
 menu_path: ["Auth","Auth","Flows (How-tos)","Flows (How-tos)","Email (Magic Link or OTP)","Email (Magic Link or OTP)"]
 section_path: ["Auth","Auth","Flows (How-tos)","Flows (How-tos)","Email (Magic Link or OTP)","Email (Magic Link or OTP)"]
-nav_prev: {"path": "supabase/docs/guides/auth/auth-anonymous/index.md", "title": "Anonymous Sign-Ins"}
-nav_next: {"path": "supabase/docs/guides/auth/auth-captcha/index.md", "title": "Enable CAPTCHA Protection"}
+nav_prev: {"path": "supabase/docs/guides/auth/auth-captcha/index.md", "title": "Enable CAPTCHA Protection"}
+nav_next: {"path": "supabase/docs/guides/auth/auth-email-templates/index.md", "title": "Email Templates"}
 ---
 
 # 

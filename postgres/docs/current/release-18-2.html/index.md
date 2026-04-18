@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:43:54.644Z"
 content_hash: "4710eb810aa85766ddc9711b94bf8db46d787bf2c9d852a2dbd60e92388b357e"
 menu_path: ["PostgreSQL: Documentation: 18: E.2. Release 18.2"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/sql-dropdatabase.html/index.md", "title": "PostgreSQL: Documentation: 18: DROP DATABASE"}
-nav_next: {"path": "postgres/docs/current/catalog-pg-statistic-ext-data.html/index.md", "title": "PostgreSQL: Documentation: 18: 52.53.\u00a0pg_statistic_ext_data"}
+nav_prev: {"path": "postgres/docs/current/release-18-1.html/index.md", "title": "PostgreSQL: Documentation: 18: E.3.\u00a0Release 18.1"}
+nav_next: {"path": "postgres/docs/current/release-18-3.html/index.md", "title": "PostgreSQL: Documentation: 18: E.1.\u00a0Release 18.3"}
 ---
 
 February 26, 2026: [PostgreSQL 18.3, 17.9, 16.13, 15.17, and 14.22 Released!](/about/news/postgresql-183-179-1613-1517-and-1422-released-3246/)

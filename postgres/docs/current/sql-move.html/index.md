@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:40:18.117Z"
 content_hash: "60d76d642ddd5deca55cf2f0f1ca4bb05e2615a8e252cf4b7c295e4a2e07cc9b"
 menu_path: ["PostgreSQL: Documentation: 18: MOVE"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/ddl-others.html/index.md", "title": "PostgreSQL: Documentation: 18: 5.14.\u00a0Other Database Objects"}
-nav_next: {"path": "postgres/docs/current/xaggr.html/index.md", "title": "PostgreSQL: Documentation: 18: 36.12.\u00a0User-Defined Aggregates"}
+nav_prev: {"path": "postgres/docs/current/sql-merge.html/index.md", "title": "PostgreSQL: Documentation: 18: MERGE"}
+nav_next: {"path": "postgres/docs/current/sql-notify.html/index.md", "title": "PostgreSQL: Documentation: 18: NOTIFY"}
 ---
 
 MOVE — position a cursor

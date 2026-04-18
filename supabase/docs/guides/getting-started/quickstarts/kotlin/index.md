@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:58:15.501Z"
 content_hash: "c26dbbeb4206938409f9ae6a866f625aa4689cde6c8048c3e8374d90fb764218"
 menu_path: ["Start with Supabase","Start with Supabase","Framework Quickstarts","Framework Quickstarts","Android Kotlin","Android Kotlin"]
 section_path: ["Start with Supabase","Start with Supabase","Framework Quickstarts","Framework Quickstarts","Android Kotlin","Android Kotlin"]
-nav_prev: {"path": "supabase/docs/guides/getting-started/quickstarts/laravel/index.md", "title": "Use Supabase with Laravel"}
-nav_next: {"path": "supabase/docs/guides/getting-started/quickstarts/nextjs/index.md", "title": "Use Supabase with Next.js"}
+nav_prev: {"path": "supabase/docs/guides/getting-started/quickstarts/ios-swiftui/index.md", "title": "Use Supabase with iOS and SwiftUI"}
+nav_next: {"path": "supabase/docs/guides/getting-started/quickstarts/laravel/index.md", "title": "Use Supabase with Laravel"}
 ---
 
 # 

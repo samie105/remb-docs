@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:34:51.666Z"
 content_hash: "0aec8458d64e65d08e883611180ea8787be10ddc4821e9facb25544593377290"
 menu_path: ["AI & Vectors","AI & Vectors","Learn","Learn","Vector columns","Vector columns"]
 section_path: ["AI & Vectors","AI & Vectors","Learn","Learn","Vector columns","Vector columns"]
-nav_prev: {"path": "supabase/docs/guides/ai/vector-indexes/index.md", "title": "Vector indexes"}
-nav_next: {"path": "supabase/docs/guides/api/api-keys/index.md", "title": "Understanding API keys"}
+nav_prev: {"path": "supabase/docs/guides/ai/vecs-python-client/index.md", "title": "Python client"}
+nav_next: {"path": "supabase/docs/guides/ai/vector-indexes/index.md", "title": "Vector indexes"}
 ---
 
 # 

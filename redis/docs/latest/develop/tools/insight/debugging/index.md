@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:07:23.973Z"
 content_hash: "228d4747923df8adb5a87dd5059eeb4d8c7c22fc244f013e47e0654d92449667"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Client tools","→","Client tools","→\n      \n        Redis Insight","→","Redis Insight","→\n      \n        Redis Insight debugging information","→","Redis Insight debugging information"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Client tools","→","Client tools","→\n      \n        Redis Insight","→","Redis Insight","→\n      \n        Redis Insight debugging information","→","Redis Insight debugging information"]
-nav_prev: {"path": "redis/docs/latest/operate/oss_and_stack/stack-with-enterprise/deprecated-features/triggers-and-functions/concepts/index.md", "title": "Concepts"}
-nav_next: {"path": "redis/docs/latest/develop/clients/nodejs/error-handling/index.md", "title": "Error handling"}
+nav_prev: {"path": "redis/docs/latest/develop/tools/insight/copilot-faq/index.md", "title": "Redis Copilot FAQ"}
+nav_next: {"path": "redis/docs/latest/develop/tools/insight/insight-stream-consumer/index.md", "title": "Manage streams and consumer groups in Redis Insight"}
 ---
 
 # Redis Insight debugging information

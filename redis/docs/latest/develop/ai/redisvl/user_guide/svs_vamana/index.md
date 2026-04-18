@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:15:06.733Z"
 content_hash: "5839b20fa2afc1c30fc7bc2baecc33d1ed895756da43e209233c3a91b4ed8296"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        RedisVL","→","RedisVL","→\n      \n        User Guides","→","User Guides","→\n      \n        SVS-VAMANA Vector Search","→","SVS-VAMANA Vector Search"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        RedisVL","→","RedisVL","→\n      \n        User Guides","→","User Guides","→\n      \n        SVS-VAMANA Vector Search","→","SVS-VAMANA Vector Search"]
-nav_prev: {"path": "redis/docs/latest/integrate/rust-redis/index.md", "title": "Rust client for Redis"}
-nav_next: {"path": "redis/docs/latest/operate/oss_and_stack/management/troubleshooting/index.md", "title": "Troubleshooting Redis"}
+nav_prev: {"path": "redis/docs/latest/develop/ai/redisvl/user_guide/session_manager/index.md", "title": "LLM Session Memory"}
+nav_next: {"path": "redis/docs/latest/develop/ai/redisvl/user_guide/threshold_optimization/index.md", "title": "Threshold Optimization"}
 ---
 
 # SVS-VAMANA Vector Search

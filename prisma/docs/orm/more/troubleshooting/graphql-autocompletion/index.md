@@ -10,7 +10,7 @@ content_hash: "121ce0ac3b2438a9986e54eb79e095e0c31da07c1904f54554e64fdd66517ffc"
 menu_path: ["GraphQL autocompletion"]
 section_path: []
 nav_prev: {"path": "prisma/docs/orm/more/troubleshooting/check-constraints/index.md", "title": "Check constraints"}
-nav_next: {"path": "prisma/docs/orm/more/troubleshooting/nextjs/index.md", "title": "Next.js"}
+nav_next: {"path": "prisma/docs/orm/more/troubleshooting/many-to-many-relations/index.md", "title": "Many-to-many relations"}
 ---
 
 Troubleshooting

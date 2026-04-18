@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:43:47.125Z"
 content_hash: "ce50e0d8a72c3ad1b2423d8ab714cfefa22d0f249e9ed441e903020c4815ed29"
 menu_path: ["Next.js"]
 section_path: []
-nav_prev: {"path": "prisma/docs/orm/more/troubleshooting/graphql-autocompletion/index.md", "title": "GraphQL autocompletion"}
-nav_next: {"path": "prisma/docs/orm/more/troubleshooting/many-to-many-relations/index.md", "title": "Many-to-many relations"}
+nav_prev: {"path": "prisma/docs/orm/more/troubleshooting/many-to-many-relations/index.md", "title": "Many-to-many relations"}
+nav_next: {"path": "prisma/docs/orm/more/troubleshooting/nuxt/index.md", "title": "Nuxt"}
 ---
 
 Best practices and troubleshooting for using Prisma ORM with Next.js applications

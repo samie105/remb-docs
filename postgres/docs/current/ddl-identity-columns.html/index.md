@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:42:42.486Z"
 content_hash: "1b2d40ad6b7b3a4dc75c3f95b3b5e79429aa0372f7e2a19eb4c7799be49fc7ce"
 menu_path: ["PostgreSQL: Documentation: 18: 5.3. Identity Columns"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/xfunc-pl.html/index.md", "title": "PostgreSQL: Documentation: 18: 36.8.\u00a0Procedural Language Functions"}
-nav_next: {"path": "postgres/docs/current/contrib-dblink-connect-u.html/index.md", "title": "PostgreSQL: Documentation: 18: dblink_connect_u"}
+nav_prev: {"path": "postgres/docs/current/ddl-generated-columns.html/index.md", "title": "PostgreSQL: Documentation: 18: 5.4.\u00a0Generated Columns"}
+nav_next: {"path": "postgres/docs/current/ddl-inherit.html/index.md", "title": "PostgreSQL: Documentation: 18: 5.11.\u00a0Inheritance"}
 ---
 
 An identity column is a special column that is generated automatically from an implicit sequence. It can be used to generate key values.

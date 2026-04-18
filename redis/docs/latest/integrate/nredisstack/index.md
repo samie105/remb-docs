@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:50:31.627Z"
 content_hash: "697affa240a188fe8b78697edba6e3ea8680b47e20c08d0936b2b9034acf95fb"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        C#/.NET client for Redis","→","C#/.NET client for Redis"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        C#/.NET client for Redis","→","C#/.NET client for Redis"]
-nav_prev: {"path": "redis/docs/latest/develop/use-cases/rate-limiter/nodejs/index.md", "title": "Token bucket rate limiter with Redis and Node.js"}
-nav_next: {"path": "redis/docs/latest/integrate/redis-data-integration/data-pipelines/prepare-dbs/aws-aurora-rds/aws-aur-mysql/index.md", "title": "Prepare AWS Aurora MySQL/AWS RDS MySQL for RDI"}
+nav_prev: {"path": "redis/docs/latest/integrate/node-redis/index.md", "title": "Node.js client for Redis"}
+nav_next: {"path": "redis/docs/latest/integrate/php-redis/index.md", "title": "PHP client for Redis"}
 ---
 
 # C#/.NET client for Redis

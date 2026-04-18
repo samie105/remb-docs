@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:52:19.745Z"
 content_hash: "4aa3a4965de1abf73ed140dd776682089d0a8f3d6eec0909d05a335eef37e32e"
 menu_path: ["PostgreSQL: Documentation: 18: 63.3. Index Scanning"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/protocol-replication.html/index.md", "title": "PostgreSQL: Documentation: 18: 54.4.\u00a0Streaming Replication Protocol"}
-nav_next: {"path": "postgres/docs/current/external-pl.html/index.md", "title": "PostgreSQL: Documentation: 18: H.3.\u00a0Procedural Languages"}
+nav_prev: {"path": "postgres/docs/current/index-locking.html/index.md", "title": "PostgreSQL: Documentation: 18: 63.4.\u00a0Index Locking Considerations"}
+nav_next: {"path": "postgres/docs/current/index-unique-checks.html/index.md", "title": "PostgreSQL: Documentation: 18: 63.5.\u00a0Index Uniqueness Checks"}
 ---
 
 In an index scan, the index access method is responsible for regurgitating the TIDs of all the tuples it has been told about that match the _scan keys_. The access method is _not_ involved in actually fetching those tuples from the index's parent table, nor in determining whether they pass the scan's visibility test or other conditions.

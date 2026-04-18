@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:32:17.060Z"
 content_hash: "14abc708a401bafe26420a5a3128cc7d4ae4ea83211e5ad5a12dbd973a482c44"
 menu_path: ["PostgreSQL: Documentation: 18: CREATE DOMAIN"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/infoschema-domain-constraints.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.21.\u00a0domain_constraints"}
-nav_next: {"path": "postgres/docs/current/libpq-notice-processing.html/index.md", "title": "PostgreSQL: Documentation: 18: 32.13.\u00a0Notice Processing"}
+nav_prev: {"path": "postgres/docs/current/sql-createdatabase.html/index.md", "title": "PostgreSQL: Documentation: 18: CREATE DATABASE"}
+nav_next: {"path": "postgres/docs/current/sql-createopfamily.html/index.md", "title": "PostgreSQL: Documentation: 18: CREATE OPERATOR FAMILY"}
 ---
 
 CREATE DOMAIN — define a new domain

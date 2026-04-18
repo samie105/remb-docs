@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:42:13.288Z"
 content_hash: "7dcdf16dc78aec8c9dc8da4d015ee8cc45223a2c68b818d59afa6a3cf4316089"
 menu_path: ["PostgreSQL: Documentation: 18: dblink"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/sql-declare.html/index.md", "title": "PostgreSQL: Documentation: 18: DECLARE"}
-nav_next: {"path": "postgres/docs/current/sql-syntax-calling-funcs.html/index.md", "title": "PostgreSQL: Documentation: 18: 4.3.\u00a0Calling Functions"}
+nav_prev: {"path": "postgres/docs/current/contrib-dblink-fetch.html/index.md", "title": "PostgreSQL: Documentation: 18: dblink_fetch"}
+nav_next: {"path": "postgres/docs/current/contrib-dblink-get-notify.html/index.md", "title": "PostgreSQL: Documentation: 18: dblink_get_notify"}
 ---
 
 dblink — executes a query in a remote database

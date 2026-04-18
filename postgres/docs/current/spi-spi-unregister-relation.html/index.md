@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:45:24.555Z"
 content_hash: "216a9827dec2a8fb384fdf6bc5683bf485b9f2cd57eb4bc9b6b0b277dc8e2f41"
 menu_path: ["PostgreSQL: Documentation: 18: SPI_unregister_relation"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/ddl-depend.html/index.md", "title": "PostgreSQL: Documentation: 18: 5.15.\u00a0Dependency Tracking"}
-nav_next: {"path": "postgres/docs/current/event-trigger-interface.html/index.md", "title": "PostgreSQL: Documentation: 18: 38.2.\u00a0Writing Event Trigger Functions in C"}
+nav_prev: {"path": "postgres/docs/current/spi-spi-start-transaction.html/index.md", "title": "PostgreSQL: Documentation: 18: SPI_start_transaction"}
+nav_next: {"path": "postgres/docs/current/spi-transaction.html/index.md", "title": "PostgreSQL: Documentation: 18: 45.4.\u00a0Transaction Management"}
 ---
 
 February 26, 2026: [PostgreSQL 18.3, 17.9, 16.13, 15.17, and 14.22 Released!](/about/news/postgresql-183-179-1613-1517-and-1422-released-3246/)

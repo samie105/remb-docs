@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:49:28.104Z"
 content_hash: "907e56204a650cf9fc86fab319371c789ecb0b3b25bad67450419f7e35567faf"
 menu_path: ["Write your own SQL"]
 section_path: []
-nav_prev: {"path": "prisma/docs/orm/prisma-client/type-safety/operating-against-partial-structures-of-model-types/index.md", "title": "Operating against partial structures of your model types"}
-nav_next: {"path": "prisma/docs/orm/prisma-client/type-safety/prisma-type-system/index.md", "title": "How to use Prisma ORM's type system"}
+nav_prev: {"path": "prisma/docs/orm/prisma-client/type-safety/prisma-type-system/index.md", "title": "How to use Prisma ORM's type system"}
+nav_next: {"path": "prisma/docs/orm/prisma-client/using-raw-sql/raw-queries/index.md", "title": "Raw queries"}
 ---
 
 Using Raw SQL

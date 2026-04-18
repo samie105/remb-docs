@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:58:03.197Z"
 content_hash: "e10a78802637e7f086bafd339cbacc848b445ecf0e06df03b1f8e18d23243688"
 menu_path: [".npmrc support"]
 section_path: []
-nav_prev: {"path": "bun/bun/docs/pm/overrides/index.md", "title": "Overrides and resolutions"}
-nav_next: {"path": "bun/bun/docs/pm/scopes-registries/index.md", "title": "Scopes and registries"}
+nav_prev: {"path": "bun/bun/docs/pm/lockfile/index.md", "title": "Lockfile"}
+nav_next: {"path": "bun/bun/docs/pm/overrides/index.md", "title": "Overrides and resolutions"}
 ---
 
 # set an auth token for the registry

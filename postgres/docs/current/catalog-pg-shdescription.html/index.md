@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:39:40.471Z"
 content_hash: "ec33eba0296a066f95f54c23df4e9dd14d317e73ae67ad664c0e23485760d178"
 menu_path: ["PostgreSQL: Documentation: 18: 52.49. pg_shdescription"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/xoper-optimization.html/index.md", "title": "PostgreSQL: Documentation: 18: 36.15.\u00a0Operator Optimization Information"}
-nav_next: {"path": "postgres/docs/current/spi-spi-getrelname.html/index.md", "title": "PostgreSQL: Documentation: 18: SPI_getrelname"}
+nav_prev: {"path": "postgres/docs/current/catalog-pg-shdepend.html/index.md", "title": "PostgreSQL: Documentation: 18: 52.48.\u00a0pg_shdepend"}
+nav_next: {"path": "postgres/docs/current/catalog-pg-shseclabel.html/index.md", "title": "PostgreSQL: Documentation: 18: 52.50.\u00a0pg_shseclabel"}
 ---
 
 Development Versions: [devel](https://www.postgresql.org/docs/devel/catalog-pg-shdescription.html "PostgreSQL devel - 52.49. pg_shdescription")

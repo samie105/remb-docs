@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:42:38.702Z"
 content_hash: "5d77fc549ef636bc32f9d4b7c9f5b8eccc154491db7ae01656e30ecb96982b0c"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Redis Open Source and Redis Software","→","Redis Open Source and Redis Software","→\n      \n        Deprecated Redis Open Source features and modules","→","Deprecated Redis Open Source features and modules","→\n      \n        Triggers and functions","→","Triggers and functions","→\n      \n        Quick start using Redis Insight","→","Quick start using Redis Insight"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Redis Open Source and Redis Software","→","Redis Open Source and Redis Software","→\n      \n        Deprecated Redis Open Source features and modules","→","Deprecated Redis Open Source features and modules","→\n      \n        Triggers and functions","→","Triggers and functions","→\n      \n        Quick start using Redis Insight","→","Quick start using Redis Insight"]
-nav_prev: {"path": "redis/docs/latest/operate/rc/databases/rdi/quick-start/index.md", "title": "RDI on Redis Cloud quick start"}
-nav_next: {"path": "redis/docs/latest/develop/use-cases/rate-limiter/index.md", "title": "Token bucket rate limiter with Redis"}
+nav_prev: {"path": "redis/docs/latest/operate/oss_and_stack/stack-with-enterprise/deprecated-features/triggers-and-functions/quick_start_cli/index.md", "title": "Quick start using redis-cli"}
+nav_next: {"path": "redis/docs/latest/operate/oss_and_stack/stack-with-enterprise/enterprise-capabilities/index.md", "title": "Redis Software and Redis Open Source feature compatibility"}
 ---
 
 # Quick start using Redis Insight

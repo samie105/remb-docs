@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:53:45.238Z"
 content_hash: "886a1207a996dd973598a28b8e289dd34bf8d62f0bd0e3ddfa90978c317a9c4a"
 menu_path: ["PostgreSQL: Documentation: 18: 63.5. Index Uniqueness Checks"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/sql-call.html/index.md", "title": "PostgreSQL: Documentation: 18: CALL"}
-nav_next: {"path": "postgres/docs/current/runtime-config-connection.html/index.md", "title": "PostgreSQL: Documentation: 18: 19.3.\u00a0Connections and Authentication"}
+nav_prev: {"path": "postgres/docs/current/index-scanning.html/index.md", "title": "PostgreSQL: Documentation: 18: 63.3.\u00a0Index Scanning"}
+nav_next: {"path": "postgres/docs/current/indexes-examine.html/index.md", "title": "PostgreSQL: Documentation: 18: 11.12.\u00a0Examining Index Usage"}
 ---
 
 PostgreSQL enforces SQL uniqueness constraints using _unique indexes_, which are indexes that disallow multiple entries with identical keys. An access method that supports this feature sets `amcanunique` true. (At present, only b-tree supports it.) Columns listed in the `INCLUDE` clause are not considered when enforcing uniqueness.

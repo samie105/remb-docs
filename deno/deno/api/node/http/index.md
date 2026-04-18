@@ -10,7 +10,7 @@ content_hash: "8cd4561d4d65a0759d0658fe0f8069085c2174d362b234d29768c6a79e36d0f3"
 menu_path: ["http - Node documentation"]
 section_path: []
 nav_prev: {"path": "deno/deno/api/node/fs/promises/index.md", "title": "fs/promises - Node documentation"}
-nav_next: {"path": "deno/deno/api/node/https/index.md", "title": "https - Node documentation"}
+nav_next: {"path": "deno/deno/api/node/http2/index.md", "title": "http2 - Node documentation"}
 ---
 
 ### Usage in Deno

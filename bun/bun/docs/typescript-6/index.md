@@ -9,7 +9,7 @@ last_crawled_at: "2026-04-18T17:02:51.566Z"
 content_hash: "84ab917b392c6f706d846e60d3d997982779a255f7aa5d352359ab8bce7e3965"
 menu_path: ["TypeScript 6 and 7"]
 section_path: []
-nav_prev: {"path": "bun/bun/docs/test/writing-tests/index.md", "title": "Writing tests"}
+nav_prev: {"path": "bun/bun/docs/typescript/index.md", "title": "TypeScript"}
 ---
 
 TypeScript 6.0 changed how type definitions are discovered. If you’ve upgraded TypeScript and your editor no longer recognizes `Bun`, `Request`, or other globals from `@types/bun`, here’s how to fix it.

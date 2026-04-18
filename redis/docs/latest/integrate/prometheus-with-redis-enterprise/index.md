@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:05:13.338Z"
 content_hash: "a6f853ba32c842fc8590299099da0b4c71805c210a741f57734a3013edec0444"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Prometheus and Grafana with Redis Software","→","Prometheus and Grafana with Redis Software"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Prometheus and Grafana with Redis Software","→","Prometheus and Grafana with Redis Software"]
-nav_prev: {"path": "redis/docs/latest/develop/clients/nodejs/prob/index.md", "title": "Probabilistic data types"}
-nav_next: {"path": "redis/docs/latest/develop/ai/search-and-query/query/index.md", "title": "Querying data"}
+nav_prev: {"path": "redis/docs/latest/integrate/prometheus-with-redis-cloud/index.md", "title": "Prometheus and Grafana with Redis Cloud"}
+nav_next: {"path": "redis/docs/latest/integrate/pulumi-provider-for-redis-cloud/index.md", "title": "Pulumi provider for Redis Cloud"}
 ---
 
 # Prometheus and Grafana with Redis Software

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:32:25.772Z"
 content_hash: "186f97f5acb2f002b31b63425b987948df86e36e2b60ff9a545db97101196854"
 menu_path: ["PostgreSQL: Documentation: 18: 65.2. GiST Indexes"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/libpq-notice-processing.html/index.md", "title": "PostgreSQL: Documentation: 18: 32.13.\u00a0Notice Processing"}
-nav_next: {"path": "postgres/docs/current/sql-createsubscription.html/index.md", "title": "PostgreSQL: Documentation: 18: CREATE SUBSCRIPTION"}
+nav_prev: {"path": "postgres/docs/current/gin.html/index.md", "title": "PostgreSQL: Documentation: 18: 65.4.\u00a0GIN Indexes"}
+nav_next: {"path": "postgres/docs/current/git.html/index.md", "title": "PostgreSQL: Documentation: 18: I.1.\u00a0Getting the Source via Git"}
 ---
 
 ### 65.2.1. Introduction [#](#GIST-INTRO)

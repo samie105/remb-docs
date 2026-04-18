@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:39:51.519Z"
 content_hash: "fe6dbff76d0408f935b5ca4bb598c3dced0db61e44b2dfc7970e0baacd081680"
 menu_path: ["PostgreSQL: Documentation: 18: 35.28. foreign_server_options"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/sasl-authentication.html/index.md", "title": "PostgreSQL: Documentation: 18: 54.3.\u00a0SASL Authentication"}
-nav_next: {"path": "postgres/docs/current/sql-show.html/index.md", "title": "PostgreSQL: Documentation: 18: SHOW"}
+nav_prev: {"path": "postgres/docs/current/infoschema-foreign-data-wrappers.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.27.\u00a0foreign_data_wrappers"}
+nav_next: {"path": "postgres/docs/current/infoschema-foreign-servers.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.29.\u00a0foreign_servers"}
 ---
 
 Development Versions: [devel](https://www.postgresql.org/docs/devel/infoschema-foreign-server-options.html "PostgreSQL devel - 35.28. foreign_server_options")

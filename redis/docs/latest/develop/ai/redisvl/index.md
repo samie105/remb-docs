@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:44:35.122Z"
 content_hash: "b2451e8f82b6f81ad5e7dbce9a163c6a0d06ca01747966a8ed989224c421ce46"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        RedisVL","→","RedisVL"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        RedisVL","→","RedisVL"]
-nav_prev: {"path": "redis/docs/latest/develop/use-cases/leaderboard/redis-py/index.md", "title": "Redis leaderboard with redis-py"}
-nav_next: {"path": "redis/docs/latest/integrate/redisvl/index.md", "title": "RedisVL"}
+nav_prev: {"path": "redis/docs/latest/commands/redis-8-6-commands/index.md", "title": "Redis 8.6 Commands Reference"}
+nav_next: {"path": "redis/docs/latest/develop/ai/redisvl/api/index.md", "title": "RedisVL API"}
 ---
 
 # RedisVL

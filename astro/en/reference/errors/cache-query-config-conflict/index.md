@@ -10,7 +10,7 @@ content_hash: "38e3c678b6c974ccf90947daf7484feaf41ebc1cf60937983c47e2f7874574c3"
 menu_path: ["Conflicting cache query configuration."]
 section_path: []
 nav_prev: {"path": "astro/en/reference/errors/cache-provider-not-found/index.md", "title": "Cache provider not found."}
-nav_next: {"path": "astro/en/reference/errors/cannot-extract-font-type/index.md", "title": "Cannot extract the font type from the given URL."}
+nav_next: {"path": "astro/en/reference/errors/cannot-determine-weight-and-style-from-font-file/index.md", "title": "Cannot determine weight and style from font file."}
 ---
 
 # Conflicting cache query configuration.

@@ -10,7 +10,7 @@ content_hash: "de24ff36aae6fbd4e5b94360979eb7212a63591f7dbfccfdabfa3e67eae989cb"
 menu_path: ["Catalogs"]
 section_path: []
 nav_prev: {"path": "bun/bun/docs/pm/bunx/index.md", "title": "bunx"}
-nav_next: {"path": "bun/bun/docs/pm/cli/audit/index.md", "title": "bun audit"}
+nav_next: {"path": "bun/bun/docs/pm/cli/add/index.md", "title": "bun add"}
 ---
 
 Catalogs in Bun let you share common dependency versions across multiple packages in a monorepo. Rather than specifying the same versions repeatedly in each workspace package, you define them once in the root package.json and reference them consistently throughout your project.

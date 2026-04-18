@@ -10,7 +10,7 @@ content_hash: "af98c4a38bd20358191b64be66cfcb5e79b455a31d8ae878512ab21ec1a99afd"
 menu_path: ["Fine-Grained Authorization (Permit)"]
 section_path: []
 nav_prev: {"path": "prisma/docs/orm/prisma-client/client-extensions/shared-extensions/index.md", "title": "Shared Prisma Client extensions"}
-nav_next: {"path": "prisma/docs/orm/prisma-client/deployment/edge/deploy-to-cloudflare/index.md", "title": "Deploy to Cloudflare Workers & Pages"}
+nav_next: {"path": "prisma/docs/orm/prisma-client/client-extensions/type-utilities/index.md", "title": "Type utilities"}
 ---
 
 Learn how to implement RBAC, ABAC, and ReBAC authorization in your Prisma applications

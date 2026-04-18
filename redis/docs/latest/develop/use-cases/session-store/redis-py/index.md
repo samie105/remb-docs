@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:44:22.375Z"
 content_hash: "bc8c68b1de2ded0e8703099751a9d8119632c893b2bf78575e6fd80dbb44e2b3"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Redis session store","→","Redis session store","→\n      \n        Redis session store with redis-py","→","Redis session store with redis-py"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Redis session store","→","Redis session store","→\n      \n        Redis session store with redis-py","→","Redis session store with redis-py"]
-nav_prev: {"path": "redis/docs/latest/develop/use-cases/time-series-dashboard/redis-py/index.md", "title": "Rolling sensor graph demo with Redis and redis-py"}
-nav_next: {"path": "redis/docs/latest/develop/use-cases/leaderboard/redis-py/index.md", "title": "Redis leaderboard with redis-py"}
+nav_prev: {"path": "redis/docs/latest/develop/use-cases/session-store/php/index.md", "title": "Redis session store with PHP"}
+nav_next: {"path": "redis/docs/latest/develop/use-cases/session-store/ruby/index.md", "title": "Redis session store with Ruby"}
 ---
 
 # Redis session store with redis-py

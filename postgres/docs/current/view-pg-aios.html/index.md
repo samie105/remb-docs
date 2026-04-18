@@ -10,7 +10,7 @@ content_hash: "cf8b2679d92a2795da7b9e45f9abee3b1e62c1646ba8ce0ed000ed1f493ccb65"
 menu_path: ["PostgreSQL: Documentation: 18: 53.2. pg_aios"]
 section_path: []
 nav_prev: {"path": "postgres/docs/current/vacuumlo.html/index.md", "title": "PostgreSQL: Documentation: 18: vacuumlo"}
-nav_next: {"path": "postgres/docs/current/logical-replication-publication.html/index.md", "title": "PostgreSQL: Documentation: 18: 29.1.\u00a0Publication"}
+nav_next: {"path": "postgres/docs/current/view-pg-available-extension-versions.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.4.\u00a0pg_available_extension_versions"}
 ---
 
 Development Versions: [devel](https://www.postgresql.org/docs/devel/view-pg-aios.html "PostgreSQL devel - 53.2. pg_aios")

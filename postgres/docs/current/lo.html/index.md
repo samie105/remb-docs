@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:48:54.484Z"
 content_hash: "f20a0c5eedde61c562b53951987c567963ecbceadea92cddb24d1dd50b3654ad"
 menu_path: ["PostgreSQL: Documentation: 18: F.21. lo — manage large objects"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/wal-reliability.html/index.md", "title": "PostgreSQL: Documentation: 18: 28.1.\u00a0Reliability"}
-nav_next: {"path": "postgres/docs/current/sql-droprole.html/index.md", "title": "PostgreSQL: Documentation: 18: DROP ROLE"}
+nav_prev: {"path": "postgres/docs/current/lo-implementation.html/index.md", "title": "PostgreSQL: Documentation: 18: 33.2.\u00a0Implementation Features"}
+nav_next: {"path": "postgres/docs/current/locale.html/index.md", "title": "PostgreSQL: Documentation: 18: 23.1.\u00a0Locale Support"}
 ---
 
 Development Versions: [devel](https://www.postgresql.org/docs/devel/lo.html "PostgreSQL devel - F.21. lo — manage large objects")

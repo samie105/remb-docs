@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:56:47.329Z"
 content_hash: "03492ac409f9427fe4065426eacbc4b8b4e261602be5817fbaf8fce140904d65"
 menu_path: ["Database","Database","Debugging","Debugging","Timeouts","Timeouts"]
 section_path: ["Database","Database","Debugging","Debugging","Timeouts","Timeouts"]
-nav_prev: {"path": "supabase/docs/guides/database/postgres/row-level-security/index.md", "title": "Row Level Security"}
-nav_next: {"path": "supabase/docs/guides/database/postgres/which-version-of-postgres/index.md", "title": "Print Postgres version"}
+nav_prev: {"path": "supabase/docs/guides/database/postgres/setup-replication-external/index.md", "title": "Replicate to another Postgres database using Logical Replication"}
+nav_next: {"path": "supabase/docs/guides/database/postgres/triggers/index.md", "title": "Postgres Triggers"}
 ---
 
 # 

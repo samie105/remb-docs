@@ -9,7 +9,8 @@ last_crawled_at: "2026-04-18T16:54:40.562Z"
 content_hash: "dc3b0dc5bc2c4d44837f530c2fd6fb770bce636bbc9d91a34c1c139cd755dd85"
 menu_path: ["PostgreSQL: Documentation: 18: vacuumdb"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/libpq-async.html/index.md", "title": "PostgreSQL: Documentation: 18: 32.4.\u00a0Asynchronous Command Processing"}
+nav_prev: {"path": "postgres/docs/current/app-reindexdb.html/index.md", "title": "PostgreSQL: Documentation: 18: reindexdb"}
+nav_next: {"path": "postgres/docs/current/basic-archive.html/index.md", "title": "PostgreSQL: Documentation: 18: F.5.\u00a0basic_archive \u2014 an example WAL archive module"}
 ---
 
 vacuumdb — garbage-collect and analyze a PostgreSQL database

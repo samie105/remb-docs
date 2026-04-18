@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:51:21.218Z"
 content_hash: "10fd1dd724ff52373449c4ea9126ff6dacc77c7313327bec927a6389b6b3acf5"
 menu_path: ["PostgreSQL: Documentation: 18: VALUES"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/index-locking.html/index.md", "title": "PostgreSQL: Documentation: 18: 63.4.\u00a0Index Locking Considerations"}
-nav_next: {"path": "postgres/docs/current/gin.html/index.md", "title": "PostgreSQL: Documentation: 18: 65.4.\u00a0GIN Indexes"}
+nav_prev: {"path": "postgres/docs/current/sql-vacuum.html/index.md", "title": "PostgreSQL: Documentation: 18: VACUUM"}
+nav_next: {"path": "postgres/docs/current/ssh-tunnels.html/index.md", "title": "PostgreSQL: Documentation: 18: 18.11.\u00a0Secure TCP/IP Connections with SSH Tunnels"}
 ---
 
 ## Description

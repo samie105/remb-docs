@@ -10,7 +10,7 @@ content_hash: "1b24837b9f7b08c47dc810a8c5678155a9c3f072256437d05ecb2fc43ede9049"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Dynatrace with Redis Software","→","Dynatrace with Redis Software"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Dynatrace with Redis Software","→","Dynatrace with Redis Software"]
 nav_prev: {"path": "redis/docs/latest/integrate/dynatrace-with-redis-cloud/index.md", "title": "Dynatrace with Redis Cloud"}
-nav_next: {"path": "redis/docs/latest/develop/ai/redisvl/user_guide/message_history/index.md", "title": "LLM Message History"}
+nav_next: {"path": "redis/docs/latest/integrate/fusioncache/index.md", "title": "FusionCache for C#/.NET"}
 ---
 
 # Dynatrace with Redis Software

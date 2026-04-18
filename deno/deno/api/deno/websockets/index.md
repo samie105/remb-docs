@@ -10,7 +10,7 @@ content_hash: "f5872df1bc4a7b34f742d052fe522c04569fa5a4f003cbf439a416294cbf14e1"
 menu_path: ["WebSockets - Deno documentation"]
 section_path: []
 nav_prev: {"path": "deno/deno/api/deno/testing/index.md", "title": "Testing - Deno documentation"}
-nav_next: {"path": "deno/deno/api/deno/all_symbols/index.md", "title": "All Symbols - Deno documentation"}
+nav_next: {"path": "deno/deno/api/deno/~/Deno/index.md", "title": "namespace Deno"}
 ---
 
 ### Functions [#](#Functions)

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:34:37.838Z"
 content_hash: "7da4ba9583dd056a8d0c5b8da3d743165c4584559e0130da80f84958dc0a1f1c"
 menu_path: ["PostgreSQL: Documentation: 18: DELETE"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/rangetypes.html/index.md", "title": "PostgreSQL: Documentation: 18: 8.17.\u00a0Range Types"}
-nav_next: {"path": "postgres/docs/current/error-message-reporting.html/index.md", "title": "PostgreSQL: Documentation: 18: 55.2.\u00a0Reporting Errors Within the Server"}
+nav_prev: {"path": "postgres/docs/current/sql-declare.html/index.md", "title": "PostgreSQL: Documentation: 18: DECLARE"}
+nav_next: {"path": "postgres/docs/current/sql-do.html/index.md", "title": "PostgreSQL: Documentation: 18: DO"}
 ---
 
 DELETE — delete rows of a table

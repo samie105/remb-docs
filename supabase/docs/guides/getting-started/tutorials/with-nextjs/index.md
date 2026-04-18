@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:59:01.712Z"
 content_hash: "b97395d3aaa64906e60ccf9b81a44e13faa86959f1c057c05cdb631c74b4e767"
 menu_path: ["Start with Supabase","Start with Supabase","Web app demos","Web app demos","Next.js","Next.js"]
 section_path: ["Start with Supabase","Start with Supabase","Web app demos","Web app demos","Next.js","Next.js"]
-nav_prev: {"path": "supabase/docs/guides/getting-started/tutorials/with-ionic-vue/index.md", "title": "Build a User Management App with Ionic Vue"}
-nav_next: {"path": "supabase/docs/guides/getting-started/tutorials/with-kotlin/index.md", "title": "Build a Product Management Android App with Jetpack Compose"}
+nav_prev: {"path": "supabase/docs/guides/getting-started/tutorials/with-kotlin/index.md", "title": "Build a Product Management Android App with Jetpack Compose"}
+nav_next: {"path": "supabase/docs/guides/getting-started/tutorials/with-nuxt-3/index.md", "title": "Build a User Management App with Nuxt 3"}
 ---
 
 # 

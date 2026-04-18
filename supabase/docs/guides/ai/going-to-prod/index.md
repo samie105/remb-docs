@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:33:41.806Z"
 content_hash: "7db06491b1a21f40906af38f50b20c50533ec0f4cecbdff7beb2d3b5b41830b7"
 menu_path: ["AI & Vectors","AI & Vectors","Learn","Learn","Going to Production","Going to Production"]
 section_path: ["AI & Vectors","AI & Vectors","Learn","Learn","Going to Production","Going to Production"]
-nav_prev: {"path": "supabase/docs/guides/ai/google-colab/index.md", "title": "Google Colab"}
-nav_next: {"path": "supabase/docs/guides/ai/hugging-face/index.md", "title": "Hugging Face Inference API"}
+nav_prev: {"path": "supabase/docs/guides/ai/examples/semantic-image-search-amazon-titan/index.md", "title": "Semantic Image Search with Amazon Titan"}
+nav_next: {"path": "supabase/docs/guides/ai/google-colab/index.md", "title": "Google Colab"}
 ---
 
 # 

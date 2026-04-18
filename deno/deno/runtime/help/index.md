@@ -10,7 +10,7 @@ content_hash: "499a5e05e93de520164144cc2a640689403f506e65225747cc0fe87bc8041a50"
 menu_path: ["Where to get help"]
 section_path: []
 nav_prev: {"path": "deno/deno/runtime/contributing/examples/index.md", "title": "Contributing an example"}
-nav_next: {"path": "deno/deno/api/deno/~/Deno.jupyter.html/index.md", "title": "function Deno.jupyter.html"}
+nav_next: {"path": "deno/deno/api/index.md", "title": "Deno Namespace APIs"}
 ---
 
 On this page

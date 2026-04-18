@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:46:03.789Z"
 content_hash: "06878952db71484ad9a79b1f78c461cfc887f492ab0443d7980d358dcd9a7301"
 menu_path: ["PostgreSQL: Documentation: 18: 52.39. pg_proc"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/tutorial-advanced-intro.html/index.md", "title": "PostgreSQL: Documentation: 18: 3.1.\u00a0Introduction"}
-nav_next: {"path": "postgres/docs/current/app-pgverifybackup.html/index.md", "title": "PostgreSQL: Documentation: 18: pg_verifybackup"}
+nav_prev: {"path": "postgres/docs/current/catalog-pg-policy.html/index.md", "title": "PostgreSQL: Documentation: 18: 52.38.\u00a0pg_policy"}
+nav_next: {"path": "postgres/docs/current/catalog-pg-publication-namespace.html/index.md", "title": "PostgreSQL: Documentation: 18: 52.41.\u00a0pg_publication_namespace"}
 ---
 
 Column Type

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:42:43.052Z"
 content_hash: "2499f0e36865bb700cf19a9b2e59c127d6d87f08e4d0ee72559f76279c3d710e"
 menu_path: ["PostgreSQL: Documentation: 18: dblink_connect_u"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/ddl-identity-columns.html/index.md", "title": "PostgreSQL: Documentation: 18: 5.3.\u00a0Identity Columns"}
-nav_next: {"path": "postgres/docs/current/bloom.html/index.md", "title": "PostgreSQL: Documentation: 18: F.6.\u00a0bloom \u2014 bloom filter index access method"}
+nav_prev: {"path": "postgres/docs/current/continuous-archiving.html/index.md", "title": "PostgreSQL: Documentation: 18: 25.3.\u00a0Continuous Archiving and Point-in-Time Recovery (PITR)"}
+nav_next: {"path": "postgres/docs/current/contrib-dblink-connect.html/index.md", "title": "PostgreSQL: Documentation: 18: dblink_connect"}
 ---
 
 dblink\_connect\_u — opens a persistent connection to a remote database, insecurely

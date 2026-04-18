@@ -10,7 +10,7 @@ content_hash: "0a41218ca7d5912df3917cca96fe55018291cfc6bce1bbcc4aa590cf7ff16b1a"
 menu_path: ["Auth","Auth","Flows (How-tos)","Flows (How-tos)","Anonymous Sign-Ins","Anonymous Sign-Ins"]
 section_path: ["Auth","Auth","Flows (How-tos)","Flows (How-tos)","Anonymous Sign-Ins","Anonymous Sign-Ins"]
 nav_prev: {"path": "supabase/docs/guides/auth/audit-logs/index.md", "title": "Auth Audit Logs"}
-nav_next: {"path": "supabase/docs/guides/auth/auth-email-passwordless/index.md", "title": "Passwordless email logins"}
+nav_next: {"path": "supabase/docs/guides/auth/auth-captcha/index.md", "title": "Enable CAPTCHA Protection"}
 ---
 
 # 

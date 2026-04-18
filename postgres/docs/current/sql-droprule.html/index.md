@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:37:47.036Z"
 content_hash: "72e6bb397d7767571cee20c021eb9f496bad14c9b635c67713e684a48ca44153"
 menu_path: ["PostgreSQL: Documentation: 18: DROP RULE"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/view-pg-replication-origin-status.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.19.\u00a0pg_replication_origin_status"}
-nav_next: {"path": "postgres/docs/current/lo-implementation.html/index.md", "title": "PostgreSQL: Documentation: 18: 33.2.\u00a0Implementation Features"}
+nav_prev: {"path": "postgres/docs/current/sql-droprole.html/index.md", "title": "PostgreSQL: Documentation: 18: DROP ROLE"}
+nav_next: {"path": "postgres/docs/current/sql-dropschema.html/index.md", "title": "PostgreSQL: Documentation: 18: DROP SCHEMA"}
 ---
 
 February 26, 2026: [PostgreSQL 18.3, 17.9, 16.13, 15.17, and 14.22 Released!](/about/news/postgresql-183-179-1613-1517-and-1422-released-3246/)

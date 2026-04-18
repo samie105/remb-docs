@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:06:19.960Z"
 content_hash: "c8f07442a147204315ef07046e1a5b3d3491a4987ff84020e662c3ec701912aa"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Rolling sensor graph demo with Redis","→","Rolling sensor graph demo with Redis","→\n      \n        Rolling sensor graph demo with Rust","→","Rolling sensor graph demo with Rust"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Rolling sensor graph demo with Redis","→","Rolling sensor graph demo with Redis","→\n      \n        Rolling sensor graph demo with Rust","→","Rolling sensor graph demo with Rust"]
-nav_prev: {"path": "redis/docs/latest/integrate/redis-data-integration/installation/reqsummary/index.md", "title": "Requirements summary"}
-nav_next: {"path": "redis/docs/latest/operate/oss_and_stack/install/archive/install-redis/install-redis-from-source/index.md", "title": "Install Redis from Source"}
+nav_prev: {"path": "redis/docs/latest/develop/use-cases/time-series-dashboard/ruby/index.md", "title": "Rolling sensor graph demo with Redis and Ruby"}
+nav_next: {"path": "redis/docs/latest/develop/whats-new/8-0/index.md", "title": "Redis 8.0"}
 ---
 
 # Rolling sensor graph demo with Rust

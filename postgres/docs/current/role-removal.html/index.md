@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:44:45.748Z"
 content_hash: "1d939a031333fc9b01eb050fd1e1d6a42a921cae30f08dc42c8205d9810eeabe"
 menu_path: ["PostgreSQL: Documentation: 18: 21.4. Dropping Roles"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/release-18-3.html/index.md", "title": "PostgreSQL: Documentation: 18: E.1.\u00a0Release 18.3"}
-nav_next: {"path": "postgres/docs/current/ddl-foreign-data.html/index.md", "title": "PostgreSQL: Documentation: 18: 5.13.\u00a0Foreign Data"}
+nav_prev: {"path": "postgres/docs/current/role-membership.html/index.md", "title": "PostgreSQL: Documentation: 18: 21.3.\u00a0Role Membership"}
+nav_next: {"path": "postgres/docs/current/routine-vacuuming.html/index.md", "title": "PostgreSQL: Documentation: 18: 24.1.\u00a0Routine Vacuuming"}
 ---
 
 Because roles can own database objects and can hold privileges to access other objects, dropping a role is often not just a matter of a quick [`DROP ROLE`](https://www.postgresql.org/docs/current/sql-droprole.html "DROP ROLE"). Any objects owned by the role must first be dropped or reassigned to other owners; and any permissions granted to the role must be revoked.

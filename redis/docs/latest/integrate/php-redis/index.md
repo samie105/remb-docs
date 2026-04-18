@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:59:38.407Z"
 content_hash: "2397b99e3f4d0379ac944dfcd314562bdf19bceac3a8917f598ff3611e6a4a28"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        PHP client for Redis","→","PHP client for Redis"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        PHP client for Redis","→","PHP client for Redis"]
-nav_prev: {"path": "redis/docs/latest/operate/rs/installing-upgrading/install/plan-deployment/index.md", "title": "Plan Redis Software deployment"}
-nav_next: {"path": "redis/docs/latest/develop/reference/protocol-spec/index.md", "title": "Redis serialization protocol specification"}
+nav_prev: {"path": "redis/docs/latest/integrate/nredisstack/index.md", "title": "C#/.NET client for Redis"}
+nav_next: {"path": "redis/docs/latest/integrate/prometheus-with-redis-cloud/index.md", "title": "Prometheus and Grafana with Redis Cloud"}
 ---
 
 # PHP client for Redis

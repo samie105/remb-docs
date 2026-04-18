@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:43:23.723Z"
 content_hash: "4e5423a48ecc9cd4e4b1652a9d01d820e1eccf18eadbb556759417b12a989d9f"
 menu_path: ["PostgreSQL: Documentation: 18: F.32. pg_stat_statements — track statistics of SQL planning and execution"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/view-pg-policies.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.15.\u00a0pg_policies"}
-nav_next: {"path": "postgres/docs/current/logicaldecoding-writer.html/index.md", "title": "PostgreSQL: Documentation: 18: 47.7.\u00a0Logical Decoding Output Writers"}
+nav_prev: {"path": "postgres/docs/current/pgrowlocks.html/index.md", "title": "PostgreSQL: Documentation: 18: F.31.\u00a0pgrowlocks \u2014 show a table's row locking information"}
+nav_next: {"path": "postgres/docs/current/pgstattuple.html/index.md", "title": "PostgreSQL: Documentation: 18: F.33.\u00a0pgstattuple \u2014 obtain tuple-level statistics"}
 ---
 
 The `pg_stat_statements` module provides a means for tracking planning and execution statistics of all SQL statements executed by a server.

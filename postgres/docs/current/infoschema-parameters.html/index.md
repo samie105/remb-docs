@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:45:13.068Z"
 content_hash: "669db239e5e62306fea61d50e2f8102d44763203c615abe545efec79d24238bd"
 menu_path: ["PostgreSQL: Documentation: 18: 35.33. parameters"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/ecpg-commands.html/index.md", "title": "PostgreSQL: Documentation: 18: 34.3.\u00a0Running SQL Commands"}
-nav_next: {"path": "postgres/docs/current/event-trigger-database-login-example.html/index.md", "title": "PostgreSQL: Documentation: 18: 38.5.\u00a0A Database Login Event Trigger Example"}
+nav_prev: {"path": "postgres/docs/current/infoschema-key-column-usage.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.32.\u00a0key_column_usage"}
+nav_next: {"path": "postgres/docs/current/infoschema-referential-constraints.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.34.\u00a0referential_constraints"}
 ---
 
 Column Type

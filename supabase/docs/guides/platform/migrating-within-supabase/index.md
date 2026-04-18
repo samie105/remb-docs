@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:47:47.764Z"
 content_hash: "d139c3ee6277437729991315fb829abd8b0827ebd8d6819d74e0285ce2ad8d7d"
 menu_path: ["Platform","Platform","More","More","More","Migrating within Supabase","Migrating within Supabase","Overview","Overview"]
 section_path: ["Platform","Platform","More","More","More","Migrating within Supabase","Migrating within Supabase","Overview","Overview"]
-nav_prev: {"path": "supabase/docs/guides/platform/migrating-to-supabase/index.md", "title": "Migrating to Supabase"}
-nav_next: {"path": "supabase/docs/guides/platform/multi-factor-authentication/index.md", "title": "Multi-factor Authentication"}
+nav_prev: {"path": "supabase/docs/guides/platform/migrating-to-supabase/vercel-postgres/index.md", "title": "Migrate from Vercel Postgres to Supabase"}
+nav_next: {"path": "supabase/docs/guides/platform/migrating-within-supabase/backup-restore/index.md", "title": "Backup and Restore using the CLI"}
 ---
 
 # 

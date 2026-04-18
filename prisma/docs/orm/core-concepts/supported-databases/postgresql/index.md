@@ -10,7 +10,7 @@ content_hash: "462d165278c52e13d5fc2f75ff169d9da55ab103f06ad8e7b87697b75814288f"
 menu_path: ["PostgreSQL"]
 section_path: []
 nav_prev: {"path": "prisma/docs/orm/core-concepts/supported-databases/mysql/index.md", "title": "MySQL"}
-nav_next: {"path": "prisma/docs/orm/core-concepts/supported-databases/mongodb/index.md", "title": "MongoDB"}
+nav_next: {"path": "prisma/docs/orm/core-concepts/supported-databases/sql-server/index.md", "title": "SQL Server"}
 ---
 
 Supported databases

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:39:10.455Z"
 content_hash: "be9835c546d2951b519280a1757ef5286fa6108ed6664a1ca42afd02df3aadd9"
 menu_path: ["Compatibility Detection ​"]
 section_path: []
-nav_prev: {"path": "vite/guide/discovery/index.md", "title": "Plugin Discovery \u200b"}
-nav_next: {"path": "vite/guide/badges/index.md", "title": "Compatibility Badges \u200b"}
+nav_prev: {"path": "vite/guide/badges/index.md", "title": "Compatibility Badges \u200b"}
+nav_next: {"path": "vite/guide/discovery/index.md", "title": "Plugin Discovery \u200b"}
 ---
 
 [Skip to content](#VPContent)

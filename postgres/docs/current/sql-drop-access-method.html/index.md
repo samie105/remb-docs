@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:46:39.623Z"
 content_hash: "a6623f2ea90918a814cc5a86ea0fb32f596f4d9220b5b78b7f66abd146520af1"
 menu_path: ["PostgreSQL: Documentation: 18: DROP ACCESS METHOD"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/source-format.html/index.md", "title": "PostgreSQL: Documentation: 18: 55.1.\u00a0Formatting"}
-nav_next: {"path": "postgres/docs/current/sql-dropeventtrigger.html/index.md", "title": "PostgreSQL: Documentation: 18: DROP EVENT TRIGGER"}
+nav_prev: {"path": "postgres/docs/current/sql-do.html/index.md", "title": "PostgreSQL: Documentation: 18: DO"}
+nav_next: {"path": "postgres/docs/current/sql-dropcast.html/index.md", "title": "PostgreSQL: Documentation: 18: DROP CAST"}
 ---
 
 DROP ACCESS METHOD — remove an access method

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:59:44.644Z"
 content_hash: "8432fb252b4bff75fa15ca13a894fa680718404ddb12ac72ec4d3e57aeb3d3e8"
 menu_path: ["Platform","Platform","More","More","More","AWS Marketplace","AWS Marketplace","Invoices","Invoices"]
 section_path: ["Platform","Platform","More","More","More","AWS Marketplace","AWS Marketplace","Invoices","Invoices"]
-nav_prev: {"path": "supabase/docs/guides/platform/aws-marketplace/faq/index.md", "title": "AWS Marketplace FAQ"}
-nav_next: {"path": "supabase/docs/guides/platform/aws-marketplace/getting-started/index.md", "title": "Getting Started"}
+nav_prev: {"path": "supabase/docs/guides/platform/aws-marketplace/getting-started/index.md", "title": "Getting Started"}
+nav_next: {"path": "supabase/docs/guides/platform/aws-marketplace/manage-your-subscription/index.md", "title": "Manage your subscription"}
 ---
 
 # 

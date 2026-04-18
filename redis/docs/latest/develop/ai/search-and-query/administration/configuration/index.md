@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:38:35.741Z"
 content_hash: "75f2805a557cec6223dd0a911f2b5266022b8afb0855e28c7822aed83fae0f95"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        Redis Search","→","Redis Search","→\n      \n        Administration","→","Administration","→\n      \n        Configuration parameters","→","Configuration parameters"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        Redis Search","→","Redis Search","→\n      \n        Administration","→","Administration","→\n      \n        Configuration parameters","→","Configuration parameters"]
-nav_prev: {"path": "redis/docs/latest/develop/data-types/compare-data-types/index.md", "title": "Compare data types"}
-nav_next: {"path": "redis/docs/latest/develop/reference/modules/modules-api-ref/index.md", "title": "Modules API reference"}
+nav_prev: {"path": "redis/docs/latest/develop/ai/search-and-query/administration/index.md", "title": "Administration"}
+nav_next: {"path": "redis/docs/latest/develop/ai/search-and-query/administration/design/index.md", "title": "Internal design"}
 ---
 
 # Configuration parameters

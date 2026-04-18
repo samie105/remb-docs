@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:54:04.829Z"
 content_hash: "8579c966a8e1ae1cab7f4fb9443aa4cfcf958ea103d74fb5c09f5c53603e485a"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Redis leaderboard","→","Redis leaderboard","→\n      \n        Redis leaderboard with Go","→","Redis leaderboard with Go"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Redis leaderboard","→","Redis leaderboard","→\n      \n        Redis leaderboard with Go","→","Redis leaderboard with Go"]
-nav_prev: {"path": "redis/docs/latest/develop/ai/search-and-query/indexing/geoindex/index.md", "title": "Geospatial indexing"}
-nav_next: {"path": "redis/docs/latest/develop/use-cases/session-store/go/index.md", "title": "Redis session store with Go"}
+nav_prev: {"path": "redis/docs/latest/develop/use-cases/leaderboard/dotnet/index.md", "title": "Redis leaderboard with .NET"}
+nav_next: {"path": "redis/docs/latest/develop/use-cases/leaderboard/java-jedis/index.md", "title": "Redis leaderboard with Java and Jedis"}
 ---
 
 # Redis leaderboard with Go

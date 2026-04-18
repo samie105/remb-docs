@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:50:36.038Z"
 content_hash: "3b5035df4fa91cb48538b28a5af907a9dad25aadedea73e023287ef7dd8c5e39"
 menu_path: ["PostgreSQL: Documentation: 18: 9.26. Set Returning Functions"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/protocol-overview.html/index.md", "title": "PostgreSQL: Documentation: 18: 54.1.\u00a0Overview"}
-nav_next: {"path": "postgres/docs/current/infoschema-routines.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.45.\u00a0routines"}
+nav_prev: {"path": "postgres/docs/current/functions-matching.html/index.md", "title": "PostgreSQL: Documentation: 18: 9.7.\u00a0Pattern Matching"}
+nav_next: {"path": "postgres/docs/current/functions-statistics.html/index.md", "title": "PostgreSQL: Documentation: 18: 9.31.\u00a0Statistics Information Functions"}
 ---
 
 This section describes functions that possibly return more than one row. The most widely used functions in this class are series generating functions, as detailed in [Table 9.69](https://www.postgresql.org/docs/current/functions-srf.html#FUNCTIONS-SRF-SERIES "Table 9.69. Series Generating Functions") and [Table 9.70](https://www.postgresql.org/docs/current/functions-srf.html#FUNCTIONS-SRF-SUBSCRIPTS "Table 9.70. Subscript Generating Functions"). Other, more specialized set-returning functions are described elsewhere in this manual. See [Section 7.2.1.4](https://www.postgresql.org/docs/current/queries-table-expressions.html#QUERIES-TABLEFUNCTIONS "7.2.1.4. Table Functions") for ways to combine multiple set-returning functions.

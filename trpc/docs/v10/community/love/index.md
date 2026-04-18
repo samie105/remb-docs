@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:35:51.083Z"
 content_hash: "e157823e720533715185fb5d1d507ffac6116c5ac6535e5a92add6afb5e45837"
 menu_path: ["Testimonials / Love"]
 section_path: []
-nav_prev: {"path": "trpc/docs/v10/faq/index.md", "title": "FAQ / Troubleshooting"}
-nav_next: {"path": "trpc/docs/v10/further/index.md", "title": "Extra Information"}
+nav_prev: {"path": "trpc/docs/v10/community/contributing/index.md", "title": "Contributing"}
+nav_next: {"path": "trpc/docs/v10/community/sponsors/index.md", "title": "Sponsors"}
 ---
 
 Version: 10.x

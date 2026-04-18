@@ -9,7 +9,7 @@ last_crawled_at: "2026-04-18T16:52:18.646Z"
 content_hash: "292378e10978b365803d687bffe60a422be99118511e2c2ab30cb7faddec9277"
 menu_path: ["AI & Vectors","AI & Vectors","More","More","More","Vector indexes","Vector indexes","HNSW indexes","HNSW indexes"]
 section_path: ["AI & Vectors","AI & Vectors","More","More","More","Vector indexes","Vector indexes","HNSW indexes","HNSW indexes"]
-nav_prev: {"path": "supabase/docs/guides/ai/quickstarts/text-deduplication/index.md", "title": "Semantic Text Deduplication"}
+nav_prev: {"path": "supabase/docs/guides/ai/vector-indexes/index.md", "title": "Vector indexes"}
 nav_next: {"path": "supabase/docs/guides/ai/vector-indexes/ivf-indexes/index.md", "title": "IVFFlat indexes"}
 ---
 

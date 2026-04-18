@@ -9,7 +9,7 @@ last_crawled_at: "2026-04-18T17:02:19.673Z"
 content_hash: "4e3238280cf0d254be2fb717ef5091d1da25d49f3ccdd32e94229253d6e9d2e3"
 menu_path: ["Dates and times"]
 section_path: []
-nav_prev: {"path": "bun/bun/docs/test/code-coverage/index.md", "title": "Code coverage"}
+nav_prev: {"path": "bun/bun/docs/test/configuration/index.md", "title": "Test configuration"}
 nav_next: {"path": "bun/bun/docs/test/discovery/index.md", "title": "Finding tests"}
 ---
 

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:45:31.275Z"
 content_hash: "0a065ae2edede3e5bcbb9f749a5954ec313e1eab808643c2505a8f0a88e7a87f"
 menu_path: ["PostgreSQL: Documentation: 18: COPY"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/event-trigger-interface.html/index.md", "title": "PostgreSQL: Documentation: 18: 38.2.\u00a0Writing Event Trigger Functions in C"}
-nav_next: {"path": "postgres/docs/current/config-setting.html/index.md", "title": "PostgreSQL: Documentation: 18: 19.1.\u00a0Setting Parameters"}
+nav_prev: {"path": "postgres/docs/current/sql-commit.html/index.md", "title": "PostgreSQL: Documentation: 18: COMMIT"}
+nav_next: {"path": "postgres/docs/current/sql-create-access-method.html/index.md", "title": "PostgreSQL: Documentation: 18: CREATE ACCESS METHOD"}
 ---
 
 COPY — copy data between a file and a table

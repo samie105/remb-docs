@@ -10,7 +10,7 @@ content_hash: "e06c49bd405c9da3a359d372691e5b452b6ef27a54b6d4e95def9f7e14c02f2b"
 menu_path: ["PostgreSQL 18.3 Documentation"]
 section_path: []
 nav_prev: {"path": "postgres/docs/current/bookindex.html/index.md", "title": "Index"}
-nav_next: {"path": "postgres/docs/current/sql-set.html/index.md", "title": "PostgreSQL: Documentation: 18: SET"}
+nav_next: {"path": "postgres/docs/current/amcheck.html/index.md", "title": "PostgreSQL: Documentation: 18: F.1.\u00a0amcheck \u2014 tools to verify table and index consistency"}
 ---
 
 # PostgreSQL 18.3 Documentation

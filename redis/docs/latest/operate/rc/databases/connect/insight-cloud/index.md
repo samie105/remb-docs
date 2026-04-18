@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:43:37.187Z"
 content_hash: "822db0a3af9b923b3f421a822f7aa122c3df75fb42164ea3d80d4446b761fd48"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Cloud","→","Redis Cloud","→\n      \n        Manage databases","→","Manage databases","→\n      \n        Connect to a Redis Cloud database","→","Connect to a Redis Cloud database","→\n      \n        Use Redis Insight on Redis Cloud","→","Use Redis Insight on Redis Cloud"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Cloud","→","Redis Cloud","→\n      \n        Manage databases","→","Manage databases","→\n      \n        Connect to a Redis Cloud database","→","Connect to a Redis Cloud database","→\n      \n        Use Redis Insight on Redis Cloud","→","Use Redis Insight on Redis Cloud"]
-nav_prev: {"path": "redis/docs/latest/integrate/redisinsight/index.md", "title": "Redis Insight"}
-nav_next: {"path": "redis/docs/latest/develop/ai/search-and-query/best-practices/scalable-query-best-practices/index.md", "title": "Best practices for Redis Search performance"}
+nav_prev: {"path": "redis/docs/latest/operate/rc/databases/active-active/create-active-active-database/index.md", "title": "Create an Active-Active database"}
+nav_next: {"path": "redis/docs/latest/operate/rc/databases/create-database/create-essentials-database/index.md", "title": "Create an Essentials database"}
 ---
 
 # Use Redis Insight on Redis Cloud

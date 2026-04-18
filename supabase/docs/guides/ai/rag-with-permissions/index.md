@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:34:16.656Z"
 content_hash: "71d1cae4cc730cbbf0afbb22f5721c58bdda8b693c3f988b3be1652cd4061b9b"
 menu_path: ["AI & Vectors","AI & Vectors","Learn","Learn","RAG with Permissions","RAG with Permissions"]
 section_path: ["AI & Vectors","AI & Vectors","Learn","Learn","RAG with Permissions","RAG with Permissions"]
-nav_prev: {"path": "supabase/docs/guides/ai/langchain/index.md", "title": "LangChain"}
-nav_next: {"path": "supabase/docs/guides/ai/python-clients/index.md", "title": "Choosing a Client"}
+nav_prev: {"path": "supabase/docs/guides/ai/quickstarts/text-deduplication/index.md", "title": "Semantic Text Deduplication"}
+nav_next: {"path": "supabase/docs/guides/ai/semantic-search/index.md", "title": "Semantic search"}
 ---
 
 # 

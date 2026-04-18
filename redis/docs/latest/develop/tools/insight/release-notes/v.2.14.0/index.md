@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:52:46.175Z"
 content_hash: "7f100fbcbb4f7fab4bb70d2841ad3cb35ec8507827dc33c0fb49779ef81aca99"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Client tools","→","Client tools","→\n      \n        Redis Insight","→","Redis Insight","→\n      \n        Redis Insight release notes","→","Redis Insight release notes","→\n      \n        RedisInsight v2.14.0, November 2022","→","RedisInsight v2.14.0, November 2022"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Client tools","→","Client tools","→\n      \n        Redis Insight","→","Redis Insight","→\n      \n        Redis Insight release notes","→","Redis Insight release notes","→\n      \n        RedisInsight v2.14.0, November 2022","→","RedisInsight v2.14.0, November 2022"]
-nav_prev: {"path": "redis/docs/latest/develop/whats-new/8-6/index.md", "title": "Redis 8.6"}
-nav_next: {"path": "redis/docs/latest/operate/kubernetes/release-notes/7-22-0-releases/7-22-0-15-july2025/index.md", "title": "Redis Enterprise for Kubernetes 7.22.0-15 (July 2025) release notes"}
+nav_prev: {"path": "redis/docs/latest/develop/tools/insight/release-notes/index.md", "title": "Redis Insight release notes"}
+nav_next: {"path": "redis/docs/latest/develop/tools/insight/release-notes/v.2.16.0/index.md", "title": "RedisInsight v2.16.0, December 2022"}
 ---
 
 # RedisInsight v2.14.0, November 2022

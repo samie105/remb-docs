@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:47:46.346Z"
 content_hash: "533384d97ce2485178ece885f55dbc27af937c74147eb4de2500b4016e5de6ff"
 menu_path: ["Extract social share images and Open Graph tags"]
 section_path: []
-nav_prev: {"path": "bun/bun/docs/guides/http/fetch/index.md", "title": "Send an HTTP request using fetch"}
-nav_next: {"path": "bun/bun/docs/guides/http/fetch-unix/index.md", "title": "fetch with unix domain sockets in Bun"}
+nav_prev: {"path": "bun/bun/docs/guides/html-rewriter/extract-links/index.md", "title": "Extract links from a webpage using HTMLRewriter"}
+nav_next: {"path": "bun/bun/docs/guides/http/cluster/index.md", "title": "Start a cluster of HTTP servers"}
 ---
 
 Bun’s [HTMLRewriter](bun/bun/docs/runtime/html-rewriter/index.md) API can be used to efficiently extract social share images and Open Graph metadata from HTML content. This is particularly useful for building link preview features, social media cards, or web scrapers. We can use HTMLRewriter to match CSS selectors to HTML elements, text, and attributes we want to process.

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:32:15.229Z"
 content_hash: "93681463043e48077973443a9ac057a07762d12660e11e6f7c4354d62714a277"
 menu_path: ["Welcome to Bun"]
 section_path: []
-nav_prev: {"path": "bun/bun/docs/bundler/bytecode/index.md", "title": "Bytecode Caching"}
-nav_next: {"path": "bun/bun/docs/bundler/css/index.md", "title": "CSS"}
+nav_prev: {"path": "bun/bun/docs/installation/index.md", "title": "Installation"}
+nav_next: {"path": "bun/bun/docs/bundler/index.md", "title": "Bundler"}
 ---
 
 [Skip to main content](#content-area)

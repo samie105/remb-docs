@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:54:11.471Z"
 content_hash: "e70c4742c2f0a6abb7e543f0d18e6914aa07f9ada36b33a9d41db5f9f106b4dc"
 menu_path: ["PostgreSQL: Documentation: 18: F.42. sslinfo — obtain client SSL information"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/queries-overview.html/index.md", "title": "PostgreSQL: Documentation: 18: 7.1.\u00a0Overview"}
-nav_next: {"path": "postgres/docs/current/collation.html/index.md", "title": "PostgreSQL: Documentation: 18: 23.2.\u00a0Collation Support"}
+nav_prev: {"path": "postgres/docs/current/ssh-tunnels.html/index.md", "title": "PostgreSQL: Documentation: 18: 18.11.\u00a0Secure TCP/IP Connections with SSH Tunnels"}
+nav_next: {"path": "postgres/docs/current/textsearch-debugging.html/index.md", "title": "PostgreSQL: Documentation: 18: 12.8.\u00a0Testing and Debugging Text Search"}
 ---
 
 Development Versions: [devel](https://www.postgresql.org/docs/devel/sslinfo.html "PostgreSQL devel - F.42. sslinfo — obtain client SSL information")

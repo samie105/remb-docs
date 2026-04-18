@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:47:28.702Z"
 content_hash: "f5dd71ea7c755e45c013bbbcc2bf026a4a8edf8d54bed2719ff0f5723423990d"
 menu_path: ["PostgreSQL: Documentation: 18: F.8. btree_gist — GiST operator classes with B-tree behavior"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/sql-prepare-transaction.html/index.md", "title": "PostgreSQL: Documentation: 18: PREPARE TRANSACTION"}
-nav_next: {"path": "postgres/docs/current/ddl-basics.html/index.md", "title": "PostgreSQL: Documentation: 18: 5.1.\u00a0Table Basics"}
+nav_prev: {"path": "postgres/docs/current/btree-gin.html/index.md", "title": "PostgreSQL: Documentation: 18: F.7.\u00a0btree_gin \u2014 GIN operator classes with B-tree behavior"}
+nav_next: {"path": "postgres/docs/current/btree.html/index.md", "title": "PostgreSQL: Documentation: 18: 65.1.\u00a0B-Tree Indexes"}
 ---
 
 `btree_gist` provides GiST index operator classes that implement B-tree equivalent behavior for the data types `int2`, `int4`, `int8`, `float4`, `float8`, `numeric`, `timestamp with time zone`, `timestamp without time zone`, `time with time zone`, `time without time zone`, `date`, `interval`, `oid`, `money`, `char`, `varchar`, `text`, `bytea`, `bit`, `varbit`, `macaddr`, `macaddr8`, `inet`, `cidr`, `uuid`, `bool` and all `enum` types.

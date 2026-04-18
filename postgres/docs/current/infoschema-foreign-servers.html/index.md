@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:39:58.077Z"
 content_hash: "42e18775f5aff12400ce02b0dcc08f9f5955a7b9276ad55b62cb21065e3d85a4"
 menu_path: ["PostgreSQL: Documentation: 18: 35.29. foreign_servers"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/sql-show.html/index.md", "title": "PostgreSQL: Documentation: 18: SHOW"}
-nav_next: {"path": "postgres/docs/current/plpgsql-errors-and-messages.html/index.md", "title": "PostgreSQL: Documentation: 18: 41.9.\u00a0Errors and Messages"}
+nav_prev: {"path": "postgres/docs/current/infoschema-foreign-server-options.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.28.\u00a0foreign_server_options"}
+nav_next: {"path": "postgres/docs/current/infoschema-foreign-table-options.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.30.\u00a0foreign_table_options"}
 ---
 
 The view `foreign_servers` contains all foreign servers defined in the current database. Only those foreign servers are shown that the current user has access to (by way of being the owner or having some privilege).

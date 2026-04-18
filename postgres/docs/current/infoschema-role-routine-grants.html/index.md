@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:46:57.252Z"
 content_hash: "f20233f688d7d47e076ebf6d9605f50f3b21efa72cdc55a5b824d476a8020cd9"
 menu_path: ["PostgreSQL: Documentation: 18: 35.36. role_routine_grants"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/lo-examplesect.html/index.md", "title": "PostgreSQL: Documentation: 18: 33.5.\u00a0Example Program"}
-nav_next: {"path": "postgres/docs/current/sql-commit.html/index.md", "title": "PostgreSQL: Documentation: 18: COMMIT"}
+nav_prev: {"path": "postgres/docs/current/infoschema-role-column-grants.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.35.\u00a0role_column_grants"}
+nav_next: {"path": "postgres/docs/current/infoschema-role-table-grants.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.37.\u00a0role_table_grants"}
 ---
 
 The view `role_routine_grants` identifies all privileges granted on functions where the grantor or grantee is a currently enabled role. Further information can be found under `routine_privileges`. The only effective difference between this view and `routine_privileges` is that this view omits functions that have been made accessible to the current user by way of a grant to `PUBLIC`.

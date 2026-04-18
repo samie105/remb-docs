@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:42:35.532Z"
 content_hash: "b7b6e0fd5f1971a15e88ec1495cbaa12475f6f80f885ebd2fef17c7cf05e4259"
 menu_path: ["PostgreSQL: Documentation: 18: 11.4. Indexes and ORDER BY"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/pgstattuple.html/index.md", "title": "PostgreSQL: Documentation: 18: F.33.\u00a0pgstattuple \u2014 obtain tuple-level statistics"}
-nav_next: {"path": "postgres/docs/current/xfunc-pl.html/index.md", "title": "PostgreSQL: Documentation: 18: 36.8.\u00a0Procedural Language Functions"}
+nav_prev: {"path": "postgres/docs/current/indexes-opclass.html/index.md", "title": "PostgreSQL: Documentation: 18: 11.10.\u00a0Operator Classes and Operator Families"}
+nav_next: {"path": "postgres/docs/current/indexes-partial.html/index.md", "title": "PostgreSQL: Documentation: 18: 11.8.\u00a0Partial Indexes"}
 ---
 
 In addition to simply finding the rows to be returned by a query, an index may be able to deliver them in a specific sorted order. This allows a query's `ORDER BY` specification to be honored without a separate sorting step. Of the index types currently supported by PostgreSQL, only B-tree can produce sorted output — the other index types return matching rows in an unspecified, implementation-dependent order.

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:01:08.919Z"
 content_hash: "f15c4a3b8c2470c3343ef8a50502ad444c8e47d91833f37e8dfa493b57ab60a6"
 menu_path: ["Storage","Storage","File Buckets","File Buckets","Fundamentals","Fundamentals"]
 section_path: ["Storage","Storage","File Buckets","File Buckets","Fundamentals","Fundamentals"]
-nav_prev: {"path": "supabase/docs/guides/storage/analytics/query-with-postgres/index.md", "title": "Query with Postgres"}
-nav_next: {"path": "supabase/docs/guides/storage/cdn/metrics/index.md", "title": "Cache Metrics"}
+nav_prev: {"path": "supabase/docs/guides/storage/buckets/creating-buckets/index.md", "title": "Creating Buckets"}
+nav_next: {"path": "supabase/docs/guides/storage/cdn/fundamentals/index.md", "title": "Storage CDN"}
 ---
 
 # 

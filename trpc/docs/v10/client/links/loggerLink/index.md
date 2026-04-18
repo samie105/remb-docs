@@ -10,7 +10,7 @@ content_hash: "352cdb2de1ee66343598d63329e0d39991d090618aeb3c113288ae90ebf10046"
 menu_path: ["Logger Link"]
 section_path: []
 nav_prev: {"path": "trpc/docs/v10/client/links/httpLink/index.md", "title": "HTTP Link"}
-nav_next: {"path": "trpc/docs/v10/client/links/wsLink/index.md", "title": "WebSocket Link"}
+nav_next: {"path": "trpc/docs/v10/client/links/splitLink/index.md", "title": "Split Link"}
 ---
 
 `loggerLink` is a link that lets you implement a logger for your tRPC client. It allows you to see more clearly what operations are queries, mutations, or subscriptions, their requests, and responses. The link, by default, prints a prettified log to the browser's console. However, you can customize the logging behavior and the way it prints to the console with your own implementations.

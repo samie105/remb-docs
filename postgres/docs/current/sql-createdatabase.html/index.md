@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:33:48.416Z"
 content_hash: "dc72bc932afa1ac9fc60ae2dff55029a5b3d5a1cf882884f6aa38446ee1b5e85"
 menu_path: ["PostgreSQL: Documentation: 18: CREATE DATABASE"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/textsearch-features.html/index.md", "title": "PostgreSQL: Documentation: 18: 12.4.\u00a0Additional Features"}
-nav_next: {"path": "postgres/docs/current/pgtestfsync.html/index.md", "title": "PostgreSQL: Documentation: 18: pg_test_fsync"}
+nav_prev: {"path": "postgres/docs/current/sql-createconversion.html/index.md", "title": "PostgreSQL: Documentation: 18: CREATE CONVERSION"}
+nav_next: {"path": "postgres/docs/current/sql-createdomain.html/index.md", "title": "PostgreSQL: Documentation: 18: CREATE DOMAIN"}
 ---
 
 CREATE DATABASE — create a new database

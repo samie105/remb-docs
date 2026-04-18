@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:48:52.611Z"
 content_hash: "d0a156ea735e2d3da377bab5a52f5cbf4347678d00c91ba27e42ce06afa65bf2"
 menu_path: ["PostgreSQL: Documentation: 18: pg_archivecleanup"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/regress-variant.html/index.md", "title": "PostgreSQL: Documentation: 18: 31.3.\u00a0Variant Comparison Files"}
-nav_next: {"path": "postgres/docs/current/wal-reliability.html/index.md", "title": "PostgreSQL: Documentation: 18: 28.1.\u00a0Reliability"}
+nav_prev: {"path": "postgres/docs/current/perm-functions.html/index.md", "title": "PostgreSQL: Documentation: 18: 21.6.\u00a0Function Security"}
+nav_next: {"path": "postgres/docs/current/pgbench.html/index.md", "title": "PostgreSQL: Documentation: 18: pgbench"}
 ---
 
 pg\_archivecleanup — clean up PostgreSQL WAL archive files

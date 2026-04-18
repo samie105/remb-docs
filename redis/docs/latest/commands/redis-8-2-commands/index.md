@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:51:58.684Z"
 content_hash: "915553f835b877a3f2686759b7217f44737395ae9e16528f4104f85db0b61761"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Commands","→","Commands","→\n      \n        Redis 8.2 Commands Reference","→","Redis 8.2 Commands Reference"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Commands","→","Commands","→\n      \n        Redis 8.2 Commands Reference","→","Redis 8.2 Commands Reference"]
-nav_prev: {"path": "redis/docs/latest/operate/oss_and_stack/reference/internals/rdd/index.md", "title": "Redis design draft #2 (historical)"}
-nav_next: {"path": "redis/docs/latest/develop/ai/search-and-query/best-practices/dev-to-prod-best-practices/index.md", "title": "Move from Development to Production with Redis Search"}
+nav_prev: {"path": "redis/docs/latest/commands/redis-8-0-commands/index.md", "title": "Redis 8.0 Commands Reference"}
+nav_next: {"path": "redis/docs/latest/commands/redis-8-4-commands/index.md", "title": "Redis 8.4 Commands Reference"}
 ---
 
 # Redis 8.2 Commands Reference

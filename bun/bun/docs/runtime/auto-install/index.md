@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:58:36.457Z"
 content_hash: "7cc35998886c1993e709589f6221e03ee572674089cd2417c28fda9617e6b057"
 menu_path: ["Auto-install"]
 section_path: []
-nav_prev: {"path": "bun/bun/docs/quickstart/index.md", "title": "Quickstart"}
-nav_next: {"path": "bun/bun/docs/runtime/archive/index.md", "title": "Archive"}
+nav_prev: {"path": "bun/bun/docs/runtime/archive/index.md", "title": "Archive"}
+nav_next: {"path": "bun/bun/docs/runtime/binary-data/index.md", "title": "Binary Data"}
 ---
 
 [Skip to main content](#content-area)

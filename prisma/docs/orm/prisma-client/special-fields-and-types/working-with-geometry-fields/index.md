@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:48:47.908Z"
 content_hash: "b2e1d715814ddea34990c1654f0f96d2c3c2f0796c37ef6f3b7cb2ce3eaa318d"
 menu_path: ["Working with geometry fields"]
 section_path: []
-nav_prev: {"path": "prisma/docs/orm/prisma-client/special-fields-and-types/working-with-json-fields/index.md", "title": "Working with Json fields"}
-nav_next: {"path": "prisma/docs/orm/prisma-client/testing/integration-testing/index.md", "title": "Integration testing"}
+nav_prev: {"path": "prisma/docs/orm/prisma-client/special-fields-and-types/working-with-composite-ids-and-constraints/index.md", "title": "Working with compound IDs and unique constraints"}
+nav_next: {"path": "prisma/docs/orm/prisma-client/special-fields-and-types/working-with-json-fields/index.md", "title": "Working with Json fields"}
 ---
 
 # Create an empty migration

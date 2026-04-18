@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:38:59.820Z"
 content_hash: "16bda2d8d52d2e1f1f70d3aaf9765a258f7be1e0b7a4e4ba5643d34fff7870f9"
 menu_path: ["PostgreSQL: Documentation: 18: 5.12. Table Partitioning"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/sql-dropfunction.html/index.md", "title": "PostgreSQL: Documentation: 18: DROP FUNCTION"}
-nav_next: {"path": "postgres/docs/current/bki-example.html/index.md", "title": "PostgreSQL: Documentation: 18: 68.6.\u00a0BKI Example"}
+nav_prev: {"path": "postgres/docs/current/ddl-others.html/index.md", "title": "PostgreSQL: Documentation: 18: 5.14.\u00a0Other Database Objects"}
+nav_next: {"path": "postgres/docs/current/ddl-priv.html/index.md", "title": "PostgreSQL: Documentation: 18: 5.8.\u00a0Privileges"}
 ---
 
 PostgreSQL supports basic table partitioning. This section describes why and how to implement partitioning as part of your database design.

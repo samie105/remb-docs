@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:52:15.020Z"
 content_hash: "46f501e7d5da4d1e4c45bd31220a1c513c278aaa3d84c95919532fa4ce97ab2c"
 menu_path: ["PostgreSQL: Documentation: 18: B.2. Handling of Invalid or Ambiguous Timestamps"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/color-when.html/index.md", "title": "PostgreSQL: Documentation: 18: N.1.\u00a0When Color is Used"}
-nav_next: {"path": "postgres/docs/current/protocol-replication.html/index.md", "title": "PostgreSQL: Documentation: 18: 54.4.\u00a0Streaming Replication Protocol"}
+nav_prev: {"path": "postgres/docs/current/datetime-input-rules.html/index.md", "title": "PostgreSQL: Documentation: 18: B.1.\u00a0Date/Time Input Interpretation"}
+nav_next: {"path": "postgres/docs/current/datetime-julian-dates.html/index.md", "title": "PostgreSQL: Documentation: 18: B.7.\u00a0Julian Dates"}
 ---
 
 Ordinarily, if a date/time string is syntactically valid but contains out-of-range field values, an error will be thrown. For example, input specifying the 31st of February will be rejected.

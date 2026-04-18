@@ -10,7 +10,7 @@ content_hash: "549a3d7f4060ee8922b0249a12da4e7f74029942c8aa1d3b1e544bc644f7e114"
 menu_path: ["YAML"]
 section_path: []
 nav_prev: {"path": "bun/bun/docs/runtime/workers/index.md", "title": "Workers"}
-nav_next: {"path": "bun/bun/docs/test/code-coverage/index.md", "title": "Code coverage"}
+nav_next: {"path": "bun/bun/docs/test/index.md", "title": "Test runner"}
 ---
 
 # Employee record

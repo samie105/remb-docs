@@ -9,7 +9,7 @@ last_crawled_at: "2026-04-18T16:52:25.349Z"
 content_hash: "fca16c8666c3fbfd7005c47f057cb3a31f54bbb1754de56fd3de9668d7486ac2"
 menu_path: ["Data REST API","Data REST API","Tools","Tools","Auto-generated Docs","Auto-generated Docs"]
 section_path: ["Data REST API","Data REST API","Tools","Tools","Auto-generated Docs","Auto-generated Docs"]
-nav_prev: {"path": "supabase/docs/guides/ai/vector-indexes/ivf-indexes/index.md", "title": "IVFFlat indexes"}
+nav_prev: {"path": "supabase/docs/guides/api/quickstart/index.md", "title": "Build an API route in less than 2 minutes."}
 nav_next: {"path": "supabase/docs/guides/api/rest/client-libs/index.md", "title": "Client Libraries"}
 ---
 

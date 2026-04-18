@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:41:34.429Z"
 content_hash: "1c73cbc44a9a868c5dce57b5be034c7b5b5e300e61ed6b5a1e647414e7a3e9b4"
 menu_path: ["PostgreSQL: Documentation: 18: 35.3. information_schema_catalog_name"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/sql-dropcollation.html/index.md", "title": "PostgreSQL: Documentation: 18: DROP COLLATION"}
-nav_next: {"path": "postgres/docs/current/view-pg-prepared-statements.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.16.\u00a0pg_prepared_statements"}
+nav_prev: {"path": "postgres/docs/current/infoschema-foreign-tables.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.31.\u00a0foreign_tables"}
+nav_next: {"path": "postgres/docs/current/infoschema-key-column-usage.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.32.\u00a0key_column_usage"}
 ---
 
 Development Versions: [devel](https://www.postgresql.org/docs/devel/infoschema-information-schema-catalog-name.html "PostgreSQL devel - 35.3. information_schema_catalog_name")

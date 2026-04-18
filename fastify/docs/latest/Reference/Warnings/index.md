@@ -9,8 +9,7 @@ last_crawled_at: "2026-04-18T16:35:34.279Z"
 content_hash: "c10b390e8b2e1fe49ceec181b79c9cd0746297786df6a5708acde13030f2d07c"
 menu_path: ["Warnings"]
 section_path: []
-nav_prev: {"path": "fastify/docs/latest/Reference/Server/index.md", "title": "Server"}
-nav_next: {"path": "fastify/docs/latest/Reference/TypeScript/index.md", "title": "TypeScript"}
+nav_prev: {"path": "fastify/docs/latest/Reference/Validation-and-Serialization/index.md", "title": "Validation-and-Serialization"}
 ---
 
 Version: latest (v5.8.x)

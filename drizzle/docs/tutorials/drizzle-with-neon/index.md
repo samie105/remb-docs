@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:23:16.643Z"
 content_hash: "76a9da0c4ce6fc8cdb83a13c7f93a5ce60083ad33822b9b5745ad74afdbdf7df"
 menu_path: ["Drizzle with Neon Postgres"]
 section_path: []
-nav_prev: {"path": "drizzle/docs/tutorials/drizzle-nextjs-neon/index.md", "title": "Todo App with Neon Postgres"}
-nav_next: {"path": "drizzle/docs/tutorials/drizzle-with-netlify-edge-functions-supabase/index.md", "title": "Drizzle with Netlify Edge Functions and Supabase Database"}
+nav_prev: {"path": "drizzle/docs/tutorials/drizzle-with-encore/index.md", "title": "Drizzle with Encore"}
+nav_next: {"path": "drizzle/docs/tutorials/drizzle-with-netlify-edge-functions-neon/index.md", "title": "Drizzle with Netlify Edge Functions and Neon Postgres"}
 ---
 
 This tutorial demonstrates how to use Drizzle ORM with [Neon Postgres](https://neon.tech/) database. If you do not have an existing Neon account, sign up [here](https://neon.tech/).

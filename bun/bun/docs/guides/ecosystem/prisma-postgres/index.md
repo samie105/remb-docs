@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:46:06.407Z"
 content_hash: "265fd3376c02dcb33e38984363f60354ee98bb60cf0b6f0476b527137a0089f5"
 menu_path: ["Use Prisma Postgres with Bun"]
 section_path: []
-nav_prev: {"path": "bun/bun/docs/guides/ecosystem/react/index.md", "title": "Build a React app with Bun"}
-nav_next: {"path": "bun/bun/docs/guides/ecosystem/sentry/index.md", "title": "Add Sentry to a Bun app"}
+nav_prev: {"path": "bun/bun/docs/guides/ecosystem/prisma/index.md", "title": "Use Prisma with Bun"}
+nav_next: {"path": "bun/bun/docs/guides/ecosystem/qwik/index.md", "title": "Build an app with Qwik and Bun"}
 ---
 
 **Note** — At the moment Prisma needs Node.js to be installed to run certain generation code. Make sure Node.js is installed in the environment where you’re running `bunx prisma` commands.

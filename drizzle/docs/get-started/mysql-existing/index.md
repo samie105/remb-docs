@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:55:53.271Z"
 content_hash: "2013e8038e06617e899d5957d43e2929598b697fb0ca99aa696b35b972b77156"
 menu_path: ["Get Started with Drizzle and MySQL in existing project"]
 section_path: []
-nav_prev: {"path": "drizzle/docs/get-started/mysql-new/index.md", "title": "Get Started with Drizzle and MySQL"}
-nav_next: {"path": "drizzle/docs/get-started/neon-existing/index.md", "title": "Get Started with Drizzle and Neon in existing project"}
+nav_prev: {"path": "drizzle/docs/get-started/mssql-new/index.md", "title": "Get Started with Drizzle and MSSQL"}
+nav_next: {"path": "drizzle/docs/get-started/mysql-new/index.md", "title": "Get Started with Drizzle and MySQL"}
 ---
 
 ## Get Started with Drizzle and MySQL in existing project

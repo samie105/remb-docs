@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:00:14.154Z"
 content_hash: "6531b80e0fe4d5fa9bd2d06316bda471c361816be6b1edc126527f42c2ed16fa"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Cloud","→","Redis Cloud","→\n      \n        Redis Cloud changelog","→","Redis Cloud changelog","→\n      \n        Redis version release notes and breaking changes","→","Redis version release notes and breaking changes","→\n      \n        Redis 8.2 release notes and breaking changes","→","Redis 8.2 release notes and breaking changes"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Cloud","→","Redis Cloud","→\n      \n        Redis Cloud changelog","→","Redis Cloud changelog","→\n      \n        Redis version release notes and breaking changes","→","Redis version release notes and breaking changes","→\n      \n        Redis 8.2 release notes and breaking changes","→","Redis 8.2 release notes and breaking changes"]
-nav_prev: {"path": "redis/docs/latest/develop/tools/insight/rdi-connector/index.md", "title": "RDI in Redis Insight"}
-nav_next: {"path": "redis/docs/latest/commands/redis-7-4-commands/index.md", "title": "Redis 7.4 Commands Reference"}
+nav_prev: {"path": "redis/docs/latest/operate/rc/changelog/version-release-notes/8-0/index.md", "title": "Redis 8.0 release notes and breaking changes"}
+nav_next: {"path": "redis/docs/latest/operate/rc/changelog/version-release-notes/8-4/index.md", "title": "Redis 8.4 release notes and breaking changes"}
 ---
 
 # Redis 8.2 release notes and breaking changes

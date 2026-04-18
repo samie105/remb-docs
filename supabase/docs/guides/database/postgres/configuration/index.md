@@ -9,7 +9,7 @@ last_crawled_at: "2026-04-18T16:56:26.522Z"
 content_hash: "74253a9bc610253d432bcd6610a40b247e5c9335ad502470776869fbdda6e8de"
 menu_path: ["Database","Database","Configuration, optimization, and testing","Configuration, optimization, and testing","Database configuration","Database configuration"]
 section_path: ["Database","Database","Configuration, optimization, and testing","Configuration, optimization, and testing","Database configuration","Database configuration"]
-nav_prev: {"path": "supabase/docs/guides/database/postgres/cascade-deletes/index.md", "title": "Cascade Deletes"}
+nav_prev: {"path": "supabase/docs/guides/database/postgres/column-level-security/index.md", "title": "Column Level Security"}
 nav_next: {"path": "supabase/docs/guides/database/postgres/data-deletion/index.md", "title": "Deleting data and dropping objects safely"}
 ---
 

@@ -9,7 +9,7 @@ last_crawled_at: "2026-04-18T16:39:15.423Z"
 content_hash: "2377d7dce3158d2f0ebc955c7995bea501cf7a8c024b22f36d60547cd9af44d5"
 menu_path: ["Error Formatting"]
 section_path: []
-nav_prev: {"path": "trpc/docs/v10/server/context/index.md", "title": "Context"}
+nav_prev: {"path": "trpc/docs/v10/server/data-transformers/index.md", "title": "Data Transformers"}
 nav_next: {"path": "trpc/docs/v10/server/error-handling/index.md", "title": "Error Handling"}
 ---
 

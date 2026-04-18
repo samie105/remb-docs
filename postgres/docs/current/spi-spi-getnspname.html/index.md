@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:50:00.750Z"
 content_hash: "9bacc6fd175664c917d9590d0336d55d85c813bc8d8894e2dd19555a786bdcf5"
 menu_path: ["PostgreSQL: Documentation: 18: SPI_getnspname"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/sql-createprocedure.html/index.md", "title": "PostgreSQL: Documentation: 18: CREATE PROCEDURE"}
-nav_next: {"path": "postgres/docs/current/sql-vacuum.html/index.md", "title": "PostgreSQL: Documentation: 18: VACUUM"}
+nav_prev: {"path": "postgres/docs/current/spi-spi-getbinval.html/index.md", "title": "PostgreSQL: Documentation: 18: SPI_getbinval"}
+nav_next: {"path": "postgres/docs/current/spi-spi-getrelname.html/index.md", "title": "PostgreSQL: Documentation: 18: SPI_getrelname"}
 ---
 
 Development Versions: [devel](https://www.postgresql.org/docs/devel/spi-spi-getnspname.html "PostgreSQL devel - SPI_getnspname")

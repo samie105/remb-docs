@@ -10,7 +10,7 @@ content_hash: "27bec2061ec6b262e1c8678af68e494d25337a0f49fe739caf8067c81d8de5c5"
 menu_path: ["A redirect must be given a location with the Location header."]
 section_path: []
 nav_prev: {"path": "astro/en/reference/errors/prerender-route-conflict/index.md", "title": "Prerendered route generates the same path as another route."}
-nav_next: {"path": "astro/en/reference/errors/render-undefined-entry-error/index.md", "title": "Attempted to render an undefined content collection entry."}
+nav_next: {"path": "astro/en/reference/errors/remote-image-not-allowed/index.md", "title": "Remote image is not allowed"}
 ---
 
 # A redirect must be given a location with the Location header.

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:51:57.412Z"
 content_hash: "d947520fdc1e0dea113309c3a445ff64b59712ad2cb7b0c497550cae0feeb981"
 menu_path: ["PostgreSQL: Documentation: 18: 65.3. SP-GiST Indexes"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/parser-stage.html/index.md", "title": "PostgreSQL: Documentation: 18: 51.3.\u00a0The Parser Stage"}
-nav_next: {"path": "postgres/docs/current/gssapi-enc.html/index.md", "title": "PostgreSQL: Documentation: 18: 18.10.\u00a0Secure TCP/IP Connections with GSSAPI Encryption"}
+nav_prev: {"path": "postgres/docs/current/source-format.html/index.md", "title": "PostgreSQL: Documentation: 18: 55.1.\u00a0Formatting"}
+nav_next: {"path": "postgres/docs/current/spi-spi-getbinval.html/index.md", "title": "PostgreSQL: Documentation: 18: SPI_getbinval"}
 ---
 
 ### 65.3.1. Introduction [#](#SPGIST-INTRO)

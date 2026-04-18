@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:37:13.046Z"
 content_hash: "e026b88fa3162838bd1001c2306fbc1c29ee9e55125eb8b45dad7b11e97d35c4"
 menu_path: ["Auth","Auth","Flows (How-tos)","Flows (How-tos)","Web3 (Ethereum or Solana)","Web3 (Ethereum or Solana)"]
 section_path: ["Auth","Auth","Flows (How-tos)","Flows (How-tos)","Web3 (Ethereum or Solana)","Web3 (Ethereum or Solana)"]
-nav_prev: {"path": "supabase/docs/guides/auth/auth-identity-linking/index.md", "title": "Identity Linking"}
-nav_next: {"path": "supabase/docs/guides/auth/auth-smtp/index.md", "title": "Send emails with custom SMTP"}
+nav_prev: {"path": "supabase/docs/guides/auth/auth-smtp/index.md", "title": "Send emails with custom SMTP"}
+nav_next: {"path": "supabase/docs/guides/auth/custom-oauth-providers/index.md", "title": "Custom OAuth/OIDC Providers"}
 ---
 
 # 

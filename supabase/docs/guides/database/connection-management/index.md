@@ -9,7 +9,7 @@ last_crawled_at: "2026-04-18T16:40:08.259Z"
 content_hash: "e4e5acfcb6e9de9ea053ac46927d3520d9f01eff8e51de39fd9fc26ba20c96f9"
 menu_path: ["Database","Database","Working with your database (intermediate)","Working with your database (intermediate)","Managing connections","Managing connections"]
 section_path: ["Database","Database","Working with your database (intermediate)","Working with your database (intermediate)","Managing connections","Managing connections"]
-nav_prev: {"path": "supabase/docs/guides/database/connecting-to-postgres/index.md", "title": "Connect to your database"}
+nav_prev: {"path": "supabase/docs/guides/database/connecting-to-postgres/serverless-drivers/index.md", "title": "Connect to your database"}
 nav_next: {"path": "supabase/docs/guides/database/custom-postgres-config/index.md", "title": "Customizing Postgres configs"}
 ---
 

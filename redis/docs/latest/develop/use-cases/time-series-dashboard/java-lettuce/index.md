@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:59:01.621Z"
 content_hash: "7d50d7f5eb4edebf4cd4495d89e53ae2b68f3cbb920d42f392d948cd3b55438f"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Rolling sensor graph demo with Redis","→","Rolling sensor graph demo with Redis","→\n      \n        Rolling sensor graph demo with Java and Lettuce","→","Rolling sensor graph demo with Java and Lettuce"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Rolling sensor graph demo with Redis","→","Rolling sensor graph demo with Redis","→\n      \n        Rolling sensor graph demo with Java and Lettuce","→","Rolling sensor graph demo with Java and Lettuce"]
-nav_prev: {"path": "redis/docs/latest/operate/redisinsight/install/install-on-aws/index.md", "title": "Install on AWS EC2"}
-nav_next: {"path": "redis/docs/latest/develop/use-cases/leaderboard/java-jedis/index.md", "title": "Redis leaderboard with Java and Jedis"}
+nav_prev: {"path": "redis/docs/latest/develop/use-cases/time-series-dashboard/java-jedis/index.md", "title": "Rolling sensor graph demo with Java and Jedis"}
+nav_next: {"path": "redis/docs/latest/develop/use-cases/time-series-dashboard/nodejs/index.md", "title": "Rolling sensor graph demo with Redis and Node.js"}
 ---
 
 # Rolling sensor graph demo with Java and Lettuce

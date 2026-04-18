@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:53:11.786Z"
 content_hash: "495a61226ece9815beff74d2a416a9d05a2a2035804b320db870bc4018d74ca9"
 menu_path: ["Auth","Auth","Debugging","Debugging","Error Codes","Error Codes"]
 section_path: ["Auth","Auth","Debugging","Debugging","Error Codes","Error Codes"]
-nav_prev: {"path": "supabase/docs/guides/auth/auth-mfa/totp/index.md", "title": "Multi-Factor Authentication (TOTP)"}
-nav_next: {"path": "supabase/docs/guides/auth/enterprise-sso/auth-sso-saml/index.md", "title": "Single Sign-On with SAML 2.0 for Projects"}
+nav_prev: {"path": "supabase/docs/guides/auth/custom-oauth-providers/index.md", "title": "Custom OAuth/OIDC Providers"}
+nav_next: {"path": "supabase/docs/guides/auth/enterprise-sso/index.md", "title": "Enterprise Single Sign-On"}
 ---
 
 # 

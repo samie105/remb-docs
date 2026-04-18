@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:34:45.891Z"
 content_hash: "684038e7ad383881fb616625011717dcdb6be2d1a4ff065ee7fc9dcb929a596c"
 menu_path: ["PostgreSQL: Documentation: 18: 53.21. pg_roles"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/error-message-reporting.html/index.md", "title": "PostgreSQL: Documentation: 18: 55.2.\u00a0Reporting Errors Within the Server"}
-nav_next: {"path": "postgres/docs/current/runtime-config-query.html/index.md", "title": "PostgreSQL: Documentation: 18: 19.7.\u00a0Query Planning"}
+nav_prev: {"path": "postgres/docs/current/view-pg-replication-slots.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.20.\u00a0pg_replication_slots"}
+nav_next: {"path": "postgres/docs/current/view-pg-rules.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.22.\u00a0pg_rules"}
 ---
 
 The view `pg_roles` provides access to information about database roles. This is simply a publicly readable view of [`pg_authid`](https://www.postgresql.org/docs/current/catalog-pg-authid.html "52.8. pg_authid") that blanks out the password field.

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:48:27.885Z"
 content_hash: "fffc6f2322586017758430a547e36cd0ead904656928deea7c4fdee9ae7fe7a9"
 menu_path: ["Working with scalar lists"]
 section_path: []
-nav_prev: {"path": "prisma/docs/orm/prisma-client/special-fields-and-types/working-with-composite-ids-and-constraints/index.md", "title": "Working with compound IDs and unique constraints"}
-nav_next: {"path": "prisma/docs/orm/prisma-client/special-fields-and-types/working-with-json-fields/index.md", "title": "Working with Json fields"}
+nav_prev: {"path": "prisma/docs/orm/prisma-client/special-fields-and-types/working-with-json-fields/index.md", "title": "Working with Json fields"}
+nav_next: {"path": "prisma/docs/orm/prisma-client/testing/integration-testing/index.md", "title": "Integration testing"}
 ---
 
 Special Fields and Types

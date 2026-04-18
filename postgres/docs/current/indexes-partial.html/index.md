@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:44:58.984Z"
 content_hash: "4bea60653cf892f79cbf5ca9bc7a8f5732d504a99be569b694d8992c2f430679"
 menu_path: ["PostgreSQL: Documentation: 18: 11.8. Partial Indexes"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/indexes-expressional.html/index.md", "title": "PostgreSQL: Documentation: 18: 11.7.\u00a0Indexes on Expressions"}
-nav_next: {"path": "postgres/docs/current/sql-createrule.html/index.md", "title": "PostgreSQL: Documentation: 18: CREATE RULE"}
+nav_prev: {"path": "postgres/docs/current/indexes-ordering.html/index.md", "title": "PostgreSQL: Documentation: 18: 11.4.\u00a0Indexes and ORDER BY"}
+nav_next: {"path": "postgres/docs/current/indexes-types.html/index.md", "title": "PostgreSQL: Documentation: 18: 11.2.\u00a0Index Types"}
 ---
 
 A _partial index_ is an index built over a subset of a table; the subset is defined by a conditional expression (called the _predicate_ of the partial index). The index contains entries only for those table rows that satisfy the predicate. Partial indexes are a specialized feature, but there are several situations in which they are useful.

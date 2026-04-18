@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:35:02.457Z"
 content_hash: "3ab09344984c9daa523042ea009b43078c4cc738622c7b9a101339c443a0a5fc"
 menu_path: ["Type-Providers"]
 section_path: []
-nav_prev: {"path": "fastify/docs/latest/Reference/Routes/index.md", "title": "Routes"}
-nav_next: {"path": "fastify/docs/latest/Reference/Server/index.md", "title": "Server"}
+nav_prev: {"path": "fastify/docs/latest/Reference/Server/index.md", "title": "Server"}
+nav_next: {"path": "fastify/docs/latest/Reference/TypeScript/index.md", "title": "TypeScript"}
 ---
 
 Version: latest (v5.8.x)

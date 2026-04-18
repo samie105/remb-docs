@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:48:13.275Z"
 content_hash: "0baa34cf5436acfa5e9bbd4f3f8b2c89260353898685afdc2a6a7a2540994682"
 menu_path: ["PostgreSQL: Documentation: 18: 5.7. Modifying Tables"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/ecpg-sql-var.html/index.md", "title": "PostgreSQL: Documentation: 18: VAR"}
-nav_next: {"path": "postgres/docs/current/pgbench.html/index.md", "title": "PostgreSQL: Documentation: 18: pgbench"}
+nav_prev: {"path": "postgres/docs/current/dblink.html/index.md", "title": "PostgreSQL: Documentation: 18: F.11.\u00a0dblink \u2014 connect to other PostgreSQL databases"}
+nav_next: {"path": "postgres/docs/current/ddl-basics.html/index.md", "title": "PostgreSQL: Documentation: 18: 5.1.\u00a0Table Basics"}
 ---
 
 When you create a table and you realize that you made a mistake, or the requirements of the application change, you can drop the table and create it again. But this is not a convenient option if the table is already filled with data, or if the table is referenced by other database objects (for instance a foreign key constraint). Therefore PostgreSQL provides a family of commands to make modifications to existing tables. Note that this is conceptually distinct from altering the data contained in the table: here we are interested in altering the definition, or structure, of the table.

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:09:20.996Z"
 content_hash: "f369ab491e61514daeeec98d104b9aefaff02c5d07127f450aad3be9d35b45ba"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis data types","→","Redis data types","→\n      \n        JSON","→","JSON","→\n      \n        Developer notes","→","Developer notes"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis data types","→","Redis data types","→\n      \n        JSON","→","JSON","→\n      \n        Developer notes","→","Developer notes"]
-nav_prev: {"path": "redis/docs/latest/integrate/datadog-with-redis-cloud/index.md", "title": "Datadog with Redis Cloud"}
-nav_next: {"path": "redis/docs/latest/integrate/datadog-with-redis-enterprise/index.md", "title": "Datadog with Redis Software"}
+nav_prev: {"path": "redis/docs/latest/develop/data-types/compare-data-types/index.md", "title": "Compare data types"}
+nav_next: {"path": "redis/docs/latest/develop/data-types/json/indexing_json/index.md", "title": "Index/Search JSON documents"}
 ---
 
 # Developer notes

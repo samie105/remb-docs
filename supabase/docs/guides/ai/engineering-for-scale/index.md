@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:33:24.218Z"
 content_hash: "66f82d41bab57260a1553b0fd43ee35c167dcdbc803c7b2b3a23b691ea33a9c2"
 menu_path: ["AI & Vectors","AI & Vectors","Learn","Learn","Engineering for scale","Engineering for scale"]
 section_path: ["AI & Vectors","AI & Vectors","Learn","Learn","Engineering for scale","Engineering for scale"]
-nav_prev: {"path": "supabase/docs/guides/ai/automatic-embeddings/index.md", "title": "Automatic embeddings"}
-nav_next: {"path": "supabase/docs/guides/ai/google-colab/index.md", "title": "Google Colab"}
+nav_prev: {"path": "supabase/docs/guides/ai/concepts/index.md", "title": "Concepts"}
+nav_next: {"path": "supabase/docs/guides/ai/examples/building-chatgpt-plugins/index.md", "title": "Building ChatGPT plugins"}
 ---
 
 # 

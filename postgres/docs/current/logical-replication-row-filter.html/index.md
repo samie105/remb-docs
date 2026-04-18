@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:32:13.380Z"
 content_hash: "7af8a2bd1a66224528550ea882cb678921300e7cfa36e52000e9af8b02964a72"
 menu_path: ["PostgreSQL: Documentation: 18: 29.4. Row Filters"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/app-pg-dumpall.html/index.md", "title": "PostgreSQL: Documentation: 18: pg_dumpall"}
-nav_next: {"path": "postgres/docs/current/infoschema-domain-constraints.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.21.\u00a0domain_constraints"}
+nav_prev: {"path": "postgres/docs/current/logical-replication-restrictions.html/index.md", "title": "PostgreSQL: Documentation: 18: 29.8.\u00a0Restrictions"}
+nav_next: {"path": "postgres/docs/current/logical-replication-subscription.html/index.md", "title": "PostgreSQL: Documentation: 18: 29.2.\u00a0Subscription"}
 ---
 
 By default, all data from all published tables will be replicated to the appropriate subscribers. The replicated data can be reduced by using a _row filter_. A user might choose to use row filters for behavioral, security or performance reasons. If a published table sets a row filter, a row is replicated only if its data satisfies the row filter expression. This allows a set of tables to be partially replicated. The row filter is defined per table. Use a `WHERE` clause after the table name for each published table that requires data to be filtered out. The `WHERE` clause must be enclosed by parentheses. See [CREATE PUBLICATION](https://www.postgresql.org/docs/current/sql-createpublication.html "CREATE PUBLICATION") for details.

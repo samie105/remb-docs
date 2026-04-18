@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:41:17.462Z"
 content_hash: "9c732a4b326f658dcf497ef8ac195283904ef77005b208ef6d630be1bc9d573b"
 menu_path: ["PostgreSQL: Documentation: 18: 28.4. Asynchronous Commit"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/ddl-inherit.html/index.md", "title": "PostgreSQL: Documentation: 18: 5.11.\u00a0Inheritance"}
-nav_next: {"path": "postgres/docs/current/external-admin-tools.html/index.md", "title": "PostgreSQL: Documentation: 18: H.2.\u00a0Administration Tools"}
+nav_prev: {"path": "postgres/docs/current/views-overview.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.1.\u00a0Overview"}
+nav_next: {"path": "postgres/docs/current/wal-configuration.html/index.md", "title": "PostgreSQL: Documentation: 18: 28.5.\u00a0WAL Configuration"}
 ---
 
 _Asynchronous commit_ is an option that allows transactions to complete more quickly, at the cost that the most recent transactions may be lost if the database should crash. In many applications this is an acceptable trade-off.

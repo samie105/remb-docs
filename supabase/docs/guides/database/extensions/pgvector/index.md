@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:56:04.871Z"
 content_hash: "4782327f736c5882efec542b607431d7cf956706330efc00a17f94162ce6ee38"
 menu_path: ["Database","Database","Extensions","Extensions","pgvector: Embeddings and vector similarity","pgvector: Embeddings and vector similarity"]
 section_path: ["Database","Database","Extensions","Extensions","pgvector: Embeddings and vector similarity","pgvector: Embeddings and vector similarity"]
-nav_prev: {"path": "supabase/docs/guides/database/extensions/pgroonga/index.md", "title": "PGroonga: Multilingual Full Text Search"}
-nav_next: {"path": "supabase/docs/guides/database/extensions/pgsodium/index.md", "title": "pgsodium (pending deprecation): Encryption Features"}
+nav_prev: {"path": "supabase/docs/guides/database/extensions/pgtap/index.md", "title": "pgTAP: Unit Testing"}
+nav_next: {"path": "supabase/docs/guides/database/extensions/plpgsql_check/index.md", "title": "plpgsql_check: PL/pgSQL Linter"}
 ---
 
 # 

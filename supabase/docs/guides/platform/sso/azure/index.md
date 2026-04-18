@@ -9,7 +9,7 @@ last_crawled_at: "2026-04-18T17:00:53.953Z"
 content_hash: "bc13229dae436205f3701ee2d8c07fe8000e9790020e8a086015e56b43f3fe8a"
 menu_path: ["Platform","Platform","More","More","More","Single Sign-On","Single Sign-On","SSO with Azure AD","SSO with Azure AD"]
 section_path: ["Platform","Platform","More","More","More","Single Sign-On","Single Sign-On","SSO with Azure AD","SSO with Azure AD"]
-nav_prev: {"path": "supabase/docs/guides/platform/migrating-within-supabase/backup-restore/index.md", "title": "Backup and Restore using the CLI"}
+nav_prev: {"path": "supabase/docs/guides/platform/sso/index.md", "title": "Enable SSO for Your Organization"}
 nav_next: {"path": "supabase/docs/guides/platform/sso/gsuite/index.md", "title": "Set Up SSO with Google Workspace"}
 ---
 

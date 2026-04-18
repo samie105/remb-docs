@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:42:04.839Z"
 content_hash: "96359f5ed6078b7ef53e9a6e7130f6fc47b8ebf0280cc7eedd41424a1c827a01"
 menu_path: ["Custom header"]
 section_path: []
-nav_prev: {"path": "trpc/docs/v9/fastify/index.md", "title": "Usage with Fastify"}
-nav_next: {"path": "trpc/docs/v9/further-reading/index.md", "title": "Further Reading"}
+nav_prev: {"path": "trpc/docs/v9/further-reading/index.md", "title": "Further Reading"}
+nav_next: {"path": "trpc/docs/v9/infer-types/index.md", "title": "Inferring Types"}
 ---
 
 Version: 9.x

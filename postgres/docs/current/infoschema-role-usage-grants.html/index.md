@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:48:47.954Z"
 content_hash: "8e50e434565dcb93222cef45da75406078cc0a2ec6e0bc2a7f03f1b051a28896"
 menu_path: ["PostgreSQL: Documentation: 18: 35.39. role_usage_grants"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/plpgsql-control-structures.html/index.md", "title": "PostgreSQL: Documentation: 18: 41.6.\u00a0Control Structures"}
-nav_next: {"path": "postgres/docs/current/regress-variant.html/index.md", "title": "PostgreSQL: Documentation: 18: 31.3.\u00a0Variant Comparison Files"}
+nav_prev: {"path": "postgres/docs/current/infoschema-role-udt-grants.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.38.\u00a0role_udt_grants"}
+nav_next: {"path": "postgres/docs/current/infoschema-routine-column-usage.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.40.\u00a0routine_column_usage"}
 ---
 
 The view `role_usage_grants` identifies `USAGE` privileges granted on various kinds of objects where the grantor or grantee is a currently enabled role. Further information can be found under `usage_privileges`. The only effective difference between this view and `usage_privileges` is that this view omits objects that have been made accessible to the current user by way of a grant to `PUBLIC`.

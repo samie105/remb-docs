@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:40:08.787Z"
 content_hash: "453587491040fb456dc1e2f6edcde2f910d4c93f39f0ebec04d171409476a20b"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Reference","→","Reference","→\n      \n        Redis internals","→","Redis internals","→\n      \n        Event library","→","Event library"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Reference","→","Reference","→\n      \n        Redis internals","→","Redis internals","→\n      \n        Event library","→","Event library"]
-nav_prev: {"path": "redis/docs/latest/operate/oss_and_stack/install/install-stack/docker/index.md", "title": "Run Redis Open Source on Docker"}
-nav_next: {"path": "redis/docs/latest/develop/ai/search-and-query/query/exact-match/index.md", "title": "Exact match queries"}
+nav_prev: {"path": "redis/docs/latest/operate/oss_and_stack/reference/cluster-spec/index.md", "title": "Redis cluster specification"}
+nav_next: {"path": "redis/docs/latest/operate/oss_and_stack/reference/internals/internals-sds/index.md", "title": "String internals"}
 ---
 
 # Event library

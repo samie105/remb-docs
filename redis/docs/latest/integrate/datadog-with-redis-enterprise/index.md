@@ -9,7 +9,7 @@ last_crawled_at: "2026-04-18T17:09:32.768Z"
 content_hash: "53a4aa8e6d6def5ba178b70cfddacf2f2696d3c9078327516a9508e4876a1ab7"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Datadog with Redis Software","→","Datadog with Redis Software"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Datadog with Redis Software","→","Datadog with Redis Software"]
-nav_prev: {"path": "redis/docs/latest/develop/data-types/json/developer/index.md", "title": "Developer notes"}
+nav_prev: {"path": "redis/docs/latest/integrate/datadog-with-redis-cloud/index.md", "title": "Datadog with Redis Cloud"}
 nav_next: {"path": "redis/docs/latest/integrate/dynatrace-with-redis-cloud/index.md", "title": "Dynatrace with Redis Cloud"}
 ---
 

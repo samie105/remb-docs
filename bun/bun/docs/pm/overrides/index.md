@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:58:01.526Z"
 content_hash: "fa5279b29e05281ce1996a4cf6324a1cae0c8250363cf9ec9291e9d630950ec7"
 menu_path: ["Overrides and resolutions"]
 section_path: []
-nav_prev: {"path": "bun/bun/docs/pm/lockfile/index.md", "title": "Lockfile"}
-nav_next: {"path": "bun/bun/docs/pm/npmrc/index.md", "title": ".npmrc support"}
+nav_prev: {"path": "bun/bun/docs/pm/npmrc/index.md", "title": ".npmrc support"}
+nav_next: {"path": "bun/bun/docs/pm/scopes-registries/index.md", "title": "Scopes and registries"}
 ---
 
 [Skip to main content](#content-area)

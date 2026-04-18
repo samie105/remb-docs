@@ -9,7 +9,7 @@ last_crawled_at: "2026-04-18T16:48:58.045Z"
 content_hash: "4271e2f25892631c3e24445add22e8b8eac6b83b3885fee12d8b9f5de70cf774"
 menu_path: ["Integration testing"]
 section_path: []
-nav_prev: {"path": "prisma/docs/orm/prisma-client/special-fields-and-types/working-with-geometry-fields/index.md", "title": "Working with geometry fields"}
+nav_prev: {"path": "prisma/docs/orm/prisma-client/special-fields-and-types/working-with-scalar-lists-arrays/index.md", "title": "Working with scalar lists"}
 nav_next: {"path": "prisma/docs/orm/prisma-client/testing/unit-testing/index.md", "title": "Unit testing"}
 ---
 

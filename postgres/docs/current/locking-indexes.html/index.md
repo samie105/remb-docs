@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:48:27.450Z"
 content_hash: "db2141c648254e915746b3f5047efc41062d1a88176a5c6d28ce9397763d6447"
 menu_path: ["PostgreSQL: Documentation: 18: 13.7. Locking and Indexes"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/release-18.html/index.md", "title": "PostgreSQL: Documentation: 18: E.4.\u00a0Release 18"}
-nav_next: {"path": "postgres/docs/current/view-pg-matviews.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.14.\u00a0pg_matviews"}
+nav_prev: {"path": "postgres/docs/current/locale.html/index.md", "title": "PostgreSQL: Documentation: 18: 23.1.\u00a0Locale Support"}
+nav_next: {"path": "postgres/docs/current/logfile-maintenance.html/index.md", "title": "PostgreSQL: Documentation: 18: 24.3.\u00a0Log File Maintenance"}
 ---
 
 Though PostgreSQL provides nonblocking read/write access to table data, nonblocking read/write access is not currently offered for every index access method implemented in PostgreSQL. The various index types are handled as follows:

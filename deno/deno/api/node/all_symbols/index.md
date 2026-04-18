@@ -9,7 +9,8 @@ last_crawled_at: "2026-04-18T17:17:10.095Z"
 content_hash: "159fec4f8bf609997226f37fc3a3a685a44693e3709cfa8dd461e4ed9c59aac9"
 menu_path: ["All Symbols - Node documentation"]
 section_path: []
-nav_prev: {"path": "deno/deno/api/deno/~/Deno/index.md", "title": "namespace Deno"}
+nav_prev: {"path": "deno/deno/api/node/index.md", "title": "Node.js Built-in APIs"}
+nav_next: {"path": "deno/deno/api/node/assert/index.md", "title": "assert - Node documentation"}
 ---
 
 ### [assert](././assert/) [#](#assert)

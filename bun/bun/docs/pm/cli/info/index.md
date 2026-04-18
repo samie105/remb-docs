@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:57:15.598Z"
 content_hash: "23935cd7c0accd4005c501573c7bcf9370bfedb167befe9f06accb1c35b2fe08"
 menu_path: ["bun info"]
 section_path: []
-nav_prev: {"path": "bun/bun/docs/pm/cli/add/index.md", "title": "bun add"}
-nav_next: {"path": "bun/bun/docs/pm/cli/link/index.md", "title": "bun link"}
+nav_prev: {"path": "bun/bun/docs/pm/cli/audit/index.md", "title": "bun audit"}
+nav_next: {"path": "bun/bun/docs/pm/cli/install/index.md", "title": "bun install"}
 ---
 
 # View basic package information

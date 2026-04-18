@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:54:35.885Z"
 content_hash: "422654c58301df9056f63a5f1676f1498958df4ba74914fe159f61450b511330"
 menu_path: ["PostgreSQL: Documentation: 18: CREATE TEXT SEARCH PARSER"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/tutorial-delete.html/index.md", "title": "PostgreSQL: Documentation: 18: 2.9.\u00a0Deletions"}
-nav_next: {"path": "postgres/docs/current/libpq-async.html/index.md", "title": "PostgreSQL: Documentation: 18: 32.4.\u00a0Asynchronous Command Processing"}
+nav_prev: {"path": "postgres/docs/current/sql-createtableas.html/index.md", "title": "PostgreSQL: Documentation: 18: CREATE TABLE AS"}
+nav_next: {"path": "postgres/docs/current/sql-createtstemplate.html/index.md", "title": "PostgreSQL: Documentation: 18: CREATE TEXT SEARCH TEMPLATE"}
 ---
 
 CREATE TEXT SEARCH PARSER — define a new text search parser

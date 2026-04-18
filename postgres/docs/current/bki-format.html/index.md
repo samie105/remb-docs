@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:40:09.251Z"
 content_hash: "56d8c8daf15fb425b003c00d8fa249f2493f9f5ce00fa1da9a8e60ec96d9debb"
 menu_path: ["PostgreSQL: Documentation: 18: 68.3. BKI File Format"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/sql-end.html/index.md", "title": "PostgreSQL: Documentation: 18: END"}
-nav_next: {"path": "postgres/docs/current/sql-createcast.html/index.md", "title": "PostgreSQL: Documentation: 18: CREATE CAST"}
+nav_prev: {"path": "postgres/docs/current/bki-example.html/index.md", "title": "PostgreSQL: Documentation: 18: 68.6.\u00a0BKI Example"}
+nav_next: {"path": "postgres/docs/current/bki-structure.html/index.md", "title": "PostgreSQL: Documentation: 18: 68.5.\u00a0Structure of the Bootstrap BKI File"}
 ---
 
 This section describes how the PostgreSQL backend interprets BKI files. This description will be easier to understand if the `postgres.bki` file is at hand as an example.

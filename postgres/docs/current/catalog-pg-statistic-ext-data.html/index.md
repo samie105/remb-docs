@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:43:59.744Z"
 content_hash: "92e270322034b9b0d9032d78cb059c287d40aef7ef3f0fbcf84fb164811c99a8"
 menu_path: ["PostgreSQL: Documentation: 18: 52.53. pg_statistic_ext_data"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/release-18-2.html/index.md", "title": "PostgreSQL: Documentation: 18: E.2.\u00a0Release 18.2"}
-nav_next: {"path": "postgres/docs/current/logical-replication-quick-setup.html/index.md", "title": "PostgreSQL: Documentation: 18: 29.14.\u00a0Quick Setup"}
+nav_prev: {"path": "postgres/docs/current/catalog-pg-shseclabel.html/index.md", "title": "PostgreSQL: Documentation: 18: 52.50.\u00a0pg_shseclabel"}
+nav_next: {"path": "postgres/docs/current/catalog-pg-statistic-ext.html/index.md", "title": "PostgreSQL: Documentation: 18: 52.52.\u00a0pg_statistic_ext"}
 ---
 
 Development Versions: [devel](https://www.postgresql.org/docs/devel/catalog-pg-statistic-ext-data.html "PostgreSQL devel - 52.53. pg_statistic_ext_data")

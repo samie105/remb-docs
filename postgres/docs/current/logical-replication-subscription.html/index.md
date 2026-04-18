@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:51:13.791Z"
 content_hash: "90f2b0e949dca87d9363dc13df24ec90eee618d1bac717fc7497627abba79f79"
 menu_path: ["PostgreSQL: Documentation: 18: 29.2. Subscription"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/functions-xml.html/index.md", "title": "PostgreSQL: Documentation: 18: 9.15.\u00a0XML Functions"}
-nav_next: {"path": "postgres/docs/current/event-log-registration.html/index.md", "title": "PostgreSQL: Documentation: 18: 18.12.\u00a0Registering Event Log on Windows"}
+nav_prev: {"path": "postgres/docs/current/logical-replication-row-filter.html/index.md", "title": "PostgreSQL: Documentation: 18: 29.4.\u00a0Row Filters"}
+nav_next: {"path": "postgres/docs/current/logical-replication-upgrade.html/index.md", "title": "PostgreSQL: Documentation: 18: 29.13.\u00a0Upgrade"}
 ---
 
 A _subscription_ is the downstream side of logical replication. The node where a subscription is defined is referred to as the _subscriber_. A subscription defines the connection to another database and set of publications (one or more) to which it wants to subscribe.

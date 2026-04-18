@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:33:00.556Z"
 content_hash: "519d00ea16a6a3659643caa8998caf0f17b2dbd9502462d58330d7cd87fbd676"
 menu_path: ["PostgreSQL: Documentation: 18: SPI_register_relation"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/sql-set-role.html/index.md", "title": "PostgreSQL: Documentation: 18: SET ROLE"}
-nav_next: {"path": "postgres/docs/current/runtime-config-preset.html/index.md", "title": "PostgreSQL: Documentation: 18: 19.15.\u00a0Preset Options"}
+nav_prev: {"path": "postgres/docs/current/spi-spi-getvalue.html/index.md", "title": "PostgreSQL: Documentation: 18: SPI_getvalue"}
+nav_next: {"path": "postgres/docs/current/spi-spi-scroll-cursor-move.html/index.md", "title": "PostgreSQL: Documentation: 18: SPI_scroll_cursor_move"}
 ---
 
 February 26, 2026: [PostgreSQL 18.3, 17.9, 16.13, 15.17, and 14.22 Released!](/about/news/postgresql-183-179-1613-1517-and-1422-released-3246/)

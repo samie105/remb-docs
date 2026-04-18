@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:02:34.826Z"
 content_hash: "74687fe57334529bb39abacb9bfe7941fdebd1f9de356d476b4a32dbba2e57fe"
 menu_path: ["Test Reporters"]
 section_path: []
-nav_prev: {"path": "bun/bun/docs/test/index.md", "title": "Test runner"}
-nav_next: {"path": "bun/bun/docs/test/mocks/index.md", "title": "Mocks"}
+nav_prev: {"path": "bun/bun/docs/test/mocks/index.md", "title": "Mocks"}
+nav_next: {"path": "bun/bun/docs/test/runtime-behavior/index.md", "title": "Runtime behavior"}
 ---
 
 bun test supports different output formats through reporters. This document covers both built-in reporters and how to implement your own custom reporters.

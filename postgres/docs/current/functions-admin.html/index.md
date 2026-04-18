@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:35:54.903Z"
 content_hash: "fb6edf808df4bd9e75c619109bf2bd2ad03964337c71b1f5e177252e414392b7"
 menu_path: ["PostgreSQL: Documentation: 18: 9.28. System Administration Functions"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/view-pg-replication-slots.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.20.\u00a0pg_replication_slots"}
-nav_next: {"path": "postgres/docs/current/infoschema-element-types.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.24.\u00a0element_types"}
+nav_prev: {"path": "postgres/docs/current/external-pl.html/index.md", "title": "PostgreSQL: Documentation: 18: H.3.\u00a0Procedural Languages"}
+nav_next: {"path": "postgres/docs/current/functions-array.html/index.md", "title": "PostgreSQL: Documentation: 18: 9.19.\u00a0Array Functions and Operators"}
 ---
 
 Function

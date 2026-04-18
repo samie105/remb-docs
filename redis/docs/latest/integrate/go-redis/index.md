@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:54:11.267Z"
 content_hash: "abd2b4be16d46d5ae3bf6c845c3601ab2c847975edbdce2d3c645746a1196bde"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Go client for Redis","→","Go client for Redis"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Go client for Redis","→","Go client for Redis"]
-nav_prev: {"path": "redis/docs/latest/develop/use-cases/rate-limiter/go/index.md", "title": "Token bucket rate limiter with Redis and Go"}
-nav_next: {"path": "redis/docs/latest/develop/clients/jedis/vecsearch/index.md", "title": "Index and query vectors"}
+nav_prev: {"path": "redis/docs/latest/integrate/fusioncache/index.md", "title": "FusionCache for C#/.NET"}
+nav_next: {"path": "redis/docs/latest/integrate/google-adk/examples/index.md", "title": "adk-redis examples"}
 ---
 
 # Go client for Redis

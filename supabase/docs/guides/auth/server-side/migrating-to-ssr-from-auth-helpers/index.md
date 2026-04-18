@@ -10,7 +10,7 @@ content_hash: "c84723eac9e3089b1f146ba65ac84f7d2d5bcecb81677ff81f6b8a06df6eb596"
 menu_path: ["Auth","Auth","More","More","More","Server-Side Rendering","Server-Side Rendering","Migrating from Auth Helpers","Migrating from Auth Helpers"]
 section_path: ["Auth","Auth","More","More","More","Server-Side Rendering","Server-Side Rendering","Migrating from Auth Helpers","Migrating from Auth Helpers"]
 nav_prev: {"path": "supabase/docs/guides/auth/server-side/creating-a-client/index.md", "title": "Creating a Supabase client for SSR"}
-nav_next: {"path": "supabase/docs/guides/auth/quickstarts/with-expo-react-native-social-auth/index.md", "title": "Build a Social Auth App with Expo React Native"}
+nav_next: {"path": "supabase/docs/guides/auth/sessions/index.md", "title": "User sessions"}
 ---
 
 # 

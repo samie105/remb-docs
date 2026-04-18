@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:46:36.881Z"
 content_hash: "7810a5e73b7d26da4dc226b8fa437764c7d3772aa95d1955d665ad5438f1a4ef"
 menu_path: ["Server-side render (SSR) a React component"]
 section_path: []
-nav_prev: {"path": "bun/bun/docs/guides/ecosystem/stric/index.md", "title": "Build an HTTP server using StricJS and Bun"}
-nav_next: {"path": "bun/bun/docs/guides/ecosystem/sveltekit/index.md", "title": "Build an app with SvelteKit and Bun"}
+nav_prev: {"path": "bun/bun/docs/guides/ecosystem/solidstart/index.md", "title": "Build an app with SolidStart and Bun"}
+nav_next: {"path": "bun/bun/docs/guides/ecosystem/stric/index.md", "title": "Build an HTTP server using StricJS and Bun"}
 ---
 
 # Any package manager can be used

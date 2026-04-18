@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:08:45.134Z"
 content_hash: "19853cc9315428887a8b598ff0c6535c6355a79e7969f7d4b4e53c94c264018f"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis data types","→","Redis data types","→\n      \n        JSON","→","JSON","→\n      \n        Guide for migrating from RESP2 to RESP3 replies","→","Guide for migrating from RESP2 to RESP3 replies"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis data types","→","Redis data types","→\n      \n        JSON","→","JSON","→\n      \n        Guide for migrating from RESP2 to RESP3 replies","→","Guide for migrating from RESP2 to RESP3 replies"]
-nav_prev: {"path": "redis/docs/latest/develop/ai/redisvl/user_guide/rerankers/index.md", "title": "Rerankers"}
-nav_next: {"path": "redis/docs/latest/develop/tools/insight/release-notes/v1.13.0/index.md", "title": "RedisInsight v1.13, Aug 2022"}
+nav_prev: {"path": "redis/docs/latest/develop/data-types/json/ram/index.md", "title": "Redis JSON RAM Usage"}
+nav_next: {"path": "redis/docs/latest/develop/data-types/json/use_cases/index.md", "title": "Use cases"}
 ---
 
 # Guide for migrating from RESP2 to RESP3 replies

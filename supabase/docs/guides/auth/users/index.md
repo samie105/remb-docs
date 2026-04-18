@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:39:31.685Z"
 content_hash: "09dd5ef0a6b235e00959a3ae0483be780980054297335671df8a4e8fb7b976ab"
 menu_path: ["Auth","Auth","Concepts","Concepts","Users","Users"]
 section_path: ["Auth","Auth","Concepts","Concepts","Users","Users"]
-nav_prev: {"path": "supabase/docs/guides/auth/social-login/index.md", "title": "Social Login"}
-nav_next: {"path": "supabase/docs/guides/cron/install/index.md", "title": "Install"}
+nav_prev: {"path": "supabase/docs/guides/auth/third-party/workos/index.md", "title": "WorkOS"}
+nav_next: {"path": "supabase/docs/guides/cli/index.md", "title": "Local Development & CLI"}
 ---
 
 # 

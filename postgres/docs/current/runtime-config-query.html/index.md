@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:34:48.511Z"
 content_hash: "4401761c9a9f754628c432326d6fe79fba830093ad65f0f36f47c92535028028"
 menu_path: ["PostgreSQL: Documentation: 18: 19.7. Query Planning"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/view-pg-roles.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.21.\u00a0pg_roles"}
-nav_next: {"path": "postgres/docs/current/libpq-connect.html/index.md", "title": "PostgreSQL: Documentation: 18: 32.1.\u00a0Database Connection Control Functions"}
+nav_prev: {"path": "postgres/docs/current/runtime-config-preset.html/index.md", "title": "PostgreSQL: Documentation: 18: 19.15.\u00a0Preset Options"}
+nav_next: {"path": "postgres/docs/current/runtime-config-replication.html/index.md", "title": "PostgreSQL: Documentation: 18: 19.6.\u00a0Replication"}
 ---
 
 ### 19.7.1. Planner Method Configuration [#](#RUNTIME-CONFIG-QUERY-ENABLE)

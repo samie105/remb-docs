@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:49:57.585Z"
 content_hash: "9cf38357667b98027c5674a505334edd58ea9c66f5ee7f9b09c637cfa3f19831"
 menu_path: ["Realtime","Realtime","Guides","Guides","Subscribing to Database Changes","Subscribing to Database Changes"]
 section_path: ["Realtime","Realtime","Guides","Guides","Subscribing to Database Changes","Subscribing to Database Changes"]
-nav_prev: {"path": "supabase/docs/guides/security/hipaa-compliance/index.md", "title": "HIPAA Compliance and Supabase"}
-nav_next: {"path": "supabase/docs/guides/security/platform-audit-logs/index.md", "title": "Platform Audit Logs"}
+nav_prev: {"path": "supabase/docs/guides/realtime/settings/index.md", "title": "Settings"}
+nav_next: {"path": "supabase/docs/guides/resources/index.md", "title": "Resources"}
 ---
 
 # 

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:01:33.111Z"
 content_hash: "4018a560bc2ae70235e0de9b242ca08bf23fe9cb0b87d47feb864e723a98655c"
 menu_path: ["Storage","Storage","More","More","More","Security","Security","Ownership","Ownership"]
 section_path: ["Storage","Storage","More","More","More","Security","Security","Ownership","Ownership"]
-nav_prev: {"path": "supabase/docs/guides/storage/schema/helper-functions/index.md", "title": "Storage Helper Functions"}
-nav_next: {"path": "supabase/docs/guides/storage/security/access-control/index.md", "title": "Storage Access Control"}
+nav_prev: {"path": "supabase/docs/guides/storage/security/access-control/index.md", "title": "Storage Access Control"}
+nav_next: {"path": "supabase/docs/guides/telemetry/index.md", "title": "Telemetry"}
 ---
 
 # 

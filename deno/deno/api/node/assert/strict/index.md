@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:16:06.946Z"
 content_hash: "a334f45bee005d969c12ae8d809c8ffba6e0c0fcd4005a59d7bd4ba6124f1d19"
 menu_path: ["namespace assert.strict"]
 section_path: []
-nav_prev: {"path": "deno/deno/api/web/all_symbols/index.md", "title": "All Symbols - Web documentation"}
-nav_next: {"path": "deno/deno/api/index.md", "title": "Deno Namespace APIs"}
+nav_prev: {"path": "deno/deno/api/node/assert/index.md", "title": "assert - Node documentation"}
+nav_next: {"path": "deno/deno/api/node/async_hooks/index.md", "title": "async_hooks - Node documentation"}
 ---
 
 # namespace assert.strict

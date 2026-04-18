@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:37:57.995Z"
 content_hash: "23f6337d39702f02cddaec4e0e620068f3f315a8e1dae7d4caa375f13d24cdcf"
 menu_path: ["PostgreSQL: Documentation: 18: 5.8. Privileges"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/infoschema-foreign-data-wrapper-options.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.26.\u00a0foreign_data_wrapper_options"}
-nav_next: {"path": "postgres/docs/current/app-pgresetwal.html/index.md", "title": "PostgreSQL: Documentation: 18: pg_resetwal"}
+nav_prev: {"path": "postgres/docs/current/ddl-partitioning.html/index.md", "title": "PostgreSQL: Documentation: 18: 5.12.\u00a0Table Partitioning"}
+nav_next: {"path": "postgres/docs/current/ddl-rowsecurity.html/index.md", "title": "PostgreSQL: Documentation: 18: 5.9.\u00a0Row Security Policies"}
 ---
 
 When an object is created, it is assigned an owner. The owner is normally the role that executed the creation statement. For most kinds of objects, the initial state is that only the owner (or a superuser) can do anything with the object. To allow other roles to use it, _privileges_ must be granted.

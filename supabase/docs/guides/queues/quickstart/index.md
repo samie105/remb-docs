@@ -10,7 +10,7 @@ content_hash: "4dcb07cb6fd9b9d7409670f1019faeb9346b8d6f2ac5292eb1529d2d8e34f0e5"
 menu_path: ["Queues","Queues","Getting Started","Getting Started","Quickstart","Quickstart"]
 section_path: ["Queues","Queues","Getting Started","Getting Started","Quickstart","Quickstart"]
 nav_prev: {"path": "supabase/docs/guides/queues/pgmq/index.md", "title": "PGMQ Extension"}
-nav_next: {"path": "supabase/docs/guides/resources/glossary/index.md", "title": "Glossary"}
+nav_next: {"path": "supabase/docs/guides/realtime/index.md", "title": "Realtime"}
 ---
 
 # 

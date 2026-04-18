@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:43:04.592Z"
 content_hash: "b15037d11ef6e10c67d045d1f7150d8719a3ec86e0a4642d847867f3419e068f"
 menu_path: ["Deployment & Branching","Deployment & Branching","Environments","Environments","Database migrations","Database migrations"]
 section_path: ["Deployment & Branching","Deployment & Branching","Environments","Environments","Database migrations","Database migrations"]
-nav_prev: {"path": "supabase/docs/guides/deployment/going-into-prod/index.md", "title": "Production Checklist"}
-nav_next: {"path": "supabase/docs/guides/deployment/maturity-model/index.md", "title": "Maturity Model"}
+nav_prev: {"path": "supabase/docs/guides/deployment/branching/working-with-branches/index.md", "title": "Working with branches"}
+nav_next: {"path": "supabase/docs/guides/deployment/going-into-prod/index.md", "title": "Production Checklist"}
 ---
 
 # 

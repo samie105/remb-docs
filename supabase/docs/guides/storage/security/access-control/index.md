@@ -9,7 +9,8 @@ last_crawled_at: "2026-04-18T17:01:33.401Z"
 content_hash: "321a437115ab03a4d21977a534c2eb1667a91251addd1678ca13cabaab03c337"
 menu_path: ["Storage","Storage","More","More","More","Security","Security","Access Control","Access Control"]
 section_path: ["Storage","Storage","More","More","More","Security","Security","Access Control","Access Control"]
-nav_prev: {"path": "supabase/docs/guides/storage/security/ownership/index.md", "title": "Ownership"}
+nav_prev: {"path": "supabase/docs/guides/storage/schema/helper-functions/index.md", "title": "Storage Helper Functions"}
+nav_next: {"path": "supabase/docs/guides/storage/security/ownership/index.md", "title": "Ownership"}
 ---
 
 # 

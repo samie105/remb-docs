@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:36:44.984Z"
 content_hash: "c778915fc909e06a5a0e0fae4eb59bacfdc9552351394d0682d63e52ab711262"
 menu_path: ["Migrate from v9 to v10"]
 section_path: []
-nav_prev: {"path": "trpc/docs/v10/landing-intro/Step2/index.md", "title": "Step2"}
-nav_next: {"path": "trpc/docs/v10/rpc/index.md", "title": "HTTP RPC Specification"}
+nav_prev: {"path": "trpc/docs/v10/landing-intro/Step3/index.md", "title": "Step3"}
+nav_next: {"path": "trpc/docs/v10/quickstart/index.md", "title": "Quickstart"}
 ---
 
 Welcome to tRPC v10! We're excited to bring you a new major version to continue the journey towards perfect end-to-end type safety with excellent DX.

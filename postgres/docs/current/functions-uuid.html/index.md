@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:47:37.700Z"
 content_hash: "4bb29162aa976be67dbe2abd2b990251d2e80f4e47b9ad4798da9b411de1b064"
 menu_path: ["PostgreSQL: Documentation: 18: 9.14. UUID Functions"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/catalog-pg-operator.html/index.md", "title": "PostgreSQL: Documentation: 18: 52.34.\u00a0pg_operator"}
-nav_next: {"path": "postgres/docs/current/earthdistance.html/index.md", "title": "PostgreSQL: Documentation: 18: F.14.\u00a0earthdistance \u2014 calculate great-circle distances"}
+nav_prev: {"path": "postgres/docs/current/functions-subquery.html/index.md", "title": "PostgreSQL: Documentation: 18: 9.24.\u00a0Subquery Expressions"}
+nav_next: {"path": "postgres/docs/current/functions-xml.html/index.md", "title": "PostgreSQL: Documentation: 18: 9.15.\u00a0XML Functions"}
 ---
 
 Development Versions: [devel](https://www.postgresql.org/docs/devel/functions-uuid.html "PostgreSQL devel - 9.14. UUID Functions")

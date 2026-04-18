@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:38:59.590Z"
 content_hash: "6b278da86413b8eb9de6a76f57e4ede5c2f1d3b511fdc0451b8841fe15fc7436"
 menu_path: ["The hitchhiker's guide to plugins"]
 section_path: []
-nav_prev: {"path": "fastify/docs/latest/Guides/Migration-Guide-V4/index.md", "title": "V4 Migration Guide"}
-nav_next: {"path": "fastify/docs/latest/Guides/Migration-Guide-V5/index.md", "title": "V5 Migration Guide"}
+nav_prev: {"path": "fastify/docs/latest/Guides/Migration-Guide-V5/index.md", "title": "V5 Migration Guide"}
+nav_next: {"path": "fastify/docs/latest/Guides/Prototype-Poisoning/index.md", "title": "Prototype-Poisoning"}
 ---
 
 Version: latest (v5.8.x)

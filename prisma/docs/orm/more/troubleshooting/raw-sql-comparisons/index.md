@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:44:20.495Z"
 content_hash: "1e06dc46f79bc785357930d103e48b61636acc82420b914e603e05ba0a606906"
 menu_path: ["Raw SQL comparisons"]
 section_path: []
-nav_prev: {"path": "prisma/docs/orm/more/troubleshooting/typescript-performance/index.md", "title": "TypeScript performance"}
-nav_next: {"path": "prisma/docs/orm/prisma-client/client-extensions/client/index.md", "title": "Add methods to Prisma Client"}
+nav_prev: {"path": "prisma/docs/orm/more/troubleshooting/nuxt/index.md", "title": "Nuxt"}
+nav_next: {"path": "prisma/docs/orm/more/troubleshooting/typescript-performance/index.md", "title": "TypeScript performance"}
 ---
 
 Troubleshooting

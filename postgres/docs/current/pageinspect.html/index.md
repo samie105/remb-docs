@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:53:55.580Z"
 content_hash: "adde4fa1b3551f481bf59940b1271f9c0f0f97f6f1b8049b754e62a5bd6f1221"
 menu_path: ["PostgreSQL: Documentation: 18: F.23. pageinspect — low-level inspection of database pages"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/infoschema-sql-implementation-info.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.49.\u00a0sql_implementation_info"}
-nav_next: {"path": "postgres/docs/current/xtypes.html/index.md", "title": "PostgreSQL: Documentation: 18: 36.13.\u00a0User-Defined Types"}
+nav_prev: {"path": "postgres/docs/current/logicaldecoding-writer.html/index.md", "title": "PostgreSQL: Documentation: 18: 47.7.\u00a0Logical Decoding Output Writers"}
+nav_next: {"path": "postgres/docs/current/parallel-plans.html/index.md", "title": "PostgreSQL: Documentation: 18: 15.3.\u00a0Parallel Plans"}
 ---
 
 The `pageinspect` module provides functions that allow you to inspect the contents of database pages at a low level, which is useful for debugging purposes. All of these functions may be used only by superusers.

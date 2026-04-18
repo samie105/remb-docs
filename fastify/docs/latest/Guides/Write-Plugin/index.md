@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:36:38.898Z"
 content_hash: "b4431db32f716362f8f61bda2059988fb49bda3419951f3a97e2f341e90c9b5f"
 menu_path: ["How to write a good plugin"]
 section_path: []
-nav_prev: {"path": "fastify/docs/latest/Guides/Getting-Started/index.md", "title": "Getting-Started"}
-nav_next: {"path": "fastify/docs/latest/Guides/Database/index.md", "title": "Database"}
+nav_prev: {"path": "fastify/docs/latest/Guides/Testing/index.md", "title": "Testing"}
+nav_next: {"path": "fastify/docs/latest/Guides/Write-Type-Provider/index.md", "title": "Write-Type-Provider"}
 ---
 
 Version: latest (v5.8.x)

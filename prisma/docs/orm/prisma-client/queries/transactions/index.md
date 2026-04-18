@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:47:26.552Z"
 content_hash: "36ae2eef89c88664d12a43e6207989bb6b9834f82276a2850bb5c4be80c3db4b"
 menu_path: ["Transactions and batch queries"]
 section_path: []
-nav_prev: {"path": "prisma/docs/orm/prisma-client/setup-and-configuration/database-polyfills/index.md", "title": "Database polyfills"}
-nav_next: {"path": "prisma/docs/orm/prisma-client/setup-and-configuration/error-formatting/index.md", "title": "Configuring error formatting"}
+nav_prev: {"path": "prisma/docs/orm/prisma-client/queries/relation-queries/index.md", "title": "CRUD"}
+nav_next: {"path": "prisma/docs/orm/prisma-client/setup-and-configuration/custom-model-and-field-names/index.md", "title": "Custom model and field names"}
 ---
 
 A database transaction is a sequence of read/write operations guaranteed to succeed or fail as a whole (ACID properties: Atomic, Consistent, Isolated, Durable).

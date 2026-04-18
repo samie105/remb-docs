@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:09:50.488Z"
 content_hash: "64176f5cd0694f7282976f29f31d8280cc256769151d54899a62ad8ef1b48fc5"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Redis Open Source and Redis Software","→","Redis Open Source and Redis Software","→\n      \n        Deprecated Redis Open Source features and modules","→","Deprecated Redis Open Source features and modules","→\n      \n        Triggers and functions","→","Triggers and functions","→\n      \n        Triggers and functions examples","→","Triggers and functions examples"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Redis Open Source and Redis Software","→","Redis Open Source and Redis Software","→\n      \n        Deprecated Redis Open Source features and modules","→","Deprecated Redis Open Source features and modules","→\n      \n        Triggers and functions","→","Triggers and functions","→\n      \n        Triggers and functions examples","→","Triggers and functions examples"]
-nav_prev: {"path": "redis/docs/latest/develop/ai/redisvl/user_guide/message_history/index.md", "title": "LLM Message History"}
-nav_next: {"path": "redis/docs/latest/develop/clients/go/index.md", "title": "go-redis guide (Go)"}
+nav_prev: {"path": "redis/docs/latest/operate/oss_and_stack/stack-with-enterprise/deprecated-features/triggers-and-functions/development/index.md", "title": "Development"}
+nav_next: {"path": "redis/docs/latest/operate/oss_and_stack/stack-with-enterprise/deprecated-features/triggers-and-functions/known_limitations/index.md", "title": "Known limitations"}
 ---
 
 # Triggers and functions examples

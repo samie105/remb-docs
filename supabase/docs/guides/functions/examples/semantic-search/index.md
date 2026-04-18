@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:57:43.416Z"
 content_hash: "cc3659ac29bc816c517c78b95103034fe8ba82cf7e28dfb6aa9b509e17cd00fd"
 menu_path: ["Edge Functions","Edge Functions","Examples","Examples","Semantic AI Search","Semantic AI Search"]
 section_path: ["Edge Functions","Edge Functions","Examples","Examples","Semantic AI Search","Semantic AI Search"]
-nav_prev: {"path": "supabase/docs/guides/functions/examples/rate-limiting/index.md", "title": "Rate Limiting Edge Functions"}
-nav_next: {"path": "supabase/docs/guides/functions/examples/screenshots/index.md", "title": "Taking Screenshots with Puppeteer"}
+nav_prev: {"path": "supabase/docs/guides/functions/examples/screenshots/index.md", "title": "Taking Screenshots with Puppeteer"}
+nav_next: {"path": "supabase/docs/guides/functions/examples/send-emails/index.md", "title": "Sending Emails"}
 ---
 
 # 

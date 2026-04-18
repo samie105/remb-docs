@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:41:39.736Z"
 content_hash: "4561305c97d1eae5b2808fe9a2649f148fab34bf86b63db08d4127be7ea15a44"
 menu_path: ["PostgreSQL: Documentation: 18: CREATE SEQUENCE"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/view-pg-prepared-statements.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.16.\u00a0pg_prepared_statements"}
-nav_next: {"path": "postgres/docs/current/spi-transaction.html/index.md", "title": "PostgreSQL: Documentation: 18: 45.4.\u00a0Transaction Management"}
+nav_prev: {"path": "postgres/docs/current/sql-createschema.html/index.md", "title": "PostgreSQL: Documentation: 18: CREATE SCHEMA"}
+nav_next: {"path": "postgres/docs/current/sql-createserver.html/index.md", "title": "PostgreSQL: Documentation: 18: CREATE SERVER"}
 ---
 
 CREATE SEQUENCE — define a new sequence generator

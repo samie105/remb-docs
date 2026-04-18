@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:47:04.344Z"
 content_hash: "223aee1d026d9b6335a3d2065228639e62fd671831cf003ab84148351a22ecf9"
 menu_path: ["Platform","Platform","Billing","Billing","About billing on Supabase","About billing on Supabase"]
 section_path: ["Platform","Platform","Billing","Billing","About billing on Supabase","About billing on Supabase"]
-nav_prev: {"path": "supabase/docs/guides/platform/backups/index.md", "title": "Database Backups"}
-nav_next: {"path": "supabase/docs/guides/platform/billing-faq/index.md", "title": "Billing FAQ"}
+nav_prev: {"path": "supabase/docs/guides/platform/billing-faq/index.md", "title": "Billing FAQ"}
+nav_next: {"path": "supabase/docs/guides/platform/clone-project/index.md", "title": "Restore to a new project"}
 ---
 
 # 

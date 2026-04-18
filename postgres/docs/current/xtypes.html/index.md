@@ -9,8 +9,7 @@ last_crawled_at: "2026-04-18T16:53:57.876Z"
 content_hash: "1090c2adcf85e54b7124e9faf0eaa7cd2577e99e73da9b527889ed3dddd0e377"
 menu_path: ["PostgreSQL: Documentation: 18: 36.13. User-Defined Types"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/pageinspect.html/index.md", "title": "PostgreSQL: Documentation: 18: F.23.\u00a0pageinspect \u2014 low-level inspection of database pages"}
-nav_next: {"path": "postgres/docs/current/ecpg-sql-type.html/index.md", "title": "PostgreSQL: Documentation: 18: TYPE"}
+nav_prev: {"path": "postgres/docs/current/xoper-optimization.html/index.md", "title": "PostgreSQL: Documentation: 18: 36.15.\u00a0Operator Optimization Information"}
 ---
 
 As described in [Section 36.2](https://www.postgresql.org/docs/current/extend-type-system.html "36.2. The PostgreSQL Type System"), PostgreSQL can be extended to support new data types. This section describes how to define new base types, which are data types defined below the level of the SQL language. Creating a new base type requires implementing functions to operate on the type in a low-level language, usually C.

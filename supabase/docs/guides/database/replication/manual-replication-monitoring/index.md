@@ -9,7 +9,7 @@ last_crawled_at: "2026-04-18T16:56:55.041Z"
 content_hash: "116f776ff54f4cb93812257217f21810ebfe7af0ec17f6e995ddffa5b7c19897"
 menu_path: ["Database","Database","More","More","More","Manual replication","Manual replication","Monitoring","Monitoring"]
 section_path: ["Database","Database","More","More","More","Manual replication","Manual replication","Monitoring","Monitoring"]
-nav_prev: {"path": "supabase/docs/guides/database/prisma/prisma-troubleshooting/index.md", "title": "Troubleshooting prisma errors"}
+nav_prev: {"path": "supabase/docs/guides/database/replication/manual-replication-faq/index.md", "title": "Manual Replication FAQ"}
 nav_next: {"path": "supabase/docs/guides/database/replication/manual-replication-setup/index.md", "title": "Manual Replication Setup"}
 ---
 

@@ -9,7 +9,7 @@ last_crawled_at: "2026-04-18T17:02:26.089Z"
 content_hash: "4e1e8ac9cf7aec653f9e120f8acc8f4c3c4955a908767de564409ac166cade2a"
 menu_path: ["DOM testing"]
 section_path: []
-nav_prev: {"path": "bun/bun/docs/test/configuration/index.md", "title": "Test configuration"}
+nav_prev: {"path": "bun/bun/docs/test/discovery/index.md", "title": "Finding tests"}
 nav_next: {"path": "bun/bun/docs/test/lifecycle/index.md", "title": "Lifecycle hooks"}
 ---
 

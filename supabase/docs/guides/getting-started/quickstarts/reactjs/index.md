@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:58:19.593Z"
 content_hash: "01b6e3c51997498dbfa022c6037ab4f5e38613aa49ab43a369603e83ad4eae3a"
 menu_path: ["Start with Supabase","Start with Supabase","Framework Quickstarts","Framework Quickstarts","React","React"]
 section_path: ["Start with Supabase","Start with Supabase","Framework Quickstarts","Framework Quickstarts","React","React"]
-nav_prev: {"path": "supabase/docs/guides/getting-started/quickstarts/nextjs/index.md", "title": "Use Supabase with Next.js"}
-nav_next: {"path": "supabase/docs/guides/getting-started/quickstarts/nuxtjs/index.md", "title": "Use Supabase with Nuxt"}
+nav_prev: {"path": "supabase/docs/guides/getting-started/quickstarts/nuxtjs/index.md", "title": "Use Supabase with Nuxt"}
+nav_next: {"path": "supabase/docs/guides/getting-started/quickstarts/redwoodjs/index.md", "title": "Use Supabase with RedwoodJS"}
 ---
 
 # 

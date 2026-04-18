@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:42:48.414Z"
 content_hash: "d6ed578f0dfb3559af50522fcb44b4e817299ed6fe8561846262e8e69cc3832f"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Token bucket rate limiter with Redis","→","Token bucket rate limiter with Redis"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Token bucket rate limiter with Redis","→","Token bucket rate limiter with Redis"]
-nav_prev: {"path": "redis/docs/latest/operate/oss_and_stack/stack-with-enterprise/deprecated-features/triggers-and-functions/quick_start_ri/index.md", "title": "Quick start using Redis Insight"}
-nav_next: {"path": "redis/docs/latest/operate/rs/installing-upgrading/quickstarts/redis-enterprise-software-quickstart/index.md", "title": "Redis Software quickstart"}
+nav_prev: {"path": "redis/docs/latest/develop/use-cases/leaderboard/rust/index.md", "title": "Redis leaderboard with Rust"}
+nav_next: {"path": "redis/docs/latest/develop/use-cases/rate-limiter/dotnet/index.md", "title": "Token bucket rate limiter with Redis and .NET"}
 ---
 
 # Token bucket rate limiter with Redis

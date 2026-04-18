@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:43:11.701Z"
 content_hash: "cd25c8693487b2346be4f72d0cadfc7ef3fcdb4222052c2eca12ce6871464b7b"
 menu_path: ["Deployment & Branching","Deployment & Branching","Production readiness","Production readiness","Maturity model","Maturity model"]
 section_path: ["Deployment & Branching","Deployment & Branching","Production readiness","Production readiness","Maturity model","Maturity model"]
-nav_prev: {"path": "supabase/docs/guides/deployment/database-migrations/index.md", "title": "Database Migrations"}
-nav_next: {"path": "supabase/docs/guides/deployment/managing-environments/index.md", "title": "Managing Environments"}
+nav_prev: {"path": "supabase/docs/guides/deployment/managing-environments/index.md", "title": "Managing Environments"}
+nav_next: {"path": "supabase/docs/guides/deployment/shared-responsibility-model/index.md", "title": "Shared Responsibility Model"}
 ---
 
 # 

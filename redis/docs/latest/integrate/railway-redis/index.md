@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:10:48.698Z"
 content_hash: "36815b3a60a63b26daeb084404cc0920282a55b58aea2237a8133705b3cd7fcb"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Redis on Railway","→","Redis on Railway"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Redis on Railway","→","Redis on Railway"]
-nav_prev: {"path": "redis/docs/latest/operate/redisinsight/proxy/index.md", "title": "Subpath proxy"}
-nav_next: {"path": "redis/docs/latest/develop/tools/insight/release-notes/index.md", "title": "Redis Insight release notes"}
+nav_prev: {"path": "redis/docs/latest/integrate/pulumi-provider-for-redis-cloud/index.md", "title": "Pulumi provider for Redis Cloud"}
+nav_next: {"path": "redis/docs/latest/integrate/redis-ai-libraries/index.md", "title": "Redis for AI"}
 ---
 
 # Redis on Railway

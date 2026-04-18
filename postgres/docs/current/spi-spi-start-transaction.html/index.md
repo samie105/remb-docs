@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:47:24.161Z"
 content_hash: "e7bdd36be66d9c16679863b13a44af71dd206ba937a94017d4d627854eb746a4"
 menu_path: ["PostgreSQL: Documentation: 18: SPI_start_transaction"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/sql-truncate.html/index.md", "title": "PostgreSQL: Documentation: 18: TRUNCATE"}
-nav_next: {"path": "postgres/docs/current/sql-droptsdictionary.html/index.md", "title": "PostgreSQL: Documentation: 18: DROP TEXT SEARCH DICTIONARY"}
+nav_prev: {"path": "postgres/docs/current/spi-spi-scroll-cursor-move.html/index.md", "title": "PostgreSQL: Documentation: 18: SPI_scroll_cursor_move"}
+nav_next: {"path": "postgres/docs/current/spi-spi-unregister-relation.html/index.md", "title": "PostgreSQL: Documentation: 18: SPI_unregister_relation"}
 ---
 
 Development Versions: [devel](https://www.postgresql.org/docs/devel/spi-spi-start-transaction.html "PostgreSQL devel - SPI_start_transaction")

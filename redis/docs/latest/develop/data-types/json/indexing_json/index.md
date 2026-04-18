@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:48:38.563Z"
 content_hash: "e26c1d80a299a2ac0c2d7ace99a4a552cf2868ad91ab303fffba377c86a43379"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis data types","→","Redis data types","→\n      \n        JSON","→","JSON","→\n      \n        Index/Search JSON documents","→","Index/Search JSON documents"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis data types","→","Redis data types","→\n      \n        JSON","→","JSON","→\n      \n        Index/Search JSON documents","→","Index/Search JSON documents"]
-nav_prev: {"path": "redis/docs/latest/develop/clients/lettuce/queryjson/index.md", "title": "Index and query documents"}
-nav_next: {"path": "redis/docs/latest/develop/clients/nodejs/queryjson/index.md", "title": "Index and query documents"}
+nav_prev: {"path": "redis/docs/latest/develop/data-types/json/developer/index.md", "title": "Developer notes"}
+nav_next: {"path": "redis/docs/latest/develop/data-types/json/path/index.md", "title": "Path"}
 ---
 
 # Index/Search JSON documents

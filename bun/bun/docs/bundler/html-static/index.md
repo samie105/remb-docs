@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:34:49.965Z"
 content_hash: "3f6a508c4836b1d6eef6dcc8ff649a4fc1ccbf9f4aa196268876268e89e2cd4c"
 menu_path: ["HTML & static sites"]
 section_path: []
-nav_prev: {"path": "bun/bun/docs/bundler/fullstack/index.md", "title": "Fullstack dev server"}
-nav_next: {"path": "bun/bun/docs/bundler/hot-reloading/index.md", "title": "Hot reloading"}
+nav_prev: {"path": "bun/bun/docs/bundler/hot-reloading/index.md", "title": "Hot reloading"}
+nav_next: {"path": "bun/bun/docs/bundler/loaders/index.md", "title": "Loaders"}
 ---
 
 # Or any npm client

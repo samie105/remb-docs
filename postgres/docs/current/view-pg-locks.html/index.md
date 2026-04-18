@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:49:27.584Z"
 content_hash: "8911614b9bfde2c510edad0434be0707a8af1987406b7361209d847e7f18dfcc"
 menu_path: ["PostgreSQL: Documentation: 18: 53.13. pg_locks"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/catalog-pg-publication-namespace.html/index.md", "title": "PostgreSQL: Documentation: 18: 52.41.\u00a0pg_publication_namespace"}
-nav_next: {"path": "postgres/docs/current/functions-array.html/index.md", "title": "PostgreSQL: Documentation: 18: 9.19.\u00a0Array Functions and Operators"}
+nav_prev: {"path": "postgres/docs/current/view-pg-indexes.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.12.\u00a0pg_indexes"}
+nav_next: {"path": "postgres/docs/current/view-pg-matviews.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.14.\u00a0pg_matviews"}
 ---
 
 The view `pg_locks` provides access to information about the locks held by active processes within the database server. See [Chapter 13](https://www.postgresql.org/docs/current/mvcc.html "Chapter 13. Concurrency Control") for more discussion of locking.

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:47:13.839Z"
 content_hash: "5590be089c223d0bbf34c499552348de4c73564d48864ea5449b725e9ac1ac11"
 menu_path: ["PostgreSQL: Documentation: 18: 36.16. Interfacing Extensions to Indexes"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/sql-createrole.html/index.md", "title": "PostgreSQL: Documentation: 18: CREATE ROLE"}
-nav_next: {"path": "postgres/docs/current/functions-json.html/index.md", "title": "PostgreSQL: Documentation: 18: 9.16.\u00a0JSON Functions and Operators"}
+nav_prev: {"path": "postgres/docs/current/xfunc.html/index.md", "title": "PostgreSQL: Documentation: 18: 36.3.\u00a0User-Defined Functions"}
+nav_next: {"path": "postgres/docs/current/xoper-optimization.html/index.md", "title": "PostgreSQL: Documentation: 18: 36.15.\u00a0Operator Optimization Information"}
 ---
 
 The procedures described thus far let you define new types, new functions, and new operators. However, we cannot yet define an index on a column of a new data type. To do this, we must define an _operator class_ for the new data type. Later in this section, we will illustrate this concept in an example: a new operator class for the B-tree index method that stores and sorts complex numbers in ascending absolute value order.

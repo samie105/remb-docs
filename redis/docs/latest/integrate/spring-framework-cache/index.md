@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:13:21.312Z"
 content_hash: "d6a845f8df46139061dbefded9f81a4c9e51d6b1282ef420992b8279e10dbd29"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Spring Data Redis","→","Spring Data Redis"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Spring Data Redis","→","Spring Data Redis"]
-nav_prev: {"path": "redis/docs/latest/operate/oss_and_stack/reference/signals/index.md", "title": "Redis signal handling"}
-nav_next: {"path": "redis/docs/latest/develop/ai/search-and-query/vectors/index.md", "title": "Vector search concepts"}
+nav_prev: {"path": "redis/docs/latest/integrate/rust-redis/index.md", "title": "Rust client for Redis"}
+nav_next: {"path": "redis/docs/latest/integrate/terraform-provider-for-redis-cloud/index.md", "title": "Terraform provider for Redis Cloud"}
 ---
 
 # Spring Data Redis

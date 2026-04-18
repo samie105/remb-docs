@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:54:37.286Z"
 content_hash: "5d6cb61cff670c8a1ffc9e0e3212a658c11dd20bcc7bc5f0d84ce685c4185435"
 menu_path: ["PostgreSQL: Documentation: 18: 32.4. Asynchronous Command Processing"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/sql-createtsparser.html/index.md", "title": "PostgreSQL: Documentation: 18: CREATE TEXT SEARCH PARSER"}
-nav_next: {"path": "postgres/docs/current/app-vacuumdb.html/index.md", "title": "PostgreSQL: Documentation: 18: vacuumdb"}
+nav_prev: {"path": "postgres/docs/current/jit-reason.html/index.md", "title": "PostgreSQL: Documentation: 18: 30.1.\u00a0What Is JIT compilation?"}
+nav_next: {"path": "postgres/docs/current/libpq-connect.html/index.md", "title": "PostgreSQL: Documentation: 18: 32.1.\u00a0Database Connection Control Functions"}
 ---
 
 The [`PQexec`](https://www.postgresql.org/docs/current/libpq-exec.html#LIBPQ-PQEXEC) function is adequate for submitting commands in normal, synchronous applications. It has a few deficiencies, however, that can be of importance to some users:

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:46:01.244Z"
 content_hash: "05d1b3c06c41072347b64ecc88e1d6d0bf9ee2678f650aa4fbd7c6a174484d8f"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Reference","→","Reference","→\n      \n        Redis internals","→","Redis internals","→\n      \n        Virtual memory (deprecated)","→","Virtual memory (deprecated)"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Reference","→","Reference","→\n      \n        Redis internals","→","Redis internals","→\n      \n        Virtual memory (deprecated)","→","Virtual memory (deprecated)"]
-nav_prev: {"path": "redis/docs/latest/operate/oss_and_stack/stack-with-enterprise/deprecated-features/triggers-and-functions/concepts/triggers/user_functions/index.md", "title": "User functions"}
-nav_next: {"path": "redis/docs/latest/operate/kubernetes/release-notes/7-22-0-releases/7-22-0-16-august2025/index.md", "title": "Redis Enterprise for Kubernetes 7.22.0-16 (August 2025) release notes"}
+nav_prev: {"path": "redis/docs/latest/operate/oss_and_stack/reference/internals/internals-sds/index.md", "title": "String internals"}
+nav_next: {"path": "redis/docs/latest/operate/oss_and_stack/reference/internals/rdd/index.md", "title": "Redis design draft #2 (historical)"}
 ---
 
 # Virtual memory (deprecated)

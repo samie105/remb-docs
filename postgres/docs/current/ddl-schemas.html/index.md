@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:35:18.604Z"
 content_hash: "2facbeccc9eff46d04411abb8dd057b403c631ddd54ce86948ceb4243f2645d4"
 menu_path: ["PostgreSQL: Documentation: 18: 5.10. Schemas"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/indexes-intro.html/index.md", "title": "PostgreSQL: Documentation: 18: 11.1.\u00a0Introduction"}
-nav_next: {"path": "postgres/docs/current/sql-createstatistics.html/index.md", "title": "PostgreSQL: Documentation: 18: CREATE STATISTICS"}
+nav_prev: {"path": "postgres/docs/current/ddl-rowsecurity.html/index.md", "title": "PostgreSQL: Documentation: 18: 5.9.\u00a0Row Security Policies"}
+nav_next: {"path": "postgres/docs/current/ddl-system-columns.html/index.md", "title": "PostgreSQL: Documentation: 18: 5.6.\u00a0System Columns"}
 ---
 
 A PostgreSQL database cluster contains one or more named databases. Roles and a few other object types are shared across the entire cluster. A client connection to the server can only access data in a single database, the one specified in the connection request.

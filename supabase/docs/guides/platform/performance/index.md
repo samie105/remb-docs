@@ -10,7 +10,7 @@ content_hash: "ef66f91e4575b472a898291a5ee24c18e4bea34fdf148119039633915b115418"
 menu_path: ["Platform","Platform","Platform Configuration","Platform Configuration","Performance Tuning","Performance Tuning"]
 section_path: ["Platform","Platform","Platform Configuration","Platform Configuration","Performance Tuning","Performance Tuning"]
 nav_prev: {"path": "supabase/docs/guides/platform/network-restrictions/index.md", "title": "Network Restrictions"}
-nav_next: {"path": "supabase/docs/guides/platform/project-transfer/index.md", "title": "Project Transfers"}
+nav_next: {"path": "supabase/docs/guides/platform/permissions/index.md", "title": "Permissions"}
 ---
 
 # 

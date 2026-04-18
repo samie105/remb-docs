@@ -9,7 +9,7 @@ last_crawled_at: "2026-04-18T16:32:13.938Z"
 content_hash: "f739d5365be9d46bd56badbdb491a4b92b189134006c4520eb83d529305575ca"
 menu_path: ["Preview Options ​"]
 section_path: []
-nav_prev: {"path": "vite/config/build-options/index.md", "title": "Build Options \u200b"}
+nav_prev: {"path": "vite/config/dep-optimization-options/index.md", "title": "Dep Optimization Options \u200b"}
 nav_next: {"path": "vite/config/server-options/index.md", "title": "Server Options \u200b"}
 ---
 

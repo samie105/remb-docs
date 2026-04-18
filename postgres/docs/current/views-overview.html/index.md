@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:45:21.377Z"
 content_hash: "157d140fe3e7f86b868594e36b51f2d69f3866b9ba2ef59d1cc16f6fcff23d5a"
 menu_path: ["PostgreSQL: Documentation: 18: 53.1. Overview"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/explicit-locking.html/index.md", "title": "PostgreSQL: Documentation: 18: 13.3.\u00a0Explicit Locking"}
-nav_next: {"path": "postgres/docs/current/ddl-depend.html/index.md", "title": "PostgreSQL: Documentation: 18: 5.15.\u00a0Dependency Tracking"}
+nav_prev: {"path": "postgres/docs/current/view-pg-wait-events.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.38.\u00a0pg_wait_events"}
+nav_next: {"path": "postgres/docs/current/wal-async-commit.html/index.md", "title": "PostgreSQL: Documentation: 18: 28.4.\u00a0Asynchronous Commit"}
 ---
 
 View Name

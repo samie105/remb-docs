@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:36:20.535Z"
 content_hash: "718bc3c554e5db97edf450f980d1b924c1b5ed79e4bdcede0adf4b947604f5c5"
 menu_path: ["PostgreSQL: Documentation: 18: 29.8. Restrictions"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/sql-dropdomain.html/index.md", "title": "PostgreSQL: Documentation: 18: DROP DOMAIN"}
-nav_next: {"path": "postgres/docs/current/runtime-config-resource.html/index.md", "title": "PostgreSQL: Documentation: 18: 19.4.\u00a0Resource Consumption"}
+nav_prev: {"path": "postgres/docs/current/logical-replication-quick-setup.html/index.md", "title": "PostgreSQL: Documentation: 18: 29.14.\u00a0Quick Setup"}
+nav_next: {"path": "postgres/docs/current/logical-replication-row-filter.html/index.md", "title": "PostgreSQL: Documentation: 18: 29.4.\u00a0Row Filters"}
 ---
 
 February 26, 2026: [PostgreSQL 18.3, 17.9, 16.13, 15.17, and 14.22 Released!](/about/news/postgresql-183-179-1613-1517-and-1422-released-3246/)

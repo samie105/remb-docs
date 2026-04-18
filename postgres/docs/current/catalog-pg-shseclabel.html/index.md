@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:42:19.516Z"
 content_hash: "83a286e8f1926a0472e649028aa62c3b67a5ce2cc47dc1876a39e8b8c8213963"
 menu_path: ["PostgreSQL: Documentation: 18: 52.50. pg_shseclabel"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/sql-syntax-calling-funcs.html/index.md", "title": "PostgreSQL: Documentation: 18: 4.3.\u00a0Calling Functions"}
-nav_next: {"path": "postgres/docs/current/routine-vacuuming.html/index.md", "title": "PostgreSQL: Documentation: 18: 24.1.\u00a0Routine Vacuuming"}
+nav_prev: {"path": "postgres/docs/current/catalog-pg-shdescription.html/index.md", "title": "PostgreSQL: Documentation: 18: 52.49.\u00a0pg_shdescription"}
+nav_next: {"path": "postgres/docs/current/catalog-pg-statistic-ext-data.html/index.md", "title": "PostgreSQL: Documentation: 18: 52.53.\u00a0pg_statistic_ext_data"}
 ---
 
 Development Versions: [devel](https://www.postgresql.org/docs/devel/catalog-pg-shseclabel.html "PostgreSQL devel - 52.50. pg_shseclabel")

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:38:13.030Z"
 content_hash: "7a63561ff92ab323e42f9c124d8378fa083794c71835fe15cab0d89f531e3574"
 menu_path: ["Fastify Adapter"]
 section_path: []
-nav_prev: {"path": "trpc/docs/v10/server/adapters/fetch/index.md", "title": "Fetch / Edge Runtimes Adapter"}
-nav_next: {"path": "trpc/docs/v10/server/adapters/nextjs/index.md", "title": "Next.js Adapter"}
+nav_prev: {"path": "trpc/docs/v10/server/adapters/express/index.md", "title": "Express Adapter"}
+nav_next: {"path": "trpc/docs/v10/server/adapters/fetch/index.md", "title": "Fetch / Edge Runtimes Adapter"}
 ---
 
 ## Example app[​](#example-app "Direct link to Example app")

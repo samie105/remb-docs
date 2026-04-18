@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:58:52.856Z"
 content_hash: "6147aab7013290af6b88f0dbba0be5e9b072a1e3af78a9cee57f5bd749c660ef"
 menu_path: ["Start with Supabase","Start with Supabase","Mobile tutorials","Mobile tutorials","Ionic Angular","Ionic Angular"]
 section_path: ["Start with Supabase","Start with Supabase","Mobile tutorials","Mobile tutorials","Ionic Angular","Ionic Angular"]
-nav_prev: {"path": "supabase/docs/guides/getting-started/tutorials/with-ionic-react/index.md", "title": "Build a User Management App with Ionic React"}
-nav_next: {"path": "supabase/docs/guides/getting-started/tutorials/with-ionic-vue/index.md", "title": "Build a User Management App with Ionic Vue"}
+nav_prev: {"path": "supabase/docs/guides/getting-started/tutorials/with-flutter/index.md", "title": "Build a User Management App with Flutter"}
+nav_next: {"path": "supabase/docs/guides/getting-started/tutorials/with-ionic-react/index.md", "title": "Build a User Management App with Ionic React"}
 ---
 
 # 

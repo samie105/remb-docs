@@ -9,7 +9,7 @@ last_crawled_at: "2026-04-18T16:49:48.613Z"
 content_hash: "8f4c209a96ee73db49d1c80f3a227b14678b84d98dd16a7259fc1078f2c9e99e"
 menu_path: ["Raw queries"]
 section_path: []
-nav_prev: {"path": "prisma/docs/orm/prisma-client/type-safety/prisma-type-system/index.md", "title": "How to use Prisma ORM's type system"}
+nav_prev: {"path": "prisma/docs/orm/prisma-client/using-raw-sql/index.md", "title": "Write your own SQL"}
 nav_next: {"path": "prisma/docs/orm/prisma-client/using-raw-sql/safeql/index.md", "title": "SafeQL & Prisma Client"}
 ---
 

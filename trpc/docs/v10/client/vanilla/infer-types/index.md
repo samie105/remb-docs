@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:35:03.753Z"
 content_hash: "dfce87e7b4fc1cf325e046f9046ecb7cd10505fcaeb8038bc0fc25555c8dbf58"
 menu_path: ["Inferring Types"]
 section_path: []
-nav_prev: {"path": "trpc/docs/v10/client/vanilla/setup/index.md", "title": "Set up a tRPC Client"}
-nav_next: {"path": "trpc/docs/v10/community/contributing/index.md", "title": "Contributing"}
+nav_prev: {"path": "trpc/docs/v10/client/vanilla/aborting-procedure-calls/index.md", "title": "Aborting Procedure Calls"}
+nav_next: {"path": "trpc/docs/v10/client/vanilla/setup/index.md", "title": "Set up a tRPC Client"}
 ---
 
 It is often useful to access the types of your API within your clients. For this purpose, you are able to infer the types contained in your `AppRouter`.

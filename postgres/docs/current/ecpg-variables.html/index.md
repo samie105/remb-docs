@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:47:57.822Z"
 content_hash: "1add6fbd3d1b0e8dca1e57cc004aba7031858d7b4e10831702544da0161b6a13"
 menu_path: ["PostgreSQL: Documentation: 18: 34.4. Using Host Variables"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/catalog-pg-publication.html/index.md", "title": "PostgreSQL: Documentation: 18: 52.40.\u00a0pg_publication"}
-nav_next: {"path": "postgres/docs/current/app-postgres.html/index.md", "title": "PostgreSQL: Documentation: 18: postgres"}
+nav_prev: {"path": "postgres/docs/current/ecpg-sql-whenever.html/index.md", "title": "PostgreSQL: Documentation: 18: WHENEVER"}
+nav_next: {"path": "postgres/docs/current/error-message-reporting.html/index.md", "title": "PostgreSQL: Documentation: 18: 55.2.\u00a0Reporting Errors Within the Server"}
 ---
 
 In [Section 34.3](https://www.postgresql.org/docs/current/ecpg-commands.html "34.3. Running SQL Commands") you saw how you can execute SQL statements from an embedded SQL program. Some of those statements only used fixed values and did not provide a way to insert user-supplied values into statements or have the program process the values returned by the query. Those kinds of statements are not really useful in real applications. This section explains in detail how you can pass data between your C program and the embedded SQL statements using a simple mechanism called _host variables_. In an embedded SQL program we consider the SQL statements to be _guests_ in the C program code which is the _host language_. Therefore the variables of the C program are called _host variables_.

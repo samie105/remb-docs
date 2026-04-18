@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:44:44.283Z"
 content_hash: "a13120aadfc3d6b7ece6977d41f2e300a6b6f56917d27481b6ebf526b683b211"
 menu_path: ["Shared packages & examples"]
 section_path: []
-nav_prev: {"path": "prisma/docs/orm/prisma-client/client-extensions/model/index.md", "title": "Add custom methods to your models"}
-nav_next: {"path": "prisma/docs/orm/prisma-client/client-extensions/index.md", "title": "What are Client Extensions"}
+nav_prev: {"path": "prisma/docs/orm/prisma-client/client-extensions/client/index.md", "title": "Add methods to Prisma Client"}
+nav_next: {"path": "prisma/docs/orm/prisma-client/client-extensions/model/index.md", "title": "Add custom methods to your models"}
 ---
 
 Client Extensions

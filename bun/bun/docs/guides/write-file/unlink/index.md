@@ -10,7 +10,7 @@ content_hash: "6f8b91f4ef74e8177fe634fd112328d55c5494c98ca515dd2d890bd33058fece"
 menu_path: ["Delete a file"]
 section_path: []
 nav_prev: {"path": "bun/bun/docs/guides/write-file/stream/index.md", "title": "Write a ReadableStream to a file"}
-nav_next: {"path": "bun/bun/docs/installation/index.md", "title": "Installation"}
+nav_next: {"path": "bun/bun/docs/pm/bunx/index.md", "title": "bunx"}
 ---
 
 [Skip to main content](#content-area)

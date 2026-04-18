@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:49:56.815Z"
 content_hash: "aa7c4bd49d4abb84bb6c183b0e21094f54391654270c0a41ffb9a8b36278375f"
 menu_path: ["PostgreSQL: Documentation: 18: CREATE PROCEDURE"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/infoschema-routine-sequence-usage.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.43.\u00a0routine_sequence_usage"}
-nav_next: {"path": "postgres/docs/current/spi-spi-getnspname.html/index.md", "title": "PostgreSQL: Documentation: 18: SPI_getnspname"}
+nav_prev: {"path": "postgres/docs/current/sql-createpolicy.html/index.md", "title": "PostgreSQL: Documentation: 18: CREATE POLICY"}
+nav_next: {"path": "postgres/docs/current/sql-createpublication.html/index.md", "title": "PostgreSQL: Documentation: 18: CREATE PUBLICATION"}
 ---
 
 CREATE PROCEDURE — define a new procedure

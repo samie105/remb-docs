@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:57:09.469Z"
 content_hash: "4271f75c9d6e1b480cc84a129c26cdfab708275557f7e963d0c2b29acbe823e7"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Rolling sensor graph demo with Redis","→","Rolling sensor graph demo with Redis"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Rolling sensor graph demo with Redis","→","Rolling sensor graph demo with Redis"]
-nav_prev: {"path": "redis/docs/latest/operate/oss_and_stack/stack-with-enterprise/deprecated-features/triggers-and-functions/concepts/sync_async/index.md", "title": "Sync and async"}
-nav_next: {"path": "redis/docs/latest/develop/get-started/vector-database/index.md", "title": "Redis as a vector database quick start guide"}
+nav_prev: {"path": "redis/docs/latest/develop/use-cases/session-store/rust/index.md", "title": "Redis session store with Rust"}
+nav_next: {"path": "redis/docs/latest/develop/use-cases/time-series-dashboard/dotnet/index.md", "title": "Rolling sensor graph demo with Redis and .NET"}
 ---
 
 # Rolling sensor graph demo with Redis

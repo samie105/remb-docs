@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:38:31.750Z"
 content_hash: "8d106876a21f3ef47eee2ab27214bf8190103f35c5e886eb4af101733e65e6af"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis data types","→","Redis data types","→\n      \n        Compare data types","→","Compare data types"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis data types","→","Redis data types","→\n      \n        Compare data types","→","Compare data types"]
-nav_prev: {"path": "redis/docs/latest/develop/reference/command-tips/index.md", "title": "Redis command tips"}
-nav_next: {"path": "redis/docs/latest/develop/ai/search-and-query/administration/configuration/index.md", "title": "Configuration parameters"}
+nav_prev: {"path": "redis/docs/latest/develop/clients/rust/index.md", "title": "redis-rs guide (Rust)"}
+nav_next: {"path": "redis/docs/latest/develop/data-types/json/developer/index.md", "title": "Developer notes"}
 ---
 
 # Compare data types

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:40:34.121Z"
 content_hash: "fd1dc368ff63b18c49f795c4c7db0513af1909f8ac36c1dc6c56af5c65603ea3"
 menu_path: ["Subscriptions / WebSockets"]
 section_path: []
-nav_prev: {"path": "trpc/docs/v10/server/server-side-calls/index.md", "title": "Server Side Calls"}
-nav_next: {"path": "trpc/docs/v10/server/validators/index.md", "title": "Input & Output Validators"}
+nav_prev: {"path": "trpc/docs/v10/server/validators/index.md", "title": "Input & Output Validators"}
+nav_next: {"path": "trpc/docs/v10/videos-and-community-resources/index.md", "title": "Videos and Community Resources"}
 ---
 
 ## Using Subscriptions[​](#using-subscriptions "Direct link to Using Subscriptions")

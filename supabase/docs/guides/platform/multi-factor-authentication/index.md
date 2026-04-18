@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:47:49.259Z"
 content_hash: "3c83d7142e3a5374e661c21e1a2587f0515e39d980424fc70a5a6cfd2766190d"
 menu_path: ["Platform","Platform","More","More","More","Multi-factor Authentication","Multi-factor Authentication","Overview","Overview"]
 section_path: ["Platform","Platform","More","More","More","Multi-factor Authentication","Multi-factor Authentication","Overview","Overview"]
-nav_prev: {"path": "supabase/docs/guides/platform/migrating-within-supabase/index.md", "title": "Migrating within Supabase"}
-nav_next: {"path": "supabase/docs/guides/platform/permissions/index.md", "title": "Permissions"}
+nav_prev: {"path": "supabase/docs/guides/platform/migrating-within-supabase/dashboard-restore/index.md", "title": "Restore Dashboard backup"}
+nav_next: {"path": "supabase/docs/guides/platform/network-restrictions/index.md", "title": "Network Restrictions"}
 ---
 
 # 

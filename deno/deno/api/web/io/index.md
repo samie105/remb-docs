@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:13:36.691Z"
 content_hash: "e221de3f7dc81dc59393cff3726983edb24551c102dbfae6c92653454703af5c"
 menu_path: ["I/O - Web documentation"]
 section_path: []
-nav_prev: {"path": "deno/deno/api/web/gpu/index.md", "title": "GPU - Web documentation"}
-nav_next: {"path": "deno/deno/api/web/intl/index.md", "title": "Intl - Web documentation"}
+nav_prev: {"path": "deno/deno/api/web/intl/index.md", "title": "Intl - Web documentation"}
+nav_next: {"path": "deno/deno/api/web/messaging/index.md", "title": "Messaging - Web documentation"}
 ---
 
 ### Interfaces [#](#Interfaces)

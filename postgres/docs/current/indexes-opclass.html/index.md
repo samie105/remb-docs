@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:41:06.228Z"
 content_hash: "5e7752cde8ff8fb711b15e2cadf8d56876152f1657e6065441b056d15b59e2f6"
 menu_path: ["PostgreSQL: Documentation: 18: 11.10. Operator Classes and Operator Families"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/logical-replication-architecture.html/index.md", "title": "PostgreSQL: Documentation: 18: 29.9.\u00a0Architecture"}
-nav_next: {"path": "postgres/docs/current/indexes-examine.html/index.md", "title": "PostgreSQL: Documentation: 18: 11.12.\u00a0Examining Index Usage"}
+nav_prev: {"path": "postgres/docs/current/indexes-multicolumn.html/index.md", "title": "PostgreSQL: Documentation: 18: 11.3.\u00a0Multicolumn Indexes"}
+nav_next: {"path": "postgres/docs/current/indexes-ordering.html/index.md", "title": "PostgreSQL: Documentation: 18: 11.4.\u00a0Indexes and ORDER BY"}
 ---
 
 An index definition can specify an _operator class_ for each column of an index.

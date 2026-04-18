@@ -9,7 +9,7 @@ last_crawled_at: "2026-04-18T16:50:01.407Z"
 content_hash: "1f471519fd7248daea522201184ebf75fc0d12040bff70cb1fc8f4f194ed174e"
 menu_path: ["Security","Security","Product security","Product security","Platform Audit Logs","Platform Audit Logs"]
 section_path: ["Security","Security","Product security","Product security","Platform Audit Logs","Platform Audit Logs"]
-nav_prev: {"path": "supabase/docs/guides/realtime/subscribing-to-database-changes/index.md", "title": "Subscribing to Database Changes"}
+nav_prev: {"path": "supabase/docs/guides/security/hipaa-compliance/index.md", "title": "HIPAA Compliance and Supabase"}
 nav_next: {"path": "supabase/docs/guides/security/platform-security/index.md", "title": "Secure configuration of Supabase platform"}
 ---
 

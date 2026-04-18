@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:50:19.911Z"
 content_hash: "f0d89e1f65ad4dff6e83f3de7bc089b64031ba732a25d7e22fd9a08609f26637"
 menu_path: ["PostgreSQL: Documentation: 18: DROP TABLE"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/spi-spi-scroll-cursor-move.html/index.md", "title": "PostgreSQL: Documentation: 18: SPI_scroll_cursor_move"}
-nav_next: {"path": "postgres/docs/current/datetime-posix-timezone-specs.html/index.md", "title": "PostgreSQL: Documentation: 18: B.5.\u00a0POSIX Time Zone Specifications"}
+nav_prev: {"path": "postgres/docs/current/sql-dropschema.html/index.md", "title": "PostgreSQL: Documentation: 18: DROP SCHEMA"}
+nav_next: {"path": "postgres/docs/current/sql-droptablespace.html/index.md", "title": "PostgreSQL: Documentation: 18: DROP TABLESPACE"}
 ---
 
 DROP TABLE — remove a table

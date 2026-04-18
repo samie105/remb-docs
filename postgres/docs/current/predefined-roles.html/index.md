@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:45:07.911Z"
 content_hash: "e1ef4f023a9426cb9d6b45f702032521b3d6ee3b3699bb6ef9fa3cd2ecba080a"
 menu_path: ["PostgreSQL: Documentation: 18: 21.5. Predefined Roles"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/source-conventions.html/index.md", "title": "PostgreSQL: Documentation: 18: 55.4.\u00a0Miscellaneous Coding Conventions"}
-nav_next: {"path": "postgres/docs/current/ecpg-commands.html/index.md", "title": "PostgreSQL: Documentation: 18: 34.3.\u00a0Running SQL Commands"}
+nav_prev: {"path": "postgres/docs/current/postgres-user.html/index.md", "title": "PostgreSQL: Documentation: 18: 18.1.\u00a0The PostgreSQL User Account"}
+nav_next: {"path": "postgres/docs/current/progress-reporting.html/index.md", "title": "PostgreSQL: Documentation: 18: 27.4.\u00a0Progress Reporting"}
 ---
 
 PostgreSQL provides a set of predefined roles that provide access to certain, commonly needed, privileged capabilities and information. Administrators (including roles that have the `CREATEROLE` privilege) can `GRANT` these roles to users and/or other roles in their environment, providing those users with access to the specified capabilities and information. For example:

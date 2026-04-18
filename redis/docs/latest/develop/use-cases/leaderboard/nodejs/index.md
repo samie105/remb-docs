@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:50:02.675Z"
 content_hash: "09df83e44817a09c31e8c9bb6b0f2a64752bb9040883165918df4cfa6a015eb6"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Redis leaderboard","→","Redis leaderboard","→\n      \n        Redis leaderboard with node-redis","→","Redis leaderboard with node-redis"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Redis leaderboard","→","Redis leaderboard","→\n      \n        Redis leaderboard with node-redis","→","Redis leaderboard with node-redis"]
-nav_prev: {"path": "redis/docs/latest/develop/reference/modules/index.md", "title": "Redis modules API"}
-nav_next: {"path": "redis/docs/latest/develop/use-cases/time-series-dashboard/nodejs/index.md", "title": "Rolling sensor graph demo with Redis and Node.js"}
+nav_prev: {"path": "redis/docs/latest/develop/use-cases/leaderboard/java-lettuce/index.md", "title": "Redis leaderboard with Java (Lettuce)"}
+nav_next: {"path": "redis/docs/latest/develop/use-cases/leaderboard/php/index.md", "title": "Redis leaderboard with PHP"}
 ---
 
 # Redis leaderboard with node-redis

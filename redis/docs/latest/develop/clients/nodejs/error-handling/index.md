@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:07:30.544Z"
 content_hash: "315c21aa10e56ee8ac55657f39d4044a9f22c87b0327017c09406f14b32332ae"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Connect with Redis client API libraries","→","Connect with Redis client API libraries","→\n      \n        node-redis guide (JavaScript)","→","node-redis guide (JavaScript)","→\n      \n        Error handling","→","Error handling"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Connect with Redis client API libraries","→","Connect with Redis client API libraries","→\n      \n        node-redis guide (JavaScript)","→","node-redis guide (JavaScript)","→\n      \n        Error handling","→","Error handling"]
-nav_prev: {"path": "redis/docs/latest/develop/tools/insight/debugging/index.md", "title": "Redis Insight debugging information"}
-nav_next: {"path": "redis/docs/latest/develop/reference/eviction/index.md", "title": "Key eviction"}
+nav_prev: {"path": "redis/docs/latest/develop/clients/nodejs/connect/index.md", "title": "Connect to the server"}
+nav_next: {"path": "redis/docs/latest/develop/clients/nodejs/prob/index.md", "title": "Probabilistic data types"}
 ---
 
 # Error handling

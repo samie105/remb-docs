@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:51:26.896Z"
 content_hash: "8a601dc38605d2305363460d217140de8679f490f03485f0ad984b78eaa8148b"
 menu_path: ["AI & Vectors","AI & Vectors","JavaScript Examples","JavaScript Examples","Adding generative Q&A to your documentation","Adding generative Q&A to your documentation"]
 section_path: ["AI & Vectors","AI & Vectors","JavaScript Examples","JavaScript Examples","Adding generative Q&A to your documentation","Adding generative Q&A to your documentation"]
-nav_prev: {"path": "supabase/docs/guides/telemetry/sentry-monitoring/index.md", "title": "Sentry integration"}
-nav_next: {"path": "supabase/docs/guides/ai/examples/building-chatgpt-plugins/index.md", "title": "Building ChatGPT plugins"}
+nav_prev: {"path": "supabase/docs/guides/ai/examples/building-chatgpt-plugins/index.md", "title": "Building ChatGPT plugins"}
+nav_next: {"path": "supabase/docs/guides/ai/examples/huggingface-image-captioning/index.md", "title": "Generate image captions using Hugging Face"}
 ---
 
 # 

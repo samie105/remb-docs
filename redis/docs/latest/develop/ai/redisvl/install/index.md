@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:49:07.818Z"
 content_hash: "3c5f780262368f224ac3d5e99ce00b00a3fca7e007a70563d25e6650a6985291"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        RedisVL","→","RedisVL","→\n      \n        Install RedisVL","→","Install RedisVL"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        RedisVL","→","RedisVL","→\n      \n        Install RedisVL","→","Install RedisVL"]
-nav_prev: {"path": "redis/docs/latest/operate/oss_and_stack/install/archive/install-stack/index.md", "title": "Install Redis Stack"}
-nav_next: {"path": "redis/docs/latest/integrate/google-adk/integration-patterns/index.md", "title": "Memory integration patterns"}
+nav_prev: {"path": "redis/docs/latest/develop/ai/redisvl/api/index.md", "title": "RedisVL API"}
+nav_next: {"path": "redis/docs/latest/develop/ai/redisvl/overview/index.md", "title": "Overview"}
 ---
 
 # Install RedisVL

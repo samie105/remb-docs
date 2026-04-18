@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:01:51.987Z"
 content_hash: "6cd8d452d5c8871c9e4a19b428bc66b2a18960a2d26d74b58d5f7bdacb0c7e43"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Redis session store","→","Redis session store","→\n      \n        Redis session store with .NET","→","Redis session store with .NET"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Redis session store","→","Redis session store","→\n      \n        Redis session store with .NET","→","Redis session store with .NET"]
-nav_prev: {"path": "redis/docs/latest/develop/use-cases/rate-limiter/dotnet/index.md", "title": "Token bucket rate limiter with Redis and .NET"}
-nav_next: {"path": "redis/docs/latest/operate/kubernetes/release-notes/7-22-0-releases/7-22-0-7-april2025/index.md", "title": "Redis Enterprise for Kubernetes 7.22.0-7 (April 2025) release notes"}
+nav_prev: {"path": "redis/docs/latest/develop/use-cases/session-store/index.md", "title": "Redis session store"}
+nav_next: {"path": "redis/docs/latest/develop/use-cases/session-store/go/index.md", "title": "Redis session store with Go"}
 ---
 
 # Redis session store with .NET

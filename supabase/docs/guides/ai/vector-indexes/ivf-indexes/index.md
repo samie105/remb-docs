@@ -10,7 +10,7 @@ content_hash: "324c0bde1e6cdd40bb43468bff244c96ab1f414f437458e065ed0625af31bb35"
 menu_path: ["AI & Vectors","AI & Vectors","More","More","More","Vector indexes","Vector indexes","IVFFlat indexes","IVFFlat indexes"]
 section_path: ["AI & Vectors","AI & Vectors","More","More","More","Vector indexes","Vector indexes","IVFFlat indexes","IVFFlat indexes"]
 nav_prev: {"path": "supabase/docs/guides/ai/vector-indexes/hnsw-indexes/index.md", "title": "HNSW indexes"}
-nav_next: {"path": "supabase/docs/guides/api/rest/auto-generated-docs/index.md", "title": "Auto-generated documentation"}
+nav_next: {"path": "supabase/docs/guides/api/index.md", "title": "Data REST API"}
 ---
 
 # 

@@ -9,7 +9,7 @@ last_crawled_at: "2026-04-18T16:39:41.671Z"
 content_hash: "ee5244703ea322a95f7091df845d1c2502daeb0b0b66e300978c9308048c7631"
 menu_path: ["readline - Node documentation"]
 section_path: []
-nav_prev: {"path": "deno/deno/api/node/process/index.md", "title": "process - Node documentation"}
+nav_prev: {"path": "deno/deno/api/node/querystring/index.md", "title": "querystring - Node documentation"}
 nav_next: {"path": "deno/deno/api/node/readline/promises/index.md", "title": "readline/promises - Node documentation"}
 ---
 

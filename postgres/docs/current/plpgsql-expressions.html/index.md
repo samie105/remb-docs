@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:35:32.382Z"
 content_hash: "654c8bb551ff9267cc238e2c371e2ca70bafcabf88b89c5cfe0fe8dff38d8791"
 menu_path: ["PostgreSQL: Documentation: 18: 41.4. Expressions"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/logfile-maintenance.html/index.md", "title": "PostgreSQL: Documentation: 18: 24.3.\u00a0Log File Maintenance"}
-nav_next: {"path": "postgres/docs/current/runtime-config-replication.html/index.md", "title": "PostgreSQL: Documentation: 18: 19.6.\u00a0Replication"}
+nav_prev: {"path": "postgres/docs/current/plpgsql-errors-and-messages.html/index.md", "title": "PostgreSQL: Documentation: 18: 41.9.\u00a0Errors and Messages"}
+nav_next: {"path": "postgres/docs/current/plpgsql-statements.html/index.md", "title": "PostgreSQL: Documentation: 18: 41.5.\u00a0Basic Statements"}
 ---
 
 All expressions used in PL/pgSQL statements are processed using the server's main SQL executor. For example, when you write a PL/pgSQL statement like

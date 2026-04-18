@@ -9,7 +9,7 @@ last_crawled_at: "2026-04-18T16:42:35.619Z"
 content_hash: "2b627bde61d52a9d809cae64cdaa3c90d52cca294899239e875a1b1d09f5e000"
 menu_path: ["Merging Routers"]
 section_path: []
-nav_prev: {"path": "trpc/docs/v9/invalidateQueries/index.md", "title": "invalidateQueries"}
+nav_prev: {"path": "trpc/docs/v9/love/index.md", "title": "Testimonials / Love"}
 nav_next: {"path": "trpc/docs/v9/metadata/index.md", "title": "Route Metadata"}
 ---
 

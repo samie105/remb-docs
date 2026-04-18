@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:09:02.843Z"
 content_hash: "97a9d1bc510ce01d259c8d33db62f0bf6b9f1be5a8a1d1d489ad9c0334c0511c"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Enterprise for Kubernetes","→","Redis Enterprise for Kubernetes","→\n      \n        Redis Enterprise Software for Kubernetes release notes","→","Redis Enterprise Software for Kubernetes release notes","→\n      \n        Redis Enterprise for Kubernetes 7.4.2 release notes","→","Redis Enterprise for Kubernetes 7.4.2 release notes","→\n      \n        Redis Enterprise for Kubernetes 7.4.2-2 (March 2024) release notes","→","Redis Enterprise for Kubernetes 7.4.2-2 (March 2024) release notes"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Enterprise for Kubernetes","→","Redis Enterprise for Kubernetes","→\n      \n        Redis Enterprise Software for Kubernetes release notes","→","Redis Enterprise Software for Kubernetes release notes","→\n      \n        Redis Enterprise for Kubernetes 7.4.2 release notes","→","Redis Enterprise for Kubernetes 7.4.2 release notes","→\n      \n        Redis Enterprise for Kubernetes 7.4.2-2 (March 2024) release notes","→","Redis Enterprise for Kubernetes 7.4.2-2 (March 2024) release notes"]
-nav_prev: {"path": "redis/docs/latest/operate/oss_and_stack/management/scaling/index.md", "title": "Scale with Redis Cluster"}
-nav_next: {"path": "redis/docs/latest/develop/ai/search-and-query/advanced-concepts/autocomplete/index.md", "title": "Autocomplete with Redis"}
+nav_prev: {"path": "redis/docs/latest/operate/kubernetes/release-notes/7-22-0-releases/7-22-0-7-april2025/index.md", "title": "Redis Enterprise for Kubernetes 7.22.0-7 (April 2025) release notes"}
+nav_next: {"path": "redis/docs/latest/operate/kubernetes/release-notes/7-4-2-releases/7-4-2-12/index.md", "title": "Redis Enterprise for Kubernetes 7.4.2-12 (May 2024) release notes"}
 ---
 
 # Redis Enterprise for Kubernetes 7.4.2-2 (March 2024) release notes

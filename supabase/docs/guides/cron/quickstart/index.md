@@ -10,7 +10,7 @@ content_hash: "b1ef437bdfe5b3bc935bce74f8faeea496fdaac662a8a615b017fbf537474257"
 menu_path: ["Cron","Cron","Getting Started","Getting Started","Quickstart","Quickstart"]
 section_path: ["Cron","Cron","Getting Started","Getting Started","Quickstart","Quickstart"]
 nav_prev: {"path": "supabase/docs/guides/cron/install/index.md", "title": "Install"}
-nav_next: {"path": "supabase/docs/guides/database/beekeeper-studio/index.md", "title": "Connecting with Beekeeper Studio"}
+nav_next: {"path": "supabase/docs/guides/database/arrays/index.md", "title": "Working With Arrays"}
 ---
 
 # 

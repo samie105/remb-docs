@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:46:17.335Z"
 content_hash: "9c8704f41ae983b35fa1b996dbbf8202678e833a179ef3715b27208db8892fdb"
 menu_path: ["PostgreSQL: Documentation: 18: 52.32. pg_namespace"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/app-pgwalsummary.html/index.md", "title": "PostgreSQL: Documentation: 18: pg_walsummary"}
-nav_next: {"path": "postgres/docs/current/sql-commit-prepared.html/index.md", "title": "PostgreSQL: Documentation: 18: COMMIT PREPARED"}
+nav_prev: {"path": "postgres/docs/current/btree.html/index.md", "title": "PostgreSQL: Documentation: 18: 65.1.\u00a0B-Tree Indexes"}
+nav_next: {"path": "postgres/docs/current/catalog-pg-operator.html/index.md", "title": "PostgreSQL: Documentation: 18: 52.34.\u00a0pg_operator"}
 ---
 
 Development Versions: [devel](https://www.postgresql.org/docs/devel/catalog-pg-namespace.html "PostgreSQL devel - 52.32. pg_namespace")

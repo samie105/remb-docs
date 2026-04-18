@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:05:44.814Z"
 content_hash: "e3a4afe227cef9fd131d7d99d6f5e133c27141e994812fdcb8b26bad1decde3c"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Cloud","→","Redis Cloud","→\n      \n        Redis Cloud changelog","→","Redis Cloud changelog","→\n      \n        Redis version release notes and breaking changes","→","Redis version release notes and breaking changes","→\n      \n        Redis 8.0 release notes and breaking changes","→","Redis 8.0 release notes and breaking changes"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Cloud","→","Redis Cloud","→\n      \n        Redis Cloud changelog","→","Redis Cloud changelog","→\n      \n        Redis version release notes and breaking changes","→","Redis version release notes and breaking changes","→\n      \n        Redis 8.0 release notes and breaking changes","→","Redis 8.0 release notes and breaking changes"]
-nav_prev: {"path": "redis/docs/latest/commands/redis-7-2-commands/index.md", "title": "Redis 7.2 Commands Reference"}
-nav_next: {"path": "redis/docs/latest/integrate/redis-ai-libraries/index.md", "title": "Redis for AI"}
+nav_prev: {"path": "redis/docs/latest/operate/rc/changelog/version-release-notes/index.md", "title": "Redis version release notes and breaking changes"}
+nav_next: {"path": "redis/docs/latest/operate/rc/changelog/version-release-notes/8-2/index.md", "title": "Redis 8.2 release notes and breaking changes"}
 ---
 
 # Redis 8.0 release notes and breaking changes

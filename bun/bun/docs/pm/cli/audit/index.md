@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:57:09.657Z"
 content_hash: "64190d66a765f255b8d3aebd4e8d48801f52e6aada88af054d13ed4398157fdf"
 menu_path: ["bun audit"]
 section_path: []
-nav_prev: {"path": "bun/bun/docs/pm/catalogs/index.md", "title": "Catalogs"}
-nav_next: {"path": "bun/bun/docs/pm/cli/add/index.md", "title": "bun add"}
+nav_prev: {"path": "bun/bun/docs/pm/cli/add/index.md", "title": "bun add"}
+nav_next: {"path": "bun/bun/docs/pm/cli/info/index.md", "title": "bun info"}
 ---
 
 [Skip to main content](#content-area)

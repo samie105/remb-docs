@@ -10,7 +10,7 @@ content_hash: "50f5e994eaa8307e54ca4ae21b4aceb8ae3bc5c693ee68617d4716e5f44ef968"
 menu_path: ["AI & Vectors","AI & Vectors","Search","Search","Hybrid search","Hybrid search"]
 section_path: ["AI & Vectors","AI & Vectors","Search","Search","Hybrid search","Hybrid search"]
 nav_prev: {"path": "supabase/docs/guides/ai/hugging-face/index.md", "title": "Hugging Face Inference API"}
-nav_next: {"path": "supabase/docs/guides/ai/keyword-search/index.md", "title": "Keyword search"}
+nav_next: {"path": "supabase/docs/guides/ai/integrations/amazon-bedrock/index.md", "title": "Amazon Bedrock"}
 ---
 
 # 

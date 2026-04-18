@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:54:23.888Z"
 content_hash: "6f4a89f229265425761def89be57b076796627e0630d526e59d22a6f6ccc7ea8"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Connect with Redis client API libraries","→","Connect with Redis client API libraries","→\n      \n        Jedis guide (Java)","→","Jedis guide (Java)","→\n      \n        Index and query vectors","→","Index and query vectors"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Connect with Redis client API libraries","→","Connect with Redis client API libraries","→\n      \n        Jedis guide (Java)","→","Jedis guide (Java)","→\n      \n        Index and query vectors","→","Index and query vectors"]
-nav_prev: {"path": "redis/docs/latest/integrate/go-redis/index.md", "title": "Go client for Redis"}
-nav_next: {"path": "redis/docs/latest/develop/clients/lettuce/vecsearch/index.md", "title": "Index and query vectors"}
+nav_prev: {"path": "redis/docs/latest/develop/clients/jedis/transpipe/index.md", "title": "Pipelines and transactions"}
+nav_next: {"path": "redis/docs/latest/develop/clients/jedis/vecsets/index.md", "title": "Vector set embeddings"}
 ---
 
 # Index and query vectors

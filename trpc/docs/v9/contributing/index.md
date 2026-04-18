@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:41:24.703Z"
 content_hash: "43d286dc61376b65c744be27142bff9dcd8be465867f35eb03b2a626a5e8c65c"
 menu_path: ["Contributing"]
 section_path: []
-nav_prev: {"path": "trpc/docs/v9/caching/index.md", "title": "Response Caching"}
-nav_next: {"path": "trpc/docs/v9/context/index.md", "title": "Request Context"}
+nav_prev: {"path": "trpc/docs/v9/context/index.md", "title": "Request Context"}
+nav_next: {"path": "trpc/docs/v9/cors/index.md", "title": "Send cookies cross-origin"}
 ---
 
 This is documentation for

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:37:37.564Z"
 content_hash: "6b2f7700fd6fa53d6fccc682da8839e010cd429a29eefb29e4089e0470967147"
 menu_path: ["PostgreSQL: Documentation: 18: 27.4. Progress Reporting"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/ecpg-descriptors.html/index.md", "title": "PostgreSQL: Documentation: 18: 34.7.\u00a0Using Descriptor Areas"}
-nav_next: {"path": "postgres/docs/current/ecpg-sql-disconnect.html/index.md", "title": "PostgreSQL: Documentation: 18: DISCONNECT"}
+nav_prev: {"path": "postgres/docs/current/predefined-roles.html/index.md", "title": "PostgreSQL: Documentation: 18: 21.5.\u00a0Predefined Roles"}
+nav_next: {"path": "postgres/docs/current/protocol-changes.html/index.md", "title": "PostgreSQL: Documentation: 18: 54.10.\u00a0Summary of Changes since Protocol 2.0"}
 ---
 
 Development Versions: [devel](https://www.postgresql.org/docs/devel/progress-reporting.html "PostgreSQL devel - 27.4. Progress Reporting")

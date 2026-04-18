@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:02:48.071Z"
 content_hash: "abf6279c12f79b49b590e56b110b019f29c64f2938e5468d54fb2fcffec82014"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Cloud","→","Redis Cloud","→\n      \n        Semantic caching with LangCache on Redis Cloud","→","Semantic caching with LangCache on Redis Cloud","→\n      \n        Create a LangCache service","→","Create a LangCache service"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Cloud","→","Redis Cloud","→\n      \n        Semantic caching with LangCache on Redis Cloud","→","Semantic caching with LangCache on Redis Cloud","→\n      \n        Create a LangCache service","→","Create a LangCache service"]
-nav_prev: {"path": "redis/docs/latest/operate/rc/databases/create-database/create-essentials-database/index.md", "title": "Create an Essentials database"}
-nav_next: {"path": "redis/docs/latest/operate/oss_and_stack/stack-with-enterprise/deprecated-features/triggers-and-functions/debugging/index.md", "title": "Debugging"}
+nav_prev: {"path": "redis/docs/latest/operate/rc/databases/version-management/upgrade-version/index.md", "title": "Upgrade Redis database version"}
+nav_next: {"path": "redis/docs/latest/operate/rc/security/access-control/index.md", "title": "Access control"}
 ---
 
 # Create a LangCache service

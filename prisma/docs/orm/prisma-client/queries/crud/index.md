@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:46:40.252Z"
 content_hash: "0a58a46fe33c5a52879d4ee8a5c04df25799802777d826d5b2064ff6a20cfe1d"
 menu_path: ["CRUD"]
 section_path: []
-nav_prev: {"path": "prisma/docs/orm/prisma-client/observability-and-logging/sql-comments/index.md", "title": "SQL comments"}
-nav_next: {"path": "prisma/docs/orm/prisma-client/queries/aggregation-grouping-summarizing/index.md", "title": "Aggregation, grouping, and summarizing"}
+nav_prev: {"path": "prisma/docs/orm/prisma-client/queries/aggregation-grouping-summarizing/index.md", "title": "Aggregation, grouping, and summarizing"}
+nav_next: {"path": "prisma/docs/orm/prisma-client/queries/relation-queries/index.md", "title": "CRUD"}
 ---
 
 This page describes how to perform CRUD operations with Prisma Client:

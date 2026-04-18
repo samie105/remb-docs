@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:52:37.156Z"
 content_hash: "22ac73105fa353dec3669737e728c3f997c47e3d6a7e550684128fcc799e19fc"
 menu_path: ["PostgreSQL: Documentation: 18: 35.46. schemata"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/view-pg-available-extensions.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.3.\u00a0pg_available_extensions"}
-nav_next: {"path": "postgres/docs/current/spi-spi-getvalue.html/index.md", "title": "PostgreSQL: Documentation: 18: SPI_getvalue"}
+nav_prev: {"path": "postgres/docs/current/infoschema-schema.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.1.\u00a0The Schema"}
+nav_next: {"path": "postgres/docs/current/infoschema-sequences.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.47.\u00a0sequences"}
 ---
 
 The view `schemata` contains all schemas in the current database that the current user has access to (by way of being the owner or having some privilege).

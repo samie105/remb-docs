@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:44:06.890Z"
 content_hash: "c2958de4ea59ce884cda48575a87aaf4c2de04f3fc8226000d7245cefe02b8d5"
 menu_path: ["Edge Functions","Edge Functions","Debugging","Debugging","Local Debugging with DevTools","Local Debugging with DevTools"]
 section_path: ["Edge Functions","Edge Functions","Debugging","Debugging","Local Debugging with DevTools","Local Debugging with DevTools"]
-nav_prev: {"path": "supabase/docs/guides/functions/cors/index.md", "title": "CORS (Cross-Origin Resource Sharing) support for Invoking from the browser"}
-nav_next: {"path": "supabase/docs/guides/functions/dart-edge/index.md", "title": "Dart Edge"}
+nav_prev: {"path": "supabase/docs/guides/functions/dart-edge/index.md", "title": "Dart Edge"}
+nav_next: {"path": "supabase/docs/guides/functions/dependencies/index.md", "title": "Managing dependencies"}
 ---
 
 # 

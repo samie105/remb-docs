@@ -9,7 +9,7 @@ last_crawled_at: "2026-04-18T16:41:27.552Z"
 content_hash: "11c66367f58eacf92fd582f17b1fc9c37db1d54755952aa2d4454b87b6ff22e0"
 menu_path: ["SQL Server"]
 section_path: []
-nav_prev: {"path": "prisma/docs/orm/core-concepts/supported-databases/mongodb/index.md", "title": "MongoDB"}
+nav_prev: {"path": "prisma/docs/orm/core-concepts/supported-databases/postgresql/index.md", "title": "PostgreSQL"}
 nav_next: {"path": "prisma/docs/orm/core-concepts/supported-databases/sqlite/index.md", "title": "SQLite"}
 ---
 

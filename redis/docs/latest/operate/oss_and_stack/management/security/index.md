@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:45:03.080Z"
 content_hash: "51f3de6606c85e9ac7a33c629a7c2b134a896a49fe181371474eeff439a0b1ca"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Manage Redis","→","Manage Redis","→\n      \n        Redis security","→","Redis security"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Manage Redis","→","Manage Redis","→\n      \n        Redis security","→","Redis security"]
-nav_prev: {"path": "redis/docs/latest/develop/clients/patterns/indexes/index.md", "title": "Secondary indexing"}
-nav_next: {"path": "redis/docs/latest/operate/oss_and_stack/reference/internals/internals-sds/index.md", "title": "String internals"}
+nav_prev: {"path": "redis/docs/latest/operate/oss_and_stack/management/scaling/index.md", "title": "Scale with Redis Cluster"}
+nav_next: {"path": "redis/docs/latest/operate/oss_and_stack/management/security/acl/index.md", "title": "ACL"}
 ---
 
 # Redis security

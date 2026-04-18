@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:51:12.695Z"
 content_hash: "6669653c4e9ff05cdb83aad7eda4343a60ed6ab27e289a4ff2e4493224e50f6d"
 menu_path: ["PostgreSQL: Documentation: 18: 9.15. XML Functions"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/view-pg-cursors.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.7.\u00a0pg_cursors"}
-nav_next: {"path": "postgres/docs/current/logical-replication-subscription.html/index.md", "title": "PostgreSQL: Documentation: 18: 29.2.\u00a0Subscription"}
+nav_prev: {"path": "postgres/docs/current/functions-uuid.html/index.md", "title": "PostgreSQL: Documentation: 18: 9.14.\u00a0UUID Functions"}
+nav_next: {"path": "postgres/docs/current/geqo-intro.html/index.md", "title": "PostgreSQL: Documentation: 18: 61.1.\u00a0Query Handling as a Complex Optimization Problem"}
 ---
 
 The functions and function-like expressions described in this section operate on values of type `xml`. See [Section 8.13](https://www.postgresql.org/docs/current/datatype-xml.html "8.13. XML Type") for information about the `xml` type. The function-like expressions `xmlparse` and `xmlserialize` for converting to and from type `xml` are documented there, not in this section.

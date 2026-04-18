@@ -9,7 +9,7 @@ last_crawled_at: "2026-04-18T17:02:11.667Z"
 content_hash: "3eb03e3addbad50732e82abb8c517dfc12e7bcec259ba2ae870afb3ad598b3da"
 menu_path: ["Workers"]
 section_path: []
-nav_prev: {"path": "bun/bun/docs/runtime/utils/index.md", "title": "Utils"}
+nav_prev: {"path": "bun/bun/docs/runtime/web-apis/index.md", "title": "Web APIs"}
 nav_next: {"path": "bun/bun/docs/runtime/yaml/index.md", "title": "YAML"}
 ---
 

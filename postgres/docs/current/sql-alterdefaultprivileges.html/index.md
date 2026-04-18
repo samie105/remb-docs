@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:52:29.037Z"
 content_hash: "94a4be5026b1efd47c27be0d84d0d3aa4d932f0c4a3c2ce9721b31b8b40973fa"
 menu_path: ["PostgreSQL: Documentation: 18: ALTER DEFAULT PRIVILEGES"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/app-pgcontroldata.html/index.md", "title": "PostgreSQL: Documentation: 18: pg_controldata"}
-nav_next: {"path": "postgres/docs/current/event-trigger-table-rewrite-example.html/index.md", "title": "PostgreSQL: Documentation: 18: 38.4.\u00a0A Table Rewrite Event Trigger Example"}
+nav_prev: {"path": "postgres/docs/current/spi-visibility.html/index.md", "title": "PostgreSQL: Documentation: 18: 45.5.\u00a0Visibility of Data Changes"}
+nav_next: {"path": "postgres/docs/current/sql-alterdomain.html/index.md", "title": "PostgreSQL: Documentation: 18: ALTER DOMAIN"}
 ---
 
 ALTER DEFAULT PRIVILEGES — define default access privileges

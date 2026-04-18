@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:45:06.632Z"
 content_hash: "288b11f220b0fd092a82cf707a89ba43cf6bea02c44b64426f323b79ffbe5c7e"
 menu_path: ["Add custom fields and methods to query results"]
 section_path: []
-nav_prev: {"path": "prisma/docs/orm/prisma-client/client-extensions/index.md", "title": "What are Client Extensions"}
-nav_next: {"path": "prisma/docs/orm/prisma-client/client-extensions/type-utilities/index.md", "title": "Type utilities"}
+nav_prev: {"path": "prisma/docs/orm/prisma-client/client-extensions/query/index.md", "title": "Create custom Prisma Client queries"}
+nav_next: {"path": "prisma/docs/orm/prisma-client/client-extensions/shared-extensions/index.md", "title": "Shared Prisma Client extensions"}
 ---
 
 You can use the `result` [Prisma Client extensions](prisma/docs/orm/prisma-client/client-extensions/index.md) component type to add custom fields and methods to query results.

@@ -10,7 +10,7 @@ content_hash: "6d3523317e92d49e6877c06c186ce30904e3a2aa2ac7bc4ba907bc7227ecce38"
 menu_path: ["v8 - Node documentation"]
 section_path: []
 nav_prev: {"path": "deno/deno/api/node/util/types/index.md", "title": "util/types - Node documentation"}
-nav_next: {"path": "deno/deno/api/node/wasi/index.md", "title": "wasi - Node documentation"}
+nav_next: {"path": "deno/deno/api/node/vm/index.md", "title": "vm - Node documentation"}
 ---
 
 ### Usage in Deno

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:52:48.600Z"
 content_hash: "dfd49f0f3c0470e4eb4ee51eb84a02e664a49ffc6315a5330080f4c00c195e79"
 menu_path: ["PostgreSQL: Documentation: 18: 34.14. Embedded SQL Commands"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/locale.html/index.md", "title": "PostgreSQL: Documentation: 18: 23.1.\u00a0Locale Support"}
-nav_next: {"path": "postgres/docs/current/sql-checkpoint.html/index.md", "title": "PostgreSQL: Documentation: 18: CHECKPOINT"}
+nav_prev: {"path": "postgres/docs/current/ecpg-errors.html/index.md", "title": "PostgreSQL: Documentation: 18: 34.8.\u00a0Error Handling"}
+nav_next: {"path": "postgres/docs/current/ecpg-sql-connect.html/index.md", "title": "PostgreSQL: Documentation: 18: CONNECT"}
 ---
 
 Development Versions: [devel](https://www.postgresql.org/docs/devel/ecpg-sql-commands.html "PostgreSQL devel - 34.14. Embedded SQL Commands")

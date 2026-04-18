@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:38:20.278Z"
 content_hash: "097514acc66a85065446f22ac62ee6256ab5980772de2dd9d81b05a6389d0f5e"
 menu_path: ["Auth","Auth","Security","Security","Password Security","Password Security"]
 section_path: ["Auth","Auth","Security","Security","Password Security","Password Security"]
-nav_prev: {"path": "supabase/docs/guides/auth/oauth-server/index.md", "title": "OAuth 2.1 Server"}
-nav_next: {"path": "supabase/docs/guides/auth/native-mobile-deep-linking/index.md", "title": "Native Mobile Deep Linking"}
+nav_prev: {"path": "supabase/docs/guides/auth/oauth-server/token-security/index.md", "title": "Token Security and Row Level Security"}
+nav_next: {"path": "supabase/docs/guides/auth/passwords/index.md", "title": "Password-based Auth"}
 ---
 
 # 

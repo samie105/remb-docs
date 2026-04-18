@@ -10,7 +10,7 @@ content_hash: "9818333f8aa1f68881354d5a9db8069caac2962ce2948e38f8410e80d91c9413"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Redis Data Integration","→","Redis Data Integration","→\n      \n        Data pipelines","→","Data pipelines","→\n      \n        Prepare source databases","→","Prepare source databases","→\n      \n        Prepare MySQL/MariaDB for RDI","→","Prepare MySQL/MariaDB for RDI"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Redis Data Integration","→","Redis Data Integration","→\n      \n        Data pipelines","→","Data pipelines","→\n      \n        Prepare source databases","→","Prepare source databases","→\n      \n        Prepare MySQL/MariaDB for RDI","→","Prepare MySQL/MariaDB for RDI"]
 nav_prev: {"path": "redis/docs/latest/integrate/redis-data-integration/data-pipelines/prepare-dbs/mongodb/index.md", "title": "Prepare MongoDB for RDI"}
-nav_next: {"path": "redis/docs/latest/integrate/redis-data-integration/data-pipelines/prepare-dbs/spanner/index.md", "title": "Prepare Spanner for RDI"}
+nav_next: {"path": "redis/docs/latest/integrate/redis-data-integration/data-pipelines/prepare-dbs/oracle/index.md", "title": "Prepare Oracle and Oracle RAC for RDI"}
 ---
 
 # Prepare MySQL/MariaDB for RDI

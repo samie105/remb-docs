@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:52:45.985Z"
 content_hash: "143889e3a51dc6d20bc5bd628b6e3c3d345db95d3cd9a264f87b2273423eccdd"
 menu_path: ["PostgreSQL: Documentation: 18: 23.1. Locale Support"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/parallel-safety.html/index.md", "title": "PostgreSQL: Documentation: 18: 15.4.\u00a0Parallel Safety"}
-nav_next: {"path": "postgres/docs/current/ecpg-sql-commands.html/index.md", "title": "PostgreSQL: Documentation: 18: 34.14.\u00a0Embedded SQL Commands"}
+nav_prev: {"path": "postgres/docs/current/lo.html/index.md", "title": "PostgreSQL: Documentation: 18: F.21.\u00a0lo \u2014 manage large objects"}
+nav_next: {"path": "postgres/docs/current/locking-indexes.html/index.md", "title": "PostgreSQL: Documentation: 18: 13.7.\u00a0Locking and Indexes"}
 ---
 
 _Locale_ support refers to an application respecting cultural preferences regarding alphabets, sorting, number formatting, etc. PostgreSQL uses the standard ISO C and POSIX locale facilities provided by the server operating system. For additional information refer to the documentation of your system.

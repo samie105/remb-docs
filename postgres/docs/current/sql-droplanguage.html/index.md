@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:53:32.477Z"
 content_hash: "74e3e7110543764b4e340f0e6ad00b98bb43a1162a7c0b3cb15d9d90d99083f7"
 menu_path: ["PostgreSQL: Documentation: 18: DROP LANGUAGE"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/view-pg-timezone-abbrevs.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.33.\u00a0pg_timezone_abbrevs"}
-nav_next: {"path": "postgres/docs/current/catalog-pg-tablespace.html/index.md", "title": "PostgreSQL: Documentation: 18: 52.56.\u00a0pg_tablespace"}
+nav_prev: {"path": "postgres/docs/current/sql-dropindex.html/index.md", "title": "PostgreSQL: Documentation: 18: DROP INDEX"}
+nav_next: {"path": "postgres/docs/current/sql-dropprocedure.html/index.md", "title": "PostgreSQL: Documentation: 18: DROP PROCEDURE"}
 ---
 
 DROP LANGUAGE — remove a procedural language

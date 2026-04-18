@@ -9,7 +9,7 @@ last_crawled_at: "2026-04-18T16:41:34.297Z"
 content_hash: "f25b9e7de1d18f6c17fff67245d2845372403899b2892ed538e9282ed5c2cb50"
 menu_path: ["Send cookies cross-origin"]
 section_path: []
-nav_prev: {"path": "trpc/docs/v9/context/index.md", "title": "Request Context"}
+nav_prev: {"path": "trpc/docs/v9/contributing/index.md", "title": "Contributing"}
 nav_next: {"path": "trpc/docs/v9/data-transformers/index.md", "title": "Data Transformers"}
 ---
 

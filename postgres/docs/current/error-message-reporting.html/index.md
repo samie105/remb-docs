@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:34:39.888Z"
 content_hash: "69d60e98ea40a4dfb71690f67e1ae4752d8d1af1a671fdebfab8e51c4c654dc9"
 menu_path: ["PostgreSQL: Documentation: 18: 55.2. Reporting Errors Within the Server"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/sql-delete.html/index.md", "title": "PostgreSQL: Documentation: 18: DELETE"}
-nav_next: {"path": "postgres/docs/current/view-pg-roles.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.21.\u00a0pg_roles"}
+nav_prev: {"path": "postgres/docs/current/ecpg-variables.html/index.md", "title": "PostgreSQL: Documentation: 18: 34.4.\u00a0Using Host Variables"}
+nav_next: {"path": "postgres/docs/current/event-log-registration.html/index.md", "title": "PostgreSQL: Documentation: 18: 18.12.\u00a0Registering Event Log on Windows"}
 ---
 
 Error, warning, and log messages generated within the server code should be created using `ereport`, or its older cousin `elog`. The use of this function is complex enough to require some explanation.

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:49:53.423Z"
 content_hash: "9b313fd7dcd8c6269a5f4168bf9fe2c9c00360f4a33db63385445b217b586d71"
 menu_path: ["PostgreSQL: Documentation: 18: 41.5. Basic Statements"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/sql-reassign-owned.html/index.md", "title": "PostgreSQL: Documentation: 18: REASSIGN OWNED"}
-nav_next: {"path": "postgres/docs/current/infoschema-routine-sequence-usage.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.43.\u00a0routine_sequence_usage"}
+nav_prev: {"path": "postgres/docs/current/plpgsql-expressions.html/index.md", "title": "PostgreSQL: Documentation: 18: 41.4.\u00a0Expressions"}
+nav_next: {"path": "postgres/docs/current/plpgsql-trigger.html/index.md", "title": "PostgreSQL: Documentation: 18: 41.10.\u00a0Trigger Functions"}
 ---
 
 In this section and the following ones, we describe all the statement types that are explicitly understood by PL/pgSQL. Anything not recognized as one of these statement types is presumed to be an SQL command and is sent to the main database engine to execute, as described in [Section 41.5.2](https://www.postgresql.org/docs/current/plpgsql-statements.html#PLPGSQL-STATEMENTS-GENERAL-SQL "41.5.2. Executing SQL Commands").

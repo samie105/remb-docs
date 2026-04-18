@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:50:10.795Z"
 content_hash: "793cb15ecb2c8e0af014f7cf96fa9b5dec0e3b0583061966b7b9a7e3c9852f7f"
 menu_path: ["PostgreSQL: Documentation: 18: 53.11. pg_ident_file_mappings"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/gssapi-auth.html/index.md", "title": "PostgreSQL: Documentation: 18: 20.6.\u00a0GSSAPI Authentication"}
-nav_next: {"path": "postgres/docs/current/catalog-pg-subscription.html/index.md", "title": "PostgreSQL: Documentation: 18: 52.54.\u00a0pg_subscription"}
+nav_prev: {"path": "postgres/docs/current/view-pg-hba-file-rules.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.10.\u00a0pg_hba_file_rules"}
+nav_next: {"path": "postgres/docs/current/view-pg-indexes.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.12.\u00a0pg_indexes"}
 ---
 
 Development Versions: [devel](https://www.postgresql.org/docs/devel/view-pg-ident-file-mappings.html "PostgreSQL devel - 53.11. pg_ident_file_mappings")

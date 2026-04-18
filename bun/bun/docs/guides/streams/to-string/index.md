@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:54:11.858Z"
 content_hash: "935ed258ec77befbe036a580915bf6b8be3574e49905a2a8ca35bda36f4c3603"
 menu_path: ["Convert a ReadableStream to a string"]
 section_path: []
-nav_prev: {"path": "bun/bun/docs/guides/streams/to-buffer/index.md", "title": "Convert a ReadableStream to a Buffer"}
-nav_next: {"path": "bun/bun/docs/guides/streams/to-json/index.md", "title": "Convert a ReadableStream to JSON"}
+nav_prev: {"path": "bun/bun/docs/guides/streams/to-json/index.md", "title": "Convert a ReadableStream to JSON"}
+nav_next: {"path": "bun/bun/docs/guides/streams/to-typedarray/index.md", "title": "Convert a ReadableStream to a Uint8Array"}
 ---
 
 [Skip to main content](#content-area)

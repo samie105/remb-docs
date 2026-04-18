@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:45:34.149Z"
 content_hash: "01991d2bf1ecf4bafdac7c0979905c1be36e25c187f38796c7fe4468fdf8eddd"
 menu_path: ["PostgreSQL: Documentation: 18: ALTER LANGUAGE"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/config-setting.html/index.md", "title": "PostgreSQL: Documentation: 18: 19.1.\u00a0Setting Parameters"}
-nav_next: {"path": "postgres/docs/current/indexes-types.html/index.md", "title": "PostgreSQL: Documentation: 18: 11.2.\u00a0Index Types"}
+nav_prev: {"path": "postgres/docs/current/sql-alterindex.html/index.md", "title": "PostgreSQL: Documentation: 18: ALTER INDEX"}
+nav_next: {"path": "postgres/docs/current/sql-analyze.html/index.md", "title": "PostgreSQL: Documentation: 18: ANALYZE"}
 ---
 
 ALTER LANGUAGE — change the definition of a procedural language

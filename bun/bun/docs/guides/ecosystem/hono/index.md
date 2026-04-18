@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:44:37.356Z"
 content_hash: "3270e7fa1dafa5c7bd56b67284942344eb4cafc472b781877f45fe010f808863"
 menu_path: ["Build an HTTP server using Hono and Bun"]
 section_path: []
-nav_prev: {"path": "bun/bun/docs/guides/ecosystem/mongoose/index.md", "title": "Read and write data to MongoDB using Mongoose and Bun"}
-nav_next: {"path": "bun/bun/docs/guides/ecosystem/neon-drizzle/index.md", "title": "Use Neon Postgres through Drizzle ORM"}
+nav_prev: {"path": "bun/bun/docs/guides/ecosystem/gel/index.md", "title": "Use Gel with Bun"}
+nav_next: {"path": "bun/bun/docs/guides/ecosystem/mongoose/index.md", "title": "Read and write data to MongoDB using Mongoose and Bun"}
 ---
 
 [Skip to main content](#content-area)

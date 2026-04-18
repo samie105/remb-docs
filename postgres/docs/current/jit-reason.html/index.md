@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:51:50.956Z"
 content_hash: "7d76718954c3e64b5e922bb047fd5a2acdfe8b627fe5fcda66a0523de6d3bfe1"
 menu_path: ["PostgreSQL: Documentation: 18: 30.1. What Is JIT compilation?"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/runtime-config-client.html/index.md", "title": "PostgreSQL: Documentation: 18: 19.11.\u00a0Client Connection Defaults"}
-nav_next: {"path": "postgres/docs/current/parser-stage.html/index.md", "title": "PostgreSQL: Documentation: 18: 51.3.\u00a0The Parser Stage"}
+nav_prev: {"path": "postgres/docs/current/jit-extensibility.html/index.md", "title": "PostgreSQL: Documentation: 18: 30.4.\u00a0Extensibility"}
+nav_next: {"path": "postgres/docs/current/libpq-async.html/index.md", "title": "PostgreSQL: Documentation: 18: 32.4.\u00a0Asynchronous Command Processing"}
 ---
 
 Development Versions: [devel](https://www.postgresql.org/docs/devel/jit-reason.html "PostgreSQL devel - 30.1. What Is JIT compilation?")

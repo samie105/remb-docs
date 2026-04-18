@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:55:00.405Z"
 content_hash: "280d9375c04adfd36a591a2d571c5496cfa0cf019de09620e824f5da24502874"
 menu_path: ["Auth","Auth","More","More","More","Social Login (OAuth)","Social Login (OAuth)","Zoom","Zoom"]
 section_path: ["Auth","Auth","More","More","More","Social Login (OAuth)","Social Login (OAuth)","Zoom","Zoom"]
-nav_prev: {"path": "supabase/docs/guides/auth/social-login/auth-twitter/index.md", "title": "Login with X / Twitter"}
-nav_next: {"path": "supabase/docs/guides/auth/third-party/aws-cognito/index.md", "title": "Amazon Cognito (Amplify)"}
+nav_prev: {"path": "supabase/docs/guides/auth/social-login/auth-workos/index.md", "title": "SSO and Social Login with WorkOS"}
+nav_next: {"path": "supabase/docs/guides/auth/third-party/auth0/index.md", "title": "Auth0"}
 ---
 
 # 

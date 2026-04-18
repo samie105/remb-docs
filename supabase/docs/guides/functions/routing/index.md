@@ -10,7 +10,7 @@ content_hash: "2cd5fe7a11285feaf1e5c48ce5e3d77928406bfea9dbf7026b731c992a96a1c7"
 menu_path: ["Edge Functions","Edge Functions","Development","Development","Routing","Routing"]
 section_path: ["Edge Functions","Edge Functions","Development","Development","Routing","Routing"]
 nav_prev: {"path": "supabase/docs/guides/functions/regional-invocation/index.md", "title": "Regional Invocations"}
-nav_next: {"path": "supabase/docs/guides/functions/secrets/index.md", "title": "Environment Variables"}
+nav_next: {"path": "supabase/docs/guides/functions/schedule-functions/index.md", "title": "Scheduling Edge Functions"}
 ---
 
 # 

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:48:14.825Z"
 content_hash: "262d75a6cca8650668264d05eb629995aa8423dc18524abc302fdf3d786a4a59"
 menu_path: ["Platform","Platform","Platform Configuration","Platform Configuration","SSL Enforcement","SSL Enforcement"]
 section_path: ["Platform","Platform","Platform Configuration","Platform Configuration","SSL Enforcement","SSL Enforcement"]
-nav_prev: {"path": "supabase/docs/guides/platform/sso/index.md", "title": "Enable SSO for Your Organization"}
-nav_next: {"path": "supabase/docs/guides/platform/upgrading/index.md", "title": "Upgrading"}
+nav_prev: {"path": "supabase/docs/guides/platform/regions/index.md", "title": "Available regions"}
+nav_next: {"path": "supabase/docs/guides/platform/sso/index.md", "title": "Enable SSO for Your Organization"}
 ---
 
 # 

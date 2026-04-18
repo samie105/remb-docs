@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:56:59.885Z"
 content_hash: "3f7b1884980a2f7a7745b0ef80a02de5d3ec0f8821a24b96b3b982162da8efcf"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Redis with Google Agent Development Kit (ADK)","→","Redis with Google Agent Development Kit (ADK)","→\n      \n        Redis search tools","→","Redis search tools"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Redis with Google Agent Development Kit (ADK)","→","Redis with Google Agent Development Kit (ADK)","→\n      \n        Redis search tools","→","Redis search tools"]
-nav_prev: {"path": "redis/docs/latest/operate/oss_and_stack/install/install-stack/rpm/index.md", "title": "Install Redis Open Source on Linux"}
-nav_next: {"path": "redis/docs/latest/operate/oss_and_stack/stack-with-enterprise/deprecated-features/triggers-and-functions/concepts/sync_async/index.md", "title": "Sync and async"}
+nav_prev: {"path": "redis/docs/latest/integrate/google-adk/redis-agent-memory/index.md", "title": "Redis Agent Memory"}
+nav_next: {"path": "redis/docs/latest/integrate/google-adk/semantic-caching/index.md", "title": "Semantic caching"}
 ---
 
 # Redis search tools

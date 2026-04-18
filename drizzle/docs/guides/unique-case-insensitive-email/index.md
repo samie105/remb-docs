@@ -9,7 +9,7 @@ last_crawled_at: "2026-04-18T17:07:29.864Z"
 content_hash: "48101bbe7a0c31897c40a9b1b08e6254d341a695dff912e30f2d0bd3b4715883"
 menu_path: ["Drizzle ORM - Unique and Case-Insensitive Email Handling"]
 section_path: []
-nav_prev: {"path": "drizzle/docs/guides/timestamp-default-value/index.md", "title": "Drizzle ORM - SQL Timestamp as a default value"}
+nav_prev: {"path": "drizzle/docs/guides/toggling-a-boolean-field/index.md", "title": "Drizzle ORM - SQL Toggle value"}
 nav_next: {"path": "drizzle/docs/guides/update-many-with-different-value/index.md", "title": "Drizzle ORM - Update many with different values for each row"}
 ---
 

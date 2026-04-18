@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:49:54.960Z"
 content_hash: "7298392c679f93174ea62295ad128743ac1afedd1d82001550bdddc02bae2073"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Node.js client for Redis","→","Node.js client for Redis"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Node.js client for Redis","→","Node.js client for Redis"]
-nav_prev: {"path": "redis/docs/latest/operate/oss_and_stack/install/archive/install-stack/mac-os/index.md", "title": "Install Redis Stack on macOS"}
-nav_next: {"path": "redis/docs/latest/develop/reference/modules/index.md", "title": "Redis modules API"}
+nav_prev: {"path": "redis/docs/latest/integrate/new-relic-with-redis-enterprise/index.md", "title": "New Relic with Redis Software"}
+nav_next: {"path": "redis/docs/latest/integrate/nredisstack/index.md", "title": "C#/.NET client for Redis"}
 ---
 
 # Node.js client for Redis

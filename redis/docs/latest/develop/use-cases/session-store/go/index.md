@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:54:05.796Z"
 content_hash: "c8755b61621b7db114f719121c32bfb3a81f660acfb640afa48088c376b9ca6b"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Redis session store","→","Redis session store","→\n      \n        Redis session store with Go","→","Redis session store with Go"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Redis session store","→","Redis session store","→\n      \n        Redis session store with Go","→","Redis session store with Go"]
-nav_prev: {"path": "redis/docs/latest/develop/use-cases/leaderboard/go/index.md", "title": "Redis leaderboard with Go"}
-nav_next: {"path": "redis/docs/latest/develop/use-cases/rate-limiter/go/index.md", "title": "Token bucket rate limiter with Redis and Go"}
+nav_prev: {"path": "redis/docs/latest/develop/use-cases/session-store/dotnet/index.md", "title": "Redis session store with .NET"}
+nav_next: {"path": "redis/docs/latest/develop/use-cases/session-store/java-jedis/index.md", "title": "Redis session store with Java and Jedis"}
 ---
 
 # Redis session store with Go

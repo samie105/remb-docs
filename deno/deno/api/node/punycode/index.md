@@ -9,7 +9,7 @@ last_crawled_at: "2026-04-18T16:39:02.008Z"
 content_hash: "24cbc4d5e906238c83ea84d87cef4afb345bb04d4787193244e811904b9a0d51"
 menu_path: ["punycode - Node documentation"]
 section_path: []
-nav_prev: {"path": "deno/deno/api/node/perf_hooks/index.md", "title": "perf_hooks - Node documentation"}
+nav_prev: {"path": "deno/deno/api/node/process/index.md", "title": "process - Node documentation"}
 nav_next: {"path": "deno/deno/api/node/querystring/index.md", "title": "querystring - Node documentation"}
 ---
 

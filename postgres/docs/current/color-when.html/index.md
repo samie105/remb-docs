@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:52:12.836Z"
 content_hash: "346ff0b307d17194303d15b07911f132c29053fc77fa4e645ece0715105d257a"
 menu_path: ["PostgreSQL: Documentation: 18: N.1. When Color is Used"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/view-pg-available-extension-versions.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.4.\u00a0pg_available_extension_versions"}
-nav_next: {"path": "postgres/docs/current/datetime-invalid-input.html/index.md", "title": "PostgreSQL: Documentation: 18: B.2.\u00a0Handling of Invalid or Ambiguous Timestamps"}
+nav_prev: {"path": "postgres/docs/current/collation.html/index.md", "title": "PostgreSQL: Documentation: 18: 23.2.\u00a0Collation Support"}
+nav_next: {"path": "postgres/docs/current/color-which.html/index.md", "title": "PostgreSQL: Documentation: 18: N.2.\u00a0Configuring the Colors"}
 ---
 
 February 26, 2026: [PostgreSQL 18.3, 17.9, 16.13, 15.17, and 14.22 Released!](/about/news/postgresql-183-179-1613-1517-and-1422-released-3246/)

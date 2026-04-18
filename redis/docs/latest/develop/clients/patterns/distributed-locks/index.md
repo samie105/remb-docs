@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:39:46.606Z"
 content_hash: "aaf1f120f62f191a5c7f2dd8794150c5e461d7354829d2ea7c6f150e2d05c69f"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Connect with Redis client API libraries","→","Connect with Redis client API libraries","→\n      \n        Coding patterns","→","Coding patterns","→\n      \n        Distributed Locks with Redis","→","Distributed Locks with Redis"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Connect with Redis client API libraries","→","Connect with Redis client API libraries","→\n      \n        Coding patterns","→","Coding patterns","→\n      \n        Distributed Locks with Redis","→","Distributed Locks with Redis"]
-nav_prev: {"path": "redis/docs/latest/operate/kubernetes/networking/database-connectivity/index.md", "title": "Database connectivity"}
-nav_next: {"path": "redis/docs/latest/operate/oss_and_stack/install/install-stack/docker/index.md", "title": "Run Redis Open Source on Docker"}
+nav_prev: {"path": "redis/docs/latest/develop/clients/patterns/bulk-loading/index.md", "title": "Bulk loading"}
+nav_next: {"path": "redis/docs/latest/develop/clients/patterns/indexes/index.md", "title": "Secondary indexing"}
 ---
 
 # Distributed Locks with Redis

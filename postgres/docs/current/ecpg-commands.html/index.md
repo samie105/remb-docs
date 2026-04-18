@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:45:11.637Z"
 content_hash: "cc530570a118a69bc32d4ef7d088621cca4d74e3a4285bc5a0d562b5a4baa61c"
 menu_path: ["PostgreSQL: Documentation: 18: 34.3. Running SQL Commands"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/predefined-roles.html/index.md", "title": "PostgreSQL: Documentation: 18: 21.5.\u00a0Predefined Roles"}
-nav_next: {"path": "postgres/docs/current/infoschema-parameters.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.33.\u00a0parameters"}
+nav_prev: {"path": "postgres/docs/current/earthdistance.html/index.md", "title": "PostgreSQL: Documentation: 18: F.14.\u00a0earthdistance \u2014 calculate great-circle distances"}
+nav_next: {"path": "postgres/docs/current/ecpg-concept.html/index.md", "title": "PostgreSQL: Documentation: 18: 34.1.\u00a0The Concept"}
 ---
 
 Any SQL command can be run from within an embedded SQL application. Below are some examples of how to do that.

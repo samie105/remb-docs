@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:51:08.652Z"
 content_hash: "a4fbe4af9c12278cac81a0e0e91775da51aa74ddb585eee25f4ae08382895e5f"
 menu_path: ["PostgreSQL: Documentation: 18: 53.7. pg_cursors"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/catalog-pg-subscription-rel.html/index.md", "title": "PostgreSQL: Documentation: 18: 52.55.\u00a0pg_subscription_rel"}
-nav_next: {"path": "postgres/docs/current/functions-xml.html/index.md", "title": "PostgreSQL: Documentation: 18: 9.15.\u00a0XML Functions"}
+nav_prev: {"path": "postgres/docs/current/view-pg-config.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.6.\u00a0pg_config"}
+nav_next: {"path": "postgres/docs/current/view-pg-file-settings.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.8.\u00a0pg_file_settings"}
 ---
 
 Development Versions: [devel](https://www.postgresql.org/docs/devel/view-pg-cursors.html "PostgreSQL devel - 53.7. pg_cursors")

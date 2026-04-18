@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:44:40.543Z"
 content_hash: "9428e0d5501547d2220e236bfb344d44d97366fc33de1837702b50341344cd9e"
 menu_path: ["PostgreSQL: Documentation: 18: 5.4. Generated Columns"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/sql-dropgroup.html/index.md", "title": "PostgreSQL: Documentation: 18: DROP GROUP"}
-nav_next: {"path": "postgres/docs/current/sql-alterdomain.html/index.md", "title": "PostgreSQL: Documentation: 18: ALTER DOMAIN"}
+nav_prev: {"path": "postgres/docs/current/ddl-foreign-data.html/index.md", "title": "PostgreSQL: Documentation: 18: 5.13.\u00a0Foreign Data"}
+nav_next: {"path": "postgres/docs/current/ddl-identity-columns.html/index.md", "title": "PostgreSQL: Documentation: 18: 5.3.\u00a0Identity Columns"}
 ---
 
 A generated column is a special column that is always computed from other columns. Thus, it is for columns what a view is for tables. There are two kinds of generated columns: stored and virtual. A stored generated column is computed when it is written (inserted or updated) and occupies storage as if it were a normal column. A virtual generated column occupies no storage and is computed when it is read. Thus, a virtual generated column is similar to a view and a stored generated column is similar to a materialized view (except that it is always updated automatically).

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:51:51.724Z"
 content_hash: "e88e1dd119169dc015f997f3885f10ad89f7d031d9a99cb2baed2a50c4937ed8"
 menu_path: ["AI & Vectors","AI & Vectors","Python Examples","Python Examples","Semantic search with Amazon Titan","Semantic search with Amazon Titan"]
 section_path: ["AI & Vectors","AI & Vectors","Python Examples","Python Examples","Semantic search with Amazon Titan","Semantic search with Amazon Titan"]
-nav_prev: {"path": "supabase/docs/guides/ai/examples/nextjs-vector-search/index.md", "title": "Vector search with Next.js and OpenAI"}
-nav_next: {"path": "supabase/docs/guides/ai/examples/openai/index.md", "title": "Generating OpenAI GPT3 completions"}
+nav_prev: {"path": "supabase/docs/guides/ai/examples/openai/index.md", "title": "Generating OpenAI GPT3 completions"}
+nav_next: {"path": "supabase/docs/guides/ai/going-to-prod/index.md", "title": "Going to Production"}
 ---
 
 # 

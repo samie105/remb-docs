@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:13:31.392Z"
 content_hash: "a636d8c931cee696b28c06bb0b598f9b5b187f806c3c854cd183d035cfdf1a89"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        Redis Search","→","Redis Search","→\n      \n        Vector search concepts","→","Vector search concepts"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        Redis Search","→","Redis Search","→\n      \n        Vector search concepts","→","Vector search concepts"]
-nav_prev: {"path": "redis/docs/latest/integrate/spring-framework-cache/index.md", "title": "Spring Data Redis"}
-nav_next: {"path": "redis/docs/latest/develop/tools/insight/release-notes/v.2.4.0/index.md", "title": "RedisInsight v2.4.0, June 2022"}
+nav_prev: {"path": "redis/docs/latest/develop/ai/search-and-query/query/vector-search/index.md", "title": "Vector search"}
+nav_next: {"path": "redis/docs/latest/develop/ai/search-and-query/vectors/svs-compression/index.md", "title": "Vector quantization and compression"}
 ---
 
 # Vector search concepts

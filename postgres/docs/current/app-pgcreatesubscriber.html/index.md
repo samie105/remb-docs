@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:50:29.247Z"
 content_hash: "342757ed98bf7faeae53a594da63b662686278c6f191e4ff9e2a88173145e61b"
 menu_path: ["PostgreSQL: Documentation: 18: pg_createsubscriber"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/view-pg-user.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.35.\u00a0pg_user"}
-nav_next: {"path": "postgres/docs/current/view-pg-group.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.9.\u00a0pg_group"}
+nav_prev: {"path": "postgres/docs/current/app-pgcontroldata.html/index.md", "title": "PostgreSQL: Documentation: 18: pg_controldata"}
+nav_next: {"path": "postgres/docs/current/app-pgreceivewal.html/index.md", "title": "PostgreSQL: Documentation: 18: pg_receivewal"}
 ---
 
 pg\_createsubscriber — convert a physical replica into a new logical replica

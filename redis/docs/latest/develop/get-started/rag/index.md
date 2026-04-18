@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:59:56.201Z"
 content_hash: "a95199888a820141646a1a0ce4ac8df011b4bd1ba3779c6027dad059b2f5bdee"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Quick starts","→","Quick starts","→\n      \n        RAG with Redis","→","RAG with Redis"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Quick starts","→","Quick starts","→\n      \n        RAG with Redis","→","RAG with Redis"]
-nav_prev: {"path": "redis/docs/latest/develop/reference/protocol-spec/index.md", "title": "Redis serialization protocol specification"}
-nav_next: {"path": "redis/docs/latest/integrate/pulumi-provider-for-redis-cloud/index.md", "title": "Pulumi provider for Redis Cloud"}
+nav_prev: {"path": "redis/docs/latest/develop/get-started/document-database/index.md", "title": "Redis as a document database quick start guide"}
+nav_next: {"path": "redis/docs/latest/develop/get-started/vector-database/index.md", "title": "Redis as a vector database quick start guide"}
 ---
 
 # RAG with Redis

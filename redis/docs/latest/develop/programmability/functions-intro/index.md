@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:40:39.714Z"
 content_hash: "f85103b96e3d3cbf082c593b4c11f1d97876d401c5cdcdfe6efb3be7d379cc15"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis programmability","→","Redis programmability","→\n      \n        Redis functions","→","Redis functions"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis programmability","→","Redis programmability","→\n      \n        Redis functions","→","Redis functions"]
-nav_prev: {"path": "redis/docs/latest/develop/ai/search-and-query/query/exact-match/index.md", "title": "Exact match queries"}
-nav_next: {"path": "redis/docs/latest/develop/ai/redisvl/user_guide/getting_started/index.md", "title": "Getting Started with RedisVL"}
+nav_prev: {"path": "redis/docs/latest/develop/programmability/eval-intro/index.md", "title": "Scripting with Lua"}
+nav_next: {"path": "redis/docs/latest/develop/programmability/lua-api/index.md", "title": "Redis Lua API reference"}
 ---
 
 # Redis functions

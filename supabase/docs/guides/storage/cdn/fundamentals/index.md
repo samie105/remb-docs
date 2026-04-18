@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:01:12.052Z"
 content_hash: "c42ac06acb638dbfebc0544223af4fe6a85b8c8f3a555a5b66f11d1f44916bce"
 menu_path: ["Storage","Storage","More","More","More","CDN","CDN","Fundamentals","Fundamentals"]
 section_path: ["Storage","Storage","More","More","More","CDN","CDN","Fundamentals","Fundamentals"]
-nav_prev: {"path": "supabase/docs/guides/storage/cdn/metrics/index.md", "title": "Cache Metrics"}
-nav_next: {"path": "supabase/docs/guides/storage/cdn/smart-cdn/index.md", "title": "Smart CDN"}
+nav_prev: {"path": "supabase/docs/guides/storage/buckets/fundamentals/index.md", "title": "Storage Buckets"}
+nav_next: {"path": "supabase/docs/guides/storage/cdn/metrics/index.md", "title": "Cache Metrics"}
 ---
 
 # 

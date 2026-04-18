@@ -10,7 +10,7 @@ content_hash: "09bec31f513c68d0ac85cd6c9a80f0c7f2389856cffc9b13d3a2adaba2b7c437"
 menu_path: ["Listen for CTRL+C"]
 section_path: []
 nav_prev: {"path": "bun/bun/docs/guides/process/argv/index.md", "title": "Parse command-line arguments"}
-nav_next: {"path": "bun/bun/docs/guides/process/nanoseconds/index.md", "title": "Get the process uptime in nanoseconds"}
+nav_next: {"path": "bun/bun/docs/guides/process/ipc/index.md", "title": "Spawn a child process and communicate using IPC"}
 ---
 
 [Skip to main content](#content-area)

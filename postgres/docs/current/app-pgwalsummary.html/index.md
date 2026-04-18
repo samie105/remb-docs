@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:46:13.425Z"
 content_hash: "9b720d747c9961c0a0987db7904482e22cb5fed26dab3c2c7cbb10bd7fb0dea4"
 menu_path: ["PostgreSQL: Documentation: 18: pg_walsummary"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/ddl-default.html/index.md", "title": "PostgreSQL: Documentation: 18: 5.2.\u00a0Default Values"}
-nav_next: {"path": "postgres/docs/current/catalog-pg-namespace.html/index.md", "title": "PostgreSQL: Documentation: 18: 52.32.\u00a0pg_namespace"}
+nav_prev: {"path": "postgres/docs/current/app-pgverifybackup.html/index.md", "title": "PostgreSQL: Documentation: 18: pg_verifybackup"}
+nav_next: {"path": "postgres/docs/current/app-postgres.html/index.md", "title": "PostgreSQL: Documentation: 18: postgres"}
 ---
 
 pg\_walsummary — print contents of WAL summary files

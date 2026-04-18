@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:51:02.183Z"
 content_hash: "c29d2409120d3019b3c2172c82b4f84a4f86fa252c432fb6219e057b8806e39f"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Cloud","→","Redis Cloud","→\n      \n        Manage databases","→","Manage databases","→\n      \n        Data Integration","→","Data Integration","→\n      \n        Prepare source database","→","Prepare source database"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Cloud","→","Redis Cloud","→\n      \n        Manage databases","→","Manage databases","→\n      \n        Data Integration","→","Data Integration","→\n      \n        Prepare source database","→","Prepare source database"]
-nav_prev: {"path": "redis/docs/latest/integrate/redis-data-integration/data-pipelines/prepare-dbs/postgresql/index.md", "title": "Prepare PostgreSQL/Supabase for RDI"}
-nav_next: {"path": "redis/docs/latest/develop/ai/search-and-query/vectors/svs-compression/index.md", "title": "Vector quantization and compression"}
+nav_prev: {"path": "redis/docs/latest/operate/rc/databases/rdi/quick-start/index.md", "title": "RDI on Redis Cloud quick start"}
+nav_next: {"path": "redis/docs/latest/operate/rc/databases/rdi/view-edit/index.md", "title": "View and edit data pipeline"}
 ---
 
 # Prepare source database

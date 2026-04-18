@@ -9,7 +9,7 @@ last_crawled_at: "2026-04-18T17:00:31.360Z"
 content_hash: "7c6c9cf719c22984d1dc88b8d98b6f2a5fe77f050072251946c3095ad635f142"
 menu_path: ["JSONL"]
 section_path: []
-nav_prev: {"path": "bun/bun/docs/runtime/index.md", "title": "Bun Runtime"}
+nav_prev: {"path": "bun/bun/docs/runtime/json5/index.md", "title": "JSON5"}
 nav_next: {"path": "bun/bun/docs/runtime/jsx/index.md", "title": "JSX"}
 ---
 

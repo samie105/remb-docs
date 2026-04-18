@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:47:35.817Z"
 content_hash: "51bc1c0d67627dc566b98b70eac808009de8fdfde063130daf6a63d20ad2d13b"
 menu_path: ["PostgreSQL: Documentation: 18: F.1. amcheck — tools to verify table and index consistency"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/functions-bitstring.html/index.md", "title": "PostgreSQL: Documentation: 18: 9.6.\u00a0Bit String Functions and Operators"}
-nav_next: {"path": "postgres/docs/current/catalog-pg-operator.html/index.md", "title": "PostgreSQL: Documentation: 18: 52.34.\u00a0pg_operator"}
+nav_prev: {"path": "postgres/docs/current/index.md", "title": "PostgreSQL 18.3 Documentation"}
+nav_next: {"path": "postgres/docs/current/app-dropdb.html/index.md", "title": "PostgreSQL: Documentation: 18: dropdb"}
 ---
 
 The `amcheck` module provides functions that allow you to verify the logical consistency of the structure of relations.

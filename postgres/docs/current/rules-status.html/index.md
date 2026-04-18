@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:38:21.583Z"
 content_hash: "48e7d073ca9684f4018356b95efc4b63cf1aa2a031c30cac29a12cf323383d5a"
 menu_path: ["PostgreSQL: Documentation: 18: 39.6. Rules and Command Status"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/sql-createcollation.html/index.md", "title": "PostgreSQL: Documentation: 18: CREATE COLLATION"}
-nav_next: {"path": "postgres/docs/current/runtime-config-wal.html/index.md", "title": "PostgreSQL: Documentation: 18: 19.5.\u00a0Write Ahead Log"}
+nav_prev: {"path": "postgres/docs/current/rules-privileges.html/index.md", "title": "PostgreSQL: Documentation: 18: 39.5.\u00a0Rules and Privileges"}
+nav_next: {"path": "postgres/docs/current/rules-triggers.html/index.md", "title": "PostgreSQL: Documentation: 18: 39.7.\u00a0Rules Versus Triggers"}
 ---
 
 The PostgreSQL server returns a command status string, such as `INSERT 149592 1`, for each command it receives. This is simple enough when there are no rules involved, but what happens when the query is rewritten by rules?

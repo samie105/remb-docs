@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:51:09.901Z"
 content_hash: "86504859109ba6f8e6a3f578d2696fedf56a66d7090b671e6957eaf3ad465d98"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        Redis Search","→","Redis Search","→\n      \n        Vector search concepts","→","Vector search concepts","→\n      \n        Vector quantization and compression","→","Vector quantization and compression"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        Redis Search","→","Redis Search","→\n      \n        Vector search concepts","→","Vector search concepts","→\n      \n        Vector quantization and compression","→","Vector quantization and compression"]
-nav_prev: {"path": "redis/docs/latest/operate/rc/databases/rdi/setup/index.md", "title": "Prepare source database"}
-nav_next: {"path": "redis/docs/latest/integrate/redis-data-integration/data-pipelines/prepare-dbs/sql-server/index.md", "title": "Prepare SQL Server for RDI"}
+nav_prev: {"path": "redis/docs/latest/develop/ai/search-and-query/vectors/index.md", "title": "Vector search concepts"}
+nav_next: {"path": "redis/docs/latest/develop/clients/dotnet/index.md", "title": "NRedisStack guide (C#/.NET)"}
 ---
 
 # Vector quantization and compression

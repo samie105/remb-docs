@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:52:27.860Z"
 content_hash: "3295b6487201792c6330a560b9e42537fcb9f34c8e9bcac0e0d6468a1b2c0e0c"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Redis session store","→","Redis session store"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Redis session store","→","Redis session store"]
-nav_prev: {"path": "redis/docs/latest/develop/reference/sentinel-clients/index.md", "title": "Sentinel client spec"}
-nav_next: {"path": "redis/docs/latest/operate/oss_and_stack/stack-with-enterprise/deprecated-features/triggers-and-functions/concepts/triggers/stream_triggers/index.md", "title": "Stream triggers"}
+nav_prev: {"path": "redis/docs/latest/develop/use-cases/rate-limiter/rust/index.md", "title": "Token bucket rate limiter with Redis and Rust"}
+nav_next: {"path": "redis/docs/latest/develop/use-cases/session-store/dotnet/index.md", "title": "Redis session store with .NET"}
 ---
 
 # Redis session store

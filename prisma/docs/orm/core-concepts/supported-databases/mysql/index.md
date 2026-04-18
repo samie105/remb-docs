@@ -9,7 +9,7 @@ last_crawled_at: "2026-04-18T16:40:53.402Z"
 content_hash: "ceb2d1e67d52c96ece9db672cc83727ca21508c9d6e753035361e8614c99fa03"
 menu_path: ["MySQL"]
 section_path: []
-nav_prev: {"path": "prisma/docs/orm/core-concepts/supported-databases/database-drivers/index.md", "title": "Database drivers"}
+nav_prev: {"path": "prisma/docs/orm/core-concepts/supported-databases/mongodb/index.md", "title": "MongoDB"}
 nav_next: {"path": "prisma/docs/orm/core-concepts/supported-databases/postgresql/index.md", "title": "PostgreSQL"}
 ---
 

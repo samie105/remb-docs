@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:57:38.713Z"
 content_hash: "2fef9f2426439f15f1d0199b766e1fa51b68ae40aa971a04c63171ef247d63a7"
 menu_path: ["bun remove"]
 section_path: []
-nav_prev: {"path": "bun/bun/docs/pm/cli/pm/index.md", "title": "bun pm"}
-nav_next: {"path": "bun/bun/docs/pm/cli/publish/index.md", "title": "bun publish"}
+nav_prev: {"path": "bun/bun/docs/pm/cli/publish/index.md", "title": "bun publish"}
+nav_next: {"path": "bun/bun/docs/pm/cli/update/index.md", "title": "bun update"}
 ---
 
 [Skip to main content](#content-area)

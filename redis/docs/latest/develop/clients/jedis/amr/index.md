@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:47:02.328Z"
 content_hash: "53c6d93db878d34e1041406aa245c6072e212b808483a9ee5f629c864f4f3daa"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Connect with Redis client API libraries","→","Connect with Redis client API libraries","→\n      \n        Jedis guide (Java)","→","Jedis guide (Java)","→\n      \n        Connect to Azure Managed Redis","→","Connect to Azure Managed Redis"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Connect with Redis client API libraries","→","Connect with Redis client API libraries","→\n      \n        Jedis guide (Java)","→","Jedis guide (Java)","→\n      \n        Connect to Azure Managed Redis","→","Connect to Azure Managed Redis"]
-nav_prev: {"path": "redis/docs/latest/develop/clients/nodejs/connect/index.md", "title": "Connect to the server"}
-nav_next: {"path": "redis/docs/latest/develop/clients/lettuce/amr/index.md", "title": "Connect to Azure Managed Redis"}
+nav_prev: {"path": "redis/docs/latest/develop/clients/jedis/index.md", "title": "Jedis guide (Java)"}
+nav_next: {"path": "redis/docs/latest/develop/clients/jedis/connect/index.md", "title": "Connect to the server"}
 ---
 
 # Connect to Azure Managed Redis

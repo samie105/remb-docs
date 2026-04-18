@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:54:36.221Z"
 content_hash: "142d2b9b05fdd889fd5b9d29215d49241b0d850f72727f9724762a8b5577dca4"
 menu_path: ["Get Started with Drizzle and Effect PostgreSQL"]
 section_path: []
-nav_prev: {"path": "drizzle/docs/get-started/expo-new/index.md", "title": "Get Started with Drizzle and Expo"}
-nav_next: {"path": "drizzle/docs/get-started/gel-existing/index.md", "title": "Get Started with Drizzle and Gel in existing project"}
+nav_prev: {"path": "drizzle/docs/get-started/effect-postgresql-existing/index.md", "title": "Get Started with Drizzle and Effect PostgreSQL in existing project"}
+nav_next: {"path": "drizzle/docs/get-started/expo-existing/index.md", "title": "Get Started with Drizzle and Expo in existing project"}
 ---
 
 ## Get Started with Drizzle and Effect PostgreSQL

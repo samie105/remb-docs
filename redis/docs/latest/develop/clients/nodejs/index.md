@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:59:30.254Z"
 content_hash: "f2a983bd73d6bd7e6890fcddf9f0967e516450bb028a431d0a8b49b82b3ab7e5"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Connect with Redis client API libraries","→","Connect with Redis client API libraries","→\n      \n        node-redis guide (JavaScript)","→","node-redis guide (JavaScript)"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Connect with Redis client API libraries","→","Connect with Redis client API libraries","→\n      \n        node-redis guide (JavaScript)","→","node-redis guide (JavaScript)"]
-nav_prev: {"path": "redis/docs/latest/develop/use-cases/session-store/java-jedis/index.md", "title": "Redis session store with Java and Jedis"}
-nav_next: {"path": "redis/docs/latest/operate/rs/installing-upgrading/install/plan-deployment/index.md", "title": "Plan Redis Software deployment"}
+nav_prev: {"path": "redis/docs/latest/develop/clients/lettuce/vecsearch/index.md", "title": "Index and query vectors"}
+nav_next: {"path": "redis/docs/latest/develop/clients/nodejs/amr/index.md", "title": "Connect to Azure Managed Redis"}
 ---
 
 # node-redis guide (JavaScript)

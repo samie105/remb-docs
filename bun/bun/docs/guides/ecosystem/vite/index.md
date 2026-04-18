@@ -10,7 +10,7 @@ content_hash: "a2205516910ca3295854e39122d7cd30908c98aec7c27aba4b8af7fea6ba3fe0"
 menu_path: ["Build a frontend using Vite and Bun"]
 section_path: []
 nav_prev: {"path": "bun/bun/docs/guides/ecosystem/upstash/index.md", "title": "Bun Redis with Upstash"}
-nav_next: {"path": "bun/bun/docs/guides/ecosystem/tanstack-start/index.md", "title": "Use TanStack Start with Bun"}
+nav_next: {"path": "bun/bun/docs/guides/html-rewriter/extract-links/index.md", "title": "Extract links from a webpage using HTMLRewriter"}
 ---
 
 [Skip to main content](#content-area)

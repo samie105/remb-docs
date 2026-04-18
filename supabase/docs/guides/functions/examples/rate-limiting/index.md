@@ -10,7 +10,7 @@ content_hash: "97b31857073e075aa53542e18e9297e1122e861cc4846d6cb46cf3da1836fb83"
 menu_path: ["Edge Functions","Edge Functions","Examples","Examples","Rate-limiting with Redis","Rate-limiting with Redis"]
 section_path: ["Edge Functions","Edge Functions","Examples","Examples","Rate-limiting with Redis","Rate-limiting with Redis"]
 nav_prev: {"path": "supabase/docs/guides/functions/examples/push-notifications/index.md", "title": "Sending Push Notifications"}
-nav_next: {"path": "supabase/docs/guides/functions/examples/semantic-search/index.md", "title": "Semantic Search"}
+nav_next: {"path": "supabase/docs/guides/functions/examples/screenshots/index.md", "title": "Taking Screenshots with Puppeteer"}
 ---
 
 # 

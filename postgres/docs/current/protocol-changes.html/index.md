@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:42:26.508Z"
 content_hash: "0f4358ed0a460c4eb712833d411a6151563a660098b2b1f4b314420a3b1f7058"
 menu_path: ["PostgreSQL: Documentation: 18: 54.10. Summary of Changes since Protocol 2.0"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/bki-structure.html/index.md", "title": "PostgreSQL: Documentation: 18: 68.5.\u00a0Structure of the Bootstrap BKI File"}
-nav_next: {"path": "postgres/docs/current/pgstattuple.html/index.md", "title": "PostgreSQL: Documentation: 18: F.33.\u00a0pgstattuple \u2014 obtain tuple-level statistics"}
+nav_prev: {"path": "postgres/docs/current/progress-reporting.html/index.md", "title": "PostgreSQL: Documentation: 18: 27.4.\u00a0Progress Reporting"}
+nav_next: {"path": "postgres/docs/current/protocol-logical-replication.html/index.md", "title": "PostgreSQL: Documentation: 18: 54.5.\u00a0Logical Streaming Replication Protocol"}
 ---
 
 This section provides a quick checklist of changes, for the benefit of developers trying to update existing client libraries to protocol 3.0.

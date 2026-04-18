@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:44:27.626Z"
 content_hash: "d34976bcfaba9847cb32ba1bc946c864976ccdf657b1ce255780ab35fe58cec9"
 menu_path: ["Use Gel with Bun"]
 section_path: []
-nav_prev: {"path": "bun/bun/docs/guides/ecosystem/drizzle/index.md", "title": "Use Drizzle ORM with Bun"}
-nav_next: {"path": "bun/bun/docs/guides/ecosystem/mongoose/index.md", "title": "Read and write data to MongoDB using Mongoose and Bun"}
+nav_prev: {"path": "bun/bun/docs/guides/ecosystem/express/index.md", "title": "Build an HTTP server using Express and Bun"}
+nav_next: {"path": "bun/bun/docs/guides/ecosystem/hono/index.md", "title": "Build an HTTP server using Hono and Bun"}
 ---
 
 Gel (formerly EdgeDB) is a graph-relational database powered by Postgres under the hood. It provides a declarative schema language, migrations system, and object-oriented query language, in addition to supporting raw SQL queries. It solves the object-relational mapping problem at the database layer, eliminating the need for an ORM library in your application code.

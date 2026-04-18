@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:40:54.750Z"
 content_hash: "14094696174546d91a05a15c5fb90e863549df8e59269104bc19f241f2b789e0"
 menu_path: ["PostgreSQL: Documentation: 18: 36.3. User-Defined Functions"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/plpython-trigger.html/index.md", "title": "PostgreSQL: Documentation: 18: 44.5.\u00a0Trigger Functions"}
-nav_next: {"path": "postgres/docs/current/sql-start-transaction.html/index.md", "title": "PostgreSQL: Documentation: 18: START TRANSACTION"}
+nav_prev: {"path": "postgres/docs/current/xfunc-pl.html/index.md", "title": "PostgreSQL: Documentation: 18: 36.8.\u00a0Procedural Language Functions"}
+nav_next: {"path": "postgres/docs/current/xindex.html/index.md", "title": "PostgreSQL: Documentation: 18: 36.16.\u00a0Interfacing Extensions to Indexes"}
 ---
 
 PostgreSQL provides four kinds of functions:

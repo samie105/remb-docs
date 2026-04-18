@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:36:55.700Z"
 content_hash: "48e77ed407741394e436938dd67ae24ad1361db039104e5bec97099bdbbffe1a"
 menu_path: ["Database"]
 section_path: []
-nav_prev: {"path": "fastify/docs/latest/Guides/Write-Plugin/index.md", "title": "How to write a good plugin"}
-nav_next: {"path": "fastify/docs/latest/Guides/Testing/index.md", "title": "Testing"}
+nav_prev: {"path": "fastify/docs/latest/Guides/Contributing/index.md", "title": "Contributing To Fastify"}
+nav_next: {"path": "fastify/docs/latest/Guides/Delay-Accepting-Requests/index.md", "title": "Delay Accepting Requests"}
 ---
 
 Version: latest (v5.8.x)

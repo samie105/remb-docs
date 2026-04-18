@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:31:58.444Z"
 content_hash: "e4878225446b786c0620720058cb5f71f417ba6d57aa0c9cf4ebad5e65309158"
 menu_path: ["PostgreSQL: Documentation: 18: 37.3. Writing Trigger Functions in C"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/basic-archive.html/index.md", "title": "PostgreSQL: Documentation: 18: F.5.\u00a0basic_archive \u2014 an example WAL archive module"}
-nav_next: {"path": "postgres/docs/current/dict-int.html/index.md", "title": "PostgreSQL: Documentation: 18: F.12.\u00a0dict_int \u2014 example full-text search dictionary for integers"}
+nav_prev: {"path": "postgres/docs/current/textsearch-psql.html/index.md", "title": "PostgreSQL: Documentation: 18: 12.10.\u00a0psql Support"}
+nav_next: {"path": "postgres/docs/current/tutorial-advanced-intro.html/index.md", "title": "PostgreSQL: Documentation: 18: 3.1.\u00a0Introduction"}
 ---
 
 This section describes the low-level details of the interface to a trigger function. This information is only needed when writing trigger functions in C. If you are using a higher-level language then these details are handled for you. In most cases you should consider using a procedural language before writing your triggers in C. The documentation of each procedural language explains how to write a trigger in that language.

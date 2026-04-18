@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:33:59.018Z"
 content_hash: "bd787f1e91ddd5c289e032de49bb7ec2db5e19082ebcfa0e27581a2d4e8d4d5d"
 menu_path: ["MSSQL column types"]
 section_path: []
-nav_prev: {"path": "drizzle/docs/graphql/index.md", "title": "drizzle-graphql"}
-nav_next: {"path": "drizzle/docs/column-types/cockroach/index.md", "title": "CockroachDB column types"}
+nav_prev: {"path": "drizzle/docs/column-types/cockroach/index.md", "title": "CockroachDB column types"}
+nav_next: {"path": "drizzle/docs/column-types/mysql/index.md", "title": "MySQL column types"}
 ---
 
 WARNING

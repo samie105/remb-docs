@@ -9,7 +9,7 @@ last_crawled_at: "2026-04-18T16:56:05.062Z"
 content_hash: "60132c6530001c720490dd8f6b38f7e199d462d19fe57172e956279e25d5bb86"
 menu_path: ["Database","Database","Extensions","Extensions","pgsodium (pending deprecation): Encryption Features","pgsodium (pending deprecation): Encryption Features"]
 section_path: ["Database","Database","Extensions","Extensions","pgsodium (pending deprecation): Encryption Features","pgsodium (pending deprecation): Encryption Features"]
-nav_prev: {"path": "supabase/docs/guides/database/extensions/pgvector/index.md", "title": "pgvector: Embeddings and vector similarity"}
+nav_prev: {"path": "supabase/docs/guides/database/extensions/pgrouting/index.md", "title": "pgrouting: Geospatial Routing"}
 nav_next: {"path": "supabase/docs/guides/database/extensions/pgtap/index.md", "title": "pgTAP: Unit Testing"}
 ---
 

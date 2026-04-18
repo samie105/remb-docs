@@ -10,7 +10,7 @@ content_hash: "0190f89c2621294a2a90e4e3df93ca14788825b28f6b5c21080d749349382a27"
 menu_path: ["Migrate from v10 to v11"]
 section_path: []
 nav_prev: {"path": "trpc/docs/landing-intro/Step3/index.md", "title": "Step3"}
-nav_next: {"path": "trpc/docs/rpc/index.md", "title": "HTTP RPC Specification"}
+nav_next: {"path": "trpc/docs/openapi/index.md", "title": "OpenAPI (alpha)"}
 ---
 
 ## Migrating from v10 to v11[​](#migrating-from-v10-to-v11 "Direct link to Migrating from v10 to v11")

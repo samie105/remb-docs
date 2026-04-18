@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:49:35.643Z"
 content_hash: "72cf9209ea9776a10f0845b342d9fa698bce621e3b24d40387ed571681a283f2"
 menu_path: ["PostgreSQL: Documentation: 18: 27.5. Dynamic Tracing"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/infoschema-routine-privileges.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.41.\u00a0routine_privileges"}
-nav_next: {"path": "postgres/docs/current/textsearch-psql.html/index.md", "title": "PostgreSQL: Documentation: 18: 12.10.\u00a0psql Support"}
+nav_prev: {"path": "postgres/docs/current/domains.html/index.md", "title": "PostgreSQL: Documentation: 18: 8.18.\u00a0Domain Types"}
+nav_next: {"path": "postgres/docs/current/earthdistance.html/index.md", "title": "PostgreSQL: Documentation: 18: F.14.\u00a0earthdistance \u2014 calculate great-circle distances"}
 ---
 
 Name

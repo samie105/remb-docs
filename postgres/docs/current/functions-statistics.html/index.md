@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:46:50.697Z"
 content_hash: "777de9986e994c63c0146e9b41479bfc258e75ea2a3013841536f96aff48a164"
 menu_path: ["PostgreSQL: Documentation: 18: 9.31. Statistics Information Functions"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/btree-gin.html/index.md", "title": "PostgreSQL: Documentation: 18: F.7.\u00a0btree_gin \u2014 GIN operator classes with B-tree behavior"}
-nav_next: {"path": "postgres/docs/current/pgcrypto.html/index.md", "title": "PostgreSQL: Documentation: 18: F.26.\u00a0pgcrypto \u2014 cryptographic functions"}
+nav_prev: {"path": "postgres/docs/current/functions-srf.html/index.md", "title": "PostgreSQL: Documentation: 18: 9.26.\u00a0Set Returning Functions"}
+nav_next: {"path": "postgres/docs/current/functions-string.html/index.md", "title": "PostgreSQL: Documentation: 18: 9.4.\u00a0String Functions and Operators"}
 ---
 
 February 26, 2026: [PostgreSQL 18.3, 17.9, 16.13, 15.17, and 14.22 Released!](/about/news/postgresql-183-179-1613-1517-and-1422-released-3246/)

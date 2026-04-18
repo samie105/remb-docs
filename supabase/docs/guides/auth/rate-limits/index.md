@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:38:45.375Z"
 content_hash: "9ae7d80641178f11ecce350613199a1ff2abb0e9230b31a89deeae2b2f152a0f"
 menu_path: ["Auth","Auth","Security","Security","Rate Limits","Rate Limits"]
 section_path: ["Auth","Auth","Security","Security","Rate Limits","Rate Limits"]
-nav_prev: {"path": "supabase/docs/guides/auth/passwords/index.md", "title": "Password-based Auth"}
-nav_next: {"path": "supabase/docs/guides/auth/phone-login/index.md", "title": "Phone Login"}
+nav_prev: {"path": "supabase/docs/guides/auth/quickstarts/with-expo-react-native-social-auth/index.md", "title": "Build a Social Auth App with Expo React Native"}
+nav_next: {"path": "supabase/docs/guides/auth/redirect-urls/index.md", "title": "Redirect URLs"}
 ---
 
 # 

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:49:33.939Z"
 content_hash: "4d9033f200676d3e42b7518f556517f7e3c7e27305dae2048c99fcf2ce101a95"
 menu_path: ["How to use Prisma ORM's type system"]
 section_path: []
-nav_prev: {"path": "prisma/docs/orm/prisma-client/using-raw-sql/index.md", "title": "Write your own SQL"}
-nav_next: {"path": "prisma/docs/orm/prisma-client/using-raw-sql/raw-queries/index.md", "title": "Raw queries"}
+nav_prev: {"path": "prisma/docs/orm/prisma-client/type-safety/operating-against-partial-structures-of-model-types/index.md", "title": "Operating against partial structures of your model types"}
+nav_next: {"path": "prisma/docs/orm/prisma-client/using-raw-sql/index.md", "title": "Write your own SQL"}
 ---
 
 This guide introduces Prisma ORM's type system and explains how to introspect existing native types in your database, and how to use types when you apply schema changes to your database with Prisma Migrate or `db push`.

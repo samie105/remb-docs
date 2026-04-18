@@ -9,7 +9,7 @@ last_crawled_at: "2026-04-18T16:44:44.889Z"
 content_hash: "41ea391255273df50053b4e5809ba86c77301c8c91214b53f049ffe80d153457"
 menu_path: ["zlib - Node documentation"]
 section_path: []
-nav_prev: {"path": "deno/deno/api/node/vm/index.md", "title": "vm - Node documentation"}
+nav_prev: {"path": "deno/deno/api/node/worker_threads/index.md", "title": "worker_threads - Node documentation"}
 nav_next: {"path": "deno/deno/api/web/index.md", "title": "Web Platform APIs"}
 ---
 

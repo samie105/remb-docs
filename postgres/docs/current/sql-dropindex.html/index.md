@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:50:47.530Z"
 content_hash: "4a75963754b0a269426bfe786d1de786c7957558717c107f44ceef9bed2aa06d"
 menu_path: ["PostgreSQL: Documentation: 18: DROP INDEX"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/contrib-dblink-fetch.html/index.md", "title": "PostgreSQL: Documentation: 18: dblink_fetch"}
-nav_next: {"path": "postgres/docs/current/passwordcheck.html/index.md", "title": "PostgreSQL: Documentation: 18: F.24.\u00a0passwordcheck \u2014 verify password strength"}
+nav_prev: {"path": "postgres/docs/current/sql-dropgroup.html/index.md", "title": "PostgreSQL: Documentation: 18: DROP GROUP"}
+nav_next: {"path": "postgres/docs/current/sql-droplanguage.html/index.md", "title": "PostgreSQL: Documentation: 18: DROP LANGUAGE"}
 ---
 
 DROP INDEX — remove an index

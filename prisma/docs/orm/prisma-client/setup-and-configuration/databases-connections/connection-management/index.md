@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:54:47.701Z"
 content_hash: "9e24158e99278f46b35435a3c989b640595e41744fd91d582435080c1f68c88b"
 menu_path: ["Connection management"]
 section_path: []
-nav_prev: {"path": "prisma/docs/orm/prisma-client/deployment/traditional/deploy-to-sevalla/index.md", "title": "Deploy to Sevalla"}
-nav_next: {"path": "prisma/docs/orm/prisma-client/queries/advanced/query-optimization-performance/index.md", "title": "Query optimization"}
+nav_prev: {"path": "prisma/docs/orm/prisma-client/setup-and-configuration/databases-connections/index.md", "title": "Database connections"}
+nav_next: {"path": "prisma/docs/orm/prisma-client/setup-and-configuration/databases-connections/connection-pool/index.md", "title": "Connection pool"}
 ---
 
 Setup and Configuration

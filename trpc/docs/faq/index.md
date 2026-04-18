@@ -9,7 +9,7 @@ last_crawled_at: "2026-04-18T16:48:29.784Z"
 content_hash: "7c045dc8dabda31d60e3aeaffb4623742cc9ea59d46c66904d78de17da9094ee"
 menu_path: ["FAQ / Troubleshooting"]
 section_path: []
-nav_prev: {"path": "trpc/docs/community/love/index.md", "title": "Testimonials / Love"}
+nav_prev: {"path": "trpc/docs/community/sponsors/index.md", "title": "Sponsors"}
 nav_next: {"path": "trpc/docs/further-reading/index.md", "title": "Further Reading"}
 ---
 

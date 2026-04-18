@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:48:59.525Z"
 content_hash: "c74cd8d554eaf2cb398b81268356e78a46ff9afcfda95c37483d4204728d64ab"
 menu_path: ["PostgreSQL: Documentation: 18: 53.36. pg_user_mappings"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/dblink.html/index.md", "title": "PostgreSQL: Documentation: 18: F.11.\u00a0dblink \u2014 connect to other PostgreSQL databases"}
-nav_next: {"path": "postgres/docs/current/infoschema-routine-column-usage.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.40.\u00a0routine_column_usage"}
+nav_prev: {"path": "postgres/docs/current/view-pg-timezone-names.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.34.\u00a0pg_timezone_names"}
+nav_next: {"path": "postgres/docs/current/view-pg-user.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.35.\u00a0pg_user"}
 ---
 
 Development Versions: [devel](https://www.postgresql.org/docs/devel/view-pg-user-mappings.html "PostgreSQL devel - 53.36. pg_user_mappings")

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:51:32.842Z"
 content_hash: "c0f5fde34767afc65f05072b84515bf459e874660046184259618ad1aed2404c"
 menu_path: ["PostgreSQL: Documentation: 18: J.2. Tool Sets"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/view-pg-config.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.6.\u00a0pg_config"}
-nav_next: {"path": "postgres/docs/current/catalog-pg-publication-rel.html/index.md", "title": "PostgreSQL: Documentation: 18: 52.42.\u00a0pg_publication_rel"}
+nav_prev: {"path": "postgres/docs/current/docguide-style.html/index.md", "title": "PostgreSQL: Documentation: 18: J.6.\u00a0Style Guide"}
+nav_next: {"path": "postgres/docs/current/domains.html/index.md", "title": "PostgreSQL: Documentation: 18: 8.18.\u00a0Domain Types"}
 ---
 
 The following tools are used to process the documentation. Some might be optional, as noted.

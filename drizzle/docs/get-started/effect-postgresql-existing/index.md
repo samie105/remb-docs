@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:53:54.795Z"
 content_hash: "19b1474d916f81b12ae422db7c63303f9908765f9f8175486bb8850fac41d444"
 menu_path: ["Get Started with Drizzle and Effect PostgreSQL in existing project"]
 section_path: []
-nav_prev: {"path": "drizzle/docs/get-started/do-existing/index.md", "title": "Get Started with Drizzle and SQLite Durable Objects in existing project"}
-nav_next: {"path": "drizzle/docs/get-started/expo-existing/index.md", "title": "Get Started with Drizzle and Expo in existing project"}
+nav_prev: {"path": "drizzle/docs/get-started/do-new/index.md", "title": "Get Started with Drizzle and SQLite Durable Objects"}
+nav_next: {"path": "drizzle/docs/get-started/effect-postgresql-new/index.md", "title": "Get Started with Drizzle and Effect PostgreSQL"}
 ---
 
 ## Get Started with Drizzle and Effect PostgreSQL in existing project

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:54:58.000Z"
 content_hash: "fd14e1a8be1538abb79dbc14d038207ef5fb436ae2fe83a63ac8af49024e39e1"
 menu_path: ["Connection pool"]
 section_path: []
-nav_prev: {"path": "prisma/docs/orm/prisma-client/queries/advanced/query-optimization-performance/index.md", "title": "Query optimization"}
-nav_next: {"path": "prisma/docs/orm/prisma-client/setup-and-configuration/databases-connections/index.md", "title": "Database connections"}
+nav_prev: {"path": "prisma/docs/orm/prisma-client/setup-and-configuration/databases-connections/connection-management/index.md", "title": "Connection management"}
+nav_next: {"path": "prisma/docs/orm/prisma-client/setup-and-configuration/databases-connections/pgbouncer/index.md", "title": "Configure Prisma Client with PgBouncer"}
 ---
 
 Setup and Configuration

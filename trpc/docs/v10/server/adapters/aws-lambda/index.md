@@ -9,7 +9,7 @@ last_crawled_at: "2026-04-18T16:37:29.256Z"
 content_hash: "a5b7ef3ba361f328d890a327994182cc2def3bc1a06f34b1ad5bfb2a5f5432b2"
 menu_path: ["AWS Lambda + API Gateway Adapter"]
 section_path: []
-nav_prev: {"path": "trpc/docs/v10/quickstart/index.md", "title": "Quickstart"}
+nav_prev: {"path": "trpc/docs/v10/server/adapters/index.md", "title": "Adapters"}
 nav_next: {"path": "trpc/docs/v10/server/adapters/express/index.md", "title": "Express Adapter"}
 ---
 

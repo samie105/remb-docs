@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:03:03.405Z"
 content_hash: "e49ba303a8225031ac40f37cdaec27a01c02ea8bf9eed9dbc66e3963b00c7bb2"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Cloud","→","Redis Cloud","→\n      \n        Security","→","Security","→\n      \n        Access control","→","Access control","→\n      \n        Data access control","→","Data access control","→\n      \n        Default user","→","Default user"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Cloud","→","Redis Cloud","→\n      \n        Security","→","Security","→\n      \n        Access control","→","Access control","→\n      \n        Data access control","→","Data access control","→\n      \n        Default user","→","Default user"]
-nav_prev: {"path": "redis/docs/latest/operate/oss_and_stack/stack-with-enterprise/deprecated-features/triggers-and-functions/debugging/index.md", "title": "Debugging"}
-nav_next: {"path": "redis/docs/latest/integrate/google-adk/examples/index.md", "title": "adk-redis examples"}
+nav_prev: {"path": "redis/docs/latest/operate/rc/security/access-control/access-management/index.md", "title": "Access management"}
+nav_next: {"path": "redis/docs/latest/operate/rc/subscriptions/bring-your-own-cloud/cloud-account-settings/index.md", "title": "Create and edit Cloud accounts"}
 ---
 
 # Default user

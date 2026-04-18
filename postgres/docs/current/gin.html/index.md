@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:51:24.124Z"
 content_hash: "9b290cb8c9a661b68c8c645312fb3ae1a7c18376281f2e3d2a4ddba9bf90e80d"
 menu_path: ["PostgreSQL: Documentation: 18: 65.4. GIN Indexes"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/sql-values.html/index.md", "title": "PostgreSQL: Documentation: 18: VALUES"}
-nav_next: {"path": "postgres/docs/current/datetime-julian-dates.html/index.md", "title": "PostgreSQL: Documentation: 18: B.7.\u00a0Julian Dates"}
+nav_prev: {"path": "postgres/docs/current/geqo-intro.html/index.md", "title": "PostgreSQL: Documentation: 18: 61.1.\u00a0Query Handling as a Complex Optimization Problem"}
+nav_next: {"path": "postgres/docs/current/gist.html/index.md", "title": "PostgreSQL: Documentation: 18: 65.2.\u00a0GiST Indexes"}
 ---
 
 ### 65.4.1. Introduction [#](#GIN-INTRO)

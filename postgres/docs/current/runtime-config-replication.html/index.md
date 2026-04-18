@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:35:36.292Z"
 content_hash: "23a7e8936087a44b32b357afd0f63ecb8851d7f575b2db60ecceaf1ea18a7074"
 menu_path: ["PostgreSQL: Documentation: 18: 19.6. Replication"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/plpgsql-expressions.html/index.md", "title": "PostgreSQL: Documentation: 18: 41.4.\u00a0Expressions"}
-nav_next: {"path": "postgres/docs/current/view-pg-replication-slots.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.20.\u00a0pg_replication_slots"}
+nav_prev: {"path": "postgres/docs/current/runtime-config-query.html/index.md", "title": "PostgreSQL: Documentation: 18: 19.7.\u00a0Query Planning"}
+nav_next: {"path": "postgres/docs/current/runtime-config-resource.html/index.md", "title": "PostgreSQL: Documentation: 18: 19.4.\u00a0Resource Consumption"}
 ---
 
 ### 19.6.3. Standby Servers [#](#RUNTIME-CONFIG-REPLICATION-STANDBY)

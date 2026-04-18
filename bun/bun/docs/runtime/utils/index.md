@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:02:07.205Z"
 content_hash: "2116490da3a84ed3747669fb25d05d383d54c97a2f60043e888b16ae931a6c94"
 menu_path: ["Utils"]
 section_path: []
-nav_prev: {"path": "bun/bun/docs/runtime/web-apis/index.md", "title": "Web APIs"}
-nav_next: {"path": "bun/bun/docs/runtime/workers/index.md", "title": "Workers"}
+nav_prev: {"path": "bun/bun/docs/runtime/transpiler/index.md", "title": "Transpiler"}
+nav_next: {"path": "bun/bun/docs/runtime/watch-mode/index.md", "title": "Watch Mode"}
 ---
 
 ## `Bun.version`

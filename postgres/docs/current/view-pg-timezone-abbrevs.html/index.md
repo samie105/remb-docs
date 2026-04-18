@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:53:31.510Z"
 content_hash: "3b2336298899d5b2f9a5b08942af1a66390f17dac0c31bbd4857ab5b7fbad471"
 menu_path: ["PostgreSQL: Documentation: 18: 53.33. pg_timezone_abbrevs"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/infoschema-sql-features.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.48.\u00a0sql_features"}
-nav_next: {"path": "postgres/docs/current/sql-droplanguage.html/index.md", "title": "PostgreSQL: Documentation: 18: DROP LANGUAGE"}
+nav_prev: {"path": "postgres/docs/current/view-pg-rules.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.22.\u00a0pg_rules"}
+nav_next: {"path": "postgres/docs/current/view-pg-timezone-names.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.34.\u00a0pg_timezone_names"}
 ---
 
 Development Versions: [devel](https://www.postgresql.org/docs/devel/view-pg-timezone-abbrevs.html "PostgreSQL devel - 53.33. pg_timezone_abbrevs")

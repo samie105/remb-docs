@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:38:24.686Z"
 content_hash: "2f2f1507e849995d11b84896bdc81c7924120f093239775b7ae7935c37c0542f"
 menu_path: ["path - Node documentation"]
 section_path: []
-nav_prev: {"path": "deno/deno/api/node/net/index.md", "title": "net - Node documentation"}
-nav_next: {"path": "deno/deno/api/node/os/index.md", "title": "os - Node documentation"}
+nav_prev: {"path": "deno/deno/api/node/os/index.md", "title": "os - Node documentation"}
+nav_next: {"path": "deno/deno/api/node/perf_hooks/index.md", "title": "perf_hooks - Node documentation"}
 ---
 
 ### Usage in Deno

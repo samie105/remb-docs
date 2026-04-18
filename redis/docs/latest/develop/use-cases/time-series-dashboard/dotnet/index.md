@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:01:34.801Z"
 content_hash: "ac554d220ed11d054c59f52818c4e23a77a38c19161a13f3e23a69d22b073e12"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Rolling sensor graph demo with Redis","→","Rolling sensor graph demo with Redis","→\n      \n        Rolling sensor graph demo with Redis and .NET","→","Rolling sensor graph demo with Redis and .NET"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Rolling sensor graph demo with Redis","→","Rolling sensor graph demo with Redis","→\n      \n        Rolling sensor graph demo with Redis and .NET","→","Rolling sensor graph demo with Redis and .NET"]
-nav_prev: {"path": "redis/docs/latest/develop/tools/insight/release-notes/v2.10.0/index.md", "title": "RedisInsight v2.10.0, September 2022"}
-nav_next: {"path": "redis/docs/latest/develop/use-cases/rate-limiter/dotnet/index.md", "title": "Token bucket rate limiter with Redis and .NET"}
+nav_prev: {"path": "redis/docs/latest/develop/use-cases/time-series-dashboard/index.md", "title": "Rolling sensor graph demo with Redis"}
+nav_next: {"path": "redis/docs/latest/develop/use-cases/time-series-dashboard/go/index.md", "title": "Rolling sensor graph demo with Go"}
 ---
 
 # Rolling sensor graph demo with Redis and .NET

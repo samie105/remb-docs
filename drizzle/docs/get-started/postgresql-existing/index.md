@@ -9,7 +9,7 @@ last_crawled_at: "2026-04-18T16:58:55.862Z"
 content_hash: "eed8692f83b493cbae90a57727e29cac28106ba5153cb55262227f5620926b0f"
 menu_path: ["Get Started with Drizzle and PostgreSQL in existing project"]
 section_path: []
-nav_prev: {"path": "drizzle/docs/get-started/planetscale-postgres-existing/index.md", "title": "Get Started with Drizzle and PlanetScale Postgres in existing project"}
+nav_prev: {"path": "drizzle/docs/get-started/planetscale-postgres-new/index.md", "title": "Get Started with Drizzle and PlanetScale Postgres"}
 nav_next: {"path": "drizzle/docs/get-started/postgresql-new/index.md", "title": "Get Started with Drizzle and PostgreSQL"}
 ---
 

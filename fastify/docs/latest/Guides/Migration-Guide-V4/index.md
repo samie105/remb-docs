@@ -10,7 +10,7 @@ content_hash: "d69e261ebd60d137c94a9e7c545fdf502dec5dd8fb9b24c4323c21ba3a7d1a48"
 menu_path: ["V4 Migration Guide"]
 section_path: []
 nav_prev: {"path": "fastify/docs/latest/Guides/Migration-Guide-V3/index.md", "title": "V3 Migration Guide"}
-nav_next: {"path": "fastify/docs/latest/Guides/Plugins-Guide/index.md", "title": "The hitchhiker's guide to plugins"}
+nav_next: {"path": "fastify/docs/latest/Guides/Migration-Guide-V5/index.md", "title": "V5 Migration Guide"}
 ---
 
 Version: latest (v5.8.x)

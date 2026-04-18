@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:51:17.627Z"
 content_hash: "ab000522707db9a5eceb33bf9c1ae1b4c07dcf34e7f4b2e6a16d1b620cb23609"
 menu_path: ["PostgreSQL: Documentation: 18: REFRESH MATERIALIZED VIEW"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/role-membership.html/index.md", "title": "PostgreSQL: Documentation: 18: 21.3.\u00a0Role Membership"}
-nav_next: {"path": "postgres/docs/current/index-locking.html/index.md", "title": "PostgreSQL: Documentation: 18: 63.4.\u00a0Index Locking Considerations"}
+nav_prev: {"path": "postgres/docs/current/sql-reassign-owned.html/index.md", "title": "PostgreSQL: Documentation: 18: REASSIGN OWNED"}
+nav_next: {"path": "postgres/docs/current/sql-reindex.html/index.md", "title": "PostgreSQL: Documentation: 18: REINDEX"}
 ---
 
 REFRESH MATERIALIZED VIEW — replace the contents of a materialized view

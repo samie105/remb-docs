@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:00:10.201Z"
 content_hash: "0e22e4a5d910e284ca0d95eccca86dc68911b806ef2265fb67378923f4dd32b2"
 menu_path: ["Platform","Platform","More","More","More","Manage your usage","Manage your usage","Monthly Active SSO Users","Monthly Active SSO Users"]
 section_path: ["Platform","Platform","More","More","More","Manage your usage","Manage your usage","Monthly Active SSO Users","Monthly Active SSO Users"]
-nav_prev: {"path": "supabase/docs/guides/platform/manage-your-usage/ipv4/index.md", "title": "Manage IPv4 usage"}
-nav_next: {"path": "supabase/docs/guides/platform/manage-your-usage/monthly-active-users/index.md", "title": "Manage Monthly Active Users usage"}
+nav_prev: {"path": "supabase/docs/guides/platform/manage-your-usage/monthly-active-users/index.md", "title": "Manage Monthly Active Users usage"}
+nav_next: {"path": "supabase/docs/guides/platform/manage-your-usage/point-in-time-recovery/index.md", "title": "Manage Point-in-Time Recovery usage"}
 ---
 
 # 

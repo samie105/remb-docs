@@ -10,7 +10,7 @@ content_hash: "e22a58dc63ad6fc7e415c71bd95d9ab27113acebe64ef295475d12ab1bf83d27"
 menu_path: ["Edge Functions","Edge Functions","Development","Development","Error Handling","Error Handling"]
 section_path: ["Edge Functions","Edge Functions","Development","Development","Error Handling","Error Handling"]
 nav_prev: {"path": "supabase/docs/guides/functions/ephemeral-storage/index.md", "title": "File Storage"}
-nav_next: {"path": "supabase/docs/guides/functions/function-configuration/index.md", "title": "Function Configuration"}
+nav_next: {"path": "supabase/docs/guides/functions/examples/amazon-bedrock-image-generator/index.md", "title": "Generate Images with Amazon Bedrock"}
 ---
 
 # 

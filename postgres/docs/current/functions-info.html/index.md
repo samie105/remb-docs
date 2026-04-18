@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:48:33.841Z"
 content_hash: "d7251d258ae72e633b08cc963ea3abb3b91a6d94273ae893a5fdede9cc988ae4"
 menu_path: ["PostgreSQL: Documentation: 18: 9.27. System Information Functions and Operators"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/view-pg-matviews.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.14.\u00a0pg_matviews"}
-nav_next: {"path": "postgres/docs/current/index-functions.html/index.md", "title": "PostgreSQL: Documentation: 18: 63.2.\u00a0Index Access Method Functions"}
+nav_prev: {"path": "postgres/docs/current/functions-geometry.html/index.md", "title": "PostgreSQL: Documentation: 18: 9.11.\u00a0Geometric Functions and Operators"}
+nav_next: {"path": "postgres/docs/current/functions-json.html/index.md", "title": "PostgreSQL: Documentation: 18: 9.16.\u00a0JSON Functions and Operators"}
 ---
 
 Function

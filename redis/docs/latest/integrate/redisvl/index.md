@@ -9,7 +9,7 @@ last_crawled_at: "2026-04-18T16:44:35.699Z"
 content_hash: "25eb06d42e1398827c8f321ee1290af81cab31b90bc0d04cfc0f4ffbdec428f1"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        RedisVL","→","RedisVL"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        RedisVL","→","RedisVL"]
-nav_prev: {"path": "redis/docs/latest/develop/ai/redisvl/index.md", "title": "RedisVL"}
+nav_prev: {"path": "redis/docs/latest/integrate/redisom-for-python/index.md", "title": "RedisOM for Python"}
 nav_next: {"path": "redis/docs/latest/integrate/riot/index.md", "title": "RIOT-X"}
 ---
 

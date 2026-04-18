@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:32:49.060Z"
 content_hash: "b44d684ff878f82f034cb7305d2ad4ca9720cb464deaf60c430456601be9e46d"
 menu_path: ["CSS"]
 section_path: []
-nav_prev: {"path": "bun/bun/docs/index.md", "title": "Welcome to Bun"}
-nav_next: {"path": "bun/bun/docs/bundler/executables/index.md", "title": "Single-file executable"}
+nav_prev: {"path": "bun/bun/docs/bundler/bytecode/index.md", "title": "Bytecode Caching"}
+nav_next: {"path": "bun/bun/docs/bundler/esbuild/index.md", "title": "esbuild"}
 ---
 
 Bun’s bundler has built-in support for CSS with the following features:

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:53:34.915Z"
 content_hash: "dc3c09b9459e48d6eb5a9f1289a090f67fd749c3053037bf911e30402ffdc5b2"
 menu_path: ["Auth","Auth","OAuth 2.1 Server","OAuth 2.1 Server","OAuth Flows","OAuth Flows"]
 section_path: ["Auth","Auth","OAuth 2.1 Server","OAuth 2.1 Server","OAuth Flows","OAuth Flows"]
-nav_prev: {"path": "supabase/docs/guides/auth/quickstarts/astrojs/index.md", "title": "Use Supabase Auth with Astro"}
-nav_next: {"path": "supabase/docs/guides/auth/quickstarts/nextjs/index.md", "title": "Use Supabase Auth with Next.js"}
+nav_prev: {"path": "supabase/docs/guides/auth/oauth-server/mcp-authentication/index.md", "title": "Model Context Protocol (MCP) Authentication"}
+nav_next: {"path": "supabase/docs/guides/auth/oauth-server/token-security/index.md", "title": "Token Security and Row Level Security"}
 ---
 
 # 

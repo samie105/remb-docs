@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:02:16.194Z"
 content_hash: "b59c6a0047439a0e59f11de1a8c9a8f626a0d547ba496be7e0c2027e6288d389"
 menu_path: ["Code coverage"]
 section_path: []
-nav_prev: {"path": "bun/bun/docs/runtime/yaml/index.md", "title": "YAML"}
-nav_next: {"path": "bun/bun/docs/test/dates-times/index.md", "title": "Dates and times"}
+nav_prev: {"path": "bun/bun/docs/test/index.md", "title": "Test runner"}
+nav_next: {"path": "bun/bun/docs/test/configuration/index.md", "title": "Test configuration"}
 ---
 
 # Always enable coverage

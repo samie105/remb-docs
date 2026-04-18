@@ -9,7 +9,7 @@ last_crawled_at: "2026-04-18T16:40:16.513Z"
 content_hash: "5d5c87278574f2046b1856fcb23cfe4b757dca56e9ed31cdf6ed36822b5ba720"
 menu_path: ["Define Routers"]
 section_path: []
-nav_prev: {"path": "trpc/docs/v10/server/middlewares/index.md", "title": "Middlewares"}
+nav_prev: {"path": "trpc/docs/v10/server/procedures/index.md", "title": "Define Procedures"}
 nav_next: {"path": "trpc/docs/v10/server/server-side-calls/index.md", "title": "Server Side Calls"}
 ---
 

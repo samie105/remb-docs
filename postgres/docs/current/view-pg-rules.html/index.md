@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:33:16.310Z"
 content_hash: "1d9fe36b01d17a415915ed23829aa610691afbd5a6808c3c88deae853c4b2d8f"
 menu_path: ["PostgreSQL: Documentation: 18: 53.22. pg_rules"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/sql-dropview.html/index.md", "title": "PostgreSQL: Documentation: 18: DROP VIEW"}
-nav_next: {"path": "postgres/docs/current/sql-droptsparser.html/index.md", "title": "PostgreSQL: Documentation: 18: DROP TEXT SEARCH PARSER"}
+nav_prev: {"path": "postgres/docs/current/view-pg-roles.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.21.\u00a0pg_roles"}
+nav_next: {"path": "postgres/docs/current/view-pg-timezone-abbrevs.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.33.\u00a0pg_timezone_abbrevs"}
 ---
 
 The view `pg_rules` provides access to useful information about query rewrite rules.

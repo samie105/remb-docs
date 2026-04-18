@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:37:52.408Z"
 content_hash: "9ac34bc5726709ef725ad1dd472d4aff5415d0100ee8984b8ed7e9c9cec08919"
 menu_path: ["Vite Plugin Registry"]
 section_path: []
-nav_prev: {"path": "vite/plugins/index.md", "title": "Plugins \u200b"}
-nav_next: {"path": "vite/guide/index.md", "title": "Plugin Registry Guide \u200b"}
+nav_prev: {"path": "vite/guide/patches/index.md", "title": "Registry Patches \u200b"}
+nav_next: {"path": "vite/config/build-options/index.md", "title": "Build Options \u200b"}
 ---
 
 The default Vite plugin for React projects

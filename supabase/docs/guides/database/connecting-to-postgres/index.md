@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:39:59.567Z"
 content_hash: "d795ec8959d60c40e492737ad86d0cb7bc1cb5af4a4b37d91cd63d9c85b22d08"
 menu_path: ["Database","Database","Fundamentals","Fundamentals","Connecting to your database","Connecting to your database"]
 section_path: ["Database","Database","Fundamentals","Fundamentals","Connecting to your database","Connecting to your database"]
-nav_prev: {"path": "supabase/docs/guides/database/arrays/index.md", "title": "Working With Arrays"}
-nav_next: {"path": "supabase/docs/guides/database/connection-management/index.md", "title": "Connection management"}
+nav_prev: {"path": "supabase/docs/guides/database/beekeeper-studio/index.md", "title": "Connecting with Beekeeper Studio"}
+nav_next: {"path": "supabase/docs/guides/database/connecting-to-postgres/serverless-drivers/index.md", "title": "Connect to your database"}
 ---
 
 # 

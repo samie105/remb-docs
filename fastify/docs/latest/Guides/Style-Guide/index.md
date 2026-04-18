@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:39:17.886Z"
 content_hash: "c86f61585ffdef3bb07e54e0a5516a3cedbb4536c96e277847ecafd9482e666a"
 menu_path: ["Fastify Style Guide"]
 section_path: []
-nav_prev: {"path": "fastify/docs/latest/Guides/Prototype-Poisoning/index.md", "title": "Prototype-Poisoning"}
-nav_next: {"path": "fastify/docs/latest/Guides/Serverless/index.md", "title": "Serverless"}
+nav_prev: {"path": "fastify/docs/latest/Guides/Serverless/index.md", "title": "Serverless"}
+nav_next: {"path": "fastify/docs/latest/Guides/Testing/index.md", "title": "Testing"}
 ---
 
 Version: latest (v5.8.x)

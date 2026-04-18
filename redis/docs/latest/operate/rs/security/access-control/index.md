@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:15:28.955Z"
 content_hash: "efd4b7e201870ee168c3ed38d0f2cf85e00fe585fcbed2e766c8c1df5df03b21"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Software","→","Redis Software","→\n      \n        Security","→","Security","→\n      \n        Access control","→","Access control"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Software","→","Redis Software","→\n      \n        Security","→","Security","→\n      \n        Access control","→","Access control"]
-nav_prev: {"path": "redis/docs/latest/develop/tools/insight/release-notes/v2.2.0/index.md", "title": "RedisInsight v2.2.0, May 2022"}
-nav_next: {"path": "redis/docs/latest/integrate/redis-data-integration/reference/data-transformation/add_field/index.md", "title": "add_field"}
+nav_prev: {"path": "redis/docs/latest/operate/rs/monitoring/get-started/index.md", "title": "Get started with monitoring Redis Software"}
+nav_next: {"path": "redis/docs/latest/operate/rs/security/recommended-security-practices/index.md", "title": "Recommended security practices"}
 ---
 
 # Access control

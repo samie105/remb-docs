@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:44:17.351Z"
 content_hash: "9a6ae3cbc2239f1cc634e284c41227581703a2e2809e382d2693a96301810ca7"
 menu_path: ["TypeScript performance"]
 section_path: []
-nav_prev: {"path": "prisma/docs/orm/more/troubleshooting/nuxt/index.md", "title": "Nuxt"}
-nav_next: {"path": "prisma/docs/orm/more/troubleshooting/raw-sql-comparisons/index.md", "title": "Raw SQL comparisons"}
+nav_prev: {"path": "prisma/docs/orm/more/troubleshooting/raw-sql-comparisons/index.md", "title": "Raw SQL comparisons"}
+nav_next: {"path": "prisma/docs/orm/prisma-client/client-extensions/index.md", "title": "What are Client Extensions"}
 ---
 
 Troubleshooting

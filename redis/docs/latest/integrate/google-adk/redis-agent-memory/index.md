@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:43:10.869Z"
 content_hash: "32631050f8f25855229460958738d7e6dc06207b7e6d7f89f861c6eee23b883b"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Redis with Google Agent Development Kit (ADK)","→","Redis with Google Agent Development Kit (ADK)","→\n      \n        Redis Agent Memory","→","Redis Agent Memory"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Redis with Google Agent Development Kit (ADK)","→","Redis with Google Agent Development Kit (ADK)","→\n      \n        Redis Agent Memory","→","Redis Agent Memory"]
-nav_prev: {"path": "redis/docs/latest/commands/redis-8-4-commands/index.md", "title": "Redis 8.4 Commands Reference"}
-nav_next: {"path": "redis/docs/latest/integrate/redis-data-integration/index.md", "title": "Redis Data Integration"}
+nav_prev: {"path": "redis/docs/latest/integrate/google-adk/integration-patterns/index.md", "title": "Memory integration patterns"}
+nav_next: {"path": "redis/docs/latest/integrate/google-adk/search-tools/index.md", "title": "Redis search tools"}
 ---
 
 # Redis Agent Memory

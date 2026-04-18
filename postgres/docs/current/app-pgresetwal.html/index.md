@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:38:01.450Z"
 content_hash: "b274d80d28ca63c0f169953cbb13aba2e4d6a0bd357c0cd0a72ff5d4cfaedd44"
 menu_path: ["PostgreSQL: Documentation: 18: pg_resetwal"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/ddl-priv.html/index.md", "title": "PostgreSQL: Documentation: 18: 5.8.\u00a0Privileges"}
-nav_next: {"path": "postgres/docs/current/tutorial-createdb.html/index.md", "title": "PostgreSQL: Documentation: 18: 1.3.\u00a0Creating a Database"}
+nav_prev: {"path": "postgres/docs/current/app-pgrecvlogical.html/index.md", "title": "PostgreSQL: Documentation: 18: pg_recvlogical"}
+nav_next: {"path": "postgres/docs/current/app-pgresetxlog.html/index.md", "title": "PostgreSQL: Documentation: 18: O.4.\u00a0pg_resetxlog renamed to pg_resetwal"}
 ---
 
 pg\_resetwal — reset the write-ahead log and other control information of a PostgreSQL database cluster

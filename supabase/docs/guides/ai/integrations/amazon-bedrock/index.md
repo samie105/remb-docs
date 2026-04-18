@@ -9,7 +9,7 @@ last_crawled_at: "2026-04-18T16:52:00.031Z"
 content_hash: "fca032a7fde2f495c97ed44731f4517f77d5a671d5cc447ca2ae12d99f6f5f0e"
 menu_path: ["AI & Vectors","AI & Vectors","Third-Party Tools","Third-Party Tools","Amazon Bedrock","Amazon Bedrock"]
 section_path: ["AI & Vectors","AI & Vectors","Third-Party Tools","Third-Party Tools","Amazon Bedrock","Amazon Bedrock"]
-nav_prev: {"path": "supabase/docs/guides/ai/examples/openai/index.md", "title": "Generating OpenAI GPT3 completions"}
+nav_prev: {"path": "supabase/docs/guides/ai/hybrid-search/index.md", "title": "Hybrid search"}
 nav_next: {"path": "supabase/docs/guides/ai/integrations/llamaindex/index.md", "title": "Learn how to integrate Supabase with LlamaIndex, a data framework for your LLM applications."}
 ---
 

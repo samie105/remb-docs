@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:41:15.806Z"
 content_hash: "5aedafcf421e182c1511621abb526ec44ef256712f7d8282f548e7c04fb330ff"
 menu_path: ["PostgreSQL: Documentation: 18: 5.11. Inheritance"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/infoschema-foreign-tables.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.31.\u00a0foreign_tables"}
-nav_next: {"path": "postgres/docs/current/wal-async-commit.html/index.md", "title": "PostgreSQL: Documentation: 18: 28.4.\u00a0Asynchronous Commit"}
+nav_prev: {"path": "postgres/docs/current/ddl-identity-columns.html/index.md", "title": "PostgreSQL: Documentation: 18: 5.3.\u00a0Identity Columns"}
+nav_next: {"path": "postgres/docs/current/ddl-others.html/index.md", "title": "PostgreSQL: Documentation: 18: 5.14.\u00a0Other Database Objects"}
 ---
 
 PostgreSQL implements table inheritance, which can be a useful tool for database designers. (SQL:1999 and later define a type inheritance feature, which differs in many respects from the features described here.)

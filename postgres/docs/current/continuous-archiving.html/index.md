@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:37:07.373Z"
 content_hash: "3222174d048e02cdb4608f5bfc1336ec93f9c827490bd17a325893a004524b00"
 menu_path: ["PostgreSQL: Documentation: 18: 25.3. Continuous Archiving and Point-in-Time Recovery (PITR)"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/ddl-rowsecurity.html/index.md", "title": "PostgreSQL: Documentation: 18: 5.9.\u00a0Row Security Policies"}
-nav_next: {"path": "postgres/docs/current/sql-merge.html/index.md", "title": "PostgreSQL: Documentation: 18: MERGE"}
+nav_prev: {"path": "postgres/docs/current/connect-estab.html/index.md", "title": "PostgreSQL: Documentation: 18: 51.2.\u00a0How Connections Are Established"}
+nav_next: {"path": "postgres/docs/current/contrib-dblink-connect-u.html/index.md", "title": "PostgreSQL: Documentation: 18: dblink_connect_u"}
 ---
 
 At all times, PostgreSQL maintains a _write ahead log_ (WAL) in the `pg_wal/` subdirectory of the cluster's data directory. The log records every change made to the database's data files. This log exists primarily for crash-safety purposes: if the system crashes, the database can be restored to consistency by “replaying” the log entries made since the last checkpoint. However, the existence of the log makes it possible to use a third strategy for backing up databases: we can combine a file-system-level backup with backup of the WAL files. If recovery is needed, we restore the file system backup and then replay from the backed-up WAL files to bring the system to a current state. This approach is more complex to administer than either of the previous approaches, but it has some significant benefits:

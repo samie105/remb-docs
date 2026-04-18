@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:11:59.228Z"
 content_hash: "e37d9999d1fd504e27bd20543d115f20ce56ab99caa4fda3baac2771c2eab297"
 menu_path: ["Web Platform APIs"]
 section_path: []
-nav_prev: {"path": "deno/deno/api/deno/all_symbols/index.md", "title": "All Symbols - Deno documentation"}
-nav_next: {"path": "deno/deno/api/web/cache/index.md", "title": "Cache - Web documentation"}
+nav_prev: {"path": "deno/deno/api/node/zlib/index.md", "title": "zlib - Node documentation"}
+nav_next: {"path": "deno/deno/api/web/all_symbols/index.md", "title": "All Symbols - Web documentation"}
 ---
 
 On this page

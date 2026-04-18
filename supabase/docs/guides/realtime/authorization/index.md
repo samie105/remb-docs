@@ -10,7 +10,7 @@ content_hash: "92a6c212337fd60505c41b205eed578726b5db2a2ff7d501c79f612172f305f7"
 menu_path: ["Realtime","Realtime","Security","Security","Authorization","Authorization"]
 section_path: ["Realtime","Realtime","Security","Security","Authorization","Authorization"]
 nav_prev: {"path": "supabase/docs/guides/realtime/architecture/index.md", "title": "Realtime Architecture"}
-nav_next: {"path": "supabase/docs/guides/realtime/broadcast/index.md", "title": "Broadcast"}
+nav_next: {"path": "supabase/docs/guides/realtime/benchmarks/index.md", "title": "Benchmarks"}
 ---
 
 # 

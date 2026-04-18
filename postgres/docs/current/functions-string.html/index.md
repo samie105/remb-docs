@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:36:44.216Z"
 content_hash: "524aad3d43ca18d3d667be8fe7c9123d37eeca2fc6a9e4b3caefb1df2c265d5b"
 menu_path: ["PostgreSQL: Documentation: 18: 9.4. String Functions and Operators"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/app-pgrecvlogical.html/index.md", "title": "PostgreSQL: Documentation: 18: pg_recvlogical"}
-nav_next: {"path": "postgres/docs/current/sql-lock.html/index.md", "title": "PostgreSQL: Documentation: 18: LOCK"}
+nav_prev: {"path": "postgres/docs/current/functions-statistics.html/index.md", "title": "PostgreSQL: Documentation: 18: 9.31.\u00a0Statistics Information Functions"}
+nav_next: {"path": "postgres/docs/current/functions-subquery.html/index.md", "title": "PostgreSQL: Documentation: 18: 9.24.\u00a0Subquery Expressions"}
 ---
 
 `text` `^@` `text` → `boolean`

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:55:49.112Z"
 content_hash: "96e98037d8699f54eae4d6b9d85d0d075b1fd1a0419485f7623d596993090502"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Redis Data Integration","→","Redis Data Integration","→\n      \n        Data pipelines","→","Data pipelines","→\n      \n        Pipeline configuration file","→","Pipeline configuration file"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Redis Data Integration","→","Redis Data Integration","→\n      \n        Data pipelines","→","Data pipelines","→\n      \n        Pipeline configuration file","→","Pipeline configuration file"]
-nav_prev: {"path": "redis/docs/latest/integrate/n8n-vector-store/index.md", "title": "n8n Redis vector store"}
-nav_next: {"path": "redis/docs/latest/develop/data-types/json/path/index.md", "title": "Path"}
+nav_prev: {"path": "redis/docs/latest/integrate/redis-data-integration/index.md", "title": "Redis Data Integration"}
+nav_next: {"path": "redis/docs/latest/integrate/redis-data-integration/data-pipelines/prepare-dbs/index.md", "title": "Prepare source databases"}
 ---
 
 # Pipeline configuration file

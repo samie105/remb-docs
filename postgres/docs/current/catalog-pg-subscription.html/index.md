@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:50:11.231Z"
 content_hash: "0ffd3de565caf490e7b7134e46ed905e487122b863209df62a90978eb174d64e"
 menu_path: ["PostgreSQL: Documentation: 18: 52.54. pg_subscription"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/view-pg-ident-file-mappings.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.11.\u00a0pg_ident_file_mappings"}
-nav_next: {"path": "postgres/docs/current/sql-do.html/index.md", "title": "PostgreSQL: Documentation: 18: DO"}
+nav_prev: {"path": "postgres/docs/current/catalog-pg-subscription-rel.html/index.md", "title": "PostgreSQL: Documentation: 18: 52.55.\u00a0pg_subscription_rel"}
+nav_next: {"path": "postgres/docs/current/catalog-pg-tablespace.html/index.md", "title": "PostgreSQL: Documentation: 18: 52.56.\u00a0pg_tablespace"}
 ---
 
 The catalog `pg_subscription` contains all existing logical replication subscriptions. For more information about logical replication see [Chapter 29](https://www.postgresql.org/docs/current/logical-replication.html "Chapter 29. Logical Replication").

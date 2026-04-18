@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:38:59.117Z"
 content_hash: "698e70a995f36d79cbbcdef6c59ac9494fdb71188323029c73c774152b32a761"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Connect with Redis client API libraries","→","Connect with Redis client API libraries","→\n      \n        hiredis guide (C)","→","hiredis guide (C)","→\n      \n        Connect","→","Connect"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Connect with Redis client API libraries","→","Connect with Redis client API libraries","→\n      \n        hiredis guide (C)","→","hiredis guide (C)","→\n      \n        Connect","→","Connect"]
-nav_prev: {"path": "redis/docs/latest/develop/reference/modules/modules-api-ref/index.md", "title": "Modules API reference"}
-nav_next: {"path": "redis/docs/latest/operate/oss_and_stack/management/optimization/cpu-profiling/index.md", "title": "Redis CPU profiling"}
+nav_prev: {"path": "redis/docs/latest/develop/clients/go/index.md", "title": "go-redis guide (Go)"}
+nav_next: {"path": "redis/docs/latest/develop/clients/hiredis/issue-commands/index.md", "title": "Issue commands"}
 ---
 
 # Connect

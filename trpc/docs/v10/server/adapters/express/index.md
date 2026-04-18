@@ -10,7 +10,7 @@ content_hash: "2fb487d7f25fc5d05090a3585b091217c78dd4c97ec641af10e59d2d17f078de"
 menu_path: ["Express Adapter"]
 section_path: []
 nav_prev: {"path": "trpc/docs/v10/server/adapters/aws-lambda/index.md", "title": "AWS Lambda + API Gateway Adapter"}
-nav_next: {"path": "trpc/docs/v10/server/adapters/fetch/index.md", "title": "Fetch / Edge Runtimes Adapter"}
+nav_next: {"path": "trpc/docs/v10/server/adapters/fastify/index.md", "title": "Fastify Adapter"}
 ---
 
 ## Example app[​](#example-app "Direct link to Example app")

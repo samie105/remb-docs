@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:49:32.019Z"
 content_hash: "7a8b4a7f7e50f1a2515b94a1150d443984afbe8384d43164c551922746ec4cc8"
 menu_path: ["PostgreSQL: Documentation: 18: 9.19. Array Functions and Operators"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/view-pg-locks.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.13.\u00a0pg_locks"}
-nav_next: {"path": "postgres/docs/current/infoschema-routine-privileges.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.41.\u00a0routine_privileges"}
+nav_prev: {"path": "postgres/docs/current/functions-admin.html/index.md", "title": "PostgreSQL: Documentation: 18: 9.28.\u00a0System Administration Functions"}
+nav_next: {"path": "postgres/docs/current/functions-bitstring.html/index.md", "title": "PostgreSQL: Documentation: 18: 9.6.\u00a0Bit String Functions and Operators"}
 ---
 
 Function

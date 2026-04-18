@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:41:16.522Z"
 content_hash: "be65159826ef2266994bc302eb363465d5d055cc076b7a6d9256b4d4228871ee"
 menu_path: ["MongoDB"]
 section_path: []
-nav_prev: {"path": "prisma/docs/orm/core-concepts/supported-databases/postgresql/index.md", "title": "PostgreSQL"}
-nav_next: {"path": "prisma/docs/orm/core-concepts/supported-databases/sql-server/index.md", "title": "SQL Server"}
+nav_prev: {"path": "prisma/docs/orm/core-concepts/supported-databases/database-drivers/index.md", "title": "Database drivers"}
+nav_next: {"path": "prisma/docs/orm/core-concepts/supported-databases/mysql/index.md", "title": "MySQL"}
 ---
 
 This guide discusses the concepts behind using Prisma ORM and MongoDB, explains the commonalities and differences between MongoDB and other database providers, and leads you through the process for configuring your application to integrate with MongoDB using Prisma ORM.

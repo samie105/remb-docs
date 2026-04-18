@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:40:36.761Z"
 content_hash: "5c713711491f101f5ca6f9e8817e990848712323bb9ef822e342968a9c25f36d"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        Redis Search","→","Redis Search","→\n      \n        Querying data","→","Querying data","→\n      \n        Exact match queries","→","Exact match queries"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        Redis Search","→","Redis Search","→\n      \n        Querying data","→","Querying data","→\n      \n        Exact match queries","→","Exact match queries"]
-nav_prev: {"path": "redis/docs/latest/operate/oss_and_stack/reference/internals/internals-rediseventlib/index.md", "title": "Event library"}
-nav_next: {"path": "redis/docs/latest/develop/programmability/functions-intro/index.md", "title": "Redis functions"}
+nav_prev: {"path": "redis/docs/latest/develop/ai/search-and-query/query/combined/index.md", "title": "Combined queries"}
+nav_next: {"path": "redis/docs/latest/develop/ai/search-and-query/query/full-text/index.md", "title": "Full-text search"}
 ---
 
 # Exact match queries

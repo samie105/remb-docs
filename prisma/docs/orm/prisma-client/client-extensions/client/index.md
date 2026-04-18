@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:44:25.471Z"
 content_hash: "85d310bc90cfbf0f140a58d1866313c0b323639ac68f2a380c1fc5bc2cd6ec6d"
 menu_path: ["Add methods to Prisma Client"]
 section_path: []
-nav_prev: {"path": "prisma/docs/orm/more/troubleshooting/raw-sql-comparisons/index.md", "title": "Raw SQL comparisons"}
-nav_next: {"path": "prisma/docs/orm/prisma-client/client-extensions/model/index.md", "title": "Add custom methods to your models"}
+nav_prev: {"path": "prisma/docs/orm/prisma-client/client-extensions/index.md", "title": "What are Client Extensions"}
+nav_next: {"path": "prisma/docs/orm/prisma-client/client-extensions/extension-examples/index.md", "title": "Shared packages & examples"}
 ---
 
 Client Extensions

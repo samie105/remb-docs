@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:51:34.374Z"
 content_hash: "b73caca4062c7cc81986ce3f21cd0e48568d1a568134d3927f5d71fff0923a3e"
 menu_path: ["PostgreSQL: Documentation: 18: 52.42. pg_publication_rel"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/docguide-toolsets.html/index.md", "title": "PostgreSQL: Documentation: 18: J.2.\u00a0Tool Sets"}
-nav_next: {"path": "postgres/docs/current/sql-createpolicy.html/index.md", "title": "PostgreSQL: Documentation: 18: CREATE POLICY"}
+nav_prev: {"path": "postgres/docs/current/catalog-pg-publication-namespace.html/index.md", "title": "PostgreSQL: Documentation: 18: 52.41.\u00a0pg_publication_namespace"}
+nav_next: {"path": "postgres/docs/current/catalog-pg-publication.html/index.md", "title": "PostgreSQL: Documentation: 18: 52.40.\u00a0pg_publication"}
 ---
 
 Development Versions: [devel](https://www.postgresql.org/docs/devel/catalog-pg-publication-rel.html "PostgreSQL devel - 52.42. pg_publication_rel")

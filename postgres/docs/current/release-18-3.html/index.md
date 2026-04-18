@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:44:44.297Z"
 content_hash: "0da8712c02e9626e4ec547a83039537a34ed924a03b73187bc3d34b9c844eeb3"
 menu_path: ["PostgreSQL: Documentation: 18: E.1. Release 18.3"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/sql-alterdomain.html/index.md", "title": "PostgreSQL: Documentation: 18: ALTER DOMAIN"}
-nav_next: {"path": "postgres/docs/current/role-removal.html/index.md", "title": "PostgreSQL: Documentation: 18: 21.4.\u00a0Dropping Roles"}
+nav_prev: {"path": "postgres/docs/current/release-18-2.html/index.md", "title": "PostgreSQL: Documentation: 18: E.2.\u00a0Release 18.2"}
+nav_next: {"path": "postgres/docs/current/release-18.html/index.md", "title": "PostgreSQL: Documentation: 18: E.4.\u00a0Release 18"}
 ---
 
 February 26, 2026: [PostgreSQL 18.3, 17.9, 16.13, 15.17, and 14.22 Released!](/about/news/postgresql-183-179-1613-1517-and-1422-released-3246/)

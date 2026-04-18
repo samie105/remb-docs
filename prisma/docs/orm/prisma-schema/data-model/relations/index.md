@@ -9,7 +9,7 @@ last_crawled_at: "2026-04-18T16:55:14.548Z"
 content_hash: "7786b7e70729b559422b83d6704b200a3fae837da06554c266a2972356227c41"
 menu_path: ["Relations"]
 section_path: []
-nav_prev: {"path": "prisma/docs/orm/prisma-client/setup-and-configuration/databases-connections/pgbouncer/index.md", "title": "Configure Prisma Client with PgBouncer"}
+nav_prev: {"path": "prisma/docs/orm/prisma-schema/data-model/multi-schema/index.md", "title": "Multi-schema"}
 nav_next: {"path": "prisma/docs/orm/prisma-schema/data-model/relations/many-to-many-relations/index.md", "title": "Many-to-many relations"}
 ---
 

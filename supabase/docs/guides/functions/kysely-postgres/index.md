@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:44:50.140Z"
 content_hash: "bf20df760c134c8819aeaa3b674c56abd72086d1ba5b058c195afe465392998a"
 menu_path: ["Edge Functions","Edge Functions","Third-Party Tools","Third-Party Tools","Type-Safe SQL with Kysely","Type-Safe SQL with Kysely"]
 section_path: ["Edge Functions","Edge Functions","Third-Party Tools","Third-Party Tools","Type-Safe SQL with Kysely","Type-Safe SQL with Kysely"]
-nav_prev: {"path": "supabase/docs/guides/functions/limits/index.md", "title": "Limits"}
-nav_next: {"path": "supabase/docs/guides/functions/logging/index.md", "title": "Logging"}
+nav_prev: {"path": "supabase/docs/guides/functions/http-methods/index.md", "title": "Routing"}
+nav_next: {"path": "supabase/docs/guides/functions/limits/index.md", "title": "Limits"}
 ---
 
 # 

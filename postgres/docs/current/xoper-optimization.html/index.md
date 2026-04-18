@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:39:33.137Z"
 content_hash: "837f96b38945316a624470e80e1bbad6cb7a940078fb70af9616458ed9ad94e6"
 menu_path: ["PostgreSQL: Documentation: 18: 36.15. Operator Optimization Information"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/sql-createserver.html/index.md", "title": "PostgreSQL: Documentation: 18: CREATE SERVER"}
-nav_next: {"path": "postgres/docs/current/catalog-pg-shdescription.html/index.md", "title": "PostgreSQL: Documentation: 18: 52.49.\u00a0pg_shdescription"}
+nav_prev: {"path": "postgres/docs/current/xindex.html/index.md", "title": "PostgreSQL: Documentation: 18: 36.16.\u00a0Interfacing Extensions to Indexes"}
+nav_next: {"path": "postgres/docs/current/xtypes.html/index.md", "title": "PostgreSQL: Documentation: 18: 36.13.\u00a0User-Defined Types"}
 ---
 
 A PostgreSQL operator definition can include several optional clauses that tell the system useful things about how the operator behaves. These clauses should be provided whenever appropriate, because they can make for considerable speedups in execution of queries that use the operator. But if you provide them, you must be sure that they are right! Incorrect use of an optimization clause can result in slow queries, subtly wrong output, or other Bad Things. You can always leave out an optimization clause if you are not sure about it; the only consequence is that queries might run slower than they need to.

@@ -10,7 +10,7 @@ content_hash: "0a972c77339d0265acbaca75eff28b7ccfd3b39a53bc5d2f2d4d5f17d24f2fe9"
 menu_path: ["Get Started with Drizzle and D1"]
 section_path: []
 nav_prev: {"path": "drizzle/docs/get-started/d1-existing/index.md", "title": "Get Started with Drizzle and D1 in existing project"}
-nav_next: {"path": "drizzle/docs/get-started/do-new/index.md", "title": "Get Started with Drizzle and SQLite Durable Objects"}
+nav_next: {"path": "drizzle/docs/get-started/do-existing/index.md", "title": "Get Started with Drizzle and SQLite Durable Objects in existing project"}
 ---
 
 ## Get Started with Drizzle and D1

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:46:22.395Z"
 content_hash: "a2e27497e77c088417b3d57f382abed2e7ae9313ca6037b968f6e31b4134821d"
 menu_path: ["Build an app with SolidStart and Bun"]
 section_path: []
-nav_prev: {"path": "bun/bun/docs/guides/ecosystem/remix/index.md", "title": "Build an app with Remix and Bun"}
-nav_next: {"path": "bun/bun/docs/guides/ecosystem/stric/index.md", "title": "Build an HTTP server using StricJS and Bun"}
+nav_prev: {"path": "bun/bun/docs/guides/ecosystem/sentry/index.md", "title": "Add Sentry to a Bun app"}
+nav_next: {"path": "bun/bun/docs/guides/ecosystem/ssr-react/index.md", "title": "Server-side render (SSR) a React component"}
 ---
 
 [Skip to main content](#content-area)

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:47:12.272Z"
 content_hash: "1777a8022a0f03310d2eb7adf13ace1395a1f8f81ee18c5ced9ea29ccd782fbf"
 menu_path: ["Platform","Platform","Project & Account Management","Project & Account Management","Restore to a new project","Restore to a new project"]
 section_path: ["Platform","Platform","Project & Account Management","Project & Account Management","Restore to a new project","Restore to a new project"]
-nav_prev: {"path": "supabase/docs/guides/platform/billing-faq/index.md", "title": "Billing FAQ"}
-nav_next: {"path": "supabase/docs/guides/platform/cost-control/index.md", "title": "Control your costs"}
+nav_prev: {"path": "supabase/docs/guides/platform/billing-on-supabase/index.md", "title": "About billing on Supabase"}
+nav_next: {"path": "supabase/docs/guides/platform/compute-and-disk/index.md", "title": "Compute and Disk"}
 ---
 
 # 

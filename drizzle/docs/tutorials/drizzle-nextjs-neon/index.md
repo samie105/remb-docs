@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:22:53.452Z"
 content_hash: "aa3585f11160e03b05bf6bb453edab6bbd80c1a00442649f34536739922db5e6"
 menu_path: ["Todo App with Neon Postgres"]
 section_path: []
-nav_prev: {"path": "drizzle/docs/tutorials/drizzle-with-encore/index.md", "title": "Drizzle with Encore"}
-nav_next: {"path": "drizzle/docs/tutorials/drizzle-with-neon/index.md", "title": "Drizzle with Neon Postgres"}
+nav_prev: {"path": "drizzle/docs/tutorials/bun-railway-pg/index.md", "title": "Drizzle with Bun and PostgreSQL on Railway"}
+nav_next: {"path": "drizzle/docs/tutorials/drizzle-with-encore/index.md", "title": "Drizzle with Encore"}
 ---
 
 This tutorial demonstrates how to build `Todo app` using **Drizzle ORM** with **Neon database** and **Next.js**.

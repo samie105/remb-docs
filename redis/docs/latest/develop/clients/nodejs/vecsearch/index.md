@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:54:43.557Z"
 content_hash: "e600f74e805b71685864bb0a846f042d934062bc530efc4600d8fe2a063bdd47"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Connect with Redis client API libraries","→","Connect with Redis client API libraries","→\n      \n        node-redis guide (JavaScript)","→","node-redis guide (JavaScript)","→\n      \n        Index and query vectors","→","Index and query vectors"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Connect with Redis client API libraries","→","Connect with Redis client API libraries","→\n      \n        node-redis guide (JavaScript)","→","node-redis guide (JavaScript)","→\n      \n        Index and query vectors","→","Index and query vectors"]
-nav_prev: {"path": "redis/docs/latest/develop/clients/lettuce/vecsearch/index.md", "title": "Index and query vectors"}
-nav_next: {"path": "redis/docs/latest/develop/ai/search-and-query/indexing/index.md", "title": "Indexing"}
+nav_prev: {"path": "redis/docs/latest/develop/clients/nodejs/transpipe/index.md", "title": "Pipelines and transactions"}
+nav_next: {"path": "redis/docs/latest/develop/clients/nodejs/vecsets/index.md", "title": "Vector set embeddings"}
 ---
 
 # Index and query vectors

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:36:07.748Z"
 content_hash: "e758059e494698a433de0b6960b63748799acf3789261518c78c6fbc16d9b5fc"
 menu_path: ["PostgreSQL: Documentation: 18: CREATE CONVERSION"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/infoschema-element-types.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.24.\u00a0element_types"}
-nav_next: {"path": "postgres/docs/current/spi-visibility.html/index.md", "title": "PostgreSQL: Documentation: 18: 45.5.\u00a0Visibility of Data Changes"}
+nav_prev: {"path": "postgres/docs/current/sql-createcollation.html/index.md", "title": "PostgreSQL: Documentation: 18: CREATE COLLATION"}
+nav_next: {"path": "postgres/docs/current/sql-createdatabase.html/index.md", "title": "PostgreSQL: Documentation: 18: CREATE DATABASE"}
 ---
 
 CREATE CONVERSION — define a new encoding conversion

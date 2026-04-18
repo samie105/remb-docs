@@ -10,7 +10,7 @@ content_hash: "da3f9705bf84b24b0f12c3a173fd996ac205650a9ba26651232ac1d9ebf0b14b"
 menu_path: ["Operating against partial structures of your model types"]
 section_path: []
 nav_prev: {"path": "prisma/docs/orm/prisma-client/type-safety/index.md", "title": "Type safety Overview"}
-nav_next: {"path": "prisma/docs/orm/prisma-client/using-raw-sql/index.md", "title": "Write your own SQL"}
+nav_next: {"path": "prisma/docs/orm/prisma-client/type-safety/prisma-type-system/index.md", "title": "How to use Prisma ORM's type system"}
 ---
 
 Type Safety

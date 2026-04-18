@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:52:09.240Z"
 content_hash: "8e1f18e0a97b8d00a8d2a50d664328bf9c99ae2265cc87f9de063af38d4d1390"
 menu_path: ["AI & Vectors","AI & Vectors","Python Examples","Python Examples","Face similarity search","Face similarity search"]
 section_path: ["AI & Vectors","AI & Vectors","Python Examples","Python Examples","Face similarity search","Face similarity search"]
-nav_prev: {"path": "supabase/docs/guides/ai/integrations/roboflow/index.md", "title": "Roboflow"}
-nav_next: {"path": "supabase/docs/guides/ai/quickstarts/hello-world/index.md", "title": "Creating and managing collections"}
+nav_prev: {"path": "supabase/docs/guides/ai/python-clients/index.md", "title": "Choosing a Client"}
+nav_next: {"path": "supabase/docs/guides/ai/quickstarts/generate-text-embeddings/index.md", "title": "Generate Embeddings"}
 ---
 
 # 

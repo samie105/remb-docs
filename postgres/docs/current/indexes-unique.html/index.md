@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:46:58.090Z"
 content_hash: "b70bcc533bb90d77db15027c3ffa8e165a783bbd01d7fb08ffd8dab782b29e38"
 menu_path: ["PostgreSQL: Documentation: 18: 11.6. Unique Indexes"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/sql-commit.html/index.md", "title": "PostgreSQL: Documentation: 18: COMMIT"}
-nav_next: {"path": "postgres/docs/current/view-pg-wait-events.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.38.\u00a0pg_wait_events"}
+nav_prev: {"path": "postgres/docs/current/indexes-types.html/index.md", "title": "PostgreSQL: Documentation: 18: 11.2.\u00a0Index Types"}
+nav_next: {"path": "postgres/docs/current/infoschema-domain-constraints.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.21.\u00a0domain_constraints"}
 ---
 
 Indexes can also be used to enforce uniqueness of a column's value, or the uniqueness of the combined values of more than one column.

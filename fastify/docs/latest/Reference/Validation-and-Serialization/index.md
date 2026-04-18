@@ -10,7 +10,7 @@ content_hash: "ae3a2c6e250fceabf7a6401266bbde906e061e5ac710f45c83f34e1891f5887c"
 menu_path: ["Validation-and-Serialization"]
 section_path: []
 nav_prev: {"path": "fastify/docs/latest/Reference/TypeScript/index.md", "title": "TypeScript"}
-nav_next: {"path": "fastify/docs/latest/Guides/Write-Type-Provider/index.md", "title": "Write-Type-Provider"}
+nav_next: {"path": "fastify/docs/latest/Reference/Warnings/index.md", "title": "Warnings"}
 ---
 
 Version: latest (v5.8.x)

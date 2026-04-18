@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:50:01.407Z"
 content_hash: "c4997fc8274608cd08e854c831709fa610a87b19204726f3826e2ec317caa18f"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis reference","→","Redis reference","→\n      \n        Redis modules API","→","Redis modules API"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis reference","→","Redis reference","→\n      \n        Redis modules API","→","Redis modules API"]
-nav_prev: {"path": "redis/docs/latest/integrate/node-redis/index.md", "title": "Node.js client for Redis"}
-nav_next: {"path": "redis/docs/latest/develop/use-cases/leaderboard/nodejs/index.md", "title": "Redis leaderboard with node-redis"}
+nav_prev: {"path": "redis/docs/latest/develop/reference/key-specs/index.md", "title": "Command key specifications"}
+nav_next: {"path": "redis/docs/latest/develop/reference/modules/modules-api-ref/index.md", "title": "Modules API reference"}
 ---
 
 # Redis modules API

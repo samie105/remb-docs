@@ -9,7 +9,7 @@ last_crawled_at: "2026-04-18T16:45:28.695Z"
 content_hash: "6791935c78e247069cc2ee87e8f13a181f0482159894797873c994c2e2929758"
 menu_path: ["Debugging"]
 section_path: []
-nav_prev: {"path": "prisma/docs/orm/prisma-client/client-extensions/query/index.md", "title": "Create custom Prisma Client queries"}
+nav_prev: {"path": "prisma/docs/orm/prisma-client/client-extensions/type-utilities/index.md", "title": "Type utilities"}
 nav_next: {"path": "prisma/docs/orm/prisma-client/debugging-and-troubleshooting/handling-exceptions-and-errors/index.md", "title": "Handling exceptions and errors"}
 ---
 
