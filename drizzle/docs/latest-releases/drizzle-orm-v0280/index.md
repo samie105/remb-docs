@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:10:41.361Z"
 content_hash: "314ef140f29dbba7efc55ffe4da126736c75198344109a30e969ddb58bec57b1"
 menu_path: ["Drizzle ORM - DrizzleORM v0.28.0 release"]
 section_path: []
+nav_prev: {"path": "drizzle/docs/latest-releases/drizzle-orm-v0272/index.md", "title": "Drizzle ORM - DrizzleORM v0.27.2 release"}
+nav_next: {"path": "drizzle/docs/latest-releases/drizzle-orm-v0281/index.md", "title": "Drizzle ORM - DrizzleORM v0.28.1 release"}
 ---
+
 DrizzleORM v0.28.0 release
 
 Aug 6, 2023
@@ -175,7 +178,7 @@ FROM
 LIMIT 1
 ```
 
-Read more about [Relational Queries](https://orm.drizzle.team/docs/rqb) in the documentation.
+Read more about [Relational Queries](drizzle/docs/rqb/index.md) in the documentation.
 
 ## Possibility to insert rows with default values for all columns
 
@@ -188,3 +191,4 @@ await db.insert(usersTable).values({});
 // Insert 2 rows with all defaults
 await db.insert(usersTable).values([{}, {}]);
 ```
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:38:27.236Z"
 content_hash: "79112191e7d5fdfdfc0d30eece7fbd639035e3b15e8293ef056c6b832f408864"
 menu_path: ["perf_hooks - Node documentation"]
 section_path: []
+nav_prev: {"path": "deno/deno/api/node/os/index.md", "title": "os - Node documentation"}
+nav_next: {"path": "deno/deno/api/node/punycode/index.md", "title": "punycode - Node documentation"}
 ---
+
 ### Usage in Deno
 
 ```typescript
@@ -403,3 +406,4 @@ v
 [performance](.././perf_hooks/~/performance "performance")
 
 No documentation available
+

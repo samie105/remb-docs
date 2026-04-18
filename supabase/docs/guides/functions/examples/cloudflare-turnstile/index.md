@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:57:18.337Z"
 content_hash: "f7cecfe2b41b2ad56591849c25c9847b2db16b72cd24f57e25cdfbfa6f052815"
 menu_path: ["Edge Functions","Edge Functions","Examples","Examples","CAPTCHA support with Cloudflare Turnstile","CAPTCHA support with Cloudflare Turnstile"]
 section_path: ["Edge Functions","Edge Functions","Examples","Examples","CAPTCHA support with Cloudflare Turnstile","CAPTCHA support with Cloudflare Turnstile"]
+nav_prev: {"path": "supabase/docs/guides/functions/examples/amazon-bedrock-image-generator/index.md", "title": "Generate Images with Amazon Bedrock"}
+nav_next: {"path": "supabase/docs/guides/functions/examples/elevenlabs-generate-speech-stream/index.md", "title": "Streaming Speech with ElevenLabs"}
 ---
+
 # 
 
 CAPTCHA support with Cloudflare Turnstile
@@ -50,3 +53,4 @@ And add the code to the `index.ts` file:
 ```
 1const { data, error } = await supabase.functions.invoke('cloudflare-turnstile', {2  body: { token },3})
 ```
+

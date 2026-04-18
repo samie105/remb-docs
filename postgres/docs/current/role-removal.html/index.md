@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:44:45.748Z"
 content_hash: "1d939a031333fc9b01eb050fd1e1d6a42a921cae30f08dc42c8205d9810eeabe"
 menu_path: ["PostgreSQL: Documentation: 18: 21.4. Dropping Roles"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/release-18-3.html/index.md", "title": "PostgreSQL: Documentation: 18: E.1.\u00a0Release 18.3"}
+nav_next: {"path": "postgres/docs/current/ddl-foreign-data.html/index.md", "title": "PostgreSQL: Documentation: 18: 5.13.\u00a0Foreign Data"}
 ---
+
 Because roles can own database objects and can hold privileges to access other objects, dropping a role is often not just a matter of a quick [`DROP ROLE`](https://www.postgresql.org/docs/current/sql-droprole.html "DROP ROLE"). Any objects owned by the role must first be dropped or reassigned to other owners; and any permissions granted to the role must be revoked.
 
 Ownership of objects can be transferred one at a time using `ALTER` commands, for example:
@@ -32,3 +35,4 @@ DROP ROLE doomed\_role;
 When not all owned objects are to be transferred to the same successor owner, it's best to handle the exceptions manually and then perform the above steps to mop up.
 
 If `DROP ROLE` is attempted while dependent objects still remain, it will issue messages identifying which objects need to be reassigned or dropped.
+

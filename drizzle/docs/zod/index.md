@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:26:22.647Z"
 content_hash: "71c511078c59270ce67b466f2dbd35ad79b46b193ef2bf1a539b6a4e193b3e8b"
 menu_path: ["zod"]
 section_path: []
+nav_prev: {"path": "drizzle/docs/goodies/index.md", "title": "Drizzle ORM - Goodies"}
+nav_next: {"path": "drizzle/docs/valibot/index.md", "title": "valibot"}
 ---
+
 WARNING
 
 Starting from `drizzle-orm@1.0.0-beta.15`, `drizzle-zod` has been deprecated in favor of first-class schema generation support within Drizzle ORM itself
@@ -556,3 +559,4 @@ pg.dataType().array(...);
 // Schema
 z.array(baseDataTypeSchema).length(size);
 ```
+

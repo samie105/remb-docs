@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:50:07.012Z"
 content_hash: "d6b574ef665b27049f76337cbcfafe1874c09a7cf2c8d02f97b5e74fb5354ffc"
 menu_path: ["Content Types"]
 section_path: []
+nav_prev: {"path": "trpc/docs/server/metadata/index.md", "title": "Metadata"}
+nav_next: {"path": "trpc/docs/server/middlewares/index.md", "title": "Middlewares"}
 ---
+
 tRPC supports multiple content types as procedure inputs: JSON-serializable data, FormData, File, Blob, and other binary types.
 
 ## JSON (Default)[​](#json-default "Direct link to JSON (Default)")
@@ -276,3 +279,4 @@ ts
   `}),`
 
 `});`
+

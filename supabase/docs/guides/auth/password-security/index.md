@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:38:20.278Z"
 content_hash: "097514acc66a85065446f22ac62ee6256ab5980772de2dd9d81b05a6389d0f5e"
 menu_path: ["Auth","Auth","Security","Security","Password Security","Password Security"]
 section_path: ["Auth","Auth","Security","Security","Password Security","Password Security"]
+nav_prev: {"path": "supabase/docs/guides/auth/oauth-server/index.md", "title": "OAuth 2.1 Server"}
+nav_next: {"path": "supabase/docs/guides/auth/native-mobile-deep-linking/index.md", "title": "Native Mobile Deep Linking"}
 ---
+
 # 
 
 Password security
@@ -106,3 +109,4 @@ The hash is stored in the `encrypted_password` column of the `auth.users` table.
 ### How will strengthened password requirements affect current users?[#](#how-will-strengthened-password-requirements-affect-current-users)
 
 Existing users can still sign in with their current password even if it doesn't meet the new, strengthened password requirements. However, if their password falls short of these updated standards, they will encounter a `WeakPasswordError` during the `signInWithPassword` process, explaining why it's considered weak. This change is also applicable to new users and existing users changing their passwords, ensuring everyone adheres to the enhanced security standards.
+

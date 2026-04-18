@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:05:16.433Z"
 content_hash: "221065ba11b17a9919f5f8b7effa967e0a68829ffa74d336b1bdeeb0c7f06f93"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        Redis Search","→","Redis Search","→\n      \n        Querying data","→","Querying data"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        Redis Search","→","Redis Search","→\n      \n        Querying data","→","Querying data"]
+nav_prev: {"path": "redis/docs/latest/integrate/prometheus-with-redis-enterprise/index.md", "title": "Prometheus and Grafana with Redis Software"}
+nav_next: {"path": "redis/docs/latest/integrate/write-behind/quickstart/write-behind-guide/index.md", "title": "Quickstart"}
 ---
+
 # Querying data
 
 Understand how to query, search, and aggregate Redis data
@@ -64,3 +67,4 @@ The following articles provide an overview of how to query data with the [FT.SEA
 You can find further details about aggregation queries with [FT.AGGREGATE](/docs/latest/commands/ft.aggregate/) in the following article:
 
 *   [Aggregation queries](/docs/latest/develop/ai/search-and-query/query/aggregation/)
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:41:45.211Z"
 content_hash: "384f4c80d158e1ed4d7a23283097c05feaedcbd8cfee2ea56a210e6f4c958e27"
 menu_path: ["HonoRequest ​"]
 section_path: []
+nav_prev: {"path": "hono/docs/api/context/index.md", "title": "Context \u200b"}
+nav_next: {"path": "hono/docs/api/exception/index.md", "title": "HTTPException \u200b"}
 ---
+
 The `HonoRequest` is an object that can be taken from `c.req` which wraps a [Request](https://developer.mozilla.org/en-US/docs/Web/API/Request) object.
 
 ## param() [​](#param)
@@ -260,13 +263,13 @@ Available targets are below.
 *   `cookie`
 *   `param`
 
-See the [Validation section](https://hono.dev/docs/guides/validation) for usage examples.
+See the [Validation section](hono/docs/guides/validation/index.md) for usage examples.
 
 ## routePath [​](#routepath)
 
 WARNING
 
-**Deprecated in v4.8.0**: This property is deprecated. Use `routePath()` from [Route Helper](https://hono.dev/docs/helpers/route) instead.
+**Deprecated in v4.8.0**: This property is deprecated. Use `routePath()` from [Route Helper](hono/docs/helpers/route/index.md) instead.
 
 You can retrieve the registered path within the handler like this:
 
@@ -290,7 +293,7 @@ json
 
 WARNING
 
-**Deprecated in v4.8.0**: This property is deprecated. Use `matchedRoutes()` from [Route Helper](https://hono.dev/docs/helpers/route) instead.
+**Deprecated in v4.8.0**: This property is deprecated. Use `matchedRoutes()` from [Route Helper](hono/docs/helpers/route/index.md) instead.
 
 It returns matched routes within the handler, which is useful for debugging.
 
@@ -393,3 +396,4 @@ app.post(
   }
 )
 ```
+

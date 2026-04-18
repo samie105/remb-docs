@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:45:03.197Z"
 content_hash: "cc05400f46ab96a83c2b522c23106e83f7ffb1d03e82f2522fe3f00b6e960f6b"
 menu_path: ["Cannot set both densities and widths"]
 section_path: []
+nav_prev: {"path": "astro/en/reference/errors/image-missing-alt/index.md", "title": "Image missing required \"alt\" property."}
+nav_next: {"path": "astro/en/reference/errors/incorrect-strategy-for-i18n/index.md", "title": "You can't use the current function with the current strategy"}
 ---
+
 # Cannot set both densities and widths
 
 > **IncompatibleDescriptorOptions**: Only one of `densities` or `widths` can be specified. In most cases, you’ll probably want to use only `widths` if you require specific widths.
@@ -25,3 +28,4 @@ Only one of `densities` or `widths` can be specified. Those attributes are used 
 *   [Images](/en/guides/images/)
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

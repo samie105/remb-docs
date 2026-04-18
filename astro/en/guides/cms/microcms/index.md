@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:34:45.055Z"
 content_hash: "6e4c6b1594041da1418b668d297bd47b08c1736bd9191439107c9420d69a0193"
 menu_path: ["microCMS & Astro"]
 section_path: []
+nav_prev: {"path": "astro/en/guides/cms/kontent-ai/index.md", "title": "Kontent.ai & Astro"}
+nav_next: {"path": "astro/en/guides/cms/optimizely/index.md", "title": "Optimizely CMS & Astro"}
 ---
+
 # microCMS & Astro
 
 [microCMS](https://microcms.io/en) is an API-based headless CMS that lets you define content using schemas, and manage it using the dashboard.
@@ -204,3 +207,4 @@ section_path: []
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

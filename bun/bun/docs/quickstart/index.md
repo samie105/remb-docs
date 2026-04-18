@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:58:33.670Z"
 content_hash: "9126a4769072094c734842f0a2806b2360495ba6a124776201aafffab7e0415a"
 menu_path: ["Quickstart"]
 section_path: []
+nav_prev: {"path": "bun/bun/docs/project/roadmap/index.md", "title": "Roadmap"}
+nav_next: {"path": "bun/bun/docs/runtime/auto-install/index.md", "title": "Auto-install"}
 ---
+
 ## Overview
 
 Build a minimal HTTP server with `Bun.serve`, run it locally, then evolve it by installing a package.
@@ -65,3 +68,4 @@ bun run start
 ```
 Listening on http://localhost:3000
 ```
+

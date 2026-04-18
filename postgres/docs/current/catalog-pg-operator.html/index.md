@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:47:36.355Z"
 content_hash: "5a0c2111180d8d3ccef9e71c8137f7544e645edc2e53067a500d041c1d42fc59"
 menu_path: ["PostgreSQL: Documentation: 18: 52.34. pg_operator"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/amcheck.html/index.md", "title": "PostgreSQL: Documentation: 18: F.1.\u00a0amcheck \u2014 tools to verify table and index consistency"}
+nav_next: {"path": "postgres/docs/current/functions-uuid.html/index.md", "title": "PostgreSQL: Documentation: 18: 9.14.\u00a0UUID Functions"}
 ---
+
 The catalog `pg_operator` stores information about operators. See [CREATE OPERATOR](https://www.postgresql.org/docs/current/sql-createoperator.html "CREATE OPERATOR") and [Section 36.14](https://www.postgresql.org/docs/current/xoper.html "36.14. User-Defined Operators") for more information.
 
 **Table 52.34. `pg_operator` Columns**
@@ -77,3 +80,4 @@ Restriction selectivity estimation function for this operator (zero if none)
 `oprjoin` `regproc` (references [`pg_proc`](https://www.postgresql.org/docs/current/catalog-pg-proc.html "52.39. pg_proc").`oid`)
 
 Join selectivity estimation function for this operator (zero if none)
+

@@ -9,15 +9,9 @@ last_crawled_at: "2026-04-18T16:57:50.852Z"
 content_hash: "adc057b684788c962f49ea7ad3cbe403e46a7b29ad8fa5874eb00a775502bfdf"
 menu_path: ["text-decoration-style"]
 section_path: []
+nav_prev: {"path": "tailwind/docs/text-decoration-color/index.md", "title": "text-decoration-color"}
+nav_next: {"path": "tailwind/docs/text-decoration-thickness/index.md", "title": "text-decoration-thickness"}
 ---
-[](/)
-
-[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
-
-1.  Typography
-2.  text-decoration-style
-
-Typography
 
 # text-decoration-style
 
@@ -109,3 +103,4 @@ Make your ideas look awesome, without relying on a designer.
 ](https://www.refactoringui.com/?ref=sidebar)
 
 Copyright © 2026 Tailwind Labs Inc.·[Trademark Policy](/brand)
+

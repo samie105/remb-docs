@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:40:23.057Z"
 content_hash: "d0b9dc4b628f3050291dd62001460f30adf35ade5b59a0f6fa689a67d9a8c1b2"
 menu_path: ["PostgreSQL: Documentation: 18: 53.17. pg_prepared_xacts"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/xaggr.html/index.md", "title": "PostgreSQL: Documentation: 18: 36.12.\u00a0User-Defined Aggregates"}
+nav_next: {"path": "postgres/docs/current/queries-order.html/index.md", "title": "PostgreSQL: Documentation: 18: 7.5.\u00a0Sorting Rows (ORDER BY)"}
 ---
+
 Development Versions: [devel](https://www.postgresql.org/docs/devel/view-pg-prepared-xacts.html "PostgreSQL devel - 53.17. pg_prepared_xacts")
 
 The view `pg_prepared_xacts` displays information about transactions that are currently prepared for two-phase commit (see [PREPARE TRANSACTION](https://www.postgresql.org/docs/current/sql-prepare-transaction.html "PREPARE TRANSACTION") for details).
@@ -43,3 +46,4 @@ Name of the user that executed the transaction
 Name of the database in which the transaction was executed
 
 When the `pg_prepared_xacts` view is accessed, the internal transaction manager data structures are momentarily locked, and a copy is made for the view to display. This ensures that the view produces a consistent set of results, while not blocking normal operations longer than necessary. Nonetheless there could be some impact on database performance if this view is frequently accessed.
+

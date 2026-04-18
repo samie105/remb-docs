@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:38:37.158Z"
 content_hash: "03e3e798667bf7a871fd598b312fad20f2596be8cf01c427ddd06bf072da511c"
 menu_path: ["Authorization"]
 section_path: []
+nav_prev: {"path": "trpc/docs/v10/server/adapters/standalone/index.md", "title": "Standalone Adapter"}
+nav_next: {"path": "trpc/docs/v10/server/caching/index.md", "title": "Response Caching"}
 ---
+
 The `createContext` function is called for each incoming request, so here you can add contextual information about the calling user from the request object.
 
 server/context.ts
@@ -177,3 +180,4 @@ ts
   `}),`
 
 `});`
+

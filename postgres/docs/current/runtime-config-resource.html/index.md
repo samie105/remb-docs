@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:36:25.673Z"
 content_hash: "4081d9e169fb1045d63d2c91434881dc38bc26c169cb67120f16b66d9a8573e2"
 menu_path: ["PostgreSQL: Documentation: 18: 19.4. Resource Consumption"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/logical-replication-restrictions.html/index.md", "title": "PostgreSQL: Documentation: 18: 29.8.\u00a0Restrictions"}
+nav_next: {"path": "postgres/docs/current/plpython-envar.html/index.md", "title": "PostgreSQL: Documentation: 18: 44.11.\u00a0Environment Variables"}
 ---
+
 `shared_buffers` (`integer`) [#](#GUC-SHARED-BUFFERS)
 
 Sets the amount of memory the database server uses for shared memory buffers. The default is typically 128 megabytes (`128MB`), but might be less if your kernel settings will not support it (as determined during initdb). This setting must be at least 128 kilobytes. However, settings significantly higher than the minimum are usually needed for good performance. If this value is specified without units, it is taken as blocks, that is `BLCKSZ` bytes, typically 8kB. (Non-default values of `BLCKSZ` change the minimum value.) This parameter can only be set at server start.
@@ -20,7 +23,7 @@ On systems with less than 1GB of RAM, a smaller percentage of RAM is appropriate
 
 `huge_pages` (`enum`) [#](#GUC-HUGE-PAGES)
 
-Controls whether huge pages are requested for the main shared memory area. Valid values are `try` (the default), `on`, and `off`. This parameter can only be set at server start. With `huge_pages` set to `try`, the server will try to request huge pages, but fall back to the default if that fails. With `on`, failure to request huge pages will prevent the server from starting up. With `off`, huge pages will not be requested. The actual state of huge pages is indicated by the server variable [huge\_pages\_status](https://www.postgresql.org/docs/current/runtime-config-preset.html#GUC-HUGE-PAGES-STATUS).
+Controls whether huge pages are requested for the main shared memory area. Valid values are `try` (the default), `on`, and `off`. This parameter can only be set at server start. With `huge_pages` set to `try`, the server will try to request huge pages, but fall back to the default if that fails. With `on`, failure to request huge pages will prevent the server from starting up. With `off`, huge pages will not be requested. The actual state of huge pages is indicated by the server variable [huge\_pages\_status](postgres/docs/current/runtime-config-preset.html/index.md#GUC-HUGE-PAGES-STATUS).
 
 At present, this setting is supported only on Linux and Windows. The setting is ignored on other systems when set to `try`. On Linux, it is only supported when `shared_memory_type` is set to `mmap` (the default).
 
@@ -32,7 +35,7 @@ Note that this setting only affects the main shared memory area. Operating syste
 
 `huge_page_size` (`integer`) [#](#GUC-HUGE-PAGE-SIZE)
 
-Controls the size of huge pages, when they are enabled with [huge\_pages](https://www.postgresql.org/docs/current/runtime-config-resource.html#GUC-HUGE-PAGES). The default is zero (`0`). When set to `0`, the default huge page size on the system will be used. This parameter can only be set at server start.
+Controls the size of huge pages, when they are enabled with [huge\_pages](postgres/docs/current/runtime-config-resource.html/index.md#GUC-HUGE-PAGES). The default is zero (`0`). When set to `0`, the default huge page size on the system will be used. This parameter can only be set at server start.
 
 Some commonly available page sizes on modern 64 bit server architectures include: `2MB` and `1GB` (Intel and AMD), `16MB` and `16GB` (IBM POWER), and `64kB`, `2MB`, `32MB` and `1GB` (ARM). For more information about usage and support, see [Section 18.4.5](https://www.postgresql.org/docs/current/kernel-resources.html#LINUX-HUGE-PAGES "18.4.5. Linux Huge Pages").
 
@@ -48,7 +51,7 @@ A session will allocate temporary buffers as needed up to the limit given by `te
 
 Sets the maximum number of transactions that can be in the “prepared” state simultaneously (see [PREPARE TRANSACTION](https://www.postgresql.org/docs/current/sql-prepare-transaction.html "PREPARE TRANSACTION")). Setting this parameter to zero (which is the default) disables the prepared-transaction feature. This parameter can only be set at server start.
 
-If you are not planning to use prepared transactions, this parameter should be set to zero to prevent accidental creation of prepared transactions. If you are using prepared transactions, you will probably want `max_prepared_transactions` to be at least as large as [max\_connections](https://www.postgresql.org/docs/current/runtime-config-connection.html#GUC-MAX-CONNECTIONS), so that every session can have a prepared transaction pending.
+If you are not planning to use prepared transactions, this parameter should be set to zero to prevent accidental creation of prepared transactions. If you are using prepared transactions, you will probably want `max_prepared_transactions` to be at least as large as [max\_connections](postgres/docs/current/runtime-config-connection.html/index.md#GUC-MAX-CONNECTIONS), so that every session can have a prepared transaction pending.
 
 When running a standby server, you must set this parameter to the same or higher value than on the primary server. Otherwise, queries will not be allowed in the standby server.
 
@@ -68,15 +71,15 @@ Consider increasing `hash_mem_multiplier` in environments where spilling by quer
 
 Specifies the maximum amount of memory to be used by maintenance operations, such as `VACUUM`, `CREATE INDEX`, and `ALTER TABLE ADD FOREIGN KEY`. If this value is specified without units, it is taken as kilobytes. It defaults to 64 megabytes (`64MB`). Since only one of these operations can be executed at a time by a database session, and an installation normally doesn't have many of them running concurrently, it's safe to set this value significantly larger than `work_mem`. Larger settings might improve performance for vacuuming and for restoring database dumps.
 
-Note that when autovacuum runs, up to [autovacuum\_max\_workers](https://www.postgresql.org/docs/current/runtime-config-vacuum.html#GUC-AUTOVACUUM-MAX-WORKERS) times this memory may be allocated, so be careful not to set the default value too high. It may be useful to control for this by separately setting [autovacuum\_work\_mem](https://www.postgresql.org/docs/current/runtime-config-resource.html#GUC-AUTOVACUUM-WORK-MEM).
+Note that when autovacuum runs, up to [autovacuum\_max\_workers](postgres/docs/current/runtime-config-vacuum.html/index.md#GUC-AUTOVACUUM-MAX-WORKERS) times this memory may be allocated, so be careful not to set the default value too high. It may be useful to control for this by separately setting [autovacuum\_work\_mem](postgres/docs/current/runtime-config-resource.html/index.md#GUC-AUTOVACUUM-WORK-MEM).
 
 `autovacuum_work_mem` (`integer`) [#](#GUC-AUTOVACUUM-WORK-MEM)
 
-Specifies the maximum amount of memory to be used by each autovacuum worker process. If this value is specified without units, it is taken as kilobytes. It defaults to -1, indicating that the value of [maintenance\_work\_mem](https://www.postgresql.org/docs/current/runtime-config-resource.html#GUC-MAINTENANCE-WORK-MEM) should be used instead. The setting has no effect on the behavior of `VACUUM` when run in other contexts. This parameter can only be set in the `postgresql.conf` file or on the server command line.
+Specifies the maximum amount of memory to be used by each autovacuum worker process. If this value is specified without units, it is taken as kilobytes. It defaults to -1, indicating that the value of [maintenance\_work\_mem](postgres/docs/current/runtime-config-resource.html/index.md#GUC-MAINTENANCE-WORK-MEM) should be used instead. The setting has no effect on the behavior of `VACUUM` when run in other contexts. This parameter can only be set in the `postgresql.conf` file or on the server command line.
 
 `vacuum_buffer_usage_limit` (`integer`) [#](#GUC-VACUUM-BUFFER-USAGE-LIMIT)
 
-Specifies the size of the [](https://www.postgresql.org/docs/current/glossary.html#GLOSSARY-BUFFER-ACCESS-STRATEGY)[Buffer Access Strategy](https://www.postgresql.org/docs/current/glossary.html#GLOSSARY-BUFFER-ACCESS-STRATEGY "Buffer Access Strategy") used by the `VACUUM` and `ANALYZE` commands. A setting of `0` will allow the operation to use any number of `shared_buffers`. Otherwise valid sizes range from `128 kB` to `16 GB`. If the specified size would exceed 1/8 the size of `shared_buffers`, the size is silently capped to that value. The default value is `2MB`. If this value is specified without units, it is taken as kilobytes. This parameter can be set at any time. It can be overridden for [VACUUM](https://www.postgresql.org/docs/current/sql-vacuum.html "VACUUM") and [ANALYZE](https://www.postgresql.org/docs/current/sql-analyze.html "ANALYZE") when passing the `BUFFER_USAGE_LIMIT` option. Higher settings can allow `VACUUM` and `ANALYZE` to run more quickly, but having too large a setting may cause too many other useful pages to be evicted from shared buffers.
+Specifies the size of the [](postgres/docs/current/glossary.html/index.md#GLOSSARY-BUFFER-ACCESS-STRATEGY)[Buffer Access Strategy](https://www.postgresql.org/docs/current/glossary.html#GLOSSARY-BUFFER-ACCESS-STRATEGY "Buffer Access Strategy") used by the `VACUUM` and `ANALYZE` commands. A setting of `0` will allow the operation to use any number of `shared_buffers`. Otherwise valid sizes range from `128 kB` to `16 GB`. If the specified size would exceed 1/8 the size of `shared_buffers`, the size is silently capped to that value. The default value is `2MB`. If this value is specified without units, it is taken as kilobytes. This parameter can be set at any time. It can be overridden for [VACUUM](https://www.postgresql.org/docs/current/sql-vacuum.html "VACUUM") and [ANALYZE](https://www.postgresql.org/docs/current/sql-analyze.html "ANALYZE") when passing the `BUFFER_USAGE_LIMIT` option. Higher settings can allow `VACUUM` and `ANALYZE` to run more quickly, but having too large a setting may cause too many other useful pages to be evicted from shared buffers.
 
 `logical_decoding_work_mem` (`integer`) [#](#GUC-LOGICAL-DECODING-WORK-MEM)
 
@@ -127,3 +130,4 @@ Specifies the dynamic shared memory implementation that the server should use. P
 `min_dynamic_shared_memory` (`integer`) [#](#GUC-MIN-DYNAMIC-SHARED-MEMORY)
 
 Specifies the amount of memory that should be allocated at server startup for use by parallel queries. When this memory region is insufficient or exhausted by concurrent queries, new parallel queries try to allocate extra shared memory temporarily from the operating system using the method configured with `dynamic_shared_memory_type`, which may be slower due to memory management overheads. Memory that is allocated at startup with `min_dynamic_shared_memory` is affected by the `huge_pages` setting on operating systems where that is supported, and may be more likely to benefit from larger pages on operating systems where that is managed automatically. The default value is `0` (none). This parameter can only be set at server start.
+

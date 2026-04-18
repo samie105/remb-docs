@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:36:48.790Z"
 content_hash: "830bf6ffb90a34bd5f6e183cc6da63ff3018e6934a7c02163edf053b5d527811"
 menu_path: ["{@const ...}"]
 section_path: []
+nav_prev: {"path": "svelte/docs/svelte/@attach/index.md", "title": "{@attach ...}"}
+nav_next: {"path": "svelte/docs/svelte/@debug/index.md", "title": "{@debug ...}"}
 ---
+
 The `{@const ...}` tag defines a local constant.
 
 ```
@@ -26,3 +29,4 @@ The `{@const ...}` tag defines a local constant.
 previous next
 
 [{@attach ...}](/docs/svelte/@attach) [{@debug ...}](/docs/svelte/@debug)
+

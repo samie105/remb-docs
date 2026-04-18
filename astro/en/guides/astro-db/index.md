@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:32:23.535Z"
 content_hash: "b08704cd65302d1001d8b453b6e8bafb4d6251696b85f7cfb5777222b705e4bb"
 menu_path: ["Astro DB"]
 section_path: []
+nav_prev: {"path": "astro/en/guides/data-fetching/index.md", "title": "Data fetching"}
+nav_next: {"path": "astro/en/guides/on-demand-rendering/index.md", "title": "On-demand rendering"}
 ---
+
 # Astro DB
 
 Astro DB is a fully-managed SQL database designed for the Astro ecosystem. Develop locally in Astro and deploy to any libSQL-compatible database.
@@ -578,3 +581,4 @@ The value returned by `asDrizzleTable('Pets', Pets)` is equivalent to `import { 
 8.  Once you have confirmed your project connects to the new database, you can safely delete the project from Astro Studio.
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

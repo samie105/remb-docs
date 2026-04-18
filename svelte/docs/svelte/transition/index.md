@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:38:08.412Z"
 content_hash: "dd4b59587761d53b454d46878dc2c90941639a66aa0033a8bfd99e9955202a02"
 menu_path: ["transition:"]
 section_path: []
+nav_prev: {"path": "svelte/docs/svelte/use/index.md", "title": "use:"}
+nav_next: {"path": "svelte/docs/svelte/in-and-out/index.md", "title": "in: and out:"}
 ---
+
 A _transition_ is triggered by an element entering or leaving the DOM as a result of a state change.
 
 When a block (such as an `{#if ...}` block) is transitioning out, all elements inside it, including those that do not have their own transitions, are kept in the DOM until every transition in the block has been completed.
@@ -236,3 +239,4 @@ An element with transitions will dispatch the following events in addition to an
 previous next
 
 [use:](/docs/svelte/use) [in: and out:](/docs/svelte/in-and-out)
+

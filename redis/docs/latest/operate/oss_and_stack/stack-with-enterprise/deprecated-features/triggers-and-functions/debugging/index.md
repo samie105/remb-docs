@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:02:51.702Z"
 content_hash: "84b8b5f6b9dd3b2259d92e835498d585ee3dd52dc21fb5d703de02af7229ff8d"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Redis Open Source and Redis Software","→","Redis Open Source and Redis Software","→\n      \n        Deprecated Redis Open Source features and modules","→","Deprecated Redis Open Source features and modules","→\n      \n        Triggers and functions","→","Triggers and functions","→\n      \n        Debugging","→","Debugging"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Redis Open Source and Redis Software","→","Redis Open Source and Redis Software","→\n      \n        Deprecated Redis Open Source features and modules","→","Deprecated Redis Open Source features and modules","→\n      \n        Triggers and functions","→","Triggers and functions","→\n      \n        Debugging","→","Debugging"]
+nav_prev: {"path": "redis/docs/latest/operate/rc/langcache/create-service/index.md", "title": "Create a LangCache service"}
+nav_next: {"path": "redis/docs/latest/operate/rc/security/access-control/data-access-control/default-user/index.md", "title": "Default user"}
 ---
+
 # Debugging
 
 Methods for debugging your Redis Stack functions
@@ -102,3 +105,4 @@ You'll see the following in the previous CLI session:
 There is a downside to using pub/sub. Redis pub/sub provides at-most-once message delivery semantics, which means that once a message is sent, it won't be sent again. So, if a message isn't consumed, it's gone forever. This is likely okay for debugging, but for the longer term, `redis.log` is the better solution for log persistence.
 
 ## On this page
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:59:37.686Z"
 content_hash: "0f192bf888cddb047debce0c6c2d10058a49524948224d915f58dec0e400dc24"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Software","→","Redis Software","→\n      \n        Install, set up, and upgrade Redis Software","→","Install, set up, and upgrade Redis Software","→\n      \n        Install Redis Software","→","Install Redis Software","→\n      \n        Plan Redis Software deployment","→","Plan Redis Software deployment"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Software","→","Redis Software","→\n      \n        Install, set up, and upgrade Redis Software","→","Install, set up, and upgrade Redis Software","→\n      \n        Install Redis Software","→","Install Redis Software","→\n      \n        Plan Redis Software deployment","→","Plan Redis Software deployment"]
+nav_prev: {"path": "redis/docs/latest/develop/clients/nodejs/index.md", "title": "node-redis guide (JavaScript)"}
+nav_next: {"path": "redis/docs/latest/integrate/php-redis/index.md", "title": "PHP client for Redis"}
 ---
+
 # Plan Redis Software deployment
 
 Plan a deployment of Redis Software.
@@ -52,3 +55,4 @@ After you finish planning your deployment, you can:
     
 
 ## On this page
+

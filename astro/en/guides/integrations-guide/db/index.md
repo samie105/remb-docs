@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:38:47.219Z"
 content_hash: "a02154b1a1538b1c0c0a16967db9d969598ec22f88da78ac73ae60e6ddb78f67"
 menu_path: ["@astrojs/\n\t\t\t\t\tdb"]
 section_path: []
+nav_prev: {"path": "astro/en/guides/integrations-guide/vercel/index.md", "title": "@astrojs/\n\t\t\t\t\tvercel"}
+nav_next: {"path": "astro/en/guides/integrations-guide/markdoc/index.md", "title": "@astrojs/\n\t\t\t\t\tmarkdoc"}
 ---
+
 # @astrojs/ db
 
 v0.20.1 [GitHub](https://github.com/withastro/astro/tree/main/packages/db/) [npm](https://www.npmjs.com/package/@astrojs/db) [Changelog](https://github.com/withastro/astro/tree/main/packages/db/CHANGELOG.md)
@@ -336,3 +339,4 @@ export const POST: APIRoute = (ctx) => {  try {    await db.insert(Comment).valu
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

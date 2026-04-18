@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:16:27.485Z"
 content_hash: "73b1d3156b64f46de07c08cab763d3d1162f47427a697cf8b49c678b32d258a0"
 menu_path: ["Deno Namespace APIs"]
 section_path: []
+nav_prev: {"path": "deno/deno/api/node/assert/strict/index.md", "title": "namespace assert.strict"}
+nav_next: {"path": "deno/deno/api/deno/~/Deno/index.md", "title": "namespace Deno"}
 ---
+
 On this page
 
 *   [API Documentation](#api-documentation)
@@ -982,3 +985,4 @@ globalThis.addEventListener("unload", (e) => {
 
 count++;
 ```
+

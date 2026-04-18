@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:42:13.957Z"
 content_hash: "1e17c203090adcf2bd43415109b522a085c912c74f275872ffd26fb1fbd6ddc2"
 menu_path: ["Inferring Types"]
 section_path: []
+nav_prev: {"path": "trpc/docs/v9/further-reading/index.md", "title": "Further Reading"}
+nav_next: {"path": "trpc/docs/v9/links/index.md", "title": "Links & Request Batching"}
 ---
+
 `// trpc-helper.ts`
 
 `// Import AppRouter from your main server router`
@@ -137,3 +140,4 @@ section_path: []
 `export type InferSubscriptionInput<TRouteKey extends TSubscription> =`
 
 `inferProcedureInput<AppRouter['_def']['subscriptions'][TRouteKey]>;`
+

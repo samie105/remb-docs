@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:42:34.136Z"
 content_hash: "36f3b322de18a8f9993010919a156d3ba8ef3c93914562ca592c91295793923a"
 menu_path: ["Astro render context"]
 section_path: []
+nav_prev: {"path": "astro/en/reference/routing-reference/index.md", "title": "Routing Reference"}
+nav_next: {"path": "astro/en/reference/modules/astro-actions/index.md", "title": "Actions API Reference"}
 ---
+
 # Astro render context
 
 When rendering a page, Astro provides a runtime API specific to the current render. This includes useful information such as the current page URL as well as APIs to perform actions like redirecting to another page.
@@ -800,3 +803,4 @@ After the build, the `<meta>` element for this individual page will add your has
 ```
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

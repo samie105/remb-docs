@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:55:22.248Z"
 content_hash: "7ec912274de28afdb34457eba41b4cd169bc9e2fb5f3152b351b63f465066fc8"
 menu_path: ["Database","Database","Extensions","Extensions","HypoPG: Hypothetical indexes","HypoPG: Hypothetical indexes"]
 section_path: ["Database","Database","Extensions","Extensions","HypoPG: Hypothetical indexes","HypoPG: Hypothetical indexes"]
+nav_prev: {"path": "supabase/docs/guides/auth/third-party/firebase-auth/index.md", "title": "Firebase Auth"}
+nav_next: {"path": "supabase/docs/guides/database/connecting-to-postgres/serverless-drivers/index.md", "title": "Connect to your database"}
 ---
+
 # 
 
 HypoPG: Hypothetical indexes
@@ -67,3 +70,4 @@ The query plan has changed from a `Seq Scan` to an `Index Scan` using the newly 
 ## Resources[#](#resources)
 
 *   Official [HypoPG documentation](https://hypopg.readthedocs.io/en/rel1_stable/)
+

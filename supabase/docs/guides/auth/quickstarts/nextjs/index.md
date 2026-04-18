@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:53:39.657Z"
 content_hash: "7c04fc80503087845901066d8f89c24c599a5156c3ace59fa4da0e5462795604"
 menu_path: ["Auth","Auth","Getting Started","Getting Started","Next.js","Next.js"]
 section_path: ["Auth","Auth","Getting Started","Getting Started","Next.js","Next.js"]
+nav_prev: {"path": "supabase/docs/guides/auth/oauth-server/oauth-flows/index.md", "title": "OAuth 2.1 Flows"}
+nav_next: {"path": "supabase/docs/guides/auth/quickstarts/react-native/index.md", "title": "Use Supabase Auth with React Native"}
 ---
+
 # 
 
 Use Supabase Auth with Next.js
@@ -117,3 +120,4 @@ To sign up a new user, navigate to [http://localhost:3000/auth/sign-up](http://l
 
 *   [Setting up Server-Side Auth for Next.js](/docs/guides/auth/server-side/nextjs) for a Next.js deep dive
 *   [Supabase Auth docs](/docs/guides/auth#authentication) for more Supabase authentication methods
+

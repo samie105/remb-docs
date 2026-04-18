@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:53:55.639Z"
 content_hash: "2d313a81f7660b452a3c54a2a1aed1c4826b1ad63bca0d2a9cce8b65b2eeb912"
 menu_path: ["Auth","Auth","Getting Started","Getting Started","React Native with Expo & Social Auth","React Native with Expo & Social Auth"]
 section_path: ["Auth","Auth","Getting Started","Getting Started","React Native with Expo & Social Auth","React Native with Expo & Social Auth"]
+nav_prev: {"path": "supabase/docs/guides/auth/server-side/migrating-to-ssr-from-auth-helpers/index.md", "title": "Migrating to the SSR package from Auth Helpers"}
+nav_next: {"path": "supabase/docs/guides/auth/sessions/implicit-flow/index.md", "title": "Implicit flow"}
 ---
+
 # 
 
 Build a Social Auth App with Expo React Native
@@ -387,3 +390,4 @@ Test the authentication in your browser using the tunnelled HTTPS URL:
 ```
 
 To allow the Google Sign In to work, as you did before for Apple, you need to register the tunnelled URL (e.g., `https://arnrer1-anonymous-8081.exp.direct`) obtained to the Authorized JavaScript origins list of your [Google Cloud Console's OAuth 2.0 Client IDs](https://console.cloud.google.com/auth/clients/) configuration.
+

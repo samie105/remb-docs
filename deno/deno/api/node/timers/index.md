@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:42:05.974Z"
 content_hash: "9d4c49f81cc13cdb9ab8273a86181277b36c65fe58ef832e2cbba0832aa14aad"
 menu_path: ["timers - Node documentation"]
 section_path: []
+nav_prev: {"path": "deno/deno/api/node/test/reporters/index.md", "title": "test/reporters - Node documentation"}
+nav_next: {"path": "deno/deno/api/node/timers/promises/index.md", "title": "timers/promises - Node documentation"}
 ---
+
 ### Usage in Deno
 
 ```typescript
@@ -165,3 +168,4 @@ v
 [promises.scheduler](.././timers/promises/~/promises.scheduler "promises.scheduler")
 
 No documentation available
+

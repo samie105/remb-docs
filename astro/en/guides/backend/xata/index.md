@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:32:50.550Z"
 content_hash: "01b431150205a1a28c5c1afb8e894247dbefdbc1453b04fd8bbdcd316c855512"
 menu_path: ["Xata & Astro"]
 section_path: []
+nav_prev: {"path": "astro/en/guides/backend/turso/index.md", "title": "Turso & Astro"}
+nav_next: {"path": "astro/en/guides/media/index.md", "title": "Image and video hosting with Astro"}
 ---
+
 # Xata & Astro
 
 [Xata](https://xata.io) is a **Serverless Data Platform** that combines the features of a relational database, a search engine, and an analytics engine by exposing a single consistent REST API.
@@ -130,3 +133,4 @@ It’s important to note the SDK needs to be regenerated every time your schema 
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

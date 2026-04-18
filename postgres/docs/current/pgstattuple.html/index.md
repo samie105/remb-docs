@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:42:33.556Z"
 content_hash: "30f89dd3b54bac8aca7bcf940167fa1b1e91c1bb8b878fbfe894b0f6d196d728"
 menu_path: ["PostgreSQL: Documentation: 18: F.33. pgstattuple — obtain tuple-level statistics"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/protocol-changes.html/index.md", "title": "PostgreSQL: Documentation: 18: 54.10.\u00a0Summary of Changes since Protocol 2.0"}
+nav_next: {"path": "postgres/docs/current/indexes-ordering.html/index.md", "title": "PostgreSQL: Documentation: 18: 11.4.\u00a0Indexes and ORDER BY"}
 ---
+
 The `pgstattuple` module provides various functions to obtain tuple-level statistics.
 
 Because these functions return detailed page-level information, access is restricted by default. By default, only the role `pg_stat_scan_tables` has `EXECUTE` privilege. Superusers of course bypass this restriction. After the extension has been installed, users may issue `GRANT` commands to change the privileges on the functions to allow others to execute them. However, it might be preferable to add those users to the `pg_stat_scan_tables` role instead.
@@ -422,3 +425,4 @@ Total free space in bytes (estimated)
 Percentage of free space
 
 In the above output, the free space figures may not match the `pgstattuple` output exactly, because the free space map gives us an exact figure, but is not guaranteed to be accurate to the byte.
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:01:46.648Z"
 content_hash: "4df7e29893c7280f8ace916a5ba40143b6c2b0de603db0f7bfb1107612ef4e2b"
 menu_path: ["Streams"]
 section_path: []
+nav_prev: {"path": "bun/bun/docs/runtime/sqlite/index.md", "title": "SQLite"}
+nav_next: {"path": "bun/bun/docs/runtime/templating/create/index.md", "title": "bun create"}
 ---
+
 Streams are an important abstraction for working with binary data without loading it all into memory at once. They are commonly used for reading and writing files, sending and receiving network requests, and processing large amounts of data. Bun implements the Web APIs [`ReadableStream`](https://developer.mozilla.org/en-US/docs/Web/API/ReadableStream) and [`WritableStream`](https://developer.mozilla.org/en-US/docs/Web/API/WritableStream).
 
 To create a `ReadableStream`:
@@ -225,3 +228,4 @@ export class ArrayBufferSink {
   end(): ArrayBuffer | Uint8Array<ArrayBuffer>;
 }
 ```
+

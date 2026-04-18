@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:53:23.086Z"
 content_hash: "9f401903b9fc1e52cd725f65e7b5c8cf9be7cd2b1bcac94d9f968f331d7e1025"
 menu_path: ["PostgreSQL: Documentation: 18: pg_basebackup"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/runtime-config-compatible.html/index.md", "title": "PostgreSQL: Documentation: 18: 19.13.\u00a0Version and Platform Compatibility"}
+nav_next: {"path": "postgres/docs/current/sql-reindex.html/index.md", "title": "PostgreSQL: Documentation: 18: REINDEX"}
 ---
+
 pg\_basebackup — take a base backup of a PostgreSQL cluster
 
 ## Synopsis
@@ -24,11 +27,11 @@ pg\_basebackup can take a full or incremental base backup of the database. When 
 
 In any mode, pg\_basebackup makes sure the server is put into and out of backup mode automatically. Backups are always taken of the entire database cluster; it is not possible to back up individual databases or database objects. For selective backups, another tool such as [pg\_dump](https://www.postgresql.org/docs/current/app-pgdump.html "pg_dump") must be used.
 
-The backup is made over a regular PostgreSQL connection that uses the replication protocol. The connection must be made with a user ID that has `REPLICATION` permissions (see [Section 21.2](https://www.postgresql.org/docs/current/role-attributes.html "21.2. Role Attributes")) or is a superuser, and [`pg_hba.conf`](https://www.postgresql.org/docs/current/auth-pg-hba-conf.html "20.1. The pg_hba.conf File") must permit the replication connection. The server must also be configured with [max\_wal\_senders](https://www.postgresql.org/docs/current/runtime-config-replication.html#GUC-MAX-WAL-SENDERS) set high enough to provide at least one walsender for the backup plus one for WAL streaming (if used).
+The backup is made over a regular PostgreSQL connection that uses the replication protocol. The connection must be made with a user ID that has `REPLICATION` permissions (see [Section 21.2](https://www.postgresql.org/docs/current/role-attributes.html "21.2. Role Attributes")) or is a superuser, and [`pg_hba.conf`](https://www.postgresql.org/docs/current/auth-pg-hba-conf.html "20.1. The pg_hba.conf File") must permit the replication connection. The server must also be configured with [max\_wal\_senders](postgres/docs/current/runtime-config-replication.html/index.md#GUC-MAX-WAL-SENDERS) set high enough to provide at least one walsender for the backup plus one for WAL streaming (if used).
 
 There can be multiple `pg_basebackup`s running at the same time, but it is usually better from a performance point of view to take only one backup, and copy the result.
 
-pg\_basebackup can make a base backup from not only a primary server but also a standby. To take a backup from a standby, set up the standby so that it can accept replication connections (that is, set `max_wal_senders` and [hot\_standby](https://www.postgresql.org/docs/current/runtime-config-replication.html#GUC-HOT-STANDBY), and configure its `pg_hba.conf` appropriately). You will also need to enable [full\_page\_writes](https://www.postgresql.org/docs/current/runtime-config-wal.html#GUC-FULL-PAGE-WRITES) on the primary.
+pg\_basebackup can make a base backup from not only a primary server but also a standby. To take a backup from a standby, set up the standby so that it can accept replication connections (that is, set `max_wal_senders` and [hot\_standby](postgres/docs/current/runtime-config-replication.html/index.md#GUC-HOT-STANDBY), and configure its `pg_hba.conf` appropriately). You will also need to enable [full\_page\_writes](postgres/docs/current/runtime-config-wal.html/index.md#GUC-FULL-PAGE-WRITES) on the primary.
 
 Note that there are some limitations in taking a backup from a standby:
 
@@ -122,7 +125,7 @@ Don't include write-ahead logs in the backup.
 `f`  
 `fetch`
 
-The write-ahead log files are collected at the end of the backup. Therefore, it is necessary for the source server's [wal\_keep\_size](https://www.postgresql.org/docs/current/runtime-config-replication.html#GUC-WAL-KEEP-SIZE) parameter to be set high enough that the required log data is not removed before the end of the backup. If the required log data has been recycled before it's time to transfer it, the backup will fail and be unusable.
+The write-ahead log files are collected at the end of the backup. Therefore, it is necessary for the source server's [wal\_keep\_size](postgres/docs/current/runtime-config-replication.html/index.md#GUC-WAL-KEEP-SIZE) parameter to be set high enough that the required log data is not removed before the end of the backup. If the required log data has been recycled before it's time to transfer it, the backup will fail and be unusable.
 
 When tar format is used, the write-ahead log files will be included in the `base.tar` file.
 
@@ -199,7 +202,7 @@ This option always affects transfer of the data directory. Transfer of WAL files
 ``-S _`slotname`_``  
 ``--slot=_`slotname`_``
 
-This option can only be used together with `-X stream`. It causes WAL streaming to use the specified replication slot. If the base backup is intended to be used as a streaming-replication standby using a replication slot, the standby should then use the same replication slot name as [primary\_slot\_name](https://www.postgresql.org/docs/current/runtime-config-replication.html#GUC-PRIMARY-SLOT-NAME). This ensures that the primary server does not remove any necessary WAL data in the time between the end of the base backup and the start of streaming replication on the new standby.
+This option can only be used together with `-X stream`. It causes WAL streaming to use the specified replication slot. If the base backup is intended to be used as a streaming-replication standby using a replication slot, the standby should then use the same replication slot name as [primary\_slot\_name](postgres/docs/current/runtime-config-replication.html/index.md#GUC-PRIMARY-SLOT-NAME). This ensures that the primary server does not remove any necessary WAL data in the time between the end of the base backup and the start of streaming replication on the new standby.
 
 The specified replication slot has to exist unless the option `-C` is also used.
 
@@ -364,3 +367,4 @@ To create a backup of the local server with one tar file for each tablespace com
 ```
 $
 ```
+

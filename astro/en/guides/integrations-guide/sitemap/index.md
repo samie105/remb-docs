@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:39:41.702Z"
 content_hash: "a4eeb5491fe06694a75086f7a575cb399201eabe7c8d2b2635643524c626f4dd"
 menu_path: ["@astrojs/\n\t\t\t\t\tsitemap"]
 section_path: []
+nav_prev: {"path": "astro/en/guides/integrations-guide/partytown/index.md", "title": "@astrojs/\n\t\t\t\t\tpartytown"}
+nav_next: {"path": "astro/en/guides/deploy/index.md", "title": "Deploy your Astro Site"}
 ---
+
 # @astrojs/ sitemap
 
 v3.7.2 [GitHub](https://github.com/withastro/astro/tree/main/packages/integrations/sitemap/) [npm](https://www.npmjs.com/package/@astrojs/sitemap) [Changelog](https://github.com/withastro/astro/tree/main/packages/integrations/sitemap/CHANGELOG.md)
@@ -559,3 +562,4 @@ Describes the [configuration options](#configuration).
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

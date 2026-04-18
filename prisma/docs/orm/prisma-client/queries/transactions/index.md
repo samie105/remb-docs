@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:47:26.552Z"
 content_hash: "36ae2eef89c88664d12a43e6207989bb6b9834f82276a2850bb5c4be80c3db4b"
 menu_path: ["Transactions and batch queries"]
 section_path: []
+nav_prev: {"path": "prisma/docs/orm/prisma-client/setup-and-configuration/database-polyfills/index.md", "title": "Database polyfills"}
+nav_next: {"path": "prisma/docs/orm/prisma-client/setup-and-configuration/error-formatting/index.md", "title": "Configuring error formatting"}
 ---
+
 A database transaction is a sequence of read/write operations guaranteed to succeed or fail as a whole (ACID properties: Atomic, Consistent, Isolated, Durable).
 
 Prisma Client supports transactions in several ways:
@@ -30,7 +33,7 @@ Read, modify, write
 
 Interactive transactions
 
-A [nested write](https://www.prisma.io/docs/orm/prisma-client/queries/relation-queries#nested-writes) performs multiple operations on related records in a single transaction:
+A [nested write](prisma/docs/orm/prisma-client/queries/relation-queries/index.md#nested-writes) performs multiple operations on related records in a single transaction:
 
 ```
 // Create user with posts in a single transaction
@@ -280,7 +283,7 @@ To avoid transaction write conflicts and deadlocks on a transaction:
 
 1.  On your transaction, use the `isolationLevel` parameter to `Prisma.TransactionIsolationLevel.Serializable`.
     
-    This ensures that your application commits multiple concurrent or parallel transactions as if they were run serially. When a transaction fails due to a write conflict or deadlock, Prisma Client returns a [P2034 error](https://www.prisma.io/docs/orm/reference/error-reference#p2034).
+    This ensures that your application commits multiple concurrent or parallel transactions as if they were run serially. When a transaction fails due to a write conflict or deadlock, Prisma Client returns a [P2034 error](prisma/docs/orm/reference/error-reference/index.md#p2034).
     
 2.  In your application code, add a retry around your transaction to handle any P2034 errors, as shown in this example:
     
@@ -973,3 +976,4 @@ If the application encounters an error along the way, the async function will th
 You can learn more about interactive transactions in this [section](#interactive-transactions).
 
 Prisma Client supports multiple ways of handling transactions, either directly through the API or by supporting your ability to introduce optimistic concurrency control and idempotency into your application. If you feel like you have use cases in your application that are not covered by any of the suggested options, please open a [GitHub issue](https://github.com/prisma/prisma/issues/new/choose) to start a discussion.
+

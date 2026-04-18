@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:40:57.118Z"
 content_hash: "28411899305acb7935b8c2fa6db494300359795be88d00e0e89054aca513aec5"
 menu_path: ["tRPC | tRPC"]
 section_path: []
+nav_prev: {"path": "trpc/docs/v10/videos-and-community-resources/index.md", "title": "Videos and Community Resources"}
+nav_next: {"path": "trpc/docs/v9/authorization/index.md", "title": "Authorization"}
 ---
+
 ![tRPC](https://trpc.io/img/logo-text-white.svg)
 
 End-to-end typesafe APIs made easy
@@ -28,7 +31,7 @@ As TypeScript and static typing increasingly becomes a best practice in web prog
 
 ### An alternative to traditional REST or GraphQL[​](#an-alternative-to-traditional-rest-or-graphql "Direct link to An alternative to traditional REST or GraphQL")
 
-Currently GraphQL is the dominant way to implement typesafe APIs in TypeScript (and it's amazing!). Since GraphQL is designed as a language-agnostic specification for implementing APIs, it doesn't take full advantage of the power of a language like TypeScript - [further reading](https://trpc.io/docs/v9/further-reading#relationship-to-graphql).
+Currently GraphQL is the dominant way to implement typesafe APIs in TypeScript (and it's amazing!). Since GraphQL is designed as a language-agnostic specification for implementing APIs, it doesn't take full advantage of the power of a language like TypeScript - [further reading](trpc/docs/v9/further-reading/index.md#relationship-to-graphql).
 
 If your project is built with full-stack TypeScript, you can share types **directly** between your client and server, without relying on code generation.
 
@@ -42,4 +45,5 @@ If your project is built with full-stack TypeScript, you can share types **direc
 *   🔋  Batteries included - React.js/Next.js/Express.js/Fastify adapters. _(But tRPC is not tied to React and there are many [community adapters](https://trpc.io/docs/awesome-trpc#-extensions--community-add-ons) for other libraries)_
 *   🥃  Subscriptions support.
 *   ⚡️  Request batching - requests made at the same time can be automatically combined into one.
-*   👀  Quite a few [examples](https://trpc.io/docs/v9/example-apps) that you can use for reference or as a starting point.
+*   👀  Quite a few [examples](trpc/docs/v9/example-apps/index.md) that you can use for reference or as a starting point.
+

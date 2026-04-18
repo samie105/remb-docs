@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:32:06.824Z"
 content_hash: "d8bd30c40928b47a4216aae6a3c6d51c44986c09c2b8284334af5fd73735f612"
 menu_path: ["Deployment & Branching","Deployment & Branching","Overview","Overview"]
 section_path: ["Deployment & Branching","Deployment & Branching","Overview","Overview"]
+nav_prev: {"path": "supabase/docs/guides/cli/index.md", "title": "Local Development & CLI"}
+nav_next: {"path": "supabase/docs/guides/functions/index.md", "title": "Edge Functions"}
 ---
+
 # 
 
 Deployment & Branching
@@ -39,3 +42,4 @@ You can automate deployments using:
 *   The [Supabase GitHub integration](/dashboard/project/_/settings/integrations) (with branching enabled)
 *   The [Supabase CLI](/docs/guides/local-development) in your own continuous deployment pipeline
 *   The [Supabase Terraform provider](/docs/guides/deployment/terraform)
+

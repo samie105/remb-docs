@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:59:26.230Z"
 content_hash: "be08488dadf5d2f1ac1c7bc221703c7be1c04d5f7d02e094797144630b5711cd"
 menu_path: ["Start with Supabase","Start with Supabase","Mobile tutorials","Mobile tutorials","Swift","Swift"]
 section_path: ["Start with Supabase","Start with Supabase","Mobile tutorials","Mobile tutorials","Swift","Swift"]
+nav_prev: {"path": "supabase/docs/guides/getting-started/tutorials/with-sveltekit/index.md", "title": "Build a User Management App with SvelteKit"}
+nav_next: {"path": "supabase/docs/guides/getting-started/tutorials/with-vue-3/index.md", "title": "Build a User Management App with Vue 3"}
 ---
+
 # 
 
 Build a User Management App with Swift and SwiftUI
@@ -153,3 +156,4 @@ Finally, update your Models.
 You no longer need the `UpdateProfileParams` struct, as you can now reuse the `Profile` struct for both request and response calls.
 
 At this stage you have a fully functional application!
+

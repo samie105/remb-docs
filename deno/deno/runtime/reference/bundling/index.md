@@ -9,54 +9,9 @@ last_crawled_at: "2026-04-18T16:50:14.878Z"
 content_hash: "e0d16ea8c6075a679f1fef59d42eeef49acbce9e317abb8518f0227bdb2e263a"
 menu_path: ["Bundling"]
 section_path: []
+nav_prev: {"path": "deno/deno/runtime/reference/documentation/index.md", "title": "Documentation Tests"}
+nav_next: {"path": "deno/deno/runtime/reference/lint_plugins/index.md", "title": "Lint Plugins"}
 ---
-On this page
-
-*   [Supported features](#supported-features)
-*   [Basic example](#basic-example)
-*   [Options Overview](#options-overview)
-*   [Runtime API](#runtime-api)
-    *   [Basic usage](#basic-usage)
-    *   [Processing outputs in memory](#processing-outputs-in-memory)
-*   [HTML entrypoint support](#html-entrypoint-support)
-    *   [Example](#example)
-    *   [When to use HTML bundling](#when-to-use-html-bundling)
-*   [Bundle a React page for the web](#bundle-a-react-page-for-the-web)
-
-Caution
-
-This is an experimental feature and requires Deno `2.4.0` or newer.
-
-The `deno bundle` command outputs a single JavaScript file with all dependencies.
-
-`deno bundle` is powered by [ESBuild](https://esbuild.github.io/) under the hood.
-
-This tool is useful for deploying or distributing a project as a single optimized JS file.
-
-## Supported features
-
-*   Resolves and inlines all dependencies
-*   Supports JSX/TSX, TypeScript, and modern JavaScript, including [import attributes](/runtime/fundamentals/modules/#import-attributes) and CSS
-*   HTML entrypoint support (Deno 2.5+)
-*   Optional minification (`--minify`) and source maps (`--sourcemap`)
-*   Code splitting
-*   Platform targeting (`--platform`, supports Deno and browser)
-*   JSX support when configured
-
-## Basic example
-
-main.ts
-
-```ts
-import chalk from "npm:chalk";
-
-console.log(chalk.red("Hello from `deno bundle`!"));
-```
-
-\>\_
-
-```bash
-$ deno bundle main.ts > bundle.js
 
 # Or with an explicit output file:
 
@@ -287,3 +242,4 @@ Listening on http://127.0.0.1:8000
 Visiting the page in your browser should show:
 
 ![Image of serving bundled React app](/runtime/reference/images/bundled_react.png)
+

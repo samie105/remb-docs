@@ -9,15 +9,9 @@ last_crawled_at: "2026-04-18T17:00:56.426Z"
 content_hash: "df9b92872ecd0803819d3db946a4add8ea4a4483c078284bde6e0cadfbdae12c"
 menu_path: ["background-clip"]
 section_path: []
+nav_prev: {"path": "tailwind/docs/background-attachment/index.md", "title": "background-attachment"}
+nav_next: {"path": "tailwind/docs/background-color/index.md", "title": "background-color"}
 ---
-[](/)
-
-[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
-
-1.  Backgrounds
-2.  background-clip
-
-Backgrounds
 
 # background-clip
 
@@ -102,3 +96,4 @@ Make your ideas look awesome, without relying on a designer.
 ](https://www.refactoringui.com/?ref=sidebar)
 
 Copyright © 2026 Tailwind Labs Inc.·[Trademark Policy](/brand)
+

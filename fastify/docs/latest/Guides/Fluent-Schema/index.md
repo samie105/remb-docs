@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:38:18.655Z"
 content_hash: "a43effc392a91a3b8b04b59a25ea25add1da89a408e0371d3002a63987317c8b"
 menu_path: ["Fluent-Schema"]
 section_path: []
+nav_prev: {"path": "fastify/docs/latest/Guides/Ecosystem/index.md", "title": "Ecosystem"}
+nav_next: {"path": "fastify/docs/latest/Guides/Migration-Guide-V3/index.md", "title": "V3 Migration Guide"}
 ---
+
 Version: latest (v5.8.x)
 
 ## Fluent Schema[​](#fluent-schema "Direct link to Fluent Schema")
@@ -43,3 +46,4 @@ const sharedAddressSchema = {  $id: 'sharedAddress',  type: 'object',  required:
 ```
 
 > ℹ️ Note: You can mix up the `$ref-way` and the `replace-way` when using `fastify.addSchema`.
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:50:15.962Z"
 content_hash: "53fd81f4b97e1b735aefdaa4698c926dfdebf6e0e3fe53f6808c993f4666a9a9"
 menu_path: ["PostgreSQL: Documentation: 18: 53.10. pg_hba_file_rules"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/xact-locking.html/index.md", "title": "PostgreSQL: Documentation: 18: 67.2.\u00a0Transactions and Locking"}
+nav_next: {"path": "postgres/docs/current/spi-spi-scroll-cursor-move.html/index.md", "title": "PostgreSQL: Documentation: 18: SPI_scroll_cursor_move"}
 ---
+
 Development Versions: [devel](https://www.postgresql.org/docs/devel/view-pg-hba-file-rules.html "PostgreSQL devel - 53.10. pg_hba_file_rules")
 
 The view `pg_hba_file_rules` provides a summary of the contents of the client authentication configuration file, [`pg_hba.conf`](https://www.postgresql.org/docs/current/auth-pg-hba-conf.html "20.1. The pg_hba.conf File"). A row appears in this view for each non-empty, non-comment line in the file, with annotations indicating whether the rule could be applied successfully.
@@ -71,3 +74,4 @@ If not null, an error message indicating why this line could not be processed
 Usually, a row reflecting an incorrect entry will have values for only the `line_number` and `error` fields.
 
 See [Chapter 20](https://www.postgresql.org/docs/current/client-authentication.html "Chapter 20. Client Authentication") for more information about client authentication configuration.
+

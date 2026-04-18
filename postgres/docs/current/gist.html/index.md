@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:32:25.772Z"
 content_hash: "186f97f5acb2f002b31b63425b987948df86e36e2b60ff9a545db97101196854"
 menu_path: ["PostgreSQL: Documentation: 18: 65.2. GiST Indexes"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/libpq-notice-processing.html/index.md", "title": "PostgreSQL: Documentation: 18: 32.13.\u00a0Notice Processing"}
+nav_next: {"path": "postgres/docs/current/sql-createsubscription.html/index.md", "title": "PostgreSQL: Documentation: 18: CREATE SUBSCRIPTION"}
 ---
+
 ### 65.2.1. Introduction [#](#GIST-INTRO)
 
 GiST stands for Generalized Search Tree. It is a balanced, tree-structured access method, that acts as a base template in which to implement arbitrary indexing schemes. B-trees, R-trees and many other indexing schemes can be implemented in GiST.
@@ -888,7 +891,7 @@ The buffered method works by not inserting tuples directly into the index right 
 
 The buffered method needs to call the `penalty` function more often than the simple method does, which consumes some extra CPU resources. Also, the buffers need temporary disk space, up to the size of the resulting index. Buffering can also influence the quality of the resulting index, in both positive and negative directions. That influence depends on various factors, like the distribution of the input data and the operator class implementation.
 
-If sorting is not possible, then by default a GiST index build switches to the buffering method when the index size reaches [effective\_cache\_size](https://www.postgresql.org/docs/current/runtime-config-query.html#GUC-EFFECTIVE-CACHE-SIZE). Buffering can be manually forced or prevented by the `buffering` parameter to the CREATE INDEX command. The default behavior is good for most cases, but turning buffering off might speed up the build somewhat if the input data is ordered.
+If sorting is not possible, then by default a GiST index build switches to the buffering method when the index size reaches [effective\_cache\_size](postgres/docs/current/runtime-config-query.html/index.md#GUC-EFFECTIVE-CACHE-SIZE). Buffering can be manually forced or prevented by the `buffering` parameter to the CREATE INDEX command. The default behavior is good for most cases, but turning buffering off might speed up the build somewhat if the input data is ordered.
 
 ### 65.2.5. Examples [#](#GIST-EXAMPLES)
 
@@ -921,3 +924,4 @@ Text similarity using trigram matching
 `seg`
 
 Indexing for “float ranges”
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:07:12.725Z"
 content_hash: "b18310ced706388e29714acf4d902f29b514d66e8d7f6ae0f6648f04d15a41c8"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Enterprise for Kubernetes","→","Redis Enterprise for Kubernetes","→\n      \n        Redis Enterprise Software for Kubernetes release notes","→","Redis Enterprise Software for Kubernetes release notes","→\n      \n        Redis Enterprise for Kubernetes 7.4.2 release notes","→","Redis Enterprise for Kubernetes 7.4.2 release notes","→\n      \n        Redis Enterprise for Kubernetes 7.4.2-12 (May 2024) release notes","→","Redis Enterprise for Kubernetes 7.4.2-12 (May 2024) release notes"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Enterprise for Kubernetes","→","Redis Enterprise for Kubernetes","→\n      \n        Redis Enterprise Software for Kubernetes release notes","→","Redis Enterprise Software for Kubernetes release notes","→\n      \n        Redis Enterprise for Kubernetes 7.4.2 release notes","→","Redis Enterprise for Kubernetes 7.4.2 release notes","→\n      \n        Redis Enterprise for Kubernetes 7.4.2-12 (May 2024) release notes","→","Redis Enterprise for Kubernetes 7.4.2-12 (May 2024) release notes"]
+nav_prev: {"path": "redis/docs/latest/develop/use-cases/leaderboard/dotnet/index.md", "title": "Redis leaderboard with .NET"}
+nav_next: {"path": "redis/docs/latest/operate/oss_and_stack/stack-with-enterprise/deprecated-features/triggers-and-functions/concepts/index.md", "title": "Concepts"}
 ---
+
 # Redis Enterprise for Kubernetes 7.4.2-12 (May 2024) release notes
 
 This is a feature release with a new version of Redis Enterprise Software support for persistent volume expansion.
@@ -330,3 +333,4 @@ Any distribution not listed below is not supported for production workloads.
     
 
 ## On this page
+

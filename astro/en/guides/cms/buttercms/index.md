@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:33:16.640Z"
 content_hash: "dbadec6b3aba7539bc06eee42533f00a768dba87e657b96d5298d71877858638"
 menu_path: ["ButterCMS & Astro"]
 section_path: []
+nav_prev: {"path": "astro/en/guides/cms/builderio/index.md", "title": "Builder.io & Astro"}
+nav_next: {"path": "astro/en/guides/cms/caisy/index.md", "title": "Caisy & Astro"}
 ---
+
 # ButterCMS & Astro
 
 [ButterCMS](https://buttercms.com/) is a headless CMS and blog engine that allows you to publish structured content to use in your project.
@@ -282,3 +285,4 @@ const fields = pageData.fields as Fields;---<html>  <title>{fields.seo_title}</t
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

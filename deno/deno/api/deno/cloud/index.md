@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:08:38.841Z"
 content_hash: "451c9c31bcbd761baaa3fdb81cbcfa66b0ea23ff77efcd2352256c261869ecfc"
 menu_path: ["Cloud - Deno documentation"]
 section_path: []
+nav_prev: {"path": "deno/deno/api/deno/index.md", "title": "Deno Namespace APIs"}
+nav_next: {"path": "deno/deno/api/deno/errors/index.md", "title": "Errors - Deno documentation"}
 ---
+
 ### Classes [#](#Classes)
 
 c
@@ -182,3 +185,4 @@ T
 [Deno.KvMutation](./././~/Deno.KvMutation "Deno.KvMutation")
 
 A mutation to a key in a [`Deno.Kv`](./././~/Deno.Kv). A mutation is a combination of a key, a value, and a type. The type determines how the mutation is applied to the key.
+

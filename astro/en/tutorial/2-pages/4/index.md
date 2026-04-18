@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:48:24.718Z"
 content_hash: "a7d0a794305990da12c532902db4d65ad7c24767e695f260da37413ec7b6b353"
 menu_path: ["Style your About page"]
 section_path: []
+nav_prev: {"path": "astro/en/tutorial/2-pages/3/index.md", "title": "Add dynamic content about you"}
+nav_next: {"path": "astro/en/tutorial/2-pages/5/index.md", "title": "Add site-wide styling"}
 ---
+
 # Style your About page
 
 Now that you have an About page with content about you, it’s time to style it!
@@ -125,3 +128,4 @@ const skillColor = "crimson";const fontWeight = "bold";const textCase = "upperca
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

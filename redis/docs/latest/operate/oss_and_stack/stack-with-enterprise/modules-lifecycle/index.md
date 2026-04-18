@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:10:07.973Z"
 content_hash: "631a037e9f09580b7af1e0406d6e6bb499521ea2641af5fa02bd81f5dcb0b935"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Redis Open Source and Redis Software","→","Redis Open Source and Redis Software","→\n      \n        Module lifecycle","→","Module lifecycle"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Redis Open Source and Redis Software","→","Redis Open Source and Redis Software","→\n      \n        Module lifecycle","→","Module lifecycle"]
+nav_prev: {"path": "redis/docs/latest/develop/ai/redisvl/user_guide/session_manager/index.md", "title": "LLM Session Memory"}
+nav_next: {"path": "redis/docs/latest/integrate/nagios-with-redis-enterprise/index.md", "title": "Nagios with Redis Software"}
 ---
+
 # Module lifecycle
 
 Redis Software follows the [Redis Software lifecycle](/docs/latest/operate/rs/installing-upgrading/product-lifecycle/). (For complete details, see the Redis Software [subscription agreement](https://redis.com/software-subscription-agreement).)
@@ -212,3 +215,4 @@ End-of-Life (EOL)
 February 28, 2023
 
 ## On this page
+

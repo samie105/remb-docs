@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:11:59.228Z"
 content_hash: "e37d9999d1fd504e27bd20543d115f20ce56ab99caa4fda3baac2771c2eab297"
 menu_path: ["Web Platform APIs"]
 section_path: []
+nav_prev: {"path": "deno/deno/api/deno/all_symbols/index.md", "title": "All Symbols - Deno documentation"}
+nav_next: {"path": "deno/deno/api/web/cache/index.md", "title": "Cache - Web documentation"}
 ---
+
 On this page
 
 *   [Core Web APIs](#core-web-apis)
@@ -542,3 +545,5 @@ A few things that are different compared to browsers:
 
 1.  You cannot pass relative paths to the APIs. The request can be an instance of Request or URL or a url string.
 2.  `match()` & `delete()` don't support query options yet.
+
+

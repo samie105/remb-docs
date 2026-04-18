@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:34:08.609Z"
 content_hash: "3f33874c7a3550c6a39221c38819c0c360d101ffa6d4431a9dbfe0c26993994e"
 menu_path: ["PostgreSQL: Documentation: 18: 34.17. Internals"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/ddl-system-columns.html/index.md", "title": "PostgreSQL: Documentation: 18: 5.6.\u00a0System Columns"}
+nav_next: {"path": "postgres/docs/current/contrib-dblink-get-notify.html/index.md", "title": "PostgreSQL: Documentation: 18: dblink_get_notify"}
 ---
+
 This section explains how ECPG works internally. This information can occasionally be useful to help users understand how to use ECPG.
 
 The first four lines written by `ecpg` to the output are fixed lines. Two are comments and two are include lines necessary to interface to the library. Then the preprocessor reads through the file and writes output. Normally it just echoes everything to the output.
@@ -107,3 +110,4 @@ ECPGdo(\_\_LINE\_\_, NULL, "SELECT res FROM mytable WHERE index = ?     ",
 #line 147 "foo.pgc"
 
 (The indentation here is added for readability and not something the preprocessor does.)
+

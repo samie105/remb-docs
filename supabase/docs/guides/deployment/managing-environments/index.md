@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:43:13.912Z"
 content_hash: "fe679a375ee0f1ef0731f306872de25ad68b2f6189c17ef729f2808c8bb34e08"
 menu_path: ["Deployment & Branching","Deployment & Branching","Environments","Environments","Managing environments","Managing environments"]
 section_path: ["Deployment & Branching","Deployment & Branching","Environments","Environments","Managing environments","Managing environments"]
+nav_prev: {"path": "supabase/docs/guides/deployment/maturity-model/index.md", "title": "Maturity Model"}
+nav_next: {"path": "supabase/docs/guides/deployment/shared-responsibility-model/index.md", "title": "Shared Responsibility Model"}
 ---
+
 # 
 
 Managing Environments
@@ -246,3 +249,4 @@ We can handle this scenario gracefully by renaming your old migration file with 
 In case [`reset`](/docs/reference/cli/usage#supabase-db-reset) fails, you can manually resolve conflicts by editing `<t+2>_dev_A.sql` file.
 
 Once validated locally, commit your changes to Git and push to GitHub.
+

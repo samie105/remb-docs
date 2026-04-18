@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:32:01.228Z"
 content_hash: "890fd8c017726d6ccec7738d09f36c98f2dac4074fb4369c14ca37ca66e6e3d5"
 menu_path: ["PostgreSQL: Documentation: 18: F.35. pg_trgm — support for similarity of text using trigram matching"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/dict-int.html/index.md", "title": "PostgreSQL: Documentation: 18: F.12.\u00a0dict_int \u2014 example full-text search dictionary for integers"}
+nav_next: {"path": "postgres/docs/current/logicaldecoding-catalogs.html/index.md", "title": "PostgreSQL: Documentation: 18: 47.5.\u00a0System Catalogs Related to Logical Decoding"}
 ---
+
 The `pg_trgm` module provides functions and operators for determining the similarity of alphanumeric text based on trigram matching, as well as index operator classes that support fast searching for similar strings.
 
 This module is considered “trusted”, that is, it can be installed by non-superusers who have `CREATE` privilege on the current database.
@@ -254,3 +257,4 @@ Alexander Korotkov `<[a.korotkov@postgrespro.ru](mailto:a.korotkov@postgrespro.r
 Documentation: Christopher Kings-Lynne
 
 This module is sponsored by Delta-Soft Ltd., Moscow, Russia.
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:46:34.645Z"
 content_hash: "17e827267cfa4c142a4b384d525f782e0dc7922e74418dbf28d0f065eb0826a4"
 menu_path: ["Integrations","Integrations","Build Your Own","Build Your Own","Supabase for Platforms","Supabase for Platforms"]
 section_path: ["Integrations","Integrations","Build Your Own","Build Your Own","Supabase for Platforms","Supabase for Platforms"]
+nav_prev: {"path": "supabase/docs/guides/integrations/vercel-marketplace/index.md", "title": "Vercel Marketplace"}
+nav_next: {"path": "supabase/docs/guides/local-development/declarative-database-schemas/index.md", "title": "Declarative database schemas"}
 ---
+
 # 
 
 Supabase for Platforms
@@ -302,3 +305,4 @@ When you need to debug a project, you can query the project's logs to see if the
 ```
 1curl 'https://api.supabase.com/v1/projects/{ref}/analytics/endpoints/logs.all' \2  --get \3  --header 'Authorization: Bearer YOUR_SECRET_TOKEN' \4  --data-urlencode 'sql=SELECT datetime(timestamp), status_code, path, event_message5    FROM edge_logs6    CROSS JOIN UNNEST(metadata) AS metadata7    CROSS JOIN UNNEST(response) AS response8    WHERE status_code >= 4009    ORDER BY timestamp DESC10    LIMIT 100' \11  --data-urlencode 'iso_timestamp_start=2025-03-23T00:00:00Z' \12  --data-urlencode 'iso_timestamp_end=2025-03-23T01:00:00Z'
 ```
+

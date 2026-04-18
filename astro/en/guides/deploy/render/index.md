@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:37:40.080Z"
 content_hash: "f85962d4df8af0f3baffd75cfa62ab9d8623998fc2035278fb5cc0f4089a068d"
 menu_path: ["Deploy your Astro Site to Render"]
 section_path: []
+nav_prev: {"path": "astro/en/guides/deploy/railway/index.md", "title": "Deploy your Astro Site with Railway"}
+nav_next: {"path": "astro/en/guides/deploy/seenode/index.md", "title": "Deploy your Astro Site to Seenode"}
 ---
+
 # Deploy your Astro Site to Render
 
 You can deploy your Astro project to [Render](https://render.com/), a service to build websites with free TLS certificates, a global CDN, DDoS protection, private networks, and auto deploys from Git.
@@ -163,3 +166,4 @@ You can deploy your Astro project to [Render](https://render.com/), a service to
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

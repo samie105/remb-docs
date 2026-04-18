@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:43:37.187Z"
 content_hash: "822db0a3af9b923b3f421a822f7aa122c3df75fb42164ea3d80d4446b761fd48"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Cloud","→","Redis Cloud","→\n      \n        Manage databases","→","Manage databases","→\n      \n        Connect to a Redis Cloud database","→","Connect to a Redis Cloud database","→\n      \n        Use Redis Insight on Redis Cloud","→","Use Redis Insight on Redis Cloud"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Cloud","→","Redis Cloud","→\n      \n        Manage databases","→","Manage databases","→\n      \n        Connect to a Redis Cloud database","→","Connect to a Redis Cloud database","→\n      \n        Use Redis Insight on Redis Cloud","→","Use Redis Insight on Redis Cloud"]
+nav_prev: {"path": "redis/docs/latest/integrate/redisinsight/index.md", "title": "Redis Insight"}
+nav_next: {"path": "redis/docs/latest/develop/ai/search-and-query/best-practices/scalable-query-best-practices/index.md", "title": "Best practices for Redis Search performance"}
 ---
+
 # Use Redis Insight on Redis Cloud
 
 Shows how to open your database in a browser-based version of Redis Insight and lists the features that are available.
@@ -77,3 +80,4 @@ You can also select the **Insights** button in the top-right corner to view the 
 [![The Insights button](/docs/latest/images/rc/rc-ri-insights-button.png)](/docs/latest/images/rc/rc-ri-insights-button.png)
 
 ## On this page
+

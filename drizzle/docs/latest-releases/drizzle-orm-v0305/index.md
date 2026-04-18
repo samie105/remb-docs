@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:14:03.761Z"
 content_hash: "fa49c63edae9664e0da64a00b4ed34b169e829dbc4a902dfeba367a75f78fb6b"
 menu_path: ["Drizzle ORM - DrizzleORM v0.30.5 release"]
 section_path: []
+nav_prev: {"path": "drizzle/docs/latest-releases/drizzle-orm-v0303/index.md", "title": "Drizzle ORM - DrizzleORM v0.30.3 release"}
+nav_next: {"path": "drizzle/docs/latest-releases/drizzle-orm-v0304/index.md", "title": "Drizzle ORM - DrizzleORM v0.30.4 release"}
 ---
+
 DrizzleORM v0.30.5 release
 
 Mar 27, 2024
@@ -35,3 +38,4 @@ const usersOnUpdate = pgTable('users_on_update', {
 ## Fixes
 
 *   Insertions on columns with the smallserial datatype are not optional - [#1848](https://github.com/drizzle-team/drizzle-orm/issues/1848)
+

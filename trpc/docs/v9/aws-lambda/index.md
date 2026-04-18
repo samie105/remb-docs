@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:41:15.251Z"
 content_hash: "1c7ca15af3097f3ab2ff2c6f3314217753739f9a06aca36b87a69ed2423bfee0"
 menu_path: ["Usage with Amazon Lambda through the API Gateway"]
 section_path: []
+nav_prev: {"path": "trpc/docs/v9/awesome-trpc/index.md", "title": "Awesome tRPC Collection"}
+nav_next: {"path": "trpc/docs/v9/caching/index.md", "title": "Response Caching"}
 ---
+
 ## Amazon Lambda adapter[​](#amazon-lambda-adapter "Direct link to Amazon Lambda adapter")
 
 The AWS Lambda adapter is supported for API Gateway Rest API(v1) and HTTP API(v2) use cases.
@@ -122,3 +125,4 @@ To infer what version you might have, supply the context as following:
 `function createContext({   event,   context, }: CreateAWSLambdaContextOptions<APIGatewayProxyEvent>) {   ... }  // CreateAWSLambdaContextOptions<APIGatewayProxyEvent> or CreateAWSLambdaContextOptions<APIGatewayProxyEventV2>`
 
 [Read more here about payload format version](https://docs.aws.amazon.com/apigateway/latest/developerguide/http-api-develop-integrations-lambda.html)
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:07:14.227Z"
 content_hash: "2521ae487c45506361fe7f01317a5546a2c46b48cfd9b64edcce84363035d16a"
 menu_path: ["@std/yaml"]
 section_path: []
+nav_prev: {"path": "deno/deno/runtime/reference/std/webgpu/index.md", "title": "@std/webgpu"}
+nav_next: {"path": "deno/deno/runtime/reference/ts_config_migration/index.md", "title": "Configuring TypeScript"}
 ---
+
 On this page
 
 *   [Overview](#overview)
@@ -67,3 +70,4 @@ deno add jsr:@std/yaml
 ```
 
 [See all symbols in @std/yaml on](https://jsr.io/@std/yaml/doc)
+

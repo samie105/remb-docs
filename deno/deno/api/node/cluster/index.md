@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:33:39.374Z"
 content_hash: "606d9496e8ccef1e129361b6f8cecbbbae73f79e11faf1fbf77623ffbecd1f9b"
 menu_path: ["cluster - Node documentation"]
 section_path: []
+nav_prev: {"path": "deno/deno/api/node/child_process/index.md", "title": "child_process - Node documentation"}
+nav_next: {"path": "deno/deno/api/node/constants/index.md", "title": "constants - Node documentation"}
 ---
+
 ### Usage in Deno
 
 ```typescript
@@ -169,3 +172,4 @@ v
 [default](.././cluster/~/default "default")
 
 No documentation available
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:58:33.131Z"
 content_hash: "5a2490c602488b4609fd38e592a00659505bc9c15cb34192ca54b31cce46058f"
 menu_path: ["Start with Supabase","Start with Supabase","Framework Quickstarts","Framework Quickstarts","SolidJS","SolidJS"]
 section_path: ["Start with Supabase","Start with Supabase","Framework Quickstarts","Framework Quickstarts","SolidJS","SolidJS"]
+nav_prev: {"path": "supabase/docs/guides/getting-started/quickstarts/refine/index.md", "title": "Use Supabase with Refine"}
+nav_next: {"path": "supabase/docs/guides/getting-started/quickstarts/sveltekit/index.md", "title": "Use Supabase with SvelteKit"}
 ---
+
 # 
 
 Use Supabase with SolidJS
@@ -135,3 +138,4 @@ Start the app and go to [http://localhost:3000](http://localhost:3000) in a brow
 ```
 1npm run dev
 ```
+

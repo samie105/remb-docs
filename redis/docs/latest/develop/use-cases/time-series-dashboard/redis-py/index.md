@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:44:16.865Z"
 content_hash: "81460b4c656502c04bfb76716f414e8dbc56ccaf3b89f50ed2b3326585137b03"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Rolling sensor graph demo with Redis","→","Rolling sensor graph demo with Redis","→\n      \n        Rolling sensor graph demo with Redis and redis-py","→","Rolling sensor graph demo with Redis and redis-py"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Rolling sensor graph demo with Redis","→","Rolling sensor graph demo with Redis","→\n      \n        Rolling sensor graph demo with Redis and redis-py","→","Rolling sensor graph demo with Redis and redis-py"]
+nav_prev: {"path": "redis/docs/latest/develop/clients/redis-py/index.md", "title": "redis-py guide (Python)"}
+nav_next: {"path": "redis/docs/latest/develop/use-cases/session-store/redis-py/index.md", "title": "Redis session store with redis-py"}
 ---
+
 # Rolling sensor graph demo with Redis and redis-py
 
 Build a Redis-backed rolling sensor graph demo in Python with redis-py
@@ -154,3 +157,4 @@ This example intentionally keeps the server and UI small so the Redis behavior i
 *   [TS.CREATE command](/docs/latest/commands/ts.create/) - Create a time series with labels and retention
 
 ## On this page
+

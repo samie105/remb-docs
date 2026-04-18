@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:01:13.305Z"
 content_hash: "775d229e21ba771fdb254a91d907abc1c9b5a1aa221e2b6b50832759318773c6"
 menu_path: ["Storage","Storage","More","More","More","CDN","CDN","Smart CDN","Smart CDN"]
 section_path: ["Storage","Storage","More","More","More","CDN","CDN","Smart CDN","Smart CDN"]
+nav_prev: {"path": "supabase/docs/guides/storage/cdn/fundamentals/index.md", "title": "Storage CDN"}
+nav_next: {"path": "supabase/docs/guides/storage/debugging/logs/index.md", "title": "Logs"}
 ---
+
 # 
 
 Smart CDN
@@ -58,3 +61,4 @@ This affects how you should think about serving private assets:
 *   Deleting the object invalidates all cached entries for that object across all tokens. This can take up to a minute to propagate.
 
 Token expiry (`expiresIn`) and the object's response cache TTL (`cacheControl`) are independent. Once a response is cached at the edge, that cached response can continue to be served for the same signed URL until the CDN cache duration expires, even if the token in that URL has already expired. If you need to cut off access to an asset, delete the object from the bucket rather than relying on token expiry alone.
+

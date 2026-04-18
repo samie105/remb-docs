@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:08:37.533Z"
 content_hash: "24513b693324291b699d77ec2157b1b2abc0e64b26525d8c3e9c6f2dc4f44fcc"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Commands","→","Commands","→\n      \n        Redis 6.2 Commands Reference","→","Redis 6.2 Commands Reference"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Commands","→","Commands","→\n      \n        Redis 6.2 Commands Reference","→","Redis 6.2 Commands Reference"]
+nav_prev: {"path": "redis/docs/latest/integrate/prometheus-with-redis-cloud/index.md", "title": "Prometheus and Grafana with Redis Cloud"}
+nav_next: {"path": "redis/docs/latest/develop/ai/redisvl/user_guide/rerankers/index.md", "title": "Rerankers"}
 ---
+
 # Redis 6.2 Commands Reference
 
 Complete list of all Redis commands available in version 6.2, organized by functional group
@@ -3821,3 +3824,4 @@ Generic commands work across all data types.
 **Since:** 3.0.0
 
 ## On this page
+

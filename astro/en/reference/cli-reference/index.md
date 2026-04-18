@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:42:43.166Z"
 content_hash: "eb1fd92300bbaa2e69b7041ce4a9d662410843a26bdd03aec8aad8071c19f2cc"
 menu_path: ["CLI Commands"]
 section_path: []
+nav_prev: {"path": "astro/en/reference/configuration-reference/index.md", "title": "Configuration Reference"}
+nav_next: {"path": "astro/en/guides/imports/index.md", "title": "Imports reference"}
 ---
+
 # CLI Commands
 
 You can use the Command-Line Interface (CLI) provided by Astro to develop, build, and preview your project from a terminal window.
@@ -469,3 +472,4 @@ Prints the Astro version number and exits.
 Prints the help message and exits.
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

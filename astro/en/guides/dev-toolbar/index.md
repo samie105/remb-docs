@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:38:05.326Z"
 content_hash: "5b70e7db52eed48fdd7b48c0ac08bca792d44fa259cfe628c467ad13828abb93"
 menu_path: ["Dev toolbar"]
 section_path: []
+nav_prev: {"path": "astro/en/guides/build-with-ai/index.md", "title": "Building Astro sites with AI tools"}
+nav_next: {"path": "astro/en/basics/astro-pages/index.md", "title": "Pages"}
 ---
+
 # Dev toolbar
 
 While the dev server is running, Astro includes a dev toolbar at the bottom of every page in your local browser preview.
@@ -100,3 +103,4 @@ astro preferences enable devToolbar
 ```
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

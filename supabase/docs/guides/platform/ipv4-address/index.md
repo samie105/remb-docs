@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:47:36.911Z"
 content_hash: "1cdeaf3e5e9d12d980cd431340970e031266a1e1ecaf0a7fcbd23739d6806091"
 menu_path: ["Platform","Platform","Add-ons","Add-ons","IPv4 Address","IPv4 Address"]
 section_path: ["Platform","Platform","Add-ons","Add-ons","IPv4 Address","IPv4 Address"]
+nav_prev: {"path": "supabase/docs/guides/platform/hipaa-projects/index.md", "title": "HIPAA Projects"}
+nav_next: {"path": "supabase/docs/guides/platform/manage-your-subscription/index.md", "title": "Manage your subscription"}
 ---
+
 # 
 
 Dedicated IPv4 Address for Ingress
@@ -116,3 +119,4 @@ Always uses an IPv4 address
 ## Pricing[#](#pricing)
 
 For a detailed breakdown of how charges are calculated, refer to [Manage IPv4 usage](/docs/guides/platform/manage-your-usage/ipv4).
+

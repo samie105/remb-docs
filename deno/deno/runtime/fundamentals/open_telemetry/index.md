@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:47:51.844Z"
 content_hash: "5db8d720a818b9050da18fa31babd4072ca65499577d3d96741953a9b071dd84"
 menu_path: ["OpenTelemetry"]
 section_path: []
+nav_prev: {"path": "deno/deno/runtime/fundamentals/ffi/index.md", "title": "Foreign Function Interface (FFI)"}
+nav_next: {"path": "deno/deno/runtime/fundamentals/stability_and_releases/index.md", "title": "Stability and releases"}
 ---
+
 On this page
 
 *   [Quick start](#quick-start)
@@ -605,3 +608,4 @@ While the OpenTelemetry integration for Deno is in development, there are some l
 *   HTTP methods are that are not known are not normalized to `_OTHER` in the `http.request.method` span attribute as per the OpenTelemetry semantic conventions.
 *   The HTTP server span for [`Deno.serve`](/api/deno/~/Deno.serve) does not have an OpenTelemetry status set, and if the handler throws (ie `onError` is invoked), the span will not have an error status set and the error will not be attached to the span via event.
 *   There is no mechanism to add a `http.route` attribute to the HTTP client span for [`fetch`](/api/web/~/fetch), or to update the span name to include the route.
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:57:45.648Z"
 content_hash: "912c3eb9eb573a428c2c86713227e091de083ed2e488d3c38618fa18ed974d43"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        Redis Search","→","Redis Search","→\n      \n        Search concepts","→","Search concepts","→\n      \n        FT.AGGREGATE order of operations","→","FT.AGGREGATE order of operations"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        Redis Search","→","Redis Search","→\n      \n        Search concepts","→","Search concepts","→\n      \n        FT.AGGREGATE order of operations","→","FT.AGGREGATE order of operations"]
+nav_prev: {"path": "redis/docs/latest/operate/kubernetes/release-notes/7-22-0-releases/7-22-0-11-june2025/index.md", "title": "Redis Enterprise for Kubernetes 7.22.0-11 (June 2025) release notes"}
+nav_next: {"path": "redis/docs/latest/operate/oss_and_stack/stack-with-enterprise/deprecated-features/triggers-and-functions/concepts/cluster_support/index.md", "title": "Cluster support"}
 ---
+
 # FT.AGGREGATE order of operations
 
 Order of operations for the FT.AGGREGATE command
@@ -393,3 +396,4 @@ See the following resources for more information:
 *   [Redis Search source code](https://github.com/RediSearch/RediSearch/tree/master/src/aggregate)
 
 ## On this page
+

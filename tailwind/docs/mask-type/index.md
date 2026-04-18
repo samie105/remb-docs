@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:06:32.869Z"
 content_hash: "5e4dbfcc22c08a317d3eff521b11e9ca040825753c9c5ec8107b721a5b44e4d1"
 menu_path: ["mask-type"]
 section_path: []
+nav_prev: {"path": "tailwind/docs/mask-size/index.md", "title": "mask-size"}
+nav_next: {"path": "tailwind/docs/filter/index.md", "title": "filter"}
 ---
+
 Utilities for controlling how an SVG mask is interpreted.
 
 Class
@@ -48,4 +51,5 @@ Prefix a `mask-type` utility with a breakpoint variant like `md:` to only apply 
 <mask class="mask-type-alpha md:mask-type-luminance ...">  <!-- ... --></mask>
 ```
 
-Learn more about using variants in the [variants documentation](https://tailwindcss.com/docs/hover-focus-and-other-states).
+Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).
+

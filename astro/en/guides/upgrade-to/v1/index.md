@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:41:49.599Z"
 content_hash: "ebb7b7fa9632fadee63e3fce7da37f64a53004f0c9fc7096e01c47e424d93ad5"
 menu_path: ["Legacy v0.x Upgrade Guide"]
 section_path: []
+nav_prev: {"path": "astro/en/guides/upgrade-to/v2/index.md", "title": "Upgrade to Astro v2"}
+nav_next: {"path": "astro/en/guides/troubleshooting/index.md", "title": "Troubleshooting"}
 ---
+
 # Legacy v0.x Upgrade Guide
 
 This guide will help you upgrade through breaking changes in pre-v1 versions of Astro.
@@ -598,3 +601,4 @@ In Astro v0.21+, a bug has been introduced that requires imports inside componen
 ```
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

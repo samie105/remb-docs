@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:48:06.401Z"
 content_hash: "56f8dfbc50b36b9e0f97e1b9c16bb23e2bf2d9408c9dc4376516614f6b2ea4c6"
 menu_path: ["Null and undefined"]
 section_path: []
+nav_prev: {"path": "prisma/docs/orm/prisma-client/special-fields-and-types/composite-types/index.md", "title": "Composite types"}
+nav_next: {"path": "prisma/docs/orm/prisma-client/special-fields-and-types/working-with-composite-ids-and-constraints/index.md", "title": "Working with compound IDs and unique constraints"}
 ---
+
 The `strictUndefinedChecks` preview feature changes how Prisma Client handles `undefined` values, offering better protection against accidental data loss or unintended query behavior.
 
 ### [Enabling strict undefined checks](#enabling-strict-undefined-checks)
@@ -378,7 +381,7 @@ validate single filter
 
 validate all filters
 
-This example shows how an `undefined` parameter impacts the results returned by a query that uses the [`OR`](https://www.prisma.io/docs/orm/reference/prisma-client-reference#or) operator.
+This example shows how an `undefined` parameter impacts the results returned by a query that uses the [`OR`](prisma/docs/orm/reference/prisma-client-reference/index.md#or) operator.
 
 ```
 interface FormData {
@@ -407,7 +410,7 @@ const users = await prisma.user.findMany({
 
 The query receives filters from a formData object, which includes an optional email property. In this instance, the value of the email property is `undefined`. When this query is run no data is returned.
 
-This is in contrast to the [`AND`](https://www.prisma.io/docs/orm/reference/prisma-client-reference#and) and [`NOT`](https://www.prisma.io/docs/orm/reference/prisma-client-reference) operators, which will both return all the users if you pass in an `undefined` value.
+This is in contrast to the [`AND`](prisma/docs/orm/reference/prisma-client-reference/index.md#and) and [`NOT`](prisma/docs/orm/reference/prisma-client-reference/index.md) operators, which will both return all the users if you pass in an `undefined` value.
 
 > This is because passing an `undefined` value to an `AND` or `NOT` operator is the same as passing nothing at all, meaning the `findMany` query in the example will run without any filters and return all the users.
 
@@ -449,3 +452,4 @@ const users = await prisma.user.findMany({
 
 // returns: { id: 1, email: 'ems@boop.com', name: 'Emelie' }
 ```
+

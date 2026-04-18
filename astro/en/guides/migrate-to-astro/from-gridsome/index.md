@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:40:50.339Z"
 content_hash: "5bbc486bdc2cc266914acb8eaca292a2cd962eb75e4ef4b49b892a5a09486868"
 menu_path: ["Migrating from Gridsome"]
 section_path: []
+nav_prev: {"path": "astro/en/guides/migrate-to-astro/from-gitbook/index.md", "title": "Migrating from GitBook"}
+nav_next: {"path": "astro/en/guides/migrate-to-astro/from-hugo/index.md", "title": "Migrating from Hugo"}
 ---
+
 # Migrating from Gridsome
 
 [Gridsome](https://gridsome.org) is an open-source static site generator built on Vue and GraphQL.
@@ -134,3 +137,4 @@ To convert other types of sites, such as a portfolio or documentation site, see 
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

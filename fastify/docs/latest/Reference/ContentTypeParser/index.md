@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:32:30.129Z"
 content_hash: "425b7d0ed38bfe70c82fb7a5bed86a5359ee3afbbb229b0f7d9dcec422937b64"
 menu_path: ["ContentTypeParser"]
 section_path: []
+nav_prev: {"path": "fastify/docs/latest/Reference/index.md", "title": "Index"}
+nav_next: {"path": "fastify/docs/latest/Reference/Encapsulation/index.md", "title": "Encapsulation"}
 ---
+
 Version: latest (v5.8.x)
 
 ## `Content-Type` Parser[​](#content-type-parser "Direct link to content-type-parser")
@@ -132,3 +135,4 @@ To execute the content type parser on all content types, call `removeAllContentT
 ```
 // Without this call, the request body with the content type application/json would be processed by the built-in JSON parserfastify.removeAllContentTypeParsers()fastify.addContentTypeParser('*', function (request, payload, done) {  const data = ''  payload.on('data', chunk => { data += chunk })  payload.on('end', () => {    done(null, data)  })})
 ```
+

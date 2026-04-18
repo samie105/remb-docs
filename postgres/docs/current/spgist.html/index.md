@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:51:57.412Z"
 content_hash: "d947520fdc1e0dea113309c3a445ff64b59712ad2cb7b0c497550cae0feeb981"
 menu_path: ["PostgreSQL: Documentation: 18: 65.3. SP-GiST Indexes"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/parser-stage.html/index.md", "title": "PostgreSQL: Documentation: 18: 51.3.\u00a0The Parser Stage"}
+nav_next: {"path": "postgres/docs/current/gssapi-enc.html/index.md", "title": "PostgreSQL: Documentation: 18: 18.10.\u00a0Secure TCP/IP Connections with GSSAPI Encryption"}
 ---
+
 ### 65.3.1. Introduction [#](#SPGIST-INTRO)
 
 SP-GiST is an abbreviation for space-partitioned GiST. SP-GiST supports partitioned search trees, which facilitate development of a wide range of different non-balanced data structures, such as quad-trees, k-d trees, and radix trees (tries). The common feature of these structures is that they repeatedly divide the search space into partitions that need not be of equal size. Searches that are well matched to the partitioning rule can be very fast.
@@ -505,3 +508,4 @@ When dealing with an `allTheSame` tuple, the `inner_consistent` function should 
 ### 65.3.5. Examples [#](#SPGIST-EXAMPLES)
 
 The PostgreSQL source distribution includes several examples of index operator classes for SP-GiST, as described in [Table 65.2](https://www.postgresql.org/docs/current/spgist.html#SPGIST-BUILTIN-OPCLASSES-TABLE "Table 65.2. Built-in SP-GiST Operator Classes"). Look into `src/backend/access/spgist/` and `src/backend/utils/adt/` to see the code.
+

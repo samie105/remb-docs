@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:58:12.784Z"
 content_hash: "273e219ea77a0cbd8f68f715403388919307468574cfcd01ac1310004f51ff30"
 menu_path: ["Benchmarking"]
 section_path: []
+nav_prev: {"path": "bun/bun/docs/pm/workspaces/index.md", "title": "Workspaces"}
+nav_next: {"path": "bun/bun/docs/project/bindgen/index.md", "title": "Bindgen"}
 ---
+
 ```
 {
   heapSize: 1657575,
@@ -112,3 +115,4 @@ section_path: []
   }
 }
 ```
+

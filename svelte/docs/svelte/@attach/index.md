@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:36:51.674Z"
 content_hash: "dff924eaa884d86d25a55cddebfe83db26c2391c597665d2e0ef86d3ddeca486"
 menu_path: ["{@attach ...}"]
 section_path: []
+nav_prev: {"path": "svelte/docs/svelte/@html/index.md", "title": "{@html ...}"}
+nav_next: {"path": "svelte/docs/svelte/@const/index.md", "title": "{@const ...}"}
 ---
+
 Attachments are functions that run in an [effect]($effect) when an element is mounted to the DOM or when [state]($state) read inside the function updates.
 
 Optionally, they can return a function that is called before the attachment re-runs, or after the element is later removed from the DOM.
@@ -267,3 +270,4 @@ If you're using a library that only provides actions, you can convert them to at
 previous next
 
 [{@html ...}](/docs/svelte/@html) [{@const ...}](/docs/svelte/@const)
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:42:30.025Z"
 content_hash: "2921dd56432127797f0bf2024f67ed97121315c1146fcac1ba6e93cfc8cdbe3f"
 menu_path: ["Astro Adapter API"]
 section_path: []
+nav_prev: {"path": "astro/en/reference/integrations-reference/index.md", "title": "Astro Integration API"}
+nav_next: {"path": "astro/en/reference/renderer-reference/index.md", "title": "Astro Renderer API"}
 ---
+
 # Astro Adapter API
 
 Astro is designed to make it easy to deploy to any cloud provider for on-demand rendering, also known as server-side rendering (SSR). This ability is provided by **adapters**, which are [integrations](/en/reference/integrations-reference/). See the [on-demand rendering guide](/en/guides/on-demand-rendering/) to learn how to use an existing adapter.
@@ -700,3 +703,4 @@ Specifies the [configured root directory](/en/reference/configuration-reference/
 Once you [publish your adapter to npm](https://docs.npmjs.com/cli/v8/commands/npm-publish), running `astro add example` will install your package with any peer dependencies specified in your `package.json` and instruct users to update their project config manually.
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

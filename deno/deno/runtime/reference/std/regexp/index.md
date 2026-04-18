@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:05:21.134Z"
 content_hash: "de9af1c0396071ad2873e3415a788c21375cc4e5d1650043d023095c99673f6a"
 menu_path: ["@std/regexp"]
 section_path: []
+nav_prev: {"path": "deno/deno/runtime/reference/std/random/index.md", "title": "@std/random"}
+nav_next: {"path": "deno/deno/runtime/reference/std/semver/index.md", "title": "@std/semver"}
 ---
+
 On this page
 
 *   [Overview](#overview)
@@ -39,3 +42,4 @@ deno add jsr:@std/regexp
 ```
 
 [See all symbols in @std/regexp on](https://jsr.io/@std/regexp/doc)
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:50:56.605Z"
 content_hash: "d2ef66b471aa73e3d6342798b821fdd1a39d434942a02197ab1796074c5201fd"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Redis Data Integration","→","Redis Data Integration","→\n      \n        Data pipelines","→","Data pipelines","→\n      \n        Prepare source databases","→","Prepare source databases","→\n      \n        Prepare Spanner for RDI","→","Prepare Spanner for RDI"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Redis Data Integration","→","Redis Data Integration","→\n      \n        Data pipelines","→","Data pipelines","→\n      \n        Prepare source databases","→","Prepare source databases","→\n      \n        Prepare Spanner for RDI","→","Prepare Spanner for RDI"]
+nav_prev: {"path": "redis/docs/latest/integrate/redis-data-integration/data-pipelines/prepare-dbs/my-sql-mariadb/index.md", "title": "Prepare MySQL/MariaDB for RDI"}
+nav_next: {"path": "redis/docs/latest/integrate/redis-data-integration/data-pipelines/prepare-dbs/postgresql/index.md", "title": "Prepare PostgreSQL/Supabase for RDI"}
 ---
+
 # Prepare Spanner for RDI
 
 Prepare Google Cloud Spanner databases to work with RDI
@@ -199,3 +202,4 @@ operator:
 Once you have followed the steps above, your Google Spanner database is ready for RDI to use.
 
 ## On this page
+

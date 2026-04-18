@@ -9,7 +9,11 @@ last_crawled_at: "2026-04-18T17:12:20.944Z"
 content_hash: "c42540c374e6154e30cdf49b3ce9dcba930eca37aae3cd4558ca097ed17a19b4"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Write-behind (preview)","→","Write-behind (preview)","→\n      \n        Installation","→","Installation"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Write-behind (preview)","→","Write-behind (preview)","→\n      \n        Installation","→","Installation"]
+nav_prev: {"path": "redis/docs/latest/operate/oss_and_stack/stack-with-enterprise/enterprise-capabilities/index.md", "title": "Redis Software and Redis Open Source feature compatibility"}
+nav_next: {"path": "redis/docs/latest/operate/oss_and_stack/stack-with-enterprise/deprecated-features/triggers-and-functions/known_limitations/index.md", "title": "Known limitations"}
 ---
+
 # Installation
 
 Learn how to install Write-behind
+

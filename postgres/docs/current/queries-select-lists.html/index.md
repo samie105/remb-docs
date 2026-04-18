@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:33:26.610Z"
 content_hash: "277f5e230b955900b1cbf8443563d3e72057cef0e66c4fe7c4b3a7289b7bd6fd"
 menu_path: ["PostgreSQL: Documentation: 18: 7.3. Select Lists"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/sql-createtype.html/index.md", "title": "PostgreSQL: Documentation: 18: CREATE TYPE"}
+nav_next: {"path": "postgres/docs/current/infoschema-domains.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.23.\u00a0domains"}
 ---
+
 As shown in the previous section, the table expression in the `SELECT` command constructs an intermediate virtual table by possibly combining tables, views, eliminating rows, grouping, etc. This table is finally passed on to processing by the _select list_. The select list determines which _columns_ of the intermediate table are actually output.
 
 ### 7.3.1. Select-List Items [#](#QUERIES-SELECT-LIST-ITEMS)
@@ -72,3 +75,4 @@ SELECT DISTINCT ON (_`expression`_ \[, _`expression`_ ...\]) _`select_list`_ ...
 Here _`expression`_ is an arbitrary value expression that is evaluated for all rows. A set of rows for which all the expressions are equal are considered duplicates, and only the first row of the set is kept in the output. Note that the “first row” of a set is unpredictable unless the query is sorted on enough columns to guarantee a unique ordering of the rows arriving at the `DISTINCT` filter. (`DISTINCT ON` processing occurs after `ORDER BY` sorting.)
 
 The `DISTINCT ON` clause is not part of the SQL standard and is sometimes considered bad style because of the potentially indeterminate nature of its results. With judicious use of `GROUP BY` and subqueries in `FROM`, this construct can be avoided, but it is often the most convenient alternative.
+

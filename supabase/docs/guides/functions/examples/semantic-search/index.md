@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:57:43.416Z"
 content_hash: "cc3659ac29bc816c517c78b95103034fe8ba82cf7e28dfb6aa9b509e17cd00fd"
 menu_path: ["Edge Functions","Edge Functions","Examples","Examples","Semantic AI Search","Semantic AI Search"]
 section_path: ["Edge Functions","Edge Functions","Examples","Examples","Semantic AI Search","Semantic AI Search"]
+nav_prev: {"path": "supabase/docs/guides/functions/examples/rate-limiting/index.md", "title": "Rate Limiting Edge Functions"}
+nav_next: {"path": "supabase/docs/guides/functions/examples/screenshots/index.md", "title": "Taking Screenshots with Puppeteer"}
 ---
+
 # 
 
 Semantic Search
@@ -65,3 +68,4 @@ You can use `supabase-js` to first generate the embedding for the search term an
 ```
 
 You now have AI powered semantic search set up without any external dependencies! Just you, pgvector, and Supabase Edge Functions!
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:40:34.121Z"
 content_hash: "fd1dc368ff63b18c49f795c4c7db0513af1909f8ac36c1dc6c56af5c65603ea3"
 menu_path: ["Subscriptions / WebSockets"]
 section_path: []
+nav_prev: {"path": "trpc/docs/v10/server/server-side-calls/index.md", "title": "Server Side Calls"}
+nav_next: {"path": "trpc/docs/v10/server/validators/index.md", "title": "Input & Output Validators"}
 ---
+
 ## Using Subscriptions[​](#using-subscriptions "Direct link to Using Subscriptions")
 
 tip
@@ -149,7 +152,7 @@ ts
 
 tip
 
-You can use [Links](https://trpc.io/docs/v10/client/links) to route queries and/or mutations to HTTP transport and subscriptions over WebSockets.
+You can use [Links](trpc/docs/v10/client/links/index.md) to route queries and/or mutations to HTTP transport and subscriptions over WebSockets.
 
 client.ts
 
@@ -318,10 +321,11 @@ ts
 
 ## Errors[​](#errors "Direct link to Errors")
 
-See [https://www.jsonrpc.org/specification#error\_object](https://www.jsonrpc.org/specification#error_object) or [Error Formatting](https://trpc.io/docs/v10/server/error-formatting).
+See [https://www.jsonrpc.org/specification#error\_object](https://www.jsonrpc.org/specification#error_object) or [Error Formatting](trpc/docs/v10/server/error-formatting/index.md).
 
 ## Notifications from Server to Client[​](#notifications-from-server-to-client "Direct link to Notifications from Server to Client")
 
 ### `{ id: null, type: 'reconnect' }`[​](#-id-null-type-reconnect- "Direct link to -id-null-type-reconnect-")
 
 Tells clients to reconnect before shutting down the server. Invoked by `wssHandler.broadcastReconnectNotification()`.
+

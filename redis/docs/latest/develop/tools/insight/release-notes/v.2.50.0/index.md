@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:33:53.718Z"
 content_hash: "3a6af11ac34692e54b67e4737c9aafea6b7cc59751e666cab3fb76c06286da66"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Client tools","→","Client tools","→\n      \n        Redis Insight","→","Redis Insight","→\n      \n        Redis Insight release notes","→","Redis Insight release notes","→\n      \n        Redis Insight v2.50.0, May 2024","→","Redis Insight v2.50.0, May 2024"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Client tools","→","Client tools","→\n      \n        Redis Insight","→","Redis Insight","→\n      \n        Redis Insight release notes","→","Redis Insight release notes","→\n      \n        Redis Insight v2.50.0, May 2024","→","Redis Insight v2.50.0, May 2024"]
+nav_prev: {"path": "redis/docs/latest/develop/tools/insight/release-notes/v.2.54.0/index.md", "title": "Redis Insight v2.54.0, August 2024"}
+nav_next: {"path": "redis/docs/latest/develop/tools/insight/release-notes/v.2.46.0/index.md", "title": "RedisInsight v2.46.0, March 2024"}
 ---
+
 # Redis Insight v2.50.0, May 2024
 
 Redis Insight v2.50
@@ -33,3 +36,4 @@ This is the General Availability (GA) release of Redis Insight 2.50.
 *   [#3349](https://github.com/RedisInsight/RedisInsight/pull/3349) Changed the sorting order in the Tree view to lexicographical.
 
 ## On this page
+

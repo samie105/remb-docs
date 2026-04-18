@@ -9,8 +9,11 @@ last_crawled_at: "2026-04-18T16:48:15.601Z"
 content_hash: "0454d1119b58ea22baf743d0ad873aa72df18a38617031201921cd1056388ecd"
 menu_path: ["Common HTTP server usage"]
 section_path: []
+nav_prev: {"path": "bun/bun/docs/guides/http/proxy/index.md", "title": "Proxy HTTP requests using fetch()"}
+nav_next: {"path": "bun/bun/docs/guides/http/simple/index.md", "title": "Write a simple HTTP server"}
 ---
-This starts an HTTP server listening on port `3000`. It demonstrates basic routing with a number of common responses and also handles POST data from standard forms or as JSON. See [`Bun.serve`](https://bun.com/docs/runtime/http/server) for details.
+
+This starts an HTTP server listening on port `3000`. It demonstrates basic routing with a number of common responses and also handles POST data from standard forms or as JSON. See [`Bun.serve`](bun/bun/docs/runtime/http/server/index.md) for details.
 
 ![https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z\_zHyy/icons/typescript.svg?fit=max&auto=format&n=JUhaF6Mf68z\_zHyy&q=85&s=7ac549adaea8d5487d8fbd58cc3ea35b](https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z_zHyy/icons/typescript.svg?fit=max&auto=format&n=JUhaF6Mf68z_zHyy&q=85&s=7ac549adaea8d5487d8fbd58cc3ea35b)server.ts
 
@@ -54,3 +57,4 @@ console.log(`Listening on ${server.url}`);
 ```
 
 Was this page helpful?
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:02:28.349Z"
 content_hash: "a5d6c98c10d40a70529fa56ac4dad7c00223a377a9e8f5131cc045d072719bed"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis reference","→","Redis reference","→\n      \n        Redis client handling","→","Redis client handling"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis reference","→","Redis reference","→\n      \n        Redis client handling","→","Redis client handling"]
+nav_prev: {"path": "redis/docs/latest/operate/oss_and_stack/install/archive/install-stack/binaries/index.md", "title": "Install Redis Stack from binaries"}
+nav_next: {"path": "redis/docs/latest/operate/redisinsight/configuration/index.md", "title": "Redis Insight configuration settings"}
 ---
+
 # Redis client handling
 
 How the Redis server manages client connections
@@ -163,3 +166,4 @@ The commands [`CLIENT SETNAME`](/docs/latest/commands/client-setname/) and [`CLI
 From version 3.2 onwards, Redis has TCP keepalive (`SO_KEEPALIVE` socket option) enabled by default and set to about 300 seconds. This option is useful in order to detect dead peers (clients that cannot be reached even if they look connected). Moreover, if there is network equipment between clients and servers that need to see some traffic in order to take the connection open, the option will prevent unexpected connection closed events.
 
 ## On this page
+

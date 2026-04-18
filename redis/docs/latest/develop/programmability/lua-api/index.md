@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:55:15.631Z"
 content_hash: "7a991971e4f33e109e6e7661f0e00fc4fb2807afad1fc6b49c4c28cdbe248272"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis programmability","→","Redis programmability","→\n      \n        Redis Lua API reference","→","Redis Lua API reference"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis programmability","→","Redis programmability","→\n      \n        Redis Lua API reference","→","Redis Lua API reference"]
+nav_prev: {"path": "redis/docs/latest/operate/redisinsight/install/install-on-k8s/index.md", "title": "Install on Kubernetes"}
+nav_next: {"path": "redis/docs/latest/develop/use-cases/leaderboard/index.md", "title": "Redis leaderboard"}
 ---
+
 # Redis Lua API reference
 
 Executing Lua in Redis
@@ -789,3 +792,4 @@ Returns either the bitwise **left rotation**, or bitwise **right rotation** of i
 Swaps the bytes of its argument and returns it. This can be used to convert little-endian 32-bit numbers to big-endian 32-bit numbers and vice versa.
 
 ## On this page
+

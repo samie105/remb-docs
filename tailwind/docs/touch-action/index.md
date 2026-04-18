@@ -9,15 +9,9 @@ last_crawled_at: "2026-04-18T17:17:55.196Z"
 content_hash: "3d73867504476035685f1c4057613f65109c9070553c3ae60ce9ffb534bbed9e"
 menu_path: ["touch-action"]
 section_path: []
+nav_prev: {"path": "tailwind/docs/scroll-snap-type/index.md", "title": "scroll-snap-type"}
+nav_next: {"path": "tailwind/docs/user-select/index.md", "title": "user-select"}
 ---
-[](/)
-
-[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
-
-1.  Interactivity
-2.  touch-action
-
-Interactivity
 
 # touch-action
 
@@ -123,3 +117,4 @@ Short, tactical video lessons from the creator of Tailwind CSS, delivered direct
 [Get the free course](/build-uis-that-dont-suck)
 
 Copyright © 2026 Tailwind Labs Inc.·[Trademark Policy](/brand)
+

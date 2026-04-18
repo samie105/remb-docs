@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:50:46.351Z"
 content_hash: "bdc09d623fe5aba3bb27496fcca5a53798f517d8a9f864fcdb1529f517e049a6"
 menu_path: ["Drizzle <> PostgreSQL"]
 section_path: []
+nav_prev: {"path": "drizzle/docs/migrations/index.md", "title": "Drizzle migrations fundamentals"}
+nav_next: {"path": "drizzle/docs/get-started-gel/index.md", "title": "Drizzle <> Gel"}
 ---
+
 Drizzle has native support for PostgreSQL connections with the `node-postgres` and `postgres.js` drivers.
 
 There are a few differences between the `node-postgres` and `postgres.js` drivers that we discovered while using both and integrating them with the Drizzle ORM. For example:
@@ -170,3 +173,4 @@ const result = await db.execute('select 1');
 ```
 
 #### What’s next?[](#whats-next)
+

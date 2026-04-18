@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:36:53.044Z"
 content_hash: "8c2947ad9d9b6dd08a18059c72d7409911bfb75e46117a317b1c4a9396fe3e19"
 menu_path: ["Deploy your Astro Site to EdgeOne Pages"]
 section_path: []
+nav_prev: {"path": "astro/en/guides/deploy/deployhq/index.md", "title": "Deploy your Astro Site with DeployHQ"}
+nav_next: {"path": "astro/en/guides/deploy/firebase/index.md", "title": "Deploy your Astro Site to Google\u2019s Firebase Hosting"}
 ---
+
 # Deploy your Astro Site to EdgeOne Pages
 
 You can deploy your Astro project on [EdgeOne Pages](https://pages.edgeone.ai/), a fullstack development platform with a global edge network that can build your site from a Git connection or from the EdgeOne CLI.
@@ -153,3 +156,4 @@ You can deploy your Astro project on [EdgeOne Pages](https://pages.edgeone.ai/),
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

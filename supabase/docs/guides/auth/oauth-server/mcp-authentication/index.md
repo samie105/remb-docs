@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:53:20.835Z"
 content_hash: "53773146900b9e68d86e5e6d4b49c24788b4469052eb8e9ecfcbe7213a2105ae"
 menu_path: ["Auth","Auth","OAuth 2.1 Server","OAuth 2.1 Server","MCP Authentication","MCP Authentication"]
 section_path: ["Auth","Auth","OAuth 2.1 Server","OAuth 2.1 Server","MCP Authentication","MCP Authentication"]
+nav_prev: {"path": "supabase/docs/guides/auth/oauth-server/getting-started/index.md", "title": "Getting Started with OAuth 2.1 Server"}
+nav_next: {"path": "supabase/docs/guides/auth/oauth-server/token-security/index.md", "title": "Token Security and Row Level Security"}
 ---
+
 # 
 
 Model Context Protocol (MCP) Authentication
@@ -158,3 +161,4 @@ Always require explicit user approval for MCP clients:
 *   [Secure with RLS](/docs/guides/auth/oauth-server/token-security) - Create granular policies for MCP clients
 *   [OAuth flows](/docs/guides/auth/oauth-server/oauth-flows) - Deep dive into OAuth implementation
 *   [MCP Specification](https://modelcontextprotocol.io/docs) - Official MCP documentation
+

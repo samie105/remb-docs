@@ -9,8 +9,11 @@ last_crawled_at: "2026-04-18T16:32:39.420Z"
 content_hash: "bbd530c1a0440489811a0434c2c3dc44a346c4dc9cfc416cefd9f882dac0db61"
 menu_path: ["WebSocket Link"]
 section_path: []
+nav_prev: {"path": "trpc/docs/v10/client/links/loggerLink/index.md", "title": "Logger Link"}
+nav_next: {"path": "trpc/docs/v10/client/links/splitLink/index.md", "title": "Split Link"}
 ---
-`wsLink` is a [**terminating link**](https://trpc.io/docs/v10/client/links#the-terminating-link) that's used when using tRPC's WebSockets Client and Subscriptions, which you can learn more about [here](https://trpc.io/docs/v10/subscriptions).
+
+`wsLink` is a [**terminating link**](trpc/docs/v10/client/links/index.md#the-terminating-link) that's used when using tRPC's WebSockets Client and Subscriptions, which you can learn more about [here](trpc/docs/v10/subscriptions/index.md).
 
 ## Usage[​](#usage "Direct link to Usage")
 
@@ -67,3 +70,4 @@ ts
 ## Reference[​](#reference "Direct link to Reference")
 
 You can check out the source code for this link on [GitHub.](https://github.com/trpc/trpc/blob/main/packages/client/src/links/wsLink.ts)
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:45:46.798Z"
 content_hash: "cc8ed68ef2f898e26ca70d3466b253b7f070870dad82c0395ad1c6853fbff4ef"
 menu_path: ["Missing image dimensions"]
 section_path: []
+nav_prev: {"path": "astro/en/reference/errors/middleware-not-aresponse/index.md", "title": "The middleware returned something that is not a Response object."}
+nav_next: {"path": "astro/en/reference/errors/missing-index-for-internationalization/index.md", "title": "Index page not found."}
 ---
+
 # Missing image dimensions
 
 > Missing width and height attributes for `IMAGE_URL`. When using remote images, both dimensions are required in order to avoid cumulative layout shift (CLS).
@@ -28,3 +31,4 @@ If your image is inside your `src` folder, you probably meant to import it inste
 *   [Image component#width-and-height-required](/en/reference/modules/astro-assets/#width-and-height-required-for-images-in-public)
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

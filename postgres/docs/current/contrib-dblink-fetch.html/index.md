@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:50:43.598Z"
 content_hash: "53fbfe63b28b880fbc137acb3e47bfedadef45693e620a0b89a408ac399b1f53"
 menu_path: ["PostgreSQL: Documentation: 18: dblink_fetch"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/app-pgchecksums.html/index.md", "title": "PostgreSQL: Documentation: 18: pg_checksums"}
+nav_next: {"path": "postgres/docs/current/sql-dropindex.html/index.md", "title": "PostgreSQL: Documentation: 18: DROP INDEX"}
 ---
+
 dblink\_fetch — returns rows from an open cursor in a remote database
 
 ## Synopsis
@@ -92,3 +95,4 @@ SELECT \* FROM dblink\_fetch('foo', 5) AS (funcname name, source text);
  funcname | source
 ----------+--------
 (0 rows)
+

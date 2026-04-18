@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:48:12.020Z"
 content_hash: "cc834df4b10fe5145c92aeb158db22efa7c6052306b176a9718f2703d4161aa3"
 menu_path: ["Contributing"]
 section_path: []
+nav_prev: {"path": "trpc/docs/community/awesome-trpc/index.md", "title": "Awesome tRPC Collection"}
+nav_next: {"path": "trpc/docs/community/sponsors/index.md", "title": "Sponsors"}
 ---
+
 [Skip to main content](#__docusaurus_skipToContent_fallback)
 
 Version: 11.x
@@ -25,3 +28,4 @@ See official contribution guide [here on GitHub](https://github.com/trpc/trpc/bl
 * * *
 
 [Become a Sponsor!](https://trpc.io/sponsor)
+

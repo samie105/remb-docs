@@ -9,15 +9,9 @@ last_crawled_at: "2026-04-18T17:07:08.381Z"
 content_hash: "7f28012efd57c0a033839493c80d4747f32504e803ad3bda3972cc8f3bf9e43d"
 menu_path: ["filter"]
 section_path: []
+nav_prev: {"path": "tailwind/docs/mask-type/index.md", "title": "mask-type"}
+nav_next: {"path": "tailwind/docs/filter-blur/index.md", "title": "filter: blur()"}
 ---
-[](/)
-
-[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
-
-1.  Filters
-2.  filter
-
-Filters
 
 # filter
 
@@ -128,3 +122,4 @@ Short, tactical video lessons from the creator of Tailwind CSS, delivered direct
 [Get the free course](/build-uis-that-dont-suck)
 
 Copyright © 2026 Tailwind Labs Inc.·[Trademark Policy](/brand)
+

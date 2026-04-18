@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:40:11.052Z"
 content_hash: "9294b91722cd7554eae67288ff86bd6cc3596333aa7c9d038046123f0bc5d03b"
 menu_path: ["PostgreSQL: Documentation: 18: CREATE CAST"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/bki-format.html/index.md", "title": "PostgreSQL: Documentation: 18: 68.3.\u00a0BKI File Format"}
+nav_next: {"path": "postgres/docs/current/ddl-others.html/index.md", "title": "PostgreSQL: Documentation: 18: 5.14.\u00a0Other Database Objects"}
 ---
+
 CREATE CAST — define a new cast
 
 ## Synopsis
@@ -133,3 +136,4 @@ CREATE CAST (bigint AS int4) WITH FUNCTION int4(bigint) AS ASSIGNMENT;
 ## Compatibility
 
 The `CREATE CAST` command conforms to the SQL standard, except that SQL does not make provisions for binary-coercible types or extra arguments to implementation functions. `AS IMPLICIT` is a PostgreSQL extension, too.
+

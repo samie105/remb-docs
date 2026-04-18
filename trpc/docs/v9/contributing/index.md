@@ -9,14 +9,17 @@ last_crawled_at: "2026-04-18T16:41:24.703Z"
 content_hash: "43d286dc61376b65c744be27142bff9dcd8be465867f35eb03b2a626a5e8c65c"
 menu_path: ["Contributing"]
 section_path: []
+nav_prev: {"path": "trpc/docs/v9/caching/index.md", "title": "Response Caching"}
+nav_next: {"path": "trpc/docs/v9/context/index.md", "title": "Request Context"}
 ---
+
 This is documentation for
 
 tRPC
 
 **9.x**, which is no longer actively maintained.
 
-For up-to-date documentation, see the **[latest version](https://trpc.io/docs/)** (
+For up-to-date documentation, see the **[latest version](trpc/docs/index.md)** (
 
 11.x
 
@@ -35,3 +38,4 @@ See official contribution guide [here on GitHub](https://github.com/trpc/trpc/bl
 * * *
 
 [Become a Sponsor!](https://trpc.io/sponsor)
+

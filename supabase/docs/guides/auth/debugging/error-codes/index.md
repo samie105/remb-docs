@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:53:11.786Z"
 content_hash: "495a61226ece9815beff74d2a416a9d05a2a2035804b320db870bc4018d74ca9"
 menu_path: ["Auth","Auth","Debugging","Debugging","Error Codes","Error Codes"]
 section_path: ["Auth","Auth","Debugging","Debugging","Error Codes","Error Codes"]
+nav_prev: {"path": "supabase/docs/guides/auth/auth-mfa/totp/index.md", "title": "Multi-Factor Authentication (TOTP)"}
+nav_next: {"path": "supabase/docs/guides/auth/enterprise-sso/auth-sso-saml/index.md", "title": "Single Sign-On with SAML 2.0 for Projects"}
 ---
+
 # 
 
 Error Codes
@@ -118,7 +121,7 @@ Email sending is not allowed for this address as your project is using the defau
 
 Learn more:
 
-*   [Setting up a custom SMTP provider](https://supabase.com/docs/guides/auth/auth-smtp)
+*   [Setting up a custom SMTP provider](supabase/docs/guides/auth/auth-smtp/index.md)
 
 `email_conflict_identity_not_deletable`
 
@@ -174,7 +177,7 @@ To call this API, the user must have a higher Authenticator Assurance Level. To 
 
 Learn more:
 
-*   [MFA](https://supabase.com/docs/guides/auth/auth-mfa)
+*   [MFA](supabase/docs/guides/auth/auth-mfa/index.md)
 
 `invalid_credentials`
 
@@ -314,7 +317,7 @@ Refresh token has been revoked and falls outside the refresh token reuse interva
 
 Learn more:
 
-*   [Auth sessions](https://supabase.com/docs/guides/auth/sessions)
+*   [Auth sessions](supabase/docs/guides/auth/sessions/index.md)
 
 `refresh_token_not_found`
 
@@ -358,7 +361,7 @@ Using Enterprise SSO with SAML 2.0 is not enabled on the Auth server.
 
 Learn more:
 
-*   [Enterprise SSO](https://supabase.com/docs/guides/auth/enterprise-sso/auth-sso-saml)
+*   [Enterprise SSO](supabase/docs/guides/auth/enterprise-sso/auth-sso-saml/index.md)
 
 `saml_relay_state_expired`
 
@@ -374,7 +377,7 @@ Session to which the API request relates has expired. This can occur if an inact
 
 Learn more:
 
-*   [Auth sessions](https://supabase.com/docs/guides/auth/sessions)
+*   [Auth sessions](supabase/docs/guides/auth/sessions/index.md)
 
 `session_not_found`
 
@@ -440,3 +443,4 @@ User is signing up or changing their password without meeting the password stren
 
 *   Always use `error.code` and `error.name` to identify errors, not string matching on error messages.
 *   Avoid relying solely on HTTP status codes, as they may change unexpectedly.
+

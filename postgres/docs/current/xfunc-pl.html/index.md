@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:42:41.566Z"
 content_hash: "fa9346bdab51af6e988f7b82b42f9c86c7d697304c928559346f95a0825c57da"
 menu_path: ["PostgreSQL: Documentation: 18: 36.8. Procedural Language Functions"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/indexes-ordering.html/index.md", "title": "PostgreSQL: Documentation: 18: 11.4.\u00a0Indexes and ORDER BY"}
+nav_next: {"path": "postgres/docs/current/ddl-identity-columns.html/index.md", "title": "PostgreSQL: Documentation: 18: 5.3.\u00a0Identity Columns"}
 ---
+
 36.8. Procedural Language Functions
 
 [Prev](https://www.postgresql.org/docs/current/xfunc-volatility.html "36.7. Function Volatility Categories") 
@@ -39,3 +42,4 @@ PostgreSQL allows user-defined functions to be written in other languages beside
 [Home](https://www.postgresql.org/docs/current/index.html "PostgreSQL 18.3 Documentation")
 
  36.9. Internal Functions
+

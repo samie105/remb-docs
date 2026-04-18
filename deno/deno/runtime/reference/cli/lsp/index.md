@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:54:20.879Z"
 content_hash: "d9939de159c6125811e71ae00f94a88ce5190a5177a47123984dcca13cc2dffd"
 menu_path: ["deno lsp"]
 section_path: []
+nav_prev: {"path": "deno/deno/runtime/reference/cli/publish/index.md", "title": "deno publish"}
+nav_next: {"path": "deno/deno/runtime/reference/cli/remove/index.md", "title": "deno remove"}
 ---
+
 On this page
 
 *   [Usage](#usage)
@@ -37,3 +40,4 @@ For instructions on configuring your editor to use the Deno language server, see
 
 *   [Deno & VS Code](/runtime/reference/vscode/)
 *   [LSP integration](/runtime/reference/lsp_integration/) for other editors
+

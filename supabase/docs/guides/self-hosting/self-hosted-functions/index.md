@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:50:42.250Z"
 content_hash: "8a01609d8cc51c08ffb675ad0d47e6563a298ad706ee414423509c2eb4070b7a"
 menu_path: ["Self-Hosting","Self-Hosting","How-to Guides","How-to Guides","Self-Hosted Functions","Self-Hosted Functions"]
 section_path: ["Self-Hosting","Self-Hosting","How-to Guides","How-to Guides","Self-Hosted Functions","Self-Hosted Functions"]
+nav_prev: {"path": "supabase/docs/guides/self-hosting/self-hosted-oauth/index.md", "title": "Configure Social Login (OAuth) Providers"}
+nav_next: {"path": "supabase/docs/guides/self-hosting/self-hosted-phone-mfa/index.md", "title": "Configure Phone Login & MFA"}
 ---
+
 # 
 
 Self-Hosted Functions
@@ -245,3 +248,4 @@ Use the following command to recreate the container, not just `restart`:
 ### Memory or timeout errors[#](#memory-or-timeout-errors)
 
 The default limits are 150 MB memory and 60 seconds timeout per function invocation. These are set in `volumes/functions/main/index.ts`. To adjust them, edit the `memoryLimitMb` and `workerTimeoutMs` values and restart the functions service.
+

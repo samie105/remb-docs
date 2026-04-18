@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:52:30.555Z"
 content_hash: "6541748cb718e8620d9dbb7a3ca93286116229f4f7aac20a3e2057c42da3eae1"
 menu_path: ["PostgreSQL: Documentation: 18: pg_ctl"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/event-trigger-table-rewrite-example.html/index.md", "title": "PostgreSQL: Documentation: 18: 38.4.\u00a0A Table Rewrite Event Trigger Example"}
+nav_next: {"path": "postgres/docs/current/view-pg-available-extensions.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.3.\u00a0pg_available_extensions"}
 ---
+
 pg\_ctl — initialize, start, stop, or control a PostgreSQL server
 
 ## Synopsis
@@ -245,3 +248,4 @@ $
 ```
 
 The second line is the command that would be invoked in restart mode.
+

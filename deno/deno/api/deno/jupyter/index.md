@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:10:00.350Z"
 content_hash: "540b786a589fe3fe3ad45815cf66cf7447af62d274548c9d05ef58010613266e"
 menu_path: ["Jupyter - Deno documentation"]
 section_path: []
+nav_prev: {"path": "deno/deno/api/deno/io/index.md", "title": "I/O - Deno documentation"}
+nav_next: {"path": "deno/deno/api/deno/linter/index.md", "title": "Linter - Deno documentation"}
 ---
+
 ### Functions [#](#Functions)
 
 f
@@ -120,3 +123,4 @@ v
 [Deno.jupyter.$display](./././~/Deno.jupyter.$display "Deno.jupyter.$display")
 
 No documentation available
+

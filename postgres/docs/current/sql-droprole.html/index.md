@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:48:56.267Z"
 content_hash: "136787bb7c33c51032e6b3d8ec0f6e72e22ab593c61ae1456f90d0c4c7fa116e"
 menu_path: ["PostgreSQL: Documentation: 18: DROP ROLE"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/lo.html/index.md", "title": "PostgreSQL: Documentation: 18: F.21.\u00a0lo \u2014 manage large objects"}
+nav_next: {"path": "postgres/docs/current/dblink.html/index.md", "title": "PostgreSQL: Documentation: 18: F.11.\u00a0dblink \u2014 connect to other PostgreSQL databases"}
 ---
+
 DROP ROLE — remove a database role
 
 ## Synopsis
@@ -47,3 +50,4 @@ DROP ROLE jonathan;
 ## Compatibility
 
 The SQL standard defines `DROP ROLE`, but it allows only one role to be dropped at a time, and it specifies different privilege requirements than PostgreSQL uses.
+

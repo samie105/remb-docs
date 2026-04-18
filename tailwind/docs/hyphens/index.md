@@ -9,15 +9,9 @@ last_crawled_at: "2026-04-18T17:00:18.228Z"
 content_hash: "92b43dff882d86c830998bf981fbe4664f530dca81788f411ad380a0cafcb8b9"
 menu_path: ["hyphens"]
 section_path: []
+nav_prev: {"path": "tailwind/docs/overflow-wrap/index.md", "title": "overflow-wrap"}
+nav_next: {"path": "tailwind/docs/content/index.md", "title": "content"}
 ---
-[](/)
-
-[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
-
-1.  Typography
-2.  hyphens
-
-Typography
 
 # hyphens
 
@@ -109,3 +103,4 @@ Make your ideas look awesome, without relying on a designer.
 ](https://www.refactoringui.com/?ref=sidebar)
 
 Copyright © 2026 Tailwind Labs Inc.·[Trademark Policy](/brand)
+

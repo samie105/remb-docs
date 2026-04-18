@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:40:24.343Z"
 content_hash: "2b41da08559152d5a4f47d6f3958b44bd83bf1e0e3e5239fd61e9586ba98fab0"
 menu_path: ["stream - Node documentation"]
 section_path: []
+nav_prev: {"path": "deno/deno/api/node/sqlite/index.md", "title": "sqlite - Node documentation"}
+nav_next: {"path": "deno/deno/api/node/stream/consumers/index.md", "title": "stream/consumers - Node documentation"}
 ---
+
 ### Usage in Deno
 
 ```typescript
@@ -761,3 +764,4 @@ T
 [Stream.TransformCallback](.././stream/~/Stream.TransformCallback "Stream.TransformCallback")
 
 No documentation available
+

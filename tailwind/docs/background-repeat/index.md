@@ -9,15 +9,9 @@ last_crawled_at: "2026-04-18T17:02:09.432Z"
 content_hash: "351ca0ca4b39edec9a178d25f9cc064594e3fd58198ed5d43cb1cafda5fb8bd2"
 menu_path: ["background-repeat"]
 section_path: []
+nav_prev: {"path": "tailwind/docs/background-position/index.md", "title": "background-position"}
+nav_next: {"path": "tailwind/docs/background-size/index.md", "title": "background-size"}
 ---
-[](/)
-
-[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
-
-1.  Backgrounds
-2.  background-repeat
-
-Backgrounds
 
 # background-repeat
 
@@ -134,3 +128,4 @@ Short, tactical video lessons from the creator of Tailwind CSS, delivered direct
 [Get the free course](/build-uis-that-dont-suck)
 
 Copyright © 2026 Tailwind Labs Inc.·[Trademark Policy](/brand)
+

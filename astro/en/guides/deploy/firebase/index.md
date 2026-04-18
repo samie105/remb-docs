@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:37:02.358Z"
 content_hash: "4b8dd75466af5d905efa90e211d12bcecf5906a8b850663953b80b9d47303a2b"
 menu_path: ["Deploy your Astro Site to Google’s Firebase Hosting"]
 section_path: []
+nav_prev: {"path": "astro/en/guides/deploy/edgeone-pages/index.md", "title": "Deploy your Astro Site to EdgeOne Pages"}
+nav_next: {"path": "astro/en/guides/deploy/fleek/index.md", "title": "Deploy your Astro Site to Fleek"}
 ---
+
 # Deploy your Astro Site to Google’s Firebase Hosting
 
 [Firebase Hosting](https://firebase.google.com/products/hosting) is a service provided by Google’s [Firebase](https://firebase.google.com/) app development platform, which can be used to deploy an Astro site.
@@ -221,3 +224,4 @@ To enable SSR in your Astro project and deploy on Firebase add the [Node.js adap
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

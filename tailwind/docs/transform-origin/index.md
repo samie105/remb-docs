@@ -9,15 +9,9 @@ last_crawled_at: "2026-04-18T17:14:22.095Z"
 content_hash: "27d5932e48f4f8df63e1bd51af59056960a44b890e37ad39f0f41268722f7cbb"
 menu_path: ["transform-origin"]
 section_path: []
+nav_prev: {"path": "tailwind/docs/transform/index.md", "title": "transform"}
+nav_next: {"path": "tailwind/docs/transform-style/index.md", "title": "transform-style"}
 ---
-[](/)
-
-[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
-
-1.  Transforms
-2.  transform-origin
-
-Transforms
 
 # transform-origin
 
@@ -142,3 +136,4 @@ Make your ideas look awesome, without relying on a designer.
 ](https://www.refactoringui.com/?ref=sidebar)
 
 Copyright © 2026 Tailwind Labs Inc.·[Trademark Policy](/brand)
+

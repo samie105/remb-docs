@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:39:11.721Z"
 content_hash: "3a7d2df7143e3f7e0c86054f02c06137a4a4f1c7ee83f104b44952a2cdcce1e6"
 menu_path: ["Context"]
 section_path: []
+nav_prev: {"path": "trpc/docs/v10/server/data-transformers/index.md", "title": "Data Transformers"}
+nav_next: {"path": "trpc/docs/v10/server/error-formatting/index.md", "title": "Error Formatting"}
 ---
+
 Your context holds data that all of your tRPC procedures will have access to, and is a great place to put things like database connections or authentication information.
 
 Setting up the context is done in 2 steps, defining the type during initialization and then creating the runtime context for each request.
@@ -56,7 +59,7 @@ ts
 
 ## Creating the context[​](#creating-the-context "Direct link to Creating the context")
 
-The `createContext()` function must be passed to the handler that is mounting your appRouter, which may be via HTTP, a [server-side call](https://trpc.io/docs/v10/server/server-side-calls) or our [server-side helpers](https://trpc.io/docs/v10/client/nextjs/server-side-helpers).
+The `createContext()` function must be passed to the handler that is mounting your appRouter, which may be via HTTP, a [server-side call](trpc/docs/v10/server/server-side-calls/index.md) or our [server-side helpers](trpc/docs/v10/client/nextjs/server-side-helpers/index.md).
 
 `createContext()` is called for each invocation of tRPC, so batched requests will share a context.
 
@@ -200,7 +203,7 @@ tsx
 
 In some scenarios it could make sense to split up your context into "inner" and "outer" functions.
 
-**Inner context** is where you define context which doesn’t depend on the request, e.g. your database connection. You can use this function for integration testing or [server-side helpers](https://trpc.io/docs/v10/client/nextjs/server-side-helpers), where you don’t have a request object. Whatever is defined here will **always** be available in your procedures.
+**Inner context** is where you define context which doesn’t depend on the request, e.g. your database connection. You can use this function for integration testing or [server-side helpers](trpc/docs/v10/client/nextjs/server-side-helpers/index.md), where you don’t have a request object. Whatever is defined here will **always** be available in your procedures.
 
 **Outer context** is where you define context which depends on the request, e.g. for the user's session. Whatever is defined here is only available for procedures that are called via HTTP.
 
@@ -317,3 +320,4 @@ ts
   `});`
 
 `});`
+

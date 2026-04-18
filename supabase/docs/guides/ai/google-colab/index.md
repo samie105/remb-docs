@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:33:37.798Z"
 content_hash: "0f95b0240c13e60078551b5d43f9938fbf4a40080c9c20823022ae670afa1341"
 menu_path: ["AI & Vectors","AI & Vectors","Third-Party Tools","Third-Party Tools","Google Colab","Google Colab"]
 section_path: ["AI & Vectors","AI & Vectors","Third-Party Tools","Third-Party Tools","Google Colab","Google Colab"]
+nav_prev: {"path": "supabase/docs/guides/ai/engineering-for-scale/index.md", "title": "Engineering for Scale"}
+nav_next: {"path": "supabase/docs/guides/ai/going-to-prod/index.md", "title": "Going to Production"}
 ---
+
 # 
 
 Google Colab
@@ -93,3 +96,4 @@ You can lean more about creating indexes in the [Vecs documentation](https://sup
 ## Resources[#](#resources)
 
 *   Vecs API: [supabase.github.io/vecs/api](https://supabase.github.io/vecs/api)
+

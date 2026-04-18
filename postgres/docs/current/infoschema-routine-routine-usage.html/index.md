@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:49:44.092Z"
 content_hash: "267c104671b1fa82783cc87388827d7982152488911e5e1e005f6384669fc480"
 menu_path: ["PostgreSQL: Documentation: 18: 35.42. routine_routine_usage"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/query-path.html/index.md", "title": "PostgreSQL: Documentation: 18: 51.1.\u00a0The Path of a Query"}
+nav_next: {"path": "postgres/docs/current/external-interfaces.html/index.md", "title": "PostgreSQL: Documentation: 18: H.1.\u00a0Client Interfaces"}
 ---
+
 Development Versions: [devel](https://www.postgresql.org/docs/devel/infoschema-routine-routine-usage.html "PostgreSQL devel - 35.42. routine_routine_usage")
 
 The view `routine_routine_usage` identifies all functions or procedures that are used by another (or the same) function or procedure, either in the SQL body or in parameter default expressions. (This only works for unquoted SQL bodies, not quoted bodies or functions in other languages.) An entry is included here only if the used function is owned by a currently enabled role. (There is no such restriction on the using function.)
@@ -45,3 +48,4 @@ Name of the schema that contains the function that is used by the first function
 `routine_name` `sql_identifier`
 
 The “specific name” of the function that is used by the first function.
+

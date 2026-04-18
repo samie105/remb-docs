@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:34:16.656Z"
 content_hash: "71d1cae4cc730cbbf0afbb22f5721c58bdda8b693c3f988b3be1652cd4061b9b"
 menu_path: ["AI & Vectors","AI & Vectors","Learn","Learn","RAG with Permissions","RAG with Permissions"]
 section_path: ["AI & Vectors","AI & Vectors","Learn","Learn","RAG with Permissions","RAG with Permissions"]
+nav_prev: {"path": "supabase/docs/guides/ai/langchain/index.md", "title": "LangChain"}
+nav_next: {"path": "supabase/docs/guides/ai/python-clients/index.md", "title": "Choosing a Client"}
 ---
+
 # 
 
 RAG with Permissions
@@ -162,3 +165,4 @@ All subsequent queries will inherit the permission of that user:
 There are endless approaches to this problem based on the complexities of each system. Luckily Postgres comes with all the primitives needed to provide access control in the way that works best for your project.
 
 If the examples above didn't fit your use case or you need to adjust them slightly to better fit your existing system, feel free to reach out to [support](/dashboard/support/new) and we'll be happy to assist you.
+

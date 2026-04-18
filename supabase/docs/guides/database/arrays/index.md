@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:39:50.948Z"
 content_hash: "d581ce3a17acdf27445bac09b78c92f8ebb07a35a4b8c053311d69c497b3527c"
 menu_path: ["Database","Database","Working with your database (basics)","Working with your database (basics)","Working with arrays","Working with arrays"]
 section_path: ["Database","Database","Working with your database (basics)","Working with your database (basics)","Working with arrays","Working with arrays"]
+nav_prev: {"path": "supabase/docs/guides/database/beekeeper-studio/index.md", "title": "Connecting with Beekeeper Studio"}
+nav_next: {"path": "supabase/docs/guides/database/connecting-to-postgres/index.md", "title": "Connect to your database"}
 ---
+
 # 
 
 Working With Arrays
@@ -67,3 +70,4 @@ returns:
 *   [Supabase JS Client](https://github.com/supabase/supabase-js)
 *   [Supabase - Get started for free](https://supabase.com)
 *   [Postgres Arrays](https://www.postgresql.org/docs/15/arrays.html)
+

@@ -9,15 +9,9 @@ last_crawled_at: "2026-04-18T16:49:51.366Z"
 content_hash: "6f83e2e8b1c64251e3071af6e68290b316ee0e5d196a5acffd2384766ae921c3"
 menu_path: ["align-content"]
 section_path: []
+nav_prev: {"path": "tailwind/docs/justify-self/index.md", "title": "justify-self"}
+nav_next: {"path": "tailwind/docs/align-items/index.md", "title": "align-items"}
 ---
-[](/)
-
-[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
-
-1.  Flexbox & Grid
-2.  align-content
-
-Flexbox & Grid
 
 # align-content
 
@@ -244,3 +238,4 @@ Short, tactical video lessons from the creator of Tailwind CSS, delivered direct
 [Get the free course](/build-uis-that-dont-suck)
 
 Copyright © 2026 Tailwind Labs Inc.·[Trademark Policy](/brand)
+

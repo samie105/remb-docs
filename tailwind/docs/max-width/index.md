@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:51:56.463Z"
 content_hash: "b86da7c07f025dc22b51dac6e8fdc3432b5e1732f797e3da8f3096bfd950f042"
 menu_path: ["max-width"]
 section_path: []
+nav_prev: {"path": "tailwind/docs/min-width/index.md", "title": "min-width"}
+nav_next: {"path": "tailwind/docs/height/index.md", "title": "height"}
 ---
+
 Utilities for setting the maximum width of an element.
 
 Class
@@ -126,7 +129,7 @@ Prefix a `max-width` utility with a breakpoint variant like `md:` to only apply 
 <div class="max-w-sm md:max-w-lg ...">  <!-- ... --></div>
 ```
 
-Learn more about using variants in the [variants documentation](https://tailwindcss.com/docs/hover-focus-and-other-states).
+Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).
 
 ## [Customizing your theme](#customizing-your-theme)
 
@@ -136,4 +139,5 @@ The `max-w-<number>` utilities are driven by the `--spacing` theme variable, whi
 @theme {  --spacing: 1px; }
 ```
 
-Learn more about customizing the spacing scale in the [theme variable documentation](https://tailwindcss.com/docs/theme).
+Learn more about customizing the spacing scale in the [theme variable documentation](tailwind/docs/theme/index.md).
+

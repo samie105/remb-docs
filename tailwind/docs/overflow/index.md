@@ -9,15 +9,9 @@ last_crawled_at: "2026-04-18T16:44:16.012Z"
 content_hash: "64e419cd766a04e84993a7e58796c75b0055d592b0e25facdd89a9c0c41cbece"
 menu_path: ["overflow"]
 section_path: []
+nav_prev: {"path": "tailwind/docs/object-position/index.md", "title": "object-position"}
+nav_next: {"path": "tailwind/docs/overscroll-behavior/index.md", "title": "overscroll-behavior"}
 ---
-[](/)
-
-[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
-
-1.  Layout
-2.  overflow
-
-Layout
 
 # overflow
 
@@ -338,3 +332,4 @@ Short, tactical video lessons from the creator of Tailwind CSS, delivered direct
 [Get the free course](/build-uis-that-dont-suck)
 
 Copyright © 2026 Tailwind Labs Inc.·[Trademark Policy](/brand)
+

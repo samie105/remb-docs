@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:22:53.452Z"
 content_hash: "aa3585f11160e03b05bf6bb453edab6bbd80c1a00442649f34536739922db5e6"
 menu_path: ["Todo App with Neon Postgres"]
 section_path: []
+nav_prev: {"path": "drizzle/docs/tutorials/drizzle-with-encore/index.md", "title": "Drizzle with Encore"}
+nav_next: {"path": "drizzle/docs/tutorials/drizzle-with-neon/index.md", "title": "Drizzle with Neon Postgres"}
 ---
+
 This tutorial demonstrates how to build `Todo app` using **Drizzle ORM** with **Neon database** and **Next.js**.
 
 This guide assumes familiarity with:
@@ -20,7 +23,7 @@ This guide assumes familiarity with:
 npx create-next-app@latest --typescript
 ```
 
-*   You should have installed Drizzle ORM and [Drizzle kit](https://orm.drizzle.team/docs/kit-overview). You can do this by running the following command:
+*   You should have installed Drizzle ORM and [Drizzle kit](drizzle/docs/kit-overview/index.md). You can do this by running the following command:
 
 npm
 
@@ -159,7 +162,7 @@ Here we define the **`todo`** table with fields **`id`**, **`text`**, and **`don
 
 #### Setup Drizzle config file[](#setup-drizzle-config-file)
 
-**Drizzle config** - a configuration file that is used by [Drizzle Kit](https://orm.drizzle.team/docs/kit-overview) and contains all the information about your database connection, migration folder and schema files.
+**Drizzle config** - a configuration file that is used by [Drizzle Kit](drizzle/docs/kit-overview/index.md) and contains all the information about your database connection, migration folder and schema files.
 
 Create a `drizzle.config.ts` file in the root of your project and add the following content:
 
@@ -207,7 +210,7 @@ Run migrations:
 npx drizzle-kit migrate
 ```
 
-Alternatively, you can push changes directly to the database using [Drizzle kit push command](https://orm.drizzle.team/docs/kit-overview#prototyping-with-db-push):
+Alternatively, you can push changes directly to the database using [Drizzle kit push command](drizzle/docs/kit-overview/index.md#prototyping-with-db-push):
 
 ```
 npx drizzle-kit push
@@ -537,3 +540,4 @@ This guide uses the following file structure:
  ├ 📜 tailwind.config.ts
  └ 📜 tsconfig.json
 ```
+

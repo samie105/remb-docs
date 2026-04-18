@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:44:44.283Z"
 content_hash: "a13120aadfc3d6b7ece6977d41f2e300a6b6f56917d27481b6ebf526b683b211"
 menu_path: ["Shared packages & examples"]
 section_path: []
+nav_prev: {"path": "prisma/docs/orm/prisma-client/client-extensions/model/index.md", "title": "Add custom methods to your models"}
+nav_next: {"path": "prisma/docs/orm/prisma-client/client-extensions/index.md", "title": "What are Client Extensions"}
 ---
+
 Client Extensions
 
 Explore the Prisma Client extensions that have been built by Prisma and its community
@@ -24,7 +27,7 @@ Description
 
 Adds read replica support to Prisma Client
 
-The following is a list of extensions created by the community. If you want to create your own package, refer to the [Shared Prisma Client extensions](https://www.prisma.io/docs/orm/prisma-client/client-extensions/shared-extensions) documentation.
+The following is a list of extensions created by the community. If you want to create your own package, refer to the [Shared Prisma Client extensions](prisma/docs/orm/prisma-client/client-extensions/shared-extensions/index.md) documentation.
 
 Extension
 
@@ -160,6 +163,7 @@ Demonstrates how to add an `exists` method to all your models
 
 Demonstrates how to add the `updateIgnoreOnNotFound` and `deleteIgnoreOnNotFound` methods to all your models.
 
-*   Learn more about [Prisma Client extensions](https://www.prisma.io/docs/orm/prisma-client/client-extensions).
+*   Learn more about [Prisma Client extensions](prisma/docs/orm/prisma-client/client-extensions/index.md).
 
 [Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/prisma-client/client-extensions/extension-examples.mdx)
+

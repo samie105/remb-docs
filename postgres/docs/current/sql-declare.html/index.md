@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:42:10.756Z"
 content_hash: "f56d7488d72f4c56643e348ab91bc185f51f855620f243ddc01d2f6c237d1b17"
 menu_path: ["PostgreSQL: Documentation: 18: DECLARE"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/plpgsql-development-tips.html/index.md", "title": "PostgreSQL: Documentation: 18: 41.12.\u00a0Tips for Developing in PL/pgSQL"}
+nav_next: {"path": "postgres/docs/current/contrib-dblink-function.html/index.md", "title": "PostgreSQL: Documentation: 18: dblink"}
 ---
+
 ## Description
 
 `DECLARE` allows a user to create cursors, which can be used to retrieve a small number of rows at a time out of a larger query. After the cursor is created, rows are fetched from it using [`FETCH`](https://www.postgresql.org/docs/current/sql-fetch.html "FETCH").
@@ -106,3 +109,4 @@ The SQL standard allows cursors only in embedded SQL and in modules. PostgreSQL 
 According to the SQL standard, changes made to insensitive cursors by `UPDATE ... WHERE CURRENT OF` and `DELETE ... WHERE CURRENT OF` statements are visible in that same cursor. PostgreSQL treats these statements like all other data changing statements in that they are not visible in insensitive cursors.
 
 Binary cursors are a PostgreSQL extension.
+

@@ -9,15 +9,9 @@ last_crawled_at: "2026-04-18T17:08:22.820Z"
 content_hash: "dd243900818c22f361554a8f38f2905671486dd9ad5da3bd7b08c2ce24cdd065"
 menu_path: ["filter: invert()"]
 section_path: []
+nav_prev: {"path": "tailwind/docs/filter-hue-rotate/index.md", "title": "filter: hue-rotate()"}
+nav_next: {"path": "tailwind/docs/filter-saturate/index.md", "title": "filter: saturate()"}
 ---
-[](/)
-
-[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
-
-1.  Filters
-2.  invert
-
-Filters
 
 # filter: invert()
 
@@ -114,3 +108,4 @@ Make your ideas look awesome, without relying on a designer.
 ](https://www.refactoringui.com/?ref=sidebar)
 
 Copyright © 2026 Tailwind Labs Inc.·[Trademark Policy](/brand)
+

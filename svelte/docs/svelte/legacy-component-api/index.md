@@ -9,7 +9,9 @@ last_crawled_at: "2026-04-18T16:49:54.085Z"
 content_hash: "ad288c15af1c2d91bf01146466a6adab8b6c3afc57928eb81333a5187a01b84e"
 menu_path: ["Imperative component API"]
 section_path: []
+nav_prev: {"path": "svelte/docs/svelte/legacy-svelte-self/index.md", "title": "<svelte:self>"}
 ---
+
 In Svelte 3 and 4, the API for interacting with a component is different than in Svelte 5. Note that this page does _not_ apply to legacy mode components in a Svelte 5 application.
 
 ## Creating a component[](#Creating-a-component)
@@ -384,3 +386,4 @@ new <string, string>(iterable?: Iterable<readonly [string, string]> | null | und
 previous next
 
 [<svelte:self>](/docs/svelte/legacy-svelte-self)
+

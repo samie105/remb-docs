@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:12:29.088Z"
 content_hash: "0b301387344e5ce74eda77e7a2f8265c9394b2d53011491d47f4fc0959d28f70"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Redis Open Source and Redis Software","→","Redis Open Source and Redis Software","→\n      \n        Deprecated Redis Open Source features and modules","→","Deprecated Redis Open Source features and modules","→\n      \n        Triggers and functions","→","Triggers and functions","→\n      \n        Known limitations","→","Known limitations"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Redis Open Source and Redis Software","→","Redis Open Source and Redis Software","→\n      \n        Deprecated Redis Open Source features and modules","→","Deprecated Redis Open Source features and modules","→\n      \n        Triggers and functions","→","Triggers and functions","→\n      \n        Known limitations","→","Known limitations"]
+nav_prev: {"path": "redis/docs/latest/integrate/write-behind/installation/index.md", "title": "Installation"}
+nav_next: {"path": "redis/docs/latest/operate/oss_and_stack/management/optimization/index.md", "title": "Optimizing Redis"}
 ---
+
 # Known limitations
 
 Overview of the known limitations
@@ -53,3 +56,4 @@ Not all the JavaScript global variables are made available by the JavaScript eng
 This feature is sandboxed, meaning, from within a function, it’s not possible to make calls to external services, including other Redis databases, or APIs.
 
 ## On this page
+

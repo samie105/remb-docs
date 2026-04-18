@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:47:13.387Z"
 content_hash: "7fb8f2420673a70c7c41aa37403323982414ae45eb68cada50e2ff49230afe81"
 menu_path: ["Experimental route caching"]
 section_path: []
+nav_prev: {"path": "astro/en/reference/experimental-flags/index.md", "title": "Configuring experimental flags"}
+nav_next: {"path": "astro/en/reference/experimental-flags/client-prerender/index.md", "title": "Experimental client prerendering"}
 ---
+
 # Experimental route caching
 
 **Type:** `object`  
@@ -551,3 +554,4 @@ Thrown at build time when the configured cache provider cannot be resolved. This
 For full details and to give feedback on this experimental API, see the [Route Caching RFC](https://github.com/withastro/roadmap/pull/1245).
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

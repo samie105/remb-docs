@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:48:30.528Z"
 content_hash: "3623be661e5ae3063fea9bdb96049659fc84ee807e5051fee2f0fe4acd2fab7d"
 menu_path: ["Queues","Queues","Getting Started","Getting Started","Expose Queues for local and self-hosted Supabase","Expose Queues for local and self-hosted Supabase"]
 section_path: ["Queues","Queues","Getting Started","Getting Started","Expose Queues for local and self-hosted Supabase","Expose Queues for local and self-hosted Supabase"]
+nav_prev: {"path": "supabase/docs/guides/queues/consuming-messages-with-edge-functions/index.md", "title": "Consuming Supabase Queue Messages with Edge Functions"}
+nav_next: {"path": "supabase/docs/guides/queues/pgmq/index.md", "title": "PGMQ Extension"}
 ---
+
 # 
 
 Expose Queues for local and self-hosted Supabase
@@ -62,3 +65,4 @@ If you no longer want to expose the `pgmq_public` schema, you can remove it from
 *   For Docker Compose, remove `pgmq_public` from the `PGRST_DB_SCHEMAS` variable in your `.env` file.
 
 After updating your configuration, restart your containers for the changes to take effect.
+

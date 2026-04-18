@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:48:04.868Z"
 content_hash: "dd851d45e0c7f71be446f1c5eeed381fb1dd030eeb65f7a259e97f6454714234"
 menu_path: ["Check in: Unit 1 - Setup"]
 section_path: []
+nav_prev: {"path": "astro/en/tutorial/0-introduction/index.md", "title": "Build your first Astro Blog"}
+nav_next: {"path": "astro/en/tutorial/2-pages/index.md", "title": "Check in: Unit 2 - Pages"}
 ---
+
 # Check in: Unit 1 - Setup
 
 Now that you know what you’re going to build, it’s time to set up all the tools you’ll need!
@@ -33,3 +36,4 @@ Every time you commit a change to GitHub, a notification will be sent to Netlify
  *    I’m ready to prepare a development environment for an Astro project!
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:41:09.462Z"
 content_hash: "258eb0fbd1eca9ff94192c582fcfe3f4d4545b42919fd499172e42713be9e6f7"
 menu_path: ["PostgreSQL: Documentation: 18: 11.12. Examining Index Usage"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/indexes-opclass.html/index.md", "title": "PostgreSQL: Documentation: 18: 11.10.\u00a0Operator Classes and Operator Families"}
+nav_next: {"path": "postgres/docs/current/infoschema-foreign-tables.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.31.\u00a0foreign_tables"}
 ---
+
 Although indexes in PostgreSQL do not need maintenance or tuning, it is still important to check which indexes are actually used by the real-life query workload. Examining index usage for an individual query is done with the [EXPLAIN](https://www.postgresql.org/docs/current/sql-explain.html "EXPLAIN") command; its application for this purpose is illustrated in [Section 14.1](https://www.postgresql.org/docs/current/using-explain.html "14.1. Using EXPLAIN"). It is also possible to gather overall statistics about index usage in a running server, as described in [Section 27.2](https://www.postgresql.org/docs/current/monitoring-stats.html "27.2. The Cumulative Statistics System").
 
 It is difficult to formulate a general procedure for determining which indexes to create. There are a number of typical cases that have been shown in the examples throughout the previous sections. A good deal of experimentation is often necessary. The rest of this section gives some tips for that:
@@ -29,3 +32,4 @@ It is difficult to formulate a general procedure for determining which indexes t
 *   If it turns out that the cost estimates are wrong, there are, again, two possibilities. The total cost is computed from the per-row costs of each plan node times the selectivity estimate of the plan node. The costs estimated for the plan nodes can be adjusted via run-time parameters (described in [Section 19.7.2](https://www.postgresql.org/docs/current/runtime-config-query.html#RUNTIME-CONFIG-QUERY-CONSTANTS "19.7.2. Planner Cost Constants")). An inaccurate selectivity estimate is due to insufficient statistics. It might be possible to improve this by tuning the statistics-gathering parameters (see [ALTER TABLE](https://www.postgresql.org/docs/current/sql-altertable.html "ALTER TABLE")).
     
     If you do not succeed in adjusting the costs to be more appropriate, then you might have to resort to forcing index usage explicitly. You might also want to contact the PostgreSQL developers to examine the issue.
+

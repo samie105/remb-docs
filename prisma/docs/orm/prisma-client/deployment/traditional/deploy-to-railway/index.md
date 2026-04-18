@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:54:37.388Z"
 content_hash: "bf3a7e6c199ac4161caa2fe72a97550853ed76bb39e109ef90ea009844a23dba"
 menu_path: ["Deploy to Railway"]
 section_path: []
+nav_prev: {"path": "prisma/docs/orm/prisma-client/deployment/traditional/deploy-to-koyeb/index.md", "title": "Deploy to Koyeb"}
+nav_next: {"path": "prisma/docs/orm/prisma-client/deployment/traditional/deploy-to-render/index.md", "title": "Deploy to Render"}
 ---
+
 Deployment
 
 Traditional
@@ -91,3 +94,4 @@ If you see any errors:
 To learn more about the various features Railway offers for your application, visit the [Railway documentation](https://docs.railway.app/?utm_medium=integration&utm_source=docs&utm_campaign=prisma).
 
 [Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/prisma-client/deployment/traditional/deploy-to-railway.mdx)
+

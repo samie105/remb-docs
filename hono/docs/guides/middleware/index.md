@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:42:45.115Z"
 content_hash: "f16216d322f3e3007f5a4b077ff5eda4316998c7913ec599a0ba8c4553f67b4b"
 menu_path: ["Middleware ​"]
 section_path: []
+nav_prev: {"path": "hono/docs/guides/create-hono/index.md", "title": "Create-hono \u200b"}
+nav_next: {"path": "hono/docs/guides/helpers/index.md", "title": "Helpers \u200b"}
 ---
+
 ## Middleware [​](#middleware)
 
 Middleware works before/after the endpoint `Handler`. We can get the `Request` before dispatching or manipulate the `Response` after dispatching.
@@ -91,7 +94,7 @@ middleware 1 start
 middleware 1 end
 ```
 
-Note that if the handler or any middleware throws, hono will catch it and either pass it to [your app.onError() callback](https://hono.dev/docs/api/hono#error-handling) or automatically convert it to a 500 response before returning it up the chain of middleware. This means that next() will never throw, so there is no need to wrap it in a try/catch/finally.
+Note that if the handler or any middleware throws, hono will catch it and either pass it to [your app.onError() callback](hono/docs/api/hono/index.md#error-handling) or automatically convert it to a 500 response before returning it up the chain of middleware. This means that next() will never throw, so there is no need to wrap it in a try/catch/finally.
 
 ## Built-in Middleware [​](#built-in-middleware)
 
@@ -163,7 +166,7 @@ app.get('/message/hello', (c) => c.text('Hello Middleware!'))
 
 However, embedding middleware directly within `app.use()` can limit its reusability. Therefore, we can separate our middleware into different files.
 
-To ensure we don't lose type definitions for `context` and `next`, when separating middleware, we can use [`createMiddleware()`](https://hono.dev/docs/helpers/factory#createmiddleware) from Hono's factory. This also allows us to type-safely [access data we've `set` in `Context`](https://hono.dev/docs/api/context#set-get) from downstream handlers.
+To ensure we don't lose type definitions for `context` and `next`, when separating middleware, we can use [`createMiddleware()`](hono/docs/helpers/factory/index.md#createmiddleware) from Hono's factory. This also allows us to type-safely [access data we've `set` in `Context`](hono/docs/api/context/index.md#set-get) from downstream handlers.
 
 ts
 
@@ -284,4 +287,5 @@ This works because each `.use()` call returns a new Hono instance with the merge
 
 Built-in middleware does not depend on external modules, but third-party middleware can depend on third-party libraries. So with them, we may make a more complex application.
 
-We can explore a variety of [third-party middleware](https://hono.dev/docs/middleware/third-party). For example, we have GraphQL Server Middleware, Sentry Middleware, Firebase Auth Middleware, and others.
+We can explore a variety of [third-party middleware](hono/docs/middleware/third-party/index.md). For example, we have GraphQL Server Middleware, Sentry Middleware, Firebase Auth Middleware, and others.
+

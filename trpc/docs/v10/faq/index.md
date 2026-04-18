@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:35:46.198Z"
 content_hash: "70da03accda58ec77372d2261f8dde6d15d5ea9cdd877fe40b55c86615b61875"
 menu_path: ["FAQ / Troubleshooting"]
 section_path: []
+nav_prev: {"path": "trpc/docs/v10/example-apps/index.md", "title": "Example Apps"}
+nav_next: {"path": "trpc/docs/v10/community/love/index.md", "title": "Testimonials / Love"}
 ---
+
 Collection of frequently asked questions with ideas on how to troubleshoot & resolve them.
 
 Feel free to contribute to this page with improvements or create a new discussion [on GitHub](https://github.com/trpc/trpc/discussions) if you have a question that isn't answered here. Also, have look through the [GitHub Discussions](https://github.com/trpc/trpc/discussions) and our [Discord](https://trpc.io/discord) if your question isn't answered here.
@@ -22,7 +25,7 @@ Feel free to contribute to this page with improvements or create a new discussio
 
 ## How do I make a middleware change the type of my `Context`?[​](#how-do-i-make-a-middleware-change-the-type-of-my-context "Direct link to how-do-i-make-a-middleware-change-the-type-of-my-context")
 
-See [Context Extension](https://trpc.io/docs/server/middlewares#context-extension).
+See [Context Extension](trpc/docs/server/middlewares/index.md#context-extension).
 
 ## Is tRPC production ready?[​](#is-trpc-production-ready "Direct link to Is tRPC production ready?")
 
@@ -39,7 +42,7 @@ Here are some things to check:
 *   Make sure you have no type errors in your app
 *   In the case that you have a dedicated server and client `tsconfig.json` files without a bundled server monorepo package, make sure you have `"paths": [...]` in your client `tsconfig.json` like your server `tsconfig.json`,so that the client can find the same file.
 
-You can also have a look at our [Awesome tRPC](https://trpc.io/docs/community/awesome-trpc)\-collection to find several open-source projects that are using tRPC in a monorepo.
+You can also have a look at our [Awesome tRPC](trpc/docs/community/awesome-trpc/index.md)\-collection to find several open-source projects that are using tRPC in a monorepo.
 
 ## Is a monorepo mandatory?[​](#is-a-monorepo-mandatory "Direct link to Is a monorepo mandatory?")
 
@@ -57,7 +60,7 @@ No, not currently, in order for tRPC to do that automatically, we need something
 
 ## Can I apply a middleware to a full router?[​](#can-i-apply-a-middleware-to-a-full-router "Direct link to Can I apply a middleware to a full router?")
 
-No, but you can use [base procedures](https://trpc.io/docs/server/procedures#reusable-base-procedures) instead, which offers more flexibility than if this was done on a per-router-level.
+No, but you can use [base procedures](trpc/docs/server/procedures/index.md#reusable-base-procedures) instead, which offers more flexibility than if this was done on a per-router-level.
 
 ## Does tRPC work with Next.js 13 App Layouts & RSC?[​](#does-trpc-work-with-nextjs-13-app-layouts--rsc "Direct link to Does tRPC work with Next.js 13 App Layouts & RSC?")
 
@@ -110,3 +113,4 @@ We expect the API to be stable now and are planning to release codemods for any 
 ## Anything else you want to know?[​](#anything-else-you-want-to-know "Direct link to Anything else you want to know?")
 
 Please write a feature request on [GitHub](https://github.com/trpc/trpc/issues), write in [GitHub Discussions](https://github.com/trpc/trpc/discussions), or [Discord](https://trpc.io/discord). You're also free to suggest improvement of this page or any other page using the "Edit this page" button at the bottom of the page.
+

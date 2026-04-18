@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:36:54.777Z"
 content_hash: "82a771ba1415da55996025fdc7098a50b1c9a5a5cf57c810ea2ba32b6be442e4"
 menu_path: ["Next.js ​"]
 section_path: []
+nav_prev: {"path": "hono/docs/getting-started/vercel/index.md", "title": "Vercel \u200b"}
+nav_next: {"path": "hono/docs/getting-started/netlify/index.md", "title": "Netlify \u200b"}
 ---
+
 Next.js is a flexible React framework that gives you building blocks to create fast web applications.
 
 You can run Hono on Next.js when using the Node.js runtime.  
@@ -204,3 +207,4 @@ text
 ```
 NODEJS_HELPERS=0
 ```
+

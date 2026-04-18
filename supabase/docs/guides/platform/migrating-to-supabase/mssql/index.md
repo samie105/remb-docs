@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:00:33.066Z"
 content_hash: "7fc74ab85fe7825a26195e5bd59508a5a64b8e14ae7319b150a5b36bb804cfae"
 menu_path: ["Platform","Platform","More","More","More","Migrating to Supabase","Migrating to Supabase","MSSQL","MSSQL"]
 section_path: ["Platform","Platform","More","More","More","Migrating to Supabase","Migrating to Supabase","MSSQL","MSSQL"]
+nav_prev: {"path": "supabase/docs/guides/platform/migrating-to-supabase/heroku/index.md", "title": "Migrate from Heroku to Supabase"}
+nav_next: {"path": "supabase/docs/guides/platform/migrating-to-supabase/neon/index.md", "title": "Migrate from Neon to Supabase"}
 ---
+
 # 
 
 Migrate from MSSQL to Supabase
@@ -63,3 +66,4 @@ Alternatively, you can use [pgloader](https://github.com/dimitri/pgloader), a fl
 ## Enterprise[#](#enterprise)
 
 [Contact us](https://forms.supabase.com/enterprise) if you need more help migrating your project.
+

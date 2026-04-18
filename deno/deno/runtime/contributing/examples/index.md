@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:45:20.081Z"
 content_hash: "ca412b4654beccddf85b786e2f4541142cb487dfa1aa9f7948018521a2aa1c61"
 menu_path: ["Contributing an example"]
 section_path: []
+nav_prev: {"path": "deno/deno/runtime/contributing/docs/index.md", "title": "Documentation guidelines"}
+nav_next: {"path": "deno/deno/runtime/help/index.md", "title": "Where to get help"}
 ---
+
 On this page
 
 *   [Contributing an example](#contributing-an-example)
@@ -26,3 +29,4 @@ If you have a Deno example that you would like to share with the community, you 
 ## Getting your stickers
 
 If you've contributed an example, drop us an email at [docs@deno.com](mailto:docs@deno.com) and let us know so we can get your stickers out to you!
+

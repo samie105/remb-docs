@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:41:12.305Z"
 content_hash: "6ed7d5a800fe05befb4f9359d2ec53342317a20b0420a6a8f5e8e834ce04f710"
 menu_path: ["Migrating from SvelteKit"]
 section_path: []
+nav_prev: {"path": "astro/en/guides/migrate-to-astro/from-pelican/index.md", "title": "Migrating from Pelican"}
+nav_next: {"path": "astro/en/guides/migrate-to-astro/from-vuepress/index.md", "title": "Migrating from VuePress"}
 ---
+
 # Migrating from SvelteKit
 
 [SvelteKit](https://kit.svelte.dev) is a framework for building web applications on top of Svelte.
@@ -132,3 +135,4 @@ To convert other types of sites, such as a portfolio or documentation site, see 
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

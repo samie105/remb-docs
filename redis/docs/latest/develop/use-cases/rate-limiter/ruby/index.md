@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:11:18.650Z"
 content_hash: "2c11a5e6470d04716732673566eded949ad9abee90e4eaf20443ebf9507745b6"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Token bucket rate limiter with Redis","→","Token bucket rate limiter with Redis","→\n      \n        Token bucket rate limiter with Redis and Ruby","→","Token bucket rate limiter with Redis and Ruby"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Token bucket rate limiter with Redis","→","Token bucket rate limiter with Redis","→\n      \n        Token bucket rate limiter with Redis and Ruby","→","Token bucket rate limiter with Redis and Ruby"]
+nav_prev: {"path": "redis/docs/latest/develop/use-cases/time-series-dashboard/ruby/index.md", "title": "Rolling sensor graph demo with Redis and Ruby"}
+nav_next: {"path": "redis/docs/latest/develop/use-cases/session-store/ruby/index.md", "title": "Redis session store with Ruby"}
 ---
+
 # Token bucket rate limiter with Redis and Ruby
 
 Implement a token bucket rate limiter using Redis and Lua scripts in Ruby
@@ -296,3 +299,4 @@ end
 *   [Ruby client](/docs/latest/develop/clients/ruby/) - Redis Ruby client documentation
 
 ## On this page
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:57:57.417Z"
 content_hash: "140b7712571d1f7beeeebaacd89c1330a935acbb00878fd93dc1b7aa4ad9b848"
 menu_path: ["Lockfile"]
 section_path: []
+nav_prev: {"path": "bun/bun/docs/pm/lifecycle/index.md", "title": "Lifecycle scripts"}
+nav_next: {"path": "bun/bun/docs/pm/overrides/index.md", "title": "Overrides and resolutions"}
 ---
+
 [Skip to main content](#content-area)
 
 [Bun home page![light logo](https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z_zHyy/logo/logo-with-wordmark-dark.svg?fit=max&auto=format&n=JUhaF6Mf68z_zHyy&q=85&s=3f55cd23822028e40658b192c927f3e4)![dark logo](https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z_zHyy/logo/logo-with-wordmark-light.svg?fit=max&auto=format&n=JUhaF6Mf68z_zHyy&q=85&s=8a0c5928d9dc3631f0d33e17c257e2ec)](/docs)
@@ -127,3 +130,4 @@ Lifecycle scripts
 Next
 
 ](/docs/pm/lifecycle)
+

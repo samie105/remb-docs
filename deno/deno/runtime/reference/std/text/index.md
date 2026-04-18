@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:06:09.442Z"
 content_hash: "57955a9c19a98d3b69ecb979ec8f900e958627c2a7b2c17a7df84d110da893c9"
 menu_path: ["@std/text"]
 section_path: []
+nav_prev: {"path": "deno/deno/runtime/reference/std/testing/index.md", "title": "@std/testing"}
+nav_next: {"path": "deno/deno/runtime/reference/std/toml/index.md", "title": "@std/toml"}
 ---
+
 On this page
 
 *   [Overview](#overview)
@@ -40,3 +43,4 @@ deno add jsr:@std/text
 ```
 
 [See all symbols in @std/text on](https://jsr.io/@std/text/doc)
+

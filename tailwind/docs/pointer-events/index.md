@@ -9,15 +9,9 @@ last_crawled_at: "2026-04-18T17:16:11.040Z"
 content_hash: "b3b1a4ee5403d38ca3267f5d3ea41b0286f46b0e62058dd730a635c22e79aefc"
 menu_path: ["pointer-events"]
 section_path: []
+nav_prev: {"path": "tailwind/docs/field-sizing/index.md", "title": "field-sizing"}
+nav_next: {"path": "tailwind/docs/resize/index.md", "title": "resize"}
 ---
-[](/)
-
-[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
-
-1.  Interactivity
-2.  pointer-events
-
-Interactivity
 
 # pointer-events
 
@@ -83,3 +77,4 @@ Make your ideas look awesome, without relying on a designer.
 ](https://www.refactoringui.com/?ref=sidebar)
 
 Copyright © 2026 Tailwind Labs Inc.·[Trademark Policy](/brand)
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:07:47.479Z"
 content_hash: "db2440622a87d0090ec75cf2c5d3f9d7544f80aff8638d0e1cad3ce349113c67"
 menu_path: ["WebAssembly"]
 section_path: []
+nav_prev: {"path": "deno/deno/runtime/reference/lint_plugins/index.md", "title": "Lint Plugins"}
+nav_next: {"path": "deno/deno/runtime/reference/migration_guide/index.md", "title": "Deno 1.x to 2.x Migration Guide"}
 ---
+
 On this page
 
 *   [Wasm modules](#wasm-modules)
@@ -285,3 +288,4 @@ wasmbuild generates TypeScript definitions for your Rust functions, providing fu
 ## Optimization
 
 For production builds you can perform optimizations on WebAssembly binaries. If you're serving binaries over a network then optimizing for size can make a real difference. If you're mainly executing WebAssembly on a server to perform computationally intensive tasks, optimizing for speed can be beneficial. You can find a good guide on optimizing (production) builds [here](https://rustwasm.github.io/docs/book/reference/code-size.html). In addition, the [rust-wasm group](https://rustwasm.github.io/docs/book/reference/tools.html) has a list of tools that can be used to optimize and manipulate WebAssembly binaries.
+

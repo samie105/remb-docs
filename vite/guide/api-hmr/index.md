@@ -9,10 +9,13 @@ last_crawled_at: "2026-04-18T16:34:00.363Z"
 content_hash: "4de575f5b341f79eb10bd74670bd381e2bc3131154c6e9b9578e6640897d6b50"
 menu_path: ["HMR API ​"]
 section_path: []
+nav_prev: {"path": "vite/guide/api-plugin/index.md", "title": "Plugin API \u200b"}
+nav_next: {"path": "vite/guide/api-javascript/index.md", "title": "JavaScript API \u200b"}
 ---
+
 Note
 
-This is the client HMR API. For handling HMR update in plugins, see [handleHotUpdate](https://vite.dev/guide/api-plugin#handlehotupdate).
+This is the client HMR API. For handling HMR update in plugins, see [handleHotUpdate](vite/guide/api-plugin/index.md#handlehotupdate).
 
 The manual HMR API is primarily intended for framework and tooling authors. As an end user, HMR is likely already handled for you in the framework specific starter templates.
 
@@ -225,7 +228,7 @@ The following HMR events are dispatched by Vite automatically:
 *   `'vite:ws:disconnect'` when the WebSocket connection is lost
 *   `'vite:ws:connect'` when the WebSocket connection is (re-)established
 
-Custom HMR events can also be sent from plugins. See [handleHotUpdate](https://vite.dev/guide/api-plugin#handlehotupdate) for more details.
+Custom HMR events can also be sent from plugins. See [handleHotUpdate](vite/guide/api-plugin/index.md#handlehotupdate) for more details.
 
 ## `hot.off(event, cb)` [​](#hot-off-event-cb)
 
@@ -237,10 +240,11 @@ Send custom events back to Vite's dev server.
 
 If called before connected, the data will be buffered and sent once the connection is established.
 
-See [Client-server Communication](https://vite.dev/guide/api-plugin#client-server-communication) for more details, including a section on [Typing Custom Events](https://vite.dev/guide/api-plugin#typescript-for-custom-events).
+See [Client-server Communication](vite/guide/api-plugin/index.md#client-server-communication) for more details, including a section on [Typing Custom Events](vite/guide/api-plugin/index.md#typescript-for-custom-events).
 
 ## Further Reading [​](#further-reading)
 
 If you'd like to learn more about how to use the HMR API and how it works under-the-hood. Check out these resources:
 
 *   [Hot Module Replacement is Easy](https://bjornlu.com/blog/hot-module-replacement-is-easy)
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:52:35.739Z"
 content_hash: "75543924a229c359286d808e5504a8762dc0c0e20802c353108084bec4e2a900"
 menu_path: ["Data REST API","Data REST API","Guides","Guides","Generating TypeScript Types","Generating TypeScript Types"]
 section_path: ["Data REST API","Data REST API","Guides","Guides","Generating TypeScript Types","Generating TypeScript Types"]
+nav_prev: {"path": "supabase/docs/guides/api/rest/generating-python-types/index.md", "title": "Generating Python Types"}
+nav_next: {"path": "supabase/docs/guides/api/rest/postgrest-error-codes/index.md", "title": "Error Codes"}
 ---
+
 # 
 
 Generating TypeScript Types
@@ -182,3 +185,4 @@ Alternatively, you can use a community-supported GitHub action: [`generate-supab
 ## Resources[#](#resources)
 
 *   [Generating Supabase types with GitHub Actions](https://blog.esteetey.dev/how-to-create-and-test-a-github-action-that-generates-types-from-supabase-database)
+

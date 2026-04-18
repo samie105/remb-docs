@@ -9,15 +9,9 @@ last_crawled_at: "2026-04-18T17:08:21.958Z"
 content_hash: "ee176ad2bc70f3410096d15d08fa376e9ec9ddcfad2ade0166037f041d47ae0e"
 menu_path: ["filter: saturate()"]
 section_path: []
+nav_prev: {"path": "tailwind/docs/filter-invert/index.md", "title": "filter: invert()"}
+nav_next: {"path": "tailwind/docs/filter-sepia/index.md", "title": "filter: sepia()"}
 ---
-[](/)
-
-[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
-
-1.  Filters
-2.  saturate
-
-Filters
 
 # filter: saturate()
 
@@ -114,3 +108,4 @@ Make your ideas look awesome, without relying on a designer.
 ](https://www.refactoringui.com/?ref=sidebar)
 
 Copyright © 2026 Tailwind Labs Inc.·[Trademark Policy](/brand)
+

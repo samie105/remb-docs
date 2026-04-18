@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:09:55.231Z"
 content_hash: "3e29dff4294e20bdaf1cd0d7fdbee81dc5316a1226debc5aa808f267984425ec"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Connect with Redis client API libraries","→","Connect with Redis client API libraries","→\n      \n        go-redis guide (Go)","→","go-redis guide (Go)"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Connect with Redis client API libraries","→","Connect with Redis client API libraries","→\n      \n        go-redis guide (Go)","→","go-redis guide (Go)"]
+nav_prev: {"path": "redis/docs/latest/operate/oss_and_stack/stack-with-enterprise/deprecated-features/triggers-and-functions/examples/index.md", "title": "Triggers and functions examples"}
+nav_next: {"path": "redis/docs/latest/develop/ai/redisvl/user_guide/session_manager/index.md", "title": "LLM Session Memory"}
 ---
+
 # go-redis guide (Go)
 
 Connect your Go application to a Redis database
@@ -632,3 +635,4 @@ func main() {
 See the other pages in this section for more information and examples. Further examples are available at the [`go-redis`](https://redis.uptrace.dev/guide/) website and the [GitHub repository](https://github.com/redis/go-redis).
 
 ## On this page
+

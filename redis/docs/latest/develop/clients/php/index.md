@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:12:38.032Z"
 content_hash: "eead975363cc8f29ba0f93b7b02b7e0b179b782a1b4b1c1d37a753213e6ebc97"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Connect with Redis client API libraries","→","Connect with Redis client API libraries","→\n      \n        Predis guide (PHP)","→","Predis guide (PHP)"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Connect with Redis client API libraries","→","Connect with Redis client API libraries","→\n      \n        Predis guide (PHP)","→","Predis guide (PHP)"]
+nav_prev: {"path": "redis/docs/latest/operate/oss_and_stack/management/optimization/index.md", "title": "Optimizing Redis"}
+nav_next: {"path": "redis/docs/latest/develop/clients/nodejs/produsage/index.md", "title": "Production usage"}
 ---
+
 # Predis guide (PHP)
 
 Connect your PHP application to a Redis database
@@ -156,3 +159,4 @@ The [Predis wiki on Github](https://github.com/predis/predis/wiki) has informati
 See also the pages in this section for more information and examples:
 
 ## On this page
+

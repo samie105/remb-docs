@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:00:10.810Z"
 content_hash: "0dc594528a12f010be551cd0bb10c03c69dc12fe065ef0125c1424e8209d36d6"
 menu_path: ["Platform","Platform","More","More","More","Manage your usage","Manage your usage","Monthly Active Users","Monthly Active Users"]
 section_path: ["Platform","Platform","More","More","More","Manage your usage","Manage your usage","Monthly Active Users","Monthly Active Users"]
+nav_prev: {"path": "supabase/docs/guides/platform/manage-your-usage/monthly-active-users-sso/index.md", "title": "Manage Monthly Active SSO Users usage"}
+nav_next: {"path": "supabase/docs/guides/platform/manage-your-usage/point-in-time-recovery/index.md", "title": "Manage Point-in-Time Recovery usage"}
 ---
+
 # 
 
 Manage Monthly Active Users usage
@@ -191,3 +194,4 @@ In the Monthly Active Users section, you can see the usage for the selected time
 If you are on a paid plan and have [Spend Cap](/docs/guides/platform/cost-control#spend-cap) disabled or your organization is on Team Plan or above, you will pay for any overages.
 
 When you are exceeding your quotas while being on a Free Plan or having [Spend Cap](/docs/guides/platform/cost-control#spend-cap) enabled, you will get a notification to your billing email address and put under a grace period. For more details, refer to our [Fair Use Policy](/docs/guides/platform/billing-faq#fair-use-policy).
+

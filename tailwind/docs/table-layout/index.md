@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:11:20.676Z"
 content_hash: "243c14e9498f18f105048cb51bbc58ccd2611862e2be1f5f622a8d1658c3e736"
 menu_path: ["table-layout"]
 section_path: []
+nav_prev: {"path": "tailwind/docs/border-spacing/index.md", "title": "border-spacing"}
+nav_next: {"path": "tailwind/docs/caption-side/index.md", "title": "caption-side"}
 ---
+
 Utilities for controlling the table layout algorithm.
 
 Class
@@ -100,4 +103,5 @@ Prefix a `table-layout` utility with a breakpoint variant like `md:` to only app
 <div class="table-auto md:table-fixed ...">  <!-- ... --></div>
 ```
 
-Learn more about using variants in the [variants documentation](https://tailwindcss.com/docs/hover-focus-and-other-states).
+Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).
+

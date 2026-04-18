@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:43:37.444Z"
 content_hash: "a475af2f17207ed0405a84dcd1106f86b7b6e5a8d2d562f381543571c3b4c038"
 menu_path: ["Edge Functions","Edge Functions","More","More","More","Supabase Auth","Supabase Auth","Legacy JWT secret","Legacy JWT secret"]
 section_path: ["Edge Functions","Edge Functions","More","More","More","Supabase Auth","Supabase Auth","Legacy JWT secret","Legacy JWT secret"]
+nav_prev: {"path": "supabase/docs/guides/functions/architecture/index.md", "title": "Edge Functions Architecture"}
+nav_next: {"path": "supabase/docs/guides/functions/ai-models/index.md", "title": "Running AI Models"}
 ---
+
 # 
 
 Integrating With Supabase Auth
@@ -69,3 +72,4 @@ See the full [example on GitHub](https://github.com/supabase/supabase/blob/maste
 ```
 
 [View source](https://github.com/supabase/supabase/blob/e8df67d5d5291e05ea56596aee0f2b7fa152929b/examples/edge-functions/supabase/functions/select-from-table-with-auth-rls/index.ts)
+

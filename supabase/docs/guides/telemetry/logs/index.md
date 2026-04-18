@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:51:16.662Z"
 content_hash: "abc9b210b70df9502d44d75dcda448b2391b0b5708b5668c6f24cb3d8d810a50"
 menu_path: ["Telemetry","Telemetry","Logging & observability","Logging & observability","Logging","Logging"]
 section_path: ["Telemetry","Telemetry","Logging & observability","Logging & observability","Logging","Logging"]
+nav_prev: {"path": "supabase/docs/guides/telemetry/metrics/index.md", "title": "Metrics API"}
+nav_next: {"path": "supabase/docs/guides/telemetry/reports/index.md", "title": "Reports"}
 ---
+
 # 
 
 Logging
@@ -489,3 +492,4 @@ number
 metadata.response.status\_code
 
 number
+

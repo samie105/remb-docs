@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:00:19.427Z"
 content_hash: "ae6fddb1dbf065c7cb3a4b136e68fd9b538a4d7bcf55851e52acdaf4d424cb56"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Commands","→","Commands","→\n      \n        Redis 7.4 Commands Reference","→","Redis 7.4 Commands Reference"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Commands","→","Commands","→\n      \n        Redis 7.4 Commands Reference","→","Redis 7.4 Commands Reference"]
+nav_prev: {"path": "redis/docs/latest/operate/rc/changelog/version-release-notes/8-2/index.md", "title": "Redis 8.2 release notes and breaking changes"}
+nav_next: {"path": "redis/docs/latest/integrate/google-adk/semantic-caching/index.md", "title": "Semantic caching"}
 ---
+
 # Redis 7.4 Commands Reference
 
 Complete list of all Redis commands available in version 7.4, organized by functional group
@@ -4331,3 +4334,4 @@ Generic commands work across all data types.
 **Since:** 7.2.0
 
 ## On this page
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:32:05.323Z"
 content_hash: "69ef91ffa72497b4a345b5febc038cd0b9829ce3cd9341469da9e4e7a94fc531"
 menu_path: ["PostgreSQL: Documentation: 18: 47.5. System Catalogs Related to Logical Decoding"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/pgtrgm.html/index.md", "title": "PostgreSQL: Documentation: 18: F.35.\u00a0pg_trgm \u2014 support for similarity of text using trigram matching"}
+nav_next: {"path": "postgres/docs/current/app-pgreceivewal.html/index.md", "title": "PostgreSQL: Documentation: 18: pg_receivewal"}
 ---
+
 Development Versions: [devel](https://www.postgresql.org/docs/devel/logicaldecoding-catalogs.html "PostgreSQL devel - 47.5. System Catalogs Related to Logical Decoding")
 
 47.5. System Catalogs Related to Logical Decoding
@@ -41,3 +44,4 @@ The [`pg_replication_slots`](https://www.postgresql.org/docs/current/view-pg-rep
 [Home](https://www.postgresql.org/docs/current/index.html "PostgreSQL 18.3 Documentation")
 
  47.6. Logical Decoding Output Plugins
+

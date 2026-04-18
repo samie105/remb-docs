@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:32:35.422Z"
 content_hash: "ab42cf2b8a225fae307004258aa1e4adfae554598db92037cc1af89699a27c00"
 menu_path: ["Decorators"]
 section_path: []
+nav_prev: {"path": "fastify/docs/latest/Reference/Encapsulation/index.md", "title": "Encapsulation"}
+nav_next: {"path": "fastify/docs/latest/Reference/HTTP2/index.md", "title": "HTTP2"}
 ---
+
 Version: latest (v5.8.x)
 
 ## Decorators[​](#decorators "Direct link to Decorators")
@@ -219,3 +222,4 @@ fastify.decorateRequest('account', null)fastify.addHook('preHandler', async (req
 ```
 
 > ℹ️ Note: For TypeScript users, see the [TypeScript documentation](/docs/latest/Reference/TypeScript/) for advanced typing examples using `setDecorator<T>`.
+

@@ -9,15 +9,9 @@ last_crawled_at: "2026-04-18T16:47:10.659Z"
 content_hash: "bd75e17d10dd58e22a1996a85e2e7bd7a66ee560b712560becb1f1a9435d89c3"
 menu_path: ["order"]
 section_path: []
+nav_prev: {"path": "tailwind/docs/flex-shrink/index.md", "title": "flex-shrink"}
+nav_next: {"path": "tailwind/docs/grid-template-columns/index.md", "title": "grid-template-columns"}
 ---
-[](/)
-
-[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
-
-1.  Flexbox & Grid
-2.  order
-
-Flexbox & Grid
 
 # order
 
@@ -140,3 +134,4 @@ Short, tactical video lessons from the creator of Tailwind CSS, delivered direct
 [Get the free course](/build-uis-that-dont-suck)
 
 Copyright © 2026 Tailwind Labs Inc.·[Trademark Policy](/brand)
+

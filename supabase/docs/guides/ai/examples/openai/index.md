@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:51:53.380Z"
 content_hash: "1c1e7db6e3a219342e27f14792fb5dee25e71cc14815e9d12e0c8f798593323e"
 menu_path: ["AI & Vectors","AI & Vectors","JavaScript Examples","JavaScript Examples","OpenAI completions using Edge Functions","OpenAI completions using Edge Functions"]
 section_path: ["AI & Vectors","AI & Vectors","JavaScript Examples","JavaScript Examples","OpenAI completions using Edge Functions","OpenAI completions using Edge Functions"]
+nav_prev: {"path": "supabase/docs/guides/ai/examples/semantic-image-search-amazon-titan/index.md", "title": "Semantic Image Search with Amazon Titan"}
+nav_next: {"path": "supabase/docs/guides/ai/integrations/amazon-bedrock/index.md", "title": "Amazon Bedrock"}
 ---
+
 # 
 
 Generating OpenAI GPT3 completions
@@ -89,3 +92,4 @@ Deploy your function to the cloud by running:
 ## Go deeper[#](#go-deeper)
 
 If you're interesting in learning how to use this to build your own ChatGPT, read [the blog post](/blog/chatgpt-supabase-docs) and check out the video:
+

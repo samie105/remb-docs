@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:05:30.641Z"
 content_hash: "6a4904abdddf5fcf8632e86fd52e7131c919d0101b683f89d2c7e36dacaadeb5"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Software","→","Redis Software","→\n      \n        Security","→","Security","→\n      \n        Recommended security practices","→","Recommended security practices"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Software","→","Redis Software","→\n      \n        Security","→","Security","→\n      \n        Recommended security practices","→","Recommended security practices"]
+nav_prev: {"path": "redis/docs/latest/integrate/write-behind/quickstart/write-behind-guide/index.md", "title": "Quickstart"}
+nav_next: {"path": "redis/docs/latest/commands/redis-7-2-commands/index.md", "title": "Redis 7.2 Commands Reference"}
 ---
+
 # Recommended security practices
 
 Redis Software
@@ -88,3 +91,4 @@ Redis Software offers several database security controls to help protect your da
     
 
 ## On this page
+

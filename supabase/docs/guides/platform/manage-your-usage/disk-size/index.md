@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:59:57.746Z"
 content_hash: "d9bc1471cd717bfdbfb79609151d941f80511904e3fda6d042d5b898cf2dd5db"
 menu_path: ["Platform","Platform","More","More","More","Manage your usage","Manage your usage","Disk Size","Disk Size"]
 section_path: ["Platform","Platform","More","More","More","Manage your usage","Manage your usage","Disk Size","Disk Size"]
+nav_prev: {"path": "supabase/docs/guides/platform/manage-your-usage/disk-iops/index.md", "title": "Manage Disk IOPS usage"}
+nav_next: {"path": "supabase/docs/guides/platform/manage-your-usage/disk-throughput/index.md", "title": "Manage Disk Throughput usage"}
 ---
+
 # 
 
 Manage Disk size usage
@@ -261,3 +264,4 @@ To see how you can downsize your disk, refer to [Reducing disk size](/docs/guide
 If you are on a paid plan and have [Spend Cap](/docs/guides/platform/cost-control#spend-cap) disabled or your organization is on Team Plan or above, you will pay for any overages.
 
 When you are exceeding your quotas while being on a Free Plan or having [Spend Cap](/docs/guides/platform/cost-control#spend-cap) enabled, you will get a notification to your billing email address and put under a grace period. For more details, refer to our [Fair Use Policy](/docs/guides/platform/billing-faq#fair-use-policy).
+

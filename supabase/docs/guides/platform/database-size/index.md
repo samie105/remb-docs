@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:47:28.017Z"
 content_hash: "8525aaadc0376118a25ab01984653a901e6c7cc070691106ee19608e51ab9676"
 menu_path: ["Platform","Platform","Platform Configuration","Platform Configuration","Database Size","Database Size"]
 section_path: ["Platform","Platform","Platform Configuration","Platform Configuration","Database Size","Database Size"]
+nav_prev: {"path": "supabase/docs/guides/platform/credits/index.md", "title": "Credits"}
+nav_next: {"path": "supabase/docs/guides/platform/custom-domains/index.md", "title": "Custom Domains"}
 ---
+
 # 
 
 Understanding Database and Disk Size
@@ -145,3 +148,4 @@ Disks don't automatically downsize during normal operation. Once you have [reduc
 In case you have a large WAL directory, you may [modify WAL settings](/docs/guides/database/custom-postgres-config) such as `max_wal_size`. Use at your own risk as changing these settings can have side effects. To query your current WAL size, use `SELECT SUM(size) FROM pg_ls_waldir()`.
 
 In the event that your project is already on the latest version of Postgres and cannot be upgraded, a new version of Postgres will be released approximately every week which you can then upgrade to once it becomes available.
+

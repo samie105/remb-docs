@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:50:41.920Z"
 content_hash: "00b0856800a8f25a40f9260319bb496da6a787b810a3d2e2b376403f942c7c7b"
 menu_path: ["Subscriptions"]
 section_path: []
+nav_prev: {"path": "trpc/docs/server/server-side-calls/index.md", "title": "Server Side Calls"}
+nav_next: {"path": "trpc/docs/server/validators/index.md", "title": "Input & Output Validators"}
 ---
+
 ## Introduction[​](#introduction "Direct link to Introduction")
 
 Subscriptions are a type of real-time event stream between the client and server. Use subscriptions when you need to push real-time updates to the client.
@@ -20,8 +23,8 @@ With tRPC's subscriptions, the client establishes and maintains a persistent con
 
 You can either use WebSockets or [Server-sent Events](https://en.wikipedia.org/wiki/Server-sent_events) (SSE) to setup real-time subscriptions in tRPC.
 
-*   For WebSockets, see [the WebSockets page](https://trpc.io/docs/server/websockets)
-*   For SSE, see the [httpSubscriptionLink](https://trpc.io/docs/client/links/httpSubscriptionLink)
+*   For WebSockets, see [the WebSockets page](trpc/docs/server/websockets/index.md)
+*   For SSE, see the [httpSubscriptionLink](trpc/docs/client/links/httpSubscriptionLink/index.md)
 
 If you are unsure which one to use, we recommend using SSE for subscriptions as it's easier to setup and doesn't require setting up a WebSocket server.
 
@@ -627,3 +630,4 @@ ts
     `}),`
 
 `});`
+

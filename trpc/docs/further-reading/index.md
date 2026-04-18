@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:48:31.417Z"
 content_hash: "a1dd39d6adbbecb7127d576dfa29203736d5c972d30737d27d18ca1028abd157"
 menu_path: ["Further Reading"]
 section_path: []
+nav_prev: {"path": "trpc/docs/faq/index.md", "title": "FAQ / Troubleshooting"}
+nav_next: {"path": "trpc/docs/landing-intro/Step1/index.md", "title": "Step1"}
 ---
+
 ## Who is this for?[​](#who-is-this-for "Direct link to Who is this for?")
 
 *   tRPC is for full-stack typescripters. It makes it dead easy to write "endpoints", which you can safely use in your app.
@@ -25,3 +28,4 @@ The thing is, GraphQL isn't that easy to get right - [ACL](https://en.wikipedia.
 We've taken a lot of inspiration from GraphQL. If you've previously built GraphQL servers, you'll be familiar with the concepts of input types and resolvers.
 
 tRPC is a lot simpler and couples your server & website/app more tightly together (for good and for bad). It allows you to move quickly, make changes without having to update a schema, and avoid thinking about the ever-traversable graph.
+

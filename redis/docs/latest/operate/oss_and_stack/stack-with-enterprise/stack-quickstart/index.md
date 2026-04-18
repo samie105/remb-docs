@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:42:21.116Z"
 content_hash: "61bd5970cebec696f2b4445d47056fb0356c8cd628d1cbcdb772474945e14235"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Redis Open Source and Redis Software","→","Redis Open Source and Redis Software","→\n      \n        Redis Open Source quick start","→","Redis Open Source quick start"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Redis Open Source and Redis Software","→","Redis Open Source and Redis Software","→\n      \n        Redis Open Source quick start","→","Redis Open Source quick start"]
+nav_prev: {"path": "redis/docs/latest/integrate/redis-data-integration/data-pipelines/prepare-dbs/index.md", "title": "Prepare source databases"}
+nav_next: {"path": "redis/docs/latest/integrate/redis-data-integration/data-pipelines/prepare-dbs/oracle/index.md", "title": "Prepare Oracle and Oracle RAC for RDI"}
 ---
+
 # Redis Open Source quick start
 
 To quickly set up a database with Redis Stack (Redis Open Source) features, you can sign up for a free [Redis Cloud](https://cloud.redis.io/#/sign-up) subscription and create a Redis Stack database.
@@ -87,3 +90,4 @@ To try out Redis Open Source features, follow the examples provided by the corre
 *   [Probabilistic data structures quick start](/docs/latest/develop/data-types/probabilistic/)
 
 ## On this page
+

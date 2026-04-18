@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:12:32.091Z"
 content_hash: "4837de9b90ad342c6b203d1633ef0f3573238cca55ff82d124be1ba9bfee7730"
 menu_path: ["Crypto - Web documentation"]
 section_path: []
+nav_prev: {"path": "deno/deno/api/web/canvas/index.md", "title": "Canvas - Web documentation"}
+nav_next: {"path": "deno/deno/api/web/encoding/index.md", "title": "Encoding - Web documentation"}
 ---
+
 ### Interfaces [#](#Interfaces)
 
 I
@@ -371,3 +374,4 @@ v
 [crypto](./././~/crypto "crypto")
 
 No documentation available
+

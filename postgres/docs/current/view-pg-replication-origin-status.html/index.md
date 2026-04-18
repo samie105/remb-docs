@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:37:46.295Z"
 content_hash: "398431ae89be41265b6a9b0dea1b839fda896224c75561e1c498896733981311"
 menu_path: ["PostgreSQL: Documentation: 18: 53.19. pg_replication_origin_status"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/ecpg-sql-disconnect.html/index.md", "title": "PostgreSQL: Documentation: 18: DISCONNECT"}
+nav_next: {"path": "postgres/docs/current/sql-droprule.html/index.md", "title": "PostgreSQL: Documentation: 18: DROP RULE"}
 ---
+
 Development Versions: [devel](https://www.postgresql.org/docs/devel/view-pg-replication-origin-status.html "PostgreSQL devel - 53.19. pg_replication_origin_status")
 
 The `pg_replication_origin_status` view contains information about how far replay for a certain origin has progressed. For more on replication origins see [Chapter 48](https://www.postgresql.org/docs/current/replication-origins.html "Chapter 48. Replication Progress Tracking").
@@ -35,3 +38,4 @@ The origin node's LSN up to which data has been replicated.
 `local_lsn` `pg_lsn`
 
 This node's LSN at which `remote_lsn` has been replicated. Used to flush commit records before persisting data to disk when using asynchronous commits.
+

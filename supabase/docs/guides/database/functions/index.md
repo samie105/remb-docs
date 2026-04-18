@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:41:11.020Z"
 content_hash: "b5267f065f2daa62f252229c730d2ce914110733f47435cec60b082ef2a50a1d"
 menu_path: ["Database","Database","Working with your database (intermediate)","Working with your database (intermediate)","Managing database functions","Managing database functions"]
 section_path: ["Database","Database","Working with your database (intermediate)","Working with your database (intermediate)","Managing database functions","Managing database functions"]
+nav_prev: {"path": "supabase/docs/guides/database/inspect/index.md", "title": "Debugging and monitoring"}
+nav_next: {"path": "supabase/docs/guides/database/joins-and-nesting/index.md", "title": "Querying Joins and Nested tables"}
 ---
+
 # 
 
 Database Functions
@@ -226,3 +229,4 @@ For more complex functions or complicated debugging, try logging:
 ### Call Database Functions using JavaScript[#](#call-database-functions-using-javascript)
 
 ### Using Database Functions to call an external API[#](#using-database-functions-to-call-an-external-api)
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:57:16.894Z"
 content_hash: "975cf25255f60ac520835133185c60cfa342f63044ac9cf595b5ce00da419cbb"
 menu_path: ["deno x"]
 section_path: []
+nav_prev: {"path": "deno/deno/runtime/reference/cli/unstable_flags/index.md", "title": "Unstable feature flags"}
+nav_next: {"path": "deno/deno/runtime/reference/std/index.md", "title": "Deno Standard Library (@std)"}
 ---
+
 On this page
 
 *   [Installing the dx alias](#installing-the-dx-alias)
@@ -220,3 +223,4 @@ Activate inspector on host:port, wait for debugger to connect and break at the s
 `--inspect-wait`<HOST\_PORT>optional
 
 Activate inspector on host:port and wait for debugger to connect before running user code.
+

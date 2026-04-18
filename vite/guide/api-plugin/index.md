@@ -9,12 +9,15 @@ last_crawled_at: "2026-04-18T16:34:34.011Z"
 content_hash: "56e1f592e5a37e77fbaf66f465e6f7c5731b119751e155c421103fca15eb6c17"
 menu_path: ["Plugin API ​"]
 section_path: []
+nav_prev: {"path": "vite/guide/migration/index.md", "title": "Migration from v7 \u200b"}
+nav_next: {"path": "vite/guide/api-hmr/index.md", "title": "HMR API \u200b"}
 ---
+
 Vite plugins extends Rolldown's plugin interface with a few extra Vite-specific options. As a result, you can write a Vite plugin once and have it work for both dev and build.
 
 **It is recommended to go through [Rolldown's plugin documentation](https://rolldown.rs/apis/plugin-api) first before reading the sections below.**
 
-Vite strives to offer established patterns out of the box, so before creating a new plugin make sure that you check the [Features guide](https://vite.dev/guide/features) to see if your need is covered. Also review available community plugins, both in the form of a [compatible Rollup plugin](https://github.com/rollup/awesome) and [Vite Specific plugins](https://github.com/vitejs/awesome-vite#plugins).
+Vite strives to offer established patterns out of the box, so before creating a new plugin make sure that you check the [Features guide](vite/guide/features/index.md) to see if your need is covered. Also review available community plugins, both in the form of a [compatible Rollup plugin](https://github.com/rollup/awesome) and [Vite Specific plugins](https://github.com/vitejs/awesome-vite#plugins).
 
 When creating a plugin, you can inline it in your `vite.config.js`. There is no need to create a new package for it. Once you see that a plugin was useful in your projects, consider sharing it to help others [in the ecosystem](https://chat.vite.dev/).
 
@@ -187,7 +190,7 @@ The following hooks are called on each incoming module request:
 *   [`load`](https://rolldown.rs/reference/Interface.Plugin#load)
 *   [`transform`](https://rolldown.rs/reference/Interface.Plugin#transform)
 
-These hooks also have an extended `options` parameter with additional Vite-specific properties. You can read more in the [SSR documentation](https://vite.dev/guide/ssr#ssr-specific-plugin-logic).
+These hooks also have an extended `options` parameter with additional Vite-specific properties. You can read more in the [SSR documentation](vite/guide/ssr/index.md#ssr-specific-plugin-logic).
 
 Some `resolveId` calls' `importer` value may be an absolute path for a generic `index.html` at root as it's not always possible to derive the actual importer due to Vite's unbundled dev server pattern. For imports handled within Vite's resolve pipeline, the importer can be tracked during the import analysis phase, providing the correct `importer` value.
 
@@ -290,7 +293,7 @@ Vite plugins can also provide hooks that serve Vite-specific purposes. These hoo
     
 *   **Kind:** `async`, `sequential`
     
-*   **See also:** [ViteDevServer](https://vite.dev/guide/api-javascript#vitedevserver)
+*   **See also:** [ViteDevServer](vite/guide/api-javascript/index.md#vitedevserver)
     
     Hook for configuring the dev server. The most common use case is adding custom middlewares to the internal [connect](https://github.com/senchalabs/connect) app:
     
@@ -360,9 +363,9 @@ Vite plugins can also provide hooks that serve Vite-specific purposes. These hoo
     
 *   **Kind:** `async`, `sequential`
     
-*   **See also:** [PreviewServer](https://vite.dev/guide/api-javascript#previewserver)
+*   **See also:** [PreviewServer](vite/guide/api-javascript/index.md#previewserver)
     
-    Same as [`configureServer`](https://vite.dev/guide/api-plugin#configureserver) but for the preview server. Similarly to `configureServer`, the `configurePreviewServer` hook is called before other middlewares are installed. If you want to inject a middleware **after** other middlewares, you can return a function from `configurePreviewServer`, which will be called after internal middlewares are installed:
+    Same as [`configureServer`](vite/guide/api-plugin/index.md#configureserver) but for the preview server. Similarly to `configureServer`, the `configurePreviewServer` hook is called before other middlewares are installed. If you want to inject a middleware **after** other middlewares, you can return a function from `configurePreviewServer`, which will be called after internal middlewares are installed:
     
     js
     
@@ -388,7 +391,7 @@ Vite plugins can also provide hooks that serve Vite-specific purposes. These hoo
     
 *   **Kind:** `async`, `sequential`
     
-    Dedicated hook for transforming HTML entry point files such as `index.html`. The hook receives the current HTML string and a transform context. The context exposes the [`ViteDevServer`](https://vite.dev/guide/api-javascript#vitedevserver) instance during dev, and exposes the Rollup output bundle during build.
+    Dedicated hook for transforming HTML entry point files such as `index.html`. The hook receives the current HTML string and a transform context. The context exposes the [`ViteDevServer`](vite/guide/api-javascript/index.md#vitedevserver) instance during dev, and exposes the Rollup output bundle during build.
     
     The hook can be async and can return one of the following:
     
@@ -468,7 +471,7 @@ Vite plugins can also provide hooks that serve Vite-specific purposes. These hoo
     
 *   **Kind:** `async`, `sequential`
     
-*   **See also:** [HMR API](https://vite.dev/guide/api-hmr)
+*   **See also:** [HMR API](vite/guide/api-hmr/index.md)
     
     Perform custom HMR update handling. The hook receives a context object with the following signature:
     
@@ -529,7 +532,7 @@ Vite plugins can also provide hooks that serve Vite-specific purposes. These hoo
         }
         ```
         
-        Client code should register corresponding handler using the [HMR API](https://vite.dev/guide/api-hmr) (this could be injected by the same plugin's `transform` hook):
+        Client code should register corresponding handler using the [HMR API](vite/guide/api-hmr/index.md) (this could be injected by the same plugin's `transform` hook):
         
         js
         
@@ -581,7 +584,7 @@ This is available through:
 *   `viteMetadata.importedCss: Set<string>`
 *   `viteMetadata.importedAssets: Set<string>`
 
-This is useful when writing plugins that need to inspect emitted CSS and static assets without relying on [`build.manifest`](https://vite.dev/config/build-options#build-manifest).
+This is useful when writing plugins that need to inspect emitted CSS and static assets without relying on [`build.manifest`](vite/config/build-options/index.md#build-manifest).
 
 Example:
 
@@ -769,7 +772,7 @@ NOTE
 
 We recommend **always prefixing** your event names to avoid collisions with other plugins.
 
-On the client side, use [`hot.on`](https://vite.dev/guide/api-hmr#hot-on-event-cb) to listen to the events:
+On the client side, use [`hot.on`](vite/guide/api-hmr/index.md#hot-on-event-cb) to listen to the events:
 
 ts
 
@@ -784,7 +787,7 @@ if (import.meta.hot) {
 
 ### Client to Server [​](#client-to-server)
 
-To send events from the client to the server, we can use [`hot.send`](https://vite.dev/guide/api-hmr#hot-send-event-payload):
+To send events from the client to the server, we can use [`hot.send`](vite/guide/api-hmr/index.md#hot-send-event-payload):
 
 ts
 
@@ -841,7 +844,7 @@ declare module 'vite/types/customEvent.d.ts' {
 }
 ```
 
-This interface extension is utilized by `InferCustomEventPayload<T>` to infer the payload type for event `T`. For more information on how this interface is utilized, refer to the [HMR API Documentation](https://vite.dev/guide/api-hmr#hmr-api).
+This interface extension is utilized by `InferCustomEventPayload<T>` to infer the payload type for event `T`. For more information on how this interface is utilized, refer to the [HMR API Documentation](vite/guide/api-hmr/index.md#hmr-api).
 
 ts
 
@@ -854,3 +857,4 @@ import.meta.hot?.on('unknown:event', (payload) => {
   // The type of payload will be any
 })
 ```
+

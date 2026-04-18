@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:34:54.301Z"
 content_hash: "426ca15951eb99b039f2842a2089fd416487bdc8c355a81a3fcb2913c1357103"
 menu_path: ["Data REST API","Data REST API","Security","Security","How API Keys work","How API Keys work"]
 section_path: ["Data REST API","Data REST API","Security","Security","How API Keys work","How API Keys work"]
+nav_prev: {"path": "supabase/docs/guides/ai/vector-columns/index.md", "title": "Vector columns"}
+nav_next: {"path": "supabase/docs/guides/api/automatic-retries-in-supabase-js/index.md", "title": "How to do automatic retries with supabase-js"}
 ---
+
 # 
 
 Understanding API keys
@@ -292,3 +295,4 @@ When your applications use the Supabase APIs they go through a component called 
 This API Gateway component is able to verify the API key (sent in the `apikey` request header, or for WebSocket in a query param) against your project's publishable and secret key list. If the match is found, it mints a temporary, short-lived JWT that is then forwarded down to your project's servers.
 
 It may be possible to replicate similar behavior if you self-host by using programmable proxies such as [Kong](https://konghq.com/), [Envoy](https://www.envoyproxy.io/), [NGINX](https://nginx.org/) or similar.
+

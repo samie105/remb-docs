@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:01:07.628Z"
 content_hash: "bac327a22902cccab62ac7c87e37874e81ae9cb55470ba13d882c414b09c4cf2"
 menu_path: ["Storage","Storage","File Buckets","File Buckets","Creating Buckets","Creating Buckets"]
 section_path: ["Storage","Storage","File Buckets","File Buckets","Creating Buckets","Creating Buckets"]
+nav_prev: {"path": "supabase/docs/guides/storage/analytics/pricing/index.md", "title": "Analytics Buckets Pricing"}
+nav_next: {"path": "supabase/docs/guides/storage/analytics/query-with-postgres/index.md", "title": "Query with Postgres"}
 ---
+
 # 
 
 Creating Buckets
@@ -35,3 +38,4 @@ For example, imagine you want to allow your users to upload only images to the `
 ```
 
 If an upload request doesn't meet the above restrictions it will be rejected. See [File Limits](/docs/guides/storage/uploads/file-limits) for more information.
+

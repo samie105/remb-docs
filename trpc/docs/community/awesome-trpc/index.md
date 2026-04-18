@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:48:09.522Z"
 content_hash: "6c15d4e79f54907a51dde891249eac180c8b4573d0e9e1400357403e87c69b6a"
 menu_path: ["Awesome tRPC Collection"]
 section_path: []
+nav_prev: {"path": "trpc/docs/client/vanilla/infer-types/index.md", "title": "Inferring Types"}
+nav_next: {"path": "trpc/docs/community/contributing/index.md", "title": "Contributing"}
 ---
+
 Version: 11.x
 
 A collection of resources on tRPC.
@@ -405,3 +408,4 @@ Link
     *   [Library adapters](#library-adapters)
 *   [🍀 Starting points, example projects, etc](#-starting-points-example-projects-etc)
 *   [🏁 Open-source projects using tRPC](#-open-source-projects-using-trpc)
+

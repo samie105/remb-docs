@@ -9,52 +9,10 @@ last_crawled_at: "2026-04-18T16:51:58.729Z"
 content_hash: "4a946554207af4a75f2af371593223f7b5621b47955784c9bb8b38ed8c21141a"
 menu_path: ["deno compile"]
 section_path: []
+nav_prev: {"path": "deno/deno/runtime/reference/cli/clean/index.md", "title": "deno clean"}
+nav_next: {"path": "deno/deno/runtime/reference/cli/create/index.md", "title": "deno create"}
 ---
-On this page
 
-*   [Flags](#flags)
-*   [Cross Compilation](#cross-compilation)
-    *   [Supported Targets](#supported-targets)
-*   [Icons](#icons)
-*   [Dynamic Imports](#dynamic-imports)
-*   [Including Data Files or Directories](#including-data-files-or-directories)
-*   [Workers](#workers)
-*   [Self-Extracting Executables](#self-extracting-executables)
-    *   [Trade-offs](#trade-offs)
-*   [Code Signing](#code-signing)
-    *   [macOS](#macos)
-    *   [Windows](#windows)
-*   [Unavailable in executables](#unavailable-in-executables)
-*   [Type checking options](#type-checking-options)
-*   [Dependency management options](#dependency-management-options)
-*   [Options](#options)
-*   [Compile options](#compile-options)
-
-## Flags
-
-As with [`deno install`](/runtime/reference/cli/install/), the runtime flags used to execute the script must be specified at compilation time. This includes permission flags.
-
-\>\_
-
-```sh
-deno compile --allow-read --allow-net jsr:@std/http/file-server
-```
-
-[Script arguments](/runtime/getting_started/command_line_interface/#passing-script-arguments) can be partially embedded.
-
-\>\_
-
-```sh
-deno compile --allow-read --allow-net jsr:@std/http/file-server -p 8080
-
-./file_server --help
-```
-
-## Cross Compilation
-
-You can cross-compile binaries for other platforms by using the `--target` flag.
-
-```
 # Cross compile for Apple Silicon
 deno compile --target aarch64-apple-darwin main.ts
 
@@ -418,3 +376,4 @@ Create a self-extracting binary that extracts the embedded file system to disk o
 `--target`<target>
 
 Target OS architecture.
+

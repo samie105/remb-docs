@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:41:57.805Z"
 content_hash: "9d08c18729c72568fee34cb1f95586da25bc1028da048f3045e72862e5eab66e"
 menu_path: ["Upgrade to Astro v4"]
 section_path: []
+nav_prev: {"path": "astro/en/guides/upgrade-to/v5/index.md", "title": "Upgrade to Astro v5"}
+nav_next: {"path": "astro/en/guides/upgrade-to/v3/index.md", "title": "Upgrade to Astro v3"}
 ---
+
 # Upgrade to Astro v4
 
 This guide will help you migrate from Astro v3 to Astro v4.
@@ -386,3 +389,4 @@ Know a good resource for Astro v4.0? [Edit this page](https://github.com/withast
 Please check [Astro’s issues on GitHub](https://github.com/withastro/astro/issues/) for any reported issues, or to file an issue yourself.
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

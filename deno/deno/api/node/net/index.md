@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:37:47.493Z"
 content_hash: "24c07cbfe8a50a4232bc76147794ff1534329386ab4df806f7870fb1056d6628"
 menu_path: ["net - Node documentation"]
 section_path: []
+nav_prev: {"path": "deno/deno/api/node/module/index.md", "title": "module - Node documentation"}
+nav_next: {"path": "deno/deno/api/node/path/index.md", "title": "path - Node documentation"}
 ---
+
 ### Usage in Deno
 
 ```typescript
@@ -348,3 +351,4 @@ T
 [SocketReadyState](.././net/~/SocketReadyState "SocketReadyState")
 
 No documentation available
+

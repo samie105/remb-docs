@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:45:00.909Z"
 content_hash: "19cd7214ca9444b943053b1b50bcabb147e40cdd5beab844ab24202e9a66a11d"
 menu_path: ["Image missing required \"alt\" property."]
 section_path: []
+nav_prev: {"path": "astro/en/reference/errors/image-not-found/index.md", "title": "Image not found."}
+nav_next: {"path": "astro/en/reference/errors/incompatible-descriptor-options/index.md", "title": "Cannot set both densities and widths"}
 ---
+
 # Image missing required "alt" property.
 
 > **ImageMissingAlt**: Image missing “alt” property. “alt” text is required to describe important images on the page.
@@ -29,3 +32,4 @@ If the image is merely decorative (i.e. doesn’t contribute to the understandin
 *    [Image component#alt](/en/reference/modules/astro-assets/#alt-required)
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

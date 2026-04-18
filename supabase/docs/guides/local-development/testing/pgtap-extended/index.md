@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:59:38.078Z"
 content_hash: "a969cc2afbefc84ddc5884e0554c59e8435532728150c88af1ddf7846f4eae3f"
 menu_path: ["Local Dev / CLI","Local Dev / CLI","Testing","Testing","pgTAP advanced guide","pgTAP advanced guide"]
 section_path: ["Local Dev / CLI","Local Dev / CLI","Testing","Testing","pgTAP advanced guide","pgTAP advanced guide"]
+nav_prev: {"path": "supabase/docs/guides/local-development/testing/overview/index.md", "title": "Testing Overview"}
+nav_next: {"path": "supabase/docs/guides/platform/aws-marketplace/account-setup/index.md", "title": "Account Setup"}
 ---
+
 # 
 
 Advanced pgTAP Testing
@@ -176,3 +179,4 @@ Now everything is setup, let's write RLS test cases, note that each section coul
 *   [Row Level Security Writing Guide](https://usebasejump.com/blog/testing-on-supabase-with-pgtap)
 *   [Database.dev Package Registry](https://database.dev)
 *   [Row Level Security Performance and Best Practices](https://github.com/orgs/supabase/discussions/14576)
+

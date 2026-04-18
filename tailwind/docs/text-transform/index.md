@@ -9,15 +9,9 @@ last_crawled_at: "2026-04-18T16:58:31.336Z"
 content_hash: "75824e73618d7732b10acfb090b4dbfb97d512cad135ae301d0d0c77256348f8"
 menu_path: ["text-transform"]
 section_path: []
+nav_prev: {"path": "tailwind/docs/text-underline-offset/index.md", "title": "text-underline-offset"}
+nav_next: {"path": "tailwind/docs/text-overflow/index.md", "title": "text-overflow"}
 ---
-[](/)
-
-[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
-
-1.  Typography
-2.  text-transform
-
-Typography
 
 # text-transform
 
@@ -120,3 +114,4 @@ Make your ideas look awesome, without relying on a designer.
 ](https://www.refactoringui.com/?ref=sidebar)
 
 Copyright © 2026 Tailwind Labs Inc.·[Trademark Policy](/brand)
+

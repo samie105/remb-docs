@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:32:07.080Z"
 content_hash: "73f6e181716aa3f1502a0e6cb97159290966003fe06139424ea0a22ffb2d8743"
 menu_path: ["API patterns"]
 section_path: []
+nav_prev: {"path": "prisma/docs/orm/core-concepts/data-modeling/index.md", "title": "Data modeling"}
+nav_next: {"path": "prisma/docs/orm/prisma-schema/introspection/index.md", "title": "What is introspection?"}
 ---
+
 How to use Prisma ORM with REST APIs, GraphQL servers, and fullstack frameworks
 
 Prisma Client can be used to query your database from any server-side JavaScript or TypeScript application. This page covers common patterns for REST APIs, GraphQL servers, and fullstack frameworks.
@@ -187,3 +190,4 @@ Fullstack
 SvelteKit app
 
 [Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/core-concepts/api-patterns.mdx)
+

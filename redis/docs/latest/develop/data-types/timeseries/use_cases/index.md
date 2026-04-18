@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:06:37.178Z"
 content_hash: "9d6a0b5d3f55313a1b54d3508ee32bacd6fbd2a6735aff47ab51deaba2d581ec"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis data types","→","Redis data types","→\n      \n        Time series","→","Time series","→\n      \n        Use cases","→","Use cases"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis data types","→","Redis data types","→\n      \n        Time series","→","Time series","→\n      \n        Use cases","→","Use cases"]
+nav_prev: {"path": "redis/docs/latest/develop/tools/insight/insight-stream-consumer/index.md", "title": "Manage streams and consumer groups in Redis Insight"}
+nav_next: {"path": "redis/docs/latest/develop/ai/search-and-query/query/vector-search/index.md", "title": "Vector search"}
 ---
+
 # Use cases
 
 Time series use cases
@@ -97,3 +100,4 @@ Use Redis Time Series to identify correlations between the trading behavior and 
 *   Exact time and order of a trade by itself
 *   Type of the event (trade/bid)
 *   The stock price
+

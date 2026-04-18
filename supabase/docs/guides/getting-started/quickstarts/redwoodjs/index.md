@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:58:24.302Z"
 content_hash: "8e217222465c084bccab1ee667dacfb578285e23b4ca71e30082ae734d0ffb66"
 menu_path: ["Start with Supabase","Start with Supabase","Framework Quickstarts","Framework Quickstarts","RedwoodJS","RedwoodJS"]
 section_path: ["Start with Supabase","Start with Supabase","Framework Quickstarts","Framework Quickstarts","RedwoodJS","RedwoodJS"]
+nav_prev: {"path": "supabase/docs/guides/getting-started/quickstarts/nuxtjs/index.md", "title": "Use Supabase with Nuxt"}
+nav_next: {"path": "supabase/docs/guides/getting-started/quickstarts/ruby-on-rails/index.md", "title": "Use Supabase with Ruby on Rails"}
 ---
+
 # 
 
 Use Supabase with RedwoodJS
@@ -172,3 +175,4 @@ Start the app via `yarn rw dev`. A browser will open to the RedwoodJS Splash pag
 Click on `/instruments` to visit [http://localhost:8910/instruments](http://localhost:8910/instruments) where should see the list of instruments.
 
 You may now edit, delete, and add new books using the scaffolded UI.
+

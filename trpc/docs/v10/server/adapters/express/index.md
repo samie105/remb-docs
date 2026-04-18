@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:37:38.687Z"
 content_hash: "2fb487d7f25fc5d05090a3585b091217c78dd4c97ec641af10e59d2d17f078de"
 menu_path: ["Express Adapter"]
 section_path: []
+nav_prev: {"path": "trpc/docs/v10/server/adapters/aws-lambda/index.md", "title": "AWS Lambda + API Gateway Adapter"}
+nav_next: {"path": "trpc/docs/v10/server/adapters/fetch/index.md", "title": "Fetch / Edge Runtimes Adapter"}
 ---
+
 ## Example app[​](#example-app "Direct link to Example app")
 
 Description
@@ -77,7 +80,7 @@ ts
 
 `export type AppRouter = typeof appRouter;`
 
-If your router file starts getting too big, split your router into several subrouters each implemented in its own file. Then [merge them](https://trpc.io/docs/server/merging-routers) into a single root `appRouter`.
+If your router file starts getting too big, split your router into several subrouters each implemented in its own file. Then [merge them](trpc/docs/server/merging-routers/index.md) into a single root `appRouter`.
 
 ### 3\. Use the Express adapter[​](#3-use-the-express-adapter "Direct link to 3. Use the Express adapter")
 
@@ -146,3 +149,4 @@ where `INPUT` is a URI-encoded JSON string.
 `POST http://localhost:4000/trpc/createUser`
 
 with `req.body` of type `{name: string}`
+

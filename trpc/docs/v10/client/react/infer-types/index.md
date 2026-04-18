@@ -9,8 +9,11 @@ last_crawled_at: "2026-04-18T16:33:53.220Z"
 content_hash: "97bd91df16572d0e13c5b259d9a7b2e3e4ebc90680a01528cb22a3b64bfe91a5"
 menu_path: ["Inferring Types"]
 section_path: []
+nav_prev: {"path": "trpc/docs/v10/client/react/getQueryKey/index.md", "title": "getQueryKey"}
+nav_next: {"path": "trpc/docs/v10/client/react/setup/index.md", "title": "Set up the React Query Integration"}
 ---
-In addition to the type inference made available by `@trpc/server` ([see here](https://trpc.io/docs/client/vanilla/infer-types)) this integration also provides some inference helpers for usage purely in React.
+
+In addition to the type inference made available by `@trpc/server` ([see here](trpc/docs/client/vanilla/infer-types/index.md)) this integration also provides some inference helpers for usage purely in React.
 
 ## Infer React Query options based on your router[​](#infer-react-query-options-based-on-your-router "Direct link to Infer React Query options based on your router")
 
@@ -245,3 +248,4 @@ tsx
 `}`
 
 A more complete working example [can be found here](https://github.com/trpc/trpc/tree/main/packages/tests/server/react/polymorphism.test.tsx)
+

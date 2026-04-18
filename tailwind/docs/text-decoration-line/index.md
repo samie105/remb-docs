@@ -9,15 +9,9 @@ last_crawled_at: "2026-04-18T16:57:53.277Z"
 content_hash: "254d3fd2edb33db6f1203a591b2a007fff69b39f341f5a61aee289c25a547bef"
 menu_path: ["text-decoration-line"]
 section_path: []
+nav_prev: {"path": "tailwind/docs/color/index.md", "title": "color"}
+nav_next: {"path": "tailwind/docs/text-decoration-color/index.md", "title": "text-decoration-color"}
 ---
-[](/)
-
-[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
-
-1.  Typography
-2.  text-decoration-line
-
-Typography
 
 # text-decoration-line
 
@@ -131,3 +125,4 @@ Short, tactical video lessons from the creator of Tailwind CSS, delivered direct
 [Get the free course](/build-uis-that-dont-suck)
 
 Copyright © 2026 Tailwind Labs Inc.·[Trademark Policy](/brand)
+

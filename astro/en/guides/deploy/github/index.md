@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:37:15.205Z"
 content_hash: "90c5ed012b229f2dfbc9dc3651ff57709aeae41c8d7a75971a0d4b2ca4309bf5"
 menu_path: ["Deploy your Astro Site to GitHub Pages"]
 section_path: []
+nav_prev: {"path": "astro/en/guides/deploy/flyio/index.md", "title": "Deploy your Astro Site to Fly.io"}
+nav_next: {"path": "astro/en/guides/deploy/gitlab/index.md", "title": "Deploy your Astro Site to GitLab Pages"}
 ---
+
 # Deploy your Astro Site to GitHub Pages
 
 You can use [GitHub Pages](https://pages.github.com/) to host a static, prerendered Astro website directly from a repository on [GitHub.com](https://github.com/) using [GitHub Actions](https://github.com/features/actions).
@@ -238,3 +241,4 @@ Once your Astro project is [deployed to GitHub pages at a GitHub URL](#how-to-de
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:01:20.730Z"
 content_hash: "3cd52900efea2fae32bf5e018f6b451deddbdfd49aa512d47a9062add304b06a"
 menu_path: ["Storage","Storage","More","More","More","Management","Management","Download Objects","Download Objects"]
 section_path: ["Storage","Storage","More","More","More","Management","Management","Download Objects","Download Objects"]
+nav_prev: {"path": "supabase/docs/guides/storage/management/delete-objects/index.md", "title": "Delete Objects"}
+nav_next: {"path": "supabase/docs/guides/storage/production/scaling/index.md", "title": "Storage Optimizations"}
 ---
+
 # 
 
 Download Objects
@@ -56,3 +59,4 @@ For bulk downloads or project migrations, you can use the scripts from our migra
 ## File metadata[#](#file-metadata)
 
 File metadata is stored separately from the actual files. It lives in the `storage.buckets` and `storage.objects` tables in your Postgres database. If you need a complete backup (files + metadata), see the [backup and restore guide](/docs/guides/platform/migrating-within-supabase/backup-restore).
+

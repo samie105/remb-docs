@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:35:20.582Z"
 content_hash: "efa20a77084935a263454abd0b6e2a074cefd909a04ad1f3016db6276bc653bf"
 menu_path: ["PostgreSQL: Documentation: 18: CREATE STATISTICS"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/ddl-schemas.html/index.md", "title": "PostgreSQL: Documentation: 18: 5.10.\u00a0Schemas"}
+nav_next: {"path": "postgres/docs/current/extend-type-system.html/index.md", "title": "PostgreSQL: Documentation: 18: 36.2.\u00a0The PostgreSQL Type System"}
 ---
+
 CREATE STATISTICS — define extended statistics
 
 ## Synopsis
@@ -158,3 +161,4 @@ Without expression and ndistinct statistics, the planner has no information abou
 ## Compatibility
 
 There is no `CREATE STATISTICS` command in the SQL standard.
+

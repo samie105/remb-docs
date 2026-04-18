@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:37:37.956Z"
 content_hash: "e9e76516588201b071afc56c0eaed7a11f4153454d7e7f0c409c865e8e2bc020"
 menu_path: ["Deploy your Astro Site with Railway"]
 section_path: []
+nav_prev: {"path": "astro/en/guides/deploy/netlify/index.md", "title": "Deploy your Astro Site to Netlify"}
+nav_next: {"path": "astro/en/guides/deploy/render/index.md", "title": "Deploy your Astro Site to Render"}
 ---
+
 # Deploy your Astro Site with Railway
 
 [Railway](https://railway.com?utm_medium=integration&utm_source=button&utm_campaign=astro) is a deployment platform built to simplify your infrastructure stack from servers to observability with a unified developer experience.
@@ -212,3 +215,4 @@ If you have an existing Astro project you would like to deploy and an existing R
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

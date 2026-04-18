@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:58:42.522Z"
 content_hash: "ebcb1b94be026209a71a5dece43af46abced0d252ea7dc13372569c33d04744b"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Redis Open Source and Redis Software","→","Redis Open Source and Redis Software","→\n      \n        Install and upgrade modules","→","Install and upgrade modules"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Redis Open Source and Redis Software","→","Redis Open Source and Redis Software","→\n      \n        Install and upgrade modules","→","Install and upgrade modules"]
+nav_prev: {"path": "redis/docs/latest/develop/use-cases/time-series-dashboard/go/index.md", "title": "Rolling sensor graph demo with Go"}
+nav_next: {"path": "redis/docs/latest/operate/oss_and_stack/management/sentinel/index.md", "title": "High availability with Redis Sentinel"}
 ---
+
 # Install and upgrade modules
 
 Several modules that provide additional Redis capabilities, such as search and query, JSON, time series, and probabilistic data structures, come packaged with [Redis Software](/docs/latest/operate/rs/). As of version 8.0, Redis Software includes multiple feature sets, compatible with different Redis database versions.
@@ -47,3 +50,4 @@ Flash-enabled ([Redis Flex](/docs/latest/operate/rs/databases/flash/))
 1.  Upgrading existing Active-Active databases to Redis version 8 does not automatically enable these capabilities. Only new Active-Active databases created with Redis version 8 enable these capabilities by default.
 
 ## On this page
+

@@ -9,10 +9,13 @@ last_crawled_at: "2026-04-18T16:43:10.279Z"
 content_hash: "885603a7c7338b5b482b18ae0fe19faed654c933c993061e4ce0de9538ce4756"
 menu_path: ["Quickstart"]
 section_path: []
+nav_prev: {"path": "trpc/docs/v9/output-validation/index.md", "title": "Output Validation"}
+nav_next: {"path": "trpc/docs/v9/react-mutations/index.md", "title": "useMutation()"}
 ---
+
 tip
 
-We highly encourage you to check out [the Example Apps](https://trpc.io/docs/v9/example-apps) to get a feel of tRPC and getting up & running as seamless as possible.
+We highly encourage you to check out [the Example Apps](trpc/docs/v9/example-apps/index.md) to get a feel of tRPC and getting up & running as seamless as possible.
 
 ## Installation[​](#installation "Direct link to Installation")
 
@@ -182,6 +185,7 @@ ts
 
 tRPC includes more sophisticated client-side tooling designed for React projects generally and Next.js specifically. Read the appropriate guide next:
 
-*   [Usage with Next.js](https://trpc.io/docs/v9/nextjs)
-*   [Usage with Express.js (server-side)](https://trpc.io/docs/v9/express)
-*   [Usage with React (client-side)](https://trpc.io/docs/v9/react)
+*   [Usage with Next.js](trpc/docs/v9/nextjs/index.md)
+*   [Usage with Express.js (server-side)](trpc/docs/v9/express/index.md)
+*   [Usage with React (client-side)](trpc/docs/v9/react/index.md)
+

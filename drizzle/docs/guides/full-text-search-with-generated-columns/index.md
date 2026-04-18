@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:04:42.482Z"
 content_hash: "c409c8c698beca94bcd7e41dd61674cd1684cb0f4401c6cb2d36a93bb57260ce"
 menu_path: ["Drizzle ORM - Full-text search with Generated Columns"]
 section_path: []
+nav_prev: {"path": "drizzle/docs/guides/empty-array-default-value/index.md", "title": "Drizzle ORM - Empty array as a default value"}
+nav_next: {"path": "drizzle/docs/guides/gel-ext-auth/index.md", "title": "Drizzle ORM - Gel auth extension"}
 ---
+
 Drizzle | Full-text search with Generated Columns
 
 This guide demonstrates how to implement full-text search in PostgreSQL with Drizzle and generated columns. A generated column is a special column that is always computed from other columns. It is useful because you don’t have to compute the value of the column every time you query the table:
@@ -165,3 +168,4 @@ await db
 ```
 select * from posts where search @@ to_tsquery('english', 'travel');
 ```
+

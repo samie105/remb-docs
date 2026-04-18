@@ -9,10 +9,13 @@ last_crawled_at: "2026-04-18T16:46:46.190Z"
 content_hash: "9f171a1dbfd2c88bce92e48e6e36caeecbbf2ad14245e00b1579f46bcc2082d2"
 menu_path: ["Set up with React Server Components"]
 section_path: []
+nav_prev: {"path": "trpc/docs/client/react/infer-types/index.md", "title": "Inferring Types"}
+nav_next: {"path": "trpc/docs/client/react/setup/index.md", "title": "Set up the React Query Integration"}
 ---
+
 tip
 
-These are the docs for our 'Classic' React Query integration, which (while still supported) is not the recommended way to start new tRPC projects with TanStack React Query. We recommend using the new [TanStack React Query Integration](https://trpc.io/docs/client/tanstack-react-query/server-components) instead.
+These are the docs for our 'Classic' React Query integration, which (while still supported) is not the recommended way to start new tRPC projects with TanStack React Query. We recommend using the new [TanStack React Query Integration](trpc/docs/client/tanstack-react-query/server-components/index.md) instead.
 
 This guide is an overview of how one may use tRPC with a React Server Components (RSC) framework such as Next.js App Router. Be aware that RSC on its own solves a lot of the same problems tRPC was designed to solve, so you may not need tRPC at all.
 
@@ -36,7 +39,7 @@ npm install @trpc/server @trpc/client @trpc/react-query @tanstack/react-query@la
 
 ### 2\. Create a tRPC router[​](#2-create-a-trpc-router "Direct link to 2. Create a tRPC router")
 
-Initialize your tRPC backend in `trpc/init.ts` using the `initTRPC` function, and create your first router. We're going to make a simple "hello world" router and procedure here - but for deeper information on creating your tRPC API you should refer to the [Quickstart guide](https://trpc.io/docs/quickstart) and [Backend usage docs](https://trpc.io/docs/server/overview) for tRPC information.
+Initialize your tRPC backend in `trpc/init.ts` using the `initTRPC` function, and create your first router. We're going to make a simple "hello world" router and procedure here - but for deeper information on creating your tRPC API you should refer to the [Quickstart guide](trpc/docs/quickstart/index.md) and [Backend usage docs](trpc/docs/server/overview/index.md) for tRPC information.
 
 info
 
@@ -102,7 +105,7 @@ We're setting a few default options here:
 
 *   `staleTime`: With SSR, we usually want to set some default staleTime above 0 to avoid refetching immediately on the client.
 *   `shouldDehydrateQuery`: This is a function that determines whether a query should be dehydrated or not. Since the RSC transport protocol supports hydrating promises over the network, we extend the `defaultShouldDehydrateQuery` function to also include queries that are still pending. This will allow us to start prefetching in a server component high up the tree, then consuming that promise in a client component further down.
-*   `serializeData` and `deserializeData` (optional): If you set up a [data transformer](https://trpc.io/docs/server/data-transformers) in the previous step, set this option to make sure the data is serialized correctly when hydrating the query client over the server-client boundary.
+*   `serializeData` and `deserializeData` (optional): If you set up a [data transformer](trpc/docs/server/data-transformers/index.md) in the previous step, set this option to make sure the data is serialized correctly when hydrating the query client over the server-client boundary.
 
 ### 4\. Create a tRPC client for Client Components[​](#4-create-a-trpc-client-for-client-components "Direct link to 4. Create a tRPC client for Client Components")
 
@@ -226,7 +229,7 @@ Mount the provider in the root of your application (e.g. `app/layout.tsx` when u
 
 ### 5\. Create a tRPC caller for Server Components[​](#5-create-a-trpc-caller-for-server-components "Direct link to 5. Create a tRPC caller for Server Components")
 
-To prefetch queries from server components, we use a tRPC caller. The `@trpc/react-query/rsc` module exports a thin wrapper around [`createCaller`](https://trpc.io/docs/server/server-side-calls) that integrates with your React Query client.
+To prefetch queries from server components, we use a tRPC caller. The `@trpc/react-query/rsc` module exports a thin wrapper around [`createCaller`](trpc/docs/server/server-side-calls/index.md) that integrates with your React Query client.
 
 trpc/server.tsx
 
@@ -374,7 +377,7 @@ tsx
 
 ### Getting data in a server component[​](#getting-data-in-a-server-component "Direct link to Getting data in a server component")
 
-If you need access to the data in a server component, you can invoke the procedure directly instead of using `.prefetch()`, just like you use [the normal server caller](https://trpc.io/docs/server/server-side-calls). Please note that this method is detached from your query client and does not store the data in the cache. This means that you cannot use the data in a server component and expect it to be available in the client. This is intentional and explained in more detail in the [Advanced Server Rendering](https://tanstack.com/query/latest/docs/framework/react/guides/advanced-ssr#data-ownership-and-revalidation) guide.
+If you need access to the data in a server component, you can invoke the procedure directly instead of using `.prefetch()`, just like you use [the normal server caller](trpc/docs/server/server-side-calls/index.md). Please note that this method is detached from your query client and does not store the data in the cache. This means that you cannot use the data in a server component and expect it to be available in the client. This is intentional and explained in more detail in the [Advanced Server Rendering](https://tanstack.com/query/latest/docs/framework/react/guides/advanced-ssr#data-ownership-and-revalidation) guide.
 
 app/page.tsx
 
@@ -393,3 +396,4 @@ tsx
   `return <div>{greeting.greeting}</div>;`
 
 `}`
+

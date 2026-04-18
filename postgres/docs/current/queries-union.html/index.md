@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:45:49.829Z"
 content_hash: "9a987f3dfb092e620dffb623b7b09d985d89977a3da668ede2c84205711a3f06"
 menu_path: ["PostgreSQL: Documentation: 18: 7.4. Combining Queries (UNION, INTERSECT, EXCEPT)"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/plpgsql-trigger.html/index.md", "title": "PostgreSQL: Documentation: 18: 41.10.\u00a0Trigger Functions"}
+nav_next: {"path": "postgres/docs/current/git.html/index.md", "title": "PostgreSQL: Documentation: 18: I.1.\u00a0Getting the Source via Git"}
 ---
+
 The results of two queries can be combined using the set operations union, intersection, and difference. The syntax is
 
 _`query1`_ UNION \[ALL\] _`query2`_
@@ -53,3 +56,4 @@ is accepted, but it means
 not
 
 SELECT a FROM b UNION (SELECT x FROM y LIMIT 10)
+

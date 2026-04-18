@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:47:02.056Z"
 content_hash: "946ba3bf6a03ece925a025ab57e888358b50e438a5c67aebdf827431c42e4323"
 menu_path: ["Experimental client prerendering"]
 section_path: []
+nav_prev: {"path": "astro/en/reference/experimental-flags/route-caching/index.md", "title": "Experimental route caching"}
+nav_next: {"path": "astro/en/reference/experimental-flags/content-intellisense/index.md", "title": "Experimental Intellisense for content collections"}
 ---
+
 # Experimental client prerendering
 
 **Type:** `boolean`  
@@ -35,3 +38,4 @@ Client side prerendering requires browser support. If the Speculation Rules API 
 See the [Prefetch Guide](/en/guides/prefetch/) for more `prefetch` options and usage.
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

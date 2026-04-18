@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:10:18.941Z"
 content_hash: "747dc73c6d6fd918e946f19a78a415204c3f402ebc5f959c2196c6edfc2246eb"
 menu_path: ["Drizzle ORM - DrizzleORM v0.16.2 release"]
 section_path: []
+nav_prev: {"path": "drizzle/docs/latest-releases/drizzle-orm-v0110/index.md", "title": "Drizzle ORM - DrizzleORM v0.11.0 release"}
+nav_next: {"path": "drizzle/docs/latest-releases/drizzle-orm-v0272/index.md", "title": "Drizzle ORM - DrizzleORM v0.27.2 release"}
 ---
+
 DrizzleORM v0.16.2 release
 
 Jan 21, 2023
@@ -240,3 +243,4 @@ const usersTable = mysqlTable("users", {
   name: customText("name").notNull(),
 });
 ```
+

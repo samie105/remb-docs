@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:48:49.857Z"
 content_hash: "f7c0c3039371976145b50819a60a65f83303f346177308f1218f1a20704ae67c"
 menu_path: ["PostgreSQL: Documentation: 18: 31.3. Variant Comparison Files"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/infoschema-role-usage-grants.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.39.\u00a0role_usage_grants"}
+nav_next: {"path": "postgres/docs/current/pgarchivecleanup.html/index.md", "title": "PostgreSQL: Documentation: 18: pg_archivecleanup"}
 ---
+
 Since some of the tests inherently produce environment-dependent results, we have provided ways to specify alternate “expected” result files. Each regression test can have several comparison files showing possible results on different platforms. There are two independent mechanisms for determining which comparison file is used for each test.
 
 The first mechanism allows comparison files to be selected for specific platforms. There is a mapping file, `src/test/regress/resultmap`, that defines which comparison file to use for each platform. To eliminate bogus test “failures” for a particular platform, you first choose or make a variant result file, and then add a line to the `resultmap` file.
@@ -31,3 +34,4 @@ The second selection mechanism for variant comparison files is much more automat
 For example, for the `char` test, the comparison file `char.out` contains results that are expected in the `C` and `POSIX` locales, while the file `char_1.out` contains results sorted as they appear in many other locales.
 
 The best-match mechanism was devised to cope with locale-dependent results, but it can be used in any situation where the test results cannot be predicted easily from the platform name alone. A limitation of this mechanism is that the test driver cannot tell which variant is actually “correct” for the current environment; it will just pick the variant that seems to work best. Therefore it is safest to use this mechanism only for variant results that you are willing to consider equally valid in all contexts.
+

@@ -9,15 +9,9 @@ last_crawled_at: "2026-04-18T17:03:26.386Z"
 content_hash: "a32f03b6bd854e0a0defaf81bab60d80a4b2e8f0f55c925d11049f19917157f3"
 menu_path: ["outline-width"]
 section_path: []
+nav_prev: {"path": "tailwind/docs/border-style/index.md", "title": "border-style"}
+nav_next: {"path": "tailwind/docs/outline-color/index.md", "title": "outline-color"}
 ---
-[](/)
-
-[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
-
-1.  Borders
-2.  outline-width
-
-Borders
 
 # outline-width
 
@@ -121,3 +115,4 @@ Make your ideas look awesome, without relying on a designer.
 ](https://www.refactoringui.com/?ref=sidebar)
 
 Copyright © 2026 Tailwind Labs Inc.·[Trademark Policy](/brand)
+

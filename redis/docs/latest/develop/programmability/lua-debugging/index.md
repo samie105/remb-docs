@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:58:00.606Z"
 content_hash: "26c2e80442db52df19a04842f2e934574c7f84bb6c1d748b1d59dc6fd14ccfc7"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis programmability","→","Redis programmability","→\n      \n        Debugging Lua scripts in Redis","→","Debugging Lua scripts in Redis"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis programmability","→","Redis programmability","→\n      \n        Debugging Lua scripts in Redis","→","Debugging Lua scripts in Redis"]
+nav_prev: {"path": "redis/docs/latest/operate/oss_and_stack/stack-with-enterprise/deprecated-features/triggers-and-functions/concepts/cluster_support/index.md", "title": "Cluster support"}
+nav_next: {"path": "redis/docs/latest/operate/oss_and_stack/stack-with-enterprise/deprecated-features/triggers-and-functions/development/index.md", "title": "Development"}
 ---
+
 # Debugging Lua scripts in Redis
 
 How to use the built-in Lua debugger
@@ -211,3 +214,4 @@ client:ldbcontinue()
 ```
 
 ## On this page
+

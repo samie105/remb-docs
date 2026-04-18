@@ -9,41 +9,10 @@ last_crawled_at: "2026-04-18T16:32:11.360Z"
 content_hash: "b1cb6afb9ac6a0c35dfcc3e2697e740657c58b342c5a9ca7286ed7b7f73b7ccd"
 menu_path: ["Bytecode Caching"]
 section_path: []
+nav_prev: {"path": "bun/bun/docs/installation/index.md", "title": "Installation"}
+nav_next: {"path": "bun/bun/docs/index.md", "title": "Welcome to Bun"}
 ---
-Bytecode caching is a build-time optimization that dramatically improves application startup time by pre-compiling your JavaScript to bytecode. For example, when compiling TypeScript’s `tsc` with bytecode enabled, startup time improves by **2x**.
 
-## Usage
-
-### Basic usage (CommonJS)
-
-Enable bytecode caching with the `--bytecode` flag. Without `--format`, this defaults to CommonJS:
-
-terminal
-
-```
-bun build ./index.ts --target=bun --bytecode --outdir=./dist
-```
-
-This generates two files:
-
-*   `dist/index.js` - Your bundled JavaScript (CommonJS)
-*   `dist/index.jsc` - The bytecode cache file
-
-At runtime, Bun automatically detects and uses the `.jsc` file:
-
-terminal
-
-```
-bun ./dist/index.js  # Automatically uses index.jsc
-```
-
-### With standalone executables
-
-When creating executables with `--compile`, bytecode is embedded into the binary. Both ESM and CommonJS formats are supported:
-
-terminal
-
-```
 # ESM (requires --compile)
 bun build ./cli.ts --compile --bytecode --format=esm --outfile=mycli
 
@@ -428,3 +397,4 @@ This linked representation is created fresh every time you run your code. This a
 3.  **Still applying JIT optimizations** based on actual execution patterns
 
 Bytecode caching moves expensive work (parsing and compiling to bytecode) from runtime to build time. For applications that start frequently, this can halve your startup time at the cost of larger files on disk. For production CLIs and serverless deployments, the combination of `--bytecode --minify --sourcemap` gives you the best performance while maintaining debuggability.
+

@@ -9,27 +9,9 @@ last_crawled_at: "2026-04-18T17:02:17.788Z"
 content_hash: "7a6316709cdca05fd6ed9ca53eeeeeb8a06d6cc9a073a5f0f83fcfb5b317277a"
 menu_path: ["@std/fmt"]
 section_path: []
+nav_prev: {"path": "deno/deno/runtime/reference/std/expect/index.md", "title": "@std/expect"}
+nav_next: {"path": "deno/deno/runtime/reference/std/front-matter/index.md", "title": "@std/front-matter"}
 ---
-On this page
-
-*   [Overview](#overview)
-    *   [Add to your project](#add-to-your-project)
-
-## Overview
-
-Provides utilities for formatting text of different types:
-
-*   [Human-readable bytes](https://jsr.io/@std/fmt/doc/bytes/~)
-*   [Styles for the CLI](https://jsr.io/@std/fmt/doc/colors/~)
-*   [Time duration](https://jsr.io/@std/fmt/doc/duration/~)
-*   [Printing formatted strings to stdout](https://jsr.io/@std/fmt/doc/printf/~)
-
-```js
-import { format } from "@std/fmt/bytes";
-import { red } from "@std/fmt/colors";
-
-console.log(red(format(1337))); // Prints "1.34 kB"
-```
 
 # Runtime compatibility
 
@@ -44,3 +26,4 @@ deno add jsr:@std/fmt
 ```
 
 [See all symbols in @std/fmt on](https://jsr.io/@std/fmt/doc)
+

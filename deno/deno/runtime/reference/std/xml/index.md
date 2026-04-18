@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:07:08.857Z"
 content_hash: "675c828b7b916b0576815cf372130bd8ce801841d03db2c76f67a3af0ca0cced"
 menu_path: ["@std/xml"]
 section_path: []
+nav_prev: {"path": "deno/deno/runtime/reference/std/math/index.md", "title": "@std/math"}
+nav_next: {"path": "deno/deno/runtime/reference/web_platform_apis/index.md", "title": "Web Platform APIs"}
 ---
+
 On this page
 
 *   [Overview](#overview)
@@ -108,3 +111,4 @@ deno add jsr:@std/xml
 ```
 
 [See all symbols in @std/xml on](https://jsr.io/@std/xml/doc)
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:52:59.555Z"
 content_hash: "94f851e09fb8f7af0f30c6710d98f9124a8517f5979dfb3e115dd2ba2742d695"
 menu_path: ["PostgreSQL: Documentation: 18: 29.1. Publication"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/view-pg-aios.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.2.\u00a0pg_aios"}
+nav_next: {"path": "postgres/docs/current/datetime-config-files.html/index.md", "title": "PostgreSQL: Documentation: 18: B.4.\u00a0Date/Time Configuration Files"}
 ---
+
 A _publication_ can be defined on any physical replication primary. The node where a publication is defined is referred to as _publisher_. A publication is a set of changes generated from a table or a group of tables, and might also be described as a change set or replication set. Each publication exists in only one database.
 
 Publications are different from schemas and do not affect how the table is accessed. Each table can be added to multiple publications if needed. Publications may currently only contain tables and all tables in schema. Objects must be added explicitly, except when a publication is created for `ALL TABLES`.
@@ -35,3 +38,4 @@ Tables with a replica identity defined as `NOTHING`, `DEFAULT` without a primary
 `INSERT` operations can proceed regardless of any replica identity.
 
 See [`ALTER TABLE...REPLICA IDENTITY`](https://www.postgresql.org/docs/current/sql-altertable.html#SQL-ALTERTABLE-REPLICA-IDENTITY) for details on how to set the replica identity.
+

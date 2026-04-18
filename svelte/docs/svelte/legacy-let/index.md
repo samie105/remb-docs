@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:48:02.670Z"
 content_hash: "042d474c91cecb73e9775295b485c43b2dcc58a3949b210e6c3bd0b775b6da4c"
 menu_path: ["Reactive let/var declarations"]
 section_path: []
+nav_prev: {"path": "svelte/docs/svelte/legacy-overview/index.md", "title": "Overview"}
+nav_next: {"path": "svelte/docs/svelte/legacy-reactive-assignments/index.md", "title": "Reactive $: statements"}
 ---
+
 In runes mode, reactive state is explicitly declared with the [`$state` rune]($state).
 
 In legacy mode, variables declared at the top level of a component are automatically considered _reactive_. Reassigning or mutating these variables (`count += 1` or `object.x = y`) will cause the UI to update.
@@ -46,3 +49,4 @@ Because Svelte's legacy mode reactivity is based on _assignments_, using array m
 previous next
 
 [Overview](/docs/svelte/legacy-overview) [Reactive $: statements](/docs/svelte/legacy-reactive-assignments)
+

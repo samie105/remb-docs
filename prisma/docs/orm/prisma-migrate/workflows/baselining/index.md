@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:50:29.043Z"
 content_hash: "f64c6435be05f797328079debed879765989ead033e3d575c01bac15e3c93e44"
 menu_path: ["Baselining a database"]
 section_path: []
+nav_prev: {"path": "prisma/docs/orm/prisma-client/using-raw-sql/typedsql/index.md", "title": "TypedSQL"}
+nav_next: {"path": "prisma/docs/orm/prisma-migrate/workflows/customizing-migrations/index.md", "title": "Customizing migrations"}
 ---
+
 Workflows
 
 How to initialize a migration history for an existing database that contains important data.
@@ -23,7 +26,7 @@ Baselining tells Prisma Migrate to assume that one or more migrations have **alr
 
 Since this is working with development database, the assumption is that the database can be reset and reseeded.
 
-Baselining is part of [adding Prisma Migrate to a project with an existing database](https://www.prisma.io/docs/orm/prisma-migrate/getting-started#adding-to-an-existing-project).
+Baselining is part of [adding Prisma Migrate to a project with an existing database](prisma/docs/orm/prisma-migrate/getting-started/index.md#adding-to-an-existing-project).
 
 When you add Prisma Migrate to an existing project, your initial migration contains all the SQL required to recreate the state of the database **before you started using Prisma Migrate**:
 
@@ -56,3 +59,4 @@ This command adds the target migration to the `_prisma_migrations` table and mar
 2.  Applies any new migrations that come _after_ the baseline migration
 
 [Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/prisma-migrate/workflows/baselining.mdx)
+

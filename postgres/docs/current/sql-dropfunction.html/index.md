@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:38:53.451Z"
 content_hash: "d6e7b5137b858890bcf5eae39700b2435a7d46c9dc6cb0e21e3ddda151f8c117"
 menu_path: ["PostgreSQL: Documentation: 18: DROP FUNCTION"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/wal-configuration.html/index.md", "title": "PostgreSQL: Documentation: 18: 28.5.\u00a0WAL Configuration"}
+nav_next: {"path": "postgres/docs/current/ddl-partitioning.html/index.md", "title": "PostgreSQL: Documentation: 18: 5.12.\u00a0Table Partitioning"}
 ---
+
 DROP FUNCTION — remove a function
 
 ## Synopsis
@@ -80,3 +83,4 @@ This command conforms to the SQL standard, with these PostgreSQL extensions:
 *   The `IF EXISTS` option
     
 *   The ability to specify argument modes and names
+

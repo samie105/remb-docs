@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:58:42.781Z"
 content_hash: "a8d9642a40019d107b2026d706fb706be349c7cc40d39dc46de264e5cc27f833"
 menu_path: ["Start with Supabase","Start with Supabase","Web app demos","Web app demos","Angular","Angular"]
 section_path: ["Start with Supabase","Start with Supabase","Web app demos","Web app demos","Angular","Angular"]
+nav_prev: {"path": "supabase/docs/guides/getting-started/quickstarts/vue/index.md", "title": "Use Supabase with Vue"}
+nav_next: {"path": "supabase/docs/guides/getting-started/tutorials/with-expo-react-native/index.md", "title": "Build a User Management App with Expo React Native"}
 ---
+
 # 
 
 Build a User Management App with Angular
@@ -177,3 +180,4 @@ Open the browser to [localhost:4200](http://localhost:4200) and you should see t
 ![Screenshot of the Supabase Angular application running in a browser](/docs/img/supabase-angular-demo.png)
 
 At this stage you have a fully functional application!
+

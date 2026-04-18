@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:47:31.460Z"
 content_hash: "e1f9723c8b45c8bf34a3b46ada2c232baf99469f57172dbf0fbc089b16031512"
 menu_path: ["PostgreSQL: Documentation: 18: 9.6. Bit String Functions and Operators"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/ddl-basics.html/index.md", "title": "PostgreSQL: Documentation: 18: 5.1.\u00a0Table Basics"}
+nav_next: {"path": "postgres/docs/current/amcheck.html/index.md", "title": "PostgreSQL: Documentation: 18: F.1.\u00a0amcheck \u2014 tools to verify table and index consistency"}
 ---
+
 Development Versions: [devel](https://www.postgresql.org/docs/devel/functions-bitstring.html "PostgreSQL devel - 9.6. Bit String Functions and Operators")
 
 This section describes functions and operators for examining and manipulating bit strings, that is values of the types `bit` and `bit varying`. (While only type `bit` is mentioned in these tables, values of type `bit varying` can be used interchangeably.) Bit strings support the usual comparison operators shown in [Table 9.1](https://www.postgresql.org/docs/current/functions-comparison.html#FUNCTIONS-COMPARISON-OP-TABLE "Table 9.1. Comparison Operators"), as well as the operators shown in [Table 9.14](https://www.postgresql.org/docs/current/functions-bitstring.html#FUNCTIONS-BIT-STRING-OP-TABLE "Table 9.14. Bit String Operators").
@@ -136,3 +139,4 @@ cast(-44 as bit(12))           _111111010100_
 '1110'::bit(4)::integer        _14_
 
 Note that casting to just “bit” means casting to `bit(1)`, and so will deliver only the least significant bit of the integer.
+

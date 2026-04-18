@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:00:25.309Z"
 content_hash: "bd9e1b8a120c8b9611953171275fe814101d8390a76f323a0ec85247b9d59dde"
 menu_path: ["Platform","Platform","More","More","More","Migrating to Supabase","Migrating to Supabase","Firebase Auth","Firebase Auth"]
 section_path: ["Platform","Platform","More","More","More","Migrating to Supabase","Migrating to Supabase","Firebase Auth","Firebase Auth"]
+nav_prev: {"path": "supabase/docs/guides/platform/migrating-to-supabase/auth0/index.md", "title": "Migrate from Auth0 to Supabase Auth"}
+nav_next: {"path": "supabase/docs/guides/platform/migrating-to-supabase/firebase-storage/index.md", "title": "Migrated from Firebase Storage to Supabase"}
 ---
+
 # 
 
 Migrate from Firebase Auth to Supabase
@@ -95,3 +98,4 @@ For more advanced migrations, including the use of a middleware server component
 ## Migrate to Supabase[#](#migrate-to-supabase)
 
 [Contact us](https://forms.supabase.com/firebase-migration) if you need more help migrating your project.
+

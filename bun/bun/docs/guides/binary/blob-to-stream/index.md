@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:39:48.422Z"
 content_hash: "2f55797756fbd9724adde300e040772ed0f0aace1fb81ffc2510a45e62c77fd1"
 menu_path: ["Convert a Blob to a ReadableStream"]
 section_path: []
+nav_prev: {"path": "bun/bun/docs/guides/binary/blob-to-arraybuffer/index.md", "title": "Convert a Blob to an ArrayBuffer"}
+nav_next: {"path": "bun/bun/docs/guides/binary/blob-to-dataview/index.md", "title": "Convert a Blob to a DataView"}
 ---
+
 [Skip to main content](#content-area)
 
 [Bun home page![light logo](https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z_zHyy/logo/logo-with-wordmark-dark.svg?fit=max&auto=format&n=JUhaF6Mf68z_zHyy&q=85&s=3f55cd23822028e40658b192c927f3e4)![dark logo](https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z_zHyy/logo/logo-with-wordmark-light.svg?fit=max&auto=format&n=JUhaF6Mf68z_zHyy&q=85&s=8a0c5928d9dc3631f0d33e17c257e2ec)](/docs)
@@ -60,3 +63,4 @@ Convert a Uint8Array to a string
 Next
 
 ](/docs/guides/binary/typedarray-to-string)
+

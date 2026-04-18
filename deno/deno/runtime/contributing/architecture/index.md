@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:45:18.454Z"
 content_hash: "76aa704bc9f7c56e07475426c783cac3d679b641394d7c7767d30758cbd9f86a"
 menu_path: ["Architecture Overview"]
 section_path: []
+nav_prev: {"path": "deno/deno/runtime/contributing/index.md", "title": "Contributing and support"}
+nav_next: {"path": "deno/deno/runtime/contributing/profiling/index.md", "title": "Contributing and support"}
 ---
+
 On this page
 
 *   [Deno and Linux analogy](#deno-and-linux-analogy)
@@ -90,3 +93,4 @@ Metrics is Deno's internal counter for various statistics.
 
 *   Ryan Dahl. (May 27, 2020). [An interesting case with Deno](https://www.youtube.com/watch?v=1b7FoBwxc7E). Deno Israel.
 *   Bartek Iwańczuk. (Oct 6, 2020). [Deno internals - how modern JS/TS runtime is built](https://www.youtube.com/watch?v=AOvg_GbnsbA&t=35m13s). Paris Deno.
+

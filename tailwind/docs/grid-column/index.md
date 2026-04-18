@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:47:08.439Z"
 content_hash: "39eca86f180f72257e1c48bd773a4710003e08f8152921e680938f582337c6ea"
 menu_path: ["grid-column"]
 section_path: []
+nav_prev: {"path": "tailwind/docs/grid-template-columns/index.md", "title": "grid-template-columns"}
+nav_next: {"path": "tailwind/docs/grid-template-rows/index.md", "title": "grid-template-rows"}
 ---
+
 Flexbox & Grid
 
 Utilities for controlling how elements are sized and placed across grid columns.
@@ -124,4 +127,5 @@ Prefix `grid-column`,`grid-column-start`, and `grid-column-end` utilities with a
 <div class="col-span-2 md:col-span-6 ...">  <!-- ... --></div>
 ```
 
-Learn more about using variants in the [variants documentation](https://tailwindcss.com/docs/hover-focus-and-other-states).
+Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).
+

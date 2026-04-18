@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:59:59.364Z"
 content_hash: "b93d441489d1909f2c5a3809214d680f9950fcfbc6bcd6c5642a2af3ea2791eb"
 menu_path: ["Platform","Platform","More","More","More","Manage your usage","Manage your usage","Disk Throughput","Disk Throughput"]
 section_path: ["Platform","Platform","More","More","More","Manage your usage","Manage your usage","Disk Throughput","Disk Throughput"]
+nav_prev: {"path": "supabase/docs/guides/platform/manage-your-usage/disk-size/index.md", "title": "Manage Disk size usage"}
+nav_next: {"path": "supabase/docs/guides/platform/manage-your-usage/edge-function-invocations/index.md", "title": "Manage Edge Function Invocations usage"}
 ---
+
 # 
 
 Manage Disk Throughput usage
@@ -205,3 +208,4 @@ Compute Credits
 **Total**
 
 **$249.26**
+

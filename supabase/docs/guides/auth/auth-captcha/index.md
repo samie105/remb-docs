@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:36:27.640Z"
 content_hash: "ca3fb3aa10d09e60d1b82e80a8c1adac69024527de4ce036c6d542f86a91f7f4"
 menu_path: ["Auth","Auth","Security","Security","Bot Detection (CAPTCHA)","Bot Detection (CAPTCHA)"]
 section_path: ["Auth","Auth","Security","Security","Bot Detection (CAPTCHA)","Bot Detection (CAPTCHA)"]
+nav_prev: {"path": "supabase/docs/guides/auth/auth-email-passwordless/index.md", "title": "Passwordless email logins"}
+nav_next: {"path": "supabase/docs/guides/auth/auth-email-templates/index.md", "title": "Email Templates"}
 ---
+
 # 
 
 Enable CAPTCHA Protection
@@ -103,3 +106,4 @@ Reset the `captcha` after the signUp function is called using the following code
 In order to test that this works locally we will need to use something like [ngrok](https://ngrok.com/) or add an entry to your hosts file. You can read more about this in the [hCaptcha docs](https://docs.hcaptcha.com/#local-development).
 
 Run the application and you should now be provided with a CAPTCHA challenge.
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:59:34.059Z"
 content_hash: "d6070d373bf3053a6a13d8e0e479be5496e0d3242c8a13afa2e9654d1f58545c"
 menu_path: ["Local Dev / CLI","Local Dev / CLI","Testing","Testing","Getting started","Getting started"]
 section_path: ["Local Dev / CLI","Local Dev / CLI","Testing","Testing","Getting started","Getting started"]
+nav_prev: {"path": "supabase/docs/guides/local-development/cli/testing-and-linting/index.md", "title": "Testing and linting"}
+nav_next: {"path": "supabase/docs/guides/local-development/testing/pgtap-extended/index.md", "title": "Advanced pgTAP Testing"}
 ---
+
 # 
 
 Testing Overview
@@ -133,3 +136,4 @@ Common issues and solutions:
 *   [Supabase CLI Reference](/docs/reference/cli/supabase-test)
 *   [pgTAP Supabase reference](/docs/guides/database/extensions/pgtap?queryGroups=database-method&database-method=sql#testing-rls-policies)
 *   [Database testing reference](/docs/guides/database/testing)
+

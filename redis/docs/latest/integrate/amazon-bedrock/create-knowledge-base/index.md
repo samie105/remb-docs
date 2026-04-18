@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:47:16.517Z"
 content_hash: "44e17f07083de227766628dcab608320e25a9a5d113b52d760900cff5bb40d20"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Amazon Bedrock","→","Amazon Bedrock","→\n      \n        Create a Bedrock knowledge base","→","Create a Bedrock knowledge base"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Amazon Bedrock","→","Amazon Bedrock","→\n      \n        Create a Bedrock knowledge base","→","Create a Bedrock knowledge base"]
+nav_prev: {"path": "redis/docs/latest/develop/clients/lettuce/amr/index.md", "title": "Connect to Azure Managed Redis"}
+nav_next: {"path": "redis/docs/latest/develop/clients/nodejs/amr/index.md", "title": "Connect to Azure Managed Redis"}
 ---
+
 # Create a Bedrock knowledge base
 
 Shows how to set up your Knowledge base in Amazon Bedrock.
@@ -74,3 +77,4 @@ Select the name of your knowledge base to view the syncing status of your data s
 After the knowledge base is ready, you can use it to [Create an agent](/docs/latest/integrate/amazon-bedrock/create-agent/).
 
 ## On this page
+

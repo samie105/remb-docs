@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:35:57.843Z"
 content_hash: "f2be62890ae52fccfc2a21c06bf7937ec6520b5e67a88b0ab7ec1c15d1be5556"
 menu_path: ["Bun ​"]
 section_path: []
+nav_prev: {"path": "hono/docs/getting-started/deno/index.md", "title": "Deno \u200b"}
+nav_next: {"path": "hono/docs/getting-started/fastly/index.md", "title": "Fastly Compute \u200b"}
 ---
+
 [Bun](https://bun.com/) is another JavaScript runtime. It's not Node.js or Deno. Bun includes a transcompiler, we can write the code with TypeScript. Hono also works on Bun.
 
 ## 1\. Install Bun [​](#_1-install-bun)
@@ -252,3 +255,4 @@ sh
 ```
 bun test index.test.ts
 ```
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:52:07.546Z"
 content_hash: "1b51eb657cdc410c8d07d300f161d905780643b8784f15c66d01da0877b7bb98"
 menu_path: ["Interface: WebSocketClientOptions"]
 section_path: []
+nav_prev: {"path": "trpc/docs/typedoc/client/index/type-aliases/CreateTRPCClient/index.md", "title": "Type Alias: CreateTRPCClient<TRouter>"}
+nav_next: {"path": "trpc/docs/typedoc/client/index/type-aliases/HTTPBatchLinkOptions/index.md", "title": "Type Alias: HTTPBatchLinkOptions<TRoot>"}
 ---
+
 Defined in: [packages/client/src/links/wsLink/wsClient/options.ts:4](https://github.com/trpc/trpc/blob/63407c577124e7a2890a7599484d52a0cf025536/packages/client/src/links/wsLink/wsClient/options.ts#L4)
 
 ## Extends[​](#extends "Direct link to Extends")
@@ -37,7 +40,7 @@ Connection params that are available in `createContext()`
 
 ### experimental\_encoder?[​](#experimental_encoder "Direct link to experimental_encoder?")
 
-> `optional` **experimental\_encoder**: [`Encoder`](https://trpc.io/docs/typedoc/client/index/interfaces/Encoder)
+> `optional` **experimental\_encoder**: [`Encoder`](trpc/docs/typedoc/client/index/interfaces/Encoder/index.md)
 
 Defined in: [packages/client/src/links/wsLink/wsClient/options.ts:64](https://github.com/trpc/trpc/blob/63407c577124e7a2890a7599484d52a0cf025536/packages/client/src/links/wsLink/wsClient/options.ts#L64)
 
@@ -262,3 +265,4 @@ Type
 #### Returns[​](#returns-4 "Direct link to Returns")
 
 `WebSocket`
+

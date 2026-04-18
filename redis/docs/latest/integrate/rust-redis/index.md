@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:14:54.726Z"
 content_hash: "a25708dae70d1dfde89ed6be875a1c4782d6e61c98f488652532e43b5dda7fa3"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Rust client for Redis","→","Rust client for Redis"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Rust client for Redis","→","Rust client for Redis"]
+nav_prev: {"path": "redis/docs/latest/develop/use-cases/leaderboard/rust/index.md", "title": "Redis leaderboard with Rust"}
+nav_next: {"path": "redis/docs/latest/develop/ai/redisvl/user_guide/svs_vamana/index.md", "title": "SVS-VAMANA Vector Search"}
 ---
+
 # Rust client for Redis
 
 Learn how to build with Redis and Rust
@@ -36,3 +39,4 @@ redis-rs is a high-performance Redis client for Rust that leverages Rust's memor
 Refer to the [Rust Redis documentation](https://docs.rs/redis/latest/redis/) to install, connect, and use redis-rs.
 
 ## On this page
+

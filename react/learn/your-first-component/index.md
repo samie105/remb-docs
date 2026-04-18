@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:36:14.262Z"
 content_hash: "aa3245882d0e50eb4db04219dd398a29e9302baa83f546cf2967c3ab14fb1b71"
 menu_path: ["Your First Component"]
 section_path: []
+nav_prev: {"path": "react/learn/describing-the-ui/index.md", "title": "Describing the UI"}
+nav_next: {"path": "react/learn/importing-and-exporting-components/index.md", "title": "Importing and Exporting Components"}
 ---
+
 _Components_ are one of the core concepts of React. They are the foundation upon which you build user interfaces (UI), which makes them the perfect place to start your React journey!
 
 ### You will learn
@@ -46,7 +49,7 @@ And here’s how to build a component:
 
 ### Step 1: Export the component[](#step-1-export-the-component "Link for Step 1: Export the component ")
 
-The `export default` prefix is a [standard JavaScript syntax](https://developer.mozilla.org/docs/web/javascript/reference/statements/export) (not specific to React). It lets you mark the main function in a file so that you can later import it from other files. (More on importing in [Importing and Exporting Components](https://react.dev/learn/importing-and-exporting-components)!)
+The `export default` prefix is a [standard JavaScript syntax](https://developer.mozilla.org/docs/web/javascript/reference/statements/export) (not specific to React). It lets you mark the main function in a file so that you can later import it from other files. (More on importing in [Importing and Exporting Components](react/learn/importing-and-exporting-components/index.md)!)
 
 ### Step 2: Define the function[](#step-2-define-the-function "Link for Step 2: Define the function ")
 
@@ -58,7 +61,7 @@ React components are regular JavaScript functions, but **their names must start 
 
 ### Step 3: Add markup[](#step-3-add-markup "Link for Step 3: Add markup ")
 
-The component returns an `<img />` tag with `src` and `alt` attributes. `<img />` is written like HTML, but it is actually JavaScript under the hood! This syntax is called [JSX](https://react.dev/learn/writing-markup-with-jsx), and it lets you embed markup inside JavaScript.
+The component returns an `<img />` tag with `src` and `alt` attributes. `<img />` is written like HTML, but it is actually JavaScript under the hood! This syntax is called [JSX](react/learn/writing-markup-with-jsx/index.md), and it lets you embed markup inside JavaScript.
 
 Return statements can be written all on one line, as in this component:
 
@@ -91,7 +94,7 @@ And `Profile` contains even more HTML: `<img />`. In the end, this is what the b
 
 ### Nesting and organizing components[](#nesting-and-organizing-components "Link for Nesting and organizing components ")
 
-Components are regular JavaScript functions, so you can keep multiple components in the same file. This is convenient when components are relatively small or tightly related to each other. If this file gets crowded, you can always move `Profile` to a separate file. You will learn how to do this shortly on the [page about imports.](https://react.dev/learn/importing-and-exporting-components)
+Components are regular JavaScript functions, so you can keep multiple components in the same file. This is convenient when components are relatively small or tightly related to each other. If this file gets crowded, you can always move `Profile` to a separate file. You will learn how to do this shortly on the [page about imports.](react/learn/importing-and-exporting-components/index.md)
 
 Because the `Profile` components are rendered inside `Gallery`—even several times!—we can say that `Gallery` is a **parent component,** rendering each `Profile` as a “child”. This is part of the magic of React: you can define a component once, and then use it in as many places and as many times as you like.
 
@@ -103,13 +106,13 @@ Components can render other components, but **you must never nest their definiti
 export default function Gallery() {// 🔴 Never define a component inside another component!function Profile() {// ...}// ...}
 ```
 
-The snippet above is [very slow and causes bugs.](https://react.dev/learn/preserving-and-resetting-state#different-components-at-the-same-position-reset-state) Instead, define every component at the top level:
+The snippet above is [very slow and causes bugs.](react/learn/preserving-and-resetting-state/index.md#different-components-at-the-same-position-reset-state) Instead, define every component at the top level:
 
 ```
 export default function Gallery() {// ...}// ✅ Declare components at the top levelfunction Profile() {// ...}
 ```
 
-When a child component needs some data from a parent, [pass it by props](https://react.dev/learn/passing-props-to-a-component) instead of nesting definitions.
+When a child component needs some data from a parent, [pass it by props](react/learn/passing-props-to-a-component/index.md) instead of nesting definitions.
 
 ##### Deep Dive
 
@@ -119,9 +122,9 @@ Your React application begins at a “root” component. Usually, it is created 
 
 Most React apps use components all the way down. This means that you won’t only use components for reusable pieces like buttons, but also for larger pieces like sidebars, lists, and ultimately, complete pages! Components are a handy way to organize UI code and markup, even if some of them are only used once.
 
-[React-based frameworks](https://react.dev/learn/creating-a-react-app) take this a step further. Instead of using an empty HTML file and letting React “take over” managing the page with JavaScript, they _also_ generate the HTML automatically from your React components. This allows your app to show some content before the JavaScript code loads.
+[React-based frameworks](react/learn/creating-a-react-app/index.md) take this a step further. Instead of using an empty HTML file and letting React “take over” managing the page with JavaScript, they _also_ generate the HTML automatically from your React components. This allows your app to show some content before the JavaScript code loads.
 
-Still, many websites only use React to [add interactivity to existing HTML pages.](https://react.dev/learn/add-react-to-an-existing-project#using-react-for-a-part-of-your-existing-page) They have many root components instead of a single one for the entire page. You can use as much—or as little—React as you need.
+Still, many websites only use React to [add interactivity to existing HTML pages.](react/learn/add-react-to-an-existing-project/index.md#using-react-for-a-part-of-your-existing-page) They have many root components instead of a single one for the entire page. You can use as much—or as little—React as you need.
 
 ## Recap[](#recap "Link for Recap")
 
@@ -151,3 +154,4 @@ Export the component[](#export-the-component "Link for this heading")
 This sandbox doesn’t work because the root component is not exported:
 
 Try to fix it yourself before looking at the solution!
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:32:47.688Z"
 content_hash: "8d3f747c46d20dfcd278dc89f7753a4a1fd1cc998a4ba3ed222717ba8365c5a3"
 menu_path: ["Shared Options ​"]
 section_path: []
+nav_prev: {"path": "vite/config/ssr-options/index.md", "title": "SSR Options \u200b"}
+nav_next: {"path": "vite/config/worker-options/index.md", "title": "Worker Options \u200b"}
 ---
+
 Unless noted, the options in this section are applied to all dev, build, and preview.
 
 ## root [​](#root)
@@ -19,13 +22,13 @@ Unless noted, the options in this section are applied to all dev, build, and pre
 
 Project root directory (where `index.html` is located). Can be an absolute path, or a path relative to the current working directory.
 
-See [Project Root](https://vite.dev/guide/#index-html-and-project-root) for more details.
+See [Project Root](vite/guide/index.md#index-html-and-project-root) for more details.
 
 ## base [​](#base)
 
 *   **Type:** `string`
 *   **Default:** `/`
-*   **Related:** [`server.origin`](https://vite.dev/config/server-options#server-origin)
+*   **Related:** [`server.origin`](vite/config/server-options/index.md#server-origin)
 
 Base public path when served in development or production. Valid values include:
 
@@ -33,7 +36,7 @@ Base public path when served in development or production. Valid values include:
 *   Full URL, e.g. `https://bar.com/foo/` (The origin part won't be used in development so the value is the same as `/foo/`)
 *   Empty string or `./` (for embedded deployment)
 
-See [Public Base Path](https://vite.dev/guide/build#public-base-path) for more details.
+See [Public Base Path](vite/guide/build/index.md#public-base-path) for more details.
 
 ## mode [​](#mode)
 
@@ -42,7 +45,7 @@ See [Public Base Path](https://vite.dev/guide/build#public-base-path) for more d
 
 Specifying this in config will override the default mode for **both serve and build**. This value can also be overridden via the command line `--mode` option.
 
-See [Env Variables and Modes](https://vite.dev/guide/env-and-mode) for more details.
+See [Env Variables and Modes](vite/guide/env-and-mode/index.md) for more details.
 
 ## define [​](#define)
 
@@ -82,7 +85,7 @@ declare const __APP_VERSION__: string
 
 *   **Type:** `(Plugin | Plugin[] | Promise<Plugin | Plugin[]>)[]`
 
-Array of plugins to use. Falsy plugins are ignored and arrays of plugins are flattened. If a promise is returned, it would be resolved before running. See [Plugin API](https://vite.dev/guide/api-plugin) for more details on Vite plugins.
+Array of plugins to use. Falsy plugins are ignored and arrays of plugins are flattened. If a promise is returned, it would be resolved before running. See [Plugin API](vite/guide/api-plugin/index.md) for more details on Vite plugins.
 
 ## publicDir [​](#publicdir)
 
@@ -93,7 +96,7 @@ Directory to serve as plain static assets. Files in this directory are served at
 
 Defining `publicDir` as `false` disables this feature.
 
-See [The `public` Directory](https://vite.dev/guide/assets#the-public-directory) for more details.
+See [The `public` Directory](vite/guide/assets/index.md#the-public-directory) for more details.
 
 ## cacheDir [​](#cachedir)
 
@@ -112,11 +115,11 @@ The order of the entries is important, in that the first defined rules are appli
 
 When aliasing to file system paths, always use absolute paths. Relative alias values will be used as-is and will not be resolved into file system paths.
 
-More advanced custom resolution can be achieved through [plugins](https://vite.dev/guide/api-plugin).
+More advanced custom resolution can be achieved through [plugins](vite/guide/api-plugin/index.md).
 
 Using with SSR
 
-If you have configured aliases for [SSR externalized dependencies](https://vite.dev/guide/ssr#ssr-externals), you may want to alias the actual `node_modules` packages. Both [Yarn](https://classic.yarnpkg.com/en/docs/cli/add/#toc-yarn-add-alias) and [pnpm](https://pnpm.io/aliases/) support aliasing via the `npm:` prefix.
+If you have configured aliases for [SSR externalized dependencies](vite/guide/ssr/index.md#ssr-externals), you may want to alias the actual `node_modules` packages. Both [Yarn](https://classic.yarnpkg.com/en/docs/cli/add/#toc-yarn-add-alias) and [pnpm](https://pnpm.io/aliases/) support aliasing via the `npm:` prefix.
 
 ### Object Format (`Record<string, string>`) [​](#object-format-record-string-string)
 
@@ -166,7 +169,7 @@ SSR + ESM
 
 For SSR builds, deduplication does not work for ESM build outputs configured from `build.rollupOptions.output`. A workaround is to use CJS build outputs until ESM has better plugin support for module loading.
 
-## resolve.conditions [non-inherit](https://vite.dev/guide/api-environment#environments-configuration) [​](#resolve-conditions)
+## resolve.conditions [non-inherit](vite/guide/api-environment/index.md#environments-configuration) [​](#resolve-conditions)
 
 *   **Type:** `string[]`
 *   **Default:** `['module', 'browser', 'development|production']` (`defaultClientConditions`)
@@ -196,7 +199,7 @@ Note that `import`, `require`, `default` conditions are always applied if the re
 
 In addition, the `style` condition is applied when resolving style imports, e.g. `@import 'my-library'`. For some CSS pre-processors, their corresponding conditions are also applied, i.e. `sass` for Sass and `less` for Less.
 
-## resolve.mainFields [non-inherit](https://vite.dev/guide/api-environment#environments-configuration) [​](#resolve-mainfields)
+## resolve.mainFields [non-inherit](vite/guide/api-environment/index.md#environments-configuration) [​](#resolve-mainfields)
 
 *   **Type:** `string[]`
 *   **Default:** `['browser', 'module', 'jsnext:main', 'jsnext']` (`defaultClientMainFields`)
@@ -224,12 +227,12 @@ Enabling this setting causes vite to determine file identity by the original fil
 *   **Type:** `boolean`
 *   **Default:** `false`
 
-Enables the tsconfig paths resolution feature. `paths` option in `tsconfig.json` will be used to resolve imports. See [Features](https://vite.dev/guide/features#paths) for more details.
+Enables the tsconfig paths resolution feature. `paths` option in `tsconfig.json` will be used to resolve imports. See [Features](vite/guide/features/index.md#paths) for more details.
 
 ## html.cspNonce [​](#html-cspnonce)
 
 *   **Type:** `string`
-*   **Related:** [Content Security Policy (CSP)](https://vite.dev/guide/features#content-security-policy-csp)
+*   **Related:** [Content Security Policy (CSP)](vite/guide/features/index.md#content-security-policy-csp)
 
 A nonce value placeholder that will be used when generating script / style tags. Setting this value will also generate a meta tag with nonce value.
 
@@ -272,7 +275,7 @@ A nonce value placeholder that will be used when generating script / style tags.
 
 Configure CSS modules behavior. The options are passed on to [postcss-modules](https://github.com/css-modules/postcss-modules).
 
-This option doesn't have any effect when using [Lightning CSS](https://vite.dev/guide/features#lightning-css). If enabled, [`css.lightningcss.cssModules`](https://lightningcss.dev/css-modules.html) should be used instead.
+This option doesn't have any effect when using [Lightning CSS](vite/guide/features/index.md#lightning-css). If enabled, [`css.lightningcss.cssModules`](https://lightningcss.dev/css-modules.html) should be used instead.
 
 ## css.postcss [​](#css-postcss)
 
@@ -282,7 +285,7 @@ Inline PostCSS config or a custom directory to search PostCSS config from (defau
 
 For inline PostCSS config, it expects the same format as `postcss.config.js`. But for `plugins` property, only [array format](https://github.com/postcss/postcss-load-config/blob/main/README.md#array) can be used.
 
-The search is done using [postcss-load-config](https://github.com/postcss/postcss-load-config) and only the supported config file names are loaded. Config files outside the workspace root (or the [project root](https://vite.dev/guide/#index-html-and-project-root) if no workspace is found) are not searched by default. You can specify a custom path outside of the root to load the specific config file instead if needed.
+The search is done using [postcss-load-config](https://github.com/postcss/postcss-load-config) and only the supported config file names are loaded. Config files outside the workspace root (or the [project root](vite/guide/index.md#index-html-and-project-root) if no workspace is found) are not searched by default. You can specify a custom path outside of the root to load the specific config file instead if needed.
 
 Note if an inline config is provided, Vite will not search for other PostCSS config sources.
 
@@ -373,7 +376,7 @@ Whether to enable sourcemaps during dev.
 *   **Type:** `'postcss' | 'lightningcss'`
 *   **Default:** `'postcss'`
 
-Selects the engine used for CSS processing. Check out [Lightning CSS](https://vite.dev/guide/features#lightning-css) for more information.
+Selects the engine used for CSS processing. Check out [Lightning CSS](vite/guide/features/index.md#lightning-css) for more information.
 
 Duplicate `@import`s
 
@@ -477,7 +480,7 @@ This option is converted to `oxc` option internally. Use `oxc` option instead.
 ## assetsInclude [​](#assetsinclude)
 
 *   **Type:** `string | RegExp | (string | RegExp)[]`
-*   **Related:** [Static Asset Handling](https://vite.dev/guide/assets)
+*   **Related:** [Static Asset Handling](vite/guide/assets/index.md)
 
 Specify additional [picomatch patterns](https://github.com/micromatch/picomatch#globbing-features) to be treated as static assets so that:
 
@@ -558,7 +561,7 @@ Set to `false` to prevent Vite from clearing the terminal screen when logging ce
 
 The directory from which `.env` files are loaded. Can be an absolute path, or a path relative to the project root. `false` will disable the `.env` file loading.
 
-See [here](https://vite.dev/guide/env-and-mode#env-files) for more about environment files.
+See [here](vite/guide/env-and-mode/index.md#env-files) for more about environment files.
 
 ## envPrefix [​](#envprefix)
 
@@ -586,13 +589,13 @@ define: {
 *   **Type:** `'spa' | 'mpa' | 'custom'`
 *   **Default:** `'spa'`
 
-Whether your application is a Single Page Application (SPA), a [Multi Page Application (MPA)](https://vite.dev/guide/build#multi-page-app), or Custom Application (SSR and frameworks with custom HTML handling):
+Whether your application is a Single Page Application (SPA), a [Multi Page Application (MPA)](vite/guide/build/index.md#multi-page-app), or Custom Application (SSR and frameworks with custom HTML handling):
 
 *   `'spa'`: include HTML middlewares and use SPA fallback. Configure [sirv](https://github.com/lukeed/sirv) with `single: true` in preview
 *   `'mpa'`: include HTML middlewares
 *   `'custom'`: don't include HTML middlewares
 
-Learn more in Vite's [SSR guide](https://vite.dev/guide/ssr#vite-cli). Related: [`server.middlewareMode`](https://vite.dev/config/server-options#server-middlewaremode).
+Learn more in Vite's [SSR guide](vite/guide/ssr/index.md#vite-cli). Related: [`server.middlewareMode`](vite/config/server-options/index.md#server-middlewaremode).
 
 ## devtools [​](#devtools)
 
@@ -612,3 +615,4 @@ See [Vite DevTools](https://github.com/vitejs/devtools) for more details.
 Enable future breaking changes to prepare for a smooth migration to the next major version of Vite. The list may be updated, added, or removed at any time as new features are developed.
 
 See the [Breaking Changes](https://vite.dev/changes/) page for details of the possible options.
+

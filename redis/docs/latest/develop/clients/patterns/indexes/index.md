@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:44:59.715Z"
 content_hash: "c54065b99e4361cd02c9a8d42bd1cc774014b5815976591af8e3c7604b560801"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Connect with Redis client API libraries","→","Connect with Redis client API libraries","→\n      \n        Coding patterns","→","Coding patterns","→\n      \n        Secondary indexing","→","Secondary indexing"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Connect with Redis client API libraries","→","Connect with Redis client API libraries","→\n      \n        Coding patterns","→","Coding patterns","→\n      \n        Secondary indexing","→","Secondary indexing"]
+nav_prev: {"path": "redis/docs/latest/develop/ai/search-and-query/indexing/schema-definition/index.md", "title": "Schema definition"}
+nav_next: {"path": "redis/docs/latest/operate/oss_and_stack/management/security/index.md", "title": "Redis security"}
 ---
+
 # Secondary indexing
 
 Building secondary indexes in Redis
@@ -559,3 +562,4 @@ Keeping the index updated may be challenging, in the course of months or years i
 Different strategies could be used. If the index data is outside Redis _read repair_ can be a solution, where data is fixed in a lazy way when it is requested. When we index data which is stored in Redis itself the [`SCAN`](/docs/latest/commands/scan/) family of commands can be used in order to verify, update or rebuild the index from scratch, incrementally.
 
 ## On this page
+

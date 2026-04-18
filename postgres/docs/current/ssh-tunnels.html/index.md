@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:53:12.036Z"
 content_hash: "26b50bad7ec9d34f93e3acc53adffd0376e81f2439341814454f02bf510eacfa"
 menu_path: ["PostgreSQL: Documentation: 18: 18.11. Secure TCP/IP Connections with SSH Tunnels"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/release-prior.html/index.md", "title": "PostgreSQL: Documentation: 18: E.5.\u00a0Prior Releases"}
+nav_next: {"path": "postgres/docs/current/parallel-plans.html/index.md", "title": "PostgreSQL: Documentation: 18: 15.3.\u00a0Parallel Plans"}
 ---
+
 It is possible to use SSH to encrypt the network connection between clients and a PostgreSQL server. Done properly, this provides an adequately secure network connection, even for non-SSL-capable clients.
 
 First make sure that an SSH server is running properly on the same machine as the PostgreSQL server and that you can log in using `ssh` as some user; you then can establish a secure tunnel to the remote server. A secure tunnel listens on a local port and forwards all traffic to a port on the remote machine. Traffic sent to the remote port can arrive on its `localhost` address, or different bind address if desired; it does not appear as coming from your local machine. This command creates a secure tunnel from the client machine to the remote machine `foo.com`:
@@ -39,3 +42,4 @@ Note that this way the connection from `shell.foo.com` to `db.foo.com` will not 
 ### Tip
 
 Several other applications exist that can provide secure tunnels using a procedure similar in concept to the one just described.
+

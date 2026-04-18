@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:33:34.275Z"
 content_hash: "a652ee4150bc5fd88be45ab2d688a46fe769da82c47da420fb3ac71cd809a656"
 menu_path: ["child_process - Node documentation"]
 section_path: []
+nav_prev: {"path": "deno/deno/api/node/buffer/index.md", "title": "buffer - Node documentation"}
+nav_next: {"path": "deno/deno/api/node/cluster/index.md", "title": "cluster - Node documentation"}
 ---
+
 ### Usage in Deno
 
 ```typescript
@@ -478,3 +481,4 @@ T
 [StdioPipeNamed](.././child_process/~/StdioPipeNamed "StdioPipeNamed")
 
 No documentation available
+

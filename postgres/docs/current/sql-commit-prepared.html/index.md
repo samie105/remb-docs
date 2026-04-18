@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:46:18.158Z"
 content_hash: "752607b861cade7bd5c8ede38744af9a147476c24e6d18e1776a99092580ca50"
 menu_path: ["PostgreSQL: Documentation: 18: COMMIT PREPARED"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/catalog-pg-namespace.html/index.md", "title": "PostgreSQL: Documentation: 18: 52.32.\u00a0pg_namespace"}
+nav_next: {"path": "postgres/docs/current/sql-prepare.html/index.md", "title": "PostgreSQL: Documentation: 18: PREPARE"}
 ---
+
 COMMIT PREPARED — commit a transaction that was earlier prepared for two-phase commit
 
 ## Synopsis
@@ -43,3 +46,4 @@ COMMIT PREPARED 'foobar';
 ## Compatibility
 
 `COMMIT PREPARED` is a PostgreSQL extension. It is intended for use by external transaction management systems, some of which are covered by standards (such as X/Open XA), but the SQL side of those systems is not standardized.
+

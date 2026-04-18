@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:52:51.526Z"
 content_hash: "16383ebb364f3658d22589d107062bcbc52ae07cd43766c4291ca6e93fdcebe4"
 menu_path: ["PostgreSQL: Documentation: 18: 35.47. sequences"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/sql-checkpoint.html/index.md", "title": "PostgreSQL: Documentation: 18: CHECKPOINT"}
+nav_next: {"path": "postgres/docs/current/vacuumlo.html/index.md", "title": "PostgreSQL: Documentation: 18: vacuumlo"}
 ---
+
 The view `sequences` contains all sequences defined in the current database. Only those sequences are shown that the current user has access to (by way of being the owner or having some privilege).
 
 **Table 35.45. `sequences` Columns**
@@ -67,3 +70,4 @@ The increment of the sequence
 `YES` if the sequence cycles, else `NO`
 
 Note that in accordance with the SQL standard, the start, minimum, maximum, and increment values are returned as character strings.
+

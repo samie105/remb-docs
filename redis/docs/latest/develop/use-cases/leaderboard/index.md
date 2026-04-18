@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:55:17.438Z"
 content_hash: "dd0baf28d1d2879a31ff40b878e38cc98929031fedce1a89ca53f2822fdd6fb7"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Redis leaderboard","→","Redis leaderboard"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Redis leaderboard","→","Redis leaderboard"]
+nav_prev: {"path": "redis/docs/latest/develop/programmability/lua-api/index.md", "title": "Redis Lua API reference"}
+nav_next: {"path": "redis/docs/latest/develop/ai/redisvl/user_guide/llmcache/index.md", "title": "LLM Caching"}
 ---
+
 # Redis leaderboard
 
 Build ranked leaderboards with Redis sorted sets and user metadata
@@ -41,3 +44,4 @@ This pattern works well when you need to:
 *   [Ruby](/docs/latest/develop/use-cases/leaderboard/ruby/) - Build a Ruby leaderboard with sorted sets, user metadata hashes, and a local interactive demo
 
 ## On this page
+

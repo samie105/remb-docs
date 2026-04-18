@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:46:27.094Z"
 content_hash: "0c41ff85c9bed545235db02f632d7b0594aa41df8c6e7084c616ed558dacb385"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis reference","→","Redis reference","→\n      \n        Client-side caching reference","→","Client-side caching reference"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis reference","→","Redis reference","→\n      \n        Client-side caching reference","→","Client-side caching reference"]
+nav_prev: {"path": "redis/docs/latest/operate/kubernetes/release-notes/7-8-2-releases/7-8-2-6-jan25/index.md", "title": "Redis Enterprise for Kubernetes 7.8.2-6 (Jan 2025) release notes"}
+nav_next: {"path": "redis/docs/latest/operate/oss_and_stack/install/install-stack/apt/index.md", "title": "Install Redis Open Source on Linux"}
 ---
+
 # Client-side caching reference
 
 Server-assisted, client-side caching in Redis
@@ -278,3 +281,4 @@ However simpler clients may just evict data using some random sampling just reme
 Be sure to configure a suitable value for the maximum number of keys remembered by Redis or alternatively use the BCAST mode that consumes no memory at all on the Redis side. Note that the memory consumed by Redis when BCAST is not used, is proportional both to the number of keys tracked and the number of clients requesting such keys.
 
 ## On this page
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:50:31.139Z"
 content_hash: "4b4a8116fe15a8ea6e45601264e673d8bb72ece9c669c0bb9342b7b8d6a9a62d"
 menu_path: ["PostgreSQL: Documentation: 18: 53.9. pg_group"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/app-pgcreatesubscriber.html/index.md", "title": "PostgreSQL: Documentation: 18: pg_createsubscriber"}
+nav_next: {"path": "postgres/docs/current/protocol-overview.html/index.md", "title": "PostgreSQL: Documentation: 18: 54.1.\u00a0Overview"}
 ---
+
 Development Versions: [devel](https://www.postgresql.org/docs/devel/view-pg-group.html "PostgreSQL devel - 53.9. pg_group")
 
 The view `pg_group` exists for backwards compatibility: it emulates a catalog that existed in PostgreSQL before version 8.1. It shows the names and members of all roles that are marked as not `rolcanlogin`, which is an approximation to the set of roles that are being used as groups.
@@ -31,3 +34,4 @@ ID of this group
 `grolist` `oid[]` (references [`pg_authid`](https://www.postgresql.org/docs/current/catalog-pg-authid.html "52.8. pg_authid").`oid`)
 
 An array containing the IDs of the roles in this group
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:50:13.919Z"
 content_hash: "a34e4c1b3551be4a80c32f1e6b6f0c3b51ed05da2f9e4682f4f7841ad6ba62d7"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Rolling sensor graph demo with Redis","→","Rolling sensor graph demo with Redis","→\n      \n        Rolling sensor graph demo with Redis and Node.js","→","Rolling sensor graph demo with Redis and Node.js"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Rolling sensor graph demo with Redis","→","Rolling sensor graph demo with Redis","→\n      \n        Rolling sensor graph demo with Redis and Node.js","→","Rolling sensor graph demo with Redis and Node.js"]
+nav_prev: {"path": "redis/docs/latest/develop/use-cases/leaderboard/nodejs/index.md", "title": "Redis leaderboard with node-redis"}
+nav_next: {"path": "redis/docs/latest/develop/use-cases/session-store/nodejs/index.md", "title": "Redis session store with node-redis"}
 ---
+
 # Rolling sensor graph demo with Redis and Node.js
 
 Build a Redis-backed rolling sensor graph demo in Node.js with node-redis
@@ -188,3 +191,4 @@ This example intentionally keeps the server and UI small so the Redis behavior i
 *   [TS.CREATE command](/docs/latest/commands/ts.create/) - Create a time series with labels and retention
 
 ## On this page
+

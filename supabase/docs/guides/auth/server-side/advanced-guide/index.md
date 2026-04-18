@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:53:46.438Z"
 content_hash: "0be749f0024b3a9f0d19e85b9f17a0dc148ee8eb02daafb2065ecb3d2c9d6695"
 menu_path: ["Auth","Auth","More","More","More","Server-Side Rendering","Server-Side Rendering","Advanced guide","Advanced guide"]
 section_path: ["Auth","Auth","More","More","More","Server-Side Rendering","Server-Side Rendering","Advanced guide","Advanced guide"]
+nav_prev: {"path": "supabase/docs/guides/auth/quickstarts/react/index.md", "title": "Use Supabase Auth with React"}
+nav_next: {"path": "supabase/docs/guides/auth/server-side/creating-a-client/index.md", "title": "Creating a Supabase client for SSR"}
 ---
+
 # 
 
 Advanced guide
@@ -120,3 +123,4 @@ Always initialize the Supabase client inside the request handler, not at module 
 ### Which authentication flows have PKCE support?[#](#which-authentication-flows-have-pkce-support)
 
 At present, PKCE is supported on the Magic Link, OAuth, Sign Up, and Password Recovery routes. These correspond to the `signInWithOtp`, `signInWithOAuth`, `signUp`, and `resetPasswordForEmail` methods on the Supabase client library. When using PKCE with Phone and Email OTPs, there is no behavior change with respect to the implicit flow - an access token will be returned in the body when a request is successful.
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:34:30.263Z"
 content_hash: "0faa70502f1d14ac55767d4cff15cca0e7e67d3ef01dd98df525195bf09a9bfd"
 menu_path: ["Bibliography"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/color.html/index.md", "title": "PostgreSQL: Documentation: 18: Appendix\u00a0N.\u00a0Color Support"}
+nav_next: {"path": "postgres/docs/current/bookindex.html/index.md", "title": "Index"}
 ---
+
 Development Versions: [devel](https://www.postgresql.org/docs/devel/biblio.html "PostgreSQL devel - Bibliography")
 
 Selected references and readings for SQL and PostgreSQL.
@@ -71,3 +74,4 @@ Some white papers and technical reports from the original POSTGRES development t
 \[ston90b\] “[On Rules, Procedures, Caching and Views in Database Systems](https://dsf.berkeley.edu/papers/ERL-M90-36.pdf)”. M. Stonebraker, A. Jhingran, J. Goh, and S. Potamianos. ACM-SIGMOD Conference on Management of Data, June 1990.
 
 \[ston92\] “ [An overview of the Sequoia 2000 project](https://dsf.berkeley.edu/papers/S2K-91-05.pdf) ”. M. Stonebraker. _Digest of Papers COMPCON Spring 1992_. 1992. 383–388.
+

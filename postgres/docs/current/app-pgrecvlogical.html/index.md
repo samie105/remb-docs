@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:36:35.853Z"
 content_hash: "e347f4fc66fac725d738ebc06de39de11ecba0cb6c4a0e11f25933de434f66db"
 menu_path: ["PostgreSQL: Documentation: 18: pg_recvlogical"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/plpython-envar.html/index.md", "title": "PostgreSQL: Documentation: 18: 44.11.\u00a0Environment Variables"}
+nav_next: {"path": "postgres/docs/current/functions-string.html/index.md", "title": "PostgreSQL: Documentation: 18: 9.4.\u00a0String Functions and Operators"}
 ---
+
 pg\_recvlogical — control PostgreSQL logical decoding streams
 
 ## Synopsis
@@ -197,3 +200,4 @@ The environment variable `PG_COLOR` specifies whether to use color in diagnostic
 ## Notes
 
 pg\_recvlogical will preserve group permissions on the received WAL files if group permissions are enabled on the source cluster.
+

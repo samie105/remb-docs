@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:00:22.932Z"
 content_hash: "78e2c04e63c264bc4ea1155500d2ad7efd0092e326ae17880d3438d916737a7f"
 menu_path: ["Platform","Platform","More","More","More","Migrating to Supabase","Migrating to Supabase","Amazon RDS","Amazon RDS"]
 section_path: ["Platform","Platform","More","More","More","Migrating to Supabase","Migrating to Supabase","Amazon RDS","Amazon RDS"]
+nav_prev: {"path": "supabase/docs/guides/platform/manage-your-usage/storage-size/index.md", "title": "Manage Storage size usage"}
+nav_next: {"path": "supabase/docs/guides/platform/migrating-to-supabase/auth0/index.md", "title": "Migrate from Auth0 to Supabase Auth"}
 ---
+
 # 
 
 Migrate from Amazon RDS to Supabase
@@ -63,3 +66,4 @@ Alternatively, you can use [pgloader](https://github.com/dimitri/pgloader), a fl
 ## Enterprise[#](#enterprise)
 
 [Contact us](https://forms.supabase.com/enterprise) if you need more help migrating your project.
+

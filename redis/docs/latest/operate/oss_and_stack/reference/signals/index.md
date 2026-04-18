@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:13:14.528Z"
 content_hash: "c1073535074b359c7a6b07996ad7d588985e22380582a909b7441b7d65fe009a"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Reference","→","Reference","→\n      \n        Redis signal handling","→","Redis signal handling"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Reference","→","Reference","→\n      \n        Redis signal handling","→","Redis signal handling"]
+nav_prev: {"path": "redis/docs/latest/develop/ai/redisvl/user_guide/semantic_router/index.md", "title": "Semantic Routing"}
+nav_next: {"path": "redis/docs/latest/integrate/spring-framework-cache/index.md", "title": "Spring Data Redis"}
 ---
+
 # Redis signal handling
 
 How Redis handles common Unix signals
@@ -76,3 +79,4 @@ This error condition will persist until it becomes possible to create an RDB fil
 Sometimes the user may want to kill the RDB-saving child process without generating an error. Since Redis version 2.6.10, this can be done using the signal `SIGUSR1`. This signal is handled in a special way: it kills the child process like any other signal, but the parent process will not detect this as a critical error and will continue to serve write requests.
 
 ## On this page
+

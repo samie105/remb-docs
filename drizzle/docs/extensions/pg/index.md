@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:48:40.132Z"
 content_hash: "41e95b48f2922426ffe230c238907f49a3bce5efbac288159bbbb151f0f03ad1"
 menu_path: ["PostgreSQL extensions"]
 section_path: []
+nav_prev: {"path": "drizzle/docs/rls/index.md", "title": "Row-Level Security (RLS)"}
+nav_next: {"path": "drizzle/docs/relations/index.md", "title": "Drizzle soft relations"}
 ---
+
 ### `pg_vector`[](#pg_vector)
 
 There is no specific code to create an extension inside the Drizzle schema. We assume that if you are using vector types, indexes, and queries, you have a PostgreSQL database with the pg\_vector extension installed.
@@ -147,7 +150,7 @@ As [PostGIS](https://postgis.net/) website mentions:
 
 > PostGIS extends the capabilities of the PostgreSQL relational database by adding support for storing, indexing, and querying geospatial data.
 
-If you are using the `introspect` or `push` commands with the PostGIS extension and don’t want PostGIS tables to be included, you can use [`extensionsFilters`](https://orm.drizzle.team/docs/drizzle-config-file#extensionsfilters) to ignore all the PostGIS tables
+If you are using the `introspect` or `push` commands with the PostGIS extension and don’t want PostGIS tables to be included, you can use [`extensionsFilters`](drizzle/docs/drizzle-config-file/index.md#extensionsfilters) to ignore all the PostGIS tables
 
 #### Column Types[](#column-types-1)
 
@@ -191,3 +194,4 @@ const table = pgTable('table', {
   index('custom_idx').using('gist', table.geo)
 ])
 ```
+

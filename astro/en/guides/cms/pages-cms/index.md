@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:34:54.125Z"
 content_hash: "a067c14ae7d80ffce94b28143ef4ea7406d0f8b5ffd84791de39f2653968ff32"
 menu_path: ["Pages CMS & Astro"]
 section_path: []
+nav_prev: {"path": "astro/en/guides/cms/optimizely/index.md", "title": "Optimizely CMS & Astro"}
+nav_next: {"path": "astro/en/guides/cms/payload/index.md", "title": "Payload CMS & Astro"}
 ---
+
 # Pages CMS & Astro
 
 [Pages CMS](https://pagescms.org/) is an open source, Git-based content management system for GitHub repositories that can be used to manage content in Astro projects.
@@ -204,3 +207,4 @@ section_path: []
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

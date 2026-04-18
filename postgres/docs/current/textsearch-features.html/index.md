@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:33:45.948Z"
 content_hash: "4f33367f188670336be987505a93401ce80cf50c183e6a028207ded679140e8e"
 menu_path: ["PostgreSQL: Documentation: 18: 12.4. Additional Features"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/pltcl-config.html/index.md", "title": "PostgreSQL: Documentation: 18: 42.11.\u00a0PL/Tcl Configuration"}
+nav_next: {"path": "postgres/docs/current/sql-createdatabase.html/index.md", "title": "PostgreSQL: Documentation: 18: CREATE DATABASE"}
 ---
+
 This section describes additional functions and operators that are useful in connection with text search.
 
 ### 12.4.1. Manipulating Documents [#](#TEXTSEARCH-MANIPULATE-TSVECTOR)
@@ -242,3 +245,4 @@ The same, but counting only word occurrences with weight `A` or `B`:
 SELECT \* FROM ts\_stat('SELECT vector FROM apod', 'ab')
 ORDER BY nentry DESC, ndoc DESC, word
 LIMIT 10;
+

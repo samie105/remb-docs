@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:34:00.480Z"
 content_hash: "d5cc897b0b38473876a57c5282416f554738649e20fee324dedcdadc41a4eb87"
 menu_path: ["AI & Vectors","AI & Vectors","Search","Search","Keyword search","Keyword search"]
 section_path: ["AI & Vectors","AI & Vectors","Search","Search","Keyword search","Keyword search"]
+nav_prev: {"path": "supabase/docs/guides/ai/hybrid-search/index.md", "title": "Hybrid search"}
+nav_next: {"path": "supabase/docs/guides/ai/langchain/index.md", "title": "LangChain"}
 ---
+
 # 
 
 Keyword search
@@ -40,3 +43,4 @@ For an in-depth guide to Postgres' full-text search, including how to store, ind
 
 *   [Semantic search](/docs/guides/ai/semantic-search)
 *   [Hybrid search](/docs/guides/ai/hybrid-search)
+

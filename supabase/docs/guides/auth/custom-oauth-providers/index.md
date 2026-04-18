@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:37:37.636Z"
 content_hash: "23a32bad8b995d2c3b8f093203ba6838cf4268544baae4db031ce511ac8f421a"
 menu_path: ["Auth","Auth","Flows (How-tos)","Flows (How-tos)","Custom OAuth/OIDC Providers","Custom OAuth/OIDC Providers"]
 section_path: ["Auth","Auth","Flows (How-tos)","Flows (How-tos)","Custom OAuth/OIDC Providers","Custom OAuth/OIDC Providers"]
+nav_prev: {"path": "supabase/docs/guides/auth/general-configuration/index.md", "title": "General configuration"}
+nav_next: {"path": "supabase/docs/guides/auth/identities/index.md", "title": "Identities"}
 ---
+
 # 
 
 Custom OAuth/OIDC Providers
@@ -188,3 +191,4 @@ Maximum number of custom providers reached.
 404
 
 No provider exists with the given identifier.
+

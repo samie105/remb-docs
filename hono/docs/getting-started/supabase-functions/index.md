@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:39:02.710Z"
 content_hash: "ee899c6911b76e6be857a13bb9e42fad482549d6b5bcbac404330385510bbf10"
 menu_path: ["Supabase Edge Functions ​"]
 section_path: []
+nav_prev: {"path": "hono/docs/getting-started/google-cloud-run/index.md", "title": "Google Cloud Run \u200b"}
+nav_next: {"path": "hono/docs/getting-started/ali-function-compute/index.md", "title": "Alibaba Cloud Function Compute \u200b"}
 ---
+
 [Supabase](https://supabase.com/) is an open-source alternative to Firebase, offering a suite of tools similar to Firebase's capabilities, including database, authentication, storage, and now, serverless functions.
 
 Supabase Edge Functions are server-side TypeScript functions that are distributed globally, running closer to your users for improved performance. These functions are developed using [Deno](https://deno.com/), which brings several benefits, including improved security and a modern JavaScript/TypeScript runtime.
@@ -111,3 +114,4 @@ supabase functions deploy hello-world
 ```
 
 For more deployment methods, visit the Supabase documentation on [Deploying to Production](https://supabase.com/docs/guides/functions/deploy).
+

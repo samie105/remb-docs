@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:42:35.532Z"
 content_hash: "b7b6e0fd5f1971a15e88ec1495cbaa12475f6f80f885ebd2fef17c7cf05e4259"
 menu_path: ["PostgreSQL: Documentation: 18: 11.4. Indexes and ORDER BY"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/pgstattuple.html/index.md", "title": "PostgreSQL: Documentation: 18: F.33.\u00a0pgstattuple \u2014 obtain tuple-level statistics"}
+nav_next: {"path": "postgres/docs/current/xfunc-pl.html/index.md", "title": "PostgreSQL: Documentation: 18: 36.8.\u00a0Procedural Language Functions"}
 ---
+
 In addition to simply finding the rows to be returned by a query, an index may be able to deliver them in a specific sorted order. This allows a query's `ORDER BY` specification to be honored without a separate sorting step. Of the index types currently supported by PostgreSQL, only B-tree can produce sorted output — the other index types return matching rows in an unspecified, implementation-dependent order.
 
 The planner will consider satisfying an `ORDER BY` specification either by scanning an available index that matches the specification, or by scanning the table in physical order and doing an explicit sort. For a query that requires scanning a large fraction of the table, an explicit sort is likely to be faster than using an index because it requires less disk I/O due to following a sequential access pattern. Indexes are more useful when only a few rows need be fetched. An important special case is `ORDER BY` in combination with `LIMIT` _`n`_: an explicit sort will have to process all the data to identify the first _`n`_ rows, but if there is an index matching the `ORDER BY`, the first _`n`_ rows can be retrieved directly, without scanning the remainder at all.
@@ -26,3 +29,4 @@ An index stored in ascending order with nulls first can satisfy either `ORDER BY
 You might wonder why bother providing all four options, when two options together with the possibility of backward scan would cover all the variants of `ORDER BY`. In single-column indexes the options are indeed redundant, but in multicolumn indexes they can be useful. Consider a two-column index on `(x, y)`: this can satisfy `ORDER BY x, y` if we scan forward, or `ORDER BY x DESC, y DESC` if we scan backward. But it might be that the application frequently needs to use `ORDER BY x ASC, y DESC`. There is no way to get that ordering from a plain index, but it is possible if the index is defined as `(x ASC, y DESC)` or `(x DESC, y ASC)`.
 
 Obviously, indexes with non-default sort orderings are a fairly specialized feature, but sometimes they can produce tremendous speedups for certain queries. Whether it's worth maintaining such an index depends on how often you use queries that require a special sort ordering.
+

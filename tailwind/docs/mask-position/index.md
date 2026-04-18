@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:05:56.600Z"
 content_hash: "1866ca4562be266bd0eca5b6875d88ffcf669e28379c849b2435a0641bfb254d"
 menu_path: ["mask-position"]
 section_path: []
+nav_prev: {"path": "tailwind/docs/mask-origin/index.md", "title": "mask-origin"}
+nav_next: {"path": "tailwind/docs/mask-repeat/index.md", "title": "mask-repeat"}
 ---
+
 Utilities for controlling the position of an element's mask image.
 
 Class
@@ -112,4 +115,5 @@ Prefix a `mask-position` utility with a breakpoint variant like `md:` to only ap
 <div class="mask-center md:mask-top ...">  <!-- ... --></div>
 ```
 
-Learn more about using variants in the [variants documentation](https://tailwindcss.com/docs/hover-focus-and-other-states).
+Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).
+

@@ -9,8 +9,11 @@ last_crawled_at: "2026-04-18T16:51:49.730Z"
 content_hash: "f4c59b2e83836bc673cc71448877164cf62449d9c534976536c1522bc3694419"
 menu_path: ["Function: unstable_localLink()"]
 section_path: []
+nav_prev: {"path": "trpc/docs/typedoc/client/index/functions/unstable_httpBatchStreamLink/index.md", "title": "Function: unstable_httpBatchStreamLink()"}
+nav_next: {"path": "trpc/docs/typedoc/client/index/functions/unstable_httpSubscriptionLink/index.md", "title": "Function: unstable_httpSubscriptionLink()"}
 ---
-> **unstable\_localLink**<`TRouter`\>(`opts`): [`TRPCLink`](https://trpc.io/docs/typedoc/client/index/type-aliases/TRPCLink)<`TRouter`\>
+
+> **unstable\_localLink**<`TRouter`\>(`opts`): [`TRPCLink`](trpc/docs/typedoc/client/index/type-aliases/TRPCLink/index.md)<`TRouter`\>
 
 Defined in: [packages/client/src/links/localLink.ts:40](https://github.com/trpc/trpc/blob/63407c577124e7a2890a7599484d52a0cf025536/packages/client/src/links/localLink.ts#L40)
 
@@ -30,12 +33,13 @@ Type
 
 `opts`
 
-[`LocalLinkOptions`](https://trpc.io/docs/typedoc/client/index/type-aliases/LocalLinkOptions)<`TRouter`\>
+[`LocalLinkOptions`](trpc/docs/typedoc/client/index/type-aliases/LocalLinkOptions/index.md)<`TRouter`\>
 
 ## Returns[​](#returns "Direct link to Returns")
 
-[`TRPCLink`](https://trpc.io/docs/typedoc/client/index/type-aliases/TRPCLink)<`TRouter`\>
+[`TRPCLink`](trpc/docs/typedoc/client/index/type-aliases/TRPCLink/index.md)<`TRouter`\>
 
 ## See[​](#see "Direct link to See")
 
 [https://trpc.io/docs/links/localLink](https://trpc.io/docs/links/localLink)
+

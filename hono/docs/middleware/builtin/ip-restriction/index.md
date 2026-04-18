@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:51:30.356Z"
 content_hash: "c6c0290683fa2126c299e288a8d06e9924ce08882b7001bdd7270b6f3c24656d"
 menu_path: ["IP Restriction Middleware ​"]
 section_path: []
+nav_prev: {"path": "hono/docs/middleware/builtin/etag/index.md", "title": "ETag Middleware \u200b"}
+nav_next: {"path": "hono/docs/middleware/builtin/jsx-renderer/index.md", "title": "JSX Renderer Middleware \u200b"}
 ---
+
 ## IP Restriction Middleware [​](#ip-restriction-middleware)
 
 IP Restriction Middleware is middleware that limits access to resources based on the IP address of the user.
@@ -47,7 +50,7 @@ app.use(
 app.get('/', (c) => c.text('Hello Hono!'))
 ```
 
-Pass the `getConninfo` from the [ConnInfo helper](https://hono.dev/docs/helpers/conninfo) appropriate for your environment as the first argument of `ipRestriction`. For example, for Deno, it would look like this:
+Pass the `getConninfo` from the [ConnInfo helper](hono/docs/helpers/conninfo/index.md) appropriate for your environment as the first argument of `ipRestriction`. For example, for Deno, it would look like this:
 
 ts
 
@@ -101,3 +104,4 @@ app.use(
   )
 )
 ```
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:59:39.073Z"
 content_hash: "d8f44ae68d773bacd895884ac6720c1ac65972c5b874a8a91c2258cbcb7aa7c0"
 menu_path: ["Standard Assertions (@std/assert)"]
 section_path: []
+nav_prev: {"path": "deno/deno/runtime/reference/std/index.md", "title": "Deno Standard Library (@std)"}
+nav_next: {"path": "deno/deno/runtime/reference/std/async/index.md", "title": "@std/async"}
 ---
+
 On this page
 
 *   [Overview](#overview)
@@ -37,3 +40,4 @@ deno add jsr:@std/assert
 ```
 
 [See all symbols in @std/assert on](https://jsr.io/@std/assert/doc)
+

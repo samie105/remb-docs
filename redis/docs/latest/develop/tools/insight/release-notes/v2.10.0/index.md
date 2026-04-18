@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:01:33.319Z"
 content_hash: "8564a5d5a1b87802c45f173337c6ef4f3c97d34218c88819d1c439ebe40c90d1"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Client tools","→","Client tools","→\n      \n        Redis Insight","→","Redis Insight","→\n      \n        Redis Insight release notes","→","Redis Insight release notes","→\n      \n        RedisInsight v2.10.0, September 2022","→","RedisInsight v2.10.0, September 2022"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Client tools","→","Client tools","→\n      \n        Redis Insight","→","Redis Insight","→\n      \n        Redis Insight release notes","→","Redis Insight release notes","→\n      \n        RedisInsight v2.10.0, September 2022","→","RedisInsight v2.10.0, September 2022"]
+nav_prev: {"path": "redis/docs/latest/develop/tools/insight/release-notes/v1.14.0/index.md", "title": "RedisInsight v1.14, may 2023"}
+nav_next: {"path": "redis/docs/latest/develop/use-cases/time-series-dashboard/dotnet/index.md", "title": "Rolling sensor graph demo with Redis and .NET"}
 ---
+
 # RedisInsight v2.10.0, September 2022
 
 RedisInsight v2.10.0
@@ -48,3 +51,4 @@ This is the General Availability (GA) release of RedisInsight 2.10.
 *   [#1101](https://github.com/RedisInsight/RedisInsight/pull/1101) Fixed an issue when key names are not displayed
 
 ## On this page
+

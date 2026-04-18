@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:47:55.364Z"
 content_hash: "f67a720a94a1d1d23e9b95ca4423523e83b47916d082d1b208287e463f76edf6"
 menu_path: ["ESLint Drizzle Plugin"]
 section_path: []
+nav_prev: {"path": "drizzle/docs/prisma/index.md", "title": "Drizzle extension for Prisma"}
+nav_next: {"path": "drizzle/docs/graphql/index.md", "title": "drizzle-graphql"}
 ---
+
 For cases where it’s impossible to perform type checks for specific scenarios, or where it’s possible but error messages would be challenging to understand, we’ve decided to create an ESLint package with recommended rules. This package aims to assist developers in handling crucial scenarios during development
 
 ## Install[](#install)
@@ -203,3 +206,4 @@ const db = drizzle(...)
 // ---> Will be triggered by ESLint Rule
 db.update()
 ```
+

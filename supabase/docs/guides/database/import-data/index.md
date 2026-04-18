@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:41:00.992Z"
 content_hash: "ee6200d37810ed3d2d7396ce69ebb66659f6f7f5c7ee42286b880abe3f975fc4"
 menu_path: ["Database","Database","Fundamentals","Fundamentals","Importing data","Importing data"]
 section_path: ["Database","Database","Fundamentals","Fundamentals","Importing data","Importing data"]
+nav_prev: {"path": "supabase/docs/guides/database/full-text-search/index.md", "title": "Full Text Search"}
+nav_next: {"path": "supabase/docs/guides/database/inspect/index.md", "title": "Debugging and monitoring"}
 ---
+
 # 
 
 Import data into Supabase
@@ -124,3 +127,4 @@ To build an index after the data import:
 ```
 
 Read more about [Managing Indexes in Postgres](/docs/guides/database/postgres/indexes).
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:47:48.704Z"
 content_hash: "05ff2c065937270c69e8ddeec236f6b8e97c2f71954729b42e51de335fc638c8"
 menu_path: ["grid-row"]
 section_path: []
+nav_prev: {"path": "tailwind/docs/grid-template-rows/index.md", "title": "grid-template-rows"}
+nav_next: {"path": "tailwind/docs/grid-auto-flow/index.md", "title": "grid-auto-flow"}
 ---
+
 Flexbox & Grid
 
 Utilities for controlling how elements are sized and placed across grid rows.
@@ -114,4 +117,5 @@ Prefix `grid-row`,`grid-row-start`, and `grid-row-end` utilities with a breakpoi
 <div class="row-span-3 md:row-span-4 ...">  <!-- ... --></div>
 ```
 
-Learn more about using variants in the [variants documentation](https://tailwindcss.com/docs/hover-focus-and-other-states).
+Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).
+

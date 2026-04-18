@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:00:45.275Z"
 content_hash: "8b671ff3850fdd24ed066c77c460f189ddb341890665c1b79a7d60211299e1c7"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis data types","→","Redis data types","→\n      \n        JSON","→","JSON","→\n      \n        Use cases","→","Use cases"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis data types","→","Redis data types","→\n      \n        JSON","→","JSON","→\n      \n        Use cases","→","Use cases"]
+nav_prev: {"path": "redis/docs/latest/integrate/terraform-provider-for-redis-cloud/index.md", "title": "Terraform provider for Redis Cloud"}
+nav_next: {"path": "redis/docs/latest/develop/ai/redisvl/user_guide/index.md", "title": "User Guides"}
 ---
+
 # Use cases
 
 JSON use cases
@@ -29,3 +32,4 @@ JSON allows you to atomically run operations like incrementing a value, adding, 
 **Indexing and querying**
 
 When you store JSON objects as Redis strings, there's no good way to query those objects. On the other hand, storing these objects as JSON using Redis Open Source lets you index and query them. This capability is provided by Redis Search.
+

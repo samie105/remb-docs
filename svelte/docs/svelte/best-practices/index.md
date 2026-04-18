@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:42:25.558Z"
 content_hash: "75f07b4f0ccceed0dff5dccec486b42d4a164f939cb001c500aa8f3caa3b343c"
 menu_path: ["Best practices"]
 section_path: []
+nav_prev: {"path": "svelte/docs/svelte/hydratable/index.md", "title": "Hydratable data"}
+nav_next: {"path": "svelte/docs/svelte/testing/index.md", "title": "Testing"}
 ---
+
 This document outlines some best practices that will help you write fast, robust Svelte apps. It is also available as a `svelte-core-bestpractices` skill for your agents.
 
 ## $state[](#$state)
@@ -204,3 +207,4 @@ Always use runes mode for new code, and avoid features that have more modern rep
 previous next
 
 [Hydratable data](/docs/svelte/hydratable) [Testing](/docs/svelte/testing)
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:44:35.750Z"
 content_hash: "558f2216b1e073e49cb95688c70d8f978005fb705a986b37326aea7432cf8b3d"
 menu_path: ["Edge Functions","Edge Functions","Configuration","Configuration","Function Configuration","Function Configuration"]
 section_path: ["Edge Functions","Edge Functions","Configuration","Configuration","Function Configuration","Function Configuration"]
+nav_prev: {"path": "supabase/docs/guides/functions/error-handling/index.md", "title": "Error Handling"}
+nav_next: {"path": "supabase/docs/guides/functions/http-methods/index.md", "title": "Routing"}
 ---
+
 # 
 
 Function Configuration
@@ -75,3 +78,4 @@ Save your Function as a JavaScript file (e.g. `index.js`) update the `supabase/c
 ```
 
 You can use any `.ts`, `.js`, `.tsx`, `.jsx` or `.mjs` file as the entrypoint for a Function.
+

@@ -9,15 +9,9 @@ last_crawled_at: "2026-04-18T17:02:09.019Z"
 content_hash: "659d31aeec98489b8d81291d87c87775d1f077c9eefabf2fa2bf2a06405d8e28"
 menu_path: ["background-size"]
 section_path: []
+nav_prev: {"path": "tailwind/docs/background-repeat/index.md", "title": "background-repeat"}
+nav_next: {"path": "tailwind/docs/border-radius/index.md", "title": "border-radius"}
 ---
-[](/)
-
-[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
-
-1.  Backgrounds
-2.  background-size
-
-Backgrounds
 
 # background-size
 
@@ -120,3 +114,4 @@ Short, tactical video lessons from the creator of Tailwind CSS, delivered direct
 [Get the free course](/build-uis-that-dont-suck)
 
 Copyright © 2026 Tailwind Labs Inc.·[Trademark Policy](/brand)
+

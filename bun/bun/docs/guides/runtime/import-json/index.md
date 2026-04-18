@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:52:44.563Z"
 content_hash: "2cf8555dbaa26b260adf0a94b736c371512e2c6460b9d9f7d8be1700280afe5e"
 menu_path: ["Import a JSON file"]
 section_path: []
+nav_prev: {"path": "bun/bun/docs/guides/runtime/import-html/index.md", "title": "Import a HTML file as text"}
+nav_next: {"path": "bun/bun/docs/guides/runtime/import-json5/index.md", "title": "Import a JSON5 file"}
 ---
+
 [Skip to main content](#content-area)
 
 [Bun home page![light logo](https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z_zHyy/logo/logo-with-wordmark-dark.svg?fit=max&auto=format&n=JUhaF6Mf68z_zHyy&q=85&s=3f55cd23822028e40658b192c927f3e4)![dark logo](https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z_zHyy/logo/logo-with-wordmark-light.svg?fit=max&auto=format&n=JUhaF6Mf68z_zHyy&q=85&s=8a0c5928d9dc3631f0d33e17c257e2ec)](/docs)
@@ -96,3 +99,4 @@ Import a TOML file
 Next
 
 ](/docs/guides/runtime/import-toml)
+

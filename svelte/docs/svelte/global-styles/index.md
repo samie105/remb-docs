@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:39:22.016Z"
 content_hash: "b0c4c0db9abd4617d781e7e80ab11e34bf27557b1be535118140b777f5897003"
 menu_path: ["Global styles"]
 section_path: []
+nav_prev: {"path": "svelte/docs/svelte/scoped-styles/index.md", "title": "Scoped styles"}
+nav_next: {"path": "svelte/docs/svelte/custom-properties/index.md", "title": "Custom properties"}
 ---
+
 ## :global(...)[](#:global\(\))
 
 To apply styles to a single selector globally, use the `:global(...)` modifier:
@@ -77,3 +80,4 @@ To apply styles to a group of selectors globally, create a `:global {...}` block
 previous next
 
 [Scoped styles](/docs/svelte/scoped-styles) [Custom properties](/docs/svelte/custom-properties)
+

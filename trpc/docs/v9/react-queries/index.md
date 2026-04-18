@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:43:32.460Z"
 content_hash: "a435dece9ac289093d3f2384f70bfc292e1dd0e8ba5826680a47b3d5459974b3"
 menu_path: ["useQuery()"]
 section_path: []
+nav_prev: {"path": "trpc/docs/v9/react/index.md", "title": "Usage with React"}
+nav_next: {"path": "trpc/docs/v9/router/index.md", "title": "Define Router"}
 ---
+
 > The hooks provided by `@trpc/react` are a thin wrapper around React Query. For in-depth information about options and usage patterns, refer to their docs on [Queries](https://tanstack.com/query/v3/docs/react/guides/queries).
 
 tsx
@@ -75,3 +78,4 @@ tsx
   `);`
 
 `}`
+

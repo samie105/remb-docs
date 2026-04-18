@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:55:40.905Z"
 content_hash: "8fcc6a4560fccfa83d59285cd3213ceaa5d0e2d75f5903162fbf4d5af2b35314"
 menu_path: ["Self-relations"]
 section_path: []
+nav_prev: {"path": "prisma/docs/orm/prisma-schema/data-model/relations/referential-actions/index.md", "title": "Referential actions"}
+nav_next: {"path": "prisma/docs/orm/prisma-schema/data-model/relations/relation-mode/index.md", "title": "Relation mode"}
 ---
+
 Data Model
 
 Relations
@@ -107,3 +110,4 @@ model User {
 ```
 
 [Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/prisma-schema/data-model/relations/self-relations.mdx)
+

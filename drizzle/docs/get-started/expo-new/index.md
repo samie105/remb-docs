@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:54:34.302Z"
 content_hash: "5236e116f66e7ce6730419d924b7c0f1362994505f648ac0c4a586b41a87d227"
 menu_path: ["Get Started with Drizzle and Expo"]
 section_path: []
+nav_prev: {"path": "drizzle/docs/get-started/expo-existing/index.md", "title": "Get Started with Drizzle and Expo in existing project"}
+nav_next: {"path": "drizzle/docs/get-started/effect-postgresql-new/index.md", "title": "Get Started with Drizzle and Effect PostgreSQL"}
 ---
+
 ## Get Started with Drizzle and Expo
 
 This guide assumes familiarity with:
@@ -150,7 +153,7 @@ export const usersTable = sqliteTable("users_table", {
 
 #### Step 5 - Setup Drizzle config file[](#step-5---setup-drizzle-config-file)
 
-**Drizzle config** - a configuration file that is used by [Drizzle Kit](https://orm.drizzle.team/docs/kit-overview) and contains all the information about your database connection, migration folder and schema files.
+**Drizzle config** - a configuration file that is used by [Drizzle Kit](drizzle/docs/kit-overview/index.md) and contains all the information about your database connection, migration folder and schema files.
 
 Create a `drizzle.config.ts` file in the root of your project and add the following content:
 
@@ -307,3 +310,4 @@ pnpm expo run:ios
 ```
 bun expo run:ios
 ```
+

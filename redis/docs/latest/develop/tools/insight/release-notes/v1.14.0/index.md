@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:01:22.276Z"
 content_hash: "51579e831d9c60e311e959272f3d223cab73f55fc49b24949bde5feded01f570"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Client tools","→","Client tools","→\n      \n        Redis Insight","→","Redis Insight","→\n      \n        Redis Insight release notes","→","Redis Insight release notes","→\n      \n        RedisInsight v1.14, may 2023","→","RedisInsight v1.14, may 2023"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Client tools","→","Client tools","→\n      \n        Redis Insight","→","Redis Insight","→\n      \n        Redis Insight release notes","→","Redis Insight release notes","→\n      \n        RedisInsight v1.14, may 2023","→","RedisInsight v1.14, may 2023"]
+nav_prev: {"path": "redis/docs/latest/operate/rc/databases/rdi/view-edit/index.md", "title": "View and edit data pipeline"}
+nav_next: {"path": "redis/docs/latest/develop/tools/insight/release-notes/v2.10.0/index.md", "title": "RedisInsight v2.10.0, September 2022"}
 ---
+
 # RedisInsight v1.14, may 2023
 
 RedisInsight v1.14.0
@@ -36,3 +39,4 @@ This is the maintenance release of RedisInsight 1.14 (v1.14.0).
 *   Added support for `setlistpack` and `streamlistpack3` Redis 7 encoding types parsing.
 
 ## On this page
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:38:45.575Z"
 content_hash: "d8a09baeede50867e0377a012edb5273299bd3b6d37e81150caca5d1971b263e"
 menu_path: ["@astrojs/\n\t\t\t\t\tcloudflare"]
 section_path: []
+nav_prev: {"path": "astro/en/guides/integrations-guide/vue/index.md", "title": "@astrojs/\n\t\t\t\t\tvue"}
+nav_next: {"path": "astro/en/guides/integrations-guide/node/index.md", "title": "@astrojs/\n\t\t\t\t\tnode"}
 ---
+
 # @astrojs/ cloudflare
 
 v13.1.10 [GitHub](https://github.com/withastro/astro/tree/main/packages/integrations/cloudflare/) [npm](https://www.npmjs.com/package/@astrojs/cloudflare) [Changelog](https://github.com/withastro/astro/tree/main/packages/integrations/cloudflare/CHANGELOG.md)
@@ -609,3 +612,4 @@ Learn how to update your [Cloudflare environments](https://developers.cloudflare
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

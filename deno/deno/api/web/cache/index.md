@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:12:01.992Z"
 content_hash: "8cf48ea3da2881ffdc12715a265e3b4d5215ffca20e3bfec6c439c588d68c1dc"
 menu_path: ["Cache - Web documentation"]
 section_path: []
+nav_prev: {"path": "deno/deno/api/web/index.md", "title": "Web Platform APIs"}
+nav_next: {"path": "deno/deno/api/web/canvas/index.md", "title": "Canvas - Web documentation"}
 ---
+
 ### Interfaces [#](#Interfaces)
 
 I
@@ -55,3 +58,4 @@ v
 [caches](./././~/caches "caches")
 
 No documentation available
+

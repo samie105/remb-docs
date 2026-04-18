@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:13:10.119Z"
 content_hash: "15ae6269b2c8adeeabc236afbd16ecb6e1189c8f747bf85e3426c314b1ede56e"
 menu_path: ["perspective-origin"]
 section_path: []
+nav_prev: {"path": "tailwind/docs/perspective/index.md", "title": "perspective"}
+nav_next: {"path": "tailwind/docs/rotate/index.md", "title": "rotate"}
 ---
+
 Utilities for controlling an element's perspective origin when placed in 3D space.
 
 Class
@@ -122,4 +125,5 @@ Prefix a `perspective-origin` utility with a breakpoint variant like `md:` to on
 <div class="perspective-origin-center md:perspective-origin-bottom-left ...">  <!-- ... --></div>
 ```
 
-Learn more about using variants in the [variants documentation](https://tailwindcss.com/docs/hover-focus-and-other-states).
+Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).
+

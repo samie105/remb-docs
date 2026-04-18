@@ -9,15 +9,9 @@ last_crawled_at: "2026-04-18T16:55:27.095Z"
 content_hash: "c7e96978ce84bc9fbf46f3f088f89d97aa2f5220e32ab41d84440dcfebd6db0c"
 menu_path: ["font-variant-numeric"]
 section_path: []
+nav_prev: {"path": "tailwind/docs/font-stretch/index.md", "title": "font-stretch"}
+nav_next: {"path": "tailwind/docs/font-feature-settings/index.md", "title": "font-feature-settings"}
 ---
-[](/)
-
-[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
-
-1.  Typography
-2.  font-variant-numeric
-
-Typography
 
 # font-variant-numeric
 
@@ -218,3 +212,4 @@ Make your ideas look awesome, without relying on a designer.
 ](https://www.refactoringui.com/?ref=sidebar)
 
 Copyright © 2026 Tailwind Labs Inc.·[Trademark Policy](/brand)
+

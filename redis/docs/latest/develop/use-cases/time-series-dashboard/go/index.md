@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:58:35.770Z"
 content_hash: "d2f6897a8faa35d0d1cf907eeebf5c76b534a0adc6caaa6e524b879ac9b8dd84"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Rolling sensor graph demo with Redis","→","Rolling sensor graph demo with Redis","→\n      \n        Rolling sensor graph demo with Go","→","Rolling sensor graph demo with Go"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Rolling sensor graph demo with Redis","→","Rolling sensor graph demo with Redis","→\n      \n        Rolling sensor graph demo with Go","→","Rolling sensor graph demo with Go"]
+nav_prev: {"path": "redis/docs/latest/develop/ai/search-and-query/query/geo-spatial/index.md", "title": "Geospatial queries"}
+nav_next: {"path": "redis/docs/latest/operate/oss_and_stack/stack-with-enterprise/install/index.md", "title": "Install and upgrade modules"}
 ---
+
 # Rolling sensor graph demo with Go
 
 Build a Redis-backed rolling sensor graph demo in Go with go-redis
@@ -165,3 +168,4 @@ This example intentionally keeps the server and UI small so the Redis behavior i
 *   [TS.CREATE command](/docs/latest/commands/ts.create/) - Create a time series with labels and retention
 
 ## On this page
+

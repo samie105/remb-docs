@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:54:22.233Z"
 content_hash: "42ef2b378d03d0c0e6669fdea8066426f9e088080e5066a77990531452d5e5e4"
 menu_path: ["deno lint"]
 section_path: []
+nav_prev: {"path": "deno/deno/runtime/reference/cli/jupyter/index.md", "title": "Jupyter Kernel for Deno"}
+nav_next: {"path": "deno/deno/runtime/reference/cli/outdated/index.md", "title": "deno outdated"}
 ---
+
 On this page
 
 *   [Basic usage](#basic-usage)
@@ -370,3 +373,4 @@ Watch for file changes and restart process automatically. Only local files from 
 `--watch-exclude`<FILES>optional
 
 Exclude provided files/patterns from watch mode.
+

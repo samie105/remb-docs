@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:09:43.885Z"
 content_hash: "1e59fde25683bc2d545b3094394eafcf34aae63ec355ff1014ea959325fbc3ee"
 menu_path: ["HTTP Server - Deno documentation"]
 section_path: []
+nav_prev: {"path": "deno/deno/api/deno/gpu/index.md", "title": "GPU - Deno documentation"}
+nav_next: {"path": "deno/deno/api/deno/io/index.md", "title": "I/O - Deno documentation"}
 ---
+
 ### Functions [#](#Functions)
 
 f
@@ -106,3 +109,4 @@ T
 [Deno.ServeHandler](./././~/Deno.ServeHandler "Deno.ServeHandler")
 
 A handler for HTTP requests. Consumes a request and returns a response.
+

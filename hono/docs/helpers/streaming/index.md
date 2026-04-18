@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:48:50.943Z"
 content_hash: "e2153220fe6d08fd1c138dc909bca81f9f9f49425fbfd024d27ab8d40a414d6a"
 menu_path: ["Streaming Helper ​"]
 section_path: []
+nav_prev: {"path": "hono/docs/helpers/ssg/index.md", "title": "SSG Helper \u200b"}
+nav_next: {"path": "hono/docs/helpers/testing/index.md", "title": "Testing Helper \u200b"}
 ---
+
 The Streaming Helper provides methods for streaming responses.
 
 ## Import [​](#import)
@@ -138,3 +141,4 @@ WARNING
 If the callback function of the streaming helper throws an error, the `onError` event of Hono will not be triggered.
 
 `onError` is a hook to handle errors before the response is sent and overwrite the response. However, when the callback function is executed, the stream has already started, so it cannot be overwritten.
+

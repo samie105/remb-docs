@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:42:36.597Z"
 content_hash: "4e5ac6d34d025300a13ef9968296f998938519c54c0d7602e43764e43519c3c9"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Cloud","→","Redis Cloud","→\n      \n        Manage databases","→","Manage databases","→\n      \n        Data Integration","→","Data Integration","→\n      \n        RDI on Redis Cloud quick start","→","RDI on Redis Cloud quick start"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Cloud","→","Redis Cloud","→\n      \n        Manage databases","→","Manage databases","→\n      \n        Data Integration","→","Data Integration","→\n      \n        RDI on Redis Cloud quick start","→","RDI on Redis Cloud quick start"]
+nav_prev: {"path": "redis/docs/latest/integrate/redis-data-integration/data-pipelines/prepare-dbs/oracle/index.md", "title": "Prepare Oracle and Oracle RAC for RDI"}
+nav_next: {"path": "redis/docs/latest/operate/oss_and_stack/stack-with-enterprise/deprecated-features/triggers-and-functions/quick_start_ri/index.md", "title": "Quick start using Redis Insight"}
 ---
+
 # RDI on Redis Cloud quick start
 
 Learn how to create a data pipeline between a PostgreSQL source database created with Terraform and a Redis Cloud target database.
@@ -146,3 +149,4 @@ terraform destroy -var-file=example.tfvars
 ```
 
 ## On this page
+

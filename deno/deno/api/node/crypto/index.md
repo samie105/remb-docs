@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:34:25.598Z"
 content_hash: "d10eacaf1ea94d2670c99e93c0b14dca2e2e143f269017c3f19413f7194848d1"
 menu_path: ["crypto - Node documentation"]
 section_path: []
+nav_prev: {"path": "deno/deno/api/node/console/index.md", "title": "console - Node documentation"}
+nav_next: {"path": "deno/deno/api/node/dgram/index.md", "title": "dgram - Node documentation"}
 ---
+
 ### Usage in Deno
 
 ```typescript
@@ -1876,3 +1879,4 @@ v
 [fips](.././crypto/~/fips "fips")
 
 No documentation available
+

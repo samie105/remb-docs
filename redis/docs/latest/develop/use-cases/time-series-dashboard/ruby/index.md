@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:11:11.599Z"
 content_hash: "3a614308f8462271bc9b7031f97a06a18cbcd2a5caf078061559ac82ed77a69f"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Rolling sensor graph demo with Redis","→","Rolling sensor graph demo with Redis","→\n      \n        Rolling sensor graph demo with Redis and Ruby","→","Rolling sensor graph demo with Redis and Ruby"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Rolling sensor graph demo with Redis","→","Rolling sensor graph demo with Redis","→\n      \n        Rolling sensor graph demo with Redis and Ruby","→","Rolling sensor graph demo with Redis and Ruby"]
+nav_prev: {"path": "redis/docs/latest/operate/oss_and_stack/stack-with-enterprise/deprecated-features/triggers-and-functions/concepts/resp_js_conversion/index.md", "title": "RESP & JavaScript"}
+nav_next: {"path": "redis/docs/latest/develop/use-cases/rate-limiter/ruby/index.md", "title": "Token bucket rate limiter with Redis and Ruby"}
 ---
+
 # Rolling sensor graph demo with Redis and Ruby
 
 Build a Redis-backed rolling sensor graph demo in Ruby with redis-rb
@@ -166,3 +169,4 @@ This example intentionally keeps the server and UI small so the Redis behavior i
 *   [TS.CREATE command](/docs/latest/commands/ts.create/) - Create a time series with labels and retention
 
 ## On this page
+

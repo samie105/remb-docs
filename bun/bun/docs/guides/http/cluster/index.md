@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:47:38.374Z"
 content_hash: "741a552d80d5e5f0bcfe009bb71d8447e0e9536a52fce5473a22b474304f642b"
 menu_path: ["Start a cluster of HTTP servers"]
 section_path: []
+nav_prev: {"path": "bun/bun/docs/guides/html-rewriter/extract-links/index.md", "title": "Extract links from a webpage using HTMLRewriter"}
+nav_next: {"path": "bun/bun/docs/guides/http/fetch/index.md", "title": "Send an HTTP request using fetch"}
 ---
+
 To run multiple HTTP servers concurrently, use the `reusePort` option in `Bun.serve()` which shares the same port across multiple processes. This automatically load balances incoming requests across multiple instances of Bun.
 
 ![https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z\_zHyy/icons/typescript.svg?fit=max&auto=format&n=JUhaF6Mf68z\_zHyy&q=85&s=7ac549adaea8d5487d8fbd58cc3ea35b](https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z_zHyy/icons/typescript.svg?fit=max&auto=format&n=JUhaF6Mf68z_zHyy&q=85&s=7ac549adaea8d5487d8fbd58cc3ea35b)server.ts
@@ -67,3 +70,4 @@ process.on("exit", kill);
 * * *
 
 Bun has also implemented the `node:cluster` module, but this is a faster and more limited alternative.
+

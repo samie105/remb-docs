@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:14:08.825Z"
 content_hash: "9c8747d9b110bf988c6407f59eedea49ac2f2fa0590a3f2d3b601b2cd749bffe"
 menu_path: ["Performance - Web documentation"]
 section_path: []
+nav_prev: {"path": "deno/deno/api/web/messaging/index.md", "title": "Messaging - Web documentation"}
+nav_next: {"path": "deno/deno/api/web/platform/index.md", "title": "Platform - Web documentation"}
 ---
+
 ### Interfaces [#](#Interfaces)
 
 I
@@ -98,3 +101,4 @@ v
 [performance](./././~/performance "performance")
 
 No documentation available
+

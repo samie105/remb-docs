@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:41:27.552Z"
 content_hash: "11c66367f58eacf92fd582f17b1fc9c37db1d54755952aa2d4454b87b6ff22e0"
 menu_path: ["SQL Server"]
 section_path: []
+nav_prev: {"path": "prisma/docs/orm/core-concepts/supported-databases/mongodb/index.md", "title": "MongoDB"}
+nav_next: {"path": "prisma/docs/orm/core-concepts/supported-databases/sqlite/index.md", "title": "SQLite"}
 ---
+
 Supported databases
 
 Use Prisma ORM with Microsoft SQL Server databases
@@ -37,7 +40,7 @@ export default defineConfig({
 });
 ```
 
-Use the `node-mssql` JavaScript database driver via [driver adapters](https://www.prisma.io/docs/orm/core-concepts/supported-databases/database-drivers#driver-adapters):
+Use the `node-mssql` JavaScript database driver via [driver adapters](prisma/docs/orm/core-concepts/supported-databases/database-drivers/index.md#driver-adapters):
 
 ```
 import { PrismaMssql } from "@prisma/adapter-mssql";
@@ -199,7 +202,7 @@ Not supported
 
 `VARBINARY(MAX)`
 
-See [full type mapping reference](https://www.prisma.io/docs/orm/reference/prisma-schema-reference#model-field-scalar-types) for complete details.
+See [full type mapping reference](prisma/docs/orm/reference/prisma-schema-reference/index.md#model-field-scalar-types) for complete details.
 
 **UNIQUE constraints:**
 
@@ -207,7 +210,7 @@ SQL Server [allows only one `NULL` value per `UNIQUE` constraint](https://learn.
 
 **Cyclic references:**
 
-With circular model references, you must use [`NoAction` referential actions](https://www.prisma.io/docs/orm/prisma-schema/data-model/relations/referential-actions#special-rules-for-sql-server-and-mongodb) to avoid validation errors.
+With circular model references, you must use [`NoAction` referential actions](prisma/docs/orm/prisma-schema/data-model/relations/referential-actions/index.md#special-rules-for-sql-server-and-mongodb) to avoid validation errors.
 
 **Raw queries with `VARCHAR` columns:**
 
@@ -262,3 +265,4 @@ docker run --name sql_container \
 Connect with: Username `sa`, password `myPassword`, port `1433`
 
 [Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/core-concepts/supported-databases/sql-server.mdx)
+

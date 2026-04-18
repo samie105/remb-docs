@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:19:05.397Z"
 content_hash: "4659759cf1bad6d74adb74ceb44bc3de678ec9c91a55771737ac246369bd68df"
 menu_path: ["forced-color-adjust"]
 section_path: []
+nav_prev: {"path": "tailwind/docs/stroke-width/index.md", "title": "stroke-width"}
+nav_next: {"path": "tailwind/docs/installation/using-vite/index.md", "title": "Get started with Tailwind CSS"}
 ---
+
 Utilities for opting in and out of forced colors.
 
 Class
@@ -42,7 +45,7 @@ $35
 <form>  <img src="/img/shirt.jpg" />  <div>    <h3>Basic Tee</h3>    <h3>$35</h3>    <fieldset>      <legend class="sr-only">Choose a color</legend>      <div class="forced-color-adjust-none ...">        <label>          <input class="sr-only" type="radio" name="color-choice" value="White" />          <span class="sr-only">White</span>          <span class="size-6 rounded-full border border-black/10 bg-white"></span>        </label>        <!-- ... -->      </div>    </fieldset>  </div></form>
 ```
 
-You can also use the [forced colors variant](https://tailwindcss.com/docs/hover-focus-and-other-states#forced-colors) to conditionally add styles when the user has enabled a forced color mode.
+You can also use the [forced colors variant](tailwind/docs/hover-focus-and-other-states/index.md#forced-colors) to conditionally add styles when the user has enabled a forced color mode.
 
 ### [Restoring forced colors](#restoring-forced-colors)
 
@@ -62,4 +65,5 @@ Prefix a `forced-color-adjust` utility with a breakpoint variant like `md:` to o
 <div class="forced-color-adjust-none md:forced-color-adjust-auto ...">  <!-- ... --></div>
 ```
 
-Learn more about using variants in the [variants documentation](https://tailwindcss.com/docs/hover-focus-and-other-states).
+Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).
+

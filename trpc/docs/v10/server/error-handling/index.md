@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:39:26.188Z"
 content_hash: "90528132e5003b9b517bd063591b0c5ec846c5838e87c5d8483db1ce40a2adf1"
 menu_path: ["Error Handling"]
 section_path: []
+nav_prev: {"path": "trpc/docs/v10/server/error-formatting/index.md", "title": "Error Formatting"}
+nav_next: {"path": "trpc/docs/v10/server/merging-routers/index.md", "title": "Merging Routers"}
 ---
+
 Whenever an error occurs in a procedure, tRPC responds to the client with an object that includes an "error" property. This property contains all the information that you need to handle the error in the client.
 
 Here's an example error response caused by a bad request input:
@@ -271,3 +274,4 @@ ts
   `req: BaseRequest; // request object`
 
 `}`
+

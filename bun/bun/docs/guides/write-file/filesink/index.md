@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:56:50.574Z"
 content_hash: "e1b2b25dfad5586259ca10dcd900e11d086e0437ed87fe78206fddd0bbe78cea"
 menu_path: ["Write a file incrementally"]
 section_path: []
+nav_prev: {"path": "bun/bun/docs/guides/write-file/file-cp/index.md", "title": "Copy a file to another location"}
+nav_next: {"path": "bun/bun/docs/guides/write-file/response/index.md", "title": "Write a Response to a file"}
 ---
+
 [Skip to main content](#content-area)
 
 [Bun home page![light logo](https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z_zHyy/logo/logo-with-wordmark-dark.svg?fit=max&auto=format&n=JUhaF6Mf68z_zHyy&q=85&s=3f55cd23822028e40658b192c927f3e4)![dark logo](https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z_zHyy/logo/logo-with-wordmark-light.svg?fit=max&auto=format&n=JUhaF6Mf68z_zHyy&q=85&s=8a0c5928d9dc3631f0d33e17c257e2ec)](/docs)
@@ -96,3 +99,4 @@ Write a ReadableStream to a file
 Next
 
 ](/docs/guides/write-file/stream)
+

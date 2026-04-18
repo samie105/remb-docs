@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:54:58.818Z"
 content_hash: "f520690c5dd952881b0d404447273c19401120a527fdc61503e80af12994a5f9"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Rolling sensor graph demo with Redis","→","Rolling sensor graph demo with Redis","→\n      \n        Rolling sensor graph demo with Java and Jedis","→","Rolling sensor graph demo with Java and Jedis"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Rolling sensor graph demo with Redis","→","Rolling sensor graph demo with Redis","→\n      \n        Rolling sensor graph demo with Java and Jedis","→","Rolling sensor graph demo with Java and Jedis"]
+nav_prev: {"path": "redis/docs/latest/develop/ai/search-and-query/indexing/index.md", "title": "Indexing"}
+nav_next: {"path": "redis/docs/latest/operate/redisinsight/install/index.md", "title": "Install Redis Insight"}
 ---
+
 # Rolling sensor graph demo with Java and Jedis
 
 Build a Redis-backed rolling sensor graph demo in Java with Jedis
@@ -171,3 +174,4 @@ This example intentionally keeps the server and UI small so the Redis behavior i
 *   [TS.CREATE command](/docs/latest/commands/ts.create/) - Create a time series with labels and retention
 
 ## On this page
+

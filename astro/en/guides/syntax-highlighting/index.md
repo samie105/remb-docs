@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:41:39.221Z"
 content_hash: "aeebdd29826633a0a3bb1d65664067d2ec06f8ef691b65cf0673c090a0fd5c81"
 menu_path: ["Syntax Highlighting"]
 section_path: []
+nav_prev: {"path": "astro/en/guides/fonts/index.md", "title": "Using custom fonts"}
+nav_next: {"path": "astro/en/guides/client-side-scripts/index.md", "title": "Scripts and event handling"}
 ---
+
 # Syntax Highlighting
 
 Astro comes with built-in support for [Shiki](https://shiki.style/) and [Prism](https://prismjs.com/). This provides syntax highlighting for:
@@ -187,3 +190,4 @@ If you opt to use Prism (either by configuring `markdown.syntaxHighlight: 'prism
 You can also visit the [list of languages supported by Prism](https://prismjs.com/#supported-languages) for options and usage.
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

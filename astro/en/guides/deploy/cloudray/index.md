@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:36:43.237Z"
 content_hash: "4bd819dedbe98a48f930c62834fc3daa98fa5d7f5bd9f5e73645cd8c806762bc"
 menu_path: ["Deploy your Astro Site with CloudRay"]
 section_path: []
+nav_prev: {"path": "astro/en/guides/deploy/cloudflare/index.md", "title": "Deploy your Astro Site to Cloudflare"}
+nav_next: {"path": "astro/en/guides/deploy/deno/index.md", "title": "Deploy your Astro Site with Deno"}
 ---
+
 # Deploy your Astro Site with CloudRay
 
 You can deploy your Astro project using [CloudRay](https://cloudray.io), a centralized platform that helps you manage your servers, organize Bash scripts, and automate deployment tasks across virtual machines and cloud servers.
@@ -174,3 +177,4 @@ Check out [the Astro guide in CloudRay’s docs](https://cloudray.io/articles/ho
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

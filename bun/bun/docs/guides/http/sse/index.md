@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:48:31.267Z"
 content_hash: "faf4aa96a75cb9dced1f6938f3663cda675d16f6f350f7b9c135679305257fa7"
 menu_path: ["Server-Sent Events (SSE) with Bun"]
 section_path: []
+nav_prev: {"path": "bun/bun/docs/guides/http/simple/index.md", "title": "Write a simple HTTP server"}
+nav_next: {"path": "bun/bun/docs/guides/http/stream-file/index.md", "title": "Stream a file as an HTTP Response"}
 ---
+
 [Server-Sent Events](https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events) let you push a stream of text events to the browser over a single HTTP response. The client consumes them via [`EventSource`](https://developer.mozilla.org/en-US/docs/Web/API/EventSource). In Bun, you can implement an SSE endpoint by returning a `Response` whose body is a streaming source and setting the `Content-Type` header to `text/event-stream`.
 
 ## Using an async generator
@@ -91,3 +94,4 @@ Bun.serve({
   },
 });
 ```
+

@@ -9,12 +9,15 @@ last_crawled_at: "2026-04-18T16:44:53.448Z"
 content_hash: "29d613169e361c7cdd92b7a6a2cb6cf34cfcaa69fa6a46d0762d61f2738a946f"
 menu_path: ["HTTP Batch Stream Link"]
 section_path: []
+nav_prev: {"path": "trpc/docs/client/links/httpLink/index.md", "title": "HTTP Link"}
+nav_next: {"path": "trpc/docs/client/links/httpSubscriptionLink/index.md", "title": "HTTP Subscription Link"}
 ---
-`httpBatchStreamLink` is a [**terminating link**](https://trpc.io/docs/client/links#the-terminating-link) that batches an array of individual tRPC operations into a single HTTP request that's sent to a single tRPC procedure (equivalent to [`httpBatchLink`](https://trpc.io/docs/client/links/httpBatchLink)), but doesn't wait for all the responses of the batch to be ready and streams the responses as soon as any data is available.
+
+`httpBatchStreamLink` is a [**terminating link**](trpc/docs/client/links/index.md#the-terminating-link) that batches an array of individual tRPC operations into a single HTTP request that's sent to a single tRPC procedure (equivalent to [`httpBatchLink`](trpc/docs/client/links/httpBatchLink/index.md)), but doesn't wait for all the responses of the batch to be ready and streams the responses as soon as any data is available.
 
 ## Options[​](#options "Direct link to Options")
 
-Options are identical to [`httpBatchLink options`](https://trpc.io/docs/client/links/httpBatchLink#options), with the following addition:
+Options are identical to [`httpBatchLink options`](trpc/docs/client/links/httpBatchLink/index.md#options), with the following addition:
 
 Option
 
@@ -34,11 +37,11 @@ Which header to use to signal the server that the client wants a streaming respo
 
 ## Usage[​](#usage "Direct link to Usage")
 
-> All usage and options are identical to [`httpBatchLink`](https://trpc.io/docs/client/links/httpBatchLink).
+> All usage and options are identical to [`httpBatchLink`](trpc/docs/client/links/httpBatchLink/index.md).
 
 note
 
-If you require the ability to change/set response headers (which includes cookies) from within your procedures, make sure to use `httpBatchLink` instead! This is due to the fact that `httpBatchStreamLink` does not support setting headers once the stream has begun. [Read more](https://trpc.io/docs/client/links/httpBatchLink).
+If you require the ability to change/set response headers (which includes cookies) from within your procedures, make sure to use `httpBatchLink` instead! This is due to the fact that `httpBatchStreamLink` does not support setting headers once the stream has begun. [Read more](trpc/docs/client/links/httpBatchLink/index.md).
 
 You can import and add the `httpBatchStreamLink` to the `links` array as such:
 
@@ -187,7 +190,7 @@ ts
 
 AWS Lambda
 
-`httpBatchStreamLink` only supported on AWS Lambda when your [infrastructure is set up](https://trpc.io/docs/server/adapters/aws-lambda#aws-lambda-response-streaming-adapter) for streaming responses. If not this Link will simply behave like a regular `httpBatchLink`.
+`httpBatchStreamLink` only supported on AWS Lambda when your [infrastructure is set up](trpc/docs/server/adapters/aws-lambda/index.md#aws-lambda-response-streaming-adapter) for streaming responses. If not this Link will simply behave like a regular `httpBatchLink`.
 
 ## Reference[​](#reference "Direct link to Reference")
 
@@ -210,3 +213,4 @@ ts
   `},`
 
 `});`
+

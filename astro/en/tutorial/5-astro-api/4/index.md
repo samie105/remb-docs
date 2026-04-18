@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:48:56.098Z"
 content_hash: "3b44a411ad16e3243eda801569ea2e46ea35f026c9a6bfc836c8914b749dcf30"
 menu_path: ["Add an RSS feed"]
 section_path: []
+nav_prev: {"path": "astro/en/tutorial/5-astro-api/3/index.md", "title": "Build a tag index page"}
+nav_next: {"path": "astro/en/tutorial/6-islands/1/index.md", "title": "Build your first Astro island"}
 ---
+
 # Add an RSS feed
 
 Get ready to…
@@ -85,3 +88,4 @@ Individuals can subscribe to your feed in a feed reader, and receive a notificat
 *   [RSS item generation in Astro](/en/recipes/rss/#using-glob-imports)
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

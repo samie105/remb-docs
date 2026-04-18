@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:35:38.415Z"
 content_hash: "4cc0aaaf0c6909c8fb86db59d5447793c2fbfb5f555b6e6a9614edbbad70f869"
 menu_path: ["domain - Node documentation"]
 section_path: []
+nav_prev: {"path": "deno/deno/api/node/dns/promises/index.md", "title": "dns/promises - Node documentation"}
+nav_next: {"path": "deno/deno/api/node/events/index.md", "title": "events - Node documentation"}
 ---
+
 ### Usage in Deno
 
 ```typescript
@@ -50,3 +53,4 @@ f
 [create](.././domain/~/create "create")
 
 No documentation available
+

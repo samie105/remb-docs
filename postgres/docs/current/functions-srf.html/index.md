@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:50:36.038Z"
 content_hash: "3b5035df4fa91cb48538b28a5af907a9dad25aadedea73e023287ef7dd8c5e39"
 menu_path: ["PostgreSQL: Documentation: 18: 9.26. Set Returning Functions"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/protocol-overview.html/index.md", "title": "PostgreSQL: Documentation: 18: 54.1.\u00a0Overview"}
+nav_next: {"path": "postgres/docs/current/infoschema-routines.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.45.\u00a0routines"}
 ---
+
 This section describes functions that possibly return more than one row. The most widely used functions in this class are series generating functions, as detailed in [Table 9.69](https://www.postgresql.org/docs/current/functions-srf.html#FUNCTIONS-SRF-SERIES "Table 9.69. Series Generating Functions") and [Table 9.70](https://www.postgresql.org/docs/current/functions-srf.html#FUNCTIONS-SRF-SUBSCRIPTS "Table 9.70. Subscript Generating Functions"). Other, more specialized set-returning functions are described elsewhere in this manual. See [Section 7.2.1.4](https://www.postgresql.org/docs/current/queries-table-expressions.html#QUERIES-TABLEFUNCTIONS "7.2.1.4. Table Functions") for ways to combine multiple set-returning functions.
 
 **Table 9.69. Series Generating Functions**
@@ -30,7 +33,7 @@ Generates a series of values from _`start`_ to _`stop`_, with a step size of _`s
 
 `generate_series` ( _`start`_ `timestamp with time zone`, _`stop`_ `timestamp with time zone`, _`step`_ `interval` \[, _`timezone`_ `text` \] ) → `setof timestamp with time zone`
 
-Generates a series of values from _`start`_ to _`stop`_, with a step size of _`step`_. In the timezone-aware form, times of day and daylight-savings adjustments are computed according to the time zone named by the _`timezone`_ argument, or the current [TimeZone](https://www.postgresql.org/docs/current/runtime-config-client.html#GUC-TIMEZONE) setting if that is omitted.
+Generates a series of values from _`start`_ to _`stop`_, with a step size of _`step`_. In the timezone-aware form, times of day and daylight-savings adjustments are computed according to the time zone named by the _`timezone`_ argument, or the current [TimeZone](postgres/docs/current/runtime-config-client.html/index.md#GUC-TIMEZONE) setting if that is omitted.
 
 When _`step`_ is positive, zero rows are returned if _`start`_ is greater than _`stop`_. Conversely, when _`step`_ is negative, zero rows are returned if _`start`_ is less than _`stop`_. Zero rows are also returned if any input is `NULL`. It is an error for _`step`_ to be zero. Some examples follow:
 
@@ -195,3 +198,4 @@ SELECT \* FROM pg\_ls\_dir('.') WITH ORDINALITY AS t(ls,n);
  pg\_stat\_tmp     | 18
  pg\_subtrans     | 19
 (19 rows)
+

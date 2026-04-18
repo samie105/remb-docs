@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:50:08.451Z"
 content_hash: "921eaa5ebc8c5249845b1c96c9613d6f67cf1ada7a632c82d40ecf9f8d912c1a"
 menu_path: ["Security","Security","Product security","Product security","Security testing","Security testing"]
 section_path: ["Security","Security","Product security","Product security","Security testing","Security testing"]
+nav_prev: {"path": "supabase/docs/guides/security/product-security/index.md", "title": "Secure configuration of Supabase products"}
+nav_next: {"path": "supabase/docs/guides/self-hosting/copy-from-platform-s3/index.md", "title": "Copy Storage Objects from Platform"}
 ---
+
 # 
 
 Security testing of your Supabase projects
@@ -52,3 +55,4 @@ Security testing:
 *   Is within the [Acceptable Usage Policy](/aup).
 *   Will be stopped if contacted by Supabase due to a breach of the above or a negative impact on Supabase and Supabase customers.
 *   Any vulnerabilities discovered directly in a Supabase product will be reported to Supabase Security within 24 hours of completion of testing.
+

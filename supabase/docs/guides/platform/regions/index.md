@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:48:09.042Z"
 content_hash: "c6c4165998c4be2cffbd86c313658d64247fb63bfccd61576f422432bc141f94"
 menu_path: ["Platform","Platform","Platform Configuration","Platform Configuration","Regions","Regions"]
 section_path: ["Platform","Platform","Platform Configuration","Platform Configuration","Regions","Regions"]
+nav_prev: {"path": "supabase/docs/guides/platform/read-replicas/index.md", "title": "Read Replicas"}
+nav_next: {"path": "supabase/docs/guides/platform/sso/index.md", "title": "Enable SSO for Your Organization"}
 ---
+
 # 
 
 Available regions
@@ -49,3 +52,4 @@ If you prefer, you can choose an exact AWS region for your project.
 *   Northeast Asia (Seoul)`ap-northeast-2`
 *   Oceania (Sydney)`ap-southeast-2`
 *   South America (São Paulo)`sa-east-1`
+

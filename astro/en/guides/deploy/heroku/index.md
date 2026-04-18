@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:37:24.502Z"
 content_hash: "3aa5a03452ee8797fd4957f5178809bb9d8e27df8466ee080c589610122dd0cf"
 menu_path: ["Deploy your Astro Site to Heroku"]
 section_path: []
+nav_prev: {"path": "astro/en/guides/deploy/google-cloud/index.md", "title": "Deploy your Astro Site to Google Cloud"}
+nav_next: {"path": "astro/en/guides/deploy/juno/index.md", "title": "Deploy your Astro Site to Juno"}
 ---
+
 # Deploy your Astro Site to Heroku
 
 [Heroku](https://www.heroku.com/) is a platform-as-a-service for building, running, and managing modern apps in the cloud. You can deploy an Astro site to Heroku using this guide.
@@ -184,3 +187,4 @@ section_path: []
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

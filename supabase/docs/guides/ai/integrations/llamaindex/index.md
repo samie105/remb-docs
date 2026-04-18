@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:52:01.882Z"
 content_hash: "f9594d60d6b008466131e670aa1b8ca9f7c43937c88504ed66d986dfd03b956a"
 menu_path: ["AI & Vectors","AI & Vectors","Third-Party Tools","Third-Party Tools","LlamaIndex","LlamaIndex"]
 section_path: ["AI & Vectors","AI & Vectors","Third-Party Tools","Third-Party Tools","LlamaIndex","LlamaIndex"]
+nav_prev: {"path": "supabase/docs/guides/ai/integrations/amazon-bedrock/index.md", "title": "Amazon Bedrock"}
+nav_next: {"path": "supabase/docs/guides/ai/integrations/roboflow/index.md", "title": "Roboflow"}
 ---
+
 # 
 
 Learn how to integrate Supabase with LlamaIndex, a data framework for your LLM applications.
@@ -81,3 +84,4 @@ You can view the inserted items in the [Table Editor](/dashboard/project/_/edito
 
 *   Visit the LlamaIndex + `SupabaseVectorStore` [docs](https://developers.llamaindex.ai/python/examples/vector_stores/supabasevectorindexdemo/)
 *   Visit the official LlamaIndex [repo](https://github.com/jerryjliu/llama_index/)
+

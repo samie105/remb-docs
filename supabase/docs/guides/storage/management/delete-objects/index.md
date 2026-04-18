@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:01:20.190Z"
 content_hash: "91e64c9d60a46bb9780227c6209e26a0babaa55cd581c28be9457aead0333768"
 menu_path: ["Storage","Storage","More","More","More","Management","Management","Delete Objects","Delete Objects"]
 section_path: ["Storage","Storage","More","More","More","Management","Management","Delete Objects","Delete Objects"]
+nav_prev: {"path": "supabase/docs/guides/storage/management/copy-move-objects/index.md", "title": "Copy Objects"}
+nav_next: {"path": "supabase/docs/guides/storage/management/download-objects/index.md", "title": "Download Objects"}
 ---
+
 # 
 
 Delete Objects
@@ -41,3 +44,4 @@ To delete an object, the user must have the `delete` permission on the object. F
 ```
 1create policy "User can delete their own objects"2on storage.objects3for delete4TO authenticated5USING (6    owner = (select auth.uid()::text)7);
 ```
+

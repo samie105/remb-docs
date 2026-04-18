@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:55:34.094Z"
 content_hash: "f61247d7ff6f7e0b4b564c9faf99f8ef6d4067946622643af3b5e22d33e0cb55"
 menu_path: ["Database","Database","Extensions","Extensions","http: RESTful Client","http: RESTful Client"]
 section_path: ["Database","Database","Extensions","Extensions","http: RESTful Client","http: RESTful Client"]
+nav_prev: {"path": "supabase/docs/guides/database/extensions/pg_cron/index.md", "title": "pg_cron: Schedule Recurring Jobs with Cron Syntax in Postgres"}
+nav_next: {"path": "supabase/docs/guides/database/extensions/pg_graphql/index.md", "title": "pg_graphql: GraphQL for Postgres"}
 ---
+
 # 
 
 http: RESTful Client
@@ -77,3 +80,4 @@ A successful call to a web URL from the `http` extension returns a record with t
 ## Resources[#](#resources)
 
 *   Official [`http` GitHub Repository](https://github.com/pramsey/pgsql-http)
+

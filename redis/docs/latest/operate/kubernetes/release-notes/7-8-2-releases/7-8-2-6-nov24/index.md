@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:52:57.033Z"
 content_hash: "6e82de003be4cb80f5d06c5f816cb07c7d90106d91e18ed60e09a57d910e7f1c"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Enterprise for Kubernetes","→","Redis Enterprise for Kubernetes","→\n      \n        Redis Enterprise Software for Kubernetes release notes","→","Redis Enterprise Software for Kubernetes release notes","→\n      \n        Redis Enterprise for Kubernetes 7.8.2-6 release notes","→","Redis Enterprise for Kubernetes 7.8.2-6 release notes","→\n      \n        Redis Enterprise for Kubernetes 7.8.2-6 (Nov 2024) release notes","→","Redis Enterprise for Kubernetes 7.8.2-6 (Nov 2024) release notes"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Enterprise for Kubernetes","→","Redis Enterprise for Kubernetes","→\n      \n        Redis Enterprise Software for Kubernetes release notes","→","Redis Enterprise Software for Kubernetes release notes","→\n      \n        Redis Enterprise for Kubernetes 7.8.2-6 release notes","→","Redis Enterprise for Kubernetes 7.8.2-6 release notes","→\n      \n        Redis Enterprise for Kubernetes 7.8.2-6 (Nov 2024) release notes","→","Redis Enterprise for Kubernetes 7.8.2-6 (Nov 2024) release notes"]
+nav_prev: {"path": "redis/docs/latest/integrate/amazon-bedrock/index.md", "title": "Amazon Bedrock"}
+nav_next: {"path": "redis/docs/latest/develop/data-types/timeseries/configuration/index.md", "title": "Configuration Parameters"}
 ---
+
 # Redis Enterprise for Kubernetes 7.8.2-6 (Nov 2024) release notes
 
 Feature release including support for Redis Software 7.8.2 and RHEL9-based images.
@@ -314,3 +317,4 @@ Any distribution not listed below is not supported for production workloads.
     
 
 ## On this page
+

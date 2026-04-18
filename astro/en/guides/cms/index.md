@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:33:02.248Z"
 content_hash: "f73d165a753e1bedd495ff81ff37a1c4ac09a34da645fe11db28a20833d913ea"
 menu_path: ["Use a CMS with Astro"]
 section_path: []
+nav_prev: {"path": "astro/en/guides/deploy/zerops/index.md", "title": "Deploy your Astro Site to Zerops"}
+nav_next: {"path": "astro/en/guides/cms/apostrophecms/index.md", "title": "ApostropheCMS & Astro"}
 ---
+
 # Use a CMS with Astro
 
 **Ready to connect a Headless CMS to your Astro project?** Follow one of our guides to integrate a CMS.
@@ -229,3 +232,4 @@ Explore a [list of over 100 headless content management systems](https://jamstac
 Yes! Astro provides built-in support for [Markdown](/en/guides/markdown-content/).
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

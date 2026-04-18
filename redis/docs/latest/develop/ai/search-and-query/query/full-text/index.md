@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:53:45.273Z"
 content_hash: "401c0d2835a37409565c804dcfb7a3fb4f211c405890cdabee6d9ca3b79b8880"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        Redis Search","→","Redis Search","→\n      \n        Querying data","→","Querying data","→\n      \n        Full-text search","→","Full-text search"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        Redis Search","→","Redis Search","→\n      \n        Querying data","→","Querying data","→\n      \n        Full-text search","→","Full-text search"]
+nav_prev: {"path": "redis/docs/latest/develop/ai/search-and-query/deprecated/development/index.md", "title": "Developer notes"}
+nav_next: {"path": "redis/docs/latest/integrate/riot/quick-start/index.md", "title": "Getting started"}
 ---
+
 # Full-text search
 
 Perform a full-text search
@@ -6704,3 +6707,4 @@ redis> FT.SEARCH idx '@text:(%😀😁🙃%)' NOCONTENT
 ```
 
 ## On this page
+

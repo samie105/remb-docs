@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:59:01.712Z"
 content_hash: "b97395d3aaa64906e60ccf9b81a44e13faa86959f1c057c05cdb631c74b4e767"
 menu_path: ["Start with Supabase","Start with Supabase","Web app demos","Web app demos","Next.js","Next.js"]
 section_path: ["Start with Supabase","Start with Supabase","Web app demos","Web app demos","Next.js","Next.js"]
+nav_prev: {"path": "supabase/docs/guides/getting-started/tutorials/with-ionic-vue/index.md", "title": "Build a User Management App with Ionic Vue"}
+nav_next: {"path": "supabase/docs/guides/getting-started/tutorials/with-kotlin/index.md", "title": "Build a Product Management Android App with Jetpack Compose"}
 ---
+
 # 
 
 Build a User Management App with Next.js
@@ -306,3 +309,4 @@ At this stage you have a fully functional application!
 *   Explore the [pre-built Auth components](/ui/docs/nextjs/password-based-auth)
 *   Explore the [Supabase Cache Helpers](https://github.com/psteinroe/supabase-cache-helpers)
 *   See the [Next.js Subscription Payments Starter](https://github.com/vercel/nextjs-subscription-payments) template on GitHub
+

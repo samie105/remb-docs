@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:38:03.999Z"
 content_hash: "84e0b7b48751da16529df3d7af61d133a2d1c5a2ab03468c97db3886d01f6918"
 menu_path: ["Conditional Rendering"]
 section_path: []
+nav_prev: {"path": "react/learn/passing-props-to-a-component/index.md", "title": "Passing Props to a Component"}
+nav_next: {"path": "react/learn/rendering-lists/index.md", "title": "Rendering Lists"}
 ---
+
 Your components will often need to display different things depending on different conditions. In React, you can conditionally render JSX using JavaScript syntax like `if` statements, `&&`, and `? :` operators.
 
 ### You will learn
@@ -92,7 +95,7 @@ You can read it as _“if `isPacked` is true, then (`?`) render `name + ' ✅'`,
 
 #### Are these two examples fully equivalent?[](#are-these-two-examples-fully-equivalent "Link for Are these two examples fully equivalent? ")
 
-If you’re coming from an object-oriented programming background, you might assume that the two examples above are subtly different because one of them may create two different “instances” of `<li>`. But JSX elements aren’t “instances” because they don’t hold any internal state and aren’t real DOM nodes. They’re lightweight descriptions, like blueprints. So these two examples, in fact, _are_ completely equivalent. [Preserving and Resetting State](https://react.dev/learn/preserving-and-resetting-state) goes into detail about how this works.
+If you’re coming from an object-oriented programming background, you might assume that the two examples above are subtly different because one of them may create two different “instances” of `<li>`. But JSX elements aren’t “instances” because they don’t hold any internal state and aren’t real DOM nodes. They’re lightweight descriptions, like blueprints. So these two examples, in fact, _are_ completely equivalent. [Preserving and Resetting State](react/learn/preserving-and-resetting-state/index.md) goes into detail about how this works.
 
 Now let’s say you want to wrap the completed item’s text into another HTML tag, like `<del>` to strike it out. You can add even more newlines and parentheses so that it’s easier to nest more JSX in each of the cases:
 
@@ -136,7 +139,7 @@ Use an `if` statement to reassign a JSX expression to `itemContent` if `isPacked
 if (isPacked) {itemContent = name + " ✅";}
 ```
 
-[Curly braces open the “window into JavaScript”.](https://react.dev/learn/javascript-in-jsx-with-curly-braces#using-curly-braces-a-window-into-the-javascript-world) Embed the variable with curly braces in the returned JSX tree, nesting the previously calculated expression inside of JSX:
+[Curly braces open the “window into JavaScript”.](react/learn/javascript-in-jsx-with-curly-braces/index.md#using-curly-braces-a-window-into-the-javascript-world) Embed the variable with curly braces in the returned JSX tree, nesting the previously calculated expression inside of JSX:
 
 ```
 <li className="item">{itemContent}</li>
@@ -170,3 +173,4 @@ of
 Show an icon for incomplete items with `? :`[](#show-an-icon-for-incomplete-items-with-- "Link for this heading")
 
 Use the conditional operator (`cond ? a : b`) to render a ❌ if `isPacked` isn’t `true`.
+

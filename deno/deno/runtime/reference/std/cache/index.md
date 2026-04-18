@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:00:12.154Z"
 content_hash: "4516a88e7ead89b11717434f00c0b6e7a18f2ab145f0fcccc3990b1b55a47386"
 menu_path: ["@std/cache"]
 section_path: []
+nav_prev: {"path": "deno/deno/runtime/reference/std/bytes/index.md", "title": "@std/bytes"}
+nav_next: {"path": "deno/deno/runtime/reference/std/cbor/index.md", "title": "@std/cbor"}
 ---
+
 On this page
 
 *   [Overview](#overview)
@@ -46,3 +49,4 @@ deno add jsr:@std/cache
 ```
 
 [See all symbols in @std/cache on](https://jsr.io/@std/cache/doc)
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:04:33.283Z"
 content_hash: "7ec4fde1f0b448f01cf25e3e154381be0fb7e49b164a1c01418b6bdaf383fc4a"
 menu_path: ["@std/msgpack"]
 section_path: []
+nav_prev: {"path": "deno/deno/runtime/reference/std/media-types/index.md", "title": "@std/media-types"}
+nav_next: {"path": "deno/deno/runtime/reference/std/net/index.md", "title": "@std/net"}
 ---
+
 On this page
 
 *   [Overview](#overview)
@@ -62,3 +65,4 @@ deno add jsr:@std/msgpack
 ```
 
 [See all symbols in @std/msgpack on](https://jsr.io/@std/msgpack/doc)
+

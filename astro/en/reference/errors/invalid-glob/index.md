@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:45:19.635Z"
 content_hash: "54d2ed7b00371404b26e6750c0fffed82d271b98af051b3645bf6b701de4a34a"
 menu_path: ["Invalid glob pattern."]
 section_path: []
+nav_prev: {"path": "astro/en/reference/errors/invalid-get-static-paths-return/index.md", "title": "Invalid value returned by getStaticPaths."}
+nav_next: {"path": "astro/en/reference/errors/invalid-i18n-middleware-configuration/index.md", "title": "Invalid internationalization middleware configuration"}
 ---
+
 # Invalid glob pattern.
 
 > **InvalidGlob**: Invalid glob pattern: `GLOB_PATTERN`. Glob patterns must start with ’./’, ’../’ or ’/’.
@@ -25,3 +28,4 @@ Astro encountered an invalid glob pattern. This is often caused by the glob patt
 *   [Glob Patterns](/en/guides/imports/#glob-patterns)
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

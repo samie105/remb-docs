@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:41:26.964Z"
 content_hash: "32509d282008cfba53be2429ea14f4ce7d1f44f287923152bb58004512ef1b5a"
 menu_path: ["Request Context"]
 section_path: []
+nav_prev: {"path": "trpc/docs/v9/contributing/index.md", "title": "Contributing"}
+nav_next: {"path": "trpc/docs/v9/cors/index.md", "title": "Send cookies cross-origin"}
 ---
+
 The `createContext()` function is called for each request and the result is propagated to all resolvers. You can use this to pass contextual data down to the resolvers.
 
 server/context.ts
@@ -63,3 +66,4 @@ ts
   `return trpc.router<Context>();`
 
 `}`
+

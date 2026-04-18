@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:35:43.545Z"
 content_hash: "198bae0d20be8ce01ff5931fa6c3af8d3d55117c9376455ad95cb81d15a56abb"
 menu_path: ["Data REST API","Data REST API","Security","Security","Securing your API","Securing your API"]
 section_path: ["Data REST API","Data REST API","Security","Security","Securing your API","Securing your API"]
+nav_prev: {"path": "supabase/docs/guides/api/quickstart/index.md", "title": "Build an API route in less than 2 minutes."}
+nav_next: {"path": "supabase/docs/guides/api/sql-to-api/index.md", "title": "Converting SQL to JavaScript API"}
 ---
+
 # 
 
 Securing your API
@@ -232,3 +235,4 @@ This ensures the function is called when evaluating RLS policies for all product
 Be aware that calling functions directly in RLS policies can impact database performance, as the function is evaluated for each row when the policy is checked. Consider optimizing your function or using caching strategies if performance becomes an issue.
 
 To clear old entries in the `private.rate_limits` table, set up a [pg\_cron](/docs/guides/database/extensions/pg_cron) job to clean them up.
+

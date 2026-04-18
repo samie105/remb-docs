@@ -9,15 +9,9 @@ last_crawled_at: "2026-04-18T17:18:31.720Z"
 content_hash: "d182d8e0a27cbb240dc702c6e65d88c4f03f956afc54458f12b76102b4109bd4"
 menu_path: ["stroke-width"]
 section_path: []
+nav_prev: {"path": "tailwind/docs/stroke/index.md", "title": "stroke"}
+nav_next: {"path": "tailwind/docs/forced-color-adjust/index.md", "title": "forced-color-adjust"}
 ---
-[](/)
-
-[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
-
-1.  SVG
-2.  stroke-width
-
-SVG
 
 # stroke-width
 
@@ -96,3 +90,4 @@ Short, tactical video lessons from the creator of Tailwind CSS, delivered direct
 [Get the free course](/build-uis-that-dont-suck)
 
 Copyright © 2026 Tailwind Labs Inc.·[Trademark Policy](/brand)
+

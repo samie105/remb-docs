@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:04:20.659Z"
 content_hash: "0d29363314455515d29966d860850cd58c509d4f63aa806d27062d45b59a000d"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Enterprise for Kubernetes","→","Redis Enterprise for Kubernetes","→\n      \n        Redis Enterprise databases (REDB)","→","Redis Enterprise databases (REDB)","→\n      \n        Manage Redis Enterprise databases for Kubernetes","→","Manage Redis Enterprise databases for Kubernetes"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Enterprise for Kubernetes","→","Redis Enterprise for Kubernetes","→\n      \n        Redis Enterprise databases (REDB)","→","Redis Enterprise databases (REDB)","→\n      \n        Manage Redis Enterprise databases for Kubernetes","→","Manage Redis Enterprise databases for Kubernetes"]
+nav_prev: {"path": "redis/docs/latest/integrate/redis-data-integration/data-pipelines/transform-examples/index.md", "title": "Job files"}
+nav_next: {"path": "redis/docs/latest/develop/data-types/timeseries/out-of-order_performance_considerations/index.md", "title": "Out-of-order / backfilled ingestion performance considerations"}
 ---
+
 # Manage Redis Enterprise databases for Kubernetes
 
 This section describes how the database controller provides the ability to create, manage, and use databases via a database custom resource.
@@ -125,3 +128,4 @@ For comprehensive information about connecting to your database, including:
 See [Database connectivity](/docs/latest/operate/kubernetes/networking/database-connectivity/).
 
 ## On this page
+

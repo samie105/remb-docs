@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:52:58.057Z"
 content_hash: "4ac68f014ddcea6bdb86b33ba85b2d962a22d403e63273a7ecec4fe4eaee2119"
 menu_path: ["Auth","Auth","More","More","More","Auth Hooks","Auth Hooks","Send email hook","Send email hook"]
 section_path: ["Auth","Auth","More","More","More","Auth Hooks","Auth Hooks","Send email hook","Send email hook"]
+nav_prev: {"path": "supabase/docs/guides/auth/auth-hooks/password-verification-hook/index.md", "title": "Password Verification Hook"}
+nav_next: {"path": "supabase/docs/guides/auth/auth-hooks/send-sms-hook/index.md", "title": "Send SMS Hook"}
 ---
+
 # 
 
 Send Email Hook
@@ -150,3 +153,4 @@ Deploy your edge function and [configure it as a hook](/dashboard/project/_/auth
 ```
 1supabase functions deploy send-email --no-verify-jwt
 ```
+

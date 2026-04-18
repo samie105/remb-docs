@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:41:13.829Z"
 content_hash: "0348862d5086a8500c1f4ca9516615f7666e9cb01cdad8cfbed43728fd96583f"
 menu_path: ["Managing State"]
 section_path: []
+nav_prev: {"path": "react/learn/updating-arrays-in-state/index.md", "title": "Updating Arrays in State"}
+nav_next: {"path": "react/learn/reacting-to-input-with-state/index.md", "title": "Reacting to Input with State"}
 ---
+
 As your application grows, it helps to be more intentional about how your state is organized and how the data flows between your components. Redundant or duplicate state is a common source of bugs. In this chapter, you’ll learn how to structure your state well, how to keep your state update logic maintainable, and how to share state between distant components.
 
 ## Reacting to input with state[](#reacting-to-input-with-state "Link for Reacting to input with state ")
@@ -67,3 +70,4 @@ Here, the `Heading` component determines its heading level by “asking” the c
 Reducers let you consolidate a component’s state update logic. Context lets you pass information deep down to other components. You can combine reducers and context together to manage state of a complex screen.
 
 With this approach, a parent component with complex state manages it with a reducer. Other components anywhere deep in the tree can read its state via context. They can also dispatch actions to update that state.
+

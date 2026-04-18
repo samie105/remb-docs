@@ -9,8 +9,11 @@ last_crawled_at: "2026-04-18T16:39:40.500Z"
 content_hash: "1c6429a82fa0bc69ef887e841082df807a613e4fbbc7bc7097abfec685a78c4f"
 menu_path: ["Metadata"]
 section_path: []
+nav_prev: {"path": "trpc/docs/v10/server/introduction/index.md", "title": "tRPC server documentation"}
+nav_next: {"path": "trpc/docs/v10/server/procedures/index.md", "title": "Define Procedures"}
 ---
-Procedure metadata allows you to add an optional procedure specific `meta` property which will be available in all [middleware](https://trpc.io/docs/v10/server/middlewares) function parameters.
+
+Procedure metadata allows you to add an optional procedure specific `meta` property which will be available in all [middleware](trpc/docs/v10/server/middlewares/index.md) function parameters.
 
 tip
 
@@ -149,3 +152,4 @@ tsx
   `});`
 
 `// ^ Meta: { authRequired: true, role: 'admin' }`
+

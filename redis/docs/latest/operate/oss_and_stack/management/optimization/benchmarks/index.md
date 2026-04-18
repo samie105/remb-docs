@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:37:32.585Z"
 content_hash: "6be377564dce16890459b65528cc6bd17a70074d90697c9daf16b03e509b0218"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Manage Redis","→","Manage Redis","→\n      \n        Optimizing Redis","→","Optimizing Redis","→\n      \n        Redis benchmark","→","Redis benchmark"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Manage Redis","→","Manage Redis","→\n      \n        Optimizing Redis","→","Optimizing Redis","→\n      \n        Redis benchmark","→","Redis benchmark"]
+nav_prev: {"path": "redis/docs/latest/operate/kubernetes/architecture/index.md", "title": "Redis Enterprise for Kubernetes architecture"}
+nav_next: {"path": "redis/docs/latest/develop/reference/modules/modules-blocking-ops/index.md", "title": "Redis modules and blocking commands"}
 ---
+
 # Redis benchmark
 
 Use the redis-benchmark utility on a Redis server
@@ -236,3 +239,4 @@ There are several third-party tools that can be used for benchmarking Redis. Ref
 *   [YCSB](https://github.com/brianfrankcooper/YCSB) from [Yahoo @Yahoo](https://twitter.com/Yahoo) is a benchmarking framework with clients to many databases, including Redis.
 
 ## On this page
+

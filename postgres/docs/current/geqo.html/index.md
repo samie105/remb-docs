@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:46:15.011Z"
 content_hash: "3e1f97b8dac0add9f9537b3da279e2ee0849ed37a0c71523ba2a28c674b7af4d"
 menu_path: ["PostgreSQL: Documentation: 18: Chapter 61. Genetic Query Optimizer"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/source.html/index.md", "title": "PostgreSQL: Documentation: 18: Chapter\u00a055.\u00a0PostgreSQL Coding Conventions"}
+nav_next: {"path": "postgres/docs/current/wal-for-extensions.html/index.md", "title": "PostgreSQL: Documentation: 18: Chapter\u00a064.\u00a0Write Ahead Logging for Extensions"}
 ---
+
 February 26, 2026: [PostgreSQL 18.3, 17.9, 16.13, 15.17, and 14.22 Released!](/about/news/postgresql-183-179-1613-1517-and-1422-released-3246/)
 
 [Documentation](/docs/ "Documentation") → [PostgreSQL 18](/docs/18/index.html)
@@ -29,3 +32,4 @@ Written by Martin Utesch (`<[utesch@aut.tu-freiberg.de](mailto:utesch@aut.tu-fre
 ## Submit correction
 
 If you see anything in the documentation that is not correct, does not match your experience with the particular feature or requires further clarification, please use [this form](/account/comments/new/18/geqo.html/) to report a documentation issue.
+

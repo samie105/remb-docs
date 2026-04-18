@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:46:51.882Z"
 content_hash: "33235833d451273c0fce58c7a7e34ea4318950ad52451289d7a61059bd3b5fc4"
 menu_path: ["Local Dev / CLI","Local Dev / CLI","Local development","Local development","Getting started","Getting started"]
 section_path: ["Local Dev / CLI","Local Dev / CLI","Local development","Local development","Getting started","Getting started"]
+nav_prev: {"path": "supabase/docs/guides/local-development/restoring-downloaded-backup/index.md", "title": "Restoring a downloaded backup locally"}
+nav_next: {"path": "supabase/docs/guides/local-development/seeding-your-database/index.md", "title": "Seeding your database"}
 ---
+
 # 
 
 Local development with schema migrations
@@ -262,3 +265,4 @@ The local development environment is not as feature-complete as the Supabase Pla
 
 *   You cannot update your project settings in the Dashboard. This must be done using the local config file.
 *   The CLI version determines the local version of Studio used, so make sure you keep your local [Supabase CLI up to date](https://github.com/supabase/cli#getting-started). We're constantly adding new features and bug fixes.
+

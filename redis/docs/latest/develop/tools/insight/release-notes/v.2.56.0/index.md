@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:33:28.689Z"
 content_hash: "7e5a2f9af67a352c8a82db0dfba4033e381ca32b61cc4b1f29ce73de62b50729"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Client tools","→","Client tools","→\n      \n        Redis Insight","→","Redis Insight","→\n      \n        Redis Insight release notes","→","Redis Insight release notes","→\n      \n        Redis Insight v2.56.0, September 2024","→","Redis Insight v2.56.0, September 2024"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Client tools","→","Client tools","→\n      \n        Redis Insight","→","Redis Insight","→\n      \n        Redis Insight release notes","→","Redis Insight release notes","→\n      \n        Redis Insight v2.56.0, September 2024","→","Redis Insight v2.56.0, September 2024"]
+nav_prev: {"path": "redis/docs/latest/develop/tools/insight/release-notes/v.2.58.0/index.md", "title": "Redis Insight v2.58.0, October 2024"}
+nav_next: {"path": "redis/docs/latest/develop/tools/insight/release-notes/v.2.52.0/index.md", "title": "Redis Insight v2.52.0, June 2024"}
 ---
+
 # Redis Insight v2.56.0, September 2024
 
 Redis Insight v2.56
@@ -40,3 +43,4 @@ This is the General Availability (GA) release of Redis Insight 2.56.
 *   [#3730](https://github.com/RedisInsight/RedisInsight/pull/3730) Date and time format customization to make the data more intuitive in Redis Insight. This flexibility helps match your local time zone or standardize it to UTC for better alignment in time-critical operations across global teams.
 
 ## On this page
+

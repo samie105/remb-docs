@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:37:51.541Z"
 content_hash: "4503ccb18c4359ee11df4d14df5b6bc93ec1781778a160c4c03713caeb4d9044"
 menu_path: ["Auth","Auth","Concepts","Concepts","Identities","Identities"]
 section_path: ["Auth","Auth","Concepts","Concepts","Identities","Identities"]
+nav_prev: {"path": "supabase/docs/guides/auth/custom-oauth-providers/index.md", "title": "Custom OAuth/OIDC Providers"}
+nav_next: {"path": "supabase/docs/guides/auth/jwt-fields/index.md", "title": "JWT Claims Reference"}
 ---
+
 # 
 
 Identities
@@ -88,3 +91,4 @@ updated\_at
 `string`
 
 The timestamp that the identity was last updated.
+

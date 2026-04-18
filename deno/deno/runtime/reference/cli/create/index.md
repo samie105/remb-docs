@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:52:33.846Z"
 content_hash: "a72246770cc298a663f9aea028057c25d69f7ca60f8046094cd1c61dc677bd15"
 menu_path: ["deno create"]
 section_path: []
+nav_prev: {"path": "deno/deno/runtime/reference/cli/compile/index.md", "title": "deno compile"}
+nav_next: {"path": "deno/deno/runtime/reference/cli/completions/index.md", "title": "deno completions"}
 ---
+
 On this page
 
 *   [Usage](#usage)
@@ -113,3 +116,4 @@ Treat unprefixed package names as npm packages.
 `--yes, -y`
 
 Bypass the prompt and run with full permissions.
+

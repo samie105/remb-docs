@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:11:45.985Z"
 content_hash: "b81f124499231ddad427bbd20cecb20c05a7a3106d81f96e56d36bba8915a9e7"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Client tools","→","Client tools","→\n      \n        Redis Insight","→","Redis Insight","→\n      \n        Redis Insight release notes","→","Redis Insight release notes","→\n      \n        RedisInsight v2.6.0, July 2022","→","RedisInsight v2.6.0, July 2022"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Client tools","→","Client tools","→\n      \n        Redis Insight","→","Redis Insight","→\n      \n        Redis Insight release notes","→","Redis Insight release notes","→\n      \n        RedisInsight v2.6.0, July 2022","→","RedisInsight v2.6.0, July 2022"]
+nav_prev: {"path": "redis/docs/latest/operate/oss_and_stack/install/install-stack/windows/index.md", "title": "Run Redis Open Source on Windows using Docker"}
+nav_next: {"path": "redis/docs/latest/operate/kubernetes/release-notes/7-4-2-releases/7-4-2-2/index.md", "title": "Redis Enterprise for Kubernetes 7.4.2-2 (Feb 2024) release notes"}
 ---
+
 # RedisInsight v2.6.0, July 2022
 
 RedisInsight v2.6.0
@@ -41,3 +44,4 @@ This is the General Availability (GA) release of RedisInsight 2.6.0
 *   [#932](https://github.com/RedisInsight/RedisInsight/pull/932) Refresh the JSON value in Browser/Tree view.
 
 ## On this page
+

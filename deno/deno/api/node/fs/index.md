@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:36:18.813Z"
 content_hash: "a97a96909fbf4ccb8fa8bf7fbe07a0ae67c95dd733ae7d5c21a4ccf84ec564eb"
 menu_path: ["fs - Node documentation"]
 section_path: []
+nav_prev: {"path": "deno/deno/api/node/events/index.md", "title": "events - Node documentation"}
+nav_next: {"path": "deno/deno/api/node/fs/promises/index.md", "title": "fs/promises - Node documentation"}
 ---
+
 ### Usage in Deno
 
 ```typescript
@@ -1724,3 +1727,4 @@ v
 [statSync](.././fs/~/statSync "statSync")
 
 Synchronous stat(2) - Get file status.
+

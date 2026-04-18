@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:38:34.749Z"
 content_hash: "e403579e88195381187adee4f3de2be0f3417ff7c00ce94ac0c450a4effe36ca"
 menu_path: ["Adding custom styles"]
 section_path: []
+nav_prev: {"path": "tailwind/docs/colors/index.md", "title": "Colors"}
+nav_next: {"path": "tailwind/docs/detecting-classes-in-source-files/index.md", "title": "Detecting classes in source files"}
 ---
+
 Best practices for adding your own custom styles in Tailwind projects.
 
 Often the biggest challenge when working with a framework is figuring out what you’re supposed to do when there’s something you need that the framework doesn’t handle for you.
@@ -28,7 +31,7 @@ CSS
 @theme {  --font-display: "Satoshi", "sans-serif";  --breakpoint-3xl: 120rem;  --color-avocado-100: oklch(0.99 0 0);  --color-avocado-200: oklch(0.98 0.04 113.22);  --color-avocado-300: oklch(0.94 0.11 115.03);  --color-avocado-400: oklch(0.92 0.19 114.08);  --color-avocado-500: oklch(0.84 0.18 117.33);  --color-avocado-600: oklch(0.53 0.12 118.34);  --ease-fluid: cubic-bezier(0.3, 0, 0, 1);  --ease-snappy: cubic-bezier(0.2, 0, 0, 1);  /* ... */}
 ```
 
-Learn more about customizing your theme in the [theme variables documentation](https://tailwindcss.com/docs/theme).
+Learn more about customizing your theme in the [theme variables documentation](tailwind/docs/theme/index.md).
 
 ## [Using arbitrary values](#using-arbitrary-values)
 
@@ -104,7 +107,7 @@ HTML
 <ul role="list">  {#each items as item}  <li class="lg:[&:nth-child(-n+3)]:hover:underline">{item}</li>  {/each}</ul>
 ```
 
-Learn more in the [arbitrary variants](https://tailwindcss.com/docs/hover-focus-and-other-states#using-arbitrary-variants) documentation.
+Learn more in the [arbitrary variants](tailwind/docs/hover-focus-and-other-states/index.md#using-arbitrary-variants) documentation.
 
 ### [Handling whitespace](#handling-whitespace)
 
@@ -216,7 +219,7 @@ HTML
 <!-- Will look like a card, but with square corners --><div class="card rounded-none">  <!-- ... --></div>
 ```
 
-Using Tailwind you probably don't need these types of classes as often as you think. Read our guide on [managing duplication](https://tailwindcss.com/docs/styling-with-utility-classes#managing-duplication) for our recommendations.
+Using Tailwind you probably don't need these types of classes as often as you think. Read our guide on [managing duplication](tailwind/docs/styling-with-utility-classes/index.md#managing-duplication) for our recommendations.
 
 The `components` layer is also a good place to put custom styles for any third-party components you're using:
 
@@ -447,3 +450,4 @@ When a custom variant has multiple rules, they can be nested within each other:
 ```
 @custom-variant any-hover {  @media (any-hover: hover) {    &:hover {      @slot;    }  }}
 ```
+

@@ -9,15 +9,9 @@ last_crawled_at: "2026-04-18T17:09:31.550Z"
 content_hash: "4f3128bdb6e766bedca713ac8f1190ecfb84c0ae500dd47bb6fabda86d374179"
 menu_path: ["backdrop-filter: brightness()"]
 section_path: []
+nav_prev: {"path": "tailwind/docs/backdrop-filter-blur/index.md", "title": "backdrop-filter: blur()"}
+nav_next: {"path": "tailwind/docs/backdrop-filter-contrast/index.md", "title": "backdrop-filter: contrast()"}
 ---
-[](/)
-
-[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
-
-1.  Filters
-2.  brightness
-
-Filters
 
 # backdrop-filter: brightness()
 
@@ -106,3 +100,4 @@ Make your ideas look awesome, without relying on a designer.
 ](https://www.refactoringui.com/?ref=sidebar)
 
 Copyright © 2026 Tailwind Labs Inc.·[Trademark Policy](/brand)
+

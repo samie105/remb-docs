@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:34:10.599Z"
 content_hash: "c9621002123e97fe2da8e855cf6d45ac9193e0771b6d6787b132f235592365d4"
 menu_path: ["JavaScript API ​"]
 section_path: []
+nav_prev: {"path": "vite/guide/api-hmr/index.md", "title": "HMR API \u200b"}
+nav_next: {"path": "vite/config/index.md", "title": "Configuring Vite \u200b"}
 ---
+
 Vite's JavaScript APIs are fully typed, and it's recommended to use TypeScript or enable JS type checking in VS Code to leverage the intellisense and validation.
 
 ## `createServer` [​](#createserver)
@@ -49,7 +52,7 @@ When using `createServer` and `build` in the same Node.js process, both function
 
 NOTE
 
-When using [middleware mode](https://vite.dev/config/server-options#server-middlewaremode) combined with [proxy config for WebSocket](https://vite.dev/config/server-options#server-proxy), the parent http server should be provided in `middlewareMode` to bind the proxy correctly.
+When using [middleware mode](vite/config/server-options/index.md#server-middlewaremode) combined with [proxy config for WebSocket](vite/config/server-options/index.md#server-proxy), the parent http server should be provided in `middlewareMode` to bind the proxy correctly.
 
 Example
 
@@ -369,7 +372,7 @@ function searchForWorkspaceRoot(
 ): string
 ```
 
-**Related:** [server.fs.allow](https://vite.dev/config/server-options#server-fs-allow)
+**Related:** [server.fs.allow](vite/config/server-options/index.md#server-fs-allow)
 
 Search for the root of the potential workspace if it meets the following conditions, otherwise it would fallback to `root`:
 
@@ -392,7 +395,7 @@ function loadEnv(
 ): Record<string, string>
 ```
 
-**Related:** [`.env` Files](https://vite.dev/guide/env-and-mode#env-files)
+**Related:** [`.env` Files](vite/guide/env-and-mode/index.md#env-files)
 
 Load `.env` files within the `envDir`. By default, only env variables prefixed with `VITE_` are loaded, unless `prefixes` is changed.
 
@@ -406,7 +409,7 @@ ts
 function normalizePath(id: string): string
 ```
 
-**Related:** [Path Normalization](https://vite.dev/guide/api-plugin#path-normalization)
+**Related:** [Path Normalization](vite/guide/api-plugin/index.md#path-normalization)
 
 Normalizes a path to interoperate between Vite plugins.
 
@@ -491,7 +494,7 @@ interface PreprocessCSSResult {
 }
 ```
 
-Pre-processes `.css`, `.scss`, `.sass`, `.less`, `.styl` and `.stylus` files to plain CSS so it can be used in browsers or parsed by other tools. Similar to the [built-in CSS pre-processing support](https://vite.dev/guide/features#css-pre-processors), the corresponding pre-processor must be installed if used.
+Pre-processes `.css`, `.scss`, `.sass`, `.less`, `.styl` and `.stylus` files to plain CSS so it can be used in browsers or parsed by other tools. Similar to the [built-in CSS pre-processing support](vite/guide/features/index.md#css-pre-processors), the corresponding pre-processor must be installed if used.
 
 The pre-processor used is inferred from the `filename` extension. If the `filename` ends with `.module.{ext}`, it is inferred as a [CSS module](https://github.com/css-modules/css-modules) and the returned result will include a `modules` object mapping the original class names to the transformed ones.
 
@@ -520,3 +523,4 @@ Only kept for backward compatibility.
 **Type:** `string`
 
 Only kept for backward compatibility.
+

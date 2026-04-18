@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:41:51.972Z"
 content_hash: "fd884cc657ac4fec93e6091869c505519b0cc749ee3e3742b75d5e2434fc3c2c"
 menu_path: ["Database","Database","ORM Quickstarts","ORM Quickstarts","Postgres.js","Postgres.js"]
 section_path: ["Database","Database","ORM Quickstarts","ORM Quickstarts","Postgres.js","Postgres.js"]
+nav_prev: {"path": "supabase/docs/guides/database/pgadmin/index.md", "title": "Connecting with pgAdmin"}
+nav_next: {"path": "supabase/docs/guides/database/psql/index.md", "title": "Connecting with PSQL"}
 ---
+
 # 
 
 Postgres.js
@@ -51,3 +54,4 @@ Use the connection to execute commands.
 ```
 1import sql from './db.js'23async function getUsersOver(age) {4  const users = await sql`5    select name, age6    from users7    where age > ${ age }8  `9  // users = Result [{ name: "Walter", age: 80 }, { name: 'Murray', age: 68 }, ...]10  return users11}
 ```
+

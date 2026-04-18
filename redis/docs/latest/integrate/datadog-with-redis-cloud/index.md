@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:09:20.331Z"
 content_hash: "b7fbf375c2620e2c669d8913f7500719ddfa6017e724b1c93a36055287fb0ce0"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Datadog with Redis Cloud","→","Datadog with Redis Cloud"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Datadog with Redis Cloud","→","Datadog with Redis Cloud"]
+nav_prev: {"path": "redis/docs/latest/develop/reference/command-arguments/index.md", "title": "Redis command arguments"}
+nav_next: {"path": "redis/docs/latest/develop/data-types/json/developer/index.md", "title": "Developer notes"}
 ---
+
 # Datadog with Redis Cloud
 
 To collect, view, and monitor metrics data from your databases and other cluster components, you can connect Datadog to your Redis Cloud cluster using the Redis Datadog Integration.
@@ -71,3 +74,4 @@ A number of additional dashboards will be included in the next release (v1.1.0).
 See [Observability and monitoring guidance](/docs/latest/integrate/prometheus-with-redis-enterprise/observability/) for monitoring details.
 
 ## On this page
+

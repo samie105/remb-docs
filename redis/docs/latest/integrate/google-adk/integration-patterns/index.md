@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:49:10.513Z"
 content_hash: "1af3b75c1ab18c02712b2dc13957008e5311e1214e5e47732dbfebf40e5984f5"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Redis with Google Agent Development Kit (ADK)","→","Redis with Google Agent Development Kit (ADK)","→\n      \n        Memory integration patterns","→","Memory integration patterns"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Redis with Google Agent Development Kit (ADK)","→","Redis with Google Agent Development Kit (ADK)","→\n      \n        Memory integration patterns","→","Memory integration patterns"]
+nav_prev: {"path": "redis/docs/latest/develop/ai/redisvl/install/index.md", "title": "Install RedisVL"}
+nav_next: {"path": "redis/docs/latest/integrate/jedis/index.md", "title": "Java client for Redis"}
 ---
+
 # Memory integration patterns
 
 Three approaches for connecting Google ADK agents to Redis memory.
@@ -185,3 +188,4 @@ The [travel\_agent\_memory\_hybrid](https://github.com/redis-developer/adk-redis
 *   [Car dealership tutorial](https://redis.io/tutorials/build-a-car-dealership-agent-with-google-adk-and-redis-agent-memory/)
 
 ## On this page
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:39:21.812Z"
 content_hash: "72e9dfb553997f04c219f41c14958b4d8923088a241fbad331729539533dcaad"
 menu_path: ["Auth","Auth","Security","Security","JWT Signing Keys","JWT Signing Keys"]
 section_path: ["Auth","Auth","Security","Security","JWT Signing Keys","JWT Signing Keys"]
+nav_prev: {"path": "supabase/docs/guides/auth/signout/index.md", "title": "Signing out"}
+nav_next: {"path": "supabase/docs/guides/auth/social-login/index.md", "title": "Social Login"}
 ---
+
 # 
 
 JWT Signing Keys
@@ -336,3 +339,4 @@ This is to ensure you have the ability, should you need it, to go back to the le
 ### Why does revoking the legacy JWT secret require disabling of `anon` and `service_role` API keys?[#](#why-does-revoking-the-legacy-jwt-secret-require-disabling-of-anon-and-servicerole-api-keys)
 
 Unfortunately `anon` and `service_role` are not just API keys, but are also valid JSON Web Tokens, signed by the legacy JWT secret. Revoking the legacy JWT secret means that your application no longer trusts any JWT signed with it. Therefore before you revoke the legacy JWT secret, you must disable the `anon` and `service_role` to ensure a consistent security setup.
+

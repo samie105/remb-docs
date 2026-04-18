@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:17:01.364Z"
 content_hash: "287f4ade703651cfa1af93fabfba4290198954e29c0336e9db147ceb58c05adf"
 menu_path: ["Migrate from Sequelize to Drizzle"]
 section_path: []
+nav_prev: {"path": "drizzle/docs/migrate/migrate-from-prisma/index.md", "title": "Migrate from Prisma to Drizzle"}
+nav_next: {"path": "drizzle/docs/migrate/migrate-from-typeorm/index.md", "title": "Migrate from TypeORM to Drizzle"}
 ---
+
 This guide provides a straightforward approach to migrating a basic **Sequelize** project to **Drizzle ORM**. Although the example focuses on `PostgreSQL`, the process is similar for other supported databases.
 
 Regardless of your application type or API layer, the steps to transition from **Sequelize** to **Drizzle ORM** remain consistent:
@@ -209,7 +212,7 @@ Expand
 
 #### Install Drizzle ORM & Drizzle Kit[](#install-drizzle-orm--drizzle-kit)
 
-The first step is to install **Drizzle ORM** and `pg` package which we will use as a driver. The second step is to install **Drizzle Kit** and types for `pg`. [Drizzle Kit](https://orm.drizzle.team/docs/kit-overview) - CLI companion for automatic SQL migrations generation and rapid prototyping.
+The first step is to install **Drizzle ORM** and `pg` package which we will use as a driver. The second step is to install **Drizzle Kit** and types for `pg`. [Drizzle Kit](drizzle/docs/kit-overview/index.md) - CLI companion for automatic SQL migrations generation and rapid prototyping.
 
 npm
 
@@ -921,3 +924,4 @@ try {
   console.error(e);
 }
 ```
+

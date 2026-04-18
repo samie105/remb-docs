@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:41:43.311Z"
 content_hash: "3cb395b2eff7d61cc996e2dbdcb027a5b1d9409b33ff9a3893be0bd86b98d289"
 menu_path: ["Database","Database","Overview","Overview"]
 section_path: ["Database","Database","Overview","Overview"]
+nav_prev: {"path": "supabase/docs/guides/database/orioledb/index.md", "title": "OrioleDB Overview"}
+nav_next: {"path": "supabase/docs/guides/database/partitions/index.md", "title": "Partitioning tables"}
 ---
+
 # 
 
 Database
@@ -71,3 +74,4 @@ Read about resetting your database password [here](/docs/guides/database/managin
 
 *   Read more about [Postgres](https://www.postgresql.org/about/)
 *   Sign in: [supabase.com/dashboard](/dashboard)
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:06:58.057Z"
 content_hash: "020b01a95cf8a1f2e52ab9a45aadd6b391fe36617b463a41b43e368391253c36"
 menu_path: ["@std/webgpu"]
 section_path: []
+nav_prev: {"path": "deno/deno/runtime/reference/std/uuid/index.md", "title": "@std/uuid"}
+nav_next: {"path": "deno/deno/runtime/reference/std/yaml/index.md", "title": "@std/yaml"}
 ---
+
 On this page
 
 *   [Overview](#overview)
@@ -48,3 +51,4 @@ deno add jsr:@std/webgpu
 ```
 
 [See all symbols in @std/webgpu on](https://jsr.io/@std/webgpu/doc)
+

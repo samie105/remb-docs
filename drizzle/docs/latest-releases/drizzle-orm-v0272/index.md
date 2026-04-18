@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:10:40.795Z"
 content_hash: "19bacdf4a9036c5ac687e3d989a95600328efab7b27b716047d4b1771ca5e6f4"
 menu_path: ["Drizzle ORM - DrizzleORM v0.27.2 release"]
 section_path: []
+nav_prev: {"path": "drizzle/docs/latest-releases/drizzle-orm-v0162/index.md", "title": "Drizzle ORM - DrizzleORM v0.16.2 release"}
+nav_next: {"path": "drizzle/docs/latest-releases/drizzle-orm-v0280/index.md", "title": "Drizzle ORM - DrizzleORM v0.28.0 release"}
 ---
+
 DrizzleORM v0.27.2 release
 
 Jul 12, 2023
@@ -82,3 +85,4 @@ const table = sqliteTable('table', {
     second: unique('custom').on(t.name, t.state),
 }));
 ```
+

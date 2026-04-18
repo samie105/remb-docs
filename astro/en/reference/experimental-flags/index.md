@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:46:59.018Z"
 content_hash: "ec15797969d55f72663aa0002787b389462e28a02f15bc16c33110a179079bec"
 menu_path: ["Configuring experimental flags"]
 section_path: []
+nav_prev: {"path": "astro/en/reference/programmatic-reference/index.md", "title": "Programmatic Astro API (experimental)"}
+nav_next: {"path": "astro/en/reference/experimental-flags/route-caching/index.md", "title": "Experimental route caching"}
 ---
+
 # Configuring experimental flags
 
 Experimental features are available only after enabling a flag in the Astro configuration file.
@@ -26,3 +29,4 @@ These flags allow you to participate in feature development by reporting issues 
 We recommend [updating Astro](/en/upgrade-astro/#upgrade-to-the-latest-version) frequently, and keeping up with release notes in the [Astro changelog](https://github.com/withastro/astro/blob/main/packages/astro/CHANGELOG.md) which will inform you of any changes needed to your project code. The experimental feature documentation will always be updated for the current released version only.
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

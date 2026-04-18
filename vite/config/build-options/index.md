@@ -9,14 +9,17 @@ last_crawled_at: "2026-04-18T16:32:09.232Z"
 content_hash: "eb5ff70ca687e4eeb2f9125bd01d75e556e6728e6d158a993bedde6f01fc2e7b"
 menu_path: ["Build Options ​"]
 section_path: []
+nav_prev: {"path": "vite/config/dep-optimization-options/index.md", "title": "Dep Optimization Options \u200b"}
+nav_next: {"path": "vite/config/preview-options/index.md", "title": "Preview Options \u200b"}
 ---
+
 Unless noted, the options in this section are only applied to build.
 
 ## build.target [​](#build-target)
 
 *   **Type:** `string | string[]`
 *   **Default:** `'baseline-widely-available'`
-*   **Related:** [Browser Compatibility](https://vite.dev/guide/build#browser-compatibility)
+*   **Related:** [Browser Compatibility](vite/guide/build/index.md#browser-compatibility)
 
 Browser compatibility target for the final bundle. The default value is a Vite special value, `'baseline-widely-available'`, which targets browsers that are included in the [Baseline](https://web-platform-dx.github.io/web-features/) Widely Available on 2026-01-01. Specifically, it is `['chrome111', 'edge111', 'firefox114', 'safari16.4']`.
 
@@ -39,7 +42,7 @@ js
 import 'vite/modulepreload-polyfill'
 ```
 
-Note: the polyfill does **not** apply to [Library Mode](https://vite.dev/guide/build#library-mode). If you need to support browsers without native dynamic import, you should probably avoid using it in your library.
+Note: the polyfill does **not** apply to [Library Mode](vite/guide/build/index.md#library-mode). If you need to support browsers without native dynamic import, you should probably avoid using it in your library.
 
 The polyfill can be disabled using `{ polyfill: false }`.
 
@@ -72,7 +75,7 @@ modulePreload: {
 },
 ```
 
-The resolved dependency paths can be further modified using [`experimental.renderBuiltUrl`](https://vite.dev/guide/build#advanced-base-options).
+The resolved dependency paths can be further modified using [`experimental.renderBuiltUrl`](vite/guide/build/index.md#advanced-base-options).
 
 ## build.polyfillModulePreload [​](#build-polyfillmodulepreload)
 
@@ -87,14 +90,14 @@ Whether to automatically inject a [module preload polyfill](https://guybedford.c
 *   **Type:** `string`
 *   **Default:** `dist`
 
-Specify the output directory (relative to [project root](https://vite.dev/guide/#index-html-and-project-root)).
+Specify the output directory (relative to [project root](vite/guide/index.md#index-html-and-project-root)).
 
 ## build.assetsDir [​](#build-assetsdir)
 
 *   **Type:** `string`
 *   **Default:** `assets`
 
-Specify the directory to nest generated assets under (relative to `build.outDir`. This is not used in [Library Mode](https://vite.dev/guide/build#library-mode)).
+Specify the directory to nest generated assets under (relative to `build.outDir`. This is not used in [Library Mode](vite/guide/build/index.md#library-mode)).
 
 ## build.assetsInlineLimit [​](#build-assetsinlinelimit)
 
@@ -138,7 +141,7 @@ It should only be used when you are targeting a non-mainstream browser. One exam
 *   **Type:** `boolean | 'lightningcss' | 'esbuild'`
 *   **Default:** `'lightningcss'`, but `false` if [`build.minify`](#build-minify) is disabled for client build
 
-This option allows users to override CSS minification specifically instead of defaulting to `build.minify`, so you can configure minification for JS and CSS separately. Vite uses [Lightning CSS](https://lightningcss.dev/minification.html) by default to minify CSS. It can be configured using [`css.lightningcss`](https://vite.dev/config/shared-options#css-lightningcss). Set the option to `'esbuild'` to use esbuild instead.
+This option allows users to override CSS minification specifically instead of defaulting to `build.minify`, so you can configure minification for JS and CSS separately. Vite uses [Lightning CSS](https://lightningcss.dev/minification.html) by default to minify CSS. It can be configured using [`css.lightningcss`](vite/config/shared-options/index.md#css-lightningcss). Set the option to `'esbuild'` to use esbuild instead.
 
 esbuild must be installed when it is set to `'esbuild'`.
 
@@ -171,14 +174,14 @@ This option is an alias of `build.rolldownOptions` option. Use `build.rolldownOp
 ## build.dynamicImportVarsOptions [​](#build-dynamicimportvarsoptions)
 
 *   **Type:** `{ include?: string | RegExp | (string | RegExp)[], exclude?: string | RegExp | (string | RegExp)[] }`
-*   **Related:** [Dynamic Import](https://vite.dev/guide/features#dynamic-import)
+*   **Related:** [Dynamic Import](vite/guide/features/index.md#dynamic-import)
 
 Whether to transform dynamic imports with variables.
 
 ## build.lib [​](#build-lib)
 
 *   **Type:** `{ entry: string | string[] | { [entryAlias: string]: string }, name?: string, formats?: ('es' | 'cjs' | 'umd' | 'iife')[], fileName?: string | ((format: ModuleFormat, entryName: string) => string), cssFileName?: string }`
-*   **Related:** [Library Mode](https://vite.dev/guide/build#library-mode)
+*   **Related:** [Library Mode](vite/guide/build/index.md#library-mode)
 
 Build as a library. `entry` is required since the library cannot use HTML as entry. `name` is the exposed global variable and is required when `formats` includes `'umd'` or `'iife'`. Default `formats` are `['es', 'umd']`, or `['es', 'cjs']`, if multiple entries are used.
 
@@ -208,7 +211,7 @@ export default defineConfig({
 
 *   **Type:** `boolean | { fileName?: string }`
 *   **Default:** `false`
-*   **Related:** [License](https://vite.dev/guide/features#license)
+*   **Related:** [License](vite/guide/features/index.md#license)
 
 When set to `true`, the build will generate a `.vite/license.md` file that includes all bundled dependencies' licenses.
 
@@ -261,19 +264,19 @@ export default defineConfig({
 
 *   **Type:** `boolean | string`
 *   **Default:** `false`
-*   **Related:** [Backend Integration](https://vite.dev/guide/backend-integration)
+*   **Related:** [Backend Integration](vite/guide/backend-integration/index.md)
 
 Whether to generate a manifest file that contains a mapping of non-hashed asset filenames to their hashed versions, which can then be used by a server framework to render the correct asset links.
 
 When the value is a string, it will be used as the manifest file path relative to `build.outDir`. When set to `true`, the path would be `.vite/manifest.json`.
 
-If you are writing a plugin and need to inspect each output chunk or asset's related CSS and static assets during the build, you can also use [`viteMetadata` output bundle metadata API](https://vite.dev/guide/api-plugin#output-bundle-metadata).
+If you are writing a plugin and need to inspect each output chunk or asset's related CSS and static assets during the build, you can also use [`viteMetadata` output bundle metadata API](vite/guide/api-plugin/index.md#output-bundle-metadata).
 
 ## build.ssrManifest [​](#build-ssrmanifest)
 
 *   **Type:** `boolean | string`
 *   **Default:** `false`
-*   **Related:** [Server-Side Rendering](https://vite.dev/guide/ssr)
+*   **Related:** [Server-Side Rendering](vite/guide/ssr/index.md)
 
 Whether to generate a SSR manifest file for determining style links and asset preload directives in production.
 
@@ -283,7 +286,7 @@ When the value is a string, it will be used as the manifest file path relative t
 
 *   **Type:** `boolean | string`
 *   **Default:** `false`
-*   **Related:** [Server-Side Rendering](https://vite.dev/guide/ssr)
+*   **Related:** [Server-Side Rendering](vite/guide/ssr/index.md)
 
 Produce SSR-oriented build. The value can be a string to directly specify the SSR entry, or `true`, which requires specifying the SSR entry via `rollupOptions.input`.
 
@@ -334,7 +337,7 @@ In addition, you can also pass a `maxWorkers: number` option to specify the max 
 *   **Type:** `boolean`
 *   **Default:** `true`
 
-Set to `false` to disable writing the bundle to disk. This is mostly used in [programmatic `build()` calls](https://vite.dev/guide/api-javascript#build) where further post processing of the bundle is needed before writing to disk.
+Set to `false` to disable writing the bundle to disk. This is mostly used in [programmatic `build()` calls](vite/guide/api-javascript/index.md#build) where further post processing of the bundle is needed before writing to disk.
 
 ## build.emptyOutDir [​](#build-emptyoutdir)
 
@@ -373,4 +376,5 @@ Set to `{}` to enable rollup watcher. This is mostly used in cases that involve 
 
 Using Vite on Windows Subsystem for Linux (WSL) 2
 
-There are cases that file system watching does not work with WSL2. See [`server.watch`](https://vite.dev/config/server-options#server-watch) for more details.
+There are cases that file system watching does not work with WSL2. See [`server.watch`](vite/config/server-options/index.md#server-watch) for more details.
+

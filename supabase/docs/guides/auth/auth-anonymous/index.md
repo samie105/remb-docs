@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:36:19.818Z"
 content_hash: "0a41218ca7d5912df3917cca96fe55018291cfc6bce1bbcc4aa590cf7ff16b1a"
 menu_path: ["Auth","Auth","Flows (How-tos)","Flows (How-tos)","Anonymous Sign-Ins","Anonymous Sign-Ins"]
 section_path: ["Auth","Auth","Flows (How-tos)","Flows (How-tos)","Anonymous Sign-Ins","Anonymous Sign-Ins"]
+nav_prev: {"path": "supabase/docs/guides/auth/audit-logs/index.md", "title": "Auth Audit Logs"}
+nav_next: {"path": "supabase/docs/guides/auth/auth-email-passwordless/index.md", "title": "Passwordless email logins"}
 ---
+
 # 
 
 Anonymous Sign-Ins
@@ -122,3 +125,4 @@ Automatic cleanup of anonymous users is currently not available. Instead, you ca
 *   [Supabase JS Client](https://github.com/supabase/supabase-js)
 *   [Supabase Flutter Client](https://github.com/supabase/supabase-flutter)
 *   [Supabase Kotlin Client](https://github.com/supabase-community/supabase-kt)
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:59:34.325Z"
 content_hash: "95b9fd3744b7d739bfc407940edfb053d687ff5ef114408e02de9faff24e995c"
 menu_path: ["Deno Standard Library (@std)"]
 section_path: []
+nav_prev: {"path": "deno/deno/runtime/reference/cli/x/index.md", "title": "deno x"}
+nav_next: {"path": "deno/deno/runtime/reference/std/assert/index.md", "title": "Standard Assertions (@std/assert)"}
 ---
+
 On this page
 
 *   [Packages](#packages)
@@ -63,3 +66,4 @@ The Deno standard library is published as a set of modular JSR packages under th
 *   [@std/yaml](/runtime/reference/std/yaml/) – Parsing and serializing of YAML files
 
 > This index and the individual package overview sections are generated. Add extra examples by creating files in `_overrides/<package>.md`.
+

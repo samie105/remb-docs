@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:14:30.309Z"
 content_hash: "2473f0d61069c53a6fcda667d397f8b86bd90a3ca22ceb6a8bc7e761bd638a7c"
 menu_path: ["Storage - Web documentation"]
 section_path: []
+nav_prev: {"path": "deno/deno/api/web/platform/index.md", "title": "Platform - Web documentation"}
+nav_next: {"path": "deno/deno/api/web/streams/index.md", "title": "Streams - Web documentation"}
 ---
+
 ### Interfaces [#](#Interfaces)
 
 I
@@ -41,3 +44,4 @@ v
 [sessionStorage](./././~/sessionStorage "sessionStorage")
 
 Deno's `sessionStorage` API operates similarly to the [`localStorage`](./././~/localStorage) API, but it is intended for storing data temporarily for the duration of a session. Data stored in sessionStorage is cleared when the application session or process ends. This makes it suitable for temporary data that you do not need to persist across user sessions.
+

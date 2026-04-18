@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:41:09.556Z"
 content_hash: "bff9970055ebe4b3f4967080562c7f3273265584d8a1fe081b8317c23d03ec5b"
 menu_path: ["Database","Database","Debugging","Debugging","Debugging and monitoring","Debugging and monitoring"]
 section_path: ["Database","Database","Debugging","Debugging","Debugging and monitoring","Debugging and monitoring"]
+nav_prev: {"path": "supabase/docs/guides/database/import-data/index.md", "title": "Import data into Supabase"}
+nav_next: {"path": "supabase/docs/guides/database/functions/index.md", "title": "Database Functions"}
 ---
+
 # 
 
 Debugging and monitoring
@@ -193,3 +196,4 @@ Using the query plan analyzer to optimize your queries is a large topic, with a 
 *   [Enterprise DB.](https://www.enterprisedb.com/blog/postgresql-query-optimization-performance-tuning-with-explain-analyze)
 
 You can pair the information available from `pg_stat_statements` with the detailed system metrics available [via your metrics endpoint](../platform/metrics) to better understand the behavior of your DB and the queries you're executing against it.
+

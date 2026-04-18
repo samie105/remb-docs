@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:48:04.342Z"
 content_hash: "5ccf565fa9d6b287c4accc615945b987288a099bc6c8be94536c1512ef3c1919"
 menu_path: ["PostgreSQL: Documentation: 18: UNLISTEN"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/view-pg-views.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.37.\u00a0pg_views"}
+nav_next: {"path": "postgres/docs/current/spi-spi-gettypeid.html/index.md", "title": "PostgreSQL: Documentation: 18: SPI_gettypeid"}
 ---
+
 UNLISTEN — stop listening for a notification
 
 ## Synopsis
@@ -57,3 +60,4 @@ NOTIFY virtual;
 ## Compatibility
 
 There is no `UNLISTEN` command in the SQL standard.
+

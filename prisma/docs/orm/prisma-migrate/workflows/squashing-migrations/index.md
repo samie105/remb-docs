@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:51:23.638Z"
 content_hash: "22b39347e7efe2d4152aa889b6e766b56a2cf04192c77fb6a2762c31cd9acf40"
 menu_path: ["Squashing migrations"]
 section_path: []
+nav_prev: {"path": "prisma/docs/orm/prisma-migrate/workflows/seeding/index.md", "title": "Seeding"}
+nav_next: {"path": "prisma/docs/orm/prisma-migrate/workflows/troubleshooting/index.md", "title": "Troubleshooting"}
 ---
+
 Workflows
 
 How to squash multiple migration files into a single migration
@@ -19,7 +22,7 @@ It is sometimes useful to squash either some or all migration files into a singl
 *   [Migrating cleanly from a development environment](#migrating-cleanly-from-a-development-environment) by squashing your local migrations into one before merging
 *   [Creating a clean history in a production environment](#creating-a-clean-history-in-a-production-environment) by squashing all migrations into a single file
 
-In both cases, Prisma Migrate provides the tools for doing this, by using the [`migrate diff`](https://www.prisma.io/docs/orm/reference/prisma-cli-reference#migrate-diff) command to compare two database schemas and output a single SQL file that takes you from one to the other. The rest of this guide gives detailed instructions on how to carry this out in these two scenarios.
+In both cases, Prisma Migrate provides the tools for doing this, by using the [`migrate diff`](prisma/docs/orm/reference/prisma-cli-reference/index.md#migrate-diff) command to compare two database schemas and output a single SQL file that takes you from one to the other. The rest of this guide gives detailed instructions on how to carry this out in these two scenarios.
 
 ### [Migrating cleanly from a development environment](#migrating-cleanly-from-a-development-environment)
 
@@ -87,7 +90,7 @@ Then follow these steps, either on your `main` branch or on a newly checked out 
 
 *   Mark this migration as having been applied on production, to prevent it from being run there:
     
-    You can do this using the [`migrate resolve`](https://www.prisma.io/docs/orm/reference/prisma-cli-reference#migrate-resolve) command to mark the migration in the `000000000000_squashed_migrations` directory as already applied:
+    You can do this using the [`migrate resolve`](prisma/docs/orm/reference/prisma-cli-reference/index.md#migrate-resolve) command to mark the migration in the `000000000000_squashed_migrations` directory as already applied:
     
 
 You should now have a single migration file that is marked as having been applied on production. New checkouts only get one single migration taking them to the state of the production database schema.
@@ -95,3 +98,4 @@ You should now have a single migration file that is marked as having been applie
 The production database still contains the history of applied migrations in the migrations table. The history of the migrations folder and data models is also still available in source control.
 
 [Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/prisma-migrate/workflows/squashing-migrations.mdx)
+

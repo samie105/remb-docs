@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:20:30.659Z"
 content_hash: "1293d3da5da6f4e6557bd1d9e22dedd7ced30146f58f3f80e502064425ada3b9"
 menu_path: ["Generators"]
 section_path: []
+nav_prev: {"path": "drizzle/docs/seed-overview/index.md", "title": "Drizzle Seed"}
+nav_next: {"path": "drizzle/docs/seed-versioning/index.md", "title": "Versioning"}
 ---
+
 warning
 
 For now, specifying `arraySize` along with `isUnique` in generators that support it will result in unique values being generated (not unique arrays), which will then be packed into arrays.
@@ -1723,3 +1726,4 @@ await seed(db, schema, { count: 1000 }).refine((funcs) => ({
   },
 }));
 ```
+

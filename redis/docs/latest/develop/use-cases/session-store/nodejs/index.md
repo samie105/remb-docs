@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:50:22.121Z"
 content_hash: "efc3cde1d15ea93e79551e40ca597142b057098089466356de45df92ac803a87"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Redis session store","→","Redis session store","→\n      \n        Redis session store with node-redis","→","Redis session store with node-redis"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Redis session store","→","Redis session store","→\n      \n        Redis session store with node-redis","→","Redis session store with node-redis"]
+nav_prev: {"path": "redis/docs/latest/develop/use-cases/time-series-dashboard/nodejs/index.md", "title": "Rolling sensor graph demo with Redis and Node.js"}
+nav_next: {"path": "redis/docs/latest/develop/use-cases/rate-limiter/nodejs/index.md", "title": "Token bucket rate limiter with Redis and Node.js"}
 ---
+
 # Redis session store with node-redis
 
 Implement a Redis-backed session store in Node.js with node-redis
@@ -250,3 +253,4 @@ For more Redis data modeling patterns, see:
 *   [Redis data types](/docs/latest/develop/data-types/)
 
 ## On this page
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:45:49.450Z"
 content_hash: "99c558cd738be13023f3e0eeaf7756b003cd944e607b4546c9d0915702e6a9bc"
 menu_path: ["PostgreSQL: Documentation: 18: 41.10. Trigger Functions"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/pgfreespacemap.html/index.md", "title": "PostgreSQL: Documentation: 18: F.27.\u00a0pg_freespacemap \u2014 examine the free space map"}
+nav_next: {"path": "postgres/docs/current/queries-union.html/index.md", "title": "PostgreSQL: Documentation: 18: 7.4.\u00a0Combining Queries (UNION, INTERSECT, EXCEPT)"}
 ---
+
 PL/pgSQL can be used to define trigger functions on data changes or database events. A trigger function is created with the `CREATE FUNCTION` command, declaring it as a function with no arguments and a return type of `trigger` (for data change triggers) or `event_trigger` (for database event triggers). Special local variables named ``TG__`something`_`` are automatically defined to describe the condition that triggered the call.
 
 ### 41.10.1. Triggers on Data Changes [#](#PLPGSQL-DML-TRIGGER)
@@ -429,3 +432,4 @@ END;
 $$ LANGUAGE plpgsql;
 
 CREATE EVENT TRIGGER snitch ON ddl\_command\_start EXECUTE FUNCTION snitch();
+

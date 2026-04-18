@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:58:02.535Z"
 content_hash: "a13eafb8f0bf323cd799a0a32980abf1df62dab5656b6313d5ea85f4a473701e"
 menu_path: ["Start with Supabase","Start with Supabase","Framework Quickstarts","Framework Quickstarts","Astro","Astro"]
 section_path: ["Start with Supabase","Start with Supabase","Framework Quickstarts","Framework Quickstarts","Astro","Astro"]
+nav_prev: {"path": "supabase/docs/guides/functions/examples/upstash-redis/index.md", "title": "Upstash Redis"}
+nav_next: {"path": "supabase/docs/guides/functions/examples/stripe-webhooks/index.md", "title": "Handling Stripe Webhooks"}
 ---
+
 # 
 
 Use Supabase with Astro
@@ -170,3 +173,4 @@ Run the development server, go to [http://localhost:4321/instruments](http://loc
 *   Set up [Auth](/docs/guides/auth) for your app
 *   [Insert more data](/docs/guides/database/import-data) into your database
 *   Upload and serve static files using [Storage](/docs/guides/storage)
+

@@ -9,35 +9,10 @@ last_crawled_at: "2026-04-18T16:50:14.405Z"
 content_hash: "63a65bba32195b150636d3fcd7cbca672cdcfc48a42226bfa097b8a71ff7a1b3"
 menu_path: ["Configure a private registry for an organization scope with bun install"]
 section_path: []
+nav_prev: {"path": "bun/bun/docs/guides/install/npm-alias/index.md", "title": "Install a package under a different name"}
+nav_next: {"path": "bun/bun/docs/guides/install/trusted/index.md", "title": "Add a trusted dependency"}
 ---
-[Skip to main content](#content-area)
 
-[Bun home page![light logo](https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z_zHyy/logo/logo-with-wordmark-dark.svg?fit=max&auto=format&n=JUhaF6Mf68z_zHyy&q=85&s=3f55cd23822028e40658b192c927f3e4)![dark logo](https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z_zHyy/logo/logo-with-wordmark-light.svg?fit=max&auto=format&n=JUhaF6Mf68z_zHyy&q=85&s=8a0c5928d9dc3631f0d33e17c257e2ec)](/docs)
-
-[Runtime
-
-](/docs)[Package Manager
-
-](/docs/pm/cli/install)[Bundler
-
-](/docs/bundler)[Test Runner
-
-](/docs/test)[Guides
-
-](/docs/guides)[Reference
-
-](https://bun.com/reference)[Blog
-
-](https://bun.com/blog)[Feedback
-
-](/docs/feedback)
-
-Private registries can be configured using either [`.npmrc`](/docs/pm/npmrc) or [`bunfig.toml`](/docs/runtime/bunfig#install-registry). While both are supported, we recommend using **bunfig.toml** for enhanced flexibility and Bun-specific options. To configure a registry for a particular npm scope:
-
-bunfig.toml
-
-```
-[install.scopes]
 # as a string
 "@myorg1" = "https://usertitle:password@registry.myorg.com/"
 
@@ -86,3 +61,4 @@ Using bun install with an Azure Artifacts npm registry
 Next
 
 ](/docs/guides/install/azure-artifacts)
+

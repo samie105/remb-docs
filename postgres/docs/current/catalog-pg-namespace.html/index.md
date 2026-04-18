@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:46:17.335Z"
 content_hash: "9c8704f41ae983b35fa1b996dbbf8202678e833a179ef3715b27208db8892fdb"
 menu_path: ["PostgreSQL: Documentation: 18: 52.32. pg_namespace"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/app-pgwalsummary.html/index.md", "title": "PostgreSQL: Documentation: 18: pg_walsummary"}
+nav_next: {"path": "postgres/docs/current/sql-commit-prepared.html/index.md", "title": "PostgreSQL: Documentation: 18: COMMIT PREPARED"}
 ---
+
 Development Versions: [devel](https://www.postgresql.org/docs/devel/catalog-pg-namespace.html "PostgreSQL devel - 52.32. pg_namespace")
 
 52.32. `pg_namespace`
@@ -65,3 +68,4 @@ Access privileges; see [Section 5.8](https://www.postgresql.org/docs/current/dd
 [Home](https://www.postgresql.org/docs/current/index.html "PostgreSQL 18.3 Documentation")
 
  52.33. `pg_opclass`
+

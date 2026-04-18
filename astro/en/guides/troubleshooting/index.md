@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:41:45.231Z"
 content_hash: "1dfecfe4fe1f7d90d9cf8ec9ddf17b83dd8501b81cf6c4ae261877581bd780dc"
 menu_path: ["Troubleshooting"]
 section_path: []
+nav_prev: {"path": "astro/en/guides/upgrade-to/v1/index.md", "title": "Legacy v0.x Upgrade Guide"}
+nav_next: {"path": "astro/en/guides/migrate-to-astro/index.md", "title": "Migrate an existing project to Astro"}
 ---
+
 # Troubleshooting
 
 Astro provides several different tools to help you troubleshoot and debug your code.
@@ -252,3 +255,4 @@ Visit the current [open Issues in Astro](https://github.com/withastro/astro/issu
 You can also visit [Roadmap Discussions](https://github.com/withastro/roadmap/discussions) to see whether you’ve found a known limitation of Astro, and check to see whether there are current proposals related to your use case.
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

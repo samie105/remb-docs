@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:04:02.866Z"
 content_hash: "7bba2a727f7f147209912ab0bc88383dcbf0eae84df146cf98f7b8dc6da42658"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Redis session store","→","Redis session store","→\n      \n        Redis session store with Java (Lettuce)","→","Redis session store with Java (Lettuce)"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Redis session store","→","Redis session store","→\n      \n        Redis session store with Java (Lettuce)","→","Redis session store with Java (Lettuce)"]
+nav_prev: {"path": "redis/docs/latest/develop/use-cases/rate-limiter/java-lettuce/index.md", "title": "Token bucket rate limiter with Redis and Java (Lettuce)"}
+nav_next: {"path": "redis/docs/latest/develop/clients/jedis/index.md", "title": "Jedis guide (Java)"}
 ---
+
 # Redis session store with Java (Lettuce)
 
 Implement a Redis-backed session store in Java with Lettuce
@@ -279,3 +282,4 @@ For more Redis data modeling patterns, see:
 *   [Jedis session store](/docs/latest/develop/use-cases/session-store/java-jedis/)
 
 ## On this page
+

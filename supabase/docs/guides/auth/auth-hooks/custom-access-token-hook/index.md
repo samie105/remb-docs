@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:52:45.591Z"
 content_hash: "78471ad6fff45393dcf583fe8f69856b7631118ddfc599514d3023e460d19405"
 menu_path: ["Auth","Auth","More","More","More","Auth Hooks","Auth Hooks","Custom access token hook","Custom access token hook"]
 section_path: ["Auth","Auth","More","More","More","Auth Hooks","Auth Hooks","Custom access token hook","Custom access token hook"]
+nav_prev: {"path": "supabase/docs/guides/auth/auth-hooks/before-user-created-hook/index.md", "title": "Before User Created Hook"}
+nav_next: {"path": "supabase/docs/guides/auth/auth-hooks/mfa-verification-hook/index.md", "title": "MFA Verification Hook"}
 ---
+
 # 
 
 Custom Access Token Hook
@@ -89,3 +92,4 @@ Refer to the [Postgres JSON functions](https://www.postgresql.org/docs/current/f
 ```
 1create or replace function public.custom_access_token_hook(event jsonb)2returns jsonb3language plpgsql4as $$5  declare6    original_claims jsonb;7    new_claims jsonb;8    claim text;9  begin10    original_claims = event->'claims';11    new_claims = '{}'::jsonb;1213    foreach claim in array array[14      -- add claims you want to keep here15      'iss',16      'aud',17      'exp',18      'iat',19      'sub',20      'role',21      'aal',22      'session_id',23      'email',24      'phone',25      'is_anonymous'26   ] loop27      if original_claims ? claim then28        -- original_claims contains one of the listed claims, set it on new_claims29        new_claims = jsonb_set(new_claims, array[claim], original_claims->claim);30      end if;31    end loop;3233    return jsonb_build_object('claims', new_claims);34  end35$$;
 ```
+

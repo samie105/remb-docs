@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:03:47.556Z"
 content_hash: "a9aca573da8308f0389d3031528808b3fb756e95bcd08689c9a3cf827f758cb9"
 menu_path: ["Drizzle ORM - SQL Cursor-based pagination"]
 section_path: []
+nav_prev: {"path": "drizzle/docs/guides/count-rows/index.md", "title": "Drizzle ORM - Count rows"}
+nav_next: {"path": "drizzle/docs/guides/d1-http-with-drizzle-kit/index.md", "title": "Drizzle ORM - Cloudflare D1 HTTP API with Drizzle Kit"}
 ---
+
 Drizzle | SQL Cursor-based pagination
 
 PostgreSQL
@@ -234,4 +237,5 @@ await nextUserPage(3);
 
 **Drawbacks** of `cursor-based` pagination: the inability to directly navigate to a specific page and complexity of implementation. Since you add more columns to the sort order, you’ll need to add more filters to the `where` clause for the cursor comparison to ensure consistent pagination.
 
-So, if you need to directly navigate to a specific page or you need simpler implementation of pagination, you should consider using [offset/limit](https://orm.drizzle.team/docs/guides/limit-offset-pagination) pagination instead.
+So, if you need to directly navigate to a specific page or you need simpler implementation of pagination, you should consider using [offset/limit](drizzle/docs/guides/limit-offset-pagination/index.md) pagination instead.
+

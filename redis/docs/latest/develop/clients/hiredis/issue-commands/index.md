@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:03:43.933Z"
 content_hash: "014da858ec99e94231c58513deb4f1c1c7e855405305f002ab8311fb51db1631"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Connect with Redis client API libraries","→","Connect with Redis client API libraries","→\n      \n        hiredis guide (C)","→","hiredis guide (C)","→\n      \n        Issue commands","→","Issue commands"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Connect with Redis client API libraries","→","Connect with Redis client API libraries","→\n      \n        hiredis guide (C)","→","hiredis guide (C)","→\n      \n        Issue commands","→","Issue commands"]
+nav_prev: {"path": "redis/docs/latest/develop/clients/ioredis/index.md", "title": "ioredis guide (JavaScript)"}
+nav_next: {"path": "redis/docs/latest/develop/use-cases/leaderboard/java-lettuce/index.md", "title": "Redis leaderboard with Java (Lettuce)"}
 ---
+
 # Issue commands
 
 Construct commands and send them to the Redis server.
@@ -158,3 +161,4 @@ Note that you should normally disconnect asynchronously from a callback when you
 The information in the `redisReply` object has several formats, and the format for a particular reply depends on the command that generated it. See [Handle replies](/docs/latest/develop/clients/hiredis/handle-replies/) to learn about the different reply formats and how to use them.
 
 ## On this page
+

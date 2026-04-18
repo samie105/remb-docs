@@ -9,15 +9,9 @@ last_crawled_at: "2026-04-18T17:18:32.336Z"
 content_hash: "2c869adc304461a1e3a7926d1a67c085519a6d487bce0255608c5fe046f17552"
 menu_path: ["stroke"]
 section_path: []
+nav_prev: {"path": "tailwind/docs/fill/index.md", "title": "fill"}
+nav_next: {"path": "tailwind/docs/stroke-width/index.md", "title": "stroke-width"}
 ---
-[](/)
-
-[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
-
-1.  SVG
-2.  stroke
-
-SVG
 
 # stroke
 
@@ -152,3 +146,4 @@ Short, tactical video lessons from the creator of Tailwind CSS, delivered direct
 [Get the free course](/build-uis-that-dont-suck)
 
 Copyright © 2026 Tailwind Labs Inc.·[Trademark Policy](/brand)
+

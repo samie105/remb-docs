@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:00:03.571Z"
 content_hash: "943e4d2e92cbc31fc10be5391622e923ca12b34e2cac43f5a902eee7b016e0e9"
 menu_path: ["Metrics"]
 section_path: []
+nav_prev: {"path": "bun/bun/docs/runtime/http/error-handling/index.md", "title": "Error Handling"}
+nav_next: {"path": "bun/bun/docs/runtime/http/routing/index.md", "title": "Routing"}
 ---
+
 [Skip to main content](#content-area)
 
 [Bun home page![light logo](https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z_zHyy/logo/logo-with-wordmark-dark.svg?fit=max&auto=format&n=JUhaF6Mf68z_zHyy&q=85&s=3f55cd23822028e40658b192c927f3e4)![dark logo](https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z_zHyy/logo/logo-with-wordmark-light.svg?fit=max&auto=format&n=JUhaF6Mf68z_zHyy&q=85&s=8a0c5928d9dc3631f0d33e17c257e2ec)](/docs)
@@ -93,3 +96,4 @@ Fetch
 Next
 
 ](/docs/runtime/networking/fetch)
+

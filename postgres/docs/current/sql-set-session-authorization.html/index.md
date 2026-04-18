@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:35:07.947Z"
 content_hash: "3d07d67e4f1f091064dd569d793b069e59cc1d266fea50b771043a1c5c2d4550"
 menu_path: ["PostgreSQL: Documentation: 18: SET SESSION AUTHORIZATION"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/rules-privileges.html/index.md", "title": "PostgreSQL: Documentation: 18: 39.5.\u00a0Rules and Privileges"}
+nav_next: {"path": "postgres/docs/current/indexes-intro.html/index.md", "title": "PostgreSQL: Documentation: 18: 11.1.\u00a0Introduction"}
 ---
+
 SET SESSION AUTHORIZATION — set the session user identifier and the current user identifier of the current session
 
 ## Synopsis
@@ -55,3 +58,4 @@ SELECT SESSION\_USER, CURRENT\_USER;
 The SQL standard allows some other expressions to appear in place of the literal _`user_name`_, but these options are not important in practice. PostgreSQL allows identifier syntax (``"_`username`_"``), which SQL does not. SQL does not allow this command during a transaction; PostgreSQL does not make this restriction because there is no reason to. The `SESSION` and `LOCAL` modifiers are a PostgreSQL extension, as is the `RESET` syntax.
 
 The privileges necessary to execute this command are left implementation-defined by the standard.
+

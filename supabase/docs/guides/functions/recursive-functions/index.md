@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:45:15.015Z"
 content_hash: "31d7a2cda8cb2a67c8ad4aa9d69acf928a080aa2f0af282fca1c6457c655e911"
 menu_path: ["Edge Functions","Edge Functions","Platform","Platform","Recursive/Nested function calls","Recursive/Nested function calls"]
 section_path: ["Edge Functions","Edge Functions","Platform","Platform","Recursive/Nested function calls","Recursive/Nested function calls"]
+nav_prev: {"path": "supabase/docs/guides/functions/quickstart/index.md", "title": "Getting Started with Edge Functions"}
+nav_next: {"path": "supabase/docs/guides/functions/regional-invocation/index.md", "title": "Regional Invocations"}
 ---
+
 # 
 
 Recursive / Nested Function Calls
@@ -132,3 +135,4 @@ Avoid, use queues
 Currently, all plans have the same rate limit budget. We are working on introducing custom limits for different use cases.
 
 If you need a higher rate limit for your project, [contact support](/dashboard/support/new) with details about your use case.
+

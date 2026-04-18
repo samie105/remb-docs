@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:32:08.245Z"
 content_hash: "b52eb773b7e963a7dc675f2626f7132add138666fed83b9357a6b223737e7c92"
 menu_path: ["Develop and build"]
 section_path: []
+nav_prev: {"path": "astro/en/basics/project-structure/index.md", "title": "Project structure"}
+nav_next: {"path": "astro/en/guides/configuring-astro/index.md", "title": "Configuration overview"}
 ---
+
 # Develop and build
 
 Once you have an Astro project, now you’re ready to build with Astro! 🚀
@@ -115,3 +118,4 @@ Build a fully functional Astro blog starting from a single blank page in our [in
 This is a great way to see how Astro works and walks you through the basics of pages, layouts, components, routing, islands, and more. It also includes an optional, beginner-friendly unit for those newer to web development concepts in general, which will guide you through installing the necessary applications on your computer, creating a GitHub account, and deploying your site.
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

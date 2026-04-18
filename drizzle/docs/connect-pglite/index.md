@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:41:34.687Z"
 content_hash: "86baef8854f2ee27b0f57814f9fdadaa30d458dc9b0c882598e1ea9b3cc4d68d"
 menu_path: ["Drizzle <> PGlite"]
 section_path: []
+nav_prev: {"path": "drizzle/docs/connect-xata/index.md", "title": "Drizzle <> Xata"}
+nav_next: {"path": "drizzle/docs/connect-nile/index.md", "title": "Drizzle <> Nile"}
 ---
+
 According to the **[official repo](https://github.com/electric-sql/pglite)**, PGlite is a WASM Postgres build packaged into a TypeScript client library that enables you to run Postgres in the browser, Node.js and Bun, with no need to install any other dependencies. It is only 2.6mb gzipped.
 
 It can be used as an ephemeral in-memory database, or with persistence either to the file system (Node/Bun) or indexedDB (Browser).
@@ -93,3 +96,4 @@ await db.select().from(users);
 ```
 
 #### What’s next?[](#whats-next)
+

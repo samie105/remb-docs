@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:55:43.431Z"
 content_hash: "7b2387a68ef938de557a83e3e85f58069515508ec4d21e4d0094903b45c31ce6"
 menu_path: ["Database","Database","Extensions","Extensions","pg_net: Async Networking","pg_net: Async Networking"]
 section_path: ["Database","Database","Extensions","Extensions","pg_net: Async Networking","pg_net: Async Networking"]
+nav_prev: {"path": "supabase/docs/guides/database/extensions/pg_jsonschema/index.md", "title": "pg_jsonschema: JSON Schema Validation"}
+nav_next: {"path": "supabase/docs/guides/database/extensions/pg_plan_filter/index.md", "title": "pg_plan_filter: Restrict Total Cost"}
 ---
+
 # 
 
 pg\_net: Async Networking
@@ -213,3 +216,4 @@ More examples can be seen on the [Extension's GitHub page](https://github.com/su
 
 *   Source code: [github.com/supabase/pg\_net](https://github.com/supabase/pg_net/)
 *   Official Docs: [github.com/supabase/pg\_net](https://github.com/supabase/pg_net/)
+

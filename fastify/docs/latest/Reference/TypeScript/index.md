@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:35:46.769Z"
 content_hash: "95fb8b7aaac38405535e4c32abb9028c6f43c0042a8149321b9b7eded902f2bd"
 menu_path: ["TypeScript"]
 section_path: []
+nav_prev: {"path": "fastify/docs/latest/Reference/Warnings/index.md", "title": "Warnings"}
+nav_next: {"path": "fastify/docs/latest/Reference/Validation-and-Serialization/index.md", "title": "Validation-and-Serialization"}
 ---
+
 Version: latest (v5.8.x)
 
 ## TypeScript[​](#typescript "Direct link to TypeScript")
@@ -992,3 +995,4 @@ This hook can be useful if you are developing a plugin that needs to know when a
 [src](https://github.com/fastify/fastify/blob/main/types/hooks.d.ts#L206)
 
 Triggered when fastify.close() is invoked to stop the server. It is useful when plugins need a "shutdown" event, for example to close an open connection to a database.
+

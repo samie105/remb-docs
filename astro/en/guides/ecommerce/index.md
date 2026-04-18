@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:38:13.365Z"
 content_hash: "b6e4fe5e83a2961dc748d9ec12c073ad9fa4f42553e0f12351cff1850bd67e49"
 menu_path: ["E-commerce"]
 section_path: []
+nav_prev: {"path": "astro/en/guides/media/mux/index.md", "title": "Mux & Astro"}
+nav_next: {"path": "astro/en/guides/authentication/index.md", "title": "Authentication"}
 ---
+
 # E-commerce
 
 With Astro, you can build several e-commerce options, from checkout links to hosted payment pages to building an entire storefront using a payment service API.
@@ -180,3 +183,4 @@ There are two `astro-snipcart` community packages that can simplify using Snipca
 *   [Collecting Payments with Stripe using Astro](https://zellwk.com/blog/stripe-astro-recipe/)
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:49:05.651Z"
 content_hash: "e718e18ed6ce9b48af87dc5575c9b890ed9f4df207b9e3c10a1be56e52090aed"
 menu_path: ["Unit testing"]
 section_path: []
+nav_prev: {"path": "prisma/docs/orm/prisma-client/testing/integration-testing/index.md", "title": "Integration testing"}
+nav_next: {"path": "prisma/docs/orm/prisma-client/type-safety/index.md", "title": "Type safety Overview"}
 ---
+
 Testing
 
 Learn how to setup and run unit tests with Prisma Client
@@ -338,3 +341,4 @@ test("should fail if user does not accept terms", async () => {
 ```
 
 [Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/prisma-client/testing/unit-testing.mdx)
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:12:57.251Z"
 content_hash: "105e9557ad3561a692da46bafbb07cfbb72e97d3c728d80c449d061dc6d43946"
 menu_path: ["Drizzle ORM - DrizzleORM v0.29.5 release"]
 section_path: []
+nav_prev: {"path": "drizzle/docs/latest-releases/drizzle-orm-v0294/index.md", "title": "Drizzle ORM - DrizzleORM v0.29.4 release"}
+nav_next: {"path": "drizzle/docs/latest-releases/drizzle-orm-v0300/index.md", "title": "Drizzle ORM - DrizzleORM v0.30.0 release"}
 ---
+
 DrizzleORM v0.29.5 release
 
 Mar 6, 2024
@@ -18,7 +21,7 @@ Mar 6, 2024
 
 ### 🎉 WITH UPDATE, WITH DELETE, WITH INSERT
 
-You can now use `WITH` statements with [INSERT](https://orm.drizzle.team/docs/insert#with-insert-clause), [UPDATE](https://orm.drizzle.team/docs/update#with-update-clause) and [DELETE](https://orm.drizzle.team/docs/delete#with-delete-clause) statements
+You can now use `WITH` statements with [INSERT](drizzle/docs/insert/index.md#with-insert-clause), [UPDATE](drizzle/docs/update/index.md#with-update-clause) and [DELETE](drizzle/docs/delete/index.md#with-delete-clause) statements
 
 Usage examples
 
@@ -45,9 +48,9 @@ returning "id";
 
 For more examples for all statements, check docs:
 
-*   [with insert docs](https://orm.drizzle.team/docs/insert#with-insert-clause)
-*   [with update docs](https://orm.drizzle.team/docs/update#with-update-clause)
-*   [with delete docs](https://orm.drizzle.team/docs/delete#with-delete-clause)
+*   [with insert docs](drizzle/docs/insert/index.md#with-insert-clause)
+*   [with update docs](drizzle/docs/update/index.md#with-update-clause)
+*   [with delete docs](drizzle/docs/delete/index.md#with-delete-clause)
 
 ### 🎉 Possibility to specify custom schema and custom name for migrations table
 
@@ -83,11 +86,11 @@ await migrate(db, {
 
 ### 🎉 SQLite Proxy bacth and Relational Queries support
 
-You can find more information about SQLite proxy in [docs](https://orm.drizzle.team/docs/get-started-sqlite#http-proxy).
+You can find more information about SQLite proxy in [docs](drizzle/docs/get-started-sqlite/index.md#http-proxy).
 
 *   You can now use `.query.findFirst` and `.query.findMany` syntax with sqlite proxy driver
     
-*   SQLite Proxy supports batch requests, the same as it’s done for all other drivers. Check full [docs](https://orm.drizzle.team/docs/batch-api)
+*   SQLite Proxy supports batch requests, the same as it’s done for all other drivers. Check full [docs](drizzle/docs/batch-api/index.md)
     
     You will need to specify a specific callback for batch queries and handle requests to proxy server:
     
@@ -127,3 +130,4 @@ const db = drizzle(
 And then you can use `db.batch([])` method, that will proxy all queries
 
 > Response from the batch should be an array of raw values (an array within an array), in the same order as they were sent to the proxy server
+

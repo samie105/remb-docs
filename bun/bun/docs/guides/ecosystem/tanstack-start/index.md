@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:47:22.958Z"
 content_hash: "a6a6572ee081854c409a1ec987a2b3b1ad1c5980273bafd403d59108ae2cbfb6"
 menu_path: ["Use TanStack Start with Bun"]
 section_path: []
+nav_prev: {"path": "bun/bun/docs/guides/ecosystem/vite/index.md", "title": "Build a frontend using Vite and Bun"}
+nav_next: {"path": "bun/bun/docs/guides/html-rewriter/extract-links/index.md", "title": "Extract links from a webpage using HTMLRewriter"}
 ---
+
 ```
 /**
 * TanStack Start Production Server with Bun
@@ -568,3 +571,4 @@ initializeServer().catch((error: unknown) => {
   process.exit(1)
 })
 ```
+

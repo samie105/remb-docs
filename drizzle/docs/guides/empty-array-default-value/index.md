@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:04:21.003Z"
 content_hash: "715f20ae0f743807a67d2c7347910d8e3cd7f015ad73e31160541ebb1fab20d9"
 menu_path: ["Drizzle ORM - Empty array as a default value"]
 section_path: []
+nav_prev: {"path": "drizzle/docs/guides/decrementing-a-value/index.md", "title": "Drizzle ORM - SQL Decrement value"}
+nav_next: {"path": "drizzle/docs/guides/full-text-search-with-generated-columns/index.md", "title": "Drizzle ORM - Full-text search with Generated Columns"}
 ---
+
 Drizzle | Empty array as a default value
 
 ### PostgreSQL[](#postgresql)
@@ -113,3 +116,4 @@ CREATE TABLE `users` (
 The `mode` option defines how values are handled in the application. With `json` mode, values are treated as JSON object literal.
 
 You can specify `.$type<..>()` for json object inference, it will not check runtime values. It provides compile time protection for default values, insert and select schemas.
+

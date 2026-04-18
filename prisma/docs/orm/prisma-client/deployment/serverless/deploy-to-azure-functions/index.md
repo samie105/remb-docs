@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:54:08.950Z"
 content_hash: "580baf88522e03dc28b58cc3b4514ce798099c5f3fa4c151294a856ba78922df"
 menu_path: ["Deploy to Azure Functions"]
 section_path: []
+nav_prev: {"path": "prisma/docs/orm/prisma-client/deployment/serverless/deploy-to-aws-lambda/index.md", "title": "Deploy to AWS Lambda"}
+nav_next: {"path": "prisma/docs/orm/prisma-client/deployment/serverless/deploy-to-netlify/index.md", "title": "Deploy to Netlify"}
 ---
+
 Deployment
 
 Serverless
@@ -26,8 +29,9 @@ While Prisma ORM works well with Azure functions, there are a few things to take
 
 ### [Connection pooling](#connection-pooling)
 
-Generally, when you use a FaaS (Function as a Service) environment to interact with a database, every function invocation can result in a new connection to the database. This is not a problem with a constantly running Node.js server. Therefore, it is beneficial to pool DB connections to get better performance. To solve this issue, you can use [Prisma Postgres](https://www.prisma.io/docs/postgres). For other solutions, see the [connection management guide for serverless environments](https://www.prisma.io/docs/orm/prisma-client/setup-and-configuration/databases-connections#serverless-environments-faas).
+Generally, when you use a FaaS (Function as a Service) environment to interact with a database, every function invocation can result in a new connection to the database. This is not a problem with a constantly running Node.js server. Therefore, it is beneficial to pool DB connections to get better performance. To solve this issue, you can use [Prisma Postgres](https://www.prisma.io/docs/postgres). For other solutions, see the [connection management guide for serverless environments](prisma/docs/orm/prisma-client/setup-and-configuration/databases-connections/index.md#serverless-environments-faas).
 
-For more insight into Prisma Client's API, explore the function handlers and check out the [Prisma Client API Reference](https://www.prisma.io/docs/orm/reference/prisma-client-reference)
+For more insight into Prisma Client's API, explore the function handlers and check out the [Prisma Client API Reference](prisma/docs/orm/reference/prisma-client-reference/index.md)
 
 [Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/prisma-client/deployment/serverless/deploy-to-azure-functions.mdx)
+

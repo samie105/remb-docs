@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:41:00.578Z"
 content_hash: "8324303d62ea3e0e8f6555e1a93f779aa2c3f00739b09d27333983d2c1798368"
 menu_path: ["stream/web - Node documentation"]
 section_path: []
+nav_prev: {"path": "deno/deno/api/node/stream/promises/index.md", "title": "stream/promises - Node documentation"}
+nav_next: {"path": "deno/deno/api/node/string_decoder/index.md", "title": "string_decoder - Node documentation"}
 ---
+
 ### Usage in Deno
 
 ```typescript
@@ -489,3 +492,4 @@ T
 [ReadableStreamReadResult](../.././stream/web/~/ReadableStreamReadResult "ReadableStreamReadResult")
 
 No documentation available
+

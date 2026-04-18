@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:01:04.927Z"
 content_hash: "e356548cb3ea42bd72023fd5abd08f0b8726374df61aa7f74dd0726adeab1dee"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Connect with Redis client API libraries","→","Connect with Redis client API libraries","→\n      \n        node-redis guide (JavaScript)","→","node-redis guide (JavaScript)","→\n      \n        Vector set embeddings","→","Vector set embeddings"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Connect with Redis client API libraries","→","Connect with Redis client API libraries","→\n      \n        node-redis guide (JavaScript)","→","node-redis guide (JavaScript)","→\n      \n        Vector set embeddings","→","Vector set embeddings"]
+nav_prev: {"path": "redis/docs/latest/develop/ai/redisvl/user_guide/vectorizers/index.md", "title": "Vectorizers"}
+nav_next: {"path": "redis/docs/latest/develop/whats-new/8-2/index.md", "title": "Redis 8.2"}
 ---
+
 # Vector set embeddings
 
 Index and query embeddings with Redis vector sets
@@ -1316,3 +1319,4 @@ See the [vector sets](/docs/latest/develop/data-types/vector-sets/) docs for mor
 You may also be interested in [vector search](/docs/latest/develop/clients/nodejs/vecsearch/). This is a feature of [Redis Search](/docs/latest/develop/ai/search-and-query/) that lets you retrieve [JSON](/docs/latest/develop/data-types/json/) and [hash](/docs/latest/develop/data-types/hashes/) documents based on vector data stored in their fields.
 
 ## On this page
+

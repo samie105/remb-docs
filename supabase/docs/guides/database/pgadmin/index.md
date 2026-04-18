@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:41:50.054Z"
 content_hash: "765caa81afef669ae6a8521fb2fe011370dc2577c4adaafadbcfa6b3269758ef"
 menu_path: ["Database","Database","GUI quickstarts","GUI quickstarts","pgAdmin","pgAdmin"]
 section_path: ["Database","Database","GUI quickstarts","GUI quickstarts","pgAdmin","pgAdmin"]
+nav_prev: {"path": "supabase/docs/guides/database/partitions/index.md", "title": "Partitioning tables"}
+nav_next: {"path": "supabase/docs/guides/database/postgres-js/index.md", "title": "Postgres.js"}
 ---
+
 # 
 
 Connecting with pgAdmin
@@ -63,3 +66,4 @@ Connecting your Postgres instance to `pgAdmin` gives you a free, cross-platform 
 It acts as a single control panel where you can manage multiple servers, inspect locks and slow queries in real time, and perform maintenance operations with a click.
 
 For scripted migrations or ultra-light remote work you’ll still lean on plain SQL or CLI tools, but most teams find `pgAdmin` invaluable for exploration and routine administration.
+

@@ -9,15 +9,9 @@ last_crawled_at: "2026-04-18T17:10:45.006Z"
 content_hash: "b958f02928620283a8abea241d405ec3e68c00c71e81ccff15aed07b037b1350"
 menu_path: ["backdrop-filter: saturate()"]
 section_path: []
+nav_prev: {"path": "tailwind/docs/backdrop-filter-opacity/index.md", "title": "backdrop-filter: opacity()"}
+nav_next: {"path": "tailwind/docs/backdrop-filter-sepia/index.md", "title": "backdrop-filter: sepia()"}
 ---
-[](/)
-
-[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
-
-1.  Filters
-2.  saturate
-
-Filters
 
 # backdrop-filter: saturate()
 
@@ -110,3 +104,4 @@ Make your ideas look awesome, without relying on a designer.
 ](https://www.refactoringui.com/?ref=sidebar)
 
 Copyright © 2026 Tailwind Labs Inc.·[Trademark Policy](/brand)
+

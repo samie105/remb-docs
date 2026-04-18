@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:35:40.484Z"
 content_hash: "642196f48df3af282fa8808a194ab415756323d20cb942b53ae942dfae263654"
 menu_path: ["PostgreSQL: Documentation: 18: 53.20. pg_replication_slots"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/runtime-config-replication.html/index.md", "title": "PostgreSQL: Documentation: 18: 19.6.\u00a0Replication"}
+nav_next: {"path": "postgres/docs/current/functions-admin.html/index.md", "title": "PostgreSQL: Documentation: 18: 9.28.\u00a0System Administration Functions"}
 ---
+
 Column Type
 
 Description
@@ -56,7 +59,7 @@ The oldest transaction affecting the system catalogs that this slot needs the da
 
 `restart_lsn` `pg_lsn`
 
-The address (`LSN`) of oldest WAL which still might be required by the consumer of this slot and thus won't be automatically removed during checkpoints unless this LSN gets behind more than [max\_slot\_wal\_keep\_size](https://www.postgresql.org/docs/current/runtime-config-replication.html#GUC-MAX-SLOT-WAL-KEEP-SIZE) from the current LSN. `NULL` if the `LSN` of this slot has never been reserved.
+The address (`LSN`) of oldest WAL which still might be required by the consumer of this slot and thus won't be automatically removed during checkpoints unless this LSN gets behind more than [max\_slot\_wal\_keep\_size](postgres/docs/current/runtime-config-replication.html/index.md#GUC-MAX-SLOT-WAL-KEEP-SIZE) from the current LSN. `NULL` if the `LSN` of this slot has never been reserved.
 
 `confirmed_flush_lsn` `pg_lsn`
 
@@ -70,7 +73,7 @@ Availability of WAL files claimed by this slot. Possible values are:
     
 *   `extended` means that `max_wal_size` is exceeded but the files are still retained, either by the replication slot or by `wal_keep_size`.
     
-*   `unreserved` means that the slot no longer retains the required WAL files and some of them are to be removed at the next checkpoint. This typically occurs when [max\_slot\_wal\_keep\_size](https://www.postgresql.org/docs/current/runtime-config-replication.html#GUC-MAX-SLOT-WAL-KEEP-SIZE) is set to a non-negative value. This state can return to `reserved` or `extended`.
+*   `unreserved` means that the slot no longer retains the required WAL files and some of them are to be removed at the next checkpoint. This typically occurs when [max\_slot\_wal\_keep\_size](postgres/docs/current/runtime-config-replication.html/index.md#GUC-MAX-SLOT-WAL-KEEP-SIZE) is set to a non-negative value. This state can return to `reserved` or `extended`.
     
 *   `lost` means that this slot is no longer usable.
     
@@ -103,9 +106,9 @@ The reason for the slot's invalidation. It is set for both logical and physical 
     
 *   `rows_removed` means that the required rows have been removed. It is set only for logical slots.
     
-*   `wal_level_insufficient` means that the primary doesn't have a [wal\_level](https://www.postgresql.org/docs/current/runtime-config-wal.html#GUC-WAL-LEVEL) sufficient to perform logical decoding. It is set only for logical slots.
+*   `wal_level_insufficient` means that the primary doesn't have a [wal\_level](postgres/docs/current/runtime-config-wal.html/index.md#GUC-WAL-LEVEL) sufficient to perform logical decoding. It is set only for logical slots.
     
-*   `idle_timeout` means that the slot has remained inactive longer than the configured [idle\_replication\_slot\_timeout](https://www.postgresql.org/docs/current/runtime-config-replication.html#GUC-IDLE-REPLICATION-SLOT-TIMEOUT) duration.
+*   `idle_timeout` means that the slot has remained inactive longer than the configured [idle\_replication\_slot\_timeout](postgres/docs/current/runtime-config-replication.html/index.md#GUC-IDLE-REPLICATION-SLOT-TIMEOUT) duration.
     
 
 `failover` `bool`
@@ -115,3 +118,4 @@ True if this is a logical slot enabled to be synced to the standbys so that logi
 `synced` `bool`
 
 True if this is a logical slot that was synced from a primary server. On a hot standby, the slots with the synced column marked as true can neither be used for logical decoding nor dropped manually. The value of this column has no meaning on the primary server; the column value on the primary is default false for all slots but may (if leftover from a promoted standby) also be true.
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:08:22.344Z"
 content_hash: "350b99cfb07ec234c77391278538e628e264b5258354cc8ccdb050e14509ea31"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Software","→","Redis Software","→\n      \n        Install, set up, and upgrade Redis Software","→","Install, set up, and upgrade Redis Software","→\n      \n        Install Redis Software","→","Install Redis Software","→\n      \n        Prepare to install Redis Software","→","Prepare to install Redis Software"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Software","→","Redis Software","→\n      \n        Install, set up, and upgrade Redis Software","→","Install, set up, and upgrade Redis Software","→\n      \n        Install Redis Software","→","Install Redis Software","→\n      \n        Prepare to install Redis Software","→","Prepare to install Redis Software"]
+nav_prev: {"path": "redis/docs/latest/develop/use-cases/session-store/php/index.md", "title": "Redis session store with PHP"}
+nav_next: {"path": "redis/docs/latest/integrate/prometheus-with-redis-cloud/index.md", "title": "Prometheus and Grafana with Redis Cloud"}
 ---
+
 # Prepare to install Redis Software
 
 Prepare to install Redis Software.
@@ -43,3 +46,4 @@ Before you install Redis Software:
     
 
 ## On this page
+

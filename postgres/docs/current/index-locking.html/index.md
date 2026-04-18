@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:51:19.644Z"
 content_hash: "c5e600530fa18ee365512c7cdee6d068c23863d3eee41c794374090d96d09ed3"
 menu_path: ["PostgreSQL: Documentation: 18: 63.4. Index Locking Considerations"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/sql-refreshmaterializedview.html/index.md", "title": "PostgreSQL: Documentation: 18: REFRESH MATERIALIZED VIEW"}
+nav_next: {"path": "postgres/docs/current/sql-values.html/index.md", "title": "PostgreSQL: Documentation: 18: VALUES"}
 ---
+
 Index access methods must handle concurrent updates of the index by multiple processes. The core PostgreSQL system obtains `AccessShareLock` on the index during an index scan, and `RowExclusiveLock` when updating the index (including plain `VACUUM`). Since these lock types do not conflict, the access method is responsible for handling any fine-grained locking it might need. An `ACCESS EXCLUSIVE` lock on the index as a whole will be taken only during index creation, destruction, or `REINDEX` (`SHARE UPDATE EXCLUSIVE` is taken instead with `CONCURRENTLY`).
 
 Building an index type that supports concurrent updates usually requires extensive and subtle analysis of the required behavior. For the b-tree and hash index types, you can read about the design decisions involved in `src/backend/access/nbtree/README` and `src/backend/access/hash/README`.
@@ -30,3 +33,4 @@ This solution requires that index scans be “synchronous”: we have to fetch e
 In an `amgetbitmap` index scan, the access method does not keep an index pin on any of the returned tuples. Therefore it is only safe to use such scans with MVCC-compliant snapshots.
 
 When the `ampredlocks` flag is not set, any scan using that index access method within a serializable transaction will acquire a nonblocking predicate lock on the full index. This will generate a read-write conflict with the insert of any tuple into that index by a concurrent serializable transaction. If certain patterns of read-write conflicts are detected among a set of concurrent serializable transactions, one of those transactions may be canceled to protect data integrity. When the flag is set, it indicates that the index access method implements finer-grained predicate locking, which will tend to reduce the frequency of such transaction cancellations.
+

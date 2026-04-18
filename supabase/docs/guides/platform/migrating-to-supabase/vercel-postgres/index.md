@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:00:40.114Z"
 content_hash: "d78f5877502b5a019b20e3ca3d8ed36589515ecfbb044c63c84cfe6b83d8c6fd"
 menu_path: ["Platform","Platform","More","More","More","Migrating to Supabase","Migrating to Supabase","Vercel Postgres","Vercel Postgres"]
 section_path: ["Platform","Platform","More","More","More","Migrating to Supabase","Migrating to Supabase","Vercel Postgres","Vercel Postgres"]
+nav_prev: {"path": "supabase/docs/guides/platform/migrating-to-supabase/postgres/index.md", "title": "Migrate from Postgres to Supabase"}
+nav_next: {"path": "supabase/docs/guides/platform/migrating-within-supabase/dashboard-restore/index.md", "title": "Restore Dashboard backup"}
 ---
+
 # 
 
 Migrate from Vercel Postgres to Supabase
@@ -110,3 +113,4 @@ Run `pg_dump --help` for a full list of options.
 ## Enterprise[#](#enterprise)
 
 [Contact us](https://forms.supabase.com/enterprise) if you need more help migrating your project.
+

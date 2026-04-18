@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:49:36.480Z"
 content_hash: "bc1a120cf8247483ce4e9f2c6fe07350d05aab950ae83f7e0616f08d11a709d5"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis programmability","→","Redis programmability","→\n      \n        Scripting with Lua","→","Scripting with Lua"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis programmability","→","Redis programmability","→\n      \n        Scripting with Lua","→","Scripting with Lua"]
+nav_prev: {"path": "redis/docs/latest/operate/oss_and_stack/stack-with-enterprise/deprecated-features/triggers-and-functions/concepts/javascript_api/index.md", "title": "JavaScript API"}
+nav_next: {"path": "redis/docs/latest/integrate/lettuce/index.md", "title": "Java client for Redis"}
 ---
+
 # Scripting with Lua
 
 Executing Lua in Redis
@@ -332,3 +335,4 @@ Another difference is that scripts without `#!` can run commands that access key
 Please refer to [Script flags](/docs/latest/develop/programmability/lua-api/#script_flags) to learn about the various scripts and the defaults.
 
 ## On this page
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:04:54.344Z"
 content_hash: "0ebc7b07378058de39ff79de1bc0b0bcbeaafcb1a8c7e28f0eacbc202957ed7f"
 menu_path: ["Drizzle ORM - Gel auth extension"]
 section_path: []
+nav_prev: {"path": "drizzle/docs/guides/full-text-search-with-generated-columns/index.md", "title": "Drizzle ORM - Full-text search with Generated Columns"}
+nav_next: {"path": "drizzle/docs/guides/include-or-exclude-columns/index.md", "title": "Drizzle ORM - Include or Exclude Columns in Query"}
 ---
+
 Drizzle | Gel auth extension
 
 #### Step 1 - Define Gel auth schema[](#step-1---define-gel-auth-schema)
@@ -51,7 +54,7 @@ gel migration apply
 
 #### Step 3 - Setup Drizzle config file[](#step-3---setup-drizzle-config-file)
 
-**Drizzle config** - a configuration file that is used by [Drizzle Kit](https://orm.drizzle.team/docs/kit-overview) and contains all the information about your database connection, migration folder and schema files.
+**Drizzle config** - a configuration file that is used by [Drizzle Kit](drizzle/docs/kit-overview/index.md) and contains all the information about your database connection, migration folder and schema files.
 
 Create a `drizzle.config.ts` file in the root of your project and add the following content:
 
@@ -137,3 +140,4 @@ export const user = gelTable('User', {
 ```
 
 🎉 Now you can use the `auth` tables in your queries!
+

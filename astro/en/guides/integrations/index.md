@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:40:11.768Z"
 content_hash: "15fe91fdd119d243d2ba6a9e459bc7f9ffdd3e9c0e9a4330ccc78fcd2cf11ae5"
 menu_path: ["Working with integrations"]
 section_path: []
+nav_prev: {"path": "astro/en/guides/environment-variables/index.md", "title": "Using environment variables"}
+nav_next: {"path": "astro/en/guides/build-with-ai/index.md", "title": "Building Astro sites with AI tools"}
 ---
+
 # Working with integrations
 
 **Astro integrations** add new functionality and behaviors for your project with only a few lines of code. You can use an official integration, [integrations built by the community](#finding-more-integrations) or even [build a custom integration yourself](#building-your-own-integration).
@@ -562,3 +565,4 @@ Packages that don’t include any keyword matching a category will be shown as `
 We encourage you to share your work, and we really do love seeing what our talented Astronauts create. Come and share what you create with us in our [Discord](https://astro.build/chat) or mention [@astrodotbuild](https://twitter.com/astrodotbuild) in a Tweet!
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

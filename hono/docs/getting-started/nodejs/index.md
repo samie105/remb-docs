@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:40:52.776Z"
 content_hash: "b380501355aaa01174f50692156b5381cf2a69dbcf8ce720f366b8d79557fbaf"
 menu_path: ["Node.js ​"]
 section_path: []
+nav_prev: {"path": "hono/docs/getting-started/service-worker/index.md", "title": "Service Worker \u200b"}
+nav_next: {"path": "hono/docs/api/hono/index.md", "title": "App - Hono \u200b"}
 ---
+
 [Node.js](https://nodejs.org/) is an open-source, cross-platform JavaScript runtime environment.
 
 Hono was not designed for Node.js at first, but with a [Node.js Adapter](https://github.com/honojs/node-server), it can run on Node.js as well.
@@ -368,3 +371,4 @@ EXPOSE 3000
 
 CMD ["node", "/app/dist/index.js"]
 ```
+

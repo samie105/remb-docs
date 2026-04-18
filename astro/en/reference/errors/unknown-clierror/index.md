@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:46:45.599Z"
 content_hash: "1556b022abf96f119365e10f04f276c947aac1569b7b241abbafba4bfc838536"
 menu_path: ["Unknown CLI Error."]
 section_path: []
+nav_prev: {"path": "astro/en/reference/errors/unhandled-rejection/index.md", "title": "Unhandled rejection"}
+nav_next: {"path": "astro/en/reference/errors/unknown-config-error/index.md", "title": "Unknown configuration error."}
 ---
+
 # Unknown CLI Error.
 
 ## What went wrong?
@@ -21,3 +24,4 @@ Astro encountered an unknown error while starting one of its CLI commands. The e
 If you can reliably cause this error to happen, we’d appreciate if you could [open an issue](https://astro.build/issues/)
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

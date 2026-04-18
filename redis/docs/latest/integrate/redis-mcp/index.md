@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:43:48.329Z"
 content_hash: "63b9671c945a117b65bd234b3bd90d641f4527d04bb617eb3277628c6e9a64bb"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Redis MCP","→","Redis MCP"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Redis MCP","→","Redis MCP"]
+nav_prev: {"path": "redis/docs/latest/develop/ai/search-and-query/best-practices/scalable-query-best-practices/index.md", "title": "Best practices for Redis Search performance"}
+nav_next: {"path": "redis/docs/latest/operate/rc/changelog/version-release-notes/index.md", "title": "Redis version release notes and breaking changes"}
 ---
+
 # Redis MCP
 
 Access a Redis server using any MCP client.
@@ -24,3 +27,4 @@ Redis MCP is a general-purpose implementation that lets agents read, write, and 
 *   "What is user:1's email?"
 
 See the other pages in this section to learn how to set up and use Redis MCP. See also the [GitHub repository](https://github.com/redis/mcp-redis) for the latest changes.
+

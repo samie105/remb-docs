@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:46:32.522Z"
 content_hash: "acb2f0d085fab6385a895df5515c07649e4c224cdd323361826eab55a9417ef0"
 menu_path: ["Session storage was enabled but not configured."]
 section_path: []
+nav_prev: {"path": "astro/en/reference/errors/server-only-module/index.md", "title": "Module is only available server-side"}
+nav_next: {"path": "astro/en/reference/errors/session-config-without-flag-error/index.md", "title": "Session flag not set"}
 ---
+
 # Session storage was enabled but not configured.
 
 > The `experimental.session` flag was set to `true`, but no storage was configured. Either configure the storage manually or use an adapter that provides session storage.
@@ -25,3 +28,4 @@ Thrown when session storage is enabled but not configured.
 *   [Sessions](/en/guides/sessions/)
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

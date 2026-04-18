@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:56:42.998Z"
 content_hash: "5e3e8a08f91b9bf8d4e21be4f9f09838a1c5bbb1394dab75d1a74a28ee5bf9b3"
 menu_path: ["Unstable feature flags"]
 section_path: []
+nav_prev: {"path": "deno/deno/runtime/reference/cli/upgrade/index.md", "title": "deno upgrade"}
+nav_next: {"path": "deno/deno/runtime/reference/cli/x/index.md", "title": "deno x"}
 ---
+
 On this page
 
 *   [Using flags at the command line](#using-flags-at-the-command-line)
@@ -249,3 +252,4 @@ console.log(`Next week: ${nextWeek}`);
 const zonedDateTime = Temporal.Now.zonedDateTimeISO("America/New_York");
 console.log(`Time in New York: ${zonedDateTime}`);
 ```
+

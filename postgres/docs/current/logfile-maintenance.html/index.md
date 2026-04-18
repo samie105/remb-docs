@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:35:28.384Z"
 content_hash: "3742d873cf2f7dedec02cb1e5626d8d0c5cb8fc4146f0f6e161cb1348ee1d2af"
 menu_path: ["PostgreSQL: Documentation: 18: 24.3. Log File Maintenance"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/extend-type-system.html/index.md", "title": "PostgreSQL: Documentation: 18: 36.2.\u00a0The PostgreSQL Type System"}
+nav_next: {"path": "postgres/docs/current/plpgsql-expressions.html/index.md", "title": "PostgreSQL: Documentation: 18: 41.4.\u00a0Expressions"}
 ---
+
 It is a good idea to save the database server's log output somewhere, rather than just discarding it via `/dev/null`. The log output is invaluable when diagnosing problems.
 
 ### Note
@@ -39,3 +42,4 @@ On many systems, however, syslog is not very reliable, particularly with large l
 Note that all the solutions described above take care of starting new log files at configurable intervals, but they do not handle deletion of old, no-longer-useful log files. You will probably want to set up a batch job to periodically delete old log files. Another possibility is to configure the rotation program so that old log files are overwritten cyclically.
 
 [pgBadger](https://pgbadger.darold.net/) is an external project that does sophisticated log file analysis. [check\_postgres](https://bucardo.org/check_postgres/) provides Nagios alerts when important messages appear in the log files, as well as detection of many other extraordinary conditions.
+

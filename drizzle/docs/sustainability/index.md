@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:22:06.388Z"
 content_hash: "a7b4502fee4970473679d33312990400c93fb45300f44fa385f98c1c96e7145f"
 menu_path: ["Drizzle Sustainability"]
 section_path: []
+nav_prev: {"path": "drizzle/docs/get-started/index.md", "title": "Get started with Drizzle"}
+nav_next: {"path": "drizzle/docs/guides/index.md", "title": "Drizzle ORM - Guides"}
 ---
+
 We’ve been building Drizzle since 2021, and while the project has gone through a few evolutions (and emotional breakdowns) the core idea and vision never changed.
 
 Throughout the years we’ve got 100+ sponsors, from awesome individuals to great companies supporting our work
@@ -129,3 +132,4 @@ This actually helps us build Drizzle in two big ways.
 *   Second, it gives us a ton of real-world experience. We work on all kinds of projects (web, mobile, desktop, etc) across different languages, with a big focus on TypeScript. That also means we get hands-on experience with lots of frameworks, hosting platforms, and different ways people build and ship products.
 
 A big reason Drizzle became what it is today is because we never locked ourselves into building just one thing. We’re constantly working on different kinds of projects, and that gives us new ideas, a broader perspective, and the kind of experience that helps us build Drizzle in a way it is right now
+

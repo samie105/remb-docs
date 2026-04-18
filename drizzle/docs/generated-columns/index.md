@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:49:29.146Z"
 content_hash: "70fc94402bb7faafd0c554a9e7421f375f96ac3a2d38931e0de7d3a802b4b9a2"
 menu_path: ["Generated Columns"]
 section_path: []
+nav_prev: {"path": "drizzle/docs/set-operations/index.md", "title": "Set Operations"}
+nav_next: {"path": "drizzle/docs/transactions/index.md", "title": "Transactions"}
 ---
+
 #### Database side[](#database-side)
 
 **Types**: `STORED` only
@@ -544,3 +547,4 @@ CREATE TABLE "test" (
 );
 CREATE INDEX "idx_content_search" ON "test" USING gin ("content_search");
 ```
+

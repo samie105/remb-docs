@@ -9,10 +9,13 @@ last_crawled_at: "2026-04-18T16:47:35.817Z"
 content_hash: "51bc1c0d67627dc566b98b70eac808009de8fdfde063130daf6a63d20ad2d13b"
 menu_path: ["PostgreSQL: Documentation: 18: F.1. amcheck — tools to verify table and index consistency"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/functions-bitstring.html/index.md", "title": "PostgreSQL: Documentation: 18: 9.6.\u00a0Bit String Functions and Operators"}
+nav_next: {"path": "postgres/docs/current/catalog-pg-operator.html/index.md", "title": "PostgreSQL: Documentation: 18: 52.34.\u00a0pg_operator"}
 ---
+
 The `amcheck` module provides functions that allow you to verify the logical consistency of the structure of relations.
 
-The B-Tree checking functions verify various _invariants_ in the structure of the representation of particular relations. The correctness of the access method functions behind index scans and other important operations relies on these invariants always holding. For example, certain functions verify, among other things, that all B-Tree pages have items in “logical” order (e.g., for B-Tree indexes on `text`, index tuples should be in collated lexical order). If that particular invariant somehow fails to hold, we can expect binary searches on the affected page to incorrectly guide index scans, resulting in wrong answers to SQL queries. If the structure appears to be valid, no error is raised. While these checking functions are run, the [search\_path](https://www.postgresql.org/docs/current/runtime-config-client.html#GUC-SEARCH-PATH) is temporarily changed to `pg_catalog, pg_temp`.
+The B-Tree checking functions verify various _invariants_ in the structure of the representation of particular relations. The correctness of the access method functions behind index scans and other important operations relies on these invariants always holding. For example, certain functions verify, among other things, that all B-Tree pages have items in “logical” order (e.g., for B-Tree indexes on `text`, index tuples should be in collated lexical order). If that particular invariant somehow fails to hold, we can expect binary searches on the affected page to incorrectly guide index scans, resulting in wrong answers to SQL queries. If the structure appears to be valid, no error is raised. While these checking functions are run, the [search\_path](postgres/docs/current/runtime-config-client.html/index.md#GUC-SEARCH-PATH) is temporarily changed to `pg_catalog, pg_temp`.
 
 Verification is performed using the same procedures as those used by index scans themselves, which may be user-defined operator class code. For example, B-Tree index verification relies on comparisons made with one or more B-Tree support function 1 routines. See [Section 36.16.3](https://www.postgresql.org/docs/current/xindex.html#XINDEX-SUPPORT "36.16.3. Index Method Support Routines") for details of operator class support functions.
 
@@ -186,3 +189,4 @@ In general, `amcheck` can only prove the presence of corruption; it cannot prove
 No error concerning corruption raised by `amcheck` should ever be a false positive. `amcheck` raises errors in the event of conditions that, by definition, should never happen, and so careful analysis of `amcheck` errors is often required.
 
 There is no general method of repairing problems that `amcheck` detects. An explanation for the root cause of an invariant violation should be sought. [pageinspect](https://www.postgresql.org/docs/current/pageinspect.html "F.23. pageinspect — low-level inspection of database pages") may play a useful role in diagnosing corruption that `amcheck` detects. A `REINDEX` may not be effective in repairing corruption.
+

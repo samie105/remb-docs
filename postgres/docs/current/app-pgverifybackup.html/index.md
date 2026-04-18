@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:46:06.186Z"
 content_hash: "27efc9bbced1e7cfba6b642e2c77d402b95b22b7841ed38b978012015570462f"
 menu_path: ["PostgreSQL: Documentation: 18: pg_verifybackup"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/catalog-pg-proc.html/index.md", "title": "PostgreSQL: Documentation: 18: 52.39.\u00a0pg_proc"}
+nav_next: {"path": "postgres/docs/current/sql-syntax-lexical.html/index.md", "title": "PostgreSQL: Documentation: 18: 4.1.\u00a0Lexical Structure"}
 ---
+
 pg\_verifybackup — verify the integrity of a base backup of a PostgreSQL cluster
 
 ## Synopsis
@@ -124,3 +127,4 @@ To verify a backup while ignoring a file that was added manually to the backup d
 ```
 $
 ```
+

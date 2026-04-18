@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:25:36.340Z"
 content_hash: "1666f9c09951e067db095e8692f2271501c5198e9f25cad7a28a82eb8d72990f"
 menu_path: ["typebox-legacy"]
 section_path: []
+nav_prev: {"path": "drizzle/docs/arktype/index.md", "title": "arktype"}
+nav_next: {"path": "drizzle/docs/effect-schema/index.md", "title": "effect-schema"}
 ---
+
 WARNING
 
 Starting from `drizzle-orm@1.0.0-beta.15`, `drizzle-typebox` has been deprecated in favor of first-class schema generation support within Drizzle ORM itself
@@ -535,3 +538,4 @@ pg.dataType().array(...);
 // Schema
 Type.Array(baseDataTypeSchema, { minItems: size, maxItems: size });
 ```
+

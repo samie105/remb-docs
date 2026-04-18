@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:46:59.510Z"
 content_hash: "859e9627693c7d76673f8fdc5d608838b704df92c2f8d5d57b87382b418dac6d"
 menu_path: ["useInfiniteQuery()"]
 section_path: []
+nav_prev: {"path": "trpc/docs/client/react/useMutation/index.md", "title": "useMutation()"}
+nav_next: {"path": "trpc/docs/client/react/useQueries/index.md", "title": "useQueries()"}
 ---
+
 info
 
 *   Your procedure needs to accept a `cursor` input of any type (`string`, `number`, etc) to expose this hook.
@@ -221,3 +224,4 @@ tsx
   `// [...]`
 
 `}`
+

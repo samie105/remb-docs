@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:09:43.036Z"
 content_hash: "1d9d4eca551a7c948e28dfb6efa279b45760e500fa232746b2d0f48539b2f42f"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        RedisVL","→","RedisVL","→\n      \n        User Guides","→","User Guides","→\n      \n        LLM Message History","→","LLM Message History"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        RedisVL","→","RedisVL","→\n      \n        User Guides","→","User Guides","→\n      \n        LLM Message History","→","LLM Message History"]
+nav_prev: {"path": "redis/docs/latest/integrate/dynatrace-with-redis-enterprise/index.md", "title": "Dynatrace with Redis Software"}
+nav_next: {"path": "redis/docs/latest/operate/oss_and_stack/stack-with-enterprise/deprecated-features/triggers-and-functions/examples/index.md", "title": "Triggers and functions examples"}
 ---
+
 # LLM Message History
 
 Large Language Models are inherently stateless and have no knowledge of previous interactions with a user, or even of previous parts of the current conversation. While this may not be noticeable when asking simple questions, it becomes a hindrance when engaging in long running conversations that rely on conversational context.
@@ -223,3 +226,4 @@ semantic_history.clear()
 ```
 
 ## On this page
+

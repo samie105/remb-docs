@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:43:02.465Z"
 content_hash: "aa6c4691f8110bc4f70bdae3267eb4d9e6be9a4f09c63a8e0201f9d93ca59e8a"
 menu_path: ["Deployment & Branching","Deployment & Branching","Production readiness","Production readiness","Production checklist","Production checklist"]
 section_path: ["Deployment & Branching","Deployment & Branching","Production readiness","Production readiness","Production checklist","Production checklist"]
+nav_prev: {"path": "supabase/docs/guides/database/webhooks/index.md", "title": "Database Webhooks"}
+nav_next: {"path": "supabase/docs/guides/deployment/database-migrations/index.md", "title": "Database Migrations"}
 ---
+
 # 
 
 Production Checklist
@@ -186,3 +189,4 @@ IP Address
 
 *   When working with enterprise systems, email scanners may scan and make a `GET` request to the reset password link or sign-up link in your email. Since links in Supabase Auth are single-use, a user who opens an email post-scan to click on a link will receive an error. To get around this problem, consider altering the email template to replace the original magic link with a link to a domain you control. The domain can present the user with a "Sign-in" button, which redirects the user to the original magic link URL when clicked.
 *   When using a custom SMTP service, some services might have link tracking enabled which may overwrite or deform the email confirmation links sent by Supabase Auth. To prevent this from happening, we recommend that you disable link tracking when using a custom SMTP service.
+

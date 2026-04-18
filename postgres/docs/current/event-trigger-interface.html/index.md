@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:45:28.269Z"
 content_hash: "b86a93a6698731d5bcd256df0b2e456960190207c73f157e476cb44b456e694e"
 menu_path: ["PostgreSQL: Documentation: 18: 38.2. Writing Event Trigger Functions in C"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/spi-spi-unregister-relation.html/index.md", "title": "PostgreSQL: Documentation: 18: SPI_unregister_relation"}
+nav_next: {"path": "postgres/docs/current/sql-copy.html/index.md", "title": "PostgreSQL: Documentation: 18: COPY"}
 ---
+
 This section describes the low-level details of the interface to an event trigger function. This information is only needed when writing event trigger functions in C. If you are using a higher-level language then these details are handled for you. In most cases you should consider using a procedural language before writing your event triggers in C. The documentation of each procedural language explains how to write an event trigger in that language.
 
 Event trigger functions must use the “version 1” function manager interface.
@@ -53,3 +56,4 @@ A pointer to the parse tree of the command. Check the PostgreSQL source code for
 The command tag associated with the event for which the event trigger is run, for example `"CREATE FUNCTION"`.
 
 An event trigger function must return a `NULL` pointer (_not_ an SQL null value, that is, do not set _`isNull`_ true).
+

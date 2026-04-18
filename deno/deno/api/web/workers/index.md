@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:15:34.712Z"
 content_hash: "b073a27510dfdc12db2439cb6413e4a996020fc03dd551590cfc038a9d3bd29a"
 menu_path: ["Workers - Web documentation"]
 section_path: []
+nav_prev: {"path": "deno/deno/api/web/websockets/index.md", "title": "WebSockets - Web documentation"}
+nav_next: {"path": "deno/deno/api/node/index.md", "title": "Node.js Built-in APIs"}
 ---
+
 ### Interfaces [#](#Interfaces)
 
 I
@@ -54,3 +57,4 @@ No documentation available
 
 *   [name](./././~/WorkerOptions#property_name)
 *   [type](./././~/WorkerOptions#property_type)
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:59:05.125Z"
 content_hash: "5e6c66def7ad65eb378e2155f403bd434e07b656ed2c09427fc896f6665760af"
 menu_path: ["Spawn"]
 section_path: []
+nav_prev: {"path": "bun/bun/docs/runtime/bunfig/index.md", "title": "bunfig.toml"}
+nav_next: {"path": "bun/bun/docs/runtime/color/index.md", "title": "Color"}
 ---
+
 ## Spawn a process (`Bun.spawn()`)
 
 Provide a command as an array of strings. The result of `Bun.spawn()` is a `Bun.Subprocess` object.
@@ -771,3 +774,4 @@ type Signal =
   | "SIGLOST"
   | "SIGINFO";
 ```
+

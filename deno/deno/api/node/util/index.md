@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:43:23.433Z"
 content_hash: "c3076497f0ed997e2bbe952cf47dde51e93995a67fa0aec659875753ae569fdb"
 menu_path: ["util - Node documentation"]
 section_path: []
+nav_prev: {"path": "deno/deno/api/node/url/index.md", "title": "url - Node documentation"}
+nav_next: {"path": "deno/deno/api/node/util/types/index.md", "title": "util/types - Node documentation"}
 ---
+
 ### Usage in Deno
 
 ```typescript
@@ -856,3 +859,4 @@ v
 [promisify.custom](.././util/~/promisify.custom "promisify.custom")
 
 That can be used to declare custom promisified variants of functions.
+

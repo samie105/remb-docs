@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:46:01.244Z"
 content_hash: "05d1b3c06c41072347b64ecc88e1d6d0bf9ee2678f650aa4fbd7c6a174484d8f"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Reference","→","Reference","→\n      \n        Redis internals","→","Redis internals","→\n      \n        Virtual memory (deprecated)","→","Virtual memory (deprecated)"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Reference","→","Reference","→\n      \n        Redis internals","→","Redis internals","→\n      \n        Virtual memory (deprecated)","→","Virtual memory (deprecated)"]
+nav_prev: {"path": "redis/docs/latest/operate/oss_and_stack/stack-with-enterprise/deprecated-features/triggers-and-functions/concepts/triggers/user_functions/index.md", "title": "User functions"}
+nav_next: {"path": "redis/docs/latest/operate/kubernetes/release-notes/7-22-0-releases/7-22-0-16-august2025/index.md", "title": "Redis Enterprise for Kubernetes 7.22.0-16 (August 2025) release notes"}
 ---
+
 # Virtual memory (deprecated)
 
 A description of the Redis virtual memory system that was deprecated in 2.4 and removed in 2.6. This document exists for historical interest.
@@ -289,3 +292,4 @@ This document is in no way complete, the only way to get the whole picture is re
 Something is not clear about this page? Please leave a comment and I'll try to address the issue possibly integrating the answer in this document.
 
 ## On this page
+

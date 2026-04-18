@@ -9,15 +9,9 @@ last_crawled_at: "2026-04-18T16:48:28.495Z"
 content_hash: "66f47c73a7c2bb1d63e56c5f93fc32b63d0dee8452b484b9491da3354c3e6361"
 menu_path: ["gap"]
 section_path: []
+nav_prev: {"path": "tailwind/docs/grid-auto-rows/index.md", "title": "grid-auto-rows"}
+nav_next: {"path": "tailwind/docs/justify-content/index.md", "title": "justify-content"}
 ---
-[](/)
-
-[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
-
-1.  Flexbox & Grid
-2.  gap
-
-Flexbox & Grid
 
 # gap
 
@@ -151,3 +145,4 @@ Make your ideas look awesome, without relying on a designer.
 ](https://www.refactoringui.com/?ref=sidebar)
 
 Copyright © 2026 Tailwind Labs Inc.·[Trademark Policy](/brand)
+

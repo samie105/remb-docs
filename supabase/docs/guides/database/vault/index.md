@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:42:48.278Z"
 content_hash: "9093fd8fdad05a352f053e97d7ca2ff5f497f7e9f059c816f69c966fde2bb0db"
 menu_path: ["Database","Database","Access and security","Access and security","Managing secrets with Vault","Managing secrets with Vault"]
 section_path: ["Database","Database","Access and security","Access and security","Managing secrets with Vault","Managing secrets with Vault"]
+nav_prev: {"path": "supabase/docs/guides/deployment/branching/index.md", "title": "Branching"}
+nav_next: {"path": "supabase/docs/guides/database/webhooks/index.md", "title": "Database Webhooks"}
 ---
+
 # 
 
 Vault
@@ -119,3 +122,4 @@ Which roles should have access to the `vault.secrets` table should be carefully 
 *   Read more about Supabase Vault in the [blog post](/blog/vault-now-in-beta)
 *   [Supabase Vault on GitHub](https://github.com/supabase/vault)
 *   [Column Encryption](/docs/guides/database/column-encryption)
+

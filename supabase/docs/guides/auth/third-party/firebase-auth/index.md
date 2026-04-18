@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:55:16.496Z"
 content_hash: "907c277729a6be95c5631c4257639765e13ae23216da369a1c735d157d68a634"
 menu_path: ["Auth","Auth","Third-party auth","Third-party auth","Firebase Auth","Firebase Auth"]
 section_path: ["Auth","Auth","Third-party auth","Third-party auth","Firebase Auth","Firebase Auth"]
+nav_prev: {"path": "supabase/docs/guides/auth/third-party/workos/index.md", "title": "WorkOS"}
+nav_next: {"path": "supabase/docs/guides/database/extensions/hypopg/index.md", "title": "HypoPG: Hypothetical indexes"}
 ---
+
 # 
 
 Firebase Auth
@@ -120,3 +123,4 @@ You need to run a script that will assign the `role: 'authenticated'` custom cla
 ```
 
 After all users have received the `role: 'authenticated'` claim, it will appear in all newly issued ID tokens for the user.
+

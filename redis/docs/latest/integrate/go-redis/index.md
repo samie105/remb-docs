@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:54:11.267Z"
 content_hash: "abd2b4be16d46d5ae3bf6c845c3601ab2c847975edbdce2d3c645746a1196bde"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Go client for Redis","→","Go client for Redis"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Go client for Redis","→","Go client for Redis"]
+nav_prev: {"path": "redis/docs/latest/develop/use-cases/rate-limiter/go/index.md", "title": "Token bucket rate limiter with Redis and Go"}
+nav_next: {"path": "redis/docs/latest/develop/clients/jedis/vecsearch/index.md", "title": "Index and query vectors"}
 ---
+
 # Go client for Redis
 
 Learn how to build with Redis and Go
@@ -36,3 +39,4 @@ go-redis is a type-safe, Redis client library for Go that supports Redis 6.0+ fe
 Refer to the complete [Go guide](/docs/latest/develop/clients/go/) to install, connect, and use go-redis with detailed examples and best practices.
 
 ## On this page
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:50:44.375Z"
 content_hash: "742abcbd9ddb282675def0e9f0dce5d5803c2de47b621a83255f97522547e26e"
 menu_path: ["Self-Hosting","Self-Hosting","How-to Guides","How-to Guides","Configure Phone Login & MFA","Configure Phone Login & MFA"]
 section_path: ["Self-Hosting","Self-Hosting","How-to Guides","How-to Guides","Configure Phone Login & MFA","Configure Phone Login & MFA"]
+nav_prev: {"path": "supabase/docs/guides/self-hosting/self-hosted-functions/index.md", "title": "Self-Hosted Functions"}
+nav_next: {"path": "supabase/docs/guides/self-hosting/self-hosted-proxy-https/index.md", "title": "Configure Reverse Proxy and HTTPS"}
 ---
+
 # 
 
 Configure Phone Login & MFA
@@ -204,3 +207,4 @@ If users see "rate limit exceeded" errors, check `SMS_MAX_FREQUENCY` (minimum in
 *   [Multi-Factor Authentication (Phone)](/docs/guides/auth/auth-mfa/phone)
 *   [Multi-Factor Authentication (TOTP)](/docs/guides/auth/auth-mfa/totp)
 *   [Auth server on GitHub](https://github.com/supabase/auth) (check README and `example.env`)
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:36:14.360Z"
 content_hash: "3daf0a0a09bf750d0d9cf5a7ae594820ffcf5eab4ebc2838780fde33ff40bf35"
 menu_path: ["Deploy your Astro Site"]
 section_path: []
+nav_prev: {"path": "astro/en/guides/integrations-guide/sitemap/index.md", "title": "@astrojs/\n\t\t\t\t\tsitemap"}
+nav_next: {"path": "astro/en/guides/deploy/aws/index.md", "title": "Deploy your Astro Site to AWS"}
 ---
+
 # Deploy your Astro Site
 
 **Ready to build and deploy your Astro site?** Follow one of our guides to different deployment services or scroll down for general guidance about deploying an Astro site.
@@ -286,3 +289,4 @@ By default, the build output will be placed at `dist/`. This location can be cha
 [Section titled “Adding an Adapter for on-demand rendering”](#adding-an-adapter-for-on-demand-rendering)
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

@@ -9,15 +9,9 @@ last_crawled_at: "2026-04-18T17:06:33.270Z"
 content_hash: "f4b17619cb849cffef2aa0060f102e8687fc98be8eef622114020a7ddc2671d8"
 menu_path: ["mask-size"]
 section_path: []
+nav_prev: {"path": "tailwind/docs/mask-repeat/index.md", "title": "mask-repeat"}
+nav_next: {"path": "tailwind/docs/mask-type/index.md", "title": "mask-type"}
 ---
-[](/)
-
-[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
-
-1.  Effects
-2.  mask-size
-
-Effects
 
 # mask-size
 
@@ -124,3 +118,4 @@ Make your ideas look awesome, without relying on a designer.
 ](https://www.refactoringui.com/?ref=sidebar)
 
 Copyright © 2026 Tailwind Labs Inc.·[Trademark Policy](/brand)
+

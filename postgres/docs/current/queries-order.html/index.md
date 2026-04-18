@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:40:23.686Z"
 content_hash: "c4ff00657185a90fbed01f04a78bc497ac8a273b0b17a52374368e8d47d20c53"
 menu_path: ["PostgreSQL: Documentation: 18: 7.5. Sorting Rows (ORDER BY)"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/view-pg-prepared-xacts.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.17.\u00a0pg_prepared_xacts"}
+nav_next: {"path": "postgres/docs/current/ecpg-cpp.html/index.md", "title": "PostgreSQL: Documentation: 18: 34.13.\u00a0C++ Applications"}
 ---
+
 After a query has produced an output table (after the select list has been processed) it can optionally be sorted. If sorting is not chosen, the rows will be returned in an unspecified order. The actual order in that case will depend on the scan and join plan types and the order on disk, but it must not be relied on. A particular output ordering can only be guaranteed if the sort step is explicitly chosen.
 
 The `ORDER BY` clause specifies the sort order:
@@ -47,3 +50,4 @@ This restriction is made to reduce ambiguity. There is still ambiguity if an `OR
 * * *
 
 [\[6\]](#id-1.5.6.9.5.10) Actually, PostgreSQL uses the _default B-tree operator class_ for the expression's data type to determine the sort ordering for `ASC` and `DESC`. Conventionally, data types will be set up so that the `<` and `>` operators correspond to this sort ordering, but a user-defined data type's designer could choose to do something different.
+

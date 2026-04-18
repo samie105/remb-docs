@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:35:59.381Z"
 content_hash: "7a20e686d709a50a155a1008ce44851cbac4269ab3f425bf2bff97f0b48d2454"
 menu_path: ["Performance ​"]
 section_path: []
+nav_prev: {"path": "vite/guide/troubleshooting/index.md", "title": "Troubleshooting \u200b"}
+nav_next: {"path": "vite/guide/migration/index.md", "title": "Migration from v7 \u200b"}
 ---
+
 While Vite is fast by default, performance issues can creep in as the project's requirements grow. This guide aims to help you identify and fix common performance issues, such as:
 
 *   Slow server starts
@@ -45,7 +48,7 @@ You can run `vite --profile`, visit the site, and press `p + enter` in your term
 
 ## Reduce Resolve Operations [​](#reduce-resolve-operations)
 
-Resolving import paths can be an expensive operation when hitting its worst case often. For example, Vite supports "guessing" import paths with the [`resolve.extensions`](https://vite.dev/config/shared-options#resolve-extensions) option, which defaults to `['.mjs', '.js', '.mts', '.ts', '.jsx', '.tsx', '.json']`.
+Resolving import paths can be an expensive operation when hitting its worst case often. For example, Vite supports "guessing" import paths with the [`resolve.extensions`](vite/config/shared-options/index.md#resolve-extensions) option, which defaults to `['.mjs', '.js', '.mts', '.ts', '.jsx', '.tsx', '.json']`.
 
 When you try to import `./Component.jsx` with `import './Component'`, Vite will run these steps to resolve it:
 
@@ -96,7 +99,7 @@ main.js -> BigComponent.vue -> big-utils.js -> large-data.json
 
 The import relationship can only be known after the file is transformed. If `BigComponent.vue` takes some time to transform, `big-utils.js` has to wait for its turn, and so on. This causes an internal waterfall even with pre-transformation built-in.
 
-Vite allows you to warm up files that you know are frequently used, e.g. `big-utils.js`, using the [`server.warmup`](https://vite.dev/config/server-options#server-warmup) option. This way `big-utils.js` will be ready and cached to be served immediately when requested.
+Vite allows you to warm up files that you know are frequently used, e.g. `big-utils.js`, using the [`server.warmup`](vite/config/server-options/index.md#server-warmup) option. This way `big-utils.js` will be ready and cached to be served immediately when requested.
 
 You can find files that are frequently used by running `vite --debug transform` and inspect the logs:
 
@@ -125,9 +128,9 @@ export default defineConfig({
 })
 ```
 
-Note that you should only warm up files that are frequently used to not overload the Vite dev server on startup. Check the [`server.warmup`](https://vite.dev/config/server-options#server-warmup) option for more information.
+Note that you should only warm up files that are frequently used to not overload the Vite dev server on startup. Check the [`server.warmup`](vite/config/server-options/index.md#server-warmup) option for more information.
 
-Using [`--open` or `server.open`](https://vite.dev/config/server-options#server-open) also provides a performance boost, as Vite will automatically warm up the entry point of your app or the provided URL to open.
+Using [`--open` or `server.open`](vite/config/server-options/index.md#server-open) also provides a performance boost, as Vite will automatically warm up the entry point of your app or the provided URL to open.
 
 ## Use Lesser or Native Tooling [​](#use-lesser-or-native-tooling)
 
@@ -143,3 +146,4 @@ Examples of using native tooling:
 While Vite core is based on native tooling, some features still use non-native tooling by default to provide better compatibility and feature set. But it may be worth the cost for larger applications.
 
 *   Try out the experimental support for [LightningCSS](https://github.com/vitejs/vite/discussions/13835)
+

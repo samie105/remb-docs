@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:33:12.758Z"
 content_hash: "d973733b5fe8233c9a4ca98ebb8715426288630e01ae8c327275f450fa7b1b47"
 menu_path: ["AI & Vectors","AI & Vectors","Learn","Learn","Choosing Compute Add-on","Choosing Compute Add-on"]
 section_path: ["AI & Vectors","AI & Vectors","Learn","Learn","Choosing Compute Add-on","Choosing Compute Add-on"]
+nav_prev: {"path": "supabase/docs/guides/ai/concepts/index.md", "title": "Concepts"}
+nav_next: {"path": "supabase/docs/guides/ai/automatic-embeddings/index.md", "title": "Automatic embeddings"}
 ---
+
 # 
 
 Choosing your Compute Add-on
@@ -1312,3 +1315,4 @@ We follow techniques outlined in the [ANN Benchmarks](https://github.com/erikber
 Each test is run for a minimum of 30-40 minutes. They include a series of experiments executed at different concurrency levels to measure the engine's performance under different load types. The results are then averaged.
 
 As a general recommendation, we suggest using a concurrency level of 5 or more for most workloads and 30 or more for high-load workloads.
+

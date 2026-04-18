@@ -9,15 +9,9 @@ last_crawled_at: "2026-04-18T16:45:50.187Z"
 content_hash: "778d1f736ff074a024a3a286ff793676ec48ac630c695b3dedc093e4d5131f02"
 menu_path: ["flex-wrap"]
 section_path: []
+nav_prev: {"path": "tailwind/docs/flex-direction/index.md", "title": "flex-direction"}
+nav_next: {"path": "tailwind/docs/flex/index.md", "title": "flex"}
 ---
-[](/)
-
-[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
-
-1.  Flexbox & Grid
-2.  flex-wrap
-
-Flexbox & Grid
 
 # flex-wrap
 
@@ -117,3 +111,4 @@ Make your ideas look awesome, without relying on a designer.
 ](https://www.refactoringui.com/?ref=sidebar)
 
 Copyright © 2026 Tailwind Labs Inc.·[Trademark Policy](/brand)
+

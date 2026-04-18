@@ -9,11 +9,14 @@ last_crawled_at: "2026-04-18T16:43:07.193Z"
 content_hash: "19cd7b4ef84572231d67789d03f4b662b2bd08a84c17ea7dbf353506a03dc552"
 menu_path: ["Drizzle <> Supabase"]
 section_path: []
+nav_prev: {"path": "drizzle/docs/connect-prisma-postgres/index.md", "title": "Drizzle <> Prisma Postgres"}
+nav_next: {"path": "drizzle/docs/connect-xata/index.md", "title": "Drizzle <> Xata"}
 ---
+
 This guide assumes familiarity with:
 
-*   Database [connection basics](https://orm.drizzle.team/docs/connect-overview) with Drizzle
-*   Drizzle PostgreSQL drivers - [docs](https://orm.drizzle.team/docs/get-started-postgresql)
+*   Database [connection basics](drizzle/docs/connect-overview/index.md) with Drizzle
+*   Drizzle PostgreSQL drivers - [docs](drizzle/docs/get-started-postgresql/index.md)
 
 According to the **[official website](https://supabase.com/docs)**, Supabase is an open source Firebase alternative for building secure and performant Postgres backends with minimal configuration.
 
@@ -87,3 +90,4 @@ const allUsers = await db.select().from(...);
 Connect to your database using the Connection Pooler for **serverless environments**, and the Direct Connection for **long-running servers**.
 
 #### What’s next?[](#whats-next)
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:15:14.802Z"
 content_hash: "977ddbf6304690062073217be351c05528bd0ca30a9f584f0b52dc99cfa58c47"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        RedisVL","→","RedisVL","→\n      \n        User Guides","→","User Guides","→\n      \n        Threshold Optimization","→","Threshold Optimization"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        RedisVL","→","RedisVL","→\n      \n        User Guides","→","User Guides","→\n      \n        Threshold Optimization","→","Threshold Optimization"]
+nav_prev: {"path": "redis/docs/latest/operate/oss_and_stack/management/troubleshooting/index.md", "title": "Troubleshooting Redis"}
+nav_next: {"path": "redis/docs/latest/develop/tools/insight/release-notes/v2.2.0/index.md", "title": "RedisInsight v2.2.0, May 2022"}
 ---
+
 # Threshold Optimization
 
 After setting up `SemanticRouter` or `SemanticCache` it's best to tune the `distance_threshold` to get the most performance out of your system. RedisVL provides helper classes to make this light weight optimization easy.
@@ -967,3 +970,4 @@ sem_cache.delete()
 ```
 
 ## On this page
+

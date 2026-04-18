@@ -9,12 +9,14 @@ last_crawled_at: "2026-04-18T16:33:11.906Z"
 content_hash: "e8ff1c692fac59f45045a0a7d1010d161a6550a64b19628d59ad1679f7016cba"
 menu_path: ["Get started with Tailwind CSS"]
 section_path: []
+nav_next: {"path": "tailwind/docs/editor-setup/index.md", "title": "Editor setup"}
 ---
+
 Tailwind CSS works by scanning all of your HTML files, JavaScript components, and any other templates for class names, generating the corresponding styles and then writing them to a static CSS file.
 
 It's fast, flexible, and reliable — with zero-runtime.
 
-*   ## [Using Vite](https://tailwindcss.com/docs/installation/using-vite)
+*   ## [Using Vite](tailwind/docs/installation/using-vite/index.md)
     
 *   ## [Using PostCSS](https://tailwindcss.com/docs/installation/using-postcss)
     
@@ -102,3 +104,4 @@ HTML
 ```
 
 **Are you stuck?** Setting up Tailwind with Vite can be a bit different across different build tools. Check our framework guides to see if we have more specific instructions for your particular setup.
+

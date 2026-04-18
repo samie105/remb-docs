@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:47:57.165Z"
 content_hash: "4d726e9f39e9b7f2effaff8433e7e304fc467cb290bd5cf563ba3a8af8f3284c"
 menu_path: ["effect-schema"]
 section_path: []
+nav_prev: {"path": "drizzle/docs/typebox-legacy/index.md", "title": "typebox-legacy"}
+nav_next: {"path": "drizzle/docs/prisma/index.md", "title": "Drizzle extension for Prisma"}
 ---
+
 ```
 import { pgEnum, pgTable, serial, text, timestamp } from 'drizzle-orm/pg-core';
 import { createInsertSchema, createSelectSchema, createUpdateSchema } from 'drizzle-orm/effect-schema';
@@ -53,3 +56,4 @@ const program = Effect.gen(function*() {
 	});
 });
 ```
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:49:19.651Z"
 content_hash: "1051c368dca22d589c38a38b459a0d220dae17762b69c9684be0e4dccd54e59b"
 menu_path: ["Realtime","Realtime","Usage","Usage","Presence","Presence"]
 section_path: ["Realtime","Realtime","Usage","Usage","Presence","Presence"]
+nav_prev: {"path": "supabase/docs/guides/realtime/pricing/index.md", "title": "Realtime Pricing"}
+nav_next: {"path": "supabase/docs/guides/realtime/postgres-changes/index.md", "title": "Postgres Changes"}
 ---
+
 # 
 
 Presence
@@ -100,3 +103,4 @@ By default, Presence will generate a unique `UUIDv1` key on the server to track 
 ```
 1import { createClient } from '@supabase/supabase-js'23const supabase = createClient('SUPABASE_URL', 'SUPABASE_PUBLISHABLE_KEY')45const channelC = supabase.channel('test', {6  config: {7    presence: {8      key: 'userId-123',9    },10  },11})
 ```
+

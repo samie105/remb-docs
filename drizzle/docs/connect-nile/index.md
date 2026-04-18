@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:39:50.833Z"
 content_hash: "6b4e5cac51c9322802e42dc7fa7bd08e15e574090b0855bfccb3071addae3d9d"
 menu_path: ["Drizzle <> Nile"]
 section_path: []
+nav_prev: {"path": "drizzle/docs/connect-pglite/index.md", "title": "Drizzle <> PGlite"}
+nav_next: {"path": "drizzle/docs/connect-bun-sql/index.md", "title": "Drizzle <> Bun SQL"}
 ---
+
 According to the **[official website](https://thenile.dev/)**, Nile is PostgreSQL re-engineered for multi-tenant apps.
 
 Checkout official **[Nile + Drizzle Quickstart](https://www.thenile.dev/docs/getting-started/languages/drizzle)** and **[Migration](https://www.thenile.dev/docs/getting-started/schema_migrations/drizzle)** docs.
@@ -160,3 +163,4 @@ app.get("/api/tenants/:tenantId/todos", async (c) => {
 ```
 
 #### What’s next?[](#whats-next)
+

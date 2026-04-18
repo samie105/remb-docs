@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:47:18.723Z"
 content_hash: "55d2c25f23a13470fcef6bd198b7dc3796238977c04f552040246c005949de7b"
 menu_path: ["Platform","Platform","Billing","Billing","Control your costs","Control your costs"]
 section_path: ["Platform","Platform","Billing","Billing","Control your costs","Control your costs"]
+nav_prev: {"path": "supabase/docs/guides/platform/clone-project/index.md", "title": "Restore to a new project"}
+nav_next: {"path": "supabase/docs/guides/platform/compute-and-disk/index.md", "title": "Compute and Disk"}
 ---
+
 # 
 
 Control your costs
@@ -74,3 +77,4 @@ You can configure the Spend Cap when creating an organization on the Pro Plan or
 ## Keep track of your usage and costs[#](#keep-track-of-your-usage-and-costs)
 
 You can monitor your usage on the [organization's usage page](/dashboard/org/_/usage). The Upcoming Invoice section of the [organization's billing page](/dashboard/org/_/billing) shows your current spending and provides an estimate of your total costs for the billing cycle based on your usage.
+

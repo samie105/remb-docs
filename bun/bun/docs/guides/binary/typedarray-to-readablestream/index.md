@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:41:33.627Z"
 content_hash: "6ed128dd5e93468437a1abf1ed8a10fe57746922c8567cfd8924142df63773b4"
 menu_path: ["Convert a Uint8Array to a ReadableStream"]
 section_path: []
+nav_prev: {"path": "bun/bun/docs/guides/binary/typedarray-to-buffer/index.md", "title": "Convert a Uint8Array to a Buffer"}
+nav_next: {"path": "bun/bun/docs/guides/binary/typedarray-to-dataview/index.md", "title": "Convert a Uint8Array to a DataView"}
 ---
+
 [Skip to main content](#content-area)
 
 [Bun home page![light logo](https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z_zHyy/logo/logo-with-wordmark-dark.svg?fit=max&auto=format&n=JUhaF6Mf68z_zHyy&q=85&s=3f55cd23822028e40658b192c927f3e4)![dark logo](https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z_zHyy/logo/logo-with-wordmark-light.svg?fit=max&auto=format&n=JUhaF6Mf68z_zHyy&q=85&s=8a0c5928d9dc3631f0d33e17c257e2ec)](/docs)
@@ -87,3 +90,4 @@ Convert a DataView to a string
 Next
 
 ](/docs/guides/binary/dataview-to-string)
+

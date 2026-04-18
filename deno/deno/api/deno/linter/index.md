@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:10:19.688Z"
 content_hash: "3314d47c41dde4bd282aa79c601cc3e49f1c3081fd33e4f144fcf54aca1d803c"
 menu_path: ["Linter - Deno documentation"]
 section_path: []
+nav_prev: {"path": "deno/deno/api/deno/jupyter/index.md", "title": "Jupyter - Deno documentation"}
+nav_next: {"path": "deno/deno/api/deno/network/index.md", "title": "Network - Deno documentation"}
 ---
+
 ### Functions [#](#Functions)
 
 f
@@ -2209,3 +2212,4 @@ T
 [Deno.lint.TypeNode](./././~/Deno.lint.TypeNode "Deno.lint.TypeNode")
 
 Union type of all possible type nodes in TypeScript
+

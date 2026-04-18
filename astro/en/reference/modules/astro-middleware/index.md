@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:47:46.554Z"
 content_hash: "30234128160addd4d992fb585d96a09f3572fa1fc8efe7433c0d60de3dbc8873"
 menu_path: ["Middleware API Reference"]
 section_path: []
+nav_prev: {"path": "astro/en/reference/modules/astro-i18n/index.md", "title": "Internationalization API Reference"}
+nav_next: {"path": "astro/en/reference/modules/astro-static-paths/index.md", "title": "Static Paths API Reference"}
 ---
+
 # Middleware API Reference
 
 **Added in:** `astro@2.6.0`
@@ -266,3 +269,4 @@ export function onRequest (context, next) {  // intercept response data from a r
 ```
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

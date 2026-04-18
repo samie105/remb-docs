@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:58:24.222Z"
 content_hash: "a334fe9e81682b5163a5246b87a9b2a704588b86474bd6f9d1e48db62fb33e28"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        Redis Search","→","Redis Search","→\n      \n        Querying data","→","Querying data","→\n      \n        Geospatial queries","→","Geospatial queries"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        Redis Search","→","Redis Search","→\n      \n        Querying data","→","Querying data","→\n      \n        Geospatial queries","→","Geospatial queries"]
+nav_prev: {"path": "redis/docs/latest/integrate/riot/docs/index.md", "title": "Documentation"}
+nav_next: {"path": "redis/docs/latest/develop/use-cases/time-series-dashboard/go/index.md", "title": "Rolling sensor graph demo with Go"}
 ---
+
 # Geospatial queries
 
 Query based on geographic data
@@ -2133,3 +2136,4 @@ func ExampleClient_query_geo() {
 ```
 
 ## On this page
+

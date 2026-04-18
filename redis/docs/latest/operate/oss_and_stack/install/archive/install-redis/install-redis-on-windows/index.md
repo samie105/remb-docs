@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:45:50.163Z"
 content_hash: "fc00c19bb3456dd5473445908821cf7b7769e1d5b38f6ee824a853ecdaceb68c"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Install Redis Open Source","→","Install Redis Open Source","→\n      \n        Install Redis Community Edition or Redis Stack","→","Install Redis Community Edition or Redis Stack","→\n      \n        Install Redis","→","Install Redis","→\n      \n        Install Redis on Windows","→","Install Redis on Windows"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Install Redis Open Source","→","Install Redis Open Source","→\n      \n        Install Redis Community Edition or Redis Stack","→","Install Redis Community Edition or Redis Stack","→\n      \n        Install Redis","→","Install Redis","→\n      \n        Install Redis on Windows","→","Install Redis on Windows"]
+nav_prev: {"path": "redis/docs/latest/operate/oss_and_stack/management/security/encryption/index.md", "title": "TLS"}
+nav_next: {"path": "redis/docs/latest/operate/oss_and_stack/stack-with-enterprise/deprecated-features/triggers-and-functions/concepts/triggers/user_functions/index.md", "title": "User functions"}
 ---
+
 # Install Redis on Windows
 
 Use Redis on Windows through Memurai, official Redis partner for Windows compatibility
@@ -73,3 +76,4 @@ Once you have a running Redis instance, you may want to:
 *   [Install Redis "properly"](/docs/latest/operate/oss_and_stack/install/archive/install-redis/#install-redis-properly) for production use.
 
 ## On this page
+

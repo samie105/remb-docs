@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:51:48.432Z"
 content_hash: "51d0e435b06059ee2e634a5427ecd030b1f18c5ece7d3c2e7456b58ca389199e"
 menu_path: ["AI & Vectors","AI & Vectors","JavaScript Examples","JavaScript Examples","Adding generative Q&A to your Next.js site","Adding generative Q&A to your Next.js site"]
 section_path: ["AI & Vectors","AI & Vectors","JavaScript Examples","JavaScript Examples","Adding generative Q&A to your Next.js site","Adding generative Q&A to your Next.js site"]
+nav_prev: {"path": "supabase/docs/guides/ai/examples/mixpeek-video-search/index.md", "title": "Video Search with Mixpeek Multimodal Embeddings"}
+nav_next: {"path": "supabase/docs/guides/ai/examples/semantic-image-search-amazon-titan/index.md", "title": "Semantic Image Search with Amazon Titan"}
 ---
+
 # 
 
 Vector search with Next.js and OpenAI
@@ -131,3 +134,4 @@ Want to learn more about the awesome tech that is powering this?
 *   Read about how we built [ChatGPT for the Supabase Docs](/blog/chatgpt-supabase-docs).
 *   Read the pgvector Docs for [Embeddings and vector similarity](/docs/guides/database/extensions/pgvector)
 *   Watch Greg's video for a full breakdown:
+

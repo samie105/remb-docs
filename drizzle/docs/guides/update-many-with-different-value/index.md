@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:07:44.722Z"
 content_hash: "7dc750daebb39badb1ec4050212c4e1f65ea98d7ac0742e995db16e03b579ec2"
 menu_path: ["Drizzle ORM - Update many with different values for each row"]
 section_path: []
+nav_prev: {"path": "drizzle/docs/guides/unique-case-insensitive-email/index.md", "title": "Drizzle ORM - Unique and Case-Insensitive Email Handling"}
+nav_next: {"path": "drizzle/docs/guides/upsert/index.md", "title": "Drizzle ORM - Upsert Query"}
 ---
+
 Drizzle | Update many with different values for each row
 
 PostgreSQL
@@ -68,3 +71,4 @@ update users set "city" =
   (case when id = 1 then 'New York' when id = 2 then 'Los Angeles' when id = 3 then 'Chicago' end)
 where id in (1, 2, 3)
 ```
+

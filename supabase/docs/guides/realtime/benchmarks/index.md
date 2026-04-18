@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:48:56.502Z"
 content_hash: "6855d0605b1b12efdeb3ac99255c1b3f3d9c02e10cec714d88c0d63a7d6652d6"
 menu_path: ["Realtime","Realtime","Deep dive","Deep dive","Benchmarks","Benchmarks"]
 section_path: ["Realtime","Realtime","Deep dive","Deep dive","Benchmarks","Benchmarks"]
+nav_prev: {"path": "supabase/docs/guides/realtime/broadcast/index.md", "title": "Broadcast"}
+nav_next: {"path": "supabase/docs/guides/realtime/concepts/index.md", "title": "Realtime Concepts"}
 ---
+
 # 
 
 Benchmarks
@@ -415,3 +418,4 @@ View raw throughput table
 Don't forget to run your own benchmarks to make sure that the performance is acceptable for your use case.
 
 Supabase continues to make improvements to Realtime's Postgres Changes. If you are uncertain about your use case performance, reach out using the [Support Form](/dashboard/support/new). The support team can advise on the best solution for each use-case.
+

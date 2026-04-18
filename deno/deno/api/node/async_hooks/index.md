@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:32:58.642Z"
 content_hash: "326d51ea472b57473034f2b671db6cebf4cefdc4eebb87f6959a7a849989cdd9"
 menu_path: ["async_hooks - Node documentation"]
 section_path: []
+nav_prev: {"path": "deno/deno/api/node/index.md", "title": "Node.js Built-in APIs"}
+nav_next: {"path": "deno/deno/api/node/buffer/index.md", "title": "buffer - Node documentation"}
 ---
+
 ### Usage in Deno
 
 ```typescript
@@ -112,3 +115,4 @@ No documentation available
 *   [destroy](.././async_hooks/~/HookCallbacks#method_destroy_0)
 *   [init](.././async_hooks/~/HookCallbacks#method_init_0)
 *   [promiseResolve](.././async_hooks/~/HookCallbacks#method_promiseresolve_0)
+

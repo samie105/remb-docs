@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:34:41.483Z"
 content_hash: "6d379bfd9f67e6db12573152c0e40fd3ff2ef3939e57b35fdf915b112892a233"
 menu_path: ["AI & Vectors","AI & Vectors","More","More","More","Vector indexes","Vector indexes","Overview","Overview"]
 section_path: ["AI & Vectors","AI & Vectors","More","More","More","Vector indexes","Vector indexes","Overview","Overview"]
+nav_prev: {"path": "supabase/docs/guides/ai/vecs-python-client/index.md", "title": "Python client"}
+nav_next: {"path": "supabase/docs/guides/ai/vector-columns/index.md", "title": "Vector columns"}
 ---
+
 # 
 
 Vector indexes
@@ -68,3 +71,4 @@ If you are on an earlier version of pgvector, you should [upgrade your project h
 ## Resources[#](#resources)
 
 Read more about indexing on `pgvector`'s [GitHub page](https://github.com/pgvector/pgvector#indexing).
+

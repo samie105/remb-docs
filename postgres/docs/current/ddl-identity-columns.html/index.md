@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:42:42.486Z"
 content_hash: "1b2d40ad6b7b3a4dc75c3f95b3b5e79429aa0372f7e2a19eb4c7799be49fc7ce"
 menu_path: ["PostgreSQL: Documentation: 18: 5.3. Identity Columns"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/xfunc-pl.html/index.md", "title": "PostgreSQL: Documentation: 18: 36.8.\u00a0Procedural Language Functions"}
+nav_next: {"path": "postgres/docs/current/contrib-dblink-connect-u.html/index.md", "title": "PostgreSQL: Documentation: 18: dblink_connect_u"}
 ---
+
 An identity column is a special column that is generated automatically from an implicit sequence. It can be used to generate key values.
 
 To create an identity column, use the `GENERATED ... AS IDENTITY` clause in `CREATE TABLE`, for example:
@@ -57,3 +60,4 @@ An identity column is automatically marked as `NOT NULL`. An identity column, ho
 In table inheritance hierarchies, identity columns and their properties in a child table are independent of those in its parent tables. A child table does not inherit identity columns or their properties automatically from the parent. During `INSERT` or `UPDATE`, a column is treated as an identity column if that column is an identity column in the table named in the statement, and the corresponding identity properties are applied.
 
 Partitions inherit identity columns from the partitioned table. They cannot have their own identity columns. The properties of a given identity column are consistent across all the partitions in the partition hierarchy.
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:56:36.154Z"
 content_hash: "dfbd2d3367ca260d0cce6ac6ed3b4c147b526fbe9f0b9b5cbf20ba671f5c5fb8"
 menu_path: ["Database","Database","Working with your database (basics)","Working with your database (basics)","Managing indexes","Managing indexes"]
 section_path: ["Database","Database","Working with your database (basics)","Working with your database (basics)","Managing indexes","Managing indexes"]
+nav_prev: {"path": "supabase/docs/guides/database/postgres/first-row-in-group/index.md", "title": "Select first row for each group in Postgres"}
+nav_next: {"path": "supabase/docs/guides/database/postgres/roles-superuser/index.md", "title": "Roles, superuser access and unsupported operations"}
 ---
+
 # 
 
 Managing Indexes in Postgres
@@ -123,3 +126,4 @@ If additional indexes might improve your query, the Index Advisor shows the sugg
 *   Total cost is the cost to fetch all the rows
 
 Costs are in arbitrary units, where a single sequential page read costs 1.0 units.
+

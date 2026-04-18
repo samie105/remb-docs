@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:55:50.383Z"
 content_hash: "1a35f3ee3660eaf512c0667ef16239a578f25537f45c18035872ecb019790e9b"
 menu_path: ["Database","Database","Extensions","Extensions","pg_repack: Storage Optimization","pg_repack: Storage Optimization"]
 section_path: ["Database","Database","Extensions","Extensions","pg_repack: Storage Optimization","pg_repack: Storage Optimization"]
+nav_prev: {"path": "supabase/docs/guides/database/extensions/pg_partman/index.md", "title": "Postgres Extensions Overview"}
+nav_next: {"path": "supabase/docs/guides/database/extensions/pg_stat_statements/index.md", "title": "pg_stat_statements: Query Performance Monitoring"}
 ---
+
 # 
 
 pg\_repack: Physical storage optimization and maintenance
@@ -83,3 +86,4 @@ See the [official pg\_repack documentation](https://reorg.github.io/pg_repack/) 
 ## Resources[#](#resources)
 
 *   [Official pg\_repack documentation](https://reorg.github.io/pg_repack/)
+

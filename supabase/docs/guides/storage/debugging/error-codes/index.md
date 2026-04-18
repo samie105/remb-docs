@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:01:16.751Z"
 content_hash: "15b1a127554f8650a87b890b94d0dbd9d745ade8dee539c63f227889f30ed5d9"
 menu_path: ["Storage","Storage","More","More","More","Debugging","Debugging","Error Codes","Error Codes"]
 section_path: ["Storage","Storage","More","More","More","Debugging","Debugging","Error Codes","Error Codes"]
+nav_prev: {"path": "supabase/docs/guides/storage/debugging/logs/index.md", "title": "Logs"}
+nav_next: {"path": "supabase/docs/guides/storage/management/copy-move-objects/index.md", "title": "Copy Objects"}
 ---
+
 # 
 
 Error Codes
@@ -358,3 +361,4 @@ This problem arises when a high number of clients are concurrently using the Sto
 This issue occurs where there is a unhandled error. **Resolution:**
 
 *   File a support ticket to Storage team [here](/dashboard/support/new)
+

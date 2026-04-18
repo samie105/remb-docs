@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:46:09.266Z"
 content_hash: "1b8b23cbcac62c3dfa0fec1aeafba46e5a9b0ae1b578e2eadf27da250f9e34d4"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Client tools","→","Client tools","→\n      \n        Redis Insight","→","Redis Insight","→\n      \n        Redis Insight release notes","→","Redis Insight release notes","→\n      \n        RedisInsight v2.16.0, December 2022","→","RedisInsight v2.16.0, December 2022"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Client tools","→","Client tools","→\n      \n        Redis Insight","→","Redis Insight","→\n      \n        Redis Insight release notes","→","Redis Insight release notes","→\n      \n        RedisInsight v2.16.0, December 2022","→","RedisInsight v2.16.0, December 2022"]
+nav_prev: {"path": "redis/docs/latest/operate/kubernetes/release-notes/7-22-0-releases/7-22-0-16-august2025/index.md", "title": "Redis Enterprise for Kubernetes 7.22.0-16 (August 2025) release notes"}
+nav_next: {"path": "redis/docs/latest/operate/kubernetes/release-notes/7-8-4-releases/7-8-4-8-feb25/index.md", "title": "Redis Enterprise for Kubernetes 7.8.4-8 (Feb 2025) release notes"}
 ---
+
 # RedisInsight v2.16.0, December 2022
 
 RedisInsight v2.16.0
@@ -40,3 +43,4 @@ This is the General Availability (GA) release of RedisInsight 2.16.
 *   [#1514](https://github.com/RedisInsight/RedisInsight/pull/1514) Scan the database even when the [DBSIZE](https://redis.io/commands/dbsize/) returns 0
 
 ## On this page
+

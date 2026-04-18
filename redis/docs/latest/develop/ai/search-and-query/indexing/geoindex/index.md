@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:53:54.005Z"
 content_hash: "ccc7084dff598c8fa4bdcd7218e4ae7d514f361cf74fb6b3dc4a37fff81ee23e"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        Redis Search","→","Redis Search","→\n      \n        Indexing","→","Indexing","→\n      \n        Geospatial indexing","→","Geospatial indexing"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        Redis Search","→","Redis Search","→\n      \n        Indexing","→","Indexing","→\n      \n        Geospatial indexing","→","Geospatial indexing"]
+nav_prev: {"path": "redis/docs/latest/integrate/riot/quick-start/index.md", "title": "Getting started"}
+nav_next: {"path": "redis/docs/latest/develop/use-cases/leaderboard/go/index.md", "title": "Redis leaderboard with Go"}
 ---
+
 # Geospatial indexing
 
 Options for indexing geospatial data
@@ -3333,3 +3336,4 @@ public class GeoIndexExample
 You can also run queries to find whether shapes in the index completely contain or overlap each other. See [Geospatial queries](/docs/latest/develop/ai/search-and-query/query/geo-spatial/) for more information.
 
 ## On this page
+

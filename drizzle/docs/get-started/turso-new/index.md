@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:01:53.175Z"
 content_hash: "f49c561f1c52dfed6ef7e9c9f924166a7102265d93f3e6f3077905b6d3690ad7"
 menu_path: ["Get Started with Drizzle and Turso Cloud"]
 section_path: []
+nav_prev: {"path": "drizzle/docs/get-started/turso-database-new/index.md", "title": "Get Started with Drizzle and Turso Database"}
+nav_next: {"path": "drizzle/docs/get-started/vercel-existing/index.md", "title": "Get Started with Drizzle and Vercel Postgres in existing project"}
 ---
+
 ## Get Started with Drizzle and Turso Cloud
 
 This guide assumes familiarity with:
@@ -225,7 +228,7 @@ export const usersTable = sqliteTable("users_table", {
 
 #### Step 5 - Setup Drizzle config file[](#step-5---setup-drizzle-config-file)
 
-**Drizzle config** - a configuration file that is used by [Drizzle Kit](https://orm.drizzle.team/docs/kit-overview) and contains all the information about your database connection, migration folder and schema files.
+**Drizzle config** - a configuration file that is used by [Drizzle Kit](drizzle/docs/kit-overview/index.md) and contains all the information about your database connection, migration folder and schema files.
 
 Create a `drizzle.config.ts` file in the root of your project and add the following content:
 
@@ -252,7 +255,7 @@ You can directly apply changes to your database using the `drizzle-kit push` com
 npx drizzle-kit push
 ```
 
-Read more about the push command in [documentation](https://orm.drizzle.team/docs/drizzle-kit-push).
+Read more about the push command in [documentation](drizzle/docs/drizzle-kit-push/index.md).
 
 Tips
 
@@ -270,7 +273,7 @@ Apply migrations:
 npx drizzle-kit migrate
 ```
 
-Read more about migration process in [documentation](https://orm.drizzle.team/docs/kit-overview).
+Read more about migration process in [documentation](drizzle/docs/kit-overview/index.md).
 
 #### Step 7 - Seed and Query the database[](#step-7---seed-and-query-the-database)
 
@@ -366,3 +369,4 @@ bun src/index.ts
 ```
 
 If you don’t have bun installed, check the [Bun installation docs](https://bun.sh/docs/installation#installing)
+

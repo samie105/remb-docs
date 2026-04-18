@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:43:49.692Z"
 content_hash: "20e55f04918b2ee0a07ade9fd52c1d800f46592b2949460b8bb4cd835ff19934"
 menu_path: ["Sponsors"]
 section_path: []
+nav_prev: {"path": "trpc/docs/v9/rpc/index.md", "title": "HTTP RPC Specification"}
+nav_next: {"path": "trpc/docs/v9/ssg/index.md", "title": "Static Site Generation"}
 ---
+
 Version: 9.x
 
 If you enjoy working with tRPC and want to support the project, consider giving a token appreciation by [GitHub Sponsors](https://trpc.io/sponsor)!
@@ -91,3 +94,4 @@ Stefan Smiljkovic](https://automatio.ai/?ref=trpc&utm_source=github&utm_medium=r
 
 [![Erik%20Bj%C3%A4reholt](https://avatars.githubusercontent.com/u/1405370?u=8a516a20206354bedf5e1f7639649f3214562d84&v=4&s=100)  
 Erik Bjäreholt](https://erik.bjareholt.com/?ref=trpc&utm_source=github&utm_medium=referral&utm_campaign=trpc)
+

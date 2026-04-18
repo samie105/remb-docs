@@ -9,15 +9,9 @@ last_crawled_at: "2026-04-18T16:54:45.992Z"
 content_hash: "d02118b64e1b9337eb1dfcf9a85b9884cec7c2ba30d22c96204c46b469953e39"
 menu_path: ["font-smoothing"]
 section_path: []
+nav_prev: {"path": "tailwind/docs/font-size/index.md", "title": "font-size"}
+nav_next: {"path": "tailwind/docs/font-style/index.md", "title": "font-style"}
 ---
-[](/)
-
-[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
-
-1.  Typography
-2.  font-smoothing
-
-Typography
 
 # font-smoothing
 
@@ -86,3 +80,4 @@ Short, tactical video lessons from the creator of Tailwind CSS, delivered direct
 [Get the free course](/build-uis-that-dont-suck)
 
 Copyright © 2026 Tailwind Labs Inc.·[Trademark Policy](/brand)
+

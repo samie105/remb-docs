@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:06:36.478Z"
 content_hash: "b9ca96c1e8459e81e58e4013c1fef0b6f6f40021af9ccec324206bff7a7cd247"
 menu_path: ["@std/ulid"]
 section_path: []
+nav_prev: {"path": "deno/deno/runtime/reference/std/toml/index.md", "title": "@std/toml"}
+nav_next: {"path": "deno/deno/runtime/reference/std/uuid/index.md", "title": "@std/uuid"}
 ---
+
 On this page
 
 *   [Overview](#overview)
@@ -57,3 +60,4 @@ deno add jsr:@std/ulid
 ```
 
 [See all symbols in @std/ulid on](https://jsr.io/@std/ulid/doc)
+

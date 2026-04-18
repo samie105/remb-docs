@@ -9,7 +9,9 @@ last_crawled_at: "2026-04-18T16:31:48.593Z"
 content_hash: "56282a7d92ce542da5fad7427c3828031d26a9ee9d98d17f67e30f9e5c77235a"
 menu_path: ["Introduction"]
 section_path: []
+nav_next: {"path": "fastify/docs/latest/Guides/index.md", "title": "Index"}
 ---
+
 Version: latest (v5.8.x)
 
 The documentation for Fastify is split into two categories:
@@ -28,3 +30,4 @@ Developers experienced with Fastify should consult the [reference documentation]
 ## Additional Documentation[​](#additional-documentation "Direct link to Additional Documentation")
 
 *   Fastify's [Long Term Support (LTS)](/docs/latest/Reference/LTS/) policy
+

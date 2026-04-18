@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:39:19.519Z"
 content_hash: "0c3bbdba3eb53fe53075143be14803db7b53f0ffa53bf75f4c59218184c8154c"
 menu_path: ["Auth","Auth","Flows (How-tos)","Flows (How-tos)","Signout","Signout"]
 section_path: ["Auth","Auth","Flows (How-tos)","Flows (How-tos)","Signout","Signout"]
+nav_prev: {"path": "supabase/docs/guides/auth/sessions/index.md", "title": "User sessions"}
+nav_next: {"path": "supabase/docs/guides/auth/signing-keys/index.md", "title": "JWT Signing Keys"}
 ---
+
 # 
 
 Signing out
@@ -45,3 +48,4 @@ You can invoke these by providing the `scope` option:
 Upon sign out, all refresh tokens and potentially other database objects related to the affected sessions are destroyed and the client library removes the session stored in the local storage medium.
 
 Access Tokens of revoked sessions remain valid until their expiry time, encoded in the `exp` claim. The user won't be immediately logged out and will only be logged out when the Access Token expires.
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:36:00.600Z"
 content_hash: "671a3301fb5d4f47666b1e813da6110dc422abd36717a3a1fef432ff3299c6ec"
 menu_path: ["Configuration overview"]
 section_path: []
+nav_prev: {"path": "astro/en/develop-and-build/index.md", "title": "Develop and build"}
+nav_next: {"path": "astro/en/editor-setup/index.md", "title": "Editor setup"}
 ---
+
 # Configuration overview
 
 Astro is a flexible, unopinionated framework that allows you to configure your project in many different ways. This means that getting started with a new project might feel overwhelming: there is no “one best way” to set up your Astro project!
@@ -101,3 +104,4 @@ const { title = "My Astro Website", ...props } = Astro.props;---<link rel="sitem
 ```
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

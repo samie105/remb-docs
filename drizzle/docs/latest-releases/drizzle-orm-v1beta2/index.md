@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:10:06.514Z"
 content_hash: "587da0b5594af85e38519ac6d89ae0a18da69185414493d41a7c376d8565d3c2"
 menu_path: ["New Features"]
 section_path: []
+nav_prev: {"path": "drizzle/docs/latest-releases/drizzle-kit-v0232/index.md", "title": "Drizzle ORM - Drizzle Kit v0.23.2 release"}
+nav_next: {"path": "drizzle/docs/latest-releases/drizzle-orm-v0110/index.md", "title": "Drizzle ORM - DrizzleORM v0.11.0 release"}
 ---
+
 Drizzle ORM and Drizzle Kit v1.0.0-beta.2 release
 
 Feb 12, 2025
@@ -18,11 +21,11 @@ Feb 12, 2025
 
 > Don’t forget to check `1.0.0-beta.1` release notes as well: [https://github.com/drizzle-team/drizzle-orm/blob/beta/changelogs/drizzle-orm/1.0.0-beta.1.md](https://github.com/drizzle-team/drizzle-orm/blob/beta/changelogs/drizzle-orm/1.0.0-beta.1.md)
 
-> Check the migration guide for RQBv1 to RQBv2 migration steps: [https://orm.drizzle.team/docs/relations-v1-v2](https://orm.drizzle.team/docs/relations-v1-v2)
+> Check the migration guide for RQBv1 to RQBv2 migration steps: [https://orm.drizzle.team/docs/relations-v1-v2](drizzle/docs/relations-v1-v2/index.md)
 
-> Check new RQBv2 schema docs: [https://orm.drizzle.team/docs/relations-v2](https://orm.drizzle.team/docs/relations-v2)
+> Check new RQBv2 schema docs: [https://orm.drizzle.team/docs/relations-v2](drizzle/docs/relations-v2/index.md)
 
-> Check new RQBv2 query docs: [https://orm.drizzle.team/docs/rqb-v2](https://orm.drizzle.team/docs/rqb-v2)
+> Check new RQBv2 query docs: [https://orm.drizzle.team/docs/rqb-v2](drizzle/docs/rqb-v2/index.md)
 
 ## New Features
 
@@ -193,10 +196,10 @@ const query = db
 
 We’ve added a few more MySQL column types:
 
-*   blob: [https://orm.drizzle.team/docs/column-types/mysql#blob](https://orm.drizzle.team/docs/column-types/mysql#blob)
-*   tinyblob: [https://orm.drizzle.team/docs/column-types/mysql#tinyblob](https://orm.drizzle.team/docs/column-types/mysql#tinyblob)
-*   mediumblob: [https://orm.drizzle.team/docs/column-types/mysql#mediumblob](https://orm.drizzle.team/docs/column-types/mysql#mediumblob)
-*   longblob: [https://orm.drizzle.team/docs/column-types/mysql#longblob](https://orm.drizzle.team/docs/column-types/mysql#longblob)
+*   blob: [https://orm.drizzle.team/docs/column-types/mysql#blob](drizzle/docs/column-types/mysql/index.md#blob)
+*   tinyblob: [https://orm.drizzle.team/docs/column-types/mysql#tinyblob](drizzle/docs/column-types/mysql/index.md#tinyblob)
+*   mediumblob: [https://orm.drizzle.team/docs/column-types/mysql#mediumblob](drizzle/docs/column-types/mysql/index.md#mediumblob)
+*   longblob: [https://orm.drizzle.team/docs/column-types/mysql#longblob](drizzle/docs/column-types/mysql/index.md#longblob)
 
 ## More Updates and Fixes
 
@@ -535,3 +538,4 @@ We’ve added a few more MySQL column types:
 *   [\[BUG\]: planetscale - now() and current\_timestamp() doesn’t work when FSP is specified for timestamp](https://github.com/drizzle-team/drizzle-orm/issues/472)
     
 *   [\[BUG\]: MySQL alter table fails where tablename is reserved word](https://github.com/drizzle-team/drizzle-orm/issues/364)
+

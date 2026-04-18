@@ -9,15 +9,9 @@ last_crawled_at: "2026-04-18T16:56:01.299Z"
 content_hash: "58956cb8d5f7274b234404f56cd14e9e29e6dd67b706d35d41e9917f1ce475cf"
 menu_path: ["font-feature-settings"]
 section_path: []
+nav_prev: {"path": "tailwind/docs/font-variant-numeric/index.md", "title": "font-variant-numeric"}
+nav_next: {"path": "tailwind/docs/letter-spacing/index.md", "title": "letter-spacing"}
 ---
-[](/)
-
-[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
-
-1.  Typography
-2.  font-feature-settings
-
-Typography
 
 # font-feature-settings
 
@@ -91,3 +85,4 @@ Short, tactical video lessons from the creator of Tailwind CSS, delivered direct
 [Get the free course](/build-uis-that-dont-suck)
 
 Copyright © 2026 Tailwind Labs Inc.·[Trademark Policy](/brand)
+

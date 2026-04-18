@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:08:28.249Z"
 content_hash: "dcded5cb0111251a95b9be1d724a84345a384f2cd088d2244e725f64d610c367"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Prometheus and Grafana with Redis Cloud","→","Prometheus and Grafana with Redis Cloud"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Prometheus and Grafana with Redis Cloud","→","Prometheus and Grafana with Redis Cloud"]
+nav_prev: {"path": "redis/docs/latest/operate/rs/installing-upgrading/install/prepare-install/index.md", "title": "Prepare to install Redis Software"}
+nav_next: {"path": "redis/docs/latest/commands/redis-6-2-commands/index.md", "title": "Redis 6.2 Commands Reference"}
 ---
+
 # Prometheus and Grafana with Redis Cloud
 
 Use Prometheus and Grafana to collect and visualize Redis Cloud metrics.
@@ -201,3 +204,4 @@ These dashboards are open source. For additional dashboard options, or to file a
 For more information about configuring Grafana dashboards, see the [Grafana documentation](https://grafana.com/docs/).
 
 ## On this page
+

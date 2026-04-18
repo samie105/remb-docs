@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:48:35.991Z"
 content_hash: "b724c9efce5c63e7737908768617f6ac0d3cdba390abe8e2cf6fe147a7564206"
 menu_path: ["Step1"]
 section_path: []
+nav_prev: {"path": "trpc/docs/further-reading/index.md", "title": "Further Reading"}
+nav_next: {"path": "trpc/docs/landing-intro/Step2/index.md", "title": "Step2"}
 ---
+
 ts
 
 `const t = initTRPC.create();`
@@ -37,3 +40,4 @@ ts
 `});`
 
 `export type AppRouter = typeof appRouter;`
+

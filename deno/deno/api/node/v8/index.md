@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:43:26.749Z"
 content_hash: "6d3523317e92d49e6877c06c186ce30904e3a2aa2ac7bc4ba907bc7227ecce38"
 menu_path: ["v8 - Node documentation"]
 section_path: []
+nav_prev: {"path": "deno/deno/api/node/util/types/index.md", "title": "util/types - Node documentation"}
+nav_next: {"path": "deno/deno/api/node/wasi/index.md", "title": "wasi - Node documentation"}
 ---
+
 ### Usage in Deno
 
 ```typescript
@@ -339,3 +342,4 @@ v
 [startupSnapshot](.././v8/~/startupSnapshot "startupSnapshot")
 
 The `v8.startupSnapshot` interface can be used to add serialization and deserialization hooks for custom startup snapshots.
+

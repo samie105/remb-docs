@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:32:10.872Z"
 content_hash: "24909992fec67657ae4338977ca457640819f87074dd73f42ed266cf7ccbb3c4"
 menu_path: ["PostgreSQL: Documentation: 18: pg_dumpall"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/app-pgreceivewal.html/index.md", "title": "PostgreSQL: Documentation: 18: pg_receivewal"}
+nav_next: {"path": "postgres/docs/current/logical-replication-row-filter.html/index.md", "title": "PostgreSQL: Documentation: 18: 29.4.\u00a0Row Filters"}
 ---
+
 pg\_dumpall — extract a PostgreSQL database cluster into a script file
 
 ## Synopsis
@@ -343,3 +346,4 @@ It is not important which database you connect to here since the script file cre
 ## See Also
 
 Check [pg\_dump](https://www.postgresql.org/docs/current/app-pgdump.html "pg_dump") for details on possible error conditions.
+

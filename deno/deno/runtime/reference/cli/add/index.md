@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:50:14.994Z"
 content_hash: "73dd9f41f09dbfbe965eba2e1f0db2c1dd5943cb0dcf473abdd347431e4280b9"
 menu_path: ["deno add"]
 section_path: []
+nav_prev: {"path": "deno/deno/runtime/fundamentals/stability_and_releases/index.md", "title": "Stability and releases"}
+nav_next: {"path": "deno/deno/runtime/reference/cli/approve_scripts/index.md", "title": "deno approve-scripts"}
 ---
+
 On this page
 
 *   [Examples](#examples)
@@ -114,3 +117,4 @@ Check the specified lock file. (If value is not provided, defaults to "./deno.lo
 `--no-lock`
 
 Disable auto discovery of the lock file.
+

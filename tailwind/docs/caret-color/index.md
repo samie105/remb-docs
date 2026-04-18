@@ -9,15 +9,9 @@ last_crawled_at: "2026-04-18T17:15:36.547Z"
 content_hash: "e292918c093af723c6cb575f566dfaf61321c2a7a5b9cedc0a7a89720dab3873"
 menu_path: ["caret-color"]
 section_path: []
+nav_prev: {"path": "tailwind/docs/appearance/index.md", "title": "appearance"}
+nav_next: {"path": "tailwind/docs/color-scheme/index.md", "title": "color-scheme"}
 ---
-[](/)
-
-[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
-
-1.  Interactivity
-2.  caret-color
-
-Interactivity
 
 # caret-color
 
@@ -145,3 +139,4 @@ Make your ideas look awesome, without relying on a designer.
 ](https://www.refactoringui.com/?ref=sidebar)
 
 Copyright © 2026 Tailwind Labs Inc.·[Trademark Policy](/brand)
+

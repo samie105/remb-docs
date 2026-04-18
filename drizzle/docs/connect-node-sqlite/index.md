@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:40:38.844Z"
 content_hash: "11b90d72a832bab3c1750dfae75ee9056d04d8a8c022a2429aa7243cd88b1622"
 menu_path: ["Drizzle <> Node SQLite"]
 section_path: []
+nav_prev: {"path": "drizzle/docs/connect-bun-sqlite/index.md", "title": "Drizzle <> Bun SQLite"}
+nav_next: {"path": "drizzle/docs/connect-cloudflare-do/index.md", "title": "Drizzle <> Cloudflare Durable Objects SQLite"}
 ---
+
 Drizzle ORM natively supports **[`node:sqlite`](https://nodejs.org/api/sqlite.html)** module
 
 We embrace SQL dialects and dialect specific drivers and syntax and unlike any other ORM, for synchronous drivers like `node:sqlite` we have both **async** and **sync** APIs and we mirror most popular SQLite-like `all`, `get`, `values` and `run` query methods syntax.
@@ -82,3 +85,4 @@ const result = db.select().from(users).run();
 ```
 
 #### What’s next?[](#whats-next)
+

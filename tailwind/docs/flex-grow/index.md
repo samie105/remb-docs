@@ -9,15 +9,9 @@ last_crawled_at: "2026-04-18T16:46:29.432Z"
 content_hash: "f4b4af9dd64f845eef18259a23ddd5aebfa67d54147b73449bc54850d167c0a2"
 menu_path: ["flex-grow"]
 section_path: []
+nav_prev: {"path": "tailwind/docs/flex/index.md", "title": "flex"}
+nav_next: {"path": "tailwind/docs/flex-shrink/index.md", "title": "flex-shrink"}
 ---
-[](/)
-
-[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
-
-1.  Flexbox & Grid
-2.  flex-grow
-
-Flexbox & Grid
 
 # flex-grow
 
@@ -134,3 +128,4 @@ Short, tactical video lessons from the creator of Tailwind CSS, delivered direct
 [Get the free course](/build-uis-that-dont-suck)
 
 Copyright © 2026 Tailwind Labs Inc.·[Trademark Policy](/brand)
+

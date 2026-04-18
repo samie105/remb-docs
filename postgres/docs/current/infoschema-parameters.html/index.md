@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:45:13.068Z"
 content_hash: "669db239e5e62306fea61d50e2f8102d44763203c615abe545efec79d24238bd"
 menu_path: ["PostgreSQL: Documentation: 18: 35.33. parameters"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/ecpg-commands.html/index.md", "title": "PostgreSQL: Documentation: 18: 34.3.\u00a0Running SQL Commands"}
+nav_next: {"path": "postgres/docs/current/event-trigger-database-login-example.html/index.md", "title": "PostgreSQL: Documentation: 18: 38.5.\u00a0A Database Login Event Trigger Example"}
 ---
+
 Column Type
 
 Description
@@ -141,3 +144,4 @@ An identifier of the data type descriptor of the parameter, unique among the dat
 `parameter_default` `character_data`
 
 The default expression of the parameter, or null if none or if the function is not owned by a currently enabled role.
+

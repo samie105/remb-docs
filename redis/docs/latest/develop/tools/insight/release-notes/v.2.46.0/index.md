@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:34:12.996Z"
 content_hash: "c691223bb13152fa98a5158b87a02fb73b55abf9733c6bdbc189e25ecd5e1b24"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Client tools","→","Client tools","→\n      \n        Redis Insight","→","Redis Insight","→\n      \n        Redis Insight release notes","→","Redis Insight release notes","→\n      \n        RedisInsight v2.46.0, March 2024","→","RedisInsight v2.46.0, March 2024"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Client tools","→","Client tools","→\n      \n        Redis Insight","→","Redis Insight","→\n      \n        Redis Insight release notes","→","Redis Insight release notes","→\n      \n        RedisInsight v2.46.0, March 2024","→","RedisInsight v2.46.0, March 2024"]
+nav_prev: {"path": "redis/docs/latest/develop/tools/insight/release-notes/v.2.50.0/index.md", "title": "Redis Insight v2.50.0, May 2024"}
+nav_next: {"path": "redis/docs/latest/develop/tools/insight/release-notes/v.2.48.0/index.md", "title": "Redis Insight v2.48.0, April 2024"}
 ---
+
 # RedisInsight v2.46.0, March 2024
 
 RedisInsight v2.46
@@ -37,3 +40,4 @@ This is the General Availability (GA) release of RedisInsight 2.46.
 *   [#3174](https://github.com/RedisInsight/RedisInsight/pull/3174) Display invalid JSONs as unformatted values when a JSON view is set in Workbench results.
 
 ## On this page
+

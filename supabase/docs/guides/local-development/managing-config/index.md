@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:46:41.406Z"
 content_hash: "4cfb3324f44cb0546a62907d62ed0bc9017a64e46f0fc041b072947a4b3795bf"
 menu_path: ["Local Dev / CLI","Local Dev / CLI","Local development","Local development","Managing config and secrets","Managing config and secrets"]
 section_path: ["Local Dev / CLI","Local Dev / CLI","Local development","Local development","Managing config and secrets","Managing config and secrets"]
+nav_prev: {"path": "supabase/docs/guides/local-development/customizing-email-templates/index.md", "title": "Customizing email templates"}
+nav_next: {"path": "supabase/docs/guides/local-development/restoring-downloaded-backup/index.md", "title": "Restoring a downloaded backup locally"}
 ---
+
 # 
 
 Managing config and secrets
@@ -61,3 +64,4 @@ For more advanced secrets management workflows, including:
 *   **Encrypted configuration values**: Use encrypted values directly in your `config.toml`
 
 See the [Managing secrets for branches](/docs/guides/deployment/branching#managing-secrets-for-branches) section in our branching documentation, or check out the [dotenvx example repository](https://github.com/supabase/supabase/blob/master/examples/slack-clone/nextjs-slack-clone-dotenvx/README.md) for a complete implementation.
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:05:28.526Z"
 content_hash: "842f1215489691d39724d1ed329db213f1defb64fa27a0390aabc914101b356d"
 menu_path: ["Drizzle ORM - SQL Limit/Offset pagination"]
 section_path: []
+nav_prev: {"path": "drizzle/docs/guides/incrementing-a-value/index.md", "title": "Drizzle ORM - SQL Increment value"}
+nav_next: {"path": "drizzle/docs/guides/mysql-local-setup/index.md", "title": "Drizzle ORM - How to setup MySQL locally"}
 ---
+
 Drizzle | SQL Limit/Offset pagination
 
 PostgreSQL
@@ -226,6 +229,7 @@ await getUsers(2);
 ]
 ```
 
-So, if your database experiences frequently insert and delete operations in real time or you need high performance to paginate large tables, you should consider using [cursor-based](https://orm.drizzle.team/docs/guides/cursor-based-pagination) pagination instead.
+So, if your database experiences frequently insert and delete operations in real time or you need high performance to paginate large tables, you should consider using [cursor-based](drizzle/docs/guides/cursor-based-pagination/index.md) pagination instead.
 
 To learn more about `deferred join` technique you should follow these guides: [Planetscale Pagination Guide](https://planetscale.com/blog/mysql-pagination) and [Efficient Pagination Guide by Aaron Francis](https://aaronfrancis.com/2022/efficient-pagination-using-deferred-joins).
+

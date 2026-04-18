@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:54:04.829Z"
 content_hash: "8579c966a8e1ae1cab7f4fb9443aa4cfcf958ea103d74fb5c09f5c53603e485a"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Redis leaderboard","→","Redis leaderboard","→\n      \n        Redis leaderboard with Go","→","Redis leaderboard with Go"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Redis leaderboard","→","Redis leaderboard","→\n      \n        Redis leaderboard with Go","→","Redis leaderboard with Go"]
+nav_prev: {"path": "redis/docs/latest/develop/ai/search-and-query/indexing/geoindex/index.md", "title": "Geospatial indexing"}
+nav_next: {"path": "redis/docs/latest/develop/use-cases/session-store/go/index.md", "title": "Redis session store with Go"}
 ---
+
 # Redis leaderboard with Go
 
 Implement a Redis leaderboard in Go with go-redis and sorted sets
@@ -291,3 +294,4 @@ Some leaderboards are permanent, while others reset daily, weekly, or seasonally
 Per-user hashes work best for small, frequently accessed profile details. Large profile documents or rarely used attributes are often better kept in another store, with Redis holding only the fields needed to render the leaderboard quickly.
 
 ## On this page
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:45:54.119Z"
 content_hash: "9cfcb9f47f006707f188a5afa3130f53f38dcf9ae4e4aa4428ea649e47eab149"
 menu_path: ["PostgreSQL: Documentation: 18: 52.52. pg_statistic_ext"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/git.html/index.md", "title": "PostgreSQL: Documentation: 18: I.1.\u00a0Getting the Source via Git"}
+nav_next: {"path": "postgres/docs/current/infoschema-referential-constraints.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.34.\u00a0referential_constraints"}
 ---
+
 The catalog `pg_statistic_ext` holds definitions of extended planner statistics. Each row in this catalog corresponds to a _statistics object_ created with [`CREATE STATISTICS`](https://www.postgresql.org/docs/current/sql-createstatistics.html "CREATE STATISTICS").
 
 **Table 52.52. `pg_statistic_ext` Columns**
@@ -55,3 +58,4 @@ An array containing codes for the enabled statistics kinds; valid values are: `d
 Expression trees (in `nodeToString()` representation) for statistics object attributes that are not simple column references. This is a list with one element per expression. Null if all statistics object attributes are simple references.
 
 The `pg_statistic_ext` entry is filled in completely during [`CREATE STATISTICS`](https://www.postgresql.org/docs/current/sql-createstatistics.html "CREATE STATISTICS"), but the actual statistical values are not computed then. Subsequent [`ANALYZE`](https://www.postgresql.org/docs/current/sql-analyze.html "ANALYZE") commands compute the desired values and populate an entry in the [`pg_statistic_ext_data`](https://www.postgresql.org/docs/current/catalog-pg-statistic-ext-data.html "52.53. pg_statistic_ext_data") catalog.
+

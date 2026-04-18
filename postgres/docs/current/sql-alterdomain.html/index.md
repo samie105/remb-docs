@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:44:41.964Z"
 content_hash: "257a028e2dc983d26a1f6770d3295bc1b4c501e2832b2df9b4b6dbf5ac7a3321"
 menu_path: ["PostgreSQL: Documentation: 18: ALTER DOMAIN"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/ddl-generated-columns.html/index.md", "title": "PostgreSQL: Documentation: 18: 5.4.\u00a0Generated Columns"}
+nav_next: {"path": "postgres/docs/current/release-18-3.html/index.md", "title": "PostgreSQL: Documentation: 18: E.1.\u00a0Release 18.3"}
 ---
+
 ALTER DOMAIN — change the definition of a domain
 
 ## Synopsis
@@ -157,3 +160,4 @@ ALTER DOMAIN zipcode SET SCHEMA customers;
 ## Compatibility
 
 `ALTER DOMAIN` conforms to the SQL standard, except for the `OWNER`, `RENAME`, `SET SCHEMA`, and `VALIDATE CONSTRAINT` variants, which are PostgreSQL extensions. The `NOT VALID` clause of the `ADD CONSTRAINT` variant is also a PostgreSQL extension.
+

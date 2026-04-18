@@ -9,15 +9,9 @@ last_crawled_at: "2026-04-18T16:47:45.016Z"
 content_hash: "c581b02126bca366ab5774a091d5ee955013c32c5dfc3ce8bb84280f5b02d934"
 menu_path: ["grid-auto-flow"]
 section_path: []
+nav_prev: {"path": "tailwind/docs/grid-row/index.md", "title": "grid-row"}
+nav_next: {"path": "tailwind/docs/grid-auto-columns/index.md", "title": "grid-auto-columns"}
 ---
-[](/)
-
-[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
-
-1.  Flexbox & Grid
-2.  grid-auto-flow
-
-Flexbox & Grid
 
 # grid-auto-flow
 
@@ -95,3 +89,4 @@ Short, tactical video lessons from the creator of Tailwind CSS, delivered direct
 [Get the free course](/build-uis-that-dont-suck)
 
 Copyright © 2026 Tailwind Labs Inc.·[Trademark Policy](/brand)
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:47:04.111Z"
 content_hash: "0d05b5711991340198c68fc2320ead4017baaad14a7ccb0632851116cc4cb795"
 menu_path: ["PostgreSQL: Documentation: 18: F.25. pg_buffercache — inspect PostgreSQL buffer cache state"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/spi-spi-getbinval.html/index.md", "title": "PostgreSQL: Documentation: 18: SPI_getbinval"}
+nav_next: {"path": "postgres/docs/current/sql-createrole.html/index.md", "title": "PostgreSQL: Documentation: 18: CREATE ROLE"}
 ---
+
 The `pg_buffercache` module provides a means for examining what's happening in the shared buffer cache in real time. It also offers a low-level way to evict data from it, for testing purposes.
 
 This module provides the `pg_buffercache_pages()` function (wrapped in the `pg_buffercache` view), the `pg_buffercache_numa_pages()` function (wrapped in the `pg_buffercache_numa` view), the `pg_buffercache_summary()` function, the `pg_buffercache_usage_counts()` function, the `pg_buffercache_evict()` function, the `pg_buffercache_evict_relation()` function and the `pg_buffercache_evict_all()` function.
@@ -228,3 +231,4 @@ regression=# SELECT \* FROM pg\_buffercache\_usage\_counts();
            4 |       9 |     7 |      0
            5 |     164 |   106 |      0
 (6 rows)
+

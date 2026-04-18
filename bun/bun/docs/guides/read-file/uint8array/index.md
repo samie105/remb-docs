@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:51:52.433Z"
 content_hash: "94e70a797ecf176faf11e4673f2d2f9a1bf0116379a55bed5d8eddb81f7190b4"
 menu_path: ["Read a file to a Uint8Array"]
 section_path: []
+nav_prev: {"path": "bun/bun/docs/guides/read-file/string/index.md", "title": "Read a file as a string"}
+nav_next: {"path": "bun/bun/docs/guides/read-file/watch/index.md", "title": "Watch a directory for changes"}
 ---
+
 [Skip to main content](#content-area)
 
 [Bun home page![light logo](https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z_zHyy/logo/logo-with-wordmark-dark.svg?fit=max&auto=format&n=JUhaF6Mf68z_zHyy&q=85&s=3f55cd23822028e40658b192c927f3e4)![dark logo](https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z_zHyy/logo/logo-with-wordmark-light.svg?fit=max&auto=format&n=JUhaF6Mf68z_zHyy&q=85&s=8a0c5928d9dc3631f0d33e17c257e2ec)](/docs)
@@ -65,3 +68,4 @@ Read a file to an ArrayBuffer
 Next
 
 ](/docs/guides/read-file/arraybuffer)
+

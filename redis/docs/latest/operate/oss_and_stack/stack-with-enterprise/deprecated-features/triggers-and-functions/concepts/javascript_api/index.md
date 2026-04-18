@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:49:23.232Z"
 content_hash: "04cda752664f26578169516fd7c6cd2db68ebf4ec17bab8b1ed9851cc5146ae0"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Redis Open Source and Redis Software","→","Redis Open Source and Redis Software","→\n      \n        Deprecated Redis Open Source features and modules","→","Deprecated Redis Open Source features and modules","→\n      \n        Triggers and functions","→","Triggers and functions","→\n      \n        Concepts","→","Concepts","→\n      \n        JavaScript API","→","JavaScript API"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Redis Open Source and Redis Software","→","Redis Open Source and Redis Software","→\n      \n        Deprecated Redis Open Source features and modules","→","Deprecated Redis Open Source features and modules","→\n      \n        Triggers and functions","→","Triggers and functions","→\n      \n        Concepts","→","Concepts","→\n      \n        JavaScript API","→","JavaScript API"]
+nav_prev: {"path": "redis/docs/latest/operate/oss_and_stack/stack-with-enterprise/deprecated-features/triggers-and-functions/concepts/triggers/keyspace_triggers/index.md", "title": "Keyspace triggers"}
+nav_next: {"path": "redis/docs/latest/develop/programmability/eval-intro/index.md", "title": "Scripting with Lua"}
 ---
+
 # JavaScript API
 
 Overview of the JavaScript API
@@ -258,3 +261,4 @@ async_client.runOnShards(
 ```
 
 ## On this page
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:51:05.951Z"
 content_hash: "d91ec7ab3b45915b908214fe6797fa76c88338987a15c96721c78ceffa8c84f2"
 menu_path: ["PostgreSQL: Documentation: 18: 52.55. pg_subscription_rel"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/plperl-trusted.html/index.md", "title": "PostgreSQL: Documentation: 18: 43.5.\u00a0Trusted and Untrusted PL/Perl"}
+nav_next: {"path": "postgres/docs/current/view-pg-cursors.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.7.\u00a0pg_cursors"}
 ---
+
 Development Versions: [devel](https://www.postgresql.org/docs/devel/catalog-pg-subscription-rel.html "PostgreSQL devel - 52.55. pg_subscription_rel")
 
 The catalog `pg_subscription_rel` contains the state for each replicated relation in each subscription. This is a many-to-many mapping.
@@ -37,3 +40,4 @@ State code: `i` = initialize, `d` = data is being copied, `f` = finished table c
 `srsublsn` `pg_lsn`
 
 Remote LSN of the state change used for synchronization coordination when in `s` or `r` states, otherwise null
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:59:44.795Z"
 content_hash: "c4f7a0007abb4061ddb34091531b97b41e04ecbe3de742cb9d39c56265fe82f9"
 menu_path: ["Platform","Platform","More","More","More","AWS Marketplace","AWS Marketplace","Getting Started","Getting Started"]
 section_path: ["Platform","Platform","More","More","More","AWS Marketplace","AWS Marketplace","Getting Started","Getting Started"]
+nav_prev: {"path": "supabase/docs/guides/platform/aws-marketplace/invoices/index.md", "title": "Invoices"}
+nav_next: {"path": "supabase/docs/guides/platform/aws-marketplace/manage-your-subscription/index.md", "title": "Manage your subscription"}
 ---
+
 # 
 
 Getting Started
@@ -105,3 +108,4 @@ After the payment has been confirmed and your marketplace subscription is active
 Complete the setup by linking a Supabase organization to the AWS Marketplace subscription.
 
 ![Supabase product subscribe](/docs/img/guides/platform/aws-marketplace-onboarding-page--light.png)
+

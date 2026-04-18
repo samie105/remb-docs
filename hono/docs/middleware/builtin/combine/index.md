@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:50:09.984Z"
 content_hash: "bdfebc7eea4869bb2f7e597c8f84d5ab9d30e90e98c10a8b913ecb4765ac216d"
 menu_path: ["Combine Middleware ​"]
 section_path: []
+nav_prev: {"path": "hono/docs/middleware/builtin/cache/index.md", "title": "Cache Middleware \u200b"}
+nav_next: {"path": "hono/docs/middleware/builtin/compress/index.md", "title": "Compress Middleware \u200b"}
 ---
+
 ## Combine Middleware [​](#combine-middleware)
 
 Combine Middleware combines multiple middleware functions into a single middleware. It provides three functions:
@@ -114,3 +117,4 @@ import { bearerAuth } from 'hono/bearer-auth'
 // Otherwise, require a valid token.
 app.use('/api/*', except('/api/public/*', bearerAuth({ token })))
 ```
+

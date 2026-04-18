@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:50:41.128Z"
 content_hash: "e33b81b2df0b3ec3ebf243c85d48861b130c8484e5e538881a31c5b9d9e32bae"
 menu_path: ["PostgreSQL: Documentation: 18: 54.5. Logical Streaming Replication Protocol"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/datetime-keywords.html/index.md", "title": "PostgreSQL: Documentation: 18: B.3.\u00a0Date/Time Key Words"}
+nav_next: {"path": "postgres/docs/current/app-pgchecksums.html/index.md", "title": "PostgreSQL: Documentation: 18: pg_checksums"}
 ---
+
 Development Versions: [devel](https://www.postgresql.org/docs/devel/protocol-logical-replication.html "PostgreSQL devel - 54.5. Logical Streaming Replication Protocol")
 
 This section describes the logical replication protocol, which is the message flow started by the `START_REPLICATION` `SLOT` _`slot_name`_ `LOGICAL` replication command.
@@ -75,3 +78,4 @@ Every sent transaction contains zero or more DML messages (Insert, Update, Delet
 Every DML message contains a relation OID, identifying the publisher's relation that was acted on. Before the first DML message for a given relation OID, a Relation message will be sent, describing the schema of that relation. Subsequently, a new Relation message will be sent if the relation's definition has changed since the last Relation message was sent for it. (The protocol assumes that the client is capable of remembering this metadata for as many relations as needed.)
 
 Relation messages identify column types by their OIDs. In the case of a built-in type, it is assumed that the client can look up that type OID locally, so no additional data is needed. For a non-built-in type OID, a Type message will be sent before the Relation message, to provide the type name associated with that OID. Thus, a client that needs to specifically identify the types of relation columns should cache the contents of Type messages, and first consult that cache to see if the type OID is defined there. If not, look up the type OID locally.
+

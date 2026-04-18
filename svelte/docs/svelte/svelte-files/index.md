@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:32:48.540Z"
 content_hash: "9f31fd2e739ed40469a826e4fd33b14acf18b3fc1dbd384d7b6334381af9acf1"
 menu_path: [".svelte files"]
 section_path: []
+nav_prev: {"path": "svelte/docs/svelte/getting-started/index.md", "title": "Getting started"}
+nav_next: {"path": "svelte/docs/svelte/svelte-js-files/index.md", "title": ".svelte.js and .svelte.ts files"}
 ---
+
 Components are the building blocks of Svelte applications. They are written into `.svelte` files, using a superset of HTML.
 
 All three sections — script, styles and markup — are optional.
@@ -99,3 +102,4 @@ For more information, head to the section on [styling](scoped-styles).
 previous next
 
 [Getting started](/docs/svelte/getting-started) [.svelte.js and .svelte.ts files](/docs/svelte/svelte-js-files)
+

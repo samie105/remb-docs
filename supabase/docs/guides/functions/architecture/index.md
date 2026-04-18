@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:43:30.861Z"
 content_hash: "783f9c132945e960a67f34c3165f9c3e016c036363b9702be564b795b057e413"
 menu_path: ["Edge Functions","Edge Functions","Getting started","Getting started","Architecture","Architecture"]
 section_path: ["Edge Functions","Edge Functions","Getting started","Getting started","Architecture","Architecture"]
+nav_prev: {"path": "supabase/docs/guides/deployment/shared-responsibility-model/index.md", "title": "Shared Responsibility Model"}
+nav_next: {"path": "supabase/docs/guides/functions/auth-legacy-jwt/index.md", "title": "Integrating With Supabase Auth"}
 ---
+
 # 
 
 Edge Functions Architecture
@@ -117,3 +120,4 @@ Compared to traditional serverless or monolithic architectures, this setup offer
     *   Real-time data transformations (e.g., image processing).
     *   API integrations and webhooks.
     *   Personalization and A/B testing at the edge.
+

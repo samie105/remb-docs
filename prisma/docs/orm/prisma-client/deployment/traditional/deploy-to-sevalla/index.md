@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:54:42.853Z"
 content_hash: "1e4ad1aa44ffb6aeb48428c75f961443d3d8835676e5116458265f891380af3b"
 menu_path: ["Deploy to Sevalla"]
 section_path: []
+nav_prev: {"path": "prisma/docs/orm/prisma-client/deployment/traditional/deploy-to-render/index.md", "title": "Deploy to Render"}
+nav_next: {"path": "prisma/docs/orm/prisma-client/setup-and-configuration/databases-connections/connection-management/index.md", "title": "Connection management"}
 ---
+
 This guide explains how to deploy a Node.js server that uses Prisma ORM and PostgreSQL to [Sevalla](https://sevalla.com/). The app exposes a REST API and uses Prisma Client to query a PostgreSQL database. Both the app and database will be hosted on Sevalla.
 
 Sevalla is a developer-focused PaaS platform designed to simplify application and server deployment. You can easily host your applications, databases, object storage and static sites.
@@ -75,3 +78,4 @@ Once this is done, you can manage and interact with your database directly via S
 ![Sevalla database studio interface](https://www.prisma.io/docs/img/orm/prisma-client/deployment/traditional/images/sevalla-database-studio.png?dpl=dpl_2TrAJrUt7dXR3AAWNDvwk5WL6VFX)
 
 Congratulations! You've successfully deployed a Node.js application using Prisma ORM to Sevalla. Your app and database are now connected, secure, and production-ready!
+

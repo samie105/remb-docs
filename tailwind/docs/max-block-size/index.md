@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:54:07.006Z"
 content_hash: "3bd1e5341258fd689d5584d8a4df2c32ad117d0c61e9b5e1d35e1101481003de"
 menu_path: ["max-block-size"]
 section_path: []
+nav_prev: {"path": "tailwind/docs/min-block-size/index.md", "title": "min-block-size"}
+nav_next: {"path": "tailwind/docs/font-family/index.md", "title": "font-family"}
 ---
+
 Utilities for setting the maximum block size of an element.
 
 Class
@@ -116,7 +119,7 @@ Prefix a `max-block-size` utility with a breakpoint variant like `md:` to only a
 <div class="block-48 max-block-full md:max-block-screen ...">  <!-- ... --></div>
 ```
 
-Learn more about using variants in the [variants documentation](https://tailwindcss.com/docs/hover-focus-and-other-states).
+Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).
 
 ## [Customizing your theme](#customizing-your-theme)
 
@@ -126,4 +129,5 @@ The `max-block-<number>` utilities are driven by the `--spacing` theme variable,
 @theme {  --spacing: 1px; }
 ```
 
-Learn more about customizing the spacing scale in the [theme variable documentation](https://tailwindcss.com/docs/theme).
+Learn more about customizing the spacing scale in the [theme variable documentation](tailwind/docs/theme/index.md).
+

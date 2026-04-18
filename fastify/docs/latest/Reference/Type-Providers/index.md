@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:35:02.457Z"
 content_hash: "3ab09344984c9daa523042ea009b43078c4cc738622c7b9a101339c443a0a5fc"
 menu_path: ["Type-Providers"]
 section_path: []
+nav_prev: {"path": "fastify/docs/latest/Reference/Routes/index.md", "title": "Routes"}
+nav_next: {"path": "fastify/docs/latest/Reference/Server/index.md", "title": "Server"}
 ---
+
 Version: latest (v5.8.x)
 
 ## Type Providers[​](#type-providers "Direct link to Type Providers")
@@ -89,3 +92,4 @@ When working with modules, use `FastifyInstance` with Type Provider generics. Se
 ```
 // routes.tsimport { Type } from 'typebox'import {  FastifyInstance,  FastifyBaseLogger,  RawReplyDefaultExpression,  RawRequestDefaultExpression,  RawServerDefault} from 'fastify'import { TypeBoxTypeProvider } from '@fastify/type-provider-typebox'type FastifyTypebox = FastifyInstance<  RawServerDefault,  RawRequestDefaultExpression<RawServerDefault>,  RawReplyDefaultExpression<RawServerDefault>,  FastifyBaseLogger,  TypeBoxTypeProvider>;export function registerRoutes(fastify: FastifyTypebox): void {  fastify.get('/', {    schema: {      body: Type.Object({        x: Type.String(),        y: Type.Number(),        z: Type.Boolean()      })    }  }, (req) => {    // works    const { x, y, z } = req.body  });}
 ```
+

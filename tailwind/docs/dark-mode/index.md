@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:36:35.732Z"
 content_hash: "62eec780490461e1cabfb530b0bf4ac1bfb2032455f21bf2f52905875ed1f4d5"
 menu_path: ["Dark mode"]
 section_path: []
+nav_prev: {"path": "tailwind/docs/responsive-design/index.md", "title": "Responsive design"}
+nav_next: {"path": "tailwind/docs/theme/index.md", "title": "Theme variables"}
 ---
+
 Using variants to style your site in dark mode.
 
 ## [Overview](#overview)
@@ -87,3 +90,4 @@ spaghetti.js
 ```
 
 Again you can manage this however you like, even storing the preference server-side in a database and rendering the class on the server — it's totally up to you.
+

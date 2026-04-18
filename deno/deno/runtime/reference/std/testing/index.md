@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:06:04.307Z"
 content_hash: "79ebb6078053108388417e3328b8c717b689863f965bd27fc949c7a322c08297"
 menu_path: ["@std/testing"]
 section_path: []
+nav_prev: {"path": "deno/deno/runtime/reference/std/tar/index.md", "title": "@std/tar"}
+nav_next: {"path": "deno/deno/runtime/reference/std/text/index.md", "title": "@std/text"}
 ---
+
 On this page
 
 *   [Overview](#overview)
@@ -61,3 +64,4 @@ deno add jsr:@std/testing
 ```
 
 [See all symbols in @std/testing on](https://jsr.io/@std/testing/doc)
+

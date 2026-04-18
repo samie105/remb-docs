@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:33:23.062Z"
 content_hash: "c10701e8d8778bc896d423e448af84e93315f4aef1a74550a4fdd42392a652cc"
 menu_path: ["Compatibility"]
 section_path: []
+nav_prev: {"path": "tailwind/docs/editor-setup/index.md", "title": "Editor setup"}
+nav_next: {"path": "tailwind/docs/upgrade-guide/index.md", "title": "Upgrade guide"}
 ---
+
 Learn about browser support and compatibility with other tooling.
 
 ## [Browser support](#browser-support)
@@ -86,7 +89,7 @@ On top of that, when you're building things with Tailwind CSS, you do the vast m
 
 When using preprocessors like Sass or Less, you may have used functions like `darken` or `lighten` to adjust colors.
 
-When using Tailwind, the recommended workflow is to use a predefined color palette that includes light and dark shades of each color, like the expertly designed [default color palette](https://tailwindcss.com/docs/colors) included with the framework.
+When using Tailwind, the recommended workflow is to use a predefined color palette that includes light and dark shades of each color, like the expertly designed [default color palette](tailwind/docs/colors/index.md) included with the framework.
 
 ```
 <button class="bg-indigo-500 hover:bg-indigo-600 ...">  <!-- ... --></button>
@@ -155,3 +158,4 @@ Button.vue
 ```
 <template>  <button><slot /></button></template><style scoped>  button {    background-color: var(--color-blue-500);  }</style>
 ```
+

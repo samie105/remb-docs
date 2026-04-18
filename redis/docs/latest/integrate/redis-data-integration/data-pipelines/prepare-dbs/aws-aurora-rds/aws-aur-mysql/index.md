@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:50:40.679Z"
 content_hash: "ff4d017ffcf24f25e09eab3ecbea9bda10bcc6481928c80798e7598c4ab3dbc1"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Redis Data Integration","→","Redis Data Integration","→\n      \n        Data pipelines","→","Data pipelines","→\n      \n        Prepare source databases","→","Prepare source databases","→\n      \n        Prepare AWS RDS and Aurora databases for RDI","→","Prepare AWS RDS and Aurora databases for RDI","→\n      \n        Prepare AWS Aurora MySQL/AWS RDS MySQL for RDI","→","Prepare AWS Aurora MySQL/AWS RDS MySQL for RDI"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Redis Data Integration","→","Redis Data Integration","→\n      \n        Data pipelines","→","Data pipelines","→\n      \n        Prepare source databases","→","Prepare source databases","→\n      \n        Prepare AWS RDS and Aurora databases for RDI","→","Prepare AWS RDS and Aurora databases for RDI","→\n      \n        Prepare AWS Aurora MySQL/AWS RDS MySQL for RDI","→","Prepare AWS Aurora MySQL/AWS RDS MySQL for RDI"]
+nav_prev: {"path": "redis/docs/latest/integrate/nredisstack/index.md", "title": "C#/.NET client for Redis"}
+nav_next: {"path": "redis/docs/latest/integrate/redis-data-integration/data-pipelines/prepare-dbs/mongodb/index.md", "title": "Prepare MongoDB for RDI"}
 ---
+
 # Prepare AWS Aurora MySQL/AWS RDS MySQL for RDI
 
 Enable CDC features in your source databases
@@ -131,3 +134,4 @@ The Debezium connector needs a user account to connect to MySQL. This user must 
     ```sql
     FLUSH PRIVILEGES;
     ```
+

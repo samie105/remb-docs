@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:10:48.698Z"
 content_hash: "36815b3a60a63b26daeb084404cc0920282a55b58aea2237a8133705b3cd7fcb"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Redis on Railway","→","Redis on Railway"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Redis on Railway","→","Redis on Railway"]
+nav_prev: {"path": "redis/docs/latest/operate/redisinsight/proxy/index.md", "title": "Subpath proxy"}
+nav_next: {"path": "redis/docs/latest/develop/tools/insight/release-notes/index.md", "title": "Redis Insight release notes"}
 ---
+
 # Redis on Railway
 
 Deploy and host Redis on Railway. The Railway Redis database template allows you to provision and connect to a Redis database with zero configuration.
@@ -51,3 +54,4 @@ Especially for production environments, performing backups and monitoring the he
 *   [Railway platform features](https://railway.com/features?utm_medium=integration&utm_source=docs&utm_campaign=redis)
 
 ## On this page
+

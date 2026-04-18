@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:01:01.715Z"
 content_hash: "30e7692e8f6827fd5982ae176858163c13c90fe78f923b7f44ded9abb8b31653"
 menu_path: ["Storage","Storage","Analytics Buckets","Analytics Buckets","Introduction","Introduction"]
 section_path: ["Storage","Storage","Analytics Buckets","Analytics Buckets","Introduction","Introduction"]
+nav_prev: {"path": "supabase/docs/guides/storage/analytics/creating-analytics-buckets/index.md", "title": "Creating Analytics Buckets"}
+nav_next: {"path": "supabase/docs/guides/storage/analytics/limits/index.md", "title": "Analytics Buckets Limits"}
 ---
+
 # 
 
 Analytics Buckets
@@ -47,3 +50,4 @@ Analytics buckets are perfect for:
 *   **Complex analytical queries** - Execute sophisticated aggregations and joins over large datasets
 
 By separating transactional and analytical workloads, Supabase lets you build scalable analytics pipelines without compromising your primary Postgres performance.
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:05:32.166Z"
 content_hash: "4ff8afb04fae1a4fa45d329c6505b95d20c4b8f403f8b7c5a2acb62959ac1f7a"
 menu_path: ["@std/semver"]
 section_path: []
+nav_prev: {"path": "deno/deno/runtime/reference/std/regexp/index.md", "title": "@std/regexp"}
+nav_next: {"path": "deno/deno/runtime/reference/std/streams/index.md", "title": "@std/streams"}
 ---
+
 On this page
 
 *   [Overview](#overview)
@@ -232,3 +235,4 @@ deno add jsr:@std/semver
 ```
 
 [See all symbols in @std/semver on](https://jsr.io/@std/semver/doc)
+

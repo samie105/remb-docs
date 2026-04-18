@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:37:30.107Z"
 content_hash: "a0c27b7bdd7e7cb1078c545c2c556ca4a9830e12711c33f419353c29717317e8"
 menu_path: ["Contributing To Fastify"]
 section_path: []
+nav_prev: {"path": "fastify/docs/latest/Guides/Benchmarking/index.md", "title": "Benchmarking"}
+nav_next: {"path": "fastify/docs/latest/Guides/Delay-Accepting-Requests/index.md", "title": "Delay Accepting Requests"}
 ---
+
 Version: latest (v5.8.x)
 
 Thank you for taking an interest in contributing to Fastify. We are excited to receive your support and knowledge. This guide is our attempt to help you help us.
@@ -122,3 +125,4 @@ Press `cmd+shift+p` to bring up the VSCode command input prompt. Type `open sett
 Finally, from the menu bar, select "Terminal > New Terminal" to open a new terminal in the editor. Run `npm i` to install the Fastify dependencies.
 
 At this point, you are all setup with a custom VSCode instance that can be used to work on Fastify contributions. As you edit and save JavaScript files, the editor will autocorrect any style issues.
+

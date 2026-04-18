@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:52:10.197Z"
 content_hash: "1e1e314caeabb249f7677c1b9397560019c8c2f8ba21ad437bea1e775037ad47"
 menu_path: ["JWK Auth Middleware ​"]
 section_path: []
+nav_prev: {"path": "hono/docs/middleware/builtin/jsx-renderer/index.md", "title": "JSX Renderer Middleware \u200b"}
+nav_next: {"path": "hono/docs/middleware/builtin/jwt/index.md", "title": "JWT Auth Middleware \u200b"}
 ---
+
 ## JWK Auth Middleware [​](#jwk-auth-middleware)
 
 The JWK Auth Middleware authenticates requests by verifying tokens using JWK (JSON Web Key). It checks for an `Authorization` header and other configured sources, such as cookies, if specified. It validates tokens using the provided `keys`, retrieves keys from `jwks_uri` if specified, and supports token extraction from cookies if the `cookie` option is set.
@@ -194,3 +197,4 @@ Configure claim validation behavior in addition to signature verification:
 *   `iss`: expected issuer.
 *   `aud`: expected audience.
 *   `exp`, `nbf`, `iat`: enabled by default, can be disabled if needed.
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:41:02.399Z"
 content_hash: "c2cde8d7071661a3fb22fe6296541bc772ab12300ca2048ea2f0cfa30cec1605"
 menu_path: ["Migrating from Next.js"]
 section_path: []
+nav_prev: {"path": "astro/en/guides/migrate-to-astro/from-jekyll/index.md", "title": "Migrating from Jekyll"}
+nav_next: {"path": "astro/en/guides/migrate-to-astro/from-nuxtjs/index.md", "title": "Migrating from NuxtJS"}
 ---
+
 # Migrating from Next.js
 
 Here are some key concepts and migration strategies to help you get started. Use the rest of our docs and our [Discord community](https://astro.build/chat) to keep going!
@@ -460,3 +463,4 @@ Here’s how to recreate that in `src/pages/index.astro`, replacing `getStaticPr
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

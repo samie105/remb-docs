@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:32:15.229Z"
 content_hash: "93681463043e48077973443a9ac057a07762d12660e11e6f7c4354d62714a277"
 menu_path: ["Welcome to Bun"]
 section_path: []
+nav_prev: {"path": "bun/bun/docs/bundler/bytecode/index.md", "title": "Bytecode Caching"}
+nav_next: {"path": "bun/bun/docs/bundler/css/index.md", "title": "CSS"}
 ---
+
 [Skip to main content](#content-area)
 
 [Bun home page![light logo](https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z_zHyy/logo/logo-with-wordmark-dark.svg?fit=max&auto=format&n=JUhaF6Mf68z_zHyy&q=85&s=3f55cd23822028e40658b192c927f3e4)![dark logo](https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z_zHyy/logo/logo-with-wordmark-light.svg?fit=max&auto=format&n=JUhaF6Mf68z_zHyy&q=85&s=8a0c5928d9dc3631f0d33e17c257e2ec)](/docs)
@@ -150,3 +153,4 @@ Installation
 Next
 
 ](/docs/installation)
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:01:45.333Z"
 content_hash: "f08fca352715d4d536e399e568a190cdb63f448500c20fe65e15f11e2f23de5f"
 menu_path: ["@std/dotenv"]
 section_path: []
+nav_prev: {"path": "deno/deno/runtime/reference/std/datetime/index.md", "title": "@std/datetime"}
+nav_next: {"path": "deno/deno/runtime/reference/std/encoding/index.md", "title": "@std/encoding"}
 ---
+
 On this page
 
 *   [Overview](#overview)
@@ -47,3 +50,4 @@ deno add jsr:@std/dotenv
 ```
 
 [See all symbols in @std/dotenv on](https://jsr.io/@std/dotenv/doc)
+

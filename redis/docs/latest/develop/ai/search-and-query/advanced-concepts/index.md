@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:11:29.135Z"
 content_hash: "35a9af8ae4d3bfd4040c0146f2ad054b9feba7a6cb1905a23a4f9adf099bfee3"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        Redis Search","→","Redis Search","→\n      \n        Search concepts","→","Search concepts"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        Redis Search","→","Redis Search","→\n      \n        Search concepts","→","Search concepts"]
+nav_prev: {"path": "redis/docs/latest/develop/use-cases/session-store/ruby/index.md", "title": "Redis session store with Ruby"}
+nav_next: {"path": "redis/docs/latest/integrate/uptrace-with-redis-enterprise/index.md", "title": "Uptrace with Redis Software"}
 ---
+
 # Search concepts
 
 Details about query syntax, aggregation, scoring, and other search and query options
@@ -62,3 +65,4 @@ Atom CPUs are not supported.
   
 
 ## On this page
+

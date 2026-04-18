@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:40:40.446Z"
 content_hash: "6a03c55fdb78ce2ddd4f88b54d83404225e641ac154f29084482f6d5f5ff6a68"
 menu_path: ["Database","Database","Extensions","Extensions","Overview","Overview"]
 section_path: ["Database","Database","Extensions","Extensions","Overview","Overview"]
+nav_prev: {"path": "supabase/docs/guides/database/drizzle/index.md", "title": "Drizzle"}
+nav_next: {"path": "supabase/docs/guides/database/full-text-search/index.md", "title": "Full Text Search"}
 ---
+
 # 
 
 Postgres Extensions Overview
@@ -488,3 +491,4 @@ wrappers
 Foreign data wrappers developed by Supabase
 
 ](/docs/guides/database/extensions/wrappers/overview)
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:53:42.705Z"
 content_hash: "35b05fcac8f7faa21124ebef506ee2d6c7e5adab8c178c12a96146ebd390ab64"
 menu_path: ["deno info"]
 section_path: []
+nav_prev: {"path": "deno/deno/runtime/reference/cli/fmt/index.md", "title": "deno fmt"}
+nav_next: {"path": "deno/deno/runtime/reference/cli/init/index.md", "title": "deno init"}
 ---
+
 On this page
 
 *   [Example](#example)
@@ -221,3 +224,4 @@ Reload source code cache (recompile TypeScript) no value Reload everything jsr:@
 `--vendor`<vendor>optional
 
 Toggles local vendor folder usage for remote modules and a node\_modules folder for npm packages.
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:38:57.000Z"
 content_hash: "90508d324eedbf4446c0c0ec95c8d261809f845141b51b399a83c0ea84913cd8"
 menu_path: ["Azure Functions ​"]
 section_path: []
+nav_prev: {"path": "hono/docs/getting-started/lambda-edge/index.md", "title": "Lambda@Edge \u200b"}
+nav_next: {"path": "hono/docs/getting-started/google-cloud-run/index.md", "title": "Google Cloud Run \u200b"}
 ---
+
 [Azure Functions](https://azure.microsoft.com/en-us/products/functions) is a serverless platform from Microsoft Azure. You can run your code in response to events, and it automatically manages the underlying compute resources for you.
 
 Hono was not designed for Azure Functions at first, but with [Azure Functions Adapter](https://github.com/Marplex/hono-azurefunc-adapter), it can run on it as well.
@@ -194,3 +197,4 @@ sh
 ```
 func azure functionapp publish <YourFunctionAppName>
 ```
+

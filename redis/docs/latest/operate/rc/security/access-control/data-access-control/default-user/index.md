@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:03:03.405Z"
 content_hash: "e49ba303a8225031ac40f37cdaec27a01c02ea8bf9eed9dbc66e3963b00c7bb2"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Cloud","→","Redis Cloud","→\n      \n        Security","→","Security","→\n      \n        Access control","→","Access control","→\n      \n        Data access control","→","Data access control","→\n      \n        Default user","→","Default user"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Cloud","→","Redis Cloud","→\n      \n        Security","→","Security","→\n      \n        Access control","→","Access control","→\n      \n        Data access control","→","Data access control","→\n      \n        Default user","→","Default user"]
+nav_prev: {"path": "redis/docs/latest/operate/oss_and_stack/stack-with-enterprise/deprecated-features/triggers-and-functions/debugging/index.md", "title": "Debugging"}
+nav_next: {"path": "redis/docs/latest/integrate/google-adk/examples/index.md", "title": "adk-redis examples"}
 ---
+
 # Default user
 
 Learn how to change your default user password or turn off access using the default user password.
@@ -61,3 +64,4 @@ To turn off the default user for a database:
     [![Use the Save database button to save the new password.](/docs/latest/images/rc/button-database-save.png)](/docs/latest/images/rc/button-database-save.png)
 
 ## On this page
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:38:59.820Z"
 content_hash: "16bda2d8d52d2e1f1f70d3aaf9765a258f7be1e0b7a4e4ba5643d34fff7870f9"
 menu_path: ["PostgreSQL: Documentation: 18: 5.12. Table Partitioning"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/sql-dropfunction.html/index.md", "title": "PostgreSQL: Documentation: 18: DROP FUNCTION"}
+nav_next: {"path": "postgres/docs/current/bki-example.html/index.md", "title": "PostgreSQL: Documentation: 18: 68.6.\u00a0BKI Example"}
 ---
+
 PostgreSQL supports basic table partitioning. This section describes why and how to implement partitioning as part of your database design.
 
 ### 5.12.1. Overview [#](#DDL-PARTITIONING-OVERVIEW)
@@ -122,7 +125,7 @@ To use declarative partitioning in this case, use the following steps:
     
     CREATE INDEX ON measurement (logdate);
     
-4.  Ensure that the [enable\_partition\_pruning](https://www.postgresql.org/docs/current/runtime-config-query.html#GUC-ENABLE-PARTITION-PRUNING) configuration parameter is not disabled in `postgresql.conf`. If it is, queries will not be optimized as desired.
+4.  Ensure that the [enable\_partition\_pruning](postgres/docs/current/runtime-config-query.html/index.md#GUC-ENABLE-PARTITION-PRUNING) configuration parameter is not disabled in `postgresql.conf`. If it is, queries will not be optimized as desired.
     
 
 In the above example we would be creating a new partition each month, so it might be wise to write a script that generates the required DDL automatically.
@@ -361,7 +364,7 @@ This example builds a partitioning structure equivalent to the declarative parti
     
     Another disadvantage of the rule approach is that there is no simple way to force an error if the set of rules doesn't cover the insertion date; the data will silently go into the root table instead.
     
-6.  Ensure that the [constraint\_exclusion](https://www.postgresql.org/docs/current/runtime-config-query.html#GUC-CONSTRAINT-EXCLUSION) configuration parameter is not disabled in `postgresql.conf`; otherwise child tables may be accessed unnecessarily.
+6.  Ensure that the [constraint\_exclusion](postgres/docs/current/runtime-config-query.html/index.md#GUC-CONSTRAINT-EXCLUSION) configuration parameter is not disabled in `postgresql.conf`; otherwise child tables may be accessed unnecessarily.
     
 
 As we can see, a complex table hierarchy could require a substantial amount of DDL. In the above example we would be creating a new child table each month, so it might be wise to write a script that generates the required DDL automatically.
@@ -422,7 +425,7 @@ SELECT count(\*) FROM measurement WHERE logdate >= DATE '2008-01-01';
 
 Without partition pruning, the above query would scan each of the partitions of the `measurement` table. With partition pruning enabled, the planner will examine the definition of each partition and prove that the partition need not be scanned because it could not contain any rows meeting the query's `WHERE` clause. When the planner can prove this, it excludes (_prunes_) the partition from the query plan.
 
-By using the EXPLAIN command and the [enable\_partition\_pruning](https://www.postgresql.org/docs/current/runtime-config-query.html#GUC-ENABLE-PARTITION-PRUNING) configuration parameter, it's possible to show the difference between a plan for which partitions have been pruned and one for which they have not. A typical unoptimized plan for this type of table setup is:
+By using the EXPLAIN command and the [enable\_partition\_pruning](postgres/docs/current/runtime-config-query.html/index.md#GUC-ENABLE-PARTITION-PRUNING) configuration parameter, it's possible to show the difference between a plan for which partitions have been pruned and one for which they have not. A typical unoptimized plan for this type of table setup is:
 
 SET enable\_partition\_pruning = off;
 EXPLAIN SELECT count(\*) FROM measurement WHERE logdate >= DATE '2008-01-01';
@@ -461,7 +464,7 @@ Partition pruning can be performed not only during the planning of a given query
 *   During actual execution of the query plan. Partition pruning may also be performed here to remove partitions using values which are only known during actual query execution. This includes values from subqueries and values from execution-time parameters such as those from parameterized nested loop joins. Since the value of these parameters may change many times during the execution of the query, partition pruning is performed whenever one of the execution parameters being used by partition pruning changes. Determining if partitions were pruned during this phase requires careful inspection of the `loops` property in the `EXPLAIN ANALYZE` output. Subplans corresponding to different partitions may have different values for it depending on how many times each of them was pruned during execution. Some may be shown as `(never executed)` if they were pruned every time.
     
 
-Partition pruning can be disabled using the [enable\_partition\_pruning](https://www.postgresql.org/docs/current/runtime-config-query.html#GUC-ENABLE-PARTITION-PRUNING) setting.
+Partition pruning can be disabled using the [enable\_partition\_pruning](postgres/docs/current/runtime-config-query.html/index.md#GUC-ENABLE-PARTITION-PRUNING) setting.
 
 ### 5.12.5. Partitioning and Constraint Exclusion [#](#DDL-PARTITIONING-CONSTRAINT-EXCLUSION)
 
@@ -471,7 +474,7 @@ Constraint exclusion works in a very similar way to partition pruning, except th
 
 The fact that constraint exclusion uses `CHECK` constraints, which makes it slow compared to partition pruning, can sometimes be used as an advantage: because constraints can be defined even on declaratively-partitioned tables, in addition to their internal partition bounds, constraint exclusion may be able to elide additional partitions from the query plan.
 
-The default (and recommended) setting of [constraint\_exclusion](https://www.postgresql.org/docs/current/runtime-config-query.html#GUC-CONSTRAINT-EXCLUSION) is neither `on` nor `off`, but an intermediate setting called `partition`, which causes the technique to be applied only to queries that are likely to be working on inheritance partitioned tables. The `on` setting causes the planner to examine `CHECK` constraints in all queries, even simple ones that are unlikely to benefit.
+The default (and recommended) setting of [constraint\_exclusion](postgres/docs/current/runtime-config-query.html/index.md#GUC-CONSTRAINT-EXCLUSION) is neither `on` nor `off`, but an intermediate setting called `partition`, which causes the technique to be applied only to queries that are likely to be working on inheritance partitioned tables. The `on` setting causes the planner to examine `CHECK` constraints in all queries, even simple ones that are unlikely to benefit.
 
 The following caveats apply to constraint exclusion:
 
@@ -497,3 +500,4 @@ Sub-partitioning can be useful to further divide partitions that are expected to
 It is important to consider the overhead of partitioning during query planning and execution. The query planner is generally able to handle partition hierarchies with up to a few thousand partitions fairly well, provided that typical queries allow the query planner to prune all but a small number of partitions. Planning times become longer and memory consumption becomes higher when more partitions remain after the planner performs partition pruning. Another reason to be concerned about having a large number of partitions is that the server's memory consumption may grow significantly over time, especially if many sessions touch large numbers of partitions. That's because each partition requires its metadata to be loaded into the local memory of each session that touches it.
 
 With data warehouse type workloads, it can make sense to use a larger number of partitions than with an OLTP type workload. Generally, in data warehouses, query planning time is less of a concern as the majority of processing time is spent during query execution. With either of these two types of workload, it is important to make the right decisions early, as re-partitioning large quantities of data can be painfully slow. Simulations of the intended workload are often beneficial for optimizing the partitioning strategy. Never just assume that more partitions are better than fewer partitions, nor vice-versa.
+

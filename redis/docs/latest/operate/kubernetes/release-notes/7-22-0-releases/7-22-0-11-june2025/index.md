@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:57:42.166Z"
 content_hash: "ec7bcbd8b5850ce8a972ac036ac3d2d79fc79d7bed1bf79d09c707881b42b548"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Enterprise for Kubernetes","→","Redis Enterprise for Kubernetes","→\n      \n        Redis Enterprise Software for Kubernetes release notes","→","Redis Enterprise Software for Kubernetes release notes","→\n      \n        Redis Enterprise for Kubernetes 7.22.0 release notes","→","Redis Enterprise for Kubernetes 7.22.0 release notes","→\n      \n        Redis Enterprise for Kubernetes 7.22.0-11 (June 2025) release notes","→","Redis Enterprise for Kubernetes 7.22.0-11 (June 2025) release notes"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Enterprise for Kubernetes","→","Redis Enterprise for Kubernetes","→\n      \n        Redis Enterprise Software for Kubernetes release notes","→","Redis Enterprise Software for Kubernetes release notes","→\n      \n        Redis Enterprise for Kubernetes 7.22.0 release notes","→","Redis Enterprise for Kubernetes 7.22.0 release notes","→\n      \n        Redis Enterprise for Kubernetes 7.22.0-11 (June 2025) release notes","→","Redis Enterprise for Kubernetes 7.22.0-11 (June 2025) release notes"]
+nav_prev: {"path": "redis/docs/latest/develop/tools/insight/release-notes/v2.12.0/index.md", "title": "RedisInsight v2.12.0, October 2022"}
+nav_next: {"path": "redis/docs/latest/develop/ai/search-and-query/advanced-concepts/aggregations-syntax/index.md", "title": "FT.AGGREGATE order of operations"}
 ---
+
 # Redis Enterprise for Kubernetes 7.22.0-11 (June 2025) release notes
 
 This is a maintenance release to support Redis Enterprise Software version 7.22.0-95.
@@ -33,3 +36,4 @@ This is a maintenance release to support [Redis Enterprise Software version 7.22
 *   **Call Home Client**: `redislabs/call-home-client:7.22.0-11`
 
 ## On this page
+

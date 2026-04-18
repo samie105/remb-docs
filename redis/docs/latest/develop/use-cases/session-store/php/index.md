@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:08:16.841Z"
 content_hash: "9a37e3f4216bf2d806b90c62f7124aed4cd87bb2749816a94d82f94439b0aa90"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Redis session store","→","Redis session store","→\n      \n        Redis session store with PHP","→","Redis session store with PHP"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Redis session store","→","Redis session store","→\n      \n        Redis session store with PHP","→","Redis session store with PHP"]
+nav_prev: {"path": "redis/docs/latest/develop/use-cases/rate-limiter/php/index.md", "title": "Token bucket rate limiter with Redis and PHP"}
+nav_next: {"path": "redis/docs/latest/operate/rs/installing-upgrading/install/prepare-install/index.md", "title": "Prepare to install Redis Software"}
 ---
+
 # Redis session store with PHP
 
 Implement a Redis-backed session store in PHP with Predis
@@ -262,3 +265,4 @@ For more Redis data modeling patterns, see:
 *   [Redis data types](/docs/latest/develop/data-types/)
 
 ## On this page
+

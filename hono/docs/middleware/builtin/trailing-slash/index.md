@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:54:14.034Z"
 content_hash: "030c7bcec5c43706932666d825191af5988250c82bbfba1a7b568b2992f18c92"
 menu_path: ["Trailing Slash Middleware ​"]
 section_path: []
+nav_prev: {"path": "hono/docs/middleware/builtin/timing/index.md", "title": "Server-Timing Middleware \u200b"}
+nav_next: {"path": "hono/docs/middleware/third-party/index.md", "title": "Third-party Middleware \u200b"}
 ---
+
 ## Trailing Slash Middleware [​](#trailing-slash-middleware)
 
 This middleware handles Trailing Slash in the URL on a GET request.
@@ -94,3 +97,4 @@ This option is available for both `trimTrailingSlash` and `appendTrailingSlash`.
 ## Note [​](#note)
 
 It will be enabled when the request method is `GET` and the response status is `404`.
+

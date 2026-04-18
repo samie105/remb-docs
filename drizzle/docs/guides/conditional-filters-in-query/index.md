@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:03:35.527Z"
 content_hash: "af8b440342f7a11e04d83cdaff6b88540f1b73e0dfa895d9e520d2111e5a5857"
 menu_path: ["Drizzle ORM - Conditional filters in query"]
 section_path: []
+nav_prev: {"path": "drizzle/docs/get-started/xata-new/index.md", "title": "Get Started with Drizzle and Xata"}
+nav_next: {"path": "drizzle/docs/guides/count-rows/index.md", "title": "Drizzle ORM - Count rows"}
 ---
+
 Drizzle | Conditional filters in query
 
 PostgreSQL
@@ -131,3 +134,4 @@ const lt = (left, right) => {
   return sql`${left} < ${bindIfParam(right, left)}`; // bindIfParam is internal magic function
 };
 ```
+

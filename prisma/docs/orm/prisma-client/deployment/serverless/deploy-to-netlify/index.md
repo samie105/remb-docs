@@ -9,24 +9,10 @@ last_crawled_at: "2026-04-18T16:54:14.323Z"
 content_hash: "5af30bc8ab96cd1985798bac8263beac7d08a68d01ac11177100a2c8bbfdd6fd"
 menu_path: ["Deploy to Netlify"]
 section_path: []
+nav_prev: {"path": "prisma/docs/orm/prisma-client/deployment/serverless/deploy-to-azure-functions/index.md", "title": "Deploy to Azure Functions"}
+nav_next: {"path": "prisma/docs/orm/prisma-client/deployment/serverless/deploy-to-vercel/index.md", "title": "Deploy to Vercel"}
 ---
-Deployment
 
-Serverless
-
-Learn how to deploy Node.js and TypeScript applications that are using Prisma Client to Netlify
-
-This guide covers the steps you will need to take in order to deploy your application that uses Prisma ORM to [Netlify](https://www.netlify.com/).
-
-Netlify is a cloud platform for continuous deployment, static sites, and serverless functions. Netlify integrates seamlessly with GitHub for automatic deployments upon commits. When you follow the steps below, you will use that approach to create a CI/CD pipeline that deploys your application from a GitHub repository.
-
-Before you can follow this guide, you will need to set up your application to begin deploying to Netlify. We recommend the ["Get started with Netlify"](https://docs.netlify.com/get-started/) guide for a quick overview and ["Deploy functions"](https://docs.netlify.com/functions/deploy/?fn-language=ts) for an in-depth look at your deployment options.
-
-We recommend keeping `.env` files in your `.gitignore` in order to prevent leakage of sensitive connection strings. Instead, you can use the Netlify CLI to [import values into netlify directly](https://docs.netlify.com/environment-variables/get-started/#import-variables-with-the-netlify-cli).
-
-Assuming you have a file like the following:
-
-```
 # Connect to DB
 DATABASE_URL="postgresql://postgres:__PASSWORD__@__HOST__:__PORT__/__DB_NAME__"
 ```
@@ -75,6 +61,7 @@ When you use a Function-as-a-Service provider, like Netlify, it is beneficial to
 
 You can use [Prisma Postgres](https://www.prisma.io/docs/postgres), which has built-in connection pooling, to reduce your Prisma Client bundle size, and to avoid cold starts.
 
-For more information on connection management for serverless environments, refer to our [connection management guide](https://www.prisma.io/docs/orm/prisma-client/setup-and-configuration/databases-connections#serverless-environments-faas).
+For more information on connection management for serverless environments, refer to our [connection management guide](prisma/docs/orm/prisma-client/setup-and-configuration/databases-connections/index.md#serverless-environments-faas).
 
 [Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/prisma-client/deployment/serverless/deploy-to-netlify.mdx)
+

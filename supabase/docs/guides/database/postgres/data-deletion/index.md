@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:56:29.101Z"
 content_hash: "3ba542de60ae3a0a73e7dbfdacb6512ad3fed66231a13542aff4543fcd68e5c7"
 menu_path: ["Database","Database","Working with your database (intermediate)","Working with your database (intermediate)","Deleting data and dropping objects safely","Deleting data and dropping objects safely"]
 section_path: ["Database","Database","Working with your database (intermediate)","Working with your database (intermediate)","Deleting data and dropping objects safely","Deleting data and dropping objects safely"]
+nav_prev: {"path": "supabase/docs/guides/database/postgres/configuration/index.md", "title": "Database configuration"}
+nav_next: {"path": "supabase/docs/guides/database/postgres/dropping-all-tables-in-schema/index.md", "title": "Drop all tables in a Postgres schema"}
 ---
+
 # 
 
 Deleting data and dropping objects safely
@@ -176,3 +179,4 @@ The most efficient way to reclaim disk space, without locks, is to use [pg\_repa
 *   [Inspecting your Database](/docs/guides/database/inspect)
 *   [Understanding Database and Disk Size](/docs/guides/platform/database-size)
 *   [Bloat in Postgres](/docs/blog/postgres-bloat)
+

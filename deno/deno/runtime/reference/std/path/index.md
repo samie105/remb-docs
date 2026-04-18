@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:04:59.142Z"
 content_hash: "fb8e2b5d06e24b6a3fec5585d4dfeefd94fc3b12f2c1e39dddeeea5f78e0fb6d"
 menu_path: ["@std/path"]
 section_path: []
+nav_prev: {"path": "deno/deno/runtime/reference/std/net/index.md", "title": "@std/net"}
+nav_next: {"path": "deno/deno/runtime/reference/std/random/index.md", "title": "@std/random"}
 ---
+
 On this page
 
 *   [Overview](#overview)
@@ -211,3 +214,4 @@ deno add jsr:@std/path
 ```
 
 [See all symbols in @std/path on](https://jsr.io/@std/path/doc)
+

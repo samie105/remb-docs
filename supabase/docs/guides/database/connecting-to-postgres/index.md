@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:39:59.567Z"
 content_hash: "d795ec8959d60c40e492737ad86d0cb7bc1cb5af4a4b37d91cd63d9c85b22d08"
 menu_path: ["Database","Database","Fundamentals","Fundamentals","Connecting to your database","Connecting to your database"]
 section_path: ["Database","Database","Fundamentals","Fundamentals","Connecting to your database","Connecting to your database"]
+nav_prev: {"path": "supabase/docs/guides/database/arrays/index.md", "title": "Working With Arrays"}
+nav_next: {"path": "supabase/docs/guides/database/connection-management/index.md", "title": "Connection management"}
 ---
+
 # 
 
 Connect to your database
@@ -273,3 +276,4 @@ You can follow the decision flow in the connection method diagram to quickly cho
 ![Decision tree diagram showing when to connect directly to Postgres or use a connection pooler.](/docs/img/guides/database/connecting-to-postgres/connection-decision-tree-light.svg)
 
 Choosing between direct Postgres connections and connection pooling
+

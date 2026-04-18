@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:47:07.424Z"
 content_hash: "2639a6c3b398bbc59953821e45e367b280e9904c5b2789533715e51551639341"
 menu_path: ["Compiler warnings"]
 section_path: []
+nav_prev: {"path": "svelte/docs/svelte/compiler-errors/index.md", "title": "Compiler errors"}
+nav_next: {"path": "svelte/docs/svelte/runtime-errors/index.md", "title": "Runtime errors"}
 ---
+
 Svelte warns you at compile time if it catches potential mistakes, such as writing inaccessible markup.
 
 Some warnings may be incorrect in your concrete use case. You can disable such false positives by placing a `<!-- svelte-ignore <code> -->` comment above the line that causes the warning. Example:
@@ -1068,3 +1071,4 @@ See [the note in the docs](legacy-svelte-self) for more info.
 previous next
 
 [Compiler errors](/docs/svelte/compiler-errors) [Runtime errors](/docs/svelte/runtime-errors)
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:52:41.763Z"
 content_hash: "e292918e603f1e8b9918c1ff812292ebdde48ac289783fbd4fcb002e226790a1"
 menu_path: ["min-height"]
 section_path: []
+nav_prev: {"path": "tailwind/docs/height/index.md", "title": "height"}
+nav_next: {"path": "tailwind/docs/max-height/index.md", "title": "max-height"}
 ---
+
 Utilities for setting the minimum height of an element.
 
 Class
@@ -122,7 +125,7 @@ Prefix a `min-height` utility with a breakpoint variant like `md:` to only apply
 <div class="h-24 min-h-0 md:min-h-full ...">  <!-- ... --></div>
 ```
 
-Learn more about using variants in the [variants documentation](https://tailwindcss.com/docs/hover-focus-and-other-states).
+Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).
 
 ## [Customizing your theme](#customizing-your-theme)
 
@@ -132,4 +135,5 @@ The `min-h-<number>` utilities are driven by the `--spacing` theme variable, whi
 @theme {  --spacing: 1px; }
 ```
 
-Learn more about customizing the spacing scale in the [theme variable documentation](https://tailwindcss.com/docs/theme).
+Learn more about customizing the spacing scale in the [theme variable documentation](tailwind/docs/theme/index.md).
+

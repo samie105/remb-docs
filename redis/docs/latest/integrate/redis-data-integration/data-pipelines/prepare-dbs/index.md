@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:42:11.482Z"
 content_hash: "78c679e80707636740d882905a7f7d3d9ee73e6fee9d0eb25a95f5d4b1307b45"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Redis Data Integration","→","Redis Data Integration","→\n      \n        Data pipelines","→","Data pipelines","→\n      \n        Prepare source databases","→","Prepare source databases"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Redis Data Integration","→","Redis Data Integration","→\n      \n        Data pipelines","→","Data pipelines","→\n      \n        Prepare source databases","→","Prepare source databases"]
+nav_prev: {"path": "redis/docs/latest/operate/oss_and_stack/management/optimization/memory-optimization/index.md", "title": "Memory optimization"}
+nav_next: {"path": "redis/docs/latest/operate/oss_and_stack/stack-with-enterprise/stack-quickstart/index.md", "title": "Redis Open Source quick start"}
 ---
+
 # Prepare source databases
 
 Enable CDC features in your source databases
@@ -115,3 +118,4 @@ Neon
 \-
 
 The pages in this section give detailed instructions to get your source database ready for Debezium to use:
+

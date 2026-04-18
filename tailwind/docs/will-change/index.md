@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:17:57.182Z"
 content_hash: "de0d020880779f43d8bd496df5be09ec869f76c3afd3ad1b7d26e120a48e0eb8"
 menu_path: ["will-change"]
 section_path: []
+nav_prev: {"path": "tailwind/docs/user-select/index.md", "title": "user-select"}
+nav_next: {"path": "tailwind/docs/fill/index.md", "title": "fill"}
 ---
+
 Utilities for optimizing upcoming animations of elements that are expected to change.
 
 Class
@@ -69,3 +72,4 @@ For CSS variables, you can also use the `will-change-(<custom-property>)` syntax
 ```
 
 This is just a shorthand for `will-change-[var(<custom-property>)]` that adds the `var()` function for you automatically.
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:40:04.406Z"
 content_hash: "ffe2545fa8c0ba0fe52168846c27cf79dd3fa11b9496f3d0f49048728ec7964a"
 menu_path: ["PostgreSQL: Documentation: 18: 33.4. Server-Side Functions"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/plpgsql-errors-and-messages.html/index.md", "title": "PostgreSQL: Documentation: 18: 41.9.\u00a0Errors and Messages"}
+nav_next: {"path": "postgres/docs/current/sql-end.html/index.md", "title": "PostgreSQL: Documentation: 18: END"}
 ---
+
 Server-side functions tailored for manipulating large objects from SQL are listed in [Table 33.1](https://www.postgresql.org/docs/current/lo-funcs.html#LO-FUNCS-TABLE "Table 33.1. SQL-Oriented Large Object Functions").
 
 **Table 33.1. SQL-Oriented Large Object Functions**
@@ -67,3 +70,4 @@ The server-side `lo_import` and `lo_export` functions behave considerably differ
 It is possible to [GRANT](https://www.postgresql.org/docs/current/sql-grant.html "GRANT") use of the server-side `lo_import` and `lo_export` functions to non-superusers, but careful consideration of the security implications is required. A malicious user of such privileges could easily parlay them into becoming superuser (for example by rewriting server configuration files), or could attack the rest of the server's file system without bothering to obtain database superuser privileges as such. _Access to roles having such privilege must therefore be guarded just as carefully as access to superuser roles._ Nonetheless, if use of server-side `lo_import` or `lo_export` is needed for some routine task, it's safer to use a role with such privileges than one with full superuser privileges, as that helps to reduce the risk of damage from accidental errors.
 
 The functionality of `lo_read` and `lo_write` is also available via server-side calls, but the names of the server-side functions differ from the client side interfaces in that they do not contain underscores. You must call these functions as `loread` and `lowrite`.
+

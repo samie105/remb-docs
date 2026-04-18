@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:36:49.659Z"
 content_hash: "9e17a244ef20566f2c70414d988a0ef5defa4911994809ef127aebd698e71f59"
 menu_path: ["Drizzle <> AWS Data API Postgres"]
 section_path: []
+nav_prev: {"path": "drizzle/docs/connect-react-native-sqlite/index.md", "title": "Drizzle <> React Native SQLite"}
+nav_next: {"path": "drizzle/docs/connect-aws-data-api-mysql/index.md", "title": "Drizzle <> AWS Data API MySQL"}
 ---
+
 #### Step 1 - Install packages[](#step-1---install-packages)
 
 npm
@@ -74,3 +77,4 @@ await db.select().from(...);
 ```
 
 #### What’s next?[](#whats-next)
+

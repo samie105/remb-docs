@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:51:12.528Z"
 content_hash: "777413b87ff919e79362ae5092414e2ca6e3cba2fcf95a719c3661c7472f95cb"
 menu_path: ["Telemetry","Telemetry","More","More","More","Metrics","Metrics","Overview","Overview"]
 section_path: ["Telemetry","Telemetry","More","More","More","Metrics","Metrics","Overview","Overview"]
+nav_prev: {"path": "supabase/docs/guides/telemetry/advanced-log-filtering/index.md", "title": "Advanced Log Filtering"}
+nav_next: {"path": "supabase/docs/guides/telemetry/logs/index.md", "title": "Logging"}
 ---
+
 # 
 
 Metrics API
@@ -74,3 +77,4 @@ Supabase guide
 *   [Datadog’s Supabase integration doc](https://docs.datadoghq.com/integrations/supabase/) (community-maintained, built on this Metrics API).
 *   [Log Drains](/docs/guides/telemetry/log-drains) for exporting event-based telemetry alongside metrics.
 *   [Query Performance report](/dashboard/project/_/observability/query-performance) for built-in visualizations based on the same underlying metrics.
+

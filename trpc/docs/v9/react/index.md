@@ -9,10 +9,13 @@ last_crawled_at: "2026-04-18T16:43:25.273Z"
 content_hash: "b23d3b14c977f4b2acdb0f61f91da84d40e20874ae24b39ebf1f088eada20bdc"
 menu_path: ["Usage with React"]
 section_path: []
+nav_prev: {"path": "trpc/docs/v9/react-mutations/index.md", "title": "useMutation()"}
+nav_next: {"path": "trpc/docs/v9/react-queries/index.md", "title": "useQuery()"}
 ---
+
 info
 
-*   If you're using Next.js, read the [Usage with Next.js](https://trpc.io/docs/v9/nextjs) guide instead.
+*   If you're using Next.js, read the [Usage with Next.js](trpc/docs/v9/nextjs/index.md) guide instead.
 *   In order to infer types from your Node.js backend you should have the frontend & backend in the same monorepo.
 
 ## Add tRPC to existing React project[​](#add-trpc-to-existing-react-project "Direct link to Add tRPC to existing React project")
@@ -71,7 +74,7 @@ json
 
 #### 3\. Implement your `appRouter`[​](#3-implement-your-approuter "Direct link to 3-implement-your-approuter")
 
-Follow the [Quickstart](https://trpc.io/docs/v9/quickstart) and read the [`@trpc/server` docs](https://trpc.io/docs/v9/router) for guidance on this. Once you have your API implemented and listening via HTTP, continue to the next step.
+Follow the [Quickstart](trpc/docs/v9/quickstart/index.md) and read the [`@trpc/server` docs](trpc/docs/v9/router/index.md) for guidance on this. Once you have your API implemented and listening via HTTP, continue to the next step.
 
 ### Client Side[​](#client-side "Direct link to Client Side")
 
@@ -185,3 +188,4 @@ tsx
   `);`
 
 `}`
+

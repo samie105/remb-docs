@@ -9,15 +9,9 @@ last_crawled_at: "2026-04-18T17:07:44.819Z"
 content_hash: "cfb9a5ed3d5ef0ed1021aa4ad20920be6fa9bdc8dd75f8909d5c7d295a11cf1d"
 menu_path: ["filter: grayscale()"]
 section_path: []
+nav_prev: {"path": "tailwind/docs/filter-drop-shadow/index.md", "title": "filter: drop-shadow()"}
+nav_next: {"path": "tailwind/docs/filter-hue-rotate/index.md", "title": "filter: hue-rotate()"}
 ---
-[](/)
-
-[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
-
-1.  Filters
-2.  grayscale
-
-Filters
 
 # filter: grayscale()
 
@@ -118,3 +112,4 @@ Make your ideas look awesome, without relying on a designer.
 ](https://www.refactoringui.com/?ref=sidebar)
 
 Copyright © 2026 Tailwind Labs Inc.·[Trademark Policy](/brand)
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:09:15.352Z"
 content_hash: "1cde7c8439b742388bcd9ddcb2793e46d1cfc42b39775eb9b157523812f47e7b"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        Redis Search","→","Redis Search","→\n      \n        Search concepts","→","Search concepts","→\n      \n        Autocomplete with Redis","→","Autocomplete with Redis"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        Redis Search","→","Redis Search","→\n      \n        Search concepts","→","Search concepts","→\n      \n        Autocomplete with Redis","→","Autocomplete with Redis"]
+nav_prev: {"path": "redis/docs/latest/operate/kubernetes/release-notes/7-4-2-releases/7-4-2-03-24/index.md", "title": "Redis Enterprise for Kubernetes 7.4.2-2 (March 2024) release notes"}
+nav_next: {"path": "redis/docs/latest/develop/reference/command-arguments/index.md", "title": "Redis command arguments"}
 ---
+
 # Autocomplete with Redis
 
 Learn how to use the autocomplete feature of Redis for efficient prefix-based suggestion retrieval.
@@ -159,3 +162,4 @@ The autocomplete feature in Redis Search is useful for:
 *   **Chatbot responses**: recommending common phrases dynamically.
 
 ## On this page
+

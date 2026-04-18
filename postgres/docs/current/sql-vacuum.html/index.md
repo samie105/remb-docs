@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:50:02.937Z"
 content_hash: "12bf0e6a122adf10e0e83faed9afe0d5c2269c298d6b20ff65228c7cc638da84"
 menu_path: ["PostgreSQL: Documentation: 18: VACUUM"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/spi-spi-getnspname.html/index.md", "title": "PostgreSQL: Documentation: 18: SPI_getnspname"}
+nav_next: {"path": "postgres/docs/current/plperl-under-the-hood.html/index.md", "title": "PostgreSQL: Documentation: 18: 43.8.\u00a0PL/Perl Under the Hood"}
 ---
+
 VACUUM — garbage-collect and optionally analyze a database
 
 ## Synopsis
@@ -55,7 +58,7 @@ Selects “full” vacuum, which can reclaim more space, but takes much longer a
 
 `FREEZE`
 
-Selects aggressive “freezing” of tuples. Specifying `FREEZE` is equivalent to performing `VACUUM` with the [vacuum\_freeze\_min\_age](https://www.postgresql.org/docs/current/runtime-config-vacuum.html#GUC-VACUUM-FREEZE-MIN-AGE) and [vacuum\_freeze\_table\_age](https://www.postgresql.org/docs/current/runtime-config-vacuum.html#GUC-VACUUM-FREEZE-TABLE-AGE) parameters set to zero. Aggressive freezing is always performed when the table is rewritten, so this option is redundant when `FULL` is specified.
+Selects aggressive “freezing” of tuples. Specifying `FREEZE` is equivalent to performing `VACUUM` with the [vacuum\_freeze\_min\_age](postgres/docs/current/runtime-config-vacuum.html/index.md#GUC-VACUUM-FREEZE-MIN-AGE) and [vacuum\_freeze\_table\_age](postgres/docs/current/runtime-config-vacuum.html/index.md#GUC-VACUUM-FREEZE-TABLE-AGE) parameters set to zero. Aggressive freezing is always performed when the table is rewritten, so this option is redundant when `FULL` is specified.
 
 `VERBOSE`
 
@@ -77,7 +80,7 @@ Specifies that `VACUUM` should not wait for any conflicting locks to be released
 
 Normally, `VACUUM` will skip index vacuuming when there are very few dead tuples in the table. The cost of processing all of the table's indexes is expected to greatly exceed the benefit of removing dead index tuples when this happens. This option can be used to force `VACUUM` to process indexes when there are more than zero dead tuples. The default is `AUTO`, which allows `VACUUM` to skip index vacuuming when appropriate. If `INDEX_CLEANUP` is set to `ON`, `VACUUM` will conservatively remove all dead tuples from indexes. This may be useful for backwards compatibility with earlier releases of PostgreSQL where this was the standard behavior.
 
-`INDEX_CLEANUP` can also be set to `OFF` to force `VACUUM` to _always_ skip index vacuuming, even when there are many dead tuples in the table. This may be useful when it is necessary to make `VACUUM` run as quickly as possible to avoid imminent transaction ID wraparound (see [Section 24.1.5](https://www.postgresql.org/docs/current/routine-vacuuming.html#VACUUM-FOR-WRAPAROUND "24.1.5. Preventing Transaction ID Wraparound Failures")). However, the wraparound failsafe mechanism controlled by [vacuum\_failsafe\_age](https://www.postgresql.org/docs/current/runtime-config-vacuum.html#GUC-VACUUM-FAILSAFE-AGE) will generally trigger automatically to avoid transaction ID wraparound failure, and should be preferred. If index cleanup is not performed regularly, performance may suffer, because as the table is modified indexes will accumulate dead tuples and the table itself will accumulate dead line pointers that cannot be removed until index cleanup is completed.
+`INDEX_CLEANUP` can also be set to `OFF` to force `VACUUM` to _always_ skip index vacuuming, even when there are many dead tuples in the table. This may be useful when it is necessary to make `VACUUM` run as quickly as possible to avoid imminent transaction ID wraparound (see [Section 24.1.5](https://www.postgresql.org/docs/current/routine-vacuuming.html#VACUUM-FOR-WRAPAROUND "24.1.5. Preventing Transaction ID Wraparound Failures")). However, the wraparound failsafe mechanism controlled by [vacuum\_failsafe\_age](postgres/docs/current/runtime-config-vacuum.html/index.md#GUC-VACUUM-FAILSAFE-AGE) will generally trigger automatically to avoid transaction ID wraparound failure, and should be preferred. If index cleanup is not performed regularly, performance may suffer, because as the table is modified indexes will accumulate dead tuples and the table itself will accumulate dead line pointers that cannot be removed until index cleanup is completed.
 
 This option has no effect for tables that have no index and is ignored if the `FULL` option is used. It also has no effect on the transaction ID wraparound failsafe mechanism. When triggered it will skip index vacuuming, even when `INDEX_CLEANUP` is set to `ON`.
 
@@ -91,11 +94,11 @@ Specifies that `VACUUM` should attempt to process the corresponding `TOAST` tabl
 
 `TRUNCATE`
 
-Specifies that `VACUUM` should attempt to truncate off any empty pages at the end of the table and allow the disk space for the truncated pages to be returned to the operating system. This is normally the desired behavior and is the default unless [vacuum\_truncate](https://www.postgresql.org/docs/current/runtime-config-vacuum.html#GUC-VACUUM-TRUNCATE) is set to false or the `vacuum_truncate` option has been set to false for the table to be vacuumed. Setting this option to false may be useful to avoid `ACCESS EXCLUSIVE` lock on the table that the truncation requires. This option is ignored if the `FULL` option is used.
+Specifies that `VACUUM` should attempt to truncate off any empty pages at the end of the table and allow the disk space for the truncated pages to be returned to the operating system. This is normally the desired behavior and is the default unless [vacuum\_truncate](postgres/docs/current/runtime-config-vacuum.html/index.md#GUC-VACUUM-TRUNCATE) is set to false or the `vacuum_truncate` option has been set to false for the table to be vacuumed. Setting this option to false may be useful to avoid `ACCESS EXCLUSIVE` lock on the table that the truncation requires. This option is ignored if the `FULL` option is used.
 
 `PARALLEL`
 
-Perform index vacuum and index cleanup phases of `VACUUM` in parallel using _`integer`_ background workers (for the details of each vacuum phase, please refer to [Table 27.46](https://www.postgresql.org/docs/current/progress-reporting.html#VACUUM-PHASES "Table 27.46. VACUUM Phases")). The number of workers used to perform the operation is equal to the number of indexes on the relation that support parallel vacuum which is limited by the number of workers specified with `PARALLEL` option if any which is further limited by [max\_parallel\_maintenance\_workers](https://www.postgresql.org/docs/current/runtime-config-resource.html#GUC-MAX-PARALLEL-MAINTENANCE-WORKERS). An index can participate in parallel vacuum if and only if the size of the index is more than [min\_parallel\_index\_scan\_size](https://www.postgresql.org/docs/current/runtime-config-query.html#GUC-MIN-PARALLEL-INDEX-SCAN-SIZE). Please note that it is not guaranteed that the number of parallel workers specified in _`integer`_ will be used during execution. It is possible for a vacuum to run with fewer workers than specified, or even with no workers at all. Only one worker can be used per index. So parallel workers are launched only when there are at least `2` indexes in the table. Workers for vacuum are launched before the start of each phase and exit at the end of the phase. These behaviors might change in a future release. This option can't be used with the `FULL` option.
+Perform index vacuum and index cleanup phases of `VACUUM` in parallel using _`integer`_ background workers (for the details of each vacuum phase, please refer to [Table 27.46](https://www.postgresql.org/docs/current/progress-reporting.html#VACUUM-PHASES "Table 27.46. VACUUM Phases")). The number of workers used to perform the operation is equal to the number of indexes on the relation that support parallel vacuum which is limited by the number of workers specified with `PARALLEL` option if any which is further limited by [max\_parallel\_maintenance\_workers](postgres/docs/current/runtime-config-resource.html/index.md#GUC-MAX-PARALLEL-MAINTENANCE-WORKERS). An index can participate in parallel vacuum if and only if the size of the index is more than [min\_parallel\_index\_scan\_size](postgres/docs/current/runtime-config-query.html/index.md#GUC-MIN-PARALLEL-INDEX-SCAN-SIZE). Please note that it is not guaranteed that the number of parallel workers specified in _`integer`_ will be used during execution. It is possible for a vacuum to run with fewer workers than specified, or even with no workers at all. Only one worker can be used per index. So parallel workers are launched only when there are at least `2` indexes in the table. Workers for vacuum are launched before the start of each phase and exit at the end of the phase. These behaviors might change in a future release. This option can't be used with the `FULL` option.
 
 `SKIP_DATABASE_STATS`
 
@@ -107,7 +110,7 @@ Specifies that `VACUUM` should do nothing except update the database-wide statis
 
 `BUFFER_USAGE_LIMIT`
 
-Specifies the [](https://www.postgresql.org/docs/current/glossary.html#GLOSSARY-BUFFER-ACCESS-STRATEGY)[Buffer Access Strategy](https://www.postgresql.org/docs/current/glossary.html#GLOSSARY-BUFFER-ACCESS-STRATEGY "Buffer Access Strategy") ring buffer size for `VACUUM`. This size is used to calculate the number of shared buffers which will be reused as part of this strategy. `0` disables use of a `Buffer Access Strategy`. If `ANALYZE` is also specified, the `BUFFER_USAGE_LIMIT` value is used for both the vacuum and analyze stages. This option can't be used with the `FULL` option except if `ANALYZE` is also specified. When this option is not specified, `VACUUM` uses the value from [vacuum\_buffer\_usage\_limit](https://www.postgresql.org/docs/current/runtime-config-resource.html#GUC-VACUUM-BUFFER-USAGE-LIMIT). Higher settings can allow `VACUUM` to run more quickly, but having too large a setting may cause too many other useful pages to be evicted from shared buffers. The minimum value is `128 kB` and the maximum value is `16 GB`.
+Specifies the [](postgres/docs/current/glossary.html/index.md#GLOSSARY-BUFFER-ACCESS-STRATEGY)[Buffer Access Strategy](https://www.postgresql.org/docs/current/glossary.html#GLOSSARY-BUFFER-ACCESS-STRATEGY "Buffer Access Strategy") ring buffer size for `VACUUM`. This size is used to calculate the number of shared buffers which will be reused as part of this strategy. `0` disables use of a `Buffer Access Strategy`. If `ANALYZE` is also specified, the `BUFFER_USAGE_LIMIT` value is used for both the vacuum and analyze stages. This option can't be used with the `FULL` option except if `ANALYZE` is also specified. When this option is not specified, `VACUUM` uses the value from [vacuum\_buffer\_usage\_limit](postgres/docs/current/runtime-config-resource.html/index.md#GUC-VACUUM-BUFFER-USAGE-LIMIT). Higher settings can allow `VACUUM` to run more quickly, but having too large a setting may cause too many other useful pages to be evicted from shared buffers. The minimum value is `128 kB` and the maximum value is `16 GB`.
 
 _`boolean`_
 
@@ -137,7 +140,7 @@ When `VERBOSE` is specified, `VACUUM` emits progress messages to indicate which 
 
 To vacuum a table, one must ordinarily have the `MAINTAIN` privilege on the table. However, database owners are allowed to vacuum all tables in their databases, except shared catalogs. `VACUUM` will skip over any tables that the calling user does not have permission to vacuum.
 
-While `VACUUM` is running, the [search\_path](https://www.postgresql.org/docs/current/runtime-config-client.html#GUC-SEARCH-PATH) is temporarily changed to `pg_catalog, pg_temp`.
+While `VACUUM` is running, the [search\_path](postgres/docs/current/runtime-config-client.html/index.md#GUC-SEARCH-PATH) is temporarily changed to `pg_catalog, pg_temp`.
 
 `VACUUM` cannot be executed inside a transaction block.
 
@@ -168,3 +171,4 @@ The following syntax was used before PostgreSQL version 9.0 and is still support
 VACUUM \[ FULL \] \[ FREEZE \] \[ VERBOSE \] \[ ANALYZE \] \[ _`table_and_columns`_ \[, ...\] \]
 
 Note that in this syntax, the options must be specified in exactly the order shown.
+

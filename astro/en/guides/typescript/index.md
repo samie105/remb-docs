@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:41:46.983Z"
 content_hash: "61dce6d0f2f235a17aada11911390578ecb82bb282fdad3265d3c08407968cba"
 menu_path: ["TypeScript"]
 section_path: []
+nav_prev: {"path": "astro/en/editor-setup/index.md", "title": "Editor setup"}
+nav_next: {"path": "astro/en/guides/environment-variables/index.md", "title": "Using environment variables"}
 ---
+
 # TypeScript
 
 Astro ships with built-in support for [TypeScript](https://www.typescriptlang.org/). You can import `.ts` and `.tsx` files in your Astro project, write TypeScript code directly inside your [Astro component](/en/basics/astro-components/#the-component-script), and even use an [`astro.config.ts`](/en/guides/configuring-astro/#the-astro-config-file) file for your Astro configuration if you like.
@@ -287,3 +290,4 @@ For the default setting of `jsxImportSource: react`, you would use:
 ```
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:00:45.787Z"
 content_hash: "1656d56e83d896f98d9c3c1e418948b38059688865120341e7512a7a5f7c31bc"
 menu_path: ["DNS"]
 section_path: []
+nav_prev: {"path": "bun/bun/docs/runtime/module-resolution/index.md", "title": "Module Resolution"}
+nav_next: {"path": "bun/bun/docs/runtime/networking/fetch/index.md", "title": "Fetch"}
 ---
+
 Bun implements it’s own `dns` module, and the `node:dns` module.
 
 ```
@@ -106,3 +109,4 @@ BUN_CONFIG_DNS_TIME_TO_LIVE_SECONDS=5 bun run my-script.ts
 #### Why is 30 seconds the default?
 
 Unfortunately, the system API underneath (`getaddrinfo`) does not provide a way to get the TTL of a DNS entry. This means we have to pick a number arbitrarily. We chose 30 seconds because it’s long enough to see the benefits of caching, and short enough to be unlikely to cause issues if a DNS entry changes. [Amazon Web Services recommends 5 seconds](https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/jvm-ttl-dns.html) for the Java Virtual Machine, however the JVM defaults to cache indefinitely.
+

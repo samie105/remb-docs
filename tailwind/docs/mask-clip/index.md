@@ -9,15 +9,9 @@ last_crawled_at: "2026-04-18T17:05:19.094Z"
 content_hash: "923cc7974271e8b7a63f2d0d58526dc8be61bf22c7e5c873e10f2252ffe9e60e"
 menu_path: ["mask-clip"]
 section_path: []
+nav_prev: {"path": "tailwind/docs/background-blend-mode/index.md", "title": "background-blend-mode"}
+nav_next: {"path": "tailwind/docs/mask-composite/index.md", "title": "mask-composite"}
 ---
-[](/)
-
-[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
-
-1.  Effects
-2.  mask-clip
-
-Effects
 
 # mask-clip
 
@@ -103,3 +97,4 @@ Make your ideas look awesome, without relying on a designer.
 ](https://www.refactoringui.com/?ref=sidebar)
 
 Copyright © 2026 Tailwind Labs Inc.·[Trademark Policy](/brand)
+

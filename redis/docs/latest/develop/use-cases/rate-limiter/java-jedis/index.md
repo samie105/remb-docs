@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:59:12.494Z"
 content_hash: "1a3ac88767846534afc60bb74d1f0df4338682ec4d27cc78c80dddec7a639ecd"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Token bucket rate limiter with Redis","→","Token bucket rate limiter with Redis","→\n      \n        Token bucket rate limiter with Redis and Java","→","Token bucket rate limiter with Redis and Java"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Token bucket rate limiter with Redis","→","Token bucket rate limiter with Redis","→\n      \n        Token bucket rate limiter with Redis and Java","→","Token bucket rate limiter with Redis and Java"]
+nav_prev: {"path": "redis/docs/latest/develop/use-cases/leaderboard/java-jedis/index.md", "title": "Redis leaderboard with Java and Jedis"}
+nav_next: {"path": "redis/docs/latest/develop/pubsub/keyspace-notifications/index.md", "title": "Redis keyspace notifications"}
 ---
+
 # Token bucket rate limiter with Redis and Java
 
 Implement a token bucket rate limiter using Redis and Lua scripts in Java
@@ -327,3 +330,4 @@ try {
 *   [Jedis client](/docs/latest/develop/clients/jedis/) - Redis Java client documentation
 
 ## On this page
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:39:02.786Z"
 content_hash: "dfe08d2d1d3a677d6efd29498a3850b6c2b8358c5e4d9c16c9de4e9ca0c407bd"
 menu_path: ["Convert an ArrayBuffer to an array of numbers"]
 section_path: []
+nav_prev: {"path": "bun/bun/docs/guides/binary/arraybuffer-to-blob/index.md", "title": "Convert an ArrayBuffer to a Blob"}
+nav_next: {"path": "bun/bun/docs/guides/binary/arraybuffer-to-buffer/index.md", "title": "Convert an ArrayBuffer to a Buffer"}
 ---
+
 [Skip to main content](#content-area)
 
 [Bun home page![light logo](https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z_zHyy/logo/logo-with-wordmark-dark.svg?fit=max&auto=format&n=JUhaF6Mf68z_zHyy&q=85&s=3f55cd23822028e40658b192c927f3e4)![dark logo](https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z_zHyy/logo/logo-with-wordmark-light.svg?fit=max&auto=format&n=JUhaF6Mf68z_zHyy&q=85&s=8a0c5928d9dc3631f0d33e17c257e2ec)](/docs)
@@ -73,3 +76,4 @@ Convert an ArrayBuffer to a Uint8Array
 Next
 
 ](/docs/guides/binary/arraybuffer-to-typedarray)
+

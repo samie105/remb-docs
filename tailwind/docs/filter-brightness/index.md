@@ -9,15 +9,9 @@ last_crawled_at: "2026-04-18T17:07:09.287Z"
 content_hash: "2c8a85b88f0e41ade37a22aa555fb1ce5d6d81c05493070aa8f8f6183b5f342b"
 menu_path: ["filter: brightness()"]
 section_path: []
+nav_prev: {"path": "tailwind/docs/filter-blur/index.md", "title": "filter: blur()"}
+nav_next: {"path": "tailwind/docs/filter-contrast/index.md", "title": "filter: contrast()"}
 ---
-[](/)
-
-[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
-
-1.  Filters
-2.  brightness
-
-Filters
 
 # filter: brightness()
 
@@ -114,3 +108,4 @@ Make your ideas look awesome, without relying on a designer.
 ](https://www.refactoringui.com/?ref=sidebar)
 
 Copyright © 2026 Tailwind Labs Inc.·[Trademark Policy](/brand)
+

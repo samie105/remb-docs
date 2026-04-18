@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:01:41.274Z"
 content_hash: "2fdabad1bc95c58fe4a0e1764b7acc34d03b3449da4133fb0e379a10e5db1e9f"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Token bucket rate limiter with Redis","→","Token bucket rate limiter with Redis","→\n      \n        Token bucket rate limiter with Redis and .NET","→","Token bucket rate limiter with Redis and .NET"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Token bucket rate limiter with Redis","→","Token bucket rate limiter with Redis","→\n      \n        Token bucket rate limiter with Redis and .NET","→","Token bucket rate limiter with Redis and .NET"]
+nav_prev: {"path": "redis/docs/latest/develop/use-cases/time-series-dashboard/dotnet/index.md", "title": "Rolling sensor graph demo with Redis and .NET"}
+nav_next: {"path": "redis/docs/latest/develop/use-cases/session-store/dotnet/index.md", "title": "Redis session store with .NET"}
 ---
+
 # Token bucket rate limiter with Redis and .NET
 
 Implement a token bucket rate limiter using Redis and Lua scripts in .NET
@@ -323,3 +326,4 @@ catch (RedisException ex)
 *   [.NET client](/docs/latest/develop/clients/dotnet/) - Redis .NET client documentation
 
 ## On this page
+

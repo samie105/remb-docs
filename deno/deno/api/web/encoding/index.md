@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:12:34.199Z"
 content_hash: "b51aba85c16b81005e190c1edfff7987e78f8f1fcd3b7c58d352aa74c6fef651"
 menu_path: ["Encoding - Web documentation"]
 section_path: []
+nav_prev: {"path": "deno/deno/api/web/crypto/index.md", "title": "Crypto - Web documentation"}
+nav_next: {"path": "deno/deno/api/web/events/index.md", "title": "Events - Web documentation"}
 ---
+
 ### Functions [#](#Functions)
 
 f
@@ -116,3 +119,4 @@ No documentation available
 *   [prototype](./././~/TextEncoderStream#property_prototype)
 *   [readable](./././~/TextEncoderStream#property_readable)
 *   [writable](./././~/TextEncoderStream#property_writable)
+

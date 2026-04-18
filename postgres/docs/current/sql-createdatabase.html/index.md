@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:33:48.416Z"
 content_hash: "dc72bc932afa1ac9fc60ae2dff55029a5b3d5a1cf882884f6aa38446ee1b5e85"
 menu_path: ["PostgreSQL: Documentation: 18: CREATE DATABASE"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/textsearch-features.html/index.md", "title": "PostgreSQL: Documentation: 18: 12.4.\u00a0Additional Features"}
+nav_next: {"path": "postgres/docs/current/pgtestfsync.html/index.md", "title": "PostgreSQL: Documentation: 18: pg_test_fsync"}
 ---
+
 CREATE DATABASE — create a new database
 
 ## Synopsis
@@ -61,41 +64,41 @@ Character set encoding to use in the new database. Specify a string constant (e.
 
 _`strategy`_ [#](#CREATE-DATABASE-STRATEGY)
 
-Strategy to be used in creating the new database. If the `WAL_LOG` strategy is used, the database will be copied block by block and each block will be separately written to the write-ahead log. This is the most efficient strategy in cases where the template database is small, and therefore it is the default. The older `FILE_COPY` strategy is also available. This strategy writes a small record to the write-ahead log for each tablespace used by the target database. Each such record represents copying an entire directory to a new location at the filesystem level. While this does reduce the write-ahead log volume substantially, especially if the template database is large, it also forces the system to perform a checkpoint both before and after the creation of the new database. In some situations, this may have a noticeable negative impact on overall system performance. The `FILE_COPY` strategy is affected by the [file\_copy\_method](https://www.postgresql.org/docs/current/runtime-config-resource.html#GUC-FILE-COPY-METHOD) setting.
+Strategy to be used in creating the new database. If the `WAL_LOG` strategy is used, the database will be copied block by block and each block will be separately written to the write-ahead log. This is the most efficient strategy in cases where the template database is small, and therefore it is the default. The older `FILE_COPY` strategy is also available. This strategy writes a small record to the write-ahead log for each tablespace used by the target database. Each such record represents copying an entire directory to a new location at the filesystem level. While this does reduce the write-ahead log volume substantially, especially if the template database is large, it also forces the system to perform a checkpoint both before and after the creation of the new database. In some situations, this may have a noticeable negative impact on overall system performance. The `FILE_COPY` strategy is affected by the [file\_copy\_method](postgres/docs/current/runtime-config-resource.html/index.md#GUC-FILE-COPY-METHOD) setting.
 
 _`locale`_ [#](#CREATE-DATABASE-LOCALE)
 
 Sets the default collation order and character classification in the new database. Collation affects the sort order applied to strings, e.g., in queries with `ORDER BY`, as well as the order used in indexes on text columns. Character classification affects the categorization of characters, e.g., lower, upper, and digit. Also sets the associated aspects of the operating system environment, `LC_COLLATE` and `LC_CTYPE`. The default is the same setting as the template database. See [Section 23.2.2.3.1](https://www.postgresql.org/docs/current/collation.html#COLLATION-MANAGING-CREATE-LIBC "23.2.2.3.1. libc Collations") and [Section 23.2.2.3.2](https://www.postgresql.org/docs/current/collation.html#COLLATION-MANAGING-CREATE-ICU "23.2.2.3.2. ICU Collations") for details.
 
-Can be overridden by setting [_`lc_collate`_](https://www.postgresql.org/docs/current/sql-createdatabase.html#CREATE-DATABASE-LC-COLLATE), [_`lc_ctype`_](https://www.postgresql.org/docs/current/sql-createdatabase.html#CREATE-DATABASE-LC-CTYPE), [_`builtin_locale`_](https://www.postgresql.org/docs/current/sql-createdatabase.html#CREATE-DATABASE-BUILTIN-LOCALE), or [_`icu_locale`_](https://www.postgresql.org/docs/current/sql-createdatabase.html#CREATE-DATABASE-ICU-LOCALE) individually.
+Can be overridden by setting [_`lc_collate`_](postgres/docs/current/sql-createdatabase.html/index.md#CREATE-DATABASE-LC-COLLATE), [_`lc_ctype`_](postgres/docs/current/sql-createdatabase.html/index.md#CREATE-DATABASE-LC-CTYPE), [_`builtin_locale`_](postgres/docs/current/sql-createdatabase.html/index.md#CREATE-DATABASE-BUILTIN-LOCALE), or [_`icu_locale`_](postgres/docs/current/sql-createdatabase.html/index.md#CREATE-DATABASE-ICU-LOCALE) individually.
 
-If [_`locale_provider`_](https://www.postgresql.org/docs/current/sql-createdatabase.html#CREATE-DATABASE-LOCALE-PROVIDER) is `builtin`, then _`locale`_ or _`builtin_locale`_ must be specified and set to either `C`, `C.UTF-8`, or `PG_UNICODE_FAST`.
+If [_`locale_provider`_](postgres/docs/current/sql-createdatabase.html/index.md#CREATE-DATABASE-LOCALE-PROVIDER) is `builtin`, then _`locale`_ or _`builtin_locale`_ must be specified and set to either `C`, `C.UTF-8`, or `PG_UNICODE_FAST`.
 
 ### Tip
 
-The other locale settings [lc\_messages](https://www.postgresql.org/docs/current/runtime-config-client.html#GUC-LC-MESSAGES), [lc\_monetary](https://www.postgresql.org/docs/current/runtime-config-client.html#GUC-LC-MONETARY), [lc\_numeric](https://www.postgresql.org/docs/current/runtime-config-client.html#GUC-LC-NUMERIC), and [lc\_time](https://www.postgresql.org/docs/current/runtime-config-client.html#GUC-LC-TIME) are not fixed per database and are not set by this command. If you want to make them the default for a specific database, you can use `ALTER DATABASE ... SET`.
+The other locale settings [lc\_messages](postgres/docs/current/runtime-config-client.html/index.md#GUC-LC-MESSAGES), [lc\_monetary](postgres/docs/current/runtime-config-client.html/index.md#GUC-LC-MONETARY), [lc\_numeric](postgres/docs/current/runtime-config-client.html/index.md#GUC-LC-NUMERIC), and [lc\_time](postgres/docs/current/runtime-config-client.html/index.md#GUC-LC-TIME) are not fixed per database and are not set by this command. If you want to make them the default for a specific database, you can use `ALTER DATABASE ... SET`.
 
 _`lc_collate`_ [#](#CREATE-DATABASE-LC-COLLATE)
 
-Sets `LC_COLLATE` in the database server's operating system environment. The default is the setting of [_`locale`_](https://www.postgresql.org/docs/current/sql-createdatabase.html#CREATE-DATABASE-LOCALE) if specified, otherwise the same setting as the template database. See below for additional restrictions.
+Sets `LC_COLLATE` in the database server's operating system environment. The default is the setting of [_`locale`_](postgres/docs/current/sql-createdatabase.html/index.md#CREATE-DATABASE-LOCALE) if specified, otherwise the same setting as the template database. See below for additional restrictions.
 
-If [_`locale_provider`_](https://www.postgresql.org/docs/current/sql-createdatabase.html#CREATE-DATABASE-LOCALE-PROVIDER) is `libc`, also sets the default collation order to use in the new database, overriding the setting [_`locale`_](https://www.postgresql.org/docs/current/sql-createdatabase.html#CREATE-DATABASE-LOCALE).
+If [_`locale_provider`_](postgres/docs/current/sql-createdatabase.html/index.md#CREATE-DATABASE-LOCALE-PROVIDER) is `libc`, also sets the default collation order to use in the new database, overriding the setting [_`locale`_](postgres/docs/current/sql-createdatabase.html/index.md#CREATE-DATABASE-LOCALE).
 
 _`lc_ctype`_ [#](#CREATE-DATABASE-LC-CTYPE)
 
-Sets `LC_CTYPE` in the database server's operating system environment. The default is the setting of [_`locale`_](https://www.postgresql.org/docs/current/sql-createdatabase.html#CREATE-DATABASE-LOCALE) if specified, otherwise the same setting as the template database. See below for additional restrictions.
+Sets `LC_CTYPE` in the database server's operating system environment. The default is the setting of [_`locale`_](postgres/docs/current/sql-createdatabase.html/index.md#CREATE-DATABASE-LOCALE) if specified, otherwise the same setting as the template database. See below for additional restrictions.
 
-If [_`locale_provider`_](https://www.postgresql.org/docs/current/sql-createdatabase.html#CREATE-DATABASE-LOCALE-PROVIDER) is `libc`, also sets the default character classification to use in the new database, overriding the setting [_`locale`_](https://www.postgresql.org/docs/current/sql-createdatabase.html#CREATE-DATABASE-LOCALE).
+If [_`locale_provider`_](postgres/docs/current/sql-createdatabase.html/index.md#CREATE-DATABASE-LOCALE-PROVIDER) is `libc`, also sets the default character classification to use in the new database, overriding the setting [_`locale`_](postgres/docs/current/sql-createdatabase.html/index.md#CREATE-DATABASE-LOCALE).
 
 _`builtin_locale`_ [#](#CREATE-DATABASE-BUILTIN-LOCALE)
 
-Specifies the builtin provider locale for the database default collation order and character classification, overriding the setting [_`locale`_](https://www.postgresql.org/docs/current/sql-createdatabase.html#CREATE-DATABASE-LOCALE). The [locale provider](https://www.postgresql.org/docs/current/sql-createdatabase.html#CREATE-DATABASE-LOCALE-PROVIDER) must be `builtin`. The default is the setting of [_`locale`_](https://www.postgresql.org/docs/current/sql-createdatabase.html#CREATE-DATABASE-LOCALE) if specified; otherwise the same setting as the template database.
+Specifies the builtin provider locale for the database default collation order and character classification, overriding the setting [_`locale`_](postgres/docs/current/sql-createdatabase.html/index.md#CREATE-DATABASE-LOCALE). The [locale provider](postgres/docs/current/sql-createdatabase.html/index.md#CREATE-DATABASE-LOCALE-PROVIDER) must be `builtin`. The default is the setting of [_`locale`_](postgres/docs/current/sql-createdatabase.html/index.md#CREATE-DATABASE-LOCALE) if specified; otherwise the same setting as the template database.
 
 The locales available for the `builtin` provider are `C`, `C.UTF-8` and `PG_UNICODE_FAST`.
 
 _`icu_locale`_ [#](#CREATE-DATABASE-ICU-LOCALE)
 
-Specifies the ICU locale (see [Section 23.2.2.3.2](https://www.postgresql.org/docs/current/collation.html#COLLATION-MANAGING-CREATE-ICU "23.2.2.3.2. ICU Collations")) for the database default collation order and character classification, overriding the setting [_`locale`_](https://www.postgresql.org/docs/current/sql-createdatabase.html#CREATE-DATABASE-LOCALE). The [locale provider](https://www.postgresql.org/docs/current/sql-createdatabase.html#CREATE-DATABASE-LOCALE-PROVIDER) must be ICU. The default is the setting of [_`locale`_](https://www.postgresql.org/docs/current/sql-createdatabase.html#CREATE-DATABASE-LOCALE) if specified; otherwise the same setting as the template database.
+Specifies the ICU locale (see [Section 23.2.2.3.2](https://www.postgresql.org/docs/current/collation.html#COLLATION-MANAGING-CREATE-ICU "23.2.2.3.2. ICU Collations")) for the database default collation order and character classification, overriding the setting [_`locale`_](postgres/docs/current/sql-createdatabase.html/index.md#CREATE-DATABASE-LOCALE). The [locale provider](postgres/docs/current/sql-createdatabase.html/index.md#CREATE-DATABASE-LOCALE-PROVIDER) must be ICU. The default is the setting of [_`locale`_](postgres/docs/current/sql-createdatabase.html/index.md#CREATE-DATABASE-LOCALE) if specified; otherwise the same setting as the template database.
 
 _`icu_rules`_ [#](#CREATE-DATABASE-ICU-RULES)
 
@@ -103,7 +106,7 @@ Specifies additional collation rules to customize the behavior of the default co
 
 _`locale_provider`_ [#](#CREATE-DATABASE-LOCALE-PROVIDER)
 
-Specifies the provider to use for the default collation in this database. Possible values are `builtin`, `icu` (if the server was built with ICU support) or `libc`. By default, the provider is the same as that of the [_`template`_](https://www.postgresql.org/docs/current/sql-createdatabase.html#CREATE-DATABASE-TEMPLATE). See [Section 23.1.4](https://www.postgresql.org/docs/current/locale.html#LOCALE-PROVIDERS "23.1.4. Locale Providers") for details.
+Specifies the provider to use for the default collation in this database. Possible values are `builtin`, `icu` (if the server was built with ICU support) or `libc`. By default, the provider is the same as that of the [_`template`_](postgres/docs/current/sql-createdatabase.html/index.md#CREATE-DATABASE-TEMPLATE). See [Section 23.1.4](https://www.postgresql.org/docs/current/locale.html#LOCALE-PROVIDERS "23.1.4. Locale Providers") for details.
 
 _`collation_version`_ [#](#CREATE-DATABASE-COLLATION-VERSION)
 
@@ -187,3 +190,4 @@ Note that locale names are specific to the operating system, so that the above c
 ## Compatibility
 
 There is no `CREATE DATABASE` statement in the SQL standard. Databases are equivalent to catalogs, whose creation is implementation-defined.
+

@@ -9,10 +9,13 @@ last_crawled_at: "2026-04-18T16:43:23.723Z"
 content_hash: "4e5423a48ecc9cd4e4b1652a9d01d820e1eccf18eadbb556759417b12a989d9f"
 menu_path: ["PostgreSQL: Documentation: 18: F.32. pg_stat_statements — track statistics of SQL planning and execution"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/view-pg-policies.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.15.\u00a0pg_policies"}
+nav_next: {"path": "postgres/docs/current/logicaldecoding-writer.html/index.md", "title": "PostgreSQL: Documentation: 18: 47.7.\u00a0Logical Decoding Output Writers"}
 ---
+
 The `pg_stat_statements` module provides a means for tracking planning and execution statistics of all SQL statements executed by a server.
 
-The module must be loaded by adding `pg_stat_statements` to [shared\_preload\_libraries](https://www.postgresql.org/docs/current/runtime-config-client.html#GUC-SHARED-PRELOAD-LIBRARIES) in `postgresql.conf`, because it requires additional shared memory. This means that a server restart is needed to add or remove the module. In addition, query identifier calculation must be enabled in order for the module to be active, which is done automatically if [compute\_query\_id](https://www.postgresql.org/docs/current/runtime-config-statistics.html#GUC-COMPUTE-QUERY-ID) is set to `auto` or `on`, or any third-party module that calculates query identifiers is loaded.
+The module must be loaded by adding `pg_stat_statements` to [shared\_preload\_libraries](postgres/docs/current/runtime-config-client.html/index.md#GUC-SHARED-PRELOAD-LIBRARIES) in `postgresql.conf`, because it requires additional shared memory. This means that a server restart is needed to add or remove the module. In addition, query identifier calculation must be enabled in order for the module to be active, which is done automatically if [compute\_query\_id](postgres/docs/current/runtime-config-statistics.html/index.md#GUC-COMPUTE-QUERY-ID) is set to `auto` or `on`, or any third-party module that calculates query identifiers is loaded.
 
 When `pg_stat_statements` is active, it tracks statistics across all databases of the server. To access and manipulate these statistics, the module provides views `pg_stat_statements` and `pg_stat_statements_info`, and the utility functions `pg_stat_statements_reset` and `pg_stat_statements`. These are not available globally but can be enabled for a specific database with `CREATE EXTENSION pg_stat_statements`.
 
@@ -140,27 +143,27 @@ Total number of temp blocks written by the statement
 
 `shared_blk_read_time` `double precision`
 
-Total time the statement spent reading shared blocks, in milliseconds (if [track\_io\_timing](https://www.postgresql.org/docs/current/runtime-config-statistics.html#GUC-TRACK-IO-TIMING) is enabled, otherwise zero)
+Total time the statement spent reading shared blocks, in milliseconds (if [track\_io\_timing](postgres/docs/current/runtime-config-statistics.html/index.md#GUC-TRACK-IO-TIMING) is enabled, otherwise zero)
 
 `shared_blk_write_time` `double precision`
 
-Total time the statement spent writing shared blocks, in milliseconds (if [track\_io\_timing](https://www.postgresql.org/docs/current/runtime-config-statistics.html#GUC-TRACK-IO-TIMING) is enabled, otherwise zero)
+Total time the statement spent writing shared blocks, in milliseconds (if [track\_io\_timing](postgres/docs/current/runtime-config-statistics.html/index.md#GUC-TRACK-IO-TIMING) is enabled, otherwise zero)
 
 `local_blk_read_time` `double precision`
 
-Total time the statement spent reading local blocks, in milliseconds (if [track\_io\_timing](https://www.postgresql.org/docs/current/runtime-config-statistics.html#GUC-TRACK-IO-TIMING) is enabled, otherwise zero)
+Total time the statement spent reading local blocks, in milliseconds (if [track\_io\_timing](postgres/docs/current/runtime-config-statistics.html/index.md#GUC-TRACK-IO-TIMING) is enabled, otherwise zero)
 
 `local_blk_write_time` `double precision`
 
-Total time the statement spent writing local blocks, in milliseconds (if [track\_io\_timing](https://www.postgresql.org/docs/current/runtime-config-statistics.html#GUC-TRACK-IO-TIMING) is enabled, otherwise zero)
+Total time the statement spent writing local blocks, in milliseconds (if [track\_io\_timing](postgres/docs/current/runtime-config-statistics.html/index.md#GUC-TRACK-IO-TIMING) is enabled, otherwise zero)
 
 `temp_blk_read_time` `double precision`
 
-Total time the statement spent reading temporary file blocks, in milliseconds (if [track\_io\_timing](https://www.postgresql.org/docs/current/runtime-config-statistics.html#GUC-TRACK-IO-TIMING) is enabled, otherwise zero)
+Total time the statement spent reading temporary file blocks, in milliseconds (if [track\_io\_timing](postgres/docs/current/runtime-config-statistics.html/index.md#GUC-TRACK-IO-TIMING) is enabled, otherwise zero)
 
 `temp_blk_write_time` `double precision`
 
-Total time the statement spent writing temporary file blocks, in milliseconds (if [track\_io\_timing](https://www.postgresql.org/docs/current/runtime-config-statistics.html#GUC-TRACK-IO-TIMING) is enabled, otherwise zero)
+Total time the statement spent writing temporary file blocks, in milliseconds (if [track\_io\_timing](postgres/docs/current/runtime-config-statistics.html/index.md#GUC-TRACK-IO-TIMING) is enabled, otherwise zero)
 
 `wal_records` `bigint`
 
@@ -240,7 +243,7 @@ Plannable queries (that is, `SELECT`, `INSERT`, `UPDATE`, `DELETE`, and `MERGE`)
 
 ### Note
 
-The following details about constant replacement and `queryid` only apply when [compute\_query\_id](https://www.postgresql.org/docs/current/runtime-config-statistics.html#GUC-COMPUTE-QUERY-ID) is enabled. If you use an external module instead to compute `queryid`, you should refer to its documentation for details.
+The following details about constant replacement and `queryid` only apply when [compute\_query\_id](postgres/docs/current/runtime-config-statistics.html/index.md#GUC-COMPUTE-QUERY-ID) is enabled. If you use an external module instead to compute `queryid`, you should refer to its documentation for details.
 
 When a constant's value has been ignored for purposes of matching the query to other queries, the constant is replaced by a parameter symbol, such as `$1`, in the `pg_stat_statements` display. The rest of the query text is that of the first query that had the particular `queryid` hash value associated with the `pg_stat_statements` entry.
 
@@ -434,3 +437,4 @@ calls           | 0
 total\_exec\_time | 0
 rows            | 0
 hit\_percent     |
+

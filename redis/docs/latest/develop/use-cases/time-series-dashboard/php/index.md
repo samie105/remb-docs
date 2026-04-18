@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:08:05.623Z"
 content_hash: "d59f0d47a593bd5dff568327f3b9c5f1ddb56c4fd21306bfdc4c9cd4d1c4c655"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Rolling sensor graph demo with Redis","→","Rolling sensor graph demo with Redis","→\n      \n        Rolling sensor graph demo with Redis and PHP","→","Rolling sensor graph demo with Redis and PHP"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Rolling sensor graph demo with Redis","→","Rolling sensor graph demo with Redis","→\n      \n        Rolling sensor graph demo with Redis and PHP","→","Rolling sensor graph demo with Redis and PHP"]
+nav_prev: {"path": "redis/docs/latest/develop/data-types/json/ram/index.md", "title": "Redis JSON RAM Usage"}
+nav_next: {"path": "redis/docs/latest/develop/use-cases/rate-limiter/php/index.md", "title": "Token bucket rate limiter with Redis and PHP"}
 ---
+
 # Rolling sensor graph demo with Redis and PHP
 
 Build a Redis-backed rolling sensor graph demo in PHP with Predis
@@ -167,3 +170,4 @@ This example intentionally keeps the server and UI small so the Redis behavior i
 *   [TS.CREATE command](/docs/latest/commands/ts.create/) - Create a time series with labels and retention
 
 ## On this page
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:36:32.905Z"
 content_hash: "507ea5a587ec4accd183d6b754f946074fd64aa6fb5abd82558fbb0493ac1230"
 menu_path: ["Deploy your Astro Site with Cleavr"]
 section_path: []
+nav_prev: {"path": "astro/en/guides/deploy/buddy/index.md", "title": "Deploy your Astro Site with Buddy"}
+nav_next: {"path": "astro/en/guides/deploy/clever-cloud/index.md", "title": "Deploy your Astro Site to Clever Cloud"}
 ---
+
 # Deploy your Astro Site with Cleavr
 
 You can deploy your Astro project to your own Virtual Private Server (VPS) using [Cleavr](https://cleavr.io/), a server and app deployment management tool.
@@ -189,3 +192,4 @@ Congratulations, you’ve just deployed your Astro app!
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

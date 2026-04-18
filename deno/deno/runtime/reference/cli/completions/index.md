@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:51:59.178Z"
 content_hash: "795013d5ac47cb906326a0368aa0bc8f0e4458142508bc06ad30df9547bf9599"
 menu_path: ["deno completions"]
 section_path: []
+nav_prev: {"path": "deno/deno/runtime/reference/cli/create/index.md", "title": "deno create"}
+nav_next: {"path": "deno/runtime/reference/cli/coverage/index.md", "title": "deno coverage"}
 ---
+
 On this page
 
 *   [Examples](#examples)
@@ -101,3 +104,4 @@ source /usr/local/etc/bash_completion.d/deno.bash
 `--dynamic`
 
 Generate dynamic completions for the given shell (unstable), currently this only provides available tasks for `deno task`.
+

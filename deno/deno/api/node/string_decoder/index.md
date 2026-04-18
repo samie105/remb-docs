@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:41:27.154Z"
 content_hash: "60541947b0ba080798e88c7e17a3cdf80f4e55a229bb9f9409b1d7417e759743"
 menu_path: ["string_decoder - Node documentation"]
 section_path: []
+nav_prev: {"path": "deno/deno/api/node/stream/web/index.md", "title": "stream/web - Node documentation"}
+nav_next: {"path": "deno/deno/api/node/test/index.md", "title": "test - Node documentation"}
 ---
+
 ### Usage in Deno
 
 ```typescript
@@ -58,3 +61,4 @@ The `node:string_decoder` module provides an API for decoding `Buffer` objects i
 
 *   [end](.././string_decoder/~/StringDecoder#method_end_0)
 *   [write](.././string_decoder/~/StringDecoder#method_write_0)
+

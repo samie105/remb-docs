@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:48:27.264Z"
 content_hash: "e4361d63befc44abb8018343b0c24ee6013d94927a69a1787306e0ab025d1670"
 menu_path: ["Check in: Unit 3 - Components"]
 section_path: []
+nav_prev: {"path": "astro/en/tutorial/2-pages/index.md", "title": "Check in: Unit 2 - Pages"}
+nav_next: {"path": "astro/en/tutorial/4-layouts/index.md", "title": "Check in: Unit 4 - Layouts"}
 ---
+
 # Check in: Unit 3 - Components
 
 Now that you have `.astro` and `.md` files generating entire pages on your website, it’s time to make and reuse smaller bits of HTML with Astro components!
@@ -36,3 +39,4 @@ Along the way, you’ll use CSS and JavaScript to build a responsive design that
  *    I am ready to build some Astro components!
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

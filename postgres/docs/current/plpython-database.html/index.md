@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:50:22.347Z"
 content_hash: "92900f847684583f46ddaae4f1f62658ab9234399c616f638c072f44b4e7f9e6"
 menu_path: ["PostgreSQL: Documentation: 18: 44.6. Database Access"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/datetime-posix-timezone-specs.html/index.md", "title": "PostgreSQL: Documentation: 18: B.5.\u00a0POSIX Time Zone Specifications"}
+nav_next: {"path": "postgres/docs/current/domains.html/index.md", "title": "PostgreSQL: Documentation: 18: 8.18.\u00a0Domain Types"}
 ---
+
 Development Versions: [devel](https://www.postgresql.org/docs/devel/plpython-database.html "PostgreSQL devel - 44.6. Database Access")
 
 The PL/Python language module automatically imports a Python module called `plpy`. The functions and constants in this module are available to you in the Python code as ``plpy._`foo`_``.
@@ -169,3 +172,4 @@ $$ LANGUAGE plpython3u;
 Note that because all exceptions from the `plpy.spiexceptions` module inherit from `SPIError`, an `except` clause handling it will catch any database access error.
 
 As an alternative way of handling different error conditions, you can catch the `SPIError` exception and determine the specific error condition inside the `except` block by looking at the `sqlstate` attribute of the exception object. This attribute is a string value containing the “SQLSTATE” error code. This approach provides approximately the same functionality
+

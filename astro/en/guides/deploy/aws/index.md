@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:36:27.968Z"
 content_hash: "cd5ee1929c4f25f06e930b0bc7d65622cfdb20d3c06f409daa18fb05e649a894"
 menu_path: ["Deploy your Astro Site to AWS"]
 section_path: []
+nav_prev: {"path": "astro/en/guides/deploy/index.md", "title": "Deploy your Astro Site"}
+nav_next: {"path": "astro/en/guides/deploy/aws-via-flightcontrol/index.md", "title": "Deploy your Astro Site to AWS with Flightcontrol"}
 ---
+
 # Deploy your Astro Site to AWS
 
 [AWS](https://aws.amazon.com/) is a full-featured web app hosting platform that can be used to deploy an Astro site.
@@ -291,3 +294,4 @@ There are many ways to set up continuous deployment for AWS. One possibility for
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

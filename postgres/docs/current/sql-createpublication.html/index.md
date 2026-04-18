@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:48:37.686Z"
 content_hash: "e5349f23d3bde945cfbcd55a08fef0352aa069155eca868e8c061822f37d1e48"
 menu_path: ["PostgreSQL: Documentation: 18: CREATE PUBLICATION"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/index-functions.html/index.md", "title": "PostgreSQL: Documentation: 18: 63.2.\u00a0Index Access Method Functions"}
+nav_next: {"path": "postgres/docs/current/rule-system.html/index.md", "title": "PostgreSQL: Documentation: 18: 51.4.\u00a0The PostgreSQL Rule System"}
 ---
+
 CREATE PUBLICATION — define a new publication
 
 ## Synopsis
@@ -172,3 +175,4 @@ CREATE PUBLICATION users\_filtered FOR TABLE users (user\_id, firstname);
 ## Compatibility
 
 `CREATE PUBLICATION` is a PostgreSQL extension.
+

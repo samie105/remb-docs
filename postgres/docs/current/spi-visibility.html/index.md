@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:36:11.037Z"
 content_hash: "4df6917d8bf10abc102a8301c26e1a03e85082c2439806364d8eefc301f9ad2d"
 menu_path: ["PostgreSQL: Documentation: 18: 45.5. Visibility of Data Changes"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/sql-createconversion.html/index.md", "title": "PostgreSQL: Documentation: 18: CREATE CONVERSION"}
+nav_next: {"path": "postgres/docs/current/contrib-dblink-disconnect.html/index.md", "title": "PostgreSQL: Documentation: 18: dblink_disconnect"}
 ---
+
 February 26, 2026: [PostgreSQL 18.3, 17.9, 16.13, 15.17, and 14.22 Released!](/about/news/postgresql-183-179-1613-1517-and-1422-released-3246/)
 
 [Documentation](/docs/ "Documentation") → [PostgreSQL 18](/docs/18/index.html)
@@ -42,3 +45,4 @@ The next section contains an example that illustrates the application of these r
 ## Submit correction
 
 If you see anything in the documentation that is not correct, does not match your experience with the particular feature or requires further clarification, please use [this form](/account/comments/new/18/spi-visibility.html/) to report a documentation issue.
+

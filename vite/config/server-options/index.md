@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:32:27.885Z"
 content_hash: "ab1c519ceea2ec3f7e92add5e45388954474af8c5fc04c303398bed7e26bfbda"
 menu_path: ["Server Options ​"]
 section_path: []
+nav_prev: {"path": "vite/config/preview-options/index.md", "title": "Preview Options \u200b"}
+nav_next: {"path": "vite/config/ssr-options/index.md", "title": "SSR Options \u200b"}
 ---
+
 Unless noted, the options in this section are only applied to dev.
 
 ## server.host [​](#server-host)
@@ -105,11 +108,11 @@ export default defineConfig({
 
 Configure custom proxy rules for the dev server. Expects an object of `{ key: options }` pairs. Any requests that request path starts with that key will be proxied to that specified target. If the key starts with `^`, it will be interpreted as a `RegExp`. The `configure` option can be used to access the proxy instance. If a request matches any of the configured proxy rules, the request won't be transformed by Vite.
 
-Note that if you are using non-relative [`base`](https://vite.dev/config/shared-options#base), you must prefix each key with that `base`.
+Note that if you are using non-relative [`base`](vite/config/shared-options/index.md#base), you must prefix each key with that `base`.
 
 Extends [`http-proxy-3`](https://github.com/sagemathinc/http-proxy-3#options). Additional options are [here](https://github.com/vitejs/vite/blob/main/packages/vite/src/node/server/middlewares/proxy.ts#L13).
 
-In some cases, you might also want to configure the underlying dev server (e.g. to add custom middlewares to the internal [connect](https://github.com/senchalabs/connect) app). In order to do that, you need to write your own [plugin](https://vite.dev/guide/using-plugins) and use [configureServer](https://vite.dev/guide/api-plugin#configureserver) function.
+In some cases, you might also want to configure the underlying dev server (e.g. to add custom middlewares to the internal [connect](https://github.com/senchalabs/connect) app). In order to do that, you need to write your own [plugin](vite/guide/using-plugins/index.md) and use [configureServer](vite/guide/api-plugin/index.md#configureserver) function.
 
 **Example:**
 
@@ -254,7 +257,7 @@ log
 ## server.warmup [​](#server-warmup)
 
 *   **Type:** `{ clientFiles?: string[], ssrFiles?: string[] }`
-*   **Related:** [Warm Up Frequently Used Files](https://vite.dev/guide/performance#warm-up-frequently-used-files)
+*   **Related:** [Warm Up Frequently Used Files](vite/guide/performance/index.md#warm-up-frequently-used-files)
 
 Warm up files to transform and cache the results in advance. This improves the initial page load during server starts and prevents transform waterfalls.
 
@@ -283,7 +286,7 @@ File system watcher options to pass on to [chokidar](https://github.com/paulmill
 
 The Vite server watcher watches the `root` and skips the `.git/`, `node_modules/`, `test-results/`, and Vite's `cacheDir` and `build.outDir` directories by default. When updating a watched file, Vite will apply HMR and update the page only if needed.
 
-If set to `null`, no files will be watched. [`server.watcher`](https://vite.dev/guide/api-javascript#vitedevserver) will provide a compatible event emitter, but calling `add` or `unwatch` will have no effect.
+If set to `null`, no files will be watched. [`server.watcher`](vite/guide/api-javascript/index.md#vitedevserver) will provide a compatible event emitter, but calling `add` or `unwatch` will have no effect.
 
 Watching files in `node_modules`
 
@@ -307,7 +310,7 @@ To fix it, you could either:
 
 Create Vite server in middleware mode.
 
-*   **Related:** [appType](https://vite.dev/config/shared-options#apptype), [SSR - Setting Up the Dev Server](https://vite.dev/guide/ssr#setting-up-the-dev-server)
+*   **Related:** [appType](vite/config/shared-options/index.md#apptype), [SSR - Setting Up the Dev Server](vite/guide/ssr/index.md#setting-up-the-dev-server)
     
 *   **Example:**
     
@@ -356,14 +359,14 @@ Restrict files that could be served via `/@fs/`. When `server.fs.strict` is set 
 
 Both directories and files can be provided.
 
-Vite will search for the root of the potential workspace and use it as default. A valid workspace met the following conditions, otherwise will fall back to the [project root](https://vite.dev/guide/#index-html-and-project-root).
+Vite will search for the root of the potential workspace and use it as default. A valid workspace met the following conditions, otherwise will fall back to the [project root](vite/guide/index.md#index-html-and-project-root).
 
 *   contains `workspaces` field in `package.json`
 *   contains one of the following file
     *   `lerna.json`
     *   `pnpm-workspace.yaml`
 
-Accepts a path to specify the custom workspace root. Could be a absolute path or a path relative to [project root](https://vite.dev/guide/#index-html-and-project-root). For example:
+Accepts a path to specify the custom workspace root. Could be a absolute path or a path relative to [project root](vite/guide/index.md#index-html-and-project-root). For example:
 
 js
 
@@ -409,7 +412,7 @@ Blocklist for sensitive files being restricted to be served by Vite dev server. 
 
 NOTE
 
-This blocklist does not apply to [the public directory](https://vite.dev/guide/assets#the-public-directory). All files in the public directory are served without any filtering, since they are copied directly to the output directory during build.
+This blocklist does not apply to [the public directory](vite/guide/assets/index.md#the-public-directory). All files in the public directory are served without any filtering, since they are copied directly to the output directory during build.
 
 NOTE
 
@@ -455,3 +458,4 @@ export default defineConfig({
   },
 })
 ```
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:41:59.619Z"
 content_hash: "c69545160a6b11ec0a69120b15709bbe5f2a34e8d89d23bb21e9aea89b10da38"
 menu_path: ["Database","Database","GUI quickstarts","GUI quickstarts","PSQL","PSQL"]
 section_path: ["Database","Database","GUI quickstarts","GUI quickstarts","PSQL","PSQL"]
+nav_prev: {"path": "supabase/docs/guides/database/postgres-js/index.md", "title": "Postgres.js"}
+nav_next: {"path": "supabase/docs/guides/database/prisma/index.md", "title": "Prisma"}
 ---
+
 # 
 
 Connecting with PSQL
@@ -33,3 +36,4 @@ Find your connection settings. Go to the project [**Connect** panel](/dashboard/
 ```
 1psql "sslmode=verify-full sslrootcert=/path/to/prod-supabase.cer host=[CLOUD_PROVIDER]-0-[REGION].pooler.supabase.com dbname=postgres user=postgres.[PROJECT_REF]"
 ```
+

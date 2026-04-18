@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:45:47.151Z"
 content_hash: "0d85e56f3c8d14acac22755833d8dd23e6263406e861682495780fa212ca2b68"
 menu_path: ["PostgreSQL: Documentation: 18: F.27. pg_freespacemap — examine the free space map"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/pglogicalinspect.html/index.md", "title": "PostgreSQL: Documentation: 18: F.28.\u00a0pg_logicalinspect \u2014 logical decoding components inspection"}
+nav_next: {"path": "postgres/docs/current/plpgsql-trigger.html/index.md", "title": "PostgreSQL: Documentation: 18: 41.10.\u00a0Trigger Functions"}
 ---
+
 The `pg_freespacemap` module provides a means for examining the [free space map](https://www.postgresql.org/docs/current/storage-fsm.html "66.3. Free Space Map") (FSM). It provides a function called `pg_freespace`, or two overloaded functions, to be precise. The functions show the value recorded in the free space map for a given page, or for all pages in the relation.
 
 By default use is restricted to superusers and roles with privileges of the `pg_stat_scan_tables` role. Access may be granted to others using `GRANT`.
@@ -60,3 +63,4 @@ postgres=# SELECT \* FROM pg\_freespace('foo', 7);
 --------------
          1216
 (1 row)
+

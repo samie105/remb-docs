@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:06:31.271Z"
 content_hash: "0abc5b091c6f1b0a587c37bc962776701e3e41a36fa13ce8a844a39620849503"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Client tools","→","Client tools","→\n      \n        Redis Insight","→","Redis Insight","→\n      \n        Manage streams and consumer groups in Redis Insight","→","Manage streams and consumer groups in Redis Insight"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Client tools","→","Client tools","→\n      \n        Redis Insight","→","Redis Insight","→\n      \n        Manage streams and consumer groups in Redis Insight","→","Manage streams and consumer groups in Redis Insight"]
+nav_prev: {"path": "redis/docs/latest/operate/oss_and_stack/install/archive/install-redis/install-redis-from-source/index.md", "title": "Install Redis from Source"}
+nav_next: {"path": "redis/docs/latest/develop/data-types/timeseries/use_cases/index.md", "title": "Use cases"}
 ---
+
 # Manage streams and consumer groups in Redis Insight
 
 Learn how to manage streams and consumer groups in Redis Insight
@@ -182,3 +185,4 @@ Use streams for auditing and processing events in banking, gaming, supply chain,
 *   [Introducing Redis Streams with Redis Insight, node.js, and Python](https://www.youtube.com/watch?v=q2UOkQmIo9Q) (video)
 
 ## On this page
+

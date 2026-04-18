@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:47:26.047Z"
 content_hash: "463dc2fbe27ac1b4040b08c896961a56787a7cb37cd112586420524c3f76ca47"
 menu_path: ["PostgreSQL: Documentation: 18: DROP TEXT SEARCH DICTIONARY"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/spi-spi-start-transaction.html/index.md", "title": "PostgreSQL: Documentation: 18: SPI_start_transaction"}
+nav_next: {"path": "postgres/docs/current/sql-prepare-transaction.html/index.md", "title": "PostgreSQL: Documentation: 18: PREPARE TRANSACTION"}
 ---
+
 DROP TEXT SEARCH DICTIONARY — remove a text search dictionary
 
 ## Synopsis
@@ -49,3 +52,4 @@ This command will not succeed if there are any existing text search configuratio
 ## Compatibility
 
 There is no `DROP TEXT SEARCH DICTIONARY` statement in the SQL standard.
+

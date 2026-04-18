@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:10:52.240Z"
 content_hash: "2de3425c0cb85613002f850d58cf220154f61ef4901a78887d542169bef95335"
 menu_path: ["Runtime - Deno documentation"]
 section_path: []
+nav_prev: {"path": "deno/deno/api/deno/permissions/index.md", "title": "Permissions - Deno documentation"}
+nav_next: {"path": "deno/deno/api/deno/subprocess/index.md", "title": "Subprocess - Deno documentation"}
 ---
+
 ### Functions [#](#Functions)
 
 f
@@ -221,3 +224,4 @@ Version information related to the current Deno CLI runtime environment.
 *   [deno](./././~/Deno.version#property_deno)
 *   [typescript](./././~/Deno.version#property_typescript)
 *   [v8](./././~/Deno.version#property_v8)
+

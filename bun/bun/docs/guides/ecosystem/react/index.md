@@ -9,12 +9,10 @@ last_crawled_at: "2026-04-18T16:45:46.563Z"
 content_hash: "05b5fbaed564016a81e411bc75cc4ec04911c43518f745448d4c5b1eddccb558"
 menu_path: ["Build a React app with Bun"]
 section_path: []
+nav_prev: {"path": "bun/bun/docs/guides/ecosystem/qwik/index.md", "title": "Build an app with Qwik and Bun"}
+nav_next: {"path": "bun/bun/docs/guides/ecosystem/prisma-postgres/index.md", "title": "Use Prisma Postgres with Bun"}
 ---
-Bun supports `.jsx` and `.tsx` files out of the box. React works with Bun. Create a new React app with `bun init --react`. This gives you a template with a React app and an API server together in one full-stack app.
 
-terminal
-
-```
 # Create a new React app
 bun init --react
 
@@ -58,3 +56,4 @@ File Tree
 ├── bunfig.toml         # Bun configuration
 └── bun.lock            # Lock file
 ```
+

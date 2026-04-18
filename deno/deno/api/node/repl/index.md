@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:39:46.462Z"
 content_hash: "16d127650d4ab5f40d166f332c2a99f956df233c7a1104a3c31cbba94463de62"
 menu_path: ["repl - Node documentation"]
 section_path: []
+nav_prev: {"path": "deno/deno/api/node/readline/promises/index.md", "title": "readline/promises - Node documentation"}
+nav_next: {"path": "deno/deno/api/node/sea/index.md", "title": "sea - Node documentation"}
 ---
+
 ### Usage in Deno
 
 ```typescript
@@ -149,3 +152,4 @@ v
 [writer](.././repl/~/writer "writer")
 
 This is the default "writer" value, if none is passed in the REPL options, and it can be overridden by custom print functions.
+

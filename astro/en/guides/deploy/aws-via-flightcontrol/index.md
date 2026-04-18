@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:36:17.344Z"
 content_hash: "3a4245945c3d965e3b97c6a1aeb7355d4b8fc3f9a0cf0218a66c8a089de0b4d9"
 menu_path: ["Deploy your Astro Site to AWS with Flightcontrol"]
 section_path: []
+nav_prev: {"path": "astro/en/guides/deploy/aws/index.md", "title": "Deploy your Astro Site to AWS"}
+nav_next: {"path": "astro/en/guides/deploy/aws-via-sst/index.md", "title": "Deploy your Astro Site to AWS with SST"}
 ---
+
 # Deploy your Astro Site to AWS with Flightcontrol
 
 You can deploy an Astro site using [Flightcontrol](https://www.flightcontrol.dev?ref=astro), which provides fully-automated deployments to your AWS account.
@@ -173,3 +176,4 @@ To deploy with SSR support, make sure you first set up the [`@astrojs/node`](/en
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

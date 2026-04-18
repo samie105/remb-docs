@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:59:25.010Z"
 content_hash: "505591aac7c9b12c3fd1af3d635807bbabb4522736d7fb4155bdc9977f7cd65a"
 menu_path: ["Debugging"]
 section_path: []
+nav_prev: {"path": "bun/bun/docs/runtime/csrf/index.md", "title": "CSRF Protection"}
+nav_next: {"path": "bun/bun/docs/runtime/environment-variables/index.md", "title": "Environment Variables"}
 ---
+
 Bun speaks the [WebKit Inspector Protocol](https://github.com/oven-sh/bun/blob/main/packages/bun-inspector-protocol/src/protocol/jsc/index.d.ts), so you can debug your code with an interactive debugger. For demonstration purposes, consider the following web server.
 
 ## Debugging JavaScript and TypeScript
@@ -94,7 +97,7 @@ Here’s a cheat sheet explaining the functions of the control flow buttons.
 
 ### Visual Studio Code Debugger
 
-Experimental support for debugging Bun scripts is available in Visual Studio Code. To use it, you’ll need to install the [Bun VSCode extension](https://bun.com/docs/guides/runtime/vscode-debugger).
+Experimental support for debugging Bun scripts is available in Visual Studio Code. To use it, you’ll need to install the [Bun VSCode extension](bun/bun/docs/guides/runtime/vscode-debugger/index.md).
 
 * * *
 
@@ -371,3 +374,4 @@ Error: here!
     at moduleEvaluation (native)
     at <anonymous> (native)
 ```
+

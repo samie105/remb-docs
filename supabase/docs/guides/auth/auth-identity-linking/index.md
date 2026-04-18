@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:36:46.850Z"
 content_hash: "98bb8aca2042651e3eb4bdbda63fa8aa8a865f3da9c0771967661a74181bbdc5"
 menu_path: ["Auth","Auth","Flows (How-tos)","Flows (How-tos)","Identity Linking","Identity Linking"]
 section_path: ["Auth","Auth","Flows (How-tos)","Flows (How-tos)","Identity Linking","Identity Linking"]
+nav_prev: {"path": "supabase/docs/guides/auth/auth-hooks/index.md", "title": "Auth Hooks"}
+nav_next: {"path": "supabase/docs/guides/auth/auth-web3/index.md", "title": "Sign in with Web3"}
 ---
+
 # 
 
 Identity Linking
@@ -70,3 +73,4 @@ Call the `updateUser({ password: 'validpassword'})` to add email with password a
 ### Can you sign up with email if already using OAuth?[#](#can-you-sign-up-with-email-if-already-using-oauth)
 
 If you try to create an email account after previously signing up with OAuth using the same email, you'll receive an obfuscated user response with no verification email sent. This prevents user enumeration attacks.
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:52:20.459Z"
 content_hash: "292b4ae1de93e32e9e9a120f53a136c8ce29362530857397b4708803cc90c939"
 menu_path: ["Get Started with Drizzle and Bun:SQLite"]
 section_path: []
+nav_prev: {"path": "drizzle/docs/get-started/bun-sqlite-existing/index.md", "title": "Get Started with Drizzle and Bun:SQLite in existing project"}
+nav_next: {"path": "drizzle/docs/get-started/cockroach-existing/index.md", "title": "Get Started with Drizzle and CockroachDB in existing project"}
 ---
+
 ## Get Started with Drizzle and Bun:SQLite
 
 This guide assumes familiarity with:
@@ -131,7 +134,7 @@ export const usersTable = sqliteTable("users_table", {
 
 #### Step 5 - Setup Drizzle config file[](#step-5---setup-drizzle-config-file)
 
-**Drizzle config** - a configuration file that is used by [Drizzle Kit](https://orm.drizzle.team/docs/kit-overview) and contains all the information about your database connection, migration folder and schema files.
+**Drizzle config** - a configuration file that is used by [Drizzle Kit](drizzle/docs/kit-overview/index.md) and contains all the information about your database connection, migration folder and schema files.
 
 Create a `drizzle.config.ts` file in the root of your project and add the following content:
 
@@ -157,7 +160,7 @@ You can directly apply changes to your database using the `drizzle-kit push` com
 npx drizzle-kit push
 ```
 
-Read more about the push command in [documentation](https://orm.drizzle.team/docs/drizzle-kit-push).
+Read more about the push command in [documentation](drizzle/docs/drizzle-kit-push/index.md).
 
 Tips
 
@@ -175,7 +178,7 @@ Apply migrations:
 npx drizzle-kit migrate
 ```
 
-Read more about migration process in [documentation](https://orm.drizzle.team/docs/kit-overview).
+Read more about migration process in [documentation](drizzle/docs/kit-overview/index.md).
 
 #### Step 7 - Seed and Query the database[](#step-7---seed-and-query-the-database)
 
@@ -232,3 +235,4 @@ To run a script with `bun`, use the following command:
 ```
 bun src/index.ts
 ```
+

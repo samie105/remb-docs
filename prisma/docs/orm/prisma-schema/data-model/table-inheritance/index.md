@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:52:31.311Z"
 content_hash: "f225fdeed1a9596cbe167dc549198eb77745916ad34bb5ecf38fcac3f52dc53e"
 menu_path: ["Table inheritance"]
 section_path: []
+nav_prev: {"path": "prisma/docs/orm/prisma-schema/data-model/unsupported-database-features/index.md", "title": "Unsupported database features (Prisma Schema)"}
+nav_next: {"path": "prisma/docs/orm/prisma-schema/data-model/views/index.md", "title": "Views"}
 ---
+
 Learn about the use cases and patterns for table inheritance in Prisma ORM that enable usage of union types or polymorphic structures in your application.
 
 Table inheritance is a software design pattern that allows the modeling of hierarchical relationships between entities. Using table inheritance on the database level can also enable the use of union types in your JavaScript/TypeScript application or share a set of common properties across multiple models.
@@ -181,7 +184,7 @@ const videos: Video[] = videoActivities.map(activityToVideo);
 
 #### [Using Prisma Client extension for a more convenient API](#using-prisma-client-extension-for-a-more-convenient-api)
 
-You can use [Prisma Client extensions](https://www.prisma.io/docs/orm/prisma-client/client-extensions) to create a more convenient API for the table structures in your database.
+You can use [Prisma Client extensions](prisma/docs/orm/prisma-client/client-extensions/index.md) to create a more convenient API for the table structures in your database.
 
 ### [Data model](#data-model-1)
 
@@ -311,7 +314,7 @@ const videos: Video[] = videoWithActivities.map(toVideo);
 
 #### [Using Prisma Client extension for a more convenient API](#using-prisma-client-extension-for-a-more-convenient-api-1)
 
-You can use [Prisma Client extensions](https://www.prisma.io/docs/orm/prisma-client/client-extensions) to create a more convenient API for the table structures in your database.
+You can use [Prisma Client extensions](prisma/docs/orm/prisma-client/client-extensions/index.md) to create a more convenient API for the table structures in your database.
 
 *   **Data model**: The data model may feel more clean with MTI. With STI, you may end up with very wide rows and lots of columns that have `NULL` values in them.
 *   **Performance**: MTI may come with a performance cost because you need to join the parent and child tables to access _all_ properties relevant for a model.
@@ -319,3 +322,4 @@ You can use [Prisma Client extensions](https://www.prisma.io/docs/orm/prisma-cli
 *   **IDs / Primary keys**: With MTI, records have two IDs (one on the parent and another on the child table) that may not match. You need to consider this in the business logic of your application.
 
 While Prisma ORM doesn't natively support union types or polymorphism at the moment, you can check out [Zenstack](https://github.com/zenstackhq/zenstack) which is adding an extra layer of features to the Prisma schema. Read their [blog post about polymorphism in Prisma ORM](https://zenstack.dev/blog/polymorphism) to learn more.
+

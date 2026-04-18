@@ -9,15 +9,9 @@ last_crawled_at: "2026-04-18T16:55:25.475Z"
 content_hash: "a45db0006c8b5873d976c62005e0f063852c0aeafde8e466aa47e3860642e7af"
 menu_path: ["font-stretch"]
 section_path: []
+nav_prev: {"path": "tailwind/docs/font-weight/index.md", "title": "font-weight"}
+nav_next: {"path": "tailwind/docs/font-variant-numeric/index.md", "title": "font-variant-numeric"}
 ---
-[](/)
-
-[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
-
-1.  Typography
-2.  font-stretch
-
-Typography
 
 # font-stretch
 
@@ -173,3 +167,4 @@ Short, tactical video lessons from the creator of Tailwind CSS, delivered direct
 [Get the free course](/build-uis-that-dont-suck)
 
 Copyright © 2026 Tailwind Labs Inc.·[Trademark Policy](/brand)
+

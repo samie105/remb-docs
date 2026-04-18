@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:33:01.257Z"
 content_hash: "899cfb2fd2b95f660530e9aadda8d15a2812b581d13e29cd85bd5595d65b310e"
 menu_path: ["Environment API for Frameworks ​"]
 section_path: []
+nav_prev: {"path": "vite/guide/api-environment-plugins/index.md", "title": "Environment API for Plugins \u200b"}
+nav_next: {"path": "vite/guide/api-environment-runtimes/index.md", "title": "Environment API for Runtimes \u200b"}
 ---
+
 ## Environment API for Frameworks [​](#environment-api-for-frameworks)
 
 Release Candidate
@@ -61,7 +64,7 @@ WARNING
 
 The `runner` is evaluated lazily only when it's accessed for the first time. Beware that Vite enables source map support when the `runner` is created by calling `process.setSourceMapsEnabled` or by overriding `Error.prepareStackTrace` if it's not available.
 
-Given a Vite server configured in middleware mode as described by the [SSR setup guide](https://vite.dev/guide/ssr#setting-up-the-dev-server), let's implement the SSR middleware using the environment API. Remember that it doesn't have to be called `ssr`, so we'll name it `server` in this example. Error handling is omitted.
+Given a Vite server configured in middleware mode as described by the [SSR setup guide](vite/guide/ssr/index.md#setting-up-the-dev-server), let's implement the SSR middleware using the environment API. Remember that it doesn't have to be called `ssr`, so we'll name it `server` in this example. Error handling is omitted.
 
 js
 
@@ -350,4 +353,5 @@ Plugins can also define a `buildApp` hook. Order `'pre'` and `null` are executed
 
 ## Environment Agnostic Code [​](#environment-agnostic-code)
 
-Most of the time, the current `environment` instance will be available as part of the context of the code being run so the need to access them through `server.environments` should be rare. For example, inside plugin hooks the environment is exposed as part of the `PluginContext`, so it can be accessed using `this.environment`. See [Environment API for Plugins](https://vite.dev/guide/api-environment-plugins) to learn about how to build environment aware plugins.
+Most of the time, the current `environment` instance will be available as part of the context of the code being run so the need to access them through `server.environments` should be rare. For example, inside plugin hooks the environment is exposed as part of the `PluginContext`, so it can be accessed using `this.environment`. See [Environment API for Plugins](vite/guide/api-environment-plugins/index.md) to learn about how to build environment aware plugins.
+

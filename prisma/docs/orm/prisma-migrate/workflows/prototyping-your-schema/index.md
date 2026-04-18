@@ -9,12 +9,15 @@ last_crawled_at: "2026-04-18T16:51:11.153Z"
 content_hash: "ffa2d6126f13c791e406552def3d7de5a6dcec560fed6c0b0ebfc4d4a206c708"
 menu_path: ["Prototyping your schema"]
 section_path: []
+nav_prev: {"path": "prisma/docs/orm/prisma-migrate/workflows/patching-and-hotfixing/index.md", "title": "Patching & hotfixing"}
+nav_next: {"path": "prisma/docs/orm/prisma-migrate/workflows/seeding/index.md", "title": "Seeding"}
 ---
+
 Workflows
 
 Rapidly prototype your Prisma schema using db push without migrations
 
-The Prisma CLI has a dedicated command for prototyping schemas: [`db push`](https://www.prisma.io/docs/orm/reference/prisma-cli-reference#db-push)
+The Prisma CLI has a dedicated command for prototyping schemas: [`db push`](prisma/docs/orm/reference/prisma-cli-reference/index.md#db-push)
 
 `db push` uses the same engine as Prisma Migrate to synchronize your Prisma schema with your database schema. The `db push` command:
 
@@ -30,16 +33,16 @@ The Prisma CLI has a dedicated command for prototyping schemas: [`db push`](http
 *   You are prioritizing reaching a **desired end-state** and not the changes or steps executed to reach that end-state (there is no way to preview changes made by `db push`)
 *   You do not need to control how schema changes impact data. There is no way to orchestrate schema and data migrations—if `db push` anticipates that changes will result in data loss, you can either accept data loss with the `--accept-data-loss` option or stop the process. There is no way to customize the changes.
 
-See [Schema prototyping with `db push`](https://www.prisma.io/docs/orm/prisma-migrate/workflows/prototyping-your-schema) for an example of how to use `db push` in this way.
+See [Schema prototyping with `db push`](prisma/docs/orm/prisma-migrate/workflows/prototyping-your-schema/index.md) for an example of how to use `db push` in this way.
 
 `db push` is **not recommended** if:
 
 *   You want to replicate your schema changes in other environments without losing data. You can use `db push` for prototyping, but you should use migrations to commit the schema changes and apply these in your other environments.
-*   You want fine-grained control over how the schema changes are executed - for example, [renaming a column instead of dropping it and creating a new one](https://www.prisma.io/docs/orm/prisma-migrate/workflows/customizing-migrations#example-rename-a-field).
+*   You want fine-grained control over how the schema changes are executed - for example, [renaming a column instead of dropping it and creating a new one](prisma/docs/orm/prisma-migrate/workflows/customizing-migrations/index.md#example-rename-a-field).
 *   You want to keep track of changes made to the database schema over time. `db push` does not create any artifacts that allow you to keep track of these changes.
 *   You want the schema changes to be reversible. You can use `db push` again to revert to the original state, but this might result in data loss.
 
-Yes, you can [use `db push` and Prisma Migrate together in your development workflow](https://www.prisma.io/docs/orm/prisma-migrate/workflows/prototyping-your-schema) . For example, you can:
+Yes, you can [use `db push` and Prisma Migrate together in your development workflow](prisma/docs/orm/prisma-migrate/workflows/prototyping-your-schema/index.md) . For example, you can:
 
 *   Use `db push` to prototype a schema at the start of a project and initialize a migration history when you are happy with the first draft
 *   Use `db push` to prototype a change to an existing schema, then run `prisma migrate dev` to generate a migration from your changes (you will be asked to reset)
@@ -233,3 +236,4 @@ The following scenario demonstrates how to use `db push` to prototype a change t
 At this point, the final result of your prototyping is preserved in a migration, and can be pushed to other environments (testing, production, or other members of your team).
 
 [Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/prisma-migrate/workflows/prototyping-your-schema.mdx)
+

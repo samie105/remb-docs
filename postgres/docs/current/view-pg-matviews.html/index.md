@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:48:30.088Z"
 content_hash: "8b30e59c4e7ee1cd13dbe13b5bd34f1f22b1233202467a82225ca3c19e74a928"
 menu_path: ["PostgreSQL: Documentation: 18: 53.14. pg_matviews"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/locking-indexes.html/index.md", "title": "PostgreSQL: Documentation: 18: 13.7.\u00a0Locking and Indexes"}
+nav_next: {"path": "postgres/docs/current/functions-info.html/index.md", "title": "PostgreSQL: Documentation: 18: 9.27.\u00a0System Information Functions and Operators"}
 ---
+
 The view `pg_matviews` provides access to useful information about each materialized view in the database.
 
 **Table 53.14. `pg_matviews` Columns**
@@ -45,3 +48,4 @@ True if materialized view is currently populated
 `definition` `text`
 
 Materialized view definition (a reconstructed [SELECT](https://www.postgresql.org/docs/current/sql-select.html "SELECT") query)
+

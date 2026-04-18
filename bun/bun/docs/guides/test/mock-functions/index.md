@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:54:51.728Z"
 content_hash: "8a3eb708b87c46b6ddbcc465bfa5e91baf92cf7eab2111de7183fd217a341bb9"
 menu_path: ["Mock functions in `bun test`"]
 section_path: []
+nav_prev: {"path": "bun/bun/docs/guides/test/mock-clock/index.md", "title": "Set the system time in Bun's test runner"}
+nav_next: {"path": "bun/bun/docs/guides/test/rerun-each/index.md", "title": "Re-run tests multiple times with the Bun test runner"}
 ---
+
 Create mocks with the `mock` function from `bun:test`.
 
 ![https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z\_zHyy/icons/typescript.svg?fit=max&auto=format&n=JUhaF6Mf68z\_zHyy&q=85&s=7ac549adaea8d5487d8fbd58cc3ea35b](https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z_zHyy/icons/typescript.svg?fit=max&auto=format&n=JUhaF6Mf68z_zHyy&q=85&s=7ac549adaea8d5487d8fbd58cc3ea35b)test.ts
@@ -81,4 +84,5 @@ test("random", async () => {
 
 * * *
 
-See [Docs > Test Runner > Mocks](https://bun.com/docs/test/mocks) for complete documentation on mocking with the Bun test runner.
+See [Docs > Test Runner > Mocks](bun/bun/docs/test/mocks/index.md) for complete documentation on mocking with the Bun test runner.
+

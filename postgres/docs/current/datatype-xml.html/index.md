@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:54:26.247Z"
 content_hash: "c73af89a29ca501db039ce197df6f5204a026bb5e44bb9416eae99c8f43ca7e3"
 menu_path: ["PostgreSQL: Documentation: 18: 8.13. XML Type"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/sql-analyze.html/index.md", "title": "PostgreSQL: Documentation: 18: ANALYZE"}
+nav_next: {"path": "postgres/docs/current/hash-index.html/index.md", "title": "PostgreSQL: Documentation: 18: 65.6.\u00a0Hash Indexes"}
 ---
+
 The `xml` data type can be used to store XML data. Its advantage over storing XML data in a `text` field is that it checks the input values for well-formedness, and there are support functions to perform type-safe operations on it; see [Section 9.15](https://www.postgresql.org/docs/current/functions-xml.html "9.15. XML Functions"). Use of this data type requires the installation to have been built with `configure --with-libxml`.
 
 The `xml` type can store well-formed “documents”, as defined by the XML standard, as well as “content” fragments, which are defined by reference to the more permissive [“document node”](https://www.w3.org/TR/2010/REC-xpath-datamodel-20101214/#DocumentNode) of the XQuery and XPath data model. Roughly, this means that content fragments can have more than one top-level element or character node. The expression ``_`xmlvalue`_ IS DOCUMENT`` can be used to evaluate whether a particular `xml` value is a full document or only a content fragment.
@@ -73,3 +76,4 @@ The `xml` data type is unusual in that it does not provide any comparison operat
 Since there are no comparison operators for the `xml` data type, it is not possible to create an index directly on a column of this type. If speedy searches in XML data are desired, possible workarounds include casting the expression to a character string type and indexing that, or indexing an XPath expression. Of course, the actual query would have to be adjusted to search by the indexed expression.
 
 The text-search functionality in PostgreSQL can also be used to speed up full-document searches of XML data. The necessary preprocessing support is, however, not yet available in the PostgreSQL distribution.
+

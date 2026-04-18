@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:37:18.657Z"
 content_hash: "2599a83a038cd7d61f43419e3d06cde8f773de6d3951b609048194be6b8f6436"
 menu_path: ["Benchmarking"]
 section_path: []
+nav_prev: {"path": "fastify/docs/latest/Guides/Testing/index.md", "title": "Testing"}
+nav_next: {"path": "fastify/docs/latest/Guides/Contributing/index.md", "title": "Contributing To Fastify"}
 ---
+
 Version: latest (v5.8.x)
 
 ## Benchmarking[​](#benchmarking "Direct link to Benchmarking")
@@ -68,3 +71,4 @@ npm run bench
 ```
 branchcmp --rounds 2 -s "node ./node_modules/concurrently -k -s first \"node ./examples/asyncawait.js\" \"node ./node_modules/autocannon -c 100 -d 5 -p 10 localhost:3000/\""
 ```
+

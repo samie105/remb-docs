@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:50:53.171Z"
 content_hash: "b94fdf83ff350dd1eb821ab623d4aa314ed41c9efbe3e476dd866a0a004f6b43"
 menu_path: ["Self-Hosting","Self-Hosting","How-to Guides","How-to Guides","Configure S3 Storage","Configure S3 Storage"]
 section_path: ["Self-Hosting","Self-Hosting","How-to Guides","How-to Guides","Configure S3 Storage","Configure S3 Storage"]
+nav_prev: {"path": "supabase/docs/guides/self-hosting/self-hosted-proxy-https/index.md", "title": "Configure Reverse Proxy and HTTPS"}
+nav_next: {"path": "supabase/docs/guides/self-hosting/self-hosted-saml-sso/index.md", "title": "Configure SAML SSO"}
 ---
+
 # 
 
 Configure S3 Storage
@@ -135,3 +138,4 @@ If uploads from a browser fail (CORS or mixed content errors), check that `API_E
 
 *   [Storage repository `.env.sample`](https://github.com/supabase/storage/blob/master/.env.sample)
 *   [S3 Authentication](/docs/guides/storage/s3/authentication)
+

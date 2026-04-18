@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:53:04.580Z"
 content_hash: "20bca7cd8442fcbb85b659526e383b1e49d0eccd0f798c081ca03159d46bc1fc"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis data types","→","Redis data types","→\n      \n        Time series","→","Time series","→\n      \n        Configuration Parameters","→","Configuration Parameters"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis data types","→","Redis data types","→\n      \n        Time series","→","Time series","→\n      \n        Configuration Parameters","→","Configuration Parameters"]
+nav_prev: {"path": "redis/docs/latest/operate/kubernetes/release-notes/7-8-2-releases/7-8-2-6-nov24/index.md", "title": "Redis Enterprise for Kubernetes 7.8.2-6 (Nov 2024) release notes"}
+nav_next: {"path": "redis/docs/latest/operate/oss_and_stack/stack-with-enterprise/deprecated-features/triggers-and-functions/configuration/index.md", "title": "Configuration"}
 ---
+
 # Configuration Parameters
 
 Redis time series support multiple configuration parameters.
@@ -532,3 +535,4 @@ redis> redis-server --loadmodule ./redistimeseries.so ts-num-threads 3
 Prior to version 8.0, when using time series in a cluster, you had to set the `OSS_GLOBAL_PASSWORD` configuration parameter on all cluster nodes. As of version 8.0, Redis no longer uses this parameter and ignores it if present. Redis now uses a new shared secret mechanism to send internal commands between cluster nodes.
 
 ## On this page
+

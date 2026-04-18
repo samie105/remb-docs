@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:37:46.448Z"
 content_hash: "4ea00d5f01e60f666985e61a98bccb65fc2d31839908fde6f2d9816d0799a0d6"
 menu_path: ["Deploy your Astro Site to Seenode"]
 section_path: []
+nav_prev: {"path": "astro/en/guides/deploy/render/index.md", "title": "Deploy your Astro Site to Render"}
+nav_next: {"path": "astro/en/guides/deploy/sevalla/index.md", "title": "Deploy your Astro Site to Sevalla"}
 ---
+
 # Deploy your Astro Site to Seenode
 
 [Seenode](https://seenode.com) is a deployment platform for building and deploying web applications with databases, built-in observability, and auto-scaling. Astro sites can be deployed to Seenode using server-side rendering (SSR).
@@ -216,3 +219,4 @@ You can deploy to Seenode through the web interface by connecting your Git repos
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:16:47.431Z"
 content_hash: "9dc5e72edf3e741abf9c15dc0a0917e889e72a3bc28ccaff6a92bc4859e3c214"
 menu_path: ["scroll-padding"]
 section_path: []
+nav_prev: {"path": "tailwind/docs/scroll-margin/index.md", "title": "scroll-margin"}
+nav_next: {"path": "tailwind/docs/scroll-snap-align/index.md", "title": "scroll-snap-align"}
 ---
+
 Utilities for controlling an element's scroll offset within a snap container.
 
 Class
@@ -120,7 +123,7 @@ Prefix a `scroll-padding` utility with a breakpoint variant like `md:` to only a
 <div class="scroll-p-8 md:scroll-p-0 ...">  <!-- ... --></div>
 ```
 
-Learn more about using variants in the [variants documentation](https://tailwindcss.com/docs/hover-focus-and-other-states).
+Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).
 
 ## [Customizing your theme](#customizing-your-theme)
 
@@ -130,4 +133,5 @@ The `scroll-p-<number>`,`scroll-px-<number>`,`scroll-py-<number>`,`scroll-ps-<nu
 @theme {  --spacing: 1px; }
 ```
 
-Learn more about customizing the spacing scale in the [theme variable documentation](https://tailwindcss.com/docs/theme).
+Learn more about customizing the spacing scale in the [theme variable documentation](tailwind/docs/theme/index.md).
+

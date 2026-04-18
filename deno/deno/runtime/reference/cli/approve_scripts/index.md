@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:50:48.077Z"
 content_hash: "7c1726c0e7f564437c52813c29365ec6ada1b6e4fd3d80e9fd7bfcc0fa73ddd2"
 menu_path: ["deno approve-scripts"]
 section_path: []
+nav_prev: {"path": "deno/deno/runtime/reference/cli/add/index.md", "title": "deno add"}
+nav_next: {"path": "deno/deno/runtime/reference/cli/audit/index.md", "title": "deno audit"}
 ---
+
 On this page
 
 *   [Basic usage](#basic-usage)
@@ -49,3 +52,4 @@ Approve npm lifecycle scripts for installed dependencies.
 `--lockfile-only`
 
 Install only updating the lockfile.
+

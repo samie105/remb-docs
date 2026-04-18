@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:50:48.663Z"
 content_hash: "e2d675d6387c8c175598a19f7680119523281c6aebfb9f20495b2a37c56ee9a7"
 menu_path: ["Drizzle <> SingleStore"]
 section_path: []
+nav_prev: {"path": "drizzle/docs/get-started-cockroach/index.md", "title": "Drizzle <> PostgreSQL"}
+nav_next: {"path": "drizzle/docs/connect-planetscale-postgres/index.md", "title": "Drizzle <> PlanetScale Postgres"}
 ---
+
 To use Drizzle with a SingleStore database, you should use the `mysql2` driver
 
 Drizzle ORM natively supports `mysql2` with `drizzle-orm/singlestore` package.
@@ -122,3 +125,4 @@ Currently, the SingleStore dialect has a set of limitations and features that do
 *   There may be more limitations because SingleStore is not 100% compatible with MySQL.
 
 #### What’s next?[](#whats-next)
+

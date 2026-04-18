@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:57:15.850Z"
 content_hash: "2065e5bd874ce094f99993d175af575700e77f461cb869b4c6a0654602319dc6"
 menu_path: ["Deployment & Branching","Deployment & Branching","Branching","Branching","Working with branches","Working with branches"]
 section_path: ["Deployment & Branching","Deployment & Branching","Branching","Branching","Working with branches","Working with branches"]
+nav_prev: {"path": "supabase/docs/guides/deployment/branching/troubleshooting/index.md", "title": "Troubleshooting"}
+nav_next: {"path": "supabase/docs/guides/functions/examples/amazon-bedrock-image-generator/index.md", "title": "Generate Images with Amazon Bedrock"}
 ---
+
 # 
 
 Working with branches
@@ -155,3 +158,4 @@ Branches are completely isolated from each other. Changes made in one branch don
 *   Learn about [branch configuration](/docs/guides/deployment/branching/configuration)
 *   Explore [integrations](/docs/guides/deployment/branching/integrations)
 *   Review [troubleshooting guide](/docs/guides/deployment/branching/troubleshooting)
+

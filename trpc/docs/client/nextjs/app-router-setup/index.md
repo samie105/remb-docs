@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:45:39.115Z"
 content_hash: "b949a55c41b5b9f49cd4d0da9a4e49b9790213bce68f5b5ca1706664d83df076"
 menu_path: ["Set up with Next.js App Router"]
 section_path: []
+nav_prev: {"path": "trpc/docs/client/nextjs/index.md", "title": "Next.js Integration"}
+nav_next: {"path": "trpc/docs/client/nextjs/pages-router/aborting-procedure-calls/index.md", "title": "Aborting Procedure Calls"}
 ---
+
 note
 
 We recommend reading TanStack React Query's [Advanced Server Rendering](https://tanstack.com/query/latest/docs/framework/react/guides/advanced-ssr) docs to understand the different types of server rendering and footguns to avoid.
@@ -80,7 +83,7 @@ bash
 
 ### 2\. Create a tRPC router[​](#2-create-a-trpc-router "Direct link to 2. Create a tRPC router")
 
-Initialize your tRPC backend in `trpc/init.ts` using the `initTRPC` function, and create your first router. We're going to make a simple "hello world" router and procedure here — for deeper information on creating your tRPC API, refer to the [Quickstart guide](https://trpc.io/docs/quickstart) and [Backend usage docs](https://trpc.io/docs/server/overview).
+Initialize your tRPC backend in `trpc/init.ts` using the `initTRPC` function, and create your first router. We're going to make a simple "hello world" router and procedure here — for deeper information on creating your tRPC API, refer to the [Quickstart guide](trpc/docs/quickstart/index.md) and [Backend usage docs](trpc/docs/server/overview/index.md).
 
 trpc/init.ts
 
@@ -180,7 +183,7 @@ ts
 
 ### 3\. Create the API route handler[​](#3-create-the-api-route-handler "Direct link to 3. Create the API route handler")
 
-With the App Router, use the [fetch adapter](https://trpc.io/docs/server/adapters/fetch) to handle tRPC requests. Create a route handler that exports both `GET` and `POST`:
+With the App Router, use the [fetch adapter](trpc/docs/server/adapters/fetch/index.md) to handle tRPC requests. Create a route handler that exports both `GET` and `POST`:
 
 app/api/trpc/\[trpc\]/route.ts
 
@@ -210,7 +213,7 @@ ts
 
 note
 
-App Router uses the [fetch adapter](https://trpc.io/docs/server/adapters/fetch) (via `fetchRequestHandler`) rather than the Next.js-specific adapter used by the Pages Router. This is because App Router route handlers are based on the Web standard `Request` and `Response` objects.
+App Router uses the [fetch adapter](trpc/docs/server/adapters/fetch/index.md) (via `fetchRequestHandler`) rather than the Next.js-specific adapter used by the Pages Router. This is because App Router route handlers are based on the Web standard `Request` and `Response` objects.
 
 ### 4\. Create a Query Client factory[​](#4-create-a-query-client-factory "Direct link to 4. Create a Query Client factory")
 
@@ -270,7 +273,7 @@ We're setting a few default options here:
 
 *   `staleTime`: With SSR, we usually want to set some default staleTime above 0 to avoid refetching immediately on the client.
 *   `shouldDehydrateQuery`: This is a function that determines whether a query should be dehydrated or not. Since the RSC transport protocol supports hydrating promises over the network, we extend the `defaultShouldDehydrateQuery` function to also include queries that are still pending. This will allow us to start prefetching in a server component high up the tree, then consuming that promise in a client component further down.
-*   `serializeData` and `deserializeData` (optional): If you set up a [data transformer](https://trpc.io/docs/server/data-transformers) in the previous step, set this option to make sure the data is serialized correctly when hydrating the query client over the server-client boundary.
+*   `serializeData` and `deserializeData` (optional): If you set up a [data transformer](trpc/docs/server/data-transformers/index.md) in the previous step, set this option to make sure the data is serialized correctly when hydrating the query client over the server-client boundary.
 
 ### 5\. Create a tRPC client for Client Components[​](#5-create-a-trpc-client-for-client-components "Direct link to 5. Create a tRPC client for Client Components")
 
@@ -752,7 +755,8 @@ tsx
 
 ## Next steps[​](#next-steps "Direct link to Next steps")
 
-*   Learn about [Server Actions](https://trpc.io/docs/client/nextjs/server-actions) for defining tRPC-powered server actions
-*   Learn about [queries](https://trpc.io/docs/client/react/useQuery) and [mutations](https://trpc.io/docs/client/react/useMutation) in client components
-*   Explore [server-side calls](https://trpc.io/docs/server/server-side-calls) for more advanced server-side patterns
+*   Learn about [Server Actions](trpc/docs/client/nextjs/server-actions/index.md) for defining tRPC-powered server actions
+*   Learn about [queries](trpc/docs/client/react/useQuery/index.md) and [mutations](trpc/docs/client/react/useMutation/index.md) in client components
+*   Explore [server-side calls](trpc/docs/server/server-side-calls/index.md) for more advanced server-side patterns
 *   Check out the [SSE Chat example](https://github.com/trpc/trpc/tree/main/examples/next-sse-chat) for a full App Router example with subscriptions
+

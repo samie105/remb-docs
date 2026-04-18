@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:38:08.442Z"
 content_hash: "ae8d093fa049bffad87b29a6a7112e3d11f17a9dd251662c730af08a38a420b5"
 menu_path: ["Auth","Auth","Configuration","Configuration","User Management","User Management"]
 section_path: ["Auth","Auth","Configuration","Configuration","User Management","User Management"]
+nav_prev: {"path": "supabase/docs/guides/auth/jwts/index.md", "title": "JSON Web Token (JWT)"}
+nav_next: {"path": "supabase/docs/guides/auth/oauth-server/index.md", "title": "OAuth 2.1 Server"}
 ---
+
 # 
 
 User Management
@@ -73,3 +76,4 @@ As Supabase is built on top of Postgres, you can query the `auth.users` and `aut
 ```
 
 You can then export the results as CSV.
+

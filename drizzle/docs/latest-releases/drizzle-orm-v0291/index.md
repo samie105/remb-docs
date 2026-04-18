@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:12:23.325Z"
 content_hash: "8feb274270a5c1cca621897effc367072ebca105894365ec6f2addc7bb9f611e"
 menu_path: ["Drizzle ORM - DrizzleORM v0.29.1 release"]
 section_path: []
+nav_prev: {"path": "drizzle/docs/latest-releases/drizzle-orm-v0292/index.md", "title": "Drizzle ORM - DrizzleORM v0.29.2 release"}
+nav_next: {"path": "drizzle/docs/latest-releases/drizzle-orm-v0293/index.md", "title": "Drizzle ORM - DrizzleORM v0.29.3 release"}
 ---
+
 DrizzleORM v0.29.1 release
 
 Nov 29, 2023
@@ -123,13 +126,13 @@ await db.select({
 }).from(users);
 ```
 
-To find more information check docs: [aggregation helpers](https://orm.drizzle.team/docs/select#aggregations-helpers)
+To find more information check docs: [aggregation helpers](drizzle/docs/select/index.md#aggregations-helpers)
 
 ## New Packages
 
 ### Drizzle ESLint Plugin
 
-For cases where it’s impossible to perform type checks for specific scenarios, or where it’s possible but error messages would be challenging to understand, we’ve decided to create an ESLint package with recommended rules. This package aims to assist developers in handling crucial scenarios during development. For more information you can check [docs](https://orm.drizzle.team/docs/eslint-plugin).
+For cases where it’s impossible to perform type checks for specific scenarios, or where it’s possible but error messages would be challenging to understand, we’ve decided to create an ESLint package with recommended rules. This package aims to assist developers in handling crucial scenarios during development. For more information you can check [docs](drizzle/docs/eslint-plugin/index.md).
 
 ### Install
 
@@ -348,3 +351,4 @@ const db = drizzle(...)
 // ---> Will be triggered by ESLint Rule
 db.update()
 ```
+

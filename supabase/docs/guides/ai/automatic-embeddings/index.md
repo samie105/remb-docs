@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:33:18.928Z"
 content_hash: "175eb48f10c6d695004028795df0f64eccf43b99a0b95b10d2625dea3fc2f9c7"
 menu_path: ["AI & Vectors","AI & Vectors","Learn","Learn","Automatic embeddings","Automatic embeddings"]
 section_path: ["AI & Vectors","AI & Vectors","Learn","Learn","Automatic embeddings","Automatic embeddings"]
+nav_prev: {"path": "supabase/docs/guides/ai/choosing-compute-addon/index.md", "title": "Choosing your Compute Add-on"}
+nav_next: {"path": "supabase/docs/guides/ai/engineering-for-scale/index.md", "title": "Engineering for Scale"}
 ---
+
 # 
 
 Automatic embeddings
@@ -352,3 +355,4 @@ This system can be customized to work with any content and embedding generation 
 *   [Semantic search](/docs/guides/ai/semantic-search)
 *   [Vector indexes](/docs/guides/ai/vector-indexes)
 *   [Supabase Edge Functions](/docs/guides/functions)
+

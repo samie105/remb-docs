@@ -9,15 +9,9 @@ last_crawled_at: "2026-04-18T17:12:32.937Z"
 content_hash: "b3d83d0673c06faea2a23cfc304318181f7fbbeff69b86cd184b3fc03ec698db"
 menu_path: ["transition-delay"]
 section_path: []
+nav_prev: {"path": "tailwind/docs/transition-timing-function/index.md", "title": "transition-timing-function"}
+nav_next: {"path": "tailwind/docs/animation/index.md", "title": "animation"}
 ---
-[](/)
-
-[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
-
-1.  Transitions & Animation
-2.  transition-delay
-
-Transitions & Animation
 
 # transition-delay
 
@@ -115,3 +109,4 @@ Make your ideas look awesome, without relying on a designer.
 ](https://www.refactoringui.com/?ref=sidebar)
 
 Copyright © 2026 Tailwind Labs Inc.·[Trademark Policy](/brand)
+

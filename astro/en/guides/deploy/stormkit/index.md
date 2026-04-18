@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:37:47.017Z"
 content_hash: "eee82bcec07a29444492e194dade1b05390b87d124d1268945d080177cffb6b1"
 menu_path: ["Deploy your Astro Site to Stormkit"]
 section_path: []
+nav_prev: {"path": "astro/en/guides/deploy/sevalla/index.md", "title": "Deploy your Astro Site to Sevalla"}
+nav_next: {"path": "astro/en/guides/deploy/surge/index.md", "title": "Deploy your Astro Site to Surge"}
 ---
+
 # Deploy your Astro Site to Stormkit
 
 You can deploy your Astro project to [Stormkit](https://stormkit.io/), a deployment platform for static websites, single-page applications (SPAs), and serverless functions.
@@ -163,3 +166,4 @@ Read more in the [Stormkit Documentation](https://stormkit.io/docs).
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

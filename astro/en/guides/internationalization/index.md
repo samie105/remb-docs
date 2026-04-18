@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:40:14.534Z"
 content_hash: "a766ce168fd8edbd3a402ab638e2d62c48bfd481e168d4b90640e76c8b0fe2e9"
 menu_path: ["Internationalization (i18n) Routing"]
 section_path: []
+nav_prev: {"path": "astro/en/guides/middleware/index.md", "title": "Middleware"}
+nav_next: {"path": "astro/en/guides/prefetch/index.md", "title": "Prefetch"}
 ---
+
 # Internationalization (i18n) Routing
 
 Astro’s internationalization (i18n) features allow you to adapt your project for an international audience. This routing API helps you generate, use, and verify the URLs that your multi-language site produces.
@@ -311,3 +314,4 @@ These combine the browser’s `Accept-Language` header, and your `locales` (stri
 In order to successfully match your visitors’ preferences, provide your `codes` using the same pattern [used by the browser](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Accept-Language#syntax).
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

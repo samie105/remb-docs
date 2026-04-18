@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:14:13.326Z"
 content_hash: "8fc06c39b33cae3a9eda9b6718f4bc209e556cfa27ddbf32774c4158e2f688ec"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        FusionCache for C#/.NET","→","FusionCache for C#/.NET"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        FusionCache for C#/.NET","→","FusionCache for C#/.NET"]
+nav_prev: {"path": "redis/docs/latest/develop/ai/search-and-query/administration/extensions/index.md", "title": "Extend existing search and query features"}
+nav_next: {"path": "redis/docs/latest/develop/clients/rust/index.md", "title": "redis-rs guide (Rust)"}
 ---
+
 # FusionCache for C#/.NET
 
 Easy to use, fast and robust hybrid cache with advanced resiliency features for C#/.NET
@@ -117,3 +120,4 @@ To learn more about FusionCache and its advanced features:
 *   [Redis Backplane Package](https://www.nuget.org/packages/ZiggyCreatures.FusionCache.Backplane.StackExchangeRedis)
 
 ## On this page
+

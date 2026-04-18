@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:51:58.832Z"
 content_hash: "76dbaad88b21cb030f425ffbfe0f8917a59f4800da2795982dbee09e56675dd3"
 menu_path: ["Watch a directory for changes"]
 section_path: []
+nav_prev: {"path": "bun/bun/docs/guides/read-file/uint8array/index.md", "title": "Read a file to a Uint8Array"}
+nav_next: {"path": "bun/bun/docs/guides/runtime/build-time-constants/index.md", "title": "Build-time constants with --define"}
 ---
+
 Bun implements the `node:fs` module, including the `fs.watch` function for listening for file system changes. This code block listens for changes to files in the current directory. By default this operation is _shallow_, meaning that changes to files in subdirectories will not be detected.
 
 ```
@@ -67,4 +70,5 @@ process.on("SIGINT", () => {
 
 * * *
 
-Refer to [API > Binary data > Typed arrays](https://bun.com/docs/runtime/binary-data#typedarray) for more information on working with `Uint8Array` and other binary data formats in Bun.
+Refer to [API > Binary data > Typed arrays](bun/bun/docs/runtime/binary-data/index.md#typedarray) for more information on working with `Uint8Array` and other binary data formats in Bun.
+

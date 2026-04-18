@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:10:45.619Z"
 content_hash: "1011162dfe8e8eb8f2db1e70c59c59c8fa4a99d4c40c4666a3456efd1a6c8f39"
 menu_path: ["border-collapse"]
 section_path: []
+nav_prev: {"path": "tailwind/docs/backdrop-filter-sepia/index.md", "title": "backdrop-filter: sepia()"}
+nav_next: {"path": "tailwind/docs/border-spacing/index.md", "title": "border-spacing"}
 ---
+
 Class
 
 Styles
@@ -82,4 +85,5 @@ Prefix a `border-collapse` utility with a breakpoint variant like `md:` to only 
 <table class="border-collapse md:border-separate ...">  <!-- ... --></table>
 ```
 
-Learn more about using variants in the [variants documentation](https://tailwindcss.com/docs/hover-focus-and-other-states).
+Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).
+

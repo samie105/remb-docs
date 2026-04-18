@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:39:42.347Z"
 content_hash: "df4e51687fadb8417e14b7a0285618d45b395664b286fa558b4dbcc3dc6b5d6a"
 menu_path: ["WebAssembly (w/ WASI) ​"]
 section_path: []
+nav_prev: {"path": "hono/docs/getting-started/ali-function-compute/index.md", "title": "Alibaba Cloud Function Compute \u200b"}
+nav_next: {"path": "hono/docs/getting-started/service-worker/index.md", "title": "Service Worker \u200b"}
 ---
+
 [WebAssembly](https://webassembly.org/) is a secure, sandboxed, portable runtime that runs inside and outside web browsers.
 
 In practice:
@@ -366,3 +369,4 @@ To reach out to the WebAssembly community with questions, comments, contribution
 *   [Bytecode Alliance Zulip](https://bytecodealliance.zulipchat.com/) (consider posting in the [#jco channel](https://bytecodealliance.zulipchat.com/#narrow/channel/409526-jco))
 *   [Jco repository](https://github.com/bytecodealliance/jco)
 *   [componentize-js repository](https://github.com/bytecodealliance/componentize-js)
+

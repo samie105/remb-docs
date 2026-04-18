@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:32:23.013Z"
 content_hash: "269995f68a20b50b1c970ae10c0f7827e9e8e53d4c3f744d5ae9ef67cd726779"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Client tools","→","Client tools","→\n      \n        Redis Insight","→","Redis Insight","→\n      \n        Redis Insight release notes","→","Redis Insight release notes","→\n      \n        Redis Insight v3.0.2, January 2026","→","Redis Insight v3.0.2, January 2026"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Client tools","→","Client tools","→\n      \n        Redis Insight","→","Redis Insight","→\n      \n        Redis Insight release notes","→","Redis Insight release notes","→\n      \n        Redis Insight v3.0.2, January 2026","→","Redis Insight v3.0.2, January 2026"]
+nav_prev: {"path": "redis/docs/latest/develop/tools/insight/release-notes/v.3.0.3/index.md", "title": "Redis Insight v3.0.3, February 2026"}
+nav_next: {"path": "redis/docs/latest/develop/tools/insight/release-notes/v.3.0.0/index.md", "title": "Redis Insight v3.0.0, November 2025"}
 ---
+
 # Redis Insight v3.0.2, January 2026
 
 Redis Insight v3.0.2
@@ -55,3 +58,4 @@ MacOS Apple silicon
 aAKmBHK+pBGm2yRSQmdzx2Eno9N237kPi/HmqQ/X+Iv2iWa3zFdw8QDfL28m13+ROslJDbzpHSfZue8fOew5Xg==
 
 ## On this page
+

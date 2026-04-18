@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:38:22.897Z"
 content_hash: "760dfc4fbbcca5ef802bce332384233664e502271b753c79b6124d0bf22bccf6"
 menu_path: ["Auth","Auth","Flows (How-tos)","Flows (How-tos)","Mobile Deep Linking","Mobile Deep Linking"]
 section_path: ["Auth","Auth","Flows (How-tos)","Flows (How-tos)","Mobile Deep Linking","Mobile Deep Linking"]
+nav_prev: {"path": "supabase/docs/guides/auth/password-security/index.md", "title": "Password security"}
+nav_next: {"path": "supabase/docs/guides/auth/passwords/index.md", "title": "Password-based Auth"}
 ---
+
 # 
 
 Native Mobile Deep Linking
@@ -44,3 +47,4 @@ Finally, implement the OAuth and linking handlers. See the [supabase-js referenc
 ```
 
 For the best user experience it is recommended to use universal links which require a more elaborate setup. You can find the detailed setup instructions in the [Expo docs](https://docs.expo.dev/guides/deep-linking/).
+

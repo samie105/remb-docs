@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:36:20.535Z"
 content_hash: "718bc3c554e5db97edf450f980d1b924c1b5ed79e4bdcede0adf4b947604f5c5"
 menu_path: ["PostgreSQL: Documentation: 18: 29.8. Restrictions"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/sql-dropdomain.html/index.md", "title": "PostgreSQL: Documentation: 18: DROP DOMAIN"}
+nav_next: {"path": "postgres/docs/current/runtime-config-resource.html/index.md", "title": "PostgreSQL: Documentation: 18: 19.4.\u00a0Resource Consumption"}
 ---
+
 February 26, 2026: [PostgreSQL 18.3, 17.9, 16.13, 15.17, and 14.22 Released!](/about/news/postgresql-183-179-1613-1517-and-1422-released-3246/)
 
 [Documentation](/docs/ "Documentation") → [PostgreSQL 18](/docs/18/index.html)
@@ -42,3 +45,4 @@ Logical replication currently has the following restrictions or missing function
 ## Submit correction
 
 If you see anything in the documentation that is not correct, does not match your experience with the particular feature or requires further clarification, please use [this form](/account/comments/new/18/logical-replication-restrictions.html/) to report a documentation issue.
+

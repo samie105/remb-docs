@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:33:32.939Z"
 content_hash: "85bd8628f68cf575b39237eb97f815b1616237d7a1039e8e7022b1bd96e7e205"
 menu_path: ["buffer - Node documentation"]
 section_path: []
+nav_prev: {"path": "deno/deno/api/node/async_hooks/index.md", "title": "async_hooks - Node documentation"}
+nav_next: {"path": "deno/deno/api/node/child_process/index.md", "title": "child_process - Node documentation"}
 ---
+
 ### Usage in Deno
 
 ```typescript
@@ -315,3 +318,4 @@ v
 No documentation available
 
 *   [prototype](.././buffer/~/SlowBuffer#property_prototype)
+

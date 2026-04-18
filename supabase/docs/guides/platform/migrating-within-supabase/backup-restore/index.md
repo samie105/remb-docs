@@ -9,16 +9,9 @@ last_crawled_at: "2026-04-18T17:00:50.597Z"
 content_hash: "17b4194313ceb2e7ef1fef4ff216220ccf68ac3fc81972125f857e459a37825a"
 menu_path: ["Platform","Platform","More","More","More","Migrating within Supabase","Migrating within Supabase","Backup and restore using CLI","Backup and restore using CLI"]
 section_path: ["Platform","Platform","More","More","More","Migrating within Supabase","Migrating within Supabase","Backup and restore using CLI","Backup and restore using CLI"]
+nav_prev: {"path": "supabase/docs/guides/platform/read-replicas/getting-started/index.md", "title": "Getting started with Read Replicas"}
+nav_next: {"path": "supabase/docs/guides/platform/sso/azure/index.md", "title": "Set Up SSO with Azure AD"}
 ---
-# 
-
-Backup and Restore using the CLI
-
-## 
-
-Learn how to backup and restore projects using the Supabase CLI
-
-* * *
 
 # Migrating the database
 
@@ -335,3 +328,4 @@ Get the [secret keys](/dashboard/project/_/settings/api-keys) or [service\_role 
 ## Resources[#](#resources)
 
 *   [Connecting with PSQL](/docs/guides/database/psql)
+

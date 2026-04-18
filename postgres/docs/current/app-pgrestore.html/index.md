@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:42:54.281Z"
 content_hash: "036cdbf1f579ffcd17c790a3e9d4a5af99dd8fb4a3bfab52ccab641777d6883b"
 menu_path: ["PostgreSQL: Documentation: 18: pg_restore"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/bloom.html/index.md", "title": "PostgreSQL: Documentation: 18: F.6.\u00a0bloom \u2014 bloom filter index access method"}
+nav_next: {"path": "postgres/docs/current/release-18-1.html/index.md", "title": "PostgreSQL: Documentation: 18: E.3.\u00a0Release 18.1"}
 ---
+
 pg\_restore accepts the following command line arguments.
 
 _`filename`_
@@ -192,7 +195,7 @@ Presently, the commands emitted for `--disable-triggers` must be done as superus
 
 `--enable-row-security`
 
-This option is relevant only when restoring the contents of a table which has row security. By default, pg\_restore will set [row\_security](https://www.postgresql.org/docs/current/runtime-config-client.html#GUC-ROW-SECURITY) to off, to ensure that all data is restored in to the table. If the user does not have sufficient privileges to bypass row security, then an error is thrown. This parameter instructs pg\_restore to set [row\_security](https://www.postgresql.org/docs/current/runtime-config-client.html#GUC-ROW-SECURITY) to on instead, allowing the user to attempt to restore the contents of the table with row security enabled. This might still fail if the user does not have the right to insert the rows from the dump into the table.
+This option is relevant only when restoring the contents of a table which has row security. By default, pg\_restore will set [row\_security](postgres/docs/current/runtime-config-client.html/index.md#GUC-ROW-SECURITY) to off, to ensure that all data is restored in to the table. If the user does not have sufficient privileges to bypass row security, then an error is thrown. This parameter instructs pg\_restore to set [row\_security](postgres/docs/current/runtime-config-client.html/index.md#GUC-ROW-SECURITY) to on instead, allowing the user to attempt to restore the contents of the table with row security enabled. This might still fail if the user does not have the right to insert the rows from the dump into the table.
 
 Note that this option currently also requires the dump be in `INSERT` format, as `COPY FROM` does not support row security.
 
@@ -340,3 +343,4 @@ This option is never essential, since pg\_restore will automatically prompt for 
 ``--role=_`rolename`_``
 
 Specifies a role name to be used to perform the restore. This option causes pg\_restore to issue a `SET ROLE` _`rolename`_ command after connecting to the database. It is useful when the authenticated user (specified by `-U`) lacks privileges needed by pg\_restore, but can switch to a role with the required rights. Some installations have a policy against logging in directly as a superuser, and use of this option allows restores to be performed without violating the policy.
+

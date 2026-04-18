@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:15:14.422Z"
 content_hash: "4538de369291fc7d1e1c101be14fbeb9f722e16e61079a98366f86fc20edbbdf"
 menu_path: ["Wasm - Web documentation"]
 section_path: []
+nav_prev: {"path": "deno/deno/api/web/url/index.md", "title": "URL - Web documentation"}
+nav_next: {"path": "deno/deno/api/web/websockets/index.md", "title": "WebSockets - Web documentation"}
 ---
+
 ### Classes [#](#Classes)
 
 c
@@ -225,3 +228,4 @@ T
 [WebAssembly.ValueType](./././~/WebAssembly.ValueType "WebAssembly.ValueType")
 
 No documentation available
+

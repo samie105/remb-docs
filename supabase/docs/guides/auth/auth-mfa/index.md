@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:37:17.767Z"
 content_hash: "1f73563d505b6d5b7eae7d249f74be5edd3b87539c80af06e83fb1114d9757cb"
 menu_path: ["Auth","Auth","More","More","More","Multi-Factor Authentication","Multi-Factor Authentication","Overview","Overview"]
 section_path: ["Auth","Auth","More","More","More","Multi-Factor Authentication","Multi-Factor Authentication","Overview","Overview"]
+nav_prev: {"path": "supabase/docs/guides/auth/auth-smtp/index.md", "title": "Send emails with custom SMTP"}
+nav_next: {"path": "supabase/docs/guides/auth/enterprise-sso/index.md", "title": "Enterprise Single Sign-On"}
 ---
+
 # 
 
 Multi-Factor Authentication
@@ -169,3 +172,4 @@ If your application uses the Supabase Database, Storage or Edge Functions, just 
 3.  **Use the `https://<project-ref>.supabase.co/rest/v1/auth/factors` REST endpoint to identify if the user has enrolled any MFA factors.** Only `verified` factors should be acted upon.
 
 ## Frequently asked questions[#](#frequently-asked-questions)
+

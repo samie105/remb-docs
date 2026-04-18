@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:33:40.500Z"
 content_hash: "ae361ce9f8398d0e8e57057a2cc80d077feecad8a8c15fa5822389eed444a529"
 menu_path: ["getQueryKey"]
 section_path: []
+nav_prev: {"path": "trpc/docs/v10/client/react/aborting-procedure-calls/index.md", "title": "Aborting Procedure Calls"}
+nav_next: {"path": "trpc/docs/v10/client/react/infer-types/index.md", "title": "Inferring Types"}
 ---
+
 Version: 10.x
 
 We provide a getQueryKey helper that accepts a `router` or `procedure` so that you can easily provide the native function the correct query key.
@@ -85,3 +88,4 @@ tsx
   `// ...`
 
 `}`
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:44:35.356Z"
 content_hash: "7b57d55e882d1fb46e31c46c637f153053fec0fcbe680e90f0dc131303f165d3"
 menu_path: ["Expected image options, not an ESM-imported image."]
 section_path: []
+nav_prev: {"path": "astro/en/reference/errors/failed-to-fetch-remote-image-dimensions/index.md", "title": "Failed to retrieve remote image dimensions"}
+nav_next: {"path": "astro/en/reference/errors/failed-to-find-page-map-ssr/index.md", "title": "Astro couldn't find the correct page to render"}
 ---
+
 # Expected image options, not an ESM-imported image.
 
 > **ExpectedNotESMImage**: An ESM-imported image cannot be passed directly to `getImage()`. Instead, pass an object with the image in the `src` property.
@@ -29,3 +32,4 @@ import { getImage } from "astro:assets";import myImage from "../assets/my_image.
 *   [Images](/en/guides/images/)
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

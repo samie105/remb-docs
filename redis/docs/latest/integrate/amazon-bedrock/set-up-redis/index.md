@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:45:23.991Z"
 content_hash: "47e45c07c7bd79b4a4891aa861a57158e1627456f9eb550cdc0405aa88073bf4"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Amazon Bedrock","→","Amazon Bedrock","→\n      \n        Set up Redis for Bedrock","→","Set up Redis for Bedrock"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Amazon Bedrock","→","Amazon Bedrock","→\n      \n        Set up Redis for Bedrock","→","Set up Redis for Bedrock"]
+nav_prev: {"path": "redis/docs/latest/develop/ai/search-and-query/administration/overview/index.md", "title": "Technical overview"}
+nav_next: {"path": "redis/docs/latest/operate/rc/databases/version-management/upgrade-version/index.md", "title": "Upgrade Redis database version"}
 ---
+
 # Set up Redis for Bedrock
 
 Shows how to set up your Redis database for Amazon Bedrock.
@@ -273,3 +276,4 @@ Replace the following fields:
 After your Redis database is set up, you can use it to [create a knowledge base](/docs/latest/integrate/amazon-bedrock/create-knowledge-base/) in Amazon Bedrock.
 
 ## On this page
+

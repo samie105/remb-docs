@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:54:09.836Z"
 content_hash: "7af2cb16ea9595aa2165ded32354c768380258f99d1fde6aed297d72194b4243"
 menu_path: ["Auth","Auth","More","More","More","Social Login (OAuth)","Social Login (OAuth)","Apple","Apple"]
 section_path: ["Auth","Auth","More","More","More","Social Login (OAuth)","Social Login (OAuth)","Apple","Apple"]
+nav_prev: {"path": "supabase/docs/guides/auth/sessions/pkce-flow/index.md", "title": "PKCE flow"}
+nav_next: {"path": "supabase/docs/guides/auth/social-login/auth-azure/index.md", "title": "Login with Azure (Microsoft)"}
 ---
+
 # 
 
 Login with Apple
@@ -168,3 +171,4 @@ To use Sign in with Apple JS you need to configure these options:
 4.  Register the Services ID you created to your project's [Apple provider configuration in the Supabase dashboard](/dashboard/project/_/auth/providers) under _Client IDs_.
 
 If you're using Sign in with Apple JS you do not need to configure the OAuth settings.
+

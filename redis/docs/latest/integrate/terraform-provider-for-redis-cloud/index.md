@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:00:36.894Z"
 content_hash: "9523e16f681926fc2f618d3002094b579f311ba238b66cc59d8408a02fef8147"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Terraform provider for Redis Cloud","→","Terraform provider for Redis Cloud"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Terraform provider for Redis Cloud","→","Terraform provider for Redis Cloud"]
+nav_prev: {"path": "redis/docs/latest/operate/oss_and_stack/install/install-stack/snap/index.md", "title": "Install Redis Open Source on Linux"}
+nav_next: {"path": "redis/docs/latest/develop/data-types/json/use_cases/index.md", "title": "Use cases"}
 ---
+
 # Terraform provider for Redis Cloud
 
 [Terraform](https://developer.hashicorp.com/terraform) is an open source automation tool developed by Hashicorp that allows you to easily provision infrastructure as code.
@@ -76,3 +79,4 @@ It also allows you to create and manage the following resources:
 *   [Terraform configuration syntax](https://developer.hashicorp.com/terraform/language/syntax/configuration)
 
 ## On this page
+

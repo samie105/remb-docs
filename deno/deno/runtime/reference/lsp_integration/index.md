@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:59:01.641Z"
 content_hash: "703c30c7d4e955d9eb49feb18874930a581934ace8dd5dc86ac3cb15dc7d6f05"
 menu_path: ["Language Server Integration"]
 section_path: []
+nav_prev: {"path": "deno/deno/runtime/reference/migration_guide/index.md", "title": "Deno 1.x to 2.x Migration Guide"}
+nav_next: {"path": "deno/deno/runtime/reference/docker/index.md", "title": "Deno and Docker"}
 ---
+
 On this page
 
 *   [Structure](#structure)
@@ -463,3 +466,4 @@ interface TestRunCancelParams {
   id: number;
 }
 ```
+

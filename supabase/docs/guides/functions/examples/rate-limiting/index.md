@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:57:40.133Z"
 content_hash: "97b31857073e075aa53542e18e9297e1122e861cc4846d6cb46cf3da1836fb83"
 menu_path: ["Edge Functions","Edge Functions","Examples","Examples","Rate-limiting with Redis","Rate-limiting with Redis"]
 section_path: ["Edge Functions","Edge Functions","Examples","Examples","Rate-limiting with Redis","Rate-limiting with Redis"]
+nav_prev: {"path": "supabase/docs/guides/functions/examples/push-notifications/index.md", "title": "Sending Push Notifications"}
+nav_next: {"path": "supabase/docs/guides/functions/examples/semantic-search/index.md", "title": "Semantic Search"}
 ---
+
 # 
 
 Rate Limiting Edge Functions
@@ -21,3 +24,4 @@ Rate Limiting Edge Functions
 [Upstash](https://upstash.com/) provides an HTTP/REST based Redis client which is ideal for serverless use-cases and therefore works well with Supabase Edge Functions.
 
 Find the code on [GitHub](https://github.com/supabase/supabase/tree/master/examples/edge-functions/supabase/functions/upstash-redis-ratelimit).
+

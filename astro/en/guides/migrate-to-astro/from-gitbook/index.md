@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:40:47.990Z"
 content_hash: "640d91a50a366739315dc8b34d25d443fc75bb35ffbfdb9c6333de1a4bd45515"
 menu_path: ["Migrating from GitBook"]
 section_path: []
+nav_prev: {"path": "astro/en/guides/migrate-to-astro/from-gatsby/index.md", "title": "Migrating from Gatsby"}
+nav_next: {"path": "astro/en/guides/migrate-to-astro/from-gridsome/index.md", "title": "Migrating from Gridsome"}
 ---
+
 # Migrating from GitBook
 
 [GitBook](https://gitbook.com) is a web-based platform for creating and publishing documentation and books in a collaborative manner, with version control integration and customizable features.
@@ -130,3 +133,4 @@ Note that although you now have your content migrated to your Astro project, it 
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

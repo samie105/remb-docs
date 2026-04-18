@@ -9,8 +9,11 @@ last_crawled_at: "2026-04-18T16:47:11.235Z"
 content_hash: "3698404c76435318dfc509578412d7715e78d99a0c8169bc4d1e61efdc8a634a"
 menu_path: ["drizzle-kit studio"]
 section_path: []
+nav_prev: {"path": "drizzle/docs/drizzle-kit-up/index.md", "title": "drizzle-kit up"}
+nav_next: {"path": "drizzle/docs/kit-custom-migrations/index.md", "title": "Migrations with Drizzle Kit"}
 ---
-`drizzle-kit studio` command spins up a server for [Drizzle Studio](https://orm.drizzle.team/drizzle-studio/overview) hosted on [local.drizzle.studio](https://local.drizzle.studio/). It requires you to specify database connection credentials via [drizzle.config.ts](https://orm.drizzle.team/docs/drizzle-config-file) config file.
+
+`drizzle-kit studio` command spins up a server for [Drizzle Studio](https://orm.drizzle.team/drizzle-studio/overview) hosted on [local.drizzle.studio](https://local.drizzle.studio/). It requires you to specify database connection credentials via [drizzle.config.ts](drizzle/docs/drizzle-config-file/index.md) config file.
 
 By default it will start a Drizzle Studio server on `127.0.0.1:4983`
 
@@ -138,3 +141,4 @@ If you want to deploy Drizzle Studio to your VPS - we have an alpha version of D
 No. Drizzle ORM and Drizzle Kit are fully open sourced, while Studio is not.
 
 Drizzle Studio for local development is free to use forever to enrich Drizzle ecosystem, open sourcing one would’ve break our ability to provide B2B offerings and monetise it, unfortunately.
+

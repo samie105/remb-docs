@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:51:13.791Z"
 content_hash: "90f2b0e949dca87d9363dc13df24ec90eee618d1bac717fc7497627abba79f79"
 menu_path: ["PostgreSQL: Documentation: 18: 29.2. Subscription"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/functions-xml.html/index.md", "title": "PostgreSQL: Documentation: 18: 9.15.\u00a0XML Functions"}
+nav_next: {"path": "postgres/docs/current/event-log-registration.html/index.md", "title": "PostgreSQL: Documentation: 18: 18.12.\u00a0Registering Event Log on Windows"}
 ---
+
 A _subscription_ is the downstream side of logical replication. The node where a subscription is defined is referred to as the _subscriber_. A subscription defines the connection to another database and set of publications (one or more) to which it wants to subscribe.
 
 The subscriber database behaves in the same way as any other PostgreSQL instance and can be used as a publisher for other databases by defining its own publications.
@@ -30,7 +33,7 @@ The schema definitions are not replicated, and the published tables must exist o
 
 The tables are matched between the publisher and the subscriber using the fully qualified table name. Replication to differently-named tables on the subscriber is not supported.
 
-Columns of a table are also matched by name. The order of columns in the subscriber table does not need to match that of the publisher. The data types of the columns do not need to match, as long as the text representation of the data can be converted to the target type. For example, you can replicate from a column of type `integer` to a column of type `bigint`. The target table can also have additional columns not provided by the published table. Any such columns will be filled with the default value as specified in the definition of the target table. However, logical replication in binary format is more restrictive. See the [`binary`](https://www.postgresql.org/docs/current/sql-createsubscription.html#SQL-CREATESUBSCRIPTION-PARAMS-WITH-BINARY) option of `CREATE SUBSCRIPTION` for details.
+Columns of a table are also matched by name. The order of columns in the subscriber table does not need to match that of the publisher. The data types of the columns do not need to match, as long as the text representation of the data can be converted to the target type. For example, you can replicate from a column of type `integer` to a column of type `bigint`. The target table can also have additional columns not provided by the published table. Any such columns will be filled with the default value as specified in the definition of the target table. However, logical replication in binary format is more restrictive. See the [`binary`](postgres/docs/current/sql-createsubscription.html/index.md#SQL-CREATESUBSCRIPTION-PARAMS-WITH-BINARY) option of `CREATE SUBSCRIPTION` for details.
 
 ### 29.2.1. Replication Slot Management [#](#LOGICAL-REPLICATION-SUBSCRIPTION-SLOT)
 
@@ -69,7 +72,7 @@ Insert data to the tables at the publisher side.
 /\* pub # \*/ INSERT INTO t2 VALUES (1, 'A'), (2, 'B'), (3, 'C');
 /\* pub # \*/ INSERT INTO t3 VALUES (1, 'i'), (2, 'ii'), (3, 'iii');
 
-Create publications for the tables. The publications `pub2` and `pub3a` disallow some [`publish`](https://www.postgresql.org/docs/current/sql-createpublication.html#SQL-CREATEPUBLICATION-PARAMS-WITH-PUBLISH) operations. The publication `pub3b` has a row filter (see [Section 29.4](https://www.postgresql.org/docs/current/logical-replication-row-filter.html "29.4. Row Filters")).
+Create publications for the tables. The publications `pub2` and `pub3a` disallow some [`publish`](postgres/docs/current/sql-createpublication.html/index.md#SQL-CREATEPUBLICATION-PARAMS-WITH-PUBLISH) operations. The publication `pub3b` has a row filter (see [Section 29.4](https://www.postgresql.org/docs/current/logical-replication-row-filter.html "29.4. Row Filters")).
 
 /\* pub # \*/ CREATE PUBLICATION pub1 FOR TABLE t1;
 /\* pub # \*/ CREATE PUBLICATION pub2 FOR TABLE t2 WITH (publish = 'truncate');
@@ -220,7 +223,7 @@ Example 1: Where the subscription says `connect = false`
     /\* sub # \*/ ALTER SUBSCRIPTION sub1 REFRESH PUBLICATION;
     
 
-Example 2: Where the subscription says `connect = false`, but also specifies the [`slot_name`](https://www.postgresql.org/docs/current/sql-createsubscription.html#SQL-CREATESUBSCRIPTION-PARAMS-WITH-SLOT-NAME) option.
+Example 2: Where the subscription says `connect = false`, but also specifies the [`slot_name`](postgres/docs/current/sql-createsubscription.html/index.md#SQL-CREATESUBSCRIPTION-PARAMS-WITH-SLOT-NAME) option.
 
 *   Create the subscription.
     
@@ -270,3 +273,4 @@ Example 3: Where the subscription specifies `slot_name = NONE`
     
     /\* sub # \*/ ALTER SUBSCRIPTION sub1 ENABLE;
     /\* sub # \*/ ALTER SUBSCRIPTION sub1 REFRESH PUBLICATION;
+

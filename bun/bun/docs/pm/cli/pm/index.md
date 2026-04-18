@@ -9,29 +9,10 @@ last_crawled_at: "2026-04-18T16:57:35.147Z"
 content_hash: "010ee1a28535407ebcff667bc321bf329b95f557447668947ba49e0078487745"
 menu_path: ["bun pm"]
 section_path: []
+nav_prev: {"path": "bun/bun/docs/pm/cli/patch/index.md", "title": "bun patch"}
+nav_next: {"path": "bun/bun/docs/pm/cli/remove/index.md", "title": "bun remove"}
 ---
-The `bun pm` command group provides a set of utilities for working with Bun’s package manager.
 
-## pack
-
-To create a tarball of the current workspace:
-
-terminal
-
-```
-bun pm pack
-```
-
-This command creates a `.tgz` file containing all files that would be published to npm, following the same rules as `npm pack`.
-
-## Examples
-
-Basic usage:
-
-terminal
-
-```
-bun pm pack
 # Creates my-package-1.0.0.tgz in current directory
 ```
 
@@ -374,3 +355,4 @@ bun pm pkg delete scripts.test contributors[0]    # multiple/nested
 # fix
 bun pm pkg fix                                    # auto-fix common issues
 ```
+

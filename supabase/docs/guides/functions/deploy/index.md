@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:44:23.731Z"
 content_hash: "f2b978d5fd28def49293a96584cd87343a4d2f97cbe8ebb93186df02c14b16a4"
 menu_path: ["Edge Functions","Edge Functions","Development","Development","Deploy to Production","Deploy to Production"]
 section_path: ["Edge Functions","Edge Functions","Development","Development","Deploy to Production","Deploy to Production"]
+nav_prev: {"path": "supabase/docs/guides/functions/development-environment/index.md", "title": "Development Environment"}
+nav_next: {"path": "supabase/docs/guides/functions/development-tips/index.md", "title": "Development tips"}
 ---
+
 # 
 
 Deploy to Production
@@ -167,3 +170,4 @@ This example shows a GitHub Actions workflow that deploys all Edge Functions whe
 ```
 
 [View source](https://github.com/supabase/supabase/blob/e8df67d5d5291e05ea56596aee0f2b7fa152929b/examples/edge-functions/.github/workflows/deploy.yaml)
+

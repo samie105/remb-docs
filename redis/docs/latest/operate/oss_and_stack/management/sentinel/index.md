@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:58:44.015Z"
 content_hash: "9f762b4386f99b690cec5c7b67e04c7fac2785fdf6f780bb097d1d028ed46ae4"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Manage Redis","→","Manage Redis","→\n      \n        High availability with Redis Sentinel","→","High availability with Redis Sentinel"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Manage Redis","→","Manage Redis","→\n      \n        High availability with Redis Sentinel","→","High availability with Redis Sentinel"]
+nav_prev: {"path": "redis/docs/latest/operate/oss_and_stack/stack-with-enterprise/install/index.md", "title": "Install and upgrade modules"}
+nav_next: {"path": "redis/docs/latest/operate/redisinsight/install/install-on-aws/index.md", "title": "Install on AWS EC2"}
 ---
+
 # High availability with Redis Sentinel
 
 High availability for non-clustered Redis
@@ -1019,3 +1022,4 @@ Note that in some ways TILT mode could be replaced using the monotonic clock API
 **A note about the word slave used in this man page**: Starting with Redis 5, if not for backward compatibility, the Redis project no longer uses the word slave. Unfortunately in this command the word slave is part of the protocol, so we'll be able to remove such occurrences only when this API will be naturally deprecated.
 
 ## On this page
+

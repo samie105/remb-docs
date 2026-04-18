@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:41:47.355Z"
 content_hash: "8636f3c08364014c420283ed930e4bada0234b48443a98159044939a8fe5390e"
 menu_path: ["Database","Database","Working with your database (intermediate)","Working with your database (intermediate)","Partitioning your tables","Partitioning your tables"]
 section_path: ["Database","Database","Working with your database (intermediate)","Working with your database (intermediate)","Partitioning your tables","Partitioning your tables"]
+nav_prev: {"path": "supabase/docs/guides/database/overview/index.md", "title": "Database"}
+nav_next: {"path": "supabase/docs/guides/database/pgadmin/index.md", "title": "Connecting with pgAdmin"}
 ---
+
 # 
 
 Partitioning tables
@@ -121,3 +124,4 @@ In this example, the **`products`** table is partitioned into two partitions: `p
 ## Other tools[#](#other-tools)
 
 There are several other tools available for Postgres partitioning, most notably [pg\_partman](https://github.com/pgpartman/pg_partman). Native partitioning was introduced in Postgres 10 and is generally thought to have better performance.
+

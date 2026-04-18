@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:10:42.922Z"
 content_hash: "dea32ed46121894e62eb3ab6b688bc54d0053cb8ef7f43de825740a8f73b28df"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Insight","→","Redis Insight","→\n      \n        Subpath proxy","→","Subpath proxy"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Insight","→","Redis Insight","→\n      \n        Subpath proxy","→","Subpath proxy"]
+nav_prev: {"path": "redis/docs/latest/develop/use-cases/leaderboard/php/index.md", "title": "Redis leaderboard with PHP"}
+nav_next: {"path": "redis/docs/latest/integrate/railway-redis/index.md", "title": "Redis on Railway"}
 ---
+
 # Subpath proxy
 
 Redis Insight
@@ -101,3 +104,4 @@ server {
 [![RedisInsight after login](/docs/latest/images/ri/ri-reverse-proxy-post-login.png)](/docs/latest/images/ri/ri-reverse-proxy-post-login.png)
 
 ## On this page
+

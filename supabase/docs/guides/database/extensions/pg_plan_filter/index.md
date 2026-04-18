@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:55:45.209Z"
 content_hash: "3f926e9fcc966978c445e96a0bfd48fde3f2efa4d97fd495cde546f5ee16c4a9"
 menu_path: ["Database","Database","Extensions","Extensions","pg_plan_filter: Restrict Total Cost","pg_plan_filter: Restrict Total Cost"]
 section_path: ["Database","Database","Extensions","Extensions","pg_plan_filter: Restrict Total Cost","pg_plan_filter: Restrict Total Cost"]
+nav_prev: {"path": "supabase/docs/guides/database/extensions/pg_net/index.md", "title": "pg_net: Async Networking"}
+nav_next: {"path": "supabase/docs/guides/database/extensions/pg_partman/index.md", "title": "Postgres Extensions Overview"}
 ---
+
 # 
 
 pg\_plan\_filter: Restrict Total Cost
@@ -57,3 +60,4 @@ Now we can choose a `statement_cost_filter` value between the total cost for the
 ## Resources[#](#resources)
 
 *   Official [`pg_plan_filter` documentation](https://github.com/pgexperts/pg_plan_filter)
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:48:07.039Z"
 content_hash: "384901a16bf56d9ea0f34904c982ea06909d8b0591ed6e8beefbbbd324728211"
 menu_path: ["Proxy HTTP requests using fetch()"]
 section_path: []
+nav_prev: {"path": "bun/bun/docs/guides/http/hot/index.md", "title": "Hot reload an HTTP server"}
+nav_next: {"path": "bun/bun/docs/guides/http/server/index.md", "title": "Common HTTP server usage"}
 ---
+
 [Skip to main content](#content-area)
 
 [Bun home page![light logo](https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z_zHyy/logo/logo-with-wordmark-dark.svg?fit=max&auto=format&n=JUhaF6Mf68z_zHyy&q=85&s=3f55cd23822028e40658b192c927f3e4)![dark logo](https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z_zHyy/logo/logo-with-wordmark-light.svg?fit=max&auto=format&n=JUhaF6Mf68z_zHyy&q=85&s=8a0c5928d9dc3631f0d33e17c257e2ec)](/docs)
@@ -110,3 +113,4 @@ Stream a file as an HTTP Response
 Next
 
 ](/docs/guides/http/stream-file)
+

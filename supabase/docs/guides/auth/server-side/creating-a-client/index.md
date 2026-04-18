@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:53:51.965Z"
 content_hash: "e4fba4afedd1962c4075f465f9bdb8ab0186a4ca2c854d69841a6535a8077c13"
 menu_path: ["Auth","Auth","More","More","More","Server-Side Rendering","Server-Side Rendering","Creating a client","Creating a client"]
 section_path: ["Auth","Auth","More","More","More","Server-Side Rendering","Server-Side Rendering","Creating a client","Creating a client"]
+nav_prev: {"path": "supabase/docs/guides/auth/server-side/advanced-guide/index.md", "title": "Advanced guide"}
+nav_next: {"path": "supabase/docs/guides/auth/server-side/migrating-to-ssr-from-auth-helpers/index.md", "title": "Migrating to the SSR package from Auth Helpers"}
 ---
+
 # 
 
 Creating a Supabase client for SSR
@@ -135,3 +138,4 @@ See the [advanced Auth server-side rendering guide](/docs/guides/auth/server-sid
 *   Implement [Authentication using Email and Password](/docs/guides/auth/passwords)
 *   Implement [Authentication using OAuth](/docs/guides/auth/social-login)
 *   [Learn more about SSR](/docs/guides/auth/server-side/advanced-guide)
+

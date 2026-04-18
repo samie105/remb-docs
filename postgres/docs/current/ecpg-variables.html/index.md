@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:47:57.822Z"
 content_hash: "1add6fbd3d1b0e8dca1e57cc004aba7031858d7b4e10831702544da0161b6a13"
 menu_path: ["PostgreSQL: Documentation: 18: 34.4. Using Host Variables"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/catalog-pg-publication.html/index.md", "title": "PostgreSQL: Documentation: 18: 52.40.\u00a0pg_publication"}
+nav_next: {"path": "postgres/docs/current/app-postgres.html/index.md", "title": "PostgreSQL: Documentation: 18: postgres"}
 ---
+
 In [Section 34.3](https://www.postgresql.org/docs/current/ecpg-commands.html "34.3. Running SQL Commands") you saw how you can execute SQL statements from an embedded SQL program. Some of those statements only used fixed values and did not provide a way to insert user-supplied values into statements or have the program process the values returned by the query. Those kinds of statements are not really useful in real applications. This section explains in detail how you can pass data between your C program and the embedded SQL statements using a simple mechanism called _host variables_. In an embedded SQL program we consider the SQL statements to be _guests_ in the C program code which is the _host language_. Therefore the variables of the C program are called _host variables_.
 
 Another way to exchange values between PostgreSQL backends and ECPG applications is the use of SQL descriptors, described in [Section 34.7](https://www.postgresql.org/docs/current/ecpg-descriptors.html "34.7. Using Descriptor Areas").
@@ -343,7 +346,7 @@ The member `arr` hosts binary format data. It can also handle `'\0'` as part of 
 
 ### Note
 
-`bytea` variable can be used only when [bytea\_output](https://www.postgresql.org/docs/current/runtime-config-client.html#GUC-BYTEA-OUTPUT) is set to `hex`.
+`bytea` variable can be used only when [bytea\_output](postgres/docs/current/runtime-config-client.html/index.md#GUC-BYTEA-OUTPUT) is set to `hex`.
 
 #### 34.4.4.3. Host Variables with Nonprimitive Types [#](#ECPG-VARIABLES-NONPRIMITIVE-C)
 
@@ -744,3 +747,4 @@ The indicator variable `val_ind` will be zero if the value was not null, and it 
 The indicator has another function: if the indicator value is positive, it means that the value is not null, but it was truncated when it was stored in the host variable.
 
 If the argument `-r no_indicator` is passed to the preprocessor `ecpg`, it works in “no-indicator” mode. In no-indicator mode, if no indicator variable is specified, null values are signaled (on input and output) for character string types as empty string and for integer types as the lowest possible value for type (for example, `INT_MIN` for `int`).
+

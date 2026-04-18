@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:39:22.062Z"
 content_hash: "2f691b26e3230f9283acc3c78c1c05a67a6cb470efd2793e6139ee2b49c9cef5"
 menu_path: ["PostgreSQL: Documentation: 18: 11.3. Multicolumn Indexes"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/view-pg-publication-tables.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.18.\u00a0pg_publication_tables"}
+nav_next: {"path": "postgres/docs/current/functions-matching.html/index.md", "title": "PostgreSQL: Documentation: 18: 9.7.\u00a0Pattern Matching"}
 ---
+
 An index can be defined on more than one column of a table. For example, if you have a table of this form:
 
 CREATE TABLE test2 (
@@ -43,3 +46,4 @@ A multicolumn BRIN index can be used with query conditions that involve any subs
 Of course, each column must be used with operators appropriate to the index type; clauses that involve other operators will not be considered.
 
 Multicolumn indexes should be used sparingly. In most situations, an index on a single column is sufficient and saves space and time. Indexes with more than three columns are unlikely to be helpful unless the usage of the table is extremely stylized. See also [Section 11.5](https://www.postgresql.org/docs/current/indexes-bitmap-scans.html "11.5. Combining Multiple Indexes") and [Section 11.9](https://www.postgresql.org/docs/current/indexes-index-only-scans.html "11.9. Index-Only Scans and Covering Indexes") for some discussion of the merits of different index configurations.
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:33:13.970Z"
 content_hash: "e67a413195d4fb2e9560302f9bc4eea0cdd70e5a421529ded42d364f18f0c178"
 menu_path: ["ApostropheCMS & Astro"]
 section_path: []
+nav_prev: {"path": "astro/en/guides/cms/index.md", "title": "Use a CMS with Astro"}
+nav_next: {"path": "astro/en/guides/cms/builderio/index.md", "title": "Builder.io & Astro"}
 ---
+
 # ApostropheCMS & Astro
 
 [ApostropheCMS](https://apostrophecms.com/) is a content management system supporting on-page editing in Astro.
@@ -511,3 +514,4 @@ For the ApostropheCMS project, follow the instructions for your hosting type in 
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:38:01.450Z"
 content_hash: "b274d80d28ca63c0f169953cbb13aba2e4d6a0bd357c0cd0a72ff5d4cfaedd44"
 menu_path: ["PostgreSQL: Documentation: 18: pg_resetwal"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/ddl-priv.html/index.md", "title": "PostgreSQL: Documentation: 18: 5.8.\u00a0Privileges"}
+nav_next: {"path": "postgres/docs/current/tutorial-createdb.html/index.md", "title": "PostgreSQL: Documentation: 18: 1.3.\u00a0Creating a Database"}
 ---
+
 pg\_resetwal — reset the write-ahead log and other control information of a PostgreSQL database cluster
 
 ## Synopsis
@@ -149,3 +152,4 @@ Specifies whether to use color in diagnostic messages. Possible values are `alwa
 This command must not be used when the server is running. `pg_resetwal` will refuse to start up if it finds a server lock file in the data directory. If the server crashed then a lock file might have been left behind; in that case you can remove the lock file to allow `pg_resetwal` to run. But before you do so, make doubly certain that there is no server process still alive.
 
 `pg_resetwal` works only with servers of the same major version.
+

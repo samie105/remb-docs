@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:34:37.838Z"
 content_hash: "7da4ba9583dd056a8d0c5b8da3d743165c4584559e0130da80f84958dc0a1f1c"
 menu_path: ["PostgreSQL: Documentation: 18: DELETE"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/rangetypes.html/index.md", "title": "PostgreSQL: Documentation: 18: 8.17.\u00a0Range Types"}
+nav_next: {"path": "postgres/docs/current/error-message-reporting.html/index.md", "title": "PostgreSQL: Documentation: 18: 55.2.\u00a0Reporting Errors Within the Server"}
 ---
+
 DELETE — delete rows of a table
 
 ## Synopsis
@@ -121,7 +124,7 @@ Delete the row of `tasks` on which the cursor `c_tasks` is currently positioned:
 
 DELETE FROM tasks WHERE CURRENT OF c\_tasks;
 
-While there is no `LIMIT` clause for `DELETE`, it is possible to get a similar effect using the same method described in [the documentation of `UPDATE`](https://www.postgresql.org/docs/current/sql-update.html#UPDATE-LIMIT):
+While there is no `LIMIT` clause for `DELETE`, it is possible to get a similar effect using the same method described in [the documentation of `UPDATE`](postgres/docs/current/sql-update.html/index.md#UPDATE-LIMIT):
 
 WITH delete\_batch AS (
   SELECT l.ctid FROM user\_logs AS l
@@ -139,3 +142,4 @@ This use of `ctid` is only safe because the query is repeatedly run, avoiding th
 ## Compatibility
 
 This command conforms to the SQL standard, except that the `USING` and `RETURNING` clauses are PostgreSQL extensions, as is the ability to use `WITH` with `DELETE`.
+

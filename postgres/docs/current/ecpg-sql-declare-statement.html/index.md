@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:46:44.716Z"
 content_hash: "be2f56892576c537a8d3125aaedde496d75c3520e3f6039c7e8b449d7ab930bd"
 menu_path: ["PostgreSQL: Documentation: 18: DECLARE STATEMENT"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/sql-dropeventtrigger.html/index.md", "title": "PostgreSQL: Documentation: 18: DROP EVENT TRIGGER"}
+nav_next: {"path": "postgres/docs/current/btree-gin.html/index.md", "title": "PostgreSQL: Documentation: 18: F.7.\u00a0btree_gin \u2014 GIN operator classes with B-tree behavior"}
 ---
+
 DECLARE STATEMENT — declare SQL statement identifier
 
 ## Synopsis
@@ -49,3 +52,4 @@ EXEC SQL CLOSE cursor\_name;
 ## Compatibility
 
 `DECLARE STATEMENT` is an extension of the SQL standard, but can be used in famous DBMSs.
+

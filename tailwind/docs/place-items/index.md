@@ -9,15 +9,9 @@ last_crawled_at: "2026-04-18T16:50:26.877Z"
 content_hash: "46b7a55038484787adc7c7457c38fdd3b47b7614e7d62b6394daf8e40848795a"
 menu_path: ["place-items"]
 section_path: []
+nav_prev: {"path": "tailwind/docs/place-content/index.md", "title": "place-content"}
+nav_next: {"path": "tailwind/docs/place-self/index.md", "title": "place-self"}
 ---
-[](/)
-
-[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
-
-1.  Flexbox & Grid
-2.  place-items
-
-Flexbox & Grid
 
 # place-items
 
@@ -172,3 +166,4 @@ Make your ideas look awesome, without relying on a designer.
 ](https://www.refactoringui.com/?ref=sidebar)
 
 Copyright © 2026 Tailwind Labs Inc.·[Trademark Policy](/brand)
+

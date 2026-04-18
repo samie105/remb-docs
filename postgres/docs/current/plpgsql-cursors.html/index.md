@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:46:35.680Z"
 content_hash: "cf90483cb62c0c11d6b5da96f164e9c8e9a673723ce166bdd9fd60d81b791d6b"
 menu_path: ["PostgreSQL: Documentation: 18: 41.7. Cursors"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/ddl-constraints.html/index.md", "title": "PostgreSQL: Documentation: 18: 5.5.\u00a0Constraints"}
+nav_next: {"path": "postgres/docs/current/source-format.html/index.md", "title": "PostgreSQL: Documentation: 18: 55.1.\u00a0Formatting"}
 ---
+
 Rather than executing a whole query at once, it is possible to set up a _cursor_ that encapsulates the query, and then read the query result a few rows at a time. One reason for doing this is to avoid memory overrun when the result contains a large number of rows. (However, PL/pgSQL users do not normally need to worry about that, since `FOR` loops automatically use a cursor internally to avoid memory problems.) A more interesting usage is to return a reference to a cursor that a function has created, allowing the caller to read the rows. This provides an efficient way to return large row sets from functions.
 
 ### 41.7.1. Declaring Cursor Variables [#](#PLPGSQL-CURSOR-DECLARATIONS)
@@ -231,3 +234,4 @@ END LOOP \[ _`label`_ \];
 The cursor variable must have been bound to some query when it was declared, and it _cannot_ be open already. The `FOR` statement automatically opens the cursor, and it closes the cursor again when the loop exits. A list of actual argument value expressions must appear if and only if the cursor was declared to take arguments. These values will be substituted in the query, in just the same way as during an `OPEN` (see [Section 41.7.2.3](https://www.postgresql.org/docs/current/plpgsql-cursors.html#PLPGSQL-OPEN-BOUND-CURSOR "41.7.2.3. Opening a Bound Cursor")).
 
 The variable _`recordvar`_ is automatically defined as type `record` and exists only inside the loop (any existing definition of the variable name is ignored within the loop). Each row returned by the cursor is successively assigned to this record variable and the loop body is executed.
+

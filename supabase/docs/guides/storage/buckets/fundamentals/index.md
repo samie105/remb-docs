@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:01:08.919Z"
 content_hash: "f15c4a3b8c2470c3343ef8a50502ad444c8e47d91833f37e8dfa493b57ab60a6"
 menu_path: ["Storage","Storage","File Buckets","File Buckets","Fundamentals","Fundamentals"]
 section_path: ["Storage","Storage","File Buckets","File Buckets","Fundamentals","Fundamentals"]
+nav_prev: {"path": "supabase/docs/guides/storage/analytics/query-with-postgres/index.md", "title": "Query with Postgres"}
+nav_next: {"path": "supabase/docs/guides/storage/cdn/metrics/index.md", "title": "Cache Metrics"}
 ---
+
 # 
 
 Storage Buckets
@@ -49,3 +52,4 @@ Access control is still enforced for other types of operations including uploadi
 *   Blog post content
 
 Public buckets are more performant than private buckets since they are [cached differently](/docs/guides/storage/cdn/fundamentals#public-vs-private-buckets).
+

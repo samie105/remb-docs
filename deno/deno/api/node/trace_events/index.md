@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:42:43.120Z"
 content_hash: "959ef45133449b1d8c202cd5bf70159b7b5dd59dabb796a15261d1fa1830830d"
 menu_path: ["trace_events - Node documentation"]
 section_path: []
+nav_prev: {"path": "deno/deno/api/node/tls/index.md", "title": "tls - Node documentation"}
+nav_next: {"path": "deno/deno/api/node/tty/index.md", "title": "tty - Node documentation"}
 ---
+
 ### Usage in Deno
 
 ```typescript
@@ -128,3 +131,4 @@ No documentation available
 *   [disable](.././trace_events/~/Tracing#method_disable_0)
 *   [enable](.././trace_events/~/Tracing#method_enable_0)
 *   [enabled](.././trace_events/~/Tracing#property_enabled)
+

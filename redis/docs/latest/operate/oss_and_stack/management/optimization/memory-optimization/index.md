@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:42:00.615Z"
 content_hash: "fe6a2a9bf74d24c2751e0c70736be2ae3c11bf37979e571d217cad7764b3358a"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Manage Redis","→","Manage Redis","→\n      \n        Optimizing Redis","→","Optimizing Redis","→\n      \n        Memory optimization","→","Memory optimization"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Manage Redis","→","Manage Redis","→\n      \n        Optimizing Redis","→","Optimizing Redis","→\n      \n        Memory optimization","→","Memory optimization"]
+nav_prev: {"path": "redis/docs/latest/integrate/redis-data-integration/data-pipelines/prepare-dbs/aws-aurora-rds/aws-aur-pgsql/index.md", "title": "Prepare AWS Aurora PostgreSQL/AWS RDS PostgreSQL for RDI"}
+nav_next: {"path": "redis/docs/latest/integrate/redis-data-integration/data-pipelines/prepare-dbs/index.md", "title": "Prepare source databases"}
 ---
+
 # Memory optimization
 
 Strategies for optimizing memory usage in Redis
@@ -189,3 +192,4 @@ If `maxmemory` is not set Redis will keep allocating memory as it sees fit and t
 It makes Redis return an out-of-memory error for write commands if and when it reaches the limit - which in turn may result in errors in the application but will not render the whole machine dead because of memory starvation.
 
 ## On this page
+

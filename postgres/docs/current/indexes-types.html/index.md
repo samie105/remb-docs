@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:45:36.147Z"
 content_hash: "589591b50c33d012f8f8048bf01c1d29eb1101630b3123ee096c1d016016b703"
 menu_path: ["PostgreSQL: Documentation: 18: 11.2. Index Types"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/sql-alterlanguage.html/index.md", "title": "PostgreSQL: Documentation: 18: ALTER LANGUAGE"}
+nav_next: {"path": "postgres/docs/current/pgoverexplain.html/index.md", "title": "PostgreSQL: Documentation: 18: F.29.\u00a0pg_overexplain \u2014 allow EXPLAIN to dump even more details"}
 ---
+
 PostgreSQL provides several index types: B-tree, Hash, GiST, SP-GiST, GIN, BRIN, and the extension [bloom](https://www.postgresql.org/docs/current/bloom.html "F.6. bloom — bloom filter index access method"). Each index type uses a different algorithm that is best suited to different types of indexable clauses. By default, the [`CREATE INDEX`](https://www.postgresql.org/docs/current/sql-createindex.html "CREATE INDEX") command creates B-tree indexes, which fit the most common situations. The other index types are selected by writing the keyword `USING` followed by the index type name. For example, to create a Hash index:
 
 CREATE INDEX _`name`_ ON _`table`_ USING HASH (_`column`_);
@@ -73,3 +76,4 @@ BRIN indexes (a shorthand for Block Range INdexes) store summaries about the val
 <   <=   =   >=   >
 
 The BRIN operator classes included in the standard distribution are documented in [Table 65.4](https://www.postgresql.org/docs/current/brin.html#BRIN-BUILTIN-OPCLASSES-TABLE "Table 65.4. Built-in BRIN Operator Classes"). For more information see [Section 65.5](https://www.postgresql.org/docs/current/brin.html "65.5. BRIN Indexes").
+

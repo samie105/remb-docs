@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:47:51.321Z"
 content_hash: "860a8abb3d351c4617718839a8e3a3070d090825e3ce4e28d26ceaadb9a560c2"
 menu_path: ["Zod API Reference"]
 section_path: []
+nav_prev: {"path": "astro/en/reference/modules/astro-transitions/index.md", "title": "View Transitions Router API Reference"}
+nav_next: {"path": "astro/en/reference/integrations-reference/index.md", "title": "Astro Integration API"}
 ---
+
 # Zod API Reference
 
 [Zod](https://github.com/colinhacks/zod) is a TypeScript-based schema declaration and validation library. This allows you to define schemas you can use to validate data and transform data, from a simple type (e.g. `string`, `number`) to complex data structures (e.g. nested objects).
@@ -89,3 +92,4 @@ const publishedOn = coerce.date();const publicationDate = publishedOn.parse("202
 ```
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

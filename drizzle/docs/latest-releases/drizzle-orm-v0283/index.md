@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:11:15.126Z"
 content_hash: "0daa7206b3a3c1ed8ba9c19806c1743181778f91145bcd283c86bb35f89c77ea"
 menu_path: ["Drizzle ORM - DrizzleORM v0.28.3 release"]
 section_path: []
+nav_prev: {"path": "drizzle/docs/latest-releases/drizzle-orm-v0282/index.md", "title": "Drizzle ORM - DrizzleORM v0.28.2 release"}
+nav_next: {"path": "drizzle/docs/latest-releases/drizzle-orm-v0284/index.md", "title": "Drizzle ORM - DrizzleORM v0.28.4 release"}
 ---
+
 DrizzleORM v0.28.3 release
 
 Aug 22, 2023
@@ -24,7 +27,7 @@ Aug 22, 2023
 
 ### 🎉 Added `.$defaultFn()` / `.$default()` methods to column builders
 
-For more information check docs for [PostgreSQL](https://orm.drizzle.team/docs/column-types/pg#default-value), [MySQL](https://orm.drizzle.team/docs/column-types/mysql#default-value) and [SQLite](https://orm.drizzle.team/docs/column-types/sqlite#default-value).
+For more information check docs for [PostgreSQL](drizzle/docs/column-types/pg/index.md#default-value), [MySQL](drizzle/docs/column-types/mysql/index.md#default-value) and [SQLite](drizzle/docs/column-types/sqlite/index.md#default-value).
 
 You can specify any logic and any implementation for a function like `cuid()` for runtime defaults. Drizzle won’t limit you in the number of implementations you can add.
 
@@ -62,3 +65,4 @@ type InsertUser2 = InferInsertModel<typeof usersTable>;
 ```
 
 *   🛠 Disabled `.d.ts` files bundling
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:45:11.637Z"
 content_hash: "cc530570a118a69bc32d4ef7d088621cca4d74e3a4285bc5a0d562b5a4baa61c"
 menu_path: ["PostgreSQL: Documentation: 18: 34.3. Running SQL Commands"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/predefined-roles.html/index.md", "title": "PostgreSQL: Documentation: 18: 21.5.\u00a0Predefined Roles"}
+nav_next: {"path": "postgres/docs/current/infoschema-parameters.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.33.\u00a0parameters"}
 ---
+
 Any SQL command can be run from within an embedded SQL application. Below are some examples of how to do that.
 
 ### 34.3.1. Executing SQL Statements [#](#ECPG-EXECUTING)
@@ -138,3 +141,4 @@ When you don't need the prepared statement anymore, you should deallocate it:
 EXEC SQL DEALLOCATE PREPARE _`name`_;
 
 For more details about `PREPARE`, see [PREPARE](https://www.postgresql.org/docs/current/ecpg-sql-prepare.html "PREPARE"). Also see [Section 34.5](https://www.postgresql.org/docs/current/ecpg-dynamic.html "34.5. Dynamic SQL") for more details about using placeholders and input parameters.
+

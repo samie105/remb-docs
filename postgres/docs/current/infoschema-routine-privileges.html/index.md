@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:49:33.742Z"
 content_hash: "55aa184afe29732033e2acddefa7b61fa142d60e623962953cc8c93e78deeef8"
 menu_path: ["PostgreSQL: Documentation: 18: 35.41. routine_privileges"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/functions-array.html/index.md", "title": "PostgreSQL: Documentation: 18: 9.19.\u00a0Array Functions and Operators"}
+nav_next: {"path": "postgres/docs/current/dynamic-trace.html/index.md", "title": "PostgreSQL: Documentation: 18: 27.5.\u00a0Dynamic Tracing"}
 ---
+
 The view `routine_privileges` identifies all privileges granted on functions to a currently enabled role or by a currently enabled role. There is one row for each combination of function, grantor, and grantee.
 
 **Table 35.39. `routine_privileges` Columns**
@@ -57,3 +60,4 @@ Always `EXECUTE` (the only privilege type for functions)
 `is_grantable` `yes_or_no`
 
 `YES` if the privilege is grantable, `NO` if not
+

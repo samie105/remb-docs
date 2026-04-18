@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:49:08.524Z"
 content_hash: "a48f7682199905415ad7d9db0acf5faba85340ceb3eed049ec472400e5bdc0f0"
 menu_path: ["Realtime","Realtime","Getting Started","Getting Started"]
 section_path: ["Realtime","Realtime","Getting Started","Getting Started"]
+nav_prev: {"path": "supabase/docs/guides/realtime/error_codes/index.md", "title": "Operational Error Codes"}
+nav_next: {"path": "supabase/docs/guides/realtime/limits/index.md", "title": "Realtime Limits"}
 ---
+
 # 
 
 Getting Started with Realtime
@@ -188,3 +191,4 @@ Now that you understand the basics, dive deeper into each feature:
 *   **[Flutter Integration](/docs/guides/realtime/realtime-listening-flutter)** - Build real-time Flutter applications
 
 Ready to build something amazing? Start with the [Broadcast guide](/docs/guides/realtime/broadcast) to create your first real-time feature!
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:39:14.718Z"
 content_hash: "46627cb1c64d906c8fbb55f468f64a6229de79eeb1f8446617fc7a0685568392"
 menu_path: ["Prototype-Poisoning"]
 section_path: []
+nav_prev: {"path": "fastify/docs/latest/Guides/Migration-Guide-V5/index.md", "title": "V5 Migration Guide"}
+nav_next: {"path": "fastify/docs/latest/Guides/Style-Guide/index.md", "title": "Fastify Style Guide"}
 ---
+
 Version: latest (v5.8.x)
 
 > The following is an article written by Eran Hammer. It is reproduced here for posterity [with permission](https://github.com/fastify/fastify/issues/1426#issuecomment-817957913). It has been reformatted from the original HTML source to Markdown source, but otherwise remains the same. The original HTML can be retrieved from the above permission link.
@@ -177,3 +180,4 @@ My time alone on this one issue exceeded 20 hours. That's half a working week. I
 If you rely on code I maintain, this is exactly the level of support, quality, and commitment you want (and lets be honest — expect). Most of you take it for granted — not just my work but the work of hundreds of other dedicated open source maintainers.
 
 Because this work is important, I decided to try and make it not just financially sustainable but to grow and expand it. There is so much to improve. This is exactly what motivates me to implement the new [commercial licensing plan](https://web.archive.org/web/20190201220503/https://hueniverse.com/on-hapi-licensing-a-preview-f982662ee898) coming in March. You can read more about it [here](https://web.archive.org/web/20190201220503/https://hueniverse.com/on-hapi-licensing-a-preview-f982662ee898).
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:41:17.885Z"
 content_hash: "d9c27dac5e52e1a5c55a7fc6137df308c51a2046a7f8cb8c1acfbca064fe7b18"
 menu_path: ["Migrating from WordPress"]
 section_path: []
+nav_prev: {"path": "astro/en/guides/migrate-to-astro/from-vuepress/index.md", "title": "Migrating from VuePress"}
+nav_next: {"path": "astro/en/contribute/index.md", "title": "Contribute to Astro"}
 ---
+
 # Migrating from WordPress
 
 [WordPress](https://wordpress.org) is an open-source, personal publishing system built on PHP and MySQL.
@@ -146,3 +149,4 @@ To convert other types of sites, such as a portfolio or documentation site, see 
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

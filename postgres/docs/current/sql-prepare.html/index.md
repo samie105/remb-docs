@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:46:20.658Z"
 content_hash: "7053ea4f97652fed3e8dd3d65e083ea9b21a5ffa6e6e84b845ac0552b5f50d51"
 menu_path: ["PostgreSQL: Documentation: 18: PREPARE"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/sql-commit-prepared.html/index.md", "title": "PostgreSQL: Documentation: 18: COMMIT PREPARED"}
+nav_next: {"path": "postgres/docs/current/sql-dropprocedure.html/index.md", "title": "PostgreSQL: Documentation: 18: DROP PROCEDURE"}
 ---
+
 PREPARE — prepare a statement for execution
 
 ## Synopsis
@@ -44,7 +47,7 @@ Any `SELECT`, `INSERT`, `UPDATE`, `DELETE`, `MERGE`, or `VALUES` statement.
 
 A prepared statement can be executed with either a _generic plan_ or a _custom plan_. A generic plan is the same across all executions, while a custom plan is generated for a specific execution using the parameter values given in that call. Use of a generic plan avoids planning overhead, but in some situations a custom plan will be much more efficient to execute because the planner can make use of knowledge of the parameter values. (Of course, if the prepared statement has no parameters, then this is moot and a generic plan is always used.)
 
-By default (that is, when [plan\_cache\_mode](https://www.postgresql.org/docs/current/runtime-config-query.html#GUC-PLAN-CACHE-MODE) is set to `auto`), the server will automatically choose whether to use a generic or custom plan for a prepared statement that has parameters. The current rule for this is that the first five executions are done with custom plans and the average estimated cost of those plans is calculated. Then a generic plan is created and its estimated cost is compared to the average custom-plan cost. Subsequent executions use the generic plan if its cost is not so much higher than the average custom-plan cost as to make repeated replanning seem preferable.
+By default (that is, when [plan\_cache\_mode](postgres/docs/current/runtime-config-query.html/index.md#GUC-PLAN-CACHE-MODE) is set to `auto`), the server will automatically choose whether to use a generic or custom plan for a prepared statement that has parameters. The current rule for this is that the first five executions are done with custom plans and the average estimated cost of those plans is calculated. Then a generic plan is created and its estimated cost is compared to the average custom-plan cost. Subsequent executions use the generic plan if its cost is not so much higher than the average custom-plan cost as to make repeated replanning seem preferable.
 
 This heuristic can be overridden, forcing the server to use either generic or custom plans, by setting `plan_cache_mode` to `force_generic_plan` or `force_custom_plan` respectively. This setting is primarily useful if the generic plan's cost estimate is badly off for some reason, allowing it to be chosen even though its actual cost is much more than that of a custom plan.
 
@@ -56,7 +59,7 @@ If a generic plan is in use, it will contain parameter symbols ``$_`n`_``, while
 
 For more information on query planning and the statistics collected by PostgreSQL for that purpose, see the [ANALYZE](https://www.postgresql.org/docs/current/sql-analyze.html "ANALYZE") documentation.
 
-Although the main point of a prepared statement is to avoid repeated parse analysis and planning of the statement, PostgreSQL will force re-analysis and re-planning of the statement before using it whenever database objects used in the statement have undergone definitional (DDL) changes or their planner statistics have been updated since the previous use of the prepared statement. Also, if the value of [search\_path](https://www.postgresql.org/docs/current/runtime-config-client.html#GUC-SEARCH-PATH) changes from one use to the next, the statement will be re-parsed using the new `search_path`. (This latter behavior is new as of PostgreSQL 9.3.) These rules make use of a prepared statement semantically almost equivalent to re-submitting the same query text over and over, but with a performance benefit if no object definitions are changed, especially if the best plan remains the same across uses. An example of a case where the semantic equivalence is not perfect is that if the statement refers to a table by an unqualified name, and then a new table of the same name is created in a schema appearing earlier in the `search_path`, no automatic re-parse will occur since no object used in the statement changed. However, if some other change forces a re-parse, the new table will be referenced in subsequent uses.
+Although the main point of a prepared statement is to avoid repeated parse analysis and planning of the statement, PostgreSQL will force re-analysis and re-planning of the statement before using it whenever database objects used in the statement have undergone definitional (DDL) changes or their planner statistics have been updated since the previous use of the prepared statement. Also, if the value of [search\_path](postgres/docs/current/runtime-config-client.html/index.md#GUC-SEARCH-PATH) changes from one use to the next, the statement will be re-parsed using the new `search_path`. (This latter behavior is new as of PostgreSQL 9.3.) These rules make use of a prepared statement semantically almost equivalent to re-submitting the same query text over and over, but with a performance benefit if no object definitions are changed, especially if the best plan remains the same across uses. An example of a case where the semantic equivalence is not perfect is that if the statement refers to a table by an unqualified name, and then a new table of the same name is created in a schema appearing earlier in the `search_path`, no automatic re-parse will occur since no object used in the statement changed. However, if some other change forces a re-parse, the new table will be referenced in subsequent uses.
 
 You can see all prepared statements available in the session by querying the [`pg_prepared_statements`](https://www.postgresql.org/docs/current/view-pg-prepared-statements.html "53.16. pg_prepared_statements") system view.
 
@@ -80,3 +83,4 @@ In this example, the data type of the second parameter is not specified, so it i
 ## Compatibility
 
 The SQL standard includes a `PREPARE` statement, but it is only for use in embedded SQL. This version of the `PREPARE` statement also uses a somewhat different syntax.
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:54:21.620Z"
 content_hash: "28e4db2e3d6c9921981fd6823caf0379f96be9e2b8ac9a9f398e4bde4fdfd11c"
 menu_path: ["Jupyter Kernel for Deno"]
 section_path: []
+nav_prev: {"path": "deno/deno/runtime/reference/cli/install/index.md", "title": "deno install"}
+nav_next: {"path": "deno/deno/runtime/reference/cli/lint/index.md", "title": "deno lint"}
 ---
+
 On this page
 
 *   [Quickstart](#quickstart)
@@ -215,3 +218,4 @@ See [https://github.com/rgbkrk/denotebooks](https://github.com/rgbkrk/denotebook
 You can also use Deno Jupyter kernel in the `jupyter console` REPL. To do that, you should launch your console with `jupyter console --kernel deno`.
 
 ![Using the Deno kernel in a CLI](/runtime/reference/images/jupyter-cli.gif)
+

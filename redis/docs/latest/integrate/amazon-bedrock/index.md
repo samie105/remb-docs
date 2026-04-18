@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:52:53.535Z"
 content_hash: "b930bd1620fbeafa43fcf3aee043a9ca8bd9779e04364fe743ec103df5ba4140"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Amazon Bedrock","→","Amazon Bedrock"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Amazon Bedrock","→","Amazon Bedrock"]
+nav_prev: {"path": "redis/docs/latest/operate/kubernetes/release-notes/7-22-0-releases/7-22-0-15-july2025/index.md", "title": "Redis Enterprise for Kubernetes 7.22.0-15 (July 2025) release notes"}
+nav_next: {"path": "redis/docs/latest/operate/kubernetes/release-notes/7-8-2-releases/7-8-2-6-nov24/index.md", "title": "Redis Enterprise for Kubernetes 7.8.2-6 (Nov 2024) release notes"}
 ---
+
 # Amazon Bedrock
 
 Shows how to use your Redis database with Amazon Bedrock to customize foundational models.
@@ -35,3 +38,4 @@ To fully set up Bedrock with Redis Cloud, you will need to do the following:
 *   [Detailed steps](https://github.com/redis-applied-ai/aws-redis-bedrock-stack/blob/main/README.md)
 
 ## On this page
+

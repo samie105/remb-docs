@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:32:02.472Z"
 content_hash: "ad72cfdcbb63b3b833a03b83ae826e099b13f037d440256346fe964c5f245bce"
 menu_path: ["Islands architecture"]
 section_path: []
+nav_prev: {"path": "astro/en/concepts/why-astro/index.md", "title": "Why Astro?"}
+nav_next: {"path": "astro/en/astro-courses/index.md", "title": "Astro Courses"}
 ---
+
 # Islands architecture
 
 Astro helped pioneer and popularize a new frontend architecture pattern called **Islands Architecture.** Islands architecture works by rendering the majority of your page to fast, static HTML with smaller “islands” of JavaScript added when interactivity or personalization is needed on the page (an image carousel, for example). This avoids the monolithic JavaScript payloads that slow down the responsiveness of many other, modern JavaScript web frameworks.
@@ -130,3 +133,4 @@ Using server islands for these elements, your visitor will see the most importan
 Read more about [using server islands](/en/guides/server-islands/) in your project.
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

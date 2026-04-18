@@ -9,8 +9,11 @@ last_crawled_at: "2026-04-18T16:45:16.177Z"
 content_hash: "79b959d990c13e075292e382e21c2199300e8e14e7a628c31b8cbe2321ad4111"
 menu_path: ["PostgreSQL: Documentation: 18: F.30. pg_prewarm — preload relation data into buffer caches"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/event-trigger-database-login-example.html/index.md", "title": "PostgreSQL: Documentation: 18: 38.5.\u00a0A Database Login Event Trigger Example"}
+nav_next: {"path": "postgres/docs/current/explicit-locking.html/index.md", "title": "PostgreSQL: Documentation: 18: 13.3.\u00a0Explicit Locking"}
 ---
-The `pg_prewarm` module provides a convenient way to load relation data into either the operating system buffer cache or the PostgreSQL buffer cache. Prewarming can be performed manually using the `pg_prewarm` function, or can be performed automatically by including `pg_prewarm` in [shared\_preload\_libraries](https://www.postgresql.org/docs/current/runtime-config-client.html#GUC-SHARED-PRELOAD-LIBRARIES). In the latter case, the system will run a background worker which periodically records the contents of shared buffers in a file called `autoprewarm.blocks` and will, using 2 background workers, reload those same blocks after a restart.
+
+The `pg_prewarm` module provides a convenient way to load relation data into either the operating system buffer cache or the PostgreSQL buffer cache. Prewarming can be performed manually using the `pg_prewarm` function, or can be performed automatically by including `pg_prewarm` in [shared\_preload\_libraries](postgres/docs/current/runtime-config-client.html/index.md#GUC-SHARED-PRELOAD-LIBRARIES). In the latter case, the system will run a background worker which periodically records the contents of shared buffers in a file called `autoprewarm.blocks` and will, using 2 background workers, reload those same blocks after a restart.
 
 ### F.30.1. Functions [#](#PGPREWARM-FUNCS)
 
@@ -49,3 +52,4 @@ shared\_preload\_libraries = 'pg\_prewarm'
 
 pg\_prewarm.autoprewarm = true
 pg\_prewarm.autoprewarm\_interval = 300s
+

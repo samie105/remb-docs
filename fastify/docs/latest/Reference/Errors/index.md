@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:33:02.278Z"
 content_hash: "ae8658fe05af9de57bdc37bb6a2939f0b227bba4056a372ec9cbcbc04e0ece62"
 menu_path: ["Errors"]
 section_path: []
+nav_prev: {"path": "fastify/docs/latest/Reference/LTS/index.md", "title": "LTS"}
+nav_next: {"path": "fastify/docs/latest/Reference/Hooks/index.md", "title": "Hooks"}
 ---
+
 Version: latest (v5.8.x)
 
 ## Errors[​](#errors "Direct link to Errors")
@@ -985,3 +988,4 @@ Error Handler must be a function
 Provide a function to `setErrorHandler`.
 
 [#5317](https://github.com/fastify/fastify/pull/5317)
+

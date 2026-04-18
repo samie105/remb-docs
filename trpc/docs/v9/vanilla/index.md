@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:44:25.486Z"
 content_hash: "212e6726aff244d6b353af6da432605c4dd1b54097e098a4d28026d77083c692"
 menu_path: ["Vanilla client"]
 section_path: []
+nav_prev: {"path": "trpc/docs/v9/useInfiniteQuery/index.md", "title": "useInfiniteQuery"}
+nav_next: {"path": "trpc/docs/client/index.md", "title": "tRPC Client"}
 ---
+
 The magic of tRPC is making _strongly typed_ API calls without relying on code generation. With full-stack TypeScript projects, you can directly _import types from the server into the client_! This is a vital part of how tRPC works.
 
 Import the `AppRouter` type into your client from the file your root tRPC router is defined. This single type represents the type signature of your entire API.
@@ -55,3 +58,4 @@ ts
 `const frodo = await client.mutation('createUser', { name: 'Frodo' });`
 
 `// => { id: 'id_frodo', name: 'Frodo' };`
+

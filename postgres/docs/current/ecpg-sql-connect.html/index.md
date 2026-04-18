@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:51:28.345Z"
 content_hash: "d0df23783e944960d92c6740d1f11a896897942e2f41ca7fc6cd270b625d4a63"
 menu_path: ["PostgreSQL: Documentation: 18: CONNECT"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/datetime-julian-dates.html/index.md", "title": "PostgreSQL: Documentation: 18: B.7.\u00a0Julian Dates"}
+nav_next: {"path": "postgres/docs/current/view-pg-config.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.6.\u00a0pg_config"}
 ---
+
 CONNECT — establish a database connection
 
 ## Synopsis
@@ -128,3 +131,4 @@ EXEC SQL END DECLARE SECTION;
 ## Compatibility
 
 `CONNECT` is specified in the SQL standard, but the format of the connection parameters is implementation-specific.
+

@@ -9,8 +9,11 @@ last_crawled_at: "2026-04-18T16:52:11.639Z"
 content_hash: "1a5a9455a00f6aef427bdad85b65ba5a47542a2b73a11ae800626f42ec0c2645"
 menu_path: ["Type Alias: HTTPBatchStreamLinkOptions<TRoot>"]
 section_path: []
+nav_prev: {"path": "trpc/docs/typedoc/client/index/type-aliases/HTTPBatchLinkOptions/index.md", "title": "Type Alias: HTTPBatchLinkOptions<TRoot>"}
+nav_next: {"path": "trpc/docs/typedoc/client/index/type-aliases/LocalLinkOptions/index.md", "title": "Type Alias: LocalLinkOptions<TRouter>"}
 ---
-> **HTTPBatchStreamLinkOptions**<`TRoot`\>: [`HTTPBatchLinkOptions`](https://trpc.io/docs/typedoc/client/index/type-aliases/HTTPBatchLinkOptions)<`TRoot`\> & `object`
+
+> **HTTPBatchStreamLinkOptions**<`TRoot`\>: [`HTTPBatchLinkOptions`](trpc/docs/typedoc/client/index/type-aliases/HTTPBatchLinkOptions/index.md)<`TRoot`\> & `object`
 
 Defined in: [packages/client/src/links/httpBatchStreamLink.ts:21](https://github.com/trpc/trpc/blob/63407c577124e7a2890a7599484d52a0cf025536/packages/client/src/links/httpBatchStreamLink.ts#L21)
 
@@ -34,3 +37,4 @@ ts
 Type Parameter
 
 `TRoot` _extends_ `AnyClientTypes`
+

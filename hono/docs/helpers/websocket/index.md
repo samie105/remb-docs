@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:48:49.089Z"
 content_hash: "c72ec4d6769a08c530b06aabcce1c9bcc6209e92a7e33d933bf5d77f4fb5215f"
 menu_path: ["WebSocket Helper ​"]
 section_path: []
+nav_prev: {"path": "hono/docs/helpers/testing/index.md", "title": "Testing Helper \u200b"}
+nav_next: {"path": "hono/docs/middleware/builtin/basic-auth/index.md", "title": "Basic Auth Middleware \u200b"}
 ---
+
 WebSocket Helper is a helper for server-side WebSockets in Hono applications. Currently Cloudflare Workers / Pages, Deno, and Bun adapters are available.
 
 ## Import [​](#import)
@@ -205,3 +208,4 @@ export default {
   websocket,
 }
 ```
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:39:22.654Z"
 content_hash: "bf83714aa6e1c0f11a3919c656c9a63379c7520f503f8b0efc32e309e5ee592f"
 menu_path: ["@astrojs/\n\t\t\t\t\tpreact"]
 section_path: []
+nav_prev: {"path": "astro/en/guides/integrations-guide/alpinejs/index.md", "title": "@astrojs/\n\t\t\t\t\talpinejs"}
+nav_next: {"path": "astro/en/guides/integrations-guide/react/index.md", "title": "@astrojs/\n\t\t\t\t\treact"}
 ---
+
 # @astrojs/ preact
 
 v5.1.1 [GitHub](https://github.com/withastro/astro/tree/main/packages/integrations/preact/) [npm](https://www.npmjs.com/package/@astrojs/preact) [Changelog](https://github.com/withastro/astro/tree/main/packages/integrations/preact/CHANGELOG.md)
@@ -259,3 +262,4 @@ export default defineConfig({  // Enable many frameworks to support all differen
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:02:46.462Z"
 content_hash: "43957de12c413b0274ff5a19edf79c3d731dff02b6b20d5113cfff06c83341d2"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Cloud","→","Redis Cloud","→\n      \n        Manage databases","→","Manage databases","→\n      \n        Create a database","→","Create a database","→\n      \n        Create an Essentials database","→","Create an Essentials database"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Cloud","→","Redis Cloud","→\n      \n        Manage databases","→","Manage databases","→\n      \n        Create a database","→","Create a database","→\n      \n        Create an Essentials database","→","Create an Essentials database"]
+nav_prev: {"path": "redis/docs/latest/operate/rc/databases/active-active/create-active-active-database/index.md", "title": "Create an Active-Active database"}
+nav_next: {"path": "redis/docs/latest/operate/rc/langcache/create-service/index.md", "title": "Create a LangCache service"}
 ---
+
 # Create an Essentials database
 
 Shows how to create an Essentials database.
@@ -112,3 +115,4 @@ To create a database in your Redis Cloud account:
 When you create your database, there's a brief pause while your request is processed and then the **Database details** page appears.
 
 You can now [connect to your database](/docs/latest/operate/rc/databases/connect/) and start working with Redis.
+

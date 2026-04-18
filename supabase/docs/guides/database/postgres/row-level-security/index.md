@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:56:45.332Z"
 content_hash: "f334cba181e27c1b31598d0d2c9823139bd31030c8946ea440a508bc3c005336"
 menu_path: ["Database","Database","Access and security","Access and security","Row Level Security","Row Level Security"]
 section_path: ["Database","Database","Access and security","Access and security","Row Level Security","Row Level Security"]
+nav_prev: {"path": "supabase/docs/guides/database/postgres/setup-replication-external/index.md", "title": "Replicate to another Postgres database using Logical Replication"}
+nav_next: {"path": "supabase/docs/guides/database/postgres/timeouts/index.md", "title": "Timeouts"}
 ---
+
 # 
 
 Row Level Security
@@ -533,3 +536,4 @@ After:
 *   [Testing your database](/docs/guides/database/testing)
 *   [RLS Guide and Best Practices](https://github.com/orgs/supabase/discussions/14576)
 *   Community repo on testing RLS using [pgTAP and dbdev](https://github.com/usebasejump/supabase-test-helpers/tree/main)
+

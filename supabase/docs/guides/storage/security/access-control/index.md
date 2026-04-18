@@ -9,7 +9,9 @@ last_crawled_at: "2026-04-18T17:01:33.401Z"
 content_hash: "321a437115ab03a4d21977a534c2eb1667a91251addd1678ca13cabaab03c337"
 menu_path: ["Storage","Storage","More","More","More","Security","Security","Access Control","Access Control"]
 section_path: ["Storage","Storage","More","More","More","Security","Security","Access Control","Access Control"]
+nav_prev: {"path": "supabase/docs/guides/storage/security/ownership/index.md", "title": "Ownership"}
 ---
+
 # 
 
 Storage Access Control
@@ -71,3 +73,4 @@ Allow a user to access a file that was previously uploaded by the same user:
 If you exclusively use Storage from trusted clients, such as your own servers, and need to bypass the RLS policies, you can use the `service key` in the `Authorization` header. Service keys entirely bypass RLS policies, granting you unrestricted access to all Storage APIs.
 
 Remember you should not share the service key publicly.
+

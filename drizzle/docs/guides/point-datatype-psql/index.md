@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:05:49.343Z"
 content_hash: "6444d59251786d452eea0b8cc75a12ccf3766e6bc454c215bcab85d5d3f6564b"
 menu_path: ["Drizzle ORM - Point datatype in PostgreSQL"]
 section_path: []
+nav_prev: {"path": "drizzle/docs/guides/mysql-local-setup/index.md", "title": "Drizzle ORM - How to setup MySQL locally"}
+nav_next: {"path": "drizzle/docs/guides/postgis-geometry-point/index.md", "title": "Drizzle ORM - PostGIS geometry point"}
 ---
+
 Drizzle | Point datatype in PostgreSQL
 
 PostgreSQL has a special datatype to store geometric data called `point`. It is used to represent a point in a two-dimensional space. The point datatype is represented as a pair of `(x, y)` coordinates. The point expects to receive longitude first, followed by latitude.
@@ -70,7 +73,7 @@ To compute the distance between the objects you can use `<->` operator. This is 
 
 IMPORTANT
 
-`getColumns` available starting from `drizzle-orm@1.0.0-beta.2`(read more [here](https://orm.drizzle.team/docs/upgrade-v1))
+`getColumns` available starting from `drizzle-orm@1.0.0-beta.2`(read more [here](drizzle/docs/upgrade-v1/index.md))
 
 If you are on pre-1 version(like `0.45.1`) then use `getTableColumns`
 
@@ -122,3 +125,4 @@ await db
 ```
 select * from stores where location <@ box(point(-88, 40), point(-73, 43));
 ```
+

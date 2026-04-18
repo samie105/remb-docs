@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:48:43.487Z"
 content_hash: "7b1baf1814137ae1a7b66d82dbdb7c616e938ef8444f2ac8ad3afc78c44ee9ec"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Connect with Redis client API libraries","→","Connect with Redis client API libraries","→\n      \n        node-redis guide (JavaScript)","→","node-redis guide (JavaScript)","→\n      \n        Index and query documents","→","Index and query documents"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Connect with Redis client API libraries","→","Connect with Redis client API libraries","→\n      \n        node-redis guide (JavaScript)","→","node-redis guide (JavaScript)","→\n      \n        Index and query documents","→","Index and query documents"]
+nav_prev: {"path": "redis/docs/latest/develop/data-types/json/indexing_json/index.md", "title": "Index/Search JSON documents"}
+nav_next: {"path": "redis/docs/latest/integrate/riot/install/index.md", "title": "Install"}
 ---
+
 # Index and query documents
 
 Learn how to use Redis Search with JSON and hash documents.
@@ -1839,3 +1842,4 @@ await client.quit();
 See the [Redis Search](/docs/latest/develop/ai/search-and-query/) docs for a full description of all query features with examples.
 
 ## On this page
+

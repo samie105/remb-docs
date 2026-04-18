@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:47:52.850Z"
 content_hash: "98e3444e92f30c85baa77c8cb51ee8cc3b65ca23dc225ece40cca915b45cbbe8"
 menu_path: ["Fields & types"]
 section_path: []
+nav_prev: {"path": "prisma/docs/orm/prisma-client/setup-and-configuration/read-replicas/index.md", "title": "Read replicas"}
+nav_next: {"path": "prisma/docs/orm/prisma-client/special-fields-and-types/composite-types/index.md", "title": "Composite types"}
 ---
+
 Special Fields and Types
 
 Learn how to use about special fields and types with Prisma Client
@@ -85,7 +88,7 @@ const newTypes = await prisma.sample.create({
 });
 ```
 
-When creating records that have fields of type [`DateTime`](https://www.prisma.io/docs/orm/reference/prisma-schema-reference#datetime), Prisma Client accepts values as [`Date`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date) objects adhering to the [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) standard.
+When creating records that have fields of type [`DateTime`](prisma/docs/orm/reference/prisma-schema-reference/index.md#datetime), Prisma Client accepts values as [`Date`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date) objects adhering to the [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) standard.
 
 Consider the following schema:
 
@@ -139,3 +142,4 @@ await prisma.user.create({
 ```
 
 [Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/prisma-client/special-fields-and-types/index.mdx)
+

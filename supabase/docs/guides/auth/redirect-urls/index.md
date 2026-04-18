@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:39:02.032Z"
 content_hash: "5ad605c60681b9468725ce3e86334ae14af57bd56d7d8acf1a41243503f92700"
 menu_path: ["Auth","Auth","Configuration","Configuration","Redirect URLs","Redirect URLs"]
 section_path: ["Auth","Auth","Configuration","Configuration","Redirect URLs","Redirect URLs"]
+nav_prev: {"path": "supabase/docs/guides/auth/phone-login/index.md", "title": "Phone Login"}
+nav_next: {"path": "supabase/docs/guides/auth/server-side/index.md", "title": "Server-Side Rendering"}
 ---
+
 # 
 
 Redirect URLs
@@ -141,3 +144,4 @@ When authentication fails, the user will still be redirected to the redirect URL
 ```
 1const params = new URLSearchParams(window.location.hash.slice())23if (params.get('error_code').startsWith('4')) {4  // show error message if error is a 4xx error5  window.alert(params.get('error_description'))6}
 ```
+

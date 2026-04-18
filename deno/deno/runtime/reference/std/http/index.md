@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:02:56.171Z"
 content_hash: "081bdb79ec73076ab3f76de8b917550fdf19472a5dd9680e77ec33a57cbca6bf"
 menu_path: ["@std/http"]
 section_path: []
+nav_prev: {"path": "deno/deno/runtime/reference/std/html/index.md", "title": "@std/html"}
+nav_next: {"path": "deno/deno/runtime/reference/std/ini/index.md", "title": "@std/ini"}
 ---
+
 On this page
 
 *   [Overview](#overview)
@@ -109,3 +112,4 @@ deno add jsr:@std/http
 ```
 
 [See all symbols in @std/http on](https://jsr.io/@std/http/doc)
+

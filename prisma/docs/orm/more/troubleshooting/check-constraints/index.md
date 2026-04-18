@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:43:21.145Z"
 content_hash: "eaff84a9df727fd52b9f1d092070a9458a8d531cff895c535c4c825d8073b852"
 menu_path: ["Check constraints"]
 section_path: []
+nav_prev: {"path": "prisma/docs/orm/more/troubleshooting/bundler-issues/index.md", "title": "Bundler issues"}
+nav_next: {"path": "prisma/docs/orm/more/troubleshooting/graphql-autocompletion/index.md", "title": "GraphQL autocompletion"}
 ---
+
 Troubleshooting
 
 Learn how to configure CHECK constraints for data validation with Prisma ORM and PostgreSQL
@@ -112,3 +115,4 @@ Error: new row for relation "product" violates check constraint "price_value_che
 Check constraints are resolved in alphabetical order, and only the first constraint to fail appears in the error message.
 
 [Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/more/troubleshooting/check-constraints.mdx)
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:04:55.866Z"
 content_hash: "74fc5697057dfd4c92aa60a8d07e8a0d5b7db577b52b969cb1c490d06df54c4f"
 menu_path: ["Drizzle ORM - Include or Exclude Columns in Query"]
 section_path: []
+nav_prev: {"path": "drizzle/docs/guides/gel-ext-auth/index.md", "title": "Drizzle ORM - Gel auth extension"}
+nav_next: {"path": "drizzle/docs/guides/incrementing-a-value/index.md", "title": "Drizzle ORM - SQL Increment value"}
 ---
+
 Drizzle | Include or Exclude Columns in Query
 
 PostgreSQL
@@ -70,7 +73,7 @@ To include all columns with extra columns you can use `getColumns()` utility fun
 
 IMPORTANT
 
-`getColumns` available starting from `drizzle-orm@1.0.0-beta.2`(read more [here](https://orm.drizzle.team/docs/upgrade-v1))
+`getColumns` available starting from `drizzle-orm@1.0.0-beta.2`(read more [here](drizzle/docs/upgrade-v1/index.md))
 
 If you are on pre-1 version(like `0.45.1`) then use `getTableColumns`
 
@@ -100,7 +103,7 @@ To exclude columns you can use `getColumns()` utility function like this:
 
 IMPORTANT
 
-`getColumns` available starting from `drizzle-orm@1.0.0-beta.2`(read more [here](https://orm.drizzle.team/docs/upgrade-v1))
+`getColumns` available starting from `drizzle-orm@1.0.0-beta.2`(read more [here](drizzle/docs/upgrade-v1/index.md))
 
 If you are on pre-1 version(like `0.45.1`) then use `getTableColumns`
 
@@ -408,3 +411,4 @@ export const posts = pgTable('posts', {
   views: integer('views').notNull().default(0),
 });
 ```
+

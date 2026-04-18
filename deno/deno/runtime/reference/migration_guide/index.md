@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:59:06.263Z"
 content_hash: "ab28393e9351e8c9fc6568ba063d19a77c70ed319088a7a6d199bed2d06383ab"
 menu_path: ["Deno 1.x to 2.x Migration Guide"]
 section_path: []
+nav_prev: {"path": "deno/deno/runtime/reference/wasm/index.md", "title": "WebAssembly"}
+nav_next: {"path": "deno/deno/runtime/reference/lsp_integration/index.md", "title": "Language Server Integration"}
 ---
+
 On this page
 
 *   [Backwards compatibility with Node.js and npm](#backwards-compatibility-with-node.js-and-npm)
@@ -115,7 +118,7 @@ If your project does not contain a `package.json` file, the default behavior wil
 
 If your project contains a `package.json` file and you do not specify the `nodeModulesDir` option, you must set it to `auto` to keep the default Deno 1.x auto-installing behavior. The new default in Deno 2 is `manual`, which expects the user to keep this directory up to date manually.
 
-See [Node modules directory](https://docs.deno.com/runtime/fundamentals/configuration/#node-modules-directory) for reference.
+See [Node modules directory](deno/deno/runtime/fundamentals/configuration/index.md#node-modules-directory) for reference.
 
 ## CLI changes
 
@@ -202,7 +205,7 @@ Use the `--trace-leaks` CLI flag instead.
 
 *   `--unstable`
 
-Use granular unstable flags (`--unstable-*`) or configuration options instead. See [Unstable Feature Flags](https://docs.deno.com/runtime/reference/cli/unstable_flags/) for reference.
+Use granular unstable flags (`--unstable-*`) or configuration options instead. See [Unstable Feature Flags](deno/deno/runtime/reference/cli/unstable_flags/index.md) for reference.
 
 ```ts
 // kv.ts
@@ -1330,3 +1333,4 @@ Use `globalThis` instead.
 ```
 
 See [deno#9795](https://github.com/denoland/deno/issues/9795) for details.
+

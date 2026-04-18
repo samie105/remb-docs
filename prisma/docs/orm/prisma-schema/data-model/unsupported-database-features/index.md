@@ -9,14 +9,17 @@ last_crawled_at: "2026-04-18T16:52:26.196Z"
 content_hash: "09997552140c05084f5297dd986736067b6f1540fc5dc6aa32e898604cc94150"
 menu_path: ["Unsupported database features (Prisma Schema)"]
 section_path: []
+nav_prev: {"path": "prisma/docs/orm/prisma-schema/data-model/models/index.md", "title": "Models"}
+nav_next: {"path": "prisma/docs/orm/prisma-schema/data-model/table-inheritance/index.md", "title": "Table inheritance"}
 ---
+
 Data Model
 
 How to support database features that do not have an equivalent syntax in Prisma Schema Language
 
-Not all database functions and features of Prisma ORM's supported databases have a Prisma Schema Language equivalent. Refer to the [database features matrix](https://www.prisma.io/docs/orm/reference/database-features) for a complete list of supported features.
+Not all database functions and features of Prisma ORM's supported databases have a Prisma Schema Language equivalent. Refer to the [database features matrix](prisma/docs/orm/reference/database-features/index.md) for a complete list of supported features.
 
-Prisma Schema Language supports several [functions](https://www.prisma.io/docs/orm/reference/prisma-schema-reference#attribute-functions) that you can use to set the default value of a field. The following example uses the Prisma ORM-level `uuid()` function to set the value of the `id` field:
+Prisma Schema Language supports several [functions](prisma/docs/orm/reference/prisma-schema-reference/index.md#attribute-functions) that you can use to set the default value of a field. The following example uses the Prisma ORM-level `uuid()` function to set the value of the `id` field:
 
 ```
 model Post {
@@ -24,7 +27,7 @@ model Post {
 }
 ```
 
-However, you can also use **native database functions** to define default values with [`dbgenerated(...)`](https://www.prisma.io/docs/orm/reference/prisma-schema-reference#dbgenerated) on relational databases (MongoDB does not have the concept of database-level functions). The following example uses the PostgreSQL `gen_random_uuid()` function to populate the `id` field:
+However, you can also use **native database functions** to define default values with [`dbgenerated(...)`](prisma/docs/orm/reference/prisma-schema-reference/index.md#dbgenerated) on relational databases (MongoDB does not have the concept of database-level functions). The following example uses the PostgreSQL `gen_random_uuid()` function to populate the `id` field:
 
 ```
 model User {
@@ -57,13 +60,13 @@ In PostgreSQL, some native database functions are part of an extension. For exam
 
 To use a PostgreSQL extension, you must first install it on the file system of your database server.
 
-You can then activate the extension by installing it via a [customized migration](https://www.prisma.io/docs/orm/prisma-migrate/workflows/customizing-migrations). Add the following SQL to your migration file:
+You can then activate the extension by installing it via a [customized migration](prisma/docs/orm/prisma-migrate/workflows/customizing-migrations/index.md). Add the following SQL to your migration file:
 
 ```
 CREATE EXTENSION IF NOT EXISTS pgcrypto;
 ```
 
-If your project uses [Prisma Migrate](https://www.prisma.io/docs/orm/prisma-migrate), you must [install the extension as part of a migration](https://www.prisma.io/docs/orm/prisma-migrate/workflows/native-database-functions) . Do not install the extension manually, because it is also required by the shadow database.
+If your project uses [Prisma Migrate](prisma/docs/orm/prisma-migrate/index.md), you must [install the extension as part of a migration](prisma/docs/orm/prisma-migrate/workflows/native-database-functions/index.md) . Do not install the extension manually, because it is also required by the shadow database.
 
 Prisma Migrate returns the following error if the extension is not available:
 
@@ -72,7 +75,7 @@ Migration `20210221102106_failed_migration` failed to apply cleanly to a tempora
 Database error: Error querying the database: db error: ERROR: type "pgcrypto" does not exist
 ```
 
-Some database types of relational databases, such as `polygon` or `geometry`, do not have a Prisma Schema Language equivalent. Use the [`Unsupported`](https://www.prisma.io/docs/orm/reference/prisma-schema-reference#unsupported) field type to represent the field in your Prisma schema:
+Some database types of relational databases, such as `polygon` or `geometry`, do not have a Prisma Schema Language equivalent. Use the [`Unsupported`](prisma/docs/orm/reference/prisma-schema-reference/index.md#unsupported) field type to represent the field in your Prisma schema:
 
 ```
 model Star {
@@ -83,6 +86,7 @@ model Star {
 
 The `prisma migrate dev` and `prisma db push` command will both create a `position` field of type `circle` in the database. However, the field will not be available in the generated Prisma Client.
 
-Some features, like SQL views, cannot be represented in the Prisma schema. If your project uses [Prisma Migrate](https://www.prisma.io/docs/orm/prisma-migrate), you must [include unsupported features as part of a migration](https://www.prisma.io/docs/orm/prisma-migrate/workflows/unsupported-database-features) .
+Some features, like SQL views, cannot be represented in the Prisma schema. If your project uses [Prisma Migrate](prisma/docs/orm/prisma-migrate/index.md), you must [include unsupported features as part of a migration](prisma/docs/orm/prisma-migrate/workflows/unsupported-database-features/index.md) .
 
 [Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/prisma-schema/data-model/unsupported-database-features.mdx)
+

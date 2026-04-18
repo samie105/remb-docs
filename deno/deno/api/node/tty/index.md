@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:42:46.115Z"
 content_hash: "1544383eb605a91e43a11548f85325ebfad1f825d865682f435434458f50b61c"
 menu_path: ["tty - Node documentation"]
 section_path: []
+nav_prev: {"path": "deno/deno/api/node/trace_events/index.md", "title": "trace_events - Node documentation"}
+nav_next: {"path": "deno/deno/api/node/url/index.md", "title": "url - Node documentation"}
 ---
+
 ### Usage in Deno
 
 ```typescript
@@ -83,3 +86,4 @@ T
 [Direction](.././tty/~/Direction "Direction")
 
 \-1 - to the left from cursor 0 - the entire line 1 - to the right from cursor
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:51:11.232Z"
 content_hash: "15db2ec3428c1cd88a0bb298d946e4bbf20010f0ee4acfb4bf1b30ec89436020"
 menu_path: ["Class: TRPCClientError<TRouterOrProcedure>"]
 section_path: []
+nav_prev: {"path": "trpc/docs/typedoc/client/index/index.md", "title": "index"}
+nav_next: {"path": "trpc/docs/typedoc/client/index/classes/TRPCUntypedClient/index.md", "title": "Class: TRPCUntypedClient<TInferrable>"}
 ---
+
 Defined in: [packages/client/src/TRPCClientError.ts:47](https://github.com/trpc/trpc/blob/63407c577124e7a2890a7599484d52a0cf025536/packages/client/src/TRPCClientError.ts#L47)
 
 ## Extends[​](#extends "Direct link to Extends")
@@ -24,13 +27,13 @@ Type Parameter
 
 ## Implements[​](#implements "Direct link to Implements")
 
-*   [`TRPCClientErrorBase`](https://trpc.io/docs/typedoc/client/index/interfaces/TRPCClientErrorBase)<`inferErrorShape`<`TRouterOrProcedure`\>>
+*   [`TRPCClientErrorBase`](trpc/docs/typedoc/client/index/interfaces/TRPCClientErrorBase/index.md)<`inferErrorShape`<`TRouterOrProcedure`\>>
 
 ## Constructors[​](#constructors "Direct link to Constructors")
 
 ### new TRPCClientError()[​](#new-trpcclienterror "Direct link to new TRPCClientError()")
 
-> **new TRPCClientError**<`TRouterOrProcedure`\>(`message`, `opts`?): [`TRPCClientError`](https://trpc.io/docs/typedoc/client/index/classes/TRPCClientError)<`TRouterOrProcedure`\>
+> **new TRPCClientError**<`TRouterOrProcedure`\>(`message`, `opts`?): [`TRPCClientError`](trpc/docs/typedoc/client/index/classes/TRPCClientError/index.md)<`TRouterOrProcedure`\>
 
 Defined in: [packages/client/src/TRPCClientError.ts:63](https://github.com/trpc/trpc/blob/63407c577124e7a2890a7599484d52a0cf025536/packages/client/src/TRPCClientError.ts#L63)
 
@@ -62,7 +65,7 @@ Type
 
 #### Returns[​](#returns "Direct link to Returns")
 
-[`TRPCClientError`](https://trpc.io/docs/typedoc/client/index/classes/TRPCClientError)<`TRouterOrProcedure`\>
+[`TRPCClientError`](trpc/docs/typedoc/client/index/classes/TRPCClientError/index.md)<`TRouterOrProcedure`\>
 
 #### Overrides[​](#overrides "Direct link to Overrides")
 
@@ -90,7 +93,7 @@ Defined in: [packages/client/src/TRPCClientError.ts:55](https://github.com/trpc/
 
 #### Implementation of[​](#implementation-of "Direct link to Implementation of")
 
-[`TRPCClientErrorBase`](https://trpc.io/docs/typedoc/client/index/interfaces/TRPCClientErrorBase).[`data`](https://trpc.io/docs/typedoc/client/index/interfaces/TRPCClientErrorBase#data)
+[`TRPCClientErrorBase`](trpc/docs/typedoc/client/index/interfaces/TRPCClientErrorBase/index.md).[`data`](trpc/docs/typedoc/client/index/interfaces/TRPCClientErrorBase/index.md#data)
 
 * * *
 
@@ -112,13 +115,13 @@ Defined in: [packages/client/src/TRPCClientError.ts:54](https://github.com/trpc/
 
 #### Implementation of[​](#implementation-of-1 "Direct link to Implementation of")
 
-[`TRPCClientErrorBase`](https://trpc.io/docs/typedoc/client/index/interfaces/TRPCClientErrorBase).[`shape`](https://trpc.io/docs/typedoc/client/index/interfaces/TRPCClientErrorBase#shape)
+[`TRPCClientErrorBase`](trpc/docs/typedoc/client/index/interfaces/TRPCClientErrorBase/index.md).[`shape`](trpc/docs/typedoc/client/index/interfaces/TRPCClientErrorBase/index.md#shape)
 
 ## Methods[​](#methods "Direct link to Methods")
 
 ### from()[​](#from "Direct link to from()")
 
-> `static` **from**<`TRouterOrProcedure`\>(`_cause`, `opts`): [`TRPCClientError`](https://trpc.io/docs/typedoc/client/index/classes/TRPCClientError)<`TRouterOrProcedure`\>
+> `static` **from**<`TRouterOrProcedure`\>(`_cause`, `opts`): [`TRPCClientError`](trpc/docs/typedoc/client/index/classes/TRPCClientError/index.md)<`TRouterOrProcedure`\>
 
 Defined in: [packages/client/src/TRPCClientError.ts:87](https://github.com/trpc/trpc/blob/63407c577124e7a2890a7599484d52a0cf025536/packages/client/src/TRPCClientError.ts#L87)
 
@@ -152,4 +155,5 @@ Type
 
 #### Returns[​](#returns-1 "Direct link to Returns")
 
-[`TRPCClientError`](https://trpc.io/docs/typedoc/client/index/classes/TRPCClientError)<`TRouterOrProcedure`\>
+[`TRPCClientError`](trpc/docs/typedoc/client/index/classes/TRPCClientError/index.md)<`TRouterOrProcedure`\>
+

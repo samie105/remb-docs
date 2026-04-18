@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:48:22.898Z"
 content_hash: "bd48ecf191813429e0e0a9865773e9b9af2cf653e661d46b1cd0de4297ce656a"
 menu_path: ["Platform","Platform","Billing","Billing","Your monthly invoice","Your monthly invoice"]
 section_path: ["Platform","Platform","Billing","Billing","Your monthly invoice","Your monthly invoice"]
+nav_prev: {"path": "supabase/docs/guides/platform/upgrading/index.md", "title": "Upgrading"}
+nav_next: {"path": "supabase/docs/guides/queues/api/index.md", "title": "API"}
 ---
+
 # 
 
 Your monthly invoice
@@ -75,3 +78,4 @@ If your payment fails, Supabase retries the charge several times. We send you a 
 ## Where to find your invoices[#](#where-to-find-your-invoices)
 
 Your invoice is sent to you via email. You can also find your invoices on the [organization's invoices page](/dashboard/org/_/billing#invoices).
+

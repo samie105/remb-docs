@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:52:24.683Z"
 content_hash: "cd54a08e298513c9a420a6c9d84bf732b6a512637bccc68b5ef44bc393962d0b"
 menu_path: ["PostgreSQL: Documentation: 18: ALTER FOREIGN TABLE"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/datetime-input-rules.html/index.md", "title": "PostgreSQL: Documentation: 18: B.1.\u00a0Date/Time Input Interpretation"}
+nav_next: {"path": "postgres/docs/current/app-pgcontroldata.html/index.md", "title": "PostgreSQL: Documentation: 18: pg_controldata"}
 ---
+
 ALTER FOREIGN TABLE — change the definition of a foreign table
 
 ## Synopsis
@@ -223,3 +226,4 @@ ALTER FOREIGN TABLE myschema.distributors OPTIONS (ADD opt1 'value', SET opt2 'v
 The forms `ADD`, `DROP`, and `SET DATA TYPE` conform with the SQL standard. The other forms are PostgreSQL extensions of the SQL standard. Also, the ability to specify more than one manipulation in a single `ALTER FOREIGN TABLE` command is an extension.
 
 `ALTER FOREIGN TABLE DROP COLUMN` can be used to drop the only column of a foreign table, leaving a zero-column table. This is an extension of SQL, which disallows zero-column foreign tables.
+

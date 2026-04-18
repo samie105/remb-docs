@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:38:59.117Z"
 content_hash: "698e70a995f36d79cbbcdef6c59ac9494fdb71188323029c73c774152b32a761"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Connect with Redis client API libraries","→","Connect with Redis client API libraries","→\n      \n        hiredis guide (C)","→","hiredis guide (C)","→\n      \n        Connect","→","Connect"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Connect with Redis client API libraries","→","Connect with Redis client API libraries","→\n      \n        hiredis guide (C)","→","hiredis guide (C)","→\n      \n        Connect","→","Connect"]
+nav_prev: {"path": "redis/docs/latest/develop/reference/modules/modules-api-ref/index.md", "title": "Modules API reference"}
+nav_next: {"path": "redis/docs/latest/operate/oss_and_stack/management/optimization/cpu-profiling/index.md", "title": "Redis CPU profiling"}
 ---
+
 # Connect
 
 Connect to the server with `hiredis`.
@@ -122,3 +125,4 @@ Use the `redisAsyncCommand()` function to issue Redis commands with an asynchron
 Note that you should normally disconnect asynchronously from a callback when you have finished using the connection. Use `redisAsyncDisconnect()` to disconnect gracefully, letting pending commands execute and activate their callbacks. Use `redisAsyncFree()` to disconnect immediately. If you do this then any pending callbacks from commands that have already executed will be called with a `NULL` reply pointer.
 
 ## On this page
+

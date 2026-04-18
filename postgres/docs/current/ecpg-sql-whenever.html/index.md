@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:40:47.939Z"
 content_hash: "26d70a7e84b4efc41e0fb7753d3202875d8ec3e951ce055feceb7d9e8eb9f1c1"
 menu_path: ["PostgreSQL: Documentation: 18: WHENEVER"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/connect-estab.html/index.md", "title": "PostgreSQL: Documentation: 18: 51.2.\u00a0How Connections Are Established"}
+nav_next: {"path": "postgres/docs/current/plpython-trigger.html/index.md", "title": "PostgreSQL: Documentation: 18: 44.5.\u00a0Trigger Functions"}
 ---
+
 WHENEVER — specify the action to be taken when an SQL statement causes a specific class condition to be raised
 
 ## Synopsis
@@ -67,3 +70,4 @@ main(void)
 ## Compatibility
 
 `WHENEVER` is specified in the SQL standard, but most of the actions are PostgreSQL extensions.
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:37:00.035Z"
 content_hash: "3122fde8d0f8a57f03112cfd9b607f6f88593cfd6e268e043890e63838a29105"
 menu_path: ["Fastly Compute ​"]
 section_path: []
+nav_prev: {"path": "hono/docs/getting-started/bun/index.md", "title": "Bun \u200b"}
+nav_next: {"path": "hono/docs/getting-started/vercel/index.md", "title": "Vercel \u200b"}
 ---
+
 [Fastly Compute](https://www.fastly.com/products/edge-compute) is an advanced edge computing system that runs your code, in your favorite language, on Fastly's global edge network. Hono also works on Fastly Compute.
 
 You can develop the application locally and publish it with a few commands using [Fastly CLI](https://www.fastly.com/documentation/reference/tools/cli/), which is installed locally automatically as part of the template.
@@ -193,3 +196,4 @@ app.put('/upload/:key', async (c, next) => {
 
 fire(app)
 ```
+

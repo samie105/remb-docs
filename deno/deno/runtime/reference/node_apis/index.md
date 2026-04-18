@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:59:25.267Z"
 content_hash: "b3000aa4d83ce952d372fca58ce5be44208fd7dd13ed3b171defb9f2162c0c57"
 menu_path: ["Node APIs"]
 section_path: []
+nav_prev: {"path": "deno/deno/runtime/reference/deno_namespace_apis/index.md", "title": "Deno Namespace APIs"}
+nav_next: {"path": "deno/deno/runtime/reference/std/math/index.md", "title": "@std/math"}
 ---
+
 On this page
 
 *   [Fully supported modules](#fully-supported-modules)
@@ -657,3 +660,4 @@ Status
 ## Node test results
 
 If you're interested in a more detailed view of compatibility on a per-test-case basis, you can find a list of both passing and failing Node.js test cases on [this page](https://node-test-viewer.deno.dev/).
+

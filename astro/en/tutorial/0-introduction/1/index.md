@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:48:03.197Z"
 content_hash: "0f9ab1671eb2bfb2dc35fcf25cb4e3183dab6a0f7466cdee23973eb035e7a388"
 menu_path: ["About this Tutorial"]
 section_path: []
+nav_prev: {"path": "astro/en/reference/errors/unsupported-image-format/index.md", "title": "Unsupported image format"}
+nav_next: {"path": "astro/en/tutorial/1-setup/1/index.md", "title": "Prepare your dev environment"}
 ---
+
 # About this Tutorial
 
 ## What do I need to know to get started?
@@ -53,3 +56,4 @@ This tutorial is a project of our Docs team. You can find us on Discord in the `
  *    I’m ready to build this thing!
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

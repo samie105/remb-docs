@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:04:50.891Z"
 content_hash: "db8597f11311f5f8ffff964063db317afcae516f1df7a37a9174ac9c83180bf1"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Connect with Redis client API libraries","→","Connect with Redis client API libraries","→\n      \n        node-redis guide (JavaScript)","→","node-redis guide (JavaScript)","→\n      \n        Pipelines and transactions","→","Pipelines and transactions"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Connect with Redis client API libraries","→","Connect with Redis client API libraries","→\n      \n        node-redis guide (JavaScript)","→","node-redis guide (JavaScript)","→\n      \n        Pipelines and transactions","→","Pipelines and transactions"]
+nav_prev: {"path": "redis/docs/latest/develop/data-types/json/performance/index.md", "title": "Performance"}
+nav_next: {"path": "redis/docs/latest/integrate/redis-data-integration/data-pipelines/prepare-dbs/aws-aurora-rds/index.md", "title": "Prepare AWS RDS and Aurora databases for RDI"}
 ---
+
 # Pipelines and transactions
 
 Learn how to use Redis pipelines and transactions
@@ -145,3 +148,4 @@ try {
 This is important because the server tracks the state of the WATCH on a per-connection basis, and concurrent WATCH and MULTI/EXEC calls on the same connection will interfere with one another. See [`RedisClientPool`](https://github.com/redis/node-redis/blob/master/docs/pool.md) for more information.
 
 ## On this page
+

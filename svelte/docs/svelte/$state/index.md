@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:33:37.384Z"
 content_hash: "bd455db62b79de343040fb3045c91d1bea323227930d969fb0d60c992ef2c825"
 menu_path: ["$state"]
 section_path: []
+nav_prev: {"path": "svelte/docs/svelte/what-are-runes/index.md", "title": "What are runes?"}
+nav_next: {"path": "svelte/docs/svelte/$derived/index.md", "title": "$derived"}
 ---
+
 The `$state` rune allows you to create _reactive state_, which means that your UI _reacts_ when it changes.
 
 ```
@@ -1287,3 +1290,4 @@ export function function increment(): voidincrement() {
 previous next
 
 [What are runes?](/docs/svelte/what-are-runes) [$derived](/docs/svelte/$derived)
+

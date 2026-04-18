@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:45:42.099Z"
 content_hash: "83abca433d5fa9929f00108b2b45fb65c5faddf4afc97a663c3a80eb04bfe9f3"
 menu_path: ["Aborting Procedure Calls"]
 section_path: []
+nav_prev: {"path": "trpc/docs/client/nextjs/app-router-setup/index.md", "title": "Set up with Next.js App Router"}
+nav_next: {"path": "trpc/docs/client/nextjs/pages-router/server-side-helpers/index.md", "title": "Server-Side Helpers"}
 ---
+
 By default, tRPC does not cancel requests on unmount. If you want to opt into this behavior, you can provide `abortOnUnmount` in your configuration callback.
 
 ### Globally[​](#globally "Direct link to Globally")
@@ -69,3 +72,4 @@ tsx
   `return null;`
 
 `}`
+

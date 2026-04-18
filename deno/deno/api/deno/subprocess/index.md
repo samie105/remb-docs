@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:10:58.013Z"
 content_hash: "9db9649852abe080d93ac39c3fd581740630f7e9b6c9d8fba61e3f17ac49e5cb"
 menu_path: ["Subprocess - Deno documentation"]
 section_path: []
+nav_prev: {"path": "deno/deno/api/deno/runtime/index.md", "title": "Runtime - Deno documentation"}
+nav_next: {"path": "deno/deno/api/deno/telemetry/index.md", "title": "Telemetry - Deno documentation"}
 ---
+
 ### Classes [#](#Classes)
 
 c
@@ -114,3 +117,4 @@ The interface for stdout and stderr streams for child process returned from `Den
 *   [bytes](./././~/Deno.SubprocessReadableStream#method_bytes_0)
 *   [json](./././~/Deno.SubprocessReadableStream#method_json_0)
 *   [text](./././~/Deno.SubprocessReadableStream#method_text_0)
+

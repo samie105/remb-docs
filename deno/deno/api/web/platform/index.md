@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:14:11.685Z"
 content_hash: "654809b145f4f630abb756720eb4b43e12aac537524efdeec495d4659f397d97"
 menu_path: ["Platform - Web documentation"]
 section_path: []
+nav_prev: {"path": "deno/deno/api/web/performance/index.md", "title": "Performance - Web documentation"}
+nav_next: {"path": "deno/deno/api/web/storage/index.md", "title": "Storage - Web documentation"}
 ---
+
 ### Functions [#](#Functions)
 
 f
@@ -619,3 +622,4 @@ v
 [self](./././~/self "self")
 
 Reference to the global object itself. Equivalent to the global `window` object in browser environments.
+

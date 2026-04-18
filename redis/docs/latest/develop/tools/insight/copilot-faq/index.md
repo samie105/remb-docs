@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:56:34.700Z"
 content_hash: "5c3ec926007aba0c7e3acf83f5da45a0009b62c169d3f1776d6c40cf81fc9cd4"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Client tools","→","Client tools","→\n      \n        Redis Insight","→","Redis Insight","→\n      \n        Redis Copilot FAQ","→","Redis Copilot FAQ"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Client tools","→","Client tools","→\n      \n        Redis Insight","→","Redis Insight","→\n      \n        Redis Copilot FAQ","→","Redis Copilot FAQ"]
+nav_prev: {"path": "redis/docs/latest/commands/redis-8-0-commands/index.md", "title": "Redis 8.0 Commands Reference"}
+nav_next: {"path": "redis/docs/latest/develop/ai/search-and-query/best-practices/index-mgmt-best-practices/index.md", "title": "Index management best practices for Redis Search"}
 ---
+
 # Redis Copilot FAQ
 
 ## General questions
@@ -57,3 +60,4 @@ Redis Copilot terms apply to your use of or access to Redis Copilot. They set ou
 Redis Copilot is released as Beta in Redis Insight. We welcome your feedback and bug reports. You can submit them through the feedback form available in the [Redis Insight GitHub repository](https://github.com/RedisInsight/RedisInsight).
 
 ## On this page
+

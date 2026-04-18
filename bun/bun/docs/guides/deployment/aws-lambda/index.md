@@ -9,18 +9,10 @@ last_crawled_at: "2026-04-18T16:42:13.622Z"
 content_hash: "11671020b0cbd738636ccc2b9cfbda59bc6f1cb440a4f388376dc9808bae50f5"
 menu_path: ["Deploy a Bun application on AWS Lambda"]
 section_path: []
+nav_prev: {"path": "bun/bun/docs/guides/binary/typedarray-to-string/index.md", "title": "Convert a Uint8Array to a string"}
+nav_next: {"path": "bun/bun/docs/guides/deployment/digital-ocean/index.md", "title": "Deploy a Bun application on DigitalOcean"}
 ---
-[AWS Lambda](https://aws.amazon.com/lambda/) is a serverless compute service that lets you run code without provisioning or managing servers. In this guide, we will deploy a Bun HTTP server to AWS Lambda using a `Dockerfile`.
 
-1
-
-Create a new Dockerfile
-
-Make sure you’re in the directory containing your project, then create a new `Dockerfile` in the root of your project. This file contains the instructions to initialize the container, copy your local project files into it, install dependencies, and start the application.
-
-Dockerfile
-
-```
 # Use the official AWS Lambda adapter image to handle the Lambda runtime
 FROM public.ecr.aws/awsguru/aws-lambda-adapter:0.9.0 AS aws-lambda-adapter
 
@@ -217,3 +209,4 @@ curl -X GET https://[your-function-id].lambda-url.us-east-1.on.aws/
 ```
 Hello from Bun on Lambda!
 ```
+

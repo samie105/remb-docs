@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:35:54.903Z"
 content_hash: "fb6edf808df4bd9e75c619109bf2bd2ad03964337c71b1f5e177252e414392b7"
 menu_path: ["PostgreSQL: Documentation: 18: 9.28. System Administration Functions"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/view-pg-replication-slots.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.20.\u00a0pg_replication_slots"}
+nav_next: {"path": "postgres/docs/current/infoschema-element-types.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.24.\u00a0element_types"}
 ---
+
 Function
 
 Description
@@ -36,7 +39,7 @@ Copies an existing logical replication slot named _`src_slot_name`_ to a logical
 
 `pg_logical_slot_get_changes` ( _`slot_name`_ `name`, _`upto_lsn`_ `pg_lsn`, _`upto_nchanges`_ `integer`, `VARIADIC` _`options`_ `text[]` ) → `setof record` ( _`lsn`_ `pg_lsn`, _`xid`_ `xid`, _`data`_ `text` )
 
-Returns changes in the slot _`slot_name`_, starting from the point from which changes have been consumed last. If _`upto_lsn`_ and _`upto_nchanges`_ are NULL, logical decoding will continue until end of WAL. If _`upto_lsn`_ is non-NULL, decoding will include only those transactions which commit prior to the specified LSN. If _`upto_nchanges`_ is non-NULL, decoding will stop when the number of rows produced by decoding exceeds the specified value. Note, however, that the actual number of rows returned may be larger, since this limit is only checked after adding the rows produced when decoding each new transaction commit. If the specified slot is a logical failover slot then the function will not return until all physical slots specified in [`synchronized_standby_slots`](https://www.postgresql.org/docs/current/runtime-config-replication.html#GUC-SYNCHRONIZED-STANDBY-SLOTS) have confirmed WAL receipt.
+Returns changes in the slot _`slot_name`_, starting from the point from which changes have been consumed last. If _`upto_lsn`_ and _`upto_nchanges`_ are NULL, logical decoding will continue until end of WAL. If _`upto_lsn`_ is non-NULL, decoding will include only those transactions which commit prior to the specified LSN. If _`upto_nchanges`_ is non-NULL, decoding will stop when the number of rows produced by decoding exceeds the specified value. Note, however, that the actual number of rows returned may be larger, since this limit is only checked after adding the rows produced when decoding each new transaction commit. If the specified slot is a logical failover slot then the function will not return until all physical slots specified in [`synchronized_standby_slots`](postgres/docs/current/runtime-config-replication.html/index.md#GUC-SYNCHRONIZED-STANDBY-SLOTS) have confirmed WAL receipt.
 
 `pg_logical_slot_peek_changes` ( _`slot_name`_ `name`, _`upto_lsn`_ `pg_lsn`, _`upto_nchanges`_ `integer`, `VARIADIC` _`options`_ `text[]` ) → `setof record` ( _`lsn`_ `pg_lsn`, _`xid`_ `xid`, _`data`_ `text` )
 
@@ -52,7 +55,7 @@ Behaves just like the `pg_logical_slot_peek_changes()` function, except that cha
 
 `pg_replication_slot_advance` ( _`slot_name`_ `name`, _`upto_lsn`_ `pg_lsn` ) → `record` ( _`slot_name`_ `name`, _`end_lsn`_ `pg_lsn` )
 
-Advances the current confirmed position of a replication slot named _`slot_name`_. The slot will not be moved backwards, and it will not be moved beyond the current insert location. Returns the name of the slot and the actual position that it was advanced to. The updated slot position information is written out at the next checkpoint if any advancing is done. So in the event of a crash, the slot may return to an earlier position. If the specified slot is a logical failover slot then the function will not return until all physical slots specified in [`synchronized_standby_slots`](https://www.postgresql.org/docs/current/runtime-config-replication.html#GUC-SYNCHRONIZED-STANDBY-SLOTS) have confirmed WAL receipt.
+Advances the current confirmed position of a replication slot named _`slot_name`_. The slot will not be moved backwards, and it will not be moved beyond the current insert location. Returns the name of the slot and the actual position that it was advanced to. The updated slot position information is written out at the next checkpoint if any advancing is done. So in the event of a crash, the slot may return to an earlier position. If the specified slot is a logical failover slot then the function will not return until all physical slots specified in [`synchronized_standby_slots`](postgres/docs/current/runtime-config-replication.html/index.md#GUC-SYNCHRONIZED-STANDBY-SLOTS) have confirmed WAL receipt.
 
 `pg_replication_origin_create` ( _`node_name`_ `text` ) → `oid`
 
@@ -106,8 +109,9 @@ Emits a logical decoding message. This can be used to pass generic messages to l
 
 `pg_sync_replication_slots` () → `void`
 
-Synchronize the logical failover replication slots from the primary server to the standby server. This function can only be executed on the standby server. Temporary synced slots, if any, cannot be used for logical decoding and must be dropped after promotion. See [Section 47.2.3](https://www.postgresql.org/docs/current/logicaldecoding-explanation.html#LOGICALDECODING-REPLICATION-SLOTS-SYNCHRONIZATION "47.2.3. Replication Slot Synchronization") for details. Note that this function is primarily intended for testing and debugging purposes and should be used with caution. Additionally, this function cannot be executed if [`sync_replication_slots`](https://www.postgresql.org/docs/current/runtime-config-replication.html#GUC-SYNC-REPLICATION-SLOTS) is enabled and the slotsync worker is already running to perform the synchronization of slots.
+Synchronize the logical failover replication slots from the primary server to the standby server. This function can only be executed on the standby server. Temporary synced slots, if any, cannot be used for logical decoding and must be dropped after promotion. See [Section 47.2.3](https://www.postgresql.org/docs/current/logicaldecoding-explanation.html#LOGICALDECODING-REPLICATION-SLOTS-SYNCHRONIZATION "47.2.3. Replication Slot Synchronization") for details. Note that this function is primarily intended for testing and debugging purposes and should be used with caution. Additionally, this function cannot be executed if [`sync_replication_slots`](postgres/docs/current/runtime-config-replication.html/index.md#GUC-SYNC-REPLICATION-SLOTS) is enabled and the slotsync worker is already running to perform the synchronization of slots.
 
 ### Caution
 
-If, after executing the function, [`hot_standby_feedback`](https://www.postgresql.org/docs/current/runtime-config-replication.html#GUC-HOT-STANDBY-FEEDBACK) is disabled on the standby or the physical slot configured in [`primary_slot_name`](https://www.postgresql.org/docs/current/runtime-config-replication.html#GUC-PRIMARY-SLOT-NAME) is removed, then it is possible that the necessary rows of the synchronized slot will be removed by the VACUUM process on the primary server, resulting in the synchronized slot becoming invalidated.
+If, after executing the function, [`hot_standby_feedback`](postgres/docs/current/runtime-config-replication.html/index.md#GUC-HOT-STANDBY-FEEDBACK) is disabled on the standby or the physical slot configured in [`primary_slot_name`](postgres/docs/current/runtime-config-replication.html/index.md#GUC-PRIMARY-SLOT-NAME) is removed, then it is possible that the necessary rows of the synchronized slot will be removed by the VACUUM process on the primary server, resulting in the synchronized slot becoming invalidated.
+

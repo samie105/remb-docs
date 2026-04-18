@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:13:58.089Z"
 content_hash: "9d2aeb4fd2a8a23fb9d724bfa7911394e92782db77cc126efafb60917b5427fd"
 menu_path: ["Messaging - Web documentation"]
 section_path: []
+nav_prev: {"path": "deno/deno/api/web/intl/index.md", "title": "Intl - Web documentation"}
+nav_next: {"path": "deno/deno/api/web/performance/index.md", "title": "Performance - Web documentation"}
 ---
+
 ### Interfaces [#](#Interfaces)
 
 I
@@ -75,3 +78,4 @@ No documentation available
 
 *   [message](./././~/MessagePortEventMap#property_message)
 *   [messageerror](./././~/MessagePortEventMap#property_messageerror)
+

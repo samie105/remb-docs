@@ -9,123 +9,10 @@ last_crawled_at: "2026-04-18T17:01:51.026Z"
 content_hash: "aef62c3d3abc1f99d9d93f4da8b4b952d0a46989b03bb971bd64b06cfa9a1d56"
 menu_path: ["bun create"]
 section_path: []
+nav_prev: {"path": "bun/bun/docs/runtime/streams/index.md", "title": "Streams"}
+nav_next: {"path": "bun/bun/docs/runtime/toml/index.md", "title": "TOML"}
 ---
-[Skip to main content](#content-area)
 
-[Bun home page![light logo](https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z_zHyy/logo/logo-with-wordmark-dark.svg?fit=max&auto=format&n=JUhaF6Mf68z_zHyy&q=85&s=3f55cd23822028e40658b192c927f3e4)![dark logo](https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z_zHyy/logo/logo-with-wordmark-light.svg?fit=max&auto=format&n=JUhaF6Mf68z_zHyy&q=85&s=8a0c5928d9dc3631f0d33e17c257e2ec)](/docs)
-
-[Runtime
-
-](/docs)[Package Manager
-
-](/docs/pm/cli/install)[Bundler
-
-](/docs/bundler)[Test Runner
-
-](/docs/test)[Guides
-
-](/docs/guides)[Reference
-
-](https://bun.com/reference)[Blog
-
-](https://bun.com/blog)[Feedback
-
-](/docs/feedback)
-
-`bun create` is optional — Bun works without any configuration. This command exists to make getting started faster.
-
-* * *
-
-Template a new Bun project with `bun create`. This is a flexible command that can be used to create a new project from a React component, a `create-<template>` npm package, a GitHub repo, or a local template. If you’re looking to create a brand new empty project, use [`bun init`](/docs/runtime/templating/init).
-
-## 
-
-[​
-
-](#from-a-react-component)
-
-From a React component
-
-`bun create ./MyComponent.tsx` turns an existing React component into a complete dev environment with hot reload and production builds in one command.
-
-```
-bun create ./MyComponent.jsx # .tsx also supported
-```
-
-🚀 **Create React App Successor** — `bun create <component>` provides everything developers loved about Create React App, but with modern tooling, faster builds, and backend support.
-
-#### 
-
-[​
-
-](#how-this-works)
-
-How this works
-
-When you run `bun create <component>`, Bun:
-
-1.  Uses [Bun’s JavaScript bundler](/docs/bundler) to analyze your module graph.
-2.  Collects all the dependencies needed to run the component.
-3.  Scans the exports of the entry point for a React component.
-4.  Generates a `package.json` file with the dependencies and scripts needed to run the component.
-5.  Installs any missing dependencies using [`bun install --only-missing`](/docs/pm/cli/install).
-6.  Generates the following files:
-    *   `${component}.html`
-    *   `${component}.client.tsx` (entry point for the frontend)
-    *   `${component}.css` (css file)
-7.  Starts a frontend dev server automatically.
-
-### 
-
-[​
-
-](#using-tailwindcss-with-bun)
-
-Using TailwindCSS with Bun
-
-[TailwindCSS](https://tailwindcss.com/) is an extremely popular utility-first CSS framework used to style web applications. When you run `bun create <component>`, Bun scans your JSX/TSX file for TailwindCSS class names (and any files it imports). If it detects TailwindCSS class names, it will add the following dependencies to your `package.json`:
-
-package.json
-
-```
-{
-  "dependencies": {
-    "tailwindcss": "^4",
-    "bun-plugin-tailwind": "latest"
-  }
-}
-```
-
-We also configure `bunfig.toml` to use Bun’s TailwindCSS plugin with `Bun.serve()`
-
-bunfig.toml
-
-```
-[serve.static]
-plugins = ["bun-plugin-tailwind"]
-```
-
-And a `${component}.css` file with `@import "tailwindcss";` at the top:
-
-MyComponent.css
-
-```
-@import "tailwindcss";
-```
-
-### 
-
-[​
-
-](#using-shadcn/ui-with-bun)
-
-Using `shadcn/ui` with Bun
-
-[`shadcn/ui`](https://ui.shadcn.com/) is an extremely popular component library tool for building web applications. `bun create <component>` scans for any shadcn/ui components imported from `@/components/ui`. If it finds any, it runs:
-
-terminal
-
-```
 # Assuming bun detected imports to @/components/ui/accordion and @/components/ui/button
 bunx shadcn@canary add accordion button # and any other components
 ```
@@ -388,3 +275,4 @@ Bun Runtime
 Next
 
 ](/docs/runtime)
+

@@ -9,5 +9,9 @@ last_crawled_at: "2026-04-18T16:52:23.960Z"
 content_hash: "6620e64b03b4e8b9c8016d9025dbda5068a9a2c275d2f3f8bc20c41b6e538969"
 menu_path: ["Type Alias: TRPCClientErrorLike<TInferrable>"]
 section_path: []
+nav_prev: {"path": "trpc/docs/typedoc/client/index/type-aliases/TRPCFetch/index.md", "title": "Type Alias: TRPCFetch()"}
+nav_next: {"path": "trpc/docs/typedoc/client/index/type-aliases/TRPCLink/index.md", "title": "Type Alias: TRPCLink()<TInferrable>"}
 ---
+
 Type Alias: TRPCClientErrorLike\\<TInferrable\\> | tRPC
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:00:46.988Z"
 content_hash: "092b9da760e58e5b83e4266b86e98ca00295f00de3c0a504953b21486379d09e"
 menu_path: ["Platform","Platform","More","More","More","Read Replicas","Read Replicas","Getting started","Getting started"]
 section_path: ["Platform","Platform","More","More","More","Read Replicas","Read Replicas","Getting started","Getting started"]
+nav_prev: {"path": "supabase/docs/guides/platform/migrating-within-supabase/dashboard-restore/index.md", "title": "Restore Dashboard backup"}
+nav_next: {"path": "supabase/docs/guides/platform/migrating-within-supabase/backup-restore/index.md", "title": "Backup and Restore using the CLI"}
 ---
+
 # 
 
 Getting started with Read Replicas
@@ -136,3 +139,4 @@ The replica status "Init failed" in the dashboard indicates that the Read Replic
 *   Very high active workloads combined with large (50+ GB) database sizes
 
 It is safe to drop this failed Read Replica, and in the event of a transient issue, attempt to spin up another one. If spinning up Read Replicas for your project consistently fails, check the[status page](https://status.supabase.com) for any ongoing incidents, or [open a support ticket](/dashboard/support/new). To aid the investigation, do not bring down the recently failed Read Replica.
+

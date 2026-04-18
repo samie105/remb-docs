@@ -9,10 +9,13 @@ last_crawled_at: "2026-04-18T16:31:57.688Z"
 content_hash: "8d973d985f0d6dccf1e49e9a15a54e49764c18ef4943f48da9386b23d288f14e"
 menu_path: ["Quickstart"]
 section_path: []
+nav_prev: {"path": "trpc/docs/index.md", "title": "tRPC | tRPC"}
+nav_next: {"path": "trpc/docs/skills/index.md", "title": "Agent Skills"}
 ---
+
 ## Installation[​](#installation "Direct link to Installation")
 
-tRPC is split between several packages, so you can install only what you need. Make sure to install the packages you want in the proper sections of your codebase. For this quickstart guide we'll keep it simple and use the vanilla client only. For framework guides, check out [usage with React](https://trpc.io/docs/client/tanstack-react-query/setup) and [usage with Next.js](https://trpc.io/docs/client/nextjs).
+tRPC is split between several packages, so you can install only what you need. Make sure to install the packages you want in the proper sections of your codebase. For this quickstart guide we'll keep it simple and use the vanilla client only. For framework guides, check out [usage with React](trpc/docs/client/tanstack-react-query/setup/index.md) and [usage with Next.js](trpc/docs/client/nextjs/index.md).
 
 Requirements
 
@@ -145,7 +148,7 @@ ts
 
 ### 3\. Using input parser to validate procedure inputs[​](#3-using-input-parser-to-validate-procedure-inputs "Direct link to 3. Using input parser to validate procedure inputs")
 
-To implement the `userById` procedure, we need to accept input from the client. tRPC lets you define [input parsers](https://trpc.io/docs/server/validators) to validate and parse the input. You can define your own input parser or use a validation library of your choice, like [zod](https://zod.dev/), [yup](https://github.com/jquense/yup), or [superstruct](https://docs.superstructjs.org/).
+To implement the `userById` procedure, we need to accept input from the client. tRPC lets you define [input parsers](trpc/docs/server/validators/index.md) to validate and parse the input. You can define your own input parser or use a validation library of your choice, like [zod](https://zod.dev/), [yup](https://github.com/jquense/yup), or [superstruct](https://docs.superstructjs.org/).
 
 You define your input parser on `publicProcedure.input()`, which can then be accessed on the resolver function as shown below:
 
@@ -264,7 +267,7 @@ ts
 
 ## Serving the API[​](#serving-the-api "Direct link to Serving the API")
 
-Now that we have defined our router, we can serve it. tRPC has first-class [adapters](https://trpc.io/docs/server/adapters) for many popular web servers. To keep it simple, we'll use the [`standalone`](https://trpc.io/docs/server/adapters/standalone) Node.js adapter here.
+Now that we have defined our router, we can serve it. tRPC has first-class [adapters](trpc/docs/server/adapters/index.md) for many popular web servers. To keep it simple, we'll use the [`standalone`](trpc/docs/server/adapters/standalone/index.md) Node.js adapter here.
 
 server/index.ts
 
@@ -318,7 +321,7 @@ ts
 
 `});`
 
-Links in tRPC are similar to links in GraphQL, they let us control the data flow to the server. In the example above, we use the [httpBatchLink](https://trpc.io/docs/client/links/httpBatchLink), which automatically batches up multiple calls into a single HTTP request. For more in-depth usage of links, see the [links documentation](https://trpc.io/docs/client/links).
+Links in tRPC are similar to links in GraphQL, they let us control the data flow to the server. In the example above, we use the [httpBatchLink](trpc/docs/client/links/httpBatchLink/index.md), which automatically batches up multiple calls into a single HTTP request. For more in-depth usage of links, see the [links documentation](trpc/docs/client/links/index.md).
 
 ### 2\. Type Inference & Autocomplete[​](#2-type-inference--autocomplete "Direct link to 2. Type Inference & Autocomplete")
 
@@ -356,22 +359,23 @@ What's next?
 
 Description
 
-[Example Apps](https://trpc.io/docs/example-apps)
+[Example Apps](trpc/docs/example-apps/index.md)
 
 Explore tRPC in your chosen framework
 
-[TanStack React Query](https://trpc.io/docs/client/tanstack-react-query/setup)
+[TanStack React Query](trpc/docs/client/tanstack-react-query/setup/index.md)
 
 Recommended React integration via `@trpc/tanstack-react-query`
 
-[Next.js](https://trpc.io/docs/client/nextjs)
+[Next.js](trpc/docs/client/nextjs/index.md)
 
 Usage with Next.js
 
-[Server Adapters](https://trpc.io/docs/server/adapters)
+[Server Adapters](trpc/docs/server/adapters/index.md)
 
 Express, Fastify, and more
 
-[Transformers](https://trpc.io/docs/server/data-transformers#using-superjson)
+[Transformers](trpc/docs/server/data-transformers/index.md#using-superjson)
 
 Use superjson to retain complex types like `Date`
+

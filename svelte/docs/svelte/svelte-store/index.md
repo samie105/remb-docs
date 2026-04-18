@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:46:27.741Z"
 content_hash: "bd715ae23423dc746074f151f587ddd9fddb52f75e90bebb722578d57e4d0a2a"
 menu_path: ["svelte/store"]
 section_path: []
+nav_prev: {"path": "svelte/docs/svelte/svelte-server/index.md", "title": "svelte/server"}
+nav_next: {"path": "svelte/docs/svelte/svelte-transition/index.md", "title": "svelte/transition"}
 ---
+
 ```
 import {
 	function derived<S extends Stores, T>(stores: S, fn: (values: StoresValues<S>, set: (value: T) => void, update: (fn: Updater<T>) => void) => Unsubscriber | void, initial_value?: T | undefined): Readable<T> (+1 overload)Derived value store by synchronizing one or more readable stores and
@@ -200,3 +203,4 @@ Update value using callback and inform subscribers.
 previous next
 
 [svelte/server](/docs/svelte/svelte-server) [svelte/transition](/docs/svelte/svelte-transition)
+

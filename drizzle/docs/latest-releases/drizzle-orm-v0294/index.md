@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:12:56.837Z"
 content_hash: "a3820e5c0b4d67c276600f1b99dddf6e5241b48e6c4702cf22dbf571c918f7a5"
 menu_path: ["Drizzle ORM - DrizzleORM v0.29.4 release"]
 section_path: []
+nav_prev: {"path": "drizzle/docs/latest-releases/drizzle-orm-v0293/index.md", "title": "Drizzle ORM - DrizzleORM v0.29.3 release"}
+nav_next: {"path": "drizzle/docs/latest-releases/drizzle-orm-v0295/index.md", "title": "Drizzle ORM - DrizzleORM v0.29.5 release"}
 ---
+
 DrizzleORM v0.29.4 release
 
 Feb 22, 2024
@@ -18,7 +21,7 @@ Feb 22, 2024
 
 ### 🎉 Neon HTTP Batch
 
-For more info you can check [Neon docs](https://neon.tech/docs/serverless/serverless-driver#issue-multiple-queries-with-the-transaction-function) and [Get started with Neon and Drizzle](https://orm.drizzle.team/docs/get-started-postgresql#neon).
+For more info you can check [Neon docs](https://neon.tech/docs/serverless/serverless-driver#issue-multiple-queries-with-the-transaction-function) and [Get started with Neon and Drizzle](drizzle/docs/get-started-postgresql/index.md#neon).
 
 ```
 import { neon } from '@neondatabase/serverless';
@@ -104,3 +107,4 @@ Starting from version 0.30.0, you will encounter an error if you attempt to use 
 
 Please make the necessary changes now to prevent any runtime errors in the future
 ```
+

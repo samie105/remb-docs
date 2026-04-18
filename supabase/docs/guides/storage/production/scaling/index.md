@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:01:23.831Z"
 content_hash: "516908f9ab3d35278f64158f25d9e450904edfcb377a02ee13639760ea6da609"
 menu_path: ["Storage","Storage","More","More","More","Going to production","Going to production","Scaling","Scaling"]
 section_path: ["Storage","Storage","More","More","More","Going to production","Going to production","Scaling","Scaling"]
+nav_prev: {"path": "supabase/docs/guides/storage/management/download-objects/index.md", "title": "Download Objects"}
+nav_next: {"path": "supabase/docs/guides/storage/s3/authentication/index.md", "title": "S3 Authentication"}
 ---
+
 # 
 
 Storage Optimizations
@@ -69,3 +72,4 @@ Using the SDK:
 ## Optimizing RLS[#](#optimizing-rls)
 
 When creating RLS policies against the storage tables you can add indexes to the interested columns to speed up the lookup
+

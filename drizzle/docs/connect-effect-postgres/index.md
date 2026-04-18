@@ -9,14 +9,17 @@ last_crawled_at: "2026-04-18T16:38:41.095Z"
 content_hash: "d122230831f62526b9d3dfc7d8867bfe155f07f4e756f182e153cf083cdf69ae"
 menu_path: ["Drizzle <> Effect Postgres"]
 section_path: []
+nav_prev: {"path": "drizzle/docs/connect-bun-sql/index.md", "title": "Drizzle <> Bun SQL"}
+nav_next: {"path": "drizzle/docs/connect-planetscale/index.md", "title": "Drizzle <> PlanetScale MySQL"}
 ---
+
 WARNING
 
 This page explains concepts available on drizzle versions `1.0.0-beta.9` and higher.
 
 Effect is only available for PostgreSQL right now and soon be implemented for all other dialects
 
-On how to upgrade (read more [here](https://orm.drizzle.team/docs/upgrade-v1))
+On how to upgrade (read more [here](drizzle/docs/upgrade-v1/index.md))
 
 Drizzle has native support for Effect PostgreSQL connections with the `@effect/sql-pg` driver.
 
@@ -234,3 +237,4 @@ const program = Effect.gen(function*() {
 *   `EffectCache.layerFromDrizzle(cache)` - Creates an Effect Layer from a Drizzle cache (useful for composing with other layers)
 
 #### What’s next?[](#whats-next)
+

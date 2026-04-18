@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:33:41.766Z"
 content_hash: "3096dba06372943474563eaabcc00ae000493fb345407c70591bbefc472cf1c8"
 menu_path: ["PostgreSQL: Documentation: 18: 42.11. PL/Tcl Configuration"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/default-roles.html/index.md", "title": "PostgreSQL: Documentation: 18: O.2.\u00a0Default Roles Renamed to Predefined Roles"}
+nav_next: {"path": "postgres/docs/current/textsearch-features.html/index.md", "title": "PostgreSQL: Documentation: 18: 12.4.\u00a0Additional Features"}
 ---
+
 This section lists configuration parameters that affect PL/Tcl.
 
 `pltcl.start_proc` (`string`) [#](#GUC-PLTCL-START-PROC)
@@ -25,3 +28,4 @@ Only superusers can change this setting. Although this setting can be changed wi
 `pltclu.start_proc` (`string`) [#](#GUC-PLTCLU-START-PROC)
 
 This parameter is exactly like `pltcl.start_proc`, except that it applies to PL/TclU. The referenced function must be written in the `pltclu` language.
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:35:02.070Z"
 content_hash: "b73b7adbd9fb374e3800d64fd1cd2160e9b0d4e0751f34f28e3f2128cbc3b030"
 menu_path: ["PostgreSQL: Documentation: 18: O.5. pg_receivexlog renamed to pg_receivewal"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/libpq-connect.html/index.md", "title": "PostgreSQL: Documentation: 18: 32.1.\u00a0Database Connection Control Functions"}
+nav_next: {"path": "postgres/docs/current/rules-privileges.html/index.md", "title": "PostgreSQL: Documentation: 18: 39.5.\u00a0Rules and Privileges"}
 ---
+
 Development Versions: [devel](https://www.postgresql.org/docs/devel/app-pgreceivexlog.html "PostgreSQL devel - O.5. pg_receivexlog renamed to pg_receivewal")
 
 O.5. `pg_receivexlog` renamed to `pg_receivewal`
@@ -41,3 +44,4 @@ O.4. `pg_resetxlog` renamed to `pg_resetwal` 
 [Home](https://www.postgresql.org/docs/current/index.html "PostgreSQL 18.3 Documentation")
 
  Bibliography
+

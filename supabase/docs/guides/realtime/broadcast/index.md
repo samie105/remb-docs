@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:48:56.046Z"
 content_hash: "d76b018f2e75fe7ca4729ee88845fd1b48b8c36654000186dddb74069d18b0ec"
 menu_path: ["Realtime","Realtime","Usage","Usage","Broadcast","Broadcast"]
 section_path: ["Realtime","Realtime","Usage","Usage","Broadcast","Broadcast"]
+nav_prev: {"path": "supabase/docs/guides/realtime/authorization/index.md", "title": "Realtime Authorization"}
+nav_next: {"path": "supabase/docs/guides/realtime/benchmarks/index.md", "title": "Benchmarks"}
 ---
+
 # 
 
 Broadcast
@@ -236,3 +239,4 @@ A few common use cases for Broadcast Replay include:
 *   Loading the last events that happened during a sports event
 *   Ensuring users always see the latest events after a page reload or network interruption
 *   Highlighting the most recent sections that changed in a web page
+

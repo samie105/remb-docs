@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:45:35.500Z"
 content_hash: "a1ef1331a287eb8ed4874e4dd85f198472a63ebbd786424e81982003d1e24f33"
 menu_path: ["Handling exceptions and errors"]
 section_path: []
+nav_prev: {"path": "prisma/docs/orm/prisma-client/debugging-and-troubleshooting/debugging/index.md", "title": "Debugging"}
+nav_next: {"path": "prisma/docs/orm/prisma-client/deployment/caveats-when-deploying-to-aws-platforms/index.md", "title": "Caveats when deploying to AWS platforms"}
 ---
+
 Debugging and Troubleshooting
 
 This page covers how to handle exceptions and errors
@@ -26,7 +29,7 @@ model User {
 }
 ```
 
-Use the `Prisma` namespace to access the error type. The [error code](https://www.prisma.io/docs/orm/reference/error-reference#error-codes) can then be checked and a message can be printed.
+Use the `Prisma` namespace to access the error type. The [error code](prisma/docs/orm/reference/error-reference/index.md#error-codes) can then be checked and a message can be printed.
 
 ```
 import { PrismaPg } from "@prisma/adapter-pg";
@@ -51,6 +54,7 @@ try {
 }
 ```
 
-See [Errors reference](https://www.prisma.io/docs/orm/reference/error-reference) for a detailed breakdown of the different error types and their codes.
+See [Errors reference](prisma/docs/orm/reference/error-reference/index.md) for a detailed breakdown of the different error types and their codes.
 
 [Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/prisma-client/debugging-and-troubleshooting/handling-exceptions-and-errors.mdx)
+

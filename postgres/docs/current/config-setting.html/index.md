@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:45:32.480Z"
 content_hash: "867c9fcf4cb2e28ec7b9f636743ef100d4a5fd0503c6fdbdfee13558f2a9ff7b"
 menu_path: ["PostgreSQL: Documentation: 18: 19.1. Setting Parameters"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/sql-copy.html/index.md", "title": "PostgreSQL: Documentation: 18: COPY"}
+nav_next: {"path": "postgres/docs/current/sql-alterlanguage.html/index.md", "title": "PostgreSQL: Documentation: 18: ALTER LANGUAGE"}
 ---
+
 ### 19.1.1. Parameter Names and Values [#](#CONFIG-SETTING-NAMES-VALUES)
 
 All parameter names are case-insensitive. Every parameter takes a value of one of five types: boolean, string, integer, floating point, or enumerated (enum). The type determines the syntax for setting the parameter:
@@ -50,7 +53,7 @@ The configuration file is reread whenever the main server process receives a SIG
 
 In addition to `postgresql.conf`, a PostgreSQL data directory contains a file `postgresql.auto.conf`, which has the same format as `postgresql.conf` but is intended to be edited automatically, not manually. This file holds settings provided through the [`ALTER SYSTEM`](https://www.postgresql.org/docs/current/sql-altersystem.html "ALTER SYSTEM") command. This file is read whenever `postgresql.conf` is, and its settings take effect in the same way. Settings in `postgresql.auto.conf` override those in `postgresql.conf`.
 
-External tools may also modify `postgresql.auto.conf`. It is not recommended to do this while the server is running unless [allow\_alter\_system](https://www.postgresql.org/docs/current/runtime-config-compatible.html#GUC-ALLOW-ALTER-SYSTEM) is set to `off`, since a concurrent `ALTER SYSTEM` command could overwrite such changes. Such tools might simply append new settings to the end, or they might choose to remove duplicate settings and/or comments (as `ALTER SYSTEM` will).
+External tools may also modify `postgresql.auto.conf`. It is not recommended to do this while the server is running unless [allow\_alter\_system](postgres/docs/current/runtime-config-compatible.html/index.md#GUC-ALLOW-ALTER-SYSTEM) is set to `off`, since a concurrent `ALTER SYSTEM` command could overwrite such changes. Such tools might simply append new settings to the end, or they might choose to remove duplicate settings and/or comments (as `ALTER SYSTEM` will).
 
 The system view [`pg_file_settings`](https://www.postgresql.org/docs/current/view-pg-file-settings.html "53.8. pg_file_settings") can be helpful for pre-testing changes to the configuration files, or for diagnosing problems if a SIGHUP signal did not have the desired effects.
 
@@ -147,3 +150,4 @@ You might instead use this approach to naming the files descriptively:
 02server-foo.conf
 
 This sort of arrangement gives a unique name for each configuration file variation. This can help eliminate ambiguity when several servers have their configurations all stored in one place, such as in a version control repository. (Storing database configuration files under version control is another good practice to consider.)
+

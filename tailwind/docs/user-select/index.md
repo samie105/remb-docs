@@ -9,15 +9,9 @@ last_crawled_at: "2026-04-18T17:17:57.503Z"
 content_hash: "a6a62748db6e7bd7c924b781d212440af198d4168c3765840233c8c395c8156f"
 menu_path: ["user-select"]
 section_path: []
+nav_prev: {"path": "tailwind/docs/touch-action/index.md", "title": "touch-action"}
+nav_next: {"path": "tailwind/docs/will-change/index.md", "title": "will-change"}
 ---
-[](/)
-
-[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
-
-1.  Interactivity
-2.  user-select
-
-Interactivity
 
 # user-select
 
@@ -128,3 +122,4 @@ Make your ideas look awesome, without relying on a designer.
 ](https://www.refactoringui.com/?ref=sidebar)
 
 Copyright © 2026 Tailwind Labs Inc.·[Trademark Policy](/brand)
+

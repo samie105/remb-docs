@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:34:52.185Z"
 content_hash: "ee4d2881b70b522bfdf7c23b63769a5a2abaa2acfe2536910bd8eec81e7cf5ad"
 menu_path: ["dgram - Node documentation"]
 section_path: []
+nav_prev: {"path": "deno/deno/api/node/crypto/index.md", "title": "crypto - Node documentation"}
+nav_next: {"path": "deno/deno/api/node/diagnostics_channel/index.md", "title": "diagnostics_channel - Node documentation"}
 ---
+
 ### Usage in Deno
 
 ```typescript
@@ -135,3 +138,4 @@ T
 [SocketType](.././dgram/~/SocketType "SocketType")
 
 No documentation available
+

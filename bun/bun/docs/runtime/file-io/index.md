@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:59:34.238Z"
 content_hash: "c71a03f1f104c8de89fcf53084f0b10ed5fa1e491ba674d013b09173b854dcb6"
 menu_path: ["File I/O"]
 section_path: []
+nav_prev: {"path": "bun/bun/docs/runtime/ffi/index.md", "title": "FFI"}
+nav_next: {"path": "bun/bun/docs/runtime/file-system-router/index.md", "title": "File System Router"}
 ---
+
 * * *
 
 ## Reading files (`Bun.file()`)
@@ -374,3 +377,4 @@ export interface FileSink {
   unref(): void;
 }
 ```
+

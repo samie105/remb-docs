@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:15:51.703Z"
 content_hash: "c7c782f05b4cd8dd558e06ae0b41b2be4d0ccdc9933364bb858a89ce419f1eb5"
 menu_path: ["All Symbols - Web documentation"]
 section_path: []
+nav_prev: {"path": "deno/deno/api/node/index.md", "title": "Node.js Built-in APIs"}
+nav_next: {"path": "deno/deno/api/node/assert/strict/index.md", "title": "namespace assert.strict"}
 ---
+
 I
 
 v
@@ -2762,3 +2765,4 @@ v
 Events measuring progress of an underlying process, like an HTTP request (for an XMLHttpRequest, or the loading of the underlying resource of an ,
 
 , ,
+

@@ -9,15 +9,9 @@ last_crawled_at: "2026-04-18T16:59:41.406Z"
 content_hash: "63084324e1c7de69af367d5d9d2d108ecec4b7963b4149f10134a5ebaf436c8a"
 menu_path: ["vertical-align"]
 section_path: []
+nav_prev: {"path": "tailwind/docs/text-indent/index.md", "title": "text-indent"}
+nav_next: {"path": "tailwind/docs/white-space/index.md", "title": "white-space"}
 ---
-[](/)
-
-[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
-
-1.  Typography
-2.  vertical-align
-
-Typography
 
 # vertical-align
 
@@ -179,3 +173,4 @@ Short, tactical video lessons from the creator of Tailwind CSS, delivered direct
 [Get the free course](/build-uis-that-dont-suck)
 
 Copyright © 2026 Tailwind Labs Inc.·[Trademark Policy](/brand)
+

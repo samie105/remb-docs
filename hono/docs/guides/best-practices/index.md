@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:45:23.631Z"
 content_hash: "3ceb55ecbf029f34ba2af25d6b1127178462a912214107983a61fb9c12e31ee1"
 menu_path: ["Best Practices ​"]
 section_path: []
+nav_prev: {"path": "hono/docs/guides/rpc/index.md", "title": "RPC \u200b"}
+nav_next: {"path": "hono/docs/guides/others/index.md", "title": "Miscellaneous \u200b"}
 ---
+
 Hono is very flexible. You can write your app as you like. However, there are best practices that are better to follow.
 
 ## Don't make "Controllers" when possible [​](#don-t-make-controllers-when-possible)
@@ -55,7 +58,7 @@ app.get('/books/:id', (c) => {
 
 ## `factory.createHandlers()` in `hono/factory` [​](#factory-createhandlers-in-hono-factory)
 
-If you still want to create a RoR-like Controller, use `factory.createHandlers()` in [`hono/factory`](https://hono.dev/docs/helpers/factory). If you use this, type inference will work correctly.
+If you still want to create a RoR-like Controller, use `factory.createHandlers()` in [`hono/factory`](hono/docs/helpers/factory/index.md). If you use this, type inference will work correctly.
 
 ts
 
@@ -166,4 +169,5 @@ import { hc } from 'hono/client'
 const client = hc<AppType>('http://localhost') // Typed correctly
 ```
 
-For more detailed information, please see [the RPC page](https://hono.dev/docs/guides/rpc#using-rpc-with-larger-applications).
+For more detailed information, please see [the RPC page](hono/docs/guides/rpc/index.md#using-rpc-with-larger-applications).
+

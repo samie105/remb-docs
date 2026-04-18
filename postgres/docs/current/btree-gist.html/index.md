@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:47:28.702Z"
 content_hash: "f5dd71ea7c755e45c013bbbcc2bf026a4a8edf8d54bed2719ff0f5723423990d"
 menu_path: ["PostgreSQL: Documentation: 18: F.8. btree_gist — GiST operator classes with B-tree behavior"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/sql-prepare-transaction.html/index.md", "title": "PostgreSQL: Documentation: 18: PREPARE TRANSACTION"}
+nav_next: {"path": "postgres/docs/current/ddl-basics.html/index.md", "title": "PostgreSQL: Documentation: 18: 5.1.\u00a0Table Basics"}
 ---
+
 `btree_gist` provides GiST index operator classes that implement B-tree equivalent behavior for the data types `int2`, `int4`, `int8`, `float4`, `float8`, `numeric`, `timestamp with time zone`, `timestamp without time zone`, `time with time zone`, `time without time zone`, `date`, `interval`, `oid`, `money`, `char`, `varchar`, `text`, `bytea`, `bit`, `varbit`, `macaddr`, `macaddr8`, `inet`, `cidr`, `uuid`, `bool` and all `enum` types.
 
 In general, these operator classes will not outperform the equivalent standard B-tree index methods, and they lack one major feature of the standard B-tree code: the ability to enforce uniqueness. However, they provide some other features that are not available with a B-tree index, as described below. Also, these operator classes are useful when a multicolumn GiST index is needed, wherein some of the columns are of data types that are only indexable with GiST but other columns are just simple data types. Lastly, these operator classes are useful for GiST testing and as a base for developing other GiST operator classes.
@@ -51,3 +54,4 @@ ERROR:  conflicting key value violates exclusion constraint "zoo\_cage\_animal\_
 DETAIL:  Key (cage, animal)=(123, lion) conflicts with existing key (cage, animal)=(123, zebra).
 => INSERT INTO zoo VALUES(124, 'lion');
 INSERT 0 1
+

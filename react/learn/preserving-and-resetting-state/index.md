@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:42:47.977Z"
 content_hash: "a0771155f6990ecd722f6d82fbeb48e54b9095832e09d34916c0af4b017fe65c"
 menu_path: ["Preserving and Resetting State"]
 section_path: []
+nav_prev: {"path": "react/learn/sharing-state-between-components/index.md", "title": "Sharing State Between Components"}
+nav_next: {"path": "react/learn/extracting-state-logic-into-a-reducer/index.md", "title": "Extracting State Logic into a Reducer"}
 ---
+
 State is isolated between components. React keeps track of which state belongs to which component based on their place in the UI tree. You can control when to preserve state and when to reset it between re-renders.
 
 ### You will learn
@@ -20,7 +23,7 @@ State is isolated between components. React keeps track of which state belongs t
 
 ## State is tied to a position in the render tree[](#state-is-tied-to-a-position-in-the-tree "Link for State is tied to a position in the render tree ")
 
-React builds [render trees](https://react.dev/learn/understanding-your-ui-as-a-tree#the-render-tree) for the component structure in your UI.
+React builds [render trees](react/learn/understanding-your-ui-as-a-tree/index.md#the-render-tree) for the component structure in your UI.
 
 When you give a component state, you might think the state “lives” inside the component. But the state is actually held inside React. React associates each piece of state it’s holding with the correct component by where that component sits in the render tree.
 
@@ -180,7 +183,7 @@ This solution is convenient when you only have a few independent components rend
 
 There is also another, more generic, way to reset a component’s state.
 
-You might have seen `key`s when [rendering lists.](https://react.dev/learn/rendering-lists#keeping-list-items-in-order-with-key) Keys aren’t just for lists! You can use keys to make React distinguish between any components. By default, React uses order within the parent (“first counter”, “second counter”) to discern between components. But keys let you tell React that this is not just a _first_ counter, or a _second_ counter, but a specific counter—for example, _Taylor’s_ counter. This way, React will know _Taylor’s_ counter wherever it appears in the tree!
+You might have seen `key`s when [rendering lists.](react/learn/rendering-lists/index.md#keeping-list-items-in-order-with-key) Keys aren’t just for lists! You can use keys to make React distinguish between any components. By default, React uses order within the parent (“first counter”, “second counter”) to discern between components. But keys let you tell React that this is not just a _first_ counter, or a _second_ counter, but a specific counter—for example, _Taylor’s_ counter. This way, React will know _Taylor’s_ counter wherever it appears in the tree!
 
 In this example, the two `<Counter />`s don’t share state even though they appear in the same place in JSX:
 
@@ -221,7 +224,7 @@ Now switching the recipient always clears the text field:
 In a real chat app, you’d probably want to recover the input state when the user selects the previous recipient again. There are a few ways to keep the state “alive” for a component that’s no longer visible:
 
 *   You could render _all_ chats instead of just the current one, but hide all the others with CSS. The chats would not get removed from the tree, so their local state would be preserved. This solution works great for simple UIs. But it can get very slow if the hidden trees are large and contain a lot of DOM nodes.
-*   You could [lift the state up](https://react.dev/learn/sharing-state-between-components) and hold the pending message for each recipient in the parent component. This way, when the child components get removed, it doesn’t matter, because it’s the parent that keeps the important information. This is the most common solution.
+*   You could [lift the state up](react/learn/sharing-state-between-components/index.md) and hold the pending message for each recipient in the parent component. This way, when the child components get removed, it doesn’t matter, because it’s the parent that keeps the important information. This is the most common solution.
 *   You might also use a different source in addition to React state. For example, you probably want a message draft to persist even if the user accidentally closes the page. To implement this, you could have the `Chat` component initialize its state by reading from the [`localStorage`](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage), and save the drafts there too.
 
 No matter which strategy you pick, a chat _with Alice_ is conceptually distinct from a chat _with Bob_, so it makes sense to give a `key` to the `<Chat>` tree based on the current recipient.
@@ -246,3 +249,4 @@ of
 Fix disappearing input text[](#fix-disappearing-input-text "Link for this heading")
 
 This example shows a message when you press the button. However, pressing the button also accidentally resets the input. Why does this happen? Fix it so that pressing the button does not reset the input text.
+

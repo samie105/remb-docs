@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:39:10.843Z"
 content_hash: "545b6b7f550a579ddb62ee48a4eaaba2520949ed4df700e850e026afdee77380"
 menu_path: ["PostgreSQL: Documentation: 18: 7.7. VALUES Lists"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/bki-example.html/index.md", "title": "PostgreSQL: Documentation: 18: 68.6.\u00a0BKI Example"}
+nav_next: {"path": "postgres/docs/current/logical-replication-col-lists.html/index.md", "title": "PostgreSQL: Documentation: 18: 29.5.\u00a0Column Lists"}
 ---
+
 `VALUES` provides a way to generate a “constant table” that can be used in a query without having to actually create and populate a table on-disk. The syntax is
 
 VALUES ( _`expression`_ \[, ...\] ) \[, ...\]
@@ -45,3 +48,4 @@ SELECT _`select_list`_ FROM _`table_expression`_
 and can appear anywhere a `SELECT` can. For example, you can use it as part of a `UNION`, or attach a _`sort_specification`_ (`ORDER BY`, `LIMIT`, and/or `OFFSET`) to it. `VALUES` is most commonly used as the data source in an `INSERT` command, and next most commonly as a subquery.
 
 For more information see [VALUES](https://www.postgresql.org/docs/current/sql-values.html "VALUES").
+

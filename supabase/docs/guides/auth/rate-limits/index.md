@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:38:45.375Z"
 content_hash: "9ae7d80641178f11ecce350613199a1ff2abb0e9230b31a89deeae2b2f152a0f"
 menu_path: ["Auth","Auth","Security","Security","Rate Limits","Rate Limits"]
 section_path: ["Auth","Auth","Security","Security","Rate Limits","Rate Limits"]
+nav_prev: {"path": "supabase/docs/guides/auth/passwords/index.md", "title": "Password-based Auth"}
+nav_next: {"path": "supabase/docs/guides/auth/phone-login/index.md", "title": "Phone Login"}
 ---
+
 # 
 
 Rate limits
@@ -155,3 +158,4 @@ Once IP address forwarding is enabled, set the `Sb-Forwarded-For` header using t
 ```
 1import { createServerClient } from '@supabase/ssr'23const supabase = createServerClient(4  'https://<your-project-id>.supabase.co',5  '<your-secret-key>', // Key should start with sb_secret6  {7    global: {8      headers: {9        'sb-forwarded-for': request.headers.get('x-forwarded-for'),10      },11    },12  }13)
 ```
+

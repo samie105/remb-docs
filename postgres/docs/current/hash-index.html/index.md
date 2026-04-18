@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:54:27.980Z"
 content_hash: "921df280dafeda6d778b95b979a1cccd851808597a2cfb71cab2e4d55d00de6d"
 menu_path: ["PostgreSQL: Documentation: 18: 65.6. Hash Indexes"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/datatype-xml.html/index.md", "title": "PostgreSQL: Documentation: 18: 8.13.\u00a0XML Type"}
+nav_next: {"path": "postgres/docs/current/upgrading.html/index.md", "title": "PostgreSQL: Documentation: 18: 18.6.\u00a0Upgrading a PostgreSQL Cluster"}
 ---
+
 ### 65.6.1. Overview [#](#HASH-INTRO)
 
 PostgreSQL includes an implementation of persistent on-disk hash indexes, which are fully crash recoverable. Any data type can be indexed by a hash index, including data types that do not have a well-defined linear ordering. Hash indexes store only the hash value of the data being indexed, thus there are no restrictions on the size of the data column being indexed.
@@ -45,3 +48,4 @@ Primary bucket pages and overflow pages are allocated independently since any gi
 Each row in the table indexed is represented by a single index tuple in the hash index. Hash index tuples are stored in bucket pages, and if they exist, overflow pages. We speed up searches by keeping the index entries in any one index page sorted by hash code, thus allowing binary search to be used within an index page. Note however that there is \*no\* assumption about the relative ordering of hash codes across different index pages of a bucket.
 
 The bucket splitting algorithms to expand the hash index are too complex to be worthy of mention here, though are described in more detail in `src/backend/access/hash/README`. The split algorithm is crash safe and can be restarted if not completed successfully.
+

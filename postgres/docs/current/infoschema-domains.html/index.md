@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:33:33.127Z"
 content_hash: "606f3435710d080f4255284eade2e3035e01f205cbb82df7dc1f55f54e188b6f"
 menu_path: ["PostgreSQL: Documentation: 18: 35.23. domains"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/queries-select-lists.html/index.md", "title": "PostgreSQL: Documentation: 18: 7.3.\u00a0Select Lists"}
+nav_next: {"path": "postgres/docs/current/default-roles.html/index.md", "title": "PostgreSQL: Documentation: 18: O.2.\u00a0Default Roles Renamed to Predefined Roles"}
 ---
+
 Column Type
 
 Description
@@ -121,3 +124,4 @@ Always null, because arrays always have unlimited maximum cardinality in Postgre
 `dtd_identifier` `sql_identifier`
 
 An identifier of the data type descriptor of the domain, unique among the data type descriptors pertaining to the domain (which is trivial, because a domain only contains one data type descriptor). This is mainly useful for joining with other instances of such identifiers. (The specific format of the identifier is not defined and not guaranteed to remain the same in future versions.)
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:05:20.925Z"
 content_hash: "968024e92038d40acf1d9bd404a084a9243703ae1f0486891e198f23ea9f1722"
 menu_path: ["mask-image"]
 section_path: []
+nav_prev: {"path": "tailwind/docs/mask-composite/index.md", "title": "mask-composite"}
+nav_next: {"path": "tailwind/docs/mask-mode/index.md", "title": "mask-mode"}
 ---
+
 Utilities for controlling an element's mask image.
 
 Class
@@ -150,7 +153,7 @@ mask-radial-at-bottom-right
 <div class="mask-radial-at-top-left mask-radial-from-100% bg-[url(/img/mountains.jpg)] ..."></div><div class="mask-radial-at-top mask-radial-from-100% bg-[url(/img/mountains.jpg)] ..."></div><div class="mask-radial-at-top-right mask-radial-from-100% bg-[url(/img/mountains.jpg)] ..."></div><div class="mask-radial-at-left mask-radial-from-100% bg-[url(/img/mountains.jpg)] ..."></div><div class="mask-radial-at-center mask-radial-from-100% bg-[url(/img/mountains.jpg)] ..."></div><div class="mask-radial-at-right mask-radial-from-100% bg-[url(/img/mountains.jpg)] ..."></div><div class="mask-radial-at-bottom-left mask-radial-from-100% bg-[url(/img/mountains.jpg)] ..."></div><div class="mask-radial-at-bottom mask-radial-from-100% bg-[url(/img/mountains.jpg)] ..."></div><div class="mask-radial-at-bottom-right mask-radial-from-100% bg-[url(/img/mountains.jpg)] ..."></div>
 ```
 
-This is different from [`mask-position`](https://tailwindcss.com/docs/mask-position) which sets the position of the mask image itself, not the radial gradient.
+This is different from [`mask-position`](tailwind/docs/mask-position/index.md) which sets the position of the mask image itself, not the radial gradient.
 
 #### [Setting the radial size](#setting-the-radial-size)
 
@@ -194,7 +197,7 @@ Gradient mask utilities, like `mask-radial-from-<value>`, `mask-conic-to-<value>
 <div class="mask-b-from-50% mask-radial-[50%_90%] mask-radial-from-80% bg-[url(/img/mountains.jpg)] ..."></div><div class="mask-r-from-80% mask-b-from-80% mask-radial-from-70% mask-radial-to-85% bg-[url(/img/mountains.jpg)] ..."></div>
 ```
 
-This behavior relies on the fact that Tailwind sets the [`mask-composite` property](https://tailwindcss.com/docs/mask-composite) to `intersect` by default. Changing this property will affect how the gradient masks are combined.
+This behavior relies on the fact that Tailwind sets the [`mask-composite` property](tailwind/docs/mask-composite/index.md) to `intersect` by default. Changing this property will affect how the gradient masks are combined.
 
 ### [Removing mask images](#removing-mask-images)
 
@@ -228,7 +231,7 @@ Prefix a `mask-image` utility with a breakpoint variant like `md:` to only apply
 <div class="mask-radial-from-70% md:mask-radial-from-50% ...">  <!-- ... --></div>
 ```
 
-Learn more about using variants in the [variants documentation](https://tailwindcss.com/docs/hover-focus-and-other-states).
+Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).
 
 ## [Customizing your theme](#customizing-your-theme)
 
@@ -244,4 +247,5 @@ Now utilities like `mask-radial-from-regal-blue`,`mask-conic-to-regal-blue`, and
 <div class="mask-radial-from-regal-blue">  <!-- ... --></div>
 ```
 
-Learn more about customizing your theme in the [theme documentation](https://tailwindcss.com/docs/theme#customizing-your-theme).
+Learn more about customizing your theme in the [theme documentation](tailwind/docs/theme/index.md#customizing-your-theme).
+

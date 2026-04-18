@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:50:17.914Z"
 content_hash: "afbb9af7f99ad2be16107ab3201f138c298bb31fd660f850f149425609abb815"
 menu_path: ["Add a trusted dependency"]
 section_path: []
+nav_prev: {"path": "bun/bun/docs/guides/install/registry-scope/index.md", "title": "Configure a private registry for an organization scope with bun install"}
+nav_next: {"path": "bun/bun/docs/guides/install/workspaces/index.md", "title": "Configuring a monorepo using workspaces"}
 ---
+
 [Skip to main content](#content-area)
 
 [Bun home page![light logo](https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z_zHyy/logo/logo-with-wordmark-dark.svg?fit=max&auto=format&n=JUhaF6Mf68z_zHyy&q=85&s=3f55cd23822028e40658b192c927f3e4)![dark logo](https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z_zHyy/logo/logo-with-wordmark-light.svg?fit=max&auto=format&n=JUhaF6Mf68z_zHyy&q=85&s=8a0c5928d9dc3631f0d33e17c257e2ec)](/docs)
@@ -92,3 +95,4 @@ Generate a yarn-compatible lockfile
 Next
 
 ](/docs/guides/install/yarnlock)
+

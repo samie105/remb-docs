@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:34:58.733Z"
 content_hash: "2c7eff5a282043a08b50730876b1843b9bff5c4ac5c5bc125b0c6185bddd42a4"
 menu_path: ["How to do automatic retries with supabase-js"]
 section_path: []
+nav_prev: {"path": "supabase/docs/guides/api/api-keys/index.md", "title": "Understanding API keys"}
+nav_next: {"path": "supabase/docs/guides/api/creating-routes/index.md", "title": "Creating API Routes"}
 ---
+
 # 
 
 How to do automatic retries with `supabase-js`
@@ -91,3 +94,4 @@ By using `retryOn` with a custom function, you can define specific conditions fo
 ## Conclusion[#](#conclusion)
 
 For most use cases, the built-in PostgREST retry mechanism is sufficient. Use `fetch-retry` when you need retries on non-PostgREST requests or need fine-grained control over retry behavior.
+

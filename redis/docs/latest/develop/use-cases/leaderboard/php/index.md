@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:10:36.613Z"
 content_hash: "6224e5a9319c86e443741331dcb9ffe5a301a547451f98ef768238312a3476c6"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Redis leaderboard","→","Redis leaderboard","→\n      \n        Redis leaderboard with PHP","→","Redis leaderboard with PHP"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Redis leaderboard","→","Redis leaderboard","→\n      \n        Redis leaderboard with PHP","→","Redis leaderboard with PHP"]
+nav_prev: {"path": "redis/docs/latest/operate/oss_and_stack/management/persistence/index.md", "title": "Redis persistence"}
+nav_next: {"path": "redis/docs/latest/operate/redisinsight/proxy/index.md", "title": "Subpath proxy"}
 ---
+
 # Redis leaderboard with PHP
 
 Implement a Redis leaderboard in PHP with Predis and sorted sets
@@ -227,3 +230,4 @@ Some leaderboards are permanent, while others reset daily, weekly, or seasonally
 Per-user hashes work best for small, frequently accessed profile details. Large profile documents or rarely used attributes are often better kept in another store, with Redis holding only the fields needed to render the leaderboard quickly.
 
 ## On this page
+

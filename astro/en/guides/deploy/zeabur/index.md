@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:37:57.538Z"
 content_hash: "d781c4912e7a457a60376ba04e681216a4abc51cf27e6092e3ba7e493bcd7d64"
 menu_path: ["Deploy your Astro Site to Zeabur"]
 section_path: []
+nav_prev: {"path": "astro/en/guides/deploy/vercel/index.md", "title": "Deploy your Astro Site to Vercel"}
+nav_next: {"path": "astro/en/guides/deploy/zephyr/index.md", "title": "Deploy your Astro Site to Zephyr Cloud"}
 ---
+
 # Deploy your Astro Site to Zeabur
 
 [Zeabur](https://zeabur.com) offers hosting for full-stack web applications. Astro sites can be hosted as both SSR or static output.
@@ -197,3 +200,4 @@ Learn more about Zeabur’s [Deployment Guide](https://zeabur.com/docs/get-start
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

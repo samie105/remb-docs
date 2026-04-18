@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:47:29.180Z"
 content_hash: "be3072c5094b86946a0aabe7c222c0d981c2b5bbefd4c13d15e055ca913ee7fa"
 menu_path: ["Platform","Platform","Add-ons","Add-ons","Custom Domains","Custom Domains"]
 section_path: ["Platform","Platform","Add-ons","Add-ons","Custom Domains","Custom Domains"]
+nav_prev: {"path": "supabase/docs/guides/platform/database-size/index.md", "title": "Understanding Database and Disk Size"}
+nav_next: {"path": "supabase/docs/guides/platform/get-set-up-for-billing/index.md", "title": "Get set up for billing"}
 ---
+
 # 
 
 Custom Domains
@@ -229,3 +232,4 @@ Use the [`vanity-subdomains delete`](/docs/reference/cli/supabase-vanity-subdoma
 ## Pricing[#](#pricing)
 
 For a detailed breakdown of how charges are calculated, refer to [Manage Custom Domain usage](/docs/guides/platform/manage-your-usage/custom-domains).
+

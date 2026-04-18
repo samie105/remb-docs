@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:35:51.393Z"
 content_hash: "ae3a2c6e250fceabf7a6401266bbde906e061e5ac710f45c83f34e1891f5887c"
 menu_path: ["Validation-and-Serialization"]
 section_path: []
+nav_prev: {"path": "fastify/docs/latest/Reference/TypeScript/index.md", "title": "TypeScript"}
+nav_next: {"path": "fastify/docs/latest/Guides/Write-Type-Provider/index.md", "title": "Write-Type-Provider"}
 ---
+
 Version: latest (v5.8.x)
 
 ## Validation and Serialization[​](#validation-and-serialization "Direct link to Validation and Serialization")
@@ -389,3 +392,4 @@ fastify.addSchema({  $id: 'http://foo/shared.json',  type: 'object',  definition
 *   [Ajv i18n](https://github.com/ajv-validator/ajv-i18n)
 *   [Ajv custom errors](https://github.com/ajv-validator/ajv-errors)
 *   Custom error handling with core methods with error file dumping [example](https://github.com/fastify/example/tree/main/validation-messages)
+

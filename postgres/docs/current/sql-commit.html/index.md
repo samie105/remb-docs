@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:46:57.807Z"
 content_hash: "fa84b8a3dcdb8858aae04e872c2f1161b1c87cebfc7a53563c85786fe4dfe4ee"
 menu_path: ["PostgreSQL: Documentation: 18: COMMIT"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/infoschema-role-routine-grants.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.36.\u00a0role_routine_grants"}
+nav_next: {"path": "postgres/docs/current/indexes-unique.html/index.md", "title": "PostgreSQL: Documentation: 18: 11.6.\u00a0Unique Indexes"}
 ---
+
 COMMIT — commit the current transaction
 
 ## Synopsis
@@ -46,3 +49,4 @@ COMMIT;
 ## Compatibility
 
 The command `COMMIT` conforms to the SQL standard. The form `COMMIT TRANSACTION` is a PostgreSQL extension.
+

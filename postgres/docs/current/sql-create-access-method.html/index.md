@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:43:32.373Z"
 content_hash: "309ad30a8c05864b08cae97fc60a4343af09d6588183e1972539bc53932c7e41"
 menu_path: ["PostgreSQL: Documentation: 18: CREATE ACCESS METHOD"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/sql-droptablespace.html/index.md", "title": "PostgreSQL: Documentation: 18: DROP TABLESPACE"}
+nav_next: {"path": "postgres/docs/current/ecpg-concept.html/index.md", "title": "PostgreSQL: Documentation: 18: 34.1.\u00a0The Concept"}
 ---
+
 CREATE ACCESS METHOD — define a new access method
 
 ## Synopsis
@@ -49,3 +52,4 @@ CREATE ACCESS METHOD heptree TYPE INDEX HANDLER heptree\_handler;
 ## Compatibility
 
 `CREATE ACCESS METHOD` is a PostgreSQL extension.
+

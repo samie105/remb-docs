@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:38:52.464Z"
 content_hash: "a94634e206f1e7b348d1b7595c624a67410a691bc99160a7fa0a929883fc39fa"
 menu_path: ["Colors"]
 section_path: []
+nav_prev: {"path": "tailwind/docs/theme/index.md", "title": "Theme variables"}
+nav_next: {"path": "tailwind/docs/adding-custom-styles/index.md", "title": "Adding custom styles"}
 ---
+
 Using and customizing the color palette in Tailwind CSS projects.
 
 Tailwind CSS includes a vast, beautiful color palette out of the box, carefully crafted by expert designers and suitable for a wide range of different design styles.
@@ -118,7 +121,7 @@ Every color in the default palette includes 11 steps, with 50 being the lightest
 <div>  <div class="bg-sky-50"></div>  <div class="bg-sky-100"></div>  <div class="bg-sky-200"></div>  <div class="bg-sky-300"></div>  <div class="bg-sky-400"></div>  <div class="bg-sky-500"></div>  <div class="bg-sky-600"></div>  <div class="bg-sky-700"></div>  <div class="bg-sky-800"></div>  <div class="bg-sky-900"></div>  <div class="bg-sky-950"></div></div>
 ```
 
-The entire color palette is available across all color related utilities, including things like [background color](https://tailwindcss.com/docs/background-color), [border color](https://tailwindcss.com/docs/border-color), [fill](https://tailwindcss.com/docs/fill), [caret color](https://tailwindcss.com/docs/caret-color), and many more.
+The entire color palette is available across all color related utilities, including things like [background color](tailwind/docs/background-color/index.md), [border color](tailwind/docs/border-color/index.md), [fill](tailwind/docs/fill/index.md), [caret color](tailwind/docs/caret-color/index.md), and many more.
 
 ## [Working with colors](#working-with-colors)
 
@@ -142,7 +145,7 @@ Description
 
 `bg-*`
 
-Sets the [background color](https://tailwindcss.com/docs/background-color) of an element
+Sets the [background color](tailwind/docs/background-color/index.md) of an element
 
 `text-*`
 
@@ -150,47 +153,47 @@ Sets the [text color](https://tailwindcss.com/docs/text-color) of an element
 
 `decoration-*`
 
-Sets the [text decoration color](https://tailwindcss.com/docs/text-decoration-color) of an element
+Sets the [text decoration color](tailwind/docs/text-decoration-color/index.md) of an element
 
 `border-*`
 
-Sets the [border color](https://tailwindcss.com/docs/border-color) of an element
+Sets the [border color](tailwind/docs/border-color/index.md) of an element
 
 `outline-*`
 
-Sets the [outline color](https://tailwindcss.com/docs/outline-color) of an element
+Sets the [outline color](tailwind/docs/outline-color/index.md) of an element
 
 `shadow-*`
 
-Sets the color of [box shadows](https://tailwindcss.com/docs/box-shadow#setting-the-shadow-color)
+Sets the color of [box shadows](tailwind/docs/box-shadow/index.md#setting-the-shadow-color)
 
 `inset-shadow-*`
 
-Sets the color of [inset box shadows](https://tailwindcss.com/docs/box-shadow#setting-the-inset-shadow-color)
+Sets the color of [inset box shadows](tailwind/docs/box-shadow/index.md#setting-the-inset-shadow-color)
 
 `ring-*`
 
-Sets the color of [ring shadows](https://tailwindcss.com/docs/box-shadow#setting-the-ring-color)
+Sets the color of [ring shadows](tailwind/docs/box-shadow/index.md#setting-the-ring-color)
 
 `inset-ring-*`
 
-Sets the color of [inset ring shadows](https://tailwindcss.com/docs/box-shadow#setting-the-inset-ring-color)
+Sets the color of [inset ring shadows](tailwind/docs/box-shadow/index.md#setting-the-inset-ring-color)
 
 `accent-*`
 
-Sets the [accent color](https://tailwindcss.com/docs/accent-color) of form controls
+Sets the [accent color](tailwind/docs/accent-color/index.md) of form controls
 
 `caret-*`
 
-Sets the [caret color](https://tailwindcss.com/docs/caret-color) in form controls
+Sets the [caret color](tailwind/docs/caret-color/index.md) in form controls
 
 `fill-*`
 
-Sets the [fill color](https://tailwindcss.com/docs/fill) of SVG elements
+Sets the [fill color](tailwind/docs/fill/index.md) of SVG elements
 
 `stroke-*`
 
-Sets the [stroke color](https://tailwindcss.com/docs/stroke) of SVG elements
+Sets the [stroke color](tailwind/docs/stroke/index.md) of SVG elements
 
 ### [Adjusting opacity](#adjusting-opacity)
 
@@ -228,7 +231,7 @@ The Zero Gravity Pen can be used to write in any orientation, including upside-d
 <div class="bg-white dark:bg-gray-800 rounded-lg px-6 py-8 ring shadow-xl ring-gray-900/5">  <div>    <span class="inline-flex items-center justify-center rounded-md bg-indigo-500 p-2 shadow-lg">      <svg class="h-6 w-6 stroke-white" ...>        <!-- ... -->      </svg>    </span>  </div>  <h3 class="text-gray-900 dark:text-white mt-5 text-base font-medium tracking-tight ">Writes upside-down</h3>  <p class="text-gray-500 dark:text-gray-400 mt-2 text-sm ">    The Zero Gravity Pen can be used to write in any orientation, including upside-down. It even works in outer space.  </p></div>
 ```
 
-Learn more about styling for dark mode in the [dark mode documentation](https://tailwindcss.com/docs/dark-mode).
+Learn more about styling for dark mode in the [dark mode documentation](tailwind/docs/dark-mode/index.md).
 
 ### [Referencing in CSS](#referencing-in-css)
 
@@ -268,7 +271,7 @@ CSS
 
 Now utilities like `bg-midnight`, `text-tahiti`, and `fill-bermuda` will be available in your project in addition to the default colors.
 
-Learn more about theme variables in the [theme variables documentation](https://tailwindcss.com/docs/theme).
+Learn more about theme variables in the [theme variables documentation](tailwind/docs/theme/index.md).
 
 ### [Overriding default colors](#overriding-default-colors)
 
@@ -312,7 +315,7 @@ CSS
 @import "tailwindcss";:root {  --acme-canvas-color: oklch(0.967 0.003 264.542);}[data-theme="dark"] {  --acme-canvas-color: oklch(0.21 0.034 264.665);}@theme inline {  --color-canvas: var(--acme-canvas-color);}
 ```
 
-Learn more in the theme documentation on [referencing other variables](https://tailwindcss.com/docs/theme#referencing-other-variables).
+Learn more in the theme documentation on [referencing other variables](tailwind/docs/theme/index.md#referencing-other-variables).
 
 ## [Default color palette reference](#default-color-palette-reference)
 
@@ -325,3 +328,4 @@ CSS
 ```
 
 This can be useful if you want to reuse any of these scales but under a different name, like redefining `--color-gray-*` to use the `--color-slate-*` scale.
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:13:05.869Z"
 content_hash: "66b92e5da760ff885c0ff64160714e8d9e9ba0f022417e0d327f6a768dcdacba"
 menu_path: ["Drizzle ORM - DrizzleORM v0.30.0 release"]
 section_path: []
+nav_prev: {"path": "drizzle/docs/latest-releases/drizzle-orm-v0295/index.md", "title": "Drizzle ORM - DrizzleORM v0.29.5 release"}
+nav_next: {"path": "drizzle/docs/latest-releases/drizzle-orm-v0302/index.md", "title": "Drizzle ORM - DrizzleORM v0.30.2 release"}
 ---
+
 DrizzleORM v0.30.0 release
 
 Mar 7, 2024
@@ -43,9 +46,9 @@ Ideally, as is the case with almost all other drivers, we should have the possib
 
 If we’ve overlooked this capability and it is already available with \`postgres.js“, please ping us in our Discord!
 
-A few more references for timestamps without and with timezones can be found in our [docs](https://orm.drizzle.team/docs/column-types/pg#timestamp)
+A few more references for timestamps without and with timezones can be found in our [docs](drizzle/docs/column-types/pg/index.md#timestamp)
 
-Check docs for getting started with `postgres.js` driver and Drizzle [here](https://orm.drizzle.team/docs/get-started-postgresql#postgresjs)
+Check docs for getting started with `postgres.js` driver and Drizzle [here](drizzle/docs/get-started-postgresql/index.md#postgresjs)
 
 ## Fixes
 
@@ -58,3 +61,4 @@ Check docs for getting started with `postgres.js` driver and Drizzle [here](http
 *   Postgres insert into timestamp with time zone removes milliseconds ([#1061](https://github.com/drizzle-team/drizzle-orm/issues/1061))
 *   update timestamp field (using AWS Data API) ([#1164](https://github.com/drizzle-team/drizzle-orm/issues/1164))
 *   Invalid date from relational queries ([#895](https://github.com/drizzle-team/drizzle-orm/issues/895))
+

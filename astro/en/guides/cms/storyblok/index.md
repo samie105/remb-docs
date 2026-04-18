@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:35:35.060Z"
 content_hash: "874360dfbc5d0539aaf7b8031769c78e9bd39af1d956458051fd69a7847421ad"
 menu_path: ["Storyblok & Astro"]
 section_path: []
+nav_prev: {"path": "astro/en/guides/cms/statamic/index.md", "title": "Headless Statamic & Astro"}
+nav_next: {"path": "astro/en/guides/cms/strapi/index.md", "title": "Strapi & Astro"}
 ---
+
 # Storyblok & Astro
 
 [Storyblok](https://www.storyblok.com/) is a component-based headless CMS that allows you to manage your content using reusable components called Bloks.
@@ -560,3 +563,4 @@ Now, whenever you publish a new story, a new build will be triggered and your bl
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

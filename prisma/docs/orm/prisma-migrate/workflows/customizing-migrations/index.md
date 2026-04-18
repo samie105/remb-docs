@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:50:37.180Z"
 content_hash: "39d5fe6479e64215cf429205f56ac4076c832f4f70b683bdaca3902642624fd5"
 menu_path: ["Customizing migrations"]
 section_path: []
+nav_prev: {"path": "prisma/docs/orm/prisma-migrate/workflows/baselining/index.md", "title": "Baselining a database"}
+nav_next: {"path": "prisma/docs/orm/prisma-migrate/workflows/development-and-production/index.md", "title": "Development and production"}
 ---
+
 Workflows
 
 How to edit a migration file before applying it to avoid data loss in production.
@@ -151,3 +154,4 @@ model Profile {
 *   Save and apply the migration:
 
 [Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/prisma-migrate/workflows/customizing-migrations.mdx)
+

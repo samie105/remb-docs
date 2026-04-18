@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:42:04.839Z"
 content_hash: "96359f5ed6078b7ef53e9a6e7130f6fc47b8ebf0280cc7eedd41424a1c827a01"
 menu_path: ["Custom header"]
 section_path: []
+nav_prev: {"path": "trpc/docs/v9/fastify/index.md", "title": "Usage with Fastify"}
+nav_next: {"path": "trpc/docs/v9/further-reading/index.md", "title": "Further Reading"}
 ---
+
 Version: 9.x
 
 The headers option can be customized in config when using `withTRPC` in nextjs or `createClient` in react.js.
@@ -29,3 +32,4 @@ The headers option can be customized in config when using `withTRPC` in nextjs o
 The `token` can be whatever you want it to be. It's entirely up to you whether that's just a client-side variable that you update the value of on success or whether you store the token and pull it from local storage.
 
 *   [Example with auth login](#example-with-auth-login)
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:44:16.621Z"
 content_hash: "5b1dba11492aeaa7e54bad2a21e821bc22f5a9cde1ce457faadb17269e457aea"
 menu_path: ["Subscriptions / WebSockets"]
 section_path: []
+nav_prev: {"path": "trpc/docs/v9/starter-projects/index.md", "title": "Starter Projects"}
+nav_next: {"path": "trpc/docs/v9/useInfiniteQuery/index.md", "title": "useInfiniteQuery"}
 ---
+
 ## Using Subscriptions[​](#using-subscriptions "Direct link to Using Subscriptions")
 
 tip
@@ -147,7 +150,7 @@ ts
 
 tip
 
-You can [use Links](https://trpc.io/docs/v9/links) to route queries and/or mutations to HTTP transport and subscriptions over WebSockets.
+You can [use Links](trpc/docs/v9/links/index.md) to route queries and/or mutations to HTTP transport and subscriptions over WebSockets.
 
 client.ts
 
@@ -316,10 +319,11 @@ ts
 
 ## Errors[​](#errors "Direct link to Errors")
 
-See [https://www.jsonrpc.org/specification#error\_object](https://www.jsonrpc.org/specification#error_object) or [Error Formatting](https://trpc.io/docs/v9/error-formatting).
+See [https://www.jsonrpc.org/specification#error\_object](https://www.jsonrpc.org/specification#error_object) or [Error Formatting](trpc/docs/v9/error-formatting/index.md).
 
 ## Notifications from Server to Client[​](#notifications-from-server-to-client "Direct link to Notifications from Server to Client")
 
 ### `{id: null, type: 'reconnect' }`[​](#id-null-type-reconnect- "Direct link to id-null-type-reconnect-")
 
 Tells clients to reconnect before shutting down server. Invoked by `wssHandler.broadcastReconnectNotification()`.
+

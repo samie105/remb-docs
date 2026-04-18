@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:51:57.579Z"
 content_hash: "4ec6a958b491ae97ba99a0a59810aae8dd8c8701447a2fda69b7d177b9f28bdf"
 menu_path: ["Interface: TRPCClientErrorBase<TShape>"]
 section_path: []
+nav_prev: {"path": "trpc/docs/typedoc/client/index/interfaces/TRPCClientRuntime/index.md", "title": "Interface: TRPCClientRuntime"}
+nav_next: {"path": "trpc/docs/typedoc/client/index/interfaces/TRPCProcedureOptions/index.md", "title": "Interface: TRPCProcedureOptions"}
 ---
+
 Version: 11.x
 
 Defined in: [packages/client/src/TRPCClientError.ts:14](https://github.com/trpc/trpc/blob/63407c577124e7a2890a7599484d52a0cf025536/packages/client/src/TRPCClientError.ts#L14)
@@ -43,3 +46,4 @@ Defined in: [packages/client/src/TRPCClientError.ts:15](https://github.com/trpc/
 > `readonly` **shape**: `Maybe`<`TShape`\>
 
 Defined in: [packages/client/src/TRPCClientError.ts:16](https://github.com/trpc/trpc/blob/63407c577124e7a2890a7599484d52a0cf025536/packages/client/src/TRPCClientError.ts#L16)
+

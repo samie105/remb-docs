@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:42:47.376Z"
 content_hash: "aa282f85b7715d02b4dc05690851ad63f101b1a0bf0a8d66b6f01448538e8707"
 menu_path: ["Deployment & Branching","Deployment & Branching","Branching","Branching","Overview","Overview"]
 section_path: ["Deployment & Branching","Deployment & Branching","Branching","Branching","Overview","Overview"]
+nav_prev: {"path": "supabase/docs/guides/database/testing/index.md", "title": "Testing Your Database"}
+nav_next: {"path": "supabase/docs/guides/database/vault/index.md", "title": "Vault"}
 ---
+
 # 
 
 Branching
@@ -45,3 +48,4 @@ When you merge any branch into your main project, Supabase automatically runs a 
 7.  **Deploy** - Deploys any changed Edge Functions and updates function secrets
 
 If a parent deployment step fails, all dependent child steps will be skipped. For instance, if your database migrations failed at step 5, our runner will not seed your branch because step 6 is skipped. If you are using GitHub integration, the same deployment workflow will be run on every commit pushed to your git branch.
+

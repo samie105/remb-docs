@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:40:07.089Z"
 content_hash: "8ac320b3517c77cb8b307e09e9eaf9933aeed53a27df4be22f64d66c652deba9"
 menu_path: ["<svelte:window>"]
 section_path: []
+nav_prev: {"path": "svelte/docs/svelte/svelte-boundary/index.md", "title": "<svelte:boundary>"}
+nav_next: {"path": "svelte/docs/svelte/svelte-document/index.md", "title": "<svelte:document>"}
 ---
+
 ```
 <svelte:window onevent={handler} />
 ```
@@ -56,3 +59,4 @@ All except `scrollX` and `scrollY` are readonly.
 previous next
 
 [<svelte:boundary>](/docs/svelte/svelte-boundary) [<svelte:document>](/docs/svelte/svelte-document)
+

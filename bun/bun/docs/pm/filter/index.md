@@ -9,30 +9,10 @@ last_crawled_at: "2026-04-18T16:57:48.479Z"
 content_hash: "dfa4e53f280f8e38a568292fce272ca4358ab33620ce25edd445e6a1d3f81265"
 menu_path: ["bun --filter"]
 section_path: []
+nav_prev: {"path": "bun/bun/docs/pm/cli/why/index.md", "title": "bun why"}
+nav_next: {"path": "bun/bun/docs/pm/global-cache/index.md", "title": "Global cache"}
 ---
-The `--filter` (or `-F`) flag is used for selecting packages by pattern in a monorepo. Patterns can be used to match package names or package paths, with full glob syntax support. Currently `--filter` is supported by `bun install` and `bun outdated`, and can also be used to run scripts for multiple packages at once.
 
-* * *
-
-## Matching
-
-### Package Name `--filter <pattern>`
-
-Name patterns select packages based on the package name, as specified in `package.json`. For example, if you have packages `pkg-a`, `pkg-b` and `other`, you can match all packages with `*`, only `pkg-a` and `pkg-b` with `pkg*`, and a specific package by providing the full name of the package.
-
-### Package Path `--filter ./<glob>`
-
-Path patterns are specified by starting the pattern with `./`, and will select all packages in directories that match the pattern. For example, to match all packages in subdirectories of `packages`, you can use `--filter './packages/**'`. To match a package located in `packages/foo`, use `--filter ./packages/foo`.
-
-* * *
-
-## `bun install` and `bun outdated`
-
-Both `bun install` and `bun outdated` support the `--filter` flag. `bun install` by default will install dependencies for all packages in the monorepo. To install dependencies for specific packages, use `--filter`. Given a monorepo with workspaces `pkg-a`, `pkg-b`, and `pkg-c` under `./packages`:
-
-terminal
-
-```
 # Install dependencies for all workspaces except `pkg-c`
 bun install --filter '!pkg-c'
 
@@ -55,7 +35,7 @@ bun outdated --filter 'pkg-*'
 bun outdated --filter './'
 ```
 
-For more information on both these commands, see [`bun install`](https://bun.com/docs/pm/cli/install) and [`bun outdated`](https://bun.com/docs/pm/cli/outdated).
+For more information on both these commands, see [`bun install`](bun/bun/docs/pm/cli/install/index.md) and [`bun outdated`](bun/bun/docs/pm/cli/outdated/index.md).
 
 * * *
 
@@ -94,7 +74,7 @@ Both commands will be run in parallel, and you will see a nice terminal UI showi
 
 ### Running scripts in workspaces
 
-Filters respect your [workspace configuration](https://bun.com/docs/pm/workspaces): If you have a `package.json` file that specifies which packages are part of the workspace, `--filter` will be restricted to only these packages. Also, in a workspace you can use `--filter` to run scripts in packages that are located anywhere in the workspace:
+Filters respect your [workspace configuration](bun/bun/docs/pm/workspaces/index.md): If you have a `package.json` file that specifies which packages are part of the workspace, `--filter` will be restricted to only these packages. Also, in a workspace you can use `--filter` to run scripts in packages that are located anywhere in the workspace:
 
 terminal
 
@@ -135,3 +115,4 @@ Each line of output is prefixed with the package and script name (e.g. `pkg-a:bu
 ### Dependency Order
 
 Bun will respect package dependency order when running scripts. Say you have a package `foo` that depends on another package `bar` in your workspace, and both packages have a `build` script. When you run `bun --filter '*' build`, you will notice that `foo` will only start running once `bar` is done.
+

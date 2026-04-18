@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:00:31.360Z"
 content_hash: "7c6c9cf719c22984d1dc88b8d98b6f2a5fe77f050072251946c3095ad635f142"
 menu_path: ["JSONL"]
 section_path: []
+nav_prev: {"path": "bun/bun/docs/runtime/index.md", "title": "Bun Runtime"}
+nav_next: {"path": "bun/bun/docs/runtime/jsx/index.md", "title": "JSX"}
 ---
+
 Bun has built-in support for parsing [JSONL](https://jsonlines.org/) (newline-delimited JSON), where each line is a separate JSON value. The parser is implemented in C++ using JavaScriptCore’s optimized JSON parser and supports streaming use cases.
 
 ```
@@ -216,3 +219,4 @@ const values = Bun.JSONL.parse(input);
 *   **UTF-8 support**: Non-ASCII `Uint8Array` input is decoded to UTF-16 using SIMD-accelerated conversion.
 *   **BOM handling**: UTF-8 BOM (`0xEF 0xBB 0xBF`) at the start of a `Uint8Array` is automatically skipped.
 *   **Pre-built object shape**: The result object from `parseChunk` uses a cached structure for fast property access.
+

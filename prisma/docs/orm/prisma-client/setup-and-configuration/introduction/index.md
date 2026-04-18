@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:47:37.875Z"
 content_hash: "1579fda72140eddb34d411862f4e90fa2a9094bf9d67c45944cc5b49a1ca970c"
 menu_path: ["Introduction to Prisma Client"]
 section_path: []
+nav_prev: {"path": "prisma/docs/orm/prisma-client/setup-and-configuration/error-formatting/index.md", "title": "Configuring error formatting"}
+nav_next: {"path": "prisma/docs/orm/prisma-client/setup-and-configuration/read-replicas/index.md", "title": "Read replicas"}
 ---
+
 Setup and Configuration
 
 Learn how to set up and configure Prisma Client in your project
@@ -18,19 +21,19 @@ Prisma Client is an auto-generated and type-safe query builder that's _tailored_
 
 [Quickstart (5 min)](https://www.prisma.io/docs/prisma-orm/quickstart/sqlite)
 
-In order to set up Prisma Client, you need a Prisma Config and a [Prisma schema file](https://www.prisma.io/docs/orm/prisma-schema/overview):
+In order to set up Prisma Client, you need a Prisma Config and a [Prisma schema file](prisma/docs/orm/prisma-schema/overview/index.md):
 
-[Install the Prisma CLI](https://www.prisma.io/docs/orm/reference/prisma-cli-reference), the Prisma Client library, and the [driver adapter](https://www.prisma.io/docs/orm/core-concepts/supported-databases/database-drivers) for your database:
+[Install the Prisma CLI](prisma/docs/orm/reference/prisma-cli-reference/index.md), the Prisma Client library, and the [driver adapter](prisma/docs/orm/core-concepts/supported-databases/database-drivers/index.md) for your database:
 
 Prisma Client is based on the models in Prisma Schema. To provide the correct types, you need generate the client code:
 
 This will create a `generated` directory based on where you set the `output` to in the Prisma Schema. Any time your import Prisma Client, it will need to come from this generated client API.
 
-With the client generated, import it along with your [driver adapter](https://www.prisma.io/docs/orm/core-concepts/supported-databases/database-drivers) and create a new instance:
+With the client generated, import it along with your [driver adapter](prisma/docs/orm/core-concepts/supported-databases/database-drivers/index.md) and create a new instance:
 
-Find out what [driver adapter](https://www.prisma.io/docs/orm/core-concepts/supported-databases/database-drivers) is needed for your database.
+Find out what [driver adapter](prisma/docs/orm/core-concepts/supported-databases/database-drivers/index.md) is needed for your database.
 
-Your application should generally only create **one instance** of `PrismaClient`. How to achieve this depends on whether you are using Prisma ORM in a [long-running application](https://www.prisma.io/docs/orm/prisma-client/setup-and-configuration/databases-connections#prismaclient-in-long-running-applications) or in a [serverless environment](https://www.prisma.io/docs/orm/prisma-client/setup-and-configuration/databases-connections#prismaclient-in-serverless-environments).
+Your application should generally only create **one instance** of `PrismaClient`. How to achieve this depends on whether you are using Prisma ORM in a [long-running application](prisma/docs/orm/prisma-client/setup-and-configuration/databases-connections/index.md#prismaclient-in-long-running-applications) or in a [serverless environment](prisma/docs/orm/prisma-client/setup-and-configuration/databases-connections/index.md#prismaclient-in-serverless-environments).
 
 Creating multiple instances of `PrismaClient` will create multiple connection pools and can hit the connection limit for your database. Too many connections may start to **slow down your database** and eventually lead to errors such as:
 
@@ -56,3 +59,4 @@ const users = await prisma.user.findMany();
 Whenever you make changes to your database that are reflected in the Prisma schema, you need to manually re-generate Prisma Client to update the generated code in your output directory:
 
 [Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/prisma-client/setup-and-configuration/introduction.mdx)
+

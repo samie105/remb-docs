@@ -9,7 +9,9 @@ last_crawled_at: "2026-04-18T16:54:40.562Z"
 content_hash: "dc3b0dc5bc2c4d44837f530c2fd6fb770bce636bbc9d91a34c1c139cd755dd85"
 menu_path: ["PostgreSQL: Documentation: 18: vacuumdb"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/libpq-async.html/index.md", "title": "PostgreSQL: Documentation: 18: 32.4.\u00a0Asynchronous Command Processing"}
 ---
+
 vacuumdb — garbage-collect and analyze a PostgreSQL database
 
 ## Synopsis
@@ -37,7 +39,7 @@ Vacuum all databases.
 
 ``--buffer-usage-limit _`size`_``
 
-Specifies the [](https://www.postgresql.org/docs/current/glossary.html#GLOSSARY-BUFFER-ACCESS-STRATEGY)[Buffer Access Strategy](https://www.postgresql.org/docs/current/glossary.html#GLOSSARY-BUFFER-ACCESS-STRATEGY "Buffer Access Strategy") ring buffer size for a given invocation of vacuumdb. This size is used to calculate the number of shared buffers which will be reused as part of this strategy. See [VACUUM](https://www.postgresql.org/docs/current/sql-vacuum.html "VACUUM").
+Specifies the [](postgres/docs/current/glossary.html/index.md#GLOSSARY-BUFFER-ACCESS-STRATEGY)[Buffer Access Strategy](https://www.postgresql.org/docs/current/glossary.html#GLOSSARY-BUFFER-ACCESS-STRATEGY "Buffer Access Strategy") ring buffer size for a given invocation of vacuumdb. This size is used to calculate the number of shared buffers which will be reused as part of this strategy. See [VACUUM](https://www.postgresql.org/docs/current/sql-vacuum.html "VACUUM").
 
 ``[-d] _`dbname`_``  
 ``[--dbname=]_`dbname`_``
@@ -72,7 +74,7 @@ Always remove index entries pointing to dead tuples.
 
 Execute the vacuum or analyze commands in parallel by running _`njobs`_ commands simultaneously. This option may reduce the processing time but it also increases the load on the database server.
 
-vacuumdb will open _`njobs`_ connections to the database, so make sure your [max\_connections](https://www.postgresql.org/docs/current/runtime-config-connection.html#GUC-MAX-CONNECTIONS) setting is high enough to accommodate all connections.
+vacuumdb will open _`njobs`_ connections to the database, so make sure your [max\_connections](postgres/docs/current/runtime-config-connection.html/index.md#GUC-MAX-CONNECTIONS) setting is high enough to accommodate all connections.
 
 Note that using this mode together with the `-f` (`FULL`) option might cause deadlock failures if certain system catalogs are processed in parallel.
 
@@ -167,7 +169,7 @@ Only calculate statistics for use by the optimizer (no vacuum).
 
 `--analyze-in-stages`
 
-Only calculate statistics for use by the optimizer (no vacuum), like `--analyze-only`. Run three stages of analyze; the first stage uses the lowest possible statistics target (see [default\_statistics\_target](https://www.postgresql.org/docs/current/runtime-config-query.html#GUC-DEFAULT-STATISTICS-TARGET)) to produce usable statistics faster, and subsequent stages build the full statistics.
+Only calculate statistics for use by the optimizer (no vacuum), like `--analyze-only`. Run three stages of analyze; the first stage uses the lowest possible statistics target (see [default\_statistics\_target](postgres/docs/current/runtime-config-query.html/index.md#GUC-DEFAULT-STATISTICS-TARGET)) to produce usable statistics faster, and subsequent stages build the full statistics.
 
 This option is only useful to analyze a database that currently has no statistics or has wholly incorrect ones, such as if it is newly populated from a restored dump or by `pg_upgrade`. Be aware that running with this option in a database with existing statistics may cause the query optimizer choices to become transiently worse due to the low statistics targets of the early stages.
 
@@ -253,3 +255,4 @@ To clean all tables in the `foo` and `bar` schemas in a database named `xyzzy`:
 ```
 $ 
 ```
+

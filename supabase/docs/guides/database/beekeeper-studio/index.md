@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:39:47.682Z"
 content_hash: "3074f6335d1bf3fa2e3f2e9c2390886558c6fff1c7ac24c3f8a629ff7d7a23b5"
 menu_path: ["Database","Database","GUI quickstarts","GUI quickstarts","Beekeeper Studio","Beekeeper Studio"]
 section_path: ["Database","Database","GUI quickstarts","GUI quickstarts","Beekeeper Studio","Beekeeper Studio"]
+nav_prev: {"path": "supabase/docs/guides/cron/quickstart/index.md", "title": "Quickstart"}
+nav_next: {"path": "supabase/docs/guides/database/arrays/index.md", "title": "Working With Arrays"}
 ---
+
 # 
 
 Connecting with Beekeeper Studio
@@ -56,3 +59,4 @@ Add your SSL to the connection form ![SSL](/docs/img/guides/database/connecting-
 Test your connection and then connect
 
 ![SSL](/docs/img/guides/database/connecting-to-postgres/beekeeper-studio/connect.png)
+

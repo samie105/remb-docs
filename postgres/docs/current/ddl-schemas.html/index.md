@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:35:18.604Z"
 content_hash: "2facbeccc9eff46d04411abb8dd057b403c631ddd54ce86948ceb4243f2645d4"
 menu_path: ["PostgreSQL: Documentation: 18: 5.10. Schemas"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/indexes-intro.html/index.md", "title": "PostgreSQL: Documentation: 18: 11.1.\u00a0Introduction"}
+nav_next: {"path": "postgres/docs/current/sql-createstatistics.html/index.md", "title": "PostgreSQL: Documentation: 18: CREATE STATISTICS"}
 ---
+
 A PostgreSQL database cluster contains one or more named databases. Roles and a few other object types are shared across the entire cluster. A client connection to the server can only access data in a single database, the one specified in the connection request.
 
 ### Note
@@ -171,3 +174,4 @@ In the SQL standard, the notion of objects in the same schema being owned by dif
 Also, there is no concept of a `public` schema in the SQL standard. For maximum conformance to the standard, you should not use the `public` schema.
 
 Of course, some SQL database systems might not implement schemas at all, or provide namespace support by allowing (possibly limited) cross-database access. If you need to work with those systems, then maximum portability would be achieved by not using schemas at all.
+

@@ -9,12 +9,15 @@ last_crawled_at: "2026-04-18T16:53:28.380Z"
 content_hash: "276de5ae44e51d7c60dabc163f21e1beb43a438d94186f0023e163f412b3f827"
 menu_path: ["Shared Prisma Client extensions"]
 section_path: []
+nav_prev: {"path": "prisma/docs/orm/prisma-schema/overview/location/index.md", "title": "Schema location"}
+nav_next: {"path": "prisma/docs/orm/prisma-client/client-extensions/shared-extensions/permit-rbac/index.md", "title": "Fine-Grained Authorization (Permit)"}
 ---
-You can share your [Prisma Client extensions](https://www.prisma.io/docs/orm/prisma-client/client-extensions) with other users, either as packages or as modules, and import extensions that other users create into your project.
+
+You can share your [Prisma Client extensions](prisma/docs/orm/prisma-client/client-extensions/index.md) with other users, either as packages or as modules, and import extensions that other users create into your project.
 
 If you would like to build a shareable extension, we also recommend using the [`prisma-client-extension-starter`](https://github.com/prisma/prisma-client-extension-starter) template.
 
-To explore examples of Prisma's official Client extensions and those made by the community, visit [this](https://www.prisma.io/docs/orm/prisma-client/client-extensions/extension-examples) page.
+To explore examples of Prisma's official Client extensions and those made by the community, visit [this](prisma/docs/orm/prisma-client/client-extensions/extension-examples/index.md) page.
 
 In your project, you can install any Prisma Client extension that another user has published to `npm`. To do so, run the following command:
 
@@ -37,7 +40,7 @@ When you want to create extensions other users can use, and that are not tailore
 To create a shareable extension:
 
 1.  Define the extension as a module using `Prisma.defineExtension`
-2.  Use one of the methods that begin with the `$all` prefix such as [`$allModels`](https://www.prisma.io/docs/orm/prisma-client/client-extensions/model#add-a-custom-method-to-all-models-in-your-schema) or [`$allOperations`](https://www.prisma.io/docs/orm/prisma-client/client-extensions/query#modify-all-prisma-client-operations)
+2.  Use one of the methods that begin with the `$all` prefix such as [`$allModels`](prisma/docs/orm/prisma-client/client-extensions/model/index.md#add-a-custom-method-to-all-models-in-your-schema) or [`$allOperations`](prisma/docs/orm/prisma-client/client-extensions/query/index.md#modify-all-prisma-client-operations)
 
 ### [Define an extension](#define-an-extension)
 
@@ -49,7 +52,7 @@ The benefit of `Prisma.defineExtension` is that it provides strict type checks a
 
 Extensions that contain methods under `$allModels` apply to every model instead of a specific one. Similarly, methods under `$allOperations` apply to a client instance as a whole and not to a named component, e.g. `result` or `query`.
 
-You do not need to use the `$all` prefix with the [`client`](https://www.prisma.io/docs/orm/prisma-client/client-extensions/client) component, because the `client` component always applies to the client instance.
+You do not need to use the `$all` prefix with the [`client`](prisma/docs/orm/prisma-client/client-extensions/client/index.md) component, because the `client` component always applies to the client instance.
 
 For example, a generic extension might take the following form:
 
@@ -70,9 +73,9 @@ export default Prisma.defineExtension({
 
 Refer to the following pages to learn the different ways you can modify Prisma Client operations:
 
-*   [Modify all Prisma Client operations](https://www.prisma.io/docs/orm/prisma-client/client-extensions/query#modify-all-prisma-client-operations)
-*   [Modify a specific operation in all models of your schema](https://www.prisma.io/docs/orm/prisma-client/client-extensions/query#modify-a-specific-operation-in-all-models-of-your-schema)
-*   [Modify all operations in all models of your schema](https://www.prisma.io/docs/orm/prisma-client/client-extensions/query#modify-all-operations-in-all-models-of-your-schema)
+*   [Modify all Prisma Client operations](prisma/docs/orm/prisma-client/client-extensions/query/index.md#modify-all-prisma-client-operations)
+*   [Modify a specific operation in all models of your schema](prisma/docs/orm/prisma-client/client-extensions/query/index.md#modify-a-specific-operation-in-all-models-of-your-schema)
+*   [Modify all operations in all models of your schema](prisma/docs/orm/prisma-client/client-extensions/query/index.md#modify-all-operations-in-all-models-of-your-schema)
 
 ### [Publishing the shareable extension to npm](#publishing-the-shareable-extension-to-npm)
 
@@ -82,7 +85,7 @@ You can then share the extension on `npm`. When you choose a package name, we re
 
 In the following situations, you need to refer to a Prisma Client instance that your extension wraps:
 
-*   When you want to use a [client-level method](https://www.prisma.io/docs/orm/reference/prisma-client-reference#client-methods), such as `$queryRaw`, in your packaged extension.
+*   When you want to use a [client-level method](prisma/docs/orm/reference/prisma-client-reference/index.md#client-methods), such as `$queryRaw`, in your packaged extension.
 *   When you want to chain multiple `$extends` calls in your packaged extension.
 
 However, when someone includes your packaged extension in their project, your code cannot know the details of the Prisma Client instance.
@@ -117,4 +120,5 @@ export default Prisma.defineExtension((client) => {
 
 ### [Advanced type safety: type utilities for defining generic extensions](#advanced-type-safety-type-utilities-for-defining-generic-extensions)
 
-You can improve the type-safety of your shared extensions using [type utilities](https://www.prisma.io/docs/orm/prisma-client/client-extensions/type-utilities).
+You can improve the type-safety of your shared extensions using [type utilities](prisma/docs/orm/prisma-client/client-extensions/type-utilities/index.md).
+

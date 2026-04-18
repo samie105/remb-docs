@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:41:12.104Z"
 content_hash: "f84af436eb60185f36ddd6029aa1047cab8a12897c9d04e3ac1c4dc16a010eaa"
 menu_path: ["<svelte:options>"]
 section_path: []
+nav_prev: {"path": "svelte/docs/svelte/svelte-element/index.md", "title": "<svelte:element>"}
+nav_next: {"path": "svelte/docs/svelte/stores/index.md", "title": "Stores"}
 ---
+
 ```
 <svelte:options option={value} />
 ```
@@ -40,3 +43,4 @@ The `<svelte:options>` element provides a place to specify per-component compile
 previous next
 
 [<svelte:element>](/docs/svelte/svelte-element) [Stores](/docs/svelte/stores)
+

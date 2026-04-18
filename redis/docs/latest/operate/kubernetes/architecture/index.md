@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:37:16.821Z"
 content_hash: "6c1e2fe2ebb0472449f2777809f11caa9df9f9ec3996b1b1952121f53c58d4fb"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Enterprise for Kubernetes","→","Redis Enterprise for Kubernetes","→\n      \n        Redis Enterprise for Kubernetes architecture","→","Redis Enterprise for Kubernetes architecture"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Enterprise for Kubernetes","→","Redis Enterprise for Kubernetes","→\n      \n        Redis Enterprise for Kubernetes architecture","→","Redis Enterprise for Kubernetes architecture"]
+nav_prev: {"path": "redis/docs/latest/develop/ai/search-and-query/advanced-concepts/aggregations/index.md", "title": "Aggregations"}
+nav_next: {"path": "redis/docs/latest/operate/oss_and_stack/management/optimization/benchmarks/index.md", "title": "Redis benchmark"}
 ---
+
 # Redis Enterprise for Kubernetes architecture
 
 Overview of the architecture and components of Redis Enterprise for Kubernetes.
@@ -163,3 +166,4 @@ See the [REAADB API reference](/docs/latest/operate/kubernetes/reference/api/red
 To collect metrics data from your databases and Redis Enterprise cluster (REC), you can [connect your Prometheus](/docs/latest/operate/kubernetes/re-clusters/connect-prometheus-operator/) server to an endpoint exposed on your REC. Redis Enterprise for Kubernetes creates a dedicated service to expose the `prometheus` port (8070) for data collection. A custom resource called `ServiceMonitor` allows the [Prometheus operator](https://github.com/prometheus-operator/prometheus-operator/tree/main/Documentation) to connect to this port and collect data from Redis Enterprise.
 
 ## On this page
+

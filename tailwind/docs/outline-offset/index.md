@@ -9,15 +9,9 @@ last_crawled_at: "2026-04-18T17:04:03.335Z"
 content_hash: "678bf551d07150556d540a525a7a9c1eef05861d32cfcca59370fe7aed3a6dab"
 menu_path: ["outline-offset"]
 section_path: []
+nav_prev: {"path": "tailwind/docs/outline-style/index.md", "title": "outline-style"}
+nav_next: {"path": "tailwind/docs/box-shadow/index.md", "title": "box-shadow"}
 ---
-[](/)
-
-[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
-
-1.  Borders
-2.  outline-offset
-
-Borders
 
 # outline-offset
 
@@ -108,3 +102,4 @@ Make your ideas look awesome, without relying on a designer.
 ](https://www.refactoringui.com/?ref=sidebar)
 
 Copyright © 2026 Tailwind Labs Inc.·[Trademark Policy](/brand)
+

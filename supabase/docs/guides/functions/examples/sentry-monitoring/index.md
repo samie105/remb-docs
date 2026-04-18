@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:57:49.524Z"
 content_hash: "27f65bb81fd5577ab0b22e1844215a0da4506531caf4a5eee62e0f647542bb5a"
 menu_path: ["Edge Functions","Edge Functions","Third-Party Tools","Third-Party Tools","Monitoring with Sentry","Monitoring with Sentry"]
 section_path: ["Edge Functions","Edge Functions","Third-Party Tools","Third-Party Tools","Monitoring with Sentry","Monitoring with Sentry"]
+nav_prev: {"path": "supabase/docs/guides/functions/examples/send-emails/index.md", "title": "Sending Emails"}
+nav_next: {"path": "supabase/docs/guides/functions/examples/slack-bot-mention/index.md", "title": "Slack Bot Mention Edge Function"}
 ---
+
 # 
 
 Monitoring with Sentry
@@ -62,3 +65,4 @@ Find the complete example on [GitHub](https://github.com/supabase/supabase/tree/
 ## Working with scopes[#](#working-with-scopes)
 
 Sentry Deno SDK currently do not support `Deno.serve` instrumentation, which means that there is no scope separation between requests. Because of that, when the Edge Functions runtime is reused between multiple requests, all globally captured breadcrumbs and contextual data will be shared, which is not the desired behavior. To work around this, all default integrations in the example code above are disabled, and you should be relying on [`withScope`](https://docs.sentry.io/platforms/javascript/enriching-events/scopes/#using-withscope) to encapsulate all Sentry SDK API calls, or [pass context directly](https://docs.sentry.io/platforms/javascript/enriching-events/context/#passing-context-directly) to the `captureException` or `captureMessage` calls.
+

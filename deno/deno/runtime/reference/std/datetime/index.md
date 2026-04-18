@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:01:35.546Z"
 content_hash: "11a7f377ab034310d7046d2fed3d9182f70317b6311fafc4e85f6c0a36b7a668"
 menu_path: ["@std/datetime"]
 section_path: []
+nav_prev: {"path": "deno/deno/runtime/reference/std/data-structures/index.md", "title": "@std/data-structures"}
+nav_next: {"path": "deno/deno/runtime/reference/std/dotenv/index.md", "title": "@std/dotenv"}
 ---
+
 On this page
 
 *   [Overview](#overview)
@@ -47,3 +50,4 @@ deno add jsr:@std/datetime
 ```
 
 [See all symbols in @std/datetime on](https://jsr.io/@std/datetime/doc)
+

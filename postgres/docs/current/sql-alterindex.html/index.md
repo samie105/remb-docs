@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:46:26.258Z"
 content_hash: "5f7c234d2b114d8e1a8d3df736575051e31744ec9bb7e402782ec6eb67a8a656"
 menu_path: ["PostgreSQL: Documentation: 18: ALTER INDEX"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/rules-views.html/index.md", "title": "PostgreSQL: Documentation: 18: 39.2.\u00a0Views and the Rule System"}
+nav_next: {"path": "postgres/docs/current/infoschema-role-column-grants.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.35.\u00a0role_column_grants"}
 ---
+
 ALTER INDEX — change the definition of an index
 
 ## Synopsis
@@ -58,7 +61,7 @@ This form resets one or more index-method-specific storage parameters to their d
 
 ``ALTER [ COLUMN ] _`column_number`_ SET STATISTICS _`integer`_``
 
-This form sets the per-column statistics-gathering target for subsequent [`ANALYZE`](https://www.postgresql.org/docs/current/sql-analyze.html "ANALYZE") operations, though can be used only on index columns that are defined as an expression. Since expressions lack a unique name, we refer to them using the ordinal number of the index column. The target can be set in the range 0 to 10000; alternatively, set it to -1 to revert to using the system default statistics target ([default\_statistics\_target](https://www.postgresql.org/docs/current/runtime-config-query.html#GUC-DEFAULT-STATISTICS-TARGET)). For more information on the use of statistics by the PostgreSQL query planner, refer to [Section 14.2](https://www.postgresql.org/docs/current/planner-stats.html "14.2. Statistics Used by the Planner").
+This form sets the per-column statistics-gathering target for subsequent [`ANALYZE`](https://www.postgresql.org/docs/current/sql-analyze.html "ANALYZE") operations, though can be used only on index columns that are defined as an expression. Since expressions lack a unique name, we refer to them using the ordinal number of the index column. The target can be set in the range 0 to 10000; alternatively, set it to -1 to revert to using the system default statistics target ([default\_statistics\_target](postgres/docs/current/runtime-config-query.html/index.md#GUC-DEFAULT-STATISTICS-TARGET)). For more information on the use of statistics by the PostgreSQL query planner, refer to [Section 14.2](https://www.postgresql.org/docs/current/planner-stats.html "14.2. Statistics Used by the Planner").
 
 ## Parameters
 
@@ -125,3 +128,4 @@ ALTER INDEX coord\_idx ALTER COLUMN 3 SET STATISTICS 1000;
 ## Compatibility
 
 `ALTER INDEX` is a PostgreSQL extension.
+

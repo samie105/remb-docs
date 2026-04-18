@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:55:18.019Z"
 content_hash: "6b201982e5fa9c1321db01aee0196fea446cac73193f1498acfb3ccadf511139"
 menu_path: ["Many-to-many relations"]
 section_path: []
+nav_prev: {"path": "prisma/docs/orm/prisma-schema/data-model/relations/index.md", "title": "Relations"}
+nav_next: {"path": "prisma/docs/orm/prisma-schema/data-model/relations/one-to-many-relations/index.md", "title": "One-to-many relations"}
 ---
+
 Data Model
 
 Relations
@@ -174,3 +177,4 @@ const posts = await prisma.post.findMany({
 ```
 
 [Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/prisma-schema/data-model/relations/many-to-many-relations.mdx)
+

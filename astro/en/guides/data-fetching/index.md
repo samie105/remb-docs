@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:36:10.798Z"
 content_hash: "8d02b8cedfb9f27f39be846a782e200988451a94f1a8999288c8da0229c98747"
 menu_path: ["Data fetching"]
 section_path: []
+nav_prev: {"path": "astro/en/guides/images/index.md", "title": "Images"}
+nav_next: {"path": "astro/en/guides/astro-db/index.md", "title": "Astro DB"}
 ---
+
 # Data fetching
 
 `.astro` files can fetch remote data to help you generate your pages.
@@ -73,3 +76,4 @@ See our [CMS Guides](/en/guides/cms/) for full details on integrating Astro with
 *   [Creating a fullstack app with Astro + GraphQL](https://robkendal.co.uk/blog/how-to-build-astro-site-with-graphql/)
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

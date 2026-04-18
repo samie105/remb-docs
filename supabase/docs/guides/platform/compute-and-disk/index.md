@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:47:18.995Z"
 content_hash: "ab1cf0a533e2baf99d9e6ab10b3c13c03b95a0e4cc3f236ea66cfd47875f8d6e"
 menu_path: ["Platform","Platform","Platform Configuration","Platform Configuration","Compute and Disk","Compute and Disk"]
 section_path: ["Platform","Platform","Platform Configuration","Platform Configuration","Compute and Disk","Compute and Disk"]
+nav_prev: {"path": "supabase/docs/guides/platform/cost-control/index.md", "title": "Control your costs"}
+nav_next: {"path": "supabase/docs/guides/platform/credits/index.md", "title": "Credits"}
 ---
+
 # 
 
 Compute and Disk
@@ -629,3 +632,4 @@ As mentioned in the Postgres [documentation](https://postgresqlco.nf/doc/en/para
 2.  Compute resources on the Free plan are subject to change. [↩](#user-content-fnref-3)
     
 3.  Database max connections are recommended values and can be [customized via `max_connections`](/docs/guides/database/custom-postgres-config) depending on your use case. Be aware of [these considerations](/docs/guides/troubleshooting/how-to-change-max-database-connections-_BQ8P5) before modifying. [↩](#user-content-fnref-1)
+

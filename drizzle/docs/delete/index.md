@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:44:47.816Z"
 content_hash: "bd33f0834c0dd7434edd885aa3adef0e6dfdf974ca6dc936795d0bb0e40fb577"
 menu_path: ["SQL Delete"]
 section_path: []
+nav_prev: {"path": "drizzle/docs/update/index.md", "title": "SQL Update"}
+nav_next: {"path": "drizzle/docs/operators/index.md", "title": "Filter and conditional operators"}
 ---
+
 ## SQL Delete
 
 You can delete all rows in the table:
@@ -135,3 +138,4 @@ delete from "orders"
 where "orders"."amount" > (select * from "average_amount") 
 returning "id"
 ```
+

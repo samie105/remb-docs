@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:10:25.915Z"
 content_hash: "f55d58dda05fe15fb4c45fbd64378121811e5524bb35d88327ec0e451907319b"
 menu_path: ["Network - Deno documentation"]
 section_path: []
+nav_prev: {"path": "deno/deno/api/deno/linter/index.md", "title": "Linter - Deno documentation"}
+nav_next: {"path": "deno/deno/api/deno/permissions/index.md", "title": "Permissions - Deno documentation"}
 ---
+
 ### Classes [#](#Classes)
 
 c
@@ -598,3 +601,4 @@ T
 [Deno.VsockListener](./././~/Deno.VsockListener "Deno.VsockListener")
 
 Specialized listener that accepts VSOCK connections.
+

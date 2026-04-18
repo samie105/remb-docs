@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:03:05.745Z"
 content_hash: "5959196a99fda1b94eb8260690d8e02d3c47fb5830bf15172620de19c16392f2"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Redis with Google Agent Development Kit (ADK)","→","Redis with Google Agent Development Kit (ADK)","→\n      \n        adk-redis examples","→","adk-redis examples"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Redis with Google Agent Development Kit (ADK)","→","Redis with Google Agent Development Kit (ADK)","→\n      \n        adk-redis examples","→","adk-redis examples"]
+nav_prev: {"path": "redis/docs/latest/operate/rc/security/access-control/data-access-control/default-user/index.md", "title": "Default user"}
+nav_next: {"path": "redis/docs/latest/operate/oss_and_stack/stack-with-enterprise/deprecated-features/triggers-and-functions/concepts/function_flags/index.md", "title": "Function flags"}
 ---
+
 # adk-redis examples
 
 Complete examples for every adk-redis capability.
@@ -96,3 +99,4 @@ python main.py
 *   [adk-redis README](https://github.com/redis-developer/adk-redis): Installation and overview
 
 ## On this page
+

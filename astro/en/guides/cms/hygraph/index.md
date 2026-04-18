@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:34:29.766Z"
 content_hash: "fc9e0e76410f1314a0e95743555adad5a6df5831052415b8dbc50dce023bdbf4"
 menu_path: ["Hygraph & Astro"]
 section_path: []
+nav_prev: {"path": "astro/en/guides/cms/hashnode/index.md", "title": "Hashnode & Astro"}
+nav_next: {"path": "astro/en/guides/cms/jekyllpad/index.md", "title": "JekyllPad & Astro"}
 ---
+
 # Hygraph & Astro
 
 [Hygraph](https://hygraph.com/) is a federated content management platform. It exposes a GraphQL endpoint for fetching content.
@@ -282,3 +285,4 @@ To set up a webhook in Netlify:
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:01:26.124Z"
 content_hash: "0538a6cc71468d0325fea21fcaee3af18b66c411e105067c99a01d64b0568a47"
 menu_path: ["Storage","Storage","More","More","More","S3","S3","API Compatibility","API Compatibility"]
 section_path: ["Storage","Storage","More","More","More","S3","S3","API Compatibility","API Compatibility"]
+nav_prev: {"path": "supabase/docs/guides/storage/s3/authentication/index.md", "title": "S3 Authentication"}
+nav_next: {"path": "supabase/docs/guides/storage/schema/custom-roles/index.md", "title": "Custom Roles"}
 ---
+
 # 
 
 S3 Compatibility
@@ -396,3 +399,4 @@ Query Parameters:
 ❌ x-amz-request-payer  
 ❌ Bucket Owner:  
 ❌ x-amz-expected-bucket-owner
+

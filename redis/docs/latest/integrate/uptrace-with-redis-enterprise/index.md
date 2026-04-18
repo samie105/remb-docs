@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:11:36.257Z"
 content_hash: "0ff37b2c04f5fbc510fc0791fb868c4089c6e79bacaf492bb1a8a8776482e96d"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Uptrace with Redis Software","→","Uptrace with Redis Software"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Uptrace with Redis Software","→","Uptrace with Redis Software"]
+nav_prev: {"path": "redis/docs/latest/develop/ai/search-and-query/advanced-concepts/index.md", "title": "Search concepts"}
+nav_next: {"path": "redis/docs/latest/operate/oss_and_stack/install/install-stack/windows/index.md", "title": "Run Redis Open Source on Windows using Docker"}
 ---
+
 # Uptrace with Redis Software
 
 To collect, view, and monitor metrics data from your databases and other cluster components, you can connect Uptrace to your Redis Software cluster using OpenTelemetry Collector.
@@ -178,3 +181,4 @@ monitors:
 You can learn more about the query language [here](https://uptrace.dev/get/querying-metrics.html).
 
 ## On this page
+

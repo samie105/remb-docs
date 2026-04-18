@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:01:27.661Z"
 content_hash: "f0bf4c1d31e16302058bb73ba898added7985287ec4220ae7e765d5854b0f550"
 menu_path: ["S3"]
 section_path: []
+nav_prev: {"path": "bun/bun/docs/runtime/semver/index.md", "title": "Semver"}
+nav_next: {"path": "bun/bun/docs/runtime/shell/index.md", "title": "Shell"}
 ---
+
 Production servers often read, upload, and write files to S3-compatible object storage services instead of the local filesystem. Historically, that means local filesystem APIs you use in development can’t be used in production. When you use Bun, things are different.
 
 ### Bun’s S3 API is fast
@@ -553,7 +556,7 @@ Fallback environment variable
 
 `AWS_SESSION_TOKEN`
 
-These environment variables are read from [`.env` files](https://bun.com/docs/runtime/environment-variables) or from the process environment at initialization time (`process.env` is not used for this). These defaults are overridden by the options you pass to `s3.file(credentials)`, `new Bun.S3Client(credentials)`, or any of the methods that accept credentials. So if, for example, you use the same credentials for different buckets, you can set the credentials once in your `.env` file and then pass `bucket: "my-bucket"` to the `s3.file()` function without having to specify all the credentials again.
+These environment variables are read from [`.env` files](bun/bun/docs/runtime/environment-variables/index.md) or from the process environment at initialization time (`process.env` is not used for this). These defaults are overridden by the options you pass to `s3.file(credentials)`, `new Bun.S3Client(credentials)`, or any of the methods that accept credentials. So if, for example, you use the same credentials for different buckets, you can set the credentials once in your `.env` file and then pass `bucket: "my-bucket"` to the `s3.file()` function without having to specify all the credentials again.
 
 ### `S3Client` objects
 
@@ -1009,3 +1012,4 @@ Like `Response` and `Blob`, `S3File` assumes UTF-8 encoding by default. When cal
 *   When a UTF-16 byte order mark (BOM) is detected, it will be treated as UTF-16. JavaScriptCore natively supports UTF-16, so it skips the UTF-8 transcoding process (and strips the BOM). This is mostly good, but it does mean if you have invalid surrogate pairs characters in your UTF-16 string, they will be passed through to JavaScriptCore (same as source code).
 *   When a UTF-8 BOM is detected, it gets stripped before the string is passed to JavaScriptCore and invalid UTF-8 codepoints are replaced with the Unicode replacement character (`\uFFFD`).
 *   UTF-32 is not supported.
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:32:53.659Z"
 content_hash: "7e4fa93682a3f372e8f9b6ad36965d8d1c222d06fa5b0ee4def149f3feab1429"
 menu_path: ["PostgreSQL: Documentation: 18: SET ROLE"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/sql-createsubscription.html/index.md", "title": "PostgreSQL: Documentation: 18: CREATE SUBSCRIPTION"}
+nav_next: {"path": "postgres/docs/current/spi-spi-register-relation.html/index.md", "title": "PostgreSQL: Documentation: 18: SPI_register_relation"}
 ---
+
 SET ROLE — set the current user identifier of the current session
 
 ## Synopsis
@@ -26,7 +29,7 @@ The current session user must have the `SET` option for the specified _`role_nam
 
 The `SESSION` and `LOCAL` modifiers act the same as for the regular [`SET`](https://www.postgresql.org/docs/current/sql-set.html "SET") command.
 
-`SET ROLE NONE` sets the current user identifier to the current session user identifier, as returned by `session_user`. `RESET ROLE` sets the current user identifier to the connection-time setting specified by the [command-line options](https://www.postgresql.org/docs/current/libpq-connect.html#LIBPQ-CONNECT-OPTIONS), [`ALTER ROLE`](https://www.postgresql.org/docs/current/sql-alterrole.html "ALTER ROLE"), or [`ALTER DATABASE`](https://www.postgresql.org/docs/current/sql-alterdatabase.html "ALTER DATABASE"), if any such settings exist. Otherwise, `RESET ROLE` sets the current user identifier to the current session user identifier. These forms can be executed by any user.
+`SET ROLE NONE` sets the current user identifier to the current session user identifier, as returned by `session_user`. `RESET ROLE` sets the current user identifier to the connection-time setting specified by the [command-line options](postgres/docs/current/libpq-connect.html/index.md#LIBPQ-CONNECT-OPTIONS), [`ALTER ROLE`](https://www.postgresql.org/docs/current/sql-alterrole.html "ALTER ROLE"), or [`ALTER DATABASE`](https://www.postgresql.org/docs/current/sql-alterdatabase.html "ALTER DATABASE"), if any such settings exist. Otherwise, `RESET ROLE` sets the current user identifier to the current session user identifier. These forms can be executed by any user.
 
 ## Notes
 
@@ -57,3 +60,4 @@ SELECT SESSION\_USER, CURRENT\_USER;
 ## Compatibility
 
 PostgreSQL allows identifier syntax (``"_`rolename`_"``), while the SQL standard requires the role name to be written as a string literal. SQL does not allow this command during a transaction; PostgreSQL does not make this restriction because there is no reason to. The `SESSION` and `LOCAL` modifiers are a PostgreSQL extension, as is the `RESET` syntax.
+

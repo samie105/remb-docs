@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:48:14.436Z"
 content_hash: "0ea6655926fcad2b132972d1ea3ee49c255df0ffedf1c260f42bace4676d7e09"
 menu_path: ["Platform","Platform","More","More","More","Single Sign-On","Single Sign-On","Overview","Overview"]
 section_path: ["Platform","Platform","More","More","More","Single Sign-On","Single Sign-On","Overview","Overview"]
+nav_prev: {"path": "supabase/docs/guides/platform/regions/index.md", "title": "Available regions"}
+nav_next: {"path": "supabase/docs/guides/platform/ssl-enforcement/index.md", "title": "Postgres SSL Enforcement"}
 ---
+
 # 
 
 Enable SSO for Your Organization
@@ -70,3 +73,4 @@ To revoke access for a specific SSO user without disabling the provider entirely
 
 *   Remove or disable the user's account in your identity provider
 *   Downgrade or remove their permissions for any organizations in Supabase.
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:34:10.723Z"
 content_hash: "1e8bb173b7fc788e5e74b5d7b8cc7515232d59ebe6f7e33aa4746daf692f3b80"
 menu_path: ["AI & Vectors","AI & Vectors","Third-Party Tools","Third-Party Tools","LangChain","LangChain"]
 section_path: ["AI & Vectors","AI & Vectors","Third-Party Tools","Third-Party Tools","LangChain","LangChain"]
+nav_prev: {"path": "supabase/docs/guides/ai/keyword-search/index.md", "title": "Keyword search"}
+nav_next: {"path": "supabase/docs/guides/ai/rag-with-permissions/index.md", "title": "RAG with Permissions"}
 ---
+
 # 
 
 LangChain
@@ -61,3 +64,4 @@ You can install the LangChain Hybrid Search function though our [database.dev pa
 *   Official [LangChain site](https://langchain.com/).
 *   Official [LangChain docs](https://js.langchain.com/docs/modules/indexes/vector_stores/integrations/supabase).
 *   Supabase [Hybrid Search](https://js.langchain.com/docs/modules/indexes/retrievers/supabase-hybrid).
+

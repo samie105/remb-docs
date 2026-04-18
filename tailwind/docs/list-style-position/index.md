@@ -9,15 +9,9 @@ last_crawled_at: "2026-04-18T16:56:39.976Z"
 content_hash: "a8ab6948d17a96c4d5d2663e2bc55dbfd546655e4f54d8f64ce8d6ad205e74d0"
 menu_path: ["list-style-position"]
 section_path: []
+nav_prev: {"path": "tailwind/docs/list-style-image/index.md", "title": "list-style-image"}
+nav_next: {"path": "tailwind/docs/list-style-type/index.md", "title": "list-style-type"}
 ---
-[](/)
-
-[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
-
-1.  Typography
-2.  list-style-position
-
-Typography
 
 # list-style-position
 
@@ -85,3 +79,4 @@ Short, tactical video lessons from the creator of Tailwind CSS, delivered direct
 [Get the free course](/build-uis-that-dont-suck)
 
 Copyright © 2026 Tailwind Labs Inc.·[Trademark Policy](/brand)
+

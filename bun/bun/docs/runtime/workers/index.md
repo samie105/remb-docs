@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:02:11.667Z"
 content_hash: "3eb03e3addbad50732e82abb8c517dfc12e7bcec259ba2ae870afb3ad598b3da"
 menu_path: ["Workers"]
 section_path: []
+nav_prev: {"path": "bun/bun/docs/runtime/utils/index.md", "title": "Utils"}
+nav_next: {"path": "bun/bun/docs/runtime/yaml/index.md", "title": "YAML"}
 ---
+
 [`Worker`](https://developer.mozilla.org/en-US/docs/Web/API/Worker) lets you start and communicate with a new JavaScript instance running on a separate thread while sharing I/O resources with the main thread. Bun implements a minimal version of the [Web Workers API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API) with extensions that make it work better for server-side use cases. Like the rest of Bun, `Worker` in Bun support CommonJS, ES Modules, TypeScript, JSX, TSX and more out of the box. No extra build steps are necessary.
 
 ## Creating a `Worker`
@@ -326,3 +329,4 @@ if (Bun.isMainThread) {
 ```
 
 This is useful for conditionally running code based on whether you’re in the main thread or not.
+

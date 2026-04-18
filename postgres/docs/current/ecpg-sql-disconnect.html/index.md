@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:37:41.068Z"
 content_hash: "b5dd51b5c0fa1d57a181676decfb299d164f20b8c970225b4b64e10a3e5f37e8"
 menu_path: ["PostgreSQL: Documentation: 18: DISCONNECT"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/progress-reporting.html/index.md", "title": "PostgreSQL: Documentation: 18: 27.4.\u00a0Progress Reporting"}
+nav_next: {"path": "postgres/docs/current/view-pg-replication-origin-status.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.19.\u00a0pg_replication_origin_status"}
 ---
+
 DISCONNECT — terminate a database connection
 
 ## Synopsis
@@ -54,3 +57,4 @@ main(void)
 ## Compatibility
 
 `DISCONNECT` is specified in the SQL standard.
+

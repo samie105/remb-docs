@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:41:37.928Z"
 content_hash: "786037649a691912b14eb14cf25b82d52d2bfe88843d93f3ff50cc050b9a6c71"
 menu_path: ["Styles and CSS"]
 section_path: []
+nav_prev: {"path": "astro/en/basics/layouts/index.md", "title": "Layouts"}
+nav_next: {"path": "astro/en/guides/fonts/index.md", "title": "Using custom fonts"}
 ---
+
 # Styles and CSS
 
 Astro was designed to make styling and writing CSS a breeze. Write your own CSS directly inside of an Astro component or import your favorite CSS library like [Tailwind](https://tailwindcss.com/docs/installation/framework-guides/astro). Advanced styling languages like [Sass](https://sass-lang.com/) and [Less](https://lesscss.org/) are also supported.
@@ -550,3 +553,4 @@ This is not recommended for most users. Instead, place your CSS files inside of 
 See [Vite’s docs](https://vite.dev/guide/assets.html#importing-asset-as-url) for full details.
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

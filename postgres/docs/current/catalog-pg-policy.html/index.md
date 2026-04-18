@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:34:24.961Z"
 content_hash: "5c08a42748f21e87a72014a72c88e5ccc02b810eb4c11a944cc965be1ab802ef"
 menu_path: ["PostgreSQL: Documentation: 18: 52.38. pg_policy"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/infoschema-domain-udt-usage.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.22.\u00a0domain_udt_usage"}
+nav_next: {"path": "postgres/docs/current/jit-extensibility.html/index.md", "title": "PostgreSQL: Documentation: 18: 30.4.\u00a0Extensibility"}
 ---
+
 Development Versions: [devel](https://www.postgresql.org/docs/devel/catalog-pg-policy.html "PostgreSQL devel - 52.38. pg_policy")
 
 The catalog `pg_policy` stores row-level security policies for tables. A policy includes the kind of command that it applies to (possibly all commands), the roles that it applies to, the expression to be added as a security-barrier qualification to queries that include the table, and the expression to be added as a `WITH CHECK` option for queries that attempt to add new records to the table.
@@ -57,3 +60,4 @@ The expression tree to be added to the WITH CHECK qualifications for queries tha
 ### Note
 
 Policies stored in `pg_policy` are applied only when [`pg_class`](https://www.postgresql.org/docs/current/catalog-pg-class.html "52.11. pg_class").`relrowsecurity` is set for their table.
+

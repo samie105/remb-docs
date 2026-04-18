@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:42:14.727Z"
 content_hash: "db75464c71f64b87ebd34525599afc87a48774779c0367ac62cb66c836ad32b6"
 menu_path: ["tls - Node documentation"]
 section_path: []
+nav_prev: {"path": "deno/deno/api/node/timers/promises/index.md", "title": "timers/promises - Node documentation"}
+nav_next: {"path": "deno/deno/api/node/trace_events/index.md", "title": "trace_events - Node documentation"}
 ---
+
 ### Usage in Deno
 
 ```typescript
@@ -362,3 +365,4 @@ v
 [rootCertificates](.././tls/~/rootCertificates "rootCertificates")
 
 An immutable array of strings representing the root certificates (in PEM format) from the bundled Mozilla CA store as supplied by the current Node.js version.
+

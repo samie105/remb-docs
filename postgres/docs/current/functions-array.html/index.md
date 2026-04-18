@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:49:32.019Z"
 content_hash: "7a8b4a7f7e50f1a2515b94a1150d443984afbe8384d43164c551922746ec4cc8"
 menu_path: ["PostgreSQL: Documentation: 18: 9.19. Array Functions and Operators"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/view-pg-locks.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.13.\u00a0pg_locks"}
+nav_next: {"path": "postgres/docs/current/infoschema-routine-privileges.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.41.\u00a0routine_privileges"}
 ---
+
 Function
 
 Description
@@ -124,7 +127,7 @@ If _`descending`_ is true then sort in descending order, otherwise ascending ord
 
 `array_to_string` ( _`array`_ `anyarray`, _`delimiter`_ `text` \[, _`null_string`_ `text` \] ) → `text`
 
-Converts each array element to its text representation, and concatenates those separated by the _`delimiter`_ string. If _`null_string`_ is given and is not `NULL`, then `NULL` array entries are represented by that string; otherwise, they are omitted. See also [`string_to_array`](https://www.postgresql.org/docs/current/functions-string.html#FUNCTION-STRING-TO-ARRAY).
+Converts each array element to its text representation, and concatenates those separated by the _`delimiter`_ string. If _`null_string`_ is given and is not `NULL`, then `NULL` array entries are represented by that string; otherwise, they are omitted. See also [`string_to_array`](postgres/docs/current/functions-string.html/index.md#FUNCTION-STRING-TO-ARRAY).
 
 `array_to_string(ARRAY[1, 2, 3, NULL, 5], ',', '*')` → `1,2,3,*,5`
 
@@ -173,3 +176,4 @@ Expands multiple arrays (possibly of different data types) into a set of rows. I
  1 | foo
  2 | bar
    | baz
+

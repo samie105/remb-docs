@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:34:57.991Z"
 content_hash: "0712263961e902488513bb4cb333c22197ecf7b9e258748f7777cf6d8e838077"
 menu_path: ["diagnostics_channel - Node documentation"]
 section_path: []
+nav_prev: {"path": "deno/deno/api/node/dgram/index.md", "title": "dgram - Node documentation"}
+nav_next: {"path": "deno/deno/api/node/dns/index.md", "title": "dns - Node documentation"}
 ---
+
 ### Usage in Deno
 
 ```typescript
@@ -127,3 +130,4 @@ T
 [ChannelListener](.././diagnostics_channel/~/ChannelListener "ChannelListener")
 
 No documentation available
+

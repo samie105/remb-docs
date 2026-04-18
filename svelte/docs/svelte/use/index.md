@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:37:31.228Z"
 content_hash: "3c1c01f1e66107b3b4279a5c34de5e19813dd7eeba3f3d65dfdf6df065fb8520"
 menu_path: ["use:"]
 section_path: []
+nav_prev: {"path": "svelte/docs/svelte/bind/index.md", "title": "bind:"}
+nav_next: {"path": "svelte/docs/svelte/transition/index.md", "title": "transition:"}
 ---
+
 > In Svelte 5.29 and newer, consider using [attachments](@attach) instead, as they are more flexible and composable.
 
 Actions are functions that are called when an element is mounted. They are added with the `use:` directive, and will typically use an `$effect` so that they can reset any state when the element is unmounted:
@@ -160,3 +163,4 @@ App
 previous next
 
 [bind:](/docs/svelte/bind) [transition:](/docs/svelte/transition)
+

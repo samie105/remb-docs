@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:42:54.278Z"
 content_hash: "78df0d8f90c28d2221d48a6485090e36efcf5bef55bfae8ec52a08e0967b6313"
 menu_path: ["Database","Database","Working with your database (intermediate)","Working with your database (intermediate)","Managing database webhooks","Managing database webhooks"]
 section_path: ["Database","Database","Working with your database (intermediate)","Working with your database (intermediate)","Managing database webhooks","Managing database webhooks"]
+nav_prev: {"path": "supabase/docs/guides/database/vault/index.md", "title": "Vault"}
+nav_next: {"path": "supabase/docs/guides/deployment/going-into-prod/index.md", "title": "Production Checklist"}
 ---
+
 # 
 
 Database Webhooks
@@ -74,3 +77,4 @@ If you're experiencing connection issues with webhooks locally, verify you're us
 ## Resources[#](#resources)
 
 *   [pg\_net](/docs/guides/database/extensions/pgnet): an async networking extension for Postgres
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:40:05.885Z"
 content_hash: "6aba64657f55be72347657271eed12c10b6d0a08ccea56befa3d6960c7013dea"
 menu_path: ["Queueing a Series of State Updates"]
 section_path: []
+nav_prev: {"path": "react/learn/state-as-a-snapshot/index.md", "title": "State as a Snapshot"}
+nav_next: {"path": "react/learn/updating-objects-in-state/index.md", "title": "Updating Objects in State"}
 ---
+
 Setting a state variable will queue another render. But sometimes you might want to perform multiple operations on the value before queueing the next render. To do this, it helps to understand how React batches state updates.
 
 ### You will learn
@@ -21,7 +24,7 @@ Setting a state variable will queue another render. But sometimes you might want
 
 You might expect that clicking the “+3” button will increment the counter three times because it calls `setNumber(number + 1)` three times:
 
-However, as you might recall from the previous section, [each render’s state values are fixed](https://react.dev/learn/state-as-a-snapshot#rendering-takes-a-snapshot-in-time), so the value of `number` inside the first render’s event handler is always `0`, no matter how many times you call `setNumber(1)`:
+However, as you might recall from the previous section, [each render’s state values are fixed](react/learn/state-as-a-snapshot/index.md#rendering-takes-a-snapshot-in-time), so the value of `number` inside the first render’s event handler is always `0`, no matter how many times you call `setNumber(1)`:
 
 ```
 setNumber(0 + 1);setNumber(0 + 1);setNumber(0 + 1);
@@ -33,7 +36,7 @@ This might remind you of a waiter taking an order at the restaurant. A waiter do
 
 ![An elegant cursor at a restaurant places and order multiple times with React, playing the part of the waiter. After she calls setState() multiple times, the waiter writes down the last one she requested as her final order.](https://react.dev/images/docs/illustrations/i_react-batching.png)
 
-This lets you update multiple state variables—even from multiple components—without triggering too many [re-renders.](https://react.dev/learn/render-and-commit#re-renders-when-state-updates) But this also means that the UI won’t be updated until _after_ your event handler, and any code in it, completes. This behavior, also known as **batching,** makes your React app run much faster. It also avoids dealing with confusing “half-finished” renders where only some of the variables have been updated.
+This lets you update multiple state variables—even from multiple components—without triggering too many [re-renders.](react/learn/render-and-commit/index.md#re-renders-when-state-updates) But this also means that the UI won’t be updated until _after_ your event handler, and any code in it, completes. This behavior, also known as **batching,** makes your React app run much faster. It also avoids dealing with confusing “half-finished” renders where only some of the variables have been updated.
 
 **React does not batch across _multiple_ intentional events like clicks**—each click is handled separately. Rest assured that React only does batching when it’s generally safe to do. This ensures that, for example, if the first button click disables a form, the second click would not submit it again.
 
@@ -174,7 +177,7 @@ To summarize, here’s how you can think of what you’re passing to the `setNum
 *   **An updater function** (e.g. `n => n + 1`) gets added to the queue.
 *   **Any other value** (e.g. number `5`) adds “replace with `5`” to the queue, ignoring what’s already queued.
 
-After the event handler completes, React will trigger a re-render. During the re-render, React will process the queue. Updater functions run during rendering, so **updater functions must be [pure](https://react.dev/learn/keeping-components-pure)** and only _return_ the result. Don’t try to set state from inside of them or run other side effects. In Strict Mode, React will run each updater function twice (but discard the second result) to help you find mistakes.
+After the event handler completes, React will trigger a re-render. During the re-render, React will process the queue. Updater functions run during rendering, so **updater functions must be [pure](react/learn/keeping-components-pure/index.md)** and only _return_ the result. Don’t try to set state from inside of them or run other side effects. In Strict Mode, React will run each updater function twice (but discard the second result) to help you find mistakes.
 
 ### Naming conventions[](#naming-conventions "Link for Naming conventions ")
 
@@ -209,3 +212,4 @@ You’re working on an art marketplace app that lets the user submit multiple or
 However, the “Pending” counter does not behave as intended. When you press “Buy”, it decreases to `-1` (which should not be possible!). And if you click fast twice, both counters seem to behave unpredictably.
 
 Why does this happen? Fix both counters.
+

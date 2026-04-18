@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:37:46.718Z"
 content_hash: "9b170d1949b70d1a8f341dd2c41b76135a87a04101ffccf68fc70bacb8d22652"
 menu_path: ["module - Node documentation"]
 section_path: []
+nav_prev: {"path": "deno/deno/api/node/inspector/promises/index.md", "title": "inspector/promises - Node documentation"}
+nav_next: {"path": "deno/deno/api/node/net/index.md", "title": "net - Node documentation"}
 ---
+
 ### Usage in Deno
 
 ```typescript
@@ -435,3 +438,4 @@ v
 [require](.././module/~/require "require")
 
 No documentation available
+

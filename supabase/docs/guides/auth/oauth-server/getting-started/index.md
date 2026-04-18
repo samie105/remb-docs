@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:53:20.597Z"
 content_hash: "25957651ee425b536982b479495de557762117d6dbd8cb80107503afaf19ca6c"
 menu_path: ["Auth","Auth","OAuth 2.1 Server","OAuth 2.1 Server","Getting Started","Getting Started"]
 section_path: ["Auth","Auth","OAuth 2.1 Server","OAuth 2.1 Server","Getting Started","Getting Started"]
+nav_prev: {"path": "supabase/docs/guides/auth/enterprise-sso/auth-sso-saml/index.md", "title": "Single Sign-On with SAML 2.0 for Projects"}
+nav_next: {"path": "supabase/docs/guides/auth/oauth-server/mcp-authentication/index.md", "title": "Model Context Protocol (MCP) Authentication"}
 ---
+
 # 
 
 Getting Started with OAuth 2.1 Server
@@ -239,3 +242,4 @@ Now that you've registered your first OAuth client, you're ready to:
 *   [Understand OAuth flows](/docs/guides/auth/oauth-server/oauth-flows) - Learn how the authorization code and refresh token flows work
 *   [Implement MCP authentication](/docs/guides/auth/oauth-server/mcp-authentication) - Enable AI agent authentication
 *   [Secure with RLS](/docs/guides/auth/oauth-server/token-security) - Control data access for OAuth clients
+

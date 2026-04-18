@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:36:08.333Z"
 content_hash: "621696bb0997fda913c3623784f7527dd92640e065adc632764626763b9df498"
 menu_path: ["Content collections"]
 section_path: []
+nav_prev: {"path": "astro/en/guides/markdown-content/index.md", "title": "Markdown in Astro"}
+nav_next: {"path": "astro/en/guides/images/index.md", "title": "Images"}
 ---
+
 # Content collections
 
 **Added in:** `astro@2.0.0`
@@ -649,3 +652,4 @@ With the Red Hat YAML extension, you can configure a schema to apply to all YAML
 See [“Associating schemas”](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml#associating-schemas) in the Red Hat YAML extension documentation for more details.
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:32:23.225Z"
 content_hash: "04f60656e2316cc42971ad04cca25e4918c7f6c254238ec10e29695cc28cad73"
 menu_path: ["Supabase Platform"]
 section_path: []
+nav_prev: {"path": "supabase/docs/guides/integrations/index.md", "title": "Integrations"}
+nav_next: {"path": "supabase/docs/guides/local-development/index.md", "title": "Local Development & CLI"}
 ---
+
 # 
 
 Supabase Platform
@@ -46,3 +49,4 @@ If Supabase experiences outages, we keep you as informed as possible, as early a
     `/feed subscribe https://status.supabase.com/history.atom`
 
 Make sure to review our [SLA](/docs/company/sla) for details on our commitment to Platform Stability.
+

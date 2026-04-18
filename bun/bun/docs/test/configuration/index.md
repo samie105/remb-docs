@@ -9,15 +9,10 @@ last_crawled_at: "2026-04-18T17:02:22.262Z"
 content_hash: "12be50da3082cdb3b091daff251d45a33e03916d3a9fac2862703d0017d17467"
 menu_path: ["Test configuration"]
 section_path: []
+nav_prev: {"path": "bun/bun/docs/test/discovery/index.md", "title": "Finding tests"}
+nav_next: {"path": "bun/bun/docs/test/dom/index.md", "title": "DOM testing"}
 ---
-Configure `bun test` via `bunfig.toml` file and command-line options. This page documents the available configuration options for `bun test`.
 
-You can configure `bun test` behavior by adding a `[test]` section to your `bunfig.toml` file:
-
-bunfig.toml
-
-```
-[test]
 # Options go here
 ```
 
@@ -425,7 +420,7 @@ coveragePathIgnorePatterns = [
 ]
 ```
 
-Files matching any of these patterns will be excluded from coverage calculation and reporting. See the [coverage documentation](https://bun.com/docs/test/code-coverage) for more details and examples.
+Files matching any of these patterns will be excluded from coverage calculation and reporting. See the [coverage documentation](bun/bun/docs/test/code-coverage/index.md) for more details and examples.
 
 #### Common Ignore Patterns
 
@@ -648,3 +643,4 @@ bun test --dry-run
 # Verbose output to see configuration loading
 bun test --verbose
 ```
+

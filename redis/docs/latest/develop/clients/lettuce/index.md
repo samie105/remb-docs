@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:07:47.734Z"
 content_hash: "dd04abc0972a9e12966e4abaa74af78186dd1c047065b6ff80ff9bbabb099c0d"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Connect with Redis client API libraries","→","Connect with Redis client API libraries","→\n      \n        Lettuce guide (Java)","→","Lettuce guide (Java)"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Connect with Redis client API libraries","→","Connect with Redis client API libraries","→\n      \n        Lettuce guide (Java)","→","Lettuce guide (Java)"]
+nav_prev: {"path": "redis/docs/latest/operate/oss_and_stack/install/install-stack/homebrew/index.md", "title": "Install Redis Open Source on macOS"}
+nav_next: {"path": "redis/docs/latest/operate/oss_and_stack/stack-with-enterprise/deprecated-features/triggers-and-functions/concepts/library_configuration/index.md", "title": "Library configuration"}
 ---
+
 # Lettuce guide (Java)
 
 Connect your Lettuce application to a Redis database
@@ -167,3 +170,4 @@ The [Lettuce reference guide](https://redis.github.io/lettuce/) has more example
 See also the other pages in this section for more information and examples:
 
 ## On this page
+

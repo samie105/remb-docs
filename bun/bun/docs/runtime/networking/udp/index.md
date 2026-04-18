@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:00:57.828Z"
 content_hash: "fd7a7c9f2a2db962e715b901ad39fcab36d406e924637b53d088df6591596439"
 menu_path: ["UDP"]
 section_path: []
+nav_prev: {"path": "bun/bun/docs/runtime/networking/tcp/index.md", "title": "TCP"}
+nav_next: {"path": "bun/bun/docs/runtime/node-api/index.md", "title": "Node-API"}
 ---
+
 ## Bind a UDP socket (`Bun.udpSocket()`)
 
 To create a new (bound) UDP socket:
@@ -184,3 +187,4 @@ For source-specific multicast (SSM), use `addSourceSpecificMembership` and `drop
 socket.addSourceSpecificMembership("10.0.0.1", "232.0.0.1");
 socket.dropSourceSpecificMembership("10.0.0.1", "232.0.0.1");
 ```
+

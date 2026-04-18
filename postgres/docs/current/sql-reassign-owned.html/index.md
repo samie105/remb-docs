@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:49:49.543Z"
 content_hash: "ba60872e1929dc0420c09c3f58f738704ff25e2cae42efd72a2fce5879386629"
 menu_path: ["PostgreSQL: Documentation: 18: REASSIGN OWNED"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/view-pg-indexes.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.12.\u00a0pg_indexes"}
+nav_next: {"path": "postgres/docs/current/plpgsql-statements.html/index.md", "title": "PostgreSQL: Documentation: 18: 41.5.\u00a0Basic Statements"}
 ---
+
 REASSIGN OWNED — change the ownership of database objects owned by a database role
 
 ## Synopsis
@@ -46,3 +49,4 @@ See [Section 21.4](https://www.postgresql.org/docs/current/role-removal.html "2
 ## Compatibility
 
 The `REASSIGN OWNED` command is a PostgreSQL extension.
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:46:21.622Z"
 content_hash: "a389bade73cb2efca8683068c07a52b394450c5c7f86cb2ae1bc399067cf36b1"
 menu_path: ["Integrations","Integrations","Supabase Marketplace","Supabase Marketplace"]
 section_path: ["Integrations","Integrations","Supabase Marketplace","Supabase Marketplace"]
+nav_prev: {"path": "supabase/docs/guides/integrations/build-a-supabase-oauth-integration/index.md", "title": "Build a Supabase Integration"}
+nav_next: {"path": "supabase/docs/guides/integrations/vercel-marketplace/index.md", "title": "Vercel Marketplace"}
 ---
+
 # 
 
 Supabase Marketplace
@@ -40,3 +43,4 @@ Integrations are assessed on the following criteria:
 *   **Compliance** Integrations should not infringe on the Supabase brand/trademark. In short, you cannot use "Supabase" in the name. As the listing appears on the Supabase domain, we don't want to mislead developers into thinking that an integration is an official product.
 *   **Service Level Agreements** All listings are required to have their own Terms and Conditions, Privacy Policy, and Acceptable Use Policy, and the company must have resources to meet their SLAs.
 *   **Maintainability** All integrations are required to be maintained and functional with Supabase, and the company may be assessed on your ability to remain functional over a long time horizon.
+

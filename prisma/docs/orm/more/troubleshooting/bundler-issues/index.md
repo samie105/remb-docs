@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:43:12.664Z"
 content_hash: "31c5419181eda0753cfb3087922e651f14a25f88417f5cd0d3ca8bddf12420f2"
 menu_path: ["Bundler issues"]
 section_path: []
+nav_prev: {"path": "prisma/docs/orm/more/dev-environment/environment-variables/index.md", "title": "Environment variables"}
+nav_next: {"path": "prisma/docs/orm/more/troubleshooting/check-constraints/index.md", "title": "Check constraints"}
 ---
+
 Troubleshooting
 
 Solve ENOENT package error with vercel/pkg and other bundlers
@@ -33,3 +36,4 @@ Add your Prisma query engine binary path to the `pkg/assets` section of your `pa
 See [this Github issue](https://github.com/prisma/prisma/issues/8449) for further discussion.
 
 [Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/more/troubleshooting/bundler-issues.mdx)
+

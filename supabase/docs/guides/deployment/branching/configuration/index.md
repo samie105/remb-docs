@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:57:03.779Z"
 content_hash: "1760b8cb547225a5bd83b58085704707b8d12cdadc150befa2a76837381c1ab2"
 menu_path: ["Deployment & Branching","Deployment & Branching","Branching","Branching","Configuration","Configuration"]
 section_path: ["Deployment & Branching","Deployment & Branching","Branching","Branching","Configuration","Configuration"]
+nav_prev: {"path": "supabase/docs/guides/database/replication/replication-monitoring/index.md", "title": "Replication Monitoring"}
+nav_next: {"path": "supabase/docs/guides/database/replication/replication-setup/index.md", "title": "Replication Setup"}
 ---
+
 # 
 
 Configuration
@@ -281,3 +284,4 @@ This will display a table showing all your branches with their corresponding pro
 *   Explore [branching integrations](/docs/guides/deployment/branching/integrations)
 *   Learn about [troubleshooting branches](/docs/guides/deployment/branching/troubleshooting)
 *   Review [branching pricing](/docs/guides/platform/manage-your-usage/branching#pricing)
+

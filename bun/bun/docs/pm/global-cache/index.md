@@ -9,35 +9,10 @@ last_crawled_at: "2026-04-18T16:57:51.009Z"
 content_hash: "c858d5f4adc165f07f599241c5b0b3cfb58e5253e6b8de9a2a6366aadb071c9e"
 menu_path: ["Global cache"]
 section_path: []
+nav_prev: {"path": "bun/bun/docs/pm/filter/index.md", "title": "bun --filter"}
+nav_next: {"path": "bun/bun/docs/pm/isolated-installs/index.md", "title": "Isolated installs"}
 ---
-[Skip to main content](#content-area)
 
-[Bun home page![light logo](https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z_zHyy/logo/logo-with-wordmark-dark.svg?fit=max&auto=format&n=JUhaF6Mf68z_zHyy&q=85&s=3f55cd23822028e40658b192c927f3e4)![dark logo](https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z_zHyy/logo/logo-with-wordmark-light.svg?fit=max&auto=format&n=JUhaF6Mf68z_zHyy&q=85&s=8a0c5928d9dc3631f0d33e17c257e2ec)](/docs)
-
-[Runtime
-
-](/docs)[Package Manager
-
-](/docs/pm/cli/install)[Bundler
-
-](/docs/bundler)[Test Runner
-
-](/docs/test)[Guides
-
-](/docs/guides)[Reference
-
-](https://bun.com/reference)[Blog
-
-](https://bun.com/blog)[Feedback
-
-](/docs/feedback)
-
-All packages downloaded from the registry are stored in a global cache at `~/.bun/install/cache`, or the path defined by the environment variable `BUN_INSTALL_CACHE_DIR`. They are stored in subdirectories named like `${name}@${version}`, so multiple versions of a package can be cached.Configuring cache behavior
-
-bunfig.toml
-
-```
-[install.cache]
 # the directory to use for the cache
 dir = "~/.bun/install/cache"
 
@@ -127,3 +102,4 @@ Isolated installs
 Next
 
 ](/docs/pm/isolated-installs)
+

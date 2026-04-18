@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:32:11.381Z"
 content_hash: "956e6d14479339da1e57a13dcae3ec1675e8766d56969dc234a4bb1bd13d09dc"
 menu_path: ["Editor setup"]
 section_path: []
+nav_prev: {"path": "astro/en/guides/configuring-astro/index.md", "title": "Configuration overview"}
+nav_next: {"path": "astro/en/guides/typescript/index.md", "title": "TypeScript"}
 ---
+
 # Editor setup
 
 Customize your code editor to improve the Astro developer experience and unlock new features.
@@ -146,3 +149,4 @@ See the [Prettier plugin’s README](https://github.com/withastro/prettier-plugi
 [dprint](https://dprint.dev/) is a highly-configurable code formatter that supports many languages, including JavaScript, TypeScript, CSS, and more. Support for `.astro` files can be added using the [markup\_fmt plugin](https://github.com/g-plane/markup_fmt).
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:21:08.894Z"
 content_hash: "e9351c909ddf4335c988674b59cc05b2ce4364a176b6333923e50b70b6661595"
 menu_path: ["Sequences"]
 section_path: []
+nav_prev: {"path": "drizzle/docs/indexes-constraints/index.md", "title": "Indexes & Constraints"}
+nav_next: {"path": "drizzle/docs/views/index.md", "title": "Views"}
 ---
+
 PostgreSQL
 
 SQLite
@@ -69,3 +72,4 @@ export const customSequence = cockroachSequence("name", {
 export const customSchema = cockroachSchema('custom_schema');
 export const customSequence = customSchema.sequence("name");
 ```
+

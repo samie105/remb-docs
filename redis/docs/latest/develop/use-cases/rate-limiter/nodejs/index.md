@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:50:22.995Z"
 content_hash: "fd49d04bbf6cfd8fbdbf567530bb74533cbcb14a9772fced23ddcfd91df99a99"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Token bucket rate limiter with Redis","→","Token bucket rate limiter with Redis","→\n      \n        Token bucket rate limiter with Redis and Node.js","→","Token bucket rate limiter with Redis and Node.js"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Token bucket rate limiter with Redis","→","Token bucket rate limiter with Redis","→\n      \n        Token bucket rate limiter with Redis and Node.js","→","Token bucket rate limiter with Redis and Node.js"]
+nav_prev: {"path": "redis/docs/latest/develop/use-cases/session-store/nodejs/index.md", "title": "Redis session store with node-redis"}
+nav_next: {"path": "redis/docs/latest/integrate/nredisstack/index.md", "title": "C#/.NET client for Redis"}
 ---
+
 # Token bucket rate limiter with Redis and Node.js
 
 Implement a token bucket rate limiter using Redis and Lua scripts in Node.js
@@ -282,3 +285,4 @@ try {
 *   [Node.js client](/docs/latest/develop/clients/nodejs/) - Redis Node.js client documentation
 
 ## On this page
+

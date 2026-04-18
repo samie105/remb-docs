@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:39:45.446Z"
 content_hash: "ee6ea526dad46182c6efa4f05c1f4af216356988ab62ccbbb0b7cda8cce933b0"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Enterprise for Kubernetes","→","Redis Enterprise for Kubernetes","→\n      \n        Networking","→","Networking","→\n      \n        Database connectivity","→","Database connectivity"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Enterprise for Kubernetes","→","Redis Enterprise for Kubernetes","→\n      \n        Networking","→","Networking","→\n      \n        Database connectivity","→","Database connectivity"]
+nav_prev: {"path": "redis/docs/latest/develop/get-started/data-store/index.md", "title": "Redis as an in-memory data structure store quick start guide"}
+nav_next: {"path": "redis/docs/latest/develop/clients/patterns/distributed-locks/index.md", "title": "Distributed Locks with Redis"}
 ---
+
 # Database connectivity
 
 Connect applications to Redis Enterprise databases in Kubernetes clusters with in-cluster and external access patterns.
@@ -338,3 +341,4 @@ client.on('connect', () => {
 *   [Security](/docs/latest/operate/kubernetes/security/) - TLS configuration and access control
 
 ## On this page
+

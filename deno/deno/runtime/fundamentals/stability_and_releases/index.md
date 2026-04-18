@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:47:52.140Z"
 content_hash: "d484884bcf7e55d6173f03551036c501976b8daa1edffc8fc3f0c13cc3c55d1f"
 menu_path: ["Stability and releases"]
 section_path: []
+nav_prev: {"path": "deno/deno/runtime/fundamentals/open_telemetry/index.md", "title": "OpenTelemetry"}
+nav_next: {"path": "deno/deno/runtime/reference/cli/add/index.md", "title": "deno add"}
 ---
+
 On this page
 
 *   [Release schedule, channels, and long term support](#release-schedule%2C-channels%2C-and-long-term-support)
@@ -86,3 +89,4 @@ There are also some non-runtime features of Deno that are considered unstable, a
 The Deno Standard Library ([jsr.io/@std](https://jsr.io/@std)) is mostly stable. All standard library modules that are version 1.0.0 or higher are considered stable. All other modules (0.x) are considered unstable, and may change in the future.
 
 Using unstable standard library modules is not recommended for production code, but it is a great way to experiment with new features and provide feedback to the Deno team. It is not necessary to use any unstable flags to use unstable standard library modules.
+

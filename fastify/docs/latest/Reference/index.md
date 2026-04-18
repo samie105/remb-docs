@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:32:05.111Z"
 content_hash: "688c7cc324dae69b1751ab7365a09a1508d131c8b48c539fe9f6d331747632e4"
 menu_path: ["Index"]
 section_path: []
+nav_prev: {"path": "fastify/docs/latest/Guides/index.md", "title": "Index"}
+nav_next: {"path": "fastify/docs/latest/Reference/ContentTypeParser/index.md", "title": "ContentTypeParser"}
 ---
+
 Version: latest (v5.8.x)
 
 ## Core Documents[​](#core-documents "Direct link to Core Documents")
@@ -49,3 +52,4 @@ This table of contents is in alphabetical order.
 *   [TypeScript](/docs/latest/Reference/TypeScript/): Documents Fastify's TypeScript support and provides recommendations for writing applications in TypeScript that utilize Fastify.
 *   [Validation and Serialization](/docs/latest/Reference/Validation-and-Serialization/): Details Fastify's support for validating incoming data and how Fastify serializes data for responses.
 *   [Warnings](/docs/latest/Reference/Warnings/): Details the warnings Fastify emits and how to solve them.
+

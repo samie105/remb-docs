@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:47:49.259Z"
 content_hash: "3c83d7142e3a5374e661c21e1a2587f0515e39d980424fc70a5a6cfd2766190d"
 menu_path: ["Platform","Platform","More","More","More","Multi-factor Authentication","Multi-factor Authentication","Overview","Overview"]
 section_path: ["Platform","Platform","More","More","More","Multi-factor Authentication","Multi-factor Authentication","Overview","Overview"]
+nav_prev: {"path": "supabase/docs/guides/platform/migrating-within-supabase/index.md", "title": "Migrating within Supabase"}
+nav_next: {"path": "supabase/docs/guides/platform/permissions/index.md", "title": "Permissions"}
 ---
+
 # 
 
 Multi-factor Authentication
@@ -47,3 +50,4 @@ If you are an organization owner and on the Pro, Team or Enterprise plan, you ca
 You can disable MFA for your user account under your [Supabase account settings](/dashboard/account/security). On subsequent login attempts, you will not be prompted to enter an MFA code.
 
 We strongly recommend that you do not disable MFA to avoid unauthorized access to your user account.
+

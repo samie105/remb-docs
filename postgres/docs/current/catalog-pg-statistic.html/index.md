@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:49:17.872Z"
 content_hash: "17d81b2019b2d12af2bbc4099e5b79a0c703886d05a91aaccf212621ded9d142"
 menu_path: ["PostgreSQL: Documentation: 18: 52.51. pg_statistic"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/rowtypes.html/index.md", "title": "PostgreSQL: Documentation: 18: 8.16.\u00a0Composite Types"}
+nav_next: {"path": "postgres/docs/current/sql-update.html/index.md", "title": "PostgreSQL: Documentation: 18: UPDATE"}
 ---
+
 The catalog `pg_statistic` stores statistical data about the contents of the database. Entries are created by [`ANALYZE`](https://www.postgresql.org/docs/current/sql-analyze.html "ANALYZE") and subsequently used by the query planner. Note that all the statistical data is inherently approximate, even assuming that it is up-to-date.
 
 Normally there is one entry, with `stainherit` = `false`, for each table column that has been analyzed. If the table has inheritance children or partitions, a second entry with `stainherit` = `true` is also created. This row represents the column's statistics over the inheritance tree, i.e., statistics for the data you'd see with ``SELECT _`column`_ FROM _`table`_*``, whereas the `stainherit` = `false` row represents the results of ``SELECT _`column`_ FROM ONLY _`table`_``.
@@ -69,3 +72,4 @@ Numerical statistics of the appropriate kind for the _`N`_th “slot”, or null
 ``stavalues_`N`_`` `anyarray`
 
 Column data values of the appropriate kind for the _`N`_th “slot”, or null if the slot kind does not store any data values. Each array's element values are actually of the specific column's data type, or a related type such as an array's element type, so there is no way to define these columns' type more specifically than `anyarray`.
+

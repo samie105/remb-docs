@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:46:50.518Z"
 content_hash: "d42f5701d5a5e654af702e6c7d33609ff20f10879293baf04eddf50e3a386ae5"
 menu_path: ["css Helper ​"]
 section_path: []
+nav_prev: {"path": "hono/docs/helpers/cookie/index.md", "title": "Cookie Helper \u200b"}
+nav_next: {"path": "hono/docs/helpers/dev/index.md", "title": "Dev Helper \u200b"}
 ---
+
 The CSS helper - `hono/css` - is Hono's built-in CSS in JS(X).
 
 You can write CSS in JSX in a JavaScript template literal named `css`. The return value of `css` will be the class name, which is set to the value of the class attribute. The `<Style />` component will then contain the value of the CSS.
@@ -205,9 +208,9 @@ tsx
 const Header = () => <a class={cx('h1', primaryClass)}>Hi</a>
 ```
 
-## Usage in combination with [Secure Headers](https://hono.dev/docs/middleware/builtin/secure-headers) middleware [​](#usage-in-combination-with-secure-headers-middleware)
+## Usage in combination with [Secure Headers](hono/docs/middleware/builtin/secure-headers/index.md) middleware [​](#usage-in-combination-with-secure-headers-middleware)
 
-If you want to use the CSS helpers in combination with the [Secure Headers](https://hono.dev/docs/middleware/builtin/secure-headers) middleware, you can add the [`nonce` attribute](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/nonce) to the `<Style nonce={c.get('secureHeadersNonce')} />` to avoid Content-Security-Policy caused by the CSS helpers.
+If you want to use the CSS helpers in combination with the [Secure Headers](hono/docs/middleware/builtin/secure-headers/index.md) middleware, you can add the [`nonce` attribute](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/nonce) to the `<Style nonce={c.get('secureHeadersNonce')} />` to avoid Content-Security-Policy caused by the CSS helpers.
 
 tsx
 
@@ -304,3 +307,4 @@ const { css, Style } = createCssContext({
 If you use VS Code, you can use [vscode-styled-components](https://marketplace.visualstudio.com/items?itemName=styled-components.vscode-styled-components) for Syntax highlighting and IntelliSense for CSS tagged literals.
 
 ![](https://hono.dev/images/css-ss.png)
+

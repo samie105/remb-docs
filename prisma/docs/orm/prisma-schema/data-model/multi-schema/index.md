@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:52:11.594Z"
 content_hash: "8cadc2488b1122eaa2c5b3545b80bfa73e646bda6c638819de7cc516267dcc3b"
 menu_path: ["Multi-schema"]
 section_path: []
+nav_prev: {"path": "prisma/docs/orm/prisma-schema/data-model/indexes/index.md", "title": "Indexes"}
+nav_next: {"path": "prisma/docs/orm/prisma-schema/data-model/models/index.md", "title": "Models"}
 ---
+
 PostgreSQL, CockroachDB, and SQL Server allow you to organize database tables into named groups. These groups are known as _schemas_ and act as a _namespace_ for logically grouping tables (e.g. to avoid name collisions or to have clearer domain separation) and let you define foreign key constraints across them. To avoid ambiguity, this page will refer to these namespaces as _database schemas_.
 
 This page explains how to:
@@ -147,4 +150,5 @@ const orders = await prisma.order.findMany({
 
 ### [Externally managed tables](#externally-managed-tables)
 
-Sometimes, you might not want Prisma ORM to manage specific tables, such as ones handled by another team or service (e.g., Auth0 or Clerk tables). In such cases, you can mark these as **externally managed tables** using the `tables.external` configuration option in your [Prisma Config file](https://www.prisma.io/docs/orm/reference/prisma-config-reference#tablesexternal-and-enumsexternal). Learn more about [externally managed tables](https://www.prisma.io/docs/orm/prisma-schema/data-model/externally-managed-tables).
+Sometimes, you might not want Prisma ORM to manage specific tables, such as ones handled by another team or service (e.g., Auth0 or Clerk tables). In such cases, you can mark these as **externally managed tables** using the `tables.external` configuration option in your [Prisma Config file](prisma/docs/orm/reference/prisma-config-reference/index.md#tablesexternal-and-enumsexternal). Learn more about [externally managed tables](prisma/docs/orm/prisma-schema/data-model/externally-managed-tables/index.md).
+

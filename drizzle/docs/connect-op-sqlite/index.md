@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:40:41.504Z"
 content_hash: "38591fc7efa004decd2f13246993d991e6feaf1202824966700b681ac3ce6540"
 menu_path: ["Drizzle <> OP SQLite"]
 section_path: []
+nav_prev: {"path": "drizzle/docs/connect-expo-sqlite/index.md", "title": "Drizzle <> Expo SQLite"}
+nav_next: {"path": "drizzle/docs/connect-react-native-sqlite/index.md", "title": "Drizzle <> React Native SQLite"}
 ---
+
 According to the **[official github page](https://github.com/OP-Engineering/op-sqlite)**, OP-SQLite embeds the latest version of SQLite and provides a low-level API to execute SQL queries.
 
 npm
@@ -53,7 +56,7 @@ await db.select().from(users);
 ```
 
 You can use Drizzle Kit for SQL migration generation.  
-Please make sure to check how [Drizzle Kit migrations](https://orm.drizzle.team/docs/kit-overview) work before proceeding.  
+Please make sure to check how [Drizzle Kit migrations](drizzle/docs/kit-overview/index.md) work before proceeding.  
 OP SQLite requires you to have SQL migrations bundled into the app and we’ve got you covered.
 
 #### Install babel plugin[](#install-babel-plugin)
@@ -151,3 +154,4 @@ export default function App() {
   return ...your application component;
 }
 ```
+

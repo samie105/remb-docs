@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:45:42.235Z"
 content_hash: "756521c7e661a0b1fde5654dfdbd3b80495bd790c4eb8e8e7467764e0935353b"
 menu_path: ["Edge Functions","Edge Functions","Advanced Features","Advanced Features","Wasm Modules","Wasm Modules"]
 section_path: ["Edge Functions","Edge Functions","Advanced Features","Advanced Features","Wasm Modules","Wasm Modules"]
+nav_prev: {"path": "supabase/docs/guides/functions/unit-test/index.md", "title": "Testing your Edge Functions"}
+nav_next: {"path": "supabase/docs/guides/getting-started/ai-prompts/index.md", "title": "AI Prompts"}
 ---
+
 # 
 
 Using Wasm modules
@@ -126,3 +129,4 @@ Deploy the function by running:
 ```
 1supabase functions deploy wasm-add
 ```
+

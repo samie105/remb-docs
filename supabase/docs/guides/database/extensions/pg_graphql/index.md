@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:55:35.868Z"
 content_hash: "864b447079f63e6f21c90e8a6c3b2ca032743285bd1af4acebd8dd390aae28fe"
 menu_path: ["Database","Database","Extensions","Extensions","pg_graphql: GraphQL Support","pg_graphql: GraphQL Support"]
 section_path: ["Database","Database","Extensions","Extensions","pg_graphql: GraphQL Support","pg_graphql: GraphQL Support"]
+nav_prev: {"path": "supabase/docs/guides/database/extensions/http/index.md", "title": "http: RESTful Client"}
+nav_next: {"path": "supabase/docs/guides/database/extensions/pg_hashids/index.md", "title": "pg_hashids: Short UIDs"}
 ---
+
 # 
 
 pg\_graphql: GraphQL for Postgres
@@ -59,3 +62,4 @@ Note that `pg_graphql` fully supports schema introspection so you can connect an
 ## Resources[#](#resources)
 
 *   Official [`pg_graphql` documentation](https://github.com/supabase/pg_graphql)
+

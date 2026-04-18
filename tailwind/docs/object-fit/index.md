@@ -9,15 +9,9 @@ last_crawled_at: "2026-04-18T16:43:17.643Z"
 content_hash: "16fa33a0ad59d025f627943c4ca46978da3541d36e9a3d9a7a192c8ac346383c"
 menu_path: ["object-fit"]
 section_path: []
+nav_prev: {"path": "tailwind/docs/isolation/index.md", "title": "isolation"}
+nav_next: {"path": "tailwind/docs/object-position/index.md", "title": "object-position"}
 ---
-[](/)
-
-[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
-
-1.  Layout
-2.  object-fit
-
-Layout
 
 # object-fit
 
@@ -135,3 +129,4 @@ Make your ideas look awesome, without relying on a designer.
 ](https://www.refactoringui.com/?ref=sidebar)
 
 Copyright © 2026 Tailwind Labs Inc.·[Trademark Policy](/brand)
+

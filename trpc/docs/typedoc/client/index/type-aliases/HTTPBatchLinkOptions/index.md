@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:52:08.539Z"
 content_hash: "ff23121c28a1c090bc40bd6bf08fa06e109d0aff0c954c5c2054e49de17135b4"
 menu_path: ["Type Alias: HTTPBatchLinkOptions<TRoot>"]
 section_path: []
+nav_prev: {"path": "trpc/docs/typedoc/client/index/interfaces/WebSocketClientOptions/index.md", "title": "Interface: WebSocketClientOptions"}
+nav_next: {"path": "trpc/docs/typedoc/client/index/type-aliases/HTTPBatchStreamLinkOptions/index.md", "title": "Type Alias: HTTPBatchStreamLinkOptions<TRoot>"}
 ---
+
 > **HTTPBatchLinkOptions**<`TRoot`\>: `HTTPLinkBaseOptions`<`TRoot`\> & `object`
 
 Defined in: [packages/client/src/links/HTTPBatchLinkOptions.ts:6](https://github.com/trpc/trpc/blob/63407c577124e7a2890a7599484d52a0cf025536/packages/client/src/links/HTTPBatchLinkOptions.ts#L6)
@@ -45,3 +48,4 @@ ts
 Type Parameter
 
 `TRoot` _extends_ `AnyClientTypes`
+

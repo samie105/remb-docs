@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:49:00.387Z"
 content_hash: "b8ccd2b202a7164dd96e46f7cf07ff85005de440091ab5fe455c5783bc25085b"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Insight","→","Redis Insight","→\n      \n        Install Redis Insight","→","Install Redis Insight","→\n      \n        Install on Docker","→","Install on Docker"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Insight","→","Redis Insight","→\n      \n        Install Redis Insight","→","Install Redis Insight","→\n      \n        Install on Docker","→","Install on Docker"]
+nav_prev: {"path": "redis/docs/latest/integrate/riot/install/index.md", "title": "Install"}
+nav_next: {"path": "redis/docs/latest/operate/oss_and_stack/install/install-stack/index.md", "title": "Install Redis Open Source"}
 ---
+
 # Install on Docker
 
 How to install Redis Insight on Docker
@@ -45,3 +48,4 @@ Next, point your browser to `http://localhost:5540`.
 Redis Insight also provides a health check endpoint at `http://localhost:5540/api/health/` to monitor the health of the running container.
 
 ## On this page
+

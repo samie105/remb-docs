@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:06:23.864Z"
 content_hash: "33e30108c017ef51d390339a81c7d21a61db7a50ef7da33503ffdd930ce23e70"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Install Redis Open Source","→","Install Redis Open Source","→\n      \n        Install Redis Community Edition or Redis Stack","→","Install Redis Community Edition or Redis Stack","→\n      \n        Install Redis","→","Install Redis","→\n      \n        Install Redis from Source","→","Install Redis from Source"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Install Redis Open Source","→","Install Redis Open Source","→\n      \n        Install Redis Community Edition or Redis Stack","→","Install Redis Community Edition or Redis Stack","→\n      \n        Install Redis","→","Install Redis","→\n      \n        Install Redis from Source","→","Install Redis from Source"]
+nav_prev: {"path": "redis/docs/latest/develop/use-cases/time-series-dashboard/rust/index.md", "title": "Rolling sensor graph demo with Rust"}
+nav_next: {"path": "redis/docs/latest/develop/tools/insight/insight-stream-consumer/index.md", "title": "Manage streams and consumer groups in Redis Insight"}
 ---
+
 # Install Redis from Source
 
 Compile and install Redis from source
@@ -70,3 +73,4 @@ To stop Redis, enter `Ctrl-C`.
 For a more complete installation, continue with [these instructions](/docs/latest/operate/oss_and_stack/install/archive/install-redis/#install-redis-properly).
 
 ## On this page
+

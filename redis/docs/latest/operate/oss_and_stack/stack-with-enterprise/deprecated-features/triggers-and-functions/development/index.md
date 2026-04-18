@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:58:03.670Z"
 content_hash: "e13c2c4312210e69deea86300945d08771043d97a3cc5109141aa6bb39adb04a"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Redis Open Source and Redis Software","→","Redis Open Source and Redis Software","→\n      \n        Deprecated Redis Open Source features and modules","→","Deprecated Redis Open Source features and modules","→\n      \n        Triggers and functions","→","Triggers and functions","→\n      \n        Development","→","Development"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Redis Open Source and Redis Software","→","Redis Open Source and Redis Software","→\n      \n        Deprecated Redis Open Source features and modules","→","Deprecated Redis Open Source features and modules","→\n      \n        Triggers and functions","→","Triggers and functions","→\n      \n        Development","→","Development"]
+nav_prev: {"path": "redis/docs/latest/develop/programmability/lua-debugging/index.md", "title": "Debugging Lua scripts in Redis"}
+nav_next: {"path": "redis/docs/latest/operate/oss_and_stack/install/archive/install-stack/docker/index.md", "title": "Run Redis Stack on Docker"}
 ---
+
 # Development
 
 How to develop for triggers and functions
@@ -163,3 +166,4 @@ redis.registerFunction('calculateArea', calculateCircleArea);
 Load and run your new function as described in the previous section.
 
 ## On this page
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:43:43.454Z"
 content_hash: "ef5c002275ddf9889b09275c338cd5a0e56a6c4d0ac5781c9eae73e989190c78"
 menu_path: ["Edge Functions","Edge Functions","More","More","More","Supabase Auth","Supabase Auth","Securing your functions","Securing your functions"]
 section_path: ["Edge Functions","Edge Functions","More","More","More","Supabase Auth","Supabase Auth","Securing your functions","Securing your functions"]
+nav_prev: {"path": "supabase/docs/guides/functions/ai-models/index.md", "title": "Running AI Models"}
+nav_next: {"path": "supabase/docs/guides/functions/background-tasks/index.md", "title": "Background Tasks"}
 ---
+
 # 
 
 Securing Edge Functions
@@ -94,3 +97,4 @@ The following example uses [`jose`](https://jsr.io/@panva/jose) library to verif
 ```
 
 [View source](https://github.com/supabase/supabase/blob/e8df67d5d5291e05ea56596aee0f2b7fa152929b/examples/edge-functions/supabase/functions/custom-jwt-validation/index.ts)
+

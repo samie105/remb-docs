@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:34:50.894Z"
 content_hash: "ec8e2c2f3adff1fa368d49de0b8130b2fd5af2e8203a9b163eda5a2f0c67b89e"
 menu_path: ["Routes"]
 section_path: []
+nav_prev: {"path": "fastify/docs/latest/Reference/Reply/index.md", "title": "Reply"}
+nav_next: {"path": "fastify/docs/latest/Reference/Type-Providers/index.md", "title": "Type-Providers"}
 ---
+
 Version: latest (v5.8.x)
 
 ## Routes[​](#routes "Direct link to Routes")
@@ -389,3 +392,4 @@ function databaseOperation(field, done) {  done(null, field)}const secret = {  /
 > ```
 > const Fastify = require('fastify')const fastify = Fastify({  frameworkErrors: function (err, req, res) {    if (err instanceof Fastify.errorCodes.FST_ERR_ASYNC_CONSTRAINT) {      res.code(400)      return res.send("Invalid header provided")    } else {      res.send(err)    }  }})
 > ```
+

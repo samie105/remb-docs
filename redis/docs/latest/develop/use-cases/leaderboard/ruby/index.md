@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:12:51.390Z"
 content_hash: "c96f75ca36344f6bb56c0ea27f208868838415ea1ec6381c06d84eab76ede1ae"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Redis leaderboard","→","Redis leaderboard","→\n      \n        Redis leaderboard with Ruby","→","Redis leaderboard with Ruby"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Redis leaderboard","→","Redis leaderboard","→\n      \n        Redis leaderboard with Ruby","→","Redis leaderboard with Ruby"]
+nav_prev: {"path": "redis/docs/latest/develop/clients/nodejs/produsage/index.md", "title": "Production usage"}
+nav_next: {"path": "redis/docs/latest/develop/use-cases/rate-limiter/rust/index.md", "title": "Token bucket rate limiter with Redis and Rust"}
 ---
+
 # Redis leaderboard with Ruby
 
 Implement a Redis leaderboard in Ruby with redis-rb and sorted sets
@@ -220,3 +223,4 @@ Some leaderboards are permanent, while others reset daily, weekly, or seasonally
 Per-user hashes work best for small, frequently accessed profile details. Large profile documents or rarely used attributes are often better kept in another store, with Redis holding only the fields needed to render the leaderboard quickly.
 
 ## On this page
+

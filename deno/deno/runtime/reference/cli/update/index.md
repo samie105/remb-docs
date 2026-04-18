@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:57:10.870Z"
 content_hash: "ccb436b0c8d858f5905583e1ef98cddc279778e0a74cc35b4090fc91f059150c"
 menu_path: ["deno update"]
 section_path: []
+nav_prev: {"path": "deno/deno/runtime/reference/cli/uninstall/index.md", "title": "deno uninstall"}
+nav_next: {"path": "deno/deno/runtime/reference/cli/upgrade/index.md", "title": "deno upgrade"}
 ---
+
 On this page
 
 *   [Updating dependencies](#updating-dependencies)
@@ -206,3 +209,4 @@ Check the specified lock file. (If value is not provided, defaults to "./deno.lo
 `--no-lock`
 
 Disable auto discovery of the lock file.
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:03:27.666Z"
 content_hash: "896783c46e5fe09111a5358ebdfd069f55d1609af820a0ebde3cb40eed18ee31"
 menu_path: ["outline-style"]
 section_path: []
+nav_prev: {"path": "tailwind/docs/outline-color/index.md", "title": "outline-color"}
+nav_next: {"path": "tailwind/docs/outline-offset/index.md", "title": "outline-offset"}
 ---
+
 Utilities for controlling the style of an element's outline.
 
 Class
@@ -88,4 +91,5 @@ Prefix an `outline-style` utility with a breakpoint variant like `md:` to only a
 <div class="outline md:outline-dashed ...">  <!-- ... --></div>
 ```
 
-Learn more about using variants in the [variants documentation](https://tailwindcss.com/docs/hover-focus-and-other-states).
+Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).
+

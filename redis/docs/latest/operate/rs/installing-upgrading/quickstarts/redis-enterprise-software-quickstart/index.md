@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:42:53.673Z"
 content_hash: "a031c13fd3f93baff06440b94f9d59fafb1190e741ed35c5747802172a12e852"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Software","→","Redis Software","→\n      \n        Install, set up, and upgrade Redis Software","→","Install, set up, and upgrade Redis Software","→\n      \n        Redis Software quickstarts","→","Redis Software quickstarts","→\n      \n        Redis Software quickstart","→","Redis Software quickstart"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Software","→","Redis Software","→\n      \n        Install, set up, and upgrade Redis Software","→","Install, set up, and upgrade Redis Software","→\n      \n        Redis Software quickstarts","→","Redis Software quickstarts","→\n      \n        Redis Software quickstart","→","Redis Software quickstart"]
+nav_prev: {"path": "redis/docs/latest/develop/use-cases/rate-limiter/index.md", "title": "Token bucket rate limiter with Redis"}
+nav_next: {"path": "redis/docs/latest/commands/redis-8-4-commands/index.md", "title": "Redis 8.4 Commands Reference"}
 ---
+
 # Redis Software quickstart
 
 Set up a test deployment of Redis Software for Linux.
@@ -256,3 +259,4 @@ The Cluster Manager UI is officially supported for the latest version of [Google
 See the [Get started with Redis Software learning path](https://university.redis.io/learningpath/an0mgw5bjpjfbe) for courses.
 
 ## On this page
+

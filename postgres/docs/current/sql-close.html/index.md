@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:52:10.175Z"
 content_hash: "207efa99b25a6b137cba1e39542501fcd0749eff450073d6661fb8b9dff97837"
 menu_path: ["PostgreSQL: Documentation: 18: CLOSE"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/infoschema-schema.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.1.\u00a0The Schema"}
+nav_next: {"path": "postgres/docs/current/view-pg-available-extension-versions.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.4.\u00a0pg_available_extension_versions"}
 ---
+
 CLOSE — close a cursor
 
 ## Synopsis
@@ -49,3 +52,4 @@ CLOSE liahona;
 ## Compatibility
 
 `CLOSE` is fully conforming with the SQL standard. `CLOSE ALL` is a PostgreSQL extension.
+

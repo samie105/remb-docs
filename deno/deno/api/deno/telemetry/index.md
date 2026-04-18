@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:11:04.684Z"
 content_hash: "343ca74d20bce07cfffff60c5097df3ffd020ab806d995bebff2577c255c44e7"
 menu_path: ["Telemetry - Deno documentation"]
 section_path: []
+nav_prev: {"path": "deno/deno/api/deno/subprocess/index.md", "title": "Subprocess - Deno documentation"}
+nav_next: {"path": "deno/deno/api/deno/testing/index.md", "title": "Testing - Deno documentation"}
 ---
+
 ### Namespaces [#](#Namespaces)
 
 N
@@ -37,3 +40,4 @@ v
 [Deno.telemetry.tracerProvider](./././~/Deno.telemetry.tracerProvider "Deno.telemetry.tracerProvider")
 
 A TracerProvider compatible with OpenTelemetry.js [https://open-telemetry.github.io/opentelemetry-js/interfaces/\_opentelemetry\_api.TracerProvider.html](https://open-telemetry.github.io/opentelemetry-js/interfaces/_opentelemetry_api.TracerProvider.html)
+

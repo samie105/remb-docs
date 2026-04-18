@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:05:09.632Z"
 content_hash: "87bc116fdd31ff68d25e7ee1e05ca467baae9537528e83d2fd4f4fa078bfd0f4"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Connect with Redis client API libraries","→","Connect with Redis client API libraries","→\n      \n        node-redis guide (JavaScript)","→","node-redis guide (JavaScript)","→\n      \n        Probabilistic data types","→","Probabilistic data types"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Connect with Redis client API libraries","→","Connect with Redis client API libraries","→\n      \n        node-redis guide (JavaScript)","→","node-redis guide (JavaScript)","→\n      \n        Probabilistic data types","→","Probabilistic data types"]
+nav_prev: {"path": "redis/docs/latest/develop/clients/jedis/prob/index.md", "title": "Probabilistic data types"}
+nav_next: {"path": "redis/docs/latest/integrate/prometheus-with-redis-enterprise/index.md", "title": "Prometheus and Grafana with Redis Software"}
 ---
+
 # Probabilistic data types
 
 Learn how to use approximate calculations with Redis.
@@ -272,3 +275,4 @@ console.log(res34);  // >>> [true, false]
 ```
 
 ## On this page
+

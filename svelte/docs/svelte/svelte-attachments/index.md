@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:44:42.539Z"
 content_hash: "49184ede84589a9664e121b79369e0cc5d70033c7088e6e74fee8cec22153fb7"
 menu_path: ["svelte/attachments"]
 section_path: []
+nav_prev: {"path": "svelte/docs/svelte/svelte-animate/index.md", "title": "svelte/animate"}
+nav_next: {"path": "svelte/docs/svelte/svelte-compiler/index.md", "title": "svelte/compiler"}
 ---
+
 ```
 import { function createAttachmentKey(): symbolCreates an object key that will be recognised as an attachment when the object is spread onto an element,
 as a programmatic alternative to using {@attach ...}. This can be useful for library authors, though
@@ -116,3 +119,4 @@ interface Attachment<T extends EventTarget = Element> {…}
 previous next
 
 [svelte/animate](/docs/svelte/svelte-animate) [svelte/compiler](/docs/svelte/svelte-compiler)
+

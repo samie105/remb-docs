@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:16:44.730Z"
 content_hash: "4c1fc082ba9de34bc865150a5c50c3c9602e322cabca237803947b20c81f95e2"
 menu_path: ["namespace Deno"]
 section_path: []
+nav_prev: {"path": "deno/deno/api/index.md", "title": "Deno Namespace APIs"}
+nav_next: {"path": "deno/deno/api/node/all_symbols/index.md", "title": "All Symbols - Node documentation"}
 ---
+
 # namespace Deno
 
 The global namespace where Deno specific, non-standard APIs are located.
@@ -2375,3 +2378,4 @@ Version information related to the current Deno CLI runtime environment.
 *   [deno](../././~/Deno.version#property_deno)
 *   [typescript](../././~/Deno.version#property_typescript)
 *   [v8](../././~/Deno.version#property_v8)
+

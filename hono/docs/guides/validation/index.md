@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:44:34.709Z"
 content_hash: "655355a1eebdb8cd30ab1ea6cd5182eea733a7519e5c0fcb1ce5f4220bdde048"
 menu_path: ["Validation ​"]
 section_path: []
+nav_prev: {"path": "hono/docs/guides/testing/index.md", "title": "Testing \u200b"}
+nav_next: {"path": "hono/docs/guides/rpc/index.md", "title": "RPC \u200b"}
 ---
+
 Hono provides only a very thin Validator. However, it can be powerful when combined with a third-party Validator. In addition, the RPC feature allows you to share API specifications with your clients through types.
 
 ## Manual validator [​](#manual-validator)
@@ -66,7 +69,7 @@ WARNING
 
 When you validate `json` or `form`, the request _must_ contain a matching `content-type` header (e.g. `Content-Type: application/json` for `json`). Otherwise, the request body will not be parsed and you will receive an empty object (`{}`) as value in the callback.
 
-It is important to set the `content-type` header when testing using [`app.request()`](https://hono.dev/docs/api/request).
+It is important to set the `content-type` header when testing using [`app.request()`](hono/docs/api/request/index.md).
 
 Given an application like this.
 
@@ -502,3 +505,4 @@ app.post('/author', sValidator('json', schema), (c) => {
   })
 })
 ```
+

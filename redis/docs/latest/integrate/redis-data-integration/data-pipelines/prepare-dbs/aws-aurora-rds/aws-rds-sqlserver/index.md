@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:56:27.033Z"
 content_hash: "becb22ab7cfeb157def90e70724af6b9dbf5f2ce8e042e074d18a4e7b133bca4"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Redis Data Integration","→","Redis Data Integration","→\n      \n        Data pipelines","→","Data pipelines","→\n      \n        Prepare source databases","→","Prepare source databases","→\n      \n        Prepare AWS RDS and Aurora databases for RDI","→","Prepare AWS RDS and Aurora databases for RDI","→\n      \n        Prepare Microsoft SQL Server on AWS RDS for RDI","→","Prepare Microsoft SQL Server on AWS RDS for RDI"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Redis Data Integration","→","Redis Data Integration","→\n      \n        Data pipelines","→","Data pipelines","→\n      \n        Prepare source databases","→","Prepare source databases","→\n      \n        Prepare AWS RDS and Aurora databases for RDI","→","Prepare AWS RDS and Aurora databases for RDI","→\n      \n        Prepare Microsoft SQL Server on AWS RDS for RDI","→","Prepare Microsoft SQL Server on AWS RDS for RDI"]
+nav_prev: {"path": "redis/docs/latest/develop/data-types/json/path/index.md", "title": "Path"}
+nav_next: {"path": "redis/docs/latest/commands/redis-8-0-commands/index.md", "title": "Redis 8.0 Commands Reference"}
 ---
+
 # Prepare Microsoft SQL Server on AWS RDS for RDI
 
 Enable CDC features in your source databases
@@ -100,3 +103,4 @@ Change Data Capture (CDC) must be enabled for the database and for each table yo
     
 
 ## On this page
+

@@ -9,15 +9,9 @@ last_crawled_at: "2026-04-18T17:14:22.415Z"
 content_hash: "2034cb6258383bf6a885feb576da955399ca4078070d2cb63adc795ef05e02c3"
 menu_path: ["transform"]
 section_path: []
+nav_prev: {"path": "tailwind/docs/skew/index.md", "title": "skew"}
+nav_next: {"path": "tailwind/docs/transform-origin/index.md", "title": "transform-origin"}
 ---
-[](/)
-
-[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
-
-1.  Transforms
-2.  transform
-
-Transforms
 
 # transform
 
@@ -102,3 +96,4 @@ Short, tactical video lessons from the creator of Tailwind CSS, delivered direct
 [Get the free course](/build-uis-that-dont-suck)
 
 Copyright © 2026 Tailwind Labs Inc.·[Trademark Policy](/brand)
+

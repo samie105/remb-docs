@@ -9,14 +9,17 @@ last_crawled_at: "2026-04-18T16:45:14.002Z"
 content_hash: "abce144a704eda2abb3663418b9ed7f0758ce7a9c395e36d2b40972e2eabe915"
 menu_path: ["Type utilities"]
 section_path: []
+nav_prev: {"path": "prisma/docs/orm/prisma-client/client-extensions/result/index.md", "title": "Add custom fields and methods to query results"}
+nav_next: {"path": "prisma/docs/orm/prisma-client/client-extensions/query/index.md", "title": "Create custom Prisma Client queries"}
 ---
+
 Client Extensions
 
 Advanced type safety: improve type safety in your custom model methods
 
 Several type utilities exist within Prisma Client that can assist in the creation of highly type-safe extensions.
 
-[Prisma Client type utilities](https://www.prisma.io/docs/orm/prisma-client/type-safety) are utilities available within your application and Prisma Client extensions and provide useful ways of constructing safe and extendable types for your extension.
+[Prisma Client type utilities](prisma/docs/orm/prisma-client/type-safety/index.md) are utilities available within your application and Prisma Client extensions and provide useful ways of constructing safe and extendable types for your extension.
 
 The type utilities available are:
 
@@ -100,3 +103,4 @@ async function main() {
 The example here is only conceptual. For the actual caching to work, you will have to implement the logic. If you're interested in a caching extension/ service, we recommend taking a look at [Prisma Accelerate](https://www.prisma.io/accelerate).
 
 [Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/prisma-client/client-extensions/type-utilities.mdx)
+

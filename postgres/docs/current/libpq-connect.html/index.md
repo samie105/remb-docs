@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:34:57.304Z"
 content_hash: "bac525a35b396b6d7a732747620d87fbf7310896e5b0249f4cdc4ad24b12775f"
 menu_path: ["PostgreSQL: Documentation: 18: 32.1. Database Connection Control Functions"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/runtime-config-query.html/index.md", "title": "PostgreSQL: Documentation: 18: 19.7.\u00a0Query Planning"}
+nav_next: {"path": "postgres/docs/current/app-pgreceivexlog.html/index.md", "title": "PostgreSQL: Documentation: 18: O.5.\u00a0pg_receivexlog renamed to pg_receivewal"}
 ---
+
 ### 32.1.2. Parameter Key Words [#](#LIBPQ-PARAMKEYWORDS)
 
 `host` [#](#LIBPQ-CONNECT-HOST)
@@ -81,7 +84,7 @@ Support for MD5-encrypted passwords is deprecated and will be removed in a futur
 
 `gss`
 
-The server must either request a Kerberos handshake via GSSAPI or establish a GSS\-encrypted channel (see also [gssencmode](https://www.postgresql.org/docs/current/libpq-connect.html#LIBPQ-CONNECT-GSSENCMODE)).
+The server must either request a Kerberos handshake via GSSAPI or establish a GSS\-encrypted channel (see also [gssencmode](postgres/docs/current/libpq-connect.html/index.md#LIBPQ-CONNECT-GSSENCMODE)).
 
 `sspi`
 
@@ -257,7 +260,7 @@ This parameter specifies the location where libpq will log keys used in this SSL
 
 ### Warning
 
-Key logging will expose potentially sensitive information in the keylog file. Keylog files should be handled with the same care as [sslkey](https://www.postgresql.org/docs/current/libpq-connect.html#LIBPQ-CONNECT-SSLKEY) files.
+Key logging will expose potentially sensitive information in the keylog file. Keylog files should be handled with the same care as [sslkey](postgres/docs/current/libpq-connect.html/index.md#LIBPQ-CONNECT-SSLKEY) files.
 
 `sslpassword` [#](#LIBPQ-CONNECT-SSLPASSWORD)
 
@@ -275,7 +278,7 @@ This option determines whether a client certificate may be sent to the server, a
 
 `disable`
 
-A client certificate is never sent, even if one is available (default location or provided via [sslcert](https://www.postgresql.org/docs/current/libpq-connect.html#LIBPQ-CONNECT-SSLCERT)).
+A client certificate is never sent, even if one is available (default location or provided via [sslcert](postgres/docs/current/libpq-connect.html/index.md#LIBPQ-CONNECT-SSLCERT)).
 
 `allow` (default)
 
@@ -303,7 +306,7 @@ The magic `system` value will take precedence over a local certificate file with
 
 `sslcrl` [#](#LIBPQ-CONNECT-SSLCRL)
 
-This parameter specifies the file name of the SSL server certificate revocation list (CRL). Certificates listed in this file, if it exists, will be rejected while attempting to authenticate the server's certificate. If neither [sslcrl](https://www.postgresql.org/docs/current/libpq-connect.html#LIBPQ-CONNECT-SSLCRL) nor [sslcrldir](https://www.postgresql.org/docs/current/libpq-connect.html#LIBPQ-CONNECT-SSLCRLDIR) is set, this setting is taken as `~/.postgresql/root.crl`.
+This parameter specifies the file name of the SSL server certificate revocation list (CRL). Certificates listed in this file, if it exists, will be rejected while attempting to authenticate the server's certificate. If neither [sslcrl](postgres/docs/current/libpq-connect.html/index.md#LIBPQ-CONNECT-SSLCRL) nor [sslcrldir](postgres/docs/current/libpq-connect.html/index.md#LIBPQ-CONNECT-SSLCRLDIR) is set, this setting is taken as `~/.postgresql/root.crl`.
 
 `sslcrldir` [#](#LIBPQ-CONNECT-SSLCRLDIR)
 
@@ -397,7 +400,7 @@ first try to find a standby server, but if none of the listed hosts is a standby
 
 `load_balance_hosts` [#](#LIBPQ-CONNECT-LOAD-BALANCE-HOSTS)
 
-Controls the order in which the client tries to connect to the available hosts and addresses. Once a connection attempt is successful no other hosts and addresses will be tried. This parameter is typically used in combination with multiple host names or a DNS record that returns multiple IPs. This parameter can be used in combination with [target\_session\_attrs](https://www.postgresql.org/docs/current/libpq-connect.html#LIBPQ-CONNECT-TARGET-SESSION-ATTRS) to, for example, load balance over standby servers only. Once successfully connected, subsequent queries on the returned connection will all be sent to the same server. There are currently two modes:
+Controls the order in which the client tries to connect to the available hosts and addresses. Once a connection attempt is successful no other hosts and addresses will be tried. This parameter is typically used in combination with multiple host names or a DNS record that returns multiple IPs. This parameter can be used in combination with [target\_session\_attrs](postgres/docs/current/libpq-connect.html/index.md#LIBPQ-CONNECT-TARGET-SESSION-ATTRS) to, for example, load balance over standby servers only. Once successfully connected, subsequent queries on the returned connection will all be sent to the same server. There are currently two modes:
 
 `disable` (default)
 
@@ -409,7 +412,7 @@ Hosts and addresses are tried in random order. This value is mostly useful when 
 
 While random load balancing, due to its random nature, will almost never result in a completely uniform distribution, it statistically gets quite close. One important aspect here is that this algorithm uses two levels of random choices: First the hosts will be resolved in random order. Then secondly, before resolving the next host, all resolved addresses for the current host will be tried in random order. This behaviour can skew the amount of connections each node gets greatly in certain cases, for instance when some hosts resolve to more addresses than others. But such a skew can also be used on purpose, e.g. to increase the number of connections a larger server gets by providing its hostname multiple times in the host string.
 
-When using this value it's recommended to also configure a reasonable value for [connect\_timeout](https://www.postgresql.org/docs/current/libpq-connect.html#LIBPQ-CONNECT-CONNECT-TIMEOUT). Because then, if one of the nodes that are used for load balancing is not responding, a new node will be tried.
+When using this value it's recommended to also configure a reasonable value for [connect\_timeout](postgres/docs/current/libpq-connect.html/index.md#LIBPQ-CONNECT-CONNECT-TIMEOUT). Because then, if one of the nodes that are used for load balancing is not responding, a new node will be tried.
 
 `oauth_issuer` [#](#LIBPQ-CONNECT-OAUTH-ISSUER)
 
@@ -417,7 +420,7 @@ The HTTPS URL of a trusted issuer to contact if the server requests an OAuth tok
 
 As part of the standard authentication handshake, libpq will ask the server for a _discovery document:_ a URL providing a set of OAuth configuration parameters. The server must provide a URL that is directly constructed from the components of the `oauth_issuer`, and this value must exactly match the issuer identifier that is declared in the discovery document itself, or the connection will fail. This is required to prevent a class of ["mix-up attacks"](https://mailarchive.ietf.org/arch/msg/oauth/JIVxFBGsJBVtm7ljwJhPUm3Fr-w/) on OAuth clients.
 
-You may also explicitly set `oauth_issuer` to the `/.well-known/` URI used for OAuth discovery. In this case, if the server asks for a different URL, the connection will fail, but a [custom OAuth flow](https://www.postgresql.org/docs/current/libpq-oauth.html#LIBPQ-OAUTH-AUTHDATA-HOOKS "32.20.1. Authdata Hooks") may be able to speed up the standard handshake by using previously cached tokens. (In this case, it is recommended that [oauth\_scope](https://www.postgresql.org/docs/current/libpq-connect.html#LIBPQ-CONNECT-OAUTH-SCOPE) be set as well, since the client will not have a chance to ask the server for a correct scope setting, and the default scopes for a token may not be sufficient to connect.) libpq currently supports the following well-known endpoints:
+You may also explicitly set `oauth_issuer` to the `/.well-known/` URI used for OAuth discovery. In this case, if the server asks for a different URL, the connection will fail, but a [custom OAuth flow](https://www.postgresql.org/docs/current/libpq-oauth.html#LIBPQ-OAUTH-AUTHDATA-HOOKS "32.20.1. Authdata Hooks") may be able to speed up the standard handshake by using previously cached tokens. (In this case, it is recommended that [oauth\_scope](postgres/docs/current/libpq-connect.html/index.md#LIBPQ-CONNECT-OAUTH-SCOPE) be set as well, since the client will not have a chance to ask the server for a correct scope setting, and the default scopes for a token may not be sufficient to connect.) libpq currently supports the following well-known endpoints:
 
 *   `/.well-known/openid-configuration`
     
@@ -443,3 +446,4 @@ The scope of the access request sent to the authorization server, specified as a
 Usually the client will obtain appropriate scope settings from the PostgreSQL server. If this parameter is used, the server's requested scope list will be ignored. This can prevent a less-trusted server from requesting inappropriate access scopes from the end user. However, if the client's scope setting does not contain the server's required scopes, the server is likely to reject the issued token, and the connection will fail.
 
 The meaning of an empty scope list is provider-dependent. An OAuth authorization server may choose to issue a token with "default scope", whatever that happens to be, or it may reject the token request entirely.
+

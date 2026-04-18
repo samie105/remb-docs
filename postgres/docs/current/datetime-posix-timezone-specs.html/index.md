@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:50:21.749Z"
 content_hash: "a54b54a3dec0249bfabfbc0fd198357be6e08767c6e726b8a2b06b2825e4b8df"
 menu_path: ["PostgreSQL: Documentation: 18: B.5. POSIX Time Zone Specifications"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/sql-droptable.html/index.md", "title": "PostgreSQL: Documentation: 18: DROP TABLE"}
+nav_next: {"path": "postgres/docs/current/plpython-database.html/index.md", "title": "PostgreSQL: Documentation: 18: 44.6.\u00a0Database Access"}
 ---
+
 PostgreSQL can accept time zone specifications that are written according to the POSIX standard's rules for the `TZ` environment variable. POSIX time zone specifications are inadequate to deal with the complexity of real-world time zone history, but there are sometimes reasons to use them.
 
 A POSIX time zone specification has the form
@@ -64,3 +67,4 @@ As an example, `CET-1CEST,M3.5.0,M10.5.0/3` describes the current (as of 2020) t
 The four timezone names `EST5EDT`, `CST6CDT`, `MST7MDT`, and `PST8PDT` look like they are POSIX zone specifications. However, they actually are treated as named time zones because (for historical reasons) there are files by those names in the IANA time zone database. The practical implication of this is that these zone names will produce valid historical USA daylight-savings transitions, even when a plain POSIX specification would not.
 
 One should be wary that it is easy to misspell a POSIX-style time zone specification, since there is no check on the reasonableness of the zone abbreviation(s). For example, `SET TIMEZONE TO FOOBAR0` will work, leaving the system effectively using a rather peculiar abbreviation for UTC.
+

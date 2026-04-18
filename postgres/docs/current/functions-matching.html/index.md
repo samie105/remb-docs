@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:39:29.329Z"
 content_hash: "b0be60127f9ea55bd780b3931c1bee6acaaa9445410ffbf4de1048d1a0e22b8f"
 menu_path: ["PostgreSQL: Documentation: 18: 9.7. Pattern Matching"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/indexes-multicolumn.html/index.md", "title": "PostgreSQL: Documentation: 18: 11.3.\u00a0Multicolumn Indexes"}
+nav_next: {"path": "postgres/docs/current/sql-createserver.html/index.md", "title": "PostgreSQL: Documentation: 18: CREATE SERVER"}
 ---
+
 There are three separate approaches to pattern matching provided by PostgreSQL: the traditional SQL `LIKE` operator, the more recent `SIMILAR TO` operator (added in SQL:1999), and POSIX\-style regular expressions. Aside from the basic “does this string match this pattern?” operators, functions are available to extract or replace matching substrings and to split a string at matching locations.
 
 `SIMILAR TO` and POSIX\-style regular expressions do not support nondeterministic collations. If required, use `LIKE` or apply a different collation to the expression to work around this limitation.
@@ -915,3 +918,4 @@ The SQL-standard operators and functions use XQuery regular expressions, which a
     *   XQuery's `s` (allow dot to match newline) and `m` (allow `^` and `$` to match at newlines) flags provide access to the same behaviors as POSIX's `n`, `p` and `w` flags, but they do _not_ match the behavior of POSIX's `s` and `m` flags. Note in particular that dot-matches-newline is the default behavior in POSIX but not XQuery.
         
     *   XQuery's `x` (ignore whitespace in pattern) flag is noticeably different from POSIX's expanded-mode flag. POSIX's `x` flag also allows `#` to begin a comment in the pattern, and POSIX will not ignore a whitespace character after a backslash.
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:18:44.491Z"
 content_hash: "e8eda839c84e0819983a37db54fcfdcec1d535ecb7d790a264a42d88bdd381c3"
 menu_path: ["Drizzle soft relations"]
 section_path: []
+nav_prev: {"path": "drizzle/docs/extensions/pg/index.md", "title": "PostgreSQL extensions"}
+nav_next: {"path": "drizzle/docs/kit-overview/index.md", "title": "Migrations with Drizzle Kit"}
 ---
+
 The sole purpose of Drizzle relations is to let you query your relational data in the most simple and consise way:
 
 Relational queries
@@ -372,3 +375,4 @@ export const postsRelations = relations(posts, ({ one }) => ({
 	}),
 }));
 ```
+

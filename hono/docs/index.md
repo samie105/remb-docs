@@ -9,7 +9,9 @@ last_crawled_at: "2026-04-18T16:32:27.252Z"
 content_hash: "a50350254bf2c41db401b1f8ccfb625d0e91ce1517e42f3577027bfd64198ade"
 menu_path: ["Hono ​"]
 section_path: []
+nav_prev: {"path": "hono/docs/middleware/third-party/index.md", "title": "Third-party Middleware \u200b"}
 ---
+
 ## Hono [​](#hono)
 
 Hono - _**means flame🔥 in Japanese**_ - is a small, simple, and ultrafast web framework built on Web Standards. It works on any JavaScript runtime: Cloudflare Workers, Fastly Compute, Deno, Bun, Vercel, Netlify, AWS Lambda, Lambda@Edge, and Node.js.
@@ -164,7 +166,7 @@ Fastest is Hono
 ✨  Done in 28.06s.
 ```
 
-See [more benchmarks](https://hono.dev/docs/concepts/benchmarks).
+See [more benchmarks](hono/docs/concepts/benchmarks/index.md).
 
 ## Lightweight [​](#lightweight)
 
@@ -188,7 +190,7 @@ Total Upload: 11.47 KiB / gzip: 4.34 KiB
 
 **LinearRouter** registers the routes very quickly, so it's suitable for an environment that initializes applications every time. **PatternRouter** simply adds and matches the pattern, making it small.
 
-See [more information about routes](https://hono.dev/docs/concepts/routers).
+See [more information about routes](hono/docs/concepts/routers/index.md).
 
 Thanks to the use of the **Web Standards**, Hono works on a lot of platforms.
 
@@ -204,7 +206,7 @@ Thanks to the use of the **Web Standards**, Hono works on a lot of platforms.
 
 And by using [a Node.js adapter](https://github.com/honojs/node-server), Hono works on Node.js.
 
-See [more information about Web Standards](https://hono.dev/docs/concepts/web-standard).
+See [more information about Web Standards](hono/docs/concepts/web-standard/index.md).
 
 ## Middleware & Helpers [​](#middleware-helpers)
 
@@ -212,24 +214,24 @@ See [more information about Web Standards](https://hono.dev/docs/concepts/web-st
 
 Out of the box, Hono provides middleware and helpers for:
 
-*   [Basic Authentication](https://hono.dev/docs/middleware/builtin/basic-auth)
-*   [Bearer Authentication](https://hono.dev/docs/middleware/builtin/bearer-auth)
-*   [Body Limit](https://hono.dev/docs/middleware/builtin/body-limit)
-*   [Cache](https://hono.dev/docs/middleware/builtin/cache)
-*   [Compress](https://hono.dev/docs/middleware/builtin/compress)
-*   [Context Storage](https://hono.dev/docs/middleware/builtin/context-storage)
-*   [Cookie](https://hono.dev/docs/helpers/cookie)
-*   [CORS](https://hono.dev/docs/middleware/builtin/cors)
-*   [ETag](https://hono.dev/docs/middleware/builtin/etag)
-*   [html](https://hono.dev/docs/helpers/html)
-*   [JSX](https://hono.dev/docs/guides/jsx)
-*   [JWT Authentication](https://hono.dev/docs/middleware/builtin/jwt)
-*   [Logger](https://hono.dev/docs/middleware/builtin/logger)
-*   [Language](https://hono.dev/docs/middleware/builtin/language)
-*   [Pretty JSON](https://hono.dev/docs/middleware/builtin/pretty-json)
-*   [Secure Headers](https://hono.dev/docs/middleware/builtin/secure-headers)
-*   [SSG](https://hono.dev/docs/helpers/ssg)
-*   [Streaming](https://hono.dev/docs/helpers/streaming)
+*   [Basic Authentication](hono/docs/middleware/builtin/basic-auth/index.md)
+*   [Bearer Authentication](hono/docs/middleware/builtin/bearer-auth/index.md)
+*   [Body Limit](hono/docs/middleware/builtin/body-limit/index.md)
+*   [Cache](hono/docs/middleware/builtin/cache/index.md)
+*   [Compress](hono/docs/middleware/builtin/compress/index.md)
+*   [Context Storage](hono/docs/middleware/builtin/context-storage/index.md)
+*   [Cookie](hono/docs/helpers/cookie/index.md)
+*   [CORS](hono/docs/middleware/builtin/cors/index.md)
+*   [ETag](hono/docs/middleware/builtin/etag/index.md)
+*   [html](hono/docs/helpers/html/index.md)
+*   [JSX](hono/docs/guides/jsx/index.md)
+*   [JWT Authentication](hono/docs/middleware/builtin/jwt/index.md)
+*   [Logger](hono/docs/middleware/builtin/logger/index.md)
+*   [Language](hono/docs/middleware/builtin/language/index.md)
+*   [Pretty JSON](hono/docs/middleware/builtin/pretty-json/index.md)
+*   [Secure Headers](hono/docs/middleware/builtin/secure-headers/index.md)
+*   [SSG](hono/docs/helpers/ssg/index.md)
+*   [Streaming](hono/docs/helpers/streaming/index.md)
 *   [GraphQL Server](https://github.com/honojs/middleware/tree/main/packages/graphql-server)
 *   [Firebase Authentication](https://github.com/honojs/middleware/tree/main/packages/firebase-auth)
 *   [Sentry](https://github.com/honojs/middleware/tree/main/packages/sentry)
@@ -248,7 +250,7 @@ const app = new Hono()
 app.use(etag(), logger())
 ```
 
-See [more information about Middleware](https://hono.dev/docs/concepts/middleware).
+See [more information about Middleware](hono/docs/concepts/middleware/index.md).
 
 ## Developer Experience [​](#developer-experience)
 
@@ -262,4 +264,5 @@ For example, the path parameters will be literal types.
 
 And, the Validator and Hono Client `hc` enable the RPC mode. In RPC mode, you can use your favorite validator such as Zod and easily share server-side API specs with the client and build type-safe applications.
 
-See [Hono Stacks](https://hono.dev/docs/concepts/stacks).
+See [Hono Stacks](hono/docs/concepts/stacks/index.md).
+

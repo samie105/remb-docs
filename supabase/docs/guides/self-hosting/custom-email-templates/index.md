@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:50:17.857Z"
 content_hash: "950cc07e2442f19df3bb4ed24d83a69945bb012df3abc47e7606595d5cc2ba2c"
 menu_path: ["Self-Hosting","Self-Hosting","How-to Guides","How-to Guides","Custom Email Templates","Custom Email Templates"]
 section_path: ["Self-Hosting","Self-Hosting","How-to Guides","How-to Guides","Custom Email Templates","Custom Email Templates"]
+nav_prev: {"path": "supabase/docs/guides/security/soc-2-compliance/index.md", "title": "SOC 2 Compliance and Supabase"}
+nav_next: {"path": "supabase/docs/guides/self-hosting/enable-mcp/index.md", "title": "Enabling MCP Server Access"}
 ---
+
 # 
 
 Custom Email Templates
@@ -187,3 +190,4 @@ Update the `auth` service in `docker-compose.yml` to enable password changed not
 ```
 1docker compose up -d --force-recreate --no-deps auth templates-server
 ```
+

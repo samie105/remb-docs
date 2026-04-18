@@ -9,15 +9,9 @@ last_crawled_at: "2026-04-18T17:15:33.424Z"
 content_hash: "4a9ec441ef9725cf04e2d5ef292927c8a783b13f7021c9fa52ba355c4a1cff12"
 menu_path: ["color-scheme"]
 section_path: []
+nav_prev: {"path": "tailwind/docs/caret-color/index.md", "title": "caret-color"}
+nav_next: {"path": "tailwind/docs/cursor/index.md", "title": "cursor"}
 ---
-[](/)
-
-[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
-
-1.  Interactivity
-2.  color-scheme
-
-Interactivity
 
 # color-scheme
 
@@ -101,3 +95,4 @@ Make your ideas look awesome, without relying on a designer.
 ](https://www.refactoringui.com/?ref=sidebar)
 
 Copyright © 2026 Tailwind Labs Inc.·[Trademark Policy](/brand)
+

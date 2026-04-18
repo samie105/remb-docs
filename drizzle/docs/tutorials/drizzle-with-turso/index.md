@@ -9,12 +9,15 @@ last_crawled_at: "2026-04-18T17:24:26.223Z"
 content_hash: "3b0970dcc35119bd31de98622397a0ef02afed5e7380cf1c03bf36ace0d3d6bc"
 menu_path: ["Drizzle with Turso"]
 section_path: []
+nav_prev: {"path": "drizzle/docs/tutorials/drizzle-with-supabase/index.md", "title": "Drizzle with Supabase Database"}
+nav_next: {"path": "drizzle/docs/tutorials/drizzle-with-vercel/index.md", "title": "Drizzle with Vercel Postgres"}
 ---
+
 This tutorial demonstrates how to use Drizzle ORM with [Turso](https://docs.turso.tech/introduction).
 
 This guide assumes familiarity with:
 
-*   You should have installed Drizzle ORM and [Drizzle kit](https://orm.drizzle.team/docs/kit-overview). You can do this by running the following command:
+*   You should have installed Drizzle ORM and [Drizzle kit](drizzle/docs/kit-overview/index.md). You can do this by running the following command:
 
 npm
 
@@ -206,7 +209,7 @@ export type SelectPost = typeof postsTable.$inferSelect;
 
 #### Setup Drizzle config file[](#setup-drizzle-config-file)
 
-**Drizzle config** - a configuration file that is used by [Drizzle Kit](https://orm.drizzle.team/docs/kit-overview) and contains all the information about your database connection, migration folder and schema files.
+**Drizzle config** - a configuration file that is used by [Drizzle Kit](drizzle/docs/kit-overview/index.md) and contains all the information about your database connection, migration folder and schema files.
 
 Create a `drizzle.config.ts` file in the root of your project and add the following content:
 
@@ -268,7 +271,7 @@ Run migrations:
 npx drizzle-kit migrate
 ```
 
-Alternatively, you can push changes directly to the database using [Drizzle kit push command](https://orm.drizzle.team/docs/kit-overview#prototyping-with-db-push):
+Alternatively, you can push changes directly to the database using [Drizzle kit push command](drizzle/docs/kit-overview/index.md#prototyping-with-db-push):
 
 ```
 npx drizzle-kit push
@@ -305,7 +308,7 @@ For instance, we create `src/db/queries` folder and separate files for each oper
 
 #### Insert data[](#insert-data)
 
-Read more about insert query in the [documentation](https://orm.drizzle.team/docs/insert).
+Read more about insert query in the [documentation](drizzle/docs/insert/index.md).
 
 ```
 import { db } from '../index';
@@ -322,11 +325,11 @@ export async function createPost(data: InsertPost) {
 
 #### Select data[](#select-data)
 
-Read more about select query in the [documentation](https://orm.drizzle.team/docs/select).
+Read more about select query in the [documentation](drizzle/docs/select/index.md).
 
 IMPORTANT
 
-`getColumns` available starting from `drizzle-orm@1.0.0-beta.2`(read more [here](https://orm.drizzle.team/docs/upgrade-v1))
+`getColumns` available starting from `drizzle-orm@1.0.0-beta.2`(read more [here](drizzle/docs/upgrade-v1/index.md))
 
 If you are on pre-1 version(like `0.45.1`) then use `getTableColumns`
 
@@ -393,11 +396,11 @@ export async function getPostsForLast24Hours(
 }
 ```
 
-Alternatively, you can use [relational query syntax](https://orm.drizzle.team/docs/rqb).
+Alternatively, you can use [relational query syntax](drizzle/docs/rqb/index.md).
 
 #### Update data[](#update-data)
 
-Read more about update query in the [documentation](https://orm.drizzle.team/docs/update).
+Read more about update query in the [documentation](drizzle/docs/update/index.md).
 
 ```
 import { eq } from 'drizzle-orm';
@@ -411,7 +414,7 @@ export async function updatePost(id: SelectPost['id'], data: Partial<Omit<Select
 
 #### Delete data[](#delete-data)
 
-Read more about delete query in the [documentation](https://orm.drizzle.team/docs/delete).
+Read more about delete query in the [documentation](drizzle/docs/delete/index.md).
 
 ```
 import { eq } from 'drizzle-orm';
@@ -422,3 +425,4 @@ export async function deleteUser(id: SelectUser['id']) {
   await db.delete(usersTable).where(eq(usersTable.id, id));
 }
 ```
+

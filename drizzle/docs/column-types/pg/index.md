@@ -9,8 +9,11 @@ last_crawled_at: "2026-04-18T16:35:58.192Z"
 content_hash: "4415edb4737d09fd08decaaa19436f180a52e95d92c496e39d0c6f9cfd7738f1"
 menu_path: ["PostgreSQL column types"]
 section_path: []
+nav_prev: {"path": "drizzle/docs/connect-drizzle-proxy/index.md", "title": "Drizzle HTTP proxy"}
+nav_next: {"path": "drizzle/docs/indexes-constraints/index.md", "title": "Indexes & Constraints"}
 ---
-We have native support for all of them, yet if that’s not enough for you, feel free to create **[custom types](https://orm.drizzle.team/docs/custom-types)**.
+
+We have native support for all of them, yet if that’s not enough for you, feel free to create **[custom types](drizzle/docs/custom-types/index.md)**.
 
 important
 
@@ -18,7 +21,7 @@ All examples in this part of the documentation do not use database column name a
 
 You can use database aliases in column names if you want, and you can also use the `casing` parameter to define a mapping strategy for Drizzle.
 
-You can read more about it [here](https://orm.drizzle.team/docs/sql-schema-declaration#shape-your-data-schema)
+You can read more about it [here](drizzle/docs/sql-schema-declaration/index.md#shape-your-data-schema)
 
 ### integer[](#integer)
 
@@ -893,3 +896,4 @@ CREATE TABLE "table" (
 	"id" serial PRIMARY KEY NOT NULL
 );
 ```
+

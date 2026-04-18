@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:45:18.750Z"
 content_hash: "d94b10330862a8d4488d97b785a995d7c2676fcaae3d20d182527aea5fc2bc93"
 menu_path: ["Lifecycle of Reactive Effects"]
 section_path: []
+nav_prev: {"path": "react/learn/you-might-not-need-an-effect/index.md", "title": "You Might Not Need an Effect"}
+nav_next: {"path": "react/learn/separating-events-from-effects/index.md", "title": "Separating Events from Effects"}
 ---
+
 Effects have a different lifecycle from components. Components may mount, update, or unmount. An Effect can only do two things: to start synchronizing something, and later to stop synchronizing it. This cycle can happen multiple times if your Effect depends on props and state that change over time. React provides a linter rule to check that you’ve specified your Effect’s dependencies correctly. This keeps your Effect synchronized to the latest props and state.
 
 ### You will learn
@@ -31,7 +34,7 @@ Every React component goes through the same lifecycle:
 *   A component _updates_ when it receives new props or state, usually in response to an interaction.
 *   A component _unmounts_ when it’s removed from the screen.
 
-**It’s a good way to think about components, but _not_ about Effects.** Instead, try to think about each Effect independently from your component’s lifecycle. An Effect describes how to [synchronize an external system](https://react.dev/learn/synchronizing-with-effects) to the current props and state. As your code changes, synchronization will need to happen more or less often.
+**It’s a good way to think about components, but _not_ about Effects.** Instead, try to think about each Effect independently from your component’s lifecycle. An Effect describes how to [synchronize an external system](react/learn/synchronizing-with-effects/index.md) to the current props and state. As your code changes, synchronization will need to happen more or less often.
 
 To illustrate this point, consider this Effect connecting your component to a chat server:
 
@@ -57,7 +60,7 @@ Let’s look at _why_ this is necessary, _when_ it happens, and _how_ you can co
 
 ### Note
 
-Some Effects don’t return a cleanup function at all. [More often than not,](https://react.dev/learn/synchronizing-with-effects#how-to-handle-the-effect-firing-twice-in-development) you’ll want to return one—but if you don’t, React will behave as if you returned an empty cleanup function.
+Some Effects don’t return a cleanup function at all. [More often than not,](react/learn/synchronizing-with-effects/index.md#how-to-handle-the-effect-firing-twice-in-development) you’ll want to return one—but if you don’t, React will behave as if you returned an empty cleanup function.
 
 ### Why synchronization may need to happen more than once[](#why-synchronization-may-need-to-happen-more-than-once "Link for Why synchronization may need to happen more than once ")
 
@@ -144,7 +147,7 @@ Previously, you were thinking from the component’s perspective. When you looke
 
 **Instead, always focus on a single start/stop cycle at a time. It shouldn’t matter whether a component is mounting, updating, or unmounting. All you need to do is to describe how to start synchronization and how to stop it. If you do it well, your Effect will be resilient to being started and stopped as many times as it’s needed.**
 
-This might remind you how you don’t think whether a component is mounting or updating when you write the rendering logic that creates JSX. You describe what should be on the screen, and React [figures out the rest.](https://react.dev/learn/reacting-to-input-with-state)
+This might remind you how you don’t think whether a component is mounting or updating when you write the rendering logic that creates JSX. You describe what should be on the screen, and React [figures out the rest.](react/learn/reacting-to-input-with-state/index.md)
 
 ### How React verifies that your Effect can re-synchronize[](#how-react-verifies-that-your-effect-can-re-synchronize "Link for How React verifies that your Effect can re-synchronize ")
 
@@ -158,7 +161,7 @@ Notice that when the component mounts for the first time, you see three logs:
 
 The first two logs are development-only. In development, React always remounts each component once.
 
-**React verifies that your Effect can re-synchronize by forcing it to do that immediately in development.** This might remind you of opening a door and closing it an extra time to check if the door lock works. React starts and stops your Effect one extra time in development to check [you’ve implemented its cleanup well.](https://react.dev/learn/synchronizing-with-effects#how-to-handle-the-effect-firing-twice-in-development)
+**React verifies that your Effect can re-synchronize by forcing it to do that immediately in development.** This might remind you of opening a door and closing it an extra time to check if the door lock works. React starts and stops your Effect one extra time in development to check [you’ve implemented its cleanup well.](react/learn/synchronizing-with-effects/index.md#how-to-handle-the-effect-firing-twice-in-development)
 
 The main reason your Effect will re-synchronize in practice is if some data it uses has changed. In the sandbox above, change the selected chat room. Notice how, when the `roomId` changes, your Effect re-synchronizes.
 
@@ -166,7 +169,7 @@ However, there are also more unusual cases in which re-synchronization is necess
 
 ### How React knows that it needs to re-synchronize the Effect[](#how-react-knows-that-it-needs-to-re-synchronize-the-effect "Link for How React knows that it needs to re-synchronize the Effect ")
 
-You might be wondering how React knew that your Effect needed to re-synchronize after `roomId` changes. It’s because _you told React_ that its code depends on `roomId` by including it in the [list of dependencies:](https://react.dev/learn/synchronizing-with-effects#step-2-specify-the-effect-dependencies)
+You might be wondering how React knew that your Effect needed to re-synchronize after `roomId` changes. It’s because _you told React_ that its code depends on `roomId` by including it in the [list of dependencies:](react/learn/synchronizing-with-effects/index.md#step-2-specify-the-effect-dependencies)
 
 ```
 function ChatRoom({ roomId }) { // The roomId prop may change over timeuseEffect(() => {const connection = createConnection(serverUrl, roomId); // This Effect reads roomIdconnection.connect();return () => {connection.disconnect();};}, [roomId]); // So you tell React that this Effect "depends on" roomId// ...
@@ -198,7 +201,7 @@ function ChatRoom({ roomId }) {useEffect(() => {logVisit(roomId);}, [roomId]);us
 
 **Each Effect in your code should represent a separate and independent synchronization process.**
 
-In the above example, deleting one Effect wouldn’t break the other Effect’s logic. This is a good indication that they synchronize different things, and so it made sense to split them up. On the other hand, if you split up a cohesive piece of logic into separate Effects, the code may look “cleaner” but will be [more difficult to maintain.](https://react.dev/learn/you-might-not-need-an-effect#chains-of-computations) This is why you should think whether the processes are same or separate, not whether the code looks cleaner.
+In the above example, deleting one Effect wouldn’t break the other Effect’s logic. This is a good indication that they synchronize different things, and so it made sense to split them up. On the other hand, if you split up a cohesive piece of logic into separate Effects, the code may look “cleaner” but will be [more difficult to maintain.](react/learn/you-might-not-need-an-effect/index.md#chains-of-computations) This is why you should think whether the processes are same or separate, not whether the code looks cleaner.
 
 ## Effects “react” to reactive values[](#effects-react-to-reactive-values "Link for Effects “react” to reactive values ")
 
@@ -244,7 +247,7 @@ However, if you [think from the Effect’s perspective,](#thinking-from-the-effe
 
 Props and state aren’t the only reactive values. Values that you calculate from them are also reactive. If the props or state change, your component will re-render, and the values calculated from them will also change. This is why all variables from the component body used by the Effect should be in the Effect dependency list.
 
-Let’s say that the user can pick a chat server in the dropdown, but they can also configure a default server in settings. Suppose you’ve already put the settings state in a [context](https://react.dev/learn/scaling-up-with-reducer-and-context) so you read the `settings` from that context. Now you calculate the `serverUrl` based on the selected server from props and the default server:
+Let’s say that the user can pick a chat server in the dropdown, but they can also configure a default server in settings. Suppose you’ve already put the settings state in a [context](react/learn/scaling-up-with-reducer-and-context/index.md) so you read the `settings` from that context. Now you calculate the `serverUrl` based on the selected server from props and the default server:
 
 ```
 function ChatRoom({ roomId, selectedServerUrl }) { // roomId is reactiveconst settings = useContext(SettingsContext); // settings is reactiveconst serverUrl = selectedServerUrl ?? settings.defaultServerUrl; // serverUrl is reactiveuseEffect(() => {const connection = createConnection(serverUrl, roomId); // Your Effect reads roomId and serverUrlconnection.connect();return () => {connection.disconnect();};}, [roomId, serverUrl]); // So it needs to re-synchronize when either of them changes!// ...}
@@ -262,15 +265,15 @@ In other words, Effects “react” to all values from the component body.
 
 Mutable values (including global variables) aren’t reactive.
 
-**A mutable value like [`location.pathname`](https://developer.mozilla.org/en-US/docs/Web/API/Location/pathname) can’t be a dependency.** It’s mutable, so it can change at any time completely outside of the React rendering data flow. Changing it wouldn’t trigger a re-render of your component. Therefore, even if you specified it in the dependencies, React _wouldn’t know_ to re-synchronize the Effect when it changes. This also breaks the rules of React because reading mutable data during rendering (which is when you calculate the dependencies) breaks [purity of rendering.](https://react.dev/learn/keeping-components-pure) Instead, you should read and subscribe to an external mutable value with [`useSyncExternalStore`.](https://react.dev/learn/you-might-not-need-an-effect#subscribing-to-an-external-store)
+**A mutable value like [`location.pathname`](https://developer.mozilla.org/en-US/docs/Web/API/Location/pathname) can’t be a dependency.** It’s mutable, so it can change at any time completely outside of the React rendering data flow. Changing it wouldn’t trigger a re-render of your component. Therefore, even if you specified it in the dependencies, React _wouldn’t know_ to re-synchronize the Effect when it changes. This also breaks the rules of React because reading mutable data during rendering (which is when you calculate the dependencies) breaks [purity of rendering.](react/learn/keeping-components-pure/index.md) Instead, you should read and subscribe to an external mutable value with [`useSyncExternalStore`.](react/learn/you-might-not-need-an-effect/index.md#subscribing-to-an-external-store)
 
-**A mutable value like [`ref.current`](https://react.dev/reference/react/useRef#reference) or things you read from it also can’t be a dependency.** The ref object returned by `useRef` itself can be a dependency, but its `current` property is intentionally mutable. It lets you [keep track of something without triggering a re-render.](https://react.dev/learn/referencing-values-with-refs) But since changing it doesn’t trigger a re-render, it’s not a reactive value, and React won’t know to re-run your Effect when it changes.
+**A mutable value like [`ref.current`](https://react.dev/reference/react/useRef#reference) or things you read from it also can’t be a dependency.** The ref object returned by `useRef` itself can be a dependency, but its `current` property is intentionally mutable. It lets you [keep track of something without triggering a re-render.](react/learn/referencing-values-with-refs/index.md) But since changing it doesn’t trigger a re-render, it’s not a reactive value, and React won’t know to re-run your Effect when it changes.
 
 As you’ll learn below on this page, a linter will check for these issues automatically.
 
 ### React verifies that you specified every reactive value as a dependency[](#react-verifies-that-you-specified-every-reactive-value-as-a-dependency "Link for React verifies that you specified every reactive value as a dependency ")
 
-If your linter is [configured for React,](https://react.dev/learn/editor-setup#linting) it will check that every reactive value used by your Effect’s code is declared as its dependency. For example, this is a lint error because both `roomId` and `serverUrl` are reactive:
+If your linter is [configured for React,](react/learn/editor-setup/index.md#linting) it will check that every reactive value used by your Effect’s code is declared as its dependency. For example, this is a lint error because both `roomId` and `serverUrl` are reactive:
 
 ## Lint Error
 
@@ -310,11 +313,11 @@ function ChatRoom() {useEffect(() => {const serverUrl = 'https://localhost:1234'
 
 **You can’t “choose” your dependencies.** Your dependencies must include every [reactive value](#all-variables-declared-in-the-component-body-are-reactive) you read in the Effect. The linter enforces this. Sometimes this may lead to problems like infinite loops and to your Effect re-synchronizing too often. Don’t fix these problems by suppressing the linter! Here’s what to try instead:
 
-*   **Check that your Effect represents an independent synchronization process.** If your Effect doesn’t synchronize anything, [it might be unnecessary.](https://react.dev/learn/you-might-not-need-an-effect) If it synchronizes several independent things, [split it up.](#each-effect-represents-a-separate-synchronization-process)
+*   **Check that your Effect represents an independent synchronization process.** If your Effect doesn’t synchronize anything, [it might be unnecessary.](react/learn/you-might-not-need-an-effect/index.md) If it synchronizes several independent things, [split it up.](#each-effect-represents-a-separate-synchronization-process)
     
-*   **If you want to read the latest value of props or state without “reacting” to it and re-synchronizing the Effect,** you can split your Effect into a reactive part (which you’ll keep in the Effect) and a non-reactive part (which you’ll extract into something called an _Effect Event_). [Read about separating Events from Effects.](https://react.dev/learn/separating-events-from-effects)
+*   **If you want to read the latest value of props or state without “reacting” to it and re-synchronizing the Effect,** you can split your Effect into a reactive part (which you’ll keep in the Effect) and a non-reactive part (which you’ll extract into something called an _Effect Event_). [Read about separating Events from Effects.](react/learn/separating-events-from-effects/index.md)
     
-*   **Avoid relying on objects and functions as dependencies.** If you create objects and functions during rendering and then read them from an Effect, they will be different on every render. This will cause your Effect to re-synchronize every time. [Read more about removing unnecessary dependencies from Effects.](https://react.dev/learn/removing-effect-dependencies)
+*   **Avoid relying on objects and functions as dependencies.** If you create objects and functions during rendering and then read them from an Effect, they will be different on every render. This will cause your Effect to re-synchronize every time. [Read more about removing unnecessary dependencies from Effects.](react/learn/removing-effect-dependencies/index.md)
     
 
 ### Pitfall
@@ -327,7 +330,7 @@ If you have an existing codebase, you might have some Effects that suppress the 
 useEffect(() => {// ...// 🔴 Avoid suppressing the linter like this:// eslint-ignore-next-line react-hooks/exhaustive-deps}, []);
 ```
 
-On the [next](https://react.dev/learn/separating-events-from-effects) [pages](https://react.dev/learn/removing-effect-dependencies), you’ll learn how to fix this code without breaking the rules. It’s always worth fixing!
+On the [next](react/learn/separating-events-from-effects/index.md) [pages](react/learn/removing-effect-dependencies/index.md), you’ll learn how to fix this code without breaking the rules. It’s always worth fixing!
 
 ## Recap[](#recap "Link for Recap")
 
@@ -355,3 +358,4 @@ Fix reconnecting on every keystroke[](#fix-reconnecting-on-every-keystroke "Link
 In this example, the `ChatRoom` component connects to the chat room when the component mounts, disconnects when it unmounts, and reconnects when you select a different chat room. This behavior is correct, so you need to keep it working.
 
 However, there is a problem. Whenever you type into the message box input at the bottom, `ChatRoom` _also_ reconnects to the chat. (You can notice this by clearing the console and typing into the input.) Fix the issue so that this doesn’t happen.
+

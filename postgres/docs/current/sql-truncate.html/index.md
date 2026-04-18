@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:47:23.125Z"
 content_hash: "ef557d880575faa63a6d7ee2cb92e969a2d2e7761ff05cdd3623d728b3fdbf46"
 menu_path: ["PostgreSQL: Documentation: 18: TRUNCATE"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/pltcl-global.html/index.md", "title": "PostgreSQL: Documentation: 18: 42.4.\u00a0Global Data in PL/Tcl"}
+nav_next: {"path": "postgres/docs/current/spi-spi-start-transaction.html/index.md", "title": "PostgreSQL: Documentation: 18: SPI_start_transaction"}
 ---
+
 TRUNCATE — empty a table or set of tables
 
 ## Synopsis
@@ -78,3 +81,4 @@ TRUNCATE othertable CASCADE;
 ## Compatibility
 
 The SQL:2008 standard includes a `TRUNCATE` command with the syntax ``TRUNCATE TABLE _`tablename`_``. The clauses `CONTINUE IDENTITY`/`RESTART IDENTITY` also appear in that standard, but have slightly different though related meanings. Some of the concurrency behavior of this command is left implementation-defined by the standard, so the above notes should be considered and compared with other implementations if necessary.
+

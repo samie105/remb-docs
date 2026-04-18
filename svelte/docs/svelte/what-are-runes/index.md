@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:33:25.107Z"
 content_hash: "9f95ac6a5aa0e838b1cdff7a2f503efb35edd536f84651b52a236128c28cf22c"
 menu_path: ["What are runes?"]
 section_path: []
+nav_prev: {"path": "svelte/docs/svelte/svelte-js-files/index.md", "title": ".svelte.js and .svelte.ts files"}
+nav_next: {"path": "svelte/docs/svelte/$state/index.md", "title": "$state"}
 ---
+
 > **rune** /ruːn/ _noun_
 > 
 > A letter or mark used as a mystical or magic symbol.
@@ -40,3 +43,4 @@ They differ from normal JavaScript functions in important ways, however:
 previous next
 
 [.svelte.js and .svelte.ts files](/docs/svelte/svelte-js-files) [$state](/docs/svelte/$state)
+

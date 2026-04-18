@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:33:40.226Z"
 content_hash: "661daf676ac0ecf7d725640317c8ed68ac8f66769078742ad401422af4025b23"
 menu_path: ["Cache"]
 section_path: []
+nav_prev: {"path": "drizzle/docs/batch-api/index.md", "title": "Batch API"}
+nav_next: {"path": "drizzle/docs/dynamic-query-building/index.md", "title": "Dynamic query building"}
 ---
+
 Drizzle sends every query straight to your database by default. There are no hidden actions, no automatic caching or invalidation - you’ll always see exactly what runs. If you want caching, you must opt in.
 
 By default, Drizzle uses a `explicit` caching strategy (i.e. `global: false`), so nothing is ever cached unless you ask. This prevents surprises or hidden performance traps in your application. Alternatively, you can flip on `all` caching (`global: true`) so that every select will look in cache first.
@@ -351,3 +354,4 @@ await db.query.users.findMany();
 *   Using cache with `better-sqlite3`, `Durable Objects`, `expo sqlite`
 *   Using cache with AWS Data API drivers
 *   Using cache with views
+

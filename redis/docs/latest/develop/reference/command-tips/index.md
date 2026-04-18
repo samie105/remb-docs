@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:38:12.183Z"
 content_hash: "4b6264818ed38f0781d0500b67e6ede5a0b70ef31146aefd15e98487523cf00f"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis reference","→","Redis reference","→\n      \n        Redis command tips","→","Redis command tips"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis reference","→","Redis reference","→\n      \n        Redis command tips","→","Redis command tips"]
+nav_prev: {"path": "redis/docs/latest/develop/tools/cli/index.md", "title": "Redis CLI"}
+nav_next: {"path": "redis/docs/latest/develop/data-types/compare-data-types/index.md", "title": "Compare data types"}
 ---
+
 # Redis command tips
 
 Get additional information about a command
@@ -85,3 +88,4 @@ redis> command info ping
 ```
 
 ## On this page
+

@@ -9,15 +9,9 @@ last_crawled_at: "2026-04-18T17:04:43.603Z"
 content_hash: "d0ec42471e770a7b5cbed94926e8711fbbb35128826522c676ba1f173fc48f3e"
 menu_path: ["background-blend-mode"]
 section_path: []
+nav_prev: {"path": "tailwind/docs/mix-blend-mode/index.md", "title": "mix-blend-mode"}
+nav_next: {"path": "tailwind/docs/mask-clip/index.md", "title": "mask-clip"}
 ---
-[](/)
-
-[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
-
-1.  Effects
-2.  background-blend-mode
-
-Effects
 
 # background-blend-mode
 
@@ -111,3 +105,4 @@ Short, tactical video lessons from the creator of Tailwind CSS, delivered direct
 [Get the free course](/build-uis-that-dont-suck)
 
 Copyright © 2026 Tailwind Labs Inc.·[Trademark Policy](/brand)
+

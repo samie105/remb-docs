@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:12:46.326Z"
 content_hash: "fb814293bf5f163edf29fe6495e6fbe1932084ac73274b40fa1aca180503f517"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Connect with Redis client API libraries","→","Connect with Redis client API libraries","→\n      \n        node-redis guide (JavaScript)","→","node-redis guide (JavaScript)","→\n      \n        Production usage","→","Production usage"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Connect with Redis client API libraries","→","Connect with Redis client API libraries","→\n      \n        node-redis guide (JavaScript)","→","node-redis guide (JavaScript)","→\n      \n        Production usage","→","Production usage"]
+nav_prev: {"path": "redis/docs/latest/develop/clients/php/index.md", "title": "Predis guide (PHP)"}
+nav_next: {"path": "redis/docs/latest/develop/use-cases/leaderboard/ruby/index.md", "title": "Redis leaderboard with Ruby"}
 ---
+
 # Production usage
 
 Get your Node.js app ready for production
@@ -86,3 +89,4 @@ _Smart client handoffs (SCH)_ is a feature of Redis Cloud and Redis Software ser
 See [Smart client handoffs](/docs/latest/develop/clients/sch/) for more information about SCH and [Connect using Smart client handoffs](/docs/latest/develop/clients/nodejs/connect/#connect-using-smart-client-handoffs-sch) for example code.
 
 ## On this page
+

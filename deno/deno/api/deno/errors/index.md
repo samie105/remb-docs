@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:08:47.355Z"
 content_hash: "b922f15f7c405a94e82a102f9bd611248b2d4ea27f3448014e83530a591191db"
 menu_path: ["Errors - Deno documentation"]
 section_path: []
+nav_prev: {"path": "deno/deno/api/deno/cloud/index.md", "title": "Cloud - Deno documentation"}
+nav_next: {"path": "deno/deno/api/deno/fetch/index.md", "title": "Fetch - Deno documentation"}
 ---
+
 ### Classes [#](#Classes)
 
 c
@@ -169,3 +172,4 @@ N
 [Deno.errors](./././~/Deno.errors "Deno.errors")
 
 A set of error constructors that are raised by Deno APIs.
+

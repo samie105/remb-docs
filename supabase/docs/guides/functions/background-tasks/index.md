@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:43:48.328Z"
 content_hash: "b1d9c4cce3e096cd9bd8e8c01e4b0a3d6695b32c025b8349f4eb863e12c7177d"
 menu_path: ["Edge Functions","Edge Functions","Advanced Features","Advanced Features","Background Tasks","Background Tasks"]
 section_path: ["Edge Functions","Edge Functions","Advanced Features","Advanced Features","Background Tasks","Background Tasks"]
+nav_prev: {"path": "supabase/docs/guides/functions/auth/index.md", "title": "Securing Edge Functions"}
+nav_next: {"path": "supabase/docs/guides/functions/compression/index.md", "title": "Handling Compressed Requests"}
 ---
+
 # 
 
 Background Tasks
@@ -72,3 +75,4 @@ To prevent that, you can update the `supabase/config.toml` with the following se
 ```
 1[edge_runtime]2policy = "per_worker"
 ```
+

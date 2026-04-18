@@ -9,9 +9,13 @@ last_crawled_at: "2026-04-18T16:46:13.430Z"
 content_hash: "97d0b5736b1d0435f3a20446344d4c71fa3ae08af8e704b691dfc128f6c5170a"
 menu_path: ["Starter Projects"]
 section_path: []
+nav_prev: {"path": "trpc/docs/client/nextjs/pages-router/ssr/index.md", "title": "Server-Side Rendering"}
+nav_next: {"path": "trpc/docs/client/nextjs/server-actions/index.md", "title": "Server Actions"}
 ---
+
 _zART-stack_ example (**z**ero-**A**PI, **T**ypeScript, **R**eact).
 
 Monorepo setup with **React Native**, Next.js, & Prisma
 
 Quick start with `git clone`
+

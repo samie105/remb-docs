@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:40:28.838Z"
 content_hash: "d942a1a64f1ac143f42eba5c3b6271cd1b8471df7d4d8dbd034d559f4c725ae9"
 menu_path: ["Database","Database","ORM Quickstarts","ORM Quickstarts","Drizzle","Drizzle"]
 section_path: ["Database","Database","ORM Quickstarts","ORM Quickstarts","Drizzle","Drizzle"]
+nav_prev: {"path": "supabase/docs/guides/database/debugging-performance/index.md", "title": "Debugging performance issues"}
+nav_next: {"path": "supabase/docs/guides/database/extensions/index.md", "title": "Postgres Extensions Overview"}
 ---
+
 # 
 
 Drizzle
@@ -55,3 +58,4 @@ In local SUPABASE\_DB\_URL require to be adapted to work with Docker resolver
 ```
 1import 'dotenv/config'23import { drizzle } from 'drizzle-orm/postgres-js'4import postgres from 'postgres'56let connectionString = process.env.DATABASE_URL7if (host.includes('postgres:postgres@supabase_db_')) {8  const url = URL.parse(host)!9  url.hostname = url.hostname.split('_')[1]10  connectionString = url.href11}1213// Disable prefetch as it is not supported for "Transaction" pool mode14export const client = postgres(connectionString, { prepare: false })15export const db = drizzle(client);
 ```
+

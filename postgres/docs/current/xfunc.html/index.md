@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:40:54.750Z"
 content_hash: "14094696174546d91a05a15c5fb90e863549df8e59269104bc19f241f2b789e0"
 menu_path: ["PostgreSQL: Documentation: 18: 36.3. User-Defined Functions"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/plpython-trigger.html/index.md", "title": "PostgreSQL: Documentation: 18: 44.5.\u00a0Trigger Functions"}
+nav_next: {"path": "postgres/docs/current/sql-start-transaction.html/index.md", "title": "PostgreSQL: Documentation: 18: START TRANSACTION"}
 ---
+
 PostgreSQL provides four kinds of functions:
 
 *   query language functions (functions written in SQL) ([Section 36.5](https://www.postgresql.org/docs/current/xfunc-sql.html "36.5. Query Language (SQL) Functions"))
@@ -28,3 +31,4 @@ Many kinds of functions can take or return certain pseudo-types (such as polymor
 It's easiest to define SQL functions, so we'll start by discussing those. Most of the concepts presented for SQL functions will carry over to the other types of functions.
 
 Throughout this chapter, it can be useful to look at the reference page of the [`CREATE FUNCTION`](https://www.postgresql.org/docs/current/sql-createfunction.html "CREATE FUNCTION") command to understand the examples better. Some examples from this chapter can be found in `funcs.sql` and `funcs.c` in the `src/tutorial` directory in the PostgreSQL source distribution.
+

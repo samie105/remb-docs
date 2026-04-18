@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:52:42.625Z"
 content_hash: "cdcbb8aa5048a02a8852c455f1c93388a4432d381340dbe8205ae97dfa475abb"
 menu_path: ["PostgreSQL: Documentation: 18: J.6. Style Guide"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/sql-expressions.html/index.md", "title": "PostgreSQL: Documentation: 18: 4.2.\u00a0Value Expressions"}
+nav_next: {"path": "postgres/docs/current/parallel-safety.html/index.md", "title": "PostgreSQL: Documentation: 18: 15.4.\u00a0Parallel Safety"}
 ---
+
 ### J.6.1. Reference Pages [#](#DOCGUIDE-STYLE-REF-PAGES)
 
 Reference pages should follow a standard layout. This allows users to find the desired information more quickly, and it also encourages writers to document all relevant aspects of a command. Consistency is not only desired among PostgreSQL reference pages, but also with reference pages provided by the operating system and other packages. Hence the following guidelines have been developed. They are for the most part consistent with similar guidelines established by various operating systems.
@@ -71,3 +74,4 @@ See Also [#](#DOCGUIDE-STYLE-REF-PAGES-SEE-ALSO)
 Cross-references, listed in the following order: other PostgreSQL command reference pages, PostgreSQL SQL command reference pages, citation of PostgreSQL manuals, other reference pages (e.g., operating system, other packages), other documentation. Items in the same group are listed alphabetically.
 
 Reference pages describing SQL commands should contain the following sections: Name, Synopsis, Description, Parameters, Outputs, Notes, Examples, Compatibility, History, See Also. The Parameters section is like the Options section, but there is more freedom about which clauses of the command can be listed. The Outputs section is only needed if the command returns something other than a default command-completion tag. The Compatibility section should explain to what extent this command conforms to the SQL standard(s), or to which other database system it is compatible. The See Also section of SQL commands should list SQL commands before cross-references to programs.
+

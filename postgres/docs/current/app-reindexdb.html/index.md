@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:53:03.138Z"
 content_hash: "2dc600c3cc2f8e3b9f4176207aa44bec7aa4564d802aa4a300052c35cea82357"
 menu_path: ["PostgreSQL: Documentation: 18: reindexdb"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/datetime-config-files.html/index.md", "title": "PostgreSQL: Documentation: 18: B.4.\u00a0Date/Time Configuration Files"}
+nav_next: {"path": "postgres/docs/current/view-pg-timezone-names.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.34.\u00a0pg_timezone_names"}
 ---
+
 reindexdb — reindex a PostgreSQL database
 
 ## Synopsis
@@ -55,7 +58,7 @@ Recreate _`index`_ only. Multiple indexes can be recreated by writing multiple `
 
 Execute the reindex commands in parallel by running _`njobs`_ commands simultaneously. This option may reduce the processing time but it also increases the load on the database server.
 
-reindexdb will open _`njobs`_ connections to the database, so make sure your [max\_connections](https://www.postgresql.org/docs/current/runtime-config-connection.html#GUC-MAX-CONNECTIONS) setting is high enough to accommodate all connections.
+reindexdb will open _`njobs`_ connections to the database, so make sure your [max\_connections](postgres/docs/current/runtime-config-connection.html/index.md#GUC-MAX-CONNECTIONS) setting is high enough to accommodate all connections.
 
 Note that this option is incompatible with the `--system` option.
 
@@ -163,3 +166,4 @@ To reindex the table `foo` and the index `bar` in a database named `abcd`:
 ```
 $ 
 ```
+

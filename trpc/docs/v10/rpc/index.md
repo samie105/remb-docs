@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:36:57.429Z"
 content_hash: "45f7be0a55ee6c3141ae3254f19e913356cf815402f3c7a4c467d56860581330"
 menu_path: ["HTTP RPC Specification"]
 section_path: []
+nav_prev: {"path": "trpc/docs/v10/migrate-from-v9-to-v10/index.md", "title": "Migrate from v9 to v10"}
+nav_next: {"path": "trpc/docs/v10/server/adapters/index.md", "title": "Adapters"}
 ---
+
 ## Methods <-> Type mapping[​](#methods---type-mapping "Direct link to Methods <-> Type mapping")
 
 HTTP Method
@@ -196,7 +199,7 @@ Example JSON Response
 
 *   When possible, we propagate HTTP status codes from the error thrown.
 *   If the response has different statuses, we send back `207 Multi-Status` \_(e.g., if one call errored and one succeeded) \_
-*   For more on errors and how to customize them see [Error Formatting](https://trpc.io/docs/v10/server/error-formatting).
+*   For more on errors and how to customize them see [Error Formatting](trpc/docs/v10/server/error-formatting/index.md).
 
 ## Error Codes <-> HTTP Status[​](#error-codes---http-status "Direct link to Error Codes <-> HTTP Status")
 
@@ -242,3 +245,4 @@ You can read more details by drilling into the TypeScript definitions in
 
 *   [/packages/server/src/unstable-core-do-not-import/rpc/envelopes.ts](https://github.com/trpc/trpc/tree/main/packages/server/src/unstable-core-do-not-import/rpc/envelopes.ts)
 *   [/packages/server/src/unstable-core-do-not-import/rpc/codes.ts](https://github.com/trpc/trpc/tree/main/packages/server/src/unstable-core-do-not-import/rpc/codes.ts)
+

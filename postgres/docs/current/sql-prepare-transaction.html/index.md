@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:47:26.914Z"
 content_hash: "8567d5a36831ac1e46b683f7b50c763dbad740e15bd3f63f01d6691a4c03871b"
 menu_path: ["PostgreSQL: Documentation: 18: PREPARE TRANSACTION"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/sql-droptsdictionary.html/index.md", "title": "PostgreSQL: Documentation: 18: DROP TEXT SEARCH DICTIONARY"}
+nav_next: {"path": "postgres/docs/current/btree-gist.html/index.md", "title": "PostgreSQL: Documentation: 18: F.8.\u00a0btree_gist \u2014 GiST operator classes with B-tree behavior"}
 ---
+
 PREPARE TRANSACTION — prepare the current transaction for two-phase commit
 
 ## Synopsis
@@ -48,7 +51,7 @@ All currently available prepared transactions are listed in the [`pg_prepared_xa
 
 It is unwise to leave transactions in the prepared state for a long time. This will interfere with the ability of `VACUUM` to reclaim storage, and in extreme cases could cause the database to shut down to prevent transaction ID wraparound (see [Section 24.1.5](https://www.postgresql.org/docs/current/routine-vacuuming.html#VACUUM-FOR-WRAPAROUND "24.1.5. Preventing Transaction ID Wraparound Failures")). Keep in mind also that the transaction continues to hold whatever locks it held. The intended usage of the feature is that a prepared transaction will normally be committed or rolled back as soon as an external transaction manager has verified that other databases are also prepared to commit.
 
-If you have not set up an external transaction manager to track prepared transactions and ensure they get closed out promptly, it is best to keep the prepared-transaction feature disabled by setting [max\_prepared\_transactions](https://www.postgresql.org/docs/current/runtime-config-resource.html#GUC-MAX-PREPARED-TRANSACTIONS) to zero. This will prevent accidental creation of prepared transactions that might then be forgotten and eventually cause problems.
+If you have not set up an external transaction manager to track prepared transactions and ensure they get closed out promptly, it is best to keep the prepared-transaction feature disabled by setting [max\_prepared\_transactions](postgres/docs/current/runtime-config-resource.html/index.md#GUC-MAX-PREPARED-TRANSACTIONS) to zero. This will prevent accidental creation of prepared transactions that might then be forgotten and eventually cause problems.
 
 ## Examples
 
@@ -59,3 +62,4 @@ PREPARE TRANSACTION 'foobar';
 ## Compatibility
 
 `PREPARE TRANSACTION` is a PostgreSQL extension. It is intended for use by external transaction management systems, some of which are covered by standards (such as X/Open XA), but the SQL side of those systems is not standardized.
+

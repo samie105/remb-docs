@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:01:11.989Z"
 content_hash: "e238bb6a77a11ebeeec05dadf88a57eb075334931e213f0bc0c5672eca077e30"
 menu_path: ["Storage","Storage","More","More","More","CDN","CDN","Metrics","Metrics"]
 section_path: ["Storage","Storage","More","More","More","CDN","CDN","Metrics","Metrics"]
+nav_prev: {"path": "supabase/docs/guides/storage/buckets/fundamentals/index.md", "title": "Storage Buckets"}
+nav_next: {"path": "supabase/docs/guides/storage/cdn/fundamentals/index.md", "title": "Storage CDN"}
 ---
+
 # 
 
 Cache Metrics
@@ -31,3 +34,4 @@ Your cache hit ratio over time can then be determined using the following query:
 ```
 
 Try out [this query](/dashboard/project/_/logs/explorer?q=%0Aselect%0A++timestamp_trunc%28timestamp%2C+hour%29+as+timestamp%2C%0A++countif%28h.cf_cache_status+in+%28%27HIT%27%2C+%27STALE%27%2C+%27REVALIDATED%27%2C+%27UPDATING%27%29%29+%2F+count%28f.id%29+as+ratio%0Afrom%0A++edge_logs+as+f%0A++cross+join+unnest%28f.metadata%29+as+m%0A++cross+join+unnest%28m.request%29+as+r%0A++cross+join+unnest%28m.response%29+as+res%0A++cross+join+unnest%28res.headers%29+as+h%0Awhere+starts_with%28r.path%2C+%27%2Fstorage%2Fv1%2Fobject%27%29+and+r.method+%3D+%27GET%27%0Agroup+by+timestamp%0Aorder+by+timestamp+desc%3B) in the Logs Explorer.
+

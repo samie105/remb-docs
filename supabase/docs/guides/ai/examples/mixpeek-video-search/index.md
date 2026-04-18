@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:51:41.167Z"
 content_hash: "e21011242229a9b062495c01ef86394d25a5e90459b53790d9c03e49285c5116"
 menu_path: ["AI & Vectors","AI & Vectors","Third-Party Tools","Third-Party Tools","Mixpeek","Mixpeek"]
 section_path: ["AI & Vectors","AI & Vectors","Third-Party Tools","Third-Party Tools","Mixpeek","Mixpeek"]
+nav_prev: {"path": "supabase/docs/guides/ai/examples/image-search-openai-clip/index.md", "title": "Image Search with OpenAI CLIP"}
+nav_next: {"path": "supabase/docs/guides/ai/examples/nextjs-vector-search/index.md", "title": "Vector search with Next.js and OpenAI"}
 ---
+
 # 
 
 Video Search with Mixpeek Multimodal Embeddings
@@ -107,3 +110,4 @@ You can now test it out by running `poetry run search`, and you will be presente
 ## Conclusion[#](#conclusion)
 
 With just a couple of Python scripts, you are able to implement video search as well as reverse video search using Mixpeek Embed and Supabase Vector. This approach allows for powerful semantic search capabilities that can be integrated into various applications, enabling you to search through video content using both text and video queries.
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:32:25.856Z"
 content_hash: "269219505662e56d6d2b4c541d6ee0302c24dd08b3342d95fc2d33bf3b898803"
 menu_path: ["Batch API"]
 section_path: []
+nav_prev: {"path": "drizzle/docs/transactions/index.md", "title": "Transactions"}
+nav_next: {"path": "drizzle/docs/cache/index.md", "title": "Cache"}
 ---
+
 ## Batch API
 
 **LibSQL Batch API explanation**: _[source](https://docs.turso.tech/sdk/ts/reference#batch-transactions)_
@@ -130,3 +133,4 @@ db.update()...,
 db.delete()...,
 db.insert()...,
 ```
+

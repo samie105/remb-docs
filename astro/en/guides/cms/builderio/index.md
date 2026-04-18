@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:33:16.221Z"
 content_hash: "97c441d7afb7fd9f435bf541c8551dee2c9a76a391f423efbf9abfd43d996824"
 menu_path: ["Builder.io & Astro"]
 section_path: []
+nav_prev: {"path": "astro/en/guides/cms/apostrophecms/index.md", "title": "ApostropheCMS & Astro"}
+nav_next: {"path": "astro/en/guides/cms/buttercms/index.md", "title": "ButterCMS & Astro"}
 ---
+
 # Builder.io & Astro
 
 [Builder.io](https://www.builder.io/) is a visual CMS that supports drag-and-drop content editing for building websites.
@@ -459,3 +462,4 @@ With this webhook in place, whenever you click the **Publish** button in the Bui
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

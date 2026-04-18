@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:51:53.933Z"
 content_hash: "628371c11f8b1fd7fd867c62bddc09a5106272f81a7405da2a815de7d6c19777"
 menu_path: ["PostgreSQL: Documentation: 18: 51.3. The Parser Stage"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/jit-reason.html/index.md", "title": "PostgreSQL: Documentation: 18: 30.1.\u00a0What Is JIT compilation?"}
+nav_next: {"path": "postgres/docs/current/spgist.html/index.md", "title": "PostgreSQL: Documentation: 18: 65.3.\u00a0SP-GiST Indexes"}
 ---
+
 Development Versions: [devel](https://www.postgresql.org/docs/devel/parser-stage.html "PostgreSQL devel - 51.3. The Parser Stage")
 
 The _parser stage_ consists of two parts:
@@ -42,3 +45,4 @@ The parser stage creates a parse tree using only fixed rules about the syntactic
 The reason for separating raw parsing from semantic analysis is that system catalog lookups can only be done within a transaction, and we do not wish to start a transaction immediately upon receiving a query string. The raw parsing stage is sufficient to identify the transaction control commands (`BEGIN`, `ROLLBACK`, etc.), and these can then be correctly executed without any further analysis. Once we know that we are dealing with an actual query (such as `SELECT` or `UPDATE`), it is okay to start a transaction if we're not already in one. Only then can the transformation process be invoked.
 
 The query tree created by the transformation process is structurally similar to the raw parse tree in most places, but it has many differences in detail. For example, a `FuncCall` node in the parse tree represents something that looks syntactically like a function call. This might be transformed to either a `FuncExpr` or `Aggref` node depending on whether the referenced name turns out to be an ordinary function or an aggregate function. Also, information about the actual data types of columns and expression results is added to the query tree.
+

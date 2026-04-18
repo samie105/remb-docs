@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:53:17.039Z"
 content_hash: "cce71e70be6df6e60c2e25062d5b55c168107ea6a40dc05127c8701a851b3af7"
 menu_path: ["PostgreSQL: Documentation: 18: F.49. uuid-ossp — a UUID generator"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/parallel-plans.html/index.md", "title": "PostgreSQL: Documentation: 18: 15.3.\u00a0Parallel Plans"}
+nav_next: {"path": "postgres/docs/current/functions-subquery.html/index.md", "title": "PostgreSQL: Documentation: 18: 9.24.\u00a0Subquery Expressions"}
 ---
+
 The `uuid-ossp` module provides functions to generate universally unique identifiers (UUIDs) using one of several standard algorithms. There are also functions to produce certain special UUID constants. This module is only necessary for special requirements beyond what is available in core PostgreSQL. See [Section 9.14](https://www.postgresql.org/docs/current/functions-uuid.html "9.14. UUID Functions") for built-in ways to generate UUIDs.
 
 This module is considered “trusted”, that is, it can be installed by non-superusers who have `CREATE` privilege on the current database.
@@ -83,3 +86,4 @@ Returns a constant designating the X.500 distinguished name (DN) namespace for U
 ### F.49.2. Building `uuid-ossp` [#](#UUID-OSSP-BUILDING)
 
 Historically this module depended on the OSSP UUID library, which accounts for the module's name. While the OSSP UUID library can still be found at [http://www.ossp.org/pkg/lib/uuid/](http://www.ossp.org/pkg/lib/uuid/), it is not well maintained, and is becoming increasingly difficult to port to newer platforms. `uuid-ossp` can now be built without the OSSP library on some platforms. On FreeBSD and some other BSD-derived platforms, suitable UUID creation functions are included in the core `libc` library. On Linux, macOS, and some other platforms, suitable functions are provided in the `libuuid` library, which originally came from the `e2fsprogs` project (though on modern Linux it is considered part of `util-linux-ng`). When invoking `configure`, specify `--with-uuid=bsd` to use the BSD functions, or `--with-uuid=e2fs` to use `e2fsprogs`' `libuuid`, or `--with-uuid=ossp` to use the OSSP UUID library. More than one of these libraries might be available on a particular machine, so `configure` does not automatically choose one.
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:00:30.288Z"
 content_hash: "fd7f2cdfaf5014fd3068a2394b05991085fd59cd670b66616072f1af208cbff8"
 menu_path: ["@std/cbor"]
 section_path: []
+nav_prev: {"path": "deno/deno/runtime/reference/std/cache/index.md", "title": "@std/cache"}
+nav_next: {"path": "deno/deno/runtime/reference/std/cli/index.md", "title": "@std/cli"}
 ---
+
 On this page
 
 *   [Overview](#overview)
@@ -53,3 +56,4 @@ deno add jsr:@std/cbor
 ```
 
 [See all symbols in @std/cbor on](https://jsr.io/@std/cbor/doc)
+

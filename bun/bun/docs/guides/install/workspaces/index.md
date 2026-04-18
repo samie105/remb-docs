@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:50:24.119Z"
 content_hash: "ef430a2ae5c0f12c153b124f140991297501458f112e291b5318bedb898c9a45"
 menu_path: ["Configuring a monorepo using workspaces"]
 section_path: []
+nav_prev: {"path": "bun/bun/docs/guides/install/trusted/index.md", "title": "Add a trusted dependency"}
+nav_next: {"path": "bun/bun/docs/guides/install/yarnlock/index.md", "title": "Generate a yarn-compatible lockfile"}
 ---
+
 [Skip to main content](#content-area)
 
 [Bun home page![light logo](https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z_zHyy/logo/logo-with-wordmark-dark.svg?fit=max&auto=format&n=JUhaF6Mf68z_zHyy&q=85&s=3f55cd23822028e40658b192c927f3e4)![dark logo](https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z_zHyy/logo/logo-with-wordmark-light.svg?fit=max&auto=format&n=JUhaF6Mf68z_zHyy&q=85&s=8a0c5928d9dc3631f0d33e17c257e2ec)](/docs)
@@ -122,3 +125,4 @@ Override the default npm registry for bun install
 Next
 
 ](/docs/guides/install/custom-registry)
+

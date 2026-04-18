@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:43:07.158Z"
 content_hash: "3fea1c6171fa1b074e500f0ef432b111f9cb696ce6715372a23eb50374babb4f"
 menu_path: ["Dev Toolbar App API"]
 section_path: []
+nav_prev: {"path": "astro/en/reference/image-service-reference/index.md", "title": "Image Service API"}
+nav_next: {"path": "astro/en/reference/session-driver-reference/index.md", "title": "Astro Session Driver API"}
 ---
+
 # Dev Toolbar App API
 
 The Astro Dev Toolbar App API allows you to create [Astro Integrations](/en/reference/integrations-reference/) that add apps to the Astro Dev Toolbar. This allows you to add new features and integrations with third-party services.
@@ -693,3 +696,4 @@ Currently, the following icons are available and can be used in any component th
 All of the above icons have `fill="currentColor"` set by default and will inherit their color from the parent element.
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

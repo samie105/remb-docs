@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:34:05.720Z"
 content_hash: "04cc97eb5d84447eead3e7d795d8a6bd45a6fb892b348ba05470f9869e3ba800"
 menu_path: ["PostgreSQL: Documentation: 18: 5.6. System Columns"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/sql-explain.html/index.md", "title": "PostgreSQL: Documentation: 18: EXPLAIN"}
+nav_next: {"path": "postgres/docs/current/ecpg-develop.html/index.md", "title": "PostgreSQL: Documentation: 18: 34.17.\u00a0Internals"}
 ---
+
 Every table has several _system columns_ that are implicitly defined by the system. Therefore, these names cannot be used as names of user-defined columns. (Note that these restrictions are separate from whether the name is a key word or not; quoting a name will not allow you to escape these restrictions.) You do not really need to be concerned about these columns; just know they exist.
 
 `tableoid` [#](#DDL-SYSTEM-COLUMNS-TABLEOID)
@@ -39,3 +42,4 @@ The physical location of the row version within its table. Note that although th
 Transaction identifiers are also 32-bit quantities. In a long-lived database it is possible for transaction IDs to wrap around. This is not a fatal problem given appropriate maintenance procedures; see [Chapter 24](https://www.postgresql.org/docs/current/maintenance.html "Chapter 24. Routine Database Maintenance Tasks") for details. It is unwise, however, to depend on the uniqueness of transaction IDs over the long term (more than one billion transactions).
 
 Command identifiers are also 32-bit quantities. This creates a hard limit of 232 (4 billion) SQL commands within a single transaction. In practice this limit is not a problem — note that the limit is on the number of SQL commands, not the number of rows processed. Also, only commands that actually modify the database contents will consume a command identifier.
+

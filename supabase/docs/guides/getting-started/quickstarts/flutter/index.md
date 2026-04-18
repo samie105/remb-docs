@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:58:09.966Z"
 content_hash: "538ac55406ab441d686dab0a7659100c1c5632e8d6940ee8edba74a97a4345ab"
 menu_path: ["Start with Supabase","Start with Supabase","Framework Quickstarts","Framework Quickstarts","Flutter","Flutter"]
 section_path: ["Start with Supabase","Start with Supabase","Framework Quickstarts","Framework Quickstarts","Flutter","Flutter"]
+nav_prev: {"path": "supabase/docs/guides/getting-started/quickstarts/flask/index.md", "title": "Use Supabase with Python"}
+nav_next: {"path": "supabase/docs/guides/getting-started/quickstarts/hono/index.md", "title": "Use Supabase with Hono"}
 ---
+
 # 
 
 Use Supabase with Flutter
@@ -153,3 +156,4 @@ In production, your Android app needs explicit permission to use the internet co
 ```
 1<manifest xmlns:android="http://schemas.android.com/apk/res/android">2  <!-- Required to fetch data from the internet. -->3  <uses-permission android:name="android.permission.INTERNET" />4  <!-- ... -->5</manifest>
 ```
+

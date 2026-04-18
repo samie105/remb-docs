@@ -9,8 +9,11 @@ last_crawled_at: "2026-04-18T16:44:37.783Z"
 content_hash: "08e9655e99bbe165e229e7158ec5296e910429a6eaaee41c953224d5964063e7"
 menu_path: ["Referencing Values with Refs"]
 section_path: []
+nav_prev: {"path": "react/learn/escape-hatches/index.md", "title": "Escape Hatches"}
+nav_next: {"path": "react/learn/manipulating-the-dom-with-refs/index.md", "title": "Manipulating the DOM with Refs"}
 ---
-When you want a component to “remember” some information, but you don’t want that information to [trigger new renders](https://react.dev/learn/render-and-commit), you can use a _ref_.
+
+When you want a component to “remember” some information, but you don’t want that information to [trigger new renders](react/learn/render-and-commit/index.md), you can use a _ref_.
 
 ### You will learn
 
@@ -45,7 +48,7 @@ You can access the current value of that ref through the `ref.current` property.
 
 Here, a button will increment `ref.current` on every click:
 
-The ref points to a number, but, like [state](https://react.dev/learn/state-a-components-memory), you could point to anything: a string, an object, or even a function. Unlike state, ref is a plain JavaScript object with the `current` property that you can read and modify.
+The ref points to a number, but, like [state](react/learn/state-a-components-memory/index.md), you could point to anything: a string, an object, or even a function. Unlike state, ref is a plain JavaScript object with the `current` property that you can read and modify.
 
 Note that **the component doesn’t re-render with every increment.** Like state, refs are retained by React between re-renders. However, setting state re-renders a component. Changing a ref does not!
 
@@ -85,7 +88,7 @@ Mutable—you can modify and update `current`’s value outside of the rendering
 
 You shouldn’t read (or write) the `current` value during rendering.
 
-You can read state at any time. However, each render has its own [snapshot](https://react.dev/learn/state-as-a-snapshot) of state which does not change.
+You can read state at any time. However, each render has its own [snapshot](react/learn/state-as-a-snapshot/index.md) of state which does not change.
 
 Here is a counter button that’s implemented with state:
 
@@ -114,7 +117,7 @@ React provides a built-in version of `useRef` because it is common enough in pra
 Typically, you will use a ref when your component needs to “step outside” React and communicate with external APIs—often a browser API that won’t impact the appearance of the component. Here are a few of these rare situations:
 
 *   Storing [timeout IDs](https://developer.mozilla.org/docs/Web/API/setTimeout)
-*   Storing and manipulating [DOM elements](https://developer.mozilla.org/docs/Web/API/Element), which we cover on [the next page](https://react.dev/learn/manipulating-the-dom-with-refs)
+*   Storing and manipulating [DOM elements](https://developer.mozilla.org/docs/Web/API/Element), which we cover on [the next page](react/learn/manipulating-the-dom-with-refs/index.md)
 *   Storing other objects that aren’t necessary to calculate the JSX.
 
 If your component needs to store some value, but it doesn’t impact the rendering logic, choose refs.
@@ -124,9 +127,9 @@ If your component needs to store some value, but it doesn’t impact the renderi
 Following these principles will make your components more predictable:
 
 *   **Treat refs as an escape hatch.** Refs are useful when you work with external systems or browser APIs. If much of your application logic and data flow relies on refs, you might want to rethink your approach.
-*   **Don’t read or write `ref.current` during rendering.** If some information is needed during rendering, use [state](https://react.dev/learn/state-a-components-memory) instead. Since React doesn’t know when `ref.current` changes, even reading it while rendering makes your component’s behavior difficult to predict. (The only exception to this is code like `if (!ref.current) ref.current = new Thing()` which only sets the ref once during the first render.)
+*   **Don’t read or write `ref.current` during rendering.** If some information is needed during rendering, use [state](react/learn/state-a-components-memory/index.md) instead. Since React doesn’t know when `ref.current` changes, even reading it while rendering makes your component’s behavior difficult to predict. (The only exception to this is code like `if (!ref.current) ref.current = new Thing()` which only sets the ref once during the first render.)
 
-Limitations of React state don’t apply to refs. For example, state acts like a [snapshot for every render](https://react.dev/learn/state-as-a-snapshot) and [doesn’t update synchronously.](https://react.dev/learn/queueing-a-series-of-state-updates) But when you mutate the current value of a ref, it changes immediately:
+Limitations of React state don’t apply to refs. For example, state acts like a [snapshot for every render](react/learn/state-as-a-snapshot/index.md) and [doesn’t update synchronously.](react/learn/queueing-a-series-of-state-updates/index.md) But when you mutate the current value of a ref, it changes immediately:
 
 ```
 ref.current = 5;console.log(ref.current); // 5
@@ -134,11 +137,11 @@ ref.current = 5;console.log(ref.current); // 5
 
 This is because **the ref itself is a regular JavaScript object,** and so it behaves like one.
 
-You also don’t need to worry about [avoiding mutation](https://react.dev/learn/updating-objects-in-state) when you work with a ref. As long as the object you’re mutating isn’t used for rendering, React doesn’t care what you do with the ref or its contents.
+You also don’t need to worry about [avoiding mutation](react/learn/updating-objects-in-state/index.md) when you work with a ref. As long as the object you’re mutating isn’t used for rendering, React doesn’t care what you do with the ref or its contents.
 
 ## Refs and the DOM[](#refs-and-the-dom "Link for Refs and the DOM ")
 
-You can point a ref to any value. However, the most common use case for a ref is to access a DOM element. For example, this is handy if you want to focus an input programmatically. When you pass a ref to a `ref` attribute in JSX, like `<div ref={myRef}>`, React will put the corresponding DOM element into `myRef.current`. Once the element is removed from the DOM, React will update `myRef.current` to be `null`. You can read more about this in [Manipulating the DOM with Refs.](https://react.dev/learn/manipulating-the-dom-with-refs)
+You can point a ref to any value. However, the most common use case for a ref is to access a DOM element. For example, this is handy if you want to focus an input programmatically. When you pass a ref to a `ref` attribute in JSX, like `<div ref={myRef}>`, React will put the corresponding DOM element into `myRef.current`. Once the element is removed from the DOM, React will update `myRef.current` to be `null`. You can read more about this in [Manipulating the DOM with Refs.](react/learn/manipulating-the-dom-with-refs/index.md)
 
 ## Recap[](#recap "Link for Recap")
 
@@ -162,3 +165,4 @@ of
 Fix a broken chat input[](#fix-a-broken-chat-input "Link for this heading")
 
 Type a message and click “Send”. You will notice there is a three second delay before you see the “Sent!” alert. During this delay, you can see an “Undo” button. Click it. This “Undo” button is supposed to stop the “Sent!” message from appearing. It does this by calling [`clearTimeout`](https://developer.mozilla.org/en-US/docs/Web/API/clearTimeout) for the timeout ID saved during `handleSend`. However, even after “Undo” is clicked, the “Sent!” message still appears. Find why it doesn’t work, and fix it.
+

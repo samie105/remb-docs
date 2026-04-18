@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:56:49.114Z"
 content_hash: "2ec400d0a53406b00a37226232bd518945a62f99cd38ca314c2ef3c86346e57f"
 menu_path: ["Database","Database","Examples","Examples","Print Postgres Version","Print Postgres Version"]
 section_path: ["Database","Database","Examples","Examples","Print Postgres Version","Print Postgres Version"]
+nav_prev: {"path": "supabase/docs/guides/database/postgres/timeouts/index.md", "title": "Timeouts"}
+nav_next: {"path": "supabase/docs/guides/database/postgres/triggers/index.md", "title": "Postgres Triggers"}
 ---
+
 # 
 
 Print Postgres version
@@ -31,3 +34,4 @@ Which should return something like:
 ```
 
 This query can also be executed via `psql` or any other query editor if you prefer to [connect directly to the database](/docs/guides/database/connecting-to-postgres#direct-connections).
+

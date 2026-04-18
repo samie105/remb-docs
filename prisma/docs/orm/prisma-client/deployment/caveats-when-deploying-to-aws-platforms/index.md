@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:45:38.434Z"
 content_hash: "44287f8ed768e8de6c6f6857a6df84b8c66f314fc21d2be12a3717f916ce8626"
 menu_path: ["Caveats when deploying to AWS platforms"]
 section_path: []
+nav_prev: {"path": "prisma/docs/orm/prisma-client/debugging-and-troubleshooting/handling-exceptions-and-errors/index.md", "title": "Handling exceptions and errors"}
+nav_next: {"path": "prisma/docs/orm/prisma-client/deployment/deploy-database-changes-with-prisma-migrate/index.md", "title": "Deploying database changes with Prisma Migrate"}
 ---
+
 Deployment
 
 Known caveats when deploying to an AWS platform
@@ -70,3 +73,4 @@ The `sslmode=no-verify` setting passes `rejectUnauthorized: false` to the SSL co
 While using `sslmode=no-verify` can be a quick fix, it bypasses SSL verification and might not meet security requirements for production environments. In such cases, ensure that a valid SSL certificate is properly configured.
 
 [Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/prisma-client/deployment/caveats-when-deploying-to-aws-platforms.mdx)
+

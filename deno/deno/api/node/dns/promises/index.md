@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:35:31.862Z"
 content_hash: "f0a4b0ab58d9020b33faafca7586fd986fc3c63df1b8765623810f2e8b1699ad"
 menu_path: ["dns/promises - Node documentation"]
 section_path: []
+nav_prev: {"path": "deno/deno/api/node/dns/index.md", "title": "dns - Node documentation"}
+nav_next: {"path": "deno/deno/api/node/domain/index.md", "title": "domain - Node documentation"}
 ---
+
 ### Usage in Deno
 
 ```typescript
@@ -312,3 +315,4 @@ v
 [TIMEOUT](../.././dns/promises/~/TIMEOUT "TIMEOUT")
 
 No documentation available
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:38:44.132Z"
 content_hash: "64074b0b25f969a00f7c1fa31b4e844da611a4a9e67baa44bc36f860d43a7077"
 menu_path: ["style:"]
 section_path: []
+nav_prev: {"path": "svelte/docs/svelte/animate/index.md", "title": "animate:"}
+nav_next: {"path": "svelte/docs/svelte/class/index.md", "title": "class"}
 ---
+
 The `style:` directive provides a shorthand for setting multiple styles on an element.
 
 ```
@@ -60,3 +63,4 @@ You can set CSS custom properties:
 previous next
 
 [animate:](/docs/svelte/animate) [class](/docs/svelte/class)
+

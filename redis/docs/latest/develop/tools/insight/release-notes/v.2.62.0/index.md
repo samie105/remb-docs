@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:33:14.491Z"
 content_hash: "16654def3c06674123b2672354b3b5565ded0151c70321674a9a885f6cd2a345"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Client tools","→","Client tools","→\n      \n        Redis Insight","→","Redis Insight","→\n      \n        Redis Insight release notes","→","Redis Insight release notes","→\n      \n        Redis Insight v2.62.0, November 2024","→","Redis Insight v2.62.0, November 2024"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Client tools","→","Client tools","→\n      \n        Redis Insight","→","Redis Insight","→\n      \n        Redis Insight release notes","→","Redis Insight release notes","→\n      \n        Redis Insight v2.62.0, November 2024","→","Redis Insight v2.62.0, November 2024"]
+nav_prev: {"path": "redis/docs/latest/develop/tools/insight/release-notes/v.2.64.0/index.md", "title": "Redis Insight v2.64.0, December 2024"}
+nav_next: {"path": "redis/docs/latest/develop/tools/insight/release-notes/v.2.60.0/index.md", "title": "Redis Insight v2.60.0, October 2024"}
 ---
+
 # Redis Insight v2.62.0, November 2024
 
 Redis Insight v2.62
@@ -64,3 +67,4 @@ MacOS Apple silicon
 uoz6I6MO4/j8UJo7eNje3dz4rx1KKj6mum/vXb2882fYPD/lK1cG0Q0OZu/lbxuk0xgzXfWv0MhMTIVVV+EADg==
 
 ## On this page
+

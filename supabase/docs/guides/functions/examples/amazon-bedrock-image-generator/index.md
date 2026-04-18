@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:57:16.692Z"
 content_hash: "64a548c43db8e779d1203df8897fdb6903a7ed1b561d821dfee82f63af1d435a"
 menu_path: ["Edge Functions","Edge Functions","Examples","Examples","Generating AI images","Generating AI images"]
 section_path: ["Edge Functions","Edge Functions","Examples","Examples","Generating AI images","Generating AI images"]
+nav_prev: {"path": "supabase/docs/guides/deployment/branching/working-with-branches/index.md", "title": "Working with branches"}
+nav_next: {"path": "supabase/docs/guides/functions/examples/cloudflare-turnstile/index.md", "title": "CAPTCHA support with Cloudflare Turnstile"}
 ---
+
 # 
 
 Generate Images with Amazon Bedrock
@@ -70,3 +73,4 @@ And add the code to the `index.ts` file:
 ```
 
 You've now deployed a serverless function that uses AI to generate and upload images to your Supabase storage bucket.
+

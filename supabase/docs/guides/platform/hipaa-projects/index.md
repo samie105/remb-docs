@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:47:35.189Z"
 content_hash: "60ae868222d1a2c58219b52241bc50ce543dcc9210e0765e0241350fd3bdbfb8"
 menu_path: ["Platform","Platform","Platform Configuration","Platform Configuration","HIPAA Projects","HIPAA Projects"]
 section_path: ["Platform","Platform","Platform Configuration","Platform Configuration","HIPAA Projects","HIPAA Projects"]
+nav_prev: {"path": "supabase/docs/guides/platform/get-set-up-for-billing/index.md", "title": "Get set up for billing"}
+nav_next: {"path": "supabase/docs/guides/platform/ipv4-address/index.md", "title": "Dedicated IPv4 Address for Ingress"}
 ---
+
 # 
 
 HIPAA Projects
@@ -33,3 +36,4 @@ These include:
 *   Enabling [Network Restrictions](/docs/guides/platform/network-restrictions).
 
 Additional security checks and controls will be added as the security advisor is extended and additional security controls are made available.
+

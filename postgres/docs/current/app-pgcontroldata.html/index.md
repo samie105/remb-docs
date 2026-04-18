@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:52:25.084Z"
 content_hash: "9bb45bc18bfcf2080a106a262ad693215b3f407ad5ec2d0f7644cad672ab39fa"
 menu_path: ["PostgreSQL: Documentation: 18: pg_controldata"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/sql-alterforeigntable.html/index.md", "title": "PostgreSQL: Documentation: 18: ALTER FOREIGN TABLE"}
+nav_next: {"path": "postgres/docs/current/sql-alterdefaultprivileges.html/index.md", "title": "PostgreSQL: Documentation: 18: ALTER DEFAULT PRIVILEGES"}
 ---
+
 pg\_controldata — display control information of a PostgreSQL database cluster
 
 ## Synopsis
@@ -31,3 +34,4 @@ Default data directory location
 `PG_COLOR`
 
 Specifies whether to use color in diagnostic messages. Possible values are `always`, `auto` and `never`.
+

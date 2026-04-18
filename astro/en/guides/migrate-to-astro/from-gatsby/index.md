@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:40:49.822Z"
 content_hash: "1f1b1a74807c1934ee92cdc424bf92a440683e8d72974831be638664589cc026"
 menu_path: ["Migrating from Gatsby"]
 section_path: []
+nav_prev: {"path": "astro/en/guides/migrate-to-astro/from-eleventy/index.md", "title": "Migrating from Eleventy"}
+nav_next: {"path": "astro/en/guides/migrate-to-astro/from-gitbook/index.md", "title": "Migrating from GitBook"}
 ---
+
 # Migrating from Gatsby
 
 Here are some key concepts and migration strategies to help you get started. Use the rest of our docs and our [Discord community](https://astro.build/chat) to keep going!
@@ -454,3 +457,4 @@ This page layout shows one header when visiting the home page, and a different h
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

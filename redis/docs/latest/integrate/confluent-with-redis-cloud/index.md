@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:12:03.231Z"
 content_hash: "ea5cb934aa70e81b2e5edde7dc7af038fb20dbe74435337d54e043d953e7dae5"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Confluent with Redis Cloud","→","Confluent with Redis Cloud"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Confluent with Redis Cloud","→","Confluent with Redis Cloud"]
+nav_prev: {"path": "redis/docs/latest/operate/oss_and_stack/stack-with-enterprise/deprecated-features/triggers-and-functions/concepts/binary_data/index.md", "title": "Binary data"}
+nav_next: {"path": "redis/docs/latest/operate/rc/databases/create-database/create-flex-database/index.md", "title": "Create a Flex database"}
 ---
+
 # Confluent with Redis Cloud
 
 Describes how to integrate Redis Cloud into Confluent Cloud.
@@ -78,3 +81,4 @@ To add the Redis Sink connector to your Confluent Cloud environment from the Red
     
 
 ## On this page
+

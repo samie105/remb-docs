@@ -9,15 +9,9 @@ last_crawled_at: "2026-04-18T17:03:27.082Z"
 content_hash: "af245f75fe8ec12fcecfe8521ac5e1a67475425ede4f0214885c0c9b0e5930b4"
 menu_path: ["outline-color"]
 section_path: []
+nav_prev: {"path": "tailwind/docs/outline-width/index.md", "title": "outline-width"}
+nav_next: {"path": "tailwind/docs/outline-style/index.md", "title": "outline-style"}
 ---
-[](/)
-
-[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
-
-1.  Borders
-2.  outline-color
-
-Borders
 
 # outline-color
 
@@ -160,3 +154,4 @@ Short, tactical video lessons from the creator of Tailwind CSS, delivered direct
 [Get the free course](/build-uis-that-dont-suck)
 
 Copyright © 2026 Tailwind Labs Inc.·[Trademark Policy](/brand)
+

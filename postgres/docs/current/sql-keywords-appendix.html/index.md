@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:32:49.719Z"
 content_hash: "45c53222f79ac3f78e51d00c91ecec3b39f9e8f1c9a55958923814343b447a4a"
 menu_path: ["PostgreSQL: Documentation: 18: Appendix C. SQL Key Words"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/datetime-appendix.html/index.md", "title": "PostgreSQL: Documentation: 18: Appendix\u00a0B.\u00a0Date/Time Support"}
+nav_next: {"path": "postgres/docs/current/sourcerepo.html/index.md", "title": "PostgreSQL: Documentation: 18: Appendix\u00a0I.\u00a0The Source Code Repository"}
 ---
+
 Key Word
 
 PostgreSQL
@@ -8459,3 +8462,4 @@ non-reserved
 non-reserved
 
 reserved
+

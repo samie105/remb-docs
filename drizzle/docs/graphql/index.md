@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:03:13.583Z"
 content_hash: "e05fb13bc56236fe36752898b6925dcde0874b34d5c7a451f7ceaed391a7556c"
 menu_path: ["drizzle-graphql"]
 section_path: []
+nav_prev: {"path": "drizzle/docs/eslint-plugin/index.md", "title": "ESLint Drizzle Plugin"}
+nav_next: {"path": "drizzle/docs/column-types/mssql/index.md", "title": "MSSQL column types"}
 ---
+
 Create a GraphQL server from a Drizzle schema in one line, and easily enhance it with custom queries and mutations.
 
 ## Quick start[](#quick-start)
@@ -209,3 +212,4 @@ server.listen(4000, () => {
   console.info('Server is running on http://localhost:4000/graphql');
 })
 ```
+

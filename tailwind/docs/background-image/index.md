@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:01:32.412Z"
 content_hash: "b3cfccefa0d42de026ff44f1795d233e53d7cf05444f555d07b386e4152522be"
 menu_path: ["background-image"]
 section_path: []
+nav_prev: {"path": "tailwind/docs/background-color/index.md", "title": "background-color"}
+nav_next: {"path": "tailwind/docs/background-origin/index.md", "title": "background-origin"}
 ---
+
 Utilities for controlling an element's background image.
 
 Class
@@ -170,7 +173,7 @@ Prefix a `background-image` utility with a breakpoint variant like `md:` to only
 <div class="from-purple-400 md:from-yellow-500 ...">  <!-- ... --></div>
 ```
 
-Learn more about using variants in the [variants documentation](https://tailwindcss.com/docs/hover-focus-and-other-states).
+Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).
 
 ## [Customizing your theme](#customizing-your-theme)
 
@@ -186,4 +189,5 @@ Now utilities like `from-regal-blue`,`via-regal-blue`, and `to-regal-blue` can b
 <div class="from-regal-blue">  <!-- ... --></div>
 ```
 
-Learn more about customizing your theme in the [theme documentation](https://tailwindcss.com/docs/theme#customizing-your-theme).
+Learn more about customizing your theme in the [theme documentation](tailwind/docs/theme/index.md#customizing-your-theme).
+

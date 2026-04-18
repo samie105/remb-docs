@@ -9,15 +9,9 @@ last_crawled_at: "2026-04-18T16:58:29.739Z"
 content_hash: "fa42c5ec4f496fa4648217473c578fa81276b2a7b1d6cf9cd835e02c871702c1"
 menu_path: ["text-underline-offset"]
 section_path: []
+nav_prev: {"path": "tailwind/docs/text-decoration-thickness/index.md", "title": "text-decoration-thickness"}
+nav_next: {"path": "tailwind/docs/text-transform/index.md", "title": "text-transform"}
 ---
-[](/)
-
-[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
-
-1.  Typography
-2.  text-underline-offset
-
-Typography
 
 # text-underline-offset
 
@@ -118,3 +112,4 @@ Short, tactical video lessons from the creator of Tailwind CSS, delivered direct
 [Get the free course](/build-uis-that-dont-suck)
 
 Copyright © 2026 Tailwind Labs Inc.·[Trademark Policy](/brand)
+

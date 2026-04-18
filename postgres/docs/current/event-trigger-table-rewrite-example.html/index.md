@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:52:29.380Z"
 content_hash: "f07b6d6af1138e030e59f3fbd7d3302c627a0688c17a230adab593163ffe5f43"
 menu_path: ["PostgreSQL: Documentation: 18: 38.4. A Table Rewrite Event Trigger Example"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/sql-alterdefaultprivileges.html/index.md", "title": "PostgreSQL: Documentation: 18: ALTER DEFAULT PRIVILEGES"}
+nav_next: {"path": "postgres/docs/current/app-pg-ctl.html/index.md", "title": "PostgreSQL: Documentation: 18: pg_ctl"}
 ---
+
 Thanks to the `table_rewrite` event, it is possible to implement a table rewriting policy only allowing the rewrite in maintenance windows.
 
 Here's an example implementing such a policy.
@@ -53,3 +56,4 @@ $$;
 CREATE EVENT TRIGGER no\_rewrite\_allowed
                   ON table\_rewrite
    EXECUTE FUNCTION no\_rewrite();
+

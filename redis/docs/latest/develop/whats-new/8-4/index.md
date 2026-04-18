@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:57:24.753Z"
 content_hash: "ec7024cc15e457bc333bcd860b372b6507817c76cce1e9728cdce351f52ebc68"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        What's new?","→","What's new?","→\n      \n        Redis 8.4","→","Redis 8.4"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        What's new?","→","What's new?","→\n      \n        Redis 8.4","→","Redis 8.4"]
+nav_prev: {"path": "redis/docs/latest/develop/get-started/vector-database/index.md", "title": "Redis as a vector database quick start guide"}
+nav_next: {"path": "redis/docs/latest/operate/oss_and_stack/install/archive/install-stack/windows/index.md", "title": "Install Redis Stack on Windows"}
 ---
+
 # Redis 8.4
 
 What's new in Redis 8.4
@@ -110,3 +113,4 @@ When using Redis 8.4, be aware of these current limitations:
 *   Post-filtering after the `COMBINE` step using `FILTER` is not currently supported.
 
 ## On this page
+

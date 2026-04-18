@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:57:26.680Z"
 content_hash: "23083a4a943a0f799213aa4f65dff21378a9a101b04065613f47682a0fea3cd5"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Install Redis Open Source","→","Install Redis Open Source","→\n      \n        Install Redis Community Edition or Redis Stack","→","Install Redis Community Edition or Redis Stack","→\n      \n        Install Redis Stack","→","Install Redis Stack","→\n      \n        Install Redis Stack on Windows","→","Install Redis Stack on Windows"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Install Redis Open Source","→","Install Redis Open Source","→\n      \n        Install Redis Community Edition or Redis Stack","→","Install Redis Community Edition or Redis Stack","→\n      \n        Install Redis Stack","→","Install Redis Stack","→\n      \n        Install Redis Stack on Windows","→","Install Redis Stack on Windows"]
+nav_prev: {"path": "redis/docs/latest/develop/whats-new/8-4/index.md", "title": "Redis 8.4"}
+nav_next: {"path": "redis/docs/latest/develop/tools/insight/release-notes/v2.12.0/index.md", "title": "RedisInsight v2.12.0, October 2022"}
 ---
+
 # Install Redis Stack on Windows
 
 How to install Redis Stack on Windows
@@ -31,3 +34,4 @@ If you attempt to use Windows Subsystem for Linux (WSL) or Ubuntu for Windows to
 _`systemd` is a suite of basic building blocks for a Linux system._ For more information about its function, see [System and Service Manager](https://systemd.io/). This becomes an issue due to the lack of support for Linux workflows on WSL. But, you can test the instructions listed in [Systemd support is now available in WSL!](https://devblogs.microsoft.com/commandline/systemd-support-is-now-available-in-wsl/). Let us know how that worked for you.
 
 ## On this page
+

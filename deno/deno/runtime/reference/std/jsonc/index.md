@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:03:54.308Z"
 content_hash: "ab833add00b8c3b159d8304bc3e7abd2144387ec0207b26094871e9a1efacc98"
 menu_path: ["@std/jsonc"]
 section_path: []
+nav_prev: {"path": "deno/deno/runtime/reference/std/json/index.md", "title": "@std/json"}
+nav_next: {"path": "deno/deno/runtime/reference/std/log/index.md", "title": "@std/log"}
 ---
+
 On this page
 
 *   [Overview](#overview)
@@ -38,3 +41,4 @@ deno add jsr:@std/jsonc
 ```
 
 [See all symbols in @std/jsonc on](https://jsr.io/@std/jsonc/doc)
+

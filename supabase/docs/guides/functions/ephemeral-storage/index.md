@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:44:30.714Z"
 content_hash: "38c835e70ac8718cf58d7121dc166d1e618d5dbe8b0bebafe42646da4cc7e167"
 menu_path: ["Edge Functions","Edge Functions","Advanced Features","Advanced Features","File Storage","File Storage"]
 section_path: ["Edge Functions","Edge Functions","Advanced Features","Advanced Features","File Storage","File Storage"]
+nav_prev: {"path": "supabase/docs/guides/functions/development-tips/index.md", "title": "Development tips"}
+nav_next: {"path": "supabase/docs/guides/functions/error-handling/index.md", "title": "Error Handling"}
 ---
+
 # 
 
 File Storage
@@ -119,3 +122,4 @@ Ephemeral Storage:
 
 *   Free projects: Up to 256MB of ephemeral storage
 *   Paid projects: Up to 512MB of ephemeral storage
+

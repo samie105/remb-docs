@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:57:58.689Z"
 content_hash: "22de4de59e1fdcebc135ad0b7af60ab2815df0024710ad21dd7f6978157b9022"
 menu_path: ["Edge Functions","Edge Functions","Third-Party Tools","Third-Party Tools","Upstash Redis","Upstash Redis"]
 section_path: ["Edge Functions","Edge Functions","Third-Party Tools","Third-Party Tools","Upstash Redis","Upstash Redis"]
+nav_prev: {"path": "supabase/docs/guides/functions/examples/telegram-bot/index.md", "title": "Building a Telegram Bot"}
+nav_next: {"path": "supabase/docs/guides/getting-started/quickstarts/astrojs/index.md", "title": "Use Supabase with Astro"}
 ---
+
 # 
 
 Upstash Redis
@@ -59,3 +62,4 @@ Navigate to [http://localhost:54321/functions/v1/upstash-redis-counter](http://l
 ```
 1supabase functions deploy upstash-redis-counter --no-verify-jwt2supabase secrets set --env-file supabase/functions/upstash-redis-counter/.env
 ```
+

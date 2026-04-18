@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:46:00.093Z"
 content_hash: "cc25a0cbb20643f7c303bb89280efacadd70d3df6af54950f935ed87690429e3"
 menu_path: ["deno.json and package.json"]
 section_path: []
+nav_prev: {"path": "deno/deno/runtime/fundamentals/modules/index.md", "title": "Modules and dependencies"}
+nav_next: {"path": "deno/deno/runtime/fundamentals/web_dev/index.md", "title": "Web development"}
 ---
+
 On this page
 
 *   [package.json support](#package.json-support)
@@ -792,6 +795,7 @@ A JSON schema file is available for editors to provide autocompletion. The file 
 
 ## Proxies
 
-Deno supports proxies for module downloads and the fetch API. Proxy configuration is read from [environment variables](https://docs.deno.com/runtime/reference/env_variables/#special-environment-variables): HTTP\_PROXY, HTTPS\_PROXY and NO\_PROXY.
+Deno supports proxies for module downloads and the fetch API. Proxy configuration is read from [environment variables](deno/deno/runtime/reference/env_variables/index.md#special-environment-variables): HTTP\_PROXY, HTTPS\_PROXY and NO\_PROXY.
 
 If you are using Windows - if environment variables are not found Deno falls back to reading proxies from the registry.
+

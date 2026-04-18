@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:31:58.444Z"
 content_hash: "e4878225446b786c0620720058cb5f71f417ba6d57aa0c9cf4ebad5e65309158"
 menu_path: ["PostgreSQL: Documentation: 18: 37.3. Writing Trigger Functions in C"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/basic-archive.html/index.md", "title": "PostgreSQL: Documentation: 18: F.5.\u00a0basic_archive \u2014 an example WAL archive module"}
+nav_next: {"path": "postgres/docs/current/dict-int.html/index.md", "title": "PostgreSQL: Documentation: 18: F.12.\u00a0dict_int \u2014 example full-text search dictionary for integers"}
 ---
+
 This section describes the low-level details of the interface to a trigger function. This information is only needed when writing trigger functions in C. If you are using a higher-level language then these details are handled for you. In most cases you should consider using a procedural language before writing your triggers in C. The documentation of each procedural language explains how to write a trigger in that language.
 
 Trigger functions must use the “version 1” function manager interface.
@@ -155,3 +158,4 @@ For triggers other than `UPDATE` triggers, this will be `NULL`.
 To allow queries issued through SPI to reference transition tables, see [SPI\_register\_trigger\_data](https://www.postgresql.org/docs/current/spi-spi-register-trigger-data.html "SPI_register_trigger_data").
 
 A trigger function must return either a `HeapTuple` pointer or a `NULL` pointer (_not_ an SQL null value, that is, do not set _`isNull`_ true). Be careful to return either `tg_trigtuple` or `tg_newtuple`, as appropriate, if you don't want to modify the row being operated on.
+

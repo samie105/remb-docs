@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:41:48.239Z"
 content_hash: "db83fbbc4397154247714c759693153e24a2fa70da231c1c33cbcd27b20002cb"
 menu_path: ["Choosing the State Structure"]
 section_path: []
+nav_prev: {"path": "react/learn/reacting-to-input-with-state/index.md", "title": "Reacting to Input with State"}
+nav_next: {"path": "react/learn/sharing-state-between-components/index.md", "title": "Sharing State Between Components"}
 ---
+
 Structuring state well can make a difference between a component that is pleasant to modify and debug, and one that is a constant source of bugs. Here are some tips you should consider when structuring state.
 
 ### You will learn
@@ -52,7 +55,7 @@ Another case where you’ll group data into an object or an array is when you do
 
 ### Pitfall
 
-If your state variable is an object, remember that [you can’t update only one field in it](https://react.dev/learn/updating-objects-in-state) without explicitly copying the other fields. For example, you can’t do `setPosition({ x: 100 })` in the above example because it would not have the `y` property at all! Instead, if you wanted to set `x` alone, you would either do `setPosition({ ...position, x: 100 })`, or split them into two state variables and do `setX(100)`.
+If your state variable is an object, remember that [you can’t update only one field in it](react/learn/updating-objects-in-state/index.md) without explicitly copying the other fields. For example, you can’t do `setPosition({ x: 100 })` in the above example because it would not have the `y` property at all! Instead, if you wanted to set `x` alone, you would either do `setPosition({ ...position, x: 100 })`, or split them into two state variables and do `setX(100)`.
 
 ## Avoid contradictions in state[](#avoid-contradictions-in-state "Link for Avoid contradictions in state ")
 
@@ -144,7 +147,7 @@ Now if you edit the _selected_ item, the message below will update immediately. 
 
 Imagine a travel plan consisting of planets, continents, and countries. You might be tempted to structure its state using nested objects and arrays, like in this example:
 
-Now let’s say you want to add a button to delete a place you’ve already visited. How would you go about it? [Updating nested state](https://react.dev/learn/updating-objects-in-state#updating-a-nested-object) involves making copies of objects all the way up from the part that changed. Deleting a deeply nested place would involve copying its entire parent place chain. Such code can be very verbose.
+Now let’s say you want to add a button to delete a place you’ve already visited. How would you go about it? [Updating nested state](react/learn/updating-objects-in-state/index.md#updating-a-nested-object) involves making copies of objects all the way up from the part that changed. Deleting a deeply nested place would involve copying its entire parent place chain. Such code can be very verbose.
 
 **If the state is too nested to update easily, consider making it “flat”.** Here is one way you can restructure this data. Instead of a tree-like structure where each `place` has an array of _its child places_, you can have each place hold an array of _its child place IDs_. Then store a mapping from each place ID to the corresponding place.
 
@@ -165,7 +168,7 @@ You can nest state as much as you like, but making it “flat” can solve numer
 
 #### Improving memory usage[](#improving-memory-usage "Link for Improving memory usage ")
 
-Ideally, you would also remove the deleted items (and their children!) from the “table” object to improve memory usage. This version does that. It also [uses Immer](https://react.dev/learn/updating-objects-in-state#write-concise-update-logic-with-immer) to make the update logic more concise.
+Ideally, you would also remove the deleted items (and their children!) from the “table” object to improve memory usage. This version does that. It also [uses Immer](react/learn/updating-objects-in-state/index.md#write-concise-update-logic-with-immer) to make the update logic more concise.
 
 Sometimes, you can also reduce state nesting by moving some of the nested state into the child components. This works well for ephemeral UI state that doesn’t need to be stored, like whether an item is hovered.
 
@@ -192,3 +195,4 @@ of
 Fix a component that’s not updating[](#fix-a-component-thats-not-updating "Link for this heading")
 
 This `Clock` component receives two props: `color` and `time`. When you select a different color in the select box, the `Clock` component receives a different `color` prop from its parent component. However, for some reason, the displayed color doesn’t update. Why? Fix the problem.
+

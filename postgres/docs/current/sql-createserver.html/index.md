@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:39:32.454Z"
 content_hash: "982fea055af3e981e12d13b191038702ec81414e651453de51211095dd3dbf3e"
 menu_path: ["PostgreSQL: Documentation: 18: CREATE SERVER"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/functions-matching.html/index.md", "title": "PostgreSQL: Documentation: 18: 9.7.\u00a0Pattern Matching"}
+nav_next: {"path": "postgres/docs/current/xoper-optimization.html/index.md", "title": "PostgreSQL: Documentation: 18: 36.15.\u00a0Operator Optimization Information"}
 ---
+
 CREATE SERVER — define a new foreign server
 
 ## Synopsis
@@ -71,3 +74,4 @@ See [postgres\_fdw](https://www.postgresql.org/docs/current/postgres-fdw.html "F
 ## Compatibility
 
 `CREATE SERVER` conforms to ISO/IEC 9075-9 (SQL/MED).
+

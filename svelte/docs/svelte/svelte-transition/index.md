@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:46:52.934Z"
 content_hash: "8f1f90491537632714f0cac228d1697a8adb08c5666223020b8a098856f95c12"
 menu_path: ["svelte/transition"]
 section_path: []
+nav_prev: {"path": "svelte/docs/svelte/svelte-store/index.md", "title": "svelte/store"}
+nav_next: {"path": "svelte/docs/svelte/compiler-errors/index.md", "title": "Compiler errors"}
 ---
+
 ```
 import {
 	function blur(node: Element, { delay, duration, easing, amount, opacity }?: BlurParams | undefined): TransitionConfigAnimates a blur filter alongside an element's opacity.
@@ -363,3 +366,4 @@ tick?: (t: number, u: number) => void;
 previous next
 
 [svelte/store](/docs/svelte/svelte-store) [Compiler errors](/docs/svelte/compiler-errors)
+

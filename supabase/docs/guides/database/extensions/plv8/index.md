@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:56:12.781Z"
 content_hash: "0f918fcbd11178b4df90552fc7795157b862e00b161c4dcdec945998b4e1e5ef"
 menu_path: ["Database","Database","Extensions","Extensions","plv8 (deprecated)","plv8 (deprecated)"]
 section_path: ["Database","Database","Extensions","Extensions","plv8 (deprecated)","plv8 (deprecated)"]
+nav_prev: {"path": "supabase/docs/guides/database/extensions/plpgsql_check/index.md", "title": "plpgsql_check: PL/pgSQL Linter"}
+nav_next: {"path": "supabase/docs/guides/database/extensions/postgis/index.md", "title": "PostGIS: Geo queries"}
 ---
+
 # 
 
 plv8: JavaScript Language
@@ -76,3 +79,4 @@ A [set-returning function](https://plv8.github.io/#set-returning-function-calls)
 
 *   Official [`plv8` documentation](https://plv8.github.io/)
 *   [plv8 GitHub Repository](https://github.com/plv8/plv8)
+

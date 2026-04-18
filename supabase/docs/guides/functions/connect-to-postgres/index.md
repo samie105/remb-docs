@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:43:55.676Z"
 content_hash: "6a7085af25778f23a8ed0c78d8f3b4986f7ff58f2cb4d7dcdd9b71edda312f00"
 menu_path: ["Edge Functions","Edge Functions","Integrations","Integrations","Supabase Database (Postgres)","Supabase Database (Postgres)"]
 section_path: ["Edge Functions","Edge Functions","Integrations","Integrations","Supabase Database (Postgres)","Supabase Database (Postgres)"]
+nav_prev: {"path": "supabase/docs/guides/functions/compression/index.md", "title": "Handling Compressed Requests"}
+nav_next: {"path": "supabase/docs/guides/functions/cors/index.md", "title": "CORS (Cross-Origin Resource Sharing) support for Invoking from the browser"}
 ---
+
 # 
 
 Integrating with Supabase Database (Postgres)
@@ -97,3 +100,4 @@ Then, restart your local development server:
 ```
 1supabase functions serve your-function
 ```
+

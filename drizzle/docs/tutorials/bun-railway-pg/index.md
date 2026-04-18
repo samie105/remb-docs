@@ -9,14 +9,17 @@ last_crawled_at: "2026-04-18T17:22:42.144Z"
 content_hash: "d878a4352909577ec95c2f9762c10bb6454c554d6c786309ed20dae1c20c5faf"
 menu_path: ["Drizzle with Bun and PostgreSQL on Railway"]
 section_path: []
+nav_prev: {"path": "drizzle/docs/migrate/migrate-from-typeorm/index.md", "title": "Migrate from TypeORM to Drizzle"}
+nav_next: {"path": "drizzle/docs/tutorials/drizzle-with-encore/index.md", "title": "Drizzle with Encore"}
 ---
+
 This tutorial demonstrates how to use Drizzle ORM with [Bun](https://bun.sh/) runtime and a PostgreSQL database, all deployed on [Railway](https://driz.link/railway).
 
 This guide assumes familiarity with:
 
 *   You should have [Bun](https://bun.sh/) installed. You can install it by following the [official guide](https://bun.sh/docs/installation).
     
-*   You should have installed Drizzle ORM and [Drizzle kit](https://orm.drizzle.team/docs/kit-overview). You can do this by running the following command:
+*   You should have installed Drizzle ORM and [Drizzle kit](drizzle/docs/kit-overview/index.md). You can do this by running the following command:
     
 
 npm
@@ -168,7 +171,7 @@ export type SelectPost = typeof postsTable.$inferSelect;
 
 #### Setup Drizzle config file[](#setup-drizzle-config-file)
 
-**Drizzle config** - a configuration file that is used by [Drizzle Kit](https://orm.drizzle.team/docs/kit-overview) and contains all the information about your database connection, migration folder and schema files.
+**Drizzle config** - a configuration file that is used by [Drizzle Kit](drizzle/docs/kit-overview/index.md) and contains all the information about your database connection, migration folder and schema files.
 
 Create a `drizzle.config.ts` file in the root of your project and add the following content:
 
@@ -228,7 +231,7 @@ bunx drizzle-kit migrate
 
 In this tutorial, migrations are applied automatically on application startup using `migrate()` from `drizzle-orm/node-postgres/migrator`. You can also apply them manually with `drizzle-kit migrate` for local testing.
 
-Alternatively, you can push changes directly to the database using [Drizzle kit push command](https://orm.drizzle.team/docs/kit-overview#prototyping-with-db-push):
+Alternatively, you can push changes directly to the database using [Drizzle kit push command](drizzle/docs/kit-overview/index.md#prototyping-with-db-push):
 
 ```
 bunx drizzle-kit push
@@ -369,11 +372,11 @@ bunx drizzle-kit migrate
 
 With this approach, remove the `await migrate(db, { migrationsFolder: "./migrations" })` call from your `index.ts` — migrations are handled by the pre-deploy command instead.
 
-For more details, see the [Drizzle migrations fundamentals](https://orm.drizzle.team/docs/migrations) page.
+For more details, see the [Drizzle migrations fundamentals](drizzle/docs/migrations/index.md) page.
 
 ## Deploy Drizzle Studio to Railway[](#deploy-drizzle-studio-to-railway)
 
-You can deploy [Drizzle Studio](https://orm.drizzle.team/docs/drizzle-studio/overview) alongside your application on Railway to browse and manage your database directly from the browser. You can use the [Drizzle Studio Railway template](https://railway.com/deploy/drizzle-studio-1) or follow the steps below.
+You can deploy [Drizzle Studio](drizzle/docs/drizzle-studio/overview/index.md) alongside your application on Railway to browse and manage your database directly from the browser. You can use the [Drizzle Studio Railway template](https://railway.com/deploy/drizzle-studio-1) or follow the steps below.
 
 #### Add a new service from a template[](#add-a-new-service-from-a-template)
 
@@ -415,3 +418,4 @@ Open the Drizzle Studio URL in your browser. You should see your database tables
 Navigate to the `Architecture` tab in your Railway project. You should now see three services: your application, the PostgreSQL database, and Drizzle Studio.
 
 ![](https://orm.drizzle.team/_astro/bun-railway-canvas-all-services.58P930zH_Z1Wwbk6.webp)
+

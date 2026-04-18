@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:47:13.839Z"
 content_hash: "5590be089c223d0bbf34c499552348de4c73564d48864ea5449b725e9ac1ac11"
 menu_path: ["PostgreSQL: Documentation: 18: 36.16. Interfacing Extensions to Indexes"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/sql-createrole.html/index.md", "title": "PostgreSQL: Documentation: 18: CREATE ROLE"}
+nav_next: {"path": "postgres/docs/current/functions-json.html/index.md", "title": "PostgreSQL: Documentation: 18: 9.16.\u00a0JSON Functions and Operators"}
 ---
+
 The procedures described thus far let you define new types, new functions, and new operators. However, we cannot yet define an index on a column of a new data type. To do this, we must define an _operator class_ for the new data type. Later in this section, we will illustrate this concept in an example: a new operator class for the B-tree index method that stores and sorts complex numbers in ascending absolute value order.
 
 Operator classes can be grouped into _operator families_ to show the relationships between semantically compatible classes. When only a single data type is involved, an operator class is sufficient, so we'll focus on that case first and then return to operator families.
@@ -795,3 +798,4 @@ CREATE OPERATOR CLASS polygon\_ops
         STORAGE box;
 
 At present, only the GiST, SP-GiST, GIN and BRIN index methods support a `STORAGE` type that's different from the column data type. The GiST `compress` and `decompress` support routines must deal with data-type conversion when `STORAGE` is used. SP-GiST likewise requires a `compress` support function to convert to the storage type, when that is different; if an SP-GiST opclass also supports retrieving data, the reverse conversion must be handled by the `consistent` function. In GIN, the `STORAGE` type identifies the type of the “key” values, which normally is different from the type of the indexed column — for example, an operator class for integer-array columns might have keys that are just integers. The GIN `extractValue` and `extractQuery` support routines are responsible for extracting keys from indexed values. BRIN is similar to GIN: the `STORAGE` type identifies the type of the stored summary values, and operator classes' support procedures are responsible for interpreting the summary values correctly.
+

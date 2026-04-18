@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:37:39.195Z"
 content_hash: "b4902bc6e184f13eb19c736538169b04f7e5c617170677224ae6115eebb0357f"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis reference","→","Redis reference","→\n      \n        Redis modules API","→","Redis modules API","→\n      \n        Redis modules and blocking commands","→","Redis modules and blocking commands"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis reference","→","Redis reference","→\n      \n        Redis modules API","→","Redis modules API","→\n      \n        Redis modules and blocking commands","→","Redis modules and blocking commands"]
+nav_prev: {"path": "redis/docs/latest/operate/oss_and_stack/management/optimization/benchmarks/index.md", "title": "Redis benchmark"}
+nav_next: {"path": "redis/docs/latest/develop/clients/patterns/bulk-loading/index.md", "title": "Bulk loading"}
 ---
+
 # Redis modules and blocking commands
 
 How to implement blocking commands in a Redis module
@@ -225,3 +228,4 @@ An API is work in progress right now in order to allow Redis modules APIs to be 
 There is no ETA for this feature but it may appear in the course of the Redis 4.0 release at some point.
 
 ## On this page
+

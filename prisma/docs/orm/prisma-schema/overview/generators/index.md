@@ -9,10 +9,13 @@ last_crawled_at: "2026-04-18T16:53:02.633Z"
 content_hash: "a8cecf0bab7e4fca53f07bab13652efe99e5b4d4310bf027cf062489a84d1213"
 menu_path: ["Generators"]
 section_path: []
+nav_prev: {"path": "prisma/docs/orm/prisma-schema/overview/index.md", "title": "Overview of Prisma Schema"}
+nav_next: {"path": "prisma/docs/orm/prisma-schema/overview/location/index.md", "title": "Schema location"}
 ---
+
 Generators in your Prisma schema specify what assets are generated when the \`prisma generate\` command is invoked. This page explains how to configure generators
 
-A Prisma schema can have one or more generators, represented by the [`generator`](https://www.prisma.io/docs/orm/reference/prisma-schema-reference#generator) block:
+A Prisma schema can have one or more generators, represented by the [`generator`](prisma/docs/orm/reference/prisma-schema-reference/index.md#generator) block:
 
 ```
 generator client {
@@ -49,7 +52,7 @@ Follow these steps to use the new `prisma-client` generator in your project.
 
 #### [1\. Configure the `prisma-client` generator in `schema.prisma`](#1-configure-the-prisma-client-generator-in-schemaprisma)
 
-Update your [`generator`](https://www.prisma.io/docs/orm/prisma-schema/overview/generators) block:
+Update your [`generator`](prisma/docs/orm/prisma-schema/overview/generators/index.md) block:
 
 ```
 generator client {
@@ -414,7 +417,7 @@ The `prisma-client-js` generator requires the `@prisma/client` npm package and g
 
 The generator for Prisma's JavaScript Client accepts multiple additional properties:
 
-*   `previewFeatures`: [Preview features](https://www.prisma.io/docs/orm/reference/preview-features/client-preview-features) to include
+*   `previewFeatures`: [Preview features](prisma/docs/orm/reference/preview-features/client-preview-features/index.md) to include
 *   `binaryTargets`: Engine binary targets for `prisma-client-js` (for example, `debian-openssl-1.1.x` if you are deploying to Ubuntu 18+, or `native` if you are working locally)
 
 ```
@@ -464,3 +467,4 @@ The following is a list of community created generators.
 *   [`prismabox`](https://github.com/m1212e/prismabox): Generates versatile [typebox](https://github.com/sinclairzx81/typebox) schema from your Prisma models.
 *   [`prisma-generator-typescript-interfaces`](https://github.com/mogzol/prisma-generator-typescript-interfaces): Generates zero-dependency TypeScript interfaces from your Prisma schema.
 *   [`prisma-openapi`](https://github.com/nitzano/prisma-openapi): Generates OpenAPI schema from Prisma models.
+

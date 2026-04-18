@@ -9,37 +9,10 @@ last_crawled_at: "2026-04-18T16:52:10.423Z"
 content_hash: "0235f6d3221460b0b58ff15f7096c1dfd5c7526d88a72ffaee7a9e877b5c3ee8"
 menu_path: ["Build-time constants with --define"]
 section_path: []
+nav_prev: {"path": "bun/bun/docs/guides/read-file/watch/index.md", "title": "Watch a directory for changes"}
+nav_next: {"path": "bun/bun/docs/guides/runtime/cicd/index.md", "title": "Install and run Bun in GitHub Actions"}
 ---
-The `--define` flag can be used with `bun build` and `bun build --compile` to inject build-time constants into your application. This is especially useful for embedding metadata like build versions, timestamps, or configuration flags directly into your compiled executables.
 
-terminal
-
-```
-bun build --compile --define BUILD_VERSION='"1.2.3"' --define BUILD_TIME='"2024-01-15T10:30:00Z"' src/index.ts --outfile myapp
-```
-
-* * *
-
-## Why use build-time constants?
-
-Build-time constants are embedded directly into your compiled code, making them:
-
-*   **Zero runtime overhead** - No environment variable lookups or file reads
-*   **Immutable** - Values are baked into the binary at compile time
-*   **Optimizable** - Dead code elimination can remove unused branches
-*   **Secure** - No external dependencies or configuration files to manage
-
-This is similar to `gcc -D` or `#define` in C/C++, but for JavaScript/TypeScript.
-
-* * *
-
-## Basic usage
-
-### With `bun build`
-
-terminal
-
-```
 # Bundle with build-time constants
 bun build --define BUILD_VERSION='"1.0.0"' --define NODE_ENV='"production"' src/index.ts --outdir ./dist
 ```
@@ -279,6 +252,7 @@ bun build --compile --target=bun-windows-x64 --define PLATFORM='"windows"' src/a
 
 * * *
 
-*   [Define constants at runtime](https://bun.com/docs/guides/runtime/define-constant) - Using `--define` with `bun run`
-*   [Building executables](https://bun.com/docs/bundler/executables) - Complete guide to `bun build --compile`
-*   [Bundler API](https://bun.com/docs/bundler) - Full bundler documentation including `define` option
+*   [Define constants at runtime](bun/bun/docs/guides/runtime/define-constant/index.md) - Using `--define` with `bun run`
+*   [Building executables](bun/bun/docs/bundler/executables/index.md) - Complete guide to `bun build --compile`
+*   [Bundler API](bun/bun/docs/bundler/index.md) - Full bundler documentation including `define` option
+

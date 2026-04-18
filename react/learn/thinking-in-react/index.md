@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:32:42.433Z"
 content_hash: "4c366f029a0e25e686f3ac67188fa1ec35a584db50efd9af3afe178d0d9020b5"
 menu_path: ["Thinking in React"]
 section_path: []
+nav_prev: {"path": "react/learn/tutorial-tic-tac-toe/index.md", "title": "Tutorial: Tic-Tac-Toe"}
+nav_next: {"path": "react/learn/installation/index.md", "title": "Installation"}
 ---
+
 React can change how you think about the designs you look at and the apps you build. When you build a user interface with React, you will first break it apart into pieces called _components_. Then, you will describe the different visual states for each of your components. Finally, you will connect your components together so that the data flows through them. In this tutorial, we’ll guide you through the thought process of building a searchable product data table with React.
 
 ## Start with the mockup[](#start-with-the-mockup "Link for Start with the mockup ")
@@ -64,7 +67,7 @@ Now that you’ve identified the components in the mockup, arrange them into a h
 
 Now that you have your component hierarchy, it’s time to implement your app. The most straightforward approach is to build a version that renders the UI from your data model without adding any interactivity… yet! It’s often easier to build the static version first and add interactivity later. Building a static version requires a lot of typing and no thinking, but adding interactivity requires a lot of thinking and not a lot of typing.
 
-To build a static version of your app that renders your data model, you’ll want to build [components](https://react.dev/learn/your-first-component) that reuse other components and pass data using [props.](https://react.dev/learn/passing-props-to-a-component) Props are a way of passing data from parent to child. (If you’re familiar with the concept of [state](https://react.dev/learn/state-a-components-memory), don’t use state at all to build this static version. State is reserved only for interactivity, that is, data that changes over time. Since this is a static version of the app, you don’t need it.)
+To build a static version of your app that renders your data model, you’ll want to build [components](react/learn/your-first-component/index.md) that reuse other components and pass data using [props.](react/learn/passing-props-to-a-component/index.md) Props are a way of passing data from parent to child. (If you’re familiar with the concept of [state](react/learn/state-a-components-memory/index.md), don’t use state at all to build this static version. State is reserved only for interactivity, that is, data that changes over time. Since this is a static version of the app, you don’t need it.)
 
 You can either build “top down” by starting with building the components higher up in the hierarchy (like `FilterableProductTable`) or “bottom up” by working from components lower down (like `ProductRow`). In simpler examples, it’s usually easier to go top-down, and on larger projects, it’s easier to go bottom-up.
 
@@ -160,7 +163,7 @@ export default function App() {
   return <FilterableProductTable products\={PRODUCTS} />;
 }
 
-(If this code looks intimidating, go through the [Quick Start](https://react.dev/learn) first!)
+(If this code looks intimidating, go through the [Quick Start](react/learn/index.md) first!)
 
 After building your components, you’ll have a library of reusable components that render your data model. Because this is a static app, the components will only return JSX. The component at the top of the hierarchy (`FilterableProductTable`) will take your data model as a prop. This is called _one-way data flow_ because the data flows down from the top-level component to the ones at the bottom of the tree.
 
@@ -204,8 +207,8 @@ This means only the search text and the value of the checkbox are state! Nicely 
 
 There are two types of “model” data in React: props and state. The two are very different:
 
-*   [**Props** are like arguments you pass](https://react.dev/learn/passing-props-to-a-component) to a function. They let a parent component pass data to a child component and customize its appearance. For example, a `Form` can pass a `color` prop to a `Button`.
-*   [**State** is like a component’s memory.](https://react.dev/learn/state-a-components-memory) It lets a component keep track of some information and change it in response to interactions. For example, a `Button` might keep track of `isHovered` state.
+*   [**Props** are like arguments you pass](react/learn/passing-props-to-a-component/index.md) to a function. They let a parent component pass data to a child component and customize its appearance. For example, a `Form` can pass a `color` prop to a `Button`.
+*   [**State** is like a component’s memory.](react/learn/state-a-components-memory/index.md) It lets a component keep track of some information and change it in response to interactions. For example, a `Button` might keep track of `isHovered` state.
 
 Props and state are different, but they work together. A parent component will often keep some information in state (so that it can change it), and _pass it down_ to child components as their props. It’s okay if the difference still feels fuzzy on the first read. It takes a bit of practice for it to really stick!
 
@@ -523,3 +526,4 @@ const PRODUCTS = \[
 export default function App() {
   return <FilterableProductTable products\={PRODUCTS} />;
 }
+

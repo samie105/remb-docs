@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:39:43.718Z"
 content_hash: "182e1362f035d35ef5cd19a04468d1ea6cc4a649c333df52e4ac2cb0777e0e75"
 menu_path: ["readline/promises - Node documentation"]
 section_path: []
+nav_prev: {"path": "deno/deno/api/node/readline/index.md", "title": "readline - Node documentation"}
+nav_next: {"path": "deno/deno/api/node/repl/index.md", "title": "repl - Node documentation"}
 ---
+
 ### Usage in Deno
 
 ```typescript
@@ -64,3 +67,4 @@ T
 [Completer](../.././readline/promises/~/Completer "Completer")
 
 No documentation available
+

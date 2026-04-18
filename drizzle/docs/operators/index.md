@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:17:36.567Z"
 content_hash: "8b31c53673c56679ac52d873496d0b2e10bff1029125c990afcd5cc8b96c4e0b"
 menu_path: ["Filter and conditional operators"]
 section_path: []
+nav_prev: {"path": "drizzle/docs/delete/index.md", "title": "SQL Delete"}
+nav_next: {"path": "drizzle/docs/query-utils/index.md", "title": "Drizzle query utils"}
 ---
+
 ## Filter and conditional operators
 
 We natively support all dialect specific filter and conditional operators.
@@ -609,3 +612,4 @@ const overlaps = await db.select({ id: posts.id }).from(posts)
 ```
 select "id" from "posts" where "posts"."tags" && {Typescript,ORM}
 ```
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:32:42.310Z"
 content_hash: "2f780ce350d9127c94625c9a3d1d3317a492e0024ad4a147e1f42f42031c6864"
 menu_path: ["Scalekit & Astro"]
 section_path: []
+nav_prev: {"path": "astro/en/guides/backend/prisma-postgres/index.md", "title": "Prisma Postgres & Astro"}
+nav_next: {"path": "astro/en/guides/backend/sentry/index.md", "title": "Monitor your Astro Site with Sentry"}
 ---
+
 # Scalekit & Astro
 
 [Scalekit](https://scalekit.com/) is an authentication platform built for B2B and AI applications. It provides social login, enterprise SSO, magic links, and more — managing the full OAuth 2.0 / OIDC flow so you get back tokens and a user profile without building any login UI. A single Scalekit environment supports multiple applications (for example, `app.yourcompany.com` and `docs.yourcompany.com`), so your users authenticate once and share the same session across all your properties.
@@ -247,3 +250,4 @@ if (!user) {  return Astro.redirect("/");}---
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:00:19.382Z"
 content_hash: "edb5b2a57f6a298bb371b2c1c486f9fdd2e588529f89435311650b6cf1118cb5"
 menu_path: ["Platform","Platform","More","More","More","Multi-factor Authentication","Multi-factor Authentication","Enforce MFA on organization","Enforce MFA on organization"]
 section_path: ["Platform","Platform","More","More","More","Multi-factor Authentication","Multi-factor Authentication","Enforce MFA on organization","Enforce MFA on organization"]
+nav_prev: {"path": "supabase/docs/guides/platform/manage-your-usage/realtime-peak-connections/index.md", "title": "Manage Realtime Peak Connections usage"}
+nav_next: {"path": "supabase/docs/guides/platform/manage-your-usage/storage-size/index.md", "title": "Manage Storage size usage"}
 ---
+
 # 
 
 Enforce MFA on Organization
@@ -33,3 +36,4 @@ When MFA enforcement is enabled, users without MFA will immediately lose access 
 ## Personal access tokens[#](#personal-access-tokens)
 
 Personal access tokens are not affected by MFA enforcement. Personal access tokens are designed for programmatic access and issuing of these require a valid Supabase session backed by MFA, if enabled on the account.
+

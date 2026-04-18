@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:52:51.226Z"
 content_hash: "cff837e7ae44c7815e523c69d07434db49062a58a26eb505d0dd4a2e22214033"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Enterprise for Kubernetes","→","Redis Enterprise for Kubernetes","→\n      \n        Redis Enterprise Software for Kubernetes release notes","→","Redis Enterprise Software for Kubernetes release notes","→\n      \n        Redis Enterprise for Kubernetes 7.22.0 release notes","→","Redis Enterprise for Kubernetes 7.22.0 release notes","→\n      \n        Redis Enterprise for Kubernetes 7.22.0-15 (July 2025) release notes","→","Redis Enterprise for Kubernetes 7.22.0-15 (July 2025) release notes"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Enterprise for Kubernetes","→","Redis Enterprise for Kubernetes","→\n      \n        Redis Enterprise Software for Kubernetes release notes","→","Redis Enterprise Software for Kubernetes release notes","→\n      \n        Redis Enterprise for Kubernetes 7.22.0 release notes","→","Redis Enterprise for Kubernetes 7.22.0 release notes","→\n      \n        Redis Enterprise for Kubernetes 7.22.0-15 (July 2025) release notes","→","Redis Enterprise for Kubernetes 7.22.0-15 (July 2025) release notes"]
+nav_prev: {"path": "redis/docs/latest/develop/tools/insight/release-notes/v.2.14.0/index.md", "title": "RedisInsight v2.14.0, November 2022"}
+nav_next: {"path": "redis/docs/latest/integrate/amazon-bedrock/index.md", "title": "Amazon Bedrock"}
 ---
+
 # Redis Enterprise for Kubernetes 7.22.0-15 (July 2025) release notes
 
 Feature release with Helm chart general availability, Kubernetes 1.33 and OpenShift 4.19 support, Redis Software 7.22.0-216 support, and enhancements.
@@ -218,3 +221,4 @@ Kubernetes version
 See [7.22.0 releases](/docs/latest/operate/kubernetes/release-notes/7-22-0-releases/) for information on known limitations.
 
 ## On this page
+

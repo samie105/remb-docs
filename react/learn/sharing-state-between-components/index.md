@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:42:22.926Z"
 content_hash: "17b9a431c33d9e81308e86c3805fcbbd40639897b9bd50773ab42c09aa272bda"
 menu_path: ["Sharing State Between Components"]
 section_path: []
+nav_prev: {"path": "react/learn/choosing-the-state-structure/index.md", "title": "Choosing the State Structure"}
+nav_next: {"path": "react/learn/preserving-and-resetting-state/index.md", "title": "Preserving and Resetting State"}
 ---
+
 Sometimes, you want the state of two components to always change together. To do it, remove state from both of them, move it to their closest common parent, and then pass it down to them via props. This is known as _lifting state up,_ and it’s one of the most common things you will do writing React code.
 
 ### You will learn
@@ -67,7 +70,7 @@ And instead, add `isActive` to the `Panel`’s list of props:
 function Panel({ title, children, isActive }) {
 ```
 
-Now the `Panel`’s parent component can _control_ `isActive` by [passing it down as a prop.](https://react.dev/learn/passing-props-to-a-component) Conversely, the `Panel` component now has _no control_ over the value of `isActive`—it’s now up to the parent component!
+Now the `Panel`’s parent component can _control_ `isActive` by [passing it down as a prop.](react/learn/passing-props-to-a-component/index.md) Conversely, the `Panel` component now has _no control_ over the value of `isActive`—it’s now up to the parent component!
 
 ### Step 2: Pass hardcoded data from the common parent[](#step-2-pass-hardcoded-data-from-the-common-parent "Link for Step 2: Pass hardcoded data from the common parent ")
 
@@ -93,7 +96,7 @@ const [activeIndex, setActiveIndex] = useState(0);
 
 When the `activeIndex` is `0`, the first panel is active, and when it’s `1`, it’s the second one.
 
-Clicking the “Show” button in either `Panel` needs to change the active index in `Accordion`. A `Panel` can’t set the `activeIndex` state directly because it’s defined inside the `Accordion`. The `Accordion` component needs to _explicitly allow_ the `Panel` component to change its state by [passing an event handler down as a prop](https://react.dev/learn/responding-to-events#passing-event-handlers-as-props):
+Clicking the “Show” button in either `Panel` needs to change the active index in `Accordion`. A `Panel` can’t set the `activeIndex` state directly because it’s defined inside the `Accordion`. The `Accordion` component needs to _explicitly allow_ the `Panel` component to change its state by [passing an event handler down as a prop](react/learn/responding-to-events/index.md#passing-event-handlers-as-props):
 
 ```
 <><PanelisActive={activeIndex === 0}onShow={() => setActiveIndex(0)}>    ...</Panel><PanelisActive={activeIndex === 1}onShow={() => setActiveIndex(1)}>    ...</Panel></>
@@ -137,7 +140,7 @@ In a React application, many components will have their own state. Some state ma
 
 Your app will change as you work on it. It is common that you will move state down or back up while you’re still figuring out where each piece of the state “lives”. This is all part of the process!
 
-To see what this feels like in practice with a few more components, read [Thinking in React.](https://react.dev/learn/thinking-in-react)
+To see what this feels like in practice with a few more components, read [Thinking in React.](react/learn/thinking-in-react/index.md)
 
 ## Recap[](#recap "Link for Recap")
 
@@ -159,3 +162,4 @@ of
 Synced inputs[](#synced-inputs "Link for this heading")
 
 These two inputs are independent. Make them stay in sync: editing one input should update the other input with the same text, and vice versa.
+

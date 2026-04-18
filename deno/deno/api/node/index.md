@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:15:48.594Z"
 content_hash: "55c013948126cfbe84ba5b0c04746875c19ea699d56ba0f8813d44d5a096b8de"
 menu_path: ["Node.js Built-in APIs"]
 section_path: []
+nav_prev: {"path": "deno/deno/api/web/workers/index.md", "title": "Workers - Web documentation"}
+nav_next: {"path": "deno/deno/api/web/all_symbols/index.md", "title": "All Symbols - Web documentation"}
 ---
+
 On this page
 
 *   [Key Features](#key-features)
@@ -163,3 +166,5 @@ When migrating from Node.js to Deno:
 4.  **Review permissions**: Configure Deno's permission system as needed
 
 For more guidance, see our [migration guide](/runtime/reference/migration_guide/).
+
+

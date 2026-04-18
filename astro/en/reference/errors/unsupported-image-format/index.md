@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:46:57.852Z"
 content_hash: "687ad84f1db44cd4cfa7fecd611eb78d76c3d1d846744e05a5b49bc7a779b7ff"
 menu_path: ["Unsupported image format"]
 section_path: []
+nav_prev: {"path": "astro/en/reference/errors/unsupported-image-conversion/index.md", "title": "Unsupported image conversion"}
+nav_next: {"path": "astro/en/tutorial/0-introduction/1/index.md", "title": "About this Tutorial"}
 ---
+
 # Unsupported image format
 
 > **UnsupportedImageFormat**: Received unsupported format `FORMAT` from `IMAGE_PATH`. Currently only SUPPORTED\_FORMATS.JOIN(’, ’) are supported by our image services.
@@ -28,3 +31,4 @@ For unsupported formats such as GIFs, you may be able to use an `img` tag direct
 ```
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:46:22.054Z"
 content_hash: "d8f79fe08cc24396faf1515e7dcfc39913252bbd5b3265a76721eba8f607b6e9"
 menu_path: ["drizzle-kit generate"]
 section_path: []
+nav_prev: {"path": "drizzle/docs/kit-overview/index.md", "title": "Migrations with Drizzle Kit"}
+nav_next: {"path": "drizzle/docs/drizzle-kit-migrate/index.md", "title": "drizzle-kit migrate"}
 ---
+
 `drizzle-kit generate` lets you generate SQL migrations based on your Drizzle schema upon declaration or on subsequent schema changes.
 
 How it works under the hood?
@@ -58,9 +61,9 @@ CREATE TABLE "users" (
 );
 ```
 
-It’s designed to cover [code first](https://orm.drizzle.team/docs/migrations) approach of managing Drizzle migrations. You can apply generated migrations using [`drizzle-kit migrate`](https://orm.drizzle.team/docs/drizzle-kit-migrate), using drizzle-orm’s `migrate()`, using external migration tools like [bytebase](https://www.bytebase.com/) or running migrations yourself directly on the database.
+It’s designed to cover [code first](drizzle/docs/migrations/index.md) approach of managing Drizzle migrations. You can apply generated migrations using [`drizzle-kit migrate`](drizzle/docs/drizzle-kit-migrate/index.md), using drizzle-orm’s `migrate()`, using external migration tools like [bytebase](https://www.bytebase.com/) or running migrations yourself directly on the database.
 
-`drizzle-kit generate` command requires you to provide both `dialect` and `schema` path options, you can set them either via [drizzle.config.ts](https://orm.drizzle.team/docs/drizzle-config-file) config file or via CLI options
+`drizzle-kit generate` command requires you to provide both `dialect` and `schema` path options, you can set them either via [drizzle.config.ts](drizzle/docs/drizzle-config-file/index.md) config file or via CLI options
 
 With config file
 
@@ -179,7 +182,7 @@ bunx drizzle-kit generate --config=drizzle-prod.config.ts
 
 ### Custom migrations[](#custom-migrations)
 
-You can generate empty migration files to write your own custom SQL migrations for DDL alternations currently not supported by Drizzle Kit or data seeding. Extended docs on custom migrations - [see here](https://orm.drizzle.team/docs/kit-custom-migrations)
+You can generate empty migration files to write your own custom SQL migrations for DDL alternations currently not supported by Drizzle Kit or data seeding. Extended docs on custom migrations - [see here](drizzle/docs/kit-custom-migrations/index.md)
 
 ```
 drizzle-kit generate --custom --name=seed-users
@@ -258,7 +261,7 @@ bunx drizzle-kit generate --name=seed_users --custom
 
 * * *
 
-We recommend configuring `drizzle-kit` through [drizzle.config.ts](https://orm.drizzle.team/docs/drizzle-config-file) file, yet you can provide all configuration options through CLI if necessary, e.g. in CI/CD pipelines, etc.
+We recommend configuring `drizzle-kit` through [drizzle.config.ts](drizzle/docs/drizzle-config-file/index.md) file, yet you can provide all configuration options through CLI if necessary, e.g. in CI/CD pipelines, etc.
 
 `dialect`
 
@@ -335,3 +338,4 @@ INSERT INTO "users" ("name") VALUES('Dan');
 INSERT INTO "users" ("name") VALUES('Andrew');
 INSERT INTO "users" ("name") VALUES('Dandrew');
 ```
+

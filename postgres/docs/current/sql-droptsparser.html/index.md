@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:33:17.831Z"
 content_hash: "b61e6aca21ace24eb55e42244386041b39eafe6a8faaad83018f09510971e5c8"
 menu_path: ["PostgreSQL: Documentation: 18: DROP TEXT SEARCH PARSER"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/view-pg-rules.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.22.\u00a0pg_rules"}
+nav_next: {"path": "postgres/docs/current/sql-createtype.html/index.md", "title": "PostgreSQL: Documentation: 18: CREATE TYPE"}
 ---
+
 February 26, 2026: [PostgreSQL 18.3, 17.9, 16.13, 15.17, and 14.22 Released!](/about/news/postgresql-183-179-1613-1517-and-1422-released-3246/)
 
 [Documentation](/docs/ "Documentation") → [PostgreSQL 18](/docs/18/index.html)
@@ -69,3 +72,4 @@ There is no `DROP TEXT SEARCH PARSER` statement in the SQL standard.
 ## Submit correction
 
 If you see anything in the documentation that is not correct, does not match your experience with the particular feature or requires further clarification, please use [this form](/account/comments/new/18/sql-droptsparser.html/) to report a documentation issue.
+

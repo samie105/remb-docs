@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:51:32.842Z"
 content_hash: "c0f5fde34767afc65f05072b84515bf459e874660046184259618ad1aed2404c"
 menu_path: ["PostgreSQL: Documentation: 18: J.2. Tool Sets"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/view-pg-config.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.6.\u00a0pg_config"}
+nav_next: {"path": "postgres/docs/current/catalog-pg-publication-rel.html/index.md", "title": "PostgreSQL: Documentation: 18: 52.42.\u00a0pg_publication_rel"}
 ---
+
 The following tools are used to process the documentation. Some might be optional, as noted.
 
 [DocBook DTD](https://www.oasis-open.org/docbook/) [#](#DOCGUIDE-TOOLSETS-DOCBOOK-DTD)
@@ -98,3 +101,4 @@ If necessary, you can tell `configure` where to find these programs, for example
 ./configure ... XMLLINT=/opt/local/bin/xmllint ...
 
 If you prefer to build PostgreSQL using Meson, instead run `meson setup` as described in [Section 17.4](https://www.postgresql.org/docs/current/install-meson.html "17.4. Building and Installation with Meson"), and then see [Section J.4](https://www.postgresql.org/docs/current/docguide-build-meson.html "J.4. Building the Documentation with Meson").
+

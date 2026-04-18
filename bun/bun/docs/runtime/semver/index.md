@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:01:23.618Z"
 content_hash: "199318f94edcd1420ecafbad4fa37c9bddb8492a247068fa92f6f8d481bd78d6"
 menu_path: ["Semver"]
 section_path: []
+nav_prev: {"path": "bun/bun/docs/runtime/secrets/index.md", "title": "Secrets"}
+nav_next: {"path": "bun/bun/docs/runtime/s3/index.md", "title": "S3"}
 ---
+
 Bun implements a semantic versioning API which can be used to compare versions and determine if a version is compatible with another range of versions. The versions and ranges are designed to be compatible with `node-semver`, which is used by npm clients. It’s about 20x faster than `node-semver`.
 
 Currently, this API provides two functions:
@@ -54,3 +57,4 @@ console.log(unsorted);
 ```
 
 If you need other semver functions, feel free to open an issue or pull request.
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:15:11.683Z"
 content_hash: "642faff6f5f8dc122ed669404bf24d2eb28741d59f300967d6ff157ee81b78cb"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Manage Redis","→","Manage Redis","→\n      \n        Troubleshooting Redis","→","Troubleshooting Redis"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Manage Redis","→","Manage Redis","→\n      \n        Troubleshooting Redis","→","Troubleshooting Redis"]
+nav_prev: {"path": "redis/docs/latest/develop/ai/redisvl/user_guide/svs_vamana/index.md", "title": "SVS-VAMANA Vector Search"}
+nav_next: {"path": "redis/docs/latest/develop/ai/redisvl/user_guide/threshold_optimization/index.md", "title": "Threshold Optimization"}
 ---
+
 # Troubleshooting Redis
 
 Problems with Redis? Start here.
@@ -42,3 +45,4 @@ Check the _upgrade urgency_ level in each patch release to more easily spot rele
 *   Certain versions of the Xen hypervisor report poor fork() performance. See [the latency page](/docs/latest/operate/oss_and_stack/management/optimization/latency/) for more information.
 
 ## On this page
+

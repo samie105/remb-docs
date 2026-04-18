@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:36:07.828Z"
 content_hash: "963d78d8c0ae1118c9a6b8cc7416303c0dba9d5b659cde19644d15dd528100cf"
 menu_path: ["Auth","Auth","Security","Security","Audit Logs","Audit Logs"]
 section_path: ["Auth","Auth","Security","Security","Audit Logs","Audit Logs"]
+nav_prev: {"path": "supabase/docs/guides/auth/architecture/index.md", "title": "Auth architecture"}
+nav_next: {"path": "supabase/docs/guides/auth/auth-anonymous/index.md", "title": "Anonymous Sign-Ins"}
 ---
+
 # 
 
 Auth Audit Logs
@@ -163,3 +166,4 @@ An identity unlinked from account
 
 *   There may be a short delay before logs appear
 *   Query capabilities are limited to the dashboard interface
+

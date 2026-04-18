@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:59:10.214Z"
 content_hash: "a07552bb66108245ddcfe3f7144c22baeb2cea3768d45bf34caa77648ae5de7f"
 menu_path: ["Start with Supabase","Start with Supabase","Web app demos","Web app demos","React","React"]
 section_path: ["Start with Supabase","Start with Supabase","Web app demos","Web app demos","React","React"]
+nav_prev: {"path": "supabase/docs/guides/getting-started/tutorials/with-nuxt-3/index.md", "title": "Build a User Management App with Nuxt 3"}
+nav_next: {"path": "supabase/docs/guides/getting-started/tutorials/with-redwoodjs/index.md", "title": "Build a User Management App with RedwoodJS"}
 ---
+
 # 
 
 Build a User Management App with React
@@ -187,3 +190,4 @@ And then open the browser to [localhost:5173](http://localhost:5173) and you sho
 ![Supabase React](/docs/img/supabase-react-demo.png)
 
 At this stage you have a fully functional application!
+

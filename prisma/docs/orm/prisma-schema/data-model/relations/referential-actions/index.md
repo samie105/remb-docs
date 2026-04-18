@@ -9,10 +9,13 @@ last_crawled_at: "2026-04-18T16:55:36.408Z"
 content_hash: "a76c6db6afc58d5d358af0a91656d91cce8f615a0ac824b925a566c4949fd10a"
 menu_path: ["Referential actions"]
 section_path: []
+nav_prev: {"path": "prisma/docs/orm/prisma-schema/data-model/relations/one-to-one-relations/index.md", "title": "One-to-one relations"}
+nav_next: {"path": "prisma/docs/orm/prisma-schema/data-model/relations/self-relations/index.md", "title": "Self-relations"}
 ---
+
 Referential actions let you define the update and delete behavior of related models on the database level
 
-Referential actions determine what happens to a record when your application deletes or updates a related record. They are defined in the [`@relation`](https://www.prisma.io/docs/orm/reference/prisma-schema-reference#relation) attribute and map to foreign key constraints in the database.
+Referential actions determine what happens to a record when your application deletes or updates a related record. They are defined in the [`@relation`](prisma/docs/orm/reference/prisma-schema-reference/index.md#relation) attribute and map to foreign key constraints in the database.
 
 In the following example, `onDelete: Cascade` means that deleting a `User` record will also delete all related `Post` records.
 
@@ -73,7 +76,7 @@ Mandatory relations
 
 The following caveats apply:
 
-*   Referential actions are **not** supported on [implicit many-to-many relations](https://www.prisma.io/docs/orm/prisma-schema/data-model/relations/many-to-many-relations#implicit-many-to-many-relations). To use referential actions, you must define an explicit many-to-many relation and define your referential actions on the [join table](https://www.prisma.io/docs/orm/prisma-schema/data-model/relations/troubleshooting-relations#how-to-use-a-relation-table-with-a-many-to-many-relationship).
+*   Referential actions are **not** supported on [implicit many-to-many relations](prisma/docs/orm/prisma-schema/data-model/relations/many-to-many-relations/index.md#implicit-many-to-many-relations). To use referential actions, you must define an explicit many-to-many relation and define your referential actions on the [join table](prisma/docs/orm/prisma-schema/data-model/relations/troubleshooting-relations/index.md#how-to-use-a-relation-table-with-a-many-to-many-relationship).
 *   Certain combinations of referential actions and required/optional relations are incompatible. For example, using `SetNull` on a required relation will lead to database errors when deleting referenced records because the non-nullable constraint would be violated. See [this GitHub issue](https://github.com/prisma/prisma/issues/7909) for more information.
 
 The following table shows which referential action each database supports.
@@ -295,7 +298,7 @@ model User {
 *   `onUpdate: SetDefault` The scalar field of the referencing object will be set to the fields default value.
     
 
-These require setting a default for the relation scalar field with [`@default`](https://www.prisma.io/docs/orm/reference/prisma-schema-reference#default). If no defaults are provided for any of the scalar fields, a runtime error will be thrown.
+These require setting a default for the relation scalar field with [`@default`](prisma/docs/orm/reference/prisma-schema-reference/index.md#default). If no defaults are provided for any of the scalar fields, a runtime error will be thrown.
 
 ```
 model Post {
@@ -315,7 +318,7 @@ model User {
 
 **SQL Server** doesn't allow cascading referential actions if the relation chain causes a cycle or multiple cascade paths. The server will return an error when executing the SQL.
 
-**MongoDB** requires `NoAction` for self-referential relations or cycles between three models to prevent infinite loops. MongoDB uses `relationMode = "prisma"` by default, meaning Prisma ORM manages [referential integrity](https://www.prisma.io/docs/orm/prisma-schema/data-model/relations/relation-mode).
+**MongoDB** requires `NoAction` for self-referential relations or cycles between three models to prevent infinite loops. MongoDB uses `relationMode = "prisma"` by default, meaning Prisma ORM manages [referential integrity](prisma/docs/orm/prisma-schema/data-model/relations/relation-mode/index.md).
 
 Prisma ORM validates your data model _before_ generating SQL, highlighting problematic relations to help you fix these issues early.
 
@@ -338,7 +341,7 @@ This will result in the following error:
 Error parsing attribute "@relation": A self-relation must have `onDelete` and `onUpdate` referential actions set to `NoAction` in one of the @relation attributes. (Implicit default `onDelete`: `SetNull`, and `onUpdate`: `Cascade`)
 ```
 
-By not defining any actions, Prisma ORM will use the following default values depending if the underlying [scalar fields](https://www.prisma.io/docs/orm/prisma-schema/data-model/models#scalar-fields) are set to be optional or required.
+By not defining any actions, Prisma ORM will use the following default values depending if the underlying [scalar fields](prisma/docs/orm/prisma-schema/data-model/models/index.md#scalar-fields) are set to be optional or required.
 
 Clause
 
@@ -460,3 +463,4 @@ model Comment {
   post        Post @relation(fields: [postId], references: [id])
 }
 ```
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:47:31.251Z"
 content_hash: "0c25d5fe88e267aac35d65b19ffbfab7c4afd5ef7477bd134597b76629c8e5c1"
 menu_path: ["Configuring error formatting"]
 section_path: []
+nav_prev: {"path": "prisma/docs/orm/prisma-client/queries/transactions/index.md", "title": "Transactions and batch queries"}
+nav_next: {"path": "prisma/docs/orm/prisma-client/setup-and-configuration/introduction/index.md", "title": "Introduction to Prisma Client"}
 ---
+
 Setup and Configuration
 
 This page explains how to configure the formatting of errors when using Prisma Client
@@ -29,12 +32,12 @@ In order to configure these different error formatting levels, there are two opt
 *   Setting the config options via environment variables
 *   Providing the config options to the `PrismaClient` constructor
 
-*   [`NO_COLOR`](https://www.prisma.io/docs/orm/reference/environment-variables-reference#no_color): If this env var is provided, colors are stripped from the error messages. Therefore you end up with a **colorless error**. The `NO_COLOR` environment variable is a standard described [here](https://no-color.org/).
+*   [`NO_COLOR`](prisma/docs/orm/reference/environment-variables-reference/index.md#no_color): If this env var is provided, colors are stripped from the error messages. Therefore you end up with a **colorless error**. The `NO_COLOR` environment variable is a standard described [here](https://no-color.org/).
 *   `NODE_ENV=production`: If the env var `NODE_ENV` is set to `production`, only the **minimal error** will be printed. This allows for easier digestion of logs in production environments.
 
 ### [Formatting via the `PrismaClient` constructor](#formatting-via-the-prismaclient-constructor)
 
-Alternatively, use the `PrismaClient` [`errorFormat`](https://www.prisma.io/docs/orm/reference/prisma-client-reference#errorformat) parameter to set the error format:
+Alternatively, use the `PrismaClient` [`errorFormat`](prisma/docs/orm/reference/prisma-client-reference/index.md#errorformat) parameter to set the error format:
 
 ```
 const prisma = new PrismaClient({
@@ -43,3 +46,4 @@ const prisma = new PrismaClient({
 ```
 
 [Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/prisma-client/setup-and-configuration/error-formatting.mdx)
+

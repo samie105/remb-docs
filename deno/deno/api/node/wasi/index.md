@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:44:03.781Z"
 content_hash: "d56e7a38d7f3657185545d6ee4ad62028f832c3573750051e8329396d0799751"
 menu_path: ["wasi - Node documentation"]
 section_path: []
+nav_prev: {"path": "deno/deno/api/node/v8/index.md", "title": "v8 - Node documentation"}
+nav_next: {"path": "deno/deno/api/node/worker_threads/index.md", "title": "worker_threads - Node documentation"}
 ---
+
 ### Usage in Deno
 
 ```typescript
@@ -113,3 +116,4 @@ No documentation available
 *   [stdin](.././wasi/~/WASIOptions#property_stdin)
 *   [stdout](.././wasi/~/WASIOptions#property_stdout)
 *   [version](.././wasi/~/WASIOptions#property_version)
+

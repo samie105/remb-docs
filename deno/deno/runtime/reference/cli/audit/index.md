@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:50:49.503Z"
 content_hash: "1a8cdf69a7aa9d43487eba50f278cdcd275428d4ee8327bcb8d41359516dabd4"
 menu_path: ["deno audit"]
 section_path: []
+nav_prev: {"path": "deno/deno/runtime/reference/cli/approve_scripts/index.md", "title": "deno approve-scripts"}
+nav_next: {"path": "deno/deno/runtime/reference/cli/bench/index.md", "title": "deno bench"}
 ---
+
 On this page
 
 *   [Examples](#examples)
@@ -133,3 +136,4 @@ Only show advisories with severity greater or equal to the one specified.
 `--socket`
 
 Check against socket.dev vulnerability database.
+

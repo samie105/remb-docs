@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:23:28.022Z"
 content_hash: "f8bd73350405c589db5cefd4f18024a24a698ec41bfca6fd5dd2df1bb4658baf"
 menu_path: ["Drizzle with Netlify Edge Functions and Neon Postgres"]
 section_path: []
+nav_prev: {"path": "drizzle/docs/tutorials/drizzle-with-netlify-edge-functions-supabase/index.md", "title": "Drizzle with Netlify Edge Functions and Supabase Database"}
+nav_next: {"path": "drizzle/docs/tutorials/drizzle-with-nile/index.md", "title": "Drizzle with Nile Database"}
 ---
+
 #### Setup Neon Postgres[](#setup-neon-postgres)
 
 Log in to the [Neon Console](https://console.neon.tech/app/projects) and navigate to the Projects section. Select a project or click the `New Project` button to create a new one.
@@ -95,7 +98,7 @@ export const usersTable = pgTable('users_table', {
 
 #### Setup Drizzle config file[](#setup-drizzle-config-file)
 
-**Drizzle config** - a configuration file that is used by [Drizzle Kit](https://orm.drizzle.team/docs/kit-overview) and contains all the information about your database connection, migration folder and schema files.
+**Drizzle config** - a configuration file that is used by [Drizzle Kit](drizzle/docs/kit-overview/index.md) and contains all the information about your database connection, migration folder and schema files.
 
 Create a `drizzle.config.ts` file in the root of your project and add the following content:
 
@@ -125,7 +128,7 @@ IMPORTANT
 
 Push command is good for situations where you need to quickly test new schema designs or changes in a local development environment, allowing for fast iterations without the overhead of managing migration files.
 
-Alternatively, you can use migrations workflow. Read about it here: [Migrations](https://orm.drizzle.team/docs/migrations).
+Alternatively, you can use migrations workflow. Read about it here: [Migrations](drizzle/docs/migrations/index.md).
 
 #### Connect Drizzle ORM to your database[](#connect-drizzle-orm-to-your-database)
 
@@ -206,3 +209,4 @@ netlify deploy --prod
 ```
 
 Finally, you can use URL of the deployed website and navigate to the route you created `(e.g. /user)` to access your edge function.
+

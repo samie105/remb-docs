@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:09:37.349Z"
 content_hash: "21b7989211adeaea4e5b3d8057e594f9ad67a39276e432ca484f4e45e3302b92"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Dynatrace with Redis Cloud","→","Dynatrace with Redis Cloud"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Dynatrace with Redis Cloud","→","Dynatrace with Redis Cloud"]
+nav_prev: {"path": "redis/docs/latest/integrate/datadog-with-redis-enterprise/index.md", "title": "Datadog with Redis Software"}
+nav_next: {"path": "redis/docs/latest/integrate/dynatrace-with-redis-enterprise/index.md", "title": "Dynatrace with Redis Software"}
 ---
+
 # Dynatrace with Redis Cloud
 
 To collect, view, and monitor metrics data from your databases and other cluster components, you can connect Dynatrace to your Redis Cloud cluster using the Redis Dynatrace Integration.
@@ -52,3 +55,4 @@ Dynatrace dashboards can be filtered using the text area. For example, when view
 Certain types of data do not know the name of the database from which they were drawn. The dashboard should have a list of database names and ids; use the id value when filtering input to the dashboard.
 
 ## On this page
+

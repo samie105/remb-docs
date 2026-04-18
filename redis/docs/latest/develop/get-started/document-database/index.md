@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:47:50.797Z"
 content_hash: "393c81bb5a7e5d0065bf76f67a206fd122cd41e43a503738ed338744c5207bdf"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Quick starts","→","Quick starts","→\n      \n        Redis as a document database quick start guide","→","Redis as a document database quick start guide"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Quick starts","→","Quick starts","→\n      \n        Redis as a document database quick start guide","→","Redis as a document database quick start guide"]
+nav_prev: {"path": "redis/docs/latest/operate/rc/databases/create-database/create-free-database/index.md", "title": "Create a free database"}
+nav_next: {"path": "redis/docs/latest/operate/rs/installing-upgrading/quickstarts/docker-quickstart/index.md", "title": "Docker quickstart for Redis Software"}
 ---
+
 # Redis as a document database quick start guide
 
 Understand how to use Redis as a document database
@@ -7756,3 +7759,4 @@ You can learn more about how to use Redis Open Source as a vector database in th
 See the [Get Started with Redis learning path](https://university.redis.io/learningpath/14q8m6gilfwltm) for courses.
 
 ## On this page
+

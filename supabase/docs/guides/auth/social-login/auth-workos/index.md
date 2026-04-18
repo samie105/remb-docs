@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:54:57.000Z"
 content_hash: "73d1f71341485030132020f3c48826d27757fb83abc1681382929ba4da7b4552"
 menu_path: ["Auth","Auth","More","More","More","Social Login (OAuth)","Social Login (OAuth)","WorkOS","WorkOS"]
 section_path: ["Auth","Auth","More","More","More","Social Login (OAuth)","Social Login (OAuth)","WorkOS","WorkOS"]
+nav_prev: {"path": "supabase/docs/guides/auth/social-login/auth-twitch/index.md", "title": "Login with Twitch"}
+nav_next: {"path": "supabase/docs/guides/auth/social-login/auth-twitter/index.md", "title": "Login with X / Twitter"}
 ---
+
 # 
 
 SSO and Social Login with WorkOS
@@ -82,3 +85,4 @@ Within your specified callback URL, you'll exchange the code for a logged-in use
 ## Resources[#](#resources)
 
 *   [WorkOS Documentation](https://workos.com/docs/sso/guide)
+

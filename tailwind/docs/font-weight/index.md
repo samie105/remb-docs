@@ -9,15 +9,9 @@ last_crawled_at: "2026-04-18T16:55:24.361Z"
 content_hash: "52bbeaa99a9b86ba90dc6f85513e8734b5c1f0071f95041a0825cca492146ee6"
 menu_path: ["font-weight"]
 section_path: []
+nav_prev: {"path": "tailwind/docs/font-style/index.md", "title": "font-style"}
+nav_next: {"path": "tailwind/docs/font-stretch/index.md", "title": "font-stretch"}
 ---
-[](/)
-
-[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
-
-1.  Typography
-2.  font-weight
-
-Typography
 
 # font-weight
 
@@ -167,3 +161,4 @@ Make your ideas look awesome, without relying on a designer.
 ](https://www.refactoringui.com/?ref=sidebar)
 
 Copyright © 2026 Tailwind Labs Inc.·[Trademark Policy](/brand)
+

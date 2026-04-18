@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:34:06.933Z"
 content_hash: "eefcee7d8545ea7b651d4c4d336c6c0da5467154bc7e5e34e74cac607a014c6f"
 menu_path: ["Drupal & Astro"]
 section_path: []
+nav_prev: {"path": "astro/en/guides/cms/directus/index.md", "title": "Directus & Astro"}
+nav_next: {"path": "astro/en/guides/cms/flotiq/index.md", "title": "Flotiq & Astro"}
 ---
+
 # Drupal & Astro
 
 [Drupal](https://www.drupal.org/) is an open-source content management tool.
@@ -553,3 +556,4 @@ To deploy your website, visit our [deployment guides](/en/guides/deploy/) and fo
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

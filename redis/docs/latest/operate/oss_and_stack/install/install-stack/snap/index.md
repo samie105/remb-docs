@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:00:31.018Z"
 content_hash: "ecc753e1a57b0d3d6fee02a69b6816cd6315977a27510a2a21419bba661eb065"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Install Redis Open Source","→","Install Redis Open Source","→\n      \n        Install Redis Open Source","→","Install Redis Open Source","→\n      \n        Install Redis Open Source on Linux","→","Install Redis Open Source on Linux"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Install Redis Open Source","→","Install Redis Open Source","→\n      \n        Install Redis Open Source","→","Install Redis Open Source","→\n      \n        Install Redis Open Source on Linux","→","Install Redis Open Source on Linux"]
+nav_prev: {"path": "redis/docs/latest/integrate/google-adk/semantic-caching/index.md", "title": "Semantic caching"}
+nav_next: {"path": "redis/docs/latest/integrate/terraform-provider-for-redis-cloud/index.md", "title": "Terraform provider for Redis Cloud"}
 ---
+
 # Install Redis Open Source on Linux
 
 How to install Redis Open Source using Snap
@@ -44,3 +47,4 @@ PONG
 ```
 
 ## On this page
+

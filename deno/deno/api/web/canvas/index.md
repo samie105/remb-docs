@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:12:18.597Z"
 content_hash: "fde877aaf3f76191628e24cd8a679a0a4d3fe049907ce327337304156837666a"
 menu_path: ["Canvas - Web documentation"]
 section_path: []
+nav_prev: {"path": "deno/deno/api/web/cache/index.md", "title": "Cache - Web documentation"}
+nav_next: {"path": "deno/deno/api/web/crypto/index.md", "title": "Crypto - Web documentation"}
 ---
+
 ### Functions [#](#Functions)
 
 f
@@ -77,3 +80,4 @@ T
 [ResizeQuality](./././~/ResizeQuality "ResizeQuality")
 
 Specifies the algorithm to be used for resizing the input to match the output dimensions. One of `pixelated`, `low` (default), `medium`, or `high`.
+

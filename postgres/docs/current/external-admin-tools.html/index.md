@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:41:19.596Z"
 content_hash: "7384bcf183366ff19e03c77deb9a159a9a66c75556f4a6953e0b1413d3bc6b8f"
 menu_path: ["PostgreSQL: Documentation: 18: H.2. Administration Tools"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/wal-async-commit.html/index.md", "title": "PostgreSQL: Documentation: 18: 28.4.\u00a0Asynchronous Commit"}
+nav_next: {"path": "postgres/docs/current/libpq-control.html/index.md", "title": "PostgreSQL: Documentation: 18: 32.11.\u00a0Control Functions"}
 ---
+
 February 26, 2026: [PostgreSQL 18.3, 17.9, 16.13, 15.17, and 14.22 Released!](/about/news/postgresql-183-179-1613-1517-and-1422-released-3246/)
 
 [Documentation](/docs/ "Documentation") → [PostgreSQL 18](/docs/18/index.html)
@@ -27,3 +30,4 @@ There are several administration tools available for PostgreSQL. The most popula
 ## Submit correction
 
 If you see anything in the documentation that is not correct, does not match your experience with the particular feature or requires further clarification, please use [this form](/account/comments/new/18/external-admin-tools.html/) to report a documentation issue.
+

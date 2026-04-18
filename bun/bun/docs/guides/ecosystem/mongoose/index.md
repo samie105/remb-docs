@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:44:34.699Z"
 content_hash: "f3b6613d030d5c96de7ae598ff7e99596f804fc36b599eb93063a85f0c2cbb0d"
 menu_path: ["Read and write data to MongoDB using Mongoose and Bun"]
 section_path: []
+nav_prev: {"path": "bun/bun/docs/guides/ecosystem/gel/index.md", "title": "Use Gel with Bun"}
+nav_next: {"path": "bun/bun/docs/guides/ecosystem/hono/index.md", "title": "Build an HTTP server using Hono and Bun"}
 ---
+
 MongoDB and Mongoose work out of the box with Bun. This guide assumes you’ve already installed MongoDB and are running it as background process/service on your development machine. Follow [this guide](https://www.mongodb.com/docs/manual/installation/) for details.
 
 * * *
@@ -106,3 +109,4 @@ Moo!
 * * *
 
 This is an introduction to using Mongoose with TypeScript and Bun. As you build your application, refer to the official [MongoDB](https://www.mongodb.com/docs) and [Mongoose](https://mongoosejs.com/docs/) sites for complete documentation.
+

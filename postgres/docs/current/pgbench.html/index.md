@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:48:19.924Z"
 content_hash: "216f61370032ec073bdf7c81a86fa1470b58c11192ebdc02a6b24d58552be8dc"
 menu_path: ["PostgreSQL: Documentation: 18: pgbench"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/ddl-alter.html/index.md", "title": "PostgreSQL: Documentation: 18: 5.7.\u00a0Modifying Tables"}
+nav_next: {"path": "postgres/docs/current/release-18.html/index.md", "title": "PostgreSQL: Documentation: 18: E.4.\u00a0Release 18"}
 ---
+
 ## Description
 
 pgbench is a simple program for running benchmark tests on PostgreSQL. It runs the same sequence of SQL commands over and over, possibly in multiple concurrent database sessions, and then calculates the average transaction rate (transactions per second). By default, pgbench tests a scenario that is loosely based on TPC-B, involving five `SELECT`, `UPDATE`, and `INSERT` commands per transaction. However, it is easy to test other cases by writing your own transaction script files.
@@ -480,7 +483,7 @@ SELECT 4 AS four \\; SELECT 5 AS five \\aset
 `\else`  
 `\endif` [#](#PGBENCH-METACOMMAND-IF-ELSE)
 
-This group of commands implements nestable conditional blocks, similarly to `psql`'s [`\if` _`expression`_](https://www.postgresql.org/docs/current/app-psql.html#PSQL-METACOMMAND-IF). Conditional expressions are identical to those with `\set`, with non-zero values interpreted as true.
+This group of commands implements nestable conditional blocks, similarly to `psql`'s [`\if` _`expression`_](postgres/docs/current/app-psql.html/index.md#PSQL-METACOMMAND-IF). Conditional expressions are identical to those with `\set`, with non-zero values interpreted as true.
 
 ``\set _`varname`_ _`expression`_`` [#](#PGBENCH-METACOMMAND-SET)
 
@@ -535,7 +538,7 @@ This group of commands implements pipelining of SQL statements. A pipeline must 
 
 ### Built-in Operators
 
-The arithmetic, bitwise, comparison and logical operators listed in [Table 302](https://www.postgresql.org/docs/current/pgbench.html#PGBENCH-OPERATORS "Table 302. pgbench Operators") are built into pgbench and may be used in expressions appearing in [`\set`](https://www.postgresql.org/docs/current/pgbench.html#PGBENCH-METACOMMAND-SET). The operators are listed in increasing precedence order. Except as noted, operators taking two numeric inputs will produce a double value if either input is double, otherwise they produce an integer result.
+The arithmetic, bitwise, comparison and logical operators listed in [Table 302](https://www.postgresql.org/docs/current/pgbench.html#PGBENCH-OPERATORS "Table 302. pgbench Operators") are built into pgbench and may be used in expressions appearing in [`\set`](postgres/docs/current/pgbench.html/index.md#PGBENCH-METACOMMAND-SET). The operators are listed in increasing precedence order. Except as noted, operators taking two numeric inputs will produce a double value if either input is double, otherwise they produce an integer result.
 
 **Table 302. pgbench Operators**
 
@@ -693,7 +696,7 @@ Negation
 
 ### Built-In Functions
 
-The functions listed in [Table 303](https://www.postgresql.org/docs/current/pgbench.html#PGBENCH-FUNCTIONS "Table 303. pgbench Functions") are built into pgbench and may be used in expressions appearing in [`\set`](https://www.postgresql.org/docs/current/pgbench.html#PGBENCH-METACOMMAND-SET).
+The functions listed in [Table 303](https://www.postgresql.org/docs/current/pgbench.html#PGBENCH-FUNCTIONS "Table 303. pgbench Functions") are built into pgbench and may be used in expressions appearing in [`\set`](postgres/docs/current/pgbench.html/index.md#PGBENCH-METACOMMAND-SET).
 
 **Table 303. pgbench Functions**
 
@@ -1190,3 +1193,4 @@ A limitation of pgbench is that it can itself become the bottleneck when trying 
 ### Security
 
 If untrusted users have access to a database that has not adopted a [secure schema usage pattern](https://www.postgresql.org/docs/current/ddl-schemas.html#DDL-SCHEMAS-PATTERNS "5.10.6. Usage Patterns"), do not run pgbench in that database. pgbench uses unqualified names and does not manipulate the search path.
+

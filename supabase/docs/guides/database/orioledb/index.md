@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:41:40.831Z"
 content_hash: "4a0685b82950863f786566a07fc0548752fd403e70f46292baf97d92600d021d"
 menu_path: ["Database","Database","OrioleDB","OrioleDB","Overview","Overview"]
 section_path: ["Database","Database","OrioleDB","OrioleDB","Overview","Overview"]
+nav_prev: {"path": "supabase/docs/guides/database/migrating-to-pg-partman/index.md", "title": "Migrate from TimescaleDB to pg_partman"}
+nav_next: {"path": "supabase/docs/guides/database/overview/index.md", "title": "Database"}
 ---
+
 # 
 
 OrioleDB Overview
@@ -88,3 +91,4 @@ You can see the execution plan using standard `EXPLAIN` statement.
 
 *   [Official OrioleDB documentation](https://www.orioledb.com/docs)
 *   [OrioleDB GitHub repository](https://github.com/orioledb/orioledb)
+

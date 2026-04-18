@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:47:55.966Z"
 content_hash: "e0ead273204831b1a51272bf70f71d21aa1385f6c24b2fe337d225dca45afa1a"
 menu_path: ["Platform","Platform","Platform Configuration","Platform Configuration","Network Restrictions","Network Restrictions"]
 section_path: ["Platform","Platform","Platform Configuration","Platform Configuration","Network Restrictions","Network Restrictions"]
+nav_prev: {"path": "supabase/docs/guides/platform/permissions/index.md", "title": "Permissions"}
+nav_next: {"path": "supabase/docs/guides/platform/performance/index.md", "title": "Performance Tuning"}
 ---
+
 # 
 
 Network Restrictions
@@ -79,3 +82,4 @@ To remove all restrictions on your project, you can use the `update` subcommand 
 
 *   The current iteration of Network Restrictions applies to connections to Postgres and the database pooler; it doesn't currently apply to APIs offered over HTTPS (e.g., PostgREST, Storage, and Auth). This includes using Supabase client libraries like [supabase-js](/docs/reference/javascript).
 *   If network restrictions are enabled, direct access to your database from Edge Functions will always be blocked. Using the Supabase client library [supabase-js](/docs/reference/javascript) is recommended to connect to a database with network restrictions from Edge Functions.
+

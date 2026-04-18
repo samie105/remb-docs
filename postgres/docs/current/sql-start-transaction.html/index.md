@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:40:57.803Z"
 content_hash: "cc857a1bd99a6151a2e6fc2ce6a377cac83b9c80130dba1dfb60520430b55c39"
 menu_path: ["PostgreSQL: Documentation: 18: START TRANSACTION"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/xfunc.html/index.md", "title": "PostgreSQL: Documentation: 18: 36.3.\u00a0User-Defined Functions"}
+nav_next: {"path": "postgres/docs/current/sepgsql.html/index.md", "title": "PostgreSQL: Documentation: 18: F.40.\u00a0sepgsql \u2014 SELinux-, label-based mandatory access control (MAC) security module"}
 ---
+
 START TRANSACTION — start a transaction block
 
 ## Synopsis
@@ -39,3 +42,4 @@ The `DEFERRABLE` _`transaction_mode`_ is a PostgreSQL language extension.
 The SQL standard requires commas between successive _`transaction_modes`_, but for historical reasons PostgreSQL allows the commas to be omitted.
 
 See also the compatibility section of [SET TRANSACTION](https://www.postgresql.org/docs/current/sql-set-transaction.html "SET TRANSACTION").
+

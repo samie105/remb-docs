@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:58:25.188Z"
 content_hash: "2ff8d370cb37e0971257040756a17352c4b85a9a62ac883b509e4afc6a162ab5"
 menu_path: ["Environment variables"]
 section_path: []
+nav_prev: {"path": "deno/deno/runtime/reference/continuous_integration/index.md", "title": "Continuous integration"}
+nav_next: {"path": "deno/deno/runtime/reference/vscode/index.md", "title": "Deno & Visual Studio Code"}
 ---
+
 On this page
 
 *   [Built-in Deno.env method](#built-in-deno.env-method)
@@ -220,3 +223,4 @@ Set to disable color
 NO\_PROXY
 
 Comma-separated list of hosts which do not use a proxy (module downloads, fetch)
+

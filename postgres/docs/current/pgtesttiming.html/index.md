@@ -9,65 +9,10 @@ last_crawled_at: "2026-04-18T16:33:08.344Z"
 content_hash: "2187db8e792a3cfcd4741a8ffe7a139e5d335db7e40385ac8c924e586e0bedf3"
 menu_path: ["PostgreSQL: Documentation: 18: pg_test_timing"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/runtime-config-preset.html/index.md", "title": "PostgreSQL: Documentation: 18: 19.15.\u00a0Preset Options"}
+nav_next: {"path": "postgres/docs/current/sql-dropview.html/index.md", "title": "PostgreSQL: Documentation: 18: DROP VIEW"}
 ---
-## Description
 
-pg\_test\_timing is a tool to measure the timing overhead on your system and confirm that the system time never moves backwards. Systems that are slow to collect timing data can give less accurate `EXPLAIN ANALYZE` results.
-
-## Options
-
-pg\_test\_timing accepts the following command-line options:
-
-``-d _`duration`_``  
-``--duration=_`duration`_``
-
-Specifies the test duration, in seconds. Longer durations give slightly better accuracy, and are more likely to discover problems with the system clock moving backwards. The default test duration is 3 seconds.
-
-`-V`  
-`--version`
-
-Print the pg\_test\_timing version and exit.
-
-`-?`  
-`--help`
-
-Show help about pg\_test\_timing command line arguments, and exit.
-
-## Usage
-
-### Interpreting Results
-
-Good results will show most (>90%) individual timing calls take less than one microsecond. Average per loop overhead will be even lower, below 100 nanoseconds. This example from an Intel i7-860 system using a TSC clock source shows excellent performance:
-
-Testing timing overhead for 3 seconds.
-Per loop time including overhead: 35.96 ns
-Histogram of timing durations:
-  < us   % of total      count
-     1     96.40465   80435604
-     2      3.59518    2999652
-     4      0.00015        126
-     8      0.00002         13
-    16      0.00000          2
-
-Note that different units are used for the per loop time than the histogram. The loop can have resolution within a few nanoseconds (ns), while the individual timing calls can only resolve down to one microsecond (us).
-
-### Measuring Executor Timing Overhead
-
-When the query executor is running a statement using `EXPLAIN ANALYZE`, individual operations are timed as well as showing a summary. The overhead of your system can be checked by counting rows with the psql program:
-
-CREATE TABLE t AS SELECT \* FROM generate\_series(1,100000);
-\\timing
-SELECT COUNT(\*) FROM t;
-EXPLAIN ANALYZE SELECT COUNT(\*) FROM t;
-
-The i7-860 system measured runs the count query in 9.8 ms while the `EXPLAIN ANALYZE` version takes 16.6 ms, each processing just over 100,000 rows. That 6.8 ms difference means the timing overhead per row is 68 ns, about twice what pg\_test\_timing estimated it would be. Even that relatively small amount of overhead is making the fully timed count statement take almost 70% longer. On more substantial queries, the timing overhead would be less problematic.
-
-### Changing Time Sources
-
-On some newer Linux systems, it's possible to change the clock source used to collect timing data at any time. A second example shows the slowdown possible from switching to the slower acpi\_pm time source, on the same system used for the fast results above:
-
-\# cat /sys/devices/system/clocksource/clocksource0/available\_clocksource
-tsc hpet acpi\_pm
 # echo acpi\_pm > /sys/devices/system/clocksource/clocksource0/current\_clocksource
 # pg\_test\_timing
 Per loop time including overhead: 722.92 ns
@@ -125,3 +70,4 @@ The High Precision Event Timer (HPET) is the preferred timer on systems where it
 Advanced Configuration and Power Interface (ACPI) provides a Power Management (PM) Timer, which Linux refers to as the acpi\_pm. The clock derived from acpi\_pm will at best provide 300 nanosecond resolution.
 
 Timers used on older PC hardware include the 8254 Programmable Interval Timer (PIT), the real-time clock (RTC), the Advanced Programmable Interrupt Controller (APIC) timer, and the Cyclone timer. These timers aim for millisecond resolution.
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:36:45.533Z"
 content_hash: "280cbd4e95ec704a6e2f4593d43fee904ed5bd2d05034474df80d5836d0aa7f4"
 menu_path: ["PostgreSQL: Documentation: 18: LOCK"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/functions-string.html/index.md", "title": "PostgreSQL: Documentation: 18: 9.4.\u00a0String Functions and Operators"}
+nav_next: {"path": "postgres/docs/current/sql-set-transaction.html/index.md", "title": "PostgreSQL: Documentation: 18: SET TRANSACTION"}
 ---
+
 LOCK — lock a table
 
 ## Synopsis
@@ -90,3 +93,4 @@ COMMIT WORK;
 There is no `LOCK TABLE` in the SQL standard, which instead uses `SET TRANSACTION` to specify concurrency levels on transactions. PostgreSQL supports that too; see [SET TRANSACTION](https://www.postgresql.org/docs/current/sql-set-transaction.html "SET TRANSACTION") for details.
 
 Except for `ACCESS SHARE`, `ACCESS EXCLUSIVE`, and `SHARE UPDATE EXCLUSIVE` lock modes, the PostgreSQL lock modes and the `LOCK TABLE` syntax are compatible with those present in Oracle.
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:50:31.214Z"
 content_hash: "75a78a0563094b6ba87cfb4fcc0e9c6f52202d03ac1321e67ced12fa9f6ad969"
 menu_path: ["Self-Hosting","Self-Hosting","How-to Guides","How-to Guides","Restore Project from Platform","Restore Project from Platform"]
 section_path: ["Self-Hosting","Self-Hosting","How-to Guides","How-to Guides","Restore Project from Platform","Restore Project from Platform"]
+nav_prev: {"path": "supabase/docs/guides/self-hosting/postgres-upgrade-17/index.md", "title": "Upgrade to Postgres 17"}
+nav_next: {"path": "supabase/docs/guides/self-hosting/self-hosted-auth-keys/index.md", "title": "New API Keys and Asymmetric Authentication"}
 ---
+
 # 
 
 Restore a Platform Project to Self-Hosted
@@ -194,3 +197,4 @@ If you created custom database roles with the `LOGIN` attribute on your platform
 
 *   [Backup and Restore using the CLI](/docs/guides/platform/migrating-within-supabase/backup-restore)
 *   [Restore Dashboard backup](/docs/guides/platform/migrating-within-supabase/dashboard-restore)
+

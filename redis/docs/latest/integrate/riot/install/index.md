@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:48:45.352Z"
 content_hash: "3daeeea8bf1280e2cd4447ddc33cd1c63ade761d3282fc68f944b6e91934f20b"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        RIOT-X","→","RIOT-X","→\n      \n        Install","→","Install"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        RIOT-X","→","RIOT-X","→\n      \n        Install","→","Install"]
+nav_prev: {"path": "redis/docs/latest/develop/clients/nodejs/queryjson/index.md", "title": "Index and query documents"}
+nav_next: {"path": "redis/docs/latest/operate/redisinsight/install/install-on-docker/index.md", "title": "Install on Docker"}
 ---
+
 # Install
 
 Install RIOT-X on macOS, Linux, Windows, and Docker
@@ -42,3 +45,4 @@ Download the pre-compiled binary from [RIOT-X Releases](https://github.com/redis
 Full installation documentation is available [here](https://redis.github.io/riotx/quick-start/install.html).
 
 ## On this page
+

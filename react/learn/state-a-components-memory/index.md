@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:38:41.538Z"
 content_hash: "e609b96425420f29d3e04d299443d1a42a94545e3ce28001e0ca6008eabe9791"
 menu_path: ["State: A Component's Memory"]
 section_path: []
+nav_prev: {"path": "react/learn/responding-to-events/index.md", "title": "Responding to Events"}
+nav_next: {"path": "react/learn/render-and-commit/index.md", "title": "Render and Commit"}
 ---
+
 let componentHooks = \[\];
 let currentHookIndex = 0;
 
@@ -171,3 +174,4 @@ let sculptureList = \[{
 }\];
 
 updateDOM();
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:56:25.666Z"
 content_hash: "124960db67314ccffce67daa3e784314efb7531d85d99173b17e865aa40f8383"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis data types","→","Redis data types","→\n      \n        JSON","→","JSON","→\n      \n        Path","→","Path"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis data types","→","Redis data types","→\n      \n        JSON","→","JSON","→\n      \n        Path","→","Path"]
+nav_prev: {"path": "redis/docs/latest/integrate/redis-data-integration/data-pipelines/pipeline-config/index.md", "title": "Pipeline configuration file"}
+nav_next: {"path": "redis/docs/latest/integrate/redis-data-integration/data-pipelines/prepare-dbs/aws-aurora-rds/aws-rds-sqlserver/index.md", "title": "Prepare Microsoft SQL Server on AWS RDS for RDI"}
 ---
+
 # Path
 
 Access specific elements within a JSON document
@@ -35508,3 +35511,4 @@ This means that the overall time complexity of searching a path is _O(N\*M)_, wh
 † While this is acceptable for objects where N is small, access can be optimized for larger objects.
 
 ## On this page
+

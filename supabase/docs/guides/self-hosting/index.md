@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:32:44.831Z"
 content_hash: "f7bd129ce45e179bc266aa7fbac0615c4e6bc715ef8aee3d63aac8478ca57e8b"
 menu_path: ["Self-Hosting","Self-Hosting","Overview","Overview"]
 section_path: ["Self-Hosting","Self-Hosting","Overview","Overview"]
+nav_prev: {"path": "supabase/docs/guides/resources/index.md", "title": "Resources"}
+nav_next: {"path": "supabase/docs/guides/storage/index.md", "title": "Storage"}
 ---
+
 # 
 
 Self-Hosting
@@ -104,3 +107,4 @@ Share your self-hosting experience:
 ### Enterprise self-hosting[#](#enterprise-self-hosting)
 
 If you're an enterprise using self-hosted Supabase, we'd love to hear from you. Reach out to our [Growth Team](https://forms.supabase.com/enterprise) to discuss your use case, share feedback, or explore design partnership opportunities.
+

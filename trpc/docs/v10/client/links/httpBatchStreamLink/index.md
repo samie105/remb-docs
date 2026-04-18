@@ -9,20 +9,23 @@ last_crawled_at: "2026-04-18T16:32:26.708Z"
 content_hash: "82cf1adcef39087c508f35d081339e2a5490b06f447cfe8a07906c73cd3c7b4b"
 menu_path: ["HTTP Batch Stream Link"]
 section_path: []
+nav_prev: {"path": "trpc/docs/v10/client/links/httpBatchLink/index.md", "title": "HTTP Batch Link"}
+nav_next: {"path": "trpc/docs/v10/client/links/httpLink/index.md", "title": "HTTP Link"}
 ---
-`unstable_httpBatchStreamLink` is a [**terminating link**](https://trpc.io/docs/v10/client/links#the-terminating-link) that batches an array of individual tRPC operations into a single HTTP request that's sent to a single tRPC procedure (equivalent to [`httpBatchLink`](https://trpc.io/docs/v10/client/links/httpBatchLink)), but doesn't wait for all the responses of the batch to be ready and streams the responses as soon as any data is available.
+
+`unstable_httpBatchStreamLink` is a [**terminating link**](trpc/docs/v10/client/links/index.md#the-terminating-link) that batches an array of individual tRPC operations into a single HTTP request that's sent to a single tRPC procedure (equivalent to [`httpBatchLink`](trpc/docs/v10/client/links/httpBatchLink/index.md)), but doesn't wait for all the responses of the batch to be ready and streams the responses as soon as any data is available.
 
 info
 
-We have prefixed this as `unstable_` as it's a new API, but you're safe to use it! [Read more](https://trpc.io/docs/faq#unstable).
+We have prefixed this as `unstable_` as it's a new API, but you're safe to use it! [Read more](trpc/docs/faq/index.md#unstable).
 
 ## Usage[​](#usage "Direct link to Usage")
 
-> All usage and options are identical to [`httpBatchLink`](https://trpc.io/docs/v10/client/links/httpBatchLink).
+> All usage and options are identical to [`httpBatchLink`](trpc/docs/v10/client/links/httpBatchLink/index.md).
 
 note
 
-If you require the ability to change/set response headers (which includes cookies) from within your procedures, make sure to use `httpBatchLink` instead! This is due to the fact that `unstable_httpBatchStreamLink` does not support setting headers once the stream has begun. [Read more](https://trpc.io/docs/client/links/httpBatchLink).
+If you require the ability to change/set response headers (which includes cookies) from within your procedures, make sure to use `httpBatchLink` instead! This is due to the fact that `unstable_httpBatchStreamLink` does not support setting headers once the stream has begun. [Read more](trpc/docs/client/links/httpBatchLink/index.md).
 
 You can import and add the `httpBatchStreamLink` to the `links` array as such:
 
@@ -142,3 +145,4 @@ ts
 ## Reference[​](#reference "Direct link to Reference")
 
 You can check out the source code for this link on [GitHub.](https://github.com/trpc/trpc/blob/main/packages/client/src/links/httpBatchStreamLink.ts)
+

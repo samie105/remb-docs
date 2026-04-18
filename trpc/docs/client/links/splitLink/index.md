@@ -9,10 +9,13 @@ last_crawled_at: "2026-04-18T16:45:17.892Z"
 content_hash: "db70f8604b45fea1775282c21808c4e814aebeab594e5e3f09ec400784a892c3"
 menu_path: ["Split Link"]
 section_path: []
+nav_prev: {"path": "trpc/docs/client/links/loggerLink/index.md", "title": "Logger Link"}
+nav_next: {"path": "trpc/docs/client/links/retryLink/index.md", "title": "Retry Link"}
 ---
+
 `splitLink` is a link that allows you to branch your link chain's execution depending on a given condition. Both the `true` and `false` branches are required. You can provide just one link, or multiple links per branch via an array.
 
-It's important to note that when you provide links for `splitLink` to execute, `splitLink` will create an entirely new link chain based on the links you passed. Therefore, you need to use a [**terminating link**](https://trpc.io/docs/client/links#the-terminating-link) if you only provide one link or add the terminating link at the end of the array if you provide multiple links to be executed on a branch. Here's a visual representation of how `splitLink` works:
+It's important to note that when you provide links for `splitLink` to execute, `splitLink` will create an entirely new link chain based on the links you passed. Therefore, you need to use a [**terminating link**](trpc/docs/client/links/index.md#the-terminating-link) if you only provide one link or add the terminating link at the end of the array if you provide multiple links to be executed on a branch. Here's a visual representation of how `splitLink` works:
 
 ## Usage Example[​](#usage-example "Direct link to Usage Example")
 
@@ -157,3 +160,4 @@ ts
 ## Reference[​](#reference "Direct link to Reference")
 
 You can check out the source code for this link on [GitHub.](https://github.com/trpc/trpc/blob/main/packages/client/src/links/splitLink.ts)
+

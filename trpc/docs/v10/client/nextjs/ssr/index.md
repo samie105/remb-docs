@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:33:20.222Z"
 content_hash: "7b166c246be81c79962b8d190906bfa292c99677d8756a59fccb574a08b8f4fd"
 menu_path: ["Server-Side Rendering"]
 section_path: []
+nav_prev: {"path": "trpc/docs/v10/client/nextjs/ssg/index.md", "title": "Static Site Generation"}
+nav_next: {"path": "trpc/docs/v10/client/nextjs/starter-projects/index.md", "title": "Starter Projects"}
 ---
+
 To enable SSR just set `ssr: true` in your `createTRPCNext` config callback.
 
 info
@@ -17,11 +20,11 @@ info
 When you enable SSR, tRPC will use `getInitialProps` to prefetch all queries on the server. This results in problems [like this](https://github.com/trpc/trpc/issues/596) when you use `getServerSideProps`, and solving it is out of our hands.
 
    
-Alternatively, you can leave SSR disabled (the default) and use [Server-Side Helpers](https://trpc.io/docs/v10/client/nextjs/server-side-helpers) to prefetch queries in `getStaticProps` or `getServerSideProps`.
+Alternatively, you can leave SSR disabled (the default) and use [Server-Side Helpers](trpc/docs/v10/client/nextjs/server-side-helpers/index.md) to prefetch queries in `getStaticProps` or `getServerSideProps`.
 
 In order to execute queries properly during the server-side render step we need to add extra logic inside our `config`:
 
-Additionally, consider [`Response Caching`](https://trpc.io/docs/v10/server/caching).
+Additionally, consider [`Response Caching`](trpc/docs/v10/server/caching/index.md).
 
 utils/trpc.ts
 
@@ -241,4 +244,5 @@ If you don't remove the `connection` header, the data fetching will fail with `T
 
 ### Q: Why do I still see network requests being made in the Network tab?[​](#q-why-do-i-still-see-network-requests-being-made-in-the-network-tab "Direct link to Q: Why do I still see network requests being made in the Network tab?")
 
-By default, `@tanstack/react-query` (which we use for the data fetching hooks) refetches data on mount and window refocus, even if it's already got initial data via SSR. This ensures data is always up-to-date. See the page on [SSG](https://trpc.io/docs/v10/client/nextjs/ssg) if you'd like to disable this behavior.
+By default, `@tanstack/react-query` (which we use for the data fetching hooks) refetches data on mount and window refocus, even if it's already got initial data via SSR. This ensures data is always up-to-date. See the page on [SSG](trpc/docs/v10/client/nextjs/ssg/index.md) if you'd like to disable this behavior.
+

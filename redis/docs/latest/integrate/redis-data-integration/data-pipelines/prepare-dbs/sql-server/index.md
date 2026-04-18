@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:51:16.130Z"
 content_hash: "36ff0756f9811491c10e4c6f29cb8852af8a27fe99104d2eaa7438b66536b4d5"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Redis Data Integration","→","Redis Data Integration","→\n      \n        Data pipelines","→","Data pipelines","→\n      \n        Prepare source databases","→","Prepare source databases","→\n      \n        Prepare SQL Server for RDI","→","Prepare SQL Server for RDI"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Redis Data Integration","→","Redis Data Integration","→\n      \n        Data pipelines","→","Data pipelines","→\n      \n        Prepare source databases","→","Prepare source databases","→\n      \n        Prepare SQL Server for RDI","→","Prepare SQL Server for RDI"]
+nav_prev: {"path": "redis/docs/latest/develop/ai/search-and-query/vectors/svs-compression/index.md", "title": "Vector quantization and compression"}
+nav_next: {"path": "redis/docs/latest/develop/ai/redisvl/user_guide/hybrid_queries/index.md", "title": "Querying with RedisVL"}
 ---
+
 # Prepare SQL Server for RDI
 
 Prepare SQL Server databases to work with RDI
@@ -211,3 +214,4 @@ Note:
 RDI will _not_ correctly capture changes that happen in the time gap between changing the source schema (step 1 above) and updating the value of `@capture_instance` (step 2). Try to keep the gap as short as possible or perform the update at a time when you expect few changes to the data.
 
 ## On this page
+

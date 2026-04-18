@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:56:47.329Z"
 content_hash: "03492ac409f9427fe4065426eacbc4b8b4e261602be5817fbaf8fce140904d65"
 menu_path: ["Database","Database","Debugging","Debugging","Timeouts","Timeouts"]
 section_path: ["Database","Database","Debugging","Debugging","Timeouts","Timeouts"]
+nav_prev: {"path": "supabase/docs/guides/database/postgres/row-level-security/index.md", "title": "Row Level Security"}
+nav_next: {"path": "supabase/docs/guides/database/postgres/which-version-of-postgres/index.md", "title": "Print Postgres version"}
 ---
+
 # 
 
 Timeouts
@@ -167,3 +170,4 @@ Filter by the `parsed.user_name` field to only retrieve logs made by specific us
 ```
 1-- find events based on role/server2... query3where4  -- find events from the relevant role5  parsed.user_name = '<ROLE>'
 ```
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:06:25.811Z"
 content_hash: "100db2d0e2c2ddab646a74cb42e10ef505527a9696dca63a1ef7d0106b487170"
 menu_path: ["@std/toml"]
 section_path: []
+nav_prev: {"path": "deno/deno/runtime/reference/std/text/index.md", "title": "@std/text"}
+nav_next: {"path": "deno/deno/runtime/reference/std/ulid/index.md", "title": "@std/ulid"}
 ---
+
 On this page
 
 *   [Overview](#overview)
@@ -124,3 +127,4 @@ deno add jsr:@std/toml
 ```
 
 [See all symbols in @std/toml on](https://jsr.io/@std/toml/doc)
+

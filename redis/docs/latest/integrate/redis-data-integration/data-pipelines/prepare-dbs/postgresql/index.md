@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:51:00.059Z"
 content_hash: "4565c76e028bf465f8fc37de394935eb4394e707348eb7c0007ccd58338e3d26"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Redis Data Integration","→","Redis Data Integration","→\n      \n        Data pipelines","→","Data pipelines","→\n      \n        Prepare source databases","→","Prepare source databases","→\n      \n        Prepare PostgreSQL/Supabase for RDI","→","Prepare PostgreSQL/Supabase for RDI"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Redis Data Integration","→","Redis Data Integration","→\n      \n        Data pipelines","→","Data pipelines","→\n      \n        Prepare source databases","→","Prepare source databases","→\n      \n        Prepare PostgreSQL/Supabase for RDI","→","Prepare PostgreSQL/Supabase for RDI"]
+nav_prev: {"path": "redis/docs/latest/integrate/redis-data-integration/data-pipelines/prepare-dbs/spanner/index.md", "title": "Prepare Spanner for RDI"}
+nav_next: {"path": "redis/docs/latest/operate/rc/databases/rdi/setup/index.md", "title": "Prepare source database"}
 ---
+
 # Prepare PostgreSQL/Supabase for RDI
 
 Prepare PostgreSQL databases (including Supabase) to work with RDI
@@ -159,3 +162,4 @@ Find out more from the PostgreSQL pages about [`pg_hba.conf`](https://www.postgr
 You can use the Debezium PostgreSQL connector with a standalone PostgreSQL server or with a cluster of servers. For versions 12 and below, PostgreSQL supports logical replication slots on only primary servers. This means that Debezium can only connect to a primary server for CDC and the connection will stop if this server fails. If the same server is promoted to primary when service resumes then you can simply restart the Debezium connector. However, if a different server is promoted to primary, then you must reconfigure Debezium to use the new server before restarting. Also, make sure the new server has the correct plug-in and configuration for Debezium.
 
 ## On this page
+

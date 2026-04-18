@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:52:56.984Z"
 content_hash: "225eb4d02546088cc209c26390c3e70964d541cfd05bb759793ccfa8032711b5"
 menu_path: ["PostgreSQL: Documentation: 18: vacuumlo"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/infoschema-sequences.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.47.\u00a0sequences"}
+nav_next: {"path": "postgres/docs/current/view-pg-aios.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.2.\u00a0pg_aios"}
 ---
+
 vacuumlo — remove orphaned large objects from a PostgreSQL database
 
 ## Synopsis
@@ -97,3 +100,4 @@ The environment variable `PG_COLOR` specifies whether to use color in diagnostic
 ## Notes
 
 vacuumlo works by the following method: First, vacuumlo builds a temporary table which contains all of the OIDs of the large objects in the selected database. It then scans through all columns in the database that are of type `oid` or `lo`, and removes matching entries from the temporary table. (Note: Only types with these names are considered; in particular, domains over them are not considered.) The remaining entries in the temporary table identify orphaned LOs. These are removed.
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:35:41.651Z"
 content_hash: "edc77e50fa8e6bf7ef2f4df98f9762e10b6df6b6b51976386843ed4ec89c2311"
 menu_path: ["Strapi & Astro"]
 section_path: []
+nav_prev: {"path": "astro/en/guides/cms/storyblok/index.md", "title": "Storyblok & Astro"}
+nav_next: {"path": "astro/en/guides/cms/studiocms/index.md", "title": "StudioCMS & Astro"}
 ---
+
 # Strapi & Astro
 
 [Strapi](https://strapi.io/) is an open-source, customizable, headless CMS.
@@ -455,3 +458,4 @@ Follow [the Strapi webhooks guide](https://strapi.io/blog/webhooks) to create a 
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

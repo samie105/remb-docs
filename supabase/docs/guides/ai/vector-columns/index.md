@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:34:51.666Z"
 content_hash: "0aec8458d64e65d08e883611180ea8787be10ddc4821e9facb25544593377290"
 menu_path: ["AI & Vectors","AI & Vectors","Learn","Learn","Vector columns","Vector columns"]
 section_path: ["AI & Vectors","AI & Vectors","Learn","Learn","Vector columns","Vector columns"]
+nav_prev: {"path": "supabase/docs/guides/ai/vector-indexes/index.md", "title": "Vector indexes"}
+nav_next: {"path": "supabase/docs/guides/api/api-keys/index.md", "title": "Understanding API keys"}
 ---
+
 # 
 
 Vector columns
@@ -99,3 +102,4 @@ Vectors and embeddings can be used for much more than search. Learn more about e
 ### Indexes[#](#indexes)
 
 Once your vector table starts to grow, you will likely want to add an index to speed up queries. See [Vector indexes](/docs/guides/ai/vector-indexes) to learn how vector indexes work and how to create them.
+

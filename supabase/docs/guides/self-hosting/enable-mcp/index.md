@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:50:22.605Z"
 content_hash: "cb2146d12538a465abf3ac4de8ac2c59b5e431d21c8ad6f20251bcc7a26f9ac6"
 menu_path: ["Self-Hosting","Self-Hosting","How-to Guides","How-to Guides","Enable MCP server","Enable MCP server"]
 section_path: ["Self-Hosting","Self-Hosting","How-to Guides","How-to Guides","Enable MCP server","Enable MCP server"]
+nav_prev: {"path": "supabase/docs/guides/self-hosting/custom-email-templates/index.md", "title": "Custom Email Templates"}
+nav_next: {"path": "supabase/docs/guides/self-hosting/docker/index.md", "title": "Self-Hosting with Docker"}
 ---
+
 # 
 
 Enabling MCP Server Access
@@ -102,3 +105,4 @@ If you are unable to connect to the MCP server:
 2.  Confirm the Docker bridge gateway IP is correctly added in `./volumes/api/kong.yml`
 3.  Check Kong's logs for errors: `docker compose logs kong`
 4.  Make sure your SSH tunnel is active
+

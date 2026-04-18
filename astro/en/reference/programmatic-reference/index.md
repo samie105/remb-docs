@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:47:52.507Z"
 content_hash: "533c80df532b3f70e6bda694e491de60bdbcee2bf30616e703774f2c35831b37"
 menu_path: ["Programmatic Astro API (experimental)"]
 section_path: []
+nav_prev: {"path": "astro/en/reference/container-reference/index.md", "title": "Astro Container API (experimental)"}
+nav_next: {"path": "astro/en/reference/experimental-flags/index.md", "title": "Configuring experimental flags"}
 ---
+
 # Programmatic Astro API (experimental)
 
 If you need more control when running Astro, the `"astro"` package exports APIs to programmatically run the CLI commands. There are also two `astro:config` helpers that can programmatically [validate](#validateconfig) and [merge](#mergeconfig) configurations.
@@ -314,3 +317,4 @@ The returned `Promise` resolves when the close request has been sent. This does 
 Returns a `Promise` that will resolve once the server is closed and reject if an error happens on the server.
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:46:17.050Z"
 content_hash: "cf0ee18e08915c144bb4d23ab28380abb406bfd81ae020b368c67852a0a49633"
 menu_path: ["OpenTelemetry tracing"]
 section_path: []
+nav_prev: {"path": "prisma/docs/orm/prisma-client/observability-and-logging/logging/index.md", "title": "Logging"}
+nav_next: {"path": "prisma/docs/orm/prisma-client/observability-and-logging/sql-comments/index.md", "title": "SQL comments"}
 ---
+
 Tracing provides a detailed log of the activity that Prisma Client carries out, at an operation level, including the time taken to execute each query. It helps you analyze your application's performance and identify bottlenecks. Tracing is fully compliant with [OpenTelemetry](https://opentelemetry.io/), so you can use it as part of your end-to-end application tracing system.
 
 When you enable tracing, Prisma Client outputs the following:
@@ -435,3 +438,4 @@ import { PrismaClient } from "../prisma/generated/client";
 import async from "express-async-handler";
 import express from "express";
 ```
+

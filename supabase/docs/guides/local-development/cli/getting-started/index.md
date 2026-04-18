@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:59:28.369Z"
 content_hash: "1350e84eff1c6bf5f0ec8359e08887df7b64f1f60502ff04ddc459748502b5cc"
 menu_path: ["Local Dev / CLI","Local Dev / CLI","CLI","CLI","Getting started","Getting started"]
 section_path: ["Local Dev / CLI","Local Dev / CLI","CLI","CLI","Getting started","Getting started"]
+nav_prev: {"path": "supabase/docs/guides/getting-started/tutorials/with-vue-3/index.md", "title": "Build a User Management App with Vue 3"}
+nav_next: {"path": "supabase/docs/guides/local-development/cli/testing-and-linting/index.md", "title": "Testing and linting"}
 ---
+
 # 
 
 Supabase CLI
@@ -146,3 +149,4 @@ You can also opt out using the `SUPABASE_TELEMETRY_DISABLED=1` environment varia
 
 *   [CLI configuration](/docs/guides/local-development/cli/config)
 *   [CLI reference](/docs/reference/cli)
+

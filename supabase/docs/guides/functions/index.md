@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:32:14.412Z"
 content_hash: "1e5755e02faa6a1f3361b0bdfba2a60d0362a7f55148c597a547fbd5ee1e9705"
 menu_path: ["Edge Functions","Edge Functions","Overview","Overview"]
 section_path: ["Edge Functions","Edge Functions","Overview","Overview"]
+nav_prev: {"path": "supabase/docs/guides/deployment/index.md", "title": "Deployment & Branching"}
+nav_next: {"path": "supabase/docs/guides/integrations/index.md", "title": "Integrations"}
 ---
+
 # 
 
 Edge Functions
@@ -339,3 +342,4 @@ Slack Bot Mention Edge Function
 Slack Bot handling Slack mentions in Edge Function
 
 ](/docs/guides/functions/examples/slack-bot-mention)
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:32:43.411Z"
 content_hash: "1ca113ccc20f4d4371484563553df67e82fd4d5f95fde48f35dac562b92e33c9"
 menu_path: ["Monitor your Astro Site with Sentry"]
 section_path: []
+nav_prev: {"path": "astro/en/guides/backend/scalekit/index.md", "title": "Scalekit & Astro"}
+nav_next: {"path": "astro/en/guides/backend/supabase/index.md", "title": "Supabase & Astro"}
 ---
+
 # Monitor your Astro Site with Sentry
 
 [Sentry](https://sentry.io) offers a comprehensive application monitoring and error tracking service designed to help developers identify, diagnose, and resolve issues in real-time.
@@ -111,3 +114,4 @@ To view and resolve the recorded error, log into [sentry.io](https://sentry.io/)
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

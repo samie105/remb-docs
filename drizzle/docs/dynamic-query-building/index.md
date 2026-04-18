@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:47:48.037Z"
 content_hash: "58164da604a782a098b70eee859deafcd2369fac93b6b93cd81fa2a0c1892cf5"
 menu_path: ["Dynamic query building"]
 section_path: []
+nav_prev: {"path": "drizzle/docs/cache/index.md", "title": "Cache"}
+nav_next: {"path": "drizzle/docs/read-replicas/index.md", "title": "Read Replicas"}
 ---
+
 By default, as all the query builders in Drizzle try to conform to SQL as much as possible, you can only invoke most of the methods once. For example, in a `SELECT` statement there might only be one `WHERE` clause, so you can only invoke `.where()` once:
 
 ```
@@ -107,7 +110,7 @@ SQLite
 
 `SQLiteSelectQueryBuilder`
 
-The `...QueryBuilder` types are for usage with [standalone query builder instances](https://orm.drizzle.team/docs/goodies#standalone-query-builder). DB query builders are subclasses of them, so you can use them as well.
+The `...QueryBuilder` types are for usage with [standalone query builder instances](drizzle/docs/goodies/index.md#standalone-query-builder). DB query builders are subclasses of them, so you can use them as well.
 
 ```
 	import { QueryBuilder } from 'drizzle-orm/pg-core';
@@ -120,3 +123,4 @@ The `...QueryBuilder` types are for usage with [standalone query builder instanc
 	let query = qb.select().from(users).where(eq(users.id, 1)).$dynamic();
 	query = withFriends(query);
 ```
+

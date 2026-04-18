@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:40:04.209Z"
 content_hash: "5a5db1b3a1af1173e83c020edd298178e28916e304555d04f196ff578c58a7d8"
 menu_path: ["@astrojs/\n\t\t\t\t\tvercel"]
 section_path: []
+nav_prev: {"path": "astro/en/guides/integrations-guide/node/index.md", "title": "@astrojs/\n\t\t\t\t\tnode"}
+nav_next: {"path": "astro/en/guides/integrations-guide/db/index.md", "title": "@astrojs/\n\t\t\t\t\tdb"}
 ---
+
 # @astrojs/ vercel
 
 v10.0.4 [GitHub](https://github.com/withastro/astro/tree/main/packages/integrations/vercel/) [npm](https://www.npmjs.com/package/@astrojs/vercel) [Changelog](https://github.com/withastro/astro/tree/main/packages/integrations/vercel/CHANGELOG.md)
@@ -447,3 +450,4 @@ Check out the [Vercel documentation](https://vercel.com/docs/functions/serverles
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

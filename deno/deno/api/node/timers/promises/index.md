@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:42:09.912Z"
 content_hash: "979c647c32fdfa90c47f452ad688748fa5f5ed1c9bf2be933d039970a07f1fa8"
 menu_path: ["timers/promises - Node documentation"]
 section_path: []
+nav_prev: {"path": "deno/deno/api/node/timers/index.md", "title": "timers - Node documentation"}
+nav_next: {"path": "deno/deno/api/node/tls/index.md", "title": "tls - Node documentation"}
 ---
+
 ### Usage in Deno
 
 ```typescript
@@ -64,3 +67,4 @@ v
 [scheduler](../.././timers/promises/~/scheduler "scheduler")
 
 No documentation available
+

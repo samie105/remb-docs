@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:33:41.806Z"
 content_hash: "7db06491b1a21f40906af38f50b20c50533ec0f4cecbdff7beb2d3b5b41830b7"
 menu_path: ["AI & Vectors","AI & Vectors","Learn","Learn","Going to Production","Going to Production"]
 section_path: ["AI & Vectors","AI & Vectors","Learn","Learn","Going to Production","Going to Production"]
+nav_prev: {"path": "supabase/docs/guides/ai/google-colab/index.md", "title": "Google Colab"}
+nav_next: {"path": "supabase/docs/guides/ai/hugging-face/index.md", "title": "Hugging Face Inference API"}
 ---
+
 # 
 
 Going to Production
@@ -106,3 +109,4 @@ You can look at our [Choosing Compute Add-on](/docs/guides/ai/choosing-compute-a
 Or take a look at our [pgvector 0.5.0 performance](/blog/increase-performance-pgvector-hnsw) and [pgvector 0.4.0 performance](/blog/pgvector-performance) blog posts to see what pgvector is capable of and how the above technique can be used to achieve the best results.
 
 ![multi database](/docs/img/ai/going-prod/size-to-rps--light.png)
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:32:44.234Z"
 content_hash: "1df7b46afe0fa80a225ea8801779b2b5727a56d7e001da8da59033b849fc1616"
 menu_path: ["HTTP2"]
 section_path: []
+nav_prev: {"path": "fastify/docs/latest/Reference/Decorators/index.md", "title": "Decorators"}
+nav_next: {"path": "fastify/docs/latest/Reference/LTS/index.md", "title": "LTS"}
 ---
+
 Version: latest (v5.8.x)
 
 ## HTTP2[​](#http2 "Direct link to HTTP2")
@@ -51,3 +54,4 @@ Test the new server with:
 ```
 $ npx h2url http://localhost:3000
 ```
+

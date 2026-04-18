@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:14:23.021Z"
 content_hash: "2a8358ca600cb1e741e0f85ab55bc76e6216895ec11b0385e29d2b4fa0504680"
 menu_path: ["transform-style"]
 section_path: []
+nav_prev: {"path": "tailwind/docs/transform-origin/index.md", "title": "transform-origin"}
+nav_next: {"path": "tailwind/docs/translate/index.md", "title": "translate"}
 ---
+
 Transforms
 
 Utilities for controlling if an elements children are placed in 3D space.
@@ -74,4 +77,5 @@ Prefix a `transform-style` utility with a breakpoint variant like `md:` to only 
 <div class="transform-3d md:transform-flat ...">  <!-- ... --></div>
 ```
 
-Learn more about using variants in the [variants documentation](https://tailwindcss.com/docs/hover-focus-and-other-states).
+Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).
+

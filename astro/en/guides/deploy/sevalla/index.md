@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:37:48.542Z"
 content_hash: "2616dbf32395b66abab7dcf6b4d7ee25b12b6271927520cbf07d75cd2db3064e"
 menu_path: ["Deploy your Astro Site to Sevalla"]
 section_path: []
+nav_prev: {"path": "astro/en/guides/deploy/seenode/index.md", "title": "Deploy your Astro Site to Seenode"}
+nav_next: {"path": "astro/en/guides/deploy/stormkit/index.md", "title": "Deploy your Astro Site to Stormkit"}
 ---
+
 # Deploy your Astro Site to Sevalla
 
 [Sevalla](https://sevalla.com/) is an all-in-one hosting and management platform for static sites, applications, and databases.
@@ -227,3 +230,4 @@ Ensure the Node.js version selected in Sevalla matches your local development ve
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

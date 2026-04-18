@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:51:04.852Z"
 content_hash: "4af755d03fe770c76a50dafe4e911b0a365a226b4fcb88cc12a885f7c0e710b3"
 menu_path: ["PostgreSQL: Documentation: 18: 43.5. Trusted and Untrusted PL/Perl"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/sql-cluster.html/index.md", "title": "PostgreSQL: Documentation: 18: CLUSTER"}
+nav_next: {"path": "postgres/docs/current/catalog-pg-subscription-rel.html/index.md", "title": "PostgreSQL: Documentation: 18: 52.55.\u00a0pg_subscription_rel"}
 ---
+
 Normally, PL/Perl is installed as a “trusted” programming language named `plperl`. In this setup, certain Perl operations are disabled to preserve security. In general, the operations that are restricted are those that interact with the environment. This includes file handle operations, `require`, and `use` (for external modules). There is no way to access internals of the database server process or to gain OS-level access with the permissions of the server process, as a C function can do. Thus, any unprivileged database user can be permitted to use this language.
 
 ### Warning
@@ -44,3 +47,4 @@ While PL/Perl functions run in a separate Perl interpreter for each SQL role, al
 ### Note
 
 Perl cannot support multiple interpreters within one process unless it was built with the appropriate flags, namely either `usemultiplicity` or `useithreads`. (`usemultiplicity` is preferred unless you actually need to use threads. For more details, see the perlembed man page.) If PL/Perl is used with a copy of Perl that was not built this way, then it is only possible to have one Perl interpreter per session, and so any one session can only execute either PL/PerlU functions, or PL/Perl functions that are all called by the same SQL role.
+

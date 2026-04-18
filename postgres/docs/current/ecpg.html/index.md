@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:35:47.759Z"
 content_hash: "825e10d0d0853e6501cc1dbdd96b5c7f90d9933ae877c5e5c191ab723b84ccba"
 menu_path: ["PostgreSQL: Documentation: 18: Chapter 34. ECPG — Embedded SQL in C"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/largeobjects.html/index.md", "title": "PostgreSQL: Documentation: 18: Chapter\u00a033.\u00a0Large Objects"}
+nav_next: {"path": "postgres/docs/current/server-programming.html/index.md", "title": "Part\u00a0V.\u00a0Server Programming"}
 ---
+
 Development Versions: [devel](https://www.postgresql.org/docs/devel/ecpg.html "PostgreSQL devel - Chapter 34. ECPG — Embedded SQL in C")
 
 Chapter 34. ECPG — Embedded SQL in C
@@ -43,3 +46,4 @@ This documentation is quite incomplete. But since this interface is standardized
 [Home](https://www.postgresql.org/docs/current/index.html "PostgreSQL 18.3 Documentation")
 
  34.1. The Concept
+

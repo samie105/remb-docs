@@ -9,10 +9,13 @@ last_crawled_at: "2026-04-18T16:39:20.472Z"
 content_hash: "ef176fd9506d8a1d29d5f122b38371469eff0ff348c9881ae0c0a9fb1da5c9ee"
 menu_path: ["PostgreSQL: Documentation: 18: 53.18. pg_publication_tables"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/logical-replication-col-lists.html/index.md", "title": "PostgreSQL: Documentation: 18: 29.5.\u00a0Column Lists"}
+nav_next: {"path": "postgres/docs/current/indexes-multicolumn.html/index.md", "title": "PostgreSQL: Documentation: 18: 11.3.\u00a0Multicolumn Indexes"}
 ---
+
 Development Versions: [devel](https://www.postgresql.org/docs/devel/view-pg-publication-tables.html "PostgreSQL devel - 53.18. pg_publication_tables")
 
-The view `pg_publication_tables` provides information about the mapping between publications and information of tables they contain. Unlike the underlying catalog [`pg_publication_rel`](https://www.postgresql.org/docs/current/catalog-pg-publication-rel.html "52.42. pg_publication_rel"), this view expands publications defined as [`FOR ALL TABLES`](https://www.postgresql.org/docs/current/sql-createpublication.html#SQL-CREATEPUBLICATION-PARAMS-FOR-ALL-TABLES) and [`FOR TABLES IN SCHEMA`](https://www.postgresql.org/docs/current/sql-createpublication.html#SQL-CREATEPUBLICATION-PARAMS-FOR-TABLES-IN-SCHEMA), so for such publications there will be a row for each eligible table.
+The view `pg_publication_tables` provides information about the mapping between publications and information of tables they contain. Unlike the underlying catalog [`pg_publication_rel`](https://www.postgresql.org/docs/current/catalog-pg-publication-rel.html "52.42. pg_publication_rel"), this view expands publications defined as [`FOR ALL TABLES`](postgres/docs/current/sql-createpublication.html/index.md#SQL-CREATEPUBLICATION-PARAMS-FOR-ALL-TABLES) and [`FOR TABLES IN SCHEMA`](postgres/docs/current/sql-createpublication.html/index.md#SQL-CREATEPUBLICATION-PARAMS-FOR-TABLES-IN-SCHEMA), so for such publications there will be a row for each eligible table.
 
 **Table 53.18. `pg_publication_tables` Columns**
 
@@ -39,3 +42,4 @@ Names of table columns included in the publication. This contains all the column
 `rowfilter` `text`
 
 Expression for the table's publication qualifying condition
+

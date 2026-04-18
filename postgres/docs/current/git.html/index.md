@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:45:51.170Z"
 content_hash: "89d718cd245303d25244e21149615d563264de367689b3029cdeb472fe9c1726"
 menu_path: ["PostgreSQL: Documentation: 18: I.1. Getting the Source via Git"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/queries-union.html/index.md", "title": "PostgreSQL: Documentation: 18: 7.4.\u00a0Combining Queries (UNION, INTERSECT, EXCEPT)"}
+nav_next: {"path": "postgres/docs/current/catalog-pg-statistic-ext.html/index.md", "title": "PostgreSQL: Documentation: 18: 52.52.\u00a0pg_statistic_ext"}
 ---
+
 With Git you will make a copy of the entire code repository on your local machine, so you will have access to all history and branches offline. This is the fastest and most flexible way to develop or test patches.
 
 **Git**
@@ -28,3 +31,4 @@ With Git you will make a copy of the entire code repository on your local machin
     
 
 Git can do a lot more things than just fetch the source. For more information, consult the Git man pages, or see the website at [https://git-scm.com](https://git-scm.com/).
+

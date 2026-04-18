@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:48:36.469Z"
 content_hash: "e44481a88a5f12aef34087ef95e52391f5db8bdc00616c47338c1b972c70cdf1"
 menu_path: ["Queues","Queues","References","References","PGMQ Extension","PGMQ Extension"]
 section_path: ["Queues","Queues","References","References","PGMQ Extension","PGMQ Extension"]
+nav_prev: {"path": "supabase/docs/guides/queues/expose-self-hosted-queues/index.md", "title": "Expose Queues for local and self-hosted Supabase"}
+nav_next: {"path": "supabase/docs/guides/queues/quickstart/index.md", "title": "Quickstart"}
 ---
+
 # 
 
 PGMQ Extension
@@ -725,3 +728,4 @@ Example:
 ## Resources[#](#resources)
 
 *   Official Docs: [pgmq/api](https://pgmq.github.io/pgmq/#creating-a-queue)
+

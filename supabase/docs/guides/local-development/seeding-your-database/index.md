@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:46:52.988Z"
 content_hash: "1c8ea64aa2db41dc80e00f3142fc1bb75ab357491083b24947b8f1e4995468c1"
 menu_path: ["Local Dev / CLI","Local Dev / CLI","Local development","Local development","Seeding your database","Seeding your database"]
 section_path: ["Local Dev / CLI","Local Dev / CLI","Local development","Local development","Seeding your database","Seeding your database"]
+nav_prev: {"path": "supabase/docs/guides/local-development/overview/index.md", "title": "Local development with schema migrations"}
+nav_next: {"path": "supabase/docs/guides/platform/access-control/index.md", "title": "Access Control"}
 ---
+
 # 
 
 Seeding your database
@@ -119,3 +122,4 @@ After setting the environment variables, run the following commands to sync and 
 ```
 
 For more information, check out Snaplet's [seed documentation](https://snaplet-seed.netlify.app/seed/integrations/supabase)
+

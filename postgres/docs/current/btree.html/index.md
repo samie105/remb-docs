@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:47:42.511Z"
 content_hash: "6f99d9736d62a08b4db00bef10ce2936ff6a26c956df8e953f787d862ebb5fcb"
 menu_path: ["PostgreSQL: Documentation: 18: 65.1. B-Tree Indexes"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/earthdistance.html/index.md", "title": "PostgreSQL: Documentation: 18: F.14.\u00a0earthdistance \u2014 calculate great-circle distances"}
+nav_next: {"path": "postgres/docs/current/infoschema-role-table-grants.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.37.\u00a0role_table_grants"}
 ---
+
 ### 65.1.3. B-Tree Support Functions [#](#BTREE-SUPPORT-FUNCS)
 
 As shown in [Table 36.9](https://www.postgresql.org/docs/current/xindex.html#XINDEX-BTREE-SUPPORT-TABLE "Table 36.9. B-Tree Support Functions"), btree defines one required and five optional support functions. The six user-defined methods are:
@@ -106,3 +109,4 @@ Optionally, a btree operator family may provide a _skip support_ function, regis
 Operator classes that do not provide a skip support function are still eligible to use skip scan. The core code can still use its fallback strategy, though that might be suboptimal for some discrete types. It usually doesn't make sense (and may not even be feasible) for operator classes on continuous types to provide a skip support function.
 
 It is not sensible for an operator family to register a cross-type `skipsupport` function, and attempting to do so will result in an error. This is because determining the next indexable value must happen by incrementing a value copied from an index tuple. The values generated must all be of the same underlying data type (the “skipped” index column's opclass input type).
+

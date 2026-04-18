@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:55:59.109Z"
 content_hash: "8fea32990e60d9c5a67d3729f9bdec25ad1c0eedf8832b678ce4d2c6159a961b"
 menu_path: ["Database","Database","Extensions","Extensions","pgRouting: Geospatial Routing","pgRouting: Geospatial Routing"]
 section_path: ["Database","Database","Extensions","Extensions","pgRouting: Geospatial Routing","pgRouting: Geospatial Routing"]
+nav_prev: {"path": "supabase/docs/guides/database/extensions/pgmq/index.md", "title": "pgmq: Queues"}
+nav_next: {"path": "supabase/docs/guides/database/extensions/pgroonga/index.md", "title": "PGroonga: Multilingual Full Text Search"}
 ---
+
 # 
 
 pgrouting: Geospatial Routing
@@ -63,3 +66,4 @@ Next we use the `pgr_TSPeuclidean` function to find the best path.
 ## Resources[#](#resources)
 
 *   Official [`pgRouting` documentation](https://docs.pgrouting.org/latest/en/index.html)
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:41:50.354Z"
 content_hash: "c1e567f11692e45e584ceb109d5c5d952aa08eefa55d4719d0e95671a4c42d07"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis reference","→","Redis reference","→\n      \n        Redis modules API","→","Redis modules API","→\n      \n        Modules API for native types","→","Modules API for native types"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis reference","→","Redis reference","→\n      \n        Redis modules API","→","Redis modules API","→\n      \n        Modules API for native types","→","Modules API for native types"]
+nav_prev: {"path": "redis/docs/latest/operate/oss_and_stack/install/archive/install-redis/install-redis-on-mac-os/index.md", "title": "Install Redis on macOS"}
+nav_next: {"path": "redis/docs/latest/integrate/redis-data-integration/data-pipelines/prepare-dbs/aws-aurora-rds/aws-aur-pgsql/index.md", "title": "Prepare AWS Aurora PostgreSQL/AWS RDS PostgreSQL for RDI"}
 ---
+
 # Modules API for native types
 
 How to use native types in a Redis module
@@ -293,3 +296,4 @@ In case you have an external library that uses libc `malloc()`, and you want to 
 However take in mind that mixing libc calls with Redis API calls will result into troubles and crashes, so if you replace calls using macros, you need to make sure that all the calls are correctly replaced, and that the code with the substituted calls will never, for example, attempt to call `RedisModule_Free()` with a pointer allocated using libc `malloc()`.
 
 ## On this page
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:43:18.923Z"
 content_hash: "35e78bacd87ff6c92088a36ff3fd2d480043c3efe7095f025709a4ee0a1c8557"
 menu_path: ["PostgreSQL: Documentation: 18: 53.15. pg_policies"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/libpq-copy.html/index.md", "title": "PostgreSQL: Documentation: 18: 32.10.\u00a0Functions Associated with the COPY Command"}
+nav_next: {"path": "postgres/docs/current/pgstatstatements.html/index.md", "title": "PostgreSQL: Documentation: 18: F.32.\u00a0pg_stat_statements \u2014 track statistics of SQL planning and execution"}
 ---
+
 The view `pg_policies` provides access to useful information about each row-level security policy in the database.
 
 **Table 53.15. `pg_policies` Columns**
@@ -49,3 +52,4 @@ The expression added to the security barrier qualifications for queries that thi
 `with_check` `text`
 
 The expression added to the WITH CHECK qualifications for queries that attempt to add rows to this table
+

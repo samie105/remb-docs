@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:03:26.402Z"
 content_hash: "2be865a95c46b7b2c37276efea7cd6e3c2251c7baf2a77d4c3ec8829c5be747b"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        C client for Redis","→","C client for Redis"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        C client for Redis","→","C client for Redis"]
+nav_prev: {"path": "redis/docs/latest/develop/ai/redisvl/user_guide/hash_vs_json/index.md", "title": "Hash vs JSON Storage"}
+nav_next: {"path": "redis/docs/latest/operate/kubernetes/networking/ingress/index.md", "title": "Configure Ingress for external routing"}
 ---
+
 # C client for Redis
 
 Learn how to build with Redis and C
@@ -36,3 +39,4 @@ hiredis is a minimalistic C client library for Redis that provides a simple, eff
 Refer to the complete [C guide](/docs/latest/develop/clients/hiredis/) to install, connect, and use hiredis.
 
 ## On this page
+

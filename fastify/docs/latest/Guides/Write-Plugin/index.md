@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:36:38.898Z"
 content_hash: "b4431db32f716362f8f61bda2059988fb49bda3419951f3a97e2f341e90c9b5f"
 menu_path: ["How to write a good plugin"]
 section_path: []
+nav_prev: {"path": "fastify/docs/latest/Guides/Getting-Started/index.md", "title": "Getting-Started"}
+nav_next: {"path": "fastify/docs/latest/Guides/Database/index.md", "title": "Database"}
 ---
+
 Version: latest (v5.8.x)
 
 First, thank you for deciding to write a plugin for Fastify. Fastify is a minimal framework and plugins are its strength, so thank you.
@@ -78,3 +81,4 @@ If you want to see some real world examples, check out:
 *   [`@fastify/mongodb`](https://github.com/fastify/fastify-mongodb) Fastify MongoDB connection plugin, with this you can share the same MongoDB connection pool in every part of your server.
 *   [`@fastify/multipart`](https://github.com/fastify/fastify-multipart) Multipart support for Fastify.
 *   [`@fastify/helmet`](https://github.com/fastify/fastify-helmet) Important security headers for Fastify.
+

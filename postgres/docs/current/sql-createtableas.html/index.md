@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:50:56.828Z"
 content_hash: "fcb91f069d078da1107506dcee8b072db5efd5d9d3799e038dd3ca4fcf98c089"
 menu_path: ["PostgreSQL: Documentation: 18: CREATE TABLE AS"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/logical-replication-upgrade.html/index.md", "title": "PostgreSQL: Documentation: 18: 29.13.\u00a0Upgrade"}
+nav_next: {"path": "postgres/docs/current/infoschema-routine-table-usage.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.44.\u00a0routine_table_usage"}
 ---
+
 CREATE TABLE AS — define a new table from the results of a query
 
 ## Synopsis
@@ -59,7 +62,7 @@ The name of a column in the new table. If column names are not provided, they ar
 
 ``USING _`method`_``
 
-This optional clause specifies the table access method to use to store the contents for the new table; the method needs be an access method of type `TABLE`. See [Chapter 62](https://www.postgresql.org/docs/current/tableam.html "Chapter 62. Table Access Method Interface Definition") for more information. If this option is not specified, the default table access method is chosen for the new table. See [default\_table\_access\_method](https://www.postgresql.org/docs/current/runtime-config-client.html#GUC-DEFAULT-TABLE-ACCESS-METHOD) for more information.
+This optional clause specifies the table access method to use to store the contents for the new table; the method needs be an access method of type `TABLE`. See [Chapter 62](https://www.postgresql.org/docs/current/tableam.html "Chapter 62. Table Access Method Interface Definition") for more information. If this option is not specified, the default table access method is chosen for the new table. See [default\_table\_access\_method](postgres/docs/current/runtime-config-client.html/index.md#GUC-DEFAULT-TABLE-ACCESS-METHOD) for more information.
 
 ``WITH ( _`storage_parameter`_ [= _`value`_] [, ... ] )``
 
@@ -87,7 +90,7 @@ The temporary table will be dropped at the end of the current transaction block.
 
 ``TABLESPACE _`tablespace_name`_``
 
-The _`tablespace_name`_ is the name of the tablespace in which the new table is to be created. If not specified, [default\_tablespace](https://www.postgresql.org/docs/current/runtime-config-client.html#GUC-DEFAULT-TABLESPACE) is consulted, or [temp\_tablespaces](https://www.postgresql.org/docs/current/runtime-config-client.html#GUC-TEMP-TABLESPACES) if the table is temporary.
+The _`tablespace_name`_ is the name of the tablespace in which the new table is to be created. If not specified, [default\_tablespace](postgres/docs/current/runtime-config-client.html/index.md#GUC-DEFAULT-TABLESPACE) is consulted, or [temp\_tablespaces](postgres/docs/current/runtime-config-client.html/index.md#GUC-TEMP-TABLESPACES) if the table is temporary.
 
 _`query`_
 
@@ -133,3 +136,4 @@ CREATE TEMP TABLE films\_recent ON COMMIT DROP AS
 *   The `WITH` clause is a PostgreSQL extension; storage parameters are not in the standard.
     
 *   The PostgreSQL concept of tablespaces is not part of the standard. Hence, the clause `TABLESPACE` is an extension.
+

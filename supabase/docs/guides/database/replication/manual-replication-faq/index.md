@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:56:52.842Z"
 content_hash: "5fd6f9672c062f16494d59117b4f0be99c8b78ec584bfcf36f760368c4002f53"
 menu_path: ["Database","Database","More","More","More","Manual replication","Manual replication","FAQ","FAQ"]
 section_path: ["Database","Database","More","More","More","Manual replication","Manual replication","FAQ","FAQ"]
+nav_prev: {"path": "supabase/docs/guides/database/postgres/triggers/index.md", "title": "Postgres Triggers"}
+nav_next: {"path": "supabase/docs/guides/database/prisma/prisma-troubleshooting/index.md", "title": "Troubleshooting prisma errors"}
 ---
+
 # 
 
 Manual Replication FAQ
@@ -56,3 +59,4 @@ Some of the more important options to be aware of are:
 *   `max_wal_senders` - Maximum number of concurrent connections from standby servers or streaming backup clients
 
 These settings help ensure your replication slots don't run out of space and that replicas can reconnect without requiring a full re-sync.
+

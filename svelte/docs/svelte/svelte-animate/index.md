@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:44:25.792Z"
 content_hash: "fd7cbd20757491f0e769ee8ab3d085cfe5d597d55a22d3078cfb5ada045cdaae"
 menu_path: ["svelte/animate"]
 section_path: []
+nav_prev: {"path": "svelte/docs/svelte/svelte-action/index.md", "title": "svelte/action"}
+nav_next: {"path": "svelte/docs/svelte/svelte-attachments/index.md", "title": "svelte/attachments"}
 ---
+
 ```
 import { function flip(node: Element, { from, to }: {
     from: DOMRect;
@@ -86,3 +89,4 @@ easing?: (t: number) => number;
 previous next
 
 [svelte/action](/docs/svelte/svelte-action) [svelte/attachments](/docs/svelte/svelte-attachments)
+

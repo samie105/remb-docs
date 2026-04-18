@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:00:10.201Z"
 content_hash: "0e22e4a5d910e284ca0d95eccca86dc68911b806ef2265fb67378923f4dd32b2"
 menu_path: ["Platform","Platform","More","More","More","Manage your usage","Manage your usage","Monthly Active SSO Users","Monthly Active SSO Users"]
 section_path: ["Platform","Platform","More","More","More","Manage your usage","Manage your usage","Monthly Active SSO Users","Monthly Active SSO Users"]
+nav_prev: {"path": "supabase/docs/guides/platform/manage-your-usage/ipv4/index.md", "title": "Manage IPv4 usage"}
+nav_next: {"path": "supabase/docs/guides/platform/manage-your-usage/monthly-active-users/index.md", "title": "Manage Monthly Active Users usage"}
 ---
+
 # 
 
 Manage Monthly Active SSO Users usage
@@ -191,3 +194,4 @@ In the Monthly Active SSO Users section, you can see the usage for the selected 
 If you are on a paid plan and have [Spend Cap](/docs/guides/platform/cost-control#spend-cap) disabled or your organization is on Team Plan or above, you will pay for any overages.
 
 When you are exceeding your quotas while being on a Free Plan or having [Spend Cap](/docs/guides/platform/cost-control#spend-cap) enabled, you will get a notification to your billing email address and put under a grace period. For more details, refer to our [Fair Use Policy](/docs/guides/platform/billing-faq#fair-use-policy).
+

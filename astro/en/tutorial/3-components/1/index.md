@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:48:30.966Z"
 content_hash: "3568e81fd8fc481a2aa417f6ffa084f9a3cd1ee769d31af7810bff761df48e6c"
 menu_path: ["Make a reusable Navigation component"]
 section_path: []
+nav_prev: {"path": "astro/en/tutorial/2-pages/5/index.md", "title": "Add site-wide styling"}
+nav_next: {"path": "astro/en/tutorial/3-components/2/index.md", "title": "Create a social media footer"}
 ---
+
 # Make a reusable Navigation component
 
 Now that you have the same HTML written in multiple pages of your Astro site, it’s time to replace that duplicated content with a reusable Astro component!
@@ -94,3 +97,4 @@ Don’t forget to
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

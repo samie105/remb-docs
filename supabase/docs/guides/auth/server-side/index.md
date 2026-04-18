@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:39:06.519Z"
 content_hash: "400f1b0b96aac412eb1b3f06d6eec5b2aa888ed25fa2e2dd468220db725a88e9"
 menu_path: ["Auth","Auth","More","More","More","Server-Side Rendering","Server-Side Rendering","Overview","Overview"]
 section_path: ["Auth","Auth","More","More","More","Server-Side Rendering","Server-Side Rendering","Overview","Overview"]
+nav_prev: {"path": "supabase/docs/guides/auth/redirect-urls/index.md", "title": "Redirect URLs"}
+nav_next: {"path": "supabase/docs/guides/auth/sessions/index.md", "title": "User sessions"}
 ---
+
 # 
 
 Server-Side Rendering
@@ -49,3 +52,4 @@ SvelteKit
 Automatically configure Supabase in SvelteKit to use cookies, making your user and their session available on the client and server.
 
 ](/docs/guides/auth/server-side/sveltekit)
+

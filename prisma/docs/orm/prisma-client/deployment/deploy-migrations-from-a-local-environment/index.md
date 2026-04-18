@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:45:52.405Z"
 content_hash: "83e021b30e11f7561f47bb444b357a751191e5330d38050c18c237843f9f1cd2"
 menu_path: ["Deploy migrations from a local environment"]
 section_path: []
+nav_prev: {"path": "prisma/docs/orm/prisma-client/deployment/deploy-database-changes-with-prisma-migrate/index.md", "title": "Deploying database changes with Prisma Migrate"}
+nav_next: {"path": "prisma/docs/orm/prisma-client/deployment/deploy-prisma/index.md", "title": "Deploy Prisma ORM"}
 ---
+
 Deployment
 
 Learn how to deploy Node.js and TypeScript applications that are using Prisma Client locally
@@ -17,7 +20,7 @@ Learn how to deploy Node.js and TypeScript applications that are using Prisma Cl
 There are two scenarios where you might consider deploying migrations directly from a local environment to a production environment.
 
 *   You have a local CI/CD pipeline
-*   You are [baselining](https://www.prisma.io/docs/orm/prisma-migrate/workflows/baselining) a production environment
+*   You are [baselining](prisma/docs/orm/prisma-migrate/workflows/baselining/index.md) a production environment
 
 This page outlines some examples of how you can do that and **why we would generally not recommend it**.
 
@@ -41,10 +44,11 @@ DATABASE_URL="postgresql://johndoe:randompassword@prod-db.example.com:5432/my_pr
 
 **✅ We recommend setting up an automated CI/CD pipeline**
 
-The pipeline should handle deployment to staging and production environments, and use `migrate deploy` in a pipeline step. See the [deployment guides](https://www.prisma.io/docs/orm/prisma-client/deployment/deploy-database-changes-with-prisma-migrate) for examples.
+The pipeline should handle deployment to staging and production environments, and use `migrate deploy` in a pipeline step. See the [deployment guides](prisma/docs/orm/prisma-client/deployment/deploy-database-changes-with-prisma-migrate/index.md) for examples.
 
-When you add Prisma Migrate to an **existing database**, you must [baseline](https://www.prisma.io/docs/orm/prisma-migrate/workflows/baselining) the production database. Baselining is performed **once**, and can be done from a local instance.
+When you add Prisma Migrate to an **existing database**, you must [baseline](prisma/docs/orm/prisma-migrate/workflows/baselining/index.md) the production database. Baselining is performed **once**, and can be done from a local instance.
 
 ![Baselining production from local with Prisma ORM](https://www.prisma.io/docs/img/orm/baseline-production-from-local.png?dpl=dpl_2TrAJrUt7dXR3AAWNDvwk5WL6VFX)
 
 [Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/prisma-client/deployment/deploy-migrations-from-a-local-environment.mdx)
+

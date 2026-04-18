@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:48:43.041Z"
 content_hash: "e7298cc74bd037c9265403190dabc4c7256024b09a8d03ccc80b4901f40b4b7e"
 menu_path: ["Build your first layout"]
 section_path: []
+nav_prev: {"path": "astro/en/tutorial/3-components/4/index.md", "title": "Send your first script to the browser"}
+nav_next: {"path": "astro/en/tutorial/4-layouts/2/index.md", "title": "Create and pass data to a custom blog layout"}
 ---
+
 # Build your first layout
 
 Get ready to…
@@ -122,3 +125,4 @@ Don’t forget to:
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

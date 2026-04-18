@@ -9,10 +9,13 @@ last_crawled_at: "2026-04-18T16:33:06.026Z"
 content_hash: "c59e68bfa83bf30c18615ebcd4bcca58c0043a7a63adc5cd8757434fb3a6bbfe"
 menu_path: ["Set up with Next.js"]
 section_path: []
+nav_prev: {"path": "trpc/docs/v10/client/nextjs/server-side-helpers/index.md", "title": "Server-Side Helpers"}
+nav_next: {"path": "trpc/docs/v10/client/nextjs/ssg/index.md", "title": "Static Site Generation"}
 ---
+
 ## Recommended file structure[​](#recommended-file-structure "Direct link to Recommended file structure")
 
-We recommend a file structure like this one, although it is not enforced by tRPC. This is what you'll see in [our examples](https://trpc.io/docs/v10/example-apps). The rest of this page will take you through the process of adding tRPC in to this structure.
+We recommend a file structure like this one, although it is not enforced by tRPC. This is what you'll see in [our examples](trpc/docs/v10/example-apps/index.md). The rest of this page will take you through the process of adding tRPC in to this structure.
 
 graphql
 
@@ -73,7 +76,7 @@ sh
 
 `npm install @trpc/server @trpc/client @trpc/react-query @trpc/next @tanstack/react-query@4 zod`
 
-The Next.js integration is actually a combination of our [React Query Integration](https://trpc.io/docs/v10/client/react) and some Next.js specific integrations.
+The Next.js integration is actually a combination of our [React Query Integration](trpc/docs/v10/client/react/index.md) and some Next.js specific integrations.
 
 ### 2\. Enable strict mode[​](#2-enable-strict-mode "Direct link to 2. Enable strict mode")
 
@@ -105,8 +108,8 @@ diff
 
 Initialize your tRPC backend in `src/server/trpc.ts` using the `initTRPC` function, and create your first router. We're going to make a simple "hello world" router and procedure here - but for deeper information on creating your tRPC API you should refer to:
 
-*   the [Quickstart guide](https://trpc.io/docs/quickstart) and [Backend usage docs](https://trpc.io/docs/server/overview) for tRPC information
-*   the [Next.js Adapter docs](https://trpc.io/docs/server/adapters/nextjs) for mounting tRPC within your Next.js server.
+*   the [Quickstart guide](trpc/docs/quickstart/index.md) and [Backend usage docs](trpc/docs/server/overview/index.md) for tRPC information
+*   the [Next.js Adapter docs](trpc/docs/server/adapters/nextjs/index.md) for mounting tRPC within your Next.js server.
 
 View sample backend
 
@@ -202,7 +205,7 @@ tsx
 
 note
 
-`createTRPCNext` does not work with the tRPC-v9 interop mode. If you are migrating from v9 using interop, you should continue using [the old way of initializing tRPC](https://trpc.io/docs/v9/nextjs#4-create-trpc-hooks).
+`createTRPCNext` does not work with the tRPC-v9 interop mode. If you are migrating from v9 using interop, you should continue using [the old way of initializing tRPC](trpc/docs/v9/nextjs/index.md#4-create-trpc-hooks).
 
 ### 5\. Configure `_app.tsx`[​](#5-configure-_apptsx "Direct link to 5-configure-_apptsx")
 
@@ -228,7 +231,7 @@ tsx
 
 You're all set!
 
-You can now use the React hooks you have just created to invoke your API. For more detail see the [React Query Integration](https://trpc.io/docs/v10/client/react)
+You can now use the React hooks you have just created to invoke your API. For more detail see the [React Query Integration](trpc/docs/v10/client/react/index.md)
 
 pages/index.tsx
 
@@ -265,17 +268,17 @@ tsx
 The `config`\-argument is a function that returns an object that configures the tRPC and React Query clients. This function has a `ctx` input that gives you access to the Next.js `req` object, among other things. The returned value can contain the following properties:
 
 *   **Required**:
-*   `links` to customize the flow of data between tRPC Client and the tRPC Server. [Read more](https://trpc.io/docs/client/links).
+*   `links` to customize the flow of data between tRPC Client and the tRPC Server. [Read more](trpc/docs/client/links/index.md).
 *   Optional:
 *   `queryClientConfig`: a configuration object for the React Query `QueryClient` used internally by the tRPC React hooks: [QueryClient docs](https://tanstack.com/query/v4/docs/reference/QueryClient)
 *   `queryClient`: a React Query [QueryClient instance](https://tanstack.com/query/v4/docs/reference/QueryClient)
     *   **Note:** You can only provide either a `queryClient` or a `queryClientConfig`.
-*   `transformer`: a transformer applied to outgoing payloads. Read more about [Data Transformers](https://trpc.io/docs/server/data-transformers)
+*   `transformer`: a transformer applied to outgoing payloads. Read more about [Data Transformers](trpc/docs/server/data-transformers/index.md)
 *   `abortOnUnmount`: determines if in-flight requests will be cancelled on component unmount. This defaults to `false`.
 
 ### `overrides`: (default: `undefined`)[​](#overrides "Direct link to overrides")
 
-Configure [overrides for React Query's hooks](https://trpc.io/docs/client/react/useUtils#invalidate-full-cache-on-every-mutation).
+Configure [overrides for React Query's hooks](trpc/docs/client/react/useUtils/index.md#invalidate-full-cache-on-every-mutation).
 
 ### `ssr`\-boolean (default: `false`)[​](#ssr-boolean-default-false "Direct link to ssr-boolean-default-false")
 
@@ -337,6 +340,7 @@ tsx
 
 ## Next steps[​](#next-steps "Direct link to Next steps")
 
-Browse the rest of the docs to learn more about things like [authorization](https://trpc.io/docs/server/authorization), [middlewares](https://trpc.io/docs/server/middlewares), and [error handling](https://trpc.io/docs/server/error-handling).
+Browse the rest of the docs to learn more about things like [authorization](trpc/docs/server/authorization/index.md), [middlewares](trpc/docs/server/middlewares/index.md), and [error handling](trpc/docs/server/error-handling/index.md).
 
-You can also find information about [queries](https://trpc.io/docs/client/react/useQuery) and [mutations](https://trpc.io/docs/client/react/useMutation) now that you're using `@trpc/react-query`.
+You can also find information about [queries](trpc/docs/client/react/useQuery/index.md) and [mutations](trpc/docs/client/react/useMutation/index.md) now that you're using `@trpc/react-query`.
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:00:58.348Z"
 content_hash: "98d5a8292029d52ca7e7cbb9d47350bbf2e8b4367e147ecf2f56eb701800c3ed"
 menu_path: ["Storage","Storage","Analytics Buckets","Analytics Buckets","Iceberg Catalog","Iceberg Catalog"]
 section_path: ["Storage","Storage","Analytics Buckets","Analytics Buckets","Iceberg Catalog","Iceberg Catalog"]
+nav_prev: {"path": "supabase/docs/guides/platform/sso/okta/index.md", "title": "Set Up SSO with Okta"}
+nav_next: {"path": "supabase/docs/guides/storage/analytics/creating-analytics-buckets/index.md", "title": "Creating Analytics Buckets"}
 ---
+
 # 
 
 Iceberg Catalog
@@ -72,3 +75,4 @@ A successful response returns the catalog configuration including warehouse loca
 *   [Connect with PyIceberg](/docs/guides/storage/analytics/examples/pyiceberg)
 *   [Connect with Apache Spark](/docs/guides/storage/analytics/examples/apache-spark)
 *   [Query with Postgres](/docs/guides/storage/analytics/query-with-postgres)
+

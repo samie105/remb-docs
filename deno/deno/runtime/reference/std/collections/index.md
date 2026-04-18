@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:00:44.788Z"
 content_hash: "661f8cc05992c9e280325d545af88f7f8e6ba68fbef2e37323a6d78e59dfbf85"
 menu_path: ["@std/collections"]
 section_path: []
+nav_prev: {"path": "deno/deno/runtime/reference/std/cli/index.md", "title": "@std/cli"}
+nav_next: {"path": "deno/deno/runtime/reference/std/crypto/index.md", "title": "@std/crypto"}
 ---
+
 On this page
 
 *   [Overview](#overview)
@@ -46,3 +49,4 @@ deno add jsr:@std/collections
 ```
 
 [See all symbols in @std/collections on](https://jsr.io/@std/collections/doc)
+

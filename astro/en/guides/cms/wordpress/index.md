@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:35:56.584Z"
 content_hash: "25fce6769757f5c5653e99948fc26794197b4c602de9e6a7ad501a37bffd6e7e"
 menu_path: ["Headless WordPress & Astro"]
 section_path: []
+nav_prev: {"path": "astro/en/guides/cms/vault-cms/index.md", "title": "Vault CMS & Astro"}
+nav_next: {"path": "astro/en/guides/backend/index.md", "title": "Use a backend service with Astro"}
 ---
+
 # Headless WordPress & Astro
 
 [WordPress](https://wordpress.org/) is a content management system that includes its own frontend, but can also be used as a headless CMS to provide content to your Astro project.
@@ -369,3 +372,4 @@ The following sites use Astro + WordPress in production:
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

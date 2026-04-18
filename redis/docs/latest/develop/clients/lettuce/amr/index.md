@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:47:03.355Z"
 content_hash: "556333ab958a25d7bc6bbfe2ecf6fd0cb857a37c6a9e889ef3719b43947c7c31"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Connect with Redis client API libraries","→","Connect with Redis client API libraries","→\n      \n        Lettuce guide (Java)","→","Lettuce guide (Java)","→\n      \n        Connect to Azure Managed Redis","→","Connect to Azure Managed Redis"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Connect with Redis client API libraries","→","Connect with Redis client API libraries","→\n      \n        Lettuce guide (Java)","→","Lettuce guide (Java)","→\n      \n        Connect to Azure Managed Redis","→","Connect to Azure Managed Redis"]
+nav_prev: {"path": "redis/docs/latest/develop/clients/jedis/amr/index.md", "title": "Connect to Azure Managed Redis"}
+nav_next: {"path": "redis/docs/latest/integrate/amazon-bedrock/create-knowledge-base/index.md", "title": "Create a Bedrock knowledge base"}
 ---
+
 # Connect to Azure Managed Redis
 
 Learn how to authenticate to an Azure Managed Redis (AMR) database
@@ -179,3 +182,4 @@ try (StatefulRedisConnection<String, String> user1 = redisClient.connect(StringC
 ```
 
 ## On this page
+

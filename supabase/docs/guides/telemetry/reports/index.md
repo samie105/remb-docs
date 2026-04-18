@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:51:17.605Z"
 content_hash: "9dbde2b516e84c24c5a4d54dc3217f674f285b68eece64fa656264c4eccb36f3"
 menu_path: ["Telemetry","Telemetry","Logging & observability","Logging & observability","Reports","Reports"]
 section_path: ["Telemetry","Telemetry","Logging & observability","Logging & observability","Reports","Reports"]
+nav_prev: {"path": "supabase/docs/guides/telemetry/logs/index.md", "title": "Logging"}
+nav_next: {"path": "supabase/docs/guides/telemetry/sentry-monitoring/index.md", "title": "Sentry integration"}
 ---
+
 # 
 
 Reports
@@ -1023,3 +1026,4 @@ Request Caching
 Cache hit rates and miss patterns
 
 CDN performance and cost optimization, including top routes
+

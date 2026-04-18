@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:09:20.575Z"
 content_hash: "f6b7b4ed650d7ebec257bb6351fe60132f78684a17bfbecc7ff47ad68742249c"
 menu_path: ["File System - Deno documentation"]
 section_path: []
+nav_prev: {"path": "deno/deno/api/deno/ffi/index.md", "title": "FFI - Deno documentation"}
+nav_next: {"path": "deno/deno/api/deno/gpu/index.md", "title": "GPU - Deno documentation"}
 ---
+
 ### Classes [#](#Classes)
 
 c
@@ -472,3 +475,4 @@ T
 [Deno.FsEventFlag](./././~/Deno.FsEventFlag "Deno.FsEventFlag")
 
 Additional information for FsEvent objects with the "other" kind.
+

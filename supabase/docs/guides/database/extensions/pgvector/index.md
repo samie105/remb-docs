@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:56:04.871Z"
 content_hash: "4782327f736c5882efec542b607431d7cf956706330efc00a17f94162ce6ee38"
 menu_path: ["Database","Database","Extensions","Extensions","pgvector: Embeddings and vector similarity","pgvector: Embeddings and vector similarity"]
 section_path: ["Database","Database","Extensions","Extensions","pgvector: Embeddings and vector similarity","pgvector: Embeddings and vector similarity"]
+nav_prev: {"path": "supabase/docs/guides/database/extensions/pgroonga/index.md", "title": "PGroonga: Multilingual Full Text Search"}
+nav_next: {"path": "supabase/docs/guides/database/extensions/pgsodium/index.md", "title": "pgsodium (pending deprecation): Encryption Features"}
 ---
+
 # 
 
 pgvector: Embeddings and vector similarity
@@ -76,3 +79,4 @@ To get the exact number of requested rows, use [iterative search](https://github
 *   [Storing OpenAI embeddings in Postgres with pgvector](/blog/openai-embeddings-postgres-vector)
 *   [A ChatGPT Plugins Template built with Supabase Edge Runtime](/blog/building-chatgpt-plugins-template)
 *   [Template for building your own custom ChatGPT style doc search](https://github.com/supabase-community/nextjs-openai-doc-search)
+

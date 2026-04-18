@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:13:06.524Z"
 content_hash: "4f72e03df02fc57edaf9d4a40980a3d467a19299221762c6ace11e8b9f0d0821"
 menu_path: ["File - Web documentation"]
 section_path: []
+nav_prev: {"path": "deno/deno/api/web/fetch/index.md", "title": "Fetch - Web documentation"}
+nav_next: {"path": "deno/deno/api/web/gpu/index.md", "title": "GPU - Web documentation"}
 ---
+
 ### Interfaces [#](#Interfaces)
 
 I
@@ -114,3 +117,4 @@ T
 [EndingType](./././~/EndingType "EndingType")
 
 No documentation available
+

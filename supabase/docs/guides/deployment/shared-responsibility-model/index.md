@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:43:17.788Z"
 content_hash: "d935e34007e8a13e51913813fae2cc314829a76e65e5350e19ab6ffcef5cde50"
 menu_path: ["Deployment & Branching","Deployment & Branching","Production readiness","Production readiness","Shared responsibility model","Shared responsibility model"]
 section_path: ["Deployment & Branching","Deployment & Branching","Production readiness","Production readiness","Shared responsibility model","Shared responsibility model"]
+nav_prev: {"path": "supabase/docs/guides/deployment/managing-environments/index.md", "title": "Managing Environments"}
+nav_next: {"path": "supabase/docs/guides/functions/architecture/index.md", "title": "Edge Functions Architecture"}
 ---
+
 # 
 
 Shared Responsibility Model
@@ -106,3 +109,4 @@ You can use Supabase to store and process Protected Health Information (PHI). Yo
 *   Not [transferring projects](/docs/guides/platform/project-transfer) to a non-HIPAA organization.
 
 For more information on the shared responsibilities and rules under HIPAA, review the [HIPAA compliance responsibilities document](/docs/guides/security/hipaa-compliance).
+

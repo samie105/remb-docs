@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:52:03.918Z"
 content_hash: "78026a05920393e5a099ea6cfd8c95979021ea5f9ba2d2f6feed23c661e7d066"
 menu_path: ["AI & Vectors","AI & Vectors","Third-Party Tools","Third-Party Tools","Roboflow","Roboflow"]
 section_path: ["AI & Vectors","AI & Vectors","Third-Party Tools","Third-Party Tools","Roboflow","Roboflow"]
+nav_prev: {"path": "supabase/docs/guides/ai/integrations/llamaindex/index.md", "title": "Learn how to integrate Supabase with LlamaIndex, a data framework for your LLM applications."}
+nav_next: {"path": "supabase/docs/guides/ai/quickstarts/face-similarity/index.md", "title": "Face similarity search"}
 ---
+
 # 
 
 Roboflow
@@ -167,3 +170,4 @@ You can then query your embeddings using the following code:
 *   [Roboflow Inference documentation](https://inference.roboflow.com)
 *   [Roboflow Getting Started guide](https://blog.roboflow.com/getting-started-with-roboflow/)
 *   [How to Build a Semantic Image Search Engine with Supabase and OpenAI CLIP](https://blog.roboflow.com/how-to-use-semantic-search-supabase-openai-clip/)
+

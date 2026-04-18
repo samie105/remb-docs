@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:40:53.402Z"
 content_hash: "ceb2d1e67d52c96ece9db672cc83727ca21508c9d6e753035361e8614c99fa03"
 menu_path: ["MySQL"]
 section_path: []
+nav_prev: {"path": "prisma/docs/orm/core-concepts/supported-databases/database-drivers/index.md", "title": "Database drivers"}
+nav_next: {"path": "prisma/docs/orm/core-concepts/supported-databases/postgresql/index.md", "title": "PostgreSQL"}
 ---
+
 Supported databases
 
 Use Prisma ORM with MySQL databases including self-hosted MySQL/MariaDB and serverless PlanetScale
@@ -50,7 +53,7 @@ export default defineConfig({
 });
 ```
 
-Use JavaScript database drivers via [driver adapters](https://www.prisma.io/docs/orm/core-concepts/supported-databases/database-drivers#driver-adapters):
+Use JavaScript database drivers via [driver adapters](prisma/docs/orm/core-concepts/supported-databases/database-drivers/index.md#driver-adapters):
 
 **With `mariadb` driver:**
 
@@ -224,7 +227,7 @@ MySQL/MariaDB
 
 `LONGBLOB`
 
-See [full type mapping reference](https://www.prisma.io/docs/orm/reference/prisma-schema-reference#model-field-scalar-types) for complete details.
+See [full type mapping reference](prisma/docs/orm/reference/prisma-schema-reference/index.md#model-field-scalar-types) for complete details.
 
 **SSL connections:**
 
@@ -264,3 +267,4 @@ PlanetScale production branches are read-only for direct DDL. If you get error P
 *   Using a deploy request to update production
 
 [Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/core-concepts/supported-databases/mysql.mdx)
+

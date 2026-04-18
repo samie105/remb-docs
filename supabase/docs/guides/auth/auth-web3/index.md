@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:37:13.046Z"
 content_hash: "e026b88fa3162838bd1001c2306fbc1c29ee9e55125eb8b45dad7b11e97d35c4"
 menu_path: ["Auth","Auth","Flows (How-tos)","Flows (How-tos)","Web3 (Ethereum or Solana)","Web3 (Ethereum or Solana)"]
 section_path: ["Auth","Auth","Flows (How-tos)","Flows (How-tos)","Web3 (Ethereum or Solana)","Web3 (Ethereum or Solana)"]
+nav_prev: {"path": "supabase/docs/guides/auth/auth-identity-linking/index.md", "title": "Identity Linking"}
+nav_next: {"path": "supabase/docs/guides/auth/auth-smtp/index.md", "title": "Send emails with custom SMTP"}
 ---
+
 # 
 
 Sign in with Web3
@@ -140,3 +143,4 @@ If you are using a non-standard Solana wallet that does not register the `window
 Web3 wallets don't expose any identifying information about the user other than their wallet address (public key). This is why accounts that were created using Sign in with Web3 don't have any email address or phone number associated.
 
 To associate an email address, phone number or other social login with their account you can use the `supabase.auth.updateUser()` or `supabase.auth.linkIdentity()` APIs.
+

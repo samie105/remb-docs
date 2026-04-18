@@ -9,10 +9,13 @@ last_crawled_at: "2026-04-18T16:37:00.179Z"
 content_hash: "c61cbe69a987e76fa2c14635767238e6d31eba9c38e7264d08caa09d1d26007f"
 menu_path: ["SQLite column types"]
 section_path: []
+nav_prev: {"path": "drizzle/docs/column-types/mysql/index.md", "title": "MySQL column types"}
+nav_next: {"path": "drizzle/docs/extensions/mysql/index.md", "title": "MySQL extensions"}
 ---
+
 Based on the official **[SQLite docs](https://www.sqlite.org/datatype3.html)**, each value stored in an SQLite database (or manipulated by the database engine) has one of the following storage classes `NULL`, `INTEGER`, `REAL`, `TEXT` and `BLOB`.
 
-We have native support for all of them, yet if that’s not enough for you, feel free to create **[custom types](https://orm.drizzle.team/docs/custom-types)**.
+We have native support for all of them, yet if that’s not enough for you, feel free to create **[custom types](drizzle/docs/custom-types/index.md)**.
 
 important
 
@@ -20,7 +23,7 @@ All examples in this part of the documentation do not use database column name a
 
 You can use database aliases in column names if you want, and you can also use the `casing` parameter to define a mapping strategy for Drizzle.
 
-You can read more about it [here](https://orm.drizzle.team/docs/sql-schema-declaration#shape-your-data-schema)
+You can read more about it [here](drizzle/docs/sql-schema-declaration/index.md#shape-your-data-schema)
 
 ### Integer[](#integer)
 
@@ -303,3 +306,4 @@ const table = sqliteTable('table', {
     alwaysNull: text().$type<string | null>().$onUpdate(() => null),
 });
 ```
+

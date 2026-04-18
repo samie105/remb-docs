@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:36:20.755Z"
 content_hash: "2588d58f5ef0388a0390742f5f63ddd59b9782bc2ab0b03746d33546eb3e5bbf"
 menu_path: ["Importing and Exporting Components"]
 section_path: []
+nav_prev: {"path": "react/learn/your-first-component/index.md", "title": "Your First Component"}
+nav_next: {"path": "react/learn/writing-markup-with-jsx/index.md", "title": "Writing Markup with JSX"}
 ---
+
 The magic of components lies in their reusability: you can create components that are composed of other components. But as you nest more and more components, it often makes sense to start splitting them into different files. This lets you keep your files easy to scan and reuse components in more places.
 
 ### You will learn
@@ -22,7 +25,7 @@ The magic of components lies in their reusability: you can create components tha
 
 ## The root component file[](#the-root-component-file "Link for The root component file ")
 
-In [Your First Component](https://react.dev/learn/your-first-component), you made a `Profile` component and a `Gallery` component that renders it:
+In [Your First Component](react/learn/your-first-component/index.md), you made a `Profile` component and a `Gallery` component that renders it:
 
 These currently live in a **root component file,** named `App.js` in this example. Depending on your setup, your root component could be in another file, though. If you use a framework with file-based routing, such as Next.js, your root component will be different for every page.
 
@@ -173,3 +176,4 @@ Named
 `import { Button } from './Button.js';`
 
 After you get it working with one kind of exports, make it work with the other kind.
+

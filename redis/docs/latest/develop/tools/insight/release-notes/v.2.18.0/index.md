@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:35:46.861Z"
 content_hash: "c8481ad0fe0142788ee1b04d35fd591bfce9118db6281c09306d3b193b58afe3"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Client tools","→","Client tools","→\n      \n        Redis Insight","→","Redis Insight","→\n      \n        Redis Insight release notes","→","Redis Insight release notes","→\n      \n        RedisInsight v2.18.0, January 2023","→","RedisInsight v2.18.0, January 2023"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Client tools","→","Client tools","→\n      \n        Redis Insight","→","Redis Insight","→\n      \n        Redis Insight release notes","→","Redis Insight release notes","→\n      \n        RedisInsight v2.18.0, January 2023","→","RedisInsight v2.18.0, January 2023"]
+nav_prev: {"path": "redis/docs/latest/develop/tools/insight/release-notes/v.2.20.0/index.md", "title": "RedisInsight v2.20.0, February 2023"}
+nav_next: {"path": "redis/docs/latest/operate/kubernetes/release-notes/7-8-4-releases/7-8-4-9-mar25/index.md", "title": "Redis Enterprise for Kubernetes 7.8.4-9 (March 2025) release notes"}
 ---
+
 # RedisInsight v2.18.0, January 2023
 
 RedisInsight v2.18.0
@@ -36,3 +39,4 @@ This is the General Availability (GA) release of RedisInsight 2.18.
 *   [#1579](https://github.com/RedisInsight/RedisInsight/pull/1579) Increase the database password length limitation to 10,000.
 
 ## On this page
+

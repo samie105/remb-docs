@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:40:01.411Z"
 content_hash: "fe7493323d100ed46cbf934ae343b4cf5e2d0b6b26c507a644ea08e74563dc05"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Install Redis Open Source","→","Install Redis Open Source","→\n      \n        Install Redis Open Source","→","Install Redis Open Source","→\n      \n        Run Redis Open Source on Docker","→","Run Redis Open Source on Docker"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Install Redis Open Source","→","Install Redis Open Source","→\n      \n        Install Redis Open Source","→","Install Redis Open Source","→\n      \n        Run Redis Open Source on Docker","→","Run Redis Open Source on Docker"]
+nav_prev: {"path": "redis/docs/latest/develop/clients/patterns/distributed-locks/index.md", "title": "Distributed Locks with Redis"}
+nav_next: {"path": "redis/docs/latest/operate/oss_and_stack/reference/internals/internals-rediseventlib/index.md", "title": "Event library"}
 ---
+
 # Run Redis Open Source on Docker
 
 How to run Redis Open Source using Docker
@@ -85,3 +88,4 @@ $ docker run -v /local-data/:/data --name redis -p 6379:6379 redis:<version>
 See the [official Redis page on Docker Hub](https://hub.docker.com/_/redis) for more options.
 
 ## On this page
+

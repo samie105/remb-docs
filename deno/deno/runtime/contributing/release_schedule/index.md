@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:45:52.533Z"
 content_hash: "9fa8c67ee22e2c72ab7e35932d186690800f8d984b72a18f9c64cfc888b11aea"
 menu_path: ["Release Schedule"]
 section_path: []
+nav_prev: {"path": "deno/deno/runtime/contributing/profiling/index.md", "title": "Contributing and support"}
+nav_next: {"path": "deno/deno/runtime/contributing/style_guide/index.md", "title": "Deno Style Guide"}
 ---
+
 On this page
 
 *   [Canary channel](#canary-channel)
@@ -39,3 +42,4 @@ deno upgrade --canary --version=973af61d8bb03c1709f61e456581d58386ed4952
 To switch back to the stable channel, run `deno upgrade`.
 
 Canaries can be downloaded from [https://dl.deno.land](https://dl.deno.land).
+

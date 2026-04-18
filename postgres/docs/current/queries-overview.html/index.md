@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:54:07.368Z"
 content_hash: "d86c95654f3b38635f21267b2f45b84923c0fdb9828de996677df963e7a82569"
 menu_path: ["PostgreSQL: Documentation: 18: 7.1. Overview"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/sql-createopfamily.html/index.md", "title": "PostgreSQL: Documentation: 18: CREATE OPERATOR FAMILY"}
+nav_next: {"path": "postgres/docs/current/sslinfo.html/index.md", "title": "PostgreSQL: Documentation: 18: F.42.\u00a0sslinfo \u2014 obtain client SSL information"}
 ---
+
 The process of retrieving or the command to retrieve data from a database is called a _query_. In SQL the [`SELECT`](https://www.postgresql.org/docs/current/sql-select.html "SELECT") command is used to specify queries. The general syntax of the `SELECT` command is
 
 \[WITH _`with_queries`_\] SELECT _`select_list`_ FROM _`table_expression`_ \[_`sort_specification`_\]
@@ -33,3 +36,4 @@ SELECT 3 \* 4;
 This is more useful if the expressions in the select list return varying results. For example, you could call a function this way:
 
 SELECT random();
+

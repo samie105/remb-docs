@@ -9,10 +9,13 @@ last_crawled_at: "2026-04-18T16:37:37.564Z"
 content_hash: "6b2f7700fd6fa53d6fccc682da8839e010cd429a29eefb29e4089e0470967147"
 menu_path: ["PostgreSQL: Documentation: 18: 27.4. Progress Reporting"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/ecpg-descriptors.html/index.md", "title": "PostgreSQL: Documentation: 18: 34.7.\u00a0Using Descriptor Areas"}
+nav_next: {"path": "postgres/docs/current/ecpg-sql-disconnect.html/index.md", "title": "PostgreSQL: Documentation: 18: DISCONNECT"}
 ---
+
 Development Versions: [devel](https://www.postgresql.org/docs/devel/progress-reporting.html "PostgreSQL devel - 27.4. Progress Reporting")
 
-PostgreSQL has the ability to report the progress of certain commands during command execution. Currently, the only commands which support progress reporting are `ANALYZE`, `CLUSTER`, `CREATE INDEX`, `VACUUM`, `COPY`, and [BASE\_BACKUP](https://www.postgresql.org/docs/current/protocol-replication.html#PROTOCOL-REPLICATION-BASE-BACKUP) (i.e., replication command that [pg\_basebackup](https://www.postgresql.org/docs/current/app-pgbasebackup.html "pg_basebackup") issues to take a base backup). This may be expanded in the future.
+PostgreSQL has the ability to report the progress of certain commands during command execution. Currently, the only commands which support progress reporting are `ANALYZE`, `CLUSTER`, `CREATE INDEX`, `VACUUM`, `COPY`, and [BASE\_BACKUP](postgres/docs/current/protocol-replication.html/index.md#PROTOCOL-REPLICATION-BASE-BACKUP) (i.e., replication command that [pg\_basebackup](https://www.postgresql.org/docs/current/app-pgbasebackup.html "pg_basebackup") issues to take a base backup). This may be expanded in the future.
 
 ### 27.4.1. ANALYZE Progress Reporting [#](#ANALYZE-PROGRESS-REPORTING)
 
@@ -74,7 +77,7 @@ OID of the child table currently being scanned. This field is only valid when th
 
 `delay_time` `double precision`
 
-Total time spent sleeping due to cost-based delay (see [Section 19.10.2](https://www.postgresql.org/docs/current/runtime-config-vacuum.html#RUNTIME-CONFIG-RESOURCE-VACUUM-COST "19.10.2. Cost-based Vacuum Delay")), in milliseconds (if [track\_cost\_delay\_timing](https://www.postgresql.org/docs/current/runtime-config-statistics.html#GUC-TRACK-COST-DELAY-TIMING) is enabled, otherwise zero).
+Total time spent sleeping due to cost-based delay (see [Section 19.10.2](https://www.postgresql.org/docs/current/runtime-config-vacuum.html#RUNTIME-CONFIG-RESOURCE-VACUUM-COST "19.10.2. Cost-based Vacuum Delay")), in milliseconds (if [track\_cost\_delay\_timing](postgres/docs/current/runtime-config-statistics.html/index.md#GUC-TRACK-COST-DELAY-TIMING) is enabled, otherwise zero).
 
   
 
@@ -448,7 +451,7 @@ Number of completed index vacuum cycles.
 
 `max_dead_tuple_bytes` `bigint`
 
-Amount of dead tuple data that we can store before needing to perform an index vacuum cycle, based on [maintenance\_work\_mem](https://www.postgresql.org/docs/current/runtime-config-resource.html#GUC-MAINTENANCE-WORK-MEM).
+Amount of dead tuple data that we can store before needing to perform an index vacuum cycle, based on [maintenance\_work\_mem](postgres/docs/current/runtime-config-resource.html/index.md#GUC-MAINTENANCE-WORK-MEM).
 
 `dead_tuple_bytes` `bigint`
 
@@ -468,7 +471,7 @@ Number of indexes processed. This counter only advances when the phase is `vacuu
 
 `delay_time` `double precision`
 
-Total time spent sleeping due to cost-based delay (see [Section 19.10.2](https://www.postgresql.org/docs/current/runtime-config-vacuum.html#RUNTIME-CONFIG-RESOURCE-VACUUM-COST "19.10.2. Cost-based Vacuum Delay")), in milliseconds (if [track\_cost\_delay\_timing](https://www.postgresql.org/docs/current/runtime-config-statistics.html#GUC-TRACK-COST-DELAY-TIMING) is enabled, otherwise zero). This includes the time that any associated parallel workers have slept. However, parallel workers report their sleep time no more frequently than once per second, so the reported value may be slightly stale.
+Total time spent sleeping due to cost-based delay (see [Section 19.10.2](https://www.postgresql.org/docs/current/runtime-config-vacuum.html#RUNTIME-CONFIG-RESOURCE-VACUUM-COST "19.10.2. Cost-based Vacuum Delay")), in milliseconds (if [track\_cost\_delay\_timing](postgres/docs/current/runtime-config-statistics.html/index.md#GUC-TRACK-COST-DELAY-TIMING) is enabled, otherwise zero). This includes the time that any associated parallel workers have slept. However, parallel workers report their sleep time no more frequently than once per second, so the reported value may be slightly stale.
 
   
 
@@ -490,7 +493,7 @@ Description
 
 `vacuuming indexes`
 
-`VACUUM` is currently vacuuming the indexes. If a table has any indexes, this will happen at least once per vacuum, after the heap has been completely scanned. It may happen multiple times per vacuum if [maintenance\_work\_mem](https://www.postgresql.org/docs/current/runtime-config-resource.html#GUC-MAINTENANCE-WORK-MEM) (or, in the case of autovacuum, [autovacuum\_work\_mem](https://www.postgresql.org/docs/current/runtime-config-resource.html#GUC-AUTOVACUUM-WORK-MEM) if set) is insufficient to store the number of dead tuples found.
+`VACUUM` is currently vacuuming the indexes. If a table has any indexes, this will happen at least once per vacuum, after the heap has been completely scanned. It may happen multiple times per vacuum if [maintenance\_work\_mem](postgres/docs/current/runtime-config-resource.html/index.md#GUC-MAINTENANCE-WORK-MEM) (or, in the case of autovacuum, [autovacuum\_work\_mem](postgres/docs/current/runtime-config-resource.html/index.md#GUC-AUTOVACUUM-WORK-MEM) if set) is insufficient to store the number of dead tuples found.
 
 `vacuuming heap`
 
@@ -577,3 +580,4 @@ The WAL sender process is currently performing `pg_backup_stop` to finish the ba
 `transferring wal files`
 
 The WAL sender process is currently transferring all WAL logs generated during the backup. This phase occurs after `waiting for wal archiving to finish` phase if `--wal-method=fetch` is specified in pg\_basebackup. The backup will end when this phase is completed.
+

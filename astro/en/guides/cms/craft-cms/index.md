@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:33:39.072Z"
 content_hash: "24213772d9fb1a2cf8ae655db0749df500ed0399a95be2b84a734232fc4aeee5"
 menu_path: ["Craft CMS & Astro"]
 section_path: []
+nav_prev: {"path": "astro/en/guides/cms/cosmic/index.md", "title": "Cosmic & Astro"}
+nav_next: {"path": "astro/en/guides/cms/craft-cross-cms/index.md", "title": "Craft Cross CMS & Astro"}
 ---
+
 # Craft CMS & Astro
 
 [Craft CMS](https://craftcms.com/) is a flexible open source CMS with an accessible authoring experience. It includes its own front end, but can also be used as a headless CMS to provide content to your Astro project.
@@ -212,3 +215,4 @@ section_path: []
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

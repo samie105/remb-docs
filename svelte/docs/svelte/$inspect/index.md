@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:34:53.793Z"
 content_hash: "1e2a154b84583edd68d50ace16b43db956c9462686c558fee38aeef2fc133915"
 menu_path: ["$inspect"]
 section_path: []
+nav_prev: {"path": "svelte/docs/svelte/$bindable/index.md", "title": "$bindable"}
+nav_next: {"path": "svelte/docs/svelte/$host/index.md", "title": "$host"}
 ---
+
 > `$inspect` only works during development. In a production build it becomes a noop.
 
 The `$inspect` rune is roughly equivalent to `console.log`, with the exception that it will re-run whenever its argument changes. `$inspect` tracks reactive state deeply, meaning that updating something inside an object or array using fine-grained reactivity will cause it to re-fire:
@@ -99,3 +102,4 @@ This rune, added in 5.14, causes the surrounding function to be _traced_ in deve
 previous next
 
 [$bindable](/docs/svelte/$bindable) [$host](/docs/svelte/$host)
+

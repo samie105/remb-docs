@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:49:41.069Z"
 content_hash: "499a5e05e93de520164144cc2a640689403f506e65225747cc0fe87bc8041a50"
 menu_path: ["Where to get help"]
 section_path: []
+nav_prev: {"path": "deno/deno/runtime/contributing/examples/index.md", "title": "Contributing an example"}
+nav_next: {"path": "deno/deno/api/deno/~/Deno.jupyter.html/index.md", "title": "function Deno.jupyter.html"}
 ---
+
 On this page
 
 *   [Community Discord](#community-discord)
@@ -36,3 +39,4 @@ A great place to find interesting articles about best practices, application arc
 Deno provides a wide range of examples and tutorials that might address your problem:
 
 *   [Deno by Example](/examples/): Practical code snippets for common tasks
+

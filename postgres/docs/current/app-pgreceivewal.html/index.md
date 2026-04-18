@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:32:08.822Z"
 content_hash: "65318e30a8cf188a6b5c31c05d5a6252a39ee3c43892cbf9d148ea93f4a368cb"
 menu_path: ["PostgreSQL: Documentation: 18: pg_receivewal"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/logicaldecoding-catalogs.html/index.md", "title": "PostgreSQL: Documentation: 18: 47.5.\u00a0System Catalogs Related to Logical Decoding"}
+nav_next: {"path": "postgres/docs/current/app-pg-dumpall.html/index.md", "title": "PostgreSQL: Documentation: 18: pg_dumpall"}
 ---
+
 pg\_receivewal — stream write-ahead logs from a PostgreSQL server
 
 ## Synopsis
@@ -20,11 +23,11 @@ pg\_receivewal — stream write-ahead logs from a PostgreSQL server
 
 pg\_receivewal is used to stream the write-ahead log from a running PostgreSQL cluster. The write-ahead log is streamed using the streaming replication protocol, and is written to a local directory of files. This directory can be used as the archive location for doing a restore using point-in-time recovery (see [Section 25.3](https://www.postgresql.org/docs/current/continuous-archiving.html "25.3. Continuous Archiving and Point-in-Time Recovery (PITR)")).
 
-pg\_receivewal streams the write-ahead log in real time as it's being generated on the server, and does not wait for segments to complete like [archive\_command](https://www.postgresql.org/docs/current/runtime-config-wal.html#GUC-ARCHIVE-COMMAND) and [archive\_library](https://www.postgresql.org/docs/current/runtime-config-wal.html#GUC-ARCHIVE-LIBRARY) do. For this reason, it is not necessary to set [archive\_timeout](https://www.postgresql.org/docs/current/runtime-config-wal.html#GUC-ARCHIVE-TIMEOUT) when using pg\_receivewal.
+pg\_receivewal streams the write-ahead log in real time as it's being generated on the server, and does not wait for segments to complete like [archive\_command](postgres/docs/current/runtime-config-wal.html/index.md#GUC-ARCHIVE-COMMAND) and [archive\_library](postgres/docs/current/runtime-config-wal.html/index.md#GUC-ARCHIVE-LIBRARY) do. For this reason, it is not necessary to set [archive\_timeout](postgres/docs/current/runtime-config-wal.html/index.md#GUC-ARCHIVE-TIMEOUT) when using pg\_receivewal.
 
-Unlike the WAL receiver of a PostgreSQL standby server, pg\_receivewal by default flushes WAL data only when a WAL file is closed. The option `--synchronous` must be specified to flush WAL data in real time. Since pg\_receivewal does not apply WAL, you should not allow it to become a synchronous standby when [synchronous\_commit](https://www.postgresql.org/docs/current/runtime-config-wal.html#GUC-SYNCHRONOUS-COMMIT) equals `remote_apply`. If it does, it will appear to be a standby that never catches up, and will cause transaction commits to block. To avoid this, you should either configure an appropriate value for [synchronous\_standby\_names](https://www.postgresql.org/docs/current/runtime-config-replication.html#GUC-SYNCHRONOUS-STANDBY-NAMES), or specify `application_name` for pg\_receivewal that does not match it, or change the value of `synchronous_commit` to something other than `remote_apply`.
+Unlike the WAL receiver of a PostgreSQL standby server, pg\_receivewal by default flushes WAL data only when a WAL file is closed. The option `--synchronous` must be specified to flush WAL data in real time. Since pg\_receivewal does not apply WAL, you should not allow it to become a synchronous standby when [synchronous\_commit](postgres/docs/current/runtime-config-wal.html/index.md#GUC-SYNCHRONOUS-COMMIT) equals `remote_apply`. If it does, it will appear to be a standby that never catches up, and will cause transaction commits to block. To avoid this, you should either configure an appropriate value for [synchronous\_standby\_names](postgres/docs/current/runtime-config-replication.html/index.md#GUC-SYNCHRONOUS-STANDBY-NAMES), or specify `application_name` for pg\_receivewal that does not match it, or change the value of `synchronous_commit` to something other than `remote_apply`.
 
-The write-ahead log is streamed over a regular PostgreSQL connection and uses the replication protocol. The connection must be made with a user having `REPLICATION` permissions (see [Section 21.2](https://www.postgresql.org/docs/current/role-attributes.html "21.2. Role Attributes")) or a superuser, and `pg_hba.conf` must permit the replication connection. The server must also be configured with [max\_wal\_senders](https://www.postgresql.org/docs/current/runtime-config-replication.html#GUC-MAX-WAL-SENDERS) set high enough to leave at least one session available for the stream.
+The write-ahead log is streamed over a regular PostgreSQL connection and uses the replication protocol. The connection must be made with a user having `REPLICATION` permissions (see [Section 21.2](https://www.postgresql.org/docs/current/role-attributes.html "21.2. Role Attributes")) or a superuser, and `pg_hba.conf` must permit the replication connection. The server must also be configured with [max\_wal\_senders](postgres/docs/current/runtime-config-replication.html/index.md#GUC-MAX-WAL-SENDERS) set high enough to leave at least one session available for the stream.
 
 The starting point of the write-ahead log streaming is calculated when pg\_receivewal starts:
 
@@ -176,7 +179,7 @@ The environment variable `PG_COLOR` specifies whether to use color in diagnostic
 
 ## Notes
 
-When using pg\_receivewal instead of [archive\_command](https://www.postgresql.org/docs/current/runtime-config-wal.html#GUC-ARCHIVE-COMMAND) or [archive\_library](https://www.postgresql.org/docs/current/runtime-config-wal.html#GUC-ARCHIVE-LIBRARY) as the main WAL backup method, it is strongly recommended to use replication slots. Otherwise, the server is free to recycle or remove write-ahead log files before they are backed up, because it does not have any information, either from [archive\_command](https://www.postgresql.org/docs/current/runtime-config-wal.html#GUC-ARCHIVE-COMMAND) or [archive\_library](https://www.postgresql.org/docs/current/runtime-config-wal.html#GUC-ARCHIVE-LIBRARY) or the replication slots, about how far the WAL stream has been archived. Note, however, that a replication slot will fill up the server's disk space if the receiver does not keep up with fetching the WAL data.
+When using pg\_receivewal instead of [archive\_command](postgres/docs/current/runtime-config-wal.html/index.md#GUC-ARCHIVE-COMMAND) or [archive\_library](postgres/docs/current/runtime-config-wal.html/index.md#GUC-ARCHIVE-LIBRARY) as the main WAL backup method, it is strongly recommended to use replication slots. Otherwise, the server is free to recycle or remove write-ahead log files before they are backed up, because it does not have any information, either from [archive\_command](postgres/docs/current/runtime-config-wal.html/index.md#GUC-ARCHIVE-COMMAND) or [archive\_library](postgres/docs/current/runtime-config-wal.html/index.md#GUC-ARCHIVE-LIBRARY) or the replication slots, about how far the WAL stream has been archived. Note, however, that a replication slot will fill up the server's disk space if the receiver does not keep up with fetching the WAL data.
 
 pg\_receivewal will preserve group permissions on the received WAL files if group permissions are enabled on the source cluster.
 
@@ -187,3 +190,4 @@ To stream the write-ahead log from the server at `mydbserver` and store it in th
 ```
 $
 ```
+

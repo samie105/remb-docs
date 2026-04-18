@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:43:09.554Z"
 content_hash: "5f71e1148752c9861ddcd7344ebeca0e215565ef0cc3c7dbe71a1cc804a441f0"
 menu_path: ["PostgreSQL: Documentation: 18: 39.4. Rules on INSERT, UPDATE, and DELETE"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/infoschema-key-column-usage.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.32.\u00a0key_column_usage"}
+nav_next: {"path": "postgres/docs/current/libpq-copy.html/index.md", "title": "PostgreSQL: Documentation: 18: 32.10.\u00a0Functions Associated with the COPY Command"}
 ---
+
 Rules that are defined on `INSERT`, `UPDATE`, and `DELETE` are significantly different from the view rules described in the previous sections. First, their `CREATE RULE` command allows more:
 
 Second, they don't modify the query tree in place. Instead they create zero or more new query trees and can throw away the original one.
@@ -502,3 +505,4 @@ SELECT \* FROM shoelace;
 A `DELETE` on a view, with a subquery qualification that in total uses 4 nesting/joined views, where one of them itself has a subquery qualification containing a view and where calculated view columns are used, gets rewritten into one single query tree that deletes the requested data from a real table.
 
 There are probably only a few situations out in the real world where such a construct is necessary. But it makes you feel comfortable that it works.
+

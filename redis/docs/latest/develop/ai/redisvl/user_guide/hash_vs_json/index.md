@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:03:24.959Z"
 content_hash: "54fb97f8f004785e05b4134d10879bd06c537eba8908f24621f973433a964fe1"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        RedisVL","→","RedisVL","→\n      \n        User Guides","→","User Guides","→\n      \n        Hash vs JSON Storage","→","Hash vs JSON Storage"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        RedisVL","→","RedisVL","→\n      \n        User Guides","→","User Guides","→\n      \n        Hash vs JSON Storage","→","Hash vs JSON Storage"]
+nav_prev: {"path": "redis/docs/latest/operate/rs/monitoring/get-started/index.md", "title": "Get started with monitoring Redis Software"}
+nav_next: {"path": "redis/docs/latest/integrate/hiredis/index.md", "title": "C client for Redis"}
 ---
+
 # Hash vs JSON Storage
 
 Out of the box, Redis provides a [variety of data structures](https://redis.com/redis-enterprise/data-structures/) that can adapt to your domain specific applications and use cases. In this notebook, we will demonstrate how to use RedisVL with both [Hash](https://redis.io/docs/latest/develop/data-types/#hashes) and [JSON](https://redis.io/docs/latest/develop/data-types/json/) data.
@@ -640,3 +643,4 @@ bike_index.delete()
 ```
 
 ## On this page
+

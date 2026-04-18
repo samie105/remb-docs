@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:02:39.358Z"
 content_hash: "89e688f34feac3ea0d61438a971b1ce7c3c7259f03c243af819f36f0493f07e8"
 menu_path: ["Drizzle ORM - Goodies"]
 section_path: []
+nav_prev: {"path": "drizzle/docs/custom-types/index.md", "title": "Common way of defining custom types"}
+nav_next: {"path": "drizzle/docs/zod/index.md", "title": "zod"}
 ---
+
 ## Type API[](#type-api)
 
 To retrieve a type from your table schema for `select` and `insert` queries, you can make use of our type helpers.
@@ -433,7 +436,7 @@ You can get a typed columns map, very useful when you need to omit certain colum
 
 IMPORTANT
 
-`getColumns` available starting from `drizzle-orm@1.0.0-beta.2`(read more [here](https://orm.drizzle.team/docs/upgrade-v1))
+`getColumns` available starting from `drizzle-orm@1.0.0-beta.2`(read more [here](drizzle/docs/upgrade-v1/index.md))
 
 If you are on pre-1 version(like `0.45.1`) then use `getTableColumns`
 
@@ -747,3 +750,4 @@ import * as schema from "./schema"
 
 const db = drizzle.mock({ schema });
 ```
+

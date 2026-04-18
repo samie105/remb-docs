@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:41:11.268Z"
 content_hash: "c028b660ed66c96a72bd0fbcf2ce201e190b9aac9f0ad80b8d752575e267c971"
 menu_path: ["Migrating from NuxtJS"]
 section_path: []
+nav_prev: {"path": "astro/en/guides/migrate-to-astro/from-nextjs/index.md", "title": "Migrating from Next.js"}
+nav_next: {"path": "astro/en/guides/migrate-to-astro/from-pelican/index.md", "title": "Migrating from Pelican"}
 ---
+
 # Migrating from NuxtJS
 
 Here are some key concepts and migration strategies to help you get started. Use the rest of our docs and our [Discord community](https://astro.build/chat) to keep going!
@@ -502,3 +505,4 @@ Here’s how to recreate that in `src/pages/index.astro`, replacing `asyncData()
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

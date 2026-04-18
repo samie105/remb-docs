@@ -9,15 +9,9 @@ last_crawled_at: "2026-04-18T16:47:46.813Z"
 content_hash: "affd0381b6ba1d27dc48b2a4dc1f1b70945b8315f26c9c2d7e973a6a78447775"
 menu_path: ["grid-template-rows"]
 section_path: []
+nav_prev: {"path": "tailwind/docs/grid-column/index.md", "title": "grid-column"}
+nav_next: {"path": "tailwind/docs/grid-row/index.md", "title": "grid-row"}
 ---
-[](/)
-
-[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
-
-1.  Flexbox & Grid
-2.  grid-template-rows
-
-Flexbox & Grid
 
 # grid-template-rows
 
@@ -153,3 +147,4 @@ Make your ideas look awesome, without relying on a designer.
 ](https://www.refactoringui.com/?ref=sidebar)
 
 Copyright © 2026 Tailwind Labs Inc.·[Trademark Policy](/brand)
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:39:04.105Z"
 content_hash: "cbcd8728a6301148b4e8b8f1b26eca113d0c21afb9cc935ab6d572636565ea08"
 menu_path: ["querystring - Node documentation"]
 section_path: []
+nav_prev: {"path": "deno/deno/api/node/punycode/index.md", "title": "punycode - Node documentation"}
+nav_next: {"path": "deno/deno/api/node/process/index.md", "title": "process - Node documentation"}
 ---
+
 ### Usage in Deno
 
 ```typescript
@@ -94,3 +97,4 @@ v
 [encode](.././querystring/~/encode "encode")
 
 The querystring.encode() function is an alias for querystring.stringify().
+

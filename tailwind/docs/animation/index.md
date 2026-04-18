@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:12:33.725Z"
 content_hash: "4866e5774ccedc4d61b4fb5b197b353de5074dd84d548c19b43c940944d43a40"
 menu_path: ["animation"]
 section_path: []
+nav_prev: {"path": "tailwind/docs/transition-delay/index.md", "title": "transition-delay"}
+nav_next: {"path": "tailwind/docs/backface-visibility/index.md", "title": "backface-visibility"}
 ---
+
 Transitions & Animation
 
 Utilities for animating elements with CSS animations.
@@ -112,7 +115,7 @@ Prefix an `animation` utility with a breakpoint variant like `md:` to only apply
 <div class="animate-none md:animate-spin ...">  <!-- ... --></div>
 ```
 
-Learn more about using variants in the [variants documentation](https://tailwindcss.com/docs/hover-focus-and-other-states).
+Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).
 
 ## [Customizing your theme](#customizing-your-theme)
 
@@ -128,4 +131,5 @@ Now the `animate-wiggle` utility can be used in your markup:
 <div class="animate-wiggle">  <!-- ... --></div>
 ```
 
-Learn more about customizing your theme in the [theme documentation](https://tailwindcss.com/docs/theme#customizing-your-theme).
+Learn more about customizing your theme in the [theme documentation](tailwind/docs/theme/index.md#customizing-your-theme).
+

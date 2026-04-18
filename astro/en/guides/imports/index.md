@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:38:35.942Z"
 content_hash: "c0b9a989437ad408cdb34fd0c1d1d3c1c5f7d76859a95dfb224e224a3a934a43"
 menu_path: ["Imports reference"]
 section_path: []
+nav_prev: {"path": "astro/en/reference/cli-reference/index.md", "title": "CLI Commands"}
+nav_next: {"path": "astro/en/reference/routing-reference/index.md", "title": "Routing Reference"}
 ---
+
 # Imports reference
 
 Astro supports most static assets with zero configuration required. You can use the `import` statement anywhere in your project JavaScript (including your Astro frontmatter) and Astro will include a built, optimized copy of that static asset in your final build. `@import` is also supported inside of CSS & `<style>` tags.
@@ -302,3 +305,4 @@ With **Vite** and compatible **Rollup** plugins, you can import file types which
 ![](/houston_chef.webp) **Related recipe:** [Installing a Vite or Rollup plugin](/en/recipes/add-yaml-support/)
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

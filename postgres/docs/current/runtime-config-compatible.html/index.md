@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:53:19.476Z"
 content_hash: "c15586e2cc2a798d2c2a56dd97db695a54e192c55354493f5e8e2f4722adc5b2"
 menu_path: ["PostgreSQL: Documentation: 18: 19.13. Version and Platform Compatibility"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/functions-subquery.html/index.md", "title": "PostgreSQL: Documentation: 18: 9.24.\u00a0Subquery Expressions"}
+nav_next: {"path": "postgres/docs/current/app-pgbasebackup.html/index.md", "title": "PostgreSQL: Documentation: 18: pg_basebackup"}
 ---
+
 Development Versions: [devel](https://www.postgresql.org/docs/devel/runtime-config-compatible.html "PostgreSQL devel - 19.13. Version and Platform Compatibility")
 
 ### 19.13.1. Previous PostgreSQL Versions [#](#RUNTIME-CONFIG-COMPATIBLE-VERSION)
@@ -71,3 +74,4 @@ Note that this setting must not be regarded as a security feature. It only disab
 Turning this setting off is intended for environments where the configuration of PostgreSQL is managed by some external tool. In such environments, a well-intentioned superuser might _mistakenly_ use `ALTER SYSTEM` to change the configuration instead of using the external tool. This might result in unintended behavior, such as the external tool overwriting the change at some later point in time when it updates the configuration. Setting this parameter to `off` can help avoid such mistakes.
 
 This parameter only controls the use of `ALTER SYSTEM`. The settings stored in `postgresql.auto.conf` take effect even if `allow_alter_system` is set to `off`.
+

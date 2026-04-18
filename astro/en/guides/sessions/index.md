@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:41:26.905Z"
 content_hash: "d139733edef7cf6167f49f6ff012ef00b629076cdfe5c0e85dabe77e62f0bd2f"
 menu_path: ["Sessions"]
 section_path: []
+nav_prev: {"path": "astro/en/guides/actions/index.md", "title": "Actions"}
+nav_next: {"path": "astro/en/upgrade-astro/index.md", "title": "Upgrade Astro"}
 ---
+
 # Sessions
 
 **Added in:** `astro@5.7.0`
@@ -112,3 +115,4 @@ Astro.session?.set('user', { id: 1, name: 'Houston' });// Error: Argument of typ
 ```
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

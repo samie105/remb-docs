@@ -9,86 +9,10 @@ last_crawled_at: "2026-04-18T17:02:14.139Z"
 content_hash: "549a3d7f4060ee8922b0249a12da4e7f74029942c8aa1d3b1e544bc644f7e114"
 menu_path: ["YAML"]
 section_path: []
+nav_prev: {"path": "bun/bun/docs/runtime/workers/index.md", "title": "Workers"}
+nav_next: {"path": "bun/bun/docs/test/code-coverage/index.md", "title": "Code coverage"}
 ---
-In Bun, YAML is a first-class citizen alongside JSON and TOML. You can:
 
-*   Parse YAML strings with `Bun.YAML.parse`
-*   `import` & `require` YAML files as modules at runtime (including hot reloading & watch mode support)
-*   `import` & `require` YAML files in frontend apps via bun’s bundler
-
-* * *
-
-## Conformance
-
-Bun’s YAML parser currently passes over 90% of the official YAML test suite. While we’re actively working on reaching 100% conformance, the current implementation covers the vast majority of real-world use cases. The parser is written in Zig for optimal performance and is continuously being improved.
-
-* * *
-
-## Runtime API
-
-### `Bun.YAML.parse()`
-
-Parse a YAML string into a JavaScript object.
-
-```
-import { YAML } from "bun";
-const text = `
-name: John Doe
-age: 30
-email: john@example.com
-hobbies:
-  - reading
-  - coding
-  - hiking
-`;
-
-const data = YAML.parse(text);
-console.log(data);
-// {
-//   name: "John Doe",
-//   age: 30,
-//   email: "john@example.com",
-//   hobbies: ["reading", "coding", "hiking"]
-// }
-```
-
-#### Multi-document YAML
-
-When parsing YAML with multiple documents (separated by `---`), `Bun.YAML.parse()` returns an array:
-
-```
-const multiDoc = `
----
-name: Document 1
----
-name: Document 2
----
-name: Document 3
-`;
-
-const docs = Bun.YAML.parse(multiDoc);
-console.log(docs);
-// [
-//   { name: "Document 1" },
-//   { name: "Document 2" },
-//   { name: "Document 3" }
-// ]
-```
-
-#### Supported YAML Features
-
-Bun’s YAML parser supports the full YAML 1.2 specification, including:
-
-*   **Scalars**: strings, numbers, booleans, null values
-*   **Collections**: sequences (arrays) and mappings (objects)
-*   **Anchors and Aliases**: reusable nodes with `&` and `*`
-*   **Tags**: type hints like `!!str`, `!!int`, `!!float`, `!!bool`, `!!null`
-*   **Multi-line strings**: literal (`|`) and folded (`>`) scalars
-*   **Comments**: using `#`
-*   **Directives**: `%YAML` and `%TAG`
-
-```
-const yaml = `
 # Employee record
 employee: &emp
   name: Jane Smith
@@ -507,3 +431,4 @@ async function loadUserSettings(userId: string) {
   }
 }
 ```
+

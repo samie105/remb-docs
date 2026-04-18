@@ -9,15 +9,9 @@ last_crawled_at: "2026-04-18T17:02:49.797Z"
 content_hash: "35f91d1288619279dc20b95567d8ba238981c8e6af8998625b5d8932fa016752"
 menu_path: ["border-style"]
 section_path: []
+nav_prev: {"path": "tailwind/docs/border-color/index.md", "title": "border-color"}
+nav_next: {"path": "tailwind/docs/outline-width/index.md", "title": "outline-width"}
 ---
-[](/)
-
-[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
-
-1.  Borders
-2.  border-style
-
-Borders
 
 # border-style
 
@@ -151,3 +145,4 @@ Make your ideas look awesome, without relying on a designer.
 ](https://www.refactoringui.com/?ref=sidebar)
 
 Copyright © 2026 Tailwind Labs Inc.·[Trademark Policy](/brand)
+

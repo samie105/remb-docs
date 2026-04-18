@@ -9,110 +9,10 @@ last_crawled_at: "2026-04-18T17:02:53.187Z"
 content_hash: "e526f403d65500393cddd6ad80c0fc95abb05c305c1429ae4448d0b88437e1fe"
 menu_path: ["Installation"]
 section_path: []
+nav_next: {"path": "bun/bun/docs/pm/bunx/index.md", "title": "bunx"}
+nav_prev: {"path": "bun/bun/docs/guides/write-file/unlink/index.md", "title": "Delete a file"}
 ---
-[Skip to main content](#content-area)
 
-[Bun home page![light logo](https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z_zHyy/logo/logo-with-wordmark-dark.svg?fit=max&auto=format&n=JUhaF6Mf68z_zHyy&q=85&s=3f55cd23822028e40658b192c927f3e4)![dark logo](https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z_zHyy/logo/logo-with-wordmark-light.svg?fit=max&auto=format&n=JUhaF6Mf68z_zHyy&q=85&s=8a0c5928d9dc3631f0d33e17c257e2ec)](/docs)
-
-[Runtime
-
-](/docs)[Package Manager
-
-](/docs/pm/cli/install)[Bundler
-
-](/docs/bundler)[Test Runner
-
-](/docs/test)[Guides
-
-](/docs/guides)[Reference
-
-](https://bun.com/reference)[Blog
-
-](https://bun.com/blog)[Feedback
-
-](/docs/feedback)
-
-## 
-
-[​
-
-](#overview)
-
-Overview
-
-Bun ships as a single, dependency-free executable. You can install it via script, package manager, or Docker across macOS, Linux, and Windows.
-
-After installation, verify with `bun --version` and `bun --revision`.
-
-## 
-
-[​
-
-](#installation)
-
-Installation
-
-*   macOS & Linux
-    
-*   Windows
-    
-*   Package Managers
-    
-*   Docker
-    
-
-```
-curl -fsSL https://bun.com/install | bash
-```
-
-**Linux users**  The `unzip` package is required to install Bun. Use `sudo apt install unzip` to install the unzip package. Kernel version 5.6 or higher is strongly recommended, but the minimum is 5.1. Use `uname -r` to check Kernel version.
-
-```
-powershell -c "irm bun.sh/install.ps1|iex"
-```
-
-Bun requires Windows 10 version 1809 or later.
-
-For support and discussion, please join the **#windows** channel on our [Discord](https://bun.com/discord).
-
-```
-npm install -g bun # the last `npm` command you'll ever need
-```
-
-Bun provides a Docker image that supports both Linux x64 and arm64.
-
-Docker
-
-```
-docker pull oven/bun
-docker run --rm --init --ulimit memlock=-1:-1 oven/bun
-```
-
-### 
-
-[​
-
-](#image-variants)
-
-Image Variants
-
-There are also image variants for different operating systems:
-
-Docker
-
-```
-docker pull oven/bun:debian
-docker pull oven/bun:slim
-docker pull oven/bun:distroless
-docker pull oven/bun:alpine
-```
-
-To check that Bun was installed successfully, open a new terminal window and run:
-
-terminal
-
-```
-bun --version
 # Output: 1.x.y
 
 # See the precise commit of `oven-sh/bun` that you're using
@@ -445,3 +345,5 @@ Quickstart
 Next
 
 ](/docs/quickstart)
+
+

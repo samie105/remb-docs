@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:07:46.847Z"
 content_hash: "623e128d962d04a70ff14de63a4727640e254da61ad73a362688877d6823e1e6"
 menu_path: ["Drizzle ORM - Upsert Query"]
 section_path: []
+nav_prev: {"path": "drizzle/docs/guides/update-many-with-different-value/index.md", "title": "Drizzle ORM - Update many with different values for each row"}
+nav_next: {"path": "drizzle/docs/guides/vector-similarity-search/index.md", "title": "Drizzle ORM - Vector similarity search with pgvector extension"}
 ---
+
 Drizzle | Upsert Query
 
 PostgreSQL
@@ -20,7 +23,7 @@ SQLite
 
 ### PostgreSQL and SQLite[](#postgresql-and-sqlite)
 
-To implement an upsert query in PostgreSQL and SQLite (skip to [MySQL](https://orm.drizzle.team/docs/guides/upsert#mysql)) with Drizzle you can use `.onConflictDoUpdate()` method:
+To implement an upsert query in PostgreSQL and SQLite (skip to [MySQL](drizzle/docs/guides/upsert/index.md#mysql)) with Drizzle you can use `.onConflictDoUpdate()` method:
 
 ```
 import { users } from './schema';
@@ -99,7 +102,7 @@ Drizzle has simple and flexible API, which lets you easily create custom solutio
 
 IMPORTANT
 
-`getColumns` available starting from `drizzle-orm@1.0.0-beta.2`(read more [here](https://orm.drizzle.team/docs/upgrade-v1))
+`getColumns` available starting from `drizzle-orm@1.0.0-beta.2`(read more [here](drizzle/docs/upgrade-v1/index.md))
 
 If you are on pre-1 version(like `0.45.1`) then use `getTableColumns`
 
@@ -444,3 +447,4 @@ await db
 insert into users (`id`, `name`, `email`, `age`) values (1, 'John', 'john@email.com', 29)
   on duplicate key update id = 1, name = 'John', email = email, age = 29;
 ```
+

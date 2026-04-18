@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:47:25.037Z"
 content_hash: "2e1583f7a62bb64076b6e37416fbd8259d0430daca681f736e2fd6a66c5cb968"
 menu_path: ["Platform","Platform","Billing","Billing","Credits","Credits"]
 section_path: ["Platform","Platform","Billing","Billing","Credits","Credits"]
+nav_prev: {"path": "supabase/docs/guides/platform/compute-and-disk/index.md", "title": "Compute and Disk"}
+nav_next: {"path": "supabase/docs/guides/platform/database-size/index.md", "title": "Understanding Database and Disk Size"}
 ---
+
 # 
 
 Credits
@@ -60,3 +63,4 @@ Yes, you can transfer credits to another organization. Submit a [support ticket]
 ### Can I get a refund of my unused credits?[#](#can-i-get-a-refund-of-my-unused-credits)
 
 No, we do not provide refunds. Please refer to our [Terms of Service](/terms#1-fees).
+

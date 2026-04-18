@@ -9,8 +9,11 @@ last_crawled_at: "2026-04-18T16:48:02.507Z"
 content_hash: "2b7f09314a9d546f0970734eddfb687e595504bdc0ef4bc79077c3b0fe6c66ce"
 menu_path: ["Composite types"]
 section_path: []
+nav_prev: {"path": "prisma/docs/orm/prisma-client/special-fields-and-types/index.md", "title": "Fields & types"}
+nav_next: {"path": "prisma/docs/orm/prisma-client/special-fields-and-types/null-and-undefined/index.md", "title": "Null and undefined"}
 ---
-[Composite types](https://www.prisma.io/docs/orm/prisma-schema/data-model/models), known as [embedded documents](https://www.mongodb.com/docs/manual/data-modeling/#embedded-data) in MongoDB, allow you to embed records within other records.
+
+[Composite types](prisma/docs/orm/prisma-schema/data-model/models/index.md), known as [embedded documents](https://www.mongodb.com/docs/manual/data-modeling/#embedded-data) in MongoDB, allow you to embed records within other records.
 
 This page explains how to:
 
@@ -81,18 +84,18 @@ In this schema, the `Product` model has a `Photo[]` composite type, and the `Ord
 
 There are currently some limitations when using composite types in Prisma Client:
 
-*   [`findUnique()`](https://www.prisma.io/docs/orm/reference/prisma-client-reference#findunique) can't filter on composite types
-*   [`aggregate`](https://www.prisma.io/docs/orm/prisma-client/queries/aggregation-grouping-summarizing#aggregate), [`groupBy()`](https://www.prisma.io/docs/orm/prisma-client/queries/aggregation-grouping-summarizing#group-by), [`count`](https://www.prisma.io/docs/orm/prisma-client/queries/aggregation-grouping-summarizing#count) don’t support composite operations
+*   [`findUnique()`](prisma/docs/orm/reference/prisma-client-reference/index.md#findunique) can't filter on composite types
+*   [`aggregate`](prisma/docs/orm/prisma-client/queries/aggregation-grouping-summarizing/index.md#aggregate), [`groupBy()`](prisma/docs/orm/prisma-client/queries/aggregation-grouping-summarizing/index.md#group-by), [`count`](prisma/docs/orm/prisma-client/queries/aggregation-grouping-summarizing/index.md#count) don’t support composite operations
 
 When you carry out a database read on a composite type and all of the following conditions are true, Prisma Client inserts the default value into the result:
 
-*   A field on the composite type is [required](https://www.prisma.io/docs/orm/prisma-schema/data-model/models#optional-and-mandatory-fields), and
-*   this field has a [default value](https://www.prisma.io/docs/orm/prisma-schema/data-model/models#defining-a-default-value), and
+*   A field on the composite type is [required](prisma/docs/orm/prisma-schema/data-model/models/index.md#optional-and-mandatory-fields), and
+*   this field has a [default value](prisma/docs/orm/prisma-schema/data-model/models/index.md#defining-a-default-value), and
 *   this field is not present in the returned document or documents.
 
 Note:
 
-*   This is the same behavior as with [model fields](https://www.prisma.io/docs/orm/reference/prisma-schema-reference#model-field-scalar-types).
+*   This is the same behavior as with [model fields](prisma/docs/orm/reference/prisma-schema-reference/index.md#model-field-scalar-types).
 *   On read operations, Prisma Client inserts the default value into the result, but does not insert the default value into the database.
 
 In our example schema, suppose that you add a required field to `photo`. This field, `bitDepth`, has a default value:
@@ -107,7 +110,7 @@ type Photo {
 ...
 ```
 
-Suppose that you then run `npx prisma db push` to [update your database](https://www.prisma.io/docs/orm/reference/prisma-cli-reference#db-push) and regenerate your Prisma Client with `npx prisma generate`. Then, you run the following application code:
+Suppose that you then run `npx prisma db push` to [update your database](prisma/docs/orm/reference/prisma-cli-reference/index.md#db-push) and regenerate your Prisma Client with `npx prisma generate`. Then, you run the following application code:
 
 ```
 console.dir(await prisma.product.findMany({}), { depth: Infinity });
@@ -497,7 +500,7 @@ const order = await prisma.order.update({
 });
 ```
 
-You can use [filters](https://www.prisma.io/docs/orm/prisma-client/special-fields-and-types/composite-types#finding-records-that-contain-composite-types-with-find-and-findmany) within `updateMany` to update all records that match a composite type. The following example uses the `is` filter to match the street name from a shipping address on a list of orders:
+You can use [filters](prisma/docs/orm/prisma-client/special-fields-and-types/composite-types/index.md#finding-records-that-contain-composite-types-with-find-and-findmany) within `updateMany` to update all records that match a composite type. The following example uses the `is` filter to match the street name from a shipping address on a list of orders:
 
 ```
 const orders = await prisma.order.updateMany({
@@ -625,7 +628,7 @@ const deleteProduct = await prisma.product.deleteMany({
 });
 ```
 
-You can also use [filters](https://www.prisma.io/docs/orm/prisma-client/special-fields-and-types/composite-types#finding-records-that-contain-composite-types-with-find-and-findmany) to delete records that match a composite type. The example below uses the `some` filter to delete products that contain a certain photo:
+You can also use [filters](prisma/docs/orm/prisma-client/special-fields-and-types/composite-types/index.md#finding-records-that-contain-composite-types-with-find-and-findmany) to delete records that match a composite type. The example below uses the `some` filter to delete products that contain a certain photo:
 
 ```
 const product = await prisma.product.deleteMany({
@@ -704,7 +707,7 @@ Note: MongoDB throws an error if you try to store the same value in two separate
 
 ### [Use Prisma ORM relations to enforce unique values in a record](#use-prisma-orm-relations-to-enforce-unique-values-in-a-record)
 
-In the example above, MongoDB did not enforce the unique constraint on a nested address name. However, you can model your data differently to enforce unique values in a record. To do so, use Prisma ORM [relations](https://www.prisma.io/docs/orm/prisma-schema/data-model/relations) to turn the composite type into a collection. Set a relationship to this collection and place a unique constraint on the field that you want to be unique.
+In the example above, MongoDB did not enforce the unique constraint on a nested address name. However, you can model your data differently to enforce unique values in a record. To do so, use Prisma ORM [relations](prisma/docs/orm/prisma-schema/data-model/relations/index.md) to turn the composite type into a collection. Set a relationship to this collection and place a unique constraint on the field that you want to be unique.
 
 In the following example, MongoDB enforces unique values in a record. There is a relation between `Mailbox` and the `Address` model. Also, the `name` field in the `Address` model has a unique constraint.
 
@@ -740,3 +743,4 @@ await prisma.MailBox.create({
 ```
 
 If you run the above code, MongoDB enforces the unique constraint. It does not allow your application to add two addresses with the name `alice@prisma.io`.
+

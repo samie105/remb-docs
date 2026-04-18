@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:38:11.111Z"
 content_hash: "180aa62f16d5d87e31c96e5d19fa2a9fb0d2bfc25dcf7b5ac287a0ac3b888b13"
 menu_path: ["Auth","Auth","OAuth 2.1 Server","OAuth 2.1 Server","Overview","Overview"]
 section_path: ["Auth","Auth","OAuth 2.1 Server","OAuth 2.1 Server","Overview","Overview"]
+nav_prev: {"path": "supabase/docs/guides/auth/managing-user-data/index.md", "title": "User Management"}
+nav_next: {"path": "supabase/docs/guides/auth/password-security/index.md", "title": "Password security"}
 ---
+
 # 
 
 OAuth 2.1 Server
@@ -103,3 +106,4 @@ Control data access with Row Level Security policies for OAuth clients.
 
 *   [GitHub Discussion](https://github.com/orgs/supabase/discussions/38022) - Share your use cases and help shape the roadmap
 *   [Discord Community](https://discord.supabase.com/) - Get help and share what you're building
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:44:29.785Z"
 content_hash: "0a786a4220e494269ad344d521ebfee742c0f0ccf5be3a2dfd67ae346283f79e"
 menu_path: ["Expected image options."]
 section_path: []
+nav_prev: {"path": "astro/en/reference/errors/env-prefix-conflicts-with-secret/index.md", "title": "envPrefix conflicts with secret environment variables"}
+nav_next: {"path": "astro/en/reference/errors/env-unsupported-get-secret/index.md", "title": "Unsupported astro:env getSecret"}
 ---
+
 # Expected image options.
 
 > **ExpectedImageOptions**: Expected getImage() parameter to be an object. Received `OPTIONS`.
@@ -32,3 +35,4 @@ In most cases, this error happens because parameters were passed directly instea
 *   [Images](/en/guides/images/)
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

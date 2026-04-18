@@ -9,15 +9,9 @@ last_crawled_at: "2026-04-18T17:18:30.711Z"
 content_hash: "1a7533369d15607173e5e705c050eada10181c518abbf91a3acefb7e0931a6f9"
 menu_path: ["fill"]
 section_path: []
+nav_prev: {"path": "tailwind/docs/will-change/index.md", "title": "will-change"}
+nav_next: {"path": "tailwind/docs/stroke/index.md", "title": "stroke"}
 ---
-[](/)
-
-[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
-
-1.  SVG
-2.  fill
-
-SVG
 
 # fill
 
@@ -156,3 +150,4 @@ Make your ideas look awesome, without relying on a designer.
 ](https://www.refactoringui.com/?ref=sidebar)
 
 Copyright © 2026 Tailwind Labs Inc.·[Trademark Policy](/brand)
+

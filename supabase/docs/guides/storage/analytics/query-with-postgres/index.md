@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:01:07.842Z"
 content_hash: "8d19c18e1b8d51d0de1d81674e5de2622b1152b52fa1aee0f476a9f563b77f6e"
 menu_path: ["Storage","Storage","Analytics Buckets","Analytics Buckets","Query with Postgres","Query with Postgres"]
 section_path: ["Storage","Storage","Analytics Buckets","Analytics Buckets","Query with Postgres","Query with Postgres"]
+nav_prev: {"path": "supabase/docs/guides/storage/buckets/creating-buckets/index.md", "title": "Creating Buckets"}
+nav_next: {"path": "supabase/docs/guides/storage/buckets/fundamentals/index.md", "title": "Storage Buckets"}
 ---
+
 # 
 
 Query with Postgres
@@ -75,3 +78,4 @@ Join with transactional data:
 ## Manual installation[#](#manual-installation)
 
 For advanced use cases, you can manually install and configure the Iceberg Foreign Data Wrapper. See the [Iceberg Foreign Data Wrapper documentation](/docs/guides/database/extensions/wrappers/iceberg) for detailed instructions.
+

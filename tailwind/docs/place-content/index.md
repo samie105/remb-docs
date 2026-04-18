@@ -9,15 +9,9 @@ last_crawled_at: "2026-04-18T16:50:29.630Z"
 content_hash: "1a389e05e93b4251aecdd827f83f5fee1c86f99a88ad996378a79bbe477700ad"
 menu_path: ["place-content"]
 section_path: []
+nav_prev: {"path": "tailwind/docs/align-self/index.md", "title": "align-self"}
+nav_next: {"path": "tailwind/docs/place-items/index.md", "title": "place-items"}
 ---
-[](/)
-
-[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
-
-1.  Flexbox & Grid
-2.  place-content
-
-Flexbox & Grid
 
 # place-content
 
@@ -215,3 +209,4 @@ Short, tactical video lessons from the creator of Tailwind CSS, delivered direct
 [Get the free course](/build-uis-that-dont-suck)
 
 Copyright © 2026 Tailwind Labs Inc.·[Trademark Policy](/brand)
+

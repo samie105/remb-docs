@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:57:25.310Z"
 content_hash: "fa2025a05ca6690c535fbb59b82482da3fb278f45ea364a3f952a7a7450b7564"
 menu_path: ["Edge Functions","Edge Functions","Third-Party Tools","Third-Party Tools","Text To Speech with ElevenLabs","Text To Speech with ElevenLabs"]
 section_path: ["Edge Functions","Edge Functions","Third-Party Tools","Third-Party Tools","Text To Speech with ElevenLabs","Text To Speech with ElevenLabs"]
+nav_prev: {"path": "supabase/docs/guides/functions/examples/cloudflare-turnstile/index.md", "title": "CAPTCHA support with Cloudflare Turnstile"}
+nav_next: {"path": "supabase/docs/guides/functions/examples/discord-bot/index.md", "title": "Building a Discord Bot"}
 ---
+
 # 
 
 Streaming Speech with ElevenLabs
@@ -150,3 +153,4 @@ The function is designed in a way that it can be used directly as a source for a
 ```
 
 You can find an example frontend implementation in the complete code example on [GitHub](https://github.com/elevenlabs/elevenlabs-examples/tree/main/examples/text-to-speech/supabase/stream-and-cache-storage/src/pages/Index.tsx).
+

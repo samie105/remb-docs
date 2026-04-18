@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:53:24.029Z"
 content_hash: "34b689f9c9770d9f3615ba3d4c1251a3cf555ee9d046b600eda403ed4b00aad4"
 menu_path: ["PostgreSQL: Documentation: 18: REINDEX"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/app-pgbasebackup.html/index.md", "title": "PostgreSQL: Documentation: 18: pg_basebackup"}
+nav_next: {"path": "postgres/docs/current/geqo-intro.html/index.md", "title": "PostgreSQL: Documentation: 18: 61.1.\u00a0Query Handling as a Complex Optimization Problem"}
 ---
+
 ## Description
 
 `REINDEX` rebuilds an index using the data stored in the index's table, replacing the old copy of the index. There are several scenarios in which to use `REINDEX`:
@@ -83,9 +86,9 @@ Alternatively, a regular server session can be started with `-P` included in its
 
 `REINDEX` is similar to a drop and recreate of the index in that the index contents are rebuilt from scratch. However, the locking considerations are rather different. `REINDEX` locks out writes but not reads of the index's parent table. It also takes an `ACCESS EXCLUSIVE` lock on the specific index being processed, which will block reads that attempt to use that index. In particular, the query planner tries to take an `ACCESS SHARE` lock on every index of the table, regardless of the query, and so `REINDEX` blocks virtually any queries except for some prepared queries whose plan has been cached and which don't use this very index. In contrast, `DROP INDEX` momentarily takes an `ACCESS EXCLUSIVE` lock on the parent table, blocking both writes and reads. The subsequent `CREATE INDEX` locks out writes but not reads; since the index is not there, no read will attempt to use it, meaning that there will be no blocking but reads might be forced into expensive sequential scans.
 
-While `REINDEX` is running, the [search\_path](https://www.postgresql.org/docs/current/runtime-config-client.html#GUC-SEARCH-PATH) is temporarily changed to `pg_catalog, pg_temp`.
+While `REINDEX` is running, the [search\_path](postgres/docs/current/runtime-config-client.html/index.md#GUC-SEARCH-PATH) is temporarily changed to `pg_catalog, pg_temp`.
 
-Reindexing a single index or table requires having the `MAINTAIN` privilege on the table. Note that while `REINDEX` on a partitioned index or table requires having the `MAINTAIN` privilege on the partitioned table, such commands skip the privilege checks when processing the individual partitions. Reindexing a schema or database requires being the owner of that schema or database or having privileges of the [pg\_maintain](https://www.postgresql.org/docs/current/predefined-roles.html#PREDEFINED-ROLE-PG-MAINTAIN) role. Note specifically that it's thus possible for non-superusers to rebuild indexes of tables owned by other users. However, as a special exception, `REINDEX DATABASE`, `REINDEX SCHEMA`, and `REINDEX SYSTEM` will skip indexes on shared catalogs unless the user has the `MAINTAIN` privilege on the catalog.
+Reindexing a single index or table requires having the `MAINTAIN` privilege on the table. Note that while `REINDEX` on a partitioned index or table requires having the `MAINTAIN` privilege on the partitioned table, such commands skip the privilege checks when processing the individual partitions. Reindexing a schema or database requires being the owner of that schema or database or having privileges of the [pg\_maintain](postgres/docs/current/predefined-roles.html/index.md#PREDEFINED-ROLE-PG-MAINTAIN) role. Note specifically that it's thus possible for non-superusers to rebuild indexes of tables owned by other users. However, as a special exception, `REINDEX DATABASE`, `REINDEX SCHEMA`, and `REINDEX SYSTEM` will skip indexes on shared catalogs unless the user has the `MAINTAIN` privilege on the catalog.
 
 Reindexing partitioned indexes or partitioned tables is supported with `REINDEX INDEX` or `REINDEX TABLE`, respectively. Each partition of the specified partitioned relation is reindexed in a separate transaction. Those commands cannot be used inside a transaction block when working on a partitioned table or index.
 
@@ -162,3 +165,4 @@ REINDEX TABLE CONCURRENTLY my\_broken\_table;
 ## Compatibility
 
 There is no `REINDEX` command in the SQL standard.
+

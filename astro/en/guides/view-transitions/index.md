@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:42:14.465Z"
 content_hash: "4314ab8012eb9c5507c43c338e3d2a376957f8a2ae612a19007b1748c89353ca"
 menu_path: ["View transitions"]
 section_path: []
+nav_prev: {"path": "astro/en/guides/prefetch/index.md", "title": "Prefetch"}
+nav_next: {"path": "astro/en/basics/astro-components/index.md", "title": "Components"}
 ---
+
 # View transitions
 
 [View transitions](https://developer.mozilla.org/en-US/docs/Web/API/View_Transition_API) are animated transitions between different website views. They are a popular design choice for preserving visual continuity as visitors move between states or views of an application.
@@ -593,3 +596,4 @@ We strongly recommend you always include a `<title>` in each page for accessibil
 Astro’s `<ClientRouter />` component includes a CSS media query that disables _all_ view transition animations, including fallback animation, whenever the [`prefers-reduced-motion`](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion) setting is detected. Instead, the browser will simply swap the DOM elements without an animation.
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

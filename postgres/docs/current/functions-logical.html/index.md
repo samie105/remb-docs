@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:44:50.318Z"
 content_hash: "03cb86b41d8c8d85ca40f125110a4a34289986a8baabf9bd475f568f27989f83"
 menu_path: ["PostgreSQL: Documentation: 18: 9.1. Logical Operators"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/ddl-foreign-data.html/index.md", "title": "PostgreSQL: Documentation: 18: 5.13.\u00a0Foreign Data"}
+nav_next: {"path": "postgres/docs/current/spi-spi-gettype.html/index.md", "title": "PostgreSQL: Documentation: 18: SPI_gettype"}
 ---
+
 The usual logical operators are available:
 
 ```
@@ -95,3 +98,4 @@ NULL
 NULL
 
 The operators `AND` and `OR` are commutative, that is, you can switch the left and right operands without affecting the result. (However, it is not guaranteed that the left operand is evaluated before the right operand. See [Section 4.2.14](https://www.postgresql.org/docs/current/sql-expressions.html#SYNTAX-EXPRESS-EVAL "4.2.14. Expression Evaluation Rules") for more information about the order of evaluation of subexpressions.)
+

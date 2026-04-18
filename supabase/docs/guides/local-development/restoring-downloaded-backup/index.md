@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:46:46.420Z"
 content_hash: "11f328c1016c7f27377b4fc7c9a921d52ce663362830660a03265647d8178713"
 menu_path: ["Local Dev / CLI","Local Dev / CLI","Local development","Local development","Restoring downloaded backup","Restoring downloaded backup"]
 section_path: ["Local Dev / CLI","Local Dev / CLI","Local development","Local development","Restoring downloaded backup","Restoring downloaded backup"]
+nav_prev: {"path": "supabase/docs/guides/local-development/managing-config/index.md", "title": "Managing config and secrets"}
+nav_next: {"path": "supabase/docs/guides/local-development/overview/index.md", "title": "Local development with schema migrations"}
 ---
+
 # 
 
 Restoring a downloaded backup locally
@@ -53,3 +56,4 @@ If you want to use other services like Auth, Storage, and Studio dashboard toget
 ```
 
 A Postgres database started with Supabase CLI is not production ready and should not be used outside of local development.
+

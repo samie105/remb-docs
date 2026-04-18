@@ -9,10 +9,13 @@ last_crawled_at: "2026-04-18T16:44:50.971Z"
 content_hash: "c19c919d1138930b1b84cc363f63813917aaee6b1694fbe6c91ac3779d2efa9d"
 menu_path: ["HTTP Link"]
 section_path: []
+nav_prev: {"path": "trpc/docs/client/links/httpBatchLink/index.md", "title": "HTTP Batch Link"}
+nav_next: {"path": "trpc/docs/client/links/httpBatchStreamLink/index.md", "title": "HTTP Batch Stream Link"}
 ---
+
 Version: 11.x
 
-`httpLink` is a [**terminating link**](https://trpc.io/docs/client/links#the-terminating-link) that sends a tRPC operation to a tRPC procedure over HTTP.
+`httpLink` is a [**terminating link**](trpc/docs/client/links/index.md#the-terminating-link) that sends a tRPC operation to a tRPC procedure over HTTP.
 
 `httpLink` supports both POST and GET requests.
 
@@ -103,3 +106,4 @@ ts
 ## Reference[​](#reference "Direct link to Reference")
 
 You can check out the source code for this link on [GitHub.](https://github.com/trpc/trpc/blob/main/packages/client/src/links/httpLink.ts)
+

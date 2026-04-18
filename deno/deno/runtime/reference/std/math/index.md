@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:04:17.070Z"
 content_hash: "b6647ee722b2fef94eed73a2cb42f6bc2a55b0b947c55e7d67397da652a87084"
 menu_path: ["@std/math"]
 section_path: []
+nav_prev: {"path": "deno/deno/runtime/reference/node_apis/index.md", "title": "Node APIs"}
+nav_next: {"path": "deno/deno/runtime/reference/std/xml/index.md", "title": "@std/xml"}
 ---
+
 On this page
 
 *   [Overview](#overview)
@@ -40,3 +43,4 @@ deno add jsr:@std/math
 ```
 
 [See all symbols in @std/math on](https://jsr.io/@std/math/doc)
+

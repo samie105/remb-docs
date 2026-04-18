@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:07:06.695Z"
 content_hash: "3a05596c87a0dd0e9edcfedf3e5a29d18a169b6cd46a22ccaa332883d318e61e"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Redis leaderboard","→","Redis leaderboard","→\n      \n        Redis leaderboard with .NET","→","Redis leaderboard with .NET"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Redis leaderboard","→","Redis leaderboard","→\n      \n        Redis leaderboard with .NET","→","Redis leaderboard with .NET"]
+nav_prev: {"path": "redis/docs/latest/develop/tools/insight/release-notes/v2.8.0/index.md", "title": "RedisInsight v2.8.0, August 2022"}
+nav_next: {"path": "redis/docs/latest/operate/kubernetes/release-notes/7-4-2-releases/7-4-2-12/index.md", "title": "Redis Enterprise for Kubernetes 7.4.2-12 (May 2024) release notes"}
 ---
+
 # Redis leaderboard with .NET
 
 Implement a Redis leaderboard in C# with StackExchange.Redis and sorted sets
@@ -224,3 +227,4 @@ Some leaderboards are permanent, while others reset daily, weekly, or seasonally
 Per-user hashes work best for small, frequently accessed profile details. Large profile documents or rarely used attributes are often better kept in another store, with Redis holding only the fields needed to render the leaderboard quickly.
 
 ## On this page
+

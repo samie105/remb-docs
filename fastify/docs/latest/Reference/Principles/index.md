@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:34:14.226Z"
 content_hash: "645bce4e4fafcee1a07eaa201bc5a1a52873a7a3bcc6402174b092cce0be9c66"
 menu_path: ["Technical Principles"]
 section_path: []
+nav_prev: {"path": "fastify/docs/latest/Reference/Plugins/index.md", "title": "Plugins"}
+nav_next: {"path": "fastify/docs/latest/Reference/Request/index.md", "title": "Request"}
 ---
+
 Version: latest (v5.8.x)
 
 Every decision in the Fastify framework and its official plugins is guided by the following technical principles:
@@ -68,3 +71,4 @@ A clear [Long Term Support strategy is provided](/docs/latest/Reference/LTS/) to
 ## Specification adherence[​](#specification-adherence "Direct link to Specification adherence")
 
 In doubt, we chose the strict behavior as defined by the relevant Specifications.
+

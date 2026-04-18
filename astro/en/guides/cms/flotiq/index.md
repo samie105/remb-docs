@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:34:11.031Z"
 content_hash: "07d94d9db2064fa2c2e37d49f0d1d246123ade6d22804243d46ec2651a94a340"
 menu_path: ["Flotiq & Astro"]
 section_path: []
+nav_prev: {"path": "astro/en/guides/cms/drupal/index.md", "title": "Drupal & Astro"}
+nav_next: {"path": "astro/en/guides/cms/frontmatter-cms/index.md", "title": "Front Matter CMS & Astro"}
 ---
+
 # Flotiq & Astro
 
 [Flotiq](https://flotiq.com?utm_campaign=flotiq_at_astro_headless_cms&utm_medium=referral&utm_source=astro) is a headless CMS designed for various frontends, such as static sites, mobile, and web applications. Developers and content creators manage and deliver content through REST and GraphQL-based APIs.
@@ -386,3 +389,4 @@ In Flotiq, you can define which Content Type and events it should trigger on, an
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

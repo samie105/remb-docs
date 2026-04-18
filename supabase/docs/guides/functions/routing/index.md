@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:45:23.570Z"
 content_hash: "2cd5fe7a11285feaf1e5c48ce5e3d77928406bfea9dbf7026b731c992a96a1c7"
 menu_path: ["Edge Functions","Edge Functions","Development","Development","Routing","Routing"]
 section_path: ["Edge Functions","Edge Functions","Development","Development","Routing","Routing"]
+nav_prev: {"path": "supabase/docs/guides/functions/regional-invocation/index.md", "title": "Regional Invocations"}
+nav_next: {"path": "supabase/docs/guides/functions/secrets/index.md", "title": "Environment Variables"}
 ---
+
 # 
 
 Handling Routing in Functions
@@ -75,3 +78,4 @@ This works well for small apps with only a couple of routes:
 ```
 
 [View source](https://github.com/supabase/supabase/blob/e8df67d5d5291e05ea56596aee0f2b7fa152929b/examples/edge-functions/supabase/functions/restful-tasks/index.ts)
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:42:30.180Z"
 content_hash: "990a166f76e6b7ee2a8515bf8b550be89535f7994ae925d718c3f51c7bd72917"
 menu_path: ["Editor setup"]
 section_path: []
+nav_prev: {"path": "prisma/docs/orm/more/comparisons/prisma-and-sequelize/index.md", "title": "Sequelize"}
+nav_next: {"path": "prisma/docs/orm/more/comparisons/prisma-and-typeorm/index.md", "title": "TypeORM"}
 ---
+
 Dev environment
 
 Learn how to configure your editor and IDEs for an optimal developer experience with Prisma ORM
@@ -97,3 +100,4 @@ You can get IDE-style autocompletion for Prisma CLI using [`inshellisense`](http
 To install, run:
 
 [Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/more/dev-environment/editor-setup.mdx)
+

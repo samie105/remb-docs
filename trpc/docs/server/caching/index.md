@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:49:35.720Z"
 content_hash: "c81f56ca2282ddb1b1c1643ec7633daa04a2902f6a0b6b7c051b5da4c2fb024a"
 menu_path: ["Response Caching"]
 section_path: []
+nav_prev: {"path": "trpc/docs/server/authorization/index.md", "title": "Authorization"}
+nav_next: {"path": "trpc/docs/server/context/index.md", "title": "Context"}
 ---
+
 Since all tRPC queries are normal HTTP `GET` requests, you can use standard HTTP cache headers to cache responses. This can make responses snappy, give your database a rest, and help scale your API.
 
 Most tRPC adapters support a `responseMeta` callback that lets you set HTTP headers (including cache headers) based on the procedures being called.
@@ -125,3 +128,4 @@ ts
 `});`
 
 `server.listen(3000);`
+

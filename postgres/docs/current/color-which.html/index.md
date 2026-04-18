@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:50:49.216Z"
 content_hash: "4866c9d6ad33af39a3d657c1a9ade25b126ea59990ad87ee04f2cc2af7658ad1"
 menu_path: ["PostgreSQL: Documentation: 18: N.2. Configuring the Colors"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/passwordcheck.html/index.md", "title": "PostgreSQL: Documentation: 18: F.24.\u00a0passwordcheck \u2014 verify password strength"}
+nav_next: {"path": "postgres/docs/current/view-pg-file-settings.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.8.\u00a0pg_file_settings"}
 ---
+
 The actual colors to be used are configured using the environment variable `PG_COLORS` (note plural). The value is a colon-separated list of ``_`key`_=_`value`_`` pairs. The keys specify what the color is to be used for. The values are SGR (Select Graphic Rendition) specifications, which are interpreted by the terminal.
 
 The following keys are currently in use:
@@ -35,3 +38,4 @@ The default value is `error=01;31:warning=01;35:note=01;36:locus=01` (`01;31` = 
 ### Tip
 
 This color specification format is also used by other software packages such as GCC, GNU coreutils, and GNU grep.
+

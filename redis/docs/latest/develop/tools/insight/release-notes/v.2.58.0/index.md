@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:33:23.965Z"
 content_hash: "d66288ecdda1abacca6cf25a53ddc635cfe44c9a3fa28656742d2e260f3f0a5f"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Client tools","→","Client tools","→\n      \n        Redis Insight","→","Redis Insight","→\n      \n        Redis Insight release notes","→","Redis Insight release notes","→\n      \n        Redis Insight v2.58.0, October 2024","→","Redis Insight v2.58.0, October 2024"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Client tools","→","Client tools","→\n      \n        Redis Insight","→","Redis Insight","→\n      \n        Redis Insight release notes","→","Redis Insight release notes","→\n      \n        Redis Insight v2.58.0, October 2024","→","Redis Insight v2.58.0, October 2024"]
+nav_prev: {"path": "redis/docs/latest/develop/tools/insight/release-notes/v.2.60.0/index.md", "title": "Redis Insight v2.60.0, October 2024"}
+nav_next: {"path": "redis/docs/latest/develop/tools/insight/release-notes/v.2.56.0/index.md", "title": "Redis Insight v2.56.0, September 2024"}
 ---
+
 # Redis Insight v2.58.0, October 2024
 
 Redis Insight v2.58
@@ -38,3 +41,4 @@ This is the General Availability (GA) release of Redis Insight 2.58.
 *   [#3828](https://github.com/RedisInsight/RedisInsight/pull/3828) Fixed an issue to [display multiple hash fields](https://github.com/RedisInsight/RedisInsight/issues/3826) when expanding a hash value.
 
 ## On this page
+

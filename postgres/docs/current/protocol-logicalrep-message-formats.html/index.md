@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:54:19.152Z"
 content_hash: "6948918cd71cd6fa89f6ff256759bcae3c8d9e9b116352d5b5e4d1830b1a0c63"
 menu_path: ["PostgreSQL: Documentation: 18: 54.9. Logical Replication Message Formats"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/collation.html/index.md", "title": "PostgreSQL: Documentation: 18: 23.2.\u00a0Collation Support"}
+nav_next: {"path": "postgres/docs/current/plpython-data.html/index.md", "title": "PostgreSQL: Documentation: 18: 44.2.\u00a0Data Values"}
 ---
+
 This section describes the detailed format of each logical replication message. These messages are either returned by the replication slot SQL interface or are sent by a walsender. In the case of a walsender, they are encapsulated inside replication protocol WAL messages as described in [Section 54.4](https://www.postgresql.org/docs/current/protocol-replication.html "54.4. Streaming Replication Protocol"), and generally obey the same message flow as physical replication.
 
 Begin [#](#PROTOCOL-LOGICALREP-MESSAGE-FORMATS-BEGIN)
@@ -537,3 +540,4 @@ Length of the column value.
 Byte_`n`_
 
 The value of the column, either in binary or in text format. (As specified in the preceding format byte). _`n`_ is the above length.
+

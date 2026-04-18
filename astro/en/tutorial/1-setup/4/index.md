@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:48:11.743Z"
 content_hash: "545e56bf3162597c0563ebdccf2bd21550d26b7778b972a95bef02bec496b3bf"
 menu_path: ["Store your repository online"]
 section_path: []
+nav_prev: {"path": "astro/en/tutorial/1-setup/3/index.md", "title": "Write your first line of Astro"}
+nav_next: {"path": "astro/en/tutorial/1-setup/5/index.md", "title": "Deploy your site to the web"}
 ---
+
 # Store your repository online
 
 Get ready to…
@@ -74,3 +77,4 @@ To verify that your project is successfully stored on GitHub, visit GitHub.com a
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

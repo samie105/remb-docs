@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:15:02.489Z"
 content_hash: "c83c394e767bef2542b4e1730da7c81e485f41fe709ceeaf17fe4035aedd773f"
 menu_path: ["URL - Web documentation"]
 section_path: []
+nav_prev: {"path": "deno/deno/api/web/temporal/index.md", "title": "404Sorry, couldn\u2019t find that page."}
+nav_next: {"path": "deno/deno/api/web/wasm/index.md", "title": "Wasm - Web documentation"}
 ---
+
 ### Interfaces [#](#Interfaces)
 
 I
@@ -146,3 +149,4 @@ T
 [URLPatternInput](./././~/URLPatternInput "URLPatternInput")
 
 No documentation available
+

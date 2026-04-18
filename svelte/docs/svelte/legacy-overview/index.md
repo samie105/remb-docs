@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:47:41.918Z"
 content_hash: "9d23c22cb01d56e15f3081d66280dfb5ebd86f6c223085fde39341501d15c7b4"
 menu_path: ["Overview"]
 section_path: []
+nav_prev: {"path": "svelte/docs/svelte/runtime-warnings/index.md", "title": "Runtime warnings"}
+nav_next: {"path": "svelte/docs/svelte/legacy-let/index.md", "title": "Reactive let/var declarations"}
 ---
+
 Svelte 5 introduced some significant changes to Svelte's API, including [runes](what-are-runes), [snippets](snippet) and event attributes. As a result, some Svelte 3/4 features are deprecated (though supported for now, unless otherwise specified) and will eventually be removed. We recommend that you incrementally [migrate your existing code](v5-migration-guide).
 
 The following pages document these features for
@@ -26,3 +29,4 @@ If you're exclusively interested in the Svelte 3/4 syntax, you can browse its do
 previous next
 
 [Runtime warnings](/docs/svelte/runtime-warnings) [Reactive let/var declarations](/docs/svelte/legacy-let)
+

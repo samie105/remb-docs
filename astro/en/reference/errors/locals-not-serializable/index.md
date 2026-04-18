@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:45:34.914Z"
 content_hash: "68a67cad126a90a198225b027ecf70f807d2eee2e68577e64ccd5d7d6f9a1464"
 menu_path: ["Astro.locals is not serializable"]
 section_path: []
+nav_prev: {"path": "astro/en/reference/errors/locals-not-an-object/index.md", "title": "Value assigned to locals is not accepted."}
+nav_next: {"path": "astro/en/reference/errors/locals-reassigned/index.md", "title": "locals must not be reassigned."}
 ---
+
 # Astro.locals is not serializable
 
 > **LocalsNotSerializable**: The information stored in `Astro.locals` for the path “`HREF`” is not serializable. Make sure you store only serializable data. (E03034)
@@ -27,3 +30,4 @@ import {defineMiddleware} from "astro/middleware";export const onRequest = defin
 ```
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

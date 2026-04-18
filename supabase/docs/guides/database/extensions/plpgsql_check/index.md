@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:56:10.274Z"
 content_hash: "ad85db2459ef8712732d77127a94a3f70260acab1f132cac7c0b40861477b1f3"
 menu_path: ["Database","Database","Extensions","Extensions","plpgsql_check: PL/pgSQL Linter","plpgsql_check: PL/pgSQL Linter"]
 section_path: ["Database","Database","Extensions","Extensions","plpgsql_check: PL/pgSQL Linter","plpgsql_check: PL/pgSQL Linter"]
+nav_prev: {"path": "supabase/docs/guides/database/extensions/pgtap/index.md", "title": "pgTAP: Unit Testing"}
+nav_next: {"path": "supabase/docs/guides/database/extensions/plv8/index.md", "title": "plv8: JavaScript Language"}
 ---
+
 # 
 
 plpgsql\_check: PL/pgSQL Linter
@@ -53,3 +56,4 @@ Now we can use plpgsql\_check's `plpgsql_check_function` function to identify th
 ## Resources[#](#resources)
 
 *   Official [`plpgsql_check` documentation](https://github.com/okbob/plpgsql_check)
+

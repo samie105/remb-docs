@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:07:41.559Z"
 content_hash: "252508e487041ee2b052e55f68db17a2b132ccc9dde0e79073f12bea8a4088fa"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Install Redis Open Source","→","Install Redis Open Source","→\n      \n        Install Redis Open Source","→","Install Redis Open Source","→\n      \n        Install Redis Open Source on macOS","→","Install Redis Open Source on macOS"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Install Redis Open Source","→","Install Redis Open Source","→\n      \n        Install Redis Open Source","→","Install Redis Open Source","→\n      \n        Install Redis Open Source on macOS","→","Install Redis Open Source on macOS"]
+nav_prev: {"path": "redis/docs/latest/develop/reference/eviction/index.md", "title": "Key eviction"}
+nav_next: {"path": "redis/docs/latest/develop/clients/lettuce/index.md", "title": "Lettuce guide (Java)"}
 ---
+
 # Install Redis Open Source on macOS
 
 How to install Redis Open Source on macOS using Homebrew
@@ -190,3 +193,4 @@ Once you have a running Redis instance, you may want to:
 *   Connect using [Redis Insight](/docs/latest/develop/tools/insight/)
 
 ## On this page
+

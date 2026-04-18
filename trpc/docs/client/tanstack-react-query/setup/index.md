@@ -9,8 +9,11 @@ last_crawled_at: "2026-04-18T16:47:42.097Z"
 content_hash: "74d200d8fdd9ce93ef33387dac73a73029df0538801736e0f40eda47a5c3718e"
 menu_path: ["TanStack React Query"]
 section_path: []
+nav_prev: {"path": "trpc/docs/client/tanstack-react-query/server-components/index.md", "title": "Set up with React Server Components"}
+nav_next: {"path": "trpc/docs/client/tanstack-react-query/usage/index.md", "title": "TanStack React Query"}
 ---
-Compared to our [classic React Query Integration](https://trpc.io/docs/client/react) this client is simpler and more TanStack Query-native, providing factories for common TanStack React Query interfaces like QueryKeys, QueryOptions, and MutationOptions. We think it's the future and recommend using this over the classic client, [read the announcement post](https://trpc.io/blog/introducing-tanstack-react-query-client) for more information about this change.
+
+Compared to our [classic React Query Integration](trpc/docs/client/react/index.md) this client is simpler and more TanStack Query-native, providing factories for common TanStack React Query interfaces like QueryKeys, QueryOptions, and MutationOptions. We think it's the future and recommend using this over the classic client, [read the announcement post](https://trpc.io/blog/introducing-tanstack-react-query-client) for more information about this change.
 
 ❓ Do I have to use an integration?
 
@@ -174,7 +177,7 @@ tsx
 
 ### 3b. Set up with Query/Mutation Key Prefixing enabled[​](#3b-set-up-with-querymutation-key-prefixing-enabled "Direct link to 3b. Set up with Query/Mutation Key Prefixing enabled")
 
-If you want to prefix all queries and mutations with a specific key, see [Query Key Prefixing](https://trpc.io/docs/client/tanstack-react-query/usage#keyPrefix) for setup and usage examples.
+If you want to prefix all queries and mutations with a specific key, see [Query Key Prefixing](trpc/docs/client/tanstack-react-query/usage/index.md#keyPrefix) for setup and usage examples.
 
 ### 3c. Set up without React context[​](#3c-set-up-without-react-context "Direct link to 3c. Set up without React context")
 
@@ -267,3 +270,4 @@ tsx
   `);`
 
 `}`
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:34:55.841Z"
 content_hash: "bca7c8d7416e7dc7e95f35bb59d84357b8d4062b28a1526ead5dbf37e3efd066"
 menu_path: ["Basic markup"]
 section_path: []
+nav_prev: {"path": "svelte/docs/svelte/$host/index.md", "title": "$host"}
+nav_next: {"path": "svelte/docs/svelte/if/index.md", "title": "{#if ...}"}
 ---
+
 Markup inside a Svelte component can be thought of as HTML++.
 
 ## Tags[](#Tags)
@@ -226,3 +229,4 @@ You can add a special comment starting with `@component` that will show up when 
 previous next
 
 [$host](/docs/svelte/$host) [{#if ...}](/docs/svelte/if)
+

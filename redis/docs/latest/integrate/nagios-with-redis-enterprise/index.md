@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:10:12.572Z"
 content_hash: "579ac15158c7941f989c246b121bc6a7811086546b0f1229219291ad9b78824d"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Nagios with Redis Software","→","Nagios with Redis Software"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Nagios with Redis Software","→","Nagios with Redis Software"]
+nav_prev: {"path": "redis/docs/latest/operate/oss_and_stack/stack-with-enterprise/modules-lifecycle/index.md", "title": "Module lifecycle"}
+nav_next: {"path": "redis/docs/latest/integrate/new-relic-with-redis-cloud/index.md", "title": "New Relic with Redis Cloud"}
 ---
+
 # Nagios with Redis Software
 
 The Redis Software (RS) Nagios plugin enables you to monitor the status of RS related objects and alerts. The RS alerts can be related to the cluster, nodes, or databases.
@@ -102,3 +105,4 @@ Copy the configuration files along with their folders to "/usr/local/nagios/etc"
         4.  "rlec\_templates.cfg" holds general RS Nagios definitions. No need to make any updates to it.
 
 ## On this page
+

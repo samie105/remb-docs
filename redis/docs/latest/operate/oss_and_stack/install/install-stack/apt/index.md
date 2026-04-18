@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:46:28.986Z"
 content_hash: "b2a70af63f51e6a4e6762515acab13a19209448640eb56ff0107fd36cdaacffb"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Install Redis Open Source","→","Install Redis Open Source","→\n      \n        Install Redis Open Source","→","Install Redis Open Source","→\n      \n        Install Redis Open Source on Linux","→","Install Redis Open Source on Linux"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Install Redis Open Source","→","Install Redis Open Source","→\n      \n        Install Redis Open Source","→","Install Redis Open Source","→\n      \n        Install Redis Open Source on Linux","→","Install Redis Open Source on Linux"]
+nav_prev: {"path": "redis/docs/latest/develop/reference/client-side-caching/index.md", "title": "Client-side caching reference"}
+nav_next: {"path": "redis/docs/latest/operate/oss_and_stack/management/config/index.md", "title": "Redis configuration"}
 ---
+
 # Install Redis Open Source on Linux
 
 How to install Redis Open Source using APT
@@ -87,3 +90,4 @@ sudo systemctl start redis-server
 ```
 
 ## On this page
+

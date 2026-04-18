@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:32:47.024Z"
 content_hash: "71cb11e72d0397b9c4ef8bfa0b072ca8fd949ad58f70bd483f61a84e0c883f91"
 menu_path: ["Turso & Astro"]
 section_path: []
+nav_prev: {"path": "astro/en/guides/backend/supabase/index.md", "title": "Supabase & Astro"}
+nav_next: {"path": "astro/en/guides/backend/xata/index.md", "title": "Xata & Astro"}
 ---
+
 # Turso & Astro
 
 [Turso](https://turso.tech) is a distributed database built on libSQL, a fork of SQLite. It is optimized for low query latency, making it suitable for global applications.
@@ -151,3 +154,4 @@ const { rows } = await turso.execute({  sql: 'SELECT * FROM posts WHERE slug = ?
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

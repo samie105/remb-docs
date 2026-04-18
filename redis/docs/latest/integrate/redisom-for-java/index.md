@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:14:35.324Z"
 content_hash: "54b6affa9ffdb66cbece04915a4bc0feaafa0d2c21984bf0c658ac3d89b60cca"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        RedisOM for Java","→","RedisOM for Java"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        RedisOM for Java","→","RedisOM for Java"]
+nav_prev: {"path": "redis/docs/latest/integrate/redisom-for-net/index.md", "title": "RedisOM for .NET"}
+nav_next: {"path": "redis/docs/latest/integrate/redisom-for-node-js/index.md", "title": "RedisOM for Node.js"}
 ---
+
 # RedisOM for Java
 
 Learn how to build with Redis Stack and Spring
@@ -741,3 +744,4 @@ public Iterable<Person> findByFirstNameAndLastName(String firstName, String last
 In this article, we explored how Redis OM Spring provides a couple of APIs to tap into the power of Redis Stack’s document database and search features from Spring Boot application. We’ll explore other Redis Stack features via Redis OM Spring in future articles
 
 ## On this page
+

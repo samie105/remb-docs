@@ -9,16 +9,10 @@ last_crawled_at: "2026-04-18T16:43:50.112Z"
 content_hash: "32c5ad885db5c89bbb72360d723fc4fbabe79c52fe53e19113d51face5d02620"
 menu_path: ["Containerize a Bun application with Docker"]
 section_path: []
+nav_prev: {"path": "bun/bun/docs/guides/ecosystem/discordjs/index.md", "title": "Create a Discord bot"}
+nav_next: {"path": "bun/bun/docs/guides/ecosystem/express/index.md", "title": "Build an HTTP server using Express and Bun"}
 ---
-[Docker](https://www.docker.com/) is a platform for packaging and running an application as a lightweight, portable _container_ that encapsulates all the necessary dependencies.
 
-* * *
-
-To _containerize_ our application, we define a `Dockerfile`. This file contains a list of instructions to initialize the container, copy our local project files into it, install dependencies, and starts the application.
-
-Dockerfile
-
-```
 # use the official Bun image
 # see all versions at https://hub.docker.com/r/oven/bun/tags
 FROM oven/bun:1 AS base
@@ -157,3 +151,4 @@ CONTAINER ID        IMAGE               COMMAND                  CREATED        
 * * *
 
 That’s it! Refer to the [Docker documentation](https://docs.docker.com/) for more advanced usage.
+

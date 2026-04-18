@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:56:24.082Z"
 content_hash: "d59da3a401c57b8c29cce5a4c31222f5f34f9ff42006b5cd87ecf45a8768c36a"
 menu_path: ["Database","Database","Working with your database (intermediate)","Working with your database (intermediate)","Implementing cascade deletes","Implementing cascade deletes"]
 section_path: ["Database","Database","Working with your database (intermediate)","Working with your database (intermediate)","Implementing cascade deletes","Implementing cascade deletes"]
+nav_prev: {"path": "supabase/docs/guides/database/postgres/column-level-security/index.md", "title": "Column Level Security"}
+nav_next: {"path": "supabase/docs/guides/database/postgres/configuration/index.md", "title": "Database configuration"}
 ---
+
 # 
 
 Cascade Deletes
@@ -155,3 +158,4 @@ Then let's run a delete on the `grandparent` table:
 ```
 
 The `mother` deletion took precedence over the `father`, and so William was deleted. After William was deleted, there was no reference to “Charles” and so he was free to be deleted, even though previously he wasn't (without `INITIALLY DEFERRED`).
+

@@ -9,12 +9,15 @@ last_crawled_at: "2026-04-18T16:41:55.464Z"
 content_hash: "53b6bd807bc029ba30cbbef5071c7f45553b0b0d1ee3561a4993da6f7bb94a7e"
 menu_path: ["Context ​"]
 section_path: []
+nav_prev: {"path": "hono/docs/api/routing/index.md", "title": "Routing \u200b"}
+nav_next: {"path": "hono/docs/api/request/index.md", "title": "HonoRequest \u200b"}
 ---
+
 The `Context` object is instantiated for each request and kept until the response is returned. You can put values in it, set headers and a status code you want to return, and access HonoRequest and Response objects.
 
 ## req [​](#req)
 
-`req` is an instance of HonoRequest. For more details, see [HonoRequest](https://hono.dev/docs/api/request).
+`req` is an instance of HonoRequest. For more details, see [HonoRequest](hono/docs/api/request/index.md).
 
 ts
 
@@ -136,7 +139,7 @@ app.get('/', (c) => {
 
 ## notFound() [​](#notfound)
 
-Return a `Not Found` Response. You can customize it with [`app.notFound()`](https://hono.dev/docs/api/hono#not-found).
+Return a `Not Found` Response. You can customize it with [`app.notFound()`](hono/docs/api/hono/index.md#not-found).
 
 ts
 
@@ -468,3 +471,4 @@ app.get('/', (c) => {
   return c.json({ result: val })
 })
 ```
+

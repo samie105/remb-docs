@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:46:29.949Z"
 content_hash: "a765ff3417b250a4c78210101427058d57d0f4786104665710c1952d5142eeae"
 menu_path: ["SQL comments"]
 section_path: []
+nav_prev: {"path": "prisma/docs/orm/prisma-client/observability-and-logging/opentelemetry-tracing/index.md", "title": "OpenTelemetry tracing"}
+nav_next: {"path": "prisma/docs/orm/prisma-client/queries/crud/index.md", "title": "CRUD"}
 ---
+
 Add metadata to your SQL queries as comments for improved observability, debugging, and tracing
 
 SQL comments allow you to append metadata to your database queries, making it easier to correlate queries with application context. Prisma ORM supports the [sqlcommenter format](https://google.github.io/sqlcommenter/) developed by Google, which is widely supported by database monitoring tools.
@@ -491,3 +494,4 @@ interface SqlCommenterCompactedQueryInfo {
 ```
 
 Information about a compacted batch query.
+

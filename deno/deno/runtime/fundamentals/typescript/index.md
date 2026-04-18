@@ -9,33 +9,10 @@ last_crawled_at: "2026-04-18T16:48:28.738Z"
 content_hash: "cc46829e47eb52d2afeb5678b137331410c1f30aaafe34c5e828feaa0ad907bb"
 menu_path: ["TypeScript support"]
 section_path: []
+nav_prev: {"path": "deno/deno/runtime/getting_started/command_line_interface/index.md", "title": "Command line interface"}
+nav_next: {"path": "deno/deno/runtime/fundamentals/node/index.md", "title": "Node and npm Compatibility"}
 ---
-On this page
 
-*   [Type Checking](#type-checking)
-*   [Using with JavaScript](#using-with-javascript)
-*   [Providing declaration files](#providing-declaration-files)
-    *   [Providing types in the source](#providing-types-in-the-source)
-    *   [Providing types in the importer](#providing-types-in-the-importer)
-    *   [Providing types for HTTP modules](#providing-types-for-http-modules)
-*   [Type checking for browsers and web workers](#type-checking-for-browsers-and-web-workers)
-*   [Augmenting global types](#augmenting-global-types)
-    *   [Using declare global to augment the global scope](#using-declare-global-to-augment-the-global-scope)
-    *   [Using .d.ts files to augment the global scope](#using-.d.ts-files-to-augment-the-global-scope)
-
-TypeScript is a first class language in Deno. You can run or import TypeScript without installing anything more than the Deno CLI. With its built-in TypeScript compiler, Deno will compile your TypeScript code to JavaScript with no extra config needed. Deno can also type check your TypeScript code, without requiring a separate type checking tool like `tsc`.
-
-## Type Checking
-
-One of the main advantages of TypeScript is that it can make your code type safe, catching errors during development rather than runtime.
-
-Note
-
-**Deno type checks TypeScript in `strict mode` by default**, the TypeScript core team [recommends strict mode as a sensible default](https://www.typescriptlang.org/play/?#example/new-compiler-defaults).
-
-Deno allows you to type-check your code (without executing it) with the [`deno check`](/runtime/reference/cli/check/) subcommand:
-
-```shell
 # Check the current directory/module
 deno check
 
@@ -275,3 +252,4 @@ Alternatively you can specify the `.d.ts` file in the `deno.json` configuration 
 ```
 
 This will also augment the global scope with the `polyfilledAPI` function.
+

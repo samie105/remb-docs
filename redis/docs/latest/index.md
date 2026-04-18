@@ -9,7 +9,9 @@ last_crawled_at: "2026-04-18T16:31:57.476Z"
 content_hash: "93990a34fd18114972261ca24c87fd9b6e5c17c1a51ec68307f4b4d2618a4844"
 menu_path: ["Welcome to Redis Docs"]
 section_path: []
+nav_next: {"path": "redis/docs/latest/develop/tools/insight/release-notes/v.3.2.0/index.md", "title": "Redis Insight v3.2.0, February 2026"}
 ---
+
 # Welcome to Redis Docs
 
 Quickly set up a Redis cache, primary, vector or custom database
@@ -239,3 +241,4 @@ Provide feedback on AI chatbot answers to help us improve
 Documentation and guides for AI agents
 
 [Explore resources →](./ai-agent-resources/)
+

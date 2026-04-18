@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:56:19.306Z"
 content_hash: "565beaeac9828d8bf4ea6e355a573fada25e49a618b2266cc4389373030b833b"
 menu_path: ["Database","Database","Extensions","Extensions","timescaledb (deprecated)","timescaledb (deprecated)"]
 section_path: ["Database","Database","Extensions","Extensions","timescaledb (deprecated)","timescaledb (deprecated)"]
+nav_prev: {"path": "supabase/docs/guides/database/extensions/rum/index.md", "title": "RUM: improved inverted index for full-text search based on GIN index"}
+nav_next: {"path": "supabase/docs/guides/database/extensions/uuid-ossp/index.md", "title": "uuid-ossp: Unique Identifiers"}
 ---
+
 # 
 
 timescaledb: Time-Series data
@@ -63,3 +66,4 @@ And finally we can query the table using `timescaledb`'s `time_bucket` function 
 ## Resources[#](#resources)
 
 *   Official [`timescaledb` documentation](https://docs.timescale.com/timescaledb/latest/)
+

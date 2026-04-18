@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:53:47.077Z"
 content_hash: "34bc56435cab953dd953fbfa8b589674e5a47e401bfbe5f97065db84701b559e"
 menu_path: ["deno init"]
 section_path: []
+nav_prev: {"path": "deno/deno/runtime/reference/cli/info/index.md", "title": "deno info"}
+nav_next: {"path": "deno/deno/runtime/reference/cli/install/index.md", "title": "deno install"}
 ---
+
 On this page
 
 *   [Examples](#examples)
@@ -266,3 +269,4 @@ Generate an example project for `deno serve`.
 `--yes, -y`
 
 Bypass the prompt and run with full permissions.
+

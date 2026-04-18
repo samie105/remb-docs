@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:32:37.798Z"
 content_hash: "e92e1c29b57e648b23740a32d32d81b86e28fc2084a9d45ca12cb37d9306160a"
 menu_path: ["Firebase & Astro"]
 section_path: []
+nav_prev: {"path": "astro/en/guides/backend/appwrite/index.md", "title": "Appwrite & Astro"}
+nav_next: {"path": "astro/en/guides/backend/neon/index.md", "title": "Neon Postgres & Astro"}
 ---
+
 # Firebase & Astro
 
 [Firebase](https://firebase.google.com/) is an app development platform that provides a NoSQL database, authentication, realtime subscriptions, functions, and storage.
@@ -498,3 +501,4 @@ After creating all the pages, you should have the following file structure:
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

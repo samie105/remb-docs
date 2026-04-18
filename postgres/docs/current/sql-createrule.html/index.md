@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:45:01.943Z"
 content_hash: "0e48a6c7a358bde273a80c6ccebad09b80e55c54896c76f6ef7ea2278440824f"
 menu_path: ["PostgreSQL: Documentation: 18: CREATE RULE"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/indexes-partial.html/index.md", "title": "PostgreSQL: Documentation: 18: 11.8.\u00a0Partial Indexes"}
+nav_next: {"path": "postgres/docs/current/source-conventions.html/index.md", "title": "PostgreSQL: Documentation: 18: 55.4.\u00a0Miscellaneous Coding Conventions"}
 ---
+
 CREATE RULE — define a new rewrite rule
 
 ## Synopsis
@@ -105,3 +108,4 @@ one `NOTIFY` event will be sent during the `UPDATE`, whether or not there are an
 ## Compatibility
 
 `CREATE RULE` is a PostgreSQL language extension, as is the entire query rewrite system.
+

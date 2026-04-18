@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:54:23.821Z"
 content_hash: "adbd124afa2b70596f55530eec52a352debaf0779373351be50a3e514e4d95a4"
 menu_path: ["Auth","Auth","More","More","More","Social Login (OAuth)","Social Login (OAuth)","Figma","Figma"]
 section_path: ["Auth","Auth","More","More","More","Social Login (OAuth)","Social Login (OAuth)","Figma","Figma"]
+nav_prev: {"path": "supabase/docs/guides/auth/social-login/auth-facebook/index.md", "title": "Login with Facebook"}
+nav_next: {"path": "supabase/docs/guides/auth/social-login/auth-github/index.md", "title": "Login with GitHub"}
 ---
+
 # 
 
 Login with Figma
@@ -123,3 +126,4 @@ When your user signs out, call [signOut()](/docs/reference/javascript/auth-signo
 *   [Supabase - Get started for free](https://supabase.com)
 *   [Supabase JS Client](https://github.com/supabase/supabase-js)
 *   [Figma Developers page](https://www.figma.com/developers)
+

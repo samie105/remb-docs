@@ -9,15 +9,9 @@ last_crawled_at: "2026-04-18T17:09:32.030Z"
 content_hash: "ed4b6075f77787b1b5b6a6c54b0ba448f9c7c1a677b8d50da7f143d78fc70570"
 menu_path: ["backdrop-filter: contrast()"]
 section_path: []
+nav_prev: {"path": "tailwind/docs/backdrop-filter-brightness/index.md", "title": "backdrop-filter: brightness()"}
+nav_next: {"path": "tailwind/docs/backdrop-filter-grayscale/index.md", "title": "backdrop-filter: grayscale()"}
 ---
-[](/)
-
-[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
-
-1.  Filters
-2.  contrast
-
-Filters
 
 # backdrop-filter: contrast()
 
@@ -102,3 +96,4 @@ Short, tactical video lessons from the creator of Tailwind CSS, delivered direct
 [Get the free course](/build-uis-that-dont-suck)
 
 Copyright © 2026 Tailwind Labs Inc.·[Trademark Policy](/brand)
+

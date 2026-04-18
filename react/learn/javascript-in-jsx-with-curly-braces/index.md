@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:37:34.133Z"
 content_hash: "79e2654050720cc5e2e245d338ff9f75fe005a753bbec8803916f142f87b2907"
 menu_path: ["JavaScript in JSX with Curly Braces"]
 section_path: []
+nav_prev: {"path": "react/learn/writing-markup-with-jsx/index.md", "title": "Writing Markup with JSX"}
+nav_next: {"path": "react/learn/passing-props-to-a-component/index.md", "title": "Passing Props to a Component"}
 ---
+
 JSX lets you write HTML-like markup inside a JavaScript file, keeping rendering logic and content in the same place. Sometimes you will want to add a little JavaScript logic or reference a dynamic property inside that markup. In this situation, you can use curly braces in your JSX to open a window to JavaScript.
 
 ### You will learn
@@ -106,3 +109,4 @@ Fix the mistake[](#fix-the-mistake "Link for this heading")
 This code crashes with an error saying `Objects are not valid as a React child`:
 
 Can you find the problem?
+

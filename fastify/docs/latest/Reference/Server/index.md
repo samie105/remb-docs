@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:35:23.802Z"
 content_hash: "a4e8ac331eadac080b72a58064447053c51b719a9327b0bc137909a152ed1db9"
 menu_path: ["Server"]
 section_path: []
+nav_prev: {"path": "fastify/docs/latest/Reference/Type-Providers/index.md", "title": "Type-Providers"}
+nav_next: {"path": "fastify/docs/latest/Reference/Warnings/index.md", "title": "Warnings"}
 ---
+
 Version: latest (v5.8.x)
 
 ## Factory[​](#factory "Direct link to Factory")
@@ -1169,3 +1172,4 @@ The properties that can currently be exposed are:
 ```
 const { readFileSync } = require('node:fs')const Fastify = require('fastify')const fastify = Fastify({  https: {    allowHTTP1: true,    key: readFileSync('./fastify.key'),    cert: readFileSync('./fastify.cert')  },  logger: { level: 'trace'},  routerOptions: {    ignoreTrailingSlash: true,    maxParamLength: 200,    caseSensitive: true,  },  trustProxy: '127.0.0.1,192.168.1.1/24',})console.log(fastify.initialConfig)/*will log :{  https: { allowHTTP1: true },  routerOptions: {    caseSensitive: true,    ignoreTrailingSlash: true,    maxParamLength: 200  }}*/fastify.register(async (instance, opts) => {  instance.get('/', async (request, reply) => {    return instance.initialConfig    /*    will return :    {      https: { allowHTTP1: true },      routerOptions: {        caseSensitive: true,        ignoreTrailingSlash: true,        maxParamLength: 200      }    }    */  })  instance.get('/error', async (request, reply) => {    // will throw an error because initialConfig is read-only    // and can not be modified    instance.initialConfig.https.allowHTTP1 = false    return instance.initialConfig  })})// Start listening.fastify.listen({ port: 3000 }, (err) => {  if (err) {    fastify.log.error(err)    process.exit(1)  }})
 ```
+

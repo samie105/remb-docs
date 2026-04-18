@@ -9,19 +9,9 @@ last_crawled_at: "2026-04-18T16:42:38.548Z"
 content_hash: "d06b5321b385766287831ac0321401b7311fca0c518e0b4cf611c4bf0a081555"
 menu_path: ["Database","Database","Configuration, optimization, and testing","Configuration, optimization, and testing","Testing your database","Testing your database"]
 section_path: ["Database","Database","Configuration, optimization, and testing","Configuration, optimization, and testing","Testing your database","Testing your database"]
+nav_prev: {"path": "supabase/docs/guides/database/tables/index.md", "title": "Tables and Data"}
+nav_next: {"path": "supabase/docs/guides/deployment/branching/index.md", "title": "Branching"}
 ---
-# 
-
-Testing Your Database
-
-* * *
-
-To ensure that queries return the expected data, RLS policies are correctly applied and etc., we encourage you to write automated tests. There are essentially two approaches to testing:
-
-*   Firstly, you can write tests that interface with a Supabase client instance (same way you use Supabase client in your application code) in the programming language(s) you use in your application and using your favorite testing framework.
-    
-*   Secondly, you can test through the Supabase CLI, which is a more low-level approach where you write tests in SQL.
-    
 
 # Testing using the Supabase CLI
 
@@ -72,3 +62,4 @@ This will produce the following output:
 *   [Testing RLS policies](/docs/guides/database/extensions/pgtap#testing-rls-policies)
 *   [pgTAP extension](/docs/guides/database/extensions/pgtap)
 *   Official [pgTAP documentation](https://pgtap.org/)
+

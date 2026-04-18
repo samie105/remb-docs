@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:48:18.893Z"
 content_hash: "e6d846f78876ba9fa77fd2f1c7e0f70dad3abadbe5b875c6001f6e35f3ff523c"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        Redis Search","→","Redis Search","→\n      \n        Administration","→","Administration","→\n      \n        Garbage collection","→","Garbage collection"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        Redis Search","→","Redis Search","→\n      \n        Administration","→","Administration","→\n      \n        Garbage collection","→","Garbage collection"]
+nav_prev: {"path": "redis/docs/latest/develop/clients/jedis/queryjson/index.md", "title": "Index and query documents"}
+nav_next: {"path": "redis/docs/latest/develop/clients/lettuce/queryjson/index.md", "title": "Index and query documents"}
 ---
+
 # Garbage collection
 
 Details about garbage collection
@@ -68,3 +71,4 @@ Information about FORK GC can be found in this [blog](https://redislabs.com/blog
 Since v1.6, the FORK GC is the default GC policy and was proven very efficient both in cleaning the index and not reducing query and indexing performance, even for very write-internsive use cases.
 
 ## On this page
+

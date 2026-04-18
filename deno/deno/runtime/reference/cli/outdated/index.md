@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:54:55.663Z"
 content_hash: "f288ed0354a46d82fb42503082d0fab1257c5334648e67b2bdc2b485df6ccd04"
 menu_path: ["deno outdated"]
 section_path: []
+nav_prev: {"path": "deno/deno/runtime/reference/cli/lint/index.md", "title": "deno lint"}
+nav_next: {"path": "deno/deno/runtime/reference/cli/publish/index.md", "title": "deno publish"}
 ---
+
 On this page
 
 *   [Checking for outdated dependencies](#checking-for-outdated-dependencies)
@@ -269,3 +272,4 @@ Check the specified lock file. (If value is not provided, defaults to "./deno.lo
 `--no-lock`
 
 Disable auto discovery of the lock file.
+

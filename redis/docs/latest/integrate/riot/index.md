@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:44:43.068Z"
 content_hash: "374777973dc910de4865e6b19ed32740373c0c93450298e982a4a3fd4380ad6b"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        RIOT-X","→","RIOT-X"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        RIOT-X","→","RIOT-X"]
+nav_prev: {"path": "redis/docs/latest/integrate/redisvl/index.md", "title": "RedisVL"}
+nav_next: {"path": "redis/docs/latest/develop/ai/search-and-query/indexing/schema-definition/index.md", "title": "Schema definition"}
 ---
+
 # RIOT-X
 
 Redis Input/Output Tools
@@ -24,3 +27,4 @@ RIOT-X supports many different sources and targets:
 *   [Data generators](https://redis.github.io/riotx/generators/generate.html) (Redis data structures and Faker)
 
 Full documentation is available at [redis.github.io/riotx](https://redis.github.io/riotx/).
+

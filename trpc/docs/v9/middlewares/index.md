@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:42:50.782Z"
 content_hash: "7d5394bdc8ae7a6a9e3d89aba722f411cf035a8514125530185339a1a1bcdbd5"
 menu_path: ["Middlewares"]
 section_path: []
+nav_prev: {"path": "trpc/docs/v9/love/index.md", "title": "Testimonials / Love"}
+nav_next: {"path": "trpc/docs/v9/nextjs/index.md", "title": "Usage with Next.js"}
 ---
+
 You are able to add middleware(s) to a whole router with the `middleware()` method. The middleware(s) will wrap the invocation of the procedure and must pass through its return value.
 
 In the example below any call to `admin.*` will ensure that the user is an "admin" before executing any query or mutation.
@@ -64,7 +67,7 @@ ts
 
 tip
 
-See [Error Handling](https://trpc.io/docs/v9/error-handling) to learn more about the `TRPCError` thrown in the above example.
+See [Error Handling](trpc/docs/v9/error-handling/index.md) to learn more about the `TRPCError` thrown in the above example.
 
 ## Logging[​](#logging "Direct link to Logging")
 
@@ -249,3 +252,4 @@ ts
     `},`
 
   `});`
+

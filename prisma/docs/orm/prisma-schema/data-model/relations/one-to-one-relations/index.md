@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:55:27.239Z"
 content_hash: "dd38fd60672bdad49128ab45e2340a9ac60ae9df2cc9e79e4fafcd2ab8b316cd"
 menu_path: ["One-to-one relations"]
 section_path: []
+nav_prev: {"path": "prisma/docs/orm/prisma-schema/data-model/relations/one-to-many-relations/index.md", "title": "One-to-many relations"}
+nav_next: {"path": "prisma/docs/orm/prisma-schema/data-model/relations/referential-actions/index.md", "title": "Referential actions"}
 ---
+
 Data Model
 
 Relations
@@ -138,3 +141,4 @@ model Profile {
 ```
 
 [Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/prisma-schema/data-model/relations/one-to-one-relations.mdx)
+

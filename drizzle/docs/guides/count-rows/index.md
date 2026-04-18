@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:03:46.773Z"
 content_hash: "08e8111e8fa33d94a0280aa38de55998701b135423b343d31655f44eb067c0f6"
 menu_path: ["Drizzle ORM - Count rows"]
 section_path: []
+nav_prev: {"path": "drizzle/docs/guides/conditional-filters-in-query/index.md", "title": "Drizzle ORM - Conditional filters in query"}
+nav_next: {"path": "drizzle/docs/guides/cursor-based-pagination/index.md", "title": "Drizzle ORM - SQL Cursor-based pagination"}
 ---
+
 Drizzle | Count rows
 
 PostgreSQL
@@ -116,7 +119,7 @@ IMPORTANT
 By specifying `sql<number>`, you are telling Drizzle that the **expected** type of the field is `number`.  
 If you specify it incorrectly (e.g. use `sql<string>` for a field that will be returned as a number), the runtime value won’t match the expected type. Drizzle cannot perform any type casts based on the provided type generic, because that information is not available at runtime.
 
-If you need to apply runtime transformations to the returned value, you can use the [`.mapWith()`](https://orm.drizzle.team/docs/sql#sqlmapwith) method.
+If you need to apply runtime transformations to the returned value, you can use the [`.mapWith()`](drizzle/docs/sql/index.md#sqlmapwith) method.
 
 To count rows that match a condition you can use `.where()` method:
 
@@ -176,3 +179,4 @@ export const cities = pgTable('cities', {
   countryId: integer('country_id').notNull().references(() => countries.id),
 });
 ```
+

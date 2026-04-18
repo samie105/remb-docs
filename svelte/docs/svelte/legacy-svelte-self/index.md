@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:49:45.880Z"
 content_hash: "5d165f895b333c88abf17c7540e1efa7b7fb46cdac8c3c52d1e7ac1a9a4fdb45"
 menu_path: ["<svelte:self>"]
 section_path: []
+nav_prev: {"path": "svelte/docs/svelte/legacy-svelte-component/index.md", "title": "<svelte:component>"}
+nav_next: {"path": "svelte/docs/svelte/legacy-component-api/index.md", "title": "Imperative component API"}
 ---
+
 The `<svelte:self>` element allows a component to include itself, recursively.
 
 It cannot appear at the top level of your markup; it must be inside an if or each block or passed to a component's slot to prevent an infinite loop.
@@ -64,3 +67,4 @@ It cannot appear at the top level of your markup; it must be inside an if or eac
 previous next
 
 [<svelte:component>](/docs/svelte/legacy-svelte-component) [Imperative component API](/docs/svelte/legacy-component-api)
+

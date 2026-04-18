@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:53:52.972Z"
 content_hash: "c84723eac9e3089b1f146ba65ac84f7d2d5bcecb81677ff81f6b8a06df6eb596"
 menu_path: ["Auth","Auth","More","More","More","Server-Side Rendering","Server-Side Rendering","Migrating from Auth Helpers","Migrating from Auth Helpers"]
 section_path: ["Auth","Auth","More","More","More","Server-Side Rendering","Server-Side Rendering","Migrating from Auth Helpers","Migrating from Auth Helpers"]
+nav_prev: {"path": "supabase/docs/guides/auth/server-side/creating-a-client/index.md", "title": "Creating a Supabase client for SSR"}
+nav_next: {"path": "supabase/docs/guides/auth/quickstarts/with-expo-react-native-social-auth/index.md", "title": "Build a Social Auth App with Expo React Native"}
 ---
+
 # 
 
 Migrating to the SSR package from Auth Helpers
@@ -39,3 +42,4 @@ Read the [Creating a client](/docs/guides/auth/server-side/creating-a-client) pa
 *   Implement [Authentication using Email and Password](/docs/guides/auth/passwords)
 *   Implement [Authentication using OAuth](/docs/guides/auth/social-login)
 *   [Learn more about SSR](/docs/guides/auth/server-side/advanced-guide)
+

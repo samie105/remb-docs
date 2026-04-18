@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:50:43.807Z"
 content_hash: "e2f82e345cdf2b9853aab8e2df5ed355818cd87fbe516aea96ad853a3d00da0d"
 menu_path: ["Drizzle <> MySQL"]
 section_path: []
+nav_prev: {"path": "drizzle/docs/get-started-gel/index.md", "title": "Drizzle <> Gel"}
+nav_next: {"path": "drizzle/docs/get-started-sqlite/index.md", "title": "Drizzle <> SQLite"}
 ---
+
 To use Drizzle with a MySQL database, you should use the `mysql2` driver
 
 According to the **[official website](https://github.com/sidorares/node-mysql2)**, `mysql2` is a MySQL client for Node.js with focus on performance.
@@ -110,3 +113,4 @@ For the built in `migrate` function with DDL migrations we and drivers strongly 
 For querying purposes feel free to use either `client` or `pool` based on your business demands.
 
 #### What’s next?[](#whats-next)
+

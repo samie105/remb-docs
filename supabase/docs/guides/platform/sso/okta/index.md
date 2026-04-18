@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:00:57.318Z"
 content_hash: "849824470426efce3b3bc58eb1df8cc26ab03e4dbe3285e1f6a3cfa9ead28d31"
 menu_path: ["Platform","Platform","More","More","More","Single Sign-On","Single Sign-On","SSO with Okta","SSO with Okta"]
 section_path: ["Platform","Platform","More","More","More","Single Sign-On","Single Sign-On","SSO with Okta","SSO with Okta"]
+nav_prev: {"path": "supabase/docs/guides/platform/sso/gsuite/index.md", "title": "Set Up SSO with Google Workspace"}
+nav_next: {"path": "supabase/docs/guides/storage/analytics/connecting-to-analytics-bucket/index.md", "title": "Iceberg Catalog"}
 ---
+
 # 
 
 Set Up SSO with Okta
@@ -156,3 +159,4 @@ When you click **Save changes**, your new SSO configuration is applied immediate
 We recommend asking a few users to test signing in via their Okta account. They can do this by entering their email address on the [Sign in with SSO](/dashboard/sign-in-sso) page.
 
 If SSO sign-in doesn't work as expected, contact your Supabase support representative for assistance.
+

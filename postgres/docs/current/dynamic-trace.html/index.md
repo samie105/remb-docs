@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:49:35.643Z"
 content_hash: "72cf9209ea9776a10f0845b342d9fa698bce621e3b24d40387ed571681a283f2"
 menu_path: ["PostgreSQL: Documentation: 18: 27.5. Dynamic Tracing"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/infoschema-routine-privileges.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.41.\u00a0routine_privileges"}
+nav_next: {"path": "postgres/docs/current/textsearch-psql.html/index.md", "title": "PostgreSQL: Documentation: 18: 12.10.\u00a0psql Support"}
 ---
+
 Name
 
 Parameters
@@ -236,7 +239,7 @@ Probe that fires when a write request is complete. (Note that this just reflects
 
 `()`
 
-Probe that fires when a server process begins to write a dirty WAL buffer because no more WAL buffer space is available. (If this happens often, it implies that [wal\_buffers](https://www.postgresql.org/docs/current/runtime-config-wal.html#GUC-WAL-BUFFERS) is too small.)
+Probe that fires when a server process begins to write a dirty WAL buffer because no more WAL buffer space is available. (If this happens often, it implies that [wal\_buffers](postgres/docs/current/runtime-config-wal.html/index.md#GUC-WAL-BUFFERS) is too small.)
 
 `wal-buffer-write-dirty-done`
 
@@ -345,3 +348,4 @@ Probe that fires when a request for a heavyweight lock (lmgr lock) has finished 
 `()`
 
 Probe that fires when a deadlock is found by the deadlock detector.
+

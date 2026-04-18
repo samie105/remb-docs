@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:10:31.589Z"
 content_hash: "5ef7fc429cc7a7232353c70c090ea0f05736b4cba891ad6c3f0dee05b160ddcc"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Manage Redis","→","Manage Redis","→\n      \n        Redis persistence","→","Redis persistence"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Manage Redis","→","Manage Redis","→\n      \n        Redis persistence","→","Redis persistence"]
+nav_prev: {"path": "redis/docs/latest/integrate/new-relic-with-redis-enterprise/index.md", "title": "New Relic with Redis Software"}
+nav_next: {"path": "redis/docs/latest/develop/use-cases/leaderboard/php/index.md", "title": "Redis leaderboard with PHP"}
 ---
+
 # Redis persistence
 
 How Redis writes data to disk
@@ -290,3 +293,4 @@ It is important to understand that this system can easily fail if not implemente
 You also need some kind of independent alert system if the transfer of fresh backups is not working for some reason.
 
 ## On this page
+

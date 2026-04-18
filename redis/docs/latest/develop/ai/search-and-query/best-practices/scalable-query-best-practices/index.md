@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:43:44.449Z"
 content_hash: "d4660153473e46127081e2bd93e173c2076237c3d03219f3b4ab15dad1cfa938"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        Redis Search","→","Redis Search","→\n      \n        Best practices","→","Best practices","→\n      \n        Best practices for Redis Search performance","→","Best practices for Redis Search performance"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        Redis Search","→","Redis Search","→\n      \n        Best practices","→","Best practices","→\n      \n        Best practices for Redis Search performance","→","Best practices for Redis Search performance"]
+nav_prev: {"path": "redis/docs/latest/operate/rc/databases/connect/insight-cloud/index.md", "title": "Use Redis Insight on Redis Cloud"}
+nav_next: {"path": "redis/docs/latest/integrate/redis-mcp/index.md", "title": "Redis MCP"}
 ---
+
 # Best practices for Redis Search performance
 
 Note:
@@ -152,3 +155,4 @@ Improvements:
 *   [`DIALECT 2`](/docs/latest/develop/ai/search-and-query/advanced-concepts/dialects/#dialect-2): enables the latest Redis Search syntax and features, ensuring compatibility with modern capabilities.
 
 ## On this page
+

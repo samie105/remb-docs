@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:41:38.855Z"
 content_hash: "de12a78fd54a8ee75bee6d74a73bfea6b44586823c0c68469e01e2b09a714bf3"
 menu_path: ["Testing"]
 section_path: []
+nav_prev: {"path": "astro/en/guides/authentication/index.md", "title": "Authentication"}
+nav_next: {"path": "astro/en/getting-started/index.md", "title": "Astro Docs"}
 ---
+
 # Testing
 
 Testing helps you write and maintain working Astro code. Astro supports many popular tools for unit tests, component tests, and end-to-end tests including Jest, Mocha, Jasmine, [Cypress](https://cypress.io) and [Playwright](https://playwright.dev). You can even install framework-specific testing libraries such as React Testing Library to test your UI framework components.
@@ -304,3 +307,4 @@ More information about NightwatchJS can be found in the links below:
 *   [Testing with Nightwatch](https://nightwatchjs.org/guide/writing-tests/introduction.html)
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:54:05.809Z"
 content_hash: "a2fd1084b593ee2a007d0f6c0e2200a3d25c44ad6559c0f6c9c733e553f4d852"
 menu_path: ["Auth","Auth","More","More","More","Sessions","Sessions","PKCE flow","PKCE flow"]
 section_path: ["Auth","Auth","More","More","More","Sessions","Sessions","PKCE flow","PKCE flow"]
+nav_prev: {"path": "supabase/docs/guides/auth/sessions/implicit-flow/index.md", "title": "Implicit flow"}
+nav_next: {"path": "supabase/docs/guides/auth/social-login/auth-apple/index.md", "title": "Login with Apple"}
 ---
+
 # 
 
 PKCE flow
@@ -59,3 +62,4 @@ The code verifier is created and stored locally when the Auth flow is first init
 ## Resources[#](#resources)
 
 *   [OAuth 2.0 guide](https://oauth.net/2/pkce/) to PKCE flow
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:02:08.135Z"
 content_hash: "256e682e2ee33b60ee8c4f1381cf5c6ac7b6156d87146a7ec02798d4d440b497"
 menu_path: ["@std/expect"]
 section_path: []
+nav_prev: {"path": "deno/deno/runtime/reference/std/encoding/index.md", "title": "@std/encoding"}
+nav_next: {"path": "deno/deno/runtime/reference/std/fmt/index.md", "title": "@std/fmt"}
 ---
+
 On this page
 
 *   [Overview](#overview)
@@ -105,3 +108,4 @@ deno add jsr:@std/expect
 ```
 
 [See all symbols in @std/expect on](https://jsr.io/@std/expect/doc)
+

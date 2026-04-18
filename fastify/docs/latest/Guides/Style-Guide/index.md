@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:39:17.886Z"
 content_hash: "c86f61585ffdef3bb07e54e0a5516a3cedbb4536c96e277847ecafd9482e666a"
 menu_path: ["Fastify Style Guide"]
 section_path: []
+nav_prev: {"path": "fastify/docs/latest/Guides/Prototype-Poisoning/index.md", "title": "Prototype-Poisoning"}
+nav_next: {"path": "fastify/docs/latest/Guides/Serverless/index.md", "title": "Serverless"}
 ---
+
 Version: latest (v5.8.x)
 
 ## Welcome[​](#welcome "Direct link to Welcome")
@@ -55,12 +58,12 @@ Do not add videos or screenshots to the documentation. It is easier to keep unde
 **Example**
 
 ```
-To learn more about hooks, see [Fastify hooks](https://fastify.dev/docs/latest/Reference/Hooks/).
+To learn more about hooks, see [Fastify hooks](fastify/docs/latest/Reference/Hooks/index.md).
 ```
 
 Result:
 
-> To learn more about hooks, see [Fastify hooks](https://fastify.dev/docs/latest/Reference/Hooks/).
+> To learn more about hooks, see [Fastify hooks](fastify/docs/latest/Reference/Hooks/index.md).
 
 ### Avoid plagiarism[​](#avoid-plagiarism "Direct link to Avoid plagiarism")
 
@@ -169,3 +172,4 @@ Hyperlinks should have a clear title of what they reference. Here is how your hy
 ```
 
 Include in your documentation as many essential references as possible, but avoid having numerous links when writing for beginners to avoid distractions.
+

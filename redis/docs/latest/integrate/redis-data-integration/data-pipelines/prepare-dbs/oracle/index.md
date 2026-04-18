@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:42:32.026Z"
 content_hash: "94faabdcc07ab3cba198a048681ac786ce4061a925af2f34469ceab6017b421c"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Redis Data Integration","→","Redis Data Integration","→\n      \n        Data pipelines","→","Data pipelines","→\n      \n        Prepare source databases","→","Prepare source databases","→\n      \n        Prepare Oracle and Oracle RAC for RDI","→","Prepare Oracle and Oracle RAC for RDI"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Redis Data Integration","→","Redis Data Integration","→\n      \n        Data pipelines","→","Data pipelines","→\n      \n        Prepare source databases","→","Prepare source databases","→\n      \n        Prepare Oracle and Oracle RAC for RDI","→","Prepare Oracle and Oracle RAC for RDI"]
+nav_prev: {"path": "redis/docs/latest/operate/oss_and_stack/stack-with-enterprise/stack-quickstart/index.md", "title": "Redis Open Source quick start"}
+nav_next: {"path": "redis/docs/latest/operate/rc/databases/rdi/quick-start/index.md", "title": "RDI on Redis Cloud quick start"}
 ---
+
 # Prepare Oracle and Oracle RAC for RDI
 
 Prepare Oracle and Oracle RAC databases to work with RDI
@@ -1052,3 +1055,4 @@ With an XStream outbound server:
 *   Multiple consumers can be attached to the same outbound server if needed.
 
 ## On this page
+

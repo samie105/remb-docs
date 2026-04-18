@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:53:31.318Z"
 content_hash: "36235b95663a3b4d572bba7f7eb9cc76c9f551fd46c41e78166aeb88bd770a5b"
 menu_path: ["Timeout Middleware ​"]
 section_path: []
+nav_prev: {"path": "hono/docs/middleware/builtin/secure-headers/index.md", "title": "Secure Headers Middleware \u200b"}
+nav_next: {"path": "hono/docs/middleware/builtin/timing/index.md", "title": "Server-Timing Middleware \u200b"}
 ---
+
 ## Timeout Middleware [​](#timeout-middleware)
 
 The Timeout Middleware enables you to easily manage request timeouts in your application. It allows you to set a maximum duration for requests and optionally define custom error responses if the specified timeout is exceeded.
@@ -117,3 +120,4 @@ app.get('/sse', async (c) => {
 ## Middleware Conflicts [​](#middleware-conflicts)
 
 Be cautious about the order of middleware, especially when using error-handling or other timing-related middleware, as it might affect the behavior of this timeout middleware.
+

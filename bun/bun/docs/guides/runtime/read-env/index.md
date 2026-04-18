@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:53:06.338Z"
 content_hash: "b0287eb460655bbcd3274ecd596bf66b4f2b05bf8abb963122d57a54f950400b"
 menu_path: ["Read environment variables"]
 section_path: []
+nav_prev: {"path": "bun/bun/docs/guides/runtime/import-yaml/index.md", "title": "Import a YAML file"}
+nav_next: {"path": "bun/bun/docs/guides/runtime/set-env/index.md", "title": "Set environment variables"}
 ---
+
 [Skip to main content](#content-area)
 
 [Bun home page![light logo](https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z_zHyy/logo/logo-with-wordmark-dark.svg?fit=max&auto=format&n=JUhaF6Mf68z_zHyy&q=85&s=3f55cd23822028e40658b192c927f3e4)![dark logo](https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z_zHyy/logo/logo-with-wordmark-light.svg?fit=max&auto=format&n=JUhaF6Mf68z_zHyy&q=85&s=8a0c5928d9dc3631f0d33e17c257e2ec)](/docs)
@@ -87,3 +90,4 @@ Add a dependency
 Next
 
 ](/docs/guides/install/add)
+

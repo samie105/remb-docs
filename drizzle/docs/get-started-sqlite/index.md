@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:51:32.297Z"
 content_hash: "75ce74191eb182a536140f527122d0aacc2327f19ee273613063a0326a38f1ba"
 menu_path: ["Drizzle <> SQLite"]
 section_path: []
+nav_prev: {"path": "drizzle/docs/get-started-mysql/index.md", "title": "Drizzle <> MySQL"}
+nav_next: {"path": "drizzle/docs/get-started-mssql/index.md", "title": "Drizzle <> MSSQL"}
 ---
+
 Drizzle has native support for SQLite connections with the `libsql` and `better-sqlite3` drivers.
 
 There are a few differences between the `libsql` and `better-sqlite3` drivers that we discovered while using both and integrating them with the Drizzle ORM. For example:
@@ -255,3 +258,4 @@ const result = await db.execute('select 1');
 ```
 
 #### What’s next?[](#whats-next)
+

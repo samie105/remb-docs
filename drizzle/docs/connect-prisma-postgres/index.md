@@ -9,13 +9,16 @@ last_crawled_at: "2026-04-18T16:42:17.264Z"
 content_hash: "53c2d64fec245135e9f36b7923ab0c3beb13c5e8b387f15a4d983f9f05e5ec8b"
 menu_path: ["Drizzle <> Prisma Postgres"]
 section_path: []
+nav_prev: {"path": "drizzle/docs/connect-vercel-postgres/index.md", "title": "Drizzle <> Vercel Postgres"}
+nav_next: {"path": "drizzle/docs/connect-supabase/index.md", "title": "Drizzle <> Supabase"}
 ---
+
 This guide assumes familiarity with:
 
-*   Database [connection basics](https://orm.drizzle.team/docs/connect-overview) with Drizzle
+*   Database [connection basics](drizzle/docs/connect-overview/index.md) with Drizzle
 *   Prisma Postgres serverless database - [website](https://prisma.io/postgres)
 *   Prisma Postgres direct connections - [docs](https://www.prisma.io/docs/postgres/database/direct-connections)
-*   Drizzle PostgreSQL drivers - [docs](https://orm.drizzle.team/docs/get-started-postgresql)
+*   Drizzle PostgreSQL drivers - [docs](drizzle/docs/get-started-postgresql/index.md)
 
 Prisma Postgres is a serverless database built on [unikernels](https://www.prisma.io/blog/announcing-prisma-postgres-early-access). It has a large free tier, [operation-based pricing](https://www.prisma.io/blog/operations-based-billing) and no cold starts.
 
@@ -88,3 +91,4 @@ const result = await db.execute('select 1');
 ```
 
 #### What’s next?[](#whats-next)
+

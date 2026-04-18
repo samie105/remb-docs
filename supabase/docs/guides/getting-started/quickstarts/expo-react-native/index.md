@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:58:05.013Z"
 content_hash: "90e2fa4c7a22d36d969142a22ca0df33012c2f08a9be3632e899774f09b64abe"
 menu_path: ["Start with Supabase","Start with Supabase","Framework Quickstarts","Framework Quickstarts","Expo React Native","Expo React Native"]
 section_path: ["Start with Supabase","Start with Supabase","Framework Quickstarts","Framework Quickstarts","Expo React Native","Expo React Native"]
+nav_prev: {"path": "supabase/docs/guides/functions/examples/stripe-webhooks/index.md", "title": "Handling Stripe Webhooks"}
+nav_next: {"path": "supabase/docs/guides/getting-started/quickstarts/flask/index.md", "title": "Use Supabase with Python"}
 ---
+
 # 
 
 Use Supabase with Expo React Native
@@ -165,3 +168,4 @@ Run the development server and scan the QR code with the Expo Go app on your pho
 *   Set up [Auth](/docs/guides/auth) for your app
 *   [Insert more data](/docs/guides/database/import-data) into your database
 *   Upload and serve static files using [Storage](/docs/guides/storage)
+

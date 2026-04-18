@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:36:24.150Z"
 content_hash: "2e3729c8060a57ba111568a6b7495c1240d46f6941923afa3bb7cfd0a530f4f5"
 menu_path: ["Deploy your Astro Site to Azion"]
 section_path: []
+nav_prev: {"path": "astro/en/guides/deploy/aws-via-sst/index.md", "title": "Deploy your Astro Site to AWS with SST"}
+nav_next: {"path": "astro/en/guides/deploy/buddy/index.md", "title": "Deploy your Astro Site with Buddy"}
 ---
+
 # Deploy your Astro Site to Azion
 
 You can deploy your Astro project on [Azion](https://console.azion.com/), a platform for frontend developers to collaborate and deploy static (JAMstack) and SSR websites.
@@ -257,3 +260,4 @@ If you are importing a package that imports a Node.js runtime API, check with th
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:48:01.685Z"
 content_hash: "58983443d4be47c204504577b8a07f5e2c006e29b279fed11684d09f7dad2433"
 menu_path: ["Platform","Platform","Project & Account Management","Project & Account Management","Transfer Project","Transfer Project"]
 section_path: ["Platform","Platform","Project & Account Management","Project & Account Management","Transfer Project","Transfer Project"]
+nav_prev: {"path": "supabase/docs/guides/platform/performance/index.md", "title": "Performance Tuning"}
+nav_next: {"path": "supabase/docs/guides/platform/privatelink/index.md", "title": "PrivateLink"}
 ---
+
 # 
 
 Project Transfers
@@ -48,3 +51,4 @@ The target organization will be charged at the end of the billing cycle for usag
 ## Transfer to a different region[#](#transfer-to-a-different-region)
 
 Note that project transfers are only transferring your projects across an organization and cannot be used to transfer between different regions. To move your project to a different region, see [migrating your project](/docs/guides/platform/migrating-within-supabase).
+

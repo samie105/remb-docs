@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:31:52.834Z"
 content_hash: "b832dce6993cd041bbee22c14b15291f42d4a541710144b598adda034435f5a0"
 menu_path: ["Components"]
 section_path: []
+nav_prev: {"path": "astro/en/guides/view-transitions/index.md", "title": "View transitions"}
+nav_next: {"path": "astro/en/basics/layouts/index.md", "title": "Layouts"}
 ---
+
 # Components
 
 **Astro components** are the basic building blocks of any Astro project. They are HTML-only templating components with no client-side runtime and use the `.astro` file extension.
@@ -224,3 +227,4 @@ HTML components must contain only valid HTML, and therefore lack key Astro compo
 Read more about using [UI framework components](/en/guides/framework-components/) in your Astro project.
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

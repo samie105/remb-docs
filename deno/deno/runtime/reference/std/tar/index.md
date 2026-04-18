@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:05:53.386Z"
 content_hash: "32bc50b37e3d13f477850b1a2bca5d175dddcdec39991a8dfc3390c87f5f725e"
 menu_path: ["@std/tar"]
 section_path: []
+nav_prev: {"path": "deno/deno/runtime/reference/std/streams/index.md", "title": "@std/streams"}
+nav_next: {"path": "deno/deno/runtime/reference/std/testing/index.md", "title": "@std/testing"}
 ---
+
 On this page
 
 *   [Overview](#overview)
@@ -50,3 +53,4 @@ deno add jsr:@std/tar
 ```
 
 [See all symbols in @std/tar on](https://jsr.io/@std/tar/doc)
+

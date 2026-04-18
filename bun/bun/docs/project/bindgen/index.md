@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:58:14.171Z"
 content_hash: "9c7db3d19c4a2804c8f195c81d84ea6a0dc9db0f91365d56b50edc81b61112eb"
 menu_path: ["Bindgen"]
 section_path: []
+nav_prev: {"path": "bun/bun/docs/project/benchmarking/index.md", "title": "Benchmarking"}
+nav_next: {"path": "bun/bun/docs/project/building-windows/index.md", "title": "Building Windows"}
 ---
+
 The new bindings generator, introduced to the codebase in Dec 2024, scans for `*.bind.ts` to find function and class definition, and generates glue code to interop between JavaScript and native code. There are currently other code generators and systems that achieve similar purposes. The following will all eventually be completely phased out in favor of this one:
 
 *   “Classes generator”, converting `*.classes.ts` for custom classes.
@@ -211,3 +214,4 @@ TODO
 ## Classes
 
 TODO
+

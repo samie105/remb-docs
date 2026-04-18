@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:38:19.228Z"
 content_hash: "915f602a8c57351cfed2b672b647770397cd5f9e949af014061db638aa6ec6b6"
 menu_path: ["Using environment variables"]
 section_path: []
+nav_prev: {"path": "astro/en/guides/typescript/index.md", "title": "TypeScript"}
+nav_next: {"path": "astro/en/guides/integrations/index.md", "title": "Working with integrations"}
 ---
+
 # Using environment variables
 
 Astro gives you access to [Vite’s built-in environment variables support](#vites-built-in-support) and includes some [default environment variables for your project](#default-environment-variables) that allow you to access configuration values for your current project (e.g. `site`, `base`), whether your project is running in development or production, and more.
@@ -263,3 +266,4 @@ You cannot use it in the following and will have to resort to `process.env`:
 *   Scripts
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

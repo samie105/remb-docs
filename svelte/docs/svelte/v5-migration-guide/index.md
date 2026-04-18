@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:43:47.962Z"
 content_hash: "8c5c308eb446fa63dbb0713a44ba1d6d5e6b04e63739b299945f88440fe7b3a0"
 menu_path: ["Svelte 5 migration guide"]
 section_path: []
+nav_prev: {"path": "svelte/docs/svelte/v4-migration-guide/index.md", "title": "Svelte 4 migration guide"}
+nav_next: {"path": "svelte/docs/svelte/faq/index.md", "title": "Frequently asked questions"}
 ---
+
 Version 5 comes with an overhauled syntax and reactivity system. While it may look different at first, you'll soon notice many similarities. This guide goes over the changes in detail and shows you how to upgrade. Along with it, we also provide information on _why_ we did these changes.
 
 You don't have to migrate to the new syntax right away — Svelte 5 still supports the old Svelte 4 syntax, and you can mix and match components using the new syntax with components using the old and vice versa. We expect many people to be able to upgrade with only a few lines of code changed initially. There's also a [migration script](#Migration-script) that helps you with many of these steps automatically.
@@ -1369,3 +1372,4 @@ Svelte 5 uses an extra `<svelte-css-wrapper>` element instead of a `<div>` to wr
 previous next
 
 [Svelte 4 migration guide](/docs/svelte/v4-migration-guide) [Frequently asked questions](/docs/svelte/faq)
+

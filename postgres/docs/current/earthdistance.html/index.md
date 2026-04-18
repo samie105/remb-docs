@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:47:40.239Z"
 content_hash: "7b158ce330ea25313c0e63384b360ea681640577a693f79cf14ba4cc9cf118ab"
 menu_path: ["PostgreSQL: Documentation: 18: F.14. earthdistance — calculate great-circle distances"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/functions-uuid.html/index.md", "title": "PostgreSQL: Documentation: 18: 9.14.\u00a0UUID Functions"}
+nav_next: {"path": "postgres/docs/current/btree.html/index.md", "title": "PostgreSQL: Documentation: 18: 65.1.\u00a0B-Tree Indexes"}
 ---
+
 Development Versions: [devel](https://www.postgresql.org/docs/devel/earthdistance.html "PostgreSQL devel - F.14. earthdistance — calculate great-circle distances")
 
 The `earthdistance` module provides two different approaches to calculating great circle distances on the surface of the Earth. The one described first depends on the `cube` module. The second one is based on the built-in `point` data type, using longitude and latitude for the coordinates.
@@ -24,7 +27,7 @@ It is strongly recommended that `earthdistance` and `cube` be installed in the s
 
 ### F.14.1. Cube-Based Earth Distances [#](#EARTHDISTANCE-CUBE-BASED)
 
-Data is stored in cubes that are points (both corners are the same) using 3 coordinates representing the x, y, and z distance from the center of the Earth. A [](https://www.postgresql.org/docs/current/glossary.html#GLOSSARY-DOMAIN)[domain](https://www.postgresql.org/docs/current/glossary.html#GLOSSARY-DOMAIN "Domain") `earth` over type `cube` is provided, which includes constraint checks that the value meets these restrictions and is reasonably close to the actual surface of the Earth.
+Data is stored in cubes that are points (both corners are the same) using 3 coordinates representing the x, y, and z distance from the center of the Earth. A [](postgres/docs/current/glossary.html/index.md#GLOSSARY-DOMAIN)[domain](https://www.postgresql.org/docs/current/glossary.html#GLOSSARY-DOMAIN "Domain") `earth` over type `cube` is provided, which includes constraint checks that the value meets these restrictions and is reasonably close to the actual surface of the Earth.
 
 The radius of the Earth is obtained from the `earth()` function. It is given in meters. But by changing this one function you can change the module to use some other units, or to use a different value of the radius that you feel is more appropriate.
 
@@ -93,3 +96,4 @@ Computes the distance in statute miles between two points on the Earth's surface
 Note that unlike the `cube`\-based part of the module, units are hardwired here: changing the `earth()` function will not affect the results of this operator.
 
 One disadvantage of the longitude/latitude representation is that you need to be careful about the edge conditions near the poles and near +/- 180 degrees of longitude. The `cube`\-based representation avoids these discontinuities.
+

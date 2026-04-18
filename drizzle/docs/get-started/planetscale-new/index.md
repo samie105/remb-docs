@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:58:17.130Z"
 content_hash: "62a39d022bbc8ed3f92e525f29a8608a8c89f4397fbb8488cab8effe5adb1d24"
 menu_path: ["Get Started with Drizzle and PlanetScale"]
 section_path: []
+nav_prev: {"path": "drizzle/docs/get-started/planetscale-existing/index.md", "title": "Get Started with Drizzle and PlanetScale in existing project"}
+nav_next: {"path": "drizzle/docs/get-started/planetscale-postgres-new/index.md", "title": "Get Started with Drizzle and PlanetScale Postgres"}
 ---
+
 ## Get Started with Drizzle and PlanetScale
 
 This guide assumes familiarity with:
@@ -23,7 +26,7 @@ PlanetScale also offers Postgres
 
 important
 
-For this tutorial, we will use the `database-js` driver to make **HTTP** calls to the PlanetScale database. If you need to connect to PlanetScale through TCP, you can refer to our [MySQL Get Started](https://orm.drizzle.team/docs/get-started/mysql-new) page
+For this tutorial, we will use the `database-js` driver to make **HTTP** calls to the PlanetScale database. If you need to connect to PlanetScale through TCP, you can refer to our [MySQL Get Started](drizzle/docs/get-started/mysql-new/index.md) page
 
 #### Basic file structure
 
@@ -132,7 +135,7 @@ export const usersTable = mysqlTable('users_table', {
 
 #### Step 5 - Setup Drizzle config file[](#step-5---setup-drizzle-config-file)
 
-**Drizzle config** - a configuration file that is used by [Drizzle Kit](https://orm.drizzle.team/docs/kit-overview) and contains all the information about your database connection, migration folder and schema files.
+**Drizzle config** - a configuration file that is used by [Drizzle Kit](drizzle/docs/kit-overview/index.md) and contains all the information about your database connection, migration folder and schema files.
 
 Create a `drizzle.config.ts` file in the root of your project and add the following content:
 
@@ -158,7 +161,7 @@ You can directly apply changes to your database using the `drizzle-kit push` com
 npx drizzle-kit push
 ```
 
-Read more about the push command in [documentation](https://orm.drizzle.team/docs/drizzle-kit-push).
+Read more about the push command in [documentation](drizzle/docs/drizzle-kit-push/index.md).
 
 Tips
 
@@ -176,7 +179,7 @@ Apply migrations:
 npx drizzle-kit migrate
 ```
 
-Read more about migration process in [documentation](https://orm.drizzle.team/docs/kit-overview).
+Read more about migration process in [documentation](drizzle/docs/kit-overview/index.md).
 
 #### Step 7 - Seed and Query the database[](#step-7---seed-and-query-the-database)
 
@@ -271,3 +274,4 @@ bun src/index.ts
 ```
 
 If you don’t have bun installed, check the [Bun installation docs](https://bun.sh/docs/installation#installing)
+

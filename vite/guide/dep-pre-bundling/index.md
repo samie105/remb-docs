@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:35:06.793Z"
 content_hash: "a0b743bea0738bb6ab75c27d6090d3fbecfc7c0670e2d2c4072c5a4867635b5e"
 menu_path: ["Dependency Pre-Bundling ​"]
 section_path: []
+nav_prev: {"path": "vite/guide/using-plugins/index.md", "title": "Using Plugins \u200b"}
+nav_next: {"path": "vite/guide/assets/index.md", "title": "Static Asset Handling \u200b"}
 ---
+
 When you run `vite` for the first time, Vite prebundles your project dependencies before loading your site locally. It is done automatically and transparently by default.
 
 ## The Why [​](#the-why)
@@ -48,7 +51,7 @@ After the server has already started, if a new dependency import is encountered 
 
 In a monorepo setup, a dependency may be a linked package from the same repo. Vite automatically detects dependencies that are not resolved from `node_modules` and treats the linked dep as source code. It will not attempt to bundle the linked dep, and will analyze the linked dep's dependency list instead.
 
-However, this requires the linked dep to be exported as ESM. If not, you can add the dependency to [`optimizeDeps.include`](https://vite.dev/config/dep-optimization-options#optimizedeps-include) in your config.
+However, this requires the linked dep to be exported as ESM. If not, you can add the dependency to [`optimizeDeps.include`](vite/config/dep-optimization-options/index.md#optimizedeps-include) in your config.
 
 vite.config.js
 
@@ -66,13 +69,13 @@ When making changes to the linked dep, restart the dev server with the `--force`
 
 ## Customizing the Behavior [​](#customizing-the-behavior)
 
-The default dependency discovery heuristics may not always be desirable. In cases where you want to explicitly include/exclude dependencies from the list, use the [`optimizeDeps` config options](https://vite.dev/config/dep-optimization-options).
+The default dependency discovery heuristics may not always be desirable. In cases where you want to explicitly include/exclude dependencies from the list, use the [`optimizeDeps` config options](vite/config/dep-optimization-options/index.md).
 
 A typical use case for `optimizeDeps.include` or `optimizeDeps.exclude` is when you have an import that is not directly discoverable in the source code. For example, maybe the import is created as a result of a plugin transform. This means Vite won't be able to discover the import on the initial scan - it can only discover it after the file is requested by the browser and transformed. This will cause the server to immediately re-bundle after server start.
 
 Both `include` and `exclude` can be used to deal with this. If the dependency is large (with many internal modules) or is CommonJS, then you should include it; If the dependency is small and is already valid ESM, you can exclude it and let the browser load it directly.
 
-You can further customize Rolldown too with the [`optimizeDeps.rolldownOptions` option](https://vite.dev/config/dep-optimization-options#optimizedeps-rolldownoptions). For example, adding a Rolldown plugin to handle special files in dependencies or changing the [build `target`](https://rolldown.rs/reference/InputOptions.transform#target).
+You can further customize Rolldown too with the [`optimizeDeps.rolldownOptions` option](vite/config/dep-optimization-options/index.md#optimizedeps-rolldownoptions). For example, adding a Rolldown plugin to handle special files in dependencies or changing the [build `target`](https://rolldown.rs/reference/InputOptions.transform#target).
 
 ## Caching [​](#caching)
 
@@ -96,3 +99,4 @@ Resolved dependency requests are strongly cached with HTTP headers `max-age=3153
 1.  Temporarily disable cache via the Network tab of your browser devtools.
 2.  Restart Vite dev server with the `--force` flag to re-bundle the deps.
 3.  Reload the page.
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:59:50.035Z"
 content_hash: "8b571f8f717bd8b87cd4ef3fc06fd6982d70177bc4bd122730ed1b11c7b961e0"
 menu_path: ["Platform","Platform","More","More","More","Manage your usage","Manage your usage","Branching","Branching"]
 section_path: ["Platform","Platform","More","More","More","Manage your usage","Manage your usage","Branching","Branching"]
+nav_prev: {"path": "supabase/docs/guides/platform/manage-your-usage/advanced-mfa-phone/index.md", "title": "Manage Advanced MFA Phone usage"}
+nav_next: {"path": "supabase/docs/guides/platform/manage-your-usage/compute/index.md", "title": "Manage Compute usage"}
 ---
+
 # 
 
 Manage Branching usage
@@ -103,3 +106,4 @@ In the Usage Summary section, you can see how many hours your Preview branches e
 ### Do Compute Credits apply to Branching Compute?[#](#do-compute-credits-apply-to-branching-compute)
 
 No, Compute Credits do not apply to Branching Compute.
+

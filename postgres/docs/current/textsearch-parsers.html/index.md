@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:47:48.300Z"
 content_hash: "945503d16ce5824a20f448cb5837b26de8529e9d499fa9a1472fe362156dcf24"
 menu_path: ["PostgreSQL: Documentation: 18: 12.5. Parsers"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/infoschema-role-udt-grants.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.38.\u00a0role_udt_grants"}
+nav_next: {"path": "postgres/docs/current/sql-comment.html/index.md", "title": "PostgreSQL: Documentation: 18: COMMENT"}
 ---
+
 Text search parsers are responsible for splitting raw document text into _tokens_ and identifying each token's type, where the set of possible types is defined by the parser itself. Note that a parser does not modify the text at all — it simply identifies plausible word boundaries. Because of this limited scope, there is less need for application-specific custom parsers than there is for custom dictionaries. At present PostgreSQL provides just one built-in parser, which has been found to be useful for a wide range of applications.
 
 The built-in parser is named `pg_catalog.default`. It recognizes 23 token types, shown in [Table 12.1](https://www.postgresql.org/docs/current/textsearch-parsers.html#TEXTSEARCH-DEFAULT-PARSER "Table 12.1. Default Parser's Token Types").
@@ -193,3 +196,4 @@ SELECT alias, description, token FROM ts\_debug('http://example.com/stuff/index.
  url      | URL           | example.com/stuff/index.html
  host     | Host          | example.com
  url\_path | URL path      | /stuff/index.html
+

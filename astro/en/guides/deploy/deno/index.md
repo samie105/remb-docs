@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:36:48.679Z"
 content_hash: "98c0ab28e007582385c5727a907f18324f5926c10d6e9fa6afab0b22a6ca43c9"
 menu_path: ["Deploy your Astro Site with Deno"]
 section_path: []
+nav_prev: {"path": "astro/en/guides/deploy/cloudray/index.md", "title": "Deploy your Astro Site with CloudRay"}
+nav_next: {"path": "astro/en/guides/deploy/deployhq/index.md", "title": "Deploy your Astro Site with DeployHQ"}
 ---
+
 # Deploy your Astro Site with Deno
 
 You can deploy a static or on-demand rendered Astro site using Deno, either on your own server, or to [Deno Deploy](https://deno.com/deploy), a distributed system that runs JavaScript, TypeScript, and WebAssembly at the edge, worldwide.
@@ -326,3 +329,4 @@ If your project is stored on GitHub, the [Deno Deploy website](https://dash.deno
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:37:20.548Z"
 content_hash: "58a46078daf8c2cfb44299b442d844c6502571681c7108a8014c7c4829da3213"
 menu_path: ["PostgreSQL: Documentation: 18: 19.18. Short Options"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/bki-commands.html/index.md", "title": "PostgreSQL: Documentation: 18: 68.4.\u00a0BKI Commands"}
+nav_next: {"path": "postgres/docs/current/ecpg-descriptors.html/index.md", "title": "PostgreSQL: Documentation: 18: 34.7.\u00a0Using Descriptor Areas"}
 ---
+
 Short Option
 
 Equivalent
@@ -81,3 +84,4 @@ Equivalent
 ``-W _`x`_``
 
 ``post_auth_delay = _`x`_``
+

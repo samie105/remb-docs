@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:15:15.943Z"
 content_hash: "aad5f87a89749a983050608b509838a81da3687f5dc28080a403102f3854a913"
 menu_path: ["WebSockets - Web documentation"]
 section_path: []
+nav_prev: {"path": "deno/deno/api/web/wasm/index.md", "title": "Wasm - Web documentation"}
+nav_next: {"path": "deno/deno/api/web/workers/index.md", "title": "Workers - Web documentation"}
 ---
+
 ### Interfaces [#](#Interfaces)
 
 I
@@ -147,3 +150,4 @@ T
 [BinaryType](./././~/BinaryType "BinaryType")
 
 Specifies the type of binary data being received over a `WebSocket` connection.
+

@@ -9,12 +9,15 @@ last_crawled_at: "2026-04-18T16:46:47.557Z"
 content_hash: "23683febcfa2e79b3193ad9d17aafdf5317ae74eba01bec55d671a1df40b8b8f"
 menu_path: ["Aggregation, grouping, and summarizing"]
 section_path: []
+nav_prev: {"path": "prisma/docs/orm/prisma-client/queries/crud/index.md", "title": "CRUD"}
+nav_next: {"path": "prisma/docs/orm/prisma-client/queries/relation-queries/index.md", "title": "CRUD"}
 ---
+
 Use Prisma Client to aggregate, group by, count, and select distinct.
 
 Prisma Client allows you to count records, aggregate number fields, and select distinct field values.
 
-Prisma Client allows you to [`aggregate`](https://www.prisma.io/docs/orm/reference/prisma-client-reference#aggregate) on the **number** fields (such as `Int` and `Float`) of a model. The following query returns the average age of all users:
+Prisma Client allows you to [`aggregate`](prisma/docs/orm/reference/prisma-client-reference/index.md#aggregate) on the **number** fields (such as `Int` and `Float`) of a model. The following query returns the average age of all users:
 
 ```
 const aggregations = await prisma.user.aggregate({
@@ -72,7 +75,7 @@ The query returns `{ _avg: { age: null } }` in either of the following scenarios
 
 This allows you to differentiate between the true aggregate value (which could be zero) and no data.
 
-Prisma Client's [`groupBy()`](https://www.prisma.io/docs/orm/reference/prisma-client-reference#groupby) allows you to **group records** by one or more field values - such as `country`, or `country` and `city` and **perform aggregations** on each group, such as finding the average age of people living in a particular city.
+Prisma Client's [`groupBy()`](prisma/docs/orm/reference/prisma-client-reference/index.md#groupby) allows you to **group records** by one or more field values - such as `country`, or `country` and `city` and **perform aggregations** on each group, such as finding the average age of people living in a particular city.
 
 The following example groups all users by the `country` field and returns the total number of profile views for each country:
 
@@ -266,7 +269,7 @@ Both `distinct` and `groupBy()` group records by one or more unique field values
 
 ### [Count records](#count-records)
 
-Use [`count()`](https://www.prisma.io/docs/orm/reference/prisma-client-reference#count) to count the number of records or non-`null` field values. The following example query counts all users:
+Use [`count()`](prisma/docs/orm/reference/prisma-client-reference/index.md#count) to count the number of records or non-`null` field values. The following example query counts all users:
 
 ```
 const userCount = await prisma.user.count();
@@ -373,7 +376,7 @@ const usersWithCount = await prisma.user.findMany({
 
 #### [Filter the relation count](#filter-the-relation-count)
 
-Use `where` to filter the fields returned by the `_count` output type. You can do this on [scalar fields](https://www.prisma.io/docs/orm/prisma-schema/data-model/models#scalar-fields) and [relation fields](https://www.prisma.io/docs/orm/prisma-schema/data-model/models#relation-fields).
+Use `where` to filter the fields returned by the `_count` output type. You can do this on [scalar fields](prisma/docs/orm/prisma-schema/data-model/models/index.md#scalar-fields) and [relation fields](prisma/docs/orm/prisma-schema/data-model/models/index.md#relation-fields).
 
 For example, the following query returns all user posts with the title "Hello!":
 
@@ -452,7 +455,7 @@ const postCount = await prisma.post.count({
 });
 ```
 
-Prisma Client allows you to filter duplicate rows from a Prisma Query response to a [`findMany`](https://www.prisma.io/docs/orm/reference/prisma-client-reference#findmany) query using [`distinct`](https://www.prisma.io/docs/orm/reference/prisma-client-reference#distinct) . `distinct` is often used in combination with [`select`](https://www.prisma.io/docs/orm/reference/prisma-client-reference#select) to identify certain unique combinations of values in the rows of your table.
+Prisma Client allows you to filter duplicate rows from a Prisma Query response to a [`findMany`](prisma/docs/orm/reference/prisma-client-reference/index.md#findmany) query using [`distinct`](prisma/docs/orm/reference/prisma-client-reference/index.md#distinct) . `distinct` is often used in combination with [`select`](prisma/docs/orm/reference/prisma-client-reference/index.md#select) to identify certain unique combinations of values in the rows of your table.
 
 The following example returns all fields for all `User` records with distinct `name` field values:
 
@@ -572,3 +575,4 @@ Without `select` and `distinct`, the query would return:
   }
 ]
 ```
+

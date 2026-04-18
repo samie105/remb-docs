@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:34:47.514Z"
 content_hash: "1a76f525d47abc5d737a82f39867e5e67f1295a0f6e145dbbde31901165fb7b1"
 menu_path: ["Upgrade guide"]
 section_path: []
+nav_prev: {"path": "tailwind/docs/compatibility/index.md", "title": "Compatibility"}
+nav_next: {"path": "tailwind/docs/styling-with-utility-classes/index.md", "title": "Styling with utility classes"}
 ---
+
 Upgrading your Tailwind CSS projects from v3 to v4.
 
 Tailwind CSS v4.0 is a new major version of the framework, so while we've worked really hard to minimize breaking changes, some updates are necessary. This guide outlines all the steps required to upgrade your projects from v3 to v4.
@@ -246,7 +249,7 @@ HTML
 
 ### [Space-between selector](#space-between-selector)
 
-We've changed the selector used by the [`space-x-*` and `space-y-*` utilities](https://tailwindcss.com/docs/margin#adding-space-between-children) to address serious performance issues on large pages:
+We've changed the selector used by the [`space-x-*` and `space-y-*` utilities](tailwind/docs/margin/index.md#adding-space-between-children) to address serious performance issues on large pages:
 
 CSS
 
@@ -266,7 +269,7 @@ HTML
 
 ### [Divide selector](#divide-selector)
 
-We've changed the selector used by the [`divide-x-*` and `divide-y-*` utilities](https://tailwindcss.com/docs/border-width#between-children) to address serious performance issues on large pages:
+We've changed the selector used by the [`divide-x-*` and `divide-y-*` utilities](tailwind/docs/border-width/index.md#between-children) to address serious performance issues on large pages:
 
 CSS
 
@@ -446,7 +449,7 @@ CSS
 @layer components {  .btn {    border-radius: 0.5rem;    padding: 0.5rem 1rem;    background-color: ButtonFace;  }}@utility btn {  border-radius: 0.5rem;  padding: 0.5rem 1rem;  background-color: ButtonFace;}
 ```
 
-Learn more about registering custom utilities in the [adding custom utilities documentation](https://tailwindcss.com/docs/adding-custom-styles#adding-custom-utilities).
+Learn more about registering custom utilities in the [adding custom utilities documentation](tailwind/docs/adding-custom-styles/index.md#adding-custom-utilities).
 
 ### [Variant stacking order](#variant-stacking-order)
 
@@ -576,7 +579,7 @@ CSS
 @config "../../tailwind.config.js";
 ```
 
-The `corePlugins`, `safelist`, and `separator` options from the JavaScript-based config are not supported in v4.0. To safelist utilities in v4 use [`@source inline()`](https://tailwindcss.com/docs/detecting-classes-in-source-files#safelisting-specific-utilities).
+The `corePlugins`, `safelist`, and `separator` options from the JavaScript-based config are not supported in v4.0. To safelist utilities in v4 use [`@source inline()`](tailwind/docs/detecting-classes-in-source-files/index.md#safelisting-specific-utilities).
 
 ### [Theme values in JavaScript](#theme-values-in-javascript)
 
@@ -604,7 +607,7 @@ let styles = getComputedStyle(document.documentElement);let shadow = styles.getP
 
 In v4, stylesheets that are bundled separately from your main CSS file (e.g. CSS modules files, `<style>` blocks in Vue, Svelte, or Astro, etc.) do not have access to theme variables, custom utilities, and custom variants defined in other files.
 
-To make these definitions available in these contexts, use [`@reference`](https://tailwindcss.com/docs/functions-and-directives#reference-directive) to import them without duplicating any CSS in your bundle:
+To make these definitions available in these contexts, use [`@reference`](tailwind/docs/functions-and-directives/index.md#reference-directive) to import them without duplicating any CSS in your bundle:
 
 Vue
 
@@ -620,10 +623,11 @@ Vue
 <template>  <h1>Hello world!</h1></template><style>  h1 {    color: var(--text-red-500);  }</style>
 ```
 
-You can find more documentation on [using Tailwind with CSS modules](https://tailwindcss.com/docs/compatibility#css-modules).
+You can find more documentation on [using Tailwind with CSS modules](tailwind/docs/compatibility/index.md#css-modules).
 
 ### [Using Sass, Less, and Stylus](#using-sass-less-and-stylus)
 
 Tailwind CSS v4.0 is not designed to be used with CSS preprocessors like Sass, Less, or Stylus. Think of Tailwind CSS itself as your preprocessor — you shouldn't use Tailwind with Sass for the same reason you wouldn't use Sass with Stylus. Because of this it is not possible to use Sass, Less, or Stylus for your stylesheets or `<style>` blocks in Vue, Svelte, Astro, etc.
 
-Learn more in the [compatibility documentation](https://tailwindcss.com/docs/compatibility#sass-less-and-stylus).
+Learn more in the [compatibility documentation](tailwind/docs/compatibility/index.md#sass-less-and-stylus).
+

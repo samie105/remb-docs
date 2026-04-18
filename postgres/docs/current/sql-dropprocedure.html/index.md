@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:46:22.138Z"
 content_hash: "bb42ab030768b06372a1d9830a10a01118cef4c5bb56d6b9b2659746363e0680"
 menu_path: ["PostgreSQL: Documentation: 18: DROP PROCEDURE"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/sql-prepare.html/index.md", "title": "PostgreSQL: Documentation: 18: PREPARE"}
+nav_next: {"path": "postgres/docs/current/rules-views.html/index.md", "title": "PostgreSQL: Documentation: 18: 39.2.\u00a0Views and the Rule System"}
 ---
+
 DROP PROCEDURE — remove a procedure
 
 ## Synopsis
@@ -92,3 +95,4 @@ This command conforms to the SQL standard, with these PostgreSQL extensions:
 *   The `IF EXISTS` option is an extension.
     
 *   The ability to specify argument modes and names is an extension, and the lookup rules differ when modes are given.
+

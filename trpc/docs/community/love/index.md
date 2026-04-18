@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:48:23.919Z"
 content_hash: "0848b18a65a3951ce41852a05622d3547c1659d80b6b79ace7e163f7225ebde4"
 menu_path: ["Testimonials / Love"]
 section_path: []
+nav_prev: {"path": "trpc/docs/community/sponsors/index.md", "title": "Sponsors"}
+nav_next: {"path": "trpc/docs/faq/index.md", "title": "FAQ / Troubleshooting"}
 ---
+
 Version: 11.x
 
 Do you love or hate tRPC? Feel free to ping [@alexdotjs on Twitter](https://twitter.com/alexdotjs)
@@ -94,3 +97,4 @@ Do you love or hate tRPC? Feel free to ping [@alexdotjs on Twitter](https://twit
 
 *   [From Twitter](#from-twitter)
 *   [From GitHub](#from-github)
+

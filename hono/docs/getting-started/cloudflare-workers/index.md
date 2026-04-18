@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:34:55.763Z"
 content_hash: "f0b86bb7a962f637639550d54ebfb19d6529766b734ce855a5e977953840d403"
 menu_path: ["Cloudflare Workers ​"]
 section_path: []
+nav_prev: {"path": "hono/docs/getting-started/basic/index.md", "title": "Getting Started \u200b"}
+nav_next: {"path": "hono/docs/getting-started/cloudflare-pages/index.md", "title": "Cloudflare Pages \u200b"}
 ---
+
 [Cloudflare Workers](https://workers.cloudflare.com/) is a JavaScript edge runtime on Cloudflare CDN.
 
 You can develop the application locally and publish it with a few commands using [Wrangler](https://developers.cloudflare.com/workers/wrangler/). Wrangler includes transcompiler, so we can write the code with TypeScript.
@@ -392,3 +395,4 @@ app.get('/env', (c) => {
 Before you deploy your project to Cloudflare, remember to set the environment variable/secrets in the Cloudflare Workers project's configuration.
 
 > For more about this section you can find in the Cloudflare documentation: [https://developers.cloudflare.com/workers/configuration/environment-variables/#add-environment-variables-via-the-dashboard](https://developers.cloudflare.com/workers/configuration/environment-variables/#add-environment-variables-via-the-dashboard)
+

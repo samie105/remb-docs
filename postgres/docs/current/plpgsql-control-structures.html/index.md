@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:48:47.381Z"
 content_hash: "4cc167416d80183e2660446189e4b40abf17aec04e49f18b8a49637282371784"
 menu_path: ["PostgreSQL: Documentation: 18: 41.6. Control Structures"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/rule-system.html/index.md", "title": "PostgreSQL: Documentation: 18: 51.4.\u00a0The PostgreSQL Rule System"}
+nav_next: {"path": "postgres/docs/current/infoschema-role-usage-grants.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.39.\u00a0role_usage_grants"}
 ---
+
 Control structures are probably the most useful (and important) part of PL/pgSQL. With PL/pgSQL's control structures, you can manipulate PostgreSQL data in a very flexible and powerful way.
 
 ### 41.6.1. Returning from a Function [#](#PLPGSQL-STATEMENTS-RETURNING)
@@ -105,7 +108,7 @@ SELECT \* FROM get\_available\_flightid(CURRENT\_DATE);
 
 ### Note
 
-The current implementation of `RETURN NEXT` and `RETURN QUERY` stores the entire result set before returning from the function, as discussed above. That means that if a PL/pgSQL function produces a very large result set, performance might be poor: data will be written to disk to avoid memory exhaustion, but the function itself will not return until the entire result set has been generated. A future version of PL/pgSQL might allow users to define set-returning functions that do not have this limitation. Currently, the point at which data begins being written to disk is controlled by the [work\_mem](https://www.postgresql.org/docs/current/runtime-config-resource.html#GUC-WORK-MEM) configuration variable. Administrators who have sufficient memory to store larger result sets in memory should consider increasing this parameter.
+The current implementation of `RETURN NEXT` and `RETURN QUERY` stores the entire result set before returning from the function, as discussed above. That means that if a PL/pgSQL function produces a very large result set, performance might be poor: data will be written to disk to avoid memory exhaustion, but the function itself will not return until the entire result set has been generated. A future version of PL/pgSQL might allow users to define set-returning functions that do not have this limitation. Currently, the point at which data begins being written to disk is controlled by the [work\_mem](postgres/docs/current/runtime-config-resource.html/index.md#GUC-WORK-MEM) configuration variable. Administrators who have sufficient memory to store larger result sets in memory should consider increasing this parameter.
 
 ### 41.6.2. Returning from a Procedure [#](#PLPGSQL-STATEMENTS-RETURNING-PROCEDURE)
 
@@ -714,3 +717,4 @@ CONTEXT:  PL/pgSQL function outer\_func() line 3 at RETURN
 (1 row)
 
 `GET STACKED DIAGNOSTICS ... PG_EXCEPTION_CONTEXT` returns the same sort of stack trace, but describing the location at which an error was detected, rather than the current location.
+

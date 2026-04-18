@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:00:28.089Z"
 content_hash: "b9dcb2d2ab39d2cdcbb79599b2b6b0bca622c008556cdde8338b0e01d6309f2a"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Redis with Google Agent Development Kit (ADK)","→","Redis with Google Agent Development Kit (ADK)","→\n      \n        Semantic caching","→","Semantic caching"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Redis with Google Agent Development Kit (ADK)","→","Redis with Google Agent Development Kit (ADK)","→\n      \n        Semantic caching","→","Semantic caching"]
+nav_prev: {"path": "redis/docs/latest/commands/redis-7-4-commands/index.md", "title": "Redis 7.4 Commands Reference"}
+nav_next: {"path": "redis/docs/latest/operate/oss_and_stack/install/install-stack/snap/index.md", "title": "Install Redis Open Source on Linux"}
 ---
+
 # Semantic caching
 
 Cache LLM responses and tool results using semantic similarity with Redis.
@@ -147,3 +150,4 @@ The `tool_names` set specifies which tools to cache. Not all tools are idempoten
 *   [langcache\_cache example](https://github.com/redis-developer/adk-redis/tree/main/examples/langcache_cache): Managed caching with LangCache
 
 ## On this page
+

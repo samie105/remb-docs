@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:40:41.789Z"
 content_hash: "33048e79f10357d07223244294221d40e7ffe34f9f7c6ecf88a8ac62e60208a7"
 menu_path: ["Migrating from Create React App (CRA)"]
 section_path: []
+nav_prev: {"path": "astro/en/guides/migrate-to-astro/index.md", "title": "Migrate an existing project to Astro"}
+nav_next: {"path": "astro/en/guides/migrate-to-astro/from-docusaurus/index.md", "title": "Migrating from Docusaurus"}
 ---
+
 # Migrating from Create React App (CRA)
 
 Astro’s [React integration](/en/guides/integrations-guide/react/) provides support for [using React components inside Astro components](/en/guides/framework-components/), including entire React apps like Create React App (CRA)!
@@ -344,3 +347,4 @@ If you cannot find your answers within these docs, please visit the [Astro Disco
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

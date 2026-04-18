@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:33:33.206Z"
 content_hash: "97fbd02419015cb49531872c1ebf80c3ef76e3cd88632f9a9c1e5ef138b48658"
 menu_path: ["Contentful & Astro"]
 section_path: []
+nav_prev: {"path": "astro/en/guides/cms/cloudcannon/index.md", "title": "CloudCannon & Astro"}
+nav_next: {"path": "astro/en/guides/cms/cosmic/index.md", "title": "Cosmic & Astro"}
 ---
+
 # Contentful & Astro
 
 [Contentful](https://www.contentful.com/) is a headless CMS that allows you to manage content, integrate with other services, and publish to multiple platforms.
@@ -532,3 +535,4 @@ Now, whenever you publish a new blog post in Contentful, a new build will be tri
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

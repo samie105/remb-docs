@@ -9,12 +9,15 @@ last_crawled_at: "2026-04-18T16:34:51.432Z"
 content_hash: "147ef28c96b9a0a8b92da0c1ecb9d03b9c8e86f83c5a7c0cb3f79dabdcdef5df"
 menu_path: ["Using TypeScript"]
 section_path: []
+nav_prev: {"path": "react/learn/editor-setup/index.md", "title": "Editor Setup"}
+nav_next: {"path": "react/learn/react-developer-tools/index.md", "title": "React Developer Tools"}
 ---
-TypeScript is a popular way to add type definitions to JavaScript codebases. Out of the box, TypeScript [supports JSX](https://react.dev/learn/writing-markup-with-jsx) and you can get full React Web support by adding [`@types/react`](https://www.npmjs.com/package/@types/react) and [`@types/react-dom`](https://www.npmjs.com/package/@types/react-dom) to your project.
+
+TypeScript is a popular way to add type definitions to JavaScript codebases. Out of the box, TypeScript [supports JSX](react/learn/writing-markup-with-jsx/index.md) and you can get full React Web support by adding [`@types/react`](https://www.npmjs.com/package/@types/react) and [`@types/react-dom`](https://www.npmjs.com/package/@types/react-dom) to your project.
 
 ## Installation[](#installation "Link for Installation ")
 
-All [production-grade React frameworks](https://react.dev/learn/creating-a-react-app#full-stack-frameworks) offer support for using TypeScript. Follow the framework specific guide for installation:
+All [production-grade React frameworks](react/learn/creating-a-react-app/index.md#full-stack-frameworks) offer support for using TypeScript. Follow the framework specific guide for installation:
 
 *   [Next.js](https://nextjs.org/docs/app/building-your-application/configuring/typescript)
 *   [Remix](https://remix.run/docs/en/1.19.2/guides/typescript)
@@ -44,7 +47,7 @@ Every file containing JSX must use the `.tsx` file extension. This is a TypeScri
 
 Writing TypeScript with React is very similar to writing JavaScript with React. The key difference when working with a component is that you can provide types for your component’s props. These types can be used for correctness checking and providing inline documentation in editors.
 
-Taking the [`MyButton` component](https://react.dev/learn#components) from the [Quick Start](https://react.dev/learn) guide, we can add a type describing the `title` for the button:
+Taking the [`MyButton` component](react/learn/index.md#components) from the [Quick Start](react/learn/index.md) guide, we can add a type describing the `title` for the button:
 
 ### Note
 
@@ -80,7 +83,7 @@ This isn’t very useful in this case, but a common case where you may want to p
 type Status = "idle" | "loading" | "success" | "error";const [status, setStatus] = useState<Status>("idle");
 ```
 
-Or, as recommended in [Principles for structuring state](https://react.dev/learn/choosing-the-state-structure#principles-for-structuring-state), you can group related state as an object and describe the different possibilities via object types:
+Or, as recommended in [Principles for structuring state](react/learn/choosing-the-state-structure/index.md#principles-for-structuring-state), you can group related state as an object and describe the different possibilities via object types:
 
 ```
 type RequestState =  | { status: 'idle' }  | { status: 'loading' }  | { status: 'success', data: any }  | { status: 'error', error: Error };const [requestState, setRequestState] = useState<RequestState>({ status: 'idle' });
@@ -121,7 +124,7 @@ import { createContext, useContext, useState, useMemo } from 'react';// This is 
 
 ### Note
 
-[React Compiler](https://react.dev/learn/react-compiler) automatically memoizes values and functions, reducing the need for manual `useMemo` calls. You can use the compiler to handle memoization automatically.
+[React Compiler](react/learn/react-compiler/index.md) automatically memoizes values and functions, reducing the need for manual `useMemo` calls. You can use the compiler to handle memoization automatically.
 
 The [`useMemo`](https://react.dev/reference/react/useMemo) Hooks will create/re-access a memorized value from a function call, re-running the function only when dependencies passed as the 2nd parameter are changed. The result of calling the Hook is inferred from the return value from the function in the first parameter. You can be more explicit by providing a type argument to the Hook.
 
@@ -133,7 +136,7 @@ The [`useMemo`](https://react.dev/reference/react/useMemo) Hooks will create/re-
 
 ### Note
 
-[React Compiler](https://react.dev/learn/react-compiler) automatically memoizes values and functions, reducing the need for manual `useCallback` calls. You can use the compiler to handle memoization automatically.
+[React Compiler](react/learn/react-compiler/index.md) automatically memoizes values and functions, reducing the need for manual `useCallback` calls. You can use the compiler to handle memoization automatically.
 
 The [`useCallback`](https://react.dev/reference/react/useCallback) provide a stable reference to a function as long as the dependencies passed into the second parameter are the same. Like `useMemo`, the function’s type is inferred from the return value of the function in the first parameter, and you can be more explicit by providing a type argument to the Hook.
 
@@ -202,3 +205,4 @@ We recommend the following resources:
 *   [React TypeScript Cheatsheet](https://react-typescript-cheatsheet.netlify.app/) is a community-maintained cheatsheet for using TypeScript with React, covering a lot of useful edge cases and providing more breadth than this document.
     
 *   [TypeScript Community Discord](https://discord.com/invite/typescript) is a great place to ask questions and get help with TypeScript and React issues.
+

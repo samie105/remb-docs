@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:36:52.293Z"
 content_hash: "12c326c4ef0683d083c71824580f1ab43304032c36c64f1c2ba8d0603580f3ef"
 menu_path: ["{@html ...}"]
 section_path: []
+nav_prev: {"path": "svelte/docs/svelte/@render/index.md", "title": "{@render ...}"}
+nav_next: {"path": "svelte/docs/svelte/@attach/index.md", "title": "{@attach ...}"}
 ---
+
 To inject raw HTML into your component, use the `{@html ...}` tag:
 
 ```
@@ -61,3 +64,4 @@ Instead, use the `:global` modifier to target everything inside the `<article>`:
 previous next
 
 [{@render ...}](/docs/svelte/@render) [{@attach ...}](/docs/svelte/@attach)
+

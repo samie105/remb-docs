@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:45:38.876Z"
 content_hash: "1d82b5a4689cef985627c507390b0cf6c19b6e7015c5b88aa1149e2293ff685a"
 menu_path: ["PostgreSQL: Documentation: 18: F.29. pg_overexplain — allow EXPLAIN to dump even more details"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/indexes-types.html/index.md", "title": "PostgreSQL: Documentation: 18: 11.2.\u00a0Index Types"}
+nav_next: {"path": "postgres/docs/current/brin.html/index.md", "title": "PostgreSQL: Documentation: 18: 65.5.\u00a0BRIN Indexes"}
 ---
+
 Development Versions: [devel](https://www.postgresql.org/docs/devel/pgoverexplain.html "PostgreSQL devel - F.29. pg_overexplain — allow EXPLAIN to dump even more details")
 
 The `pg_overexplain` module extends `EXPLAIN` with new options that provide additional output. It is mostly intended to assist with debugging of and development of the planner, rather than for general use. Since this module displays internal details of planner data structures, it may be necessary to refer to the source code to make sense of the output. Furthermore, the output is likely to change whenever (and as often as) those data structures change.
@@ -18,7 +21,7 @@ To use it, simply load it into the server. You can load it into an individual se
 
 LOAD 'pg\_overexplain';
 
-You can also preload it into some or all sessions by including `pg_overexplain` in [session\_preload\_libraries](https://www.postgresql.org/docs/current/runtime-config-client.html#GUC-SESSION-PRELOAD-LIBRARIES) or [shared\_preload\_libraries](https://www.postgresql.org/docs/current/runtime-config-client.html#GUC-SHARED-PRELOAD-LIBRARIES) in `postgresql.conf`.
+You can also preload it into some or all sessions by including `pg_overexplain` in [session\_preload\_libraries](postgres/docs/current/runtime-config-client.html/index.md#GUC-SESSION-PRELOAD-LIBRARIES) or [shared\_preload\_libraries](postgres/docs/current/runtime-config-client.html/index.md#GUC-SHARED-PRELOAD-LIBRARIES) in `postgresql.conf`.
 
 ### F.29.1. EXPLAIN (DEBUG) [#](#PGOVEREXPLAIN-DEBUG)
 
@@ -59,3 +62,4 @@ In addition, the query as a whole may maintain lists of range table indexes that
 Finally, but most importantly, the `RANGE_TABLE` option will display a dump of the query's entire range table. Each range table entry is labelled with the appropriate range table index, the kind of range table entry (e.g. `relation`, `subquery`, or `join`), followed by the contents of various range table entry fields that are not normally part of `EXPLAIN` output. Some of these fields are only displayed for certain kinds of range table entries. For example, `Eref` is displayed for all types of range table entries, but `CTE Name` is displayed only for range table entries of type `cte`.
 
 For more information about range table entries, see the definition of `RangeTblEntry` in `nodes/parsenodes.h`.
+

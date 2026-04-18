@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:54:55.408Z"
 content_hash: "01d1dc0b8090631b7a9274cccb61e911a31bcffc7819e930a50274735d883893"
 menu_path: ["deno remove"]
 section_path: []
+nav_prev: {"path": "deno/deno/runtime/reference/cli/lsp/index.md", "title": "deno lsp"}
+nav_next: {"path": "deno/deno/runtime/reference/cli/repl/index.md", "title": "deno repl"}
 ---
+
 On this page
 
 *   [Basic usage](#basic-usage)
@@ -78,3 +81,4 @@ Disable auto discovery of the lock file.
 `--lockfile-only`
 
 Install only updating the lockfile.
+

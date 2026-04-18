@@ -9,56 +9,10 @@ last_crawled_at: "2026-04-18T17:02:30.984Z"
 content_hash: "65c97011915d1628e36ff84b25eeb72601dda218c2029a378f2dd0cd03686c62"
 menu_path: ["Test runner"]
 section_path: []
+nav_prev: {"path": "bun/bun/docs/test/lifecycle/index.md", "title": "Lifecycle hooks"}
+nav_next: {"path": "bun/bun/docs/test/reporters/index.md", "title": "Test Reporters"}
 ---
-Bun ships with a fast, built-in, Jest-compatible test runner. Tests are executed with the Bun runtime, and support the following features.
 
-*   TypeScript and JSX
-*   Lifecycle hooks
-*   Snapshot testing
-*   UI & DOM testing
-*   Watch mode with `--watch`
-*   Script pre-loading with `--preload`
-
-## Run tests
-
-terminal
-
-```
-bun test
-```
-
-Tests are written in JavaScript or TypeScript with a Jest-like API. Refer to [Writing tests](https://bun.com/docs/test/writing-tests) for full documentation.
-
-![https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z\_zHyy/icons/typescript.svg?fit=max&auto=format&n=JUhaF6Mf68z\_zHyy&q=85&s=7ac549adaea8d5487d8fbd58cc3ea35b](https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z_zHyy/icons/typescript.svg?fit=max&auto=format&n=JUhaF6Mf68z_zHyy&q=85&s=7ac549adaea8d5487d8fbd58cc3ea35b)math.test.ts
-
-```
-import { expect, test } from "bun:test";
-
-test("2 + 2", () => {
-  expect(2 + 2).toBe(4);
-});
-```
-
-The runner recursively searches the working directory for files that match the following patterns:
-
-*   `*.test.{js|jsx|ts|tsx}`
-*   `*_test.{js|jsx|ts|tsx}`
-*   `*.spec.{js|jsx|ts|tsx}`
-*   `*_spec.{js|jsx|ts|tsx}`
-
-You can filter the set of _test files_ to run by passing additional positional arguments to `bun test`. Any test file with a path that matches one of the filters will run. Commonly, these filters will be file or directory names; glob patterns are not yet supported.
-
-terminal
-
-```
-bun test <filter> <filter> ...
-```
-
-To filter by _test name_, use the `-t`/`--test-name-pattern` flag.
-
-terminal
-
-```
 # run all tests or test suites with "addition" in the name
 bun test --test-name-pattern addition
 ```
@@ -71,7 +25,7 @@ terminal
 bun test ./test/specific-file.test.ts
 ```
 
-The test runner runs all tests in a single process. It loads all `--preload` scripts (see [Lifecycle](https://bun.com/docs/test/lifecycle) for details), then runs all tests. If a test fails, the test runner will exit with a non-zero exit code.
+The test runner runs all tests in a single process. It loads all `--preload` scripts (see [Lifecycle](bun/bun/docs/test/lifecycle/index.md) for details), then runs all tests. If a test fails, the test runner will exit with a non-zero exit code.
 
 ## CI/CD integration
 
@@ -358,7 +312,7 @@ terminal
 bun test --preload ./setup.ts
 ```
 
-See [Test > Lifecycle](https://bun.com/docs/test/lifecycle) for complete documentation.
+See [Test > Lifecycle](bun/bun/docs/test/lifecycle/index.md) for complete documentation.
 
 ## Mocks
 
@@ -390,7 +344,7 @@ const random = mock(() => Math.random());
 const random = jest.fn(() => Math.random()); 
 ```
 
-See [Test > Mocks](https://bun.com/docs/test/mocks) for complete documentation.
+See [Test > Mocks](bun/bun/docs/test/mocks/index.md) for complete documentation.
 
 ## Snapshot testing
 
@@ -415,7 +369,7 @@ terminal
 bun test --update-snapshots
 ```
 
-See [Test > Snapshots](https://bun.com/docs/test/snapshots) for complete documentation.
+See [Test > Snapshots](bun/bun/docs/test/snapshots/index.md) for complete documentation.
 
 ## UI & DOM testing
 
@@ -425,7 +379,7 @@ Bun is compatible with popular UI testing libraries:
 *   [DOM Testing Library](https://testing-library.com/docs/dom-testing-library/intro/)
 *   [React Testing Library](https://testing-library.com/docs/react-testing-library/intro)
 
-See [Test > DOM Testing](https://bun.com/docs/test/dom) for complete documentation.
+See [Test > DOM Testing](bun/bun/docs/test/dom/index.md) for complete documentation.
 
 ## Performance
 
@@ -617,3 +571,4 @@ terminal
 ```
 bun test --test-name-pattern baz
 ```
+

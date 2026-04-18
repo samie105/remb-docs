@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:45:19.921Z"
 content_hash: "048b3c61a9db3384306c8b9f8fa3b646fd5d530dbcfa35566ce5542a3b340277"
 menu_path: ["Documentation guidelines"]
 section_path: []
+nav_prev: {"path": "deno/deno/runtime/contributing/style_guide/index.md", "title": "Deno Style Guide"}
+nav_next: {"path": "deno/deno/runtime/contributing/examples/index.md", "title": "Contributing an example"}
 ---
+
 On this page
 
 *   [Running the docs locally](#running-the-docs-locally)
@@ -35,3 +38,4 @@ You can fork and clone the entire [Deno docs repository](https://github.com/deno
 6.  Optionally, generate the API documentation with `deno task reference`.
 
 To see a more detailed description of available tasks, check out the [Deno docs README](https://github.com/denoland/docs?tab=readme-ov-file#deno-docs)
+

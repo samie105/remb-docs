@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:33:20.693Z"
 content_hash: "4c68d4ac25e9f68cadb745dbfb00240d2ea159643cefeceaffab58f4f461b34a"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Client tools","→","Client tools","→\n      \n        Redis Insight","→","Redis Insight","→\n      \n        Redis Insight release notes","→","Redis Insight release notes","→\n      \n        Redis Insight v2.60.0, October 2024","→","Redis Insight v2.60.0, October 2024"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Client tools","→","Client tools","→\n      \n        Redis Insight","→","Redis Insight","→\n      \n        Redis Insight release notes","→","Redis Insight release notes","→\n      \n        Redis Insight v2.60.0, October 2024","→","Redis Insight v2.60.0, October 2024"]
+nav_prev: {"path": "redis/docs/latest/develop/tools/insight/release-notes/v.2.62.0/index.md", "title": "Redis Insight v2.62.0, November 2024"}
+nav_next: {"path": "redis/docs/latest/develop/tools/insight/release-notes/v.2.58.0/index.md", "title": "Redis Insight v2.58.0, October 2024"}
 ---
+
 # Redis Insight v2.60.0, October 2024
 
 Redis Insight v2.60
@@ -36,3 +39,4 @@ This is the General Availability (GA) release of Redis Insight 2.60.
 *   [#3982](https://github.com/RedisInsight/RedisInsight/pull/3982), [#3975](https://github.com/RedisInsight/RedisInsight/pull/3975), [#3941](https://github.com/RedisInsight/RedisInsight/pull/3941) Various vulnerabilities have been fixed.
 
 ## On this page
+

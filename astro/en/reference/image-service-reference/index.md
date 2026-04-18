@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:47:20.363Z"
 content_hash: "430bf8bf4eebcaef1276d30763b657b0f771d2f02ee563a0874f3b3674b782fa"
 menu_path: ["Image Service API"]
 section_path: []
+nav_prev: {"path": "astro/en/reference/content-loader-reference/index.md", "title": "Astro Content Loader API"}
+nav_next: {"path": "astro/en/reference/dev-toolbar-app-reference/index.md", "title": "Dev Toolbar App API"}
 ---
+
 # Image Service API
 
 `astro:assets` was designed to make it easy for any image optimization service to build a service on top of Astro.
@@ -220,3 +223,4 @@ Then, users will be able to get autocomplete and type safety for your custom pro
 ```
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

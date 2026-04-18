@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:45:44.935Z"
 content_hash: "c56420bec55368fdee99c0f244a87cf2087114303ffe3e35e70a0bc2476db64c"
 menu_path: ["PostgreSQL: Documentation: 18: F.28. pg_logicalinspect — logical decoding components inspection"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/brin.html/index.md", "title": "PostgreSQL: Documentation: 18: 65.5.\u00a0BRIN Indexes"}
+nav_next: {"path": "postgres/docs/current/pgfreespacemap.html/index.md", "title": "PostgreSQL: Documentation: 18: F.27.\u00a0pg_freespacemap \u2014 examine the free space map"}
 ---
+
 The `pg_logicalinspect` module provides SQL functions that allow you to inspect the contents of logical decoding components. It allows the inspection of serialized logical snapshots of a running PostgreSQL database cluster, which is useful for debugging or educational purposes.
 
 By default, use of these functions is restricted to superusers and members of the `pg_read_server_files` role. Access may be granted by superusers to others using `GRANT`.
@@ -89,3 +92,4 @@ catchange\_count          | 2
 catchange\_xip            | {751,752}
 
 If _`filename`_ does not match a snapshot file, the function raises an error.
+

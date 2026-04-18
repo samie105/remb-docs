@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:46:42.097Z"
 content_hash: "7f09536501c388f6b2b333b79bf83b6c9dea87953c220c772ab951c0623a5b9c"
 menu_path: ["PostgreSQL: Documentation: 18: DROP EVENT TRIGGER"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/sql-drop-access-method.html/index.md", "title": "PostgreSQL: Documentation: 18: DROP ACCESS METHOD"}
+nav_next: {"path": "postgres/docs/current/ecpg-sql-declare-statement.html/index.md", "title": "PostgreSQL: Documentation: 18: DECLARE STATEMENT"}
 ---
+
 February 26, 2026: [PostgreSQL 18.3, 17.9, 16.13, 15.17, and 14.22 Released!](/about/news/postgresql-183-179-1613-1517-and-1422-released-3246/)
 
 [Documentation](/docs/ "Documentation") → [PostgreSQL 18](/docs/18/index.html)
@@ -67,3 +70,4 @@ There is no `DROP EVENT TRIGGER` statement in the SQL standard.
 ## Submit correction
 
 If you see anything in the documentation that is not correct, does not match your experience with the particular feature or requires further clarification, please use [this form](/account/comments/new/18/sql-dropeventtrigger.html/) to report a documentation issue.
+

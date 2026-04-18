@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:44:14.299Z"
 content_hash: "4e3bf612828900ccf9a6cb5e1949c1779e3c6c514eaa15105288c15a7da2e6b1"
 menu_path: ["Use Drizzle ORM with Bun"]
 section_path: []
+nav_prev: {"path": "bun/bun/docs/guides/ecosystem/elysia/index.md", "title": "Build an HTTP server using Elysia and Bun"}
+nav_next: {"path": "bun/bun/docs/guides/ecosystem/gel/index.md", "title": "Use Gel with Bun"}
 ---
+
 Drizzle is an ORM that supports both a SQL-like “query builder” API and an ORM-like [Queries API](https://orm.drizzle.team/docs/rqb). It supports the `bun:sqlite` built-in module.
 
 * * *
@@ -223,3 +226,4 @@ bun run index.ts
 * * *
 
 Refer to the [Drizzle website](https://orm.drizzle.team/docs/overview) for complete documentation.
+

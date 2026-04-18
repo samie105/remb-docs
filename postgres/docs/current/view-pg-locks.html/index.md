@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:49:27.584Z"
 content_hash: "8911614b9bfde2c510edad0434be0707a8af1987406b7361209d847e7f18dfcc"
 menu_path: ["PostgreSQL: Documentation: 18: 53.13. pg_locks"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/catalog-pg-publication-namespace.html/index.md", "title": "PostgreSQL: Documentation: 18: 52.41.\u00a0pg_publication_namespace"}
+nav_next: {"path": "postgres/docs/current/functions-array.html/index.md", "title": "PostgreSQL: Documentation: 18: 9.19.\u00a0Array Functions and Operators"}
 ---
+
 The view `pg_locks` provides access to information about the locks held by active processes within the database server. See [Chapter 13](https://www.postgresql.org/docs/current/mvcc.html "Chapter 13. Concurrency Control") for more discussion of locking.
 
 `pg_locks` contains one row per active lockable object, requested lock mode, and relevant process. Thus, the same lockable object might appear many times, if multiple processes are holding or waiting for locks on it. However, an object that currently has no locks on it will not appear at all.
@@ -115,3 +118,4 @@ While it is possible to obtain information about which processes block which oth
 The `pg_locks` view displays data from both the regular lock manager and the predicate lock manager, which are separate systems; in addition, the regular lock manager subdivides its locks into regular and _fast-path_ locks. This data is not guaranteed to be entirely consistent. When the view is queried, data on fast-path locks (with `fastpath` = `true`) is gathered from each backend one at a time, without freezing the state of the entire lock manager, so it is possible for locks to be taken or released while information is gathered. Note, however, that these locks are known not to conflict with any other lock currently in place. After all backends have been queried for fast-path locks, the remainder of the regular lock manager is locked as a unit, and a consistent snapshot of all remaining locks is collected as an atomic action. After unlocking the regular lock manager, the predicate lock manager is similarly locked and all predicate locks are collected as an atomic action. Thus, with the exception of fast-path locks, each lock manager will deliver a consistent set of results, but as we do not lock both lock managers simultaneously, it is possible for locks to be taken or released after we interrogate the regular lock manager and before we interrogate the predicate lock manager.
 
 Locking the regular and/or predicate lock manager could have some impact on database performance if this view is very frequently accessed. The locks are held only for the minimum amount of time necessary to obtain data from the lock managers, but this does not completely eliminate the possibility of a performance impact.
+

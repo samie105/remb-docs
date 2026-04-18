@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:59:20.371Z"
 content_hash: "f10a862eb9ad09f78914a455e60bc9c15f49985e007f7670040312566e83036e"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis Pub/sub","→","Redis Pub/sub","→\n      \n        Redis keyspace notifications","→","Redis keyspace notifications"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis Pub/sub","→","Redis Pub/sub","→\n      \n        Redis keyspace notifications","→","Redis keyspace notifications"]
+nav_prev: {"path": "redis/docs/latest/develop/use-cases/rate-limiter/java-jedis/index.md", "title": "Token bucket rate limiter with Redis and Java"}
+nav_next: {"path": "redis/docs/latest/develop/use-cases/session-store/java-jedis/index.md", "title": "Redis session store with Java and Jedis"}
 ---
+
 # Redis keyspace notifications
 
 Monitor changes to Redis keys and values in real time
@@ -179,3 +182,4 @@ Every node of a Redis cluster generates events about its own subset of the keysp
 *   `>= 7.0`: Event type `new` added
 
 ## On this page
+

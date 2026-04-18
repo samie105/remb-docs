@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:56:06.499Z"
 content_hash: "a129d91e33d1b51cb2ad1387a11657a1dd803daee7c42c404ca7e6cc7537a114"
 menu_path: ["deno test"]
 section_path: []
+nav_prev: {"path": "deno/deno/runtime/reference/cli/task/index.md", "title": "deno task"}
+nav_next: {"path": "deno/deno/runtime/reference/cli/types/index.md", "title": "deno types"}
 ---
+
 On this page
 
 *   [Running tests](#running-tests)
@@ -403,3 +406,4 @@ Watch for file changes and restart process automatically. Local files from entry
 `--watch-exclude`<FILES>optional
 
 Exclude provided files/patterns from watch mode.
+

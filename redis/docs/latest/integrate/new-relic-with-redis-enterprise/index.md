@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:10:25.389Z"
 content_hash: "ec3c3c4085ff05b48fbca0606f4ca50b206484490804b49e63483345b09479e5"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        New Relic with Redis Software","→","New Relic with Redis Software"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        New Relic with Redis Software","→","New Relic with Redis Software"]
+nav_prev: {"path": "redis/docs/latest/integrate/new-relic-with-redis-cloud/index.md", "title": "New Relic with Redis Cloud"}
+nav_next: {"path": "redis/docs/latest/operate/oss_and_stack/management/persistence/index.md", "title": "Redis persistence"}
 ---
+
 # New Relic with Redis Software
 
 To collect, view, and monitor metrics data from your databases and other cluster components, you can connect New Relic to your Redis Software cluster using the Redis New Relic Integration.
@@ -79,3 +82,4 @@ New Relic dashboards can be filtered using the text area. For example, when view
 Certain types of data do not know the name of the database from which they were drawn. The dashboard should have a list of database names and ids; use the id value when filtering input to the dashboard.
 
 ## On this page
+

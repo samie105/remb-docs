@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:51:30.265Z"
 content_hash: "18e8850caed36a293082b79b906756d41717d38abee6962a83e69c8e80335024"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Redis Open Source and Redis Software","→","Redis Open Source and Redis Software","→\n      \n        Deprecated Redis Open Source features and modules","→","Deprecated Redis Open Source features and modules","→\n      \n        Triggers and functions","→","Triggers and functions","→\n      \n        Quick start using redis-cli","→","Quick start using redis-cli"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Redis Open Source and Redis Software","→","Redis Open Source and Redis Software","→\n      \n        Deprecated Redis Open Source features and modules","→","Deprecated Redis Open Source features and modules","→\n      \n        Triggers and functions","→","Triggers and functions","→\n      \n        Quick start using redis-cli","→","Quick start using redis-cli"]
+nav_prev: {"path": "redis/docs/latest/develop/ai/redisvl/user_guide/hybrid_queries/index.md", "title": "Querying with RedisVL"}
+nav_next: {"path": "redis/docs/latest/develop/ai/search-and-query/query/range/index.md", "title": "Range queries"}
 ---
+
 # Quick start using redis-cli
 
 Get started with triggers and functions using redis-cli
@@ -143,3 +146,4 @@ Check if the last updated time is added to the example.
 ```
 
 ## On this page
+

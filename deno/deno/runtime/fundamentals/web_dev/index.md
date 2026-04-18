@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:48:29.018Z"
 content_hash: "7d8fe2c68d63d1591051f76e4a69f600a992784ed8b1e0d09989b0758339f755"
 menu_path: ["Web development"]
 section_path: []
+nav_prev: {"path": "deno/deno/runtime/fundamentals/configuration/index.md", "title": "deno.json and package.json"}
+nav_next: {"path": "deno/deno/runtime/fundamentals/testing/index.md", "title": "Testing"}
 ---
+
 On this page
 
 *   [React/Next](#react%2Fnext)
@@ -189,3 +192,4 @@ deno run --allow-net server.ts
 ## Node projects
 
 Deno will run your Node.js projects out the box. Check out our guide on [migrating your Node.js project to Deno](/runtime/fundamentals/node/#migrating-from-node.js-to-deno).
+

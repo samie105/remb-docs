@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:46:37.381Z"
 content_hash: "35af05319c634f0d3ce1b07cdbc16b3e8629a47d4e1c2e0d1f89281ce496c52b"
 menu_path: ["Writing an HTTP Server"]
 section_path: []
+nav_prev: {"path": "deno/deno/runtime/fundamentals/linting_and_formatting/index.md", "title": "Linting and formatting"}
+nav_next: {"path": "deno/deno/runtime/fundamentals/ffi/index.md", "title": "Foreign Function Interface (FFI)"}
 ---
+
 On this page
 
 *   [Deno's built-in HTTP server](#deno's-built-in-http-server)
@@ -262,3 +265,4 @@ The [`Deno.ServeDefaultExport`](https://docs.deno.com/api/deno/~/Deno.ServeDefau
 ## Building on these examples
 
 You will likely want to expand on these examples to create more complex servers. Deno recommends using [Oak](https://jsr.io/@oak/oak) for building web servers. Oak is a middleware framework for Deno's HTTP server, designed to be expressive and easy to use. It provides a simple way to create web servers with middleware support. Check out the [Oak documentation](https://oakserver.github.io/oak/) for examples of how to define routes.
+

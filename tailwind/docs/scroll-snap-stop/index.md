@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:17:22.211Z"
 content_hash: "ed121615475eba137673cad1111c8cb603f4f1fcfa32276c470f42f2af6453b1"
 menu_path: ["scroll-snap-stop"]
 section_path: []
+nav_prev: {"path": "tailwind/docs/scroll-snap-align/index.md", "title": "scroll-snap-align"}
+nav_next: {"path": "tailwind/docs/scroll-snap-type/index.md", "title": "scroll-snap-type"}
 ---
+
 Utilities for controlling whether you can skip past possible snap positions.
 
 Class
@@ -28,7 +31,7 @@ Styles
 
 ### [Forcing snap position stops](#forcing-snap-position-stops)
 
-Use the `snap-always` utility together with the [snap-mandatory](https://tailwindcss.com/docs/scroll-snap-type#mandatory-scroll-snapping) utility to force a snap container to always stop on an element before the user can continue scrolling to the next item:
+Use the `snap-always` utility together with the [snap-mandatory](tailwind/docs/scroll-snap-type/index.md#mandatory-scroll-snapping) utility to force a snap container to always stop on an element before the user can continue scrolling to the next item:
 
 Scroll in the grid of images to see the expected behavior
 
@@ -82,4 +85,5 @@ Prefix a `scroll-snap-stop` utility with a breakpoint variant like `md:` to only
 <div class="snap-always md:snap-normal ...">  <!-- ... --></div>
 ```
 
-Learn more about using variants in the [variants documentation](https://tailwindcss.com/docs/hover-focus-and-other-states).
+Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).
+

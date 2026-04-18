@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:35:06.403Z"
 content_hash: "102a4dc5b4ac8d777044ce210cfe4d1aaa76b26c61544106133bfd57807c46c6"
 menu_path: ["dns - Node documentation"]
 section_path: []
+nav_prev: {"path": "deno/deno/api/node/diagnostics_channel/index.md", "title": "diagnostics_channel - Node documentation"}
+nav_next: {"path": "deno/deno/api/node/dns/promises/index.md", "title": "dns/promises - Node documentation"}
 ---
+
 ### Usage in Deno
 
 ```typescript
@@ -892,3 +895,4 @@ v
 [V4MAPPED](.././dns/~/V4MAPPED "V4MAPPED")
 
 If the IPv6 family was specified, but no IPv6 addresses were found, then return IPv4 mapped IPv6 addresses. It is not supported on some operating systems (e.g. FreeBSD 10.1).
+

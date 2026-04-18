@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:49:39.627Z"
 content_hash: "4a1e0b17c46b0f1d2a5028908c46e551ec93fabee497c1643b9e80491a15b6f9"
 menu_path: ["PostgreSQL: Documentation: 18: dblink_connect"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/datetime-units-history.html/index.md", "title": "PostgreSQL: Documentation: 18: B.6.\u00a0History of Units"}
+nav_next: {"path": "postgres/docs/current/logicaldecoding-walsender.html/index.md", "title": "PostgreSQL: Documentation: 18: 47.3.\u00a0Streaming Replication Protocol Interface"}
 ---
+
 dblink\_connect — opens a persistent connection to a remote database
 
 ## Synopsis
@@ -106,3 +109,4 @@ REVOKE SELECT ON TABLE foo FROM regress\_dblink\_user;
 DROP USER MAPPING FOR regress\_dblink\_user SERVER fdtest;
 DROP USER regress\_dblink\_user;
 DROP SERVER fdtest;
+

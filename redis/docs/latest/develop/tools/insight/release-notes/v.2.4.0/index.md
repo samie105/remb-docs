@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:13:31.558Z"
 content_hash: "6eb863d223939eb3b3ce7bcda0bc2e30cc0aa50f7f1f40c2079e1071b80ec814"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Client tools","→","Client tools","→\n      \n        Redis Insight","→","Redis Insight","→\n      \n        Redis Insight release notes","→","Redis Insight release notes","→\n      \n        RedisInsight v2.4.0, June 2022","→","RedisInsight v2.4.0, June 2022"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Client tools","→","Client tools","→\n      \n        Redis Insight","→","Redis Insight","→\n      \n        Redis Insight release notes","→","Redis Insight release notes","→\n      \n        RedisInsight v2.4.0, June 2022","→","RedisInsight v2.4.0, June 2022"]
+nav_prev: {"path": "redis/docs/latest/develop/ai/search-and-query/vectors/index.md", "title": "Vector search concepts"}
+nav_next: {"path": "redis/docs/latest/develop/ai/search-and-query/administration/index.md", "title": "Administration"}
 ---
+
 # RedisInsight v2.4.0, June 2022
 
 RedisInsight v2.4.0
@@ -40,3 +43,4 @@ This is the General Availability (GA) release of RedisInsight 2.4.0
 *   [#810](https://github.com/RedisInsight/RedisInsight/pull/810) Display several streams values with the same timestamp.
 
 ## On this page
+

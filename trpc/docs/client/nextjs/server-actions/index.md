@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:46:16.920Z"
 content_hash: "5180cf1b98f5f789f959a20e11b8500b26fa14f66999640f1217767cdb41f093"
 menu_path: ["Server Actions"]
 section_path: []
+nav_prev: {"path": "trpc/docs/client/nextjs/starter-projects/index.md", "title": "Starter Projects"}
+nav_next: {"path": "trpc/docs/client/react/index.md", "title": "React Query Integration (Classic)"}
 ---
+
 Server Actions allow you to define functions on the server and call them directly from client components, with the network layer abstracted away by the framework.
 
 By defining your server actions using tRPC procedures, you get all of tRPC's built-in features: input validation, authentication and authorization through middlewares, output validation, data transformers, and more.
@@ -244,3 +247,4 @@ Server Actions are not a replacement for all tRPC mutations. Consider the tradeo
 *   **Use `useMutation`** when you need to update the client-side cache, show optimistic updates, or manage complex loading/error states in the UI.
 
 You can incrementally adopt server actions alongside your existing tRPC API - there's no need to rewrite your entire API.
+

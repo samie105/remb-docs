@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:01:17.683Z"
 content_hash: "64e0ffa01824f7b78ddaf57be7f3c11325ae6e616e4bcf687875325e9d116d68"
 menu_path: ["@std/data-structures"]
 section_path: []
+nav_prev: {"path": "deno/deno/runtime/reference/std/csv/index.md", "title": "@std/csv"}
+nav_next: {"path": "deno/deno/runtime/reference/std/datetime/index.md", "title": "@std/datetime"}
 ---
+
 On this page
 
 *   [Overview](#overview)
@@ -46,3 +49,4 @@ deno add jsr:@std/data-structures
 ```
 
 [See all symbols in @std/data-structures on](https://jsr.io/@std/data-structures/doc)
+

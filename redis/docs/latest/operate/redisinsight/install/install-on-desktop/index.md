@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:41:02.860Z"
 content_hash: "8bc6bb03fc7581c92d58db3c5a903b1a26507f50eead16c7e92d31037051bf04"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Insight","→","Redis Insight","→\n      \n        Install Redis Insight","→","Install Redis Insight","→\n      \n        Install on desktop","→","Install on desktop"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Insight","→","Redis Insight","→\n      \n        Install Redis Insight","→","Install Redis Insight","→\n      \n        Install on desktop","→","Install on desktop"]
+nav_prev: {"path": "redis/docs/latest/develop/data-types/probabilistic/hyperloglogs/index.md", "title": "HyperLogLog"}
+nav_next: {"path": "redis/docs/latest/operate/oss_and_stack/install/archive/install-redis/index.md", "title": "Install Redis"}
 ---
+
 # Install on desktop
 
 How to install Redis Insight on the desktop
@@ -92,3 +95,4 @@ Alternatively, you can also build Redis Insight from source. See the [wiki](http
     
 
 ## On this page
+

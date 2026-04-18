@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:32:03.210Z"
 content_hash: "a75999db42d4b02f2c1c8433363768e011da9f5048dc5fe9f13e527c5c547845"
 menu_path: ["Local Dev / CLI","Local Dev / CLI","Overview","Overview"]
 section_path: ["Local Dev / CLI","Local Dev / CLI","Overview","Overview"]
+nav_prev: {"path": "supabase/docs/guides/cron/index.md", "title": "Cron"}
+nav_next: {"path": "supabase/docs/guides/deployment/index.md", "title": "Deployment & Branching"}
 ---
+
 # 
 
 Local Development & CLI
@@ -87,3 +90,4 @@ The Supabase CLI is a powerful tool that enables developers to manage their Supa
 With the CLI, you can streamline your development workflow, automate repetitive tasks, and maintain consistency across different environments. It's an essential tool for both local development and CI/CD pipelines.
 
 See the [CLI Getting Started guide](/docs/guides/local-development/cli/getting-started) for more information.
+

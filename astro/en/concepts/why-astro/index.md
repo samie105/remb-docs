@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:32:04.357Z"
 content_hash: "d3c4888fedc416a100f41ae5f0335316e16e02c3d772c963e9d871cf7538b211"
 menu_path: ["Why Astro?"]
 section_path: []
+nav_prev: {"path": "astro/en/tutorial/6-islands/index.md", "title": "Check in: Unit 6 - Astro Islands"}
+nav_next: {"path": "astro/en/concepts/islands/index.md", "title": "Islands architecture"}
 ---
+
 # Why Astro?
 
 **Astro** is the web framework for building **content-driven websites** like blogs, marketing, and e-commerce. Astro is best-known for pioneering a new [frontend architecture](/en/concepts/islands/) to reduce JavaScript overhead and complexity compared to other frameworks. If you need a website that loads fast and has great SEO, then Astro is for you.
@@ -111,3 +114,4 @@ Our welcoming, respectful, inclusive community on Discord is ready to provide su
 As an open-source project, we welcome contributions of all types and sizes from community members of all experience levels. You are invited to join in roadmap discussions to shape the future of Astro, and we hope you’ll contribute fixes and features to the core codebase, compiler, docs, language tools, websites, and other projects.
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

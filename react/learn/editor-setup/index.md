@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:33:28.070Z"
 content_hash: "f7be2f2d85759c38906c5c8ca5fc3d890651b23ef072b333a739cb7daa2f91cd"
 menu_path: ["Editor Setup"]
 section_path: []
+nav_prev: {"path": "react/learn/setup/index.md", "title": "Setup"}
+nav_next: {"path": "react/learn/typescript/index.md", "title": "Using TypeScript"}
 ---
+
 A properly configured editor can make code clearer to read and faster to write. It can even help you catch bugs as you write them! If this is your first time setting up an editor or you’re looking to tune up your current editor, we have a few recommendations.
 
 ### You will learn
@@ -62,3 +65,4 @@ Ideally, you should format your code on every save. VS Code has settings for thi
 5.  Be sure the “format on save” option is ticked!
 
 > If your ESLint preset has formatting rules, they may conflict with Prettier. We recommend disabling all formatting rules in your ESLint preset using [`eslint-config-prettier`](https://github.com/prettier/eslint-config-prettier) so that ESLint is _only_ used for catching logical mistakes. If you want to enforce that files are formatted before a pull request is merged, use [`prettier --check`](https://prettier.io/docs/en/cli.html#--check) for your continuous integration.
+

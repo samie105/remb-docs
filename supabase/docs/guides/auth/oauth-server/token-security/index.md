@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:53:29.960Z"
 content_hash: "49a772e74ed4b195b58e4724822ad68d8d160bb9e12c2e2027b13757f164bccc"
 menu_path: ["Auth","Auth","OAuth 2.1 Server","OAuth 2.1 Server","Token Security & RLS","Token Security & RLS"]
 section_path: ["Auth","Auth","OAuth 2.1 Server","OAuth 2.1 Server","Token Security & RLS","Token Security & RLS"]
+nav_prev: {"path": "supabase/docs/guides/auth/oauth-server/mcp-authentication/index.md", "title": "Model Context Protocol (MCP) Authentication"}
+nav_next: {"path": "supabase/docs/guides/auth/quickstarts/astrojs/index.md", "title": "Use Supabase Auth with Astro"}
 ---
+
 # 
 
 Token Security and Row Level Security
@@ -213,3 +216,4 @@ Or use the Supabase Dashboard's [RLS policy tester](/dashboard/project/_/auth/po
 *   [Row Level Security](/docs/guides/auth/row-level-security) - Complete RLS guide
 *   [Custom Access Token Hooks](/docs/guides/auth/auth-hooks/custom-access-token-hook) - Inject custom claims
 *   [OAuth flows](/docs/guides/auth/oauth-server/oauth-flows) - Understand token issuance
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:00:04.159Z"
 content_hash: "110ca542d0335d10c1a233572789362d57a381efeb388987a90708c7f73b641e"
 menu_path: ["Platform","Platform","More","More","More","Manage your usage","Manage your usage","Egress","Egress"]
 section_path: ["Platform","Platform","More","More","More","Manage your usage","Manage your usage","Egress","Egress"]
+nav_prev: {"path": "supabase/docs/guides/platform/manage-your-usage/edge-function-invocations/index.md", "title": "Manage Edge Function Invocations usage"}
+nav_next: {"path": "supabase/docs/guides/platform/manage-your-usage/log-drains/index.md", "title": "Manage Log Drain usage"}
 ---
+
 # 
 
 Manage Egress usage
@@ -256,3 +259,4 @@ In the [Logs Explorer](/dashboard/project/_/logs/explorer) you can access Edge L
 If you are on a paid plan and have [Spend Cap](/docs/guides/platform/cost-control#spend-cap) disabled or your organization is on Team Plan or above, you will pay for any overages.
 
 When you are exceeding your quotas while being on a Free Plan or having [Spend Cap](/docs/guides/platform/cost-control#spend-cap) enabled, you will get a notification to your billing email address and put under a grace period. For more details, refer to our [Fair Use Policy](/docs/guides/platform/billing-faq#fair-use-policy).
+

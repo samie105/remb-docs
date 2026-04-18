@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:35:19.914Z"
 content_hash: "f4d36fdded4219d85c2a40f6ed2cf6cf5d66ff23aa65bc4f630694dbe605119c"
 menu_path: ["Data REST API","Data REST API","Security","Security","Custom Claims & RBAC","Custom Claims & RBAC"]
 section_path: ["Data REST API","Data REST API","Security","Security","Custom Claims & RBAC","Custom Claims & RBAC"]
+nav_prev: {"path": "supabase/docs/guides/api/hardening-data-api/index.md", "title": "Hardening the Data API"}
+nav_next: {"path": "supabase/docs/guides/api/quickstart/index.md", "title": "Build an API route in less than 2 minutes."}
 ---
+
 # 
 
 Custom Claims & Role-based Access Control (RBAC)
@@ -99,3 +102,4 @@ You now have a robust system in place to manage user roles and permissions withi
 *   [Row Level Security](/docs/guides/database/postgres/row-level-security)
 *   [RLS Functions](/docs/guides/database/postgres/row-level-security#using-functions)
 *   [Next.js Slack Clone Example](https://github.com/supabase/supabase/tree/master/examples/slack-clone/nextjs-slack-clone)
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:52:18.188Z"
 content_hash: "fee8862062c20336a47324240bfd9fd0e438b10e5072871989302820cbdcad69"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis reference","→","Redis reference","→\n      \n        Sentinel client spec","→","Sentinel client spec"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis reference","→","Redis reference","→\n      \n        Sentinel client spec","→","Sentinel client spec"]
+nav_prev: {"path": "redis/docs/latest/develop/clients/redis-vl/index.md", "title": "Redis vector library guide (Python)"}
+nav_next: {"path": "redis/docs/latest/develop/use-cases/session-store/index.md", "title": "Redis session store"}
 ---
+
 # Sentinel client spec
 
 How to build clients for Redis Sentinel
@@ -139,3 +142,4 @@ However update messages received via Pub/Sub should not substitute the above pro
 For additional information or to discuss specific aspects of this guidelines, please drop a message to the [Redis Google Group](https://groups.google.com/group/redis-db).
 
 ## On this page
+

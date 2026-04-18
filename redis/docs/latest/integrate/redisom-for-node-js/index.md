@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:14:37.933Z"
 content_hash: "a4fedbffbb4ec57180f41efe844872918166ce22004e9ccc0c804915fa22af43"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        RedisOM for Node.js","→","RedisOM for Node.js"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        RedisOM for Node.js","→","RedisOM for Node.js"]
+nav_prev: {"path": "redis/docs/latest/integrate/redisom-for-java/index.md", "title": "RedisOM for Java"}
+nav_next: {"path": "redis/docs/latest/integrate/redisom-for-python/index.md", "title": "RedisOM for Python"}
 ---
+
 # RedisOM for Node.js
 
 Learn how to build with Redis Stack and Node.js
@@ -856,3 +859,4 @@ So, now you know how to use Express + Redis OM to build an API backed by Redis S
 And thanks for taking the time to work through this. I sincerely hope you found it useful. If you have any questions, the [Redis Discord server](https://discord.gg/redis) is by far the best place to get them answered. Join the server and ask away!
 
 ## On this page
+

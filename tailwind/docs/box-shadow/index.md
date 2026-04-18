@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:04:07.493Z"
 content_hash: "05414728dc97bda0e37059ec4e133cdb57be9cc4402a3ecb68b4d63a1b339c9c"
 menu_path: ["box-shadow"]
 section_path: []
+nav_prev: {"path": "tailwind/docs/outline-offset/index.md", "title": "outline-offset"}
+nav_next: {"path": "tailwind/docs/text-shadow/index.md", "title": "text-shadow"}
 ---
+
 Utilities for controlling the box shadow of an element.
 
 Class
@@ -228,7 +231,7 @@ Prefix a `box-shadow` utility with a breakpoint variant like `md:` to only apply
 <div class="shadow-none md:shadow-lg ...">  <!-- ... --></div>
 ```
 
-Learn more about using variants in the [variants documentation](https://tailwindcss.com/docs/hover-focus-and-other-states).
+Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).
 
 ## [Customizing your theme](#customizing-your-theme)
 
@@ -246,7 +249,7 @@ Now the `shadow-3xl` utility can be used in your markup:
 <div class="shadow-3xl">  <!-- ... --></div>
 ```
 
-Learn more about customizing your theme in the [theme documentation](https://tailwindcss.com/docs/theme#customizing-your-theme).
+Learn more about customizing your theme in the [theme documentation](tailwind/docs/theme/index.md#customizing-your-theme).
 
 ### [Customizing inset shadows](#customizing-inset-shadows)
 
@@ -262,7 +265,7 @@ Now the `inset-shadow-md` utility can be used in your markup:
 <div class="inset-shadow-md">  <!-- ... --></div>
 ```
 
-Learn more about customizing your theme in the [theme documentation](https://tailwindcss.com/docs/theme#customizing-your-theme).
+Learn more about customizing your theme in the [theme documentation](tailwind/docs/theme/index.md#customizing-your-theme).
 
 ### [Customizing shadow colors](#customizing-shadow-colors)
 
@@ -278,4 +281,5 @@ Now utilities like `shadow-regal-blue`,`inset-shadow-regal-blue`,`ring-regal-blu
 <div class="shadow-regal-blue">  <!-- ... --></div>
 ```
 
-Learn more about customizing your theme in the [theme documentation](https://tailwindcss.com/docs/theme#customizing-your-theme).
+Learn more about customizing your theme in the [theme documentation](tailwind/docs/theme/index.md#customizing-your-theme).
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:37:54.986Z"
 content_hash: "fc95481b851208b60c2f8c3ed86316c28a3f367ab2f9a47e65d739e2790adc0a"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Connect with Redis client API libraries","→","Connect with Redis client API libraries","→\n      \n        Coding patterns","→","Coding patterns","→\n      \n        Bulk loading","→","Bulk loading"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Connect with Redis client API libraries","→","Connect with Redis client API libraries","→\n      \n        Coding patterns","→","Coding patterns","→\n      \n        Bulk loading","→","Bulk loading"]
+nav_prev: {"path": "redis/docs/latest/develop/reference/modules/modules-blocking-ops/index.md", "title": "Redis modules and blocking commands"}
+nav_next: {"path": "redis/docs/latest/develop/tools/cli/index.md", "title": "Redis CLI"}
 ---
+
 # Bulk loading
 
 Writing data in bulk using the Redis protocol
@@ -139,3 +142,4 @@ Using this trick we don't need to parse the protocol we send to the server in or
 However while parsing the replies we take a counter of all the replies parsed so that at the end we are able to tell the user the amount of commands transferred to the server by the mass insert session.
 
 ## On this page
+

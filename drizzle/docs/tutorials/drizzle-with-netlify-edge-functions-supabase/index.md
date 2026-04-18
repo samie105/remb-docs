@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:23:27.499Z"
 content_hash: "fc954875671fe1a3291bda95027646c3b80fc3f2ea94e2483f21b7bd8e3a9a9b"
 menu_path: ["Drizzle with Netlify Edge Functions and Supabase Database"]
 section_path: []
+nav_prev: {"path": "drizzle/docs/tutorials/drizzle-with-neon/index.md", "title": "Drizzle with Neon Postgres"}
+nav_next: {"path": "drizzle/docs/tutorials/drizzle-with-netlify-edge-functions-neon/index.md", "title": "Drizzle with Netlify Edge Functions and Neon Postgres"}
 ---
+
 #### Create a new Supabase project[](#create-a-new-supabase-project)
 
 You can create new Supabase project in the [dashboard](https://supabase.com/dashboard) or by following this [link](https://database.new/).
@@ -91,7 +94,7 @@ export const usersTable = pgTable('users_table', {
 
 #### Setup Drizzle config file[](#setup-drizzle-config-file)
 
-**Drizzle config** - a configuration file that is used by [Drizzle Kit](https://orm.drizzle.team/docs/kit-overview) and contains all the information about your database connection, migration folder and schema files.
+**Drizzle config** - a configuration file that is used by [Drizzle Kit](drizzle/docs/kit-overview/index.md) and contains all the information about your database connection, migration folder and schema files.
 
 Create a `drizzle.config.ts` file in the root of your project and add the following content:
 
@@ -121,7 +124,7 @@ IMPORTANT
 
 Push command is good for situations where you need to quickly test new schema designs or changes in a local development environment, allowing for fast iterations without the overhead of managing migration files.
 
-Alternatively, you can use migrations workflow. Read about it here: [Migrations](https://orm.drizzle.team/docs/migrations).
+Alternatively, you can use migrations workflow. Read about it here: [Migrations](drizzle/docs/migrations/index.md).
 
 #### Connect Drizzle ORM to your database[](#connect-drizzle-orm-to-your-database)
 
@@ -202,3 +205,4 @@ netlify deploy --prod
 ```
 
 Finally, you can use URL of the deployed website and navigate to the route you created `(e.g. /user)` to access your edge function.
+

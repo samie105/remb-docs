@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:52:01.092Z"
 content_hash: "764908b31b850bfb1130d15f59de939ae82b81ce381d4866f5465148de0cffd3"
 menu_path: ["deno coverage"]
 section_path: []
+nav_prev: {"path": "deno/deno/runtime/reference/cli/completions/index.md", "title": "deno completions"}
+nav_next: {"path": "deno/deno/runtime/reference/cli/deploy/index.md", "title": "deno deploy"}
 ---
+
 On this page
 
 *   [Inclusions and Exclusions](#inclusions-and-exclusions)
@@ -251,3 +254,5 @@ Output coverage report in lcov format.
 `--output`<output>
 
 Exports the coverage report in lcov format to the given file. If no `--output` arg is specified then the report is written to stdout.
+
+

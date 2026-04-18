@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:49:01.492Z"
 content_hash: "78731d689a74adc6b538b12bbd72dc776eff304dccd2013e249ff72173006c73"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Install Redis Open Source","→","Install Redis Open Source","→\n      \n        Install Redis Open Source","→","Install Redis Open Source"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Install Redis Open Source","→","Install Redis Open Source","→\n      \n        Install Redis Open Source","→","Install Redis Open Source"]
+nav_prev: {"path": "redis/docs/latest/operate/redisinsight/install/install-on-docker/index.md", "title": "Install on Docker"}
+nav_next: {"path": "redis/docs/latest/operate/oss_and_stack/install/archive/install-stack/index.md", "title": "Install Redis Stack"}
 ---
+
 # Install Redis Open Source
 
 Install Redis Open Source on Docker, Linux, macOS, and Windows (using Docker only)
@@ -31,3 +34,4 @@ While you can install Redis Open Source on any of the platforms listed below, yo
 You can also download [Redis Insight](/docs/latest/operate/redisinsight/install/), a free developer companion tool with an intuitive GUI and advanced CLI, which you can use alongside Redis Open Source.
 
 * * *
+

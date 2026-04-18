@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:41:52.887Z"
 content_hash: "4a50481b2328068e4813602ca4cecc4db1b9ad20a33a01c60b99ffd3fd2195ea"
 menu_path: ["PostgreSQL: Documentation: 18: 18.5. Shutting Down the Server"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/pgsurgery.html/index.md", "title": "PostgreSQL: Documentation: 18: F.34.\u00a0pg_surgery \u2014 perform low-level surgery on relation data"}
+nav_next: {"path": "postgres/docs/current/ecpg-errors.html/index.md", "title": "PostgreSQL: Documentation: 18: 34.8.\u00a0Error Handling"}
 ---
+
 There are several ways to shut down the database server. Under the hood, they all reduce to sending a signal to the supervisor `postgres` process.
 
 If you are using a pre-packaged version of PostgreSQL, and you used its provisions for starting the server, then you should also use its provisions for stopping the server. Consult the package-level documentation for details.
@@ -37,3 +40,4 @@ $ **`` kill -INT `head -1 /usr/local/pgsql/data/postmaster.pid` ``**
 It is best not to use SIGKILL to shut down the server. Doing so will prevent the server from releasing shared memory and semaphores. Furthermore, SIGKILL kills the `postgres` process without letting it relay the signal to its subprocesses, so it might be necessary to kill the individual subprocesses by hand as well.
 
 To terminate an individual session while allowing other sessions to continue, use `pg_terminate_backend()` (see [Table 9.96](https://www.postgresql.org/docs/current/functions-admin.html#FUNCTIONS-ADMIN-SIGNAL-TABLE "Table 9.96. Server Signaling Functions")) or send a SIGTERM signal to the child process associated with the session.
+

@@ -9,12 +9,9 @@ last_crawled_at: "2026-04-18T16:51:07.325Z"
 content_hash: "100852c0ac7f06988e5cdfcfb4632b54facc71e2d468ca5e82a4fdd252458aaf"
 menu_path: ["Telemetry","Telemetry","Logging & observability","Logging & observability","Advanced log filtering","Advanced log filtering"]
 section_path: ["Telemetry","Telemetry","Logging & observability","Logging & observability","Advanced log filtering","Advanced log filtering"]
+nav_prev: {"path": "supabase/docs/guides/telemetry/log-drains/index.md", "title": "Log Drains"}
+nav_next: {"path": "supabase/docs/guides/telemetry/metrics/index.md", "title": "Metrics API"}
 ---
-# 
-
-Advanced Log Filtering
-
-* * *
 
 # Querying the logs
 
@@ -163,3 +160,4 @@ The log parser is not able to parse the `*` operator for column selection. Inste
 ```
 1select2  cast(postgres_logs.timestamp as datetime) as timestamp,3  event_message,4  metadata5from6  <log_table_name>7order by timestamp desc8limit 100;
 ```
+

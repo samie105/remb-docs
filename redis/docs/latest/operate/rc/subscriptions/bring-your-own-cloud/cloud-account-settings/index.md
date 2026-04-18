@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:47:22.999Z"
 content_hash: "d21a9a6e26c287de44bc6ea1ee7a20a593c85646526f8afdd45ea94413070181"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Cloud","→","Redis Cloud","→\n      \n        Manage subscriptions","→","Manage subscriptions","→\n      \n        Redis Cloud Bring your own Cloud","→","Redis Cloud Bring your own Cloud","→\n      \n        Create and edit Cloud accounts","→","Create and edit Cloud accounts"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Cloud","→","Redis Cloud","→\n      \n        Manage subscriptions","→","Manage subscriptions","→\n      \n        Redis Cloud Bring your own Cloud","→","Redis Cloud Bring your own Cloud","→\n      \n        Create and edit Cloud accounts","→","Create and edit Cloud accounts"]
+nav_prev: {"path": "redis/docs/latest/develop/clients/nodejs/amr/index.md", "title": "Connect to Azure Managed Redis"}
+nav_next: {"path": "redis/docs/latest/operate/rc/databases/create-database/create-free-database/index.md", "title": "Create a free database"}
 ---
+
 # Create and edit Cloud accounts
 
 Redis Cloud
@@ -140,3 +143,4 @@ We strongly recommend using dedicated identity and access management (IAM) resou
 To learn more, see [Create IAM resources for AWS cloud accounts](/docs/latest/operate/rc/subscriptions/bring-your-own-cloud/iam-resources/).
 
 ## On this page
+

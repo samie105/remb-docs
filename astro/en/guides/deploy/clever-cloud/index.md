@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:36:37.089Z"
 content_hash: "834a277758ac77fb7f1a116aa334a3c3b3e477343ea2490628937de5a7433a06"
 menu_path: ["Deploy your Astro Site to Clever Cloud"]
 section_path: []
+nav_prev: {"path": "astro/en/guides/deploy/cleavr/index.md", "title": "Deploy your Astro Site with Cleavr"}
+nav_next: {"path": "astro/en/guides/deploy/cloudflare/index.md", "title": "Deploy your Astro Site to Cloudflare"}
 ---
+
 # Deploy your Astro Site to Clever Cloud
 
 [Clever Cloud](https://clevercloud.com) is a European cloud platform that provides automated, scalable services.
@@ -217,3 +220,4 @@ To deploy your Astro project to Clever Cloud, you will need to **create a new ap
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

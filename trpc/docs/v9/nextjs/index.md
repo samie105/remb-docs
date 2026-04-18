@@ -9,10 +9,13 @@ last_crawled_at: "2026-04-18T16:43:01.910Z"
 content_hash: "db1396623e1eeed135bd6949b35b623e1a346be04ebe7586fb4c10a042c760fa"
 menu_path: ["Usage with Next.js"]
 section_path: []
+nav_prev: {"path": "trpc/docs/v9/middlewares/index.md", "title": "Middlewares"}
+nav_next: {"path": "trpc/docs/v9/output-validation/index.md", "title": "Output Validation"}
 ---
+
 tip
 
-If you're using tRPC in a new project, consider using one of the example projects as a starting point or for reference: [tRPC Example Projects](https://trpc.io/docs/v9/example-apps)
+If you're using tRPC in a new project, consider using one of the example projects as a starting point or for reference: [tRPC Example Projects](trpc/docs/v9/example-apps/index.md)
 
 tRPC and Next.js are a match made in heaven! Next.js makes it easy for you to build your client and server together in one codebase. This makes it easy to share types between them.
 
@@ -20,7 +23,7 @@ tRPC includes dedicated tools to make the Next.js developer experience as seamle
 
 ## Recommended file structure[​](#recommended-file-structure "Direct link to Recommended file structure")
 
-Recommended but not enforced file structure. This is what you get when starting from [the examples](https://trpc.io/docs/v9/example-apps).
+Recommended but not enforced file structure. This is what you get when starting from [the examples](trpc/docs/v9/example-apps/index.md).
 
 graphql
 
@@ -119,7 +122,7 @@ json
 
 ### 3\. Create a tRPC router[​](#3-create-a-trpc-router "Direct link to 3. Create a tRPC router")
 
-Implement your tRPC router in `./pages/api/trpc/[trpc].ts`. If you need to split your router into several subrouters, implement them in a top-level `server` directory in your project root, then import them into `./pages/api/trpc/[trpc].ts` and [merge them](https://trpc.io/docs/v9/merging-routers) into a single root `appRouter`.
+Implement your tRPC router in `./pages/api/trpc/[trpc].ts`. If you need to split your router into several subrouters, implement them in a top-level `server` directory in your project root, then import them into `./pages/api/trpc/[trpc].ts` and [merge them](trpc/docs/v9/merging-routers/index.md) into a single root `appRouter`.
 
 View sample router
 
@@ -242,12 +245,12 @@ The `config`\-argument is a function that returns an object that configures the 
 *   Exactly **one of** these are **required**:
     
     *   `url` your API URL.
-    *   `links` to customize the flow of data between tRPC Client and the tRPC-server. [Read more](https://trpc.io/docs/v9/links).
+    *   `links` to customize the flow of data between tRPC Client and the tRPC-server. [Read more](trpc/docs/v9/links/index.md).
 *   Optional:
     
     *   `queryClientConfig`: a configuration object for the React Query `QueryClient` used internally by the tRPC React hooks: [QueryClient docs](https://tanstack.com/query/v3/docs/react/reference/QueryClient)
     *   `headers`: an object or a function that returns an object of outgoing tRPC requests
-    *   `transformer`: a transformer applied to outgoing payloads. Read more about [Data Transformers](https://trpc.io/docs/v9/data-transformers)
+    *   `transformer`: a transformer applied to outgoing payloads. Read more about [Data Transformers](trpc/docs/v9/data-transformers/index.md)
     *   `fetch`: customize the implementation of `fetch` used by tRPC internally
     *   `AbortController`: customize the implementation of `AbortController` used by tRPC internally
 
@@ -305,4 +308,5 @@ tsx
 
 ## Next steps[​](#next-steps "Direct link to Next steps")
 
-Refer to the `@trpc/react` docs for additional information on executing [Queries](https://trpc.io/docs/v9/react-queries) and [Mutations](https://trpc.io/docs/v9/react-mutations) inside your components.
+Refer to the `@trpc/react` docs for additional information on executing [Queries](trpc/docs/v9/react-queries/index.md) and [Mutations](trpc/docs/v9/react-mutations/index.md) inside your components.
+

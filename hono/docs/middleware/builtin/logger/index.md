@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:52:14.649Z"
 content_hash: "7f8a79f8a8478758775a84d113fd360aa72cdc4ff35632a3f108fedf650f2ad2"
 menu_path: ["Logger Middleware ​"]
 section_path: []
+nav_prev: {"path": "hono/docs/middleware/builtin/jwt/index.md", "title": "JWT Auth Middleware \u200b"}
+nav_next: {"path": "hono/docs/middleware/builtin/language/index.md", "title": "Language Middleware \u200b"}
 ---
+
 ## Logger Middleware [​](#logger-middleware)
 
 It's a simple logger.
@@ -93,3 +96,4 @@ app.post('/blog', (c) => {
   // Return Context
 })
 ```
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:43:32.086Z"
 content_hash: "0225dbab1fe84398f0f9693a1f340648453b80f826409d6cf298b655584ac0a4"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Redis Insight","→","Redis Insight"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Redis Insight","→","Redis Insight"]
+nav_prev: {"path": "redis/docs/latest/develop/tools/insight/index.md", "title": "Redis Insight"}
+nav_next: {"path": "redis/docs/latest/operate/rc/databases/connect/insight-cloud/index.md", "title": "Use Redis Insight on Redis Cloud"}
 ---
+
 # Redis Insight
 
 Visual client tool for creating, managing, and analyzing Redis databases
@@ -46,3 +49,4 @@ Redis Insight is available for multiple platforms:
 Refer to the complete [Redis Insight guide](/docs/latest/develop/tools/insight/) to install, connect, and use Redis Insight for data visualization and database management.
 
 ## On this page
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:47:41.824Z"
 content_hash: "8a085ff23774153e99cc1befc953de407fd86c62e74d3a4813ea94bfda74263d"
 menu_path: ["Read replicas"]
 section_path: []
+nav_prev: {"path": "prisma/docs/orm/prisma-client/setup-and-configuration/introduction/index.md", "title": "Introduction to Prisma Client"}
+nav_next: {"path": "prisma/docs/orm/prisma-client/special-fields-and-types/index.md", "title": "Fields & types"}
 ---
+
 Setup and Configuration
 
 Learn how to set up and use read replicas with Prisma Client
@@ -104,3 +107,4 @@ const result = await prisma.$replica().user.findFirst(...)
 ```
 
 [Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/prisma-client/setup-and-configuration/read-replicas.mdx)
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:59:21.278Z"
 content_hash: "b9e566a5539eb1923a77652e036a1ea71aa46d4661eb59c5d1adc0163beef814"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Redis session store","→","Redis session store","→\n      \n        Redis session store with Java and Jedis","→","Redis session store with Java and Jedis"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Redis session store","→","Redis session store","→\n      \n        Redis session store with Java and Jedis","→","Redis session store with Java and Jedis"]
+nav_prev: {"path": "redis/docs/latest/develop/pubsub/keyspace-notifications/index.md", "title": "Redis keyspace notifications"}
+nav_next: {"path": "redis/docs/latest/develop/clients/nodejs/index.md", "title": "node-redis guide (JavaScript)"}
 ---
+
 # Redis session store with Java and Jedis
 
 Implement a Redis-backed session store in Java with Jedis
@@ -274,3 +277,4 @@ For more Redis data modeling patterns, see:
 *   [Redis data types](/docs/latest/develop/data-types/)
 
 ## On this page
+

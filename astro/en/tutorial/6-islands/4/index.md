@@ -9,7 +9,9 @@ last_crawled_at: "2026-04-18T16:49:07.624Z"
 content_hash: "f8dc177e0a63d982aaa81a8e6f12f59e8a6fc129820341ad727b397ab02b2753"
 menu_path: ["Optional: Make a content collection"]
 section_path: []
+nav_prev: {"path": "astro/en/tutorial/6-islands/3/index.md", "title": "Congratulations!"}
 ---
+
 # Optional: Make a content collection
 
 Now that you have a blog using Astro’s [built-in file-based routing](/en/guides/routing/#static-routes), you will update it to use a [content collection](/en/guides/content-collections/). Content collections are a powerful way to manage groups of similar content, such as blog posts.
@@ -186,3 +188,4 @@ For the full example of the blog tutorial using content collections, see the [Co
  *    I can use content collections to manage groups of similar content for better performance and organization.
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

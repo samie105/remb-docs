@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:47:02.181Z"
 content_hash: "9f46ebb79d80876ad4aaaedc3b2dbd08628f3a8c5555662efcebf7a902028c0a"
 menu_path: ["PostgreSQL: Documentation: 18: SPI_getbinval"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/view-pg-wait-events.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.38.\u00a0pg_wait_events"}
+nav_next: {"path": "postgres/docs/current/pgbuffercache.html/index.md", "title": "PostgreSQL: Documentation: 18: F.25.\u00a0pg_buffercache \u2014 inspect PostgreSQL buffer cache state"}
 ---
+
 February 26, 2026: [PostgreSQL 18.3, 17.9, 16.13, 15.17, and 14.22 Released!](/about/news/postgresql-183-179-1613-1517-and-1422-released-3246/)
 
 [Documentation](/docs/ "Documentation") → [PostgreSQL 18](/docs/18/index.html)
@@ -62,3 +65,4 @@ The binary value of the column is returned. The variable pointed to by _`isnull`
 ## Submit correction
 
 If you see anything in the documentation that is not correct, does not match your experience with the particular feature or requires further clarification, please use [this form](/account/comments/new/18/spi-spi-getbinval.html/) to report a documentation issue.
+

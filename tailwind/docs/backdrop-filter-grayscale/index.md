@@ -9,15 +9,9 @@ last_crawled_at: "2026-04-18T17:09:34.083Z"
 content_hash: "9ba3e26c30eaccf75a2eb3c8a959c72085666f53f0e26f5da38afc25f1e2d75c"
 menu_path: ["backdrop-filter: grayscale()"]
 section_path: []
+nav_prev: {"path": "tailwind/docs/backdrop-filter-contrast/index.md", "title": "backdrop-filter: contrast()"}
+nav_next: {"path": "tailwind/docs/backdrop-filter-hue-rotate/index.md", "title": "backdrop-filter: hue-rotate()"}
 ---
-[](/)
-
-[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
-
-1.  Filters
-2.  grayscale
-
-Filters
 
 # backdrop-filter: grayscale()
 
@@ -114,3 +108,4 @@ Make your ideas look awesome, without relying on a designer.
 ](https://www.refactoringui.com/?ref=sidebar)
 
 Copyright © 2026 Tailwind Labs Inc.·[Trademark Policy](/brand)
+

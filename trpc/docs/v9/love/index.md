@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:42:47.085Z"
 content_hash: "303599920469557b1d67d6e412f7dd3cdc25c243a7d6f1b39ae25f0ca42820dd"
 menu_path: ["Testimonials / Love"]
 section_path: []
+nav_prev: {"path": "trpc/docs/v9/metadata/index.md", "title": "Route Metadata"}
+nav_next: {"path": "trpc/docs/v9/middlewares/index.md", "title": "Middlewares"}
 ---
+
 Version: 9.x
 
 Do you love or hate tRPC? Feel free to ping [@alexdotjs on Twitter](https://twitter.com/alexdotjs)
@@ -94,3 +97,4 @@ Do you love or hate tRPC? Feel free to ping [@alexdotjs on Twitter](https://twit
 
 *   [From Twitter](#from-twitter)
 *   [From GitHub](#from-github)
+

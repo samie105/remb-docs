@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:43:00.502Z"
 content_hash: "37b70c1fe680b317bdb6ea325dc71fb72b76ca888ee10c06baa3a423cc1f1e81"
 menu_path: ["PostgreSQL: Documentation: 18: E.3. Release 18.1"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/app-pgrestore.html/index.md", "title": "PostgreSQL: Documentation: 18: pg_restore"}
+nav_next: {"path": "postgres/docs/current/sql-createschema.html/index.md", "title": "PostgreSQL: Documentation: 18: CREATE SCHEMA"}
 ---
+
 February 26, 2026: [PostgreSQL 18.3, 17.9, 16.13, 15.17, and 14.22 Released!](/about/news/postgresql-183-179-1613-1517-and-1422-released-3246/)
 
 [Documentation](/docs/ "Documentation") → [PostgreSQL 18](/docs/18/index.html)
@@ -216,3 +219,4 @@ A dump/restore is not required for those running 18.X.
 ## Submit correction
 
 If you see anything in the documentation that is not correct, does not match your experience with the particular feature or requires further clarification, please use [this form](/account/comments/new/18/release-18-1.html/) to report a documentation issue.
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:26:21.222Z"
 content_hash: "9c8899d4ad9b9c75eabfcd21c78daf88c0c8eedc43aa0945b5f329055488110c"
 menu_path: ["Views"]
 section_path: []
+nav_prev: {"path": "drizzle/docs/sequences/index.md", "title": "Sequences"}
+nav_next: {"path": "drizzle/docs/schemas/index.md", "title": "Table schemas"}
 ---
+
 PostgreSQL
 
 SQLite
@@ -490,3 +493,4 @@ const newYorkers2 = cockroachMaterializedView('new_yorkers')
     return qb.with(sq).select().from(sq).where(sql`${users.homeCity} = 1`);
   });
 ```
+

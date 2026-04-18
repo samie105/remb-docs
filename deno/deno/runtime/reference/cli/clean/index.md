@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:51:25.499Z"
 content_hash: "77e8e031a10b5d59bd172da364cfb8c62bbd2b21b836d053c3c04785451d4fdf"
 menu_path: ["deno clean"]
 section_path: []
+nav_prev: {"path": "deno/deno/runtime/reference/cli/check/index.md", "title": "deno check"}
+nav_next: {"path": "deno/deno/runtime/reference/cli/compile/index.md", "title": "deno compile"}
 ---
+
 On this page
 
 *   [Basic usage](#basic-usage)
@@ -83,3 +86,4 @@ Sets the node modules management mode for npm packages.
 `--vendor`<vendor>optional
 
 Toggles local vendor folder usage for remote modules and a node\_modules folder for npm packages.
+

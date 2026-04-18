@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:58:50.751Z"
 content_hash: "7eeee70a272e803fbe067f3b36caa908e5f47847b08e23ce145756910ff34856"
 menu_path: ["Lint Plugins"]
 section_path: []
+nav_prev: {"path": "deno/deno/runtime/reference/bundling/index.md", "title": "Bundling"}
+nav_next: {"path": "deno/deno/runtime/reference/wasm/index.md", "title": "WebAssembly"}
 ---
+
 On this page
 
 *   [Example plugin](#example-plugin)
@@ -343,3 +346,4 @@ The [`Deno.lint.runPlugin`](/api/deno/~/Deno.lint.runPlugin) API is only availab
 Trying to use it with any other subcommand will throw an error.
 
 Consult [the API reference](/api/deno/) for more information on [`Deno.lint.runPlugin`](/api/deno/~/Deno.lint.runPlugin) and [`Deno.lint.Diagnostic`](/api/deno/~/Deno.lint.Diagnostic).
+

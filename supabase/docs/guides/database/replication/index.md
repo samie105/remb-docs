@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:42:15.657Z"
 content_hash: "511b8610d70c8ea53c07502a7c4f39df05c8597a4837bf617c9d165e30c67805"
 menu_path: ["Database","Database","Database replication","Database replication","Overview","Overview"]
 section_path: ["Database","Database","Database replication","Database replication","Overview","Overview"]
+nav_prev: {"path": "supabase/docs/guides/database/query-optimization/index.md", "title": "Query Optimization"}
+nav_next: {"path": "supabase/docs/guides/database/secure-data/index.md", "title": "Securing your data"}
 ---
+
 # 
 
 Database Replication
@@ -132,3 +135,4 @@ No
 Max time between WAL checkpoints
 
 No
+

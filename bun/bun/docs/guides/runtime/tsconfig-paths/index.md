@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:53:23.112Z"
 content_hash: "5dd8e1e73445c5e037fe442233c69aee1e0b9dec0d65d61f3a6ed1a96303c789"
 menu_path: ["Re-map import paths"]
 section_path: []
+nav_prev: {"path": "bun/bun/docs/guides/runtime/timezone/index.md", "title": "Set a time zone in Bun"}
+nav_next: {"path": "bun/bun/docs/guides/runtime/typescript/index.md", "title": "Install TypeScript declarations for Bun"}
 ---
+
 [Skip to main content](#content-area)
 
 [Bun home page![light logo](https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z_zHyy/logo/logo-with-wordmark-dark.svg?fit=max&auto=format&n=JUhaF6Mf68z_zHyy&q=85&s=3f55cd23822028e40658b192c927f3e4)![dark logo](https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z_zHyy/logo/logo-with-wordmark-light.svg?fit=max&auto=format&n=JUhaF6Mf68z_zHyy&q=85&s=8a0c5928d9dc3631f0d33e17c257e2ec)](/docs)
@@ -79,3 +82,4 @@ Debugging Bun with the VS Code extension
 Next
 
 ](/docs/guides/runtime/vscode-debugger)
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:46:57.549Z"
 content_hash: "81de89088c50bbf4940823005976bde0a6aaf1d7be659ada175fafc464ddf030"
 menu_path: ["useMutation()"]
 section_path: []
+nav_prev: {"path": "trpc/docs/client/react/suspense/index.md", "title": "Suspense"}
+nav_next: {"path": "trpc/docs/client/react/useInfiniteQuery/index.md", "title": "useInfiniteQuery()"}
 ---
+
 tsx
 
 `import { trpc } from '../utils/trpc';`
@@ -45,3 +48,4 @@ tsx
   `);`
 
 `}`
+

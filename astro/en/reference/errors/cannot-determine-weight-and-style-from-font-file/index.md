@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:43:44.849Z"
 content_hash: "4ac7d8c4acc51c4918f7bc418c2fd2d892ac3a964bf8cddbdeb664889b6139e2"
 menu_path: ["Cannot determine weight and style from font file."]
 section_path: []
+nav_prev: {"path": "astro/en/reference/errors/cannot-extract-font-type/index.md", "title": "Cannot extract the font type from the given URL."}
+nav_next: {"path": "astro/en/reference/errors/cannot-fetch-font-file/index.md", "title": "Cannot fetch the given font file."}
 ---
+
 # Cannot determine weight and style from font file.
 
 > An error occurred while determining the weight and style from the local font file.
@@ -21,3 +24,4 @@ section_path: []
 Cannot determine weight and style from font file, update your family config and set `weight` and `style` manually instead.
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

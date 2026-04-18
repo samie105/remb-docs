@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:41:51.992Z"
 content_hash: "5b3387ae22ae1992000a7529dd357b52c7547282ce3dfbd22c0d7c42c9f4f4c4"
 menu_path: ["PostgreSQL: Documentation: 18: F.34. pg_surgery — perform low-level surgery on relation data"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/ecpg-connect.html/index.md", "title": "PostgreSQL: Documentation: 18: 34.2.\u00a0Managing Database Connections"}
+nav_next: {"path": "postgres/docs/current/server-shutdown.html/index.md", "title": "PostgreSQL: Documentation: 18: 18.5.\u00a0Shutting Down the Server"}
 ---
+
 The `pg_surgery` module provides various functions to perform surgery on a damaged relation. These functions are unsafe by design and using them may corrupt (or further corrupt) your database. For example, these functions can easily be used to make a table inconsistent with its own indexes, to cause `UNIQUE` or `FOREIGN KEY` constraint violations, or even to make tuples visible which, when read, will cause a database server crash. They should be used with great caution and only as a last resort.
 
 ### F.34.1. Functions [#](#PGSURGERY-FUNCS)
@@ -56,3 +59,4 @@ test=# select ctid from t1 where xmin = 2;
 -------
  (0,3)
 (1 row)
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:36:14.185Z"
 content_hash: "1e1ea9ce8bb7fe39ca919b8ca3153b13b55ad03f7f1a178174cadde7d4b7cfc1"
 menu_path: ["{#snippet ...}"]
 section_path: []
+nav_prev: {"path": "svelte/docs/svelte/await/index.md", "title": "{#await ...}"}
+nav_next: {"path": "svelte/docs/svelte/@render/index.md", "title": "{@render ...}"}
 ---
+
 ```
 {#snippet name()}...{/snippet}
 ```
@@ -554,3 +557,4 @@ In Svelte 4, content can be passed to components using [slots](legacy-slots). Sn
 previous next
 
 [{#await ...}](/docs/svelte/await) [{@render ...}](/docs/svelte/@render)
+

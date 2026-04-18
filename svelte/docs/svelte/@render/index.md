@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:36:09.892Z"
 content_hash: "921f2b56608f3dbe0337cb6e84ca3d6445e3b477be3a0b54ea3d80e6b0ed3134"
 menu_path: ["{@render ...}"]
 section_path: []
+nav_prev: {"path": "svelte/docs/svelte/snippet/index.md", "title": "{#snippet ...}"}
+nav_next: {"path": "svelte/docs/svelte/@html/index.md", "title": "{@html ...}"}
 ---
+
 To render a [snippet](snippet), use a `{@render ...}` tag.
 
 ```
@@ -51,3 +54,4 @@ Alternatively, use an [`{#if ...}`](if) block with an `:else` clause to render f
 previous next
 
 [{#snippet ...}](/docs/svelte/snippet) [{@html ...}](/docs/svelte/@html)
+

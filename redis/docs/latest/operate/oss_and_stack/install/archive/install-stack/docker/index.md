@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:58:17.567Z"
 content_hash: "e4c4bed1af0d1dea68997aa17156b29f53eca5eed4cae194f4e704fe24aaa1ea"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Install Redis Open Source","→","Install Redis Open Source","→\n      \n        Install Redis Community Edition or Redis Stack","→","Install Redis Community Edition or Redis Stack","→\n      \n        Install Redis Stack","→","Install Redis Stack","→\n      \n        Run Redis Stack on Docker","→","Run Redis Stack on Docker"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Install Redis Open Source","→","Install Redis Open Source","→\n      \n        Install Redis Community Edition or Redis Stack","→","Install Redis Community Edition or Redis Stack","→\n      \n        Install Redis Stack","→","Install Redis Stack","→\n      \n        Run Redis Stack on Docker","→","Run Redis Stack on Docker"]
+nav_prev: {"path": "redis/docs/latest/operate/oss_and_stack/stack-with-enterprise/deprecated-features/triggers-and-functions/development/index.md", "title": "Development"}
+nav_next: {"path": "redis/docs/latest/integrate/riot/docs/index.md", "title": "Documentation"}
 ---
+
 # Run Redis Stack on Docker
 
 How to install Redis Stack using Docker
@@ -113,3 +116,4 @@ docker run -e REDISTIMESERIES_ARGS="RETENTION_POLICY=20" redis/redis-stack:lates
 ```
 
 ## On this page
+

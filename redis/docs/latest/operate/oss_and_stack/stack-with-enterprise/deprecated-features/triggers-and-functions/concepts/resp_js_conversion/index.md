@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:11:06.150Z"
 content_hash: "f5f7845edb63a3f9266f3ff200ece27d8c88bdb13c86228ac668fe6a0e60fa48"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Redis Open Source and Redis Software","→","Redis Open Source and Redis Software","→\n      \n        Deprecated Redis Open Source features and modules","→","Deprecated Redis Open Source features and modules","→\n      \n        Triggers and functions","→","Triggers and functions","→\n      \n        Concepts","→","Concepts","→\n      \n        RESP & JavaScript","→","RESP & JavaScript"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Redis Open Source and Redis Software","→","Redis Open Source and Redis Software","→\n      \n        Deprecated Redis Open Source features and modules","→","Deprecated Redis Open Source features and modules","→\n      \n        Triggers and functions","→","Triggers and functions","→\n      \n        Concepts","→","Concepts","→\n      \n        RESP & JavaScript","→","RESP & JavaScript"]
+nav_prev: {"path": "redis/docs/latest/develop/tools/redis-for-vscode/release-notes/index.md", "title": "Redis for VS Code release notes"}
+nav_next: {"path": "redis/docs/latest/develop/use-cases/time-series-dashboard/ruby/index.md", "title": "Rolling sensor graph demo with Redis and Ruby"}
 ---
+
 # RESP & JavaScript
 
 Converting RESP to and from JavaScript
@@ -209,3 +212,4 @@ resp2 `null`
 resp3 `null`
 
 ## On this page
+

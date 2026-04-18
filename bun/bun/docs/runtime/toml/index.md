@@ -9,63 +9,10 @@ last_crawled_at: "2026-04-18T17:01:53.428Z"
 content_hash: "3afbab592529bd9854a786c54ca5d5c0110b45d7d2ff2b5f79f0d2bc8f31ce5e"
 menu_path: ["TOML"]
 section_path: []
+nav_prev: {"path": "bun/bun/docs/runtime/templating/create/index.md", "title": "bun create"}
+nav_next: {"path": "bun/bun/docs/runtime/templating/init/index.md", "title": "bun init"}
 ---
-In Bun, TOML is a first-class citizen alongside JSON, JSON5, and YAML. You can:
 
-*   Parse TOML strings with `Bun.TOML.parse`
-*   `import` & `require` TOML files as modules at runtime (including hot reloading & watch mode support)
-*   `import` & `require` TOML files in frontend apps via Bun’s bundler
-
-* * *
-
-## Runtime API
-
-### `Bun.TOML.parse()`
-
-Parse a TOML string into a JavaScript object.
-
-```
-import { TOML } from "bun";
-const text = `
-name = "my-app"
-version = "1.0.0"
-debug = true
-
-[database]
-host = "localhost"
-port = 5432
-
-[features]
-tags = ["web", "api"]
-`;
-
-const data = TOML.parse(text);
-console.log(data);
-// {
-//   name: "my-app",
-//   version: "1.0.0",
-//   debug: true,
-//   database: { host: "localhost", port: 5432 },
-//   features: { tags: ["web", "api"] }
-// }
-```
-
-#### Supported TOML Features
-
-Bun’s TOML parser supports the [TOML v1.0 specification](https://toml.io/en/v1.0.0), including:
-
-*   **Strings**: basic (`"..."`) and literal (`'...'`), including multi-line
-*   **Integers**: decimal, hex (`0x`), octal (`0o`), and binary (`0b`)
-*   **Floats**: including `inf` and `nan`
-*   **Booleans**: `true` and `false`
-*   **Arrays**: including mixed types and nested arrays
-*   **Tables**: standard (`[table]`) and inline (`{ key = "value" }`)
-*   **Array of tables**: `[[array]]`
-*   **Dotted keys**: `a.b.c = "value"`
-*   **Comments**: using `#`
-
-```
-const data = Bun.TOML.parse(`
 # Application config
 title = "My App"
 
@@ -263,3 +210,4 @@ TOML files can be dynamically imported:
 ```
 const config = await import("./config.toml");
 ```
+

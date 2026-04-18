@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:57:09.580Z"
 content_hash: "24f098d5d68ecf2f2cf89966f66c6f06b553f8d4d7545ef62a624e719975f012"
 menu_path: ["Deployment & Branching","Deployment & Branching","Branching","Branching","Integrations","Integrations"]
 section_path: ["Deployment & Branching","Deployment & Branching","Branching","Branching","Integrations","Integrations"]
+nav_prev: {"path": "supabase/docs/guides/deployment/branching/dashboard/index.md", "title": "Branching via the dashboard"}
+nav_next: {"path": "supabase/docs/guides/deployment/branching/github-integration/index.md", "title": "GitHub integration"}
 ---
+
 # 
 
 Integrations
@@ -42,3 +45,4 @@ And make sure you have [connected](/dashboard/org/_/integrations) your Supabase 
 Supabase automatically updates your Vercel project with the correct environment variables for the corresponding preview branches. The synchronization happens at the time of Pull Request being opened, not at the time of branch creation.
 
 As branching integration is tied to the Preview Deployments feature in Vercel, there are possible race conditions between Supabase setting correct variables, and Vercel running a deployment process. Because of that, Supabase is always automatically re-deploying the most recent deployment of the given pull request.
+

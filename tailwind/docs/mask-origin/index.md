@@ -9,15 +9,9 @@ last_crawled_at: "2026-04-18T17:05:55.302Z"
 content_hash: "81f2056ae12a0020f7640e9522fb903511e2b9cd2e0ca52d92e2b5de85132bdf"
 menu_path: ["mask-origin"]
 section_path: []
+nav_prev: {"path": "tailwind/docs/mask-mode/index.md", "title": "mask-mode"}
+nav_next: {"path": "tailwind/docs/mask-position/index.md", "title": "mask-position"}
 ---
-[](/)
-
-[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
-
-1.  Effects
-2.  mask-origin
-
-Effects
 
 # mask-origin
 
@@ -95,3 +89,4 @@ Short, tactical video lessons from the creator of Tailwind CSS, delivered direct
 [Get the free course](/build-uis-that-dont-suck)
 
 Copyright © 2026 Tailwind Labs Inc.·[Trademark Policy](/brand)
+

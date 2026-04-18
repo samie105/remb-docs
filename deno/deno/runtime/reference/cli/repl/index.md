@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:55:31.327Z"
 content_hash: "16fcfa4605f051bb19f97ffae8cfc04f713751692e44bc461bca23135671fd0c"
 menu_path: ["deno repl"]
 section_path: []
+nav_prev: {"path": "deno/deno/runtime/reference/cli/remove/index.md", "title": "deno remove"}
+nav_next: {"path": "deno/deno/runtime/reference/cli/run/index.md", "title": "deno run"}
 ---
+
 On this page
 
 *   [Special variables](#special-variables)
@@ -419,3 +422,4 @@ Activate inspector on host:port, wait for debugger to connect and break at the s
 `--inspect-wait`<HOST\_PORT>optional
 
 Activate inspector on host:port and wait for debugger to connect before running user code.
+

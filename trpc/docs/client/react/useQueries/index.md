@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:47:02.899Z"
 content_hash: "0834e9f4c86b7a7faa6e2b89644248b07bc372397eb9240710135c43fe0feaaa"
 menu_path: ["useQueries()"]
 section_path: []
+nav_prev: {"path": "trpc/docs/client/react/useInfiniteQuery/index.md", "title": "useInfiniteQuery()"}
+nav_next: {"path": "trpc/docs/client/react/useQuery/index.md", "title": "useQuery()"}
 ---
+
 The `useQueries` hook can be used to fetch a variable number of queries at the same time using only one hook call.
 
 The main use case for such a hook is to be able to fetch a number of queries, usually of the same type. For example if you fetch a list of todo ids, you can then map over them in a useQueries hook calling a byId endpoint that would fetch the details of each todo.
@@ -24,7 +27,7 @@ The useQueries hook is the same as that of [@tanstack/query useQueries](https://
 
 tip
 
-When you're using the [`httpBatchLink`](https://trpc.io/docs/client/links/httpBatchLink) or [`wsLink`](https://trpc.io/docs/client/links/wsLink), the below will end up being only 1 HTTP call to your server. Additionally, if the underlying procedure is using something like Prisma's `findUnique()` it will [automatically batch](https://www.prisma.io/docs/guides/performance-and-optimization/query-optimization-performance#solving-n1-in-graphql-with-findunique-and-prismas-dataloader) & do exactly 1 database query as a well.
+When you're using the [`httpBatchLink`](trpc/docs/client/links/httpBatchLink/index.md) or [`wsLink`](trpc/docs/client/links/wsLink/index.md), the below will end up being only 1 HTTP call to your server. Additionally, if the underlying procedure is using something like Prisma's `findUnique()` it will [automatically batch](https://www.prisma.io/docs/guides/performance-and-optimization/query-optimization-performance#solving-n1-in-graphql-with-findunique-and-prismas-dataloader) & do exactly 1 database query as a well.
 
 tsx
 
@@ -95,3 +98,4 @@ tsx
   `myCustomContext,`
 
 `);`
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:58:10.059Z"
 content_hash: "d7c8e8ce83e03b43808a9116db272055141734d1b95c237da59b6caa498fcd0d"
 menu_path: ["Start with Supabase","Start with Supabase","Framework Quickstarts","Framework Quickstarts","Hono","Hono"]
 section_path: ["Start with Supabase","Start with Supabase","Framework Quickstarts","Framework Quickstarts","Hono","Hono"]
+nav_prev: {"path": "supabase/docs/guides/getting-started/quickstarts/flutter/index.md", "title": "Use Supabase with Flutter"}
+nav_next: {"path": "supabase/docs/guides/getting-started/quickstarts/ios-swiftui/index.md", "title": "Use Supabase with iOS and SwiftUI"}
 ---
+
 # 
 
 Use Supabase with Hono
@@ -105,3 +108,4 @@ Learn how [server side auth](/docs/guides/auth/server-side/creating-a-client?que
 *   Learn how [server side auth](/docs/guides/auth/server-side/creating-a-client?queryGroups=framework&framework=hono) works with Hono.
 *   [Insert more data](/docs/guides/database/import-data) into your database
 *   Upload and serve static files using [Storage](/docs/guides/storage)
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:35:04.050Z"
 content_hash: "e30e59d704c0a43ad1babc646557714c5c2eaab936223a593be1d95356bb8382"
 menu_path: ["Prismic & Astro"]
 section_path: []
+nav_prev: {"path": "astro/en/guides/cms/preprcms/index.md", "title": "Prepr CMS & Astro"}
+nav_next: {"path": "astro/en/guides/cms/sanity/index.md", "title": "Sanity & Astro"}
 ---
+
 # Prismic & Astro
 
 [Prismic](https://prismic.io/) is a headless content management system.
@@ -203,3 +206,4 @@ section_path: []
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

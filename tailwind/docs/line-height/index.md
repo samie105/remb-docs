@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:56:37.953Z"
 content_hash: "1b7f227d2e62589ad40ca1b14964d9b83c79fcb9f27132ba3a82bc7c83314a0f"
 menu_path: ["line-height"]
 section_path: []
+nav_prev: {"path": "tailwind/docs/line-clamp/index.md", "title": "line-clamp"}
+nav_next: {"path": "tailwind/docs/list-style-image/index.md", "title": "list-style-image"}
 ---
+
 Typography
 
 Utilities for controlling the leading, or line height, of an element.
@@ -68,7 +71,7 @@ So I started to walk into the water. I won't lie to you boys, I was terrified. B
 <p class="text-base/6 ...">So I started to walk into the water...</p><p class="text-base/7 ...">So I started to walk into the water...</p><p class="text-base/8 ...">So I started to walk into the water...</p>
 ```
 
-Each font size utility also sets a default line height when one isn't provided. You can learn more about these values and how to customize them in the [font-size documentation](https://tailwindcss.com/docs/font-size).
+Each font size utility also sets a default line height when one isn't provided. You can learn more about these values and how to customize them in the [font-size documentation](tailwind/docs/font-size/index.md).
 
 ### [Setting independently](#setting-independently)
 
@@ -124,7 +127,7 @@ Prefix a `line-height` utility with a breakpoint variant like `md:` to only appl
 <p class="leading-5 md:leading-6 ...">  Lorem ipsum dolor sit amet...</p>
 ```
 
-Learn more about using variants in the [variants documentation](https://tailwindcss.com/docs/hover-focus-and-other-states).
+Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).
 
 ## [Customizing your theme](#customizing-your-theme)
 
@@ -134,4 +137,5 @@ The `leading-<number>` utilities are driven by the `--spacing` theme variable, w
 @theme {  --spacing: 1px; }
 ```
 
-Learn more about customizing the spacing scale in the [theme variable documentation](https://tailwindcss.com/docs/theme).
+Learn more about customizing the spacing scale in the [theme variable documentation](tailwind/docs/theme/index.md).
+

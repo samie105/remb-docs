@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:41:29.902Z"
 content_hash: "f9eb3216b8a036001a548f08aab1b34c884d59a9f1ff9fe1466fa746d4ee8ff1"
 menu_path: ["box-decoration-break"]
 section_path: []
+nav_prev: {"path": "tailwind/docs/break-inside/index.md", "title": "break-inside"}
+nav_next: {"path": "tailwind/docs/box-sizing/index.md", "title": "box-sizing"}
 ---
+
 Utilities for controlling how element fragments should be rendered across multiple lines, columns, or pages.
 
 Class
@@ -46,4 +49,5 @@ Prefix a `box-decoration-break` utility with a breakpoint variant like `md:` to 
 <div class="box-decoration-clone md:box-decoration-slice ...">  <!-- ... --></div>
 ```
 
-Learn more about using variants in the [variants documentation](https://tailwindcss.com/docs/hover-focus-and-other-states).
+Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).
+

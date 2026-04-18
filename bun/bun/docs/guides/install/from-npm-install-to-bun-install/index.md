@@ -9,17 +9,10 @@ last_crawled_at: "2026-04-18T16:49:55.788Z"
 content_hash: "ccf0b6d7919404dca69fafaf9020544f1a8bcd03edde43bdfd6a67e1cb9f1d76"
 menu_path: ["Migrate from npm install to bun install"]
 section_path: []
+nav_prev: {"path": "bun/bun/docs/guides/install/custom-registry/index.md", "title": "Override the default npm registry for bun install"}
+nav_next: {"path": "bun/bun/docs/guides/install/git-diff-bun-lockfile/index.md", "title": "Configure git to diff Bun's lockb lockfile"}
 ---
-`bun install` is a Node.js compatible npm client designed to be an incredibly fast successor to npm. To migrate from `npm install` to `bun install`, run `bun install` instead of `npm install`.
 
-*   **Designed for Node.js & Bun**: `bun install` installs a Node.js compatible `node_modules` folder. You can use it in place of `npm install` for Node.js projects without any code changes and without using Bun’s runtime.
-*   **Automatically converts `package-lock.json`** to bun’s `bun.lock` lockfile format, preserving your existing resolved dependency versions without any manual work on your part. You can secretly use `bun install` in place of `npm install` at work without anyone noticing.
-*   **`.npmrc` compatible**: bun install reads npm registry configuration from npm’s `.npmrc`, so you can use the same configuration for both npm and Bun.
-*   **Hardlinks**: On Windows and Linux, `bun install` uses hardlinks to conserve disk space and install times.
-
-terminal
-
-```
 # It only takes one command to migrate
 bun i
 
@@ -263,3 +256,4 @@ bun i -g eslint
 # Run a globally-installed package without the `bun run` prefix
 eslint --init
 ```
+

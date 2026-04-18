@@ -9,15 +9,9 @@ last_crawled_at: "2026-04-18T16:46:28.054Z"
 content_hash: "5a1ec35301e44be23bd83d85206009b823cad8408992b9b82dcb76ceda0ef68b"
 menu_path: ["flex-shrink"]
 section_path: []
+nav_prev: {"path": "tailwind/docs/flex-grow/index.md", "title": "flex-grow"}
+nav_next: {"path": "tailwind/docs/order/index.md", "title": "order"}
 ---
-[](/)
-
-[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
-
-1.  Flexbox & Grid
-2.  flex-shrink
-
-Flexbox & Grid
 
 # flex-shrink
 
@@ -119,3 +113,4 @@ Short, tactical video lessons from the creator of Tailwind CSS, delivered direct
 [Get the free course](/build-uis-that-dont-suck)
 
 Copyright © 2026 Tailwind Labs Inc.·[Trademark Policy](/brand)
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:49:57.585Z"
 content_hash: "9cf38357667b98027c5674a505334edd58ea9c66f5ee7f9b09c637cfa3f19831"
 menu_path: ["Realtime","Realtime","Guides","Guides","Subscribing to Database Changes","Subscribing to Database Changes"]
 section_path: ["Realtime","Realtime","Guides","Guides","Subscribing to Database Changes","Subscribing to Database Changes"]
+nav_prev: {"path": "supabase/docs/guides/security/hipaa-compliance/index.md", "title": "HIPAA Compliance and Supabase"}
+nav_next: {"path": "supabase/docs/guides/security/platform-audit-logs/index.md", "title": "Platform Audit Logs"}
 ---
+
 # 
 
 Subscribing to Database Changes
@@ -88,3 +91,4 @@ You can use the `UPDATE` event to stream all updated rows.
 ```
 1// @noImplicitAny: false2import { createClient } from '@supabase/supabase-js'3const supabase = createClient('your_project_url', 'your_supabase_api_key')45// ---cut---6const channel = supabase7  .channel('schema-db-changes')8  .on(9    'postgres_changes',10    {11      event: 'UPDATE',12      schema: 'public',13    },14    (payload) => console.log(payload)15  )16  .subscribe()
 ```
+

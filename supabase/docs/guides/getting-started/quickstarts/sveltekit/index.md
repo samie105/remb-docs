@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:58:35.068Z"
 content_hash: "059cdbda298078b6b09236bfa355eac84bb6804ef14684c5a73d3f7201cacc0d"
 menu_path: ["Start with Supabase","Start with Supabase","Framework Quickstarts","Framework Quickstarts","SvelteKit","SvelteKit"]
 section_path: ["Start with Supabase","Start with Supabase","Framework Quickstarts","Framework Quickstarts","SvelteKit","SvelteKit"]
+nav_prev: {"path": "supabase/docs/guides/getting-started/quickstarts/solidjs/index.md", "title": "Use Supabase with SolidJS"}
+nav_next: {"path": "supabase/docs/guides/getting-started/quickstarts/tanstack/index.md", "title": "Use Supabase with TanStack Start"}
 ---
+
 # 
 
 Use Supabase with SvelteKit
@@ -157,3 +160,4 @@ Start the app and go to [http://localhost:5173](http://localhost:5173) in a brow
 *   Set up [Auth](/docs/guides/auth) for your app
 *   [Insert more data](/docs/guides/database/import-data) into your database
 *   Upload and serve static files using [Storage](/docs/guides/storage)
+

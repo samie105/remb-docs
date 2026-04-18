@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:48:13.623Z"
 content_hash: "34287d812dc141ece2f9d3f25424cd3d367c6f515305188769196aa78fe4d9ad"
 menu_path: ["Deploy your site to the web"]
 section_path: []
+nav_prev: {"path": "astro/en/tutorial/1-setup/4/index.md", "title": "Store your repository online"}
+nav_next: {"path": "astro/en/tutorial/2-pages/1/index.md", "title": "Create your first Astro page"}
 ---
+
 # Deploy your site to the web
 
 Get ready to…
@@ -69,3 +72,4 @@ You want to update the home page of your existing website. What steps do you tak
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

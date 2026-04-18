@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:11:58.844Z"
 content_hash: "81ee4ea27165e18fe90fedc2eea16b5eb91a7e2d20b4fbb64ea8e82e445be99d"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Redis Open Source and Redis Software","→","Redis Open Source and Redis Software","→\n      \n        Deprecated Redis Open Source features and modules","→","Deprecated Redis Open Source features and modules","→\n      \n        Triggers and functions","→","Triggers and functions","→\n      \n        Concepts","→","Concepts","→\n      \n        Binary data","→","Binary data"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Redis Open Source and Redis Software","→","Redis Open Source and Redis Software","→\n      \n        Deprecated Redis Open Source features and modules","→","Deprecated Redis Open Source features and modules","→\n      \n        Triggers and functions","→","Triggers and functions","→\n      \n        Concepts","→","Concepts","→\n      \n        Binary data","→","Binary data"]
+nav_prev: {"path": "redis/docs/latest/operate/kubernetes/release-notes/7-4-2-releases/7-4-2-2/index.md", "title": "Redis Enterprise for Kubernetes 7.4.2-2 (Feb 2024) release notes"}
+nav_next: {"path": "redis/docs/latest/integrate/confluent-with-redis-cloud/index.md", "title": "Confluent with Redis Cloud"}
 ---
+
 # Binary data
 
 Working with binary data
@@ -169,3 +172,4 @@ Run Example:
 ```
 
 ## On this page
+

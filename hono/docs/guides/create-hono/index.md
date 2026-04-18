@@ -9,24 +9,10 @@ last_crawled_at: "2026-04-18T16:42:37.708Z"
 content_hash: "c2c2570fa0e71918ad28b7e2ae4ec9644327e023d0832550139f33b0afa3e5b9"
 menu_path: ["Create-hono ​"]
 section_path: []
+nav_prev: {"path": "hono/docs/api/presets/index.md", "title": "Presets \u200b"}
+nav_next: {"path": "hono/docs/guides/middleware/index.md", "title": "Middleware \u200b"}
 ---
-[Skip to content](#VPContent)
 
-Command-line options supported by `create-hono` - the project initializer that runs when you run `npm create hono@latest`, `npx create-hono@latest`, or `pnpm create hono@latest`.
-
-NOTE
-
-**Why this page?** The installation / quick-start examples often show a minimal `npm create hono@latest my-app` command. `create-hono` supports several useful flags you can pass to automate and customize project creation (select templates, skip prompts, pick a package manager, use local cache, and more).
-
-## Passing arguments: [​](#passing-arguments)
-
-When you use `npm create` (or `npx`) arguments intended for the initializer script must be placed **after** `--`. Anything after `--` is forwarded to the initializer.
-
-npmyarnpnpmbundeno
-
-sh
-
-```
 # Forwarding arguments to create-hono (npm requires `--`)
 npm create hono@latest my-app -- --template cloudflare-workers
 ```
@@ -133,3 +119,4 @@ pnpm create hono@latest my-app --template deno --offline
 ## Links & references [​](#links-references)
 
 *   `create-hono` repository : [create-hono](https://github.com/honojs/create-hono)
+

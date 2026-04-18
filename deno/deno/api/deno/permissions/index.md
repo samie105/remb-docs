@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:10:32.667Z"
 content_hash: "bcbbf9e60d7e1f8d6c442766e31ba19e69ccfae3796162d7c88e26d76b620960"
 menu_path: ["Permissions - Deno documentation"]
 section_path: []
+nav_prev: {"path": "deno/deno/api/deno/network/index.md", "title": "Network - Deno documentation"}
+nav_next: {"path": "deno/deno/api/deno/runtime/index.md", "title": "Runtime - Deno documentation"}
 ---
+
 ### Classes [#](#Classes)
 
 c
@@ -167,3 +170,4 @@ v
 [Deno.permissions](./././~/Deno.permissions "Deno.permissions")
 
 Deno's permission management API.
+

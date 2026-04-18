@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:58:41.586Z"
 content_hash: "fb8bfcd95a40021157ecf2659c26ea0711bf70b43cf2d23835f6858c17d47a54"
 menu_path: ["Archive"]
 section_path: []
+nav_prev: {"path": "bun/bun/docs/runtime/auto-install/index.md", "title": "Auto-install"}
+nav_next: {"path": "bun/bun/docs/runtime/bun-apis/index.md", "title": "Bun APIs"}
 ---
+
 Bun provides a fast, native implementation for working with tar archives through `Bun.Archive`. It supports creating archives from in-memory data, extracting archives to disk, and reading archive contents without extraction.
 
 ## Quickstart
@@ -443,3 +446,4 @@ class Archive {
   files(glob?: string | readonly string[]): Promise<Map<string, File>>;
 }
 ```
+

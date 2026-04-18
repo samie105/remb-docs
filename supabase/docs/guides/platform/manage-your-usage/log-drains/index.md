@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:00:05.728Z"
 content_hash: "7c89a2f7057b0ea428f74b9a0f925e56f46faf8dc5851d57f4e25c4b15bcac02"
 menu_path: ["Platform","Platform","More","More","More","Manage your usage","Manage your usage","Log Drains","Log Drains"]
 section_path: ["Platform","Platform","More","More","More","Manage your usage","Manage your usage","Log Drains","Log Drains"]
+nav_prev: {"path": "supabase/docs/guides/platform/manage-your-usage/egress/index.md", "title": "Manage Egress usage"}
+nav_next: {"path": "supabase/docs/guides/platform/manage-your-usage/ipv4/index.md", "title": "Manage IPv4 usage"}
 ---
+
 # 
 
 Manage Log Drain usage
@@ -247,3 +250,4 @@ Compute Credits
 You can view Log Drain Events usage on the [organization's usage page](/dashboard/org/_/usage). The page shows the usage of all projects by default. To view the usage for a specific project, select it from the dropdown. You can also select a different time period.
 
 ![Usage page usage summary](/docs/img/guides/platform/usage-logdrain-events--light.png)
+

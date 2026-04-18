@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:37:46.428Z"
 content_hash: "3fea5525e8f4b3199a831e0bd7c876d15a247a5fb4ffa866f8dd0897b4aee462"
 menu_path: ["Delay Accepting Requests"]
 section_path: []
+nav_prev: {"path": "fastify/docs/latest/Guides/Contributing/index.md", "title": "Contributing To Fastify"}
+nav_next: {"path": "fastify/docs/latest/Guides/Detecting-When-Clients-Abort/index.md", "title": "Detecting When Clients Abort"}
 ---
+
 Version: latest (v5.8.x)
 
 ## Introduction[​](#introduction "Direct link to Introduction")
@@ -198,3 +201,4 @@ Specifics of the implementation will vary from one problem to another, but the m
 This guide is a tutorial on the use of plugins, decorators, and hooks to solve the problem of delaying serving specific requests on our application. It's not production-ready, as it keeps local state (the `magicKey`) and it's not horizontally scalable (we don't want to flood our provider, right?). One way of improving it would be storing the `magicKey` somewhere else (perhaps a cache database?).
 
 The keywords here were [Decorators](/docs/latest/Reference/Decorators/), [Hooks](/docs/latest/Reference/Hooks/), and [Plugins](/docs/latest/Reference/Plugins/). Combining what Fastify has to offer can lead to very ingenious and creative solutions to a wide variety of problems. Let's be creative! :)
+

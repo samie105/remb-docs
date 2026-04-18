@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:46:10.338Z"
 content_hash: "2eae00bc8ec71b6cde89d26439639544f6a10d32cfaec1c4cdccf20350862c05"
 menu_path: ["No static path found for requested path."]
 section_path: []
+nav_prev: {"path": "astro/en/reference/errors/no-matching-renderer/index.md", "title": "No matching renderer found."}
+nav_next: {"path": "astro/en/reference/errors/no-prerendered-routes-with-domains/index.md", "title": "Prerendered routes aren't supported when internationalization domains are enabled."}
 ---
+
 # No static path found for requested path.
 
 > **NoMatchingStaticPathFound**: A `getStaticPaths()` route pattern was matched, but no matching static path was found for requested path `PATH_NAME`.
@@ -25,3 +28,4 @@ A [dynamic route](/en/guides/routing/#dynamic-routes) was matched, but no corres
 *   [getStaticPaths()](/en/reference/routing-reference/#getstaticpaths)
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

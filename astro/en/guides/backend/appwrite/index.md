@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:32:28.543Z"
 content_hash: "023df2f5e1bd5ae6ccda7e9534379f6c2baf7c1e62e90417fc79549c0a63eb7f"
 menu_path: ["Appwrite & Astro"]
 section_path: []
+nav_prev: {"path": "astro/en/guides/backend/index.md", "title": "Use a backend service with Astro"}
+nav_next: {"path": "astro/en/guides/backend/firebase/index.md", "title": "Firebase & Astro"}
 ---
+
 # Appwrite & Astro
 
 [Appwrite](https://appwrite.io/) is a self-hosted backend-as-a-service platform that provides authentication and account management, user preferences, database and storage persistence, cloud functions, localization, image manipulation, and other server-side utilities.
@@ -60,3 +63,4 @@ section_path: []
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

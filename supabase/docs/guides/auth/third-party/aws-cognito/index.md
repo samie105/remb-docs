@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:55:05.749Z"
 content_hash: "b3aadcf89c42c059d3e0a7f411810911158d0ea97d3112927e4980bb9bb4f85b"
 menu_path: ["Auth","Auth","Third-party auth","Third-party auth","AWS Cognito (Amplify)","AWS Cognito (Amplify)"]
 section_path: ["Auth","Auth","Third-party auth","Third-party auth","AWS Cognito (Amplify)","AWS Cognito (Amplify)"]
+nav_prev: {"path": "supabase/docs/guides/auth/social-login/auth-zoom/index.md", "title": "Login with Zoom"}
+nav_next: {"path": "supabase/docs/guides/auth/third-party/auth0/index.md", "title": "Auth0"}
 ---
+
 # 
 
 Amazon Cognito (Amplify)
@@ -56,3 +59,4 @@ A recommended approach to do this is to configure a [Pre-Token Generation Trigge
 ```
 1export const handler = async (event) => {2  event.response = {3    claimsOverrideDetails: {4      claimsToAddOrOverride: {5        role: 'authenticated',6      },7    },8  }910  return event11}
 ```
+

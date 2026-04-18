@@ -9,15 +9,9 @@ last_crawled_at: "2026-04-18T17:08:56.671Z"
 content_hash: "726c6140c78e52ba449fa2b89ceab56fb74fc56b3769f3b359bebb023b772733"
 menu_path: ["backdrop-filter"]
 section_path: []
+nav_prev: {"path": "tailwind/docs/filter-sepia/index.md", "title": "filter: sepia()"}
+nav_next: {"path": "tailwind/docs/backdrop-filter-blur/index.md", "title": "backdrop-filter: blur()"}
 ---
-[](/)
-
-[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
-
-1.  Filters
-2.  backdrop-filter
-
-Filters
 
 # backdrop-filter
 
@@ -132,3 +126,4 @@ Make your ideas look awesome, without relying on a designer.
 ](https://www.refactoringui.com/?ref=sidebar)
 
 Copyright © 2026 Tailwind Labs Inc.·[Trademark Policy](/brand)
+

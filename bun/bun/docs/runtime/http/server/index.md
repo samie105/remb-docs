@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:00:15.619Z"
 content_hash: "8b69a7fa30f7d13d0f8712ad6b852deb73a56c9c287195a6c6fe62c8e75c103a"
 menu_path: ["Server"]
 section_path: []
+nav_prev: {"path": "bun/bun/docs/runtime/http/tls/index.md", "title": "TLS"}
+nav_next: {"path": "bun/bun/docs/runtime/http/websockets/index.md", "title": "WebSockets"}
 ---
+
 ## Basic Setup
 
 ![https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z\_zHyy/icons/typescript.svg?fit=max&auto=format&n=JUhaF6Mf68z\_zHyy&q=85&s=7ac549adaea8d5487d8fbd58cc3ea35b](https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z_zHyy/icons/typescript.svg?fit=max&auto=format&n=JUhaF6Mf68z_zHyy&q=85&s=7ac549adaea8d5487d8fbd58cc3ea35b)index.ts
@@ -71,7 +74,7 @@ Bun.serve({
 });
 ```
 
-HTML imports don’t just serve HTML — it’s a full-featured frontend bundler, transpiler, and toolkit built using Bun’s [bundler](https://bun.com/docs/bundler), JavaScript transpiler and CSS parser. You can use this to build full-featured frontends with React, TypeScript, Tailwind CSS, and more. For a complete guide on building full-stack applications with HTML imports, including detailed examples and best practices, see [/docs/bundler/fullstack](https://bun.com/docs/bundler/fullstack).
+HTML imports don’t just serve HTML — it’s a full-featured frontend bundler, transpiler, and toolkit built using Bun’s [bundler](bun/bun/docs/bundler/index.md), JavaScript transpiler and CSS parser. You can use this to build full-featured frontends with React, TypeScript, Tailwind CSS, and more. For a complete guide on building full-stack applications with HTML imports, including detailed examples and best practices, see [/docs/bundler/fullstack](bun/bun/docs/bundler/fullstack/index.md).
 
 * * *
 
@@ -607,3 +610,4 @@ interface TLSOptions {
   serverName?: string;
 }
 ```
+

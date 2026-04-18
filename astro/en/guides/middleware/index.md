@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:40:32.596Z"
 content_hash: "63ff61881067e6689890f0e8cb56e85f601406dc78327246c2cbc71101688fd7"
 menu_path: ["Middleware"]
 section_path: []
+nav_prev: {"path": "astro/en/guides/endpoints/index.md", "title": "Endpoints"}
+nav_next: {"path": "astro/en/guides/internationalization/index.md", "title": "Internationalization (i18n) Routing"}
 ---
+
 # Middleware
 
 **Middleware** allows you to intercept requests and responses and inject behaviors dynamically every time a page or endpoint is about to be rendered. This rendering occurs at build time for all prerendered pages, but occurs when the route is requested for pages rendered on demand, making [additional SSR features like cookies and headers](/en/guides/on-demand-rendering/#on-demand-rendering-features) available.
@@ -171,3 +174,4 @@ Middleware will attempt to run for all on-demand rendered pages, even when a mat
 Middleware will also attempt to run before serving a 500 error page, including a custom 500 page, unless the server error occurred in the execution of the middleware itself. If your middleware does not run successfully, then you will not have access to `Astro.locals` to render your 500 page.
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

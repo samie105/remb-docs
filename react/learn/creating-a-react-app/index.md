@@ -9,10 +9,13 @@ last_crawled_at: "2026-04-18T16:32:58.802Z"
 content_hash: "f521d1d552b47fca9f873007b22ad835dc347b2faaaab2b65fd5e2fac3699281"
 menu_path: ["Creating a React App"]
 section_path: []
+nav_prev: {"path": "react/learn/installation/index.md", "title": "Installation"}
+nav_next: {"path": "react/learn/build-a-react-app-from-scratch/index.md", "title": "Build a React app from Scratch"}
 ---
+
 If you want to build a new app or website with React, we recommend starting with a framework.
 
-If your app has constraints not well-served by existing frameworks, you prefer to build your own framework, or you just want to learn the basics of a React app, you can [build a React app from scratch](https://react.dev/learn/build-a-react-app-from-scratch).
+If your app has constraints not well-served by existing frameworks, you prefer to build your own framework, or you just want to learn the basics of a React app, you can [build a React app from scratch](react/learn/build-a-react-app-from-scratch/index.md).
 
 ## Full-stack frameworks[](#full-stack-frameworks "Link for Full-stack frameworks ")
 
@@ -99,8 +102,9 @@ If your app has constraints not well-served by existing frameworks, you prefer t
 
 Starting from scratch gives you more flexibility, but does require that you make choices on which tools to use for routing, data fetching, and other common usage patterns. It’s a lot like building your own framework, instead of using a framework that already exists. The [frameworks we recommend](#full-stack-frameworks) have built-in solutions for these problems.
 
-If you want to build your own solutions, see our guide to [build a React app from Scratch](https://react.dev/learn/build-a-react-app-from-scratch) for instructions on how to set up a new React project starting with a build tool like [Vite](https://vite.dev/), [Parcel](https://parceljs.org/), or [RSbuild](https://rsbuild.dev/).
+If you want to build your own solutions, see our guide to [build a React app from Scratch](react/learn/build-a-react-app-from-scratch/index.md) for instructions on how to set up a new React project starting with a build tool like [Vite](https://vite.dev/), [Parcel](https://parceljs.org/), or [RSbuild](https://rsbuild.dev/).
 
 * * *
 
 _If you’re a framework author interested in being included on this page, [please let us know](https://github.com/reactjs/react.dev/issues/new?assignees=&labels=type%3A+framework&projects=&template=3-framework.yml&title=%5BFramework%5D%3A+)._
+

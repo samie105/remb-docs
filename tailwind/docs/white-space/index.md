@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:59:43.829Z"
 content_hash: "7ec837ba0b65b8a493623c7aa5bf890809338c4b57328170dd572a63d1c2d60e"
 menu_path: ["white-space"]
 section_path: []
+nav_prev: {"path": "tailwind/docs/vertical-align/index.md", "title": "vertical-align"}
+nav_next: {"path": "tailwind/docs/word-break/index.md", "title": "word-break"}
 ---
+
 Utilities for controlling an element's white-space property.
 
 Class
@@ -110,4 +113,5 @@ Prefix a `white-space` utility with a breakpoint variant like `md:` to only appl
 <p class="whitespace-pre md:whitespace-normal ...">  Lorem ipsum dolor sit amet...</p>
 ```
 
-Learn more about using variants in the [variants documentation](https://tailwindcss.com/docs/hover-focus-and-other-states).
+Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).
+

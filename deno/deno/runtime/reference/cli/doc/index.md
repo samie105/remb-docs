@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:52:36.923Z"
 content_hash: "da5fea3b454ad50f9049cb36628f51b354209062e2791c9087c42cfac8565d4f"
 menu_path: ["deno doc"]
 section_path: []
+nav_prev: {"path": "deno/deno/runtime/reference/cli/deploy/index.md", "title": "deno deploy"}
+nav_next: {"path": "deno/deno/runtime/reference/cli/eval/index.md", "title": "deno eval"}
 ---
+
 On this page
 
 *   [Examples](#examples)
@@ -288,3 +291,4 @@ Remove trailing .html from various links. Will still generate files with a .html
 `--symbol-redirect-map`<symbol-redirect-map>
 
 Path to a JSON file keyed by file, with an inner map of symbol to an external link.
+

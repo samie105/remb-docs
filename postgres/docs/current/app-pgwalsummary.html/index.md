@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:46:13.425Z"
 content_hash: "9b720d747c9961c0a0987db7904482e22cb5fed26dab3c2c7cbb10bd7fb0dea4"
 menu_path: ["PostgreSQL: Documentation: 18: pg_walsummary"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/ddl-default.html/index.md", "title": "PostgreSQL: Documentation: 18: 5.2.\u00a0Default Values"}
+nav_next: {"path": "postgres/docs/current/catalog-pg-namespace.html/index.md", "title": "PostgreSQL: Documentation: 18: 52.32.\u00a0pg_namespace"}
 ---
+
 pg\_walsummary — print contents of WAL summary files
 
 ## Synopsis
@@ -47,3 +50,4 @@ Shows help about pg\_walsummary command line arguments, and exits.
 ## Environment
 
 The environment variable `PG_COLOR` specifies whether to use color in diagnostic messages. Possible values are `always`, `auto` and `never`.
+

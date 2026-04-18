@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:45:05.598Z"
 content_hash: "fd26286804c82bf990de90084a3f4e703f3cc4b3754a2bfd30721cc1869b42f5"
 menu_path: ["PostgreSQL: Documentation: 18: 55.4. Miscellaneous Coding Conventions"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/sql-createrule.html/index.md", "title": "PostgreSQL: Documentation: 18: CREATE RULE"}
+nav_next: {"path": "postgres/docs/current/predefined-roles.html/index.md", "title": "PostgreSQL: Documentation: 18: 21.5.\u00a0Predefined Roles"}
 ---
+
 ### C Standard [#](#SOURCE-CONVENTIONS-C-STANDARD)
 
 Code in PostgreSQL should only rely on language features available in the C99 standard. That means a conforming C99 compiler has to be able to compile postgres, at least aside from a few platform dependent pieces.
@@ -67,3 +70,4 @@ For clarity, it is preferred to explicitly dereference a function pointer when c
 (even though `emit_log_hook(edata)` would also work). When the function pointer is part of a structure, then the extra punctuation can and usually should be omitted, for example:
 
 paramInfo->paramFetch(paramInfo, paramId);
+

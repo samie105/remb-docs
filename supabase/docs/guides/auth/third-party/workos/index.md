@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:55:15.823Z"
 content_hash: "f2c89900cc4ded373ab87daa8c099f59d424c6ed9c8d6675d3f9f62d59a85095"
 menu_path: ["Auth","Auth","Third-party auth","Third-party auth","WorkOS","WorkOS"]
 section_path: ["Auth","Auth","Third-party auth","Third-party auth","WorkOS","WorkOS"]
+nav_prev: {"path": "supabase/docs/guides/auth/third-party/overview/index.md", "title": "Third-party auth"}
+nav_next: {"path": "supabase/docs/guides/auth/third-party/firebase-auth/index.md", "title": "Firebase Auth"}
 ---
+
 # 
 
 WorkOS
@@ -49,3 +52,4 @@ This template overrides the `role` claim to meet Supabase's expectations, and ad
 ```
 1{2  "role": "authenticated",3  "user_role": {{organization_membership.role}}4}
 ```
+

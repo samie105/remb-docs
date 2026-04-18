@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:41:57.739Z"
 content_hash: "fba31522561ac64fe29cddee2bc1556f7cd49875e2b7ec7c0219a75e6bec7d03"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Redis Data Integration","→","Redis Data Integration","→\n      \n        Data pipelines","→","Data pipelines","→\n      \n        Prepare source databases","→","Prepare source databases","→\n      \n        Prepare AWS RDS and Aurora databases for RDI","→","Prepare AWS RDS and Aurora databases for RDI","→\n      \n        Prepare AWS Aurora PostgreSQL/AWS RDS PostgreSQL for RDI","→","Prepare AWS Aurora PostgreSQL/AWS RDS PostgreSQL for RDI"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Redis Data Integration","→","Redis Data Integration","→\n      \n        Data pipelines","→","Data pipelines","→\n      \n        Prepare source databases","→","Prepare source databases","→\n      \n        Prepare AWS RDS and Aurora databases for RDI","→","Prepare AWS RDS and Aurora databases for RDI","→\n      \n        Prepare AWS Aurora PostgreSQL/AWS RDS PostgreSQL for RDI","→","Prepare AWS Aurora PostgreSQL/AWS RDS PostgreSQL for RDI"]
+nav_prev: {"path": "redis/docs/latest/develop/reference/modules/modules-native-types/index.md", "title": "Modules API for native types"}
+nav_next: {"path": "redis/docs/latest/operate/oss_and_stack/management/optimization/memory-optimization/index.md", "title": "Memory optimization"}
 ---
+
 # Prepare AWS Aurora PostgreSQL/AWS RDS PostgreSQL for RDI
 
 Prepare AWS Aurora PostgreSQL databases to work with RDI
@@ -130,3 +133,4 @@ The Debezium connector needs a user account to connect to PostgreSQL. This user 
     
 
 ## On this page
+

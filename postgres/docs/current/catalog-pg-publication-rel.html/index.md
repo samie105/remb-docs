@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:51:34.374Z"
 content_hash: "b73caca4062c7cc81986ce3f21cd0e48568d1a568134d3927f5d71fff0923a3e"
 menu_path: ["PostgreSQL: Documentation: 18: 52.42. pg_publication_rel"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/docguide-toolsets.html/index.md", "title": "PostgreSQL: Documentation: 18: J.2.\u00a0Tool Sets"}
+nav_next: {"path": "postgres/docs/current/sql-createpolicy.html/index.md", "title": "PostgreSQL: Documentation: 18: CREATE POLICY"}
 ---
+
 Development Versions: [devel](https://www.postgresql.org/docs/devel/catalog-pg-publication-rel.html "PostgreSQL devel - 52.42. pg_publication_rel")
 
 The catalog `pg_publication_rel` contains the mapping between relations and publications in the database. This is a many-to-many mapping. See also [Section 53.18](https://www.postgresql.org/docs/current/view-pg-publication-tables.html "53.18. pg_publication_tables") for a more user-friendly view of this information.
@@ -39,3 +42,4 @@ Expression tree (in `nodeToString()` representation) for the relation's publicat
 `prattrs` `int2vector` (references [`pg_attribute`](https://www.postgresql.org/docs/current/catalog-pg-attribute.html "52.7. pg_attribute").`attnum`)
 
 This is an array of values that indicates which table columns are part of the publication. For example, a value of `1 3` would mean that the first and the third table columns are published. A null value indicates that all columns are published.
+

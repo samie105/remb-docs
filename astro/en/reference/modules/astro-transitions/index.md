@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:47:55.441Z"
 content_hash: "4f2828a0393a48c4f5e61b15dbab16e23755709f074457cd187efdd8297689d5"
 menu_path: ["View Transitions Router API Reference"]
 section_path: []
+nav_prev: {"path": "astro/en/reference/modules/astro-static-paths/index.md", "title": "Static Paths API Reference"}
+nav_next: {"path": "astro/en/reference/modules/astro-zod/index.md", "title": "Zod API Reference"}
 ---
+
 # View Transitions Router API Reference
 
 **Added in:** `astro@3.0.0`
@@ -649,3 +652,4 @@ Calls the default document swap logic. By default, this implementation will call
 Read more about [building a custom swap function](/en/guides/view-transitions/#building-a-custom-swap-function) in the View Transitions guide.
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

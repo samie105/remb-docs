@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:59:57.635Z"
 content_hash: "0a986bdc65b5b83237108a8757542a50c83345c7e228d278996acf72cd9f5544"
 menu_path: ["@std/async"]
 section_path: []
+nav_prev: {"path": "deno/deno/runtime/reference/std/assert/index.md", "title": "Standard Assertions (@std/assert)"}
+nav_next: {"path": "deno/deno/runtime/reference/std/bytes/index.md", "title": "@std/bytes"}
 ---
+
 On this page
 
 *   [Overview](#overview)
@@ -34,3 +37,4 @@ deno add jsr:@std/async
 ```
 
 [See all symbols in @std/async on](https://jsr.io/@std/async/doc)
+

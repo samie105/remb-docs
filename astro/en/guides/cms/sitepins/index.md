@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:35:18.605Z"
 content_hash: "58ba79fb9fdeaa0da0cf37e9ccee76e605cd05e2ecc81b5de17259bd23d9ca11"
 menu_path: ["Sitepins & Astro"]
 section_path: []
+nav_prev: {"path": "astro/en/guides/cms/sitecore/index.md", "title": "Sitecore Experience Manager & Astro"}
+nav_next: {"path": "astro/en/guides/cms/spinal/index.md", "title": "Spinal & Astro"}
 ---
+
 # Sitepins & Astro
 
 [Sitepins](https://sitepins.com) is a Git-based, headless CMS for websites built with modern frameworks like Astro. It offers a clean WYSIWYG editor, a version-controlled content workflow, and seamless integration with Astro and other SSGs.
@@ -218,3 +221,4 @@ Once connected, Sitepins will sync your content from the selected folder and pro
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

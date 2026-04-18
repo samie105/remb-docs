@@ -9,12 +9,15 @@ last_crawled_at: "2026-04-18T16:45:19.752Z"
 content_hash: "c1ca9e136e7b916668c2e1cfba864bbbee1efb6cc349f610737000b61e03e0bf"
 menu_path: ["Create custom Prisma Client queries"]
 section_path: []
+nav_prev: {"path": "prisma/docs/orm/prisma-client/client-extensions/type-utilities/index.md", "title": "Type utilities"}
+nav_next: {"path": "prisma/docs/orm/prisma-client/debugging-and-troubleshooting/debugging/index.md", "title": "Debugging"}
 ---
-You can use the `query` [Prisma Client extensions](https://www.prisma.io/docs/orm/prisma-client/client-extensions) component type to hook into the query life-cycle and modify an incoming query or its result.
 
-You can use Prisma Client extensions `query` component to create independent clients with customized behavior. You can bind one client to a specific filter or user, and another client to another filter or user. For example, you might do this to get [user isolation](https://www.prisma.io/docs/orm/prisma-client/client-extensions#extended-clients) in a row-level security (RLS) extension. The `query` extension component provides end-to-end type safety for all your custom queries.
+You can use the `query` [Prisma Client extensions](prisma/docs/orm/prisma-client/client-extensions/index.md) component type to hook into the query life-cycle and modify an incoming query or its result.
 
-Use the `$extends` [client-level method](https://www.prisma.io/docs/orm/reference/prisma-client-reference#client-methods) to create an [extended client](https://www.prisma.io/docs/orm/prisma-client/client-extensions#about-prisma-client-extensions). An extended client is a variant of the standard Prisma Client that is wrapped by one or more extensions.
+You can use Prisma Client extensions `query` component to create independent clients with customized behavior. You can bind one client to a specific filter or user, and another client to another filter or user. For example, you might do this to get [user isolation](prisma/docs/orm/prisma-client/client-extensions/index.md#extended-clients) in a row-level security (RLS) extension. The `query` extension component provides end-to-end type safety for all your custom queries.
+
+Use the `$extends` [client-level method](prisma/docs/orm/reference/prisma-client-reference/index.md#client-methods) to create an [extended client](prisma/docs/orm/prisma-client/client-extensions/index.md#about-prisma-client-extensions). An extended client is a variant of the standard Prisma Client that is wrapped by one or more extensions.
 
 Use the `query` extension component to modify queries. You can modify a custom query in the following:
 
@@ -43,7 +46,7 @@ The properties are as follows:
 
 ### [Modify a specific operation in a specific model](#modify-a-specific-operation-in-a-specific-model)
 
-The `query` object can contain functions that map to the names of the [Prisma Client operations](https://www.prisma.io/docs/orm/reference/prisma-client-reference#model-queries), such as `findUnique()`, `findFirst`, `findMany`, `count`, and `create`. The following example modifies `user.findMany` to a use a customized query that finds only users who are older than 18 years:
+The `query` object can contain functions that map to the names of the [Prisma Client operations](prisma/docs/orm/reference/prisma-client-reference/index.md#model-queries), such as `findUnique()`, `findFirst`, `findMany`, `count`, and `create`. The following example modifies `user.findMany` to a use a customized query that finds only users who are older than 18 years:
 
 ```
 const prisma = new PrismaClient().$extends({
@@ -135,7 +138,7 @@ const prisma = new PrismaClient().$extends({
 });
 ```
 
-In the event a [raw query](https://www.prisma.io/docs/orm/prisma-client/using-raw-sql/raw-queries) is invoked, the `model` argument passed to the callback will be `undefined`.
+In the event a [raw query](prisma/docs/orm/prisma-client/using-raw-sql/raw-queries/index.md) is invoked, the `model` argument passed to the callback will be `undefined`.
 
 For example, you can use the `$allOperations` method to log queries as follows:
 
@@ -204,7 +207,7 @@ const prisma = new PrismaClient().$extends({
 });
 ```
 
-You can wrap your extended queries into a [batch transaction](https://www.prisma.io/docs/orm/prisma-client/queries/transactions). For example, you can use this to enact row-level security (RLS).
+You can wrap your extended queries into a [batch transaction](prisma/docs/orm/prisma-client/queries/transactions/index.md). For example, you can use this to enact row-level security (RLS).
 
 The following example extends `findFirst` so that it runs in a batch transaction.
 
@@ -224,3 +227,4 @@ const transactionExtension = Prisma.defineExtension((prisma) =>
 );
 const prisma = new PrismaClient().$extends(transactionExtension);
 ```
+

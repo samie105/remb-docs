@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:58:49.415Z"
 content_hash: "a5f757342383ee9b5a7d1a19ec2438ef4f8a91dd27fca93e0babf92de2f0362e"
 menu_path: ["Start with Supabase","Start with Supabase","Mobile tutorials","Mobile tutorials","Flutter","Flutter"]
 section_path: ["Start with Supabase","Start with Supabase","Mobile tutorials","Mobile tutorials","Flutter","Flutter"]
+nav_prev: {"path": "supabase/docs/guides/getting-started/tutorials/with-expo-react-native/index.md", "title": "Build a User Management App with Expo React Native"}
+nav_next: {"path": "supabase/docs/guides/getting-started/tutorials/with-ionic-react/index.md", "title": "Build a User Management App with Ionic React"}
 ---
+
 # 
 
 Build a User Management App with Flutter
@@ -206,3 +209,4 @@ Congratulations, you've built a fully functional user management app using Flutt
 
 *   [Flutter Tutorial: building a Flutter chat app](/blog/flutter-tutorial-building-a-chat-app)
 *   [Flutter Tutorial - Part 2: Authentication and Authorization with RLS](/blog/flutter-authentication-and-authorization-with-rls)
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:35:29.559Z"
 content_hash: "71ed529d3090b48cda2861cdeda24ed4ce0742113ae45ec748eb6c4577039cdd"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Client tools","→","Client tools","→\n      \n        Redis Insight","→","Redis Insight","→\n      \n        Redis Insight release notes","→","Redis Insight release notes","→\n      \n        RedisInsight v2.24.0, April 2023","→","RedisInsight v2.24.0, April 2023"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Client tools","→","Client tools","→\n      \n        Redis Insight","→","Redis Insight","→\n      \n        Redis Insight release notes","→","Redis Insight release notes","→\n      \n        RedisInsight v2.24.0, April 2023","→","RedisInsight v2.24.0, April 2023"]
+nav_prev: {"path": "redis/docs/latest/develop/tools/insight/release-notes/v2.28.0/index.md", "title": "RedisInsight v2.28.0, June 2023"}
+nav_next: {"path": "redis/docs/latest/develop/tools/insight/release-notes/v.2.22.1/index.md", "title": "RedisInsight v2.22.1, March 2023"}
 ---
+
 # RedisInsight v2.24.0, April 2023
 
 RedisInsight v2.24
@@ -43,3 +46,4 @@ This is the General Availability (GA) release of RedisInsight 2.24.
 *   [#1999](https://github.com/RedisInsight/RedisInsight/pull/1999) Keep the previously set database index when a database connection is edited.
 
 ## On this page
+

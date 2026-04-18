@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:59:05.762Z"
 content_hash: "d12c6caaeba0c80c83961f011149b1caf11df6804aa53c26c04e3fe8495da93f"
 menu_path: ["Start with Supabase","Start with Supabase","Web app demos","Web app demos","Nuxt 3","Nuxt 3"]
 section_path: ["Start with Supabase","Start with Supabase","Web app demos","Web app demos","Nuxt 3","Nuxt 3"]
+nav_prev: {"path": "supabase/docs/guides/getting-started/tutorials/with-kotlin/index.md", "title": "Build a Product Management Android App with Jetpack Compose"}
+nav_next: {"path": "supabase/docs/guides/getting-started/tutorials/with-react/index.md", "title": "Build a User Management App with React"}
 ---
+
 # 
 
 Build a User Management App with Nuxt 3
@@ -167,3 +170,4 @@ And then we can add the widget to the Account page:
 ```
 
 That is it! You should now be able to upload a profile photo to Supabase Storage and you have a fully functional application.
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:32:45.519Z"
 content_hash: "fb820ecf2bbf1f06676a83e8027d0ef31d2a7e0708a7d53a34abeebfc407625b"
 menu_path: ["arktype"]
 section_path: []
+nav_prev: {"path": "drizzle/docs/typebox/index.md", "title": "typebox"}
+nav_next: {"path": "drizzle/docs/typebox-legacy/index.md", "title": "typebox-legacy"}
 ---
+
 WARNING
 
 Starting from `drizzle-orm@1.0.0-beta.15`, `drizzle-arktype` has been deprecated in favor of first-class schema generation support within Drizzle ORM itself
@@ -509,3 +512,4 @@ pg.dataType().array(...);
 // Schema
 baseDataTypeSchema.array().exactlyLength(size);
 ```
+

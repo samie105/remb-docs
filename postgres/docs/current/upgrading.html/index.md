@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:54:32.186Z"
 content_hash: "f3af3dfc97e79992a0e15b0ee8b37132f0694a82fbc4d170dc95cae9a004e3de"
 menu_path: ["PostgreSQL: Documentation: 18: 18.6. Upgrading a PostgreSQL Cluster"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/hash-index.html/index.md", "title": "PostgreSQL: Documentation: 18: 65.6.\u00a0Hash Indexes"}
+nav_next: {"path": "postgres/docs/current/tutorial-delete.html/index.md", "title": "PostgreSQL: Documentation: 18: 2.9.\u00a0Deletions"}
 ---
+
 This section discusses how to upgrade your database data from one PostgreSQL release to a newer one.
 
 Current PostgreSQL version numbers consist of a major and a minor version number. For example, in the version number 10.1, the 10 is the major version number and the 1 is the minor version number, meaning this would be the first minor release of the major release 10. For releases before PostgreSQL version 10.0, version numbers consist of three numbers, for example, 9.5.3. In those cases, the major version consists of the first two digit groups of the version number, e.g., 9.5, and the minor version is the third number, e.g., 3, meaning this would be the third minor release of the major release 9.5.
@@ -108,3 +111,4 @@ The [pg\_upgrade](https://www.postgresql.org/docs/current/pgupgrade.html "pg_upg
 It is also possible to use logical replication methods to create a standby server with the updated version of PostgreSQL. This is possible because logical replication supports replication between different major versions of PostgreSQL. The standby can be on the same computer or a different computer. Once it has synced up with the primary server (running the older version of PostgreSQL), you can switch primaries and make the standby the primary and shut down the older database instance. Such a switch-over results in only several seconds of downtime for an upgrade.
 
 This method of upgrading can be performed using the built-in logical replication facilities as well as using external logical replication systems such as pglogical, Slony, Londiste, and Bucardo.
+

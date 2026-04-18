@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:41:24.211Z"
 content_hash: "e795b6965c4c6a042f1eac7e4903d482ac147752fcffb4aaae6df4b90d79b309"
 menu_path: ["Server islands"]
 section_path: []
+nav_prev: {"path": "astro/en/guides/on-demand-rendering/index.md", "title": "On-demand rendering"}
+nav_next: {"path": "astro/en/guides/actions/index.md", "title": "Actions"}
 ---
+
 # Server islands
 
 Server islands allow you to on-demand render dynamic or personalized “islands” individually, without sacrificing the performance of the rest of the page.
@@ -123,3 +126,4 @@ astro create-key
 Use this value to configure the `ASTRO_KEY` environment variable (e.g. in a `.env` file) and include it in your CI/CD or host’s build settings. This ensures the same key is always reused in the generated bundle so that encryption and decryption remain in sync.
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

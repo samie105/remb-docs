@@ -9,15 +9,9 @@ last_crawled_at: "2026-04-18T16:45:48.245Z"
 content_hash: "5066203fc7b0b32925d4b633b50dbc892e28b4a170f5e9bc4e95e3e65d6d5413"
 menu_path: ["flex-direction"]
 section_path: []
+nav_prev: {"path": "tailwind/docs/flex-basis/index.md", "title": "flex-basis"}
+nav_next: {"path": "tailwind/docs/flex-wrap/index.md", "title": "flex-wrap"}
 ---
-[](/)
-
-[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
-
-1.  Flexbox & Grid
-2.  flex-direction
-
-Flexbox & Grid
 
 # flex-direction
 
@@ -132,3 +126,4 @@ Short, tactical video lessons from the creator of Tailwind CSS, delivered direct
 [Get the free course](/build-uis-that-dont-suck)
 
 Copyright © 2026 Tailwind Labs Inc.·[Trademark Policy](/brand)
+

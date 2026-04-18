@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:59:37.675Z"
 content_hash: "090f49a08db745f2be0dcdfd1ed94dce8ab589c99e9f1cafdf56d361a845976b"
 menu_path: ["File System Router"]
 section_path: []
+nav_prev: {"path": "bun/bun/docs/runtime/file-io/index.md", "title": "File I/O"}
+nav_next: {"path": "bun/bun/docs/runtime/glob/index.md", "title": "Glob"}
 ---
+
 This API is primarily intended for library authors. At the moment only Next.js-style file-system routing is supported, but other styles may be added in the future.
 
 ## Next.js-style
@@ -125,3 +128,4 @@ interface Bun {
   }
 }
 ```
+

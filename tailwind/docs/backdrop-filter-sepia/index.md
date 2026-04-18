@@ -9,15 +9,9 @@ last_crawled_at: "2026-04-18T17:10:44.497Z"
 content_hash: "4c72be81f2b3e32e4440fc9c5afdbe78a4d3e034f38e6fd3243b2344ffef9155"
 menu_path: ["backdrop-filter: sepia()"]
 section_path: []
+nav_prev: {"path": "tailwind/docs/backdrop-filter-saturate/index.md", "title": "backdrop-filter: saturate()"}
+nav_next: {"path": "tailwind/docs/border-collapse/index.md", "title": "border-collapse"}
 ---
-[](/)
-
-[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
-
-1.  Filters
-2.  sepia
-
-Filters
 
 # backdrop-filter: sepia()
 
@@ -110,3 +104,4 @@ Short, tactical video lessons from the creator of Tailwind CSS, delivered direct
 [Get the free course](/build-uis-that-dont-suck)
 
 Copyright © 2026 Tailwind Labs Inc.·[Trademark Policy](/brand)
+

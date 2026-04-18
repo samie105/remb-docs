@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:17:28.680Z"
 content_hash: "3ed04e69e58d3dc2d884d59c345ab620bf0ec6583ebeed49f0c273454f8a97ad"
 menu_path: ["Drizzle migrations fundamentals"]
 section_path: []
+nav_prev: {"path": "drizzle/docs/data-querying/index.md", "title": "Drizzle Queries + CRUD"}
+nav_next: {"path": "drizzle/docs/get-started-postgresql/index.md", "title": "Drizzle <> PostgreSQL"}
 ---
+
 ## Drizzle migrations fundamentals
 
 SQL databases require you to specify a **strict schema** of entities you’re going to store upfront and if (when) you need to change the shape of those entities - you will need to do it via **schema migrations**.
@@ -22,7 +25,7 @@ There’re multiple production grade ways of managing database migrations. Drizz
 
 #### How can Drizzle help?[](#how-can-drizzle-help)
 
-We’ve built [**drizzle-kit**](https://orm.drizzle.team/docs/kit-overview) - CLI app for managing migrations with Drizzle.
+We’ve built [**drizzle-kit**](drizzle/docs/kit-overview/index.md) - CLI app for managing migrations with Drizzle.
 
 ```
 drizzle-kit migrate
@@ -47,7 +50,7 @@ It fits in both database and codebase first approaches, it lets you **push your 
 
 Expand details
 
-That’s a **database first** approach. You have your database schema as a **source of truth** and Drizzle lets you pull database schema to TypeScript using [`drizzle-kit pull`](https://orm.drizzle.team/docs/drizzle-kit-pull) command.
+That’s a **database first** approach. You have your database schema as a **source of truth** and Drizzle lets you pull database schema to TypeScript using [`drizzle-kit pull`](drizzle/docs/drizzle-kit-pull/index.md) command.
 
 ```
                                   ┌────────────────────────┐      ┌─────────────────────────┐ 
@@ -80,7 +83,7 @@ export const users = p.pgTable("users", {
 
 Expand details
 
-That’s a **codebase first** approach. You have your TypeScript Drizzle schema as a **source of truth** and Drizzle lets you push schema changes to the database using [`drizzle-kit push`](https://orm.drizzle.team/docs/drizzle-kit-push) command.
+That’s a **codebase first** approach. You have your TypeScript Drizzle schema as a **source of truth** and Drizzle lets you push schema changes to the database using [`drizzle-kit push`](drizzle/docs/drizzle-kit-push/index.md) command.
 
 That’s the best approach for rapid prototyping and we’ve seen dozens of teams and solo developers successfully using it as a primary migrations flow in their production applications.
 
@@ -122,7 +125,7 @@ Add column to `users` table
 
 Expand details
 
-That’s a **codebase first** approach. You have your TypeScript Drizzle schema as a source of truth and Drizzle lets you generate SQL migration files based on your schema changes with [`drizzle-kit generate`](https://orm.drizzle.team/docs/drizzle-kit-generate) and then apply them to the database with [`drizzle-kit migrate`](https://orm.drizzle.team/docs/drizzle-kit-migrate) commands.
+That’s a **codebase first** approach. You have your TypeScript Drizzle schema as a source of truth and Drizzle lets you generate SQL migration files based on your schema changes with [`drizzle-kit generate`](drizzle/docs/drizzle-kit-generate/index.md) and then apply them to the database with [`drizzle-kit migrate`](drizzle/docs/drizzle-kit-migrate/index.md) commands.
 
 ```
 import * as p from "drizzle-orm/pg-core";
@@ -181,7 +184,7 @@ CREATE TABLE "users" (
 
 Expand details
 
-That’s a **codebase first** approach. You have your TypeScript Drizzle schema as a source of truth and Drizzle lets you generate SQL migration files based on your schema changes with [`drizzle-kit generate`](https://orm.drizzle.team/docs/drizzle-kit-generate) and then you can apply them to the database during runtime of your application.
+That’s a **codebase first** approach. You have your TypeScript Drizzle schema as a source of truth and Drizzle lets you generate SQL migration files based on your schema changes with [`drizzle-kit generate`](drizzle/docs/drizzle-kit-generate/index.md) and then you can apply them to the database during runtime of your application.
 
 This approach is widely used for **monolithic** applications when you apply database migrations during zero downtime deployment and rollback DDL changes if something fails. This is also used in **serverless** deployments with migrations running in **custom resource** once during deployment process.
 
@@ -253,7 +256,7 @@ await migrate(db);
 
 Expand details
 
-That’s a **codebase first** approach. You have your TypeScript Drizzle schema as a source of truth and Drizzle lets you generate SQL migration files based on your schema changes with [`drizzle-kit generate`](https://orm.drizzle.team/docs/drizzle-kit-generate) and then you can apply them to the database either directly or via external migration tools.
+That’s a **codebase first** approach. You have your TypeScript Drizzle schema as a source of truth and Drizzle lets you generate SQL migration files based on your schema changes with [`drizzle-kit generate`](drizzle/docs/drizzle-kit-generate/index.md) and then you can apply them to the database either directly or via external migration tools.
 
 ```
 import * as p from "drizzle-orm/pg-core";
@@ -322,7 +325,7 @@ CREATE TABLE "users" (
 
 Expand details
 
-That’s a **codebase first** approach. You have your TypeScript Drizzle schema as a source of truth and Drizzle lets you export SQL statements based on your schema changes with [`drizzle-kit export`](https://orm.drizzle.team/docs/drizzle-kit-generate) and then you can apply them to the database via [Atlas](https://atlasgo.io/guides/orms/drizzle) or other external SQL migration tools.
+That’s a **codebase first** approach. You have your TypeScript Drizzle schema as a source of truth and Drizzle lets you export SQL statements based on your schema changes with [`drizzle-kit export`](drizzle/docs/drizzle-kit-generate/index.md) and then you can apply them to the database via [Atlas](https://atlasgo.io/guides/orms/drizzle) or other external SQL migration tools.
 
 ```
 import * as p from "drizzle-orm/pg-core";
@@ -369,3 +372,4 @@ CREATE TABLE "users" (
 
 [✓] done!                                                 
 ```
+

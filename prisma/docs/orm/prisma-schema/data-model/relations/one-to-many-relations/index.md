@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:55:22.914Z"
 content_hash: "ac17925afb4a25849c343292c8e320b106bbe05799b7ab14a37aef0db7279984"
 menu_path: ["One-to-many relations"]
 section_path: []
+nav_prev: {"path": "prisma/docs/orm/prisma-schema/data-model/relations/many-to-many-relations/index.md", "title": "Many-to-many relations"}
+nav_next: {"path": "prisma/docs/orm/prisma-schema/data-model/relations/one-to-one-relations/index.md", "title": "One-to-one relations"}
 ---
+
 Data Model
 
 Relations
@@ -97,3 +100,4 @@ model Post {
 ```
 
 [Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/prisma-schema/data-model/relations/one-to-many-relations.mdx)
+

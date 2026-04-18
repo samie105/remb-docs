@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:12:22.667Z"
 content_hash: "2e739e11657c6a3ef0d12c17bca6c718cb0f1d33ec82853d7e9efd6ede80dd57"
 menu_path: ["Drizzle ORM - DrizzleORM v0.29.2 release"]
 section_path: []
+nav_prev: {"path": "drizzle/docs/latest-releases/drizzle-orm-v0290/index.md", "title": "Drizzle ORM - DrizzleORM v0.29.0 release"}
+nav_next: {"path": "drizzle/docs/latest-releases/drizzle-orm-v0291/index.md", "title": "Drizzle ORM - DrizzleORM v0.29.1 release"}
 ---
+
 DrizzleORM v0.29.2 release
 
 Dec 25, 2023
@@ -33,13 +36,13 @@ npm i eslint-plugin-drizzle@0.2.3
 *   Allowed Drizzle object to be or to be retrieved from a function, e.g.
 *   Added better context to the suggestion in the error message.
 
-For more info you can check [docs](https://orm.drizzle.team/docs/eslint-plugin)
+For more info you can check [docs](drizzle/docs/eslint-plugin/index.md)
 
 ## New Drivers
 
 **🎉 Expo SQLite Driver is available**
 
-For starting with [Expo SQLite Driver](https://orm.drizzle.team/docs/get-started-sqlite#expo-sqlite), you need to install `expo-sqlite` and `drizzle-orm` packages.
+For starting with [Expo SQLite Driver](drizzle/docs/get-started-sqlite/index.md#expo-sqlite), you need to install `expo-sqlite` and `drizzle-orm` packages.
 
 ```
 npm install drizzle-orm expo-sqlite@next
@@ -151,3 +154,4 @@ export default function App() {
     return ...your application component;
 }
 ```
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:41:19.868Z"
 content_hash: "66bc88cdf80c6bec0f1ad4a84663788938baf4e8523c25b618d6182bebc0810d"
 menu_path: ["Prefetch"]
 section_path: []
+nav_prev: {"path": "astro/en/guides/internationalization/index.md", "title": "Internationalization (i18n) Routing"}
+nav_next: {"path": "astro/en/guides/view-transitions/index.md", "title": "View transitions"}
 ---
+
 # Prefetch
 
 Page load times play a big role in the usability and overall enjoyment of a site. Astro’s **opt-in prefetching** brings the benefits of near-instant page navigations to your multi-page application (MPA) as your visitors interact with the site.
@@ -242,3 +245,4 @@ The `@astrojs/prefetch` integration was deprecated in v3.5.0 and is no longer ma
         
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

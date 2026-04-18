@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:47:43.142Z"
 content_hash: "6644d86996d265f048de7d750e6215f46b728a4605100b27cceb3376a4c08226"
 menu_path: ["PostgreSQL: Documentation: 18: 35.37. role_table_grants"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/btree.html/index.md", "title": "PostgreSQL: Documentation: 18: 65.1.\u00a0B-Tree Indexes"}
+nav_next: {"path": "postgres/docs/current/ecpg-sql-declare.html/index.md", "title": "PostgreSQL: Documentation: 18: DECLARE"}
 ---
+
 The view `role_table_grants` identifies all privileges granted on tables or views where the grantor or grantee is a currently enabled role. Further information can be found under `table_privileges`. The only effective difference between this view and `table_privileges` is that this view omits tables that have been made accessible to the current user by way of a grant to `PUBLIC`.
 
 **Table 35.35. `role_table_grants` Columns**
@@ -49,3 +52,4 @@ Type of the privilege: `SELECT`, `INSERT`, `UPDATE`, `DELETE`, `TRUNCATE`, `REFE
 `with_hierarchy` `yes_or_no`
 
 In the SQL standard, `WITH HIERARCHY OPTION` is a separate (sub-)privilege allowing certain operations on table inheritance hierarchies. In PostgreSQL, this is included in the `SELECT` privilege, so this column shows `YES` if the privilege is `SELECT`, else `NO`.
+

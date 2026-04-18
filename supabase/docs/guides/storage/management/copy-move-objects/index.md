@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:01:18.727Z"
 content_hash: "12ad762704a68569b1f3ca0475f080abd0aeea381695126a179a18fc68528138"
 menu_path: ["Storage","Storage","More","More","More","Management","Management","Copy / Move Objects","Copy / Move Objects"]
 section_path: ["Storage","Storage","More","More","More","Management","Management","Copy / Move Objects","Copy / Move Objects"]
+nav_prev: {"path": "supabase/docs/guides/storage/debugging/error-codes/index.md", "title": "Error Codes"}
+nav_next: {"path": "supabase/docs/guides/storage/management/delete-objects/index.md", "title": "Delete Objects"}
 ---
+
 # 
 
 Copy Objects
@@ -75,3 +78,4 @@ For example:
 ```
 1create policy "User can select their own objects (in any buckets)"2on storage.objects3for select4to authenticated5using (6    owner_id = (select auth.uid())7);89create policy "User can insert in their own folders (in any buckets)"10on storage.objects11for insert12to authenticated13with check (14    (storage.folder(name))[1] = (select auth.uid())15);1617create policy "User can update their own objects (in any buckets)"18on storage.objects19for update20to authenticated21using (22    owner_id = (select auth.uid())23);
 ```
+

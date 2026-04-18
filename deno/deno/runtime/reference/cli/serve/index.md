@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:56:04.856Z"
 content_hash: "61bb1a7bfe7868f754435fed34fab9aed3703c23bf3be3be81e63fc12b80de5d"
 menu_path: ["deno serve"]
 section_path: []
+nav_prev: {"path": "deno/deno/runtime/reference/cli/sandbox/index.md", "title": "deno sandbox"}
+nav_next: {"path": "deno/deno/runtime/reference/cli/task/index.md", "title": "deno task"}
 ---
+
 On this page
 
 *   [Basic usage](#basic-usage)
@@ -378,3 +381,4 @@ Exclude provided files/patterns from watch mode.
 `--watch-hmr`<FILES>optional
 
 Watch for file changes and restart process automatically. Local files from entry point module graph are watched by default. Additional paths might be watched by passing them as arguments to this flag.
+

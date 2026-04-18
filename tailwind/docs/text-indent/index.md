@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:59:09.948Z"
 content_hash: "ad2dfb39487210ec6116f4173b17fc872af5057f0dac409dd73cc6a09288f230"
 menu_path: ["text-indent"]
 section_path: []
+nav_prev: {"path": "tailwind/docs/text-wrap/index.md", "title": "text-wrap"}
+nav_next: {"path": "tailwind/docs/vertical-align/index.md", "title": "vertical-align"}
 ---
+
 Utilities for controlling the amount of empty space shown before text in a block.
 
 Class
@@ -86,4 +89,5 @@ Prefix a `text-indent` utility with a breakpoint variant like `md:` to only appl
 <p class="indent-4 md:indent-8 ...">  Lorem ipsum dolor sit amet...</p>
 ```
 
-Learn more about using variants in the [variants documentation](https://tailwindcss.com/docs/hover-focus-and-other-states).
+Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).
+

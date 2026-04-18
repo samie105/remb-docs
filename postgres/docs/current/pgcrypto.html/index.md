@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:46:53.730Z"
 content_hash: "1ccc151a9bff1422c171cea7bd2596b3538acc73a9e076cc8213d9a01655ba38"
 menu_path: ["PostgreSQL: Documentation: 18: F.26. pgcrypto — cryptographic functions"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/functions-statistics.html/index.md", "title": "PostgreSQL: Documentation: 18: 9.31.\u00a0Statistics Information Functions"}
+nav_next: {"path": "postgres/docs/current/lo-examplesect.html/index.md", "title": "PostgreSQL: Documentation: 18: 33.5.\u00a0Example Program"}
 ---
+
 The `pgcrypto` module provides cryptographic functions for PostgreSQL.
 
 This module is considered “trusted”, that is, it can be installed by non-superusers who have `CREATE` privilege on the current database.
@@ -722,3 +725,4 @@ Blowfish crypt
 Solar Designer
 
 www.openwall.com
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:13:38.544Z"
 content_hash: "3a9962adde5d624b3c68f295e042a560da92784e4dde65125300941cf14e1fd9"
 menu_path: ["Intl - Web documentation"]
 section_path: []
+nav_prev: {"path": "deno/deno/api/web/io/index.md", "title": "I/O - Web documentation"}
+nav_next: {"path": "deno/deno/api/web/messaging/index.md", "title": "Messaging - Web documentation"}
 ---
+
 ### Interfaces [#](#Interfaces)
 
 I
@@ -58,3 +61,4 @@ T
 [Intl.Formattable](./././~/Intl.Formattable "Intl.Formattable")
 
 Types that can be formatted using Intl.DateTimeFormat methods.
+

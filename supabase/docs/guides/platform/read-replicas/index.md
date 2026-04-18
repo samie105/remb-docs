@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:48:06.308Z"
 content_hash: "86374aca24d3ba615a62d9da0b0443080217fb1d574e34ac7814a342249484b9"
 menu_path: ["Platform","Platform","More","More","More","Read Replicas","Read Replicas","Overview","Overview"]
 section_path: ["Platform","Platform","More","More","More","Read Replicas","Read Replicas","Overview","Overview"]
+nav_prev: {"path": "supabase/docs/guides/platform/privatelink/index.md", "title": "PrivateLink"}
+nav_next: {"path": "supabase/docs/guides/platform/regions/index.md", "title": "Available regions"}
 ---
+
 # 
 
 Read Replicas
@@ -138,3 +141,4 @@ All settings configured through the dashboard will be propagated across all data
 ## Pricing[#](#pricing)
 
 For a detailed breakdown of how we calculate charges, read the [Manage Read Replica usage guide](/docs/guides/platform/manage-your-usage/read-replicas).
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:00:20.858Z"
 content_hash: "af4018369260e0858d740220134539a273d2999592d6a8091edc2a87eaf7e944"
 menu_path: ["Platform","Platform","More","More","More","Manage your usage","Manage your usage","Storage Size","Storage Size"]
 section_path: ["Platform","Platform","More","More","More","Manage your usage","Manage your usage","Storage Size","Storage Size"]
+nav_prev: {"path": "supabase/docs/guides/platform/mfa/org-mfa-enforcement/index.md", "title": "Enforce MFA on Organization"}
+nav_next: {"path": "supabase/docs/guides/platform/migrating-to-supabase/amazon-rds/index.md", "title": "Migrate from Amazon RDS to Supabase"}
 ---
+
 # 
 
 Manage Storage size usage
@@ -202,3 +205,4 @@ List buckets with their total size:
 If you are on a paid plan and have [Spend Cap](/docs/guides/platform/cost-control#spend-cap) disabled or your organization is on Team Plan or above, you will pay for any overages.
 
 When you are exceeding your quotas while being on a Free Plan or having [Spend Cap](/docs/guides/platform/cost-control#spend-cap) enabled, you will get a notification to your billing email address and put under a grace period. For more details, refer to our [Fair Use Policy](/docs/guides/platform/billing-faq#fair-use-policy).
+

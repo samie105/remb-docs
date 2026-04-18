@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:50:16.797Z"
 content_hash: "ef335c3f47f09f5c49e9153e1972c5ff94d8ce5af3dfec86e008b5e73eaa5b7d"
 menu_path: ["PostgreSQL: Documentation: 18: SPI_scroll_cursor_move"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/view-pg-hba-file-rules.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.10.\u00a0pg_hba_file_rules"}
+nav_next: {"path": "postgres/docs/current/sql-droptable.html/index.md", "title": "PostgreSQL: Documentation: 18: DROP TABLE"}
 ---
+
 February 26, 2026: [PostgreSQL 18.3, 17.9, 16.13, 15.17, and 14.22 Released!](/about/news/postgresql-183-179-1613-1517-and-1422-released-3246/)
 
 [Documentation](/docs/ "Documentation") → [PostgreSQL 18](/docs/18/index.html)
@@ -60,3 +63,4 @@ Direction values other than `FETCH_FORWARD` may fail if the cursor's plan was no
 ## Submit correction
 
 If you see anything in the documentation that is not correct, does not match your experience with the particular feature or requires further clarification, please use [this form](/account/comments/new/18/spi-spi-scroll-cursor-move.html/) to report a documentation issue.
+

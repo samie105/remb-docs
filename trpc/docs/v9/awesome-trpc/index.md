@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:41:10.934Z"
 content_hash: "6c25a6cb8000293c96c272ff021e7301db2f4ca5bdf9852c011d22e13b0ba06f"
 menu_path: ["Awesome tRPC Collection"]
 section_path: []
+nav_prev: {"path": "trpc/docs/v9/authorization/index.md", "title": "Authorization"}
+nav_next: {"path": "trpc/docs/v9/aws-lambda/index.md", "title": "Usage with Amazon Lambda through the API Gateway"}
 ---
+
 > Collection of resources on tRPC. **Please** edit this page and add your own links! 🙏
 
 > Please make and add!
@@ -183,3 +186,4 @@ Link
 
 *   [tRPC.io - a toolkit for building end-to-end typesafe APIs 🧙‍♂️](https://dev.to/katt/trpc-io-a-toolkit-for-building-end-to-end-typesafe-apis-1468)
 *   [Building an end-to-end typesafe API — without GraphQL](https://colinhacks.com/essays/painless-typesafety)
+

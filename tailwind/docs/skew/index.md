@@ -9,15 +9,9 @@ last_crawled_at: "2026-04-18T17:13:47.193Z"
 content_hash: "89032970a7d325abb117b36e4a8e8d3f33765ccde41c114ab4e6ce178b9bbdf7"
 menu_path: ["skew"]
 section_path: []
+nav_prev: {"path": "tailwind/docs/scale/index.md", "title": "scale"}
+nav_next: {"path": "tailwind/docs/transform/index.md", "title": "transform"}
 ---
-[](/)
-
-[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
-
-1.  Transforms
-2.  skew
-
-Transforms
 
 # skew
 
@@ -205,3 +199,4 @@ Short, tactical video lessons from the creator of Tailwind CSS, delivered direct
 [Get the free course](/build-uis-that-dont-suck)
 
 Copyright © 2026 Tailwind Labs Inc.·[Trademark Policy](/brand)
+

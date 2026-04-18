@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:09:16.841Z"
 content_hash: "e05b7e2b851690fb757e920ca6cd50d17977e900159c41f232fe2fcfa3cfa96d"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis reference","→","Redis reference","→\n      \n        Redis command arguments","→","Redis command arguments"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis reference","→","Redis reference","→\n      \n        Redis command arguments","→","Redis command arguments"]
+nav_prev: {"path": "redis/docs/latest/develop/ai/search-and-query/advanced-concepts/autocomplete/index.md", "title": "Autocomplete with Redis"}
+nav_next: {"path": "redis/docs/latest/integrate/datadog-with-redis-cloud/index.md", "title": "Datadog with Redis Cloud"}
 ---
+
 # Redis command arguments
 
 How Redis commands expose their documentation programmatically
@@ -173,3 +176,4 @@ Here's [`XADD`](/docs/latest/commands/xadd/)'s arguments array:
 ```
 
 ## On this page
+

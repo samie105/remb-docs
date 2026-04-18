@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:48:55.605Z"
 content_hash: "3f804a1d55bceca966f4495d585d760f252df27f2faf6e72254e8fe843aab2be"
 menu_path: ["Build a tag index page"]
 section_path: []
+nav_prev: {"path": "astro/en/tutorial/5-astro-api/2/index.md", "title": "Generate tag pages"}
+nav_next: {"path": "astro/en/tutorial/5-astro-api/4/index.md", "title": "Add an RSS feed"}
 ---
+
 # Build a tag index page
 
 Now that you have individual pages for every tag, it’s time to make links to them.
@@ -245,3 +248,4 @@ Match each file path with a second file path that will create a page at the same
 *   [Static Routing in Astro](/en/guides/routing/#static-routes)
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

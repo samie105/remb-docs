@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:49:21.155Z"
 content_hash: "1a497f97848457487a1522bd5c03ef95c086499ce4583106ebb502f8c5e1522f"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Redis Open Source and Redis Software","→","Redis Open Source and Redis Software","→\n      \n        Deprecated Redis Open Source features and modules","→","Deprecated Redis Open Source features and modules","→\n      \n        Triggers and functions","→","Triggers and functions","→\n      \n        Concepts","→","Concepts","→\n      \n        Triggers","→","Triggers","→\n      \n        Keyspace triggers","→","Keyspace triggers"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Redis Open Source and Redis Software","→","Redis Open Source and Redis Software","→\n      \n        Deprecated Redis Open Source features and modules","→","Deprecated Redis Open Source features and modules","→\n      \n        Triggers and functions","→","Triggers and functions","→\n      \n        Concepts","→","Concepts","→\n      \n        Triggers","→","Triggers","→\n      \n        Keyspace triggers","→","Keyspace triggers"]
+nav_prev: {"path": "redis/docs/latest/integrate/jedis/index.md", "title": "Java client for Redis"}
+nav_next: {"path": "redis/docs/latest/operate/oss_and_stack/stack-with-enterprise/deprecated-features/triggers-and-functions/concepts/javascript_api/index.md", "title": "JavaScript API"}
 ---
+
 # Keyspace triggers
 
 Execute a JavaScript function based on a keyspace notification
@@ -225,3 +228,4 @@ QUEUED
 ```
 
 ## On this page
+

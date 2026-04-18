@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:48:53.945Z"
 content_hash: "4a62eb857e39f92ef6de146b97a8ef577a0fd574f65025c9ad987f27e9823c39"
 menu_path: ["HTTP RPC Specification"]
 section_path: []
+nav_prev: {"path": "trpc/docs/migrate-from-v10-to-v11/index.md", "title": "Migrate from v10 to v11"}
+nav_next: {"path": "trpc/docs/openapi/index.md", "title": "OpenAPI (alpha)"}
 ---
+
 ## Methods <-> Type mapping[​](#methods---type-mapping "Direct link to Methods <-> Type mapping")
 
 HTTP Method
@@ -35,7 +38,7 @@ Input as POST body.
 
 `.subscription()`
 
-Subscriptions are supported via [Server-sent Events](https://trpc.io/docs/client/links/httpSubscriptionLink) using `httpSubscriptionLink`, or via [WebSockets](https://trpc.io/docs/server/websockets) using `wsLink`.
+Subscriptions are supported via [Server-sent Events](trpc/docs/client/links/httpSubscriptionLink/index.md) using `httpSubscriptionLink`, or via [WebSockets](trpc/docs/server/websockets/index.md) using `wsLink`.
 
 ## Accessing nested procedures[​](#accessing-nested-procedures "Direct link to Accessing nested procedures")
 
@@ -196,7 +199,7 @@ Example JSON Response
 
 *   When possible, we propagate HTTP status codes from the error thrown.
 *   If the response has different statuses, we send back `207 Multi-Status` _(e.g., if one call errored and one succeeded)_
-*   For more on errors and how to customize them see [Error Formatting](https://trpc.io/docs/server/error-formatting).
+*   For more on errors and how to customize them see [Error Formatting](trpc/docs/server/error-formatting/index.md).
 
 ## Error Codes <-> HTTP Status[​](#error-codes---http-status "Direct link to Error Codes <-> HTTP Status")
 
@@ -302,3 +305,4 @@ You can read more details by drilling into the TypeScript definitions in
 
 *   [/packages/server/src/unstable-core-do-not-import/rpc/envelopes.ts](https://github.com/trpc/trpc/tree/main/packages/server/src/unstable-core-do-not-import/rpc/envelopes.ts)
 *   [/packages/server/src/unstable-core-do-not-import/rpc/codes.ts](https://github.com/trpc/trpc/tree/main/packages/server/src/unstable-core-do-not-import/rpc/codes.ts)
+

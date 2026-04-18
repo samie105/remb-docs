@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:32:48.706Z"
 content_hash: "bbb148d67766c1876f604d63c76aefe7cf7b7b2f59f76148ec66d47269ef0eff"
 menu_path: ["Supabase & Astro"]
 section_path: []
+nav_prev: {"path": "astro/en/guides/backend/sentry/index.md", "title": "Monitor your Astro Site with Sentry"}
+nav_next: {"path": "astro/en/guides/backend/turso/index.md", "title": "Turso & Astro"}
 ---
+
 # Supabase & Astro
 
 [Supabase](https://supabase.com/) is an open source Firebase alternative. It provides a Postgres database, authentication, edge functions, realtime subscriptions, and storage.
@@ -368,3 +371,4 @@ After creating the OAuth callback endpoint and editing the sign in page and serv
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

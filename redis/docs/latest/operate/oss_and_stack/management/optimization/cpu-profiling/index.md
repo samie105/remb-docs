@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:39:14.019Z"
 content_hash: "aa29a2e1b32fe1624da5b3402af6631ec404001a23eb0a06fa51937fdf2e81b4"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Manage Redis","→","Manage Redis","→\n      \n        Optimizing Redis","→","Optimizing Redis","→\n      \n        Redis CPU profiling","→","Redis CPU profiling"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Manage Redis","→","Manage Redis","→\n      \n        Optimizing Redis","→","Optimizing Redis","→\n      \n        Redis CPU profiling","→","Redis CPU profiling"]
+nav_prev: {"path": "redis/docs/latest/develop/clients/hiredis/connect/index.md", "title": "Connect"}
+nav_next: {"path": "redis/docs/latest/operate/rc/subscriptions/bring-your-own-cloud/iam-resources/index.md", "title": "Create IAM resources for AWS cloud accounts"}
 ---
+
 # Redis CPU profiling
 
 Performance engineering guide for on-CPU profiling and tracing
@@ -198,3 +201,4 @@ Performance counter stats for process id '3038':
 It's important to know that there are two very different ways in which PMCs can be used (counting and sampling), and we've focused solely on PMCs counting for the sake of this analysis. Brendan Greg clearly explains it on the following [link](http://www.brendangregg.com/blog/2017-05-04/the-pmcs-of-ec2.html).
 
 ## On this page
+

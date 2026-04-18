@@ -9,15 +9,9 @@ last_crawled_at: "2026-04-18T16:41:22.725Z"
 content_hash: "6a7fab08134c0e5ecf5335c387a0c9dfae1baad2f45928e657ae490be02b40f3"
 menu_path: ["break-inside"]
 section_path: []
+nav_prev: {"path": "tailwind/docs/break-before/index.md", "title": "break-before"}
+nav_next: {"path": "tailwind/docs/box-decoration-break/index.md", "title": "box-decoration-break"}
 ---
-[](/)
-
-[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
-
-1.  Layout
-2.  break-inside
-
-Layout
 
 # break-inside
 
@@ -81,3 +75,4 @@ Short, tactical video lessons from the creator of Tailwind CSS, delivered direct
 [Get the free course](/build-uis-that-dont-suck)
 
 Copyright © 2026 Tailwind Labs Inc.·[Trademark Policy](/brand)
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:39:43.864Z"
 content_hash: "9a3149877160ff8f835860e90491893eb1779e9fcdb43e53b22f1e877d571e37"
 menu_path: ["PostgreSQL: Documentation: 18: ALTER GROUP"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/spi-spi-getrelname.html/index.md", "title": "PostgreSQL: Documentation: 18: SPI_getrelname"}
+nav_next: {"path": "postgres/docs/current/rules-triggers.html/index.md", "title": "PostgreSQL: Documentation: 18: 39.7.\u00a0Rules Versus Triggers"}
 ---
+
 ALTER GROUP — change role name or membership
 
 ## Synopsis
@@ -61,3 +64,4 @@ ALTER GROUP workers DROP USER beth;
 ## Compatibility
 
 There is no `ALTER GROUP` statement in the SQL standard.
+

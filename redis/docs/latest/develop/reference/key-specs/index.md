@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:53:10.797Z"
 content_hash: "04bfc6278cfd85b2469fd0b0d3d864d6510e6ba79326c69f5550646b27db59ac"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis reference","→","Redis reference","→\n      \n        Command key specifications","→","Command key specifications"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis reference","→","Redis reference","→\n      \n        Command key specifications","→","Command key specifications"]
+nav_prev: {"path": "redis/docs/latest/operate/oss_and_stack/stack-with-enterprise/deprecated-features/triggers-and-functions/configuration/index.md", "title": "Configuration"}
+nav_next: {"path": "redis/docs/latest/operate/rc/databases/rdi/define/index.md", "title": "Define data pipeline"}
 ---
+
 # Command key specifications
 
 What are command key specification and how to use them in your client
@@ -202,3 +205,4 @@ In some commands, the flags for the same key name argument can depend on other a
 ```
 
 ## On this page
+

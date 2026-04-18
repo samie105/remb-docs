@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:43:42.620Z"
 content_hash: "eada3470c441e84039401dcf050fd90d64fd5272af86050b1bc720ae4fdf6e86"
 menu_path: ["Edge Functions","Edge Functions","Advanced Features","Advanced Features","AI Models","AI Models"]
 section_path: ["Edge Functions","Edge Functions","Advanced Features","Advanced Features","AI Models","AI Models"]
+nav_prev: {"path": "supabase/docs/guides/functions/auth-legacy-jwt/index.md", "title": "Integrating With Supabase Auth"}
+nav_next: {"path": "supabase/docs/guides/functions/auth/index.md", "title": "Securing Edge Functions"}
 ---
+
 # 
 
 Running AI Models
@@ -169,3 +172,4 @@ Deploy an Ollama or Llamafile server and set a function secret called `AI_INFERE
 As demonstrated in the video above, running Ollama locally is typically slower than running it in on a server with dedicated GPUs. We are collaborating with the Ollama team to improve local performance.
 
 In the future, a hosted LLM API, will be provided as part of the Supabase platform. Supabase will scale and manage the API and GPUs for you. To sign up for early access, fill up [this form](https://forms.supabase.com/supabase.ai-llm-early-access).
+

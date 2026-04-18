@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:46:29.136Z"
 content_hash: "cdb7c882b632b0ef33dae8b8c048abade2d4b6b5dc05bd126a8b2e923bc74a9e"
 menu_path: ["Build an HTTP server using StricJS and Bun"]
 section_path: []
+nav_prev: {"path": "bun/bun/docs/guides/ecosystem/solidstart/index.md", "title": "Build an app with SolidStart and Bun"}
+nav_next: {"path": "bun/bun/docs/guides/ecosystem/ssr-react/index.md", "title": "Server-side render (SSR) a React component"}
 ---
+
 [Skip to main content](#content-area)
 
 [Bun home page![light logo](https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z_zHyy/logo/logo-with-wordmark-dark.svg?fit=max&auto=format&n=JUhaF6Mf68z_zHyy&q=85&s=3f55cd23822028e40658b192c927f3e4)![dark logo](https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z_zHyy/logo/logo-with-wordmark-light.svg?fit=max&auto=format&n=JUhaF6Mf68z_zHyy&q=85&s=8a0c5928d9dc3631f0d33e17c257e2ec)](/docs)
@@ -106,3 +109,4 @@ Build an app with SvelteKit and Bun
 Next
 
 ](/docs/guides/ecosystem/sveltekit)
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:40:19.791Z"
 content_hash: "cdd5f3ede60d83f3c3efb776034036d78a87154f829308210668de221d41da6c"
 menu_path: ["Image and video hosting with Astro"]
 section_path: []
+nav_prev: {"path": "astro/en/guides/backend/xata/index.md", "title": "Xata & Astro"}
+nav_next: {"path": "astro/en/guides/media/cloudinary/index.md", "title": "Cloudinary & Astro"}
 ---
+
 # Image and video hosting with Astro
 
 Follow one of our guides to integrate images and videos from a hosted media service.
@@ -54,3 +57,4 @@ Yes! Astro provides built-in ways to [store images](/en/guides/images/#where-to-
 However, there is no native video support in Astro, and we recommend choosing a service like [Mux](/en/guides/media/mux/) to handle the demands of optimizing and streaming video content.
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

@@ -9,8 +9,11 @@ last_crawled_at: "2026-04-18T16:34:56.608Z"
 content_hash: "a727b4337d744d5e218677a00fd099fae591f523ede16c831e706613ec20f246"
 menu_path: ["Building for Production ​"]
 section_path: []
+nav_prev: {"path": "vite/guide/assets/index.md", "title": "Static Asset Handling \u200b"}
+nav_next: {"path": "vite/guide/static-deploy/index.md", "title": "Deploying a Static Site \u200b"}
 ---
-When it is time to deploy your app for production, simply run the `vite build` command. By default, it uses `<root>/index.html` as the build entry point, and produces an application bundle that is suitable to be served over a static hosting service. Check out the [Deploying a Static Site](https://vite.dev/guide/static-deploy) for guides about popular services.
+
+When it is time to deploy your app for production, simply run the `vite build` command. By default, it uses `<root>/index.html` as the build entry point, and produces an application bundle that is suitable to be served over a static hosting service. Check out the [Deploying a Static Site](vite/guide/static-deploy/index.md) for guides about popular services.
 
 ## Browser Compatibility [​](#browser-compatibility)
 
@@ -21,7 +24,7 @@ By default, the production bundle assumes a modern browser that is included in t
 *   Firefox >=114
 *   Safari >=16.4
 
-You can specify custom targets via the [`build.target` config option](https://vite.dev/config/build-options#build-target), where the lowest target is `es2015`. If a lower target is set, Vite will still require these minimum browser support ranges as it relies on [native ESM dynamic import](https://caniuse.com/es6-module-dynamic-import), and [`import.meta`](https://caniuse.com/mdn-javascript_operators_import_meta):
+You can specify custom targets via the [`build.target` config option](vite/config/build-options/index.md#build-target), where the lowest target is `es2015`. If a lower target is set, Vite will still require these minimum browser support ranges as it relies on [native ESM dynamic import](https://caniuse.com/es6-module-dynamic-import), and [`import.meta`](https://caniuse.com/mdn-javascript_operators_import_meta):
 
 *   Chrome >=64
 *   Firefox >=67
@@ -34,9 +37,9 @@ Legacy browsers can be supported via [@vitejs/plugin-legacy](https://github.com/
 
 ## Public Base Path [​](#public-base-path)
 
-*   Related: [Asset Handling](https://vite.dev/guide/assets)
+*   Related: [Asset Handling](vite/guide/assets/index.md)
 
-If you are deploying your project under a nested public path, simply specify the [`base` config option](https://vite.dev/config/shared-options#base) and all asset paths will be rewritten accordingly. This option can also be specified as a command line flag, e.g. `vite build --base=/my/public/path/`.
+If you are deploying your project under a nested public path, simply specify the [`base` config option](vite/config/shared-options/index.md#base) and all asset paths will be rewritten accordingly. This option can also be specified as a command line flag, e.g. `vite build --base=/my/public/path/`.
 
 JS-imported asset URLs, CSS `url()` references, and asset references in your `.html` files are all automatically adjusted to respect this option during build.
 
@@ -50,7 +53,7 @@ If you don't know the base path in advance, you may set a relative base path wit
 
 ## Customizing the Build [​](#customizing-the-build)
 
-The build can be customized via various [build config options](https://vite.dev/config/build-options). Specifically, you can directly adjust the underlying [Rolldown options](https://rolldown.rs/reference/) via `build.rolldownOptions`:
+The build can be customized via various [build config options](vite/config/build-options/index.md). Specifically, you can directly adjust the underlying [Rolldown options](https://rolldown.rs/reference/) via `build.rolldownOptions`:
 
 vite.config.js
 
@@ -152,7 +155,7 @@ Note that for HTML files, Vite ignores the name given to the entry in the `rolld
 
 When you are developing a browser-oriented library, you are likely spending most of the time on a test/demo page that imports your actual library. With Vite, you can use your `index.html` for that purpose to get the smooth development experience.
 
-When it is time to bundle your library for distribution, use the [`build.lib` config option](https://vite.dev/config/build-options#build-lib). Make sure to also externalize any dependencies that you do not want to bundle into your library, e.g. `vue` or `react`:
+When it is time to bundle your library for distribution, use the [`build.lib` config option](vite/config/build-options/index.md#build-lib). Make sure to also externalize any dependencies that you do not want to bundle into your library, e.g. `vue` or `react`:
 
 vite.config.js (single entry)vite.config.js (multiple entries)
 
@@ -234,7 +237,7 @@ Running `vite build` with this config uses a Rollup preset that is oriented towa
 *   `es` and `umd` (for single entry)
 *   `es` and `cjs` (for multiple entries)
 
-The formats can be configured with the [`build.lib.formats`](https://vite.dev/config/build-options#build-lib) option.
+The formats can be configured with the [`build.lib.formats`](vite/config/build-options/index.md#build-lib) option.
 
 ```
 $ vite build
@@ -289,7 +292,7 @@ json
 
 ### CSS support [​](#css-support)
 
-If your library imports any CSS, it will be bundled as a single CSS file besides the built JS files, e.g. `dist/my-lib.css`. The name defaults to `build.lib.fileName`, but can also be changed with [`build.lib.cssFileName`](https://vite.dev/config/build-options#build-lib).
+If your library imports any CSS, it will be bundled as a single CSS file besides the built JS files, e.g. `dist/my-lib.css`. The name defaults to `build.lib.fileName`, but can also be changed with [`build.lib.cssFileName`](vite/config/build-options/index.md#build-lib).
 
 You can export the CSS file in your `package.json` to be imported by users:
 
@@ -318,7 +321,7 @@ If the `package.json` does not contain `"type": "module"`, Vite will generate di
 
 Environment Variables
 
-In library mode, all [`import.meta.env.*`](https://vite.dev/guide/env-and-mode) usage are statically replaced when building for production. However, `process.env.*` usage are not, so that consumers of your library can dynamically change it. If this is undesirable, you can use `define: { 'process.env.NODE_ENV': '"production"' }` for example to statically replace them, or use [`esm-env`](https://github.com/benmccann/esm-env) for better compatibility with bundlers and runtimes.
+In library mode, all [`import.meta.env.*`](vite/guide/env-and-mode/index.md) usage are statically replaced when building for production. However, `process.env.*` usage are not, so that consumers of your library can dynamically change it. If this is undesirable, you can use `define: { 'process.env.NODE_ENV': '"production"' }` for example to statically replace them, or use [`esm-env`](https://github.com/benmccann/esm-env) for better compatibility with bundlers and runtimes.
 
 Advanced Usage
 
@@ -330,7 +333,7 @@ For advanced use cases, the deployed assets and public files may be in different
 
 *   The generated entry HTML files (which may be processed during SSR)
 *   The generated hashed assets (JS, CSS, and other file types like images)
-*   The copied [public files](https://vite.dev/guide/assets#the-public-directory)
+*   The copied [public files](vite/guide/assets/index.md#the-public-directory)
 
 A single static [base](#public-base-path) isn't enough in these scenarios. Vite provides experimental support for advanced base options during build, using `experimental.renderBuiltUrl`.
 
@@ -369,3 +372,4 @@ experimental: {
 ```
 
 Note that the `filename` passed is a decoded URL, and if the function returns a URL string, it should also be decoded. Vite will handle the encoding automatically when rendering the URLs. If an object with `runtime` is returned, encoding should be handled yourself where needed as the runtime code will be rendered as is.
+

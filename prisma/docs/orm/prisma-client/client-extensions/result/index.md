@@ -9,10 +9,13 @@ last_crawled_at: "2026-04-18T16:45:06.632Z"
 content_hash: "288b11f220b0fd092a82cf707a89ba43cf6bea02c44b64426f323b79ffbe5c7e"
 menu_path: ["Add custom fields and methods to query results"]
 section_path: []
+nav_prev: {"path": "prisma/docs/orm/prisma-client/client-extensions/index.md", "title": "What are Client Extensions"}
+nav_next: {"path": "prisma/docs/orm/prisma-client/client-extensions/type-utilities/index.md", "title": "Type utilities"}
 ---
-You can use the `result` [Prisma Client extensions](https://www.prisma.io/docs/orm/prisma-client/client-extensions) component type to add custom fields and methods to query results.
 
-Use the `$extends` [client-level method](https://www.prisma.io/docs/orm/reference/prisma-client-reference#client-methods) to create an _extended client_. An extended client is a variant of the standard Prisma Client that is wrapped by one or more extensions.
+You can use the `result` [Prisma Client extensions](prisma/docs/orm/prisma-client/client-extensions/index.md) component type to add custom fields and methods to query results.
+
+Use the `$extends` [client-level method](prisma/docs/orm/reference/prisma-client-reference/index.md#client-methods) to create an _extended client_. An extended client is a variant of the standard Prisma Client that is wrapped by one or more extensions.
 
 To add a custom [field](#add-a-custom-field-to-query-results) or [method](#add-a-custom-method-to-the-result-object) to query results, use the following structure. In this example, we add the custom field `myComputedField` to the result of a `user` model query.
 
@@ -132,7 +135,7 @@ user.email = "mynewmail@mailservice.com";
 await user.save();
 ```
 
-You can use the [`omit` (Preview) option](https://www.prisma.io/docs/orm/reference/prisma-client-reference#omit) with [custom fields](#add-a-custom-field-to-query-results) and fields needed by custom fields.
+You can use the [`omit` (Preview) option](prisma/docs/orm/reference/prisma-client-reference/index.md#omit) with [custom fields](#add-a-custom-field-to-query-results) and fields needed by custom fields.
 
 ### [`omit` fields needed by custom fields from query result](#omit-fields-needed-by-custom-fields-from-query-result)
 
@@ -209,3 +212,4 @@ const prisma = new PrismaClient().$extends({
   },
 });
 ```
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:53:59.777Z"
 content_hash: "eb387c184f1ed2f3321215b585b8ca89031b1dc62cb1c440f4948956a25c59b2"
 menu_path: ["Auth","Auth","More","More","More","Sessions","Sessions","Implicit flow","Implicit flow"]
 section_path: ["Auth","Auth","More","More","More","Sessions","Sessions","Implicit flow","Implicit flow"]
+nav_prev: {"path": "supabase/docs/guides/auth/quickstarts/with-expo-react-native-social-auth/index.md", "title": "Build a Social Auth App with Expo React Native"}
+nav_next: {"path": "supabase/docs/guides/auth/sessions/pkce-flow/index.md", "title": "PKCE flow"}
 ---
+
 # 
 
 Implicit flow
@@ -48,3 +51,4 @@ The implicit flow only works on the client. Web browsers do not send the URL fra
 *   Even if the server is under your direct control, `GET` requests and their full URLs are often logged. This approach avoids leaking credentials in request or access logs.
 
 If you wish to obtain the access token and refresh token on a server, use the [PKCE flow](/docs/guides/auth/sessions/pkce-flow).
+

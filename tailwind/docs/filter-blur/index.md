@@ -9,15 +9,9 @@ last_crawled_at: "2026-04-18T17:07:08.942Z"
 content_hash: "aec4c2b15406f065605af2a1fd760b4d59743ee06308faba56bec6140483a294"
 menu_path: ["filter: blur()"]
 section_path: []
+nav_prev: {"path": "tailwind/docs/filter/index.md", "title": "filter"}
+nav_next: {"path": "tailwind/docs/filter-brightness/index.md", "title": "filter: brightness()"}
 ---
-[](/)
-
-[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
-
-1.  Filters
-2.  blur
-
-Filters
 
 # filter: blur()
 
@@ -159,3 +153,4 @@ Make your ideas look awesome, without relying on a designer.
 ](https://www.refactoringui.com/?ref=sidebar)
 
 Copyright © 2026 Tailwind Labs Inc.·[Trademark Policy](/brand)
+

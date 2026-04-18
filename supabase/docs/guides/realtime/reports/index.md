@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:49:52.028Z"
 content_hash: "c83cf9ef9af46af6ac584021c452b49b1d4a3061ad24fccff9b7e58b6914e52f"
 menu_path: ["Realtime","Realtime","Guides","Guides","Realtime Reports","Realtime Reports"]
 section_path: ["Realtime","Realtime","Guides","Guides","Realtime Reports","Realtime Reports"]
+nav_prev: {"path": "supabase/docs/guides/realtime/settings/index.md", "title": "Settings"}
+nav_next: {"path": "supabase/docs/guides/security/hipaa-compliance/index.md", "title": "HIPAA Compliance and Supabase"}
 ---
+
 # 
 
 Realtime Reports
@@ -852,3 +855,4 @@ Contact support
 Discuss performance optimization strategies or investigate persistent latency issues
 
 [Support Portal](/dashboard/support/new)
+

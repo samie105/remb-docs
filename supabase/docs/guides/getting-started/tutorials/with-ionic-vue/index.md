@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:58:57.360Z"
 content_hash: "2c32a886e79fd712939584d6859bec2398d82bf3c8d9403805d9fbac4e014d0c"
 menu_path: ["Start with Supabase","Start with Supabase","Mobile tutorials","Mobile tutorials","Ionic Vue","Ionic Vue"]
 section_path: ["Start with Supabase","Start with Supabase","Mobile tutorials","Mobile tutorials","Ionic Vue","Ionic Vue"]
+nav_prev: {"path": "supabase/docs/guides/getting-started/tutorials/with-ionic-angular/index.md", "title": "Build a User Management App with Ionic Angular"}
+nav_next: {"path": "supabase/docs/guides/getting-started/tutorials/with-nextjs/index.md", "title": "Build a User Management App with Next.js"}
 ---
+
 # 
 
 Build a User Management App with Ionic Vue
@@ -197,3 +200,4 @@ Then create an `AvatarComponent`.
 Add the widget to the Account page (already included in the Account.vue code above since the example includes the Avatar component by default).
 
 At this stage you have a fully functional application!
+

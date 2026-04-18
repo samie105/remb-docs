@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:49:11.280Z"
 content_hash: "dadd625910134d0450fd19f055c202e0335842db1061d5798059d4ce7ad83691"
 menu_path: ["$$slots"]
 section_path: []
+nav_prev: {"path": "svelte/docs/svelte/legacy-slots/index.md", "title": "<slot>"}
+nav_next: {"path": "svelte/docs/svelte/legacy-svelte-fragment/index.md", "title": "<svelte:fragment>"}
 ---
+
 In runes mode, we know which [snippets](snippet) were provided to a component, as they're just normal props.
 
 In legacy mode, the way to know if content was provided for a given slot is with the `$$slots` object, whose keys are the names of the slots passed into the component by the parent.
@@ -41,3 +44,4 @@ App
 previous next
 
 [<slot>](/docs/svelte/legacy-slots) [<svelte:fragment>](/docs/svelte/legacy-svelte-fragment)
+

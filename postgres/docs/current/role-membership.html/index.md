@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:51:16.781Z"
 content_hash: "86882d317efe1b9041b3e644775c10878126b2e82c2393f89ddf3c232af4fb1c"
 menu_path: ["PostgreSQL: Documentation: 18: 21.3. Role Membership"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/event-log-registration.html/index.md", "title": "PostgreSQL: Documentation: 18: 18.12.\u00a0Registering Event Log on Windows"}
+nav_next: {"path": "postgres/docs/current/sql-refreshmaterializedview.html/index.md", "title": "PostgreSQL: Documentation: 18: REFRESH MATERIALIZED VIEW"}
 ---
+
 It is frequently convenient to group users together to ease management of privileges: that way, privileges can be granted to, or revoked from, a group as a whole. In PostgreSQL this is done by creating a role that represents the group, and then granting _membership_ in the group role to individual user roles.
 
 To set up a group role, first create the role:
@@ -64,3 +67,4 @@ To destroy a group role, use [`DROP ROLE`](https://www.postgresql.org/docs/curre
 DROP ROLE _`name`_;
 
 Any memberships in the group role are automatically revoked (but the member roles are not otherwise affected).
+

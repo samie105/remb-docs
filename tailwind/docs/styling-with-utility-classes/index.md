@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:34:34.066Z"
 content_hash: "32a993ec3a5cbb09784c68f6a373a5d04e7d407e2bfeb63c0bbc945f72c4ab94"
 menu_path: ["Styling with utility classes"]
 section_path: []
+nav_prev: {"path": "tailwind/docs/upgrade-guide/index.md", "title": "Upgrade guide"}
+nav_next: {"path": "tailwind/docs/hover-focus-and-other-states/index.md", "title": "Hover, focus, and other states"}
 ---
+
 Building complex components from a constrained set of primitive utilities.
 
 ## [Overview](#overview)
@@ -26,12 +29,12 @@ You have a new message!
 
 For example, in the UI above we've used:
 
-*   The [display](https://tailwindcss.com/docs/display#flex) and [padding](https://tailwindcss.com/docs/padding) utilities (`flex`, `shrink-0`, and `p-6`) to control the overall layout
-*   The [max-width](https://tailwindcss.com/docs/max-width) and [margin](https://tailwindcss.com/docs/margin) utilities (`max-w-sm` and `mx-auto`) to constrain the card width and center it horizontally
-*   The [background-color](https://tailwindcss.com/docs/background-color), [border-radius](https://tailwindcss.com/docs/border-radius), and [box-shadow](https://tailwindcss.com/docs/box-shadow) utilities (`bg-white`, `rounded-xl`, and `shadow-lg`) to style the card's appearance
-*   The [width](https://tailwindcss.com/docs/width) and [height](https://tailwindcss.com/docs/height) utilities (`size-12`) to set the width and height of the logo image
-*   The [gap](https://tailwindcss.com/docs/gap) utilities (`gap-x-4`) to handle the spacing between the logo and the text
-*   The [font-size](https://tailwindcss.com/docs/font-size), [color](https://tailwindcss.com/docs/text-color), and [font-weight](https://tailwindcss.com/docs/font-weight) utilities (`text-xl`, `text-black`, `font-medium`, etc.) to style the card text
+*   The [display](tailwind/docs/display/index.md#flex) and [padding](tailwind/docs/padding/index.md) utilities (`flex`, `shrink-0`, and `p-6`) to control the overall layout
+*   The [max-width](tailwind/docs/max-width/index.md) and [margin](tailwind/docs/margin/index.md) utilities (`max-w-sm` and `mx-auto`) to constrain the card width and center it horizontally
+*   The [background-color](tailwind/docs/background-color/index.md), [border-radius](tailwind/docs/border-radius/index.md), and [box-shadow](tailwind/docs/box-shadow/index.md) utilities (`bg-white`, `rounded-xl`, and `shadow-lg`) to style the card's appearance
+*   The [width](tailwind/docs/width/index.md) and [height](tailwind/docs/height/index.md) utilities (`size-12`) to set the width and height of the logo image
+*   The [gap](tailwind/docs/gap/index.md) utilities (`gap-x-4`) to handle the spacing between the logo and the text
+*   The [font-size](tailwind/docs/font-size/index.md), [color](https://tailwindcss.com/docs/text-color), and [font-weight](tailwind/docs/font-weight/index.md) utilities (`text-xl`, `text-black`, `font-medium`, etc.) to style the card text
 
 Styling things this way contradicts a lot of traditional best practices, but once you try it you'll quickly notice some really important benefits:
 
@@ -49,9 +52,9 @@ A common reaction to this approach is wondering, “isn’t this just inline sty
 
 But using utility classes has many important advantages over inline styles, for example:
 
-*   **Designing with constraints** — using inline styles, every value is a magic number. With utilities, you’re choosing styles from a [predefined design system](https://tailwindcss.com/docs/theme), which makes it much easier to build visually consistent UIs.
-*   **Hover, focus, and other states** — inline styles can’t target states like hover or focus, but Tailwind’s [state variants](https://tailwindcss.com/docs/hover-focus-and-other-states) make it easy to style those states with utility classes.
-*   **Media queries** — you can’t use media queries in inline styles, but you can use Tailwind’s [responsive variants](https://tailwindcss.com/docs/responsive-design) to build fully responsive interfaces easily.
+*   **Designing with constraints** — using inline styles, every value is a magic number. With utilities, you’re choosing styles from a [predefined design system](tailwind/docs/theme/index.md), which makes it much easier to build visually consistent UIs.
+*   **Hover, focus, and other states** — inline styles can’t target states like hover or focus, but Tailwind’s [state variants](tailwind/docs/hover-focus-and-other-states/index.md) make it easy to style those states with utility classes.
+*   **Media queries** — you can’t use media queries in inline styles, but you can use Tailwind’s [responsive variants](tailwind/docs/responsive-design/index.md) to build fully responsive interfaces easily.
 
 This component is fully responsive and includes a button with hover and active styles, and is built entirely with utility classes:
 
@@ -71,7 +74,7 @@ Hover over this button to see the background color change
 <button class="bg-sky-500 hover:bg-sky-700 ...">Save changes</button>
 ```
 
-These prefixes are called [variants](https://tailwindcss.com/docs/hover-focus-and-other-states) in Tailwind, and they only apply the styles from a utility class when the condition for that variant matches.
+These prefixes are called [variants](tailwind/docs/hover-focus-and-other-states/index.md) in Tailwind, and they only apply the styles from a utility class when the condition for that variant matches.
 
 Here's what the generated CSS looks like for the `hover:bg-sky-700` class:
 
@@ -97,7 +100,7 @@ You can even stack variants in Tailwind to apply a utility when multiple conditi
 <button class="bg-sky-500 disabled:hover:bg-sky-500 ...">Save changes</button>
 ```
 
-Learn more in the documentation styling elements on [hover, focus, and other states](https://tailwindcss.com/docs/hover-focus-and-other-states).
+Learn more in the documentation styling elements on [hover, focus, and other states](tailwind/docs/hover-focus-and-other-states/index.md).
 
 ### [Media queries and breakpoints](#media-queries-and-breakpoints)
 
@@ -117,7 +120,7 @@ Generated CSS
 .sm\:grid-cols-3 {  @media (width >= 40rem) {    grid-template-columns: repeat(3, minmax(0, 1fr));  }}
 ```
 
-Learn more in the [responsive design](https://tailwindcss.com/docs/responsive-design) documentation.
+Learn more in the [responsive design](tailwind/docs/responsive-design/index.md) documentation.
 
 ### [Targeting dark mode](#targeting-dark-mode)
 
@@ -147,7 +150,7 @@ Generated CSS
 .dark\:bg-gray-800 {  @media (prefers-color-scheme: dark) {    background-color: var(--color-gray-800);  }}
 ```
 
-Learn more in the [dark mode](https://tailwindcss.com/docs/dark-mode) documentation.
+Learn more in the [dark mode](tailwind/docs/dark-mode/index.md) documentation.
 
 ### [Using class composition](#using-class-composition)
 
@@ -169,11 +172,11 @@ Generated CSS
 
 The generated CSS above is slightly simplified, but the trick here is that each utility sets a CSS variable just for the effect it's meant to apply. Then the `filter` property looks at all of these variables, falling back to nothing if the variable hasn't been set.
 
-Tailwind uses this same approach for [gradients](https://tailwindcss.com/docs/background-image#adding-a-linear-gradient), [shadow colors](https://tailwindcss.com/docs/box-shadow#setting-the-shadow-color), [transforms](https://tailwindcss.com/docs/translate), and more.
+Tailwind uses this same approach for [gradients](tailwind/docs/background-image/index.md#adding-a-linear-gradient), [shadow colors](tailwind/docs/box-shadow/index.md#setting-the-shadow-color), [transforms](tailwind/docs/translate/index.md), and more.
 
 ### [Using arbitrary values](#using-arbitrary-values)
 
-Many utilities in Tailwind are driven by [theme variables](https://tailwindcss.com/docs/theme), like `bg-blue-500`, `text-xl`, and `shadow-md`, which map to your underlying color palette, type scale, and shadows.
+Many utilities in Tailwind are driven by [theme variables](tailwind/docs/theme/index.md), like `bg-blue-500`, `text-xl`, and `shadow-md`, which map to your underlying color palette, type scale, and shadows.
 
 When you need to use a one-off value outside of your theme, use the special square bracket syntax for specifying arbitrary values:
 
@@ -207,7 +210,7 @@ HTML
 <div class="[--gutter-width:1rem] lg:[--gutter-width:2rem]">  <!-- ... --></div>
 ```
 
-Learn more in the documentation on [using arbitrary values](https://tailwindcss.com/docs/adding-custom-styles#using-arbitrary-values).
+Learn more in the documentation on [using arbitrary values](tailwind/docs/adding-custom-styles/index.md#using-arbitrary-values).
 
 #### [How does this even work?](#how-does-this-even-work)
 
@@ -225,7 +228,7 @@ After it's found all of the potential classes, Tailwind generates the CSS for ea
 
 Since the CSS is generated based on the class name, Tailwind can recognize classes using arbitrary values like `bg-[#316ff6]` and generate the necessary CSS, even when the value isn't part of your theme.
 
-Learn more about how this works in [detecting classes in source files](https://tailwindcss.com/docs/detecting-classes-in-source-files).
+Learn more about how this works in [detecting classes in source files](tailwind/docs/detecting-classes-in-source-files/index.md).
 
 ### [Complex selectors](#complex-selectors)
 
@@ -259,9 +262,9 @@ Simplified CSS
 @media (hover: hover) {  a:hover span {    text-decoration-line: underline;  }}
 ```
 
-This `group-*` syntax works with other variants too, like `group-focus`, `group-active`, and [many more](https://tailwindcss.com/docs/hover-focus-and-other-states#styling-based-on-parent-state).
+This `group-*` syntax works with other variants too, like `group-focus`, `group-active`, and [many more](tailwind/docs/hover-focus-and-other-states/index.md#styling-based-on-parent-state).
 
-For really complex scenarios _(especially when styling HTML you don't control)_, Tailwind supports [arbitrary variants](https://tailwindcss.com/docs/adding-custom-styles#arbitrary-variants) which let you write any selector you want, directly in a class name:
+For really complex scenarios _(especially when styling HTML you don't control)_, Tailwind supports [arbitrary variants](tailwind/docs/adding-custom-styles/index.md#arbitrary-variants) which let you write any selector you want, directly in a class name:
 
 HTML
 
@@ -349,7 +352,7 @@ If you're using a templating language like ERB or Twig instead of something like
 
 While it's highly recommended that you create proper template partials for more complex components, writing some custom CSS is totally fine when a template partial feels heavy-handed.
 
-Here's what a `btn-primary` class might look like, using [theme variables](https://tailwindcss.com/docs/theme#with-custom-css) to keep the design consistent:
+Here's what a `btn-primary` class might look like, using [theme variables](tailwind/docs/theme/index.md#with-custom-css) to keep the design consistent:
 
 HTML
 
@@ -440,3 +443,4 @@ Compiled CSS
 ```
 @layer theme {  :root {    --tw-color-red-500: oklch(0.637 0.237 25.331);  }}@layer utilities {  .tw\:text-red-500 {    color: var(--tw-color-red-500);  }}
 ```
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:33:58.233Z"
 content_hash: "798a9f4963297f0612e80a411cd76ae8365a9e28c0b0512379d5f7214bd58a4a"
 menu_path: ["PostgreSQL: Documentation: 18: 12.8. Testing and Debugging Text Search"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/pgtestfsync.html/index.md", "title": "PostgreSQL: Documentation: 18: pg_test_fsync"}
+nav_next: {"path": "postgres/docs/current/sql-explain.html/index.md", "title": "PostgreSQL: Documentation: 18: EXPLAIN"}
 ---
+
 The behavior of a custom text search configuration can easily become confusing. The functions described in this section are useful for testing text search objects. You can test a complete configuration, or test parsers and dictionaries separately.
 
 ### 12.8.1. Configuration Testing [#](#TEXTSEARCH-CONFIGURATION-TESTING)
@@ -201,3 +204,4 @@ SELECT plainto\_tsquery('supernovae stars');
  plainto\_tsquery
 -----------------
  'sn'
+

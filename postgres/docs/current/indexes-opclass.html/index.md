@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:41:06.228Z"
 content_hash: "5e7752cde8ff8fb711b15e2cadf8d56876152f1657e6065441b056d15b59e2f6"
 menu_path: ["PostgreSQL: Documentation: 18: 11.10. Operator Classes and Operator Families"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/logical-replication-architecture.html/index.md", "title": "PostgreSQL: Documentation: 18: 29.9.\u00a0Architecture"}
+nav_next: {"path": "postgres/docs/current/indexes-examine.html/index.md", "title": "PostgreSQL: Documentation: 18: 11.12.\u00a0Examining Index Usage"}
 ---
+
 An index definition can specify an _operator class_ for each column of an index.
 
 CREATE INDEX _`name`_ ON _`table`_ (_`column`_ _`opclass`_ \[ ( _`opclass_options`_ ) \] \[_`sort options`_\] \[, ...\]);
@@ -62,3 +65,4 @@ SELECT am.amname AS index\_method,
 ### Tip
 
 [psql](https://www.postgresql.org/docs/current/app-psql.html "psql") has commands `\dAc`, `\dAf`, and `\dAo`, which provide slightly more sophisticated versions of these queries.
+

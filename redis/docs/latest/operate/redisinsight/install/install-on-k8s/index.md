@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:55:03.331Z"
 content_hash: "cf15ff804f4ba671d2c90632a561fd246286754c5fa4b2ed5b95505270b10915"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Insight","→","Redis Insight","→\n      \n        Install Redis Insight","→","Install Redis Insight","→\n      \n        Install on Kubernetes","→","Install on Kubernetes"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Insight","→","Redis Insight","→\n      \n        Install Redis Insight","→","Install Redis Insight","→\n      \n        Install on Kubernetes","→","Install on Kubernetes"]
+nav_prev: {"path": "redis/docs/latest/operate/redisinsight/install/index.md", "title": "Install Redis Insight"}
+nav_next: {"path": "redis/docs/latest/develop/programmability/lua-api/index.md", "title": "Redis Lua API reference"}
 ---
+
 # Install on Kubernetes
 
 How to install Redis Insight on Kubernetes
@@ -274,3 +277,4 @@ kubectl port-forward deployment/redisinsight 5540
 Open your browser and point to [http://localhost:5540](http://localhost:5540)
 
 ## On this page
+

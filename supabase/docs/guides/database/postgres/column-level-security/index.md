@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:56:23.019Z"
 content_hash: "bf4082c54fe8ebd02856eaf0fc6602ad87f90678b543e2b5b81849b8b92d3264"
 menu_path: ["Database","Database","Access and security","Access and security","Column Level Security","Column Level Security"]
 section_path: ["Database","Database","Access and security","Access and security","Column Level Security","Column Level Security"]
+nav_prev: {"path": "supabase/docs/guides/database/extensions/uuid-ossp/index.md", "title": "uuid-ossp: Unique Identifiers"}
+nav_next: {"path": "supabase/docs/guides/database/postgres/cascade-deletes/index.md", "title": "Cascade Deletes"}
 ---
+
 # 
 
 Column Level Security
@@ -108,3 +111,4 @@ To that file, add the SQL to create this `posts` table with row and column-level
 
 *   If you turn off a column privilege you won't be able to use that column at all.
 *   All operations (insert, update, delete) as well as using `select *` will fail.
+

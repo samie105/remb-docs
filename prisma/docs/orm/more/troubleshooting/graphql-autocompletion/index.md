@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:43:36.259Z"
 content_hash: "121ce0ac3b2438a9986e54eb79e095e0c31da07c1904f54554e64fdd66517ffc"
 menu_path: ["GraphQL autocompletion"]
 section_path: []
+nav_prev: {"path": "prisma/docs/orm/more/troubleshooting/check-constraints/index.md", "title": "Check constraints"}
+nav_next: {"path": "prisma/docs/orm/more/troubleshooting/nextjs/index.md", "title": "Next.js"}
 ---
+
 Troubleshooting
 
 Get autocompletion for Prisma Client queries in GraphQL resolvers with plain JavaScript
@@ -104,3 +107,4 @@ const resolvers = {
 ```
 
 [Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/more/troubleshooting/graphql-autocompletion.mdx)
+

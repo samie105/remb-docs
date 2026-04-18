@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:48:04.743Z"
 content_hash: "80d8f0bd3ef11cbca2747140e6995357a545cb86b52449aedb8add82d1323164"
 menu_path: ["Platform","Platform","Platform Configuration","Platform Configuration","PrivateLink","PrivateLink"]
 section_path: ["Platform","Platform","Platform Configuration","Platform Configuration","PrivateLink","PrivateLink"]
+nav_prev: {"path": "supabase/docs/guides/platform/project-transfer/index.md", "title": "Project Transfers"}
+nav_next: {"path": "supabase/docs/guides/platform/read-replicas/index.md", "title": "Read Replicas"}
 ---
+
 # 
 
 PrivateLink
@@ -185,3 +188,4 @@ Our support team will guide you through the configuration and ensure your privat
 PrivateLink is not currently available in the following regions:
 
 *   **eu-central-2 (Zurich)** - Expected availability: April 2026
+

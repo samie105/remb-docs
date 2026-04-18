@@ -9,15 +9,9 @@ last_crawled_at: "2026-04-18T17:07:45.285Z"
 content_hash: "440e75f65f5c2b1239433aca3652fec79ff214c3f2a55a5adbc5649c415cd7fd"
 menu_path: ["filter: contrast()"]
 section_path: []
+nav_prev: {"path": "tailwind/docs/filter-brightness/index.md", "title": "filter: brightness()"}
+nav_next: {"path": "tailwind/docs/filter-drop-shadow/index.md", "title": "filter: drop-shadow()"}
 ---
-[](/)
-
-[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
-
-1.  Filters
-2.  contrast
-
-Filters
 
 # filter: contrast()
 
@@ -114,3 +108,4 @@ Make your ideas look awesome, without relying on a designer.
 ](https://www.refactoringui.com/?ref=sidebar)
 
 Copyright © 2026 Tailwind Labs Inc.·[Trademark Policy](/brand)
+

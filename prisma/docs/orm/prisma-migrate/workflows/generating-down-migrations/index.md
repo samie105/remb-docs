@@ -9,14 +9,17 @@ last_crawled_at: "2026-04-18T16:50:44.723Z"
 content_hash: "21960e2d74b3853605a5b62bfbd6e478c94fdacce92b3c8ad4301542a5fbcf7e"
 menu_path: ["Generating down migrations"]
 section_path: []
+nav_prev: {"path": "prisma/docs/orm/prisma-migrate/workflows/development-and-production/index.md", "title": "Development and production"}
+nav_next: {"path": "prisma/docs/orm/prisma-migrate/workflows/native-database-functions/index.md", "title": "Native database functions"}
 ---
+
 Workflows
 
 How to generate a down migration SQL file that reverses a given migration file
 
 When generating a migration SQL file, you may wish to also create a "down migration" SQL file that reverses the schema changes in the corresponding "up migration" file. Note that "down migrations" are also sometimes called "migration rollbacks".
 
-This guide explains how to use Prisma Migrate's [`migrate diff` command](https://www.prisma.io/docs/orm/reference/prisma-cli-reference#migrate-diff) to create a down migration, and how to apply it to your production database with the [`db execute`](https://www.prisma.io/docs/orm/reference/prisma-cli-reference#db-execute) command in the case of a failed up migration.
+This guide explains how to use Prisma Migrate's [`migrate diff` command](prisma/docs/orm/reference/prisma-cli-reference/index.md#migrate-diff) to create a down migration, and how to apply it to your production database with the [`db execute`](prisma/docs/orm/reference/prisma-cli-reference/index.md#db-execute) command in the case of a failed up migration.
 
 When generating a down migration file, there are some considerations to be aware of:
 
@@ -24,7 +27,7 @@ When generating a down migration file, there are some considerations to be aware
 *   The down migration will revert your database schema, but other changes to data and application code that are carried out as part of the up migration will not be reverted. For example, if you have a script that changes data during the migration, this data will not be changed back when you run the down migration.
 *   You will not be able to use `migrate diff` to revert manually changed or added SQL in your migration files. If you have any custom additions, such as a view or trigger, you will need to:
     *   Create the down migration following [the instructions below](#how-to-generate-and-run-down-migrations)
-    *   Create the up migration using [`migrate dev --create-only`](https://www.prisma.io/docs/orm/reference/prisma-cli-reference), so that it can be edited before it is applied to the database
+    *   Create the up migration using [`migrate dev --create-only`](prisma/docs/orm/reference/prisma-cli-reference/index.md), so that it can be edited before it is applied to the database
     *   Manually add your custom SQL to the up migration (e.g. adding a view)
     *   Manually add the inverted custom SQL to the down migration (e.g. dropping the view)
 
@@ -108,3 +111,4 @@ To apply the down migration on your production database after a failed up migrat
 *   Use `migrate resolve` to record that you rolled back the up migration named `add_profile`:
 
 [Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/prisma-migrate/workflows/generating-down-migrations.mdx)
+

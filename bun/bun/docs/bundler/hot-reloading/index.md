@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:35:04.940Z"
 content_hash: "525a14476d702131bb5033e104e2fc99aa128f3eb73b2d2a691dc1ef2c13dfe8"
 menu_path: ["Hot reloading"]
 section_path: []
+nav_prev: {"path": "bun/bun/docs/bundler/html-static/index.md", "title": "HTML & static sites"}
+nav_next: {"path": "bun/bun/docs/bundler/index.md", "title": "Bundler"}
 ---
+
 Hot Module Replacement (HMR) allows you to update modules in a running application without needing a full page reload. This preserves the application state and improves the development experience.
 
 Bun implements a client-side HMR API modeled after [Vite’s `import.meta.hot` API](https://vite.dev/guide/api-hmr). It can be checked for with `if (import.meta.hot)`, tree-shaking it in production.
@@ -252,3 +255,4 @@ when the HMR WebSocket connection is lost. This can indicate the development ser
 `bun:ws:connect`
 
 when the HMR WebSocket connects or re-connects.
+

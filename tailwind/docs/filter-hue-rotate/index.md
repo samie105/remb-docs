@@ -9,15 +9,9 @@ last_crawled_at: "2026-04-18T17:08:22.459Z"
 content_hash: "7bf404e628ca8e2b28c78f0a36370482dbf8172b98adf32fa3915dc79a250a30"
 menu_path: ["filter: hue-rotate()"]
 section_path: []
+nav_prev: {"path": "tailwind/docs/filter-grayscale/index.md", "title": "filter: grayscale()"}
+nav_next: {"path": "tailwind/docs/filter-invert/index.md", "title": "filter: invert()"}
 ---
-[](/)
-
-[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
-
-1.  Filters
-2.  hue-rotate
-
-Filters
 
 # filter: hue-rotate()
 
@@ -135,3 +129,4 @@ Short, tactical video lessons from the creator of Tailwind CSS, delivered direct
 [Get the free course](/build-uis-that-dont-suck)
 
 Copyright © 2026 Tailwind Labs Inc.·[Trademark Policy](/brand)
+

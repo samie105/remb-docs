@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:00:58.464Z"
 content_hash: "4c8930c7d9cd17f46703946b5c2cb7ac2f90ca6a2a70ccb15abd54d1cef5b6a2"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        RedisVL","→","RedisVL","→\n      \n        User Guides","→","User Guides","→\n      \n        Vectorizers","→","Vectorizers"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        RedisVL","→","RedisVL","→\n      \n        User Guides","→","User Guides","→\n      \n        Vectorizers","→","Vectorizers"]
+nav_prev: {"path": "redis/docs/latest/develop/clients/jedis/vecsets/index.md", "title": "Vector set embeddings"}
+nav_next: {"path": "redis/docs/latest/develop/clients/nodejs/vecsets/index.md", "title": "Vector set embeddings"}
 ---
+
 # Vectorizers
 
 In this notebook, we will show how to use RedisVL to create embeddings using the built-in text embedding vectorizers. Today RedisVL supports:
@@ -550,3 +553,4 @@ index.delete()
 ```
 
 ## On this page
+

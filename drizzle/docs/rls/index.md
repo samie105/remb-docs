@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:19:47.546Z"
 content_hash: "d7ca435af710cfef7f520b11ac794c1cf79a1e7d7010cb89f26a6894b2a0d82b"
 menu_path: ["Row-Level Security (RLS)"]
 section_path: []
+nav_prev: {"path": "drizzle/docs/relations-v2/index.md", "title": "Drizzle relations"}
+nav_next: {"path": "drizzle/docs/extensions/pg/index.md", "title": "PostgreSQL extensions"}
 ---
+
 With Drizzle, you can enable Row-Level Security (RLS) for any Postgres table, create policies with various options, and define and manage the roles those policies apply to.
 
 Drizzle supports a raw representation of Postgres policies and roles that can be used in any way you want. This works with popular Postgres database providers such as `Neon` and `Supabase`.
@@ -143,7 +146,7 @@ export const policy = pgPolicy("authenticated role insert policy", {
 
 If you are using drizzle-kit to manage your schema and roles, there may be situations where you want to refer to roles that are not defined in your Drizzle schema. In such cases, you may want drizzle-kit to skip managing these roles without having to define each role in your drizzle schema and marking it with `.existing()`.
 
-In these cases, you can use `entities.roles` in `drizzle.config.ts`. For a complete reference, refer to the the [`drizzle.config.ts`](https://orm.drizzle.team/docs/docs/drizzle-config-file) documentation.
+In these cases, you can use `entities.roles` in `drizzle.config.ts`. For a complete reference, refer to the the [`drizzle.config.ts`](drizzle/docs/docs/drizzle-config-file/index.md) documentation.
 
 By default, `drizzle-kit` does not manage roles for you, so you will need to enable this feature in `drizzle.config.ts`.
 
@@ -256,7 +259,7 @@ With Drizzle, you can also specify RLS policies on views. For this, you need to 
 
 IMPORTANT
 
-`getColumns` available starting from `drizzle-orm@1.0.0-beta.2`(read more [here](https://orm.drizzle.team/docs/upgrade-v1))
+`getColumns` available starting from `drizzle-orm@1.0.0-beta.2`(read more [here](drizzle/docs/upgrade-v1/index.md))
 
 If you are on pre-1 version(like `0.45.1`) then use `getTableColumns`
 
@@ -546,3 +549,4 @@ async function getRooms() {
   return db.rls((tx) => tx.select().from(rooms));
 }
 ```
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:40:43.600Z"
 content_hash: "c786985b3b106fa01adb72b7834a08eb982b5911a1bcb4b8671ba63d6982c3cc"
 menu_path: ["PostgreSQL: Documentation: 18: F.39. seg — a datatype for line segments or floating point intervals"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/app-pgresetxlog.html/index.md", "title": "PostgreSQL: Documentation: 18: O.4.\u00a0pg_resetxlog renamed to pg_resetwal"}
+nav_next: {"path": "postgres/docs/current/connect-estab.html/index.md", "title": "PostgreSQL: Documentation: 18: 51.2.\u00a0How Connections Are Established"}
 ---
+
 This module implements a data type `seg` for representing line segments, or floating point intervals. `seg` can represent uncertainty in the interval endpoints, making it especially useful for representing laboratory measurements.
 
 This module is considered “trusted”, that is, it can be installed by non-superusers who have `CREATE` privilege on the current database.
@@ -184,3 +187,4 @@ The performance of an R-tree index can largely depend on the initial order of in
 Original author: Gene Selkov, Jr. `<[selkovjr@mcs.anl.gov](mailto:selkovjr@mcs.anl.gov)>`, Mathematics and Computer Science Division, Argonne National Laboratory.
 
 My thanks are primarily to Prof. Joe Hellerstein ([https://dsf.berkeley.edu/jmh/](https://dsf.berkeley.edu/jmh/)) for elucidating the gist of the GiST ([http://gist.cs.berkeley.edu/](http://gist.cs.berkeley.edu/)). I am also grateful to all Postgres developers, present and past, for enabling myself to create my own world and live undisturbed in it. And I would like to acknowledge my gratitude to Argonne Lab and to the U.S. Department of Energy for the years of faithful support of my database research.
+

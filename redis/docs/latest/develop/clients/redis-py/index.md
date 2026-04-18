@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:44:09.035Z"
 content_hash: "880c22961dad0976d7cea4797b9fde0b7306a49c261f3fb2fe43cebc523ae624"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Connect with Redis client API libraries","→","Connect with Redis client API libraries","→\n      \n        redis-py guide (Python)","→","redis-py guide (Python)"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Connect with Redis client API libraries","→","Connect with Redis client API libraries","→\n      \n        redis-py guide (Python)","→","redis-py guide (Python)"]
+nav_prev: {"path": "redis/docs/latest/integrate/redis-py/index.md", "title": "Python client for Redis"}
+nav_next: {"path": "redis/docs/latest/develop/use-cases/time-series-dashboard/redis-py/index.md", "title": "Rolling sensor graph demo with Redis and redis-py"}
 ---
+
 # redis-py guide (Python)
 
 Connect your Python application to a Redis database
@@ -188,3 +191,4 @@ The [`redis-py`](https://redis.readthedocs.io/en/stable/index.html) website has 
 See also the other pages in this section for more information and examples:
 
 ## On this page
+

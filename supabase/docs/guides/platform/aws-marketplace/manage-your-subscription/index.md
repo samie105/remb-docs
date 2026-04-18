@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:59:47.080Z"
 content_hash: "2d4c6d1028cda0595e04096a2057f563dceaaa3adc9ae9db1c34ef65740cfb01"
 menu_path: ["Platform","Platform","More","More","More","AWS Marketplace","AWS Marketplace","Manage your subscription","Manage your subscription"]
 section_path: ["Platform","Platform","More","More","More","AWS Marketplace","AWS Marketplace","Manage your subscription","Manage your subscription"]
+nav_prev: {"path": "supabase/docs/guides/platform/aws-marketplace/getting-started/index.md", "title": "Getting Started"}
+nav_next: {"path": "supabase/docs/guides/platform/manage-your-usage/advanced-mfa-phone/index.md", "title": "Manage Advanced MFA Phone usage"}
 ---
+
 # 
 
 Manage your subscription
@@ -55,3 +58,4 @@ You can manage your payment methods through the [AWS Billing and Cost Management
 ## Manage your billing details[#](#manage-your-billing-details)
 
 You can manage billing details, such as the billing address or tax ID, through the [AWS Billing and Cost Management console](https://console.aws.amazon.com/billing).
+

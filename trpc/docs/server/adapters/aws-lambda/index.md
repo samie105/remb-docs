@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:49:02.255Z"
 content_hash: "86411297f959469829e8f56f18c62e9f436e084a2eaf92fbfad5a0e99315198f"
 menu_path: ["AWS Lambda + API Gateway Adapter"]
 section_path: []
+nav_prev: {"path": "trpc/docs/server/adapters/index.md", "title": "Overview"}
+nav_next: {"path": "trpc/docs/server/adapters/express/index.md", "title": "Express Adapter"}
 ---
+
 ## AWS Lambda adapter[​](#aws-lambda-adapter "Direct link to AWS Lambda adapter")
 
 The AWS Lambda adapter is supported for API Gateway [REST API(v1)](https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-rest-api.html) and [HTTP API(v2)](https://docs.aws.amazon.com/apigateway/latest/developerguide/http-api.html), and [Lambda Function URL](https://docs.aws.amazon.com/lambda/latest/dg/urls-configuration.html) use cases.
@@ -204,3 +207,4 @@ ts
   `}),`
 
 `);`
+

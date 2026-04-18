@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:46:08.587Z"
 content_hash: "429bb2af4f2798aac4b175b8a763bd7c6a7e749ad36c9850c4ee145aa1876cfb"
 menu_path: ["Start with Supabase","Start with Supabase","Features","Features"]
 section_path: ["Start with Supabase","Start with Supabase","Features","Features"]
+nav_prev: {"path": "supabase/docs/guides/getting-started/byo-mcp/index.md", "title": "Deploy MCP servers"}
+nav_next: {"path": "supabase/docs/guides/getting-started/mcp/index.md", "title": "Model context protocol (MCP)"}
 ---
+
 # 
 
 Features
@@ -630,3 +633,4 @@ N/A
 
 *   ✅ = Fully Available
 *   🚧 = Available, but requires external tools or configuration
+

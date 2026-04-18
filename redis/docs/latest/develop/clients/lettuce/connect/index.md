@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:46:42.919Z"
 content_hash: "8df55614df69d24f953575a70472cdbe823be025d12bed189f5be1fe0ff2cfa2"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Connect with Redis client API libraries","→","Connect with Redis client API libraries","→\n      \n        Lettuce guide (Java)","→","Lettuce guide (Java)","→\n      \n        Connect to the server","→","Connect to the server"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Connect with Redis client API libraries","→","Connect with Redis client API libraries","→\n      \n        Lettuce guide (Java)","→","Lettuce guide (Java)","→\n      \n        Connect to the server","→","Connect to the server"]
+nav_prev: {"path": "redis/docs/latest/develop/clients/jedis/connect/index.md", "title": "Connect to the server"}
+nav_next: {"path": "redis/docs/latest/develop/clients/nodejs/connect/index.md", "title": "Connect to the server"}
 ---
+
 # Connect to the server
 
 Connect your Java application to a Redis database
@@ -343,3 +346,4 @@ Note:
 Redis Cloud supports relaxed timeouts _only_ (and not pre-handoffs) for SCH if you are using either [AWS PrivateLink](/docs/latest/operate/rc/security/aws-privatelink/) or [Google Cloud Private Service Connect](/docs/latest/operate/rc/security/private-service-connect/) (see [Smart client handoffs](/docs/latest/develop/clients/sch/#redis-cloud) for more information). To use relaxed timeouts with these services, you should set `endpointType(EndpointType.NONE)` when you connect. All other configurations have full support for both relaxed timeouts and pre-handoffs.
 
 ## On this page
+

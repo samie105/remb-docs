@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:38:13.030Z"
 content_hash: "7a63561ff92ab323e42f9c124d8378fa083794c71835fe15cab0d89f531e3574"
 menu_path: ["Fastify Adapter"]
 section_path: []
+nav_prev: {"path": "trpc/docs/v10/server/adapters/fetch/index.md", "title": "Fetch / Edge Runtimes Adapter"}
+nav_next: {"path": "trpc/docs/v10/server/adapters/nextjs/index.md", "title": "Next.js Adapter"}
 ---
+
 ## Example app[​](#example-app "Direct link to Example app")
 
 The best way to start with the Fastify adapter is to take a look at the example application.
@@ -36,17 +39,17 @@ bash
 
 ### Create the router[​](#create-the-router "Direct link to Create the router")
 
-First of all you need a [router](https://trpc.io/docs/server/routers) to handle your queries, mutations and subscriptions.
+First of all you need a [router](trpc/docs/server/routers/index.md) to handle your queries, mutations and subscriptions.
 
 A sample router is given below, save it in a file named `router.ts`.
 
 router.ts
 
-If your router file starts getting too big, split your router into several subrouters each implemented in its own file. Then [merge them](https://trpc.io/docs/server/merging-routers) into a single root `appRouter`.
+If your router file starts getting too big, split your router into several subrouters each implemented in its own file. Then [merge them](trpc/docs/server/merging-routers/index.md) into a single root `appRouter`.
 
 ### Create the context[​](#create-the-context "Direct link to Create the context")
 
-Then you need a [context](https://trpc.io/docs/server/context) that will be created for each request.
+Then you need a [context](trpc/docs/server/context/index.md) that will be created for each request.
 
 A sample context is given below, save it in a file named `context.ts`:
 
@@ -142,7 +145,7 @@ with `req.body` of type `User`
 
 ## How to enable subscriptions (WebSocket)[​](#how-to-enable-subscriptions-websocket "Direct link to How to enable subscriptions (WebSocket)")
 
-The Fastify adapter supports [subscriptions](https://trpc.io/docs/v10/subscriptions) via the [@fastify/websocket](https://www.npmjs.com/package/@fastify/websocket) plugin. All you have to do in addition to the above steps is install the dependency, add some subscriptions to your router and activate the `useWSS` [option](#fastify-plugin-options) in the plugin. The minimum Fastify version required for `@fastify/websocket` is `3.11.0`.
+The Fastify adapter supports [subscriptions](trpc/docs/v10/subscriptions/index.md) via the [@fastify/websocket](https://www.npmjs.com/package/@fastify/websocket) plugin. All you have to do in addition to the above steps is install the dependency, add some subscriptions to your router and activate the `useWSS` [option](#fastify-plugin-options) in the plugin. The minimum Fastify version required for `@fastify/websocket` is `3.11.0`.
 
 ### Install dependencies[​](#install-dependencies-1 "Direct link to Install dependencies")
 
@@ -247,3 +250,4 @@ trpcOptions
 `false`
 
 `n/a`
+

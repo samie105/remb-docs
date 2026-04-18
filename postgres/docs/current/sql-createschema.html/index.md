@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:43:01.529Z"
 content_hash: "4be5e39a97de5da2e218e0c83af90ec3b0c564aa6e32e48c3bdb13521d2afdfc"
 menu_path: ["PostgreSQL: Documentation: 18: CREATE SCHEMA"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/release-18-1.html/index.md", "title": "PostgreSQL: Documentation: 18: E.3.\u00a0Release 18.1"}
+nav_next: {"path": "postgres/docs/current/recovery-config.html/index.md", "title": "PostgreSQL: Documentation: 18: O.1.\u00a0recovery.conf file merged into postgresql.conf"}
 ---
+
 CREATE SCHEMA — define a new schema
 
 ## Synopsis
@@ -95,3 +98,4 @@ The SQL standard specifies that the subcommands in `CREATE SCHEMA` can appear in
 According to the SQL standard, the owner of a schema always owns all objects within it. PostgreSQL allows schemas to contain objects owned by users other than the schema owner. This can happen only if the schema owner grants the `CREATE` privilege on their schema to someone else, or a superuser chooses to create objects in it.
 
 The `IF NOT EXISTS` option is a PostgreSQL extension.
+

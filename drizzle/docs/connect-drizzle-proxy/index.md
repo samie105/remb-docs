@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:38:55.242Z"
 content_hash: "283980a631610b871fdab19d9ff83ce77f6da669baab8337945d733ea096e8ee"
 menu_path: ["Drizzle HTTP proxy"]
 section_path: []
+nav_prev: {"path": "drizzle/docs/connect-aws-data-api-mysql/index.md", "title": "Drizzle <> AWS Data API MySQL"}
+nav_next: {"path": "drizzle/docs/column-types/pg/index.md", "title": "PostgreSQL column types"}
 ---
+
 How an HTTP Proxy works and why you might need it
 
 Drizzle Proxy is used when you need to implement your own driver communication with the database. It can be used in several cases, such as adding custom logic at the query stage with existing drivers. The most common use is with an HTTP driver, which sends queries to your server with the database, executes the query on your database, and responds with raw data that Drizzle ORM can then map to results
@@ -105,3 +108,4 @@ app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
 });
 ```
+

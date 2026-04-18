@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:38:24.294Z"
 content_hash: "ab2abc6b62fca05dc3a0d674079cbf50c936b158c5f1e2db4a0b2dc2fcc84671"
 menu_path: ["Front-end frameworks"]
 section_path: []
+nav_prev: {"path": "astro/en/guides/client-side-scripts/index.md", "title": "Scripts and event handling"}
+nav_next: {"path": "astro/en/guides/markdown-content/index.md", "title": "Markdown in Astro"}
 ---
+
 # Front-end frameworks
 
 Build your Astro website without sacrificing your favorite component framework. Create Astro [islands](/en/concepts/islands/) with the UI frameworks of your choice.
@@ -186,3 +189,4 @@ If you try to hydrate an Astro component with a `client:` modifier, you will get
 Learn more about [client-side `<script>` tags in Astro components](/en/guides/client-side-scripts/)
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

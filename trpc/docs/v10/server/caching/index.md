@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:38:45.279Z"
 content_hash: "34de0be4d37337043ae4b821d7133406898ea553e43ebfa7f60a56bcc75db2e7"
 menu_path: ["Response Caching"]
 section_path: []
+nav_prev: {"path": "trpc/docs/v10/server/authorization/index.md", "title": "Authorization"}
+nav_next: {"path": "trpc/docs/v10/server/data-transformers/index.md", "title": "Data Transformers"}
 ---
+
 The below examples uses [Vercel's edge caching](https://vercel.com/docs/edge-network/caching) to serve data to your users as fast as possible.
 
 If you turn on SSR in your app, you might discover that your app loads slowly on, for instance, Vercel, but you can actually statically render your whole app without using SSG; [read this Twitter thread](https://twitter.com/alexdotjs/status/1386274093041950722) for more insights.
@@ -215,3 +218,4 @@ tsx
   `},`
 
 `});`
+

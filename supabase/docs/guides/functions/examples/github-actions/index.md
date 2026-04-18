@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:57:31.183Z"
 content_hash: "c12128e3158e8c4f59022fcf2f41bc4ebd05dcb7d3aee9e55cb295ff9d2229f8"
 menu_path: ["GitHub Actions"]
 section_path: []
+nav_prev: {"path": "supabase/docs/guides/functions/examples/elevenlabs-transcribe-speech/index.md", "title": "Transcription Telegram Bot"}
+nav_next: {"path": "supabase/docs/guides/functions/examples/image-manipulation/index.md", "title": "Image Manipulation"}
 ---
+
 # 
 
 GitHub Actions
@@ -29,3 +32,4 @@ Individual function configuration like [JWT verification](/docs/guides/cli/confi
 ```
 1[functions.hello-world]2verify_jwt = false
 ```
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:54:11.049Z"
 content_hash: "9cc33903462ac03837ec7dd7298526b0aa517a45c5e94a76bdacc01e8b39b7ca"
 menu_path: ["Auth","Auth","More","More","More","Social Login (OAuth)","Social Login (OAuth)","Azure (Microsoft)","Azure (Microsoft)"]
 section_path: ["Auth","Auth","More","More","More","Social Login (OAuth)","Social Login (OAuth)","Azure (Microsoft)","Azure (Microsoft)"]
+nav_prev: {"path": "supabase/docs/guides/auth/social-login/auth-apple/index.md", "title": "Login with Apple"}
+nav_next: {"path": "supabase/docs/guides/auth/social-login/auth-bitbucket/index.md", "title": "Login with Bitbucket"}
 ---
+
 # 
 
 Login with Azure (Microsoft)
@@ -164,3 +167,4 @@ Azure OAuth2.0 doesn't return the `provider_refresh_token` by default. If you ne
 *   [Azure Developer Account](https://portal.azure.com)
 *   [GitHub Discussion](https://github.com/supabase/gotrue/pull/54#issuecomment-757043573)
 *   [Potential Risk of Privilege Escalation in Azure AD Applications](https://msrc.microsoft.com/blog/2023/06/potential-risk-of-privilege-escalation-in-azure-ad-applications/)
+

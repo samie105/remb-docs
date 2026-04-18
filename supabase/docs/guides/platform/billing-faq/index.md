@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:47:10.181Z"
 content_hash: "345a1c9c3464f34eae89ccc7251229b7b690bdb492a3173aaa1f013cbaa14c66"
 menu_path: ["Platform","Platform","Billing","Billing","Billing FAQ","Billing FAQ"]
 section_path: ["Platform","Platform","Billing","Billing","Billing FAQ","Billing FAQ"]
+nav_prev: {"path": "supabase/docs/guides/platform/billing-on-supabase/index.md", "title": "About billing on Supabase"}
+nav_next: {"path": "supabase/docs/guides/platform/clone-project/index.md", "title": "Restore to a new project"}
 ---
+
 # 
 
 Billing FAQ
@@ -301,3 +304,4 @@ If you use Supabase through a cloud marketplace such as AWS Marketplace or Verce
 #### Who should I contact with questions about tax?[#](#who-should-i-contact-with-questions-about-tax)
 
 For questions about tax collection, exemptions, or your Tax ID, please open a [support ticket](https://supabase.help).
+

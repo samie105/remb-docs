@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:47:28.789Z"
 content_hash: "03ad48d4883add460bc0534c6f624d3df6eba38be3d3badcf4c965c78720dbb5"
 menu_path: ["Adapter Server Entrypoint API Reference"]
 section_path: []
+nav_prev: {"path": "astro/en/reference/modules/astro-actions/index.md", "title": "Actions API Reference"}
+nav_next: {"path": "astro/en/reference/modules/astro-assets/index.md", "title": "Image and Assets API Reference"}
 ---
+
 # Adapter Server Entrypoint API Reference
 
 This module helps adapter authors [build a server entrypoint](/en/reference/adapter-reference/#building-a-server-entrypoint) while supporting pages rendered in development mode or that have been prebuilt through `astro build`.
@@ -298,3 +301,4 @@ const routeData = app.match(request);if (routeData) {  return app.render(request
 ```
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

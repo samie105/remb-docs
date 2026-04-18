@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:38:05.890Z"
 content_hash: "de9cdd83e186828896bffb9fa639db02e0de2803808c9036c84abbd06d208465"
 menu_path: ["Fetch / Edge Runtimes Adapter"]
 section_path: []
+nav_prev: {"path": "trpc/docs/v10/server/adapters/express/index.md", "title": "Express Adapter"}
+nav_next: {"path": "trpc/docs/v10/server/adapters/fastify/index.md", "title": "Fastify Adapter"}
 ---
+
 You can create a tRPC server within any edge runtime that follow the [WinterCG](https://wintercg.org/), specifically the [Minimum Common Web Platform API](https://common-min-api.proposal.wintercg.org/) specification.
 
 Some of these runtimes includes, but not limited to:
@@ -64,7 +67,7 @@ Source
 
 ## How to use tRPC server with an edge runtime[​](#how-to-use-trpc-server-with-an-edge-runtime "Direct link to How to use tRPC server with an edge runtime")
 
-tRPC provides a [fetch adapter](https://trpc.io/docs/server/adapters/fetch) that uses the native [`Request`](https://developer.mozilla.org/en-US/docs/Web/API/Request) and [`Response`](https://developer.mozilla.org/en-US/docs/Web/API/Response) APIs as input and output. The tRPC-specific code is the same across all runtimes, the only difference being how the response is returned.
+tRPC provides a [fetch adapter](trpc/docs/server/adapters/fetch/index.md) that uses the native [`Request`](https://developer.mozilla.org/en-US/docs/Web/API/Request) and [`Response`](https://developer.mozilla.org/en-US/docs/Web/API/Response) APIs as input and output. The tRPC-specific code is the same across all runtimes, the only difference being how the response is returned.
 
 tRPC includes an adapter for the native [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) out of the box. This adapter lets you convert your tRPC router into a [`Request`](https://developer.mozilla.org/en-US/docs/Web/API/Request) handler that returns [`Response`](https://developer.mozilla.org/en-US/docs/Web/API/Response) objects.
 
@@ -108,17 +111,17 @@ sh
 
 ### Create the router[​](#create-the-router "Direct link to Create the router")
 
-First of all you need a [router](https://trpc.io/docs/server/routers) to handle your queries, mutations and subscriptions.
+First of all you need a [router](trpc/docs/server/routers/index.md) to handle your queries, mutations and subscriptions.
 
 A sample router is given below, save it in a file named `router.ts`.
 
 router.ts
 
-If your router file starts getting too big, split your router into several subrouters each implemented in its own file. Then [merge them](https://trpc.io/docs/server/merging-routers) into a single root `appRouter`.
+If your router file starts getting too big, split your router into several subrouters each implemented in its own file. Then [merge them](trpc/docs/server/merging-routers/index.md) into a single root `appRouter`.
 
 ### Create the context[​](#create-the-context "Direct link to Create the context")
 
-Then you need a [context](https://trpc.io/docs/server/context) that will be created for each request.
+Then you need a [context](trpc/docs/server/context/index.md) that will be created for each request.
 
 A sample context is given below, save it in a file named `context.ts`:
 
@@ -510,3 +513,4 @@ where `INPUT` is a URI-encoded JSON string.
 `POST http://localhost:3000/trpc/createUser`
 
 with `req.body` of type `User`
+

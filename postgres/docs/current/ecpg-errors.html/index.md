@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:42:00.064Z"
 content_hash: "53e38cc9c3434b1422935eccb2819e58bb01cfe3327ae3a65fae65649d12cb12"
 menu_path: ["PostgreSQL: Documentation: 18: 34.8. Error Handling"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/server-shutdown.html/index.md", "title": "PostgreSQL: Documentation: 18: 18.5.\u00a0Shutting Down the Server"}
+nav_next: {"path": "postgres/docs/current/ecpg-sql-describe.html/index.md", "title": "PostgreSQL: Documentation: 18: DESCRIBE"}
 ---
+
 This section describes how you can handle exceptional conditions and warnings in an embedded SQL program. There are two nonexclusive facilities for this.
 
 ### 34.8.1. Setting Callbacks [#](#ECPG-WHENEVER)
@@ -347,3 +350,4 @@ There is no active (in-progress) transaction. (SQLSTATE 25P01)
 \-605 (`ECPG_WARNING_PORTAL_EXISTS`) [#](#ECPG-SQLSTATE-SQLCODE-ECPG-WARNING-PORTAL-EXISTS)
 
 An existing cursor name was specified. (SQLSTATE 42P03)
+

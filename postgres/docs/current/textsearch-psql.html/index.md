@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:49:36.836Z"
 content_hash: "63bdeb170c02f1a40edc24ae4fb77b1eb5faab2535ad8ca3b388a8f8a96054e7"
 menu_path: ["PostgreSQL: Documentation: 18: 12.10. psql Support"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/dynamic-trace.html/index.md", "title": "PostgreSQL: Documentation: 18: 27.5.\u00a0Dynamic Tracing"}
+nav_next: {"path": "postgres/docs/current/datetime-units-history.html/index.md", "title": "PostgreSQL: Documentation: 18: B.6.\u00a0History of Units"}
 ---
+
 Information about text search configuration objects can be obtained in psql using a set of commands:
 
 \\dF{d,p,t}\[+\] \[PATTERN\]
@@ -167,3 +170,4 @@ List text search templates (add `+` for more detail).
  pg\_catalog | snowball  | snowball stemmer
  pg\_catalog | synonym   | synonym dictionary: replace word by its synonym
  pg\_catalog | thesaurus | thesaurus dictionary: phrase by phrase substitution
+

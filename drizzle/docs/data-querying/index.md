@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:44:50.510Z"
 content_hash: "00c767e32fe55f1da31e3c7c04adc83deddb46b7a5a33385f23775043dceccbf"
 menu_path: ["Drizzle Queries + CRUD"]
 section_path: []
+nav_prev: {"path": "drizzle/docs/connect-overview/index.md", "title": "Database connection with Drizzle"}
+nav_next: {"path": "drizzle/docs/migrations/index.md", "title": "Drizzle migrations fundamentals"}
 ---
+
 ## Drizzle Queries + CRUD
 
 Drizzle gives you a few ways for querying your database and it’s up to you to decide which one you’ll need in your next project. It can be either SQL-like syntax or Relational Syntax. Let’s check them:
@@ -116,3 +119,4 @@ const mainQuery = await db
 ```
 
 #### What’s next?[](#whats-next)
+

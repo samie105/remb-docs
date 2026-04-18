@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:12:50.880Z"
 content_hash: "15bd097157f6ab42852c2537fdc8e2e911fdf9d9aaf379fa339060e3aa38f20e"
 menu_path: ["Events - Web documentation"]
 section_path: []
+nav_prev: {"path": "deno/deno/api/web/encoding/index.md", "title": "Encoding - Web documentation"}
+nav_next: {"path": "deno/deno/api/web/fetch/index.md", "title": "Fetch - Web documentation"}
 ---
+
 ### Functions [#](#Functions)
 
 f
@@ -202,3 +205,4 @@ v
 Events measuring progress of an underlying process, like an HTTP request (for an XMLHttpRequest, or the loading of the underlying resource of an ,
 
 , ,
+

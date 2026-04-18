@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:43:38.223Z"
 content_hash: "d54e8870cb5d8834dd1d360d1b21cd4b933698defbcb34f8ff402e683ce8313a"
 menu_path: ["PostgreSQL: Documentation: 18: NOTIFY"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/ecpg-concept.html/index.md", "title": "PostgreSQL: Documentation: 18: 34.1.\u00a0The Concept"}
+nav_next: {"path": "postgres/docs/current/server-start.html/index.md", "title": "PostgreSQL: Documentation: 18: 18.3.\u00a0Starting the Database Server"}
 ---
+
 NOTIFY — generate a notification
 
 ## Synopsis
@@ -73,3 +76,4 @@ Asynchronous notification "foo" with payload "payload" received from server proc
 ## Compatibility
 
 There is no `NOTIFY` statement in the SQL standard.
+

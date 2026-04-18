@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:56:51.890Z"
 content_hash: "34a42e2b69a62b283e061e23e12fdde214a3fd348fca538cd58688d9da1b0825"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Install Redis Open Source","→","Install Redis Open Source","→\n      \n        Install Redis Open Source","→","Install Redis Open Source","→\n      \n        Install Redis Open Source on Linux","→","Install Redis Open Source on Linux"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Install Redis Open Source","→","Install Redis Open Source","→\n      \n        Install Redis Open Source","→","Install Redis Open Source","→\n      \n        Install Redis Open Source on Linux","→","Install Redis Open Source on Linux"]
+nav_prev: {"path": "redis/docs/latest/operate/rc/changelog/version-release-notes/8-4/index.md", "title": "Redis 8.4 release notes and breaking changes"}
+nav_next: {"path": "redis/docs/latest/integrate/google-adk/search-tools/index.md", "title": "Redis search tools"}
 ---
+
 # Install Redis Open Source on Linux
 
 How to install Redis Open Source using RPM
@@ -59,3 +62,4 @@ sudo systemctl start redis
 ```
 
 ## On this page
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:13:04.599Z"
 content_hash: "7a2cc3d2100a06565adb205401b6ff41344016126ecb931d4121ae50f4204e95"
 menu_path: ["Fetch - Web documentation"]
 section_path: []
+nav_prev: {"path": "deno/deno/api/web/events/index.md", "title": "Events - Web documentation"}
+nav_next: {"path": "deno/deno/api/web/file/index.md", "title": "File - Web documentation"}
 ---
+
 ### Functions [#](#Functions)
 
 f
@@ -252,3 +255,4 @@ T
 [ResponseType](./././~/ResponseType "ResponseType")
 
 No documentation available
+

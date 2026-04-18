@@ -9,50 +9,10 @@ last_crawled_at: "2026-04-18T16:42:33.976Z"
 content_hash: "c5712831026b8e28ca85cb1a04d45816c079affd9e38cc90d66cb8332d3dc9bf"
 menu_path: ["Deploy a Bun application on DigitalOcean"]
 section_path: []
+nav_prev: {"path": "bun/bun/docs/guides/deployment/aws-lambda/index.md", "title": "Deploy a Bun application on AWS Lambda"}
+nav_next: {"path": "bun/bun/docs/guides/deployment/google-cloud-run/index.md", "title": "Deploy a Bun application on Google Cloud Run"}
 ---
-[DigitalOcean](https://www.digitalocean.com/) is a cloud platform that provides a range of services for building and deploying applications. In this guide, we will deploy a Bun HTTP server to DigitalOcean using a `Dockerfile`.
 
-1
-
-Create a new DigitalOcean Container Registry
-
-Create a new Container Registry to store the Docker image.
-
-*   Through the DigitalOcean dashboard
-    
-*   Through the DigitalOcean CLI
-    
-
-In the DigitalOcean dashboard, go to [**Container Registry**](https://cloud.digitalocean.com/registry), and enter the details for the new registry.
-
-![DigitalOcean registry dashboard](https://mintcdn.com/bun-1dd33a4e/TVJ0wXBZobUdB01H/images/guides/digitalocean-7.png?fit=max&auto=format&n=TVJ0wXBZobUdB01H&q=85&s=76ad48c8c2e29367ba96be65bd4c5d75)
-
-Make sure the details are correct, then click **Create Registry**.
-
-terminal
-
-```
-doctl registry create bun-digitalocean-demo
-```
-
-```
-Name                     Endpoint                                           Region slug
-bun-digitalocean-demo    registry.digitalocean.com/bun-digitalocean-demo    sfo2
-```
-
-You should see the new registry in the [**DigitalOcean registry dashboard**](https://cloud.digitalocean.com/registry):
-
-![DigitalOcean registry dashboard](https://mintcdn.com/bun-1dd33a4e/TVJ0wXBZobUdB01H/images/guides/digitalocean-1.png?fit=max&auto=format&n=TVJ0wXBZobUdB01H&q=85&s=e4a3dd728868d106a62ec6d4268a508b)
-
-2
-
-Create a new Dockerfile
-
-Make sure you’re in the directory containing your project, then create a new `Dockerfile` in the root of your project. This file contains the instructions to initialize the container, copy your local project files into it, install dependencies, and start the application.
-
-Dockerfile
-
-```
 # Use the official Bun image to run the application
 FROM oven/bun:debian
 
@@ -153,3 +113,4 @@ Visit your live application
 🥳 Your app is now live! Once the app is created, you should see it in the App Platform dashboard with the public URL.
 
 ![DigitalOcean App Platform app dashboard](https://mintcdn.com/bun-1dd33a4e/TVJ0wXBZobUdB01H/images/guides/digitalocean-5.png?fit=max&auto=format&n=TVJ0wXBZobUdB01H&q=85&s=155602e07d2a55d62fc2c1ccf01a3903)
+

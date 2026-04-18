@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:53:34.691Z"
 content_hash: "af98c4a38bd20358191b64be66cfcb5e79b455a31d8ae878512ab21ec1a99afd"
 menu_path: ["Fine-Grained Authorization (Permit)"]
 section_path: []
+nav_prev: {"path": "prisma/docs/orm/prisma-client/client-extensions/shared-extensions/index.md", "title": "Shared Prisma Client extensions"}
+nav_next: {"path": "prisma/docs/orm/prisma-client/deployment/edge/deploy-to-cloudflare/index.md", "title": "Deploy to Cloudflare Workers & Pages"}
 ---
+
 Learn how to implement RBAC, ABAC, and ReBAC authorization in your Prisma applications
 
 Database operations often require careful control over who can access or modify which data. While Prisma ORM excels at data modeling and database access, it doesn't include built-in authorization capabilities. This guide shows how to implement fine-grained authorization in your Prisma applications using the `@permitio/permit-prisma` extension.
@@ -197,3 +200,4 @@ By integrating the `@permitio/permit-prisma` extension with your Prisma ORM appl
 
 *   [Create a free Permit.io account](https://app.permit.io/)
 *   [View the full extension documentation](https://github.com/permitio/permit-prisma)
+

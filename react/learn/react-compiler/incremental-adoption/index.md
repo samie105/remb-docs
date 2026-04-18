@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:35:28.954Z"
 content_hash: "e5a1bf5705a8f37a203eff1ea2202632be327d970db906361b0375f73593c618"
 menu_path: ["Incremental Adoption"]
 section_path: []
+nav_prev: {"path": "react/learn/react-compiler/installation/index.md", "title": "Installation"}
+nav_next: {"path": "react/learn/react-compiler/debugging/index.md", "title": "Debugging and Troubleshooting"}
 ---
+
 React Compiler can be adopted incrementally, allowing you to try it on specific parts of your codebase first. This guide shows you how to gradually roll out the compiler in existing projects.
 
 ### You will learn
@@ -126,12 +129,13 @@ Create a module that exports your gating function:
 If you encounter issues during adoption:
 
 1.  Use `"use no memo"` to temporarily exclude problematic components
-2.  Check the [debugging guide](https://react.dev/learn/react-compiler/debugging) for common issues
+2.  Check the [debugging guide](react/learn/react-compiler/debugging/index.md) for common issues
 3.  Fix Rules of React violations identified by the ESLint plugin
 4.  Consider using `compilationMode: 'annotation'` for more gradual adoption
 
 ## Next Steps[](#next-steps "Link for Next Steps ")
 
 *   Read the [configuration guide](https://react.dev/reference/react-compiler/configuration) for more options
-*   Learn about [debugging techniques](https://react.dev/learn/react-compiler/debugging)
+*   Learn about [debugging techniques](react/learn/react-compiler/debugging/index.md)
 *   Check the [API reference](https://react.dev/reference/react-compiler/configuration) for all compiler options
+

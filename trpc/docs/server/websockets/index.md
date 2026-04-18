@@ -9,12 +9,15 @@ last_crawled_at: "2026-04-18T16:50:57.199Z"
 content_hash: "68ee47958ee527ff832a7b113c8106cbd571c41ac0e50771713e6ec919f6590c"
 menu_path: ["WebSockets"]
 section_path: []
+nav_prev: {"path": "trpc/docs/server/validators/index.md", "title": "Input & Output Validators"}
+nav_next: {"path": "trpc/docs/test/index.md", "title": "Test"}
 ---
-You can use WebSockets for all or some of the communication with your server, see [wsLink](https://trpc.io/docs/client/links/wsLink) for how to set it up on the client.
+
+You can use WebSockets for all or some of the communication with your server, see [wsLink](trpc/docs/client/links/wsLink/index.md) for how to set it up on the client.
 
 tip
 
-The document here outlines the specific details of using WebSockets. For general usage of subscriptions, see [our subscriptions guide](https://trpc.io/docs/server/subscriptions).
+The document here outlines the specific details of using WebSockets. For general usage of subscriptions, see [our subscriptions guide](trpc/docs/server/subscriptions/index.md).
 
 ### Creating a WebSocket-server[​](#creating-a-websocket-server "Direct link to Creating a WebSocket-server")
 
@@ -94,7 +97,7 @@ ts
 
 tip
 
-You can use [Links](https://trpc.io/docs/client/links) to route queries and/or mutations to HTTP transport and subscriptions over WebSockets.
+You can use [Links](trpc/docs/client/links/index.md) to route queries and/or mutations to HTTP transport and subscriptions over WebSockets.
 
 client.ts
 
@@ -413,10 +416,11 @@ ts
 
 ## Errors[​](#errors "Direct link to Errors")
 
-See [https://www.jsonrpc.org/specification#error\_object](https://www.jsonrpc.org/specification#error_object) or [Error Formatting](https://trpc.io/docs/server/error-formatting).
+See [https://www.jsonrpc.org/specification#error\_object](https://www.jsonrpc.org/specification#error_object) or [Error Formatting](trpc/docs/server/error-formatting/index.md).
 
 ## Notifications from Server to Client[​](#notifications-from-server-to-client "Direct link to Notifications from Server to Client")
 
 ### `{ id: null, type: 'reconnect' }`[​](#-id-null-type-reconnect- "Direct link to -id-null-type-reconnect-")
 
 Tells clients to reconnect before shutting down the server. Invoked by `wssHandler.broadcastReconnectNotification()`.
+

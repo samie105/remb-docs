@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:50:04.136Z"
 content_hash: "20440a2d8dc28a25080f89011a9675b349c39b432586706c1751836fe76e8fb0"
 menu_path: ["Drizzle <> Gel"]
 section_path: []
+nav_prev: {"path": "drizzle/docs/get-started-postgresql/index.md", "title": "Drizzle <> PostgreSQL"}
+nav_next: {"path": "drizzle/docs/get-started-mysql/index.md", "title": "Drizzle <> MySQL"}
 ---
+
 Drizzle has native support for Gel connections with the `gel-js` client.
 
 #### Step 1 - Install packages[](#step-1---install-packages)
@@ -86,3 +89,4 @@ const result = await db.execute('select 1');
 ```
 
 #### What’s next?[](#whats-next)
+

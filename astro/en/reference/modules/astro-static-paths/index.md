@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:47:47.221Z"
 content_hash: "b370cd307042e457fee414beb945ce2344246be35e0e00f0903de9ec84486409"
 menu_path: ["Static Paths API Reference"]
 section_path: []
+nav_prev: {"path": "astro/en/reference/modules/astro-middleware/index.md", "title": "Middleware API Reference"}
+nav_next: {"path": "astro/en/reference/modules/astro-transitions/index.md", "title": "View Transitions Router API Reference"}
 ---
+
 # Static Paths API Reference
 
 **Added in:** `astro@6.0.0`
@@ -58,3 +61,4 @@ export function createHandler(app) {  return async (request) => {    const { pat
 ```
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

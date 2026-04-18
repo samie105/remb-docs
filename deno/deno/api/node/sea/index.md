@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:40:17.242Z"
 content_hash: "d2bbfcd7bf1e7c1f6f217f4dfa0bdd78eacda087bcb8dde9ce0543c6e9bc3837"
 menu_path: ["sea - Node documentation"]
 section_path: []
+nav_prev: {"path": "deno/deno/api/node/repl/index.md", "title": "repl - Node documentation"}
+nav_next: {"path": "deno/deno/api/node/sqlite/index.md", "title": "sqlite - Node documentation"}
 ---
+
 ### Usage in Deno
 
 ```typescript
@@ -172,3 +175,4 @@ T
 [AssetKey](.././sea/~/AssetKey "AssetKey")
 
 No documentation available
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:41:48.278Z"
 content_hash: "cee9b0584f9e704cc14179a3c24c32ae3508678a2d32b4773ddb02ba9c51eec1"
 menu_path: ["Context"]
 section_path: []
+nav_prev: {"path": "svelte/docs/svelte/stores/index.md", "title": "Stores"}
+nav_next: {"path": "svelte/docs/svelte/lifecycle-hooks/index.md", "title": "Lifecycle hooks"}
 ---
+
 Context allows components to access values owned by parent components without passing them down as props (potentially through many layers of intermediate components, known as 'prop-drilling').
 
 By creating a `[get, set]` pair of functions with `createContext`, you can set the context in a parent component and get it in a child component:
@@ -426,3 +429,4 @@ App
 previous next
 
 [Stores](/docs/svelte/stores) [Lifecycle hooks](/docs/svelte/lifecycle-hooks)
+

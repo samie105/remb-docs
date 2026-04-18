@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:53:30.173Z"
 content_hash: "927d4ae20a42adff79c58ccb363153f87c0f6b31641a085ba2382400ac769163"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        Redis Search","→","Redis Search","→\n      \n        Deprecated","→","Deprecated","→\n      \n        Developer notes","→","Developer notes"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        Redis Search","→","Redis Search","→\n      \n        Deprecated","→","Deprecated","→\n      \n        Developer notes","→","Developer notes"]
+nav_prev: {"path": "redis/docs/latest/integrate/amazon-bedrock/create-agent/index.md", "title": "Create a Bedrock agent"}
+nav_next: {"path": "redis/docs/latest/develop/ai/search-and-query/query/full-text/index.md", "title": "Full-text search"}
 ---
+
 # Developer notes
 
 Notes on RediSearch debugging, testing, and documentation
@@ -188,3 +191,4 @@ To build for debugging (enabling symbolic information and disabling optimization
 Similarly, Python tests in a single-test mode, you can set a breakpoint by using the `BB()` function inside a test.
 
 ## On this page
+

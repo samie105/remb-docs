@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:44:38.099Z"
 content_hash: "a7aa2befb12c7ea780d3eee71d4b14117bef36df04740e615382ed262391de1d"
 menu_path: ["Astro couldn't find the correct page to render"]
 section_path: []
+nav_prev: {"path": "astro/en/reference/errors/expected-not-esmimage/index.md", "title": "Expected image options, not an ESM-imported image."}
+nav_next: {"path": "astro/en/reference/errors/failed-to-load-module-ssr/index.md", "title": "Could not import file."}
 ---
+
 # Astro couldn't find the correct page to render
 
 > **FailedToFindPageMapSSR**: Astro couldn’t find the correct page to render, probably because it wasn’t correctly mapped for SSR usage. This is an internal error. Please file an issue.
@@ -21,3 +24,4 @@ section_path: []
 Astro couldn’t find the correct page to render, probably because it wasn’t correctly mapped for SSR usage. This is an internal error.
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:48:22.758Z"
 content_hash: "6dda9670f6511f46d4f0af18edfcdebe958c37f2ac2b4c34369b6315d6a6979c"
 menu_path: ["Add dynamic content about you"]
 section_path: []
+nav_prev: {"path": "astro/en/tutorial/2-pages/2/index.md", "title": "Write your first Markdown blog post"}
+nav_next: {"path": "astro/en/tutorial/2-pages/4/index.md", "title": "Style your About page"}
 ---
+
 # Add dynamic content about you
 
 Now that you have a multi-page website with HTML content, it’s time to add some dynamic HTML!
@@ -160,3 +163,4 @@ For each Astro template expression, can you predict the HTML (if any!) that will
 *   [Dynamic expressions in Astro](/en/reference/astro-syntax/#jsx-like-expressions)
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

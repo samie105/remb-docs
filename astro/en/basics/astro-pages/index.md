@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:31:56.554Z"
 content_hash: "a72cad35368337be037e487efd20343377a91956db65f9e38e8ef757f8c7f235"
 menu_path: ["Pages"]
 section_path: []
+nav_prev: {"path": "astro/en/guides/dev-toolbar/index.md", "title": "Dev toolbar"}
+nav_next: {"path": "astro/en/guides/routing/index.md", "title": "Routing"}
 ---
+
 # Pages
 
 **Pages** are files that live in the `src/pages/` subdirectory of your Astro project. They are responsible for handling routing, data loading, and overall page layout for every page in your website.
@@ -168,3 +171,4 @@ The `.astro` partial must exist at the corresponding file path, and include an e
 See the [htmx documentation](https://htmx.org/docs/) for more details on using htmx.
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

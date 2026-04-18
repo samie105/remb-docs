@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:50:02.391Z"
 content_hash: "a0299ce221fd41f888c62bed58d9f11a8247b0e39def02a88b7906f8f4a5087a"
 menu_path: ["Drizzle <> PostgreSQL"]
 section_path: []
+nav_prev: {"path": "drizzle/docs/get-started-mssql/index.md", "title": "Drizzle <> MSSQL"}
+nav_next: {"path": "drizzle/docs/get-started-singlestore/index.md", "title": "Drizzle <> SingleStore"}
 ---
+
 ## Drizzle <> PostgreSQL
 
 WARNING
@@ -94,3 +97,4 @@ const result = await db.execute('select 1');
 ```
 
 #### What’s next?[](#whats-next)
+

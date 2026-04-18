@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:57:32.711Z"
 content_hash: "5ca1dd14d570bf26e609fead95319c77b5406c8c387e1b8d8378a73dfc3bc200"
 menu_path: ["Edge Functions","Edge Functions","Examples","Examples","Image Transformation & Optimization","Image Transformation & Optimization"]
 section_path: ["Edge Functions","Edge Functions","Examples","Examples","Image Transformation & Optimization","Image Transformation & Optimization"]
+nav_prev: {"path": "supabase/docs/guides/functions/examples/github-actions/index.md", "title": "GitHub Actions"}
+nav_next: {"path": "supabase/docs/guides/functions/examples/mcp-server-mcp-lite/index.md", "title": "Building an MCP Server with mcp-lite"}
 ---
+
 # 
 
 Image Manipulation
@@ -73,3 +76,4 @@ Now, let's deploy the function to your Supabase project.
 Hosted Edge Functions have [limits](/docs/guides/functions/limits) on memory and CPU usage.
 
 If you try to perform complex image processing or handle large images (> 5MB) your function may return a resource limit exceeded error.
+

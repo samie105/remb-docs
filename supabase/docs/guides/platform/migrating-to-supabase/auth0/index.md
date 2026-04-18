@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:00:24.762Z"
 content_hash: "e8d3fa9b91922a61b81ebc32cc5f08182c05be0bf8171e8ba2574ff7ec3a8b53"
 menu_path: ["Platform","Platform","More","More","More","Migrating to Supabase","Migrating to Supabase","Auth0","Auth0"]
 section_path: ["Platform","Platform","More","More","More","Migrating to Supabase","Migrating to Supabase","Auth0","Auth0"]
+nav_prev: {"path": "supabase/docs/guides/platform/migrating-to-supabase/amazon-rds/index.md", "title": "Migrate from Amazon RDS to Supabase"}
+nav_next: {"path": "supabase/docs/guides/platform/migrating-to-supabase/firebase-auth/index.md", "title": "Migrate from Firebase Auth to Supabase"}
 ---
+
 # 
 
 Migrate from Auth0 to Supabase Auth
@@ -192,3 +195,4 @@ If you have a lot of user-specific metadata to store, it is recommended to creat
 
 *   [Migrating 125k users from Auth0 to Supabase](https://kevcodez.medium.com/migrating-125-000-users-from-auth0-to-supabase-81c0568de307)
 *   [Loper to Supabase migration](https://eigen.sh/posts/auth-migration)
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:50:07.760Z"
 content_hash: "f31669458a95e7ef8e7840f8827df7d4273c88e931b73214b994e5daf80eb1d6"
 menu_path: ["Drizzle <> MSSQL"]
 section_path: []
+nav_prev: {"path": "drizzle/docs/get-started-sqlite/index.md", "title": "Drizzle <> SQLite"}
+nav_next: {"path": "drizzle/docs/get-started-cockroach/index.md", "title": "Drizzle <> PostgreSQL"}
 ---
+
 WARNING
 
 This page explains concepts available on drizzle versions `1.0.0-beta.2` and higher.
@@ -99,3 +102,4 @@ const result = await db.execute('select 1');
 ```
 
 #### What’s next?[](#whats-next)
+

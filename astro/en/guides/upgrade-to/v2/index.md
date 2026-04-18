@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:41:51.999Z"
 content_hash: "f91ca978684f3f98f4952cf2ab4928f51a7879eeb4de25934bd7534f1ee1b50a"
 menu_path: ["Upgrade to Astro v2"]
 section_path: []
+nav_prev: {"path": "astro/en/guides/upgrade-to/v3/index.md", "title": "Upgrade to Astro v3"}
+nav_next: {"path": "astro/en/guides/upgrade-to/v1/index.md", "title": "Legacy v0.x Upgrade Guide"}
 ---
+
 # Upgrade to Astro v2
 
 This guide will help you migrate from Astro v1 to Astro v2.
@@ -385,3 +388,4 @@ These features are now available by default:
 There are currently no known issues.
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

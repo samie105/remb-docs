@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:37:08.154Z"
 content_hash: "1e156bccc84eb73f80b68f2239c3a58b8701f267153a147dbe76228c08d770e4"
 menu_path: ["Testing"]
 section_path: []
+nav_prev: {"path": "fastify/docs/latest/Guides/Database/index.md", "title": "Database"}
+nav_next: {"path": "fastify/docs/latest/Guides/Benchmarking/index.md", "title": "Benchmarking"}
 ---
+
 Version: latest (v5.8.x)
 
 Testing is one of the most important parts of developing an application. Fastify is very flexible when it comes to testing and is compatible with most testing frameworks (such as [Node Test Runner](https://nodejs.org/api/test.html), which is used in the examples below).
@@ -210,3 +213,4 @@ Test the `.decorate()` and `.decorateRequest()`.
 ```
 const Fastify = require("fastify");const { test }= require("node:test");const myPlugin = require("../plugin/myFirstPlugin");test("Test the Plugin Route", async t => {    t.plan(5)    const fastify = Fastify()    fastify.register(myPlugin)    fastify.get("/", async (request, reply) => {        // Testing the fastify decorators        t.assert.ifError(request.helloRequest)        t.assert.ok(request.helloRequest, "Hello World")        t.assert.ok(fastify.helloInstance, "Hello Fastify Instance")        return ({ message: request.helloRequest })    })    const fastifyResponse = await fastify.inject({        method: "GET",        url: "/"    })    t.assert.strictEqual(fastifyResponse.statusCode, 200)    t.assert.deepStrictEqual(JSON.parse(fastifyResponse.body), { message: "Hello World" })})
 ```
+

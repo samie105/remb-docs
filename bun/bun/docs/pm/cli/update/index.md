@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:57:42.531Z"
 content_hash: "8beb02b017784d2a3f7023178922549bf971af071fda917c268e131dc09e2fa5"
 menu_path: ["bun update"]
 section_path: []
+nav_prev: {"path": "bun/bun/docs/pm/cli/publish/index.md", "title": "bun publish"}
+nav_next: {"path": "bun/bun/docs/pm/cli/why/index.md", "title": "bun why"}
 ---
+
 To update all dependencies to the latest version:
 
 terminal
@@ -361,3 +364,4 @@ Set a specific cwd
 boolean
 
 Print this help menu. Alias: `-h`
+

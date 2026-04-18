@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:49:43.100Z"
 content_hash: "6acbb0bc639aa3e11ba7e6a816b5017e76744e8c2d243840749dbc653abafd95"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Install Redis Open Source","→","Install Redis Open Source","→\n      \n        Install Redis Community Edition or Redis Stack","→","Install Redis Community Edition or Redis Stack","→\n      \n        Install Redis Stack","→","Install Redis Stack","→\n      \n        Install Redis Stack on macOS","→","Install Redis Stack on macOS"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Install Redis Open Source","→","Install Redis Open Source","→\n      \n        Install Redis Community Edition or Redis Stack","→","Install Redis Community Edition or Redis Stack","→\n      \n        Install Redis Stack","→","Install Redis Stack","→\n      \n        Install Redis Stack on macOS","→","Install Redis Stack on macOS"]
+nav_prev: {"path": "redis/docs/latest/integrate/lettuce/index.md", "title": "Java client for Redis"}
+nav_next: {"path": "redis/docs/latest/integrate/node-redis/index.md", "title": "Node.js client for Redis"}
 ---
+
 # Install Redis Stack on macOS
 
 How to install Redis Stack on macOS
@@ -150,3 +153,4 @@ Once you have a running Redis instance, you may want to:
 *   [Install Redis "properly"](/docs/latest/operate/oss_and_stack/install/archive/install-redis/#install-redis-properly) for production use.
 
 ## On this page
+

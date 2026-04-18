@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:54:05.932Z"
 content_hash: "804f78d883a7404cf8185d0964c4a4aeb12c9fce0674b4a8efbd45992ed8baf6"
 menu_path: ["PostgreSQL: Documentation: 18: CREATE OPERATOR FAMILY"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/sql-begin.html/index.md", "title": "PostgreSQL: Documentation: 18: BEGIN"}
+nav_next: {"path": "postgres/docs/current/queries-overview.html/index.md", "title": "PostgreSQL: Documentation: 18: 7.1.\u00a0Overview"}
 ---
+
 CREATE OPERATOR FAMILY — define a new operator family
 
 ## Synopsis
@@ -41,3 +44,4 @@ The name of the index method this operator family is for.
 ## Compatibility
 
 `CREATE OPERATOR FAMILY` is a PostgreSQL extension. There is no `CREATE OPERATOR FAMILY` statement in the SQL standard.
+

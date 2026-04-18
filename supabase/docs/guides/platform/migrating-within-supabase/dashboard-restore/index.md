@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:00:45.637Z"
 content_hash: "94eda732cbf2cd712ef73cf2e9f1143555038f8548a9a52fababdfa522ed7503"
 menu_path: ["Platform","Platform","More","More","More","Migrating within Supabase","Migrating within Supabase","Restore Dashboard backup","Restore Dashboard backup"]
 section_path: ["Platform","Platform","More","More","More","Migrating within Supabase","Migrating within Supabase","Restore Dashboard backup","Restore Dashboard backup"]
+nav_prev: {"path": "supabase/docs/guides/platform/migrating-to-supabase/vercel-postgres/index.md", "title": "Migrate from Vercel Postgres to Supabase"}
+nav_next: {"path": "supabase/docs/guides/platform/read-replicas/getting-started/index.md", "title": "Getting started with Read Replicas"}
 ---
+
 # 
 
 Restore Dashboard backup
@@ -123,3 +126,4 @@ You are possibly using psql and Postgres version 15 or lower. Completely remove 
 "**psql: error: connection to server at "aws-0-us-east-1.pooler.supabase.com" (44.216.29.125), port 5432 failed: error received from server in SCRAM exchange: Wrong password**"
 
 If the database password was reset, it may take a few minutes for it to reflect. Try again after a few minutes if you did a password reset.
+

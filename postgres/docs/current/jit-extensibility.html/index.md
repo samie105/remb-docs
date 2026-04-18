@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:34:28.634Z"
 content_hash: "9f7d22786b925adf7771deab210f16394cbee9f552baa438a8250f8dfb6488b1"
 menu_path: ["PostgreSQL: Documentation: 18: 30.4. Extensibility"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/catalog-pg-policy.html/index.md", "title": "PostgreSQL: Documentation: 18: 52.38.\u00a0pg_policy"}
+nav_next: {"path": "postgres/docs/current/rangetypes.html/index.md", "title": "PostgreSQL: Documentation: 18: 8.17.\u00a0Range Types"}
 ---
+
 Development Versions: [devel](https://www.postgresql.org/docs/devel/jit-extensibility.html "PostgreSQL devel - 30.4. Extensibility")
 
 Unsupported versions: [13](https://www.postgresql.org/docs/13/jit-extensibility.html "PostgreSQL 13 - 30.4. Extensibility") / [12](https://www.postgresql.org/docs/12/jit-extensibility.html "PostgreSQL 12 - 30.4. Extensibility") / [11](https://www.postgresql.org/docs/11/jit-extensibility.html "PostgreSQL 11 - 30.4. Extensibility")
@@ -26,7 +29,7 @@ For functions built into PostgreSQL itself, the bitcode is installed into `$pkgl
 
 ### 30.4.2. Pluggable JIT Providers [#](#JIT-PLUGGABLE)
 
-PostgreSQL provides a JIT implementation based on LLVM. The interface to the JIT provider is pluggable and the provider can be changed without recompiling (although currently, the build process only provides inlining support data for LLVM). The active provider is chosen via the setting [jit\_provider](https://www.postgresql.org/docs/current/runtime-config-client.html#GUC-JIT-PROVIDER).
+PostgreSQL provides a JIT implementation based on LLVM. The interface to the JIT provider is pluggable and the provider can be changed without recompiling (although currently, the build process only provides inlining support data for LLVM). The active provider is chosen via the setting [jit\_provider](postgres/docs/current/runtime-config-client.html/index.md#GUC-JIT-PROVIDER).
 
 #### 30.4.2.1. JIT Provider Interface [#](#JIT-PLUGGABLE-PROVIDER-INTERFACE)
 
@@ -40,3 +43,4 @@ struct JitProviderCallbacks
 };
 
 extern void \_PG\_jit\_provider\_init(JitProviderCallbacks \*cb);
+

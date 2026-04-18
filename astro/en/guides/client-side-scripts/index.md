@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:32:58.653Z"
 content_hash: "d94551a5376d68b86e48d99ad2d5488710920861e8419164f528d28abc6afebc"
 menu_path: ["Scripts and event handling"]
 section_path: []
+nav_prev: {"path": "astro/en/guides/syntax-highlighting/index.md", "title": "Syntax Highlighting"}
+nav_next: {"path": "astro/en/guides/framework-components/index.md", "title": "Front-end frameworks"}
 ---
+
 # Scripts and event handling
 
 You can send JavaScript to the browser and add functionality to your Astro components using `<script>` tags in the component template.
@@ -170,3 +173,4 @@ Now we can use our component multiple times and be greeted by a different messag
 Elements rendered by a UI framework may not be available yet when a `<script>` tag executes. If your script also needs to handle [UI framework components](/en/guides/framework-components/), using a custom element is recommended.
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

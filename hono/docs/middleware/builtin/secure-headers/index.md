@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:53:36.313Z"
 content_hash: "c5173554aa62c8c612ad7e97ea70619205a99574449f513fe68923a8b0e5efe0"
 menu_path: ["Secure Headers Middleware ​"]
 section_path: []
+nav_prev: {"path": "hono/docs/middleware/builtin/request-id/index.md", "title": "Request ID Middleware \u200b"}
+nav_next: {"path": "hono/docs/middleware/builtin/timeout/index.md", "title": "Timeout Middleware \u200b"}
 ---
+
 ## Secure Headers Middleware [​](#secure-headers-middleware)
 
 Secure Headers Middleware simplifies the setup of security headers. Inspired in part by the capabilities of Helmet, it allows you to control the activation and deactivation of specific security headers.
@@ -422,3 +425,4 @@ app.use(
   })
 )
 ```
+

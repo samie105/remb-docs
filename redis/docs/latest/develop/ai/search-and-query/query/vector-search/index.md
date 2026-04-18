@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:06:41.586Z"
 content_hash: "b0ec8d73e19031a243aed8bd355817fc3c9faf73e25ec872c950c638adecfb41"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        Redis Search","→","Redis Search","→\n      \n        Querying data","→","Querying data","→\n      \n        Vector search","→","Vector search"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        Redis Search","→","Redis Search","→\n      \n        Querying data","→","Querying data","→\n      \n        Vector search","→","Vector search"]
+nav_prev: {"path": "redis/docs/latest/develop/data-types/timeseries/use_cases/index.md", "title": "Use cases"}
+nav_next: {"path": "redis/docs/latest/develop/whats-new/8-0/index.md", "title": "Redis 8.0"}
 ---
+
 # Vector search
 
 Query for data based on vector embeddings
@@ -721,3 +724,4 @@ Note:
 The `$SHARD_K_RATIO` parameter is only applicable in Redis cluster environments and has no effect in standalone Redis instances.
 
 ## On this page
+

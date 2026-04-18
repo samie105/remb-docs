@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:33:51.568Z"
 content_hash: "4249e5611ba36e53b203b171c9e85330e266507f9b859c38089d212b6b71c132"
 menu_path: ["DatoCMS & Astro"]
 section_path: []
+nav_prev: {"path": "astro/en/guides/cms/crystallize/index.md", "title": "Crystallize & Astro"}
+nav_next: {"path": "astro/en/guides/cms/decap-cms/index.md", "title": "Decap CMS & Astro"}
 ---
+
 # DatoCMS & Astro
 
 [DatoCMS](https://datocms.com/) is a web-based, headless CMS to manage digital content for your sites and apps.
@@ -343,3 +346,4 @@ You can also check out the [Astro blog template](https://www.datocms.com/marketp
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

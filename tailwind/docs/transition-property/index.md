@@ -9,15 +9,9 @@ last_crawled_at: "2026-04-18T17:11:57.389Z"
 content_hash: "5407a9de04a3e78ad82518a1c888a54e5a5882990d08b2e8e7c33143dca2efe1"
 menu_path: ["transition-property"]
 section_path: []
+nav_prev: {"path": "tailwind/docs/caption-side/index.md", "title": "caption-side"}
+nav_next: {"path": "tailwind/docs/transition-behavior/index.md", "title": "transition-behavior"}
 ---
-[](/)
-
-[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
-
-1.  Transitions & Animation
-2.  transition-property
-
-Transitions & Animation
 
 # transition-property
 
@@ -133,3 +127,4 @@ Make your ideas look awesome, without relying on a designer.
 ](https://www.refactoringui.com/?ref=sidebar)
 
 Copyright © 2026 Tailwind Labs Inc.·[Trademark Policy](/brand)
+

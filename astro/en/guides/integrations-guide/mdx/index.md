@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:39:02.601Z"
 content_hash: "a52922e570a8e409981160e649f5cef25c3ebaf8521519a358832d42ee0cda64"
 menu_path: ["@astrojs/\n\t\t\t\t\tmdx"]
 section_path: []
+nav_prev: {"path": "astro/en/guides/integrations-guide/markdoc/index.md", "title": "@astrojs/\n\t\t\t\t\tmarkdoc"}
+nav_next: {"path": "astro/en/guides/integrations-guide/partytown/index.md", "title": "@astrojs/\n\t\t\t\t\tpartytown"}
 ---
+
 # @astrojs/ mdx
 
 v5.0.3 [GitHub](https://github.com/withastro/astro/tree/main/packages/integrations/mdx/) [npm](https://www.npmjs.com/package/@astrojs/mdx) [Changelog](https://github.com/withastro/astro/tree/main/packages/integrations/mdx/CHANGELOG.md)
@@ -392,3 +395,4 @@ Note that if your MDX file [configures custom components using `export const com
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

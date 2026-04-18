@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:39:49.747Z"
 content_hash: "5a70e2177dbfba8681a09d871d87d50baa8c91a9d80fadc695ca2da3df96f7db"
 menu_path: ["@astrojs/\n\t\t\t\t\tsvelte"]
 section_path: []
+nav_prev: {"path": "astro/en/guides/integrations-guide/solid-js/index.md", "title": "@astrojs/\n\t\t\t\t\tsolid-js"}
+nav_next: {"path": "astro/en/guides/integrations-guide/vue/index.md", "title": "@astrojs/\n\t\t\t\t\tvue"}
 ---
+
 # @astrojs/ svelte
 
 v8.0.5 [GitHub](https://github.com/withastro/astro/tree/main/packages/integrations/svelte/) [npm](https://www.npmjs.com/package/@astrojs/svelte) [Changelog](https://github.com/withastro/astro/tree/main/packages/integrations/svelte/CHANGELOG.md)
@@ -186,3 +189,4 @@ This config file will be automatically added for you when you run `astro add sve
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

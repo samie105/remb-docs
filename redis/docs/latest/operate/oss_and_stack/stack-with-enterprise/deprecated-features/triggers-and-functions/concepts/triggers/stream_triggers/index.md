@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:52:31.473Z"
 content_hash: "ec58b1e9a5938f57ed78951a083400bd46f8110005debcae4c1c6227463ecb2d"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Redis Open Source and Redis Software","→","Redis Open Source and Redis Software","→\n      \n        Deprecated Redis Open Source features and modules","→","Deprecated Redis Open Source features and modules","→\n      \n        Triggers and functions","→","Triggers and functions","→\n      \n        Concepts","→","Concepts","→\n      \n        Triggers","→","Triggers","→\n      \n        Stream triggers","→","Stream triggers"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Redis Open Source and Redis Software","→","Redis Open Source and Redis Software","→\n      \n        Deprecated Redis Open Source features and modules","→","Deprecated Redis Open Source features and modules","→\n      \n        Triggers and functions","→","Triggers and functions","→\n      \n        Concepts","→","Concepts","→\n      \n        Triggers","→","Triggers","→\n      \n        Stream triggers","→","Stream triggers"]
+nav_prev: {"path": "redis/docs/latest/develop/use-cases/session-store/index.md", "title": "Redis session store"}
+nav_next: {"path": "redis/docs/latest/develop/whats-new/8-6/index.md", "title": "Redis 8.6"}
 ---
+
 # Stream triggers
 
 Execute a JavaScript function when an item is added to a stream
@@ -213,3 +216,4 @@ When upgrading the consumer code (using the `REPLACE` option of `TFUNCTION LOAD`
 Any attempt to update any other parameter will result in an error when loading the library.
 
 ## On this page
+

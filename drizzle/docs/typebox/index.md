@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:25:12.750Z"
 content_hash: "f6e604633376259248bc52d65a28c260ed5086f825a80eb113fd5b24d06e7130"
 menu_path: ["typebox"]
 section_path: []
+nav_prev: {"path": "drizzle/docs/valibot/index.md", "title": "valibot"}
+nav_next: {"path": "drizzle/docs/arktype/index.md", "title": "arktype"}
 ---
+
 ```
 import { pgEnum, pgTable, serial, text, timestamp } from 'drizzle-orm/pg-core';
 import { createInsertSchema, createSelectSchema, createUpdateSchema } from 'drizzle-orm/typebox';
@@ -52,3 +55,4 @@ const isUserValid: boolean = Value.Check(insertUserSchema, {
 	role: 'admin',
 });
 ```
+

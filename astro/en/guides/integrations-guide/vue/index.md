@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:39:59.675Z"
 content_hash: "4a99edf75679625d99534d21a7d87fe78080fcf6197f976e928f29daa2dadd3e"
 menu_path: ["@astrojs/\n\t\t\t\t\tvue"]
 section_path: []
+nav_prev: {"path": "astro/en/guides/integrations-guide/svelte/index.md", "title": "@astrojs/\n\t\t\t\t\tsvelte"}
+nav_next: {"path": "astro/en/guides/integrations-guide/cloudflare/index.md", "title": "@astrojs/\n\t\t\t\t\tcloudflare"}
 ---
+
 # @astrojs/ vue
 
 v6.0.1 [GitHub](https://github.com/withastro/astro/tree/main/packages/integrations/vue/) [npm](https://www.npmjs.com/package/@astrojs/vue) [Changelog](https://github.com/withastro/astro/tree/main/packages/integrations/vue/CHANGELOG.md)
@@ -246,3 +249,4 @@ export default defineConfig({  // ...  integrations: [    vue({      devtools: {
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

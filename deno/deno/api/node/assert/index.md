@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:32:54.760Z"
 content_hash: "a612aef8f5b5e8706b4df54366f87f4b3892cb3e2a88a9a61856b5c197483137"
 menu_path: ["assert - Node documentation"]
 section_path: []
+nav_prev: {"path": "deno/deno/api/deno/index.md", "title": "Deno Namespace APIs"}
+nav_next: {"path": "deno/deno/api/node/index.md", "title": "Node.js Built-in APIs"}
 ---
+
 ### Usage in Deno
 
 ```typescript
@@ -226,3 +229,4 @@ T
 [assert.strict.CallTrackerReportInformation](.././assert/~/assert.strict.CallTrackerReportInformation "assert.strict.CallTrackerReportInformation")
 
 No documentation available
+

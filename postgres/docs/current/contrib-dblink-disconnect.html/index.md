@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:36:13.190Z"
 content_hash: "fbc8a62e667aab638798e2d8d0d98f4c4d2d6cbaf58d43d683dd7a384d84b378"
 menu_path: ["PostgreSQL: Documentation: 18: dblink_disconnect"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/spi-visibility.html/index.md", "title": "PostgreSQL: Documentation: 18: 45.5.\u00a0Visibility of Data Changes"}
+nav_next: {"path": "postgres/docs/current/sql-dropdomain.html/index.md", "title": "PostgreSQL: Documentation: 18: DROP DOMAIN"}
 ---
+
 February 26, 2026: [PostgreSQL 18.3, 17.9, 16.13, 15.17, and 14.22 Released!](/about/news/postgresql-183-179-1613-1517-and-1422-released-3246/)
 
 [Documentation](/docs/ "Documentation") → [PostgreSQL 18](/docs/18/index.html)
@@ -60,3 +63,4 @@ SELECT dblink\_disconnect('myconn');
 ## Submit correction
 
 If you see anything in the documentation that is not correct, does not match your experience with the particular feature or requires further clarification, please use [this form](/account/comments/new/18/contrib-dblink-disconnect.html/) to report a documentation issue.
+

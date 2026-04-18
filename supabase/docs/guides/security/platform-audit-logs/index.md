@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:50:01.407Z"
 content_hash: "1f471519fd7248daea522201184ebf75fc0d12040bff70cb1fc8f4f194ed174e"
 menu_path: ["Security","Security","Product security","Product security","Platform Audit Logs","Platform Audit Logs"]
 section_path: ["Security","Security","Product security","Product security","Platform Audit Logs","Platform Audit Logs"]
+nav_prev: {"path": "supabase/docs/guides/realtime/subscribing-to-database-changes/index.md", "title": "Subscribing to Database Changes"}
+nav_next: {"path": "supabase/docs/guides/security/platform-security/index.md", "title": "Secure configuration of Supabase platform"}
 ---
+
 # 
 
 Platform Audit Logs
@@ -45,3 +48,4 @@ For each audit log, you can see additional details by clicking on the log entry:
 *   There is currently no way to export the logs via dashboard
 *   There is currently no way to set up a log drain of platform audit logs
 *   Retention periods depend on your plan
+

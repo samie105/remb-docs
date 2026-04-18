@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:36:22.801Z"
 content_hash: "7a25f603caa6a23276814a561f50c37f2e2209d7ac9a53c91ae765738f5d1f0c"
 menu_path: ["Auth","Auth","Flows (How-tos)","Flows (How-tos)","Email (Magic Link or OTP)","Email (Magic Link or OTP)"]
 section_path: ["Auth","Auth","Flows (How-tos)","Flows (How-tos)","Email (Magic Link or OTP)","Email (Magic Link or OTP)"]
+nav_prev: {"path": "supabase/docs/guides/auth/auth-anonymous/index.md", "title": "Anonymous Sign-Ins"}
+nav_next: {"path": "supabase/docs/guides/auth/auth-captcha/index.md", "title": "Enable CAPTCHA Protection"}
 ---
+
 # 
 
 Passwordless email logins
@@ -122,3 +125,4 @@ If successful, the user is now logged in, and you receive a valid session that l
 ```
 1{2  "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJhdXRoZW50aWNhdGVkIiwiZXhwIjoxNjI3MjkxNTc3LCJzdWIiOiJmYTA2NTQ1Zi1kYmI1LTQxY2EtYjk1NC1kOGUyOTg4YzcxOTEiLCJlbWFpbCI6IiIsInBob25lIjoiNjU4NzUyMjAyOSIsImFwcF9tZXRhZGF0YSI6eyJwcm92aWRlciI6InBob25lIn0sInVzZXJfbWV0YWRhdGEiOnt9LCJyb2xlIjoiYXV0aGVudGljYXRlZCJ9.1BqRi0NbS_yr1f6hnr4q3s1ylMR3c1vkiJ4e_N55dhM",3  "token_type": "bearer",4  "expires_in": 3600,5  "refresh_token": "LSp8LglPPvf0DxGMSj-vaQ",6  "user": {...}7}
 ```
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:39:37.309Z"
 content_hash: "ec639f776bbeb8679d2ef6d476b3e24ecc00fe08043d99b3188b25bea1f1e13f"
 menu_path: ["Prisma Client API"]
 section_path: []
+nav_prev: {"path": "prisma/docs/orm/reference/prisma-cli-reference/index.md", "title": "Prisma CLI reference"}
+nav_next: {"path": "prisma/docs/orm/reference/prisma-schema-reference/index.md", "title": "Schema API"}
 ---
+
 The Prisma Client API reference documentation is based on the following schema:
 
 ```
@@ -57,7 +60,7 @@ This section describes the `PrismaClient` constructor and its parameters.
 
 ### [`adapter`](#adapter)
 
-Specifies a [driver adapter](https://www.prisma.io/docs/orm/core-concepts/supported-databases/database-drivers#driver-adapters) for database connections. Required unless using [`accelerateUrl`](#accelerateurl).
+Specifies a [driver adapter](prisma/docs/orm/core-concepts/supported-databases/database-drivers/index.md#driver-adapters) for database connections. Required unless using [`accelerateUrl`](#accelerateurl).
 
 #### [Example](#example)
 
@@ -85,7 +88,7 @@ const prisma = new PrismaClient({
 
 ### [`log`](#log)
 
-Determines the type and level of logging. See also: [Logging](https://www.prisma.io/docs/orm/prisma-client/observability-and-logging/logging)
+Determines the type and level of logging. See also: [Logging](prisma/docs/orm/prisma-client/observability-and-logging/logging/index.md)
 
 #### [Options](#options)
 
@@ -351,7 +354,7 @@ const prisma = new PrismaClient({
 });
 ```
 
-Defines an array of [SQL commenter plugins](https://www.prisma.io/docs/orm/prisma-client/observability-and-logging/sql-comments) that add metadata to your SQL queries as comments. This is useful for observability, debugging, and correlating queries with application traces.
+Defines an array of [SQL commenter plugins](prisma/docs/orm/prisma-client/observability-and-logging/sql-comments/index.md) that add metadata to your SQL queries as comments. This is useful for observability, debugging, and correlating queries with application traces.
 
 #### [Options](#options-1)
 
@@ -423,11 +426,11 @@ This produces SQL queries with comments like:
 SELECT "id", "name" FROM "User" /*action='findMany',application='my-app',environment='production',model='User'*/
 ```
 
-For more details, see [SQL comments](https://www.prisma.io/docs/orm/prisma-client/observability-and-logging/sql-comments).
+For more details, see [SQL comments](prisma/docs/orm/prisma-client/observability-and-logging/sql-comments/index.md).
 
 ### [`transactionOptions`](#transactionoptions)
 
-Sets default [transaction options](https://www.prisma.io/docs/orm/prisma-client/queries/transactions#transaction-isolation-level) globally.
+Sets default [transaction options](prisma/docs/orm/prisma-client/queries/transactions/index.md#transaction-isolation-level) globally.
 
 *   The transaction levels can be overridden on a per-transaction level.
 
@@ -447,7 +450,7 @@ The maximum amount of time the interactive transaction can run before being canc
 
 `isolationLevel`
 
-Sets the [transaction isolation level](https://www.prisma.io/docs/orm/prisma-client/queries/transactions#transaction-isolation-level). By default this is set to the value currently configured in your database. The available levels can vary depending on the database you use.
+Sets the [transaction isolation level](prisma/docs/orm/prisma-client/queries/transactions/index.md#transaction-isolation-level). By default this is set to the value currently configured in your database. The available levels can vary depending on the database you use.
 
 #### [Example](#example-2)
 
@@ -461,7 +464,7 @@ const prisma = new PrismaClient({
 });
 ```
 
-Use model queries to perform CRUD operations on your models. See also: [CRUD](https://www.prisma.io/docs/orm/prisma-client/queries/crud)
+Use model queries to perform CRUD operations on your models. See also: [CRUD](prisma/docs/orm/prisma-client/queries/crud/index.md)
 
 ### [`findUnique()`](#findunique)
 
@@ -470,9 +473,9 @@ Use model queries to perform CRUD operations on your models. See also: [CRUD](ht
 *   By _ID_
 *   By a _unique_ attribute
 
-*   Prisma Client's dataloader [automatically batches `findUnique()` queries](https://www.prisma.io/docs/orm/prisma-client/queries/advanced/query-optimization-performance#using-findunique-with-the-fluent-api) with the same `select` and `where` parameters.
+*   Prisma Client's dataloader [automatically batches `findUnique()` queries](prisma/docs/orm/prisma-client/queries/advanced/query-optimization-performance/index.md#using-findunique-with-the-fluent-api) with the same `select` and `where` parameters.
 *   If you want the query to throw an error if the record is not found, then consider using [`findUniqueOrThrow`](#finduniqueorthrow) instead.
-*   You cannot use [filter conditions](#filter-conditions-and-operators) (e.g. `equals`, `contains`, `not`) to filter fields of the [JSON](https://www.prisma.io/docs/orm/reference/prisma-schema-reference#json) data type. Using filter conditions will likely result in a `null` response for that field.
+*   You cannot use [filter conditions](#filter-conditions-and-operators) (e.g. `equals`, `contains`, `not`) to filter fields of the [JSON](prisma/docs/orm/reference/prisma-schema-reference/index.md#json) data type. Using filter conditions will likely result in a `null` response for that field.
 
 #### [Options](#options-3)
 
@@ -506,7 +509,7 @@ No
 
 No
 
-[Specifies which relations should be eagerly loaded](https://www.prisma.io/docs/orm/prisma-client/queries/relation-queries) on the returned object.
+[Specifies which relations should be eagerly loaded](prisma/docs/orm/prisma-client/queries/relation-queries/index.md) on the returned object.
 
 `omit`
 
@@ -522,7 +525,7 @@ Specifies which properties to exclude on the returned object. Excludes specified
 
 No
 
-**Default: `join`**. [Load strategy](https://www.prisma.io/docs/orm/prisma-client/queries/relation-queries#relation-load-strategies-preview) for relations. Requires `relationJoins` preview feature.
+**Default: `join`**. [Load strategy](prisma/docs/orm/prisma-client/queries/relation-queries/index.md#relation-load-strategies-preview) for relations. Requires `relationJoins` preview feature.
 
 #### [Return type](#return-type)
 
@@ -635,7 +638,7 @@ await prisma.user.findUniqueOrThrow({
 
 *   Its return type is non-nullable. For example, `post.findUnique()` can return `post` or `null`, but `post.findUniqueOrThrow()` always returns `post`.
     
-*   It is not compatible with sequential operations in the [`$transaction` API](https://www.prisma.io/docs/orm/prisma-client/queries/transactions#the-transaction-api). If the query throws a `PrismaClientKnownRequestError`, then the API will not roll back any operations in the array of calls. As a workaround, you can use interactive transactions with the `$transaction` API, as follows:
+*   It is not compatible with sequential operations in the [`$transaction` API](prisma/docs/orm/prisma-client/queries/transactions/index.md#the-transaction-api). If the query throws a `PrismaClientKnownRequestError`, then the API will not roll back any operations in the array of calls. As a workaround, you can use interactive transactions with the `$transaction` API, as follows:
     
     ```
      $transaction(async (prisma) => {
@@ -675,7 +678,7 @@ No
 
 No
 
-[Specifies which relations should be eagerly loaded](https://www.prisma.io/docs/orm/prisma-client/queries/relation-queries) on the returned object.
+[Specifies which relations should be eagerly loaded](prisma/docs/orm/prisma-client/queries/relation-queries/index.md) on the returned object.
 
 `omit`
 
@@ -691,7 +694,7 @@ Specifies which properties to exclude on the returned object. Excludes specified
 
 No
 
-**Default: `join`**. [Load strategy](https://www.prisma.io/docs/orm/prisma-client/queries/relation-queries#relation-load-strategies-preview) for relations. Requires `relationJoins` preview feature.
+**Default: `join`**. [Load strategy](prisma/docs/orm/prisma-client/queries/relation-queries/index.md#relation-load-strategies-preview) for relations. Requires `relationJoins` preview feature.
 
 `where`
 
@@ -794,7 +797,7 @@ main();
 
 *   Its return type is non-nullable. For example, `post.findFirst()` can return `post` or `null`, but `post.findFirstOrThrow` always returns `post`.
     
-*   It is not compatible with sequential operations in the [`$transaction` API](https://www.prisma.io/docs/orm/prisma-client/queries/transactions#the-transaction-api). If the query returns `PrismaClientKnownRequestError`, then the API will not roll back any operations in the array of calls. As a workaround, you can use interactive transactions with the `$transaction` API, as follows:
+*   It is not compatible with sequential operations in the [`$transaction` API](prisma/docs/orm/prisma-client/queries/transactions/index.md#the-transaction-api). If the query returns `PrismaClientKnownRequestError`, then the API will not roll back any operations in the array of calls. As a workaround, you can use interactive transactions with the `$transaction` API, as follows:
     
     ```
     prisma.$transaction(async (tx) => {
@@ -832,7 +835,7 @@ No
 
 No
 
-[Specifies which relations should be eagerly loaded](https://www.prisma.io/docs/orm/prisma-client/queries/relation-queries) on the returned object.
+[Specifies which relations should be eagerly loaded](prisma/docs/orm/prisma-client/queries/relation-queries/index.md) on the returned object.
 
 `omit`
 
@@ -848,7 +851,7 @@ Specifies which properties to exclude on the returned object. Excludes specified
 
 No
 
-**Default: `join`**. [Load strategy](https://www.prisma.io/docs/orm/prisma-client/queries/relation-queries#relation-load-strategies-preview) for relations. Requires `relationJoins` preview feature.
+**Default: `join`**. [Load strategy](prisma/docs/orm/prisma-client/queries/relation-queries/index.md#relation-load-strategies-preview) for relations. Requires `relationJoins` preview feature.
 
 `where`
 
@@ -972,7 +975,7 @@ No
 
 No
 
-[Specifies which relations should be eagerly loaded](https://www.prisma.io/docs/orm/prisma-client/queries/relation-queries) on the returned object.
+[Specifies which relations should be eagerly loaded](prisma/docs/orm/prisma-client/queries/relation-queries/index.md) on the returned object.
 
 [`omit`](#omit)
 
@@ -988,7 +991,7 @@ Specifies which properties to exclude on the returned object. Excludes specified
 
 No
 
-**Default: `join`**. [Load strategy](https://www.prisma.io/docs/orm/prisma-client/queries/relation-queries#relation-load-strategies-preview) for relations. Requires `relationJoins` preview feature.
+**Default: `join`**. [Load strategy](prisma/docs/orm/prisma-client/queries/relation-queries/index.md#relation-load-strategies-preview) for relations. Requires `relationJoins` preview feature.
 
 #### [Return type](#return-type-3)
 
@@ -1124,7 +1127,7 @@ No
 
 No
 
-[Specifies which relations should be eagerly loaded](https://www.prisma.io/docs/orm/prisma-client/queries/relation-queries) on the returned object.
+[Specifies which relations should be eagerly loaded](prisma/docs/orm/prisma-client/queries/relation-queries/index.md) on the returned object.
 
 [`omit`](#omit)
 
@@ -1140,7 +1143,7 @@ Specifies which properties to exclude on the returned object. Excludes specified
 
 No
 
-**Default: `join`**. [Load strategy](https://www.prisma.io/docs/orm/prisma-client/queries/relation-queries#relation-load-strategies-preview) for relations. Requires `relationJoins` preview feature.
+**Default: `join`**. [Load strategy](prisma/docs/orm/prisma-client/queries/relation-queries/index.md#relation-load-strategies-preview) for relations. Requires `relationJoins` preview feature.
 
 #### [Return type](#return-type-4)
 
@@ -1162,7 +1165,7 @@ Use `select` and `include` to determine which fields to return.
 
 `PrismaClientKnownRequestError` (code `P2025`)
 
-Thrown if the record to update does not exist. See [Error reference](https://www.prisma.io/docs/orm/reference/error-reference#p2025)
+Thrown if the record to update does not exist. See [Error reference](prisma/docs/orm/reference/error-reference/index.md#p2025)
 
 *   To perform arithmetic operations on update (add, subtract, multiply, divide), use [atomic updates](#atomic-number-operations) to prevent race conditions.
 *   You can also perform a nested [`update`](#update-1) - for example, update a user and that user's posts at the same time.
@@ -1235,7 +1238,7 @@ No
 
 No
 
-[Specifies which relations should be eagerly loaded](https://www.prisma.io/docs/orm/prisma-client/queries/relation-queries) on the returned object.
+[Specifies which relations should be eagerly loaded](prisma/docs/orm/prisma-client/queries/relation-queries/index.md) on the returned object.
 
 [`omit`](#omit)
 
@@ -1251,7 +1254,7 @@ Specifies which properties to exclude on the returned object. Excludes specified
 
 No
 
-**Default: `join`**. [Load strategy](https://www.prisma.io/docs/orm/prisma-client/queries/relation-queries#relation-load-strategies-preview) for relations. Requires `relationJoins` preview feature.
+**Default: `join`**. [Load strategy](prisma/docs/orm/prisma-client/queries/relation-queries/index.md#relation-load-strategies-preview) for relations. Requires `relationJoins` preview feature.
 
 #### [Return type](#return-type-5)
 
@@ -1291,7 +1294,7 @@ const user = await prisma.user.upsert({
 
 ##### [Problem](#problem)
 
-If multiple upsert operations happen at the same time and the record doesn't already exist, then one or more of the operations might return a [unique key constraint error](https://www.prisma.io/docs/orm/reference/error-reference#p2002).
+If multiple upsert operations happen at the same time and the record doesn't already exist, then one or more of the operations might return a [unique key constraint error](prisma/docs/orm/reference/error-reference/index.md#p2002).
 
 ##### [Cause](#cause)
 
@@ -1328,7 +1331,7 @@ Prisma Client uses database upserts with CockroachDB, PostgreSQL, or SQLite data
 Prisma Client uses a database upsert for an `upsert` query when the query meets the following criteria:
 
 *   There are no nested queries in the `upsert`'s `create` and `update` [options](#options-7)
-*   The query does _not_ include a selection that uses a [nested read](https://www.prisma.io/docs/orm/prisma-client/queries/relation-queries#nested-reads)
+*   The query does _not_ include a selection that uses a [nested read](prisma/docs/orm/prisma-client/queries/relation-queries/index.md#nested-reads)
 *   The query modifies only one model
 *   There is only one unique field in the `upsert`'s `where` option
 *   The unique field in the `where` option and the unique field in the `create` option have the same value
@@ -1487,7 +1490,7 @@ No
 
 No
 
-[Specifies which relations should be eagerly loaded](https://www.prisma.io/docs/orm/prisma-client/queries/relation-queries) on the returned object.
+[Specifies which relations should be eagerly loaded](prisma/docs/orm/prisma-client/queries/relation-queries/index.md) on the returned object.
 
 [`omit`](#omit)
 
@@ -1503,7 +1506,7 @@ Specifies which properties to exclude on the returned object. Excludes specified
 
 No
 
-**Default: `join`**. [Load strategy](https://www.prisma.io/docs/orm/prisma-client/queries/relation-queries#relation-load-strategies-preview) for relations. Requires `relationJoins` preview feature.
+**Default: `join`**. [Load strategy](prisma/docs/orm/prisma-client/queries/relation-queries/index.md#relation-load-strategies-preview) for relations. Requires `relationJoins` preview feature.
 
 #### [Return type](#return-type-6)
 
@@ -1527,7 +1530,7 @@ Data from the `User` record that was deleted. Use `select` and `include` to dete
 
 `PrismaClientKnownRequestError` (code `P2025`)
 
-Thrown if the record to delete does not exist. See [Error reference](https://www.prisma.io/docs/orm/reference/error-reference#p2025)
+Thrown if the record to delete does not exist. See [Error reference](prisma/docs/orm/reference/error-reference/index.md#p2025)
 
 *   To delete multiple records based on some criteria (for example, all `User` records with a `prisma.io` email address, use `deleteMany`)
 
@@ -1607,7 +1610,7 @@ A count of the number of records created.
 
 *   `createMany()` is supported by SQLite.
 *   The `skipDuplicates` option is not supported by MongoDB, SQLServer, or SQLite.
-*   You **cannot** create or connect relations by using nested `create`, `createMany`, `connect`, `connectOrCreate` queries inside a top-level `createMany()` query. See here for a [workaround](https://www.prisma.io/docs/orm/prisma-client/queries/relation-queries#using-nested-createmany).
+*   You **cannot** create or connect relations by using nested `create`, `createMany`, `connect`, `connectOrCreate` queries inside a top-level `createMany()` query. See here for a [workaround](prisma/docs/orm/prisma-client/queries/relation-queries/index.md#using-nested-createmany).
 *   You can use a nested [`createMany`](#createmany-1) query inside an [`update()`](#update) or [`create()`](#create) query - for example, add a `User` and two `Post` records with a nested `createMany` at the same time.
 
 #### [Examples](#examples-10)
@@ -1667,7 +1670,7 @@ Specifies which properties to exclude on the returned objects. Excludes specifie
 
 No
 
-[Specifies which relations should be eagerly loaded](https://www.prisma.io/docs/orm/prisma-client/queries/relation-queries) on the returned objects.
+[Specifies which relations should be eagerly loaded](prisma/docs/orm/prisma-client/queries/relation-queries/index.md) on the returned objects.
 
 `skipDuplicates?`
 
@@ -1679,7 +1682,7 @@ Do not insert records with unique fields or ID fields that already exist. Only s
 
 *   The `skipDuplicates` option is not supported by SQLite.
 *   Note that the order of elements returned by `createManyAndReturn` is not guaranteed.
-*   You **cannot** create or connect relations by using nested `create`, `createMany`, `connect`, `connectOrCreate` queries inside a top-level `createManyAndReturn()` query. See here for a [workaround](https://www.prisma.io/docs/orm/prisma-client/queries/relation-queries#using-nested-createmany).
+*   You **cannot** create or connect relations by using nested `create`, `createMany`, `connect`, `connectOrCreate` queries inside a top-level `createManyAndReturn()` query. See here for a [workaround](prisma/docs/orm/prisma-client/queries/relation-queries/index.md#using-nested-createmany).
 *   When relations are included via `include`, a separate query is generated per relation.
 *   `relationLoadStrategy: join` is not supported.
 
@@ -2098,7 +2101,7 @@ const c = await prisma.user.count({
 
 ### [`aggregate()`](#aggregate)
 
-See also: [Aggregation, grouping, and summarizing](https://www.prisma.io/docs/orm/prisma-client/queries/aggregation-grouping-summarizing#aggregate)
+See also: [Aggregation, grouping, and summarizing](prisma/docs/orm/prisma-client/queries/aggregation-grouping-summarizing/index.md#aggregate)
 
 #### [Options](#options-16)
 
@@ -2237,7 +2240,7 @@ const setValue = await prisma.user.aggregate({
 
 ### [`groupBy()`](#groupby)
 
-See also: [Aggregation, grouping, and summarizing](https://www.prisma.io/docs/orm/prisma-client/queries/aggregation-grouping-summarizing#group-by)
+See also: [Aggregation, grouping, and summarizing](prisma/docs/orm/prisma-client/queries/aggregation-grouping-summarizing/index.md#group-by)
 
 #### [Options](#options-17)
 
@@ -2392,11 +2395,11 @@ const groupUsers = await prisma.user.groupBy({
 
 ### [`findRaw()`](#findraw)
 
-See: [Using Raw SQL (`findRaw()`)](https://www.prisma.io/docs/orm/prisma-client/using-raw-sql/raw-queries#findraw).
+See: [Using Raw SQL (`findRaw()`)](prisma/docs/orm/prisma-client/using-raw-sql/raw-queries/index.md#findraw).
 
 ### [`aggregateRaw()`](#aggregateraw)
 
-See: [Using Raw SQL (`aggregateRaw()`)](https://www.prisma.io/docs/orm/prisma-client/using-raw-sql/raw-queries#aggregateraw).
+See: [Using Raw SQL (`aggregateRaw()`)](prisma/docs/orm/prisma-client/using-raw-sql/raw-queries/index.md#aggregateraw).
 
 ### [`select`](#select)
 
@@ -2718,9 +2721,9 @@ const omitPassword = { password: true } satisfies Prisma.UserOmit;
 *   `join` (default): Uses a database-level `LATERAL JOIN` (PostgreSQL) or correlated subqueries (MySQL) and fetches all data with a single query to the database.
 *   `query`: Sends multiple queries to the database (one per table) and joins them on the application level.
 
-> **Note**: Once `relationLoadStrategy` moves from [Preview](https://www.prisma.io/docs/orm/more/releases#preview) into [General Availability](https://www.prisma.io/docs/orm/more/releases#generally-available-ga), `join` will universally become the default for all relation queries.
+> **Note**: Once `relationLoadStrategy` moves from [Preview](prisma/docs/orm/more/releases/index.md#preview) into [General Availability](prisma/docs/orm/more/releases/index.md#generally-available-ga), `join` will universally become the default for all relation queries.
 
-You can learn more about join strategies [here](https://www.prisma.io/docs/orm/prisma-client/queries/relation-queries#relation-load-strategies-preview).
+You can learn more about join strategies [here](prisma/docs/orm/prisma-client/queries/relation-queries/index.md#relation-load-strategies-preview).
 
 Because the `relationLoadStrategy` option is currently in Preview, you need to enable it via the `relationJoins` preview feature flag in your Prisma schema file:
 
@@ -2878,7 +2881,7 @@ Sort descending (Z → A)
 Note:
 
 *   This argument is optional.
-*   For use on optional [scalar](https://www.prisma.io/docs/orm/prisma-schema/data-model/models#scalar-fields) fields only. If you try to sort by nulls on a required or [relation](https://www.prisma.io/docs/orm/prisma-schema/data-model/models#relation-fields) field, Prisma Client throws a [P2009 error](https://www.prisma.io/docs/orm/reference/error-reference#p2009).
+*   For use on optional [scalar](prisma/docs/orm/prisma-schema/data-model/models/index.md#scalar-fields) fields only. If you try to sort by nulls on a required or [relation](prisma/docs/orm/prisma-schema/data-model/models/index.md#relation-fields) field, Prisma Client throws a [P2009 error](prisma/docs/orm/reference/error-reference/index.md#p2009).
 
 Name
 
@@ -3280,7 +3283,7 @@ The following examples demonstrate how to use TypeScript's `satisfies` operator 
 
 ### [`distinct`](#distinct)
 
-Deduplicate a list of records from [`findMany`](#findmany) or [`findFirst`](#findfirst). See also: [Aggregation, grouping, and summarizing](https://www.prisma.io/docs/orm/prisma-client/queries/aggregation-grouping-summarizing#select-distinct)
+Deduplicate a list of records from [`findMany`](#findmany) or [`findFirst`](#findfirst). See also: [Aggregation, grouping, and summarizing](prisma/docs/orm/prisma-client/queries/aggregation-grouping-summarizing/index.md#select-distinct)
 
 #### [Examples](#examples-24)
 
@@ -3370,11 +3373,11 @@ generator client {
 }
 ```
 
-See [Preview Features](https://www.prisma.io/docs/orm/reference/preview-features/client-preview-features#preview-features-promoted-to-general-availability) for more details.
+See [Preview Features](prisma/docs/orm/reference/preview-features/client-preview-features/index.md#preview-features-promoted-to-general-availability) for more details.
 
 ### [`create`](#create-1)
 
-A nested `create` query adds a new related record or set of records to a parent record. See: [Working with relations](https://www.prisma.io/docs/orm/prisma-client/queries/relation-queries)
+A nested `create` query adds a new related record or set of records to a parent record. See: [Working with relations](prisma/docs/orm/prisma-client/queries/relation-queries/index.md)
 
 *   `create` is available as a nested query when you `create()` (`prisma.user.create(...)`) a new parent record or `update()` (`prisma.user.update(...)`) an existing parent record.
 *   You can use a nested `create` _or_ a nested [`createMany`](#createmany-1) to create multiple related records. If you require the [`skipDuplicates` query option](#nested-createmany-options) you should use `createMany`.
@@ -3472,7 +3475,7 @@ const user = await prisma.user.update({
 
 ### [`createMany`](#createmany-1)
 
-A nested `createMany` query adds a new set of records to a parent record. See: [Working with relations](https://www.prisma.io/docs/orm/prisma-client/queries/relation-queries)
+A nested `createMany` query adds a new set of records to a parent record. See: [Working with relations](prisma/docs/orm/prisma-client/queries/relation-queries/index.md)
 
 *   `createMany` is available as a nested query when you `create()` (`prisma.user.create(...)`) a new parent record or `update()` (`prisma.user.update(...)`) an existing parent record.
     *   Available in the context of a one-to-many relation — for example, you can `prisma.user.create(...)` a user and use a nested `createMany` to create multiple posts (posts have one user).
@@ -3480,7 +3483,7 @@ A nested `createMany` query adds a new set of records to a parent record. See: [
 *   You cannot nest an additional `create` or `createMany`.
 *   Allows setting foreign keys directly — for example, setting the `categoryId` on a post.
 *   Nested `createMany` is supported by SQLite.
-*   You can use a nested `create` _or_ a nested `createMany` to create multiple related records - [if you do not need the `skipDuplicates` query option, you should probably use `create`](https://www.prisma.io/docs/orm/prisma-client/queries/relation-queries#create-a-single-record-and-multiple-related-records).
+*   You can use a nested `create` _or_ a nested `createMany` to create multiple related records - [if you do not need the `skipDuplicates` query option, you should probably use `create`](prisma/docs/orm/prisma-client/queries/relation-queries/index.md#create-a-single-record-and-multiple-related-records).
 
 #### [Options](#nested-createmany-options)
 
@@ -3530,7 +3533,7 @@ const user = await prisma.user.update({
 
 ### [`set`](#set)
 
-`set` overwrites the value of a relation - for example, replacing a list of `Post` records with a different list. See: [Working with relations](https://www.prisma.io/docs/orm/prisma-client/queries/relation-queries)
+`set` overwrites the value of a relation - for example, replacing a list of `Post` records with a different list. See: [Working with relations](prisma/docs/orm/prisma-client/queries/relation-queries/index.md)
 
 #### [Examples](#examples-27)
 
@@ -3549,7 +3552,7 @@ const user = await prisma.user.update({
 
 ### [`connect`](#connect)
 
-A nested `connect` query connects a record to an existing related record by specifying an ID or unique identifier. See: [Working with relations](https://www.prisma.io/docs/orm/prisma-client/queries/relation-queries)
+A nested `connect` query connects a record to an existing related record by specifying an ID or unique identifier. See: [Working with relations](prisma/docs/orm/prisma-client/queries/relation-queries/index.md)
 
 *   `connect` is available as a nested query when you create a new parent record or update an existing parent record.
     
@@ -3644,7 +3647,7 @@ const user = await prisma.user.update({
 
 ### [`connectOrCreate`](#connectorcreate)
 
-`connectOrCreate` _either_ connects a record to an existing related record by ID or unique identifier _or_ creates a new related record if the record does not exist. See: [Working with relations](https://www.prisma.io/docs/orm/prisma-client/queries/relation-queries)
+`connectOrCreate` _either_ connects a record to an existing related record by ID or unique identifier _or_ creates a new related record if the record does not exist. See: [Working with relations](prisma/docs/orm/prisma-client/queries/relation-queries/index.md)
 
 Multiple `connectOrCreate` queries that run as concurrent transactions can result in a **race condition**. Consider the following example, where two queries attempt to `connectOrCreate` a blog post tag named `computing` at the same time (tag names must be unique):
 
@@ -3756,7 +3759,7 @@ const user = await prisma.user.update({
 
 ### [`disconnect`](#disconnect)
 
-A nested `disconnect` query breaks the connection between a parent record and a related record, but does not delete either record. See: [Working with relations](https://www.prisma.io/docs/orm/prisma-client/queries/relation-queries)
+A nested `disconnect` query breaks the connection between a parent record and a related record, but does not delete either record. See: [Working with relations](prisma/docs/orm/prisma-client/queries/relation-queries/index.md)
 
 *   `disconnect` is only available if the relation is optional.
 *   If the relationship you are attempting to disconnect does not exist, the operation does nothing.
@@ -3791,7 +3794,7 @@ const user = await prisma.user.update({
 
 ### [`update`](#update-1)
 
-A nested `update` query updates one or more related records where the parent record's ID is `n`. See: [Working with relations](https://www.prisma.io/docs/orm/prisma-client/queries/relation-queries#update-a-specific-related-record)
+A nested `update` query updates one or more related records where the parent record's ID is `n`. See: [Working with relations](prisma/docs/orm/prisma-client/queries/relation-queries/index.md#update-a-specific-related-record)
 
 *   Nested `update` queries are only available in the context of a top-level `update` query (for example, `prisma.user.update(...)`).
     
@@ -4792,7 +4795,7 @@ const setTags = await prisma.post.update({
 
 Scalar list filters allow you to filter by the contents of a list / array field.
 
-*   Scalar list / array filters [ignore `NULL` values](https://www.prisma.io/docs/orm/prisma-client/special-fields-and-types/working-with-scalar-lists-arrays#null-values-in-arrays) . Using `isEmpty` or `NOT` does not return records with `NULL` value lists / arrays, and `{ equals: null }` results in an error.
+*   Scalar list / array filters [ignore `NULL` values](prisma/docs/orm/prisma-client/special-fields-and-types/working-with-scalar-lists-arrays/index.md#null-values-in-arrays) . Using `isEmpty` or `NOT` does not return records with `NULL` value lists / arrays, and `{ equals: null }` results in an error.
 
 ### [`has`](#has)
 
@@ -4916,7 +4919,7 @@ const posts = await prisma.post.findMany({
 });
 ```
 
-Composite type methods allow you to create, update and delete [composite types](https://www.prisma.io/docs/orm/prisma-client/special-fields-and-types/composite-types) (MongoDB only).
+Composite type methods allow you to create, update and delete [composite types](prisma/docs/orm/prisma-client/special-fields-and-types/composite-types/index.md) (MongoDB only).
 
 ### [`set`](#set-2)
 
@@ -5073,7 +5076,7 @@ const product = prisma.product.update({
 });
 ```
 
-Composite type filters allow you to filter the contents of [composite types](https://www.prisma.io/docs/orm/prisma-client/special-fields-and-types/composite-types) (MongoDB only).
+Composite type filters allow you to filter the contents of [composite types](prisma/docs/orm/prisma-client/special-fields-and-types/composite-types/index.md) (MongoDB only).
 
 ### [`equals`](#equals-2)
 
@@ -5361,7 +5364,7 @@ const updatePosts = await prisma.post.updateMany({
 });
 ```
 
-For use cases and advanced examples, see: [Working with `Json` fields](https://www.prisma.io/docs/orm/prisma-client/special-fields-and-types/working-with-json-fields).
+For use cases and advanced examples, see: [Working with `Json` fields](prisma/docs/orm/prisma-client/special-fields-and-types/working-with-json-fields/index.md).
 
 The examples in this section assumes that the value of the `pet` field is:
 
@@ -5385,7 +5388,7 @@ The examples in this section assumes that the value of the `pet` field is:
 }
 ```
 
-*   The implementation of `Json` filtering [differs between database connectors](https://www.prisma.io/docs/orm/prisma-client/special-fields-and-types/working-with-json-fields)
+*   The implementation of `Json` filtering [differs between database connectors](prisma/docs/orm/prisma-client/special-fields-and-types/working-with-json-fields/index.md)
 *   Filtering is case sensitive in PostgreSQL and does not yet support `mode`
 
 ### [`path`](#path)
@@ -5445,47 +5448,47 @@ The following query returns all users where the `sanctuaries` array ends with th
 
 ### [`$disconnect()`](#disconnect-1)
 
-The `$disconnect()` method closes the database connections that were established when `$connect` was called and stops the process that was running Prisma ORM's query engine. See [Connection management](https://www.prisma.io/docs/orm/prisma-client/setup-and-configuration/databases-connections/connection-management) for an overview of `$connect()` and `$disconnect()`.
+The `$disconnect()` method closes the database connections that were established when `$connect` was called and stops the process that was running Prisma ORM's query engine. See [Connection management](prisma/docs/orm/prisma-client/setup-and-configuration/databases-connections/connection-management/index.md) for an overview of `$connect()` and `$disconnect()`.
 
 *   `$disconnect()` returns a `Promise`, so you should call it inside an `async` function with the `await` keyword.
 
 ### [`$connect()`](#connect-1)
 
-The `$connect()` method establishes a physical connection to the database via Prisma ORM's query engine. See [Connection management](https://www.prisma.io/docs/orm/prisma-client/setup-and-configuration/databases-connections/connection-management) for an overview of `$connect()` and `$disconnect()`.
+The `$connect()` method establishes a physical connection to the database via Prisma ORM's query engine. See [Connection management](prisma/docs/orm/prisma-client/setup-and-configuration/databases-connections/connection-management/index.md) for an overview of `$connect()` and `$disconnect()`.
 
 *   `$connect()` returns a `Promise`, so you should call it inside an `async` function with the `await` keyword.
 
 ### [`$on()`](#on)
 
-The `$on()` method allows you to subscribe to [logging events](#log) or the [exit hook](https://www.prisma.io/docs/orm/prisma-client/setup-and-configuration/databases-connections/connection-management#exit-hooks).
+The `$on()` method allows you to subscribe to [logging events](#log) or the [exit hook](prisma/docs/orm/prisma-client/setup-and-configuration/databases-connections/connection-management/index.md#exit-hooks).
 
 ### [`$queryRawTyped`](#queryrawtyped)
 
-See: [Using Raw SQL (`$queryRawTyped`)](https://www.prisma.io/docs/orm/prisma-client/using-raw-sql/typedsql).
+See: [Using Raw SQL (`$queryRawTyped`)](prisma/docs/orm/prisma-client/using-raw-sql/typedsql/index.md).
 
 ### [`$queryRaw`](#queryraw)
 
-See: [Using Raw SQL (`$queryRaw`)](https://www.prisma.io/docs/orm/prisma-client/using-raw-sql/raw-queries#queryraw).
+See: [Using Raw SQL (`$queryRaw`)](prisma/docs/orm/prisma-client/using-raw-sql/raw-queries/index.md#queryraw).
 
 ### [`$queryRawUnsafe()`](#queryrawunsafe)
 
-See: [Using Raw SQL (`$queryRawUnsafe()`)](https://www.prisma.io/docs/orm/prisma-client/using-raw-sql/raw-queries#queryrawunsafe).
+See: [Using Raw SQL (`$queryRawUnsafe()`)](prisma/docs/orm/prisma-client/using-raw-sql/raw-queries/index.md#queryrawunsafe).
 
 ### [`$executeRaw`](#executeraw)
 
-See: [Using Raw SQL (`$executeRaw`)](https://www.prisma.io/docs/orm/prisma-client/using-raw-sql/raw-queries#executeraw).
+See: [Using Raw SQL (`$executeRaw`)](prisma/docs/orm/prisma-client/using-raw-sql/raw-queries/index.md#executeraw).
 
 ### [`$executeRawUnsafe()`](#executerawunsafe)
 
-See: [Using Raw SQL (`$executeRawUnsafe()`)](https://www.prisma.io/docs/orm/prisma-client/using-raw-sql/raw-queries#executerawunsafe).
+See: [Using Raw SQL (`$executeRawUnsafe()`)](prisma/docs/orm/prisma-client/using-raw-sql/raw-queries/index.md#executerawunsafe).
 
 ### [`$runCommandRaw()`](#runcommandraw)
 
-See: [Using Raw SQL (`$runCommandRaw()`)](https://www.prisma.io/docs/orm/prisma-client/using-raw-sql/raw-queries#runcommandraw).
+See: [Using Raw SQL (`$runCommandRaw()`)](prisma/docs/orm/prisma-client/using-raw-sql/raw-queries/index.md#runcommandraw).
 
 ### [`$transaction()`](#transaction)
 
-See: [Transactions](https://www.prisma.io/docs/orm/prisma-client/queries/transactions).
+See: [Transactions](prisma/docs/orm/prisma-client/queries/transactions/index.md).
 
 ### [`$extends`](#extends)
 
@@ -5496,13 +5499,13 @@ With `$extends`, you can create and use Prisma Client extensions to add function
 *   `query`: create custom Prisma Client queries
 *   `result`: add custom fields to your query results
 
-Learn more: [Prisma Client extensions](https://www.prisma.io/docs/orm/prisma-client/client-extensions).
+Learn more: [Prisma Client extensions](prisma/docs/orm/prisma-client/client-extensions/index.md).
 
 Utility types are helper functions and types that live on the `Prisma` namespace. They are useful for keeping your application type safe.
 
 ### [Type-checking with `satisfies`](#type-checking-with-satisfies)
 
-You can use TypeScript's `satisfies` operator to create re-usable query parameters based on your schema models while ensuring that the objects you create are type-compatible with the generated Prisma Client types. See also: [Type safety with Prisma Client](https://www.prisma.io/docs/orm/prisma-client/type-safety).
+You can use TypeScript's `satisfies` operator to create re-usable query parameters based on your schema models while ensuring that the objects you create are type-compatible with the generated Prisma Client types. See also: [Type safety with Prisma Client](prisma/docs/orm/prisma-client/type-safety/index.md).
 
 Use the generated Prisma Client types with `satisfies` to get type checking and inference:
 
@@ -5619,11 +5622,11 @@ You must specify at least one unique field in your `where` statement [outside of
 *   [Optimistic concurrency control on updates](#optimistic-concurrency-control-on-updates)
 *   [Permission checks](#permission-checks)
 *   [Soft deletes](#soft-deletes)
-*   Filter on optional [one-to-one nested reads](https://www.prisma.io/docs/orm/prisma-client/queries/relation-queries#nested-reads)
+*   Filter on optional [one-to-one nested reads](prisma/docs/orm/prisma-client/queries/relation-queries/index.md#nested-reads)
 
 ### [Optimistic concurrency control on updates](#optimistic-concurrency-control-on-updates)
 
-You can filter on non-unique fields to perform [optimistic concurrency control](https://www.prisma.io/docs/orm/prisma-client/queries/transactions#optimistic-concurrency-control) on `update` operations.
+You can filter on non-unique fields to perform [optimistic concurrency control](prisma/docs/orm/prisma-client/queries/transactions/index.md#optimistic-concurrency-control) on `update` operations.
 
 To perform optimistic concurrency control, use a `version` field to check whether the data in a record or related record has changed while your code executes.
 
@@ -5716,7 +5719,7 @@ await prisma.user.update({
 
 #### [One-to-one relations](#one-to-one-relations)
 
-You can filter on non-unique fields in the following operations on [one-to-one relations](https://www.prisma.io/docs/orm/prisma-schema/data-model/relations/one-to-one-relations):
+You can filter on non-unique fields in the following operations on [one-to-one relations](prisma/docs/orm/prisma-schema/data-model/relations/one-to-one-relations/index.md):
 
 *   Nested update
 *   Nested upsert
@@ -5793,4 +5796,5 @@ findPostOperation.then(); // Prisma Client now executes the query
 await findPostOperation; // Prisma Client now executes the query
 ```
 
-When using the [`$transaction` API](https://www.prisma.io/docs/orm/prisma-client/queries/transactions#the-transaction-api), this behavior makes it possible for Prisma Client to pass all the queries on to the query engine as a single transaction.
+When using the [`$transaction` API](prisma/docs/orm/prisma-client/queries/transactions/index.md#the-transaction-api), this behavior makes it possible for Prisma Client to pass all the queries on to the query engine as a single transaction.
+

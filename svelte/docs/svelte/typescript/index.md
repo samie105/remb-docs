@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:43:05.902Z"
 content_hash: "9839f72fb608911a6daf7030e8e21441df10d35ef6e9fe36b7ecfaad9e10ff15"
 menu_path: ["TypeScript"]
 section_path: []
+nav_prev: {"path": "svelte/docs/svelte/testing/index.md", "title": "Testing"}
+nav_next: {"path": "svelte/docs/svelte/custom-elements/index.md", "title": "Custom elements"}
 ---
+
 You can use TypeScript within Svelte components. IDE extensions like the [Svelte VS Code extension](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode) will help you catch errors right in your editor, and [`svelte-check`](https://www.npmjs.com/package/svelte-check) does the same on the command line, which you can integrate into your CI.
 
 ## <script lang="ts">[](#script-lang-ts)
@@ -601,3 +604,4 @@ Then make sure that the `d.ts` file is referenced in your `tsconfig.json`. If it
 previous next
 
 [Testing](/docs/svelte/testing) [Custom elements](/docs/svelte/custom-elements)
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:44:41.146Z"
 content_hash: "357b13ef830a5466197f887a7b8992648e2666254fc2b6d4543b99e759af8d71"
 menu_path: ["Links Overview"]
 section_path: []
+nav_prev: {"path": "trpc/docs/client/headers/index.md", "title": "Headers"}
+nav_next: {"path": "trpc/docs/client/links/httpBatchLink/index.md", "title": "HTTP Batch Link"}
 ---
+
 Links enable you to customize the flow of data between the tRPC Client and Server. A link should do only one thing, which can be either a self-contained modification to a tRPC operation (query, mutation, or subscription) or a side-effect based on the operation (such as logging).
 
 You can compose links together into an array that you can provide to the tRPC client configuration via the `links` property, which represents a link chain. This means that the tRPC client will execute the links in the order they are added to the `links` array when doing a request and will execute them again in reverse when it's handling a response. Here's a visual representation of the link chain:
@@ -120,9 +123,9 @@ The **terminating link** is the last link in a link chain. Instead of calling th
 
 The `links` array that you add to the tRPC client config should have at least one link, and that link should be a terminating link. If `links` don't have a terminating link at the end of them, the tRPC operation will not be sent to the tRPC server.
 
-[`httpBatchLink`](https://trpc.io/docs/client/links/httpBatchLink) is the recommended terminating link by tRPC.
+[`httpBatchLink`](trpc/docs/client/links/httpBatchLink/index.md) is the recommended terminating link by tRPC.
 
-[`httpLink`](https://trpc.io/docs/client/links/httpLink), [`httpBatchStreamLink`](https://trpc.io/docs/client/links/httpBatchStreamLink), [`httpSubscriptionLink`](https://trpc.io/docs/client/links/httpSubscriptionLink), [`wsLink`](https://trpc.io/docs/client/links/wsLink), and [`localLink`](https://trpc.io/docs/client/links/localLink) are other examples of terminating links depending on your needs.
+[`httpLink`](trpc/docs/client/links/httpLink/index.md), [`httpBatchStreamLink`](trpc/docs/client/links/httpBatchStreamLink/index.md), [`httpSubscriptionLink`](trpc/docs/client/links/httpSubscriptionLink/index.md), [`wsLink`](trpc/docs/client/links/wsLink/index.md), and [`localLink`](trpc/docs/client/links/localLink/index.md) are other examples of terminating links depending on your needs.
 
 ## Managing context[​](#managing-context "Direct link to Managing context")
 
@@ -132,4 +135,5 @@ Obtain the current context object and modify it by accessing `op.context`.
 
 You can set the context object's initial value for a particular operation by providing the context parameter to the `query` or `useQuery` hook (or `mutation`, `subscription`, etc.).
 
-For an example use case, see [Disable batching for certain requests](https://trpc.io/docs/client/links/splitLink#disable-batching-for-certain-requests).
+For an example use case, see [Disable batching for certain requests](trpc/docs/client/links/splitLink/index.md#disable-batching-for-certain-requests).
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:36:00.974Z"
 content_hash: "2eedf98f1fa6d78cb05eeb2a6681c77133a4c39cf151ec9ee18ae0f4a3c5255d"
 menu_path: ["Data REST API","Data REST API","Tools","Tools","SQL to REST API Translator","SQL to REST API Translator"]
 section_path: ["Data REST API","Data REST API","Tools","Tools","SQL to REST API Translator","SQL to REST API Translator"]
+nav_prev: {"path": "supabase/docs/guides/api/using-custom-schemas/index.md", "title": "Using Custom Schemas"}
+nav_next: {"path": "supabase/docs/guides/auth/architecture/index.md", "title": "Auth architecture"}
 ---
+
 # 
 
 SQL to REST API Translator
@@ -38,3 +41,4 @@ curl -G http://localhost:54321/rest/v1/books \
 ```
 
 ### FAQs
+

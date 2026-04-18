@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:36:01.588Z"
 content_hash: "1650c59db8dac9573c855fee24804180fbda8bbc0fd495863cea4c6bcd213f54"
 menu_path: ["Auth","Auth","Architecture","Architecture"]
 section_path: ["Auth","Auth","Architecture","Architecture"]
+nav_prev: {"path": "supabase/docs/guides/api/sql-to-rest/index.md", "title": "SQL to REST API Translator"}
+nav_next: {"path": "supabase/docs/guides/auth/audit-logs/index.md", "title": "Auth Audit Logs"}
 ---
+
 # 
 
 Auth architecture
@@ -75,3 +78,4 @@ You can connect Auth information to your own objects using [database triggers](/
 Make sure any views you create for Auth data are protected.
 
 Starting in Postgres version 15, views inherit the RLS policies of the underlying tables if created with `security_invoker`. Views in earlier versions, or those created without `security_invoker`, inherit the permissions of the owner, who can bypass RLS policies.
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:33:48.430Z"
 content_hash: "5fc96442b3b869d015c2d8e3da4ef0a9edce1b4725b0b13afc7d7aafd400957f"
 menu_path: ["Middleware"]
 section_path: []
+nav_prev: {"path": "fastify/docs/latest/Reference/Logging/index.md", "title": "Logging"}
+nav_next: {"path": "fastify/docs/latest/Reference/Plugins/index.md", "title": "Plugins"}
 ---
+
 Version: latest (v5.8.x)
 
 ## Middleware[​](#middleware "Direct link to Middleware")
@@ -45,3 +48,4 @@ const path = require('node:path')const serveStatic = require('serve-static')// S
 ### Alternatives[​](#alternatives "Direct link to Alternatives")
 
 Fastify offers alternatives to commonly used middleware, such as [`@fastify/helmet`](https://github.com/fastify/fastify-helmet) for [`helmet`](https://github.com/helmetjs/helmet), [`@fastify/cors`](https://github.com/fastify/fastify-cors) for [`cors`](https://github.com/expressjs/cors), and [`@fastify/static`](https://github.com/fastify/fastify-static) for [`serve-static`](https://github.com/expressjs/serve-static).
+

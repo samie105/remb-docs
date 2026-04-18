@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:00:10.919Z"
 content_hash: "f2f6c1a4aaa1792dab66509cdc73b4741c28f35b5171e14f3ff600d1dcb38b5d"
 menu_path: ["Platform","Platform","More","More","More","Manage your usage","Manage your usage","Point-in-Time Recovery","Point-in-Time Recovery"]
 section_path: ["Platform","Platform","More","More","More","Manage your usage","Manage your usage","Point-in-Time Recovery","Point-in-Time Recovery"]
+nav_prev: {"path": "supabase/docs/guides/platform/manage-your-usage/monthly-active-users/index.md", "title": "Manage Monthly Active Users usage"}
+nav_next: {"path": "supabase/docs/guides/platform/manage-your-usage/read-replicas/index.md", "title": "Manage Read Replica usage"}
 ---
+
 # 
 
 Manage Point-in-Time Recovery usage
@@ -239,3 +242,4 @@ Compute Credits
 *   Review your [backup frequency](/docs/guides/platform/backups#frequency-of-backups) needs to determine whether you require PITR or free Daily Backups are sufficient
 *   Regularly check your projects and disable PITR where no longer needed
 *   Consider disabling PITR for non-production databases
+

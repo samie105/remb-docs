@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:48:36.336Z"
 content_hash: "b335bd33e802e693c12da866a8569834d334637f9a1a37936c429f0a91273467"
 menu_path: ["$$props and $$restProps"]
 section_path: []
+nav_prev: {"path": "svelte/docs/svelte/legacy-export-let/index.md", "title": "export let"}
+nav_next: {"path": "svelte/docs/svelte/legacy-on/index.md", "title": "on:"}
 ---
+
 In runes mode, getting an object containing all the props that were passed in is easy, using the [`$props`]($props) rune.
 
 In legacy mode, we use `$$props` and `$$restProps`:
@@ -42,3 +45,4 @@ In Svelte 3/4 using `$$props` and `$$restProps` creates a modest performance pen
 previous next
 
 [export let](/docs/svelte/legacy-export-let) [on:](/docs/svelte/legacy-on)
+

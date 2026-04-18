@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:37:57.995Z"
 content_hash: "23f6337d39702f02cddaec4e0e620068f3f315a8e1dae7d4caa375f13d24cdcf"
 menu_path: ["PostgreSQL: Documentation: 18: 5.8. Privileges"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/infoschema-foreign-data-wrapper-options.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.26.\u00a0foreign_data_wrapper_options"}
+nav_next: {"path": "postgres/docs/current/app-pgresetwal.html/index.md", "title": "PostgreSQL: Documentation: 18: pg_resetwal"}
 ---
+
 When an object is created, it is assigned an owner. The owner is normally the role that executed the creation statement. For most kinds of objects, the initial state is that only the owner (or a superuser) can do anything with the object. To allow other roles to use it, _privileges_ must be granted.
 
 There are different kinds of privileges: `SELECT`, `INSERT`, `UPDATE`, `DELETE`, `TRUNCATE`, `REFERENCES`, `TRIGGER`, `CREATE`, `CONNECT`, `TEMPORARY`, `EXECUTE`, `USAGE`, `SET`, `ALTER SYSTEM`, and `MAINTAIN`. The privileges applicable to a particular object vary depending on the object's type (table, function, etc.). More detail about the meanings of these privileges appears below. The following sections and chapters will also show you how these privileges are used.
@@ -376,3 +379,4 @@ If the “Access privileges” column is empty for a given object, it means the 
 Notice that the owner's implicit grant options are not marked in the access privileges display. A `*` will appear only when grant options have been explicitly granted to someone.
 
 The “Access privileges” column shows `(none)` when the object's privileges entry is non-null but empty. This means that no privileges are granted at all, even to the object's owner — a rare situation. (The owner still has implicit grant options in this case, and so could re-grant her own privileges; but she has none at the moment.)
+

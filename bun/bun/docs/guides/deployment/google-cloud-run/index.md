@@ -9,116 +9,10 @@ last_crawled_at: "2026-04-18T16:42:57.146Z"
 content_hash: "8576f408aa37eaf1f05646fa7b6e61e12edc6c7d9f8d4be5d4c27bd2f24a8946"
 menu_path: ["Deploy a Bun application on Google Cloud Run"]
 section_path: []
+nav_prev: {"path": "bun/bun/docs/guides/deployment/digital-ocean/index.md", "title": "Deploy a Bun application on DigitalOcean"}
+nav_next: {"path": "bun/bun/docs/guides/deployment/railway/index.md", "title": "Deploy a Bun application on Railway"}
 ---
-[Google Cloud Run](https://cloud.google.com/run) is a managed platform for deploying and scaling serverless applications. Google handles the infrastructure for you. In this guide, we will deploy a Bun HTTP server to Google Cloud Run using a `Dockerfile`.
 
-1
-
-Initialize `gcloud` by select/creating a project
-
-Make sure that you’ve initialized the Google Cloud CLI. This command logs you in, and prompts you to either select an existing project or create a new one.For more help with the Google Cloud CLI, see the [official documentation](https://docs.cloud.google.com/sdk/gcloud/reference/init).
-
-terminal
-
-```
-gcloud init
-```
-
-```
-Welcome! This command will take you through the configuration of gcloud.
-
-You must sign in to continue. Would you like to sign in (Y/n)? Y
-You are signed in as [email@example.com].
-
-Pick cloud project to use:
- [1] existing-bun-app-1234
- [2] Enter a project ID
- [3] Create a new project
-Please enter numeric choice or text value (must exactly match list item): 3
-
-Enter a Project ID. my-bun-app
-Your current project has been set to: [my-bun-app]
-
-The Google Cloud CLI is configured and ready to use!
-```
-
-2
-
-(Optional) Store your project info in environment variables
-
-Set variables for your project ID and number so they’re easier to reuse in the following steps.
-
-terminal
-
-```
-PROJECT_ID=$(gcloud projects list --format='value(projectId)' --filter='name="my bun app"')
-PROJECT_NUMBER=$(gcloud projects list --format='value(projectNumber)' --filter='name="my bun app"')
-
-echo $PROJECT_ID $PROJECT_NUMBER
-```
-
-```
-my-bun-app-... [PROJECT_NUMBER]
-```
-
-3
-
-Link a billing account
-
-List your available billing accounts and link one to your project:
-
-terminal
-
-```
-gcloud billing accounts list
-```
-
-```
-ACCOUNT_ID            NAME                OPEN  MASTER_ACCOUNT_ID
-[BILLING_ACCOUNT_ID]  My Billing Account  True
-```
-
-Link your billing account to your project. Replace `[BILLING_ACCOUNT_ID]` with the ID of your billing account.
-
-terminal
-
-```
-gcloud billing projects link $PROJECT_ID --billing-account=[BILLING_ACCOUNT_ID]
-```
-
-```
-billingAccountName: billingAccounts/[BILLING_ACCOUNT_ID]
-billingEnabled: true
-name: projects/my-bun-app-.../billingInfo
-projectId: my-bun-app-...
-```
-
-4
-
-Enable APIs and configure IAM roles
-
-Activate the necessary services and grant Cloud Build permissions:
-
-terminal
-
-```
-gcloud services enable run.googleapis.com cloudbuild.googleapis.com
-gcloud projects add-iam-policy-binding $PROJECT_ID \
-  --member=serviceAccount:$PROJECT_NUMBER-compute@developer.gserviceaccount.com \
-  --role=roles/run.builder
-```
-
-These commands enable Cloud Run (`run.googleapis.com`) and Cloud Build (`cloudbuild.googleapis.com`), which are required for deploying from source. Cloud Run runs your containerized app, while Cloud Build handles building and packaging it.The IAM binding grants the Compute Engine service account (`$PROJECT_NUMBER-compute@developer.gserviceaccount.com`) permission to build and deploy images on your behalf.
-
-5
-
-Add a Dockerfile
-
-Create a new `Dockerfile` in the root of your project. This file contains the instructions to initialize the container, copy your local project files into it, install dependencies, and start the application.
-
-Dockerfile
-
-```
 # Use the official Bun image to run the application
 FROM oven/bun:latest
 
@@ -192,3 +86,4 @@ Service URL: https://my-bun-app-....us-west1.run.app
 Visit your live application
 
 🎉 Your Bun application is now live!Visit the Service URL (`https://my-bun-app-....us-west1.run.app`) to confirm everything works as expected.
+

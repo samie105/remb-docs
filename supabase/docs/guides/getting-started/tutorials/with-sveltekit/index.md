@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:59:24.218Z"
 content_hash: "bce79d07c177a86eba948d12a26b0f33ae2a827a4c1a4e014d74f07f737953cd"
 menu_path: ["Start with Supabase","Start with Supabase","Web app demos","Web app demos","SvelteKit","SvelteKit"]
 section_path: ["Start with Supabase","Start with Supabase","Web app demos","Web app demos","SvelteKit","SvelteKit"]
+nav_prev: {"path": "supabase/docs/guides/getting-started/tutorials/with-svelte/index.md", "title": "Build a User Management App with Svelte"}
+nav_next: {"path": "supabase/docs/guides/getting-started/tutorials/with-swift/index.md", "title": "Build a User Management App with Swift and SwiftUI"}
 ---
+
 # 
 
 Build a User Management App with SvelteKit
@@ -270,3 +273,4 @@ Add the widget to the Account page:
 [View source](https://github.com/supabase/supabase/blob/e8df67d5d5291e05ea56596aee0f2b7fa152929b/examples/user-management/sveltekit-user-management/src/routes/account/+page.svelte)
 
 At this stage you have a fully functional application!
+

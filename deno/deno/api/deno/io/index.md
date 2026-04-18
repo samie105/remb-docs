@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:09:52.719Z"
 content_hash: "258791b83fc6e6abed843646c14bdbf3986ce9a1e9c909503fcad3f48f613ad9"
 menu_path: ["I/O - Deno documentation"]
 section_path: []
+nav_prev: {"path": "deno/deno/api/deno/http-server/index.md", "title": "HTTP Server - Deno documentation"}
+nav_next: {"path": "deno/deno/api/deno/jupyter/index.md", "title": "Jupyter - Deno documentation"}
 ---
+
 ### Enums [#](#Enums)
 
 E
@@ -99,3 +102,4 @@ A reference to `stdout` which can be used to write directly to `stdout`. It impl
 *   [writable](./././~/Deno.stdout#property_writable)
 *   [write](./././~/Deno.stdout#method_write_0)
 *   [writeSync](./././~/Deno.stdout#method_writesync_0)
+

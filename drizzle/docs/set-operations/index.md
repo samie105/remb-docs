@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:21:32.585Z"
 content_hash: "af64799bf1251124e8f93e0d5e1e7b18433f2fac4472ec9061453ad7b560e5e9"
 menu_path: ["Set Operations"]
 section_path: []
+nav_prev: {"path": "drizzle/docs/perf-serverless/index.md", "title": "Drizzle Serverless performance"}
+nav_next: {"path": "drizzle/docs/generated-columns/index.md", "title": "Generated Columns"}
 ---
+
 SQL set operations combine the results of multiple query blocks into a single result. The SQL standard defines the following three set operations: `UNION`, `INTERSECT`, `EXCEPT`, `UNION ALL`, `INTERSECT ALL`, `EXCEPT ALL`.
 
 ### Union[](#union)
@@ -913,3 +916,4 @@ select "product_id", "quantity_ordered" from "regular_customer_orders"
 except all
 select "product_id", "quantity_ordered" from "vip_customer_orders"
 ```
+

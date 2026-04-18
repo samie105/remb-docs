@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:01:00.541Z"
 content_hash: "6fe8eee05a6cd435e47405edb0b2c290665eb2148a3d27ae0e726a1da2f9f8fc"
 menu_path: ["Node-API"]
 section_path: []
+nav_prev: {"path": "bun/bun/docs/runtime/networking/udp/index.md", "title": "UDP"}
+nav_next: {"path": "bun/bun/docs/runtime/nodejs-compat/index.md", "title": "Node.js Compatibility"}
 ---
+
 [Skip to main content](#content-area)
 
 [Bun home page![light logo](https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z_zHyy/logo/logo-with-wordmark-dark.svg?fit=max&auto=format&n=JUhaF6Mf68z_zHyy&q=85&s=3f55cd23822028e40658b192c927f3e4)![dark logo](https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z_zHyy/logo/logo-with-wordmark-light.svg?fit=max&auto=format&n=JUhaF6Mf68z_zHyy&q=85&s=8a0c5928d9dc3631f0d33e17c257e2ec)](/docs)
@@ -62,3 +65,4 @@ FFI
 Next
 
 ](/docs/runtime/ffi)
+

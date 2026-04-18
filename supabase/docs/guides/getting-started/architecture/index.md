@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:46:02.897Z"
 content_hash: "d8ad2c8708c533d15a2f8f2506c061182211e5b5736691074420e57b88b42fd9"
 menu_path: ["Start with Supabase","Start with Supabase","Architecture","Architecture"]
 section_path: ["Start with Supabase","Start with Supabase","Architecture","Architecture"]
+nav_prev: {"path": "supabase/docs/guides/getting-started/ai-skills/index.md", "title": "Agent Skills"}
+nav_next: {"path": "supabase/docs/guides/getting-started/byo-mcp/index.md", "title": "Deploy MCP servers"}
 ---
+
 # 
 
 Architecture
@@ -154,3 +157,4 @@ We sacrifice short-term wins for long-term gains. For example, it is tempting to
 ### Support existing tools[#](#support-existing-tools)
 
 Supabase supports existing tools and communities wherever possible. Supabase is more like a "community of communities" - each tool typically has its own community which we work with. Open source is something we approach [collaboratively](/blog/supabase-series-b#giving-back): we employ maintainers, sponsor projects, invest in businesses, and develop our own open source tools.
+

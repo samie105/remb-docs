@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:54:04.793Z"
 content_hash: "d29d274adbd88702062a9ab9d65ae9ce8230ce7896e75031fa22474f0bcb2881"
 menu_path: ["Deploy to AWS Lambda"]
 section_path: []
+nav_prev: {"path": "prisma/docs/orm/prisma-client/deployment/edge/overview/index.md", "title": "Deploying edge functions with Prisma ORM"}
+nav_next: {"path": "prisma/docs/orm/prisma-client/deployment/serverless/deploy-to-azure-functions/index.md", "title": "Deploy to Azure Functions"}
 ---
+
 Deployment
 
 Serverless
@@ -41,7 +44,7 @@ This section covers changes you will need to make to your application, regardles
 
 In a Function as a Service (FaaS) environment, each function invocation typically creates a new database connection. Unlike a continuously running Node.js server, these connections aren't maintained between executions. For better performance in serverless environments, implement connection pooling to reuse existing database connections rather than creating new ones for each function call.
 
-You can use [Prisma Postgres](https://www.prisma.io/docs/postgres), which has built-in connection pooling, to solve this issue. For other solutions, see the [connection management guide for serverless environments](https://www.prisma.io/docs/orm/prisma-client/setup-and-configuration/databases-connections#serverless-environments-faas).
+You can use [Prisma Postgres](https://www.prisma.io/docs/postgres), which has built-in connection pooling, to solve this issue. For other solutions, see the [connection management guide for serverless environments](prisma/docs/orm/prisma-client/setup-and-configuration/databases-connections/index.md#serverless-environments-faas).
 
 ### [Loading environment variables](#loading-environment-variables)
 
@@ -99,3 +102,4 @@ export default prisma;
 ```
 
 [Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/prisma-client/deployment/serverless/deploy-to-aws-lambda.mdx)
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:11:46.360Z"
 content_hash: "5280b9f51fef5c92dee66e340f9e0b8fb153a1bc93c32e90c960de8822d9a525"
 menu_path: ["All Symbols - Deno documentation"]
 section_path: []
+nav_prev: {"path": "deno/deno/api/deno/websockets/index.md", "title": "WebSockets - Deno documentation"}
+nav_next: {"path": "deno/deno/api/web/index.md", "title": "Web Platform APIs"}
 ---
+
 N
 
 [Deno](./././~/Deno "Deno")
@@ -4924,3 +4927,4 @@ Legacy JavaScript feature, that's discouraged from being used today.
 *   [parent](./././~/Deno.lint.WithStatement#property_parent)
 *   [range](./././~/Deno.lint.WithStatement#property_range)
 *   [type](./././~/Deno.lint.WithStatement#property_type)
+

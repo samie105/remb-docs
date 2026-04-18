@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:13:36.691Z"
 content_hash: "e221de3f7dc81dc59393cff3726983edb24551c102dbfae6c92653454703af5c"
 menu_path: ["I/O - Web documentation"]
 section_path: []
+nav_prev: {"path": "deno/deno/api/web/gpu/index.md", "title": "GPU - Web documentation"}
+nav_next: {"path": "deno/deno/api/web/intl/index.md", "title": "Intl - Web documentation"}
 ---
+
 ### Interfaces [#](#Interfaces)
 
 I
@@ -47,3 +50,4 @@ v
 [console](./././~/console "console")
 
 A global console object that provides methods for logging, debugging, and error reporting. The console object provides access to the browser's or runtime's debugging console functionality. It allows developers to output text and data for debugging purposes.
+

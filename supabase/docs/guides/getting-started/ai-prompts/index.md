@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:45:47.704Z"
 content_hash: "416f834ade96343245f677f1db7be4db3b4addd4b267bba846862ec295252542"
 menu_path: ["Getting started","Getting started","AI Tools","AI Tools","Prompts","Prompts"]
 section_path: ["Getting started","Getting started","AI Tools","AI Tools","Prompts","Prompts"]
+nav_prev: {"path": "supabase/docs/guides/functions/wasm/index.md", "title": "Using Wasm modules"}
+nav_next: {"path": "supabase/docs/guides/functions/websockets/index.md", "title": "Handling WebSockets"}
 ---
+
 # 
 
 AI Prompts
@@ -109,3 +112,4 @@ Windsurf
 `guidelines.md`
 
 Configure `guidelines.md`
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:39:48.162Z"
 content_hash: "a050ba565e9960a01d9d2a24da485c9f0bf381bdc69bfc844332363e281d92d5"
 menu_path: ["Preflight"]
 section_path: []
+nav_prev: {"path": "tailwind/docs/functions-and-directives/index.md", "title": "Functions and directives"}
+nav_next: {"path": "tailwind/docs/aspect-ratio/index.md", "title": "aspect-ratio"}
 ---
+
 An opinionated set of base styles for Tailwind projects.
 
 ## [Overview](#overview)
@@ -77,7 +80,7 @@ The reason for this is two-fold:
 *   **It helps you avoid accidentally deviating from your type scale**. By default, browsers assign sizes to headings that don't exist in Tailwind's default type scale, and aren't guaranteed to exist in your own type scale.
 *   **In UI development, headings should often be visually de-emphasized**. Making headings unstyled by default means any styling you apply to headings happens consciously and deliberately.
 
-You can always add default header styles to your project by [adding your own base styles](https://tailwindcss.com/docs/adding-custom-styles#adding-base-styles).
+You can always add default header styles to your project by [adding your own base styles](tailwind/docs/adding-custom-styles/index.md#adding-base-styles).
 
 ### [Lists are unstyled](#lists-are-unstyled)
 
@@ -89,7 +92,7 @@ CSS
 ol,ul,menu {  list-style: none;}
 ```
 
-If you'd like to style a list, you can do so using the [list-style-type](https://tailwindcss.com/docs/list-style-type) and [list-style-position](https://tailwindcss.com/docs/list-style-position) utilities:
+If you'd like to style a list, you can do so using the [list-style-type](tailwind/docs/list-style-type/index.md) and [list-style-position](tailwind/docs/list-style-position/index.md) utilities:
 
 HTML
 
@@ -97,7 +100,7 @@ HTML
 <ul class="list-inside list-disc">  <li>One</li>  <li>Two</li>  <li>Three</li></ul>
 ```
 
-You can always add default list styles to your project by [adding your own base styles](https://tailwindcss.com/docs/adding-custom-styles#adding-base-styles).
+You can always add default list styles to your project by [adding your own base styles](tailwind/docs/adding-custom-styles/index.md#adding-base-styles).
 
 #### [Accessibility considerations](#accessibility-considerations)
 
@@ -167,7 +170,7 @@ CSS
 @layer base {  h1 {    font-size: var(--text-2xl);  }  h2 {    font-size: var(--text-xl);  }  h3 {    font-size: var(--text-lg);  }  a {    color: var(--color-blue-600);    text-decoration-line: underline;  }}
 ```
 
-Learn more in the [adding base styles documentation](https://tailwindcss.com/docs/adding-custom-styles#adding-base-styles).
+Learn more in the [adding base styles documentation](tailwind/docs/adding-custom-styles/index.md#adding-base-styles).
 
 ## [Disabling Preflight](#disabling-preflight)
 
@@ -222,3 +225,4 @@ CSS
 ```
 @layer theme, base, components, utilities;@import "tailwindcss/theme.css" layer(theme);@import "tailwindcss/utilities.css" layer(utilities);@import "tailwindcss/theme.css" layer(theme) prefix(tw);@import "tailwindcss/utilities.css" layer(utilities) prefix(tw);
 ```
+

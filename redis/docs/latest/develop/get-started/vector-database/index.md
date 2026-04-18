@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:57:24.282Z"
 content_hash: "2bda9d2229a2175ba67719f649c69fab779aa1b7988ecbf98dd5256181257d5b"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Quick starts","→","Quick starts","→\n      \n        Redis as a vector database quick start guide","→","Redis as a vector database quick start guide"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Quick starts","→","Quick starts","→\n      \n        Redis as a vector database quick start guide","→","Redis as a vector database quick start guide"]
+nav_prev: {"path": "redis/docs/latest/develop/use-cases/time-series-dashboard/index.md", "title": "Rolling sensor graph demo with Redis"}
+nav_next: {"path": "redis/docs/latest/develop/whats-new/8-4/index.md", "title": "Redis 8.4"}
 ---
+
 # Redis as a vector database quick start guide
 
 Understand how to use Redis as a vector database
@@ -4366,3 +4369,4 @@ Small and powerful, the Jigger is the best ride for the smallest of tikes! This 
 See the [Redis vector database course](https://university.redis.io/course/7e2qbbeg963twz) for learning modules.
 
 ## On this page
+

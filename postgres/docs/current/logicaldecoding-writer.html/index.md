@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:43:28.683Z"
 content_hash: "1f12079225becb07f2bbd07a8bc042c762f54dbcd4bb15a754a37fa17e351c04"
 menu_path: ["PostgreSQL: Documentation: 18: 47.7. Logical Decoding Output Writers"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/pgstatstatements.html/index.md", "title": "PostgreSQL: Documentation: 18: F.32.\u00a0pg_stat_statements \u2014 track statistics of SQL planning and execution"}
+nav_next: {"path": "postgres/docs/current/sql-droptablespace.html/index.md", "title": "PostgreSQL: Documentation: 18: DROP TABLESPACE"}
 ---
+
 Development Versions: [devel](https://www.postgresql.org/docs/devel/logicaldecoding-writer.html "PostgreSQL devel - 47.7. Logical Decoding Output Writers")
 
 47.7. Logical Decoding Output Writers
@@ -45,3 +48,4 @@ It is possible to add more output methods for logical decoding. For details, see
 ## Submit correction
 
 If you see anything in the documentation that is not correct, does not match your experience with the particular feature or requires further clarification, please use [this form](https://www.postgresql.org/account/comments/new/18/logicaldecoding-writer.html/) to report a documentation issue.
+

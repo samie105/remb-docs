@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:53:02.912Z"
 content_hash: "fb87da0ab647e315a873d4e89853d08d5db2d11eb4af683462d57b5a6dce7b84"
 menu_path: ["Auth","Auth","More","More","More","Auth Hooks","Auth Hooks","Send SMS hook","Send SMS hook"]
 section_path: ["Auth","Auth","More","More","More","Auth Hooks","Auth Hooks","Send SMS hook","Send SMS hook"]
+nav_prev: {"path": "supabase/docs/guides/auth/auth-hooks/send-email-hook/index.md", "title": "Send Email Hook"}
+nav_next: {"path": "supabase/docs/guides/auth/auth-mfa/phone/index.md", "title": "Multi-Factor Authentication (Phone)"}
 ---
+
 # 
 
 Send SMS Hook
@@ -80,3 +83,4 @@ Configure `pg_cron` to run the job on an interval. You can use a tool like [cron
 ```
 1select2  cron.schedule(3    '* * * * *', -- this cron expression means every minute.4    'select dequeue_and_run_jobs();'5  );
 ```
+

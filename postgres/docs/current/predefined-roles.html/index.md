@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:45:07.911Z"
 content_hash: "e1ef4f023a9426cb9d6b45f702032521b3d6ee3b3699bb6ef9fa3cd2ecba080a"
 menu_path: ["PostgreSQL: Documentation: 18: 21.5. Predefined Roles"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/source-conventions.html/index.md", "title": "PostgreSQL: Documentation: 18: 55.4.\u00a0Miscellaneous Coding Conventions"}
+nav_next: {"path": "postgres/docs/current/ecpg-commands.html/index.md", "title": "PostgreSQL: Documentation: 18: 34.3.\u00a0Running SQL Commands"}
 ---
+
 PostgreSQL provides a set of predefined roles that provide access to certain, commonly needed, privileged capabilities and information. Administrators (including roles that have the `CREATEROLE` privilege) can `GRANT` these roles to users and/or other roles in their environment, providing those users with access to the specified capabilities and information. For example:
 
 GRANT pg\_signal\_backend TO admin\_user;
@@ -80,4 +83,5 @@ These roles are intended to allow administrators to have trusted, but non-superu
 
 `pg_use_reserved_connections` [#](#PREDEFINED-ROLE-PG-USE-RESERVED-CONNECTIONS)
 
-`pg_use_reserved_connections` allows use of connection slots reserved via [reserved\_connections](https://www.postgresql.org/docs/current/runtime-config-connection.html#GUC-RESERVED-CONNECTIONS).
+`pg_use_reserved_connections` allows use of connection slots reserved via [reserved\_connections](postgres/docs/current/runtime-config-connection.html/index.md#GUC-RESERVED-CONNECTIONS).
+

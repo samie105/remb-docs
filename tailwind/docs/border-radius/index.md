@@ -9,15 +9,9 @@ last_crawled_at: "2026-04-18T17:02:10.300Z"
 content_hash: "14937982c5d702f2269221dec5a1288c7d37bfbe44c1e1a2db66ededd6b20c28"
 menu_path: ["border-radius"]
 section_path: []
+nav_prev: {"path": "tailwind/docs/background-size/index.md", "title": "background-size"}
+nav_next: {"path": "tailwind/docs/border-width/index.md", "title": "border-width"}
 ---
-[](/)
-
-[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
-
-1.  Borders
-2.  border-radius
-
-Borders
 
 # border-radius
 
@@ -262,3 +256,4 @@ Short, tactical video lessons from the creator of Tailwind CSS, delivered direct
 [Get the free course](/build-uis-that-dont-suck)
 
 Copyright © 2026 Tailwind Labs Inc.·[Trademark Policy](/brand)
+

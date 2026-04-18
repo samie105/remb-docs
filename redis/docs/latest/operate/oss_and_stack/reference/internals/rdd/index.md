@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:51:51.897Z"
 content_hash: "aba09f5bc6d343c94a5b050eddd0a870484b9df62fc43d72bbfd3c94e835961d"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Reference","→","Reference","→\n      \n        Redis internals","→","Redis internals","→\n      \n        Redis design draft #2 (historical)","→","Redis design draft #2 (historical)"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Reference","→","Reference","→\n      \n        Redis internals","→","Redis internals","→\n      \n        Redis design draft #2 (historical)","→","Redis design draft #2 (historical)"]
+nav_prev: {"path": "redis/docs/latest/develop/ai/search-and-query/query/range/index.md", "title": "Range queries"}
+nav_next: {"path": "redis/docs/latest/commands/redis-8-2-commands/index.md", "title": "Redis 8.2 Commands Reference"}
 ---
+
 # Redis design draft #2 (historical)
 
 A design for the RDB format written in the early days of Redis
@@ -89,3 +92,4 @@ This field represents the unix time at which the RDB file was created. The forma
 This field represents a null-terminated string containing the Redis version that generated the file, as displayed in the Redis version INFO field.
 
 ## On this page
+

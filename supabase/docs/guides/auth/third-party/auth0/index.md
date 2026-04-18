@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:55:08.282Z"
 content_hash: "3d55b84af1f05dfd5d0dbbbbe2bba012bf90e0af26e809b414c57769375d8852"
 menu_path: ["Auth","Auth","Third-party auth","Third-party auth","Auth0","Auth0"]
 section_path: ["Auth","Auth","Third-party auth","Third-party auth","Auth0","Auth0"]
+nav_prev: {"path": "supabase/docs/guides/auth/third-party/aws-cognito/index.md", "title": "Amazon Cognito (Amplify)"}
+nav_next: {"path": "supabase/docs/guides/auth/third-party/clerk/index.md", "title": "Clerk"}
 ---
+
 # 
 
 Auth0
@@ -65,3 +68,4 @@ At this time, Auth0 tenants with the following [signing algorithms](https://auth
 
 *   HS256 (HMAC with SHA-256) -- also known as symmetric JWTs
 *   PS256 (RSA-PSS with SHA-256)
+

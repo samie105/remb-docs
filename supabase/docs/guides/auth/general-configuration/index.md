@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:37:32.190Z"
 content_hash: "cff3eccbd5feff1f7c92bd3f1875b64ad4a9c123d0366576ea1bc00fbe9e9ecb"
 menu_path: ["Auth","Auth","Configuration","Configuration","General Configuration","General Configuration"]
 section_path: ["Auth","Auth","Configuration","Configuration","General Configuration","General Configuration"]
+nav_prev: {"path": "supabase/docs/guides/auth/enterprise-sso/index.md", "title": "Enterprise Single Sign-On"}
+nav_next: {"path": "supabase/docs/guides/auth/custom-oauth-providers/index.md", "title": "Custom OAuth/OIDC Providers"}
 ---
+
 # 
 
 General configuration
@@ -47,3 +50,4 @@ Supabase Auth provides these [general configuration options](/dashboard/project/
 *   **Allow anonymous sign-ins**: Allow anonymous users to be created.
     
 *   **Allow manual linking**: Allow users to link their accounts manually.
+

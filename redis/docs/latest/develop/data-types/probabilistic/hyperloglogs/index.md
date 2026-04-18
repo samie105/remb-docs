@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:40:58.938Z"
 content_hash: "a9d54632bf1539dfac961b841bb4850b4cd1b9505504f1738392eac49ae97cf8"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis data types","→","Redis data types","→\n      \n        Probabilistic","→","Probabilistic","→\n      \n        HyperLogLog","→","HyperLogLog"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis data types","→","Redis data types","→\n      \n        Probabilistic","→","Probabilistic","→\n      \n        HyperLogLog","→","HyperLogLog"]
+nav_prev: {"path": "redis/docs/latest/develop/ai/redisvl/user_guide/getting_started/index.md", "title": "Getting Started with RedisVL"}
+nav_next: {"path": "redis/docs/latest/operate/redisinsight/install/install-on-desktop/index.md", "title": "Install on desktop"}
 ---
+
 # HyperLogLog
 
 HyperLogLog is a probabilistic data structure that estimates the cardinality of a set.
@@ -330,3 +333,4 @@ The HyperLogLog can estimate the cardinality of sets with up to 18,446,744,073,7
 *   [Redis HyperLogLog Explained](https://www.youtube.com/watch?v=MunL8nnwscQ) shows you how to use Redis HyperLogLog data structures to build a traffic heat map.
 
 ## On this page
+

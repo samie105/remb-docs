@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:55:23.304Z"
 content_hash: "858fbfdbc5d53a736c6560a2fd127cf9031aa6f1fc6eec1639078fc0a480ddda"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        RedisVL","→","RedisVL","→\n      \n        User Guides","→","User Guides","→\n      \n        LLM Caching","→","LLM Caching"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        RedisVL","→","RedisVL","→\n      \n        User Guides","→","User Guides","→\n      \n        LLM Caching","→","LLM Caching"]
+nav_prev: {"path": "redis/docs/latest/develop/use-cases/leaderboard/index.md", "title": "Redis leaderboard"}
+nav_next: {"path": "redis/docs/latest/develop/clients/dotnet/index.md", "title": "NRedisStack guide (C#/.NET)"}
 ---
+
 # LLM Caching
 
 This notebook demonstrates how to use RedisVL's `SemanticCache` to cache LLM responses based on semantic similarity. Semantic caching can significantly reduce API costs and latency by retrieving cached responses for semantically similar prompts instead of making redundant API calls.
@@ -513,3 +516,4 @@ complex_cache.delete()
 ```
 
 ## On this page
+

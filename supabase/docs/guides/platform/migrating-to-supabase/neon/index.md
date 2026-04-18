@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:00:35.099Z"
 content_hash: "40d6c49bcdb08218884f4802ac79f200a5a482e5dbec9f0c8adedea652d84455"
 menu_path: ["Platform","Platform","More","More","More","Migrating to Supabase","Migrating to Supabase","Neon","Neon"]
 section_path: ["Platform","Platform","More","More","More","Migrating to Supabase","Migrating to Supabase","Neon","Neon"]
+nav_prev: {"path": "supabase/docs/guides/platform/migrating-to-supabase/mssql/index.md", "title": "Migrate from MSSQL to Supabase"}
+nav_next: {"path": "supabase/docs/guides/platform/migrating-to-supabase/mysql/index.md", "title": "Migrate from MySQL to Supabase"}
 ---
+
 # 
 
 Migrate from Neon to Supabase
@@ -103,3 +106,4 @@ Run `pg_dump --help` for a full list of options.
 ## Enterprise[#](#enterprise)
 
 [Contact us](https://forms.supabase.com/enterprise) if you need more help migrating your project.
+

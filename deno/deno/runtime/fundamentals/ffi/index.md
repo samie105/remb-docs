@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:46:36.376Z"
 content_hash: "684df1cf361bcea30f211e8750d3e09daec900b0afb67f09eb8f5eef9562fd62"
 menu_path: ["Foreign Function Interface (FFI)"]
 section_path: []
+nav_prev: {"path": "deno/deno/runtime/fundamentals/http_server/index.md", "title": "Writing an HTTP Server"}
+nav_next: {"path": "deno/deno/runtime/fundamentals/open_telemetry/index.md", "title": "OpenTelemetry"}
 ---
+
 On this page
 
 *   [Introduction to FFI](#introduction-to-ffi)
@@ -444,3 +447,4 @@ Before using FFI, consider these alternatives:
 *   Check whether [Deno's native APIs](/api/deno) already provide the functionality you need.
 
 Deno's FFI capabilities provide powerful integration with native code, enabling performance optimizations and access to system-level functionality. However, this power comes with significant security considerations. Always be cautious when working with FFI and ensure you trust the native libraries you're using.
+

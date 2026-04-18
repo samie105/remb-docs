@@ -9,15 +9,9 @@ last_crawled_at: "2026-04-18T16:57:12.095Z"
 content_hash: "6a77667e26576ca24836ae9a11bc003d92af2e5d8ee2b51067aa81edba3377d8"
 menu_path: ["list-style-type"]
 section_path: []
+nav_prev: {"path": "tailwind/docs/list-style-position/index.md", "title": "list-style-position"}
+nav_next: {"path": "tailwind/docs/text-align/index.md", "title": "text-align"}
 ---
-[](/)
-
-[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
-
-1.  Typography
-2.  list-style-type
-
-Typography
 
 # list-style-type
 
@@ -124,3 +118,4 @@ Make your ideas look awesome, without relying on a designer.
 ](https://www.refactoringui.com/?ref=sidebar)
 
 Copyright © 2026 Tailwind Labs Inc.·[Trademark Policy](/brand)
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:49:04.763Z"
 content_hash: "0ed91aa0c78a7823c31586fbca9e83e081a8cf53df17367fcd15db3006e2d4b1"
 menu_path: ["Making a Deno project"]
 section_path: []
+nav_prev: {"path": "deno/deno/runtime/getting_started/installation/index.md", "title": "Installation"}
+nav_next: {"path": "deno/deno/runtime/getting_started/setup_your_environment/index.md", "title": "Set up your environment"}
 ---
+
 On this page
 
 *   [Initialize a new project](#initialize-a-new-project)
@@ -69,3 +72,4 @@ ok | 1 passed | 0 failed (3ms)
 Now that you have a basic project set up you can start building your application. Check out our [examples and tutorials](/examples/) for more ideas on what to build with Deno.
 
 You can [learn more about using TypeScript in Deno here](/runtime/fundamentals/typescript).
+

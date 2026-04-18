@@ -9,15 +9,9 @@ last_crawled_at: "2026-04-18T16:45:09.018Z"
 content_hash: "8e9d386df8f1187c1de9fd9207c4f9ee6bff8ed99cbd5a02b001312e8fec8a7b"
 menu_path: ["z-index"]
 section_path: []
+nav_prev: {"path": "tailwind/docs/visibility/index.md", "title": "visibility"}
+nav_next: {"path": "tailwind/docs/flex-basis/index.md", "title": "flex-basis"}
 ---
-[](/)
-
-[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
-
-1.  Layout
-2.  z-index
-
-Layout
 
 # z-index
 
@@ -127,3 +121,4 @@ Short, tactical video lessons from the creator of Tailwind CSS, delivered direct
 [Get the free course](/build-uis-that-dont-suck)
 
 Copyright © 2026 Tailwind Labs Inc.·[Trademark Policy](/brand)
+

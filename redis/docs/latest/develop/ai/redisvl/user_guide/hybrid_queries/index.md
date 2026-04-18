@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:51:27.572Z"
 content_hash: "07f2e1653b0dee698431fc9c6bab25e39dcc2c4800e40612a36ed8f324a149c1"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        RedisVL","→","RedisVL","→\n      \n        User Guides","→","User Guides","→\n      \n        Querying with RedisVL","→","Querying with RedisVL"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        RedisVL","→","RedisVL","→\n      \n        User Guides","→","User Guides","→\n      \n        Querying with RedisVL","→","Querying with RedisVL"]
+nav_prev: {"path": "redis/docs/latest/integrate/redis-data-integration/data-pipelines/prepare-dbs/sql-server/index.md", "title": "Prepare SQL Server for RDI"}
+nav_next: {"path": "redis/docs/latest/operate/oss_and_stack/stack-with-enterprise/deprecated-features/triggers-and-functions/quick_start_cli/index.md", "title": "Quick start using redis-cli"}
 ---
+
 # Querying with RedisVL
 
 In this notebook, we will explore more complex queries that can be performed with `redisvl`
@@ -2654,3 +2657,4 @@ index.delete()
 ```
 
 ## On this page
+

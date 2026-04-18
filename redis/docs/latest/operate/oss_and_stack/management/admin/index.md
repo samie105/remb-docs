@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:36:51.898Z"
 content_hash: "428e5584feb09509158e1443d41d314c3c40d205c542ad5e806a57387ee5ea7e"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Manage Redis","→","Manage Redis","→\n      \n        Redis administration","→","Redis administration"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Manage Redis","→","Manage Redis","→\n      \n        Redis administration","→","Redis administration"]
+nav_prev: {"path": "redis/docs/latest/operate/oss_and_stack/management/security/acl/index.md", "title": "ACL"}
+nav_next: {"path": "redis/docs/latest/develop/ai/search-and-query/advanced-concepts/aggregations/index.md", "title": "Aggregations"}
 ---
+
 # Redis administration
 
 Advice for configuring and managing Redis in production
@@ -96,3 +99,4 @@ Redis Cluster 4.0 is not compatible with Redis Cluster 3.2 at cluster bus protoc
 * * *
 
 ## On this page
+

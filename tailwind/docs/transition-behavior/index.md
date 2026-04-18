@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:11:56.604Z"
 content_hash: "c2c66a1d9016be18d761970f6a0e6a729a74fd826dd644784876607afbc08921"
 menu_path: ["transition-behavior"]
 section_path: []
+nav_prev: {"path": "tailwind/docs/transition-property/index.md", "title": "transition-property"}
+nav_next: {"path": "tailwind/docs/transition-duration/index.md", "title": "transition-duration"}
 ---
+
 Utilities to control the behavior of CSS transitions.
 
 Class
@@ -48,4 +51,5 @@ Prefix a `transition-behavior` utility with a breakpoint variant like `md:` to o
 <button class="transition-discrete md:transition-normal ...">  <!-- ... --></button>
 ```
 
-Learn more about using variants in the [variants documentation](https://tailwindcss.com/docs/hover-focus-and-other-states).
+Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).
+

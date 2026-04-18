@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:57:35.767Z"
 content_hash: "eda99eba8f8245f466aaa7f243d665e8cea14b4a152f2b936c9143e7819d7d81"
 menu_path: ["Edge Functions","Edge Functions","Examples","Examples","Building an MCP Server with mcp-lite","Building an MCP Server with mcp-lite"]
 section_path: ["Edge Functions","Edge Functions","Examples","Examples","Building an MCP Server with mcp-lite","Building an MCP Server with mcp-lite"]
+nav_prev: {"path": "supabase/docs/guides/functions/examples/image-manipulation/index.md", "title": "Image Manipulation"}
+nav_next: {"path": "supabase/docs/guides/functions/examples/og-image/index.md", "title": "Generating OG Images"}
 ---
+
 # 
 
 Building an MCP Server with mcp-lite
@@ -219,3 +222,4 @@ With your MCP server running on Supabase Edge Functions, you can:
 *   [Supabase Edge Functions Docs](/guides/functions)
 *   [Deno Runtime Documentation](https://deno.land/)
 *   [Fiberplane tutorial](https://blog.fiberplane.com/blog/mcp-lite-supabase-edge-functions/)
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:45:43.899Z"
 content_hash: "5d773558b21565f5fc78b40fae4661db141f82e795640798e3a438b801054273"
 menu_path: ["PostgreSQL: Documentation: 18: 65.5. BRIN Indexes"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/pgoverexplain.html/index.md", "title": "PostgreSQL: Documentation: 18: F.29.\u00a0pg_overexplain \u2014 allow EXPLAIN to dump even more details"}
+nav_next: {"path": "postgres/docs/current/pglogicalinspect.html/index.md", "title": "PostgreSQL: Documentation: 18: F.28.\u00a0pg_logicalinspect \u2014 logical decoding components inspection"}
 ---
+
 ### 65.5.1. Introduction [#](#BRIN-INTRO)
 
 BRIN stands for Block Range Index. BRIN is designed for handling very large tables in which certain columns have some natural correlation with their physical location within the table.
@@ -28,7 +31,7 @@ At the time of creation, all existing heap pages are scanned and a summary index
 
 There are several ways to trigger the initial summarization of a page range. If the table is vacuumed, either manually or by [autovacuum](https://www.postgresql.org/docs/current/routine-vacuuming.html#AUTOVACUUM "24.1.6. The Autovacuum Daemon"), all existing unsummarized page ranges are summarized. Also, if the index's [autosummarize](https://www.postgresql.org/docs/current/sql-createindex.html#INDEX-RELOPTION-AUTOSUMMARIZE) parameter is enabled, which it isn't by default, whenever autovacuum runs in that database, summarization will occur for all unsummarized page ranges that have been filled, regardless of whether the table itself is processed by autovacuum; see below.
 
-Lastly, the following functions can be used (while these functions run, [search\_path](https://www.postgresql.org/docs/current/runtime-config-client.html#GUC-SEARCH-PATH) is temporarily changed to `pg_catalog, pg_temp`):
+Lastly, the following functions can be used (while these functions run, [search\_path](postgres/docs/current/runtime-config-client.html/index.md#GUC-SEARCH-PATH) is temporarily changed to `pg_catalog, pg_temp`):
 
 `brin_summarize_new_values(regclass)` which summarizes all unsummarized ranges;
 
@@ -1143,3 +1146,4 @@ Operator Strategy 5
 operator greater-than
 
 Both minmax and inclusion operator classes support cross-data-type operators, though with these the dependencies become more complicated. The minmax operator class requires a full set of operators to be defined with both arguments having the same data type. It allows additional data types to be supported by defining extra sets of operators. Inclusion operator class operator strategies are dependent on another operator strategy as shown in [Table 65.6](https://www.postgresql.org/docs/current/brin.html#BRIN-EXTENSIBILITY-INCLUSION-TABLE "Table 65.6. Function and Support Numbers for Inclusion Operator Classes"), or the same operator strategy as themselves. They require the dependency operator to be defined with the `STORAGE` data type as the left-hand-side argument and the other supported data type to be the right-hand-side argument of the supported operator. See `float4_minmax_ops` as an example of minmax, and `box_inclusion_ops` as an example of inclusion.
+

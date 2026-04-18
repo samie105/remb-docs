@@ -9,47 +9,10 @@ last_crawled_at: "2026-04-18T16:52:56.492Z"
 content_hash: "e14eaa3417686861685f49bbddf982bb0ef643aad331dd0114648b99aedcc244"
 menu_path: ["Language Middleware ​"]
 section_path: []
+nav_prev: {"path": "hono/docs/middleware/builtin/logger/index.md", "title": "Logger Middleware \u200b"}
+nav_next: {"path": "hono/docs/middleware/builtin/method-override/index.md", "title": "Method Override Middleware \u200b"}
 ---
-## Language Middleware [​](#language-middleware)
 
-The Language Detector middleware automatically determines a user's preferred language (locale) from various sources and makes it available via `c.get('language')`. Detection strategies include query parameters, cookies, headers, and URL path segments. Perfect for internationalization (i18n) and locale-specific content.
-
-## Import [​](#import)
-
-ts
-
-```
-import { Hono } from 'hono'
-import { languageDetector } from 'hono/language'
-```
-
-## Basic Usage [​](#basic-usage)
-
-Detect language from query string, cookie, and header (default order), with fallback to English:
-
-ts
-
-```
-const app = new Hono()
-
-app.use(
-  languageDetector({
-    supportedLanguages: ['en', 'ar', 'ja'], // Must include fallback
-    fallbackLanguage: 'en', // Required
-  })
-)
-
-app.get('/', (c) => {
-  const lang = c.get('language')
-  return c.text(`Hello! Your language is ${lang}`)
-})
-```
-
-### Client Examples [​](#client-examples)
-
-sh
-
-```
 # Via path
 curl http://localhost:8787/ar/home
 
@@ -416,3 +379,4 @@ languageDetector({
   convertDetectedLanguage: (lang) => lang.replace('_', '-'), // Normalize
 })
 ```
+

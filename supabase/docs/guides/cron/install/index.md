@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:39:32.527Z"
 content_hash: "c51707b0bebbc1b7ea5dd83ce0701fef719fc7a7ac1ea736cbafa4f3b2c25dd2"
 menu_path: ["Cron","Cron","Getting Started","Getting Started","Install","Install"]
 section_path: ["Cron","Cron","Getting Started","Getting Started","Install","Install"]
+nav_prev: {"path": "supabase/docs/guides/auth/users/index.md", "title": "Users"}
+nav_next: {"path": "supabase/docs/guides/cron/quickstart/index.md", "title": "Quickstart"}
 ---
+
 # 
 
 Install
@@ -30,3 +33,4 @@ Uninstall Supabase Cron by disabling the `pg_cron` extension:
 ```
 
 Disabling the `pg_cron` extension will permanently delete all Jobs.
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:59:15.708Z"
 content_hash: "bb0e7de1686175c5cdfb4fdb3033745d42c7920684c1938dbb11abd47443e6ba"
 menu_path: ["Start with Supabase","Start with Supabase","Web app demos","Web app demos","Refine","Refine"]
 section_path: ["Start with Supabase","Start with Supabase","Web app demos","Web app demos","Refine","Refine"]
+nav_prev: {"path": "supabase/docs/guides/getting-started/tutorials/with-redwoodjs/index.md", "title": "Build a User Management App with RedwoodJS"}
+nav_next: {"path": "supabase/docs/guides/getting-started/tutorials/with-solidjs/index.md", "title": "Build a User Management App with SolidJS"}
 ---
+
 # 
 
 Build a User Management App with Refine
@@ -249,3 +252,4 @@ And then add the widget to the Account page at `src/components/account.tsx`:
 [View source](https://github.com/supabase/supabase/blob/e8df67d5d5291e05ea56596aee0f2b7fa152929b/examples/user-management/refine-user-management/src/components/account.tsx)
 
 At this stage, you have a fully functional application!
+

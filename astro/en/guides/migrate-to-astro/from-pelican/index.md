@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:41:06.912Z"
 content_hash: "f2a38fdead8aa86c2b0559a2fbb83efa6b4c4c7cd860fab48d70b2aeff4612db"
 menu_path: ["Migrating from Pelican"]
 section_path: []
+nav_prev: {"path": "astro/en/guides/migrate-to-astro/from-nuxtjs/index.md", "title": "Migrating from NuxtJS"}
+nav_next: {"path": "astro/en/guides/migrate-to-astro/from-sveltekit/index.md", "title": "Migrating from SvelteKit"}
 ---
+
 # Migrating from Pelican
 
 [Pelican](https://getpelican.com) is an open-source static site generator built on Python.
@@ -126,3 +129,4 @@ To convert other types of sites, such as a portfolio or a blog, see more officia
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

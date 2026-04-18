@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:01:52.551Z"
 content_hash: "9271130b88bbf7aa7d4fec3cfd5b4cfde2ae7723f06b73715af7c0cf7835d2c7"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Enterprise for Kubernetes","→","Redis Enterprise for Kubernetes","→\n      \n        Redis Enterprise Software for Kubernetes release notes","→","Redis Enterprise Software for Kubernetes release notes","→\n      \n        Redis Enterprise for Kubernetes 7.22.0 release notes","→","Redis Enterprise for Kubernetes 7.22.0 release notes","→\n      \n        Redis Enterprise for Kubernetes 7.22.0-7 (April 2025) release notes","→","Redis Enterprise for Kubernetes 7.22.0-7 (April 2025) release notes"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Enterprise for Kubernetes","→","Redis Enterprise for Kubernetes","→\n      \n        Redis Enterprise Software for Kubernetes release notes","→","Redis Enterprise Software for Kubernetes release notes","→\n      \n        Redis Enterprise for Kubernetes 7.22.0 release notes","→","Redis Enterprise for Kubernetes 7.22.0 release notes","→\n      \n        Redis Enterprise for Kubernetes 7.22.0-7 (April 2025) release notes","→","Redis Enterprise for Kubernetes 7.22.0-7 (April 2025) release notes"]
+nav_prev: {"path": "redis/docs/latest/develop/use-cases/session-store/dotnet/index.md", "title": "Redis session store with .NET"}
+nav_next: {"path": "redis/docs/latest/operate/rc/security/access-control/index.md", "title": "Access control"}
 ---
+
 # Redis Enterprise for Kubernetes 7.22.0-7 (April 2025) release notes
 
 Feature release with Redis Software 7.22.0-28 support, enhancements, and platform updates.
@@ -225,3 +228,4 @@ Kubernetes version
 See [7.22.0 releases](/docs/latest/operate/kubernetes/release-notes/7-22-0-releases/) for information on known limitations.
 
 ## On this page
+

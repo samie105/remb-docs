@@ -9,7 +9,9 @@ last_crawled_at: "2026-04-18T17:17:10.095Z"
 content_hash: "159fec4f8bf609997226f37fc3a3a685a44693e3709cfa8dd461e4ed9c59aac9"
 menu_path: ["All Symbols - Node documentation"]
 section_path: []
+nav_prev: {"path": "deno/deno/api/deno/~/Deno/index.md", "title": "namespace Deno"}
 ---
+
 ### [assert](././assert/) [#](#assert)
 
 The `node:assert` module provides a set of assertion functions for verifying invariants.
@@ -21073,3 +21075,4 @@ v
 [Z\_VERSION\_ERROR](././zlib/~/Z_VERSION_ERROR "Z_VERSION_ERROR")
 
 No documentation available
+

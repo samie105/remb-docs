@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:08:10.636Z"
 content_hash: "66e590b78c90f6c508891e6df16cd9b7fc93a9876ac85140d5a59be3d2fb9551"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Token bucket rate limiter with Redis","→","Token bucket rate limiter with Redis","→\n      \n        Token bucket rate limiter with Redis and PHP","→","Token bucket rate limiter with Redis and PHP"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Token bucket rate limiter with Redis","→","Token bucket rate limiter with Redis","→\n      \n        Token bucket rate limiter with Redis and PHP","→","Token bucket rate limiter with Redis and PHP"]
+nav_prev: {"path": "redis/docs/latest/develop/use-cases/time-series-dashboard/php/index.md", "title": "Rolling sensor graph demo with Redis and PHP"}
+nav_next: {"path": "redis/docs/latest/develop/use-cases/session-store/php/index.md", "title": "Redis session store with PHP"}
 ---
+
 # Token bucket rate limiter with Redis and PHP
 
 Implement a token bucket rate limiter using Redis and Lua scripts in PHP
@@ -325,3 +328,4 @@ try {
 *   [PHP client](/docs/latest/develop/clients/php/) - Redis PHP client documentation
 
 ## On this page
+

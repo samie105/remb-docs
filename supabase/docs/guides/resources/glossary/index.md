@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:48:41.193Z"
 content_hash: "230b7e671c5ca41b560691eb87bc4bd4086e14601f94da9f8ded8779ceed306c"
 menu_path: ["Resources","Resources","Glossary","Glossary"]
 section_path: ["Resources","Resources","Glossary","Glossary"]
+nav_prev: {"path": "supabase/docs/guides/queues/quickstart/index.md", "title": "Quickstart"}
+nav_next: {"path": "supabase/docs/guides/realtime/architecture/index.md", "title": "Realtime Architecture"}
 ---
+
 # 
 
 Glossary
@@ -127,3 +130,4 @@ Single-sign on allows enterprises to centrally manage accounts and access to app
 ## Time-based one-time password (TOTP)[#](#time-based-one-time-password-totp)
 
 A time-based one-time password is a one-time password generated at regular time intervals from a secret, usually from an application in a mobile device (e.g., Google Authenticator, 1Password).
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:44:00.083Z"
 content_hash: "2abf8c33ee54b54e46ce1487d45c92851e35bfcf2fa59f3d686f46a21a09975f"
 menu_path: ["Server-Side Rendering"]
 section_path: []
+nav_prev: {"path": "trpc/docs/v9/ssg/index.md", "title": "Static Site Generation"}
+nav_next: {"path": "trpc/docs/v9/ssg-helpers/index.md", "title": "SSG Helpers"}
 ---
+
 The only thing you need to do to get SSR on your application is to set `ssr: true` in your `_app.tsx`, but it comes with some additional considerations.
 
 In order to execute queries properly during the server-side render step and customize caching behavior, we might want to add some extra logic inside our `_app.tsx`:
@@ -140,4 +143,5 @@ While it's rare that you wouldn't want to forward the client's headers to the se
 
 If you don't remove the `connection` header, the data fetching will fail with `TRPCClientError: fetch failed` because `connection` is a [forbidden header name](https://developer.mozilla.org/en-US/docs/Glossary/Forbidden_header_name).
 
-When you enable SSR, tRPC will use `getInitialProps` to prefetch all queries on the server. That causes problems [like this](https://github.com/trpc/trpc/issues/596) when you use `getServerSideProps` in a page and solving it is out of our hands. Though, you can use [SSG Helpers](https://trpc.io/docs/v9/ssg-helpers) to prefetch queries in `getStaticProps` or `getServerSideProps`.
+When you enable SSR, tRPC will use `getInitialProps` to prefetch all queries on the server. That causes problems [like this](https://github.com/trpc/trpc/issues/596) when you use `getServerSideProps` in a page and solving it is out of our hands. Though, you can use [SSG Helpers](trpc/docs/v9/ssg-helpers/index.md) to prefetch queries in `getStaticProps` or `getServerSideProps`.
+

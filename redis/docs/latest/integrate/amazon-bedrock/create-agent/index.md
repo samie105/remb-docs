@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:53:22.404Z"
 content_hash: "22a35ca6e1ed561a1d14b7056a836ea02e735ebb9a66b0511deeb08d16bc31f8"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Amazon Bedrock","→","Amazon Bedrock","→\n      \n        Create a Bedrock agent","→","Create a Bedrock agent"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Amazon Bedrock","→","Amazon Bedrock","→\n      \n        Create a Bedrock agent","→","Create a Bedrock agent"]
+nav_prev: {"path": "redis/docs/latest/operate/rc/databases/rdi/define/index.md", "title": "Define data pipeline"}
+nav_next: {"path": "redis/docs/latest/develop/ai/search-and-query/deprecated/development/index.md", "title": "Developer notes"}
 ---
+
 # Create a Bedrock agent
 
 Shows how to set up your Agent in Amazon Bedrock.
@@ -63,3 +66,4 @@ Your agent will have a status of **Ready** when it is ready to be tested.
 Select the name of your agent to view the versions and draft aliases of your agent. You can also test your agent by entering prompts in the **Enter your message here** field.
 
 ## On this page
+

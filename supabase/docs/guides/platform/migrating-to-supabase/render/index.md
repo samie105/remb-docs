@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:00:39.030Z"
 content_hash: "92d93660650fac38149e3b6a79f6e88f1f912db97946b1b0b6998c5a035c56de"
 menu_path: ["Platform","Platform","More","More","More","Migrating to Supabase","Migrating to Supabase","Render","Render"]
 section_path: ["Platform","Platform","More","More","More","Migrating to Supabase","Migrating to Supabase","Render","Render"]
+nav_prev: {"path": "supabase/docs/guides/platform/migrating-to-supabase/mysql/index.md", "title": "Migrate from MySQL to Supabase"}
+nav_next: {"path": "supabase/docs/guides/platform/migrating-to-supabase/postgres/index.md", "title": "Migrate from Postgres to Supabase"}
 ---
+
 # 
 
 Migrate from Render to Supabase
@@ -66,3 +69,4 @@ The fastest way to migrate your database is with the Supabase migration tool on 
 ## Enterprise[#](#enterprise)
 
 [Contact us](https://forms.supabase.com/enterprise) if you need more help migrating your project.
+

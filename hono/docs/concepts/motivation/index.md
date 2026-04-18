@@ -9,7 +9,9 @@ last_crawled_at: "2026-04-18T16:33:07.767Z"
 content_hash: "6fa31eedf6c1f32f5291f01bf6b5d315eca54f77cc8cdc43d6d09ac795848e6f"
 menu_path: ["Philosophy ​"]
 section_path: []
+nav_next: {"path": "hono/docs/concepts/routers/index.md", "title": "Routers \u200b"}
 ---
+
 In this section, we talk about the concept, or philosophy, of Hono.
 
 ## Motivation [​](#motivation)
@@ -23,3 +25,4 @@ Using only Web Standard APIs, we could make it work on Deno and Bun. When people
 We also have friends who make GraphQL servers, Firebase authentication, and Sentry middleware. And, we also have a Node.js adapter. An ecosystem has sprung up.
 
 In other words, Hono is damn fast, makes a lot of things possible, and works anywhere. We might imagine that Hono could become the **Standard for Web Standards**.
+

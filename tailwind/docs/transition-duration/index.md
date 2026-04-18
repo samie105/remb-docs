@@ -9,15 +9,9 @@ last_crawled_at: "2026-04-18T17:11:57.076Z"
 content_hash: "b4c08ec4ad30fc93ca7708dafa1e2796cff2b7f4d4b8c9e0e831ba15d82b05b4"
 menu_path: ["transition-duration"]
 section_path: []
+nav_prev: {"path": "tailwind/docs/transition-behavior/index.md", "title": "transition-behavior"}
+nav_next: {"path": "tailwind/docs/transition-timing-function/index.md", "title": "transition-timing-function"}
 ---
-[](/)
-
-[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
-
-1.  Transitions & Animation
-2.  transition-duration
-
-Transitions & Animation
 
 # transition-duration
 
@@ -119,3 +113,4 @@ Make your ideas look awesome, without relying on a designer.
 ](https://www.refactoringui.com/?ref=sidebar)
 
 Copyright © 2026 Tailwind Labs Inc.·[Trademark Policy](/brand)
+

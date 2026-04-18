@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:38:35.741Z"
 content_hash: "75f2805a557cec6223dd0a911f2b5266022b8afb0855e28c7822aed83fae0f95"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        Redis Search","→","Redis Search","→\n      \n        Administration","→","Administration","→\n      \n        Configuration parameters","→","Configuration parameters"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        Redis Search","→","Redis Search","→\n      \n        Administration","→","Administration","→\n      \n        Configuration parameters","→","Configuration parameters"]
+nav_prev: {"path": "redis/docs/latest/develop/data-types/compare-data-types/index.md", "title": "Compare data types"}
+nav_next: {"path": "redis/docs/latest/develop/reference/modules/modules-api-ref/index.md", "title": "Modules API reference"}
 ---
+
 # Configuration parameters
 
 Redis Search can be tuned through multiple configuration parameters. Some of these parameters can only be set at load-time, while other parameters can be set either at load-time or at run-time.
@@ -960,7 +963,7 @@ Default: `0`
 
 ### search-on-oom
 
-Specifies the response policy for queries when the server's current memory usage exceeds the configured [maxmemory](https://redis.io/docs/latest/develop/reference/eviction/#maxmem) limit.
+Specifies the response policy for queries when the server's current memory usage exceeds the configured [maxmemory](redis/docs/latest/develop/reference/eviction/index.md#maxmem) limit.
 
 *   `IGNORE`: Execute the query regardless of current memory usage.
 *   `RETURN`: In cluster mode, the query returns partial results from shards that did not exceed the memory limit. Shards that exceed the limit will not contribute results.
@@ -1022,3 +1025,4 @@ FT.CONFIG GET *
 Values set using [`FT.CONFIG SET`](/docs/latest/commands/ft.config-set/) are not persisted after server restart.
 
 ## On this page
+

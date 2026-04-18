@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:48:28.651Z"
 content_hash: "33b3b2b8731f1e6f8c6986c9a99c78374764c009b8ab3c9c39fbfa9806dd7c1d"
 menu_path: ["Queues","Queues","Getting Started","Getting Started","Consuming Messages with Edge Functions","Consuming Messages with Edge Functions"]
 section_path: ["Queues","Queues","Getting Started","Getting Started","Consuming Messages with Edge Functions","Consuming Messages with Edge Functions"]
+nav_prev: {"path": "supabase/docs/guides/queues/api/index.md", "title": "API"}
+nav_next: {"path": "supabase/docs/guides/queues/expose-self-hosted-queues/index.md", "title": "Expose Queues for local and self-hosted Supabase"}
 ---
+
 # 
 
 Consuming Supabase Queue Messages with Edge Functions
@@ -44,3 +47,4 @@ Every time this Edge Function is run it:
 You might find this kind of setup handy to run with [Supabase Cron](/docs/guides/cron). You can set up Cron so that every N number of minutes or seconds, the Edge Function will run and process a number of messages off the queue.
 
 Similarly, you can invoke the Edge Function on command at any given time with [`supabase.functions.invoke`](/docs/guides/functions/quickstart-dashboard#usage).
+

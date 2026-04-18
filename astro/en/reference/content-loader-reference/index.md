@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:43:03.967Z"
 content_hash: "c4655017173d3eb9e5942660beeb318319c0631adbab6654ee3c3a68f08e93b5"
 menu_path: ["Astro Content Loader API"]
 section_path: []
+nav_prev: {"path": "astro/en/reference/renderer-reference/index.md", "title": "Astro Renderer API"}
+nav_next: {"path": "astro/en/reference/image-service-reference/index.md", "title": "Image Service API"}
 ---
+
 # Astro Content Loader API
 
 Astro’s Content Loader API allows you to load your data from any source, local or remote, and interact with Astro’s content layer to manage your [content collections](/en/guides/content-collections/).
@@ -1055,3 +1058,4 @@ return {  /* ... */  cacheHint: {    lastModified: new Date(product.updatedAt)  
 ```
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

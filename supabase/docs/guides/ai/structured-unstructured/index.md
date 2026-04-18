@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:34:29.396Z"
 content_hash: "b762e946718e9ce804df7426e38f0fa134ff52fe905ce68c731f75b8cdc5dacc"
 menu_path: ["AI & Vectors","AI & Vectors","Structured & unstructured","Structured & unstructured"]
 section_path: ["AI & Vectors","AI & Vectors","Structured & unstructured","Structured & unstructured"]
+nav_prev: {"path": "supabase/docs/guides/ai/semantic-search/index.md", "title": "Semantic search"}
+nav_next: {"path": "supabase/docs/guides/ai/vecs-python-client/index.md", "title": "Python client"}
 ---
+
 # 
 
 Structured and Unstructured
@@ -70,3 +73,4 @@ Both approaches create a table where you can store your embeddings and some meta
 *   Unstructured metadata is best when fields are unknown/user-defined or when working with data interactively e.g. exploratory research
 
 Both approaches are valid, and the one you should choose depends on your use-case.
+

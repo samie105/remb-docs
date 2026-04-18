@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:46:37.436Z"
 content_hash: "039cd0dd8a073464d4405f02f3a22c2c0ddcb547606fdf9c582e8193fbd88831"
 menu_path: ["PostgreSQL: Documentation: 18: 55.1. Formatting"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/plpgsql-cursors.html/index.md", "title": "PostgreSQL: Documentation: 18: 41.7.\u00a0Cursors"}
+nav_next: {"path": "postgres/docs/current/sql-drop-access-method.html/index.md", "title": "PostgreSQL: Documentation: 18: DROP ACCESS METHOD"}
 ---
+
 Source code formatting uses 4 column tab spacing, with tabs preserved (i.e., tabs are not expanded to spaces). Each logical indentation level is one additional tab stop.
 
 Layout rules (brace positioning, etc.) follow BSD conventions. In particular, curly braces for the controlled blocks of `if`, `while`, `switch`, etc. go on their own lines.
@@ -45,3 +48,4 @@ more -x4
 less -x4
 
 to make them show tabs appropriately.
+

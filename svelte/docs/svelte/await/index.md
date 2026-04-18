@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:36:10.655Z"
 content_hash: "2d7ca4e491d49bf579efb5bfeeb069e38b9cd793522b6933f769e5e860a47c98"
 menu_path: ["{#await ...}"]
 section_path: []
+nav_prev: {"path": "svelte/docs/svelte/key/index.md", "title": "{#key ...}"}
+nav_next: {"path": "svelte/docs/svelte/snippet/index.md", "title": "{#snippet ...}"}
 ---
+
 ```
 {#await expression}...{:then name}...{:catch name}...{/await}
 ```
@@ -86,3 +89,4 @@ Similarly, if you only want to show the error state, you can omit the `then` blo
 previous next
 
 [{#key ...}](/docs/svelte/key) [{#snippet ...}](/docs/svelte/snippet)
+

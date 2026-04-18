@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:36:44.216Z"
 content_hash: "524aad3d43ca18d3d667be8fe7c9123d37eeca2fc6a9e4b3caefb1df2c265d5b"
 menu_path: ["PostgreSQL: Documentation: 18: 9.4. String Functions and Operators"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/app-pgrecvlogical.html/index.md", "title": "PostgreSQL: Documentation: 18: pg_recvlogical"}
+nav_next: {"path": "postgres/docs/current/sql-lock.html/index.md", "title": "PostgreSQL: Documentation: 18: LOCK"}
 ---
+
 `text` `^@` `text` → `boolean`
 
 Returns true if the first string starts with the second string (equivalent to the `starts_with()` function).
@@ -60,9 +63,9 @@ Ordinarily, case folding simply converts to lowercase, but there may be exceptio
 
 Case folding may change the length of the string. For instance, in the `PG_UNICODE_FAST` collation, `ß` (U+00DF) folds to `ss`.
 
-`casefold` can be used for Unicode Default Caseless Matching. It does not always preserve the normalized form of the input string (see [normalize](https://www.postgresql.org/docs/current/functions-string.html#FUNCTION-NORMALIZE)).
+`casefold` can be used for Unicode Default Caseless Matching. It does not always preserve the normalized form of the input string (see [normalize](postgres/docs/current/functions-string.html/index.md#FUNCTION-NORMALIZE)).
 
-The `libc` provider doesn't support case folding, so `casefold` is identical to [lower](https://www.postgresql.org/docs/current/functions-string.html#FUNCTION-LOWER).
+The `libc` provider doesn't support case folding, so `casefold` is identical to [lower](postgres/docs/current/functions-string.html/index.md#FUNCTION-LOWER).
 
 `left` ( _`string`_ `text`, _`n`_ `integer` ) → `text`
 
@@ -236,7 +239,7 @@ Returns true if _`string`_ starts with _`prefix`_.
 
 `string_to_array` ( _`string`_ `text`, _`delimiter`_ `text` \[, _`null_string`_ `text` \] ) → `text[]`
 
-Splits the _`string`_ at occurrences of _`delimiter`_ and forms the resulting fields into a `text` array. If _`delimiter`_ is `NULL`, each character in the _`string`_ will become a separate element in the array. If _`delimiter`_ is an empty string, then the _`string`_ is treated as a single field. If _`null_string`_ is supplied and is not `NULL`, fields matching that string are replaced by `NULL`. See also [`array_to_string`](https://www.postgresql.org/docs/current/functions-array.html#FUNCTION-ARRAY-TO-STRING).
+Splits the _`string`_ at occurrences of _`delimiter`_ and forms the resulting fields into a `text` array. If _`delimiter`_ is `NULL`, each character in the _`string`_ will become a separate element in the array. If _`delimiter`_ is an empty string, then the _`string`_ is treated as a single field. If _`null_string`_ is supplied and is not `NULL`, fields matching that string are replaced by `NULL`. See also [`array_to_string`](postgres/docs/current/functions-array.html/index.md#FUNCTION-ARRAY-TO-STRING).
 
 `string_to_array('xx~~yy~~zz', '~~', 'yy')` → `{xx,NULL,zz}`
 
@@ -321,3 +324,4 @@ This function provides a (non-standard) alternative to string constants with Uni
 `unistr('d\0061t\+000061')` → `data`
 
 `unistr('d\u0061t\U00000061')` → `data`
+

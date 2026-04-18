@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:32:16.262Z"
 content_hash: "e4be1626a9436f8b8a920795b79216e73d39d2c0bba08e26be6290d0bdabf49c"
 menu_path: ["Getting Started"]
 section_path: []
+nav_prev: {"path": "supabase/docs/index.md", "title": "Supabase Documentation"}
+nav_next: {"path": "supabase/docs/guides/api/index.md", "title": "Data REST API"}
 ---
+
 # 
 
 Getting Started
@@ -315,3 +318,4 @@ Ionic Angular
 Learn how to build a user management app with Ionic Angular and Supabase Database, Auth, and Storage functionality.
 
 ](/docs/guides/getting-started/tutorials/with-ionic-angular)
+

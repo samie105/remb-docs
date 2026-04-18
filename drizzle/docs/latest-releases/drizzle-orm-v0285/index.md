@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:11:48.192Z"
 content_hash: "4878a09b03ca690ff009c08e1e9487f3d452cd195e398b1963a4dc90faf0b404"
 menu_path: ["Drizzle ORM - DrizzleORM v0.28.5 release"]
 section_path: []
+nav_prev: {"path": "drizzle/docs/latest-releases/drizzle-orm-v0284/index.md", "title": "Drizzle ORM - DrizzleORM v0.28.4 release"}
+nav_next: {"path": "drizzle/docs/latest-releases/drizzle-orm-v0286/index.md", "title": "Drizzle ORM - DrizzleORM v0.28.6 release"}
 ---
+
 DrizzleORM v0.28.5 release
 
 Aug 24, 2023
@@ -23,3 +26,4 @@ The OpenTelemetry logic currently present in the ORM isn’t meant to be used by
 The important thing is - the OpenTelemetry logic is disabled on the current version. It literally does nothing. We experimented with it at some point in the past, but disabled it before the release.
 
 As to the reason of the issue in the last release: it happened because of an incorrect type import on [this line](https://github.com/drizzle-team/drizzle-orm/blob/594e96538e588fee5748e372884dbaf32c331524/drizzle-orm/src/tracing.ts#L1). We’ve used `import { type ... }` syntax instead of `import type { ... }`, which resulted in the `import '@opentelemetry/api'` line leaking to the runtime.
+

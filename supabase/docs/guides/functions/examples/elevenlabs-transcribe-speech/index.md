@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:57:29.354Z"
 content_hash: "055d8bd456b33176b8005617b73ed8c70f772060f9cb9cf73c6f39025c2eeb2f"
 menu_path: ["Edge Functions","Edge Functions","Third-Party Tools","Third-Party Tools","Speech Transcription with ElevenLabs","Speech Transcription with ElevenLabs"]
 section_path: ["Edge Functions","Edge Functions","Third-Party Tools","Third-Party Tools","Speech Transcription with ElevenLabs","Speech Transcription with ElevenLabs"]
+nav_prev: {"path": "supabase/docs/guides/functions/examples/discord-bot/index.md", "title": "Building a Discord Bot"}
+nav_next: {"path": "supabase/docs/guides/functions/examples/github-actions/index.md", "title": "GitHub Actions"}
 ---
+
 # 
 
 Transcription Telegram Bot
@@ -161,3 +164,4 @@ Finally you can test the bot by sending it a voice message, audio or video file.
 After you see the transcript as a reply, navigate back to your table editor in the Supabase dashboard and you should see a new row in your `transcription_logs` table.
 
 ![New row in table](/docs/img/guides/functions/elevenlabs/supa-new-row.png)
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:08:23.306Z"
 content_hash: "75462ee607fdd0dc519c92eaa1b860dc20a4f379aee34bcf4ef2bd4ce15aa353"
 menu_path: ["SQL Insert"]
 section_path: []
+nav_prev: {"path": "drizzle/docs/select/index.md", "title": "SQL Select"}
+nav_next: {"path": "drizzle/docs/update/index.md", "title": "SQL Update"}
 ---
+
 ## SQL Insert
 
 Drizzle ORM provides you the most SQL-like way to insert rows into the database tables.
@@ -350,3 +353,4 @@ await db.insert(employees).select(
     () => sql`select "users"."name" as "name" from "users" where "users"."role" = 'employee'`
 );
 ```
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:39:16.283Z"
 content_hash: "f5c07e883fa8e5f7d94d069afe75ad78441f9901dfd70e11bc39a0e162fb016e"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Cloud","→","Redis Cloud","→\n      \n        Manage subscriptions","→","Manage subscriptions","→\n      \n        Redis Cloud Bring your own Cloud","→","Redis Cloud Bring your own Cloud","→\n      \n        Create IAM resources for AWS cloud accounts","→","Create IAM resources for AWS cloud accounts"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Cloud","→","Redis Cloud","→\n      \n        Manage subscriptions","→","Manage subscriptions","→\n      \n        Redis Cloud Bring your own Cloud","→","Redis Cloud Bring your own Cloud","→\n      \n        Create IAM resources for AWS cloud accounts","→","Create IAM resources for AWS cloud accounts"]
+nav_prev: {"path": "redis/docs/latest/operate/oss_and_stack/management/optimization/cpu-profiling/index.md", "title": "Redis CPU profiling"}
+nav_next: {"path": "redis/docs/latest/develop/get-started/data-store/index.md", "title": "Redis as an in-memory data structure store quick start guide"}
 ---
+
 # Create IAM resources for AWS cloud accounts
 
 Redis Cloud
@@ -41,3 +44,4 @@ You can use one of the following tools to create IAM resources:
 *   [CloudFormation](/docs/latest/operate/rc/subscriptions/bring-your-own-cloud/iam-resources/cloudformation/)
 *   [Terraform](/docs/latest/operate/rc/subscriptions/bring-your-own-cloud/iam-resources/terraform/)
 *   The [AWS Console](/docs/latest/operate/rc/subscriptions/bring-your-own-cloud/iam-resources/aws-console/)
+

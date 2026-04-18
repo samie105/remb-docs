@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:36:07.748Z"
 content_hash: "e758059e494698a433de0b6960b63748799acf3789261518c78c6fbc16d9b5fc"
 menu_path: ["PostgreSQL: Documentation: 18: CREATE CONVERSION"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/infoschema-element-types.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.24.\u00a0element_types"}
+nav_next: {"path": "postgres/docs/current/spi-visibility.html/index.md", "title": "PostgreSQL: Documentation: 18: 45.5.\u00a0Visibility of Data Changes"}
 ---
+
 CREATE CONVERSION — define a new encoding conversion
 
 ## Synopsis
@@ -77,3 +80,4 @@ CREATE CONVERSION myconv FOR 'UTF8' TO 'LATIN1' FROM myfunc;
 ## Compatibility
 
 `CREATE CONVERSION` is a PostgreSQL extension. There is no `CREATE CONVERSION` statement in the SQL standard, but a `CREATE TRANSLATION` statement that is very similar in purpose and syntax.
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:47:51.004Z"
 content_hash: "4a62f77cc169a8f8a3b4cf5e61581ce2da4ef401f4f954e564b4f67ba08d650c"
 menu_path: ["PostgreSQL: Documentation: 18: COMMENT"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/textsearch-parsers.html/index.md", "title": "PostgreSQL: Documentation: 18: 12.5.\u00a0Parsers"}
+nav_next: {"path": "postgres/docs/current/catalog-pg-publication.html/index.md", "title": "PostgreSQL: Documentation: 18: 52.40.\u00a0pg_publication"}
 ---
+
 COMMENT — define or change the comment of an object
 
 ## Synopsis
@@ -213,3 +216,4 @@ COMMENT ON VIEW my\_view IS 'View of departmental costs';
 ## Compatibility
 
 There is no `COMMENT` command in the SQL standard.
+

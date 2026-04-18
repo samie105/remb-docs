@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:43:46.278Z"
 content_hash: "64bce663ed52ef3aca94cb459ff666004f82bf62fc66dcaf3b1f6ba317e54652"
 menu_path: ["PostgreSQL: Documentation: 18: 44.1. PL/Python Functions"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/server-start.html/index.md", "title": "PostgreSQL: Documentation: 18: 18.3.\u00a0Starting the Database Server"}
+nav_next: {"path": "postgres/docs/current/sql-dropdatabase.html/index.md", "title": "PostgreSQL: Documentation: 18: DROP DATABASE"}
 ---
+
 Functions in PL/Python are declared via the standard [CREATE FUNCTION](https://www.postgresql.org/docs/current/sql-createfunction.html "CREATE FUNCTION") syntax:
 
 CREATE FUNCTION _`funcname`_ (_`argument-list`_)
@@ -59,3 +62,4 @@ AS $$
 $$ LANGUAGE plpython3u;
 
 But it is advisable not to rely on this implementation detail of PL/Python. It is better to treat the function parameters as read-only.
+

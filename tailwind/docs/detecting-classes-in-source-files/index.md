@@ -9,14 +9,17 @@ last_crawled_at: "2026-04-18T16:38:13.424Z"
 content_hash: "310e6aa713ee16c6fde8f940f9f25f0bce604a1145aa67c665f831e5d5091500"
 menu_path: ["Detecting classes in source files"]
 section_path: []
+nav_prev: {"path": "tailwind/docs/adding-custom-styles/index.md", "title": "Adding custom styles"}
+nav_next: {"path": "tailwind/docs/functions-and-directives/index.md", "title": "Functions and directives"}
 ---
+
 Understanding and customizing how Tailwind scans your source files.
 
 ## [Overview](#overview)
 
 Tailwind works by scanning your project for utility classes, then generating all of the necessary CSS based on the classes you've actually used.
 
-This makes sure your CSS is as small as possible, and is also what makes features like [arbitrary values](https://tailwindcss.com/docs/adding-custom-styles#using-arbitrary-values) possible.
+This makes sure your CSS is as small as possible, and is also what makes features like [arbitrary values](tailwind/docs/adding-custom-styles/index.md#using-arbitrary-values) possible.
 
 ### [How classes are detected](#how-classes-are-detected)
 
@@ -209,3 +212,4 @@ CSS
 ```
 
 This will explicitly exclude the red background utilities, along with their hover and focus variants, from being generated.
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:04:26.353Z"
 content_hash: "30fafc5ab99bd1f84778d11758d52bd752c60308555cc855b468283758f3e831"
 menu_path: ["@std/media-types"]
 section_path: []
+nav_prev: {"path": "deno/deno/runtime/reference/std/log/index.md", "title": "@std/log"}
+nav_next: {"path": "deno/deno/runtime/reference/std/msgpack/index.md", "title": "@std/msgpack"}
 ---
+
 On this page
 
 *   [Overview](#overview)
@@ -43,3 +46,4 @@ deno add jsr:@std/media-types
 ```
 
 [See all symbols in @std/media-types on](https://jsr.io/@std/media-types/doc)
+

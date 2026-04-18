@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:44:16.282Z"
 content_hash: "19121556786c4a384770324444228a478e64d9b6e4f0ee204d8a38bff7556fd1"
 menu_path: ["Edge Functions","Edge Functions","Configuration","Configuration","Managing Dependencies","Managing Dependencies"]
 section_path: ["Edge Functions","Edge Functions","Configuration","Configuration","Managing Dependencies","Managing Dependencies"]
+nav_prev: {"path": "supabase/docs/guides/functions/dart-edge/index.md", "title": "Dart Edge"}
+nav_next: {"path": "supabase/docs/guides/functions/development-environment/index.md", "title": "Development Environment"}
 ---
+
 # 
 
 Managing dependencies
@@ -135,3 +138,4 @@ To include types for built-in Node APIs, add the following line to the top of yo
 ```
 1/// <reference types="npm:@types/node" />
 ```
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:52:02.859Z"
 content_hash: "6f61d6f8d8c11c9a1011693710d87e4b0624a4b564d0d411378ab42af49aca89"
 menu_path: ["PostgreSQL: Documentation: 18: 53.5. pg_backend_memory_contexts"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/gssapi-enc.html/index.md", "title": "PostgreSQL: Documentation: 18: 18.10.\u00a0Secure TCP/IP Connections with GSSAPI Encryption"}
+nav_next: {"path": "postgres/docs/current/plperl-triggers.html/index.md", "title": "PostgreSQL: Documentation: 18: 43.6.\u00a0PL/Perl Triggers"}
 ---
+
 The view `pg_backend_memory_contexts` displays all the memory contexts of the server process attached to the current session.
 
 `pg_backend_memory_contexts` contains one row for each memory context.
@@ -73,3 +76,4 @@ WHERE c2.name = 'CacheMemoryContext'
 AND c1.path\[c2.level\] = c2.path\[c2.level\];
 
 The [Common Table Expression](https://www.postgresql.org/docs/current/queries-with.html "7.8. WITH Queries (Common Table Expressions)") is used to ensure the context IDs in the `path` column match between both evaluations of the view.
+

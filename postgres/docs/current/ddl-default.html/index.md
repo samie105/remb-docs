@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:46:12.842Z"
 content_hash: "182348e97af213f9a226e3e86f705d464a8c544dcda7712a1f7852e64eada49a"
 menu_path: ["PostgreSQL: Documentation: 18: 5.2. Default Values"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/sql-syntax-lexical.html/index.md", "title": "PostgreSQL: Documentation: 18: 4.1.\u00a0Lexical Structure"}
+nav_next: {"path": "postgres/docs/current/app-pgwalsummary.html/index.md", "title": "PostgreSQL: Documentation: 18: pg_walsummary"}
 ---
+
 A column can be assigned a default value. When a new row is created and no values are specified for some of the columns, those columns will be filled with their respective default values. A data manipulation command can also request explicitly that a column be set to its default value, without having to know what that value is. (Details about data manipulation commands are in [Chapter 6](https://www.postgresql.org/docs/current/dml.html "Chapter 6. Data Manipulation").)
 
 If no default value is declared explicitly, the default value is the null value. This usually makes sense because a null value can be considered to represent unknown data.
@@ -37,3 +40,4 @@ CREATE TABLE products (
 );
 
 The `SERIAL` shorthand is discussed further in [Section 8.1.4](https://www.postgresql.org/docs/current/datatype-numeric.html#DATATYPE-SERIAL "8.1.4. Serial Types").
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:35:58.204Z"
 content_hash: "d7ea868c3e47c32f9d882f544438977b05f8d60966b43a14b86f5eb6958cfe1e"
 menu_path: ["PostgreSQL: Documentation: 18: 35.24. element_types"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/functions-admin.html/index.md", "title": "PostgreSQL: Documentation: 18: 9.28.\u00a0System Administration Functions"}
+nav_next: {"path": "postgres/docs/current/sql-createconversion.html/index.md", "title": "PostgreSQL: Documentation: 18: CREATE CONVERSION"}
 ---
+
 Column Type
 
 Description
@@ -125,3 +128,4 @@ Always null, because arrays always have unlimited maximum cardinality in Postgre
 `dtd_identifier` `sql_identifier`
 
 An identifier of the data type descriptor of the element. This is currently not useful.
+

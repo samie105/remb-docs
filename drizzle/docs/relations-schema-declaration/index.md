@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:19:10.476Z"
 content_hash: "96e4fa7a685902425a3432338c3f544ed4819c7b52043283803e38b5c42d5d52"
 menu_path: ["Drizzle Relations Fundamentals"]
 section_path: []
+nav_prev: {"path": "drizzle/docs/sql-schema-declaration/index.md", "title": "Drizzle schema"}
+nav_next: {"path": "drizzle/docs/connect-overview/index.md", "title": "Database connection with Drizzle"}
 ---
+
 ## Drizzle Relations Fundamentals
 
 In the world of databases, especially relational databases, the concept of relations is absolutely fundamental. Think of “relations” as the connections and links between different pieces of data. Just like in real life, where people have relationships with each other, or objects are related to categories, databases use relations to model how different types of information are connected and work together.
@@ -422,3 +425,4 @@ Common Scenarios & Examples
 ```
 
 Polymorphic relationships are more complex and are often handled at the application level or using more advanced database features (depending on the specific database system). Standard SQL doesn’t have direct, built-in support for enforcing polymorphic foreign key constraints in the same way as regular foreign keys.
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:00:05.879Z"
 content_hash: "8d4b430208b80d1c52628c7eff85552aa1c17b558d35c166154d670f4bfb3daf"
 menu_path: ["Platform","Platform","More","More","More","Manage your usage","Manage your usage","IPv4","IPv4"]
 section_path: ["Platform","Platform","More","More","More","Manage your usage","Manage your usage","IPv4","IPv4"]
+nav_prev: {"path": "supabase/docs/guides/platform/manage-your-usage/log-drains/index.md", "title": "Manage Log Drain usage"}
+nav_next: {"path": "supabase/docs/guides/platform/manage-your-usage/monthly-active-users-sso/index.md", "title": "Manage Monthly Active SSO Users usage"}
 ---
+
 # 
 
 Manage IPv4 usage
@@ -287,3 +290,4 @@ Compute Credits
 ## Optimize usage[#](#optimize-usage)
 
 To see whether your database actually needs a dedicated IPv4 address, refer to [When you need the IPv4 add-on](/docs/guides/platform/ipv4-address#when-you-need-the-ipv4-add-on).
+

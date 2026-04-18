@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:52:44.354Z"
 content_hash: "b76620e598acbcaaf7b1eda6c8b7527a43974b19aea6f7f98cfc1f9514baca1e"
 menu_path: ["max-height"]
 section_path: []
+nav_prev: {"path": "tailwind/docs/min-height/index.md", "title": "min-height"}
+nav_next: {"path": "tailwind/docs/inline-size/index.md", "title": "inline-size"}
 ---
+
 Utilities for setting the maximum height of an element.
 
 Class
@@ -120,7 +123,7 @@ Prefix a `max-height` utility with a breakpoint variant like `md:` to only apply
 <div class="h-48 max-h-full md:max-h-screen ...">  <!-- ... --></div>
 ```
 
-Learn more about using variants in the [variants documentation](https://tailwindcss.com/docs/hover-focus-and-other-states).
+Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).
 
 ## [Customizing your theme](#customizing-your-theme)
 
@@ -130,4 +133,5 @@ The `max-h-<number>` utilities are driven by the `--spacing` theme variable, whi
 @theme {  --spacing: 1px; }
 ```
 
-Learn more about customizing the spacing scale in the [theme variable documentation](https://tailwindcss.com/docs/theme).
+Learn more about customizing the spacing scale in the [theme variable documentation](tailwind/docs/theme/index.md).
+

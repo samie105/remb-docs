@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:50:13.305Z"
 content_hash: "c98662596920ed05acc403c2a2687c752ecd029cfe8967e354a349b081a8af9c"
 menu_path: ["Self-Hosting","Self-Hosting","How-to Guides","How-to Guides","Copy Storage from Platform","Copy Storage from Platform"]
 section_path: ["Self-Hosting","Self-Hosting","How-to Guides","How-to Guides","Copy Storage from Platform","Copy Storage from Platform"]
+nav_prev: {"path": "supabase/docs/guides/security/security-testing/index.md", "title": "Security testing of your Supabase projects"}
+nav_next: {"path": "supabase/docs/guides/security/soc-2-compliance/index.md", "title": "SOC 2 Compliance and Supabase"}
 ---
+
 # 
 
 Copy Storage Objects from Platform
@@ -131,3 +134,4 @@ For very large files, increase rclone's timeout:
 ### Empty listing on platform[#](#empty-listing-on-platform)
 
 If `rclone lsd platform:` returns nothing, verify the endpoint URL ends with `/storage/v1/s3` and that the S3 access keys have not expired. Regenerate them from the dashboard if needed.
+

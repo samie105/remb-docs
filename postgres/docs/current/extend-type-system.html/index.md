@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:35:23.428Z"
 content_hash: "f23371b17f6f36bd45966f6fd9f93e54022b6ea64ff4b0c1abc0b5868b8c7d4a"
 menu_path: ["PostgreSQL: Documentation: 18: 36.2. The PostgreSQL Type System"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/sql-createstatistics.html/index.md", "title": "PostgreSQL: Documentation: 18: CREATE STATISTICS"}
+nav_next: {"path": "postgres/docs/current/logfile-maintenance.html/index.md", "title": "PostgreSQL: Documentation: 18: 24.3.\u00a0Log File Maintenance"}
 ---
+
 PostgreSQL data types can be divided into base types, container types, domains, and pseudo-types.
 
 ### 36.2.1. Base Types [#](#EXTEND-TYPE-SYSTEM-BASE)
@@ -149,3 +152,4 @@ RETURNS anycompatible AS ...
 In an actual call of this function, the first two inputs must have exactly the same type. The last two inputs must be promotable to a common type, but this type need not have anything to do with the type of the first two inputs. The result will have the common type of the last two inputs.
 
 A variadic function (one taking a variable number of arguments, as in [Section 36.5.6](https://www.postgresql.org/docs/current/xfunc-sql.html#XFUNC-SQL-VARIADIC-FUNCTIONS "36.5.6. SQL Functions with Variable Numbers of Arguments")) can be polymorphic: this is accomplished by declaring its last parameter as `VARIADIC` `anyarray` or `VARIADIC` `anycompatiblearray`. For purposes of argument matching and determining the actual result type, such a function behaves the same as if you had written the appropriate number of `anynonarray` or `anycompatiblenonarray` parameters.
+

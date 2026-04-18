@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:47:58.858Z"
 content_hash: "a7d9fe0f210fbf347b709e9f7d5f6041d0533af32e29d7e96740934d84a7a49e"
 menu_path: ["PostgreSQL: Documentation: 18: Chapter 55. PostgreSQL Coding Conventions"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/protocol.html/index.md", "title": "PostgreSQL: Documentation: 18: Chapter\u00a054.\u00a0Frontend/Backend Protocol"}
+nav_next: {"path": "postgres/docs/current/geqo.html/index.md", "title": "PostgreSQL: Documentation: 18: Chapter\u00a061.\u00a0Genetic Query Optimizer"}
 ---
+
 February 26, 2026: [PostgreSQL 18.3, 17.9, 16.13, 15.17, and 14.22 Released!](/about/news/postgresql-183-179-1613-1517-and-1422-released-3246/)
 
 [Documentation](/docs/ "Documentation") → [PostgreSQL 18](/docs/18/index.html)
@@ -25,3 +28,4 @@ Unsupported versions: [13](/docs/13/source.html "PostgreSQL 13 - Chapter 55. P
 ## Submit correction
 
 If you see anything in the documentation that is not correct, does not match your experience with the particular feature or requires further clarification, please use [this form](/account/comments/new/18/source.html/) to report a documentation issue.
+

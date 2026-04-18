@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:43:15.250Z"
 content_hash: "aa6e88c0b19eea4869ddd4a933dfae4bd064bb9beaa2183bd87d2e1f593bcd01"
 menu_path: ["Drizzle <> Turso Cloud"]
 section_path: []
+nav_prev: {"path": "drizzle/docs/connect-tidb/index.md", "title": "Drizzle <> TiDB Serverless"}
+nav_next: {"path": "drizzle/docs/connect-turso-database/index.md", "title": "Drizzle <> Turso Database"}
 ---
+
 According to the **[official website](https://turso.tech/drizzle)**, Turso is a **[libSQL](https://github.com/libsql/libsql)** powered edge SQLite database as a service.
 
 Drizzle ORM natively supports libSQL driver. We embrace SQL dialects and dialect specific drivers and syntax and mirror most popular SQLite-like `all`, `get`, `values` and `run` query methods syntax.
@@ -198,3 +201,4 @@ const result = await db.select().from(users);
 ```
 
 #### What’s next?[](#whats-next)
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:38:37.644Z"
 content_hash: "65ec82502416488d20a490738a05ed0bf6e1329a8614758f1d9d79afe3aa69d1"
 menu_path: ["@astrojs/\n\t\t\t\t\talpinejs"]
 section_path: []
+nav_prev: {"path": "astro/en/reference/error-reference/index.md", "title": "Error reference"}
+nav_next: {"path": "astro/en/guides/integrations-guide/preact/index.md", "title": "@astrojs/\n\t\t\t\t\tpreact"}
 ---
+
 # @astrojs/ alpinejs
 
 v0.5.0 [GitHub](https://github.com/withastro/astro/tree/main/packages/integrations/alpinejs/) [npm](https://www.npmjs.com/package/@astrojs/alpinejs) [Changelog](https://github.com/withastro/astro/tree/main/packages/integrations/alpinejs/CHANGELOG.md)
@@ -192,3 +195,4 @@ interface Window {  Alpine: import('alpinejs').Alpine;}
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

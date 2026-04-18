@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:46:13.963Z"
 content_hash: "6ef8db043d99b2a84846ea087140e56b5694c165efec7a73a7a4f371a09975d4"
 menu_path: ["Build an app with Remix and Bun"]
 section_path: []
+nav_prev: {"path": "bun/bun/docs/guides/ecosystem/sentry/index.md", "title": "Add Sentry to a Bun app"}
+nav_next: {"path": "bun/bun/docs/guides/ecosystem/solidstart/index.md", "title": "Build an app with SolidStart and Bun"}
 ---
+
 * * *
 
 Initialize a Remix app with `create-remix`.
@@ -100,3 +103,4 @@ $ remix-serve ./build/index.js
 * * *
 
 Read the [Remix docs](https://remix.run/) for more information on how to build apps with Remix.
+

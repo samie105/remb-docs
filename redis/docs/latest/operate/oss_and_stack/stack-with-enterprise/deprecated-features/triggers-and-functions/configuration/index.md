@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:53:07.273Z"
 content_hash: "795e6a863dde794ed3ee5ed98e9a3c8765355a00669f6de86503ede1393022f6"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Redis Open Source and Redis Software","→","Redis Open Source and Redis Software","→\n      \n        Deprecated Redis Open Source features and modules","→","Deprecated Redis Open Source features and modules","→\n      \n        Triggers and functions","→","Triggers and functions","→\n      \n        Configuration","→","Configuration"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Redis Open Source and Redis Software","→","Redis Open Source and Redis Software","→\n      \n        Deprecated Redis Open Source features and modules","→","Deprecated Redis Open Source features and modules","→\n      \n        Triggers and functions","→","Triggers and functions","→\n      \n        Configuration","→","Configuration"]
+nav_prev: {"path": "redis/docs/latest/develop/data-types/timeseries/configuration/index.md", "title": "Configuration Parameters"}
+nav_next: {"path": "redis/docs/latest/develop/reference/key-specs/index.md", "title": "Command key specifications"}
 ---
+
 # Configuration
 
 Configure the operation parameters
@@ -297,3 +300,4 @@ _Runtime Configurability_
 Yes
 
 ## On this page
+

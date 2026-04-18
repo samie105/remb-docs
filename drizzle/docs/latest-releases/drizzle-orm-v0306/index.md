@@ -9,5 +9,9 @@ last_crawled_at: "2026-04-18T17:14:11.769Z"
 content_hash: "22d62621c11b5202e6d3488cbca32850cad929d4ae7aaddb0ea05eb63c818e42"
 menu_path: ["Drizzle ORM - DrizzleORM v0.30.6 release"]
 section_path: []
+nav_prev: {"path": "drizzle/docs/latest-releases/drizzle-orm-v0304/index.md", "title": "Drizzle ORM - DrizzleORM v0.30.4 release"}
+nav_next: {"path": "drizzle/docs/latest-releases/drizzle-orm-v0307/index.md", "title": "Drizzle ORM - DrizzleORM v0.30.7 release"}
 ---
+
 Drizzle ORM - DrizzleORM v0.30.6 release
+

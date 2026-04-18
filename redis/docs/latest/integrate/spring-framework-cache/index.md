@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:13:21.312Z"
 content_hash: "d6a845f8df46139061dbefded9f81a4c9e51d6b1282ef420992b8279e10dbd29"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Spring Data Redis","→","Spring Data Redis"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Spring Data Redis","→","Spring Data Redis"]
+nav_prev: {"path": "redis/docs/latest/operate/oss_and_stack/reference/signals/index.md", "title": "Redis signal handling"}
+nav_next: {"path": "redis/docs/latest/develop/ai/search-and-query/vectors/index.md", "title": "Vector search concepts"}
 ---
+
 # Spring Data Redis
 
 Plug Redis into your Spring application with minimal effort
@@ -46,3 +49,4 @@ Please read the Spring framework's documentation to learn more about how to use 
 *   [Spring Data Redis Cache](https://docs.spring.io/spring-data/redis/reference/redis/redis-cache.html)
 
 ## On this page
+

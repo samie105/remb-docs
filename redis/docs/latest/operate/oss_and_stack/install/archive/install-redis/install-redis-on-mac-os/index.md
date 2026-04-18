@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:41:48.379Z"
 content_hash: "42d41f869859427c03d17caa2be9b1204b4dd8c08be30c6d4179f6cd8f1b7381"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Install Redis Open Source","→","Install Redis Open Source","→\n      \n        Install Redis Community Edition or Redis Stack","→","Install Redis Community Edition or Redis Stack","→\n      \n        Install Redis","→","Install Redis","→\n      \n        Install Redis on macOS","→","Install Redis on macOS"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Install Redis Open Source","→","Install Redis Open Source","→\n      \n        Install Redis Community Edition or Redis Stack","→","Install Redis Community Edition or Redis Stack","→\n      \n        Install Redis","→","Install Redis","→\n      \n        Install Redis on macOS","→","Install Redis on macOS"]
+nav_prev: {"path": "redis/docs/latest/operate/oss_and_stack/install/archive/install-stack/linux/index.md", "title": "Install Redis Stack on Linux"}
+nav_next: {"path": "redis/docs/latest/develop/reference/modules/modules-native-types/index.md", "title": "Modules API for native types"}
 ---
+
 # Install Redis on macOS
 
 Use Homebrew to install and start Redis on macOS
@@ -110,3 +113,4 @@ Once you have a running Redis instance, you may want to:
 *   [Install Redis "properly"](/docs/latest/operate/oss_and_stack/install/archive/install-redis/#install-redis-properly) for production use.
 
 ## On this page
+

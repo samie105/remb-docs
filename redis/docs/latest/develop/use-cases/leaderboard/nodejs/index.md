@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:50:02.675Z"
 content_hash: "09df83e44817a09c31e8c9bb6b0f2a64752bb9040883165918df4cfa6a015eb6"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Redis leaderboard","→","Redis leaderboard","→\n      \n        Redis leaderboard with node-redis","→","Redis leaderboard with node-redis"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Redis leaderboard","→","Redis leaderboard","→\n      \n        Redis leaderboard with node-redis","→","Redis leaderboard with node-redis"]
+nav_prev: {"path": "redis/docs/latest/develop/reference/modules/index.md", "title": "Redis modules API"}
+nav_next: {"path": "redis/docs/latest/develop/use-cases/time-series-dashboard/nodejs/index.md", "title": "Rolling sensor graph demo with Redis and Node.js"}
 ---
+
 # Redis leaderboard with node-redis
 
 Implement a Redis leaderboard in JavaScript with node-redis and sorted sets
@@ -212,3 +215,4 @@ Some leaderboards are permanent, while others reset daily, weekly, or seasonally
 Per-user hashes work best for small, frequently accessed profile details. Large profile documents or rarely used attributes are often better kept in another store, with Redis holding only the fields needed to render the leaderboard quickly.
 
 ## On this page
+

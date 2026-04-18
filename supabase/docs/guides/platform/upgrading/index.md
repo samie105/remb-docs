@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:48:20.106Z"
 content_hash: "d0a8b08efdff530289c9681724d9ae322087c4741e8eb073ac29fa1859b51846"
 menu_path: ["Platform","Platform","Upgrades & Migrations","Upgrades & Migrations","Upgrading","Upgrading"]
 section_path: ["Platform","Platform","Upgrades & Migrations","Upgrades & Migrations","Upgrading","Upgrading"]
+nav_prev: {"path": "supabase/docs/guides/platform/ssl-enforcement/index.md", "title": "Postgres SSL Enforcement"}
+nav_next: {"path": "supabase/docs/guides/platform/your-monthly-invoice/index.md", "title": "Your monthly invoice"}
 ---
+
 # 
 
 Upgrading
@@ -146,3 +149,4 @@ Projects planning to upgrade from Postgres 15 to Postgres 17 need to first disab
 `pgjwt` was enabled by default on every Supabase project up until Postgres 17. If you weren’t explicitly using `pgjwt` in your project, it’s most likely safe to disable.
 
 Existing projects on lower versions of Postgres are not impacted, and the extensions will continue to be supported on projects using Postgres 15, until the end of life of Postgres 15 on the Supabase platform.
+

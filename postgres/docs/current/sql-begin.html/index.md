@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:54:02.060Z"
 content_hash: "214be7cb5a089cc18a75c5ad36cfaa6a423ab145621d0efa221ca1ed91277035"
 menu_path: ["PostgreSQL: Documentation: 18: BEGIN"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/ecpg-sql-type.html/index.md", "title": "PostgreSQL: Documentation: 18: TYPE"}
+nav_next: {"path": "postgres/docs/current/sql-createopfamily.html/index.md", "title": "PostgreSQL: Documentation: 18: CREATE OPERATOR FAMILY"}
 ---
+
 BEGIN — start a transaction block
 
 ## Synopsis
@@ -62,3 +65,4 @@ BEGIN;
 The `DEFERRABLE` _`transaction_mode`_ is a PostgreSQL language extension.
 
 Incidentally, the `BEGIN` key word is used for a different purpose in embedded SQL. You are advised to be careful about the transaction semantics when porting database applications.
+

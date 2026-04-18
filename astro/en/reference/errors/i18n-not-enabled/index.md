@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:44:57.132Z"
 content_hash: "b7c14ec1f0408279ea7725e7764b86b87dd6f1d3784c2fcb86b9d7cdc44580f8"
 menu_path: ["i18n Not Enabled"]
 section_path: []
+nav_prev: {"path": "astro/en/reference/errors/i18n-no-locale-found-in-path/index.md", "title": "The path doesn't contain any locale"}
+nav_next: {"path": "astro/en/reference/errors/image-not-found/index.md", "title": "Image not found."}
 ---
+
 # i18n Not Enabled
 
 > **i18nNotEnabled**: The `astro:i18n` module cannot be used without enabling i18n in your Astro config.
@@ -32,3 +35,4 @@ For more information on internationalization support in Astro, see our [Internat
 *   [`i18n` Configuration Reference](/en/reference/configuration-reference/#i18n)
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

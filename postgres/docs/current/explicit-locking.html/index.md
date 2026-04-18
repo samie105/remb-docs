@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:45:19.397Z"
 content_hash: "1ca6742ea9a7abdf20b903ff1cdc06d292c49c53ac5f869cba775f157158fb62"
 menu_path: ["PostgreSQL: Documentation: 18: 13.3. Explicit Locking"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/pgprewarm.html/index.md", "title": "PostgreSQL: Documentation: 18: F.30.\u00a0pg_prewarm \u2014 preload relation data into buffer caches"}
+nav_next: {"path": "postgres/docs/current/views-overview.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.1.\u00a0Overview"}
 ---
+
 PostgreSQL provides various lock modes to control concurrent access to data in tables. These modes can be used for application-controlled locking in situations where MVCC does not give the desired behavior. Also, most PostgreSQL commands automatically acquire locks of appropriate modes to ensure that referenced tables are not dropped or modified in incompatible ways while the command executes. (For example, `TRUNCATE` cannot safely be executed concurrently with other operations on the same table, so it obtains an `ACCESS EXCLUSIVE` lock on the table to enforce that.)
 
 To examine a list of the currently outstanding locks in a database server, use the [`pg_locks`](https://www.postgresql.org/docs/current/view-pg-locks.html "53.13. pg_locks") system view. For more information on monitoring the status of the lock manager subsystem, refer to [Chapter 27](https://www.postgresql.org/docs/current/monitoring.html "Chapter 27. Monitoring Database Activity").
@@ -363,7 +366,7 @@ There are two ways to acquire an advisory lock in PostgreSQL: at session level o
 
 Like all locks in PostgreSQL, a complete list of advisory locks currently held by any session can be found in the [`pg_locks`](https://www.postgresql.org/docs/current/view-pg-locks.html "53.13. pg_locks") system view.
 
-Both advisory locks and regular locks are stored in a shared memory pool whose size is defined by the configuration variables [max\_locks\_per\_transaction](https://www.postgresql.org/docs/current/runtime-config-locks.html#GUC-MAX-LOCKS-PER-TRANSACTION) and [max\_connections](https://www.postgresql.org/docs/current/runtime-config-connection.html#GUC-MAX-CONNECTIONS). Care must be taken not to exhaust this memory or the server will be unable to grant any locks at all. This imposes an upper limit on the number of advisory locks grantable by the server, typically in the tens to hundreds of thousands depending on how the server is configured.
+Both advisory locks and regular locks are stored in a shared memory pool whose size is defined by the configuration variables [max\_locks\_per\_transaction](https://www.postgresql.org/docs/current/runtime-config-locks.html#GUC-MAX-LOCKS-PER-TRANSACTION) and [max\_connections](postgres/docs/current/runtime-config-connection.html/index.md#GUC-MAX-CONNECTIONS). Care must be taken not to exhaust this memory or the server will be unable to grant any locks at all. This imposes an upper limit on the number of advisory locks grantable by the server, typically in the tens to hundreds of thousands depending on how the server is configured.
 
 In certain cases using advisory locking methods, especially in queries involving explicit ordering and `LIMIT` clauses, care must be taken to control the locks acquired because of the order in which SQL expressions are evaluated. For example:
 
@@ -377,3 +380,4 @@ SELECT pg\_advisory\_lock(q.id) FROM
 In the above queries, the second form is dangerous because the `LIMIT` is not guaranteed to be applied before the locking function is executed. This might cause some locks to be acquired that the application was not expecting, and hence would fail to release (until it ends the session). From the point of view of the application, such locks would be dangling, although still viewable in `pg_locks`.
 
 The functions provided to manipulate advisory locks are described in [Section 9.28.10](https://www.postgresql.org/docs/current/functions-admin.html#FUNCTIONS-ADVISORY-LOCKS "9.28.10. Advisory Lock Functions").
+

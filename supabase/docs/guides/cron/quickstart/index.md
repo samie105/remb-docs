@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:39:42.215Z"
 content_hash: "b1ef437bdfe5b3bc935bce74f8faeea496fdaac662a8a615b017fbf537474257"
 menu_path: ["Cron","Cron","Getting Started","Getting Started","Quickstart","Quickstart"]
 section_path: ["Cron","Cron","Getting Started","Getting Started","Quickstart","Quickstart"]
+nav_prev: {"path": "supabase/docs/guides/cron/install/index.md", "title": "Install"}
+nav_next: {"path": "supabase/docs/guides/database/beekeeper-studio/index.md", "title": "Connecting with Beekeeper Studio"}
 ---
+
 # 
 
 Quickstart
@@ -103,3 +106,4 @@ Be extremely careful when setting up Jobs for system maintenance tasks as they c
 For instance, scheduling a command to terminate idle connections with `pg_terminate_backend(pid)` can disrupt critical background processes like nightly backups. Often, there is an existing Postgres setting, such as `idle_session_timeout`, that can perform these common maintenance tasks without the risk.
 
 Reach out to [Supabase Support](/support) if you're unsure if that applies to your use case.
+

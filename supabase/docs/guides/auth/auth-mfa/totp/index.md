@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:53:08.837Z"
 content_hash: "dad84da1a37d1ae64e647f79cc85091a5063adabc51487a6f06f649d141f91ac"
 menu_path: ["Auth","Auth","More","More","More","Multi-Factor Authentication","Multi-Factor Authentication","App Authenticator (TOTP)","App Authenticator (TOTP)"]
 section_path: ["Auth","Auth","More","More","More","Multi-Factor Authentication","Multi-Factor Authentication","App Authenticator (TOTP)","App Authenticator (TOTP)"]
+nav_prev: {"path": "supabase/docs/guides/auth/auth-mfa/phone/index.md", "title": "Multi-Factor Authentication (Phone)"}
+nav_next: {"path": "supabase/docs/guides/auth/debugging/error-codes/index.md", "title": "Error Codes"}
 ---
+
 # 
 
 Multi-Factor Authentication (TOTP)
@@ -123,3 +126,4 @@ Below is the component that implements the challenge and verify logic.
 *   On successful verification, the client library will refresh the session in the background automatically and finally call the `onSuccess` callback, which will show the authenticated `App` component on screen.
 
 ## Frequently asked questions[#](#frequently-asked-questions)
+

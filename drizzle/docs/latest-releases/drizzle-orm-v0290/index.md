@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:11:59.565Z"
 content_hash: "2fd0734a25e13a6130c0af652ea3154aabb0d2cf16633cdec938838ffd2d9e02"
 menu_path: ["Drizzle ORM - DrizzleORM v0.29.0 release"]
 section_path: []
+nav_prev: {"path": "drizzle/docs/latest-releases/drizzle-orm-v0286/index.md", "title": "Drizzle ORM - DrizzleORM v0.28.6 release"}
+nav_next: {"path": "drizzle/docs/latest-releases/drizzle-orm-v0292/index.md", "title": "Drizzle ORM - DrizzleORM v0.29.2 release"}
 ---
+
 DrizzleORM v0.29.0 release
 
 Nov 9, 2023
@@ -28,7 +31,7 @@ const table = mysqlTable('table', {
 });
 ```
 
-Read more in [docs](https://orm.drizzle.team/docs/column-types/mysql#bigint)
+Read more in [docs](drizzle/docs/column-types/mysql/index.md#bigint)
 
 ### 🎉 Improved query builder types
 
@@ -73,7 +76,7 @@ let query = db.select().from(users).where(eq(users.id, 1)).$dynamic();
 query = withFriends(query);
 ```
 
-Read more in [docs](https://orm.drizzle.team/docs/dynamic-query-building)
+Read more in [docs](drizzle/docs/dynamic-query-building/index.md)
 
 ### 🎉 Possibility to specify name for primary keys and foreign keys
 
@@ -93,7 +96,7 @@ const table = pgTable('table', {
 }));
 ```
 
-Read more in [docs](https://orm.drizzle.team/docs/indexes-constraints#composite-primary-key)
+Read more in [docs](drizzle/docs/indexes-constraints/index.md#composite-primary-key)
 
 ### 🎉 Read Replicas Support
 
@@ -134,7 +137,7 @@ const db = withReplicas(primaryDb, [read1, read2], (replicas) => {
 
 `withReplicas` function is available for all dialects in Drizzle ORM
 
-Read more in [docs](https://orm.drizzle.team/docs/read-replicas)
+Read more in [docs](drizzle/docs/read-replicas/index.md)
 
 ### 🎉 Set operators support (UNION, UNION ALL, INTERSECT, INTERSECT ALL, EXCEPT, EXCEPT ALL)
 
@@ -157,7 +160,7 @@ const result = await union(allUsersQuery, allCustomersQuery)
 const result = await db.select().from(users).union(db.select().from(customers));
 ```
 
-Read more in [docs](https://orm.drizzle.team/docs/set-operations)
+Read more in [docs](drizzle/docs/set-operations/index.md)
 
 ### 🎉 New MySQL Proxy Driver
 
@@ -216,7 +219,7 @@ async function main() {
 }
 ```
 
-Read more in [docs](https://orm.drizzle.team/docs/get-started-mysql#http-proxy)
+Read more in [docs](drizzle/docs/get-started-mysql/index.md#http-proxy)
 
 ### 🎉 New PostgreSQL Proxy Driver
 
@@ -260,7 +263,7 @@ async function main() {
 }
 ```
 
-Read more in [docs](https://orm.drizzle.team/docs/get-started-postgresql#http-proxy)
+Read more in [docs](drizzle/docs/get-started-postgresql/index.md#http-proxy)
 
 ### 🎉 `D1` Batch API support
 
@@ -322,7 +325,7 @@ All possible builders that can be used inside `db.batch`:
 `db.insert()...`,
 ```
 
-More usage examples here: [integration-tests/tests/d1-batch.test.ts](https://github.com/drizzle-team/drizzle-orm/blob/beta/integration-tests/tests/d1-batch.test.ts) and in [docs](https://orm.drizzle.team/docs/batch-api)
+More usage examples here: [integration-tests/tests/d1-batch.test.ts](https://github.com/drizzle-team/drizzle-orm/blob/beta/integration-tests/tests/d1-batch.test.ts) and in [docs](drizzle/docs/batch-api/index.md)
 
 * * *
 
@@ -337,3 +340,4 @@ More usage examples here: [integration-tests/tests/d1-batch.test.ts](https://git
 7.  Some bug fixes and improvements
 
 You can read more about drizzle-kit updates [here](https://github.com/drizzle-team/drizzle-kit-mirror/releases/tag/v0.20.0)
+

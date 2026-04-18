@@ -9,57 +9,9 @@ last_crawled_at: "2026-04-18T16:49:40.193Z"
 content_hash: "99045da1793d5ed81c41016bdb7c2553818e63a11ffdce738bb9657784796b3a"
 menu_path: ["Installation"]
 section_path: []
+nav_prev: {"path": "deno/deno/runtime/index.md", "title": "Welcome to Deno"}
+nav_next: {"path": "deno/deno/runtime/getting_started/first_project/index.md", "title": "Making a Deno project"}
 ---
-On this page
-
-*   [Download and install](#download-and-install)
-*   [Docker](#docker)
-*   [Testing your installation](#testing-your-installation)
-*   [Updating](#updating)
-*   [Building from source](#building-from-source)
-
-Deno works on macOS, Linux, and Windows. Deno is a single binary executable. It has no external dependencies. On macOS, both M1 (arm64) and Intel (x64) executables are provided. On Windows, both ARM64 and x64 are supported. On Linux, only x64 is supported.
-
-## Download and install
-
-[deno\_install](https://github.com/denoland/deno_install) provides convenience scripts to download and install the binary.
-
-Using Shell:
-
-```shell
-curl -fsSL https://deno.land/install.sh | sh
-```
-
-Using [npm](https://npmjs.com/package/deno):
-
-```shell
-npm install -g deno
-```
-
-> The startup time of the Deno command gets affected if it's installed via npm. We recommend the shell install script for better performance.
-
-Using [Homebrew](https://formulae.brew.sh/formula/deno):
-
-```shell
-brew install deno
-```
-
-Using [MacPorts](https://ports.macports.org/port/deno/):
-
-```shell
-sudo port install deno
-```
-
-Using [Nix](https://nixos.org/download.html):
-
-```shell
-nix-shell -p deno
-```
-
-Using [asdf](https://asdf-vm.com/):
-
-```shell
-asdf plugin add deno https://github.com/asdf-community/asdf-deno.git
 
 # Download and install the latest version of Deno
 asdf install deno latest
@@ -219,3 +171,4 @@ deno upgrade --version 1.0.1
 ## Building from source
 
 Information about how to build from source can be found in the [`Building from source`](https://github.com/denoland/deno/blob/main/.github/CONTRIBUTING.md#building-from-source) guide.
+

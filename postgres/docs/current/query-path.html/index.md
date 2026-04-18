@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:49:42.669Z"
 content_hash: "838a1f1a0d245d89abd2b0c212cb100efb7542edb8a36ec6f3e0b3d643a20102"
 menu_path: ["PostgreSQL: Documentation: 18: 51.1. The Path of a Query"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/logicaldecoding-walsender.html/index.md", "title": "PostgreSQL: Documentation: 18: 47.3.\u00a0Streaming Replication Protocol Interface"}
+nav_next: {"path": "postgres/docs/current/infoschema-routine-routine-usage.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.42.\u00a0routine_routine_usage"}
 ---
+
 February 26, 2026: [PostgreSQL 18.3, 17.9, 16.13, 15.17, and 14.22 Released!](/about/news/postgresql-183-179-1613-1517-and-1422-released-3246/)
 
 [Documentation](/docs/ "Documentation") → [PostgreSQL 18](/docs/18/index.html)
@@ -44,3 +47,4 @@ In the following sections we will cover each of the above listed items in more d
 ## Submit correction
 
 If you see anything in the documentation that is not correct, does not match your experience with the particular feature or requires further clarification, please use [this form](/account/comments/new/18/query-path.html/) to report a documentation issue.
+

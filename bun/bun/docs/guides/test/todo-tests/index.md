@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:55:27.606Z"
 content_hash: "7cda773ff535358354dc51bb03e2ae9afb9eef7bd0b02b65f9f5d4876c2bfb9e"
 menu_path: ["Mark a test as a \"todo\" with the Bun test runner"]
 section_path: []
+nav_prev: {"path": "bun/bun/docs/guides/test/timeout/index.md", "title": "Set a per-test timeout with the Bun test runner"}
+nav_next: {"path": "bun/bun/docs/guides/test/update-snapshots/index.md", "title": "Update snapshots in `bun test`"}
 ---
+
 [Skip to main content](#content-area)
 
 [Bun home page![light logo](https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z_zHyy/logo/logo-with-wordmark-dark.svg?fit=max&auto=format&n=JUhaF6Mf68z_zHyy&q=85&s=3f55cd23822028e40658b192c927f3e4)![dark logo](https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z_zHyy/logo/logo-with-wordmark-light.svg?fit=max&auto=format&n=JUhaF6Mf68z_zHyy&q=85&s=8a0c5928d9dc3631f0d33e17c257e2ec)](/docs)
@@ -124,3 +127,4 @@ Set a per-test timeout with the Bun test runner
 Next
 
 ](/docs/guides/test/timeout)
+

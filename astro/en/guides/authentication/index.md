@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:32:20.975Z"
 content_hash: "6413ef71ca15d2b908ae8f48db2332facb9c83956e5b5f70a82e0bf377dd51e8"
 menu_path: ["Authentication"]
 section_path: []
+nav_prev: {"path": "astro/en/guides/ecommerce/index.md", "title": "E-commerce"}
+nav_next: {"path": "astro/en/guides/testing/index.md", "title": "Testing"}
 ---
+
 # Authentication
 
 Authentication and authorization are two security processes that manage access to your website or app. Authentication verifies a visitor’s identity, while authorization grants access to protected areas and resources.
@@ -207,3 +210,4 @@ Follow the [Scalekit & Astro guide](/en/guides/backend/scalekit/) to add authent
 *   [Using Microsoft Entra Id EasyAuth with Astro and Azure Static Web App](https://agramont.net/blog/entra-id-easyauth-with-astro/)
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

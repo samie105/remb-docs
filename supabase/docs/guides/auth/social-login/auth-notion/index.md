@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:54:43.060Z"
 content_hash: "53562c5ae34b86a2b1af0d446cafe6497f873aa00d2714b22c159417025a4dae"
 menu_path: ["Auth","Auth","More","More","More","Social Login (OAuth)","Social Login (OAuth)","Notion","Notion"]
 section_path: ["Auth","Auth","More","More","More","Social Login (OAuth)","Social Login (OAuth)","Notion","Notion"]
+nav_prev: {"path": "supabase/docs/guides/auth/social-login/auth-linkedin/index.md", "title": "Login with LinkedIn"}
+nav_next: {"path": "supabase/docs/guides/auth/social-login/auth-slack/index.md", "title": "Login with Slack"}
 ---
+
 # 
 
 Login with Notion
@@ -123,3 +126,4 @@ When your user signs out, call [signOut()](/docs/reference/javascript/auth-signo
 *   [Supabase JS Client](https://github.com/supabase/supabase-js)
 *   [Notion Account](https://notion.so)
 *   [Notion Developer Portal](https://www.notion.so/my-integrations)
+

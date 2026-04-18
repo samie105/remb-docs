@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:45:37.138Z"
 content_hash: "5ade0c61107c2f3c61ea210c69e62c2f7a1278e87f1c32f863b70d62c661cc1b"
 menu_path: ["Removing Effect Dependencies"]
 section_path: []
+nav_prev: {"path": "react/learn/separating-events-from-effects/index.md", "title": "Separating Events from Effects"}
+nav_next: {"path": "react/learn/reusing-logic-with-custom-hooks/index.md", "title": "Reusing Logic with Custom Hooks"}
 ---
+
 When you write an Effect, the linter will verify that you’ve included every reactive value (like props and state) that the Effect reads in the list of your Effect’s dependencies. This ensures that your Effect remains synchronized with the latest props and state of your component. Unnecessary dependencies may cause your Effect to run too often, or even create an infinite loop. Follow this guide to review and remove unnecessary dependencies from your Effects.
 
 ### You will learn
@@ -22,7 +25,7 @@ When you write an Effect, the linter will verify that you’ve included every re
 
 ## Dependencies should match the code[](#dependencies-should-match-the-code "Link for Dependencies should match the code ")
 
-When you write an Effect, you first specify how to [start and stop](https://react.dev/learn/lifecycle-of-reactive-effects#the-lifecycle-of-an-effect) whatever you want your Effect to be doing:
+When you write an Effect, you first specify how to [start and stop](react/learn/lifecycle-of-reactive-effects/index.md#the-lifecycle-of-an-effect) whatever you want your Effect to be doing:
 
 ```
 const serverUrl = 'https://localhost:1234';function ChatRoom({ roomId }) {useEffect(() => {const connection = createConnection(serverUrl, roomId);connection.connect();return () => connection.disconnect();// ...}
@@ -36,7 +39,7 @@ Fill them in according to what the linter says:
 function ChatRoom({ roomId }) {useEffect(() => {const connection = createConnection(serverUrl, roomId);connection.connect();return () => connection.disconnect();}, [roomId]); // ✅ All dependencies declared// ...}
 ```
 
-[Effects “react” to reactive values.](https://react.dev/learn/lifecycle-of-reactive-effects#effects-react-to-reactive-values) Since `roomId` is a reactive value (it can change due to a re-render), the linter verifies that you’ve specified it as a dependency. If `roomId` receives a different value, React will re-synchronize your Effect. This ensures that the chat stays connected to the selected room and “reacts” to the dropdown:
+[Effects “react” to reactive values.](react/learn/lifecycle-of-reactive-effects/index.md#effects-react-to-reactive-values) Since `roomId` is a reactive value (it can change due to a re-render), the linter verifies that you’ve specified it as a dependency. If `roomId` receives a different value, React will re-synchronize your Effect. This ensures that the chat stays connected to the selected room and “reacts” to the dropdown:
 
 ### To remove a dependency, prove that it’s not a dependency[](#to-remove-a-dependency-prove-that-its-not-a-dependency "Link for To remove a dependency, prove that it’s not a dependency ")
 
@@ -46,7 +49,7 @@ Notice that you can’t “choose” the dependencies of your Effect. Every reac
 const serverUrl = 'https://localhost:1234';function ChatRoom({ roomId }) { // This is a reactive valueuseEffect(() => {const connection = createConnection(serverUrl, roomId); // This Effect reads that reactive valueconnection.connect();return () => connection.disconnect();}, [roomId]); // ✅ So you must specify that reactive value as a dependency of your Effect// ...}
 ```
 
-[Reactive values](https://react.dev/learn/lifecycle-of-reactive-effects#all-variables-declared-in-the-component-body-are-reactive) include props and all variables and functions declared directly inside of your component. Since `roomId` is a reactive value, you can’t remove it from the dependency list. The linter wouldn’t allow it:
+[Reactive values](react/learn/lifecycle-of-reactive-effects/index.md#all-variables-declared-in-the-component-body-are-reactive) include props and all variables and functions declared directly inside of your component. Since `roomId` is a reactive value, you can’t remove it from the dependency list. The linter wouldn’t allow it:
 
 ```
 const serverUrl = 'https://localhost:1234';function ChatRoom({ roomId }) {useEffect(() => {const connection = createConnection(serverUrl, roomId);connection.connect();return () => connection.disconnect();}, []); // 🔴 React Hook useEffect has a missing dependency: 'roomId'// ...}
@@ -72,7 +75,7 @@ You might have noticed a pattern in your workflow:
 2.  Then, you follow the linter and adjust the dependencies to **match the code you have changed.**
 3.  If you’re not happy with the list of dependencies, you **go back to the first step** (and change the code again).
 
-The last part is important. **If you want to change the dependencies, change the surrounding code first.** You can think of the dependency list as [a list of all the reactive values used by your Effect’s code.](https://react.dev/learn/lifecycle-of-reactive-effects#react-verifies-that-you-specified-every-reactive-value-as-a-dependency) You don’t _choose_ what to put on that list. The list _describes_ your code. To change the dependency list, change the code.
+The last part is important. **If you want to change the dependencies, change the surrounding code first.** You can think of the dependency list as [a list of all the reactive values used by your Effect’s code.](react/learn/lifecycle-of-reactive-effects/index.md#react-verifies-that-you-specified-every-reactive-value-as-a-dependency) You don’t _choose_ what to put on that list. The list _describes_ your code. To change the dependency list, change the code.
 
 This might feel like solving an equation. You might start with a goal (for example, to remove a dependency), and you need to “find” the code matching that goal. Not everyone finds solving equations fun, and the same thing could be said about writing Effects! Luckily, there is a list of common recipes that you can try below.
 
@@ -133,9 +136,9 @@ export default function Timer() {
 
 Let’s say that you wanted to run the Effect “only on mount”. You’ve read that [empty (`[]`) dependencies](https://react.dev/learn/lifecycle-of-reactive-effects#what-an-effect-with-empty-dependencies-means) do that, so you’ve decided to ignore the linter, and forcefully specified `[]` as the dependencies.
 
-This counter was supposed to increment every second by the amount configurable with the two buttons. However, since you “lied” to React that this Effect doesn’t depend on anything, React forever keeps using the `onTick` function from the initial render. [During that render,](https://react.dev/learn/state-as-a-snapshot#rendering-takes-a-snapshot-in-time) `count` was `0` and `increment` was `1`. This is why `onTick` from that render always calls `setCount(0 + 1)` every second, and you always see `1`. Bugs like this are harder to fix when they’re spread across multiple components.
+This counter was supposed to increment every second by the amount configurable with the two buttons. However, since you “lied” to React that this Effect doesn’t depend on anything, React forever keeps using the `onTick` function from the initial render. [During that render,](react/learn/state-as-a-snapshot/index.md#rendering-takes-a-snapshot-in-time) `count` was `0` and `increment` was `1`. This is why `onTick` from that render always calls `setCount(0 + 1)` every second, and you always see `1`. Bugs like this are harder to fix when they’re spread across multiple components.
 
-There’s always a better solution than ignoring the linter! To fix this code, you need to add `onTick` to the dependency list. (To ensure the interval is only setup once, [make `onTick` an Effect Event.](https://react.dev/learn/separating-events-from-effects#reading-latest-props-and-state-with-effect-events))
+There’s always a better solution than ignoring the linter! To fix this code, you need to add `onTick` to the dependency list. (To ensure the interval is only setup once, [make `onTick` an Effect Event.](react/learn/separating-events-from-effects/index.md#reading-latest-props-and-state-with-effect-events))
 
 **We recommend treating the dependency lint error as a compilation error. If you don’t suppress it, you will never see bugs like this.** The rest of this page documents the alternatives for this and other cases.
 
@@ -173,7 +176,7 @@ By doing this, you’ve introduced a bug. Imagine you submit the form first and 
 function Form() {const theme = useContext(ThemeContext);function handleSubmit() {// ✅ Good: Event-specific logic is called from event handlerspost('/api/register');showNotification('Successfully registered!', theme);}// ...}
 ```
 
-Now that the code is in an event handler, it’s not reactive—so it will only run when the user submits the form. Read more about [choosing between event handlers and Effects](https://react.dev/learn/separating-events-from-effects#reactive-values-and-reactive-logic) and [how to delete unnecessary Effects.](https://react.dev/learn/you-might-not-need-an-effect)
+Now that the code is in an event handler, it’s not reactive—so it will only run when the user submits the form. Read more about [choosing between event handlers and Effects](react/learn/separating-events-from-effects/index.md#reactive-values-and-reactive-logic) and [how to delete unnecessary Effects.](react/learn/you-might-not-need-an-effect/index.md)
 
 The next question you should ask yourself is whether your Effect is doing several unrelated things.
 
@@ -183,7 +186,7 @@ Imagine you’re creating a shipping form where the user needs to choose their c
 function ShippingForm({ country }) {const [cities, setCities] = useState(null);const [city, setCity] = useState(null);useEffect(() => {let ignore = false;fetch(`/api/cities?country=${country}`)      .then(response => response.json())      .then(json => {if (!ignore) {setCities(json);}});return () => {ignore = true;};}, [country]); // ✅ All dependencies declared// ...
 ```
 
-This is a good example of [fetching data in an Effect.](https://react.dev/learn/you-might-not-need-an-effect#fetching-data) You are synchronizing the `cities` state with the network according to the `country` prop. You can’t do this in an event handler because you need to fetch as soon as `ShippingForm` is displayed and whenever the `country` changes (no matter which interaction causes it).
+This is a good example of [fetching data in an Effect.](react/learn/you-might-not-need-an-effect/index.md#fetching-data) You are synchronizing the `cities` state with the network according to the `country` prop. You can’t do this in an event handler because you need to fetch as soon as `ShippingForm` is displayed and whenever the `country` changes (no matter which interaction causes it).
 
 Now let’s say you’re adding a second select box for city areas, which should fetch the `areas` for the currently selected `city`. You might start by adding a second `fetch` call for the list of areas inside the same Effect:
 
@@ -206,7 +209,7 @@ function ShippingForm({ country }) {const [cities, setCities] = useState(null);u
 
 Now the first Effect only re-runs if the `country` changes, while the second Effect re-runs when the `city` changes. You’ve separated them by purpose: two different things are synchronized by two separate Effects. Two separate Effects have two separate dependency lists, so they won’t trigger each other unintentionally.
 
-The final code is longer than the original, but splitting these Effects is still correct. [Each Effect should represent an independent synchronization process.](https://react.dev/learn/lifecycle-of-reactive-effects#each-effect-represents-a-separate-synchronization-process) In this example, deleting one Effect doesn’t break the other Effect’s logic. This means they _synchronize different things,_ and it’s good to split them up. If you’re concerned about duplication, you can improve this code by [extracting repetitive logic into a custom Hook.](https://react.dev/learn/reusing-logic-with-custom-hooks#when-to-use-custom-hooks)
+The final code is longer than the original, but splitting these Effects is still correct. [Each Effect should represent an independent synchronization process.](react/learn/lifecycle-of-reactive-effects/index.md#each-effect-represents-a-separate-synchronization-process) In this example, deleting one Effect doesn’t break the other Effect’s logic. This means they _synchronize different things,_ and it’s good to split them up. If you’re concerned about duplication, you can improve this code by [extracting repetitive logic into a custom Hook.](react/learn/reusing-logic-with-custom-hooks/index.md#when-to-use-custom-hooks)
 
 ### Are you reading some state to calculate the next state?[](#are-you-reading-some-state-to-calculate-the-next-state "Link for Are you reading some state to calculate the next state? ")
 
@@ -216,7 +219,7 @@ This Effect updates the `messages` state variable with a newly created array eve
 function ChatRoom({ roomId }) {const [messages, setMessages] = useState([]);useEffect(() => {const connection = createConnection();connection.connect();connection.on('message', (receivedMessage) => {setMessages([...messages, receivedMessage]);});// ...
 ```
 
-It uses the `messages` variable to [create a new array](https://react.dev/learn/updating-arrays-in-state) starting with all the existing messages and adds the new message at the end. However, since `messages` is a reactive value read by an Effect, it must be a dependency:
+It uses the `messages` variable to [create a new array](react/learn/updating-arrays-in-state/index.md) starting with all the existing messages and adds the new message at the end. However, since `messages` is a reactive value read by an Effect, it must be a dependency:
 
 ```
 function ChatRoom({ roomId }) {const [messages, setMessages] = useState([]);useEffect(() => {const connection = createConnection();connection.connect();connection.on('message', (receivedMessage) => {setMessages([...messages, receivedMessage]);});return () => connection.disconnect();}, [roomId, messages]); // ✅ All dependencies declared// ...
@@ -232,7 +235,7 @@ To fix the issue, don’t read `messages` inside the Effect. Instead, pass an [u
 function ChatRoom({ roomId }) {const [messages, setMessages] = useState([]);useEffect(() => {const connection = createConnection();connection.connect();connection.on('message', (receivedMessage) => {setMessages(msgs => [...msgs, receivedMessage]);});return () => connection.disconnect();}, [roomId]); // ✅ All dependencies declared// ...
 ```
 
-**Notice how your Effect does not read the `messages` variable at all now.** You only need to pass an updater function like `msgs => [...msgs, receivedMessage]`. React [puts your updater function in a queue](https://react.dev/learn/queueing-a-series-of-state-updates) and will provide the `msgs` argument to it during the next render. This is why the Effect itself doesn’t need to depend on `messages` anymore. As a result of this fix, receiving a chat message will no longer make the chat re-connect.
+**Notice how your Effect does not read the `messages` variable at all now.** You only need to pass an updater function like `msgs => [...msgs, receivedMessage]`. React [puts your updater function in a queue](react/learn/queueing-a-series-of-state-updates/index.md) and will provide the `msgs` argument to it during the next render. This is why the Effect itself doesn’t need to depend on `messages` anymore. As a result of this fix, receiving a chat message will no longer make the chat re-connect.
 
 ### Do you want to read a value without “reacting” to its changes?[](#do-you-want-to-read-a-value-without-reacting-to-its-changes "Link for Do you want to read a value without “reacting” to its changes? ")
 
@@ -250,7 +253,7 @@ function ChatRoom({ roomId }) {const [messages, setMessages] = useState([]);cons
 
 The problem is that every time `isMuted` changes (for example, when the user presses the “Muted” toggle), the Effect will re-synchronize, and reconnect to the chat. This is not the desired user experience! (In this example, even disabling the linter would not work—if you do that, `isMuted` would get “stuck” with its old value.)
 
-To solve this problem, you need to extract the logic that shouldn’t be reactive out of the Effect. You don’t want this Effect to “react” to the changes in `isMuted`. [Move this non-reactive piece of logic into an Effect Event:](https://react.dev/learn/separating-events-from-effects#declaring-an-effect-event)
+To solve this problem, you need to extract the logic that shouldn’t be reactive out of the Effect. You don’t want this Effect to “react” to the changes in `isMuted`. [Move this non-reactive piece of logic into an Effect Event:](react/learn/separating-events-from-effects/index.md#declaring-an-effect-event)
 
 ```
 import { useState, useEffect, useEffectEvent } from 'react';function ChatRoom({ roomId }) {const [messages, setMessages] = useState([]);const [isMuted, setIsMuted] = useState(false);const onMessage = useEffectEvent(receivedMessage => {setMessages(msgs => [...msgs, receivedMessage]);if (!isMuted) {playSound();}});useEffect(() => {const connection = createConnection();connection.connect();connection.on('message', (receivedMessage) => {onMessage(receivedMessage);});return () => connection.disconnect();}, [roomId]); // ✅ All dependencies declared// ...
@@ -290,7 +293,7 @@ The solution is again to split out the non-reactive code into an Effect Event:
 function Chat({ roomId, notificationCount }) {const onVisit = useEffectEvent(visitedRoomId => {logVisit(visitedRoomId, notificationCount);});useEffect(() => {onVisit(roomId);}, [roomId]); // ✅ All dependencies declared// ...}
 ```
 
-You want your logic to be reactive with regards to `roomId`, so you read `roomId` inside of your Effect. However, you don’t want a change to `notificationCount` to log an extra visit, so you read `notificationCount` inside of the Effect Event. [Learn more about reading the latest props and state from Effects using Effect Events.](https://react.dev/learn/separating-events-from-effects#reading-latest-props-and-state-with-effect-events)
+You want your logic to be reactive with regards to `roomId`, so you read `roomId` inside of your Effect. However, you don’t want a change to `notificationCount` to log an extra visit, so you read `notificationCount` inside of the Effect Event. [Learn more about reading the latest props and state from Effects using Effect Events.](react/learn/separating-events-from-effects/index.md#reading-latest-props-and-state-with-effect-events)
 
 ### Does some reactive value change unintentionally?[](#does-some-reactive-value-change-unintentionally "Link for Does some reactive value change unintentionally? ")
 
@@ -300,7 +303,7 @@ Sometimes, you _do_ want your Effect to “react” to a certain value, but that
 function ChatRoom({ roomId }) {// ...const options = {serverUrl: serverUrl,roomId: roomId};useEffect(() => {const connection = createConnection(options);connection.connect();// ...
 ```
 
-This object is declared in the component body, so it’s a [reactive value.](https://react.dev/learn/lifecycle-of-reactive-effects#effects-react-to-reactive-values) When you read a reactive value like this inside an Effect, you declare it as a dependency. This ensures your Effect “reacts” to its changes:
+This object is declared in the component body, so it’s a [reactive value.](react/learn/lifecycle-of-reactive-effects/index.md#effects-react-to-reactive-values) When you read a reactive value like this inside an Effect, you declare it as a dependency. This ensures your Effect “reacts” to its changes:
 
 ```
 // ...useEffect(() => {const connection = createConnection(options);connection.connect();return () => connection.disconnect();}, [options]); // ✅ All dependencies declared// ...
@@ -402,7 +405,7 @@ To avoid making it a dependency (and causing it to re-connect on re-renders), ca
 function ChatRoom({ getOptions }) {const [message, setMessage] = useState('');const { roomId, serverUrl } = getOptions();useEffect(() => {const connection = createConnection({roomId: roomId,serverUrl: serverUrl});connection.connect();return () => connection.disconnect();}, [roomId, serverUrl]); // ✅ All dependencies declared// ...
 ```
 
-This only works for [pure](https://react.dev/learn/keeping-components-pure) functions because they are safe to call during rendering. If your function is an event handler, but you don’t want its changes to re-synchronize your Effect, [wrap it into an Effect Event instead.](#do-you-want-to-read-a-value-without-reacting-to-its-changes)
+This only works for [pure](react/learn/keeping-components-pure/index.md) functions because they are safe to call during rendering. If your function is an event handler, but you don’t want its changes to re-synchronize your Effect, [wrap it into an Effect Event instead.](#do-you-want-to-read-a-value-without-reacting-to-its-changes)
 
 ## Recap[](#recap "Link for Recap")
 
@@ -416,3 +419,4 @@ This only works for [pure](https://react.dev/learn/keeping-components-pure) func
 *   If you want to read the latest value without “reacting” it, extract an Effect Event from your Effect.
 *   In JavaScript, objects and functions are considered different if they were created at different times.
 *   Try to avoid object and function dependencies. Move them outside the component or inside the Effect.
+

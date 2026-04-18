@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:36:19.433Z"
 content_hash: "3bce783f7485e2dafcebd590c52d98c15a1ebed7c793eefb2a6c6d3a6a359974"
 menu_path: ["fs/promises - Node documentation"]
 section_path: []
+nav_prev: {"path": "deno/deno/api/node/fs/index.md", "title": "fs - Node documentation"}
+nav_next: {"path": "deno/deno/api/node/http/index.md", "title": "http - Node documentation"}
 ---
+
 ### Usage in Deno
 
 ```typescript
@@ -316,3 +319,4 @@ v
 [constants](../.././fs/promises/~/constants "constants")
 
 No documentation available
+

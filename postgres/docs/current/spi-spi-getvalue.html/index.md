@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:52:37.946Z"
 content_hash: "dbe8cb32b389c249d4dca9ed4af7cdc3fa94127f6a870221f82a19d6108c3ee1"
 menu_path: ["PostgreSQL: Documentation: 18: SPI_getvalue"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/infoschema-schemata.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.46.\u00a0schemata"}
+nav_next: {"path": "postgres/docs/current/sql-expressions.html/index.md", "title": "PostgreSQL: Documentation: 18: 4.2.\u00a0Value Expressions"}
 ---
+
 SPI\_getvalue — return the string value of the specified column
 
 ## Synopsis
@@ -39,3 +42,4 @@ column number (count starts at 1)
 ## Return Value
 
 Column value, or `NULL` if the column is null, _`colnumber`_ is out of range (`SPI_result` is set to `SPI_ERROR_NOATTRIBUTE`), or no output function is available (`SPI_result` is set to `SPI_ERROR_NOOUTFUNC`).
+

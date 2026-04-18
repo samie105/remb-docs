@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:57:06.840Z"
 content_hash: "de24ff36aae6fbd4e5b94360979eb7212a63591f7dbfccfdabfa3e67eae989cb"
 menu_path: ["Catalogs"]
 section_path: []
+nav_prev: {"path": "bun/bun/docs/pm/bunx/index.md", "title": "bunx"}
+nav_next: {"path": "bun/bun/docs/pm/cli/audit/index.md", "title": "bun audit"}
 ---
+
 Catalogs in Bun let you share common dependency versions across multiple packages in a monorepo. Rather than specifying the same versions repeatedly in each workspace package, you define them once in the root package.json and reference them consistently throughout your project.
 
 ## Overview
@@ -319,3 +322,4 @@ Bun’s catalog system maintains consistency across your monorepo without introd
 ## Publishing
 
 When you run `bun publish` or `bun pm pack`, Bun automatically replaces `catalog:` references in your `package.json` with the resolved version numbers. The published package includes regular semver strings and no longer depends on your catalog definitions.
+

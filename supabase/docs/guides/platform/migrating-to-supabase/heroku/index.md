@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:00:30.787Z"
 content_hash: "260df176a4e80e742ac3676e892d9ade8825b53bb77caac7d1d47fba84018af7"
 menu_path: ["Platform","Platform","More","More","More","Migrating to Supabase","Migrating to Supabase","Heroku","Heroku"]
 section_path: ["Platform","Platform","More","More","More","Migrating to Supabase","Migrating to Supabase","Heroku","Heroku"]
+nav_prev: {"path": "supabase/docs/guides/platform/migrating-to-supabase/firestore-data/index.md", "title": "Migrate from Firebase Firestore to Supabase"}
+nav_next: {"path": "supabase/docs/guides/platform/migrating-to-supabase/mssql/index.md", "title": "Migrate from MSSQL to Supabase"}
 ---
+
 # 
 
 Migrate from Heroku to Supabase
@@ -76,3 +79,4 @@ Run `pg_dump --help` for a full list of options.
 ## Enterprise[#](#enterprise)
 
 [Contact us](https://forms.supabase.com/enterprise) if you need more help migrating your project.
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:35:32.382Z"
 content_hash: "654c8bb551ff9267cc238e2c371e2ca70bafcabf88b89c5cfe0fe8dff38d8791"
 menu_path: ["PostgreSQL: Documentation: 18: 41.4. Expressions"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/logfile-maintenance.html/index.md", "title": "PostgreSQL: Documentation: 18: 24.3.\u00a0Log File Maintenance"}
+nav_next: {"path": "postgres/docs/current/runtime-config-replication.html/index.md", "title": "PostgreSQL: Documentation: 18: 19.6.\u00a0Replication"}
 ---
+
 All expressions used in PL/pgSQL statements are processed using the server's main SQL executor. For example, when you write a PL/pgSQL statement like
 
 IF _`expression`_ THEN ...
@@ -33,3 +36,4 @@ Since an _`expression`_ is converted to a `SELECT` command, it can contain the s
 IF count(\*) > 0 FROM my\_table THEN ...
 
 since the _`expression`_ between `IF` and `THEN` is parsed as though it were `SELECT count(*) > 0 FROM my_table`. The `SELECT` must produce a single column, and not more than one row. (If it produces no rows, the result is taken as NULL.)
+

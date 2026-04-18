@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:40:33.795Z"
 content_hash: "478d02bf80824e5a8b804f8316fb2de00f3e59ccd19888d75d75ed3465f1651b"
 menu_path: ["Migrate an existing project to Astro"]
 section_path: []
+nav_prev: {"path": "astro/en/guides/troubleshooting/index.md", "title": "Troubleshooting"}
+nav_next: {"path": "astro/en/guides/migrate-to-astro/from-create-react-app/index.md", "title": "Migrating from Create React App (CRA)"}
 ---
+
 # Migrate an existing project to Astro
 
 **Ready to convert your site to Astro?** See one of our guides for migration tips.
@@ -118,3 +121,4 @@ Depending on your existing project, you may need to think differently about:
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

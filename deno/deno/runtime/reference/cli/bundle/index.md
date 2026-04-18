@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:51:22.458Z"
 content_hash: "86feba1d3b086237403c6681f66e12c3ba1e014f4e287ede3f8696743755e7e2"
 menu_path: ["deno bundle"]
 section_path: []
+nav_prev: {"path": "deno/deno/runtime/reference/cli/bench/index.md", "title": "deno bench"}
+nav_next: {"path": "deno/deno/runtime/reference/cli/check/index.md", "title": "deno check"}
 ---
+
 On this page
 
 *   [Basic usage](#basic-usage)
@@ -180,3 +183,4 @@ Generate source map. Accepted values are 'linked', 'inline', or 'external'.
 `--watch`
 
 Watch and rebuild on changes.
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:06:03.897Z"
 content_hash: "12207e630200592244031992ad315ac8bb7e136d5e6245e75e700ca58b767d39"
 menu_path: ["Drizzle ORM - PostgreSQL full-text search"]
 section_path: []
+nav_prev: {"path": "drizzle/docs/guides/postgis-geometry-point/index.md", "title": "Drizzle ORM - PostGIS geometry point"}
+nav_next: {"path": "drizzle/docs/guides/postgresql-local-setup/index.md", "title": "Drizzle ORM - How to setup PostgreSQL locally"}
 ---
+
 Drizzle | PostgreSQL full-text search
 
 This guide demonstrates how to implement full-text search in PostgreSQL with Drizzle ORM. Full-text search is a technique used to search for text within a document or a set of documents. A document is the unit of searching in a full text search system. PostgreSQL provides a set of functions to work with full-text search, such as `to_tsvector` and `to_tsquery`:
@@ -311,7 +314,7 @@ To rank the search results, you can use the `ts_rank` or `ts_rank_cd` functions 
 
 IMPORTANT
 
-`getColumns` available starting from `drizzle-orm@1.0.0-beta.2`(read more [here](https://orm.drizzle.team/docs/upgrade-v1))
+`getColumns` available starting from `drizzle-orm@1.0.0-beta.2`(read more [here](drizzle/docs/upgrade-v1/index.md))
 
 If you are on pre-1 version(like `0.45.1`) then use `getTableColumns`
 
@@ -374,3 +377,4 @@ await db
 ```
 
 The `ts_rank` function focuses on the frequency of query terms throughout the document. The `ts_rank_cd` function focuses on the proximity of query terms within the document.
+

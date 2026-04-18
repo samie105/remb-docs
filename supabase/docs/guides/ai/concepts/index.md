@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:33:02.043Z"
 content_hash: "dffe74633d87f8fcc08502331802d6fca11a517edd85f29ad3e9e60d9f0868aa"
 menu_path: ["AI & Vectors","AI & Vectors","Concepts","Concepts"]
 section_path: ["AI & Vectors","AI & Vectors","Concepts","Concepts"]
+nav_prev: {"path": "supabase/docs/guides/telemetry/index.md", "title": "Telemetry"}
+nav_next: {"path": "supabase/docs/guides/ai/choosing-compute-addon/index.md", "title": "Choosing your Compute Add-on"}
 ---
+
 # 
 
 Concepts
@@ -70,3 +73,4 @@ Why is this useful? Once we have generated embeddings on multiple texts, it is t
 ## See also[#](#see-also)
 
 *   [Structured and Unstructured embeddings](/docs/guides/ai/structured-unstructured)
+

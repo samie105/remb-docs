@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:32:33.930Z"
 content_hash: "18c828d605656ea98cf3406660cac08a66faf5b4bb3093df8e14f378b1a5d528"
 menu_path: ["Realtime","Realtime","Overview","Overview"]
 section_path: ["Realtime","Realtime","Overview","Overview"]
+nav_prev: {"path": "supabase/docs/guides/local-development/index.md", "title": "Local Development & CLI"}
+nav_next: {"path": "supabase/docs/guides/queues/index.md", "title": "Supabase Queues"}
 ---
+
 # 
 
 Realtime
@@ -89,3 +92,4 @@ Realtime: Multiplayer Edition
 Read more about Supabase Realtime.
 
 ](https://supabase.com/blog/supabase-realtime-multiplayer-general-availability)
+

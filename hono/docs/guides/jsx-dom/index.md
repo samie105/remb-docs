@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:43:34.453Z"
 content_hash: "a63b9b03534473dfd5c57b2f7332101ad408de75b2d87406c39a4d8d87fe6375"
 menu_path: ["Client Components ​"]
 section_path: []
+nav_prev: {"path": "hono/docs/guides/jsx/index.md", "title": "JSX \u200b"}
+nav_next: {"path": "hono/docs/guides/testing/index.md", "title": "Testing \u200b"}
 ---
+
 `hono/jsx` supports not only server side but also client side. This means that it is possible to create an interactive UI that runs in the browser. We call it Client Components or `hono/jsx/dom`.
 
 It is fast and very small. The counter program in `hono/jsx/dom` is only 2.8KB with Brotli compression, but 47.8KB for React.
@@ -318,3 +321,4 @@ export default defineConfig({
   },
 })
 ```
+

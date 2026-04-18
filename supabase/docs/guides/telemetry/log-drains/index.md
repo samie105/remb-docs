@@ -9,16 +9,9 @@ last_crawled_at: "2026-04-18T16:51:06.814Z"
 content_hash: "efd145eb9d895227bfd0b8b7480a975f9a77174ed5a96cfb4fcbd15b72db61bb"
 menu_path: ["Telemetry","Telemetry","Logging & observability","Logging & observability","Log drains","Log drains"]
 section_path: ["Telemetry","Telemetry","Logging & observability","Logging & observability","Log drains","Log drains"]
+nav_prev: {"path": "supabase/docs/guides/storage/quickstart/index.md", "title": "Storage Quickstart"}
+nav_next: {"path": "supabase/docs/guides/telemetry/advanced-log-filtering/index.md", "title": "Advanced Log Filtering"}
 ---
-# 
-
-Log Drains
-
-* * *
-
-Log drains send all logs of the Supabase stack to one or more desired destinations. It is only available for customers on Pro, Team and Enterprise Plans. Log drains are available in the dashboard under [Project Settings > Log Drains](/dashboard/project/_/settings/log-drains).
-
-You can read about the initial announcement [here](/blog/log-drains) and vote for your preferred drains in [this discussion](https://github.com/orgs/supabase/discussions/28324?sort=top).
 
 # Supported destinations
 
@@ -179,3 +172,4 @@ Ensure your OTLP endpoint is configured to accept logs at the `/v1/logs` path wi
 ## Pricing[#](#pricing)
 
 For a detailed breakdown of how charges are calculated, refer to [Manage Log Drain usage](/docs/guides/platform/manage-your-usage/log-drains).
+

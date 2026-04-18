@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:59:04.737Z"
 content_hash: "6b94d65803cf4ec165d6b6b9483be86b0be6fe27f25eee81c77e4a68cebf05bb"
 menu_path: ["Start with Supabase","Start with Supabase","Mobile tutorials","Mobile tutorials","Android Kotlin","Android Kotlin"]
 section_path: ["Start with Supabase","Start with Supabase","Mobile tutorials","Mobile tutorials","Android Kotlin","Android Kotlin"]
+nav_prev: {"path": "supabase/docs/guides/getting-started/tutorials/with-nextjs/index.md", "title": "Build a User Management App with Next.js"}
+nav_next: {"path": "supabase/docs/guides/getting-started/tutorials/with-nuxt-3/index.md", "title": "Build a User Management App with Nuxt 3"}
 ---
+
 # 
 
 Build a Product Management Android App with Jetpack Compose
@@ -285,3 +288,4 @@ Then create the `DeepLinkHandlerActivity`:
 ```
 1@AndroidEntryPoint2class DeepLinkHandlerActivity : ComponentActivity() {34    @Inject5    lateinit var supabaseClient: SupabaseClient67    private lateinit var callback: (String, String) -> Unit89    override fun onCreate(savedInstanceState: Bundle?) {10        super.onCreate(savedInstanceState)11        supabaseClient.handleDeeplinks(intent = intent,12            onSessionSuccess = { userSession ->13                Log.d("LOGIN", "Log in successfully with user info: ${userSession.user}")14                userSession.user?.apply {15                    callback(email ?: "", createdAt.toString())16                }17            })18        setContent {19            val navController = rememberNavController()20            val emailState = remember { mutableStateOf("") }21            val createdAtState = remember { mutableStateOf("") }22            LaunchedEffect(Unit) {23                callback = { email, created ->24                    emailState.value = email25                    createdAtState.value = created26                }27            }28            ManageProductsTheme {29                Surface(30                    modifier = Modifier.fillMaxSize(),31                    color = MaterialTheme.colorScheme.background32                ) {33                    SignInSuccessScreen(34                        modifier = Modifier.padding(20.dp),35                        navController = navController,36                        email = emailState.value,37                        createdAt = createdAtState.value,38                        onClick = { navigateToMainApp() }39                    )40                }41            }42        }43    }4445    private fun navigateToMainApp() {46        val intent = Intent(this, MainActivity::class.java).apply {47            flags = Intent.FLAG_ACTIVITY_CLEAR_TOP48        }49        startActivity(intent)50    }51}
 ```
+

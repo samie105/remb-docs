@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:41:44.580Z"
 content_hash: "2bea168d9d2889db5a30043b70aa61f7ba66f8342f84b338823ac3cc2203f6a4"
 menu_path: ["SQLite"]
 section_path: []
+nav_prev: {"path": "prisma/docs/orm/core-concepts/supported-databases/sql-server/index.md", "title": "SQL Server"}
+nav_next: {"path": "prisma/docs/orm/more/comparisons/prisma-and-drizzle/index.md", "title": "Drizzle"}
 ---
+
 Supported databases
 
 Use Prisma ORM with SQLite databases including local SQLite, Turso (libSQL), and Cloudflare D1
@@ -37,7 +40,7 @@ export default defineConfig({
 });
 ```
 
-Instead of Prisma's built-in driver, you can use JavaScript database drivers via [driver adapters](https://www.prisma.io/docs/orm/core-concepts/supported-databases/database-drivers#driver-adapters):
+Instead of Prisma's built-in driver, you can use JavaScript database drivers via [driver adapters](prisma/docs/orm/core-concepts/supported-databases/database-drivers/index.md#driver-adapters):
 
 **Local SQLite with `better-sqlite3`:**
 
@@ -176,3 +179,4 @@ SQLite doesn't enforce enum values at the database level. Invalid values will ca
 Prisma ORM validates that numbers fit within integer boundaries. If a value exceeds limits, you'll get a P2023 error.
 
 [Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/core-concepts/supported-databases/sqlite.mdx)
+

@@ -9,26 +9,9 @@ last_crawled_at: "2026-04-18T16:56:53.617Z"
 content_hash: "bfd405b89af8df7914d52ec2e4aa6179c2fda7107c8dfc3d2a33fec1eb40db90"
 menu_path: ["Database","Database","More","More","More","Prisma","Prisma","Prisma troubleshooting","Prisma troubleshooting"]
 section_path: ["Database","Database","More","More","More","Prisma","Prisma","Prisma troubleshooting","Prisma troubleshooting"]
+nav_prev: {"path": "supabase/docs/guides/database/replication/manual-replication-faq/index.md", "title": "Manual Replication FAQ"}
+nav_next: {"path": "supabase/docs/guides/database/replication/manual-replication-monitoring/index.md", "title": "Manual Replication Monitoring"}
 ---
-# 
-
-Troubleshooting prisma errors
-
-* * *
-
-This guide addresses common Prisma errors that you might encounter while using Supabase.
-
-A full list of errors can be found in [Prisma's official docs](https://www.prisma.io/docs/orm/reference/error-reference).
-
-## Understanding connection string parameters: [#](#start)
-
-Unlike other libraries, Prisma lets you configure [its settings](https://www.prisma.io/docs/orm/overview/databases/postgresql#arguments) through special options appended to your connection string.
-
-These options, called "query parameters," can be used to address specific errors.
-
-```
-1# Example of query parameters23connection_string.../postgres?KEY1=VALUE&KEY2=VALUE&KEY3=VALUE
-```
 
 # Errors
 
@@ -176,3 +159,4 @@ Show/Hide Details
 ```
 1-- Trigger to run 'handle_new_user' function after a new user is inserted into 'auth.users' table2create trigger on_auth_user_created3  after insert on auth.users4  for each row execute procedure public.handle_new_user();56-- Trigger to run 'update_user' function after a user is updated in the 'auth.users' table7create trigger on_auth_user_updated8  after update on auth.users9  for each row execute procedure public.update_user();1011-- Trigger to run 'delete_user' function after a user is deleted from the 'auth.users' table12create trigger on_auth_user_deleted13  after delete on auth.users14  for each row execute procedure public.delete_user();
 ```
+

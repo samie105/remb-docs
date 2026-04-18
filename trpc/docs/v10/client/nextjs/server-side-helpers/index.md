@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:32:55.141Z"
 content_hash: "50e930cc469a79376434dbca193e073c06779e3a578e01665ccc074b14db5a20"
 menu_path: ["Server-Side Helpers"]
 section_path: []
+nav_prev: {"path": "trpc/docs/v10/client/nextjs/aborting-procedure-calls/index.md", "title": "Aborting Procedure Calls"}
+nav_next: {"path": "trpc/docs/v10/client/nextjs/setup/index.md", "title": "Set up with Next.js"}
 ---
+
 The server-side helpers provides you with a set of helper functions that you can use to prefetch queries on the server. This is useful for SSG, but also for SSR if you opt not to use `ssr: true`.
 
 Prefetching via the server-side helpers allows populating the query cache on the server, which means that these queries do not have to fetch on the client initially.
@@ -20,7 +23,7 @@ Prefetching via the server-side helpers allows populating the query cache on the
 
 This method is used when you have direct access to your tRPC router. e.g. when developing a monolithic Next.js application.
 
-Using the helpers makes tRPC call your procedures directly on the server, without an HTTP request, similar to [server-side calls](https://trpc.io/docs/server/server-side-calls). That also means that you don't have the request and response at hand like you usually do. Make sure you're instantiating the server-side helpers with a context without `req` & `res`, which are typically filled via the context creation. We recommend the concept of ["inner" and "outer" context](https://trpc.io/docs/server/context) in that scenario.
+Using the helpers makes tRPC call your procedures directly on the server, without an HTTP request, similar to [server-side calls](trpc/docs/server/server-side-calls/index.md). That also means that you don't have the request and response at hand like you usually do. Make sure you're instantiating the server-side helpers with a context without `req` & `res`, which are typically filled via the context creation. We recommend the concept of ["inner" and "outer" context](trpc/docs/server/context/index.md) in that scenario.
 
 ts
 
@@ -197,3 +200,4 @@ tsx
   `);`
 
 `}`
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:40:47.598Z"
 content_hash: "5fb83186ab4f2877b472c073b6aab9e98aaa9ea6e489e8c91595c8ecc8b31a50"
 menu_path: ["Input & Output Validators"]
 section_path: []
+nav_prev: {"path": "trpc/docs/v10/subscriptions/index.md", "title": "Subscriptions / WebSockets"}
+nav_next: {"path": "trpc/docs/v10/videos-and-community-resources/index.md", "title": "Videos and Community Resources"}
 ---
+
 tRPC procedures may define validation logic for their input and/or output, and validators are also used to infer the types of inputs and outputs. We have first class support for many popular validators, and you can [integrate validators](#contributing-your-own-validator-library) which we don't directly support.
 
 ## Input Validators[​](#input-validators "Direct link to Input Validators")
@@ -66,7 +69,7 @@ ts
 
 ### Input Merging[​](#input-merging "Direct link to Input Merging")
 
-`.input()` can be stacked to build more complex types, which is particularly useful when you want to utilise some common input to a collection of procedures in a [middleware](https://trpc.io/docs/v10/server/middlewares).
+`.input()` can be stacked to build more complex types, which is particularly useful when you want to utilise some common input to a collection of procedures in a [middleware](trpc/docs/v10/server/middlewares/index.md).
 
 ts
 
@@ -627,3 +630,4 @@ Integration with tRPC in most cases is as simple as meeting one of several exist
 
 *   [Types for Inference](https://github.com/trpc/trpc/blob/main/packages/server/src/core/parser.ts)
 *   [Functions for parsing/validation](https://github.com/trpc/trpc/blob/main/packages/server/src/core/internals/getParseFn.ts)
+

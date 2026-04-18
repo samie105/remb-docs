@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:01:30.474Z"
 content_hash: "a1cd1c0988b829b2bc2a9d668c1e240fcbf24bfcf3991c1374f1ee9ced2cbea5"
 menu_path: ["Storage","Storage","More","More","More","Schema","Schema","Helper Functions","Helper Functions"]
 section_path: ["Storage","Storage","More","More","More","Schema","Schema","Helper Functions","Helper Functions"]
+nav_prev: {"path": "supabase/docs/guides/storage/schema/design/index.md", "title": "The Storage Schema"}
+nav_next: {"path": "supabase/docs/guides/storage/security/ownership/index.md", "title": "Ownership"}
 ---
+
 # 
 
 Storage Helper Functions
@@ -57,3 +60,4 @@ This example demonstrates how you would allow restrict uploads to only PNG files
 ```
 1create policy "Only allow PNG uploads"2on storage.objects3for insert4to authenticated5with check (6  bucket_id = 'cats' and storage.extension(name) = 'png'7);
 ```
+

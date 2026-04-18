@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:46:57.544Z"
 content_hash: "78fa8d5fd4c7877c8f726f3deae271f8483cd3b70017a1721c037bf3c9ce9452"
 menu_path: ["Bun Redis with Upstash"]
 section_path: []
+nav_prev: {"path": "bun/bun/docs/guides/ecosystem/systemd/index.md", "title": "Run Bun as a daemon with systemd"}
+nav_next: {"path": "bun/bun/docs/guides/ecosystem/vite/index.md", "title": "Build a frontend using Vite and Bun"}
 ---
+
 [Skip to main content](#content-area)
 
 [Bun home page![light logo](https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z_zHyy/logo/logo-with-wordmark-dark.svg?fit=max&auto=format&n=JUhaF6Mf68z_zHyy&q=85&s=3f55cd23822028e40658b192c927f3e4)![dark logo](https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z_zHyy/logo/logo-with-wordmark-light.svg?fit=max&auto=format&n=JUhaF6Mf68z_zHyy&q=85&s=8a0c5928d9dc3631f0d33e17c257e2ec)](/docs)
@@ -160,3 +163,4 @@ Next
 ](/docs/guides/http/server)
 
 ![Upstash Redis database page](https://mintcdn.com/bun-1dd33a4e/ONaGWxnTD93zNXCt/images/guides/upstash-1.png?w=840&fit=max&auto=format&n=ONaGWxnTD93zNXCt&q=85&s=e4b82c4ea36c2c04effd217639cd81f7)
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:31:46.206Z"
 content_hash: "8451a710c4da31484f362a5c8a1be4b14838dac2ffb5df7b8bccd42b546086f1"
 menu_path: ["Data REST API","Data REST API","Overview","Overview"]
 section_path: ["Data REST API","Data REST API","Overview","Overview"]
+nav_prev: {"path": "supabase/docs/guides/getting-started/index.md", "title": "Getting Started"}
+nav_next: {"path": "supabase/docs/guides/ai/index.md", "title": "AI & Vectors"}
 ---
+
 # 
 
 Data REST API
@@ -58,3 +61,4 @@ Reference:
 ## API URL and keys[#](#api-url-and-keys)
 
 You can find the API URL and Keys in the [Dashboard](/dashboard/project/_/settings/api-keys).
+

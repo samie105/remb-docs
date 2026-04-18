@@ -9,15 +9,9 @@ last_crawled_at: "2026-04-18T17:10:09.414Z"
 content_hash: "d5897d73fa0415b6830db45598fa8dffcea5e82ba33cd7133dfa5a3001e25aac"
 menu_path: ["backdrop-filter: opacity()"]
 section_path: []
+nav_prev: {"path": "tailwind/docs/backdrop-filter-invert/index.md", "title": "backdrop-filter: invert()"}
+nav_next: {"path": "tailwind/docs/backdrop-filter-saturate/index.md", "title": "backdrop-filter: saturate()"}
 ---
-[](/)
-
-[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
-
-1.  Filters
-2.  opacity
-
-Filters
 
 # backdrop-filter: opacity()
 
@@ -110,3 +104,4 @@ Make your ideas look awesome, without relying on a designer.
 ](https://www.refactoringui.com/?ref=sidebar)
 
 Copyright © 2026 Tailwind Labs Inc.·[Trademark Policy](/brand)
+

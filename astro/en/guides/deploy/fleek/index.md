@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:37:08.680Z"
 content_hash: "e224334a2fd11c3eb3e0fa23d4829276637305953db323a4000358a1596adf72"
 menu_path: ["Deploy your Astro Site to Fleek"]
 section_path: []
+nav_prev: {"path": "astro/en/guides/deploy/firebase/index.md", "title": "Deploy your Astro Site to Google\u2019s Firebase Hosting"}
+nav_next: {"path": "astro/en/guides/deploy/flyio/index.md", "title": "Deploy your Astro Site to Fly.io"}
 ---
+
 # Deploy your Astro Site to Fleek
 
 You can use [Fleek](http://fleek.xyz/) to deploy a static Astro site to their edge-optimized decentralized network.
@@ -220,3 +223,4 @@ You can deploy to Fleek through the website UI or using Fleek’s CLI (command l
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:35:52.052Z"
 content_hash: "732c929d896854cdebbc98f16f380f77c7c7996acf59803639aa5d663f0254b5"
 menu_path: ["Umbraco & Astro"]
 section_path: []
+nav_prev: {"path": "astro/en/guides/cms/tina-cms/index.md", "title": "Tina CMS & Astro"}
+nav_next: {"path": "astro/en/guides/cms/vault-cms/index.md", "title": "Vault CMS & Astro"}
 ---
+
 # Umbraco & Astro
 
 [Umbraco CMS](https://umbraco.com/) is an open-source ASP.NET Core CMS. By default, Umbraco uses Razor pages for its front-end, but can be used as a headless CMS.
@@ -377,3 +380,4 @@ This method is described in more detail in this [blog post showing how to config
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:43:24.185Z"
 content_hash: "81e47c03cbef7630a56aba5fa0b722c07cb49dd01c36e48a7d352f6ab2ab7496"
 menu_path: ["util/types - Node documentation"]
 section_path: []
+nav_prev: {"path": "deno/deno/api/node/util/index.md", "title": "util - Node documentation"}
+nav_next: {"path": "deno/deno/api/node/v8/index.md", "title": "v8 - Node documentation"}
 ---
+
 ### Usage in Deno
 
 ```typescript
@@ -269,3 +272,4 @@ f
 [isWeakSet](../.././util/types/~/isWeakSet "isWeakSet")
 
 Returns `true` if the value is a built-in [`WeakSet`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet) instance.
+

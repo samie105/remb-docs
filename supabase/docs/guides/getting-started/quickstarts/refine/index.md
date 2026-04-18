@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:58:28.196Z"
 content_hash: "27787c0884c591345bd0a47ddaaa1fd7b4943a496008abb6ba2e3cf3f7093d88"
 menu_path: ["Start with Supabase","Start with Supabase","Framework Quickstarts","Framework Quickstarts","Refine","Refine"]
 section_path: ["Start with Supabase","Start with Supabase","Framework Quickstarts","Framework Quickstarts","Refine","Refine"]
+nav_prev: {"path": "supabase/docs/guides/getting-started/quickstarts/ruby-on-rails/index.md", "title": "Use Supabase with Ruby on Rails"}
+nav_next: {"path": "supabase/docs/guides/getting-started/quickstarts/solidjs/index.md", "title": "Use Supabase with SolidJS"}
 ---
+
 # 
 
 Use Supabase with Refine
@@ -169,3 +172,4 @@ You should remove the `index` route for the Welcome page presented with the `<We
 Now you should be able to see the instruments pages along the `/instruments` routes. You may now edit and add new instruments using the Inferencer generated UI.
 
 The Inferencer auto-generated code gives you a good starting point on which to keep building your `list`, `create`, `show` and `edit` pages. They can be obtained by clicking the `Show the auto-generated code` buttons in their respective pages.
+

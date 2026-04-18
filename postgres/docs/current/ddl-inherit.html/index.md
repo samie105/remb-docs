@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:41:15.806Z"
 content_hash: "5aedafcf421e182c1511621abb526ec44ef256712f7d8282f548e7c04fb330ff"
 menu_path: ["PostgreSQL: Documentation: 18: 5.11. Inheritance"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/infoschema-foreign-tables.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.31.\u00a0foreign_tables"}
+nav_next: {"path": "postgres/docs/current/wal-async-commit.html/index.md", "title": "PostgreSQL: Documentation: 18: 28.4.\u00a0Asynchronous Commit"}
 ---
+
 PostgreSQL implements table inheritance, which can be a useful tool for database designers. (SQL:1999 and later define a type inheritance feature, which differs in many respects from the features described here.)
 
 Let's start with an example: suppose we are trying to build a data model for cities. Each state has many cities, but only one capital. We want to be able to quickly retrieve the capital city for any particular state. This can be done by creating two tables, one for state capitals and one for cities that are not capitals. However, what happens when we want to ask for data about a city, regardless of whether it is a capital or not? The inheritance feature can help to resolve this problem. We define the `capitals` table so that it inherits from `cities`:
@@ -132,3 +135,4 @@ A serious limitation of the inheritance feature is that indexes (including uniqu
     
 
 Some functionality not implemented for inheritance hierarchies is implemented for declarative partitioning. Considerable care is needed in deciding whether partitioning with legacy inheritance is useful for your application.
+

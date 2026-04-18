@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:33:24.218Z"
 content_hash: "66f82d41bab57260a1553b0fd43ee35c167dcdbc803c7b2b3a23b691ea33a9c2"
 menu_path: ["AI & Vectors","AI & Vectors","Learn","Learn","Engineering for scale","Engineering for scale"]
 section_path: ["AI & Vectors","AI & Vectors","Learn","Learn","Engineering for scale","Engineering for scale"]
+nav_prev: {"path": "supabase/docs/guides/ai/automatic-embeddings/index.md", "title": "Automatic embeddings"}
+nav_next: {"path": "supabase/docs/guides/ai/google-colab/index.md", "title": "Google Colab"}
 ---
+
 # 
 
 Engineering for Scale
@@ -96,3 +99,4 @@ This looks very similar to our View example above, and you can continue to use t
 This diagram provides an example architecture that allows you to access the collections either with our client libraries or using Vecs. You can add as many secondary databases as you need (in this example we only show one):
 
 ![multi database](/docs/img/ai/scaling/engineering-for-scale--multi-database--light.png)
+

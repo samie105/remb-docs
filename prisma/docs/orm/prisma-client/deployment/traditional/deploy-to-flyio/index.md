@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:54:24.343Z"
 content_hash: "1883eba565f11f1f1c4404751d85145790e07f587c3fc5d865289bd19d23b29d"
 menu_path: ["Deploy to Fly.io"]
 section_path: []
+nav_prev: {"path": "prisma/docs/orm/prisma-client/deployment/serverless/deploy-to-vercel/index.md", "title": "Deploy to Vercel"}
+nav_next: {"path": "prisma/docs/orm/prisma-client/deployment/traditional/deploy-to-heroku/index.md", "title": "Deploy to Heroku"}
 ---
+
 Deployment
 
 Traditional
@@ -48,9 +51,9 @@ The logic for the Express app is in two files:
 
 The Prisma components of this app are in three files:
 
-*   `prisma/schema.prisma`: The data model of this app. This example defines two models, `User` and `Post`. The format of this file follows the [Prisma schema](https://www.prisma.io/docs/orm/prisma-schema/overview).
-*   `prisma/migrations/<migration name>/migration.sql`: The SQL commands that construct this schema in a PostgreSQL database. You can auto-generate migration files like this one by running [`prisma migrate dev`](https://www.prisma.io/docs/orm/prisma-migrate/understanding-prisma-migrate/mental-model#what-is-prisma-migrate).
-*   `prisma/seed.js`: defines some test users and postsPrisma, used to [seed the database](https://www.prisma.io/docs/orm/prisma-migrate/workflows/seeding) with starter data.
+*   `prisma/schema.prisma`: The data model of this app. This example defines two models, `User` and `Post`. The format of this file follows the [Prisma schema](prisma/docs/orm/prisma-schema/overview/index.md).
+*   `prisma/migrations/<migration name>/migration.sql`: The SQL commands that construct this schema in a PostgreSQL database. You can auto-generate migration files like this one by running [`prisma migrate dev`](prisma/docs/orm/prisma-migrate/understanding-prisma-migrate/mental-model/index.md#what-is-prisma-migrate).
+*   `prisma/seed.js`: defines some test users and postsPrisma, used to [seed the database](prisma/docs/orm/prisma-migrate/workflows/seeding/index.md) with starter data.
 
 ### [1\. Run `fly launch` and accept the defaults](#1-run-fly-launch-and-accept-the-defaults)
 
@@ -59,3 +62,4 @@ That’s it. Your web service will be live at its `fly.dev` URL as soon as the d
 More information can be found on in the [fly.io documentation](https://fly.io/docs/js/prisma/).
 
 [Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/prisma-client/deployment/traditional/deploy-to-flyio.mdx)
+

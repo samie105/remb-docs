@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:36:07.209Z"
 content_hash: "19cf2b4970a4eece182a4ea7469f98e7af9039b7d1465b49f375f2930250eeba"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Enterprise for Kubernetes","→","Redis Enterprise for Kubernetes","→\n      \n        Redis Enterprise Software for Kubernetes release notes","→","Redis Enterprise Software for Kubernetes release notes","→\n      \n        Redis Enterprise for Kubernetes 7.8.4 release notes","→","Redis Enterprise for Kubernetes 7.8.4 release notes","→\n      \n        Redis Enterprise for Kubernetes 7.8.4-9 (March 2025) release notes","→","Redis Enterprise for Kubernetes 7.8.4-9 (March 2025) release notes"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Enterprise for Kubernetes","→","Redis Enterprise for Kubernetes","→\n      \n        Redis Enterprise Software for Kubernetes release notes","→","Redis Enterprise Software for Kubernetes release notes","→\n      \n        Redis Enterprise for Kubernetes 7.8.4 release notes","→","Redis Enterprise for Kubernetes 7.8.4 release notes","→\n      \n        Redis Enterprise for Kubernetes 7.8.4-9 (March 2025) release notes","→","Redis Enterprise for Kubernetes 7.8.4-9 (March 2025) release notes"]
+nav_prev: {"path": "redis/docs/latest/develop/tools/insight/release-notes/v.2.18.0/index.md", "title": "RedisInsight v2.18.0, January 2023"}
+nav_next: {"path": "redis/docs/latest/operate/kubernetes/release-notes/7-22-0-releases/7-22-0-17-september2025/index.md", "title": "Redis Enterprise for Kubernetes 7.22.0-17 (September 2025) release notes"}
 ---
+
 # Redis Enterprise for Kubernetes 7.8.4-9 (March 2025) release notes
 
 Maintenance release to support Redis Enterprise Software version 7.8.4-95.
@@ -170,3 +173,4 @@ Any distribution not listed below is not supported for production workloads.
 *   **OLM operator bundle** : `v7.8.4-9.0`
 
 ## On this page
+

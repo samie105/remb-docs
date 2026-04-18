@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:40:16.513Z"
 content_hash: "5d5c87278574f2046b1856fcb23cfe4b757dca56e9ed31cdf6ed36822b5ba720"
 menu_path: ["Define Routers"]
 section_path: []
+nav_prev: {"path": "trpc/docs/v10/server/middlewares/index.md", "title": "Middlewares"}
+nav_next: {"path": "trpc/docs/v10/server/server-side-calls/index.md", "title": "Server Side Calls"}
 ---
+
 To begin building your tRPC-based API, you'll first need to define your router. Once you've mastered the fundamentals, you can [customize your routers](#advanced-usage) for more advanced use cases.
 
 ## Initialize tRPC[​](#initialize-trpc "Direct link to Initialize tRPC")
@@ -38,7 +41,7 @@ You'll notice we are exporting certain methods of the `t` variable here rather t
 
 Next, let's define a router with a procedure to use in our application. We have now created an API "endpoint".
 
-In order for these endpoints to be exposed to the frontend, your [Adapter](https://trpc.io/docs/server/adapters) should be configured with your `appRouter` instance.
+In order for these endpoints to be exposed to the frontend, your [Adapter](trpc/docs/server/adapters/index.md) should be configured with your `appRouter` instance.
 
 server/\_app.ts
 
@@ -62,10 +65,10 @@ ts
 
 When initializing your router, tRPC allows you to:
 
-*   Setup [request contexts](https://trpc.io/docs/server/context)
-*   Assign [metadata](https://trpc.io/docs/server/metadata) to procedures
-*   [Format](https://trpc.io/docs/server/error-formatting) and [handle](https://trpc.io/docs/server/error-handling) errors
-*   [Transform data](https://trpc.io/docs/server/data-transformers) as needed
+*   Setup [request contexts](trpc/docs/server/context/index.md)
+*   Assign [metadata](trpc/docs/server/metadata/index.md) to procedures
+*   [Format](trpc/docs/server/error-formatting/index.md) and [handle](trpc/docs/server/error-handling/index.md) errors
+*   [Transform data](trpc/docs/server/data-transformers/index.md) as needed
 *   Customize the [runtime configuration](#runtime-configuration)
 
 You can use method chaining to customize your `t`\-object on initialization. For example:
@@ -141,3 +144,4 @@ ts
   `isDev: boolean;`
 
 `}`
+

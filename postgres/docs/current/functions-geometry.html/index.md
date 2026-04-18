@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:53:42.089Z"
 content_hash: "4740944457f2b650aa78cde192d3115e5e89243ebec90435cded6cd85a65c592"
 menu_path: ["PostgreSQL: Documentation: 18: 9.11. Geometric Functions and Operators"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/using-explain.html/index.md", "title": "PostgreSQL: Documentation: 18: 14.1.\u00a0Using EXPLAIN"}
+nav_next: {"path": "postgres/docs/current/sql-call.html/index.md", "title": "PostgreSQL: Documentation: 18: CALL"}
 ---
+
 _`geometric_type`_ `+` `point` → ``_`geometric_type`_``
 
 Adds the coordinates of the second `point` to those of each point of the first argument, thus performing translation. Available for `point`, `box`, `path`, `circle`.
@@ -219,3 +222,4 @@ _`geometric_type`_ `~=` _`geometric_type`_ → `boolean`
 Are these objects the same? Available for `point`, `box`, `polygon`, `circle`.
 
 `polygon '((0,0),(1,1))' ~= polygon '((1,1),(0,0))'` → `t`
+

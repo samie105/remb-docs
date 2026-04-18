@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:15:12.751Z"
 content_hash: "4883efaed8c4b83697d5d0cbd6ccda1b13245ae2224b0f4f3609f5be7c04c97a"
 menu_path: ["Drizzle Kit updates: drizzle-kit@0.22.0"]
 section_path: []
+nav_prev: {"path": "drizzle/docs/latest-releases/drizzle-orm-v0311/index.md", "title": "New Features"}
+nav_next: {"path": "drizzle/docs/latest-releases/drizzle-orm-v0312/index.md", "title": "Drizzle ORM - DrizzleORM v0.31.2 release"}
 ---
+
 DrizzleORM v0.31.0 release
 
 May 31, 2024
@@ -339,3 +342,4 @@ If you are using `push` workflows and want to change these fields in the index, 
 *   Push again
 
 For the `generate` command, `drizzle-kit` will be triggered by any changes in the index for any property in the new drizzle indexes API, so there are no limitations here.
+

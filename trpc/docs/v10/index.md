@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:31:48.149Z"
 content_hash: "c36bfcd104efa17936c5c23c1660d45db4ce2cde49a03ef4351082e8d015d0ab"
 menu_path: ["tRPC"]
 section_path: []
+nav_prev: {"path": "trpc/docs/example-apps/index.md", "title": "Example Apps"}
+nav_next: {"path": "trpc/docs/v10/client/index.md", "title": "Client Overview"}
 ---
+
 End-to-end typesafe APIs made easy
 
 [![codecov](https://codecov.io/gh/trpc/trpc/branch/main/graph/badge.svg?token=KPPS918B0G)](https://codecov.io/gh/trpc/trpc) [![weekly downloads](https://img.shields.io/npm/dm/%40trpc/server.svg)](https://npmcharts.com/compare/@trpc/server?interval=30) [![GitHub License](https://img.shields.io/github/license/trpc/trpc.svg?label=license&style=flat)](https://github.com/trpc/trpc) [![GitHub Stars](https://img.shields.io/github/stars/trpc/trpc.svg?label=%F0%9F%8C%9F%20stars&style=flat)](https://github.com/trpc/trpc)
@@ -22,7 +25,7 @@ As TypeScript and static typing increasingly becomes a best practice in web deve
 
 ### An alternative to traditional REST or GraphQL[​](#an-alternative-to-traditional-rest-or-graphql "Direct link to An alternative to traditional REST or GraphQL")
 
-Currently, GraphQL is the dominant way to implement typesafe APIs in TypeScript ([and it's amazing!](https://trpc.io/docs/v10/further-reading#relationship-to-graphql)). Since GraphQL is designed as a language-agnostic specification for implementing APIs, it doesn't take full advantage of the power of a language like TypeScript.
+Currently, GraphQL is the dominant way to implement typesafe APIs in TypeScript ([and it's amazing!](trpc/docs/v10/further-reading/index.md#relationship-to-graphql)). Since GraphQL is designed as a language-agnostic specification for implementing APIs, it doesn't take full advantage of the power of a language like TypeScript.
 
 If your project is built with full-stack TypeScript, you can share types **directly** between your client and server, without relying on code generation.
 
@@ -40,4 +43,5 @@ tRPC is for full-stack TypeScript developers. It makes it easy to write endpoint
 *   🔋  Framework agnostic - The tRPC community has built [adapters](https://trpc.io/docs/awesome-trpc#-extensions--community-add-ons) for all of the most popular frameworks.
 *   🥃  Subscriptions support - Add typesafe observability to your application.
 *   ⚡️  Request batching - Requests made at the same time can be automatically combined into one.
-*   👀  Examples - Check out an [example](https://trpc.io/docs/v10/example-apps) to learn with or use as a starting point.
+*   👀  Examples - Check out an [example](trpc/docs/v10/example-apps/index.md) to learn with or use as a starting point.
+

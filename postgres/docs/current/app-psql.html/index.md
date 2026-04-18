@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:51:47.160Z"
 content_hash: "38db55fe679f01678149c37cf4f679b114dbe98add5adf50c1ee376115752e4c"
 menu_path: ["PostgreSQL: Documentation: 18: psql"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/sql-createpolicy.html/index.md", "title": "PostgreSQL: Documentation: 18: CREATE POLICY"}
+nav_next: {"path": "postgres/docs/current/runtime-config-client.html/index.md", "title": "PostgreSQL: Documentation: 18: 19.11.\u00a0Client Connection Defaults"}
 ---
+
 Anything you enter in psql that begins with an unquoted backslash is a psql meta-command that is processed by psql itself. These commands make psql more useful for administration or scripting. Meta-commands are often called slash or backslash commands.
 
 The format of a psql command is the backslash, followed immediately by a command verb, then any arguments. The arguments are separated from the command verb and each other by any number of whitespace characters.
@@ -826,7 +829,7 @@ All queries executed while a pipeline is ongoing use the extended query protocol
 
 `\getresults` accepts an optional _`number_results`_ parameter. If provided, only the first _`number_results`_ pending results will be read. If not provided or `0`, all pending results are read.
 
-When pipeline mode is active, a dedicated prompt variable is available to report the pipeline status. See [`%P`](https://www.postgresql.org/docs/current/app-psql.html#APP-PSQL-PROMPTING-P-UC) for more details
+When pipeline mode is active, a dedicated prompt variable is available to report the pipeline status. See [`%P`](postgres/docs/current/app-psql.html/index.md#APP-PSQL-PROMPTING-P-UC) for more details
 
 `COPY` is not supported while in pipeline mode.
 
@@ -876,7 +879,7 @@ This command is identical to `\echo` except that the output will be written to p
 
 ``\watch [ i[nterval]=_`seconds`_ ] [ c[ount]=_`times`_ ] [ m[in_rows]=_`rows`_ ] [ _`seconds`_ ]`` [#](#APP-PSQL-META-COMMAND-WATCH)
 
-Repeatedly execute the current query buffer (as `\g` does) until interrupted, or the query fails, or the execution count limit (if given) is reached, or the query no longer returns the minimum number of rows. Wait the specified number of seconds (default 2) between executions. The default wait can be changed with the variable [`WATCH_INTERVAL`](https://www.postgresql.org/docs/current/app-psql.html#APP-PSQL-VARIABLES-WATCH-INTERVAL). For backwards compatibility, _`seconds`_ can be specified with or without an `interval=` prefix. Each query result is displayed with a header that includes the `\pset title` string (if any), the time as of query start, and the delay interval.
+Repeatedly execute the current query buffer (as `\g` does) until interrupted, or the query fails, or the execution count limit (if given) is reached, or the query no longer returns the minimum number of rows. Wait the specified number of seconds (default 2) between executions. The default wait can be changed with the variable [`WATCH_INTERVAL`](postgres/docs/current/app-psql.html/index.md#APP-PSQL-VARIABLES-WATCH-INTERVAL). For backwards compatibility, _`seconds`_ can be specified with or without an `interval=` prefix. Each query result is displayed with a header that includes the `\pset title` string (if any), the time as of query start, and the delay interval.
 
 If the current query buffer is empty, the most recently sent query is re-executed instead.
 
@@ -927,3 +930,4 @@ A relation pattern that contains a dot (`.`) is interpreted as a schema name pat
 A schema pattern that contains a dot (`.`) is interpreted as a database name followed by a schema name pattern. For example, `\dn mydb.*foo*` displays all schemas whose schema name includes `foo`. The database name portion will not be treated as a pattern and must match the name of the currently connected database, else an error will be raised.
 
 Advanced users can use regular-expression notations such as character classes, for example `[0-9]` to match any digit. All regular expression special characters work as specified in [Section 9.7.3](https://www.postgresql.org/docs/current/functions-matching.html#FUNCTIONS-POSIX-REGEXP "9.7.3. POSIX Regular Expressions"), except for `.` which is taken as a separator as mentioned above, `*` which is translated to the regular-expression notation `.*`, `?` which is translated to `.`, and `$` which is matched literally. You can emulate these pattern characters at need by writing `?` for `.`, ``(_`R`_+|)`` for ``_`R`_*``, or ``(_`R`_|)`` for ``_`R`_?``. `$` is not needed as a regular-expression character since the pattern must match the whole name, unlike the usual interpretation of regular expressions (in other words, `$` is automatically appended to your pattern). Write `*` at the beginning and/or end if you don't wish the pattern to be anchored. Note that within double quotes, all regular expression special characters lose their special meanings and are matched literally. Also, the regular expression special characters are matched literally in operator name patterns (i.e., the argument of `\do`).
+

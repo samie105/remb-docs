@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:49:29.751Z"
 content_hash: "e22880ed4d85cf79acce5e1bfa2dadba4b21ecc96a8568d846749613b6d36a60"
 menu_path: ["Realtime","Realtime","Usage","Usage","Postgres Changes","Postgres Changes"]
 section_path: ["Realtime","Realtime","Usage","Usage","Postgres Changes","Postgres Changes"]
+nav_prev: {"path": "supabase/docs/guides/realtime/presence/index.md", "title": "Presence"}
+nav_next: {"path": "supabase/docs/guides/realtime/realtime-listening-flutter/index.md", "title": "Listening to Postgres Changes with Flutter"}
 ---
+
 # 
 
 Postgres Changes
@@ -358,3 +361,4 @@ View raw throughput table
 Don't forget to run your own benchmarks to make sure that the performance is acceptable for your use case.
 
 We are making many improvements to Realtime's Postgres Changes. If you are uncertain about the performance of your use case, reach out using [Support Form](/dashboard/support/new) and we will be happy to help you. We have a team of engineers that can advise you on the best solution for your use-case.
+

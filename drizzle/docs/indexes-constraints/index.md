@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:08:22.404Z"
 content_hash: "a35750f9cb67a05d6134e37fb1622e04e372cfff43064a4cd7e60cc929e924b4"
 menu_path: ["Indexes & Constraints"]
 section_path: []
+nav_prev: {"path": "drizzle/docs/column-types/pg/index.md", "title": "PostgreSQL column types"}
+nav_next: {"path": "drizzle/docs/sequences/index.md", "title": "Sequences"}
 ---
+
 ## Constraints[](#constraints)
 
 SQL constraints are the rules enforced on table columns. They are used to prevent invalid data from being entered into the database.
@@ -1612,3 +1615,4 @@ index('name')
   .using('btree', table.column1.asc(), sql`lower(${table.column2})`)
   .where(sql``) // sql expression
 ```
+

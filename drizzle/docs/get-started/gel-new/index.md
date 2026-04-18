@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:55:15.197Z"
 content_hash: "25c4c93267365acdffc739cba9e20b550bade1efe88f63d9771ece247155a45b"
 menu_path: ["Get Started with Drizzle and Gel"]
 section_path: []
+nav_prev: {"path": "drizzle/docs/get-started/mssql-existing/index.md", "title": "Get Started with Drizzle and MSSQL in existing project"}
+nav_next: {"path": "drizzle/docs/get-started/mssql-new/index.md", "title": "Get Started with Drizzle and MSSQL"}
 ---
+
 ## Get Started with Drizzle and Gel
 
 This guide assumes familiarity with:
@@ -133,7 +136,7 @@ bun add -D drizzle-kit tsx
 
 #### Step 5 - Setup Drizzle config file[](#step-5---setup-drizzle-config-file)
 
-**Drizzle config** - a configuration file that is used by [Drizzle Kit](https://orm.drizzle.team/docs/kit-overview) and contains all the information about your database connection, migration folder and schema files.
+**Drizzle config** - a configuration file that is used by [Drizzle Kit](drizzle/docs/kit-overview/index.md) and contains all the information about your database connection, migration folder and schema files.
 
 Create a `drizzle.config.ts` file in the root of your project and add the following content:
 
@@ -289,3 +292,4 @@ bun src/index.ts
 ```
 
 If you don’t have bun installed, check the [Bun installation docs](https://bun.sh/docs/installation#installing)
+

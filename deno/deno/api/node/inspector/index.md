@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:37:05.556Z"
 content_hash: "abb0fe967df0b3eb1742a04e82f22919128742c93118bb24b4b7b3eff4d7fe5d"
 menu_path: ["inspector - Node documentation"]
 section_path: []
+nav_prev: {"path": "deno/deno/api/node/http2/index.md", "title": "http2 - Node documentation"}
+nav_next: {"path": "deno/deno/api/node/inspector/promises/index.md", "title": "inspector/promises - Node documentation"}
 ---
+
 ### Usage in Deno
 
 ```typescript
@@ -1588,3 +1591,4 @@ v
 [console](.././inspector/~/console "console")
 
 An object to send messages to the remote inspector console.
+

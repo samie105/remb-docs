@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:50:56.293Z"
 content_hash: "6ad76bbde2b9a7913eead211f04f426392c40390d6a7c29fc384932688d54cb2"
 menu_path: ["Self-Hosting","Self-Hosting","How-to Guides","How-to Guides","Configure SAML 2.0 SSO","Configure SAML 2.0 SSO"]
 section_path: ["Self-Hosting","Self-Hosting","How-to Guides","How-to Guides","Configure SAML 2.0 SSO","Configure SAML 2.0 SSO"]
+nav_prev: {"path": "supabase/docs/guides/self-hosting/self-hosted-s3/index.md", "title": "Configure S3 Storage"}
+nav_next: {"path": "supabase/docs/guides/storage/pricing/index.md", "title": "Pricing"}
 ---
+
 # 
 
 Configure SAML SSO
@@ -504,3 +507,4 @@ The user took too long between initiating SSO and completing authentication at t
 *   [SSO with SAML 2.0](/docs/guides/auth/enterprise-sso/auth-sso-saml) - Client-side SAML integration guide
 *   [Auth server configuration reference](/docs/guides/self-hosting/auth/config) - Full list of Auth environment variables
 *   [SAML 2.0 specification](http://docs.oasis-open.org/security/saml/v2.0/) - The underlying standard
+

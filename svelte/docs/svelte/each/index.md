@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:35:32.425Z"
 content_hash: "d510ed28cbd3eeca877be5d7e1a1ccabdf3ee4fd97b7a170a93862bba51bb54c"
 menu_path: ["{#each ...}"]
 section_path: []
+nav_prev: {"path": "svelte/docs/svelte/if/index.md", "title": "{#if ...}"}
+nav_next: {"path": "svelte/docs/svelte/key/index.md", "title": "{#key ...}"}
 ---
+
 ```
 {#each expression as name}...{/each}
 ```
@@ -139,3 +142,4 @@ An each block can also have an `{:else}` clause, which is rendered if the list i
 previous next
 
 [{#if ...}](/docs/svelte/if) [{#key ...}](/docs/svelte/key)
+

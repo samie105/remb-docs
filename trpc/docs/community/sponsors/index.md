@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:48:17.617Z"
 content_hash: "aef3a4922d623ee1a7fb608028fb756ba93238602b7862313a38d9936befedc6"
 menu_path: ["Sponsors"]
 section_path: []
+nav_prev: {"path": "trpc/docs/community/contributing/index.md", "title": "Contributing"}
+nav_next: {"path": "trpc/docs/community/love/index.md", "title": "Testimonials / Love"}
 ---
+
 Version: 11.x
 
 If you enjoy working with tRPC and want to support the project, consider giving a token appreciation by [GitHub Sponsors](https://trpc.io/sponsor)!
@@ -96,3 +99,4 @@ Erik Bjäreholt](https://erik.bjareholt.com/?ref=trpc&utm_source=github&utm_medi
 
 *   [🥈 Silver Sponsors](#-silver-sponsors)
 *   [😻 Smaller Backers](#-smaller-backers)
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:08:38.471Z"
 content_hash: "8685e931e1270bc9e6eeb90dc5a3c8aba36eb8af424e266bccecea93314ab013"
 menu_path: ["Joins [SQL]"]
 section_path: []
+nav_prev: {"path": "drizzle/docs/query-utils/index.md", "title": "Drizzle query utils"}
+nav_next: {"path": "drizzle/docs/sql/index.md", "title": "Magical sql operator \ud83e\ude84"}
 ---
+
 ## Joins \[SQL\]
 
 Join clause in SQL is used to combine 2 or more tables, based on related columns between them. Drizzle ORM joins syntax is a balance between the SQL-likeness and type safety.
@@ -452,3 +455,4 @@ db.select()
   .where(eq(chatGroups.id, 1))
   .all();
 ```
+

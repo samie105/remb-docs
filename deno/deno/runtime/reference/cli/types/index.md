@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:56:37.605Z"
 content_hash: "08d4a60bd6457d51b3ccfbf39a9fd549761a3d6225b227c95c174f6729efeaa7"
 menu_path: ["deno types"]
 section_path: []
+nav_prev: {"path": "deno/deno/runtime/reference/cli/test/index.md", "title": "deno test"}
+nav_next: {"path": "deno/deno/runtime/reference/cli/uninstall/index.md", "title": "deno uninstall"}
 ---
+
 On this page
 
 *   [Basic usage](#basic-usage)
@@ -56,3 +59,4 @@ deno types > lib.deno.d.ts
 ```
 
 The declaration file could be saved and used for typing information.
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:39:46.449Z"
 content_hash: "ae1c105f6d17c428d3f26fac7e51748500b0f53c08e25ded7d9819aeec275d9c"
 menu_path: ["PostgreSQL: Documentation: 18: 39.7. Rules Versus Triggers"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/sql-altergroup.html/index.md", "title": "PostgreSQL: Documentation: 18: ALTER GROUP"}
+nav_next: {"path": "postgres/docs/current/sasl-authentication.html/index.md", "title": "PostgreSQL: Documentation: 18: 54.3.\u00a0SASL Authentication"}
 ---
+
 Many things that can be done using triggers can also be implemented using the PostgreSQL rule system. One of the things that cannot be implemented by rules are some kinds of constraints, especially foreign keys. It is possible to place a qualified rule that rewrites a command to `NOTHING` if the value of a column does not appear in another table. But then the data is silently thrown away and that's not a good idea. If checks for valid values are required, and in the case of an invalid value an error message should be generated, it must be done by a trigger.
 
 In this chapter, we focused on using rules to update views. All of the update rule examples in this chapter can also be implemented using `INSTEAD OF` triggers on the views. Writing such triggers is often easier than writing rules, particularly if complex logic is required to perform the update.
@@ -101,3 +104,4 @@ Nestloop
 In any of these cases, the extra commands from the rule system will be more or less independent from the number of affected rows in a command.
 
 The summary is, rules will only be significantly slower than triggers if their actions result in large and badly qualified joins, a situation where the planner fails.
+

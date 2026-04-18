@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:24:02.432Z"
 content_hash: "54cbfbc3a564f5a2ce51eec6862e2fa090ae0b21e4f9d354320b1a3b7d1e2c8b"
 menu_path: ["Drizzle with Supabase Edge Functions"]
 section_path: []
+nav_prev: {"path": "drizzle/docs/tutorials/drizzle-with-nile/index.md", "title": "Drizzle with Nile Database"}
+nav_next: {"path": "drizzle/docs/tutorials/drizzle-with-supabase/index.md", "title": "Drizzle with Supabase Database"}
 ---
+
 To learn how to create a basic Edge Function on your local machine and then deploy it, see the [Edge Functions Quickstart](https://supabase.com/docs/guides/functions/quickstart).
 
 #### Create a table[](#create-a-table)
@@ -93,7 +96,7 @@ IMPORTANT
 
 Don’t forget to run Docker
 
-Alternatively, you can apply migrations using the `drizzle-kit migrate` command. Learn more about this migration process in the [documentation](https://orm.drizzle.team/docs/migrations).
+Alternatively, you can apply migrations using the `drizzle-kit migrate` command. Learn more about this migration process in the [documentation](drizzle/docs/migrations/index.md).
 
 #### Create a new Edge Function[](#create-a-new-edge-function)
 
@@ -271,3 +274,4 @@ supabase functions deploy drizzle-tutorial --no-verify-jwt
 ```
 
 Finally, you can use URL of the deployed project and navigate to the route you created `(e.g. /drizzle-tutorial)` to access your edge function.
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:57:50.108Z"
 content_hash: "c9f5b43df9dc686565e60dabaa51cb805ac978b212fa3208f320d98f34e8d89b"
 menu_path: ["text-decoration-color"]
 section_path: []
+nav_prev: {"path": "tailwind/docs/text-decoration-line/index.md", "title": "text-decoration-line"}
+nav_next: {"path": "tailwind/docs/text-decoration-style/index.md", "title": "text-decoration-style"}
 ---
+
 Utilities for controlling the color of text decorations.
 
 Class
@@ -60,7 +63,7 @@ Styles
 
 ### [Basic example](#basic-example)
 
-Use utilities like `decoration-sky-500` and `decoration-pink-500` to change the [text decoration](https://tailwindcss.com/docs/text-decoration-line) color of an element:
+Use utilities like `decoration-sky-500` and `decoration-pink-500` to change the [text decoration](tailwind/docs/text-decoration-line/index.md) color of an element:
 
 ```
 <p>  I’m Derek, an astro-engineer based in Tattooine. I like to build X-Wings  at <a class="underline decoration-sky-500">My Company, Inc</a>. Outside  of work, I like to <a class="underline decoration-pink-500">watch pod-racing</a>  and have <a class="underline decoration-indigo-500">light-saber</a> fights.</p>
@@ -100,7 +103,7 @@ Hover over the text to see the expected behavior
 <p>The <a href="..." class="underline hover:decoration-pink-500 ...">quick brown fox</a> jumps over the lazy dog.</p>
 ```
 
-Learn more about using variants in the [variants documentation](https://tailwindcss.com/docs/hover-focus-and-other-states).
+Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).
 
 ### [Responsive design](#responsive-design)
 
@@ -110,7 +113,7 @@ Prefix a `text-decoration-color` utility with a breakpoint variant like `md:` to
 <p class="underline decoration-sky-600 md:decoration-blue-400 ...">  Lorem ipsum dolor sit amet...</p>
 ```
 
-Learn more about using variants in the [variants documentation](https://tailwindcss.com/docs/hover-focus-and-other-states).
+Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).
 
 ## [Customizing your theme](#customizing-your-theme)
 
@@ -126,4 +129,5 @@ Now the `decoration-regal-blue` utility can be used in your markup:
 <p class="decoration-regal-blue">  Lorem ipsum dolor sit amet...</p>
 ```
 
-Learn more about customizing your theme in the [theme documentation](https://tailwindcss.com/docs/theme#customizing-your-theme).
+Learn more about customizing your theme in the [theme documentation](tailwind/docs/theme/index.md#customizing-your-theme).
+

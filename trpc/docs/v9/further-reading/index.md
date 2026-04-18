@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:42:06.508Z"
 content_hash: "a84a8ebd7c387e495dcbcdbdbec477ea16e7929ec2fe6e453b0a1b91655f62d8"
 menu_path: ["Further Reading"]
 section_path: []
+nav_prev: {"path": "trpc/docs/v9/header/index.md", "title": "Custom header"}
+nav_next: {"path": "trpc/docs/v9/infer-types/index.md", "title": "Inferring Types"}
 ---
+
 ## Who is this for?[​](#who-is-this-for "Direct link to Who is this for?")
 
 *   tRPC is for full-stack javascripters. It makes it dead easy to write "endpoints" which you safely use in your app.
@@ -25,3 +28,4 @@ The thing is, GraphQL isn't that easy to get right - [ACL](https://en.wikipedia.
 We've taken a lot of inspiration from GraphQL. If you've made GraphQL-servers before, you'll be familiar with the concept of input types and resolvers.
 
 tRPC is a lot simpler and couples your server & website/app more tightly together (for good and for bad). It makes it easy to move quickly, do changes without updating a schema & there's no thinking about the ever-traversable graph.
+

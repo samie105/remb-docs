@@ -9,14 +9,9 @@ last_crawled_at: "2026-04-18T16:32:41.163Z"
 content_hash: "d564af33d70fbdc4f24ce72753d1fbaf16fd9039a41933abc94e057568855095"
 menu_path: ["Security","Security","Overview","Overview"]
 section_path: ["Security","Security","Overview","Overview"]
+nav_prev: {"path": "supabase/docs/guides/queues/index.md", "title": "Supabase Queues"}
+nav_next: {"path": "supabase/docs/guides/resources/index.md", "title": "Resources"}
 ---
-# 
-
-Supabase Security
-
-* * *
-
-Supabase is a hosted platform which makes it very simple to get started without needing to manage any infrastructure. The hosted platform comes with many security and compliance controls managed by Supabase.
 
 # Compliance
 
@@ -35,3 +30,4 @@ These can be found under the [dedicated security page](/dashboard/org/_/security
 Each product offered by Supabase comes with customizable security controls and these security controls help ensure that applications built on Supabase are secure, compliant, and resilient against various threats.
 
 The [security configuration guides](/docs/guides/security/product-security) provide detailed information for configuring individual products.
+

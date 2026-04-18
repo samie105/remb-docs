@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:54:47.841Z"
 content_hash: "db5c9839c03fbb506178c2ac7def33bcb790b52b67b47d64c98589decb2dd3e4"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        Redis Search","→","Redis Search","→\n      \n        Indexing","→","Indexing"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        Redis Search","→","Redis Search","→\n      \n        Indexing","→","Indexing"]
+nav_prev: {"path": "redis/docs/latest/develop/clients/nodejs/vecsearch/index.md", "title": "Index and query vectors"}
+nav_next: {"path": "redis/docs/latest/develop/use-cases/time-series-dashboard/java-jedis/index.md", "title": "Rolling sensor graph demo with Java and Jedis"}
 ---
+
 # Indexing
 
 How to index and search JSON documents
@@ -696,3 +699,4 @@ When a JSONPath leads to an array or to multiple values:
 *   If a JSONPath is specified by the `RETURN`, instead of a schema attribute, all values are returned (as a JSON string).
 
 ## On this page
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:48:04.533Z"
 content_hash: "3c31fa191b91f2d1faf4b9bb66f6e26f0f12d24ed98dddbff9463b815a0587c1"
 menu_path: ["Inferring Types"]
 section_path: []
+nav_prev: {"path": "trpc/docs/client/vanilla/setup/index.md", "title": "Set up a tRPC Client"}
+nav_next: {"path": "trpc/docs/community/awesome-trpc/index.md", "title": "Awesome tRPC Collection"}
 ---
+
 It is often useful to access the types of your API within your clients. For this purpose, you are able to infer the types contained in your `AppRouter`.
 
 `@trpc/server` exports the following helper types to assist with inferring these types from the `AppRouter` exported by your `@trpc/server` router:
@@ -208,3 +211,4 @@ ts
 `}`
 
 `main();`
+

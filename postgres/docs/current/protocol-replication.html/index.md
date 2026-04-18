@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:52:18.956Z"
 content_hash: "97b45e23a096d2cf6561f74935b90ece3a618b21f48a03c67ae5c86614135685"
 menu_path: ["PostgreSQL: Documentation: 18: 54.4. Streaming Replication Protocol"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/datetime-invalid-input.html/index.md", "title": "PostgreSQL: Documentation: 18: B.2.\u00a0Handling of Invalid or Ambiguous Timestamps"}
+nav_next: {"path": "postgres/docs/current/index-scanning.html/index.md", "title": "PostgreSQL: Documentation: 18: 63.3.\u00a0Index Scanning"}
 ---
+
 To initiate streaming replication, the frontend sends the `replication` parameter in the startup message. A Boolean value of `true` (or `on`, `yes`, `1`) tells the backend to go into physical replication walsender mode, wherein a small set of replication commands, shown below, can be issued instead of SQL statements.
 
 Passing `database` as the value for the `replication` parameter instructs the backend to go into logical replication walsender mode, connecting to the database specified in the `dbname` parameter. In logical replication walsender mode, the replication commands shown below as well as normal SQL commands can be issued.
@@ -308,7 +311,7 @@ Instructs the server to start streaming a base backup. The system will automatic
 
 `LABEL` _`'label'`_
 
-Sets the label of the backup. If none is specified, a backup label of `base backup` will be used. The quoting rules for the label are the same as a standard SQL string with [standard\_conforming\_strings](https://www.postgresql.org/docs/current/runtime-config-compatible.html#GUC-STANDARD-CONFORMING-STRINGS) turned on.
+Sets the label of the backup. If none is specified, a backup label of `base backup` will be used. The quoting rules for the label are the same as a standard SQL string with [standard\_conforming\_strings](postgres/docs/current/runtime-config-compatible.html/index.md#GUC-STANDARD-CONFORMING-STRINGS) turned on.
 
 `TARGET` _`'target'`_
 
@@ -460,3 +463,4 @@ The tar archive for the data directory and each tablespace will contain all file
 Owner, group, and file mode are set if the underlying file system on the server supports it.
 
 In all the above commands, when specifying a parameter of type `boolean` the _`value`_ part can be omitted, which is equivalent to specifying `TRUE`.
+

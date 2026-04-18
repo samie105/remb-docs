@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:04:38.298Z"
 content_hash: "6f1acfe73d53640458ae34e5a52eee7385356d41b17448d480e7fb613647dc1b"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Connect with Redis client API libraries","→","Connect with Redis client API libraries","→\n      \n        Jedis guide (Java)","→","Jedis guide (Java)","→\n      \n        Pipelines and transactions","→","Pipelines and transactions"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Connect with Redis client API libraries","→","Connect with Redis client API libraries","→\n      \n        Jedis guide (Java)","→","Jedis guide (Java)","→\n      \n        Pipelines and transactions","→","Pipelines and transactions"]
+nav_prev: {"path": "redis/docs/latest/develop/data-types/timeseries/out-of-order_performance_considerations/index.md", "title": "Out-of-order / backfilled ingestion performance considerations"}
+nav_next: {"path": "redis/docs/latest/develop/data-types/json/performance/index.md", "title": "Performance"}
 ---
+
 # Pipelines and transactions
 
 Learn how to use Redis pipelines and transactions
@@ -311,3 +314,4 @@ public class PipeTransExample {
 ```
 
 ## On this page
+

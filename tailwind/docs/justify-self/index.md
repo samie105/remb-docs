@@ -9,15 +9,9 @@ last_crawled_at: "2026-04-18T16:49:11.292Z"
 content_hash: "4cfe8b2755ac941696a85b064b03f9524b575071c2010325ea655549899c5373"
 menu_path: ["justify-self"]
 section_path: []
+nav_prev: {"path": "tailwind/docs/justify-items/index.md", "title": "justify-items"}
+nav_next: {"path": "tailwind/docs/align-content/index.md", "title": "align-content"}
 ---
-[](/)
-
-[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
-
-1.  Flexbox & Grid
-2.  justify-self
-
-Flexbox & Grid
 
 # justify-self
 
@@ -221,3 +215,4 @@ Short, tactical video lessons from the creator of Tailwind CSS, delivered direct
 [Get the free course](/build-uis-that-dont-suck)
 
 Copyright © 2026 Tailwind Labs Inc.·[Trademark Policy](/brand)
+

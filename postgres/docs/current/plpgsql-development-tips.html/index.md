@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:42:03.633Z"
 content_hash: "a303cfc182c86325a1ec42b9cfb7bc44ea09847799b9b8e749698f546d490192"
 menu_path: ["PostgreSQL: Documentation: 18: 41.12. Tips for Developing in PL/pgSQL"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/ecpg-sql-describe.html/index.md", "title": "PostgreSQL: Documentation: 18: DESCRIBE"}
+nav_next: {"path": "postgres/docs/current/sql-declare.html/index.md", "title": "PostgreSQL: Documentation: 18: DECLARE"}
 ---
+
 Development Versions: [devel](https://www.postgresql.org/docs/devel/plpgsql-development-tips.html "PostgreSQL devel - 41.12. Tips for Developing in PL/pgSQL")
 
 One good way to develop in PL/pgSQL is to use the text editor of your choice to create your functions, and in another window, use psql to load and test those functions. If you are doing it this way, it is a good idea to write the function using `CREATE OR REPLACE FUNCTION`. That way you can just reload the file to update the function definition. For example:
@@ -110,3 +113,4 @@ a\_output := a\_output || $$ if v\_$$ || referrer\_keys.kind || $$ like '$$
     || $$'; end if;$$;
 
 where we assume we only need to put single quote marks into `a_output`, because it will be re-quoted before use.
+

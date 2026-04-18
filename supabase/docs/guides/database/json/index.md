@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:41:26.005Z"
 content_hash: "909824026eeae0882a50cd85b054a6c8b177aa48aa59d07015c74e18bfed1cdf"
 menu_path: ["Database","Database","Working with your database (basics)","Working with your database (basics)","JSON and unstructured data","JSON and unstructured data"]
 section_path: ["Database","Database","Working with your database (basics)","Working with your database (basics)","JSON and unstructured data","JSON and unstructured data"]
+nav_prev: {"path": "supabase/docs/guides/database/metabase/index.md", "title": "Connecting to Metabase"}
+nav_next: {"path": "supabase/docs/guides/database/migrating-to-pg-partman/index.md", "title": "Migrate from TimescaleDB to pg_partman"}
 ---
+
 # 
 
 Managing JSON and unstructured data
@@ -75,3 +78,4 @@ Once you have enabled the extension, you can add a "check constraint" to your ta
 
 *   [Postgres: JSON Functions and Operators](https://www.postgresql.org/docs/current/functions-json.html)
 *   [Postgres JSON types](https://www.postgresql.org/docs/current/datatype-json.html)
+

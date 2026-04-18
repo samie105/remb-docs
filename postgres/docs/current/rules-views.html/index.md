@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:46:24.499Z"
 content_hash: "294a1e67ff6383f118bff8a9c068a6db5947d31171ad61d2b2f2765bb30956ef"
 menu_path: ["PostgreSQL: Documentation: 18: 39.2. Views and the Rule System"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/sql-dropprocedure.html/index.md", "title": "PostgreSQL: Documentation: 18: DROP PROCEDURE"}
+nav_next: {"path": "postgres/docs/current/sql-alterindex.html/index.md", "title": "PostgreSQL: Documentation: 18: ALTER INDEX"}
 ---
+
 Views in PostgreSQL are implemented using the rule system. A view is basically an empty table (having no actual storage) with an `ON SELECT DO INSTEAD` rule. Conventionally, that rule is named `_RETURN`. So a view like
 
 although you can't actually write that, because tables are not allowed to have `ON SELECT` rules.
@@ -290,3 +293,4 @@ Note that rules are evaluated first, rewriting the original query before it is p
 Automatic rewriting of an `INSERT`, `UPDATE`, `DELETE`, or `MERGE` query on a simple view is always tried last. Therefore, if a view has rules or triggers, they will override the default behavior of automatically updatable views.
 
 If there are no `INSTEAD` rules or `INSTEAD OF` triggers for the view, and the rewriter cannot automatically rewrite the query as an update on the underlying base relation, an error will be thrown because the executor cannot update a view as such.
+

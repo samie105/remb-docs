@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:02:07.205Z"
 content_hash: "2116490da3a84ed3747669fb25d05d383d54c97a2f60043e888b16ae931a6c94"
 menu_path: ["Utils"]
 section_path: []
+nav_prev: {"path": "bun/bun/docs/runtime/web-apis/index.md", "title": "Web APIs"}
+nav_next: {"path": "bun/bun/docs/runtime/workers/index.md", "title": "Workers"}
 ---
+
 ## `Bun.version`
 
 A `string` containing the version of the `bun` CLI that is currently running.
@@ -236,7 +239,7 @@ const currentFile = import.meta.url;
 Bun.openInEditor(currentFile);
 ```
 
-You can override this via the `debug.editor` setting in your [`bunfig.toml`](https://bun.com/docs/runtime/bunfig).
+You can override this via the `debug.editor` setting in your [`bunfig.toml`](bun/bun/docs/runtime/bunfig/index.md).
 
 bunfig.toml
 
@@ -1032,3 +1035,4 @@ const array = Array(1024).fill({ a: 1 });
 estimateShallowMemoryUsageOf(array);
 // => 16
 ```
+

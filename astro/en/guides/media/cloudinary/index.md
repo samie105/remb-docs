@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:40:26.416Z"
 content_hash: "f42fb15665b2d8d5bdfac7714ec081271e413d1280e9f054af369653480adb92"
 menu_path: ["Cloudinary & Astro"]
 section_path: []
+nav_prev: {"path": "astro/en/guides/media/index.md", "title": "Image and video hosting with Astro"}
+nav_next: {"path": "astro/en/guides/media/mux/index.md", "title": "Mux & Astro"}
 ---
+
 # Cloudinary & Astro
 
 [Cloudinary](https://cloudinary.com) is an image and video platform and headless Digital Asset Manager (DAM) that lets you host assets and deliver them from their content delivery network (CDN).
@@ -191,3 +194,4 @@ Learn how to [upload files using the Cloudinary Node.js SDK with Astro Forms](ht
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

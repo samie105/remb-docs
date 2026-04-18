@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:40:30.018Z"
 content_hash: "6c3e67c9267c220235cdc055f367a4d884e94df09a69adc6fb2f230eebc338d0"
 menu_path: ["Mux & Astro"]
 section_path: []
+nav_prev: {"path": "astro/en/guides/media/cloudinary/index.md", "title": "Cloudinary & Astro"}
+nav_next: {"path": "astro/en/guides/ecommerce/index.md", "title": "E-commerce"}
 ---
+
 # Mux & Astro
 
 [Mux](https://www.mux.com?utm_campaign=21819274-Astro&utm_source=astro-docs) is a hosted media service that provides video streaming infrastructure and performance analytics for businesses of all scales.
@@ -258,3 +261,4 @@ For the full API and webhook reference, usage guides, and information about addi
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

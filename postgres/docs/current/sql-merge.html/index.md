@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:37:12.438Z"
 content_hash: "1d9a575b59b58331e20b6dc326de6e46219a3ba5771673437d9c4cfd2f20729b"
 menu_path: ["PostgreSQL: Documentation: 18: MERGE"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/continuous-archiving.html/index.md", "title": "PostgreSQL: Documentation: 18: 25.3.\u00a0Continuous Archiving and Point-in-Time Recovery (PITR)"}
+nav_next: {"path": "postgres/docs/current/bki-commands.html/index.md", "title": "PostgreSQL: Documentation: 18: 68.4.\u00a0BKI Commands"}
 ---
+
 MERGE — conditionally insert, update, or delete rows of a table
 
 ## Synopsis
@@ -280,3 +283,4 @@ WHEN NOT MATCHED BY SOURCE THEN
 This command conforms to the SQL standard.
 
 The `WITH` clause, `BY SOURCE` and `BY TARGET` qualifiers to `WHEN NOT MATCHED`, `DO NOTHING` action, and `RETURNING` clause are extensions to the SQL standard.
+

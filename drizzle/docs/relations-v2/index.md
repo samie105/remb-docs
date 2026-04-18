@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:19:21.815Z"
 content_hash: "8ac4fa18aa7dbc1d0b364b9e58c20b3a691e286c9de964bf973ec7d6872182f4"
 menu_path: ["Drizzle relations"]
 section_path: []
+nav_prev: {"path": "drizzle/docs/schemas/index.md", "title": "Table schemas"}
+nav_next: {"path": "drizzle/docs/rls/index.md", "title": "Row-Level Security (RLS)"}
 ---
+
 WARNING
 
 This page explains concepts available on drizzle versions `1.0.0-beta.1` and higher.
@@ -46,9 +49,9 @@ bun add drizzle-kit@beta -D
 
 This guide assumes familiarity with:
 
-*   **Relations Fundamentals** - get familiar with the concepts of foreign key constraints, soft relations, database normalization, etc - [read here](https://orm.drizzle.team/docs/rqb-fundamentals)
-*   **Declare schema** - get familiar with how to define drizzle schemas - [read here](https://orm.drizzle.team/docs/sql-schema-declaration)
-*   **Database connection** - get familiar with how to connect to database using drizzle - [read here](https://orm.drizzle.team/docs/get-started-postgresql)
+*   **Relations Fundamentals** - get familiar with the concepts of foreign key constraints, soft relations, database normalization, etc - [read here](drizzle/docs/rqb-fundamentals/index.md)
+*   **Declare schema** - get familiar with how to define drizzle schemas - [read here](drizzle/docs/sql-schema-declaration/index.md)
+*   **Database connection** - get familiar with how to connect to database using drizzle - [read here](drizzle/docs/get-started-postgresql/index.md)
 
 The sole purpose of Drizzle relations is to let you query your relational data in the most simple and concise way:
 
@@ -127,7 +130,7 @@ const relations = defineRelations({ users, posts }, (r) => ({
 *   `to: r.users.id` specifies the table to which we are establishing a soft relation. In this case, the relation points to the `id` column in the `users` table.
 *   `optional: false` at the type level makes the `author` key in the posts object `required`. This should be used when you are certain that this specific entity will always exist.
 *   `alias` is used to add a specific alias to relationships between tables. If you have multiple identical relationships between two tables, you should differentiate them using `alias`
-*   `where` condition can be used for polymorphic relations. It fetches relations based on a `where` statement. For example, in the case above, only `verified authors` will be retrieved. Learn more about polymorphic relations [here](https://orm.drizzle.team/docs/relations-schema-declaration#polymorphic-relations).
+*   `where` condition can be used for polymorphic relations. It fetches relations based on a `where` statement. For example, in the case above, only `verified authors` will be retrieved. Learn more about polymorphic relations [here](drizzle/docs/relations-schema-declaration/index.md#polymorphic-relations).
 
 ### `many()`[](#many)
 
@@ -155,7 +158,7 @@ const relations = defineRelations({ users, posts }, (r) => ({
 *   `to: r.posts.ownerId` specifies the table to which we are establishing a soft relation. In this case, the relation points to the `ownerId` column in the `posts` table.
 *   `optional: false` at the type level makes the `feed` key in the posts object `required`. This should be used when you are certain that this specific entity will always exist.
 *   `alias` is used to add a specific alias to relationships between tables. If you have multiple identical relationships between two tables, you should differentiate them using `alias`
-*   `where` condition can be used for polymorphic relations. It fetches relations based on a `where` statement. For example, in the case above, only `approved posts` will be retrieved. Learn more about polymorphic relations [here](https://orm.drizzle.team/docs/relations-schema-declaration#polymorphic-relations).
+*   `where` condition can be used for polymorphic relations. It fetches relations based on a `where` statement. For example, in the case above, only `approved posts` will be retrieved. Learn more about polymorphic relations [here](drizzle/docs/relations-schema-declaration/index.md#polymorphic-relations).
 
 ### One-to-one[](#one-to-one)
 
@@ -909,3 +912,4 @@ export const relations = defineRelations({ users, posts }, (r) => ({
 ```
 
 ### Troubleshooting[](#troubleshooting)
+

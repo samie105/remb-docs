@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:50:32.186Z"
 content_hash: "4cbe6349570c977a15cb667fef4bf874a5a8863d8ad95ef819ba56199edff917"
 menu_path: ["place-self"]
 section_path: []
+nav_prev: {"path": "tailwind/docs/place-items/index.md", "title": "place-items"}
+nav_next: {"path": "tailwind/docs/padding/index.md", "title": "padding"}
 ---
+
 Utilities for controlling how an individual item is justified and aligned at the same time.
 
 Class
@@ -154,4 +157,5 @@ Prefix a `place-self` utility with a breakpoint variant like `md:` to only apply
 <div class="place-self-start md:place-self-end ...">  <!-- ... --></div>
 ```
 
-Learn more about using variants in the [variants documentation](https://tailwindcss.com/docs/hover-focus-and-other-states).
+Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).
+

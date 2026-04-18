@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:43:44.937Z"
 content_hash: "47705e72bf07c6e0f3ff72181d0b6ec78e4e4cfc17bc2f04a3039714678953ab"
 menu_path: ["PostgreSQL: Documentation: 18: 18.3. Starting the Database Server"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/sql-notify.html/index.md", "title": "PostgreSQL: Documentation: 18: NOTIFY"}
+nav_next: {"path": "postgres/docs/current/plpython-funcs.html/index.md", "title": "PostgreSQL: Documentation: 18: 44.1.\u00a0PL/Python Functions"}
 ---
+
 Before anyone can access the database, you must start the database server. The database server program is called `postgres`.
 
 If you are using a pre-packaged version of PostgreSQL, it almost certainly includes provisions for running the server as a background task according to the conventions of your operating system. Using the package's infrastructure to start the server will be much less work than figuring out how to do this yourself. Consult the package-level documentation for details.
@@ -112,14 +115,14 @@ A message like:
 FATAL:  could not create shared memory segment: Invalid argument
 DETAIL:  Failed system call was shmget(key=5440001, size=4011376640, 03600).
 
-probably means your kernel's limit on the size of shared memory is smaller than the work area PostgreSQL is trying to create (4011376640 bytes in this example). This is only likely to happen if you have set `shared_memory_type` to `sysv`. In that case, you can try starting the server with a smaller-than-normal number of buffers ([shared\_buffers](https://www.postgresql.org/docs/current/runtime-config-resource.html#GUC-SHARED-BUFFERS)), or reconfigure your kernel to increase the allowed shared memory size. You might also see this message when trying to start multiple servers on the same machine, if their total space requested exceeds the kernel limit.
+probably means your kernel's limit on the size of shared memory is smaller than the work area PostgreSQL is trying to create (4011376640 bytes in this example). This is only likely to happen if you have set `shared_memory_type` to `sysv`. In that case, you can try starting the server with a smaller-than-normal number of buffers ([shared\_buffers](postgres/docs/current/runtime-config-resource.html/index.md#GUC-SHARED-BUFFERS)), or reconfigure your kernel to increase the allowed shared memory size. You might also see this message when trying to start multiple servers on the same machine, if their total space requested exceeds the kernel limit.
 
 An error like:
 
 FATAL:  could not create semaphores: No space left on device
 DETAIL:  Failed system call was semget(5440126, 17, 03600).
 
-does _not_ mean you've run out of disk space. It means your kernel's limit on the number of System V semaphores is smaller than the number PostgreSQL wants to create. As above, you might be able to work around the problem by starting the server with a reduced number of allowed connections ([max\_connections](https://www.postgresql.org/docs/current/runtime-config-connection.html#GUC-MAX-CONNECTIONS)), but you'll eventually want to increase the kernel limit.
+does _not_ mean you've run out of disk space. It means your kernel's limit on the number of System V semaphores is smaller than the number PostgreSQL wants to create. As above, you might be able to work around the problem by starting the server with a reduced number of allowed connections ([max\_connections](postgres/docs/current/runtime-config-connection.html/index.md#GUC-MAX-CONNECTIONS)), but you'll eventually want to increase the kernel limit.
 
 Details about configuring System V IPC facilities are given in [Section 18.4.1](https://www.postgresql.org/docs/current/kernel-resources.html#SYSVIPC "18.4.1. Shared Memory and Semaphores").
 
@@ -130,13 +133,14 @@ Although the error conditions possible on the client side are quite varied and a
 psql: error: connection to server at "server.joe.com" (123.123.123.123), port 5432 failed: Connection refused
         Is the server running on that host and accepting TCP/IP connections?
 
-This is the generic “I couldn't find a server to talk to” failure. It looks like the above when TCP/IP communication is attempted. A common mistake is to forget to configure [listen\_addresses](https://www.postgresql.org/docs/current/runtime-config-connection.html#GUC-LISTEN-ADDRESSES) so that the server accepts remote TCP connections.
+This is the generic “I couldn't find a server to talk to” failure. It looks like the above when TCP/IP communication is attempted. A common mistake is to forget to configure [listen\_addresses](postgres/docs/current/runtime-config-connection.html/index.md#GUC-LISTEN-ADDRESSES) so that the server accepts remote TCP connections.
 
 Alternatively, you might get this when attempting Unix-domain socket communication to a local server:
 
 psql: error: connection to server on socket "/tmp/.s.PGSQL.5432" failed: No such file or directory
         Is the server running locally and accepting connections on that socket?
 
-If the server is indeed running, check that the client's idea of the socket path (here `/tmp`) agrees with the server's [unix\_socket\_directories](https://www.postgresql.org/docs/current/runtime-config-connection.html#GUC-UNIX-SOCKET-DIRECTORIES) setting.
+If the server is indeed running, check that the client's idea of the socket path (here `/tmp`) agrees with the server's [unix\_socket\_directories](postgres/docs/current/runtime-config-connection.html/index.md#GUC-UNIX-SOCKET-DIRECTORIES) setting.
 
 A connection failure message always shows the server address or socket path name, which is useful in verifying that the client is trying to connect to the right place. If there is in fact no server listening there, the kernel error message will typically be either `Connection refused` or `No such file or directory`, as illustrated. (It is important to realize that `Connection refused` in this context does _not_ mean that the server got your connection request and rejected it. That case will produce a different message, as shown in [Section 20.16](https://www.postgresql.org/docs/current/client-authentication-problems.html "20.16. Authentication Problems").) Other error messages such as `Connection timed out` might indicate more fundamental problems, like lack of network connectivity, or a firewall blocking the connection.
+

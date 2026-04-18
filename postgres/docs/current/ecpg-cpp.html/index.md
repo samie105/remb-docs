@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:40:24.865Z"
 content_hash: "3bbe8594e65410c10e856422dd51f409fc3bc043bf7910669ef517f964a8f282"
 menu_path: ["PostgreSQL: Documentation: 18: 34.13. C++ Applications"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/queries-order.html/index.md", "title": "PostgreSQL: Documentation: 18: 7.5.\u00a0Sorting Rows (ORDER BY)"}
+nav_next: {"path": "postgres/docs/current/tutorial-concepts.html/index.md", "title": "PostgreSQL: Documentation: 18: 2.2.\u00a0Concepts"}
 ---
+
 ECPG has some limited support for C++ applications. This section describes some caveats.
 
 The `ecpg` preprocessor takes an input file written in C (or something like C) and embedded SQL commands, converts the embedded SQL commands into C language chunks, and finally generates a `.c` file. The header file declarations of the library functions used by the C language chunks that `ecpg` generates are wrapped in `extern "C" { ... }` blocks when used under C++, so they should work seamlessly in C++.
@@ -176,3 +179,4 @@ c++ -c test\_cpp.cpp -o test\_cpp.o
 Finally, link these object files, `test_cpp.o` and `test_mod.o`, into one executable, using the C++ compiler driver:
 
 c++ test\_cpp.o test\_mod.o -lecpg -o test\_cpp
+

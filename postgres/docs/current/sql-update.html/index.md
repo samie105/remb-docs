@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:49:18.903Z"
 content_hash: "0d4db5bd6fdf5763cf865fb877487a6cb6b578cc0852d6c0d92b069d70c08429"
 menu_path: ["PostgreSQL: Documentation: 18: UPDATE"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/catalog-pg-statistic.html/index.md", "title": "PostgreSQL: Documentation: 18: 52.51.\u00a0pg_statistic"}
+nav_next: {"path": "postgres/docs/current/ecpg-sql-deallocate-descriptor.html/index.md", "title": "PostgreSQL: Documentation: 18: DEALLOCATE DESCRIPTOR"}
 ---
+
 UPDATE — update rows of a table
 
 ## Synopsis
@@ -187,7 +190,7 @@ Change the `kind` column of the table `films` in the row on which the cursor `c_
 
 UPDATE films SET kind = 'Dramatic' WHERE CURRENT OF c\_films;
 
-Updates affecting many rows can have negative effects on system performance, such as table bloat, increased replica lag, and increased lock contention. In such situations it can make sense to perform the operation in smaller batches, possibly with a `VACUUM` operation on the table between batches. While there is no `LIMIT` clause for `UPDATE`, it is possible to get a similar effect through the use of a [Common Table Expression](https://www.postgresql.org/docs/current/queries-with.html "7.8. WITH Queries (Common Table Expressions)") and a self-join. With the standard PostgreSQL table access method, a self-join on the system column [ctid](https://www.postgresql.org/docs/current/ddl-system-columns.html#DDL-SYSTEM-COLUMNS-CTID) is very efficient:
+Updates affecting many rows can have negative effects on system performance, such as table bloat, increased replica lag, and increased lock contention. In such situations it can make sense to perform the operation in smaller batches, possibly with a `VACUUM` operation on the table between batches. While there is no `LIMIT` clause for `UPDATE`, it is possible to get a similar effect through the use of a [Common Table Expression](https://www.postgresql.org/docs/current/queries-with.html "7.8. WITH Queries (Common Table Expressions)") and a self-join. With the standard PostgreSQL table access method, a self-join on the system column [ctid](postgres/docs/current/ddl-system-columns.html/index.md#DDL-SYSTEM-COLUMNS-CTID) is very efficient:
 
 WITH exceeded\_max\_retries AS (
   SELECT w.ctid FROM work\_item AS w
@@ -209,3 +212,4 @@ This command conforms to the SQL standard, except that the `FROM` and `RETURNING
 Some other database systems offer a `FROM` option in which the target table is supposed to be listed again within `FROM`. That is not how PostgreSQL interprets `FROM`. Be careful when porting applications that use this extension.
 
 According to the standard, the source value for a parenthesized sub-list of target column names can be any row-valued expression yielding the correct number of columns. PostgreSQL only allows the source value to be a [row constructor](https://www.postgresql.org/docs/current/sql-expressions.html#SQL-SYNTAX-ROW-CONSTRUCTORS "4.2.13. Row Constructors") or a sub-`SELECT`. An individual column's updated value can be specified as `DEFAULT` in the row-constructor case, but not inside a sub-`SELECT`.
+

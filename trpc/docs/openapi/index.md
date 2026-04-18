@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:48:57.746Z"
 content_hash: "2d18322ee4331a6aa751a71053941ce5fba5f78e85e14acd26b89a0898bf898b"
 menu_path: ["OpenAPI (alpha)"]
 section_path: []
+nav_prev: {"path": "trpc/docs/rpc/index.md", "title": "HTTP RPC Specification"}
+nav_next: {"path": "trpc/docs/server/adapters/index.md", "title": "Overview"}
 ---
+
 caution
 
 This package is in alpha. APIs may change without notice.
@@ -43,7 +46,7 @@ note
 The generator works with your existing router — no annotations or decorators required. A few things to be aware of:
 
 *   **No output types needed** — unlike other OpenAPI tools, `.output()` schemas are optional. The generator infers return types from your implementation automatically.
-*   **Transformers** — if your server uses a [data transformer](https://trpc.io/docs/server/data-transformers), your OpenAPI clients must use the same one. See [Transformers](#transformers) for setup and cross-language options.
+*   **Transformers** — if your server uses a [data transformer](trpc/docs/server/data-transformers/index.md), your OpenAPI clients must use the same one. See [Transformers](#transformers) for setup and cross-language options.
 *   **Subscriptions** — currently excluded from the generated spec. SSE support is planned.
 *   **Descriptions** — Zod `.describe()` calls and JSDoc comments on types, routers, and procedures, all become `description` fields in the spec.
 
@@ -165,7 +168,7 @@ ts
 
 warning
 
-If your backend uses a [data transformer](https://trpc.io/docs/server/data-transformers) like `superjson`, you **must** pass it to the client config. Without this, Dates, Maps, Sets, and other non-JSON types may be silently wrong.
+If your backend uses a [data transformer](trpc/docs/server/data-transformers/index.md) like `superjson`, you **must** pass it to the client config. Without this, Dates, Maps, Sets, and other non-JSON types may be silently wrong.
 
 First generate your client code using Hey API's programmatic API, this way you can use `createTRPCHeyApiTypeResolvers` to ensure your emitted types are correct:
 
@@ -265,7 +268,7 @@ See the [Hey API config source](https://github.com/trpc/trpc/blob/f346e9bb97ff3c
 
 ### Transformers[​](#transformers "Direct link to Transformers")
 
-tRPC [data transformers](https://trpc.io/docs/server/data-transformers) let you send rich types like `Date`, `Map`, `Set`, and `BigInt` over the wire. When using the OpenAPI client, the same transformer must be configured on both the server and client so that inputs are serialised and outputs are deserialised correctly.
+tRPC [data transformers](trpc/docs/server/data-transformers/index.md) let you send rich types like `Date`, `Map`, `Set`, and `BigInt` over the wire. When using the OpenAPI client, the same transformer must be configured on both the server and client so that inputs are serialised and outputs are deserialised correctly.
 
 Any transformer that implements the tRPC `DataTransformer` interface (`serialize` / `deserialize`) works with `configureTRPCHeyApiClient`. Below are some tested options.
 
@@ -389,7 +392,7 @@ ts
 
 `};`
 
-Pass it to both `initTRPC.create({ transformer })` on the server and `configureTRPCHeyApiClient(client, { transformer })` on the client. See the [data transformers docs](https://trpc.io/docs/server/data-transformers) for more details.
+Pass it to both `initTRPC.create({ transformer })` on the server and `configureTRPCHeyApiClient(client, { transformer })` on the client. See the [data transformers docs](trpc/docs/server/data-transformers/index.md) for more details.
 
 ### Full example[​](#full-example "Direct link to Full example")
 
@@ -439,3 +442,4 @@ sh
 `error [api-path-removed-without-deprecation] in API GET /getBigInt`
 
   `api path removed without deprecation`
+

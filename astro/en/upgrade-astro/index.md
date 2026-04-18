@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:49:06.379Z"
 content_hash: "bbdd1248c651f8f693f4a7498f1a617eff2201c721ca2f52cc450978c27b364f"
 menu_path: ["Upgrade Astro"]
 section_path: []
+nav_prev: {"path": "astro/en/guides/sessions/index.md", "title": "Sessions"}
+nav_next: {"path": "astro/en/guides/upgrade-to/v6/index.md", "title": "Upgrade to Astro v6"}
 ---
+
 # Upgrade Astro
 
 This guide covers how to update your version of Astro and related dependencies, how to learn what has changed from one version to the next, and how to understand Astro’s versioning system and corresponding documentation updates.
@@ -206,3 +209,4 @@ The following rules define when Astro may deprecate, drop, or add support for ve
 The Core team will provide extended maintenance **for security fixes only** for one previous major version. This means that if the current major is `v4.*`, the Core team will back port security fixes and issue a new `v3.*` release.
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

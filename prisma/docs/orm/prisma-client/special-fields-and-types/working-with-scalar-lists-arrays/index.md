@@ -9,12 +9,15 @@ last_crawled_at: "2026-04-18T16:48:27.885Z"
 content_hash: "fffc6f2322586017758430a547e36cd0ead904656928deea7c4fdee9ae7fe7a9"
 menu_path: ["Working with scalar lists"]
 section_path: []
+nav_prev: {"path": "prisma/docs/orm/prisma-client/special-fields-and-types/working-with-composite-ids-and-constraints/index.md", "title": "Working with compound IDs and unique constraints"}
+nav_next: {"path": "prisma/docs/orm/prisma-client/special-fields-and-types/working-with-json-fields/index.md", "title": "Working with Json fields"}
 ---
+
 Special Fields and Types
 
 How to read, write, and filter by scalar lists / arrays
 
-[Scalar lists](https://www.prisma.io/docs/orm/reference/prisma-schema-reference#-modifier) are represented by the `[]` modifier and are only available if the underlying database supports scalar lists. The following example has one scalar `String` list named `pets`:
+[Scalar lists](prisma/docs/orm/reference/prisma-schema-reference/index.md#-modifier) are represented by the `[]` modifier and are only available if the underlying database supports scalar lists. The following example has one scalar `String` list named `pets`:
 
 Example field value:
 
@@ -22,7 +25,7 @@ Example field value:
 ["Fido", "Snoopy", "Brian"]
 ```
 
-The following example demonstrates how to [`set`](https://www.prisma.io/docs/orm/reference/prisma-client-reference) the value of a scalar list (`coinflips`) when you create a model:
+The following example demonstrates how to [`set`](prisma/docs/orm/reference/prisma-client-reference/index.md) the value of a scalar list (`coinflips`) when you create a model:
 
 ```
 const createdUser = await prisma.user.create({
@@ -33,7 +36,7 @@ const createdUser = await prisma.user.create({
 });
 ```
 
-The following example demonstrates how to [`unset`](https://www.prisma.io/docs/orm/reference/prisma-client-reference#unset) the value of a scalar list (`coinflips`):
+The following example demonstrates how to [`unset`](prisma/docs/orm/reference/prisma-client-reference/index.md#unset) the value of a scalar list (`coinflips`):
 
 ```
 const createdUser = await prisma.user.create({
@@ -48,7 +51,7 @@ const createdUser = await prisma.user.create({
 
 Unlike `set: null`, `unset` removes the list entirely.
 
-Use the [`push`](https://www.prisma.io/docs/orm/reference/prisma-client-reference#push) method to add a single value to a scalar list:
+Use the [`push`](prisma/docs/orm/reference/prisma-client-reference/index.md#push) method to add a single value to a scalar list:
 
 ```
 const userUpdate = await prisma.user.update({
@@ -90,7 +93,7 @@ if (user) {
 }
 ```
 
-Use [scalar list filters](https://www.prisma.io/docs/orm/reference/prisma-client-reference#scalar-list-filters) to filter for records with scalar lists that match a specific condition. The following example returns all posts where the tags list includes `databases` _and_ `typescript`:
+Use [scalar list filters](prisma/docs/orm/reference/prisma-client-reference/index.md#scalar-list-filters) to filter for records with scalar lists that match a specific condition. The following example returns all posts where the tags list includes `databases` _and_ `typescript`:
 
 ```
 const posts = await prisma.post.findMany({
@@ -155,3 +158,4 @@ The query does not return:
 To work around this issue, you can set the default value of array fields to `[]`.
 
 [Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/prisma-client/special-fields-and-types/working-with-scalar-lists-arrays.mdx)
+

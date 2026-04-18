@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:00:10.648Z"
 content_hash: "649da1e9213238996495c276a1a67e06f9014c51349d097c0d2beba8b6b6dc3b"
 menu_path: ["TLS"]
 section_path: []
+nav_prev: {"path": "bun/bun/docs/runtime/http/routing/index.md", "title": "Routing"}
+nav_next: {"path": "bun/bun/docs/runtime/http/server/index.md", "title": "Server"}
 ---
+
 Bun supports TLS out of the box, powered by [BoringSSL](https://boringssl.googlesource.com/boringssl). Enable TLS by passing in a value for `key` and `cert`; both are required to enable TLS.
 
 ```
@@ -106,3 +109,4 @@ Bun.serve({
   ],
 });
 ```
+

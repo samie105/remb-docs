@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:54:11.608Z"
 content_hash: "f792b08ef6629547f60b64f43c000423933a896ed12d43be281c85f3c8866bb8"
 menu_path: ["Server-Timing Middleware ​"]
 section_path: []
+nav_prev: {"path": "hono/docs/middleware/builtin/timeout/index.md", "title": "Timeout Middleware \u200b"}
+nav_next: {"path": "hono/docs/middleware/builtin/trailing-slash/index.md", "title": "Trailing Slash Middleware \u200b"}
 ---
+
 ## Server-Timing Middleware [​](#server-timing-middleware)
 
 The [Server-Timing](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Server-Timing) Middleware provides performance metrics in the response headers.
@@ -114,3 +117,4 @@ The origin this timings header should be readable.
 *   If string, from this domain(s). Multiple domains must be separated with a comma.
 
 The default is `false`. See more [docs](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Timing-Allow-Origin).
+

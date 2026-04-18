@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:50:14.131Z"
 content_hash: "ee749104c503ef696a13f4d79edc0726e2620a0a52b333015e9e73f5fd2d23ac"
 menu_path: ["Deno CLI Subcommands"]
 section_path: []
+nav_prev: {"path": "deno/deno/api/web/index.md", "title": "Web Platform APIs"}
+nav_next: {"path": "deno/deno/runtime/reference/cli/env_variables/index.md", "title": "Environment variables"}
 ---
+
 On this page
 
 *   [Execution](#execution)
@@ -64,3 +67,4 @@ The Deno CLI (Command Line Interface) allows you to interact with the Deno runti
 
 *   [Unstable feature flags](/runtime/reference/cli/unstable_flags/)
 *   [Integrating the Deno LSP](/runtime/reference/lsp_integration/)
+

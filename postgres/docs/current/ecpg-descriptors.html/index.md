@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:37:26.856Z"
 content_hash: "24121724c7c978d6b44ba65511ac8ddc80c2b56a90934ae8486bbab3359ea9a5"
 menu_path: ["PostgreSQL: Documentation: 18: 34.7. Using Descriptor Areas"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/runtime-config-short.html/index.md", "title": "PostgreSQL: Documentation: 18: 19.18.\u00a0Short Options"}
+nav_next: {"path": "postgres/docs/current/progress-reporting.html/index.md", "title": "PostgreSQL: Documentation: 18: 27.4.\u00a0Progress Reporting"}
 ---
+
 An SQL descriptor area is a more sophisticated method for processing the result of a `SELECT`, `FETCH` or a `DESCRIBE` statement. An SQL descriptor area groups the data of one row of data together with metadata items into one data structure. The metadata is particularly useful when executing dynamic SQL statements, where the nature of the result columns might not be known ahead of time. PostgreSQL provides two ways to use Descriptor Areas: the named SQL Descriptor Areas and the C-structure SQLDAs.
 
 ### 34.7.1. Named SQL Descriptor Areas [#](#ECPG-NAMED-DESCRIPTORS)
@@ -674,3 +677,4 @@ tup\_fetched = 3253694 (type: 9)
 tup\_inserted = 0 (type: 9)
 tup\_updated = 0 (type: 9)
 tup\_deleted = 0 (type: 9)
+

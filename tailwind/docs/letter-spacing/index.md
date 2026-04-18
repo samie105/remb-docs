@@ -9,15 +9,9 @@ last_crawled_at: "2026-04-18T16:56:02.198Z"
 content_hash: "2d1f991fa11842b527ce92a1c4042e1a879f6a84c20a99b1e779375aa7f729e4"
 menu_path: ["letter-spacing"]
 section_path: []
+nav_prev: {"path": "tailwind/docs/font-feature-settings/index.md", "title": "font-feature-settings"}
+nav_next: {"path": "tailwind/docs/line-clamp/index.md", "title": "line-clamp"}
 ---
-[](/)
-
-[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
-
-1.  Typography
-2.  letter-spacing
-
-Typography
 
 # letter-spacing
 
@@ -162,3 +156,4 @@ Make your ideas look awesome, without relying on a designer.
 ](https://www.refactoringui.com/?ref=sidebar)
 
 Copyright © 2026 Tailwind Labs Inc.·[Trademark Policy](/brand)
+

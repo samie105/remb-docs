@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:49:38.480Z"
 content_hash: "5f5f8d1f458dd5fd89e3ac70d3d2baa4237456392f1fcffc773314e7d18a3817"
 menu_path: ["PostgreSQL: Documentation: 18: B.6. History of Units"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/textsearch-psql.html/index.md", "title": "PostgreSQL: Documentation: 18: 12.10.\u00a0psql Support"}
+nav_next: {"path": "postgres/docs/current/contrib-dblink-connect.html/index.md", "title": "PostgreSQL: Documentation: 18: dblink_connect"}
 ---
+
 The SQL standard states that “Within the definition of a ‘datetime literal’, the ‘datetime values’ are constrained by the natural rules for dates and times according to the Gregorian calendar”. PostgreSQL follows the SQL standard's lead by counting dates exclusively in the Gregorian calendar, even for years before that calendar was in use. This rule is known as the _proleptic Gregorian calendar_.
 
 The Julian calendar was introduced by Julius Caesar in 45 BC. It was in common use in the Western world until the year 1582, when countries started changing to the Gregorian calendar. In the Julian calendar, the tropical year is approximated as 365 1/4 days = 365.25 days. This gives an error of about 1 day in 128 years.
@@ -38,3 +41,4 @@ $ **`cal 9 1752`**
 But, of course, this calendar is only valid for Great Britain and dominions, not other places. Since it would be difficult and confusing to try to track the actual calendars that were in use in various places at various times, PostgreSQL does not try, but rather follows the Gregorian calendar rules for all dates, even though this method is not historically accurate.
 
 Different calendars have been developed in various parts of the world, many predating the Gregorian system. For example, the beginnings of the Chinese calendar can be traced back to the 14th century BC. Legend has it that the Emperor Huangdi invented that calendar in 2637 BC. The People's Republic of China uses the Gregorian calendar for civil purposes. The Chinese calendar is used for determining festivals.
+

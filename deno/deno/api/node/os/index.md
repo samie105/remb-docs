@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:38:26.285Z"
 content_hash: "888e62675179f8570701959d05885baee2f826838a7ed58ce8d79e2a302758af"
 menu_path: ["os - Node documentation"]
 section_path: []
+nav_prev: {"path": "deno/deno/api/node/path/index.md", "title": "path - Node documentation"}
+nav_next: {"path": "deno/deno/api/node/perf_hooks/index.md", "title": "perf_hooks - Node documentation"}
 ---
+
 ### Usage in Deno
 
 ```typescript
@@ -1153,3 +1156,4 @@ v
 [EOL](.././os/~/EOL "EOL")
 
 The operating system-specific end-of-line marker.
+

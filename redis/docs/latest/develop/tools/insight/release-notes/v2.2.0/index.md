@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:15:24.066Z"
 content_hash: "b9ed730d84cca842e9904f95da8dcc1acffaf0305a6deed7d24b803424f11979"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Client tools","→","Client tools","→\n      \n        Redis Insight","→","Redis Insight","→\n      \n        Redis Insight release notes","→","Redis Insight release notes","→\n      \n        RedisInsight v2.2.0, May 2022","→","RedisInsight v2.2.0, May 2022"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Client tools","→","Client tools","→\n      \n        Redis Insight","→","Redis Insight","→\n      \n        Redis Insight release notes","→","Redis Insight release notes","→\n      \n        RedisInsight v2.2.0, May 2022","→","RedisInsight v2.2.0, May 2022"]
+nav_prev: {"path": "redis/docs/latest/develop/ai/redisvl/user_guide/threshold_optimization/index.md", "title": "Threshold Optimization"}
+nav_next: {"path": "redis/docs/latest/operate/rs/security/access-control/index.md", "title": "Access control"}
 ---
+
 # RedisInsight v2.2.0, May 2022
 
 RedisInsight v2.2.0
@@ -40,3 +43,4 @@ This is the General Availability (GA) release of RedisInsight 2.2.0
 *   [#656](https://github.com/RedisInsight/RedisInsight/pull/656) Binary key names will not trigger errors in databases with enabled OSS Cluster API. Data type, TTL, and size of such keys are displayed in the list of keys in all Redis instances. Key details are currently not available.
 
 ## On this page
+

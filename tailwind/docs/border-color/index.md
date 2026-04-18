@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:02:49.355Z"
 content_hash: "1ba9bf103dc8b306f10accbfb1e49ee4a361399df6e989753f4dbaa73de849eb"
 menu_path: ["border-color"]
 section_path: []
+nav_prev: {"path": "tailwind/docs/border-width/index.md", "title": "border-width"}
+nav_next: {"path": "tailwind/docs/border-style/index.md", "title": "border-style"}
 ---
+
 Utilities for controlling the color of an element's borders.
 
 Class
@@ -172,7 +175,7 @@ Email address
 <input class="border-2 border-gray-700 focus:border-pink-600 ..." />
 ```
 
-Learn more about using variants in the [variants documentation](https://tailwindcss.com/docs/hover-focus-and-other-states).
+Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).
 
 ### [Responsive design](#responsive-design)
 
@@ -182,7 +185,7 @@ Prefix a `border-color` utility with a breakpoint variant like `md:` to only app
 <div class="border-blue-500 md:border-green-500 ...">  <!-- ... --></div>
 ```
 
-Learn more about using variants in the [variants documentation](https://tailwindcss.com/docs/hover-focus-and-other-states).
+Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).
 
 ## [Customizing your theme](#customizing-your-theme)
 
@@ -198,4 +201,5 @@ Now the `border-regal-blue` utility can be used in your markup:
 <div class="border-regal-blue">  <!-- ... --></div>
 ```
 
-Learn more about customizing your theme in the [theme documentation](https://tailwindcss.com/docs/theme#customizing-your-theme).
+Learn more about customizing your theme in the [theme documentation](tailwind/docs/theme/index.md#customizing-your-theme).
+

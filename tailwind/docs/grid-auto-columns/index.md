@@ -9,15 +9,9 @@ last_crawled_at: "2026-04-18T16:48:24.835Z"
 content_hash: "08a93bc81df04a8ff4cd6571e06902a9b41a4d1c45b2bf91c0d846a7a8c0bab0"
 menu_path: ["grid-auto-columns"]
 section_path: []
+nav_prev: {"path": "tailwind/docs/grid-auto-flow/index.md", "title": "grid-auto-flow"}
+nav_next: {"path": "tailwind/docs/grid-auto-rows/index.md", "title": "grid-auto-rows"}
 ---
-[](/)
-
-[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
-
-1.  Flexbox & Grid
-2.  grid-auto-columns
-
-Flexbox & Grid
 
 # grid-auto-columns
 
@@ -110,3 +104,4 @@ Make your ideas look awesome, without relying on a designer.
 ](https://www.refactoringui.com/?ref=sidebar)
 
 Copyright © 2026 Tailwind Labs Inc.·[Trademark Policy](/brand)
+

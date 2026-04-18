@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:14:16.211Z"
 content_hash: "589ff25b42372a854313c27d4223af3cd1bd4bacb6df21c899ec316f3deda144"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Connect with Redis client API libraries","→","Connect with Redis client API libraries","→\n      \n        redis-rs guide (Rust)","→","redis-rs guide (Rust)"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Connect with Redis client API libraries","→","Connect with Redis client API libraries","→\n      \n        redis-rs guide (Rust)","→","redis-rs guide (Rust)"]
+nav_prev: {"path": "redis/docs/latest/integrate/fusioncache/index.md", "title": "FusionCache for C#/.NET"}
+nav_next: {"path": "redis/docs/latest/integrate/redisom-for-net/index.md", "title": "RedisOM for .NET"}
 ---
+
 # redis-rs guide (Rust)
 
 Connect your Rust application to a Redis database
@@ -827,3 +830,4 @@ mod tests {
 See the [`redis-rs`](https://docs.rs/redis/latest/redis/) documentation and the [GitHub repository](https://github.com/redis-rs/redis-rs) for more information and examples.
 
 ## On this page
+

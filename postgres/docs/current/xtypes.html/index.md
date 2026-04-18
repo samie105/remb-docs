@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:53:57.876Z"
 content_hash: "1090c2adcf85e54b7124e9faf0eaa7cd2577e99e73da9b527889ed3dddd0e377"
 menu_path: ["PostgreSQL: Documentation: 18: 36.13. User-Defined Types"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/pageinspect.html/index.md", "title": "PostgreSQL: Documentation: 18: F.23.\u00a0pageinspect \u2014 low-level inspection of database pages"}
+nav_next: {"path": "postgres/docs/current/ecpg-sql-type.html/index.md", "title": "PostgreSQL: Documentation: 18: TYPE"}
 ---
+
 As described in [Section 36.2](https://www.postgresql.org/docs/current/extend-type-system.html "36.2. The PostgreSQL Type System"), PostgreSQL can be extended to support new data types. This section describes how to define new base types, which are data types defined below the level of the SQL language. Creating a new base type requires implementing functions to operate on the type in a low-level language, usually C.
 
 The examples in this section can be found in `complex.sql` and `complex.c` in the `src/tutorial` directory of the source distribution. See the `README` file in that directory for instructions about running the examples.
@@ -163,3 +166,4 @@ C functions that know how to work with an expanded representation typically fall
 The TOAST infrastructure not only allows regular varlena values to be distinguished from expanded values, but also distinguishes “read-write” and “read-only” pointers to expanded values. C functions that only need to examine an expanded value, or will only change it in safe and non-semantically-visible ways, need not care which type of pointer they receive. C functions that produce a modified version of an input value are allowed to modify an expanded input value in-place if they receive a read-write pointer, but must not modify the input if they receive a read-only pointer; in that case they have to copy the value first, producing a new value to modify. A C function that has constructed a new expanded value should always return a read-write pointer to it. Also, a C function that is modifying a read-write expanded value in-place should take care to leave the value in a sane state if it fails partway through.
 
 For examples of working with expanded values, see the standard array infrastructure, particularly `src/backend/utils/adt/array_expanded.c`.
+

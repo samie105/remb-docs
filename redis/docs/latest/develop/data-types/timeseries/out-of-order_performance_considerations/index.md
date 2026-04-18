@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:04:33.067Z"
 content_hash: "6c5b2f943abc25a5b7c86d6e1ecce94dba26c1c37da269dec448a2f5a502cbff"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis data types","→","Redis data types","→\n      \n        Time series","→","Time series","→\n      \n        Out-of-order / backfilled ingestion performance considerations","→","Out-of-order / backfilled ingestion performance considerations"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis data types","→","Redis data types","→\n      \n        Time series","→","Time series","→\n      \n        Out-of-order / backfilled ingestion performance considerations","→","Out-of-order / backfilled ingestion performance considerations"]
+nav_prev: {"path": "redis/docs/latest/operate/kubernetes/re-databases/db-controller/index.md", "title": "Manage Redis Enterprise databases for Kubernetes"}
+nav_next: {"path": "redis/docs/latest/develop/clients/jedis/transpipe/index.md", "title": "Pipelines and transactions"}
 ---
+
 # Out-of-order / backfilled ingestion performance considerations
 
 Out-of-order / backfilled ingestion performance considerations
@@ -55,3 +58,4 @@ As visible on the charts and tables below, the chunk size does not affect the ov
  [![uncompressed-overall-ops-sec-vs-out-of-order-percentage](/docs/latest/images/timeseries/uncompressed-overall-ops-sec-vs-out-of-order-percentage.webp)](/docs/latest/images/timeseries/uncompressed-overall-ops-sec-vs-out-of-order-percentage.webp)[![uncompressed-overall-p50-lat-vs-out-of-order-percentage](/docs/latest/images/timeseries/uncompressed-overall-p50-lat-vs-out-of-order-percentage.webp) ](/docs/latest/images/timeseries/uncompressed-overall-p50-lat-vs-out-of-order-percentage.webp)[![uncompressed-out-of-order-overhead-table](/docs/latest/images/timeseries/uncompressed-out-of-order-overhead-table.webp)](/docs/latest/images/timeseries/uncompressed-out-of-order-overhead-table.webp)
 
 ## On this page
+

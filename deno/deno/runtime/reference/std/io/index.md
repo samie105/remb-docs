@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:03:28.455Z"
 content_hash: "d5c303865920c1c7764695ca25212c6e6ea45076b195a85b7d5c0526c4740609"
 menu_path: ["@std/io"]
 section_path: []
+nav_prev: {"path": "deno/deno/runtime/reference/std/internal/index.md", "title": "@std/internal"}
+nav_next: {"path": "deno/deno/runtime/reference/std/json/index.md", "title": "@std/json"}
 ---
+
 On this page
 
 *   [Overview](#overview)
@@ -41,3 +44,4 @@ deno add jsr:@std/io
 ```
 
 [See all symbols in @std/io on](https://jsr.io/@std/io/doc)
+

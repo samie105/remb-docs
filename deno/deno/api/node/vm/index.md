@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:44:05.390Z"
 content_hash: "d676b7188f06e78713725be1094ff9bca07fee8f47a8f9e3d7a0c5a1f82977d6"
 menu_path: ["vm - Node documentation"]
 section_path: []
+nav_prev: {"path": "deno/deno/api/node/worker_threads/index.md", "title": "worker_threads - Node documentation"}
+nav_next: {"path": "deno/deno/api/node/zlib/index.md", "title": "zlib - Node documentation"}
 ---
+
 ### Usage in Deno
 
 ```typescript
@@ -314,3 +317,4 @@ v
 [constants.USE\_MAIN\_CONTEXT\_DEFAULT\_LOADER](.././vm/~/constants.USE_MAIN_CONTEXT_DEFAULT_LOADER "constants.USE_MAIN_CONTEXT_DEFAULT_LOADER")
 
 A constant that can be used as the `importModuleDynamically` option to `vm.Script` and `vm.compileFunction()` so that Node.js uses the default ESM loader from the main context to load the requested module.
+

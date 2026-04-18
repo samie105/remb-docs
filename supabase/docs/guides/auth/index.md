@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:31:59.201Z"
 content_hash: "320556ef65810d04102c53fc4aaa305e1e175ba0c6ceefb14785159f500c36a5"
 menu_path: ["Auth","Auth","Overview","Overview"]
 section_path: ["Auth","Auth","Overview","Overview"]
+nav_prev: {"path": "supabase/docs/guides/ai/index.md", "title": "AI & Vectors"}
+nav_next: {"path": "supabase/docs/guides/cron/index.md", "title": "Cron"}
 ---
+
 # 
 
 Auth
@@ -195,3 +198,4 @@ Charges apply to Monthly Active Users (MAU), Monthly Active Third-Party Users (T
 *   [Pricing Third-Party MAU](/docs/guides/platform/manage-your-usage/monthly-active-users-third-party)
 *   [Pricing SSO MAU](/docs/guides/platform/manage-your-usage/monthly-active-users-sso)
 *   [Advanced MFA - Phone](/docs/guides/platform/manage-your-usage/advanced-mfa-phone)
+

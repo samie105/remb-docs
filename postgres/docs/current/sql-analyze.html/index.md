@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:54:23.700Z"
 content_hash: "f1191acc7b2265ac0c4ffeb8770f1f75d4d0d685c8798500794778600319acdf"
 menu_path: ["PostgreSQL: Documentation: 18: ANALYZE"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/plpython-data.html/index.md", "title": "PostgreSQL: Documentation: 18: 44.2.\u00a0Data Values"}
+nav_next: {"path": "postgres/docs/current/datatype-xml.html/index.md", "title": "PostgreSQL: Documentation: 18: 8.13.\u00a0XML Type"}
 ---
+
 ## Description
 
 `ANALYZE` collects statistics about the contents of tables in the database, and stores the results in the [`pg_statistic`](https://www.postgresql.org/docs/current/catalog-pg-statistic.html "52.51. pg_statistic") system catalog. Subsequently, the query planner uses these statistics to help determine the most efficient execution plans for queries.
@@ -28,7 +31,7 @@ Specifies that `ANALYZE` should not wait for any conflicting locks to be release
 
 `BUFFER_USAGE_LIMIT`
 
-Specifies the [](https://www.postgresql.org/docs/current/glossary.html#GLOSSARY-BUFFER-ACCESS-STRATEGY)[Buffer Access Strategy](https://www.postgresql.org/docs/current/glossary.html#GLOSSARY-BUFFER-ACCESS-STRATEGY "Buffer Access Strategy") ring buffer size for `ANALYZE`. This size is used to calculate the number of shared buffers which will be reused as part of this strategy. `0` disables use of a `Buffer Access Strategy`. When this option is not specified, `ANALYZE` uses the value from [vacuum\_buffer\_usage\_limit](https://www.postgresql.org/docs/current/runtime-config-resource.html#GUC-VACUUM-BUFFER-USAGE-LIMIT). Higher settings can allow `ANALYZE` to run more quickly, but having too large a setting may cause too many other useful pages to be evicted from shared buffers. The minimum value is `128 kB` and the maximum value is `16 GB`.
+Specifies the [](postgres/docs/current/glossary.html/index.md#GLOSSARY-BUFFER-ACCESS-STRATEGY)[Buffer Access Strategy](https://www.postgresql.org/docs/current/glossary.html#GLOSSARY-BUFFER-ACCESS-STRATEGY "Buffer Access Strategy") ring buffer size for `ANALYZE`. This size is used to calculate the number of shared buffers which will be reused as part of this strategy. `0` disables use of a `Buffer Access Strategy`. When this option is not specified, `ANALYZE` uses the value from [vacuum\_buffer\_usage\_limit](postgres/docs/current/runtime-config-resource.html/index.md#GUC-VACUUM-BUFFER-USAGE-LIMIT). Higher settings can allow `ANALYZE` to run more quickly, but having too large a setting may cause too many other useful pages to be evicted from shared buffers. The minimum value is `128 kB` and the maximum value is `16 GB`.
 
 _`boolean`_
 
@@ -58,7 +61,7 @@ Foreign tables are analyzed only when explicitly selected. Not all foreign data 
 
 In the default PostgreSQL configuration, the autovacuum daemon (see [Section 24.1.6](https://www.postgresql.org/docs/current/routine-vacuuming.html#AUTOVACUUM "24.1.6. The Autovacuum Daemon")) takes care of automatic analyzing of tables when they are first loaded with data, and as they change throughout regular operation. When autovacuum is disabled, it is a good idea to run `ANALYZE` periodically, or just after making major changes in the contents of a table. Accurate statistics will help the planner to choose the most appropriate query plan, and thereby improve the speed of query processing. A common strategy for read-mostly databases is to run [`VACUUM`](https://www.postgresql.org/docs/current/sql-vacuum.html "VACUUM") and `ANALYZE` once a day during a low-usage time of day. (This will not be sufficient if there is heavy update activity.)
 
-While `ANALYZE` is running, the [search\_path](https://www.postgresql.org/docs/current/runtime-config-client.html#GUC-SEARCH-PATH) is temporarily changed to `pg_catalog, pg_temp`.
+While `ANALYZE` is running, the [search\_path](postgres/docs/current/runtime-config-client.html/index.md#GUC-SEARCH-PATH) is temporarily changed to `pg_catalog, pg_temp`.
 
 `ANALYZE` requires only a read lock on the target table, so it can run in parallel with other non-DDL activity on the table.
 
@@ -66,7 +69,7 @@ The statistics collected by `ANALYZE` usually include a list of some of the most
 
 For large tables, `ANALYZE` takes a random sample of the table contents, rather than examining every row. This allows even very large tables to be analyzed in a small amount of time. Note, however, that the statistics are only approximate, and will change slightly each time `ANALYZE` is run, even if the actual table contents did not change. This might result in small changes in the planner's estimated costs shown by [`EXPLAIN`](https://www.postgresql.org/docs/current/sql-explain.html "EXPLAIN"). In rare situations, this non-determinism will cause the planner's choices of query plans to change after `ANALYZE` is run. To avoid this, raise the amount of statistics collected by `ANALYZE`, as described below.
 
-The extent of analysis can be controlled by adjusting the [default\_statistics\_target](https://www.postgresql.org/docs/current/runtime-config-query.html#GUC-DEFAULT-STATISTICS-TARGET) configuration variable, or on a column-by-column basis by setting the per-column statistics target with [`ALTER TABLE ... ALTER COLUMN ... SET STATISTICS`](https://www.postgresql.org/docs/current/sql-altertable.html "ALTER TABLE"). The target value sets the maximum number of entries in the most-common-value list and the maximum number of bins in the histogram. The default target value is 100, but this can be adjusted up or down to trade off accuracy of planner estimates against the time taken for `ANALYZE` and the amount of space occupied in `pg_statistic`. In particular, setting the statistics target to zero disables collection of statistics for that column. It might be useful to do that for columns that are never used as part of the `WHERE`, `GROUP BY`, or `ORDER BY` clauses of queries, since the planner will have no use for statistics on such columns.
+The extent of analysis can be controlled by adjusting the [default\_statistics\_target](postgres/docs/current/runtime-config-query.html/index.md#GUC-DEFAULT-STATISTICS-TARGET) configuration variable, or on a column-by-column basis by setting the per-column statistics target with [`ALTER TABLE ... ALTER COLUMN ... SET STATISTICS`](https://www.postgresql.org/docs/current/sql-altertable.html "ALTER TABLE"). The target value sets the maximum number of entries in the most-common-value list and the maximum number of bins in the histogram. The default target value is 100, but this can be adjusted up or down to trade off accuracy of planner estimates against the time taken for `ANALYZE` and the amount of space occupied in `pg_statistic`. In particular, setting the statistics target to zero disables collection of statistics for that column. It might be useful to do that for columns that are never used as part of the `WHERE`, `GROUP BY`, or `ORDER BY` clauses of queries, since the planner will have no use for statistics on such columns.
 
 The largest statistics target among the columns being analyzed determines the number of table rows sampled to prepare the statistics. Increasing the target causes a proportional increase in the time and space needed to do `ANALYZE`.
 
@@ -91,3 +94,4 @@ There is no `ANALYZE` statement in the SQL standard.
 The following syntax was used before PostgreSQL version 11 and is still supported:
 
 ANALYZE \[ VERBOSE \] \[ _`table_and_columns`_ \[, ...\] \]
+

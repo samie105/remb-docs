@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:53:45.238Z"
 content_hash: "886a1207a996dd973598a28b8e289dd34bf8d62f0bd0e3ddfa90978c317a9c4a"
 menu_path: ["PostgreSQL: Documentation: 18: 63.5. Index Uniqueness Checks"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/sql-call.html/index.md", "title": "PostgreSQL: Documentation: 18: CALL"}
+nav_next: {"path": "postgres/docs/current/runtime-config-connection.html/index.md", "title": "PostgreSQL: Documentation: 18: 19.3.\u00a0Connections and Authentication"}
 ---
+
 PostgreSQL enforces SQL uniqueness constraints using _unique indexes_, which are indexes that disallow multiple entries with identical keys. An access method that supports this feature sets `amcanunique` true. (At present, only b-tree supports it.) Columns listed in the `INCLUDE` clause are not considered when enforcing uniqueness.
 
 Because of MVCC, it is always necessary to allow duplicate entries to exist physically in an index: the entries might refer to successive versions of a single logical row. The behavior we actually want to enforce is that no MVCC snapshot could include two rows with equal index keys. This breaks down into the following cases that must be checked when inserting a new row into a unique index:
@@ -38,3 +41,4 @@ If the unique constraint is deferrable, there is additional complexity: we need 
 *   `UNIQUE_CHECK_EXISTING` indicates that this is a deferred recheck of a row that was reported as a potential uniqueness violation. Although this is implemented by calling `aminsert`, the access method must _not_ insert a new index entry in this case. The index entry is already present. Rather, the access method must check to see if there is another live index entry. If so, and if the target row is also still live, report error.
     
     It is recommended that in a `UNIQUE_CHECK_EXISTING` call, the access method further verify that the target row actually does have an existing entry in the index, and report error if not. This is a good idea because the index tuple values passed to `aminsert` will have been recomputed. If the index definition involves functions that are not really immutable, we might be checking the wrong area of the index. Checking that the target row is found in the recheck verifies that we are scanning for the same tuple values as were used in the original insertion.
+

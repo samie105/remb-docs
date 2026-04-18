@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:47:53.426Z"
 content_hash: "85197f70dde21382b26f782e3296c1c9307387f9eacacbd7c536f1fc0c3717f5"
 menu_path: ["Platform","Platform","Platform Configuration","Platform Configuration","Default Platform Permissions","Default Platform Permissions"]
 section_path: ["Platform","Platform","Platform Configuration","Platform Configuration","Default Platform Permissions","Default Platform Permissions"]
+nav_prev: {"path": "supabase/docs/guides/platform/multi-factor-authentication/index.md", "title": "Multi-factor Authentication"}
+nav_next: {"path": "supabase/docs/guides/platform/network-restrictions/index.md", "title": "Network Restrictions"}
 ---
+
 # 
 
 Permissions
@@ -24,3 +27,4 @@ However, these services assume a base level of access to their data, in order to
 *   all entities under the `auth` schema are owned by `supabase_auth_admin`
 
 It is possible for violations of these assumptions to not cause an immediate outage, but take effect at a later time when a newer migration becomes available.
+

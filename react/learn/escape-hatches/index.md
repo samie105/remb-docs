@@ -9,12 +9,15 @@ last_crawled_at: "2026-04-18T16:43:17.396Z"
 content_hash: "3409db7cc2470de7ebad07fd3df9d63a97d1a8baa8dacd18d33ccbaf727f85d8"
 menu_path: ["Escape Hatches"]
 section_path: []
+nav_prev: {"path": "react/learn/scaling-up-with-reducer-and-context/index.md", "title": "Scaling Up with Reducer and Context"}
+nav_next: {"path": "react/learn/referencing-values-with-refs/index.md", "title": "Referencing Values with Refs"}
 ---
+
 Some of your components may need to control and synchronize with systems outside of React. For example, you might need to focus an input using the browser API, play and pause a video player implemented without React, or connect and listen to messages from a remote server. In this chapter, you’ll learn the escape hatches that let you “step outside” React and connect to external systems. Most of your application logic and data flow should not rely on these features.
 
 ## Referencing values with refs[](#referencing-values-with-refs "Link for Referencing values with refs ")
 
-When you want a component to “remember” some information, but you don’t want that information to [trigger new renders](https://react.dev/learn/render-and-commit), you can use a _ref_:
+When you want a component to “remember” some information, but you don’t want that information to [trigger new renders](react/learn/render-and-commit/index.md), you can use a _ref_:
 
 ```
 const ref = useRef(0);
@@ -442,4 +445,5 @@ You can create custom Hooks, compose them together, pass data between them, and 
 
 ## What’s next?[](#whats-next "Link for What’s next? ")
 
-Head over to [Referencing Values with Refs](https://react.dev/learn/referencing-values-with-refs) to start reading this chapter page by page!
+Head over to [Referencing Values with Refs](react/learn/referencing-values-with-refs/index.md) to start reading this chapter page by page!
+

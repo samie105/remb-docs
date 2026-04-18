@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:48:59.949Z"
 content_hash: "bb2c12bfdca047d33516157af9985ba9c77a799f9139c2a08292318c4e684544"
 menu_path: ["Realtime","Realtime","Deep dive","Deep dive","Concepts","Concepts"]
 section_path: ["Realtime","Realtime","Deep dive","Deep dive","Concepts","Concepts"]
+nav_prev: {"path": "supabase/docs/guides/realtime/benchmarks/index.md", "title": "Benchmarks"}
+nav_next: {"path": "supabase/docs/guides/realtime/error_codes/index.md", "title": "Operational Error Codes"}
 ---
+
 # 
 
 Realtime Concepts
@@ -243,3 +246,4 @@ Realtime creates two functions on your database:
 
 *   `realtime.send` - Inserts an entry into `realtime.messages` table that will trigger the replication slot to broadcast the changes to the clients. It also captures errors to prevent the trigger from breaking.
 *   `realtime.broadcast_changes` - uses `realtime.send` to broadcast the changes with a format that is compatible with Postgres Changes
+

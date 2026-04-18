@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:05:37.418Z"
 content_hash: "cfcf58023fa0ae301ea61c7c97188f083a677e2b315824be75461e9de050a7dd"
 menu_path: ["@std/streams"]
 section_path: []
+nav_prev: {"path": "deno/deno/runtime/reference/std/semver/index.md", "title": "@std/semver"}
+nav_next: {"path": "deno/deno/runtime/reference/std/tar/index.md", "title": "@std/tar"}
 ---
+
 On this page
 
 *   [Overview](#overview)
@@ -40,3 +43,4 @@ deno add jsr:@std/streams
 ```
 
 [See all symbols in @std/streams on](https://jsr.io/@std/streams/doc)
+

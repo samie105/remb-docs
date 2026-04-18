@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:42:38.335Z"
 content_hash: "142d6af8bd5a4028a9f5399d39fb5e0331e6793b1ca660ed6404bbece3586379"
 menu_path: ["Template expressions reference"]
 section_path: []
+nav_prev: {"path": "astro/en/contribute/index.md", "title": "Contribute to Astro"}
+nav_next: {"path": "astro/en/reference/directives-reference/index.md", "title": "Template directives reference"}
 ---
+
 # Template expressions reference
 
 Astro component syntax is a superset of HTML. The syntax was designed to feel familiar to anyone with experience writing HTML or JSX, and adds support for including components and JavaScript expressions.
@@ -206,3 +209,4 @@ And would render HTML like this:
 ```
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

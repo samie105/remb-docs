@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:36:41.475Z"
 content_hash: "e99cdff5ff1b345199b1bbc670b3579f0e95d33f37b43ae2b342cf175e7eaa99"
 menu_path: ["Deploy your Astro Site to Cloudflare"]
 section_path: []
+nav_prev: {"path": "astro/en/guides/deploy/clever-cloud/index.md", "title": "Deploy your Astro Site to Clever Cloud"}
+nav_next: {"path": "astro/en/guides/deploy/cloudray/index.md", "title": "Deploy your Astro Site with CloudRay"}
 ---
+
 # Deploy your Astro Site to Cloudflare
 
 You can deploy full-stack applications, including front-end static assets and back-end APIs, as well as on-demand rendered sites, to [Cloudflare Workers](https://developers.cloudflare.com/workers/static-assets/).
@@ -266,3 +269,4 @@ If you are building a project that is using on-demand rendering with [the Cloudf
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

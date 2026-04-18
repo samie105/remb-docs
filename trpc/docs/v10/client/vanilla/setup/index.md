@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:34:56.112Z"
 content_hash: "fac0ae57e4e54aa0cc08140812bb4b888e876969af353fbc62f8095ab0eb5d4c"
 menu_path: ["Set up a tRPC Client"]
 section_path: []
+nav_prev: {"path": "trpc/docs/v10/client/vanilla/aborting-procedure-calls/index.md", "title": "Aborting Procedure Calls"}
+nav_next: {"path": "trpc/docs/v10/client/vanilla/infer-types/index.md", "title": "Inferring Types"}
 ---
+
 ### 1\. Install the tRPC Client library[​](#1-install-the-trpc-client-library "Direct link to 1. Install the tRPC Client library")
 
 Use your preferred package manager to install the `@trpc/client` library, and also install `@trpc/server` which contains some required types.
@@ -41,7 +44,7 @@ By using `import type` you ensure that the reference will be stripped at compile
 
 ### 3\. Initialize the tRPC client[​](#3-initialize-the-trpc-client "Direct link to 3. Initialize the tRPC client")
 
-Create a tRPC client with the `createTRPCProxyClient` method, and add a `links` array with a [terminating link](https://trpc.io/docs/v10/client/links#the-terminating-link) pointing at your API. To learn more about tRPC links, [click here](https://trpc.io/docs/v10/client/links).
+Create a tRPC client with the `createTRPCProxyClient` method, and add a `links` array with a [terminating link](trpc/docs/v10/client/links/index.md#the-terminating-link) pointing at your API. To learn more about tRPC links, [click here](trpc/docs/v10/client/links/index.md).
 
 client.ts
 
@@ -94,3 +97,4 @@ ts
 `// => { id: 'id_frodo', name: 'Frodo' };`
 
 You're all set!
+

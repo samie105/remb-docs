@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:50:38.440Z"
 content_hash: "bbe3b4005ad892c044f2319a98779ba807e034a9ccf9268a55d7da7b307191ef"
 menu_path: ["PostgreSQL: Documentation: 18: 35.45. routines"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/functions-srf.html/index.md", "title": "PostgreSQL: Documentation: 18: 9.26.\u00a0Set Returning Functions"}
+nav_next: {"path": "postgres/docs/current/datetime-keywords.html/index.md", "title": "PostgreSQL: Documentation: 18: B.3.\u00a0Date/Time Key Words"}
 ---
+
 Column Type
 
 Description
@@ -341,3 +344,4 @@ Applies to a feature not available in PostgreSQL
 `result_cast_dtd_identifier` `sql_identifier`
 
 Applies to a feature not available in PostgreSQL
+

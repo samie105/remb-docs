@@ -9,15 +9,9 @@ last_crawled_at: "2026-04-18T17:16:08.262Z"
 content_hash: "1dc4e5b38636f381ed780bdb0bd2d6ba7c1dcb3b34ba5d034f058bcb3ad6e2b1"
 menu_path: ["field-sizing"]
 section_path: []
+nav_prev: {"path": "tailwind/docs/cursor/index.md", "title": "cursor"}
+nav_next: {"path": "tailwind/docs/pointer-events/index.md", "title": "pointer-events"}
 ---
-[](/)
-
-[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
-
-1.  Interactivity
-2.  field-sizing
-
-Interactivity
 
 # field-sizing
 
@@ -90,3 +84,4 @@ Short, tactical video lessons from the creator of Tailwind CSS, delivered direct
 [Get the free course](/build-uis-that-dont-suck)
 
 Copyright © 2026 Tailwind Labs Inc.·[Trademark Policy](/brand)
+

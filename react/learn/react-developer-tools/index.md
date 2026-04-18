@@ -9,30 +9,10 @@ last_crawled_at: "2026-04-18T16:34:40.272Z"
 content_hash: "54bc954b44714db78639dfcb008b4f4e31356fd140a69fb201043bc6aec2ce4d"
 menu_path: ["React Developer Tools"]
 section_path: []
+nav_prev: {"path": "react/learn/typescript/index.md", "title": "Using TypeScript"}
+nav_next: {"path": "react/learn/react-compiler/index.md", "title": "React Compiler"}
 ---
-Use React Developer Tools to inspect React [components](https://react.dev/learn/your-first-component), edit [props](https://react.dev/learn/passing-props-to-a-component) and [state](https://react.dev/learn/state-a-components-memory), and identify performance problems.
 
-### You will learn
-
-*   How to install React Developer Tools
-
-## Browser extension[](#browser-extension "Link for Browser extension ")
-
-The easiest way to debug websites built with React is to install the React Developer Tools browser extension. It is available for several popular browsers:
-
-*   [Install for **Chrome**](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en)
-*   [Install for **Firefox**](https://addons.mozilla.org/en-US/firefox/addon/react-devtools/)
-*   [Install for **Edge**](https://microsoftedge.microsoft.com/addons/detail/react-developer-tools/gpphkfbcpidddadnkolkpfckpihlkkil)
-
-Now, if you visit a website **built with React,** you will see the _Components_ and _Profiler_ panels.
-
-![React Developer Tools extension](https://react.dev/images/docs/react-devtools-extension.png)
-
-### Safari and other browsers[](#safari-and-other-browsers "Link for Safari and other browsers ")
-
-For other browsers (for example, Safari), install the [`react-devtools`](https://www.npmjs.com/package/react-devtools) npm package:
-
-```
 # Yarnyarn global add react-devtools# Npmnpm install -g react-devtools
 ```
 
@@ -59,3 +39,4 @@ To inspect apps built with [React Native](https://reactnative.dev/), you can use
 [Learn more about debugging in React Native.](https://reactnative.dev/docs/debugging)
 
 > For versions of React Native earlier than 0.76, please use the standalone build of React DevTools by following the [Safari and other browsers](#safari-and-other-browsers) guide above.
+

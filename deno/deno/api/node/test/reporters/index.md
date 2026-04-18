@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:41:38.999Z"
 content_hash: "d744fbc0b156b4c05b94ac208533b9a0e3ead2133b420c399d2d72b2ec2f5a1e"
 menu_path: ["test/reporters - Node documentation"]
 section_path: []
+nav_prev: {"path": "deno/deno/api/node/test/index.md", "title": "test - Node documentation"}
+nav_next: {"path": "deno/deno/api/node/timers/index.md", "title": "timers - Node documentation"}
 ---
+
 ### Usage in Deno
 
 ```typescript
@@ -97,3 +100,4 @@ v
 [spec](../.././test/reporters/~/spec "spec")
 
 The `spec` reporter outputs the test results in a human-readable format.
+

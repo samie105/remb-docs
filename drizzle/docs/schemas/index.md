@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:20:21.699Z"
 content_hash: "49aec2b8c70ab9c77b237f84356be680f402e0a4ac8ef8970832909f6aa53d9e"
 menu_path: ["Table schemas"]
 section_path: []
+nav_prev: {"path": "drizzle/docs/views/index.md", "title": "Views"}
+nav_next: {"path": "drizzle/docs/relations-v2/index.md", "title": "Drizzle relations"}
 ---
+
 ## Table schemas
 
 PostgreSQL
@@ -154,3 +157,4 @@ CREATE TABLE "my_schema"."users" (
   "color" "my_schema"."colors" DEFAULT 'red'
 );
 ```
+

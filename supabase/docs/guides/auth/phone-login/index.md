@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:38:49.142Z"
 content_hash: "3dba2ff0417b11d40d339be845145e567fd254c5c702db4515a6ce6f29eeb31f"
 menu_path: ["Auth","Auth","Flows (How-tos)","Flows (How-tos)","Phone Login","Phone Login"]
 section_path: ["Auth","Auth","Flows (How-tos)","Flows (How-tos)","Phone Login","Phone Login"]
+nav_prev: {"path": "supabase/docs/guides/auth/rate-limits/index.md", "title": "Rate limits"}
+nav_next: {"path": "supabase/docs/guides/auth/redirect-urls/index.md", "title": "Redirect URLs"}
 ---
+
 # 
 
 Phone Login
@@ -83,3 +86,4 @@ To update a user's phone number, the user must be logged in. Call [`updateUser()
 ```
 
 The user receives an SMS with a 6-digit pin that you must [verify](#verifying-a-phone-otp) within 60 seconds. Use the `phone_change` type when calling `verifyOTP` to update a user’s phone number.
+

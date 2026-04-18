@@ -9,15 +9,9 @@ last_crawled_at: "2026-04-18T17:15:35.842Z"
 content_hash: "8723105884ec9ec2741ffcab0166f619b573a128d0d87c729ce51ab247c85dda"
 menu_path: ["cursor"]
 section_path: []
+nav_prev: {"path": "tailwind/docs/color-scheme/index.md", "title": "color-scheme"}
+nav_next: {"path": "tailwind/docs/field-sizing/index.md", "title": "field-sizing"}
 ---
-[](/)
-
-[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
-
-1.  Interactivity
-2.  cursor
-
-Interactivity
 
 # cursor
 
@@ -124,3 +118,4 @@ Short, tactical video lessons from the creator of Tailwind CSS, delivered direct
 [Get the free course](/build-uis-that-dont-suck)
 
 Copyright © 2026 Tailwind Labs Inc.·[Trademark Policy](/brand)
+

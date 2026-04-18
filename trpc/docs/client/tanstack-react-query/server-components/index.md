@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:47:38.750Z"
 content_hash: "37623a97043f88b36400154fa89f1a8fc235d328c966fc894e59510345adfadb"
 menu_path: ["Set up with React Server Components"]
 section_path: []
+nav_prev: {"path": "trpc/docs/client/tanstack-react-query/migrating/index.md", "title": "Migrating from the classic React Client"}
+nav_next: {"path": "trpc/docs/client/tanstack-react-query/setup/index.md", "title": "TanStack React Query"}
 ---
+
 This guide is an overview of how one may use tRPC with a React Server Components (RSC) framework such as Next.js App Router. Be aware that RSC on its own solves a lot of the same problems tRPC was designed to solve, so you may not need tRPC at all.
 
 There is also not a one-size-fits-all way to integrate tRPC with RSCs, so see this guide as a starting point and adjust it to your needs and preferences.
@@ -32,7 +35,7 @@ npm install @trpc/server @trpc/client @trpc/tanstack-react-query @tanstack/react
 
 ### 2\. Create a tRPC router[​](#2-create-a-trpc-router "Direct link to 2. Create a tRPC router")
 
-Initialize your tRPC backend in `trpc/init.ts` using the `initTRPC` function, and create your first router. We're going to make a simple "hello world" router and procedure here - but for deeper information on creating your tRPC API you should refer to the [Quickstart guide](https://trpc.io/docs/quickstart) and [Backend usage docs](https://trpc.io/docs/server/overview) for tRPC information.
+Initialize your tRPC backend in `trpc/init.ts` using the `initTRPC` function, and create your first router. We're going to make a simple "hello world" router and procedure here - but for deeper information on creating your tRPC API you should refer to the [Quickstart guide](trpc/docs/quickstart/index.md) and [Backend usage docs](trpc/docs/server/overview/index.md) for tRPC information.
 
 info
 
@@ -98,7 +101,7 @@ We're setting a few default options here:
 
 *   `staleTime`: With SSR, we usually want to set some default staleTime above 0 to avoid refetching immediately on the client.
 *   `shouldDehydrateQuery`: This is a function that determines whether a query should be dehydrated or not. Since the RSC transport protocol supports hydrating promises over the network, we extend the `defaultShouldDehydrateQuery` function to also include queries that are still pending. This will allow us to start prefetching in a server component high up the tree, then consuming that promise in a client component further down.
-*   `serializeData` and `deserializeData` (optional): If you set up a [data transformer](https://trpc.io/docs/server/data-transformers) in the previous step, set this option to make sure the data is serialized correctly when hydrating the query client over the server-client boundary.
+*   `serializeData` and `deserializeData` (optional): If you set up a [data transformer](trpc/docs/server/data-transformers/index.md) in the previous step, set this option to make sure the data is serialized correctly when hydrating the query client over the server-client boundary.
 
 ### 4\. Create a tRPC client for Client Components[​](#4-create-a-trpc-client-for-client-components "Direct link to 4. Create a tRPC client for Client Components")
 
@@ -559,3 +562,4 @@ tsx
   `);`
 
 `}`
+

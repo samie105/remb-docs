@@ -9,74 +9,10 @@ last_crawled_at: "2026-04-18T16:49:04.492Z"
 content_hash: "2d5a19b1285012052015bb8c621e72824b5bc675493f09b78cf9675b9ee54112"
 menu_path: ["Command line interface"]
 section_path: []
+nav_prev: {"path": "deno/deno/runtime/getting_started/setup_your_environment/index.md", "title": "Set up your environment"}
+nav_next: {"path": "deno/deno/runtime/fundamentals/typescript/index.md", "title": "TypeScript support"}
 ---
-On this page
 
-*   [An example subcommand - deno run](#an-example-subcommand---deno-run)
-*   [Passing script arguments](#passing-script-arguments)
-*   [Argument and flag ordering](#argument-and-flag-ordering)
-*   [Common flags](#common-flags)
-    *   [Watch mode](#watch-mode)
-    *   [Hot Module Replacement mode](#hot-module-replacement-mode)
-    *   [Integrity flags (lock files)](#integrity-flags-\(lock-files\))
-    *   [Cache and compilation flags](#cache-and-compilation-flags)
-    *   [Runtime flags](#runtime-flags)
-    *   [Type checking flags](#type-checking-flags)
-    *   [Permission flags](#permission-flags)
-    *   [Other runtime flags](#other-runtime-flags)
-
-Deno is a command line program. The Deno command line interface (CLI) can be used to run scripts, manage dependencies, and even compile your code into standalone executables. You may be familiar with some simple commands having followed the examples thus far. This page will provide a more detailed overview of the Deno CLI.
-
-The Deno CLI has a number of subcommands (like `run`, `init` and `test`, etc.). They are used to perform different tasks within the Deno runtime environment. Each subcommand has its own set of flags and options (eg --version) that can be used to customize its behavior.
-
-You can view all of the available commands and flags by running the `deno help` subcommand in your terminal, or using the `-h` or `--help` flags.
-
-Check out the [CLI reference guide](/runtime/reference/cli/) for a further documentation on all the subcommands and flags available. We'll take a look at a few commands in a bit more detail below to see how they can be used and configured.
-
-## An example subcommand - `deno run`
-
-You can run a local TypeScript or JavaScript file by specifying its path relative to the current working directory:
-
-```shell
-deno run main.ts
-```
-
-Deno supports running scripts directly from URLs. This is particularly useful for quickly testing or running code without downloading it first:
-
-```shell
-deno run https://docs.deno.com/examples/scripts/hello_world.ts
-```
-
-You can also run a script by piping it through standard input. This is useful for integrating with other command-line tools or dynamically generating scripts:
-
-```shell
-cat main.ts | deno run -
-```
-
-## Passing script arguments
-
-Script arguments are additional parameters you can pass to your script when running it from the command line. These arguments can be used to customize the behavior of your program based on the input provided at runtime. Arguments should be passed **after** the script name.
-
-To test this out we can make a script that will log the arguments passed to it:
-
-main.ts
-
-```ts
-console.log(Deno.args);
-```
-
-When we run that script and pass it some arguments it will log them to the console:
-
-```shell
-$ deno run main.ts arg1 arg2 arg3
-[ "arg1", "arg2", "arg3" ]
-```
-
-## Argument and flag ordering
-
-_Note that anything passed after the script name will be passed as a script argument and not consumed as a Deno runtime flag._ This leads to the following pitfall:
-
-```shell
 # Good. We grant net permission to net_client.ts.
 deno run --allow-net net_client.ts
 
@@ -233,3 +169,4 @@ More flags which affect the execution environment.
 --seed <NUMBER>              Seed Math.random()
 --v8-flags=<v8-flags>        Set V8 command line options. For help: ...
 ```
+

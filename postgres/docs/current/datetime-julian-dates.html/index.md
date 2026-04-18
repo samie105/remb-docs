@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:51:25.720Z"
 content_hash: "ead1ff0e225979e2f63883c4640d763f76dbfc7164bfd451436a2bd478e5c433"
 menu_path: ["PostgreSQL: Documentation: 18: B.7. Julian Dates"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/gin.html/index.md", "title": "PostgreSQL: Documentation: 18: 65.4.\u00a0GIN Indexes"}
+nav_next: {"path": "postgres/docs/current/ecpg-sql-connect.html/index.md", "title": "PostgreSQL: Documentation: 18: CONNECT"}
 ---
+
 The _Julian Date_ system is a method for numbering days. It is unrelated to the Julian calendar, though it is confusingly named similarly to that calendar. The Julian Date system was invented by the French scholar Joseph Justus Scaliger (1540–1609) and probably takes its name from Scaliger's father, the Italian scholar Julius Caesar Scaliger (1484–1558).
 
 In the Julian Date system, each day has a sequential number, starting from JD 0 (which is sometimes called _the_ Julian Date). JD 0 corresponds to 1 January 4713 BC in the Julian calendar, or 24 November 4714 BC in the Gregorian calendar. Julian Date counting is most often used by astronomers for labeling their nightly observations, and therefore a date runs from noon UTC to the next noon UTC, rather than from midnight to midnight: JD 0 designates the 24 hours from noon UTC on 24 November 4714 BC to noon UTC on 25 November 4714 BC.
@@ -33,3 +36,4 @@ This definition does, however, provide a way to obtain the astronomical definiti
 ---------
  2459389
 (1 row)
+

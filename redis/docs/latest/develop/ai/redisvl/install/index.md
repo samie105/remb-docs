@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:49:07.818Z"
 content_hash: "3c5f780262368f224ac3d5e99ce00b00a3fca7e007a70563d25e6650a6985291"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        RedisVL","→","RedisVL","→\n      \n        Install RedisVL","→","Install RedisVL"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        RedisVL","→","RedisVL","→\n      \n        Install RedisVL","→","Install RedisVL"]
+nav_prev: {"path": "redis/docs/latest/operate/oss_and_stack/install/archive/install-stack/index.md", "title": "Install Redis Stack"}
+nav_next: {"path": "redis/docs/latest/integrate/google-adk/integration-patterns/index.md", "title": "Memory integration patterns"}
 ---
+
 # Install RedisVL
 
 ## Installation
@@ -29,3 +32,4 @@ docker run -d --name redis -p 6379:6379 -p 8001:8001 redis/redis-stack:latest
 After running the previous command, the Redis Insight GUI will be available at http://localhost:8001.
 
 ## On this page
+

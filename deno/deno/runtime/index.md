@@ -9,7 +9,9 @@ last_crawled_at: "2026-04-18T16:32:14.614Z"
 content_hash: "2634e861ee30d8a7d9ab961a3eb09ec39e81aa54675ff384079e52dc3201934f"
 menu_path: ["Welcome to Deno"]
 section_path: []
+nav_next: {"path": "deno/deno/runtime/getting_started/installation/index.md", "title": "Installation"}
 ---
+
 On this page
 
 *   [Why Deno?](#why-deno%3F)
@@ -64,3 +66,4 @@ Deno can run JavaScript and [TypeScript](https://www.typescriptlang.org/) with n
 *   [Making a Deno project](/runtime/getting_started/first_project/)
 *   [Setting up your environment](/runtime/getting_started/setup_your_environment/)
 *   [Using the CLI](/runtime/getting_started/command_line_interface)
+

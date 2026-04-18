@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:57:51.370Z"
 content_hash: "73b1d3156b64f46de07c08cab763d3d1162f47427a697cf8b49c678b32d258a0"
 menu_path: ["Deno Namespace APIs"]
 section_path: []
+nav_prev: {"path": "deno/deno/runtime/reference/cli/env_variables/index.md", "title": "Environment variables"}
+nav_next: {"path": "deno/deno/runtime/reference/node_apis/index.md", "title": "Node APIs"}
 ---
+
 On this page
 
 *   [API Documentation](#api-documentation)
@@ -982,3 +985,4 @@ globalThis.addEventListener("unload", (e) => {
 
 count++;
 ```
+

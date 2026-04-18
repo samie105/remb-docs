@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:51:21.218Z"
 content_hash: "10fd1dd724ff52373449c4ea9126ff6dacc77c7313327bec927a6389b6b3acf5"
 menu_path: ["PostgreSQL: Documentation: 18: VALUES"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/index-locking.html/index.md", "title": "PostgreSQL: Documentation: 18: 63.4.\u00a0Index Locking Considerations"}
+nav_next: {"path": "postgres/docs/current/gin.html/index.md", "title": "PostgreSQL: Documentation: 18: 65.4.\u00a0GIN Indexes"}
 ---
+
 ## Description
 
 `VALUES` computes a row value or set of row values specified by value expressions. It is most commonly used to generate a “constant table” within a larger command, but it can be used on its own.
@@ -93,3 +96,4 @@ For simple `IN` tests, it's better to rely on the [list-of-scalars](https://www.
 ## Compatibility
 
 `VALUES` conforms to the SQL standard. `LIMIT` and `OFFSET` are PostgreSQL extensions; see also under [SELECT](https://www.postgresql.org/docs/current/sql-select.html "SELECT").
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:59:56.761Z"
 content_hash: "d96b9ea2cc5650406500461b4b5bbbcca1aea19a843cece7d371331f985fcc8c"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Pulumi provider for Redis Cloud","→","Pulumi provider for Redis Cloud"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Pulumi provider for Redis Cloud","→","Pulumi provider for Redis Cloud"]
+nav_prev: {"path": "redis/docs/latest/develop/get-started/rag/index.md", "title": "RAG with Redis"}
+nav_next: {"path": "redis/docs/latest/develop/tools/insight/rdi-connector/index.md", "title": "RDI in Redis Insight"}
 ---
+
 # Pulumi provider for Redis Cloud
 
 Explains how to use Pulumi to provision Redis Cloud infrastructure
@@ -94,3 +97,4 @@ It also allows for the following functions:
 *   [Pulumi documentation](https://www.pulumi.com/docs/)
 
 ## On this page
+

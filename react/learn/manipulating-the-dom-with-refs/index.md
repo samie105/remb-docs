@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:44:10.661Z"
 content_hash: "a3c41c90e4e8588fd69a185fcf0186e92cb91753e4809933f925e591f806d95d"
 menu_path: ["Manipulating the DOM with Refs"]
 section_path: []
+nav_prev: {"path": "react/learn/referencing-values-with-refs/index.md", "title": "Referencing Values with Refs"}
+nav_next: {"path": "react/learn/synchronizing-with-effects/index.md", "title": "Synchronizing with Effects"}
 ---
+
 React automatically updates the [DOM](https://developer.mozilla.org/docs/Web/API/Document_Object_Model/Introduction) to match your render output, so your components won’t often need to manipulate it. However, sometimes you might need access to the DOM elements managed by React—for example, to focus a node, scroll to it, or measure its size and position. There is no built-in way to do those things in React, so you will need a _ref_ to the DOM node.
 
 ### You will learn
@@ -39,7 +42,7 @@ Finally, pass your ref as the `ref` attribute to the JSX tag for which you want 
 <div ref={myRef}>
 ```
 
-The `useRef` Hook returns an object with a single property called `current`. Initially, `myRef.current` will be `null`. When React creates a DOM node for this `<div>`, React will put a reference to this node into `myRef.current`. You can then access this DOM node from your [event handlers](https://react.dev/learn/responding-to-events) and use the built-in [browser APIs](https://developer.mozilla.org/docs/Web/API/Element) defined on it.
+The `useRef` Hook returns an object with a single property called `current`. Initially, `myRef.current` will be `null`. When React creates a DOM node for this `<div>`, React will put a reference to this node into `myRef.current`. You can then access this DOM node from your [event handlers](react/learn/responding-to-events/index.md) and use the built-in [browser APIs](https://developer.mozilla.org/docs/Web/API/Element) defined on it.
 
 ```
 // You can use any browser APIs, for example:myRef.current.scrollIntoView();
@@ -75,7 +78,7 @@ To implement this:
 3.  In the `handleClick` function, read the input DOM node from `inputRef.current` and call [`focus()`](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/focus) on it with `inputRef.current.focus()`.
 4.  Pass the `handleClick` event handler to `<button>` with `onClick`.
 
-While DOM manipulation is the most common use case for refs, the `useRef` Hook can be used for storing other things outside React, like timer IDs. Similarly to state, refs remain between renders. Refs are like state variables that don’t trigger re-renders when you set them. Read about refs in [Referencing Values with Refs.](https://react.dev/learn/referencing-values-with-refs)
+While DOM manipulation is the most common use case for refs, the `useRef` Hook can be used for storing other things outside React, like timer IDs. Similarly to state, refs remain between renders. Refs are like state variables that don’t trigger re-renders when you set them. Read about refs in [Referencing Values with Refs.](react/learn/referencing-values-with-refs/index.md)
 
 ### Example: Scrolling to an element[](#example-scrolling-to-an-element "Link for Example: Scrolling to an element ")
 
@@ -246,7 +249,7 @@ function setupCatList() {
   return catList;
 }
 
-In this example, `itemsRef` doesn’t hold a single DOM node. Instead, it holds a [Map](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Map) from item ID to a DOM node. ([Refs can hold any values!](https://react.dev/learn/referencing-values-with-refs)) The [`ref` callback](https://react.dev/reference/react-dom/components/common#ref-callback) on every list item takes care to update the Map:
+In this example, `itemsRef` doesn’t hold a single DOM node. Instead, it holds a [Map](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Map) from item ID to a DOM node. ([Refs can hold any values!](react/learn/referencing-values-with-refs/index.md)) The [`ref` callback](https://react.dev/reference/react-dom/components/common#ref-callback) on every list item takes care to update the Map:
 
 ```
 <likey={cat.id}ref={node => {const map = getMap();// Add to the Mapmap.set(cat, node);return () => {// Remove from the Mapmap.delete(cat);};}}>
@@ -266,7 +269,7 @@ Read more about [how this helps find bugs](https://react.dev/reference/react/Str
 
 Refs are an escape hatch. Manually manipulating _another_ component’s DOM nodes can make your code fragile.
 
-You can pass refs from parent component to child components [just like any other prop](https://react.dev/learn/passing-props-to-a-component).
+You can pass refs from parent component to child components [just like any other prop](react/learn/passing-props-to-a-component/index.md).
 
 ```
 import { useRef } from 'react';function MyInput({ ref }) {return <input ref={ref} />;}function MyForm() {const inputRef = useRef(null);return <MyInput ref={inputRef} />}
@@ -337,12 +340,12 @@ Here, `realInputRef` inside `MyInput` holds the actual input DOM node. However, 
 
 ## When React attaches the refs[](#when-react-attaches-the-refs "Link for When React attaches the refs ")
 
-In React, every update is split in [two phases](https://react.dev/learn/render-and-commit#step-3-react-commits-changes-to-the-dom):
+In React, every update is split in [two phases](react/learn/render-and-commit/index.md#step-3-react-commits-changes-to-the-dom):
 
 *   During **render,** React calls your components to figure out what should be on the screen.
 *   During **commit,** React applies changes to the DOM.
 
-In general, you [don’t want](https://react.dev/learn/referencing-values-with-refs#best-practices-for-refs) to access refs during rendering. That goes for refs holding DOM nodes as well. During the first render, the DOM nodes have not yet been created, so `ref.current` will be `null`. And during the rendering of updates, the DOM nodes haven’t been updated yet. So it’s too early to read them.
+In general, you [don’t want](react/learn/referencing-values-with-refs/index.md#best-practices-for-refs) to access refs during rendering. That goes for refs holding DOM nodes as well. During the first render, the DOM nodes have not yet been created, so `ref.current` will be `null`. And during the rendering of updates, the DOM nodes haven’t been updated yet. So it’s too early to read them.
 
 React sets `ref.current` during the commit. Before updating the DOM, React sets the affected `ref.current` values to `null`. After updating the DOM, React immediately sets them to the corresponding DOM nodes.
 
@@ -406,7 +409,7 @@ The issue is with these two lines:
 setTodos([ ...todos, newTodo]);listRef.current.lastChild.scrollIntoView();
 ```
 
-In React, [state updates are queued.](https://react.dev/learn/queueing-a-series-of-state-updates) Usually, this is what you want. However, here it causes a problem because `setTodos` does not immediately update the DOM. So the time you scroll the list to its last element, the todo has not yet been added. This is why scrolling always “lags behind” by one item.
+In React, [state updates are queued.](react/learn/queueing-a-series-of-state-updates/index.md) Usually, this is what you want. However, here it causes a problem because `setTodos` does not immediately update the DOM. So the time you scroll the list to its last element, the todo has not yet been added. This is why scrolling always “lags behind” by one item.
 
 To fix this issue, you can force React to update (“flush”) the DOM synchronously. To do this, import `flushSync` from `react-dom` and **wrap the state update** into a `flushSync` call:
 
@@ -471,7 +474,7 @@ Refs are an escape hatch. You should only use them when you have to “step outs
 
 If you stick to non-destructive actions like focusing and scrolling, you shouldn’t encounter any problems. However, if you try to **modify** the DOM manually, you can risk conflicting with the changes React is making.
 
-To illustrate this problem, this example includes a welcome message and two buttons. The first button toggles its presence using [conditional rendering](https://react.dev/learn/conditional-rendering) and [state](https://react.dev/learn/state-a-components-memory), as you would usually do in React. The second button uses the [`remove()` DOM API](https://developer.mozilla.org/en-US/docs/Web/API/Element/remove) to forcefully remove it from the DOM outside of React’s control.
+To illustrate this problem, this example includes a welcome message and two buttons. The first button toggles its presence using [conditional rendering](react/learn/conditional-rendering/index.md) and [state](react/learn/state-a-components-memory/index.md), as you would usually do in React. The second button uses the [`remove()` DOM API](https://developer.mozilla.org/en-US/docs/Web/API/Element/remove) to forcefully remove it from the DOM outside of React’s control.
 
 Try pressing “Toggle with setState” a few times. The message should disappear and appear again. Then press “Remove from the DOM”. This will forcefully remove it. Finally, press “Toggle with setState”:
 
@@ -555,3 +558,4 @@ export default function VideoPlayer() {
 }
 
 For an extra challenge, keep the “Play” button in sync with whether the video is playing even if the user right-clicks the video and plays it using the built-in browser media controls. You might want to listen to `onPlay` and `onPause` on the video to do that.
+

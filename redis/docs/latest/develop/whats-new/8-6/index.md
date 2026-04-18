@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:52:37.062Z"
 content_hash: "f82e10dfca4faf34e0fe61289ccf549511cca68299f8d0ab5807e12534139090"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        What's new?","→","What's new?","→\n      \n        Redis 8.6","→","Redis 8.6"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        What's new?","→","What's new?","→\n      \n        Redis 8.6","→","Redis 8.6"]
+nav_prev: {"path": "redis/docs/latest/operate/oss_and_stack/stack-with-enterprise/deprecated-features/triggers-and-functions/concepts/triggers/stream_triggers/index.md", "title": "Stream triggers"}
+nav_next: {"path": "redis/docs/latest/develop/tools/insight/release-notes/v.2.14.0/index.md", "title": "RedisInsight v2.14.0, November 2022"}
 ---
+
 # Redis 8.6
 
 What's new in Redis 8.6
@@ -148,3 +151,4 @@ When using Redis 8.6, be aware of these current limitations:
     
 
 ## On this page
+

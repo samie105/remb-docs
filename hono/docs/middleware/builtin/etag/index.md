@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:51:27.289Z"
 content_hash: "7053ff415d57b99239de454a3e39d39d3035cf7e584eebb6483038cb44016c92"
 menu_path: ["ETag Middleware ​"]
 section_path: []
+nav_prev: {"path": "hono/docs/middleware/builtin/csrf/index.md", "title": "CSRF Protection \u200b"}
+nav_next: {"path": "hono/docs/middleware/builtin/ip-restriction/index.md", "title": "IP Restriction Middleware \u200b"}
 ---
+
 ## ETag Middleware [​](#etag-middleware)
 
 Using this middleware, you can add ETag headers easily.
@@ -70,3 +73,4 @@ The headers that you want to retain in the 304 Response.
 ### optional generateDigest: `(body: Uint8Array) => ArrayBuffer | Promise<ArrayBuffer>` [​](#generatedigest-body-uint8array-arraybuffer-promise-arraybuffer)
 
 A custom digest generation function. By default, it uses `SHA-1`. This function is called with the response body as a `Uint8Array` and should return a hash as an `ArrayBuffer` or a Promise of one.
+

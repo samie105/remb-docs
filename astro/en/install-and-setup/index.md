@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:42:24.396Z"
 content_hash: "9961153b90594d0fca78f7988b1927a1582500f0a2db73761f2e0c0bdf407904"
 menu_path: ["Install Astro"]
 section_path: []
+nav_prev: {"path": "astro/en/astro-courses/index.md", "title": "Astro Courses"}
+nav_next: {"path": "astro/en/basics/project-structure/index.md", "title": "Project structure"}
 ---
+
 # Install Astro
 
 The [`create astro` CLI command](#install-from-the-cli-wizard) is the fastest way to start a new Astro project from scratch. It will walk you through every step of setting up your new Astro project and allow you to choose from a few different official starter templates.
@@ -233,3 +236,4 @@ If you prefer not to use our automatic `create astro` CLI tool, you can set up y
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

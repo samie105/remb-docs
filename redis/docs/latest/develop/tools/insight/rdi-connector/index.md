@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:00:10.640Z"
 content_hash: "dbba63b96f9870fcfbefb5b7478fa133d82f8a37d2e95bf2ed0dc0f5356ee95a"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Client tools","→","Client tools","→\n      \n        Redis Insight","→","Redis Insight","→\n      \n        RDI in Redis Insight","→","RDI in Redis Insight"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Client tools","→","Client tools","→\n      \n        Redis Insight","→","Redis Insight","→\n      \n        RDI in Redis Insight","→","RDI in Redis Insight"]
+nav_prev: {"path": "redis/docs/latest/integrate/pulumi-provider-for-redis-cloud/index.md", "title": "Pulumi provider for Redis Cloud"}
+nav_next: {"path": "redis/docs/latest/operate/rc/changelog/version-release-notes/8-2/index.md", "title": "Redis 8.2 release notes and breaking changes"}
 ---
+
 # RDI in Redis Insight
 
 Connect to RDI from Redis Insight, configure pipelines, and more.
@@ -142,3 +145,4 @@ Analytics results are refreshed in an interval of your choosing. You can set the
 [![RDI analytics refresh](/docs/latest/images/ri/ri-rdi-refresh.png)](/docs/latest/images/ri/ri-rdi-refresh.png)
 
 ## On this page
+

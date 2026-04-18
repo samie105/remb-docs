@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:01:34.575Z"
 content_hash: "966fede72c7ce07547ac43949c0134a462f73b786aa4de6238806d0bc93934e1"
 menu_path: ["Shell"]
 section_path: []
+nav_prev: {"path": "bun/bun/docs/runtime/s3/index.md", "title": "S3"}
+nav_next: {"path": "bun/bun/docs/runtime/sql/index.md", "title": "SQL"}
 ---
+
 Bun Shell makes shell scripting with JavaScript & TypeScript fun. It’s a cross-platform bash-like shell with seamless JavaScript interop. Quickstart:
 
 ![https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z\_zHyy/icons/typescript.svg?fit=max&auto=format&n=JUhaF6Mf68z\_zHyy&q=85&s=7ac549adaea8d5487d8fbd58cc3ea35b](https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z_zHyy/icons/typescript.svg?fit=max&auto=format&n=JUhaF6Mf68z_zHyy&q=85&s=7ac549adaea8d5487d8fbd58cc3ea35b)index.ts
@@ -596,3 +599,4 @@ await $`git ls-remote origin ${branch}`;
 ## Credits
 
 Large parts of this API were inspired by [zx](https://github.com/google/zx), [dax](https://github.com/dsherret/dax), and [bnx](https://github.com/wobsoriano/bnx). Thank you to the authors of those projects.
+

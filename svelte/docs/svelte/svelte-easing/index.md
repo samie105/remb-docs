@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:45:06.291Z"
 content_hash: "45e56ba14c5bf7ee68470e35dce741dc803df00e3af4bc1394579de3d639ae1a"
 menu_path: ["svelte/easing"]
 section_path: []
+nav_prev: {"path": "svelte/docs/svelte/svelte-compiler/index.md", "title": "svelte/compiler"}
+nav_next: {"path": "svelte/docs/svelte/svelte-events/index.md", "title": "svelte/events"}
 ---
+
 ```
 import {
 	function backIn(t: number): numberreferencebackIn,
@@ -237,3 +240,4 @@ function sineOut(t: number): number;
 previous next
 
 [svelte/compiler](/docs/svelte/svelte-compiler) [svelte/events](/docs/svelte/svelte-events)
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:34:46.357Z"
 content_hash: "2adac2cfcee7d4ecb8883ded78261321c7aeed04a8127537ed2623c7f52b1354"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Client tools","→","Client tools","→\n      \n        Redis Insight","→","Redis Insight","→\n      \n        Redis Insight release notes","→","Redis Insight release notes","→\n      \n        RedisInsight v2.34.0, September 2023","→","RedisInsight v2.34.0, September 2023"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Client tools","→","Client tools","→\n      \n        Redis Insight","→","Redis Insight","→\n      \n        Redis Insight release notes","→","Redis Insight release notes","→\n      \n        RedisInsight v2.34.0, September 2023","→","RedisInsight v2.34.0, September 2023"]
+nav_prev: {"path": "redis/docs/latest/develop/tools/insight/release-notes/v.2.38.0/index.md", "title": "RedisInsight v2.38.0, November 2023"}
+nav_next: {"path": "redis/docs/latest/develop/tools/insight/release-notes/v.2.36.0/index.md", "title": "RedisInsight v2.36.0, October 2023"}
 ---
+
 # RedisInsight v2.34.0, September 2023
 
 RedisInsight v2.34
@@ -40,3 +43,4 @@ This is the General Availability (GA) release of RedisInsight 2.34.
 *   [#2587](https://github.com/RedisInsight/RedisInsight/pull/2587) Display detailed [errors](https://github.com/RedisInsight/RedisInsight/issues/2562) in transactions run via CLI or Workbench
 
 ## On this page
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:39:28.675Z"
 content_hash: "f84b968a29dee1d2c1c6f47d5266468131c69e44f747b10b5b8413bef3d7c9ee"
 menu_path: ["Convert an ArrayBuffer to a Uint8Array"]
 section_path: []
+nav_prev: {"path": "bun/bun/docs/guides/binary/arraybuffer-to-buffer/index.md", "title": "Convert an ArrayBuffer to a Buffer"}
+nav_next: {"path": "bun/bun/docs/guides/binary/arraybuffer-to-string/index.md", "title": "Convert an ArrayBuffer to a string"}
 ---
+
 [Skip to main content](#content-area)
 
 [Bun home page![light logo](https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z_zHyy/logo/logo-with-wordmark-dark.svg?fit=max&auto=format&n=JUhaF6Mf68z_zHyy&q=85&s=3f55cd23822028e40658b192c927f3e4)![dark logo](https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z_zHyy/logo/logo-with-wordmark-light.svg?fit=max&auto=format&n=JUhaF6Mf68z_zHyy&q=85&s=8a0c5928d9dc3631f0d33e17c257e2ec)](/docs)
@@ -85,3 +88,4 @@ Convert a Buffer to a string
 Next
 
 ](/docs/guides/binary/buffer-to-string)
+

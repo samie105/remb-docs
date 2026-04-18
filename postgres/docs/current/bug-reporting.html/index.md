@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:49:28.168Z"
 content_hash: "f16d1526af6835eaf16d2bd9d2a7291c29532954f0066a477d0f2012232d3824"
 menu_path: ["PostgreSQL: Documentation: 18: 5. Bug Reporting Guidelines"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/resources.html/index.md", "title": "PostgreSQL: Documentation: 18: 4.\u00a0Further Information"}
+nav_next: {"path": "postgres/docs/current/tutorial-advanced.html/index.md", "title": "PostgreSQL: Documentation: 18: Chapter\u00a03.\u00a0Advanced Features"}
 ---
+
 When you find a bug in PostgreSQL we want to hear about it. Your bug reports play an important part in making PostgreSQL more reliable because even the utmost care cannot guarantee that every part of PostgreSQL will work on every platform under every circumstance.
 
 The following suggestions are intended to assist you in forming bug reports that can be handled in an effective fashion. No one is required to follow them but doing so tends to be to everyone's advantage.
@@ -97,3 +100,4 @@ If your bug is a portability problem on a non-supported platform, send mail to `
 ### Note
 
 Due to the unfortunate amount of spam going around, all of the above lists will be moderated unless you are subscribed. That means there will be some delay before the email is delivered. If you wish to subscribe to the lists, please visit [https://lists.postgresql.org/](https://lists.postgresql.org/) for instructions.
+

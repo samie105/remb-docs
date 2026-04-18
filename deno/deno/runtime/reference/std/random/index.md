@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:05:05.427Z"
 content_hash: "d847969e40eafa0d2af6ceae141a3100b671690e5eb63e28eb8c5aafebdf3d2f"
 menu_path: ["@std/random"]
 section_path: []
+nav_prev: {"path": "deno/deno/runtime/reference/std/path/index.md", "title": "@std/path"}
+nav_next: {"path": "deno/deno/runtime/reference/std/regexp/index.md", "title": "@std/regexp"}
 ---
+
 On this page
 
 *   [Overview](#overview)
@@ -55,3 +58,4 @@ deno add jsr:@std/random
 ```
 
 [See all symbols in @std/random on](https://jsr.io/@std/random/doc)
+

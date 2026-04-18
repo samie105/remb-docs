@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:43:15.787Z"
 content_hash: "176cece70df306a42f2a372f71f0dfebbfbc4213336a345ac2737f15a8219580"
 menu_path: ["Error reference"]
 section_path: []
+nav_prev: {"path": "astro/en/reference/legacy-flags/index.md", "title": "Legacy flags"}
+nav_next: {"path": "astro/en/guides/integrations-guide/alpinejs/index.md", "title": "@astrojs/\n\t\t\t\t\talpinejs"}
 ---
+
 # Error reference
 
 The following reference is a complete list of the errors you may encounter while using Astro. For additional assistance, including common pitfalls, please also see our [Troubleshooting Guide](/en/guides/troubleshooting/).
@@ -307,3 +310,4 @@ The following reference is a complete list of the errors you may encounter while
     Conflicting cache query configuration.
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

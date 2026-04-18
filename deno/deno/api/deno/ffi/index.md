@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:09:11.768Z"
 content_hash: "eac5fd3ef86b2a90abe1762e4407fc5804019a79d3165062fc4b64f8a1360bf2"
 menu_path: ["FFI - Deno documentation"]
 section_path: []
+nav_prev: {"path": "deno/deno/api/deno/fetch/index.md", "title": "Fetch - Deno documentation"}
+nav_next: {"path": "deno/deno/api/deno/file-system/index.md", "title": "File System - Deno documentation"}
 ---
+
 ### Classes [#](#Classes)
 
 c
@@ -332,3 +335,4 @@ v
 [Deno.brand](./././~/Deno.brand "Deno.brand")
 
 No documentation available
+

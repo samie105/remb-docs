@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:42:10.305Z"
 content_hash: "dc9409001e22a5445322e84610259d115e8de65fe233f3955b8efea581cc029e"
 menu_path: ["Database","Database","Configuration, optimization, and testing","Configuration, optimization, and testing","Query optimization","Query optimization"]
 section_path: ["Database","Database","Configuration, optimization, and testing","Configuration, optimization, and testing","Query optimization","Query optimization"]
+nav_prev: {"path": "supabase/docs/guides/database/prisma/index.md", "title": "Prisma"}
+nav_next: {"path": "supabase/docs/guides/database/replication/index.md", "title": "Database Replication"}
 ---
+
 # 
 
 Query Optimization
@@ -126,3 +129,4 @@ Postgres maintains a set of statistics about the contents of your tables. Those 
 * * *
 
 By following this guide, you'll be able to discern where indexes can optimize queries and enhance your Postgres performance. Remember that each database is unique, so always consider the specific context and use case of your queries.
+

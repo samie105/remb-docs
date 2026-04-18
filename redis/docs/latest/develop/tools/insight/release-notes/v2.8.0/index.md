@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:06:58.973Z"
 content_hash: "6f37df7578c0f556e557097426d1127d002ea12bccfd740396f8038eedb45ea7"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Client tools","→","Client tools","→\n      \n        Redis Insight","→","Redis Insight","→\n      \n        Redis Insight release notes","→","Redis Insight release notes","→\n      \n        RedisInsight v2.8.0, August 2022","→","RedisInsight v2.8.0, August 2022"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Client tools","→","Client tools","→\n      \n        Redis Insight","→","Redis Insight","→\n      \n        Redis Insight release notes","→","Redis Insight release notes","→\n      \n        RedisInsight v2.8.0, August 2022","→","RedisInsight v2.8.0, August 2022"]
+nav_prev: {"path": "redis/docs/latest/integrate/redis-data-integration/when-to-use/index.md", "title": "When to use RDI"}
+nav_next: {"path": "redis/docs/latest/develop/use-cases/leaderboard/dotnet/index.md", "title": "Redis leaderboard with .NET"}
 ---
+
 # RedisInsight v2.8.0, August 2022
 
 RedisInsight v2.8.0
@@ -41,3 +44,4 @@ This is the General Availability (GA) release of RedisInsight 2.8.0
 *   [#978](https://github.com/RedisInsight/RedisInsight/pull/978) Work with [non-printable characters](https://github.com/RedisInsight/RedisInsight/issues/873). To avoid data loss, when non-printable characters are detected, key and value are editable in Workbench and CLI only.
 
 ## On this page
+

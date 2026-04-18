@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:40:57.946Z"
 content_hash: "775bbf9b8974d6c5703132969013cdf316c78b49a6e16fc7c8c0da9dcefd3bb8"
 menu_path: ["Migrating from Hugo"]
 section_path: []
+nav_prev: {"path": "astro/en/guides/migrate-to-astro/from-gridsome/index.md", "title": "Migrating from Gridsome"}
+nav_next: {"path": "astro/en/guides/migrate-to-astro/from-jekyll/index.md", "title": "Migrating from Jekyll"}
 ---
+
 # Migrating from Hugo
 
 [Hugo](https://gohugo.io) is an open-source static site generator built on Go.
@@ -132,3 +135,4 @@ To convert other types of sites, such as a portfolio or documentation site, see 
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

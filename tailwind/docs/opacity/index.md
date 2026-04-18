@@ -9,15 +9,9 @@ last_crawled_at: "2026-04-18T17:04:43.263Z"
 content_hash: "be6e297d89567d2130151926b9a37b98d3146dbd17640355ed670b8055fc20d7"
 menu_path: ["opacity"]
 section_path: []
+nav_prev: {"path": "tailwind/docs/text-shadow/index.md", "title": "text-shadow"}
+nav_next: {"path": "tailwind/docs/mix-blend-mode/index.md", "title": "mix-blend-mode"}
 ---
-[](/)
-
-[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
-
-1.  Effects
-2.  opacity
-
-Effects
 
 # opacity
 
@@ -113,3 +107,4 @@ Short, tactical video lessons from the creator of Tailwind CSS, delivered direct
 [Get the free course](/build-uis-that-dont-suck)
 
 Copyright © 2026 Tailwind Labs Inc.·[Trademark Policy](/brand)
+

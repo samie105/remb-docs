@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:53:41.083Z"
 content_hash: "be89dfcac7092f36f6bebd1f4bb4d7e7eaaf70cd7250f9130f33790b17164453"
 menu_path: ["Auth","Auth","Getting Started","Getting Started","React Native","React Native"]
 section_path: ["Auth","Auth","Getting Started","Getting Started","React Native","React Native"]
+nav_prev: {"path": "supabase/docs/guides/auth/quickstarts/nextjs/index.md", "title": "Use Supabase Auth with Next.js"}
+nav_next: {"path": "supabase/docs/guides/auth/quickstarts/react/index.md", "title": "Use Supabase Auth with React"}
 ---
+
 # 
 
 Use Supabase Auth with React Native
@@ -141,3 +144,4 @@ Start the app, and follow the instructions in the terminal.
 ```
 1npm start
 ```
+

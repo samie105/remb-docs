@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:41:33.390Z"
 content_hash: "77298fe5b4e212d3c074f6083f90070d1e05198e4d773676c02be4a7085332dd"
 menu_path: ["Database","Database","Working with your database (intermediate)","Working with your database (intermediate)","Migrating to pg_partman","Migrating to pg_partman"]
 section_path: ["Database","Database","Working with your database (intermediate)","Working with your database (intermediate)","Migrating to pg_partman","Migrating to pg_partman"]
+nav_prev: {"path": "supabase/docs/guides/database/json/index.md", "title": "Managing JSON and unstructured data"}
+nav_next: {"path": "supabase/docs/guides/database/orioledb/index.md", "title": "OrioleDB Overview"}
 ---
+
 # 
 
 Migrate from TimescaleDB to pg\_partman
@@ -95,3 +98,4 @@ To automate this, schedule it with `pg_cron`.
 *   [Partitioning your tables](/docs/guides/database/partitions).
 *   [`pg_partman` documentation](/docs/guides/database/extensions/pg_partman)
 *   [`pg_partman` migration guides](https://github.com/pgpartman/pg_partman/blob/development/doc/migrate_to_partman.md)
+

@@ -9,14 +9,17 @@ last_crawled_at: "2026-04-18T16:47:14.345Z"
 content_hash: "aedb0e00921cce807864d859f7fbc01f5597f80911f1c81929c9c9d609d71b63"
 menu_path: ["drizzle-kit up"]
 section_path: []
+nav_prev: {"path": "drizzle/docs/drizzle-kit-check/index.md", "title": "drizzle-kit check"}
+nav_next: {"path": "drizzle/docs/drizzle-kit-studio/index.md", "title": "drizzle-kit studio"}
 ---
+
 `drizzle-kit up` command lets you upgrade drizzle schema snapshots to a newer version. It’s required whenever we introduce breaking changes to the json snapshots of the schema and upgrade the internal version.
 
   
 
 * * *
 
-`drizzle-kit up` command requires you to specify both `dialect` and database connection credentials, you can provide them either via [drizzle.config.ts](https://orm.drizzle.team/docs/drizzle-config-file) config file or via CLI options
+`drizzle-kit up` command requires you to specify both `dialect` and database connection credentials, you can provide them either via [drizzle.config.ts](drizzle/docs/drizzle-config-file/index.md) config file or via CLI options
 
 With config file
 
@@ -84,7 +87,7 @@ bunx drizzle-kit migrate --config=drizzle-prod.config.ts
 
 ### Extended list of configurations[](#extended-list-of-configurations)
 
-We recommend configuring `drizzle-kit` through [drizzle.config.ts](https://orm.drizzle.team/docs/drizzle-config-file) file, yet you can provide all configuration options through CLI if necessary, e.g. in CI/CD pipelines, etc.
+We recommend configuring `drizzle-kit` through [drizzle.config.ts](drizzle/docs/drizzle-config-file/index.md) file, yet you can provide all configuration options through CLI if necessary, e.g. in CI/CD pipelines, etc.
 
 `dialect`
 
@@ -131,3 +134,4 @@ bunx drizzle-kit up --dialect=postgresql --out=./migrations-folder
 ```
 
 ![](https://orm.drizzle.team/_astro/up_mysql.FpcTUeNG_Zl2NXa.webp)
+

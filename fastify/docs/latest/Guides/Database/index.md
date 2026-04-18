@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:36:55.700Z"
 content_hash: "48e77ed407741394e436938dd67ae24ad1361db039104e5bec97099bdbbffe1a"
 menu_path: ["Database"]
 section_path: []
+nav_prev: {"path": "fastify/docs/latest/Guides/Write-Plugin/index.md", "title": "How to write a good plugin"}
+nav_next: {"path": "fastify/docs/latest/Guides/Testing/index.md", "title": "Testing"}
 ---
+
 Version: latest (v5.8.x)
 
 ## Database[​](#database "Direct link to Database")
@@ -119,3 +122,4 @@ In our example, we are going to have a single migration that creates a `users` t
 ```
 const pg = require('pg')const Postgrator = require('postgrator')const path = require('node:path')async function migrate() {  const client = new pg.Client({    host: 'localhost',    port: 5432,    database: 'example',    user: 'example',    password: 'example',  });  try {    await client.connect();    const postgrator = new Postgrator({      migrationPattern: path.join(__dirname, '/migrations/*'),      driver: 'pg',      database: 'example',      schemaTable: 'migrations',      currentSchema: 'public', // Postgres and MS SQL Server only      execQuery: (query) => client.query(query),    });    const result = await postgrator.migrate()    if (result.length === 0) {      console.log(        'No migrations run for schema "public". Already at the latest one.'      )    }    console.log('Migration done.')    process.exitCode = 0  } catch(err) {    console.error(err)    process.exitCode = 1  }  await client.end()}migrate()
 ```
+

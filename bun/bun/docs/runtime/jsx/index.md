@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:00:34.188Z"
 content_hash: "7495c49af145a8160e410041ba3066905d19435a73e45c2cf39ebae9b99c686d"
 menu_path: ["JSX"]
 section_path: []
+nav_prev: {"path": "bun/bun/docs/runtime/jsonl/index.md", "title": "JSONL"}
+nav_next: {"path": "bun/bun/docs/runtime/markdown/index.md", "title": "Markdown"}
 ---
+
 Bun supports `.jsx` and `.tsx` files out of the box. Bun’s internal transpiler converts JSX syntax into vanilla JavaScript before execution.
 
 ![https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z\_zHyy/icons/typescript.svg?fit=max&auto=format&n=JUhaF6Mf68z\_zHyy&q=85&s=7ac549adaea8d5487d8fbd58cc3ea35b](https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z_zHyy/icons/typescript.svg?fit=max&auto=format&n=JUhaF6Mf68z_zHyy&q=85&s=7ac549adaea8d5487d8fbd58cc3ea35b)react.tsx
@@ -28,7 +31,7 @@ console.log(<Component message="Hello world!" />);
 
 ## Configuration
 
-Bun reads your `tsconfig.json` or `jsconfig.json` configuration files to determines how to perform the JSX transform internally. To avoid using either of these, the following options can also be defined in [`bunfig.toml`](https://bun.com/docs/runtime/bunfig). The following compiler options are respected.
+Bun reads your `tsconfig.json` or `jsconfig.json` configuration files to determines how to perform the JSX transform internally. To avoid using either of these, the following options can also be defined in [`bunfig.toml`](bun/bun/docs/runtime/bunfig/index.md). The following compiler options are respected.
 
 ### [`jsx`](https://www.typescriptlang.org/tsconfig#jsx)
 
@@ -159,3 +162,4 @@ function Div(props: {className: string;}) {
   return <div {className} />;
 }
 ```
+

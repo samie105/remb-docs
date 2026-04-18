@@ -9,7 +9,9 @@ last_crawled_at: "2026-04-18T16:46:36.160Z"
 content_hash: "2f88e08bd6ebb32e86e31abfc4385e7cef038a95c1b234d9d3173e9860c17321"
 menu_path: ["Reusing Logic with Custom Hooks"]
 section_path: []
+nav_prev: {"path": "react/learn/removing-effect-dependencies/index.md", "title": "Removing Effect Dependencies"}
 ---
+
 React comes with several built-in Hooks like `useState`, `useContext`, and `useEffect`. Sometimes, you’ll wish that there was a Hook for some more specific purpose: for example, to fetch data, to keep track of whether the user is online, or to connect to a chat room. You might not find these Hooks in React, but you can create your own Hooks for your application’s needs.
 
 ### You will learn
@@ -26,7 +28,7 @@ Imagine you’re developing an app that heavily relies on the network (as most a
 1.  A piece of state that tracks whether the network is online.
 2.  An Effect that subscribes to the global [`online`](https://developer.mozilla.org/en-US/docs/Web/API/Window/online_event) and [`offline`](https://developer.mozilla.org/en-US/docs/Web/API/Window/offline_event) events, and updates that state.
 
-This will keep your component [synchronized](https://react.dev/learn/synchronizing-with-effects) with the network status. You might start with something like this:
+This will keep your component [synchronized](react/learn/synchronizing-with-effects/index.md) with the network status. You might start with something like this:
 
 Try turning your network on and off, and notice how this `StatusBar` updates in response to your actions.
 
@@ -71,7 +73,7 @@ This convention guarantees that you can always look at a component and know wher
 
 ### Note
 
-If your linter is [configured for React,](https://react.dev/learn/editor-setup#linting) it will enforce this naming convention. Scroll up to the sandbox above and rename `useOnlineStatus` to `getOnlineStatus`. Notice that the linter won’t allow you to call `useState` or `useEffect` inside of it anymore. Only Hooks and components can call other Hooks!
+If your linter is [configured for React,](react/learn/editor-setup/index.md#linting) it will enforce this naming convention. Scroll up to the sandbox above and rename `useOnlineStatus` to `getOnlineStatus`. Notice that the linter won’t allow you to call `useState` or `useEffect` inside of it anymore. Only Hooks and components can call other Hooks!
 
 ##### Deep Dive
 
@@ -141,15 +143,15 @@ This is why it works like declaring two separate state variables!
 
 **Custom Hooks let you share _stateful logic_ but not _state itself._ Each call to a Hook is completely independent from every other call to the same Hook.** This is why the two sandboxes above are completely equivalent. If you’d like, scroll back up and compare them. The behavior before and after extracting a custom Hook is identical.
 
-When you need to share the state itself between multiple components, [lift it up and pass it down](https://react.dev/learn/sharing-state-between-components) instead.
+When you need to share the state itself between multiple components, [lift it up and pass it down](react/learn/sharing-state-between-components/index.md) instead.
 
 ## Passing reactive values between Hooks[](#passing-reactive-values-between-hooks "Link for Passing reactive values between Hooks ")
 
-The code inside your custom Hooks will re-run during every re-render of your component. This is why, like components, custom Hooks [need to be pure.](https://react.dev/learn/keeping-components-pure) Think of custom Hooks’ code as part of your component’s body!
+The code inside your custom Hooks will re-run during every re-render of your component. This is why, like components, custom Hooks [need to be pure.](react/learn/keeping-components-pure/index.md) Think of custom Hooks’ code as part of your component’s body!
 
 Because custom Hooks re-render together with your component, they always receive the latest props and state. To see what this means, consider this chat room example. Change the server URL or the chat room:
 
-When you change `serverUrl` or `roomId`, the Effect [“reacts” to your changes](https://react.dev/learn/lifecycle-of-reactive-effects#effects-react-to-reactive-values) and re-synchronizes. You can tell by the console messages that the chat re-connects every time that you change your Effect’s dependencies.
+When you change `serverUrl` or `roomId`, the Effect [“reacts” to your changes](react/learn/lifecycle-of-reactive-effects/index.md#effects-react-to-reactive-values) and re-synchronizes. You can tell by the console messages that the chat re-connects every time that you change your Effect’s dependencies.
 
 Now move the Effect’s code into a custom Hook:
 
@@ -203,7 +205,7 @@ export function useChatRoom({ serverUrl, roomId, onReceiveMessage }) {useEffect(
 
 This will work, but there’s one more improvement you can do when your custom Hook accepts event handlers.
 
-Adding a dependency on `onReceiveMessage` is not ideal because it will cause the chat to re-connect every time the component re-renders. [Wrap this event handler into an Effect Event to remove it from the dependencies:](https://react.dev/learn/removing-effect-dependencies#wrapping-an-event-handler-from-the-props)
+Adding a dependency on `onReceiveMessage` is not ideal because it will cause the chat to re-connect every time the component re-renders. [Wrap this event handler into an Effect Event to remove it from the dependencies:](react/learn/removing-effect-dependencies/index.md#wrapping-an-event-handler-from-the-props)
 
 ```
 import { useEffect, useEffectEvent } from 'react';// ...export function useChatRoom({ serverUrl, roomId, onReceiveMessage }) {const onMessage = useEffectEvent(onReceiveMessage);useEffect(() => {const options = {serverUrl: serverUrl,roomId: roomId};const connection = createConnection(options);connection.connect();connection.on('message', (msg) => {onMessage(msg);});return () => connection.disconnect();}, [roomId, serverUrl]); // ✅ All dependencies declared}
@@ -217,7 +219,7 @@ Notice how you no longer need to know _how_ `useChatRoom` works in order to use 
 
 You don’t need to extract a custom Hook for every little duplicated bit of code. Some duplication is fine. For example, extracting a `useFormInput` Hook to wrap a single `useState` call like earlier is probably unnecessary.
 
-However, whenever you write an Effect, consider whether it would be clearer to also wrap it in a custom Hook. [You shouldn’t need Effects very often,](https://react.dev/learn/you-might-not-need-an-effect) so if you’re writing one, it means that you need to “step outside React” to synchronize with some external system or to do something that React doesn’t have a built-in API for. Wrapping it into a custom Hook lets you precisely communicate your intent and how the data flows through it.
+However, whenever you write an Effect, consider whether it would be clearer to also wrap it in a custom Hook. [You shouldn’t need Effects very often,](react/learn/you-might-not-need-an-effect/index.md) so if you’re writing one, it means that you need to “step outside React” to synchronize with some external system or to do something that React doesn’t have a built-in API for. Wrapping it into a custom Hook lets you precisely communicate your intent and how the data flows through it.
 
 For example, consider a `ShippingForm` component that displays two dropdowns: one shows the list of cities, and another shows the list of areas in the selected city. You might start with some code that looks like this:
 
@@ -225,7 +227,7 @@ For example, consider a `ShippingForm` component that displays two dropdowns: on
 function ShippingForm({ country }) {const [cities, setCities] = useState(null);// This Effect fetches cities for a countryuseEffect(() => {let ignore = false;fetch(`/api/cities?country=${country}`)      .then(response => response.json())      .then(json => {if (!ignore) {setCities(json);}});return () => {ignore = true;};}, [country]);const [city, setCity] = useState(null);const [areas, setAreas] = useState(null);// This Effect fetches areas for the selected cityuseEffect(() => {if (city) {let ignore = false;fetch(`/api/areas?city=${city}`)        .then(response => response.json())        .then(json => {if (!ignore) {setAreas(json);}});return () => {ignore = true;};}}, [city]);// ...
 ```
 
-Although this code is quite repetitive, [it’s correct to keep these Effects separate from each other.](https://react.dev/learn/removing-effect-dependencies#is-your-effect-doing-several-unrelated-things) They synchronize two different things, so you shouldn’t merge them into one Effect. Instead, you can simplify the `ShippingForm` component above by extracting the common logic between them into your own `useData` Hook:
+Although this code is quite repetitive, [it’s correct to keep these Effects separate from each other.](react/learn/removing-effect-dependencies/index.md#is-your-effect-doing-several-unrelated-things) They synchronize two different things, so you shouldn’t merge them into one Effect. Instead, you can simplify the `ShippingForm` component above by extracting the common logic between them into your own `useData` Hook:
 
 ```
 function useData(url) {const [data, setData] = useState(null);useEffect(() => {if (url) {let ignore = false;fetch(url)        .then(response => response.json())        .then(json => {if (!ignore) {setData(json);}});return () => {ignore = true;};}}, [url]);return data;}
@@ -237,7 +239,7 @@ Now you can replace both Effects in the `ShippingForm` components with calls to 
 function ShippingForm({ country }) {const cities = useData(`/api/cities?country=${country}`);const [city, setCity] = useState(null);const areas = useData(city ? `/api/areas?city=${city}` : null);// ...
 ```
 
-Extracting a custom Hook makes the data flow explicit. You feed the `url` in and you get the `data` out. By “hiding” your Effect inside `useData`, you also prevent someone working on the `ShippingForm` component from adding [unnecessary dependencies](https://react.dev/learn/removing-effect-dependencies) to it. With time, most of your app’s Effects will be in custom Hooks.
+Extracting a custom Hook makes the data flow explicit. You feed the `url` in and you get the `data` out. By “hiding” your Effect inside `useData`, you also prevent someone working on the `ShippingForm` component from adding [unnecessary dependencies](react/learn/removing-effect-dependencies/index.md) to it. With time, most of your app’s Effects will be in custom Hooks.
 
 ##### Deep Dive
 
@@ -287,7 +289,7 @@ function ChatRoom({ roomId }) {const [serverUrl, setServerUrl] = useState('https
 
 ### Custom Hooks help you migrate to better patterns[](#custom-hooks-help-you-migrate-to-better-patterns "Link for Custom Hooks help you migrate to better patterns ")
 
-Effects are an [“escape hatch”](https://react.dev/learn/escape-hatches): you use them when you need to “step outside React” and when there is no better built-in solution for your use case. With time, the React team’s goal is to reduce the number of the Effects in your app to the minimum by providing more specific solutions to more specific problems. Wrapping your Effects in custom Hooks makes it easier to upgrade your code when these solutions become available.
+Effects are an [“escape hatch”](react/learn/escape-hatches/index.md): you use them when you need to “step outside React” and when there is no better built-in solution for your use case. With time, the React team’s goal is to reduce the number of the Effects in your app to the minimum by providing more specific solutions to more specific problems. Wrapping your Effects in custom Hooks makes it easier to upgrade your code when these solutions become available.
 
 Let’s return to this example:
 
@@ -329,7 +331,7 @@ If you use custom Hooks like `useData` above in your app, it will require fewer 
 
 ### There is more than one way to do it[](#there-is-more-than-one-way-to-do-it "Link for There is more than one way to do it ")
 
-Let’s say you want to implement a fade-in animation _from scratch_ using the browser [`requestAnimationFrame`](https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame) API. You might start with an Effect that sets up an animation loop. During each frame of the animation, you could change the opacity of the DOM node you [hold in a ref](https://react.dev/learn/manipulating-the-dom-with-refs) until it reaches `1`. Your code might start like this:
+Let’s say you want to implement a fade-in animation _from scratch_ using the browser [`requestAnimationFrame`](https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame) API. You might start with an Effect that sets up an animation loop. During each frame of the animation, you could change the opacity of the DOM node you [hold in a ref](react/learn/manipulating-the-dom-with-refs/index.md) until it reaches `1`. Your code might start like this:
 
 To make the component more readable, you might extract the logic into a `useFadeIn` custom Hook:
 
@@ -362,3 +364,4 @@ export default function Counter() {const count = useCounter();return <h1>Seconds
 ```
 
 You’ll need to write your custom Hook in `useCounter.js` and import it into the `App.js` file.
+

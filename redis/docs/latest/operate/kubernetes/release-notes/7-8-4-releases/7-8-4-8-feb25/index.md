@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:46:16.048Z"
 content_hash: "cc78908cd7dd3019581c5635a71fae1cab152e0a49186f978778ab6dbb9703c3"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Enterprise for Kubernetes","→","Redis Enterprise for Kubernetes","→\n      \n        Redis Enterprise Software for Kubernetes release notes","→","Redis Enterprise Software for Kubernetes release notes","→\n      \n        Redis Enterprise for Kubernetes 7.8.4 release notes","→","Redis Enterprise for Kubernetes 7.8.4 release notes","→\n      \n        Redis Enterprise for Kubernetes 7.8.4-8 (Feb 2025) release notes","→","Redis Enterprise for Kubernetes 7.8.4-8 (Feb 2025) release notes"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Enterprise for Kubernetes","→","Redis Enterprise for Kubernetes","→\n      \n        Redis Enterprise Software for Kubernetes release notes","→","Redis Enterprise Software for Kubernetes release notes","→\n      \n        Redis Enterprise for Kubernetes 7.8.4 release notes","→","Redis Enterprise for Kubernetes 7.8.4 release notes","→\n      \n        Redis Enterprise for Kubernetes 7.8.4-8 (Feb 2025) release notes","→","Redis Enterprise for Kubernetes 7.8.4-8 (Feb 2025) release notes"]
+nav_prev: {"path": "redis/docs/latest/develop/tools/insight/release-notes/v.2.16.0/index.md", "title": "RedisInsight v2.16.0, December 2022"}
+nav_next: {"path": "redis/docs/latest/operate/kubernetes/release-notes/7-8-2-releases/7-8-2-6-jan25/index.md", "title": "Redis Enterprise for Kubernetes 7.8.2-6 (Jan 2025) release notes"}
 ---
+
 # Redis Enterprise for Kubernetes 7.8.4-8 (Feb 2025) release notes
 
 Maintenance release to support Redis Enterprise Software version 7.8.4-66.
@@ -189,3 +192,4 @@ Any distribution not listed below is not supported for production workloads.
 *   **OLM operator bundle** : `v7.8.4-8.0`
 
 ## On this page
+

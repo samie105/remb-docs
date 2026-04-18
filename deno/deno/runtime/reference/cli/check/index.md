@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:51:24.930Z"
 content_hash: "b48974d0512642d1a53cb6bc7124fc9c43721a6e0e4e5652ed46979a9fb671af"
 menu_path: ["deno check"]
 section_path: []
+nav_prev: {"path": "deno/deno/runtime/reference/cli/bundle/index.md", "title": "deno bundle"}
+nav_next: {"path": "deno/deno/runtime/reference/cli/clean/index.md", "title": "deno clean"}
 ---
+
 On this page
 
 *   [Basic usage](#basic-usage)
@@ -182,3 +185,4 @@ Disable automatic loading of the configuration file.
 `--v8-flags`<V8\_FLAGS>optional
 
 To see a list of all available flags use `--v8-flags=--help` Flags can also be set via the DENO\_V8\_FLAGS environment variable. Any flags set with this flag are appended after the DENO\_V8\_FLAGS environment variable.
+

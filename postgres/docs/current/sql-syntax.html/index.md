@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:44:01.695Z"
 content_hash: "b35e03bd277f73b3d56eb8021de9bcfb7cc069e90f17943043c3894e3d315d3b"
 menu_path: ["PostgreSQL: Documentation: 18: Chapter 4. SQL Syntax"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/tutorial-advanced.html/index.md", "title": "PostgreSQL: Documentation: 18: Chapter\u00a03.\u00a0Advanced Features"}
+nav_next: {"path": "postgres/docs/current/ddl.html/index.md", "title": "PostgreSQL: Documentation: 18: Chapter\u00a05.\u00a0Data Definition"}
 ---
+
 Development Versions: [devel](https://www.postgresql.org/docs/devel/sql-syntax.html "PostgreSQL devel - Chapter 4. SQL Syntax")
 
 Chapter 4. SQL Syntax
@@ -43,3 +46,4 @@ Part II. The SQL Language 
 [Home](https://www.postgresql.org/docs/current/index.html "PostgreSQL 18.3 Documentation")
 
  4.1. Lexical Structure
+

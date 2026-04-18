@@ -9,12 +9,15 @@ last_crawled_at: "2026-04-18T16:54:13.020Z"
 content_hash: "870905e1a48b16d0e4872d20f59569ead55ad6886ace6aec85dd2b0f514bbc3d"
 menu_path: ["PostgreSQL: Documentation: 18: 23.2. Collation Support"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/sslinfo.html/index.md", "title": "PostgreSQL: Documentation: 18: F.42.\u00a0sslinfo \u2014 obtain client SSL information"}
+nav_next: {"path": "postgres/docs/current/protocol-logicalrep-message-formats.html/index.md", "title": "PostgreSQL: Documentation: 18: 54.9.\u00a0Logical Replication Message Formats"}
 ---
+
 The collation feature allows specifying the sort order and character classification behavior of data per-column, or even per-operation. This alleviates the restriction that the `LC_COLLATE` and `LC_CTYPE` settings of a database cannot be changed after its creation.
 
 ### 23.2.1. Concepts [#](#COLLATION-CONCEPTS)
 
-Conceptually, every expression of a collatable data type has a collation. (The built-in collatable data types are `text`, `varchar`, and `char`. User-defined base types can also be marked collatable, and of course a [](https://www.postgresql.org/docs/current/glossary.html#GLOSSARY-DOMAIN)[domain](https://www.postgresql.org/docs/current/glossary.html#GLOSSARY-DOMAIN "Domain") over a collatable data type is collatable.) If the expression is a column reference, the collation of the expression is the defined collation of the column. If the expression is a constant, the collation is the default collation of the data type of the constant. The collation of a more complex expression is derived from the collations of its inputs, as described below.
+Conceptually, every expression of a collatable data type has a collation. (The built-in collatable data types are `text`, `varchar`, and `char`. User-defined base types can also be marked collatable, and of course a [](postgres/docs/current/glossary.html/index.md#GLOSSARY-DOMAIN)[domain](https://www.postgresql.org/docs/current/glossary.html#GLOSSARY-DOMAIN "Domain") over a collatable data type is collatable.) If the expression is a column reference, the collation of the expression is the defined collation of the column. If the expression is a constant, the collation is the default collation of the data type of the constant. The collation of a more complex expression is derived from the collations of its inputs, as described below.
 
 The collation of an expression can be the “default” collation, which means the locale settings defined for the database. It is also possible for an expression's collation to be indeterminate. In such cases, ordering operations and other operations that need to know the collation will fail.
 
@@ -91,7 +94,7 @@ On all platforms, the following collations are supported:
 
 `unicode`
 
-This SQL standard collation sorts using the Unicode Collation Algorithm with the Default Unicode Collation Element Table. It is available in all encodings. ICU support is required to use this collation, and behavior may change if PostgreSQL is built with a different version of ICU. (This collation has the same behavior as the ICU root locale; see [`und-x-icu` (for “undefined”)](https://www.postgresql.org/docs/current/collation.html#COLLATION-MANAGING-PREDEFINED-ICU-UND-X-ICU).)
+This SQL standard collation sorts using the Unicode Collation Algorithm with the Default Unicode Collation Element Table. It is available in all encodings. ICU support is required to use this collation, and behavior may change if PostgreSQL is built with a different version of ICU. (This collation has the same behavior as the ICU root locale; see [`und-x-icu` (for “undefined”)](postgres/docs/current/collation.html/index.md#COLLATION-MANAGING-PREDEFINED-ICU-UND-X-ICU).)
 
 `ucs_basic`
 
@@ -518,3 +521,4 @@ ORDER BY c COLLATE ebcdic;
  B
  1
  2
+

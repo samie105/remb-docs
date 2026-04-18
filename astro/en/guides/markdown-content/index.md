@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:40:21.141Z"
 content_hash: "cdbd47aea51042c7fca5b4a90f9842be27ca25f0489cae6744002821265fe7b5"
 menu_path: ["Markdown in Astro"]
 section_path: []
+nav_prev: {"path": "astro/en/guides/framework-components/index.md", "title": "Front-end frameworks"}
+nav_next: {"path": "astro/en/guides/content-collections/index.md", "title": "Content collections"}
 ---
+
 # Markdown in Astro
 
 [Markdown](https://daringfireball.net/projects/markdown/) is commonly used to author text-heavy content like blog posts and documentation. Astro includes built-in support for Markdown files that can also include [frontmatter YAML](https://dev.to/paulasantamaria/introduction-to-yaml-125f) (or [TOML](https://toml.io)) to define custom properties such as a title, description, and tags.
@@ -277,3 +280,4 @@ Be sure that you understand these limitations before implementing this in your p
 ```
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

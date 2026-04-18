@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:07:58.770Z"
 content_hash: "3f3ff95e2231b7ccfd0edb7e518ef717888c890e04ca8e0946d28412c28a55a3"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis data types","→","Redis data types","→\n      \n        JSON","→","JSON","→\n      \n        Redis JSON RAM Usage","→","Redis JSON RAM Usage"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis data types","→","Redis data types","→\n      \n        JSON","→","JSON","→\n      \n        Redis JSON RAM Usage","→","Redis JSON RAM Usage"]
+nav_prev: {"path": "redis/docs/latest/operate/oss_and_stack/stack-with-enterprise/deprecated-features/triggers-and-functions/concepts/library_configuration/index.md", "title": "Library configuration"}
+nav_next: {"path": "redis/docs/latest/develop/use-cases/time-series-dashboard/php/index.md", "title": "Rolling sensor graph demo with Redis and PHP"}
 ---
+
 # Redis JSON RAM Usage
 
 Debugging memory consumption
@@ -164,3 +167,4 @@ Redis uses a global string reuse mechanism to reduce memory usage. When a string
 However, the `JSON.DEBUG MEMORY` command reports memory usage as if each string instance is stored independently, even when it's actually reused. For example, the document `{"foo": ["foo", "foo"]}` reuses the string `"foo"` internally, but the reported memory usage counts the string three times: once for the key and once for each array element.
 
 ## On this page
+

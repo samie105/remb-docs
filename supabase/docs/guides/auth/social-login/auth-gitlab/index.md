@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:54:29.679Z"
 content_hash: "9e2c82c0dcbbfc8d7df2105c3d4c462890ba9beab531fbba8cdd1fdc9df3c2a1"
 menu_path: ["Auth","Auth","More","More","More","Social Login (OAuth)","Social Login (OAuth)","Gitlab","Gitlab"]
 section_path: ["Auth","Auth","More","More","More","Social Login (OAuth)","Social Login (OAuth)","Gitlab","Gitlab"]
+nav_prev: {"path": "supabase/docs/guides/auth/social-login/auth-github/index.md", "title": "Login with GitHub"}
+nav_next: {"path": "supabase/docs/guides/auth/social-login/auth-google/index.md", "title": "Login with Google"}
 ---
+
 # 
 
 Login with GitLab
@@ -116,3 +119,4 @@ When your user signs out, call [signOut()](/docs/reference/javascript/auth-signo
 *   [Supabase - Get started for free](https://supabase.com)
 *   [Supabase JS Client](https://github.com/supabase/supabase-js)
 *   [GitLab Account](https://gitlab.com)
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:08:56.163Z"
 content_hash: "ba9a1744e19d4f1fd967102c873e54b2c3526fe58c2b72bde3d2b56b06039977"
 menu_path: ["Fetch - Deno documentation"]
 section_path: []
+nav_prev: {"path": "deno/deno/api/deno/errors/index.md", "title": "Errors - Deno documentation"}
+nav_next: {"path": "deno/deno/api/deno/ffi/index.md", "title": "FFI - Deno documentation"}
 ---
+
 ### Classes [#](#Classes)
 
 c
@@ -61,3 +64,4 @@ T
 [Deno.Proxy](./././~/Deno.Proxy "Deno.Proxy")
 
 The definition for alternative transports (or proxies) in [`Deno.CreateHttpClientOptions`](./././~/Deno.CreateHttpClientOptions).
+

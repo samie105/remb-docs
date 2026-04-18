@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:01:02.592Z"
 content_hash: "211b8b1d10e842d338cedb30c4623fa72d78234878803c86a1e9dce739441560"
 menu_path: ["@std/crypto"]
 section_path: []
+nav_prev: {"path": "deno/deno/runtime/reference/std/collections/index.md", "title": "@std/collections"}
+nav_next: {"path": "deno/deno/runtime/reference/std/csv/index.md", "title": "@std/csv"}
 ---
+
 On this page
 
 *   [Overview](#overview)
@@ -38,3 +41,4 @@ deno add jsr:@std/crypto
 ```
 
 [See all symbols in @std/crypto on](https://jsr.io/@std/crypto/doc)
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:33:27.652Z"
 content_hash: "97bc10363c23f5f4cadb7ab4552160359e1245bd02d91fc2f8787b3d5c7e0cdb"
 menu_path: ["Environment API for Plugins ​"]
 section_path: []
+nav_prev: {"path": "vite/guide/api-environment-instances/index.md", "title": "Using Environment Instances \u200b"}
+nav_next: {"path": "vite/guide/api-environment-frameworks/index.md", "title": "Environment API for Frameworks \u200b"}
 ---
+
 ## Environment API for Plugins [​](#environment-api-for-plugins)
 
 Release Candidate
@@ -45,7 +48,7 @@ ts
 
 ## Registering New Environments Using Hooks [​](#registering-new-environments-using-hooks)
 
-Plugins can add new environments in the `config` hook. For example, [RSC support](https://vite.dev/plugins/#vitejs-plugin-rsc) uses an additional environment to have a separate module graph with the `react-server` condition:
+Plugins can add new environments in the `config` hook. For example, [RSC support](vite/plugins/index.md#vitejs-plugin-rsc) uses an additional environment to have a separate module graph with the `react-server` condition:
 
 ts
 
@@ -88,7 +91,7 @@ ts
 
 *   **Type:** `(this: { environment: DevEnvironment }, options: HotUpdateOptions) => Array<EnvironmentModuleNode> | void | Promise<Array<EnvironmentModuleNode> | void>`
 *   **Kind:** `async`, `sequential`
-*   **See also:** [HMR API](https://vite.dev/guide/api-hmr)
+*   **See also:** [HMR API](vite/guide/api-hmr/index.md)
 
 The `hotUpdate` hook allows plugins to perform custom HMR update handling for a given environment. When a file changes, the HMR algorithm is run for each environment in series according to the order in `server.environments`, so the `hotUpdate` hook will be called multiple times. The hook receives a context object with the following signature:
 
@@ -158,7 +161,7 @@ The hook can choose to:
     }
     ```
     
-    Client code should register the corresponding handler using the [HMR API](https://vite.dev/guide/api-hmr) (this could be injected by the same plugin's `transform` hook):
+    Client code should register the corresponding handler using the [HMR API](vite/guide/api-hmr/index.md) (this could be injected by the same plugin's `transform` hook):
     
     js
     
@@ -264,7 +267,7 @@ The `applyToEnvironment` hook is called at config time, currently after `configR
 
 ## Application-Plugin Communication [​](#application-plugin-communication)
 
-`environment.hot` allows plugins to communicate with the code on the application side for a given environment. This is the equivalent of [the Client-server Communication feature](https://vite.dev/guide/api-plugin#client-server-communication), but supports environments other than the client environment.
+`environment.hot` allows plugins to communicate with the code on the application side for a given environment. This is the equivalent of [the Client-server Communication feature](vite/guide/api-plugin/index.md#client-server-communication), but supports environments other than the client environment.
 
 Note
 
@@ -335,3 +338,4 @@ function myPlugin() {
   }
 }
 ```
+

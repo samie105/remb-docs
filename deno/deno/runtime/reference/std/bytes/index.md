@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:00:07.115Z"
 content_hash: "fddf1addda49619202f9e2846b80c06624f2eb7467baa0608766627e9ba871ea"
 menu_path: ["@std/bytes"]
 section_path: []
+nav_prev: {"path": "deno/deno/runtime/reference/std/async/index.md", "title": "@std/async"}
+nav_next: {"path": "deno/deno/runtime/reference/std/cache/index.md", "title": "@std/cache"}
 ---
+
 On this page
 
 *   [Overview](#overview)
@@ -44,3 +47,4 @@ deno add jsr:@std/bytes
 ```
 
 [See all symbols in @std/bytes on](https://jsr.io/@std/bytes/doc)
+

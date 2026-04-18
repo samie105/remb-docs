@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:00:16.671Z"
 content_hash: "1da45d24da7146c089b58902fb562dbb725644a753bb3147ce34bb96bd7504b6"
 menu_path: ["Platform","Platform","More","More","More","Manage your usage","Manage your usage","Realtime Peak Connections","Realtime Peak Connections"]
 section_path: ["Platform","Platform","More","More","More","Manage your usage","Manage your usage","Realtime Peak Connections","Realtime Peak Connections"]
+nav_prev: {"path": "supabase/docs/guides/platform/manage-your-usage/realtime-messages/index.md", "title": "Manage Realtime Messages usage"}
+nav_next: {"path": "supabase/docs/guides/platform/mfa/org-mfa-enforcement/index.md", "title": "Enforce MFA on Organization"}
 ---
+
 # 
 
 Manage Realtime Peak Connections usage
@@ -223,3 +226,4 @@ In the Realtime Peak Connections section, you can see the usage for the selected
 If you are on a paid plan and have [Spend Cap](/docs/guides/platform/cost-control#spend-cap) disabled or your organization is on Team Plan or above, you will pay for any overages.
 
 When you are exceeding your quotas while being on a Free Plan or having [Spend Cap](/docs/guides/platform/cost-control#spend-cap) enabled, you will get a notification to your billing email address and put under a grace period. For more details, refer to our [Fair Use Policy](/docs/guides/platform/billing-faq#fair-use-policy).
+

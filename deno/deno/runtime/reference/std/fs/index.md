@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:02:40.330Z"
 content_hash: "94893e7a1dbff5db2a224b1df266078fd553c6a3f07bcd9c42764ff0c64bd266"
 menu_path: ["@std/fs"]
 section_path: []
+nav_prev: {"path": "deno/deno/runtime/reference/std/front-matter/index.md", "title": "@std/front-matter"}
+nav_next: {"path": "deno/deno/runtime/reference/std/html/index.md", "title": "@std/html"}
 ---
+
 On this page
 
 *   [Overview](#overview)
@@ -40,3 +43,4 @@ deno add jsr:@std/fs
 ```
 
 [See all symbols in @std/fs on](https://jsr.io/@std/fs/doc)
+

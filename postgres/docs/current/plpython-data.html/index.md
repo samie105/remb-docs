@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:54:21.683Z"
 content_hash: "05a121a3a2a9ed76ef81c961e34f3d90e818e8ce13f90ec2973c1a95156daf40"
 menu_path: ["PostgreSQL: Documentation: 18: 44.2. Data Values"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/protocol-logicalrep-message-formats.html/index.md", "title": "PostgreSQL: Documentation: 18: 54.9.\u00a0Logical Replication Message Formats"}
+nav_next: {"path": "postgres/docs/current/sql-analyze.html/index.md", "title": "PostgreSQL: Documentation: 18: ANALYZE"}
 ---
+
 Generally speaking, the aim of PL/Python is to provide a “natural” mapping between the PostgreSQL and the Python worlds. This informs the data mapping rules described below.
 
 ### 44.2.1. Data Type Mapping [#](#PLPYTHON-DATA-TYPE-MAPPING)
@@ -260,3 +263,4 @@ return \[(1, 2)\] \* n
 $$ LANGUAGE plpython3u;
 
 SELECT \* FROM multiout\_simple\_setof(3);
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:40:52.600Z"
 content_hash: "6d75370891dd01844504c3bf991c1f274c3f56ed4324527f810252579d89c6ec"
 menu_path: ["stream/consumers - Node documentation"]
 section_path: []
+nav_prev: {"path": "deno/deno/api/node/stream/index.md", "title": "stream - Node documentation"}
+nav_next: {"path": "deno/deno/api/node/stream/promises/index.md", "title": "stream/promises - Node documentation"}
 ---
+
 ### Usage in Deno
 
 ```typescript
@@ -49,3 +52,4 @@ f
 [text](../.././stream/consumers/~/text "text")
 
 No documentation available
+

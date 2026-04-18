@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:45:39.380Z"
 content_hash: "673331fc6aac3b1da4fdd53babcb3d191f57c3f0e1a97741ff9db298982bb16c"
 menu_path: ["Edge Functions","Edge Functions","Integrations","Integrations","Supabase Storage","Supabase Storage"]
 section_path: ["Edge Functions","Edge Functions","Integrations","Integrations","Supabase Storage","Supabase Storage"]
+nav_prev: {"path": "supabase/docs/guides/functions/status-codes/index.md", "title": "Status codes"}
+nav_next: {"path": "supabase/docs/guides/functions/unit-test/index.md", "title": "Testing your Edge Functions"}
 ---
+
 # 
 
 Integrating with Supabase Storage
@@ -43,3 +46,4 @@ Check storage before generating new content to improve performance:
 ```
 1const STORAGE_URL = 'https://your-project.supabase.co/storage/v1/object/public/images'23Deno.serve(async (req) => {4  const url = new URL(req.url)5  const username = url.searchParams.get('username')67  try {8    // Try to get existing file from storage first9    const storageResponse = await fetch(`${STORAGE_URL}/avatars/${username}.png`)1011    if (storageResponse.ok) {12      // File exists in storage, return it directly13      return storageResponse14    }1516    // File doesn't exist, generate it17    const generatedImage = await generateAvatar(username)1819    // Upload to storage for future requests20    const { error } = await supabaseAdmin.storage21      .from('images')22      .upload(`avatars/${username}.png`, generatedImage.body!, {23        contentType: 'image/png',24        cacheControl: '86400', // Cache for 24 hours25      })2627    if (error) {28      console.error('Upload failed:', error)29    }3031    return generatedImage32  } catch (error) {33    return new Response('Error processing request', { status: 500 })34  }35})
 ```
+

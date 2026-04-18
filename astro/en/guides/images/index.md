@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:38:32.119Z"
 content_hash: "93f6e71968b0b79df167eaaccee40e34d431529e08e78f3a3cee218c7713eb36"
 menu_path: ["Images"]
 section_path: []
+nav_prev: {"path": "astro/en/guides/content-collections/index.md", "title": "Content collections"}
+nav_next: {"path": "astro/en/guides/data-fetching/index.md", "title": "Data fetching"}
 ---
+
 # Images
 
 Astro provides several ways for you to use images on your site, whether they are stored locally inside your project, linked to from an external URL, or managed in a CMS or CDN.
@@ -511,3 +514,4 @@ Revalidation requires that the remote server send [Last-Modified](https://develo
 There are several third-party [community image integrations](https://astro.build/integrations?search=images) for optimizing and working with images in your Astro project.
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

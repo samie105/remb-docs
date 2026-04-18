@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:25:46.668Z"
 content_hash: "302960a4af5accdcd59f41817a3781cb669fcf24d23a8781cf2ed198e454b47e"
 menu_path: ["SQL Update"]
 section_path: []
+nav_prev: {"path": "drizzle/docs/insert/index.md", "title": "SQL Insert"}
+nav_next: {"path": "drizzle/docs/delete/index.md", "title": "SQL Delete"}
 ---
+
 ## SQL Update
 
 ```
@@ -251,3 +254,4 @@ update "users" set "city_id" = "cities"."id"
 from "cities" 
 returning "users"."id", "cities"."name"
 ```
+

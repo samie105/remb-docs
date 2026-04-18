@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:55:30.200Z"
 content_hash: "be3bfbade6d4b6dbfbdb2a96f7d41cf0c7af7eb825882cdcce2c80f70830f345"
 menu_path: ["deno sandbox"]
 section_path: []
+nav_prev: {"path": "deno/deno/runtime/reference/cli/run/index.md", "title": "deno run"}
+nav_next: {"path": "deno/deno/runtime/reference/cli/serve/index.md", "title": "deno serve"}
 ---
+
 On this page
 
 *   [Authentication](#authentication)
@@ -268,3 +271,4 @@ Command line usage:
 ```
 deno sandbox [OPTIONS] [args]...
 ```
+

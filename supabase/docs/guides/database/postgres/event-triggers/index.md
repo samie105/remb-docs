@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:56:33.369Z"
 content_hash: "dda6005c8313f3a15a427ef1257d444add4ff4ebde29fc5bcba0fc66a0825dba"
 menu_path: ["Database","Database","Working with your database (intermediate)","Working with your database (intermediate)","Managing event triggers","Managing event triggers"]
 section_path: ["Database","Database","Working with your database (intermediate)","Working with your database (intermediate)","Managing event triggers","Managing event triggers"]
+nav_prev: {"path": "supabase/docs/guides/database/postgres/enums/index.md", "title": "Managing Enums in Postgres"}
+nav_next: {"path": "supabase/docs/guides/database/postgres/first-row-in-group/index.md", "title": "Select first row for each group in Postgres"}
 ---
+
 # 
 
 Event Triggers
@@ -89,3 +92,4 @@ You can delete a trigger using the `drop event trigger` command:
 *   Official Postgres Docs: [Event Trigger Behaviours](https://www.postgresql.org/docs/current/event-trigger-definition.html)
 *   Official Postgres Docs: [Event Trigger Firing Matrix](https://www.postgresql.org/docs/17/event-trigger-matrix.html)
 *   Supabase blog: [Postgres Event Triggers without superuser access](/blog/event-triggers-wo-superuser)
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:58:16.934Z"
 content_hash: "d1015bca7aa13be7e105753f67a6485be3ef4ed8971d6916011846f51b8e6401"
 menu_path: ["Start with Supabase","Start with Supabase","Framework Quickstarts","Framework Quickstarts","Next.js","Next.js"]
 section_path: ["Start with Supabase","Start with Supabase","Framework Quickstarts","Framework Quickstarts","Next.js","Next.js"]
+nav_prev: {"path": "supabase/docs/guides/getting-started/quickstarts/kotlin/index.md", "title": "Use Supabase with Android Kotlin"}
+nav_next: {"path": "supabase/docs/guides/getting-started/quickstarts/reactjs/index.md", "title": "Use Supabase with React"}
 ---
+
 # 
 
 Use Supabase with Next.js
@@ -134,3 +137,4 @@ Run the development server, go to [http://localhost:3000/instruments](http://loc
 *   Set up [Auth](/docs/guides/auth) for your app
 *   [Insert more data](/docs/guides/database/import-data) into your database
 *   Upload and serve static files using [Storage](/docs/guides/storage)
+

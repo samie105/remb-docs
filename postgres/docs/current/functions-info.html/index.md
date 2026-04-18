@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:48:33.841Z"
 content_hash: "d7251d258ae72e633b08cc963ea3abb3b91a6d94273ae893a5fdede9cc988ae4"
 menu_path: ["PostgreSQL: Documentation: 18: 9.27. System Information Functions and Operators"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/view-pg-matviews.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.14.\u00a0pg_matviews"}
+nav_next: {"path": "postgres/docs/current/index-functions.html/index.md", "title": "PostgreSQL: Documentation: 18: 63.2.\u00a0Index Access Method Functions"}
 ---
+
 Function
 
 Description
@@ -196,6 +199,7 @@ Parses a string of text, extracts a potential type name from it, and translates 
 
 Parses a string of text, extracts a potential type name from it, and translates its type modifier, if any. A syntax error in the string will result in an error; but if the string is a syntactically valid type name that happens not to be found in the catalogs, the result is `NULL`. The result is `-1` if no type modifier is present.
 
-`to_regtypemod` can be combined with [to\_regtype](https://www.postgresql.org/docs/current/functions-info.html#TO-REGTYPE) to produce appropriate inputs for [format\_type](https://www.postgresql.org/docs/current/functions-info.html#FORMAT-TYPE), allowing a string representing a type name to be canonicalized.
+`to_regtypemod` can be combined with [to\_regtype](postgres/docs/current/functions-info.html/index.md#TO-REGTYPE) to produce appropriate inputs for [format\_type](postgres/docs/current/functions-info.html/index.md#FORMAT-TYPE), allowing a string representing a type name to be canonicalized.
 
 `format_type(to_regtype('varchar(32)'), to_regtypemod('varchar(32)'))` → `character varying(32)`
+

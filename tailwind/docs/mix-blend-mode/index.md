@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:04:42.860Z"
 content_hash: "a74dbf13a957303960d9a4815fd9a2eb4768f45a44dccde5ad6612ad190ed863"
 menu_path: ["mix-blend-mode"]
 section_path: []
+nav_prev: {"path": "tailwind/docs/opacity/index.md", "title": "opacity"}
+nav_next: {"path": "tailwind/docs/background-blend-mode/index.md", "title": "background-blend-mode"}
 ---
+
 Utilities for controlling how an element should blend with the background.
 
 Class
@@ -82,4 +85,5 @@ Prefix a `mix-blend-mode` utility with a breakpoint variant like `md:` to only a
 <div class="mix-blend-multiply md:mix-blend-overlay ...">  <!-- ... --></div>
 ```
 
-Learn more about using variants in the [variants documentation](https://tailwindcss.com/docs/hover-focus-and-other-states).
+Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).
+

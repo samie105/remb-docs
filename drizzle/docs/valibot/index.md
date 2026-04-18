@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:26:11.416Z"
 content_hash: "90815e1b5859f631aa41f4084e6fdf300643edb524d4d93a57dc10e137fe0b66"
 menu_path: ["valibot"]
 section_path: []
+nav_prev: {"path": "drizzle/docs/zod/index.md", "title": "zod"}
+nav_next: {"path": "drizzle/docs/typebox/index.md", "title": "typebox"}
 ---
+
 WARNING
 
 Starting from `drizzle-orm@1.0.0-beta.15`, `drizzle-valibot` has been deprecated in favor of first-class schema generation support within Drizzle ORM itself
@@ -508,3 +511,4 @@ pg.dataType().array(...);
 // Schema
 pipe(array(baseDataTypeSchema), length(size));
 ```
+

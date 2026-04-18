@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:41:45.756Z"
 content_hash: "f96290942cef79734756e39da656e2510e6b90b3092034c629dc4b33ef4d3c0b"
 menu_path: ["PostgreSQL: Documentation: 18: dropdb"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/spi-transaction.html/index.md", "title": "PostgreSQL: Documentation: 18: 45.4.\u00a0Transaction Management"}
+nav_next: {"path": "postgres/docs/current/sql-createaggregate.html/index.md", "title": "PostgreSQL: Documentation: 18: CREATE AGGREGATE"}
 ---
+
 dropdb — remove a PostgreSQL database
 
 ## Synopsis
@@ -123,3 +126,4 @@ To destroy the database `demo` using the server on host `eden`, port 5000, with 
 ```
 $ 
 ```
+

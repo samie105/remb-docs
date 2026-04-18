@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:53:58.852Z"
 content_hash: "af143a134f4b47ba46279163527e6a0e705f5f32bc215e3b1fe50a3d722ede80"
 menu_path: ["Deploying edge functions with Prisma ORM"]
 section_path: []
+nav_prev: {"path": "prisma/docs/orm/prisma-client/deployment/edge/deploy-to-vercel/index.md", "title": "Deploy to Vercel Edge Functions & Middleware"}
+nav_next: {"path": "prisma/docs/orm/prisma-client/deployment/serverless/deploy-to-aws-lambda/index.md", "title": "Deploy to AWS Lambda"}
 ---
+
 Deployment
 
 Edge
@@ -62,7 +65,7 @@ Deno Deploy
 
 ✅
 
-Deploying edge functions that use Prisma ORM on Cloudflare and Vercel is currently in [Preview](https://www.prisma.io/docs/orm/more/releases#preview).
+Deploying edge functions that use Prisma ORM on Cloudflare and Vercel is currently in [Preview](prisma/docs/orm/more/releases/index.md#preview).
 
 ### [Why are there limitations around database drivers in edge functions?](#why-are-there-limitations-around-database-drivers-in-edge-functions)
 
@@ -83,22 +86,23 @@ Here is an overview of the different database drivers and their compatibility wi
 
 There's [also work being done](https://github.com/sidorares/node-mysql2/pull/2289) on the `node-mysql2` driver which will enable access to traditional MySQL databases from Cloudflare Workers and Pages in the future as well.
 
-You can use all of these drivers with Prisma ORM using the respective [driver adapters](https://www.prisma.io/docs/orm/core-concepts/supported-databases/database-drivers).
+You can use all of these drivers with Prisma ORM using the respective [driver adapters](prisma/docs/orm/core-concepts/supported-databases/database-drivers/index.md).
 
 Depending on which deployment provider and database/driver you use, there may be special considerations. Please take a look at the deployment docs for your respective scenario to make sure you can deploy your application successfully:
 
 *   Cloudflare
-    *   [PostgreSQL (traditional)](https://www.prisma.io/docs/orm/prisma-client/deployment/edge/deploy-to-cloudflare#postgresql-traditional)
-    *   [PlanetScale](https://www.prisma.io/docs/orm/prisma-client/deployment/edge/deploy-to-cloudflare#planetscale)
-    *   [Neon](https://www.prisma.io/docs/orm/prisma-client/deployment/edge/deploy-to-cloudflare#neon)
+    *   [PostgreSQL (traditional)](prisma/docs/orm/prisma-client/deployment/edge/deploy-to-cloudflare/index.md#postgresql-traditional)
+    *   [PlanetScale](prisma/docs/orm/prisma-client/deployment/edge/deploy-to-cloudflare/index.md#planetscale)
+    *   [Neon](prisma/docs/orm/prisma-client/deployment/edge/deploy-to-cloudflare/index.md#neon)
     *   [Cloudflare D1](https://www.prisma.io/docs/guides/deployment/cloudflare-d1)
     *   [Prisma Postgres](https://developers.cloudflare.com/workers/tutorials/using-prisma-postgres-with-workers)
 *   Vercel
-    *   [Vercel Postgres](https://www.prisma.io/docs/orm/prisma-client/deployment/edge/deploy-to-vercel#vercel-postgres)
-    *   [Neon](https://www.prisma.io/docs/orm/prisma-client/deployment/edge/deploy-to-vercel#neon)
-    *   [PlanetScale](https://www.prisma.io/docs/orm/prisma-client/deployment/edge/deploy-to-vercel#planetscale)
+    *   [Vercel Postgres](prisma/docs/orm/prisma-client/deployment/edge/deploy-to-vercel/index.md#vercel-postgres)
+    *   [Neon](prisma/docs/orm/prisma-client/deployment/edge/deploy-to-vercel/index.md#neon)
+    *   [PlanetScale](prisma/docs/orm/prisma-client/deployment/edge/deploy-to-vercel/index.md#planetscale)
     *   [Prisma Postgres](https://www.prisma.io/docs/guides/frameworks/nextjs)
 
-If you want to deploy an app using Turso, you can follow the instructions [here](https://www.prisma.io/docs/orm/core-concepts/supported-databases/sqlite#using-driver-adapters).
+If you want to deploy an app using Turso, you can follow the instructions [here](prisma/docs/orm/core-concepts/supported-databases/sqlite/index.md#using-driver-adapters).
 
 [Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/prisma-client/deployment/edge/overview.mdx)
+

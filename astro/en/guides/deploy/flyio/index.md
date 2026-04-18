@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:37:05.883Z"
 content_hash: "20854a16a03259fc0a6191932922e014f4a15ffbda160438a008c12e5bb387db"
 menu_path: ["Deploy your Astro Site to Fly.io"]
 section_path: []
+nav_prev: {"path": "astro/en/guides/deploy/fleek/index.md", "title": "Deploy your Astro Site to Fleek"}
+nav_next: {"path": "astro/en/guides/deploy/github/index.md", "title": "Deploy your Astro Site to GitHub Pages"}
 ---
+
 # Deploy your Astro Site to Fly.io
 
 You can deploy your Astro project to [Fly.io](https://fly.io/), a platform for running full stack apps and databases close to your users.
@@ -195,3 +198,4 @@ You can instead create your own Dockerfile using [Dockerfile generator](https://
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:34:33.681Z"
 content_hash: "cd5e26f51b97d380ea81fec5757fe40ccc087e64ebc822eadec9ae0d04551e4b"
 menu_path: ["PostgreSQL: Documentation: 18: 8.17. Range Types"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/jit-extensibility.html/index.md", "title": "PostgreSQL: Documentation: 18: 30.4.\u00a0Extensibility"}
+nav_next: {"path": "postgres/docs/current/sql-delete.html/index.md", "title": "PostgreSQL: Documentation: 18: DELETE"}
 ---
+
 Range types are data types representing a range of values of some element type (called the range's _subtype_). For instance, ranges of `timestamp` might be used to represent the ranges of time that a meeting room is reserved. In this case the data type is `tsrange` (short for “timestamp range”), and `timestamp` is the subtype. The subtype must have a total order so that it is well-defined whether element values are within, before, or after a range of values.
 
 Range types are useful because they represent many element values in a single range value, and because concepts such as overlapping ranges can be expressed clearly. The use of time and date ranges for scheduling purposes is the clearest example; but price ranges, measurement ranges from an instrument, and so forth can also be useful.
@@ -240,3 +243,4 @@ with existing key (room, during)=(123A, \["2010-01-01 14:00:00","2010-01-01 15:0
 INSERT INTO room\_reservation VALUES
     ('123B', '\[2010-01-01 14:30, 2010-01-01 15:30)');
 INSERT 0 1
+

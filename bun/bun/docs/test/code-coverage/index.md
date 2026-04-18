@@ -9,45 +9,10 @@ last_crawled_at: "2026-04-18T17:02:16.194Z"
 content_hash: "b59c6a0047439a0e59f11de1a8c9a8f626a0d547ba496be7e0c2027e6288d389"
 menu_path: ["Code coverage"]
 section_path: []
+nav_prev: {"path": "bun/bun/docs/runtime/yaml/index.md", "title": "YAML"}
+nav_next: {"path": "bun/bun/docs/test/dates-times/index.md", "title": "Dates and times"}
 ---
-Bun’s test runner supports built-in code coverage reporting. Use it to see how much of your codebase is covered by tests and find areas that are not currently well-tested.
 
-## Enabling Coverage
-
-`bun:test` supports seeing which lines of code are covered by tests. To use this feature, pass `--coverage` to the CLI. It will print out a coverage report to the console:
-
-terminal
-
-```
-bun test --coverage
-
--------------|---------|---------|-------------------
-File         | % Funcs | % Lines | Uncovered Line #s
--------------|---------|---------|-------------------
-All files    |   38.89 |   42.11 |
- index-0.ts  |   33.33 |   36.84 | 10-15,19-24
- index-1.ts  |   33.33 |   36.84 | 10-15,19-24
- index-10.ts |   33.33 |   36.84 | 10-15,19-24
- index-2.ts  |   33.33 |   36.84 | 10-15,19-24
- index-3.ts  |   33.33 |   36.84 | 10-15,19-24
- index-4.ts  |   33.33 |   36.84 | 10-15,19-24
- index-5.ts  |   33.33 |   36.84 | 10-15,19-24
- index-6.ts  |   33.33 |   36.84 | 10-15,19-24
- index-7.ts  |   33.33 |   36.84 | 10-15,19-24
- index-8.ts  |   33.33 |   36.84 | 10-15,19-24
- index-9.ts  |   33.33 |   36.84 | 10-15,19-24
- index.ts    |  100.00 |  100.00 |
--------------|---------|---------|-------------------
-```
-
-### Enable by Default
-
-To always enable coverage reporting by default, add the following line to your `bunfig.toml`:
-
-bunfig.toml
-
-```
-[test]
 # Always enable coverage
 coverage = true
 ```
@@ -460,3 +425,4 @@ coveragePathIgnorePatterns = [
 ```
 
 Consider running coverage only on CI or specific branches rather than every test run during development.
+

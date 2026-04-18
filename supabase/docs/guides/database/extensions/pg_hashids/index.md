@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:55:38.799Z"
 content_hash: "5407f9a17b2a257990aaebba2cebe744ac882246005f0b99ee31eb4285c58dbf"
 menu_path: ["Database","Database","Extensions","Extensions","pg_hashids: Short UIDs","pg_hashids: Short UIDs"]
 section_path: ["Database","Database","Extensions","Extensions","pg_hashids: Short UIDs","pg_hashids: Short UIDs"]
+nav_prev: {"path": "supabase/docs/guides/database/extensions/pg_graphql/index.md", "title": "pg_graphql: GraphQL for Postgres"}
+nav_next: {"path": "supabase/docs/guides/database/extensions/pg_jsonschema/index.md", "title": "pg_jsonschema: JSON Schema Validation"}
 ---
+
 # 
 
 pg\_hashids: Short UIDs
@@ -37,3 +40,4 @@ To reverse the `short_id` back into an `id`, there is an equivalent function nam
 ## Resources[#](#resources)
 
 *   Official [pg\_hashids documentation](https://github.com/iCyberon/pg_hashids)
+

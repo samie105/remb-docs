@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:52:16.233Z"
 content_hash: "c08d0f56cab09b96819e47058a22d176fe9f7ab1a6c3c21cd5cd67bae2776051"
 menu_path: ["AI & Vectors","AI & Vectors","Python Examples","Python Examples","Text Deduplication","Text Deduplication"]
 section_path: ["AI & Vectors","AI & Vectors","Python Examples","Python Examples","Text Deduplication","Text Deduplication"]
+nav_prev: {"path": "supabase/docs/guides/ai/quickstarts/generate-text-embeddings/index.md", "title": "Generate Embeddings"}
+nav_next: {"path": "supabase/docs/guides/ai/vector-indexes/hnsw-indexes/index.md", "title": "HNSW indexes"}
 ---
+
 # 
 
 Semantic Text Deduplication
@@ -84,3 +87,4 @@ Alternatively if you would like to quickly deploy using Supabase, check out our 
 ## Next steps[#](#next-steps)
 
 You can now start building your own applications with Vecs. Check our [examples](/docs/guides/ai#examples) for ideas.
+

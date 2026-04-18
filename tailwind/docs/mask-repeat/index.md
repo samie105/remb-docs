@@ -9,15 +9,9 @@ last_crawled_at: "2026-04-18T17:06:33.629Z"
 content_hash: "5bbf13ea60f4850f8fa65016a53a27432115462cad30fcd8f7085b59112abb3c"
 menu_path: ["mask-repeat"]
 section_path: []
+nav_prev: {"path": "tailwind/docs/mask-position/index.md", "title": "mask-position"}
+nav_next: {"path": "tailwind/docs/mask-size/index.md", "title": "mask-size"}
 ---
-[](/)
-
-[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
-
-1.  Effects
-2.  mask-repeat
-
-Effects
 
 # mask-repeat
 
@@ -134,3 +128,4 @@ Short, tactical video lessons from the creator of Tailwind CSS, delivered direct
 [Get the free course](/build-uis-that-dont-suck)
 
 Copyright © 2026 Tailwind Labs Inc.·[Trademark Policy](/brand)
+

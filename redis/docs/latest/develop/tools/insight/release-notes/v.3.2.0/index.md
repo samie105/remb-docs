@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:32:03.429Z"
 content_hash: "1de5c9adb01946e70e2bd32ef87334a6f19b2d6a74209c741c8d67a3ad68ab5e"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Client tools","→","Client tools","→\n      \n        Redis Insight","→","Redis Insight","→\n      \n        Redis Insight release notes","→","Redis Insight release notes","→\n      \n        Redis Insight v3.2.0, February 2026","→","Redis Insight v3.2.0, February 2026"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Client tools","→","Client tools","→\n      \n        Redis Insight","→","Redis Insight","→\n      \n        Redis Insight release notes","→","Redis Insight release notes","→\n      \n        Redis Insight v3.2.0, February 2026","→","Redis Insight v3.2.0, February 2026"]
+nav_prev: {"path": "redis/docs/latest/index.md", "title": "Welcome to Redis Docs"}
+nav_next: {"path": "redis/docs/latest/commands/redis-8-6-commands/index.md", "title": "Redis 8.6 Commands Reference"}
 ---
+
 # Redis Insight v3.2.0, February 2026
 
 Redis Insight v3.2.0
@@ -62,3 +65,4 @@ MacOS Apple silicon
 tgtdVOsdph+l3rtq1N83qBwr4Lktz/hkPHpDdFzp0JRSe17Qer04mw8GibL9tyf8eVhJsUSF6dzGovGIq9Mv2A==
 
 ## On this page
+

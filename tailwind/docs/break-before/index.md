@@ -9,15 +9,9 @@ last_crawled_at: "2026-04-18T16:40:34.158Z"
 content_hash: "00c49062058fa7f380b2ca0700cc12cf51d5df63c58c1cde4695c32f90bf901a"
 menu_path: ["break-before"]
 section_path: []
+nav_prev: {"path": "tailwind/docs/break-after/index.md", "title": "break-after"}
+nav_next: {"path": "tailwind/docs/break-inside/index.md", "title": "break-inside"}
 ---
-[](/)
-
-[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
-
-1.  Layout
-2.  break-before
-
-Layout
 
 # break-before
 
@@ -97,3 +91,4 @@ Short, tactical video lessons from the creator of Tailwind CSS, delivered direct
 [Get the free course](/build-uis-that-dont-suck)
 
 Copyright © 2026 Tailwind Labs Inc.·[Trademark Policy](/brand)
+

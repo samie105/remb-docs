@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:38:09.394Z"
 content_hash: "3db91bee6f493c51be630e7c5670985ed5ad858550146c73f41ad4ad67afeca6"
 menu_path: ["PostgreSQL: Documentation: 18: 19.9. Run-time Statistics"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/tutorial-createdb.html/index.md", "title": "PostgreSQL: Documentation: 18: 1.3.\u00a0Creating a Database"}
+nav_next: {"path": "postgres/docs/current/runtime-config-vacuum.html/index.md", "title": "PostgreSQL: Documentation: 18: 19.10.\u00a0Vacuuming"}
 ---
+
 Development Versions: [devel](https://www.postgresql.org/docs/devel/runtime-config-statistics.html "PostgreSQL devel - 19.9. Run-time Statistics")
 
 ### 19.9.1. Cumulative Query and Index Statistics [#](#RUNTIME-CONFIG-CUMULATIVE-STATISTICS)
@@ -72,3 +75,4 @@ To ensure that only one query identifier is calculated and displayed, extensions
 `log_executor_stats` (`boolean`) [#](#GUC-LOG-STATEMENT-STATS)
 
 For each query, output performance statistics of the respective module to the server log. This is a crude profiling instrument, similar to the Unix `getrusage()` operating system facility. `log_statement_stats` reports total statement statistics, while the others report per-module statistics. `log_statement_stats` cannot be enabled together with any of the per-module options. All of these options are disabled by default. Only superusers and users with the appropriate `SET` privilege can change these settings.
+

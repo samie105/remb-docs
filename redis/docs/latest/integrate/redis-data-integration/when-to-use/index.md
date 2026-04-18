@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:06:54.602Z"
 content_hash: "99b8e7aa9e69a8189611d7260d6692b56a60ad3c8ba84fd21c1b9fce23f4ff05"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Redis Data Integration","→","Redis Data Integration","→\n      \n        When to use RDI","→","When to use RDI"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Redis Data Integration","→","Redis Data Integration","→\n      \n        When to use RDI","→","When to use RDI"]
+nav_prev: {"path": "redis/docs/latest/develop/whats-new/8-0/index.md", "title": "Redis 8.0"}
+nav_next: {"path": "redis/docs/latest/develop/tools/insight/release-notes/v2.8.0/index.md", "title": "RedisInsight v2.8.0, August 2022"}
 ---
+
 # When to use RDI
 
 Understand when (and when not) to use RDI.
@@ -235,3 +238,4 @@ questions:
                     sentiment: "positive"
 
 ## On this page
+

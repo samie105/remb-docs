@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:47:39.645Z"
 content_hash: "a12f4617c65751a4d0d29f8c157546f4b08316fc0e71c74c681e49959e38aab2"
 menu_path: ["Platform","Platform","Billing","Billing","Manage your subscription","Manage your subscription"]
 section_path: ["Platform","Platform","Billing","Billing","Manage your subscription","Manage your subscription"]
+nav_prev: {"path": "supabase/docs/guides/platform/ipv4-address/index.md", "title": "Dedicated IPv4 Address for Ingress"}
+nav_next: {"path": "supabase/docs/guides/platform/manage-your-usage/index.md", "title": "Manage your usage"}
 ---
+
 # 
 
 Manage your subscription
@@ -89,3 +92,4 @@ You can add multiple payment methods, but only one can be active at a time.
 You can update your billing email address, billing address and tax ID on the [organization's billing page](/dashboard/org/_/billing).
 
 Any changes made to your billing details will only be reflected in your upcoming invoices. Our payment provider cannot regenerate previous invoices.
+

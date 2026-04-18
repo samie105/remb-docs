@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:11:24.532Z"
 content_hash: "b98e1b337a290282a2b8263503dc30cd788e1e7e1c947c738b799c91201f12ab"
 menu_path: ["Testing - Deno documentation"]
 section_path: []
+nav_prev: {"path": "deno/deno/api/deno/telemetry/index.md", "title": "Telemetry - Deno documentation"}
+nav_next: {"path": "deno/deno/api/deno/websockets/index.md", "title": "WebSockets - Deno documentation"}
 ---
+
 ### Functions [#](#Functions)
 
 f
@@ -107,3 +110,4 @@ v
 [Deno.test](./././~/Deno.test "Deno.test")
 
 Register a test which will be run when `deno test` is used on the command line and the containing module looks like a test module.
+

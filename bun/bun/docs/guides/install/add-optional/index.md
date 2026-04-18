@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:49:23.228Z"
 content_hash: "f0e8597ff099360598b45b004c860a554954b1d43aea9b51503a5e0162439912"
 menu_path: ["Add an optional dependency"]
 section_path: []
+nav_prev: {"path": "bun/bun/docs/guides/install/add-git/index.md", "title": "Add a Git dependency"}
+nav_next: {"path": "bun/bun/docs/guides/install/add-peer/index.md", "title": "Add a peer dependency"}
 ---
+
 [Skip to main content](#content-area)
 
 [Bun home page![light logo](https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z_zHyy/logo/logo-with-wordmark-dark.svg?fit=max&auto=format&n=JUhaF6Mf68z_zHyy&q=85&s=3f55cd23822028e40658b192c927f3e4)![dark logo](https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z_zHyy/logo/logo-with-wordmark-light.svg?fit=max&auto=format&n=JUhaF6Mf68z_zHyy&q=85&s=8a0c5928d9dc3631f0d33e17c257e2ec)](/docs)
@@ -75,3 +78,4 @@ Add a peer dependency
 Next
 
 ](/docs/guides/install/add-peer)
+

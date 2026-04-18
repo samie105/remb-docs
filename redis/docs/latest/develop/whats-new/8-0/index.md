@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:06:48.357Z"
 content_hash: "94d34a11441b7d0f52d4029f2e42f5d7c6a369cb2d37490f000e441f536833f4"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        What's new?","→","What's new?","→\n      \n        Redis 8.0","→","Redis 8.0"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        What's new?","→","What's new?","→\n      \n        Redis 8.0","→","Redis 8.0"]
+nav_prev: {"path": "redis/docs/latest/develop/ai/search-and-query/query/vector-search/index.md", "title": "Vector search"}
+nav_next: {"path": "redis/docs/latest/integrate/redis-data-integration/when-to-use/index.md", "title": "When to use RDI"}
 ---
+
 # Redis 8.0
 
 What's new in Redis 8.0
@@ -108,3 +111,4 @@ Redis 8 merges Redis Stack and Redis Community Edition into a single unified dis
 Redis 8.0 delivers just Redis — no modules, no fragmentation.
 
 ## On this page
+

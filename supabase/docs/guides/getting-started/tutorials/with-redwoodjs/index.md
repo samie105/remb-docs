@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:59:12.666Z"
 content_hash: "c1ac48bf9f298f1239928a5012593e36c6f5a40d57131c2945a8a62fb2c8a958"
 menu_path: ["Start with Supabase","Start with Supabase","Web app demos","Web app demos","RedwoodJS","RedwoodJS"]
 section_path: ["Start with Supabase","Start with Supabase","Web app demos","Web app demos","RedwoodJS","RedwoodJS"]
+nav_prev: {"path": "supabase/docs/guides/getting-started/tutorials/with-react/index.md", "title": "Build a User Management App with React"}
+nav_next: {"path": "supabase/docs/guides/getting-started/tutorials/with-refine/index.md", "title": "Build a User Management App with Refine"}
 ---
+
 # 
 
 Build a User Management App with RedwoodJS
@@ -260,3 +263,4 @@ At this stage you have a fully functional application!
 
 *   Learn more about [RedwoodJS](https://redwoodjs.com)
 *   Visit the [RedwoodJS Discourse Community](https://community.redwoodjs.com)
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:48:28.514Z"
 content_hash: "e247a65acb32a6161574efeb0c9002d2b773789db553b926c761001e92d1b926"
 menu_path: ["Add site-wide styling"]
 section_path: []
+nav_prev: {"path": "astro/en/tutorial/2-pages/4/index.md", "title": "Style your About page"}
+nav_next: {"path": "astro/en/tutorial/3-components/1/index.md", "title": "Make a reusable Navigation component"}
 ---
+
 # Add site-wide styling
 
 Now that you have a styled About page, it’s time to add some global styles for the rest of your site!
@@ -108,3 +111,4 @@ Your About page is now styled using _both_ the imported `global.css` file _and_ 
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

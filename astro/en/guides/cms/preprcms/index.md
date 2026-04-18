@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:35:02.316Z"
 content_hash: "428268c99741978fb44f957a5c8e74fa59dc1a0a0e5f64e6b7359fe6f21a983d"
 menu_path: ["Prepr CMS & Astro"]
 section_path: []
+nav_prev: {"path": "astro/en/guides/cms/payload/index.md", "title": "Payload CMS & Astro"}
+nav_next: {"path": "astro/en/guides/cms/prismic/index.md", "title": "Prismic & Astro"}
 ---
+
 # Prepr CMS & Astro
 
 [Prepr CMS](https://www.prepr.io/) is a headless CMS with built-in personalization.
@@ -361,3 +364,4 @@ To deploy your Prepr blog, visit our [deployment guides](/en/guides/deploy/) and
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:48:59.525Z"
 content_hash: "c74cd8d554eaf2cb398b81268356e78a46ff9afcfda95c37483d4204728d64ab"
 menu_path: ["PostgreSQL: Documentation: 18: 53.36. pg_user_mappings"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/dblink.html/index.md", "title": "PostgreSQL: Documentation: 18: F.11.\u00a0dblink \u2014 connect to other PostgreSQL databases"}
+nav_next: {"path": "postgres/docs/current/infoschema-routine-column-usage.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.40.\u00a0routine_column_usage"}
 ---
+
 Development Versions: [devel](https://www.postgresql.org/docs/devel/view-pg-user-mappings.html "PostgreSQL devel - 53.36. pg_user_mappings")
 
 The view `pg_user_mappings` provides access to information about user mappings. This is essentially a publicly readable view of [`pg_user_mapping`](https://www.postgresql.org/docs/current/catalog-pg-user-mapping.html "52.65. pg_user_mapping") that leaves out the options field if the user has no rights to use it.
@@ -51,3 +54,4 @@ To protect password information stored as a user mapping option, the `umoptions`
 *   current user is the server owner and mapping is for `PUBLIC`
     
 *   current user is a superuser
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:34:02.940Z"
 content_hash: "4342603b4b7a821e550ad8ee9697e0876bc9f0d6b71f1ad8b750e0995436e29e"
 menu_path: ["PostgreSQL: Documentation: 18: EXPLAIN"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/textsearch-debugging.html/index.md", "title": "PostgreSQL: Documentation: 18: 12.8.\u00a0Testing and Debugging Text Search"}
+nav_next: {"path": "postgres/docs/current/ddl-system-columns.html/index.md", "title": "PostgreSQL: Documentation: 18: 5.6.\u00a0System Columns"}
 ---
+
 EXPLAIN — show the execution plan of a statement
 
 ## Synopsis
@@ -55,7 +58,7 @@ Carry out the command and show actual run times and other statistics. This param
 
 `VERBOSE`
 
-Display additional information regarding the plan. Specifically, include the output column list for each node in the plan tree, schema-qualify table and function names, always label variables in expressions with their range table alias, and always print the name of each trigger for which statistics are displayed. The query identifier will also be displayed if one has been computed, see [compute\_query\_id](https://www.postgresql.org/docs/current/runtime-config-statistics.html#GUC-COMPUTE-QUERY-ID) for more details. This parameter defaults to `FALSE`.
+Display additional information regarding the plan. Specifically, include the output column list for each node in the plan tree, schema-qualify table and function names, always label variables in expressions with their range table alias, and always print the name of each trigger for which statistics are displayed. The query identifier will also be displayed if one has been computed, see [compute\_query\_id](postgres/docs/current/runtime-config-statistics.html/index.md#GUC-COMPUTE-QUERY-ID) for more details. This parameter defaults to `FALSE`.
 
 `COSTS`
 
@@ -71,7 +74,7 @@ Allow the statement to contain parameter placeholders like `$1`, and generate a 
 
 `BUFFERS`
 
-Include information on buffer usage. Specifically, include the number of shared blocks hit, read, dirtied, and written, the number of local blocks hit, read, dirtied, and written, the number of temp blocks read and written, and the time spent reading and writing data file blocks, local blocks and temporary file blocks (in milliseconds) if [track\_io\_timing](https://www.postgresql.org/docs/current/runtime-config-statistics.html#GUC-TRACK-IO-TIMING) is enabled. A _hit_ means that a read was avoided because the block was found already in cache when needed. Shared blocks contain data from regular tables and indexes; local blocks contain data from temporary tables and indexes; while temporary blocks contain short-term working data used in sorts, hashes, Materialize plan nodes, and similar cases. The number of blocks _dirtied_ indicates the number of previously unmodified blocks that were changed by this query; while the number of blocks _written_ indicates the number of previously-dirtied blocks evicted from cache by this backend during query processing. The number of blocks shown for an upper-level node includes those used by all its child nodes. In text format, only non-zero values are printed. Buffers information is automatically included when `ANALYZE` is used.
+Include information on buffer usage. Specifically, include the number of shared blocks hit, read, dirtied, and written, the number of local blocks hit, read, dirtied, and written, the number of temp blocks read and written, and the time spent reading and writing data file blocks, local blocks and temporary file blocks (in milliseconds) if [track\_io\_timing](postgres/docs/current/runtime-config-statistics.html/index.md#GUC-TRACK-IO-TIMING) is enabled. A _hit_ means that a read was avoided because the block was found already in cache when needed. Shared blocks contain data from regular tables and indexes; local blocks contain data from temporary tables and indexes; while temporary blocks contain short-term working data used in sorts, hashes, Materialize plan nodes, and similar cases. The number of blocks _dirtied_ indicates the number of previously unmodified blocks that were changed by this query; while the number of blocks _written_ indicates the number of previously-dirtied blocks evicted from cache by this backend during query processing. The number of blocks shown for an upper-level node includes those used by all its child nodes. In text format, only non-zero values are printed. Buffers information is automatically included when `ANALYZE` is used.
 
 `SERIALIZE`
 
@@ -252,3 +255,4 @@ The following syntax was used before PostgreSQL version 9.0 and is still support
 EXPLAIN \[ ANALYZE \] \[ VERBOSE \] _`statement`_
 
 Note that in this syntax, the options must be specified in exactly the order shown.
+

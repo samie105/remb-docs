@@ -9,15 +9,9 @@ last_crawled_at: "2026-04-18T17:16:11.430Z"
 content_hash: "b420b151f94e991b6a5ed884b5f1c77a8658ea03a57eb257ac77cea6b789b5e9"
 menu_path: ["resize"]
 section_path: []
+nav_prev: {"path": "tailwind/docs/pointer-events/index.md", "title": "pointer-events"}
+nav_next: {"path": "tailwind/docs/scroll-behavior/index.md", "title": "scroll-behavior"}
 ---
-[](/)
-
-[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
-
-1.  Interactivity
-2.  resize
-
-Interactivity
 
 # resize
 
@@ -116,3 +110,4 @@ Short, tactical video lessons from the creator of Tailwind CSS, delivered direct
 [Get the free course](/build-uis-that-dont-suck)
 
 Copyright © 2026 Tailwind Labs Inc.·[Trademark Policy](/brand)
+

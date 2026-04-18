@@ -9,15 +9,10 @@ last_crawled_at: "2026-04-18T16:58:21.754Z"
 content_hash: "0a19367e17fa523f337dab76d21913e869bad68c76001f8d4dd6ed78688007fe"
 menu_path: ["Contributing"]
 section_path: []
+nav_prev: {"path": "bun/bun/docs/project/license/index.md", "title": "License"}
+nav_next: {"path": "bun/bun/docs/project/roadmap/index.md", "title": "Roadmap"}
 ---
-Configuring a development environment for Bun can take 10-30 minutes depending on your internet connection and computer speed. You will need ~10GB of free disk space for the repository and build artifacts. If you are using Windows, please refer to [this guide](https://bun.com/docs/project/building-windows)
 
-## Using Nix (Alternative)
-
-A Nix flake is provided as an alternative to manual dependency installation:
-
-```
-nix develop
 # or explicitly use the pure shell
 # nix develop .#pure
 export CMAKE_SYSTEM_PROCESSOR=$(uname -m)
@@ -273,3 +268,4 @@ The built version of Bun may not work on other systems if compiled this way.
 *   Disable logging: `BUN_DEBUG_QUIET_LOGS=1 bun-debug ...` (to disable all debug logging)
 *   Enable logging for a specific zig scope: `BUN_DEBUG_EventLoop=1 bun-debug ...` (to allow `std.log.scoped(.EventLoop)`)
 *   Bun transpiles every file it runs, to see the actual executed source in a debug build find it in `/tmp/bun-debug-src/...path/to/file`, for example the transpiled version of `/home/bun/index.ts` would be in `/tmp/bun-debug-src/home/bun/index.ts`
+

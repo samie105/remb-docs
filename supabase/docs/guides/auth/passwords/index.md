@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:38:37.337Z"
 content_hash: "111f8f5b658e1630d85e5f793fb798eea4e6c9d2403ea2e442908dc4e1f65662"
 menu_path: ["Auth","Auth","Flows (How-tos)","Flows (How-tos)","Password-based","Password-based"]
 section_path: ["Auth","Auth","Flows (How-tos)","Flows (How-tos)","Password-based","Password-based"]
+nav_prev: {"path": "supabase/docs/guides/auth/native-mobile-deep-linking/index.md", "title": "Native Mobile Deep Linking"}
+nav_next: {"path": "supabase/docs/guides/auth/rate-limits/index.md", "title": "Rate limits"}
 ---
+
 # 
 
 Password-based Auth
@@ -147,3 +150,4 @@ Call the function to sign in with the user's phone number and password:
 ```
 1import { createClient } from '@supabase/supabase-js'23const supabase = createClient('https://your-project-id.supabase.co', 'sb_publishable_...')45// ---cut---6const { data, error } = await supabase.auth.signInWithPassword({7  phone: '+13334445555',8  password: 'some-password',9})
 ```
+

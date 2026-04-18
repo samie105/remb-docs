@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:02:50.541Z"
 content_hash: "bc150873d7e105ee9ae5f5f6aebafa28b8f3ea4a0bc1c190510dd3ff6f7d0bc2"
 menu_path: ["border-width"]
 section_path: []
+nav_prev: {"path": "tailwind/docs/border-radius/index.md", "title": "border-radius"}
+nav_next: {"path": "tailwind/docs/border-color/index.md", "title": "border-color"}
 ---
+
 Utilities for controlling the width of an element's borders.
 
 Class
@@ -172,4 +175,5 @@ Prefix a `border-width` utility with a breakpoint variant like `md:` to only app
 <div class="border-2 md:border-t-4 ...">  <!-- ... --></div>
 ```
 
-Learn more about using variants in the [variants documentation](https://tailwindcss.com/docs/hover-focus-and-other-states).
+Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).
+

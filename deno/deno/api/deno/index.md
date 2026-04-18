@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:08:23.396Z"
 content_hash: "73b1d3156b64f46de07c08cab763d3d1162f47427a697cf8b49c678b32d258a0"
 menu_path: ["Deno Namespace APIs"]
 section_path: []
+nav_prev: {"path": "deno/deno/runtime/reference/web_platform_apis/index.md", "title": "Web Platform APIs"}
+nav_next: {"path": "deno/deno/api/deno/cloud/index.md", "title": "Cloud - Deno documentation"}
 ---
+
 On this page
 
 *   [API Documentation](#api-documentation)
@@ -982,3 +985,5 @@ globalThis.addEventListener("unload", (e) => {
 
 count++;
 ```
+
+

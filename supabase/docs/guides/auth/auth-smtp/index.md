@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:37:16.656Z"
 content_hash: "8a111ba472caee2d723c78f389384faadde4b5e70b3fa786cdc336d1056a6fac"
 menu_path: ["Auth","Auth","Configuration","Configuration","Custom SMTP","Custom SMTP"]
 section_path: ["Auth","Auth","Configuration","Configuration","Custom SMTP","Custom SMTP"]
+nav_prev: {"path": "supabase/docs/guides/auth/auth-web3/index.md", "title": "Sign in with Web3"}
+nav_next: {"path": "supabase/docs/guides/auth/auth-mfa/index.md", "title": "Multi-Factor Authentication"}
 ---
+
 # 
 
 Send emails with custom SMTP
@@ -158,3 +161,4 @@ If you need more control over the sending process, instead of using a SMTP serve
 Having short lived [user sessions](/docs/guides/auth/sessions) can be problematic for email sending, as it forces active users to sign-in frequently, increasing the number of messages needed to be sent. Consider increasing the maximum duration of user sessions. If you do see an unnecessary increase in logins without a clear cause, check your frontend application for bugs.
 
 If you are using a [SSR](/docs/guides/auth/server-side) framework on the frontend and are seeing an increased number of user logins without a clear cause, check your set up. Make sure to keep the `@supabase/ssr` package up to date and closely follow the guides we publish. Make sure that the middleware components of your SSR frontend works as intended and matches the guides we've published. Sometimes a misplaced `return` or conditional can cause early session termination.
+

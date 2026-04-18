@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:47:35.292Z"
 content_hash: "b34bee63346308e55df10475f7253fbaad539c35c32a73787bae7e040a6ffbb3"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Cloud","→","Redis Cloud","→\n      \n        Manage databases","→","Manage databases","→\n      \n        Create a database","→","Create a database","→\n      \n        Create a free database","→","Create a free database"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Cloud","→","Redis Cloud","→\n      \n        Manage databases","→","Manage databases","→\n      \n        Create a database","→","Create a database","→\n      \n        Create a free database","→","Create a free database"]
+nav_prev: {"path": "redis/docs/latest/operate/rc/subscriptions/bring-your-own-cloud/cloud-account-settings/index.md", "title": "Create and edit Cloud accounts"}
+nav_next: {"path": "redis/docs/latest/develop/get-started/document-database/index.md", "title": "Redis as a document database quick start guide"}
 ---
+
 # Create a free database
 
 Shows how to create a free database.
@@ -60,3 +63,4 @@ To create a database in your Redis Cloud account:
     
 
 You can now [connect to your database](/docs/latest/operate/rc/databases/connect/) and start working with Redis. Once your app is ready to scale up, you can [upgrade to a paid Essentials plan](/docs/latest/operate/rc/subscriptions/view-essentials-subscription/#upgrade-plan) at any time.
+

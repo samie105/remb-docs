@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:01:13.704Z"
 content_hash: "5dae0c3deee940ddf3018e7ecc46b8b8c6f7819ec78a4295cdd421ce1ebd9c51"
 menu_path: ["Redis"]
 section_path: []
+nav_prev: {"path": "bun/bun/docs/runtime/plugins/index.md", "title": "Plugins"}
+nav_next: {"path": "bun/bun/docs/runtime/repl/index.md", "title": "REPL"}
 ---
+
 Bun provides native bindings for working with Redis databases with a modern, Promise-based API. The interface is designed to be performant, with built-in connection management, fully typed responses, and TLS support.
 
 ![https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z\_zHyy/icons/typescript.svg?fit=max&auto=format&n=JUhaF6Mf68z\_zHyy&q=85&s=7ac549adaea8d5487d8fbd58cc3ea35b](https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z_zHyy/icons/typescript.svg?fit=max&auto=format&n=JUhaF6Mf68z_zHyy&q=85&s=7ac549adaea8d5487d8fbd58cc3ea35b)redis.ts
@@ -608,3 +611,4 @@ Unsupported features:
 
 *   Redis Sentinel
 *   Redis Cluster
+

@@ -9,10 +9,13 @@ last_crawled_at: "2026-04-18T16:32:11.558Z"
 content_hash: "3d3ea21b40d41a60c6745867277e9efaaa40f31585f5c1b8b004b19ffc3d974e"
 menu_path: ["Custom header"]
 section_path: []
+nav_prev: {"path": "trpc/docs/v10/client/cors/index.md", "title": "Send cookies cross-origin"}
+nav_next: {"path": "trpc/docs/v10/client/links/index.md", "title": "Links Overview"}
 ---
+
 Version: 10.x
 
-The headers option can be customized in the config when using the [`httpBatchLink`](https://trpc.io/docs/v10/client/links/httpBatchLink) or the [`httpLink`](https://trpc.io/docs/v10/client/links/httpLink).
+The headers option can be customized in the config when using the [`httpBatchLink`](trpc/docs/v10/client/links/httpBatchLink/index.md) or the [`httpLink`](trpc/docs/v10/client/links/httpLink/index.md).
 
 `headers` can be both an object or a function. If it's a function it will get called dynamically for every HTTP request.
 
@@ -29,3 +32,4 @@ The headers option can be customized in the config when using the [`httpBatchLin
 The `token` can be whatever you want it to be. It's entirely up to you whether that's just a client-side variable that you update the value of on success or whether you store the token and pull it from local storage.
 
 *   [Example with auth login](#example-with-auth-login)
+

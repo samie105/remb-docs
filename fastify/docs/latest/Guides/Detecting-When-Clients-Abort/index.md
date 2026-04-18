@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:37:50.353Z"
 content_hash: "acea8ed333041ed6bf7fb61f1a0d316b510db167455e666baf74693bcc8a59b0"
 menu_path: ["Detecting When Clients Abort"]
 section_path: []
+nav_prev: {"path": "fastify/docs/latest/Guides/Delay-Accepting-Requests/index.md", "title": "Delay Accepting Requests"}
+nav_next: {"path": "fastify/docs/latest/Guides/Ecosystem/index.md", "title": "Ecosystem"}
 ---
+
 Version: latest (v5.8.x)
 
 ## Introduction[​](#introduction "Direct link to Introduction")
@@ -74,3 +77,4 @@ Specifics of the implementation will vary from one problem to another, but the m
 You can listen to the request close event and determine if the request was aborted or if it was successfully delivered. You can implement this solution in an onRequest hook or directly in an individual route.
 
 This approach will not trigger in the event of internet disruption, and such detection would require additional business logic. If you have flawed backend application logic that results in a server crash, then you could trigger a false detection. The `clientErrorHandler`, either by default or with custom logic, is not intended to handle this scenario and will not trigger when the client aborts a request.
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:11:24.404Z"
 content_hash: "45ce95ea89ad143a43059e6adb36bed1af27d058413d7d84747bd13f1791de80"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Redis session store","→","Redis session store","→\n      \n        Redis session store with Ruby","→","Redis session store with Ruby"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Redis session store","→","Redis session store","→\n      \n        Redis session store with Ruby","→","Redis session store with Ruby"]
+nav_prev: {"path": "redis/docs/latest/develop/use-cases/rate-limiter/ruby/index.md", "title": "Token bucket rate limiter with Redis and Ruby"}
+nav_next: {"path": "redis/docs/latest/develop/ai/search-and-query/advanced-concepts/index.md", "title": "Search concepts"}
 ---
+
 # Redis session store with Ruby
 
 Implement a Redis-backed session store in Ruby with redis-rb
@@ -243,3 +246,4 @@ For more Redis data modeling patterns, see:
 *   [Redis data types](/docs/latest/develop/data-types/)
 
 ## On this page
+

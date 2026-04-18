@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:02:01.132Z"
 content_hash: "a3094a26a13e6fce000909ce08dca8703d472ed6e0ced837a4bc6758f559ba61"
 menu_path: ["Watch Mode"]
 section_path: []
+nav_prev: {"path": "bun/bun/docs/runtime/transpiler/index.md", "title": "Transpiler"}
+nav_next: {"path": "bun/bun/docs/runtime/web-apis/index.md", "title": "Web APIs"}
 ---
+
 [Skip to main content](#content-area)
 
 [Bun home page![light logo](https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z_zHyy/logo/logo-with-wordmark-dark.svg?fit=max&auto=format&n=JUhaF6Mf68z_zHyy&q=85&s=3f55cd23822028e40658b192c927f3e4)![dark logo](https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z_zHyy/logo/logo-with-wordmark-light.svg?fit=max&auto=format&n=JUhaF6Mf68z_zHyy&q=85&s=8a0c5928d9dc3631f0d33e17c257e2ec)](/docs)
@@ -218,3 +221,4 @@ Next
 ![bun watch gif](https://user-images.githubusercontent.com/709451/228439002-7b9fad11-0db2-4e48-b82d-2b88c8625625.gif)
 
 ![bun test gif](https://user-images.githubusercontent.com/709451/228396976-38a23864-4a1d-4c96-87cc-04e5181bf459.gif)
+

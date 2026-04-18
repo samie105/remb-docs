@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:34:32.697Z"
 content_hash: "a685d0c97b064a286ff323b501824e05f9a28c452e83a7508d929ffe5f62abd6"
 menu_path: ["AI & Vectors","AI & Vectors","Python Examples","Python Examples","Developing locally with Vecs","Developing locally with Vecs"]
 section_path: ["AI & Vectors","AI & Vectors","Python Examples","Python Examples","Developing locally with Vecs","Developing locally with Vecs"]
+nav_prev: {"path": "supabase/docs/guides/ai/structured-unstructured/index.md", "title": "Structured and Unstructured"}
+nav_next: {"path": "supabase/docs/guides/ai/vector-indexes/index.md", "title": "Vector indexes"}
 ---
+
 # 
 
 Python client
@@ -66,3 +69,4 @@ For a more in-depth guide on `vecs` collections, see [API](/docs/guides/ai/pytho
 
 *   Official Vecs Documentation: [https://supabase.github.io/vecs/api](https://supabase.github.io/vecs/api)
 *   Source Code: [https://github.com/supabase/vecs](https://github.com/supabase/vecs)
+

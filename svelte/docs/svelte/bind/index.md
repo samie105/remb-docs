@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:37:35.314Z"
 content_hash: "5056b20d8aceb2701a71a166baaa97d0a4aded2bf68673f54b86138b4bdee08b"
 menu_path: ["bind:"]
 section_path: []
+nav_prev: {"path": "svelte/docs/svelte/@debug/index.md", "title": "{@debug ...}"}
+nav_next: {"path": "svelte/docs/svelte/use/index.md", "title": "use:"}
 ---
+
 Data ordinarily flows down, from parent to child. The `bind:` directive allows data to flow the other way, from child to parent.
 
 The general syntax is `bind:property={expression}`, where `expression` is an [_lvalue_](https://press.rebus.community/programmingfundamentals/chapter/lvalue-and-rvalue/) (i.e. a variable or an object property). When the expression is an identifier with the same name as the property, we can omit the expression — in other words these are equivalent:
@@ -478,3 +481,4 @@ This fallback value _only_ applies when the property is _not_ bound. When the pr
 previous next
 
 [{@debug ...}](/docs/svelte/@debug) [use:](/docs/svelte/use)
+

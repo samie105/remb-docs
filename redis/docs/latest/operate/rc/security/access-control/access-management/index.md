@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:02:11.703Z"
 content_hash: "6789499d3ef1e5acdf5f81e041cab1cf79f20e5be3f449692ef67b21cd2e198c"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Cloud","→","Redis Cloud","→\n      \n        Security","→","Security","→\n      \n        Access control","→","Access control","→\n      \n        Access management","→","Access management"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Cloud","→","Redis Cloud","→\n      \n        Security","→","Security","→\n      \n        Access control","→","Access control","→\n      \n        Access management","→","Access management"]
+nav_prev: {"path": "redis/docs/latest/operate/oss_and_stack/install/build-stack/almalinux-rocky-8/index.md", "title": "Build and run Redis Open Source on AlmaLinux/Rocky Linux 8.10"}
+nav_next: {"path": "redis/docs/latest/operate/oss_and_stack/install/archive/install-stack/binaries/index.md", "title": "Install Redis Stack from binaries"}
 ---
+
 # Access management
 
 Control who can make changes to your databases using the Redis Cloud console.
@@ -351,3 +354,4 @@ Use the [REST API](/docs/latest/operate/rc/api/)
     
 
 ## On this page
+

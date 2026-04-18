@@ -9,15 +9,9 @@ last_crawled_at: "2026-04-18T16:39:51.121Z"
 content_hash: "ea346d141179e18920c9a9008942f15f2faed7e68bfd82be01e497d723baed81"
 menu_path: ["aspect-ratio"]
 section_path: []
+nav_prev: {"path": "tailwind/docs/preflight/index.md", "title": "Preflight"}
+nav_next: {"path": "tailwind/docs/columns/index.md", "title": "columns"}
 ---
-[](/)
-
-[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
-
-1.  Layout
-2.  aspect-ratio
-
-Layout
 
 # aspect-ratio
 
@@ -142,3 +136,4 @@ Make your ideas look awesome, without relying on a designer.
 ](https://www.refactoringui.com/?ref=sidebar)
 
 Copyright © 2026 Tailwind Labs Inc.·[Trademark Policy](/brand)
+

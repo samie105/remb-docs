@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:52:31.275Z"
 content_hash: "8d0998f3cd8775fb38f5fc06544662d0844966edcced9d642a686d560ec86132"
 menu_path: ["Delete files"]
 section_path: []
+nav_prev: {"path": "bun/bun/docs/guides/runtime/delete-directory/index.md", "title": "Delete directories"}
+nav_next: {"path": "bun/bun/docs/guides/runtime/heap-snapshot/index.md", "title": "Inspect memory usage using V8 heap snapshots"}
 ---
+
 [Skip to main content](#content-area)
 
 [Bun home page![light logo](https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z_zHyy/logo/logo-with-wordmark-dark.svg?fit=max&auto=format&n=JUhaF6Mf68z_zHyy&q=85&s=3f55cd23822028e40658b192c927f3e4)![dark logo](https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z_zHyy/logo/logo-with-wordmark-light.svg?fit=max&auto=format&n=JUhaF6Mf68z_zHyy&q=85&s=8a0c5928d9dc3631f0d33e17c257e2ec)](/docs)
@@ -67,3 +70,4 @@ Delete directories
 Next
 
 ](/docs/guides/runtime/delete-directory)
+

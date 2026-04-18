@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:33:24.358Z"
 content_hash: "12d0baa7e22c55e094fd059344bd83e23ad9ae076e44555d28819b072afb52de"
 menu_path: ["Starter Projects"]
 section_path: []
+nav_prev: {"path": "trpc/docs/v10/client/nextjs/ssr/index.md", "title": "Server-Side Rendering"}
+nav_next: {"path": "trpc/docs/v10/client/react/index.md", "title": "React Query Integration"}
 ---
+
 Version: 10.x
 
 Get started quickly with one of the sample projects! Copy the snippet from _Quick start with `create-next-app`_ in the below list to clone the project.
@@ -47,3 +50,4 @@ Quick start with `create-next-app`
 
 *   [CodeSandbox](https://codesandbox.io/s/github/trpc/trpc/tree/main/examples/next-prisma-todomvc?file=/pages/%5Bfilter%5D.tsx)
 *   [Source](https://github.com/trpc/examples-next-prisma-todomvc)
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:45:07.804Z"
 content_hash: "7a65f3272301e906e31e0740ce15690a96f90183bbc1c9fe5a9a800e3cc78456"
 menu_path: ["Edge Functions","Edge Functions","Getting started","Getting started","Quickstart (CLI)","Quickstart (CLI)"]
 section_path: ["Edge Functions","Edge Functions","Getting started","Getting started","Quickstart (CLI)","Quickstart (CLI)"]
+nav_prev: {"path": "supabase/docs/guides/functions/quickstart-dashboard/index.md", "title": "Getting Started with Edge Functions (Dashboard)"}
+nav_next: {"path": "supabase/docs/guides/functions/recursive-functions/index.md", "title": "Recursive / Nested Function Calls"}
 ---
+
 # 
 
 Getting Started with Edge Functions
@@ -209,3 +212,4 @@ Now that your function is deployed, you can invoke it from within your app:
 ```
 1import { createClient } from '@supabase/supabase-js'23const supabase = createClient('https://[YOUR_PROJECT_ID].supabase.co', 'YOUR_ANON_KEY')45const { data, error } = await supabase.functions.invoke('hello-world', {6  body: { name: 'JavaScript' },7})89console.log(data) // { message: "Hello JavaScript!" }
 ```
+

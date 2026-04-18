@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:41:24.181Z"
 content_hash: "4354f1a1b73075ebccd48943ccba9ec0886c37556822ff61c2824b94b5584054"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Manage Redis","→","Manage Redis","→\n      \n        Optimizing Redis","→","Optimizing Redis","→\n      \n        Redis latency monitoring","→","Redis latency monitoring"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Manage Redis","→","Manage Redis","→\n      \n        Optimizing Redis","→","Optimizing Redis","→\n      \n        Redis latency monitoring","→","Redis latency monitoring"]
+nav_prev: {"path": "redis/docs/latest/develop/ai/search-and-query/administration/design/index.md", "title": "Internal design"}
+nav_next: {"path": "redis/docs/latest/operate/oss_and_stack/management/optimization/latency/index.md", "title": "Diagnosing latency issues"}
 ---
+
 # Redis latency monitoring
 
 Discovering slow server events in Redis
@@ -89,3 +92,4 @@ The user interface to the latency monitoring subsystem is the [`LATENCY`](/comma
 Refer to each subcommand's documentation page for further information.
 
 ## On this page
+

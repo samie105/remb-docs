@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:37:08.292Z"
 content_hash: "af607ec05b39301aff720f2bc45d75519f15bacecc9075f398f8612410016829"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        Redis Search","→","Redis Search","→\n      \n        Search concepts","→","Search concepts","→\n      \n        Aggregations","→","Aggregations"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        Redis Search","→","Redis Search","→\n      \n        Search concepts","→","Search concepts","→\n      \n        Aggregations","→","Aggregations"]
+nav_prev: {"path": "redis/docs/latest/operate/oss_and_stack/management/admin/index.md", "title": "Redis administration"}
+nav_next: {"path": "redis/docs/latest/operate/kubernetes/architecture/index.md", "title": "Redis Enterprise for Kubernetes architecture"}
 ---
+
 # Aggregations
 
 Groupings, projections, and aggregation functions
@@ -739,3 +742,4 @@ Note that cursors are automatically deleted if all their results have been retur
 All idle cursors can be forcefully purged at the same time using `FT.CURSOR GC idx 0` command. By default, Redis uses a lazy throttled approach to garbage collection, which collects idle cursors every 500 operations, or every second, whichever is later.
 
 ## On this page
+

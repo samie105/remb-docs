@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:38:28.176Z"
 content_hash: "20dced8549be0c09172ad18bcb42cdadcf08406ad5104edcf3cb026c4d6f91d4"
 menu_path: ["V3 Migration Guide"]
 section_path: []
+nav_prev: {"path": "fastify/docs/latest/Guides/Fluent-Schema/index.md", "title": "Fluent-Schema"}
+nav_next: {"path": "fastify/docs/latest/Guides/Migration-Guide-V4/index.md", "title": "V4 Migration Guide"}
 ---
+
 Version: latest (v5.8.x)
 
 Version 3 and before of Fastify are no longer maintained.
@@ -160,3 +163,4 @@ fastify.setErrorHandler((error, request, reply) => {  // this IS called  reply.s
 *   Added [`keepAliveTimeout`](/docs/latest/Reference/Server/#factory-keep-alive-timeout) option ([#2086](https://github.com/fastify/fastify/pull/2086))
 *   Added async-await support for [plugins](/docs/latest/Reference/Plugins/#async-await) ([#2093](https://github.com/fastify/fastify/pull/2093))
 *   Added the feature to throw object as error ([#2134](https://github.com/fastify/fastify/pull/2134))
+

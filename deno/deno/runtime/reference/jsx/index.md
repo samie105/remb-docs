@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:58:26.531Z"
 content_hash: "722a71c4b64ec31cefcb278727af38130093c0d145e804887808c698520b0056"
 menu_path: ["JSX"]
 section_path: []
+nav_prev: {"path": "deno/deno/runtime/reference/vscode/index.md", "title": "Deno & Visual Studio Code"}
+nav_next: {"path": "deno/deno/runtime/reference/documentation/index.md", "title": "Documentation Tests"}
 ---
+
 On this page
 
 *   [Default configuration](#default-configuration)
@@ -386,3 +389,4 @@ Deno.serve(() => {
 ```
 
 With these configurations, your Deno server can efficiently render JSX components to HTML and serve them to clients.
+

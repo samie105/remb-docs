@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:44:34.205Z"
 content_hash: "bb345f4aee3e75ba56777a4ce596b85eb08a66568fc15aac576baea9e99e857b"
 menu_path: ["Expected src to be an image."]
 section_path: []
+nav_prev: {"path": "astro/en/reference/errors/env-unsupported-get-secret/index.md", "title": "Unsupported astro:env getSecret"}
+nav_next: {"path": "astro/en/reference/errors/failed-to-fetch-remote-image-dimensions/index.md", "title": "Failed to retrieve remote image dimensions"}
 ---
+
 # Expected src to be an image.
 
 > **ExpectedImage**: Expected `src` property for `getImage` or `<Image />` to be either an ESM imported image or a string with the path of a remote image. Received `SRC` (type: `TYPEOF_OPTIONS`).  
@@ -34,3 +37,4 @@ In most cases, this error happens when the value passed to `src` is undefined.
 *   [Images](/en/guides/images/)
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:02:10.385Z"
 content_hash: "de4bcb7de4f800b8ce131e615a1cb79fd101bd898e453512f9b0a6a7fd2062c9"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Install Redis Open Source","→","Install Redis Open Source","→\n      \n        Build and run Redis Open Source","→","Build and run Redis Open Source","→\n      \n        Build and run Redis Open Source on AlmaLinux/Rocky Linux 8.10","→","Build and run Redis Open Source on AlmaLinux/Rocky Linux 8.10"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Install Redis Open Source","→","Install Redis Open Source","→\n      \n        Build and run Redis Open Source","→","Build and run Redis Open Source","→\n      \n        Build and run Redis Open Source on AlmaLinux/Rocky Linux 8.10","→","Build and run Redis Open Source on AlmaLinux/Rocky Linux 8.10"]
+nav_prev: {"path": "redis/docs/latest/operate/rc/security/access-control/index.md", "title": "Access control"}
+nav_next: {"path": "redis/docs/latest/operate/rc/security/access-control/access-management/index.md", "title": "Access management"}
 ---
+
 # Build and run Redis Open Source on AlmaLinux/Rocky Linux 8.10
 
 Redis Open Source
@@ -205,3 +208,4 @@ sudo make install
 ```
 
 ## On this page
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:06:41.530Z"
 content_hash: "1297b177aa1336a122278b63734d8f173f2f8202098e975b98cded6c544a4738"
 menu_path: ["@std/uuid"]
 section_path: []
+nav_prev: {"path": "deno/deno/runtime/reference/std/ulid/index.md", "title": "@std/ulid"}
+nav_next: {"path": "deno/deno/runtime/reference/std/webgpu/index.md", "title": "@std/webgpu"}
 ---
+
 On this page
 
 *   [Overview](#overview)
@@ -43,3 +46,4 @@ deno add jsr:@std/uuid
 ```
 
 [See all symbols in @std/uuid on](https://jsr.io/@std/uuid/doc)
+

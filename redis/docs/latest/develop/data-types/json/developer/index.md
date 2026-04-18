@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:09:20.996Z"
 content_hash: "f369ab491e61514daeeec98d104b9aefaff02c5d07127f450aad3be9d35b45ba"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis data types","→","Redis data types","→\n      \n        JSON","→","JSON","→\n      \n        Developer notes","→","Developer notes"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis data types","→","Redis data types","→\n      \n        JSON","→","JSON","→\n      \n        Developer notes","→","Developer notes"]
+nav_prev: {"path": "redis/docs/latest/integrate/datadog-with-redis-cloud/index.md", "title": "Datadog with Redis Cloud"}
+nav_next: {"path": "redis/docs/latest/integrate/datadog-with-redis-enterprise/index.md", "title": "Datadog with Redis Software"}
 ---
+
 # Developer notes
 
 Notes on JSON debugging, testing and documentation.
@@ -174,3 +177,4 @@ To include debugging information, you need to set the [`DEBUG`](/docs/latest/com
 You can add breakpoints to Python tests in single-test mode. To set a breakpoint, call the `BB()` function inside a test.
 
 ## On this page
+

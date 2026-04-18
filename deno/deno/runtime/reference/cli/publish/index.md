@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:54:55.802Z"
 content_hash: "c452f940aa6d50a388d801d4cd76c182db72eb16857eb36d16d2fae978154184"
 menu_path: ["deno publish"]
 section_path: []
+nav_prev: {"path": "deno/deno/runtime/reference/cli/outdated/index.md", "title": "deno outdated"}
+nav_next: {"path": "deno/deno/runtime/reference/cli/lsp/index.md", "title": "deno lsp"}
 ---
+
 On this page
 
 *   [Package Requirements](#package-requirements)
@@ -137,3 +140,4 @@ Set type-checking behavior. This subcommand type-checks local modules by default
 `--no-check`<NO\_CHECK\_TYPE>optional
 
 Skip type-checking. If the value of "remote" is supplied, diagnostic errors from remote modules will be ignored.
+

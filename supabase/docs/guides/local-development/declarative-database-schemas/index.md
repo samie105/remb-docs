@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:46:36.348Z"
 content_hash: "4e810444ca1d325f798dc9e662f6f19cc3f6fa78f5a1d4cac4e042cde5928251"
 menu_path: ["Local Dev / CLI","Local Dev / CLI","Local development","Local development","Declarative database schemas","Declarative database schemas"]
 section_path: ["Local Dev / CLI","Local Dev / CLI","Local development","Local development","Declarative database schemas","Declarative database schemas"]
+nav_prev: {"path": "supabase/docs/guides/integrations/supabase-for-platforms/index.md", "title": "Supabase for Platforms"}
+nav_next: {"path": "supabase/docs/guides/local-development/customizing-email-templates/index.md", "title": "Customizing email templates"}
 ---
+
 # 
 
 Declarative database schemas
@@ -212,3 +215,4 @@ If you need to use any of the entities below, remember to add them through [vers
 *   [`alter publication ... add table ...`](https://github.com/supabase/cli/issues/883)
 *   [create domain statements are ignored](https://github.com/supabase/cli/issues/2137)
 *   [grant statements are duplicated from default privileges](https://github.com/supabase/cli/issues/1864)
+

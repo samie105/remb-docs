@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:48:37.490Z"
 content_hash: "211cd897938be97a0ea47b0b8fc9f81330b4d34ab8c216ed44c5d13be1de9e71"
 menu_path: ["Send your first script to the browser"]
 section_path: []
+nav_prev: {"path": "astro/en/tutorial/3-components/3/index.md", "title": "Build it yourself - Header"}
+nav_next: {"path": "astro/en/tutorial/4-layouts/1/index.md", "title": "Build your first layout"}
 ---
+
 # Send your first script to the browser
 
 Let’s add a button to open and close your navigation menu on mobile screen sizes, requiring some client-side interactivity!
@@ -129,3 +132,4 @@ Instead of writing your JavaScript directly on each page, you can move the conte
 [Client-side scripts in Astro](/en/guides/client-side-scripts/)
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

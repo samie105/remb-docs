@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:53:33.055Z"
 content_hash: "671e105ce927a0cdac6d4ee15bc40ac50f754f5e4a30a0efd4a09b9ea56393a1"
 menu_path: ["Request ID Middleware ​"]
 section_path: []
+nav_prev: {"path": "hono/docs/middleware/builtin/pretty-json/index.md", "title": "Pretty JSON Middleware \u200b"}
+nav_next: {"path": "hono/docs/middleware/builtin/secure-headers/index.md", "title": "Secure Headers Middleware \u200b"}
 ---
+
 ## Request ID Middleware [​](#request-id-middleware)
 
 Request ID Middleware generates a unique ID for each request, which you can use in your handlers.
@@ -104,10 +107,11 @@ To unify these IDs, use the `generator` function to capture the platform specifi
 
 *   AWS Lambda
     *   [AWS documentation: Context object](https://docs.aws.amazon.com/lambda/latest/dg/nodejs-context.html)
-    *   [Hono: Access AWS Lambda Object](https://hono.dev/docs/getting-started/aws-lambda#access-aws-lambda-object)
+    *   [Hono: Access AWS Lambda Object](hono/docs/getting-started/aws-lambda/index.md#access-aws-lambda-object)
 *   Cloudflare
     *   [Cloudflare Ray ID](https://developers.cloudflare.com/fundamentals/reference/cloudflare-ray-id/)
 *   Deno
     *   [Request ID on the Deno Blog](https://deno.com/blog/zero-config-debugging-deno-opentelemetry#:~:text=s%20automatically%20have-,unique%20request%20IDs,-associated%20with%20them)
 *   Fastly
     *   [Fastly documentation: req.xid](https://www.fastly.com/documentation/reference/vcl/variables/client-request/req-xid/)
+

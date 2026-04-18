@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:15:51.558Z"
 content_hash: "f9e4cba8cb0df35d5181281a7822bd0bf77a063b587020ff3b9dc70559e8c0b8"
 menu_path: ["Release notes for drizzle-orm@0.32.0 and drizzle-kit@0.23.0"]
 section_path: []
+nav_prev: {"path": "drizzle/docs/latest-releases/drizzle-orm-v0314/index.md", "title": "Drizzle ORM - DrizzleORM v0.31.4 release"}
+nav_next: {"path": "drizzle/docs/latest-releases/drizzle-orm-v0321/index.md", "title": "Drizzle ORM - DrizzleORM v0.32.1 release"}
 ---
+
 DrizzleORM v0.32.0 release
 
 Jul 10, 2024
@@ -233,3 +236,4 @@ export default defineConfig({
   }
 });
 ```
+

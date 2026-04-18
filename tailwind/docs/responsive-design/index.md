@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:36:46.355Z"
 content_hash: "4c45b39caef077f4c476d5db910bb6c0f720546ecd27f71da90d6fab4d79228c"
 menu_path: ["Responsive design"]
 section_path: []
+nav_prev: {"path": "tailwind/docs/hover-focus-and-other-states/index.md", "title": "Hover, focus, and other states"}
+nav_next: {"path": "tailwind/docs/dark-mode/index.md", "title": "Dark mode"}
 ---
+
 Using responsive utility variants to build adaptive user interfaces.
 
 ## [Overview](#overview)
@@ -188,7 +191,7 @@ Note that it's important to always use the same unit for defining your breakpoin
 
 Tailwind uses `rem` for the default breakpoints, so if you are adding additional breakpoints to the defaults, make sure you use `rem` as well.
 
-Learn more about customizing your theme in the [theme documentation](https://tailwindcss.com/docs/theme).
+Learn more about customizing your theme in the [theme documentation](tailwind/docs/theme/index.md).
 
 ### [Removing default breakpoints](#removing-default-breakpoints)
 
@@ -208,7 +211,7 @@ app.css
 @import "tailwindcss";@theme {  --breakpoint-*: initial;  --breakpoint-tablet: 40rem;  --breakpoint-laptop: 64rem;  --breakpoint-desktop: 80rem;}
 ```
 
-Learn more removing default theme values in the [theme documentation](https://tailwindcss.com/docs/theme).
+Learn more removing default theme values in the [theme documentation](tailwind/docs/theme/index.md).
 
 ### [Using arbitrary values](#using-arbitrary-values)
 
@@ -218,7 +221,7 @@ If you need to use a one-off breakpoint that doesn’t make sense to include in 
 <div class="max-[600px]:bg-sky-300 min-[320px]:text-center">  <!-- ... --></div>
 ```
 
-Learn more about arbitrary value support in the [arbitrary values](https://tailwindcss.com/docs/adding-custom-styles#using-arbitrary-values) documentation.
+Learn more about arbitrary value support in the [arbitrary values](tailwind/docs/adding-custom-styles/index.md#using-arbitrary-values) documentation.
 
 ## [Container queries](#container-queries)
 
@@ -288,7 +291,7 @@ HTML
 <div class="@container">  <div class="flex flex-col @8xl:flex-row">    <!-- ... -->  </div></div>
 ```
 
-Learn more about customizing your theme in the [theme documentation](https://tailwindcss.com/docs/theme).
+Learn more about customizing your theme in the [theme documentation](tailwind/docs/theme/index.md).
 
 ### [Using arbitrary values](#using-arbitrary-container-query-values)
 
@@ -397,3 +400,4 @@ CSS
 80rem _(1280px)_
 
 `@container (width >= 80rem) { … }`
+

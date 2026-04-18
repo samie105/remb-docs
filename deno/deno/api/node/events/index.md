@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:35:44.049Z"
 content_hash: "71b44a3785af612e4eb8fd3a0708ef51755c3ffd29b7ca3e316459ac7be8397b"
 menu_path: ["events - Node documentation"]
 section_path: []
+nav_prev: {"path": "deno/deno/api/node/domain/index.md", "title": "domain - Node documentation"}
+nav_next: {"path": "deno/deno/api/node/fs/index.md", "title": "fs - Node documentation"}
 ---
+
 ### Usage in Deno
 
 ```typescript
@@ -190,3 +193,4 @@ T
 [Listener2](.././events/~/Listener2 "Listener2")
 
 No documentation available
+

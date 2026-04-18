@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:39:40.471Z"
 content_hash: "ec33eba0296a066f95f54c23df4e9dd14d317e73ae67ad664c0e23485760d178"
 menu_path: ["PostgreSQL: Documentation: 18: 52.49. pg_shdescription"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/xoper-optimization.html/index.md", "title": "PostgreSQL: Documentation: 18: 36.15.\u00a0Operator Optimization Information"}
+nav_next: {"path": "postgres/docs/current/spi-spi-getrelname.html/index.md", "title": "PostgreSQL: Documentation: 18: SPI_getrelname"}
 ---
+
 Development Versions: [devel](https://www.postgresql.org/docs/devel/catalog-pg-shdescription.html "PostgreSQL devel - 52.49. pg_shdescription")
 
 The catalog `pg_shdescription` stores optional descriptions (comments) for shared database objects. Descriptions can be manipulated with the [`COMMENT`](https://www.postgresql.org/docs/current/sql-comment.html "COMMENT") command and viewed with psql's `\d` commands.
@@ -35,3 +38,4 @@ The OID of the system catalog this object appears in
 `description` `text`
 
 Arbitrary text that serves as the description of this object
+

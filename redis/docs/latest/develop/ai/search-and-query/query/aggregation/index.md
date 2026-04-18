@@ -9,7 +9,9 @@ last_crawled_at: "2026-04-18T17:15:50.568Z"
 content_hash: "99a4146ebf22feaad10077f7cf26bd8252b74c4048a9c745fcbbe665160429a1"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        Redis Search","→","Redis Search","→\n      \n        Querying data","→","Querying data","→\n      \n        Aggregation queries","→","Aggregation queries"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        Redis Search","→","Redis Search","→\n      \n        Querying data","→","Querying data","→\n      \n        Aggregation queries","→","Aggregation queries"]
+nav_prev: {"path": "redis/docs/latest/integrate/write-behind/reference/data-transformation-block-types/add_field/index.md", "title": "add_field"}
 ---
+
 # Aggregation queries
 
 Group and aggregate query results
@@ -6502,3 +6504,4 @@ The output of this query is:
 ```
 
 ## On this page
+

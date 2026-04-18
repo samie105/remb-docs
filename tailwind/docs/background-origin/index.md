@@ -9,15 +9,9 @@ last_crawled_at: "2026-04-18T17:01:33.386Z"
 content_hash: "eb6ecd542ad8de8f4dbb471c6072a26ec47996c16f50cc43a38a4ed98690b56a"
 menu_path: ["background-origin"]
 section_path: []
+nav_prev: {"path": "tailwind/docs/background-image/index.md", "title": "background-image"}
+nav_next: {"path": "tailwind/docs/background-position/index.md", "title": "background-position"}
 ---
-[](/)
-
-[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
-
-1.  Backgrounds
-2.  background-origin
-
-Backgrounds
 
 # background-origin
 
@@ -83,3 +77,4 @@ Short, tactical video lessons from the creator of Tailwind CSS, delivered direct
 [Get the free course](/build-uis-that-dont-suck)
 
 Copyright © 2026 Tailwind Labs Inc.·[Trademark Policy](/brand)
+

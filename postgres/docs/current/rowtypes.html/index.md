@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:49:15.540Z"
 content_hash: "96865d300a158bc733b9ca4fb951600e15dbdf0ed32ea69318f1a4289dbe7a85"
 menu_path: ["PostgreSQL: Documentation: 18: 8.16. Composite Types"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/perm-functions.html/index.md", "title": "PostgreSQL: Documentation: 18: 21.6.\u00a0Function Security"}
+nav_next: {"path": "postgres/docs/current/catalog-pg-statistic.html/index.md", "title": "PostgreSQL: Documentation: 18: 52.51.\u00a0pg_statistic"}
 ---
+
 A _composite type_ represents the structure of a row or record; it is essentially just a list of field names and their data types. PostgreSQL allows composite types to be used in many of the same ways that simple types can be used. For example, a column of a table can be declared to be of a composite type.
 
 ### 8.16.1. Declaration of Composite Types [#](#ROWTYPES-DECLARING)
@@ -53,7 +56,7 @@ CREATE TABLE inventory\_item (
     price           numeric CHECK (price > 0)
 );
 
-then the same `inventory_item` composite type shown above would come into being as a byproduct, and could be used just as above. Note however an important restriction of the current implementation: since no constraints are associated with a composite type, the constraints shown in the table definition _do not apply_ to values of the composite type outside the table. (To work around this, create a [](https://www.postgresql.org/docs/current/glossary.html#GLOSSARY-DOMAIN)[domain](https://www.postgresql.org/docs/current/glossary.html#GLOSSARY-DOMAIN "Domain") over the composite type, and apply the desired constraints as `CHECK` constraints of the domain.)
+then the same `inventory_item` composite type shown above would come into being as a byproduct, and could be used just as above. Note however an important restriction of the current implementation: since no constraints are associated with a composite type, the constraints shown in the table definition _do not apply_ to values of the composite type outside the table. (To work around this, create a [](postgres/docs/current/glossary.html/index.md#GLOSSARY-DOMAIN)[domain](https://www.postgresql.org/docs/current/glossary.html#GLOSSARY-DOMAIN "Domain") over the composite type, and apply the desired constraints as `CHECK` constraints of the domain.)
 
 ### 8.16.2. Constructing Composite Values [#](#ROWTYPES-CONSTRUCTING)
 
@@ -244,3 +247,4 @@ The string-literal processor removes one level of backslashes, so that what arri
 ### Tip
 
 The `ROW` constructor syntax is usually easier to work with than the composite-literal syntax when writing composite values in SQL commands. In `ROW`, individual field values are written the same way they would be written when not members of a composite.
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:39:14.242Z"
 content_hash: "deb7e8558863f81d20e23750c18287e4dce21bb5ccbb36079596a6216e299063"
 menu_path: ["Auth","Auth","More","More","More","Sessions","Sessions","User sessions","User sessions"]
 section_path: ["Auth","Auth","More","More","More","Sessions","Sessions","User sessions","User sessions"]
+nav_prev: {"path": "supabase/docs/guides/auth/server-side/index.md", "title": "Server-Side Rendering"}
+nav_next: {"path": "supabase/docs/guides/auth/signout/index.md", "title": "Signing out"}
 ---
+
 # 
 
 User sessions
@@ -144,3 +147,4 @@ Because of this, the Supabase JavaScript libraries provide only limited support.
 The `customStorageObject` should implement the `getItem`, `setItem`, and `removeItem` methods from the [`Storage` interface](https://developer.mozilla.org/en-US/docs/Web/API/Storage). Async versions of these methods are also supported.
 
 When using cookies to store access and refresh tokens, make sure that the [`Expires` or `Max-Age` attributes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie#attributes) of the cookies is set to a timestamp very far into the future. Browsers will clear the cookies, but the session will remain active in Supabase Auth. Therefore it's best to let Supabase Auth control the validity of these tokens and instruct the browser to always store the cookies indefinitely.
+

@@ -9,15 +9,9 @@ last_crawled_at: "2026-04-18T16:49:47.031Z"
 content_hash: "ebd1d8aeede2a719cce12cf96879afdb483b034b9b7d0b2c0d40a18b161016d3"
 menu_path: ["align-items"]
 section_path: []
+nav_prev: {"path": "tailwind/docs/align-content/index.md", "title": "align-content"}
+nav_next: {"path": "tailwind/docs/align-self/index.md", "title": "align-self"}
 ---
-[](/)
-
-[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
-
-1.  Flexbox & Grid
-2.  align-items
-
-Flexbox & Grid
 
 # align-items
 
@@ -194,3 +188,4 @@ Make your ideas look awesome, without relying on a designer.
 ](https://www.refactoringui.com/?ref=sidebar)
 
 Copyright © 2026 Tailwind Labs Inc.·[Trademark Policy](/brand)
+

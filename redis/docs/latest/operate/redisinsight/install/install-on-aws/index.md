@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:58:53.440Z"
 content_hash: "66e1b3632227676c4fe28457b4e0a1f18eac8314b0a9d3fa071cdc3c5ad919af"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Insight","→","Redis Insight","→\n      \n        Install Redis Insight","→","Install Redis Insight","→\n      \n        Install on AWS EC2","→","Install on AWS EC2"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Insight","→","Redis Insight","→\n      \n        Install Redis Insight","→","Install Redis Insight","→\n      \n        Install on AWS EC2","→","Install on AWS EC2"]
+nav_prev: {"path": "redis/docs/latest/operate/oss_and_stack/management/sentinel/index.md", "title": "High availability with Redis Sentinel"}
+nav_next: {"path": "redis/docs/latest/develop/use-cases/time-series-dashboard/java-lettuce/index.md", "title": "Rolling sensor graph demo with Java and Lettuce"}
 ---
+
 # Install on AWS EC2
 
 How to install Redis Insight on AWS EC2
@@ -87,3 +90,4 @@ Redis Insight also provides a health check endpoint at `http://<EC2 IP Address>:
 In this guide, we installed Redis Insight on an AWS EC2 instance running Docker. As a next step, you should add an ElastiCache Redis Instance and then run the memory analysis.
 
 ## On this page
+

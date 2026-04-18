@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:48:36.019Z"
 content_hash: "fed9f8c6a3a3dd6d9f6c4bd5d481476c3fafc4fd5eb64a8349e92c960a5fd38b"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Connect with Redis client API libraries","→","Connect with Redis client API libraries","→\n      \n        Lettuce guide (Java)","→","Lettuce guide (Java)","→\n      \n        Index and query documents","→","Index and query documents"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Connect with Redis client API libraries","→","Connect with Redis client API libraries","→\n      \n        Lettuce guide (Java)","→","Lettuce guide (Java)","→\n      \n        Index and query documents","→","Index and query documents"]
+nav_prev: {"path": "redis/docs/latest/develop/ai/search-and-query/administration/gc/index.md", "title": "Garbage collection"}
+nav_next: {"path": "redis/docs/latest/develop/data-types/json/indexing_json/index.md", "title": "Index/Search JSON documents"}
 ---
+
 # Index and query documents
 
 Learn how to use Redis Search with JSON and hash documents.
@@ -3920,3 +3923,4 @@ public class HomeJsonExample {
 See the [Redis Search](/docs/latest/develop/ai/search-and-query/) docs for a full description of all query features with examples.
 
 ## On this page
+

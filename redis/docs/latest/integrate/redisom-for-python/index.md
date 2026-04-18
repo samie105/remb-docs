@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:14:46.362Z"
 content_hash: "2af39eb7a4e25e0ed7e4b5b1e9316f34d0ccba123e7914eaa5ed3d74ff218866"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        RedisOM for Python","→","RedisOM for Python"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        RedisOM for Python","→","RedisOM for Python"]
+nav_prev: {"path": "redis/docs/latest/integrate/redisom-for-node-js/index.md", "title": "RedisOM for Node.js"}
+nav_next: {"path": "redis/docs/latest/develop/use-cases/leaderboard/rust/index.md", "title": "Redis leaderboard with Rust"}
 ---
+
 # RedisOM for Python
 
 Learn how to build with Redis Stack and Python
@@ -758,3 +761,4 @@ Removing network redis-om-python-flask-skeleton-app_default
 ```
 
 ## On this page
+

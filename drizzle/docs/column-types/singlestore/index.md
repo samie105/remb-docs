@@ -9,8 +9,11 @@ last_crawled_at: "2026-04-18T16:35:25.445Z"
 content_hash: "1e4c73767c4aaf282e14b494d302e8597fc42677b297eda6ef9ba75b9bdc2a4e"
 menu_path: ["SingleStore column types"]
 section_path: []
+nav_prev: {"path": "drizzle/docs/column-types/cockroach/index.md", "title": "CockroachDB column types"}
+nav_next: {"path": "drizzle/docs/column-types/mysql/index.md", "title": "MySQL column types"}
 ---
-We have native support for all of them, yet if that’s not enough for you, feel free to create **[custom types](https://orm.drizzle.team/docs/custom-types)**.
+
+We have native support for all of them, yet if that’s not enough for you, feel free to create **[custom types](drizzle/docs/custom-types/index.md)**.
 
 important
 
@@ -18,7 +21,7 @@ All examples in this part of the documentation do not use database column name a
 
 You can use database aliases in column names if you want, and you can also use the `casing` parameter to define a mapping strategy for Drizzle.
 
-You can read more about it [here](https://orm.drizzle.team/docs/sql-schema-declaration#shape-your-data-schema)
+You can read more about it [here](drizzle/docs/sql-schema-declaration/index.md#shape-your-data-schema)
 
 ### integer[](#integer)
 
@@ -607,3 +610,4 @@ CREATE TABLE `table` (
 	`int` int AUTO_INCREMENT
 );
 ```
+

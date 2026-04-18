@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:39:12.323Z"
 content_hash: "89505de8896ce5be2ed9adbbbf5e2667e195d31c0f678c46a0a69f92ab125480"
 menu_path: ["PostgreSQL: Documentation: 18: 29.5. Column Lists"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/queries-values.html/index.md", "title": "PostgreSQL: Documentation: 18: 7.7.\u00a0VALUES Lists"}
+nav_next: {"path": "postgres/docs/current/view-pg-publication-tables.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.18.\u00a0pg_publication_tables"}
 ---
+
 Each publication can optionally specify which columns of each table are replicated to subscribers. The table on the subscriber side must have at least all the columns that are published. If no column list is specified, then all columns on the publisher are replicated. See [CREATE PUBLICATION](https://www.postgresql.org/docs/current/sql-createpublication.html "CREATE PUBLICATION") for details on the syntax.
 
 The choice of columns can be based on behavioral or performance reasons. However, do not rely on this feature for security: a malicious subscriber is able to obtain data from columns that are not specifically published. If security is a consideration, protections can be applied at the publisher side.
@@ -18,11 +21,11 @@ If no column list is specified, any columns added to the table later are automat
 
 A column list can contain only simple column references. The order of columns in the list is not preserved.
 
-Generated columns can also be specified in a column list. This allows generated columns to be published, regardless of the publication parameter [`publish_generated_columns`](https://www.postgresql.org/docs/current/sql-createpublication.html#SQL-CREATEPUBLICATION-PARAMS-WITH-PUBLISH-GENERATED-COLUMNS). See [Section 29.6](https://www.postgresql.org/docs/current/logical-replication-gencols.html "29.6. Generated Column Replication") for details.
+Generated columns can also be specified in a column list. This allows generated columns to be published, regardless of the publication parameter [`publish_generated_columns`](postgres/docs/current/sql-createpublication.html/index.md#SQL-CREATEPUBLICATION-PARAMS-WITH-PUBLISH-GENERATED-COLUMNS). See [Section 29.6](https://www.postgresql.org/docs/current/logical-replication-gencols.html "29.6. Generated Column Replication") for details.
 
-Specifying a column list when the publication also publishes [`FOR TABLES IN SCHEMA`](https://www.postgresql.org/docs/current/sql-createpublication.html#SQL-CREATEPUBLICATION-PARAMS-FOR-TABLES-IN-SCHEMA) is not supported.
+Specifying a column list when the publication also publishes [`FOR TABLES IN SCHEMA`](postgres/docs/current/sql-createpublication.html/index.md#SQL-CREATEPUBLICATION-PARAMS-FOR-TABLES-IN-SCHEMA) is not supported.
 
-For partitioned tables, the publication parameter [`publish_via_partition_root`](https://www.postgresql.org/docs/current/sql-createpublication.html#SQL-CREATEPUBLICATION-PARAMS-WITH-PUBLISH-VIA-PARTITION-ROOT) determines which column list is used. If `publish_via_partition_root` is `true`, the root partitioned table's column list is used. Otherwise, if `publish_via_partition_root` is `false` (the default), each partition's column list is used.
+For partitioned tables, the publication parameter [`publish_via_partition_root`](postgres/docs/current/sql-createpublication.html/index.md#SQL-CREATEPUBLICATION-PARAMS-WITH-PUBLISH-VIA-PARTITION-ROOT) determines which column list is used. If `publish_via_partition_root` is `true`, the root partitioned table's column list is used. Otherwise, if `publish_via_partition_root` is `false` (the default), each partition's column list is used.
 
 If a publication publishes `UPDATE` or `DELETE` operations, any column list must include the table's replica identity columns (see [`REPLICA IDENTITY`](https://www.postgresql.org/docs/current/sql-altertable.html#SQL-ALTERTABLE-REPLICA-IDENTITY)). If a publication publishes only `INSERT` operations, then the column list may omit replica identity columns.
 
@@ -104,3 +107,4 @@ Only data from the column list of publication `p1` is replicated.
   2 | b-2 | a-2 | d-2
   3 | b-3 | a-3 | d-3
 (3 rows)
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:34:13.335Z"
 content_hash: "1d303e28f4110ee8091359fbe6cdca4a1ed9a417dc05d60a2b8e0351f78db899"
 menu_path: ["PostgreSQL: Documentation: 18: 52.48. pg_shdepend"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/contrib-dblink-get-notify.html/index.md", "title": "PostgreSQL: Documentation: 18: dblink_get_notify"}
+nav_next: {"path": "postgres/docs/current/ecpg-sql-execute-immediate.html/index.md", "title": "PostgreSQL: Documentation: 18: EXECUTE IMMEDIATE"}
 ---
+
 Development Versions: [devel](https://www.postgresql.org/docs/devel/catalog-pg-shdepend.html "PostgreSQL devel - 52.48. pg_shdepend")
 
 The catalog `pg_shdepend` records the dependency relationships between database objects and shared objects, such as roles. This information allows PostgreSQL to ensure that those objects are unreferenced before attempting to delete them.
@@ -77,3 +80,4 @@ The referenced object (which must be a tablespace) is mentioned as the tablespac
 Other dependency flavors might be needed in future. Note in particular that the current definition only supports roles and tablespaces as referenced objects.
 
 As in the `pg_depend` catalog, most objects created during initdb are considered “pinned”. No entries are made in `pg_shdepend` that would have a pinned object as either referenced or dependent object.
+

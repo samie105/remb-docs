@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:33:21.423Z"
 content_hash: "9b3652e9752995300572a545cce8443ca9d63be34d7fce9dbdb4764b312ae7ee"
 menu_path: ["Caisy & Astro"]
 section_path: []
+nav_prev: {"path": "astro/en/guides/cms/buttercms/index.md", "title": "ButterCMS & Astro"}
+nav_next: {"path": "astro/en/guides/cms/cloudcannon/index.md", "title": "CloudCannon & Astro"}
 ---
+
 # Caisy & Astro
 
 [Caisy](https://caisy.io/) is a headless CMS that exposes a GraphQL API to access content.
@@ -219,3 +222,4 @@ const post = gqlResponse?.allBlogArticle?.edges?.[0]?.node;---<h1>{post.title}</
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

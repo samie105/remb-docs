@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:35:44.830Z"
 content_hash: "e77a294a0d58e02b2c1b216526255f3a68fb5ff9a7eeae85e168955e58e2df1e"
 menu_path: ["Data REST API","Data REST API","Using the Data APIs","Using the Data APIs","Converting from SQL to JavaScript API","Converting from SQL to JavaScript API"]
 section_path: ["Data REST API","Data REST API","Using the Data APIs","Using the Data APIs","Converting from SQL to JavaScript API","Converting from SQL to JavaScript API"]
+nav_prev: {"path": "supabase/docs/guides/api/securing-your-api/index.md", "title": "Securing your API"}
+nav_next: {"path": "supabase/docs/guides/api/using-custom-schemas/index.md", "title": "Using Custom Schemas"}
 ---
+
 # 
 
 Converting SQL to JavaScript API
@@ -59,3 +62,4 @@ Select all columns from a single table with a complex where clause: AND OR AND
 *   [Supabase API: JavaScript select](/docs/reference/javascript/select)
 *   [Supabase API: JavaScript modifiers](/docs/reference/javascript/using-modifiers)
 *   [Supabase API: JavaScript filters](/docs/reference/javascript/using-filters)
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:57:10.894Z"
 content_hash: "a95e3b01849fa00ef5b342d363459e1f9837d26552aee431921f28eea31a5d73"
 menu_path: ["Deployment & Branching","Deployment & Branching","Branching","Branching","Troubleshooting","Troubleshooting"]
 section_path: ["Deployment & Branching","Deployment & Branching","Branching","Branching","Troubleshooting","Troubleshooting"]
+nav_prev: {"path": "supabase/docs/guides/deployment/branching/github-integration/index.md", "title": "GitHub integration"}
+nav_next: {"path": "supabase/docs/guides/deployment/branching/working-with-branches/index.md", "title": "Working with branches"}
 ---
+
 # 
 
 Troubleshooting
@@ -172,3 +175,4 @@ If you're still experiencing issues:
 2.  **Community**: Ask in [GitHub discussions](https://github.com/orgs/supabase/discussions/18937)
 3.  **Support**: Contact support for project-specific issues
 4.  **Documentation**: Review the latest documentation for updates
+

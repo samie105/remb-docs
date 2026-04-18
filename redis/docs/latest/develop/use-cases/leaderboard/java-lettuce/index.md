@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:03:58.083Z"
 content_hash: "07e4db9cc92bf7b5782165557986642935d4a5929c42bf77bad7cc0495a87e23"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Redis leaderboard","→","Redis leaderboard","→\n      \n        Redis leaderboard with Java (Lettuce)","→","Redis leaderboard with Java (Lettuce)"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Redis leaderboard","→","Redis leaderboard","→\n      \n        Redis leaderboard with Java (Lettuce)","→","Redis leaderboard with Java (Lettuce)"]
+nav_prev: {"path": "redis/docs/latest/develop/clients/hiredis/issue-commands/index.md", "title": "Issue commands"}
+nav_next: {"path": "redis/docs/latest/develop/use-cases/rate-limiter/java-lettuce/index.md", "title": "Token bucket rate limiter with Redis and Java (Lettuce)"}
 ---
+
 # Redis leaderboard with Java (Lettuce)
 
 Implement async and reactive Redis leaderboards in Java with Lettuce and sorted sets
@@ -282,3 +285,4 @@ Some leaderboards are permanent, while others reset daily, weekly, or seasonally
 Per-user hashes work best for small, frequently accessed profile details. Large profile documents or rarely used attributes are often better kept in another store, with Redis holding only the fields needed to render the leaderboard quickly.
 
 ## On this page
+

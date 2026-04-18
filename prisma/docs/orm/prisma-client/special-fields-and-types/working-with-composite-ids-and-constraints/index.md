@@ -9,12 +9,15 @@ last_crawled_at: "2026-04-18T16:48:14.212Z"
 content_hash: "64531b69e8a2f1c9f35b4c5176f0ff856eb57ab81721869c0c43d530b1061425"
 menu_path: ["Working with compound IDs and unique constraints"]
 section_path: []
+nav_prev: {"path": "prisma/docs/orm/prisma-client/special-fields-and-types/null-and-undefined/index.md", "title": "Null and undefined"}
+nav_next: {"path": "prisma/docs/orm/prisma-client/special-fields-and-types/working-with-scalar-lists-arrays/index.md", "title": "Working with scalar lists"}
 ---
+
 Special Fields and Types
 
 How to read, write, and filter by compound IDs and unique constraints
 
-Composite IDs and compound unique constraints can be defined in your Prisma schema using the [`@@id`](https://www.prisma.io/docs/orm/reference/prisma-schema-reference) and [`@@unique`](https://www.prisma.io/docs/orm/reference/prisma-schema-reference) attributes.
+Composite IDs and compound unique constraints can be defined in your Prisma schema using the [`@@id`](prisma/docs/orm/reference/prisma-schema-reference/index.md) and [`@@unique`](prisma/docs/orm/reference/prisma-schema-reference/index.md) attributes.
 
 A composite ID or compound unique constraint uses the combined values of two fields as a primary key or identifier in your database table. In the following example, the `postId` field and `userId` field are used as a composite ID for a `Like` table:
 
@@ -188,3 +191,4 @@ await prisma.user.create({
 ```
 
 [Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/prisma-client/special-fields-and-types/working-with-composite-ids-and-constraints.mdx)
+

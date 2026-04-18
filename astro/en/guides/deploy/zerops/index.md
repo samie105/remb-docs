@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:38:05.221Z"
 content_hash: "9f8888982b5be8ea14ea85b7020d854bdd330ee2e81ab9b1bbb06c66673aede6"
 menu_path: ["Deploy your Astro Site to Zerops"]
 section_path: []
+nav_prev: {"path": "astro/en/guides/deploy/zephyr/index.md", "title": "Deploy your Astro Site to Zephyr Cloud"}
+nav_next: {"path": "astro/en/guides/cms/index.md", "title": "Use a CMS with Astro"}
 ---
+
 # Deploy your Astro Site to Zerops
 
 [Zerops](https://zerops.io/) is a dev-first cloud platform that can be used to deploy both Static and SSR Astro site.
@@ -272,3 +275,4 @@ Now you can [trigger the build & deploy pipeline using the Zerops CLI](#trigger-
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

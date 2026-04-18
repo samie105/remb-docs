@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:52:08.988Z"
 content_hash: "d4c51ad7335e4a3b2741d5d24393defcc60ebfc38aa782c884c3cc52531170de"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        Redis Search","→","Redis Search","→\n      \n        Best practices","→","Best practices","→\n      \n        Move from Development to Production with Redis Search","→","Move from Development to Production with Redis Search"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        Redis Search","→","Redis Search","→\n      \n        Best practices","→","Best practices","→\n      \n        Move from Development to Production with Redis Search","→","Move from Development to Production with Redis Search"]
+nav_prev: {"path": "redis/docs/latest/commands/redis-8-2-commands/index.md", "title": "Redis 8.2 Commands Reference"}
+nav_next: {"path": "redis/docs/latest/develop/clients/redis-vl/index.md", "title": "Redis vector library guide (Python)"}
 ---
+
 # Move from Development to Production with Redis Search
 
 Transitioning a Redis Open Source with Redis Search environment from development to production requires thoughtful consideration of configuration, performance tuning, and resource allocation. This guide outlines key practices to ensure your Redis deployment operates optimally under production workloads.
@@ -109,3 +112,4 @@ Production environments must be sized for peak load scenarios to ensure performa
 By following these best practices, you can ensure a smooth and efficient transition from development to production with Redis Open Source and Redis Search. Proper configuration, rigorous testing, and careful resource planning are critical to delivering a reliable and high-performance Redis deployment.
 
 ## On this page
+

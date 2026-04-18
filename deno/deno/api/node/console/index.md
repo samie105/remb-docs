@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:34:15.370Z"
 content_hash: "a5f8a24cf17e810ba80f5e95451a03edf2b85844900a50dea5d0d11a5b6b5464"
 menu_path: ["console - Node documentation"]
 section_path: []
+nav_prev: {"path": "deno/deno/api/node/constants/index.md", "title": "constants - Node documentation"}
+nav_next: {"path": "deno/deno/api/node/crypto/index.md", "title": "crypto - Node documentation"}
 ---
+
 ### Usage in Deno
 
 ```typescript
@@ -129,3 +132,4 @@ v
 [console](.././console/~/console "console")
 
 The `console` module provides a simple debugging console that is similar to the JavaScript console mechanism provided by web browsers.
+

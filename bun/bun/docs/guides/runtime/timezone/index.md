@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:53:18.912Z"
 content_hash: "93cc6388bf2288c6814c6381e1be3f2f01d40fb62816ebcf90577f0071c6afc7"
 menu_path: ["Set a time zone in Bun"]
 section_path: []
+nav_prev: {"path": "bun/bun/docs/guides/runtime/shell/index.md", "title": "Run a Shell Command"}
+nav_next: {"path": "bun/bun/docs/guides/runtime/tsconfig-paths/index.md", "title": "Re-map import paths"}
 ---
+
 [Skip to main content](#content-area)
 
 [Bun home page![light logo](https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z_zHyy/logo/logo-with-wordmark-dark.svg?fit=max&auto=format&n=JUhaF6Mf68z_zHyy&q=85&s=3f55cd23822028e40658b192c927f3e4)![dark logo](https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z_zHyy/logo/logo-with-wordmark-light.svg?fit=max&auto=format&n=JUhaF6Mf68z_zHyy&q=85&s=8a0c5928d9dc3631f0d33e17c257e2ec)](/docs)
@@ -83,3 +86,4 @@ Set environment variables
 Next
 
 ](/docs/guides/runtime/set-env)
+

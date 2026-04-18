@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:57:09.469Z"
 content_hash: "4271f75c9d6e1b480cc84a129c26cdfab708275557f7e963d0c2b29acbe823e7"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Rolling sensor graph demo with Redis","→","Rolling sensor graph demo with Redis"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Rolling sensor graph demo with Redis","→","Rolling sensor graph demo with Redis"]
+nav_prev: {"path": "redis/docs/latest/operate/oss_and_stack/stack-with-enterprise/deprecated-features/triggers-and-functions/concepts/sync_async/index.md", "title": "Sync and async"}
+nav_next: {"path": "redis/docs/latest/develop/get-started/vector-database/index.md", "title": "Redis as a vector database quick start guide"}
 ---
+
 # Rolling sensor graph demo with Redis
 
 Build a rolling sensor graph demo with Redis time series data
@@ -45,3 +48,4 @@ This makes it a good fit for demonstrating how Redis time series support:
 *   [Ruby](/docs/latest/develop/use-cases/time-series-dashboard/ruby/) - Build the same rolling sensor graph demo with `redis-rb` and a local WEBrick server
 
 ## On this page
+

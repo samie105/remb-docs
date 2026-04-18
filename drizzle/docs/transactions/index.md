@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:22:18.854Z"
 content_hash: "e5a6ff3598776bdc4f486de081a20a3e52484011cbc0adf7c8b3bfa1be393373"
 menu_path: ["Transactions"]
 section_path: []
+nav_prev: {"path": "drizzle/docs/generated-columns/index.md", "title": "Generated Columns"}
+nav_next: {"path": "drizzle/docs/batch-api/index.md", "title": "Batch API"}
 ---
+
 SQL transaction is a grouping of one or more SQL statements that interact with a database. A transaction in its entirety can commit to a database as a single logical unit or rollback (become undone) as a single logical unit.
 
 Drizzle ORM provides APIs to run SQL statements in transactions:
@@ -69,7 +72,7 @@ const newBalance: number = await db.transaction(async (tx) => {
 });
 ```
 
-You can use transactions with **[relational queries](https://orm.drizzle.team/docs/rqb)**:
+You can use transactions with **[relational queries](drizzle/docs/rqb/index.md)**:
 
 ```
 const db = drizzle({ schema })
@@ -218,3 +221,4 @@ interface CockroachTransactionConfig {
   deferrable?: boolean;
 }
 ```
+

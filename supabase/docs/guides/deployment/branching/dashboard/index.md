@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:57:05.854Z"
 content_hash: "9a7a1737975da5cdd106d3fd7e32cd77c6aa764ee2b55f45ba6f8581859b0eba"
 menu_path: ["Deployment & Branching","Deployment & Branching","Branching","Branching","Branching via dashboard","Branching via dashboard"]
 section_path: ["Deployment & Branching","Deployment & Branching","Branching","Branching","Branching via dashboard","Branching via dashboard"]
+nav_prev: {"path": "supabase/docs/guides/database/replication/replication-setup/index.md", "title": "Replication Setup"}
+nav_next: {"path": "supabase/docs/guides/deployment/branching/integrations/index.md", "title": "Integrations"}
 ---
+
 # 
 
 Branching via the dashboard
@@ -78,3 +81,4 @@ There are a few limitations you should be aware of before deciding to use branch
 *   Deleting functions must be done manually on main branch
 *   Migration conflicts must be manually resolved on the preview branch
 *   If you have run migrations on main, new branches will be created from existing migrations instead of a full schema dump
+

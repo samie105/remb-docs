@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:45:08.183Z"
 content_hash: "a4ea1da3fa1ec2928e039290606d8d710816e32a57199bd0fd79ffa241bc755a"
 menu_path: ["Build an app with Nuxt and Bun"]
 section_path: []
+nav_prev: {"path": "bun/bun/docs/guides/ecosystem/nextjs/index.md", "title": "Build an app with Next.js and Bun"}
+nav_next: {"path": "bun/bun/docs/guides/ecosystem/pm2/index.md", "title": "Run Bun as a daemon with PM2"}
 ---
+
 Bun supports [Nuxt](https://nuxt.com/) out of the box. Initialize a Nuxt app with official `nuxi` CLI.
 
 terminal
@@ -94,3 +97,4 @@ bun run ./.output/server/index.mjs
 * * *
 
 Refer to the [Nuxt website](https://nuxt.com/docs) for complete documentation.
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:40:52.410Z"
 content_hash: "f0f7e191a8ed3d7fc20a52b6d7307c2d7e0451449672c0ff39edab7473f92898"
 menu_path: ["Updating Arrays in State"]
 section_path: []
+nav_prev: {"path": "react/learn/updating-objects-in-state/index.md", "title": "Updating Objects in State"}
+nav_next: {"path": "react/learn/managing-state/index.md", "title": "Managing State"}
 ---
+
 Arrays are mutable in JavaScript, but you should treat them as immutable when you store them in state. Just like with objects, when you want to update an array stored in state, you need to create a new one (or make a copy of an existing one), and then set state to use the new array.
 
 ### You will learn
@@ -20,7 +23,7 @@ Arrays are mutable in JavaScript, but you should treat them as immutable when yo
 
 ## Updating arrays without mutation[](#updating-arrays-without-mutation "Link for Updating arrays without mutation ")
 
-In JavaScript, arrays are just another kind of object. [Like with objects](https://react.dev/learn/updating-objects-in-state), **you should treat arrays in React state as read-only.** This means that you shouldn’t reassign items inside an array like `arr[0] = 'bird'`, and you also shouldn’t use methods that mutate the array, such as `push()` and `pop()`.
+In JavaScript, arrays are just another kind of object. [Like with objects](react/learn/updating-objects-in-state/index.md), **you should treat arrays in React state as read-only.** This means that you shouldn’t reassign items inside an array like `arr[0] = 'bird'`, and you also shouldn’t use methods that mutate the array, such as `push()` and `pop()`.
 
 Instead, every time you want to update an array, you’ll want to pass a _new_ array to your state setting function. To do that, you can create a new array from the original array in your state by calling its non-mutating methods like `filter()` and `map()`. Then you can set your state to the resulting new array.
 
@@ -63,7 +66,7 @@ Unfortunately, [`slice`](https://developer.mozilla.org/en-US/docs/Web/JavaScript
 *   `slice` lets you copy an array or a part of it.
 *   `splice` **mutates** the array (to insert or delete items).
 
-In React, you will be using `slice` (no `p`!) a lot more often because you don’t want to mutate objects or arrays in state. [Updating Objects](https://react.dev/learn/updating-objects-in-state) explains what mutation is and why it’s not recommended for state.
+In React, you will be using `slice` (no `p`!) a lot more often because you don’t want to mutate objects or arrays in state. [Updating Objects](react/learn/updating-objects-in-state/index.md) explains what mutation is and why it’s not recommended for state.
 
 ### Adding to an array[](#adding-to-an-array "Link for Adding to an array ")
 
@@ -302,7 +305,7 @@ However, **even if you copy an array, you can’t mutate existing items _inside_
 const nextList = [...list];nextList[0].seen = true; // Problem: mutates list[0]setList(nextList);
 ```
 
-Although `nextList` and `list` are two different arrays, **`nextList[0]` and `list[0]` point to the same object.** So by changing `nextList[0].seen`, you are also changing `list[0].seen`. This is a state mutation, which you should avoid! You can solve this issue in a similar way to [updating nested JavaScript objects](https://react.dev/learn/updating-objects-in-state#updating-a-nested-object)—by copying individual items you want to change instead of mutating them. Here’s how.
+Although `nextList` and `list` are two different arrays, **`nextList[0]` and `list[0]` point to the same object.** So by changing `nextList[0].seen`, you are also changing `list[0].seen`. This is a state mutation, which you should avoid! You can solve this issue in a similar way to [updating nested JavaScript objects](react/learn/updating-objects-in-state/index.md#updating-a-nested-object)—by copying individual items you want to change instead of mutating them. Here’s how.
 
 ## Updating objects inside arrays[](#updating-objects-inside-arrays "Link for Updating objects inside arrays ")
 
@@ -398,7 +401,7 @@ Although the `myNextList` array itself is new, the _items themselves_ are the sa
 setMyList(myList.map(artwork => {if (artwork.id === artworkId) {// Create a *new* object with changesreturn { ...artwork, seen: nextSeen };} else {// No changesreturn artwork;}}));
 ```
 
-Here, `...` is the object spread syntax used to [create a copy of an object.](https://react.dev/learn/updating-objects-in-state#copying-objects-with-the-spread-syntax)
+Here, `...` is the object spread syntax used to [create a copy of an object.](react/learn/updating-objects-in-state/index.md#copying-objects-with-the-spread-syntax)
 
 With this approach, none of the existing state items are being mutated, and the bug is fixed:
 
@@ -484,9 +487,9 @@ In general, **you should only mutate objects that you have just created.** If yo
 
 ### Write concise update logic with Immer[](#write-concise-update-logic-with-immer "Link for Write concise update logic with Immer ")
 
-Updating nested arrays without mutation can get a little bit repetitive. [Just as with objects](https://react.dev/learn/updating-objects-in-state#write-concise-update-logic-with-immer):
+Updating nested arrays without mutation can get a little bit repetitive. [Just as with objects](react/learn/updating-objects-in-state/index.md#write-concise-update-logic-with-immer):
 
-*   Generally, you shouldn’t need to update state more than a couple of levels deep. If your state objects are very deep, you might want to [restructure them differently](https://react.dev/learn/choosing-the-state-structure#avoid-deeply-nested-state) so that they are flat.
+*   Generally, you shouldn’t need to update state more than a couple of levels deep. If your state objects are very deep, you might want to [restructure them differently](react/learn/choosing-the-state-structure/index.md#avoid-deeply-nested-state) so that they are flat.
 *   If you don’t want to change your state structure, you might prefer to use [Immer](https://github.com/immerjs/use-immer), which lets you write using the convenient but mutating syntax and takes care of producing the copies for you.
 
 Here is the Art Bucket List example rewritten with Immer:
@@ -522,3 +525,4 @@ of
 Update an item in the shopping cart[](#update-an-item-in-the-shopping-cart "Link for this heading")
 
 Fill in the `handleIncreaseClick` logic so that pressing ”+” increases the corresponding number:
+

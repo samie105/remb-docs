@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:40:19.902Z"
 content_hash: "9b113777c98db9c7a10c2937458a17fa58d0086071ba381b4eaa006d96ce01ae"
 menu_path: ["sqlite - Node documentation"]
 section_path: []
+nav_prev: {"path": "deno/deno/api/node/sea/index.md", "title": "sea - Node documentation"}
+nav_next: {"path": "deno/deno/api/node/stream/index.md", "title": "stream - Node documentation"}
 ---
+
 ### Usage in Deno
 
 ```typescript
@@ -223,3 +226,4 @@ v
 [constants.SQLITE\_CHANGESET\_REPLACE](.././sqlite/~/constants.SQLITE_CHANGESET_REPLACE "constants.SQLITE_CHANGESET_REPLACE")
 
 Conflicting changes replace existing values. Note that this value can only be returned when the type of conflict is either `SQLITE_CHANGESET_DATA` or `SQLITE_CHANGESET_CONFLICT`.
+

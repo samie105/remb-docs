@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:33:46.126Z"
 content_hash: "d8da6d12297ad643758dc9bb34b9533076fcba041f4e39dd0788b968ecd7c4ea"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Client tools","→","Client tools","→\n      \n        Redis Insight","→","Redis Insight","→\n      \n        Redis Insight release notes","→","Redis Insight release notes","→\n      \n        Redis Insight v2.54.0, August 2024","→","Redis Insight v2.54.0, August 2024"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Client tools","→","Client tools","→\n      \n        Redis Insight","→","Redis Insight","→\n      \n        Redis Insight release notes","→","Redis Insight release notes","→\n      \n        Redis Insight v2.54.0, August 2024","→","Redis Insight v2.54.0, August 2024"]
+nav_prev: {"path": "redis/docs/latest/develop/tools/insight/release-notes/v.2.52.0/index.md", "title": "Redis Insight v2.52.0, June 2024"}
+nav_next: {"path": "redis/docs/latest/develop/tools/insight/release-notes/v.2.50.0/index.md", "title": "Redis Insight v2.50.0, May 2024"}
 ---
+
 # Redis Insight v2.54.0, August 2024
 
 Redis Insight v2.54
@@ -35,3 +38,4 @@ Support for [Redis Data Integration (RDI)](https://redis.io/data-integration/?ut
 *   [#3613](https://github.com/RedisInsight/RedisInsight/pull/3613) Prevent repetitive buffer overflow by avoiding the resending of unfulfilled commands.
 
 ## On this page
+

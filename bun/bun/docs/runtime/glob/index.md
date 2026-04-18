@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:59:44.418Z"
 content_hash: "352fa52b352d0880c4a1eabaa08a8c894f078d0f59119dfb05e8cd901abbdf54"
 menu_path: ["Glob"]
 section_path: []
+nav_prev: {"path": "bun/bun/docs/runtime/file-system-router/index.md", "title": "File System Router"}
+nav_next: {"path": "bun/bun/docs/runtime/file-types/index.md", "title": "File Types"}
 ---
+
 ## Quickstart
 
 **Scan a directory for files matching `*.ts`**:
@@ -186,3 +189,4 @@ All three functions (`fs.glob()`, `fs.globSync()`, `fs.promises.glob()`) support
 
 *   Array of patterns as the first argument
 *   `exclude` option to filter results
+

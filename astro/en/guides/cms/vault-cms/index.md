@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:35:49.002Z"
 content_hash: "46d7668f001cd6b1cbd6d47b7ee91bc0fce9d58d7793476b6a6708dffe1e0796"
 menu_path: ["Vault CMS & Astro"]
 section_path: []
+nav_prev: {"path": "astro/en/guides/cms/umbraco/index.md", "title": "Umbraco & Astro"}
+nav_next: {"path": "astro/en/guides/cms/wordpress/index.md", "title": "Headless WordPress & Astro"}
 ---
+
 # Vault CMS & Astro
 
 [Vault CMS](https://vaultcms.org) is a headless CMS for Astro powered by Obsidian and Git. Write in Markdown with live preview inside a preconfigured Obsidian vault, then deploy to your Astro site.
@@ -204,3 +207,4 @@ section_path: []
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

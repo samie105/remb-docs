@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:46:10.201Z"
 content_hash: "edf0bc6a25dcf3047f3173410a316192e2c2d3a97d69b3e71ea6ea83a433fd7e"
 menu_path: ["PostgreSQL: Documentation: 18: 4.1. Lexical Structure"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/app-pgverifybackup.html/index.md", "title": "PostgreSQL: Documentation: 18: pg_verifybackup"}
+nav_next: {"path": "postgres/docs/current/ddl-default.html/index.md", "title": "PostgreSQL: Documentation: 18: 5.2.\u00a0Default Values"}
 ---
+
 SQL input consists of a sequence of _commands_. A command is composed of a sequence of _tokens_, terminated by a semicolon (“;”). The end of the input stream also terminates a command. Which tokens are valid depends on the syntax of the particular command.
 
 A token can be a _key word_, an _identifier_, a _quoted identifier_, a _literal_ (or constant), or a special character symbol. Tokens are normally separated by whitespace (space, tab, newline), but need not be if there is no ambiguity (which is generally only the case if a special character is adjacent to some other token type).
@@ -147,9 +150,9 @@ It is your responsibility that the byte sequences you create, especially when us
 
 ### Caution
 
-If the configuration parameter [standard\_conforming\_strings](https://www.postgresql.org/docs/current/runtime-config-compatible.html#GUC-STANDARD-CONFORMING-STRINGS) is `off`, then PostgreSQL recognizes backslash escapes in both regular and escape string constants. However, as of PostgreSQL 9.1, the default is `on`, meaning that backslash escapes are recognized only in escape string constants. This behavior is more standards-compliant, but might break applications which rely on the historical behavior, where backslash escapes were always recognized. As a workaround, you can set this parameter to `off`, but it is better to migrate away from using backslash escapes. If you need to use a backslash escape to represent a special character, write the string constant with an `E`.
+If the configuration parameter [standard\_conforming\_strings](postgres/docs/current/runtime-config-compatible.html/index.md#GUC-STANDARD-CONFORMING-STRINGS) is `off`, then PostgreSQL recognizes backslash escapes in both regular and escape string constants. However, as of PostgreSQL 9.1, the default is `on`, meaning that backslash escapes are recognized only in escape string constants. This behavior is more standards-compliant, but might break applications which rely on the historical behavior, where backslash escapes were always recognized. As a workaround, you can set this parameter to `off`, but it is better to migrate away from using backslash escapes. If you need to use a backslash escape to represent a special character, write the string constant with an `E`.
 
-In addition to `standard_conforming_strings`, the configuration parameters [escape\_string\_warning](https://www.postgresql.org/docs/current/runtime-config-compatible.html#GUC-ESCAPE-STRING-WARNING) and [backslash\_quote](https://www.postgresql.org/docs/current/runtime-config-compatible.html#GUC-BACKSLASH-QUOTE) govern treatment of backslashes in string constants.
+In addition to `standard_conforming_strings`, the configuration parameters [escape\_string\_warning](postgres/docs/current/runtime-config-compatible.html/index.md#GUC-ESCAPE-STRING-WARNING) and [backslash\_quote](postgres/docs/current/runtime-config-compatible.html/index.md#GUC-BACKSLASH-QUOTE) govern treatment of backslashes in string constants.
 
 The character with the code zero cannot be in a string constant.
 
@@ -175,7 +178,7 @@ Either the 4-digit or the 6-digit escape form can be used to specify UTF-16 surr
 
 If the server encoding is not UTF-8, the Unicode code point identified by one of these escape sequences is converted to the actual server encoding; an error is reported if that's not possible.
 
-Also, the Unicode escape syntax for string constants only works when the configuration parameter [standard\_conforming\_strings](https://www.postgresql.org/docs/current/runtime-config-compatible.html#GUC-STANDARD-CONFORMING-STRINGS) is turned on. This is because otherwise this syntax could confuse clients that parse the SQL statements to the point that it could lead to SQL injections and similar security issues. If the parameter is set to off, this syntax will be rejected with an error message.
+Also, the Unicode escape syntax for string constants only works when the configuration parameter [standard\_conforming\_strings](postgres/docs/current/runtime-config-compatible.html/index.md#GUC-STANDARD-CONFORMING-STRINGS) is turned on. This is because otherwise this syntax could confuse clients that parse the SQL statements to the point that it could lead to SQL injections and similar security issues. If the parameter is set to off, this syntax will be rejected with an error message.
 
 #### 4.1.2.4. Dollar-Quoted String Constants [#](#SQL-SYNTAX-DOLLAR-QUOTING)
 
@@ -454,3 +457,4 @@ the `OPERATOR` construct is taken to have the default precedence shown in [Table
 ### Note
 
 PostgreSQL versions before 9.5 used slightly different operator precedence rules. In particular, `<=` `>=` and `<>` used to be treated as generic operators; `IS` tests used to have higher priority; and `NOT BETWEEN` and related constructs acted inconsistently, being taken in some cases as having the precedence of `NOT` rather than `BETWEEN`. These rules were changed for better compliance with the SQL standard and to reduce confusion from inconsistent treatment of logically equivalent constructs. In most cases, these changes will result in no behavioral change, or perhaps in “no such operator” failures which can be resolved by adding parentheses. However there are corner cases in which a query might change behavior without any parsing error being reported.
+

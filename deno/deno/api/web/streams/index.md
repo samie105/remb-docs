@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:14:41.843Z"
 content_hash: "fc6186e9ba4f106a40037aae00a8d8f079f3b012baa0b299396cc7145eb27ed5"
 menu_path: ["Streams - Web documentation"]
 section_path: []
+nav_prev: {"path": "deno/deno/api/web/storage/index.md", "title": "Storage - Web documentation"}
+nav_next: {"path": "deno/deno/api/web/temporal/index.md", "title": "404Sorry, couldn\u2019t find that page."}
 ---
+
 ### Interfaces [#](#Interfaces)
 
 I
@@ -479,3 +482,4 @@ T
 [ReadableStreamType](./././~/ReadableStreamType "ReadableStreamType")
 
 No documentation available
+

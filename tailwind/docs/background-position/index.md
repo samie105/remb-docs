@@ -9,15 +9,9 @@ last_crawled_at: "2026-04-18T17:01:32.923Z"
 content_hash: "48d62a9cd5656044e9b1265fd209976f24d754c42d55b0be3af55630ef5518bc"
 menu_path: ["background-position"]
 section_path: []
+nav_prev: {"path": "tailwind/docs/background-origin/index.md", "title": "background-origin"}
+nav_next: {"path": "tailwind/docs/background-repeat/index.md", "title": "background-repeat"}
 ---
-[](/)
-
-[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
-
-1.  Backgrounds
-2.  background-position
-
-Backgrounds
 
 # background-position
 
@@ -164,3 +158,4 @@ Short, tactical video lessons from the creator of Tailwind CSS, delivered direct
 [Get the free course](/build-uis-that-dont-suck)
 
 Copyright © 2026 Tailwind Labs Inc.·[Trademark Policy](/brand)
+

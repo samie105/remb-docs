@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:52:36.766Z"
 content_hash: "d12384f18505fbeacaa81312d51263009e66b8fad14be31cb3ab286406aba538"
 menu_path: ["Views"]
 section_path: []
+nav_prev: {"path": "prisma/docs/orm/prisma-schema/data-model/table-inheritance/index.md", "title": "Table inheritance"}
+nav_next: {"path": "prisma/docs/orm/prisma-schema/overview/data-sources/index.md", "title": "Data sources"}
 ---
+
 Database views allow you to name and store queries. In relational databases, views are [stored SQL queries](https://www.postgresql.org/docs/current/sql-createview.html) that might include columns in multiple tables, or calculated values such as aggregates. In MongoDB, views are queryable objects where the contents are defined by an [aggregation pipeline](https://www.mongodb.com/docs/manual/core/aggregation-pipeline) on other collections.
 
 The `views` preview feature allows you to represent views in your Prisma schema with the `view` keyword. To use views in Prisma ORM, follow these steps:
@@ -110,7 +113,7 @@ Each _field_ of a `view` block represents a column in the query results of the v
 
 ### [Use introspection](#use-introspection)
 
-If you have an existing view or views defined in your database, [introspection](https://www.prisma.io/docs/orm/prisma-schema/introspection) will automatically generate `view` blocks in your Prisma schema that represent those views.
+If you have an existing view or views defined in your database, [introspection](prisma/docs/orm/prisma-schema/introspection/index.md) will automatically generate `view` blocks in your Prisma schema that represent those views.
 
 Assuming the example `UserInfo` view exists in your underlying database, running the following command will generate a `view` block in your Prisma schema representing that view:
 
@@ -170,7 +173,7 @@ Some databases support materialized views, e.g. [PostgreSQL](https://www.postgre
 
 Materialized views persist the result of the view query for faster access and only update it on demand.
 
-Currently, Prisma ORM does not support materialized views. However, when you [manually create a view](#create-a-view-in-the-underlying-database), you can also create a materialized view with the corresponding command in the underlying database. You can then use Prisma Client's [TypedSQL functionality](https://www.prisma.io/docs/orm/prisma-client/using-raw-sql) to execute the command and refresh the view manually.
+Currently, Prisma ORM does not support materialized views. However, when you [manually create a view](#create-a-view-in-the-underlying-database), you can also create a materialized view with the corresponding command in the underlying database. You can then use Prisma Client's [TypedSQL functionality](prisma/docs/orm/prisma-client/using-raw-sql/index.md) to execute the command and refresh the view manually.
 
 In the future Prisma Client might support marking individual views as materialized and add a Prisma Client method to refresh the materialized view. Please comment on our [`views` feedback issue](https://github.com/prisma/prisma/issues/17335) with your use case.
 
@@ -195,3 +198,4 @@ The purpose of the `@unique` attribute in this case is only to enable relationsh
 ### [Disabled write queries](#disabled-write-queries)
 
 All write operations (`create`, `update`, `delete`, `upsert`) are disabled and not generated in the Prisma Client.
+

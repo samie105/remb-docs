@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:44:21.091Z"
 content_hash: "64e002df9fd9702297197a65aa2f679849bf0ac3a8159b5de0507f882a0b3cd6"
 menu_path: ["PostgreSQL: Documentation: 18: pg_rewind"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/pgrowlocks.html/index.md", "title": "PostgreSQL: Documentation: 18: F.31.\u00a0pgrowlocks \u2014 show a table's row locking information"}
+nav_next: {"path": "postgres/docs/current/sql-dropgroup.html/index.md", "title": "PostgreSQL: Documentation: 18: DROP GROUP"}
 ---
+
 pg\_rewind — synchronize a PostgreSQL data directory with another data directory that was forked from it
 
 ## Synopsis
@@ -24,9 +27,9 @@ After a successful rewind, the state of the target data directory is analogous t
 
 pg\_rewind examines the timeline histories of the source and target clusters to determine the point where they diverged, and expects to find WAL in the target cluster's `pg_wal` directory reaching all the way back to the point of divergence. The point of divergence can be found either on the target timeline, the source timeline, or their common ancestor. In the typical failover scenario where the target cluster was shut down soon after the divergence, this is not a problem, but if the target cluster ran for a long time after the divergence, its old WAL files might no longer be present. In this case, you can manually copy them from the WAL archive to the `pg_wal` directory, or run pg\_rewind with the `-c` option to automatically retrieve them from the WAL archive. The use of pg\_rewind is not limited to failover, e.g., a standby server can be promoted, run some write transactions, and then rewound to become a standby again.
 
-After running pg\_rewind, WAL replay needs to complete for the data directory to be in a consistent state. When the target server is started again it will enter archive recovery and replay all WAL generated in the source server from the last checkpoint before the point of divergence. If some of the WAL was no longer available in the source server when pg\_rewind was run, and therefore could not be copied by the pg\_rewind session, it must be made available when the target server is started. This can be done by creating a `recovery.signal` file in the target data directory and by configuring a suitable [restore\_command](https://www.postgresql.org/docs/current/runtime-config-wal.html#GUC-RESTORE-COMMAND) in `postgresql.conf`.
+After running pg\_rewind, WAL replay needs to complete for the data directory to be in a consistent state. When the target server is started again it will enter archive recovery and replay all WAL generated in the source server from the last checkpoint before the point of divergence. If some of the WAL was no longer available in the source server when pg\_rewind was run, and therefore could not be copied by the pg\_rewind session, it must be made available when the target server is started. This can be done by creating a `recovery.signal` file in the target data directory and by configuring a suitable [restore\_command](postgres/docs/current/runtime-config-wal.html/index.md#GUC-RESTORE-COMMAND) in `postgresql.conf`.
 
-pg\_rewind requires that the target server either has the [wal\_log\_hints](https://www.postgresql.org/docs/current/runtime-config-wal.html#GUC-WAL-LOG-HINTS) option enabled in `postgresql.conf` or data checksums enabled when the cluster was initialized with initdb (the default). [full\_page\_writes](https://www.postgresql.org/docs/current/runtime-config-wal.html#GUC-FULL-PAGE-WRITES) must also be set to `on`, but is enabled by default.
+pg\_rewind requires that the target server either has the [wal\_log\_hints](postgres/docs/current/runtime-config-wal.html/index.md#GUC-WAL-LOG-HINTS) option enabled in `postgresql.conf` or data checksums enabled when the cluster was initialized with initdb (the default). [full\_page\_writes](postgres/docs/current/runtime-config-wal.html/index.md#GUC-FULL-PAGE-WRITES) must also be set to `on`, but is enabled by default.
 
 ### Warning: Failures While Rewinding
 
@@ -137,3 +140,4 @@ The basic idea is to copy all file system-level changes from the source cluster 
 4.  Create a `backup_label` file to begin WAL replay at the checkpoint created at failover and configure the `pg_control` file with a minimum consistency LSN defined as the result of `pg_current_wal_insert_lsn()` when rewinding from a live source or the last checkpoint LSN when rewinding from a stopped source.
     
 5.  When starting the target, PostgreSQL replays all the required WAL, resulting in a data directory in a consistent state.
+

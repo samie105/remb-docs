@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:47:12.272Z"
 content_hash: "1777a8022a0f03310d2eb7adf13ace1395a1f8f81ee18c5ced9ea29ccd782fbf"
 menu_path: ["Platform","Platform","Project & Account Management","Project & Account Management","Restore to a new project","Restore to a new project"]
 section_path: ["Platform","Platform","Project & Account Management","Project & Account Management","Restore to a new project","Restore to a new project"]
+nav_prev: {"path": "supabase/docs/guides/platform/billing-faq/index.md", "title": "Billing FAQ"}
+nav_next: {"path": "supabase/docs/guides/platform/cost-control/index.md", "title": "Control your costs"}
 ---
+
 # 
 
 Restore to a new project
@@ -66,3 +69,4 @@ New projects are completely independent of their source, and as such can be modi
 As the entire database is copied to the new project, this will include all extensions that were enabled at the source. If the source project included extensions that are configured to carry out external operations—for example pg\_net, pg\_cron, wrappers—these should be disabled once the copy process has completed to avoid any unwanted actions from taking place.
 
 Restoring to a new project is an excellent way to manage environments more effectively. You can use this feature to create staging environments for testing, experiment with changes without risk to production data, or swiftly recover from unexpected data loss scenarios.
+

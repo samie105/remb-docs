@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:45:31.275Z"
 content_hash: "0a065ae2edede3e5bcbb9f749a5954ec313e1eab808643c2505a8f0a88e7a87f"
 menu_path: ["PostgreSQL: Documentation: 18: COPY"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/event-trigger-interface.html/index.md", "title": "PostgreSQL: Documentation: 18: 38.2.\u00a0Writing Event Trigger Functions in C"}
+nav_next: {"path": "postgres/docs/current/config-setting.html/index.md", "title": "PostgreSQL: Documentation: 18: 19.1.\u00a0Setting Parameters"}
 ---
+
 COPY — copy data between a file and a table
 
 ## Synopsis
@@ -197,7 +200,7 @@ If row-level security is enabled for the table, the relevant `SELECT` policies w
 
 Files named in a `COPY` command are read or written directly by the server, not by the client application. Therefore, they must reside on or be accessible to the database server machine, not the client. They must be accessible to and readable or writable by the PostgreSQL user (the user ID the server runs as), not the client. Similarly, the command specified with `PROGRAM` is executed directly by the server, not by the client application, must be executable by the PostgreSQL user. `COPY` naming a file or command is only allowed to database superusers or users who are granted one of the roles `pg_read_server_files`, `pg_write_server_files`, or `pg_execute_server_program`, since it allows reading or writing any file or running a program that the server has privileges to access.
 
-Do not confuse `COPY` with the psql instruction `[\copy](https://www.postgresql.org/docs/current/app-psql.html#APP-PSQL-META-COMMANDS-COPY)`. `\copy` invokes `COPY FROM STDIN` or `COPY TO STDOUT`, and then fetches/stores the data in a file accessible to the psql client. Thus, file accessibility and access rights depend on the client rather than the server when `\copy` is used.
+Do not confuse `COPY` with the psql instruction `[\copy](postgres/docs/current/app-psql.html/index.md#APP-PSQL-META-COMMANDS-COPY)`. `\copy` invokes `COPY FROM STDIN` or `COPY TO STDOUT`, and then fetches/stores the data in a file accessible to the psql client. Thus, file accessibility and access rights depend on the client rather than the server when `\copy` is used.
 
 It is recommended that the file name used in `COPY` always be specified as an absolute path. This is enforced by the server in the case of `COPY TO`, but for `COPY FROM` you do have the option of reading from a file specified by a relative path. The path will be interpreted relative to the working directory of the server process (normally the cluster's data directory), not the client's working directory.
 
@@ -436,3 +439,4 @@ COPY \[ BINARY \] _`table_name`_
     TO { '_`filename`_' | STDOUT }
     \[ \[USING\] DELIMITERS '_`delimiter_character`_' \]
     \[ WITH NULL AS '_`null_string`_' \]
+

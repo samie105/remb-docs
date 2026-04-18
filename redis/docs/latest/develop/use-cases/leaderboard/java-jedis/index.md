@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:59:02.508Z"
 content_hash: "d57ff5bc2c3da9c59ebf2468ff051d8ef43553d2c49581adba5c0c74abd65566"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Redis leaderboard","→","Redis leaderboard","→\n      \n        Redis leaderboard with Java and Jedis","→","Redis leaderboard with Java and Jedis"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Redis leaderboard","→","Redis leaderboard","→\n      \n        Redis leaderboard with Java and Jedis","→","Redis leaderboard with Java and Jedis"]
+nav_prev: {"path": "redis/docs/latest/develop/use-cases/time-series-dashboard/java-lettuce/index.md", "title": "Rolling sensor graph demo with Java and Lettuce"}
+nav_next: {"path": "redis/docs/latest/develop/use-cases/rate-limiter/java-jedis/index.md", "title": "Token bucket rate limiter with Redis and Java"}
 ---
+
 # Redis leaderboard with Java and Jedis
 
 Implement a Redis leaderboard in Java with Jedis and sorted sets
@@ -241,3 +244,4 @@ Some leaderboards are permanent, while others reset daily, weekly, or seasonally
 Per-user hashes work best for small, frequently accessed profile details. Large profile documents or rarely used attributes are often better kept in another store, with Redis holding only the fields needed to render the leaderboard quickly.
 
 ## On this page
+

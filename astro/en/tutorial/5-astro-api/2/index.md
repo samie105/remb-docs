@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:48:52.564Z"
 content_hash: "00166dfd897c7d92d306244cf5333beb728699398a383eec269c74e5d5352b62"
 menu_path: ["Generate tag pages"]
 section_path: []
+nav_prev: {"path": "astro/en/tutorial/5-astro-api/1/index.md", "title": "Create a blog post archive"}
+nav_next: {"path": "astro/en/tutorial/5-astro-api/3/index.md", "title": "Build a tag index page"}
 ---
+
 # Generate tag pages
 
 Get ready to…
@@ -191,3 +194,4 @@ Choose the term that matches the description.
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

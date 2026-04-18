@@ -9,12 +9,15 @@ last_crawled_at: "2026-04-18T16:34:35.663Z"
 content_hash: "9d252fa34baf70ee32dde6439854baec45135fd6cea3cc685d43a1cb1b7417d6"
 menu_path: ["Tutorial: Tic-Tac-Toe"]
 section_path: []
+nav_prev: {"path": "react/learn/index.md", "title": "Quick Start"}
+nav_next: {"path": "react/learn/thinking-in-react/index.md", "title": "Thinking in React"}
 ---
+
 You will build a small tic-tac-toe game during this tutorial. This tutorial does not assume any existing React knowledge. The techniques you’ll learn in the tutorial are fundamental to building any React app, and fully understanding it will give you a deep understanding of React.
 
 ### Note
 
-This tutorial is designed for people who prefer to **learn by doing** and want to quickly try making something tangible. If you prefer learning each concept step by step, start with [Describing the UI.](https://react.dev/learn/describing-the-ui)
+This tutorial is designed for people who prefer to **learn by doing** and want to quickly try making something tangible. If you prefer learning each concept step by step, start with [Describing the UI.](react/learn/describing-the-ui/index.md)
 
 The tutorial is divided into several sections:
 
@@ -728,4 +731,5 @@ If you have extra time or want to practice your new React skills, here are some 
 4.  When someone wins, highlight the three squares that caused the win (and when no one wins, display a message about the result being a draw).
 5.  Display the location for each move in the format (row, col) in the move history list.
 
-Throughout this tutorial, you’ve touched on React concepts including elements, components, props, and state. Now that you’ve seen how these concepts work when building a game, check out [Thinking in React](https://react.dev/learn/thinking-in-react) to see how the same React concepts work when building an app’s UI.
+Throughout this tutorial, you’ve touched on React concepts including elements, components, props, and state. Now that you’ve seen how these concepts work when building a game, check out [Thinking in React](react/learn/thinking-in-react/index.md) to see how the same React concepts work when building an app’s UI.
+

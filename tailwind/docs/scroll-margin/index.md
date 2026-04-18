@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:16:46.792Z"
 content_hash: "1ecfee70b0f9778a69bed54a6caf66dec63e943c127ac8ab609d2779951fcd79"
 menu_path: ["scroll-margin"]
 section_path: []
+nav_prev: {"path": "tailwind/docs/scroll-behavior/index.md", "title": "scroll-behavior"}
+nav_next: {"path": "tailwind/docs/scroll-padding/index.md", "title": "scroll-padding"}
 ---
+
 Utilities for controlling the scroll offset around items in a snap container.
 
 Class
@@ -90,7 +93,7 @@ Right-to-left
 <div dir="ltr">  <div class="snap-x ...">    <div class="snap-start scroll-ms-6 ...">      <img src="/img/vacation-01.jpg"/>    </div>    <!-- ... -->  </div></div><div dir="rtl">  <div class="snap-x ...">    <div class="snap-start scroll-ms-6 ...">      <img src="/img/vacation-01.jpg"/>    </div>    <!-- ... -->  </div></div>
 ```
 
-For more control, you can also use the [LTR and RTL modifiers](https://tailwindcss.com/docs/hover-focus-and-other-states#rtl-support) to conditionally apply specific styles depending on the current text direction.
+For more control, you can also use the [LTR and RTL modifiers](tailwind/docs/hover-focus-and-other-states/index.md#rtl-support) to conditionally apply specific styles depending on the current text direction.
 
 Use the `scroll-mbs-<number>` and `scroll-mbe-<number>` utilities to set the `scroll-margin-block-start` and `scroll-margin-block-end` logical properties, which map to either the top or bottom side based on the writing mode:
 
@@ -122,7 +125,7 @@ Prefix a `scroll-margin` utility with a breakpoint variant like `md:` to only ap
 <div class="scroll-m-8 md:scroll-m-0 ...">  <!-- ... --></div>
 ```
 
-Learn more about using variants in the [variants documentation](https://tailwindcss.com/docs/hover-focus-and-other-states).
+Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).
 
 ## [Customizing your theme](#customizing-your-theme)
 
@@ -132,4 +135,5 @@ The `scroll-m-<number>`,`scroll-mx-<number>`,`scroll-my-<number>`,`scroll-ms-<nu
 @theme {  --spacing: 1px; }
 ```
 
-Learn more about customizing the spacing scale in the [theme variable documentation](https://tailwindcss.com/docs/theme).
+Learn more about customizing the spacing scale in the [theme variable documentation](tailwind/docs/theme/index.md).
+

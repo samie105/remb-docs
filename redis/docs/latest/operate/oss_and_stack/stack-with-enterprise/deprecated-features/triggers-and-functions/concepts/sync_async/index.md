@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:57:02.987Z"
 content_hash: "84b39143f87e1301eb8601692c0b6f0cd182692c083adefe0f1f80ab690f739f"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Redis Open Source and Redis Software","→","Redis Open Source and Redis Software","→\n      \n        Deprecated Redis Open Source features and modules","→","Deprecated Redis Open Source features and modules","→\n      \n        Triggers and functions","→","Triggers and functions","→\n      \n        Concepts","→","Concepts","→\n      \n        Sync and async","→","Sync and async"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Redis Open Source and Redis Software","→","Redis Open Source and Redis Software","→\n      \n        Deprecated Redis Open Source features and modules","→","Deprecated Redis Open Source features and modules","→\n      \n        Triggers and functions","→","Triggers and functions","→\n      \n        Concepts","→","Concepts","→\n      \n        Sync and async","→","Sync and async"]
+nav_prev: {"path": "redis/docs/latest/integrate/google-adk/search-tools/index.md", "title": "Redis search tools"}
+nav_next: {"path": "redis/docs/latest/develop/use-cases/time-series-dashboard/index.md", "title": "Rolling sensor graph demo with Redis"}
 ---
+
 # Sync and async
 
 Sync and async functions
@@ -248,3 +251,4 @@ Blocking Redis for a long time is discouraged and is considered an unsafe operat
 
 *   Abort - Stop the function invocation even at the cost of losing the atomicity property.
 *   Kill - Keep the atomicity property and do not stop the function invocation. In this case there is a risk of an external process killing the Redis server, thinking that the shard is not responding.
+

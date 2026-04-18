@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:48:09.534Z"
 content_hash: "327230528a5b6d6d6415870ca0c20f5958888eb291caea1369340a4168b54f76"
 menu_path: ["Reactive $: statements"]
 section_path: []
+nav_prev: {"path": "svelte/docs/svelte/legacy-let/index.md", "title": "Reactive let/var declarations"}
+nav_next: {"path": "svelte/docs/svelte/legacy-export-let/index.md", "title": "export let"}
 ---
+
 In runes mode, reactions to state updates are handled with the [`$derived`]($derived) and [`$effect`]($effect) runes.
 
 In legacy mode, any top-level statement (i.e. not inside a block or a function) can be made reactive by prefixing it with a `$:` [label](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/label). These statements run after other code in the `<script>` and before the component markup is rendered, then whenever the values that they depend on change.
@@ -99,3 +102,4 @@ title = title;
 previous next
 
 [Reactive let/var declarations](/docs/svelte/legacy-let) [export let](/docs/svelte/legacy-export-let)
+

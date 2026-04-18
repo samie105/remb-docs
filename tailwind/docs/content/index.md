@@ -9,15 +9,9 @@ last_crawled_at: "2026-04-18T17:00:22.202Z"
 content_hash: "5a2a14a5e5c17b8e5c189f3f60b35e382d305422332baf0dafa4b4eea9936daf"
 menu_path: ["content"]
 section_path: []
+nav_prev: {"path": "tailwind/docs/hyphens/index.md", "title": "hyphens"}
+nav_next: {"path": "tailwind/docs/background-attachment/index.md", "title": "background-attachment"}
 ---
-[](/)
-
-[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
-
-1.  Typography
-2.  content
-
-Typography
 
 # content
 
@@ -114,3 +108,4 @@ Short, tactical video lessons from the creator of Tailwind CSS, delivered direct
 [Get the free course](/build-uis-that-dont-suck)
 
 Copyright © 2026 Tailwind Labs Inc.·[Trademark Policy](/brand)
+

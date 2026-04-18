@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:44:04.755Z"
 content_hash: "dfae88183de892ffb55870cd567ab09a49770c3ca82cfb4da5869374e0807c2a"
 menu_path: ["worker_threads - Node documentation"]
 section_path: []
+nav_prev: {"path": "deno/deno/api/node/wasi/index.md", "title": "wasi - Node documentation"}
+nav_next: {"path": "deno/deno/api/node/vm/index.md", "title": "vm - Node documentation"}
 ---
+
 ### Usage in Deno
 
 ```typescript
@@ -280,3 +283,4 @@ v
 [workerData](.././worker_threads/~/workerData "workerData")
 
 No documentation available
+

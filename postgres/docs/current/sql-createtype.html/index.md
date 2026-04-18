@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:33:22.298Z"
 content_hash: "3c2742f0c9014c155fcbc6fba378e92d10a696c1c4e2543b0c5cf278e7c4d4e2"
 menu_path: ["PostgreSQL: Documentation: 18: CREATE TYPE"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/sql-droptsparser.html/index.md", "title": "PostgreSQL: Documentation: 18: DROP TEXT SEARCH PARSER"}
+nav_next: {"path": "postgres/docs/current/queries-select-lists.html/index.md", "title": "PostgreSQL: Documentation: 18: 7.3.\u00a0Select Lists"}
 ---
+
 `CREATE TYPE` registers a new data type for use in the current database. The user who defines a type becomes its owner.
 
 If a schema name is given then the type is created in the specified schema. Otherwise it is created in the current schema. The type name must be distinct from the name of any existing type or domain in the same schema. (Because tables have associated data types, the type name must also be distinct from the name of any existing table in the same schema.)
@@ -87,3 +90,4 @@ You might reasonably ask why there is an `ELEMENT` option, if the system makes t
 Specifying the `SUBSCRIPT` option allows a data type to be subscripted, even though the system does not otherwise regard it as an array type. The behavior just described for fixed-length arrays is actually implemented by the `SUBSCRIPT` handler function `raw_array_subscript_handler`, which is used automatically if you specify `ELEMENT` for a fixed-length type without also writing `SUBSCRIPT`.
 
 When specifying a custom `SUBSCRIPT` function, it is not necessary to specify `ELEMENT` unless the `SUBSCRIPT` handler function needs to consult `typelem` to find out what to return. Be aware that specifying `ELEMENT` causes the system to assume that the new type contains, or is somehow physically dependent on, the element type; thus for example changing properties of the element type won't be allowed if there are any columns of the dependent type.
+

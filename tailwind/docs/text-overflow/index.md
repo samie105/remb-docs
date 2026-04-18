@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:59:05.221Z"
 content_hash: "077ec91ba9916fb8c52b32c01d6adbcd9b0811014b2fcd2f55320750af6487c3"
 menu_path: ["text-overflow"]
 section_path: []
+nav_prev: {"path": "tailwind/docs/text-transform/index.md", "title": "text-transform"}
+nav_next: {"path": "tailwind/docs/text-wrap/index.md", "title": "text-wrap"}
 ---
+
 Utilities for controlling how the text of an element overflows.
 
 Class
@@ -70,4 +73,5 @@ Prefix a `text-overflow` utility with a breakpoint variant like `md:` to only ap
 <p class="text-ellipsis md:text-clip ...">  Lorem ipsum dolor sit amet...</p>
 ```
 
-Learn more about using variants in the [variants documentation](https://tailwindcss.com/docs/hover-focus-and-other-states).
+Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).
+

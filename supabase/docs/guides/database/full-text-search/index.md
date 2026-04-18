@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:40:50.598Z"
 content_hash: "0cbd5cfb739a43d74689ba09c7d83c0358dc18167bfffc38ef404b8fe9725919"
 menu_path: ["Database","Database","Working with your database (intermediate)","Working with your database (intermediate)","Using Full Text Search","Using Full Text Search"]
 section_path: ["Database","Database","Working with your database (intermediate)","Working with your database (intermediate)","Using Full Text Search","Using Full Text Search"]
+nav_prev: {"path": "supabase/docs/guides/database/extensions/index.md", "title": "Postgres Extensions Overview"}
+nav_next: {"path": "supabase/docs/guides/database/import-data/index.md", "title": "Import data into Supabase"}
 ---
+
 # 
 
 Full Text Search
@@ -379,3 +382,4 @@ You can also create a function that combines `websearch_to_tsquery()` with ranki
 ## Resources[#](#resources)
 
 *   [Postgres: Text Search Functions and Operators](https://www.postgresql.org/docs/12/functions-textsearch.html)
+

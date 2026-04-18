@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:00:53.953Z"
 content_hash: "bc13229dae436205f3701ee2d8c07fe8000e9790020e8a086015e56b43f3fe8a"
 menu_path: ["Platform","Platform","More","More","More","Single Sign-On","Single Sign-On","SSO with Azure AD","SSO with Azure AD"]
 section_path: ["Platform","Platform","More","More","More","Single Sign-On","Single Sign-On","SSO with Azure AD","SSO with Azure AD"]
+nav_prev: {"path": "supabase/docs/guides/platform/migrating-within-supabase/backup-restore/index.md", "title": "Backup and Restore using the CLI"}
+nav_next: {"path": "supabase/docs/guides/platform/sso/gsuite/index.md", "title": "Set Up SSO with Google Workspace"}
 ---
+
 # 
 
 Set Up SSO with Azure AD
@@ -150,3 +153,4 @@ When you click **Save changes**, your new SSO configuration is applied immediate
 We recommend asking a few users to test signing in via their Azure AD account. They can do this by entering their email address on the [Sign in with SSO](/dashboard/sign-in-sso) page.
 
 If SSO sign-in doesn't work as expected, contact your Supabase support representative for assistance.
+

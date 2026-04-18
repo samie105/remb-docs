@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:50:58.507Z"
 content_hash: "aebc0e629e8e8e87bddba989d1c9c87f63207ba79e618b881536a5ce9fa54a61"
 menu_path: ["Agent Skills"]
 section_path: []
+nav_prev: {"path": "trpc/docs/quickstart/index.md", "title": "Quickstart"}
+nav_next: {"path": "trpc/docs/concepts/index.md", "title": "Concepts"}
 ---
+
 tRPC ships with [TanStack Intent](https://tanstack.com/intent/latest/docs/getting-started/quick-start-consumers) skills to help AI coding agents work with tRPC. When your agent works on a task that matches a skill mapping, the corresponding skill file is automatically loaded into context.
 
 ## Setup[​](#setup "Direct link to Setup")
@@ -57,3 +60,4 @@ This prints a prompt that guides your agent to collect structured feedback about
 ## Learn more[​](#learn-more "Direct link to Learn more")
 
 For full documentation on TanStack Intent, see the [Quick Start for Consumers](https://tanstack.com/intent/latest/docs/getting-started/quick-start-consumers) guide.
+

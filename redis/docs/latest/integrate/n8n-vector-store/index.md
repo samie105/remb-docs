@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:55:33.240Z"
 content_hash: "fb31c965c98f360c5e5a06871b3d117e6c6a9f0832fea080507889c2dc7788f3"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        n8n Redis vector store","→","n8n Redis vector store"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        n8n Redis vector store","→","n8n Redis vector store"]
+nav_prev: {"path": "redis/docs/latest/develop/ai/redisvl/overview/index.md", "title": "Overview"}
+nav_next: {"path": "redis/docs/latest/integrate/redis-data-integration/data-pipelines/pipeline-config/index.md", "title": "Pipeline configuration file"}
 ---
+
 # n8n Redis vector store
 
 Learn how to use Redis as a vector store with n8n workflows
@@ -48,3 +51,4 @@ Redis provides two well-annotated example workflows to demonstrate how you can u
 *   [**Semantic caching**](https://n8n.io/workflows/10887-reduce-llm-costs-with-semantic-caching-using-redis-vector-store-and-huggingface/): This workflow implements a [semantic cache](https://redis.io/blog/what-is-semantic-caching/) that checks for previously answered questions before calling an LLM. This pattern can help reduce LLM costs by answering questions from cached results.
 
 ## On this page
+

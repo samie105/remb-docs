@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:35:17.377Z"
 content_hash: "81db259cab025c16218969df5d4190d43b86043ecb6a5e0260b28dadfcdfe8a6"
 menu_path: ["Sanity & Astro"]
 section_path: []
+nav_prev: {"path": "astro/en/guides/cms/prismic/index.md", "title": "Prismic & Astro"}
+nav_next: {"path": "astro/en/guides/cms/sitecore/index.md", "title": "Sitecore Experience Manager & Astro"}
 ---
+
 # Sanity & Astro
 
 [Sanity](https://www.sanity.io) is a headless content management system that focuses on [structured content](https://www.sanity.io/structured-content-platform).
@@ -214,3 +217,4 @@ section_path: []
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:34:48.149Z"
 content_hash: "80b6008bb0317a4def33c9d35400897d5dc689608f1fe30ed3de804a3d2ee6b3"
 menu_path: ["Kontent.ai & Astro"]
 section_path: []
+nav_prev: {"path": "astro/en/guides/cms/keystonejs/index.md", "title": "KeystoneJS & Astro"}
+nav_next: {"path": "astro/en/guides/cms/microcms/index.md", "title": "microCMS & Astro"}
 ---
+
 # Kontent.ai & Astro
 
 [Kontent.ai](https://www.kontent.ai/) is a headless CMS that allows you to manage content in a structured and modular way, supported by AI capabilities.
@@ -538,3 +541,4 @@ Now, whenever you publish a new blog post in Kontent.ai, a new build will be tri
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

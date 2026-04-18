@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:21:45.002Z"
 content_hash: "83db24c8d2e7189a989df3df2b896d159a836a135a64c103f6a9915058859302"
 menu_path: ["Magical sql operator 🪄"]
 section_path: []
+nav_prev: {"path": "drizzle/docs/joins/index.md", "title": "Joins [SQL]"}
+nav_next: {"path": "drizzle/docs/rqb/index.md", "title": "Drizzle Queries"}
 ---
+
 ## Magical `sql` operator 🪄
 
 When working with an ORM library, there may be cases where you find it challenging to write a specific query using the provided ORM syntax. In such situations, you can resort to using raw queries, which involve constructing a query as a raw string. However, raw queries often lack the benefits of type safety and query parameterization.
@@ -295,11 +298,11 @@ select * from "users" where "users"."id" = $1; --> [ 12 ]
 
 You can use the sql functionality in partial select queries as well. Partial select queries allow you to retrieve specific fields or columns from a table rather than fetching the entire row.
 
-For more detailed information about partial select queries, you can refer to the Core API documentation available at **[Core API docs](https://orm.drizzle.team/docs/select#basic-and-partial-select)**.
+For more detailed information about partial select queries, you can refer to the Core API documentation available at **[Core API docs](drizzle/docs/select/index.md#basic-and-partial-select)**.
 
 **Select different custom fields from table**
 
-Here you can see a usage for **[`sql<T>`](https://orm.drizzle.team/docs/sql#sqlt)**, **[`sql``.mapWith()`](https://orm.drizzle.team/docs/sql#sqlmapwith)**, **[`sql``.as<T>()`](https://orm.drizzle.team/docs/sql#sqlast)**.
+Here you can see a usage for **[`sql<T>`](drizzle/docs/sql/index.md#sqlt)**, **[`sql``.mapWith()`](drizzle/docs/sql/index.md#sqlmapwith)**, **[`sql``.as<T>()`](drizzle/docs/sql/index.md#sqlast)**.
 
 ```
 import { sql } from 'drizzle-orm'
@@ -393,3 +396,4 @@ await db.select({
 ```
 select "project_id", count("users"."id") from users group by "users"."project_id" having count("users"."id") > 300; 
 ```
+

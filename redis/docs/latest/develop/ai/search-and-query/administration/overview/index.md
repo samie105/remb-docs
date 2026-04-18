@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:45:19.846Z"
 content_hash: "6ed782cd61b0a2b655bd545805c8d4375dd971d9cfbc193ec763081c2f54afe3"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        Redis Search","→","Redis Search","→\n      \n        Administration","→","Administration","→\n      \n        Technical overview","→","Technical overview"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        Redis Search","→","Redis Search","→\n      \n        Administration","→","Administration","→\n      \n        Technical overview","→","Technical overview"]
+nav_prev: {"path": "redis/docs/latest/operate/oss_and_stack/reference/internals/internals-sds/index.md", "title": "String internals"}
+nav_next: {"path": "redis/docs/latest/integrate/amazon-bedrock/set-up-redis/index.md", "title": "Set up Redis for Bedrock"}
 ---
+
 # Technical overview
 
 Technical overview of the search and query features of Redis Open Source
@@ -413,3 +416,4 @@ The way to address this challenge is to employ a technique called index partitio
 To facilitate this, a new component called a coordinator is added to the cluster. When searching for documents, the coordinator receives the query and sends it to N partitions, each holding a sub-index of 1/N documents. Since we’re only interested in the top K results of all partitions, each partition returns just its own top K results. Then, the N lists of K elements are merged and the top K elements are extracted from the merged list.
 
 ## On this page
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:35:53.182Z"
 content_hash: "6917b63516fcbba17d3251da781741b8a8eff9689666f8a172d5a78539f64faf"
 menu_path: ["Describing the UI"]
 section_path: []
+nav_prev: {"path": "react/learn/react-compiler/debugging/index.md", "title": "Debugging and Troubleshooting"}
+nav_next: {"path": "react/learn/your-first-component/index.md", "title": "Your First Component"}
 ---
+
 React is a JavaScript library for rendering user interfaces (UI). UI is built from small units like buttons, text, and images. React lets you combine them into reusable, nestable _components._ From web sites to phone apps, everything on the screen can be broken down into components. In this chapter, you’ll learn to create, customize, and conditionally display React components.
 
 ## Your first component[](#your-first-component "Link for Your first component ")
@@ -62,9 +65,9 @@ For each array item, you will need to specify a `key`. Usually, you will want to
 
 ## Ready to learn this topic?
 
-Read **[Rendering Lists](https://react.dev/learn/rendering-lists)** to learn how to render a list of components, and how to choose a key.
+Read **[Rendering Lists](react/learn/rendering-lists/index.md)** to learn how to render a list of components, and how to choose a key.
 
-[Read More](https://react.dev/learn/rendering-lists)
+[Read More](react/learn/rendering-lists/index.md)
 
 * * *
 
@@ -107,14 +110,15 @@ A dependency tree is often used by build tools to bundle all the relevant JavaSc
 
 ## Ready to learn this topic?
 
-Read **[Your UI as a Tree](https://react.dev/learn/understanding-your-ui-as-a-tree)** to learn how to create a render and module dependency trees for a React app and how they’re useful mental models for improving user experience and performance.
+Read **[Your UI as a Tree](react/learn/understanding-your-ui-as-a-tree/index.md)** to learn how to create a render and module dependency trees for a React app and how they’re useful mental models for improving user experience and performance.
 
-[Read More](https://react.dev/learn/understanding-your-ui-as-a-tree)
+[Read More](react/learn/understanding-your-ui-as-a-tree/index.md)
 
 * * *
 
 ## What’s next?[](#whats-next "Link for What’s next? ")
 
-Head over to [Your First Component](https://react.dev/learn/your-first-component) to start reading this chapter page by page!
+Head over to [Your First Component](react/learn/your-first-component/index.md) to start reading this chapter page by page!
 
-Or, if you’re already familiar with these topics, why not read about [Adding Interactivity](https://react.dev/learn/adding-interactivity)?
+Or, if you’re already familiar with these topics, why not read about [Adding Interactivity](react/learn/adding-interactivity/index.md)?
+

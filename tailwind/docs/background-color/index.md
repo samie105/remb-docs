@@ -9,15 +9,9 @@ last_crawled_at: "2026-04-18T17:00:58.767Z"
 content_hash: "0431e0c44c82fc1278b23acf9179815034a4b90df2f5722af5aedf337a6e1725"
 menu_path: ["background-color"]
 section_path: []
+nav_prev: {"path": "tailwind/docs/background-clip/index.md", "title": "background-clip"}
+nav_next: {"path": "tailwind/docs/background-image/index.md", "title": "background-image"}
 ---
-[](/)
-
-[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
-
-1.  Backgrounds
-2.  background-color
-
-Backgrounds
 
 # background-color
 
@@ -175,3 +169,4 @@ Make your ideas look awesome, without relying on a designer.
 ](https://www.refactoringui.com/?ref=sidebar)
 
 Copyright © 2026 Tailwind Labs Inc.·[Trademark Policy](/brand)
+

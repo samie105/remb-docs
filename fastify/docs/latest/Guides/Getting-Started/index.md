@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:36:27.271Z"
 content_hash: "b3a6de46039a143e188cfbc41067f30bac26f40819d7458fdc2e6331eb3d48b5"
 menu_path: ["Getting-Started"]
 section_path: []
+nav_prev: {"path": "fastify/docs/latest/Guides/Recommendations/index.md", "title": "Recommendations"}
+nav_next: {"path": "fastify/docs/latest/Guides/Write-Plugin/index.md", "title": "How to write a good plugin"}
 ---
+
 Version: latest (v5.8.x)
 
 ## Getting Started[​](#getting-started "Direct link to Getting Started")
@@ -258,3 +261,4 @@ npm start
     
     *   [Take your HTTP server to ludicrous speed](https://www.youtube.com/watch?v=5z46jJZNe8k) by [@mcollina](https://github.com/mcollina)
     *   [What if I told you that HTTP can be fast](https://www.webexpo.net/prague2017/talk/what-if-i-told-you-that-http-can-be-fast/) by [@delvedor](https://github.com/delvedor)
+

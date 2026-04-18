@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:50:39.348Z"
 content_hash: "2c698dfab1cf0624dcaa8dc91283cc817369ad937d62e3bc35170044d9c8ed78"
 menu_path: ["PostgreSQL: Documentation: 18: B.3. Date/Time Key Words"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/infoschema-routines.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.45.\u00a0routines"}
+nav_next: {"path": "postgres/docs/current/protocol-logical-replication.html/index.md", "title": "PostgreSQL: Documentation: 18: 54.5.\u00a0Logical Streaming Replication Protocol"}
 ---
+
 [Table B.1](https://www.postgresql.org/docs/current/datetime-keywords.html#DATETIME-MONTH-TABLE "Table B.1. Month Names") shows the tokens that are recognized as names of months.
 
 **Table B.1. Month Names**
@@ -139,3 +142,4 @@ Time is on or after 12:00
 `T`
 
 Next field is time
+

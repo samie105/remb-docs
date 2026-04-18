@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:00:37.932Z"
 content_hash: "75f7f59cef14c4c76fffb7864ca71511b38dc6f795026462cd833cbaa79734fb"
 menu_path: ["Markdown"]
 section_path: []
+nav_prev: {"path": "bun/bun/docs/runtime/jsx/index.md", "title": "JSX"}
+nav_next: {"path": "bun/bun/docs/runtime/module-resolution/index.md", "title": "Module Resolution"}
 ---
+
 Bun includes a fast, built-in Markdown parser written in Zig. It supports GitHub Flavored Markdown (GFM) extensions and provides three APIs:
 
 *   `Bun.markdown.html()` — render Markdown to an HTML string
@@ -677,3 +680,4 @@ const el = Bun.markdown.react("## Hello World", undefined, {
   autolinks: true,
 });
 ```
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:50:47.939Z"
 content_hash: "de9528145e0b816cfe753169bfda424af4cb90e4841e9d4f74b7f2b49c0688d8"
 menu_path: ["Get the process uptime in nanoseconds"]
 section_path: []
+nav_prev: {"path": "bun/bun/docs/guides/process/ctrl-c/index.md", "title": "Listen for CTRL+C"}
+nav_next: {"path": "bun/bun/docs/guides/process/ipc/index.md", "title": "Spawn a child process and communicate using IPC"}
 ---
+
 [Skip to main content](#content-area)
 
 [Bun home page![light logo](https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z_zHyy/logo/logo-with-wordmark-dark.svg?fit=max&auto=format&n=JUhaF6Mf68z_zHyy&q=85&s=3f55cd23822028e40658b192c927f3e4)![dark logo](https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z_zHyy/logo/logo-with-wordmark-light.svg?fit=max&auto=format&n=JUhaF6Mf68z_zHyy&q=85&s=8a0c5928d9dc3631f0d33e17c257e2ec)](/docs)
@@ -59,3 +62,4 @@ Run a Shell Command
 Next
 
 ](/docs/guides/runtime/shell)
+

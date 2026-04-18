@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:49:54.096Z"
 content_hash: "ad99fccc2a5cb35af466a37a8b4a79ae2a55f0f688715109ebada64a2d558f31"
 menu_path: ["PostgreSQL: Documentation: 18: 35.43. routine_sequence_usage"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/plpgsql-statements.html/index.md", "title": "PostgreSQL: Documentation: 18: 41.5.\u00a0Basic Statements"}
+nav_next: {"path": "postgres/docs/current/sql-createprocedure.html/index.md", "title": "PostgreSQL: Documentation: 18: CREATE PROCEDURE"}
 ---
+
 The view `routine_sequence_usage` identifies all sequences that are used by a function or procedure, either in the SQL body or in parameter default expressions. (This only works for unquoted SQL bodies, not quoted bodies or functions in other languages.) A sequence is only included if that sequence is owned by a currently enabled role.
 
 **Table 35.41. `routine_sequence_usage` Columns**
@@ -53,3 +56,4 @@ Name of the schema that contains the sequence that is used by the function
 `sequence_name` `sql_identifier`
 
 Name of the sequence that is used by the function
+

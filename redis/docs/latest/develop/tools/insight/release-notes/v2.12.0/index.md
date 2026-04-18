@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:57:41.909Z"
 content_hash: "25b7edb1998f38aa3e8f6e29226e24fbf0564fc5fe8dda51c93fa8de9c5cb9cd"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Client tools","→","Client tools","→\n      \n        Redis Insight","→","Redis Insight","→\n      \n        Redis Insight release notes","→","Redis Insight release notes","→\n      \n        RedisInsight v2.12.0, October 2022","→","RedisInsight v2.12.0, October 2022"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Client tools","→","Client tools","→\n      \n        Redis Insight","→","Redis Insight","→\n      \n        Redis Insight release notes","→","Redis Insight release notes","→\n      \n        RedisInsight v2.12.0, October 2022","→","RedisInsight v2.12.0, October 2022"]
+nav_prev: {"path": "redis/docs/latest/operate/oss_and_stack/install/archive/install-stack/windows/index.md", "title": "Install Redis Stack on Windows"}
+nav_next: {"path": "redis/docs/latest/operate/kubernetes/release-notes/7-22-0-releases/7-22-0-11-june2025/index.md", "title": "Redis Enterprise for Kubernetes 7.22.0-11 (June 2025) release notes"}
 ---
+
 # RedisInsight v2.12.0, October 2022
 
 RedisInsight v2.12.0
@@ -38,3 +41,4 @@ This is the General Availability (GA) release of RedisInsight 2.12.
 *   [#1293](https://github.com/RedisInsight/RedisInsight/pull/1293) Fixed Workbench visualizations in Redis Stack
 
 ## On this page
+

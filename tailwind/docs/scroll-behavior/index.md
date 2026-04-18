@@ -9,15 +9,9 @@ last_crawled_at: "2026-04-18T17:16:43.496Z"
 content_hash: "782d2fb85a432a17e642e4e559df06f02c16074c94efefd53d67c6bb6149e753"
 menu_path: ["scroll-behavior"]
 section_path: []
+nav_prev: {"path": "tailwind/docs/resize/index.md", "title": "resize"}
+nav_next: {"path": "tailwind/docs/scroll-margin/index.md", "title": "scroll-margin"}
 ---
-[](/)
-
-[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
-
-1.  Interactivity
-2.  scroll-behavior
-
-Interactivity
 
 # scroll-behavior
 
@@ -77,3 +71,4 @@ Make your ideas look awesome, without relying on a designer.
 ](https://www.refactoringui.com/?ref=sidebar)
 
 Copyright © 2026 Tailwind Labs Inc.·[Trademark Policy](/brand)
+

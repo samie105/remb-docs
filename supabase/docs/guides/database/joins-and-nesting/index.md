@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:41:21.892Z"
 content_hash: "b783f92842c6d10bf39afce84204dbe8e1d052fbf6adee628e48202153c29d22"
 menu_path: ["Database","Database","Working with your database (basics)","Working with your database (basics)","Querying joins and nested tables","Querying joins and nested tables"]
 section_path: ["Database","Database","Working with your database (basics)","Working with your database (basics)","Querying joins and nested tables","Querying joins and nested tables"]
+nav_prev: {"path": "supabase/docs/guides/database/functions/index.md", "title": "Database Functions"}
+nav_next: {"path": "supabase/docs/guides/database/metabase/index.md", "title": "Connecting to Metabase"}
 ---
+
 # 
 
 Querying Joins and Nested tables
@@ -250,3 +253,4 @@ To fetch all the `shifts` with `scan_id_start` and `scan_id_end` related to a sp
 ```
 1const { data, error } = await supabase.from('shifts').select(2  `3    *,4    start_scan:scans!scan_id_start (5      id,6      user_id,7      badge_scan_time8    ),9   end_scan:scans!scan_id_end (10     id,11     user_id,12     badge_scan_time13    )14  `15)
 ```
+

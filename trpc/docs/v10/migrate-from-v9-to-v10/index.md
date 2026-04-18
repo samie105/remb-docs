@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:36:44.984Z"
 content_hash: "c778915fc909e06a5a0e0fae4eb59bacfdc9552351394d0682d63e52ab711262"
 menu_path: ["Migrate from v9 to v10"]
 section_path: []
+nav_prev: {"path": "trpc/docs/v10/landing-intro/Step2/index.md", "title": "Step2"}
+nav_next: {"path": "trpc/docs/v10/rpc/index.md", "title": "HTTP RPC Specification"}
 ---
+
 Welcome to tRPC v10! We're excited to bring you a new major version to continue the journey towards perfect end-to-end type safety with excellent DX.
 
 Under the hood of version 10, we are unlocking performance improvements, bringing you quality of life enhancements, and creating room for us to build new features in the future.
@@ -170,7 +173,7 @@ ts
 
 ### Subscriptions[​](#subscriptions "Direct link to Subscriptions")
 
-We have changed the API of Subscriptions where subscriptions need to return an `observable`\-instance. See [subscriptions docs](https://trpc.io/docs/v10/subscriptions).
+We have changed the API of Subscriptions where subscriptions need to return an `observable`\-instance. See [subscriptions docs](trpc/docs/v10/subscriptions/index.md).
 
 > 🚧 Feel free to contribute to improve this section
 
@@ -180,7 +183,7 @@ See [HTTP-specific options moved from `TRPCClient` to links](#http-specific-opti
 
 ### Custom Links[​](#custom-links "Direct link to Custom Links")
 
-In v10, the Links architecture has been completely revamped. Therefore, custom links made for v9 will not work for v10 or while on interop. If you want more information about how to create a custom link for v10, checkout [the Links documentation](https://trpc.io/docs/client/links#creating-a-custom-link).
+In v10, the Links architecture has been completely revamped. Therefore, custom links made for v9 will not work for v10 or while on interop. If you want more information about how to create a custom link for v10, checkout [the Links documentation](trpc/docs/client/links/index.md#creating-a-custom-link).
 
 ## Client Package Changes[​](#client-package-changes "Direct link to Client Package Changes")
 
@@ -257,7 +260,7 @@ note
 
 If you only use the tRPC provided APIs in your app you will have no problems in migrating 👍 However if you have been using the tanstack query client directly to do things like update query data for multiple tRPC generated queries using [`queryClient.setQueriesData`](https://tanstack.com/query/v4/docs/reference/QueryClient#queryclientsetqueriesdata) you may need to take note!
 
-To allow us to make room for some more advanced features like [invalidation across whole routers](https://trpc.io/docs/client/react/useUtils#invalidating-across-whole-routers), we needed to change how we use tanstack query keys under the hood.
+To allow us to make room for some more advanced features like [invalidation across whole routers](trpc/docs/client/react/useUtils/index.md#invalidating-across-whole-routers), we needed to change how we use tanstack query keys under the hood.
 
 We have changed the query keys we use from using a `.` joined string for the procedure path to a sub array of elements. We have also added a distinction between `query`'s and `infinite` queries when they are placed in the cache. We have also moved both this query `type` and the input into an object with named properties.
 
@@ -306,7 +309,7 @@ tsx
 
 #### HTTP-specific options moved from `TRPCClient` to links[​](#http-specific-options-moved-from-trpcclient-to-links "Direct link to http-specific-options-moved-from-trpcclient-to-links")
 
-Previously, HTTP options (like headers) were placed straight onto your `createTRPCClient()`. However, since tRPC is technically not tied to HTTP itself, we've moved these from the `TRPCClient` to [`httpLink`](https://trpc.io/docs/v10/client/links/httpLink) and [`httpBatchLink`](https://trpc.io/docs/v10/client/links/httpBatchLink).
+Previously, HTTP options (like headers) were placed straight onto your `createTRPCClient()`. However, since tRPC is technically not tied to HTTP itself, we've moved these from the `TRPCClient` to [`httpLink`](trpc/docs/v10/client/links/httpLink/index.md) and [`httpBatchLink`](trpc/docs/v10/client/links/httpBatchLink/index.md).
 
 ts
 
@@ -384,7 +387,7 @@ diff
 
 ### `queryClient` is no longer exposed through tRPC context[​](#queryclient-is-no-longer-exposed-through-trpc-context "Direct link to queryclient-is-no-longer-exposed-through-trpc-context")
 
-tRPC is no longer exposing the `queryClient` instance through `trpc.useContext()`. If you need to use some methods from `queryClient`, check if `trpc.useContext()` wraps them [here](https://trpc.io/docs/client/react/useUtils#helpers). If tRPC doesn't wrap the respective method yet, you can import the `queryClient` from `@tanstack/react-query` and use it that way:
+tRPC is no longer exposing the `queryClient` instance through `trpc.useContext()`. If you need to use some methods from `queryClient`, check if `trpc.useContext()` wraps them [here](trpc/docs/client/react/useUtils/index.md#helpers). If tRPC doesn't wrap the respective method yet, you can import the `queryClient` from `@tanstack/react-query` and use it that way:
 
 tsx
 
@@ -400,4 +403,5 @@ tsx
 
 ### Migrate custom error formatters[​](#migrate-custom-error-formatters "Direct link to Migrate custom error formatters")
 
-You will need to move the contents of your `formatError()` into your root `t` router. See the [Error Formatting docs](https://trpc.io/docs/server/error-formatting) for more.
+You will need to move the contents of your `formatError()` into your root `t` router. See the [Error Formatting docs](trpc/docs/server/error-formatting/index.md) for more.
+

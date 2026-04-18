@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:02:49.835Z"
 content_hash: "0905c2c3a60bb3270c31817893e402a75e5666e85d084aee25daf42248aa5a39"
 menu_path: ["@std/html"]
 section_path: []
+nav_prev: {"path": "deno/deno/runtime/reference/std/fs/index.md", "title": "@std/fs"}
+nav_next: {"path": "deno/deno/runtime/reference/std/http/index.md", "title": "@std/http"}
 ---
+
 On this page
 
 *   [Overview](#overview)
@@ -36,3 +39,4 @@ deno add jsr:@std/html
 ```
 
 [See all symbols in @std/html on](https://jsr.io/@std/html/doc)
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:41:24.337Z"
 content_hash: "0efd911ffd4e600f0f1147918eb7445f50624e3d226b9db47f7e804833baff18"
 menu_path: ["PostgreSQL: Documentation: 18: Chapter 68. System Catalog Declarations and Initial Contents"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/indextypes.html/index.md", "title": "PostgreSQL: Documentation: 18: Chapter\u00a065.\u00a0Built-in Index Access Methods"}
+nav_next: {"path": "postgres/docs/current/datetime-appendix.html/index.md", "title": "PostgreSQL: Documentation: 18: Appendix\u00a0B.\u00a0Date/Time Support"}
 ---
+
 PostgreSQL uses many different system catalogs to keep track of the existence and properties of database objects, such as tables and functions. Physically there is no difference between a system catalog and a plain user table, but the backend C code knows the structure and properties of each catalog, and can manipulate it directly at a low level. Thus, for example, it is inadvisable to attempt to alter the structure of a catalog on-the-fly; that would break assumptions built into the C code about how rows of the catalog are laid out. But the structure of the catalogs can change between major versions.
 
 The structures of the catalogs are declared in specially formatted C header files in the `src/include/catalog/` directory of the source tree. For each catalog there is a header file named after the catalog (e.g., `pg_class.h` for `pg_class`), which defines the set of columns the catalog has, as well as some other basic properties such as its OID.
@@ -21,3 +24,4 @@ To create the catalog files and load this initial data into them, a backend runn
 `genbki.pl` also produces a derived header file for each catalog, for example `pg_class_d.h` for the `pg_class` catalog. This file contains automatically-generated macro definitions, and may contain other macros, enum declarations, and so on that can be useful for client C code that reads a particular catalog.
 
 Most PostgreSQL developers don't need to be directly concerned with the BKI file, but almost any nontrivial feature addition in the backend will require modifying the catalog header files and/or initial data files. The rest of this chapter gives some information about that, and for completeness describes the BKI file format.
+

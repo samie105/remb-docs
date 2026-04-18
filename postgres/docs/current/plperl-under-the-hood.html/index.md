@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:50:05.959Z"
 content_hash: "22dbbe96f467ffc86632e3fb57342dbb04118484926e9fd1ea6e8b84e6248ed6"
 menu_path: ["PostgreSQL: Documentation: 18: 43.8. PL/Perl Under the Hood"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/sql-vacuum.html/index.md", "title": "PostgreSQL: Documentation: 18: VACUUM"}
+nav_next: {"path": "postgres/docs/current/gssapi-auth.html/index.md", "title": "PostgreSQL: Documentation: 18: 20.6.\u00a0GSSAPI Authentication"}
 ---
+
 Development Versions: [devel](https://www.postgresql.org/docs/devel/plperl-under-the-hood.html "PostgreSQL devel - 43.8. PL/Perl Under the Hood")
 
 ### 43.8.1. Configuration [#](#PLPERL-CONFIG)
@@ -29,7 +32,7 @@ Any modules loaded by `plperl.on_init`, either directly or indirectly, will be a
 
 DO 'elog(WARNING, join ", ", sort keys %INC)' LANGUAGE plperl;
 
-Initialization will happen in the postmaster if the `plperl` library is included in [shared\_preload\_libraries](https://www.postgresql.org/docs/current/runtime-config-client.html#GUC-SHARED-PRELOAD-LIBRARIES), in which case extra consideration should be given to the risk of destabilizing the postmaster. The principal reason for making use of this feature is that Perl modules loaded by `plperl.on_init` need be loaded only at postmaster start, and will be instantly available without loading overhead in individual database sessions. However, keep in mind that the overhead is avoided only for the first Perl interpreter used by a database session — either PL/PerlU, or PL/Perl for the first SQL role that calls a PL/Perl function. Any additional Perl interpreters created in a database session will have to execute `plperl.on_init` afresh. Also, on Windows there will be no savings whatsoever from preloading, since the Perl interpreter created in the postmaster process does not propagate to child processes.
+Initialization will happen in the postmaster if the `plperl` library is included in [shared\_preload\_libraries](postgres/docs/current/runtime-config-client.html/index.md#GUC-SHARED-PRELOAD-LIBRARIES), in which case extra consideration should be given to the risk of destabilizing the postmaster. The principal reason for making use of this feature is that Perl modules loaded by `plperl.on_init` need be loaded only at postmaster start, and will be instantly available without loading overhead in individual database sessions. However, keep in mind that the overhead is avoided only for the first Perl interpreter used by a database session — either PL/PerlU, or PL/Perl for the first SQL role that calls a PL/Perl function. Any additional Perl interpreters created in a database session will have to execute `plperl.on_init` afresh. Also, on Windows there will be no savings whatsoever from preloading, since the Perl interpreter created in the postmaster process does not propagate to child processes.
 
 This parameter can only be set in the `postgresql.conf` file or on the server command line.
 
@@ -59,3 +62,4 @@ The following features are currently missing from PL/Perl, but they would make w
     A similar problem occurs if a set-returning function passes a large set of rows back to PostgreSQL via `return`. You can avoid this problem too by instead using `return_next` for each row returned, as shown previously.
     
 *   When a session ends normally, not due to a fatal error, any `END` blocks that have been defined are executed. Currently no other actions are performed. Specifically, file handles are not automatically flushed and objects are not automatically destroyed.
+

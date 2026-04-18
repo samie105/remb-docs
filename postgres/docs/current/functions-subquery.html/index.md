@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:53:18.611Z"
 content_hash: "1993926bbf937cc77b2fbe5c6a1e873e5d98e7efdcf76d22a40db481bb4e2ee9"
 menu_path: ["PostgreSQL: Documentation: 18: 9.24. Subquery Expressions"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/uuid-ossp.html/index.md", "title": "PostgreSQL: Documentation: 18: F.49.\u00a0uuid-ossp \u2014 a UUID generator"}
+nav_next: {"path": "postgres/docs/current/runtime-config-compatible.html/index.md", "title": "PostgreSQL: Documentation: 18: 19.13.\u00a0Version and Platform Compatibility"}
 ---
+
 This section describes the SQL\-compliant subquery expressions available in PostgreSQL. All of the expression forms documented in this section return Boolean (true/false) results.
 
 ### 9.24.1. `EXISTS` [#](#FUNCTIONS-SUBQUERY-EXISTS)
@@ -105,3 +108,4 @@ _`row_constructor`_ _`operator`_ (_`subquery`_)
 The left-hand side is a row constructor, as described in [Section 4.2.13](https://www.postgresql.org/docs/current/sql-expressions.html#SQL-SYNTAX-ROW-CONSTRUCTORS "4.2.13. Row Constructors"). The right-hand side is a parenthesized subquery, which must return exactly as many columns as there are expressions in the left-hand row. Furthermore, the subquery cannot return more than one row. (If it returns zero rows, the result is taken to be null.) The left-hand side is evaluated and compared row-wise to the single subquery result row.
 
 See [Section 9.25.5](https://www.postgresql.org/docs/current/functions-comparisons.html#ROW-WISE-COMPARISON "9.25.5. Row Constructor Comparison") for details about the meaning of a row constructor comparison.
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:38:50.889Z"
 content_hash: "a9a07e86d65c49413157c9ba4e8264c56bc8b850a8fc4acfc22c2611caaf66ae"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis reference","→","Redis reference","→\n      \n        Redis modules API","→","Redis modules API","→\n      \n        Modules API reference","→","Modules API reference"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis reference","→","Redis reference","→\n      \n        Redis modules API","→","Redis modules API","→\n      \n        Modules API reference","→","Modules API reference"]
+nav_prev: {"path": "redis/docs/latest/develop/ai/search-and-query/administration/configuration/index.md", "title": "Configuration parameters"}
+nav_next: {"path": "redis/docs/latest/develop/clients/hiredis/connect/index.md", "title": "Connect"}
 ---
+
 # Modules API reference
 
 Reference for the Redis Modules API
@@ -162,7 +165,7 @@ The function returns NULL if `bytes` is 0.
 
 These functions are used to implement custom Redis commands.
 
-For examples, see [https://redis.io/docs/latest/develop/reference/modules/](https://redis.io/docs/latest/develop/reference/modules/).
+For examples, see [https://redis.io/docs/latest/develop/reference/modules/](redis/docs/latest/develop/reference/modules/index.md).
 
 ### `RedisModule_IsKeysPositionRequest`
 
@@ -291,7 +294,7 @@ The set of flags 'strflags' specify the behavior of the command, and should be p
 *   **"deny-script"**: Don't allow this command in Lua scripts.
 *   **"allow-loading"**: Allow this command while the server is loading data. Only commands not interacting with the data set should be allowed to run in this mode. If not sure don't use this flag.
 *   **"pubsub"**: The command publishes things on Pub/Sub channels.
-*   **"random"**: The command may have different outputs even starting from the same input arguments and key values. Starting from Redis 7.0 this flag has been deprecated. Declaring a command as "random" can be done using command tips, see [https://redis.io/docs/latest/develop/reference/command-tips/](https://redis.io/docs/latest/develop/reference/command-tips/).
+*   **"random"**: The command may have different outputs even starting from the same input arguments and key values. Starting from Redis 7.0 this flag has been deprecated. Declaring a command as "random" can be done using command tips, see [https://redis.io/docs/latest/develop/reference/command-tips/](redis/docs/latest/develop/reference/command-tips/index.md).
 *   **"allow-stale"**: The command is allowed to run on slaves that don't serve stale data. Don't use if you don't know what this means.
 *   **"no-monitor"**: Don't propagate the command on monitor. Use this if the command has sensitive data among the arguments.
 *   **"no-slowlog"**: Don't log this command in the slowlog. Use this if the command has sensitive data among the arguments.
@@ -460,7 +463,7 @@ All fields except `version` are optional. Explanation of the fields:
     
     `since` is a version string and `changes` is a string describing the changes. The array is terminated by a zeroed entry, i.e. an entry with both strings set to NULL.
     
-*   `tips`: A string of space-separated tips regarding this command, meant for clients and proxies. See [https://redis.io/docs/latest/develop/reference/command-tips/](https://redis.io/docs/latest/develop/reference/command-tips/).
+*   `tips`: A string of space-separated tips regarding this command, meant for clients and proxies. See [https://redis.io/docs/latest/develop/reference/command-tips/](redis/docs/latest/develop/reference/command-tips/index.md).
     
 *   `arity`: Number of arguments, including the command name itself. A positive number specifies an exact number of arguments and a negative number specifies a minimum number of arguments, so use -N to say >= N. Redis validates a call before passing it to a module, so this can replace an arity check inside the module command implementation. A value of 0 (or an omitted arity field) is equivalent to -2 if the command has sub commands and -1 otherwise.
     
@@ -3281,7 +3284,7 @@ Example code fragment:
  }
 ```
 
-This API is documented here: [https://redis.io/docs/latest/develop/reference/modules/](https://redis.io/docs/latest/develop/reference/modules/)
+This API is documented here: [https://redis.io/docs/latest/develop/reference/modules/](redis/docs/latest/develop/reference/modules/index.md)
 
 ### `RedisModule_CallReplyProto`
 
@@ -3309,7 +3312,7 @@ moduleType *RedisModule_CreateDataType(RedisModuleCtx *ctx,
 
 **Available since:** 4.0.0
 
-Register a new data type exported by the module. The parameters are the following. Please for in depth documentation check the modules API documentation, especially [https://redis.io/docs/latest/develop/reference/modules/modules-native-types/](https://redis.io/docs/latest/develop/reference/modules/modules-native-types/).
+Register a new data type exported by the module. The parameters are the following. Please for in depth documentation check the modules API documentation, especially [https://redis.io/docs/latest/develop/reference/modules/modules-native-types/](redis/docs/latest/develop/reference/modules/modules-native-types/index.md).
 
 *   **name**: A 9 characters data type name that MUST be unique in the Redis Modules ecosystem. Be creative... and there will be no collisions. Use the charset A-Z a-z 9-0, plus the two "-\_" characters. A good idea is to use, for example `<typename>-<vendor>`. For example "tree-AntZ" may mean "Tree data structure by @antirez". To use both lower case and upper case letters helps in order to prevent collisions.
     
@@ -3836,7 +3839,7 @@ Allows adding event to the latency monitor to be observed by the LATENCY command
 
 ## Blocking clients from modules
 
-For a guide about blocking commands in modules, see [https://redis.io/docs/latest/develop/reference/modules/modules-blocking-ops/](https://redis.io/docs/latest/develop/reference/modules/modules-blocking-ops/).
+For a guide about blocking commands in modules, see [https://redis.io/docs/latest/develop/reference/modules/modules-blocking-ops/](redis/docs/latest/develop/reference/modules/modules-blocking-ops/index.md).
 
 ### `RedisModule_RegisterAuthCallback`
 
@@ -7433,3 +7436,4 @@ Returns the database id of the key currently being processed. There is no guaran
 *   [`RedisModule__Assert`](#RedisModule__Assert)
 
 ## On this page
+

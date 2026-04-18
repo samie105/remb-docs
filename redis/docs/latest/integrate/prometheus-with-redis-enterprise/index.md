@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:05:13.338Z"
 content_hash: "a6f853ba32c842fc8590299099da0b4c71805c210a741f57734a3013edec0444"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Prometheus and Grafana with Redis Software","→","Prometheus and Grafana with Redis Software"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Prometheus and Grafana with Redis Software","→","Prometheus and Grafana with Redis Software"]
+nav_prev: {"path": "redis/docs/latest/develop/clients/nodejs/prob/index.md", "title": "Probabilistic data types"}
+nav_next: {"path": "redis/docs/latest/develop/ai/search-and-query/query/index.md", "title": "Querying data"}
 ---
+
 # Prometheus and Grafana with Redis Software
 
 Use Prometheus and Grafana to collect and visualize Redis Software metrics.
@@ -197,3 +200,4 @@ Use the following dashboards when connecting to the v2 metrics endpoint (`https:
 *   The [OPS dashboards](https://github.com/redis-field-engineering/redis-enterprise-observability/tree/main/grafana_v2/dashboards/grafana_v9-11/software/ops) are advanced operational dashboards for on-premises deployments.
 
 ## On this page
+

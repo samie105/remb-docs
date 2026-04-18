@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:45:58.036Z"
 content_hash: "efbad8bfd6c6915d9653aaef1a9b2a39176bd0f9123888ddb2ead172aa1a9a14"
 menu_path: ["Deno Style Guide"]
 section_path: []
+nav_prev: {"path": "deno/deno/runtime/contributing/release_schedule/index.md", "title": "Release Schedule"}
+nav_next: {"path": "deno/deno/runtime/contributing/docs/index.md", "title": "Documentation guidelines"}
 ---
+
 On this page
 
 *   [Copyright Headers](#copyright-headers)
@@ -556,3 +559,4 @@ function convertURL(url: URL) {
   return url.href;
 }
 ```
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:41:38.200Z"
 content_hash: "2d4733acf42c97165e2b8dcf56f003b70a7cbc0b5c5922a4aa443cf49257be32"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Install Redis Open Source","→","Install Redis Open Source","→\n      \n        Install Redis Community Edition or Redis Stack","→","Install Redis Community Edition or Redis Stack","→\n      \n        Install Redis","→","Install Redis","→\n      \n        Install Redis on Linux","→","Install Redis on Linux"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Install Redis Open Source","→","Install Redis Open Source","→\n      \n        Install Redis Community Edition or Redis Stack","→","Install Redis Community Edition or Redis Stack","→\n      \n        Install Redis","→","Install Redis","→\n      \n        Install Redis on Linux","→","Install Redis on Linux"]
+nav_prev: {"path": "redis/docs/latest/operate/oss_and_stack/management/optimization/latency/index.md", "title": "Diagnosing latency issues"}
+nav_next: {"path": "redis/docs/latest/operate/oss_and_stack/install/archive/install-stack/linux/index.md", "title": "Install Redis Stack on Linux"}
 ---
+
 # Install Redis on Linux
 
 How to install Redis on Linux
@@ -113,3 +116,4 @@ Once you have a running Redis instance, you may want to:
 *   [Install Redis "properly"](/docs/latest/operate/oss_and_stack/install/archive/install-redis/#install-redis-properly) for production use.
 
 ## On this page
+

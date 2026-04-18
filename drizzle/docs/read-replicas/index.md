@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:18:35.991Z"
 content_hash: "4ccd6891ac6f0aac5a01449fd82e44b6b25b13f2f20442f3fad7983d15e6753e"
 menu_path: ["Read Replicas"]
 section_path: []
+nav_prev: {"path": "drizzle/docs/dynamic-query-building/index.md", "title": "Dynamic query building"}
+nav_next: {"path": "drizzle/docs/custom-types/index.md", "title": "Common way of defining custom types"}
 ---
+
 When your project involves a set of read replica instances, and you require a convenient method for managing SELECT queries from read replicas, as well as performing create, delete, and update operations on the primary instance, you can leverage the `withReplicas()` function within Drizzle
 
 PostgreSQL
@@ -207,3 +210,4 @@ const db = withReplicas(primaryDb, [read1, read2], (replicas) => {
 
 await db.select().from(usersTable)
 ```
+

@@ -9,33 +9,10 @@ last_crawled_at: "2026-04-18T16:54:30.093Z"
 content_hash: "f1f3f43e5949bb7edbbef79724c4ed604dd9f3f2744792aa6136ebfaa497933a"
 menu_path: ["Selectively run tests concurrently with glob patterns"]
 section_path: []
+nav_prev: {"path": "bun/bun/docs/guides/test/bail/index.md", "title": "Bail early with the Bun test runner"}
+nav_next: {"path": "bun/docs/guides/test/coverage/index.md", "title": "Generate code coverage reports with the Bun test runner"}
 ---
-This guide demonstrates how to use the `concurrentTestGlob` option to selectively run tests concurrently based on file naming patterns.
 
-## Project Structure
-
-Project Structure
-
-```
-my-project/
-├── bunfig.toml
-├── tests/
-│   ├── unit/
-│   │   ├── math.test.ts          # Sequential
-│   │   └── utils.test.ts         # Sequential
-│   └── integration/
-│       ├── concurrent-api.test.ts     # Concurrent
-│       └── concurrent-database.test.ts # Concurrent
-```
-
-## Configuration
-
-Configure your `bunfig.toml` to run test files with “concurrent-” prefix concurrently:
-
-bunfig.toml
-
-```
-[test]
 # Run all test files with "concurrent-" prefix concurrently
 concurrentTestGlob = "**/concurrent-*.test.ts"
 ```
@@ -160,3 +137,4 @@ This configuration will run tests concurrently if they match any of these patter
 *   All tests in `integration/` directories
 *   All tests in `e2e/` directories
 *   All tests with `concurrent-` prefix anywhere in the project
+

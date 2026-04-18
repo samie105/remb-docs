@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:18:02.368Z"
 content_hash: "3487e356829e68c954bb4f1372895c1d0b83173193cd856424f2ff29304f56c2"
 menu_path: ["Query performance"]
 section_path: []
+nav_prev: {"path": "drizzle/docs/rqb/index.md", "title": "Drizzle Queries"}
+nav_next: {"path": "drizzle/docs/perf-serverless/index.md", "title": "Drizzle Serverless performance"}
 ---
+
 ## Query performance
 
 When it comes to **Drizzle** — we’re a thin TypeScript layer on top of SQL with almost 0 overhead and to make it actual 0, you can utilise our prepared statements API.
@@ -169,3 +172,4 @@ const p2 = db
 
 await p2.execute({ name: '%an%' }) // SELECT * FROM customers WHERE name ilike '%an%'
 ```
+

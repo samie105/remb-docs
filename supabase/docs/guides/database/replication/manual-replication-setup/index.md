@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:56:57.480Z"
 content_hash: "d8c79034a4ab8553473a57a1f6bc2b063e9111882bc042628cd01db86dcc2a2c"
 menu_path: ["Database","Database","More","More","More","Manual replication","Manual replication","Setting up","Setting up"]
 section_path: ["Database","Database","More","More","More","Manual replication","Manual replication","Setting up","Setting up"]
+nav_prev: {"path": "supabase/docs/guides/database/replication/manual-replication-monitoring/index.md", "title": "Manual Replication Monitoring"}
+nav_next: {"path": "supabase/docs/guides/database/replication/replication-faq/index.md", "title": "Replication FAQ"}
 ---
+
 # 
 
 Manual Replication Setup
@@ -38,3 +41,4 @@ If you are running Postgres 17 or higher, you can create a new user and grant th
 If you are replicating to an external system and using any of the tools below, check their documentation first. Additional information is provided where the setup with Supabase can vary.
 
 Estuary has the following [documentation](https://docs.estuary.dev/reference/Connectors/capture-connectors/PostgreSQL/Supabase/) for setting up Postgres as a source.
+

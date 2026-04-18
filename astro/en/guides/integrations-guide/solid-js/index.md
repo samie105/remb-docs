@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:39:45.075Z"
 content_hash: "03f45dd5db5f031935f375c18823fd20cc5c6248b49d136064836864d6e316b1"
 menu_path: ["@astrojs/\n\t\t\t\t\tsolid-js"]
 section_path: []
+nav_prev: {"path": "astro/en/guides/integrations-guide/react/index.md", "title": "@astrojs/\n\t\t\t\t\treact"}
+nav_next: {"path": "astro/en/guides/integrations-guide/svelte/index.md", "title": "@astrojs/\n\t\t\t\t\tsvelte"}
 ---
+
 # @astrojs/ solid-js
 
 v6.0.1 [GitHub](https://github.com/withastro/astro/tree/main/packages/integrations/solid/) [npm](https://www.npmjs.com/package/@astrojs/solid-js) [Changelog](https://github.com/withastro/astro/tree/main/packages/integrations/solid/CHANGELOG.md)
@@ -224,3 +227,4 @@ Feel free to add additional Suspense boundaries according to your preference.
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:43:44.955Z"
 content_hash: "3565a3f8be2ce9e39af78a6c462dac143d2701a08ce7ffcc57530d3e2fce2d1c"
 menu_path: ["JSX ​"]
 section_path: []
+nav_prev: {"path": "hono/docs/guides/helpers/index.md", "title": "Helpers \u200b"}
+nav_next: {"path": "hono/docs/guides/jsx-dom/index.md", "title": "Client Components \u200b"}
 ---
+
 You can write HTML with JSX syntax with `hono/jsx`.
 
 Although `hono/jsx` works on the client, you will probably use it most often when rendering content on the server side. Here are some things related to JSX that are common to both server and client.
@@ -57,7 +60,7 @@ json
 
 INFO
 
-If you are coming straight from the [Quick Start](https://hono.dev/docs/#quick-start), the main file has a `.ts` extension - you need to change it to `.tsx` - otherwise you will not be able to run the application at all. You should additionally modify the `package.json` (or `deno.json` if you are using Deno) to reflect that change (e.g. instead of having `bun run --hot src/index.ts` in dev script, you should have `bun run --hot src/index.tsx`).
+If you are coming straight from the [Quick Start](hono/docs/index.md#quick-start), the main file has a `.ts` extension - you need to change it to `.tsx` - otherwise you will not be able to run the application at all. You should additionally modify the `package.json` (or `deno.json` if you are using Deno) to reflect that change (e.g. instead of having `bun run --hot src/index.ts` in dev script, you should have `bun run --hot src/index.tsx`).
 
 `index.tsx`:
 
@@ -423,7 +426,7 @@ The `scriptNonce` value will be automatically added to any `<script>` tags gener
 
 ## Integration with html Middleware [​](#integration-with-html-middleware)
 
-Combine the JSX and HTML middlewares for powerful templating. For in-depth details, consult the [HTML middleware documentation](https://hono.dev/docs/helpers/html).
+Combine the JSX and HTML middlewares for powerful templating. For in-depth details, consult the [HTML middleware documentation](hono/docs/helpers/html/index.md).
 
 tsx
 
@@ -471,7 +474,7 @@ export default app
 
 ## With JSX Renderer Middleware [​](#with-jsx-renderer-middleware)
 
-The [JSX Renderer Middleware](https://hono.dev/docs/middleware/builtin/jsx-renderer) allows you to create HTML pages more easily with the JSX.
+The [JSX Renderer Middleware](hono/docs/middleware/builtin/jsx-renderer/index.md) allows you to create HTML pages more easily with the JSX.
 
 ## Override type definitions [​](#override-type-definitions)
 
@@ -490,3 +493,4 @@ declare module 'hono/jsx' {
   }
 }
 ```
+

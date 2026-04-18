@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:13:25.628Z"
 content_hash: "27d865f61f51d235ec9aa85bec8920470c682807616c8b0d8b19d61445ae6a01"
 menu_path: ["GPU - Web documentation"]
 section_path: []
+nav_prev: {"path": "deno/deno/api/web/file/index.md", "title": "File - Web documentation"}
+nav_next: {"path": "deno/deno/api/web/io/index.md", "title": "I/O - Web documentation"}
 ---
+
 ### Classes [#](#Classes)
 
 c
@@ -1347,3 +1350,4 @@ T
 [GPUVertexStepMode](./././~/GPUVertexStepMode "GPUVertexStepMode")
 
 No documentation available
+

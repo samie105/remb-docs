@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:37:30.561Z"
 content_hash: "daba77141eb368fd85aa95da49651b0c1c41f832ecf2c47f4c33199a653db703"
 menu_path: ["Deploy your Astro Site to Juno"]
 section_path: []
+nav_prev: {"path": "astro/en/guides/deploy/heroku/index.md", "title": "Deploy your Astro Site to Heroku"}
+nav_next: {"path": "astro/en/guides/deploy/microsoft-azure/index.md", "title": "Deploy your Astro Site to Microsoft Azure"}
 ---
+
 # Deploy your Astro Site to Juno
 
 [Juno](https://juno.build) is an open-source serverless platform for hosting static websites, building web applications, and running serverless functions with the privacy and control of self-hosting.
@@ -259,3 +262,4 @@ npm create juno@latest -- --template astro-starter
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

@@ -9,15 +9,9 @@ last_crawled_at: "2026-04-18T17:14:59.682Z"
 content_hash: "cf74740dfd24a03b2fdde998c465d89734c677c5e272c0e78da510d34fc98568"
 menu_path: ["accent-color"]
 section_path: []
+nav_prev: {"path": "tailwind/docs/translate/index.md", "title": "translate"}
+nav_next: {"path": "tailwind/docs/appearance/index.md", "title": "appearance"}
 ---
-[](/)
-
-[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
-
-1.  Interactivity
-2.  accent-color
-
-Interactivity
 
 # accent-color
 
@@ -177,3 +171,4 @@ Make your ideas look awesome, without relying on a designer.
 ](https://www.refactoringui.com/?ref=sidebar)
 
 Copyright © 2026 Tailwind Labs Inc.·[Trademark Policy](/brand)
+

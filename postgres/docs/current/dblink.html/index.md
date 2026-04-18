@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:48:58.080Z"
 content_hash: "e1455aef7bd7642652f44380288b8eb1123fd80e18e5b8e3dc413c27a93c17c9"
 menu_path: ["PostgreSQL: Documentation: 18: F.11. dblink — connect to other PostgreSQL databases"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/sql-droprole.html/index.md", "title": "PostgreSQL: Documentation: 18: DROP ROLE"}
+nav_next: {"path": "postgres/docs/current/view-pg-user-mappings.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.36.\u00a0pg_user_mappings"}
 ---
+
 February 26, 2026: [PostgreSQL 18.3, 17.9, 16.13, 15.17, and 14.22 Released!](/about/news/postgresql-183-179-1613-1517-and-1422-released-3246/)
 
 [Documentation](/docs/ "Documentation") → [PostgreSQL 18](/docs/18/index.html)
@@ -43,3 +46,4 @@ See also [postgres\_fdw](postgres-fdw.html "F.38. postgres_fdw — access data 
 ## Submit correction
 
 If you see anything in the documentation that is not correct, does not match your experience with the particular feature or requires further clarification, please use [this form](/account/comments/new/18/dblink.html/) to report a documentation issue.
+

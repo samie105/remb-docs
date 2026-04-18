@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:42:01.972Z"
 content_hash: "43ee432bf03d141a564e7c787d29d2ba5ae6ecf2ede17cde23fe6cccbd37bb9f"
 menu_path: ["Mongoose"]
 section_path: []
+nav_prev: {"path": "prisma/docs/orm/more/comparisons/prisma-and-drizzle/index.md", "title": "Drizzle"}
+nav_next: {"path": "prisma/docs/orm/more/comparisons/prisma-and-sequelize/index.md", "title": "Sequelize"}
 ---
+
 Comparisons
 
 Learn how Prisma ORM compares to Mongoose
@@ -205,3 +208,4 @@ await User.deleteMany({ id: { $in: [1, 2, 6, 6, 22, 21, 25] } });
 ```
 
 [Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/more/comparisons/prisma-and-mongoose.mdx)
+

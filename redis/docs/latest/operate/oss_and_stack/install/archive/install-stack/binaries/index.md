@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:02:15.516Z"
 content_hash: "827910a6c39855f6064000267fccfd2f9c08140cca87ae5f17b531b4d201ecc1"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Install Redis Open Source","→","Install Redis Open Source","→\n      \n        Install Redis Community Edition or Redis Stack","→","Install Redis Community Edition or Redis Stack","→\n      \n        Install Redis Stack","→","Install Redis Stack","→\n      \n        Install Redis Stack from binaries","→","Install Redis Stack from binaries"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Install Redis Open Source","→","Install Redis Open Source","→\n      \n        Install Redis Community Edition or Redis Stack","→","Install Redis Community Edition or Redis Stack","→\n      \n        Install Redis Stack","→","Install Redis Stack","→\n      \n        Install Redis Stack from binaries","→","Install Redis Stack from binaries"]
+nav_prev: {"path": "redis/docs/latest/operate/rc/security/access-control/access-management/index.md", "title": "Access management"}
+nav_next: {"path": "redis/docs/latest/develop/reference/clients/index.md", "title": "Redis client handling"}
 ---
+
 # Install Redis Stack from binaries
 
 How to install Redis Stack using tarballs
@@ -55,3 +58,4 @@ redis-stack-server
 ```
 
 ## On this page
+

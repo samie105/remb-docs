@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:48:48.571Z"
 content_hash: "0190f89c2621294a2a90e4e3df93ca14788825b28f6b5c21080d749349382a27"
 menu_path: ["Migrate from v10 to v11"]
 section_path: []
+nav_prev: {"path": "trpc/docs/landing-intro/Step3/index.md", "title": "Step3"}
+nav_next: {"path": "trpc/docs/rpc/index.md", "title": "HTTP RPC Specification"}
 ---
+
 ## Migrating from v10 to v11[​](#migrating-from-v10-to-v11 "Direct link to Migrating from v10 to v11")
 
 tip
@@ -78,11 +81,11 @@ ts
 
 `});`
 
-See the [subscriptions docs](https://trpc.io/docs/server/subscriptions#stopping-from-server) for more information.
+See the [subscriptions docs](trpc/docs/server/subscriptions/index.md#stopping-from-server) for more information.
 
 ### Added support for lazy-loading routers (non-breaking)[​](#added-support-for-lazy-loading-routers-non-breaking "Direct link to Added support for lazy-loading routers (non-breaking)")
 
-See the [lazy-loading routers docs](https://trpc.io/docs/server/merging-routers#lazy-load) for more information.
+See the [lazy-loading routers docs](trpc/docs/server/merging-routers/index.md#lazy-load) for more information.
 
 > As part of this, we've changed the argument of the internal method `callProcedure()` to receive a `{ router: AnyRouter }`\-param instead of a `{ _def: AnyRouter['_def'] }`\-param.
 
@@ -90,13 +93,13 @@ See the [lazy-loading routers docs](https://trpc.io/docs/server/merging-routers#
 
 The standalone adapter now supports a `basePath` option, which will slice the basePath from the beginning of the request path.
 
-See the [standalone adapter docs](https://trpc.io/docs/server/adapters/standalone#custom-basePath) for more information.
+See the [standalone adapter docs](trpc/docs/server/adapters/standalone/index.md#custom-basePath) for more information.
 
 ### Added support for HTTP/2 servers (non-breaking)[​](#added-support-for-http2-servers-non-breaking "Direct link to Added support for HTTP/2 servers (non-breaking)")
 
 We now support HTTP/2 servers, this means that you can now use the `createHTTP2Handler` to create HTTP/2 servers and `createHTTPServer` to create HTTP/1 servers.
 
-See the [standalone adapter docs](https://trpc.io/docs/server/adapters/standalone#http2) for more information.
+See the [standalone adapter docs](trpc/docs/server/adapters/standalone/index.md#http2) for more information.
 
 ### Move `TRPCProcedureOptions` to `@trpc/client` (non-breaking for most)[​](#move-trpcprocedureoptions-to-trpcclient-non-breaking-for-most "Direct link to move-trpcprocedureoptions-to-trpcclient-non-breaking-for-most")
 
@@ -104,7 +107,7 @@ If you previously used `ProcedureOptions` from `@trpc/server`, you now need to u
 
 ### Allow promises to be embedded in nested data (non-breaking)[​](#allow-promises-to-be-embedded-in-nested-data-non-breaking "Direct link to Allow promises to be embedded in nested data (non-breaking)")
 
-We now allow promises to be embedded in nested data when using the [`httpBatchStreamLink`](https://trpc.io/docs/client/links/httpBatchStreamLink), this means that you can now do things like this:
+We now allow promises to be embedded in nested data when using the [`httpBatchStreamLink`](trpc/docs/client/links/httpBatchStreamLink/index.md), this means that you can now do things like this:
 
 ts
 
@@ -198,16 +201,16 @@ ts
 
 We will likely add a default ping interval and timeout configuration in the future, but this is not yet decided. Feedback is welcome in the [🎏-rfc-streaming](https://trpc.io/discord) channel on Discord.
 
-See the [`httpSubscriptionLink` docs](https://trpc.io/docs/client/links/httpSubscriptionLink#timeout) for more details on these features.
+See the [`httpSubscriptionLink` docs](trpc/docs/client/links/httpSubscriptionLink/index.md#timeout) for more details on these features.
 
 ### Introduction of `retryLink` (non-breaking)[​](#introduction-of-retrylink-non-breaking "Direct link to introduction-of-retrylink-non-breaking")
 
-See [retryLink](https://trpc.io/docs/client/links/retryLink) - allows you to retry failed operations
+See [retryLink](trpc/docs/client/links/retryLink/index.md) - allows you to retry failed operations
 
 ### `useSubscription` improvements (non-breaking)[​](#usesubscription-improvements-non-breaking "Direct link to usesubscription-improvements-non-breaking")
 
-*   When subscribing to procedures using the [useSubscription](https://trpc.io/docs/client/react/useSubscription) hook it will now return information about the status of the subscription and the connection.
-*   Ability to have a ponyfill when using [`httpSubscriptionLink`](https://trpc.io/docs/client/links/httpSubscriptionLink)
+*   When subscribing to procedures using the [useSubscription](trpc/docs/client/react/useSubscription/index.md) hook it will now return information about the status of the subscription and the connection.
+*   Ability to have a ponyfill when using [`httpSubscriptionLink`](trpc/docs/client/links/httpSubscriptionLink/index.md)
 
 ### Subscription procedure output type changed to `AsyncGenerator` (non-breaking)[​](#subscription-procedure-output-type-changed-to-asyncgenerator-non-breaking "Direct link to subscription-procedure-output-type-changed-to-asyncgenerator-non-breaking")
 
@@ -217,17 +220,17 @@ Details
 
 This change has been made to ensure the library remains compatible with future updates and allows for the use of the `return` type in subscriptions' `AsyncGenerator`s.
 
-See [subscriptions docs](https://trpc.io/docs/server/subscriptions#output-validation) for more information.
+See [subscriptions docs](trpc/docs/server/subscriptions/index.md#output-validation) for more information.
 
 ### Added support for output validators in subscriptions (non-breaking)[​](#added-support-for-output-validators-in-subscriptions-non-breaking "Direct link to Added support for output validators in subscriptions (non-breaking)")
 
-See [subscriptions docs](https://trpc.io/docs/server/subscriptions#output-validation) for more information.
+See [subscriptions docs](trpc/docs/server/subscriptions/index.md#output-validation) for more information.
 
 ### Deprecation of subscriptions returning `Observable`s (non-breaking)[​](#deprecation-of-subscriptions-returning-observables-non-breaking "Direct link to deprecation-of-subscriptions-returning-observables-non-breaking")
 
-We now support returning async generator function for subscriptions and we previously added a [`httpSubscriptionLink`](https://trpc.io/docs/client/links/httpSubscriptionLink).
+We now support returning async generator function for subscriptions and we previously added a [`httpSubscriptionLink`](trpc/docs/client/links/httpSubscriptionLink/index.md).
 
-To see how to use async generator functions for subscriptions see the [subscriptions docs](https://trpc.io/docs/server/subscriptions).
+To see how to use async generator functions for subscriptions see the [subscriptions docs](trpc/docs/server/subscriptions/index.md).
 
 ### Removal of `AbortControllerEsque`\-ponyfill (rarely breaking)[​](#removal-of-abortcontrolleresque-ponyfill-rarely-breaking "Direct link to removal-of-abortcontrolleresque-ponyfill-rarely-breaking")
 
@@ -237,17 +240,17 @@ We have removed the `AbortControllerEsque`\-ponyfill from tRPC, if you need to s
 
 We now support SSE for subscriptions, this means that you don't need to spin up a WebSocket server to get real-time updates in your application & that the client can automatically reconnect and resume if the connection is lost.
 
-👉 [See more in the `httpSubscriptionLink` docs](https://trpc.io/docs/client/links/httpSubscriptionLink).
+👉 [See more in the `httpSubscriptionLink` docs](trpc/docs/client/links/httpSubscriptionLink/index.md).
 
 ### Support for streaming responses over HTTP (non-breaking)[​](#support-for-streaming-responses-over-http-non-breaking "Direct link to Support for streaming responses over HTTP (non-breaking)")
 
-We now support streaming mutations and queries using the [`httpBatchStreamLink`](https://trpc.io/docs/client/links/httpBatchStreamLink#generators).
+We now support streaming mutations and queries using the [`httpBatchStreamLink`](trpc/docs/client/links/httpBatchStreamLink/index.md#generators).
 
 This means that query and mutation resolvers can either be [`AsyncGenerator`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/AsyncGenerator)s with `yield` or return promises that can be deferred for later and you can use stream responses over HTTP, without using WebSockets.
 
 We want your feedback on this feature, so please try it out and let us know what you think in the [`🎏-rfc-streaming`\-channel on our Discord](https://trpc.io/discord)!
 
-👉 [See more in the `httpBatchStreamLink` docs](https://trpc.io/docs/client/links/httpBatchStreamLink#generators)
+👉 [See more in the `httpBatchStreamLink` docs](trpc/docs/client/links/httpBatchStreamLink/index.md#generators)
 
 ### `resolveHTTPRequest` has been replaced by `resolveRequest` that uses Fetch APIs (rarely breaking)[​](#resolvehttprequest-has-been-replaced-by-resolverequest-that-uses-fetch-apis-rarely-breaking "Direct link to resolvehttprequest-has-been-replaced-by-resolverequest-that-uses-fetch-apis-rarely-breaking")
 
@@ -297,7 +300,7 @@ Closes [#3910](https://github.com/trpc/trpc/issues/3910)
 
 ### Added support for bi-directional infinite queries (non-breaking)[​](#added-support-for-bi-directional-infinite-queries-non-breaking "Direct link to Added support for bi-directional infinite queries (non-breaking)")
 
-See [`useInfiniteQuery()`](https://trpc.io/docs/client/react/useInfiniteQuery)
+See [`useInfiniteQuery()`](trpc/docs/client/react/useInfiniteQuery/index.md)
 
 ### Added `inferProcedureBuilderResolverOptions<T>`\-helper (non-breaking)[​](#added-inferprocedurebuilderresolveroptionst-helper-non-breaking "Direct link to added-inferprocedurebuilderresolveroptionst-helper-non-breaking")
 
@@ -345,11 +348,11 @@ ts
 
 This is to fix [https://github.com/trpc/trpc/issues/5378](https://github.com/trpc/trpc/issues/5378) where `react-dom` was imported regardless if you were using this functionality or not.
 
-See [SSR docs](https://trpc.io/docs/client/nextjs/pages-router/ssr)
+See [SSR docs](trpc/docs/client/nextjs/pages-router/ssr/index.md)
 
 ### Added support for short-hand router definitions (non-breaking)[​](#added-support-for-short-hand-router-definitions-non-breaking "Direct link to Added support for short-hand router definitions (non-breaking)")
 
-See [Routers](https://trpc.io/docs/server/routers#inline-sub-router)
+See [Routers](trpc/docs/server/routers/index.md#inline-sub-router)
 
 ts
 
@@ -381,7 +384,7 @@ Use `inferProcedureInput<TProcedure>` instead & `TRPCProcedureOptions` instead
 
 ### Added `useSuspenseQueries()`[​](#added-usesuspensequeries "Direct link to added-usesuspensequeries")
 
-See [useSuspenseQueries](https://trpc.io/docs/client/react/suspense#usesuspensequeries)
+See [useSuspenseQueries](trpc/docs/client/react/suspense/index.md#usesuspensequeries)
 
 [https://github.com/trpc/trpc/pull/5226](https://github.com/trpc/trpc/pull/5226)
 
@@ -431,3 +434,4 @@ The proxy names were due to v9 using the `AbcXyz` names, these have been removed
 ### `interop`\-mode has been removed (rarely breaking) -[​](#interop-mode-removed "Direct link to interop-mode-removed")
 
 We have removed the `interop`\-mode from tRPC. This was a mode that allowed you to have an easy transition period from v9 to v10. This mode was never meant to be supported long-term and we have now removed it.
+

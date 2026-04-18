@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:38:04.169Z"
 content_hash: "501789a8b74c75da249c83748820fc36526b47fe318e395ebd5413b3a998af41"
 menu_path: ["PostgreSQL: Documentation: 18: 1.3. Creating a Database"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/app-pgresetwal.html/index.md", "title": "PostgreSQL: Documentation: 18: pg_resetwal"}
+nav_next: {"path": "postgres/docs/current/runtime-config-statistics.html/index.md", "title": "PostgreSQL: Documentation: 18: 19.9.\u00a0Run-time Statistics"}
 ---
+
 The first test to see whether you can access the database server is to try to create a database. A running PostgreSQL server can manage many databases. Typically, a separate database is used for each project or for each user.
 
 Possibly, your site administrator has already created a database for your use. In that case you can omit this step and skip ahead to the next section.
@@ -74,3 +77,4 @@ More about `createdb` and `dropdb` can be found in [createdb](https://www.postgr
 * * *
 
 [\[1\]](#id-1.4.3.4.10.4) As an explanation for why this works: PostgreSQL user names are separate from operating system user accounts. When you connect to a database, you can choose what PostgreSQL user name to connect as; if you don't, it will default to the same name as your current operating system account. As it happens, there will always be a PostgreSQL user account that has the same name as the operating system user that started the server, and it also happens that that user always has permission to create databases. Instead of logging in as that user you can also specify the `-U` option everywhere to select a PostgreSQL user name to connect as.
+

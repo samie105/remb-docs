@@ -9,67 +9,10 @@ last_crawled_at: "2026-04-18T16:55:17.962Z"
 content_hash: "f5eb121eae7adad5bcfe6097c7b89468eee4240af4fe4f2410177dfa84f3784c"
 menu_path: ["import, require, and test Svelte components with bun test"]
 section_path: []
+nav_prev: {"path": "bun/bun/docs/guides/test/spy-on/index.md", "title": "Spy on methods in `bun test`"}
+nav_next: {"path": "bun/bun/docs/guides/test/testing-library/index.md", "title": "Using Testing Library with Bun"}
 ---
-Bun’s [Plugin API](https://bun.com/docs/runtime/plugins) lets you add custom loaders to your project. The `test.preload` option in `bunfig.toml` lets you configure your loader to start before your tests run. Firstly, install `@testing-library/svelte`, `svelte`, and `@happy-dom/global-registrator`.
 
-terminal
-
-```
-bun add @testing-library/svelte svelte@4 @happy-dom/global-registrator
-```
-
-Then, save this plugin in your project.
-
-![https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z\_zHyy/icons/typescript.svg?fit=max&auto=format&n=JUhaF6Mf68z\_zHyy&q=85&s=7ac549adaea8d5487d8fbd58cc3ea35b](https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z_zHyy/icons/typescript.svg?fit=max&auto=format&n=JUhaF6Mf68z_zHyy&q=85&s=7ac549adaea8d5487d8fbd58cc3ea35b)svelte-loader.ts
-
-```
-import { plugin } from "bun";
-import { compile } from "svelte/compiler";
-import { readFileSync } from "fs";
-import { beforeEach, afterEach } from "bun:test";
-import { GlobalRegistrator } from "@happy-dom/global-registrator";
-
-beforeEach(async () => {
-  await GlobalRegistrator.register();
-});
-
-afterEach(async () => {
-  await GlobalRegistrator.unregister();
-});
-
-plugin({
-  title: "svelte loader",
-  setup(builder) {
-    builder.onLoad({ filter: /\.svelte(\?[^.]+)?$/ }, ({ path }) => {
-      try {
-        const source = readFileSync(path.substring(0, path.includes("?") ? path.indexOf("?") : path.length), "utf-8");
-
-        const result = compile(source, {
-          filetitle: path,
-          generate: "client",
-          dev: false,
-        });
-
-        return {
-          contents: result.js.code,
-          loader: "js",
-        };
-      } catch (err) {
-        throw new Error(`Failed to compile Svelte component: ${err.message}`);
-      }
-    });
-  },
-});
-```
-
-* * *
-
-Add this to `bunfig.toml` to tell Bun to preload the plugin, so it loads before your tests run.
-
-bunfig.toml
-
-```
-[test]
 # Tell Bun to load this plugin before your tests run
 preload = ["./svelte-loader.ts"]
 
@@ -127,3 +70,4 @@ terminal
 ```
 bun test
 ```
+

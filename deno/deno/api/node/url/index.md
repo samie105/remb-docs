@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:42:50.054Z"
 content_hash: "a0e0ded3aa20b796498a150531b36646bbafbfdd3317b198a17861b36aea434b"
 menu_path: ["url - Node documentation"]
 section_path: []
+nav_prev: {"path": "deno/deno/api/node/tty/index.md", "title": "tty - Node documentation"}
+nav_next: {"path": "deno/deno/api/node/util/index.md", "title": "util - Node documentation"}
 ---
+
 ### Usage in Deno
 
 ```typescript
@@ -223,3 +226,4 @@ I
 No documentation available
 
 *   [query](.././url/~/UrlWithStringQuery#property_query)
+

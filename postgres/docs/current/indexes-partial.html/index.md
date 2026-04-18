@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:44:58.984Z"
 content_hash: "4bea60653cf892f79cbf5ca9bc7a8f5732d504a99be569b694d8992c2f430679"
 menu_path: ["PostgreSQL: Documentation: 18: 11.8. Partial Indexes"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/indexes-expressional.html/index.md", "title": "PostgreSQL: Documentation: 18: 11.7.\u00a0Indexes on Expressions"}
+nav_next: {"path": "postgres/docs/current/sql-createrule.html/index.md", "title": "PostgreSQL: Documentation: 18: CREATE RULE"}
 ---
+
 A _partial index_ is an index built over a subset of a table; the subset is defined by a conditional expression (called the _predicate_ of the partial index). The index contains entries only for those table rows that satisfy the predicate. Partial indexes are a specialized feature, but there are several situations in which they are useful.
 
 One major reason for using a partial index is to avoid indexing common values. Since a query searching for a common value (one that accounts for more than a few percent of all the table rows) will not use the index anyway, there is no point in keeping those rows in the index at all. This reduces the size of the index, which will speed up those queries that do use the index. It will also speed up many table update operations because the index does not need to be updated in all cases. [Example 11.1](https://www.postgresql.org/docs/current/indexes-partial.html#INDEXES-PARTIAL-EX1 "Example 11.1. Setting up a Partial Index to Exclude Common Values") shows a possible application of this idea.
@@ -114,3 +117,4 @@ CREATE INDEX mytable\_cat\_data ON mytable (category, data);
 If your table is large enough that a single index really is a bad idea, you should look into using partitioning instead (see [Section 5.12](https://www.postgresql.org/docs/current/ddl-partitioning.html "5.12. Table Partitioning")). With that mechanism, the system does understand that the tables and indexes are non-overlapping, so far better performance is possible.
 
 More information about partial indexes can be found in [\[ston89b\]](https://www.postgresql.org/docs/current/biblio.html#STON89B), [\[olson93\]](https://www.postgresql.org/docs/current/biblio.html#OLSON93 "Partial indexing in POSTGRES: research project"), and [\[seshadri95\]](https://www.postgresql.org/docs/current/biblio.html#SESHADRI95).
+

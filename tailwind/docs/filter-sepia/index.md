@@ -9,15 +9,9 @@ last_crawled_at: "2026-04-18T17:08:56.202Z"
 content_hash: "a7ed12c7b1e5f247533e32f31d89ccdc7d9b96dbbe5178c6ab42ad635b9f6b1c"
 menu_path: ["filter: sepia()"]
 section_path: []
+nav_prev: {"path": "tailwind/docs/filter-saturate/index.md", "title": "filter: saturate()"}
+nav_next: {"path": "tailwind/docs/backdrop-filter/index.md", "title": "backdrop-filter"}
 ---
-[](/)
-
-[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
-
-1.  Filters
-2.  sepia
-
-Filters
 
 # filter: sepia()
 
@@ -114,3 +108,4 @@ Make your ideas look awesome, without relying on a designer.
 ](https://www.refactoringui.com/?ref=sidebar)
 
 Copyright © 2026 Tailwind Labs Inc.·[Trademark Policy](/brand)
+

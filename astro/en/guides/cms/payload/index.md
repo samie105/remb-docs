@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:35:05.899Z"
 content_hash: "b98d8a2c4bd32e145e94175276be70f93cd4a358eb6fcec381bc92412fbecb80"
 menu_path: ["Payload CMS & Astro"]
 section_path: []
+nav_prev: {"path": "astro/en/guides/cms/pages-cms/index.md", "title": "Pages CMS & Astro"}
+nav_next: {"path": "astro/en/guides/cms/preprcms/index.md", "title": "Prepr CMS & Astro"}
 ---
+
 # Payload CMS & Astro
 
 [PayloadCMS](https://payloadcms.com/) is a headless open-source content management system that can be used to provide content for your Astro project.
@@ -302,3 +305,4 @@ To deploy your site visit our [deployment guide](/en/guides/deploy/) and follow 
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+

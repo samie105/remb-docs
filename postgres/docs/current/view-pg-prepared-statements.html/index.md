@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:41:37.593Z"
 content_hash: "fa71c07b1003187f0187d5ea2440df287c212368cfe4265ea7ab75ad49fea281"
 menu_path: ["PostgreSQL: Documentation: 18: 53.16. pg_prepared_statements"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/infoschema-information-schema-catalog-name.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.3.\u00a0information_schema_catalog_name"}
+nav_next: {"path": "postgres/docs/current/sql-createsequence.html/index.md", "title": "PostgreSQL: Documentation: 18: CREATE SEQUENCE"}
 ---
+
 The `pg_prepared_statements` view displays all the prepared statements that are available in the current session. See [PREPARE](https://www.postgresql.org/docs/current/sql-prepare.html "PREPARE") for more information about prepared statements.
 
 `pg_prepared_statements` contains one row for each prepared statement. Rows are added to the view when a new prepared statement is created and removed when a prepared statement is released (for example, via the [`DEALLOCATE`](https://www.postgresql.org/docs/current/sql-deallocate.html "DEALLOCATE") command).
@@ -53,3 +56,4 @@ Number of times generic plan was chosen
 Number of times custom plan was chosen
 
 The `pg_prepared_statements` view is read-only.
+

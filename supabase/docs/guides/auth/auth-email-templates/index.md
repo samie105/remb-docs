@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:36:42.423Z"
 content_hash: "dcb0ee628597051c9c1dfea2c549e37522dce294359ed269a3f9e345336c4683"
 menu_path: ["Auth","Auth","Configuration","Configuration","Email Templates","Email Templates"]
 section_path: ["Auth","Auth","Configuration","Configuration","Email Templates","Email Templates"]
+nav_prev: {"path": "supabase/docs/guides/auth/auth-captcha/index.md", "title": "Enable CAPTCHA Protection"}
+nav_next: {"path": "supabase/docs/guides/auth/auth-hooks/index.md", "title": "Auth Hooks"}
 ---
+
 # 
 
 Email Templates
@@ -179,3 +182,4 @@ Send a different email to users who signed up via an early access domain (`https
 ```
 1{{ if eq .Data.Domain "https://www.example.com" }}2<h1>Welcome to Our Database Service!</h1>3  <p>Dear Developer,</p>4  <p>Welcome to Billy, the scalable developer platform!</p>5  <p>Best Regards,<br>6Billy Team</p>7{{ else if eq .Data.Domain "https://www.earlyaccess.trial.com" }}8<h1>Welcome to Our Database Service!</h1>9  <p>Dear Developer,</p>10  <p>Welcome Billy, the scalable developer platform!</p>11  <p> As an early access member, you have access to select features like Point To Space Restoration.</p>12  <p>Best Regards,<br>13Billy Team</p>14{{ end }}
 ```
+

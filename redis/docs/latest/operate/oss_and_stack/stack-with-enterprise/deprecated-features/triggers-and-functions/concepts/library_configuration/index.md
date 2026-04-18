@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:07:51.779Z"
 content_hash: "18340d86f69c33f8ee5741160de5fbe365ab65568d3b788bff2ac5e87a3614c9"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Redis Open Source and Redis Software","→","Redis Open Source and Redis Software","→\n      \n        Deprecated Redis Open Source features and modules","→","Deprecated Redis Open Source features and modules","→\n      \n        Triggers and functions","→","Triggers and functions","→\n      \n        Concepts","→","Concepts","→\n      \n        Library configuration","→","Library configuration"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Redis Open Source and Redis Software","→","Redis Open Source and Redis Software","→\n      \n        Deprecated Redis Open Source features and modules","→","Deprecated Redis Open Source features and modules","→\n      \n        Triggers and functions","→","Triggers and functions","→\n      \n        Concepts","→","Concepts","→\n      \n        Library configuration","→","Library configuration"]
+nav_prev: {"path": "redis/docs/latest/develop/clients/lettuce/index.md", "title": "Lettuce guide (Java)"}
+nav_next: {"path": "redis/docs/latest/develop/data-types/json/ram/index.md", "title": "Redis JSON RAM Usage"}
 ---
+
 # Library configuration
 
 How to use configuration in JavaScript functions
@@ -91,3 +94,4 @@ We can see that the last update field name is `last_update`:
 ```
 
 Notice, triggers and functions only provides the library with the JSON configuration. **It's the library's responsibility to verify the correctness of the given configuration**.
+

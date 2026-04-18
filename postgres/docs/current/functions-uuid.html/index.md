@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:47:37.700Z"
 content_hash: "4bb29162aa976be67dbe2abd2b990251d2e80f4e47b9ad4798da9b411de1b064"
 menu_path: ["PostgreSQL: Documentation: 18: 9.14. UUID Functions"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/catalog-pg-operator.html/index.md", "title": "PostgreSQL: Documentation: 18: 52.34.\u00a0pg_operator"}
+nav_next: {"path": "postgres/docs/current/earthdistance.html/index.md", "title": "PostgreSQL: Documentation: 18: F.14.\u00a0earthdistance \u2014 calculate great-circle distances"}
 ---
+
 Development Versions: [devel](https://www.postgresql.org/docs/devel/functions-uuid.html "PostgreSQL devel - 9.14. UUID Functions")
 
 [Table 9.45](https://www.postgresql.org/docs/current/functions-uuid.html#FUNC_UUID_GEN_TABLE "Table 9.45. UUID Generation Functions") shows the PostgreSQL functions that can be used to generate UUIDs.
@@ -49,3 +52,4 @@ The [uuid-ossp](https://www.postgresql.org/docs/current/uuid-ossp.html "F.49. u
 PostgreSQL also provides the usual comparison operators shown in [Table 9.1](https://www.postgresql.org/docs/current/functions-comparison.html#FUNCTIONS-COMPARISON-OP-TABLE "Table 9.1. Comparison Operators") for UUIDs.
 
 See [Section 8.12](https://www.postgresql.org/docs/current/datatype-uuid.html "8.12. UUID Type") for details on the data type `uuid` in PostgreSQL.
+

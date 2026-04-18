@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:46:33.424Z"
 content_hash: "17edcbfcdab595d52909f897a0f224824d4424fb7d8295e94ead39671d1a6ff1"
 menu_path: ["PostgreSQL: Documentation: 18: 5.5. Constraints"]
 section_path: []
+nav_prev: {"path": "postgres/docs/current/external-extensions.html/index.md", "title": "PostgreSQL: Documentation: 18: H.4.\u00a0Extensions"}
+nav_next: {"path": "postgres/docs/current/plpgsql-cursors.html/index.md", "title": "PostgreSQL: Documentation: 18: 41.7.\u00a0Cursors"}
 ---
+
 Data types are a way to limit the kind of data that can be stored in a table. For many applications, however, the constraint they provide is too coarse. For example, a column containing a product price should probably only accept positive values. But there is no standard data type that accepts only positive numbers. Another issue is that you might want to constrain column data with respect to other columns or rows. For example, in a table containing product information, there should be only one row for each product number.
 
 To that end, SQL allows you to define constraints on columns and tables. Constraints give you as much control over the data in your tables as you wish. If a user attempts to store data in a column that would violate a constraint, an error is raised. This applies even if the value came from the default value definition.
@@ -411,3 +414,4 @@ CREATE TABLE circles (
 See also [`CREATE TABLE ... CONSTRAINT ... EXCLUDE`](https://www.postgresql.org/docs/current/sql-createtable.html#SQL-CREATETABLE-EXCLUDE) for details.
 
 Adding an exclusion constraint will automatically create an index of the type specified in the constraint declaration.
+

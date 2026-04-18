@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:59:55.044Z"
 content_hash: "e5f5a9c63d47af61176a372b29f32a11c4f847f625a9c5a68b863de25f12f537"
 menu_path: ["Platform","Platform","More","More","More","Manage your usage","Manage your usage","Disk IOPS","Disk IOPS"]
 section_path: ["Platform","Platform","More","More","More","Manage your usage","Manage your usage","Disk IOPS","Disk IOPS"]
+nav_prev: {"path": "supabase/docs/guides/platform/manage-your-usage/custom-domains/index.md", "title": "Manage Custom Domain usage"}
+nav_next: {"path": "supabase/docs/guides/platform/manage-your-usage/disk-size/index.md", "title": "Manage Disk size usage"}
 ---
+
 # 
 
 Manage Disk IOPS usage
@@ -203,3 +206,4 @@ Compute Credits
 **Total**
 
 **$1,077**
+

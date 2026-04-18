@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:46:17.227Z"
 content_hash: "3f0a3a7a253e7757e9cd738ffb047ab04e02465ebe2107c19d6460d7e156023f"
 menu_path: ["Integrations","Integrations","More","More","More","Supabase OAuth Integration","Supabase OAuth Integration","Overview","Overview"]
 section_path: ["Integrations","Integrations","More","More","More","Supabase OAuth Integration","Supabase OAuth Integration","Overview","Overview"]
+nav_prev: {"path": "supabase/docs/guides/getting-started/mcp/index.md", "title": "Model context protocol (MCP)"}
+nav_next: {"path": "supabase/docs/guides/integrations/supabase-marketplace/index.md", "title": "Supabase Marketplace"}
 ---
+
 # 
 
 Build a Supabase Integration
@@ -138,3 +141,4 @@ To handle multiple, dynamically generated redirect URLs within the same OAuth ap
 ## Current limitations[#](#current-limitations)
 
 Only some features are available until we roll out fine-grained access control. If you need full database access, you will need to prompt the user for their database password.
+

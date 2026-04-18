@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:42:18.886Z"
 content_hash: "f38700d0c729498b8efdf36adbcdb3a09f35d7b76ab0a1316da2583655f38121"
 menu_path: ["Database","Database","Fundamentals","Fundamentals","Securing your data","Securing your data"]
 section_path: ["Database","Database","Fundamentals","Fundamentals","Securing your data","Securing your data"]
+nav_prev: {"path": "supabase/docs/guides/database/replication/index.md", "title": "Database Replication"}
+nav_next: {"path": "supabase/docs/guides/database/supavisor/index.md", "title": "Supavisor"}
 ---
+
 # 
 
 Securing your data
@@ -42,3 +45,4 @@ Supabase and Postgres provide you with multiple ways to manage security, includi
 *   [Hardening the Data API](/docs/guides/api/hardening-data-api)
 *   [Managing Postgres roles](/docs/guides/database/postgres/roles)
 *   [Managing secrets with Vault](/docs/guides/database/vault)
+

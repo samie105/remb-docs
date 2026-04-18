@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:43:06.428Z"
 content_hash: "f969f84fe06f98ba2b753ae21465cb0da4f05272f4c00285390434088469f82d"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Commands","→","Commands","→\n      \n        Redis 8.4 Commands Reference","→","Redis 8.4 Commands Reference"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Commands","→","Commands","→\n      \n        Redis 8.4 Commands Reference","→","Redis 8.4 Commands Reference"]
+nav_prev: {"path": "redis/docs/latest/operate/rs/installing-upgrading/quickstarts/redis-enterprise-software-quickstart/index.md", "title": "Redis Software quickstart"}
+nav_next: {"path": "redis/docs/latest/integrate/google-adk/redis-agent-memory/index.md", "title": "Redis Agent Memory"}
 ---
+
 # Redis 8.4 Commands Reference
 
 Complete list of all Redis commands available in version 8.4, organized by functional group
@@ -4576,3 +4579,4 @@ Generic commands work across all data types.
 **Since:** 7.2.0
 
 ## On this page
+

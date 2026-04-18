@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:51:58.684Z"
 content_hash: "915553f835b877a3f2686759b7217f44737395ae9e16528f4104f85db0b61761"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Commands","→","Commands","→\n      \n        Redis 8.2 Commands Reference","→","Redis 8.2 Commands Reference"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Commands","→","Commands","→\n      \n        Redis 8.2 Commands Reference","→","Redis 8.2 Commands Reference"]
+nav_prev: {"path": "redis/docs/latest/operate/oss_and_stack/reference/internals/rdd/index.md", "title": "Redis design draft #2 (historical)"}
+nav_next: {"path": "redis/docs/latest/develop/ai/search-and-query/best-practices/dev-to-prod-best-practices/index.md", "title": "Move from Development to Production with Redis Search"}
 ---
+
 # Redis 8.2 Commands Reference
 
 Complete list of all Redis commands available in version 8.2, organized by functional group
@@ -4516,3 +4519,4 @@ Generic commands work across all data types.
 **Since:** 7.2.0
 
 ## On this page
+
