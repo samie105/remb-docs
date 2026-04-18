@@ -1,0 +1,126 @@
+---
+title: "list-style-type"
+source: "https://tailwindcss.com/docs/list-style-type"
+canonical_url: "https://tailwindcss.com/docs/list-style-type"
+docset: "tailwind"
+kind: "framework"
+adapter: "generic"
+last_crawled_at: "2026-04-18T16:57:12.095Z"
+content_hash: "6a77667e26576ca24836ae9a11bc003d92af2e5d8ee2b51067aa81edba3377d8"
+menu_path: ["list-style-type"]
+section_path: []
+---
+[](/)
+
+[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
+
+1.  Typography
+2.  list-style-type
+
+Typography
+
+# list-style-type
+
+Utilities for controlling the marker style of a list.
+
+Class
+
+Styles
+
+`list-disc`
+
+`list-style-type: disc;`
+
+`list-decimal`
+
+`list-style-type: decimal;`
+
+`list-none`
+
+`list-style-type: none;`
+
+`list-(<custom-property>)`
+
+`list-style-type: var(<custom-property>);`
+
+`list-[<value>]`
+
+`list-style-type: <value>;`
+
+## [Examples](#examples)
+
+### [Basic example](#basic-example)
+
+Use utilities like `list-disc` and `list-decimal` to control the style of the markers in a list:
+
+list-disc
+
+*   Now this is a story all about how, my life got flipped-turned upside down
+*   And I'd like to take a minute just sit right there
+*   I'll tell you how I became the prince of a town called Bel-Air
+
+list-decimal
+
+*   Now this is a story all about how, my life got flipped-turned upside down
+*   And I'd like to take a minute just sit right there
+*   I'll tell you how I became the prince of a town called Bel-Air
+
+list-none
+
+*   Now this is a story all about how, my life got flipped-turned upside down
+*   And I'd like to take a minute just sit right there
+*   I'll tell you how I became the prince of a town called Bel-Air
+
+```
+<ul class="list-disc">  <li>Now this is a story all about how, my life got flipped-turned upside down</li>  <!-- ... --></ul><ol class="list-decimal">  <li>Now this is a story all about how, my life got flipped-turned upside down</li>  <!-- ... --></ol><ul class="list-none">  <li>Now this is a story all about how, my life got flipped-turned upside down</li>  <!-- ... --></ul>
+```
+
+### [Using a custom value](#using-a-custom-value)
+
+Use the `list-[<value>]` syntax to set the marker based on a completely custom value:
+
+```
+<ol class="list-[upper-roman] ...">  <!-- ... --></ol>
+```
+
+For CSS variables, you can also use the `list-(<custom-property>)` syntax:
+
+```
+<ol class="list-(--my-marker) ...">  <!-- ... --></ol>
+```
+
+This is just a shorthand for `list-[var(<custom-property>)]` that adds the `var()` function for you automatically.
+
+### [Responsive design](#responsive-design)
+
+Prefix a `list-style-type` utility with a breakpoint variant like `md:` to only apply the utility at medium screen sizes and above:
+
+```
+<ul class="list-none md:list-disc ...">  <!-- ... --></ul>
+```
+
+Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
+
+### On this page
+
+*   [Quick reference](#quick-reference)
+*   [Examples](#examples)
+    *   [Basic example](#basic-example)
+    *   [Using a custom value](#using-a-custom-value)
+    *   [Responsive design](#responsive-design)
+
+[
+
+![Refactoring UI](/_next/static/media/book-promo.3012c0f6.png)
+
+From the creators of Tailwind CSS
+
+Make your ideas look awesome, without relying on a designer.
+
+> “This is the survival kit I wish I had when I started building apps.”
+> 
+> Derrick Reimer, SavvyCal
+
+](https://www.refactoringui.com/?ref=sidebar)
+
+Copyright © 2026 Tailwind Labs Inc.·[Trademark Policy](/brand)

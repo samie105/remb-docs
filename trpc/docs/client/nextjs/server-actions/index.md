@@ -1,0 +1,246 @@
+---
+title: "Server Actions"
+source: "https://trpc.io/docs/client/nextjs/server-actions"
+canonical_url: "https://trpc.io/docs/client/nextjs/server-actions"
+docset: "trpc"
+kind: "library"
+adapter: "generic"
+last_crawled_at: "2026-04-18T16:46:16.920Z"
+content_hash: "5180cf1b98f5f789f959a20e11b8500b26fa14f66999640f1217767cdb41f093"
+menu_path: ["Server Actions"]
+section_path: []
+---
+Server Actions allow you to define functions on the server and call them directly from client components, with the network layer abstracted away by the framework.
+
+By defining your server actions using tRPC procedures, you get all of tRPC's built-in features: input validation, authentication and authorization through middlewares, output validation, data transformers, and more.
+
+info
+
+The Server Actions integration uses the `experimental_` prefix and is still under active development. The API may change in future releases.
+
+## Setting up Server Action procedures[​](#setting-up-server-action-procedures "Direct link to Setting up Server Action procedures")
+
+### 1\. Define a base procedure with `experimental_caller`[​](#1-define-a-base-procedure-with-experimental_caller "Direct link to 1-define-a-base-procedure-with-experimental_caller")
+
+Use `experimental_caller` on a procedure builder together with `experimental_nextAppDirCaller` to create procedures that can be invoked as plain functions (server actions). The `pathExtractor` option lets you identify procedures by metadata, which is useful for logging and observability since server actions don't have a router path like `user.byId`.
+
+server/trpc.ts
+
+ts
+
+`import { initTRPC, TRPCError } from '@trpc/server';`
+
+`import { experimental_nextAppDirCaller } from '@trpc/server/adapters/next-app-dir';`
+
+`interface Meta {`
+
+  `span: string;`
+
+`}`
+
+`export const t = initTRPC.meta<Meta>().create();`
+
+`export const serverActionProcedure = t.procedure.experimental_caller(`
+
+  `experimental_nextAppDirCaller({`
+
+    `pathExtractor: ({ meta }) => (meta as Meta)?.span ?? '',`
+
+  `}),`
+
+`);`
+
+### 2\. Add context via middleware[​](#2-add-context-via-middleware "Direct link to 2. Add context via middleware")
+
+Since server actions don't go through an HTTP adapter, there's no `createContext` to inject context. Instead, use a middleware to provide context such as session data:
+
+server/trpc.ts
+
+ts
+
+`import { initTRPC, TRPCError } from '@trpc/server';`
+
+`import { experimental_nextAppDirCaller } from '@trpc/server/adapters/next-app-dir';`
+
+`import { currentUser } from '../auth';`
+
+`interface Meta {`
+
+  `span: string;`
+
+`}`
+
+`export const t = initTRPC.meta<Meta>().create();`
+
+`export const serverActionProcedure = t.procedure`
+
+  `.experimental_caller(`
+
+    `experimental_nextAppDirCaller({`
+
+      `pathExtractor: ({ meta }) => (meta as Meta)?.span ?? '',`
+
+    `}),`
+
+  `)`
+
+  `.use(async (opts) => {`
+
+    `const user = await currentUser();`
+
+    `return opts.next({ ctx: { user } });`
+
+  `});`
+
+### 3\. Create a protected action procedure[​](#3-create-a-protected-action-procedure "Direct link to 3. Create a protected action procedure")
+
+Add an authorization middleware to create a reusable base for actions that require authentication:
+
+server/trpc.ts
+
+ts
+
+`export const protectedAction = serverActionProcedure.use((opts) => {`
+
+  `if (!opts.ctx.user) {`
+
+    `throw new TRPCError({`
+
+      `code: 'UNAUTHORIZED',`
+
+    `});`
+
+  `}`
+
+  `return opts.next({`
+
+    `ctx: {`
+
+      `...opts.ctx,`
+
+      `user: opts.ctx.user, // ensures type is non-nullable`
+
+    `},`
+
+  `});`
+
+`});`
+
+## Defining a server action[​](#defining-a-server-action "Direct link to Defining a server action")
+
+Create a file with the `"use server"` directive and define your action using the procedure builder:
+
+app/\_actions.ts
+
+ts
+
+`'use server';`
+
+`import { z } from 'zod';`
+
+`import { protectedAction } from '../server/trpc';`
+
+`export const createPost = protectedAction`
+
+  `.input(`
+
+    `z.object({`
+
+      `title: z.string(),`
+
+    `}),`
+
+  `)`
+
+  `.mutation(async (opts) => {`
+
+    `// opts.ctx.user is typed as non-nullable`
+
+    `// opts.input is typed as { title: string }`
+
+    `// Create the post...`
+
+  `});`
+
+Because of `experimental_caller`, the procedure is now a plain async function that can be used as a server action.
+
+## Calling from client components[​](#calling-from-client-components "Direct link to Calling from client components")
+
+Import the server action and use it in a client component. Server actions work with both the `action` attribute for progressive enhancement and programmatic calls via `onSubmit`:
+
+app/post-form.tsx
+
+tsx
+
+`'use client';`
+
+`import { createPost } from '../_actions';`
+
+`export function PostForm() {`
+
+  `return (`
+
+    `<form`
+
+      `onSubmit={async (e) => {`
+
+        `e.preventDefault();`
+
+        `const title = new FormData(e.currentTarget).get('title') as string;`
+
+        `await createPost({ title });`
+
+      `}}`
+
+    `>`
+
+      `<input type="text" name="title" />`
+
+      `<button type="submit">Create Post</button>`
+
+    `</form>`
+
+  `);`
+
+`}`
+
+Use the `.meta()` method to tag actions for logging or tracing. The `span` property from the metadata is passed to `pathExtractor`, so it can be used by observability tools:
+
+app/\_actions.ts
+
+ts
+
+`'use server';`
+
+`import { z } from 'zod';`
+
+`import { protectedAction } from '../server/trpc';`
+
+`export const createPost = protectedAction`
+
+  `.meta({ span: 'create-post' })`
+
+  `.input(`
+
+    `z.object({`
+
+      `title: z.string(),`
+
+    `}),`
+
+  `)`
+
+  `.mutation(async (opts) => {`
+
+    `// ...`
+
+  `});`
+
+## When to use Server Actions vs mutations[​](#when-to-use-server-actions-vs-mutations "Direct link to When to use Server Actions vs mutations")
+
+Server Actions are not a replacement for all tRPC mutations. Consider the tradeoffs:
+
+*   **Use Server Actions** when you want progressive enhancement (forms that work without JavaScript), or when the action doesn't need to update client-side React Query cache.
+*   **Use `useMutation`** when you need to update the client-side cache, show optimistic updates, or manage complex loading/error states in the UI.
+
+You can incrementally adopt server actions alongside your existing tRPC API - there's no need to rewrite your entire API.

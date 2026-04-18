@@ -1,0 +1,13 @@
+---
+title: "Interface: TRPCRequestOptions"
+source: "https://trpc.io/docs/typedoc/client/index/interfaces/TRPCRequestOptions"
+canonical_url: "https://trpc.io/docs/typedoc/client/index/interfaces/TRPCRequestOptions"
+docset: "trpc"
+kind: "library"
+adapter: "generic"
+last_crawled_at: "2026-04-18T16:52:00.485Z"
+content_hash: "93c99d60724d4f72ff7276b80e3bf19908f98b015d3602dc6f1d1607babd33f9"
+menu_path: ["Interface: TRPCRequestOptions"]
+section_path: []
+---
+Interface: TRPCRequestOptions | tRPC

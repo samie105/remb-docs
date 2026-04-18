@@ -1,0 +1,200 @@
+---
+title: "Relations"
+source: "https://www.prisma.io/docs/orm/prisma-schema/data-model/relations"
+canonical_url: "https://www.prisma.io/docs/orm/prisma-schema/data-model/relations"
+docset: "prisma"
+kind: "library"
+adapter: "generic"
+last_crawled_at: "2026-04-18T16:55:14.548Z"
+content_hash: "7786b7e70729b559422b83d6704b200a3fae837da06554c266a2972356227c41"
+menu_path: ["Relations"]
+section_path: []
+---
+Data Model
+
+Relations
+
+A relation is a connection between two models in the Prisma schema. This page explains how you can define one-to-one, one-to-many and many-to-many relations in Prisma
+
+A relation is a _connection_ between two models in the Prisma schema. For example, there is a one-to-many relation between `User` and `Post` because one user can have many blog posts:
+
+```
+model User {
+  id    Int    @id @default(autoincrement())
+  posts Post[]
+}
+
+model Post {
+  id       Int  @id @default(autoincrement())
+  author   User @relation(fields: [authorId], references: [id])
+  authorId Int  // Foreign key connecting Post to User
+  title    String
+}
+```
+
+At a Prisma ORM level, the `User` / `Post` relation consists of:
+
+*   **Relation fields** (`author` and `posts`): Define connections at Prisma ORM level, do not exist in the database
+*   **Relation scalar field** (`authorId`): The foreign key that exists in the database
+
+### [Relational databases](#relational-databases)
+
+In SQL, you use a _foreign key_ to create a relation between two tables:
+
+*   A foreign key column (`authorId`) in `Post` references the primary key (`id`) in `User`
+
+```
+author     User        @relation(fields: [authorId], references: [id])
+```
+
+### [MongoDB](#mongodb)
+
+MongoDB uses a normalized data model design where documents reference each other by ID:
+
+```
+// User document
+{ "_id": { "$oid": "60d5922d00581b8f0062e3a8" }, "name": "Ella" }
+
+// Post documents referencing the user
+{ "_id": "...", "title": "How to make sushi", "authorId": { "$oid": "60d5922d00581b8f0062e3a8" } }
+```
+
+If using `ObjectId`, add `@db.ObjectId` to both the model ID and relation scalar field:
+
+```
+model Post {
+  id       String @id @default(auto()) @map("_id") @db.ObjectId
+  author   User   @relation(fields: [authorId], references: [id])
+  authorId String @db.ObjectId
+}
+```
+
+### [Create records with nested relations](#create-records-with-nested-relations)
+
+```
+const userAndPosts = await prisma.user.create({
+  data: {
+    posts: {
+      create: [{ title: "Prisma Day 2020" }, { title: "How to write a Prisma schema" }],
+    },
+  },
+});
+```
+
+```
+const getAuthor = await prisma.user.findUnique({
+  where: { id: "20" },
+  include: { posts: true },
+});
+```
+
+### [Connect existing records](#connect-existing-records)
+
+```
+await prisma.user.update({
+  where: { id: 20 },
+  data: {
+    posts: { connect: { id: 4 } },
+  },
+});
+```
+
+There are three different types (or [cardinalities](https://en.wikipedia.org/wiki/Cardinality_\(data_modeling\))) of relations in Prisma ORM:
+
+*   [One-to-one](https://www.prisma.io/docs/orm/prisma-schema/data-model/relations/one-to-one-relations) (also called 1-1 relations)
+*   [One-to-many](https://www.prisma.io/docs/orm/prisma-schema/data-model/relations/one-to-many-relations) (also called 1-n relations)
+*   [Many-to-many](https://www.prisma.io/docs/orm/prisma-schema/data-model/relations/many-to-many-relations) (also called m-n relations)
+
+The following Prisma schema includes every type of relation:
+
+*   one-to-one: `User` ↔ `Profile`
+*   one-to-many: `User` ↔ `Post`
+*   many-to-many: `Post` ↔ `Category`
+
+Notice that the syntax is slightly different between relational databases and MongoDB - particularly for [many-to-many relations](https://www.prisma.io/docs/orm/prisma-schema/data-model/relations/many-to-many-relations).
+
+For relational databases, the following entity relationship diagram represents the database that corresponds to the sample Prisma schema:
+
+![The sample schema as an entity relationship diagram](https://www.prisma.io/docs/img/orm/prisma-schema/data-model/relations/sample-schema.png?dpl=dpl_2TrAJrUt7dXR3AAWNDvwk5WL6VFX)
+
+For MongoDB, Prisma ORM uses a [normalized data model design](https://www.mongodb.com/docs/manual/data-modeling/), which means that documents reference each other by ID in a similar way to relational databases. See [the MongoDB section](#mongodb) for more details.
+
+### [Implicit and explicit many-to-many relations](#implicit-and-explicit-many-to-many-relations)
+
+Many-to-many relations in relational databases can be modelled in two ways:
+
+*   [explicit many-to-many relations](https://www.prisma.io/docs/orm/prisma-schema/data-model/relations/many-to-many-relations#explicit-many-to-many-relations), where the relation table is represented as an explicit model in your Prisma schema
+*   [implicit many-to-many relations](https://www.prisma.io/docs/orm/prisma-schema/data-model/relations/many-to-many-relations#implicit-many-to-many-relations), where Prisma ORM manages the relation table and it does not appear in the Prisma schema.
+
+Implicit many-to-many relations require both models to have a single `@id`. Be aware of the following:
+
+*   You cannot use a [multi-field ID](https://www.prisma.io/docs/orm/reference/prisma-schema-reference)
+*   You cannot use a `@unique` in place of an `@id`
+
+To use either of these features, you must set up an explicit many-to-many instead.
+
+The implicit many-to-many relation still manifests in a relation table in the underlying database. However, Prisma ORM manages this relation table.
+
+If you use an implicit many-to-many relation instead of an explicit one, it makes the [Prisma Client API](https://www.prisma.io/docs/orm/prisma-client/setup-and-configuration/introduction) simpler (because, for example, you have one fewer level of nesting inside of [nested writes](https://www.prisma.io/docs/orm/prisma-client/queries/relation-queries#nested-writes)).
+
+If you're not using Prisma Migrate but obtain your data model from [introspection](https://www.prisma.io/docs/orm/prisma-schema/introspection), you can still make use of implicit many-to-many relations by following Prisma ORM's [conventions for relation tables](https://www.prisma.io/docs/orm/prisma-schema/data-model/relations/many-to-many-relations#relation-table-conventions).
+
+Relation fields are fields on a Prisma model whose type is another model (not a scalar type). Every relation needs exactly two relation fields, one on each model.
+
+```
+model User {
+  id    Int    @id @default(autoincrement())
+  posts Post[] // relation field
+}
+
+model Post {
+  id       Int    @id @default(autoincrement())
+  author   User   @relation(fields: [authorId], references: [id]) // annotated relation field
+  authorId Int    // relation scalar field (foreign key)
+}
+```
+
+**Key concepts:**
+
+*   `posts` and `author` are relation fields (exist at Prisma ORM level only)
+*   `authorId` is the relation scalar field (exists in the database as foreign key)
+
+### [Annotated relation fields](#annotated-relation-fields)
+
+Relations annotated with `@relation` attribute (one-to-one, one-to-many, and many-to-many for MongoDB) represent the side that stores the foreign key:
+
+```
+author     User    @relation(fields: [authorId], references: [id])
+authorId   Int     // relation scalar field
+```
+
+**Naming convention:** Relation scalar fields typically use the pattern `fieldName` + `Id` (e.g., `author` → `authorId`).
+
+The `@relation` attribute is required when:
+
+*   Defining one-to-one or one-to-many relations
+*   Disambiguating multiple relations between the same models
+*   Defining [self-relations](https://www.prisma.io/docs/orm/prisma-schema/data-model/relations/self-relations)
+*   Defining many-to-many relations for MongoDB
+
+When you have two relations between the same models, use the `name` argument in `@relation` to disambiguate:
+
+```
+model User {
+  id           Int     @id @default(autoincrement())
+  writtenPosts Post[]  @relation("WrittenPosts")
+  pinnedPost   Post?   @relation("PinnedPost")
+}
+
+model Post {
+  id         Int     @id @default(autoincrement())
+  author     User    @relation("WrittenPosts", fields: [authorId], references: [id])
+  authorId   Int
+  pinnedBy   User?   @relation("PinnedPost", fields: [pinnedById], references: [id])
+  pinnedById Int?    @unique
+}
+```
+
+The `name` must be the same on both sides of the relation.
+
+[Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/prisma-schema/data-model/relations/index.mdx)

@@ -1,0 +1,327 @@
+---
+title: "@astrojs/\n\t\t\t\t\tnode"
+source: "https://docs.astro.build/en/guides/integrations-guide/node/"
+canonical_url: "https://docs.astro.build/en/guides/integrations-guide/node/"
+docset: "astro"
+kind: "framework"
+adapter: "generic"
+last_crawled_at: "2026-04-18T16:39:10.428Z"
+content_hash: "220d11d55e2a56441470de09fd00e3cd2e4ed88c59a381f2706996cfe2c85d4e"
+menu_path: ["@astrojs/\n\t\t\t\t\tnode"]
+section_path: []
+---
+# @astrojs/ node
+
+v10.0.5 [GitHub](https://github.com/withastro/astro/tree/main/packages/integrations/node/) [npm](https://www.npmjs.com/package/@astrojs/node) [Changelog](https://github.com/withastro/astro/tree/main/packages/integrations/node/CHANGELOG.md)
+
+This adapter allows Astro to deploy your [on-demand rendered routes and features](/en/guides/on-demand-rendering/) to Node targets, including [server islands](/en/guides/server-islands/), [actions](/en/guides/actions/), and [sessions](/en/guides/sessions/).
+
+If you’re using Astro as a static site builder, you don’t need an adapter.
+
+## Why Astro Node.js
+
+[Section titled “Why Astro Node.js”](#why-astro-nodejs)
+
+[Node.js](https://nodejs.org/en/) is a JavaScript runtime for server-side code. @astrojs/node can be used either in standalone mode or as middleware for other http servers, such as [Express](https://expressjs.com/).
+
+## Installation
+
+[Section titled “Installation”](#installation)
+
+Astro includes an `astro add` command to automate the setup of official integrations. If you prefer, you can [install integrations manually](#manual-install) instead.
+
+Add the Node adapter to enable on-demand rendering in your Astro project with the `astro add` command. This will install `@astrojs/node` and make the appropriate changes to your `astro.config.*` file in one step.
+
+*   [npm](#tab-panel-1700)
+*   [pnpm](#tab-panel-1701)
+*   [Yarn](#tab-panel-1702)
+
+```
+npx astro add node
+```
+
+Now, you can enable [on-demand rendering per page](/en/guides/on-demand-rendering/#enabling-on-demand-rendering), or set your build output configuration to `output: 'server'` to [server-render all your pages by default](/en/guides/on-demand-rendering/#server-mode).
+
+### Manual Install
+
+[Section titled “Manual Install”](#manual-install)
+
+First, add the Node adapter to your project’s dependencies using your preferred package manager.
+
+*   [npm](#tab-panel-1703)
+*   [pnpm](#tab-panel-1704)
+*   [Yarn](#tab-panel-1705)
+
+```
+npm install @astrojs/node
+```
+
+Then, add the adapter to your `astro.config.*` file:
+
+```
+import { defineConfig } from 'astro/config';import node from '@astrojs/node';
+export default defineConfig({  adapter: node({    mode: 'standalone',  }),});
+```
+
+## Configuration
+
+[Section titled “Configuration”](#configuration)
+
+@astrojs/node can be configured by passing options into the adapter function. The following options are available:
+
+### `mode`
+
+[Section titled “mode”](#mode)
+
+**Type:** `'middleware' | 'standalone'`  
+
+Controls whether the adapter builds to `middleware` or `standalone` mode.
+
+*   `middleware` mode allows the built output to be used as middleware for another Node.js server, like Express.js or Fastify.
+*   `standalone` mode builds a server that automatically starts when the entry module is run. This allows you to more easily deploy your build to a host without needing additional code.
+
+```
+import { defineConfig } from 'astro/config';import node from '@astrojs/node';
+export default defineConfig({  adapter: node({    mode: 'middleware',  }),});
+```
+
+### `staticHeaders`
+
+[Section titled “staticHeaders”](#staticheaders)
+
+**Type:** `boolean`  
+**Default:** `false`  
+
+**Added in:** `@astrojs/node@10.0.0` New
+
+If enabled, the adapter will serve the headers of prerendered pages using the `Response` object when provided by Astro features, such as Content Security Policy.
+
+For example, when [Content Security Policy](/en/reference/configuration-reference/#securitycsp) is enabled, `staticHeaders` can be used to add the CSP headers to the `Response` object instead of creating a `<meta>` element:
+
+```
+import { defineConfig } from 'astro/config';import node from '@astrojs/node';
+export default defineConfig({  security: {    csp: true  },  adapter: node({    mode: 'standalone',    staticHeaders: true,  })});
+```
+
+### `experimentalDisableStreaming`
+
+[Section titled “experimentalDisableStreaming”](#experimentaldisablestreaming)
+
+**Type:** `boolean`  
+**Default:** `false`  
+
+**Added in:** `@astrojs/node@9.3.0`
+
+Disables Astro’s default [HTML streaming](/en/guides/on-demand-rendering/#html-streaming) for pages rendered on demand.
+
+HTML streaming helps with performance and generally provides a better visitor experience. In most cases, disabling streaming is not recommended.
+
+However, when you need to disable HTML streaming (e.g. your host only supports non-streamed HTML caching at the CDN level), you can opt out of the default behavior:
+
+```
+import { defineConfig } from 'astro/config';import node from '@astrojs/node';
+export default defineConfig({  adapter: node({    mode: 'standalone',    experimentalDisableStreaming: true,  }),});
+```
+
+### `bodySizeLimit`
+
+[Section titled “bodySizeLimit”](#bodysizelimit)
+
+**Type:** `number`  
+**Default:** `1073741824` (1 GB)  
+
+**Added in:** `@astrojs/node@10.0.0` New
+
+Sets the maximum allowed request body size in bytes. When the body of an incoming request exceeds this limit, an error will be thrown when the body is consumed.
+
+Set to `Infinity` or `0` to disable the limit entirely. This may be useful if you need to accept very large request bodies, such as for video uploads.
+
+```
+import { defineConfig } from 'astro/config';import node from '@astrojs/node';
+export default defineConfig({  adapter: node({    mode: 'standalone',    bodySizeLimit: 5 * 1024 * 1024 * 1024, // 5 GB  }),});
+```
+
+## Usage
+
+[Section titled “Usage”](#usage)
+
+First, [performing a build](/en/guides/deploy/#building-your-site-locally). Depending on which `mode` selected (see above) follow the appropriate steps below:
+
+### Middleware
+
+[Section titled “Middleware”](#middleware)
+
+The server entrypoint is built to `./dist/server/entry.mjs` by default. This module exports a `handler` function that can be used with any framework that supports the Node `request` and `response` objects.
+
+For example, with Express:
+
+```
+import express from 'express';import { handler as ssrHandler } from './dist/server/entry.mjs';
+const app = express();// Change this based on your astro.config.mjs, `base` option.// They should match. The default value is "/".const base = '/';app.use(base, express.static('dist/client/'));app.use(ssrHandler);
+app.listen(8080);
+```
+
+Or, with Fastify (>4):
+
+```
+import Fastify from 'fastify';import fastifyMiddie from '@fastify/middie';import fastifyStatic from '@fastify/static';import { fileURLToPath } from 'node:url';import { handler as ssrHandler } from './dist/server/entry.mjs';
+const app = Fastify({ logger: true });
+await app  .register(fastifyStatic, {    root: fileURLToPath(new URL('./dist/client', import.meta.url)),  })  .register(fastifyMiddie);app.use(ssrHandler);
+app.listen({ port: 8080 });
+```
+
+Additionally, you can also pass in an object to be accessed with `Astro.locals` or in Astro middleware:
+
+```
+import express from 'express';import { handler as ssrHandler } from './dist/server/entry.mjs';
+const app = express();app.use(express.static('dist/client/'));app.use((req, res, next) => {  const locals = {    title: 'New title',  };
+  ssrHandler(req, res, next, locals);});
+app.listen(8080);
+```
+
+Note that middleware mode does not do file serving. You’ll need to configure your HTTP framework to do that for you. By default the client assets are written to `./dist/client/`.
+
+### Standalone
+
+[Section titled “Standalone”](#standalone)
+
+In standalone mode a server starts when the server entrypoint is run. By default it is built to `./dist/server/entry.mjs`. You can run it with:
+
+```
+node ./dist/server/entry.mjs
+```
+
+For standalone mode the server handles file serving in addition to the page and API routes.
+
+#### Custom host and port
+
+[Section titled “Custom host and port”](#custom-host-and-port)
+
+You can override the host and port the standalone server runs on by passing them as environment variables at runtime:
+
+```
+HOST=0.0.0.0 PORT=4321 node ./dist/server/entry.mjs
+```
+
+#### HTTPS
+
+[Section titled “HTTPS”](#https)
+
+By default the standalone server uses HTTP. This works well if you have a proxy server in front of it that does HTTPS. If you need the standalone server to run HTTPS itself you need to provide your SSL key and certificate.
+
+You can pass the path to your key and certification via the environment variables `SERVER_CERT_PATH` and `SERVER_KEY_PATH`. This is how you might pass them in bash:
+
+```
+SERVER_KEY_PATH=./private/key.pem SERVER_CERT_PATH=./private/cert.pem node ./dist/server/entry.mjs
+```
+
+#### Assets
+
+[Section titled “Assets”](#assets)
+
+In standalone mode, assets in your `dist/client/` folder are served via the standalone server. You might be deploying these assets to a CDN, in which case the server will never actually be serving them. But in some cases, such as intranet sites, it’s fine to serve static assets directly from the application server.
+
+Assets in the `dist/client/_astro/` folder are the ones that Astro has built. These assets are all named with a hash and therefore can be given long cache headers. Internally the adapter adds this header for these assets:
+
+```
+Cache-Control: public, max-age=31536000, immutable
+```
+
+## Sessions
+
+[Section titled “Sessions”](#sessions)
+
+The Astro [Sessions API](/en/guides/sessions/) allows you to easily store user data between requests. This can be used for things like user data and preferences, shopping carts, and authentication credentials. Unlike cookie storage, there are no size limits on the data, and it can be restored on different devices.
+
+Astro uses the local filesystem for session storage when using the Node adapter. If you would prefer to use a different session storage driver, you can specify it in your Astro config. See [the `session` configuration reference](/en/reference/configuration-reference/#sessiondriver) for more details.
+
+## Environment variables
+
+[Section titled “Environment variables”](#environment-variables)
+
+When using the [`astro:env`](/en/guides/environment-variables/#type-safe-environment-variables) secrets or `process.env` at runtime, neither Astro nor the adapter loads environment variables for you.
+
+Some hosts may expose the environment variables you configure through their dashboard during the build and at runtime. Check your host’s documentation for setting and using environment variables within the specific platform.
+
+When self-hosting, you can load environment variables through CLI commands or configuration files as appropriate:
+
+*   [Inline](#tab-panel-1697)
+*   [dotenvx](#tab-panel-1698)
+*   [Docker](#tab-panel-1699)
+
+```
+DB_HOST=... DB_PASSWORD=... node ./dist/server/entry.mjs
+```
+
+## More integrations
+
+### Front-end frameworks
+
+*   ![](/logos/alpine-js.svg)
+    
+    ### [@astrojs/alpinejs](/en/guides/integrations-guide/alpinejs/)
+    
+*   ![](/logos/preact.svg)
+    
+    ### [@astrojs/preact](/en/guides/integrations-guide/preact/)
+    
+*   ![](/logos/react.svg)
+    
+    ### [@astrojs/react](/en/guides/integrations-guide/react/)
+    
+*   ![](/logos/solid.svg)
+    
+    ### [@astrojs/solid⁠-⁠js](/en/guides/integrations-guide/solid-js/)
+    
+*   ![](/logos/svelte.svg)
+    
+    ### [@astrojs/svelte](/en/guides/integrations-guide/svelte/)
+    
+*   ![](/logos/vue.svg)
+    
+    ### [@astrojs/vue](/en/guides/integrations-guide/vue/)
+    
+
+### Adapters
+
+*   ![](/logos/cloudflare-pages.svg)
+    
+    ### [@astrojs/cloudflare](/en/guides/integrations-guide/cloudflare/)
+    
+*   ![](/logos/netlify.svg)
+    
+    ### [@astrojs/netlify](/en/guides/integrations-guide/netlify/)
+    
+*   ![](/logos/node.svg)
+    
+    ### [@astrojs/node](/en/guides/integrations-guide/node/)
+    
+*   ![](/logos/vercel.svg)
+    
+    ### [@astrojs/vercel](/en/guides/integrations-guide/vercel/)
+    
+
+### Other integrations
+
+*   ![](/logos/db.svg)
+    
+    ### [@astrojs/db](/en/guides/integrations-guide/db/)
+    
+*   ![](/logos/markdoc.svg)
+    
+    ### [@astrojs/markdoc](/en/guides/integrations-guide/markdoc/)
+    
+*   ![](/logos/mdx.svg)
+    
+    ### [@astrojs/mdx](/en/guides/integrations-guide/mdx/)
+    
+*   ![](/logos/partytown.svg)
+    
+    ### [@astrojs/partytown](/en/guides/integrations-guide/partytown/)
+    
+*   ![](/logos/sitemap.svg)
+    
+    ### [@astrojs/sitemap](/en/guides/integrations-guide/sitemap/)
+    
+
+[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

@@ -8,7 +8,24 @@ Each top-level directory is one source — fully crawled, normalized to markdown
 
 | Source | Pages | Path |
 |--------|-------|------|
-| Next.js | 400 | [`nextjs/`](./nextjs) |
+| Next.js | 401 | [`nextjs/`](./nextjs) |
+| PostgreSQL | 498 | [`postgres/`](./postgres) |
+| Supabase | 500 | [`supabase/`](./supabase) |
+| Astro | 385 | [`astro/`](./astro) |
+| Redis | 400 | [`redis/`](./redis) |
+| Bun | 312 | [`bun/`](./bun) |
+| Drizzle ORM | 247 | [`drizzle/`](./drizzle) |
+| tRPC | 250 | [`trpc/`](./trpc) |
+| Deno | 226 | [`deno/`](./deno) |
+| Tailwind CSS | 194 | [`tailwind/`](./tailwind) |
+| Prisma | 140 | [`prisma/`](./prisma) |
+| Hono | 82 | [`hono/`](./hono) |
+| Svelte | 84 | [`svelte/`](./svelte) |
+| React | 51 | [`react/`](./react) |
+| Fastify | 42 | [`fastify/`](./fastify) |
+| Vite | 38 | [`vite/`](./vite) |
+
+**Total: 3,850 pages across 16 sources**
 
 ## Layout
 
@@ -23,7 +40,7 @@ Each top-level directory is one source — fully crawled, normalized to markdown
 
 - Build a doc-search UI on top of these markdown trees
 - Feed into RAG / agent skill files for AI-driven dev tooling
-- Offline reference for Next.js / React / Vite / etc.
+- Offline reference for popular JS/TS ecosystem tools
 
 ## Adding more sources
 

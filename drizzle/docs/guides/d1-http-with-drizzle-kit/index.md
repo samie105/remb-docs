@@ -1,0 +1,13 @@
+---
+title: "Drizzle ORM - Cloudflare D1 HTTP API with Drizzle Kit"
+source: "https://orm.drizzle.team/docs/guides/d1-http-with-drizzle-kit"
+canonical_url: "https://orm.drizzle.team/docs/guides/d1-http-with-drizzle-kit"
+docset: "drizzle"
+kind: "library"
+adapter: "generic"
+last_crawled_at: "2026-04-18T17:04:08.587Z"
+content_hash: "477a5a17f34b3769b9e9430fcf582ac1e0aca061b8577e06fdd305beb1eb5a62"
+menu_path: ["Drizzle ORM - Cloudflare D1 HTTP API with Drizzle Kit"]
+section_path: []
+---
+Drizzle ORM - Cloudflare D1 HTTP API with Drizzle Kit

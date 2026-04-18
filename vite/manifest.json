@@ -1,0 +1,322 @@
+[
+  {
+    "url": "https://vite.dev/guide/",
+    "outputPath": "output/vite/guide/index.md",
+    "title": "Getting Started ​",
+    "contentHash": "888b2e8111c28c6c2f91071ce203df7c165f807c630a79edb95c16d37f491683",
+    "visitedAt": "2026-04-18T16:31:58.913Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://vite.dev/config/dep-optimization-options",
+    "outputPath": "output/vite/config/dep-optimization-options/index.md",
+    "title": "Dep Optimization Options ​",
+    "contentHash": "e66eb0618fc2c72c6a56922d1a1515a39c75f37897cd73478aa530f5fbe0796d",
+    "visitedAt": "2026-04-18T16:32:03.019Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://vite.dev/config/build-options",
+    "outputPath": "output/vite/config/build-options/index.md",
+    "title": "Build Options ​",
+    "contentHash": "eb5ff70ca687e4eeb2f9125bd01d75e556e6728e6d158a993bedde6f01fc2e7b",
+    "visitedAt": "2026-04-18T16:32:09.232Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://vite.dev/config/preview-options",
+    "outputPath": "output/vite/config/preview-options/index.md",
+    "title": "Preview Options ​",
+    "contentHash": "f739d5365be9d46bd56badbdb491a4b92b189134006c4520eb83d529305575ca",
+    "visitedAt": "2026-04-18T16:32:13.938Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://vite.dev/config/",
+    "outputPath": "output/vite/config/index.md",
+    "title": "Configuring Vite ​",
+    "contentHash": "d299c8502691c86d3a891ea9fbf694b3e772c3e4dff5bc4a899c5815316b8f0a",
+    "visitedAt": "2026-04-18T16:32:19.317Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://vite.dev/config/server-options",
+    "outputPath": "output/vite/config/server-options/index.md",
+    "title": "Server Options ​",
+    "contentHash": "ab1c519ceea2ec3f7e92add5e45388954474af8c5fc04c303398bed7e26bfbda",
+    "visitedAt": "2026-04-18T16:32:27.885Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://vite.dev/config/ssr-options",
+    "outputPath": "output/vite/config/ssr-options/index.md",
+    "title": "SSR Options ​",
+    "contentHash": "46d635534a5ac016b87c40cbf704285d89667ceb1727501cbf222e2ab3e71f4a",
+    "visitedAt": "2026-04-18T16:32:35.228Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://vite.dev/config/shared-options",
+    "outputPath": "output/vite/config/shared-options/index.md",
+    "title": "Shared Options ​",
+    "contentHash": "8d3f747c46d20dfcd278dc89f7753a4a1fd1cc998a4ba3ed222717ba8365c5a3",
+    "visitedAt": "2026-04-18T16:32:47.688Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://vite.dev/config/worker-options",
+    "outputPath": "output/vite/config/worker-options/index.md",
+    "title": "Worker Options ​",
+    "contentHash": "be9835c546d2951b519280a1757ef5286fa6108ed6664a1ca42afd02df3aadd9",
+    "visitedAt": "2026-04-18T16:32:49.610Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://vite.dev/guide/api-environment-frameworks",
+    "outputPath": "output/vite/guide/api-environment-frameworks/index.md",
+    "title": "Environment API for Frameworks ​",
+    "contentHash": "899cfb2fd2b95f660530e9aadda8d15a2812b581d13e29cd85bd5595d65b310e",
+    "visitedAt": "2026-04-18T16:33:01.257Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://vite.dev/guide/api-environment-instances",
+    "outputPath": "output/vite/guide/api-environment-instances/index.md",
+    "title": "Using Environment Instances ​",
+    "contentHash": "aac55545db1e7fd918815ab93f73b34600eb146cccd9d52f41f0cc5de2099109",
+    "visitedAt": "2026-04-18T16:33:16.412Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://vite.dev/guide/api-environment-plugins",
+    "outputPath": "output/vite/guide/api-environment-plugins/index.md",
+    "title": "Environment API for Plugins ​",
+    "contentHash": "97bc10363c23f5f4cadb7ab4552160359e1245bd02d91fc2f8787b3d5c7e0cdb",
+    "visitedAt": "2026-04-18T16:33:27.652Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://vite.dev/guide/api-environment-runtimes",
+    "outputPath": "output/vite/guide/api-environment-runtimes/index.md",
+    "title": "Environment API for Runtimes ​",
+    "contentHash": "58f06bb17c90240bd2f92d2c3ca0a8aa3d89dadb3bb2ba2b7ebd24d89ec6dcc0",
+    "visitedAt": "2026-04-18T16:33:42.594Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://vite.dev/guide/api-environment",
+    "outputPath": "output/vite/guide/api-environment/index.md",
+    "title": "Environment API ​",
+    "contentHash": "8f3d0a353cff46f24ceef4103cb695bdfaf55f160455c8b53d5cd1c587f48e80",
+    "visitedAt": "2026-04-18T16:33:52.550Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://vite.dev/guide/api-hmr",
+    "outputPath": "output/vite/guide/api-hmr/index.md",
+    "title": "HMR API ​",
+    "contentHash": "4de575f5b341f79eb10bd74670bd381e2bc3131154c6e9b9578e6640897d6b50",
+    "visitedAt": "2026-04-18T16:34:00.363Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://vite.dev/guide/api-javascript",
+    "outputPath": "output/vite/guide/api-javascript/index.md",
+    "title": "JavaScript API ​",
+    "contentHash": "c9621002123e97fe2da8e855cf6d45ac9193e0771b6d6787b132f235592365d4",
+    "visitedAt": "2026-04-18T16:34:10.599Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://vite.dev/guide/assets",
+    "outputPath": "output/vite/guide/assets/index.md",
+    "title": "Static Asset Handling ​",
+    "contentHash": "932de1d7cb49529bd128fa7c6d861aec8749e9adf959046d6047a188d58cf0af",
+    "visitedAt": "2026-04-18T16:34:17.939Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://vite.dev/guide/api-plugin",
+    "outputPath": "output/vite/guide/api-plugin/index.md",
+    "title": "Plugin API ​",
+    "contentHash": "56e1f592e5a37e77fbaf66f465e6f7c5731b119751e155c421103fca15eb6c17",
+    "visitedAt": "2026-04-18T16:34:34.011Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://vite.dev/guide/backend-integration",
+    "outputPath": "output/vite/guide/backend-integration/index.md",
+    "title": "Backend Integration ​",
+    "contentHash": "4b9c4e48ec8cf83e09d338e67e2978a46c64793ce20d4f9978f54cfa111e99f2",
+    "visitedAt": "2026-04-18T16:34:44.096Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://vite.dev/guide/build",
+    "outputPath": "output/vite/guide/build/index.md",
+    "title": "Building for Production ​",
+    "contentHash": "a727b4337d744d5e218677a00fd099fae591f523ede16c831e706613ec20f246",
+    "visitedAt": "2026-04-18T16:34:56.608Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://vite.dev/guide/cli",
+    "outputPath": "output/vite/guide/cli/index.md",
+    "title": "Command Line Interface ​",
+    "contentHash": "be9835c546d2951b519280a1757ef5286fa6108ed6664a1ca42afd02df3aadd9",
+    "visitedAt": "2026-04-18T16:35:01.356Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://vite.dev/guide/dep-pre-bundling",
+    "outputPath": "output/vite/guide/dep-pre-bundling/index.md",
+    "title": "Dependency Pre-Bundling ​",
+    "contentHash": "a0b743bea0738bb6ab75c27d6090d3fbecfc7c0670e2d2c4072c5a4867635b5e",
+    "visitedAt": "2026-04-18T16:35:06.793Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://vite.dev/guide/env-and-mode",
+    "outputPath": "output/vite/guide/env-and-mode/index.md",
+    "title": "Env Variables and Modes ​",
+    "contentHash": "9265f45e597dc7b7ac8a5df3b380c5794709b12d52c5fd5d73cae05a89e13d5e",
+    "visitedAt": "2026-04-18T16:35:15.389Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://vite.dev/guide/features",
+    "outputPath": "output/vite/guide/features/index.md",
+    "title": "Features ​",
+    "contentHash": "9344cd9bba71a44460873e2c6440c42483921edc49187d4aa1b7122efcd75ef0",
+    "visitedAt": "2026-04-18T16:35:38.964Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://vite.dev/guide/migration",
+    "outputPath": "output/vite/guide/migration/index.md",
+    "title": "Migration from v7 ​",
+    "contentHash": "ea53e2fd6d92df21defa975cf6379dbc0882bb6c594803cd933d66006390612d",
+    "visitedAt": "2026-04-18T16:35:54.590Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://vite.dev/guide/performance",
+    "outputPath": "output/vite/guide/performance/index.md",
+    "title": "Performance ​",
+    "contentHash": "7a20e686d709a50a155a1008ce44851cbac4269ab3f425bf2bff97f0b48d2454",
+    "visitedAt": "2026-04-18T16:35:59.381Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://vite.dev/guide/philosophy",
+    "outputPath": "output/vite/guide/philosophy/index.md",
+    "title": "Project Philosophy ​",
+    "contentHash": "5ff3a98f8e119b66d387f70f920c3afa9b46a6472db191a4013ed0edcde4f89d",
+    "visitedAt": "2026-04-18T16:36:03.963Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://vite.dev/guide/ssr",
+    "outputPath": "output/vite/guide/ssr/index.md",
+    "title": "Server-Side Rendering (SSR) ​",
+    "contentHash": "00d93c513cea4119e22208d7b7a10cd22a2b397e49218a73fb7be92560c0bee4",
+    "visitedAt": "2026-04-18T16:36:21.465Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://vite.dev/guide/static-deploy",
+    "outputPath": "output/vite/guide/static-deploy/index.md",
+    "title": "Deploying a Static Site ​",
+    "contentHash": "c721fc2fda8563a8079923a470919f6d0c4f07e77363ae0b0f853d3c51edc17b",
+    "visitedAt": "2026-04-18T16:36:28.987Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://vite.dev/guide/troubleshooting",
+    "outputPath": "output/vite/guide/troubleshooting/index.md",
+    "title": "Troubleshooting ​",
+    "contentHash": "691a682111f6b403638362b9aa2f09f7f6127577e9dc914b8877527b8080ea26",
+    "visitedAt": "2026-04-18T16:36:39.443Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://vite.dev/guide/using-plugins",
+    "outputPath": "output/vite/guide/using-plugins/index.md",
+    "title": "Using Plugins ​",
+    "contentHash": "64ec5d4dc5b59f264a4f8cd9ed1230169dff0b5b49c969126afe951606f024fa",
+    "visitedAt": "2026-04-18T16:36:46.033Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://vite.dev/plugins/",
+    "outputPath": "output/vite/plugins/index.md",
+    "title": "Plugins ​",
+    "contentHash": "84aff3d595eb96b0dcce9e4cc8e1c221c543c8f1921177939874b211f7f1e2a9",
+    "visitedAt": "2026-04-18T16:36:48.883Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://vite.dev/guide/why",
+    "outputPath": "output/vite/guide/why/index.md",
+    "title": "Why Vite ​",
+    "contentHash": "13e182942619e9f05a233c7669db96b89f71f8a67ad195a6181d4d633d201d41",
+    "visitedAt": "2026-04-18T16:36:55.867Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://registry.vite.dev/plugins",
+    "outputPath": "output/vite/plugins/index.md",
+    "title": "Vite Plugin Registry",
+    "contentHash": "9ac34bc5726709ef725ad1dd472d4aff5415d0100ee8984b8ed7e9c9cec08919",
+    "visitedAt": "2026-04-18T16:37:52.408Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://registry.vite.dev/guide/",
+    "outputPath": "output/vite/guide/index.md",
+    "title": "Plugin Registry Guide ​",
+    "contentHash": "be9835c546d2951b519280a1757ef5286fa6108ed6664a1ca42afd02df3aadd9",
+    "visitedAt": "2026-04-18T16:38:29.759Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://registry.vite.dev/guide/extended-metadata",
+    "outputPath": "output/vite/guide/extended-metadata/index.md",
+    "title": "Extended Metadata ​",
+    "contentHash": "886b991bdebbe64ec4cc4e344d51403988cef6a2bad7ffda9ad7dd04d244dfab",
+    "visitedAt": "2026-04-18T16:39:09.161Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://registry.vite.dev/guide/discovery",
+    "outputPath": "output/vite/guide/discovery/index.md",
+    "title": "Plugin Discovery ​",
+    "contentHash": "be9835c546d2951b519280a1757ef5286fa6108ed6664a1ca42afd02df3aadd9",
+    "visitedAt": "2026-04-18T16:39:09.885Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://registry.vite.dev/guide/compatibility",
+    "outputPath": "output/vite/guide/compatibility/index.md",
+    "title": "Compatibility Detection ​",
+    "contentHash": "be9835c546d2951b519280a1757ef5286fa6108ed6664a1ca42afd02df3aadd9",
+    "visitedAt": "2026-04-18T16:39:10.455Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://registry.vite.dev/guide/badges",
+    "outputPath": "output/vite/guide/badges/index.md",
+    "title": "Compatibility Badges ​",
+    "contentHash": "be9835c546d2951b519280a1757ef5286fa6108ed6664a1ca42afd02df3aadd9",
+    "visitedAt": "2026-04-18T16:39:48.776Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://registry.vite.dev/guide/patches",
+    "outputPath": "output/vite/guide/patches/index.md",
+    "title": "Registry Patches ​",
+    "contentHash": "be9835c546d2951b519280a1757ef5286fa6108ed6664a1ca42afd02df3aadd9",
+    "visitedAt": "2026-04-18T16:39:49.591Z",
+    "status": "visited"
+  }
+]

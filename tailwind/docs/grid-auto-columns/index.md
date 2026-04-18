@@ -1,0 +1,112 @@
+---
+title: "grid-auto-columns"
+source: "https://tailwindcss.com/docs/grid-auto-columns"
+canonical_url: "https://tailwindcss.com/docs/grid-auto-columns"
+docset: "tailwind"
+kind: "framework"
+adapter: "generic"
+last_crawled_at: "2026-04-18T16:48:24.835Z"
+content_hash: "08a93bc81df04a8ff4cd6571e06902a9b41a4d1c45b2bf91c0d846a7a8c0bab0"
+menu_path: ["grid-auto-columns"]
+section_path: []
+---
+[](/)
+
+[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
+
+1.  Flexbox & Grid
+2.  grid-auto-columns
+
+Flexbox & Grid
+
+# grid-auto-columns
+
+Utilities for controlling the size of implicitly-created grid columns.
+
+Class
+
+Styles
+
+`auto-cols-auto`
+
+`grid-auto-columns: auto;`
+
+`auto-cols-min`
+
+`grid-auto-columns: min-content;`
+
+`auto-cols-max`
+
+`grid-auto-columns: max-content;`
+
+`auto-cols-fr`
+
+`grid-auto-columns: minmax(0, 1fr);`
+
+`auto-cols-(<custom-property>)`
+
+`grid-auto-columns: var(<custom-property>);`
+
+`auto-cols-[<value>]`
+
+`grid-auto-columns: <value>;`
+
+## [Examples](#examples)
+
+### [Basic example](#basic-example)
+
+Use utilities like `auto-cols-min` and `auto-cols-max` to control the size of implicitly-created grid columns:
+
+```
+<div class="grid auto-cols-max grid-flow-col">  <div>01</div>  <div>02</div>  <div>03</div></div>
+```
+
+### [Using a custom value](#using-a-custom-value)
+
+Use the `auto-cols-[<value>]` syntax to set the size of implicitly-created grid columns based on a completely custom value:
+
+```
+<div class="auto-cols-[minmax(0,2fr)] ...">  <!-- ... --></div>
+```
+
+For CSS variables, you can also use the `auto-cols-(<custom-property>)` syntax:
+
+```
+<div class="auto-cols-(--my-auto-cols) ...">  <!-- ... --></div>
+```
+
+This is just a shorthand for `auto-cols-[var(<custom-property>)]` that adds the `var()` function for you automatically.
+
+### [Responsive design](#responsive-design)
+
+Prefix a `grid-auto-columns` utility with a breakpoint variant like `md:` to only apply the utility at medium screen sizes and above:
+
+```
+<div class="grid grid-flow-col auto-cols-max md:auto-cols-min ...">  <!-- ... --></div>
+```
+
+Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
+
+### On this page
+
+*   [Quick reference](#quick-reference)
+*   [Examples](#examples)
+    *   [Basic example](#basic-example)
+    *   [Using a custom value](#using-a-custom-value)
+    *   [Responsive design](#responsive-design)
+
+[
+
+![Refactoring UI](/_next/static/media/book-promo.3012c0f6.png)
+
+From the creators of Tailwind CSS
+
+Make your ideas look awesome, without relying on a designer.
+
+> “This is the survival kit I wish I had when I started building apps.”
+> 
+> Derrick Reimer, SavvyCal
+
+](https://www.refactoringui.com/?ref=sidebar)
+
+Copyright © 2026 Tailwind Labs Inc.·[Trademark Policy](/brand)

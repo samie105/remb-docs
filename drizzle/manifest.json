@@ -1,0 +1,1978 @@
+[
+  {
+    "url": "https://orm.drizzle.team/docs/batch-api",
+    "outputPath": "output/drizzle/docs/batch-api/index.md",
+    "title": "Batch API",
+    "contentHash": "269219505662e56d6d2b4c541d6ee0302c24dd08b3342d95fc2d33bf3b898803",
+    "visitedAt": "2026-04-18T16:32:25.856Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/overview",
+    "outputPath": "output/drizzle/docs/overview/index.md",
+    "title": "Drizzle ORM",
+    "contentHash": "8951abfabbeebf652b39e7d83831c621b2ca54e19d99fa69895209e3a673c886",
+    "visitedAt": "2026-04-18T16:32:35.761Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/arktype",
+    "outputPath": "output/drizzle/docs/arktype/index.md",
+    "title": "arktype",
+    "contentHash": "fb820ecf2bbf1f06676a83e8027d0ef31d2a7e0708a7d53a34abeebfc407625b",
+    "visitedAt": "2026-04-18T16:32:45.519Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/cache",
+    "outputPath": "output/drizzle/docs/cache/index.md",
+    "title": "Cache",
+    "contentHash": "661daf676ac0ecf7d725640317c8ed68ac8f66769078742ad401422af4025b23",
+    "visitedAt": "2026-04-18T16:33:40.226Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/column-types/mssql",
+    "outputPath": "output/drizzle/docs/column-types/mssql/index.md",
+    "title": "MSSQL column types",
+    "contentHash": "bd787f1e91ddd5c289e032de49bb7ec2db5e19082ebcfa0e27581a2d4e8d4d5d",
+    "visitedAt": "2026-04-18T16:33:59.018Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/column-types/cockroach",
+    "outputPath": "output/drizzle/docs/column-types/cockroach/index.md",
+    "title": "CockroachDB column types",
+    "contentHash": "1e148204d47a33ddb5a0c3e5f918815c8c7d2728bf4b8013e55ee866bdb20221",
+    "visitedAt": "2026-04-18T16:34:20.282Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/column-types/singlestore",
+    "outputPath": "output/drizzle/docs/column-types/singlestore/index.md",
+    "title": "SingleStore column types",
+    "contentHash": "1e4c73767c4aaf282e14b494d302e8597fc42677b297eda6ef9ba75b9bdc2a4e",
+    "visitedAt": "2026-04-18T16:35:25.445Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/column-types/mysql",
+    "outputPath": "output/drizzle/docs/column-types/mysql/index.md",
+    "title": "MySQL column types",
+    "contentHash": "24f0f8c0b169e1101ccaf8e21ec45fc022e9ffc66aa470f2b5b08bbd2be96edf",
+    "visitedAt": "2026-04-18T16:35:40.801Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/column-types/pg",
+    "outputPath": "output/drizzle/docs/column-types/pg/index.md",
+    "title": "PostgreSQL column types",
+    "contentHash": "4415edb4737d09fd08decaaa19436f180a52e95d92c496e39d0c6f9cfd7738f1",
+    "visitedAt": "2026-04-18T16:35:58.192Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/connect-aws-data-api-mysql",
+    "outputPath": "output/drizzle/docs/connect-aws-data-api-mysql/index.md",
+    "title": "Drizzle <> AWS Data API MySQL",
+    "contentHash": "e2531d0d64629f71a74045fcb65551920e250043d754f09828b0d4338f513949",
+    "visitedAt": "2026-04-18T16:36:43.896Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/connect-aws-data-api-pg",
+    "outputPath": "output/drizzle/docs/connect-aws-data-api-pg/index.md",
+    "title": "Drizzle <> AWS Data API Postgres",
+    "contentHash": "9e17a244ef20566f2c70414d988a0ef5defa4911994809ef127aebd698e71f59",
+    "visitedAt": "2026-04-18T16:36:49.659Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/column-types/sqlite",
+    "outputPath": "output/drizzle/docs/column-types/sqlite/index.md",
+    "title": "SQLite column types",
+    "contentHash": "c61cbe69a987e76fa2c14635767238e6d31eba9c38e7264d08caa09d1d26007f",
+    "visitedAt": "2026-04-18T16:37:00.179Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/connect-bun-sqlite",
+    "outputPath": "output/drizzle/docs/connect-bun-sqlite/index.md",
+    "title": "Drizzle <> Bun SQLite",
+    "contentHash": "a1a72e2607799583dd86bdc8673dfd97fb22fef6330b161484a93968dd646e8a",
+    "visitedAt": "2026-04-18T16:37:45.653Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/connect-bun-sql",
+    "outputPath": "output/drizzle/docs/connect-bun-sql/index.md",
+    "title": "Drizzle <> Bun SQL",
+    "contentHash": "0dfe97da46f369ec2056b55de9e44d753fcc71a78806d86c4e816ab096d24095",
+    "visitedAt": "2026-04-18T16:37:50.837Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/connect-cloudflare-d1",
+    "outputPath": "output/drizzle/docs/connect-cloudflare-d1/index.md",
+    "title": "Drizzle <> Cloudflare D1",
+    "contentHash": "5af2dae5ef5550187c5b3c79ca0fe80196906dc6e8903c104bf9726b3019229f",
+    "visitedAt": "2026-04-18T16:37:56.332Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/connect-effect-postgres",
+    "outputPath": "output/drizzle/docs/connect-effect-postgres/index.md",
+    "title": "Drizzle <> Effect Postgres",
+    "contentHash": "d122230831f62526b9d3dfc7d8867bfe155f07f4e756f182e153cf083cdf69ae",
+    "visitedAt": "2026-04-18T16:38:41.095Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/connect-cloudflare-do",
+    "outputPath": "output/drizzle/docs/connect-cloudflare-do/index.md",
+    "title": "Drizzle <> Cloudflare Durable Objects SQLite",
+    "contentHash": "d0997f41ea88a3db536dd6a78c334609b582a33cf8ec67a8da7f9a7675e208f1",
+    "visitedAt": "2026-04-18T16:38:47.577Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/connect-drizzle-proxy",
+    "outputPath": "output/drizzle/docs/connect-drizzle-proxy/index.md",
+    "title": "Drizzle HTTP proxy",
+    "contentHash": "283980a631610b871fdab19d9ff83ce77f6da669baab8337945d733ea096e8ee",
+    "visitedAt": "2026-04-18T16:38:55.242Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/connect-expo-sqlite",
+    "outputPath": "output/drizzle/docs/connect-expo-sqlite/index.md",
+    "title": "Drizzle <> Expo SQLite",
+    "contentHash": "8c12a55fff2a2b3b4dee205e40409a434afbdac7d269b0d7e5ce7cb98a7a1c0c",
+    "visitedAt": "2026-04-18T16:39:43.541Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/connect-neon",
+    "outputPath": "output/drizzle/docs/connect-neon/index.md",
+    "title": "Drizzle <> Neon Postgres",
+    "contentHash": "71213b63f8eeba7fc84e80966418aaaf7a02ab66f1601a64c08c9e942df25717",
+    "visitedAt": "2026-04-18T16:39:47.282Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/connect-nile",
+    "outputPath": "output/drizzle/docs/connect-nile/index.md",
+    "title": "Drizzle <> Nile",
+    "contentHash": "6b4e5cac51c9322802e42dc7fa7bd08e15e574090b0855bfccb3071addae3d9d",
+    "visitedAt": "2026-04-18T16:39:50.833Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/connect-overview",
+    "outputPath": "output/drizzle/docs/connect-overview/index.md",
+    "title": "Database connection with Drizzle",
+    "contentHash": "bb4624bf38695477bd74cbc74b4666e351f885b08398fbe692770866c91e3c0c",
+    "visitedAt": "2026-04-18T16:40:34.188Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/connect-node-sqlite",
+    "outputPath": "output/drizzle/docs/connect-node-sqlite/index.md",
+    "title": "Drizzle <> Node SQLite",
+    "contentHash": "11b90d72a832bab3c1750dfae75ee9056d04d8a8c022a2429aa7243cd88b1622",
+    "visitedAt": "2026-04-18T16:40:38.844Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/connect-op-sqlite",
+    "outputPath": "output/drizzle/docs/connect-op-sqlite/index.md",
+    "title": "Drizzle <> OP SQLite",
+    "contentHash": "38591fc7efa004decd2f13246993d991e6feaf1202824966700b681ac3ce6540",
+    "visitedAt": "2026-04-18T16:40:41.504Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/connect-planetscale-postgres",
+    "outputPath": "output/drizzle/docs/connect-planetscale-postgres/index.md",
+    "title": "Drizzle <> PlanetScale Postgres",
+    "contentHash": "1122c4be7e70635e63be57ec7bb38e49694b9486ee1e7518d126590ccfaeb4cc",
+    "visitedAt": "2026-04-18T16:41:27.727Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/connect-planetscale",
+    "outputPath": "output/drizzle/docs/connect-planetscale/index.md",
+    "title": "Drizzle <> PlanetScale MySQL",
+    "contentHash": "3404f66339d290e14c5177bcda6e69d4b9f5b990a014ff23560d722e5ce9bc30",
+    "visitedAt": "2026-04-18T16:41:30.459Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/connect-pglite",
+    "outputPath": "output/drizzle/docs/connect-pglite/index.md",
+    "title": "Drizzle <> PGlite",
+    "contentHash": "86baef8854f2ee27b0f57814f9fdadaa30d458dc9b0c882598e1ea9b3cc4d68d",
+    "visitedAt": "2026-04-18T16:41:34.687Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/connect-prisma-postgres",
+    "outputPath": "output/drizzle/docs/connect-prisma-postgres/index.md",
+    "title": "Drizzle <> Prisma Postgres",
+    "contentHash": "53c2d64fec245135e9f36b7923ab0c3beb13c5e8b387f15a4d983f9f05e5ec8b",
+    "visitedAt": "2026-04-18T16:42:17.264Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/connect-react-native-sqlite",
+    "outputPath": "output/drizzle/docs/connect-react-native-sqlite/index.md",
+    "title": "Drizzle <> React Native SQLite",
+    "contentHash": "e4cf280a1249d160d4841ad0323deb23fbea4a65f4a3a2b1e92dda9b5a1563c5",
+    "visitedAt": "2026-04-18T16:42:19.759Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/connect-sqlite-cloud",
+    "outputPath": "output/drizzle/docs/connect-sqlite-cloud/index.md",
+    "title": "Drizzle <> SQLite Cloud",
+    "contentHash": "a48dc1b1b5f80f8c63235bb0c785a359872d895743c96275f9f8c077671a50a5",
+    "visitedAt": "2026-04-18T16:42:21.652Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/connect-supabase",
+    "outputPath": "output/drizzle/docs/connect-supabase/index.md",
+    "title": "Drizzle <> Supabase",
+    "contentHash": "19cd7b4ef84572231d67789d03f4b662b2bd08a84c17ea7dbf353506a03dc552",
+    "visitedAt": "2026-04-18T16:43:07.193Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/connect-tidb",
+    "outputPath": "output/drizzle/docs/connect-tidb/index.md",
+    "title": "Drizzle <> TiDB Serverless",
+    "contentHash": "386a8e30d064da79cc367e6e23c9f534ba233b721955639b5f92423a64359c57",
+    "visitedAt": "2026-04-18T16:43:10.049Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/connect-turso",
+    "outputPath": "output/drizzle/docs/connect-turso/index.md",
+    "title": "Drizzle <> Turso Cloud",
+    "contentHash": "aa6e88c0b19eea4869ddd4a933dfae4bd064bb9beaa2183bd87d2e1f593bcd01",
+    "visitedAt": "2026-04-18T16:43:15.250Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/connect-turso-database",
+    "outputPath": "output/drizzle/docs/connect-turso-database/index.md",
+    "title": "Drizzle <> Turso Database",
+    "contentHash": "95f59ae189d79e237e204a482f174d1aebb2e8bb9d5e5f2d47f3115e97e180d4",
+    "visitedAt": "2026-04-18T16:43:58.288Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/connect-xata",
+    "outputPath": "output/drizzle/docs/connect-xata/index.md",
+    "title": "Drizzle <> Xata",
+    "contentHash": "dd85e6a747216a517e216023d618f23cd731d943e1c3cbeb9d35f6de723d80a1",
+    "visitedAt": "2026-04-18T16:44:00.450Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/connect-vercel-postgres",
+    "outputPath": "output/drizzle/docs/connect-vercel-postgres/index.md",
+    "title": "Drizzle <> Vercel Postgres",
+    "contentHash": "0b42ebe20cb40dfac8c8df5071009a5985037b6d145e8e5fbe1ead12de83baca",
+    "visitedAt": "2026-04-18T16:44:05.399Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/delete",
+    "outputPath": "output/drizzle/docs/delete/index.md",
+    "title": "SQL Delete",
+    "contentHash": "bd33f0834c0dd7434edd885aa3adef0e6dfdf974ca6dc936795d0bb0e40fb577",
+    "visitedAt": "2026-04-18T16:44:47.816Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/data-querying",
+    "outputPath": "output/drizzle/docs/data-querying/index.md",
+    "title": "Drizzle Queries + CRUD",
+    "contentHash": "00c767e32fe55f1da31e3c7c04adc83deddb46b7a5a33385f23775043dceccbf",
+    "visitedAt": "2026-04-18T16:44:50.510Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/custom-types",
+    "outputPath": "output/drizzle/docs/custom-types/index.md",
+    "title": "Common way of defining custom types",
+    "contentHash": "d4fd8d8e359e2941d195bc4156a76f125aad525b1a34076306b68ff12e246ecf",
+    "visitedAt": "2026-04-18T16:44:54.040Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/drizzle-kit-export",
+    "outputPath": "output/drizzle/docs/drizzle-kit-export/index.md",
+    "title": "drizzle-kit export",
+    "contentHash": "5867f39ca07d62977d2141fc83c9c9faad43ed8e5cef42819db1991d66b0bf85",
+    "visitedAt": "2026-04-18T16:45:36.673Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/drizzle-kit-check",
+    "outputPath": "output/drizzle/docs/drizzle-kit-check/index.md",
+    "title": "drizzle-kit check",
+    "contentHash": "f57d1ee4cca4c0959757ec83fbd2fdaf67105251cc510e1be60ebbb1af4f2a12",
+    "visitedAt": "2026-04-18T16:45:40.592Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/drizzle-config-file",
+    "outputPath": "output/drizzle/docs/drizzle-config-file/index.md",
+    "title": "Drizzle Kit configuration file",
+    "contentHash": "95e2edb4fffbe2eb04761309555b7d021409ca192728baa0651301fbd56b79ac",
+    "visitedAt": "2026-04-18T16:45:45.474Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/drizzle-kit-generate",
+    "outputPath": "output/drizzle/docs/drizzle-kit-generate/index.md",
+    "title": "drizzle-kit generate",
+    "contentHash": "d8f79fe08cc24396faf1515e7dcfc39913252bbd5b3265a76721eba8f607b6e9",
+    "visitedAt": "2026-04-18T16:46:22.054Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/drizzle-kit-migrate",
+    "outputPath": "output/drizzle/docs/drizzle-kit-migrate/index.md",
+    "title": "drizzle-kit migrate",
+    "contentHash": "ca24eeeb8d6488f3add2880b0cc28ff54c67e663dff5c3832f9419d478289de5",
+    "visitedAt": "2026-04-18T16:46:25.402Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/drizzle-kit-pull",
+    "outputPath": "output/drizzle/docs/drizzle-kit-pull/index.md",
+    "title": "drizzle-kit pull",
+    "contentHash": "cd4da46522f75101ce8d4ae7064886c6a8376964bd7d83b2cdabd5068b113fec",
+    "visitedAt": "2026-04-18T16:46:29.136Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/drizzle-kit-push",
+    "outputPath": "output/drizzle/docs/drizzle-kit-push/index.md",
+    "title": "drizzle-kit push",
+    "contentHash": "50c46ca4728e691efea7045ce04a6585134ec950145a972537870f8a40b13cde",
+    "visitedAt": "2026-04-18T16:47:05.933Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/drizzle-kit-studio",
+    "outputPath": "output/drizzle/docs/drizzle-kit-studio/index.md",
+    "title": "drizzle-kit studio",
+    "contentHash": "3698404c76435318dfc509578412d7715e78d99a0c8169bc4d1e61efdc8a634a",
+    "visitedAt": "2026-04-18T16:47:11.235Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/drizzle-kit-up",
+    "outputPath": "output/drizzle/docs/drizzle-kit-up/index.md",
+    "title": "drizzle-kit up",
+    "contentHash": "aedb0e00921cce807864d859f7fbc01f5597f80911f1c81929c9c9d609d71b63",
+    "visitedAt": "2026-04-18T16:47:14.345Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/dynamic-query-building",
+    "outputPath": "output/drizzle/docs/dynamic-query-building/index.md",
+    "title": "Dynamic query building",
+    "contentHash": "58164da604a782a098b70eee859deafcd2369fac93b6b93cd81fa2a0c1892cf5",
+    "visitedAt": "2026-04-18T16:47:48.037Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/eslint-plugin",
+    "outputPath": "output/drizzle/docs/eslint-plugin/index.md",
+    "title": "ESLint Drizzle Plugin",
+    "contentHash": "f67a720a94a1d1d23e9b95ca4423523e83b47916d082d1b208287e463f76edf6",
+    "visitedAt": "2026-04-18T16:47:55.364Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/effect-schema",
+    "outputPath": "output/drizzle/docs/effect-schema/index.md",
+    "title": "effect-schema",
+    "contentHash": "4d726e9f39e9b7f2effaff8433e7e304fc467cb290bd5cf563ba3a8af8f3284c",
+    "visitedAt": "2026-04-18T16:47:57.165Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/extensions/mysql",
+    "outputPath": "output/drizzle/docs/extensions/mysql/index.md",
+    "title": "MySQL extensions",
+    "contentHash": "5becfcb510c67378a9505e779ec3733bc98dcafd10f8370c91eb800f38bdafdf",
+    "visitedAt": "2026-04-18T16:48:30.136Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/extensions/singlestore",
+    "outputPath": "output/drizzle/docs/extensions/singlestore/index.md",
+    "title": "SingleStore extensions",
+    "contentHash": "550f2f22188016a12f9f6ea2751c846ac972ba0a5abe5f23000d59c32a4d3910",
+    "visitedAt": "2026-04-18T16:48:35.840Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/extensions/pg",
+    "outputPath": "output/drizzle/docs/extensions/pg/index.md",
+    "title": "PostgreSQL extensions",
+    "contentHash": "41e95b48f2922426ffe230c238907f49a3bce5efbac288159bbbb151f0f03ad1",
+    "visitedAt": "2026-04-18T16:48:40.132Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/extensions/sqlite",
+    "outputPath": "output/drizzle/docs/extensions/sqlite/index.md",
+    "title": "SQLite extensions",
+    "contentHash": "8415e746394de6c13e90ae9915cf24eeea0d3b20d6070255fab76a8565e70d12",
+    "visitedAt": "2026-04-18T16:49:12.274Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/get-started",
+    "outputPath": "output/drizzle/docs/get-started/index.md",
+    "title": "Get started with Drizzle",
+    "contentHash": "b556ea8d465ec4dded08794da24aab47192bbe3408334c71f2985c2711030422",
+    "visitedAt": "2026-04-18T16:49:17.805Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/generated-columns",
+    "outputPath": "output/drizzle/docs/generated-columns/index.md",
+    "title": "Generated Columns",
+    "contentHash": "70fc94402bb7faafd0c554a9e7421f375f96ac3a2d38931e0de7d3a802b4b9a2",
+    "visitedAt": "2026-04-18T16:49:29.146Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/get-started-cockroach",
+    "outputPath": "output/drizzle/docs/get-started-cockroach/index.md",
+    "title": "Drizzle <> PostgreSQL",
+    "contentHash": "a0299ce221fd41f888c62bed58d9f11a8247b0e39def02a88b7906f8f4a5087a",
+    "visitedAt": "2026-04-18T16:50:02.391Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/get-started-gel",
+    "outputPath": "output/drizzle/docs/get-started-gel/index.md",
+    "title": "Drizzle <> Gel",
+    "contentHash": "20440a2d8dc28a25080f89011a9675b349c39b432586706c1751836fe76e8fb0",
+    "visitedAt": "2026-04-18T16:50:04.136Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/get-started-mssql",
+    "outputPath": "output/drizzle/docs/get-started-mssql/index.md",
+    "title": "Drizzle <> MSSQL",
+    "contentHash": "f31669458a95e7ef8e7840f8827df7d4273c88e931b73214b994e5daf80eb1d6",
+    "visitedAt": "2026-04-18T16:50:07.760Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/get-started-mysql",
+    "outputPath": "output/drizzle/docs/get-started-mysql/index.md",
+    "title": "Drizzle <> MySQL",
+    "contentHash": "e2f82e345cdf2b9853aab8e2df5ed355818cd87fbe516aea96ad853a3d00da0d",
+    "visitedAt": "2026-04-18T16:50:43.807Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/get-started-postgresql",
+    "outputPath": "output/drizzle/docs/get-started-postgresql/index.md",
+    "title": "Drizzle <> PostgreSQL",
+    "contentHash": "bdc09d623fe5aba3bb27496fcca5a53798f517d8a9f864fcdb1529f517e049a6",
+    "visitedAt": "2026-04-18T16:50:46.351Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/get-started-singlestore",
+    "outputPath": "output/drizzle/docs/get-started-singlestore/index.md",
+    "title": "Drizzle <> SingleStore",
+    "contentHash": "e2d675d6387c8c175598a19f7680119523281c6aebfb9f20495b2a37c56ee9a7",
+    "visitedAt": "2026-04-18T16:50:48.663Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/get-started/bun-sql-new",
+    "outputPath": "output/drizzle/docs/get-started/bun-sql-new/index.md",
+    "title": "Get Started with Drizzle and Bun:SQLite",
+    "contentHash": "32fefd306b64ac434c5cba0d54bde390fdda2278b4be54c06064348bee55f6d3",
+    "visitedAt": "2026-04-18T16:51:28.997Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/get-started-sqlite",
+    "outputPath": "output/drizzle/docs/get-started-sqlite/index.md",
+    "title": "Drizzle <> SQLite",
+    "contentHash": "75ce74191eb182a536140f527122d0aacc2327f19ee273613063a0326a38f1ba",
+    "visitedAt": "2026-04-18T16:51:32.297Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/get-started/bun-sql-existing",
+    "outputPath": "output/drizzle/docs/get-started/bun-sql-existing/index.md",
+    "title": "Get Started with Drizzle and SQLite in existing project",
+    "contentHash": "d0ba8ef164cf7b909ac7814bc6d1c41c8ac6f4a69296b1dcd35e1a098a907068",
+    "visitedAt": "2026-04-18T16:51:35.607Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/get-started/bun-sqlite-existing",
+    "outputPath": "output/drizzle/docs/get-started/bun-sqlite-existing/index.md",
+    "title": "Get Started with Drizzle and Bun:SQLite in existing project",
+    "contentHash": "718a01e52fae59b4972c102922bd0af227cde3533bbc071c4b8009fe1bd39bf1",
+    "visitedAt": "2026-04-18T16:52:17.458Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/get-started/bun-sqlite-new",
+    "outputPath": "output/drizzle/docs/get-started/bun-sqlite-new/index.md",
+    "title": "Get Started with Drizzle and Bun:SQLite",
+    "contentHash": "292b4ae1de93e32e9e9a120f53a136c8ce29362530857397b4708803cc90c939",
+    "visitedAt": "2026-04-18T16:52:20.459Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/get-started/cockroach-existing",
+    "outputPath": "output/drizzle/docs/get-started/cockroach-existing/index.md",
+    "title": "Get Started with Drizzle and CockroachDB in existing project",
+    "contentHash": "7ebf1eaaf0976b4e071d7dde95728b6b16abb5d57b7e47cb34e6b614b7984ab5",
+    "visitedAt": "2026-04-18T16:52:23.799Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/get-started/cockroach-new",
+    "outputPath": "output/drizzle/docs/get-started/cockroach-new/index.md",
+    "title": "Get Started with Drizzle and CockroachDB",
+    "contentHash": "1822e819ec8aa3c4c690eedb9c34afd869a51685d45508df5e1ff0c5775aa14a",
+    "visitedAt": "2026-04-18T16:53:02.206Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/get-started/d1-existing",
+    "outputPath": "output/drizzle/docs/get-started/d1-existing/index.md",
+    "title": "Get Started with Drizzle and D1 in existing project",
+    "contentHash": "9329e0f8a14ac6bacf8c8a9664af13bf06c19d78bd483e3a771ca8a8ab1abd61",
+    "visitedAt": "2026-04-18T16:53:05.318Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/get-started/d1-new",
+    "outputPath": "output/drizzle/docs/get-started/d1-new/index.md",
+    "title": "Get Started with Drizzle and D1",
+    "contentHash": "0a972c77339d0265acbaca75eff28b7ccfd3b39a53bc5d2f2d4d5f17d24f2fe9",
+    "visitedAt": "2026-04-18T16:53:07.562Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/get-started/do-new",
+    "outputPath": "output/drizzle/docs/get-started/do-new/index.md",
+    "title": "Get Started with Drizzle and SQLite Durable Objects",
+    "contentHash": "339976b15e1ce52c329b7a5bc8c5fd658d0008c159b460cdb1ced4cb9b4603c5",
+    "visitedAt": "2026-04-18T16:53:47.631Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/get-started/do-existing",
+    "outputPath": "output/drizzle/docs/get-started/do-existing/index.md",
+    "title": "Get Started with Drizzle and SQLite Durable Objects in existing project",
+    "contentHash": "c83864a3b5c92a9d0499ec93d0a1056a68c860559a4408854bedb9450fcafad3",
+    "visitedAt": "2026-04-18T16:53:51.098Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/get-started/effect-postgresql-existing",
+    "outputPath": "output/drizzle/docs/get-started/effect-postgresql-existing/index.md",
+    "title": "Get Started with Drizzle and Effect PostgreSQL in existing project",
+    "contentHash": "19b1474d916f81b12ae422db7c63303f9908765f9f8175486bb8850fac41d444",
+    "visitedAt": "2026-04-18T16:53:54.795Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/get-started/expo-existing",
+    "outputPath": "output/drizzle/docs/get-started/expo-existing/index.md",
+    "title": "Get Started with Drizzle and Expo in existing project",
+    "contentHash": "4a1b78923b136d1e7ca4905ed48c7bf743cfe3acc4e98718074f09c272c1dd23",
+    "visitedAt": "2026-04-18T16:54:30.715Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/get-started/expo-new",
+    "outputPath": "output/drizzle/docs/get-started/expo-new/index.md",
+    "title": "Get Started with Drizzle and Expo",
+    "contentHash": "5236e116f66e7ce6730419d924b7c0f1362994505f648ac0c4a586b41a87d227",
+    "visitedAt": "2026-04-18T16:54:34.302Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/get-started/effect-postgresql-new",
+    "outputPath": "output/drizzle/docs/get-started/effect-postgresql-new/index.md",
+    "title": "Get Started with Drizzle and Effect PostgreSQL",
+    "contentHash": "142d2b9b05fdd889fd5b9d29215d49241b0d850f72727f9724762a8b5577dca4",
+    "visitedAt": "2026-04-18T16:54:36.221Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/get-started/gel-existing",
+    "outputPath": "output/drizzle/docs/get-started/gel-existing/index.md",
+    "title": "Get Started with Drizzle and Gel in existing project",
+    "contentHash": "d32e45d73fabe1dffef46f4a5a907aa49839dbc99858a41b60919ca68c8f508f",
+    "visitedAt": "2026-04-18T16:55:09.903Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/get-started/mssql-existing",
+    "outputPath": "output/drizzle/docs/get-started/mssql-existing/index.md",
+    "title": "Get Started with Drizzle and MSSQL in existing project",
+    "contentHash": "ef1a5fdc68e9f1faf540c24c24462d3cc2589f8eb9696dd5c21be8fabb7fb653",
+    "visitedAt": "2026-04-18T16:55:13.318Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/get-started/gel-new",
+    "outputPath": "output/drizzle/docs/get-started/gel-new/index.md",
+    "title": "Get Started with Drizzle and Gel",
+    "contentHash": "25c4c93267365acdffc739cba9e20b550bade1efe88f63d9771ece247155a45b",
+    "visitedAt": "2026-04-18T16:55:15.197Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/get-started/mssql-new",
+    "outputPath": "output/drizzle/docs/get-started/mssql-new/index.md",
+    "title": "Get Started with Drizzle and MSSQL",
+    "contentHash": "6517bb7ef220f117f4105b7bde5ff355277383ef2eece077a5372d1f12e684c0",
+    "visitedAt": "2026-04-18T16:55:49.247Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/get-started/mysql-new",
+    "outputPath": "output/drizzle/docs/get-started/mysql-new/index.md",
+    "title": "Get Started with Drizzle and MySQL",
+    "contentHash": "3495caa1317f5bfab41d430226facb5c1c2bea5cfee2f562bd92458b92276275",
+    "visitedAt": "2026-04-18T16:55:51.511Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/get-started/mysql-existing",
+    "outputPath": "output/drizzle/docs/get-started/mysql-existing/index.md",
+    "title": "Get Started with Drizzle and MySQL in existing project",
+    "contentHash": "2013e8038e06617e899d5957d43e2929598b697fb0ca99aa696b35b972b77156",
+    "visitedAt": "2026-04-18T16:55:53.271Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/get-started/neon-existing",
+    "outputPath": "output/drizzle/docs/get-started/neon-existing/index.md",
+    "title": "Get Started with Drizzle and Neon in existing project",
+    "contentHash": "946ebd531c3f4409295b6ade0b8cef2c5fefababa30d46e20b7f62c79cca624b",
+    "visitedAt": "2026-04-18T16:56:26.731Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/get-started/neon-new",
+    "outputPath": "output/drizzle/docs/get-started/neon-new/index.md",
+    "title": "Get Started with Drizzle and Neon",
+    "contentHash": "c95dd12012c6ff7e1b74cf97b7c593be5bd5dce5cfdbb016222f518f3ea3795f",
+    "visitedAt": "2026-04-18T16:56:28.851Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/get-started/nile-existing",
+    "outputPath": "output/drizzle/docs/get-started/nile-existing/index.md",
+    "title": "Get Started with Drizzle and Nile in existing project",
+    "contentHash": "b01bf7812392fdab696558f7ffb12bb80a4b6a84b2c58636b35547823fcdf1ac",
+    "visitedAt": "2026-04-18T16:56:30.462Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/get-started/nile-new",
+    "outputPath": "output/drizzle/docs/get-started/nile-new/index.md",
+    "title": "Get Started with Drizzle and Nile",
+    "contentHash": "e1d733fedbba32d160603f81d77f6bf13db4317a2dfad302797e90594347394e",
+    "visitedAt": "2026-04-18T16:57:03.812Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/get-started/op-sqlite-existing",
+    "outputPath": "output/drizzle/docs/get-started/op-sqlite-existing/index.md",
+    "title": "Get Started with Drizzle and OP-SQLite in existing project",
+    "contentHash": "4a1b78923b136d1e7ca4905ed48c7bf743cfe3acc4e98718074f09c272c1dd23",
+    "visitedAt": "2026-04-18T16:57:05.184Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/get-started/op-sqlite-new",
+    "outputPath": "output/drizzle/docs/get-started/op-sqlite-new/index.md",
+    "title": "Get Started with Drizzle and OP-SQLite",
+    "contentHash": "569cc1ed82f6b4e7a5fb7801c1f408fdfc068ea78032cc2bc3f606f3c8d71c69",
+    "visitedAt": "2026-04-18T16:57:06.482Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/get-started/pglite-existing",
+    "outputPath": "output/drizzle/docs/get-started/pglite-existing/index.md",
+    "title": "Get Started with Drizzle and PGLite in existing project",
+    "contentHash": "41b9c02173809dfd6d3c671647612d99d3de60f9700999db0f46f16443db28de",
+    "visitedAt": "2026-04-18T16:57:39.763Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/get-started/pglite-new",
+    "outputPath": "output/drizzle/docs/get-started/pglite-new/index.md",
+    "title": "Get Started with Drizzle and PGlite",
+    "contentHash": "2e97f892e66c97d4d682a172926cdf37588bac2a1cd61a9a1dc20e5b66017949",
+    "visitedAt": "2026-04-18T16:57:42.114Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/get-started/planetscale-existing",
+    "outputPath": "output/drizzle/docs/get-started/planetscale-existing/index.md",
+    "title": "Get Started with Drizzle and PlanetScale in existing project",
+    "contentHash": "e4e468e49de177426aacb65fa11278c7ffc26b6fe27c4550a338c1c2d25932b0",
+    "visitedAt": "2026-04-18T16:57:43.780Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/get-started/planetscale-new",
+    "outputPath": "output/drizzle/docs/get-started/planetscale-new/index.md",
+    "title": "Get Started with Drizzle and PlanetScale",
+    "contentHash": "62a39d022bbc8ed3f92e525f29a8608a8c89f4397fbb8488cab8effe5adb1d24",
+    "visitedAt": "2026-04-18T16:58:17.130Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/get-started/planetscale-postgres-new",
+    "outputPath": "output/drizzle/docs/get-started/planetscale-postgres-new/index.md",
+    "title": "Get Started with Drizzle and PlanetScale Postgres",
+    "contentHash": "2606fca3810aa70a96573b9c241c7d0ccff1c621dc12c92e0540796e0d0132ba",
+    "visitedAt": "2026-04-18T16:58:20.574Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/get-started/planetscale-postgres-existing",
+    "outputPath": "output/drizzle/docs/get-started/planetscale-postgres-existing/index.md",
+    "title": "Get Started with Drizzle and PlanetScale Postgres in existing project",
+    "contentHash": "605c76e92a6fc7322e12fede9d5e7b2fb42002de50999c6eeab53f531d5330ec",
+    "visitedAt": "2026-04-18T16:58:22.306Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/get-started/postgresql-existing",
+    "outputPath": "output/drizzle/docs/get-started/postgresql-existing/index.md",
+    "title": "Get Started with Drizzle and PostgreSQL in existing project",
+    "contentHash": "eed8692f83b493cbae90a57727e29cac28106ba5153cb55262227f5620926b0f",
+    "visitedAt": "2026-04-18T16:58:55.862Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/get-started/postgresql-new",
+    "outputPath": "output/drizzle/docs/get-started/postgresql-new/index.md",
+    "title": "Get Started with Drizzle and PostgreSQL",
+    "contentHash": "3460931eadf694392708cc086e69bab22e09ce608b14bd44e1678750e4f258cf",
+    "visitedAt": "2026-04-18T16:58:58.734Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/get-started/singlestore-existing",
+    "outputPath": "output/drizzle/docs/get-started/singlestore-existing/index.md",
+    "title": "Get Started with Drizzle and SingleStore in existing project",
+    "contentHash": "fdbb3517013d12c4be59188c6c48026651538c4dcbcd85a4854acf480bbd301a",
+    "visitedAt": "2026-04-18T16:59:01.202Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/get-started/singlestore-new",
+    "outputPath": "output/drizzle/docs/get-started/singlestore-new/index.md",
+    "title": "Get Started with Drizzle and SingleStore",
+    "contentHash": "e4aec7834a6980b6b233141046133a586715dbf6beae919c9f2860701c9e6933",
+    "visitedAt": "2026-04-18T16:59:29.926Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/get-started/sqlite-cloud-existing",
+    "outputPath": "output/drizzle/docs/get-started/sqlite-cloud-existing/index.md",
+    "title": "Get Started with Drizzle and SQLite Cloud in existing project",
+    "contentHash": "7154537d626648eb5f2dc2f57c0fd37ed0f22c4fcd35442d219d3bbb38b9f2b1",
+    "visitedAt": "2026-04-18T16:59:35.826Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/get-started/sqlite-cloud-new",
+    "outputPath": "output/drizzle/docs/get-started/sqlite-cloud-new/index.md",
+    "title": "Get Started with Drizzle and SQLite Cloud",
+    "contentHash": "debc997aa8cf7149ae661d9d11f8ecb04ecbee1ca5d932a0c3c7bdce87585766",
+    "visitedAt": "2026-04-18T16:59:37.574Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/get-started/sqlite-existing",
+    "outputPath": "output/drizzle/docs/get-started/sqlite-existing/index.md",
+    "title": "Get Started with Drizzle and SQLite in existing project",
+    "contentHash": "17dbb44ffb167cd05c16ae5d824294aaa856200c2f0abe33f97a46f76cd118dd",
+    "visitedAt": "2026-04-18T17:00:05.535Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/get-started/sqlite-new",
+    "outputPath": "output/drizzle/docs/get-started/sqlite-new/index.md",
+    "title": "Get Started with Drizzle and SQLite",
+    "contentHash": "10ccb90a0d6b5c14f6d8da1c681f2c515557c39b75f0b409e37181a22fa59c91",
+    "visitedAt": "2026-04-18T17:00:11.910Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/get-started/supabase-existing",
+    "outputPath": "output/drizzle/docs/get-started/supabase-existing/index.md",
+    "title": "Get Started with Drizzle and Supabase in existing project",
+    "contentHash": "0ee2afc2b0fefbbf37b0d585dbccf9e0729765e60feae2fe5d42827d10a88a8c",
+    "visitedAt": "2026-04-18T17:00:13.861Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/get-started/supabase-new",
+    "outputPath": "output/drizzle/docs/get-started/supabase-new/index.md",
+    "title": "Get Started with Drizzle and Supabase",
+    "contentHash": "a41e9e4064a0de79c550d188a17023bdafc6110102979f122982e121c3a29cb9",
+    "visitedAt": "2026-04-18T17:00:41.523Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/get-started/tidb-existing",
+    "outputPath": "output/drizzle/docs/get-started/tidb-existing/index.md",
+    "title": "Get Started with Drizzle and TiDB in existing project",
+    "contentHash": "7e2d5949476a6d984b58bb4ad1d17a8417cfa85b8d370f5aeeec97efa2cd588a",
+    "visitedAt": "2026-04-18T17:00:49.697Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/get-started/tidb-new",
+    "outputPath": "output/drizzle/docs/get-started/tidb-new/index.md",
+    "title": "Get Started with Drizzle and TiDB",
+    "contentHash": "cca216a819bbe5e4bad3b2fab60d5260993f6b2a4ef339f05861180c1861fa70",
+    "visitedAt": "2026-04-18T17:00:51.120Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/get-started/turso-database-existing",
+    "outputPath": "output/drizzle/docs/get-started/turso-database-existing/index.md",
+    "title": "Get Started with Drizzle and Turso Database in existing project",
+    "contentHash": "2b11f24274bb74b9fc39b4d2e1e838f9e21aafd88ce3a63c71d746bfc821f584",
+    "visitedAt": "2026-04-18T17:01:17.849Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/get-started/turso-existing",
+    "outputPath": "output/drizzle/docs/get-started/turso-existing/index.md",
+    "title": "Get Started with Drizzle and Turso Cloud in existing project",
+    "contentHash": "ac5b038f12d7f3d091a451c9ac7b98ca5d5abac2a234b0337f867b0c400633e7",
+    "visitedAt": "2026-04-18T17:01:26.994Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/get-started/turso-database-new",
+    "outputPath": "output/drizzle/docs/get-started/turso-database-new/index.md",
+    "title": "Get Started with Drizzle and Turso Database",
+    "contentHash": "5367f0b2a9a553f52a4b33a5a353ad04ce19f0523a7c5dd6e18ed6e856e8d754",
+    "visitedAt": "2026-04-18T17:01:27.667Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/get-started/turso-new",
+    "outputPath": "output/drizzle/docs/get-started/turso-new/index.md",
+    "title": "Get Started with Drizzle and Turso Cloud",
+    "contentHash": "f49c561f1c52dfed6ef7e9c9f924166a7102265d93f3e6f3077905b6d3690ad7",
+    "visitedAt": "2026-04-18T17:01:53.175Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/get-started/vercel-existing",
+    "outputPath": "output/drizzle/docs/get-started/vercel-existing/index.md",
+    "title": "Get Started with Drizzle and Vercel Postgres in existing project",
+    "contentHash": "ecb9d957e3e3769d7fd9efe74e1a520984fe46d7f3a916bf3f9bd68135a8e964",
+    "visitedAt": "2026-04-18T17:02:02.198Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/get-started/vercel-new",
+    "outputPath": "output/drizzle/docs/get-started/vercel-new/index.md",
+    "title": "Get Started with Drizzle and Vercel Postgres",
+    "contentHash": "2f350ce7bd9c62c23dc8a26112b9d7ba3ec64a7aa4799d94260808b3fe6ea360",
+    "visitedAt": "2026-04-18T17:02:02.972Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/get-started/xata-existing",
+    "outputPath": "output/drizzle/docs/get-started/xata-existing/index.md",
+    "title": "Get Started with Drizzle and Xata in existing project",
+    "contentHash": "1d92f5f428ced30cac4ebdbfb77a9120a5056bb711af72deadd5d78eadb707fd",
+    "visitedAt": "2026-04-18T17:02:28.815Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/get-started/xata-new",
+    "outputPath": "output/drizzle/docs/get-started/xata-new/index.md",
+    "title": "Get Started with Drizzle and Xata",
+    "contentHash": "c6362c08ed535dd1a34b11e282ef3b15330af9a1959a56539511398d8dcbb556",
+    "visitedAt": "2026-04-18T17:02:37.541Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/goodies",
+    "outputPath": "output/drizzle/docs/goodies/index.md",
+    "title": "Drizzle ORM - Goodies",
+    "contentHash": "89e688f34feac3ea0d61438a971b1ce7c3c7259f03c243af819f36f0493f07e8",
+    "visitedAt": "2026-04-18T17:02:39.358Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/gotchas",
+    "outputPath": "output/drizzle/docs/gotchas/index.md",
+    "title": "Drizzle gotchas",
+    "contentHash": "4a5400369eb480c47d6e69e21ced3de91e11334edd76040fe6320eeb10997bf4",
+    "visitedAt": "2026-04-18T17:03:02.001Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/guides",
+    "outputPath": "output/drizzle/docs/guides/index.md",
+    "title": "Drizzle ORM - Guides",
+    "contentHash": "984548dc3e969dfd9cb781fb41a35cb96d53106489ee791c9c6d24a39dc978ab",
+    "visitedAt": "2026-04-18T17:03:12.773Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/graphql",
+    "outputPath": "output/drizzle/docs/graphql/index.md",
+    "title": "drizzle-graphql",
+    "contentHash": "e05fb13bc56236fe36752898b6925dcde0874b34d5c7a451f7ceaed391a7556c",
+    "visitedAt": "2026-04-18T17:03:13.583Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/guides/conditional-filters-in-query",
+    "outputPath": "output/drizzle/docs/guides/conditional-filters-in-query/index.md",
+    "title": "Drizzle ORM - Conditional filters in query",
+    "contentHash": "af8b440342f7a11e04d83cdaff6b88540f1b73e0dfa895d9e520d2111e5a5857",
+    "visitedAt": "2026-04-18T17:03:35.527Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/guides/count-rows",
+    "outputPath": "output/drizzle/docs/guides/count-rows/index.md",
+    "title": "Drizzle ORM - Count rows",
+    "contentHash": "08e8111e8fa33d94a0280aa38de55998701b135423b343d31655f44eb067c0f6",
+    "visitedAt": "2026-04-18T17:03:46.773Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/guides/cursor-based-pagination",
+    "outputPath": "output/drizzle/docs/guides/cursor-based-pagination/index.md",
+    "title": "Drizzle ORM - SQL Cursor-based pagination",
+    "contentHash": "a9aca573da8308f0389d3031528808b3fb756e95bcd08689c9a3cf827f758cb9",
+    "visitedAt": "2026-04-18T17:03:47.556Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/guides/d1-http-with-drizzle-kit",
+    "outputPath": "output/drizzle/docs/guides/d1-http-with-drizzle-kit/index.md",
+    "title": "Drizzle ORM - Cloudflare D1 HTTP API with Drizzle Kit",
+    "contentHash": "477a5a17f34b3769b9e9430fcf582ac1e0aca061b8577e06fdd305beb1eb5a62",
+    "visitedAt": "2026-04-18T17:04:08.587Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/guides/decrementing-a-value",
+    "outputPath": "output/drizzle/docs/guides/decrementing-a-value/index.md",
+    "title": "Drizzle ORM - SQL Decrement value",
+    "contentHash": "5f484437cf1792c0f17023ea40fdea73338f32d080879ab627ed85f26bc422c3",
+    "visitedAt": "2026-04-18T17:04:20.366Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/guides/empty-array-default-value",
+    "outputPath": "output/drizzle/docs/guides/empty-array-default-value/index.md",
+    "title": "Drizzle ORM - Empty array as a default value",
+    "contentHash": "715f20ae0f743807a67d2c7347910d8e3cd7f015ad73e31160541ebb1fab20d9",
+    "visitedAt": "2026-04-18T17:04:21.003Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/guides/full-text-search-with-generated-columns",
+    "outputPath": "output/drizzle/docs/guides/full-text-search-with-generated-columns/index.md",
+    "title": "Drizzle ORM - Full-text search with Generated Columns",
+    "contentHash": "c409c8c698beca94bcd7e41dd61674cd1684cb0f4401c6cb2d36a93bb57260ce",
+    "visitedAt": "2026-04-18T17:04:42.482Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/guides/gel-ext-auth",
+    "outputPath": "output/drizzle/docs/guides/gel-ext-auth/index.md",
+    "title": "Drizzle ORM - Gel auth extension",
+    "contentHash": "0ebc7b07378058de39ff79de1bc0b0bcbeaafcb1a8c7e28f0eacbc202957ed7f",
+    "visitedAt": "2026-04-18T17:04:54.344Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/guides/include-or-exclude-columns",
+    "outputPath": "output/drizzle/docs/guides/include-or-exclude-columns/index.md",
+    "title": "Drizzle ORM - Include or Exclude Columns in Query",
+    "contentHash": "74fc5697057dfd4c92aa60a8d07e8a0d5b7db577b52b969cb1c490d06df54c4f",
+    "visitedAt": "2026-04-18T17:04:55.866Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/guides/incrementing-a-value",
+    "outputPath": "output/drizzle/docs/guides/incrementing-a-value/index.md",
+    "title": "Drizzle ORM - SQL Increment value",
+    "contentHash": "aa19cbd48b9711de1e7700e7c952850b5dfae8099659a7707dc641eacbf877a5",
+    "visitedAt": "2026-04-18T17:05:15.590Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/guides/limit-offset-pagination",
+    "outputPath": "output/drizzle/docs/guides/limit-offset-pagination/index.md",
+    "title": "Drizzle ORM - SQL Limit/Offset pagination",
+    "contentHash": "842f1215489691d39724d1ed329db213f1defb64fa27a0390aabc914101b356d",
+    "visitedAt": "2026-04-18T17:05:28.526Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/guides/mysql-local-setup",
+    "outputPath": "output/drizzle/docs/guides/mysql-local-setup/index.md",
+    "title": "Drizzle ORM - How to setup MySQL locally",
+    "contentHash": "de791d6fa06a401163f6f72d25fda2a63da65a714e2e366027d369663ac3c75d",
+    "visitedAt": "2026-04-18T17:05:29.044Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/guides/point-datatype-psql",
+    "outputPath": "output/drizzle/docs/guides/point-datatype-psql/index.md",
+    "title": "Drizzle ORM - Point datatype in PostgreSQL",
+    "contentHash": "6444d59251786d452eea0b8cc75a12ccf3766e6bc454c215bcab85d5d3f6564b",
+    "visitedAt": "2026-04-18T17:05:49.343Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/guides/postgis-geometry-point",
+    "outputPath": "output/drizzle/docs/guides/postgis-geometry-point/index.md",
+    "title": "Drizzle ORM - PostGIS geometry point",
+    "contentHash": "64bcf7af7229ee24001b7dae2c7848a4c7479b30d51915c465510a2bb9ba0423",
+    "visitedAt": "2026-04-18T17:06:02.402Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/guides/postgresql-full-text-search",
+    "outputPath": "output/drizzle/docs/guides/postgresql-full-text-search/index.md",
+    "title": "Drizzle ORM - PostgreSQL full-text search",
+    "contentHash": "12207e630200592244031992ad315ac8bb7e136d5e6245e75e700ca58b767d39",
+    "visitedAt": "2026-04-18T17:06:03.897Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/guides/postgresql-local-setup",
+    "outputPath": "output/drizzle/docs/guides/postgresql-local-setup/index.md",
+    "title": "Drizzle ORM - How to setup PostgreSQL locally",
+    "contentHash": "e3d9cb29706e4e167c89585b9df619db7d734ef619443b7ddad6052431b98700",
+    "visitedAt": "2026-04-18T17:06:22.451Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/guides/seeding-using-with-option",
+    "outputPath": "output/drizzle/docs/guides/seeding-using-with-option/index.md",
+    "title": "Drizzle ORM - Seeding using 'with' option",
+    "contentHash": "2d85161b0b7646fc23b77be24bfe6305800c7096c6f709ad74a7bb0a7ee818dc",
+    "visitedAt": "2026-04-18T17:06:36.933Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/guides/seeding-with-partially-exposed-tables",
+    "outputPath": "output/drizzle/docs/guides/seeding-with-partially-exposed-tables/index.md",
+    "title": "Drizzle ORM - Seeding Partially Exposed Tables with Foreign Key",
+    "contentHash": "ebba6e59af2e5eb84fa93973040bc15f8df4a2582bd08f3be81ebd9e3729eaa8",
+    "visitedAt": "2026-04-18T17:06:37.429Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/guides/select-parent-rows-with-at-least-one-related-child-row",
+    "outputPath": "output/drizzle/docs/guides/select-parent-rows-with-at-least-one-related-child-row/index.md",
+    "title": "Drizzle ORM - Select parent rows with at least one related child row",
+    "contentHash": "b7c63c949566d45371868402aecabf86f75189c4d817ff6fea84f86c72df2cb6",
+    "visitedAt": "2026-04-18T17:06:56.081Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/guides/toggling-a-boolean-field",
+    "outputPath": "output/drizzle/docs/guides/toggling-a-boolean-field/index.md",
+    "title": "Drizzle ORM - SQL Toggle value",
+    "contentHash": "c7061dd57b85abccc32b0ca13e4f57309fb1d2d4c9157b9ae30428d2b309a8be",
+    "visitedAt": "2026-04-18T17:07:10.574Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/guides/timestamp-default-value",
+    "outputPath": "output/drizzle/docs/guides/timestamp-default-value/index.md",
+    "title": "Drizzle ORM - SQL Timestamp as a default value",
+    "contentHash": "a429484cee586ae2f2a3525a444ab56abbb19fe8c6c94f18b8a9902582288845",
+    "visitedAt": "2026-04-18T17:07:11.642Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/guides/unique-case-insensitive-email",
+    "outputPath": "output/drizzle/docs/guides/unique-case-insensitive-email/index.md",
+    "title": "Drizzle ORM - Unique and Case-Insensitive Email Handling",
+    "contentHash": "48101bbe7a0c31897c40a9b1b08e6254d341a695dff912e30f2d0bd3b4715883",
+    "visitedAt": "2026-04-18T17:07:29.864Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/guides/update-many-with-different-value",
+    "outputPath": "output/drizzle/docs/guides/update-many-with-different-value/index.md",
+    "title": "Drizzle ORM - Update many with different values for each row",
+    "contentHash": "7dc750daebb39badb1ec4050212c4e1f65ea98d7ac0742e995db16e03b579ec2",
+    "visitedAt": "2026-04-18T17:07:44.722Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/guides/upsert",
+    "outputPath": "output/drizzle/docs/guides/upsert/index.md",
+    "title": "Drizzle ORM - Upsert Query",
+    "contentHash": "623e128d962d04a70ff14de63a4727640e254da61ad73a362688877d6823e1e6",
+    "visitedAt": "2026-04-18T17:07:46.847Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/guides/vector-similarity-search",
+    "outputPath": "output/drizzle/docs/guides/vector-similarity-search/index.md",
+    "title": "Drizzle ORM - Vector similarity search with pgvector extension",
+    "contentHash": "69ed385338400d02264b00fac7c24b8b65e0dfba4ba0e003f17d27096c6e17f4",
+    "visitedAt": "2026-04-18T17:08:03.363Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/indexes-constraints",
+    "outputPath": "output/drizzle/docs/indexes-constraints/index.md",
+    "title": "Indexes & Constraints",
+    "contentHash": "a35750f9cb67a05d6134e37fb1622e04e372cfff43064a4cd7e60cc929e924b4",
+    "visitedAt": "2026-04-18T17:08:22.404Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/insert",
+    "outputPath": "output/drizzle/docs/insert/index.md",
+    "title": "SQL Insert",
+    "contentHash": "75462ee607fdd0dc519c92eaa1b860dc20a4f379aee34bcf4ef2bd4ce15aa353",
+    "visitedAt": "2026-04-18T17:08:23.306Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/joins",
+    "outputPath": "output/drizzle/docs/joins/index.md",
+    "title": "Joins [SQL]",
+    "contentHash": "8685e931e1270bc9e6eeb90dc5a3c8aba36eb8af424e266bccecea93314ab013",
+    "visitedAt": "2026-04-18T17:08:38.471Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/kit-migrations-for-teams",
+    "outputPath": "output/drizzle/docs/kit-migrations-for-teams/index.md",
+    "title": "Drizzle migrations for teams",
+    "contentHash": "b357bb926ca88cec859b5cc7d8a9f9c6384780859e007f6d8b489c1bba7bf594",
+    "visitedAt": "2026-04-18T17:08:57.578Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/kit-custom-migrations",
+    "outputPath": "output/drizzle/docs/kit-custom-migrations/index.md",
+    "title": "Migrations with Drizzle Kit",
+    "contentHash": "37aa1f05be28c491fc3a99f60a9e0df5f36d64c5c98cdab5db58626fdb2b8416",
+    "visitedAt": "2026-04-18T17:08:57.811Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/kit-overview",
+    "outputPath": "output/drizzle/docs/kit-overview/index.md",
+    "title": "Migrations with Drizzle Kit",
+    "contentHash": "b425acccd7bcfc24866390621f2ac9b8806b2d7aa4a645ae2a424a87ae23e3cf",
+    "visitedAt": "2026-04-18T17:09:12.152Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/kit-web-mobile",
+    "outputPath": "output/drizzle/docs/kit-web-mobile/index.md",
+    "title": "Drizzle migrations in web and mobile environments",
+    "contentHash": "5cb5bc7cd804ce1e292ea8290b8a6c45b6e18d2564200bd75d05597504ac9735",
+    "visitedAt": "2026-04-18T17:09:31.165Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/latest-releases",
+    "outputPath": "output/drizzle/docs/latest-releases/index.md",
+    "title": "Drizzle ORM - Latest releases",
+    "contentHash": "41a226d36300f54eec3f4ef3cb768813013ebdb84870baee35222e3de40b2ae0",
+    "visitedAt": "2026-04-18T17:09:32.341Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/latest-releases/drizzle-kit-v0232",
+    "outputPath": "output/drizzle/docs/latest-releases/drizzle-kit-v0232/index.md",
+    "title": "Drizzle ORM - Drizzle Kit v0.23.2 release",
+    "contentHash": "568a393d71f1b5074644be23678c5463b5c71a3e78960f1deae1deca796d9533",
+    "visitedAt": "2026-04-18T17:09:44.835Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/latest-releases/drizzle-orm-v1beta2",
+    "outputPath": "output/drizzle/docs/latest-releases/drizzle-orm-v1beta2/index.md",
+    "title": "New Features",
+    "contentHash": "587da0b5594af85e38519ac6d89ae0a18da69185414493d41a7c376d8565d3c2",
+    "visitedAt": "2026-04-18T17:10:06.514Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/latest-releases/drizzle-orm-v0110",
+    "outputPath": "output/drizzle/docs/latest-releases/drizzle-orm-v0110/index.md",
+    "title": "Drizzle ORM - DrizzleORM v0.11.0 release",
+    "contentHash": "049a0206399e82ac7f9b567d67496d656761ae45ab1dc65f65265052860d1c83",
+    "visitedAt": "2026-04-18T17:10:07.135Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/latest-releases/drizzle-orm-v0162",
+    "outputPath": "output/drizzle/docs/latest-releases/drizzle-orm-v0162/index.md",
+    "title": "Drizzle ORM - DrizzleORM v0.16.2 release",
+    "contentHash": "747dc73c6d6fd918e946f19a78a415204c3f402ebc5f959c2196c6edfc2246eb",
+    "visitedAt": "2026-04-18T17:10:18.941Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/latest-releases/drizzle-orm-v0272",
+    "outputPath": "output/drizzle/docs/latest-releases/drizzle-orm-v0272/index.md",
+    "title": "Drizzle ORM - DrizzleORM v0.27.2 release",
+    "contentHash": "19bacdf4a9036c5ac687e3d989a95600328efab7b27b716047d4b1771ca5e6f4",
+    "visitedAt": "2026-04-18T17:10:40.795Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/latest-releases/drizzle-orm-v0280",
+    "outputPath": "output/drizzle/docs/latest-releases/drizzle-orm-v0280/index.md",
+    "title": "Drizzle ORM - DrizzleORM v0.28.0 release",
+    "contentHash": "314ef140f29dbba7efc55ffe4da126736c75198344109a30e969ddb58bec57b1",
+    "visitedAt": "2026-04-18T17:10:41.361Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/latest-releases/drizzle-orm-v0281",
+    "outputPath": "output/drizzle/docs/latest-releases/drizzle-orm-v0281/index.md",
+    "title": "Drizzle ORM - DrizzleORM v0.28.1 release",
+    "contentHash": "c75b99023f58f59e514ac40c3c4fc36bc8793b5e03bbc7a1d1231aef700a9796",
+    "visitedAt": "2026-04-18T17:10:51.828Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/latest-releases/drizzle-orm-v0282",
+    "outputPath": "output/drizzle/docs/latest-releases/drizzle-orm-v0282/index.md",
+    "title": "Drizzle ORM - DrizzleORM v0.28.2 release",
+    "contentHash": "56856bbf4db4bf41337e44720646ab37ff3abd5291e8481527f3067623d96d16",
+    "visitedAt": "2026-04-18T17:11:14.766Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/latest-releases/drizzle-orm-v0283",
+    "outputPath": "output/drizzle/docs/latest-releases/drizzle-orm-v0283/index.md",
+    "title": "Drizzle ORM - DrizzleORM v0.28.3 release",
+    "contentHash": "0daa7206b3a3c1ed8ba9c19806c1743181778f91145bcd283c86bb35f89c77ea",
+    "visitedAt": "2026-04-18T17:11:15.126Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/latest-releases/drizzle-orm-v0284",
+    "outputPath": "output/drizzle/docs/latest-releases/drizzle-orm-v0284/index.md",
+    "title": "Drizzle ORM - DrizzleORM v0.28.4 release",
+    "contentHash": "73a9be2eda59ddad1fcc5407c26fba4c6b053fef2f2e891bb53ed5d15eebb785",
+    "visitedAt": "2026-04-18T17:11:24.570Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/latest-releases/drizzle-orm-v0285",
+    "outputPath": "output/drizzle/docs/latest-releases/drizzle-orm-v0285/index.md",
+    "title": "Drizzle ORM - DrizzleORM v0.28.5 release",
+    "contentHash": "4878a09b03ca690ff009c08e1e9487f3d452cd195e398b1963a4dc90faf0b404",
+    "visitedAt": "2026-04-18T17:11:48.192Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/latest-releases/drizzle-orm-v0286",
+    "outputPath": "output/drizzle/docs/latest-releases/drizzle-orm-v0286/index.md",
+    "title": "Drizzle ORM - DrizzleORM v0.28.6 release",
+    "contentHash": "5497014d30be01f6948e50db8c0a8f8b6145ae61d840f0bd5f4390c0b133f83b",
+    "visitedAt": "2026-04-18T17:11:48.866Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/latest-releases/drizzle-orm-v0290",
+    "outputPath": "output/drizzle/docs/latest-releases/drizzle-orm-v0290/index.md",
+    "title": "Drizzle ORM - DrizzleORM v0.29.0 release",
+    "contentHash": "2fd0734a25e13a6130c0af652ea3154aabb0d2cf16633cdec938838ffd2d9e02",
+    "visitedAt": "2026-04-18T17:11:59.565Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/latest-releases/drizzle-orm-v0292",
+    "outputPath": "output/drizzle/docs/latest-releases/drizzle-orm-v0292/index.md",
+    "title": "Drizzle ORM - DrizzleORM v0.29.2 release",
+    "contentHash": "2e739e11657c6a3ef0d12c17bca6c718cb0f1d33ec82853d7e9efd6ede80dd57",
+    "visitedAt": "2026-04-18T17:12:22.667Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/latest-releases/drizzle-orm-v0291",
+    "outputPath": "output/drizzle/docs/latest-releases/drizzle-orm-v0291/index.md",
+    "title": "Drizzle ORM - DrizzleORM v0.29.1 release",
+    "contentHash": "8feb274270a5c1cca621897effc367072ebca105894365ec6f2addc7bb9f611e",
+    "visitedAt": "2026-04-18T17:12:23.325Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/latest-releases/drizzle-orm-v0293",
+    "outputPath": "output/drizzle/docs/latest-releases/drizzle-orm-v0293/index.md",
+    "title": "Drizzle ORM - DrizzleORM v0.29.3 release",
+    "contentHash": "8e1d7bc421c8e0059bd6ca899437f9034be62cdbca1655701686a11288680c36",
+    "visitedAt": "2026-04-18T17:12:32.661Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/latest-releases/drizzle-orm-v0294",
+    "outputPath": "output/drizzle/docs/latest-releases/drizzle-orm-v0294/index.md",
+    "title": "Drizzle ORM - DrizzleORM v0.29.4 release",
+    "contentHash": "a3820e5c0b4d67c276600f1b99dddf6e5241b48e6c4702cf22dbf571c918f7a5",
+    "visitedAt": "2026-04-18T17:12:56.837Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/latest-releases/drizzle-orm-v0295",
+    "outputPath": "output/drizzle/docs/latest-releases/drizzle-orm-v0295/index.md",
+    "title": "Drizzle ORM - DrizzleORM v0.29.5 release",
+    "contentHash": "105e9557ad3561a692da46bafbb07cfbb72e97d3c728d80c449d061dc6d43946",
+    "visitedAt": "2026-04-18T17:12:57.251Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/latest-releases/drizzle-orm-v0300",
+    "outputPath": "output/drizzle/docs/latest-releases/drizzle-orm-v0300/index.md",
+    "title": "Drizzle ORM - DrizzleORM v0.30.0 release",
+    "contentHash": "66b92e5da760ff885c0ff64160714e8d9e9ba0f022417e0d327f6a768dcdacba",
+    "visitedAt": "2026-04-18T17:13:05.869Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/latest-releases/drizzle-orm-v0302",
+    "outputPath": "output/drizzle/docs/latest-releases/drizzle-orm-v0302/index.md",
+    "title": "Drizzle ORM - DrizzleORM v0.30.2 release",
+    "contentHash": "fb3a969c41cb06c280db26d65527f9c345bac8170e86ff3c76496277ad10305e",
+    "visitedAt": "2026-04-18T17:13:30.329Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/latest-releases/drizzle-orm-v0301",
+    "outputPath": "output/drizzle/docs/latest-releases/drizzle-orm-v0301/index.md",
+    "title": "Drizzle ORM - DrizzleORM v0.30.1 release",
+    "contentHash": "f326e0e4814515d89ad283f47a0d6e789ef8d0adee94df386b8742f5962aaf0c",
+    "visitedAt": "2026-04-18T17:13:30.561Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/latest-releases/drizzle-orm-v0303",
+    "outputPath": "output/drizzle/docs/latest-releases/drizzle-orm-v0303/index.md",
+    "title": "Drizzle ORM - DrizzleORM v0.30.3 release",
+    "contentHash": "21737e455bec44b8309a6cccbbaeb69b1b6edd27e7263e39f61cc177c097817f",
+    "visitedAt": "2026-04-18T17:13:38.824Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/latest-releases/drizzle-orm-v0305",
+    "outputPath": "output/drizzle/docs/latest-releases/drizzle-orm-v0305/index.md",
+    "title": "Drizzle ORM - DrizzleORM v0.30.5 release",
+    "contentHash": "fa49c63edae9664e0da64a00b4ed34b169e829dbc4a902dfeba367a75f78fb6b",
+    "visitedAt": "2026-04-18T17:14:03.761Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/latest-releases/drizzle-orm-v0304",
+    "outputPath": "output/drizzle/docs/latest-releases/drizzle-orm-v0304/index.md",
+    "title": "Drizzle ORM - DrizzleORM v0.30.4 release",
+    "contentHash": "fcc42de70b18d16c0add1679a315a54d5699d3a1b14b93744a11a609844ccfb2",
+    "visitedAt": "2026-04-18T17:14:04.161Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/latest-releases/drizzle-orm-v0306",
+    "outputPath": "output/drizzle/docs/latest-releases/drizzle-orm-v0306/index.md",
+    "title": "Drizzle ORM - DrizzleORM v0.30.6 release",
+    "contentHash": "22d62621c11b5202e6d3488cbca32850cad929d4ae7aaddb0ea05eb63c818e42",
+    "visitedAt": "2026-04-18T17:14:11.769Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/latest-releases/drizzle-orm-v0307",
+    "outputPath": "output/drizzle/docs/latest-releases/drizzle-orm-v0307/index.md",
+    "title": "Drizzle ORM - DrizzleORM v0.30.7 release",
+    "contentHash": "078ad41e990a93531890d62420b4f764c52bf8e3a5cfaaeea505805dcc8c926c",
+    "visitedAt": "2026-04-18T17:14:37.375Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/latest-releases/drizzle-orm-v0308",
+    "outputPath": "output/drizzle/docs/latest-releases/drizzle-orm-v0308/index.md",
+    "title": "Drizzle ORM - DrizzleORM v0.30.8 release",
+    "contentHash": "0e5a9896aa87fd20c1140310d59a15d447d0a4a89871817c02a8325a7dea0041",
+    "visitedAt": "2026-04-18T17:14:37.726Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/latest-releases/drizzle-orm-v0309",
+    "outputPath": "output/drizzle/docs/latest-releases/drizzle-orm-v0309/index.md",
+    "title": "Drizzle ORM - DrizzleORM v0.30.9 release",
+    "contentHash": "9003a9d6f9e7923f736489b479b3b9f14a70fe69caa5105891fa156f547c8e2d",
+    "visitedAt": "2026-04-18T17:14:44.680Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/latest-releases/drizzle-orm-v0311",
+    "outputPath": "output/drizzle/docs/latest-releases/drizzle-orm-v0311/index.md",
+    "title": "New Features",
+    "contentHash": "a5d423b4fec655d1c79ed4992892375360d60c6f592b0b374a2e89dd3184c64d",
+    "visitedAt": "2026-04-18T17:15:11.141Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/latest-releases/drizzle-orm-v0310",
+    "outputPath": "output/drizzle/docs/latest-releases/drizzle-orm-v0310/index.md",
+    "title": "Drizzle Kit updates: drizzle-kit@0.22.0",
+    "contentHash": "4883efaed8c4b83697d5d0cbd6ccda1b13245ae2224b0f4f3609f5be7c04c97a",
+    "visitedAt": "2026-04-18T17:15:12.751Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/latest-releases/drizzle-orm-v0312",
+    "outputPath": "output/drizzle/docs/latest-releases/drizzle-orm-v0312/index.md",
+    "title": "Drizzle ORM - DrizzleORM v0.31.2 release",
+    "contentHash": "b32ef480059ff661431ae4638dd8eca7668430db1e00f9c4a8f9535d2c4d5a65",
+    "visitedAt": "2026-04-18T17:15:17.464Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/latest-releases/drizzle-orm-v0313",
+    "outputPath": "output/drizzle/docs/latest-releases/drizzle-orm-v0313/index.md",
+    "title": "Drizzle ORM - DrizzleORM v0.31.3 release",
+    "contentHash": "ab00fa3cebc2c09ee0e4ae76d99d20e674f1c16b1d54e3fcc7ae908d2e49c7e7",
+    "visitedAt": "2026-04-18T17:15:44.231Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/latest-releases/drizzle-orm-v0314",
+    "outputPath": "output/drizzle/docs/latest-releases/drizzle-orm-v0314/index.md",
+    "title": "Drizzle ORM - DrizzleORM v0.31.4 release",
+    "contentHash": "fc53a3b7ba87b7557a4d718f3393dd1831925a546d16bd81f07df806dc9cdf30",
+    "visitedAt": "2026-04-18T17:15:45.572Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/latest-releases/drizzle-orm-v0320",
+    "outputPath": "output/drizzle/docs/latest-releases/drizzle-orm-v0320/index.md",
+    "title": "Release notes for drizzle-orm@0.32.0 and drizzle-kit@0.23.0",
+    "contentHash": "f9e4cba8cb0df35d5181281a7822bd0bf77a063b587020ff3b9dc70559e8c0b8",
+    "visitedAt": "2026-04-18T17:15:51.558Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/latest-releases/drizzle-orm-v0321",
+    "outputPath": "output/drizzle/docs/latest-releases/drizzle-orm-v0321/index.md",
+    "title": "Drizzle ORM - DrizzleORM v0.32.1 release",
+    "contentHash": "c99932f95d3554cdc27de92d1965f43fcad737b2b7f4e78be6ef7aa29f580d59",
+    "visitedAt": "2026-04-18T17:16:16.963Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/latest-releases/drizzle-orm-v0322",
+    "outputPath": "output/drizzle/docs/latest-releases/drizzle-orm-v0322/index.md",
+    "title": "Drizzle ORM - DrizzleORM v0.32.2 release",
+    "contentHash": "888b4e21da41e5e82fc23617fbbe67e4f5d870120bd5703a9e5594a576270bb3",
+    "visitedAt": "2026-04-18T17:16:18.335Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/latest-releases/drizzle-orm-v03010",
+    "outputPath": "output/drizzle/docs/latest-releases/drizzle-orm-v03010/index.md",
+    "title": "Drizzle ORM - DrizzleORM v0.30.10 release",
+    "contentHash": "d2f3b4b1aa9f93d70017227e2cb0286d7073780fac46a31983f121d8e9151386",
+    "visitedAt": "2026-04-18T17:16:24.452Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/migrate/components",
+    "outputPath": "output/drizzle/docs/migrate/components/index.md",
+    "title": "Drizzle ORM - undefined",
+    "contentHash": "3baa598ba8d6ea1be5db4db2a29519e470f3fe88651989a03008c2bf1532fc94",
+    "visitedAt": "2026-04-18T17:16:51.069Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/migrate/migrate-from-prisma",
+    "outputPath": "output/drizzle/docs/migrate/migrate-from-prisma/index.md",
+    "title": "Migrate from Prisma to Drizzle",
+    "contentHash": "24ebb6901ac603efb8ebf32ae2e5b4ef0060e7925a92daf71b20a1aac2824563",
+    "visitedAt": "2026-04-18T17:16:54.865Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/migrate/migrate-from-sequelize",
+    "outputPath": "output/drizzle/docs/migrate/migrate-from-sequelize/index.md",
+    "title": "Migrate from Sequelize to Drizzle",
+    "contentHash": "287f4ade703651cfa1af93fabfba4290198954e29c0336e9db147ceb58c05adf",
+    "visitedAt": "2026-04-18T17:17:01.364Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/migrate/migrate-from-typeorm",
+    "outputPath": "output/drizzle/docs/migrate/migrate-from-typeorm/index.md",
+    "title": "Migrate from TypeORM to Drizzle",
+    "contentHash": "dd15d247599e455c6b0f18b571d10f18ed6e54b3f1e5da656c5cca7c7f6a58f7",
+    "visitedAt": "2026-04-18T17:17:27.993Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/migrations",
+    "outputPath": "output/drizzle/docs/migrations/index.md",
+    "title": "Drizzle migrations fundamentals",
+    "contentHash": "3ed04e69e58d3dc2d884d59c345ab620bf0ec6583ebeed49f0c273454f8a97ad",
+    "visitedAt": "2026-04-18T17:17:28.680Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/operators",
+    "outputPath": "output/drizzle/docs/operators/index.md",
+    "title": "Filter and conditional operators",
+    "contentHash": "8b31c53673c56679ac52d873496d0b2e10bff1029125c990afcd5cc8b96c4e0b",
+    "visitedAt": "2026-04-18T17:17:36.567Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/perf-serverless",
+    "outputPath": "output/drizzle/docs/perf-serverless/index.md",
+    "title": "Drizzle Serverless performance",
+    "contentHash": "a4a132d6923b25c5a573ef7a32762822143378faa5c84b40f334a050ca20dda1",
+    "visitedAt": "2026-04-18T17:18:01.715Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/perf-queries",
+    "outputPath": "output/drizzle/docs/perf-queries/index.md",
+    "title": "Query performance",
+    "contentHash": "3487e356829e68c954bb4f1372895c1d0b83173193cd856424f2ff29304f56c2",
+    "visitedAt": "2026-04-18T17:18:02.368Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/prisma",
+    "outputPath": "output/drizzle/docs/prisma/index.md",
+    "title": "Drizzle extension for Prisma",
+    "contentHash": "fa465e3b8f87fa08bfb2ea246d001840c45bdc6c1f179147d21b4776e36b0e2e",
+    "visitedAt": "2026-04-18T17:18:09.829Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/query-utils",
+    "outputPath": "output/drizzle/docs/query-utils/index.md",
+    "title": "Drizzle query utils",
+    "contentHash": "6ea8f57488353ad4ab6a68c194cfbbc72489a5f26fd965dfe4a42e4478c060e0",
+    "visitedAt": "2026-04-18T17:18:35.362Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/read-replicas",
+    "outputPath": "output/drizzle/docs/read-replicas/index.md",
+    "title": "Read Replicas",
+    "contentHash": "4ccd6891ac6f0aac5a01449fd82e44b6b25b13f2f20442f3fad7983d15e6753e",
+    "visitedAt": "2026-04-18T17:18:35.991Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/relations",
+    "outputPath": "output/drizzle/docs/relations/index.md",
+    "title": "Drizzle soft relations",
+    "contentHash": "e8eda839c84e0819983a37db54fcfdcec1d535ecb7d790a264a42d88bdd381c3",
+    "visitedAt": "2026-04-18T17:18:44.491Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/relations-schema-declaration",
+    "outputPath": "output/drizzle/docs/relations-schema-declaration/index.md",
+    "title": "Drizzle Relations Fundamentals",
+    "contentHash": "96e4fa7a685902425a3432338c3f544ed4819c7b52043283803e38b5c42d5d52",
+    "visitedAt": "2026-04-18T17:19:10.476Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/relations-v1-v2",
+    "outputPath": "output/drizzle/docs/relations-v1-v2/index.md",
+    "title": "Migrating to Relational Queries version 2",
+    "contentHash": "b2de861d5a4c1aff8349a9080fcade9c1dc8f32df6ac0602986d3aa4b49e85ce",
+    "visitedAt": "2026-04-18T17:19:13.557Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/relations-v2",
+    "outputPath": "output/drizzle/docs/relations-v2/index.md",
+    "title": "Drizzle relations",
+    "contentHash": "8ac4fa18aa7dbc1d0b364b9e58c20b3a691e286c9de964bf973ec7d6872182f4",
+    "visitedAt": "2026-04-18T17:19:21.815Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/rls",
+    "outputPath": "output/drizzle/docs/rls/index.md",
+    "title": "Row-Level Security (RLS)",
+    "contentHash": "d7ca435af710cfef7f520b11ac794c1cf79a1e7d7010cb89f26a6894b2a0d82b",
+    "visitedAt": "2026-04-18T17:19:47.546Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/rqb",
+    "outputPath": "output/drizzle/docs/rqb/index.md",
+    "title": "Drizzle Queries",
+    "contentHash": "4144064d2c157571186b30a32a134c020c8e667fca102e2d848ead14e2ec1b28",
+    "visitedAt": "2026-04-18T17:19:49.913Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/rqb-v2",
+    "outputPath": "output/drizzle/docs/rqb-v2/index.md",
+    "title": "Drizzle Queries",
+    "contentHash": "b2fb65d77952549b005987502f145a7f9a609965e3f02d925b1aecbcb57caadf",
+    "visitedAt": "2026-04-18T17:19:58.726Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/schemas",
+    "outputPath": "output/drizzle/docs/schemas/index.md",
+    "title": "Table schemas",
+    "contentHash": "49aec2b8c70ab9c77b237f84356be680f402e0a4ac8ef8970832909f6aa53d9e",
+    "visitedAt": "2026-04-18T17:20:21.699Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/seed-functions",
+    "outputPath": "output/drizzle/docs/seed-functions/index.md",
+    "title": "Generators",
+    "contentHash": "1293d3da5da6f4e6557bd1d9e22dedd7ced30146f58f3f80e502064425ada3b9",
+    "visitedAt": "2026-04-18T17:20:30.659Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/seed-overview",
+    "outputPath": "output/drizzle/docs/seed-overview/index.md",
+    "title": "Drizzle Seed",
+    "contentHash": "400463c982b530b5758b25d05f4aa2f03da4d93089ecd7e86a348d63030f699b",
+    "visitedAt": "2026-04-18T17:20:34.789Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/seed-versioning",
+    "outputPath": "output/drizzle/docs/seed-versioning/index.md",
+    "title": "Versioning",
+    "contentHash": "1eaf017e6ffeaef2a65b9493a558ddde78fb95ecceb99811a1559a7a39da9bba",
+    "visitedAt": "2026-04-18T17:20:55.979Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/select",
+    "outputPath": "output/drizzle/docs/select/index.md",
+    "title": "SQL Select",
+    "contentHash": "9ebe8500e3ad6fbb188c279785fde7f49818bf3e467691abe81912ea1c00ac9c",
+    "visitedAt": "2026-04-18T17:21:08.531Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/sequences",
+    "outputPath": "output/drizzle/docs/sequences/index.md",
+    "title": "Sequences",
+    "contentHash": "e9351c909ddf4335c988674b59cc05b2ce4364a176b6333923e50b70b6661595",
+    "visitedAt": "2026-04-18T17:21:08.894Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/set-operations",
+    "outputPath": "output/drizzle/docs/set-operations/index.md",
+    "title": "Set Operations",
+    "contentHash": "af64799bf1251124e8f93e0d5e1e7b18433f2fac4472ec9061453ad7b560e5e9",
+    "visitedAt": "2026-04-18T17:21:32.585Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/sql-schema-declaration",
+    "outputPath": "output/drizzle/docs/sql-schema-declaration/index.md",
+    "title": "Drizzle schema",
+    "contentHash": "ec11d5d0a002d99f1dfe667eec70befbf0401d158b93ab5f781be3de86f2beea",
+    "visitedAt": "2026-04-18T17:21:44.097Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/sql",
+    "outputPath": "output/drizzle/docs/sql/index.md",
+    "title": "Magical sql operator 🪄",
+    "contentHash": "83db24c8d2e7189a989df3df2b896d159a836a135a64c103f6a9915058859302",
+    "visitedAt": "2026-04-18T17:21:45.002Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/sustainability",
+    "outputPath": "output/drizzle/docs/sustainability/index.md",
+    "title": "Drizzle Sustainability",
+    "contentHash": "a7b4502fee4970473679d33312990400c93fb45300f44fa385f98c1c96e7145f",
+    "visitedAt": "2026-04-18T17:22:06.388Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/tutorials",
+    "outputPath": "output/drizzle/docs/tutorials/index.md",
+    "title": "Drizzle ORM - Tutorials",
+    "contentHash": "d1778ee276916bad7a16f23b5b69f893c036a1547acf9fe40f1bc621878cd99b",
+    "visitedAt": "2026-04-18T17:22:18.148Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/transactions",
+    "outputPath": "output/drizzle/docs/transactions/index.md",
+    "title": "Transactions",
+    "contentHash": "e5a6ff3598776bdc4f486de081a20a3e52484011cbc0adf7c8b3bfa1be393373",
+    "visitedAt": "2026-04-18T17:22:18.854Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/tutorials/bun-railway-pg",
+    "outputPath": "output/drizzle/docs/tutorials/bun-railway-pg/index.md",
+    "title": "Drizzle with Bun and PostgreSQL on Railway",
+    "contentHash": "d878a4352909577ec95c2f9762c10bb6454c554d6c786309ed20dae1c20c5faf",
+    "visitedAt": "2026-04-18T17:22:42.144Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/tutorials/drizzle-with-encore",
+    "outputPath": "output/drizzle/docs/tutorials/drizzle-with-encore/index.md",
+    "title": "Drizzle with Encore",
+    "contentHash": "eaae47b56bc6ad5d09c3df1a05d0e3bafadb7763167cc747176b6205db0d182e",
+    "visitedAt": "2026-04-18T17:22:52.424Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/tutorials/drizzle-nextjs-neon",
+    "outputPath": "output/drizzle/docs/tutorials/drizzle-nextjs-neon/index.md",
+    "title": "Todo App with Neon Postgres",
+    "contentHash": "aa3585f11160e03b05bf6bb453edab6bbd80c1a00442649f34536739922db5e6",
+    "visitedAt": "2026-04-18T17:22:53.452Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/tutorials/drizzle-with-neon",
+    "outputPath": "output/drizzle/docs/tutorials/drizzle-with-neon/index.md",
+    "title": "Drizzle with Neon Postgres",
+    "contentHash": "76a9da0c4ce6fc8cdb83a13c7f93a5ce60083ad33822b9b5745ad74afdbdf7df",
+    "visitedAt": "2026-04-18T17:23:16.643Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/tutorials/drizzle-with-netlify-edge-functions-supabase",
+    "outputPath": "output/drizzle/docs/tutorials/drizzle-with-netlify-edge-functions-supabase/index.md",
+    "title": "Drizzle with Netlify Edge Functions and Supabase Database",
+    "contentHash": "fc954875671fe1a3291bda95027646c3b80fc3f2ea94e2483f21b7bd8e3a9a9b",
+    "visitedAt": "2026-04-18T17:23:27.499Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/tutorials/drizzle-with-netlify-edge-functions-neon",
+    "outputPath": "output/drizzle/docs/tutorials/drizzle-with-netlify-edge-functions-neon/index.md",
+    "title": "Drizzle with Netlify Edge Functions and Neon Postgres",
+    "contentHash": "f8bd73350405c589db5cefd4f18024a24a698ec41bfca6fd5dd2df1bb4658baf",
+    "visitedAt": "2026-04-18T17:23:28.022Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/tutorials/drizzle-with-nile",
+    "outputPath": "output/drizzle/docs/tutorials/drizzle-with-nile/index.md",
+    "title": "Drizzle with Nile Database",
+    "contentHash": "afc10e3d599529fda2bb975b867c903e7cc80b29fe85fb3031560418b219f5ae",
+    "visitedAt": "2026-04-18T17:23:51.541Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/tutorials/drizzle-with-supabase-edge-functions",
+    "outputPath": "output/drizzle/docs/tutorials/drizzle-with-supabase-edge-functions/index.md",
+    "title": "Drizzle with Supabase Edge Functions",
+    "contentHash": "54cbfbc3a564f5a2ce51eec6862e2fa090ae0b21e4f9d354320b1a3b7d1e2c8b",
+    "visitedAt": "2026-04-18T17:24:02.432Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/tutorials/drizzle-with-supabase",
+    "outputPath": "output/drizzle/docs/tutorials/drizzle-with-supabase/index.md",
+    "title": "Drizzle with Supabase Database",
+    "contentHash": "6895a2653fdd15bd1b2457e8a5b826a9861a5abecdf13b7531e5def913842f31",
+    "visitedAt": "2026-04-18T17:24:03.144Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/tutorials/drizzle-with-turso",
+    "outputPath": "output/drizzle/docs/tutorials/drizzle-with-turso/index.md",
+    "title": "Drizzle with Turso",
+    "contentHash": "3b0970dcc35119bd31de98622397a0ef02afed5e7380cf1c03bf36ace0d3d6bc",
+    "visitedAt": "2026-04-18T17:24:26.223Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/tutorials/drizzle-with-vercel",
+    "outputPath": "output/drizzle/docs/tutorials/drizzle-with-vercel/index.md",
+    "title": "Drizzle with Vercel Postgres",
+    "contentHash": "3e2ce21159de388a902d9f496f865ec881cded10aaa95d2b5f971af934c14046",
+    "visitedAt": "2026-04-18T17:24:37.774Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/tutorials/drizzle-with-vercel-edge-functions",
+    "outputPath": "output/drizzle/docs/tutorials/drizzle-with-vercel-edge-functions/index.md",
+    "title": "Drizzle with Vercel Edge Functions",
+    "contentHash": "074d5704f61620ac6d7694aac2be4179ab251a9d6b259dbd067ea3c8b5642096",
+    "visitedAt": "2026-04-18T17:24:39.664Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/tutorials/drizzle-with-xata",
+    "outputPath": "output/drizzle/docs/tutorials/drizzle-with-xata/index.md",
+    "title": "Drizzle with Xata",
+    "contentHash": "7f6db9be396eeb62107549f1794a4bc297b7e03945efa2e5dd92b81b8cbb1e10",
+    "visitedAt": "2026-04-18T17:25:00.830Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/typebox",
+    "outputPath": "output/drizzle/docs/typebox/index.md",
+    "title": "typebox",
+    "contentHash": "f6e604633376259248bc52d65a28c260ed5086f825a80eb113fd5b24d06e7130",
+    "visitedAt": "2026-04-18T17:25:12.750Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/tutorials/node-railway-pg",
+    "outputPath": "output/drizzle/docs/tutorials/node-railway-pg/index.md",
+    "title": "Drizzle with Node.js and PostgreSQL on Railway",
+    "contentHash": "9bd8dffea481bfb0444e1cbb66e6c3e26b65b9ecee7f8d38cf8587088593db1c",
+    "visitedAt": "2026-04-18T17:25:14.107Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/typebox-legacy",
+    "outputPath": "output/drizzle/docs/typebox-legacy/index.md",
+    "title": "typebox-legacy",
+    "contentHash": "1666f9c09951e067db095e8692f2271501c5198e9f25cad7a28a82eb8d72990f",
+    "visitedAt": "2026-04-18T17:25:36.340Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/update",
+    "outputPath": "output/drizzle/docs/update/index.md",
+    "title": "SQL Update",
+    "contentHash": "302960a4af5accdcd59f41817a3781cb669fcf24d23a8781cf2ed198e454b47e",
+    "visitedAt": "2026-04-18T17:25:46.668Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/upgrade-v1",
+    "outputPath": "output/drizzle/docs/upgrade-v1/index.md",
+    "title": "Upgrading to Drizzle v1 RC",
+    "contentHash": "081f6a3b2fa5d01c11bf211e8f7d043430db0db858c4a08b40968afe62974bfb",
+    "visitedAt": "2026-04-18T17:25:47.362Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/valibot",
+    "outputPath": "output/drizzle/docs/valibot/index.md",
+    "title": "valibot",
+    "contentHash": "90815e1b5859f631aa41f4084e6fdf300643edb524d4d93a57dc10e137fe0b66",
+    "visitedAt": "2026-04-18T17:26:11.416Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/views",
+    "outputPath": "output/drizzle/docs/views/index.md",
+    "title": "Views",
+    "contentHash": "9c8899d4ad9b9c75eabfcd21c78daf88c0c8eedc43aa0945b5f329055488110c",
+    "visitedAt": "2026-04-18T17:26:21.222Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/zod",
+    "outputPath": "output/drizzle/docs/zod/index.md",
+    "title": "zod",
+    "contentHash": "71c511078c59270ce67b466f2dbd35ad79b46b193ef2bf1a539b6a4e193b3e8b",
+    "visitedAt": "2026-04-18T17:26:22.647Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/extensions/mssql",
+    "outputPath": "output/drizzle/docs/extensions/mssql/index.md",
+    "title": "404",
+    "contentHash": "100c95a213b288e6b46857abf8ce7fa8e936e9f9a1c78cbbf0b8499e507deb44",
+    "visitedAt": "2026-04-18T17:26:43.966Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/extensions/cockroach",
+    "outputPath": "output/drizzle/docs/extensions/cockroach/index.md",
+    "title": "404",
+    "contentHash": "100c95a213b288e6b46857abf8ce7fa8e936e9f9a1c78cbbf0b8499e507deb44",
+    "visitedAt": "2026-04-18T17:26:54.145Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/json-functions",
+    "outputPath": "output/drizzle/docs/json-functions/index.md",
+    "title": "404",
+    "contentHash": "100c95a213b288e6b46857abf8ce7fa8e936e9f9a1c78cbbf0b8499e507deb44",
+    "visitedAt": "2026-04-18T17:26:55.148Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/rqb-fundamentals",
+    "outputPath": "output/drizzle/docs/rqb-fundamentals/index.md",
+    "title": "404",
+    "contentHash": "100c95a213b288e6b46857abf8ce7fa8e936e9f9a1c78cbbf0b8499e507deb44",
+    "visitedAt": "2026-04-18T17:27:16.504Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/docs/drizzle-config-file",
+    "outputPath": "output/drizzle/docs/docs/drizzle-config-file/index.md",
+    "title": "404",
+    "contentHash": "100c95a213b288e6b46857abf8ce7fa8e936e9f9a1c78cbbf0b8499e507deb44",
+    "visitedAt": "2026-04-18T17:27:26.660Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://orm.drizzle.team/docs/drizzle-studio/overview",
+    "outputPath": "output/drizzle/docs/drizzle-studio/overview/index.md",
+    "title": "404",
+    "contentHash": "100c95a213b288e6b46857abf8ce7fa8e936e9f9a1c78cbbf0b8499e507deb44",
+    "visitedAt": "2026-04-18T17:27:27.657Z",
+    "status": "visited"
+  }
+]

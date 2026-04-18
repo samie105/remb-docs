@@ -1,0 +1,1129 @@
+[
+  {
+    "url": "https://www.prisma.io/docs/orm/core-concepts/api-patterns",
+    "outputPath": "output/prisma/docs/orm/core-concepts/api-patterns/index.md",
+    "title": "API patterns",
+    "contentHash": "73f6e181716aa3f1502a0e6cb97159290966003fe06139424ea0a22ffb2d8743",
+    "visitedAt": "2026-04-18T16:32:07.080Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm",
+    "outputPath": "output/prisma/docs/orm/index.md",
+    "title": "Prisma ORM",
+    "contentHash": "96a35d5f7e31f1c1ad11cc362caa36a9eb93c84dbc33add3838e81aa8ce131da",
+    "visitedAt": "2026-04-18T16:32:11.908Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/core-concepts/data-modeling",
+    "outputPath": "output/prisma/docs/orm/core-concepts/data-modeling/index.md",
+    "title": "Data modeling",
+    "contentHash": "33843c9ff824d8f4fdacda27a147461c61d9c4d6098fb44583811b0684873e14",
+    "visitedAt": "2026-04-18T16:32:21.145Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/more/releases",
+    "outputPath": "output/prisma/docs/orm/more/releases/index.md",
+    "title": "ORM releases and maturity levels",
+    "contentHash": "aa1f9b2941b56196645f9f641a5e49e4da152a6fabbecf3c7a88b1984a099776",
+    "visitedAt": "2026-04-18T16:32:40.718Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/more/best-practices",
+    "outputPath": "output/prisma/docs/orm/more/best-practices/index.md",
+    "title": "Best practices",
+    "contentHash": "eb98809dfa9f4bea64ea14b752f08cc2f07562bb66f8d00ab54da935045adbfa",
+    "visitedAt": "2026-04-18T16:32:53.917Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/prisma-migrate/getting-started",
+    "outputPath": "output/prisma/docs/orm/prisma-migrate/getting-started/index.md",
+    "title": "Getting started with Prisma Migrate",
+    "contentHash": "898527a64ddd305deed44224cebcd3134b32b4c02d16c5bc512e79e2c015a896",
+    "visitedAt": "2026-04-18T16:33:06.536Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/prisma-migrate",
+    "outputPath": "output/prisma/docs/orm/prisma-migrate/index.md",
+    "title": "Overview of Prisma Migrate",
+    "contentHash": "0c5cffa89ca1ea8adaa7ddf2e996c008b6f829ad03134fbf4b8a6696f7626f5c",
+    "visitedAt": "2026-04-18T16:33:26.785Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/prisma-schema/introspection",
+    "outputPath": "output/prisma/docs/orm/prisma-schema/introspection/index.md",
+    "title": "What is introspection?",
+    "contentHash": "abec3b4ec29b4dc392e71f3988048942787593f7b1ee4d86021f2dd43069d502",
+    "visitedAt": "2026-04-18T16:33:45.587Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/prisma-schema/postgresql-extensions",
+    "outputPath": "output/prisma/docs/orm/prisma-schema/postgresql-extensions/index.md",
+    "title": "PostgreSQL extensions",
+    "contentHash": "117faacedb0b03ea0306fa6fd479a01b1385980ec5dd98c167270f287cdd951e",
+    "visitedAt": "2026-04-18T16:33:53.036Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/reference/database-features",
+    "outputPath": "output/prisma/docs/orm/reference/database-features/index.md",
+    "title": "Database Features",
+    "contentHash": "ba6c6419f0291814bfeb4c9dd5f254a657d3a273f641ac4d9b011060589630ba",
+    "visitedAt": "2026-04-18T16:34:13.297Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/reference/connection-urls",
+    "outputPath": "output/prisma/docs/orm/reference/connection-urls/index.md",
+    "title": "Connection URLs",
+    "contentHash": "160454ed59b21e7ea34817d0bf55c18182700a6d5314048ebbc31460ecf6b0e7",
+    "visitedAt": "2026-04-18T16:34:21.127Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/reference/environment-variables-reference",
+    "outputPath": "output/prisma/docs/orm/reference/environment-variables-reference/index.md",
+    "title": "Environment Variables",
+    "contentHash": "31c3a5f431c4a558b38e83a90b33e86b4b77854a463e39f92ce484727afe0c1d",
+    "visitedAt": "2026-04-18T16:34:31.247Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/reference/error-reference",
+    "outputPath": "output/prisma/docs/orm/reference/error-reference/index.md",
+    "title": "Error Reference",
+    "contentHash": "ce2e1742567303981e02a7ab4665eccb3d2c1058c54f3e4965e5ea395e8b360a",
+    "visitedAt": "2026-04-18T16:35:10.819Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/reference/prisma-cli-reference",
+    "outputPath": "output/prisma/docs/orm/reference/prisma-cli-reference/index.md",
+    "title": "Prisma CLI reference",
+    "contentHash": "8857d3e0cb0da1aae76c7136e782fc01d9ebc6dce688dab8d042f9768779aadd",
+    "visitedAt": "2026-04-18T16:35:48.904Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/reference/prisma-config-reference",
+    "outputPath": "output/prisma/docs/orm/reference/prisma-config-reference/index.md",
+    "title": "Config API",
+    "contentHash": "6b428deb1f183b51077023337c7710b633ecf4cbae0e388e7570c9700946f64a",
+    "visitedAt": "2026-04-18T16:36:16.981Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/reference/supported-databases",
+    "outputPath": "output/prisma/docs/orm/reference/supported-databases/index.md",
+    "title": "Supported databases",
+    "contentHash": "7f66d642f175ff257c6f7787f0f4a7246766a53801e354b5aa86ead73a784282",
+    "visitedAt": "2026-04-18T16:36:39.596Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/reference/system-requirements",
+    "outputPath": "output/prisma/docs/orm/reference/system-requirements/index.md",
+    "title": "System requirements",
+    "contentHash": "e559dd78cffcd14235d67ea93d29074197776bc7672b1fc0c5d0cafeaadbbdbe",
+    "visitedAt": "2026-04-18T16:37:18.706Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/core-concepts/supported-databases/database-drivers",
+    "outputPath": "output/prisma/docs/orm/core-concepts/supported-databases/database-drivers/index.md",
+    "title": "Database drivers",
+    "contentHash": "3113b0f20d9dfe5aed4292e9d4b7375399beaedaed6f38100c25e06c27c0f90a",
+    "visitedAt": "2026-04-18T16:37:52.223Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/reference/prisma-client-reference",
+    "outputPath": "output/prisma/docs/orm/reference/prisma-client-reference/index.md",
+    "title": "Prisma Client API",
+    "contentHash": "ec639f776bbeb8679d2ef6d476b3e24ecc00fe08043d99b3188b25bea1f1e13f",
+    "visitedAt": "2026-04-18T16:39:37.309Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/reference/prisma-schema-reference",
+    "outputPath": "output/prisma/docs/orm/reference/prisma-schema-reference/index.md",
+    "title": "Schema API",
+    "contentHash": "c945f6c396b286f35cdf1bfc6c5701cab214b46d647e3a6191f563c9dcc7b88a",
+    "visitedAt": "2026-04-18T16:40:19.756Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/core-concepts/supported-databases",
+    "outputPath": "output/prisma/docs/orm/core-concepts/supported-databases/index.md",
+    "visitedAt": "2026-04-18T16:40:25.735Z",
+    "status": "failed",
+    "error": "page.goto: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://www.prisma.io/docs/orm/core-concepts/supported-databases\", waiting until \"domcontentloaded\"\u001b[22m\n"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/core-concepts/supported-databases/mysql",
+    "outputPath": "output/prisma/docs/orm/core-concepts/supported-databases/mysql/index.md",
+    "title": "MySQL",
+    "contentHash": "ceb2d1e67d52c96ece9db672cc83727ca21508c9d6e753035361e8614c99fa03",
+    "visitedAt": "2026-04-18T16:40:53.402Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/core-concepts/supported-databases/postgresql",
+    "outputPath": "output/prisma/docs/orm/core-concepts/supported-databases/postgresql/index.md",
+    "title": "PostgreSQL",
+    "contentHash": "462d165278c52e13d5fc2f75ff169d9da55ab103f06ad8e7b87697b75814288f",
+    "visitedAt": "2026-04-18T16:41:08.902Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/core-concepts/supported-databases/mongodb",
+    "outputPath": "output/prisma/docs/orm/core-concepts/supported-databases/mongodb/index.md",
+    "title": "MongoDB",
+    "contentHash": "be65159826ef2266994bc302eb363465d5d055cc076b7a6d9256b4d4228871ee",
+    "visitedAt": "2026-04-18T16:41:16.522Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/core-concepts/supported-databases/sql-server",
+    "outputPath": "output/prisma/docs/orm/core-concepts/supported-databases/sql-server/index.md",
+    "title": "SQL Server",
+    "contentHash": "11c66367f58eacf92fd582f17b1fc9c37db1d54755952aa2d4454b87b6ff22e0",
+    "visitedAt": "2026-04-18T16:41:27.552Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/core-concepts/supported-databases/sqlite",
+    "outputPath": "output/prisma/docs/orm/core-concepts/supported-databases/sqlite/index.md",
+    "title": "SQLite",
+    "contentHash": "2bea168d9d2889db5a30043b70aa61f7ba66f8342f84b338823ac3cc2203f6a4",
+    "visitedAt": "2026-04-18T16:41:44.580Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/more/comparisons/prisma-and-drizzle",
+    "outputPath": "output/prisma/docs/orm/more/comparisons/prisma-and-drizzle/index.md",
+    "title": "Drizzle",
+    "contentHash": "16bf43f6ed9ab83a85192b73b8e1f976221ed1a5a5d112ff13de7018cc2d591a",
+    "visitedAt": "2026-04-18T16:41:51.275Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/more/comparisons/prisma-and-mongoose",
+    "outputPath": "output/prisma/docs/orm/more/comparisons/prisma-and-mongoose/index.md",
+    "title": "Mongoose",
+    "contentHash": "43ee432bf03d141a564e7c787d29d2ba5ae6ecf2ede17cde23fe6cccbd37bb9f",
+    "visitedAt": "2026-04-18T16:42:01.972Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/more/comparisons/prisma-and-sequelize",
+    "outputPath": "output/prisma/docs/orm/more/comparisons/prisma-and-sequelize/index.md",
+    "title": "Sequelize",
+    "contentHash": "519aa31e94e1b02d0b2551505e293e05d4a4ace044f8b5b0fb6bf66cf41ab3ba",
+    "visitedAt": "2026-04-18T16:42:18.673Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/more/dev-environment/editor-setup",
+    "outputPath": "output/prisma/docs/orm/more/dev-environment/editor-setup/index.md",
+    "title": "Editor setup",
+    "contentHash": "990a166f76e6b7ee2a8515bf8b550be89535f7994ae925d718c3f51c7bd72917",
+    "visitedAt": "2026-04-18T16:42:30.180Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/more/comparisons/prisma-and-typeorm",
+    "outputPath": "output/prisma/docs/orm/more/comparisons/prisma-and-typeorm/index.md",
+    "title": "TypeORM",
+    "contentHash": "913accea346d171433144aefa1318fd68e52c14db789a59f16975fabc32d68c7",
+    "visitedAt": "2026-04-18T16:42:46.229Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/more/dev-environment/environment-variables",
+    "outputPath": "output/prisma/docs/orm/more/dev-environment/environment-variables/index.md",
+    "title": "Environment variables",
+    "contentHash": "295c6e8ab7fbf59168a39c923f738e726cd2e3e7c37692f6767655c37dd29003",
+    "visitedAt": "2026-04-18T16:42:59.741Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/more/troubleshooting/bundler-issues",
+    "outputPath": "output/prisma/docs/orm/more/troubleshooting/bundler-issues/index.md",
+    "title": "Bundler issues",
+    "contentHash": "31c5419181eda0753cfb3087922e651f14a25f88417f5cd0d3ca8bddf12420f2",
+    "visitedAt": "2026-04-18T16:43:12.664Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/more/troubleshooting/check-constraints",
+    "outputPath": "output/prisma/docs/orm/more/troubleshooting/check-constraints/index.md",
+    "title": "Check constraints",
+    "contentHash": "eaff84a9df727fd52b9f1d092070a9458a8d531cff895c535c4c825d8073b852",
+    "visitedAt": "2026-04-18T16:43:21.145Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/more/troubleshooting/graphql-autocompletion",
+    "outputPath": "output/prisma/docs/orm/more/troubleshooting/graphql-autocompletion/index.md",
+    "title": "GraphQL autocompletion",
+    "contentHash": "121ce0ac3b2438a9986e54eb79e095e0c31da07c1904f54554e64fdd66517ffc",
+    "visitedAt": "2026-04-18T16:43:36.259Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/more/troubleshooting/nextjs",
+    "outputPath": "output/prisma/docs/orm/more/troubleshooting/nextjs/index.md",
+    "title": "Next.js",
+    "contentHash": "ce50e0d8a72c3ad1b2423d8ab714cfefa22d0f249e9ed441e903020c4815ed29",
+    "visitedAt": "2026-04-18T16:43:47.125Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/more/troubleshooting/many-to-many-relations",
+    "outputPath": "output/prisma/docs/orm/more/troubleshooting/many-to-many-relations/index.md",
+    "title": "Many-to-many relations",
+    "contentHash": "ca0bf4fd96f0ac5908b730400a5c47f79a2fca56070f90b870547e44ea82f002",
+    "visitedAt": "2026-04-18T16:43:54.898Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/more/troubleshooting/nuxt",
+    "outputPath": "output/prisma/docs/orm/more/troubleshooting/nuxt/index.md",
+    "title": "Nuxt",
+    "contentHash": "a99333805ea6eb732acfd36396b48c9fa86f5196b440383bb39507e5d9b77f98",
+    "visitedAt": "2026-04-18T16:44:05.461Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/more/troubleshooting/typescript-performance",
+    "outputPath": "output/prisma/docs/orm/more/troubleshooting/typescript-performance/index.md",
+    "title": "TypeScript performance",
+    "contentHash": "9a6ae3cbc2239f1cc634e284c41227581703a2e2809e382d2693a96301810ca7",
+    "visitedAt": "2026-04-18T16:44:17.351Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/more/troubleshooting/raw-sql-comparisons",
+    "outputPath": "output/prisma/docs/orm/more/troubleshooting/raw-sql-comparisons/index.md",
+    "title": "Raw SQL comparisons",
+    "contentHash": "1e06dc46f79bc785357930d103e48b61636acc82420b914e603e05ba0a606906",
+    "visitedAt": "2026-04-18T16:44:20.495Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/prisma-client/client-extensions/client",
+    "outputPath": "output/prisma/docs/orm/prisma-client/client-extensions/client/index.md",
+    "title": "Add methods to Prisma Client",
+    "contentHash": "85d310bc90cfbf0f140a58d1866313c0b323639ac68f2a380c1fc5bc2cd6ec6d",
+    "visitedAt": "2026-04-18T16:44:25.471Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/prisma-client/client-extensions/model",
+    "outputPath": "output/prisma/docs/orm/prisma-client/client-extensions/model/index.md",
+    "title": "Add custom methods to your models",
+    "contentHash": "7743574f3f15be80225286a998bebe7fced739f2219123320d7c1654af5c78bc",
+    "visitedAt": "2026-04-18T16:44:41.144Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/prisma-client/client-extensions/extension-examples",
+    "outputPath": "output/prisma/docs/orm/prisma-client/client-extensions/extension-examples/index.md",
+    "title": "Shared packages & examples",
+    "contentHash": "a13120aadfc3d6b7ece6977d41f2e300a6b6f56917d27481b6ebf526b683b211",
+    "visitedAt": "2026-04-18T16:44:44.283Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/prisma-client/client-extensions",
+    "outputPath": "output/prisma/docs/orm/prisma-client/client-extensions/index.md",
+    "title": "What are Client Extensions",
+    "contentHash": "f65a15d2d100c80bbaf39ce60f6744a1c1fa595c39c548a1aa3c71336022d670",
+    "visitedAt": "2026-04-18T16:44:50.116Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/prisma-client/client-extensions/result",
+    "outputPath": "output/prisma/docs/orm/prisma-client/client-extensions/result/index.md",
+    "title": "Add custom fields and methods to query results",
+    "contentHash": "288b11f220b0fd092a82cf707a89ba43cf6bea02c44b64426f323b79ffbe5c7e",
+    "visitedAt": "2026-04-18T16:45:06.632Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/prisma-client/client-extensions/type-utilities",
+    "outputPath": "output/prisma/docs/orm/prisma-client/client-extensions/type-utilities/index.md",
+    "title": "Type utilities",
+    "contentHash": "abce144a704eda2abb3663418b9ed7f0758ce7a9c395e36d2b40972e2eabe915",
+    "visitedAt": "2026-04-18T16:45:14.002Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/prisma-client/client-extensions/query",
+    "outputPath": "output/prisma/docs/orm/prisma-client/client-extensions/query/index.md",
+    "title": "Create custom Prisma Client queries",
+    "contentHash": "c1ca9e136e7b916668c2e1cfba864bbbee1efb6cc349f610737000b61e03e0bf",
+    "visitedAt": "2026-04-18T16:45:19.752Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/prisma-client/debugging-and-troubleshooting/debugging",
+    "outputPath": "output/prisma/docs/orm/prisma-client/debugging-and-troubleshooting/debugging/index.md",
+    "title": "Debugging",
+    "contentHash": "6791935c78e247069cc2ee87e8f13a181f0482159894797873c994c2e2929758",
+    "visitedAt": "2026-04-18T16:45:28.695Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/prisma-client/debugging-and-troubleshooting/handling-exceptions-and-errors",
+    "outputPath": "output/prisma/docs/orm/prisma-client/debugging-and-troubleshooting/handling-exceptions-and-errors/index.md",
+    "title": "Handling exceptions and errors",
+    "contentHash": "a1ef1331a287eb8ed4874e4dd85f198472a63ebbd786424e81982003d1e24f33",
+    "visitedAt": "2026-04-18T16:45:35.500Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/prisma-client/deployment/caveats-when-deploying-to-aws-platforms",
+    "outputPath": "output/prisma/docs/orm/prisma-client/deployment/caveats-when-deploying-to-aws-platforms/index.md",
+    "title": "Caveats when deploying to AWS platforms",
+    "contentHash": "44287f8ed768e8de6c6f6857a6df84b8c66f314fc21d2be12a3717f916ce8626",
+    "visitedAt": "2026-04-18T16:45:38.434Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/prisma-client/deployment/deploy-database-changes-with-prisma-migrate",
+    "outputPath": "output/prisma/docs/orm/prisma-client/deployment/deploy-database-changes-with-prisma-migrate/index.md",
+    "title": "Deploying database changes with Prisma Migrate",
+    "contentHash": "31d75ff5386e72003610d15782b2d5086e0c11d0254349618906beb3d4420309",
+    "visitedAt": "2026-04-18T16:45:48.535Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/prisma-client/deployment/deploy-migrations-from-a-local-environment",
+    "outputPath": "output/prisma/docs/orm/prisma-client/deployment/deploy-migrations-from-a-local-environment/index.md",
+    "title": "Deploy migrations from a local environment",
+    "contentHash": "83e021b30e11f7561f47bb444b357a751191e5330d38050c18c237843f9f1cd2",
+    "visitedAt": "2026-04-18T16:45:52.405Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/prisma-client/deployment/deploy-prisma",
+    "outputPath": "output/prisma/docs/orm/prisma-client/deployment/deploy-prisma/index.md",
+    "title": "Deploy Prisma ORM",
+    "contentHash": "03e655e472215c125c9269c2db31605bbf2c2d8cf7d30125e8bc1e9871cf284f",
+    "visitedAt": "2026-04-18T16:45:55.913Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/prisma-client/observability-and-logging/logging",
+    "outputPath": "output/prisma/docs/orm/prisma-client/observability-and-logging/logging/index.md",
+    "title": "Logging",
+    "contentHash": "14ef923b7ea0cbf75fde659fe4f349a978d97ef747493f01fcee188d53248547",
+    "visitedAt": "2026-04-18T16:46:08.643Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/prisma-client/observability-and-logging/opentelemetry-tracing",
+    "outputPath": "output/prisma/docs/orm/prisma-client/observability-and-logging/opentelemetry-tracing/index.md",
+    "title": "OpenTelemetry tracing",
+    "contentHash": "cf0ee18e08915c144bb4d23ab28380abb406bfd81ae020b368c67852a0a49633",
+    "visitedAt": "2026-04-18T16:46:17.050Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/prisma-client/observability-and-logging/sql-comments",
+    "outputPath": "output/prisma/docs/orm/prisma-client/observability-and-logging/sql-comments/index.md",
+    "title": "SQL comments",
+    "contentHash": "a765ff3417b250a4c78210101427058d57d0f4786104665710c1952d5142eeae",
+    "visitedAt": "2026-04-18T16:46:29.949Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/prisma-client/queries/crud",
+    "outputPath": "output/prisma/docs/orm/prisma-client/queries/crud/index.md",
+    "title": "CRUD",
+    "contentHash": "0a58a46fe33c5a52879d4ee8a5c04df25799802777d826d5b2064ff6a20cfe1d",
+    "visitedAt": "2026-04-18T16:46:40.252Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/prisma-client/queries/aggregation-grouping-summarizing",
+    "outputPath": "output/prisma/docs/orm/prisma-client/queries/aggregation-grouping-summarizing/index.md",
+    "title": "Aggregation, grouping, and summarizing",
+    "contentHash": "23683febcfa2e79b3193ad9d17aafdf5317ae74eba01bec55d671a1df40b8b8f",
+    "visitedAt": "2026-04-18T16:46:47.557Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/prisma-client/queries/relation-queries",
+    "outputPath": "output/prisma/docs/orm/prisma-client/queries/relation-queries/index.md",
+    "title": "CRUD",
+    "contentHash": "0a58a46fe33c5a52879d4ee8a5c04df25799802777d826d5b2064ff6a20cfe1d",
+    "visitedAt": "2026-04-18T16:46:56.684Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/prisma-client/setup-and-configuration/custom-model-and-field-names",
+    "outputPath": "output/prisma/docs/orm/prisma-client/setup-and-configuration/custom-model-and-field-names/index.md",
+    "title": "Custom model and field names",
+    "contentHash": "65f0c1892cb0602d48fb3dd8fc7863d5381d21097250b4d84cd23beb1070bdb1",
+    "visitedAt": "2026-04-18T16:47:12.130Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/prisma-client/setup-and-configuration/database-polyfills",
+    "outputPath": "output/prisma/docs/orm/prisma-client/setup-and-configuration/database-polyfills/index.md",
+    "title": "Database polyfills",
+    "contentHash": "7a37d99f236a93e4eb8956a2e5d366d3205157a66f3a0435b473c8d2036c432a",
+    "visitedAt": "2026-04-18T16:47:19.158Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/prisma-client/queries/transactions",
+    "outputPath": "output/prisma/docs/orm/prisma-client/queries/transactions/index.md",
+    "title": "Transactions and batch queries",
+    "contentHash": "36ae2eef89c88664d12a43e6207989bb6b9834f82276a2850bb5c4be80c3db4b",
+    "visitedAt": "2026-04-18T16:47:26.552Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/prisma-client/setup-and-configuration/error-formatting",
+    "outputPath": "output/prisma/docs/orm/prisma-client/setup-and-configuration/error-formatting/index.md",
+    "title": "Configuring error formatting",
+    "contentHash": "0c25d5fe88e267aac35d65b19ffbfab7c4afd5ef7477bd134597b76629c8e5c1",
+    "visitedAt": "2026-04-18T16:47:31.251Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/prisma-client/setup-and-configuration/introduction",
+    "outputPath": "output/prisma/docs/orm/prisma-client/setup-and-configuration/introduction/index.md",
+    "title": "Introduction to Prisma Client",
+    "contentHash": "1579fda72140eddb34d411862f4e90fa2a9094bf9d67c45944cc5b49a1ca970c",
+    "visitedAt": "2026-04-18T16:47:37.875Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/prisma-client/setup-and-configuration/read-replicas",
+    "outputPath": "output/prisma/docs/orm/prisma-client/setup-and-configuration/read-replicas/index.md",
+    "title": "Read replicas",
+    "contentHash": "8a085ff23774153e99cc1befc953de407fd86c62e74d3a4813ea94bfda74263d",
+    "visitedAt": "2026-04-18T16:47:41.824Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/prisma-client/special-fields-and-types",
+    "outputPath": "output/prisma/docs/orm/prisma-client/special-fields-and-types/index.md",
+    "title": "Fields & types",
+    "contentHash": "98e3444e92f30c85baa77c8cb51ee8cc3b65ca23dc225ece40cca915b45cbbe8",
+    "visitedAt": "2026-04-18T16:47:52.850Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/prisma-client/special-fields-and-types/composite-types",
+    "outputPath": "output/prisma/docs/orm/prisma-client/special-fields-and-types/composite-types/index.md",
+    "title": "Composite types",
+    "contentHash": "2b7f09314a9d546f0970734eddfb687e595504bdc0ef4bc79077c3b0fe6c66ce",
+    "visitedAt": "2026-04-18T16:48:02.507Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/prisma-client/special-fields-and-types/null-and-undefined",
+    "outputPath": "output/prisma/docs/orm/prisma-client/special-fields-and-types/null-and-undefined/index.md",
+    "title": "Null and undefined",
+    "contentHash": "56f8dfbc50b36b9e0f97e1b9c16bb23e2bf2d9408c9dc4376516614f6b2ea4c6",
+    "visitedAt": "2026-04-18T16:48:06.401Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/prisma-client/special-fields-and-types/working-with-composite-ids-and-constraints",
+    "outputPath": "output/prisma/docs/orm/prisma-client/special-fields-and-types/working-with-composite-ids-and-constraints/index.md",
+    "title": "Working with compound IDs and unique constraints",
+    "contentHash": "64531b69e8a2f1c9f35b4c5176f0ff856eb57ab81721869c0c43d530b1061425",
+    "visitedAt": "2026-04-18T16:48:14.212Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/prisma-client/special-fields-and-types/working-with-scalar-lists-arrays",
+    "outputPath": "output/prisma/docs/orm/prisma-client/special-fields-and-types/working-with-scalar-lists-arrays/index.md",
+    "title": "Working with scalar lists",
+    "contentHash": "fffc6f2322586017758430a547e36cd0ead904656928deea7c4fdee9ae7fe7a9",
+    "visitedAt": "2026-04-18T16:48:27.885Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/prisma-client/special-fields-and-types/working-with-json-fields",
+    "outputPath": "output/prisma/docs/orm/prisma-client/special-fields-and-types/working-with-json-fields/index.md",
+    "title": "Working with Json fields",
+    "contentHash": "e5e46272122d3fcc5c6c7a0b60f59638776c7df2502fefba9d715a33e0bdf096",
+    "visitedAt": "2026-04-18T16:48:38.482Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/prisma-client/special-fields-and-types/working-with-geometry-fields",
+    "outputPath": "output/prisma/docs/orm/prisma-client/special-fields-and-types/working-with-geometry-fields/index.md",
+    "title": "Working with geometry fields",
+    "contentHash": "b2e1d715814ddea34990c1654f0f96d2c3c2f0796c37ef6f3b7cb2ce3eaa318d",
+    "visitedAt": "2026-04-18T16:48:47.908Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/prisma-client/testing/integration-testing",
+    "outputPath": "output/prisma/docs/orm/prisma-client/testing/integration-testing/index.md",
+    "title": "Integration testing",
+    "contentHash": "4271e2f25892631c3e24445add22e8b8eac6b83b3885fee12d8b9f5de70cf774",
+    "visitedAt": "2026-04-18T16:48:58.045Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/prisma-client/testing/unit-testing",
+    "outputPath": "output/prisma/docs/orm/prisma-client/testing/unit-testing/index.md",
+    "title": "Unit testing",
+    "contentHash": "e718e18ed6ce9b48af87dc5575c9b890ed9f4df207b9e3c10a1be56e52090aed",
+    "visitedAt": "2026-04-18T16:49:05.651Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/prisma-client/type-safety",
+    "outputPath": "output/prisma/docs/orm/prisma-client/type-safety/index.md",
+    "title": "Type safety Overview",
+    "contentHash": "1101598ba2505eb4a24636473af3f8af2df076717e1ac2963368b37b59379bd7",
+    "visitedAt": "2026-04-18T16:49:09.357Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/prisma-client/type-safety/operating-against-partial-structures-of-model-types",
+    "outputPath": "output/prisma/docs/orm/prisma-client/type-safety/operating-against-partial-structures-of-model-types/index.md",
+    "title": "Operating against partial structures of your model types",
+    "contentHash": "da3f9705bf84b24b0f12c3a173fd996ac205650a9ba26651232ac1d9ebf0b14b",
+    "visitedAt": "2026-04-18T16:49:17.885Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/prisma-client/using-raw-sql",
+    "outputPath": "output/prisma/docs/orm/prisma-client/using-raw-sql/index.md",
+    "title": "Write your own SQL",
+    "contentHash": "907e56204a650cf9fc86fab319371c789ecb0b3b25bad67450419f7e35567faf",
+    "visitedAt": "2026-04-18T16:49:28.104Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/prisma-client/type-safety/prisma-type-system",
+    "outputPath": "output/prisma/docs/orm/prisma-client/type-safety/prisma-type-system/index.md",
+    "title": "How to use Prisma ORM's type system",
+    "contentHash": "4d9033f200676d3e42b7518f556517f7e3c7e27305dae2048c99fcf2ce101a95",
+    "visitedAt": "2026-04-18T16:49:33.939Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/prisma-client/using-raw-sql/raw-queries",
+    "outputPath": "output/prisma/docs/orm/prisma-client/using-raw-sql/raw-queries/index.md",
+    "title": "Raw queries",
+    "contentHash": "8f4c209a96ee73db49d1c80f3a227b14678b84d98dd16a7259fc1078f2c9e99e",
+    "visitedAt": "2026-04-18T16:49:48.613Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/prisma-client/using-raw-sql/safeql",
+    "outputPath": "output/prisma/docs/orm/prisma-client/using-raw-sql/safeql/index.md",
+    "title": "SafeQL & Prisma Client",
+    "contentHash": "118b1d1428522256777ba14d8c1dc90c98c273137a83a8a5ac55755c36153602",
+    "visitedAt": "2026-04-18T16:49:51.576Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/prisma-client/using-raw-sql/typedsql",
+    "outputPath": "output/prisma/docs/orm/prisma-client/using-raw-sql/typedsql/index.md",
+    "title": "TypedSQL",
+    "contentHash": "7f2b6c30769e1755648033429a988d6706768f169a9250d1b5d4c1021e6c75bb",
+    "visitedAt": "2026-04-18T16:49:55.809Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/prisma-migrate/understanding-prisma-migrate/limitations-and-known-issues",
+    "outputPath": "output/prisma/docs/orm/prisma-migrate/understanding-prisma-migrate/limitations-and-known-issues/index.md",
+    "title": "Limitations and known issues",
+    "contentHash": "15fa3c3245fa08d6b873f6db604782a89f797dde330f3b7f59ccc09341d1e01d",
+    "visitedAt": "2026-04-18T16:50:03.331Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/prisma-migrate/understanding-prisma-migrate/mental-model",
+    "outputPath": "output/prisma/docs/orm/prisma-migrate/understanding-prisma-migrate/mental-model/index.md",
+    "title": "Understanding Migrations",
+    "contentHash": "3d58b7b8165dd47c09ae9e56eecf7798f29ce3b02bee83104b2bfc281b007aef",
+    "visitedAt": "2026-04-18T16:50:10.885Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/prisma-migrate/understanding-prisma-migrate/migration-histories",
+    "outputPath": "output/prisma/docs/orm/prisma-migrate/understanding-prisma-migrate/migration-histories/index.md",
+    "title": "Migration histories",
+    "contentHash": "f837bc939099da84baebfa4c80f51642c18a4993edb7bde1c71400914c16afcc",
+    "visitedAt": "2026-04-18T16:50:14.690Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/prisma-migrate/understanding-prisma-migrate/shadow-database",
+    "outputPath": "output/prisma/docs/orm/prisma-migrate/understanding-prisma-migrate/shadow-database/index.md",
+    "title": "About the shadow database",
+    "contentHash": "52c38d0628fe8560b200a1f9775376b3af5e52539a7f5069b652c5421c7b4d24",
+    "visitedAt": "2026-04-18T16:50:19.822Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/prisma-migrate/workflows/baselining",
+    "outputPath": "output/prisma/docs/orm/prisma-migrate/workflows/baselining/index.md",
+    "title": "Baselining a database",
+    "contentHash": "f64c6435be05f797328079debed879765989ead033e3d575c01bac15e3c93e44",
+    "visitedAt": "2026-04-18T16:50:29.043Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/prisma-migrate/workflows/customizing-migrations",
+    "outputPath": "output/prisma/docs/orm/prisma-migrate/workflows/customizing-migrations/index.md",
+    "title": "Customizing migrations",
+    "contentHash": "39d5fe6479e64215cf429205f56ac4076c832f4f70b683bdaca3902642624fd5",
+    "visitedAt": "2026-04-18T16:50:37.180Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/prisma-migrate/workflows/development-and-production",
+    "outputPath": "output/prisma/docs/orm/prisma-migrate/workflows/development-and-production/index.md",
+    "title": "Development and production",
+    "contentHash": "8b3d543889aff9c319d32722d6d085eccbd15ab10eabeb53b563a81209484ada",
+    "visitedAt": "2026-04-18T16:50:40.933Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/prisma-migrate/workflows/generating-down-migrations",
+    "outputPath": "output/prisma/docs/orm/prisma-migrate/workflows/generating-down-migrations/index.md",
+    "title": "Generating down migrations",
+    "contentHash": "21960e2d74b3853605a5b62bfbd6e478c94fdacce92b3c8ad4301542a5fbcf7e",
+    "visitedAt": "2026-04-18T16:50:44.723Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/prisma-migrate/workflows/native-database-functions",
+    "outputPath": "output/prisma/docs/orm/prisma-migrate/workflows/native-database-functions/index.md",
+    "title": "Native database functions",
+    "contentHash": "87b866f213f51b76f011637d472326d8ea0724e01e5a7f7f2d7cfeecf1ed73ca",
+    "visitedAt": "2026-04-18T16:50:52.268Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/prisma-migrate/workflows/native-database-types",
+    "outputPath": "output/prisma/docs/orm/prisma-migrate/workflows/native-database-types/index.md",
+    "title": "Native database types",
+    "contentHash": "b6928fc7c19a41f45b1365b636fd15de7e1b87f6a0abf38ca7fbb78bd74fad71",
+    "visitedAt": "2026-04-18T16:50:56.252Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/prisma-migrate/workflows/patching-and-hotfixing",
+    "outputPath": "output/prisma/docs/orm/prisma-migrate/workflows/patching-and-hotfixing/index.md",
+    "title": "Patching & hotfixing",
+    "contentHash": "9176d4dd0e73d34b2d51b66b21daf8cbd54774306095ba809ccbf912eb7ef201",
+    "visitedAt": "2026-04-18T16:51:04.681Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/prisma-migrate/workflows/prototyping-your-schema",
+    "outputPath": "output/prisma/docs/orm/prisma-migrate/workflows/prototyping-your-schema/index.md",
+    "title": "Prototyping your schema",
+    "contentHash": "ffa2d6126f13c791e406552def3d7de5a6dcec560fed6c0b0ebfc4d4a206c708",
+    "visitedAt": "2026-04-18T16:51:11.153Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/prisma-migrate/workflows/seeding",
+    "outputPath": "output/prisma/docs/orm/prisma-migrate/workflows/seeding/index.md",
+    "title": "Seeding",
+    "contentHash": "0fb9cf8c850d7366d3fb4de2656116ada8aa549b8b738157ae1efdb0a64db8ea",
+    "visitedAt": "2026-04-18T16:51:17.760Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/prisma-migrate/workflows/squashing-migrations",
+    "outputPath": "output/prisma/docs/orm/prisma-migrate/workflows/squashing-migrations/index.md",
+    "title": "Squashing migrations",
+    "contentHash": "22b39347e7efe2d4152aa889b6e766b56a2cf04192c77fb6a2762c31cd9acf40",
+    "visitedAt": "2026-04-18T16:51:23.638Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/prisma-migrate/workflows/troubleshooting",
+    "outputPath": "output/prisma/docs/orm/prisma-migrate/workflows/troubleshooting/index.md",
+    "title": "Troubleshooting",
+    "contentHash": "1cbc32a735cc5cf9e43f524d2092756f3f972ce446c8d8268bcfc3611fef721c",
+    "visitedAt": "2026-04-18T16:51:32.443Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/prisma-migrate/workflows/unsupported-database-features",
+    "outputPath": "output/prisma/docs/orm/prisma-migrate/workflows/unsupported-database-features/index.md",
+    "title": "Unsupported database features (Prisma Migrate)",
+    "contentHash": "367458529fcfc9b4310d39921b12983207237f98e806b044c14577789115dfb6",
+    "visitedAt": "2026-04-18T16:51:37.846Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/prisma-schema/data-model/database-mapping",
+    "outputPath": "output/prisma/docs/orm/prisma-schema/data-model/database-mapping/index.md",
+    "title": "Database mapping",
+    "contentHash": "a1c8ee2670ece3cbf996bab82ae27d4d53779456591da56a4ab8dc66b1e73fb4",
+    "visitedAt": "2026-04-18T16:51:46.992Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/prisma-schema/data-model/externally-managed-tables",
+    "outputPath": "output/prisma/docs/orm/prisma-schema/data-model/externally-managed-tables/index.md",
+    "title": "External tables",
+    "contentHash": "57b2b32466fd90a89f23d5663a57bafff4ec01c5dcc1f3d9113a615b792089be",
+    "visitedAt": "2026-04-18T16:51:52.194Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/prisma-schema/data-model/indexes",
+    "outputPath": "output/prisma/docs/orm/prisma-schema/data-model/indexes/index.md",
+    "title": "Indexes",
+    "contentHash": "81c02e6862a38d9a35f608f84b19a5843343efd8970ada0be6df5680604df5ae",
+    "visitedAt": "2026-04-18T16:52:07.723Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/prisma-schema/data-model/multi-schema",
+    "outputPath": "output/prisma/docs/orm/prisma-schema/data-model/multi-schema/index.md",
+    "title": "Multi-schema",
+    "contentHash": "8cadc2488b1122eaa2c5b3545b80bfa73e646bda6c638819de7cc516267dcc3b",
+    "visitedAt": "2026-04-18T16:52:11.594Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/prisma-schema/data-model/models",
+    "outputPath": "output/prisma/docs/orm/prisma-schema/data-model/models/index.md",
+    "title": "Models",
+    "contentHash": "75d39d25ef03837555987976c7e9d39f92787d8774c1bc41686502023b8bf931",
+    "visitedAt": "2026-04-18T16:52:17.881Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/prisma-schema/data-model/unsupported-database-features",
+    "outputPath": "output/prisma/docs/orm/prisma-schema/data-model/unsupported-database-features/index.md",
+    "title": "Unsupported database features (Prisma Schema)",
+    "contentHash": "09997552140c05084f5297dd986736067b6f1540fc5dc6aa32e898604cc94150",
+    "visitedAt": "2026-04-18T16:52:26.196Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/prisma-schema/data-model/table-inheritance",
+    "outputPath": "output/prisma/docs/orm/prisma-schema/data-model/table-inheritance/index.md",
+    "title": "Table inheritance",
+    "contentHash": "f225fdeed1a9596cbe167dc549198eb77745916ad34bb5ecf38fcac3f52dc53e",
+    "visitedAt": "2026-04-18T16:52:31.311Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/prisma-schema/data-model/views",
+    "outputPath": "output/prisma/docs/orm/prisma-schema/data-model/views/index.md",
+    "title": "Views",
+    "contentHash": "d12384f18505fbeacaa81312d51263009e66b8fad14be31cb3ab286406aba538",
+    "visitedAt": "2026-04-18T16:52:36.766Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/prisma-schema/overview/data-sources",
+    "outputPath": "output/prisma/docs/orm/prisma-schema/overview/data-sources/index.md",
+    "title": "Data sources",
+    "contentHash": "8e4e639560079f4e44f5f1c4098fff5370522ab816fd299830bbede7c5cd1728",
+    "visitedAt": "2026-04-18T16:52:44.256Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/prisma-schema/overview",
+    "outputPath": "output/prisma/docs/orm/prisma-schema/overview/index.md",
+    "title": "Overview of Prisma Schema",
+    "contentHash": "6951f3f2bd40b8ad7e44e105ac62a8bba143fe95a1e59d84e89767803f67610f",
+    "visitedAt": "2026-04-18T16:52:56.969Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/prisma-schema/overview/generators",
+    "outputPath": "output/prisma/docs/orm/prisma-schema/overview/generators/index.md",
+    "title": "Generators",
+    "contentHash": "a8cecf0bab7e4fca53f07bab13652efe99e5b4d4310bf027cf062489a84d1213",
+    "visitedAt": "2026-04-18T16:53:02.633Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/prisma-schema/overview/location",
+    "outputPath": "output/prisma/docs/orm/prisma-schema/overview/location/index.md",
+    "title": "Schema location",
+    "contentHash": "0a28ddc0076b2649ebbc910a48f167990f506088f43cbb9392ce6d9afef53625",
+    "visitedAt": "2026-04-18T16:53:05.473Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/reference/errors",
+    "outputPath": "output/prisma/docs/orm/reference/errors/index.md",
+    "title": "Prisma Error Reference",
+    "contentHash": "a99333805ea6eb732acfd36396b48c9fa86f5196b440383bb39507e5d9b77f98",
+    "visitedAt": "2026-04-18T16:53:14.517Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/reference/preview-features/client-preview-features",
+    "outputPath": "output/prisma/docs/orm/reference/preview-features/client-preview-features/index.md",
+    "title": "Prisma Client & Prisma schema",
+    "contentHash": "a35c63919621da4c9d34434b6f926a32b2367daa6db569a8a077a8630306b6f9",
+    "visitedAt": "2026-04-18T16:53:19.475Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/reference/preview-features/cli-preview-features",
+    "outputPath": "output/prisma/docs/orm/reference/preview-features/cli-preview-features/index.md",
+    "title": "Prisma CLI Preview features",
+    "contentHash": "682eb9f78e7166337952d7e5c24c257ae1edd721f6db7bc8c1329ae18c48488c",
+    "visitedAt": "2026-04-18T16:53:21.485Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/prisma-client/client-extensions/shared-extensions",
+    "outputPath": "output/prisma/docs/orm/prisma-client/client-extensions/shared-extensions/index.md",
+    "title": "Shared Prisma Client extensions",
+    "contentHash": "276de5ae44e51d7c60dabc163f21e1beb43a438d94186f0023e163f412b3f827",
+    "visitedAt": "2026-04-18T16:53:28.380Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/prisma-client/client-extensions/shared-extensions/permit-rbac",
+    "outputPath": "output/prisma/docs/orm/prisma-client/client-extensions/shared-extensions/permit-rbac/index.md",
+    "title": "Fine-Grained Authorization (Permit)",
+    "contentHash": "af98c4a38bd20358191b64be66cfcb5e79b455a31d8ae878512ab21ec1a99afd",
+    "visitedAt": "2026-04-18T16:53:34.691Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/prisma-client/deployment/edge/deploy-to-cloudflare",
+    "outputPath": "output/prisma/docs/orm/prisma-client/deployment/edge/deploy-to-cloudflare/index.md",
+    "title": "Deploy to Cloudflare Workers & Pages",
+    "contentHash": "ba76f0f05149bbaa048dab2ed0b17b3b9dff5ebfbae5b387aa9dcaee49b6c654",
+    "visitedAt": "2026-04-18T16:53:41.664Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/prisma-client/deployment/edge/deploy-to-deno-deploy",
+    "outputPath": "output/prisma/docs/orm/prisma-client/deployment/edge/deploy-to-deno-deploy/index.md",
+    "title": "Deploy to Deno Deploy",
+    "contentHash": "f43f436bd4c0f25f8361fab149a40e085b024454c1d4f19c0ef2358e82a84455",
+    "visitedAt": "2026-04-18T16:53:48.743Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/prisma-client/deployment/edge/deploy-to-vercel",
+    "outputPath": "output/prisma/docs/orm/prisma-client/deployment/edge/deploy-to-vercel/index.md",
+    "title": "Deploy to Vercel Edge Functions & Middleware",
+    "contentHash": "32b66a89316a02bb12bf2ecae5483faae76bfc0ac38a1694c5ad36a0f11ab31f",
+    "visitedAt": "2026-04-18T16:53:55.921Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/prisma-client/deployment/edge/overview",
+    "outputPath": "output/prisma/docs/orm/prisma-client/deployment/edge/overview/index.md",
+    "title": "Deploying edge functions with Prisma ORM",
+    "contentHash": "af143a134f4b47ba46279163527e6a0e705f5f32bc215e3b1fe50a3d722ede80",
+    "visitedAt": "2026-04-18T16:53:58.852Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/prisma-client/deployment/serverless/deploy-to-aws-lambda",
+    "outputPath": "output/prisma/docs/orm/prisma-client/deployment/serverless/deploy-to-aws-lambda/index.md",
+    "title": "Deploy to AWS Lambda",
+    "contentHash": "d29d274adbd88702062a9ab9d65ae9ce8230ce7896e75031fa22474f0bcb2881",
+    "visitedAt": "2026-04-18T16:54:04.793Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/prisma-client/deployment/serverless/deploy-to-azure-functions",
+    "outputPath": "output/prisma/docs/orm/prisma-client/deployment/serverless/deploy-to-azure-functions/index.md",
+    "title": "Deploy to Azure Functions",
+    "contentHash": "580baf88522e03dc28b58cc3b4514ce798099c5f3fa4c151294a856ba78922df",
+    "visitedAt": "2026-04-18T16:54:08.950Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/prisma-client/deployment/serverless/deploy-to-netlify",
+    "outputPath": "output/prisma/docs/orm/prisma-client/deployment/serverless/deploy-to-netlify/index.md",
+    "title": "Deploy to Netlify",
+    "contentHash": "5af30bc8ab96cd1985798bac8263beac7d08a68d01ac11177100a2c8bbfdd6fd",
+    "visitedAt": "2026-04-18T16:54:14.323Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/prisma-client/deployment/serverless/deploy-to-vercel",
+    "outputPath": "output/prisma/docs/orm/prisma-client/deployment/serverless/deploy-to-vercel/index.md",
+    "title": "Deploy to Vercel",
+    "contentHash": "674e23eb3d4024b634927a34bacadbb4a4a2208dca4e91deb8601d78439ef2aa",
+    "visitedAt": "2026-04-18T16:54:18.965Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/prisma-client/deployment/traditional/deploy-to-flyio",
+    "outputPath": "output/prisma/docs/orm/prisma-client/deployment/traditional/deploy-to-flyio/index.md",
+    "title": "Deploy to Fly.io",
+    "contentHash": "1883eba565f11f1f1c4404751d85145790e07f587c3fc5d865289bd19d23b29d",
+    "visitedAt": "2026-04-18T16:54:24.343Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/prisma-client/deployment/traditional/deploy-to-heroku",
+    "outputPath": "output/prisma/docs/orm/prisma-client/deployment/traditional/deploy-to-heroku/index.md",
+    "title": "Deploy to Heroku",
+    "contentHash": "f51cd9cc487415d8fb9c778a16993107d09cc4327b5039830dc47aecdd9b5d71",
+    "visitedAt": "2026-04-18T16:54:28.137Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/prisma-client/deployment/traditional/deploy-to-koyeb",
+    "outputPath": "output/prisma/docs/orm/prisma-client/deployment/traditional/deploy-to-koyeb/index.md",
+    "title": "Deploy to Koyeb",
+    "contentHash": "a06f6a0629c815740bb9c04b4a2261c93e4695a2c30305ed56577b7bd6515ae9",
+    "visitedAt": "2026-04-18T16:54:34.046Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/prisma-client/deployment/traditional/deploy-to-railway",
+    "outputPath": "output/prisma/docs/orm/prisma-client/deployment/traditional/deploy-to-railway/index.md",
+    "title": "Deploy to Railway",
+    "contentHash": "bf3a7e6c199ac4161caa2fe72a97550853ed76bb39e109ef90ea009844a23dba",
+    "visitedAt": "2026-04-18T16:54:37.388Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/prisma-client/deployment/traditional/deploy-to-render",
+    "outputPath": "output/prisma/docs/orm/prisma-client/deployment/traditional/deploy-to-render/index.md",
+    "title": "Deploy to Render",
+    "contentHash": "4b078ff20ad338346fe49b41c281c46983416ff8c95fe1d1a7dcb4b99e56aca3",
+    "visitedAt": "2026-04-18T16:54:39.352Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/prisma-client/deployment/traditional/deploy-to-sevalla",
+    "outputPath": "output/prisma/docs/orm/prisma-client/deployment/traditional/deploy-to-sevalla/index.md",
+    "title": "Deploy to Sevalla",
+    "contentHash": "1e4ad1aa44ffb6aeb48428c75f961443d3d8835676e5116458265f891380af3b",
+    "visitedAt": "2026-04-18T16:54:42.853Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/prisma-client/setup-and-configuration/databases-connections/connection-management",
+    "outputPath": "output/prisma/docs/orm/prisma-client/setup-and-configuration/databases-connections/connection-management/index.md",
+    "title": "Connection management",
+    "contentHash": "9e24158e99278f46b35435a3c989b640595e41744fd91d582435080c1f68c88b",
+    "visitedAt": "2026-04-18T16:54:47.701Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/prisma-client/queries/advanced/query-optimization-performance",
+    "outputPath": "output/prisma/docs/orm/prisma-client/queries/advanced/query-optimization-performance/index.md",
+    "title": "Query optimization",
+    "contentHash": "1831d26c50b40b5371be3337e4b457a43adf5954ba0d84098ed8f916e55e4ce3",
+    "visitedAt": "2026-04-18T16:54:55.186Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/prisma-client/setup-and-configuration/databases-connections/connection-pool",
+    "outputPath": "output/prisma/docs/orm/prisma-client/setup-and-configuration/databases-connections/connection-pool/index.md",
+    "title": "Connection pool",
+    "contentHash": "fd14e1a8be1538abb79dbc14d038207ef5fb436ae2fe83a63ac8af49024e39e1",
+    "visitedAt": "2026-04-18T16:54:58.000Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/prisma-client/setup-and-configuration/databases-connections",
+    "outputPath": "output/prisma/docs/orm/prisma-client/setup-and-configuration/databases-connections/index.md",
+    "title": "Database connections",
+    "contentHash": "09bcac7717606ab1f93be357daf14ce7b2ac160199b962b1b1161e1564997578",
+    "visitedAt": "2026-04-18T16:55:04.583Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/prisma-client/setup-and-configuration/databases-connections/pgbouncer",
+    "outputPath": "output/prisma/docs/orm/prisma-client/setup-and-configuration/databases-connections/pgbouncer/index.md",
+    "title": "Configure Prisma Client with PgBouncer",
+    "contentHash": "0cb12ba8a1e6ef83f7770745c458862cb221f11b39eba312f07fcdbc5e18426e",
+    "visitedAt": "2026-04-18T16:55:11.145Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/prisma-schema/data-model/relations",
+    "outputPath": "output/prisma/docs/orm/prisma-schema/data-model/relations/index.md",
+    "title": "Relations",
+    "contentHash": "7786b7e70729b559422b83d6704b200a3fae837da06554c266a2972356227c41",
+    "visitedAt": "2026-04-18T16:55:14.548Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/prisma-schema/data-model/relations/many-to-many-relations",
+    "outputPath": "output/prisma/docs/orm/prisma-schema/data-model/relations/many-to-many-relations/index.md",
+    "title": "Many-to-many relations",
+    "contentHash": "6b201982e5fa9c1321db01aee0196fea446cac73193f1498acfb3ccadf511139",
+    "visitedAt": "2026-04-18T16:55:18.019Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/prisma-schema/data-model/relations/one-to-many-relations",
+    "outputPath": "output/prisma/docs/orm/prisma-schema/data-model/relations/one-to-many-relations/index.md",
+    "title": "One-to-many relations",
+    "contentHash": "ac17925afb4a25849c343292c8e320b106bbe05799b7ab14a37aef0db7279984",
+    "visitedAt": "2026-04-18T16:55:22.914Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/prisma-schema/data-model/relations/one-to-one-relations",
+    "outputPath": "output/prisma/docs/orm/prisma-schema/data-model/relations/one-to-one-relations/index.md",
+    "title": "One-to-one relations",
+    "contentHash": "dd38fd60672bdad49128ab45e2340a9ac60ae9df2cc9e79e4fafcd2ab8b316cd",
+    "visitedAt": "2026-04-18T16:55:27.239Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/prisma-schema/data-model/relations/referential-actions",
+    "outputPath": "output/prisma/docs/orm/prisma-schema/data-model/relations/referential-actions/index.md",
+    "title": "Referential actions",
+    "contentHash": "a76c6db6afc58d5d358af0a91656d91cce8f615a0ac824b925a566c4949fd10a",
+    "visitedAt": "2026-04-18T16:55:36.408Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/prisma-schema/data-model/relations/self-relations",
+    "outputPath": "output/prisma/docs/orm/prisma-schema/data-model/relations/self-relations/index.md",
+    "title": "Self-relations",
+    "contentHash": "8fcc6a4560fccfa83d59285cd3213ceaa5d0e2d75f5903162fbf4d5af2b35314",
+    "visitedAt": "2026-04-18T16:55:40.905Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/prisma-schema/data-model/relations/relation-mode",
+    "outputPath": "output/prisma/docs/orm/prisma-schema/data-model/relations/relation-mode/index.md",
+    "title": "Relation mode",
+    "contentHash": "0128b63de6782cf04797a10d56eb13f4d0064861301cf663a0eecb74a0d55bc1",
+    "visitedAt": "2026-04-18T16:55:42.758Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://www.prisma.io/docs/orm/prisma-schema/data-model/relations/troubleshooting-relations",
+    "outputPath": "output/prisma/docs/orm/prisma-schema/data-model/relations/troubleshooting-relations/index.md",
+    "title": "Troubleshooting relations",
+    "contentHash": "e4df4468ecd1e5e811bf1d481e6333851e8ed989c2bb464c7a7d982a80580d0b",
+    "visitedAt": "2026-04-18T16:55:48.968Z",
+    "status": "visited"
+  }
+]

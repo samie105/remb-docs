@@ -1,0 +1,176 @@
+---
+title: "Many-to-many relations"
+source: "https://www.prisma.io/docs/orm/prisma-schema/data-model/relations/many-to-many-relations"
+canonical_url: "https://www.prisma.io/docs/orm/prisma-schema/data-model/relations/many-to-many-relations"
+docset: "prisma"
+kind: "library"
+adapter: "generic"
+last_crawled_at: "2026-04-18T16:55:18.019Z"
+content_hash: "6b201982e5fa9c1321db01aee0196fea446cac73193f1498acfb3ccadf511139"
+menu_path: ["Many-to-many relations"]
+section_path: []
+---
+Data Model
+
+Relations
+
+How to define and work with many-to-many relations in Prisma.
+
+Many-to-many (m-n) relations connect zero or more records on one side to zero or more on the other. They can be [implicit](#implicit-many-to-many-relations) (Prisma manages the relation table) or [explicit](#explicit-many-to-many-relations) (you define the relation table).
+
+Use [implicit](#implicit-many-to-many-relations) m-n unless you need to store additional metadata in the relation table.
+
+### [Explicit many-to-many relations](#explicit-many-to-many-relations)
+
+The relation table is represented as a model in the schema:
+
+```
+model Post {
+  id         Int                 @id @default(autoincrement())
+  title      String
+  categories CategoriesOnPosts[]
+}
+
+model Category {
+  id    Int                 @id @default(autoincrement())
+  name  String
+  posts CategoriesOnPosts[]
+}
+
+model CategoriesOnPosts {
+  post       Post     @relation(fields: [postId], references: [id])
+  postId     Int
+  category   Category @relation(fields: [categoryId], references: [id])
+  categoryId Int
+  assignedAt DateTime @default(now())
+  assignedBy String
+  @@id([postId, categoryId])
+}
+```
+
+The relation table can store additional fields like `assignedAt` and `assignedBy`.
+
+#### [Querying explicit many-to-many](#querying-explicit-many-to-many)
+
+```
+// Create post with new category
+const post = await prisma.post.create({
+  data: {
+    title: "How to be Bob",
+    categories: {
+      create: [
+        {
+          assignedBy: "Bob",
+          category: { create: { name: "New category" } },
+        },
+      ],
+    },
+  },
+});
+
+// Connect to existing categories
+await prisma.post.create({
+  data: {
+    title: "My Post",
+    categories: {
+      create: [
+        { assignedBy: "Bob", category: { connect: { id: 9 } } },
+        { assignedBy: "Bob", category: { connect: { id: 22 } } },
+      ],
+    },
+  },
+});
+
+// Query posts by category
+const posts = await prisma.post.findMany({
+  where: { categories: { some: { category: { name: "New Category" } } } },
+});
+```
+
+### [Implicit many-to-many relations](#implicit-many-to-many-relations)
+
+Prisma manages the relation table automatically:
+
+```
+model Post {
+  id         Int        @id @default(autoincrement())
+  title      String
+  categories Category[]
+}
+
+model Category {
+  id    Int    @id @default(autoincrement())
+  name  String
+  posts Post[]
+}
+```
+
+#### [Querying implicit many-to-many](#querying-implicit-many-to-many)
+
+```
+// Create post with categories
+const post = await prisma.post.create({
+  data: {
+    title: "How to become a butterfly",
+    categories: {
+      create: [{ name: "Magic" }, { name: "Butterflies" }],
+    },
+  },
+});
+
+// Get posts with categories
+const posts = await prisma.post.findMany({
+  include: { categories: true },
+});
+```
+
+#### [Rules for implicit m-n](#rules-for-implicit-m-n)
+
+*   Both models must have a single `@id` (no composite IDs or `@unique`)
+*   No `@relation` attribute needed (unless disambiguating)
+*   Cannot use `fields`, `references`, `onUpdate`, or `onDelete` in `@relation`
+
+#### [Relation table conventions](#relation-table-conventions)
+
+For `prisma db pull` to recognize implicit m-n tables:
+
+*   Table name: `_CategoryToPost` (underscore + model names alphabetically + `To`)
+*   Columns: `A` (FK to first model alphabetically) and `B` (FK to second)
+*   Unique index on both columns, non-unique index on `B`
+
+### [Configuring relation table name](#configuring-relation-table-name)
+
+Use `@relation("MyRelationTable")` on both sides to customize the table name.
+
+MongoDB requires explicit ID arrays on both sides:
+
+```
+model Post {
+  id          String     @id @default(auto()) @map("_id") @db.ObjectId
+  categoryIDs String[]   @db.ObjectId
+  categories  Category[] @relation(fields: [categoryIDs], references: [id])
+}
+
+model Category {
+  id      String   @id @default(auto()) @map("_id") @db.ObjectId
+  name    String
+  postIDs String[] @db.ObjectId
+  posts   Post[]   @relation(fields: [postIDs], references: [id])
+}
+```
+
+### [Querying MongoDB m-n](#querying-mongodb-m-n)
+
+```
+// Find posts by category IDs
+const posts = await prisma.post.findMany({
+  where: { categoryIDs: { hasSome: [id1, id2] } },
+});
+
+// Find posts by category name
+const posts = await prisma.post.findMany({
+  where: { categories: { some: { name: { contains: "Servers" } } } },
+});
+```
+
+[Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/prisma-schema/data-model/relations/many-to-many-relations.mdx)

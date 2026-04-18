@@ -1,0 +1,92 @@
+---
+title: "field-sizing"
+source: "https://tailwindcss.com/docs/field-sizing"
+canonical_url: "https://tailwindcss.com/docs/field-sizing"
+docset: "tailwind"
+kind: "framework"
+adapter: "generic"
+last_crawled_at: "2026-04-18T17:16:08.262Z"
+content_hash: "1dc4e5b38636f381ed780bdb0bd2d6ba7c1dcb3b34ba5d034f058bcb3ad6e2b1"
+menu_path: ["field-sizing"]
+section_path: []
+---
+[](/)
+
+[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
+
+1.  Interactivity
+2.  field-sizing
+
+Interactivity
+
+# field-sizing
+
+Utilities for controlling the sizing of form controls.
+
+Class
+
+Styles
+
+`field-sizing-fixed`
+
+`field-sizing: fixed;`
+
+`field-sizing-content`
+
+`field-sizing: content;`
+
+## [Examples](#examples)
+
+### [Sizing based on content](#sizing-based-on-content)
+
+Use the `field-sizing-content` utility to allow a form control to adjust its size based on the content:
+
+Type in the input below to see the size change
+
+Latex Salesman, Vanderlay Industries
+
+```
+<textarea class="field-sizing-content ..." rows="2">  Latex Salesman, Vanderlay Industries</textarea>
+```
+
+### [Using a fixed size](#using-a-fixed-size)
+
+Use the `field-sizing-fixed` utility to make a form control use a fixed size:
+
+Type in the input below to see the size remain the same
+
+Latex Salesman, Vanderlay Industries
+
+```
+<textarea class="field-sizing-fixed w-80 ..." rows="2">  Latex Salesman, Vanderlay Industries</textarea>
+```
+
+### [Responsive design](#responsive-design)
+
+Prefix a `field-sizing` utility with a breakpoint variant like `md:` to only apply the utility at medium screen sizes and above:
+
+```
+<input class="field-sizing-content md:field-sizing-fixed ..." />
+```
+
+Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
+
+### On this page
+
+*   [Quick reference](#quick-reference)
+*   [Examples](#examples)
+    *   [Sizing based on content](#sizing-based-on-content)
+    *   [Using a fixed size](#using-a-fixed-size)
+    *   [Responsive design](#responsive-design)
+
+![Build UIs that don’t suck — 5-day mini-course](/_next/static/media/course-promo.d3d6bc78.jpg)
+
+5-day mini-course
+
+Build UIs that don’t suck.
+
+Short, tactical video lessons from the creator of Tailwind CSS, delivered directly to your inbox every day for a week.
+
+[Get the free course](/build-uis-that-dont-suck)
+
+Copyright © 2026 Tailwind Labs Inc.·[Trademark Policy](/brand)

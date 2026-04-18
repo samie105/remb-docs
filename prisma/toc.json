@@ -1,0 +1,132 @@
+[
+  {
+    "title": "Prisma ORM",
+    "url": "https://www.prisma.io/docs/orm",
+    "children": []
+  },
+  {
+    "title": "Data modeling",
+    "url": "https://www.prisma.io/docs/orm/core-concepts/data-modeling",
+    "children": []
+  },
+  {
+    "title": "API patterns",
+    "url": "https://www.prisma.io/docs/orm/core-concepts/api-patterns",
+    "children": []
+  },
+  {
+    "title": "What is introspection?",
+    "url": "https://www.prisma.io/docs/orm/prisma-schema/introspection",
+    "children": []
+  },
+  {
+    "title": "PostgreSQL extensions",
+    "url": "https://www.prisma.io/docs/orm/prisma-schema/postgresql-extensions",
+    "children": []
+  },
+  {
+    "title": "Overview of Prisma Migrate",
+    "url": "https://www.prisma.io/docs/orm/prisma-migrate",
+    "children": []
+  },
+  {
+    "title": "Getting started with Prisma Migrate",
+    "url": "https://www.prisma.io/docs/orm/prisma-migrate/getting-started",
+    "children": []
+  },
+  {
+    "title": "Understanding Migrations",
+    "url": "https://www.prisma.io/docs/orm/prisma-migrate/understanding-prisma-migrate/mental-model",
+    "children": []
+  },
+  {
+    "title": "Migration histories",
+    "url": "https://www.prisma.io/docs/orm/prisma-migrate/understanding-prisma-migrate/migration-histories",
+    "children": []
+  },
+  {
+    "title": "About the shadow database",
+    "url": "https://www.prisma.io/docs/orm/prisma-migrate/understanding-prisma-migrate/shadow-database",
+    "children": []
+  },
+  {
+    "title": "Limitations and known issues",
+    "url": "https://www.prisma.io/docs/orm/prisma-migrate/understanding-prisma-migrate/limitations-and-known-issues",
+    "children": []
+  },
+  {
+    "title": "Prisma CLI reference",
+    "url": "https://www.prisma.io/docs/orm/reference/prisma-cli-reference",
+    "children": []
+  },
+  {
+    "title": "Prisma Client API",
+    "url": "https://www.prisma.io/docs/orm/reference/prisma-client-reference",
+    "children": []
+  },
+  {
+    "title": "Schema API",
+    "url": "https://www.prisma.io/docs/orm/reference/prisma-schema-reference",
+    "children": []
+  },
+  {
+    "title": "Config API",
+    "url": "https://www.prisma.io/docs/orm/reference/prisma-config-reference",
+    "children": []
+  },
+  {
+    "title": "Connection URLs",
+    "url": "https://www.prisma.io/docs/orm/reference/connection-urls",
+    "children": []
+  },
+  {
+    "title": "Environment Variables",
+    "url": "https://www.prisma.io/docs/orm/reference/environment-variables-reference",
+    "children": []
+  },
+  {
+    "title": "Database Features",
+    "url": "https://www.prisma.io/docs/orm/reference/database-features",
+    "children": []
+  },
+  {
+    "title": "Supported databases",
+    "url": "https://www.prisma.io/docs/orm/reference/supported-databases",
+    "children": []
+  },
+  {
+    "title": "System requirements",
+    "url": "https://www.prisma.io/docs/orm/reference/system-requirements",
+    "children": []
+  },
+  {
+    "title": "Error Reference",
+    "url": "https://www.prisma.io/docs/orm/reference/error-reference",
+    "children": []
+  },
+  {
+    "title": "Prisma Error Reference",
+    "url": "https://www.prisma.io/docs/orm/reference/errors",
+    "children": []
+  },
+  {
+    "title": "Prisma Client & Prisma schema",
+    "url": "https://www.prisma.io/docs/orm/reference/preview-features/client-preview-features",
+    "children": []
+  },
+  {
+    "title": "Prisma CLI Preview features",
+    "url": "https://www.prisma.io/docs/orm/reference/preview-features/cli-preview-features",
+    "children": []
+  },
+  {
+    "title": "Best practices",
+    "url": "https://www.prisma.io/docs/orm/more/best-practices",
+    "children": []
+  },
+  {
+    "title": "ORM releases and maturity levels",
+    "url": "https://www.prisma.io/docs/orm/more/releases",
+    "children": []
+  }
+]

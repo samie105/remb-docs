@@ -1,0 +1,115 @@
+---
+title: "opacity"
+source: "https://tailwindcss.com/docs/opacity"
+canonical_url: "https://tailwindcss.com/docs/opacity"
+docset: "tailwind"
+kind: "framework"
+adapter: "generic"
+last_crawled_at: "2026-04-18T17:04:43.263Z"
+content_hash: "be6e297d89567d2130151926b9a37b98d3146dbd17640355ed670b8055fc20d7"
+menu_path: ["opacity"]
+section_path: []
+---
+[](/)
+
+[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
+
+1.  Effects
+2.  opacity
+
+Effects
+
+# opacity
+
+Utilities for controlling the opacity of an element.
+
+Class
+
+Styles
+
+`opacity-<number>`
+
+`opacity: <number>%;`
+
+`opacity-(<custom-property>)`
+
+`opacity: var(<custom-property>);`
+
+`opacity-[<value>]`
+
+`opacity: <value>;`
+
+## [Examples](#examples)
+
+### [Basic example](#basic-example)
+
+Use `opacity-<number>` utilities like `opacity-25` and `opacity-100` to set the opacity of an element:
+
+opacity-100
+
+opacity-75
+
+opacity-50
+
+opacity-25
+
+```
+<button class="bg-indigo-500 opacity-100 ..."></button><button class="bg-indigo-500 opacity-75 ..."></button><button class="bg-indigo-500 opacity-50 ..."></button><button class="bg-indigo-500 opacity-25 ..."></button>
+```
+
+### [Applying conditionally](#applying-conditionally)
+
+Prefix an `opacity` utility with a variant like `disabled:*` to only apply the utility in that state:
+
+```
+<input class="opacity-100 disabled:opacity-75 ..." type="text" />
+```
+
+Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
+
+### [Using a custom value](#using-a-custom-value)
+
+Use the `opacity-[<value>]` syntax to set the opacity based on a completely custom value:
+
+```
+<button class="opacity-[.67] ...">  <!-- ... --></button>
+```
+
+For CSS variables, you can also use the `opacity-(<custom-property>)` syntax:
+
+```
+<button class="opacity-(--my-opacity) ...">  <!-- ... --></button>
+```
+
+This is just a shorthand for `opacity-[var(<custom-property>)]` that adds the `var()` function for you automatically.
+
+### [Responsive design](#responsive-design)
+
+Prefix an `opacity` utility with a breakpoint variant like `md:` to only apply the utility at medium screen sizes and above:
+
+```
+<button class="opacity-50 md:opacity-100 ...">  <!-- ... --></button>
+```
+
+Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
+
+### On this page
+
+*   [Quick reference](#quick-reference)
+*   [Examples](#examples)
+    *   [Basic example](#basic-example)
+    *   [Applying conditionally](#applying-conditionally)
+    *   [Using a custom value](#using-a-custom-value)
+    *   [Responsive design](#responsive-design)
+
+![Build UIs that don’t suck — 5-day mini-course](/_next/static/media/course-promo.d3d6bc78.jpg)
+
+5-day mini-course
+
+Build UIs that don’t suck.
+
+Short, tactical video lessons from the creator of Tailwind CSS, delivered directly to your inbox every day for a week.
+
+[Get the free course](/build-uis-that-dont-suck)
+
+Copyright © 2026 Tailwind Labs Inc.·[Trademark Policy](/brand)

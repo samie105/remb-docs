@@ -1,0 +1,316 @@
+---
+title: "Redis Enterprise for Kubernetes 7.8.2-6 (Nov 2024) release notes"
+source: "https://redis.io/docs/latest/operate/kubernetes/release-notes/7-8-2-releases/7-8-2-6-nov24/"
+canonical_url: "https://redis.io/docs/latest/operate/kubernetes/release-notes/7-8-2-releases/7-8-2-6-nov24/"
+docset: "redis"
+kind: "database"
+adapter: "generic"
+last_crawled_at: "2026-04-18T16:52:57.033Z"
+content_hash: "6e82de003be4cb80f5d06c5f816cb07c7d90106d91e18ed60e09a57d910e7f1c"
+menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Enterprise for Kubernetes","→","Redis Enterprise for Kubernetes","→\n      \n        Redis Enterprise Software for Kubernetes release notes","→","Redis Enterprise Software for Kubernetes release notes","→\n      \n        Redis Enterprise for Kubernetes 7.8.2-6 release notes","→","Redis Enterprise for Kubernetes 7.8.2-6 release notes","→\n      \n        Redis Enterprise for Kubernetes 7.8.2-6 (Nov 2024) release notes","→","Redis Enterprise for Kubernetes 7.8.2-6 (Nov 2024) release notes"]
+section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Enterprise for Kubernetes","→","Redis Enterprise for Kubernetes","→\n      \n        Redis Enterprise Software for Kubernetes release notes","→","Redis Enterprise Software for Kubernetes release notes","→\n      \n        Redis Enterprise for Kubernetes 7.8.2-6 release notes","→","Redis Enterprise for Kubernetes 7.8.2-6 release notes","→\n      \n        Redis Enterprise for Kubernetes 7.8.2-6 (Nov 2024) release notes","→","Redis Enterprise for Kubernetes 7.8.2-6 (Nov 2024) release notes"]
+---
+# Redis Enterprise for Kubernetes 7.8.2-6 (Nov 2024) release notes
+
+Feature release including support for Redis Software 7.8.2 and RHEL9-based images.
+
+Redis Enterprise for Kubernetes
+
+## New in this release
+
+### Enhancements
+
+*   Parallel startup and recovery (enabled by default) (RED-117645).
+*   Azure marketplate deployment (RED-113029)
+*   Support for [Redis Software 7.8.2-34](/docs/latest/operate/rs/release-notes/rs-7-8-releases/rs-7-8-2-34/).
+*   Improved upgrade validations for modules and Redis database versions (RED-132197).
+*   Support for Community Kubernetes 1.31 (RED-13549).
+*   New minimal roles required to use the log collector (RED-132686).
+*   Support proxy certificate updates for Active-Active databases (RED-122552).
+*   Add `directory_timeout_s` field to LDAP configuration (RED-119079).
+*   Allow configuring port number for replication endpoints in Active-Active databases (RED-113626).
+
+### Resolved issues
+
+*   Fixed documentation for REAADB `globalConfigurations` field (RED-138727).
+*   Allow log collector execution without `kubectl` installed (RED-131537).
+*   Fix recreation issue for rec-bulletin-board config map (RED-130599).
+*   Avoid deletion of operator config maps created by users (RED-129214).
+*   Fixed errors shown in bootstrapper logs (RED-125776).
+*   Limit the number of calls made to Vault (RED-125396).
+*   Fixed log collector issue with detecting version (RED-121144).
+
+### API changes
+
+**CRD**
+
+**Field**
+
+**Change**
+
+**Description**
+
+REC
+
+`status.CertificatesUpdateStatus`
+
+Rename
+
+Renamed status field and changed the structure
+
+REC
+
+`status.state`
+
+Add value to enum
+
+`runningRollingUpgrade`
+
+REDB
+
+`spec.modulesList`
+
+Field enabled
+
+Don't need to set `ENABLE_ALPHA_FEATURES` to enable.
+
+RERC
+
+`spec.apiPort`
+
+Added
+
+REDB
+
+`redb.upgradeSpec.upgradeModulesToLatest`
+
+Changed default
+
+Default is now `true`
+
+## Version changes
+
+### Breaking changes
+
+#### RHEL9-based images
+
+*   As of version 7.8.2-6, Redis Enterprise images are based on Red Hat Enterprise Linux 9 (RHEL9). This means upgrades to 7.8.2-6 require:
+    
+*   Cluster version of 7.4.2-2 or later.
+    
+*   Database version 7.2 or later.
+    
+*   RHEL9 compatible binaries for any modules you need.
+    
+
+See [Upgrade Redis Enterprise for Kubernetes](/docs/latest/operate/kubernetes/upgrade/upgrade-redis-cluster/) for detailed steps to upgrade to 7.8.2-6.
+
+### Deprecations
+
+*   Ubuntu-based images are no longer supported.
+*   REDB field \`upgradeSpec.upgradeModulesToLatest is deprecated.
+*   REDB field `spec.modulesList.version` is deprecated.
+
+## Supported distributions
+
+The following table shows supported distributions at the time of this release. You can also find this list in [Supported Kubernetes distributions](/docs/latest/operate/kubernetes/reference/supported_k8s_distributions/).
+
+✅ Supported – This distribution is supported for this version of Redis Enterprise Software for Kubernetes.
+
+⚠️ Deprecated – This distribution is still supported for this version of Redis Enterprise Software for Kubernetes, but support will be removed in a future release.
+
+❌ End of life – Support for this distribution ended.
+
+Any distribution not listed below is not supported for production workloads.
+
+**Kubernetes version**
+
+**1.25**
+
+**1.26**
+
+**1.27**
+
+**1.28**
+
+**1.29**
+
+**1.30**
+
+**1.31**
+
+**Community Kubernetes**
+
+❌
+
+✅
+
+✅
+
+✅
+
+✅
+
+**Amazon EKS**
+
+❌
+
+⚠️
+
+✅
+
+✅
+
+✅
+
+**Azure AKS**
+
+⚠️
+
+✅
+
+✅
+
+✅
+
+**Google GKE**
+
+❌
+
+✅
+
+✅
+
+✅
+
+**Rancher RKE2**
+
+⚠️
+
+✅
+
+✅
+
+**VMware TKG 2.3**
+
+⚠️
+
+**VMware TKG 2.4**
+
+✅
+
+✅
+
+**OpenShift**
+
+**4.12**
+
+**4.13**
+
+**4.14**
+
+**4.15**
+
+**4.16**
+
+\*\*\*\*
+
+✅
+
+✅
+
+✅
+
+✅
+
+✅
+
+**VMWare TKGI**
+
+**1.16**
+
+**1.17**
+
+**1.18**
+
+**1.19**
+
+\*\*\*\*
+
+❌
+
+✅
+
+✅
+
+✅
+
+## Downloads
+
+**Redis Enterprise**: `redislabs/redis:7.8.2-34` **Operator**: `redislabs/operator:7.8.2-6` **Services Rigger**: `redislabs/k8s-controller:7.8.2-6` **OLM operator bundle**: `v7.8.2-6.3`
+
+## Known limitations
+
+### New limitations
+
+*   **Only upgrades from 7.4.2-2 and later are supported.** If you are using an earlier version, install 7.4.2-2 before upgrading to 7.8.2-6.
+    
+*   **When changing the REDB field `spec.modulesList` version might be upgraded to latest even if a different version is specified.** To prevent the upgrade to latest, set `spec.upgradeSpec.setModuleToLatest` to `false` before upgrading to 7.8.2-6.
+    
+
+### Existing limitations
+
+*   **Missing endpoint for admission endpoint (rare) (RED-119469)** Restart the operator pod.
+    
+*   **The REDB "redisVersion" field can’t be used for memcached databases(RED-119152)**
+    
+*   **PVC expansion is not supported when using Redis on Flash (Auto Tiering) (RED-165770)** Do not enable `enablePersistentVolumeResize` if your REC uses `redisOnFlashSpec` as this will result in conflicts.
+    
+*   **When modifying the database suffix for an Active-Active database, while the service-rigger is in a terminating state, the services-rigger will delete and create the ingress or route resources in a loop (RED-107687)** Wait until the services rigger pod has finished to terminate it.
+    
+*   **REAADB changes might fail with "gateway timeout" errors, mostly on OpenShift (RED-103048)** Retry the operation.
+    
+*   **Creating two databases with the same name directly on Redis Enterprise software will cause the service to be deleted and the database will not be available (RED-99997)** Avoid duplicating database names. Database creation via K8s has validation in place to prevent this.
+    
+*   **Installing the operator bundle produces warning: `Warning: would violate PodSecurity "restricted: v1.24"` (RED-97381)** Ignore the warning. This issue is documented as benign on official Red Hat documentation.
+    
+*   **RERC resources must have a unique name (RED-96302)** The string "rec-name"/"rec-namespace" must be different from all other participating clusters in the Active-Active database.
+    
+*   **Admission is not blocking REAADB with `shardCount` which exceeds license quota (RED-96301)** Fix the problems with the REAADB and reapply.
+    
+*   **Active-Active controller only supports global database options. Configuration specific to location is not supported (RED-86490)**
+    
+*   **Active-Active setup removal might keep services or routes undeleted (RED-77752)** Delete services or routes manually if you encounter this problem.
+    
+*   **`autoUpgrade` set to `true` can cause unexpected bdb upgrades when `redisUpgradePolicy` is set to `true` (RED-72351)** Contact support if your deployment is impacted.
+    
+*   **Following the previous quick start guide version causes issues with creating an REDB due to unrecognized memory field name (RED-69515)** The workaround is to use the newer (current) revision of Deploy Redis Enterprise Software for Kubernetes.
+    
+*   **PVC size issues when using decimal value in spec (RED-62132)** Make sure you use integer values for the PVC size.
+    
+*   **REC might report error states on initial startup (RED-61707)** There is no workaround at this time except to ignore the errors.
+    
+*   **Hashicorp Vault integration - no support for Gesher (RED-55080)** There is no workaround for this issue. Gesher support has been deprecated.
+    
+*   **REC clusters fail to start on Kubernetes clusters with unsynchronized clocks (RED-47254)** When REC clusters are deployed on Kubernetes clusters without synchronized clocks, the REC cluster does not start correctly. The fix is to use NTP to synchronize the underlying K8s nodes.
+    
+*   **Deleting an OpenShift project with an REC deployed may hang (RED-47192)** When an REC cluster is deployed in a project (namespace) and has REDB resources, the REDB resources must be deleted first before the REC can be deleted. Therefore, until the REDB resources are deleted, the project deletion will hang. The fix is to delete the REDB resources first and the REC second. Then, you can delete the project.
+    
+*   **Clusters must be named 'rec' in OLM-based deployments (RED-39825)** In OLM-deployed operators, the deployment of the cluster will fail if the name is not "rec". When the operator is deployed via the OLM, the security context constraints (scc) are bound to a specific service account name (namely, "rec"). The workaround is to name the cluster "rec".
+    
+*   **Readiness probe incorrect on failures (RED-39300)** STS Readiness probe does not mark a node as "not ready" when running `rladmin status` on node failure.
+    
+*   **Internal DNS and Kubernetes DNS may have conflicts (RED-37462)** DNS conflicts are possible between the cluster `mdns_server` and the K8s DNS. This only impacts DNS resolution from within cluster nodes for Kubernetes DNS names.
+    
+*   **K8s-based 5.4.10 clusters seem to negatively affect existing 5.4.6 clusters (RED-37233)** Upgrade clusters to latest version.
+    
+*   **Node CPU usage is reported instead of pod CPU usage (RED-36884)** In Kubernetes, the reported node CPU usage is the usage of the Kubernetes worker node hosting the REC pod.
+    
+*   **An unreachable cluster has status running (RED-32805)** When a cluster is in an unreachable state, the state remains `running` instead of triggering an error.
+    
+*   **Long cluster names cause routes to be rejected (RED-25871)** A cluster name longer than 20 characters will result in a rejected route configuration because the host part of the domain name exceeds 63 characters. The workaround is to limit the cluster name to 20 characters or fewer.
+    
+*   **Cluster CR (REC) errors are not reported after invalid updates (RED-25542)** A cluster CR specification error is not reported if two or more invalid CR resources are updated in sequence.
+    
+
+## On this page

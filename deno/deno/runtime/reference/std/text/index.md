@@ -1,0 +1,42 @@
+---
+title: "@std/text"
+source: "https://docs.deno.com/runtime/reference/std/text/"
+canonical_url: "https://docs.deno.com/runtime/reference/std/text/"
+docset: "deno"
+kind: "language"
+adapter: "generic"
+last_crawled_at: "2026-04-18T17:06:09.442Z"
+content_hash: "57955a9c19a98d3b69ecb979ec8f900e958627c2a7b2c17a7df84d110da893c9"
+menu_path: ["@std/text"]
+section_path: []
+---
+On this page
+
+*   [Overview](#overview)
+    *   [Add to your project](#add-to-your-project)
+
+## Overview
+
+Utility functions for working with text.
+
+```js
+import { toCamelCase, compareSimilarity } from "@std/text";
+import { assertEquals } from "@std/assert";
+
+assertEquals(toCamelCase("snake_case"), "snakeCase");
+
+const words = ["hi", "help", "hello"];
+
+// Words most similar to "hep" will be at the front
+assertEquals(words.sort(compareSimilarity("hep")), ["help", "hi", "hello"]);
+```
+
+### Add to your project
+
+\>\_
+
+```sh
+deno add jsr:@std/text
+```
+
+[See all symbols in @std/text on](https://jsr.io/@std/text/doc)

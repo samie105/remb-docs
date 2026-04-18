@@ -1,0 +1,30 @@
+---
+title: "Missing image dimensions"
+source: "https://docs.astro.build/en/reference/errors/missing-image-dimension/"
+canonical_url: "https://docs.astro.build/en/reference/errors/missing-image-dimension/"
+docset: "astro"
+kind: "framework"
+adapter: "generic"
+last_crawled_at: "2026-04-18T16:45:46.798Z"
+content_hash: "cc8ed68ef2f898e26ca70d3466b253b7f070870dad82c0395ad1c6853fbff4ef"
+menu_path: ["Missing image dimensions"]
+section_path: []
+---
+# Missing image dimensions
+
+> Missing width and height attributes for `IMAGE_URL`. When using remote images, both dimensions are required in order to avoid cumulative layout shift (CLS).
+
+## What went wrong?
+
+[Section titled “What went wrong?”](#what-went-wrong)
+
+For remote images, `width` and `height` cannot automatically be inferred from the original file. To avoid cumulative layout shift (CLS), either specify these two properties, or set [`inferSize`](/en/reference/modules/astro-assets/#infersize) to `true` to fetch a remote image’s original dimensions.
+
+If your image is inside your `src` folder, you probably meant to import it instead. See [the Imports guide for more information](/en/guides/imports/#other-assets).
+
+**See Also:**
+
+*   [Images](/en/guides/images/)
+*   [Image component#width-and-height-required](/en/reference/modules/astro-assets/#width-and-height-required-for-images-in-public)
+
+[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

@@ -1,0 +1,28 @@
+---
+title: "Error in live content config."
+source: "https://docs.astro.build/en/reference/errors/live-content-config-error/"
+canonical_url: "https://docs.astro.build/en/reference/errors/live-content-config-error/"
+docset: "astro"
+kind: "framework"
+adapter: "generic"
+last_crawled_at: "2026-04-18T16:45:30.833Z"
+content_hash: "74c1547c742b9bec084e5d11f823994f3e734c24d3aa771f4534d2c139eea2dd"
+menu_path: ["Error in live content config."]
+section_path: []
+---
+# Error in live content config.
+
+> **Example error message:**  
+> The schema cannot be a function for live collections. Please use a schema object instead. Check your collection definitions in your live content config file.
+
+## What went wrong?
+
+[Section titled “What went wrong?”](#what-went-wrong)
+
+Error in live content config.
+
+**See Also:**
+
+*   [Defining live content schemas](/en/reference/modules/astro-content/#schema-1)
+
+[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
