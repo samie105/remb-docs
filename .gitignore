@@ -5,6 +5,10 @@ apps/
 state/
 output/
 *.bak-*
+
+# State files — crawler runtime artifacts, not part of docs
+**/manifest.json
+**/toc.json
 .env
 .env.*
 
