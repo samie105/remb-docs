@@ -653,5 +653,3 @@ let png = new Uint8Array(toArrayBuffer(out));
 // save it to disk:
 await Bun.write("out.png", png);
 ```
-
-

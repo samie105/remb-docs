@@ -180,5 +180,3 @@ Use index aliasing when making schema changes that require reindexing, such as m
 *   Use scripts or orchestration tools to automate index creation, monitoring, and cleanup.
 
 ## On this page
-
-

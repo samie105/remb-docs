@@ -50,5 +50,3 @@ If you are an organization owner and on the Pro, Team or Enterprise plan, you ca
 You can disable MFA for your user account under your [Supabase account settings](/dashboard/account/security). On subsequent login attempts, you will not be prompted to enter an MFA code.
 
 We strongly recommend that you do not disable MFA to avoid unauthorized access to your user account.
-
-

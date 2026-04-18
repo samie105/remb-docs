@@ -268,5 +268,3 @@ This parameter determines whether the passphrase command set by `ssl_passphrase_
 This parameter must be set to `on` when running on Windows since all connections will perform a configuration reload due to the different process model of that platform.
 
 This parameter can only be set in the `postgresql.conf` file or on the server command line.
-
-

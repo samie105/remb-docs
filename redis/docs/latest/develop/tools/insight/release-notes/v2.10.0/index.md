@@ -51,5 +51,3 @@ This is the General Availability (GA) release of RedisInsight 2.10.
 *   [#1101](https://github.com/RedisInsight/RedisInsight/pull/1101) Fixed an issue when key names are not displayed
 
 ## On this page
-
-

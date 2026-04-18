@@ -481,5 +481,3 @@ app.get('/hello', (c) => {
 
 export const onRequest = handle(app)
 ```
-
-

@@ -70,5 +70,3 @@ Delete directories
 Next
 
 ](/docs/guides/runtime/delete-directory)
-
-

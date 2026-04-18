@@ -24,5 +24,3 @@ nav_next: {"path": "astro/en/reference/errors/endpoint-did-not-return-aresponse/
 Content collection entries must have unique slugs. Duplicates are often caused by the `slug` frontmatter property.
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

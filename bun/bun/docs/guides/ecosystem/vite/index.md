@@ -131,5 +131,3 @@ Bun Redis with Upstash
 Next
 
 ](/docs/guides/ecosystem/upstash)
-
-

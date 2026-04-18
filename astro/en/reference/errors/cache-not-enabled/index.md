@@ -24,5 +24,3 @@ nav_next: {"path": "astro/en/reference/errors/cache-provider-not-found/index.md"
 Thrown when `Astro.cache` or `context.cache` is used but the cache feature has not been enabled in the Astro config.
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

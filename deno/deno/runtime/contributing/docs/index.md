@@ -38,5 +38,3 @@ You can fork and clone the entire [Deno docs repository](https://github.com/deno
 6.  Optionally, generate the API documentation with `deno task reference`.
 
 To see a more detailed description of available tasks, check out the [Deno docs README](https://github.com/denoland/docs?tab=readme-ov-file#deno-docs)
-
-

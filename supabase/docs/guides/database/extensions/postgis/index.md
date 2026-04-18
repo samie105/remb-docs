@@ -149,5 +149,3 @@ Alternatively, you can contact the [Supabase Support Team](/dashboard/support/ne
 ## Resources[#](#resources)
 
 *   [Official PostGIS documentation](https://postgis.net/documentation/)
-
-

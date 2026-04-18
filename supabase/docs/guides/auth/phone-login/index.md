@@ -86,5 +86,3 @@ To update a user's phone number, the user must be logged in. Call [`updateUser()
 ```
 
 The user receives an SMS with a 6-digit pin that you must [verify](#verifying-a-phone-otp) within 60 seconds. Use the `phone_change` type when calling `verifyOTP` to update a user’s phone number.
-
-

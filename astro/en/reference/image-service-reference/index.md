@@ -223,5 +223,3 @@ Then, users will be able to get autocomplete and type safety for your custom pro
 ```
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

@@ -63,5 +63,3 @@ Convert a ReadableStream to a Blob
 Next
 
 ](/docs/guides/streams/to-blob)
-
-

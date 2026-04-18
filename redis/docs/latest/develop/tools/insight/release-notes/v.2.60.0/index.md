@@ -39,5 +39,3 @@ This is the General Availability (GA) release of Redis Insight 2.60.
 *   [#3982](https://github.com/RedisInsight/RedisInsight/pull/3982), [#3975](https://github.com/RedisInsight/RedisInsight/pull/3975), [#3941](https://github.com/RedisInsight/RedisInsight/pull/3941) Various vulnerabilities have been fixed.
 
 ## On this page
-
-

@@ -50,5 +50,3 @@ DROP ACCESS METHOD heptree;
 ## Compatibility
 
 `DROP ACCESS METHOD` is a PostgreSQL extension.
-
-

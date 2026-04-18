@@ -24,5 +24,3 @@ nav_next: {"path": "astro/en/reference/errors/action-query-string-invalid-error/
 The server received a request for an action but could not find a match with the same name.
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

@@ -310,5 +310,3 @@ const result = await container.renderToString(Card, {    partial: false});consol
 ```
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

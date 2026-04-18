@@ -317,5 +317,3 @@ Watch for file changes and restart process automatically. Only local files from 
 `--watch-exclude`<FILES>optional
 
 Exclude provided files/patterns from watch mode.
-
-

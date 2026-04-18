@@ -358,5 +358,3 @@ You can view the data by following these steps:
 The source code for this tutorial can be found in [GitHub](https://github.com/redis-developer/redis-om-dotnet-skeleton-app).
 
 ## On this page
-
-

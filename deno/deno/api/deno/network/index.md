@@ -601,5 +601,3 @@ T
 [Deno.VsockListener](./././~/Deno.VsockListener "Deno.VsockListener")
 
 Specialized listener that accepts VSOCK connections.
-
-

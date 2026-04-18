@@ -123,5 +123,3 @@ app.get('/country', (c) =>
 
 export default handle(app)
 ```
-
-

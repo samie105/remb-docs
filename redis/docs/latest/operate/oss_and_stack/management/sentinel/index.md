@@ -1022,5 +1022,3 @@ Note that in some ways TILT mode could be replaced using the monotonic clock API
 **A note about the word slave used in this man page**: Starting with Redis 5, if not for backward compatibility, the Redis project no longer uses the word slave. Unfortunately in this command the word slave is part of the protocol, so we'll be able to remove such occurrences only when this API will be naturally deprecated.
 
 ## On this page
-
-

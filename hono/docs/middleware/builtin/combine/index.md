@@ -117,5 +117,3 @@ import { bearerAuth } from 'hono/bearer-auth'
 // Otherwise, require a valid token.
 app.use('/api/*', except('/api/public/*', bearerAuth({ token })))
 ```
-
-

@@ -274,5 +274,3 @@ supabase functions deploy drizzle-tutorial --no-verify-jwt
 ```
 
 Finally, you can use URL of the deployed project and navigate to the route you created `(e.g. /drizzle-tutorial)` to access your edge function.
-
-

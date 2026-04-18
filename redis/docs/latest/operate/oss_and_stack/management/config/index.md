@@ -95,5 +95,3 @@ In this configuration there is no need for the application to set a time to live
 Basically, in this configuration Redis acts in a similar way to memcached. We have more extensive documentation about using Redis as an LRU cache [here](/docs/latest/develop/reference/eviction/).
 
 ## On this page
-
-

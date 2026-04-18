@@ -252,5 +252,3 @@ console.log(`Next week: ${nextWeek}`);
 const zonedDateTime = Temporal.Now.zonedDateTimeISO("America/New_York");
 console.log(`Time in New York: ${zonedDateTime}`);
 ```
-
-

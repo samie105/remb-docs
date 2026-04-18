@@ -368,5 +368,3 @@ Do the inserts on the publisher same as before. They replicate using the row fil
  6
  7
 (3 rows)
-
-

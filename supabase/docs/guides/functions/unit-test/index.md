@@ -102,5 +102,3 @@ To locally test and debug Edge Functions, you can utilize the Supabase CLI. Let'
 ## Resources[#](#resources)
 
 *   Full guide on Testing Supabase Edge Functions on [Mansueli's tips](https://blog.mansueli.com/testing-supabase-edge-functions-with-deno-test)
-
-

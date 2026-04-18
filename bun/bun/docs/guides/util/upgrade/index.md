@@ -133,5 +133,3 @@ Detect when code is executed with Bun
 Next
 
 ](/docs/guides/util/detect-bun)
-
-

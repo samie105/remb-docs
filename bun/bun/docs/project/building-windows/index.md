@@ -91,5 +91,3 @@ bun-debug test "C:\bun\test\js\bun\resolve\import-meta.test.js"
 ### failed to write output ‘bun-debug.exe’: permission denied
 
 you cannot overwrite `bun-debug.exe` if it is already open. you likely have a running instance, maybe in the vscode debugger?
-
-

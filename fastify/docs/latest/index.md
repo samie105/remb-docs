@@ -30,5 +30,3 @@ Developers experienced with Fastify should consult the [reference documentation]
 ## Additional Documentation[​](#additional-documentation "Direct link to Additional Documentation")
 
 *   Fastify's [Long Term Support (LTS)](/docs/latest/Reference/LTS/) policy
-
-

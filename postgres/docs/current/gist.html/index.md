@@ -924,5 +924,3 @@ Text similarity using trigram matching
 `seg`
 
 Indexing for “float ranges”
-
-

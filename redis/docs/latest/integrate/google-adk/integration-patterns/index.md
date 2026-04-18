@@ -188,5 +188,3 @@ The [travel\_agent\_memory\_hybrid](https://github.com/redis-developer/adk-redis
 *   [Car dealership tutorial](https://redis.io/tutorials/build-a-car-dealership-agent-with-google-adk-and-redis-agent-memory/)
 
 ## On this page
-
-

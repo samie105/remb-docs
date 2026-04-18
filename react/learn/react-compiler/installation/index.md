@@ -197,5 +197,3 @@ Now that you have React Compiler installed, learn more about:
 *   [Incremental adoption strategies](react/learn/react-compiler/incremental-adoption/index.md) for existing codebases
 *   [Debugging techniques](react/learn/react-compiler/debugging/index.md) for troubleshooting issues
 *   [Compiling Libraries guide](https://react.dev/reference/react-compiler/compiling-libraries) for compiling your React library
-
-

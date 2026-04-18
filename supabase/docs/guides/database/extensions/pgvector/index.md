@@ -79,5 +79,3 @@ To get the exact number of requested rows, use [iterative search](https://github
 *   [Storing OpenAI embeddings in Postgres with pgvector](/blog/openai-embeddings-postgres-vector)
 *   [A ChatGPT Plugins Template built with Supabase Edge Runtime](/blog/building-chatgpt-plugins-template)
 *   [Template for building your own custom ChatGPT style doc search](https://github.com/supabase-community/nextjs-openai-doc-search)
-
-

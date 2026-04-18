@@ -2122,5 +2122,3 @@ integrations: [  // Example: where examplePreset() returns: [integrationOne, int
 *   [Astro Integration Template](https://github.com/florian-lefebvre/astro-integration-template) - by Florian Lefebvre on GitHub
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

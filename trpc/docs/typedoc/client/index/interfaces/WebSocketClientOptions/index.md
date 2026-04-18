@@ -265,5 +265,3 @@ Type
 #### Returns[​](#returns-4 "Direct link to Returns")
 
 `WebSocket`
-
-

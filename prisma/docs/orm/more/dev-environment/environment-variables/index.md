@@ -148,5 +148,3 @@ The below script uses `dotenv-cli` to pass the `.env.sample` environment file (w
     "test": "dotenv -e .env.sample -- jest -i"
   },
 ```
-
-

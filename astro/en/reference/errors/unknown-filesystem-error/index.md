@@ -22,5 +22,3 @@ nav_next: {"path": "astro/en/reference/errors/unknown-markdown-error/index.md", 
 An unknown error occurred while reading or writing files to disk. It can be caused by many things, eg. missing permissions or a file not existing we attempt to read.
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

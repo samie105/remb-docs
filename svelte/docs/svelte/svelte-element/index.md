@@ -48,5 +48,3 @@ Svelte tries its best to infer the correct namespace from the element's surround
 previous next
 
 [<svelte:head>](/docs/svelte/svelte-head) [<svelte:options>](/docs/svelte/svelte-options)
-
-

@@ -225,5 +225,3 @@ The `processors` section configures the behavior of the pipeline. The [example](
 See also the [RDI configuration file reference](/docs/latest/integrate/redis-data-integration/reference/config-yaml-reference/#processors) for full details of the other available properties.
 
 ## On this page
-
-

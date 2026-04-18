@@ -355,5 +355,3 @@ This system can be customized to work with any content and embedding generation 
 *   [Semantic search](/docs/guides/ai/semantic-search)
 *   [Vector indexes](/docs/guides/ai/vector-indexes)
 *   [Supabase Edge Functions](/docs/guides/functions)
-
-

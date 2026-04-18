@@ -56,5 +56,3 @@ Number of times generic plan was chosen
 Number of times custom plan was chosen
 
 The `pg_prepared_statements` view is read-only.
-
-

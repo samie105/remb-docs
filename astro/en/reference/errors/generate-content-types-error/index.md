@@ -28,5 +28,3 @@ nav_next: {"path": "astro/en/reference/errors/get-entry-deprecation-error/index.
 *   [Content collections documentation](/en/guides/content-collections/)
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

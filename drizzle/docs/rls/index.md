@@ -549,5 +549,3 @@ async function getRooms() {
   return db.rls((tx) => tx.select().from(rooms));
 }
 ```
-
-

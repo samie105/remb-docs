@@ -146,5 +146,3 @@ Now you know why JSX exists and how to use it in components:
 *   React components group rendering logic together with markup because they are related.
 *   JSX is similar to HTML, with a few differences. You can use a [converter](https://transform.tools/html-to-jsx) if you need to.
 *   Error messages will often point you in the right direction to fixing your markup.
-
-

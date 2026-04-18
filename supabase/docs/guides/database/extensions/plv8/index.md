@@ -79,5 +79,3 @@ A [set-returning function](https://plv8.github.io/#set-returning-function-calls)
 
 *   Official [`plv8` documentation](https://plv8.github.io/)
 *   [plv8 GitHub Repository](https://github.com/plv8/plv8)
-
-

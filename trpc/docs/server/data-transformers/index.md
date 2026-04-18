@@ -230,5 +230,3 @@ ts
   `output: OutputDataTransformer;`
 
 `}`
-
-

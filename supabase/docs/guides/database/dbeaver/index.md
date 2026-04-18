@@ -81,5 +81,3 @@ In DBeaver's SSL tab, add your SSL certificate
 Test your connection and then click finish. You should now be able to interact with your database with DBeaver
 
 ![connected dashboard](/docs/img/guides/database/connecting-to-postgres/dbeaver/finished.png)
-
-

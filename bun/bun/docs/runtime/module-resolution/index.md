@@ -133,5 +133,3 @@ Resolve a module specifier (e.g. `"zod"` or `"./file.tsx"`) to a url. Equivalent
 `import.meta.url`
 
 A `string` url to the current file, e.g. `file:///path/to/project/index.ts`. Equivalent to [`import.meta.url` in browsers](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/import.meta#url)
-
-

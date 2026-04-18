@@ -141,5 +141,3 @@ interface ConnInfo {
   remote: NetAddrInfo
 }
 ```
-
-

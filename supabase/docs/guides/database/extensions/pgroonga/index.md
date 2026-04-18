@@ -126,5 +126,3 @@ And the result:
 ## Resources[#](#resources)
 
 *   Official [PGroonga documentation](https://pgroonga.github.io/tutorial/)
-
-

@@ -109,5 +109,3 @@ You can look at our [Choosing Compute Add-on](/docs/guides/ai/choosing-compute-a
 Or take a look at our [pgvector 0.5.0 performance](/blog/increase-performance-pgvector-hnsw) and [pgvector 0.4.0 performance](/blog/pgvector-performance) blog posts to see what pgvector is capable of and how the above technique can be used to achieve the best results.
 
 ![multi database](/docs/img/ai/going-prod/size-to-rps--light.png)
-
-

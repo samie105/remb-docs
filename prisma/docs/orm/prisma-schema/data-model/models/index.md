@@ -476,5 +476,3 @@ Every Prisma model must have at least one unique identifier:
 
 *   `@id` or `@@id` for primary key
 *   `@unique` or `@@unique` for unique constraint
-
-

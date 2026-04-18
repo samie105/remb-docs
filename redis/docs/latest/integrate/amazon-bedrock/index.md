@@ -38,5 +38,3 @@ To fully set up Bedrock with Redis Cloud, you will need to do the following:
 *   [Detailed steps](https://github.com/redis-applied-ai/aws-redis-bedrock-stack/blob/main/README.md)
 
 ## On this page
-
-

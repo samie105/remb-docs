@@ -39,5 +39,3 @@ This is the General Availability (GA) release of RedisInsight 2.26.
 *   [#2014](https://github.com/RedisInsight/RedisInsight/pull/2014) Display the actual command processing time in Workbench when results are grouped
 
 ## On this page
-
-

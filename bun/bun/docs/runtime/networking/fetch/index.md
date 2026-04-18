@@ -474,5 +474,3 @@ await write("output.txt", response);
 *   S3 operations automatically handle signing requests and merging authentication headers
 
 Note: Many of these features are Bun-specific extensions to the standard fetch API.
-
-

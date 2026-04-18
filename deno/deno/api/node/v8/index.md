@@ -342,5 +342,3 @@ v
 [startupSnapshot](.././v8/~/startupSnapshot "startupSnapshot")
 
 The `v8.startupSnapshot` interface can be used to add serialization and deserialization hooks for custom startup snapshots.
-
-

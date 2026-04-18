@@ -57,5 +57,3 @@ main(void)
 ## Compatibility
 
 `DISCONNECT` is specified in the SQL standard.
-
-

@@ -222,5 +222,3 @@ _`geometric_type`_ `~=` _`geometric_type`_ → `boolean`
 Are these objects the same? Available for `point`, `box`, `polygon`, `circle`.
 
 `polygon '((0,0),(1,1))' ~= polygon '((1,1),(0,0))'` → `t`
-
-

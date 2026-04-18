@@ -36,5 +36,3 @@ Since an _`expression`_ is converted to a `SELECT` command, it can contain the s
 IF count(\*) > 0 FROM my\_table THEN ...
 
 since the _`expression`_ between `IF` and `THEN` is parsed as though it were `SELECT count(*) > 0 FROM my_table`. The `SELECT` must produce a single column, and not more than one row. (If it produces no rows, the result is taken as NULL.)
-
-

@@ -123,5 +123,3 @@ v
 [Deno.jupyter.$display](./././~/Deno.jupyter.$display "Deno.jupyter.$display")
 
 No documentation available
-
-

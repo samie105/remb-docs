@@ -82,5 +82,3 @@ More complex queries may generate additional suggested indexes:
 ## Resources[#](#resources)
 
 *   [`index_advisor`](https://github.com/supabase/index_advisor) repo
-
-

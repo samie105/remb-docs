@@ -608,5 +608,3 @@ While the OpenTelemetry integration for Deno is in development, there are some l
 *   HTTP methods are that are not known are not normalized to `_OTHER` in the `http.request.method` span attribute as per the OpenTelemetry semantic conventions.
 *   The HTTP server span for [`Deno.serve`](/api/deno/~/Deno.serve) does not have an OpenTelemetry status set, and if the handler throws (ie `onError` is invoked), the span will not have an error status set and the error will not be attached to the span via event.
 *   There is no mechanism to add a `http.route` attribute to the HTTP client span for [`fetch`](/api/web/~/fetch), or to update the span name to include the route.
-
-

@@ -96,5 +96,3 @@ where the archive directory is physically located on the standby server, so that
 *   produce debugging output in `cleanup.log`
     
 *   remove no-longer-needed files from the archive directory
-
-

@@ -172,5 +172,3 @@ Specifies the maximum number of pages (as a fraction of total pages in the relat
 Note that when eager scanning is enabled, only freeze failures count against the cap, not successful freezing. Successful page freezes are capped internally at 20% of the all-visible but not all-frozen pages in the relation. Capping successful page freezes helps amortize the overhead across multiple normal vacuums and limits the potential downside of wasted eager freezes of pages that are modified again before the next aggressive vacuum.
 
 This parameter can only be set in the `postgresql.conf` file or on the server command line; but the setting can be overridden for individual tables by changing the [corresponding table storage parameter](https://www.postgresql.org/docs/current/sql-createtable.html#RELOPTION-VACUUM-MAX-EAGER-FREEZE-FAILURE-RATE). For more information on tuning vacuum's freezing behavior, see [Section 24.1.5](https://www.postgresql.org/docs/current/routine-vacuuming.html#VACUUM-FOR-WRAPAROUND "24.1.5. Preventing Transaction ID Wraparound Failures").
-
-

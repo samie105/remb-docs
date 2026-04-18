@@ -39,5 +39,3 @@ NRedisStack is a comprehensive .NET client library for Redis that extends StackE
 Refer to the complete [C#/.NET guide](/docs/latest/develop/clients/dotnet/) to install, connect, and use NRedisStack.
 
 ## On this page
-
-

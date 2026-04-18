@@ -28,5 +28,3 @@ Certain words cannot be used for slot names due to being already used internally
 *   [Named slots](/en/basics/astro-components/#named-slots)
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

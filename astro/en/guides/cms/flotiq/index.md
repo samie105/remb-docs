@@ -389,5 +389,3 @@ In Flotiq, you can define which Content Type and events it should trigger on, an
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

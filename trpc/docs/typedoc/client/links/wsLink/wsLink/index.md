@@ -14,5 +14,3 @@ nav_next: {"path": "trpc/docs/typedoc/client/links/wsLink/wsLink/functions/wsLin
 ---
 
 links/wsLink/wsLink | tRPC
-
-

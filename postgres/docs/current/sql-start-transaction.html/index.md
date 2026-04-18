@@ -42,5 +42,3 @@ The `DEFERRABLE` _`transaction_mode`_ is a PostgreSQL language extension.
 The SQL standard requires commas between successive _`transaction_modes`_, but for historical reasons PostgreSQL allows the commas to be omitted.
 
 See also the compatibility section of [SET TRANSACTION](https://www.postgresql.org/docs/current/sql-set-transaction.html "SET TRANSACTION").
-
-

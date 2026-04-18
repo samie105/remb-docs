@@ -93,5 +93,3 @@ Set a time zone in Bun
 Next
 
 ](/docs/guides/runtime/timezone)
-
-

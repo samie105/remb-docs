@@ -52,5 +52,3 @@ CREATE ACCESS METHOD heptree TYPE INDEX HANDLER heptree\_handler;
 ## Compatibility
 
 `CREATE ACCESS METHOD` is a PostgreSQL extension.
-
-

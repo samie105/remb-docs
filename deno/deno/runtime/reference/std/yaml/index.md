@@ -70,5 +70,3 @@ deno add jsr:@std/yaml
 ```
 
 [See all symbols in @std/yaml on](https://jsr.io/@std/yaml/doc)
-
-

@@ -300,5 +300,3 @@ trpcOptions
 `n/a`
 
 tRPC handler options including `router`, `createContext`, etc.
-
-

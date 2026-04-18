@@ -52,5 +52,3 @@ The OID of the data type of the specified column or `InvalidOid` on error. On er
 ## Submit correction
 
 If you see anything in the documentation that is not correct, does not match your experience with the particular feature or requires further clarification, please use [this form](/account/comments/new/18/spi-spi-gettypeid.html/) to report a documentation issue.
-
-

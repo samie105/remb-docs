@@ -224,5 +224,3 @@ Version information related to the current Deno CLI runtime environment.
 *   [deno](./././~/Deno.version#property_deno)
 *   [typescript](./././~/Deno.version#property_typescript)
 *   [v8](./././~/Deno.version#property_v8)
-
-

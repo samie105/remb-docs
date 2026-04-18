@@ -43,5 +43,3 @@ They differ from normal JavaScript functions in important ways, however:
 previous next
 
 [.svelte.js and .svelte.ts files](/docs/svelte/svelte-js-files) [$state](/docs/svelte/$state)
-
-

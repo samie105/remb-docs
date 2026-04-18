@@ -29,5 +29,3 @@ nav_next: {"path": "astro/en/reference/errors/could-not-transform-image/index.md
 A content loader returned an invalid `id`. Make sure that the `id` of the entry is a string. See the [Content collections documentation](/en/guides/content-collections/) for more information.
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

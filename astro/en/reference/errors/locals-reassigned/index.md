@@ -24,5 +24,3 @@ nav_next: {"path": "astro/en/reference/errors/markdown-content-schema-validation
 Thrown when a value is being set as the `locals` field on the Astro global or context.
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

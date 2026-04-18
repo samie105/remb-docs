@@ -28,5 +28,3 @@ If `this` is falsy, no component is rendered.
 previous next
 
 [<svelte:fragment>](/docs/svelte/legacy-svelte-fragment) [<svelte:self>](/docs/svelte/legacy-svelte-self)
-
-

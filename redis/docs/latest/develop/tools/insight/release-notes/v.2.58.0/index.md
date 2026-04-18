@@ -41,5 +41,3 @@ This is the General Availability (GA) release of Redis Insight 2.58.
 *   [#3828](https://github.com/RedisInsight/RedisInsight/pull/3828) Fixed an issue to [display multiple hash fields](https://github.com/RedisInsight/RedisInsight/issues/3826) when expanding a hash value.
 
 ## On this page
-
-

@@ -30,5 +30,3 @@ These can be found under the [dedicated security page](/dashboard/org/_/security
 Each product offered by Supabase comes with customizable security controls and these security controls help ensure that applications built on Supabase are secure, compliant, and resilient against various threats.
 
 The [security configuration guides](/docs/guides/security/product-security) provide detailed information for configuring individual products.
-
-

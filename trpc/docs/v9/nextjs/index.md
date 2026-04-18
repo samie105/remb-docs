@@ -309,5 +309,3 @@ tsx
 ## Next steps[​](#next-steps "Direct link to Next steps")
 
 Refer to the `@trpc/react` docs for additional information on executing [Queries](trpc/docs/v9/react-queries/index.md) and [Mutations](trpc/docs/v9/react-mutations/index.md) inside your components.
-
-

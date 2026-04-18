@@ -48,5 +48,3 @@ Next, point your browser to `http://localhost:5540`.
 Redis Insight also provides a health check endpoint at `http://localhost:5540/api/health/` to monitor the health of the running container.
 
 ## On this page
-
-

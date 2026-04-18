@@ -24,5 +24,3 @@ nav_next: {"path": "astro/en/reference/errors/cant-use-astro-config-module-error
 Astro could not find an associated file with content while trying to render the route. This is an Astro error and not a user error. If restarting the dev server does not fix the problem, please file an issue.
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

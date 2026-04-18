@@ -30,5 +30,3 @@ import {defineMiddleware} from "astro:middleware";throw new Error("Error thrown 
 ```
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

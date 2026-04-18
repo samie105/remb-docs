@@ -680,5 +680,3 @@ const el = Bun.markdown.react("## Hello World", undefined, {
   autolinks: true,
 });
 ```
-
-

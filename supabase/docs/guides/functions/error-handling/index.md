@@ -64,5 +64,3 @@ You can see the production error logs in the Logs tab of your Supabase Dashboard
 ![Function invocations.](/docs/img/guides/functions/function-logs.png)
 
 For more information on Logging, check out [this guide](/docs/guides/functions/logging).
-
-

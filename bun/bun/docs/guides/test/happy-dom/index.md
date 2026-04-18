@@ -128,5 +128,3 @@ import, require, and test Svelte components with bun test
 Next
 
 ](/docs/guides/test/svelte-test)
-
-

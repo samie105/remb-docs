@@ -98,5 +98,3 @@ For more advanced migrations, including the use of a middleware server component
 ## Migrate to Supabase[#](#migrate-to-supabase)
 
 [Contact us](https://forms.supabase.com/firebase-migration) if you need more help migrating your project.
-
-

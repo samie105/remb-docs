@@ -350,5 +350,3 @@ There is no active (in-progress) transaction. (SQLSTATE 25P01)
 \-605 (`ECPG_WARNING_PORTAL_EXISTS`) [#](#ECPG-SQLSTATE-SQLCODE-ECPG-WARNING-PORTAL-EXISTS)
 
 An existing cursor name was specified. (SQLSTATE 42P03)
-
-

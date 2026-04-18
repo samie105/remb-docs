@@ -216,5 +216,3 @@ Enhanced support for `int[]`
 `pg_trgm`
 
 Text similarity using trigram matching
-
-

@@ -77,5 +77,3 @@ To verify that your project is successfully stored on GitHub, visit GitHub.com a
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

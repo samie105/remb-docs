@@ -34,5 +34,3 @@ To fix this, either:
 *   Rename your secret environment variables to use a prefix that is not in `vite.envPrefix`.
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

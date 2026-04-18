@@ -120,5 +120,3 @@ To learn more about FusionCache and its advanced features:
 *   [Redis Backplane Package](https://www.nuget.org/packages/ZiggyCreatures.FusionCache.Backplane.StackExchangeRedis)
 
 ## On this page
-
-

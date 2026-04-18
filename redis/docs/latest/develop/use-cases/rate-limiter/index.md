@@ -217,5 +217,3 @@ if not allowed:
 *   [Transactions](/docs/latest/develop/using-commands/transactions/) - Alternative to Lua scripts for atomicity
 
 ## On this page
-
-

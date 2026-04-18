@@ -24,5 +24,3 @@ nav_next: {"path": "astro/en/reference/errors/no-matching-renderer/index.md", "t
 No import statement was found for one of the components. If there is an import statement, make sure you are using the same identifier in both the imports and the component usage.
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

@@ -112,5 +112,3 @@ Production environments must be sized for peak load scenarios to ensure performa
 By following these best practices, you can ensure a smooth and efficient transition from development to production with Redis Open Source and Redis Search. Proper configuration, rigorous testing, and careful resource planning are critical to delivering a reliable and high-performance Redis deployment.
 
 ## On this page
-
-

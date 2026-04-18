@@ -38,5 +38,3 @@ This is the General Availability (GA) release of RedisInsight 2.32.
 *   [#2470](https://github.com/RedisInsight/RedisInsight/pull/2470) Preset the header containing the engine, the API version and the library name in the JavaScript file when creating a new library within the [Triggers and Functions](https://redis.com/blog/introducing-triggers-and-functions/?utm_source=redisinsight&utm_medium=main&utm_campaign=main) tool
 
 ## On this page
-
-

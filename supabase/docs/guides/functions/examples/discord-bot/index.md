@@ -74,5 +74,3 @@ Open Discord, type `/Promise` and press **Enter**.
 ```
 1supabase functions serve discord-bot --no-verify-jwt --env-file ./supabase/.env.local2ngrok http 54321
 ```
-
-

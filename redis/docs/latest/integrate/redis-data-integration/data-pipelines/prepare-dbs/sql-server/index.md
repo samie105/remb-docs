@@ -214,5 +214,3 @@ Note:
 RDI will _not_ correctly capture changes that happen in the time gap between changing the source schema (step 1 above) and updating the value of `@capture_instance` (step 2). Try to keep the gap as short as possible or perform the update at a time when you expect few changes to the data.
 
 ## On this page
-
-

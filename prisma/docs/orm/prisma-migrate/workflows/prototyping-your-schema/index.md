@@ -236,5 +236,3 @@ The following scenario demonstrates how to use `db push` to prototype a change t
 At this point, the final result of your prototyping is preserved in a migration, and can be pushed to other environments (testing, production, or other members of your team).
 
 [Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/prisma-migrate/workflows/prototyping-your-schema.mdx)
-
-

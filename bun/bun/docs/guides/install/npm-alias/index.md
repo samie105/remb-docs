@@ -76,5 +76,3 @@ Configuring a monorepo using workspaces
 Next
 
 ](/docs/guides/install/workspaces)
-
-

@@ -44,5 +44,3 @@ use [httpBatchStreamLink](trpc/docs/typedoc/client/index/functions/httpBatchStre
 ## See[​](#see "Direct link to See")
 
 [https://trpc.io/docs/client/links/httpBatchStreamLink](trpc/docs/client/links/httpBatchStreamLink/index.md)
-
-

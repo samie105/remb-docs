@@ -219,5 +219,3 @@ const values = Bun.JSONL.parse(input);
 *   **UTF-8 support**: Non-ASCII `Uint8Array` input is decoded to UTF-16 using SIMD-accelerated conversion.
 *   **BOM handling**: UTF-8 BOM (`0xEF 0xBB 0xBF`) at the start of a `Uint8Array` is automatically skipped.
 *   **Pre-built object shape**: The result object from `parseChunk` uses a cached structure for fast property access.
-
-

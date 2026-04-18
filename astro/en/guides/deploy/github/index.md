@@ -241,5 +241,3 @@ Once your Astro project is [deployed to GitHub pages at a GitHub URL](#how-to-de
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

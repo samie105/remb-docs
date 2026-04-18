@@ -78,5 +78,3 @@ Add a peer dependency
 Next
 
 ](/docs/guides/install/add-peer)
-
-

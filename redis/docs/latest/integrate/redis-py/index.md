@@ -39,5 +39,3 @@ redis-py is the recommended Python client for Redis, providing a comprehensive i
 Refer to the complete [Python guide](/docs/latest/develop/clients/redis-py/) to install, connect, and use redis-py.
 
 ## On this page
-
-

@@ -42,5 +42,3 @@ This is the General Availability (GA) release of RedisInsight 2.40.
 *   [#2868](https://github.com/RedisInsight/RedisInsight/pull/2868) Prevent [unintentional data overwrites](https://github.com/RedisInsight/RedisInsight/issues/2791) by disabling both manual and automatic refreshing of key values while editing in the Browser
 
 ## On this page
-
-

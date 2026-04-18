@@ -429,5 +429,3 @@ App
 previous next
 
 [Stores](/docs/svelte/stores) [Lifecycle hooks](/docs/svelte/lifecycle-hooks)
-
-

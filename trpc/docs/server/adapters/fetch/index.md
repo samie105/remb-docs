@@ -518,5 +518,3 @@ where `INPUT` is a URI-encoded JSON string.
 `POST http://localhost:3000/trpc/createUser`
 
 with `req.body` of type `User`
-
-

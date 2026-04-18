@@ -14,5 +14,3 @@ nav_next: {"path": "trpc/docs/typedoc/client/index/functions/isNonJsonSerializab
 ---
 
 Function: isFormData() | tRPC
-
-

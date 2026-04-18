@@ -1726,5 +1726,3 @@ await seed(db, schema, { count: 1000 }).refine((funcs) => ({
   },
 }));
 ```
-
-

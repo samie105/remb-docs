@@ -64,5 +64,3 @@ Reference to schema
 [Home](https://www.postgresql.org/docs/current/index.html "PostgreSQL 18.3 Documentation")
 
  52.42. `pg_publication_rel`
-
-

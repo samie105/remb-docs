@@ -135,5 +135,3 @@ You can find Astro’s docs starter, and other official templates, on [astro.new
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

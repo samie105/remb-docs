@@ -65,5 +65,3 @@ Convert a Uint8Array to an ArrayBuffer
 Next
 
 ](/docs/guides/binary/typedarray-to-arraybuffer)
-
-

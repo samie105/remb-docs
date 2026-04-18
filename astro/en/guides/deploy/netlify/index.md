@@ -268,5 +268,3 @@ No special configuration is required to use Netlify Functions with Astro. Add a 
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

@@ -200,5 +200,3 @@ tsx
   `});`
 
 `export type AppRouter = typeof appRouter;`
-
-

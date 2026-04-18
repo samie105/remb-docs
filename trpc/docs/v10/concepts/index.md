@@ -76,5 +76,3 @@ A function that can run code before and after a **procedure**. Can modify **cont
 [**Validation ↗**](trpc/docs/server/procedures/index.md#input-validation)
 
 "Does this input data contain the right stuff?"
-
-

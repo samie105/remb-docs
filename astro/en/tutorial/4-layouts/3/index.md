@@ -90,5 +90,3 @@ If you’d like to customize your page template, you can.
 *   [Nesting Layouts in Astro](/en/basics/layouts/#nesting-layouts)
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

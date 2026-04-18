@@ -150,5 +150,3 @@ The `tool_names` set specifies which tools to cache. Not all tools are idempoten
 *   [langcache\_cache example](https://github.com/redis-developer/adk-redis/tree/main/examples/langcache_cache): Managed caching with LangCache
 
 ## On this page
-
-

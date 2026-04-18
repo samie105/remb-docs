@@ -126,5 +126,3 @@ If additional indexes might improve your query, the Index Advisor shows the sugg
 *   Total cost is the cost to fetch all the rows
 
 Costs are in arbitrary units, where a single sequential page read costs 1.0 units.
-
-

@@ -366,5 +366,3 @@ tick?: (t: number, u: number) => void;
 previous next
 
 [svelte/store](/docs/svelte/svelte-store) [Compiler errors](/docs/svelte/compiler-errors)
-
-

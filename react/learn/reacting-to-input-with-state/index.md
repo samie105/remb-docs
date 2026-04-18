@@ -208,5 +208,3 @@ Add and remove a CSS class[](#add-and-remove-a-css-class "Link for this heading"
 Make it so that clicking on the picture _removes_ the `background--active` CSS class from the outer `<div>`, but _adds_ the `picture--active` class to the `<img>`. Clicking the background again should restore the original CSS classes.
 
 Visually, you should expect that clicking on the picture removes the purple background and highlights the picture border. Clicking outside the picture highlights the background, but removes the picture border highlight.
-
-

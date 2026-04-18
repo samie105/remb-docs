@@ -62,5 +62,3 @@ This will produce the following output:
 *   [Testing RLS policies](/docs/guides/database/extensions/pgtap#testing-rls-policies)
 *   [pgTAP extension](/docs/guides/database/extensions/pgtap)
 *   Official [pgTAP documentation](https://pgtap.org/)
-
-

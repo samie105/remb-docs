@@ -1319,5 +1319,3 @@ See the [vector sets](/docs/latest/develop/data-types/vector-sets/) docs for mor
 You may also be interested in [vector search](/docs/latest/develop/clients/nodejs/vecsearch/). This is a feature of [Redis Search](/docs/latest/develop/ai/search-and-query/) that lets you retrieve [JSON](/docs/latest/develop/data-types/json/) and [hash](/docs/latest/develop/data-types/hashes/) documents based on vector data stored in their fields.
 
 ## On this page
-
-

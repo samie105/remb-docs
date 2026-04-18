@@ -235,5 +235,3 @@ deno add jsr:@std/semver
 ```
 
 [See all symbols in @std/semver on](https://jsr.io/@std/semver/doc)
-
-

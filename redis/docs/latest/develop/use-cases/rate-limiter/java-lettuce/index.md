@@ -419,5 +419,3 @@ Lettuce also supports automatic reconnection by default. If the connection to Re
 *   [Lettuce client](/docs/latest/develop/clients/lettuce/) - Redis Lettuce client documentation
 
 ## On this page
-
-

@@ -24,5 +24,3 @@ nav_next: {"path": "astro/en/reference/errors/reserved-slot-name/index.md", "tit
 The remote image URL does not match your configured `image.domains` or `image.remotePatterns`.
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

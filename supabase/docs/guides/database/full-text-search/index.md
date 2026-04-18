@@ -382,5 +382,3 @@ You can also create a function that combines `websearch_to_tsquery()` with ranki
 ## Resources[#](#resources)
 
 *   [Postgres: Text Search Functions and Operators](https://www.postgresql.org/docs/12/functions-textsearch.html)
-
-

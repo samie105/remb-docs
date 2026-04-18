@@ -58,5 +58,3 @@ You can manage your payment methods through the [AWS Billing and Cost Management
 ## Manage your billing details[#](#manage-your-billing-details)
 
 You can manage billing details, such as the billing address or tax ID, through the [AWS Billing and Cost Management console](https://console.aws.amazon.com/billing).
-
-

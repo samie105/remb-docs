@@ -62,5 +62,3 @@ In addition, the query as a whole may maintain lists of range table indexes that
 Finally, but most importantly, the `RANGE_TABLE` option will display a dump of the query's entire range table. Each range table entry is labelled with the appropriate range table index, the kind of range table entry (e.g. `relation`, `subquery`, or `join`), followed by the contents of various range table entry fields that are not normally part of `EXPLAIN` output. Some of these fields are only displayed for certain kinds of range table entries. For example, `Eref` is displayed for all types of range table entries, but `CTE Name` is displayed only for range table entries of type `cte`.
 
 For more information about range table entries, see the definition of `RangeTblEntry` in `nodes/parsenodes.h`.
-
-

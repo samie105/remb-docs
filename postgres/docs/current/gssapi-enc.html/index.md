@@ -22,5 +22,3 @@ The PostgreSQL server will listen for both normal and GSSAPI\-encrypted connecti
 When using GSSAPI for encryption, it is common to use GSSAPI for authentication as well, since the underlying mechanism will determine both client and server identities (according to the GSSAPI implementation) in any case. But this is not required; another PostgreSQL authentication method can be chosen to perform additional verification.
 
 Other than configuration of the negotiation behavior, GSSAPI encryption requires no setup beyond that which is necessary for GSSAPI authentication. (For more information on configuring that, see [Section 20.6](https://www.postgresql.org/docs/current/gssapi-auth.html "20.6. GSSAPI Authentication").)
-
-

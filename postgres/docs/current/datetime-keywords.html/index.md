@@ -142,5 +142,3 @@ Time is on or after 12:00
 `T`
 
 Next field is time
-
-

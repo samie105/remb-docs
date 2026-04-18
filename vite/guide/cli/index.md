@@ -14,5 +14,3 @@ nav_next: {"path": "vite/guide/using-plugins/index.md", "title": "Using Plugins 
 ---
 
 [Skip to content](#VPContent)
-
-

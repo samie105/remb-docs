@@ -79,5 +79,3 @@ With **[@vercel/postgres](https://vercel.com/docs/storage/vercel-postgres)** sev
 If you’re about to use Vercel Postgres from a _serverfull_ environment, you can do it either with `@vercel/postgres` or directly access the DB through `postgesql://` with either **[`postgres`](#postgresjs)** or **[`pg`](#node-postgres)**.
 
 #### What’s next?[](#whats-next)
-
-

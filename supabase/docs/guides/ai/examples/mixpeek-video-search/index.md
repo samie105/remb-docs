@@ -110,5 +110,3 @@ You can now test it out by running `poetry run search`, and you will be presente
 ## Conclusion[#](#conclusion)
 
 With just a couple of Python scripts, you are able to implement video search as well as reverse video search using Mixpeek Embed and Supabase Vector. This approach allows for powerful semantic search capabilities that can be integrated into various applications, enabling you to search through video content using both text and video queries.
-
-

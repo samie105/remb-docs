@@ -16,5 +16,3 @@ nav_next: {"path": "prisma/docs/orm/more/troubleshooting/typescript-performance/
 The Next Evolution of Prisma ORMNew
 
 Prisma Next: a full TypeScript rewrite with a new query API, SQL builder, and extensible architecture.
-
-

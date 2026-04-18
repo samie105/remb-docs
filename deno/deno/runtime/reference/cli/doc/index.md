@@ -291,5 +291,3 @@ Remove trailing .html from various links. Will still generate files with a .html
 `--symbol-redirect-map`<symbol-redirect-map>
 
 Path to a JSON file keyed by file, with an inner map of symbol to an external link.
-
-

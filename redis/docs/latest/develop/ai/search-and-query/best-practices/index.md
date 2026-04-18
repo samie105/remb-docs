@@ -16,5 +16,3 @@ nav_next: {"path": "redis/docs/latest/operate/oss_and_stack/reference/cluster-sp
 # Best practices
 
 Redis Search best practices
-
-

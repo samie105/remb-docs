@@ -338,5 +338,3 @@ INSERT INTO "users" ("name") VALUES('Dan');
 INSERT INTO "users" ("name") VALUES('Andrew');
 INSERT INTO "users" ("name") VALUES('Dandrew');
 ```
-
-

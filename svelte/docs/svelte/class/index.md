@@ -142,5 +142,3 @@ As with other directives, we can use a shorthand when the name of the class coin
 previous next
 
 [style:](/docs/svelte/style) [await](/docs/svelte/await-expressions)
-
-

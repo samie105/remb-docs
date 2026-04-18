@@ -121,5 +121,3 @@ prisma-deno-deploy/
 *   Set up [Prisma Migrate](prisma/docs/orm/prisma-migrate/index.md) for schema versioning in production
 
 [Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/prisma-client/deployment/edge/deploy-to-deno-deploy.mdx)
-
-

@@ -29,5 +29,3 @@ Astro tried to hydrate a component on the client, but the renderer used does not
 *   [Hydrating framework components](/en/guides/framework-components/#hydrating-interactive-components)
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

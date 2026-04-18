@@ -217,5 +217,3 @@ To provide your feedback, [open a ticket in our Redis Insight repository](https:
 Redis Insight is licensed under [SSPL](https://github.com/Redis-Insight/Redis-Insight/blob/main/LICENSE) license.
 
 ## On this page
-
-

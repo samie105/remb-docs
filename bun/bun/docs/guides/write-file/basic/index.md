@@ -91,5 +91,3 @@ Write a Blob to a file
 Next
 
 ](/docs/guides/write-file/blob)
-
-

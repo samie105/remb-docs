@@ -106,5 +106,3 @@ Control data access with Row Level Security policies for OAuth clients.
 
 *   [GitHub Discussion](https://github.com/orgs/supabase/discussions/38022) - Share your use cases and help shape the roadmap
 *   [Discord Community](https://discord.supabase.com/) - Get help and share what you're building
-
-

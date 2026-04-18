@@ -58,5 +58,3 @@ jobs:
 Refer to the [README.md](https://github.com/oven-sh/setup-bun) for complete documentation of the `setup-bun` GitHub Action.
 
 Was this page helpful?
-
-

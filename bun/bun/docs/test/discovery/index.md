@@ -80,5 +80,3 @@ Lifecycle hooks
 Next
 
 ](/docs/test/lifecycle)
-
-

@@ -55,5 +55,3 @@ SELECT \* FROM dblink\_get\_notify();
 -------------+--------+-------
  virtual     |   1229 |
 (1 row)
-
-

@@ -38,5 +38,3 @@ Using Testing Library with Bun
 Next
 
 ](/docs/guides/test/testing-library)
-
-

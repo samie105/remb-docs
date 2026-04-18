@@ -32,5 +32,3 @@ nav_next: {"path": "astro/en/reference/errors/no-image-metadata/index.md", "titl
 *   [`client:only`](/en/reference/directives-reference/#clientonly)
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

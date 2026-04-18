@@ -419,5 +419,3 @@ This only works for [pure](react/learn/keeping-components-pure/index.md) functio
 *   If you want to read the latest value without “reacting” it, extract an Effect Event from your Effect.
 *   In JavaScript, objects and functions are considered different if they were created at different times.
 *   Try to avoid object and function dependencies. Move them outside the component or inside the Effect.
-
-

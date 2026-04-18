@@ -446,5 +446,3 @@ server.onRequest((request: Request) => {
 But note that for HMR support, `send` and `connect` methods are required. The `send` method is usually called when the custom event is triggered (like, `import.meta.hot.send("my-event")`).
 
 Vite exports `createServerHotChannel` from the main entry point to support HMR during Vite SSR.
-
-

@@ -139,5 +139,3 @@ deno add jsr:@std/front-matter
 ```
 
 [See all symbols in @std/front-matter on](https://jsr.io/@std/front-matter/doc)
-
-

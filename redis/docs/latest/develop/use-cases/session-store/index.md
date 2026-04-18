@@ -49,5 +49,3 @@ The typical pattern is:
 *   [Rust](/docs/latest/develop/use-cases/session-store/rust/) - Build a Redis-backed session store with `redis-rs`, including both sync and async APIs
 
 ## On this page
-
-

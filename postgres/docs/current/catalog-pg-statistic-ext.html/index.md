@@ -58,5 +58,3 @@ An array containing codes for the enabled statistics kinds; valid values are: `d
 Expression trees (in `nodeToString()` representation) for statistics object attributes that are not simple column references. This is a list with one element per expression. Null if all statistics object attributes are simple references.
 
 The `pg_statistic_ext` entry is filled in completely during [`CREATE STATISTICS`](https://www.postgresql.org/docs/current/sql-createstatistics.html "CREATE STATISTICS"), but the actual statistical values are not computed then. Subsequent [`ANALYZE`](https://www.postgresql.org/docs/current/sql-analyze.html "ANALYZE") commands compute the desired values and populate an entry in the [`pg_statistic_ext_data`](https://www.postgresql.org/docs/current/catalog-pg-statistic-ext-data.html "52.53. pg_statistic_ext_data") catalog.
-
-

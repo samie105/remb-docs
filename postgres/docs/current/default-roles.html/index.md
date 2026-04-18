@@ -42,5 +42,3 @@ O.1. `recovery.conf` file merged into `postgresql.conf` 
 [Home](https://www.postgresql.org/docs/current/index.html "PostgreSQL 18.3 Documentation")
 
  O.3. `pg_xlogdump` renamed to `pg_waldump`
-
-

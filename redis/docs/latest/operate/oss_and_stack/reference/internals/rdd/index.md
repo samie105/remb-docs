@@ -92,5 +92,3 @@ This field represents the unix time at which the RDB file was created. The forma
 This field represents a null-terminated string containing the Redis version that generated the file, as displayed in the Redis version INFO field.
 
 ## On this page
-
-

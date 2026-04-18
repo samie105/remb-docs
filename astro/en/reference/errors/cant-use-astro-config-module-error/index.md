@@ -24,5 +24,3 @@ nav_next: {"path": "astro/en/reference/errors/client-address-not-available/index
 Cannot use the module `astro:config` without enabling the experimental feature.
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

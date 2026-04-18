@@ -73,5 +73,3 @@ Convert an ArrayBuffer to an array of numbers
 Next
 
 ](/docs/guides/binary/arraybuffer-to-array)
-
-

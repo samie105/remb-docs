@@ -68,5 +68,3 @@ The arguments can appear in any order, not only the one shown above.
 ## Compatibility
 
 There is no `CREATE TEXT SEARCH PARSER` statement in the SQL standard.
-
-

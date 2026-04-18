@@ -81,5 +81,3 @@ Query: db.Post.aggregate([ { $match: { userId: { $in: [ "622f0bbbdf635a42016ee32
 The exact [event (`e`) type and the properties available](prisma/docs/orm/reference/prisma-client-reference/index.md#event-types) depends on the log level.
 
 [Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/prisma-client/observability-and-logging/logging.mdx)
-
-

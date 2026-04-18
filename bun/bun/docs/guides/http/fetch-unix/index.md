@@ -84,5 +84,3 @@ Streaming HTTP Server with Async Iterators
 Next
 
 ](/docs/guides/http/stream-iterator)
-
-

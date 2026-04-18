@@ -105,5 +105,3 @@ Copy the configuration files along with their folders to "/usr/local/nagios/etc"
         4.  "rlec\_templates.cfg" holds general RS Nagios definitions. No need to make any updates to it.
 
 ## On this page
-
-

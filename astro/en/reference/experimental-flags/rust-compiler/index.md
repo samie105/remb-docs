@@ -67,5 +67,3 @@ This means that if your Astro files contain invalid HTML, you may see a differen
 At this time, the Rust compiler does not output the required metadata for the dev toolbar audits to work correctly.
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

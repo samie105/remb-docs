@@ -28,5 +28,3 @@ Thrown when the session data could not be saved.
 *   [Sessions](/en/guides/sessions/)
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

@@ -28,5 +28,3 @@ A dynamic route param is invalid. This is often caused by an `undefined` paramet
 *   [Dynamic routes](/en/guides/routing/#dynamic-routes)
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

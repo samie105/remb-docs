@@ -64,5 +64,3 @@ T
 [Deno.Proxy](./././~/Deno.Proxy "Deno.Proxy")
 
 The definition for alternative transports (or proxies) in [`Deno.CreateHttpClientOptions`](./././~/Deno.CreateHttpClientOptions).
-
-

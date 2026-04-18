@@ -265,5 +265,3 @@ To deploy your Astro site visit our [deployment guides](/en/guides/deploy/) and 
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

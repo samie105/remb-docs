@@ -216,5 +216,3 @@ When upgrading the consumer code (using the `REPLACE` option of `TFUNCTION LOAD`
 Any attempt to update any other parameter will result in an error when loading the library.
 
 ## On this page
-
-

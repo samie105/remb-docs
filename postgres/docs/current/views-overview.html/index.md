@@ -164,5 +164,3 @@ views
 [`pg_wait_events`](https://www.postgresql.org/docs/current/view-pg-wait-events.html "53.38. pg_wait_events")
 
 wait events
-
-

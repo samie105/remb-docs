@@ -399,5 +399,3 @@ Query Parameters:
 ❌ x-amz-request-payer  
 ❌ Bucket Owner:  
 ❌ x-amz-expected-bucket-owner
-
-

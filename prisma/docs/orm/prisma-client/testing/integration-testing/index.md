@@ -357,5 +357,3 @@ The `test` script does the following:
 Once you are satisfied you can run `yarn docker:down` to destroy the container, its database and any test data.
 
 [Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/prisma-client/testing/integration-testing.mdx)
-
-

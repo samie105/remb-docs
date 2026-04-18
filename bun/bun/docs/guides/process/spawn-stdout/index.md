@@ -75,5 +75,3 @@ Read stderr from a child process
 Next
 
 ](/docs/guides/process/spawn-stderr)
-
-

@@ -51,5 +51,3 @@ deno add jsr:@std/webgpu
 ```
 
 [See all symbols in @std/webgpu on](https://jsr.io/@std/webgpu/doc)
-
-

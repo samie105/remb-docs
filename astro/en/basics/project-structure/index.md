@@ -173,5 +173,3 @@ This file is generated in every starter template and includes TypeScript configu
 See the [TypeScript Guide](/en/guides/typescript/) for details on setting configurations.
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

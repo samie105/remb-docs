@@ -24,5 +24,3 @@ nav_next: {"path": "astro/en/reference/errors/cache-not-enabled/index.md", "titl
 Thrown when a value is being set as the `headers` field on the `ResponseInit` object available as `Astro.response`.
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

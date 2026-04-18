@@ -245,5 +245,3 @@ The `@astrojs/prefetch` integration was deprecated in v3.5.0 and is no longer ma
         
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

@@ -434,5 +434,3 @@ The proxy names were due to v9 using the `AbcXyz` names, these have been removed
 ### `interop`\-mode has been removed (rarely breaking) -[​](#interop-mode-removed "Direct link to interop-mode-removed")
 
 We have removed the `interop`\-mode from tRPC. This was a mode that allowed you to have an easy transition period from v9 to v10. This mode was never meant to be supported long-term and we have now removed it.
-
-

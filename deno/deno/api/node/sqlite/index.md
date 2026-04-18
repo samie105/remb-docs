@@ -226,5 +226,3 @@ v
 [constants.SQLITE\_CHANGESET\_REPLACE](.././sqlite/~/constants.SQLITE_CHANGESET_REPLACE "constants.SQLITE_CHANGESET_REPLACE")
 
 Conflicting changes replace existing values. Note that this value can only be returned when the type of conflict is either `SQLITE_CHANGESET_DATA` or `SQLITE_CHANGESET_CONFLICT`.
-
-

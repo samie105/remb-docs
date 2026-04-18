@@ -36,5 +36,3 @@ Along the way, you’ll learn how to use:
  *    I am ready to add some blog features to my Astro project!
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

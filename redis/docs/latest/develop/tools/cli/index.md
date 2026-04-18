@@ -996,5 +996,3 @@ and settings.
 ```
 
 ## On this page
-
-

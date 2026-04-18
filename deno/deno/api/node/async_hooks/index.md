@@ -115,5 +115,3 @@ No documentation available
 *   [destroy](.././async_hooks/~/HookCallbacks#method_destroy_0)
 *   [init](.././async_hooks/~/HookCallbacks#method_init_0)
 *   [promiseResolve](.././async_hooks/~/HookCallbacks#method_promiseresolve_0)
-
-

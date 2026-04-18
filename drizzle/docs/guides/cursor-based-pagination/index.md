@@ -238,5 +238,3 @@ await nextUserPage(3);
 **Drawbacks** of `cursor-based` pagination: the inability to directly navigate to a specific page and complexity of implementation. Since you add more columns to the sort order, you’ll need to add more filters to the `where` clause for the cursor comparison to ensure consistent pagination.
 
 So, if you need to directly navigate to a specific page or you need simpler implementation of pagination, you should consider using [offset/limit](drizzle/docs/guides/limit-offset-pagination/index.md) pagination instead.
-
-

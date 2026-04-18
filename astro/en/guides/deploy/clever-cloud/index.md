@@ -220,5 +220,3 @@ To deploy your Astro project to Clever Cloud, you will need to **create a new ap
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

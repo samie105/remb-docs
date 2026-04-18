@@ -649,5 +649,3 @@ For interoperability with RxJS Observables, the `.subscribe` method is also allo
 previous next
 
 [<svelte:options>](/docs/svelte/svelte-options) [Context](/docs/svelte/context)
-
-

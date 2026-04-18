@@ -16,5 +16,3 @@ nav_next: {"path": "trpc/docs/server/procedures/index.md", "title": "Define Proc
 This section covers everything you need to set up and configure your tRPC backend. You'll learn how to define [routers](trpc/docs/server/routers/index.md) and [procedures](trpc/docs/server/procedures/index.md), set up [context](trpc/docs/server/context/index.md), add [input validation](trpc/docs/server/validators/index.md), and use [middlewares](trpc/docs/server/middlewares/index.md) to extend your API.
 
 Once your API is defined, you can host it using one of the available [adapters](trpc/docs/server/adapters/index.md) for platforms like Express, Fastify, Next.js, AWS Lambda, and more.
-
-

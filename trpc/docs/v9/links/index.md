@@ -324,5 +324,3 @@ tsx
   `// ssr: false`
 
 `})(MyApp);`
-
-

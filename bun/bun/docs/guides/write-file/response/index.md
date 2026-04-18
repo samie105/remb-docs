@@ -64,5 +64,3 @@ Append content to a file
 Next
 
 ](/docs/guides/write-file/append)
-
-

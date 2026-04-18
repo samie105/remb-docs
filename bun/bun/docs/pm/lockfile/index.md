@@ -130,5 +130,3 @@ Lifecycle scripts
 Next
 
 ](/docs/pm/lifecycle)
-
-

@@ -378,5 +378,3 @@ Express, Fastify, and more
 [Transformers](trpc/docs/server/data-transformers/index.md#using-superjson)
 
 Use superjson to retain complex types like `Date`
-
-

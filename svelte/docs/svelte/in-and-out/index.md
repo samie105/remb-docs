@@ -37,5 +37,3 @@ The `in:` and `out:` directives are identical to [`transition:`](transition), ex
 previous next
 
 [transition:](/docs/svelte/transition) [animate:](/docs/svelte/animate)
-
-

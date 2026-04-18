@@ -34,5 +34,3 @@ If you attempt to use Windows Subsystem for Linux (WSL) or Ubuntu for Windows to
 _`systemd` is a suite of basic building blocks for a Linux system._ For more information about its function, see [System and Service Manager](https://systemd.io/). This becomes an issue due to the lack of support for Linux workflows on WSL. But, you can test the instructions listed in [Systemd support is now available in WSL!](https://devblogs.microsoft.com/commandline/systemd-support-is-now-available-in-wsl/). Let us know how that worked for you.
 
 ## On this page
-
-

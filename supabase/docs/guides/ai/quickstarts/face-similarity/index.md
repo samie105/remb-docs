@@ -81,5 +81,3 @@ You can view the inserted items in the [Table Editor](/dashboard/project/_/edito
 ## Next steps[#](#next-steps)
 
 You can now start building your own applications with Vecs. Check our [examples](/docs/guides/ai#examples) for ideas.
-
-

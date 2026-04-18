@@ -158,5 +158,3 @@ Once IP address forwarding is enabled, set the `Sb-Forwarded-For` header using t
 ```
 1import { createServerClient } from '@supabase/ssr'23const supabase = createServerClient(4  'https://<your-project-id>.supabase.co',5  '<your-secret-key>', // Key should start with sb_secret6  {7    global: {8      headers: {9        'sb-forwarded-for': request.headers.get('x-forwarded-for'),10      },11    },12  }13)
 ```
-
-

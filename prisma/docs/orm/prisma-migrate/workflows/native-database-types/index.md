@@ -96,5 +96,3 @@ Prisma Migrate cannot automatically create database features that have no equiva
 *   [How to use native database functions](prisma/docs/orm/prisma-schema/data-model/unsupported-database-features/index.md#native-database-functions)
 
 [Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/prisma-migrate/workflows/native-database-types.mdx)
-
-

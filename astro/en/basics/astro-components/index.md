@@ -227,5 +227,3 @@ HTML components must contain only valid HTML, and therefore lack key Astro compo
 Read more about using [UI framework components](/en/guides/framework-components/) in your Astro project.
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

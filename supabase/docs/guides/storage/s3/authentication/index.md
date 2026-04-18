@@ -69,5 +69,3 @@ Typically we advise against using `getSession`, because the session is read from
 ```
 
 On self-hosted Supabase, the `accessKeyId` is the `STORAGE_TENANT_ID` environment variable defined in the `.env` file. Refer to the [self-hosted S3 guide](/docs/guides/self-hosting/self-hosted-s3#session-token) for more details.
-
-

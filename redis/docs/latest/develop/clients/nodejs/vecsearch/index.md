@@ -1636,5 +1636,3 @@ jdoc:3: 'Today is a sunny day', Score: 1.50889515877
 See [Vector search](/docs/latest/develop/ai/search-and-query/query/vector-search/) for more information about indexing options, distance metrics, and query format.
 
 ## On this page
-
-

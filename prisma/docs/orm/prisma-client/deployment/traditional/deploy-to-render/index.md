@@ -168,5 +168,3 @@ Render allows you to SSH into your web service.
 2.  In the shell, run: `npx prisma db seed`
 
 [Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/prisma-client/deployment/traditional/deploy-to-render.mdx)
-
-

@@ -14,5 +14,3 @@ nav_next: {"path": "hono/docs/guides/faq/index.md", "title": "Frequently Asked Q
 ---
 
 [Skip to content](#VPContent)
-
-

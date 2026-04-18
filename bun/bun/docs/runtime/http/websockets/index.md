@@ -421,5 +421,3 @@ interface ServerWebSocket {
   cork(cb: (ws: ServerWebSocket) => void): void;
 }
 ```
-
-

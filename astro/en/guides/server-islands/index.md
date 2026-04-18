@@ -126,5 +126,3 @@ astro create-key
 Use this value to configure the `ASTRO_KEY` environment variable (e.g. in a `.env` file) and include it in your CI/CD or host’s build settings. This ensures the same key is always reused in the generated bundle so that encryption and decryption remain in sync.
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

@@ -41,5 +41,3 @@ If you are running Postgres 17 or higher, you can create a new user and grant th
 If you are replicating to an external system and using any of the tools below, check their documentation first. Additional information is provided where the setup with Supabase can vary.
 
 Estuary has the following [documentation](https://docs.estuary.dev/reference/Connectors/capture-connectors/PostgreSQL/Supabase/) for setting up Postgres as a source.
-
-

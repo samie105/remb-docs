@@ -224,5 +224,3 @@ Reload source code cache (recompile TypeScript) no value Reload everything jsr:@
 `--vendor`<vendor>optional
 
 Toggles local vendor folder usage for remote modules and a node\_modules folder for npm packages.
-
-

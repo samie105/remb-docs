@@ -254,5 +254,3 @@ afterEach(() => {
   document.body.innerHTML = "";
 });
 ```
-
-

@@ -67,5 +67,3 @@ v
 [scheduler](../.././timers/promises/~/scheduler "scheduler")
 
 No documentation available
-
-

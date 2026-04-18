@@ -73,5 +73,3 @@ Allow a user to access a file that was previously uploaded by the same user:
 If you exclusively use Storage from trusted clients, such as your own servers, and need to bypass the RLS policies, you can use the `service key` in the `Authorization` header. Service keys entirely bypass RLS policies, granting you unrestricted access to all Storage APIs.
 
 Remember you should not share the service key publicly.
-
-

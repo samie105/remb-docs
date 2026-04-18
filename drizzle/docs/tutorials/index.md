@@ -14,5 +14,3 @@ nav_next: {"path": "drizzle/docs/latest-releases/index.md", "title": "Drizzle OR
 ---
 
 Drizzle ORM - Tutorials
-
-

@@ -60,5 +60,3 @@ OK
 127.0.0.1:6379> TFCALL lib.my_ping 0
 "PONG"
 ```
-
-

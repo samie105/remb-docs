@@ -505,5 +505,3 @@ app.post('/author', sValidator('json', schema), (c) => {
   })
 })
 ```
-
-

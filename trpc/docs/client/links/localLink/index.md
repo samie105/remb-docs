@@ -105,5 +105,3 @@ Optional input/output transformers for serialization/deserialization of data.
 *   For most client-side applications, you should use the `httpLink` or other HTTP-based links instead
 *   The link supports all tRPC features including queries, mutations, and subscriptions
 *   Error handling and transformation are handled automatically, just like with HTTP-based links
-
-

@@ -72,5 +72,3 @@ These methods allow you to execute raw MongoDB commands and queries, providing f
 Similar to raw queries in relational databases, these methods are not type-safe and require manual handling of the query results.
 
 [Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/prisma-client/using-raw-sql/index.mdx)
-
-

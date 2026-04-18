@@ -328,5 +328,3 @@ CSS
 ```
 
 This can be useful if you want to reuse any of these scales but under a different name, like redefining `--color-gray-*` to use the `--color-slate-*` scale.
-
-

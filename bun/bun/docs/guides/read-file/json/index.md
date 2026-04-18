@@ -66,5 +66,3 @@ Get the MIME type of a file
 Next
 
 ](/docs/guides/read-file/mime)
-
-

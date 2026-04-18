@@ -88,5 +88,3 @@ redis> command info ping
 ```
 
 ## On this page
-
-

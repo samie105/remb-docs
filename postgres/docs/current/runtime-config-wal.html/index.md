@@ -207,5 +207,3 @@ In PostgreSQL releases prior to 9.3, `commit_delay` behaved differently and was 
 `commit_siblings` (`integer`) [#](#GUC-COMMIT-SIBLINGS)
 
 Minimum number of concurrent open transactions to require before performing the `commit_delay` delay. A larger value makes it more probable that at least one other transaction will become ready to commit during the delay interval. The default is five transactions.
-
-

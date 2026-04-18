@@ -140,5 +140,3 @@ Set type-checking behavior. This subcommand type-checks local modules by default
 `--no-check`<NO\_CHECK\_TYPE>optional
 
 Skip type-checking. If the value of "remote" is supplied, diagnostic errors from remote modules will be ignored.
-
-

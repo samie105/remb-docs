@@ -56,5 +56,3 @@ Update rule of the foreign key constraint: `CASCADE`, `SET NULL`, `SET DEFAULT`,
 `delete_rule` `character_data`
 
 Delete rule of the foreign key constraint: `CASCADE`, `SET NULL`, `SET DEFAULT`, `RESTRICT`, or `NO ACTION`.
-
-

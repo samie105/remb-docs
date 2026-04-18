@@ -168,5 +168,3 @@ Run the development server and scan the QR code with the Expo Go app on your pho
 *   Set up [Auth](/docs/guides/auth) for your app
 *   [Insert more data](/docs/guides/database/import-data) into your database
 *   Upload and serve static files using [Storage](/docs/guides/storage)
-
-

@@ -29,5 +29,3 @@ Error in live content config.
 *   [Defining live content schemas](/en/reference/modules/astro-content/#schema-1)
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

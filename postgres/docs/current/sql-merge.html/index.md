@@ -283,5 +283,3 @@ WHEN NOT MATCHED BY SOURCE THEN
 This command conforms to the SQL standard.
 
 The `WITH` clause, `BY SOURCE` and `BY TARGET` qualifiers to `WHEN NOT MATCHED`, `DO NOTHING` action, and `RETURNING` clause are extensions to the SQL standard.
-
-

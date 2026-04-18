@@ -43,5 +43,3 @@ For an in-depth guide to Postgres' full-text search, including how to store, ind
 
 *   [Semantic search](/docs/guides/ai/semantic-search)
 *   [Hybrid search](/docs/guides/ai/hybrid-search)
-
-

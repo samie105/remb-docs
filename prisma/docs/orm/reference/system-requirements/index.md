@@ -200,5 +200,3 @@ server.ts:6:48 - error TS2554: Expected 0 arguments, but got 1.
 Upgrade the TypeScript dependency in your project to a [version supported by Prisma ORM](#software-requirements). `npm install -D typescript`.
 
 [Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/reference/system-requirements.mdx)
-
-

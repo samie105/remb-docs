@@ -49,5 +49,3 @@ Since `pg_jsonschema` exposes its utilities as functions, we can execute them wi
 ## Resources[#](#resources)
 
 *   Official [`pg_jsonschema` documentation](https://github.com/supabase/pg_jsonschema)
-
-

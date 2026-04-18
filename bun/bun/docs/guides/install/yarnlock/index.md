@@ -44,5 +44,3 @@ Migrate from npm install to bun install
 Next
 
 ](/docs/guides/install/from-npm-install-to-bun-install)
-
-

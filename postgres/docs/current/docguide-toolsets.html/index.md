@@ -101,5 +101,3 @@ If necessary, you can tell `configure` where to find these programs, for example
 ./configure ... XMLLINT=/opt/local/bin/xmllint ...
 
 If you prefer to build PostgreSQL using Meson, instead run `meson setup` as described in [Section 17.4](https://www.postgresql.org/docs/current/install-meson.html "17.4. Building and Installation with Meson"), and then see [Section J.4](https://www.postgresql.org/docs/current/docguide-build-meson.html "J.4. Building the Documentation with Meson").
-
-

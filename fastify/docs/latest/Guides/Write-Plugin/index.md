@@ -81,5 +81,3 @@ If you want to see some real world examples, check out:
 *   [`@fastify/mongodb`](https://github.com/fastify/fastify-mongodb) Fastify MongoDB connection plugin, with this you can share the same MongoDB connection pool in every part of your server.
 *   [`@fastify/multipart`](https://github.com/fastify/fastify-multipart) Multipart support for Fastify.
 *   [`@fastify/helmet`](https://github.com/fastify/fastify-helmet) Important security headers for Fastify.
-
-

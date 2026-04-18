@@ -14,5 +14,3 @@ nav_next: {"path": "drizzle/docs/get-started/bun-sql-new/index.md", "title": "Ge
 ---
 
 Drizzle ORM - SQLite extensions
-
-

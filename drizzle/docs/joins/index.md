@@ -455,5 +455,3 @@ db.select()
   .where(eq(chatGroups.id, 1))
   .all();
 ```
-
-

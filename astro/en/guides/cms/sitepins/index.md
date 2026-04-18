@@ -221,5 +221,3 @@ Once connected, Sitepins will sync your content from the selected folder and pro
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

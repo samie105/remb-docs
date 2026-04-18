@@ -14,5 +14,3 @@ nav_next: {"path": "drizzle/docs/migrate/components/index.md", "title": "Drizzle
 ---
 
 Drizzle ORM - DrizzleORM v0.30.10 release
-
-

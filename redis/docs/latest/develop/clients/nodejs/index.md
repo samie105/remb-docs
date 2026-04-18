@@ -198,5 +198,3 @@ The [`node-redis` website](https://redis.js.org/) has more examples. The [Github
 See also the other pages in this section for more information and examples:
 
 ## On this page
-
-

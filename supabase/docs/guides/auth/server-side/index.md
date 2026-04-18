@@ -52,5 +52,3 @@ SvelteKit
 Automatically configure Supabase in SvelteKit to use cookies, making your user and their session available on the client and server.
 
 ](/docs/guides/auth/server-side/sveltekit)
-
-

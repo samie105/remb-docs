@@ -25,5 +25,3 @@ Using only Web Standard APIs, we could make it work on Deno and Bun. When people
 We also have friends who make GraphQL servers, Firebase authentication, and Sentry middleware. And, we also have a Node.js adapter. An ecosystem has sprung up.
 
 In other words, Hono is damn fast, makes a lot of things possible, and works anywhere. We might imagine that Hono could become the **Standard for Web Standards**.
-
-

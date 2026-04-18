@@ -39,5 +39,3 @@ This is the General Availability (GA) release of RedisInsight 2.18.
 *   [#1579](https://github.com/RedisInsight/RedisInsight/pull/1579) Increase the database password length limitation to 10,000.
 
 ## On this page
-
-

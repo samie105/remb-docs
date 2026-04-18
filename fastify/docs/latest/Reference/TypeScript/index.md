@@ -995,5 +995,3 @@ This hook can be useful if you are developing a plugin that needs to know when a
 [src](https://github.com/fastify/fastify/blob/main/types/hooks.d.ts#L206)
 
 Triggered when fastify.close() is invoked to stop the server. It is useful when plugins need a "shutdown" event, for example to close an open connection to a database.
-
-

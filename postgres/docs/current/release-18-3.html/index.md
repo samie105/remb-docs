@@ -79,5 +79,3 @@ However, if you are upgrading from a version earlier than 18.2, see [Section E.
 ## Submit correction
 
 If you see anything in the documentation that is not correct, does not match your experience with the particular feature or requires further clarification, please use [this form](/account/comments/new/18/release-18-3.html/) to report a documentation issue.
-
-

@@ -3336,5 +3336,3 @@ public class GeoIndexExample
 You can also run queries to find whether shapes in the index completely contain or overlap each other. See [Geospatial queries](/docs/latest/develop/ai/search-and-query/query/geo-spatial/) for more information.
 
 ## On this page
-
-

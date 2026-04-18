@@ -18,5 +18,3 @@ _zART-stack_ example (**z**ero-**A**PI, **T**ypeScript, **R**eact).
 Monorepo setup with **React Native**, Next.js, & Prisma
 
 Quick start with `git clone`
-
-

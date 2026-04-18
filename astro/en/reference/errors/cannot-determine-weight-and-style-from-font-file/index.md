@@ -24,5 +24,3 @@ nav_next: {"path": "astro/en/reference/errors/cannot-fetch-font-file/index.md", 
 Cannot determine weight and style from font file, update your family config and set `weight` and `style` manually instead.
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

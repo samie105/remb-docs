@@ -52,5 +52,3 @@ Name of the domain
 `initially_deferred` `yes_or_no`
 
 `YES` if the constraint is deferrable and initially deferred, `NO` if not
-
-

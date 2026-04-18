@@ -40,5 +40,3 @@ Number of namespaces per bucket
 Number of tables per namespace
 
 10
-
-

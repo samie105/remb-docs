@@ -540,5 +540,3 @@ This guide uses the following file structure:
  ├ 📜 tailwind.config.ts
  └ 📜 tsconfig.json
 ```
-
-

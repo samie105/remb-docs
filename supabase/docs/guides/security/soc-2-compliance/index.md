@@ -72,5 +72,3 @@ SOC 2 is non-industry specific and provides a framework for the security and pri
 
 1.  [System and Organization Controls: SOC Suite of Services](https://www.aicpa-cima.com/resources/landing/system-and-organization-controls-soc-suite-of-services)
 2.  [Shared Responsibility Model](/docs/guides/deployment/shared-responsibility-model)
-
-

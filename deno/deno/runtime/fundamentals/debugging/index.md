@@ -178,5 +178,3 @@ SSLKEYLOGFILE=./keys.log deno run -N main.ts
 ```
 
 Then load `keys.log` in Wireshark (Edit > Preferences > Protocols > TLS > (Pre)-Master-Secret log filename) to decrypt captured TLS traffic.
-
-

@@ -38,5 +38,3 @@ Name of rule
 Rule definition (a reconstructed creation command)
 
 The `pg_rules` view excludes the `ON SELECT` rules of views and materialized views; those can be seen in [`pg_views`](https://www.postgresql.org/docs/current/view-pg-views.html "53.37. pg_views") and [`pg_matviews`](https://www.postgresql.org/docs/current/view-pg-matviews.html "53.14. pg_matviews").
-
-

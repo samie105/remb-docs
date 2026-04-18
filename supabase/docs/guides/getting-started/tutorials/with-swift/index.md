@@ -156,5 +156,3 @@ Finally, update your Models.
 You no longer need the `UpdateProfileParams` struct, as you can now reuse the `Profile` struct for both request and response calls.
 
 At this stage you have a fully functional application!
-
-

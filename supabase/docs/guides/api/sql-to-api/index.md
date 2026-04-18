@@ -62,5 +62,3 @@ Select all columns from a single table with a complex where clause: AND OR AND
 *   [Supabase API: JavaScript select](/docs/reference/javascript/select)
 *   [Supabase API: JavaScript modifiers](/docs/reference/javascript/using-modifiers)
 *   [Supabase API: JavaScript filters](/docs/reference/javascript/using-filters)
-
-

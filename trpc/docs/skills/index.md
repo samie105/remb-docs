@@ -60,5 +60,3 @@ This prints a prompt that guides your agent to collect structured feedback about
 ## Learn more[​](#learn-more "Direct link to Learn more")
 
 For full documentation on TanStack Intent, see the [Quick Start for Consumers](https://tanstack.com/intent/latest/docs/getting-started/quick-start-consumers) guide.
-
-

@@ -416,5 +416,3 @@ The way to address this challenge is to employ a technique called index partitio
 To facilitate this, a new component called a coordinator is added to the cluster. When searching for documents, the coordinator receives the query and sends it to N partitions, each holding a sub-index of 1/N documents. Since we’re only interested in the top K results of all partitions, each partition returns just its own top K results. Then, the N lists of K elements are merged and the top K elements are extracted from the merged list.
 
 ## On this page
-
-

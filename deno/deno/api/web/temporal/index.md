@@ -25,5 +25,3 @@ Maybe one of these links has what you're looking for?
 *   [Deno examples](https://docs.deno.com/examples)
 *   [Deno Services docs](https://docs.deno.com/services)
 *   [Deno website](https://deno.com)
-
-

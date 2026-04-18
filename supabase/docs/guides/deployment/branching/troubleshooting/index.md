@@ -175,5 +175,3 @@ If you're still experiencing issues:
 2.  **Community**: Ask in [GitHub discussions](https://github.com/orgs/supabase/discussions/18937)
 3.  **Support**: Contact support for project-specific issues
 4.  **Documentation**: Review the latest documentation for updates
-
-

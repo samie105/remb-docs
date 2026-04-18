@@ -179,5 +179,3 @@ Now everything is setup, let's write RLS test cases, note that each section coul
 *   [Row Level Security Writing Guide](https://usebasejump.com/blog/testing-on-supabase-with-pgtap)
 *   [Database.dev Package Registry](https://database.dev)
 *   [Row Level Security Performance and Best Practices](https://github.com/orgs/supabase/discussions/14576)
-
-

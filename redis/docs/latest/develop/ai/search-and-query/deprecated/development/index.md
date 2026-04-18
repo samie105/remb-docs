@@ -191,5 +191,3 @@ To build for debugging (enabling symbolic information and disabling optimization
 Similarly, Python tests in a single-test mode, you can set a breakpoint by using the `BB()` function inside a test.
 
 ## On this page
-
-

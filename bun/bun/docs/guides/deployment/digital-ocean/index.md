@@ -113,5 +113,3 @@ Visit your live application
 🥳 Your app is now live! Once the app is created, you should see it in the App Platform dashboard with the public URL.
 
 ![DigitalOcean App Platform app dashboard](https://mintcdn.com/bun-1dd33a4e/TVJ0wXBZobUdB01H/images/guides/digitalocean-5.png?fit=max&auto=format&n=TVJ0wXBZobUdB01H&q=85&s=155602e07d2a55d62fc2c1ccf01a3903)
-
-

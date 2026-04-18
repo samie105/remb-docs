@@ -61,5 +61,3 @@ Reference:
 ## API URL and keys[#](#api-url-and-keys)
 
 You can find the API URL and Keys in the [Dashboard](/dashboard/project/_/settings/api-keys).
-
-

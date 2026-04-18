@@ -97,5 +97,3 @@ It also allows for the following functions:
 *   [Pulumi documentation](https://www.pulumi.com/docs/)
 
 ## On this page
-
-

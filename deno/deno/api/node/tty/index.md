@@ -86,5 +86,3 @@ T
 [Direction](.././tty/~/Direction "Direction")
 
 \-1 - to the left from cursor 0 - the entire line 1 - to the right from cursor
-
-

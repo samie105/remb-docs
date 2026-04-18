@@ -106,5 +106,3 @@ In the Usage Summary section, you can see how many hours your Preview branches e
 ### Do Compute Credits apply to Branching Compute?[#](#do-compute-credits-apply-to-branching-compute)
 
 No, Compute Credits do not apply to Branching Compute.
-
-

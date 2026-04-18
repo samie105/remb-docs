@@ -119,5 +119,3 @@ No documentation available
 *   [prototype](./././~/TextEncoderStream#property_prototype)
 *   [readable](./././~/TextEncoderStream#property_readable)
 *   [writable](./././~/TextEncoderStream#property_writable)
-
-

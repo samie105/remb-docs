@@ -259,5 +259,3 @@ After a connection enters PUB/SUB mode, the socket is blocked and can't process 
 If you use [transactions](redis/docs/latest/develop/clients/nodejs/transpipe/index.md) in code that also uses token-based authentication, ensure that you use the `node-redis` client multi/exec API rather than explicit commands to create each transaction (see [Execute a transaction](redis/docs/latest/develop/clients/nodejs/transpipe/index.md#execute-a-transaction) for an example of correct usage). This is because the token manager might attempt to reauthenticate while your code issues the separate transaction commands, which will interfere with the transaction. The transaction API handles this case for you safely.
 
 ## On this page
-
-

@@ -43,5 +43,3 @@ This is the General Availability (GA) release of RedisInsight 2.4.0
 *   [#810](https://github.com/RedisInsight/RedisInsight/pull/810) Display several streams values with the same timestamp.
 
 ## On this page
-
-

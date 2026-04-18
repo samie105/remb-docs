@@ -22,5 +22,3 @@ When `bootstrap` is specified, the table will only be created on disk; nothing i
 The table is created as shared if `shared_relation` is specified. The table's row type OID (`pg_type` OID) can optionally be specified via the `rowtype_oid` clause; if not specified, an OID is automatically generated for it. (The `rowtype_oid` clause is useless if `bootstrap` is specified, but it can be provided anyway for documentation.)
 
 Create an index named _`indexname`_, having OID _`indexoid`_, on the table named _`tablename`_, using the _`amname`_ access method. The fields to index are called _`name1`_, _`name2`_ etc., and the operator classes to use are _`opclass1`_, _`opclass2`_ etc., respectively. The index file is created and appropriate catalog entries are made for it, but the index contents are not initialized by this command.
-
-

@@ -47,5 +47,3 @@ deno add jsr:@std/bytes
 ```
 
 [See all symbols in @std/bytes on](https://jsr.io/@std/bytes/doc)
-
-

@@ -24,5 +24,3 @@ nav_next: {"path": "astro/en/reference/errors/cannot-determine-weight-and-style-
 Cannot extract the font type from the given URL.
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

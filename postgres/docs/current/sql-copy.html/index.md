@@ -439,5 +439,3 @@ COPY \[ BINARY \] _`table_name`_
     TO { '_`filename`_' | STDOUT }
     \[ \[USING\] DELIMITERS '_`delimiter_character`_' \]
     \[ WITH NULL AS '_`null_string`_' \]
-
-

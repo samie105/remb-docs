@@ -71,5 +71,3 @@ Check if two objects are deeply equal
 Next
 
 ](/docs/guides/util/deep-equals)
-
-

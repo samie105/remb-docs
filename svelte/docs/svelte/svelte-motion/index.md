@@ -380,5 +380,3 @@ type Updater<T> = (target_value: T, value: T) => T;
 previous next
 
 [svelte/legacy](/docs/svelte/svelte-legacy) [svelte/reactivity/window](/docs/svelte/svelte-reactivity-window)
-
-

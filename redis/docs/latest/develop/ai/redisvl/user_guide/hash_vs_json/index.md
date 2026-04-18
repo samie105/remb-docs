@@ -643,5 +643,3 @@ bike_index.delete()
 ```
 
 ## On this page
-
-

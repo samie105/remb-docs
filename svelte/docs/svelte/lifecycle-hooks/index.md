@@ -174,5 +174,3 @@ With runes, we can use `$effect.pre`, which behaves the same as `$effect` but ru
 previous next
 
 [Context](/docs/svelte/context) [Imperative component API](/docs/svelte/imperative-component-api)
-
-

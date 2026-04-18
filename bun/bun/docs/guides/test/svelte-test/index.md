@@ -70,5 +70,3 @@ terminal
 ```
 bun test
 ```
-
-

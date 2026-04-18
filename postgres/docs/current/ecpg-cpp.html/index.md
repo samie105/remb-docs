@@ -179,5 +179,3 @@ c++ -c test\_cpp.cpp -o test\_cpp.o
 Finally, link these object files, `test_cpp.o` and `test_mod.o`, into one executable, using the C++ compiler driver:
 
 c++ test\_cpp.o test\_mod.o -lecpg -o test\_cpp
-
-

@@ -50,5 +50,3 @@ Shows help about pg\_walsummary command line arguments, and exits.
 ## Environment
 
 The environment variable `PG_COLOR` specifies whether to use color in diagnostic messages. Possible values are `always`, `auto` and `never`.
-
-

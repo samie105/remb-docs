@@ -76,5 +76,3 @@ WHERE c2.name = 'CacheMemoryContext'
 AND c1.path\[c2.level\] = c2.path\[c2.level\];
 
 The [Common Table Expression](https://www.postgresql.org/docs/current/queries-with.html "7.8. WITH Queries (Common Table Expressions)") is used to ensure the context IDs in the `path` column match between both evaluations of the view.
-
-

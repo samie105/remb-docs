@@ -24,5 +24,3 @@ You can analyze the generated flamegraph to identify:
 *   Potential areas for optimization
 
 When submitting performance-related contributions, including profiling data can help the team to understand and validate your improvements.
-
-

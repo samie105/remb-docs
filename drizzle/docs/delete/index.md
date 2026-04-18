@@ -138,5 +138,3 @@ delete from "orders"
 where "orders"."amount" > (select * from "average_amount") 
 returning "id"
 ```
-
-

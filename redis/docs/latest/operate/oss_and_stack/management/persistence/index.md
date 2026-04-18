@@ -293,5 +293,3 @@ It is important to understand that this system can easily fail if not implemente
 You also need some kind of independent alert system if the transfer of fresh backups is not working for some reason.
 
 ## On this page
-
-

@@ -78,5 +78,3 @@ No documentation available
 # variable assert.strict
 
 ### Type [#](#type)
-
-

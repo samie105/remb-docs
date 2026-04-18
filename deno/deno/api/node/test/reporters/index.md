@@ -100,5 +100,3 @@ v
 [spec](../.././test/reporters/~/spec "spec")
 
 The `spec` reporter outputs the test results in a human-readable format.
-
-

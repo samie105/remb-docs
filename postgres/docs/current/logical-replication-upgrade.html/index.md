@@ -299,5 +299,3 @@ Let's say we have a circular logical replication setup `node1`\->`node2` and `no
 16.  Refresh the `node2` subscription's publications to copy initial table data from `node1` using [`ALTER SUBSCRIPTION ... REFRESH PUBLICATION`](https://www.postgresql.org/docs/current/sql-altersubscription.html#SQL-ALTERSUBSCRIPTION-PARAMS-REFRESH-PUBLICATION), e.g.:
      
      /\* node2 # \*/ ALTER SUBSCRIPTION sub1\_node1\_node2 REFRESH PUBLICATION;
-
-

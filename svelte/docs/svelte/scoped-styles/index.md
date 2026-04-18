@@ -54,5 +54,3 @@ If a component defines `@keyframes`, the name is scoped to the component using t
 previous next
 
 [await](/docs/svelte/await-expressions) [Global styles](/docs/svelte/global-styles)
-
-

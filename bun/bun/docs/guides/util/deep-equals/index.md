@@ -90,5 +90,3 @@ Sleep for a fixed number of milliseconds
 Next
 
 ](/docs/guides/util/sleep)
-
-

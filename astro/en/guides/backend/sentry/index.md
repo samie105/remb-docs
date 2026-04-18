@@ -114,5 +114,3 @@ To view and resolve the recorded error, log into [sentry.io](https://sentry.io/)
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

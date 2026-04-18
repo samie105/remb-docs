@@ -282,5 +282,3 @@ main(int argc, char \*\*argv)
     PQfinish(conn);
     return 0;
 }
-
-

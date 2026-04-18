@@ -150,5 +150,3 @@ npm
 v5(20)
 
 Using [yarn](https://yarnpkg.com/) might require passing the `--ignore-engines` flag.
-
-

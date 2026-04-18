@@ -14,5 +14,3 @@ nav_next: {"path": "trpc/docs/typedoc/client/links/splitLink/functions/splitLink
 ---
 
 links/splitLink | tRPC
-
-

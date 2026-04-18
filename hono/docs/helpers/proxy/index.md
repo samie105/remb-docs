@@ -140,5 +140,3 @@ interface ProxyFetch {
   ): Promise<Response>
 }
 ```
-
-

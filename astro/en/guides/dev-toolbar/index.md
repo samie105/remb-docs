@@ -103,5 +103,3 @@ astro preferences enable devToolbar
 ```
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

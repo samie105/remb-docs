@@ -272,5 +272,3 @@ To get started, you’ll need an existing Astro project.
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

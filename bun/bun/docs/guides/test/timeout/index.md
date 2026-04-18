@@ -64,5 +64,3 @@ Bail early with the Bun test runner
 Next
 
 ](/docs/guides/test/bail)
-
-

@@ -10,19 +10,18 @@ For each source in the flat repo structure (<slug>/):
   2. Adds nav_prev / nav_next frontmatter based on toc.json ordering
   3. Rewrites internal links from absolute URL to relative local paths
 
-Idempotent: safe to re-run — only writes files that actually change.
+Idempotent: safe to re-run -- only writes files that actually change.
 """
 
 import json
 import pathlib
 import re
 import sys
-import textwrap
 
 WORKSPACE = pathlib.Path(__file__).parent.parent
 
 
-def load_manifest(slug_dir: pathlib.Path) -> dict[str, dict]:
+def load_manifest(slug_dir: pathlib.Path) -> dict:
     """url -> {outputPath, title}"""
     manifest_path = slug_dir / "manifest.json"
     if not manifest_path.exists():
@@ -33,7 +32,7 @@ def load_manifest(slug_dir: pathlib.Path) -> dict[str, dict]:
     return {e["url"]: e for e in entries if e.get("status") == "visited"}
 
 
-def load_toc_order(slug_dir: pathlib.Path) -> list[str]:
+def load_toc_order(slug_dir: pathlib.Path) -> list:
     """Return URLs in toc order (flattened)."""
     toc_path = slug_dir / "toc.json"
     if not toc_path.exists():
@@ -63,8 +62,7 @@ def outputpath_to_local(output_path: str, slug: str, slug_dir: pathlib.Path = No
 
     For nested slugs (bun/bun, deno/deno) the manifest says
     'output/bun/docs/...' but files live at 'bun/bun/docs/...'.
-    We detect this by checking if the file actually exists at the
-    resolved path; if not, we insert the nested segment.
+    We detect this by checking if the file actually exists; if not, insert nested segment.
     """
     p = output_path
     if p.startswith("output/"):
@@ -73,13 +71,12 @@ def outputpath_to_local(output_path: str, slug: str, slug_dir: pathlib.Path = No
     if slug_dir is None:
         return p
 
-    # Check if the file exists at <WORKSPACE>/<p>
     candidate = WORKSPACE / p
     if candidate.exists():
         return p
 
-    # Try the nested variant: e.g. 'bun/docs/...' -> 'bun/bun/docs/...'
-    parts = pathlib.Path(p).parts  # ('bun', 'docs', ...)
+    # Try nested variant: 'bun/docs/...' -> 'bun/bun/docs/...'
+    parts = pathlib.Path(p).parts
     if len(parts) > 1 and parts[0] == slug:
         nested = pathlib.Path(slug) / slug / pathlib.Path(*parts[1:])
         if (WORKSPACE / nested).exists():
@@ -99,59 +96,83 @@ def strip_sidebar_noise(body: str) -> str:
     return body[m.start():]
 
 
-def rewrite_internal_links(body: str, url_to_local: dict[str, str], base_url: str) -> str:
+def rewrite_internal_links(body: str, url_to_local: dict, base_url: str) -> str:
     """
     Replace absolute doc links like (https://nextjs.org/docs/app/getting-started)
-    with relative local paths like (../../getting-started/index.md).
+    with relative local paths like (nextjs/docs/app/getting-started/index.md).
     Only rewrites links whose URL is in the manifest (i.e. we actually crawled it).
     """
-    # We'll rewrite markdown links [text](url) and [text](url#anchor)
     def replacer(match):
         text = match.group(1)
         url = match.group(2)
         anchor = match.group(3) or ""
-        # Normalise: strip trailing slash
         clean_url = url.rstrip("/")
         if clean_url in url_to_local:
             local = url_to_local[clean_url]
             return f"[{text}]({local}{anchor})"
         return match.group(0)
 
-    # Match [text](https://...) optionally with #anchor
     pattern = re.compile(r"\[([^\]]*)\]\((https?://[^)#\s]+)(#[^)\s]*)?\)")
     return pattern.sub(replacer, body)
 
 
-def parse_frontmatter(text: str) -> tuple[dict, str]:
-    """Parse YAML frontmatter from markdown. Returns (fm_dict, body)."""
+def split_frontmatter(text: str):
+    """
+    Split markdown into (fm_block, body) where fm_block includes both --- delimiters.
+    Returns ("", text) if no frontmatter found.
+    """
     if not text.startswith("---"):
-        return {}, text
+        return "", text
+    # find the closing ---
     end = text.index("---", 3)
-    fm_raw = text[3:end].strip()
-    body = text[end + 3:].lstrip("\n")
-    fm = {}
-    for line in fm_raw.splitlines():
+    fm_block = text[:end + 3]  # includes closing ---
+    body = text[end + 3:]
+    return fm_block, body
+
+
+def upsert_nav_in_frontmatter(fm_block: str, nav_extra: dict) -> str:
+    """
+    Add or replace nav_prev / nav_next lines in a raw frontmatter block.
+    Works on the raw string -- avoids full YAML parse/serialize that breaks
+    values containing colons (e.g. JSON with URLs).
+    nav_extra: dict of key -> value string (already serialized for the line)
+    Pass empty dict to remove all nav keys.
+    """
+    nav_keys = set(nav_extra.keys())
+    # All nav keys we ever write -- so stale ones get removed too
+    all_nav_keys = {"nav_prev", "nav_next"}
+    lines = fm_block.splitlines()
+    result = []
+    inserted = set()
+
+    for line in lines:
         if ":" in line:
-            k, _, v = line.partition(":")
-            fm[k.strip()] = v.strip()
-    return fm, body
+            key = line.split(":", 1)[0].strip()
+        else:
+            key = ""
 
+        if key in all_nav_keys:
+            if key in nav_extra:
+                # Replace with new value
+                result.append(f"{key}: {nav_extra[key]}")
+                inserted.add(key)
+            # else: drop stale nav key (page moved to first/last position)
+        else:
+            result.append(line)
 
-def build_frontmatter(fm: dict, extra: dict) -> str:
-    """Rebuild frontmatter, merging in extra keys."""
-    merged = {**fm, **extra}
-    lines = ["---"]
-    for k, v in merged.items():
-        lines.append(f"{k}: {v}")
-    lines.append("---")
-    return "\n".join(lines)
+    # Insert any new nav keys before the closing ---
+    for k, v in nav_extra.items():
+        if k not in inserted:
+            result.insert(-1, f"{k}: {v}")
+
+    return "\n".join(result)
 
 
 def process_slug(slug: str):
-    # Determine the slug dir — could be at root or nested (e.g. bun/bun)
+    # Determine the slug dir -- could be at root or nested (e.g. bun/bun)
     slug_dir = WORKSPACE / slug
     if not slug_dir.exists():
-        print(f"  SKIP {slug} — directory not found")
+        print(f"  SKIP {slug} -- directory not found")
         return
 
     # Some sources nest manifest under a subdirectory (bun/bun, deno/deno)
@@ -160,21 +181,19 @@ def process_slug(slug: str):
 
     manifest = load_manifest(manifest_dir)
     if not manifest:
-        print(f"  SKIP {slug} — no manifest.json or no visited entries")
+        print(f"  SKIP {slug} -- no manifest.json or no visited entries")
         return
 
     toc_urls = load_toc_order(manifest_dir)
 
-    # Build ordered list of visited pages following toc order
+    # Build ordered list following toc, then any extras not in toc
     visited_urls_in_toc = [u for u in toc_urls if u in manifest]
-    # Add any visited URLs not in toc (appended at end)
     in_toc_set = set(visited_urls_in_toc)
     extras = [u for u in manifest if u not in in_toc_set]
     ordered_urls = visited_urls_in_toc + extras
 
     # Build url -> local path mapping for link rewriting
-    # Local path is relative to repo root: slug/docs/...
-    url_to_local: dict[str, str] = {}
+    url_to_local = {}
     for url, entry in manifest.items():
         local = outputpath_to_local(entry["outputPath"], slug, manifest_dir)
         url_to_local[url.rstrip("/")] = local
@@ -191,13 +210,13 @@ def process_slug(slug: str):
 
         original = file_path.read_text(errors="replace")
 
-        # Parse frontmatter
-        fm, body = parse_frontmatter(original)
+        # Split frontmatter (raw) and body
+        fm_block, body = split_frontmatter(original)
 
-        # 1. Strip sidebar noise
-        cleaned_body = strip_sidebar_noise(body)
+        # 1. Strip sidebar noise from body
+        cleaned_body = strip_sidebar_noise(body.lstrip("\n"))
 
-        # 2. Compute prev/next
+        # 2. Compute prev/next nav
         nav_extra = {}
         if i > 0:
             prev_url = ordered_urls[i - 1]
@@ -215,9 +234,18 @@ def process_slug(slug: str):
         # 3. Rewrite internal links in body
         cleaned_body = rewrite_internal_links(cleaned_body, url_to_local, url)
 
-        # Rebuild the file
-        new_fm = build_frontmatter(fm, nav_extra)
-        new_text = f"{new_fm}\n\n{cleaned_body}\n"
+        # Upsert nav into raw frontmatter (no full re-serialize)
+        if fm_block:
+            new_fm = upsert_nav_in_frontmatter(fm_block, nav_extra)
+        else:
+            # No frontmatter yet -- create one
+            lines = ["---"]
+            for k, v in nav_extra.items():
+                lines.append(f"{k}: {v}")
+            lines.append("---")
+            new_fm = "\n".join(lines)
+
+        new_text = f"{new_fm}\n\n{cleaned_body.strip()}\n"
 
         if new_text == original:
             skipped += 1

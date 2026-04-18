@@ -149,5 +149,3 @@ That's because per-schema default privileges can only add privileges to the glob
 ## Compatibility
 
 There is no `ALTER DEFAULT PRIVILEGES` statement in the SQL standard.
-
-

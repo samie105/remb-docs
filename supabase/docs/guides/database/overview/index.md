@@ -74,5 +74,3 @@ Read about resetting your database password [here](/docs/guides/database/managin
 
 *   Read more about [Postgres](https://www.postgresql.org/about/)
 *   Sign in: [supabase.com/dashboard](/dashboard)
-
-

@@ -58,5 +58,3 @@ Now you can use this token to access the Storage API.
 ```
 1const { StorageClient } = require('@supabase/storage-js')23const PROJECT_URL = 'https://your-project-id.supabase.co/storage/v1'45const storage = new StorageClient(PROJECT_URL, {6  authorization: `Bearer ${token}`,7})89await storage.from('teams').list()
 ```
-
-

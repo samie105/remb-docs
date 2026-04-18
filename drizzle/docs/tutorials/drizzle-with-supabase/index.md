@@ -423,5 +423,3 @@ export async function deleteUser(id: SelectUser['id']) {
   await db.delete(usersTable).where(eq(usersTable.id, id));
 }
 ```
-
-

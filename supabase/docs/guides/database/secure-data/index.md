@@ -45,5 +45,3 @@ Supabase and Postgres provide you with multiple ways to manage security, includi
 *   [Hardening the Data API](/docs/guides/api/hardening-data-api)
 *   [Managing Postgres roles](/docs/guides/database/postgres/roles)
 *   [Managing secrets with Vault](/docs/guides/database/vault)
-
-

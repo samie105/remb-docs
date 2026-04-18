@@ -149,5 +149,3 @@ Using the right rendering strategy for the right routes can decrease the time it
 These are just a few examples of the features a new app will need to consider when building from scratch. Many limitations you’ll hit can be difficult to solve as each problem is interconnected with the others and can require deep expertise in problem areas you may not be familiar with.
 
 If you don’t want to solve these problems on your own, you can [get started with a framework](react/learn/creating-a-react-app/index.md) that provides these features out of the box.
-
-

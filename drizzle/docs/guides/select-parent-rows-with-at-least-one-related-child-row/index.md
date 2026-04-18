@@ -137,5 +137,3 @@ select * from users where exists (select 1 from posts where posts.user_id = user
   { id: 3, name: 'Nick Smith', email: 'nick_smith@email.com' }
 ]
 ```
-
-

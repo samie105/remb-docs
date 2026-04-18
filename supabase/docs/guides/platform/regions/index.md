@@ -52,5 +52,3 @@ If you prefer, you can choose an exact AWS region for your project.
 *   Northeast Asia (Seoul)`ap-northeast-2`
 *   Oceania (Sydney)`ap-southeast-2`
 *   South America (São Paulo)`sa-east-1`
-
-

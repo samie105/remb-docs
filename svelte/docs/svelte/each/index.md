@@ -142,5 +142,3 @@ An each block can also have an `{:else}` clause, which is rendered if the list i
 previous next
 
 [{#if ...}](/docs/svelte/if) [{#key ...}](/docs/svelte/key)
-
-

@@ -728,5 +728,3 @@ Example:
 ## Resources[#](#resources)
 
 *   Official Docs: [pgmq/api](https://pgmq.github.io/pgmq/#creating-a-queue)
-
-

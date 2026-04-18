@@ -75,5 +75,3 @@ Write a Response to a file
 Next
 
 ](/docs/guides/write-file/response)
-
-

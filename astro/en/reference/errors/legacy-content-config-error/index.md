@@ -25,5 +25,3 @@ nav_next: {"path": "astro/en/reference/errors/live-content-config-error/index.md
 A legacy content config file was found. Move the file to `src/content.config.ts` and update any collection definitions if needed. See the [Astro 6 migration guide](/en/guides/upgrade-to/v6/#removed-legacy-content-collections) for more information.
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

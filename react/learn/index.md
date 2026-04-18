@@ -240,5 +240,3 @@ When you click the button, the `onClick` handler fires. Each button’s `onClick
 By now, you know the basics of how to write React code!
 
 Check out the [Tutorial](react/learn/tutorial-tic-tac-toe/index.md) to put them into practice and build your first mini-app with React.
-
-

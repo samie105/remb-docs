@@ -282,5 +282,3 @@ For more Redis data modeling patterns, see:
 *   [Jedis session store](/docs/latest/develop/use-cases/session-store/java-jedis/)
 
 ## On this page
-
-

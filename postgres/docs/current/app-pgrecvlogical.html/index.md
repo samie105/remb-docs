@@ -200,5 +200,3 @@ The environment variable `PG_COLOR` specifies whether to use color in diagnostic
 ## Notes
 
 pg\_recvlogical will preserve group permissions on the received WAL files if group permissions are enabled on the source cluster.
-
-

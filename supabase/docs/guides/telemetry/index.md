@@ -28,5 +28,3 @@ Telemetry helps you understand what’s happening inside your app by collecting 
 Supabase is working towards full support for the [OpenTelemetry](https://opentelemetry.io/) standard, making it easier to integrate with observability tools.
 
 This section provides guidance on telemetry in Supabase, including how to work with Supabase Logs.
-
-

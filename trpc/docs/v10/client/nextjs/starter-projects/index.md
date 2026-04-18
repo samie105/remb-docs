@@ -50,5 +50,3 @@ Quick start with `create-next-app`
 
 *   [CodeSandbox](https://codesandbox.io/s/github/trpc/trpc/tree/main/examples/next-prisma-todomvc?file=/pages/%5Bfilter%5D.tsx)
 *   [Source](https://github.com/trpc/examples-next-prisma-todomvc)
-
-

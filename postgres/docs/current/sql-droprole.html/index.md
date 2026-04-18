@@ -50,5 +50,3 @@ DROP ROLE jonathan;
 ## Compatibility
 
 The SQL standard defines `DROP ROLE`, but it allows only one role to be dropped at a time, and it specifies different privilege requirements than PostgreSQL uses.
-
-

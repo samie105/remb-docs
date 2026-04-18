@@ -59,5 +59,3 @@ This command adds the target migration to the `_prisma_migrations` table and mar
 2.  Applies any new migrations that come _after_ the baseline migration
 
 [Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/prisma-migrate/workflows/baselining.mdx)
-
-

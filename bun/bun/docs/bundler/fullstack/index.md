@@ -588,5 +588,3 @@ export default function handler(req, res) {
 *   File-based routing for API endpoints
 *   Built-in SSR support
 *   Enhanced plugin ecosystem
-
-

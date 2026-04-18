@@ -44,5 +44,3 @@ O.4. `pg_resetxlog` renamed to `pg_resetwal` 
 [Home](https://www.postgresql.org/docs/current/index.html "PostgreSQL 18.3 Documentation")
 
  Bibliography
-
-

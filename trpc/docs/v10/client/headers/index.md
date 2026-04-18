@@ -32,5 +32,3 @@ The headers option can be customized in the config when using the [`httpBatchLin
 The `token` can be whatever you want it to be. It's entirely up to you whether that's just a client-side variable that you update the value of on success or whether you store the token and pull it from local storage.
 
 *   [Example with auth login](#example-with-auth-login)
-
-

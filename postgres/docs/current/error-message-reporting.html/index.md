@@ -115,5 +115,3 @@ Advice about writing good error messages can be found in [Section 55.3](https:/
 * * *
 
 [\[18\]](#id-1.10.7.3.10.2.2.1.7) That is, the value that was current when the `ereport` call was reached; changes of `errno` within the auxiliary reporting routines will not affect it. That would not be true if you were to write `strerror(errno)` explicitly in `errmsg`'s parameter list; accordingly, do not do so.
-
-

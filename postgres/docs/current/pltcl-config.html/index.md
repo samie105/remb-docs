@@ -28,5 +28,3 @@ Only superusers can change this setting. Although this setting can be changed wi
 `pltclu.start_proc` (`string`) [#](#GUC-PLTCLU-START-PROC)
 
 This parameter is exactly like `pltcl.start_proc`, except that it applies to PL/TclU. The referenced function must be written in the `pltclu` language.
-
-

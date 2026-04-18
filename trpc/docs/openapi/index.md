@@ -442,5 +442,3 @@ sh
 `error [api-path-removed-without-deprecation] in API GET /getBigInt`
 
   `api path removed without deprecation`
-
-

@@ -29,5 +29,3 @@ Two prerendered routes generate the same path, resulting in a collision. A stati
 *   [`prerenderConflictBehavior`](/en/reference/configuration-reference/#prerenderconflictbehavior)
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

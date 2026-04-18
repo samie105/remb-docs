@@ -750,5 +750,3 @@ import * as schema from "./schema"
 
 const db = drizzle.mock({ schema });
 ```
-
-

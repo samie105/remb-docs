@@ -716,5 +716,3 @@ await getConnection().$transaction(async (transactionalEntityManager) => {
   await transactionalEntityManager.save(user);
 });
 ```
-
-

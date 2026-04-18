@@ -36,5 +36,3 @@ Add your Prisma query engine binary path to the `pkg/assets` section of your `pa
 See [this Github issue](https://github.com/prisma/prisma/issues/8449) for further discussion.
 
 [Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/more/troubleshooting/bundler-issues.mdx)
-
-

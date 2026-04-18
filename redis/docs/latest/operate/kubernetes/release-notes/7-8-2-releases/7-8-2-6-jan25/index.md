@@ -31,5 +31,3 @@ This is a maintenance release to support [Redis Enterprise Software version 7.8.
 *   **OLM operator bundle** : `v7.8.2-6.8`
 
 ## On this page
-
-

@@ -119,5 +119,3 @@ Read from stdin
 Next
 
 ](/docs/guides/process/stdin)
-
-

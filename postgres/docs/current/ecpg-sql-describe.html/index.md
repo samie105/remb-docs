@@ -50,5 +50,3 @@ EXEC SQL DEALLOCATE DESCRIPTOR mydesc;
 ## Compatibility
 
 `DESCRIBE` is specified in the SQL standard.
-
-

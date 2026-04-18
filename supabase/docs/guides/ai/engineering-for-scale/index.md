@@ -99,5 +99,3 @@ This looks very similar to our View example above, and you can continue to use t
 This diagram provides an example architecture that allows you to access the collections either with our client libraries or using Vecs. You can add as many secondary databases as you need (in this example we only show one):
 
 ![multi database](/docs/img/ai/scaling/engineering-for-scale--multi-database--light.png)
-
-

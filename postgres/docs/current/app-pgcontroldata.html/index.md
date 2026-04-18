@@ -34,5 +34,3 @@ Default data directory location
 `PG_COLOR`
 
 Specifies whether to use color in diagnostic messages. Possible values are `always`, `auto` and `never`.
-
-

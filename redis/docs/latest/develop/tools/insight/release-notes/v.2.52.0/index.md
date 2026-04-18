@@ -41,5 +41,3 @@ This is the General Availability (GA) release of Redis Insight 2.52.
 *   [#3490](https://github.com/RedisInsight/RedisInsight/pull/3490) Fix for an issue related to adding a JSON field to a key that already contains many fields.
 
 ## On this page
-
-

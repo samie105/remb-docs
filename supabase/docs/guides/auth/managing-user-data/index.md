@@ -76,5 +76,3 @@ As Supabase is built on top of Postgres, you can query the `auth.users` and `aut
 ```
 
 You can then export the results as CSV.
-
-

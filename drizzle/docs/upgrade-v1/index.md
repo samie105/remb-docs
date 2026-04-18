@@ -116,5 +116,3 @@ We’ve explained all the RQBv2 changes in detail, along with options for updati
 *   [Partial upgrade, or how to stay on v1 even after an upgrade?](drizzle/docs/relations-v1-v2/index.md#partial-upgrade-or-how-to-stay-on-rqb-v1-even-after-an-upgrade)
 
 #### Step 3 - Done ✅[](#step-3---done-)
-
-

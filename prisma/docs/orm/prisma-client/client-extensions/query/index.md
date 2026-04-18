@@ -227,5 +227,3 @@ const transactionExtension = Prisma.defineExtension((prisma) =>
 );
 const prisma = new PrismaClient().$extends(transactionExtension);
 ```
-
-

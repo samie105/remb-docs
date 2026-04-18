@@ -47,5 +47,3 @@ Don't be shy about asking for help in the [Discord chatroom](/chat)! You can als
 previous next
 
 [Overview](/docs/svelte/overview) [.svelte files](/docs/svelte/svelte-files)
-
-

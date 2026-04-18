@@ -14,5 +14,3 @@ nav_next: {"path": "hono/docs/helpers/adapter/index.md", "title": "Adapter Helpe
 ---
 
 [Skip to content](#VPContent)
-
-

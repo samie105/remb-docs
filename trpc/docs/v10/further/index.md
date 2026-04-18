@@ -14,5 +14,3 @@ nav_next: {"path": "trpc/docs/v10/further-reading/index.md", "title": "Further R
 ---
 
 Extra Information | tRPC
-
-

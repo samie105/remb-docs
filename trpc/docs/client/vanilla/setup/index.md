@@ -102,5 +102,3 @@ ts
 `// => { id: 'id_frodo', name: 'Frodo' };`
 
 You're all set!
-
-

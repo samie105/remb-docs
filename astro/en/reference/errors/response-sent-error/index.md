@@ -28,5 +28,3 @@ Making changes to the response, such as setting headers, cookies, and the status
 *   [HTML streaming](/en/guides/on-demand-rendering/#html-streaming)
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

@@ -201,5 +201,3 @@ Performance counter stats for process id '3038':
 It's important to know that there are two very different ways in which PMCs can be used (counting and sampling), and we've focused solely on PMCs counting for the sake of this analysis. Brendan Greg clearly explains it on the following [link](http://www.brendangregg.com/blog/2017-05-04/the-pmcs-of-ec2.html).
 
 ## On this page
-
-

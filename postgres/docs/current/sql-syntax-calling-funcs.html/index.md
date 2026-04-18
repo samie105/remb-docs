@@ -101,5 +101,3 @@ In the above query, the arguments `a` and `b` are specified positionally, while 
 ### Note
 
 Named and mixed call notations currently cannot be used when calling an aggregate function (but they do work when an aggregate function is used as a window function).
-
-

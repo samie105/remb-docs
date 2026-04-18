@@ -581,5 +581,3 @@ The value returned by `asDrizzleTable('Pets', Pets)` is equivalent to `import { 
 8.  Once you have confirmed your project connects to the new database, you can safely delete the project from Astro Studio.
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

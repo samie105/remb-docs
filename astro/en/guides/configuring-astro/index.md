@@ -104,5 +104,3 @@ const { title = "My Astro Website", ...props } = Astro.props;---<link rel="sitem
 ```
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

@@ -70,5 +70,3 @@ The High Precision Event Timer (HPET) is the preferred timer on systems where it
 Advanced Configuration and Power Interface (ACPI) provides a Power Management (PM) Timer, which Linux refers to as the acpi\_pm. The clock derived from acpi\_pm will at best provide 300 nanosecond resolution.
 
 Timers used on older PC hardware include the 8254 Programmable Interval Timer (PIT), the real-time clock (RTC), the Advanced Programmable Interrupt Controller (APIC) timer, and the Cyclone timer. These timers aim for millisecond resolution.
-
-

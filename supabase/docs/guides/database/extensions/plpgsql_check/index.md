@@ -56,5 +56,3 @@ Now we can use plpgsql\_check's `plpgsql_check_function` function to identify th
 ## Resources[#](#resources)
 
 *   Official [`plpgsql_check` documentation](https://github.com/okbob/plpgsql_check)
-
-

@@ -340,5 +340,3 @@ More usage examples here: [integration-tests/tests/d1-batch.test.ts](https://git
 7.  Some bug fixes and improvements
 
 You can read more about drizzle-kit updates [here](https://github.com/drizzle-team/drizzle-kit-mirror/releases/tag/v0.20.0)
-
-

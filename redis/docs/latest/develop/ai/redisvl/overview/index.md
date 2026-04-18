@@ -24,5 +24,3 @@ nav_next: {"path": "redis/docs/latest/integrate/n8n-vector-store/index.md", "tit
     *   [Index](cli/#index)
     *   [Stats](cli/#stats)
     *   [Optional arguments](cli/#optional-arguments)
-
-

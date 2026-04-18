@@ -97,5 +97,3 @@ This option is available for both `trimTrailingSlash` and `appendTrailingSlash`.
 ## Note [​](#note)
 
 It will be enabled when the request method is `GET` and the response status is `404`.
-
-

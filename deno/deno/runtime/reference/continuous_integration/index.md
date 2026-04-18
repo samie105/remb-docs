@@ -145,5 +145,3 @@ It is possible to customize the default hash (`${{ hashFiles('**/deno.lock') }}`
     # the default cache-hash of `${{ hashFiles('**/deno.lock') }}`
     cache-hash: ${{ hashFiles('**/deno.json') }}
 ```
-
-

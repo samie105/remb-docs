@@ -147,5 +147,3 @@ If you want to implement authentication features like magic links or OAuth, you 
 
 *   Learn how to build a complete user management app with authentication in the [Swift tutorial](/docs/guides/getting-started/tutorials/with-swift)
 *   Explore the [supabase-swift](https://github.com/supabase/supabase-swift) library on GitHub
-
-

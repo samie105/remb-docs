@@ -78,5 +78,3 @@ Save your Function as a JavaScript file (e.g. `index.js`) update the `supabase/c
 ```
 
 You can use any `.ts`, `.js`, `.tsx`, `.jsx` or `.mjs` file as the entrypoint for a Function.
-
-

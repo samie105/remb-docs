@@ -145,5 +145,3 @@ An internal role Supabase uses for administrative tasks, such as running upgrade
 *   Official Postgres docs: [Database Roles](https://www.postgresql.org/docs/current/database-roles.html)
 *   Official Postgres docs: [Role Membership](https://www.postgresql.org/docs/current/role-membership.html)
 *   Official Postgres docs: [Function Permissions](https://www.postgresql.org/docs/current/perm-functions.html)
-
-

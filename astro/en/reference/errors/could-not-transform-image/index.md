@@ -30,5 +30,3 @@ Depending on the image service you are using, the stack trace may contain more i
 *   [Images](/en/guides/images/)
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

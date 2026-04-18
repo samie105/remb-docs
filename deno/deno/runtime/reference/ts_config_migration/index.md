@@ -515,5 +515,3 @@ For each dependency, there are two potential "slots" that are used. There is the
 When the module graph is built, and there is a need to type check the graph, Deno starts up the TypeScript compiler and feeds it the names of the modules that need to be potentially emitted as JavaScript. During that process, the TypeScript compiler will request additional modules, and Deno will look at the slots for the dependency, offering it the type slot if it is filled before offering it the code slot.
 
 This means when you import a `.d.ts` module, or you use one of the solutions above to provide alternative type modules for JavaScript code, that is what is provided to TypeScript instead when resolving the module.
-
-

@@ -216,5 +216,3 @@ Or use the Supabase Dashboard's [RLS policy tester](/dashboard/project/_/auth/po
 *   [Row Level Security](/docs/guides/auth/row-level-security) - Complete RLS guide
 *   [Custom Access Token Hooks](/docs/guides/auth/auth-hooks/custom-access-token-hook) - Inject custom claims
 *   [OAuth flows](/docs/guides/auth/oauth-server/oauth-flows) - Understand token issuance
-
-

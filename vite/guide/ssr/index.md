@@ -316,5 +316,3 @@ The CLI commands `$ vite dev` and `$ vite preview` can also be used for SSR apps
 Note
 
 Use a post hook so that your SSR middleware runs _after_ Vite's middlewares.
-
-

@@ -131,5 +131,3 @@ No documentation available
 *   [disable](.././trace_events/~/Tracing#method_disable_0)
 *   [enable](.././trace_events/~/Tracing#method_enable_0)
 *   [enabled](.././trace_events/~/Tracing#property_enabled)
-
-

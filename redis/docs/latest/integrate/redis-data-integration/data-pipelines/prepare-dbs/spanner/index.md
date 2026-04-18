@@ -202,5 +202,3 @@ operator:
 Once you have followed the steps above, your Google Spanner database is ready for RDI to use.
 
 ## On this page
-
-

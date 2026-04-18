@@ -59,5 +59,3 @@ test=# select ctid from t1 where xmin = 2;
 -------
  (0,3)
 (1 row)
-
-

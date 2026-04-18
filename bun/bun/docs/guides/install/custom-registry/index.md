@@ -55,5 +55,3 @@ Configure a private registry for an organization scope with bun install
 Next
 
 ](/docs/guides/install/registry-scope)
-
-

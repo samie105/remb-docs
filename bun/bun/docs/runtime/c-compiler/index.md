@@ -302,5 +302,3 @@ cc({
 ```
 
 These are preprocessor definitions passed to the TinyCC compiler.
-
-

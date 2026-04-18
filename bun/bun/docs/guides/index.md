@@ -78,5 +78,3 @@ Deploy a Bun application on Vercel
 Next
 
 ](/docs/guides/deployment/vercel)
-
-

@@ -34,5 +34,3 @@ React Compiler is a tool that automatically optimizes your React app. [Learn mor
 ## Next steps[](#next-steps "Link for Next steps ")
 
 Head to the [Quick Start](react/learn/index.md) guide for a tour of the most important React concepts you will encounter every day.
-
-

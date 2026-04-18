@@ -105,5 +105,3 @@ If you are unable to connect to the MCP server:
 2.  Confirm the Docker bridge gateway IP is correctly added in `./volumes/api/kong.yml`
 3.  Check Kong's logs for errors: `docker compose logs kong`
 4.  Make sure your SSH tunnel is active
-
-

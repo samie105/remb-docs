@@ -330,5 +330,3 @@ try {
 *   [Jedis client](/docs/latest/develop/clients/jedis/) - Redis Java client documentation
 
 ## On this page
-
-

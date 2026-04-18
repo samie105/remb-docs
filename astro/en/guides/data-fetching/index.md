@@ -76,5 +76,3 @@ See our [CMS Guides](/en/guides/cms/) for full details on integrating Astro with
 *   [Creating a fullstack app with Astro + GraphQL](https://robkendal.co.uk/blog/how-to-build-astro-site-with-graphql/)
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

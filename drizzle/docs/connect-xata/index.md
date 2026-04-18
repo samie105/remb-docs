@@ -75,5 +75,3 @@ const allUsers = await db.select().from(...);
 ```
 
 #### What’s next?[](#whats-next)
-
-

@@ -27,5 +27,3 @@ Redis MCP is a general-purpose implementation that lets agents read, write, and 
 *   "What is user:1's email?"
 
 See the other pages in this section to learn how to set up and use Redis MCP. See also the [GitHub repository](https://github.com/redis/mcp-redis) for the latest changes.
-
-

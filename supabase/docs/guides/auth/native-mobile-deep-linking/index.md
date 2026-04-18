@@ -47,5 +47,3 @@ Finally, implement the OAuth and linking handlers. See the [supabase-js referenc
 ```
 
 For the best user experience it is recommended to use universal links which require a more elaborate setup. You can find the detailed setup instructions in the [Expo docs](https://docs.expo.dev/guides/deep-linking/).
-
-

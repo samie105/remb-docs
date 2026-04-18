@@ -28,5 +28,3 @@ Some internationalization functions are only available when Astro’s own i18n r
 *   [`i18n` routing](/en/guides/internationalization/#routing)
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

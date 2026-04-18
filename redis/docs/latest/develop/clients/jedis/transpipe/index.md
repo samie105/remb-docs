@@ -314,5 +314,3 @@ public class PipeTransExample {
 ```
 
 ## On this page
-
-

@@ -37,5 +37,3 @@ Along the way, you’ll learn how the **two sections of a `.astro` file** work t
  *    I am ready to make some new pages for my Astro website!
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

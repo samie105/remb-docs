@@ -63,5 +63,3 @@ Convert a Buffer to a ReadableStream
 Next
 
 ](/docs/guides/binary/buffer-to-readablestream)
-
-

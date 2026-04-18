@@ -144,5 +144,3 @@ And after ChatGPT receives a response from the plugin it will answer your questi
 
 *   ChatGPT Retrieval Plugin: [github.com/openai/chatgpt-retrieval-plugin](https://github.com/openai/chatgpt-retrieval-plugin)
 *   ChatGPT Plugins: [official documentation](https://platform.openai.com/docs/plugins/introduction)
-
-

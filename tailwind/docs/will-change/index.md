@@ -72,5 +72,3 @@ For CSS variables, you can also use the `will-change-(<custom-property>)` syntax
 ```
 
 This is just a shorthand for `will-change-[var(<custom-property>)]` that adds the `var()` function for you automatically.
-
-

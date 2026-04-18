@@ -58,5 +58,3 @@ As visible on the charts and tables below, the chunk size does not affect the ov
  [![uncompressed-overall-ops-sec-vs-out-of-order-percentage](/docs/latest/images/timeseries/uncompressed-overall-ops-sec-vs-out-of-order-percentage.webp)](/docs/latest/images/timeseries/uncompressed-overall-ops-sec-vs-out-of-order-percentage.webp)[![uncompressed-overall-p50-lat-vs-out-of-order-percentage](/docs/latest/images/timeseries/uncompressed-overall-p50-lat-vs-out-of-order-percentage.webp) ](/docs/latest/images/timeseries/uncompressed-overall-p50-lat-vs-out-of-order-percentage.webp)[![uncompressed-out-of-order-overhead-table](/docs/latest/images/timeseries/uncompressed-out-of-order-overhead-table.webp)](/docs/latest/images/timeseries/uncompressed-out-of-order-overhead-table.webp)
 
 ## On this page
-
-

@@ -98,5 +98,3 @@ The SQL standard specifies that the subcommands in `CREATE SCHEMA` can appear in
 According to the SQL standard, the owner of a schema always owns all objects within it. PostgreSQL allows schemas to contain objects owned by users other than the schema owner. This can happen only if the schema owner grants the `CREATE` privilege on their schema to someone else, or a superuser chooses to create objects in it.
 
 The `IF NOT EXISTS` option is a PostgreSQL extension.
-
-

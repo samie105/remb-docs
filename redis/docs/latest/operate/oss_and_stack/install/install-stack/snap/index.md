@@ -47,5 +47,3 @@ PONG
 ```
 
 ## On this page
-
-

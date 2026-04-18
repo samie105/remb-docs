@@ -935,5 +935,3 @@ Here are some additional resources that apply vector search for different use ca
 See the [Introduction to vector search course](https://university.redis.io/course/yz1lretjfpdlew?tab=details) to learn more.
 
 ## On this page
-
-

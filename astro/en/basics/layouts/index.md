@@ -137,5 +137,3 @@ For example, a `BlogPostLayout.astro` layout component could style a post’s ti
 ```
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

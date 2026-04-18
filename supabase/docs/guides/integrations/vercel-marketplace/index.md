@@ -95,5 +95,3 @@ When using Vercel Marketplace, the following limitations apply:
 *   Owners cannot be added manually within the Supabase dashboard.
 *   Invoices and payments must be managed through the Vercel dashboard, not the Supabase dashboard.
 *   [Custom Domains](/docs/guides/platform/custom-domains) are not supported, and we always use the base `SUPABASE_URL` for the Vercel environment variables.
-
-

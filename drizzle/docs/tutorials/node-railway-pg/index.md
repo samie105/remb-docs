@@ -423,5 +423,3 @@ Open the Drizzle Studio URL in your browser. You should see your database tables
 Navigate to the `Architecture` tab in your Railway project. You should now see three services: your application, the PostgreSQL database, and Drizzle Studio.
 
 ![](https://orm.drizzle.team/_astro/node-railway-canvas-all-services.r1oWNHu6_Z1JaG3B.webp)
-
-

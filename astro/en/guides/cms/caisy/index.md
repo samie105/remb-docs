@@ -222,5 +222,3 @@ const post = gqlResponse?.allBlogArticle?.edges?.[0]?.node;---<h1>{post.title}</
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

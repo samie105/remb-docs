@@ -66,5 +66,3 @@ The Deno standard library is published as a set of modular JSR packages under th
 *   [@std/yaml](/runtime/reference/std/yaml/) – Parsing and serializing of YAML files
 
 > This index and the individual package overview sections are generated. Add extra examples by creating files in `_overrides/<package>.md`.
-
-

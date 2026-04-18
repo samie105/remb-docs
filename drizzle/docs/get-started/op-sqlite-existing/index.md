@@ -14,5 +14,3 @@ nav_next: {"path": "drizzle/docs/get-started/op-sqlite-new/index.md", "title": "
 ---
 
 Drizzle ORM - Native SQLite
-
-

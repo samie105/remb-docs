@@ -36,5 +36,3 @@ Find your connection settings. Go to the project [**Connect** panel](/dashboard/
 ```
 1psql "sslmode=verify-full sslrootcert=/path/to/prod-supabase.cer host=[CLOUD_PROVIDER]-0-[REGION].pooler.supabase.com dbname=postgres user=postgres.[PROJECT_REF]"
 ```
-
-

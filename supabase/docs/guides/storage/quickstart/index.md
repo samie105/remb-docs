@@ -81,5 +81,3 @@ To restrict access to your files you can use either the Dashboard or SQL.
 6.  Write the policy using SQL.
 
 * * *
-
-

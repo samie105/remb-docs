@@ -42,5 +42,3 @@ You'll receive two invoices for your marketplace subscription.
 ## More information[#](#more-information)
 
 *   Detailed explanations of how each usage item is billed, independent of the AWS Marketplace. Refer to the [Manage Your Usage guide](../manage-your-usage).
-
-

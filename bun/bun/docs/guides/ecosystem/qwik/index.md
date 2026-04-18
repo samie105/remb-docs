@@ -122,5 +122,3 @@ Open [http://localhost:5173](http://localhost:5173/) with your browser to see th
 Refer to the [Qwik docs](https://qwik.dev/docs/getting-started/) for complete documentation.
 
 Was this page helpful?
-
-

@@ -42,5 +42,3 @@ You can automate deployments using:
 *   The [Supabase GitHub integration](/dashboard/project/_/settings/integrations) (with branching enabled)
 *   The [Supabase CLI](/docs/guides/local-development) in your own continuous deployment pipeline
 *   The [Supabase Terraform provider](/docs/guides/deployment/terraform)
-
-

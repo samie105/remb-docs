@@ -210,5 +210,3 @@ Follow the [Scalekit & Astro guide](/en/guides/backend/scalekit/) to add authent
 *   [Using Microsoft Entra Id EasyAuth with Astro and Azure Static Web App](https://agramont.net/blog/entra-id-easyauth-with-astro/)
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

@@ -1477,5 +1477,3 @@ Learn more about [defining loader schema types](/en/reference/content-loader-ref
 Please check [Astro’s issues on GitHub](https://github.com/withastro/astro/issues/) for any reported issues, or to file an issue yourself.
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

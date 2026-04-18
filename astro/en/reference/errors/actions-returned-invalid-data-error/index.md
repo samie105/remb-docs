@@ -28,5 +28,3 @@ Action handler returned invalid data. Handlers should return serializable data t
 *   [Actions handler reference](/en/reference/modules/astro-actions/#handler-property)
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

@@ -52,5 +52,3 @@ Additional conditions can be added with `{:else if expression}`, optionally endi
 previous next
 
 [Basic markup](/docs/svelte/basic-markup) [{#each ...}](/docs/svelte/each)
-
-

@@ -94,5 +94,3 @@ API:
 ## Resources[#](#resources)
 
 *   Official [`pgTAP` documentation](https://pgtap.org/)
-
-

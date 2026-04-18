@@ -514,5 +514,3 @@ For the ApostropheCMS project, follow the instructions for your hosting type in 
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

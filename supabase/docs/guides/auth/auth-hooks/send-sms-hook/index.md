@@ -83,5 +83,3 @@ Configure `pg_cron` to run the job on an interval. You can use a tool like [cron
 ```
 1select2  cron.schedule(3    '* * * * *', -- this cron expression means every minute.4    'select dequeue_and_run_jobs();'5  );
 ```
-
-

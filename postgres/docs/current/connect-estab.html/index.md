@@ -18,5 +18,3 @@ PostgreSQL implements a “process per user” client/server model. In this mode
 The client process can be any program that understands the PostgreSQL protocol described in [Chapter 54](https://www.postgresql.org/docs/current/protocol.html "Chapter 54. Frontend/Backend Protocol"). Many clients are based on the C-language library libpq, but several independent implementations of the protocol exist, such as the Java JDBC driver.
 
 Once a connection is established, the client process can send a query to the backend process it's connected to. The query is transmitted using plain text, i.e., there is no parsing done in the client. The backend process parses the query, creates an _execution plan_, executes the plan, and returns the retrieved rows to the client by transmitting them over the established connection.
-
-

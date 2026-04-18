@@ -244,5 +244,3 @@ Some leaderboards are permanent, while others reset daily, weekly, or seasonally
 Per-user hashes work best for small, frequently accessed profile details. Large profile documents or rarely used attributes are often better kept in another store, with Redis holding only the fields needed to render the leaderboard quickly.
 
 ## On this page
-
-

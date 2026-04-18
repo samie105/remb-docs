@@ -41,5 +41,3 @@ Each subpage breaks down a specific usage item and details what you're charged f
 *   [IPv4](/docs/guides/platform/manage-your-usage/ipv4)
 *   [MFA Phone](/docs/guides/platform/manage-your-usage/advanced-mfa-phone)
 *   [Log Drains](/docs/guides/platform/manage-your-usage/log-drains)
-
-

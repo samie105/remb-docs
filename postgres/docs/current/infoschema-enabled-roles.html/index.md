@@ -26,5 +26,3 @@ Description
 `role_name` `sql_identifier`
 
 Name of a role
-
-

@@ -33,5 +33,3 @@ export async function getStaticPaths() {  return [ // <-- Array    { params: { s
 *   [`params`](/en/reference/api-reference/#params)
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

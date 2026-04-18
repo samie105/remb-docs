@@ -52,5 +52,3 @@ This command will not succeed if there are any existing text search configuratio
 ## Compatibility
 
 There is no `DROP TEXT SEARCH DICTIONARY` statement in the SQL standard.
-
-

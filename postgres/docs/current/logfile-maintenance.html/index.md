@@ -42,5 +42,3 @@ On many systems, however, syslog is not very reliable, particularly with large l
 Note that all the solutions described above take care of starting new log files at configurable intervals, but they do not handle deletion of old, no-longer-useful log files. You will probably want to set up a batch job to periodically delete old log files. Another possibility is to configure the rotation program so that old log files are overwritten cyclically.
 
 [pgBadger](https://pgbadger.darold.net/) is an external project that does sophisticated log file analysis. [check\_postgres](https://bucardo.org/check_postgres/) provides Nagios alerts when important messages appear in the log files, as well as detection of many other extraordinary conditions.
-
-

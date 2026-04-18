@@ -186,5 +186,3 @@ If you have any questions, you can [ask in the SST Discord](https://discord.gg/s
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

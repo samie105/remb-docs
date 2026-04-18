@@ -111,5 +111,3 @@ Redis 8 merges Redis Stack and Redis Community Edition into a single unified dis
 Redis 8.0 delivers just Redis — no modules, no fragmentation.
 
 ## On this page
-
-

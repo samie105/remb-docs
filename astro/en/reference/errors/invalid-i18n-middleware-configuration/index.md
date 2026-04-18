@@ -24,5 +24,3 @@ nav_next: {"path": "astro/en/reference/errors/invalid-image-service/index.md", "
 An invalid i18n middleware configuration was detected.
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

@@ -63,5 +63,3 @@ Convert a Buffer to a blob
 Next
 
 ](/docs/guides/binary/buffer-to-blob)
-
-

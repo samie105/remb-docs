@@ -93,5 +93,3 @@ Be aware however that such a query will be very inefficient.
  (0,3)      |    607 | f     | {607} | {"For Update"} | {3107}
  (0,4)      |    607 | f     | {607} | {"For Update"} | {3107}
 (4 rows)
-
-

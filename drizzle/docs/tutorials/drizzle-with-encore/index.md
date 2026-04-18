@@ -207,5 +207,3 @@ Migrations are automatically applied when you run your Encore application. You d
 *   [Encore Documentation](https://encore.dev/docs)
 *   [Encore Drizzle Guide](https://encore.dev/docs/ts/develop/orms/drizzle)
 *   [Drizzle ORM Documentation](drizzle/docs/overview/index.md)
-
-

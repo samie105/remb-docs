@@ -212,5 +212,3 @@ There are 3 users in the database.
 That’s it! Now that you’ve set up Prisma Postgres using Bun, we recommend referring to the [official Prisma Postgres docs](https://www.prisma.io/docs/postgres) as you continue to develop your application.
 
 Was this page helpful?
-
-

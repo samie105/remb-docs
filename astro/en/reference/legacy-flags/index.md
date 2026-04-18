@@ -43,5 +43,3 @@ This flag preserves some legacy v4 content collections features:
 This is a temporary migration helper. Migrate collections to the Content Layer API, then disable this flag.
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

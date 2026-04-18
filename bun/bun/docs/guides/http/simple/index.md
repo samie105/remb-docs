@@ -67,5 +67,3 @@ Send an HTTP request using fetch
 Next
 
 ](/docs/guides/http/fetch)
-
-

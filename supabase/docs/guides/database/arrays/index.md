@@ -70,5 +70,3 @@ returns:
 *   [Supabase JS Client](https://github.com/supabase/supabase-js)
 *   [Supabase - Get started for free](https://supabase.com)
 *   [Postgres Arrays](https://www.postgresql.org/docs/15/arrays.html)
-
-

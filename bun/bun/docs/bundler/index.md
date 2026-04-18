@@ -588,5 +588,3 @@ When `—app` is set, dump all server files to disk even for static builds
 boolean
 
 When `—app` is set, disable all minification
-
-

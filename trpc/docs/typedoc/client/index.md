@@ -14,5 +14,3 @@ nav_next: {"path": "trpc/docs/typedoc/client/index/index.md", "title": "index"}
 ---
 
 @trpc/client | tRPC
-
-

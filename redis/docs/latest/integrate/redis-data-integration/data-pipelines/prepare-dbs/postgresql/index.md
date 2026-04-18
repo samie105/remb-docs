@@ -162,5 +162,3 @@ Find out more from the PostgreSQL pages about [`pg_hba.conf`](https://www.postgr
 You can use the Debezium PostgreSQL connector with a standalone PostgreSQL server or with a cluster of servers. For versions 12 and below, PostgreSQL supports logical replication slots on only primary servers. This means that Debezium can only connect to a primary server for CDC and the connection will stop if this server fails. If the same server is promoted to primary when service resumes then you can simply restart the Debezium connector. However, if a different server is promoted to primary, then you must reconfigure Debezium to use the new server before restarting. Also, make sure the new server has the correct plug-in and configuration for Debezium.
 
 ## On this page
-
-

@@ -106,5 +106,3 @@ The following environment variables determine internal behavior of libpq; they o
 *   `PGSYSCONFDIR` sets the directory containing the `pg_service.conf` file and in a future version possibly other system-wide configuration files.
     
 *   `PGLOCALEDIR` sets the directory containing the `locale` files for message localization.
-
-

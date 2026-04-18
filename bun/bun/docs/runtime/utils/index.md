@@ -1035,5 +1035,3 @@ const array = Array(1024).fill({ a: 1 });
 estimateShallowMemoryUsageOf(array);
 // => 16
 ```
-
-

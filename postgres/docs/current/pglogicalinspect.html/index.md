@@ -92,5 +92,3 @@ catchange\_count          | 2
 catchange\_xip            | {751,752}
 
 If _`filename`_ does not match a snapshot file, the function raises an error.
-
-

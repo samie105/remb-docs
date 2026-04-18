@@ -134,5 +134,3 @@ bun info
 Next
 
 ](/docs/pm/cli/info)
-
-

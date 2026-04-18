@@ -66,5 +66,3 @@ Selectively run tests concurrently with glob patterns
 Next
 
 ](/docs/guides/test/concurrent-test-glob)
-
-

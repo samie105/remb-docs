@@ -136,5 +136,3 @@ Obtain the current context object and modify it by accessing `op.context`.
 You can set the context object's initial value for a particular operation by providing the context parameter to the `query` or `useQuery` hook (or `mutation`, `subscription`, etc.).
 
 For an example use case, see [Disable batching for certain requests](trpc/docs/client/links/splitLink/index.md#disable-batching-for-certain-requests).
-
-

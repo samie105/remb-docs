@@ -60,5 +60,3 @@ Redis Copilot terms apply to your use of or access to Redis Copilot. They set ou
 Redis Copilot is released as Beta in Redis Insight. We welcome your feedback and bug reports. You can submit them through the feedback form available in the [Redis Insight GitHub repository](https://github.com/RedisInsight/RedisInsight).
 
 ## On this page
-
-

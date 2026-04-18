@@ -153,5 +153,3 @@ Installation
 Next
 
 ](/docs/installation)
-
-

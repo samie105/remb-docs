@@ -141,5 +141,3 @@ To handle multiple, dynamically generated redirect URLs within the same OAuth ap
 ## Current limitations[#](#current-limitations)
 
 Only some features are available until we roll out fine-grained access control. If you need full database access, you will need to prompt the user for their database password.
-
-

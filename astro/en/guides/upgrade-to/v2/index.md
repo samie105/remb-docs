@@ -388,5 +388,3 @@ These features are now available by default:
 There are currently no known issues.
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

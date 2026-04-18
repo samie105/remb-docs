@@ -140,5 +140,3 @@ The basic idea is to copy all file system-level changes from the source cluster 
 4.  Create a `backup_label` file to begin WAL replay at the checkpoint created at failover and configure the `pg_control` file with a minimum consistency LSN defined as the result of `pg_current_wal_insert_lsn()` when rewinding from a live source or the last checkpoint LSN when rewinding from a stopped source.
     
 5.  When starting the target, PostgreSQL replays all the required WAL, resulting in a data directory in a consistent state.
-
-

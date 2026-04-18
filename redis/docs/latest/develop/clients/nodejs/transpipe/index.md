@@ -148,5 +148,3 @@ try {
 This is important because the server tracks the state of the WATCH on a per-connection basis, and concurrent WATCH and MULTI/EXEC calls on the same connection will interfere with one another. See [`RedisClientPool`](https://github.com/redis/node-redis/blob/master/docs/pool.md) for more information.
 
 ## On this page
-
-

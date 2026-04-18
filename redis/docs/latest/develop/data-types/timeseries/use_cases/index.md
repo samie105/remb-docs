@@ -100,5 +100,3 @@ Use Redis Time Series to identify correlations between the trading behavior and 
 *   Exact time and order of a trade by itself
 *   Type of the event (trade/bid)
 *   The stock price
-
-

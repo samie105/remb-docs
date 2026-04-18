@@ -300,5 +300,3 @@ _Runtime Configurability_
 Yes
 
 ## On this page
-
-

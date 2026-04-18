@@ -108,5 +108,3 @@ _`row_constructor`_ _`operator`_ (_`subquery`_)
 The left-hand side is a row constructor, as described in [Section 4.2.13](https://www.postgresql.org/docs/current/sql-expressions.html#SQL-SYNTAX-ROW-CONSTRUCTORS "4.2.13. Row Constructors"). The right-hand side is a parenthesized subquery, which must return exactly as many columns as there are expressions in the left-hand row. Furthermore, the subquery cannot return more than one row. (If it returns zero rows, the result is taken to be null.) The left-hand side is evaluated and compared row-wise to the single subquery result row.
 
 See [Section 9.25.5](https://www.postgresql.org/docs/current/functions-comparisons.html#ROW-WISE-COMPARISON "9.25.5. Row Constructor Comparison") for details about the meaning of a row constructor comparison.
-
-

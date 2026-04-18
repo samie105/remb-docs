@@ -39,5 +39,3 @@ This is the maintenance release of RedisInsight 1.14 (v1.14.0).
 *   Added support for `setlistpack` and `streamlistpack3` Redis 7 encoding types parsing.
 
 ## On this page
-
-

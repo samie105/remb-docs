@@ -79,5 +79,3 @@ v
 [version](.././punycode/~/version "version")
 
 No documentation available
-
-

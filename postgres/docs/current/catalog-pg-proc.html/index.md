@@ -136,5 +136,3 @@ Function's local settings for run-time configuration variables
 `proacl` `aclitem[]`
 
 Access privileges; see [Section 5.8](https://www.postgresql.org/docs/current/ddl-priv.html "5.8. Privileges") for details
-
-

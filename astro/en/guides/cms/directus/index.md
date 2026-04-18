@@ -212,5 +212,3 @@ nav_next: {"path": "astro/en/guides/cms/drupal/index.md", "title": "Drupal & Ast
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

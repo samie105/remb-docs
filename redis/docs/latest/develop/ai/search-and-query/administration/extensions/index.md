@@ -248,5 +248,3 @@ double TFIDFScorer(RSScoringFunctionCtx *ctx, RSIndexResult *h, RSDocumentMetada
 ```
 
 ## On this page
-
-

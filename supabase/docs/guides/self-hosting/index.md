@@ -107,5 +107,3 @@ Share your self-hosting experience:
 ### Enterprise self-hosting[#](#enterprise-self-hosting)
 
 If you're an enterprise using self-hosted Supabase, we'd love to hear from you. Reach out to our [Growth Team](https://forms.supabase.com/enterprise) to discuss your use case, share feedback, or explore design partnership opportunities.
-
-

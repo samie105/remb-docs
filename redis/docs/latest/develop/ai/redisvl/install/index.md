@@ -32,5 +32,3 @@ docker run -d --name redis -p 6379:6379 -p 8001:8001 redis/redis-stack:latest
 After running the previous command, the Redis Insight GUI will be available at http://localhost:8001.
 
 ## On this page
-
-

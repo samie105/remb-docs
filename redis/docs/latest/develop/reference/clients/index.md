@@ -166,5 +166,3 @@ The commands [`CLIENT SETNAME`](/docs/latest/commands/client-setname/) and [`CLI
 From version 3.2 onwards, Redis has TCP keepalive (`SO_KEEPALIVE` socket option) enabled by default and set to about 300 seconds. This option is useful in order to detect dead peers (clients that cannot be reached even if they look connected). Moreover, if there is network equipment between clients and servers that need to see some traffic in order to take the connection open, the option will prevent unexpected connection closed events.
 
 ## On this page
-
-

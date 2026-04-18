@@ -44,5 +44,3 @@ The Supabase Dashboard provides an interface for you to schedule Jobs and monito
 ## Resources[#](#resources)
 
 *   [`pg_cron` GitHub Repository](https://github.com/citusdata/pg_cron)
-
-

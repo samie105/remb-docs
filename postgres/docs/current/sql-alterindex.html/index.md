@@ -128,5 +128,3 @@ ALTER INDEX coord\_idx ALTER COLUMN 3 SET STATISTICS 1000;
 ## Compatibility
 
 `ALTER INDEX` is a PostgreSQL extension.
-
-

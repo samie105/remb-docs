@@ -64,5 +64,3 @@ You can use [Prisma Postgres](https://www.prisma.io/docs/postgres), which has bu
 For more information on connection management for serverless environments, refer to our [connection management guide](prisma/docs/orm/prisma-client/setup-and-configuration/databases-connections/index.md#serverless-environments-faas).
 
 [Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/prisma-client/deployment/serverless/deploy-to-netlify.mdx)
-
-

@@ -556,5 +556,3 @@ To deploy your website, visit our [deployment guides](/en/guides/deploy/) and fo
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

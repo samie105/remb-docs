@@ -259,5 +259,3 @@ We recommend the following best practices to mitigate security risks when using 
 ## On GitHub[#](#on-github)
 
 The MCP server repository is available at [github.com/supabase-community/supabase-mcp](https://github.com/supabase-community/supabase-mcp).
-
-

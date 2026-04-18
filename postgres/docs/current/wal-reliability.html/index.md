@@ -54,5 +54,3 @@ PostgreSQL also protects against some kinds of data corruption on storage device
     
 
 PostgreSQL does not protect against correctable memory errors and it is assumed you will operate using RAM that uses industry standard Error Correcting Codes (ECC) or better protection.
-
-

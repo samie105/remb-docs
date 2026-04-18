@@ -166,5 +166,3 @@ redis.registerFunction('calculateArea', calculateCircleArea);
 Load and run your new function as described in the previous section.
 
 ## On this page
-
-

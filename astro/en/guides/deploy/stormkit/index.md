@@ -166,5 +166,3 @@ Read more in the [Stormkit Documentation](https://stormkit.io/docs).
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

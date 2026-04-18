@@ -128,5 +128,3 @@ When you disable PITR, we still take all new backups as physical backups only. Y
 ## Restore to a new project[#](#restore-to-a-new-project)
 
 See the [Duplicate Project docs](/docs/guides/platform/clone-project).
-
-

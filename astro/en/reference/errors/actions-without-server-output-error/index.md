@@ -28,5 +28,3 @@ Your project must have a server output to create backend functions with Actions.
 *   [On-demand rendering](/en/guides/on-demand-rendering/)
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

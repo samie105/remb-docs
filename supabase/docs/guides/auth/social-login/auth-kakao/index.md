@@ -182,5 +182,3 @@ Use the ID Token to sign in:
 ## Resources[#](#resources)
 
 *   [Kakao Developers Portal](https://developers.kakao.com/changeLang?lang=en).
-
-

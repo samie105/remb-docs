@@ -160,5 +160,3 @@ The log parser is not able to parse the `*` operator for column selection. Inste
 ```
 1select2  cast(postgres_logs.timestamp as datetime) as timestamp,3  event_message,4  metadata5from6  <log_table_name>7order by timestamp desc8limit 100;
 ```
-
-

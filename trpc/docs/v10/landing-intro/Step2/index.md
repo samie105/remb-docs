@@ -14,5 +14,3 @@ nav_next: {"path": "trpc/docs/v10/migrate-from-v9-to-v10/index.md", "title": "Mi
 ---
 
 Step2 | tRPC
-
-

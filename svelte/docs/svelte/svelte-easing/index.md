@@ -240,5 +240,3 @@ function sineOut(t: number): number;
 previous next
 
 [svelte/compiler](/docs/svelte/svelte-compiler) [svelte/events](/docs/svelte/svelte-events)
-
-

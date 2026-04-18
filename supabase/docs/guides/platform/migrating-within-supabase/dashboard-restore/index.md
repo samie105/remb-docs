@@ -126,5 +126,3 @@ You are possibly using psql and Postgres version 15 or lower. Completely remove 
 "**psql: error: connection to server at "aws-0-us-east-1.pooler.supabase.com" (44.216.29.125), port 5432 failed: error received from server in SCRAM exchange: Wrong password**"
 
 If the database password was reset, it may take a few minutes for it to reflect. Try again after a few minutes if you did a password reset.
-
-

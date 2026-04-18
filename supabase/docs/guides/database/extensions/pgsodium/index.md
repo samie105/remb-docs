@@ -44,5 +44,3 @@ Encryption requires keys. Keeping the keys in the same database as the encrypted
 ## Resources[#](#resources)
 
 *   Official [`pgsodium` documentation](https://github.com/michelp/pgsodium)
-
-

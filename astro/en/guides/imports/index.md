@@ -305,5 +305,3 @@ With **Vite** and compatible **Rollup** plugins, you can import file types which
 ![](/houston_chef.webp) **Related recipe:** [Installing a Vite or Rollup plugin](/en/recipes/add-yaml-support/)
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

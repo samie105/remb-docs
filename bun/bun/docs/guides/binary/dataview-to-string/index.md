@@ -64,5 +64,3 @@ Convert a ReadableStream to a string
 Next
 
 ](/docs/guides/streams/to-string)
-
-

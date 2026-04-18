@@ -46,5 +46,3 @@ This documentation is quite incomplete. But since this interface is standardized
 [Home](https://www.postgresql.org/docs/current/index.html "PostgreSQL 18.3 Documentation")
 
  34.1. The Concept
-
-

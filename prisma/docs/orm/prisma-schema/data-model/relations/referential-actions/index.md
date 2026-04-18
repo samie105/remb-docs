@@ -463,5 +463,3 @@ model Comment {
   post        Post @relation(fields: [postId], references: [id])
 }
 ```
-
-

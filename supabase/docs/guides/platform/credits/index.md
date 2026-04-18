@@ -63,5 +63,3 @@ Yes, you can transfer credits to another organization. Submit a [support ticket]
 ### Can I get a refund of my unused credits?[#](#can-i-get-a-refund-of-my-unused-credits)
 
 No, we do not provide refunds. Please refer to our [Terms of Service](/terms#1-fees).
-
-

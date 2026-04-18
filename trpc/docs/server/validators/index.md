@@ -665,5 +665,3 @@ ts
 If you work on a validator library which supports tRPC usage, please feel free to open a PR for this page with equivalent usage to the other examples here, and a link to your docs.
 
 Integration with tRPC in most cases is as simple as meeting one of several existing type interfaces. Conforming to [Standard Schema](https://standardschema.dev/) is recommended, but in some cases we may accept a PR to add a new supported interface. Feel free to open an issue for discussion. You can check the existing supported interfaces and functions for parsing/validation [in code](https://github.com/trpc/trpc/blob/main/packages/server/src/unstable-core-do-not-import/parser.ts).
-
-

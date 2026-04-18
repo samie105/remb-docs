@@ -14,5 +14,3 @@ nav_next: {"path": "drizzle/docs/connect-turso/index.md", "title": "Drizzle <> T
 ---
 
 Drizzle ORM - TiDB
-
-

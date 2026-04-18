@@ -73,5 +73,3 @@ The `sslmode=no-verify` setting passes `rejectUnauthorized: false` to the SSL co
 While using `sslmode=no-verify` can be a quick fix, it bypasses SSL verification and might not meet security requirements for production environments. In such cases, ensure that a valid SSL certificate is properly configured.
 
 [Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/prisma-client/deployment/caveats-when-deploying-to-aws-platforms.mdx)
-
-

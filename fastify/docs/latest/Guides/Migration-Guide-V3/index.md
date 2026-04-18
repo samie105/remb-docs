@@ -163,5 +163,3 @@ fastify.setErrorHandler((error, request, reply) => {  // this IS called  reply.s
 *   Added [`keepAliveTimeout`](/docs/latest/Reference/Server/#factory-keep-alive-timeout) option ([#2086](https://github.com/fastify/fastify/pull/2086))
 *   Added async-await support for [plugins](/docs/latest/Reference/Plugins/#async-await) ([#2093](https://github.com/fastify/fastify/pull/2093))
 *   Added the feature to throw object as error ([#2134](https://github.com/fastify/fastify/pull/2134))
-
-

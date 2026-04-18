@@ -178,5 +178,3 @@ const result = await prisma.$queryRawUnsafe(`SELECT ${columns} FROM Users WHERE 
 In this example, the columns to be selected are defined dynamically and included in the SQL query. While this approach provides flexibility, it requires careful attention to security, particularly to [avoid SQL injection vulnerabilities](prisma/docs/orm/prisma-client/using-raw-sql/raw-queries/index.md#sql-injection-prevention). Additionally, using raw SQL queries means foregoing the type-safety and DX of TypedSQL.
 
 This feature was heavily inspired by [PgTyped](https://github.com/adelsz/pgtyped) and [SQLx](https://github.com/launchbadge/sqlx). Additionally, SQLite parsing is handled by SQLx.
-
-

@@ -663,5 +663,3 @@ Example:
 previous next
 
 [Runtime errors](/docs/svelte/runtime-errors) [Overview](/docs/svelte/legacy-overview)
-
-

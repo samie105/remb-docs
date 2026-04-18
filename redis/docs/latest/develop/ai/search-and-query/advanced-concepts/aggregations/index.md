@@ -742,5 +742,3 @@ Note that cursors are automatically deleted if all their results have been retur
 All idle cursors can be forcefully purged at the same time using `FT.CURSOR GC idx 0` command. By default, Redis uses a lazy throttled approach to garbage collection, which collects idle cursors every 500 operations, or every second, whichever is later.
 
 ## On this page
-
-

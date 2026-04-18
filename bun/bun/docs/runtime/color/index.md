@@ -317,5 +317,3 @@ This will output the following to `client-side.js`:
 // client-side.ts
 console.log("red");
 ```
-
-

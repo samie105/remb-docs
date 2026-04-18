@@ -73,5 +73,3 @@ COMMIT WORK;
 ## Compatibility
 
 There is no `MOVE` statement in the SQL standard.
-
-

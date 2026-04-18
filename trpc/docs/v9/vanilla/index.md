@@ -58,5 +58,3 @@ ts
 `const frodo = await client.mutation('createUser', { name: 'Frodo' });`
 
 `// => { id: 'id_frodo', name: 'Frodo' };`
-
-

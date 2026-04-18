@@ -109,5 +109,3 @@ Moo!
 * * *
 
 This is an introduction to using Mongoose with TypeScript and Bun. As you build your application, refer to the official [MongoDB](https://www.mongodb.com/docs) and [Mongoose](https://mongoosejs.com/docs/) sites for complete documentation.
-
-

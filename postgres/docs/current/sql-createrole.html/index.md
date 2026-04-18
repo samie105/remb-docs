@@ -187,5 +187,3 @@ USER _`role_name`_ \[, ...\]
 The `IN GROUP` clause has the same behavior as `IN ROLE` but has been deprecated:
 
 IN GROUP _`role_name`_ \[, ...\]
-
-

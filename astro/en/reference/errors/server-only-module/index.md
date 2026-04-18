@@ -24,5 +24,3 @@ nav_next: {"path": "astro/en/reference/errors/session-config-missing-error/index
 This module is only available server-side.
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

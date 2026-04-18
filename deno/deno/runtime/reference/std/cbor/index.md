@@ -56,5 +56,3 @@ deno add jsr:@std/cbor
 ```
 
 [See all symbols in @std/cbor on](https://jsr.io/@std/cbor/doc)
-
-

@@ -94,5 +94,3 @@ If you see any errors:
 To learn more about the various features Railway offers for your application, visit the [Railway documentation](https://docs.railway.app/?utm_medium=integration&utm_source=docs&utm_campaign=prisma).
 
 [Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/prisma-client/deployment/traditional/deploy-to-railway.mdx)
-
-

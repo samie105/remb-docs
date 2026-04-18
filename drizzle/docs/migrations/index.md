@@ -372,5 +372,3 @@ CREATE TABLE "users" (
 
 [✓] done!                                                 
 ```
-
-

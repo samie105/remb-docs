@@ -61,5 +61,3 @@ The `node:string_decoder` module provides an API for decoding `Buffer` objects i
 
 *   [end](.././string_decoder/~/StringDecoder#method_end_0)
 *   [write](.././string_decoder/~/StringDecoder#method_write_0)
-
-

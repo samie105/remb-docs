@@ -84,5 +84,3 @@ nav_next: {"path": "postgres/docs/current/locking-indexes.html/index.md", "title
 *   Add column [`pg_backend_memory_contexts`](https://www.postgresql.org/docs/current/view-pg-backend-memory-contexts.html "53.5. pg_backend_memory_contexts").`type` to report the type of memory context (David Rowley) [§](https://postgr.es/c/12227a1d5)
     
 *   Add column `pg_backend_memory_contexts`.`path` to show memory context parents (Melih Mutlu) [§](https://postgr.es/c/32d3ed816)
-
-

@@ -182,5 +182,3 @@ Every node of a Redis cluster generates events about its own subset of the keysp
 *   `>= 7.0`: Event type `new` added
 
 ## On this page
-
-

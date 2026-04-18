@@ -69,5 +69,3 @@ Build a simple WebSocket server
 Next
 
 ](/docs/guides/websocket/simple)
-
-

@@ -46,5 +46,3 @@ This is the General Availability (GA) release of RedisInsight 2.24.
 *   [#1999](https://github.com/RedisInsight/RedisInsight/pull/1999) Keep the previously set database index when a database connection is edited.
 
 ## On this page
-
-

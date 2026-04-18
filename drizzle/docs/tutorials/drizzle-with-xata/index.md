@@ -420,5 +420,3 @@ Now that you have successfully set up Drizzle ORM with Xata, you can explore mor
 *   Learn about [Drizzle relations](drizzle/docs/rqb/index.md) for complex queries
 *   Explore [Xata’s documentation](https://xata.io/documentation/)
 *   Implement [database migrations](drizzle/docs/migrations/index.md) for production deployments
-
-

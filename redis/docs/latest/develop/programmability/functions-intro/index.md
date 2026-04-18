@@ -404,5 +404,3 @@ redis> FCALL_RO my_hlastmodified 1 myhash
 For the complete documentation flags, please refer to [Script flags](/docs/latest/develop/programmability/lua-api/#script_flags).
 
 ## On this page
-
-

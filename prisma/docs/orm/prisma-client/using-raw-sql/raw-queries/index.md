@@ -836,5 +836,3 @@ const result = await prisma.user.aggregateRaw({
   ],
 });
 ```
-
-

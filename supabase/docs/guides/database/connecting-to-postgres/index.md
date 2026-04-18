@@ -276,5 +276,3 @@ You can follow the decision flow in the connection method diagram to quickly cho
 ![Decision tree diagram showing when to connect directly to Postgres or use a connection pooler.](/docs/img/guides/database/connecting-to-postgres/connection-decision-tree-light.svg)
 
 Choosing between direct Postgres connections and connection pooling
-
-

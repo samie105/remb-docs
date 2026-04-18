@@ -84,5 +84,3 @@ You can view the inserted items in the [Table Editor](/dashboard/project/_/edito
 
 *   Visit the LlamaIndex + `SupabaseVectorStore` [docs](https://developers.llamaindex.ai/python/examples/vector_stores/supabasevectorindexdemo/)
 *   Visit the official LlamaIndex [repo](https://github.com/jerryjliu/llama_index/)
-
-

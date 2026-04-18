@@ -202,5 +202,3 @@ Parses a string of text, extracts a potential type name from it, and translates 
 `to_regtypemod` can be combined with [to\_regtype](postgres/docs/current/functions-info.html/index.md#TO-REGTYPE) to produce appropriate inputs for [format\_type](postgres/docs/current/functions-info.html/index.md#FORMAT-TYPE), allowing a string representing a type name to be canonicalized.
 
 `format_type(to_regtype('varchar(32)'), to_regtypemod('varchar(32)'))` → `character varying(32)`
-
-

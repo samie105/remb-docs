@@ -275,5 +275,3 @@ Now you can [trigger the build & deploy pipeline using the Zerops CLI](#trigger-
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

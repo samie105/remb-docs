@@ -166,5 +166,3 @@ Realtime updates the access policy cache for a client based on your RLS policies
 If a new JWT is never received on the Channel, the client will be disconnected when the JWT expires.
 
 Make sure to keep the JWT expiration window short.
-
-

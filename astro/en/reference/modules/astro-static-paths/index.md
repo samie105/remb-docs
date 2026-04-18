@@ -61,5 +61,3 @@ export function createHandler(app) {  return async (request) => {    const { pat
 ```
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

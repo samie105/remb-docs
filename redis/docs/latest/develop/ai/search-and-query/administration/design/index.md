@@ -146,5 +146,3 @@ To support unicode fuzzy matching, 16-bit runes are used inside the trie and not
 4.  The output of searches is converted back to UTF-8.
 
 ## On this page
-
-

@@ -561,5 +561,3 @@ If you absolutely have to update `$state` within an effect and run into an infin
 previous next
 
 [$derived](/docs/svelte/$derived) [$props](/docs/svelte/$props)
-
-

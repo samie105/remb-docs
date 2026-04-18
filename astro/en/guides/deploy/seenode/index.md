@@ -219,5 +219,3 @@ You can deploy to Seenode through the web interface by connecting your Git repos
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

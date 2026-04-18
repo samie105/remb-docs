@@ -76,5 +76,3 @@ Reads up to "n" Messages from the specified Queue with an optional "sleep\_secon
 *   `queue_name` (`text`): Queue name
 *   `sleep_seconds` (`integer`): Visibility timeout in seconds
 *   `n` (`integer`): Maximum number of Messages to read
-
-

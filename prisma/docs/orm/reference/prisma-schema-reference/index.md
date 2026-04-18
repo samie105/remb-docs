@@ -3776,5 +3776,3 @@ type Photo {
   url    String
 }
 ```
-
-

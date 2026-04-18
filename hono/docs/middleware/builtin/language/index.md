@@ -379,5 +379,3 @@ languageDetector({
   convertDetectedLanguage: (lang) => lang.replace('_', '-'), // Normalize
 })
 ```
-
-

@@ -31,5 +31,3 @@ For JSX / TSX files, [@astrojs/react](/en/guides/integrations-guide/react/), [@a
 *   [UI Frameworks](/en/guides/integrations/#official-integrations)
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

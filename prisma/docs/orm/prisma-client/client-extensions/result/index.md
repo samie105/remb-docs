@@ -212,5 +212,3 @@ const prisma = new PrismaClient().$extends({
   },
 });
 ```
-
-

@@ -299,5 +299,3 @@ app.get(
 ## Next step [​](#next-step)
 
 Most code will work on any platform, but there are guides for each. For instance, how to set up projects or how to deploy. Please see the page for the exact platform you want to use to create your application!
-
-

@@ -41,5 +41,3 @@ Hono uses only Web Standards, which means that Hono can run on any runtime that 
 It also works on Netlify and other platforms. The same code runs on all platforms.
 
 Cloudflare Workers, Deno, Shopify, and others launched [WinterCG](https://wintercg.org/) to discuss the possibility of using the Web Standards to enable "web-interoperability". Hono will follow their steps and go for **the Standard of the Web Standards**.
-
-

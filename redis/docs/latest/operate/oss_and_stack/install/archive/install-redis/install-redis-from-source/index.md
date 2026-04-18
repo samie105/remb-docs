@@ -73,5 +73,3 @@ To stop Redis, enter `Ctrl-C`.
 For a more complete installation, continue with [these instructions](/docs/latest/operate/oss_and_stack/install/archive/install-redis/#install-redis-properly).
 
 ## On this page
-
-

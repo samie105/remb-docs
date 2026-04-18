@@ -256,5 +256,3 @@ Retrieves the Sharp service used to process Astro’s image assets. This takes a
 See [`validateConfig()` in the Programmatic API reference](/en/reference/programmatic-reference/#validateconfig).
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

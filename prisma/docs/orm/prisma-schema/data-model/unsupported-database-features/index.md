@@ -89,5 +89,3 @@ The `prisma migrate dev` and `prisma db push` command will both create a `positi
 Some features, like SQL views, cannot be represented in the Prisma schema. If your project uses [Prisma Migrate](prisma/docs/orm/prisma-migrate/index.md), you must [include unsupported features as part of a migration](prisma/docs/orm/prisma-migrate/workflows/unsupported-database-features/index.md) .
 
 [Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/prisma-schema/data-model/unsupported-database-features.mdx)
-
-

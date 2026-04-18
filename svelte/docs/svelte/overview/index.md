@@ -61,5 +61,3 @@ You can also try Svelte online in the [playground](/playground) or, if you need 
 previous next
 
 [Getting started](/docs/svelte/getting-started)
-
-

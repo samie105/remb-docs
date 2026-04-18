@@ -40,5 +40,3 @@ The cache status of a particular request is sent in the `cf-cache-status` header
 Objects in public buckets do not require any authorization to access objects. This leads to a better cache hit rate compared to private buckets.
 
 For private buckets, permissions for accessing each object is checked on a per user level. For example, if two different users access the same object in a private bucket from the same region, it results in a cache miss for both the users since they might have different security policies attached to them. On the other hand, if two different users access the same object in a public bucket from the same region, it results in a cache hit for the second user.
-
-

@@ -101,5 +101,3 @@ Write a file incrementally
 Next
 
 ](/docs/guides/write-file/filesink)
-
-

@@ -77,5 +77,3 @@ This is powered by [plpgsql\_check](https://github.com/okbob/plpgsql_check), whi
 *   checks `EXECUTE` statements against SQL injection vulnerability
 
 Check the Reference Docs for [more information](/docs/reference/cli/supabase-db-lint).
-
-

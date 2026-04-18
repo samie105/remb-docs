@@ -196,5 +196,3 @@ SELECT alias, description, token FROM ts\_debug('http://example.com/stuff/index.
  url      | URL           | example.com/stuff/index.html
  host     | Host          | example.com
  url\_path | URL path      | /stuff/index.html
-
-

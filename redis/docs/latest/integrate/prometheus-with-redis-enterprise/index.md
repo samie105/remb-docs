@@ -200,5 +200,3 @@ Use the following dashboards when connecting to the v2 metrics endpoint (`https:
 *   The [OPS dashboards](https://github.com/redis-field-engineering/redis-enterprise-observability/tree/main/grafana_v2/dashboards/grafana_v9-11/software/ops) are advanced operational dashboards for on-premises deployments.
 
 ## On this page
-
-

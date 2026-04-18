@@ -101,5 +101,3 @@ You can review the Redis Insight log files (files with a `.log` extension) to ge
     
 
 ## On this page
-
-

@@ -80,5 +80,3 @@ T
 [ResizeQuality](./././~/ResizeQuality "ResizeQuality")
 
 Specifies the algorithm to be used for resizing the input to match the output dimensions. One of `pixelated`, `low` (default), `medium`, or `high`.
-
-

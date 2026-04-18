@@ -3923,5 +3923,3 @@ public class HomeJsonExample {
 See the [Redis Search](/docs/latest/develop/ai/search-and-query/) docs for a full description of all query features with examples.
 
 ## On this page
-
-

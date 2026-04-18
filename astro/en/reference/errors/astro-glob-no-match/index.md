@@ -24,5 +24,3 @@ nav_next: {"path": "astro/en/reference/errors/astro-glob-used-outside/index.md",
 `Astro.glob()` did not return any matching files. There might be a typo in the glob pattern.
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

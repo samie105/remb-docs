@@ -64,5 +64,3 @@ Get the absolute path of the current file
 Next
 
 ](/docs/guides/util/import-meta-path)
-
-

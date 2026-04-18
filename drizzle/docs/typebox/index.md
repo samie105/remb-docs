@@ -55,5 +55,3 @@ const isUserValid: boolean = Value.Check(insertUserSchema, {
 	role: 'admin',
 });
 ```
-
-

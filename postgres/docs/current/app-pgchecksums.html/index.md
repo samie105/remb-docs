@@ -104,5 +104,3 @@ Enabling checksums in a large cluster can potentially take a long time. During t
 When using a replication setup with tools which perform direct copies of relation file blocks (for example [pg\_rewind](https://www.postgresql.org/docs/current/app-pgrewind.html "pg_rewind")), enabling or disabling checksums can lead to page corruptions in the shape of incorrect checksums if the operation is not done consistently across all nodes. When enabling or disabling checksums in a replication setup, it is thus recommended to stop all the clusters before switching them all consistently. Destroying all standbys, performing the operation on the primary and finally recreating the standbys from scratch is also safe.
 
 If pg\_checksums is aborted or killed while enabling or disabling checksums, the cluster's data checksum configuration remains unchanged, and pg\_checksums can be re-run to perform the same operation.
-
-

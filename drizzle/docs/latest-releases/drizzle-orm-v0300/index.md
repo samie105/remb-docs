@@ -61,5 +61,3 @@ Check docs for getting started with `postgres.js` driver and Drizzle [here](driz
 *   Postgres insert into timestamp with time zone removes milliseconds ([#1061](https://github.com/drizzle-team/drizzle-orm/issues/1061))
 *   update timestamp field (using AWS Data API) ([#1164](https://github.com/drizzle-team/drizzle-orm/issues/1164))
 *   Invalid date from relational queries ([#895](https://github.com/drizzle-team/drizzle-orm/issues/895))
-
-

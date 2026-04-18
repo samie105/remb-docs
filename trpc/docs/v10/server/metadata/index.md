@@ -152,5 +152,3 @@ tsx
   `});`
 
 `// ^ Meta: { authRequired: true, role: 'admin' }`
-
-

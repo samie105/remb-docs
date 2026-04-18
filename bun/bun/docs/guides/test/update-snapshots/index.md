@@ -102,5 +102,3 @@ Generate code coverage reports with the Bun test runner
 Next
 
 ](/docs/guides/test/coverage)
-
-

@@ -138,5 +138,3 @@ When your user signs out, call [signOut()](/docs/reference/javascript/auth-signo
 *   [Supabase JS Client](https://github.com/supabase/supabase-js)
 *   [Twitch Account](https://twitch.tv)
 *   [Twitch Developer Console](https://dev.twitch.tv/console)
-
-

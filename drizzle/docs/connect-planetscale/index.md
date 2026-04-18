@@ -79,5 +79,3 @@ const db = drizzle({ client });
 Make sure to checkout the PlanetScale official **[MySQL courses](https://planetscale.com/courses/mysql-for-developers)**, we think they’re outstanding 🙌
 
 #### What’s next?[](#whats-next)
-
-

@@ -43,5 +43,3 @@ deno add jsr:@std/math
 ```
 
 [See all symbols in @std/math on](https://jsr.io/@std/math/doc)
-
-

@@ -60,5 +60,3 @@ An identity column is automatically marked as `NOT NULL`. An identity column, ho
 In table inheritance hierarchies, identity columns and their properties in a child table are independent of those in its parent tables. A child table does not inherit identity columns or their properties automatically from the parent. During `INSERT` or `UPDATE`, a column is treated as an identity column if that column is an identity column in the table named in the statement, and the corresponding identity properties are applied.
 
 Partitions inherit identity columns from the partitioned table. They cannot have their own identity columns. The properties of a given identity column are consistent across all the partitions in the partition hierarchy.
-
-

@@ -63,5 +63,3 @@ nav_next: {"path": "astro/en/guides/backend/firebase/index.md", "title": "Fireba
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

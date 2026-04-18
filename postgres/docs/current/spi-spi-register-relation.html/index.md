@@ -66,5 +66,3 @@ if the name specified in the `name` field of _`enr`_ is already registered for t
 ## Submit correction
 
 If you see anything in the documentation that is not correct, does not match your experience with the particular feature or requires further clarification, please use [this form](/account/comments/new/18/spi-spi-register-relation.html/) to report a documentation issue.
-
-

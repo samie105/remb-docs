@@ -540,5 +540,3 @@ Length of the column value.
 Byte_`n`_
 
 The value of the column, either in binary or in text format. (As specified in the preceding format byte). _`n`_ is the above length.
-
-

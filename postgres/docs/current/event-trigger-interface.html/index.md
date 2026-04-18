@@ -56,5 +56,3 @@ A pointer to the parse tree of the command. Check the PostgreSQL source code for
 The command tag associated with the event for which the event trigger is run, for example `"CREATE FUNCTION"`.
 
 An event trigger function must return a `NULL` pointer (_not_ an SQL null value, that is, do not set _`isNull`_ true).
-
-

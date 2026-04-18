@@ -172,5 +172,3 @@ Hyperlinks should have a clear title of what they reference. Here is how your hy
 ```
 
 Include in your documentation as many essential references as possible, but avoid having numerous links when writing for beginners to avoid distractions.
-
-

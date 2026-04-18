@@ -1077,5 +1077,3 @@ model Post {
   @@fulltext([title(sort: Desc), content])
 }
 ```
-
-

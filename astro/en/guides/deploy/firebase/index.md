@@ -224,5 +224,3 @@ To enable SSR in your Astro project and deploy on Firebase add the [Node.js adap
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

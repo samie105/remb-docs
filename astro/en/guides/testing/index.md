@@ -307,5 +307,3 @@ More information about NightwatchJS can be found in the links below:
 *   [Testing with Nightwatch](https://nightwatchjs.org/guide/writing-tests/introduction.html)
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

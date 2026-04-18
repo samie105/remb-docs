@@ -63,5 +63,3 @@ Convert a Blob to a ReadableStream
 Next
 
 ](/docs/guides/binary/blob-to-stream)
-
-

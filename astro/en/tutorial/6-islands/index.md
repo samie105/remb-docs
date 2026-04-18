@@ -36,5 +36,3 @@ You will:
  *    I am ready to add some interactivity to my site, and start living that island life!
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

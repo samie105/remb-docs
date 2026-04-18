@@ -180,5 +180,3 @@ At this point, your function has been downloaded to your local environment. Make
 ```
 1# Run a function locally2supabase functions serve hello-world34# Redeploy when you're ready with your changes5supabase functions deploy hello-world
 ```
-
-

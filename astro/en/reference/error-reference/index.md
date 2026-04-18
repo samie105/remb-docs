@@ -310,5 +310,3 @@ The following reference is a complete list of the errors you may encounter while
     Conflicting cache query configuration.
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

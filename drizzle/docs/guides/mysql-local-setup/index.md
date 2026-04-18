@@ -14,5 +14,3 @@ nav_next: {"path": "drizzle/docs/guides/point-datatype-psql/index.md", "title": 
 ---
 
 Drizzle ORM - How to setup MySQL locally
-
-

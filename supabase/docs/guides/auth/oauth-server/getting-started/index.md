@@ -242,5 +242,3 @@ Now that you've registered your first OAuth client, you're ready to:
 *   [Understand OAuth flows](/docs/guides/auth/oauth-server/oauth-flows) - Learn how the authorization code and refresh token flows work
 *   [Implement MCP authentication](/docs/guides/auth/oauth-server/mcp-authentication) - Enable AI agent authentication
 *   [Secure with RLS](/docs/guides/auth/oauth-server/token-security) - Control data access for OAuth clients
-
-

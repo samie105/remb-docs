@@ -93,5 +93,3 @@ void PQsetTraceFlags(PGconn \*conn, int flags);
 Disables tracing started by [`PQtrace`](postgres/docs/current/libpq-control.html/index.md#LIBPQ-PQTRACE).
 
 void PQuntrace(PGconn \*conn);
-
-

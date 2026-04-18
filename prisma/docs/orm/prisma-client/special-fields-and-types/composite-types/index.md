@@ -743,5 +743,3 @@ await prisma.MailBox.create({
 ```
 
 If you run the above code, MongoDB enforces the unique constraint. It does not allow your application to add two addresses with the name `alice@prisma.io`.
-
-

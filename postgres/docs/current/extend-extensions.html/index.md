@@ -28,5 +28,3 @@ include $(PGXS)
 This makefile relies on PGXS, which is described in [Section 36.18](https://www.postgresql.org/docs/current/extend-pgxs.html "36.18. Extension Building Infrastructure"). The command `make install` will install the control and script files into the correct directory as reported by pg\_config.
 
 Once the files are installed, use the `CREATE EXTENSION` command to load the objects into any particular database.
-
-

@@ -26,5 +26,3 @@ Astro encountered an unknown error while parsing your CSS. Oftentimes, this is c
 *   [Styles and CSS](/en/guides/styling/)
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

@@ -334,5 +334,3 @@ Yes, we are biased, but this is also what we have heard from our users and custo
 Both Drizzle ORM and Prisma ORM are tools for data access and migrations. Drizzle is focused on being a thin wrapper around a SQL-like syntax while Prisma is focused on a convenient and expressive API. Other important differences include Prisma ORM's support of MSSQL and MongoDB, support for additional features via [Prisma Client extensions](prisma/docs/orm/prisma-client/client-extensions/index.md), additional cloud-ready products, and a robust ecosystem.
 
 On the other hand, for teams that are a mix of developers (front-end, back-end, and full-stack) that have varying levels of experience with databases, Prisma ORM offers a comprehensive and easy-to-learn approach for data access and managing database schemas.
-
-

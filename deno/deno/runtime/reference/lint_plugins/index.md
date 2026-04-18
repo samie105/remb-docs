@@ -346,5 +346,3 @@ The [`Deno.lint.runPlugin`](/api/deno/~/Deno.lint.runPlugin) API is only availab
 Trying to use it with any other subcommand will throw an error.
 
 Consult [the API reference](/api/deno/) for more information on [`Deno.lint.runPlugin`](/api/deno/~/Deno.lint.runPlugin) and [`Deno.lint.Diagnostic`](/api/deno/~/Deno.lint.Diagnostic).
-
-

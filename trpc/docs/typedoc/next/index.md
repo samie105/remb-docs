@@ -13,5 +13,3 @@ nav_prev: {"path": "trpc/docs/typedoc/next/functions/createTRPCNext/index.md", "
 ---
 
 @trpc/next | tRPC
-
-

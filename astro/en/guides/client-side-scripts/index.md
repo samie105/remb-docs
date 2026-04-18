@@ -173,5 +173,3 @@ Now we can use our component multiple times and be greeted by a different messag
 Elements rendered by a UI framework may not be available yet when a `<script>` tag executes. If your script also needs to handle [UI framework components](/en/guides/framework-components/), using a custom element is recommended.
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

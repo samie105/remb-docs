@@ -351,5 +351,3 @@ const db = drizzle(...)
 // ---> Will be triggered by ESLint Rule
 db.update()
 ```
-
-

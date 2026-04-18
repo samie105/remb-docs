@@ -118,5 +118,3 @@ Use Prisma with Bun
 Next
 
 ](/docs/guides/ecosystem/prisma)
-
-

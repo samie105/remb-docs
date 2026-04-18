@@ -91,5 +91,3 @@ The important bits here are:
 *   The `distinct` keyword that tells Postgres to only return a single row per team.
 
 This query can also be executed via `psql` or any other query editor if you prefer to [connect directly to the database](/docs/guides/database/connecting-to-postgres#direct-connections).
-
-

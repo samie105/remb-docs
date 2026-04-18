@@ -40,5 +40,3 @@ Name of an option
 `option_value` `character_data`
 
 Value of the option
-
-

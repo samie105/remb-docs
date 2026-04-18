@@ -90,5 +90,3 @@ You are trying to access the deprecated router options on top option properties.
 Use `options.routerOptions`.
 
 [#5985](https://github.com/fastify/fastify/pull/5985)
-
-

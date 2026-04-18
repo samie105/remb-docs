@@ -71,5 +71,3 @@ A clear [Long Term Support strategy is provided](/docs/latest/Reference/LTS/) to
 ## Specification adherence[​](#specification-adherence "Direct link to Specification adherence")
 
 In doubt, we chose the strict behavior as defined by the relevant Specifications.
-
-

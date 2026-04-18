@@ -306,5 +306,3 @@ const table = sqliteTable('table', {
     alwaysNull: text().$type<string | null>().$onUpdate(() => null),
 });
 ```
-
-

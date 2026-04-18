@@ -132,5 +132,3 @@ v
 [console](.././console/~/console "console")
 
 The `console` module provides a simple debugging console that is similar to the JavaScript console mechanism provided by web browsers.
-
-

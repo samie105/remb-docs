@@ -174,5 +174,3 @@ Now the `drop-shadow-regal-blue` utility can be used in your markup:
 ```
 
 Learn more about customizing your theme in the [theme documentation](tailwind/docs/theme/index.md#customizing-your-theme).
-
-

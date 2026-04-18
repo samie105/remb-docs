@@ -24,5 +24,3 @@ nav_next: {"path": "astro/en/reference/errors/env-invalid-variables/index.md", "
 An environment variable does not match the data type and/or properties defined in `experimental.env.schema`.
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

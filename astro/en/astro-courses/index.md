@@ -40,5 +40,3 @@ Learn from your fellow astronauts with curated collections of guides, articles, 
 [Astro Support Squid](https://supportsquid.ink/) An open, public Astro support forum and knowledge base outside of the Astro Discord.
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

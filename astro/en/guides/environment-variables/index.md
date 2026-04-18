@@ -266,5 +266,3 @@ You cannot use it in the following and will have to resort to `process.env`:
 *   Scripts
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

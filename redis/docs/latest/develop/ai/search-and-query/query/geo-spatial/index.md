@@ -2136,5 +2136,3 @@ func ExampleClient_query_geo() {
 ```
 
 ## On this page
-
-

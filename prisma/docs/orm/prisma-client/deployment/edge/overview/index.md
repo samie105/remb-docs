@@ -105,5 +105,3 @@ Depending on which deployment provider and database/driver you use, there may be
 If you want to deploy an app using Turso, you can follow the instructions [here](prisma/docs/orm/core-concepts/supported-databases/sqlite/index.md#using-driver-adapters).
 
 [Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/prisma-client/deployment/edge/overview.mdx)
-
-

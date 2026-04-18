@@ -169,5 +169,3 @@ Once you have followed the steps above, your MongoDB database is ready for Debez
 *   [MongoDB Atlas SSL Setup](https://debezium.io/documentation/reference/stable/connectors/mongodb.html#mongodb-in-the-cloud)
 
 ## On this page
-
-

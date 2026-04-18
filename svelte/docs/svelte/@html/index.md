@@ -64,5 +64,3 @@ Instead, use the `:global` modifier to target everything inside the `<article>`:
 previous next
 
 [{@render ...}](/docs/svelte/@render) [{@attach ...}](/docs/svelte/@attach)
-
-

@@ -508,5 +508,3 @@ ACL setuser replica-user on >somepassword +psync +replconf +ping
 Note that you don't need to configure the replicas to allow the master to be able to execute any set of commands. The master is always authenticated as the root user from the point of view of replicas.
 
 ## On this page
-
-

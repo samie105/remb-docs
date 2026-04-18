@@ -404,5 +404,3 @@ tsx
 ### Migrate custom error formatters[​](#migrate-custom-error-formatters "Direct link to Migrate custom error formatters")
 
 You will need to move the contents of your `formatError()` into your root `t` router. See the [Error Formatting docs](trpc/docs/server/error-formatting/index.md) for more.
-
-

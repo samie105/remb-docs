@@ -703,5 +703,3 @@ Specifies the [configured root directory](/en/reference/configuration-reference/
 Once you [publish your adapter to npm](https://docs.npmjs.com/cli/v8/commands/npm-publish), running `astro add example` will install your package with any peer dependencies specified in your `package.json` and instruct users to update their project config manually.
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

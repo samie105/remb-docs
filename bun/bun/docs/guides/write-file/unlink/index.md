@@ -65,5 +65,3 @@ Delete files
 Next
 
 ](/docs/guides/runtime/delete-file)
-
-

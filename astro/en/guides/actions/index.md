@@ -466,5 +466,3 @@ const searchQuery = Astro.url.searchParams.get('search');if (searchQuery) {  con
 ```
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

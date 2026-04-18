@@ -40,5 +40,3 @@ This is the General Availability (GA) release of RedisInsight 2.46.
 *   [#3174](https://github.com/RedisInsight/RedisInsight/pull/3174) Display invalid JSONs as unformatted values when a JSON view is set in Workbench results.
 
 ## On this page
-
-

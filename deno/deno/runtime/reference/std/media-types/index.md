@@ -46,5 +46,3 @@ deno add jsr:@std/media-types
 ```
 
 [See all symbols in @std/media-types on](https://jsr.io/@std/media-types/doc)
-
-

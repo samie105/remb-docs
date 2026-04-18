@@ -159,5 +159,3 @@ The [Predis wiki on Github](https://github.com/predis/predis/wiki) has informati
 See also the pages in this section for more information and examples:
 
 ## On this page
-
-

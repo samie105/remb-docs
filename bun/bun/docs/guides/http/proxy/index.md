@@ -113,5 +113,3 @@ Stream a file as an HTTP Response
 Next
 
 ](/docs/guides/http/stream-file)
-
-

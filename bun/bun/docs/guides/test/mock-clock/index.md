@@ -57,5 +57,3 @@ setSystemTime(); // reset to actual time
 * * *
 
 See [Docs > Test Runner > Date and time](bun/bun/docs/test/dates-times/index.md) for complete documentation on mocking with the Bun test runner.
-
-

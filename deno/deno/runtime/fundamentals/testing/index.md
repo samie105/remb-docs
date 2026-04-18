@@ -630,5 +630,3 @@ Deno.test({
 ```
 
 Remember that any permission not explicitly granted at the command line will be denied, regardless of what's specified in the test configuration.
-
-

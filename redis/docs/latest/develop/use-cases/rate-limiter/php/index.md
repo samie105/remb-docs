@@ -328,5 +328,3 @@ try {
 *   [PHP client](/docs/latest/develop/clients/php/) - Redis PHP client documentation
 
 ## On this page
-
-

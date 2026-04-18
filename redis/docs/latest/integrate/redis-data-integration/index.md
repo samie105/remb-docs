@@ -161,5 +161,3 @@ Neon
 Learn more about RDI from the other pages in this section:
 
 ## On this page
-
-

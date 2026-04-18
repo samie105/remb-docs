@@ -183,5 +183,3 @@ Generate source map. Accepted values are 'linked', 'inline', or 'external'.
 `--watch`
 
 Watch and rebuild on changes.
-
-

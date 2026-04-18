@@ -74,5 +74,3 @@ Convert a Buffer to an ArrayBuffer
 Next
 
 ](/docs/guides/binary/buffer-to-arraybuffer)
-
-

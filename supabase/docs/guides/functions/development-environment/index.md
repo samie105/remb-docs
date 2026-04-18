@@ -119,5 +119,3 @@ Be careful when disabling JWT verification, as it allows anyone to call your fun
 ### `supabase functions deploy hello-world`[#](#supabase-functions-deploy-hello-world)
 
 Deploy the function when you’re ready
-
-

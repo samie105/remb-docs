@@ -200,5 +200,3 @@ nav_next: {"path": "astro/en/guides/cms/kontent-ai/index.md", "title": "Kontent.
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

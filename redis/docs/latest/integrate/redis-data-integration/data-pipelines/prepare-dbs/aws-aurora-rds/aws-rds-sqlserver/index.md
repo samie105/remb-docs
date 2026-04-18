@@ -103,5 +103,3 @@ Change Data Capture (CDC) must be enabled for the database and for each table yo
     
 
 ## On this page
-
-

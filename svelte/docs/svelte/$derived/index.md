@@ -234,5 +234,3 @@ If the new value of a derived is referentially identical to its previous value, 
 previous next
 
 [$state](/docs/svelte/$state) [$effect](/docs/svelte/$effect)
-
-

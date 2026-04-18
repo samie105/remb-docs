@@ -139,5 +139,3 @@ test("Welcome to New York!", () => {
   expect(new Intl.DateTimeFormat().resolvedOptions().timeZone).toBe("America/New_York");
 });
 ```
-
-

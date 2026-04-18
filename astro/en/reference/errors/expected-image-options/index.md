@@ -35,5 +35,3 @@ In most cases, this error happens because parameters were passed directly instea
 *   [Images](/en/guides/images/)
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

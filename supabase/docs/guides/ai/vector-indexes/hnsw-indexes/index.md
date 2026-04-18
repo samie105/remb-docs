@@ -127,5 +127,3 @@ Unlike IVFFlat indexes, you are safe to build an HNSW index immediately after th
 ## Resources[#](#resources)
 
 Read more about indexing on `pgvector`'s [GitHub page](https://github.com/pgvector/pgvector#indexing).
-
-

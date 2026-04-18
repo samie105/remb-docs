@@ -117,5 +117,3 @@ T
 [EndingType](./././~/EndingType "EndingType")
 
 No documentation available
-
-

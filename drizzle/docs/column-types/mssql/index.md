@@ -789,5 +789,3 @@ CREATE TABLE [table] (
 	[id] int PRIMARY KEY
 );
 ```
-
-

@@ -218,5 +218,3 @@ The directory `src/test/locale` in the source distribution contains a test suite
 Client applications that handle server-side errors by parsing the text of the error message will obviously have problems when the server's messages are in a different language. Authors of such applications are advised to make use of the error code scheme instead.
 
 Maintaining catalogs of message translations requires the on-going efforts of many volunteers that want to see PostgreSQL speak their preferred language well. If messages in your language are currently not available or not fully translated, your assistance would be appreciated. If you want to help, refer to [Chapter 56](https://www.postgresql.org/docs/current/nls.html "Chapter 56. Native Language Support") or write to the developers' mailing list.
-
-

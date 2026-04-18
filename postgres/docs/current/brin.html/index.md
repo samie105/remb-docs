@@ -1146,5 +1146,3 @@ Operator Strategy 5
 operator greater-than
 
 Both minmax and inclusion operator classes support cross-data-type operators, though with these the dependencies become more complicated. The minmax operator class requires a full set of operators to be defined with both arguments having the same data type. It allows additional data types to be supported by defining extra sets of operators. Inclusion operator class operator strategies are dependent on another operator strategy as shown in [Table 65.6](https://www.postgresql.org/docs/current/brin.html#BRIN-EXTENSIBILITY-INCLUSION-TABLE "Table 65.6. Function and Support Numbers for Inclusion Operator Classes"), or the same operator strategy as themselves. They require the dependency operator to be defined with the `STORAGE` data type as the left-hand-side argument and the other supported data type to be the right-hand-side argument of the supported operator. See `float4_minmax_ops` as an example of minmax, and `box_inclusion_ops` as an example of inclusion.
-
-

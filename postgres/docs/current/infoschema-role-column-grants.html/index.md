@@ -52,5 +52,3 @@ Type of the privilege: `SELECT`, `INSERT`, `UPDATE`, or `REFERENCES`
 `is_grantable` `yes_or_no`
 
 `YES` if the privilege is grantable, `NO` if not
-
-

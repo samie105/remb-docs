@@ -167,5 +167,3 @@ Redis uses a global string reuse mechanism to reduce memory usage. When a string
 However, the `JSON.DEBUG MEMORY` command reports memory usage as if each string instance is stored independently, even when it's actually reused. For example, the document `{"foo": ["foo", "foo"]}` reuses the string `"foo"` internally, but the reported memory usage counts the string three times: once for the key and once for each array element.
 
 ## On this page
-
-

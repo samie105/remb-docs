@@ -46,5 +46,3 @@ Before you install Redis Software:
     
 
 ## On this page
-
-

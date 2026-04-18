@@ -238,5 +238,3 @@ Compute Credits
 ### Do Compute Credits apply to Read Replica Compute?[#](#do-compute-credits-apply-to-read-replica-compute)
 
 No, Compute Credits do not apply to Read Replica Compute.
-
-

@@ -195,5 +195,3 @@ of
 Fix a component that’s not updating[](#fix-a-component-thats-not-updating "Link for this heading")
 
 This `Clock` component receives two props: `color` and `time`. When you select a different color in the select box, the `Clock` component receives a different `color` prop from its parent component. However, for some reason, the displayed color doesn’t update. Why? Fix the problem.
-
-

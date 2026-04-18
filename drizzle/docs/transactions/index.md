@@ -221,5 +221,3 @@ interface CockroachTransactionConfig {
   deferrable?: boolean;
 }
 ```
-
-

@@ -422,5 +422,3 @@ Activate inspector on host:port, wait for debugger to connect and break at the s
 `--inspect-wait`<HOST\_PORT>optional
 
 Activate inspector on host:port and wait for debugger to connect before running user code.
-
-

@@ -488,5 +488,3 @@ Then you can go ahead then deploy the Worker:
 The command will output the URL where you can access the deployed Worker.
 
 ### [Cloudflare D1](#cloudflare-d1)
-
-

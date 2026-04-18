@@ -71,5 +71,3 @@ Reference documentation for the RedisVL API.
     *   [Route](router/#route)
     *   [Route Match](router/#route-match)
     *   [Distance Aggregation Method](router/#distance-aggregation-method)
-
-

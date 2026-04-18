@@ -14,5 +14,3 @@ nav_next: {"path": "drizzle/docs/guides/empty-array-default-value/index.md", "ti
 ---
 
 Drizzle ORM - SQL Decrement value
-
-

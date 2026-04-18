@@ -575,5 +575,3 @@ Without `select` and `distinct`, the query would return:
   }
 ]
 ```
-
-

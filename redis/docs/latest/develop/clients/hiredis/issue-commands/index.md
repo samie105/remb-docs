@@ -161,5 +161,3 @@ Note that you should normally disconnect asynchronously from a callback when you
 The information in the `redisReply` object has several formats, and the format for a particular reply depends on the command that generated it. See [Handle replies](/docs/latest/develop/clients/hiredis/handle-replies/) to learn about the different reply formats and how to use them.
 
 ## On this page
-
-

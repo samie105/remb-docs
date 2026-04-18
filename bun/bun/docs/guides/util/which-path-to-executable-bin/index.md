@@ -66,5 +66,3 @@ Get the directory of the current file
 Next
 
 ](/docs/guides/util/import-meta-dir)
-
-

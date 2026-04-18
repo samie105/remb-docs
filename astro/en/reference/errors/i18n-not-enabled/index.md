@@ -35,5 +35,3 @@ For more information on internationalization support in Astro, see our [Internat
 *   [`i18n` Configuration Reference](/en/reference/configuration-reference/#i18n)
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

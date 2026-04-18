@@ -41,5 +41,3 @@ Workspaces have a couple major benefits.
 *   **Run scripts in multiple packages.** You can use the [`--filter` flag](bun/bun/docs/pm/filter/index.md) to run `package.json` scripts in multiple packages in your workspace, or `--workspaces` to run scripts across all workspaces.
 
 When many packages need the same dependency versions, catalogs let you define those versions once in the root `package.json` and reference them from your workspaces using the `catalog:` protocol. Updating the catalog automatically updates every package that references it. See [Catalogs](bun/bun/docs/pm/catalogs/index.md) for details.
-
-

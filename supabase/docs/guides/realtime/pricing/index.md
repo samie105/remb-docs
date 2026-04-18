@@ -92,5 +92,3 @@ Custom
 Custom
 
 For a detailed explanation of how charges are calculated, refer to [Manage Realtime Peak Connections usage](/docs/guides/platform/manage-your-usage/realtime-peak-connections).
-
-

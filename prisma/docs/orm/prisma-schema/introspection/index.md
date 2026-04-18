@@ -359,5 +359,3 @@ If you are using a relational database and either one of the above features list
 1.  Create a draft migration:
 2.  Add the SQL that adds the feature surfaced in the warnings.
 3.  Apply the draft migration to your database:
-
-

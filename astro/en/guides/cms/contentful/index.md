@@ -535,5 +535,3 @@ Now, whenever you publish a new blog post in Contentful, a new build will be tri
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

@@ -120,5 +120,3 @@ Your project files contain all the code necessary to display an Astro website, b
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

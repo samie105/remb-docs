@@ -39,5 +39,3 @@ deno add jsr:@std/html
 ```
 
 [See all symbols in @std/html on](https://jsr.io/@std/html/doc)
-
-

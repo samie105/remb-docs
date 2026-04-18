@@ -58,5 +58,3 @@ redis-stack-server
 ```
 
 ## On this page
-
-

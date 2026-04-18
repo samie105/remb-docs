@@ -66,5 +66,3 @@ Connecting your Postgres instance to `pgAdmin` gives you a free, cross-platform 
 It acts as a single control panel where you can manage multiple servers, inspect locks and slow queries in real time, and perform maintenance operations with a click.
 
 For scripted migrations or ultra-light remote work you’ll still lean on plain SQL or CLI tools, but most teams find `pgAdmin` invaluable for exploration and routine administration.
-
-

@@ -398,5 +398,3 @@ Follow the steps in [the Vite deployment guide](https://docs.zephyr-cloud.io/bun
 ## EdgeOne Pages [​](#edgeone-pages)
 
 Deploy your static site using [EdgeOne Pages](https://edgeone.ai/products/pages) by following these [instructions](https://pages.edgeone.ai/document/vite).
-
-

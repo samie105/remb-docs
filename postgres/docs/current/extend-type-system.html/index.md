@@ -152,5 +152,3 @@ RETURNS anycompatible AS ...
 In an actual call of this function, the first two inputs must have exactly the same type. The last two inputs must be promotable to a common type, but this type need not have anything to do with the type of the first two inputs. The result will have the common type of the last two inputs.
 
 A variadic function (one taking a variable number of arguments, as in [Section 36.5.6](https://www.postgresql.org/docs/current/xfunc-sql.html#XFUNC-SQL-VARIADIC-FUNCTIONS "36.5.6. SQL Functions with Variable Numbers of Arguments")) can be polymorphic: this is accomplished by declaring its last parameter as `VARIADIC` `anyarray` or `VARIADIC` `anycompatiblearray`. For purposes of argument matching and determining the actual result type, such a function behaves the same as if you had written the appropriate number of `anynonarray` or `anycompatiblenonarray` parameters.
-
-

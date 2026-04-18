@@ -28,5 +28,3 @@ Unable to find the official `@astrojs/mdx` integration. This error is raised whe
 *   [MDX installation and usage](/en/guides/integrations-guide/mdx/)
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

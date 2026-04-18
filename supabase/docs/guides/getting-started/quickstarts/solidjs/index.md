@@ -138,5 +138,3 @@ Start the app and go to [http://localhost:3000](http://localhost:3000) in a brow
 ```
 1npm run dev
 ```
-
-

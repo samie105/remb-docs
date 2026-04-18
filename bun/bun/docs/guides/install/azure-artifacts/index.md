@@ -100,5 +100,3 @@ Using bun install with Artifactory
 Next
 
 ](/docs/guides/install/jfrog-artifactory)
-
-

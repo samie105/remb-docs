@@ -43,5 +43,3 @@ The `<svelte:options>` element provides a place to specify per-component compile
 previous next
 
 [<svelte:element>](/docs/svelte/svelte-element) [Stores](/docs/svelte/stores)
-
-

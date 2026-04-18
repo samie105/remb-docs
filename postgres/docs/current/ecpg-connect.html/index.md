@@ -177,5 +177,3 @@ The _`connection`_ can be specified in the following ways:
 If no connection name is specified, the current connection is closed.
 
 It is good style that an application always explicitly disconnect from every connection it opened.
-
-

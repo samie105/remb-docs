@@ -78,5 +78,3 @@ Error: received invalid response to GSSAPI negotiation: S
 This error happens due to `gssencmode` parameter not set to disabled.
 
 Follow this [guide](https://github.com/orgs/supabase/discussions/30173) to resolve.
-
-

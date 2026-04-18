@@ -857,5 +857,3 @@ import.meta.hot?.on('unknown:event', (payload) => {
   // The type of payload will be any
 })
 ```
-
-

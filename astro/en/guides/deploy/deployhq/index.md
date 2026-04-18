@@ -176,5 +176,3 @@ See [DeployHQ’s documentation](https://www.deployhq.com/support) for more info
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

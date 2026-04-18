@@ -18,5 +18,3 @@ nav_next: {"path": "astro/en/reference/errors/action-called-from-server-error/in
 To use Tailwind in Astro, follow the [styling guide for Tailwind](/en/guides/styling/#tailwind).
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

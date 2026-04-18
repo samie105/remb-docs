@@ -296,5 +296,3 @@ In case you have an external library that uses libc `malloc()`, and you want to 
 However take in mind that mixing libc calls with Redis API calls will result into troubles and crashes, so if you replace calls using macros, you need to make sure that all the calls are correctly replaced, and that the code with the substituted calls will never, for example, attempt to call `RedisModule_Free()` with a pointer allocated using libc `malloc()`.
 
 ## On this page
-
-

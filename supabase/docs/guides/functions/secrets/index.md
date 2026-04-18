@@ -133,5 +133,3 @@ To see all the secrets which you have set remotely, you can use `supabase secret
 ```
 
 You don't need to re-deploy after setting your secrets. They're available immediately in your functions.
-
-

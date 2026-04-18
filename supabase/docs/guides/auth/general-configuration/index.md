@@ -50,5 +50,3 @@ Supabase Auth provides these [general configuration options](/dashboard/project/
 *   **Allow anonymous sign-ins**: Allow anonymous users to be created.
     
 *   **Allow manual linking**: Allow users to link their accounts manually.
-
-

@@ -172,5 +172,3 @@ If your application uses the Supabase Database, Storage or Edge Functions, just 
 3.  **Use the `https://<project-ref>.supabase.co/rest/v1/auth/factors` REST endpoint to identify if the user has enrolled any MFA factors.** Only `verified` factors should be acted upon.
 
 ## Frequently asked questions[#](#frequently-asked-questions)
-
-

@@ -34,5 +34,3 @@ ID of this group
 `grolist` `oid[]` (references [`pg_authid`](https://www.postgresql.org/docs/current/catalog-pg-authid.html "52.8. pg_authid").`oid`)
 
 An array containing the IDs of the roles in this group
-
-

@@ -52,5 +52,3 @@ This table of contents is in alphabetical order.
 *   [TypeScript](/docs/latest/Reference/TypeScript/): Documents Fastify's TypeScript support and provides recommendations for writing applications in TypeScript that utilize Fastify.
 *   [Validation and Serialization](/docs/latest/Reference/Validation-and-Serialization/): Details Fastify's support for validating incoming data and how Fastify serializes data for responses.
 *   [Warnings](/docs/latest/Reference/Warnings/): Details the warnings Fastify emits and how to solve them.
-
-

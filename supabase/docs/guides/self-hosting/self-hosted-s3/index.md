@@ -138,5 +138,3 @@ If uploads from a browser fail (CORS or mixed content errors), check that `API_E
 
 *   [Storage repository `.env.sample`](https://github.com/supabase/storage/blob/master/.env.sample)
 *   [S3 Authentication](/docs/guides/storage/s3/authentication)
-
-

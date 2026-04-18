@@ -738,5 +738,3 @@ Starting with Redis 5, if not for backward compatibility, the Redis project no l
 *   [Docker documentation](https://docs.docker.com/engine/userguide/networking/dockernetworks/)
 
 ## On this page
-
-

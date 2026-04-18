@@ -83,5 +83,3 @@ Proxy HTTP requests using fetch()
 Next
 
 ](/docs/guides/http/proxy)
-
-

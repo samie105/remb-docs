@@ -53,5 +53,3 @@ deno add jsr:@std/tar
 ```
 
 [See all symbols in @std/tar on](https://jsr.io/@std/tar/doc)
-
-

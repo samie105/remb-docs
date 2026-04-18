@@ -58,5 +58,3 @@ BEGIN ATOMIC
 END;
 
 then the function's dependency on the `my_colors` table will be known and enforced by `DROP`.
-
-

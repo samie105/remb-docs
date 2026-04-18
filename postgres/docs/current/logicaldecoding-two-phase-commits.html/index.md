@@ -28,5 +28,3 @@ The users that want to decode prepared transactions need to be careful about bel
 *   If the prepared transaction has locked \[user\] catalog tables exclusively then decoding prepare can block till the main transaction is committed.
     
 *   The logical replication solution that builds distributed two phase commit using this feature can deadlock if the prepared transaction has locked \[user\] catalog tables exclusively. To avoid this users must refrain from having locks on catalog tables (e.g. explicit `LOCK` command) in such transactions. See [Section 47.8.2](https://www.postgresql.org/docs/current/logicaldecoding-synchronous.html#LOGICALDECODING-SYNCHRONOUS-CAVEATS "47.8.2. Caveats") for the details.
-
-

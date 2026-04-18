@@ -41,5 +41,3 @@ deno add jsr:@std/jsonc
 ```
 
 [See all symbols in @std/jsonc on](https://jsr.io/@std/jsonc/doc)
-
-

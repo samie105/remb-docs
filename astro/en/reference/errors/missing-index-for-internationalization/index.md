@@ -29,5 +29,3 @@ Astro could not find the index URL of your website. An index page is required so
 *   [`i18n.routing` Configuration Reference](/en/reference/configuration-reference/#i18nrouting)
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

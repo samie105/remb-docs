@@ -115,5 +115,3 @@ To create a database in your Redis Cloud account:
 When you create your database, there's a brief pause while your request is processed and then the **Database details** page appears.
 
 You can now [connect to your database](/docs/latest/operate/rc/databases/connect/) and start working with Redis.
-
-

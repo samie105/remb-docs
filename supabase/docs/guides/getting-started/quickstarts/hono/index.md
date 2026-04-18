@@ -108,5 +108,3 @@ Learn how [server side auth](/docs/guides/auth/server-side/creating-a-client?que
 *   Learn how [server side auth](/docs/guides/auth/server-side/creating-a-client?queryGroups=framework&framework=hono) works with Hono.
 *   [Insert more data](/docs/guides/database/import-data) into your database
 *   Upload and serve static files using [Storage](/docs/guides/storage)
-
-

@@ -129,5 +129,3 @@ const user = await prisma.user.create({
 *   [**Prisma Client**](prisma/docs/orm/prisma-client/setup-and-configuration/introduction/index.md) - Explore the query API
 
 [Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/index.mdx)
-
-

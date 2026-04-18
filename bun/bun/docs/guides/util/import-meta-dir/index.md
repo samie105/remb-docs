@@ -64,5 +64,3 @@ Get the file name of the current file
 Next
 
 ](/docs/guides/util/import-meta-file)
-
-

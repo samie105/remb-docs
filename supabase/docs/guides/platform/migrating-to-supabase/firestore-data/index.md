@@ -181,5 +181,3 @@ The result is two separate JSON files:
 ## Migrate to Supabase[#](#migrate-to-supabase)
 
 [Contact us](https://forms.supabase.com/firebase-migration) if you need more help migrating your project.
-
-

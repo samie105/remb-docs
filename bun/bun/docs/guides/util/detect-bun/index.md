@@ -72,5 +72,3 @@ Get the current Bun version
 Next
 
 ](/docs/guides/util/version)
-
-

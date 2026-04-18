@@ -412,5 +412,3 @@ CloudCannon allows you to [define Component Editable Regions](https://cloudcanno
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

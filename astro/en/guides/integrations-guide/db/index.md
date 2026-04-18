@@ -339,5 +339,3 @@ export const POST: APIRoute = (ctx) => {  try {    await db.insert(Comment).valu
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

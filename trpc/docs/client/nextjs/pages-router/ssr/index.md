@@ -453,5 +453,3 @@ If you don't remove the `connection` header, the data fetching will fail with `T
 ### Q: Why do I still see network requests being made in the Network tab?[​](#q-why-do-i-still-see-network-requests-being-made-in-the-network-tab "Direct link to Q: Why do I still see network requests being made in the Network tab?")
 
 By default, `@tanstack/react-query` (which we use for the data fetching hooks) refetches data on mount and window refocus, even if it's already got initial data via SSR. This ensures data is always up-to-date. See the page on [SSG](trpc/docs/client/nextjs/pages-router/ssg/index.md) if you'd like to disable this behavior.
-
-

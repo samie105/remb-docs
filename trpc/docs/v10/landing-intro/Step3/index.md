@@ -32,5 +32,3 @@ ts
 `const res = await trpc.greeting.query({ name: 'John' });`
 
       `` const res: `Hello ${string}` ``
-
-

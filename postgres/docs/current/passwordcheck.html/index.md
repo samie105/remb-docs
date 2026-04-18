@@ -41,5 +41,3 @@ In ordinary usage, this parameter is set in `postgresql.conf`, but superusers ca
 
 \# postgresql.conf
 passwordcheck.min\_password\_length = 12
-
-

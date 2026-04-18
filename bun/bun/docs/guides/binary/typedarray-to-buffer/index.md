@@ -63,5 +63,3 @@ Convert a Uint8Array to a Blob
 Next
 
 ](/docs/guides/binary/typedarray-to-blob)
-
-

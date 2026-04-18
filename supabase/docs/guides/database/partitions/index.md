@@ -124,5 +124,3 @@ In this example, the **`products`** table is partitioned into two partitions: `p
 ## Other tools[#](#other-tools)
 
 There are several other tools available for Postgres partitioning, most notably [pg\_partman](https://github.com/pgpartman/pg_partman). Native partitioning was introduced in Postgres 10 and is generally thought to have better performance.
-
-

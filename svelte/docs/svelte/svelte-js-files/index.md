@@ -26,5 +26,3 @@ These behave like any other `.js` or `.ts` module, except that you can use runes
 previous next
 
 [.svelte files](/docs/svelte/svelte-files) [What are runes?](/docs/svelte/what-are-runes)
-
-

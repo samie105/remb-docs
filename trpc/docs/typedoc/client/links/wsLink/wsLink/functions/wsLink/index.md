@@ -14,5 +14,3 @@ nav_next: {"path": "trpc/docs/typedoc/client/links/wsLink/wsLink/type-aliases/We
 ---
 
 Function: wsLink() | tRPC
-
-

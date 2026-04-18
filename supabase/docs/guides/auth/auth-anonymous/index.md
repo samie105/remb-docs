@@ -125,5 +125,3 @@ Automatic cleanup of anonymous users is currently not available. Instead, you ca
 *   [Supabase JS Client](https://github.com/supabase/supabase-js)
 *   [Supabase Flutter Client](https://github.com/supabase/supabase-flutter)
 *   [Supabase Kotlin Client](https://github.com/supabase-community/supabase-kt)
-
-

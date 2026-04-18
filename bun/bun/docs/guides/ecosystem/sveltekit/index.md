@@ -141,5 +141,3 @@ bun --bun run build
     ✔ Start server with: bun ./build/index.js
     ✔ done
 ```
-
-

@@ -28,5 +28,3 @@ Action was called from a form using a GET request, but only POST requests are su
 *   [Actions RFC](https://github.com/withastro/roadmap/blob/actions/proposals/0046-actions.md)
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

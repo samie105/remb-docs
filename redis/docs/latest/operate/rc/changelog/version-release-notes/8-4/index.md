@@ -32,5 +32,3 @@ When using Redis 8.4, be aware of these current limitations:
 *   Post-filtering after the `COMBINE` step using `FILTER` is not currently supported.
 
 ## On this page
-
-

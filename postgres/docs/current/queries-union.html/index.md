@@ -56,5 +56,3 @@ is accepted, but it means
 not
 
 SELECT a FROM b UNION (SELECT x FROM y LIMIT 10)
-
-

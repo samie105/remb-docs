@@ -24,5 +24,3 @@ nav_next: {"path": "astro/en/reference/errors/env-prefix-conflicts-with-secret/i
 Some environment variables do not match the data type and/or properties defined in `env.schema`.
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

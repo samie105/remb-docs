@@ -724,5 +724,3 @@ Note:
 The `$SHARD_K_RATIO` parameter is only applicable in Redis cluster environments and has no effect in standalone Redis instances.
 
 ## On this page
-
-

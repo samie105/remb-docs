@@ -254,5 +254,3 @@ update "users" set "city_id" = "cities"."id"
 from "cities" 
 returning "users"."id", "cities"."name"
 ```
-
-

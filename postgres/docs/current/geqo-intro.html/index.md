@@ -20,5 +20,3 @@ The normal PostgreSQL query optimizer performs a _near-exhaustive search_ over t
 The Institute of Automatic Control at the University of Mining and Technology, in Freiberg, Germany, encountered some problems when it wanted to use PostgreSQL as the backend for a decision support knowledge based system for the maintenance of an electrical power grid. The DBMS needed to handle large join queries for the inference machine of the knowledge based system. The number of joins in these queries made using the normal query optimizer infeasible.
 
 In the following we describe the implementation of a _genetic algorithm_ to solve the join ordering problem in a manner that is efficient for queries involving large numbers of joins.
-
-

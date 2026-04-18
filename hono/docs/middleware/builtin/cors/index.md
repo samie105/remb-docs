@@ -159,5 +159,3 @@ export default defineConfig({
   plugins: [cloudflare()],
 })
 ```
-
-

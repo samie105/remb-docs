@@ -32,5 +32,3 @@ It is difficult to formulate a general procedure for determining which indexes t
 *   If it turns out that the cost estimates are wrong, there are, again, two possibilities. The total cost is computed from the per-row costs of each plan node times the selectivity estimate of the plan node. The costs estimated for the plan nodes can be adjusted via run-time parameters (described in [Section 19.7.2](https://www.postgresql.org/docs/current/runtime-config-query.html#RUNTIME-CONFIG-QUERY-CONSTANTS "19.7.2. Planner Cost Constants")). An inaccurate selectivity estimate is due to insufficient statistics. It might be possible to improve this by tuning the statistics-gathering parameters (see [ALTER TABLE](https://www.postgresql.org/docs/current/sql-altertable.html "ALTER TABLE")).
     
     If you do not succeed in adjusting the costs to be more appropriate, then you might have to resort to forcing index usage explicitly. You might also want to contact the PostgreSQL developers to examine the issue.
-
-

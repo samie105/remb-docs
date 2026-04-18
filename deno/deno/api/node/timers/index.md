@@ -168,5 +168,3 @@ v
 [promises.scheduler](.././timers/promises/~/promises.scheduler "promises.scheduler")
 
 No documentation available
-
-

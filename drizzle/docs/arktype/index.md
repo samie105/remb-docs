@@ -512,5 +512,3 @@ pg.dataType().array(...);
 // Schema
 baseDataTypeSchema.array().exactlyLength(size);
 ```
-
-

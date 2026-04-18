@@ -514,5 +514,3 @@ Revalidation requires that the remote server send [Last-Modified](https://develo
 There are several third-party [community image integrations](https://astro.build/integrations?search=images) for optimizing and working with images in your Astro project.
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

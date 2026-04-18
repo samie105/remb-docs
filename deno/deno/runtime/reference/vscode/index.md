@@ -229,5 +229,3 @@ You can also check what the Deno language server thinks is your current active c
 Also check if the VS Code configuration called `enableProjectDiagnostics`, located in **TypeScript › Tsserver › Experimental: Enable Project Diagnostics** is **disabled**. This setting allows TypeScript language server to execute in the background to check the entire project at once and Deno cannot disable its behavior so the errors keep showing even when all other settings are correctly set.
 
 If `"enable"` is set to `true` in there, and the error message still persists, you might want to try restarting VS Code, as the part of the extension that "mutes" the built-in TypeScript diagnostics for files is not working as designed. If the issue still persists after a restart, you may have encountered a bug that we didn't expect and searching the issues and reporting a bug at [https://github.com/denoland/vscode\_deno](https://github.com/denoland/vscode_deno) is the next step.
-
-

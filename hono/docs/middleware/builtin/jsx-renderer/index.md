@@ -321,5 +321,3 @@ app.get('/page/favorites', (c) => {
   )
 })
 ```
-
-

@@ -136,5 +136,3 @@ Common issues and solutions:
 *   [Supabase CLI Reference](/docs/reference/cli/supabase-test)
 *   [pgTAP Supabase reference](/docs/guides/database/extensions/pgtap?queryGroups=database-method&database-method=sql#testing-rls-policies)
 *   [Database testing reference](/docs/guides/database/testing)
-
-

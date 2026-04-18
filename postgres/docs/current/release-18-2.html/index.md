@@ -325,5 +325,3 @@ However, if you have any indexes on `ltree` columns, it may be necessary to rein
 ## Submit correction
 
 If you see anything in the documentation that is not correct, does not match your experience with the particular feature or requires further clarification, please use [this form](/account/comments/new/18/release-18-2.html/) to report a documentation issue.
-
-

@@ -186,5 +186,3 @@ ts
   `);`
 
 This middleware can be re-used for multiple sub-routers by creating a [protected router](trpc/docs/v9/middlewares/index.md#createprotectedrouter-helper) helper.
-
-

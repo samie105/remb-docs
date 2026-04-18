@@ -131,5 +131,3 @@ We expect the API to be stable now and are planning to release codemods for any 
 ## Anything else you want to know?[​](#anything-else-you-want-to-know "Direct link to Anything else you want to know?")
 
 Please write a feature request on [GitHub](https://github.com/trpc/trpc/issues), write in [GitHub Discussions](https://github.com/trpc/trpc/discussions), or [Discord](https://trpc.io/discord). You're also free to suggest improvement of this page or any other page using the "Edit this page" button at the bottom of the page.
-
-

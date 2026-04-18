@@ -144,5 +144,3 @@ An identifier of the data type descriptor of the parameter, unique among the dat
 `parameter_default` `character_data`
 
 The default expression of the parameter, or null if none or if the function is not owned by a currently enabled role.
-
-

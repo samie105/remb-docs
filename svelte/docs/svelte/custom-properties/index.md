@@ -72,5 +72,3 @@ You don't _have_ to specify the values directly on the component; as long as the
 previous next
 
 [Global styles](/docs/svelte/global-styles) [Nested <style> elements](/docs/svelte/nested-style-elements)
-
-

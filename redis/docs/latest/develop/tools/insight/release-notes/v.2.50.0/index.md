@@ -36,5 +36,3 @@ This is the General Availability (GA) release of Redis Insight 2.50.
 *   [#3349](https://github.com/RedisInsight/RedisInsight/pull/3349) Changed the sorting order in the Tree view to lexicographical.
 
 ## On this page
-
-

@@ -367,5 +367,3 @@ Compatible with database scaling for clustered databases, which redistributes da
     
 
 ## On this page
-
-

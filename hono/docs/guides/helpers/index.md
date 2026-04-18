@@ -14,5 +14,3 @@ nav_next: {"path": "hono/docs/guides/jsx/index.md", "title": "JSX \u200b"}
 ---
 
 [Skip to content](#VPContent)
-
-

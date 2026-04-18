@@ -64,5 +64,3 @@ For more advanced secrets management workflows, including:
 *   **Encrypted configuration values**: Use encrypted values directly in your `config.toml`
 
 See the [Managing secrets for branches](/docs/guides/deployment/branching#managing-secrets-for-branches) section in our branching documentation, or check out the [dotenvx example repository](https://github.com/supabase/supabase/blob/master/examples/slack-clone/nextjs-slack-clone-dotenvx/README.md) for a complete implementation.
-
-

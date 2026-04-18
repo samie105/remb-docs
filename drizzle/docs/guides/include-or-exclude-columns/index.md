@@ -411,5 +411,3 @@ export const posts = pgTable('posts', {
   views: integer('views').notNull().default(0),
 });
 ```
-
-

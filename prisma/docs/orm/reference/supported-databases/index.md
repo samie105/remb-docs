@@ -158,5 +158,3 @@ Aiven (MySQL & Postgres)
 ¹ This does not include support for [Data API for Aurora Serverless](https://github.com/prisma/prisma/issues/1964).
 
 [Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/reference/supported-databases.mdx)
-
-

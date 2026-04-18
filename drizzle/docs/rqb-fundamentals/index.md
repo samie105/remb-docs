@@ -14,5 +14,3 @@ nav_next: {"path": "drizzle/docs/docs/drizzle-config-file/index.md", "title": "4
 ---
 
 Drizzle ORM - next gen TypeScript ORM.
-
-

@@ -42,5 +42,3 @@ This is the General Availability (GA) release of RedisInsight 2.22.
 *   [#1835](https://github.com/RedisInsight/RedisInsight/pull/1835) Display total memory and total keys for replicas in Sentinel
 
 ## On this page
-
-

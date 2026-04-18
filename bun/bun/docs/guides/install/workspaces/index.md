@@ -125,5 +125,3 @@ Override the default npm registry for bun install
 Next
 
 ](/docs/guides/install/custom-registry)
-
-

@@ -562,5 +562,3 @@ Describes the [configuration options](#configuration).
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

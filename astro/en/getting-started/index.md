@@ -78,5 +78,3 @@ Extend
 ![](/_astro/houston_love.BttrNCcZ_ZWYTdq.webp) [Join our Discord](https://astro.build/chat)
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

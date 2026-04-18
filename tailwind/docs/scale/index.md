@@ -118,5 +118,3 @@ Prefix a `scale` utility with a variant like `hover:*` to only apply the utility
 ```
 
 Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).
-
-

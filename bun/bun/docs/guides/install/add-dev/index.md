@@ -77,5 +77,3 @@ Add an optional dependency
 Next
 
 ](/docs/guides/install/add-optional)
-
-

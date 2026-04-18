@@ -71,5 +71,3 @@ Open the endpoint URL to send an email:
 ### 4\. Try it yourself[#](#4-try-it-yourself)
 
 Find the complete example on [GitHub](https://github.com/resendlabs/resend-supabase-edge-functions-example).
-
-

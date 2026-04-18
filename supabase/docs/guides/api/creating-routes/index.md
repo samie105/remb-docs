@@ -63,5 +63,3 @@ Let's see how to make a request to the `todos` table which we created in the fir
 ```
 
 JS Reference: [`select()`](/docs/reference/javascript/select), [`insert()`](/docs/reference/javascript/insert), [`update()`](/docs/reference/javascript/update), [`upsert()`](/docs/reference/javascript/upsert), [`delete()`](/docs/reference/javascript/delete), [`rpc()`](/docs/reference/javascript/rpc) (call Postgres functions).
-
-

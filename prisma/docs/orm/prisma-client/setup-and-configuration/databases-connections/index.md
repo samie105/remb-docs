@@ -53,5 +53,3 @@ PostgreSQL only supports a certain amount of concurrent connections, and this li
 ### [AWS RDS Proxy](#aws-rds-proxy)
 
 Due to the way AWS RDS Proxy pins connections, [it does not provide any connection pooling benefits](prisma/docs/orm/prisma-client/deployment/caveats-when-deploying-to-aws-platforms/index.md#aws-rds-proxy) when used together with Prisma Client.
-
-

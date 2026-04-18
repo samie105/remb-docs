@@ -533,5 +533,3 @@ When using nested tags in Markdoc, it can be helpful to indent the content insid
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

@@ -747,5 +747,3 @@ The indicator variable `val_ind` will be zero if the value was not null, and it 
 The indicator has another function: if the indicator value is positive, it means that the value is not null, but it was truncated when it was stored in the host variable.
 
 If the argument `-r no_indicator` is passed to the preprocessor `ecpg`, it works in “no-indicator” mode. In no-indicator mode, if no indicator variable is specified, null values are signaled (on input and output) for character string types as empty string and for integer types as the lowest possible value for type (for example, `INT_MIN` for `int`).
-
-

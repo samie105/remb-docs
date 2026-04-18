@@ -36,5 +36,3 @@ Every time you commit a change to GitHub, a notification will be sent to Netlify
  *    I’m ready to prepare a development environment for an Astro project!
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

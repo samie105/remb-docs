@@ -56,5 +56,3 @@ const program = Effect.gen(function*() {
 	});
 });
 ```
-
-

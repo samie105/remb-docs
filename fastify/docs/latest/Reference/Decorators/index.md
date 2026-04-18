@@ -222,5 +222,3 @@ fastify.decorateRequest('account', null)fastify.addHook('preHandler', async (req
 ```
 
 > ℹ️ Note: For TypeScript users, see the [TypeScript documentation](/docs/latest/Reference/TypeScript/) for advanced typing examples using `setDecorator<T>`.
-
-

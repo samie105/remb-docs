@@ -29,5 +29,3 @@ If you're exclusively interested in the Svelte 3/4 syntax, you can browse its do
 previous next
 
 [Runtime warnings](/docs/svelte/runtime-warnings) [Reactive let/var declarations](/docs/svelte/legacy-let)
-
-

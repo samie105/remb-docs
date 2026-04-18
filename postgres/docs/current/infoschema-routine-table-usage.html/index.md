@@ -56,5 +56,3 @@ Name of the schema that contains the table that is used by the function
 `table_name` `sql_identifier`
 
 Name of the table that is used by the function
-
-

@@ -35,5 +35,3 @@ import { defineConfig, passthroughImageService } from "astro/config";export defa
 *   [Image Services API](/en/reference/image-service-reference/)
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

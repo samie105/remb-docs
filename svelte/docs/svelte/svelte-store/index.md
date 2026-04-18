@@ -203,5 +203,3 @@ Update value using callback and inform subscribers.
 previous next
 
 [svelte/server](/docs/svelte/svelte-server) [svelte/transition](/docs/svelte/svelte-transition)
-
-

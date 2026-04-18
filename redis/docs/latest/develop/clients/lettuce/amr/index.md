@@ -182,5 +182,3 @@ try (StatefulRedisConnection<String, String> user1 = redisClient.connect(StringC
 ```
 
 ## On this page
-
-

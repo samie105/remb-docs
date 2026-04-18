@@ -255,5 +255,3 @@ After you have set up your source database and prepared connectivity and credent
 [![The define source database button.](/docs/latest/images/rc/rdi/rdi-define-source-database.png)](/docs/latest/images/rc/rdi/rdi-define-source-database.png)
 
 ## On this page
-
-

@@ -223,5 +223,3 @@ nav_next: {"path": "astro/en/guides/cms/sitepins/index.md", "title": "Sitepins &
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

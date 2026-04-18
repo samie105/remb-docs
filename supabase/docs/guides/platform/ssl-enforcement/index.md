@@ -168,5 +168,3 @@ With the CA certificate added to the trusted certificate authorities list, use `
 ```
 1psql "postgresql://aws-0-eu-central-1.pooler.supabase.com:6543/postgres?sslmode=verify-full" -U postgres.<user>
 ```
-
-

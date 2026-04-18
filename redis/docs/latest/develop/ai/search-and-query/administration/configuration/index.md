@@ -1025,5 +1025,3 @@ FT.CONFIG GET *
 Values set using [`FT.CONFIG SET`](/docs/latest/commands/ft.config-set/) are not persisted after server restart.
 
 ## On this page
-
-

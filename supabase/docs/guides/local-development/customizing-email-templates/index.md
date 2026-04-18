@@ -228,5 +228,3 @@ These settings are for local development. To apply the changes locally, stop and
 ```
 
 For hosted projects managed by Supabase, copy the templates into the [Email Templates](/dashboard/project/_/auth/templates) section of the Dashboard.
-
-

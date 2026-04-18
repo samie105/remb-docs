@@ -60,5 +60,3 @@ NOTIFY virtual;
 ## Compatibility
 
 There is no `UNLISTEN` command in the SQL standard.
-
-

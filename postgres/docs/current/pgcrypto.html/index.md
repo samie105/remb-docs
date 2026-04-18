@@ -725,5 +725,3 @@ Blowfish crypt
 Solar Designer
 
 www.openwall.com
-
-

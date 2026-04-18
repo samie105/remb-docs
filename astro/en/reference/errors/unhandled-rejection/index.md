@@ -25,5 +25,3 @@ nav_next: {"path": "astro/en/reference/errors/unknown-clierror/index.md", "title
 Astro could not find any code to handle a rejected `Promise`. Make sure all your promises have an `await` or `.catch()` handler.
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

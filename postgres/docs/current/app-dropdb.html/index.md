@@ -126,5 +126,3 @@ To destroy the database `demo` using the server on host `eden`, port 5000, with 
 ```
 $ 
 ```
-
-

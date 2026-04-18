@@ -40,5 +40,3 @@ Value of the implementation information item, or null if the value is contained 
 `comments` `character_data`
 
 Possibly a comment pertaining to the implementation information item
-
-

@@ -329,5 +329,3 @@ On GitHub:
 
 *   [Upcoming changes to Supabase API Keys (Discussion #29260)](https://github.com/orgs/supabase/discussions/29260)
 *   [Supabase Auth: Asymmetric Keys support (Discussion #29289)](https://github.com/orgs/supabase/discussions/29289)
-
-

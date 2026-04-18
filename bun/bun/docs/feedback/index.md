@@ -86,5 +86,3 @@ You can provide feedback as text arguments, file paths, or piped input.
 Was this page helpful?
 
 [Suggest edits](https://github.com/oven-sh/bun/edit/main/docs/feedback.mdx)[Raise issue](<https://github.com/oven-sh/bun/issues/new?title=Issue on docs&body=Path: /feedback>)
-
-

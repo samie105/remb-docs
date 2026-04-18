@@ -237,5 +237,3 @@ const program = Effect.gen(function*() {
 *   `EffectCache.layerFromDrizzle(cache)` - Creates an Effect Layer from a Drizzle cache (useful for composing with other layers)
 
 #### What’s next?[](#whats-next)
-
-

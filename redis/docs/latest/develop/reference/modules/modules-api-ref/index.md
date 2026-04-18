@@ -7436,5 +7436,3 @@ Returns the database id of the key currently being processed. There is no guaran
 *   [`RedisModule__Assert`](#RedisModule__Assert)
 
 ## On this page
-
-

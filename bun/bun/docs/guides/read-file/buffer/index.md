@@ -68,5 +68,3 @@ Read a file to a Uint8Array
 Next
 
 ](/docs/guides/read-file/uint8array)
-
-

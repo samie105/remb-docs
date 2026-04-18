@@ -228,5 +228,3 @@ An API is work in progress right now in order to allow Redis modules APIs to be 
 There is no ETA for this feature but it may appear in the course of the Redis 4.0 release at some point.
 
 ## On this page
-
-

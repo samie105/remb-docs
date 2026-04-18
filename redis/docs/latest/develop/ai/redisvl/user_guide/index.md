@@ -102,5 +102,3 @@ User guides provide helpful resources for using RedisVL and its different compon
     *   [3\. MultiVectorQuery: Multi-Vector Search](advanced_queries/#multivectorquery-multi-vector-search)
     *   [Comparing Query Types](advanced_queries/#comparing-query-types)
     *   [Best Practices](advanced_queries/#best-practices)
-
-

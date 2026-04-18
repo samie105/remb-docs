@@ -62,5 +62,3 @@ Navigate to [http://localhost:54321/functions/v1/upstash-redis-counter](http://l
 ```
 1supabase functions deploy upstash-redis-counter --no-verify-jwt2supabase secrets set --env-file supabase/functions/upstash-redis-counter/.env
 ```
-
-

@@ -34,5 +34,3 @@ Astro.rewrite("/target")
 *   [Astro.rewrite](/en/reference/api-reference/#rewrite)
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

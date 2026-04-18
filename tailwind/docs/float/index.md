@@ -82,5 +82,3 @@ Prefix a `float` utility with a breakpoint variant like `md:` to only apply the 
 ```
 
 Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).
-
-

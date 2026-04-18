@@ -38,5 +38,3 @@ Support for [Redis Data Integration (RDI)](https://redis.io/data-integration/?ut
 *   [#3613](https://github.com/RedisInsight/RedisInsight/pull/3613) Prevent repetitive buffer overflow by avoiding the resending of unfulfilled commands.
 
 ## On this page
-
-

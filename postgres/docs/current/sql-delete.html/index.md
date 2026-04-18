@@ -142,5 +142,3 @@ This use of `ctid` is only safe because the query is repeatedly run, avoiding th
 ## Compatibility
 
 This command conforms to the SQL standard, except that the `USING` and `RETURNING` clauses are PostgreSQL extensions, as is the ability to use `WITH` with `DELETE`.
-
-

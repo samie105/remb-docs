@@ -179,5 +179,3 @@ The most efficient way to reclaim disk space, without locks, is to use [pg\_repa
 *   [Inspecting your Database](/docs/guides/database/inspect)
 *   [Understanding Database and Disk Size](/docs/guides/platform/database-size)
 *   [Bloat in Postgres](/docs/blog/postgres-bloat)
-
-

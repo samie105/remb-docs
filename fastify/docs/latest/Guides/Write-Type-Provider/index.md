@@ -36,5 +36,3 @@ Unless changed to:
 ```
 export interface SubstitutableTypeProvider extends FastifyTypeProvider {  // good, anything can be assigned to `unknown`  validator: this['schema'] extends /** custom check here**/ ? /** narrowed type here **/ : unknown;  serializer: this['schema'] extends /** custom check here**/ ? /** narrowed type here **/ : unknown;}
 ```
-
-

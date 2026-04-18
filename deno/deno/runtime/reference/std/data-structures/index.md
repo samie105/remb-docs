@@ -49,5 +49,3 @@ deno add jsr:@std/data-structures
 ```
 
 [See all symbols in @std/data-structures on](https://jsr.io/@std/data-structures/doc)
-
-

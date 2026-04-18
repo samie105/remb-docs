@@ -249,5 +249,3 @@ We can handle this scenario gracefully by renaming your old migration file with 
 In case [`reset`](/docs/reference/cli/usage#supabase-db-reset) fails, you can manually resolve conflicts by editing `<t+2>_dev_A.sql` file.
 
 Once validated locally, commit your changes to Git and push to GitHub.
-
-

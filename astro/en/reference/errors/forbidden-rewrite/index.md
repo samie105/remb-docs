@@ -26,5 +26,3 @@ nav_next: {"path": "astro/en/reference/errors/font-family-not-found/index.md", "
 `Astro.rewrite()` can’t be used to rewrite an on-demand route with a static route when using the `"server"` output.
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

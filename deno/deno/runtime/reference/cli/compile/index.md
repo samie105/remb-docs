@@ -376,5 +376,3 @@ Create a self-extracting binary that extracts the embedded file system to disk o
 `--target`<target>
 
 Target OS architecture.
-
-

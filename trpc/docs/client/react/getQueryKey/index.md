@@ -88,5 +88,3 @@ tsx
 `import { getMutationKey } from '@trpc/react-query';`
 
 `const mutationKey = getMutationKey(trpc.user.create);`
-
-

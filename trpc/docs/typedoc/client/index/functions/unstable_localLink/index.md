@@ -42,5 +42,3 @@ Type
 ## See[​](#see "Direct link to See")
 
 [https://trpc.io/docs/links/localLink](https://trpc.io/docs/links/localLink)
-
-

@@ -390,5 +390,3 @@ Test the authentication in your browser using the tunnelled HTTPS URL:
 ```
 
 To allow the Google Sign In to work, as you did before for Apple, you need to register the tunnelled URL (e.g., `https://arnrer1-anonymous-8081.exp.direct`) obtained to the Authorized JavaScript origins list of your [Google Cloud Console's OAuth 2.0 Client IDs](https://console.cloud.google.com/auth/clients/) configuration.
-
-

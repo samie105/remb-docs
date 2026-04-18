@@ -14,5 +14,3 @@ nav_next: {"path": "trpc/docs/typedoc/client/links/httpLink/index.md", "title": 
 ---
 
 Function: httpBatchLink() | tRPC
-
-

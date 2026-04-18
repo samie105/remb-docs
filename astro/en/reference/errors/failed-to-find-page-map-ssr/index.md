@@ -24,5 +24,3 @@ nav_next: {"path": "astro/en/reference/errors/failed-to-load-module-ssr/index.md
 Astro couldn’t find the correct page to render, probably because it wasn’t correctly mapped for SSR usage. This is an internal error.
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

@@ -224,5 +224,3 @@ CSS
 ```
 
 This function is deprecated, and we recommend [using CSS theme variables](tailwind/docs/theme/index.md#using-your-theme-variables) instead.
-
-

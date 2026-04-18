@@ -50,5 +50,3 @@ Always `TYPE USAGE`
 `is_grantable` `yes_or_no`
 
 `YES` if the privilege is grantable, `NO` if not
-
-

@@ -297,5 +297,3 @@ const booksClient = hc<typeof booksApp>('/books')
 ```
 
 This way, `tsserver` doesn't need to instantiate types for all routes at once.
-
-

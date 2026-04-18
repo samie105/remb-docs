@@ -152,5 +152,3 @@ END;
 *   Obtaining the next value is done using the `nextval()` function instead of the standard's `NEXT VALUE FOR` expression.
     
 *   The `OWNED BY` clause is a PostgreSQL extension.
-
-

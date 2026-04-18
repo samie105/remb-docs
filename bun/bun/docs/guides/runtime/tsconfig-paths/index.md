@@ -82,5 +82,3 @@ Debugging Bun with the VS Code extension
 Next
 
 ](/docs/guides/runtime/vscode-debugger)
-
-

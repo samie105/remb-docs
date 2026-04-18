@@ -51,5 +51,3 @@ For each column that will contain unique references to large objects, create a `
     If you already have, or suspect you have, orphaned large objects, see the [vacuumlo](https://www.postgresql.org/docs/current/vacuumlo.html "vacuumlo") module to help you clean them up. It's a good idea to run vacuumlo occasionally as a back-stop to the `lo_manage` trigger.
     
 *   Some frontends may create their own tables, and will not create the associated trigger(s). Also, users may not remember (or know) to create the triggers.
-
-

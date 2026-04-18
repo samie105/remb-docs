@@ -348,5 +348,3 @@ export interface CustomTypeParams<T extends CustomTypeValues> {
  	forJsonSelect?: (identifier: SQL, sql: SQLGenerator, arrayDimensions?: number) => SQL;
 }
 ```
-
-

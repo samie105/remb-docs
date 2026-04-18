@@ -792,5 +792,3 @@ Returns either the bitwise **left rotation**, or bitwise **right rotation** of i
 Swaps the bytes of its argument and returns it. This can be used to convert little-endian 32-bit numbers to big-endian 32-bit numbers and vice versa.
 
 ## On this page
-
-

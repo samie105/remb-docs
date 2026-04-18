@@ -100,5 +100,3 @@ If you were using Remix Run or SSR you wouldn't re-use the same `queryClient` fo
 Much like `useUtils`, `createTRPCQueryUtils` gives you access to same set of helpers, including `queryOptions` and `infiniteQueryOptions`. The only difference is that you need to pass in the `queryClient` and `client` objects.
 
 You can see them on the [useUtils](trpc/docs/client/react/useUtils/index.md#helpers)\-page.
-
-

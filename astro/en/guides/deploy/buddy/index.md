@@ -172,5 +172,3 @@ You can deploy your Astro project using [Buddy](https://buddy.works/), a CI/CD s
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

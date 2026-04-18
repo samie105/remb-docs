@@ -399,5 +399,3 @@ Example message flow:
 Advanced use only
 
 Using a permission broker changes Deno’s decision authority: CLI flags and prompts no longer apply. Ensure your broker process is resilient, audited, and available before enabling `DENO_PERMISSION_BROKER_PATH`.
-
-

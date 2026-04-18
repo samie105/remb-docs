@@ -14,5 +14,3 @@ nav_next: {"path": "trpc/docs/typedoc/client/index/functions/retryLink/index.md"
 ---
 
 Function: isOctetType() | tRPC
-
-

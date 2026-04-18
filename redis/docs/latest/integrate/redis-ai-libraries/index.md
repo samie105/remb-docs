@@ -101,5 +101,3 @@ Watch our [AI video collection](/docs/latest/develop/ai/ai-videos/) for practica
 *   [RAG best practices](https://redis.io/blog/get-better-rag-responses-with-ragas/)
 
 ## On this page
-
-

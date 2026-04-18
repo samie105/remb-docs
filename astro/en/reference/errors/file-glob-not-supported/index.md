@@ -28,5 +28,3 @@ The `file` loader must be passed a single local file. Glob patterns are not supp
 *   [Astro’s built-in `file()` loader](/en/reference/content-loader-reference/#file-loader)
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

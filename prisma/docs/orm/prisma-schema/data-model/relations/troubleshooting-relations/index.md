@@ -260,5 +260,3 @@ Some cloud providers enforce the existence of primary keys in all tables. Howeve
 ### [Solution](#solution-1)
 
 You need to use [explicit relation syntax](prisma/docs/orm/prisma-schema/data-model/relations/many-to-many-relations/index.md#explicit-many-to-many-relations), manually create the join model, and verify that this join model has a primary key.
-
-

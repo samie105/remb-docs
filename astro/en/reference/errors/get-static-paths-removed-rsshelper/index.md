@@ -28,5 +28,3 @@ nav_next: {"path": "astro/en/reference/errors/get-static-paths-invalid-route-par
 *   [RSS Guide](/en/recipes/rss/)
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

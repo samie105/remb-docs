@@ -82,5 +82,3 @@ Source-controlling the `schema.prisma` file is not enough - you must include you
 *   The `prisma migrate deploy` command, which is used to deploy changes to staging, testing, and production environments, _only_ runs migration files. It does not use the Prisma schema to fetch the models.
 
 [Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/prisma-migrate/understanding-prisma-migrate/migration-histories.mdx)
-
-

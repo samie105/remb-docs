@@ -156,5 +156,3 @@ The `name` and `description` on each tool matter: the LLM reads them to decide w
 *   [RedisVL documentation](/docs/latest/develop/ai/redisvl/)
 
 ## On this page
-
-

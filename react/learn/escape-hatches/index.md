@@ -446,5 +446,3 @@ You can create custom Hooks, compose them together, pass data between them, and 
 ## What’s next?[](#whats-next "Link for What’s next? ")
 
 Head over to [Referencing Values with Refs](react/learn/referencing-values-with-refs/index.md) to start reading this chapter page by page!
-
-

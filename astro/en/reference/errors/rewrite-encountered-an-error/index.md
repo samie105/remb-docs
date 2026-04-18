@@ -24,5 +24,3 @@ nav_next: {"path": "astro/en/reference/errors/rewrite-with-body-used/index.md", 
 The user tried to rewrite using a route that doesn’t exist, or it emitted a runtime error during its rendering phase.
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

@@ -46,5 +46,3 @@ If your project is built with full-stack TypeScript, you can share types **direc
 *   🥃  Subscriptions support.
 *   ⚡️  Request batching - requests made at the same time can be automatically combined into one.
 *   👀  Quite a few [examples](trpc/docs/v9/example-apps/index.md) that you can use for reference or as a starting point.
-
-

@@ -141,5 +141,3 @@ const similarGuides = await findSimilarGuides(description);
   }
 ]
 ```
-
-

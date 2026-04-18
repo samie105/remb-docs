@@ -125,5 +125,3 @@ Currently, the SingleStore dialect has a set of limitations and features that do
 *   There may be more limitations because SingleStore is not 100% compatible with MySQL.
 
 #### What’s next?[](#whats-next)
-
-

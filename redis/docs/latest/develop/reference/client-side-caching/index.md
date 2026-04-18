@@ -281,5 +281,3 @@ However simpler clients may just evict data using some random sampling just reme
 Be sure to configure a suitable value for the maximum number of keys remembered by Redis or alternatively use the BCAST mode that consumes no memory at all on the Redis side. Note that the memory consumed by Redis when BCAST is not used, is proportional both to the number of keys tracked and the number of clients requesting such keys.
 
 ## On this page
-
-

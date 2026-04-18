@@ -60,5 +60,3 @@ The expression tree to be added to the WITH CHECK qualifications for queries tha
 ### Note
 
 Policies stored in `pg_policy` are applied only when [`pg_class`](https://www.postgresql.org/docs/current/catalog-pg-class.html "52.11. pg_class").`relrowsecurity` is set for their table.
-
-

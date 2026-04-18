@@ -94,5 +94,3 @@ We can see that the last update field name is `last_update`:
 ```
 
 Notice, triggers and functions only provides the library with the JSON configuration. **It's the library's responsibility to verify the correctness of the given configuration**.
-
-

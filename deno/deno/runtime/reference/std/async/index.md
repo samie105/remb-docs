@@ -37,5 +37,3 @@ deno add jsr:@std/async
 ```
 
 [See all symbols in @std/async on](https://jsr.io/@std/async/doc)
-
-

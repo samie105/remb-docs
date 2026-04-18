@@ -50,5 +50,3 @@ This restriction is made to reduce ambiguity. There is still ambiguity if an `OR
 * * *
 
 [\[6\]](#id-1.5.6.9.5.10) Actually, PostgreSQL uses the _default B-tree operator class_ for the expression's data type to determine the sort ordering for `ASC` and `DESC`. Conventionally, data types will be set up so that the `<` and `>` operators correspond to this sort ordering, but a user-defined data type's designer could choose to do something different.
-
-

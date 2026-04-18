@@ -109,5 +109,3 @@ REVOKE SELECT ON TABLE foo FROM regress\_dblink\_user;
 DROP USER MAPPING FOR regress\_dblink\_user SERVER fdtest;
 DROP USER regress\_dblink\_user;
 DROP SERVER fdtest;
-
-

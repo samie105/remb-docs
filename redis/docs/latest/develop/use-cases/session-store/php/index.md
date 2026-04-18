@@ -265,5 +265,3 @@ For more Redis data modeling patterns, see:
 *   [Redis data types](/docs/latest/develop/data-types/)
 
 ## On this page
-
-

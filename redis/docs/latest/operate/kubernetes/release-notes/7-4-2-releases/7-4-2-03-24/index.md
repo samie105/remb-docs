@@ -78,5 +78,3 @@ See the [7.4.2 releases](/docs/latest/operate/kubernetes/release-notes/7-4-2-rel
 See the [7.4.2 releases](/docs/latest/operate/kubernetes/release-notes/7-4-2-releases/) page for the list of known limitations.
 
 ## On this page
-
-

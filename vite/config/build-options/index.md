@@ -377,5 +377,3 @@ Set to `{}` to enable rollup watcher. This is mostly used in cases that involve 
 Using Vite on Windows Subsystem for Linux (WSL) 2
 
 There are cases that file system watching does not work with WSL2. See [`server.watch`](vite/config/server-options/index.md#server-watch) for more details.
-
-

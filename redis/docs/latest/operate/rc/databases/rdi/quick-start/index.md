@@ -149,5 +149,3 @@ terraform destroy -var-file=example.tfvars
 ```
 
 ## On this page
-
-

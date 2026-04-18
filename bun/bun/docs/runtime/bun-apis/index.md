@@ -226,5 +226,3 @@ Web APIs
 Next
 
 ](/docs/runtime/web-apis)
-
-

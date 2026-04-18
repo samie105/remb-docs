@@ -42,5 +42,3 @@ The label provider associated with this label.
 `label` `text`
 
 The security label applied to this object.
-
-

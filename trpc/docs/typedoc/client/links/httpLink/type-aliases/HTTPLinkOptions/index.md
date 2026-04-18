@@ -34,5 +34,3 @@ Headers to be set on outgoing requests or a callback that of said headers
 Type Parameter
 
 `TRoot` _extends_ `AnyClientTypes`
-
-

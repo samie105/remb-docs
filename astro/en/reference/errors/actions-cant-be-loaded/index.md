@@ -24,5 +24,3 @@ nav_next: {"path": "astro/en/reference/errors/actions-returned-invalid-data-erro
 Thrown in development mode when the actions file can’t be loaded.
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

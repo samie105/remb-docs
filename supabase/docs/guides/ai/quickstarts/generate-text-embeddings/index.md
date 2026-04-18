@@ -104,5 +104,3 @@ Be sure to replace `ANON_KEY` with your project's anonymous key. You can get thi
 
 *   Learn more about [embedding concepts](/docs/guides/ai/concepts)
 *   [Store your embeddings](/docs/guides/ai/vector-columns) in a database
-
-

@@ -40,5 +40,3 @@ This is a maintenance release to support [Redis Enterprise Software version 7.22
 See [7.22.0 releases](/docs/latest/operate/kubernetes/release-notes/7-22-0-releases/) for information on known limitations.
 
 ## On this page
-
-

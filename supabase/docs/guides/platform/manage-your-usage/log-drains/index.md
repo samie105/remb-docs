@@ -250,5 +250,3 @@ Compute Credits
 You can view Log Drain Events usage on the [organization's usage page](/dashboard/org/_/usage). The page shows the usage of all projects by default. To view the usage for a specific project, select it from the dropdown. You can also select a different time period.
 
 ![Usage page usage summary](/docs/img/guides/platform/usage-logdrain-events--light.png)
-
-

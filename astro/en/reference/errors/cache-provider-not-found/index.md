@@ -24,5 +24,3 @@ nav_next: {"path": "astro/en/reference/errors/cache-query-config-conflict/index.
 Thrown when the configured cache provider cannot be resolved. This usually means the package is not installed or the import path is wrong.
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

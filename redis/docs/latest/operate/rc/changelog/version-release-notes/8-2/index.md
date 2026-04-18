@@ -34,5 +34,3 @@ If you use the [Redis Cloud Terraform provider](/docs/latest/integrate/terraform
 To resolve this issue, upgrade to the [latest supported version](https://registry.terraform.io/providers/RedisLabs/rediscloud/latest) and run `terraform init -upgrade`.
 
 ## On this page
-
-

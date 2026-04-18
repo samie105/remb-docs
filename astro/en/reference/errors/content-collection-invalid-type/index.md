@@ -25,5 +25,3 @@ nav_next: {"path": "astro/en/reference/errors/content-collection-missing-loader/
 Content collections should no longer have a `type` field. Remove this field from your content config file. See the [Astro 6 migration guide](/en/guides/upgrade-to/v6/#removed-legacy-content-collections) for more information.
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

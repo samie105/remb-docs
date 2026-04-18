@@ -126,5 +126,3 @@ When your user signs out, call [signOut()](/docs/reference/javascript/auth-signo
 *   [Supabase - Get started for free](https://supabase.com)
 *   [Supabase JS Client](https://github.com/supabase/supabase-js)
 *   [Figma Developers page](https://www.figma.com/developers)
-
-

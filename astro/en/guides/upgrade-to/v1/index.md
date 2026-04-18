@@ -601,5 +601,3 @@ In Astro v0.21+, a bug has been introduced that requires imports inside componen
 ```
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

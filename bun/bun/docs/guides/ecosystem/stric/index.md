@@ -109,5 +109,3 @@ Build an app with SvelteKit and Bun
 Next
 
 ](/docs/guides/ecosystem/sveltekit)
-
-

@@ -171,5 +171,3 @@ Check the JWT verification libraries for your language on how to securely verify
 *   [JWT Signing Keys](/docs/guides/auth/signing-keys)
 *   [JWT Claims Reference](/docs/guides/auth/jwt-fields) - Complete reference for all JWT claims used by Supabase Auth
 *   [API keys](/docs/guides/api/api-keys)
-
-

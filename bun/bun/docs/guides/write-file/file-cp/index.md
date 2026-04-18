@@ -63,5 +63,3 @@ Delete a file
 Next
 
 ](/docs/guides/write-file/unlink)
-
-

@@ -46,5 +46,3 @@ Check storage before generating new content to improve performance:
 ```
 1const STORAGE_URL = 'https://your-project.supabase.co/storage/v1/object/public/images'23Deno.serve(async (req) => {4  const url = new URL(req.url)5  const username = url.searchParams.get('username')67  try {8    // Try to get existing file from storage first9    const storageResponse = await fetch(`${STORAGE_URL}/avatars/${username}.png`)1011    if (storageResponse.ok) {12      // File exists in storage, return it directly13      return storageResponse14    }1516    // File doesn't exist, generate it17    const generatedImage = await generateAvatar(username)1819    // Upload to storage for future requests20    const { error } = await supabaseAdmin.storage21      .from('images')22      .upload(`avatars/${username}.png`, generatedImage.body!, {23        contentType: 'image/png',24        cacheControl: '86400', // Cache for 24 hours25      })2627    if (error) {28      console.error('Upload failed:', error)29    }3031    return generatedImage32  } catch (error) {33    return new Response('Error processing request', { status: 500 })34  }35})
 ```
-
-

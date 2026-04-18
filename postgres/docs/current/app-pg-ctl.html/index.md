@@ -248,5 +248,3 @@ $
 ```
 
 The second line is the command that would be invoked in restart mode.
-
-

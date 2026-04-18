@@ -28,5 +28,3 @@ The page number parameter was not found in your filepath.
 *   [Pagination](/en/guides/routing/#pagination)
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

@@ -329,5 +329,3 @@ model Order {
 ```
 
 Expand
-
-

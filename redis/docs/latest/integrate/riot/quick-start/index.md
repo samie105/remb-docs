@@ -48,5 +48,3 @@ Run the following command to give riotx TAB completion in the current shell:
 `source <(riotx generate-completion)`
 
 Full documentation is available at [redis.github.io/riotx](https://redis.github.io/riotx/).
-
-

@@ -121,5 +121,3 @@ Create a index.ts file and run it to test your connection
 ```
 1const { PrismaClient } = require('@prisma/client');23const prisma = new PrismaClient();45async function main() {6  //change to reference a table in your schema7  const val = await prisma.<SOME_TABLE_NAME>.findMany({8    take: 10,9  });10  console.log(val);11}1213main()14  .then(async () => {15    await prisma.$disconnect();16  })17  .catch(async (e) => {18    console.error(e);19    await prisma.$disconnect();20  process.exit(1);21});
 ```
-
-

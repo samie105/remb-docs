@@ -141,5 +141,3 @@ model Profile {
 ```
 
 [Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/prisma-schema/data-model/relations/one-to-one-relations.mdx)
-
-

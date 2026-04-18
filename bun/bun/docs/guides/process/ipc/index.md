@@ -121,5 +121,3 @@ Listen for CTRL+C
 Next
 
 ](/docs/guides/process/ctrl-c)
-
-

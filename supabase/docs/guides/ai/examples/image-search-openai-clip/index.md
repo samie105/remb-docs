@@ -115,5 +115,3 @@ Go ahead and test it out by running `poetry run search` and you will be presente
 ## Conclusion[#](#conclusion)
 
 With just a couple of lines of Python you are able to implement image search as well as reverse image search using OpenAI's CLIP model and Supabase Vector.
-
-

@@ -396,5 +396,3 @@ tsx
   `return <div>{greeting.greeting}</div>;`
 
 `}`
-
-

@@ -196,5 +196,3 @@ Using the query plan analyzer to optimize your queries is a large topic, with a 
 *   [Enterprise DB.](https://www.enterprisedb.com/blog/postgresql-query-optimization-performance-tuning-with-explain-analyze)
 
 You can pair the information available from `pg_stat_statements` with the detailed system metrics available [via your metrics endpoint](../platform/metrics) to better understand the behavior of your DB and the queries you're executing against it.
-
-

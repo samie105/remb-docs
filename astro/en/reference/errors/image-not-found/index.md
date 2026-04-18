@@ -30,5 +30,3 @@ Images in Markdown are relative to the current file. To refer to an image that i
 *   [Images](/en/guides/images/)
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

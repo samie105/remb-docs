@@ -310,5 +310,3 @@ An example of cross drive links are:
 *   a symlink/junction to a different drive by `mklink` command (e.g. Yarn global cache)
 
 Related issue: [#10802](https://github.com/vitejs/vite/issues/10802)
-
-

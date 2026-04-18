@@ -189,5 +189,3 @@ This config file will be automatically added for you when you run `astro add sve
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

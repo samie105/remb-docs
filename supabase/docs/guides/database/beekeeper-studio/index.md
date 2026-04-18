@@ -59,5 +59,3 @@ Add your SSL to the connection form ![SSL](/docs/img/guides/database/connecting-
 Test your connection and then connect
 
 ![SSL](/docs/img/guides/database/connecting-to-postgres/beekeeper-studio/connect.png)
-
-

@@ -50,5 +50,3 @@ Analytics buckets are perfect for:
 *   **Complex analytical queries** - Execute sophisticated aggregations and joins over large datasets
 
 By separating transactional and analytical workloads, Supabase lets you build scalable analytics pipelines without compromising your primary Postgres performance.
-
-

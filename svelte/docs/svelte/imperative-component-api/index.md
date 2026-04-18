@@ -219,5 +219,3 @@ As with `mount`, effects will not run during `hydrate` — use `flushSync()` imm
 previous next
 
 [Lifecycle hooks](/docs/svelte/lifecycle-hooks) [Hydratable data](/docs/svelte/hydratable)
-
-

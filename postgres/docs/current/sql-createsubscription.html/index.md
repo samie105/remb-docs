@@ -196,5 +196,3 @@ CREATE SUBSCRIPTION mysub
 ## Compatibility
 
 `CREATE SUBSCRIPTION` is a PostgreSQL extension.
-
-

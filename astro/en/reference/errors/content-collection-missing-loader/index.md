@@ -25,5 +25,3 @@ nav_next: {"path": "astro/en/reference/errors/content-collection-type-mismatch-e
 A content collection is missing a `loader` definition. Make sure that each collection in your content config file has a `loader`. See the [Content collections documentation](/en/guides/content-collections/) for more information.
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

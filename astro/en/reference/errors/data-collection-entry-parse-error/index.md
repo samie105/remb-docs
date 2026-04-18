@@ -24,5 +24,3 @@ nav_next: {"path": "astro/en/reference/errors/duplicate-content-entry-slug-error
 Collection entries of `type: 'data'` must return an object with valid JSON (for `.json` entries), YAML (for `.yaml` entries) or TOML (for `.toml` entries).
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

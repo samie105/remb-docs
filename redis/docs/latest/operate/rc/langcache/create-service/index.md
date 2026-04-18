@@ -197,5 +197,3 @@ After your cache is created, you can [use the LangCache API](/docs/latest/operat
 You can also [view and edit the cache](/docs/latest/operate/rc/langcache/view-edit-cache/) and [monitor the cache's performance](/docs/latest/operate/rc/langcache/monitor-cache/).
 
 ## On this page
-
-

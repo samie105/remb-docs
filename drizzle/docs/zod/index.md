@@ -559,5 +559,3 @@ pg.dataType().array(...);
 // Schema
 z.array(baseDataTypeSchema).length(size);
 ```
-
-

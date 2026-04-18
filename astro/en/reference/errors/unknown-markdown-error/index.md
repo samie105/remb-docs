@@ -22,5 +22,3 @@ nav_next: {"path": "astro/en/reference/errors/unknown-vite-error/index.md", "tit
 Astro encountered an unknown error while parsing your Markdown. Oftentimes, this is caused by a syntax error and the error message should contain more information.
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

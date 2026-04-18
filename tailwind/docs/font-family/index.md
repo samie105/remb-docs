@@ -124,5 +124,3 @@ If you're loading a font from a service like [Google Fonts](https://fonts.google
 Browsers require that `@import` statements come before any other rules, so URL imports need to be above imports like `@import "tailwindcss"` which are inlined in the compiled CSS.
 
 Learn more about customizing your theme in the [theme documentation](tailwind/docs/theme/index.md#customizing-your-theme).
-
-

@@ -162,5 +162,3 @@ function Div(props: {className: string;}) {
   return <div {className} />;
 }
 ```
-
-

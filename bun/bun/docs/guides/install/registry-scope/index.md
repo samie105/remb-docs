@@ -61,5 +61,3 @@ Using bun install with an Azure Artifacts npm registry
 Next
 
 ](/docs/guides/install/azure-artifacts)
-
-

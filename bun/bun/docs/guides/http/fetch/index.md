@@ -77,5 +77,3 @@ Hot reload an HTTP server
 Next
 
 ](/docs/guides/http/hot)
-
-

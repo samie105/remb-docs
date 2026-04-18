@@ -30,5 +30,3 @@ To decompress Gzip bodies, you can use `gunzipSync` from the `node:zlib` API to 
 ```
 
 Edge functions have a runtime memory limit of 150MB. Overly large compressed payloads may result in an out-of-memory error.
-
-

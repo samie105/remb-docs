@@ -46,5 +46,3 @@ For more information on credits and credit top-ups, see the [Credits page](/docs
 Billing details cannot be changed once an invoice is issued, so it's crucial to configure them correctly from the start.
 
 You can update your billing email address, billing address and tax ID on the [organization's billing page](/dashboard/org/_/billing).
-
-

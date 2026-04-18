@@ -50,5 +50,3 @@ deno add jsr:@std/datetime
 ```
 
 [See all symbols in @std/datetime on](https://jsr.io/@std/datetime/doc)
-
-

@@ -68,5 +68,3 @@ View definition (a reconstructed [SELECT](https://www.postgresql.org/docs/curren
 [Home](https://www.postgresql.org/docs/current/index.html "PostgreSQL 18.3 Documentation")
 
  53.38. `pg_wait_events`
-
-

@@ -191,5 +191,3 @@ Now that you understand the basics, dive deeper into each feature:
 *   **[Flutter Integration](/docs/guides/realtime/realtime-listening-flutter)** - Build real-time Flutter applications
 
 Ready to build something amazing? Start with the [Broadcast guide](/docs/guides/realtime/broadcast) to create your first real-time feature!
-
-

@@ -103,5 +103,3 @@ Generate a UUID
 Next
 
 ](/docs/guides/util/javascript-uuid)
-
-

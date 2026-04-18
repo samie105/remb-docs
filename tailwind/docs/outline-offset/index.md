@@ -102,5 +102,3 @@ Make your ideas look awesome, without relying on a designer.
 ](https://www.refactoringui.com/?ref=sidebar)
 
 Copyright © 2026 Tailwind Labs Inc.·[Trademark Policy](/brand)
-
-

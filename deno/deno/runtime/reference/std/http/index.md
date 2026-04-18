@@ -112,5 +112,3 @@ deno add jsr:@std/http
 ```
 
 [See all symbols in @std/http on](https://jsr.io/@std/http/doc)
-
-

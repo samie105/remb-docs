@@ -198,5 +198,3 @@ You can instead create your own Dockerfile using [Dockerfile generator](https://
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

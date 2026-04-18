@@ -107,5 +107,3 @@ const result = await prisma.$replica().user.findFirst(...)
 ```
 
 [Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/prisma-client/setup-and-configuration/read-replicas.mdx)
-
-

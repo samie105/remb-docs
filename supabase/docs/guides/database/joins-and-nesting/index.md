@@ -253,5 +253,3 @@ To fetch all the `shifts` with `scan_id_start` and `scan_id_end` related to a sp
 ```
 1const { data, error } = await supabase.from('shifts').select(2  `3    *,4    start_scan:scans!scan_id_start (5      id,6      user_id,7      badge_scan_time8    ),9   end_scan:scans!scan_id_end (10     id,11     user_id,12     badge_scan_time13    )14  `15)
 ```
-
-

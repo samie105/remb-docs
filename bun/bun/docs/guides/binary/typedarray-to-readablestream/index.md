@@ -90,5 +90,3 @@ Convert a DataView to a string
 Next
 
 ](/docs/guides/binary/dataview-to-string)
-
-

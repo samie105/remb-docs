@@ -257,5 +257,3 @@ Alexander Korotkov `<[a.korotkov@postgrespro.ru](mailto:a.korotkov@postgrespro.r
 Documentation: Christopher Kings-Lynne
 
 This module is sponsored by Delta-Soft Ltd., Moscow, Russia.
-
-

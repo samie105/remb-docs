@@ -166,5 +166,3 @@ Is true if the user is an anonymous user.
 ## Resources[#](#resources)
 
 *   [User Management guide](/docs/guides/auth/managing-user-data)
-
-

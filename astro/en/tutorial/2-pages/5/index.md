@@ -111,5 +111,3 @@ Your About page is now styled using _both_ the imported `global.css` file _and_ 
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

@@ -60,5 +60,3 @@ SELECT SESSION\_USER, CURRENT\_USER;
 ## Compatibility
 
 PostgreSQL allows identifier syntax (``"_`rolename`_"``), while the SQL standard requires the role name to be written as a string literal. SQL does not allow this command during a transaction; PostgreSQL does not make this restriction because there is no reason to. The `SESSION` and `LOCAL` modifiers are a PostgreSQL extension, as is the `RESET` syntax.
-
-

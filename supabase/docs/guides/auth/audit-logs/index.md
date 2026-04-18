@@ -166,5 +166,3 @@ An identity unlinked from account
 
 *   There may be a short delay before logs appear
 *   Query capabilities are limited to the dashboard interface
-
-

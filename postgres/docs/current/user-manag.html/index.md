@@ -18,5 +18,3 @@ PostgreSQL manages database access permissions using the concept of _roles_. A r
 The concept of roles subsumes the concepts of “users” and “groups”. In PostgreSQL versions before 8.1, users and groups were distinct kinds of entities, but now there are only roles. Any role can act as a user, a group, or both.
 
 This chapter describes how to create and manage roles. More information about the effects of role privileges on various database objects can be found in [Section 5.8](https://www.postgresql.org/docs/current/ddl-priv.html "5.8. Privileges").
-
-

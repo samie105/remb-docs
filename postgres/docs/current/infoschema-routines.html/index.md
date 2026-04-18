@@ -344,5 +344,3 @@ Applies to a feature not available in PostgreSQL
 `result_cast_dtd_identifier` `sql_identifier`
 
 Applies to a feature not available in PostgreSQL
-
-

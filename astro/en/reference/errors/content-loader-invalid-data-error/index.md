@@ -26,5 +26,3 @@ nav_next: {"path": "astro/en/reference/errors/content-loader-returns-invalid-id/
 The loader for a content collection returned invalid data. Inline loaders must return an array of objects with unique ID fields or a plain object with IDs as keys and entries as values.
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

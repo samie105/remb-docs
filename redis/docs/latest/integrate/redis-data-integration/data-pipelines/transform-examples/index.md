@@ -117,5 +117,3 @@ When using the `sql` option as language for the expressions keep in mind that RD
 The pages listed below show examples of typical job files for different use cases.
 
 ## On this page
-
-

@@ -74,5 +74,3 @@ Hash a password
 Next
 
 ](/docs/guides/util/hash-a-password)
-
-

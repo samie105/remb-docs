@@ -49,5 +49,3 @@ Because Svelte's legacy mode reactivity is based on _assignments_, using array m
 previous next
 
 [Overview](/docs/svelte/legacy-overview) [Reactive $: statements](/docs/svelte/legacy-reactive-assignments)
-
-

@@ -105,5 +105,3 @@ The does the same with `anyarray` index as `rum_tsvector_addon_ops` i.e. allows 
 ## Resources[#](#resources)
 
 *   [Official RUM documentation](https://github.com/postgrespro/rum)
-
-

@@ -84,5 +84,3 @@ Equivalent
 ``-W _`x`_``
 
 ``post_auth_delay = _`x`_``
-
-

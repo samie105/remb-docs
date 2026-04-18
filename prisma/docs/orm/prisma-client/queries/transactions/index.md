@@ -976,5 +976,3 @@ If the application encounters an error along the way, the async function will th
 You can learn more about interactive transactions in this [section](#interactive-transactions).
 
 Prisma Client supports multiple ways of handling transactions, either directly through the API or by supporting your ability to introduce optimistic concurrency control and idempotency into your application. If you feel like you have use cases in your application that are not covered by any of the suggested options, please open a [GitHub issue](https://github.com/prisma/prisma/issues/new/choose) to start a discussion.
-
-

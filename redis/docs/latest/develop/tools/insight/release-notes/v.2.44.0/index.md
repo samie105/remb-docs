@@ -40,5 +40,3 @@ This is the General Availability (GA) release of RedisInsight 2.44.
 *   [#3029](https://github.com/RedisInsight/RedisInsight/pull/3029) A fix for cases when autofill [prevents](https://github.com/RedisInsight/RedisInsight/issues/3026) the form to auto-discover Redis Software Cluster database from being submitted.
 
 ## On this page
-
-

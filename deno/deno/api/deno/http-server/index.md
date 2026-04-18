@@ -109,5 +109,3 @@ T
 [Deno.ServeHandler](./././~/Deno.ServeHandler "Deno.ServeHandler")
 
 A handler for HTTP requests. Consumes a request and returns a response.
-
-

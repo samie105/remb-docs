@@ -59,5 +59,3 @@ Generators in your Prisma schema specify what assets are generated when the \`pr
 ### On this page
 
 [Securing database connections](#securing-database-connections)
-
-

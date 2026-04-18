@@ -28,5 +28,3 @@ To use server-side rendering, an adapter needs to be installed so Astro knows ho
 *   [Server-side Rendering](/en/guides/on-demand-rendering/)
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

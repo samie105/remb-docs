@@ -156,5 +156,3 @@ You can deploy your Astro project on [EdgeOne Pages](https://pages.edgeone.ai/),
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

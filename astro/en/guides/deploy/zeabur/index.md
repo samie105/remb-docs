@@ -200,5 +200,3 @@ Learn more about Zeabur’s [Deployment Guide](https://zeabur.com/docs/get-start
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

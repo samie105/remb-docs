@@ -1591,5 +1591,3 @@ v
 [console](.././inspector/~/console "console")
 
 An object to send messages to the remote inspector console.
-
-

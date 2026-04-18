@@ -63,5 +63,3 @@ You can set CSS custom properties:
 previous next
 
 [animate:](/docs/svelte/animate) [class](/docs/svelte/class)
-
-

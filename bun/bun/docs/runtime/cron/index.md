@@ -236,5 +236,3 @@ Windows
 Runs `schtasks /delete` to remove the scheduled task
 
 Removing a job that doesn’t exist resolves without error.
-
-

@@ -63,5 +63,3 @@ Convert a ReadableStream to a Uint8Array
 Next
 
 ](/docs/guides/streams/to-typedarray)
-
-

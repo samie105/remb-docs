@@ -131,5 +131,3 @@ All the limitations listed on [coroutines](/docs/latest/operate/oss_and_stack/st
 *   Remote function are not guaranteed to succeed (if the shard crashed for example). In such cases a timeout error will be given.
 
 ## On this page
-
-

@@ -105,5 +105,3 @@ You'll see the following in the previous CLI session:
 There is a downside to using pub/sub. Redis pub/sub provides at-most-once message delivery semantics, which means that once a message is sent, it won't be sent again. So, if a message isn't consumed, it's gone forever. This is likely okay for debugging, but for the longer term, `redis.log` is the better solution for log persistence.
 
 ## On this page
-
-

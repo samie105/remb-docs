@@ -64,5 +64,3 @@ Compress and decompress data with gzip
 Next
 
 ](/docs/guides/util/gzip)
-
-

@@ -50,5 +50,3 @@ Flash-enabled ([Redis Flex](/docs/latest/operate/rs/databases/flash/))
 1.  Upgrading existing Active-Active databases to Redis version 8 does not automatically enable these capabilities. Only new Active-Active databases created with Redis version 8 enable these capabilities by default.
 
 ## On this page
-
-

@@ -54,5 +54,3 @@ Alternatively, use an [`{#if ...}`](if) block with an `:else` clause to render f
 previous next
 
 [{#snippet ...}](/docs/svelte/snippet) [{@html ...}](/docs/svelte/@html)
-
-

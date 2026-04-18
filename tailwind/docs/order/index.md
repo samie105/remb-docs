@@ -134,5 +134,3 @@ Short, tactical video lessons from the creator of Tailwind CSS, delivered direct
 [Get the free course](/build-uis-that-dont-suck)
 
 Copyright © 2026 Tailwind Labs Inc.·[Trademark Policy](/brand)
-
-

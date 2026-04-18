@@ -92,5 +92,3 @@ app.onError((err, c) => {
 WARNING
 
 **`HTTPException.getResponse` is not aware of `Context`**. To include headers already set in `Context`, you must apply them to a new `Response`.
-
-

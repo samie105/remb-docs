@@ -248,5 +248,3 @@ Now utilities like `mask-radial-from-regal-blue`,`mask-conic-to-regal-blue`, and
 ```
 
 Learn more about customizing your theme in the [theme documentation](tailwind/docs/theme/index.md#customizing-your-theme).
-
-

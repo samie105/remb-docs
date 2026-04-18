@@ -76,5 +76,3 @@ Type
 #### Returns[​](#returns-1 "Direct link to Returns")
 
 `string` | `Uint8Array`<`ArrayBufferLike`\>
-
-

@@ -53,5 +53,3 @@ And add the code to the `index.ts` file:
 ```
 1const { data, error } = await supabase.functions.invoke('cloudflare-turnstile', {2  body: { token },3})
 ```
-
-

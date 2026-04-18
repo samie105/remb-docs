@@ -54,5 +54,3 @@ Especially for production environments, performing backups and monitoring the he
 *   [Railway platform features](https://railway.com/features?utm_medium=integration&utm_source=docs&utm_campaign=redis)
 
 ## On this page
-
-

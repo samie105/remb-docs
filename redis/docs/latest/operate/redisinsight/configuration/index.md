@@ -267,5 +267,3 @@ Redis Insight also allows you to manage its connection timeout on the form to co
 Hosting Redis Insight behind a prefix path (path-rewriting) is not supported.
 
 ## On this page
-
-

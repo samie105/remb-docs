@@ -74,5 +74,3 @@ If not null, an error message indicating why this line could not be processed
 Usually, a row reflecting an incorrect entry will have values for only the `line_number` and `error` fields.
 
 See [Chapter 20](https://www.postgresql.org/docs/current/client-authentication.html "Chapter 20. Client Authentication") for more information about client authentication configuration.
-
-

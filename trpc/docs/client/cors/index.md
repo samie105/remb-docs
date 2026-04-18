@@ -54,5 +54,3 @@ ts
 info
 
 You also need to enable CORS on your server by modifying your [adapter](trpc/docs/server/adapters/index.md), or the HTTP server which fronts your API. The best way to do this varies adapter-by-adapter and based on your hosting infrastructure, and individual adapters generally document this process where applicable.
-
-

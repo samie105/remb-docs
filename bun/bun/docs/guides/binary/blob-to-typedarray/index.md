@@ -63,5 +63,3 @@ Convert a Blob to a DataView
 Next
 
 ](/docs/guides/binary/blob-to-dataview)
-
-

@@ -131,5 +131,3 @@ After this initial sync is complete, the data pipeline enters the _change stream
 You can view the status of your data pipeline in the **Data pipeline** tab of your database. See [View and edit data pipeline](/docs/latest/operate/rc/databases/rdi/view-edit/) to learn more.
 
 ## On this page
-
-

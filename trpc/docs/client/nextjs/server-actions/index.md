@@ -247,5 +247,3 @@ Server Actions are not a replacement for all tRPC mutations. Consider the tradeo
 *   **Use `useMutation`** when you need to update the client-side cache, show optimistic updates, or manage complex loading/error states in the UI.
 
 You can incrementally adopt server actions alongside your existing tRPC API - there's no need to rewrite your entire API.
-
-

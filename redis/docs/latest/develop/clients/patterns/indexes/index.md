@@ -562,5 +562,3 @@ Keeping the index updated may be challenging, in the course of months or years i
 Different strategies could be used. If the index data is outside Redis _read repair_ can be a solution, where data is fixed in a lazy way when it is requested. When we index data which is stored in Redis itself the [`SCAN`](/docs/latest/commands/scan/) family of commands can be used in order to verify, update or rebuild the index from scratch, incrementally.
 
 ## On this page
-
-

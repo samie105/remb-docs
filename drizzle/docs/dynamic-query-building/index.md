@@ -123,5 +123,3 @@ The `...QueryBuilder` types are for usage with [standalone query builder instanc
 	let query = qb.select().from(users).where(eq(users.id, 1)).$dynamic();
 	query = withFriends(query);
 ```
-
-

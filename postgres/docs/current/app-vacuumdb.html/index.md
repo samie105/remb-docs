@@ -255,5 +255,3 @@ To clean all tables in the `foo` and `bar` schemas in a database named `xyzzy`:
 ```
 $ 
 ```
-
-

@@ -1156,5 +1156,3 @@ v
 [EOL](.././os/~/EOL "EOL")
 
 The operating system-specific end-of-line marker.
-
-

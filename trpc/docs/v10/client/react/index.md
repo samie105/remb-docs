@@ -52,5 +52,3 @@ The wrapper abstracts some aspects of React Query for you:
 *   Query Keys - these are generated and managed by tRPC on your behalf, based on the procedure inputs you provide
     *   If you need the query key which tRPC calculates, you can use [getQueryKey](trpc/docs/client/react/getQueryKey/index.md)
 *   Type safe by default - the types you provide in your tRPC Backend also drive the types of your React Query client, providing safety throughout your React app
-
-

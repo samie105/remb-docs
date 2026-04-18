@@ -49,5 +49,3 @@ deno add jsr:@std/collections
 ```
 
 [See all symbols in @std/collections on](https://jsr.io/@std/collections/doc)
-
-

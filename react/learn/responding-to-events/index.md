@@ -239,5 +239,3 @@ of
 Fix an event handler[](#fix-an-event-handler "Link for this heading")
 
 Clicking this button is supposed to switch the page background between white and black. However, nothing happens when you click it. Fix the problem. (Don’t worry about the logic inside `handleClick`—that part is fine.)
-
-

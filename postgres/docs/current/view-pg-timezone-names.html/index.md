@@ -38,5 +38,3 @@ Offset from UTC (positive means east of Greenwich)
 `is_dst` `bool`
 
 True if currently observing daylight savings
-
-

@@ -92,5 +92,3 @@ Realtime: Multiplayer Edition
 Read more about Supabase Realtime.
 
 ](https://supabase.com/blog/supabase-realtime-multiplayer-general-availability)
-
-

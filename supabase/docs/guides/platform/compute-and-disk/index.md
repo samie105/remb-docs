@@ -632,5 +632,3 @@ As mentioned in the Postgres [documentation](https://postgresqlco.nf/doc/en/para
 2.  Compute resources on the Free plan are subject to change. [↩](#user-content-fnref-3)
     
 3.  Database max connections are recommended values and can be [customized via `max_connections`](/docs/guides/database/custom-postgres-config) depending on your use case. Be aware of [these considerations](/docs/guides/troubleshooting/how-to-change-max-database-connections-_BQ8P5) before modifying. [↩](#user-content-fnref-1)
-
-

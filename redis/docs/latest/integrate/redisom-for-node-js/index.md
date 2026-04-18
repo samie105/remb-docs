@@ -859,5 +859,3 @@ So, now you know how to use Express + Redis OM to build an API backed by Redis S
 And thanks for taking the time to work through this. I sincerely hope you found it useful. If you have any questions, the [Redis Discord server](https://discord.gg/redis) is by far the best place to get them answered. Join the server and ask away!
 
 ## On this page
-
-

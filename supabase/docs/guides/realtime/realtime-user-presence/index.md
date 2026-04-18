@@ -22,5 +22,3 @@ Using Realtime Presence with Flutter
 Use Supabase Presence to display the currently online users on your Flutter application.
 
 Displaying the list of currently online users is a common feature for real-time collaborative applications. Supabase Presence makes it easy to track users joining and leaving the session so that you can make a collaborative app.
-
-

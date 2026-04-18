@@ -136,5 +136,3 @@ type UsersWithPosts = Awaited<ReturnType<typeof getUsersWithPosts>>;
 ```
 
 [Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/prisma-client/type-safety/operating-against-partial-structures-of-model-types.mdx)
-
-

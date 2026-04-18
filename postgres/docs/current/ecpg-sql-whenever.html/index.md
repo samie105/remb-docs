@@ -70,5 +70,3 @@ main(void)
 ## Compatibility
 
 `WHENEVER` is specified in the SQL standard, but most of the actions are PostgreSQL extensions.
-
-

@@ -142,5 +142,3 @@ Using this trick we don't need to parse the protocol we send to the server in or
 However while parsing the replies we take a counter of all the replies parsed so that at the end we are able to tell the user the amount of commands transferred to the server by the mass insert session.
 
 ## On this page
-
-

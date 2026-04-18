@@ -43,5 +43,3 @@ This is the General Availability (GA) release of RedisInsight 2.2.0
 *   [#656](https://github.com/RedisInsight/RedisInsight/pull/656) Binary key names will not trigger errors in databases with enabled OSS Cluster API. Data type, TTL, and size of such keys are displayed in the list of keys in all Redis instances. Key details are currently not available.
 
 ## On this page
-
-

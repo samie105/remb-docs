@@ -28,5 +28,3 @@ A legacy content collection cannot contain a mix of content and data entries. Yo
 *   [Legacy content collections](/en/guides/upgrade-to/v5/#updating-existing-collections)
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

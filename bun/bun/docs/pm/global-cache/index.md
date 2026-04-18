@@ -102,5 +102,3 @@ Isolated installs
 Next
 
 ](/docs/pm/isolated-installs)
-
-

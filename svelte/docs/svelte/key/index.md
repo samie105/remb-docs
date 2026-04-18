@@ -38,5 +38,3 @@ It's also useful if you want a transition to play whenever a value changes:
 previous next
 
 [{#each ...}](/docs/svelte/each) [{#await ...}](/docs/svelte/await)
-
-

@@ -113,5 +113,3 @@ Build an app with Next.js and Bun
 Next
 
 ](/docs/guides/ecosystem/nextjs)
-
-

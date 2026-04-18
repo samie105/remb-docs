@@ -40,5 +40,3 @@ deno add jsr:@std/cli
 ```
 
 [See all symbols in @std/cli on](https://jsr.io/@std/cli/doc)
-
-

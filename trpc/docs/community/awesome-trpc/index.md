@@ -408,5 +408,3 @@ Link
     *   [Library adapters](#library-adapters)
 *   [🍀 Starting points, example projects, etc](#-starting-points-example-projects-etc)
 *   [🏁 Open-source projects using tRPC](#-open-source-projects-using-trpc)
-
-

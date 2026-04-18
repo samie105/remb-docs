@@ -38,5 +38,3 @@ You can set the following settings using the Realtime Settings screen in your Da
 *   Max events per second: Determines the maximum number of events per second that can be sent
 *   Max presence events per second: Determines the maximum number of presence events per second that can be sent
 *   Max payload size in KB: Determines the maximum number of payload size in KB that can be sent
-
-

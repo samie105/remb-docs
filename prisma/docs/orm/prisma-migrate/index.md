@@ -36,5 +36,3 @@ Does not apply for MongoDB
 Instead of `migrate dev` and related commands, use [`db push`](prisma/docs/orm/prisma-migrate/workflows/prototyping-your-schema/index.md) for [MongoDB](prisma/docs/orm/core-concepts/supported-databases/mongodb/index.md).
 
 [Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/prisma-migrate/index.mdx)
-
-

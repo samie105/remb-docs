@@ -38,5 +38,3 @@ For example, imagine you want to allow your users to upload only images to the `
 ```
 
 If an upload request doesn't meet the above restrictions it will be rejected. See [File Limits](/docs/guides/storage/uploads/file-limits) for more information.
-
-

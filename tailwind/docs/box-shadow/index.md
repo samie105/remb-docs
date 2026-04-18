@@ -282,5 +282,3 @@ Now utilities like `shadow-regal-blue`,`inset-shadow-regal-blue`,`ring-regal-blu
 ```
 
 Learn more about customizing your theme in the [theme documentation](tailwind/docs/theme/index.md#customizing-your-theme).
-
-

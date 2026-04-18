@@ -563,5 +563,3 @@ Now, whenever you publish a new story, a new build will be triggered and your bl
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

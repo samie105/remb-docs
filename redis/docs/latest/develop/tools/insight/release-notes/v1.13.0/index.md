@@ -60,5 +60,3 @@ This is the General Availability Release of RedisInsight 1.13 (v1.13.0).
 *   Fixed Lua recommendation
 
 ## On this page
-
-

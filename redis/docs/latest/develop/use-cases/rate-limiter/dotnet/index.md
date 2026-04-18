@@ -326,5 +326,3 @@ catch (RedisException ex)
 *   [.NET client](/docs/latest/develop/clients/dotnet/) - Redis .NET client documentation
 
 ## On this page
-
-

@@ -51,5 +51,3 @@ Redis provides two well-annotated example workflows to demonstrate how you can u
 *   [**Semantic caching**](https://n8n.io/workflows/10887-reduce-llm-costs-with-semantic-caching-using-redis-vector-store-and-huggingface/): This workflow implements a [semantic cache](https://redis.io/blog/what-is-semantic-caching/) that checks for previously answered questions before calling an LLM. This pattern can help reduce LLM costs by answering questions from cached results.
 
 ## On this page
-
-

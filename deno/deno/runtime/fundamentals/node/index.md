@@ -657,5 +657,3 @@ benchmarks
 `deno bench`
 
 ¹ Type checking happens automatically, TypeScript compiler is built into the `deno` binary.
-
-

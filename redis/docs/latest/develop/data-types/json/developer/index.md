@@ -177,5 +177,3 @@ To include debugging information, you need to set the [`DEBUG`](/docs/latest/com
 You can add breakpoints to Python tests in single-test mode. To set a breakpoint, call the `BB()` function inside a test.
 
 ## On this page
-
-

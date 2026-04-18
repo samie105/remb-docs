@@ -137,5 +137,3 @@ When you are happy with the way your preview looks, **commit** your changes to y
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

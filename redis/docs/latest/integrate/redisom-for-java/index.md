@@ -744,5 +744,3 @@ public Iterable<Person> findByFirstNameAndLastName(String firstName, String last
 In this article, we explored how Redis OM Spring provides a couple of APIs to tap into the power of Redis Stack’s document database and search features from Spring Boot application. We’ll explore other Redis Stack features via Redis OM Spring in future articles
 
 ## On this page
-
-

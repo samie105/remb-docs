@@ -233,5 +233,3 @@ The [`mount`](imperative-component-api#mount) and [`hydrate`](imperative-compone
 previous next
 
 [Nested <style> elements](/docs/svelte/nested-style-elements) [<svelte:window>](/docs/svelte/svelte-window)
-
-

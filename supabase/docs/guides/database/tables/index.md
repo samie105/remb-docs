@@ -612,5 +612,3 @@ Creating a materialized view is not a solution to inefficient queries. You shoul
 *   [Postgres Tutorial: Create tables](https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-create-table/)
 *   [Postgres Tutorial: Add column](https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-add-column/)
 *   [Postgres Tutorial: Views](https://www.postgresqltutorial.com/postgresql-views/)
-
-

@@ -99,5 +99,3 @@ Write a ReadableStream to a file
 Next
 
 ](/docs/guides/write-file/stream)
-
-

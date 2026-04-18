@@ -259,5 +259,3 @@ Hono is following the best practices. The cookie helper will throw an `Error` wh
 *   The cookie name starts with `__Host-`, but `domain` is set.
 *   The `maxAge` option value is greater than 400 days.
 *   The `expires` option value is 400 days later than the current time.
-
-

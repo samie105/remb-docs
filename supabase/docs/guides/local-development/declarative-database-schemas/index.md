@@ -215,5 +215,3 @@ If you need to use any of the entities below, remember to add them through [vers
 *   [`alter publication ... add table ...`](https://github.com/supabase/cli/issues/883)
 *   [create domain statements are ignored](https://github.com/supabase/cli/issues/2137)
 *   [grant statements are duplicated from default privileges](https://github.com/supabase/cli/issues/1864)
-
-

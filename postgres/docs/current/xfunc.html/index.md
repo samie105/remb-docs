@@ -31,5 +31,3 @@ Many kinds of functions can take or return certain pseudo-types (such as polymor
 It's easiest to define SQL functions, so we'll start by discussing those. Most of the concepts presented for SQL functions will carry over to the other types of functions.
 
 Throughout this chapter, it can be useful to look at the reference page of the [`CREATE FUNCTION`](https://www.postgresql.org/docs/current/sql-createfunction.html "CREATE FUNCTION") command to understand the examples better. Some examples from this chapter can be found in `funcs.sql` and `funcs.c` in the `src/tutorial` directory in the PostgreSQL source distribution.
-
-

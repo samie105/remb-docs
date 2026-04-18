@@ -77,5 +77,3 @@ Select the name of your knowledge base to view the syncing status of your data s
 After the knowledge base is ready, you can use it to [Create an agent](/docs/latest/integrate/amazon-bedrock/create-agent/).
 
 ## On this page
-
-

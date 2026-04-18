@@ -95,5 +95,3 @@ Generate a yarn-compatible lockfile
 Next
 
 ](/docs/guides/install/yarnlock)
-
-

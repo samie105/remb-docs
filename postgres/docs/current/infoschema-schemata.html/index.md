@@ -48,5 +48,3 @@ Applies to a feature not available in PostgreSQL
 `sql_path` `character_data`
 
 Applies to a feature not available in PostgreSQL
-
-

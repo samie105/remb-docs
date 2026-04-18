@@ -171,5 +171,3 @@ The following syntax was used before PostgreSQL version 9.0 and is still support
 VACUUM \[ FULL \] \[ FREEZE \] \[ VERBOSE \] \[ ANALYZE \] \[ _`table_and_columns`_ \[, ...\] \]
 
 Note that in this syntax, the options must be specified in exactly the order shown.
-
-

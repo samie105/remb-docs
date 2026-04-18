@@ -696,5 +696,3 @@ Currently, the following icons are available and can be used in any component th
 All of the above icons have `fill="currentColor"` set by default and will inherit their color from the parent element.
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

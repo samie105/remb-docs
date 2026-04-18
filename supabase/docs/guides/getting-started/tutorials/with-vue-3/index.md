@@ -182,5 +182,3 @@ Finally, add the widget to the Account page.
 The `Account.vue` component [shown earlier](#account-page) already includes the `Avatar` component.
 
 At this stage you have a fully functional application!
-
-

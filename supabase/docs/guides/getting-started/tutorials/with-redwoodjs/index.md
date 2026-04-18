@@ -263,5 +263,3 @@ At this stage you have a fully functional application!
 
 *   Learn more about [RedwoodJS](https://redwoodjs.com)
 *   Visit the [RedwoodJS Discourse Community](https://community.redwoodjs.com)
-
-

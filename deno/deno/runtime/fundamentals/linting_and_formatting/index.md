@@ -73,5 +73,3 @@ In VSCode:
 2.  Select **Format Document With...**
 3.  Select **Configure Default Formatter...**
 4.  Select **Prettier - Code formatter**
-
-

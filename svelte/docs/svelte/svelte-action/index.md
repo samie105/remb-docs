@@ -103,5 +103,3 @@ destroy?: () => void;
 previous next
 
 [svelte](/docs/svelte/svelte) [svelte/animate](/docs/svelte/svelte-animate)
-
-

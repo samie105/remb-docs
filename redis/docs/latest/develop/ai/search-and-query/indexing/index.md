@@ -699,5 +699,3 @@ When a JSONPath leads to an array or to multiple values:
 *   If a JSONPath is specified by the `RETURN`, instead of a schema attribute, all values are returned (as a JSON string).
 
 ## On this page
-
-

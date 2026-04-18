@@ -164,5 +164,3 @@ yes
 ```
 
 ## On this page
-
-

@@ -197,5 +197,3 @@ If you created custom database roles with the `LOGIN` attribute on your platform
 
 *   [Backup and Restore using the CLI](/docs/guides/platform/migrating-within-supabase/backup-restore)
 *   [Restore Dashboard backup](/docs/guides/platform/migrating-within-supabase/dashboard-restore)
-
-

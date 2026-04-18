@@ -204,5 +204,3 @@ SELECT plainto\_tsquery('supernovae stars');
  plainto\_tsquery
 -----------------
  'sn'
-
-

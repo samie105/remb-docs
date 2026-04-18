@@ -214,5 +214,3 @@ deno add jsr:@std/path
 ```
 
 [See all symbols in @std/path on](https://jsr.io/@std/path/doc)
-
-

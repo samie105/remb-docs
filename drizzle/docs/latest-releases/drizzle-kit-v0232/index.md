@@ -14,5 +14,3 @@ nav_next: {"path": "drizzle/docs/latest-releases/drizzle-orm-v1beta2/index.md", 
 ---
 
 Drizzle ORM - Drizzle Kit v0.23.2 release
-
-

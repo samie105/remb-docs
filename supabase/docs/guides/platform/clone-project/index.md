@@ -69,5 +69,3 @@ New projects are completely independent of their source, and as such can be modi
 As the entire database is copied to the new project, this will include all extensions that were enabled at the source. If the source project included extensions that are configured to carry out external operations—for example pg\_net, pg\_cron, wrappers—these should be disabled once the copy process has completed to avoid any unwanted actions from taking place.
 
 Restoring to a new project is an excellent way to manage environments more effectively. You can use this feature to create staging environments for testing, experiment with changes without risk to production data, or swiftly recover from unexpected data loss scenarios.
-
-

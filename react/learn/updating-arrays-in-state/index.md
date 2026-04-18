@@ -525,5 +525,3 @@ of
 Update an item in the shopping cart[](#update-an-item-in-the-shopping-cart "Link for this heading")
 
 Fill in the `handleIncreaseClick` logic so that pressing ”+” increases the corresponding number:
-
-

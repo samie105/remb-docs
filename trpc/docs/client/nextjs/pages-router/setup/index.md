@@ -328,5 +328,3 @@ tsx
 Browse the rest of the docs to learn more about things like [authorization](trpc/docs/server/authorization/index.md), [middlewares](trpc/docs/server/middlewares/index.md), and [error handling](trpc/docs/server/error-handling/index.md).
 
 You can also find information about [queries](trpc/docs/client/react/useQuery/index.md) and [mutations](trpc/docs/client/react/useMutation/index.md) now that you're using `@trpc/react-query`.
-
-

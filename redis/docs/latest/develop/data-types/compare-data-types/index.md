@@ -290,5 +290,3 @@ questions:
                     id: listsOutcome
 
 ## On this page
-
-

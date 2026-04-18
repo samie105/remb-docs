@@ -231,5 +231,3 @@ regression=# SELECT \* FROM pg\_buffercache\_usage\_counts();
            4 |       9 |     7 |      0
            5 |     164 |   106 |      0
 (6 rows)
-
-

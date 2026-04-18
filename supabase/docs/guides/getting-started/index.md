@@ -318,5 +318,3 @@ Ionic Angular
 Learn how to build a user management app with Ionic Angular and Supabase Database, Auth, and Storage functionality.
 
 ](/docs/guides/getting-started/tutorials/with-ionic-angular)
-
-

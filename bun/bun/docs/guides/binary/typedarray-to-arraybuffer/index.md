@@ -74,5 +74,3 @@ Convert a Uint8Array to a Buffer
 Next
 
 ](/docs/guides/binary/typedarray-to-buffer)
-
-

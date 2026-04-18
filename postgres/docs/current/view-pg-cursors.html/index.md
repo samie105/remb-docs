@@ -61,5 +61,3 @@ The verbatim query string submitted to declare this cursor
 The time at which the cursor was declared
 
 The `pg_cursors` view is read-only.
-
-

@@ -80,5 +80,3 @@ The referenced object (which must be a tablespace) is mentioned as the tablespac
 Other dependency flavors might be needed in future. Note in particular that the current definition only supports roles and tablespaces as referenced objects.
 
 As in the `pg_depend` catalog, most objects created during initdb are considered “pinned”. No entries are made in `pg_shdepend` that would have a pinned object as either referenced or dependent object.
-
-

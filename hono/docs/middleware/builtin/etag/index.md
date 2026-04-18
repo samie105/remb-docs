@@ -73,5 +73,3 @@ The headers that you want to retain in the 304 Response.
 ### optional generateDigest: `(body: Uint8Array) => ArrayBuffer | Promise<ArrayBuffer>` [​](#generatedigest-body-uint8array-arraybuffer-promise-arraybuffer)
 
 A custom digest generation function. By default, it uses `SHA-1`. This function is called with the response body as a `Uint8Array` and should return a hash as an `ArrayBuffer` or a Promise of one.
-
-

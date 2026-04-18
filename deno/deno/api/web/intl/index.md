@@ -61,5 +61,3 @@ T
 [Intl.Formattable](./././~/Intl.Formattable "Intl.Formattable")
 
 Types that can be formatted using Intl.DateTimeFormat methods.
-
-

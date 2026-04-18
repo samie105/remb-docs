@@ -136,5 +136,3 @@ Only show advisories with severity greater or equal to the one specified.
 `--socket`
 
 Check against socket.dev vulnerability database.
-
-

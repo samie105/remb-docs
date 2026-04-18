@@ -63,5 +63,3 @@ To create a database in your Redis Cloud account:
     
 
 You can now [connect to your database](/docs/latest/operate/rc/databases/connect/) and start working with Redis. Once your app is ready to scale up, you can [upgrade to a paid Essentials plan](/docs/latest/operate/rc/subscriptions/view-essentials-subscription/#upgrade-plan) at any time.
-
-

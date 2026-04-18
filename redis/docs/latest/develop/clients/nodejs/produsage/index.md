@@ -89,5 +89,3 @@ _Smart client handoffs (SCH)_ is a feature of Redis Cloud and Redis Software ser
 See [Smart client handoffs](/docs/latest/develop/clients/sch/) for more information about SCH and [Connect using Smart client handoffs](/docs/latest/develop/clients/nodejs/connect/#connect-using-smart-client-handoffs-sch) for example code.
 
 ## On this page
-
-

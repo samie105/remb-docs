@@ -134,5 +134,3 @@ bunx drizzle-kit up --dialect=postgresql --out=./migrations-folder
 ```
 
 ![](https://orm.drizzle.team/_astro/up_mysql.FpcTUeNG_Zl2NXa.webp)
-
-

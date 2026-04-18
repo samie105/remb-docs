@@ -283,5 +283,3 @@ Use the **Database list** to check the status of your databases.
 *   [Redis Cloud pricing](https://redis.io/pricing/#monthly)
 
 ## On this page
-
-

@@ -24,5 +24,3 @@ nav_next: {"path": "astro/en/reference/errors/cannot-extract-font-type/index.md"
 The memory cache provider’s `query.include` and `query.exclude` options are mutually exclusive. Use `include` to allowlist specific query parameters that affect the cache key, or `exclude` to blocklist parameters. When `include` is set, all other parameters are automatically ignored.
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

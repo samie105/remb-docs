@@ -175,5 +175,3 @@ CREATE PUBLICATION users\_filtered FOR TABLE users (user\_id, firstname);
 ## Compatibility
 
 `CREATE PUBLICATION` is a PostgreSQL extension.
-
-

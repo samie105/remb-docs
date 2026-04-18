@@ -317,5 +317,3 @@ v
 [constants.USE\_MAIN\_CONTEXT\_DEFAULT\_LOADER](.././vm/~/constants.USE_MAIN_CONTEXT_DEFAULT_LOADER "constants.USE_MAIN_CONTEXT_DEFAULT_LOADER")
 
 A constant that can be used as the `importModuleDynamically` option to `vm.Script` and `vm.compileFunction()` so that Node.js uses the default ESM loader from the main context to load the requested module.
-
-

@@ -20,5 +20,3 @@ The @std/log package is likely to be removed in the future; consider using [Open
 Last updated on October 10, 2025
 
 ## Did you find what you needed?
-
-

@@ -81,5 +81,3 @@ To add the Redis Sink connector to your Confluent Cloud environment from the Red
     
 
 ## On this page
-
-

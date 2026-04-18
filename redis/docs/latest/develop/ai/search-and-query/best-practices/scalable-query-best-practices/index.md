@@ -155,5 +155,3 @@ Improvements:
 *   [`DIALECT 2`](/docs/latest/develop/ai/search-and-query/advanced-concepts/dialects/#dialect-2): enables the latest Redis Search syntax and features, ensuring compatibility with modern capabilities.
 
 ## On this page
-
-

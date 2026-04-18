@@ -43,5 +43,3 @@ This is the General Availability (GA) release of Redis Insight 2.56.
 *   [#3730](https://github.com/RedisInsight/RedisInsight/pull/3730) Date and time format customization to make the data more intuitive in Redis Insight. This flexibility helps match your local time zone or standardize it to UTC for better alignment in time-critical operations across global teams.
 
 ## On this page
-
-

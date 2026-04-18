@@ -43,5 +43,3 @@ struct JitProviderCallbacks
 };
 
 extern void \_PG\_jit\_provider\_init(JitProviderCallbacks \*cb);
-
-

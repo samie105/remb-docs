@@ -252,5 +252,3 @@ Alternatively you can specify the `.d.ts` file in the `deno.json` configuration 
 ```
 
 This will also augment the global scope with the `polyfilledAPI` function.
-
-

@@ -163,5 +163,3 @@ For each Astro template expression, can you predict the HTML (if any!) that will
 *   [Dynamic expressions in Astro](/en/reference/astro-syntax/#jsx-like-expressions)
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

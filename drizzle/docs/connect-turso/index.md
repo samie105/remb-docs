@@ -201,5 +201,3 @@ const result = await db.select().from(users);
 ```
 
 #### What’s next?[](#whats-next)
-
-

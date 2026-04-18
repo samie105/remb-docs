@@ -130,5 +130,3 @@ const fastify = Fastify({  logger: {    stream: stream,    redact: ['req.headers
 ```
 
 See [https://getpino.io/#/docs/redaction](https://getpino.io/#/docs/redaction) for more details.
-
-

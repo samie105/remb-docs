@@ -615,5 +615,3 @@ See [Vite DevTools](https://github.com/vitejs/devtools) for more details.
 Enable future breaking changes to prepare for a smooth migration to the next major version of Vite. The list may be updated, added, or removed at any time as new features are developed.
 
 See the [Breaking Changes](https://vite.dev/changes/) page for details of the possible options.
-
-

@@ -33,5 +33,3 @@ Only instances of [Response](https://developer.mozilla.org/en-US/docs/Web/API/Re
 *   [Response](/en/guides/on-demand-rendering/#response)
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

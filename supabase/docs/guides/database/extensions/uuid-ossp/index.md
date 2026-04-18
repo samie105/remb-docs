@@ -67,5 +67,3 @@ Automatically create a unique, random ID in a table:
 
 *   [Choosing a Postgres Primary Key](/blog/choosing-a-postgres-primary-key)
 *   [The Basics Of Postgres `UUID` Data Type](https://www.pgtutorial.com/postgresql-tutorial/postgresql-uuid/)
-
-

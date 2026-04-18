@@ -109,5 +109,3 @@ The SQL standard allows cursors only in embedded SQL and in modules. PostgreSQL 
 According to the SQL standard, changes made to insensitive cursors by `UPDATE ... WHERE CURRENT OF` and `DELETE ... WHERE CURRENT OF` statements are visible in that same cursor. PostgreSQL treats these statements like all other data changing statements in that they are not visible in insensitive cursors.
 
 Binary cursors are a PostgreSQL extension.
-
-

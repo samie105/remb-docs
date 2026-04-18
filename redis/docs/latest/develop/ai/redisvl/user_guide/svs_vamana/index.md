@@ -643,5 +643,3 @@ Cleaned up svs_demo index
 ```
 
 ## On this page
-
-

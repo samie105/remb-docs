@@ -91,5 +91,3 @@ updated\_at
 `string`
 
 The timestamp that the identity was last updated.
-
-

@@ -54,5 +54,3 @@ Dynatrace dashboards can be filtered using the text area. For example, when view
 Certain types of data do not know the name of the database from which they were drawn. The dashboard should have a list of database names and ids; use the id value when filtering input to the dashboard.
 
 ## On this page
-
-

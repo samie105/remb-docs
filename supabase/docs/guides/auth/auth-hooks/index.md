@@ -262,5 +262,3 @@ Password verification
 Add additional checks to the password verification flow
 
 ](/docs/guides/auth/auth-hooks/password-verification-hook)
-
-

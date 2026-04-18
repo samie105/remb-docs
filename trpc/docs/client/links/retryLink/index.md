@@ -143,5 +143,3 @@ ts
 When using `retryLink` with subscriptions that use [`tracked()`](trpc/docs/server/subscriptions/index.md#tracked), the link will automatically include the last known event ID when retrying. This ensures that when a subscription reconnects, it can resume from where it left off without missing any events.
 
 For example, if you're using Server-sent Events (SSE) with `httpSubscriptionLink`, the `retryLink` will automatically handle reconnecting with the last event ID when errors like `401 Unauthorized` occur.
-
-

@@ -1193,5 +1193,3 @@ A limitation of pgbench is that it can itself become the bottleneck when trying 
 ### Security
 
 If untrusted users have access to a database that has not adopted a [secure schema usage pattern](https://www.postgresql.org/docs/current/ddl-schemas.html#DDL-SCHEMAS-PATTERNS "5.10.6. Usage Patterns"), do not run pgbench in that database. pgbench uses unqualified names and does not manipulate the search path.
-
-

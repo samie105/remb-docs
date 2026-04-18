@@ -803,5 +803,3 @@ After the build, the `<meta>` element for this individual page will add your has
 ```
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

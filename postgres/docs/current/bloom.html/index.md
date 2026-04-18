@@ -166,5 +166,3 @@ DEFAULT FOR TYPE text USING bloom AS
 *   `bloom` access method doesn't support `UNIQUE` indexes.
     
 *   `bloom` access method doesn't support searching for `NULL` values.
-
-

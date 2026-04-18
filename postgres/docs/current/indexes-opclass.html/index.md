@@ -65,5 +65,3 @@ SELECT am.amname AS index\_method,
 ### Tip
 
 [psql](https://www.postgresql.org/docs/current/app-psql.html "psql") has commands `\dAc`, `\dAf`, and `\dAo`, which provide slightly more sophisticated versions of these queries.
-
-

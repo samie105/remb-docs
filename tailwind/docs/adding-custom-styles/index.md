@@ -450,5 +450,3 @@ When a custom variant has multiple rules, they can be nested within each other:
 ```
 @custom-variant any-hover {  @media (any-hover: hover) {    &:hover {      @slot;    }  }}
 ```
-
-

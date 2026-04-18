@@ -270,5 +270,3 @@ References to `process.env.API_URL` in your JavaScript are replaced with the lit
 *   **Code splitting** is not supported — `--splitting` cannot be used with `--compile --target=browser`
 *   **Large assets** increase file size since they’re base64-encoded (33% overhead vs the raw binary)
 *   **External URLs** (CDN links, absolute URLs) are left as-is — only relative paths are inlined
-
-

@@ -48,5 +48,3 @@ Foreign server version information, if specified upon creation
 `authorization_identifier` `sql_identifier`
 
 Name of the owner of the foreign server
-
-

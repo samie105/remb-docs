@@ -29,5 +29,3 @@ The `Astro.clientAddress` property cannot be used inside prerendered routes.
 *   [Astro.clientAddress](/en/reference/api-reference/#clientaddress)
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

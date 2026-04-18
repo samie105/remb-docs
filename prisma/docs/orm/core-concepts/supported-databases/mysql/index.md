@@ -267,5 +267,3 @@ PlanetScale production branches are read-only for direct DDL. If you get error P
 *   Using a deploy request to update production
 
 [Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/core-concepts/supported-databases/mysql.mdx)
-
-

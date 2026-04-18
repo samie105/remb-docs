@@ -157,5 +157,3 @@ CREATE TABLE "my_schema"."users" (
   "color" "my_schema"."colors" DEFAULT 'red'
 );
 ```
-
-

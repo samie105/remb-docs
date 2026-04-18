@@ -144,5 +144,3 @@ While it's rare that you wouldn't want to forward the client's headers to the se
 If you don't remove the `connection` header, the data fetching will fail with `TRPCClientError: fetch failed` because `connection` is a [forbidden header name](https://developer.mozilla.org/en-US/docs/Glossary/Forbidden_header_name).
 
 When you enable SSR, tRPC will use `getInitialProps` to prefetch all queries on the server. That causes problems [like this](https://github.com/trpc/trpc/issues/596) when you use `getServerSideProps` in a page and solving it is out of our hands. Though, you can use [SSG Helpers](trpc/docs/v9/ssg-helpers/index.md) to prefetch queries in `getStaticProps` or `getServerSideProps`.
-
-

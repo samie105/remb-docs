@@ -102,5 +102,3 @@ A reference to `stdout` which can be used to write directly to `stdout`. It impl
 *   [writable](./././~/Deno.stdout#property_writable)
 *   [write](./././~/Deno.stdout#method_write_0)
 *   [writeSync](./././~/Deno.stdout#method_writesync_0)
-
-

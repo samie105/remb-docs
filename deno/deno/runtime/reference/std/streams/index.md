@@ -43,5 +43,3 @@ deno add jsr:@std/streams
 ```
 
 [See all symbols in @std/streams on](https://jsr.io/@std/streams/doc)
-
-

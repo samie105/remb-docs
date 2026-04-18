@@ -22,5 +22,3 @@ nav_next: {"path": "astro/en/reference/errors/remote-image-not-allowed/index.md"
 Astro tried to render a content collection entry that was undefined. This can happen if you try to render an entry that does not exist.
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

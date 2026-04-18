@@ -174,5 +174,3 @@ In the SQL standard, the notion of objects in the same schema being owned by dif
 Also, there is no concept of a `public` schema in the SQL standard. For maximum conformance to the standard, you should not use the `public` schema.
 
 Of course, some SQL database systems might not implement schemas at all, or provide namespace support by allowing (possibly limited) cross-database access. If you need to work with those systems, then maximum portability would be achieved by not using schemas at all.
-
-

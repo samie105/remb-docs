@@ -83,5 +83,3 @@ This command conforms to the SQL standard, with these PostgreSQL extensions:
 *   The `IF EXISTS` option
     
 *   The ability to specify argument modes and names
-
-

@@ -44,5 +44,3 @@ Since [v1.171.0](https://github.com/supabase/cli/releases/tag/v1.171.0) the Supa
 ![Debugging in Chrome DevTools.](/docs/img/guides/functions/debug-chrome-devtools.png)
 
 Now you should have Chrome DevTools configured and ready to debug your functions.
-
-

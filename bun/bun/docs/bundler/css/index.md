@@ -1100,5 +1100,3 @@ styles.module.css
   color: red;
 }
 ```
-
-

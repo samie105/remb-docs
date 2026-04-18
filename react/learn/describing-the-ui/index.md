@@ -121,5 +121,3 @@ Read **[Your UI as a Tree](react/learn/understanding-your-ui-as-a-tree/index.md)
 Head over to [Your First Component](react/learn/your-first-component/index.md) to start reading this chapter page by page!
 
 Or, if you’re already familiar with these topics, why not read about [Adding Interactivity](react/learn/adding-interactivity/index.md)?
-
-

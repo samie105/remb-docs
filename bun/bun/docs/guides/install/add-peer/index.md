@@ -97,5 +97,3 @@ Add a Git dependency
 Next
 
 ](/docs/guides/install/add-git)
-
-

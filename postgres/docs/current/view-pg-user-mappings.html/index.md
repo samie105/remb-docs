@@ -54,5 +54,3 @@ To protect password information stored as a user mapping option, the `umoptions`
 *   current user is the server owner and mapping is for `PUBLIC`
     
 *   current user is a superuser
-
-

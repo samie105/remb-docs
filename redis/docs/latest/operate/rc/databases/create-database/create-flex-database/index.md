@@ -138,5 +138,3 @@ During the **Sizing** step, when you are provisioning your databases, you can se
 Continue with the instructions to [create your database](/docs/latest/operate/rc/databases/create-database/create-pro-database-new/#custom-settings).
 
 ## On this page
-
-

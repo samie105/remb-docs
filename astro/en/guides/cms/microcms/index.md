@@ -207,5 +207,3 @@ nav_next: {"path": "astro/en/guides/cms/optimizely/index.md", "title": "Optimize
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

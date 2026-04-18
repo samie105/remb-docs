@@ -56,5 +56,3 @@ Name of the database that contains this information schema
 [Home](https://www.postgresql.org/docs/current/index.html "PostgreSQL 18.3 Documentation")
 
  35.4. `administrable_role_​authorizations`
-
-

@@ -18,5 +18,3 @@ As with any server daemon that is accessible to the outside world, it is advisab
 Pre-packaged versions of PostgreSQL will typically create a suitable user account automatically during package installation.
 
 To add a Unix user account to your system, look for a command `useradd` or `adduser`. The user name postgres is often used, and is assumed throughout this book, but you can use another name if you like.
-
-

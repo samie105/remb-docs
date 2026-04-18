@@ -97,5 +97,3 @@ bun run ./.output/server/index.mjs
 * * *
 
 Refer to the [Nuxt website](https://nuxt.com/docs) for complete documentation.
-
-

@@ -126,5 +126,3 @@ Below is the component that implements the challenge and verify logic.
 *   On successful verification, the client library will refresh the session in the background automatically and finally call the `onSuccess` callback, which will show the authenticated `App` component on screen.
 
 ## Frequently asked questions[#](#frequently-asked-questions)
-
-

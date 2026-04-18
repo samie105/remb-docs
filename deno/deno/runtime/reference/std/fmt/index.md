@@ -26,5 +26,3 @@ deno add jsr:@std/fmt
 ```
 
 [See all symbols in @std/fmt on](https://jsr.io/@std/fmt/doc)
-
-

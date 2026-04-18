@@ -72,5 +72,3 @@ You want to update the home page of your existing website. What steps do you tak
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

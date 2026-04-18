@@ -121,5 +121,3 @@ _`.`\-based path argument :_ 
 Reply: Array<BulkString>
 
 ## On this page
-
-

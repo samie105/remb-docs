@@ -361,5 +361,3 @@ View raw throughput table
 Don't forget to run your own benchmarks to make sure that the performance is acceptable for your use case.
 
 We are making many improvements to Realtime's Postgres Changes. If you are uncertain about the performance of your use case, reach out using [Support Form](/dashboard/support/new) and we will be happy to help you. We have a team of engineers that can advise you on the best solution for your use-case.
-
-

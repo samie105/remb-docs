@@ -152,5 +152,3 @@ Specifies whether to use color in diagnostic messages. Possible values are `alwa
 This command must not be used when the server is running. `pg_resetwal` will refuse to start up if it finds a server lock file in the data directory. If the server crashed then a lock file might have been left behind; in that case you can remove the lock file to allow `pg_resetwal` to run. But before you do so, make doubly certain that there is no server process still alive.
 
 `pg_resetwal` works only with servers of the same major version.
-
-

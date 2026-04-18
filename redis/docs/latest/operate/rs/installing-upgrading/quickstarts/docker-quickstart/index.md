@@ -191,5 +191,3 @@ This topology minimizes interference between containers, allowing for the testin
 [![](/docs/latest/images/rs/RS-Docker-cluster-multi-host.png)](/docs/latest/images/rs/RS-Docker-cluster-multi-host.png)
 
 ## On this page
-
-

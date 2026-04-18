@@ -106,5 +106,3 @@ Reset the `captcha` after the signUp function is called using the following code
 In order to test that this works locally we will need to use something like [ngrok](https://ngrok.com/) or add an entry to your hosts file. You can read more about this in the [hCaptcha docs](https://docs.hcaptcha.com/#local-development).
 
 Run the application and you should now be provided with a CAPTCHA challenge.
-
-

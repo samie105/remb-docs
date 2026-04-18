@@ -457,5 +457,3 @@ This page layout shows one header when visiting the home page, and a different h
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

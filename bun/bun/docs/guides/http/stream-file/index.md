@@ -65,5 +65,3 @@ Bun.serve({
 See [Docs > API > File I/O](bun/bun/docs/runtime/file-io/index.md#writing-files-bun-write) for complete documentation of `Bun.write()`.
 
 Was this page helpful?
-
-

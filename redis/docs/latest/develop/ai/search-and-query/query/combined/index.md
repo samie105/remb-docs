@@ -1805,5 +1805,3 @@ console.log(res7); // >>>
 The [vector search article](/docs/latest/develop/ai/search-and-query/query/vector-search/) provides further details about vector queries in general.
 
 ## On this page
-
-

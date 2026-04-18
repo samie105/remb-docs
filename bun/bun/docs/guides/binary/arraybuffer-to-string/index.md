@@ -64,5 +64,3 @@ Convert an ArrayBuffer to a Buffer
 Next
 
 ](/docs/guides/binary/arraybuffer-to-buffer)
-
-

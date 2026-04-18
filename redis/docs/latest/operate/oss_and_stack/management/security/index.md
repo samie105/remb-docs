@@ -127,5 +127,3 @@ Redis does not require root privileges to run. It is recommended to run it as an
 The other pages in this section cover security topics in more detail.
 
 ## On this page
-
-

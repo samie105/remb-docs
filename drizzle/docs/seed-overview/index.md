@@ -605,5 +605,3 @@ The `with` option works for one-to-many relationships. For example, if you have 
 #### Type limitations for the third parameter in Drizzle tables:[](#type-limitations-for-the-third-parameter-in-drizzle-tables)
 
 Currently, we do not have type support for the third parameter in Drizzle tables. While it will work at runtime, it will not function correctly at the type level
-
-

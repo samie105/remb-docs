@@ -266,5 +266,3 @@ Shell
 Next
 
 ](/docs/runtime/shell)
-
-

@@ -322,5 +322,3 @@ Bun’s catalog system maintains consistency across your monorepo without introd
 ## Publishing
 
 When you run `bun publish` or `bun pm pack`, Bun automatically replaces `catalog:` references in your `package.json` with the resolved version numbers. The published package includes regular semver strings and no longer depends on your catalog definitions.
-
-

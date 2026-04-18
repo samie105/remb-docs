@@ -150,5 +150,3 @@ tsx
   `createUserMutation.mutate({ name: 'Jerry' });`
 
 `}`
-
-

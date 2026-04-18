@@ -364,5 +364,3 @@ Set a specific cwd
 boolean
 
 Print this help menu. Alias: `-h`
-
-

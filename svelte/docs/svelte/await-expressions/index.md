@@ -267,5 +267,3 @@ Effects run in a slightly different order when the `experimental.async` option i
 previous next
 
 [class](/docs/svelte/class) [Scoped styles](/docs/svelte/scoped-styles)
-
-

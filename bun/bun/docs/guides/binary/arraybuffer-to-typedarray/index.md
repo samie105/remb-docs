@@ -88,5 +88,3 @@ Convert a Buffer to a string
 Next
 
 ](/docs/guides/binary/buffer-to-string)
-
-

@@ -46,5 +46,3 @@ const sharedAddressSchema = {  $id: 'sharedAddress',  type: 'object',  required:
 ```
 
 > ℹ️ Note: You can mix up the `$ref-way` and the `replace-way` when using `fastify.addSchema`.
-
-

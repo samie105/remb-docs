@@ -37,5 +37,3 @@ To do this, you will:
  *    I am ready to take my page design to the next level with layouts!
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

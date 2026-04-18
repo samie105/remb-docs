@@ -142,5 +142,3 @@ However update messages received via Pub/Sub should not substitute the above pro
 For additional information or to discuss specific aspects of this guidelines, please drop a message to the [Redis Google Group](https://groups.google.com/group/redis-db).
 
 ## On this page
-
-

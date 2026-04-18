@@ -62,5 +62,3 @@ SPI\_getrelname 
 [Home](https://www.postgresql.org/docs/current/index.html "PostgreSQL 18.3 Documentation")
 
  SPI\_result\_code\_string
-
-

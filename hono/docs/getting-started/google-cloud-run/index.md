@@ -170,5 +170,3 @@ For information on containerizing, please refer to:
 *   [Node.js](hono/docs/getting-started/nodejs/index.md#building-deployment)
 *   [Bun](https://bun.com/guides/ecosystem/docker)
 *   [Deno](https://docs.deno.com/examples/google_cloud_run_tutorial)
-
-

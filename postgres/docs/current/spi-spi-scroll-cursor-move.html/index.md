@@ -63,5 +63,3 @@ Direction values other than `FETCH_FORWARD` may fail if the cursor's plan was no
 ## Submit correction
 
 If you see anything in the documentation that is not correct, does not match your experience with the particular feature or requires further clarification, please use [this form](/account/comments/new/18/spi-spi-scroll-cursor-move.html/) to report a documentation issue.
-
-

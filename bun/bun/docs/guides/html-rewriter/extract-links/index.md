@@ -79,5 +79,3 @@ const websiteLinks = await extractLinksFromURL("https://example.com");
 * * *
 
 See [Docs > API > HTMLRewriter](bun/bun/docs/runtime/html-rewriter/index.md) for complete documentation on HTML transformation with Bun.
-
-

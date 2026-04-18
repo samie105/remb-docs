@@ -74,5 +74,3 @@ Some white papers and technical reports from the original POSTGRES development t
 \[ston90b\] “[On Rules, Procedures, Caching and Views in Database Systems](https://dsf.berkeley.edu/papers/ERL-M90-36.pdf)”. M. Stonebraker, A. Jhingran, J. Goh, and S. Potamianos. ACM-SIGMOD Conference on Management of Data, June 1990.
 
 \[ston92\] “ [An overview of the Sequoia 2000 project](https://dsf.berkeley.edu/papers/S2K-91-05.pdf) ”. M. Stonebraker. _Digest of Papers COMPCON Spring 1992_. 1992. 383–388.
-
-

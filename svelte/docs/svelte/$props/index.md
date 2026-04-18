@@ -371,5 +371,3 @@ This is useful for linking elements via attributes like `for` and `aria-labelled
 previous next
 
 [$effect](/docs/svelte/$effect) [$bindable](/docs/svelte/$bindable)
-
-

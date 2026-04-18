@@ -62,5 +62,3 @@ sudo systemctl start redis
 ```
 
 ## On this page
-
-

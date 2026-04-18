@@ -174,5 +174,3 @@ ts
   `output: DataTransformer;`
 
 `};`
-
-

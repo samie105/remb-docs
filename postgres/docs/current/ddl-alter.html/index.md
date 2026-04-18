@@ -133,5 +133,3 @@ ALTER TABLE products RENAME COLUMN product\_no TO product\_number;
 To rename a table:
 
 ALTER TABLE products RENAME TO items;
-
-

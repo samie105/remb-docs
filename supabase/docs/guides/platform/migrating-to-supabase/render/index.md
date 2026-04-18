@@ -69,5 +69,3 @@ The fastest way to migrate your database is with the Supabase migration tool on 
 ## Enterprise[#](#enterprise)
 
 [Contact us](https://forms.supabase.com/enterprise) if you need more help migrating your project.
-
-

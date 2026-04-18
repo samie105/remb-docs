@@ -255,5 +255,3 @@ bun build --compile --target=bun-windows-x64 --define PLATFORM='"windows"' src/a
 *   [Define constants at runtime](bun/bun/docs/guides/runtime/define-constant/index.md) - Using `--define` with `bun run`
 *   [Building executables](bun/bun/docs/bundler/executables/index.md) - Complete guide to `bun build --compile`
 *   [Bundler API](bun/bun/docs/bundler/index.md) - Full bundler documentation including `define` option
-
-

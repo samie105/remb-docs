@@ -54,5 +54,3 @@ DROP LANGUAGE plsample;
 ## Compatibility
 
 There is no `DROP LANGUAGE` statement in the SQL standard.
-
-

@@ -151,5 +151,3 @@ const orders = await prisma.order.findMany({
 ### [Externally managed tables](#externally-managed-tables)
 
 Sometimes, you might not want Prisma ORM to manage specific tables, such as ones handled by another team or service (e.g., Auth0 or Clerk tables). In such cases, you can mark these as **externally managed tables** using the `tables.external` configuration option in your [Prisma Config file](prisma/docs/orm/reference/prisma-config-reference/index.md#tablesexternal-and-enumsexternal). Learn more about [externally managed tables](prisma/docs/orm/prisma-schema/data-model/externally-managed-tables/index.md).
-
-

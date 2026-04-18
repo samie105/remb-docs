@@ -71,5 +71,3 @@ Read a file to a Buffer
 Next
 
 ](/docs/guides/read-file/buffer)
-
-

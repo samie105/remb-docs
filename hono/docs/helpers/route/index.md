@@ -171,5 +171,3 @@ subApp.get('/posts/:id', (c) => {
 
 app.route('/:sub', subApp)
 ```
-
-

@@ -16,5 +16,3 @@ nav_next: {"path": "redis/docs/latest/develop/ai/search-and-query/best-practices
 # Administration
 
 Redis Search Administration
-
-

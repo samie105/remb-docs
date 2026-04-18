@@ -243,5 +243,3 @@ const usersTable = mysqlTable("users", {
   name: customText("name").notNull(),
 });
 ```
-
-

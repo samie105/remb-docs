@@ -48,5 +48,3 @@ more -x4
 less -x4
 
 to make them show tabs appropriately.
-
-

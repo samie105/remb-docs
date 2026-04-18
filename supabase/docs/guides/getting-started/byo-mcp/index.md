@@ -154,5 +154,3 @@ You can find ready-to-use MCP server implementations here:
 *   [OAuth 2.1 Server](/docs/guides/auth/oauth-server)
 *   [MCP Authentication](/docs/guides/auth/oauth-server/mcp-authentication)
 *   [Building MCP servers with mcp-lite](/docs/guides/functions/examples/mcp-server-mcp-lite) - Alternative lightweight framework
-
-

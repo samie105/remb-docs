@@ -321,5 +321,3 @@ export interface ViteFetchResult {
   invalidate: boolean
 }
 ```
-
-

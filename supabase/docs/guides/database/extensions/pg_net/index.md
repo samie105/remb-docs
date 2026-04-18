@@ -216,5 +216,3 @@ More examples can be seen on the [Extension's GitHub page](https://github.com/su
 
 *   Source code: [github.com/supabase/pg\_net](https://github.com/supabase/pg_net/)
 *   Official Docs: [github.com/supabase/pg\_net](https://github.com/supabase/pg_net/)
-
-

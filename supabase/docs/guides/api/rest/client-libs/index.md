@@ -94,5 +94,3 @@ R
 [supabaseR](https://github.com/deepanshKhurana/supabaseR/)
 
 [Docs](https://deepanshkhurana.github.io/supabaseR/)
-
-

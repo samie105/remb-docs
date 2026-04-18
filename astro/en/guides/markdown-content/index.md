@@ -280,5 +280,3 @@ Be sure that you understand these limitations before implementing this in your p
 ```
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

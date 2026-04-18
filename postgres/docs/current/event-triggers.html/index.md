@@ -46,5 +46,3 @@ Like regular triggers, event triggers can be written in any procedural language 
 [Home](https://www.postgresql.org/docs/current/index.html "PostgreSQL 18.3 Documentation")
 
  38.1. Overview of Event Trigger Behavior
-
-

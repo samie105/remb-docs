@@ -1055,5 +1055,3 @@ With an XStream outbound server:
 *   Multiple consumers can be attached to the same outbound server if needed.
 
 ## On this page
-
-

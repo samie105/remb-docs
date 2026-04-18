@@ -54,5 +54,3 @@ Test the new server with:
 ```
 $ npx h2url http://localhost:3000
 ```
-
-

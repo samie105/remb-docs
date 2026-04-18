@@ -366,5 +366,3 @@ PGAudit's [official documentation](https://www.pgaudit.org) focuses on system an
 *   [Database Function Logging](/docs/guides/database/functions#general-logging)
 *   [Supabase Logging](/docs/guides/platform/logs)
 *   [Self-Hosting Logs](/docs/reference/self-hosting-analytics/introduction)
-
-

@@ -24,5 +24,3 @@ Astro encountered an unknown error loading your content collections. This can be
 If you can reliably cause this error to happen, we’d appreciate if you could [open an issue](https://astro.build/issues/)
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

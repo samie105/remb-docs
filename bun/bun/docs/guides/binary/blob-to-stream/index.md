@@ -63,5 +63,3 @@ Convert a Uint8Array to a string
 Next
 
 ](/docs/guides/binary/typedarray-to-string)
-
-

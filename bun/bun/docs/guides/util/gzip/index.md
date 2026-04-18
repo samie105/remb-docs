@@ -67,5 +67,3 @@ Compress and decompress data with DEFLATE
 Next
 
 ](/docs/guides/util/deflate)
-
-

@@ -1727,5 +1727,3 @@ v
 [statSync](.././fs/~/statSync "statSync")
 
 Synchronous stat(2) - Get file status.
-
-

@@ -134,5 +134,3 @@ pnpm drizzle-kit check --dialect=postgresql --out=./migrations-folder
 bunx drizzle-kit check --dialect=postgresql
 bunx drizzle-kit check --dialect=postgresql --out=./migrations-folder
 ```
-
-

@@ -161,5 +161,3 @@ Always require explicit user approval for MCP clients:
 *   [Secure with RLS](/docs/guides/auth/oauth-server/token-security) - Create granular policies for MCP clients
 *   [OAuth flows](/docs/guides/auth/oauth-server/oauth-flows) - Deep dive into OAuth implementation
 *   [MCP Specification](https://modelcontextprotocol.io/docs) - Official MCP documentation
-
-

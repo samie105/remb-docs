@@ -161,5 +161,3 @@ Without expression and ndistinct statistics, the planner has no information abou
 ## Compatibility
 
 There is no `CREATE STATISTICS` command in the SQL standard.
-
-

@@ -161,5 +161,3 @@ For every timed event that has elapsed `processTimeEvents` calls the registered 
 That's all.
 
 ## On this page
-
-

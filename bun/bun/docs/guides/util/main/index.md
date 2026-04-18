@@ -86,5 +86,3 @@ Build an app with Astro and Bun
 Next
 
 ](/docs/guides/ecosystem/astro)
-
-

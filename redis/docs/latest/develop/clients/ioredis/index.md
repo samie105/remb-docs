@@ -168,5 +168,3 @@ redis.disconnect();
 The [Github repository](https://github.com/redis/ioredis) has useful information, including [API docs](https://redis.github.io/ioredis/index.html) and a set of [code examples](https://github.com/redis/ioredis/tree/main/examples).
 
 ## On this page
-
-

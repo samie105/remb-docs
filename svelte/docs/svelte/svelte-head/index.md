@@ -33,5 +33,3 @@ As with `<svelte:window>`, `<svelte:document>` and `<svelte:body>`, this element
 previous next
 
 [<svelte:body>](/docs/svelte/svelte-body) [<svelte:element>](/docs/svelte/svelte-element)
-
-

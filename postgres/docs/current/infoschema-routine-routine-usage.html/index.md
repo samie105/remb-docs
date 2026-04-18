@@ -48,5 +48,3 @@ Name of the schema that contains the function that is used by the first function
 `routine_name` `sql_identifier`
 
 The “specific name” of the function that is used by the first function.
-
-

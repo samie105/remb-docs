@@ -136,5 +136,3 @@ CREATE TEMP TABLE films\_recent ON COMMIT DROP AS
 *   The `WITH` clause is a PostgreSQL extension; storage parameters are not in the standard.
     
 *   The PostgreSQL concept of tablespaces is not part of the standard. Hence, the clause `TABLESPACE` is an extension.
-
-

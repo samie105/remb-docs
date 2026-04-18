@@ -66,5 +66,3 @@ Copy a file to another location
 Next
 
 ](/docs/guides/write-file/file-cp)
-
-

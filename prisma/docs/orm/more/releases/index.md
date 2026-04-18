@@ -89,5 +89,3 @@ Given a version number `MAJOR.MINOR.PATCH`, Prisma ORM's version number is incre
 > **Note:** Up until version `2.28.0`, Prisma ORM did not follow SemVer versioning strictly. This means that releases in the `2.MINOR.PATCH` range, `MINOR` versions may have included breaking changes. To learn more about Prisma ORM's adoption of SemVer, check out the [blog post](https://www.prisma.io/blog/prisma-adopts-semver-strictly).
 
 [Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/more/releases.mdx)
-
-

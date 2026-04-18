@@ -386,5 +386,3 @@ new <string, string>(iterable?: Iterable<readonly [string, string]> | null | und
 previous next
 
 [<svelte:self>](/docs/svelte/legacy-svelte-self)
-
-

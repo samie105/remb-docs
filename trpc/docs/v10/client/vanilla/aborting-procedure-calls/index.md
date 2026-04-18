@@ -50,5 +50,3 @@ ts
 `// 3. Cancel the request if needed`
 
 `ac.abort();`
-
-

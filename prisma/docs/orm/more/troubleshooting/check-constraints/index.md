@@ -115,5 +115,3 @@ Error: new row for relation "product" violates check constraint "price_value_che
 Check constraints are resolved in alphabetical order, and only the first constraint to fail appears in the error message.
 
 [Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/more/troubleshooting/check-constraints.mdx)
-
-

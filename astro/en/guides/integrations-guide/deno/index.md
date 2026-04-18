@@ -22,5 +22,3 @@ The Deno adapter was previously maintained by Astro but now is maintained by Den
 If you are currently using this Astro adapter, you will need to migrate to the new Deno version or to [add another adapter](/en/guides/on-demand-rendering/) to continue using SSR in your project.
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

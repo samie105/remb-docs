@@ -322,5 +322,3 @@ This document provides a wide spectrum of knowledge to administer SELinux on you
 [Fedora SELinux FAQ](https://fedoraproject.org/wiki/SELinux_FAQ)
 
 This document answers frequently asked questions about SELinux. It focuses primarily on Fedora, but is not limited to Fedora.
-
-

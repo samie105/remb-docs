@@ -78,5 +78,3 @@ You can connect Auth information to your own objects using [database triggers](/
 Make sure any views you create for Auth data are protected.
 
 Starting in Postgres version 15, views inherit the RLS policies of the underlying tables if created with `security_invoker`. Views in earlier versions, or those created without `security_invoker`, inherit the permissions of the owner, who can bypass RLS policies.
-
-

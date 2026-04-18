@@ -165,5 +165,3 @@ mysql> set @@global.binlog_row_value_options="" ;
 After following the steps above, your MySQL/MariaDB database is ready for Debezium to use.
 
 ## On this page
-
-

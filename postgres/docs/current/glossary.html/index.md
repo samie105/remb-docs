@@ -814,5 +814,3 @@ For more information, see [Section 3.5](https://www.postgresql.org/docs/current
 Write-ahead log
 
 The journal that keeps track of the changes in the [](postgres/docs/current/glossary.html/index.md#GLOSSARY-DB-CLUSTER)[database cluster](https://www.postgresql.org/docs/current/glossary.html#GLOSSARY-DB-CLUSTER "Database cluster") as user- and system-invoked operations take place. It comprises many individual [](postgres/docs/current/glossary.html/index.md#GLOSSARY-WAL-RECORD)[WAL records](https://www.postgresql.org/docs/current/glossary.html#GLOSSARY-WAL-RECORD "WAL record") written sequentially to [](postgres/docs/current/glossary.html/index.md#GLOSSARY-WAL-FILE)[WAL files](https://www.postgresql.org/docs/current/glossary.html#GLOSSARY-WAL-FILE "WAL file").
-
-

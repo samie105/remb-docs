@@ -1615,5 +1615,3 @@ index('name')
   .using('btree', table.column1.asc(), sql`lower(${table.column2})`)
   .where(sql``) // sql expression
 ```
-
-

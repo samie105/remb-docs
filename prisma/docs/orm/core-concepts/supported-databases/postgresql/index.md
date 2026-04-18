@@ -312,5 +312,3 @@ Driver adapters use `pg` defaults which differ from v6:
 See [connection pool guide](prisma/docs/orm/prisma-client/setup-and-configuration/databases-connections/connection-pool/index.md#postgresql-using-the-pg-driver-adapter) for configuration.
 
 [Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/core-concepts/supported-databases/postgresql.mdx)
-
-

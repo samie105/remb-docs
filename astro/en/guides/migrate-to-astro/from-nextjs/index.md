@@ -463,5 +463,3 @@ Here’s how to recreate that in `src/pages/index.astro`, replacing `getStaticPr
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

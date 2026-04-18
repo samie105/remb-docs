@@ -206,5 +206,3 @@ Allow temporarily disabling execution of event triggers in order to troubleshoot
 `restrict_nonsystem_relation_kind` (`string`) [#](#GUC-RESTRICT-NONSYSTEM-RELATION-KIND)
 
 Set relation kinds for which access to non-system relations is prohibited. The value takes the form of a comma-separated list of relation kinds. Currently, the supported relation kinds are `view` and `foreign-table`.
-
-

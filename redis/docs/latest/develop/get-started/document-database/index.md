@@ -7759,5 +7759,3 @@ You can learn more about how to use Redis Open Source as a vector database in th
 See the [Get Started with Redis learning path](https://university.redis.io/learningpath/14q8m6gilfwltm) for courses.
 
 ## On this page
-
-

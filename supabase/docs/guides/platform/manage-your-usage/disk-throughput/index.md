@@ -208,5 +208,3 @@ Compute Credits
 **Total**
 
 **$249.26**
-
-

@@ -86,5 +86,3 @@ See the [official pg\_repack documentation](https://reorg.github.io/pg_repack/) 
 ## Resources[#](#resources)
 
 *   [Official pg\_repack documentation](https://reorg.github.io/pg_repack/)
-
-

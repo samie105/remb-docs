@@ -157,5 +157,3 @@ When you click **Save changes**, your new SSO configuration is applied immediate
 We recommend asking a few users to test signing in via their Google Workspace account. They can do this by entering their email address on the [Sign in with SSO](/dashboard/sign-in-sso) page.
 
 If SSO sign-in doesn't work as expected, contact your Supabase support representative for assistance.
-
-

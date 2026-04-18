@@ -28,5 +28,3 @@ A remark or rehype plugin attempted to inject invalid frontmatter. This occurs w
 *   [Modifying frontmatter programmatically](/en/guides/markdown-content/#modifying-frontmatter-programmatically)
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

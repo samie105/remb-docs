@@ -81,5 +81,3 @@ Disable auto discovery of the lock file.
 `--lockfile-only`
 
 Install only updating the lockfile.
-
-

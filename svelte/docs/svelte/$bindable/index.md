@@ -100,5 +100,3 @@ let { optionalProp = 42, requiredProp, bindableProp = $bindable() }: { optionalP
 previous next
 
 [$props](/docs/svelte/$props) [$inspect](/docs/svelte/$inspect)
-
-

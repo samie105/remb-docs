@@ -30,5 +30,3 @@ The parameter name
 `setting` `text`
 
 The parameter value
-
-

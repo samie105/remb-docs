@@ -70,5 +70,3 @@ Write a file to stdout
 Next
 
 ](/docs/guides/write-file/cat)
-
-

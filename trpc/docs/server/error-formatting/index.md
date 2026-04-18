@@ -152,5 +152,3 @@ ts
   `data: DefaultErrorData;`
 
 `}`
-
-

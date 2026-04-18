@@ -40,5 +40,3 @@ $ **`` kill -INT `head -1 /usr/local/pgsql/data/postmaster.pid` ``**
 It is best not to use SIGKILL to shut down the server. Doing so will prevent the server from releasing shared memory and semaphores. Furthermore, SIGKILL kills the `postgres` process without letting it relay the signal to its subprocesses, so it might be necessary to kill the individual subprocesses by hand as well.
 
 To terminate an individual session while allowing other sessions to continue, use `pg_terminate_backend()` (see [Table 9.96](https://www.postgresql.org/docs/current/functions-admin.html#FUNCTIONS-ADMIN-SIGNAL-TABLE "Table 9.96. Server Signaling Functions")) or send a SIGTERM signal to the child process associated with the session.
-
-

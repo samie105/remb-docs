@@ -357,5 +357,3 @@ In general, whenever you have to resort to writing Effects, keep an eye out for 
 *   If you need to update the state of several components, it’s better to do it during a single event.
 *   Whenever you try to synchronize state variables in different components, consider lifting state up.
 *   You can fetch data with Effects, but you need to implement cleanup to avoid race conditions.
-
-

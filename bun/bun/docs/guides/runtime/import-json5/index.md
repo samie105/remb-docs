@@ -89,5 +89,3 @@ console.log(data.hobbies); // => ["reading", "coding"]
 * * *
 
 See [Docs > API > JSON5](bun/bun/docs/runtime/json5/index.md) for complete documentation on JSON5 support in Bun.
-
-

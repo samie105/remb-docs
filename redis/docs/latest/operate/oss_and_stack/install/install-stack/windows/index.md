@@ -24,5 +24,3 @@ Redis Open Source
 To install Redis Open Source on Windows, you will need to have Docker installed. When Docker is up and running, open Windows PowerShell and follow the instructions described in [Run Redis Open Source on Docker](/docs/latest/operate/oss_and_stack/install/install-stack/docker/). Then, use Docker to connect with `redis-cli` as explained in that topic.
 
 ## On this page
-
-

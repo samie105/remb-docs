@@ -196,5 +196,3 @@ app.put('/upload/:key', async (c, next) => {
 
 fire(app)
 ```
-
-

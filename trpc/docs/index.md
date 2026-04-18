@@ -70,5 +70,3 @@ Adding tRPC to an existing project is not significantly different from starting 
 *   If you are looking for some inspiration of how tRPC might look as part of a larger codebase, there are some examples in [Open-source projects using tRPC](trpc/docs/community/awesome-trpc/index.md#-open-source-projects-using-trpc).
 
 Join us on [Discord](https://trpc.io/discord) to ask questions and share your experiences!
-
-

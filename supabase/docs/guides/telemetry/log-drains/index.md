@@ -172,5 +172,3 @@ Ensure your OTLP endpoint is configured to accept logs at the `/v1/logs` path wi
 ## Pricing[#](#pricing)
 
 For a detailed breakdown of how charges are calculated, refer to [Manage Log Drain usage](/docs/guides/platform/manage-your-usage/log-drains).
-
-

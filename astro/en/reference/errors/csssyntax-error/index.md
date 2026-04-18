@@ -26,5 +26,3 @@ nav_next: {"path": "astro/en/reference/errors/data-collection-entry-parse-error/
 Astro encountered an error while parsing your CSS, due to a syntax error. This is often caused by a missing semicolon.
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

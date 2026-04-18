@@ -179,5 +179,3 @@ export const cities = pgTable('cities', {
   countryId: integer('country_id').notNull().references(() => countries.id),
 });
 ```
-
-

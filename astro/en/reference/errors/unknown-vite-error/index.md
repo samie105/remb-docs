@@ -28,5 +28,3 @@ If you can reliably cause this error to happen, we’d appreciate if you could [
 *   [Vite troubleshooting guide](https://vite.dev/guide/troubleshooting.html)
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

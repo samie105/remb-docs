@@ -318,5 +318,3 @@ console.log(copy.digest("hex"));
 console.log(hasher.digest("hex"));
 // => "095d5a21fe6d0646db223fdf3de6436bb8dfb2fab0b51677ecf6441fcf5f2a67"
 ```
-
-

@@ -44,5 +44,3 @@ This section describes all SQL commands that are specific to embedded SQL. Also 
 [Home](https://www.postgresql.org/docs/current/index.html "PostgreSQL 18.3 Documentation")
 
  ALLOCATE DESCRIPTOR
-
-

@@ -425,5 +425,3 @@ Total free space in bytes (estimated)
 Percentage of free space
 
 In the above output, the free space figures may not match the `pgstattuple` output exactly, because the free space map gives us an exact figure, but is not guaranteed to be accurate to the byte.
-
-

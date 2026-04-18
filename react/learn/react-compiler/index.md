@@ -40,5 +40,3 @@ For detailed configuration options and API reference:
 ## Additional resources[](#additional-resources "Link for Additional resources ")
 
 In addition to these docs, we recommend checking the [React Compiler Working Group](https://github.com/reactwg/react-compiler) for additional information and discussion about the compiler.
-
-

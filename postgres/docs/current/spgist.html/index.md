@@ -508,5 +508,3 @@ When dealing with an `allTheSame` tuple, the `inner_consistent` function should 
 ### 65.3.5. Examples [#](#SPGIST-EXAMPLES)
 
 The PostgreSQL source distribution includes several examples of index operator classes for SP-GiST, as described in [Table 65.2](https://www.postgresql.org/docs/current/spgist.html#SPGIST-BUILTIN-OPCLASSES-TABLE "Table 65.2. Built-in SP-GiST Operator Classes"). Look into `src/backend/access/spgist/` and `src/backend/utils/adt/` to see the code.
-
-

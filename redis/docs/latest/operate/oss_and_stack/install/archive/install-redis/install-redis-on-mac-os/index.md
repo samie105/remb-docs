@@ -113,5 +113,3 @@ Once you have a running Redis instance, you may want to:
 *   [Install Redis "properly"](/docs/latest/operate/oss_and_stack/install/archive/install-redis/#install-redis-properly) for production use.
 
 ## On this page
-
-

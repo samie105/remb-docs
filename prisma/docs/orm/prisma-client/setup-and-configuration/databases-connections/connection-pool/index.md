@@ -266,5 +266,3 @@ Consider introducing [an external connection pooler like PgBouncer](prisma/docs/
 When using Prisma Client with a driver adapter, database connections are managed by the driver and its pool. They are not exposed to the developer and it is not possible to manually access individual connections.
 
 [Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/prisma-client/setup-and-configuration/databases-connections/connection-pool.mdx)
-
-

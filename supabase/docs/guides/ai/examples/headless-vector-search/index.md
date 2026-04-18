@@ -88,5 +88,3 @@ Now inside your docs, you need to create a search interface. Because this is a h
 *   Read about how we built [ChatGPT for the Supabase Docs](/blog/chatgpt-supabase-docs).
 *   Read the pgvector Docs for [Embeddings and vector similarity](/docs/guides/database/extensions/pgvector)
 *   See how to build something like this from scratch [using Next.js](/docs/guides/ai/examples/nextjs-vector-search).
-
-

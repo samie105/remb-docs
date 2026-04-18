@@ -42,5 +42,3 @@ export DEBUG="*"
 ```
 
 [Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/prisma-client/debugging-and-troubleshooting/debugging.mdx)
-
-

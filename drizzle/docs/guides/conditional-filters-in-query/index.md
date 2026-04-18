@@ -134,5 +134,3 @@ const lt = (left, right) => {
   return sql`${left} < ${bindIfParam(right, left)}`; // bindIfParam is internal magic function
 };
 ```
-
-

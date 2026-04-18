@@ -126,5 +126,3 @@ Prefix a `perspective-origin` utility with a breakpoint variant like `md:` to on
 ```
 
 Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).
-
-

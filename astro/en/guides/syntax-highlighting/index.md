@@ -190,5 +190,3 @@ If you opt to use Prism (either by configuring `markdown.syntaxHighlight: 'prism
 You can also visit the [list of languages supported by Prism](https://prismjs.com/#supported-languages) for options and usage.
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

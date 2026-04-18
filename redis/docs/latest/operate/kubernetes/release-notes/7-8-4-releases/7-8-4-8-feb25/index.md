@@ -192,5 +192,3 @@ Any distribution not listed below is not supported for production workloads.
 *   **OLM operator bundle** : `v7.8.4-8.0`
 
 ## On this page
-
-

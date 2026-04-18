@@ -30,5 +30,3 @@ This message can also appear when a type is imported without specifying that it 
 *   [Type Imports](/en/guides/typescript/#type-imports)
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

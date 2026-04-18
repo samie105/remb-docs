@@ -895,5 +895,3 @@ v
 [V4MAPPED](.././dns/~/V4MAPPED "V4MAPPED")
 
 If the IPv6 family was specified, but no IPv6 addresses were found, then return IPv4 mapped IPv6 addresses. It is not supported on some operating systems (e.g. FreeBSD 10.1).
-
-

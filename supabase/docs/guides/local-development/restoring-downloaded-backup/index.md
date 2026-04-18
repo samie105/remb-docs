@@ -56,5 +56,3 @@ If you want to use other services like Auth, Storage, and Studio dashboard toget
 ```
 
 A Postgres database started with Supabase CLI is not production ready and should not be used outside of local development.
-
-

@@ -66,5 +66,3 @@ Your agent will have a status of **Ready** when it is ready to be tested.
 Select the name of your agent to view the versions and draft aliases of your agent. You can also test your agent by entering prompts in the **Enter your message here** field.
 
 ## On this page
-
-

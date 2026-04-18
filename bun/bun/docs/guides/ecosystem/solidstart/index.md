@@ -115,5 +115,3 @@ Server-side render (SSR) a React component
 Next
 
 ](/docs/guides/ecosystem/ssr-react)
-
-

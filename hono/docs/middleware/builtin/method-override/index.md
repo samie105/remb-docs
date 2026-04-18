@@ -102,5 +102,3 @@ Header name with a value containing the method name.
 ### optional query: `boolean` [​](#query-boolean)
 
 Query parameter key with a value containing the method name.
-
-

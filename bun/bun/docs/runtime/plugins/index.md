@@ -391,5 +391,3 @@ onBeforeParse(
 ```
 
 This lifecycle callback is run immediately before a file is parsed by Bun’s bundler. As input, it receives the file’s contents and can optionally return new source code. This callback can be called from any thread and so the napi module implementation must be thread-safe.
-
-

@@ -798,5 +798,3 @@ A JSON schema file is available for editors to provide autocompletion. The file 
 Deno supports proxies for module downloads and the fetch API. Proxy configuration is read from [environment variables](deno/deno/runtime/reference/env_variables/index.md#special-environment-variables): HTTP\_PROXY, HTTPS\_PROXY and NO\_PROXY.
 
 If you are using Windows - if environment variables are not found Deno falls back to reading proxies from the registry.
-
-

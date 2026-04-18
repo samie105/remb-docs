@@ -67,5 +67,3 @@ It cannot appear at the top level of your markup; it must be inside an if or eac
 previous next
 
 [<svelte:component>](/docs/svelte/legacy-svelte-component) [Imperative component API](/docs/svelte/legacy-component-api)
-
-

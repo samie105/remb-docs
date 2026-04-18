@@ -76,5 +76,3 @@ ADD PRIMARY KEY ("id");
 Each time you reset the database or add a new member to your team, all required functions are part of the migration history.
 
 [Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/prisma-migrate/workflows/native-database-functions.mdx)
-
-

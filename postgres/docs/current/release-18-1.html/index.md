@@ -219,5 +219,3 @@ A dump/restore is not required for those running 18.X.
 ## Submit correction
 
 If you see anything in the documentation that is not correct, does not match your experience with the particular feature or requires further clarification, please use [this form](/account/comments/new/18/release-18-1.html/) to report a documentation issue.
-
-

@@ -218,5 +218,3 @@ See [https://github.com/rgbkrk/denotebooks](https://github.com/rgbkrk/denotebook
 You can also use Deno Jupyter kernel in the `jupyter console` REPL. To do that, you should launch your console with `jupyter console --kernel deno`.
 
 ![Using the Deno kernel in a CLI](/runtime/reference/images/jupyter-cli.gif)
-
-

@@ -185,5 +185,3 @@ To create a logical replica for databases `hr` and `finance` from a physical rep
 ```
 $
 ```
-
-

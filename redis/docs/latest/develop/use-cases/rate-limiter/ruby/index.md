@@ -299,5 +299,3 @@ end
 *   [Ruby client](/docs/latest/develop/clients/ruby/) - Redis Ruby client documentation
 
 ## On this page
-
-

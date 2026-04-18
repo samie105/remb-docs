@@ -239,5 +239,3 @@ An element with transitions will dispatch the following events in addition to an
 previous next
 
 [use:](/docs/svelte/use) [in: and out:](/docs/svelte/in-and-out)
-
-

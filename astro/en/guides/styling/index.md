@@ -553,5 +553,3 @@ This is not recommended for most users. Instead, place your CSS files inside of 
 See [Vite’s docs](https://vite.dev/guide/assets.html#importing-asset-as-url) for full details.
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

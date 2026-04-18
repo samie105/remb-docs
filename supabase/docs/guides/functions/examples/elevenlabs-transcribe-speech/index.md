@@ -164,5 +164,3 @@ Finally you can test the bot by sending it a voice message, audio or video file.
 After you see the transcript as a reply, navigate back to your table editor in the Supabase dashboard and you should see a new row in your `transcription_logs` table.
 
 ![New row in table](/docs/img/guides/functions/elevenlabs/supa-new-row.png)
-
-

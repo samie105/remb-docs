@@ -321,5 +321,3 @@ To allow your content to be created as Markdoc, specify the `fileType` property 
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

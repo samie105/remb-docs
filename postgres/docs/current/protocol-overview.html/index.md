@@ -90,5 +90,3 @@ PostgreSQL 7.4 and later
 up to PostgreSQL 13
 
 See previous releases of the PostgreSQL documentation for details
-
-

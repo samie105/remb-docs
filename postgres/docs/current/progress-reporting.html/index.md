@@ -580,5 +580,3 @@ The WAL sender process is currently performing `pg_backup_stop` to finish the ba
 `transferring wal files`
 
 The WAL sender process is currently transferring all WAL logs generated during the backup. This phase occurs after `waiting for wal archiving to finish` phase if `--wal-method=fetch` is specified in pg\_basebackup. The backup will end when this phase is completed.
-
-

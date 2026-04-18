@@ -145,5 +145,3 @@ Analytics results are refreshed in an interval of your choosing. You can set the
 [![RDI analytics refresh](/docs/latest/images/ri/ri-rdi-refresh.png)](/docs/latest/images/ri/ri-rdi-refresh.png)
 
 ## On this page
-
-

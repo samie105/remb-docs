@@ -424,5 +424,3 @@ Yes
 
 *   [Redirect URLs](/docs/guides/auth/redirect-urls)
 *   [Auth server on GitHub](https://github.com/supabase/auth) (check README and `example.env`)
-
-

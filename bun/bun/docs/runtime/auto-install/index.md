@@ -180,5 +180,3 @@ Plugins
 Next
 
 ](/docs/runtime/plugins)
-
-

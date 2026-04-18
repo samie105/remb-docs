@@ -209,5 +209,3 @@ The following rules define when Astro may deprecate, drop, or add support for ve
 The Core team will provide extended maintenance **for security fixes only** for one previous major version. This means that if the current major is `v4.*`, the Core team will back port security fixes and issue a new `v3.*` release.
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

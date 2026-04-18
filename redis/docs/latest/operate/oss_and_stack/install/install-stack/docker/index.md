@@ -88,5 +88,3 @@ $ docker run -v /local-data/:/data --name redis -p 6379:6379 redis:<version>
 See the [official Redis page on Docker Hub](https://hub.docker.com/_/redis) for more options.
 
 ## On this page
-
-

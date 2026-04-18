@@ -377,5 +377,3 @@ await db
 ```
 
 The `ts_rank` function focuses on the frequency of query terms throughout the document. The `ts_rank_cd` function focuses on the proximity of query terms within the document.
-
-

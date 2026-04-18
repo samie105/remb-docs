@@ -133,5 +133,3 @@ Using server islands for these elements, your visitor will see the most importan
 Read more about [using server islands](/en/guides/server-islands/) in your project.
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

@@ -38,5 +38,3 @@ const usersOnUpdate = pgTable('users_on_update', {
 ## Fixes
 
 *   Insertions on columns with the smallserial datatype are not optional - [#1848](https://github.com/drizzle-team/drizzle-orm/issues/1848)
-
-

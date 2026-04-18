@@ -227,5 +227,3 @@ bunx drizzle-kit push --config=drizzle-prod.drizzle.config
  ├ 📜 package.json
  └ 📜 tsconfig.json
 ```
-
-

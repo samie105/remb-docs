@@ -51,5 +51,3 @@ When you add Prisma Migrate to an **existing database**, you must [baseline](pri
 ![Baselining production from local with Prisma ORM](https://www.prisma.io/docs/img/orm/baseline-production-from-local.png?dpl=dpl_2TrAJrUt7dXR3AAWNDvwk5WL6VFX)
 
 [Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/prisma-client/deployment/deploy-migrations-from-a-local-environment.mdx)
-
-

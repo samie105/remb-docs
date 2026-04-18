@@ -65,5 +65,3 @@ If you no longer want to expose the `pgmq_public` schema, you can remove it from
 *   For Docker Compose, remove `pgmq_public` from the `PGRST_DB_SCHEMAS` variable in your `.env` file.
 
 After updating your configuration, restart your containers for the changes to take effect.
-
-

@@ -30,5 +30,3 @@ Depending on your adapter, there may be a different entrypoint to use for server
 *   [Server-side Rendering](/en/guides/on-demand-rendering/)
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

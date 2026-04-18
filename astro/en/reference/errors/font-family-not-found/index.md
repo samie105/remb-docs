@@ -24,5 +24,3 @@ nav_next: {"path": "astro/en/reference/errors/generate-content-types-error/index
 Font family not found
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

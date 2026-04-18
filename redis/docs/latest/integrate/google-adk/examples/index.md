@@ -99,5 +99,3 @@ python main.py
 *   [adk-redis README](https://github.com/redis-developer/adk-redis): Installation and overview
 
 ## On this page
-
-

@@ -49,5 +49,3 @@ Please read the Spring framework's documentation to learn more about how to use 
 *   [Spring Data Redis Cache](https://docs.spring.io/spring-data/redis/reference/redis/redis-cache.html)
 
 ## On this page
-
-

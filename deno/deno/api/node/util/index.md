@@ -859,5 +859,3 @@ v
 [promisify.custom](.././util/~/promisify.custom "promisify.custom")
 
 That can be used to declare custom promisified variants of functions.
-
-

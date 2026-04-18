@@ -64,5 +64,3 @@ Convert a Blob to an ArrayBuffer
 Next
 
 ](/docs/guides/binary/blob-to-arraybuffer)
-
-

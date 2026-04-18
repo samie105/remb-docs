@@ -830,5 +830,3 @@ mod tests {
 See the [`redis-rs`](https://docs.rs/redis/latest/redis/) documentation and the [GitHub repository](https://github.com/redis-rs/redis-rs) for more information and examples.
 
 ## On this page
-
-

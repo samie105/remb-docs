@@ -204,5 +204,3 @@ To delete the data pipeline:
 Deleted data pipelines cannot be recovered.
 
 ## On this page
-
-

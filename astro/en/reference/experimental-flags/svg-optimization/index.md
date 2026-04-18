@@ -140,5 +140,3 @@ While the optimization process may slightly increase your build times, the resul
 *   [SVGO documentation](https://svgo.dev/)
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

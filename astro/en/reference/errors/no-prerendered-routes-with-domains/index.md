@@ -24,5 +24,3 @@ nav_next: {"path": "astro/en/reference/errors/only-response-can-be-returned/inde
 Static pages aren’t yet supported with i18n domains. If you wish to enable this feature, you have to disable prerendering.
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

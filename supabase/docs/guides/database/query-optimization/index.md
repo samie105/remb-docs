@@ -129,5 +129,3 @@ Postgres maintains a set of statistics about the contents of your tables. Those 
 * * *
 
 By following this guide, you'll be able to discern where indexes can optimize queries and enhance your Postgres performance. Remember that each database is unique, so always consider the specific context and use case of your queries.
-
-

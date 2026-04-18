@@ -132,5 +132,3 @@ Instead of writing your JavaScript directly on each page, you can move the conte
 [Client-side scripts in Astro](/en/guides/client-side-scripts/)
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

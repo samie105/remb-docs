@@ -175,5 +175,3 @@ App
 previous next
 
 [in: and out:](/docs/svelte/in-and-out) [style:](/docs/svelte/style)
-
-

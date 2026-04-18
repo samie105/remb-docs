@@ -27,5 +27,3 @@ nav_next: {"path": "astro/en/reference/errors/markdown-image-not-found/index.md"
 Astro encountered an error while parsing the frontmatter of your Markdown file. This is often caused by a mistake in the syntax, such as a missing colon or a missing end quote.
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

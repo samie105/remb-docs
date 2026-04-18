@@ -353,5 +353,3 @@ await db.insert(employees).select(
     () => sql`select "users"."name" as "name" from "users" where "users"."role" = 'employee'`
 );
 ```
-
-

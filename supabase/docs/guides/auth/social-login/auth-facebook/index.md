@@ -227,5 +227,3 @@ If login works locally but fails in production, check:
 *   [Supabase - Get started for free](https://supabase.com)
 *   [Supabase JS Client](https://github.com/supabase/supabase-js)
 *   [Facebook Developers Dashboard](https://developers.facebook.com/)
-
-

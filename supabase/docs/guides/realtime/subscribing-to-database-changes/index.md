@@ -91,5 +91,3 @@ You can use the `UPDATE` event to stream all updated rows.
 ```
 1// @noImplicitAny: false2import { createClient } from '@supabase/supabase-js'3const supabase = createClient('your_project_url', 'your_supabase_api_key')45// ---cut---6const channel = supabase7  .channel('schema-db-changes')8  .on(9    'postgres_changes',10    {11      event: 'UPDATE',12      schema: 'public',13    },14    (payload) => console.log(payload)15  )16  .subscribe()
 ```
-
-

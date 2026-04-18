@@ -165,5 +165,3 @@ While your subscription plan applies to your entire organization and is charged 
 *   [PITR](/docs/guides/platform/backups#point-in-time-recovery) to roll back to any specific point in time, down to the minute
 *   [IPv4](/docs/guides/platform/ipv4-address) for a dedicated IPv4 address
 *   [Advanced MFA](/docs/guides/auth/auth-mfa/phone) to provide other options than TOTP
-
-

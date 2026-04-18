@@ -29,5 +29,3 @@ The adapter you’re using unfortunately does not support `Astro.clientAddress`.
 *   [Astro.clientAddress](/en/reference/api-reference/#clientaddress)
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

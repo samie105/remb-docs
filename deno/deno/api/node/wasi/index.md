@@ -116,5 +116,3 @@ No documentation available
 *   [stdin](.././wasi/~/WASIOptions#property_stdin)
 *   [stdout](.././wasi/~/WASIOptions#property_stdout)
 *   [version](.././wasi/~/WASIOptions#property_version)
-
-

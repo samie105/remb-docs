@@ -24,5 +24,3 @@ nav_next: {"path": "astro/en/reference/errors/server-only-module/index.md", "tit
 Astro couldn’t find a route matching the one provided by the user
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

@@ -171,5 +171,3 @@ The `.astro` partial must exist at the corresponding file path, and include an e
 See the [htmx documentation](https://htmx.org/docs/) for more details on using htmx.
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

@@ -93,5 +93,3 @@ Build an HTTP server using Hono and Bun
 Next
 
 ](/docs/guides/ecosystem/hono)
-
-

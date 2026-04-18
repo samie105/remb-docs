@@ -255,5 +255,3 @@ Visit the current [open Issues in Astro](https://github.com/withastro/astro/issu
 You can also visit [Roadmap Discussions](https://github.com/withastro/roadmap/discussions) to see whether you’ve found a known limitation of Astro, and check to see whether there are current proposals related to your use case.
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

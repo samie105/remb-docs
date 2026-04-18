@@ -44,5 +44,3 @@ This is the General Availability (GA) release of RedisInsight 2.8.0
 *   [#978](https://github.com/RedisInsight/RedisInsight/pull/978) Work with [non-printable characters](https://github.com/RedisInsight/RedisInsight/issues/873). To avoid data loss, when non-printable characters are detected, key and value are editable in Workbench and CLI only.
 
 ## On this page
-
-

@@ -1219,5 +1219,3 @@ npm packages like postgres.js, pg, and node-postgres can be used in Bun too. The
 ## Credits
 
 Huge thanks to [@porsager](https://github.com/porsager)’s [postgres.js](https://github.com/porsager/postgres) for the inspiration for the API interface.
-
-

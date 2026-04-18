@@ -72,5 +72,3 @@ Additional considerations apply to the use of generated columns.
 *   Generated columns are, conceptually, updated after `BEFORE` triggers have run. Therefore, changes made to base columns in a `BEFORE` trigger will be reflected in generated columns. But conversely, it is not allowed to access generated columns in `BEFORE` triggers.
     
 *   Generated columns are allowed to be replicated during logical replication according to the `CREATE PUBLICATION` parameter [`publish_generated_columns`](postgres/docs/current/sql-createpublication.html/index.md#SQL-CREATEPUBLICATION-PARAMS-WITH-PUBLISH-GENERATED-COLUMNS) or by including them in the column list of the `CREATE PUBLICATION` command. This is currently only supported for stored generated columns. See [Section 29.6](https://www.postgresql.org/docs/current/logical-replication-gencols.html "29.6. Generated Column Replication") for details.
-
-

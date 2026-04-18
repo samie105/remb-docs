@@ -46,5 +46,3 @@ Add a trusted dependency
 Next
 
 ](/docs/guides/install/trusted)
-
-

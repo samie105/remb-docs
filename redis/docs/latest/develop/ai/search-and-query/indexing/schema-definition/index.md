@@ -118,5 +118,3 @@ SCHEMA
 You can learn more about the available field types and options on the [`FT.CREATE`](/docs/latest/commands/ft.create/) page.
 
 ## On this page
-
-

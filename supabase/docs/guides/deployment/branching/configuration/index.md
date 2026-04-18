@@ -284,5 +284,3 @@ This will display a table showing all your branches with their corresponding pro
 *   Explore [branching integrations](/docs/guides/deployment/branching/integrations)
 *   Learn about [troubleshooting branches](/docs/guides/deployment/branching/troubleshooting)
 *   Review [branching pricing](/docs/guides/platform/manage-your-usage/branching#pricing)
-
-

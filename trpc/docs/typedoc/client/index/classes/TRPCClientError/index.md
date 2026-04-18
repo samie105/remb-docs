@@ -156,5 +156,3 @@ Type
 #### Returns[​](#returns-1 "Direct link to Returns")
 
 [`TRPCClientError`](trpc/docs/typedoc/client/index/classes/TRPCClientError/index.md)<`TRouterOrProcedure`\>
-
-

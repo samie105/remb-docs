@@ -51,5 +51,3 @@ Various products at Supabase have their own hardening and configuration guides, 
 ## Realtime[#](#realtime)
 
 *   [Authorization](docs/guides/realtime/authorization)
-
-

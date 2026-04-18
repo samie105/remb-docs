@@ -138,5 +138,3 @@ If you encounter issues during adoption:
 *   Read the [configuration guide](https://react.dev/reference/react-compiler/configuration) for more options
 *   Learn about [debugging techniques](react/learn/react-compiler/debugging/index.md)
 *   Check the [API reference](https://react.dev/reference/react-compiler/configuration) for all compiler options
-
-

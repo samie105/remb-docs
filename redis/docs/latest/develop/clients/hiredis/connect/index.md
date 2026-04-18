@@ -125,5 +125,3 @@ Use the `redisAsyncCommand()` function to issue Redis commands with an asynchron
 Note that you should normally disconnect asynchronously from a callback when you have finished using the connection. Use `redisAsyncDisconnect()` to disconnect gracefully, letting pending commands execute and activate their callbacks. Use `redisAsyncFree()` to disconnect immediately. If you do this then any pending callbacks from commands that have already executed will be called with a `NULL` reply pointer.
 
 ## On this page
-
-

@@ -67,5 +67,3 @@ Escape an HTML string
 Next
 
 ](/docs/guides/util/escape-html)
-
-

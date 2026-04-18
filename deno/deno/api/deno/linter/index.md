@@ -2212,5 +2212,3 @@ T
 [Deno.lint.TypeNode](./././~/Deno.lint.TypeNode "Deno.lint.TypeNode")
 
 Union type of all possible type nodes in TypeScript
-
-

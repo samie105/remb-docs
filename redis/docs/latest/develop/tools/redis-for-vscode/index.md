@@ -144,5 +144,3 @@ The connection tool with the boxed `>_` icon opens a Redis CLI window in the **R
 The CLI interface works just like the [`redis-cli`](/docs/latest/develop/tools/cli/) command.
 
 ## On this page
-
-

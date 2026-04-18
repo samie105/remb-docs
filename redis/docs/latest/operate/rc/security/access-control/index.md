@@ -20,5 +20,3 @@ Control who can access the Redis Cloud console and databases.
 Redis Cloud
 
 Redis Cloud offers you a few different ways to control who can access and make changes to your databases.
-
-

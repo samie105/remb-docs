@@ -475,5 +475,3 @@ T
 [Deno.FsEventFlag](./././~/Deno.FsEventFlag "Deno.FsEventFlag")
 
 Additional information for FsEvent objects with the "other" kind.
-
-

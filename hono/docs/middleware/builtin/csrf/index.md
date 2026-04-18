@@ -120,5 +120,3 @@ Standard Sec-Fetch-Site values:
 *   `none`: Request not from a web page (e.g., browser address bar, bookmark)
 
 The function handler receives the request's `Sec-Fetch-Site` header value and the request context, enabling dynamic validation based on request properties.
-
-

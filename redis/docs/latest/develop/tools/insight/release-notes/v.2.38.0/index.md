@@ -41,5 +41,3 @@ This is the General Availability (GA) release of RedisInsight 2.38.
 *   [#2797](https://github.com/RedisInsight/RedisInsight/pull/2797) Avoid initiating a bulk deletion or Profiler after the operating system resumes from sleep mode
 
 ## On this page
-
-

@@ -37,5 +37,3 @@ This is the General Availability (GA) release of RedisInsight 2.42.
 *   [#2970](https://github.com/RedisInsight/RedisInsight/pull/2970) A critical vulnerability has been fixed.
 
 ## On this page
-
-

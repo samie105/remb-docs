@@ -24,5 +24,3 @@ nav_next: {"path": "astro/en/reference/errors/missing-sharp/index.md", "title": 
 Astro throws an error if the user enables manual routing, but it doesn’t have a middleware file.
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

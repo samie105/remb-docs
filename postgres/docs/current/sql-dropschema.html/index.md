@@ -56,5 +56,3 @@ DROP SCHEMA mystuff CASCADE;
 ## Compatibility
 
 `DROP SCHEMA` is fully conforming with the SQL standard, except that the standard only allows one schema to be dropped per command, and apart from the `IF EXISTS` option, which is a PostgreSQL extension.
-
-

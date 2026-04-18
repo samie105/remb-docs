@@ -139,5 +139,3 @@ Containerize a Bun application with Docker
 Next
 
 ](/docs/guides/ecosystem/docker)
-
-

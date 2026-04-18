@@ -447,5 +447,3 @@ await db
 insert into users (`id`, `name`, `email`, `age`) values (1, 'John', 'john@email.com', 29)
   on duplicate key update id = 1, name = 'John', email = email, age = 29;
 ```
-
-

@@ -319,5 +319,3 @@ Disable auto discovery of the lock file.
 `--node-modules-dir`<MODE>optional
 
 Sets the node modules management mode for npm packages.
-
-

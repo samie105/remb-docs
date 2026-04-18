@@ -2657,5 +2657,3 @@ index.delete()
 ```
 
 ## On this page
-
-

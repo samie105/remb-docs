@@ -64,5 +64,3 @@ Check if the current file is the entrypoint
 Next
 
 ](/docs/guides/util/entrypoint)
-
-

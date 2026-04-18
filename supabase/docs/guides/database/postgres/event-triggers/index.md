@@ -92,5 +92,3 @@ You can delete a trigger using the `drop event trigger` command:
 *   Official Postgres Docs: [Event Trigger Behaviours](https://www.postgresql.org/docs/current/event-trigger-definition.html)
 *   Official Postgres Docs: [Event Trigger Firing Matrix](https://www.postgresql.org/docs/17/event-trigger-matrix.html)
 *   Supabase blog: [Postgres Event Triggers without superuser access](/blog/event-triggers-wo-superuser)
-
-

@@ -48,5 +48,3 @@ const path = require('node:path')const serveStatic = require('serve-static')// S
 ### Alternatives[​](#alternatives "Direct link to Alternatives")
 
 Fastify offers alternatives to commonly used middleware, such as [`@fastify/helmet`](https://github.com/fastify/fastify-helmet) for [`helmet`](https://github.com/helmetjs/helmet), [`@fastify/cors`](https://github.com/fastify/fastify-cors) for [`cors`](https://github.com/expressjs/cors), and [`@fastify/static`](https://github.com/fastify/fastify-static) for [`serve-static`](https://github.com/expressjs/serve-static).
-
-

@@ -48,5 +48,3 @@ Primary bucket pages and overflow pages are allocated independently since any gi
 Each row in the table indexed is represented by a single index tuple in the hash index. Hash index tuples are stored in bucket pages, and if they exist, overflow pages. We speed up searches by keeping the index entries in any one index page sorted by hash code, thus allowing binary search to be used within an index page. Note however that there is \*no\* assumption about the relative ordering of hash codes across different index pages of a bucket.
 
 The bucket splitting algorithms to expand the hash index are too complex to be worthy of mention here, though are described in more detail in `src/backend/access/hash/README`. The split algorithm is crash safe and can be restarted if not completed successfully.
-
-

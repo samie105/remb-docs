@@ -22,5 +22,3 @@ All PL/TclU functions used in a session execute in the same Tcl interpreter, whi
 To help protect PL/Tcl functions from unintentionally interfering with each other, a global array is made available to each function via the `upvar` command. The global name of this variable is the function's internal name, and the local name is `GD`. It is recommended that `GD` be used for persistent private data of a function. Use regular Tcl global variables only for values that you specifically intend to be shared among multiple functions. (Note that the `GD` arrays are only global within a particular interpreter, so they do not bypass the security restrictions mentioned above.)
 
 An example of using `GD` appears in the `spi_execp` example below.
-
-

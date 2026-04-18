@@ -52,5 +52,3 @@ Approve npm lifecycle scripts for installed dependencies.
 `--lockfile-only`
 
 Install only updating the lockfile.
-
-

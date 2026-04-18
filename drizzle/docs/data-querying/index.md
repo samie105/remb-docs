@@ -119,5 +119,3 @@ const mainQuery = await db
 ```
 
 #### What’s next?[](#whats-next)
-
-

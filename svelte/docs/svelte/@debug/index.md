@@ -49,5 +49,3 @@ The `{@debug}` tag without any arguments will insert a `debugger` statement that
 previous next
 
 [{@const ...}](/docs/svelte/@const) [bind:](/docs/svelte/bind)
-
-

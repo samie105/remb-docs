@@ -94,5 +94,3 @@ There is no `ANALYZE` statement in the SQL standard.
 The following syntax was used before PostgreSQL version 11 and is still supported:
 
 ANALYZE \[ VERBOSE \] \[ _`table_and_columns`_ \[, ...\] \]
-
-

@@ -55,5 +55,3 @@ Security testing:
 *   Is within the [Acceptable Usage Policy](/aup).
 *   Will be stopped if contacted by Supabase due to a breach of the above or a negative impact on Supabase and Supabase customers.
 *   Any vulnerabilities discovered directly in a Supabase product will be reported to Supabase Security within 24 hours of completion of testing.
-
-

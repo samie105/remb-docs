@@ -209,5 +209,3 @@ Check the specified lock file. (If value is not provided, defaults to "./deno.lo
 `--no-lock`
 
 Disable auto discovery of the lock file.
-
-

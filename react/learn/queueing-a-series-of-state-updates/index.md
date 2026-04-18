@@ -212,5 +212,3 @@ You’re working on an art marketplace app that lets the user submit multiple or
 However, the “Pending” counter does not behave as intended. When you press “Buy”, it decreases to `-1` (which should not be possible!). And if you click fast twice, both counters seem to behave unpredictably.
 
 Why does this happen? Fix both counters.
-
-

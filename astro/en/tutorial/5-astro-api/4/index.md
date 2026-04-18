@@ -88,5 +88,3 @@ Individuals can subscribe to your feed in a feed reader, and receive a notificat
 *   [RSS item generation in Astro](/en/recipes/rss/#using-glob-imports)
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

@@ -124,5 +124,3 @@ Knowing this trick you could easily go through the rest of the functions in `sds
 The Redis string implementation is hidden behind an interface that accepts only character pointers. The users of Redis strings need not care about how it's implemented and can treat Redis strings as a character pointer.
 
 ## On this page
-
-

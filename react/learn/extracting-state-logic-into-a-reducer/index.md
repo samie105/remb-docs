@@ -199,5 +199,3 @@ Reducers must be pure, so they shouldn’t mutate state. But Immer provides you 
 *   Reducers must be pure.
 *   Each action describes a single user interaction.
 *   Use Immer if you want to write reducers in a mutating style.
-
-

@@ -70,5 +70,3 @@ The increment of the sequence
 `YES` if the sequence cycles, else `NO`
 
 Note that in accordance with the SQL standard, the start, minimum, maximum, and increment values are returned as character strings.
-
-

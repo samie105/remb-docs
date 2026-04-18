@@ -58,5 +58,3 @@ SELECT SESSION\_USER, CURRENT\_USER;
 The SQL standard allows some other expressions to appear in place of the literal _`user_name`_, but these options are not important in practice. PostgreSQL allows identifier syntax (``"_`username`_"``), which SQL does not. SQL does not allow this command during a transaction; PostgreSQL does not make this restriction because there is no reason to. The `SESSION` and `LOCAL` modifiers are a PostgreSQL extension, as is the `RESET` syntax.
 
 The privileges necessary to execute this command are left implementation-defined by the standard.
-
-

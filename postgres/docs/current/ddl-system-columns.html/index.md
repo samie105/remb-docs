@@ -42,5 +42,3 @@ The physical location of the row version within its table. Note that although th
 Transaction identifiers are also 32-bit quantities. In a long-lived database it is possible for transaction IDs to wrap around. This is not a fatal problem given appropriate maintenance procedures; see [Chapter 24](https://www.postgresql.org/docs/current/maintenance.html "Chapter 24. Routine Database Maintenance Tasks") for details. It is unwise, however, to depend on the uniqueness of transaction IDs over the long term (more than one billion transactions).
 
 Command identifiers are also 32-bit quantities. This creates a hard limit of 232 (4 billion) SQL commands within a single transaction. In practice this limit is not a problem — note that the limit is on the number of SQL commands, not the number of rows processed. Also, only commands that actually modify the database contents will consume a command identifier.
-
-

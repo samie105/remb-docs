@@ -142,5 +142,3 @@ For more information on how to create, test, and deploy edge functions, see [Get
 *   [Vector indexes](/docs/guides/ai/vector-indexes)
 *   [Semantic search](/docs/guides/ai/semantic-search)
 *   [Full text (keyword) search](/docs/guides/database/full-text-search)
-
-

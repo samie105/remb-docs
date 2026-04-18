@@ -24,5 +24,3 @@ nav_next: {"path": "astro/en/reference/errors/expected-image/index.md", "title":
 The `astro:env/server` exported function `getSecret()` is not supported by your adapter.
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

@@ -57,5 +57,3 @@ try {
 See [Errors reference](prisma/docs/orm/reference/error-reference/index.md) for a detailed breakdown of the different error types and their codes.
 
 [Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/prisma-client/debugging-and-troubleshooting/handling-exceptions-and-errors.mdx)
-
-

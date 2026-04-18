@@ -111,5 +111,3 @@ To apply the down migration on your production database after a failed up migrat
 *   Use `migrate resolve` to record that you rolled back the up migration named `add_profile`:
 
 [Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/prisma-migrate/workflows/generating-down-migrations.mdx)
-
-

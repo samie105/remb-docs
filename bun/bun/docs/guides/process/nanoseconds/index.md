@@ -62,5 +62,3 @@ Run a Shell Command
 Next
 
 ](/docs/guides/runtime/shell)
-
-

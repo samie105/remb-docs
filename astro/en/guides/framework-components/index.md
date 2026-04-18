@@ -189,5 +189,3 @@ If you try to hydrate an Astro component with a `client:` modifier, you will get
 Learn more about [client-side `<script>` tags in Astro components](/en/guides/client-side-scripts/)
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

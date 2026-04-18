@@ -90,5 +90,3 @@ Add a dependency
 Next
 
 ](/docs/guides/install/add)
-
-

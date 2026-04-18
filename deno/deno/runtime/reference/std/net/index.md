@@ -41,5 +41,3 @@ deno add jsr:@std/net
 ```
 
 [See all symbols in @std/net on](https://jsr.io/@std/net/doc)
-
-

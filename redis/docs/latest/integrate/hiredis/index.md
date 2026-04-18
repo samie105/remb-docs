@@ -39,5 +39,3 @@ hiredis is a minimalistic C client library for Redis that provides a simple, eff
 Refer to the complete [C guide](/docs/latest/develop/clients/hiredis/) to install, connect, and use hiredis.
 
 ## On this page
-
-

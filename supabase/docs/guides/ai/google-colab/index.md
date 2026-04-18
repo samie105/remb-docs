@@ -96,5 +96,3 @@ You can lean more about creating indexes in the [Vecs documentation](https://sup
 ## Resources[#](#resources)
 
 *   Vecs API: [supabase.github.io/vecs/api](https://supabase.github.io/vecs/api)
-
-

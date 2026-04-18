@@ -56,5 +56,3 @@ CALL do\_db\_maintenance();
 ## Compatibility
 
 `CALL` conforms to the SQL standard, except for the handling of output parameters. The standard says that users should write variables to receive the values of output parameters.
-
-

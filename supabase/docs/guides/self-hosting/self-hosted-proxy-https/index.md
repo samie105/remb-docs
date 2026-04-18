@@ -175,5 +175,3 @@ This is expected when using self-signed certificates. For production, use Caddy 
 *   [Caddy documentation](https://caddyserver.com/docs/)
 *   [Nginx documentation](https://nginx.org/en/docs/) (on nginx.org)
 *   [docker-nginx-certbot on GitHub](https://github.com/JonasAlfredsson/docker-nginx-certbot)
-
-

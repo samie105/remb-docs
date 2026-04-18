@@ -354,5 +354,3 @@ bunx drizzle-kit pull --dialect=postgresql --tablesFilter=‘user*’ --extensio
 ```
 
 ![](https://orm.drizzle.team/_astro/introspect_mysql.Hk8acObY_Z20dDww.webp)
-
-

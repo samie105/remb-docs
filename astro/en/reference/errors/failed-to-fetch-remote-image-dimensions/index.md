@@ -24,5 +24,3 @@ nav_next: {"path": "astro/en/reference/errors/expected-not-esmimage/index.md", "
 Determining the remote image’s dimensions failed. This is typically caused by an incorrect URL or attempting to infer the size of an image in the public folder which is not possible.
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

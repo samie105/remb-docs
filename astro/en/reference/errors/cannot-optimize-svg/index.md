@@ -18,5 +18,3 @@ nav_next: {"path": "astro/en/reference/errors/cant-render-page/index.md", "title
 > An error occurred while optimizing the SVG file with SVGO.
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

@@ -223,5 +223,3 @@ You can deploy to Fleek through the website UI or using Fleek’s CLI (command l
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

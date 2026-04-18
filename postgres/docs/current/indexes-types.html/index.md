@@ -76,5 +76,3 @@ BRIN indexes (a shorthand for Block Range INdexes) store summaries about the val
 <   <=   =   >=   >
 
 The BRIN operator classes included in the standard distribution are documented in [Table 65.4](https://www.postgresql.org/docs/current/brin.html#BRIN-BUILTIN-OPCLASSES-TABLE "Table 65.4. Built-in BRIN Operator Classes"). For more information see [Section 65.5](https://www.postgresql.org/docs/current/brin.html "65.5. BRIN Indexes").
-
-

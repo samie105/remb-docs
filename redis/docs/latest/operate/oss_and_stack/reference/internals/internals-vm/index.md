@@ -292,5 +292,3 @@ This document is in no way complete, the only way to get the whole picture is re
 Something is not clear about this page? Please leave a comment and I'll try to address the issue possibly integrating the answer in this document.
 
 ## On this page
-
-

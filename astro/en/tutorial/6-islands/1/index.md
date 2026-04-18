@@ -141,5 +141,3 @@ For each of the following components, identify what will be sent to the browser:
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

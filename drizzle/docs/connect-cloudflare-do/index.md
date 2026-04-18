@@ -120,5 +120,3 @@ export default {
 ```
 
 #### What’s next?[](#whats-next)
-
-

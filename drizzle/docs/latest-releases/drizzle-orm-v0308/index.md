@@ -66,5 +66,3 @@ Learn more about `.onConflictDoNothing` method [here](drizzle/docs/insert/index.
 *   Fix inserting and updating array values in AWS Data API (fixes [#1912](https://github.com/drizzle-team/drizzle-orm/issues/1912) via [#1911](https://github.com/drizzle-team/drizzle-orm/pull/1911))
 
 To get started with Drizzle and AWS Data API follow the [documentation](drizzle/docs/get-started-postgresql/index.md#aws-data-api).
-
-

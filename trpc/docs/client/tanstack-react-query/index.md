@@ -20,5 +20,3 @@ This is the recommended way to use tRPC with React and TanStack Query. It provid
 If you're starting a new project, we recommend using this integration over the [classic React Query integration](trpc/docs/client/react/index.md). Read the [announcement post](https://trpc.io/blog/introducing-tanstack-react-query-client) for more information about this change.
 
 Head to the [Setup](trpc/docs/client/tanstack-react-query/setup/index.md) guide to get started.
-
-

@@ -399,5 +399,3 @@ Kubernetes version
     
 
 ## On this page
-
-

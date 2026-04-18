@@ -28,5 +28,3 @@ Redis Open Source
 Redis Enterprise for Kubernetes
 
 clients
-
-

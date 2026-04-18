@@ -155,5 +155,3 @@ These options are explained below:
 *   `delayInMsToRetry`: the time (in milliseconds) to wait before retrying a token request after a failed attempt. This provides a mechanism to request throttling to prevent an excessive number of token requests.
 
 ## On this page
-
-

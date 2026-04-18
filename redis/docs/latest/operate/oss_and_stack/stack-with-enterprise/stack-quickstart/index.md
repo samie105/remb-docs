@@ -90,5 +90,3 @@ To try out Redis Open Source features, follow the examples provided by the corre
 *   [Probabilistic data structures quick start](/docs/latest/develop/data-types/probabilistic/)
 
 ## On this page
-
-

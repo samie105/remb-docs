@@ -26,5 +26,3 @@ Supabase generates documentation in the [Dashboard](/dashboard) which updates as
 3.  Select any table under **Tables and Views** in the sidebar.
 4.  Switch between the JavaScript and the cURL docs using the tabs.
 5.  You may also select the SUPABASE\_KEY to use.
-
-

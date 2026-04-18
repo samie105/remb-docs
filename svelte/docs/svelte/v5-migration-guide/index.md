@@ -1372,5 +1372,3 @@ Svelte 5 uses an extra `<svelte-css-wrapper>` element instead of a `<div>` to wr
 previous next
 
 [Svelte 4 migration guide](/docs/svelte/v4-migration-guide) [Frequently asked questions](/docs/svelte/faq)
-
-

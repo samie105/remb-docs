@@ -31,5 +31,3 @@ For MongoDB, this includes:
 *   [Relations in general](prisma/docs/orm/prisma-schema/data-model/relations/index.md) - foreign key relations between documents are not enforced in MongoDB
 
 [Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/prisma-client/setup-and-configuration/database-polyfills.mdx)
-
-

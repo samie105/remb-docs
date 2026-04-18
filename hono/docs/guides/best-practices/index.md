@@ -170,5 +170,3 @@ const client = hc<AppType>('http://localhost') // Typed correctly
 ```
 
 For more detailed information, please see [the RPC page](hono/docs/guides/rpc/index.md#using-rpc-with-larger-applications).
-
-

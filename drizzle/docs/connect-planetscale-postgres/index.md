@@ -166,5 +166,3 @@ PlanetScale Postgres supports two connection ports:
 `6432`: Connection via PgBouncer for connection pooling. Recommended when you have many simultaneous connections.
 
 #### What’s next?[](#whats-next)
-
-

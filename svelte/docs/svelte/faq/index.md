@@ -138,5 +138,3 @@ We recommend using [SvelteKit](/docs/kit), which supports HMR out of the box and
 previous next
 
 [Svelte 5 migration guide](/docs/svelte/v5-migration-guide) [svelte](/docs/svelte/svelte)
-
-

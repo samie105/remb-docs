@@ -60,5 +60,3 @@ When specified on the command line, user and database names have their case pres
 [reindexdb](postgres/docs/current/app-reindexdb.html/index.md) — reindex a PostgreSQL database
 
 [vacuumdb](postgres/docs/current/app-vacuumdb.html/index.md) — garbage-collect and analyze a PostgreSQL database
-
-

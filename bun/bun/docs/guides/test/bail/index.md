@@ -38,5 +38,3 @@ Re-run tests multiple times with the Bun test runner
 Next
 
 ](/docs/guides/test/rerun-each)
-
-

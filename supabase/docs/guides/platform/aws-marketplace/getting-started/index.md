@@ -108,5 +108,3 @@ After the payment has been confirmed and your marketplace subscription is active
 Complete the setup by linking a Supabase organization to the AWS Marketplace subscription.
 
 ![Supabase product subscribe](/docs/img/guides/platform/aws-marketplace-onboarding-page--light.png)
-
-

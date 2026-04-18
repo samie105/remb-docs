@@ -113,5 +113,3 @@ a\_output := a\_output || $$ if v\_$$ || referrer\_keys.kind || $$ like '$$
     || $$'; end if;$$;
 
 where we assume we only need to put single quote marks into `a_output`, because it will be re-quoted before use.
-
-

@@ -59,5 +59,3 @@ All except `scrollX` and `scrollY` are readonly.
 previous next
 
 [<svelte:boundary>](/docs/svelte/svelte-boundary) [<svelte:document>](/docs/svelte/svelte-document)
-
-

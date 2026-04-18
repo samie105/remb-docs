@@ -40,5 +40,3 @@ CREATE TABLE products (
 );
 
 The `SERIAL` shorthand is discussed further in [Section 8.1.4](https://www.postgresql.org/docs/current/datatype-numeric.html#DATATYPE-SERIAL "8.1.4. Serial Types").
-
-

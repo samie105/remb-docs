@@ -44,5 +44,3 @@ Name of the schema that contains the domain
 `domain_name` `sql_identifier`
 
 Name of the domain
-
-

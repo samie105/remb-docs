@@ -28,5 +28,3 @@ The server received the query string `?_astroAction=name`, but could not find an
 *   [Actions RFC](https://github.com/withastro/roadmap/blob/actions/proposals/0046-actions.md)
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

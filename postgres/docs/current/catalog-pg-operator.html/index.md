@@ -80,5 +80,3 @@ Restriction selectivity estimation function for this operator (zero if none)
 `oprjoin` `regproc` (references [`pg_proc`](https://www.postgresql.org/docs/current/catalog-pg-proc.html "52.39. pg_proc").`oid`)
 
 Join selectivity estimation function for this operator (zero if none)
-
-

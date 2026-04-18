@@ -14,5 +14,3 @@ nav_next: {"path": "hono/docs/concepts/developer-experience/index.md", "title": 
 ---
 
 [Skip to content](#VPContent)
-
-

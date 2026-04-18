@@ -39,5 +39,3 @@ A great place to find interesting articles about best practices, application arc
 Deno provides a wide range of examples and tutorials that might address your problem:
 
 *   [Deno by Example](/examples/): Practical code snippets for common tasks
-
-

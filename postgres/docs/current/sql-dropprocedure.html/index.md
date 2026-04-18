@@ -95,5 +95,3 @@ This command conforms to the SQL standard, with these PostgreSQL extensions:
 *   The `IF EXISTS` option is an extension.
     
 *   The ability to specify argument modes and names is an extension, and the lookup rules differ when modes are given.
-
-

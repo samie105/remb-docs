@@ -896,5 +896,3 @@ CREATE TABLE "table" (
 	"id" serial PRIMARY KEY NOT NULL
 );
 ```
-
-

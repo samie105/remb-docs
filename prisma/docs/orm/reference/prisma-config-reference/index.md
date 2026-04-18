@@ -120,5 +120,3 @@ To load environment variables in your Prisma application, you can use the `prism
       },
     });
     ```
-
-

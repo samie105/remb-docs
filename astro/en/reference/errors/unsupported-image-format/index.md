@@ -31,5 +31,3 @@ For unsupported formats such as GIFs, you may be able to use an `img` tag direct
 ```
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

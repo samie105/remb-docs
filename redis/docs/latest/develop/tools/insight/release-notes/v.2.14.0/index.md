@@ -38,5 +38,3 @@ This is the General Availability (GA) release of RedisInsight 2.14.
 *   [#1351](https://github.com/RedisInsight/RedisInsight/pull/1351) Display the namespaces section in the Database analysis report when no namespaces were found
 
 ## On this page
-
-

@@ -255,5 +255,3 @@ The following syntax was used before PostgreSQL version 9.0 and is still support
 EXPLAIN \[ ANALYZE \] \[ VERBOSE \] _`statement`_
 
 Note that in this syntax, the options must be specified in exactly the order shown.
-
-

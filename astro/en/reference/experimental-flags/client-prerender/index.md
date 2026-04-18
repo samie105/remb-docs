@@ -38,5 +38,3 @@ Client side prerendering requires browser support. If the Speculation Rules API 
 See the [Prefetch Guide](/en/guides/prefetch/) for more `prefetch` options and usage.
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

@@ -179,5 +179,3 @@ SQLite doesn't enforce enum values at the database level. Invalid values will ca
 Prisma ORM validates that numbers fit within integer boundaries. If a value exceeds limits, you'll get a P2023 error.
 
 [Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/core-concepts/supported-databases/sqlite.mdx)
-
-

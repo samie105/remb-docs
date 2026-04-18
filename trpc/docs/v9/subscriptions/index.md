@@ -326,5 +326,3 @@ See [https://www.jsonrpc.org/specification#error\_object](https://www.jsonrpc.or
 ### `{id: null, type: 'reconnect' }`[​](#id-null-type-reconnect- "Direct link to id-null-type-reconnect-")
 
 Tells clients to reconnect before shutting down server. Invoked by `wssHandler.broadcastReconnectNotification()`.
-
-

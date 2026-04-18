@@ -431,5 +431,3 @@ async function loadUserSettings(userId: string) {
   }
 }
 ```
-
-

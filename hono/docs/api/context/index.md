@@ -471,5 +471,3 @@ app.get('/', (c) => {
   return c.json({ result: val })
 })
 ```
-
-

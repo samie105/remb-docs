@@ -96,5 +96,3 @@ app.post('/blog', (c) => {
   // Return Context
 })
 ```
-
-

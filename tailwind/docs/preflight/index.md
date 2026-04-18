@@ -225,5 +225,3 @@ CSS
 ```
 @layer theme, base, components, utilities;@import "tailwindcss/theme.css" layer(theme);@import "tailwindcss/utilities.css" layer(utilities);@import "tailwindcss/theme.css" layer(theme) prefix(tw);@import "tailwindcss/utilities.css" layer(utilities) prefix(tw);
 ```
-
-

@@ -194,5 +194,3 @@ const table = pgTable('table', {
   index('custom_idx').using('gist', table.geo)
 ])
 ```
-
-

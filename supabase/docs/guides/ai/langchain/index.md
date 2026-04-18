@@ -64,5 +64,3 @@ You can install the LangChain Hybrid Search function though our [database.dev pa
 *   Official [LangChain site](https://langchain.com/).
 *   Official [LangChain docs](https://js.langchain.com/docs/modules/indexes/vector_stores/integrations/supabase).
 *   Supabase [Hybrid Search](https://js.langchain.com/docs/modules/indexes/retrievers/supabase-hybrid).
-
-

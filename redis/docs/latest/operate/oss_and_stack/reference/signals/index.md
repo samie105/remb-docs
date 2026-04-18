@@ -79,5 +79,3 @@ This error condition will persist until it becomes possible to create an RDB fil
 Sometimes the user may want to kill the RDB-saving child process without generating an error. Since Redis version 2.6.10, this can be done using the signal `SIGUSR1`. This signal is handled in a special way: it kills the child process like any other signal, but the parent process will not detect this as a critical error and will continue to serve write requests.
 
 ## On this page
-
-

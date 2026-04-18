@@ -777,5 +777,3 @@ import testtest('home page has expected h1', async ({ page }) => {
 previous next
 
 [Best practices](/docs/svelte/best-practices) [TypeScript](/docs/svelte/typescript)
-
-

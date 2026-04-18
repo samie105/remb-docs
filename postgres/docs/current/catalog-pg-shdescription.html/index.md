@@ -38,5 +38,3 @@ The OID of the system catalog this object appears in
 `description` `text`
 
 Arbitrary text that serves as the description of this object
-
-

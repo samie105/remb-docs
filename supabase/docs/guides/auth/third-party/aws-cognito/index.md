@@ -59,5 +59,3 @@ A recommended approach to do this is to configure a [Pre-Token Generation Trigge
 ```
 1export const handler = async (event) => {2  event.response = {3    claimsOverrideDetails: {4      claimsToAddOrOverride: {5        role: 'authenticated',6      },7    },8  }910  return event11}
 ```
-
-

@@ -176,5 +176,3 @@ Expands multiple arrays (possibly of different data types) into a set of rows. I
  1 | foo
  2 | bar
    | baz
-
-

@@ -28,5 +28,3 @@ Defined in: [packages/client/src/createTRPCClient.ts:40](https://github.com/trpc
 Type Parameter
 
 `TRouter` _extends_ `AnyRouter`
-
-

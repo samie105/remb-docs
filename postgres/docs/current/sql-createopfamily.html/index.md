@@ -44,5 +44,3 @@ The name of the index method this operator family is for.
 ## Compatibility
 
 `CREATE OPERATOR FAMILY` is a PostgreSQL extension. There is no `CREATE OPERATOR FAMILY` statement in the SQL standard.
-
-

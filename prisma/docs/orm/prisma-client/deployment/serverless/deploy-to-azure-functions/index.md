@@ -34,5 +34,3 @@ Generally, when you use a FaaS (Function as a Service) environment to interact w
 For more insight into Prisma Client's API, explore the function handlers and check out the [Prisma Client API Reference](prisma/docs/orm/reference/prisma-client-reference/index.md)
 
 [Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/prisma-client/deployment/serverless/deploy-to-azure-functions.mdx)
-
-

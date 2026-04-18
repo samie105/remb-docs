@@ -32,5 +32,3 @@ One should be wary of statements of the form
 DELETE FROM _`tablename`_;
 
 Without a qualification, `DELETE` will remove _all_ rows from the given table, leaving it empty. The system will not request confirmation before doing this!
-
-

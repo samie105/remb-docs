@@ -90,5 +90,3 @@ Redis Insight also provides a health check endpoint at `http://<EC2 IP Address>:
 In this guide, we installed Redis Insight on an AWS EC2 instance running Docker. As a next step, you should add an ElastiCache Redis Instance and then run the memory analysis.
 
 ## On this page
-
-

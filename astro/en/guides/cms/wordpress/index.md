@@ -372,5 +372,3 @@ The following sites use Astro + WordPress in production:
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

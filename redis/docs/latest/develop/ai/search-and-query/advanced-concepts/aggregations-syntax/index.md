@@ -396,5 +396,3 @@ See the following resources for more information:
 *   [Redis Search source code](https://github.com/RediSearch/RediSearch/tree/master/src/aggregate)
 
 ## On this page
-
-

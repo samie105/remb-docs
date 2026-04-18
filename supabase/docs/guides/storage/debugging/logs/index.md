@@ -50,5 +50,3 @@ For more details on filtering the log tables, see [Advanced Log Filtering](/docs
 ```
 1select id, storage_logs.timestamp, event_message, r.remoteAddress2from3  storage_logs4  cross join unnest(metadata) as m5  cross join unnest(m.req) as r6where r.remoteAddress in ("IP_ADDRESS")7order by timestamp desc8limit 100;
 ```
-
-

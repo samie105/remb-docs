@@ -73,5 +73,3 @@ Both approaches create a table where you can store your embeddings and some meta
 *   Unstructured metadata is best when fields are unknown/user-defined or when working with data interactively e.g. exploratory research
 
 Both approaches are valid, and the one you should choose depends on your use-case.
-
-

@@ -181,5 +181,3 @@ monitors:
 You can learn more about the query language [here](https://uptrace.dev/get/querying-metrics.html).
 
 ## On this page
-
-

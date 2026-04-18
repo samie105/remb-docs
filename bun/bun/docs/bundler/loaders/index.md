@@ -41,5 +41,3 @@ Resolved import
 `"https://cdn.example.com/"`
 
 `https://cdn.example.com/logo.svg`
-
-

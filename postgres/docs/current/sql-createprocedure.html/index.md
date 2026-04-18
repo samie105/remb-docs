@@ -154,5 +154,3 @@ CALL insert\_data(1, 2);
 ## Compatibility
 
 A `CREATE PROCEDURE` command is defined in the SQL standard. The PostgreSQL implementation can be used in a compatible way but has many extensions. For details see also [CREATE FUNCTION](https://www.postgresql.org/docs/current/sql-createfunction.html "CREATE FUNCTION").
-
-

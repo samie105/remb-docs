@@ -493,5 +493,3 @@ const newYorkers2 = cockroachMaterializedView('new_yorkers')
     return qb.with(sq).select().from(sq).where(sql`${users.homeCity} = 1`);
   });
 ```
-
-

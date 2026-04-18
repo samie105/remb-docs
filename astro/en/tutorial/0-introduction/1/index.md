@@ -56,5 +56,3 @@ This tutorial is a project of our Docs team. You can find us on Discord in the `
  *    I’m ready to build this thing!
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

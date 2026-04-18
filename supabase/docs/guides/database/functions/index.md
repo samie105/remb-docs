@@ -229,5 +229,3 @@ For more complex functions or complicated debugging, try logging:
 ### Call Database Functions using JavaScript[#](#call-database-functions-using-javascript)
 
 ### Using Database Functions to call an external API[#](#using-database-functions-to-call-an-external-api)
-
-

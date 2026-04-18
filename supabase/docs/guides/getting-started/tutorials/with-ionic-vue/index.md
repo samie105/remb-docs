@@ -200,5 +200,3 @@ Then create an `AvatarComponent`.
 Add the widget to the Account page (already included in the Account.vue code above since the example includes the Avatar component by default).
 
 At this stage you have a fully functional application!
-
-

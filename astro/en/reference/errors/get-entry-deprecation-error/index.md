@@ -24,5 +24,3 @@ nav_next: {"path": "astro/en/reference/errors/get-image-not-used-on-server/index
 The `getDataEntryById` and `getEntryBySlug` functions are deprecated and cannot be used with content collections. Use the `getEntry` function instead.
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

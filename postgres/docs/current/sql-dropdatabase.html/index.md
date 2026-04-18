@@ -54,5 +54,3 @@ This command cannot be executed while connected to the target database. Thus, it
 ## Compatibility
 
 There is no `DROP DATABASE` statement in the SQL standard.
-
-

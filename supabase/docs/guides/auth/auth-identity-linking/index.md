@@ -73,5 +73,3 @@ Call the `updateUser({ password: 'validpassword'})` to add email with password a
 ### Can you sign up with email if already using OAuth?[#](#can-you-sign-up-with-email-if-already-using-oauth)
 
 If you try to create an email account after previously signing up with OAuth using the same email, you'll receive an obfuscated user response with no verification email sent. This prevents user enumeration attacks.
-
-

@@ -77,5 +77,3 @@ Start a cluster of HTTP servers
 Next
 
 ](/docs/guides/http/cluster)
-
-

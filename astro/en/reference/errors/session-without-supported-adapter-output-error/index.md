@@ -28,5 +28,3 @@ Your adapter must support server output to use sessions.
 *   [Sessions](/en/guides/sessions/)
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

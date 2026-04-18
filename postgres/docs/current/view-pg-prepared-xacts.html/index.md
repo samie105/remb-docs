@@ -46,5 +46,3 @@ Name of the user that executed the transaction
 Name of the database in which the transaction was executed
 
 When the `pg_prepared_xacts` view is accessed, the internal transaction manager data structures are momentarily locked, and a copy is made for the view to display. This ensures that the view produces a consistent set of results, while not blocking normal operations longer than necessary. Nonetheless there could be some impact on database performance if this view is frequently accessed.
-
-

@@ -70,5 +70,3 @@ For clarity, it is preferred to explicitly dereference a function pointer when c
 (even though `emit_log_hook(edata)` would also work). When the function pointer is part of a structure, then the extra punctuation can and usually should be omitted, for example:
 
 paramInfo->paramFetch(paramInfo, paramId);
-
-

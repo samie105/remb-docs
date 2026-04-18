@@ -44,5 +44,3 @@ Query performance can be affected by many things. Some of these can be controlle
 [Home](https://www.postgresql.org/docs/current/index.html "PostgreSQL 18.3 Documentation")
 
  14.1. Using `EXPLAIN`
-
-

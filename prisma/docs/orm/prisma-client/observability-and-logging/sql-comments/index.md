@@ -494,5 +494,3 @@ interface SqlCommenterCompactedQueryInfo {
 ```
 
 Information about a compacted batch query.
-
-

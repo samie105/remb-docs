@@ -29,5 +29,3 @@ nav_next: {"path": "astro/en/reference/errors/unsupported-external-redirect/inde
 *   [devalue library](https://github.com/rich-harris/devalue)
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

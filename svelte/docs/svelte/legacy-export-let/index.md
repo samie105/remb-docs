@@ -122,5 +122,3 @@ App
 previous next
 
 [Reactive $: statements](/docs/svelte/legacy-reactive-assignments) [$$props and $$restProps](/docs/svelte/legacy-$$props-and-$$restProps)
-
-

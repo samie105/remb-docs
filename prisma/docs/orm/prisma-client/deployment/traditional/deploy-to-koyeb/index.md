@@ -180,5 +180,3 @@ Congratulations! You have successfully deployed a Node.js app with Prisma ORM to
 You can find the source code for the example in [this GitHub repository](https://github.com/koyeb/example-prisma).
 
 For more insight into Prisma Client's API, look at the route handlers in the `src/index.js` file.
-
-

@@ -157,5 +157,3 @@ This example intentionally keeps the server and UI small so the Redis behavior i
 *   [TS.CREATE command](/docs/latest/commands/ts.create/) - Create a time series with labels and retention
 
 ## On this page
-
-

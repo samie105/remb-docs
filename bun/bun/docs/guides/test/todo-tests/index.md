@@ -127,5 +127,3 @@ Set a per-test timeout with the Bun test runner
 Next
 
 ](/docs/guides/test/timeout)
-
-

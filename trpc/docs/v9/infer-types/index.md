@@ -140,5 +140,3 @@ nav_next: {"path": "trpc/docs/v9/links/index.md", "title": "Links & Request Batc
 `export type InferSubscriptionInput<TRouteKey extends TSubscription> =`
 
 `inferProcedureInput<AppRouter['_def']['subscriptions'][TRouteKey]>;`
-
-

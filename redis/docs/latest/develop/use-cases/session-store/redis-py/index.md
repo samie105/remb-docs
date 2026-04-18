@@ -264,5 +264,3 @@ redis-cli TTL session:<session_id>
 *   [HINCRBY command](/docs/latest/commands/hincrby/) - Increment counters in a session
 
 ## On this page
-
-

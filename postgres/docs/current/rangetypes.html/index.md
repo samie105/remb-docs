@@ -243,5 +243,3 @@ with existing key (room, during)=(123A, \["2010-01-01 14:00:00","2010-01-01 15:0
 INSERT INTO room\_reservation VALUES
     ('123B', '\[2010-01-01 14:30, 2010-01-01 15:30)');
 INSERT 0 1
-
-

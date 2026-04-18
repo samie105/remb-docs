@@ -172,5 +172,3 @@ Markprompt: GDPR-Compliant AI Chatbots for Docs and Websites
 AI-powered chatbot platform, Markprompt, empowers developers to deliver efficient and GDPR-compliant prompt experiences on top of their content, by leveraging Supabase's secure and privacy-focused database and authentication solutions
 
 ](https://supabase.com/customers/markprompt)
-
-

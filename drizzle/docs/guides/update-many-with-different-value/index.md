@@ -71,5 +71,3 @@ update users set "city" =
   (case when id = 1 then 'New York' when id = 2 then 'Los Angeles' when id = 3 then 'Chicago' end)
 where id in (1, 2, 3)
 ```
-
-

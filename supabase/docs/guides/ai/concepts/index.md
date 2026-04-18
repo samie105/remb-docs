@@ -73,5 +73,3 @@ Why is this useful? Once we have generated embeddings on multiple texts, it is t
 ## See also[#](#see-also)
 
 *   [Structured and Unstructured embeddings](/docs/guides/ai/structured-unstructured)
-
-

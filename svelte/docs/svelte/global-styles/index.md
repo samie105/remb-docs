@@ -80,5 +80,3 @@ To apply styles to a group of selectors globally, create a `:global {...}` block
 previous next
 
 [Scoped styles](/docs/svelte/scoped-styles) [Custom properties](/docs/svelte/custom-properties)
-
-

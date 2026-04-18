@@ -20,5 +20,3 @@ Learn how to build with Redis and Java
 Connect your Java application to a Redis database using the Lettuce client library.
 
 Refer to the complete [Lettuce guide](/docs/latest/develop/clients/lettuce/) to install, connect, and use Lettuce.
-
-

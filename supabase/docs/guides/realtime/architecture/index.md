@@ -78,5 +78,3 @@ Realtime delivers changes by polling the replication slot and appending channel 
 Subscription IDs are Erlang processes representing underlying sockets on the cluster. These IDs are globally unique and messages to processes are routed automatically by the Erlang virtual machine.
 
 After receiving results from the polling query, with subscription IDs appended, Realtime delivers records to those clients.
-
-

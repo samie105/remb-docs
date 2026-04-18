@@ -95,5 +95,3 @@ If you believe you’ve found a compiler bug:
 
 *   Review the [Rules of React](https://react.dev/reference/rules) to prevent issues
 *   Check the [incremental adoption guide](react/learn/react-compiler/incremental-adoption/index.md) for gradual rollout strategies
-
-

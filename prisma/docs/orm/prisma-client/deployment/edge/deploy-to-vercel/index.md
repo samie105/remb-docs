@@ -462,5 +462,3 @@ const prisma = new PrismaClient({
   adapter: new PrismaPg(pool),
 });
 ```
-
-

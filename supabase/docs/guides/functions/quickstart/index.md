@@ -212,5 +212,3 @@ Now that your function is deployed, you can invoke it from within your app:
 ```
 1import { createClient } from '@supabase/supabase-js'23const supabase = createClient('https://[YOUR_PROJECT_ID].supabase.co', 'YOUR_ANON_KEY')45const { data, error } = await supabase.functions.invoke('hello-world', {6  body: { name: 'JavaScript' },7})89console.log(data) // { message: "Hello JavaScript!" }
 ```
-
-

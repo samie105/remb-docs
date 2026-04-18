@@ -207,5 +207,3 @@ Always use runes mode for new code, and avoid features that have more modern rep
 previous next
 
 [Hydratable data](/docs/svelte/hydratable) [Testing](/docs/svelte/testing)
-
-

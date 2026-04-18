@@ -14,5 +14,3 @@ nav_next: {"path": "drizzle/docs/extensions/sqlite/index.md", "title": "SQLite e
 ---
 
 Drizzle ORM - SingleStore extensions
-
-

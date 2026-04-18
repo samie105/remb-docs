@@ -101,5 +101,3 @@ if (context) {
   console.log(context.var.message)
 }
 ```
-
-

@@ -162,5 +162,3 @@ The autocomplete feature in Redis Search is useful for:
 *   **Chatbot responses**: recommending common phrases dynamically.
 
 ## On this page
-
-

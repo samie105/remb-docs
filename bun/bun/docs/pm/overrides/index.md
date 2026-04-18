@@ -145,5 +145,3 @@ Security Scanner API
 Next
 
 ](/docs/pm/security-scanner-api)
-
-

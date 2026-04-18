@@ -207,5 +207,3 @@ chat_session.clear()
 ```
 
 ## On this page
-
-

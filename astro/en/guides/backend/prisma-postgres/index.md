@@ -201,5 +201,3 @@ const { rows } = await client.query('SELECT * FROM posts');await client.end();--
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

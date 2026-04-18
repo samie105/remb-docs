@@ -119,5 +119,3 @@ pnpm create hono@latest my-app --template deno --offline
 ## Links & references [​](#links-references)
 
 *   `create-hono` repository : [create-hono](https://github.com/honojs/create-hono)
-
-

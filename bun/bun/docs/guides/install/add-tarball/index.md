@@ -86,5 +86,3 @@ Install a package under a different name
 Next
 
 ](/docs/guides/install/npm-alias)
-
-

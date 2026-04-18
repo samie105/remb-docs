@@ -84,5 +84,3 @@ Then it should work fine.
 Get started with the [Fastify template on Vercel](https://vercel.com/templates/backend/fastify-on-vercel).
 
 [Fluid compute](https://vercel.com/docs/functions/fluid-compute) currently requires an explicit opt-in. Learn more about enabling Fluid compute [here](https://vercel.com/docs/fluid-compute#enabling-fluid-compute).
-
-

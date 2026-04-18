@@ -153,5 +153,3 @@ The function is designed in a way that it can be used directly as a source for a
 ```
 
 You can find an example frontend implementation in the complete code example on [GitHub](https://github.com/elevenlabs/elevenlabs-examples/tree/main/examples/text-to-speech/supabase/stream-and-cache-storage/src/pages/Index.tsx).
-
-

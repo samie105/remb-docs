@@ -41,5 +41,3 @@ This is the General Availability (GA) release of RedisInsight 2.12.
 *   [#1293](https://github.com/RedisInsight/RedisInsight/pull/1293) Fixed Workbench visualizations in Redis Stack
 
 ## On this page
-
-

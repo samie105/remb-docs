@@ -28,5 +28,3 @@ Astro encountered an invalid glob pattern. This is often caused by the glob patt
 *   [Glob Patterns](/en/guides/imports/#glob-patterns)
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

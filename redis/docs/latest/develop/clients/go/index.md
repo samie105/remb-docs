@@ -635,5 +635,3 @@ func main() {
 See the other pages in this section for more information and examples. Further examples are available at the [`go-redis`](https://redis.uptrace.dev/guide/) website and the [GitHub repository](https://github.com/redis/go-redis).
 
 ## On this page
-
-

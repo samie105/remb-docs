@@ -135,5 +135,3 @@ Avoid, use queues
 Currently, all plans have the same rate limit budget. We are working on introducing custom limits for different use cases.
 
 If you need a higher rate limit for your project, [contact support](/dashboard/support/new) with details about your use case.
-
-

@@ -48,5 +48,3 @@ but real-world usage will involve including it in a text search configuration as
 
 ALTER TEXT SEARCH CONFIGURATION english
     ALTER MAPPING FOR int, uint WITH intdict;
-
-

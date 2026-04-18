@@ -34,5 +34,3 @@ While you can install Redis Open Source on any of the platforms listed below, yo
 You can also download [Redis Insight](/docs/latest/operate/redisinsight/install/), a free developer companion tool with an intuitive GUI and advanced CLI, which you can use alongside Redis Open Source.
 
 * * *
-
-

@@ -131,5 +131,3 @@ We have an outstanding **[Discord community](https://driz.link/discord)** and we
 Now go build something awesome with Drizzle and your **[PostgreSQL](drizzle/docs/get-started-postgresql/index.md)**, **[MySQL](drizzle/docs/get-started-mysql/index.md)** or **[SQLite](drizzle/docs/get-started-sqlite/index.md)** database. 🚀
 
 ### Video Showcase[](#video-showcase)
-
-

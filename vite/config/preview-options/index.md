@@ -107,5 +107,3 @@ See [`server.cors`](vite/config/server-options/index.md#server-cors) for more de
 *   **Type:** `OutgoingHttpHeaders`
 
 Specify server response headers.
-
-

@@ -289,5 +289,3 @@ By default, the build output will be placed at `dist/`. This location can be cha
 [Section titled “Adding an Adapter for on-demand rendering”](#adding-an-adapter-for-on-demand-rendering)
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

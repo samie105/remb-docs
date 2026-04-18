@@ -75,5 +75,3 @@ Write a string to a file
 Next
 
 ](/docs/guides/write-file/basic)
-
-

@@ -290,5 +290,3 @@ Compute Credits
 ## Optimize usage[#](#optimize-usage)
 
 To see whether your database actually needs a dedicated IPv4 address, refer to [When you need the IPv4 add-on](/docs/guides/platform/ipv4-address#when-you-need-the-ipv4-add-on).
-
-

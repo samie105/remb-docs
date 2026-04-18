@@ -213,5 +213,3 @@ Test the `.decorate()` and `.decorateRequest()`.
 ```
 const Fastify = require("fastify");const { test }= require("node:test");const myPlugin = require("../plugin/myFirstPlugin");test("Test the Plugin Route", async t => {    t.plan(5)    const fastify = Fastify()    fastify.register(myPlugin)    fastify.get("/", async (request, reply) => {        // Testing the fastify decorators        t.assert.ifError(request.helloRequest)        t.assert.ok(request.helloRequest, "Hello World")        t.assert.ok(fastify.helloInstance, "Hello Fastify Instance")        return ({ message: request.helloRequest })    })    const fastifyResponse = await fastify.inject({        method: "GET",        url: "/"    })    t.assert.strictEqual(fastifyResponse.statusCode, 200)    t.assert.deepStrictEqual(JSON.parse(fastifyResponse.body), { message: "Hello World" })})
 ```
-
-

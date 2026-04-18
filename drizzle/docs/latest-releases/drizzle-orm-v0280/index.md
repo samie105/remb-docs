@@ -191,5 +191,3 @@ await db.insert(usersTable).values({});
 // Insert 2 rows with all defaults
 await db.insert(usersTable).values([{}, {}]);
 ```
-
-

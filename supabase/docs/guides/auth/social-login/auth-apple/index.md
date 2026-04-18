@@ -171,5 +171,3 @@ To use Sign in with Apple JS you need to configure these options:
 4.  Register the Services ID you created to your project's [Apple provider configuration in the Supabase dashboard](/dashboard/project/_/auth/providers) under _Client IDs_.
 
 If you're using Sign in with Apple JS you do not need to configure the OAuth settings.
-
-

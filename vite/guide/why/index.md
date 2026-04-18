@@ -64,5 +64,3 @@ Vite's architecture continues to evolve. Several efforts are shaping its future:
     
 
 Vite's goal is not to be the final tool, but to be one that keeps evolving with the web platform, and with the developers building on it.
-
-

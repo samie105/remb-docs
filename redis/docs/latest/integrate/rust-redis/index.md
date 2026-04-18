@@ -39,5 +39,3 @@ redis-rs is a high-performance Redis client for Rust that leverages Rust's memor
 Refer to the [Rust Redis documentation](https://docs.rs/redis/latest/redis/) to install, connect, and use redis-rs.
 
 ## On this page
-
-

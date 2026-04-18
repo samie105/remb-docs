@@ -114,5 +114,3 @@ Synchronize the logical failover replication slots from the primary server to th
 ### Caution
 
 If, after executing the function, [`hot_standby_feedback`](postgres/docs/current/runtime-config-replication.html/index.md#GUC-HOT-STANDBY-FEEDBACK) is disabled on the standby or the physical slot configured in [`primary_slot_name`](postgres/docs/current/runtime-config-replication.html/index.md#GUC-PRIMARY-SLOT-NAME) is removed, then it is possible that the necessary rows of the synchronized slot will be removed by the VACUUM process on the primary server, resulting in the synchronized slot becoming invalidated.
-
-

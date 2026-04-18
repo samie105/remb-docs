@@ -158,5 +158,3 @@ Custom reporters can listen for these key events:
 *   `TestReporter.end`: Emitted when a test completes
 *   `Console.messageAdded`: Emitted when console output occurs during a test
 *   `LifecycleReporter.error`: Emitted when an error or exception occurs
-
-

@@ -139,5 +139,3 @@ SELECT \* FROM dblink('myconn', 'select proname, prosrc from pg\_proc')
  byteain    | byteain
  byteaout   | byteaout
 (14 rows)
-
-

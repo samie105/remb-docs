@@ -158,5 +158,3 @@ Branches are completely isolated from each other. Changes made in one branch don
 *   Learn about [branch configuration](/docs/guides/deployment/branching/configuration)
 *   Explore [integrations](/docs/guides/deployment/branching/integrations)
 *   Review [troubleshooting guide](/docs/guides/deployment/branching/troubleshooting)
-
-

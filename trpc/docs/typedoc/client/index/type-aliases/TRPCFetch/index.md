@@ -36,5 +36,3 @@ Type
 ## Returns[​](#returns "Direct link to Returns")
 
 `Promise`<`ResponseEsque`\>
-
-

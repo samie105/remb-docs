@@ -129,5 +129,3 @@ Deploy the function by running:
 ```
 1supabase functions deploy wasm-add
 ```
-
-

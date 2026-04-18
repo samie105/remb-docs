@@ -1092,5 +1092,3 @@ Know a good resource for Astro v5.0? [Edit this page](https://github.com/withast
 Please check [Astro’s issues on GitHub](https://github.com/withastro/astro/issues/) for any reported issues, or to file an issue yourself.
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

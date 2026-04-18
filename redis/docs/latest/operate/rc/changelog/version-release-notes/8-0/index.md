@@ -80,5 +80,3 @@ The following changes affect behavior and validation in Redis Search:
 For a full list of Redis Search-related changes, see the [release notes](https://github.com/redis/redis/releases).
 
 ## On this page
-
-

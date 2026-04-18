@@ -18,5 +18,3 @@ nav_next: {"path": "redis/docs/latest/develop/ai/search-and-query/query/geo-spat
 RIOT-X documentation
 
 Full documentation for RIOT-X is available at [redis.github.io/riotx](https://redis.github.io/riotx/).
-
-

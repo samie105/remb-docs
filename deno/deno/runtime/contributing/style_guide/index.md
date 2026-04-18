@@ -559,5 +559,3 @@ function convertURL(url: URL) {
   return url.href;
 }
 ```
-
-

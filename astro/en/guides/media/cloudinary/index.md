@@ -194,5 +194,3 @@ Learn how to [upload files using the Cloudinary Node.js SDK with Astro Forms](ht
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

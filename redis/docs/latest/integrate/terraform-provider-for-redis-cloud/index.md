@@ -79,5 +79,3 @@ It also allows you to create and manage the following resources:
 *   [Terraform configuration syntax](https://developer.hashicorp.com/terraform/language/syntax/configuration)
 
 ## On this page
-
-

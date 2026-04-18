@@ -44,5 +44,3 @@ Part VI. Reference 
 [Home](https://www.postgresql.org/docs/current/index.html "PostgreSQL 18.3 Documentation")
 
  ABORT
-
-

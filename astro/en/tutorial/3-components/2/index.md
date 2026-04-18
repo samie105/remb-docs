@@ -147,5 +147,3 @@ Since you might have multiple online accounts you can link to, you can make a si
 *   [Component Props in Astro](/en/basics/astro-components/#component-props)
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

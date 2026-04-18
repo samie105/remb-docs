@@ -342,5 +342,3 @@ Slack Bot Mention Edge Function
 Slack Bot handling Slack mentions in Edge Function
 
 ](/docs/guides/functions/examples/slack-bot-mention)
-
-

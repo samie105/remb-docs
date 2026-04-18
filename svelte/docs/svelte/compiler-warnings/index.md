@@ -1071,5 +1071,3 @@ See [the note in the docs](legacy-svelte-self) for more info.
 previous next
 
 [Compiler errors](/docs/svelte/compiler-errors) [Runtime errors](/docs/svelte/runtime-errors)
-
-

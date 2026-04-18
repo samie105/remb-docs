@@ -20,5 +20,3 @@ nav_next: {"path": "trpc/docs/v10/server/metadata/index.md", "title": "Metadata"
 tRPC procedures may define validation logic for their input and/or output, and validators are also used to infer the types of inputs and outputs. We have first class support for many popular validators, and you can integrate validators which we don't directly support.
 
 ](trpc/docs/v10/server/validators/index.md)
-
-

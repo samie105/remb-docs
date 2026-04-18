@@ -42,5 +42,3 @@ deno upgrade --canary --version=973af61d8bb03c1709f61e456581d58386ed4952
 To switch back to the stable channel, run `deno upgrade`.
 
 Canaries can be downloaded from [https://dl.deno.land](https://dl.deno.land).
-
-

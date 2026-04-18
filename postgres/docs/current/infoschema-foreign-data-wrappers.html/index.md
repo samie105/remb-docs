@@ -40,5 +40,3 @@ File name of the library that implementing this foreign-data wrapper
 `foreign_data_wrapper_language` `character_data`
 
 Language used to implement this foreign-data wrapper
-
-

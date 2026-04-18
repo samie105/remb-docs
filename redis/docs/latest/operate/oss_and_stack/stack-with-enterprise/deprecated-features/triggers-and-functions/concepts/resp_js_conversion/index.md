@@ -212,5 +212,3 @@ resp2 `null`
 resp3 `null`
 
 ## On this page
-
-

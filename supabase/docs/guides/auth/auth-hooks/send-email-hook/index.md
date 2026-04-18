@@ -153,5 +153,3 @@ Deploy your edge function and [configure it as a hook](/dashboard/project/_/auth
 ```
 1supabase functions deploy send-email --no-verify-jwt
 ```
-
-

@@ -338,5 +338,3 @@ function myPlugin() {
   }
 }
 ```
-
-

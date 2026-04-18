@@ -44,5 +44,3 @@ Release notes and breaking changes for Redis 7.4 on Redis Cloud.
 [Redis 7.2](/docs/latest/operate/rc/changelog/version-release-notes/7-2/)
 
 Release notes and breaking changes for Redis 7.2 on Redis Cloud.
-
-

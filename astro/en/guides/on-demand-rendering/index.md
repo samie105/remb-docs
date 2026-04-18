@@ -228,5 +228,3 @@ The function takes an [endpoint context](/en/reference/api-reference/) and retur
 To learn more, see our [Endpoints Guide](/en/guides/endpoints/#server-endpoints-api-routes).
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

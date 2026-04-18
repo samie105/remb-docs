@@ -52,5 +52,3 @@ This template overrides the `role` claim to meet Supabase's expectations, and ad
 ```
 1{2  "role": "authenticated",3  "user_role": {{organization_membership.role}}4}
 ```
-
-

@@ -22,5 +22,3 @@ If you are using React, the best way to call a tRPC API is by using our [React Q
 If you want to call a tRPC API from another server or from a frontend framework for which we don't have an integration, you can use the [Vanilla Client](trpc/docs/v10/client/vanilla/index.md).
 
 In addition to the React and Next.js integrations and the Vanilla Client, there are a variety of [community-built integrations for a variety of other frameworks](trpc/docs/community/awesome-trpc/index.md#frontend-frameworks). Please note that these are not maintained by the tRPC team.
-
-

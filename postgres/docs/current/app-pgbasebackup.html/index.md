@@ -367,5 +367,3 @@ To create a backup of the local server with one tar file for each tablespace com
 ```
 $
 ```
-
-

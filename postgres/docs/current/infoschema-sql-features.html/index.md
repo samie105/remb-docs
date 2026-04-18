@@ -48,5 +48,3 @@ Always null, since the PostgreSQL development group does not perform formal test
 `comments` `character_data`
 
 Possibly a comment about the supported status of the feature
-
-

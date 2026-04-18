@@ -547,5 +547,3 @@ CREATE TABLE "test" (
 );
 CREATE INDEX "idx_content_search" ON "test" USING gin ("content_search");
 ```
-
-

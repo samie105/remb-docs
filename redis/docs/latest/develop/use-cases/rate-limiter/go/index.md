@@ -383,5 +383,3 @@ if err != nil {
 *   [Go client](/docs/latest/develop/clients/go/) - Redis Go client documentation
 
 ## On this page
-
-

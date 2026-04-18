@@ -56,5 +56,3 @@ Name of the schema that contains the sequence that is used by the function
 `sequence_name` `sql_identifier`
 
 Name of the sequence that is used by the function
-
-

@@ -85,5 +85,3 @@ const table = sqliteTable('table', {
     second: unique('custom').on(t.name, t.state),
 }));
 ```
-
-

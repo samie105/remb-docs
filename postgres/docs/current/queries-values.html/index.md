@@ -48,5 +48,3 @@ SELECT _`select_list`_ FROM _`table_expression`_
 and can appear anywhere a `SELECT` can. For example, you can use it as part of a `UNION`, or attach a _`sort_specification`_ (`ORDER BY`, `LIMIT`, and/or `OFFSET`) to it. `VALUES` is most commonly used as the data source in an `INSERT` command, and next most commonly as a subquery.
 
 For more information see [VALUES](https://www.postgresql.org/docs/current/sql-values.html "VALUES").
-
-

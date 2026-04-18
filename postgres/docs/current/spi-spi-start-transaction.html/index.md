@@ -54,5 +54,3 @@ SPI\_rollback 
 [Home](https://www.postgresql.org/docs/current/index.html "PostgreSQL 18.3 Documentation")
 
  45.5. Visibility of Data Changes
-
-

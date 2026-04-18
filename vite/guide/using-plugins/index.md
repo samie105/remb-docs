@@ -105,5 +105,3 @@ export default defineConfig({
 ## Building Plugins [​](#building-plugins)
 
 Check out the [Plugins API Guide](vite/guide/api-plugin/index.md) for documentation about creating plugins.
-
-

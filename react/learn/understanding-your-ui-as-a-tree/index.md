@@ -116,5 +116,3 @@ As your app grows, often the bundle size does too. Large bundle sizes are expens
 *   Dependency trees represent the module dependencies in a React app.
 *   Dependency trees are used by build tools to bundle the necessary code to ship an app.
 *   Dependency trees are useful for debugging large bundle sizes that slow time to paint and expose opportunities for optimizing what code is bundled.
-
-

@@ -394,5 +394,3 @@ When implementing JWT validation on your server:
 *   [Custom Access Token Hooks](/docs/guides/auth/auth-hooks/custom-access-token-hook)
 *   [Row Level Security](/docs/guides/database/postgres/row-level-security)
 *   [Server-Side Auth](/docs/guides/auth/server-side)
-
-

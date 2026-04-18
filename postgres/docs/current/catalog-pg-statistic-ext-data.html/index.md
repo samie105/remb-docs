@@ -52,5 +52,3 @@ MCV (most-common values) list statistics, serialized as `pg_mcv_list` type
 `stxdexpr` `pg_statistic[]`
 
 Per-expression statistics, serialized as an array of `pg_statistic` type
-
-

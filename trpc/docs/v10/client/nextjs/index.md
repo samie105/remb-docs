@@ -30,5 +30,3 @@ When using the Next.js integration, you'll get the following features:
 tip
 
 If you're using tRPC in a new project, consider using one of the example projects for reference: [tRPC Example Projects](trpc/docs/example-apps/index.md)
-
-

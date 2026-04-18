@@ -554,5 +554,3 @@ Thrown at build time when the configured cache provider cannot be resolved. This
 For full details and to give feedback on this experimental API, see the [Route Caching RFC](https://github.com/withastro/roadmap/pull/1245).
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

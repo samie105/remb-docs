@@ -242,5 +242,3 @@ Compute Credits
 *   Review your [backup frequency](/docs/guides/platform/backups#frequency-of-backups) needs to determine whether you require PITR or free Daily Backups are sufficient
 *   Regularly check your projects and disable PITR where no longer needed
 *   Consider disabling PITR for non-production databases
-
-

@@ -28,5 +28,3 @@ The thing is, GraphQL isn't that easy to get right - [ACL](https://en.wikipedia.
 We've taken a lot of inspiration from GraphQL. If you've previously built GraphQL servers, you'll be familiar with the concepts of input types and resolvers.
 
 tRPC is a lot simpler and couples your server & website/app more tightly together (for good and for bad). It allows you to move quickly, make changes without having to update a schema, and avoid thinking about the ever-traversable graph.
-
-

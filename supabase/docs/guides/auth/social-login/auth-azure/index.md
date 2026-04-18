@@ -167,5 +167,3 @@ Azure OAuth2.0 doesn't return the `provider_refresh_token` by default. If you ne
 *   [Azure Developer Account](https://portal.azure.com)
 *   [GitHub Discussion](https://github.com/supabase/gotrue/pull/54#issuecomment-757043573)
 *   [Potential Risk of Privilege Escalation in Azure AD Applications](https://msrc.microsoft.com/blog/2023/06/potential-risk-of-privilege-escalation-in-azure-ad-applications/)
-
-

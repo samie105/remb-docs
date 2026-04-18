@@ -58,5 +58,3 @@ Install on Docker
 ](/docs/latest/operate/redisinsight/install/install-on-docker/)
 
 ## On this page
-
-

@@ -371,5 +371,3 @@ After creating the OAuth callback endpoint and editing the sign in page and serv
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

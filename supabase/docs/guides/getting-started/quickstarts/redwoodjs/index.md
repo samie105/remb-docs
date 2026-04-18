@@ -175,5 +175,3 @@ Start the app via `yarn rw dev`. A browser will open to the RedwoodJS Splash pag
 Click on `/instruments` to visit [http://localhost:8910/instruments](http://localhost:8910/instruments) where should see the list of instruments.
 
 You may now edit, delete, and add new books using the scaffolded UI.
-
-

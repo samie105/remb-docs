@@ -189,5 +189,3 @@ IP Address
 
 *   When working with enterprise systems, email scanners may scan and make a `GET` request to the reset password link or sign-up link in your email. Since links in Supabase Auth are single-use, a user who opens an email post-scan to click on a link will receive an error. To get around this problem, consider altering the email template to replace the original magic link with a link to a domain you control. The domain can present the user with a "Sign-in" button, which redirects the user to the original magic link URL when clicked.
 *   When using a custom SMTP service, some services might have link tracking enabled which may overwrite or deform the email confirmation links sent by Supabase Auth. To prevent this from happening, we recommend that you disable link tracking when using a custom SMTP service.
-
-

@@ -143,5 +143,3 @@ Build an app with Nuxt and Bun
 Next
 
 ](/docs/guides/ecosystem/nuxt)
-
-

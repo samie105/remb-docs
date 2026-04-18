@@ -314,5 +314,3 @@ ITimeSeriesCommands ts = db.TS();
 See the other pages in this section for more information and examples.
 
 ## On this page
-
-

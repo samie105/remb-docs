@@ -67,5 +67,3 @@ The following articles provide an overview of how to query data with the [FT.SEA
 You can find further details about aggregation queries with [FT.AGGREGATE](/docs/latest/commands/ft.aggregate/) in the following article:
 
 *   [Aggregation queries](/docs/latest/develop/ai/search-and-query/query/aggregation/)
-
-

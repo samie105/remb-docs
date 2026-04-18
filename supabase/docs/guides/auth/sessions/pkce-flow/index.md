@@ -62,5 +62,3 @@ The code verifier is created and stored locally when the Auth flow is first init
 ## Resources[#](#resources)
 
 *   [OAuth 2.0 guide](https://oauth.net/2/pkce/) to PKCE flow
-
-

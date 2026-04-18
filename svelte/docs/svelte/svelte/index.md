@@ -1041,5 +1041,3 @@ interface Snippet<Parameters extends unknown[] = []> {…}
 previous next
 
 [Frequently asked questions](/docs/svelte/faq) [svelte/action](/docs/svelte/svelte-action)
-
-

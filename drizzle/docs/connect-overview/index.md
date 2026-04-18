@@ -151,5 +151,3 @@ postgresql://alex:AbC123dEf@ep-cool-darkness-123456.us-east-2.aws.neon.tech/dbna
 #### Next steps[](#next-steps)
 
 Feel free to check out per-driver documentations
-
-

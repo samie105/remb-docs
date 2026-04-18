@@ -67,5 +67,3 @@ To destroy a group role, use [`DROP ROLE`](https://www.postgresql.org/docs/curre
 DROP ROLE _`name`_;
 
 Any memberships in the group role are automatically revoked (but the member roles are not otherwise affected).
-
-

@@ -206,5 +206,3 @@ Other than `once`, modifiers are not valid on component event handlers.
 previous next
 
 [$$props and $$restProps](/docs/svelte/legacy-$$props-and-$$restProps) [<slot>](/docs/svelte/legacy-slots)
-
-

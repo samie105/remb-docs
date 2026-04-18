@@ -342,5 +342,3 @@ If you are using `push` workflows and want to change these fields in the index, 
 *   Push again
 
 For the `generate` command, `drizzle-kit` will be triggered by any changes in the index for any property in the new drizzle indexes API, so there are no limitations here.
-
-

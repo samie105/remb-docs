@@ -213,5 +213,3 @@ StrategyNumber
 amtranslatecmptype (CompareType cmptype, Oid opfamily, Oid opcintype);
 
 These functions, if implemented, will be called by the planner and executor to convert between fixed `CompareType` values and the specific strategy numbers used by the access method. These functions can be implemented by access methods that implement functionality similar to the built-in btree or hash access methods, and by implementing these translations, the system can learn about the semantics of the access method's operations and can use them in place of btree or hash indexes in various places. If the functionality of the access method is not similar to those built-in access methods, these functions do not need to be implemented. If the functions are not implemented, the access method will be ignored for certain planner and executor decisions, but is otherwise fully functional.
-
-

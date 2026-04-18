@@ -40,5 +40,3 @@ Name of the database that the foreign server is defined in (always the current d
 `foreign_server_name` `sql_identifier`
 
 Name of the foreign server
-
-

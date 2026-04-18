@@ -87,5 +87,3 @@ If you did not back up your database before upgrading:
 4.  Change connection details in your application from the old database to the new database.
 
 ## On this page
-
-

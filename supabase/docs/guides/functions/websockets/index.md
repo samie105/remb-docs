@@ -84,5 +84,3 @@ To prevent that, you can update the `supabase/config.toml` with the following se
 ```
 
 When running with `per_worker` policy, Function won't auto-reload on edits. You will need to manually restart it by running `supabase functions serve`.
-
-

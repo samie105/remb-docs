@@ -222,5 +222,3 @@ npx drizzle-kit migrate
 ```
 
 and our SQL migration is now successfully applied to the database ✅
-
-

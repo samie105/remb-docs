@@ -32,5 +32,3 @@ A [media query](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/U
 *   [`client:media`](/en/reference/directives-reference/#clientmedia)
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

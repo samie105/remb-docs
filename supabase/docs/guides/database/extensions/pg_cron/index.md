@@ -22,5 +22,3 @@ pg\_cron: Schedule Recurring Jobs with Cron Syntax in Postgres
 * * *
 
 See the [Supabase Cron docs](/docs/guides/cron).
-
-

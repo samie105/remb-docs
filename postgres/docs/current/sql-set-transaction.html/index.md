@@ -92,5 +92,3 @@ These commands are defined in the SQL standard, except for the `DEFERRABLE` tran
 In the SQL standard, there is one other transaction characteristic that can be set with these commands: the size of the diagnostics area. This concept is specific to embedded SQL, and therefore is not implemented in the PostgreSQL server.
 
 The SQL standard requires commas between successive _`transaction_modes`_, but for historical reasons PostgreSQL allows the commas to be omitted.
-
-

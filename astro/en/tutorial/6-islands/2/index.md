@@ -115,5 +115,3 @@ Choose whether each of the following statements describes Astro `<script>` tags,
 *   [Client-side `<script>` in Astro](/en/guides/client-side-scripts/)
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

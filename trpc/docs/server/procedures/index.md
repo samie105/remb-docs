@@ -284,5 +284,3 @@ ts
 ## Subscriptions[​](#subscriptions "Direct link to Subscriptions")
 
 For information on subscriptions, see [our subscriptions guide](trpc/docs/server/subscriptions/index.md).
-
-

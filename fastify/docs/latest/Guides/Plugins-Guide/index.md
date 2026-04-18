@@ -259,5 +259,3 @@ If you want to see some real-world examples, check out:
 *   [`@fastify/helmet`](https://github.com/fastify/fastify-helmet) Important security headers for Fastify
 
 _Do you feel like something is missing here? Let us know! :)_
-
-

@@ -74,5 +74,3 @@ See [postgres\_fdw](https://www.postgresql.org/docs/current/postgres-fdw.html "F
 ## Compatibility
 
 `CREATE SERVER` conforms to ISO/IEC 9075-9 (SQL/MED).
-
-

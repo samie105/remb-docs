@@ -54,5 +54,3 @@ ERROR:  conflicting key value violates exclusion constraint "zoo\_cage\_animal\_
 DETAIL:  Key (cage, animal)=(123, lion) conflicts with existing key (cage, animal)=(123, zebra).
 => INSERT INTO zoo VALUES(124, 'lion');
 INSERT 0 1
-
-

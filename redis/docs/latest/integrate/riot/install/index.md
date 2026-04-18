@@ -45,5 +45,3 @@ Download the pre-compiled binary from [RIOT-X Releases](https://github.com/redis
 Full installation documentation is available [here](https://redis.github.io/riotx/quick-start/install.html).
 
 ## On this page
-
-

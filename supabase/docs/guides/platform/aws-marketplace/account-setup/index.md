@@ -46,5 +46,3 @@ Linking an existing organization will result in the following:
 *   The Supabase user must have the Owner or Admin role
 *   There must be no overdue invoices within the organization
 *   The organization must not already be managed through another marketplace (e.g. Vercel Marketplace)
-
-

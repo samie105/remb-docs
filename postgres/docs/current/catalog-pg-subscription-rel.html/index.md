@@ -40,5 +40,3 @@ State code: `i` = initialize, `d` = data is being copied, `f` = finished table c
 `srsublsn` `pg_lsn`
 
 Remote LSN of the state change used for synchronization coordination when in `s` or `r` states, otherwise null
-
-

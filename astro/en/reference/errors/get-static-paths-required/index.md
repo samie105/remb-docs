@@ -30,5 +30,3 @@ In [Static Mode](/en/guides/routing/#static-ssg-mode), all routes must be determ
 *   [Server-side Rendering](/en/guides/on-demand-rendering/)
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

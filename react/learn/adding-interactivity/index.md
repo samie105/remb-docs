@@ -111,5 +111,3 @@ If copying arrays in code gets tedious, you can use a library like [Immer](https
 Head over to [Responding to Events](react/learn/responding-to-events/index.md) to start reading this chapter page by page!
 
 Or, if you’re already familiar with these topics, why not read about [Managing State](react/learn/managing-state/index.md)?
-
-

@@ -540,5 +540,3 @@ For complete API reference, see the [OAuth methods in supabase-js](/docs/referen
 *   [Implement MCP authentication](/docs/guides/auth/oauth-server/mcp-authentication) - Enable AI agent authentication
 *   [Secure with RLS](/docs/guides/auth/oauth-server/token-security) - Control data access for OAuth clients
 *   [Learn about JWTs](/docs/guides/auth/jwts) - Understand Supabase token structure
-
-

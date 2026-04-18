@@ -188,5 +188,3 @@ For the full example of the blog tutorial using content collections, see the [Co
  *    I can use content collections to manage groups of similar content for better performance and organization.
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

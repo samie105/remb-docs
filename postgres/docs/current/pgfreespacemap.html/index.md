@@ -63,5 +63,3 @@ postgres=# SELECT \* FROM pg\_freespace('foo', 7);
 --------------
          1216
 (1 row)
-
-

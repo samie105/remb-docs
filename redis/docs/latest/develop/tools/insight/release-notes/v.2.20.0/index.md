@@ -52,5 +52,3 @@ This is the General Availability (GA) release of RedisInsight 2.20.
 *   [#1697](https://github.com/RedisInsight/RedisInsight/pull/1697) Prevent crashes when working with [Redis streams](https://redis.io/docs/data-types/streams) with large IDs.
 
 ## On this page
-
-

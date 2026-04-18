@@ -138,5 +138,3 @@ See the [advanced Auth server-side rendering guide](/docs/guides/auth/server-sid
 *   Implement [Authentication using Email and Password](/docs/guides/auth/passwords)
 *   Implement [Authentication using OAuth](/docs/guides/auth/social-login)
 *   [Learn more about SSR](/docs/guides/auth/server-side/advanced-guide)
-
-

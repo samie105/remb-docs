@@ -170,5 +170,3 @@ The [Lettuce reference guide](https://redis.github.io/lettuce/) has more example
 See also the other pages in this section for more information and examples:
 
 ## On this page
-
-

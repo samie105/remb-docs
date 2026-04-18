@@ -170,5 +170,3 @@ Filter by the `parsed.user_name` field to only retrieve logs made by specific us
 ```
 1-- find events based on role/server2... query3where4  -- find events from the relevant role5  parsed.user_name = '<ROLE>'
 ```
-
-

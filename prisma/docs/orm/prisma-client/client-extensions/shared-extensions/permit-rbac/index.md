@@ -200,5 +200,3 @@ By integrating the `@permitio/permit-prisma` extension with your Prisma ORM appl
 
 *   [Create a free Permit.io account](https://app.permit.io/)
 *   [View the full extension documentation](https://github.com/permitio/permit-prisma)
-
-

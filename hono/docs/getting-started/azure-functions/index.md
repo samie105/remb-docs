@@ -197,5 +197,3 @@ sh
 ```
 func azure functionapp publish <YourFunctionAppName>
 ```
-
-

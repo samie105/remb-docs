@@ -198,5 +198,3 @@ The purpose of the `@unique` attribute in this case is only to enable relationsh
 ### [Disabled write queries](#disabled-write-queries)
 
 All write operations (`create`, `update`, `delete`, `upsert`) are disabled and not generated in the Prisma Client.
-
-

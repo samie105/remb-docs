@@ -96,5 +96,3 @@ Computes the distance in statute miles between two points on the Earth's surface
 Note that unlike the `cube`\-based part of the module, units are hardwired here: changing the `earth()` function will not affect the results of this operator.
 
 One disadvantage of the longitude/latitude representation is that you need to be careful about the edge conditions near the poles and near +/- 180 degrees of longitude. The `cube`\-based representation avoids these discontinuities.
-
-

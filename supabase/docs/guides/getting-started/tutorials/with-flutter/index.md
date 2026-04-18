@@ -209,5 +209,3 @@ Congratulations, you've built a fully functional user management app using Flutt
 
 *   [Flutter Tutorial: building a Flutter chat app](/blog/flutter-tutorial-building-a-chat-app)
 *   [Flutter Tutorial - Part 2: Authentication and Authorization with RLS](/blog/flutter-authentication-and-authorization-with-rls)
-
-

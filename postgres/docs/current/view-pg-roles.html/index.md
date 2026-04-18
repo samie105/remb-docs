@@ -72,5 +72,3 @@ Role-specific defaults for run-time configuration variables
 `oid` `oid` (references [`pg_authid`](https://www.postgresql.org/docs/current/catalog-pg-authid.html "52.8. pg_authid").`oid`)
 
 ID of role
-
-

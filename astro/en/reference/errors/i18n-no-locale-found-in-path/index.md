@@ -24,5 +24,3 @@ nav_next: {"path": "astro/en/reference/errors/i18n-not-enabled/index.md", "title
 An i18n utility tried to use the locale from a URL path that does not contain one. You can prevent this error by using pathHasLocale to check URLs for a locale first before using i18n utilities.
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

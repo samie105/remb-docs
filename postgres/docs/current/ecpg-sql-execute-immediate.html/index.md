@@ -45,5 +45,3 @@ EXEC SQL EXECUTE IMMEDIATE :command;
 ## Compatibility
 
 `EXECUTE IMMEDIATE` is specified in the SQL standard.
-
-

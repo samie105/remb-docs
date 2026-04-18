@@ -189,5 +189,3 @@ All three functions (`fs.glob()`, `fs.globSync()`, `fs.promises.glob()`) support
 
 *   Array of patterns as the first argument
 *   `exclude` option to filter results
-
-

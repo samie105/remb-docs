@@ -31,5 +31,3 @@ To get the user’s IP address in static mode, different APIs such as [Ipify](ht
 *   [Astro.clientAddress](/en/reference/api-reference/#clientaddress)
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

@@ -36,5 +36,3 @@ This is the General Availability (GA) release of Redis Insight 2.48.
 *   [#2711](https://github.com/RedisInsight/RedisInsight/pull/2711) Enhance the security and scalability by running Redis Insight on Docker [behind a proxy](https://github.com/RedisInsight/RedisInsight-reverse-proxy) using the newly added support for the static proxy subpath. Use the `RIPROXYPATH` environment variable to configure the subpath proxy path.
 
 ## On this page
-
-

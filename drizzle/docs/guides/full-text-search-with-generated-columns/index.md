@@ -168,5 +168,3 @@ await db
 ```
 select * from posts where search @@ to_tsquery('english', 'travel');
 ```
-
-

@@ -46,5 +46,3 @@ Part II. The SQL Language 
 [Home](https://www.postgresql.org/docs/current/index.html "PostgreSQL 18.3 Documentation")
 
  4.1. Lexical Structure
-
-

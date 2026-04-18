@@ -103,5 +103,3 @@ async function main() {
 The example here is only conceptual. For the actual caching to work, you will have to implement the logic. If you're interested in a caching extension/ service, we recommend taking a look at [Prisma Accelerate](https://www.prisma.io/accelerate).
 
 [Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/prisma-client/client-extensions/type-utilities.mdx)
-
-

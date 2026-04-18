@@ -174,5 +174,3 @@ let sculptureList = \[{
 }\];
 
 updateDOM();
-
-

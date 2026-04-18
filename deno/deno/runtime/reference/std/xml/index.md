@@ -111,5 +111,3 @@ deno add jsr:@std/xml
 ```
 
 [See all symbols in @std/xml on](https://jsr.io/@std/xml/doc)
-
-

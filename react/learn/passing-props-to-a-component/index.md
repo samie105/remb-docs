@@ -226,5 +226,3 @@ However, props are [immutable](https://en.wikipedia.org/wiki/Immutable_object)�
 *   You can’t change props. When you need interactivity, you’ll need to set state.
 
 This `Gallery` component contains some very similar markup for two profiles. Extract a `Profile` component out of it to reduce the duplication. You’ll need to choose what props to pass to it.
-
-

@@ -254,5 +254,3 @@ namespace Bun.CSRF {
   function verify(token: string, options?: CSRFVerifyOptions): boolean;
 }
 ```
-
-

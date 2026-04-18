@@ -40,5 +40,3 @@ You have the option to query this table directly to retrieve information about y
 We strongly recommend refraining from making any alterations to the `storage` schema and treating it as read-only. This approach is important because any modifications to the schema on your end could potentially clash with our future updates, leading to downtime.
 
 However, we encourage you to add custom indexes as they can significantly improve the performance of the RLS policies you create for enforcing access control.
-
-

@@ -57,5 +57,3 @@ console.log(unsorted);
 ```
 
 If you need other semver functions, feel free to open an issue or pull request.
-
-

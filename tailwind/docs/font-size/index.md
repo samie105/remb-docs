@@ -178,5 +178,3 @@ You can also provide default `line-height`, `letter-spacing`, and `font-weight` 
 ```
 
 Learn more about customizing your theme in the [theme documentation](tailwind/docs/theme/index.md#customizing-your-theme).
-
-

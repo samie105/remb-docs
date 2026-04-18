@@ -535,5 +535,3 @@ redis> redis-server --loadmodule ./redistimeseries.so ts-num-threads 3
 Prior to version 8.0, when using time series in a cluster, you had to set the `OSS_GLOBAL_PASSWORD` configuration parameter on all cluster nodes. As of version 8.0, Redis no longer uses this parameter and ignores it if present. Redis now uses a new shared secret mechanism to send internal commands between cluster nodes.
 
 ## On this page
-
-

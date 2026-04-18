@@ -176,5 +176,3 @@ And then add the widget to the Account page:
 [View source](https://github.com/supabase/supabase/blob/e8df67d5d5291e05ea56596aee0f2b7fa152929b/examples/user-management/solid-user-management/src/Account.tsx)
 
 At this stage you have a fully functional application!
-
-

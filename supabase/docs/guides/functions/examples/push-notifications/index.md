@@ -79,5 +79,3 @@ Navigate to the [Database Webhooks settings](/dashboard/project/_/integrations/w
 1.  Navigate to the [table editor](/dashboard/project/_/editor) in your Supabase Dashboard.
 2.  In your `notifications` table, insert a new row.
 3.  Watch the magic happen 🪄
-
-

@@ -28,5 +28,3 @@ A collection entry has an invalid `slug`. This field is reserved for generating 
 *   [The reserved entry `slug` field](/en/guides/content-collections/)
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

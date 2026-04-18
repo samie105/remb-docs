@@ -66,5 +66,3 @@ Alternatively, you can use [pgloader](https://github.com/dimitri/pgloader), a fl
 ## Enterprise[#](#enterprise)
 
 [Contact us](https://forms.supabase.com/enterprise) if you need more help migrating your project.
-
-

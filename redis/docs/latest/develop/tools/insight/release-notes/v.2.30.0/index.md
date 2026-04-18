@@ -39,5 +39,3 @@ Introducing support for [triggers and functions](https://github.com/RedisGears/R
 Triggers and functions work with a JavaScript engine, which lets you take advantage of JavaScript’s vast ecosystem of libraries and frameworks and modern, expressive syntax.
 
 ## On this page
-
-

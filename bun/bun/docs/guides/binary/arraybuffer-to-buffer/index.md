@@ -72,5 +72,3 @@ Convert an ArrayBuffer to a Blob
 Next
 
 ](/docs/guides/binary/arraybuffer-to-blob)
-
-

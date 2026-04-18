@@ -68,5 +68,3 @@ MacOS Apple silicon
 x8wlgNy4dadKV3tcn8uJh/ksvEMnBYaCPvlxlfwcMjNwXNoSBQ+tK6kgJSONGgLVUqtQe1pfTbzqBsqkEAxquw==
 
 ## On this page
-
-

@@ -236,5 +236,3 @@ tsx
 ## Reference[​](#reference "Direct link to Reference")
 
 You can check out the source code for this link on [GitHub.](https://github.com/trpc/trpc/blob/main/packages/client/src/links/httpBatchLink/index.ts)
-
-

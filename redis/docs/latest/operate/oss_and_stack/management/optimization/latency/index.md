@@ -458,5 +458,3 @@ Note: in the example the **DEBUG SLEEP** command was used in order to block the 
 If you happen to collect multiple watchdog stack traces you are encouraged to send everything to the Redis Google Group: the more traces we obtain, the simpler it will be to understand what the problem with your instance is.
 
 ## On this page
-
-

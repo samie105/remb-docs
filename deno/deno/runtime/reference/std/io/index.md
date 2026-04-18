@@ -44,5 +44,3 @@ deno add jsr:@std/io
 ```
 
 [See all symbols in @std/io on](https://jsr.io/@std/io/doc)
-
-

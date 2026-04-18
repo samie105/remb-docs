@@ -295,5 +295,3 @@ When your applications use the Supabase APIs they go through a component called 
 This API Gateway component is able to verify the API key (sent in the `apikey` request header, or for WebSocket in a query param) against your project's publishable and secret key list. If the match is found, it mints a temporary, short-lived JWT that is then forwarded down to your project's servers.
 
 It may be possible to replicate similar behavior if you self-host by using programmable proxies such as [Kong](https://konghq.com/), [Envoy](https://www.envoyproxy.io/), [NGINX](https://nginx.org/) or similar.
-
-

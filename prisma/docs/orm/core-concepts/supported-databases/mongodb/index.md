@@ -564,5 +564,3 @@ model Example {
   regex Unsupported("RegularExpression")
 }
 ```
-
-

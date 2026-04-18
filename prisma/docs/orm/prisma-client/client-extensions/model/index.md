@@ -147,5 +147,3 @@ Refer to [Add a custom method to all models in your schema](#example-1) for a co
 You can improve the type-safety of `model` components in your shared extensions with [type utilities](prisma/docs/orm/prisma-client/client-extensions/type-utilities/index.md).
 
 [Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/prisma-client/client-extensions/model.mdx)
-
-

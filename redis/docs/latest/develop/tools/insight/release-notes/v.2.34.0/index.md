@@ -43,5 +43,3 @@ This is the General Availability (GA) release of RedisInsight 2.34.
 *   [#2587](https://github.com/RedisInsight/RedisInsight/pull/2587) Display detailed [errors](https://github.com/RedisInsight/RedisInsight/issues/2562) in transactions run via CLI or Workbench
 
 ## On this page
-
-

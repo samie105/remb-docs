@@ -309,5 +309,3 @@ rm -rf tmp-build-context
 *   Use build scripts to manage context
 *   Include only required workspace members
 *   Update `.dockerignore` when dependencies change
-
-

@@ -73,5 +73,3 @@ And add the code to the `index.ts` file:
 ```
 
 You've now deployed a serverless function that uses AI to generate and upload images to your Supabase storage bucket.
-
-

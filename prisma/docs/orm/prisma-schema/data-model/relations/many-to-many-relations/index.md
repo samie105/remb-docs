@@ -177,5 +177,3 @@ const posts = await prisma.post.findMany({
 ```
 
 [Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/prisma-schema/data-model/relations/many-to-many-relations.mdx)
-
-

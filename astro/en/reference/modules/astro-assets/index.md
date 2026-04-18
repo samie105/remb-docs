@@ -1258,5 +1258,3 @@ A package or path to the image service module. This can be Astro’s built-in Sh
 A configuration object passed to the image service. The shape depends on the specific service being used.
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

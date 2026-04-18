@@ -26,5 +26,3 @@ These statements syntactically take the place of a C statement. Depending on the
 Embedded SQL statements follow the case-sensitivity rules of normal SQL code, and not those of C. Also they allow nested C-style comments as per the SQL standard. The C part of the program, however, follows the C standard of not accepting nested comments. Embedded SQL statements likewise use SQL rules, not C rules, for parsing quoted strings and identifiers. (See [Section 4.1.2.1](https://www.postgresql.org/docs/current/sql-syntax-lexical.html#SQL-SYNTAX-STRINGS "4.1.2.1. String Constants") and [Section 4.1.1](https://www.postgresql.org/docs/current/sql-syntax-lexical.html#SQL-SYNTAX-IDENTIFIERS "4.1.1. Identifiers and Key Words") respectively. Note that ECPG assumes that `standard_conforming_strings` is `on`.) Of course, the C part of the program follows C quoting rules.
 
 The following sections explain all the embedded SQL statements.
-
-

@@ -916,5 +916,3 @@ select "product_id", "quantity_ordered" from "regular_customer_orders"
 except all
 select "product_id", "quantity_ordered" from "vip_customer_orders"
 ```
-
-

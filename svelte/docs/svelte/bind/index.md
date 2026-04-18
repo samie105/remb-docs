@@ -481,5 +481,3 @@ This fallback value _only_ applies when the property is _not_ bound. When the pr
 previous next
 
 [{@debug ...}](/docs/svelte/@debug) [use:](/docs/svelte/use)
-
-

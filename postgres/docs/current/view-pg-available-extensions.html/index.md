@@ -40,5 +40,3 @@ Currently installed version of the extension, or `NULL` if not installed
 Comment string from the extension's control file
 
 The `pg_available_extensions` view is read-only.
-
-

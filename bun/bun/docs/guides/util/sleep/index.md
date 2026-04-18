@@ -71,5 +71,3 @@ Convert a file URL to an absolute path
 Next
 
 ](/docs/guides/util/file-url-to-path)
-
-

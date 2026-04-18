@@ -114,5 +114,3 @@ systemctl start my-app # start the app if is stopped
 systemctl stop my-app # stop the app
 systemctl restart my-app # restart the app
 ```
-
-

@@ -157,5 +157,3 @@ We sacrifice short-term wins for long-term gains. For example, it is tempting to
 ### Support existing tools[#](#support-existing-tools)
 
 Supabase supports existing tools and communities wherever possible. Supabase is more like a "community of communities" - each tool typically has its own community which we work with. Open source is something we approach [collaboratively](/blog/supabase-series-b#giving-back): we employ maintainers, sponsor projects, invest in businesses, and develop our own open source tools.
-
-

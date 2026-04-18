@@ -201,5 +201,3 @@ Specifics of the implementation will vary from one problem to another, but the m
 This guide is a tutorial on the use of plugins, decorators, and hooks to solve the problem of delaying serving specific requests on our application. It's not production-ready, as it keeps local state (the `magicKey`) and it's not horizontally scalable (we don't want to flood our provider, right?). One way of improving it would be storing the `magicKey` somewhere else (perhaps a cache database?).
 
 The keywords here were [Decorators](/docs/latest/Reference/Decorators/), [Hooks](/docs/latest/Reference/Hooks/), and [Plugins](/docs/latest/Reference/Plugins/). Combining what Fastify has to offer can lead to very ingenious and creative solutions to a wide variety of problems. Let's be creative! :)
-
-

@@ -64,5 +64,3 @@ To turn off the default user for a database:
     [![Use the Save database button to save the new password.](/docs/latest/images/rc/button-database-save.png)](/docs/latest/images/rc/button-database-save.png)
 
 ## On this page
-
-

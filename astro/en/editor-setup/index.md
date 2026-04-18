@@ -149,5 +149,3 @@ See the [Prettier plugin’s README](https://github.com/withastro/prettier-plugi
 [dprint](https://dprint.dev/) is a highly-configurable code formatter that supports many languages, including JavaScript, TypeScript, CSS, and more. Support for `.astro` files can be added using the [markup\_fmt plugin](https://github.com/g-plane/markup_fmt).
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

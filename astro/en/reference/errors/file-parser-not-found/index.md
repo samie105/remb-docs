@@ -28,5 +28,3 @@ The `file` loader can’t determine which parser to use. Please provide a custom
 *   [Passing a `parser` to the `file` loader](/en/reference/content-loader-reference/#parser)
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

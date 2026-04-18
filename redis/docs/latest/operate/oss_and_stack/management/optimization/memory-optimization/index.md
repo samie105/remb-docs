@@ -192,5 +192,3 @@ If `maxmemory` is not set Redis will keep allocating memory as it sees fit and t
 It makes Redis return an out-of-memory error for write commands if and when it reaches the limit - which in turn may result in errors in the application but will not render the whole machine dead because of memory starvation.
 
 ## On this page
-
-

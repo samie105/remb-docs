@@ -277,5 +277,3 @@ kubectl port-forward deployment/redisinsight 5540
 Open your browser and point to [http://localhost:5540](http://localhost:5540)
 
 ## On this page
-
-

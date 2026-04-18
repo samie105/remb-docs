@@ -165,5 +165,3 @@ All subsequent queries will inherit the permission of that user:
 There are endless approaches to this problem based on the complexities of each system. Luckily Postgres comes with all the primitives needed to provide access control in the way that works best for your project.
 
 If the examples above didn't fit your use case or you need to adjust them slightly to better fit your existing system, feel free to reach out to [support](/dashboard/support/new) and we'll be happy to assist you.
-
-

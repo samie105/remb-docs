@@ -28,5 +28,3 @@ Astro does not currently supporting converting between vector (such as SVGs) and
 *   [Images](/en/guides/images/)
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

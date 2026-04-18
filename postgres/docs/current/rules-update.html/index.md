@@ -505,5 +505,3 @@ SELECT \* FROM shoelace;
 A `DELETE` on a view, with a subquery qualification that in total uses 4 nesting/joined views, where one of them itself has a subquery qualification containing a view and where calculated view columns are used, gets rewritten into one single query tree that deletes the requested data from a real table.
 
 There are probably only a few situations out in the real world where such a construct is necessary. But it makes you feel comfortable that it works.
-
-

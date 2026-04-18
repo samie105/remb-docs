@@ -71,5 +71,3 @@ Information about FORK GC can be found in this [blog](https://redislabs.com/blog
 Since v1.6, the FORK GC is the default GC policy and was proven very efficient both in cleaning the index and not reducing query and indexing performance, even for very write-internsive use cases.
 
 ## On this page
-
-

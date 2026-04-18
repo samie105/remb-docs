@@ -231,5 +231,3 @@ Run the migration:
 This will drop the implicit table `_PostToUser`.
 
 [Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/more/troubleshooting/many-to-many-relations.mdx)
-
-

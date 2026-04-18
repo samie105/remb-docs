@@ -270,5 +270,3 @@ If you're using a library that only provides actions, you can convert them to at
 previous next
 
 [{@html ...}](/docs/svelte/@html) [{@const ...}](/docs/svelte/@const)
-
-

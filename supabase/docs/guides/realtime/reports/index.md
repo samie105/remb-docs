@@ -855,5 +855,3 @@ Contact support
 Discuss performance optimization strategies or investigate persistent latency issues
 
 [Support Portal](/dashboard/support/new)
-
-

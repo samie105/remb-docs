@@ -239,5 +239,3 @@ There are several third-party tools that can be used for benchmarking Redis. Ref
 *   [YCSB](https://github.com/brianfrankcooper/YCSB) from [Yahoo @Yahoo](https://twitter.com/Yahoo) is a benchmarking framework with clients to many databases, including Redis.
 
 ## On this page
-
-

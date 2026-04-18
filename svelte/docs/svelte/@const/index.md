@@ -29,5 +29,3 @@ The `{@const ...}` tag defines a local constant.
 previous next
 
 [{@attach ...}](/docs/svelte/@attach) [{@debug ...}](/docs/svelte/@debug)
-
-

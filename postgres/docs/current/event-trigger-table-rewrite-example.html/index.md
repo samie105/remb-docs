@@ -56,5 +56,3 @@ $$;
 CREATE EVENT TRIGGER no\_rewrite\_allowed
                   ON table\_rewrite
    EXECUTE FUNCTION no\_rewrite();
-
-

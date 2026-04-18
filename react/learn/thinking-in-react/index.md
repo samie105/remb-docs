@@ -526,5 +526,3 @@ const PRODUCTS = \[
 export default function App() {
   return <FilterableProductTable products\={PRODUCTS} />;
 }
-
-

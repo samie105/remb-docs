@@ -180,5 +180,3 @@ Open the browser to [localhost:4200](http://localhost:4200) and you should see t
 ![Screenshot of the Supabase Angular application running in a browser](/docs/img/supabase-angular-demo.png)
 
 At this stage you have a fully functional application!
-
-

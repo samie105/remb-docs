@@ -988,5 +988,3 @@ Error Handler must be a function
 Provide a function to `setErrorHandler`.
 
 [#5317](https://github.com/fastify/fastify/pull/5317)
-
-

@@ -111,5 +111,3 @@ To that file, add the SQL to create this `posts` table with row and column-level
 
 *   If you turn off a column privilege you won't be able to use that column at all.
 *   All operations (insert, update, delete) as well as using `select *` will fail.
-
-

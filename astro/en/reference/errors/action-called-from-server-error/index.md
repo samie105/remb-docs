@@ -28,5 +28,3 @@ Action called from a server page or endpoint without using `Astro.callAction()`.
 *   [`Astro.callAction()` reference](/en/reference/api-reference/#callaction)
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

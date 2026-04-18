@@ -154,5 +154,3 @@ model Profile {
 *   Save and apply the migration:
 
 [Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/prisma-migrate/workflows/customizing-migrations.mdx)
-
-

@@ -71,5 +71,3 @@ If you are on an earlier version of pgvector, you should [upgrade your project h
 ## Resources[#](#resources)
 
 Read more about indexing on `pgvector`'s [GitHub page](https://github.com/pgvector/pgvector#indexing).
-
-

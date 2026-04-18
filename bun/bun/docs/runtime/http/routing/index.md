@@ -292,5 +292,3 @@ const server = Bun.serve({
   },
 });
 ```
-
-

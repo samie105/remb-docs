@@ -221,5 +221,3 @@ Kubernetes version
 See [7.22.0 releases](/docs/latest/operate/kubernetes/release-notes/7-22-0-releases/) for information on known limitations.
 
 ## On this page
-
-

@@ -104,5 +104,3 @@ server {
 [![RedisInsight after login](/docs/latest/images/ri/ri-reverse-proxy-post-login.png)](/docs/latest/images/ri/ri-reverse-proxy-post-login.png)
 
 ## On this page
-
-

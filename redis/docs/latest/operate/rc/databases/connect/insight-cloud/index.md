@@ -80,5 +80,3 @@ You can also select the **Insights** button in the top-right corner to view the 
 [![The Insights button](/docs/latest/images/rc/rc-ri-insights-button.png)](/docs/latest/images/rc/rc-ri-insights-button.png)
 
 ## On this page
-
-

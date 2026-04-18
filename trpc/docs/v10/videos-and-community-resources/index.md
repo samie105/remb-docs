@@ -30,5 +30,3 @@ nav_next: {"path": "trpc/docs/v9/index.md", "title": "tRPC | tRPC"}
 ### DevTools.FM Episode 21[​](#devtoolsfm-episode-21 "Direct link to DevTools.FM Episode 21")
 
 60 minute podcast episode with Alex, the creator of tRPC.
-
-

@@ -135,5 +135,3 @@ No
 Max time between WAL checkpoints
 
 No
-
-

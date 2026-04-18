@@ -138,5 +138,3 @@ To include types for built-in Node APIs, add the following line to the top of yo
 ```
 1/// <reference types="npm:@types/node" />
 ```
-
-

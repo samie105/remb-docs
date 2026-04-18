@@ -49,5 +49,3 @@ END;
 ## Compatibility
 
 `END` is a PostgreSQL extension that provides functionality equivalent to [`COMMIT`](https://www.postgresql.org/docs/current/sql-commit.html "COMMIT"), which is specified in the SQL standard.
-
-

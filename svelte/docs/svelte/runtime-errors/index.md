@@ -602,5 +602,3 @@ The `this` prop on `<svelte:element>` must be a string, if defined
 previous next
 
 [Compiler warnings](/docs/svelte/compiler-warnings) [Runtime warnings](/docs/svelte/runtime-warnings)
-
-

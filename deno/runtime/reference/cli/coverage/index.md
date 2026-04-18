@@ -254,6 +254,3 @@ Output coverage report in lcov format.
 `--output`<output>
 
 Exports the coverage report in lcov format to the given file. If no `--output` arg is specified then the report is written to stdout.
-
-
-

@@ -377,5 +377,3 @@ export interface FileSink {
   unref(): void;
 }
 ```
-
-

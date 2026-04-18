@@ -269,5 +269,3 @@ Generate an example project for `deno serve`.
 `--yes, -y`
 
 Bypass the prompt and run with full permissions.
-
-

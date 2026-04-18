@@ -300,5 +300,3 @@ The most portable approach — swap memory backends without changing agent code.
 *   [Agent Memory Server documentation](https://github.com/redis/agent-memory-server)
 
 ## On this page
-
-

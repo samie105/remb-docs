@@ -63,5 +63,3 @@ Convert a Node.js Readable to a string
 Next
 
 ](/docs/guides/streams/node-readable-to-string)
-
-

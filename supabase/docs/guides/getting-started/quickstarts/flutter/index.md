@@ -156,5 +156,3 @@ In production, your Android app needs explicit permission to use the internet co
 ```
 1<manifest xmlns:android="http://schemas.android.com/apk/res/android">2  <!-- Required to fetch data from the internet. -->3  <uses-permission android:name="android.permission.INTERNET" />4  <!-- ... -->5</manifest>
 ```
-
-

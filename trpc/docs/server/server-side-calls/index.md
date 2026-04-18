@@ -468,5 +468,3 @@ ts
 `// The following will log "An error occurred: Error: Invalid name", and then throw the error`
 
 `await caller.greeting({ name: 'invalid' });`
-
-

@@ -34,5 +34,3 @@ Create an `index.ts` file to execute the handler on incoming requests:
 ```
 1import handler from './handler.tsx'23console.log('Hello from og-image Function!')45Deno.serve(handler)
 ```
-
-

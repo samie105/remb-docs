@@ -128,5 +128,3 @@ For comprehensive information about connecting to your database, including:
 See [Database connectivity](/docs/latest/operate/kubernetes/networking/database-connectivity/).
 
 ## On this page
-
-

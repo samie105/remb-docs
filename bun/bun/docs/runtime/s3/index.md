@@ -1012,5 +1012,3 @@ Like `Response` and `Blob`, `S3File` assumes UTF-8 encoding by default. When cal
 *   When a UTF-16 byte order mark (BOM) is detected, it will be treated as UTF-16. JavaScriptCore natively supports UTF-16, so it skips the UTF-8 transcoding process (and strips the BOM). This is mostly good, but it does mean if you have invalid surrogate pairs characters in your UTF-16 string, they will be passed through to JavaScriptCore (same as source code).
 *   When a UTF-8 BOM is detected, it gets stripped before the string is passed to JavaScriptCore and invalid UTF-8 codepoints are replaced with the Unicode replacement character (`\uFFFD`).
 *   UTF-32 is not supported.
-
-

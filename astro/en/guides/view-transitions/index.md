@@ -596,5 +596,3 @@ We strongly recommend you always include a `<title>` in each page for accessibil
 Astro’s `<ClientRouter />` component includes a CSS media query that disables _all_ view transition animations, including fallback animation, whenever the [`prefers-reduced-motion`](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion) setting is detected. Instead, the browser will simply swap the DOM elements without an animation.
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

@@ -105,5 +105,3 @@ Build an app with SolidStart and Bun
 Next
 
 ](/docs/guides/ecosystem/solidstart)
-
-

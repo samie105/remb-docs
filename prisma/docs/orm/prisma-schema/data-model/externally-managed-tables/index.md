@@ -291,5 +291,3 @@ export default defineConfig({
 Now you can run `prisma migrate dev` command.
 
 [Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/prisma-schema/data-model/externally-managed-tables.mdx)
-
-

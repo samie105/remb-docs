@@ -257,5 +257,3 @@ app.get('/stream', async (c) => {
 
 export const handler = streamHandle(app)
 ```
-
-

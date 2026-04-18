@@ -38,5 +38,3 @@ For local images from content collections, you can use the [image() schema helpe
 *   [Images](/en/guides/images/)
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

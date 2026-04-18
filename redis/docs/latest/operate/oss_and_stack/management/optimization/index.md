@@ -18,5 +18,3 @@ nav_next: {"path": "redis/docs/latest/develop/clients/php/index.md", "title": "P
 Benchmarking, profiling, and optimizations for memory and latency
 
 Redis Open Source
-
-

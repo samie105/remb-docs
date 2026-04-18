@@ -66,5 +66,3 @@ ts
   `return trpc.router<Context>();`
 
 `}`
-
-

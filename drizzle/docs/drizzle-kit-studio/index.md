@@ -141,5 +141,3 @@ If you want to deploy Drizzle Studio to your VPS - we have an alpha version of D
 No. Drizzle ORM and Drizzle Kit are fully open sourced, while Studio is not.
 
 Drizzle Studio for local development is free to use forever to enrich Drizzle ecosystem, open sourcing one would’ve break our ability to provide B2B offerings and monetise it, unfortunately.
-
-

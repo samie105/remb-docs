@@ -72,5 +72,3 @@ Encode and decode base64 strings
 Next
 
 ](/docs/guides/util/base64)
-
-

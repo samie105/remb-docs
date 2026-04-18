@@ -322,5 +322,3 @@ You can use [Prisma Client extensions](prisma/docs/orm/prisma-client/client-exte
 *   **IDs / Primary keys**: With MTI, records have two IDs (one on the parent and another on the child table) that may not match. You need to consider this in the business logic of your application.
 
 While Prisma ORM doesn't natively support union types or polymorphism at the moment, you can check out [Zenstack](https://github.com/zenstackhq/zenstack) which is adding an extra layer of features to the Prisma schema. Read their [blog post about polymorphism in Prisma ORM](https://zenstack.dev/blog/polymorphism) to learn more.
-
-

@@ -49,5 +49,3 @@ Redis Insight is available for multiple platforms:
 Refer to the complete [Redis Insight guide](/docs/latest/develop/tools/insight/) to install, connect, and use Redis Insight for data visualization and database management.
 
 ## On this page
-
-

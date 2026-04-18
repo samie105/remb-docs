@@ -355,5 +355,3 @@ bun pm pkg delete scripts.test contributors[0]    # multiple/nested
 # fix
 bun pm pkg fix                                    # auto-fix common issues
 ```
-
-

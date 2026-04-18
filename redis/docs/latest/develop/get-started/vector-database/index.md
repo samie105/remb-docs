@@ -4369,5 +4369,3 @@ Small and powerful, the Jigger is the best ride for the smallest of tikes! This 
 See the [Redis vector database course](https://university.redis.io/course/7e2qbbeg963twz) for learning modules.
 
 ## On this page
-
-

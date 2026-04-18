@@ -82,5 +82,3 @@ To add pgfence as a pre-deploy step in your GitHub Actions workflow:
 For a full setup guide, see the [pgfence integration guide](https://www.prisma.io/docs/guides/integrations/pgfence).
 
 [Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/prisma-client/deployment/deploy-database-changes-with-prisma-migrate.mdx)
-
-

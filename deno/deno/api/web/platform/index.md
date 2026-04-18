@@ -622,5 +622,3 @@ v
 [self](./././~/self "self")
 
 Reference to the global object itself. Equivalent to the global `window` object in browser environments.
-
-

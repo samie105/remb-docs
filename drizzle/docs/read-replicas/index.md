@@ -210,5 +210,3 @@ const db = withReplicas(primaryDb, [read1, read2], (replicas) => {
 
 await db.select().from(usersTable)
 ```
-
-

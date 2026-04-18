@@ -248,5 +248,3 @@ Match each file path with a second file path that will create a page at the same
 *   [Static Routing in Astro](/en/guides/routing/#static-routes)
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

@@ -65,5 +65,3 @@ Convert a Uint8Array to a DataView
 Next
 
 ](/docs/guides/binary/typedarray-to-dataview)
-
-

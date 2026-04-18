@@ -188,5 +188,3 @@ tRPC includes more sophisticated client-side tooling designed for React projects
 *   [Usage with Next.js](trpc/docs/v9/nextjs/index.md)
 *   [Usage with Express.js (server-side)](trpc/docs/v9/express/index.md)
 *   [Usage with React (client-side)](trpc/docs/v9/react/index.md)
-
-

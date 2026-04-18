@@ -45,5 +45,3 @@ In Svelte 3/4 using `$$props` and `$$restProps` creates a modest performance pen
 previous next
 
 [export let](/docs/svelte/legacy-export-let) [on:](/docs/svelte/legacy-on)
-
-

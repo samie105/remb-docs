@@ -64,5 +64,3 @@ Convert a ReadableStream to an ArrayBuffer
 Next
 
 ](/docs/guides/streams/to-arraybuffer)
-
-

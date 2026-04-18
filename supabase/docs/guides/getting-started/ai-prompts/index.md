@@ -112,5 +112,3 @@ Windsurf
 `guidelines.md`
 
 Configure `guidelines.md`
-
-

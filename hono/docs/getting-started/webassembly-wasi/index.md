@@ -369,5 +369,3 @@ To reach out to the WebAssembly community with questions, comments, contribution
 *   [Bytecode Alliance Zulip](https://bytecodealliance.zulipchat.com/) (consider posting in the [#jco channel](https://bytecodealliance.zulipchat.com/#narrow/channel/409526-jco))
 *   [Jco repository](https://github.com/bytecodealliance/jco)
 *   [componentize-js repository](https://github.com/bytecodealliance/componentize-js)
-
-

@@ -493,5 +493,3 @@ declare module 'hono/jsx' {
   }
 }
 ```
-
-

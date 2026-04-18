@@ -24,5 +24,3 @@ nav_next: {"path": "astro/en/reference/errors/cannot-optimize-svg/index.md", "ti
 Cannot fetch the given font file
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

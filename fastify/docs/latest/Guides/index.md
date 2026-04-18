@@ -35,5 +35,3 @@ This table of contents is in alphabetical order.
 *   [Style Guide](/docs/latest/Guides/Style-Guide/): Explains the writing style we use for the Fastify documentation for those who want to contribute documentation.
 *   [Testing](/docs/latest/Guides/Testing/): Explains how to write unit tests for Fastify applications.
 *   [Write Plugin](/docs/latest/Guides/Write-Plugin/): A set of guidelines for what the Fastify team considers good practices for writing a Fastify plugin.
-
-

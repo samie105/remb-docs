@@ -149,5 +149,3 @@ You can also opt out using the `SUPABASE_TELEMETRY_DISABLED=1` environment varia
 
 *   [CLI configuration](/docs/guides/local-development/cli/config)
 *   [CLI reference](/docs/reference/cli)
-
-

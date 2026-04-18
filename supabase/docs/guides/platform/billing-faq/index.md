@@ -304,5 +304,3 @@ If you use Supabase through a cloud marketplace such as AWS Marketplace or Verce
 #### Who should I contact with questions about tax?[#](#who-should-i-contact-with-questions-about-tax)
 
 For questions about tax collection, exemptions, or your Tax ID, please open a [support ticket](https://supabase.help).
-
-

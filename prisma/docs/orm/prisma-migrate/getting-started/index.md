@@ -181,5 +181,3 @@ Commit the following to source control:
 *   Refer to the [Production Troubleshooting](prisma/docs/orm/prisma-migrate/workflows/patching-and-hotfixing/index.md#fixing-failed-migrations-with-migrate-diff-and-db-execute) guide to learn how to debug and resolve failed migrations in production using `prisma migrate diff`, `prisma db execute` and/ or `prisma migrate resolve`.
 
 [Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/prisma-migrate/getting-started.mdx)
-
-

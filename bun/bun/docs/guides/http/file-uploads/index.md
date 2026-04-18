@@ -105,5 +105,3 @@ const server = Bun.serve({
   },
 });
 ```
-
-

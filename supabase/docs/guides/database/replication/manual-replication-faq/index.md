@@ -59,5 +59,3 @@ Some of the more important options to be aware of are:
 *   `max_wal_senders` - Maximum number of concurrent connections from standby servers or streaming backup clients
 
 These settings help ensure your replication slots don't run out of space and that replicas can reconnect without requiring a full re-sync.
-
-

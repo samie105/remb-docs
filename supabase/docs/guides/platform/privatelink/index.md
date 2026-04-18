@@ -188,5 +188,3 @@ Our support team will guide you through the configuration and ensure your privat
 PrivateLink is not currently available in the following regions:
 
 *   **eu-central-2 (Zurich)** - Expected availability: April 2026
-
-

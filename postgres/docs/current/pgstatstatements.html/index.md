@@ -437,5 +437,3 @@ calls           | 0
 total\_exec\_time | 0
 rows            | 0
 hit\_percent     |
-
-

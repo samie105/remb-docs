@@ -36,5 +36,3 @@ This is a maintenance release to support [Redis Enterprise Software version 7.22
 *   **Call Home Client**: `redislabs/call-home-client:7.22.0-11`
 
 ## On this page
-
-

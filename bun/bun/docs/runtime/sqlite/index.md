@@ -747,5 +747,3 @@ SQLite type
 `null`
 
 `NULL`
-
-

@@ -119,5 +119,3 @@ This can be convenient to be able to use operating-system-independent collation 
 ## Compatibility
 
 There is a `CREATE COLLATION` statement in the SQL standard, but it is limited to copying an existing collation. The syntax to create a new collation is a PostgreSQL extension.
-
-

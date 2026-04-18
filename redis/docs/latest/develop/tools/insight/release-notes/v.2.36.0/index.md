@@ -41,5 +41,3 @@ This is the General Availability (GA) release of RedisInsight 2.36.
 *   [#2675](https://github.com/RedisInsight/RedisInsight/pull/2675) Show the "Scan more" control until the cursor returned by the server is 0 to fix [cases](https://github.com/RedisInsight/RedisInsight/issues/2618) when not all keys are displayed.
 
 ## On this page
-
-

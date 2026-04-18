@@ -380,5 +380,3 @@ SELECT pg\_advisory\_lock(q.id) FROM
 In the above queries, the second form is dangerous because the `LIMIT` is not guaranteed to be applied before the locking function is executed. This might cause some locks to be acquired that the application was not expecting, and hence would fail to release (until it ends the session). From the point of view of the application, such locks would be dangling, although still viewable in `pg_locks`.
 
 The functions provided to manipulate advisory locks are described in [Section 9.28.10](https://www.postgresql.org/docs/current/functions-admin.html#FUNCTIONS-ADVISORY-LOCKS "9.28.10. Advisory Lock Functions").
-
-

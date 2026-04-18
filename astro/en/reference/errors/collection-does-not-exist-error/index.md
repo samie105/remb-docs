@@ -24,5 +24,3 @@ nav_next: {"path": "astro/en/reference/errors/config-not-found/index.md", "title
 When querying a collection, ensure a collection directory with the requested name exists under `src/content/`.
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

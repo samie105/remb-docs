@@ -96,5 +96,3 @@ When you explicitly specify a region via the `x-region` header, requests will NO
 During outages, consider temporarily changing to a different region.
 
 Test your function's performance with and without regional specification to determine if the benefits outweigh automatic region selection.
-
-

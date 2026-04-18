@@ -78,5 +78,3 @@ Once this is done, you can manage and interact with your database directly via S
 ![Sevalla database studio interface](https://www.prisma.io/docs/img/orm/prisma-client/deployment/traditional/images/sevalla-database-studio.png?dpl=dpl_2TrAJrUt7dXR3AAWNDvwk5WL6VFX)
 
 Congratulations! You've successfully deployed a Node.js application using Prisma ORM to Sevalla. Your app and database are now connected, secure, and production-ready!
-
-

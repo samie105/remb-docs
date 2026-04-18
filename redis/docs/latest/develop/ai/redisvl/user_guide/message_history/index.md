@@ -226,5 +226,3 @@ semantic_history.clear()
 ```
 
 ## On this page
-
-

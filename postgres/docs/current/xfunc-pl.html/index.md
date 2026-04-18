@@ -42,5 +42,3 @@ PostgreSQL allows user-defined functions to be written in other languages beside
 [Home](https://www.postgresql.org/docs/current/index.html "PostgreSQL 18.3 Documentation")
 
  36.9. Internal Functions
-
-

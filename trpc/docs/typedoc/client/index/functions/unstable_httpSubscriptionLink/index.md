@@ -46,5 +46,3 @@ use [httpSubscriptionLink](trpc/docs/typedoc/client/index/functions/httpSubscrip
 ## See[​](#see "Direct link to See")
 
 [https://trpc.io/docs/client/links/httpSubscriptionLink](trpc/docs/client/links/httpSubscriptionLink/index.md)
-
-

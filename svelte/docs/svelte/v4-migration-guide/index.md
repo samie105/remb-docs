@@ -630,5 +630,3 @@ Each preprocessor must also have a name. ([#8618](https://github.com/sveltejs/sv
 previous next
 
 [Custom elements](/docs/svelte/custom-elements) [Svelte 5 migration guide](/docs/svelte/v5-migration-guide)
-
-

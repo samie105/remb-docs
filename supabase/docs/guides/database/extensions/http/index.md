@@ -80,5 +80,3 @@ A successful call to a web URL from the `http` extension returns a record with t
 ## Resources[#](#resources)
 
 *   Official [`http` GitHub Repository](https://github.com/pramsey/pgsql-http)
-
-

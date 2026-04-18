@@ -36,5 +36,3 @@ In that case, the `<style>` tag will be inserted as-is into the DOM; no scoping 
 previous next
 
 [Custom properties](/docs/svelte/custom-properties) [<svelte:boundary>](/docs/svelte/svelte-boundary)
-
-

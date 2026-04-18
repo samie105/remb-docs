@@ -36,5 +36,3 @@ SELECT 3 \* 4;
 This is more useful if the expressions in the select list return varying results. For example, you could call a function this way:
 
 SELECT random();
-
-

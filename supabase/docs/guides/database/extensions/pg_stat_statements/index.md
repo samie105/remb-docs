@@ -98,5 +98,3 @@ From the results, we can make an informed decision about which queries to optimi
 ## Resources[#](#resources)
 
 *   Official [pg\_stat\_statements documentation](https://www.postgresql.org/docs/current/pgstatstatements.html)
-
-

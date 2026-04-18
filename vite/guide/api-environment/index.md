@@ -167,5 +167,3 @@ Plugin authors have a more consistent API available to interact with the current
 Frameworks could decide to expose environments at different levels. If you're a framework author, continue reading the [Environment API Frameworks Guide](vite/guide/api-environment-frameworks/index.md) to learn about the Environment API programmatic side.
 
 For Runtime providers, the [Environment API Runtimes Guide](vite/guide/api-environment-runtimes/index.md) explains how to offer custom environments to be consumed by frameworks and users.
-
-

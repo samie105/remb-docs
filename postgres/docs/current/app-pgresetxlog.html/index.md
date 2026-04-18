@@ -44,5 +44,3 @@ O.3. `pg_xlogdump` renamed to `pg_waldump` 
 [Home](https://www.postgresql.org/docs/current/index.html "PostgreSQL 18.3 Documentation")
 
  O.5. `pg_receivexlog` renamed to `pg_receivewal`
-
-

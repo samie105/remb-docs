@@ -113,5 +113,3 @@ For the built in `migrate` function with DDL migrations we and drivers strongly 
 For querying purposes feel free to use either `client` or `pool` based on your business demands.
 
 #### What’s next?[](#whats-next)
-
-

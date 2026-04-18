@@ -119,5 +119,3 @@ CREATE TABLE us\_snail\_addy (
 The command `CREATE DOMAIN` conforms to the SQL standard.
 
 The syntax `NOT NULL` in this command is a PostgreSQL extension. (A standard-conforming way to write the same for non-composite data types would be `CHECK (VALUE IS NOT NULL)`. However, per [the section called “Notes”](https://www.postgresql.org/docs/current/sql-createdomain.html#SQL-CREATEDOMAIN-NOTES "Notes"), such constraints are best avoided in practice anyway.) The `NULL` “constraint” is a PostgreSQL extension (see also [Compatibility](https://www.postgresql.org/docs/current/sql-createtable.html#SQL-CREATETABLE-COMPATIBILITY "Compatibility")).
-
-

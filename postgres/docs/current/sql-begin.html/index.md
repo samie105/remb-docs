@@ -65,5 +65,3 @@ BEGIN;
 The `DEFERRABLE` _`transaction_mode`_ is a PostgreSQL language extension.
 
 Incidentally, the `BEGIN` key word is used for a different purpose in embedded SQL. You are advised to be careful about the transaction semantics when porting database applications.
-
-

@@ -317,5 +317,3 @@ The returned `Promise` resolves when the close request has been sent. This does 
 Returns a `Promise` that will resolve once the server is closed and reject if an error happens on the server.
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

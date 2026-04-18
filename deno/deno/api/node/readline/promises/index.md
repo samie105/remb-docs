@@ -67,5 +67,3 @@ T
 [Completer](../.././readline/promises/~/Completer "Completer")
 
 No documentation available
-
-

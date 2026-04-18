@@ -145,5 +145,3 @@ Start the app, navigate to [http://localhost:3000](http://localhost:3000) in the
 ```
 
 The community-maintained [@nuxtjs/supabase](https://supabase.nuxtjs.org/) module provides an alternate DX for working with Supabase in Nuxt.
-
-

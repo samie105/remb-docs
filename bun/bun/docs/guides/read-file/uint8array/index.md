@@ -68,5 +68,3 @@ Read a file to an ArrayBuffer
 Next
 
 ](/docs/guides/read-file/arraybuffer)
-
-

@@ -92,5 +92,3 @@ The user interface to the latency monitoring subsystem is the [`LATENCY`](/comma
 Refer to each subcommand's documentation page for further information.
 
 ## On this page
-
-

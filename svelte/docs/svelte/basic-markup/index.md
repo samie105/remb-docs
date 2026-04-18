@@ -229,5 +229,3 @@ You can add a special comment starting with `@component` that will show up when 
 previous next
 
 [$host](/docs/svelte/$host) [{#if ...}](/docs/svelte/if)
-
-

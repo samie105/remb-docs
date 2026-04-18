@@ -83,5 +83,3 @@ In this example, the data type of the second parameter is not specified, so it i
 ## Compatibility
 
 The SQL standard includes a `PREPARE` statement, but it is only for use in embedded SQL. This version of the `PREPARE` statement also uses a somewhat different syntax.
-
-

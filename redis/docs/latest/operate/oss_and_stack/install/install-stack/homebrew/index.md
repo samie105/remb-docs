@@ -193,5 +193,3 @@ Once you have a running Redis instance, you may want to:
 *   Connect using [Redis Insight](/docs/latest/develop/tools/insight/)
 
 ## On this page
-
-

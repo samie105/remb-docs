@@ -78,5 +78,3 @@ Prefix a `backdrop-filter: hue-rotate()` utility with a breakpoint variant like 
 ```
 
 Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).
-
-

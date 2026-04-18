@@ -33,5 +33,3 @@ Uninstall Supabase Cron by disabling the `pg_cron` extension:
 ```
 
 Disabling the `pg_cron` extension will permanently delete all Jobs.
-
-

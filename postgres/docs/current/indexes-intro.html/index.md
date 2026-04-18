@@ -55,5 +55,3 @@ then it can be flipped around into indexable form if the original _`operator`_ h
 Creating an index on a large table can take a long time. By default, PostgreSQL allows reads (`SELECT` statements) to occur on the table in parallel with index creation, but writes (`INSERT`, `UPDATE`, `DELETE`) are blocked until the index build is finished. In production environments this is often unacceptable. It is possible to allow writes to occur in parallel with index creation, but there are several caveats to be aware of — for more information see [Building Indexes Concurrently](https://www.postgresql.org/docs/current/sql-createindex.html#SQL-CREATEINDEX-CONCURRENTLY "Building Indexes Concurrently").
 
 After an index is created, the system has to keep it synchronized with the table. This adds overhead to data manipulation operations. Indexes can also prevent the creation of [heap-only tuples](https://www.postgresql.org/docs/current/storage-hot.html "66.7. Heap-Only Tuples (HOT)"). Therefore indexes that are seldom or never used in queries should be removed.
-
-

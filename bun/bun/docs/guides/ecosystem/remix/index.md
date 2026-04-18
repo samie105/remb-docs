@@ -103,5 +103,3 @@ $ remix-serve ./build/index.js
 * * *
 
 Read the [Remix docs](https://remix.run/) for more information on how to build apps with Remix.
-
-

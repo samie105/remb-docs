@@ -265,5 +265,3 @@ docker run --name sql_container \
 Connect with: Username `sa`, password `myPassword`, port `1433`
 
 [Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/core-concepts/supported-databases/sql-server.mdx)
-
-

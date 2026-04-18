@@ -57,5 +57,3 @@ Yes! Astro provides built-in ways to [store images](/en/guides/images/#where-to-
 However, there is no native video support in Astro, and we recommend choosing a service like [Mux](/en/guides/media/mux/) to handle the demands of optimizing and streaming video content.
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

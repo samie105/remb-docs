@@ -126,5 +126,3 @@ ts
   `code: TRPC_ERROR_CODE_NUMBER;`
 
 `}`
-
-

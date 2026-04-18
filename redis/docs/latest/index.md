@@ -241,5 +241,3 @@ Provide feedback on AI chatbot answers to help us improve
 Documentation and guides for AI agents
 
 [Explore resources →](./ai-agent-resources/)
-
-

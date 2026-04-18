@@ -276,5 +276,3 @@ Replace the following fields:
 After your Redis database is set up, you can use it to [create a knowledge base](/docs/latest/integrate/amazon-bedrock/create-knowledge-base/) in Amazon Bedrock.
 
 ## On this page
-
-

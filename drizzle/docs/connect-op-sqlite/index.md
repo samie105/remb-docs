@@ -154,5 +154,3 @@ export default function App() {
   return ...your application component;
 }
 ```
-
-

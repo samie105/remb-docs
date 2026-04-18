@@ -2533,5 +2533,3 @@ You can address more use cases with Redis by reading these additional quick star
 See the [Get Started with Redis learning path](https://university.redis.io/learningpath/14q8m6gilfwltm) for courses.
 
 ## On this page
-
-

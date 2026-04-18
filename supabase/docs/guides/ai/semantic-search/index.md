@@ -178,5 +178,3 @@ Supabase uses Postgres with the `pgvector` extension, which supports two primary
 *   [Vector indexes](/docs/guides/ai/vector-indexes)
 *   [Hybrid search](/docs/guides/ai/hybrid-search)
 *   [Keyword search](/docs/guides/ai/keyword-search)
-
-

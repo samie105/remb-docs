@@ -90,5 +90,3 @@ Convert a Blob to a string
 Next
 
 ](/docs/guides/binary/blob-to-string)
-
-

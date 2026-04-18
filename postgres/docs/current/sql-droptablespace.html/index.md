@@ -48,5 +48,3 @@ DROP TABLESPACE mystuff;
 ## Compatibility
 
 `DROP TABLESPACE` is a PostgreSQL extension.
-
-

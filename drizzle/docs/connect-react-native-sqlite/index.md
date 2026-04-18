@@ -14,5 +14,3 @@ nav_next: {"path": "drizzle/docs/connect-aws-data-api-pg/index.md", "title": "Dr
 ---
 
 Drizzle ORM - React Native SQLite
-
-

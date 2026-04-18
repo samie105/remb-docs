@@ -923,5 +923,3 @@ const myPlugin: BunPlugin = {
 *   🔴 `warnings`
 *   🔴 `watchDirs`
 *   🔴 `watchFiles`
-
-

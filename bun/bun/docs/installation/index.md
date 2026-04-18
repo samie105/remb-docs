@@ -345,7 +345,3 @@ Quickstart
 Next
 
 ](/docs/quickstart)
-
-
-
-

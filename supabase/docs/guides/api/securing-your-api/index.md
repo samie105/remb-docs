@@ -235,5 +235,3 @@ This ensures the function is called when evaluating RLS policies for all product
 Be aware that calling functions directly in RLS policies can impact database performance, as the function is evaluated for each row when the policy is checked. Consider optimizing your function or using caching strategies if performance becomes an issue.
 
 To clear old entries in the `private.rate_limits` table, set up a [pg\_cron](/docs/guides/database/extensions/pg_cron) job to clean them up.
-
-

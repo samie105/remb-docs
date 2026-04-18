@@ -48,5 +48,3 @@ Allows mapping from client principals to database user names. See [Section 20.2
 Sets the realm to match user principal names against. If this parameter is set, only users of that realm will be accepted. If it is not set, users of any realm can connect, subject to whatever user name mapping is done.
 
 In addition to these settings, which can be different for different `pg_hba.conf` entries, there is the server-wide [krb\_caseins\_users](postgres/docs/current/runtime-config-connection.html/index.md#GUC-KRB-CASEINS-USERS) configuration parameter. If that is set to true, client principals are matched to user map entries case-insensitively. `krb_realm`, if set, is also matched case-insensitively.
-
-

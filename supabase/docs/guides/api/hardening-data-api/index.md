@@ -140,5 +140,3 @@ To restore full access:
 ```
 1grant select, insert, update, delete on table public.your_table to anon;
 ```
-
-

@@ -84,5 +84,3 @@ SHOW ALL;
 ## Compatibility
 
 The `SHOW` command is a PostgreSQL extension.
-
-

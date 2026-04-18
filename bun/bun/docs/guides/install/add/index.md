@@ -99,5 +99,3 @@ Add a development dependency
 Next
 
 ](/docs/guides/install/add-dev)
-
-

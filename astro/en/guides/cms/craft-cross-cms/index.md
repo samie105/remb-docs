@@ -207,5 +207,3 @@ nav_next: {"path": "astro/en/guides/cms/crystallize/index.md", "title": "Crystal
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

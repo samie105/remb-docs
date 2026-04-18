@@ -146,5 +146,3 @@ Examples of using native tooling:
 While Vite core is based on native tooling, some features still use non-native tooling by default to provide better compatibility and feature set. But it may be worth the cost for larger applications.
 
 *   Try out the experimental support for [LightningCSS](https://github.com/vitejs/vite/discussions/13835)
-
-

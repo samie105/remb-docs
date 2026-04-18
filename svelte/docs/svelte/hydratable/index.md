@@ -170,5 +170,3 @@ We recommend using `nonce` over hash if you can, as `hash` will interfere with s
 previous next
 
 [Imperative component API](/docs/svelte/imperative-component-api) [Best practices](/docs/svelte/best-practices)
-
-

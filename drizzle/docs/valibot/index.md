@@ -511,5 +511,3 @@ pg.dataType().array(...);
 // Schema
 pipe(array(baseDataTypeSchema), length(size));
 ```
-
-

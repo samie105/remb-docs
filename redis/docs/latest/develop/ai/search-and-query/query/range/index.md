@@ -5742,5 +5742,3 @@ public class QueryRangeExample
 You can learn more about non-numeric range queries, such as [geospatial](/docs/latest/develop/ai/search-and-query/query/geo-spatial/) or [vector search](/docs/latest/develop/ai/search-and-query/query/vector-search/) queries, in their dedicated articles.
 
 ## On this page
-
-

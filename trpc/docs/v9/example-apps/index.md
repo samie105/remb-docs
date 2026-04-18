@@ -95,5 +95,3 @@ Quick start with `create-trpc-appx`
 _n/a_
 
 *   [Source](https://github.com/omar-dulaimi/trpc-shield/tree/master/example)
-
-

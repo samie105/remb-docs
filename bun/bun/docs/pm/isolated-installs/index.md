@@ -270,5 +270,3 @@ The main difference is that Bun uses symlinks in `node_modules` while pnpm uses 
 *   [Package manager > Workspaces](bun/bun/docs/pm/workspaces/index.md) — Monorepo workspace management
 *   [Package manager > Lockfile](bun/bun/docs/pm/lockfile/index.md) — Understanding Bun’s lockfile format
 *   [CLI > install](bun/bun/docs/pm/cli/install/index.md) — Complete `bun install` command reference
-
-

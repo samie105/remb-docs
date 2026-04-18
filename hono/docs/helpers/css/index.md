@@ -307,5 +307,3 @@ const { css, Style } = createCssContext({
 If you use VS Code, you can use [vscode-styled-components](https://marketplace.visualstudio.com/items?itemName=styled-components.vscode-styled-components) for Syntax highlighting and IntelliSense for CSS tagged literals.
 
 ![](https://hono.dev/images/css-ss.png)
-
-

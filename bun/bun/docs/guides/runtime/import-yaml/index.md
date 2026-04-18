@@ -123,5 +123,3 @@ export = contents;
 * * *
 
 See [Docs > API > YAML](bun/bun/docs/runtime/yaml/index.md) for complete documentation on YAML support in Bun.
-
-

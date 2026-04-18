@@ -247,5 +247,3 @@ See [Client-server Communication](vite/guide/api-plugin/index.md#client-server-c
 If you'd like to learn more about how to use the HMR API and how it works under-the-hood. Check out these resources:
 
 *   [Hot Module Replacement is Easy](https://bjornlu.com/blog/hot-module-replacement-is-easy)
-
-

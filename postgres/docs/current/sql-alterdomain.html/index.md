@@ -160,5 +160,3 @@ ALTER DOMAIN zipcode SET SCHEMA customers;
 ## Compatibility
 
 `ALTER DOMAIN` conforms to the SQL standard, except for the `OWNER`, `RENAME`, `SET SCHEMA`, and `VALIDATE CONSTRAINT` variants, which are PostgreSQL extensions. The `NOT VALID` clause of the `ADD CONSTRAINT` variant is also a PostgreSQL extension.
-
-

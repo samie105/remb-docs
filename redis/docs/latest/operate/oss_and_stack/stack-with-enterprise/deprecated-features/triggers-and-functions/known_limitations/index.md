@@ -56,5 +56,3 @@ Not all the JavaScript global variables are made available by the JavaScript eng
 This feature is sandboxed, meaning, from within a function, it’s not possible to make calls to external services, including other Redis databases, or APIs.
 
 ## On this page
-
-

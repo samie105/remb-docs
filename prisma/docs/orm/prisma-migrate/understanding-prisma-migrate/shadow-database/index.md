@@ -138,5 +138,3 @@ To resolve this error:
 *   If you are developing against a cloud-based database (for example, on Heroku, Digital Ocean, or Vercel Postgres) and are currently **prototyping** such that you don't care about generated migration files and only need to apply your Prisma schema to the database schema, you can run [`prisma db push`](prisma/docs/orm/reference/prisma-cli-reference/index.md#db) instead of the `prisma migrate dev` command.
 
 [Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/prisma-migrate/understanding-prisma-migrate/shadow-database.mdx)
-
-

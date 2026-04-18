@@ -66,5 +66,3 @@ And finally we can query the table using `timescaledb`'s `time_bucket` function 
 ## Resources[#](#resources)
 
 *   Official [`timescaledb` documentation](https://docs.timescale.com/timescaledb/latest/)
-
-

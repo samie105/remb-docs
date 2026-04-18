@@ -254,5 +254,3 @@ public-hoist-pattern[]=*prettier*
 # control general hoisting behavior
 hoist-pattern=*
 ```
-
-

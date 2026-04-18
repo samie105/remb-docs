@@ -98,6 +98,3 @@ Set a code coverage threshold with the Bun test runner
 Next
 
 ](/docs/guides/test/coverage-threshold)
-
-
-

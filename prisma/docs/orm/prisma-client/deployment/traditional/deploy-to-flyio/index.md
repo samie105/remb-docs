@@ -62,5 +62,3 @@ That’s it. Your web service will be live at its `fly.dev` URL as soon as the d
 More information can be found on in the [fly.io documentation](https://fly.io/docs/js/prisma/).
 
 [Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/prisma-client/deployment/traditional/deploy-to-flyio.mdx)
-
-

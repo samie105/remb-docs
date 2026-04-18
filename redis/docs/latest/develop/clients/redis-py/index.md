@@ -191,5 +191,3 @@ The [`redis-py`](https://redis.readthedocs.io/en/stable/index.html) website has 
 See also the other pages in this section for more information and examples:
 
 ## On this page
-
-

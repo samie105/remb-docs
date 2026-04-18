@@ -42,5 +42,3 @@ deno add jsr:@std/regexp
 ```
 
 [See all symbols in @std/regexp on](https://jsr.io/@std/regexp/doc)
-
-

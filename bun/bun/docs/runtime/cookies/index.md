@@ -496,5 +496,3 @@ class CookieMap implements Iterable<[string, string]> {
   [Symbol.iterator](): IterableIterator<[string, string]>;
 }
 ```
-
-

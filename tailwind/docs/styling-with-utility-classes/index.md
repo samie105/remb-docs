@@ -443,5 +443,3 @@ Compiled CSS
 ```
 @layer theme {  :root {    --tw-color-red-500: oklch(0.637 0.237 25.331);  }}@layer utilities {  .tw\:text-red-500 {    color: var(--tw-color-red-500);  }}
 ```
-
-

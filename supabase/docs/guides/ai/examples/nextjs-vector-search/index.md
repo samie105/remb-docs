@@ -134,5 +134,3 @@ Want to learn more about the awesome tech that is powering this?
 *   Read about how we built [ChatGPT for the Supabase Docs](/blog/chatgpt-supabase-docs).
 *   Read the pgvector Docs for [Embeddings and vector similarity](/docs/guides/database/extensions/pgvector)
 *   Watch Greg's video for a full breakdown:
-
-

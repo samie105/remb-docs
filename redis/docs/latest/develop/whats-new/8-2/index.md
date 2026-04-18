@@ -132,5 +132,3 @@ These metrics provide better visibility into replication health and help you ide
 Redis 8.2 continues the unified distribution approach introduced in Redis 8.0, delivering all functionality in a single Redis Open Source package without separate modules.
 
 ## On this page
-
-

@@ -44,5 +44,3 @@ This pattern works well when you need to:
 *   [Ruby](/docs/latest/develop/use-cases/leaderboard/ruby/) - Build a Ruby leaderboard with sorted sets, user metadata hashes, and a local interactive demo
 
 ## On this page
-
-

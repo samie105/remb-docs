@@ -1082,5 +1082,3 @@ await db.select()
   .leftJoin(posts, eq(posts.userId, users.id), { useIndex: usersTableNameIndex })
   .where(eq(users.name, 'David'));
 ```
-
-

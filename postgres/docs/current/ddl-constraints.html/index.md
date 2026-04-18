@@ -414,5 +414,3 @@ CREATE TABLE circles (
 See also [`CREATE TABLE ... CONSTRAINT ... EXCLUDE`](https://www.postgresql.org/docs/current/sql-createtable.html#SQL-CREATETABLE-EXCLUDE) for details.
 
 Adding an exclusion constraint will automatically create an index of the type specified in the constraint declaration.
-
-

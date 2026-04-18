@@ -256,5 +256,3 @@ bun i -g eslint
 # Run a globally-installed package without the `bun run` prefix
 eslint --init
 ```
-
-

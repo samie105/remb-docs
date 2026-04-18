@@ -69,5 +69,3 @@ Check if a file exists
 Next
 
 ](/docs/guides/read-file/exists)
-
-

@@ -610,5 +610,3 @@ CREATE TABLE `table` (
 	`int` int AUTO_INCREMENT
 );
 ```
-
-

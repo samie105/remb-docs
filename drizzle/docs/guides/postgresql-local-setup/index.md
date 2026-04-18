@@ -14,5 +14,3 @@ nav_next: {"path": "drizzle/docs/guides/seeding-using-with-option/index.md", "ti
 ---
 
 Drizzle ORM - How to setup PostgreSQL locally
-
-

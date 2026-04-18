@@ -604,5 +604,3 @@ Then make sure that the `d.ts` file is referenced in your `tsconfig.json`. If it
 previous next
 
 [Testing](/docs/svelte/testing) [Custom elements](/docs/svelte/custom-elements)
-
-

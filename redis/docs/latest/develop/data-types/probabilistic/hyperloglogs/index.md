@@ -333,5 +333,3 @@ The HyperLogLog can estimate the cardinality of sets with up to 18,446,744,073,7
 *   [Redis HyperLogLog Explained](https://www.youtube.com/watch?v=MunL8nnwscQ) shows you how to use Redis HyperLogLog data structures to build a traffic heat map.
 
 ## On this page
-
-

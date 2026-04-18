@@ -48,5 +48,3 @@ This makes it a good fit for demonstrating how Redis time series support:
 *   [Ruby](/docs/latest/develop/use-cases/time-series-dashboard/ruby/) - Build the same rolling sensor graph demo with `redis-rb` and a local WEBrick server
 
 ## On this page
-
-

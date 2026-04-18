@@ -115,5 +115,3 @@ nav_next: {"path": "bun/bun/docs/project/bindgen/index.md", "title": "Bindgen"}
   }
 }
 ```
-
-

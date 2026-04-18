@@ -285,5 +285,3 @@ try {
 *   [Node.js client](/docs/latest/develop/clients/nodejs/) - Redis Node.js client documentation
 
 ## On this page
-
-

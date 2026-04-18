@@ -263,5 +263,3 @@ Bindgen
 Previous
 
 ](/docs/project/bindgen)
-
-

@@ -1058,5 +1058,3 @@ return {  /* ... */  cacheHint: {    lastModified: new Date(product.updatedAt)  
 ```
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

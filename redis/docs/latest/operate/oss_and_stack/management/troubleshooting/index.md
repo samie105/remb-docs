@@ -45,5 +45,3 @@ Check the _upgrade urgency_ level in each patch release to more easily spot rele
 *   Certain versions of the Xen hypervisor report poor fork() performance. See [the latency page](/docs/latest/operate/oss_and_stack/management/optimization/latency/) for more information.
 
 ## On this page
-
-

@@ -67,5 +67,3 @@ Watch a directory for changes
 Next
 
 ](/docs/guides/read-file/watch)
-
-

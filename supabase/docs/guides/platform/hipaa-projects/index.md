@@ -36,5 +36,3 @@ These include:
 *   Enabling [Network Restrictions](/docs/guides/platform/network-restrictions).
 
 Additional security checks and controls will be added as the security advisor is extended and additional security controls are made available.
-
-

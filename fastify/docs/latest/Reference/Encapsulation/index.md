@@ -31,5 +31,3 @@ Restarting the server and re-issuing the requests for `/two` and `/three`:
 ```
 # curl http://127.0.0.1:8000/two{"answer":42,"foo":"foo","bar":"bar"}# curl http://127.0.0.1:8000/three{"answer":42,"foo":"foo","bar":"bar"}
 ```
-
-

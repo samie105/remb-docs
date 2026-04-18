@@ -219,5 +219,3 @@ Custom elements can be a useful way to package components for consumption in a n
 previous next
 
 [TypeScript](/docs/svelte/typescript) [Svelte 4 migration guide](/docs/svelte/v4-migration-guide)
-
-

@@ -93,5 +93,3 @@ Add a tarball dependency
 Next
 
 ](/docs/guides/install/add-tarball)
-
-

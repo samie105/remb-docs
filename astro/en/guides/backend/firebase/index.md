@@ -501,5 +501,3 @@ After creating all the pages, you should have the following file structure:
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

@@ -115,5 +115,3 @@ Prisma Migrate's implementation of advisory locking is purely to avoid catastrop
 Since `5.3.0`, the advisory locking can be disabled using the [`PRISMA_SCHEMA_DISABLE_ADVISORY_LOCK` environment variable](prisma/docs/orm/reference/environment-variables-reference/index.md#prisma_schema_disable_advisory_lock)
 
 [Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/prisma-migrate/workflows/development-and-production.mdx)
-
-

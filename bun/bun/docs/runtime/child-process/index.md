@@ -774,5 +774,3 @@ type Signal =
   | "SIGLOST"
   | "SIGINFO";
 ```
-
-

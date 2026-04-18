@@ -90,5 +90,3 @@ const allUsers = await db.select().from(...);
 Connect to your database using the Connection Pooler for **serverless environments**, and the Direct Connection for **long-running servers**.
 
 #### What’s next?[](#whats-next)
-
-

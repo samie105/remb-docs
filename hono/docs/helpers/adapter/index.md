@@ -106,5 +106,3 @@ Here are the available runtimes keys, unavailable runtime key runtimes may be su
 *   `edge-light` - Vercel Edge Functions
 *   `fastly` - Fastly Compute
 *   `other` - Other unknown runtimes keys
-
-

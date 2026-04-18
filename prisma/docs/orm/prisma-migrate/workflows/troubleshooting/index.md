@@ -99,5 +99,3 @@ Error querying the database: db error: ERROR: prepared statement "s0" already ex
 See [Prisma Migrate and PgBouncer workaround](prisma/docs/orm/prisma-client/setup-and-configuration/databases-connections/pgbouncer/index.md) for further information and a workaround.
 
 [Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/prisma-migrate/workflows/troubleshooting.mdx)
-
-

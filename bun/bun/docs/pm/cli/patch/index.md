@@ -294,5 +294,3 @@ Set a specific current working directory
 boolean
 
 Print this help menu. Alias: `-h`
-
-

@@ -57,5 +57,3 @@ I.1. Getting the Source via Git 
 [Home](https://www.postgresql.org/docs/current/index.html "PostgreSQL 18.3 Documentation")
 
  J.1. DocBook
-
-

@@ -279,5 +279,3 @@ If you need a custom integration, you can follow the steps in this guide to conf
       return getImportedChunks(manifest[name])
     }
     ```
-
-

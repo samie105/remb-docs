@@ -427,5 +427,3 @@ if tokens_acquired == 5 {
 *   [Rust client](/docs/latest/develop/clients/rust/) - Redis Rust client documentation
 
 ## On this page
-
-

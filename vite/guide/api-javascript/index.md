@@ -523,5 +523,3 @@ Only kept for backward compatibility.
 **Type:** `string`
 
 Only kept for backward compatibility.
-
-

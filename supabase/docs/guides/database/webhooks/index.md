@@ -77,5 +77,3 @@ If you're experiencing connection issues with webhooks locally, verify you're us
 ## Resources[#](#resources)
 
 *   [pg\_net](/docs/guides/database/extensions/pgnet): an async networking extension for Postgres
-
-

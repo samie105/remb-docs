@@ -78,5 +78,3 @@ Get the process uptime in nanoseconds
 Next
 
 ](/docs/guides/process/nanoseconds)
-
-

@@ -228,5 +228,3 @@ export class ArrayBufferSink {
   end(): ArrayBuffer | Uint8Array<ArrayBuffer>;
 }
 ```
-
-

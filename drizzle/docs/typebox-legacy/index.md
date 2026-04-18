@@ -538,5 +538,3 @@ pg.dataType().array(...);
 // Schema
 Type.Array(baseDataTypeSchema, { minItems: size, maxItems: size });
 ```
-
-

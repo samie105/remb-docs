@@ -125,5 +125,3 @@ After rendering is done and React updated the DOM, the browser will repaint the 
     3.  Commit
 *   You can use Strict Mode to find mistakes in your components
 *   React does not touch the DOM if the rendering result is the same as last time
-
-

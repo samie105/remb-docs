@@ -144,5 +144,3 @@ ts
   `isDev: boolean;`
 
 `}`
-
-

@@ -209,5 +209,3 @@ curl -X GET https://[your-function-id].lambda-url.us-east-1.on.aws/
 ```
 Hello from Bun on Lambda!
 ```
-
-

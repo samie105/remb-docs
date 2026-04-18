@@ -114,5 +114,3 @@ To unify these IDs, use the `generator` function to capture the platform specifi
     *   [Request ID on the Deno Blog](https://deno.com/blog/zero-config-debugging-deno-opentelemetry#:~:text=s%20automatically%20have-,unique%20request%20IDs,-associated%20with%20them)
 *   Fastly
     *   [Fastly documentation: req.xid](https://www.fastly.com/documentation/reference/vcl/variables/client-request/req-xid/)
-
-

@@ -56,5 +56,3 @@ Password expiry time (only used for password authentication)
 `useconfig` `text[]`
 
 Session defaults for run-time configuration variables
-
-

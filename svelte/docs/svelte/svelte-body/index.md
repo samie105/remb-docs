@@ -30,5 +30,3 @@ As with `<svelte:window>` and `<svelte:document>`, this element may only appear 
 previous next
 
 [<svelte:document>](/docs/svelte/svelte-document) [<svelte:head>](/docs/svelte/svelte-head)
-
-

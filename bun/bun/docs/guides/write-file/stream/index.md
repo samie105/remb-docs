@@ -66,5 +66,3 @@ Write to stdout
 Next
 
 ](/docs/guides/write-file/stdout)
-
-

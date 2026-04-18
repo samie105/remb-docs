@@ -60,5 +60,3 @@ deno add jsr:@std/ulid
 ```
 
 [See all symbols in @std/ulid on](https://jsr.io/@std/ulid/doc)
-
-

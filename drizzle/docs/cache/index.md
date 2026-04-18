@@ -354,5 +354,3 @@ await db.query.users.findMany();
 *   Using cache with `better-sqlite3`, `Durable Objects`, `expo sqlite`
 *   Using cache with AWS Data API drivers
 *   Using cache with views
-
-

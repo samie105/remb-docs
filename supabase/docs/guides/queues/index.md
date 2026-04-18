@@ -47,5 +47,3 @@ Queues couples the reliability of Postgres with the simplicity Supabase's platfo
 *   [Quickstart](/docs/guides/queues/quickstart)
 *   [API Reference](/docs/guides/queues/api)
 *   [`pgmq` GitHub Repository](https://github.com/tembo-io/pgmq)
-
-

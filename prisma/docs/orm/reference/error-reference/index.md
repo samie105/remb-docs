@@ -562,5 +562,3 @@ Your accelerate project is disabled. Please [enable](https://www.prisma.io/docs/
 #### [`P5011` (`Too Many Requests`)](#p5011-too-many-requests)
 
 This error indicates that the request volume exceeded. Implement a back-off strategy and try again later. For assistance with expected high workloads, contact [support](https://www.prisma.io/docs/console/more/support).
-
-

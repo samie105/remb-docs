@@ -142,5 +142,3 @@ const sorted = await prisma.location.findMany({
 For detailed usage, examples, and real-world use cases, see [Working with geometry fields](prisma/docs/orm/prisma-client/special-fields-and-types/working-with-geometry-fields/index.md).
 
 [Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/prisma-schema/postgresql-extensions.mdx)
-
-

@@ -43,5 +43,3 @@ This is the General Availability (GA) release of RedisInsight 2.28.
 *   [#2154](https://github.com/RedisInsight/RedisInsight/pull/2154) Display `(integer) 0` instead of `nil` in [ZRANK](https://redis.io/commands/zrank/) results in Workbench
 
 ## On this page
-
-

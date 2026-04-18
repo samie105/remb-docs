@@ -120,5 +120,3 @@ describe('Search Endpoint', () => {
   })
 })
 ```
-
-

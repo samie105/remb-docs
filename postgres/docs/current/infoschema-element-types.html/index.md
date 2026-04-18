@@ -128,5 +128,3 @@ Always null, because arrays always have unlimited maximum cardinality in Postgre
 `dtd_identifier` `sql_identifier`
 
 An identifier of the data type descriptor of the element. This is currently not useful.
-
-

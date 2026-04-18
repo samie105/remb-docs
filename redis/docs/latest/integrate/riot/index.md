@@ -27,5 +27,3 @@ RIOT-X supports many different sources and targets:
 *   [Data generators](https://redis.github.io/riotx/generators/generate.html) (Redis data structures and Faker)
 
 Full documentation is available at [redis.github.io/riotx](https://redis.github.io/riotx/).
-
-

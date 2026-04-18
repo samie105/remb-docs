@@ -447,5 +447,3 @@ Before using FFI, consider these alternatives:
 *   Check whether [Deno's native APIs](/api/deno) already provide the functionality you need.
 
 Deno's FFI capabilities provide powerful integration with native code, enabling performance optimizations and access to system-level functionality. However, this power comes with significant security considerations. Always be cautious when working with FFI and ensure you trust the native libraries you're using.
-
-

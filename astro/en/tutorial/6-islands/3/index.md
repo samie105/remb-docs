@@ -58,5 +58,3 @@ You can enhance this project’s final code with one of our tutorial extensions,
 [Join us on Discord](https://astro.build/chat) Connect with our community to ask questions, share your work, and get involved with the project!
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

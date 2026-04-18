@@ -400,5 +400,3 @@ CSS
 80rem _(1280px)_
 
 `@container (width >= 80rem) { … }`
-
-

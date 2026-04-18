@@ -67,5 +67,3 @@ Listen to OS signals
 Next
 
 ](/docs/guides/process/os-signals)
-
-

@@ -902,5 +902,3 @@ Know a good resource for Astro v3.0? [Edit this page](https://github.com/withast
 There are currently no known issues.
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

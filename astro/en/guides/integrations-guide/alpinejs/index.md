@@ -195,5 +195,3 @@ interface Window {  Alpine: import('alpinejs').Alpine;}
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

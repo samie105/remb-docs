@@ -4927,5 +4927,3 @@ Legacy JavaScript feature, that's discouraged from being used today.
 *   [parent](./././~/Deno.lint.WithStatement#property_parent)
 *   [range](./././~/Deno.lint.WithStatement#property_range)
 *   [type](./././~/Deno.lint.WithStatement#property_type)
-
-

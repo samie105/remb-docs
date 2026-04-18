@@ -14,5 +14,3 @@ nav_next: {"path": "drizzle/docs/latest-releases/drizzle-orm-v0294/index.md", "t
 ---
 
 Drizzle ORM - DrizzleORM v0.29.3 release
-
-

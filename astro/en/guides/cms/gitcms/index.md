@@ -208,5 +208,3 @@ nav_next: {"path": "astro/en/guides/cms/hashnode/index.md", "title": "Hashnode &
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

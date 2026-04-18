@@ -51,5 +51,3 @@ The implicit flow only works on the client. Web browsers do not send the URL fra
 *   Even if the server is under your direct control, `GET` requests and their full URLs are often logged. This approach avoids leaking credentials in request or access logs.
 
 If you wish to obtain the access token and refresh token on a server, use the [PKCE flow](/docs/guides/auth/sessions/pkce-flow).
-
-

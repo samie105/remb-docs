@@ -1694,5 +1694,3 @@ Style an input when it is read-only using the `read-only` variant:
 ```
 <input class="read-only:bg-gray-100 ..." />
 ```
-
-

@@ -35,5 +35,3 @@ DROP ROLE doomed\_role;
 When not all owned objects are to be transferred to the same successor owner, it's best to handle the exceptions manually and then perform the above steps to mop up.
 
 If `DROP ROLE` is attempted while dependent objects still remain, it will issue messages identifying which objects need to be reassigned or dropped.
-
-

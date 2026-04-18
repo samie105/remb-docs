@@ -328,5 +328,3 @@ DB_HOST=... DB_PASSWORD=... node ./dist/server/entry.mjs
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

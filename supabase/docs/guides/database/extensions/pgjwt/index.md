@@ -72,5 +72,3 @@ Which returns the decoded contents and some associated metadata.
 ## Resources[#](#resources)
 
 *   Official [`pgjwt` documentation](https://github.com/michelp/pgjwt)
-
-

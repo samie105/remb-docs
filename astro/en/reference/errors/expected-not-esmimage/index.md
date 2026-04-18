@@ -32,5 +32,3 @@ import { getImage } from "astro:assets";import myImage from "../assets/my_image.
 *   [Images](/en/guides/images/)
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

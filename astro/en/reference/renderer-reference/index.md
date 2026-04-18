@@ -269,5 +269,3 @@ Indicates whether the renderer supports Astro’s static slot optimization. When
 Returns an HTML string to inject once per page before the first hydrated component handled by this renderer. This is useful for renderers that need page-level hydration setup.
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

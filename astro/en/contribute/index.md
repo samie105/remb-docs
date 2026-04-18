@@ -487,5 +487,3 @@ These docs are brought to you by all these helpful people. [Join us on GitHub!](
 *   [![trueberryless](https://avatars.githubusercontent.com/u/99918022?s=64 "trueberryless")](https://github.com/trueberryless)
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

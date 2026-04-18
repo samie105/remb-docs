@@ -232,5 +232,3 @@ tsx
 `});`
 
 Be careful with this approach if your app has a mixture of static and dynamic queries.
-
-

@@ -100,5 +100,3 @@ The environment variable `PG_COLOR` specifies whether to use color in diagnostic
 ## Notes
 
 vacuumlo works by the following method: First, vacuumlo builds a temporary table which contains all of the OIDs of the large objects in the selected database. It then scans through all columns in the database that are of type `oid` or `lo`, and removes matching entries from the temporary table. (Note: Only types with these names are considered; in particular, domains over them are not considered.) The remaining entries in the temporary table identify orphaned LOs. These are removed.
-
-

@@ -104,5 +104,3 @@ source /usr/local/etc/bash_completion.d/deno.bash
 `--dynamic`
 
 Generate dynamic completions for the given shell (unstable), currently this only provides available tasks for `deno task`.
-
-

@@ -68,5 +68,3 @@ Access privileges; see [Section 5.8](https://www.postgresql.org/docs/current/dd
 [Home](https://www.postgresql.org/docs/current/index.html "PostgreSQL 18.3 Documentation")
 
  52.33. `pg_opclass`
-
-

@@ -147,5 +147,3 @@ Start the app, go to [http://localhost:5173](http://localhost:5173) in a browser
 ```
 1npm run dev
 ```
-
-

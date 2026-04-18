@@ -42,5 +42,3 @@ Read the [Creating a client](/docs/guides/auth/server-side/creating-a-client) pa
 *   Implement [Authentication using Email and Password](/docs/guides/auth/passwords)
 *   Implement [Authentication using OAuth](/docs/guides/auth/social-login)
 *   [Learn more about SSR](/docs/guides/auth/server-side/advanced-guide)
-
-

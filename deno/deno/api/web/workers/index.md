@@ -57,5 +57,3 @@ No documentation available
 
 *   [name](./././~/WorkerOptions#property_name)
 *   [type](./././~/WorkerOptions#property_type)
-
-

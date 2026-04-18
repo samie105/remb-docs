@@ -120,5 +120,3 @@ Compared to traditional serverless or monolithic architectures, this setup offer
     *   Real-time data transformations (e.g., image processing).
     *   API integrations and webhooks.
     *   Personalization and A/B testing at the edge.
-
-

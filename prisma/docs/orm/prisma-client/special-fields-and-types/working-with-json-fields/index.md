@@ -521,5 +521,3 @@ model User {
   json2 Json @default("{ \"hello\": \"world\" }")
 }
 ```
-
-

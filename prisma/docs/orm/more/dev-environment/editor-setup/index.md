@@ -100,5 +100,3 @@ You can get IDE-style autocompletion for Prisma CLI using [`inshellisense`](http
 To install, run:
 
 [Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/more/dev-environment/editor-setup.mdx)
-
-

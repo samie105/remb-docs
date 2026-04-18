@@ -63,5 +63,3 @@ Get the path to an executable bin file
 Next
 
 ](/docs/guides/util/which-path-to-executable-bin)
-
-

@@ -143,5 +143,3 @@ We strongly recommend using dedicated identity and access management (IAM) resou
 To learn more, see [Create IAM resources for AWS cloud accounts](/docs/latest/operate/rc/subscriptions/bring-your-own-cloud/iam-resources/).
 
 ## On this page
-
-

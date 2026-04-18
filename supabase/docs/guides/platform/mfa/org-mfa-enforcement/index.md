@@ -36,5 +36,3 @@ When MFA enforcement is enabled, users without MFA will immediately lose access 
 ## Personal access tokens[#](#personal-access-tokens)
 
 Personal access tokens are not affected by MFA enforcement. Personal access tokens are designed for programmatic access and issuing of these require a valid Supabase session backed by MFA, if enabled on the account.
-
-

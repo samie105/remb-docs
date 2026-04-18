@@ -476,5 +476,3 @@ bun update
 Next
 
 ](/docs/pm/cli/update)
-
-

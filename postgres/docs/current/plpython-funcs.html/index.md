@@ -62,5 +62,3 @@ AS $$
 $$ LANGUAGE plpython3u;
 
 But it is advisable not to rely on this implementation detail of PL/Python. It is better to treat the function parameters as read-only.
-
-

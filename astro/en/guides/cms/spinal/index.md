@@ -227,5 +227,3 @@ The following sites use Astro + Spinal in production:
     
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

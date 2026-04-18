@@ -2860,5 +2860,3 @@ ID: jdoc:3, Distance: 1.48624765873, Content: Today is a sunny day
 See [Vector search](/docs/latest/develop/ai/search-and-query/query/vector-search/) for more information about the indexing options, distance metrics, and query format for vectors.
 
 ## On this page
-
-

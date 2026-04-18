@@ -32,5 +32,3 @@ If the image is merely decorative (i.e. doesn’t contribute to the understandin
 *    [Image component#alt](/en/reference/modules/astro-assets/#alt-required)
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

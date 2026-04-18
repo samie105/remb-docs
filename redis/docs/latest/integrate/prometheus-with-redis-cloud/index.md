@@ -204,5 +204,3 @@ These dashboards are open source. For additional dashboard options, or to file a
 For more information about configuring Grafana dashboards, see the [Grafana documentation](https://grafana.com/docs/).
 
 ## On this page
-
-

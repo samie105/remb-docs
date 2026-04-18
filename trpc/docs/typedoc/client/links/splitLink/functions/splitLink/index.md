@@ -62,5 +62,3 @@ The link to execute next if the test function returns `true`.
 ## Returns[​](#returns "Direct link to Returns")
 
 [`TRPCLink`](trpc/docs/typedoc/client/index/type-aliases/TRPCLink/index.md)<`TRouter`\>
-
-

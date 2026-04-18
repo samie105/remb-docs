@@ -134,5 +134,3 @@ The `scroll-p-<number>`,`scroll-px-<number>`,`scroll-py-<number>`,`scroll-ps-<nu
 ```
 
 Learn more about customizing the spacing scale in the [theme variable documentation](tailwind/docs/theme/index.md).
-
-

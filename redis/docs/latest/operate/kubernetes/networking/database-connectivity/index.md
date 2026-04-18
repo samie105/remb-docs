@@ -341,5 +341,3 @@ client.on('connect', () => {
 *   [Security](/docs/latest/operate/kubernetes/security/) - TLS configuration and access control
 
 ## On this page
-
-

@@ -80,5 +80,3 @@ You might want to consider a backend service if your project has complex server-
 *   application monitoring
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

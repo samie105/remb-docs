@@ -781,5 +781,3 @@ Skip lifecycle scripts in the project’s package.json (dependency scripts are n
 boolean
 
 Print this help menu
-
-

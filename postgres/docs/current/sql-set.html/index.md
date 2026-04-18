@@ -126,5 +126,3 @@ SET TIME ZONE 'Europe/Rome';
 ## Compatibility
 
 `SET TIME ZONE` extends syntax defined in the SQL standard. The standard allows only numeric time zone offsets while PostgreSQL allows more flexible time-zone specifications. All other `SET` features are PostgreSQL extensions.
-
-

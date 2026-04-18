@@ -183,5 +183,3 @@ There are two `astro-snipcart` community packages that can simplify using Snipca
 *   [Collecting Payments with Stripe using Astro](https://zellwk.com/blog/stripe-astro-recipe/)
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

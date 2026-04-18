@@ -385,5 +385,3 @@ Fix a variable that doesn’t update[](#fix-a-variable-that-doesnt-update "Link 
 This `Timer` component keeps a `count` state variable which increases every second. The value by which it’s increasing is stored in the `increment` state variable. You can control the `increment` variable with the plus and minus buttons.
 
 However, no matter how many times you click the plus button, the counter is still incremented by one every second. What’s wrong with this code? Why is `increment` always equal to `1` inside the Effect’s code? Find the mistake and fix it.
-
-

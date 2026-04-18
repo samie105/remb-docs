@@ -29,5 +29,3 @@ However, this does mean that some operations, that typically require `superuser`
 
 *   `COPY ... FROM PROGRAM`
 *   `ALTER USER ... WITH SUPERUSER`
-
-

@@ -68,5 +68,3 @@ bun run start
 ```
 Listening on http://localhost:3000
 ```
-
-

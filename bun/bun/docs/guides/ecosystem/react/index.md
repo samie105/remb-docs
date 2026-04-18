@@ -56,5 +56,3 @@ File Tree
 ├── bunfig.toml         # Bun configuration
 └── bun.lock            # Lock file
 ```
-
-

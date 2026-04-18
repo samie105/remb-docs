@@ -109,5 +109,3 @@ Fix the mistake[](#fix-the-mistake "Link for this heading")
 This code crashes with an error saying `Objects are not valid as a React child`:
 
 Can you find the problem?
-
-

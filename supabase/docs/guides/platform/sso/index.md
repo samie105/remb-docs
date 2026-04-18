@@ -73,5 +73,3 @@ To revoke access for a specific SSO user without disabling the provider entirely
 
 *   Remove or disable the user's account in your identity provider
 *   Downgrade or remove their permissions for any organizations in Supabase.
-
-

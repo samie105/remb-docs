@@ -129,5 +129,3 @@ Scopes and registries
 Next
 
 ](/docs/pm/scopes-registries)
-
-

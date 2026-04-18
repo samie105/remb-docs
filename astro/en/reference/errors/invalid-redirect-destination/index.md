@@ -28,5 +28,3 @@ A dynamic redirect destination must match an existing route pattern. This error 
 *   [Configured redirects](/en/guides/routing/#configured-redirects)
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
-
-

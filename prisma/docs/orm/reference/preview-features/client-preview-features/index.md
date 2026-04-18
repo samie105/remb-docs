@@ -320,5 +320,3 @@ aggregates in [2.19.0](https://github.com/prisma/prisma/releases/tag/2.19.0)
 [2.5.0](https://github.com/prisma/prisma/releases/tag/2.5.0)
 
 [Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/reference/preview-features/client-preview-features.mdx)
-
-

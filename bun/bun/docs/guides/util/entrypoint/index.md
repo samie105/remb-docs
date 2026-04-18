@@ -68,5 +68,3 @@ Get the absolute path to the current entrypoint
 Next
 
 ](/docs/guides/util/main)
-
-

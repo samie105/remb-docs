@@ -166,5 +166,3 @@ Deploy a Bun application on AWS Lambda
 Next
 
 ](/docs/guides/deployment/aws-lambda)
-
-

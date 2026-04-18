@@ -335,5 +335,3 @@ Another difference is that scripts without `#!` can run commands that access key
 Please refer to [Script flags](/docs/latest/develop/programmability/lua-api/#script_flags) to learn about the various scripts and the defaults.
 
 ## On this page
-
-

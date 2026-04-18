@@ -381,5 +381,3 @@ To achieve the same user experience while maintaining PKCE security, you can imp
 Create an endpoint in your application (for example, `https://your-app.com/auth/saml-init`) that initiates the SAML flow using `signInWithSSO`. Then create a bookmark or linked application in your IdP that points to this endpoint. When users access the bookmark app, it triggers a secure SP-initiated flow.
 
 This approach supports custom SAML assertions and lets you embed the link anywhere in your application.
-
-

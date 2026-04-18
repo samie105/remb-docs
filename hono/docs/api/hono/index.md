@@ -238,5 +238,3 @@ app.use('/auth/*', async (c, next) => {
   await next()
 })
 ```
-
-

@@ -446,5 +446,3 @@ class Archive {
   files(glob?: string | readonly string[]): Promise<Map<string, File>>;
 }
 ```
-
-

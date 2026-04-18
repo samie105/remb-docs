@@ -188,5 +188,3 @@ The same solutions apply as for Vercel:
 #### [Option 3: Netlify UI build settings](#option-3-netlify-ui-build-settings)
 
 Within your project's dashboard, go to **Site Settings** > **Build & deploy** > **Continuous deployment** > **Build settings** and prepend `prisma generate` to the Build command field.
-
-

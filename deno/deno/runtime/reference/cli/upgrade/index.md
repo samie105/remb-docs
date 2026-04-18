@@ -98,5 +98,3 @@ The path to output the updated version to.
 `--cert`<FILE>
 
 Load certificate authority from PEM encoded file.
-
-

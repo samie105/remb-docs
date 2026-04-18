@@ -34,5 +34,3 @@ You can cancel your marketplace subscription within 48 hours of purchase. To do 
 #### Does purchasing Supabase through the AWS Marketplace count toward your AWS spend commitment?[#](#does-purchasing-supabase-through-the-aws-marketplace-count-toward-your-aws-spend-commitment)
 
 Yes, marketplace purchases do count toward the spend commitment.
-
-
