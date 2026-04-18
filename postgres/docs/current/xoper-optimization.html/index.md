@@ -131,3 +131,4 @@ A merge-joinable operator must have a commutator (itself if the two operand data
 
 The function underlying a merge-joinable operator must be marked immutable or stable. If it is volatile, the system will never attempt to use the operator for a merge join.
 
+

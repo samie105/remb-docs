@@ -112,3 +112,4 @@ It is also possible to use logical replication methods to create a standby serve
 
 This method of upgrading can be performed using the built-in logical replication facilities as well as using external logical replication systems such as pglogical, Slony, Londiste, and Bucardo.
 
+

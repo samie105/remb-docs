@@ -81,3 +81,4 @@ Other dependency flavors might be needed in future. Note in particular that the 
 
 As in the `pg_depend` catalog, most objects created during initdb are considered “pinned”. No entries are made in `pg_shdepend` that would have a pinned object as either referenced or dependent object.
 
+

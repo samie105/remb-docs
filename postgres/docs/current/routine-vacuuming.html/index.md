@@ -210,3 +210,4 @@ Autovacuum workers generally don't block other commands. If a process attempts t
 
 Regularly running commands that acquire locks conflicting with a `SHARE UPDATE EXCLUSIVE` lock (e.g., ANALYZE) can effectively prevent autovacuums from ever completing.
 
+

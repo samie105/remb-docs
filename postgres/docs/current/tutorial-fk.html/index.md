@@ -39,3 +39,4 @@ DETAIL:  Key (city)=(Berkeley) is not present in table "cities".
 
 The behavior of foreign keys can be finely tuned to your application. We will not go beyond this simple example in this tutorial, but just refer you to [Chapter 5](https://www.postgresql.org/docs/current/ddl.html "Chapter 5. Data Definition") for more information. Making correct use of foreign keys will definitely improve the quality of your database applications, so you are strongly encouraged to learn about them.
 
+

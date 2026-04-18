@@ -24,3 +24,4 @@ Rules affect the command status as follows:
 
 The programmer can ensure that any desired `INSTEAD` rule is the one that sets the command status in the second case, by giving it the alphabetically last rule name among the active rules, so that it gets applied last.
 
+

@@ -167,3 +167,4 @@ Demonstrates how to add the `updateIgnoreOnNotFound` and `deleteIgnoreOnNotFound
 
 [Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/prisma-client/client-extensions/extension-examples.mdx)
 
+

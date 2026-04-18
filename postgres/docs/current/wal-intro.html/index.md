@@ -23,3 +23,4 @@ Using WAL results in a significantly reduced number of disk writes, because only
 
 WAL also makes it possible to support on-line backup and point-in-time recovery, as described in [Section 25.3](https://www.postgresql.org/docs/current/continuous-archiving.html "25.3. Continuous Archiving and Point-in-Time Recovery (PITR)"). By archiving the WAL data we can support reverting to any time instant covered by the available WAL data: we simply install a prior physical backup of the database, and replay the WAL just as far as the desired time. What's more, the physical backup doesn't have to be an instantaneous snapshot of the database state — if it is made over some period of time, then replaying the WAL for that period will fix any internal inconsistencies.
 
+

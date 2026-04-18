@@ -43,3 +43,4 @@ Names of table columns included in the publication. This contains all the column
 
 Expression for the table's publication qualifying condition
 
+

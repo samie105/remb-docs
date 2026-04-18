@@ -19,3 +19,4 @@ This document describes version 3.2 of the protocol, introduced in PostgreSQL ve
 
 In order to serve multiple clients efficiently, the server launches a new “backend” process for each client. In the current implementation, a new child process is created immediately after an incoming connection is detected. This is transparent to the protocol, however. For purposes of the protocol, the terms “backend” and “server” are interchangeable; likewise “frontend” and “client” are interchangeable.
 
+

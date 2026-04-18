@@ -141,3 +141,4 @@ export const user = gelTable('User', {
 
 🎉 Now you can use the `auth` tables in your queries!
 
+

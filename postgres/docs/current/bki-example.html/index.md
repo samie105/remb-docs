@@ -49,3 +49,4 @@ close test\_table
 
  Chapter 69. How the Planner Uses Statistics
 
+

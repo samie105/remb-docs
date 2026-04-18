@@ -266,3 +266,4 @@ And, the Validator and Hono Client `hc` enable the RPC mode. In RPC mode, you ca
 
 See [Hono Stacks](hono/docs/concepts/stacks/index.md).
 
+

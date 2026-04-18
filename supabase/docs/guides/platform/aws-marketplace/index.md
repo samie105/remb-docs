@@ -40,3 +40,4 @@ When you make a purchase on AWS Marketplace, AWS will calculate sales taxes, VAT
 
 *   Purchase Supabase through the AWS Marketplace. Refer to the [Getting Started guide](./aws-marketplace/getting-started).
 
+

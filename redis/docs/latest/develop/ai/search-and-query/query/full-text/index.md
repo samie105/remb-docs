@@ -6708,3 +6708,4 @@ redis> FT.SEARCH idx '@text:(%😀😁🙃%)' NOCONTENT
 
 ## On this page
 
+

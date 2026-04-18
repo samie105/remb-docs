@@ -313,3 +313,4 @@ While you may sometimes need to drop down to raw SQL when using Prisma ORM, you 
 
 In this article, you have used SafeQL and Prisma Client extensions to create custom, type-safe Prisma Client queries to abstract PostGIS operations which are currently not natively supported in Prisma ORM.
 
+

@@ -247,3 +247,4 @@ Head over to [Supabase](/dashboard) and create a new project to deploy to.
 
 Visiting your live project on [Supabase](/dashboard/project/_), you'll see a new `employees` table, complete with the `department` column you added in the second migration above.
 
+

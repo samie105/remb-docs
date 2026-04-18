@@ -52,3 +52,4 @@ The implicit flow only works on the client. Web browsers do not send the URL fra
 
 If you wish to obtain the access token and refresh token on a server, use the [PKCE flow](/docs/guides/auth/sessions/pkce-flow).
 
+

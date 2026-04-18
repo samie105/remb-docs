@@ -271,3 +271,4 @@ Here is an overview of the main workflow:
 1.  Manually change your application models in the Prisma schema (e.g. add a new model, remove an existing one, ...)
 2.  Run `prisma migrate dev` to create and apply a migration or run `prisma db push` to apply the changes directly (in both cases Prisma Client is automatically generated)
 
+

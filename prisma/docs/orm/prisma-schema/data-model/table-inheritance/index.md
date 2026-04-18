@@ -323,3 +323,4 @@ You can use [Prisma Client extensions](prisma/docs/orm/prisma-client/client-exte
 
 While Prisma ORM doesn't natively support union types or polymorphism at the moment, you can check out [Zenstack](https://github.com/zenstackhq/zenstack) which is adding an extra layer of features to the Prisma schema. Read their [blog post about polymorphism in Prisma ORM](https://zenstack.dev/blog/polymorphism) to learn more.
 
+

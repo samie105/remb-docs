@@ -171,3 +171,4 @@ You can then query your embeddings using the following code:
 *   [Roboflow Getting Started guide](https://blog.roboflow.com/getting-started-with-roboflow/)
 *   [How to Build a Semantic Image Search Engine with Supabase and OpenAI CLIP](https://blog.roboflow.com/how-to-use-semantic-search-supabase-openai-clip/)
 
+

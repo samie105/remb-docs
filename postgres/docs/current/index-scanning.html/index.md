@@ -40,3 +40,4 @@ Instead of using `amgettuple`, an index scan can be done with `amgetbitmap` to f
 
 Note that it is permitted for an access method to implement only `amgetbitmap` and not `amgettuple`, or vice versa, if its internal implementation is unsuited to one API or the other.
 
+

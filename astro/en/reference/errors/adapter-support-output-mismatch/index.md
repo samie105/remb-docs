@@ -31,3 +31,4 @@ Depending on your adapter, there may be a different entrypoint to use for server
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
 
+

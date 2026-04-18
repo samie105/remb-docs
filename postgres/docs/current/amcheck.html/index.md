@@ -190,3 +190,4 @@ No error concerning corruption raised by `amcheck` should ever be a false positi
 
 There is no general method of repairing problems that `amcheck` detects. An explanation for the root cause of an invariant violation should be sought. [pageinspect](https://www.postgresql.org/docs/current/pageinspect.html "F.23. pageinspect — low-level inspection of database pages") may play a useful role in diagnosing corruption that `amcheck` detects. A `REINDEX` may not be effective in repairing corruption.
 
+

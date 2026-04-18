@@ -45,3 +45,4 @@ tRPC is for full-stack TypeScript developers. It makes it easy to write endpoint
 *   ⚡️  Request batching - Requests made at the same time can be automatically combined into one.
 *   👀  Examples - Check out an [example](trpc/docs/v10/example-apps/index.md) to learn with or use as a starting point.
 
+

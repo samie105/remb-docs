@@ -97,3 +97,4 @@ Array of subscribed publication names. These reference publications defined in t
 
 The origin value must be either `none` or `any`. The default is `any`. If `none`, the subscription will request the publisher to only send changes that don't have an origin. If `any`, the publisher sends changes regardless of their origin.
 
+

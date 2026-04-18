@@ -621,3 +621,4 @@ Delete
     
 7.  Limited to executing SELECT queries. SQL Query Snippets run by the Read-Only role are run against the database using the **supabase\_read\_only\_user**. This role has the [predefined Postgres role pg\_read\_all\_data](https://www.postgresql.org/docs/current/predefined-roles.html). [↩](#user-content-fnref-7)
 
+

@@ -319,3 +319,4 @@ Returns the type of the top-level JSON value as a text string. Possible types ar
 
 `json_typeof(NULL::json) IS NULL` → `t`
 
+

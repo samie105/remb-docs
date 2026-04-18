@@ -416,3 +416,4 @@ These breaking changes are expected to only affect a minority of use cases:
 
 Check the [Migration from v6 Guide](https://v7.vite.dev/guide/migration) in the Vite v7 docs first to see the needed changes to port your app to Vite 7, and then proceed with the changes on this page.
 
+

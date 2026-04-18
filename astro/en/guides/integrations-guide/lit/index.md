@@ -26,3 +26,4 @@ If you’re interested in maintaining a Lit integration yourself, you may wish t
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
 
+

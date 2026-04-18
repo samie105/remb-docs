@@ -17,3 +17,4 @@ This section covers everything you need to set up and configure your tRPC backen
 
 Once your API is defined, you can host it using one of the available [adapters](trpc/docs/server/adapters/index.md) for platforms like Express, Fastify, Next.js, AWS Lambda, and more.
 
+

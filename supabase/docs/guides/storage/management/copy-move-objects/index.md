@@ -79,3 +79,4 @@ For example:
 1create policy "User can select their own objects (in any buckets)"2on storage.objects3for select4to authenticated5using (6    owner_id = (select auth.uid())7);89create policy "User can insert in their own folders (in any buckets)"10on storage.objects11for insert12to authenticated13with check (14    (storage.folder(name))[1] = (select auth.uid())15);1617create policy "User can update their own objects (in any buckets)"18on storage.objects19for update20to authenticated21using (22    owner_id = (select auth.uid())23);
 ```
 
+

@@ -93,3 +93,4 @@ Deploy your function to the cloud by running:
 
 If you're interesting in learning how to use this to build your own ChatGPT, read [the blog post](/blog/chatgpt-supabase-docs) and check out the video:
 
+

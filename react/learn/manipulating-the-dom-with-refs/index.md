@@ -559,3 +559,4 @@ export default function VideoPlayer() {
 
 For an extra challenge, keep the “Play” button in sync with whether the video is playing even if the user right-clicks the video and plays it using the built-in browser media controls. You might want to listen to `onPlay` and `onPause` on the video to do that.
 
+

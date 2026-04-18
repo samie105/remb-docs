@@ -181,3 +181,4 @@ If you rely on code I maintain, this is exactly the level of support, quality, a
 
 Because this work is important, I decided to try and make it not just financially sustainable but to grow and expand it. There is so much to improve. This is exactly what motivates me to implement the new [commercial licensing plan](https://web.archive.org/web/20190201220503/https://hueniverse.com/on-hapi-licensing-a-preview-f982662ee898) coming in March. You can read more about it [here](https://web.archive.org/web/20190201220503/https://hueniverse.com/on-hapi-licensing-a-preview-f982662ee898).
 
+

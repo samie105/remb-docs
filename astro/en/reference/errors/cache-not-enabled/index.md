@@ -25,3 +25,4 @@ Thrown when `Astro.cache` or `context.cache` is used but the cache feature has n
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
 
+

@@ -50,3 +50,4 @@ See [Section 21.4](https://www.postgresql.org/docs/current/role-removal.html "2
 
 The `REASSIGN OWNED` command is a PostgreSQL extension.
 
+

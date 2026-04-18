@@ -115,3 +115,4 @@ supabase functions deploy hello-world
 
 For more deployment methods, visit the Supabase documentation on [Deploying to Production](https://supabase.com/docs/guides/functions/deploy).
 
+

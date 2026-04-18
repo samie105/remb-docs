@@ -38,3 +38,4 @@ Will create the following route: `site.com/blog/1`.
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
 
+

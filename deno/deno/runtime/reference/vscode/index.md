@@ -230,3 +230,4 @@ Also check if the VS Code configuration called `enableProjectDiagnostics`, locat
 
 If `"enable"` is set to `true` in there, and the error message still persists, you might want to try restarting VS Code, as the part of the extension that "mutes" the built-in TypeScript diagnostics for files is not working as designed. If the issue still persists after a restart, you may have encountered a bug that we didn't expect and searching the issues and reporting a bug at [https://github.com/denoland/vscode\_deno](https://github.com/denoland/vscode_deno) is the next step.
 
+

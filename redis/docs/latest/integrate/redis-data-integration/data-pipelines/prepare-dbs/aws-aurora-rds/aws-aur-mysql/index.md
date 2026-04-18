@@ -135,3 +135,4 @@ The Debezium connector needs a user account to connect to MySQL. This user must 
     FLUSH PRIVILEGES;
     ```
 
+

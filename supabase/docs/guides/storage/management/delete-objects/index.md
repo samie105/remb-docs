@@ -45,3 +45,4 @@ To delete an object, the user must have the `delete` permission on the object. F
 1create policy "User can delete their own objects"2on storage.objects3for delete4TO authenticated5USING (6    owner = (select auth.uid()::text)7);
 ```
 
+

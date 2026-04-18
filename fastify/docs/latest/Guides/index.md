@@ -36,3 +36,4 @@ This table of contents is in alphabetical order.
 *   [Testing](/docs/latest/Guides/Testing/): Explains how to write unit tests for Fastify applications.
 *   [Write Plugin](/docs/latest/Guides/Write-Plugin/): A set of guidelines for what the Fastify team considers good practices for writing a Fastify plugin.
 
+

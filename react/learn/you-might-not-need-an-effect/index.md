@@ -358,3 +358,4 @@ In general, whenever you have to resort to writing Effects, keep an eye out for 
 *   Whenever you try to synchronize state variables in different components, consider lifting state up.
 *   You can fetch data with Effects, but you need to implement cleanup to avoid race conditions.
 
+

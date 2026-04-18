@@ -1013,3 +1013,4 @@ Like `Response` and `Blob`, `S3File` assumes UTF-8 encoding by default. When cal
 *   When a UTF-8 BOM is detected, it gets stripped before the string is passed to JavaScriptCore and invalid UTF-8 codepoints are replaced with the Unicode replacement character (`\uFFFD`).
 *   UTF-32 is not supported.
 
+

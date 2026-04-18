@@ -244,3 +244,4 @@ const usersTable = mysqlTable("users", {
 });
 ```
 
+

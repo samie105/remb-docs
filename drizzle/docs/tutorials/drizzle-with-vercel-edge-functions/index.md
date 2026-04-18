@@ -829,3 +829,4 @@ vercel
 
 Finally, you can use URL of the deployed project and navigate to the route you created `(e.g. /api/hello)` to access your edge function.
 
+

@@ -124,3 +124,4 @@ One important note with IVF indexes is that nearest neighbor search is approxima
 
 Read more about indexing on `pgvector`'s [GitHub page](https://github.com/pgvector/pgvector#indexing).
 
+

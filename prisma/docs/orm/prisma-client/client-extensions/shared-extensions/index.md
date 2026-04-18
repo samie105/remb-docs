@@ -122,3 +122,4 @@ export default Prisma.defineExtension((client) => {
 
 You can improve the type-safety of your shared extensions using [type utilities](prisma/docs/orm/prisma-client/client-extensions/type-utilities/index.md).
 
+

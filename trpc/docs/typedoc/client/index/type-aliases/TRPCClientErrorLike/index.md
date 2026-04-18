@@ -15,3 +15,4 @@ nav_next: {"path": "trpc/docs/typedoc/client/index/type-aliases/TRPCLink/index.m
 
 Type Alias: TRPCClientErrorLike\\<TInferrable\\> | tRPC
 
+

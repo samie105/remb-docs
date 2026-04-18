@@ -109,3 +109,4 @@ Complete the setup by linking a Supabase organization to the AWS Marketplace sub
 
 ![Supabase product subscribe](/docs/img/guides/platform/aws-marketplace-onboarding-page--light.png)
 
+

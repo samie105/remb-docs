@@ -66,3 +66,4 @@ type InsertUser2 = InferInsertModel<typeof usersTable>;
 
 *   🛠 Disabled `.d.ts` files bundling
 
+

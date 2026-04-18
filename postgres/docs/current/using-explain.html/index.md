@@ -589,3 +589,4 @@ BitmapAnd and BitmapOr nodes always report their actual row counts as zero, due 
 
 Normally, `EXPLAIN` will display every plan node created by the planner. However, there are cases where the executor can determine that certain nodes need not be executed because they cannot produce any rows, based on parameter values that were not available at planning time. (Currently this can only happen for child nodes of an Append or MergeAppend node that is scanning a partitioned table.) When this happens, those plan nodes are omitted from the `EXPLAIN` output and a ``Subplans Removed: _`N`_`` annotation appears instead.
 
+

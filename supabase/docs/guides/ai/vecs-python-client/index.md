@@ -70,3 +70,4 @@ For a more in-depth guide on `vecs` collections, see [API](/docs/guides/ai/pytho
 *   Official Vecs Documentation: [https://supabase.github.io/vecs/api](https://supabase.github.io/vecs/api)
 *   Source Code: [https://github.com/supabase/vecs](https://github.com/supabase/vecs)
 
+

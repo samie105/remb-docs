@@ -47,3 +47,4 @@ COMMIT PREPARED 'foobar';
 
 `COMMIT PREPARED` is a PostgreSQL extension. It is intended for use by external transaction management systems, some of which are covered by standards (such as X/Open XA), but the SQL side of those systems is not standardized.
 
+

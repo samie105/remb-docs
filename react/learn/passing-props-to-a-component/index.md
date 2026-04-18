@@ -227,3 +227,4 @@ However, props are [immutable](https://en.wikipedia.org/wiki/Immutable_object)â€
 
 This `Gallery` component contains some very similar markup for two profiles. Extract a `Profile` component out of it to reduce the duplication. Youâ€™ll need to choose what props to pass to it.
 
+

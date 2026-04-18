@@ -33,3 +33,4 @@ v1.0.0 (September 2024)
 
 [Redis for VS Code v1.0.0, September 2024](/docs/latest/develop/tools/redis-for-vscode/release-notes/v1.0.0/)
 
+

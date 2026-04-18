@@ -25,3 +25,4 @@ The CSP feature isn’t enabled
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
 
+

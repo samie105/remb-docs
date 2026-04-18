@@ -49,3 +49,4 @@ and can appear anywhere a `SELECT` can. For example, you can use it as part of a
 
 For more information see [VALUES](https://www.postgresql.org/docs/current/sql-values.html "VALUES").
 
+

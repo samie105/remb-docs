@@ -33,3 +33,4 @@ To use this feature with the Astro VS Code extension, you must also enable the `
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
 
+

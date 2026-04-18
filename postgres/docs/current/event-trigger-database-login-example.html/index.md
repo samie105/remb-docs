@@ -73,3 +73,4 @@ CREATE EVENT TRIGGER init\_session
   EXECUTE FUNCTION init\_session();
 ALTER EVENT TRIGGER init\_session ENABLE ALWAYS;
 
+

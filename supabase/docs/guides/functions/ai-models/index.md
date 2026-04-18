@@ -173,3 +173,4 @@ As demonstrated in the video above, running Ollama locally is typically slower t
 
 In the future, a hosted LLM API, will be provided as part of the Supabase platform. Supabase will scale and manage the API and GPUs for you. To sign up for early access, fill up [this form](https://forms.supabase.com/supabase.ai-llm-early-access).
 
+

@@ -118,3 +118,4 @@ The interface for stdout and stderr streams for child process returned from `Den
 *   [json](./././~/Deno.SubprocessReadableStream#method_json_0)
 *   [text](./././~/Deno.SubprocessReadableStream#method_text_0)
 
+

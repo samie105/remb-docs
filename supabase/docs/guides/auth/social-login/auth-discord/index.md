@@ -131,3 +131,4 @@ When your user signs out, call [signOut()](/docs/reference/javascript/auth-signo
 *   [Discord Account](https://discord.com)
 *   [Discord Developer Portal](https://discord.com/developers)
 
+

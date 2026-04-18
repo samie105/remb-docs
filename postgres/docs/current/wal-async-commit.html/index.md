@@ -35,3 +35,4 @@ Asynchronous commit provides behavior different from setting [fsync](postgres/do
 
 [commit\_delay](postgres/docs/current/runtime-config-wal.html/index.md#GUC-COMMIT-DELAY) also sounds very similar to asynchronous commit, but it is actually a synchronous commit method (in fact, `commit_delay` is ignored during an asynchronous commit). `commit_delay` causes a delay just before a transaction flushes WAL to disk, in the hope that a single flush executed by one such transaction can also serve other transactions committing at about the same time. The setting can be thought of as a way of increasing the time window in which transactions can join a group about to participate in a single flush, to amortize the cost of the flush among multiple transactions.
 
+

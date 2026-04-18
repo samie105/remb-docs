@@ -26,3 +26,4 @@ are used to create, drop, and stream changes from a replication slot, respective
 
 The command [pg\_recvlogical](https://www.postgresql.org/docs/current/app-pgrecvlogical.html "pg_recvlogical") can be used to control logical decoding over a streaming replication connection. (It uses these commands internally.)
 
+

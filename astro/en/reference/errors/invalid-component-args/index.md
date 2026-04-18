@@ -26,3 +26,4 @@ Astro components cannot be rendered manually via a function call, such as `Compo
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
 
+

@@ -37,3 +37,4 @@ This is more useful if the expressions in the select list return varying results
 
 SELECT random();
 
+

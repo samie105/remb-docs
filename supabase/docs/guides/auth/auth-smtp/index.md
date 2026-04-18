@@ -162,3 +162,4 @@ Having short lived [user sessions](/docs/guides/auth/sessions) can be problemati
 
 If you are using a [SSR](/docs/guides/auth/server-side) framework on the frontend and are seeing an increased number of user logins without a clear cause, check your set up. Make sure to keep the `@supabase/ssr` package up to date and closely follow the guides we publish. Make sure that the middleware components of your SSR frontend works as intended and matches the guides we've published. Sometimes a misplaced `return` or conditional can cause early session termination.
 
+

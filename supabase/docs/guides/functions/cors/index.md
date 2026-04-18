@@ -49,3 +49,4 @@ Then import it in your function:
 1import { corsHeaders } from '../_shared/cors.ts'23// ... rest of your function code
 ```
 
+

@@ -190,3 +190,4 @@ DATABASE_URL=postgresql://janedoe:mypassword@localhost:5432/mydb
 
 [Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/reference/connection-urls.mdx)
 
+

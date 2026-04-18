@@ -49,3 +49,4 @@ True if materialized view is currently populated
 
 Materialized view definition (a reconstructed [SELECT](https://www.postgresql.org/docs/current/sql-select.html "SELECT") query)
 
+

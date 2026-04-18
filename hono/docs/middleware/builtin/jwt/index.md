@@ -147,3 +147,4 @@ The `iat` (issued at) claim will be verified if present and this is set to `true
 
 The `exp` (expiration time) claim will be verified if present and this is set to `true`. The default is `true`.
 
+

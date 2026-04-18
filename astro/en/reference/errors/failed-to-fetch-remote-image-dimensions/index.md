@@ -25,3 +25,4 @@ Determining the remote image’s dimensions failed. This is typically caused by 
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
 
+

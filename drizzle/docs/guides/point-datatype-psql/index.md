@@ -126,3 +126,4 @@ await db
 select * from stores where location <@ box(point(-88, 40), point(-73, 43));
 ```
 
+

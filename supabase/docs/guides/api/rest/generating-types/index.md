@@ -186,3 +186,4 @@ Alternatively, you can use a community-supported GitHub action: [`generate-supab
 
 *   [Generating Supabase types with GitHub Actions](https://blog.esteetey.dev/how-to-create-and-test-a-github-action-that-generates-types-from-supabase-database)
 
+

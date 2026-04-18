@@ -65,3 +65,4 @@ For more information on connection management for serverless environments, refer
 
 [Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/prisma-client/deployment/serverless/deploy-to-netlify.mdx)
 
+

@@ -30,3 +30,4 @@ Astro could not find the index URL of your website. An index page is required so
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
 
+

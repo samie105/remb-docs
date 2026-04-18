@@ -77,3 +77,4 @@ Since there are no comparison operators for the `xml` data type, it is not possi
 
 The text-search functionality in PostgreSQL can also be used to speed up full-document searches of XML data. The necessary preprocessing support is, however, not yet available in the PostgreSQL distribution.
 
+

@@ -205,3 +205,4 @@ bun run dev
 
 By default, the development server will run on port `5173`. Access `http://localhost:5173/` in your browser to complete the Service Worker registration. Then, access `/sw` to see the response from the Hono application.
 
+

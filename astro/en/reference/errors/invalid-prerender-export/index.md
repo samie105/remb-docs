@@ -26,3 +26,4 @@ The `prerender` feature only supports a subset of valid JavaScript — be sure t
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
 
+

@@ -201,3 +201,4 @@ Add the widget to the Account page (already included in the Account.vue code abo
 
 At this stage you have a fully functional application!
 
+

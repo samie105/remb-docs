@@ -320,3 +320,4 @@ Disable auto discovery of the lock file.
 
 Sets the node modules management mode for npm packages.
 
+

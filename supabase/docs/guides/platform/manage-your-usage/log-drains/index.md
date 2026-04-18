@@ -251,3 +251,4 @@ You can view Log Drain Events usage on the [organization's usage page](/dashboar
 
 ![Usage page usage summary](/docs/img/guides/platform/usage-logdrain-events--light.png)
 
+

@@ -166,3 +166,4 @@ REINDEX TABLE CONCURRENTLY my\_broken\_table;
 
 There is no `REINDEX` command in the SQL standard.
 
+

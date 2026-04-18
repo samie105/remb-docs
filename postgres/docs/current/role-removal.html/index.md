@@ -36,3 +36,4 @@ When not all owned objects are to be transferred to the same successor owner, it
 
 If `DROP ROLE` is attempted while dependent objects still remain, it will issue messages identifying which objects need to be reassigned or dropped.
 
+

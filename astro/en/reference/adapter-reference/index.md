@@ -704,3 +704,4 @@ Once you [publish your adapter to npm](https://docs.npmjs.com/cli/v8/commands/np
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
 
+

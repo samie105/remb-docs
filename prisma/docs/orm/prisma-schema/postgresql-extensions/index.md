@@ -143,3 +143,4 @@ For detailed usage, examples, and real-world use cases, see [Working with geomet
 
 [Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/prisma-schema/postgresql-extensions.mdx)
 
+

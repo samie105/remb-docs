@@ -15,3 +15,4 @@ nav_next: {"path": "hono/docs/helpers/factory/index.md", "title": "Factory Helpe
 
 [Skip to content](#VPContent)
 
+

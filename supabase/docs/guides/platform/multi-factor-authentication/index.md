@@ -51,3 +51,4 @@ You can disable MFA for your user account under your [Supabase account settings]
 
 We strongly recommend that you do not disable MFA to avoid unauthorized access to your user account.
 
+

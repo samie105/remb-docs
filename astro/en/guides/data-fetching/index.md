@@ -77,3 +77,4 @@ See our [CMS Guides](/en/guides/cms/) for full details on integrating Astro with
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
 
+

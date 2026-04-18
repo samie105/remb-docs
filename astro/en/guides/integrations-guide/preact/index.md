@@ -263,3 +263,4 @@ export default defineConfig({  // Enable many frameworks to support all differen
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
 
+

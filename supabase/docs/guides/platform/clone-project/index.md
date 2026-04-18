@@ -70,3 +70,4 @@ As the entire database is copied to the new project, this will include all exten
 
 Restoring to a new project is an excellent way to manage environments more effectively. You can use this feature to create staging environments for testing, experiment with changes without risk to production data, or swiftly recover from unexpected data loss scenarios.
 
+

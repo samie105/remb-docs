@@ -247,3 +247,4 @@ Realtime creates two functions on your database:
 *   `realtime.send` - Inserts an entry into `realtime.messages` table that will trigger the replication slot to broadcast the changes to the clients. It also captures errors to prevent the trigger from breaking.
 *   `realtime.broadcast_changes` - uses `realtime.send` to broadcast the changes with a format that is compatible with Postgres Changes
 
+

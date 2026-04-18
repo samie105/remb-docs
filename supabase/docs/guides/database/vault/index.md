@@ -123,3 +123,4 @@ Which roles should have access to the `vault.secrets` table should be carefully 
 *   [Supabase Vault on GitHub](https://github.com/supabase/vault)
 *   [Column Encryption](/docs/guides/database/column-encryption)
 
+

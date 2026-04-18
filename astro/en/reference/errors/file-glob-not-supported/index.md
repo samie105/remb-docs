@@ -29,3 +29,4 @@ The `file` loader must be passed a single local file. Glob patterns are not supp
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
 
+

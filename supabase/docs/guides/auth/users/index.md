@@ -167,3 +167,4 @@ Is true if the user is an anonymous user.
 
 *   [User Management guide](/docs/guides/auth/managing-user-data)
 
+

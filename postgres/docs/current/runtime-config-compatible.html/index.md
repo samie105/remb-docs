@@ -75,3 +75,4 @@ Turning this setting off is intended for environments where the configuration of
 
 This parameter only controls the use of `ALTER SYSTEM`. The settings stored in `postgresql.auto.conf` take effect even if `allow_alter_system` is set to `off`.
 
+

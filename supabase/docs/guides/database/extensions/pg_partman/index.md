@@ -492,3 +492,4 @@ Foreign data wrappers developed by Supabase
 
 ](/docs/guides/database/extensions/wrappers/overview)
 
+

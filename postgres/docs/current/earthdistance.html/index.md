@@ -97,3 +97,4 @@ Note that unlike the `cube`\-based part of the module, units are hardwired here:
 
 One disadvantage of the longitude/latitude representation is that you need to be careful about the edge conditions near the poles and near +/- 180 degrees of longitude. The `cube`\-based representation avoids these discontinuities.
 
+

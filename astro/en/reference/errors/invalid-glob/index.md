@@ -29,3 +29,4 @@ Astro encountered an invalid glob pattern. This is often caused by the glob patt
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
 
+

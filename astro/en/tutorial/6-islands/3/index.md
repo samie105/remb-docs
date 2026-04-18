@@ -59,3 +59,4 @@ You can enhance this project’s final code with one of our tutorial extensions,
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
 
+

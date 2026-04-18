@@ -24,3 +24,4 @@ bun repl -p "{ a: 1, b: 2 }"
 
 This uses the same transforms as the interactive REPL, so a bare object literal like `{ a: 1 }` is treated as an object expression instead of a block statement. The process exits after the event loop drains (pending timers and I/O complete first). On error, the process exits with code `1`.
 
+

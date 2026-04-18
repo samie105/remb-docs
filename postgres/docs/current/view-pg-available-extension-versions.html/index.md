@@ -59,3 +59,4 @@ Comment string from the extension's control file
 
 The `pg_available_extension_versions` view is read-only.
 
+

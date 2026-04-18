@@ -165,3 +165,4 @@ After you see the transcript as a reply, navigate back to your table editor in t
 
 ![New row in table](/docs/img/guides/functions/elevenlabs/supa-new-row.png)
 
+

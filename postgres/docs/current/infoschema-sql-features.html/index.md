@@ -49,3 +49,4 @@ Always null, since the PostgreSQL development group does not perform formal test
 
 Possibly a comment about the supported status of the feature
 
+

@@ -47,3 +47,4 @@ Like regular triggers, event triggers can be written in any procedural language 
 
  38.1. Overview of Event Trigger Behavior
 
+

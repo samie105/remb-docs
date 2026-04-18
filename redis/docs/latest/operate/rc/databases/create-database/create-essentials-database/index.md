@@ -116,3 +116,4 @@ When you create your database, there's a brief pause while your request is proce
 
 You can now [connect to your database](/docs/latest/operate/rc/databases/connect/) and start working with Redis.
 
+

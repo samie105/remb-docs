@@ -33,3 +33,4 @@ Only superusers or users with the privileges of the [pg\_checkpoint](postgres/do
 
 The `CHECKPOINT` command is a PostgreSQL language extension.
 
+

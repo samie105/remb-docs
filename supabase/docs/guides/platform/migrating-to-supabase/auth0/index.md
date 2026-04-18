@@ -196,3 +196,4 @@ If you have a lot of user-specific metadata to store, it is recommended to creat
 *   [Migrating 125k users from Auth0 to Supabase](https://kevcodez.medium.com/migrating-125-000-users-from-auth0-to-supabase-81c0568de307)
 *   [Loper to Supabase migration](https://eigen.sh/posts/auth-migration)
 
+

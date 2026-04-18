@@ -174,3 +174,4 @@ See the [TypeScript Guide](/en/guides/typescript/) for details on setting config
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
 
+

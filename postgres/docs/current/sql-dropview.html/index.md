@@ -51,3 +51,4 @@ DROP VIEW kinds;
 
 This command conforms to the SQL standard, except that the standard only allows one view to be dropped per command, and apart from the `IF EXISTS` option, which is a PostgreSQL extension.
 
+

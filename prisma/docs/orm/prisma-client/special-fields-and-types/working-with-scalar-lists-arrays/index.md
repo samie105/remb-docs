@@ -159,3 +159,4 @@ To work around this issue, you can set the default value of array fields to `[]`
 
 [Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/prisma-client/special-fields-and-types/working-with-scalar-lists-arrays.mdx)
 
+

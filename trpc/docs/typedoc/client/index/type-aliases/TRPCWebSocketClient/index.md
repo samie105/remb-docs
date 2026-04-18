@@ -15,3 +15,4 @@ nav_next: {"path": "trpc/docs/typedoc/client/index/variables/jsonEncoder/index.m
 
 Type Alias: TRPCWebSocketClient | tRPC
 
+

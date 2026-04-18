@@ -174,3 +174,4 @@ Show an icon for incomplete items with `? :`[](#show-an-icon-for-incomplete-item
 
 Use the conditional operator (`cond ? a : b`) to render a ❌ if `isPacked` isn’t `true`.
 
+

@@ -29,3 +29,4 @@ A collection entry has an invalid `slug`. This field is reserved for generating 
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
 
+

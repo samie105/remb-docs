@@ -25,3 +25,4 @@ Rate Limiting Edge Functions
 
 Find the code on [GitHub](https://github.com/supabase/supabase/tree/master/examples/edge-functions/supabase/functions/upstash-redis-ratelimit).
 
+

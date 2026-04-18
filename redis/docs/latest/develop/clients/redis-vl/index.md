@@ -19,3 +19,4 @@ Connect your Python vector application to a Redis vector database
 
 See the [RedisVL Guide](/docs/latest/develop/ai/redisvl/) for more information.
 
+

@@ -318,3 +318,4 @@ For example, if you had a custom Katex component that converted some text to HTM
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
 
+

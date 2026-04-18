@@ -122,3 +122,4 @@ prisma-deno-deploy/
 
 [Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/prisma-client/deployment/edge/deploy-to-deno-deploy.mdx)
 
+

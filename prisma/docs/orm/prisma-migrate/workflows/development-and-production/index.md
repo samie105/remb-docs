@@ -116,3 +116,4 @@ Since `5.3.0`, the advisory locking can be disabled using the [`PRISMA_SCHEMA_DI
 
 [Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/prisma-migrate/workflows/development-and-production.mdx)
 
+

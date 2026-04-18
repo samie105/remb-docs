@@ -25,3 +25,4 @@ Collection entries of `type: 'data'` must return an object with valid JSON (for 
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
 
+

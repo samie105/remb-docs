@@ -919,3 +919,4 @@ The SQL-standard operators and functions use XQuery regular expressions, which a
         
     *   XQuery's `x` (ignore whitespace in pattern) flag is noticeably different from POSIX's expanded-mode flag. POSIX's `x` flag also allows `#` to begin a comment in the pattern, and POSIX will not ignore a whitespace character after a backslash.
 
+

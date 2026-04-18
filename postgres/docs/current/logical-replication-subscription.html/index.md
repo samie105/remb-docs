@@ -274,3 +274,4 @@ Example 3: Where the subscription specifies `slot_name = NONE`
     /\* sub # \*/ ALTER SUBSCRIPTION sub1 ENABLE;
     /\* sub # \*/ ALTER SUBSCRIPTION sub1 REFRESH PUBLICATION;
 
+

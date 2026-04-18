@@ -25,3 +25,4 @@ Be aware that the Dart Edge project is currently not actively maintained due to 
 
 For detailed information on how to set up and use Dart Edge with Supabase, refer to the [official Dart Edge documentation for Supabase](https://invertase.docs.page/dart_edge/platform/supabase).
 
+

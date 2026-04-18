@@ -46,3 +46,4 @@ Supabase and Postgres provide you with multiple ways to manage security, includi
 *   [Managing Postgres roles](/docs/guides/database/postgres/roles)
 *   [Managing secrets with Vault](/docs/guides/database/vault)
 
+

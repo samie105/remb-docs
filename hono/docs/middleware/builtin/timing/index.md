@@ -118,3 +118,4 @@ The origin this timings header should be readable.
 
 The default is `false`. See more [docs](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Timing-Allow-Origin).
 
+

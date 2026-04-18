@@ -83,3 +83,4 @@ Source-controlling the `schema.prisma` file is not enough - you must include you
 
 [Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/prisma-migrate/understanding-prisma-migrate/migration-histories.mdx)
 
+

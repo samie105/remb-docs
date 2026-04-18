@@ -144,3 +144,4 @@ Web3 wallets don't expose any identifying information about the user other than 
 
 To associate an email address, phone number or other social login with their account you can use the `supabase.auth.updateUser()` or `supabase.auth.linkIdentity()` APIs.
 
+

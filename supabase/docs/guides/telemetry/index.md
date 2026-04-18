@@ -29,3 +29,4 @@ Supabase is working towards full support for the [OpenTelemetry](https://opentel
 
 This section provides guidance on telemetry in Supabase, including how to work with Supabase Logs.
 
+

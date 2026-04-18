@@ -150,3 +150,4 @@ Projects planning to upgrade from Postgres 15 to Postgres 17 need to first disab
 
 Existing projects on lower versions of Postgres are not impacted, and the extensions will continue to be supported on projects using Postgres 15, until the end of life of Postgres 15 on the Supabase platform.
 
+

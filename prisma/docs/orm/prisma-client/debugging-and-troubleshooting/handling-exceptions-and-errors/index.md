@@ -58,3 +58,4 @@ See [Errors reference](prisma/docs/orm/reference/error-reference/index.md) for a
 
 [Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/prisma-client/debugging-and-troubleshooting/handling-exceptions-and-errors.mdx)
 
+

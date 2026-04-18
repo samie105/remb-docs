@@ -733,3 +733,4 @@ If you have extra time or want to practice your new React skills, here are some 
 
 Throughout this tutorial, you’ve touched on React concepts including elements, components, props, and state. Now that you’ve seen how these concepts work when building a game, check out [Thinking in React](react/learn/thinking-in-react/index.md) to see how the same React concepts work when building an app’s UI.
 
+

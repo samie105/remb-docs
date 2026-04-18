@@ -77,3 +77,4 @@ Hosted Edge Functions have [limits](/docs/guides/functions/limits) on memory and
 
 If you try to perform complex image processing or handle large images (> 5MB) your function may return a resource limit exceeded error.
 
+

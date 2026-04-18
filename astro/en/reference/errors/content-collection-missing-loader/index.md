@@ -26,3 +26,4 @@ A content collection is missing a `loader` definition. Make sure that each colle
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
 
+

@@ -115,3 +115,4 @@ To unify these IDs, use the `generator` function to capture the platform specifi
 *   Fastly
     *   [Fastly documentation: req.xid](https://www.fastly.com/documentation/reference/vcl/variables/client-request/req-xid/)
 
+

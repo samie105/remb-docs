@@ -103,3 +103,4 @@ Vectors and embeddings can be used for much more than search. Learn more about e
 
 Once your vector table starts to grow, you will likely want to add an index to speed up queries. See [Vector indexes](/docs/guides/ai/vector-indexes) to learn how vector indexes work and how to create them.
 
+

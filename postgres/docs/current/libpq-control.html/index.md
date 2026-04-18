@@ -94,3 +94,4 @@ Disables tracing started by [`PQtrace`](postgres/docs/current/libpq-control.html
 
 void PQuntrace(PGconn \*conn);
 
+

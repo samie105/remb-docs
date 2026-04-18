@@ -57,3 +57,4 @@ Although Prisma ORM does not have explicit support for other connection poolers,
 
 [Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/prisma-client/setup-and-configuration/databases-connections/pgbouncer.mdx)
 
+

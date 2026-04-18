@@ -116,3 +116,4 @@ Check constraints are resolved in alphabetical order, and only the first constra
 
 [Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/more/troubleshooting/check-constraints.mdx)
 
+

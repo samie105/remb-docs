@@ -59,3 +59,4 @@ DROP INDEX title\_idx;
 
 `DROP INDEX` is a PostgreSQL language extension. There are no provisions for indexes in the SQL standard.
 
+

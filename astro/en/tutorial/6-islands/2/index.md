@@ -116,3 +116,4 @@ Choose whether each of the following statements describes Astro `<script>` tags,
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
 
+

@@ -27,3 +27,4 @@ The important thing is - the OpenTelemetry logic is disabled on the current vers
 
 As to the reason of the issue in the last release: it happened because of an incorrect type import on [this line](https://github.com/drizzle-team/drizzle-orm/blob/594e96538e588fee5748e372884dbaf32c331524/drizzle-orm/src/tracing.ts#L1). We’ve used `import { type ... }` syntax instead of `import type { ... }`, which resulted in the `import '@opentelemetry/api'` line leaking to the runtime.
 
+

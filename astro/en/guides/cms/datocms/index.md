@@ -347,3 +347,4 @@ You can also check out the [Astro blog template](https://www.datocms.com/marketp
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
 
+

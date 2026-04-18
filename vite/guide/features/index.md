@@ -566,3 +566,4 @@ Entry ---> (A + C)
 
 It is possible for `C` to have further imports, which will result in even more roundtrips in the un-optimized scenario. Vite's optimization will trace all the direct imports to completely eliminate the roundtrips regardless of import depth.
 
+

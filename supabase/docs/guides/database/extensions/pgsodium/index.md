@@ -45,3 +45,4 @@ Encryption requires keys. Keeping the keys in the same database as the encrypted
 
 *   Official [`pgsodium` documentation](https://github.com/michelp/pgsodium)
 
+

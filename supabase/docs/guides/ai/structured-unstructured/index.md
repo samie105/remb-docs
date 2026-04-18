@@ -74,3 +74,4 @@ Both approaches create a table where you can store your embeddings and some meta
 
 Both approaches are valid, and the one you should choose depends on your use-case.
 
+

@@ -344,3 +344,4 @@ This option is never essential, since pg\_restore will automatically prompt for 
 
 Specifies a role name to be used to perform the restore. This option causes pg\_restore to issue a `SET ROLE` _`rolename`_ command after connecting to the database. It is useful when the authenticated user (specified by `-U`) lacks privileges needed by pg\_restore, but can switch to a role with the required rights. Some installations have a policy against logging in directly as a superuser, and use of this option allows restores to be performed without violating the policy.
 
+

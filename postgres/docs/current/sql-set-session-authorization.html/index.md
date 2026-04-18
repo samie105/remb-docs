@@ -59,3 +59,4 @@ The SQL standard allows some other expressions to appear in place of the literal
 
 The privileges necessary to execute this command are left implementation-defined by the standard.
 
+

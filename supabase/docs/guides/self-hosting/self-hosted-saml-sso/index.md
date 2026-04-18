@@ -508,3 +508,4 @@ The user took too long between initiating SSO and completing authentication at t
 *   [Auth server configuration reference](/docs/guides/self-hosting/auth/config) - Full list of Auth environment variables
 *   [SAML 2.0 specification](http://docs.oasis-open.org/security/saml/v2.0/) - The underlying standard
 
+

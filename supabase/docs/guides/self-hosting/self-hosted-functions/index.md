@@ -249,3 +249,4 @@ Use the following command to recreate the container, not just `restart`:
 
 The default limits are 150 MB memory and 60 seconds timeout per function invocation. These are set in `volumes/functions/main/index.ts`. To adjust them, edit the `memoryLimitMb` and `workerTimeoutMs` values and restart the functions service.
 
+

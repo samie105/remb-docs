@@ -209,3 +209,4 @@ Make it so that clicking on the picture _removes_ the `background--active` CSS c
 
 Visually, you should expect that clicking on the picture removes the purple background and highlights the picture border. Clicking outside the picture highlights the background, but removes the picture border highlight.
 
+

@@ -643,3 +643,4 @@ As an example of using the output produced by these functions, [Example 9.1](ht
 
 [\[8\]](#id-1.5.8.21.7.5.15.2) A result containing more than one element node at the top level, or non-whitespace text outside of an element, is an example of content form. An XPath result can be of neither form, for example if it returns an attribute node selected from the element that contains it. Such a result will be put into content form with each such disallowed node replaced by its string value, as defined for the XPath 1.0 `string` function.
 
+

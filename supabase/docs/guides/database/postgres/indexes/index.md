@@ -127,3 +127,4 @@ If additional indexes might improve your query, the Index Advisor shows the sugg
 
 Costs are in arbitrary units, where a single sequential page read costs 1.0 units.
 
+

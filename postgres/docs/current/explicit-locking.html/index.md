@@ -381,3 +381,4 @@ In the above queries, the second form is dangerous because the `LIMIT` is not gu
 
 The functions provided to manipulate advisory locks are described in [Section 9.28.10](https://www.postgresql.org/docs/current/functions-admin.html#FUNCTIONS-ADVISORY-LOCKS "9.28.10. Advisory Lock Functions").
 
+

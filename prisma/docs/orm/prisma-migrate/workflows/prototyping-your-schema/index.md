@@ -237,3 +237,4 @@ At this point, the final result of your prototyping is preserved in a migration,
 
 [Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/prisma-migrate/workflows/prototyping-your-schema.mdx)
 
+

@@ -29,3 +29,4 @@ A legacy content collection schema should not contain the `slug` field. This is 
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
 
+

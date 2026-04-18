@@ -417,3 +417,4 @@ To facilitate this, a new component called a coordinator is added to the cluster
 
 ## On this page
 
+

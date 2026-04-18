@@ -67,3 +67,4 @@ And finally we can query the table using `timescaledb`'s `time_bucket` function 
 
 *   Official [`timescaledb` documentation](https://docs.timescale.com/timescaledb/latest/)
 
+

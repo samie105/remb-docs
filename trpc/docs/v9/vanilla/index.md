@@ -59,3 +59,4 @@ ts
 
 `// => { id: 'id_frodo', name: 'Frodo' };`
 
+

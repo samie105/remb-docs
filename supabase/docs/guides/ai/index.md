@@ -173,3 +173,4 @@ AI-powered chatbot platform, Markprompt, empowers developers to deliver efficien
 
 ](https://supabase.com/customers/markprompt)
 
+

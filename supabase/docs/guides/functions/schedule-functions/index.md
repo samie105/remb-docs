@@ -46,3 +46,4 @@ Make a POST request to a Supabase Edge Function every minute:
 *   [`pg_net` extension](/docs/guides/database/extensions/pgnet)
 *   [`pg_cron` extension](/docs/guides/database/extensions/pgcron)
 
+

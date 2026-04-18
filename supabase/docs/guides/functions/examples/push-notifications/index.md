@@ -80,3 +80,4 @@ Navigate to the [Database Webhooks settings](/dashboard/project/_/integrations/w
 2.  In your `notifications` table, insert a new row.
 3.  Watch the magic happen 🪄
 
+

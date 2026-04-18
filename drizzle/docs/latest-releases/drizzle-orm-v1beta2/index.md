@@ -539,3 +539,4 @@ We’ve added a few more MySQL column types:
     
 *   [\[BUG\]: MySQL alter table fails where tablename is reserved word](https://github.com/drizzle-team/drizzle-orm/issues/364)
 
+

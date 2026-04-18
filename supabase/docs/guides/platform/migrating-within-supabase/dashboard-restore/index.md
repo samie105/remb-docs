@@ -127,3 +127,4 @@ You are possibly using psql and Postgres version 15 or lower. Completely remove 
 
 If the database password was reset, it may take a few minutes for it to reflect. Try again after a few minutes if you did a password reset.
 
+

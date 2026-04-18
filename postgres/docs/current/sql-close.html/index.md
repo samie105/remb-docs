@@ -53,3 +53,4 @@ CLOSE liahona;
 
 `CLOSE` is fully conforming with the SQL standard. `CLOSE ALL` is a PostgreSQL extension.
 
+

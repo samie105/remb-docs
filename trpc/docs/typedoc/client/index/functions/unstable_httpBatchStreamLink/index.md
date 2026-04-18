@@ -45,3 +45,4 @@ use [httpBatchStreamLink](trpc/docs/typedoc/client/index/functions/httpBatchStre
 
 [https://trpc.io/docs/client/links/httpBatchStreamLink](trpc/docs/client/links/httpBatchStreamLink/index.md)
 
+

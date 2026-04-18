@@ -55,3 +55,4 @@ DETAIL:  Key (cage, animal)=(123, lion) conflicts with existing key (cage, anima
 => INSERT INTO zoo VALUES(124, 'lion');
 INSERT 0 1
 
+

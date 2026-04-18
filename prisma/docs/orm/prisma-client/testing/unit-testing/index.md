@@ -342,3 +342,4 @@ test("should fail if user does not accept terms", async () => {
 
 [Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/prisma-client/testing/unit-testing.mdx)
 
+

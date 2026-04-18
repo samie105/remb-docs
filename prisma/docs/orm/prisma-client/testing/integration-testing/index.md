@@ -358,3 +358,4 @@ Once you are satisfied you can run `yarn docker:down` to destroy the container, 
 
 [Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/prisma-client/testing/integration-testing.mdx)
 
+

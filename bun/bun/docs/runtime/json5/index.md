@@ -296,3 +296,4 @@ JSON5 files can be dynamically imported:
 const { default: config } = await import("./config.json5");
 ```
 
+

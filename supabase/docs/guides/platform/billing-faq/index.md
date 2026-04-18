@@ -305,3 +305,4 @@ If you use Supabase through a cloud marketplace such as AWS Marketplace or Verce
 
 For questions about tax collection, exemptions, or your Tax ID, please open a [support ticket](https://supabase.help).
 
+

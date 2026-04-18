@@ -23,3 +23,4 @@ Accessing remote data may require authenticating to the external data source. Th
 
 For additional information, see [CREATE FOREIGN DATA WRAPPER](https://www.postgresql.org/docs/current/sql-createforeigndatawrapper.html "CREATE FOREIGN DATA WRAPPER"), [CREATE SERVER](https://www.postgresql.org/docs/current/sql-createserver.html "CREATE SERVER"), [CREATE USER MAPPING](https://www.postgresql.org/docs/current/sql-createusermapping.html "CREATE USER MAPPING"), [CREATE FOREIGN TABLE](https://www.postgresql.org/docs/current/sql-createforeigntable.html "CREATE FOREIGN TABLE"), and [IMPORT FOREIGN SCHEMA](https://www.postgresql.org/docs/current/sql-importforeignschema.html "IMPORT FOREIGN SCHEMA").
 
+

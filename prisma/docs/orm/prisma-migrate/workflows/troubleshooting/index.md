@@ -100,3 +100,4 @@ See [Prisma Migrate and PgBouncer workaround](prisma/docs/orm/prisma-client/setu
 
 [Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/prisma-migrate/workflows/troubleshooting.mdx)
 
+

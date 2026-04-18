@@ -76,3 +76,4 @@ A successful response returns the catalog configuration including warehouse loca
 *   [Connect with Apache Spark](/docs/guides/storage/analytics/examples/apache-spark)
 *   [Query with Postgres](/docs/guides/storage/analytics/query-with-postgres)
 
+

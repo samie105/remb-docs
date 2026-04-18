@@ -51,3 +51,4 @@ We’ve intentionally not changed the API of ORM itself to stay with conventiona
 
 We’ve also decided to provide `data`, `error` and `updatedAt` fields as a result of hook for concise explicit error handling following practices of `React Query` and `Electric SQL`
 
+

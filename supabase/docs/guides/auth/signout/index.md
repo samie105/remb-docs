@@ -49,3 +49,4 @@ Upon sign out, all refresh tokens and potentially other database objects related
 
 Access Tokens of revoked sessions remain valid until their expiry time, encoded in the `exp` claim. The user won't be immediately logged out and will only be logged out when the Access Token expires.
 
+

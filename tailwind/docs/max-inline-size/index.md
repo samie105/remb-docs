@@ -129,3 +129,4 @@ The `max-inline-<number>` utilities are driven by the `--spacing` theme variable
 
 Learn more about customizing the spacing scale in the [theme variable documentation](tailwind/docs/theme/index.md).
 
+

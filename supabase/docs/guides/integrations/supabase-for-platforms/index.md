@@ -306,3 +306,4 @@ When you need to debug a project, you can query the project's logs to see if the
 1curl 'https://api.supabase.com/v1/projects/{ref}/analytics/endpoints/logs.all' \2  --get \3  --header 'Authorization: Bearer YOUR_SECRET_TOKEN' \4  --data-urlencode 'sql=SELECT datetime(timestamp), status_code, path, event_message5    FROM edge_logs6    CROSS JOIN UNNEST(metadata) AS metadata7    CROSS JOIN UNNEST(response) AS response8    WHERE status_code >= 4009    ORDER BY timestamp DESC10    LIMIT 100' \11  --data-urlencode 'iso_timestamp_start=2025-03-23T00:00:00Z' \12  --data-urlencode 'iso_timestamp_end=2025-03-23T01:00:00Z'
 ```
 
+

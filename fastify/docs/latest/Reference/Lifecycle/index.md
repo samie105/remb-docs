@@ -57,3 +57,4 @@ If the reply was hijacked, all subsequent steps are skipped. Otherwise, when sub
 
 When [`fastify.close()`](/docs/latest/Reference/Server/#close) is called, the server goes through a graceful shutdown sequence involving [`preClose`](/docs/latest/Reference/Hooks/#pre-close) hooks, connection draining, and [`onClose`](/docs/latest/Reference/Hooks/#on-close) hooks. See the [`close`](/docs/latest/Reference/Server/#close) method documentation for the full step-by-step lifecycle.
 
+

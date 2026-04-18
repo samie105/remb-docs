@@ -27,3 +27,4 @@ A redirect must be given a location with the `Location` header.
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
 
+

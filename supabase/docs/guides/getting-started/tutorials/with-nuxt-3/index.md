@@ -171,3 +171,4 @@ And then we can add the widget to the Account page:
 
 That is it! You should now be able to upload a profile photo to Supabase Storage and you have a fully functional application.
 
+

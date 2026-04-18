@@ -72,3 +72,4 @@ For example, when setting `['node', 'custom']`, you should run `NODE_OPTIONS='--
 
 List of fields in `package.json` to try when resolving a package's entry point. Note this takes lower precedence than conditional exports resolved from the `exports` field: if an entry point is successfully resolved from `exports`, the main field will be ignored. This setting only affects non-externalized dependencies.
 
+

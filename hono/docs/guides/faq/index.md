@@ -15,3 +15,4 @@ nav_next: {"path": "hono/docs/helpers/accepts/index.md", "title": "Accepts Helpe
 
 [Skip to content](#VPContent)
 
+

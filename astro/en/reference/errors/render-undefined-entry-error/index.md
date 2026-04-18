@@ -23,3 +23,4 @@ Astro tried to render a content collection entry that was undefined. This can ha
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
 
+

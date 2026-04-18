@@ -444,3 +444,4 @@ User is signing up or changing their password without meeting the password stren
 *   Always use `error.code` and `error.name` to identify errors, not string matching on error messages.
 *   Avoid relying solely on HTTP status codes, as they may change unexpectedly.
 
+

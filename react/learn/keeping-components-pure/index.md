@@ -148,3 +148,4 @@ This component tries to set the `<h1>`’s CSS class to `"night"` during the tim
 
 You can verify whether your solution works by temporarily changing the computer’s timezone. When the current time is between midnight and six in the morning, the clock should have inverted colors!
 
+

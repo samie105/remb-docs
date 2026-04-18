@@ -69,3 +69,4 @@ You can use `supabase-js` to first generate the embedding for the search term an
 
 You now have AI powered semantic search set up without any external dependencies! Just you, pgvector, and Supabase Edge Functions!
 
+

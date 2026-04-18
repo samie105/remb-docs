@@ -66,3 +66,4 @@ Explore your data in Metabase
 
 ![explore data](/docs/img/guides/database/connecting-to-postgres/metabase/explore.png)
 
+

@@ -243,3 +243,4 @@ Now that you've registered your first OAuth client, you're ready to:
 *   [Implement MCP authentication](/docs/guides/auth/oauth-server/mcp-authentication) - Enable AI agent authentication
 *   [Secure with RLS](/docs/guides/auth/oauth-server/token-security) - Control data access for OAuth clients
 
+

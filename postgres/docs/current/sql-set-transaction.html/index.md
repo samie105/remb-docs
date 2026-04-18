@@ -93,3 +93,4 @@ In the SQL standard, there is one other transaction characteristic that can be s
 
 The SQL standard requires commas between successive _`transaction_modes`_, but for historical reasons PostgreSQL allows the commas to be omitted.
 
+

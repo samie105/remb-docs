@@ -51,3 +51,4 @@ Analytics buckets are perfect for:
 
 By separating transactional and analytical workloads, Supabase lets you build scalable analytics pipelines without compromising your primary Postgres performance.
 
+

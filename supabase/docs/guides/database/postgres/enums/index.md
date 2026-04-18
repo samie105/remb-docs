@@ -113,3 +113,4 @@ Check your existing Enum values by querying the enum\_range function:
 
 *   Official Postgres Docs: [Enumerated Types](https://www.postgresql.org/docs/current/datatype-enum.html)
 
+

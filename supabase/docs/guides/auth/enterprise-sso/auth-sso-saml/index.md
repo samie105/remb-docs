@@ -382,3 +382,4 @@ Create an endpoint in your application (for example, `https://your-app.com/auth/
 
 This approach supports custom SAML assertions and lets you embed the link anywhere in your application.
 
+

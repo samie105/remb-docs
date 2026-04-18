@@ -43,3 +43,4 @@ Note that all the solutions described above take care of starting new log files 
 
 [pgBadger](https://pgbadger.darold.net/) is an external project that does sophisticated log file analysis. [check\_postgres](https://bucardo.org/check_postgres/) provides Nagios alerts when important messages appear in the log files, as well as detection of many other extraordinary conditions.
 
+

@@ -79,3 +79,4 @@ Subscription IDs are Erlang processes representing underlying sockets on the clu
 
 After receiving results from the polling query, with subscription IDs appended, Realtime delivers records to those clients.
 
+

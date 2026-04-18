@@ -718,3 +718,4 @@ CONTEXT:  PL/pgSQL function outer\_func() line 3 at RETURN
 
 `GET STACKED DIAGNOSTICS ... PG_EXCEPTION_CONTEXT` returns the same sort of stack trace, but describing the location at which an error was detected, rather than the current location.
 
+

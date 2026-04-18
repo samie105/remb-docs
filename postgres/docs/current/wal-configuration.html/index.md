@@ -53,3 +53,4 @@ There are two internal functions to write WAL data to disk: `XLogWrite` and `iss
 
 The [recovery\_prefetch](postgres/docs/current/runtime-config-wal.html/index.md#GUC-RECOVERY-PREFETCH) parameter can be used to reduce I/O wait times during recovery by instructing the kernel to initiate reads of disk blocks that will soon be needed but are not currently in PostgreSQL's buffer pool. The [maintenance\_io\_concurrency](postgres/docs/current/runtime-config-resource.html/index.md#GUC-MAINTENANCE-IO-CONCURRENCY) and [wal\_decode\_buffer\_size](postgres/docs/current/runtime-config-wal.html/index.md#GUC-WAL-DECODE-BUFFER-SIZE) settings limit prefetching concurrency and distance, respectively. By default, it is set to `try`, which enables the feature on systems that support issuing read-ahead advice.
 
+

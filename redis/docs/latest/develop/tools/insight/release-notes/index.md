@@ -249,3 +249,4 @@ v1.0 (Nov 2019)
 
 [RedisInsight v1.0, November 2019](/docs/latest/develop/tools/insight/release-notes/v1.0.0/)
 
+

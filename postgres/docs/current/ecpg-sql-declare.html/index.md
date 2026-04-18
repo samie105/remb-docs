@@ -57,3 +57,4 @@ EXEC SQL DECLARE cur1 CURSOR FOR stmt1;
 
 `DECLARE` is specified in the SQL standard.
 
+

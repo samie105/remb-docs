@@ -548,3 +548,4 @@ For more details, see:
 *   [https://github.com/fastify/fastify/issues/1864](https://github.com/fastify/fastify/issues/1864) for the discussion about this feature
 *   [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Promise/then](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/then) for the signature
 
+

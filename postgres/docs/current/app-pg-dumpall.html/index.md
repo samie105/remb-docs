@@ -347,3 +347,4 @@ It is not important which database you connect to here since the script file cre
 
 Check [pg\_dump](https://www.postgresql.org/docs/current/app-pgdump.html "pg_dump") for details on possible error conditions.
 
+

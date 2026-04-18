@@ -37,3 +37,4 @@ This is the General Availability (GA) release of Redis Insight 2.48.
 
 ## On this page
 
+

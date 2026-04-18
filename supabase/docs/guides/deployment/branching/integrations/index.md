@@ -46,3 +46,4 @@ Supabase automatically updates your Vercel project with the correct environment 
 
 As branching integration is tied to the Preview Deployments feature in Vercel, there are possible race conditions between Supabase setting correct variables, and Vercel running a deployment process. Because of that, Supabase is always automatically re-deploying the most recent deployment of the given pull request.
 
+

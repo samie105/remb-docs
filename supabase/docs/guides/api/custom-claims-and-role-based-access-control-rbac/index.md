@@ -103,3 +103,4 @@ You now have a robust system in place to manage user roles and permissions withi
 *   [RLS Functions](/docs/guides/database/postgres/row-level-security#using-functions)
 *   [Next.js Slack Clone Example](https://github.com/supabase/supabase/tree/master/examples/slack-clone/nextjs-slack-clone)
 
+

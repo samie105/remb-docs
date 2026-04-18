@@ -57,3 +57,4 @@ Update rule of the foreign key constraint: `CASCADE`, `SET NULL`, `SET DEFAULT`,
 
 Delete rule of the foreign key constraint: `CASCADE`, `SET NULL`, `SET DEFAULT`, `RESTRICT`, or `NO ACTION`.
 
+

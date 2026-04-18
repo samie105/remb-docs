@@ -42,3 +42,4 @@ It also works on Netlify and other platforms. The same code runs on all platform
 
 Cloudflare Workers, Deno, Shopify, and others launched [WinterCG](https://wintercg.org/) to discuss the possibility of using the Web Standards to enable "web-interoperability". Hono will follow their steps and go for **the Standard of the Web Standards**.
 
+

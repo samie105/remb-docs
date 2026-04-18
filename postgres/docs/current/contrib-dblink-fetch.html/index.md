@@ -96,3 +96,4 @@ SELECT \* FROM dblink\_fetch('foo', 5) AS (funcname name, source text);
 ----------+--------
 (0 rows)
 
+

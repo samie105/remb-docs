@@ -37,3 +37,4 @@ The syntax of the `CREATE INDEX` command normally requires writing parentheses a
 
 Index expressions are relatively expensive to maintain, because the derived expression(s) must be computed for each row insertion and [non-HOT update](https://www.postgresql.org/docs/current/storage-hot.html "66.7. Heap-Only Tuples (HOT)"). However, the index expressions are _not_ recomputed during an indexed search, since they are already stored in the index. In both examples above, the system sees the query as just `WHERE indexedcolumn = 'constant'` and so the speed of the search is equivalent to any other simple index query. Thus, indexes on expressions are useful when retrieval speed is more important than insertion and update speed.
 
+

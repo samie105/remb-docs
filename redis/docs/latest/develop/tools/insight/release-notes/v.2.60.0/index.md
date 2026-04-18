@@ -40,3 +40,4 @@ This is the General Availability (GA) release of Redis Insight 2.60.
 
 ## On this page
 
+

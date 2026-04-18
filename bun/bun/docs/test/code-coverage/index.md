@@ -426,3 +426,4 @@ coveragePathIgnorePatterns = [
 
 Consider running coverage only on CI or specific branches rather than every test run during development.
 
+

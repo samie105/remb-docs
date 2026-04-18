@@ -75,3 +75,4 @@ Some white papers and technical reports from the original POSTGRES development t
 
 \[ston92\] “ [An overview of the Sequoia 2000 project](https://dsf.berkeley.edu/papers/S2K-91-05.pdf) ”. M. Stonebraker. _Digest of Papers COMPCON Spring 1992_. 1992. 383–388.
 
+

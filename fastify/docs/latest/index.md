@@ -31,3 +31,4 @@ Developers experienced with Fastify should consult the [reference documentation]
 
 *   Fastify's [Long Term Support (LTS)](/docs/latest/Reference/LTS/) policy
 
+

@@ -43,3 +43,4 @@ Expression tree (in `nodeToString()` representation) for the relation's publicat
 
 This is an array of values that indicates which table columns are part of the publication. For example, a value of `1 3` would mean that the first and the third table columns are published. A null value indicates that all columns are published.
 
+

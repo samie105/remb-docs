@@ -28,3 +28,4 @@ A content entry does not match its collection schema. Make sure that all require
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
 
+

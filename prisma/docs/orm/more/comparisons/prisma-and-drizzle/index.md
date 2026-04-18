@@ -335,3 +335,4 @@ Both Drizzle ORM and Prisma ORM are tools for data access and migrations. Drizzl
 
 On the other hand, for teams that are a mix of developers (front-end, back-end, and full-stack) that have varying levels of experience with databases, Prisma ORM offers a comprehensive and easy-to-learn approach for data access and managing database schemas.
 
+

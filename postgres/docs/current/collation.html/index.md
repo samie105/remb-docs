@@ -522,3 +522,4 @@ ORDER BY c COLLATE ebcdic;
  1
  2
 
+

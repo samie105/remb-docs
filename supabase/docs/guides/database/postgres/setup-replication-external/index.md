@@ -68,3 +68,4 @@ For projects running Postgres 17+, it is possible to subscribe to a [Read Replic
 
 You can add more tables to the initial publication, but you're going to need to do a REFRESH on the subscribing database. See [https://www.postgresql.org/docs/current/sql-alterpublication.html](https://www.postgresql.org/docs/current/sql-alterpublication.html)
 
+

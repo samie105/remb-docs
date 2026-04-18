@@ -106,3 +106,4 @@ The does the same with `anyarray` index as `rum_tsvector_addon_ops` i.e. allows 
 
 *   [Official RUM documentation](https://github.com/postgrespro/rum)
 
+

@@ -45,3 +45,4 @@ This section describes all SQL commands that are specific to embedded SQL. Also 
 
  ALLOCATE DESCRIPTOR
 
+

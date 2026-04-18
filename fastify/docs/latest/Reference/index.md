@@ -53,3 +53,4 @@ This table of contents is in alphabetical order.
 *   [Validation and Serialization](/docs/latest/Reference/Validation-and-Serialization/): Details Fastify's support for validating incoming data and how Fastify serializes data for responses.
 *   [Warnings](/docs/latest/Reference/Warnings/): Details the warnings Fastify emits and how to solve them.
 
+

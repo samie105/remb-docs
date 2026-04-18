@@ -233,3 +233,4 @@ Use the [`vanity-subdomains delete`](/docs/reference/cli/supabase-vanity-subdoma
 
 For a detailed breakdown of how charges are calculated, refer to [Manage Custom Domain usage](/docs/guides/platform/manage-your-usage/custom-domains).
 
+

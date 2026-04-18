@@ -85,3 +85,4 @@ These roles are intended to allow administrators to have trusted, but non-superu
 
 `pg_use_reserved_connections` allows use of connection slots reserved via [reserved\_connections](postgres/docs/current/runtime-config-connection.html/index.md#GUC-RESERVED-CONNECTIONS).
 
+

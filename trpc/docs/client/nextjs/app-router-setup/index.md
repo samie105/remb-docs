@@ -760,3 +760,4 @@ tsx
 *   Explore [server-side calls](trpc/docs/server/server-side-calls/index.md) for more advanced server-side patterns
 *   Check out the [SSE Chat example](https://github.com/trpc/trpc/tree/main/examples/next-sse-chat) for a full App Router example with subscriptions
 
+

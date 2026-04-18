@@ -45,3 +45,4 @@ You can use one of the following tools to create IAM resources:
 *   [Terraform](/docs/latest/operate/rc/subscriptions/bring-your-own-cloud/iam-resources/terraform/)
 *   The [AWS Console](/docs/latest/operate/rc/subscriptions/bring-your-own-cloud/iam-resources/aws-console/)
 
+

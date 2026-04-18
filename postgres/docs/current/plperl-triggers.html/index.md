@@ -99,3 +99,4 @@ CREATE TRIGGER test\_valid\_id\_trig
     BEFORE INSERT OR UPDATE ON test
     FOR EACH ROW EXECUTE FUNCTION valid\_id();
 
+

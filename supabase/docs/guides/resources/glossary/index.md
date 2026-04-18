@@ -131,3 +131,4 @@ Single-sign on allows enterprises to centrally manage accounts and access to app
 
 A time-based one-time password is a one-time password generated at regular time intervals from a secret, usually from an application in a mobile device (e.g., Google Authenticator, 1Password).
 
+

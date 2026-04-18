@@ -144,3 +144,4 @@ If the server is indeed running, check that the client's idea of the socket path
 
 A connection failure message always shows the server address or socket path name, which is useful in verifying that the client is trying to connect to the right place. If there is in fact no server listening there, the kernel error message will typically be either `Connection refused` or `No such file or directory`, as illustrated. (It is important to realize that `Connection refused` in this context does _not_ mean that the server got your connection request and rejected it. That case will produce a different message, as shown in [Section 20.16](https://www.postgresql.org/docs/current/client-authentication-problems.html "20.16. Authentication Problems").) Other error messages such as `Connection timed out` might indicate more fundamental problems, like lack of network connectivity, or a firewall blocking the connection.
 
+

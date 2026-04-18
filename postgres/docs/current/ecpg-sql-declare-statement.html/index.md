@@ -53,3 +53,4 @@ EXEC SQL CLOSE cursor\_name;
 
 `DECLARE STATEMENT` is an extension of the SQL standard, but can be used in famous DBMSs.
 
+

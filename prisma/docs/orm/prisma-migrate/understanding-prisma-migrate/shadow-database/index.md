@@ -139,3 +139,4 @@ To resolve this error:
 
 [Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/prisma-migrate/understanding-prisma-migrate/shadow-database.mdx)
 
+

@@ -97,3 +97,4 @@ Reports the size of a WAL disk block. It is determined by the value of `XLOG_BLC
 
 Reports the size of write ahead log segments. The default value is 16MB. See [Section 28.5](https://www.postgresql.org/docs/current/wal-configuration.html "28.5. WAL Configuration") for more information.
 
+

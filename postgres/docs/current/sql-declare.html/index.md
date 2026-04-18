@@ -110,3 +110,4 @@ According to the SQL standard, changes made to insensitive cursors by `UPDATE ..
 
 Binary cursors are a PostgreSQL extension.
 
+

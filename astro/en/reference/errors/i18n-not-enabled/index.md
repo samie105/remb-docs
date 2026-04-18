@@ -36,3 +36,4 @@ For more information on internationalization support in Astro, see our [Internat
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
 
+

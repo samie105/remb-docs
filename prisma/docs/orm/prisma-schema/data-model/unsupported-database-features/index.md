@@ -90,3 +90,4 @@ Some features, like SQL views, cannot be represented in the Prisma schema. If yo
 
 [Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/prisma-schema/data-model/unsupported-database-features.mdx)
 
+

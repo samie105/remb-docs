@@ -105,3 +105,4 @@ When using a replication setup with tools which perform direct copies of relatio
 
 If pg\_checksums is aborted or killed while enabling or disabling checksums, the cluster's data checksum configuration remains unchanged, and pg\_checksums can be re-run to perform the same operation.
 
+

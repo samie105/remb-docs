@@ -28,3 +28,4 @@ A Markdown document’s frontmatter in `src/content/` does not match its collect
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
 
+

@@ -148,3 +148,4 @@ You can improve the type-safety of `model` components in your shared extensions 
 
 [Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/prisma-client/client-extensions/model.mdx)
 
+

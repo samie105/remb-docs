@@ -141,3 +141,4 @@ nav_next: {"path": "trpc/docs/v9/links/index.md", "title": "Links & Request Batc
 
 `inferProcedureInput<AppRouter['_def']['subscriptions'][TRouteKey]>;`
 
+

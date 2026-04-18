@@ -327,3 +327,4 @@ See [https://www.jsonrpc.org/specification#error\_object](https://www.jsonrpc.or
 
 Tells clients to reconnect before shutting down server. Invoked by `wssHandler.broadcastReconnectNotification()`.
 
+

@@ -53,3 +53,4 @@ PostgreSQL also provides the usual comparison operators shown in [Table 9.1](ht
 
 See [Section 8.12](https://www.postgresql.org/docs/current/datatype-uuid.html "8.12. UUID Type") for details on the data type `uuid` in PostgreSQL.
 
+

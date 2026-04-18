@@ -271,3 +271,4 @@ Prepared statements (either explicitly prepared or implicitly generated, for exa
 
 Sets the planner's estimate of the average size of the working table of a [recursive query](https://www.postgresql.org/docs/current/queries-with.html#QUERIES-WITH-RECURSIVE "7.8.2. Recursive Queries"), as a multiple of the estimated size of the initial non-recursive term of the query. This helps the planner choose the most appropriate method for joining the working table to the query's other tables. The default value is `10.0`. A smaller value such as `1.0` can be helpful when the recursion has low “fan-out” from one step to the next, as for example in shortest-path queries. Graph analytics queries may benefit from larger-than-default values.
 
+

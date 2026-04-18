@@ -25,3 +25,4 @@ Content collection entries must have unique slugs. Duplicates are often caused b
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
 
+

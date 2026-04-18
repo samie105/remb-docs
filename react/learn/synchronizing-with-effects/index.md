@@ -532,3 +532,4 @@ To verify that your solution works, press “Show form” and verify that the in
 
 `MyInput` should only focus _on mount_ rather than after every render. To verify that the behavior is right, press “Show form” and then repeatedly press the “Make it uppercase” checkbox. Clicking the checkbox should _not_ focus the input above it.
 
+

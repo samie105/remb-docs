@@ -71,3 +71,4 @@ Reducers let you consolidate a component’s state update logic. Context lets yo
 
 With this approach, a parent component with complex state manages it with a reducer. Other components anywhere deep in the tree can read its state via context. They can also dispatch actions to update that state.
 
+

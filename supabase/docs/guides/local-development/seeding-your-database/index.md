@@ -123,3 +123,4 @@ After setting the environment variables, run the following commands to sync and 
 
 For more information, check out Snaplet's [seed documentation](https://snaplet-seed.netlify.app/seed/integrations/supabase)
 
+

@@ -462,3 +462,4 @@ These events can be received like so:
 const dc = require('node:diagnostics_channel')const channel = dc.channel('tracing:fastify.request.handler:start')channel.subscribe((msg) => {  console.log(msg.request, msg.reply)})
 ```
 
+

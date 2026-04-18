@@ -257,3 +257,4 @@ Partial (including parallel) aggregation is currently not supported for ordered-
 
 `CREATE AGGREGATE` is a PostgreSQL language extension. The SQL standard does not provide for user-defined aggregate functions.
 
+

@@ -19,3 +19,4 @@ Each table is a named collection of _rows_. Each row of a given table has the sa
 
 Tables are grouped into databases, and a collection of databases managed by a single PostgreSQL server instance constitutes a database _cluster_.
 
+

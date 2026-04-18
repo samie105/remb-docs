@@ -17,3 +17,4 @@ PostgreSQL uses an internal heuristic parser for all date/time input support. Da
 
 This appendix includes information on the content of these lookup tables and describes the steps used by the parser to decode dates and times.
 
+

@@ -743,3 +743,4 @@ All idle cursors can be forcefully purged at the same time using `FT.CURSOR GC i
 
 ## On this page
 
+

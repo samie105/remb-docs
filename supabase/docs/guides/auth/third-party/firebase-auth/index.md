@@ -124,3 +124,4 @@ You need to run a script that will assign the `role: 'authenticated'` custom cla
 
 After all users have received the `role: 'authenticated'` claim, it will appear in all newly issued ID tokens for the user.
 
+

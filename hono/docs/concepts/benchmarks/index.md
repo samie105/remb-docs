@@ -207,3 +207,4 @@ Hono is one of the fastest frameworks for Bun. You can see it below.
 
 *   [SaltyAom/bun-http-framework-benchmark](https://github.com/SaltyAom/bun-http-framework-benchmark)
 
+

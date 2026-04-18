@@ -95,3 +95,4 @@ The following syntax was used before PostgreSQL version 11 and is still supporte
 
 ANALYZE \[ VERBOSE \] \[ _`table_and_columns`_ \[, ...\] \]
 
+

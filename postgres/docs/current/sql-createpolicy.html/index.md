@@ -342,3 +342,4 @@ Additional discussion and practical examples can be found in [Section 5.9](http
 
 `CREATE POLICY` is a PostgreSQL extension.
 
+

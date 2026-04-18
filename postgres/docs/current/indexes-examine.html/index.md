@@ -33,3 +33,4 @@ It is difficult to formulate a general procedure for determining which indexes t
     
     If you do not succeed in adjusting the costs to be more appropriate, then you might have to resort to forcing index usage explicitly. You might also want to contact the PostgreSQL developers to examine the issue.
 
+

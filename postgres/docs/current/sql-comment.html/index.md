@@ -217,3 +217,4 @@ COMMENT ON VIEW my\_view IS 'View of departmental costs';
 
 There is no `COMMENT` command in the SQL standard.
 
+

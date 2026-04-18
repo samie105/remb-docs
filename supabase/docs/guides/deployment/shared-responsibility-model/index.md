@@ -110,3 +110,4 @@ You can use Supabase to store and process Protected Health Information (PHI). Yo
 
 For more information on the shared responsibilities and rules under HIPAA, review the [HIPAA compliance responsibilities document](/docs/guides/security/hipaa-compliance).
 
+

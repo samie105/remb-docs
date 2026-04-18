@@ -179,3 +179,4 @@ In this example, the columns to be selected are defined dynamically and included
 
 This feature was heavily inspired by [PgTyped](https://github.com/adelsz/pgtyped) and [SQLx](https://github.com/launchbadge/sqlx). Additionally, SQLite parsing is handled by SQLx.
 
+

@@ -219,3 +219,4 @@ Client applications that handle server-side errors by parsing the text of the er
 
 Maintaining catalogs of message translations requires the on-going efforts of many volunteers that want to see PostgreSQL speak their preferred language well. If messages in your language are currently not available or not fully translated, your assistance would be appreciated. If you want to help, refer to [Chapter 56](https://www.postgresql.org/docs/current/nls.html "Chapter 56. Native Language Support") or write to the developers' mailing list.
 
+

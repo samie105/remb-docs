@@ -176,3 +176,4 @@ Add an `alert` to the click handler. When the light is green and says “Walk”
 
 Does it make a difference whether you put the `alert` before or after the `setWalk` call?
 
+

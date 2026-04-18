@@ -44,3 +44,4 @@ Integrations are assessed on the following criteria:
 *   **Service Level Agreements** All listings are required to have their own Terms and Conditions, Privacy Policy, and Acceptable Use Policy, and the company must have resources to meet their SLAs.
 *   **Maintainability** All integrations are required to be maintained and functional with Supabase, and the company may be assessed on your ability to remain functional over a long time horizon.
 
+

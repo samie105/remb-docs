@@ -37,3 +37,4 @@ For example, you can implement a policy where only the owner of an object can de
 
 The use of RLS policies is just one way to enforce access control. You can also implement access control in your server code by following the same pattern.
 
+

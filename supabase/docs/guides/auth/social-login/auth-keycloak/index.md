@@ -112,3 +112,4 @@ When your user signs out, call [signOut()](/docs/reference/javascript/auth-signo
 
 *   You can find the Keycloak OpenID endpoint configuration under the realm settings. ![Keycloak OpenID Endpoint Configuration](/docs/img/guides/auth-keycloak/keycloak-openid-endpoint-config.png)
 
+

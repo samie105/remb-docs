@@ -55,3 +55,4 @@ Use the connection to execute commands.
 1import sql from './db.js'23async function getUsersOver(age) {4  const users = await sql`5    select name, age6    from users7    where age > ${ age }8  `9  // users = Result [{ name: "Walter", age: 80 }, { name: 'Murray', age: 68 }, ...]10  return users11}
 ```
 
+

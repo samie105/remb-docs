@@ -26,3 +26,4 @@ We also have friends who make GraphQL servers, Firebase authentication, and Sent
 
 In other words, Hono is damn fast, makes a lot of things possible, and works anywhere. We might imagine that Hono could become the **Standard for Web Standards**.
 
+

@@ -547,3 +547,4 @@ Plugins maintained by the Fastify team are listed under [Core](#core) while plug
 *   [`vite-plugin-fastify`](https://github.com/Vanilla-IceCream/vite-plugin-fastify) Fastify plugin for Vite with Hot-module Replacement.
 *   [`vite-plugin-fastify-routes`](https://github.com/Vanilla-IceCream/vite-plugin-fastify-routes) File-based routing for Fastify applications using Vite.
 
+

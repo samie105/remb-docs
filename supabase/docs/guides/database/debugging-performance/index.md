@@ -101,3 +101,4 @@ To disable the `explain()` method after use, execute the following SQL commands:
 1-- disable explain2alter role authenticator3set pgrst.db_plan_enabled to 'false';45-- if you used the above pre-request6alter role authenticator7set pgrst.db_pre_request to '';89-- reload the config10notify pgrst, 'reload config';
 ```
 
+

@@ -79,3 +79,4 @@ Join with transactional data:
 
 For advanced use cases, you can manually install and configure the Iceberg Foreign Data Wrapper. See the [Iceberg Foreign Data Wrapper documentation](/docs/guides/database/extensions/wrappers/iceberg) for detailed instructions.
 
+

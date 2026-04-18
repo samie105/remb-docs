@@ -72,3 +72,4 @@ If you are on an earlier version of pgvector, you should [upgrade your project h
 
 Read more about indexing on `pgvector`'s [GitHub page](https://github.com/pgvector/pgvector#indexing).
 
+

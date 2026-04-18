@@ -240,3 +240,4 @@ A few common use cases for Broadcast Replay include:
 *   Ensuring users always see the latest events after a page reload or network interruption
 *   Highlighting the most recent sections that changed in a web page
 
+

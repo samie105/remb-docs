@@ -119,3 +119,4 @@ True if this is a logical slot enabled to be synced to the standbys so that logi
 
 True if this is a logical slot that was synced from a primary server. On a hot standby, the slots with the synced column marked as true can neither be used for logical decoding nor dropped manually. The value of this column has no meaning on the primary server; the column value on the primary is default false for all slots but may (if leftover from a promoted standby) also be true.
 
+

@@ -28,3 +28,4 @@ A Markdown or MDX entry does not match its collection schema. Make sure that all
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
 
+

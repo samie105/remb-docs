@@ -112,3 +112,4 @@ To apply the down migration on your production database after a failed up migrat
 
 [Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/prisma-migrate/workflows/generating-down-migrations.mdx)
 
+

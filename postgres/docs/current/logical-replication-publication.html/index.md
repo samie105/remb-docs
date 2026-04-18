@@ -39,3 +39,4 @@ Tables with a replica identity defined as `NOTHING`, `DEFAULT` without a primary
 
 See [`ALTER TABLE...REPLICA IDENTITY`](https://www.postgresql.org/docs/current/sql-altertable.html#SQL-ALTERTABLE-REPLICA-IDENTITY) for details on how to set the replica identity.
 
+

@@ -245,3 +245,4 @@ At this stage, you have a fully functional application!
 
 *   [Authentication in Ionic Angular with Supabase](/blog/authentication-in-ionic-angular)
 
+

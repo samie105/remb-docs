@@ -340,3 +340,4 @@ This is to ensure you have the ability, should you need it, to go back to the le
 
 Unfortunately `anon` and `service_role` are not just API keys, but are also valid JSON Web Tokens, signed by the legacy JWT secret. Revoking the legacy JWT secret means that your application no longer trusts any JWT signed with it. Therefore before you revoke the legacy JWT secret, you must disable the `anon` and `service_role` to ensure a consistent security setup.
 
+

@@ -19,3 +19,4 @@ The information schema ([Chapter 35](https://www.postgresql.org/docs/current/in
 
 [Table 53.1](https://www.postgresql.org/docs/current/views-overview.html#VIEW-TABLE "Table 53.1. System Views") lists the system views described here. More detailed documentation of each view follows below. There are some additional views that provide access to accumulated statistics; they are described in [Table 27.2](https://www.postgresql.org/docs/current/monitoring-stats.html#MONITORING-STATS-VIEWS-TABLE "Table 27.2. Collected Statistics Views").
 
+

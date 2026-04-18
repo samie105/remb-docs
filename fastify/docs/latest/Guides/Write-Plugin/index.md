@@ -82,3 +82,4 @@ If you want to see some real world examples, check out:
 *   [`@fastify/multipart`](https://github.com/fastify/fastify-multipart) Multipart support for Fastify.
 *   [`@fastify/helmet`](https://github.com/fastify/fastify-helmet) Important security headers for Fastify.
 
+

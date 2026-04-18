@@ -65,3 +65,4 @@ ALTER GROUP workers DROP USER beth;
 
 There is no `ALTER GROUP` statement in the SQL standard.
 
+

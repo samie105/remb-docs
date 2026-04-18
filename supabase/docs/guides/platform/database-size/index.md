@@ -149,3 +149,4 @@ In case you have a large WAL directory, you may [modify WAL settings](/docs/guid
 
 In the event that your project is already on the latest version of Postgres and cannot be upgraded, a new version of Postgres will be released approximately every week which you can then upgrade to once it becomes available.
 
+

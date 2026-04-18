@@ -77,3 +77,4 @@ For a detailed explanation of how charges are calculated, refer to [Manage Stora
 
 If you use [Storage Image Transformations](/docs/guides/storage/serving/image-transformations), additional charges apply.
 
+

@@ -25,3 +25,4 @@ Static pages aren’t yet supported with i18n domains. If you wish to enable thi
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
 
+

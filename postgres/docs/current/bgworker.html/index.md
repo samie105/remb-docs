@@ -84,3 +84,4 @@ The `src/test/modules/worker_spi` module contains a working example, which demon
 
 The maximum number of registered background workers is limited by [max\_worker\_processes](postgres/docs/current/runtime-config-resource.html/index.md#GUC-MAX-WORKER-PROCESSES).
 
+

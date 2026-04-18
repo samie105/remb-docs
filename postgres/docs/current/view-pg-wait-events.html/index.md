@@ -17,3 +17,4 @@ nav_next: {"path": "postgres/docs/current/spi-spi-getbinval.html/index.md", "tit
 
 If you see anything in the documentation that is not correct, does not match your experience with the particular feature or requires further clarification, please use [this form](https://www.postgresql.org/account/comments/new/18/view-pg-wait-events.html/) to report a documentation issue.
 
+

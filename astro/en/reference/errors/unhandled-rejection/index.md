@@ -26,3 +26,4 @@ Astro could not find any code to handle a rejected `Promise`. Make sure all your
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
 
+

@@ -189,3 +189,4 @@ For the full example of the blog tutorial using content collections, see the [Co
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
 
+

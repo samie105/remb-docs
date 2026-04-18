@@ -61,3 +61,4 @@ This example demonstrates how you would allow restrict uploads to only PNG files
 1create policy "Only allow PNG uploads"2on storage.objects3for insert4to authenticated5with check (6  bucket_id = 'cats' and storage.extension(name) = 'png'7);
 ```
 
+

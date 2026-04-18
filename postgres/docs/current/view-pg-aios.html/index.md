@@ -125,3 +125,4 @@ The `pg_aios` view is read-only.
 
 By default, the `pg_aios` view can be read only by superusers or roles with privileges of the `pg_read_all_stats` role.
 
+

@@ -73,3 +73,4 @@ export const customSchema = cockroachSchema('custom_schema');
 export const customSequence = customSchema.sequence("name");
 ```
 
+

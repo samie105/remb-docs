@@ -171,3 +171,4 @@ List text search templates (add `+` for more detail).
  pg\_catalog | synonym   | synonym dictionary: replace word by its synonym
  pg\_catalog | thesaurus | thesaurus dictionary: phrase by phrase substitution
 
+

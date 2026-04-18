@@ -61,3 +61,4 @@ If true, operations on a leaf partition are replicated using the identity and sc
 
 Controls how to handle generated column replication when there is no publication column list: `n` = generated columns in the tables associated with the publication should not be replicated, `s` = stored generated columns in the tables associated with the publication should be replicated.
 
+

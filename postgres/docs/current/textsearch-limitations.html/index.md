@@ -34,3 +34,4 @@ For comparison, the PostgreSQL 8.1 documentation contained 10,441 unique words, 
 
 Another example — the PostgreSQL mailing list archives contained 910,989 unique words with 57,491,343 lexemes in 461,020 messages.
 
+

@@ -15,3 +15,4 @@ nav_next: {"path": "trpc/docs/typedoc/next/functions/createTRPCNext/index.md", "
 
 Type Alias: WebSocketLinkOptions\\<TRouter\\> | tRPC
 
+

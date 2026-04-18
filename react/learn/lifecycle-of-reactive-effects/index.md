@@ -359,3 +359,4 @@ In this example, the `ChatRoom` component connects to the chat room when the com
 
 However, there is a problem. Whenever you type into the message box input at the bottom, `ChatRoom` _also_ reconnects to the chat. (You can notice this by clearing the console and typing into the input.) Fix the issue so that this doesn’t happen.
 
+

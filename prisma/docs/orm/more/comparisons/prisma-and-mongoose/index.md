@@ -209,3 +209,4 @@ await User.deleteMany({ id: { $in: [1, 2, 6, 6, 22, 21, 25] } });
 
 [Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/more/comparisons/prisma-and-mongoose.mdx)
 
+

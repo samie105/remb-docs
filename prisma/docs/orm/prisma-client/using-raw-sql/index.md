@@ -73,3 +73,4 @@ Similar to raw queries in relational databases, these methods are not type-safe 
 
 [Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/prisma-client/using-raw-sql/index.mdx)
 
+

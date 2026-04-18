@@ -121,3 +121,4 @@ Standard Sec-Fetch-Site values:
 
 The function handler receives the request's `Sec-Fetch-Site` header value and the request context, enabling dynamic validation based on request properties.
 
+

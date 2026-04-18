@@ -447,3 +447,4 @@ But note that for HMR support, `send` and `connect` methods are required. The `s
 
 Vite exports `createServerHotChannel` from the main entry point to support HMR during Vite SSR.
 
+

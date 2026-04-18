@@ -56,3 +56,4 @@ Creating an index on a large table can take a long time. By default, PostgreSQL 
 
 After an index is created, the system has to keep it synchronized with the table. This adds overhead to data manipulation operations. Indexes can also prevent the creation of [heap-only tuples](https://www.postgresql.org/docs/current/storage-hot.html "66.7. Heap-Only Tuples (HOT)"). Therefore indexes that are seldom or never used in queries should be removed.
 
+

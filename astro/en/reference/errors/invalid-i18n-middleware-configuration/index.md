@@ -25,3 +25,4 @@ An invalid i18n middleware configuration was detected.
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
 
+

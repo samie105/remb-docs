@@ -53,3 +53,4 @@ Custom
 
 For a detailed explanation of how charges are calculated, refer to [Manage Edge Function Invocations usage](/docs/guides/platform/manage-your-usage/edge-function-invocations).
 
+

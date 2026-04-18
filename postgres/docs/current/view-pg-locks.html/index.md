@@ -119,3 +119,4 @@ The `pg_locks` view displays data from both the regular lock manager and the pre
 
 Locking the regular and/or predicate lock manager could have some impact on database performance if this view is very frequently accessed. The locks are held only for the minimum amount of time necessary to obtain data from the lock managers, but this does not completely eliminate the possibility of a performance impact.
 
+

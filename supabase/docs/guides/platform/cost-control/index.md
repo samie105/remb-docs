@@ -78,3 +78,4 @@ You can configure the Spend Cap when creating an organization on the Pro Plan or
 
 You can monitor your usage on the [organization's usage page](/dashboard/org/_/usage). The Upcoming Invoice section of the [organization's billing page](/dashboard/org/_/billing) shows your current spending and provides an estimate of your total costs for the billing cycle based on your usage.
 
+

@@ -19,3 +19,4 @@ The client process can be any program that understands the PostgreSQL protocol d
 
 Once a connection is established, the client process can send a query to the backend process it's connected to. The query is transmitted using plain text, i.e., there is no parsing done in the client. The backend process parses the query, creates an _execution plan_, executes the plan, and returns the retrieved rows to the client by transmitting them over the established connection.
 
+

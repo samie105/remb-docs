@@ -227,3 +227,4 @@ The forms `ADD`, `DROP`, and `SET DATA TYPE` conform with the SQL standard. The 
 
 `ALTER FOREIGN TABLE DROP COLUMN` can be used to drop the only column of a foreign table, leaving a zero-column table. This is an extension of SQL, which disallows zero-column foreign tables.
 
+

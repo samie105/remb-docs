@@ -134,3 +134,4 @@ To rename a table:
 
 ALTER TABLE products RENAME TO items;
 
+

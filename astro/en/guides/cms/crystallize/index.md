@@ -212,3 +212,4 @@ const query = `  query getCataloguePaths{    catalogue(language: "en", path: "/s
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
 
+

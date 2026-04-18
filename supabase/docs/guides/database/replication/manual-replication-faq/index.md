@@ -60,3 +60,4 @@ Some of the more important options to be aware of are:
 
 These settings help ensure your replication slots don't run out of space and that replicas can reconnect without requiring a full re-sync.
 
+

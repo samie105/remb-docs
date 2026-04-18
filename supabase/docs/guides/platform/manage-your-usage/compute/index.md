@@ -358,3 +358,4 @@ No, Compute Credits apply only to Compute and do not cover other line items, inc
 
 1.  Compute resources on the Free Plan are subject to change. [↩](#user-content-fnref-1)
 
+

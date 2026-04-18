@@ -74,3 +74,4 @@ codesign -vvv --verify ./myapp
 
 For more information on macOS codesigning, refer to [Apple’s Code Signing documentation](https://developer.apple.com/documentation/security/code_signing_services). For details about creating single-file executables with Bun, see [Standalone Executables](bun/bun/docs/bundler/executables/index.md). This guide requires Bun v1.2.4 or newer.
 
+

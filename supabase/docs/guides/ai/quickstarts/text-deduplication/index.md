@@ -88,3 +88,4 @@ Alternatively if you would like to quickly deploy using Supabase, check out our 
 
 You can now start building your own applications with Vecs. Check our [examples](/docs/guides/ai#examples) for ideas.
 
+

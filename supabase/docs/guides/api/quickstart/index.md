@@ -89,3 +89,4 @@ We provide a number of [Client Libraries](https://github.com/supabase/supabase#c
 1const { data, error } = await supabase.from('todos').select()
 ```
 
+

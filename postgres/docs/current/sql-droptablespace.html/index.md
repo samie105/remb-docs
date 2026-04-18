@@ -49,3 +49,4 @@ DROP TABLESPACE mystuff;
 
 `DROP TABLESPACE` is a PostgreSQL extension.
 
+

@@ -153,3 +153,4 @@ Note that we are making a network request from our UI code. In production, you s
 
 Run the app on an emulator or a physical device by clicking the `Run app` button in Android Studio.
 
+

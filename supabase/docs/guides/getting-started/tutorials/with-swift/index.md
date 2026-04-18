@@ -157,3 +157,4 @@ You no longer need the `UpdateProfileParams` struct, as you can now reuse the `P
 
 At this stage you have a fully functional application!
 
+

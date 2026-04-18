@@ -98,3 +98,4 @@ Create a file `.github/workflows/update-types.yml` with the following snippet to
 *   [Generating Supabase types with GitHub Actions](https://blog.esteetey.dev/how-to-create-and-test-a-github-action-that-generates-types-from-supabase-database)
 *   [Generating TypeScript Types](/docs/guides/api/rest/generating-types)
 
+

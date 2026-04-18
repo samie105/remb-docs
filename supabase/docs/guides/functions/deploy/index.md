@@ -171,3 +171,4 @@ This example shows a GitHub Actions workflow that deploys all Edge Functions whe
 
 [View source](https://github.com/supabase/supabase/blob/e8df67d5d5291e05ea56596aee0f2b7fa152929b/examples/edge-functions/.github/workflows/deploy.yaml)
 
+

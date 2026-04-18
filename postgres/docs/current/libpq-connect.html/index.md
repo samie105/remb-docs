@@ -447,3 +447,4 @@ Usually the client will obtain appropriate scope settings from the PostgreSQL se
 
 The meaning of an empty scope list is provider-dependent. An OAuth authorization server may choose to issue a token with "default scope", whatever that happens to be, or it may reject the token request entirely.
 
+

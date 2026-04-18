@@ -191,3 +191,4 @@ SvelteKit app
 
 [Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/core-concepts/api-patterns.mdx)
 
+

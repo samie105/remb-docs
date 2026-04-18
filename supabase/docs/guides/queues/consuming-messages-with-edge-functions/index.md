@@ -48,3 +48,4 @@ You might find this kind of setup handy to run with [Supabase Cron](/docs/guides
 
 Similarly, you can invoke the Edge Function on command at any given time with [`supabase.functions.invoke`](/docs/guides/functions/quickstart-dashboard#usage).
 
+

@@ -138,3 +138,4 @@ select * from users where exists (select 1 from posts where posts.user_id = user
 ]
 ```
 
+

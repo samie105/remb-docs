@@ -73,3 +73,4 @@ Which returns the decoded contents and some associated metadata.
 
 *   Official [`pgjwt` documentation](https://github.com/michelp/pgjwt)
 
+

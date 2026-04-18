@@ -62,3 +62,4 @@ Check docs for getting started with `postgres.js` driver and Drizzle [here](driz
 *   update timestamp field (using AWS Data API) ([#1164](https://github.com/drizzle-team/drizzle-orm/issues/1164))
 *   Invalid date from relational queries ([#895](https://github.com/drizzle-team/drizzle-orm/issues/895))
 
+

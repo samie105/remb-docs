@@ -35,3 +35,4 @@ Default data directory location
 
 Specifies whether to use color in diagnostic messages. Possible values are `always`, `auto` and `never`.
 
+

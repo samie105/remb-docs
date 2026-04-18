@@ -53,3 +53,4 @@ Access control is still enforced for other types of operations including uploadi
 
 Public buckets are more performant than private buckets since they are [cached differently](/docs/guides/storage/cdn/fundamentals#public-vs-private-buckets).
 
+

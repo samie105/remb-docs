@@ -252,3 +252,4 @@ Blocking Redis for a long time is discouraged and is considered an unsafe operat
 *   Abort - Stop the function invocation even at the cost of losing the atomicity property.
 *   Kill - Keep the atomicity property and do not stop the function invocation. In this case there is a risk of an external process killing the Redis server, thinking that the shard is not responding.
 
+

@@ -137,3 +137,4 @@ CREATE TEMP TABLE films\_recent ON COMMIT DROP AS
     
 *   The PostgreSQL concept of tablespaces is not part of the standard. Hence, the clause `TABLESPACE` is an extension.
 
+

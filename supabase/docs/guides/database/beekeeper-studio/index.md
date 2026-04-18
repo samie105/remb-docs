@@ -60,3 +60,4 @@ Test your connection and then connect
 
 ![SSL](/docs/img/guides/database/connecting-to-postgres/beekeeper-studio/connect.png)
 
+

@@ -27,3 +27,4 @@ tip
 
 For local development or serverful infrastructure, the simplest Adapter to use is the [Standalone Adapter](trpc/docs/server/adapters/standalone/index.md), which can be used to run a standard Node.js HTTP Server. We recommend this when you need to get started quickly and have no existing HTTP Server to integrate with. Swapping out later is trivial if your needs change.
 
+

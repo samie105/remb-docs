@@ -63,3 +63,4 @@ If a query that is expected to do so does not produce a parallel plan, you can t
 
 When executing a parallel plan, you can use `EXPLAIN (ANALYZE, VERBOSE)` to display per-worker statistics for each plan node. This may be useful in determining whether the work is being evenly distributed between all plan nodes and more generally in understanding the performance characteristics of the plan.
 
+

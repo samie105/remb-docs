@@ -45,3 +45,4 @@ Query performance can be affected by many things. Some of these can be controlle
 
  14.1. Using `EXPLAIN`
 
+

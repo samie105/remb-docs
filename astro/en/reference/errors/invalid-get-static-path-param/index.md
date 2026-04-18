@@ -34,3 +34,4 @@ The `params` property in `getStaticPaths`’s return value (an array of objects)
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
 
+

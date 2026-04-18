@@ -208,3 +208,4 @@ const findUserByEmail = async (email: string) => {
 select * from "users" where lower(email) = 'john@email.com';
 ```
 
+

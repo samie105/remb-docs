@@ -220,3 +220,4 @@ const values = Bun.JSONL.parse(input);
 *   **BOM handling**: UTF-8 BOM (`0xEF 0xBB 0xBF`) at the start of a `Uint8Array` is automatically skipped.
 *   **Pre-built object shape**: The result object from `parseChunk` uses a cached structure for fast property access.
 
+

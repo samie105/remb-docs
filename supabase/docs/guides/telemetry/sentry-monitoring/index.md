@@ -67,3 +67,4 @@ See this example for a setup with Next.js to cover browser, server, and edge env
 
 Afterwards, build your application (`npm run build`) and start it locally (`npm run start`). You will now see the transactions being logged in the terminal when making supabase-js requests.
 
+

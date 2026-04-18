@@ -30,3 +30,4 @@ We recommend [updating Astro](/en/upgrade-astro/#upgrade-to-the-latest-version) 
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
 
+

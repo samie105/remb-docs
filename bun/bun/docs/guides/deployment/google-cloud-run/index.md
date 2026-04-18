@@ -87,3 +87,4 @@ Visit your live application
 
 🎉 Your Bun application is now live!Visit the Service URL (`https://my-bun-app-....us-west1.run.app`) to confirm everything works as expected.
 
+

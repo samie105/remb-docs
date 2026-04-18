@@ -120,3 +120,4 @@ Be careful when disabling JWT verification, as it allows anyone to call your fun
 
 Deploy the function when you’re ready
 
+

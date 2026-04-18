@@ -103,3 +103,4 @@ A reference to `stdout` which can be used to write directly to `stdout`. It impl
 *   [write](./././~/Deno.stdout#method_write_0)
 *   [writeSync](./././~/Deno.stdout#method_writesync_0)
 
+

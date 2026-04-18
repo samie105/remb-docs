@@ -74,3 +74,4 @@ This returns the most similar 3 records and their distance to the query vector.
 *   [Amazon Titan](https://aws.amazon.com/bedrock/titan)
 *   [Semantic Image Search with Amazon Titan](/docs/guides/ai/examples/semantic-image-search-amazon-titan)
 
+

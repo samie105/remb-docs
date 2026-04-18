@@ -91,3 +91,4 @@ Prefix a `caption-side` utility with a breakpoint variant like `md:` to only app
 
 Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).
 
+

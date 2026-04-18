@@ -208,3 +208,4 @@ If users see "rate limit exceeded" errors, check `SMS_MAX_FREQUENCY` (minimum in
 *   [Multi-Factor Authentication (TOTP)](/docs/guides/auth/auth-mfa/totp)
 *   [Auth server on GitHub](https://github.com/supabase/auth) (check README and `example.env`)
 
+

@@ -79,3 +79,4 @@ This works well for small apps with only a couple of routes:
 
 [View source](https://github.com/supabase/supabase/blob/e8df67d5d5291e05ea56596aee0f2b7fa152929b/examples/edge-functions/supabase/functions/restful-tasks/index.ts)
 
+

@@ -15,3 +15,4 @@ nav_next: {"path": "trpc/docs/typedoc/client/index/type-aliases/TRPCWebSocketCli
 
 Type Alias: TRPCLink()\\<TInferrable\\> | tRPC
 
+

@@ -136,3 +136,4 @@ A serious limitation of the inheritance feature is that indexes (including uniqu
 
 Some functionality not implemented for inheritance hierarchies is implemented for declarative partitioning. Considerable care is needed in deciding whether partitioning with legacy inheritance is useful for your application.
 
+

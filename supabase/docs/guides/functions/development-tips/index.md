@@ -91,3 +91,4 @@ For data-intensive operations we recommend using [Database Functions](/docs/guid
 
 For use-cases which require low-latency we recommend [Edge Functions](/docs/guides/functions), which are globally-distributed and can be written in TypeScript.
 
+

@@ -15,3 +15,4 @@ nav_next: {"path": "trpc/docs/typedoc/client/links/loggerLink/interfaces/LoggerL
 
 Function: loggerLink() | tRPC
 
+

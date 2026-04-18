@@ -159,3 +159,4 @@ To allow queries issued through SPI to reference transition tables, see [SPI\_re
 
 A trigger function must return either a `HeapTuple` pointer or a `NULL` pointer (_not_ an SQL null value, that is, do not set _`isNull`_ true). Be careful to return either `tg_trigtuple` or `tg_newtuple`, as appropriate, if you don't want to modify the row being operated on.
 
+

@@ -236,3 +236,4 @@ Be aware that calling functions directly in RLS policies can impact database per
 
 To clear old entries in the `private.rate_limits` table, set up a [pg\_cron](/docs/guides/database/extensions/pg_cron) job to clean them up.
 
+

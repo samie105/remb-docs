@@ -40,3 +40,4 @@ Some of the environment variables that are accepted by the Python interpreter ca
 
 (It appears to be a Python implementation detail beyond the control of PL/Python that some of the environment variables listed on the `python` man page are only effective in a command-line interpreter and not an embedded Python interpreter.)
 
+

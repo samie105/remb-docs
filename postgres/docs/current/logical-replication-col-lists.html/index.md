@@ -108,3 +108,4 @@ Only data from the column list of publication `p1` is replicated.
   3 | b-3 | a-3 | d-3
 (3 rows)
 
+

@@ -45,3 +45,4 @@ Type
 
 `ProtectedIntersection`<`CreateTRPCNextBase`<`TRouter`, `TSSRContext`\>, `DecorateRouterRecord`<`TRouter`\[`"_def"`\]\[`"_config"`\]\[`"$types"`\], `TRouter`\[`"_def"`\]\[`"record"`\]>>
 
+

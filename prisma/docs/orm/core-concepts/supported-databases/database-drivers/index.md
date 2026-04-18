@@ -190,3 +190,4 @@ export default defineNuxtConfig({
 
 You can also use driver adapters together with TypedSQL to connect through JavaScript database drivers. TypedSQL works with all supported driver adapters except `@prisma/adapter-better-sqlite3`. For SQLite support, use [`@prisma/adapter-libsql`](https://www.npmjs.com/package/@prisma/adapter-libsql) instead.
 
+

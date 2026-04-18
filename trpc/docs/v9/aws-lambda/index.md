@@ -126,3 +126,4 @@ To infer what version you might have, supply the context as following:
 
 [Read more here about payload format version](https://docs.aws.amazon.com/apigateway/latest/developerguide/http-api-develop-integrations-lambda.html)
 
+

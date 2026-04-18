@@ -291,3 +291,4 @@ For the default setting of `jsxImportSource: react`, you would use:
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
 
+

@@ -126,3 +126,4 @@ Finally, from the menu bar, select "Terminal > New Terminal" to open a new termi
 
 At this point, you are all setup with a custom VSCode instance that can be used to work on Fastify contributions. As you edit and save JavaScript files, the editor will autocorrect any style issues.
 
+

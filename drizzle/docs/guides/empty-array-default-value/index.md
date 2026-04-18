@@ -117,3 +117,4 @@ The `mode` option defines how values are handled in the application. With `json`
 
 You can specify `.$type<..>()` for json object inference, it will not check runtime values. It provides compile time protection for default values, insert and select schemas.
 
+

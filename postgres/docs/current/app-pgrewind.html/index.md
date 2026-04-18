@@ -141,3 +141,4 @@ The basic idea is to copy all file system-level changes from the source cluster 
     
 5.  When starting the target, PostgreSQL replays all the required WAL, resulting in a data directory in a consistent state.
 
+

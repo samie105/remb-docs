@@ -68,3 +68,4 @@ You can find further details about aggregation queries with [FT.AGGREGATE](/docs
 
 *   [Aggregation queries](/docs/latest/develop/ai/search-and-query/query/aggregation/)
 
+

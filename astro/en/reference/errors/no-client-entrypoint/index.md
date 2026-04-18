@@ -30,3 +30,4 @@ Astro tried to hydrate a component on the client, but the renderer used does not
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
 
+

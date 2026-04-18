@@ -42,3 +42,4 @@ The new owner of the language
 
 There is no `ALTER LANGUAGE` statement in the SQL standard.
 
+

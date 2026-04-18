@@ -29,3 +29,4 @@ Create and manage your Supabase projects directly through Vercel. [Get started w
 
 Browse tools for extending your Supabase project. [Browse the Supabase Marketplace](/partners/integrations).
 
+

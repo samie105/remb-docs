@@ -74,3 +74,4 @@ While using `sslmode=no-verify` can be a quick fix, it bypasses SSL verification
 
 [Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/prisma-client/deployment/caveats-when-deploying-to-aws-platforms.mdx)
 
+

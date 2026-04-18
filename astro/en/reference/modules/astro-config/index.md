@@ -257,3 +257,4 @@ See [`validateConfig()` in the Programmatic API reference](/en/reference/program
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
 
+

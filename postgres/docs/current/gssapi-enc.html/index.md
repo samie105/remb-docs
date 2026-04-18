@@ -23,3 +23,4 @@ When using GSSAPI for encryption, it is common to use GSSAPI for authentication 
 
 Other than configuration of the negotiation behavior, GSSAPI encryption requires no setup beyond that which is necessary for GSSAPI authentication. (For more information on configuring that, see [Section 20.6](https://www.postgresql.org/docs/current/gssapi-auth.html "20.6. GSSAPI Authentication").)
 
+

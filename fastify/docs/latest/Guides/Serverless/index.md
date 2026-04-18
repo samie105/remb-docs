@@ -85,3 +85,4 @@ Get started with the [Fastify template on Vercel](https://vercel.com/templates/b
 
 [Fluid compute](https://vercel.com/docs/functions/fluid-compute) currently requires an explicit opt-in. Learn more about enabling Fluid compute [here](https://vercel.com/docs/fluid-compute#enabling-fluid-compute).
 
+

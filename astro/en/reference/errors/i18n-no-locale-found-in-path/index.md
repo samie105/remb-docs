@@ -25,3 +25,4 @@ An i18n utility tried to use the locale from a URL path that does not contain on
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
 
+

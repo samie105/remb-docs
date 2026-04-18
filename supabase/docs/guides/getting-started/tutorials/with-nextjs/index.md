@@ -310,3 +310,4 @@ At this stage you have a fully functional application!
 *   Explore the [Supabase Cache Helpers](https://github.com/psteinroe/supabase-cache-helpers)
 *   See the [Next.js Subscription Payments Starter](https://github.com/vercel/nextjs-subscription-payments) template on GitHub
 
+

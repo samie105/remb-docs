@@ -30,3 +30,4 @@ You might wonder why bother providing all four options, when two options togethe
 
 Obviously, indexes with non-default sort orderings are a fairly specialized feature, but sometimes they can produce tremendous speedups for certain queries. Whether it's worth maintaining such an index depends on how often you use queries that require a special sort ordering.
 
+

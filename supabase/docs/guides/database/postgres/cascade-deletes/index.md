@@ -159,3 +159,4 @@ Then let's run a delete on the `grandparent` table:
 
 The `mother` deletion took precedence over the `father`, and so William was deleted. After William was deleted, there was no reference to “Charles” and so he was free to be deleted, even though previously he wasn't (without `INITIALLY DEFERRED`).
 
+

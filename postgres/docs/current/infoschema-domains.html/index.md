@@ -125,3 +125,4 @@ Always null, because arrays always have unlimited maximum cardinality in Postgre
 
 An identifier of the data type descriptor of the domain, unique among the data type descriptors pertaining to the domain (which is trivial, because a domain only contains one data type descriptor). This is mainly useful for joining with other instances of such identifiers. (The specific format of the identifier is not defined and not guaranteed to remain the same in future versions.)
 
+

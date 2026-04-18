@@ -87,3 +87,4 @@ This mechanism is client-initiated, like SCRAM. The client initial response cons
     
 8.  The server validates the token according to the instructions of the token provider. If the client is authorized to connect, it sends an AuthenticationOk message to end the SASL exchange.
 
+

@@ -27,3 +27,4 @@ Astro encountered an error while parsing your CSS, due to a syntax error. This i
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
 
+

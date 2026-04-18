@@ -29,3 +29,4 @@ Some internationalization functions are only available when Astro’s own i18n r
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
 
+

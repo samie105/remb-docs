@@ -79,3 +79,4 @@ Once you have enabled the extension, you can add a "check constraint" to your ta
 *   [Postgres: JSON Functions and Operators](https://www.postgresql.org/docs/current/functions-json.html)
 *   [Postgres JSON types](https://www.postgresql.org/docs/current/datatype-json.html)
 
+

@@ -40,3 +40,4 @@ Along the way, you’ll use CSS and JavaScript to build a responsive design that
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
 
+

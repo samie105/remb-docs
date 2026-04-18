@@ -49,3 +49,4 @@ For each audit log, you can see additional details by clicking on the log entry:
 *   There is currently no way to set up a log drain of platform audit logs
 *   Retention periods depend on your plan
 
+

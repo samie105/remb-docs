@@ -26,3 +26,4 @@ When an operator or function of the underlying type is applied to a domain value
 
 For additional information see [CREATE DOMAIN](https://www.postgresql.org/docs/current/sql-createdomain.html "CREATE DOMAIN").
 
+

@@ -95,3 +95,4 @@ tsconfig.json
 
 Yes. TypeScript 7 carries forward the same default. If you’re upgrading directly from TypeScript 5 to 7, the same fix applies — add `"types": ["bun"]` to your `compilerOptions`.
 
+

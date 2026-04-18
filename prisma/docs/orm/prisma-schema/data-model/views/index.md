@@ -199,3 +199,4 @@ The purpose of the `@unique` attribute in this case is only to enable relationsh
 
 All write operations (`create`, `update`, `delete`, `upsert`) are disabled and not generated in the Prisma Client.
 
+

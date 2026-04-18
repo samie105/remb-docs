@@ -73,3 +73,4 @@ Using the SDK:
 
 When creating RLS policies against the storage tables you can add indexes to the interested columns to speed up the lookup
 
+

@@ -306,3 +306,4 @@ If you keep the same database, you can then continue to work as normal. If you s
 
 To switch from the `prisma` relation mode to the `foreignKeys` relation mode, update the `relationMode` field value from `prisma` to `foreignKeys`. To do this, the database must support foreign keys. When you apply changes to your schema with Prisma Migrate or `db push` for the first time after you switch relation modes, Prisma ORM will create foreign keys for all relations in the next migration.
 
+

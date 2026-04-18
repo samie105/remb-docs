@@ -190,3 +190,4 @@ Learn more about [client-side `<script>` tags in Astro components](/en/guides/cl
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
 
+

@@ -243,3 +243,4 @@ const locationsWithinOrNull = await prisma.location.findMany({
 *   [PostGIS documentation](https://postgis.net/documentation/) for advanced spatial operations
 *   [GeoJSON specification](https://geojson.org/) for geometry format details
 
+

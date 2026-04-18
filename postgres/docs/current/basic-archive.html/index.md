@@ -34,3 +34,4 @@ basic\_archive.archive\_directory = '/path/to/archive/directory'
 
 Server crashes may leave temporary files with the prefix `archtemp` in the archive directory. It is recommended to delete such files before restarting the server after a crash. It is safe to remove such files while the server is running as long as they are unrelated to any archiving still in progress, but users should use extra caution when doing so.
 
+

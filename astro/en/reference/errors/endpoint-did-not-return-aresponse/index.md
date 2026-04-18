@@ -32,3 +32,4 @@ export async function GET({ request, url, cookies }: APIContext): Promise<Respon
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
 
+

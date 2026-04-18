@@ -117,3 +117,4 @@ Make sure you take a backup of the function before removing it in case you're pl
 *   Official Postgres Docs: [Overview of Trigger Behavior](https://www.postgresql.org/docs/current/trigger-definition.html)
 *   Official Postgres Docs: [CREATE TRIGGER](https://www.postgresql.org/docs/current/sql-createtrigger.html)
 
+

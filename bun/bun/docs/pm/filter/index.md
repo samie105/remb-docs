@@ -116,3 +116,4 @@ Each line of output is prefixed with the package and script name (e.g. `pkg-a:bu
 
 Bun will respect package dependency order when running scripts. Say you have a package `foo` that depends on another package `bar` in your workspace, and both packages have a `build` script. When you run `bun --filter '*' build`, you will notice that `foo` will only start running once `bar` is done.
 
+

@@ -143,3 +143,4 @@ When your user signs out, call [signOut()](/docs/reference/javascript/auth-signo
 *   [Supabase JS Client](https://github.com/supabase/supabase-js)
 *   [Slack Developer Dashboard](https://api.slack.com/apps)
 
+

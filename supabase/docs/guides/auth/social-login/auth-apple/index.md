@@ -172,3 +172,4 @@ To use Sign in with Apple JS you need to configure these options:
 
 If you're using Sign in with Apple JS you do not need to configure the OAuth settings.
 
+

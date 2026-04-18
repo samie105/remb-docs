@@ -33,3 +33,4 @@ If the image is merely decorative (i.e. doesn’t contribute to the understandin
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
 
+

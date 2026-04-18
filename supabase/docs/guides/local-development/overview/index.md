@@ -266,3 +266,4 @@ The local development environment is not as feature-complete as the Supabase Pla
 *   You cannot update your project settings in the Dashboard. This must be done using the local config file.
 *   The CLI version determines the local version of Studio used, so make sure you keep your local [Supabase CLI up to date](https://github.com/supabase/cli#getting-started). We're constantly adding new features and bug fixes.
 
+

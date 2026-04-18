@@ -23,3 +23,4 @@ Taking Screenshots with Puppeteer
 
 Find the code on [GitHub](https://github.com/supabase/supabase/tree/master/examples/edge-functions/supabase/functions/puppeteer).
 
+

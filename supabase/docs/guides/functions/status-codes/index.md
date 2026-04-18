@@ -128,3 +128,4 @@ You can see the output in the [Edge Function Logs](/docs/guides/functions/loggin
 
 **Solution:** Check your Edge Function logs to see which resource limit was exceeded, then optimize your function accordingly.
 
+

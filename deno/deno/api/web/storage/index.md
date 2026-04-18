@@ -45,3 +45,4 @@ v
 
 Deno's `sessionStorage` API operates similarly to the [`localStorage`](./././~/localStorage) API, but it is intended for storing data temporarily for the duration of a session. Data stored in sessionStorage is cleared when the application session or process ends. This makes it suitable for temporary data that you do not need to persist across user sessions.
 
+

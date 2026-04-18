@@ -103,3 +103,4 @@ The following syntax was used before PostgreSQL 8.3 and is still supported:
 
 CLUSTER _`index_name`_ ON _`table_name`_
 
+

@@ -71,3 +71,4 @@ It is possible to [GRANT](https://www.postgresql.org/docs/current/sql-grant.html
 
 The functionality of `lo_read` and `lo_write` is also available via server-side calls, but the names of the server-side functions differ from the client side interfaces in that they do not contain underscores. You must call these functions as `loread` and `lowrite`.
 
+

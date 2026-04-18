@@ -440,3 +440,4 @@ COPY \[ BINARY \] _`table_name`_
     \[ \[USING\] DELIMITERS '_`delimiter_character`_' \]
     \[ WITH NULL AS '_`null_string`_' \]
 
+

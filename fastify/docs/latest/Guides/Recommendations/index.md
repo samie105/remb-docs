@@ -65,3 +65,4 @@ There are several use-cases where running multiple Fastify apps on the same serv
 
 It is perfectly fine to spin up several Fastify instances within the same Node.js process and run them concurrently, even in high load systems. Each Fastify instance only generates as much load as the traffic it receives, plus the memory used for that Fastify instance.
 
+

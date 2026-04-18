@@ -426,3 +426,4 @@ Common Scenarios & Examples
 
 Polymorphic relationships are more complex and are often handled at the application level or using more advanced database features (depending on the specific database system). Standard SQL doesn’t have direct, built-in support for enforcing polymorphic foreign key constraints in the same way as regular foreign keys.
 
+

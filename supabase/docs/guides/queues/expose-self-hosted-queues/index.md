@@ -66,3 +66,4 @@ If you no longer want to expose the `pgmq_public` schema, you can remove it from
 
 After updating your configuration, restart your containers for the changes to take effect.
 
+

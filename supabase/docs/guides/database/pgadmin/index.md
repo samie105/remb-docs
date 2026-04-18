@@ -67,3 +67,4 @@ It acts as a single control panel where you can manage multiple servers, inspect
 
 For scripted migrations or ultra-light remote work you’ll still lean on plain SQL or CLI tools, but most teams find `pgAdmin` invaluable for exploration and routine administration.
 
+

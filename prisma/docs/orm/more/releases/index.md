@@ -90,3 +90,4 @@ Given a version number `MAJOR.MINOR.PATCH`, Prisma ORM's version number is incre
 
 [Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/more/releases.mdx)
 
+

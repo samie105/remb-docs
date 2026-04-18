@@ -136,3 +136,4 @@ To execute the content type parser on all content types, call `removeAllContentT
 // Without this call, the request body with the content type application/json would be processed by the built-in JSON parserfastify.removeAllContentTypeParsers()fastify.addContentTypeParser('*', function (request, payload, done) {  const data = ''  payload.on('data', chunk => { data += chunk })  payload.on('end', () => {    done(null, data)  })})
 ```
 
+

@@ -111,3 +111,4 @@ ECPGdo(\_\_LINE\_\_, NULL, "SELECT res FROM mytable WHERE index = ?     ",
 
 (The indentation here is added for readability and not something the preprocessor does.)
 
+

@@ -78,3 +78,4 @@ More about `createdb` and `dropdb` can be found in [createdb](https://www.postgr
 
 [\[1\]](#id-1.4.3.4.10.4) As an explanation for why this works: PostgreSQL user names are separate from operating system user accounts. When you connect to a database, you can choose what PostgreSQL user name to connect as; if you don't, it will default to the same name as your current operating system account. As it happens, there will always be a PostgreSQL user account that has the same name as the operating system user that started the server, and it also happens that that user always has permission to create databases. Instead of logging in as that user you can also specify the `-U` option everywhere to select a PostgreSQL user name to connect as.
 
+

@@ -21,3 +21,4 @@ The Institute of Automatic Control at the University of Mining and Technology, i
 
 In the following we describe the implementation of a _genetic algorithm_ to solve the join ordering problem in a manner that is efficient for queries involving large numbers of joins.
 
+

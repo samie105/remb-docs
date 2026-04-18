@@ -26,3 +26,4 @@ Tables are the central objects in a relational database structure, because they 
 
 Detailed information on these topics appears in [Part V](https://www.postgresql.org/docs/current/server-programming.html "Part V. Server Programming").
 
+

@@ -37,3 +37,4 @@ True if this is a daylight-savings abbreviation
 
 While most timezone abbreviations represent fixed offsets from UTC, there are some that have historically varied in value (see [Section B.4](https://www.postgresql.org/docs/current/datetime-config-files.html "B.4. Date/Time Configuration Files") for more information). In such cases this view presents their current meaning.
 
+

@@ -52,3 +52,4 @@ Various products at Supabase have their own hardening and configuration guides, 
 
 *   [Authorization](docs/guides/realtime/authorization)
 
+

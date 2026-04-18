@@ -15,3 +15,4 @@ nav_next: {"path": "vite/guide/badges/index.md", "title": "Compatibility Badges 
 
 [Skip to content](#VPContent)
 
+

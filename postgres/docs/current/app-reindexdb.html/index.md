@@ -167,3 +167,4 @@ To reindex the table `foo` and the index `bar` in a database named `abcd`:
 $ 
 ```
 
+

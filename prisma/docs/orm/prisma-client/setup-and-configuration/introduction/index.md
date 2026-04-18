@@ -60,3 +60,4 @@ Whenever you make changes to your database that are reflected in the Prisma sche
 
 [Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/prisma-client/setup-and-configuration/introduction.mdx)
 
+

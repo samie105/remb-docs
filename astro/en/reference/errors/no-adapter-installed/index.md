@@ -29,3 +29,4 @@ To use server-side rendering, an adapter needs to be installed so Astro knows ho
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
 
+

@@ -30,3 +30,4 @@ Two prerendered routes generate the same path, resulting in a collision. A stati
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
 
+

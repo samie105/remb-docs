@@ -33,3 +33,4 @@ We've found that a few patterns work well with this feature and will help you ge
 
 [Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/prisma-schema/overview/location.mdx)
 
+

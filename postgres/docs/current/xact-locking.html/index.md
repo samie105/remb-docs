@@ -17,3 +17,4 @@ The transaction IDs of currently executing transactions are shown in [`pg_locks`
 
 Some lock types wait on `virtualxid`, while other types wait on `transactionid`. Row-level read and write locks are recorded directly in the locked rows and can be inspected using the [pgrowlocks](https://www.postgresql.org/docs/current/pgrowlocks.html "F.31. pgrowlocks — show a table's row locking information") extension. Row-level read locks might also require the assignment of multixact IDs (`mxid`; see [Section 24.1.5.1](https://www.postgresql.org/docs/current/routine-vacuuming.html#VACUUM-FOR-MULTIXACT-WRAPAROUND "24.1.5.1. Multixacts and Wraparound")).
 
+

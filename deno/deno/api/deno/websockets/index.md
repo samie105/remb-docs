@@ -41,3 +41,4 @@ The object that is returned from a [`Deno.upgradeWebSocket`](./././~/Deno.upgrad
 *   [response](./././~/Deno.WebSocketUpgrade#property_response)
 *   [socket](./././~/Deno.WebSocketUpgrade#property_socket)
 
+

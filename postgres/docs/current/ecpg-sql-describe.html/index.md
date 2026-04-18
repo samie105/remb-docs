@@ -51,3 +51,4 @@ EXEC SQL DEALLOCATE DESCRIPTOR mydesc;
 
 `DESCRIBE` is specified in the SQL standard.
 
+

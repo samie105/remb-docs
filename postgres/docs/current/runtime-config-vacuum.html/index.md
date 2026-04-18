@@ -173,3 +173,4 @@ Note that when eager scanning is enabled, only freeze failures count against the
 
 This parameter can only be set in the `postgresql.conf` file or on the server command line; but the setting can be overridden for individual tables by changing the [corresponding table storage parameter](https://www.postgresql.org/docs/current/sql-createtable.html#RELOPTION-VACUUM-MAX-EAGER-FREEZE-FAILURE-RATE). For more information on tuning vacuum's freezing behavior, see [Section 24.1.5](https://www.postgresql.org/docs/current/routine-vacuuming.html#VACUUM-FOR-WRAPAROUND "24.1.5. Preventing Transaction ID Wraparound Failures").
 
+

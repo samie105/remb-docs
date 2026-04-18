@@ -107,3 +107,4 @@ For more server options, check the extension's [official documentation](https://
 
 *   Official [`postgres_fdw` documentation](https://www.postgresql.org/docs/current/postgres-fdw.html#POSTGRES-FDW)
 
+

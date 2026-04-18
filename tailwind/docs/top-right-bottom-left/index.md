@@ -145,3 +145,4 @@ The `inset-<number>`,`inset-x-<number>`,`inset-y-<number>`,`inset-s-<number>`,`i
 
 Learn more about customizing the spacing scale in the [theme variable documentation](tailwind/docs/theme/index.md).
 
+

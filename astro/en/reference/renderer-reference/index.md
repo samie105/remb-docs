@@ -270,3 +270,4 @@ Returns an HTML string to inject once per page before the first hydrated compone
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
 
+

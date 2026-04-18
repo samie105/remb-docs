@@ -1259,3 +1259,4 @@ A configuration object passed to the image service. The shape depends on the spe
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
 
+

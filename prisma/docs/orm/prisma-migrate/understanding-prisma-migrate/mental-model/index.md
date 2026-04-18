@@ -143,3 +143,4 @@ The command should be run in an automated CI/ CD environment, for example GitHub
 
 If you don't have a migration history (`/migrations`), i.e using `prisma db push`, you will have to continue using `prisma db push` in your staging and production environments. Beware of the changes being applied to the database schema as some of them might be destructive. For example, `prisma db push` can't tell when you're performing a column rename. It will prompt a database reset (drop and re-creation).
 
+

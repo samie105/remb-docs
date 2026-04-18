@@ -27,3 +27,4 @@ PostgreSQL automatically creates a unique index when a unique constraint or prim
 
 There's no need to manually create indexes on unique columns; doing so would just duplicate the automatically-created index.
 
+

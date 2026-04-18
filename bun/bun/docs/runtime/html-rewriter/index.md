@@ -339,3 +339,4 @@ try {
 
 You can also read the [Cloudflare documentation](https://developers.cloudflare.com/workers/runtime-apis/html-rewriter/), which this API is intended to be compatible with.
 
+

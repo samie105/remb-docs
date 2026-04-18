@@ -219,3 +219,4 @@ You can also use Deno Jupyter kernel in the `jupyter console` REPL. To do that, 
 
 ![Using the Deno kernel in a CLI](/runtime/reference/images/jupyter-cli.gif)
 
+

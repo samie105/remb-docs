@@ -73,3 +73,4 @@ Numerical statistics of the appropriate kind for the _`N`_th “slot”, or null
 
 Column data values of the appropriate kind for the _`N`_th “slot”, or null if the slot kind does not store any data values. Each array's element values are actually of the specific column's data type, or a related type such as an array's element type, so there is no way to define these columns' type more specifically than `anyarray`.
 
+

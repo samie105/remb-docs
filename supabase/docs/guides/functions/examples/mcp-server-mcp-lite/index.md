@@ -223,3 +223,4 @@ With your MCP server running on Supabase Edge Functions, you can:
 *   [Deno Runtime Documentation](https://deno.land/)
 *   [Fiberplane tutorial](https://blog.fiberplane.com/blog/mcp-lite-supabase-edge-functions/)
 
+

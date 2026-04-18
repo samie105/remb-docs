@@ -616,3 +616,4 @@ Enable future breaking changes to prepare for a smooth migration to the next maj
 
 See the [Breaking Changes](https://vite.dev/changes/) page for details of the possible options.
 
+

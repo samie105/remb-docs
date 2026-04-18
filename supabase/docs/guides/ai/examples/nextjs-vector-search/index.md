@@ -135,3 +135,4 @@ Want to learn more about the awesome tech that is powering this?
 *   Read the pgvector Docs for [Embeddings and vector similarity](/docs/guides/database/extensions/pgvector)
 *   Watch Greg's video for a full breakdown:
 
+

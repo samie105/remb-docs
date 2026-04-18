@@ -163,3 +163,4 @@ Customizes the error response when the token is invalid.
 *   `wwwAuthenticateHeader`: `string | object | MessageFunction` - Customizes the WWW-Authenticate header value.
 *   `message`: `string | object | MessageFunction` - The custom message for the response body.
 
+

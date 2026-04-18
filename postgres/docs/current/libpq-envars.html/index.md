@@ -107,3 +107,4 @@ The following environment variables determine internal behavior of libpq; they o
     
 *   `PGLOCALEDIR` sets the directory containing the `locale` files for message localization.
 
+

@@ -129,3 +129,4 @@ You can setup a custom GitHub Action to monitor the status of any Supabase Branc
 1name: Branch Status23on:4  pull_request:5    types:6      - opened7      - reopened8      - synchronize9    branches:10      - main11      - develop12    paths:13      - 'supabase/**'1415jobs:16  failed:17    runs-on: ubuntu-latest18    steps:19      - uses: fountainhead/action-wait-for-check@v1.2.020        id: check21        with:22          checkName: Supabase Preview23          ref: ${{ github.event.pull_request.head.sha || github.sha }}24          token: ${{ secrets.GITHUB_TOKEN }}2526      - if: ${{ steps.check.outputs.conclusion == 'failure' }}27        run: exit 1
 ```
 
+

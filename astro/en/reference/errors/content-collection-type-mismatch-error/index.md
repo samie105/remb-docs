@@ -29,3 +29,4 @@ Legacy content collections must contain entries of the type configured. Collecti
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
 
+

@@ -21,3 +21,4 @@ Maybe we can live without libraries, people like you and me. Maybe. Sure, we're 
 
 Look. If you think this is about overdue fines and missing books, you'd better think again. This is about that kid's right to read a book without getting his mind warped! Or: maybe that turns you on, Seinfeld; maybe that's how y'get your kicks. You and your good-time buddies.
 
+

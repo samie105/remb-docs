@@ -62,3 +62,4 @@ The time at which the cursor was declared
 
 The `pg_cursors` view is read-only.
 
+

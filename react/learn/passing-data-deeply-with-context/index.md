@@ -239,3 +239,4 @@ Currently, `App` passes `imageSize` to `List`, which passes it to each `Place`, 
 
 You can declare context in `Context.js`.
 
+

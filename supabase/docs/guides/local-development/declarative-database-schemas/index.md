@@ -216,3 +216,4 @@ If you need to use any of the entities below, remember to add them through [vers
 *   [create domain statements are ignored](https://github.com/supabase/cli/issues/2137)
 *   [grant statements are duplicated from default privileges](https://github.com/supabase/cli/issues/1864)
 
+

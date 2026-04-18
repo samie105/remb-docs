@@ -205,3 +205,4 @@ There are 3 users in the database.
 
 That’s it! Now that you’ve set up Prisma using Bun, we recommend referring to the [official Prisma docs](https://www.prisma.io/docs/orm/prisma-client) as you continue to develop your application.
 
+

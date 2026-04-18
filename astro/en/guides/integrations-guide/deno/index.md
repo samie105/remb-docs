@@ -23,3 +23,4 @@ If you are currently using this Astro adapter, you will need to migrate to the n
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
 
+

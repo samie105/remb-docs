@@ -99,3 +99,4 @@ The production database still contains the history of applied migrations in the 
 
 [Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/prisma-migrate/workflows/squashing-migrations.mdx)
 
+

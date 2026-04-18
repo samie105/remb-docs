@@ -15,3 +15,4 @@ nav_next: {"path": "trpc/docs/typedoc/client/index/functions/isTRPCClientError/i
 
 Function: retryLink() | tRPC
 
+

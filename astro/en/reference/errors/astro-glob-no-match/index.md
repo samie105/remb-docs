@@ -25,3 +25,4 @@ nav_next: {"path": "astro/en/reference/errors/astro-glob-used-outside/index.md",
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
 
+

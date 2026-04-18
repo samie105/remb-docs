@@ -29,3 +29,4 @@ Short-term share/exclusive page-level locks are used for read/write access. Lock
 
 Currently, B-tree indexes offer the best performance for concurrent applications; since they also have more features than hash indexes, they are the recommended index type for concurrent applications that need to index scalar data. When dealing with non-scalar data, B-trees are not useful, and GiST, SP-GiST or GIN indexes should be used instead.
 
+

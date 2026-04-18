@@ -107,3 +107,4 @@ For instance, scheduling a command to terminate idle connections with `pg_termin
 
 Reach out to [Supabase Support](/support) if you're unsure if that applies to your use case.
 
+

@@ -197,3 +197,4 @@ CREATE SUBSCRIPTION mysub
 
 `CREATE SUBSCRIPTION` is a PostgreSQL extension.
 
+

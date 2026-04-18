@@ -393,3 +393,4 @@ fastify.addSchema({  $id: 'http://foo/shared.json',  type: 'object',  definition
 *   [Ajv custom errors](https://github.com/ajv-validator/ajv-errors)
 *   Custom error handling with core methods with error file dumping [example](https://github.com/fastify/example/tree/main/validation-messages)
 
+

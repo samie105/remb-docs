@@ -140,3 +140,4 @@ SELECT \* FROM dblink('myconn', 'select proname, prosrc from pg\_proc')
  byteaout   | byteaout
 (14 rows)
 
+

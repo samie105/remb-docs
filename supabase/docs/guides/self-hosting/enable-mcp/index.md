@@ -106,3 +106,4 @@ If you are unable to connect to the MCP server:
 3.  Check Kong's logs for errors: `docker compose logs kong`
 4.  Make sure your SSH tunnel is active
 
+

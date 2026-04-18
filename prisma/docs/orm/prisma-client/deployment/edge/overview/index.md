@@ -106,3 +106,4 @@ If you want to deploy an app using Turso, you can follow the instructions [here]
 
 [Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/prisma-client/deployment/edge/overview.mdx)
 
+

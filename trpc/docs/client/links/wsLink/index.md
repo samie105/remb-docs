@@ -173,3 +173,4 @@ nav_next: {"path": "trpc/docs/client/nextjs/index.md", "title": "Next.js Integra
 
 `}`
 
+

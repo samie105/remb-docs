@@ -96,3 +96,4 @@ The `srsubstate` column in `pg_subscription_rel` can be one of the following:
 1select pg_last_wal_replay_lsn();
 ```
 
+

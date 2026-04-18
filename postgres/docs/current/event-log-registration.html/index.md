@@ -47,3 +47,4 @@ To enable event logging in the database server, modify [log\_destination](runtim
 
 If you see anything in the documentation that is not correct, does not match your experience with the particular feature or requires further clarification, please use [this form](/account/comments/new/18/event-log-registration.html/) to report a documentation issue.
 
+

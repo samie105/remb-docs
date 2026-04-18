@@ -19,3 +19,4 @@ The chunks stored for a large object do not have to be contiguous. For example, 
 
 As of PostgreSQL 9.0, large objects have an owner and a set of access permissions, which can be managed using [GRANT](https://www.postgresql.org/docs/current/sql-grant.html "GRANT") and [REVOKE](https://www.postgresql.org/docs/current/sql-revoke.html "REVOKE"). `SELECT` privileges are required to read a large object, and `UPDATE` privileges are required to write or truncate it. Only the large object's owner (or a database superuser) can delete, comment on, or change the owner of a large object. To adjust this behavior for compatibility with prior releases, see the [lo\_compat\_privileges](postgres/docs/current/runtime-config-compatible.html/index.md#GUC-LO-COMPAT-PRIVILEGES) run-time parameter.
 
+

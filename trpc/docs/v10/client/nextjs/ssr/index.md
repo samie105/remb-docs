@@ -246,3 +246,4 @@ If you don't remove the `connection` header, the data fetching will fail with `T
 
 By default, `@tanstack/react-query` (which we use for the data fetching hooks) refetches data on mount and window refocus, even if it's already got initial data via SSR. This ensures data is always up-to-date. See the page on [SSG](trpc/docs/v10/client/nextjs/ssg/index.md) if you'd like to disable this behavior.
 
+

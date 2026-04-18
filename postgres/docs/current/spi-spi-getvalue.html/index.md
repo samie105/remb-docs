@@ -43,3 +43,4 @@ column number (count starts at 1)
 
 Column value, or `NULL` if the column is null, _`colnumber`_ is out of range (`SPI_result` is set to `SPI_ERROR_NOATTRIBUTE`), or no output function is available (`SPI_result` is set to `SPI_ERROR_NOOUTFUNC`).
 
+

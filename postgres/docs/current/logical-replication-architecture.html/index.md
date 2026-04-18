@@ -31,3 +31,4 @@ The publication [`publish`](postgres/docs/current/sql-createpublication.html/ind
 
 If a table synchronization worker fails during copy, the apply worker detects the failure and respawns the table synchronization worker to continue the synchronization process. This behaviour ensures that transient errors do not permanently disrupt the replication setup. See also [`wal_retrieve_retry_interval`](postgres/docs/current/runtime-config-replication.html/index.md#GUC-WAL-RETRIEVE-RETRY-INTERVAL).
 
+

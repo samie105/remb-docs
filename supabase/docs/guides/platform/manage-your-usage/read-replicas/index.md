@@ -239,3 +239,4 @@ Compute Credits
 
 No, Compute Credits do not apply to Read Replica Compute.
 
+

@@ -109,3 +109,4 @@ The left-hand side is a row constructor, as described in [Section 4.2.13](https
 
 See [Section 9.25.5](https://www.postgresql.org/docs/current/functions-comparisons.html#ROW-WISE-COMPARISON "9.25.5. Row Constructor Comparison") for details about the meaning of a row constructor comparison.
 
+

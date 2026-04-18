@@ -246,3 +246,4 @@ SELECT \* FROM ts\_stat('SELECT vector FROM apod', 'ab')
 ORDER BY nentry DESC, ndoc DESC, word
 LIMIT 10;
 
+

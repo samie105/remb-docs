@@ -29,3 +29,4 @@ This makefile relies on PGXS, which is described in [Section 36.18](https://www
 
 Once the files are installed, use the `CREATE EXTENSION` command to load the objects into any particular database.
 
+

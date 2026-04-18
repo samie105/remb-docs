@@ -109,3 +109,4 @@ one `NOTIFY` event will be sent during the `UPDATE`, whether or not there are an
 
 `CREATE RULE` is a PostgreSQL language extension, as is the entire query rewrite system.
 
+

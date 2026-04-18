@@ -775,3 +775,4 @@ type Signal =
   | "SIGINFO";
 ```
 
+

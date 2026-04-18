@@ -46,3 +46,4 @@ Now you can access these schemas from data APIs:
 1// Initialize the JS client2import { createClient } from '@supabase/supabase-js'3const supabase = createClient(SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY, {4  db: { schema: 'myschema' },5})67// Make a request8const { data: todos, error } = await supabase.from('todos').select('*')910// You can also change the target schema on a per-query basis11const { data: todos, error } = await supabase.schema('myschema').from('todos').select('*')
 ```
 
+

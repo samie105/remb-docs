@@ -15,3 +15,4 @@ nav_next: {"path": "hono/docs/index.md", "title": "Hono \u200b"}
 
 [Skip to content](#VPContent)
 
+

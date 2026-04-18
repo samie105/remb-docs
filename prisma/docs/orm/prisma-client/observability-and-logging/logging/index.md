@@ -82,3 +82,4 @@ The exact [event (`e`) type and the properties available](prisma/docs/orm/refere
 
 [Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/prisma-client/observability-and-logging/logging.mdx)
 
+

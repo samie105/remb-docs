@@ -53,3 +53,4 @@ Type of the privilege: `SELECT`, `INSERT`, `UPDATE`, or `REFERENCES`
 
 `YES` if the privilege is grantable, `NO` if not
 
+

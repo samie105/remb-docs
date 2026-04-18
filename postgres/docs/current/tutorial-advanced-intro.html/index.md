@@ -17,3 +17,4 @@ In the previous chapter we have covered the basics of using SQL to store and acc
 
 This chapter will on occasion refer to examples found in [Chapter 2](https://www.postgresql.org/docs/current/tutorial-sql.html "Chapter 2. The SQL Language") to change or improve them, so it will be useful to have read that chapter. Some examples from this chapter can also be found in `advanced.sql` in the tutorial directory. This file also contains some sample data to load, which is not repeated here. (Refer to [Section 2.1](https://www.postgresql.org/docs/current/tutorial-sql-intro.html "2.1. Introduction") for how to use the file.)
 
+

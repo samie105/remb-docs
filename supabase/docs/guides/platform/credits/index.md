@@ -64,3 +64,4 @@ Yes, you can transfer credits to another organization. Submit a [support ticket]
 
 No, we do not provide refunds. Please refer to our [Terms of Service](/terms#1-fees).
 
+

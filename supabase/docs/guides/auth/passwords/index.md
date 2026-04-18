@@ -151,3 +151,4 @@ Call the function to sign in with the user's phone number and password:
 1import { createClient } from '@supabase/supabase-js'23const supabase = createClient('https://your-project-id.supabase.co', 'sb_publishable_...')45// ---cut---6const { data, error } = await supabase.auth.signInWithPassword({7  phone: '+13334445555',8  password: 'some-password',9})
 ```
 
+

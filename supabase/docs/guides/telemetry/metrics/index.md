@@ -78,3 +78,4 @@ Supabase guide
 *   [Log Drains](/docs/guides/telemetry/log-drains) for exporting event-based telemetry alongside metrics.
 *   [Query Performance report](/dashboard/project/_/observability/query-performance) for built-in visualizations based on the same underlying metrics.
 
+

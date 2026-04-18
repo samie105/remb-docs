@@ -41,3 +41,4 @@ Name of tablespace containing index (null if default for database)
 
 Index definition (a reconstructed [CREATE INDEX](https://www.postgresql.org/docs/current/sql-createindex.html "CREATE INDEX") command)
 
+

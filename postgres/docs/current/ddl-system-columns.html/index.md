@@ -43,3 +43,4 @@ Transaction identifiers are also 32-bit quantities. In a long-lived database it 
 
 Command identifiers are also 32-bit quantities. This creates a hard limit of 232 (4 billion) SQL commands within a single transaction. In practice this limit is not a problem — note that the limit is on the number of SQL commands, not the number of rows processed. Also, only commands that actually modify the database contents will consume a command identifier.
 
+

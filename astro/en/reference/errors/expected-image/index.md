@@ -38,3 +38,4 @@ In most cases, this error happens when the value passed to `src` is undefined.
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
 
+

@@ -23,3 +23,4 @@ PostgreSQL 15 and below had a setting `promote_trigger_file`, or `trigger_file` 
 
 The `standby_mode` setting has been removed. A `standby.signal` file in the data directory is used instead. See [Standby Server Operation](https://www.postgresql.org/docs/current/warm-standby.html#STANDBY-SERVER-OPERATION "26.2.2. Standby Server Operation") for details.
 
+

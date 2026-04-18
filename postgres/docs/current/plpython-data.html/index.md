@@ -264,3 +264,4 @@ $$ LANGUAGE plpython3u;
 
 SELECT \* FROM multiout\_simple\_setof(3);
 
+

@@ -145,3 +145,4 @@ When authentication fails, the user will still be redirected to the redirect URL
 1const params = new URLSearchParams(window.location.hash.slice())23if (params.get('error_code').startsWith('4')) {4  // show error message if error is a 4xx error5  window.alert(params.get('error_description'))6}
 ```
 
+

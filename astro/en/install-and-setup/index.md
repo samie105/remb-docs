@@ -237,3 +237,4 @@ If you prefer not to use our automatic `create astro` CLI tool, you can set up y
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
 
+

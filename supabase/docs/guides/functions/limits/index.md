@@ -59,3 +59,4 @@ Limits applied Edge Functions in Supabase's hosted platform.
 *   Static files cannot be deployed using the API flag. You need to build them with [Docker on the CLI](/docs/guides/functions/quickstart#step-6-deploy-to-production).
 *   Node Libraries that require multithreading are not supported. Examples: [`libvips`](https://github.com/libvips/libvips), [sharp](https://github.com/lovell/sharp).
 
+

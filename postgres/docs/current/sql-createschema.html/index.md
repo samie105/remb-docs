@@ -99,3 +99,4 @@ According to the SQL standard, the owner of a schema always owns all objects wit
 
 The `IF NOT EXISTS` option is a PostgreSQL extension.
 
+

@@ -506,3 +506,4 @@ A `DELETE` on a view, with a subquery qualification that in total uses 4 nesting
 
 There are probably only a few situations out in the real world where such a construct is necessary. But it makes you feel comfortable that it works.
 
+

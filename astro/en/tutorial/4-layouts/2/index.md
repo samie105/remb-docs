@@ -119,3 +119,4 @@ Can you figure out what should go in the blanks so that the following two compon
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
 
+

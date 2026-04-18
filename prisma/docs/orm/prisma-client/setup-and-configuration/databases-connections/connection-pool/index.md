@@ -267,3 +267,4 @@ When using Prisma Client with a driver adapter, database connections are managed
 
 [Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/prisma-client/setup-and-configuration/databases-connections/connection-pool.mdx)
 
+

@@ -32,3 +32,4 @@ If your image is inside your `src` folder, you probably meant to import it inste
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
 
+

@@ -96,3 +96,4 @@ The complete benchmark code is available at: [https://github.com/ToyB0x/ts-bench
 
 [Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/more/troubleshooting/typescript-performance.mdx)
 
+

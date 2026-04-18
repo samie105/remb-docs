@@ -104,3 +104,4 @@ By default, Presence will generate a unique `UUIDv1` key on the server to track 
 1import { createClient } from '@supabase/supabase-js'23const supabase = createClient('SUPABASE_URL', 'SUPABASE_PUBLISHABLE_KEY')45const channelC = supabase.channel('test', {6  config: {7    presence: {8      key: 'userId-123',9    },10  },11})
 ```
 
+

@@ -27,3 +27,4 @@ CREATE INDEX testidx ON test USING GIN (a);
 -- query
 SELECT \* FROM test WHERE a < 10;
 
+

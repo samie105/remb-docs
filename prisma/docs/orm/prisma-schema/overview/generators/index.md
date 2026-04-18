@@ -468,3 +468,4 @@ The following is a list of community created generators.
 *   [`prisma-generator-typescript-interfaces`](https://github.com/mogzol/prisma-generator-typescript-interfaces): Generates zero-dependency TypeScript interfaces from your Prisma schema.
 *   [`prisma-openapi`](https://github.com/nitzano/prisma-openapi): Generates OpenAPI schema from Prisma models.
 
+

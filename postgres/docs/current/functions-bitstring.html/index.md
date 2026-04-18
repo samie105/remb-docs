@@ -140,3 +140,4 @@ cast(-44 as bit(12))           _111111010100_
 
 Note that casting to just “bit” means casting to `bit(1)`, and so will deliver only the least significant bit of the integer.
 
+

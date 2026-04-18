@@ -39,3 +39,4 @@ The default value is `error=01;31:warning=01;35:note=01;36:locus=01` (`01;31` = 
 
 This color specification format is also used by other software packages such as GCC, GNU coreutils, and GNU grep.
 
+

@@ -61,3 +61,4 @@ In table inheritance hierarchies, identity columns and their properties in a chi
 
 Partitions inherit identity columns from the partitioned table. They cannot have their own identity columns. The properties of a given identity column are consistent across all the partitions in the partition hierarchy.
 
+

@@ -180,3 +180,4 @@ Prisma ORM validates that numbers fit within integer boundaries. If a value exce
 
 [Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/core-concepts/supported-databases/sqlite.mdx)
 
+

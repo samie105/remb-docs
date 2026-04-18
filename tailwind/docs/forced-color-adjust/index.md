@@ -67,3 +67,4 @@ Prefix a `forced-color-adjust` utility with a breakpoint variant like `md:` to o
 
 Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).
 
+

@@ -320,3 +320,4 @@ declare module "*.svg" {
 
 This tells TypeScript that any default imports from `.svg` should be treated as a string.
 
+

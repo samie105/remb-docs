@@ -419,3 +419,4 @@ Don't forget to run your own benchmarks to make sure that the performance is acc
 
 Supabase continues to make improvements to Realtime's Postgres Changes. If you are uncertain about your use case performance, reach out using the [Support Form](/dashboard/support/new). The support team can advise on the best solution for each use-case.
 
+

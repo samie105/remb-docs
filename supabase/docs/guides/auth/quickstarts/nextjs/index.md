@@ -121,3 +121,4 @@ To sign up a new user, navigate to [http://localhost:3000/auth/sign-up](http://l
 *   [Setting up Server-Side Auth for Next.js](/docs/guides/auth/server-side/nextjs) for a Next.js deep dive
 *   [Supabase Auth docs](/docs/guides/auth#authentication) for more Supabase authentication methods
 
+

@@ -203,3 +203,4 @@ And then add the widget to the Account page:
 
 At this stage you have a fully functional application!
 
+

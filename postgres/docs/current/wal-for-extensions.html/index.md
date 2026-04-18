@@ -19,3 +19,4 @@ First, extensions can choose to use [generic WAL](https://www.postgresql.org/doc
 
 Second, extensions can choose to use a [custom resource manager](https://www.postgresql.org/docs/current/custom-rmgr.html "64.2. Custom WAL Resource Managers"). This method is more flexible, supports logical decoding, and can sometimes generate much smaller write-ahead log records than would be possible with generic WAL. However, it is more complex for an extension to implement.
 
+

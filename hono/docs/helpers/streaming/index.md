@@ -142,3 +142,4 @@ If the callback function of the streaming helper throws an error, the `onError` 
 
 `onError` is a hook to handle errors before the response is sent and overwrite the response. However, when the callback function is executed, the stream has already started, so it cannot be overwritten.
 
+

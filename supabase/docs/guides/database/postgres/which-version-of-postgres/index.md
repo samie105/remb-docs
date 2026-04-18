@@ -35,3 +35,4 @@ Which should return something like:
 
 This query can also be executed via `psql` or any other query editor if you prefer to [connect directly to the database](/docs/guides/database/connecting-to-postgres#direct-connections).
 
+

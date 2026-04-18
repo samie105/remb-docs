@@ -160,3 +160,4 @@ We recommend asking a few users to test signing in via their Okta account. They 
 
 If SSO sign-in doesn't work as expected, contact your Supabase support representative for assistance.
 
+

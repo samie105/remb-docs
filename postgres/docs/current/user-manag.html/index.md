@@ -19,3 +19,4 @@ The concept of roles subsumes the concepts of “users” and “groups”. In P
 
 This chapter describes how to create and manage roles. More information about the effects of role privileges on various database objects can be found in [Section 5.8](https://www.postgresql.org/docs/current/ddl-priv.html "5.8. Privileges").
 
+

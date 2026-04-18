@@ -100,3 +100,4 @@ $ npx wrangler deploy --minify ./src/index.ts
 Total Upload: 14.68 KiB / gzip: 5.38 KiB
 ```
 
+

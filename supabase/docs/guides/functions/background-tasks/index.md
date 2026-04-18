@@ -76,3 +76,4 @@ To prevent that, you can update the `supabase/config.toml` with the following se
 1[edge_runtime]2policy = "per_worker"
 ```
 
+

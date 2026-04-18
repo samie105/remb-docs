@@ -84,3 +84,4 @@ Values of the `pg_mcv_list` type can be obtained only from the `pg_statistic_ext
 
 If you see anything in the documentation that is not correct, does not match your experience with the particular feature or requires further clarification, please use [this form](/account/comments/new/18/functions-statistics.html/) to report a documentation issue.
 
+

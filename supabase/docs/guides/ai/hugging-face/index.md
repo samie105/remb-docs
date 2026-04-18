@@ -146,3 +146,4 @@ Try running some other [AI tasks](#ai-tasks).
 *   Official [Hugging Face JS docs](https://huggingface.co/docs/huggingface.js).
 *   [Generate image captions](/docs/guides/ai/examples/huggingface-image-captioning) using Hugging Face.
 
+

@@ -27,3 +27,4 @@ Embedded SQL statements follow the case-sensitivity rules of normal SQL code, an
 
 The following sections explain all the embedded SQL statements.
 
+

@@ -250,3 +250,4 @@ In case [`reset`](/docs/reference/cli/usage#supabase-db-reset) fails, you can ma
 
 Once validated locally, commit your changes to Git and push to GitHub.
 
+

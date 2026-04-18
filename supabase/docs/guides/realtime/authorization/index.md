@@ -167,3 +167,4 @@ If a new JWT is never received on the Channel, the client will be disconnected w
 
 Make sure to keep the JWT expiration window short.
 
+

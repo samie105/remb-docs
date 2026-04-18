@@ -140,3 +140,4 @@ await db
 select * from stores where ST_Within(location, ST_MakeEnvelope(-88, 40, -73, 43, 4326));
 ```
 
+

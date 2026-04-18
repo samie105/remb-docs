@@ -333,3 +333,4 @@ Which is preferable is a matter of taste.
 
 In Oracle's PL/SQL, empty statement lists are not allowed, and so `NULL` statements are _required_ for situations such as this. PL/pgSQL allows you to just write nothing, instead.
 
+

@@ -25,3 +25,4 @@ The user tried to rewrite a 404 page inside a static page.
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
 
+

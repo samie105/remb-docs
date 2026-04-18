@@ -199,3 +199,4 @@ The module supports the following JWT cryptographic algorithms:
 *   `ES512`: ECDSA using P-521 and SHA-512
 *   `EdDSA`: EdDSA using Ed25519
 
+

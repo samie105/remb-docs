@@ -314,3 +314,4 @@ The same technology that powers Astro’s MCP server is also available as a chat
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
 
+

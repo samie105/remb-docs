@@ -102,3 +102,4 @@ Resize your window and look for different styles being applied at different scre
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
 
+

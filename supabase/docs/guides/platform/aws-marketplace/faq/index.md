@@ -35,3 +35,4 @@ You can cancel your marketplace subscription within 48 hours of purchase. To do 
 
 Yes, marketplace purchases do count toward the spend commitment.
 
+

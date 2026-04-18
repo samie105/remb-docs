@@ -95,3 +95,4 @@ By using `retryOn` with a custom function, you can define specific conditions fo
 
 For most use cases, the built-in PostgREST retry mechanism is sufficient. Use `fetch-retry` when you need retries on non-PostgREST requests or need fine-grained control over retry behavior.
 
+

@@ -26,3 +26,4 @@ Key features of RedisVL include:
 *   Scalable and Fast: Leveraging Redis's in-memory architecture, RedisVL provides low-latency access to vector data, even at scale.
 *   By bridging the gap between data storage and AI model deployment, RedisVL empowers developers to build intelligent, real-time applications with minimal infrastructure complexity.
 
+

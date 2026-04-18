@@ -104,3 +104,4 @@ The example here is only conceptual. For the actual caching to work, you will ha
 
 [Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/prisma-client/client-extensions/type-utilities.mdx)
 
+

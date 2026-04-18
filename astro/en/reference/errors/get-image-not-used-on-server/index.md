@@ -36,3 +36,4 @@ const optimizedImage = await getImage({ src: myImage, width: 300 });---
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
 
+

@@ -105,3 +105,4 @@ In any of these cases, the extra commands from the rule system will be more or l
 
 The summary is, rules will only be significantly slower than triggers if their actions result in large and badly qualified joins, a situation where the planner fails.
 
+

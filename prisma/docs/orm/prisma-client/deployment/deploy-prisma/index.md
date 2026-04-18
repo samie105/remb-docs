@@ -47,3 +47,4 @@ Typically, edge environments also have a different runtime than a traditional or
 
 [Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/prisma-client/deployment/deploy-prisma.mdx)
 
+

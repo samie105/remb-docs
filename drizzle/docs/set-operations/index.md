@@ -917,3 +917,4 @@ except all
 select "product_id", "quantity_ordered" from "vip_customer_orders"
 ```
 
+

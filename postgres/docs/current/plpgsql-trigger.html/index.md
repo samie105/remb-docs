@@ -433,3 +433,4 @@ $$ LANGUAGE plpgsql;
 
 CREATE EVENT TRIGGER snitch ON ddl\_command\_start EXECUTE FUNCTION snitch();
 
+

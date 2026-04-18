@@ -134,3 +134,4 @@ If not using `fastify-plugin`, the `'skip-override'` hidden property can be used
 function yourPlugin (fastify, opts, done) {  fastify.decorate('utility', function () {})  done()}yourPlugin[Symbol.for('skip-override')] = truemodule.exports = yourPlugin
 ```
 
+

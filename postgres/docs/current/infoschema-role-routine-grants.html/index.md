@@ -61,3 +61,4 @@ Always `EXECUTE` (the only privilege type for functions)
 
 `YES` if the privilege is grantable, `NO` if not
 
+

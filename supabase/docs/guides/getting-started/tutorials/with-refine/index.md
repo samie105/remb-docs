@@ -253,3 +253,4 @@ And then add the widget to the Account page at `src/components/account.tsx`:
 
 At this stage, you have a fully functional application!
 
+

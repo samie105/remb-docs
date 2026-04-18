@@ -132,3 +132,4 @@ EXEC SQL END DECLARE SECTION;
 
 `CONNECT` is specified in the SQL standard, but the format of the connection parameters is implementation-specific.
 
+

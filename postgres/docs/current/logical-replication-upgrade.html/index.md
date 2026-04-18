@@ -300,3 +300,4 @@ Let's say we have a circular logical replication setup `node1`\->`node2` and `no
      
      /\* node2 # \*/ ALTER SUBSCRIPTION sub1\_node1\_node2 REFRESH PUBLICATION;
 
+

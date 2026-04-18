@@ -57,3 +57,4 @@ The command tag associated with the event for which the event trigger is run, fo
 
 An event trigger function must return a `NULL` pointer (_not_ an SQL null value, that is, do not set _`isNull`_ true).
 
+

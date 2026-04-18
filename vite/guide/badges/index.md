@@ -15,3 +15,4 @@ nav_next: {"path": "vite/guide/patches/index.md", "title": "Registry Patches \u2
 
 [Skip to content](#VPContent)
 
+

@@ -51,3 +51,4 @@ Supabase Auth provides these [general configuration options](/dashboard/project/
     
 *   **Allow manual linking**: Allow users to link their accounts manually.
 
+

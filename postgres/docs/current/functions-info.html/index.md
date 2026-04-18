@@ -203,3 +203,4 @@ Parses a string of text, extracts a potential type name from it, and translates 
 
 `format_type(to_regtype('varchar(32)'), to_regtypemod('varchar(32)'))` → `character varying(32)`
 
+

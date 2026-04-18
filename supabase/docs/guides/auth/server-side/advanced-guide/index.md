@@ -124,3 +124,4 @@ Always initialize the Supabase client inside the request handler, not at module 
 
 At present, PKCE is supported on the Magic Link, OAuth, Sign Up, and Password Recovery routes. These correspond to the `signInWithOtp`, `signInWithOAuth`, `signUp`, and `resetPasswordForEmail` methods on the Supabase client library. When using PKCE with Phone and Email OTPs, there is no behavior change with respect to the implicit flow - an access token will be returned in the body when a request is successful.
 
+

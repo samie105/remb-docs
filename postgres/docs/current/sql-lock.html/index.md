@@ -94,3 +94,4 @@ There is no `LOCK TABLE` in the SQL standard, which instead uses `SET TRANSACTIO
 
 Except for `ACCESS SHARE`, `ACCESS EXCLUSIVE`, and `SHARE UPDATE EXCLUSIVE` lock modes, the PostgreSQL lock modes and the `LOCK TABLE` syntax are compatible with those present in Oracle.
 
+

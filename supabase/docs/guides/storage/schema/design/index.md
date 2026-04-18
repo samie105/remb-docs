@@ -41,3 +41,4 @@ We strongly recommend refraining from making any alterations to the `storage` sc
 
 However, we encourage you to add custom indexes as they can significantly improve the performance of the RLS policies you create for enforcing access control.
 
+

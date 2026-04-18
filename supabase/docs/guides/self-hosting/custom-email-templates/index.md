@@ -191,3 +191,4 @@ Update the `auth` service in `docker-compose.yml` to enable password changed not
 1docker compose up -d --force-recreate --no-deps auth templates-server
 ```
 
+

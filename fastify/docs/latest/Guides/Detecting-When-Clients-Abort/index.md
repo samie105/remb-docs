@@ -78,3 +78,4 @@ You can listen to the request close event and determine if the request was abort
 
 This approach will not trigger in the event of internet disruption, and such detection would require additional business logic. If you have flawed backend application logic that results in a server crash, then you could trigger a false detection. The `clientErrorHandler`, either by default or with custom logic, is not intended to handle this scenario and will not trigger when the client aborts a request.
 
+

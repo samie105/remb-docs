@@ -306,3 +306,4 @@ With **Vite** and compatible **Rollup** plugins, you can import file types which
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
 
+

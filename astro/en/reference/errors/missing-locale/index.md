@@ -25,3 +25,4 @@ Astro can’t find the requested locale. All supported locales must be configure
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
 
+

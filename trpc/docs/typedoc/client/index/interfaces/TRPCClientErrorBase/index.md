@@ -47,3 +47,4 @@ Defined in: [packages/client/src/TRPCClientError.ts:15](https://github.com/trpc/
 
 Defined in: [packages/client/src/TRPCClientError.ts:16](https://github.com/trpc/trpc/blob/63407c577124e7a2890a7599484d52a0cf025536/packages/client/src/TRPCClientError.ts#L16)
 
+

@@ -15,3 +15,4 @@ nav_next: {"path": "vite/guide/compatibility/index.md", "title": "Compatibility 
 
 [Skip to content](#VPContent)
 
+

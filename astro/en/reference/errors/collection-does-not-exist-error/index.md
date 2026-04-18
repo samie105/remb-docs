@@ -25,3 +25,4 @@ When querying a collection, ensure a collection directory with the requested nam
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
 
+

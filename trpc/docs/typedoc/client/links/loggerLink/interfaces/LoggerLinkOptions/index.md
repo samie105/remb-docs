@@ -73,3 +73,4 @@ Defined in: [packages/client/src/links/loggerLink.ts:77](https://github.com/trpc
 
 Include context in the log - defaults to false unless `colorMode` is 'css'
 
+

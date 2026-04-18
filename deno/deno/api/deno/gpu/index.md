@@ -47,3 +47,4 @@ N
 
 The webgpu namespace provides additional APIs that the WebGPU specification does not specify.
 
+

@@ -289,3 +289,4 @@ Built-in middleware does not depend on external modules, but third-party middlew
 
 We can explore a variety of [third-party middleware](hono/docs/middleware/third-party/index.md). For example, we have GraphQL Server Middleware, Sentry Middleware, Firebase Auth Middleware, and others.
 
+

@@ -15,3 +15,4 @@ nav_next: {"path": "trpc/docs/typedoc/client/index/functions/experimental_localL
 
 Function: createWSClient() | tRPC
 
+

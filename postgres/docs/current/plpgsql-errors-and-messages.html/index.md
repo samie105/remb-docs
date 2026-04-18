@@ -106,3 +106,4 @@ Testing of assertions can be enabled or disabled via the configuration parameter
 
 Note that `ASSERT` is meant for detecting program bugs, not for reporting ordinary error conditions. Use the `RAISE` statement, described above, for that.
 
+

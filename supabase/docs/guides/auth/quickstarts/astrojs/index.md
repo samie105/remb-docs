@@ -226,3 +226,4 @@ Start the development server, then navigate to [http://localhost:4321/auth/signu
 
 *   [Supabase Auth docs](/docs/guides/auth#authentication) for more Supabase authentication methods
 
+

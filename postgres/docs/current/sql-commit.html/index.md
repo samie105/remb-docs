@@ -50,3 +50,4 @@ COMMIT;
 
 The command `COMMIT` conforms to the SQL standard. The form `COMMIT TRANSACTION` is a PostgreSQL extension.
 
+

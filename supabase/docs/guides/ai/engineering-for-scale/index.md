@@ -100,3 +100,4 @@ This diagram provides an example architecture that allows you to access the coll
 
 ![multi database](/docs/img/ai/scaling/engineering-for-scale--multi-database--light.png)
 
+

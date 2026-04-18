@@ -571,3 +571,4 @@ Example on protocol version `2.0.0`:
 1[2  null,3  null,4  "realtime:cursor-room",5  "presence_diff",6  {7    "joins": {8      "XnAJXkZVEJuBYZcp9GCG5": {9        "metas": [10          {11            "phx_ref": "GHlE8VLvxuKGzQJN",12            "color": "hsl(60, 100%, 70%)",13            "user": "123"14          }15        ]16      }17    },18    "leaves": {19      "ouCsaiOdKZ9yauoy4x5pv": {20        "metas": [21          {22            "phx_ref": "GHlE8HyhSPAmZgdB",23            "color": "hsl(72, 100%, 70%)",24            "user": "456"25          }26        ]27      }28    }29  }30]
 ```
 
+

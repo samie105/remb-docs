@@ -47,3 +47,4 @@ Of course, each column must be used with operators appropriate to the index type
 
 Multicolumn indexes should be used sparingly. In most situations, an index on a single column is sufficient and saves space and time. Indexes with more than three columns are unlikely to be helpful unless the usage of the table is extremely stylized. See also [Section 11.5](https://www.postgresql.org/docs/current/indexes-bitmap-scans.html "11.5. Combining Multiple Indexes") and [Section 11.9](https://www.postgresql.org/docs/current/indexes-index-only-scans.html "11.9. Index-Only Scans and Covering Indexes") for some discussion of the merits of different index configurations.
 
+

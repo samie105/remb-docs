@@ -45,3 +45,4 @@ The [`pg_replication_slots`](https://www.postgresql.org/docs/current/view-pg-rep
 
  47.6. Logical Decoding Output Plugins
 
+

@@ -78,3 +78,4 @@ This is powered by [plpgsql\_check](https://github.com/okbob/plpgsql_check), whi
 
 Check the Reference Docs for [more information](/docs/reference/cli/supabase-db-lint).
 
+

@@ -72,3 +72,4 @@ update users set "city" =
 where id in (1, 2, 3)
 ```
 
+

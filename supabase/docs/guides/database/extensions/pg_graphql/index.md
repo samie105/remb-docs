@@ -63,3 +63,4 @@ Note that `pg_graphql` fully supports schema introspection so you can connect an
 
 *   Official [`pg_graphql` documentation](https://github.com/supabase/pg_graphql)
 
+

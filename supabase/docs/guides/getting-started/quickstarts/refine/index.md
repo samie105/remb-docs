@@ -173,3 +173,4 @@ Now you should be able to see the instruments pages along the `/instruments` rou
 
 The Inferencer auto-generated code gives you a good starting point on which to keep building your `list`, `create`, `show` and `edit` pages. They can be obtained by clicking the `Show the auto-generated code` buttons in their respective pages.
 
+

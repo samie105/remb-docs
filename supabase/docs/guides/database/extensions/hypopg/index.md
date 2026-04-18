@@ -71,3 +71,4 @@ The query plan has changed from a `Seq Scan` to an `Index Scan` using the newly 
 
 *   Official [HypoPG documentation](https://hypopg.readthedocs.io/en/rel1_stable/)
 
+

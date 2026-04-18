@@ -23,3 +23,4 @@ The table is created as shared if `shared_relation` is specified. The table's ro
 
 Create an index named _`indexname`_, having OID _`indexoid`_, on the table named _`tablename`_, using the _`amname`_ access method. The fields to index are called _`name1`_, _`name2`_ etc., and the operator classes to use are _`opclass1`_, _`opclass2`_ etc., respectively. The index file is created and appropriate catalog entries are made for it, but the index contents are not initialized by this command.
 
+

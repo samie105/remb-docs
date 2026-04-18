@@ -134,3 +134,4 @@ It’s important to note the SDK needs to be regenerated every time your schema 
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
 
+

@@ -110,3 +110,4 @@ Operator classes that do not provide a skip support function are still eligible 
 
 It is not sensible for an operator family to register a cross-type `skipsupport` function, and attempting to do so will result in an error. This is because determining the next indexable value must happen by incrementing a value copied from an index tuple. The values generated must all be of the same underlying data type (the “skipped” index column's opclass input type).
 
+

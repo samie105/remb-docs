@@ -96,3 +96,4 @@ Alternatively, you can also build Redis Insight from source. See the [wiki](http
 
 ## On this page
 
+

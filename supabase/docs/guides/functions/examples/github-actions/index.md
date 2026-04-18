@@ -33,3 +33,4 @@ Individual function configuration like [JWT verification](/docs/guides/cli/confi
 1[functions.hello-world]2verify_jwt = false
 ```
 
+

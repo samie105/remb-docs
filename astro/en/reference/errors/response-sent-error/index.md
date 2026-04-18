@@ -29,3 +29,4 @@ Making changes to the response, such as setting headers, cookies, and the status
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
 
+

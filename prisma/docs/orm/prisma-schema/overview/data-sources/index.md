@@ -60,3 +60,4 @@ Generators in your Prisma schema specify what assets are generated when the \`pr
 
 [Securing database connections](#securing-database-connections)
 
+

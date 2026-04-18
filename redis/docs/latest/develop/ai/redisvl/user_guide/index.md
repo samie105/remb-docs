@@ -103,3 +103,4 @@ User guides provide helpful resources for using RedisVL and its different compon
     *   [Comparing Query Types](advanced_queries/#comparing-query-types)
     *   [Best Practices](advanced_queries/#best-practices)
 
+

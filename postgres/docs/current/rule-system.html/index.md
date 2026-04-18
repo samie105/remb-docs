@@ -22,3 +22,4 @@ PostgreSQL supports a powerful _rule system_ for the specification of _views_ an
 
 The query rewriter is discussed in some detail in [Chapter 39](https://www.postgresql.org/docs/current/rules.html "Chapter 39. The Rule System"), so there is no need to cover it here. We will only point out that both the input and the output of the rewriter are query trees, that is, there is no change in the representation or level of semantic detail in the trees. Rewriting can be thought of as a form of macro expansion.
 
+

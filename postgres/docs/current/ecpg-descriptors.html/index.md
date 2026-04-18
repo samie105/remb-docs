@@ -678,3 +678,4 @@ tup\_inserted = 0 (type: 9)
 tup\_updated = 0 (type: 9)
 tup\_deleted = 0 (type: 9)
 
+

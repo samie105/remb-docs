@@ -74,3 +74,4 @@ Call the `updateUser({ password: 'validpassword'})` to add email with password a
 
 If you try to create an email account after previously signing up with OAuth using the same email, you'll receive an obfuscated user response with no verification email sent. This prevents user enumeration attacks.
 
+

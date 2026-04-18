@@ -47,3 +47,4 @@ Here's a full example of a RESTful API built with Edge Functions.
 
 [View source](https://github.com/supabase/supabase/blob/e8df67d5d5291e05ea56596aee0f2b7fa152929b/examples/edge-functions/supabase/functions/restful-tasks/index.ts)
 
+

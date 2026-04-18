@@ -206,3 +206,4 @@ netlify deploy --prod
 
 Finally, you can use URL of the deployed website and navigate to the route you created `(e.g. /user)` to access your edge function.
 
+

@@ -184,3 +184,4 @@ There are two `astro-snipcart` community packages that can simplify using Snipca
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
 
+

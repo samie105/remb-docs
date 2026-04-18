@@ -23,3 +23,4 @@ To use these features, install [Redis Open Source](/docs/latest/operate/oss_and_
 
 See the [tutorial](/docs/latest/develop/ai/search-and-query/indexing/) to learn how to search and query your JSON.
 
+

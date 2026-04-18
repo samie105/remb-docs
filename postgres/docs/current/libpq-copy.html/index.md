@@ -151,3 +151,4 @@ When using [`PQgetResult`](postgres/docs/current/libpq-async.html/index.md#LIBPQ
 
 Older applications are likely to submit a `COPY` via [`PQexec`](https://www.postgresql.org/docs/current/libpq-exec.html#LIBPQ-PQEXEC) and assume that the transaction is done after [`PQendcopy`](postgres/docs/current/libpq-copy.html/index.md#LIBPQ-PQENDCOPY). This will work correctly only if the `COPY` is the only SQL command in the command string.
 
+

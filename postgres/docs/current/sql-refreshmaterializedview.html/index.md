@@ -62,3 +62,4 @@ REFRESH MATERIALIZED VIEW annual\_statistics\_basis WITH NO DATA;
 
 `REFRESH MATERIALIZED VIEW` is a PostgreSQL extension.
 
+

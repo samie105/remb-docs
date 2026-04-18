@@ -46,3 +46,4 @@ EXEC SQL EXECUTE IMMEDIATE :command;
 
 `EXECUTE IMMEDIATE` is specified in the SQL standard.
 
+

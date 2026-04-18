@@ -53,3 +53,4 @@ Automatically configure Supabase in SvelteKit to use cookies, making your user a
 
 ](/docs/guides/auth/server-side/sveltekit)
 
+

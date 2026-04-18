@@ -172,3 +172,4 @@ VACUUM \[ FULL \] \[ FREEZE \] \[ VERBOSE \] \[ ANALYZE \] \[ _`table_and_column
 
 Note that in this syntax, the options must be specified in exactly the order shown.
 
+

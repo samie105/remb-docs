@@ -32,3 +32,4 @@ To redirect on a static website, the [meta refresh attribute](https://developer.
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
 
+

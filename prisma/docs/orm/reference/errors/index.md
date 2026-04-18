@@ -17,3 +17,4 @@ The Next Evolution of Prisma ORMNew
 
 Prisma Next: a full TypeScript rewrite with a new query API, SQL builder, and extensible architecture.
 
+

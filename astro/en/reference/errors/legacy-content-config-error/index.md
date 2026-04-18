@@ -26,3 +26,4 @@ A legacy content config file was found. Move the file to `src/content.config.ts`
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
 
+

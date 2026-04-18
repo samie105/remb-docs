@@ -38,3 +38,4 @@ Along the way, you’ll learn how the **two sections of a `.astro` file** work t
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
 
+

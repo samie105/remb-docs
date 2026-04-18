@@ -76,3 +76,4 @@ Supabase undergoes annual audits. The HIPAA controls are audited during the same
 6.  [Shared Responsibility Model](/docs/guides/deployment/shared-responsibility-model)
 7.  [HIPAA shared responsibility](/docs/guides/deployment/shared-responsibility-model#managing-healthcare-data)
 
+

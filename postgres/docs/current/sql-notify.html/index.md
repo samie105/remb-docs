@@ -77,3 +77,4 @@ Asynchronous notification "foo" with payload "payload" received from server proc
 
 There is no `NOTIFY` statement in the SQL standard.
 
+

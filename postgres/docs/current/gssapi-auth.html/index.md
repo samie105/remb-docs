@@ -49,3 +49,4 @@ Sets the realm to match user principal names against. If this parameter is set, 
 
 In addition to these settings, which can be different for different `pg_hba.conf` entries, there is the server-wide [krb\_caseins\_users](postgres/docs/current/runtime-config-connection.html/index.md#GUC-KRB-CASEINS-USERS) configuration parameter. If that is set to true, client principals are matched to user map entries case-insensitively. `krb_realm`, if set, is also matched case-insensitively.
 
+

@@ -31,3 +31,4 @@ This query works by listing out all the tables in the given schema and then exec
 
 You can run this query using the [SQL Editor](/dashboard/project/_/sql) in the Supabase Dashboard, or via `psql` if you're [connecting directly to the database](/docs/guides/database/connecting-to-postgres#direct-connections).
 
+

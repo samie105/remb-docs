@@ -66,3 +66,4 @@ The binary value of the column is returned. The variable pointed to by _`isnull`
 
 If you see anything in the documentation that is not correct, does not match your experience with the particular feature or requires further clarification, please use [this form](/account/comments/new/18/spi-spi-getbinval.html/) to report a documentation issue.
 
+

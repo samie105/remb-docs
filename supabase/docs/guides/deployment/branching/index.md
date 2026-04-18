@@ -49,3 +49,4 @@ When you merge any branch into your main project, Supabase automatically runs a 
 
 If a parent deployment step fails, all dependent child steps will be skipped. For instance, if your database migrations failed at step 5, our runner will not seed your branch because step 6 is skipped. If you are using GitHub integration, the same deployment workflow will be run on every commit pushed to your git branch.
 
+

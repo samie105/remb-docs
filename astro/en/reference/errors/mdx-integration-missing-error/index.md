@@ -29,3 +29,4 @@ Unable to find the official `@astrojs/mdx` integration. This error is raised whe
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
 
+

@@ -79,3 +79,4 @@ Once this is done, you can manage and interact with your database directly via S
 
 Congratulations! You've successfully deployed a Node.js application using Prisma ORM to Sevalla. Your app and database are now connected, secure, and production-ready!
 
+

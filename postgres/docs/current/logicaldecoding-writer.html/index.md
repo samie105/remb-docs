@@ -49,3 +49,4 @@ It is possible to add more output methods for logical decoding. For details, see
 
 If you see anything in the documentation that is not correct, does not match your experience with the particular feature or requires further clarification, please use [this form](https://www.postgresql.org/account/comments/new/18/logicaldecoding-writer.html/) to report a documentation issue.
 
+

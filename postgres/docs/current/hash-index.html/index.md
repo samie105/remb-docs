@@ -49,3 +49,4 @@ Each row in the table indexed is represented by a single index tuple in the hash
 
 The bucket splitting algorithms to expand the hash index are too complex to be worthy of mention here, though are described in more detail in `src/backend/access/hash/README`. The split algorithm is crash safe and can be restarted if not completed successfully.
 
+

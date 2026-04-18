@@ -45,3 +45,4 @@ O.3. `pg_xlogdump` renamed to `pg_waldump` 
 
  O.5. `pg_receivexlog` renamed to `pg_receivewal`
 
+

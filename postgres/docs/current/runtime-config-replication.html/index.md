@@ -101,3 +101,4 @@ It enables a physical standby to synchronize logical failover slots from the pri
 
 It is disabled by default. This parameter can only be set in the `postgresql.conf` file or on the server command line.
 
+

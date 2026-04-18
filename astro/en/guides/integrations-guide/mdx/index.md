@@ -396,3 +396,4 @@ Note that if your MDX file [configures custom components using `export const com
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
 
+

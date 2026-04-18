@@ -76,3 +76,4 @@ Here _`expression`_ is an arbitrary value expression that is evaluated for all r
 
 The `DISTINCT ON` clause is not part of the SQL standard and is sometimes considered bad style because of the potentially indeterminate nature of its results. With judicious use of `GROUP BY` and subqueries in `FROM`, this construct can be avoided, but it is often the most convenient alternative.
 
+

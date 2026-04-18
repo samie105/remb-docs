@@ -277,3 +277,4 @@ You can follow the decision flow in the connection method diagram to quickly cho
 
 Choosing between direct Postgres connections and connection pooling
 
+

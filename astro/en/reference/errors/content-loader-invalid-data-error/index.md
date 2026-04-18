@@ -27,3 +27,4 @@ The loader for a content collection returned invalid data. Inline loaders must r
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
 
+

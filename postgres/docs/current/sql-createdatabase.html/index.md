@@ -191,3 +191,4 @@ Note that locale names are specific to the operating system, so that the above c
 
 There is no `CREATE DATABASE` statement in the SQL standard. Databases are equivalent to catalogs, whose creation is implementation-defined.
 
+

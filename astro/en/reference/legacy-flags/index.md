@@ -44,3 +44,4 @@ This is a temporary migration helper. Migrate collections to the Content Layer A
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
 
+

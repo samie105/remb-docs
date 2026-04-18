@@ -82,3 +82,4 @@ Test your connection and then click finish. You should now be able to interact w
 
 ![connected dashboard](/docs/img/guides/database/connecting-to-postgres/dbeaver/finished.png)
 
+

@@ -189,3 +189,4 @@ The same solutions apply as for Vercel:
 
 Within your project's dashboard, go to **Site Settings** > **Build & deploy** > **Continuous deployment** > **Build settings** and prepend `prisma generate` to the Build command field.
 
+

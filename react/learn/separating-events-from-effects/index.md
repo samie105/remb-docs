@@ -386,3 +386,4 @@ This `Timer` component keeps a `count` state variable which increases every seco
 
 However, no matter how many times you click the plus button, the counter is still incremented by one every second. What’s wrong with this code? Why is `increment` always equal to `1` inside the Effect’s code? Find the mistake and fix it.
 
+

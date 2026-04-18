@@ -554,3 +554,4 @@ See [Vite’s docs](https://vite.dev/guide/assets.html#importing-asset-as-url) f
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
 
+

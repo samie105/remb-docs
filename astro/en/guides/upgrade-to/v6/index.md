@@ -1478,3 +1478,4 @@ Please check [Astro’s issues on GitHub](https://github.com/withastro/astro/iss
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
 
+

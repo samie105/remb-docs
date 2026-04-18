@@ -51,3 +51,4 @@ defaultNoticeProcessor(void \*arg, const char \*message)
 
 Once you have set a notice receiver or processor, you should expect that that function could be called as long as either the `PGconn` object or `PGresult` objects made from it exist. At creation of a `PGresult`, the `PGconn`'s current notice handling pointers are copied into the `PGresult` for possible use by functions like [`PQgetvalue`](https://www.postgresql.org/docs/current/libpq-exec.html#LIBPQ-PQGETVALUE).
 
+

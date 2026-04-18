@@ -15,3 +15,4 @@ nav_next: {"path": "trpc/docs/typedoc/client/links/httpLink/type-aliases/HTTPLin
 
 Function: httpLink() | tRPC
 
+

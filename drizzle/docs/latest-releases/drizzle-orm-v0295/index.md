@@ -131,3 +131,4 @@ And then you can use `db.batch([])` method, that will proxy all queries
 
 > Response from the batch should be an array of raw values (an array within an array), in the same order as they were sent to the proxy server
 
+

@@ -74,3 +74,4 @@ Why is this useful? Once we have generated embeddings on multiple texts, it is t
 
 *   [Structured and Unstructured embeddings](/docs/guides/ai/structured-unstructured)
 
+

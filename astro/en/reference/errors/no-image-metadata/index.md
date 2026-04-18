@@ -29,3 +29,4 @@ Astro could not process the metadata of an image you imported. This is often cau
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
 
+

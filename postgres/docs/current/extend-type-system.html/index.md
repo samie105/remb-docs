@@ -153,3 +153,4 @@ In an actual call of this function, the first two inputs must have exactly the s
 
 A variadic function (one taking a variable number of arguments, as in [Section 36.5.6](https://www.postgresql.org/docs/current/xfunc-sql.html#XFUNC-SQL-VARIADIC-FUNCTIONS "36.5.6. SQL Functions with Variable Numbers of Arguments")) can be polymorphic: this is accomplished by declaring its last parameter as `VARIADIC` `anyarray` or `VARIADIC` `anycompatiblearray`. For purposes of argument matching and determining the actual result type, such a function behaves the same as if you had written the appropriate number of `anynonarray` or `anycompatiblenonarray` parameters.
 
+

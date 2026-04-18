@@ -96,3 +96,4 @@ Deprecation is done for the following reasons:
 *   Rotating the project's JWT secret in this case almost always results in significant downtime for your application
 *   Additional latency to [generate a new JWT](https://clerk.com/docs/backend-requests/jwt-templates#generate-a-jwt) for use with Supabase, instead of using the Clerk [session tokens](https://clerk.com/docs/backend-requests/resources/session-tokens)
 
+

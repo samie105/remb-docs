@@ -15,3 +15,4 @@ nav_next: {"path": "drizzle/docs/extensions/singlestore/index.md", "title": "Sin
 
 Drizzle ORM - MySQL extensions
 
+

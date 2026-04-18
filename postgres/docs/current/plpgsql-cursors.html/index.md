@@ -235,3 +235,4 @@ The cursor variable must have been bound to some query when it was declared, and
 
 The variable _`recordvar`_ is automatically defined as type `record` and exists only inside the loop (any existing definition of the variable name is ignored within the loop). Each row returned by the cursor is successively assigned to this record variable and the loop body is executed.
 
+

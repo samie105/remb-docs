@@ -183,3 +183,4 @@ The `Account.vue` component [shown earlier](#account-page) already includes the 
 
 At this stage you have a fully functional application!
 
+

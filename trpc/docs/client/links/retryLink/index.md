@@ -144,3 +144,4 @@ When using `retryLink` with subscriptions that use [`tracked()`](trpc/docs/serve
 
 For example, if you're using Server-sent Events (SSE) with `httpSubscriptionLink`, the `retryLink` will automatically handle reconnecting with the last event ID when errors like `401 Unauthorized` occur.
 
+

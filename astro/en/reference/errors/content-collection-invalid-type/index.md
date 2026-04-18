@@ -26,3 +26,4 @@ Content collections should no longer have a `type` field. Remove this field from
 
 [Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
 
+

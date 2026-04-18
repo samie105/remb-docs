@@ -69,3 +69,4 @@ You can also connect to Xata using `pg` or `postgres.js` drivers
 
 To get started with Xata and Drizzle follow the [documentation](drizzle/docs/get-started-postgresql/index.md#xata).
 
+

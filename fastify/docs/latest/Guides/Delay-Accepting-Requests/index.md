@@ -202,3 +202,4 @@ This guide is a tutorial on the use of plugins, decorators, and hooks to solve t
 
 The keywords here were [Decorators](/docs/latest/Reference/Decorators/), [Hooks](/docs/latest/Reference/Hooks/), and [Plugins](/docs/latest/Reference/Plugins/). Combining what Fastify has to offer can lead to very ingenious and creative solutions to a wide variety of problems. Let's be creative! :)
 
+

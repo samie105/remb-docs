@@ -51,3 +51,4 @@ Show help about pg\_test\_fsync command line arguments, and exit.
 
 The environment variable `PG_COLOR` specifies whether to use color in diagnostic messages. Possible values are `always`, `auto` and `never`.
 
+

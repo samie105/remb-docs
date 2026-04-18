@@ -153,3 +153,4 @@ This command must not be used when the server is running. `pg_resetwal` will ref
 
 `pg_resetwal` works only with servers of the same major version.
 
+

@@ -35,3 +35,4 @@ For more insight into Prisma Client's API, explore the function handlers and che
 
 [Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/prisma-client/deployment/serverless/deploy-to-azure-functions.mdx)
 
+

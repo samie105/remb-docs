@@ -158,3 +158,4 @@ We recommend asking a few users to test signing in via their Google Workspace ac
 
 If SSO sign-in doesn't work as expected, contact your Supabase support representative for assistance.
 
+
