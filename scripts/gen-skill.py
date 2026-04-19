@@ -17,7 +17,7 @@ Page selection strategy:
   - Deduplicate, preserve TOC order
 """
 
-import json, sys, os, subprocess, urllib.request, urllib.error, pathlib, textwrap
+import json, sys, os, subprocess, urllib.request, urllib.error, pathlib, textwrap, time
 
 WORKSPACE = pathlib.Path(__file__).parent.parent
 MODEL = "openai/gpt-4.1"
@@ -264,8 +264,17 @@ def gen_skill(slug: str, token: str):
     try:
         skill_md = call_model(token, prompt)
     except urllib.error.HTTPError as e:
-        print(f"  {slug}: ERROR {e.code} {e.reason}")
-        return
+        if e.code == 429:
+            print(f"  {slug}: rate limited, waiting 60s...")
+            time.sleep(60)
+            try:
+                skill_md = call_model(token, prompt)
+            except Exception as e2:
+                print(f"  {slug}: ERROR after retry: {e2}")
+                return
+        else:
+            print(f"  {slug}: ERROR {e.code} {e.reason}")
+            return
     except Exception as e:
         print(f"  {slug}: ERROR {e}")
         return
@@ -305,7 +314,9 @@ def main():
                 continue
             slugs.append(name)
         print(f"Generating SKILL.md for {len(slugs)} sources: {', '.join(slugs)}")
-        for slug in sorted(slugs):
+        for i, slug in enumerate(sorted(slugs)):
+            if i > 0:
+                time.sleep(8)  # throttle to avoid 429
             gen_skill(slug, token)
     else:
         for slug in args:
