@@ -1,0 +1,705 @@
+---
+title: "Astro Adapter API"
+source: "https://docs.astro.build/en/reference/adapter-reference/"
+canonical_url: "https://docs.astro.build/en/reference/adapter-reference/"
+docset: "astro"
+kind: "framework"
+adapter: "generic"
+last_crawled_at: "2026-04-18T16:42:30.025Z"
+content_hash: "2921dd56432127797f0bf2024f67ed97121315c1146fcac1ba6e93cfc8cdbe3f"
+menu_path: ["Astro Adapter API"]
+section_path: []
+nav_prev: {"path": "astro/en/reference/integrations-reference/index.md", "title": "Astro Integration API"}
+nav_next: {"path": "astro/en/reference/renderer-reference/index.md", "title": "Astro Renderer API"}
+---
+
+# Astro Adapter API
+
+Astro is designed to make it easy to deploy to any cloud provider for on-demand rendering, also known as server-side rendering (SSR). This ability is provided by **adapters**, which are [integrations](/en/reference/integrations-reference/). See the [on-demand rendering guide](/en/guides/on-demand-rendering/) to learn how to use an existing adapter.
+
+## What is an adapter?
+
+[Section titled “What is an adapter?”](#what-is-an-adapter)
+
+An adapter is a special kind of [integration](/en/reference/integrations-reference/) that provides an entrypoint for server rendering at request time. An adapter has access to the full Integration API and does two things:
+
+*   Implements host-specific APIs for handling requests.
+*   Configures the build according to host conventions.
+
+## Building an adapter
+
+[Section titled “Building an adapter”](#building-an-adapter)
+
+Create an integration and call the `setAdapter()` function in the [`astro:config:done`](/en/reference/integrations-reference/#astroconfigdone) hook. This allows you to define a server entrypoint and the features supported by your adapter.
+
+The following example creates an adapter with a server entrypoint and stable support for Astro static output:
+
+```
+export default function createIntegration() {  return {    name: '@example/my-adapter',    hooks: {      'astro:config:done': ({ setAdapter }) => {        setAdapter({          name: '@example/my-adapter',          entrypointResolution: 'auto',          serverEntrypoint: '@example/my-adapter/server.js',          supportedAstroFeatures: {            staticOutput: 'stable'          }        });      },    },  };}
+```
+
+The `setAdapter()` function accepts an object containing the following properties:
+
+### `name`
+
+[Section titled “name”](#name)
+
+**Type:** `string`
+
+Defines a unique name for your adapter. This will be used for logging.
+
+### `entrypointResolution`
+
+[Section titled “entrypointResolution”](#entrypointresolution)
+
+**Type:** `"explicit" | "auto"`  
+**Default**: `"explicit"`  
+
+**Added in:** `astro@6.0.0`
+
+Specifies the method Astro will use to resolve the server entrypoint: `"auto"` (recommended) or `"explicit"` (default, but deprecated):
+
+*   **`"auto"` (recommended):** You are responsible for providing a valid module as an entrypoint using either [`serverEntrypoint`](/en/reference/adapter-reference/#serverentrypoint) or, if you need further customization at the Vite level using [`vite.build.rollupOptions.input`](https://rollupjs.org/configuration-options/#input).
+*   **`"explicit"` (deprecated)**: You must provide the exports required by the host in the server entrypoint using a `createExports()` function before passing them to `setAdapter()` as an [`exports`](#exports) list. This supports adapters built using the Astro 5 version of the Adapter API. By default, all adapters will receive this value to allow backwards compatibility. **However, no new adapters should be created with this value.** Existing adapters should override this default value with `"auto"` as soon as they are able to migrate to the new v6 API.
+
+The following example defines the `entrypointResolution` and `serverEntrypoint` to tell Astro that a custom entrypoint is provided:
+
+```
+export default function createIntegration() {  return {    name: '@example/my-adapter',    hooks: {      'astro:config:done': ({ setAdapter }) => {        setAdapter({          name: '@example/my-adapter',          entrypointResolution: 'auto',          serverEntrypoint: '@example/my-adapter/custom-entrypoint.js',        });      },    },  };}
+```
+
+The following example defines the `entrypointResolution` and Rollup options to tell Astro that a custom entrypoint is provided:
+
+```
+export default function createIntegration() {  return {    name: '@example/my-adapter',    hooks: {      'astro:config:setup': ({ updateConfig }) => {        updateConfig({          vite: {            build: {              rollupOptions: {                input: '@example/my-adapter/custom-entrypoint.js'              }            }          }        })      },      'astro:config:done': ({ setAdapter }) => {        setAdapter({          name: '@example/my-adapter',          entrypointResolution: 'auto',        });      },    },  };}
+```
+
+Learn more about how to [build a server entrypoint](#building-a-server-entrypoint).
+
+### `serverEntrypoint`
+
+[Section titled “serverEntrypoint”](#serverentrypoint)
+
+**Type:** `string | URL`
+
+Defines the entrypoint for on-demand rendering.
+
+### `supportedAstroFeatures`
+
+[Section titled “supportedAstroFeatures”](#supportedastrofeatures)
+
+**Type:** `AstroAdapterFeatureMap`  
+
+**Added in:** `astro@3.0.0`
+
+A map of Astro’s built-in features supported by the adapter. This allows Astro to determine which features an adapter supports, so appropriate error messages can be provided.
+
+Discover the [available Astro features](#astro-features) that an adapter can configure.
+
+### `adapterFeatures`
+
+[Section titled “adapterFeatures”](#adapterfeatures)
+
+**Type:** `AstroAdapterFeatures`  
+
+**Added in:** `astro@3.0.0`
+
+An object that specifies which [adapter features that change the build output](#adapter-features) are supported by the adapter.
+
+### `client`
+
+[Section titled “client”](#client)
+
+**Type:** `{ internalFetchHeaders?: Record<string, string> | () => Record<string, string>; assetQueryParams?: URLSearchParams; }`  
+
+**Added in:** `astro@5.15.0`
+
+A configuration object for Astro’s client-side code.
+
+#### `client.internalFetchHeaders`
+
+[Section titled “client.internalFetchHeaders”](#clientinternalfetchheaders)
+
+**Type:** `Record<string, string> | () => Record<string, string>`
+
+Defines the headers to inject into Astro’s internal fetch calls (e.g. Actions, View Transitions, Server Islands, Prefetch). This can be an object of headers or a function that returns headers.
+
+The following example retrieves a `DEPLOY_ID` from the environment variables and, if provided, returns an object with the header name as key and the deploy id as value:
+
+```
+export default function createIntegration() {  return {    name: '@example/my-adapter',    hooks: {      'astro:config:done': ({ config, setAdapter }) => {        setAdapter({          name: '@example/my-adapter',          entrypointResolution: 'auto',          serverEntrypoint: '@example/my-adapter/server.js',          client: {            internalFetchHeaders: () => {              const deployId = process.env.DEPLOY_ID;              return deployId ? { 'Your-Header-ID': deployId } : {};            },          },        });      },    },  };}
+```
+
+#### `client.assetQueryParams`
+
+[Section titled “client.assetQueryParams”](#clientassetqueryparams)
+
+**Type:** `URLSearchParams`
+
+Defines the query parameters to append to all asset URLs (e.g. images, stylesheets, scripts). This is useful for adapters that need to track deployment versions or other metadata.
+
+The following example retrieves a `DEPLOY_ID` from the environment variables and, if provided, returns an object with a custom search parameter name as key and the deploy id as value:
+
+```
+export default function createIntegration() {  return {    name: '@example/my-adapter',    hooks: {      'astro:config:done': ({ config, setAdapter }) => {        setAdapter({          name: '@example/my-adapter',          entrypointResolution: 'auto',          serverEntrypoint: '@example/my-adapter/server.js',          client: {            assetQueryParams: process.env.DEPLOY_ID              ? new URLSearchParams({ yourParam: process.env.DEPLOY_ID })              : undefined,          },        });      },    },  };}
+```
+
+### `previewEntrypoint`
+
+[Section titled “previewEntrypoint”](#previewentrypoint)
+
+**Type:** `string | URL`  
+
+**Added in:** `astro@1.5.0`
+
+Defines the path or ID of a module in the adapter’s package that is responsible for starting up the built server when `astro preview` is run.
+
+```
+export default function createIntegration() {  return {    name: '@example/my-adapter',    hooks: {      'astro:config:done': ({ config, setAdapter }) => {        setAdapter({          name: '@example/my-adapter',          entrypointResolution: 'auto',          serverEntrypoint: '@example/my-adapter/server.js',          previewEntrypoint: '@example/my-adapter/preview.js',        });      },    },  };}
+```
+
+Learn more about how to [build a preview entrypoint](#building-a-preview-entrypoint).
+
+### `args`
+
+[Section titled “args”](#args)
+
+**Type:** `any`
+
+A JSON-serializable value that will be passed to the adapter’s server entrypoint at runtime. This is useful to pass an object containing build-time configuration (e.g. paths, secrets) to your server runtime code.
+
+The following example defines an `args` object with a property that identifies where assets generated by Astro are located:
+
+```
+export default function createIntegration() {  return {    name: '@example/my-adapter',    hooks: {      'astro:config:done': ({ config, setAdapter }) => {        setAdapter({          name: '@example/my-adapter',          entrypointResolution: 'explicit',          args: {            assets: config.build.assets          },          serverEntrypoint: '@example/my-adapter/server.js'        });      },    },  };}
+```
+
+### `exports`
+
+[Section titled “exports”](#exports)
+
+**Type:** `string[]`
+
+Defines an array of named exports to use in conjunction with the `createExports()` function of your server entrypoint.
+
+The following example assumes that `createExports()` provides an export named `handler`:
+
+```
+export default function createIntegration() {  return {    name: '@example/my-adapter',    hooks: {      'astro:config:done': ({ config, setAdapter }) => {        setAdapter({          name: '@example/my-adapter',          entrypointResolution: 'explicit',          exports: ['handler'],          serverEntrypoint: '@example/my-adapter/server.js'        });      },    },  };}
+```
+
+## Custom prerenderer
+
+[Section titled “Custom prerenderer”](#custom-prerenderer)
+
+**Added in:** `astro@6.0.0`
+
+Adapters can provide a custom prerenderer to control how pages are prerendered by using the [`setPrerenderer()`](/en/reference/integrations-reference/#setprerenderer-option) function in the `astro:build:start` hook.
+
+The following example shows how an adapter can set a custom prerenderer:
+
+```
+export default function createIntegration() {  return {    name: '@example/my-adapter',    hooks: {      'astro:build:start': ({ setPrerenderer }) => {        setPrerenderer((defaultPrerenderer) => ({          name: 'my-prerenderer',          async setup() {            // Start a preview server          },          async getStaticPaths() {            // Returns array of { pathname: string, route: RouteData }            return defaultPrerenderer.getStaticPaths();          },          async render(request, { routeData }) {            // request: Request, options: { routeData: RouteData }            // Custom rendering logic, e.g. make HTTP requests to a preview server            const response = await fetch(`http://localhost:4321${new URL(request.url).pathname}`);            return response;          },          async teardown() {            // Stop the preview server          }        }));      },      'astro:config:done': ({ setAdapter }) => {        setAdapter({          name: '@example/my-adapter',          entrypointResolution: 'auto',          serverEntrypoint: '@example/my-adapter/server.js',        });      },    },  };}
+```
+
+The factory function receives the default prerenderer, allowing you to wrap or extend its behavior. This is useful when you only need to customize specific aspects of prerendering.
+
+## Building a server entrypoint
+
+[Section titled “Building a server entrypoint”](#building-a-server-entrypoint)
+
+You will need to create a file that executes during server-side requests to enable on-demand rendering with your particular host. Astro’s adapter API attempts to work with any type of host and gives a flexible way to conform to the host APIs.
+
+You can import and use [`createApp()`](/en/reference/modules/astro-app/#createapp) to access methods that allow you to work with standard [`Request`](https://developer.mozilla.org/en-US/docs/Web/API/Request) and [`Response`](https://developer.mozilla.org/en-US/docs/Web/API/Response) objects.
+
+This file should conform to what the host expects. For example, some serverless hosts expect you to export an `handler()` function:
+
+```
+import { createApp } from 'astro/app/entrypoint';
+const app = createApp();
+export async function handler(event, context) {  // ...}
+```
+
+Learn more about the methods and utilities available in the [Adapter Server Entrypoint API Reference](/en/reference/modules/astro-app/).
+
+### Passing build-time configuration
+
+[Section titled “Passing build-time configuration”](#passing-build-time-configuration)
+
+If you need to access build-time configuration in your server entrypoint, you can pass via a virtual module. For example, your server might need to identify where assets generated by Astro are located.
+
+First, create and register a Vite plugin to serialize the data:
+
+```
+const VIRTUAL_MODULE_ID = 'virtual:@example/my-adapter:config';const RESOLVED_VIRTUAL_MODULE_ID = '\0' + VIRTUAL_MODULE_ID;
+function createConfigPlugin(config) {  return {    name: VIRTUAL_MODULE_ID,    resolveId: {      filter: {        id: new RegExp(`^${VIRTUAL_MODULE_ID}$`),      },      handler() {        return RESOLVED_VIRTUAL_MODULE_ID;      },    },    load: {      filter: {        id: new RegExp(`^${RESOLVED_VIRTUAL_MODULE_ID}$`),      },      handler() {        return `          export const assets = ${JSON.stringify(config.build.assets)};        `;      },    },  };}
+export default function createIntegration() {  let _config;  return {    name: '@example/my-adapter',    hooks: {      'astro:config:setup': ({ config, updateConfig }) => {        _config = config;
+        updateConfig({          vite: {            plugins: [createConfigPlugin(_config)]          }        })      },      'astro:config:done': ({ config, setAdapter }) => {        _config = config;        setAdapter({          name: '@example/my-adapter',          entrypointResolution: 'auto',          serverEntrypoint: '@example/my-adapter/server.js',        });      },    },  };}
+```
+
+You can create internal types if needed:
+
+```
+declare module 'virtual:@example/my-adapter:config' {  export const assets: string;}
+```
+
+You can then import the virtual module:
+
+```
+import { createApp } from 'astro/app/entrypoint';import { assets } from 'virtual:@example/my-adapter:config';
+const app = createApp();
+export async function handler(event, context) {  // ...}
+```
+
+## Building a preview entrypoint
+
+[Section titled “Building a preview entrypoint”](#building-a-preview-entrypoint)
+
+When your adapter supports [hybrid](#hybridoutput) or [server output](#serveroutput), you can provide a preview entrypoint to enable support for [`astro preview`](/en/reference/cli-reference/#astro-preview). Static output does not require a preview entrypoint.
+
+To register a preview entrypoint, make the module’s default export a function that takes the [server parameters](#previewserverparams) as an argument and returns a [`PreviewServer`](#previewserver). Then, specify the module path as the value for [`previewEntrypoint`](#previewentrypoint) in your adapter.
+
+The following example implements an entrypoint that creates a preview server using a custom `createServer()` function before returning it:
+
+```
+import type { CreatePreviewServer } from 'astro';import { createServer } from './utils/server';
+const createPreviewServer: CreatePreviewServer = async (config) => {  const host = config.host ?? '0.0.0.0';  const port = config.port ?? 4321;  const server = createServer(host, port);
+  return server;};
+export default createPreviewServer;
+```
+
+## Astro features
+
+[Section titled “Astro features”](#astro-features)
+
+Astro features are a way for an adapter to tell Astro whether they are able to support a feature, and also the adapter’s level of support.
+
+When using these properties, Astro will:
+
+*   run specific validation;
+*   emit contextual information to the logs;
+
+These operations are run based on the features supported or not supported, their level of support, the [desired amount of logging](#adaptersupportwithmessagesuppress), and the user’s own configuration.
+
+The following configuration tells Astro that this adapter has experimental support for the Sharp-powered built-in image service:
+
+```
+export default function createIntegration() {  return {    name: '@example/my-adapter',    hooks: {      'astro:config:done': ({ setAdapter }) => {        setAdapter({          name: '@example/my-adapter',          entrypointResolution: 'auto',          serverEntrypoint: '@example/my-adapter/server.js',          supportedAstroFeatures: {            sharpImageService: 'experimental'          }        });      },    },  };}
+```
+
+If the Sharp image service is used, Astro will log a warning and error to the terminal based on your adapter’s support:
+
+```
+[@example/my-adapter] The feature is experimental and subject to issues or changes.
+[@example/my-adapter] The currently selected adapter `@example/my-adapter` is not compatible with the service "Sharp". Your project will NOT be able to build.
+```
+
+A message can additionally be provided to give more context to the user:
+
+```
+export default function createIntegration() {  return {    name: '@example/my-adapter',    hooks: {      'astro:config:done': ({ setAdapter }) => {        setAdapter({          name: '@example/my-adapter',          entrypointResolution: 'auto',          serverEntrypoint: '@example/my-adapter/server.js',          supportedAstroFeatures: {            sharpImageService: {              support: 'limited',              message: 'This adapter has limited support for Sharp. Certain features may not work as expected.'            }          }        });      },    },  };}
+```
+
+This object contains the following configurable features:
+
+### `staticOutput`
+
+[Section titled “staticOutput”](#staticoutput)
+
+**Type:** [`AdapterSupport`](#adaptersupport)
+
+Defines whether the adapter is able to serve static pages.
+
+### `hybridOutput`
+
+[Section titled “hybridOutput”](#hybridoutput)
+
+**Type:** [`AdapterSupport`](#adaptersupport)
+
+Defines whether the adapter is able to serve sites that include a mix of static and on-demand rendered pages.
+
+### `serverOutput`
+
+[Section titled “serverOutput”](#serveroutput)
+
+**Type:** [`AdapterSupport`](#adaptersupport)
+
+Defines whether the adapter is able to serve on-demand rendered pages.
+
+### `i18nDomains`
+
+[Section titled “i18nDomains”](#i18ndomains)
+
+**Type:** [`AdapterSupport`](#adaptersupport)  
+
+**Added in:** `astro@4.3.0`
+
+Defines whether the adapter is able to support i18n domains.
+
+### `envGetSecret`
+
+[Section titled “envGetSecret”](#envgetsecret)
+
+**Type:** [`AdapterSupport`](#adaptersupport)  
+
+**Added in:** `astro@4.10.0`
+
+Defines whether the adapter is able to support `getSecret()` exported from [`astro:env/server`](/en/reference/modules/astro-env/). When enabled, this feature allows your adapter to retrieve secrets configured by users in `env.schema`.
+
+The following example enables the feature by passing [a valid `AdapterSupportsKind` value](#adaptersupportskind) to the adapter:
+
+```
+export default function createIntegration() {  return {    name: '@example/my-adapter',    hooks: {      'astro:config:done': ({ setAdapter }) => {        setAdapter({          name: '@example/my-adapter',          entrypointResolution: 'auto',          serverEntrypoint: '@example/my-adapter/server.js',          supportedAstroFeatures: {            envGetSecret: 'stable'          }        });      },    },  };}
+```
+
+The `astro/env/setup` module allows you to provide an implementation for `getSecret()`. In [your server entrypoint](#building-a-server-entrypoint), call `setGetEnv()` as soon as possible:
+
+```
+import { createApp } from 'astro/app/entrypoint';import { setGetEnv } from "astro/env/setup"
+setGetEnv((key) => process.env[key])
+const app = createApp();
+export async function handler(event, context) {  // ...}
+```
+
+If the adapter supports secrets, be sure to call `setGetEnv()` before `getSecret()` when environment variables are tied to the request:
+
+```
+import { createApp } from 'astro/app/entrypoint';import { setGetEnv } from 'astro/env/setup';
+const app = createApp();
+export default {  async fetch(request: Request, env: Record<string, unknown>) {    setGetEnv((key) => env[key]);
+    return await app.render(request);  }}
+```
+
+### `sharpImageService`
+
+[Section titled “sharpImageService”](#sharpimageservice)
+
+**Type:** [`AdapterSupport`](#adaptersupport)  
+
+**Added in:** `astro@5.0.0`
+
+Defines whether the adapter supports image transformation using the built-in Sharp image service.
+
+## Adapter features
+
+[Section titled “Adapter features”](#adapter-features)
+
+A set of features that changes the output of the emitted files. When an adapter opts in to these features, they will get additional information inside specific hooks and must implement the proper logic to handle the different output.
+
+### `middlewareMode`
+
+[Section titled “middlewareMode”](#middlewaremode)
+
+**Type:** [`MiddlewareMode`](#middlewaremode-1)  
+**Default:** `"classic"`  
+
+**Added in:** `astro@6.0.0`
+
+Determines at which stage of the page lifecycle the middleware is executed, and how the middleware code is emitted in the build output.
+
+The `classic` mode matches the default behavior of Astro. On prerendered pages, middleware is run at build time, and when the page is requested, the middleware is not run again. On dynamic pages, middleware is run at request time only. The middleware code is part of your server bundle.
+
+In `edge` mode, the middleware code can be deployed independently from the server bundle, for example, as an edge function.
+
+```
+export default function createIntegration() {  return {    name: '@example/my-adapter',    hooks: {      'astro:config:done': ({ setAdapter }) => {        setAdapter({          name: '@example/my-adapter',          entrypointResolution: 'auto',          serverEntrypoint: '@example/my-adapter/server.js',          adapterFeatures: {            middlewareMode: 'edge'          }        });      },    },  };}
+```
+
+Then, consume the hook [`astro:build:ssr`](/en/reference/integrations-reference/#astrobuildssr), which will give you a `middlewareEntryPoint`, an `URL` to the physical file on the file system.
+
+```
+export default function createIntegration() {  return {    name: '@example/my-adapter',    hooks: {      'astro:config:done': ({ setAdapter }) => {        setAdapter({          name: '@example/my-adapter',          entrypointResolution: 'auto',          serverEntrypoint: '@example/my-adapter/server.js',          adapterFeatures: {            middlewareMode: 'edge'          }        });      },
+      'astro:build:ssr': ({ middlewareEntryPoint }) => {        // remember to check if this property exits, it will be `undefined` if the adapter doesn't opt in to the feature        if (middlewareEntryPoint) {          createEdgeMiddleware(middlewareEntryPoint)        }      }    },  };}
+function createEdgeMiddleware(middlewareEntryPoint) {  // emit a new physical file using your bundler}
+```
+
+### `buildOutput`
+
+[Section titled “buildOutput”](#buildoutput)
+
+**Type:** `"static" | "server"`  
+**Default:** `"server"`  
+
+**Added in:** `astro@5.0.0`
+
+Allows you to force a specific output shape for the build. This can be useful for adapters that only work with a specific output type. For example, your adapter might expect a static website so it can create host-specific files. Defaults to `server` if not specified.
+
+```
+export default function createIntegration() {  return {    name: '@example/my-adapter',    hooks: {      'astro:config:done': ({ setAdapter }) => {        setAdapter({          name: '@example/my-adapter',          entrypointResolution: 'auto',          serverEntrypoint: '@example/my-adapter/server.js',          adapterFeatures: {            buildOutput: 'static'          }        });      },    },  };}
+```
+
+### `staticHeaders`
+
+[Section titled “staticHeaders”](#staticheaders)
+
+**Type:** `boolean`  
+**Default:** `false`  
+
+**Added in:** `astro@6.0.0`
+
+Whether or not the adapter provides support for setting response headers for static pages. When this feature is enabled, Astro will return a map of the `Headers` emitted by the static pages. This map is available as `routeToHeaders` in the [`astro:build:generated` hook](/en/reference/integrations-reference/#astrobuildgenerated) and can be used to generate platform-specific output that controls HTTP headers, for example, to create a `_headers` file for platforms that support it.
+
+```
+export default function createIntegration() {  return {    name: '@example/my-adapter',    hooks: {      'astro:config:done': ({ setAdapter }) => {        setAdapter({          name: '@example/my-adapter',          entrypointResolution: 'auto',          serverEntrypoint: '@example/my-adapter/server.js',          adapterFeatures: {            staticHeaders: true,          },        });      },      'astro:build:generated': ({ routeToHeaders }) => {        // use `routeToHeaders` to generate a configuration file        // for your virtual host of choice      },    },  };}
+```
+
+The value of the headers might change based on the features enabled/used by the application. For example, if [CSP is enabled](/en/reference/configuration-reference/#securitycsp), the `<meta http-equiv="content-security-policy">` element is not added to the static page. Instead, its `content` is available in the `routeToHeaders` map.
+
+### `preserveBuildClientDir`
+
+[Section titled “preserveBuildClientDir”](#preservebuildclientdir)
+
+**Type:** `boolean`  
+**Default:** `false`  
+
+**Added in:** `astro@6.0.0`
+
+When `true`, static builds will preserve the `client/server` directory structure instead of outputting directly to `outDir`. This ensures static builds use `build.client` for assets, maintaining consistency with server builds.
+
+This is useful for adapters that require a specific directory structure regardless of the build output type, such as deploying to platforms with specific file organization requirements.
+
+```
+export default function createIntegration() {  return {    name: '@example/my-adapter',    hooks: {      'astro:config:done': ({ setAdapter }) => {        setAdapter({          name: '@example/my-adapter',          entrypointResolution: 'auto',          serverEntrypoint: '@example/my-adapter/server.js',          adapterFeatures: {            preserveBuildClientDir: true,          },        });      },    },  };}
+```
+
+## Adapter types reference
+
+[Section titled “Adapter types reference”](#adapter-types-reference)
+
+The following types can be imported from the `astro` module:
+
+```
+import type {  AdapterSupport,  AdapterSupportsKind,  AdapterSupportWithMessage,  MiddlewareMode,  CreatePreviewServer,  PreviewServer,  PreviewServerParams,} from "astro";
+```
+
+### `AdapterSupport`
+
+[Section titled “AdapterSupport”](#adaptersupport)
+
+**Type:** `[AdapterSupportsKind](#adaptersupport) | [AdapterSupportWithMessage](#adaptersupportwithmessage)`  
+
+**Added in:** `astro@5.0.0`
+
+A union of valid formats to describe the support level for a feature.
+
+### `AdapterSupportsKind`
+
+[Section titled “AdapterSupportsKind”](#adaptersupportskind)
+
+**Type:** `"deprecated" | "experimental" | "limited" | "stable" | "unsupported"`
+
+Defines the level of support for a feature by your adapter:
+
+*   Use `"deprecated"` when your adapter deprecates support for a feature before removing it completely in a future version.
+*   Use `"experimental"` when your adapter adds support for a feature, but issues or breaking changes are expected.
+*   Use `"limited"` when your adapter only supports a subset of the full feature.
+*   Use `"stable"` when the feature is fully supported by your adapter.
+*   Use `"unsupported"` to warn users that they may encounter build issues in their project, as this feature is not supported by your adapter.
+
+### `AdapterSupportWithMessage`
+
+[Section titled “AdapterSupportWithMessage”](#adaptersupportwithmessage)
+
+**Added in:** `astro@5.0.0`
+
+An object that allows you to define a support level for a feature and a message to be logged in the user console. This object contains the following properties:
+
+#### `AdapterSupportWithMessage.support`
+
+[Section titled “AdapterSupportWithMessage.support”](#adaptersupportwithmessagesupport)
+
+**Type:** `Exclude<[AdapterSupportsKind](#adaptersupportskind), “stable”>`
+
+Defines the level of support for a feature by your adapter.
+
+#### `AdapterSupportWithMessage.message`
+
+[Section titled “AdapterSupportWithMessage.message”](#adaptersupportwithmessagemessage)
+
+**Type:** `string`
+
+Defines a custom message to log regarding the support of a feature by your adapter.
+
+#### `AdapterSupportWithMessage.suppress`
+
+[Section titled “AdapterSupportWithMessage.suppress”](#adaptersupportwithmessagesuppress)
+
+**Type:** `"default" | "all"`  
+
+**Added in:** `astro@5.9.0`
+
+An option to prevent showing some or all logged messages about an adapter’s support for a feature.
+
+If Astro’s default log message is redundant, or confusing to the user in combination with your [custom `message`](#adaptersupportwithmessagemessage), you can use `suppress: "default"` to suppress the default message and only log your message:
+
+```
+export default function createIntegration() {  return {    name: '@example/my-adapter',    hooks: {      'astro:config:done': ({ setAdapter }) => {        setAdapter({          name: '@example/my-adapter',          entrypointResolution: 'auto',          serverEntrypoint: '@example/my-adapter/server.js',          supportedAstroFeatures: {            sharpImageService: {              support: 'limited',              message: 'The adapter has limited support for Sharp. It will be used for images during build time, but will not work at runtime.',              suppress: 'default' // custom message is more detailed than the default            }          }        });      },    },  };}
+```
+
+You can also use `suppress: "all"` to suppress all messages about support for the feature. This is useful when these messages are unhelpful to users in a specific context, such as when they have a configuration setting that means they are not using that feature. For example, you can choose to prevent logging any messages about Sharp support from your adapter:
+
+```
+export default function createIntegration() {  return {    name: '@example/my-adapter',    hooks: {      'astro:config:done': ({ setAdapter }) => {        setAdapter({          name: '@example/my-adapter',          entrypointResolution: 'auto',          serverEntrypoint: '@example/my-adapter/server.js',          supportedAstroFeatures: {            sharpImageService: {              support: 'limited',              message: 'This adapter has limited support for Sharp. Certain features may not work as expected.',              suppress: 'all'            }          }        });      },    },  };}
+```
+
+### `MiddlewareMode`
+
+[Section titled “MiddlewareMode”](#middlewaremode-1)
+
+**Type:** `"classic" | "edge"`  
+
+**Added in:** `astro@6.0.0`
+
+A union of valid formats to describe the mode in which middleware is run.
+
+### `CreatePreviewServer`
+
+[Section titled “CreatePreviewServer”](#createpreviewserver)
+
+**Type:** `(params: [PreviewServerParams](#previewserverparams)) => [PreviewServer](#previewserver) | Promise<[PreviewServer](#previewserver)>`
+
+Describes the function an adapter should export to start a preview server when [`astro preview`](/en/reference/cli-reference/#astro-preview) is run.
+
+### `PreviewServer`
+
+[Section titled “PreviewServer”](#previewserver)
+
+**Type:** `{ host?: string; port: number; closed(): Promise<void>; stop(): Promise<void>; }`
+
+Describes an instance of a preview server for the adapter.
+
+#### `PreviewServer.host`
+
+[Section titled “PreviewServer.host”](#previewserverhost)
+
+**Type:** `string | undefined`
+
+Defines the host the preview server is listening on.
+
+#### `PreviewServer.port`
+
+[Section titled “PreviewServer.port”](#previewserverport)
+
+**Type:** `number`
+
+Defines the port the preview server is listening on.
+
+#### `PreviewServer.closed()`
+
+[Section titled “PreviewServer.closed()”](#previewserverclosed)
+
+**Type:** `() => Promise<void>`
+
+Defines a function that resolves when the preview server has closed.
+
+#### `PreviewServer.stop()`
+
+[Section titled “PreviewServer.stop()”](#previewserverstop)
+
+**Type:** `() => Promise<void>`
+
+Defines a function to stop the preview server and perform any necessary cleanup.
+
+### `PreviewServerParams`
+
+[Section titled “PreviewServerParams”](#previewserverparams)
+
+**Type:** `object`
+
+Describes the configuration for the preview server.
+
+#### `PreviewServerParams.outDir`
+
+[Section titled “PreviewServerParams.outDir”](#previewserverparamsoutdir)
+
+**Type:** `URL`
+
+The [configured output directory](/en/reference/configuration-reference/#outdir) for the build.
+
+#### `PreviewServerParams.client`
+
+[Section titled “PreviewServerParams.client”](#previewserverparamsclient)
+
+**Type:** `URL`
+
+The [configured client assets directory](/en/reference/configuration-reference/#buildclient) for the build.
+
+#### `PreviewServerParams.server`
+
+[Section titled “PreviewServerParams.server”](#previewserverparamsserver)
+
+**Type:** `URL`  
+
+**Added in:** `astro@6.0.0`
+
+The [configured directory for server JavaScript](/en/reference/configuration-reference/#buildserver) when building to SSR.
+
+#### `PreviewServerParams.serverEntrypoint`
+
+[Section titled “PreviewServerParams.serverEntrypoint”](#previewserverparamsserverentrypoint)
+
+**Type:** `URL`
+
+The built server entry module generated by Astro.
+
+#### `PreviewServerParams.host`
+
+[Section titled “PreviewServerParams.host”](#previewserverparamshost)
+
+**Type:** `string | undefined`
+
+Specifies the [configured host](/en/reference/configuration-reference/#serverhost) on which the server preview should listen.
+
+#### `PreviewServerParams.port`
+
+[Section titled “PreviewServerParams.port”](#previewserverparamsport)
+
+**Type:** `number`
+
+Defines the [configured port](/en/reference/configuration-reference/#serverport) on which the server preview should listen.
+
+#### `PreviewServerParams.base`
+
+[Section titled “PreviewServerParams.base”](#previewserverparamsbase)
+
+**Type:** `string`
+
+Specifies the [configured base path](/en/reference/configuration-reference/#base) to deploy to.
+
+#### `PreviewServerParams.logger`
+
+[Section titled “PreviewServerParams.logger”](#previewserverparamslogger)
+
+**Type:** [`AstroIntegrationLogger`](/en/reference/integrations-reference/#astrointegrationlogger)
+
+Defines an instance of the Astro logger that can be used to write logs when the preview server is running.
+
+#### `PreviewServerParams.headers`
+
+[Section titled “PreviewServerParams.headers”](#previewserverparamsheaders)
+
+**Type:** `OutgoingHttpHeaders | undefined`
+
+Describes the [configured HTTP response headers](/en/reference/configuration-reference/#serverheaders).
+
+#### `PreviewServerParams.root`
+
+[Section titled “PreviewServerParams.root”](#previewserverparamsroot)
+
+**Type:** `URL`
+
+Specifies the [configured root directory](/en/reference/configuration-reference/#root) of the project.
+
+## Allow installation via `astro add`
+
+[Section titled “Allow installation via astro add”](#allow-installation-via-astro-add)
+
+[The `astro add` command](/en/reference/cli-reference/#astro-add) allows users to easily add integrations and adapters to their project. To allow your adapter to be installed with this command, **add `astro-adapter` to the `keywords` field in your `package.json`**:
+
+```
+{  "name": "example",  "keywords": ["astro-adapter"],}
+```
+
+Once you [publish your adapter to npm](https://docs.npmjs.com/cli/v8/commands/npm-publish), running `astro add example` will install your package with any peer dependencies specified in your `package.json` and instruct users to update their project config manually.
+
+[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

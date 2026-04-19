@@ -1,0 +1,122 @@
+---
+title: "Testing Helper ​"
+source: "https://hono.dev/docs/helpers/testing"
+canonical_url: "https://hono.dev/docs/helpers/testing"
+docset: "hono"
+kind: "framework"
+adapter: "generic"
+last_crawled_at: "2026-04-18T16:48:52.816Z"
+content_hash: "b45881c66f53afadc05d1ab4e7773352ea72779234cfba559b09edaea8a2acbf"
+menu_path: ["Testing Helper ​"]
+section_path: []
+nav_prev: {"path": "hono/docs/helpers/streaming/index.md", "title": "Streaming Helper \u200b"}
+nav_next: {"path": "hono/docs/helpers/websocket/index.md", "title": "WebSocket Helper \u200b"}
+---
+
+The Testing Helper provides functions to make testing of Hono applications easier.
+
+## Import [​](#import)
+
+ts
+
+```
+import { Hono } from 'hono'
+import { testClient } from 'hono/testing'
+```
+
+## `testClient()` [​](#testclient)
+
+The `testClient()` function takes an instance of Hono as its first argument and returns an object typed according to your Hono application's routes, similar to the [Hono Client](hono/docs/guides/rpc/index.md#client). This allows you to call your defined routes in a type-safe manner with editor autocompletion within your tests.
+
+**Important Note on Type Inference:**
+
+For the `testClient` to correctly infer the types of your routes and provide autocompletion, **you must define your routes using chained methods directly on the `Hono` instance**.
+
+The type inference relies on the type flowing through the chained `.get()`, `.post()`, etc., calls. If you define routes separately after creating the Hono instance (like the common pattern shown in the "Hello World" example: `const app = new Hono(); app.get(...)`), the `testClient` will not have the necessary type information for specific routes, and you won't get the type-safe client features.
+
+**Example:**
+
+This example works because the `.get()` method is chained directly onto the `new Hono()` call:
+
+ts
+
+```
+// index.ts
+const app = new Hono().get('/search', (c) => {
+  const query = c.req.query('q')
+  return c.json({ query: query, results: ['result1', 'result2'] })
+})
+
+export default app
+```
+
+ts
+
+```
+// index.test.ts
+import { Hono } from 'hono'
+import { testClient } from 'hono/testing'
+import { describe, it, expect } from 'vitest' // Or your preferred test runner
+import app from './app'
+
+describe('Search Endpoint', () => {
+  // Create the test client from the app instance
+  const client = testClient(app)
+
+  it('should return search results', async () => {
+    // Call the endpoint using the typed client
+    // Notice the type safety for query parameters (if defined in the route)
+    // and the direct access via .$get()
+    const res = await client.search.$get({
+      query: { q: 'hono' },
+    })
+
+    // Assertions
+    expect(res.status).toBe(200)
+    expect(await res.json()).toEqual({
+      query: 'hono',
+      results: ['result1', 'result2'],
+    })
+  })
+})
+```
+
+To include headers in your test, pass them as the second parameter in the call. The second parameter can also take an `init` property as a `RequestInit` object, allowing you to set headers, method, body, etc. Learn more about the `init` property [here](hono/docs/guides/rpc/index.md#init-option).
+
+ts
+
+```
+// index.test.ts
+import { Hono } from 'hono'
+import { testClient } from 'hono/testing'
+import { describe, it, expect } from 'vitest' // Or your preferred test runner
+import app from './app'
+
+describe('Search Endpoint', () => {
+  // Create the test client from the app instance
+  const client = testClient(app)
+
+  it('should return search results', async () => {
+    // Include the token in the headers and set the content type
+    const token = 'this-is-a-very-clean-token'
+    const res = await client.search.$get(
+      {
+        query: { q: 'hono' },
+      },
+      {
+        headers: {
+          Authorization: `Bearer ${token}`,
+          'Content-Type': `application/json`,
+        },
+      }
+    )
+
+    // Assertions
+    expect(res.status).toBe(200)
+    expect(await res.json()).toEqual({
+      query: 'hono',
+      results: ['result1', 'result2'],
+    })
+  })
+})
+```

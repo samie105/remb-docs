@@ -1,0 +1,111 @@
+---
+title: "Proxy"
+source: "https://nextjs.org/docs/app/getting-started/proxy"
+canonical_url: "https://nextjs.org/docs/app/getting-started/proxy"
+docset: "nextjs"
+kind: "framework"
+adapter: "nextjs"
+last_crawled_at: "2026-04-18T13:13:36.194Z"
+content_hash: "56b940bf220525eb27fe61f78fa16c09a1b623d126d306486b58057cf3be905a"
+menu_path: ["Proxy"]
+section_path: []
+nav_prev: {"path": "nextjs/docs/app/getting-started/route-handlers/index.md", "title": "Route Handlers"}
+nav_next: {"path": "nextjs/docs/app/getting-started/deploying/index.md", "title": "Deploying"}
+---
+
+# Proxy
+
+Last updated April 15, 2026
+
+## Proxy[](#proxy)
+
+> **Good to know**: Starting with Next.js 16, Middleware is now called Proxy to better reflect its purpose. The functionality remains the same.
+
+Proxy allows you to run code before a request is completed. Then, based on the incoming request, you can modify the response by rewriting, redirecting, modifying the request or response headers, or responding directly.
+
+### Use cases[](#use-cases)
+
+Some common scenarios where Proxy is effective include:
+
+*   Modifying headers for all pages or a subset of pages
+*   Rewriting to different pages based on A/B tests or experiments
+*   Programmatic redirects based on incoming request properties
+
+For simple redirects, consider using the [`redirects`](/docs/app/api-reference/config/next-config-js/redirects) configuration in `next.config.ts` first. Proxy should be used when you need access to request data or more complex logic.
+
+Proxy is _not_ intended for slow data fetching. While Proxy can be helpful for [optimistic checks](/docs/app/guides/authentication#optimistic-checks-with-proxy-optional) such as permission-based redirects, it should not be used as a full session management or authorization solution.
+
+Using fetch with `options.cache`, `options.next.revalidate`, or `options.next.tags`, has no effect in Proxy.
+
+### Convention[](#convention)
+
+Create a `proxy.ts` (or `.js`) file in the project root, or inside `src` if applicable, so that it is located at the same level as `pages` or `app`.
+
+> **Note**: While only one `proxy.ts` file is supported per project, you can still organize your proxy logic into modules. Break out proxy functionalities into separate `.ts` or `.js` files and import them into your main `proxy.ts` file. This allows for cleaner management of route-specific proxy, aggregated in the `proxy.ts` for centralized control. By enforcing a single proxy file, it simplifies configuration, prevents potential conflicts, and optimizes performance by avoiding multiple proxy layers.
+
+### Example[](#example)
+
+You can export your proxy function as either a default export or a named `proxy` export:
+
+proxy.ts
+
+TypeScript
+
+JavaScriptTypeScript
+
+```
+import { NextResponse } from 'next/server'
+import type { NextRequest } from 'next/server'
+ 
+// This function can be marked `async` if using `await` inside
+export function proxy(request: NextRequest) {
+  return NextResponse.redirect(new URL('/home', request.url))
+}
+ 
+// Alternatively, you can use a default export:
+// export default function proxy(request: NextRequest) { ... }
+ 
+export const config = {
+  matcher: '/about/:path*',
+}
+```
+
+The `matcher` config allows you to filter Proxy to run on specific paths. See the [Matcher](/docs/app/api-reference/file-conventions/proxy#matcher) documentation for more details on path matching.
+
+Read more about [using `proxy`](/docs/app/guides/backend-for-frontend#proxy), or refer to the `proxy` [API reference](/docs/app/api-reference/file-conventions/proxy).
+
+## API Reference
+
+Learn more about Proxy
+
+[
+
+### proxy.js
+
+API reference for the proxy.js file.
+
+](/docs/app/api-reference/file-conventions/proxy)[
+
+### Backend for Frontend
+
+Learn how to use Next.js as a backend framework
+
+](/docs/app/guides/backend-for-frontend)
+
+[Previous
+
+Route Handlers
+
+](/docs/app/getting-started/route-handlers)
+
+[Next
+
+Deploying
+
+](/docs/app/getting-started/deploying)
+
+Was this helpful?
+
+supported.
+
+Send

@@ -1,0 +1,486 @@
+---
+title: "Mutating Data"
+source: "https://nextjs.org/docs/app/getting-started/mutating-data"
+canonical_url: "https://nextjs.org/docs/app/getting-started/mutating-data"
+docset: "nextjs"
+kind: "framework"
+adapter: "nextjs"
+last_crawled_at: "2026-04-18T13:13:31.433Z"
+content_hash: "8dd399f2abfb293e99d7ed7893d02d76485c7f93032f6cbab440f5459634af54"
+menu_path: ["Mutating Data"]
+section_path: []
+nav_prev: {"path": "nextjs/docs/app/getting-started/fetching-data/index.md", "title": "Fetching Data"}
+nav_next: {"path": "nextjs/docs/app/getting-started/caching/index.md", "title": "Caching"}
+---
+
+# Mutating Data
+
+Last updated April 15, 2026
+
+You can mutate data in Next.js using [React Server Functions](https://react.dev/reference/rsc/server-functions). This page will go through how you can [create](#creating-server-functions) and [invoke](#invoking-server-functions) Server Functions.
+
+## What are Server Functions?[](#what-are-server-functions)
+
+A **Server Function** is an asynchronous function that runs on the server. You can call them from the client through a network request, which is why they must be asynchronous.
+
+In an `action` or mutation context, they are also called **Server Actions**.
+
+By convention, a Server Action is an async function used with [`startTransition`](https://react.dev/reference/react/startTransition). This happens automatically when the function is:
+
+*   Passed to a `<form>` using the `action` prop.
+*   Passed to a `<button>` using the `formAction` prop.
+
+When an action is invoked, Next.js can return both the updated UI and new data in a single server roundtrip.
+
+Behind the scenes, actions use the `POST` method, and only this HTTP method can invoke them.
+
+Server Functions are reachable via direct POST requests, not just through your application's UI. Always verify authentication and authorization inside every Server Function. See the [Data Security guide](/docs/app/guides/data-security#authentication-and-authorization) for recommended patterns.
+
+> **Good to know:** A Server Action is a Server Function used in a specific way (for handling form submissions and mutations). Server Function is the broader term.
+
+## Creating Server Functions[](#creating-server-functions)
+
+A Server Function can be defined by using the [`use server`](https://react.dev/reference/rsc/use-server) directive. You can place the directive at the top of an **asynchronous** function to mark the function as a Server Function, or at the top of a separate file to mark all exports of that file.
+
+app/lib/actions.ts
+
+TypeScript
+
+JavaScriptTypeScript
+
+```
+import { auth } from '@/lib/auth'
+ 
+export async function createPost(formData: FormData) {
+  'use server'
+  const session = await auth()
+  if (!session?.user) {
+    throw new Error('Unauthorized')
+  }
+ 
+  const title = formData.get('title')
+  const content = formData.get('content')
+ 
+  // Mutate data
+  // Revalidate cache
+}
+ 
+export async function deletePost(formData: FormData) {
+  'use server'
+  const session = await auth()
+  if (!session?.user) {
+    throw new Error('Unauthorized')
+  }
+ 
+  const id = formData.get('id')
+ 
+  // Verify the user owns this resource before deleting
+  // Mutate data
+  // Revalidate cache
+}
+```
+
+### Server Components[](#server-components)
+
+Server Functions can be inlined in Server Components by adding the `"use server"` directive to the top of the function body:
+
+app/page.tsx
+
+TypeScript
+
+JavaScriptTypeScript
+
+```
+export default function Page() {
+  // Server Action
+  async function createPost(formData: FormData) {
+    'use server'
+    // ...
+  }
+ 
+  return <></>
+}
+```
+
+> **Good to know:** Server Components support progressive enhancement by default, meaning forms that call Server Actions will be submitted even if JavaScript hasn't loaded yet or is disabled.
+
+### Client Components[](#client-components)
+
+It's not possible to define Server Functions in Client Components. However, you can invoke them in Client Components by importing them from a file that has the `"use server"` directive at the top of it:
+
+app/actions.ts
+
+TypeScript
+
+JavaScriptTypeScript
+
+```
+'use server'
+ 
+export async function createPost() {}
+```
+
+app/ui/button.tsx
+
+TypeScript
+
+JavaScriptTypeScript
+
+```
+'use client'
+ 
+import { createPost } from '@/app/actions'
+ 
+export function Button() {
+  return <button formAction={createPost}>Create</button>
+}
+```
+
+> **Good to know:** In Client Components, forms invoking Server Actions will queue submissions if JavaScript isn't loaded yet, and will be prioritized for hydration. After hydration, the browser does not refresh on form submission.
+
+### Passing actions as props[](#passing-actions-as-props)
+
+You can also pass an action to a Client Component as a prop:
+
+```
+<ClientComponent updateItemAction={updateItem} />
+```
+
+app/client-component.tsx
+
+TypeScript
+
+JavaScriptTypeScript
+
+```
+'use client'
+ 
+export default function ClientComponent({
+  updateItemAction,
+}: {
+  updateItemAction: (formData: FormData) => void
+}) {
+  return <form action={updateItemAction}>{/* ... */}</form>
+}
+```
+
+## Invoking Server Functions[](#invoking-server-functions)
+
+There are two main ways you can invoke a Server Function:
+
+1.  [Forms](#forms) in Server and Client Components
+2.  [Event Handlers](#event-handlers) and [useEffect](#useeffect) in Client Components
+
+> **Good to know:** Server Functions are designed for server-side mutations. The client currently dispatches and awaits them one at a time. This is an implementation detail and may change. If you need parallel data fetching, use [data fetching](/docs/app/getting-started/fetching-data#server-components) in Server Components, or perform parallel work inside a single Server Function or [Route Handler](/docs/app/guides/backend-for-frontend#manipulating-data).
+
+### Forms[](#forms)
+
+React extends the HTML [`<form>`](https://react.dev/reference/react-dom/components/form) element to allow a Server Function to be invoked with the HTML `action` prop.
+
+When invoked in a form, the function automatically receives the [`FormData`](https://developer.mozilla.org/docs/Web/API/FormData/FormData) object. You can extract the data using the native [`FormData` methods](https://developer.mozilla.org/en-US/docs/Web/API/FormData#instance_methods):
+
+app/ui/form.tsx
+
+TypeScript
+
+JavaScriptTypeScript
+
+```
+import { createPost } from '@/app/actions'
+ 
+export function Form() {
+  return (
+    <form action={createPost}>
+      <input type="text" name="title" />
+      <input type="text" name="content" />
+      <button type="submit">Create</button>
+    </form>
+  )
+}
+```
+
+app/actions.ts
+
+TypeScript
+
+JavaScriptTypeScript
+
+```
+'use server'
+ 
+import { auth } from '@/lib/auth'
+ 
+export async function createPost(formData: FormData) {
+  const session = await auth()
+  if (!session?.user) {
+    throw new Error('Unauthorized')
+  }
+ 
+  const title = formData.get('title')
+  const content = formData.get('content')
+ 
+  // Mutate data
+  // Revalidate cache
+}
+```
+
+### Event Handlers[](#event-handlers)
+
+You can invoke a Server Function in a Client Component by using event handlers such as `onClick`.
+
+app/like-button.tsx
+
+TypeScript
+
+JavaScriptTypeScript
+
+```
+'use client'
+ 
+import { incrementLike } from './actions'
+import { useState } from 'react'
+ 
+export default function LikeButton({ initialLikes }: { initialLikes: number }) {
+  const [likes, setLikes] = useState(initialLikes)
+ 
+  return (
+    <>
+      <p>Total Likes: {likes}</p>
+      <button
+        onClick={async () => {
+          const updatedLikes = await incrementLike()
+          setLikes(updatedLikes)
+        }}
+      >
+        Like
+      </button>
+    </>
+  )
+}
+```
+
+## Examples[](#examples)
+
+### Showing a pending state[](#showing-a-pending-state)
+
+While executing a Server Function, you can show a loading indicator with React's [`useActionState`](https://react.dev/reference/react/useActionState) hook. This hook returns a `pending` boolean:
+
+app/ui/button.tsx
+
+TypeScript
+
+JavaScriptTypeScript
+
+```
+'use client'
+ 
+import { useActionState, startTransition } from 'react'
+import { createPost } from '@/app/actions'
+import { LoadingSpinner } from '@/app/ui/loading-spinner'
+ 
+export function Button() {
+  const [state, action, pending] = useActionState(createPost, false)
+ 
+  return (
+    <button onClick={() => startTransition(action)}>
+      {pending ? <LoadingSpinner /> : 'Create Post'}
+    </button>
+  )
+}
+```
+
+### Refresh data[](#refresh-data)
+
+After a mutation, you may want to refresh the current page to show the latest data. You can do this by calling [`refresh`](/docs/app/api-reference/functions/refresh) from `next/cache` in a Server Action:
+
+app/lib/actions.ts
+
+TypeScript
+
+JavaScriptTypeScript
+
+```
+'use server'
+ 
+import { auth } from '@/lib/auth'
+import { refresh } from 'next/cache'
+ 
+export async function updatePost(formData: FormData) {
+  const session = await auth()
+  if (!session?.user) {
+    throw new Error('Unauthorized')
+  }
+  // Mutate data
+  // ...
+ 
+  refresh()
+}
+```
+
+This refreshes the client router, ensuring the UI reflects the latest state. The `refresh()` function does not revalidate tagged data. To revalidate tagged data, use [`updateTag`](/docs/app/api-reference/functions/updateTag) or [`revalidateTag`](/docs/app/api-reference/functions/revalidateTag) instead.
+
+### Revalidate data[](#revalidate-data)
+
+After performing a mutation, you can revalidate the Next.js cache and show the updated data by calling [`revalidatePath`](/docs/app/api-reference/functions/revalidatePath) or [`revalidateTag`](/docs/app/api-reference/functions/revalidateTag) within the Server Function:
+
+app/lib/actions.ts
+
+TypeScript
+
+JavaScriptTypeScript
+
+```
+import { auth } from '@/lib/auth'
+import { revalidatePath } from 'next/cache'
+ 
+export async function createPost(formData: FormData) {
+  'use server'
+  const session = await auth()
+  if (!session?.user) {
+    throw new Error('Unauthorized')
+  }
+  // Mutate data
+  // ...
+ 
+  revalidatePath('/posts')
+}
+```
+
+### Redirect after a mutation[](#redirect-after-a-mutation)
+
+You may want to redirect the user to a different page after a mutation. You can do this by calling [`redirect`](/docs/app/api-reference/functions/redirect) within the Server Function.
+
+app/lib/actions.ts
+
+TypeScript
+
+JavaScriptTypeScript
+
+```
+'use server'
+ 
+import { auth } from '@/lib/auth'
+import { revalidatePath } from 'next/cache'
+import { redirect } from 'next/navigation'
+ 
+export async function createPost(formData: FormData) {
+  const session = await auth()
+  if (!session?.user) {
+    throw new Error('Unauthorized')
+  }
+  // Mutate data
+  // ...
+ 
+  revalidatePath('/posts')
+  redirect('/posts')
+}
+```
+
+Calling `redirect` [throws](/docs/app/api-reference/functions/redirect#behavior) a framework handled control-flow exception. Any code after it won't execute. If you need fresh data, call [`revalidatePath`](/docs/app/api-reference/functions/revalidatePath) or [`revalidateTag`](/docs/app/api-reference/functions/revalidateTag) beforehand.
+
+### Cookies[](#cookies)
+
+You can `get`, `set`, and `delete` cookies inside a Server Action using the [`cookies`](/docs/app/api-reference/functions/cookies) API.
+
+When you [set or delete](/docs/app/api-reference/functions/cookies#understanding-cookie-behavior-in-server-functions) a cookie in a Server Action, Next.js re-renders the current page and its layouts on the server so the **UI reflects the new cookie value**.
+
+> **Good to know**: The server update applies to the current React tree, re-rendering, mounting, or unmounting components, as needed. Client state is preserved for re-rendered components, and effects re-run if their dependencies changed.
+
+app/actions.ts
+
+TypeScript
+
+JavaScriptTypeScript
+
+```
+'use server'
+ 
+import { cookies } from 'next/headers'
+ 
+export async function exampleAction() {
+  const cookieStore = await cookies()
+ 
+  // Get cookie
+  cookieStore.get('name')?.value
+ 
+  // Set cookie
+  cookieStore.set('name', 'Delba')
+ 
+  // Delete cookie
+  cookieStore.delete('name')
+}
+```
+
+### useEffect[](#useeffect)
+
+You can use the React [`useEffect`](https://react.dev/reference/react/useEffect) hook to invoke a Server Action when the component mounts or a dependency changes. This is useful for mutations that depend on global events or need to be triggered automatically. For example, `onKeyDown` for app shortcuts, an intersection observer hook for infinite scrolling, or when the component mounts to update a view count:
+
+app/view-count.tsx
+
+TypeScript
+
+JavaScriptTypeScript
+
+```
+'use client'
+ 
+import { incrementViews } from './actions'
+import { useState, useEffect, useTransition } from 'react'
+ 
+export default function ViewCount({ initialViews }: { initialViews: number }) {
+  const [views, setViews] = useState(initialViews)
+  const [isPending, startTransition] = useTransition()
+ 
+  useEffect(() => {
+    startTransition(async () => {
+      const updatedViews = await incrementViews()
+      setViews(updatedViews)
+    })
+  }, [])
+ 
+  // You can use `isPending` to give users feedback
+  return <p>Total Views: {views}</p>
+}
+```
+
+## API Reference
+
+Learn more about the features mentioned in this page by reading the API Reference.
+
+[
+
+### revalidatePath
+
+API Reference for the revalidatePath function.
+
+](/docs/app/api-reference/functions/revalidatePath)[
+
+### revalidateTag
+
+API Reference for the revalidateTag function.
+
+](/docs/app/api-reference/functions/revalidateTag)[
+
+### redirect
+
+API Reference for the redirect function.
+
+](/docs/app/api-reference/functions/redirect)
+
+[Previous
+
+Fetching Data
+
+](/docs/app/getting-started/fetching-data)
+
+[Next
+
+Caching
+
+](/docs/app/getting-started/caching)
+
+Was this helpful?
+
+supported.
+
+Send

@@ -1,0 +1,240 @@
+---
+title: "Internationalization"
+source: "https://nextjs.org/docs/app/guides/internationalization"
+canonical_url: "https://nextjs.org/docs/app/guides/internationalization"
+docset: "nextjs"
+kind: "framework"
+adapter: "nextjs"
+last_crawled_at: "2026-04-18T13:14:53.711Z"
+content_hash: "a850f1c04ae4a3b25965b1506addb452f679f4626e1103423c30bbd0cdc9469b"
+menu_path: ["Internationalization"]
+section_path: []
+nav_prev: {"path": "nextjs/docs/app/guides/instrumentation/index.md", "title": "How to set up instrumentation"}
+nav_next: {"path": "nextjs/docs/app/guides/json-ld/index.md", "title": "How to implement JSON-LD in your Next.js application"}
+---
+
+# Internationalization
+
+Last updated April 15, 2026
+
+Next.js enables you to configure the routing and rendering of content to support multiple languages. Making your site adaptive to different locales includes translated content (localization) and internationalized routes.
+
+## Terminology[](#terminology)
+
+*   **Locale:** An identifier for a set of language and formatting preferences. This usually includes the preferred language of the user and possibly their geographic region.
+    *   `en-US`: English as spoken in the United States
+    *   `nl-NL`: Dutch as spoken in the Netherlands
+    *   `nl`: Dutch, no specific region
+
+## Routing Overview[](#routing-overview)
+
+It’s recommended to use the user’s language preferences in the browser to select which locale to use. Changing your preferred language will modify the incoming `Accept-Language` header to your application.
+
+For example, using the following libraries, you can look at an incoming `Request` to determine which locale to select, based on the `Headers`, locales you plan to support, and the default locale.
+
+proxy.js
+
+```
+import { match } from '@formatjs/intl-localematcher'
+import Negotiator from 'negotiator'
+ 
+let headers = { 'accept-language': 'en-US,en;q=0.5' }
+let languages = new Negotiator({ headers }).languages()
+let locales = ['en-US', 'nl-NL', 'nl']
+let defaultLocale = 'en-US'
+ 
+match(languages, locales, defaultLocale) // -> 'en-US'
+```
+
+Routing can be internationalized by either the sub-path (`/fr/products`) or domain (`my-site.fr/products`). With this information, you can now redirect the user based on the locale inside [Proxy](/docs/app/api-reference/file-conventions/proxy).
+
+proxy.js
+
+```
+import { NextResponse } from "next/server";
+ 
+let locales = ['en-US', 'nl-NL', 'nl']
+ 
+// Get the preferred locale, similar to the above or using a library
+function getLocale(request) { ... }
+ 
+export function proxy(request) {
+  // Check if there is any supported locale in the pathname
+  const { pathname } = request.nextUrl
+  const pathnameHasLocale = locales.some(
+    (locale) => pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`
+  )
+ 
+  if (pathnameHasLocale) return
+ 
+  // Redirect if there is no locale
+  const locale = getLocale(request)
+  request.nextUrl.pathname = `/${locale}${pathname}`
+  // e.g. incoming request is /products
+  // The new URL is now /en-US/products
+  return NextResponse.redirect(request.nextUrl)
+}
+ 
+export const config = {
+  matcher: [
+    // Skip all internal paths (_next)
+    '/((?!_next).*)',
+    // Optional: only run on root (/) URL
+    // '/'
+  ],
+}
+```
+
+Finally, ensure all special files inside `app/` are nested under `app/[lang]`. This enables the Next.js router to dynamically handle different locales in the route, and forward the `lang` parameter to every layout and page. For example:
+
+app/\[lang\]/page.tsx
+
+TypeScript
+
+JavaScriptTypeScript
+
+```
+// You now have access to the current locale
+// e.g. /en-US/products -> `lang` is "en-US"
+export default async function Page({ params }: PageProps<'/[lang]'>) {
+  const { lang } = await params
+  return ...
+}
+```
+
+> **Good to know:** `PageProps` and `LayoutProps` are globally available TypeScript helpers that provide strong typing for route parameters. See [PageProps](/docs/app/api-reference/file-conventions/page#page-props-helper) and [LayoutProps](/docs/app/api-reference/file-conventions/layout#layout-props-helper) for more details.
+
+The root layout can also be nested in the new folder (e.g. `app/[lang]/layout.js`).
+
+## Localization[](#localization)
+
+Changing displayed content based on the user’s preferred locale, or localization, is not something specific to Next.js. The patterns described below would work the same with any web application.
+
+Let’s assume we want to support both English and Dutch content inside our application. We might maintain two different “dictionaries”, which are objects that give us a mapping from some key to a localized string. For example:
+
+dictionaries/en.json
+
+```
+{
+  "products": {
+    "cart": "Add to Cart"
+  }
+}
+```
+
+dictionaries/nl.json
+
+```
+{
+  "products": {
+    "cart": "Toevoegen aan Winkelwagen"
+  }
+}
+```
+
+We can then create a `getDictionary` function to load the translations for the requested locale:
+
+app/\[lang\]/dictionaries.ts
+
+TypeScript
+
+JavaScriptTypeScript
+
+```
+import 'server-only'
+ 
+const dictionaries = {
+  en: () => import('./dictionaries/en.json').then((module) => module.default),
+  nl: () => import('./dictionaries/nl.json').then((module) => module.default),
+}
+ 
+export type Locale = keyof typeof dictionaries
+ 
+export const hasLocale = (locale: string): locale is Locale =>
+  locale in dictionaries
+ 
+export const getDictionary = async (locale: Locale) => dictionaries[locale]()
+```
+
+Given the currently selected language, we can fetch the dictionary inside of a layout or page.
+
+Since `lang` is typed as `string`, using `hasLocale` narrows the type to your supported locales. It also ensures a 404 is returned if a translation is missing, rather than a runtime error.
+
+app/\[lang\]/page.tsx
+
+TypeScript
+
+JavaScriptTypeScript
+
+```
+import { notFound } from 'next/navigation'
+import { getDictionary, hasLocale } from './dictionaries'
+ 
+export default async function Page({ params }: PageProps<'/[lang]'>) {
+  const { lang } = await params
+ 
+  if (!hasLocale(lang)) notFound()
+ 
+  const dict = await getDictionary(lang)
+  return <button>{dict.products.cart}</button> // Add to Cart
+}
+```
+
+Because all layouts and pages in the `app/` directory default to [Server Components](/docs/app/getting-started/server-and-client-components), we do not need to worry about the size of the translation files affecting our client-side JavaScript bundle size. This code will **only run on the server**, and only the resulting HTML will be sent to the browser.
+
+## Static Rendering[](#static-rendering)
+
+To generate static routes for a given set of locales, we can use `generateStaticParams` with any page or layout. This can be global, for example, in the root layout:
+
+app/\[lang\]/layout.tsx
+
+TypeScript
+
+JavaScriptTypeScript
+
+```
+export async function generateStaticParams() {
+  return [{ lang: 'en-US' }, { lang: 'de' }]
+}
+ 
+export default async function RootLayout({
+  children,
+  params,
+}: LayoutProps<'/[lang]'>) {
+  return (
+    <html lang={(await params).lang}>
+      <body>{children}</body>
+    </html>
+  )
+}
+```
+
+## Resources[](#resources)
+
+*   [Minimal i18n routing and translations](https://github.com/vercel/next.js/tree/canary/examples/i18n-routing)
+*   [`next-intl`](https://next-intl.dev)
+*   [`next-international`](https://github.com/QuiiBz/next-international)
+*   [`next-i18n-router`](https://github.com/i18nexus/next-i18n-router)
+*   [`paraglide-next`](https://inlang.com/m/osslbuzt/paraglide-next-i18n)
+*   [`lingui`](https://lingui.dev)
+*   [`tolgee`](https://tolgee.io/apps-integrations/next)
+*   [`next-intlayer`](https://intlayer.org/doc/environment/nextjs)
+*   [`gt-next`](https://generaltranslation.com/en/docs/next)
+
+[Previous
+
+Instrumentation
+
+](/docs/app/guides/instrumentation)
+
+[Next
+
+JSON-LD
+
+](/docs/app/guides/json-ld)
+
+Was this helpful?
+
+supported.
+
+Send

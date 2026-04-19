@@ -1,0 +1,187 @@
+---
+title: "PostgreSQL: Documentation: 18: pg_createsubscriber"
+source: "https://www.postgresql.org/docs/current/app-pgcreatesubscriber.html"
+canonical_url: "https://www.postgresql.org/docs/current/app-pgcreatesubscriber.html"
+docset: "postgres"
+kind: "database"
+adapter: "generic"
+last_crawled_at: "2026-04-18T16:50:29.247Z"
+content_hash: "342757ed98bf7faeae53a594da63b662686278c6f191e4ff9e2a88173145e61b"
+menu_path: ["PostgreSQL: Documentation: 18: pg_createsubscriber"]
+section_path: []
+nav_prev: {"path": "postgres/docs/current/app-pgcontroldata.html/index.md", "title": "PostgreSQL: Documentation: 18: pg_controldata"}
+nav_next: {"path": "postgres/docs/current/app-pgreceivewal.html/index.md", "title": "PostgreSQL: Documentation: 18: pg_receivewal"}
+---
+
+pg\_createsubscriber — convert a physical replica into a new logical replica
+
+## Synopsis
+
+`pg_createsubscriber` \[_`option`_...\] { `-d` | `--database` }_`dbname`_ { `-D` | `--pgdata` }_`datadir`_ { `-P` | `--publisher-server` }_`connstr`_
+
+## Description
+
+pg\_createsubscriber creates a new logical replica from a physical standby server. All tables in the specified database are included in the [logical replication](https://www.postgresql.org/docs/current/logical-replication.html "Chapter 29. Logical Replication") setup. A pair of publication and subscription objects are created for each database. It must be run at the target server.
+
+After a successful run, the state of the target server is analogous to a fresh logical replication setup. The main difference between the logical replication setup and pg\_createsubscriber is how the data synchronization is done. pg\_createsubscriber does not copy the initial table data. It does only the synchronization phase, which ensures each table is brought up to a synchronized state.
+
+pg\_createsubscriber targets large database systems because in logical replication setup, most of the time is spent doing the initial data copy. Furthermore, a side effect of this long time spent synchronizing data is usually a large amount of changes to be applied (that were produced during the initial data copy), which increases even more the time when the logical replica will be available. For smaller databases, it is recommended to set up logical replication with initial data synchronization. For details, see the `CREATE SUBSCRIPTION` [`copy_data`](postgres/docs/current/sql-createsubscription.html/index.md#SQL-CREATESUBSCRIPTION-PARAMS-WITH-COPY-DATA) option.
+
+## Options
+
+pg\_createsubscriber accepts the following command-line arguments:
+
+`-a`  
+`--all`
+
+Create one subscription per database on the target server. Exceptions are template databases and databases that don't allow connections. To discover the list of all databases, connect to the source server using the database name specified in the `--publisher-server` connection string, or if not specified, the `postgres` database will be used, or if that does not exist, `template1` will be used. Automatically generated names for subscriptions, publications, and replication slots are used when this option is specified. This option cannot be used along with `--database`, `--publication`, `--replication-slot`, or `--subscription`.
+
+``-d _`dbname`_``  
+``--database=_`dbname`_``
+
+The name of the database in which to create a subscription. Multiple databases can be selected by writing multiple `-d` switches. This option cannot be used together with `-a`. If `-d` option is not provided, the database name will be obtained from `-P` option. If the database name is not specified in either the `-d` option, or the `-P` option, and `-a` option is not specified, an error will be reported.
+
+``-D _`directory`_``  
+``--pgdata=_`directory`_``
+
+The target directory that contains a cluster directory from a physical replica.
+
+`-n`  
+`--dry-run`
+
+Do everything except actually modifying the target directory.
+
+``-p _`port`_``  
+``--subscriber-port=_`port`_``
+
+The port number on which the target server is listening for connections. Defaults to running the target server on port 50432 to avoid unintended client connections.
+
+``-P _`connstr`_``  
+``--publisher-server=_`connstr`_``
+
+The connection string to the publisher. For details see [Section 32.1.1](https://www.postgresql.org/docs/current/libpq-connect.html#LIBPQ-CONNSTRING "32.1.1. Connection Strings").
+
+``-s _`dir`_``  
+``--socketdir=_`dir`_``
+
+The directory to use for postmaster sockets on target server. The default is current directory.
+
+``-t _`seconds`_``  
+``--recovery-timeout=_`seconds`_``
+
+The maximum number of seconds to wait for recovery to end. Setting to 0 disables. The default is 0.
+
+`-T`  
+`--enable-two-phase`
+
+Enables [`two_phase`](postgres/docs/current/sql-createsubscription.html/index.md#SQL-CREATESUBSCRIPTION-PARAMS-WITH-TWO-PHASE) commit for the subscription. When multiple databases are specified, this option applies uniformly to all subscriptions created on those databases. The default is `false`.
+
+``-U _`username`_``  
+``--subscriber-username=_`username`_``
+
+The user name to connect as on target server. Defaults to the current operating system user name.
+
+`-v`  
+`--verbose`
+
+Enables verbose mode. This will cause pg\_createsubscriber to output progress messages and detailed information about each step to standard error. Repeating the option causes additional debug-level messages to appear on standard error.
+
+``--clean=_`objtype`_``
+
+Drop all objects of the specified type from specified databases on the target server.
+
+*   `publications`: The `FOR ALL TABLES` publications established for this subscriber are always dropped; specifying this object type causes all other publications replicated from the source server to be dropped as well.
+    
+
+The objects selected to be dropped are individually logged, including during a `--dry-run`. There is no opportunity to affect or stop the dropping of the selected objects, so consider taking a backup of them using pg\_dump.
+
+``--config-file=_`filename`_``
+
+Use the specified main server configuration file for the target data directory. pg\_createsubscriber internally uses the pg\_ctl command to start and stop the target server. It allows you to specify the actual `postgresql.conf` configuration file if it is stored outside the data directory.
+
+``--publication=_`name`_``
+
+The publication name to set up the logical replication. Multiple publications can be specified by writing multiple `--publication` switches. The number of publication names must match the number of specified databases, otherwise an error is reported. The order of the multiple publication name switches must match the order of database switches. If this option is not specified, a generated name is assigned to the publication name. This option cannot be used together with `--all`.
+
+``--replication-slot=_`name`_``
+
+The replication slot name to set up the logical replication. Multiple replication slots can be specified by writing multiple `--replication-slot` switches. The number of replication slot names must match the number of specified databases, otherwise an error is reported. The order of the multiple replication slot name switches must match the order of database switches. If this option is not specified, the subscription name is assigned to the replication slot name. This option cannot be used together with `--all`.
+
+``--subscription=_`name`_``
+
+The subscription name to set up the logical replication. Multiple subscriptions can be specified by writing multiple `--subscription` switches. The number of subscription names must match the number of specified databases, otherwise an error is reported. The order of the multiple subscription name switches must match the order of database switches. If this option is not specified, a generated name is assigned to the subscription name. This option cannot be used together with `--all`.
+
+`-V`  
+`--version`
+
+Print the pg\_createsubscriber version and exit.
+
+`-?`  
+`--help`
+
+Show help about pg\_createsubscriber command line arguments, and exit.
+
+## Notes
+
+### Prerequisites
+
+There are some prerequisites for pg\_createsubscriber to convert the target server into a logical replica. If these are not met, an error will be reported. The source and target servers must have the same major version as the pg\_createsubscriber. The given target data directory must have the same system identifier as the source data directory. The given database user for the target data directory must have privileges for creating [subscriptions](https://www.postgresql.org/docs/current/sql-createsubscription.html "CREATE SUBSCRIPTION") and using [`pg_replication_origin_advance()`](postgres/docs/current/functions-admin.html/index.md#PG-REPLICATION-ORIGIN-ADVANCE).
+
+The target server must be used as a physical standby. The target server must have [max\_active\_replication\_origins](postgres/docs/current/runtime-config-replication.html/index.md#GUC-MAX-ACTIVE-REPLICATION-ORIGINS) and [max\_logical\_replication\_workers](postgres/docs/current/runtime-config-replication.html/index.md#GUC-MAX-LOGICAL-REPLICATION-WORKERS) configured to a value greater than or equal to the number of specified databases. The target server must have [max\_worker\_processes](postgres/docs/current/runtime-config-resource.html/index.md#GUC-MAX-WORKER-PROCESSES) configured to a value greater than the number of specified databases. The target server must accept local connections. If you are planning to use the `--enable-two-phase` switch then you will also need to set the [max\_prepared\_transactions](postgres/docs/current/runtime-config-resource.html/index.md#GUC-MAX-PREPARED-TRANSACTIONS) appropriately.
+
+The source server must accept connections from the target server. The source server must not be in recovery. The source server must have [wal\_level](postgres/docs/current/runtime-config-wal.html/index.md#GUC-WAL-LEVEL) as `logical`. The source server must have [max\_replication\_slots](postgres/docs/current/runtime-config-replication.html/index.md#GUC-MAX-REPLICATION-SLOTS) configured to a value greater than or equal to the number of specified databases plus existing replication slots. The source server must have [max\_wal\_senders](postgres/docs/current/runtime-config-replication.html/index.md#GUC-MAX-WAL-SENDERS) configured to a value greater than or equal to the number of specified databases and existing WAL sender processes.
+
+### Warnings
+
+If pg\_createsubscriber fails after the target server was promoted, then the data directory is likely not in a state that can be recovered. In such case, creating a new standby server is recommended.
+
+pg\_createsubscriber usually starts the target server with different connection settings during transformation. Hence, connections to the target server should fail.
+
+Since DDL commands are not replicated by logical replication, avoid executing DDL commands that change the database schema while running pg\_createsubscriber. If the target server has already been converted to logical replica, the DDL commands might not be replicated, which might cause an error.
+
+If pg\_createsubscriber fails while processing, objects (publications, replication slots) created on the source server are removed. The removal might fail if the target server cannot connect to the source server. In such a case, a warning message will inform the objects left. If the target server is running, it will be stopped.
+
+If the replication is using [primary\_slot\_name](postgres/docs/current/runtime-config-replication.html/index.md#GUC-PRIMARY-SLOT-NAME), it will be removed from the source server after the logical replication setup.
+
+If the target server is a synchronous replica, transaction commits on the primary might wait for replication while running pg\_createsubscriber.
+
+Unless the `--enable-two-phase` switch is specified, pg\_createsubscriber sets up logical replication with two-phase commit disabled. This means that any prepared transactions will be replicated at the time of `COMMIT PREPARED`, without advance preparation. Once setup is complete, you can manually drop and re-create the subscription(s) with the [`two_phase`](postgres/docs/current/sql-createsubscription.html/index.md#SQL-CREATESUBSCRIPTION-PARAMS-WITH-TWO-PHASE) option enabled.
+
+pg\_createsubscriber changes the system identifier using pg\_resetwal. It would avoid situations in which the target server might use WAL files from the source server. If the target server has a standby, replication will break and a fresh standby should be created.
+
+Replication failures can occur if required WAL files are missing. To prevent this, the source server must set [max\_slot\_wal\_keep\_size](postgres/docs/current/runtime-config-replication.html/index.md#GUC-MAX-SLOT-WAL-KEEP-SIZE) to `-1` to ensure that required WAL files are not prematurely removed.
+
+### How It Works
+
+The basic idea is to have a replication start point from the source server and set up a logical replication to start from this point:
+
+1.  Start the target server with the specified command-line options. If the target server is already running, pg\_createsubscriber will terminate with an error.
+    
+2.  Check if the target server can be converted. There are also a few checks on the source server. If any of the prerequisites are not met, pg\_createsubscriber will terminate with an error.
+    
+3.  Create a publication and replication slot for each specified database on the source server. Each publication is created using [`FOR ALL TABLES`](postgres/docs/current/sql-createpublication.html/index.md#SQL-CREATEPUBLICATION-PARAMS-FOR-ALL-TABLES). If the `--publication` option is not specified, the publication has the following name pattern: “`pg_createsubscriber_%u_%x`” (parameter: database _`oid`_, random _`int`_). If the `--replication-slot` option is not specified, the replication slot has the following name pattern: “`pg_createsubscriber_%u_%x`” (parameters: database _`oid`_, random _`int`_). These replication slots will be used by the subscriptions in a future step. The last replication slot LSN is used as a stopping point in the [recovery\_target\_lsn](postgres/docs/current/runtime-config-wal.html/index.md#GUC-RECOVERY-TARGET-LSN) parameter and by the subscriptions as a replication start point. It guarantees that no transaction will be lost.
+    
+4.  Write recovery parameters into the target data directory and restart the target server. It specifies an LSN ([recovery\_target\_lsn](postgres/docs/current/runtime-config-wal.html/index.md#GUC-RECOVERY-TARGET-LSN)) of the write-ahead log location up to which recovery will proceed. It also specifies `promote` as the action that the server should take once the recovery target is reached. Additional [recovery parameters](https://www.postgresql.org/docs/current/runtime-config-wal.html#RUNTIME-CONFIG-WAL-RECOVERY-TARGET "19.5.6. Recovery Target") are added to avoid unexpected behavior during the recovery process such as end of the recovery as soon as a consistent state is reached (WAL should be applied until the replication start location) and multiple recovery targets that can cause a failure. This step finishes once the server ends standby mode and is accepting read-write transactions. If `--recovery-timeout` option is set, pg\_createsubscriber terminates if recovery does not end until the given number of seconds.
+    
+5.  Create a subscription for each specified database on the target server. If the `--subscription` option is not specified, the subscription has the following name pattern: “`pg_createsubscriber_%u_%x`” (parameters: database _`oid`_, random _`int`_). It does not copy existing data from the source server. It does not create a replication slot. Instead, it uses the replication slot that was created in a previous step. The subscription is created but it is not enabled yet. The reason is the replication progress must be set to the replication start point before starting the replication.
+    
+6.  Drop publications on the target server that were replicated because they were created before the replication start location. It has no use on the subscriber.
+    
+7.  Set the replication progress to the replication start point for each subscription. When the target server starts the recovery process, it catches up to the replication start point. This is the exact LSN to be used as a initial replication location for each subscription. The replication origin name is obtained since the subscription was created. The replication origin name and the replication start point are used in [`pg_replication_origin_advance()`](postgres/docs/current/functions-admin.html/index.md#PG-REPLICATION-ORIGIN-ADVANCE) to set up the initial replication location.
+    
+8.  Enable the subscription for each specified database on the target server. The subscription starts applying transactions from the replication start point.
+    
+9.  If the standby server was using [primary\_slot\_name](postgres/docs/current/runtime-config-replication.html/index.md#GUC-PRIMARY-SLOT-NAME), it has no use from now on so drop it.
+    
+10.  If the standby server contains [failover replication slots](https://www.postgresql.org/docs/current/logicaldecoding-explanation.html#LOGICALDECODING-REPLICATION-SLOTS-SYNCHRONIZATION "47.2.3. Replication Slot Synchronization"), they cannot be synchronized anymore, so drop them.
+     
+11.  Update the system identifier on the target server. The [pg\_resetwal](https://www.postgresql.org/docs/current/app-pgresetwal.html "pg_resetwal") is run to modify the system identifier. The target server is stopped as a `pg_resetwal` requirement.
+     
+
+## Examples
+
+To create a logical replica for databases `hr` and `finance` from a physical replica at `foo`:
+
+```
+$
+```

@@ -1,0 +1,76 @@
+---
+title: "PostgreSQL: Documentation: 18: 53.10. pg_hba_file_rules"
+source: "https://www.postgresql.org/docs/current/view-pg-hba-file-rules.html"
+canonical_url: "https://www.postgresql.org/docs/current/view-pg-hba-file-rules.html"
+docset: "postgres"
+kind: "database"
+adapter: "generic"
+last_crawled_at: "2026-04-18T16:50:15.962Z"
+content_hash: "53fd81f4b97e1b735aefdaa4698c926dfdebf6e0e3fe53f6808c993f4666a9a9"
+menu_path: ["PostgreSQL: Documentation: 18: 53.10. pg_hba_file_rules"]
+section_path: []
+nav_prev: {"path": "postgres/docs/current/view-pg-group.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.9.\u00a0pg_group"}
+nav_next: {"path": "postgres/docs/current/view-pg-ident-file-mappings.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.11.\u00a0pg_ident_file_mappings"}
+---
+
+Development Versions: [devel](https://www.postgresql.org/docs/devel/view-pg-hba-file-rules.html "PostgreSQL devel - 53.10. pg_hba_file_rules")
+
+The view `pg_hba_file_rules` provides a summary of the contents of the client authentication configuration file, [`pg_hba.conf`](https://www.postgresql.org/docs/current/auth-pg-hba-conf.html "20.1. The pg_hba.conf File"). A row appears in this view for each non-empty, non-comment line in the file, with annotations indicating whether the rule could be applied successfully.
+
+This view can be helpful for checking whether planned changes in the authentication configuration file will work, or for diagnosing a previous failure. Note that this view reports on the _current_ contents of the file, not on what was last loaded by the server.
+
+By default, the `pg_hba_file_rules` view can be read only by superusers.
+
+**Table 53.10. `pg_hba_file_rules` Columns**
+
+Column Type
+
+Description
+
+`rule_number` `int4`
+
+Number of this rule, if valid, otherwise `NULL`. This indicates the order in which each rule is considered until a match is found during authentication.
+
+`file_name` `text`
+
+Name of the file containing this rule
+
+`line_number` `int4`
+
+Line number of this rule in `file_name`
+
+`type` `text`
+
+Type of connection
+
+`database` `text[]`
+
+List of database name(s) to which this rule applies
+
+`user_name` `text[]`
+
+List of user and group name(s) to which this rule applies
+
+`address` `text`
+
+Host name or IP address, or one of `all`, `samehost`, or `samenet`, or null for local connections
+
+`netmask` `text`
+
+IP address mask, or null if not applicable
+
+`auth_method` `text`
+
+Authentication method
+
+`options` `text[]`
+
+Options specified for authentication method, if any
+
+`error` `text`
+
+If not null, an error message indicating why this line could not be processed
+
+Usually, a row reflecting an incorrect entry will have values for only the `line_number` and `error` fields.
+
+See [Chapter 20](https://www.postgresql.org/docs/current/client-authentication.html "Chapter 20. Client Authentication") for more information about client authentication configuration.

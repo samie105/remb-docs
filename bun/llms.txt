@@ -1,0 +1,8 @@
+# Bun
+
+> Documentation corpus for Bun (language).
+> Crawled 1 pages from https://bun.com/docs
+
+## Docs
+
+- [Macros](https://bun.com/docs/bundler/macros)

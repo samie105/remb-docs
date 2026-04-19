@@ -1,0 +1,193 @@
+---
+title: "Custom OAuth/OIDC Providers"
+source: "https://supabase.com/docs/guides/auth/custom-oauth-providers"
+canonical_url: "https://supabase.com/docs/guides/auth/custom-oauth-providers"
+docset: "supabase"
+kind: "platform"
+adapter: "generic"
+last_crawled_at: "2026-04-18T16:37:37.636Z"
+content_hash: "23a32bad8b995d2c3b8f093203ba6838cf4268544baae4db031ce511ac8f421a"
+menu_path: ["Auth","Auth","Flows (How-tos)","Flows (How-tos)","Custom OAuth/OIDC Providers","Custom OAuth/OIDC Providers"]
+section_path: ["Auth","Auth","Flows (How-tos)","Flows (How-tos)","Custom OAuth/OIDC Providers","Custom OAuth/OIDC Providers"]
+nav_prev: {"path": "supabase/docs/guides/auth/auth-web3/index.md", "title": "Sign in with Web3"}
+nav_next: {"path": "supabase/docs/guides/auth/debugging/error-codes/index.md", "title": "Error Codes"}
+---
+
+# 
+
+Custom OAuth/OIDC Providers
+
+* * *
+
+Custom OAuth/OIDC providers let you integrate any standards-compliant identity provider with Supabase Auth, beyond the ones Supabase supports out of the box.
+
+Each custom provider uses a `custom:` prefix in its identifier (for example, `custom:my-idp` or `custom:github-enterprise`). This prefix distinguishes custom providers from built-in providers.
+
+There are two provider types:
+
+*   **OAuth2**: for generic OAuth2 providers where you supply the authorization, token, and userinfo endpoints manually.
+*   **OIDC**: for providers that support [OpenID Connect](https://openid.net/connect/) discovery. You supply only the issuer URL and endpoints are resolved automatically.
+
+You can add up to 3 custom providers per project. If you need more, [contact support](/dashboard/support/new).
+
+## Creating a provider[#](#creating-a-provider)
+
+The create form displays a read-only **Callback URL**. Copy this URL and configure it as the redirect/callback URI in your external identity provider before completing setup.
+
+### OAuth2 provider[#](#oauth2-provider)
+
+Use an OAuth2 provider when your identity provider does not support OpenID Connect discovery. You must supply the authorization, token, and userinfo endpoint URLs explicitly.
+
+1.  Go to [Auth Providers](/dashboard/project/_/auth/providers) in the Dashboard.
+2.  Click **New Provider**. Select **Manual configuration** as the configuration method.
+3.  Enter a unique identifier (must start with `custom:`, for example `custom:my-oauth-provider`).
+4.  Enter the provider's **Client ID** and **Client Secret**.
+5.  Enter the **Authorization URL**, **Token URL**, and **UserInfo URL**.
+6.  Click **Create and enable provider**.
+
+### OIDC provider[#](#oidc-provider)
+
+Use an OIDC provider when your identity provider supports OpenID Connect. Supply the `issuer` URL and the discovery document, JWKS, and endpoints are resolved automatically.
+
+1.  Go to [Auth Providers](/dashboard/project/_/auth/providers) in the Dashboard.
+2.  Click **New Provider**. Select **Auto-discovery (OIDC)** as the configuration method.
+3.  Enter a unique identifier (must start with `custom:`, for example `custom:my-regional-provider`).
+4.  Enter the provider's **Client ID** and **Client Secret**.
+5.  Enter the **Issuer URL**. The discovery document and endpoints are resolved automatically.
+6.  Click **Create and enable provider**.
+
+OIDC providers have the following automatic behavior:
+
+*   The discovery document is fetched from `{issuer}/.well-known/openid-configuration` (or from `discovery_url` if set).
+*   The `openid` scope is always included. It is automatically added if missing from the `scopes` array.
+*   ID tokens are verified against the provider's JWKS (fetched from the discovery document's `jwks_uri`).
+
+## Provider identifiers[#](#provider-identifiers)
+
+Every custom provider identifier must start with the `custom:` prefix. Identifiers are 2–50 characters, lowercase alphanumeric with hyphens and colons allowed. Examples:
+
+*   `custom:my-provider`
+*   `custom:github-enterprise`
+
+## User sign-in[#](#user-sign-in)
+
+Once a custom provider is created and enabled, users sign in via the standard OAuth authorize endpoint:
+
+```
+1GET https://your-project.supabase.co/auth/v1/authorize?provider=custom:my-provider
+```
+
+Or using the Supabase client libraries:
+
+```
+1const { data, error } = await supabase.auth.signInWithOAuth({2  provider: 'custom:my-provider',3})
+```
+
+## Managing providers[#](#managing-providers)
+
+### List providers[#](#list-providers)
+
+Go to [Auth Providers](/dashboard/project/_/auth/providers) in the Dashboard. All custom providers are listed under **Custom OAuth Providers**.
+
+### Update a provider[#](#update-a-provider)
+
+Update any provider fields except `provider_type` and `identifier`. Only provided fields are changed (partial update). To rotate a client secret, update only the `client_secret` field.
+
+1.  Go to [Auth Providers](/dashboard/project/_/auth/providers) in the Dashboard.
+2.  Click the three-dot menu (⋮) next to the provider and select **Update**.
+3.  Modify the fields you want to change.
+4.  Click **Update provider**.
+
+### Delete a provider[#](#delete-a-provider)
+
+1.  Go to [Auth Providers](/dashboard/project/_/auth/providers) in the Dashboard.
+2.  Click the three-dot menu (⋮) next to the provider and select **Delete**.
+3.  Confirm the deletion.
+
+## Advanced configuration[#](#advanced-configuration)
+
+### PKCE[#](#pkce)
+
+PKCE (Proof Key for Code Exchange) is enabled by default (`pkce_enabled: true`) for all custom providers. The auth server automatically generates a code challenge and verifier during the authorization flow, protecting against authorization code interception attacks. This is handled entirely server-side, no client-side PKCE logic is needed.
+
+To disable PKCE for a specific provider, set `pkce_enabled: false` when creating or updating it. This is not recommended unless the identity provider does not support PKCE.
+
+### Authorization params[#](#authorization-params)
+
+Extra query parameters appended to the provider's authorization URL during the OAuth flow. All values must be strings.
+
+```
+1{2  "prompt": "consent",3  "access_type": "offline",4  "login_hint": "user@example.com"5}
+```
+
+The following reserved parameters are managed by the auth server and cannot be overridden: `client_id`, `client_secret`, `redirect_uri`, `response_type`, `state`, `code_challenge`, `code_challenge_method`, `code_verifier`, `nonce`.
+
+### Multi-platform apps[#](#multi-platform-apps)
+
+If your app uses different client IDs for different platforms (for example, web vs mobile), use `acceptable_client_ids` to list additional client IDs that should be accepted for audience validation in OIDC ID tokens:
+
+```
+1const { data, error } = await supabase.auth.admin.customProviders.createProvider({2  provider_type: 'oidc',3  identifier: 'custom:multi-platform-app',4  name: 'Multi-Platform App',5  client_id: 'web-client-id',6  client_secret: 'your-client-secret',7  issuer: 'https://app.example.com',8  scopes: ['openid', 'profile', 'email'],9  acceptable_client_ids: ['ios-client-id', 'android-client-id'],10})
+```
+
+### Email-optional providers[#](#email-optional-providers)
+
+By default, providers must return an email address. Set `email_optional` to `true` when creating or updating a provider to allow sign-in without an email. This applies to both OAuth2 and OIDC providers.
+
+### OIDC-specific options[#](#oidc-specific-options)
+
+Field
+
+Type
+
+Default
+
+Description
+
+`discovery_url`
+
+`string`
+
+`null`
+
+Override the discovery document URL if the provider uses a non-standard location.
+
+`skip_nonce_check`
+
+`bool`
+
+`false`
+
+Skip nonce validation on ID tokens. Use only for providers that do not support nonce.
+
+## Error reference[#](#error-reference)
+
+Error code
+
+HTTP status
+
+Description
+
+`validation_failed`
+
+400
+
+Invalid parameters: missing required fields, bad format, reserved params, or invalid URLs.
+
+`conflict`
+
+400
+
+A provider with the same identifier already exists.
+
+`over_custom_provider_quota`
+
+400
+
+Maximum number of custom providers reached.
+
+`custom_provider_not_found`
+
+404
+
+No provider exists with the given identifier.

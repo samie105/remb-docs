@@ -1,0 +1,156 @@
+---
+title: "Drizzle ORM - DrizzleORM v0.29.2 release"
+source: "https://orm.drizzle.team/docs/latest-releases/drizzle-orm-v0292"
+canonical_url: "https://orm.drizzle.team/docs/latest-releases/drizzle-orm-v0292"
+docset: "drizzle"
+kind: "library"
+adapter: "generic"
+last_crawled_at: "2026-04-18T17:12:22.667Z"
+content_hash: "2e739e11657c6a3ef0d12c17bca6c718cb0f1d33ec82853d7e9efd6ede80dd57"
+menu_path: ["Drizzle ORM - DrizzleORM v0.29.2 release"]
+section_path: []
+nav_prev: {"path": "drizzle/docs/latest-releases/drizzle-orm-v0291/index.md", "title": "Drizzle ORM - DrizzleORM v0.29.1 release"}
+nav_next: {"path": "drizzle/docs/latest-releases/drizzle-orm-v0293/index.md", "title": "Drizzle ORM - DrizzleORM v0.29.3 release"}
+---
+
+DrizzleORM v0.29.2 release
+
+Dec 25, 2023
+
+## Fixes:
+
+*   Added improvements to the planescale relational tests ([#1579](https://github.com/drizzle-team/drizzle-orm/pull/1579))
+*   FIX: correct string escaping for empty PgArrays ([#1640](https://github.com/drizzle-team/drizzle-orm/pull/1640))
+*   Fix wrong syntax for exists fn in sqlite ([#1647](https://github.com/drizzle-team/drizzle-orm/pull/1647))
+*   Properly handle dates in AWS Data API
+*   Fix Hermes mixins constructor issue
+
+## ESLint Drizzle Plugin, v0.2.3
+
+```
+npm i eslint-plugin-drizzle@0.2.3
+```
+
+🎉 \[ESLint\] Add support for functions and improve error messages
+
+*   Allowed Drizzle object to be or to be retrieved from a function, e.g.
+*   Added better context to the suggestion in the error message.
+
+For more info you can check [docs](drizzle/docs/eslint-plugin/index.md)
+
+## New Drivers
+
+**🎉 Expo SQLite Driver is available**
+
+For starting with [Expo SQLite Driver](drizzle/docs/get-started-sqlite/index.md#expo-sqlite), you need to install `expo-sqlite` and `drizzle-orm` packages.
+
+```
+npm install drizzle-orm expo-sqlite@next
+```
+
+Then, you can use it like this:
+
+```
+import { drizzle } from "drizzle-orm/expo-sqlite";
+import { openDatabaseSync } from "expo-sqlite";
+
+const expoDb = openDatabaseSync("db.db");
+
+const db = drizzle(expoDb);
+
+await db.select().from(...)...
+
+// or
+
+db.select().from(...).then(...);
+
+// or
+
+db.select().from(...).all();
+```
+
+If you want to use Drizzle Migrations, you need to update babel and metro configuration files.
+
+1.  Install `babel-plugin-inline-import` package.
+
+```
+npm install babel-plugin-inline-import
+```
+
+2.  Update `babel.config.js` and `metro.config.js` files.
+
+```
+module.exports = function(api) {
+  api.cache(true);
+
+  return {
+    presets: ['babel-preset-expo'],
++   plugins: [["inline-import", { "extensions": [".sql"] }]]
+  };
+};
+```
+
+```
+const { getDefaultConfig } = require('expo/metro-config');
+
+/** @type {import('expo/metro-config').MetroConfig} */
+const config = getDefaultConfig(__dirname);
+
++config.resolver.sourceExts.push('sql');
+
+module.exports = config;
+```
+
+3.  Create `drizzle.config.ts` file in your project root folder.
+
+```
+import type { Config } from 'drizzle-kit';
+
+export default {
+	schema: './db/schema.ts',
+	out: './drizzle',
+    dialect: 'sqlite',
+	driver: 'expo',
+} satisfies Config;
+```
+
+After creating schema file and drizzle.config.ts file, you can generate migrations like this:
+
+```
+npx drizzle-kit generate
+```
+
+Then you need to import `migrations.js` file in your `App.tsx` file from `./drizzle` folder and use hook `useMigrations` or `migrate` function.
+
+```
+import { drizzle } from "drizzle-orm/expo-sqlite";
+import { openDatabaseSync } from "expo-sqlite";
+import { useMigrations } from 'drizzle-orm/expo-sqlite/migrator';
+import migrations from './drizzle/migrations';
+
+const expoDb = openDatabaseSync("db.db");
+
+const db = drizzle(expoDb);
+
+export default function App() {
+    const { success, error } = useMigrations(db, migrations);
+
+    if (error) {
+        return (
+            <View>
+                <Text>Migration error: {error.message}</Text>
+            </View>
+        );
+    }
+
+    if (!success) {
+        return (
+            <View>
+                <Text>Migration is in progress...</Text>
+            </View>
+        );
+    }
+
+    return ...your application component;
+}
+```

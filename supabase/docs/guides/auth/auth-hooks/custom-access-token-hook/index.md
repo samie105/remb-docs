@@ -1,0 +1,94 @@
+---
+title: "Custom Access Token Hook"
+source: "https://supabase.com/docs/guides/auth/auth-hooks/custom-access-token-hook"
+canonical_url: "https://supabase.com/docs/guides/auth/auth-hooks/custom-access-token-hook"
+docset: "supabase"
+kind: "platform"
+adapter: "generic"
+last_crawled_at: "2026-04-18T16:52:45.591Z"
+content_hash: "78471ad6fff45393dcf583fe8f69856b7631118ddfc599514d3023e460d19405"
+menu_path: ["Auth","Auth","More","More","More","Auth Hooks","Auth Hooks","Custom access token hook","Custom access token hook"]
+section_path: ["Auth","Auth","More","More","More","Auth Hooks","Auth Hooks","Custom access token hook","Custom access token hook"]
+nav_prev: {"path": "supabase/docs/guides/auth/auth-hooks/before-user-created-hook/index.md", "title": "Before User Created Hook"}
+nav_next: {"path": "supabase/docs/guides/auth/auth-hooks/mfa-verification-hook/index.md", "title": "MFA Verification Hook"}
+---
+
+# 
+
+Custom Access Token Hook
+
+## 
+
+Customize the access token issued by Supabase Auth
+
+* * *
+
+The custom access token hook runs before a token is issued and allows you to add additional claims based on the authentication method used.
+
+Claims returned must conform to our specification. Supabase Auth will check for these claims after the hook is run and return an error if they are not present.
+
+These are the fields currently available on an access token:
+
+Required Claims: `iss`, `aud`, `exp`, `iat`, `sub`, `role`, `aal`, `session_id`, `email`, `phone`, `is_anonymous`
+
+Optional Claims: `jti`, `nbf`, `app_metadata`, `user_metadata`, `amr`,
+
+**Inputs**
+
+Field
+
+Type
+
+Description
+
+`user_id`
+
+`string`
+
+Unique identifier for the user attempting to sign in.
+
+`claims`
+
+`object`
+
+Claims which are included in the access token.
+
+`authentication_method`
+
+`string`
+
+The authentication method used to request the access token. Possible values include: `oauth`, `password`, `otp`, `totp`, `recovery`, `invite`, `sso/saml`, `magiclink`, `email/signup`, `email_change`, `token_refresh`, `oauth_provider/authorization_code`, `anonymous`.
+
+```
+1{2  "user_id": "8ccaa7af-909f-44e7-84cb-67cdccb56be6",3  "claims": {4    "aud": "authenticated",5    "exp": 1715690221,6    "iat": 1715686621,7    "sub": "8ccaa7af-909f-44e7-84cb-67cdccb56be6",8    "email": "",9    "phone": "",10    "app_metadata": {},11    "user_metadata": {},12    "role": "authenticated",13    "aal": "aal1",14    "amr": [ { "method": "anonymous", "timestamp": 1715686621 } ],15    "session_id": "4b938a09-5372-4177-a314-cfa292099ea2",16    "is_anonymous": true,17    "client_id": "oauth-client-id-if-oauth-flow"18  },19  "authentication_method": "anonymous"20}
+```
+
+**Outputs**
+
+Return these only if your hook processed the input without errors.
+
+Field
+
+Type
+
+Description
+
+`claims`
+
+`object`
+
+The updated claims after the hook has been run.
+
+Sometimes the size of the JWT can be a problem especially if you're using a [Server-Side Rendering framework](/docs/guides/auth/server-side). Common situations where the JWT can get too large include:
+
+*   The user has a particularly large name, email address or phone number
+*   The default JWT has too many claims coming from OAuth providers
+*   A large avatar URL is included
+
+To lower the size of the JWT you can define a Custom Access Token hook like the one below which will instruct the Auth server to issue a JWT with only the listed claims. Check the documentation above on what JWT claims must be present and cannot be removed.
+
+Refer to the [Postgres JSON functions](https://www.postgresql.org/docs/current/functions-json.html) on how to manipulate `jsonb` objects.
+
+```
+1create or replace function public.custom_access_token_hook(event jsonb)2returns jsonb3language plpgsql4as $$5  declare6    original_claims jsonb;7    new_claims jsonb;8    claim text;9  begin10    original_claims = event->'claims';11    new_claims = '{}'::jsonb;1213    foreach claim in array array[14      -- add claims you want to keep here15      'iss',16      'aud',17      'exp',18      'iat',19      'sub',20      'role',21      'aal',22      'session_id',23      'email',24      'phone',25      'is_anonymous'26   ] loop27      if original_claims ? claim then28        -- original_claims contains one of the listed claims, set it on new_claims29        new_claims = jsonb_set(new_claims, array[claim], original_claims->claim);30      end if;31    end loop;3233    return jsonb_build_object('claims', new_claims);34  end35$$;
+```

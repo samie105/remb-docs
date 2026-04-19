@@ -1,0 +1,58 @@
+---
+title: "No Head Import in Document"
+source: "https://nextjs.org/docs/messages/no-head-import-in-document"
+canonical_url: "https://nextjs.org/docs/messages/no-head-import-in-document"
+docset: "nextjs"
+kind: "framework"
+adapter: "nextjs"
+last_crawled_at: "2026-04-18T13:18:21.605Z"
+content_hash: "4933e2a09254b05bea04f05bfb21f35fe21b72f32a25417a45a00e54629c7b3c"
+menu_path: ["No Head Import in Document"]
+section_path: []
+nav_prev: {"path": "nextjs/docs/messages/no-head-element/index.md", "title": "No Head Element"}
+nav_next: {"path": "nextjs/docs/messages/no-html-link-for-pages/index.md", "title": "No HTML link for pages"}
+---
+
+# No Head Import in Document
+
+> Prevent usage of `next/head` in `pages/_document.js`.
+
+## Why This Error Occurred[](#why-this-error-occurred)
+
+`next/head` was imported in `pages/_document.js`. This can cause unexpected issues in your application.
+
+## Possible Ways to Fix It[](#possible-ways-to-fix-it)
+
+Only import and use `next/document` within `pages/_document.js` to override the default `Document` component. If you are importing `next/head` to use the `Head` component, import it from `next/document` instead in order to modify `<head>` code across all pages:
+
+pages/\_document.js
+
+```
+import Document, { Html, Head, Main, NextScript } from 'next/document'
+ 
+class MyDocument extends Document {
+  static async getInitialProps(ctx) {
+    //...
+  }
+ 
+  render() {
+    return (
+      <Html>
+        <Head></Head>
+      </Html>
+    )
+  }
+}
+ 
+export default MyDocument
+```
+
+## Useful Links[](#useful-links)
+
+*   [Custom Document](/docs/pages/building-your-application/routing/custom-document)
+
+Was this helpful?
+
+supported.
+
+Send

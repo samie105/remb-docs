@@ -1,0 +1,72 @@
+---
+title: "box-sizing"
+source: "https://tailwindcss.com/docs/box-sizing"
+canonical_url: "https://tailwindcss.com/docs/box-sizing"
+docset: "tailwind"
+kind: "framework"
+adapter: "generic"
+last_crawled_at: "2026-04-18T16:41:24.375Z"
+content_hash: "94ed8b69e000764b435612cd49b73b7b0eed9d479f4aa53e765ab4a569ae1268"
+menu_path: ["box-sizing"]
+section_path: []
+nav_prev: {"path": "tailwind/docs/box-decoration-break/index.md", "title": "box-decoration-break"}
+nav_next: {"path": "tailwind/docs/display/index.md", "title": "display"}
+---
+
+Layout
+
+Utilities for controlling how the browser should calculate an element's total size.
+
+Class
+
+Styles
+
+`box-border`
+
+`box-sizing: border-box;`
+
+`box-content`
+
+`box-sizing: content-box;`
+
+## [Examples](#examples)
+
+### [Including borders and padding](#including-borders-and-padding)
+
+Use the `box-border` utility to set an element's `box-sizing` to `border-box`, telling the browser to include the element's borders and padding when you give it a height or width.
+
+This means a 100px × 100px element with a 2px border and 4px of padding on all sides will be rendered as 100px × 100px, with an internal content area of 88px × 88px:
+
+128px
+
+128px
+
+```
+<div class="box-border size-32 border-4 p-4 ...">  <!-- ... --></div>
+```
+
+Tailwind makes this the default for all elements in our [preflight base styles](tailwind/docs/preflight/index.md).
+
+### [Excluding borders and padding](#excluding-borders-and-padding)
+
+Use the `box-content` utility to set an element's `box-sizing` to `content-box`, telling the browser to add borders and padding on top of the element's specified width or height.
+
+This means a 100px × 100px element with a 2px border and 4px of padding on all sides will actually be rendered as 112px × 112px, with an internal content area of 100px × 100px:
+
+128px
+
+128px
+
+```
+<div class="box-content size-32 border-4 p-4 ...">  <!-- ... --></div>
+```
+
+### [Responsive design](#responsive-design)
+
+Prefix a `box-sizing` utility with a breakpoint variant like `md:` to only apply the utility at medium screen sizes and above:
+
+```
+<div class="box-content md:box-border ...">  <!-- ... --></div>
+```
+
+Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).

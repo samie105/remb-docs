@@ -1,0 +1,13 @@
+# Crawler tooling — not part of the docs-only publish
+node_modules/
+packages/
+apps/
+state/
+output/
+*.bak-*
+
+# OS / editor
+.DS_Store
+*.swp
+.env
+.env.*

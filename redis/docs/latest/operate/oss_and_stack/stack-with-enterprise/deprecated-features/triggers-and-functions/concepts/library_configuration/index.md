@@ -1,0 +1,96 @@
+---
+title: "Library configuration"
+source: "https://redis.io/docs/latest/operate/oss_and_stack/stack-with-enterprise/deprecated-features/triggers-and-functions/concepts/library_configuration/"
+canonical_url: "https://redis.io/docs/latest/operate/oss_and_stack/stack-with-enterprise/deprecated-features/triggers-and-functions/concepts/library_configuration/"
+docset: "redis"
+kind: "database"
+adapter: "generic"
+last_crawled_at: "2026-04-18T17:07:51.779Z"
+content_hash: "18340d86f69c33f8ee5741160de5fbe365ab65568d3b788bff2ac5e87a3614c9"
+menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Redis Open Source and Redis Software","→","Redis Open Source and Redis Software","→\n      \n        Deprecated Redis Open Source features and modules","→","Deprecated Redis Open Source features and modules","→\n      \n        Triggers and functions","→","Triggers and functions","→\n      \n        Concepts","→","Concepts","→\n      \n        Library configuration","→","Library configuration"]
+section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Redis Open Source and Redis Software","→","Redis Open Source and Redis Software","→\n      \n        Deprecated Redis Open Source features and modules","→","Deprecated Redis Open Source features and modules","→\n      \n        Triggers and functions","→","Triggers and functions","→\n      \n        Concepts","→","Concepts","→\n      \n        Library configuration","→","Library configuration"]
+nav_prev: {"path": "redis/docs/latest/operate/oss_and_stack/stack-with-enterprise/deprecated-features/triggers-and-functions/concepts/javascript_api/index.md", "title": "JavaScript API"}
+nav_next: {"path": "redis/docs/latest/operate/oss_and_stack/stack-with-enterprise/deprecated-features/triggers-and-functions/concepts/resp_js_conversion/index.md", "title": "RESP & JavaScript"}
+---
+
+# Library configuration
+
+How to use configuration in JavaScript functions
+
+Redis Open Source
+
+Redis Software
+
+Redis Cloud
+
+Redis Open Source
+
+Redis Enterprise for Kubernetes
+
+clients
+
+When writing a library, you may want to provide a loading configuration so that different users can use the same library with slightly different behaviour, without changing the base code. For example, assume you write a library that adds a `__last_updated__` field to a hash (you can see how it can also be done with [keyspace triggers](/docs/latest/operate/oss_and_stack/stack-with-enterprise/deprecated-features/triggers-and-functions/concepts/triggers/keyspace_triggers/)), the code will look like this:
+
+```js
+#!js api_version=1.0 name=lib
+
+redis.registerFunction("hset", function(client, key, field, val){
+    // get the current time in ms
+    var curr_time = client.call("time")[0];
+    return client.call('hset', key, field, val, "__last_update__", curr_time);
+});
+```
+
+Run example:
+
+```bash
+127.0.0.1:6379> TFCALL lib.hset k a b 0
+(integer) 2
+127.0.0.1:6379> hgetall k
+1) "foo"
+2) "bar"
+3) "__last_update__"
+4) "1658653125"
+```
+
+The problem with the above code is that the `__last_update__` field is hard coded. What if we want to allow the user to configure it at runtime? Triggers and functions provide for specifying a library configuration at load time using a [`CONFIG`](/docs/latest/commands/config/) argument that is passed to the `TFUNCTION LOAD` command. The configuration argument accepts a string representation of a JSON object. The JSON will be provided to the library as a JS object under the `redis.config` variable. We can change the above example to accept the `__last_update__` field name as a library configuration. The code will look like this:
+
+```js
+#!js api_version=1.0 name=lib
+
+var last_update_field_name = "__last_update__"
+
+if (redis.config.last_update_field_name !== undefined) {
+    if (typeof redis.config.last_update_field_name != 'string') {
+        throw "last_update_field_name must be a string";
+    }
+    last_update_field_name = redis.config.last_update_field_name
+}
+
+redis.registerFunction("hset", function(client, key, field, val){
+    // get the current time in ms
+    var curr_time = client.call("time")[0];
+    return client.call('hset', key, field, val, last_update_field_name, curr_time);
+});
+```
+
+Notice that in the above example we first set `last_update_field_name` to `__last_update__`, the default value in cases where a value is not provided by the configuration. Then we check if we have `last_update_field_name` in our configuration and if we do we use it. We can now load our function with a [`CONFIG`](/docs/latest/commands/config/) argument:
+
+```bash
+> redis-cli -x TFUNCTION LOAD REPLACE CONFIG '{"last_update_field_name":"last_update"}' < <path to code file>
+OK
+```
+
+We can see that the last update field name is `last_update`:
+
+```bash
+127.0.0.1:6379> TFCALL lib.hset h a b 0
+(integer) 2
+127.0.0.1:6379> hgetall h
+1) "a"
+2) "b"
+3) "last_update"
+4) "1658654047"
+```
+
+Notice, triggers and functions only provides the library with the JSON configuration. **It's the library's responsibility to verify the correctness of the given configuration**.

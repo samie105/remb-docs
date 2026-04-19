@@ -1,0 +1,64 @@
+---
+title: "Upgrade Guides"
+source: "https://nextjs.org/docs/app/guides/upgrading"
+canonical_url: "https://nextjs.org/docs/app/guides/upgrading"
+docset: "nextjs"
+kind: "framework"
+adapter: "nextjs"
+last_crawled_at: "2026-04-18T13:16:49.280Z"
+content_hash: "8aff2c2cc49bc789883b93e7a5f40532893cb1947358a92b16f390867f538b25"
+menu_path: ["Upgrade Guides"]
+section_path: []
+nav_prev: {"path": "nextjs/docs/app/guides/third-party-libraries/index.md", "title": "How to optimize third-party libraries"}
+nav_next: {"path": "nextjs/docs/app/guides/upgrading/codemods/index.md", "title": "Codemods"}
+---
+
+# Upgrade Guides
+
+Last updated April 15, 2026
+
+Learn how to upgrade to the latest versions of Next.js following the versions-specific guides:
+
+[
+
+### Codemods
+
+Use codemods to upgrade your Next.js codebase when new features are released.
+
+](/docs/app/guides/upgrading/codemods)[
+
+### Version 14
+
+Upgrade your Next.js Application from Version 13 to 14.
+
+](/docs/app/guides/upgrading/version-14)[
+
+### Version 15
+
+Upgrade your Next.js Application from Version 14 to 15.
+
+](/docs/app/guides/upgrading/version-15)[
+
+### Version 16
+
+Upgrade your Next.js Application from Version 15 to 16.
+
+](/docs/app/guides/upgrading/version-16)
+
+[Previous
+
+Third Party Libraries
+
+](/docs/app/guides/third-party-libraries)
+
+[Next
+
+Codemods
+
+](/docs/app/guides/upgrading/codemods)
+
+Was this helpful?
+
+supported.
+
+Send

@@ -1,0 +1,635 @@
+---
+title: "Features"
+source: "https://supabase.com/docs/guides/getting-started/features"
+canonical_url: "https://supabase.com/docs/guides/getting-started/features"
+docset: "supabase"
+kind: "platform"
+adapter: "generic"
+last_crawled_at: "2026-04-18T16:46:08.587Z"
+content_hash: "429bb2af4f2798aac4b175b8a763bd7c6a7e749ad36c9850c4ee145aa1876cfb"
+menu_path: ["Start with Supabase","Start with Supabase","Features","Features"]
+section_path: ["Start with Supabase","Start with Supabase","Features","Features"]
+nav_prev: {"path": "supabase/docs/guides/getting-started/byo-mcp/index.md", "title": "Deploy MCP servers"}
+nav_next: {"path": "supabase/docs/guides/getting-started/mcp/index.md", "title": "Model context protocol (MCP)"}
+---
+
+# 
+
+Features
+
+* * *
+
+This is a non-exhaustive list of features that Supabase provides for every project.
+
+## Database[#](#database)
+
+### Postgres database[#](#postgres-database)
+
+Every project is a full Postgres database. [Docs](/docs/guides/database).
+
+### Vector database[#](#vector-database)
+
+Store vector embeddings right next to the rest of your data. [Docs](/docs/guides/ai).
+
+### Auto-generated REST API via PostgREST[#](#auto-generated-rest-api-via-postgrest)
+
+RESTful APIs are auto-generated from your database, without a single line of code. [Docs](/docs/guides/api#rest-api-overview).
+
+### Auto-generated GraphQL API via pg\_graphql[#](#auto-generated-graphql-api-via-pggraphql)
+
+Fast GraphQL APIs using our custom Postgres GraphQL extension. [Docs](/docs/guides/graphql/api).
+
+### Database webhooks[#](#database-webhooks)
+
+Send database changes to any external service using Webhooks. [Docs](/docs/guides/database/webhooks).
+
+### Secrets and encryption[#](#secrets-and-encryption)
+
+Encrypt sensitive data and store secrets using our Postgres extension, Supabase Vault. [Docs](/docs/guides/database/vault).
+
+### Replication[#](#replication)
+
+Automatically replicate your database to external destinations like data warehouses and analytics platforms. [Docs](/docs/guides/database/replication/replication-setup).
+
+## Platform[#](#platform)
+
+### Database backups[#](#database-backups)
+
+Projects are backed up daily with the option to upgrade to Point in Time recovery. [Docs](/docs/guides/platform/backups).
+
+### Custom domains[#](#custom-domains)
+
+White-label the Supabase APIs to create a branded experience for your users. [Docs](/docs/guides/platform/custom-domains).
+
+### Network restrictions[#](#network-restrictions)
+
+Restrict IP ranges that can connect to your database. [Docs](/docs/guides/platform/network-restrictions).
+
+### SSL enforcement[#](#ssl-enforcement)
+
+Enforce Postgres clients to connect via SSL. [Docs](/docs/guides/platform/ssl-enforcement).
+
+### Branching[#](#branching)
+
+Use Supabase Branches to test and preview changes. [Docs](/docs/guides/platform/branching).
+
+### Terraform provider[#](#terraform-provider)
+
+Manage Supabase infrastructure via Terraform, an Infrastructure as Code tool. [Docs](/docs/guides/platform/terraform).
+
+### Read replicas[#](#read-replicas)
+
+Deploy read-only databases across multiple regions, for lower latency and better resource management. [Docs](/docs/guides/platform/read-replicas).
+
+### Log drains[#](#log-drains)
+
+Export Supabase logs to 3rd party providers and external tooling. [Docs](/docs/guides/platform/log-drains).
+
+## Studio[#](#studio)
+
+### Studio Single Sign-On[#](#studio-single-sign-on)
+
+Login to the Supabase dashboard via SSO. [Docs](/docs/guides/platform/sso).
+
+  
+
+## Realtime[#](#realtime)
+
+### Postgres changes[#](#postgres-changes)
+
+Receive your database changes through WebSockets. [Docs](/docs/guides/realtime/postgres-changes).
+
+### Broadcast[#](#broadcast)
+
+Send messages between connected users through WebSockets. [Docs](/docs/guides/realtime/broadcast).
+
+### Presence[#](#presence)
+
+Synchronize shared state across your users, including online status and typing indicators. [Docs](/docs/guides/realtime/presence).
+
+## Auth[#](#auth)
+
+### Email login[#](#email-login)
+
+Build email logins for your application or website. [Docs](/docs/guides/auth/auth-email).
+
+### Social login[#](#social-login)
+
+Provide social logins - everything from Apple, to GitHub, to Slack. [Docs](/docs/guides/auth/social-login).
+
+### Phone logins[#](#phone-logins)
+
+Provide phone logins using a third-party SMS provider. [Docs](/docs/guides/auth/phone-login).
+
+### Passwordless login[#](#passwordless-login)
+
+Build passwordless logins via magic links for your application or website. [Docs](/docs/guides/auth/auth-magic-link).
+
+### Authorization via Row Level Security[#](#authorization-via-row-level-security)
+
+Control the data each user can access with Postgres Policies. [Docs](/docs/guides/database/postgres/row-level-security).
+
+### CAPTCHA protection[#](#captcha-protection)
+
+Add CAPTCHA to your sign-in, sign-up, and password reset forms. [Docs](/docs/guides/auth/auth-captcha).
+
+### Server-Side Auth[#](#server-side-auth)
+
+Helpers for implementing user authentication in popular server-side languages and frameworks like Next.js, SvelteKit and Remix. [Docs](/docs/guides/auth/server-side).
+
+  
+
+## Storage[#](#storage)
+
+### File storage[#](#file-storage)
+
+Supabase Storage makes it simple to store and serve files. [Docs](/docs/guides/storage).
+
+### Content Delivery Network[#](#content-delivery-network)
+
+Cache large files using the Supabase CDN. [Docs](/docs/guides/storage/cdn/fundamentals).
+
+### Smart Content Delivery Network[#](#smart-content-delivery-network)
+
+Automatically revalidate assets at the edge via the Smart CDN. [Docs](/docs/guides/storage/cdn/smart-cdn).
+
+### Image transformations[#](#image-transformations)
+
+Transform images on the fly. [Docs](/docs/guides/storage/serving/image-transformations).
+
+### Resumable uploads[#](#resumable-uploads)
+
+Upload large files using resumable uploads. [Docs](/docs/guides/storage/uploads/resumable-uploads).
+
+### S3 compatibility[#](#s3-compatibility)
+
+Interact with Storage from tool which supports the S3 protocol. [Docs](/docs/guides/storage/s3/compatibility).
+
+## Edge Functions[#](#edge-functions)
+
+### Deno Edge Functions[#](#deno-edge-functions)
+
+Globally distributed TypeScript functions to execute custom business logic. [Docs](/docs/guides/functions).
+
+### Regional invocations[#](#regional-invocations)
+
+Execute an Edge Function in a region close to your database. [Docs](/docs/guides/functions/regional-invocation).
+
+### NPM compatibility[#](#npm-compatibility)
+
+Edge functions natively support NPM modules and Node built-in APIs. [Link](/blog/edge-functions-node-npm).
+
+## Project management[#](#project-management)
+
+### CLI[#](#cli)
+
+Use our CLI to develop your project locally and deploy to the Supabase Platform. [Docs](/docs/reference/cli).
+
+### Management API[#](#management-api)
+
+Manage your projects programmatically. [Docs](/docs/reference/api).
+
+## Client libraries[#](#client-libraries)
+
+Official client libraries for [JavaScript](/docs/reference/javascript/start), [Flutter](/docs/reference/dart/initializing) and [Swift](/docs/reference/swift/introduction). Unofficial libraries are supported by the community.
+
+## Feature status[#](#feature-status)
+
+Supabase Features are in 4 different states - Private Alpha, Public Alpha, Beta and Generally Available.
+
+### Private alpha[#](#private-alpha)
+
+Features are initially launched as a private alpha to gather feedback from the community. To join our early access program, send an email to [product-ops@supabase.io](mailto:product-ops@supabase.io).
+
+### Public alpha[#](#public-alpha)
+
+The alpha stage indicates that the API might change in the future, not that the service isn’t stable. Even though the [uptime Service Level Agreement](/sla) does not cover products in Alpha, we do our best to have the service as stable as possible.
+
+### Beta[#](#beta)
+
+Features in Beta are tested by an external penetration tester for security issues. The API is guaranteed to be stable and there is a strict communication process for breaking changes.
+
+### Generally available[#](#generally-available)
+
+In addition to the Beta requirements, features in GA are covered by the [uptime SLA](/sla).
+
+Product
+
+Feature
+
+Stage
+
+Available on self-hosted
+
+Database
+
+Postgres
+
+`GA`
+
+✅
+
+Database
+
+Vector Database
+
+`GA`
+
+✅
+
+Database
+
+Auto-generated Rest API
+
+`GA`
+
+✅
+
+Database
+
+Auto-generated GraphQL API
+
+`GA`
+
+✅
+
+Database
+
+Webhooks
+
+`beta`
+
+✅
+
+Database
+
+Vault
+
+`public alpha`
+
+✅
+
+Database
+
+Replication
+
+`private alpha`
+
+N/A
+
+Platform
+
+`GA`
+
+✅
+
+Platform
+
+Point-in-Time Recovery
+
+`GA`
+
+🚧 [wal-g](https://github.com/wal-g/wal-g)
+
+Platform
+
+Custom Domains
+
+`GA`
+
+N/A
+
+Platform
+
+Network Restrictions
+
+`GA`
+
+N/A
+
+Platform
+
+SSL enforcement
+
+`GA`
+
+N/A
+
+Platform
+
+Branching
+
+`beta`
+
+N/A
+
+Platform
+
+Terraform Provider
+
+`public alpha`
+
+N/A
+
+Platform
+
+Read Replicas
+
+`GA`
+
+N/A
+
+Platform
+
+Log Drains
+
+`public alpha`
+
+✅
+
+Platform
+
+MCP
+
+`public alpha`
+
+✅
+
+Platform
+
+PrivateLink
+
+`beta`
+
+N/A
+
+Studio
+
+`GA`
+
+✅
+
+Studio
+
+SSO
+
+`GA`
+
+✅
+
+Studio
+
+Column Privileges
+
+`public alpha`
+
+✅
+
+Realtime
+
+Postgres Changes
+
+`GA`
+
+✅
+
+Realtime
+
+Broadcast
+
+`GA`
+
+✅
+
+Realtime
+
+Presence
+
+`GA`
+
+✅
+
+Realtime
+
+Broadcast Authorization
+
+`public beta`
+
+✅
+
+Realtime
+
+Presence Authorization
+
+`public beta`
+
+✅
+
+Realtime
+
+Broadcast from Database
+
+`public beta`
+
+✅
+
+Storage
+
+`GA`
+
+✅
+
+Storage
+
+CDN
+
+`GA`
+
+🚧 [Cloudflare](https://www.cloudflare.com)
+
+Storage
+
+Smart CDN
+
+`GA`
+
+🚧 [Cloudflare](https://www.cloudflare.com)
+
+Storage
+
+Image Transformations
+
+`GA`
+
+✅
+
+Storage
+
+Resumable Uploads
+
+`GA`
+
+✅
+
+Storage
+
+S3 compatibility
+
+`GA`
+
+✅
+
+Edge Functions
+
+`GA`
+
+✅
+
+Edge Functions
+
+Regional Invocations
+
+`GA`
+
+✅
+
+Edge Functions
+
+NPM compatibility
+
+`GA`
+
+✅
+
+Auth
+
+`GA`
+
+✅
+
+Auth
+
+Email login
+
+`GA`
+
+✅
+
+Auth
+
+Social login
+
+`GA`
+
+✅
+
+Auth
+
+Phone login
+
+`GA`
+
+✅
+
+Auth
+
+Passwordless login
+
+`GA`
+
+✅
+
+Auth
+
+SSO with SAML
+
+`GA`
+
+✅
+
+Auth
+
+Authorization via RLS
+
+`GA`
+
+✅
+
+Auth
+
+CAPTCHA protection
+
+`GA`
+
+✅
+
+Auth
+
+Server-side Auth
+
+`beta`
+
+✅
+
+Auth
+
+Third-Party Auth
+
+`GA`
+
+✅
+
+Auth
+
+Hooks
+
+`beta`
+
+✅
+
+CLI
+
+`GA`
+
+✅ Works with self-hosted
+
+Management API
+
+`GA`
+
+N/A
+
+Client Library
+
+JavaScript
+
+`GA`
+
+N/A
+
+Client Library
+
+Flutter
+
+`GA`
+
+N/A
+
+Client Library
+
+Swift
+
+`GA`
+
+N/A
+
+Client Library
+
+Python
+
+`beta`
+
+N/A
+
+*   ✅ = Fully Available
+*   🚧 = Available, but requires external tools or configuration

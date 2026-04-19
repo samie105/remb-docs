@@ -1,0 +1,141 @@
+---
+title: "PostgreSQL: Documentation: 18: dblink"
+source: "https://www.postgresql.org/docs/current/contrib-dblink-function.html"
+canonical_url: "https://www.postgresql.org/docs/current/contrib-dblink-function.html"
+docset: "postgres"
+kind: "database"
+adapter: "generic"
+last_crawled_at: "2026-04-18T16:42:13.288Z"
+content_hash: "7dcdf16dc78aec8c9dc8da4d015ee8cc45223a2c68b818d59afa6a3cf4316089"
+menu_path: ["PostgreSQL: Documentation: 18: dblink"]
+section_path: []
+nav_prev: {"path": "postgres/docs/current/contrib-dblink-fetch.html/index.md", "title": "PostgreSQL: Documentation: 18: dblink_fetch"}
+nav_next: {"path": "postgres/docs/current/contrib-dblink-get-notify.html/index.md", "title": "PostgreSQL: Documentation: 18: dblink_get_notify"}
+---
+
+dblink — executes a query in a remote database
+
+## Synopsis
+
+dblink(text connname, text sql \[, bool fail\_on\_error\]) returns setof record
+dblink(text connstr, text sql \[, bool fail\_on\_error\]) returns setof record
+dblink(text sql \[, bool fail\_on\_error\]) returns setof record
+
+## Description
+
+`dblink` executes a query (usually a `SELECT`, but it can be any SQL statement that returns rows) in a remote database.
+
+When two `text` arguments are given, the first one is first looked up as a persistent connection's name; if found, the command is executed on that connection. If not found, the first argument is treated as a connection info string as for `dblink_connect`, and the indicated connection is made just for the duration of this command.
+
+## Arguments
+
+_`connname`_
+
+Name of the connection to use; omit this parameter to use the unnamed connection.
+
+_`connstr`_
+
+A connection info string, as previously described for `dblink_connect`.
+
+_`sql`_
+
+The SQL query that you wish to execute in the remote database, for example `select * from foo`.
+
+_`fail_on_error`_
+
+If true (the default when omitted) then an error thrown on the remote side of the connection causes an error to also be thrown locally. If false, the remote error is locally reported as a NOTICE, and the function returns no rows.
+
+## Return Value
+
+The function returns the row(s) produced by the query. Since `dblink` can be used with any query, it is declared to return `record`, rather than specifying any particular set of columns. This means that you must specify the expected set of columns in the calling query — otherwise PostgreSQL would not know what to expect. Here is an example:
+
+SELECT \*
+    FROM dblink('dbname=mydb options=-csearch\_path=',
+                'select proname, prosrc from pg\_proc')
+      AS t1(proname name, prosrc text)
+    WHERE proname LIKE 'bytea%';
+
+The “alias” part of the `FROM` clause must specify the column names and types that the function will return. (Specifying column names in an alias is actually standard SQL syntax, but specifying column types is a PostgreSQL extension.) This allows the system to understand what `*` should expand to, and what `proname` in the `WHERE` clause refers to, in advance of trying to execute the function. At run time, an error will be thrown if the actual query result from the remote database does not have the same number of columns shown in the `FROM` clause. The column names need not match, however, and `dblink` does not insist on exact type matches either. It will succeed so long as the returned data strings are valid input for the column type declared in the `FROM` clause.
+
+## Notes
+
+A convenient way to use `dblink` with predetermined queries is to create a view. This allows the column type information to be buried in the view, instead of having to spell it out in every query. For example,
+
+CREATE VIEW myremote\_pg\_proc AS
+  SELECT \*
+    FROM dblink('dbname=postgres options=-csearch\_path=',
+                'select proname, prosrc from pg\_proc')
+    AS t1(proname name, prosrc text);
+
+SELECT \* FROM myremote\_pg\_proc WHERE proname LIKE 'bytea%';
+
+## Examples
+
+SELECT \* FROM dblink('dbname=postgres options=-csearch\_path=',
+                     'select proname, prosrc from pg\_proc')
+  AS t1(proname name, prosrc text) WHERE proname LIKE 'bytea%';
+  proname   |   prosrc
+------------+------------
+ byteacat   | byteacat
+ byteaeq    | byteaeq
+ bytealt    | bytealt
+ byteale    | byteale
+ byteagt    | byteagt
+ byteage    | byteage
+ byteane    | byteane
+ byteacmp   | byteacmp
+ bytealike  | bytealike
+ byteanlike | byteanlike
+ byteain    | byteain
+ byteaout   | byteaout
+(12 rows)
+
+SELECT dblink\_connect('dbname=postgres options=-csearch\_path=');
+ dblink\_connect
+----------------
+ OK
+(1 row)
+
+SELECT \* FROM dblink('select proname, prosrc from pg\_proc')
+  AS t1(proname name, prosrc text) WHERE proname LIKE 'bytea%';
+  proname   |   prosrc
+------------+------------
+ byteacat   | byteacat
+ byteaeq    | byteaeq
+ bytealt    | bytealt
+ byteale    | byteale
+ byteagt    | byteagt
+ byteage    | byteage
+ byteane    | byteane
+ byteacmp   | byteacmp
+ bytealike  | bytealike
+ byteanlike | byteanlike
+ byteain    | byteain
+ byteaout   | byteaout
+(12 rows)
+
+SELECT dblink\_connect('myconn', 'dbname=regression options=-csearch\_path=');
+ dblink\_connect
+----------------
+ OK
+(1 row)
+
+SELECT \* FROM dblink('myconn', 'select proname, prosrc from pg\_proc')
+  AS t1(proname name, prosrc text) WHERE proname LIKE 'bytea%';
+  proname   |   prosrc
+------------+------------
+ bytearecv  | bytearecv
+ byteasend  | byteasend
+ byteale    | byteale
+ byteagt    | byteagt
+ byteage    | byteage
+ byteane    | byteane
+ byteacmp   | byteacmp
+ bytealike  | bytealike
+ byteanlike | byteanlike
+ byteacat   | byteacat
+ byteaeq    | byteaeq
+ bytealt    | bytealt
+ byteain    | byteain
+ byteaout   | byteaout
+(14 rows)

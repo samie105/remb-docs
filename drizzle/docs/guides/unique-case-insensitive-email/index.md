@@ -1,0 +1,209 @@
+---
+title: "Drizzle ORM - Unique and Case-Insensitive Email Handling"
+source: "https://orm.drizzle.team/docs/guides/unique-case-insensitive-email"
+canonical_url: "https://orm.drizzle.team/docs/guides/unique-case-insensitive-email"
+docset: "drizzle"
+kind: "library"
+adapter: "generic"
+last_crawled_at: "2026-04-18T17:07:29.864Z"
+content_hash: "48101bbe7a0c31897c40a9b1b08e6254d341a695dff912e30f2d0bd3b4715883"
+menu_path: ["Drizzle ORM - Unique and Case-Insensitive Email Handling"]
+section_path: []
+nav_prev: {"path": "drizzle/docs/guides/toggling-a-boolean-field/index.md", "title": "Drizzle ORM - SQL Toggle value"}
+nav_next: {"path": "drizzle/docs/guides/update-many-with-different-value/index.md", "title": "Drizzle ORM - Update many with different values for each row"}
+---
+
+Drizzle | Unique and Case-Insensitive Email Handling
+
+### PostgreSQL[](#postgresql)
+
+To implement a unique and case-insensitive `email` handling in PostgreSQL with Drizzle, you can create a unique index on the lowercased `email` column. This way, you can ensure that the `email` is unique regardless of the case.
+
+Drizzle has simple and flexible API, which lets you easily create such an index using SQL-like syntax:
+
+schema.ts
+
+migration.sql
+
+```
+import { SQL, sql } from 'drizzle-orm';
+import { AnyPgColumn, pgTable, serial, text, uniqueIndex } from 'drizzle-orm/pg-core';
+
+export const users = pgTable(
+  'users',
+  {
+    id: serial('id').primaryKey(),
+    name: text('name').notNull(),
+    email: text('email').notNull(),
+  },
+  (table) => [
+    // uniqueIndex('emailUniqueIndex').on(sql`lower(${table.email})`),
+    uniqueIndex('emailUniqueIndex').on(lower(table.email)),
+  ],
+);
+
+// custom lower function
+export function lower(email: AnyPgColumn): SQL {
+  return sql`lower(${email})`;
+}
+```
+
+```
+CREATE TABLE IF NOT EXISTS "users" (
+  "id" serial PRIMARY KEY NOT NULL,
+  "name" text NOT NULL,
+  "email" text NOT NULL
+);
+--> statement-breakpoint
+CREATE UNIQUE INDEX IF NOT EXISTS "emailUniqueIndex" ON "users" USING btree (lower("email"));
+```
+
+This is how you can select user by `email` with `lower` function:
+
+```
+import { eq } from 'drizzle-orm';
+import { lower, users } from './schema';
+
+const db = drizzle(...);
+
+const findUserByEmail = async (email: string) => {
+  return await db
+    .select()
+    .from(users)
+    .where(eq(lower(users.email), email.toLowerCase()));
+};
+```
+
+```
+select * from "users" where lower(email) = 'john@email.com';
+```
+
+### MySQL[](#mysql)
+
+In MySQL, the default collation setting for string comparison is case-insensitive, which means that when performing operations like searching or comparing strings in SQL queries, the case of the characters does not affect the results. However, because collation settings can vary and may be configured to be case-sensitive, we will explicitly ensure that the `email` is unique regardless of case by creating a unique index on the lowercased `email` column.
+
+Drizzle has simple and flexible API, which lets you easily create such an index using SQL-like syntax:
+
+schema.ts
+
+migration.sql
+
+```
+import { SQL, sql } from 'drizzle-orm';
+import { AnyMySqlColumn, mysqlTable, serial, uniqueIndex, varchar } from 'drizzle-orm/mysql-core';
+
+export const users = mysqlTable(
+  'users',
+  {
+    id: serial('id').primaryKey(),
+    name: varchar('name', { length: 255 }).notNull(),
+    email: varchar('email', { length: 255 }).notNull(),
+  },
+  (table) => [
+    // uniqueIndex('emailUniqueIndex').on(sql`(lower(${table.email}))`),
+    uniqueIndex('emailUniqueIndex').on(lower(table.email)),
+  ]
+);
+
+// custom lower function
+export function lower(email: AnyMySqlColumn): SQL {
+  return sql`(lower(${email}))`;
+}
+```
+
+```
+CREATE TABLE `users` (
+    `id` serial AUTO_INCREMENT NOT NULL,
+    `name` varchar(255) NOT NULL,
+    `email` varchar(255) NOT NULL,
+    CONSTRAINT `users_id` PRIMARY KEY(`id`),
+    CONSTRAINT `emailUniqueIndex` UNIQUE((lower(`email`)))
+);
+```
+
+IMPORTANT
+
+Functional indexes are supported in MySQL starting from version `8.0.13`. For the correct syntax, the expression should be enclosed in parentheses, for example, `(lower(column))`.
+
+This is how you can select user by `email` with `lower` function:
+
+```
+import { eq } from 'drizzle-orm';
+import { lower, users } from './schema';
+
+const db = drizzle(...);
+
+const findUserByEmail = async (email: string) => {
+  return await db
+    .select()
+    .from(users)
+    .where(eq(lower(users.email), email.toLowerCase()));
+};
+```
+
+```
+select * from `users` where lower(email) = 'john@email.com';
+```
+
+### SQLite[](#sqlite)
+
+To implement a unique and case-insensitive `email` handling in SQLite with Drizzle, you can create a unique index on the lowercased `email` column. This way, you can ensure that the `email` is unique regardless of the case.
+
+Drizzle has simple and flexible API, which lets you easily create such an index using SQL-like syntax:
+
+schema.ts
+
+migration.sql
+
+```
+import { SQL, sql } from 'drizzle-orm';
+import { AnySQLiteColumn, integer, sqliteTable, text, uniqueIndex } from 'drizzle-orm/sqlite-core';
+
+export const users = sqliteTable(
+  'users',
+  {
+    id: integer('id').primaryKey(),
+    name: text('name').notNull(),
+    email: text('email').notNull(),
+  },
+  (table) => [
+    // uniqueIndex('emailUniqueIndex').on(sql`lower(${table.email})`),
+    uniqueIndex('emailUniqueIndex').on(lower(table.email)),
+  ]
+);
+
+// custom lower function
+export function lower(email: AnySQLiteColumn): SQL {
+  return sql`lower(${email})`;
+}
+```
+
+```
+CREATE TABLE `users` (
+    `id` integer PRIMARY KEY NOT NULL,
+    `name` text NOT NULL,
+    `email` text NOT NULL
+);
+--> statement-breakpoint
+CREATE UNIQUE INDEX `emailUniqueIndex` ON `users` (lower(`email`));
+```
+
+This is how you can select user by `email` with `lower` function:
+
+```
+import { eq } from 'drizzle-orm';
+import { lower, users } from './schema';
+
+const db = drizzle(...);
+
+const findUserByEmail = async (email: string) => {
+  return await db
+    .select()
+    .from(users)
+    .where(eq(lower(users.email), email.toLowerCase()));
+};
+```
+
+```
+select * from "users" where lower(email) = 'john@email.com';
+```

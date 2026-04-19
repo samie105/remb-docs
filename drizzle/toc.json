@@ -1,0 +1,507 @@
+[
+  {
+    "title": "Documentation",
+    "url": "https://orm.drizzle.team/docs/overview",
+    "children": []
+  },
+  {
+    "title": "Get started",
+    "url": "https://orm.drizzle.team/docs/get-started",
+    "children": []
+  },
+  {
+    "title": "Sustainability",
+    "url": "https://orm.drizzle.team/docs/sustainability",
+    "children": []
+  },
+  {
+    "title": "Guides",
+    "url": "https://orm.drizzle.team/docs/guides",
+    "children": []
+  },
+  {
+    "title": "Tutorials",
+    "url": "https://orm.drizzle.team/docs/tutorials",
+    "children": []
+  },
+  {
+    "title": "Latest releases",
+    "url": "https://orm.drizzle.team/docs/latest-releases",
+    "children": []
+  },
+  {
+    "title": "Gotchas",
+    "url": "https://orm.drizzle.team/docs/gotchas",
+    "children": []
+  },
+  {
+    "title": "How to upgrade?",
+    "url": "https://orm.drizzle.team/docs/upgrade-v1",
+    "children": []
+  },
+  {
+    "title": "Relational Queries v1 to v2",
+    "url": "https://orm.drizzle.team/docs/relations-v1-v2",
+    "children": []
+  },
+  {
+    "title": "Schema",
+    "url": "https://orm.drizzle.team/docs/sql-schema-declaration",
+    "children": []
+  },
+  {
+    "title": "Relations",
+    "url": "https://orm.drizzle.team/docs/relations-schema-declaration",
+    "children": []
+  },
+  {
+    "title": "Database connection",
+    "url": "https://orm.drizzle.team/docs/connect-overview",
+    "children": []
+  },
+  {
+    "title": "Query Data",
+    "url": "https://orm.drizzle.team/docs/data-querying",
+    "children": []
+  },
+  {
+    "title": "Migrations",
+    "url": "https://orm.drizzle.team/docs/migrations",
+    "children": []
+  },
+  {
+    "title": "PostgreSQL",
+    "url": "https://orm.drizzle.team/docs/get-started-postgresql",
+    "children": []
+  },
+  {
+    "title": "Gel",
+    "url": "https://orm.drizzle.team/docs/get-started-gel",
+    "children": []
+  },
+  {
+    "title": "MySQL",
+    "url": "https://orm.drizzle.team/docs/get-started-mysql",
+    "children": []
+  },
+  {
+    "title": "SQLite",
+    "url": "https://orm.drizzle.team/docs/get-started-sqlite",
+    "children": []
+  },
+  {
+    "title": "MSSQL",
+    "url": "https://orm.drizzle.team/docs/get-started-mssql",
+    "children": []
+  },
+  {
+    "title": "CockroachDB",
+    "url": "https://orm.drizzle.team/docs/get-started-cockroach",
+    "children": []
+  },
+  {
+    "title": "SingleStore",
+    "url": "https://orm.drizzle.team/docs/get-started-singlestore",
+    "children": []
+  },
+  {
+    "title": "PlanetScale Postgres",
+    "url": "https://orm.drizzle.team/docs/connect-planetscale-postgres",
+    "children": []
+  },
+  {
+    "title": "Neon",
+    "url": "https://orm.drizzle.team/docs/connect-neon",
+    "children": []
+  },
+  {
+    "title": "Vercel Postgres",
+    "url": "https://orm.drizzle.team/docs/connect-vercel-postgres",
+    "children": []
+  },
+  {
+    "title": "Prisma Postgres",
+    "url": "https://orm.drizzle.team/docs/connect-prisma-postgres",
+    "children": []
+  },
+  {
+    "title": "Supabase",
+    "url": "https://orm.drizzle.team/docs/connect-supabase",
+    "children": []
+  },
+  {
+    "title": "Xata",
+    "url": "https://orm.drizzle.team/docs/connect-xata",
+    "children": []
+  },
+  {
+    "title": "PGLite",
+    "url": "https://orm.drizzle.team/docs/connect-pglite",
+    "children": []
+  },
+  {
+    "title": "Nile",
+    "url": "https://orm.drizzle.team/docs/connect-nile",
+    "children": []
+  },
+  {
+    "title": "Bun SQL",
+    "url": "https://orm.drizzle.team/docs/connect-bun-sql",
+    "children": []
+  },
+  {
+    "title": "Effect Postgres",
+    "url": "https://orm.drizzle.team/docs/connect-effect-postgres",
+    "children": []
+  },
+  {
+    "title": "PlanetScale MySQL",
+    "url": "https://orm.drizzle.team/docs/connect-planetscale",
+    "children": []
+  },
+  {
+    "title": "TiDB",
+    "url": "https://orm.drizzle.team/docs/connect-tidb",
+    "children": []
+  },
+  {
+    "title": "Turso Cloud",
+    "url": "https://orm.drizzle.team/docs/connect-turso",
+    "children": []
+  },
+  {
+    "title": "Turso Database",
+    "url": "https://orm.drizzle.team/docs/connect-turso-database",
+    "children": []
+  },
+  {
+    "title": "SQLite Cloud",
+    "url": "https://orm.drizzle.team/docs/connect-sqlite-cloud",
+    "children": []
+  },
+  {
+    "title": "Cloudflare D1",
+    "url": "https://orm.drizzle.team/docs/connect-cloudflare-d1",
+    "children": []
+  },
+  {
+    "title": "Bun SQLite",
+    "url": "https://orm.drizzle.team/docs/connect-bun-sqlite",
+    "children": []
+  },
+  {
+    "title": "Node SQLite",
+    "url": "https://orm.drizzle.team/docs/connect-node-sqlite",
+    "children": []
+  },
+  {
+    "title": "Cloudflare Durable Objects",
+    "url": "https://orm.drizzle.team/docs/connect-cloudflare-do",
+    "children": []
+  },
+  {
+    "title": "Expo SQLite",
+    "url": "https://orm.drizzle.team/docs/connect-expo-sqlite",
+    "children": []
+  },
+  {
+    "title": "OP SQLite",
+    "url": "https://orm.drizzle.team/docs/connect-op-sqlite",
+    "children": []
+  },
+  {
+    "title": "React Native SQLite",
+    "url": "https://orm.drizzle.team/docs/connect-react-native-sqlite",
+    "children": []
+  },
+  {
+    "title": "AWS Data API Postgres",
+    "url": "https://orm.drizzle.team/docs/connect-aws-data-api-pg",
+    "children": []
+  },
+  {
+    "title": "AWS Data API MySQL",
+    "url": "https://orm.drizzle.team/docs/connect-aws-data-api-mysql",
+    "children": []
+  },
+  {
+    "title": "Drizzle Proxy",
+    "url": "https://orm.drizzle.team/docs/connect-drizzle-proxy",
+    "children": []
+  },
+  {
+    "title": "Data types",
+    "url": "https://orm.drizzle.team/docs/column-types/pg",
+    "children": []
+  },
+  {
+    "title": "Indexes & Constraints",
+    "url": "https://orm.drizzle.team/docs/indexes-constraints",
+    "children": []
+  },
+  {
+    "title": "Sequences",
+    "url": "https://orm.drizzle.team/docs/sequences",
+    "children": []
+  },
+  {
+    "title": "Views",
+    "url": "https://orm.drizzle.team/docs/views",
+    "children": []
+  },
+  {
+    "title": "Schemas",
+    "url": "https://orm.drizzle.team/docs/schemas",
+    "children": []
+  },
+  {
+    "title": "Drizzle Relations",
+    "url": "https://orm.drizzle.team/docs/relations-v2",
+    "children": []
+  },
+  {
+    "title": "Row-Level Security (RLS)",
+    "url": "https://orm.drizzle.team/docs/rls",
+    "children": []
+  },
+  {
+    "title": "Extensions",
+    "url": "https://orm.drizzle.team/docs/extensions/pg",
+    "children": []
+  },
+  {
+    "title": "[OLD] Drizzle Relations",
+    "url": "https://orm.drizzle.team/docs/relations",
+    "children": []
+  },
+  {
+    "title": "Overview",
+    "url": "https://orm.drizzle.team/docs/kit-overview",
+    "children": []
+  },
+  {
+    "title": "generate",
+    "url": "https://orm.drizzle.team/docs/drizzle-kit-generate",
+    "children": []
+  },
+  {
+    "title": "migrate",
+    "url": "https://orm.drizzle.team/docs/drizzle-kit-migrate",
+    "children": []
+  },
+  {
+    "title": "push",
+    "url": "https://orm.drizzle.team/docs/drizzle-kit-push",
+    "children": []
+  },
+  {
+    "title": "pull",
+    "url": "https://orm.drizzle.team/docs/drizzle-kit-pull",
+    "children": []
+  },
+  {
+    "title": "export",
+    "url": "https://orm.drizzle.team/docs/drizzle-kit-export",
+    "children": []
+  },
+  {
+    "title": "check",
+    "url": "https://orm.drizzle.team/docs/drizzle-kit-check",
+    "children": []
+  },
+  {
+    "title": "up",
+    "url": "https://orm.drizzle.team/docs/drizzle-kit-up",
+    "children": []
+  },
+  {
+    "title": "studio",
+    "url": "https://orm.drizzle.team/docs/drizzle-kit-studio",
+    "children": []
+  },
+  {
+    "title": "Custom migrations",
+    "url": "https://orm.drizzle.team/docs/kit-custom-migrations",
+    "children": []
+  },
+  {
+    "title": "Migrations for teams",
+    "url": "https://orm.drizzle.team/docs/kit-migrations-for-teams",
+    "children": []
+  },
+  {
+    "title": "Web and mobile",
+    "url": "https://orm.drizzle.team/docs/kit-web-mobile",
+    "children": []
+  },
+  {
+    "title": "drizzle.config.ts",
+    "url": "https://orm.drizzle.team/docs/drizzle-config-file",
+    "children": []
+  },
+  {
+    "title": "Overview",
+    "url": "https://orm.drizzle.team/docs/seed-overview",
+    "children": []
+  },
+  {
+    "title": "Generators",
+    "url": "https://orm.drizzle.team/docs/seed-functions",
+    "children": []
+  },
+  {
+    "title": "Versioning",
+    "url": "https://orm.drizzle.team/docs/seed-versioning",
+    "children": []
+  },
+  {
+    "title": "Query",
+    "url": "https://orm.drizzle.team/docs/rqb-v2",
+    "children": []
+  },
+  {
+    "title": "Select",
+    "url": "https://orm.drizzle.team/docs/select",
+    "children": []
+  },
+  {
+    "title": "Insert",
+    "url": "https://orm.drizzle.team/docs/insert",
+    "children": []
+  },
+  {
+    "title": "Update",
+    "url": "https://orm.drizzle.team/docs/update",
+    "children": []
+  },
+  {
+    "title": "Delete",
+    "url": "https://orm.drizzle.team/docs/delete",
+    "children": []
+  },
+  {
+    "title": "Filters",
+    "url": "https://orm.drizzle.team/docs/operators",
+    "children": []
+  },
+  {
+    "title": "Utils",
+    "url": "https://orm.drizzle.team/docs/query-utils",
+    "children": []
+  },
+  {
+    "title": "Joins",
+    "url": "https://orm.drizzle.team/docs/joins",
+    "children": []
+  },
+  {
+    "title": "Magic sql`` operator",
+    "url": "https://orm.drizzle.team/docs/sql",
+    "children": []
+  },
+  {
+    "title": "[OLD] Query V1",
+    "url": "https://orm.drizzle.team/docs/rqb",
+    "children": []
+  },
+  {
+    "title": "Queries",
+    "url": "https://orm.drizzle.team/docs/perf-queries",
+    "children": []
+  },
+  {
+    "title": "Serverless",
+    "url": "https://orm.drizzle.team/docs/perf-serverless",
+    "children": []
+  },
+  {
+    "title": "Set Operations",
+    "url": "https://orm.drizzle.team/docs/set-operations",
+    "children": []
+  },
+  {
+    "title": "Generated Columns",
+    "url": "https://orm.drizzle.team/docs/generated-columns",
+    "children": []
+  },
+  {
+    "title": "Transactions",
+    "url": "https://orm.drizzle.team/docs/transactions",
+    "children": []
+  },
+  {
+    "title": "Batch",
+    "url": "https://orm.drizzle.team/docs/batch-api",
+    "children": []
+  },
+  {
+    "title": "Cache",
+    "url": "https://orm.drizzle.team/docs/cache",
+    "children": []
+  },
+  {
+    "title": "Dynamic query building",
+    "url": "https://orm.drizzle.team/docs/dynamic-query-building",
+    "children": []
+  },
+  {
+    "title": "Read Replicas",
+    "url": "https://orm.drizzle.team/docs/read-replicas",
+    "children": []
+  },
+  {
+    "title": "Custom types",
+    "url": "https://orm.drizzle.team/docs/custom-types",
+    "children": []
+  },
+  {
+    "title": "Goodies",
+    "url": "https://orm.drizzle.team/docs/goodies",
+    "children": []
+  },
+  {
+    "title": "zod",
+    "url": "https://orm.drizzle.team/docs/zod",
+    "children": []
+  },
+  {
+    "title": "valibot",
+    "url": "https://orm.drizzle.team/docs/valibot",
+    "children": []
+  },
+  {
+    "title": "typebox",
+    "url": "https://orm.drizzle.team/docs/typebox",
+    "children": []
+  },
+  {
+    "title": "arktype",
+    "url": "https://orm.drizzle.team/docs/arktype",
+    "children": []
+  },
+  {
+    "title": "typebox-legacy",
+    "url": "https://orm.drizzle.team/docs/typebox-legacy",
+    "children": []
+  },
+  {
+    "title": "effect-schema",
+    "url": "https://orm.drizzle.team/docs/effect-schema",
+    "children": []
+  },
+  {
+    "title": "Prisma",
+    "url": "https://orm.drizzle.team/docs/prisma",
+    "children": []
+  },
+  {
+    "title": "ESLint Plugin",
+    "url": "https://orm.drizzle.team/docs/eslint-plugin",
+    "children": []
+  },
+  {
+    "title": "drizzle-graphql",
+    "url": "https://orm.drizzle.team/docs/graphql",
+    "children": []
+  }
+]

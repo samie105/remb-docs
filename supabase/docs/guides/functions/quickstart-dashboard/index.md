@@ -1,0 +1,182 @@
+---
+title: "Getting Started with Edge Functions (Dashboard)"
+source: "https://supabase.com/docs/guides/functions/quickstart-dashboard"
+canonical_url: "https://supabase.com/docs/guides/functions/quickstart-dashboard"
+docset: "supabase"
+kind: "platform"
+adapter: "generic"
+last_crawled_at: "2026-04-18T16:45:03.121Z"
+content_hash: "d6f47b9e2a6c4707bad55953fe38bf15fcdcd1bb8fb7da853ab0ea1daef4b9ab"
+menu_path: ["Edge Functions","Edge Functions","Getting started","Getting started","Quickstart (Dashboard)","Quickstart (Dashboard)"]
+section_path: ["Edge Functions","Edge Functions","Getting started","Getting started","Quickstart (Dashboard)","Quickstart (Dashboard)"]
+nav_prev: {"path": "supabase/docs/guides/functions/quickstart/index.md", "title": "Getting Started with Edge Functions"}
+nav_next: {"path": "supabase/docs/guides/functions/recursive-functions/index.md", "title": "Recursive / Nested Function Calls"}
+---
+
+# 
+
+Getting Started with Edge Functions (Dashboard)
+
+## 
+
+Learn how to create, test, and deploy your first Edge Function using the Supabase Dashboard.
+
+* * *
+
+Supabase allows you to create Supabase Edge Functions directly from the Supabase Dashboard, making it easy to deploy functions without needing to set up a local development environment. The Edge Functions editor in the Dashboard has built-in syntax highlighting and type-checking for Deno and Supabase-specific APIs.
+
+This guide will walk you through creating, testing, and deploying your first Edge Function using the Supabase Dashboard. You'll have a working function running globally in under 10 minutes.
+
+##### Prefer using the CLI?
+
+You can also create and deploy functions using the Supabase CLI. Check out our [CLI Quickstart guide](/docs/guides/functions/quickstart).
+
+##### New to Supabase?
+
+You'll need a Supabase project to get started. If you don't have one yet, create a new project at [database.new](https://database.new/).
+
+* * *
+
+## Step 1: Navigate to the Edge Functions tab[#](#step-1-navigate-to-the-edge-functions-tab)
+
+Navigate to your Supabase project dashboard and locate the Edge Functions section:
+
+1.  Go to your [Supabase Dashboard](/dashboard)
+2.  Select your project
+3.  In the left sidebar, click on **Edge Functions**
+
+You'll see the Edge Functions overview page where you can manage all your functions.
+
+* * *
+
+## Step 2: Create your first function[#](#step-2-create-your-first-function)
+
+Click the **"Deploy a new function"** button and select **"Via Editor"** to create a function directly in the dashboard.
+
+![Scaffold functions through the dashboard editor](/docs/img/guides/functions/dashboard/create-edge-function--light.png)
+
+##### Pre-built templates
+
+The dashboard offers several pre-built templates for common use cases, such as Stripe Webhooks, OpenAI proxying, uploading files to Supabase Storage, and sending emails.
+
+For this guide, we’ll select the **"Hello World"** template. If you’d rather start from scratch, you can ignore the pre-built templates.
+
+* * *
+
+## Step 3: Customize your function code[#](#step-3-customize-your-function-code)
+
+The dashboard will load your chosen template in the code editor. Here's what the "Hello World" template looks like:
+
+![Hello World template](/docs/img/guides/functions/dashboard/edge-function-template--light.png)
+
+If needed, you can modify this code directly in the browser editor. The function accepts a JSON payload with a `name` field and returns a greeting message.
+
+* * *
+
+## Step 4: Deploy your function[#](#step-4-deploy-your-function)
+
+Once you're happy with your function code:
+
+1.  Click the **"Deploy function"** button at the bottom of the editor
+2.  Wait for the deployment to complete (usually takes 10-30 seconds)
+3.  You'll see a success message when deployment is finished
+
+🚀 Your function is now automatically distributed to edge locations worldwide, running at `https://YOUR_PROJECT_ID.supabase.co/functions/v1/hello-world`
+
+* * *
+
+## Step 5: Test your function[#](#step-5-test-your-function)
+
+Supabase has built-in tools for testing your Edge Functions from the Dashboard. You can execute your Edge Function with different request payloads, headers, and query parameters. The built-in tester returns the response status, headers, and body.
+
+On your function's details page:
+
+1.  Click the **"Test"** button
+2.  Configure your test request:
+    *   **HTTP Method**: POST (or whatever your function expects)
+    *   **Headers**: Add any required headers like `Content-Type: application/json`
+    *   **Query Parameters**: Add URL parameters if needed
+    *   **Request Body**: Add your JSON payload
+    *   **Authorization**: Change the authorization token (anon key or user key)
+
+Click **"Send Request"** to test your function.
+
+![Test your function](/docs/img/guides/functions/dashboard/edge-function-test--light.png)
+
+In this example, we successfully tested our Hello World function by sending a JSON payload with a name field, and received the expected greeting message back.
+
+* * *
+
+## Step 6: Get your function URL and keys[#](#step-6-get-your-function-url-and-keys)
+
+Your function is now live at:
+
+```
+1https://YOUR_PROJECT_ID.supabase.co/functions/v1/hello-world
+```
+
+To invoke this Edge Function from within your application, you'll need API keys. Navigate to **Settings > API Keys** in your dashboard to find:
+
+*   **Anon Key** - For client-side requests (safe to use in browsers with RLS enabled)
+*   **Service Role Key** - For server-side requests (keep this secret! bypasses RLS)
+
+* * *
+
+If you’d like to update the deployed function code, click on the function you want to edit, modify the code as needed, then click Deploy updates. This will overwrite the existing deployment with the newly edited function code.
+
+##### No version control
+
+There is currently **no version control** for edits! The Dashboard's Edge Function editor currently does not support version control, versioning, or rollbacks. We recommend using it only for quick testing and prototypes.
+
+* * *
+
+## Usage[#](#usage)
+
+Now that your function is deployed, you can invoke it from within your app:
+
+```
+1import { createClient } from '@supabase/supabase-js'23const supabase = createClient('https://[YOUR_PROJECT_ID].supabase.co', 'YOUR_ANON_KEY')45const { data, error } = await supabase.functions.invoke('hello-world', {6  body: { name: 'JavaScript' },7})89console.log(data) // { message: "Hello JavaScript!" }
+```
+
+* * *
+
+## Deploy via Assistant[#](#deploy-via-assistant)
+
+You can also use Supabase's AI Assistant to generate and deploy functions automatically.
+
+Go to your project > **Deploy a new function** > **Via AI Assistant**.
+
+![Create Edge Function via AI Assistant](/docs/img/guides/functions/dashboard/create-ai-edge-function--light.png)
+
+Describe what you want your function to do in the prompt
+
+![Create Edge Function via AI Assistant](/docs/img/guides/functions/dashboard/ai-edge-function--light.png)
+
+Click **Deploy** and the Assistant will create and deploy the function for you.
+
+* * *
+
+## Download Edge Functions[#](#download-edge-functions)
+
+Now that your function is deployed, you can access it from your local development environment. To use your Edge Function code within your local development environment, you can download your function source code either through the dashboard, or the CLI.
+
+### Dashboard[#](#dashboard)
+
+1.  Go to your function's page
+2.  In the top right corner, click the **"Download"** button
+
+### CLI[#](#cli)
+
+##### CLI not installed?
+
+Before getting started, make sure you have the **Supabase CLI installed**. Check out the [CLI installation guide](/docs/guides/cli) for installation methods and troubleshooting.
+
+```
+1# Link your project to your local environment2supabase link --project-ref [project-ref]34# List all functions in the linked project5supabase functions list67# Download a function8supabase functions download hello-world
+```
+
+At this point, your function has been downloaded to your local environment. Make the required changes, and redeploy when you're ready.
+
+```
+1# Run a function locally2supabase functions serve hello-world34# Redeploy when you're ready with your changes5supabase functions deploy hello-world
+```

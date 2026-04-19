@@ -1,0 +1,658 @@
+[
+  {
+    "url": "https://hono.dev/docs/",
+    "outputPath": "output/hono/docs/index.md",
+    "title": "Hono ​",
+    "contentHash": "a50350254bf2c41db401b1f8ccfb625d0e91ce1517e42f3577027bfd64198ade",
+    "visitedAt": "2026-04-18T16:32:27.252Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://hono.dev/docs/concepts/motivation",
+    "outputPath": "output/hono/docs/concepts/motivation/index.md",
+    "title": "Philosophy ​",
+    "contentHash": "6fa31eedf6c1f32f5291f01bf6b5d315eca54f77cc8cdc43d6d09ac795848e6f",
+    "visitedAt": "2026-04-18T16:33:07.767Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://hono.dev/docs/concepts/routers",
+    "outputPath": "output/hono/docs/concepts/routers/index.md",
+    "title": "Routers ​",
+    "contentHash": "edacc3c3dcda27dbf299f3c6e3a0e05d6eb29afe74285625388a14a3b4de81f9",
+    "visitedAt": "2026-04-18T16:33:12.105Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://hono.dev/docs/concepts/benchmarks",
+    "outputPath": "output/hono/docs/concepts/benchmarks/index.md",
+    "title": "Benchmarks ​",
+    "contentHash": "424ff8ed639368ddb51837384f5dfbc8f528821d3bb146e14b18db8e986f2ee5",
+    "visitedAt": "2026-04-18T16:33:16.265Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://hono.dev/docs/concepts/developer-experience",
+    "outputPath": "output/hono/docs/concepts/developer-experience/index.md",
+    "title": "Developer Experience ​",
+    "contentHash": "be9835c546d2951b519280a1757ef5286fa6108ed6664a1ca42afd02df3aadd9",
+    "visitedAt": "2026-04-18T16:33:54.936Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://hono.dev/docs/concepts/middleware",
+    "outputPath": "output/hono/docs/concepts/middleware/index.md",
+    "title": "Middleware ​",
+    "contentHash": "be9835c546d2951b519280a1757ef5286fa6108ed6664a1ca42afd02df3aadd9",
+    "visitedAt": "2026-04-18T16:33:57.148Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://hono.dev/docs/concepts/web-standard",
+    "outputPath": "output/hono/docs/concepts/web-standard/index.md",
+    "title": "Web Standards ​",
+    "contentHash": "64008de28e68eb3b9d5ec879c2ad0997848f08f4aca58b843116d82e63869bf0",
+    "visitedAt": "2026-04-18T16:34:00.591Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://hono.dev/docs/concepts/stacks",
+    "outputPath": "output/hono/docs/concepts/stacks/index.md",
+    "title": "Hono Stacks ​",
+    "contentHash": "8f6c6fb4cbc13509ff2b3466192cc3e357f495e6c23c89925d6af194ec315d32",
+    "visitedAt": "2026-04-18T16:34:44.772Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://hono.dev/docs/getting-started/basic",
+    "outputPath": "output/hono/docs/getting-started/basic/index.md",
+    "title": "Getting Started ​",
+    "contentHash": "6eb270562128f6c4df69afbf26cb1a193ad2405bf44c8745a42b5efba350cab9",
+    "visitedAt": "2026-04-18T16:34:49.050Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://hono.dev/docs/getting-started/cloudflare-workers",
+    "outputPath": "output/hono/docs/getting-started/cloudflare-workers/index.md",
+    "title": "Cloudflare Workers ​",
+    "contentHash": "f0b86bb7a962f637639550d54ebfb19d6529766b734ce855a5e977953840d403",
+    "visitedAt": "2026-04-18T16:34:55.763Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://hono.dev/docs/getting-started/cloudflare-pages",
+    "outputPath": "output/hono/docs/getting-started/cloudflare-pages/index.md",
+    "title": "Cloudflare Pages ​",
+    "contentHash": "f1fd40ac614573c3a85237f91e083efde823340ecd5275ecc076620bde888b3e",
+    "visitedAt": "2026-04-18T16:35:47.014Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://hono.dev/docs/getting-started/bun",
+    "outputPath": "output/hono/docs/getting-started/bun/index.md",
+    "title": "Bun ​",
+    "contentHash": "f2be62890ae52fccfc2a21c06bf7937ec6520b5e67a88b0ab7ec1c15d1be5556",
+    "visitedAt": "2026-04-18T16:35:57.843Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://hono.dev/docs/getting-started/deno",
+    "outputPath": "output/hono/docs/getting-started/deno/index.md",
+    "title": "Deno ​",
+    "contentHash": "c95918a1c1b0b3fd432de3507eaaa87770399ef90b14442e5fa5e021081406d9",
+    "visitedAt": "2026-04-18T16:36:12.679Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://hono.dev/docs/getting-started/nextjs",
+    "outputPath": "output/hono/docs/getting-started/nextjs/index.md",
+    "title": "Next.js ​",
+    "contentHash": "82a771ba1415da55996025fdc7098a50b1c9a5a5cf57c810ea2ba32b6be442e4",
+    "visitedAt": "2026-04-18T16:36:54.777Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://hono.dev/docs/getting-started/fastly",
+    "outputPath": "output/hono/docs/getting-started/fastly/index.md",
+    "title": "Fastly Compute ​",
+    "contentHash": "3122fde8d0f8a57f03112cfd9b607f6f88593cfd6e268e043890e63838a29105",
+    "visitedAt": "2026-04-18T16:37:00.035Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://hono.dev/docs/getting-started/vercel",
+    "outputPath": "output/hono/docs/getting-started/vercel/index.md",
+    "title": "Vercel ​",
+    "contentHash": "be9835c546d2951b519280a1757ef5286fa6108ed6664a1ca42afd02df3aadd9",
+    "visitedAt": "2026-04-18T16:37:02.379Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://hono.dev/docs/getting-started/lambda-edge",
+    "outputPath": "output/hono/docs/getting-started/lambda-edge/index.md",
+    "title": "Lambda@Edge ​",
+    "contentHash": "1a5319bdc4152a38d28dc03a468fee126e5069ccee94c22dea6bb4adb3c662e6",
+    "visitedAt": "2026-04-18T16:37:53.606Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://hono.dev/docs/getting-started/netlify",
+    "outputPath": "output/hono/docs/getting-started/netlify/index.md",
+    "title": "Netlify ​",
+    "contentHash": "985c6efafed8752a03a28669ad7b501d0a20c563b41a5b6714ed9ed131bc629a",
+    "visitedAt": "2026-04-18T16:38:04.490Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://hono.dev/docs/getting-started/aws-lambda",
+    "outputPath": "output/hono/docs/getting-started/aws-lambda/index.md",
+    "title": "AWS Lambda ​",
+    "contentHash": "04e2e7da2d3142559be30d763fa4b914edc5f30beab9c90cc08fdbad57a02d79",
+    "visitedAt": "2026-04-18T16:38:14.872Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://hono.dev/docs/getting-started/azure-functions",
+    "outputPath": "output/hono/docs/getting-started/azure-functions/index.md",
+    "title": "Azure Functions ​",
+    "contentHash": "90508d324eedbf4446c0c0ec95c8d261809f845141b51b399a83c0ea84913cd8",
+    "visitedAt": "2026-04-18T16:38:57.000Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://hono.dev/docs/getting-started/google-cloud-run",
+    "outputPath": "output/hono/docs/getting-started/google-cloud-run/index.md",
+    "title": "Google Cloud Run ​",
+    "contentHash": "b88e82066dabba270a62ebd3ab6b3460980281d185daf5b882e8acf75c23e843",
+    "visitedAt": "2026-04-18T16:38:59.904Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://hono.dev/docs/getting-started/supabase-functions",
+    "outputPath": "output/hono/docs/getting-started/supabase-functions/index.md",
+    "title": "Supabase Edge Functions ​",
+    "contentHash": "ee899c6911b76e6be857a13bb9e42fad482549d6b5bcbac404330385510bbf10",
+    "visitedAt": "2026-04-18T16:39:02.710Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://hono.dev/docs/getting-started/webassembly-wasi",
+    "outputPath": "output/hono/docs/getting-started/webassembly-wasi/index.md",
+    "title": "WebAssembly (w/ WASI) ​",
+    "contentHash": "df4e51687fadb8417e14b7a0285618d45b395664b286fa558b4dbcc3dc6b5d6a",
+    "visitedAt": "2026-04-18T16:39:42.347Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://hono.dev/docs/getting-started/service-worker",
+    "outputPath": "output/hono/docs/getting-started/service-worker/index.md",
+    "title": "Service Worker ​",
+    "contentHash": "07256421602f9d7a54b3e77499f4a0f50bca9ee8999eb63e39877ef87354eabc",
+    "visitedAt": "2026-04-18T16:39:48.140Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://hono.dev/docs/getting-started/ali-function-compute",
+    "outputPath": "output/hono/docs/getting-started/ali-function-compute/index.md",
+    "title": "Alibaba Cloud Function Compute ​",
+    "contentHash": "e027e40aa022d3e8f6ea14bef7fdbd53b1e29d55279e2895a3a8c3ecb4c7a17d",
+    "visitedAt": "2026-04-18T16:39:52.252Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://hono.dev/docs/api/routing",
+    "outputPath": "output/hono/docs/api/routing/index.md",
+    "title": "Routing ​",
+    "contentHash": "d65ef9ae894e1639564eab74a1a2ca499d42cb3756f2a0dafc282258e4ddc2c3",
+    "visitedAt": "2026-04-18T16:40:39.704Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://hono.dev/docs/api/hono",
+    "outputPath": "output/hono/docs/api/hono/index.md",
+    "title": "App - Hono ​",
+    "contentHash": "2e59f321090262cd8d7eb62db166b1f1236011ee88fb87b04f3cbbf6ca4456bf",
+    "visitedAt": "2026-04-18T16:40:48.347Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://hono.dev/docs/getting-started/nodejs",
+    "outputPath": "output/hono/docs/getting-started/nodejs/index.md",
+    "title": "Node.js ​",
+    "contentHash": "b380501355aaa01174f50692156b5381cf2a69dbcf8ce720f366b8d79557fbaf",
+    "visitedAt": "2026-04-18T16:40:52.776Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://hono.dev/docs/api/exception",
+    "outputPath": "output/hono/docs/api/exception/index.md",
+    "title": "HTTPException ​",
+    "contentHash": "6892c043fc236e8019b21c5d37cdbeeac3af22978f941a78f71f3f9a6993a10d",
+    "visitedAt": "2026-04-18T16:41:35.479Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://hono.dev/docs/api/request",
+    "outputPath": "output/hono/docs/api/request/index.md",
+    "title": "HonoRequest ​",
+    "contentHash": "384f4c80d158e1ed4d7a23283097c05feaedcbd8cfee2ea56a210e6f4c958e27",
+    "visitedAt": "2026-04-18T16:41:45.211Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://hono.dev/docs/api/context",
+    "outputPath": "output/hono/docs/api/context/index.md",
+    "title": "Context ​",
+    "contentHash": "53b6bd807bc029ba30cbbef5071c7f45553b0b0d1ee3561a4993da6f7bb94a7e",
+    "visitedAt": "2026-04-18T16:41:55.464Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://hono.dev/docs/api/presets",
+    "outputPath": "output/hono/docs/api/presets/index.md",
+    "title": "Presets ​",
+    "contentHash": "be9835c546d2951b519280a1757ef5286fa6108ed6664a1ca42afd02df3aadd9",
+    "visitedAt": "2026-04-18T16:42:33.338Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://hono.dev/docs/guides/create-hono",
+    "outputPath": "output/hono/docs/guides/create-hono/index.md",
+    "title": "Create-hono ​",
+    "contentHash": "c2c2570fa0e71918ad28b7e2ae4ec9644327e023d0832550139f33b0afa3e5b9",
+    "visitedAt": "2026-04-18T16:42:37.708Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://hono.dev/docs/guides/middleware",
+    "outputPath": "output/hono/docs/guides/middleware/index.md",
+    "title": "Middleware ​",
+    "contentHash": "f16216d322f3e3007f5a4b077ff5eda4316998c7913ec599a0ba8c4553f67b4b",
+    "visitedAt": "2026-04-18T16:42:45.115Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://hono.dev/docs/guides/jsx-dom",
+    "outputPath": "output/hono/docs/guides/jsx-dom/index.md",
+    "title": "Client Components ​",
+    "contentHash": "a63b9b03534473dfd5c57b2f7332101ad408de75b2d87406c39a4d8d87fe6375",
+    "visitedAt": "2026-04-18T16:43:34.453Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://hono.dev/docs/guides/helpers",
+    "outputPath": "output/hono/docs/guides/helpers/index.md",
+    "title": "Helpers ​",
+    "contentHash": "be9835c546d2951b519280a1757ef5286fa6108ed6664a1ca42afd02df3aadd9",
+    "visitedAt": "2026-04-18T16:43:35.567Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://hono.dev/docs/guides/jsx",
+    "outputPath": "output/hono/docs/guides/jsx/index.md",
+    "title": "JSX ​",
+    "contentHash": "3565a3f8be2ce9e39af78a6c462dac143d2701a08ce7ffcc57530d3e2fce2d1c",
+    "visitedAt": "2026-04-18T16:43:44.955Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://hono.dev/docs/guides/testing",
+    "outputPath": "output/hono/docs/guides/testing/index.md",
+    "title": "Testing ​",
+    "contentHash": "78b0ac0660d8f1bf499055495942e1b84774c859d8d7ed885fa60da76b479e17",
+    "visitedAt": "2026-04-18T16:44:26.319Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://hono.dev/docs/guides/validation",
+    "outputPath": "output/hono/docs/guides/validation/index.md",
+    "title": "Validation ​",
+    "contentHash": "655355a1eebdb8cd30ab1ea6cd5182eea733a7519e5c0fcb1ce5f4220bdde048",
+    "visitedAt": "2026-04-18T16:44:34.709Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://hono.dev/docs/guides/rpc",
+    "outputPath": "output/hono/docs/guides/rpc/index.md",
+    "title": "RPC ​",
+    "contentHash": "036e73fbb550368612c0d204a0bc8b28533ca83856e0c186dcc3d443aa131994",
+    "visitedAt": "2026-04-18T16:44:42.843Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://hono.dev/docs/guides/faq",
+    "outputPath": "output/hono/docs/guides/faq/index.md",
+    "title": "Frequently Asked Questions ​",
+    "contentHash": "be9835c546d2951b519280a1757ef5286fa6108ed6664a1ca42afd02df3aadd9",
+    "visitedAt": "2026-04-18T16:45:18.438Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://hono.dev/docs/guides/others",
+    "outputPath": "output/hono/docs/guides/others/index.md",
+    "title": "Miscellaneous ​",
+    "contentHash": "be9835c546d2951b519280a1757ef5286fa6108ed6664a1ca42afd02df3aadd9",
+    "visitedAt": "2026-04-18T16:45:19.229Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://hono.dev/docs/guides/best-practices",
+    "outputPath": "output/hono/docs/guides/best-practices/index.md",
+    "title": "Best Practices ​",
+    "contentHash": "3ceb55ecbf029f34ba2af25d6b1127178462a912214107983a61fb9c12e31ee1",
+    "visitedAt": "2026-04-18T16:45:23.631Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://hono.dev/docs/helpers/adapter",
+    "outputPath": "output/hono/docs/helpers/adapter/index.md",
+    "title": "Adapter Helper ​",
+    "contentHash": "179be4de098f686e8d3bc97873f906bf6ec5ae9e163cf36bdc649951778515ae",
+    "visitedAt": "2026-04-18T16:46:04.940Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://hono.dev/docs/helpers/conninfo",
+    "outputPath": "output/hono/docs/helpers/conninfo/index.md",
+    "title": "ConnInfo Helper ​",
+    "contentHash": "a86dcf32a142685f28a757be69243577bfedc97bddd9ae22d7bcf985f5e7fa3d",
+    "visitedAt": "2026-04-18T16:46:07.391Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://hono.dev/docs/helpers/accepts",
+    "outputPath": "output/hono/docs/helpers/accepts/index.md",
+    "title": "Accepts Helper ​",
+    "contentHash": "be9835c546d2951b519280a1757ef5286fa6108ed6664a1ca42afd02df3aadd9",
+    "visitedAt": "2026-04-18T16:46:08.875Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://hono.dev/docs/helpers/dev",
+    "outputPath": "output/hono/docs/helpers/dev/index.md",
+    "title": "Dev Helper ​",
+    "contentHash": "be9835c546d2951b519280a1757ef5286fa6108ed6664a1ca42afd02df3aadd9",
+    "visitedAt": "2026-04-18T16:46:43.105Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://hono.dev/docs/helpers/cookie",
+    "outputPath": "output/hono/docs/helpers/cookie/index.md",
+    "title": "Cookie Helper ​",
+    "contentHash": "5a8d625acfd0944fa92266416c2948c4b26bb266a55842e3b2a5a2adad5bb1af",
+    "visitedAt": "2026-04-18T16:46:46.691Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://hono.dev/docs/helpers/css",
+    "outputPath": "output/hono/docs/helpers/css/index.md",
+    "title": "css Helper ​",
+    "contentHash": "d42f5701d5a5e654af702e6c7d33609ff20f10879293baf04eddf50e3a386ae5",
+    "visitedAt": "2026-04-18T16:46:50.518Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://hono.dev/docs/helpers/html",
+    "outputPath": "output/hono/docs/helpers/html/index.md",
+    "title": "html Helper ​",
+    "contentHash": "571515fe3e00190cbda88948ec414f457047318efcdee79006f56ee2d8e6fcd7",
+    "visitedAt": "2026-04-18T16:47:25.545Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://hono.dev/docs/helpers/factory",
+    "outputPath": "output/hono/docs/helpers/factory/index.md",
+    "title": "Factory Helper ​",
+    "contentHash": "d5476b5c24b263dbb7552b699f5b1f96e724404d1d4080b925706e0eba2f55e6",
+    "visitedAt": "2026-04-18T16:47:27.770Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://hono.dev/docs/helpers/jwt",
+    "outputPath": "output/hono/docs/helpers/jwt/index.md",
+    "title": "JWT Authentication Helper ​",
+    "contentHash": "38921bcaea5195b67eb8c13bca17cdfdcc151024e9bb31abfebf77110e60d73f",
+    "visitedAt": "2026-04-18T16:47:30.318Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://hono.dev/docs/helpers/proxy",
+    "outputPath": "output/hono/docs/helpers/proxy/index.md",
+    "title": "Proxy Helper ​",
+    "contentHash": "f6645f0e5fb95e15ed26e257244baac143f0c0a347ee78196e26f3e55063bae9",
+    "visitedAt": "2026-04-18T16:48:05.452Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://hono.dev/docs/helpers/route",
+    "outputPath": "output/hono/docs/helpers/route/index.md",
+    "title": "Route Helper ​",
+    "contentHash": "c220a1485f493c4a3d7b33fcb64fe839138c7f4f2d5b54629d14bf2b0705ffbd",
+    "visitedAt": "2026-04-18T16:48:07.976Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://hono.dev/docs/helpers/ssg",
+    "outputPath": "output/hono/docs/helpers/ssg/index.md",
+    "title": "SSG Helper ​",
+    "contentHash": "221ebf44680dc7b51f3c0a5f99fd3807218d2c33d605c6c5aaf0fc1e34fab1f2",
+    "visitedAt": "2026-04-18T16:48:12.690Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://hono.dev/docs/helpers/websocket",
+    "outputPath": "output/hono/docs/helpers/websocket/index.md",
+    "title": "WebSocket Helper ​",
+    "contentHash": "c72ec4d6769a08c530b06aabcce1c9bcc6209e92a7e33d933bf5d77f4fb5215f",
+    "visitedAt": "2026-04-18T16:48:49.089Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://hono.dev/docs/helpers/streaming",
+    "outputPath": "output/hono/docs/helpers/streaming/index.md",
+    "title": "Streaming Helper ​",
+    "contentHash": "e2153220fe6d08fd1c138dc909bca81f9f9f49425fbfd024d27ab8d40a414d6a",
+    "visitedAt": "2026-04-18T16:48:50.943Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://hono.dev/docs/helpers/testing",
+    "outputPath": "output/hono/docs/helpers/testing/index.md",
+    "title": "Testing Helper ​",
+    "contentHash": "b45881c66f53afadc05d1ab4e7773352ea72779234cfba559b09edaea8a2acbf",
+    "visitedAt": "2026-04-18T16:48:52.816Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://hono.dev/docs/middleware/builtin/body-limit",
+    "outputPath": "output/hono/docs/middleware/builtin/body-limit/index.md",
+    "title": "Body Limit Middleware ​",
+    "contentHash": "794089e37d12608e53c2ba656dd87ed2295f2c4ce642f19b5027db6a8e490a8f",
+    "visitedAt": "2026-04-18T16:49:27.453Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://hono.dev/docs/middleware/builtin/basic-auth",
+    "outputPath": "output/hono/docs/middleware/builtin/basic-auth/index.md",
+    "title": "Basic Auth Middleware ​",
+    "contentHash": "8d06ff03597f6695a1c5dea95a04e8abaccc9ba4fda5fed06d8367daa6cb9954",
+    "visitedAt": "2026-04-18T16:49:31.988Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://hono.dev/docs/middleware/builtin/bearer-auth",
+    "outputPath": "output/hono/docs/middleware/builtin/bearer-auth/index.md",
+    "title": "Bearer Auth Middleware ​",
+    "contentHash": "3e6405b13f40a17a1348028be2d311c19fcaa110926be1ec7baf6c5c5f06b869",
+    "visitedAt": "2026-04-18T16:49:33.878Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://hono.dev/docs/middleware/builtin/compress",
+    "outputPath": "output/hono/docs/middleware/builtin/compress/index.md",
+    "title": "Compress Middleware ​",
+    "contentHash": "be9835c546d2951b519280a1757ef5286fa6108ed6664a1ca42afd02df3aadd9",
+    "visitedAt": "2026-04-18T16:50:08.495Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://hono.dev/docs/middleware/builtin/combine",
+    "outputPath": "output/hono/docs/middleware/builtin/combine/index.md",
+    "title": "Combine Middleware ​",
+    "contentHash": "bdfebc7eea4869bb2f7e597c8f84d5ab9d30e90e98c10a8b913ecb4765ac216d",
+    "visitedAt": "2026-04-18T16:50:09.984Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://hono.dev/docs/middleware/builtin/cache",
+    "outputPath": "output/hono/docs/middleware/builtin/cache/index.md",
+    "title": "Cache Middleware ​",
+    "contentHash": "b8963488be6d648636ffdcab3342fac8cf12168efa97523504984050e0af20a4",
+    "visitedAt": "2026-04-18T16:50:11.242Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://hono.dev/docs/middleware/builtin/context-storage",
+    "outputPath": "output/hono/docs/middleware/builtin/context-storage/index.md",
+    "title": "Context Storage Middleware ​",
+    "contentHash": "e2a1cca8842b45498345fdba3ec586cc7c724914c9341ab4a8b739c0e091e975",
+    "visitedAt": "2026-04-18T16:50:46.239Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://hono.dev/docs/middleware/builtin/csrf",
+    "outputPath": "output/hono/docs/middleware/builtin/csrf/index.md",
+    "title": "CSRF Protection ​",
+    "contentHash": "fc1c9e8d03e3213d2b1a71cd32df2a5b41354ee404ff914c48b762b33a7f937f",
+    "visitedAt": "2026-04-18T16:50:47.910Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://hono.dev/docs/middleware/builtin/cors",
+    "outputPath": "output/hono/docs/middleware/builtin/cors/index.md",
+    "title": "CORS Middleware ​",
+    "contentHash": "581b36e80a44eea24df1db5c0aafe05e9c7f9feeed7fe60f9560634005980c80",
+    "visitedAt": "2026-04-18T16:50:50.220Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://hono.dev/docs/middleware/builtin/etag",
+    "outputPath": "output/hono/docs/middleware/builtin/etag/index.md",
+    "title": "ETag Middleware ​",
+    "contentHash": "7053ff415d57b99239de454a3e39d39d3035cf7e584eebb6483038cb44016c92",
+    "visitedAt": "2026-04-18T16:51:27.289Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://hono.dev/docs/middleware/builtin/ip-restriction",
+    "outputPath": "output/hono/docs/middleware/builtin/ip-restriction/index.md",
+    "title": "IP Restriction Middleware ​",
+    "contentHash": "c6c0290683fa2126c299e288a8d06e9924ce08882b7001bdd7270b6f3c24656d",
+    "visitedAt": "2026-04-18T16:51:30.356Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://hono.dev/docs/middleware/builtin/jsx-renderer",
+    "outputPath": "output/hono/docs/middleware/builtin/jsx-renderer/index.md",
+    "title": "JSX Renderer Middleware ​",
+    "contentHash": "a71886415eef814bd00c8b8aef7a82c3e83dae50ca7b7aa80371ff114be9e67f",
+    "visitedAt": "2026-04-18T16:51:33.204Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://hono.dev/docs/middleware/builtin/jwk",
+    "outputPath": "output/hono/docs/middleware/builtin/jwk/index.md",
+    "title": "JWK Auth Middleware ​",
+    "contentHash": "1e1e314caeabb249f7677c1b9397560019c8c2f8ba21ad437bea1e775037ad47",
+    "visitedAt": "2026-04-18T16:52:10.197Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://hono.dev/docs/middleware/builtin/jwt",
+    "outputPath": "output/hono/docs/middleware/builtin/jwt/index.md",
+    "title": "JWT Auth Middleware ​",
+    "contentHash": "dce46af874ffbce165d1647f2fa0def46c90a76d691a84517d57a34e8b9487fa",
+    "visitedAt": "2026-04-18T16:52:12.227Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://hono.dev/docs/middleware/builtin/logger",
+    "outputPath": "output/hono/docs/middleware/builtin/logger/index.md",
+    "title": "Logger Middleware ​",
+    "contentHash": "7f8a79f8a8478758775a84d113fd360aa72cdc4ff35632a3f108fedf650f2ad2",
+    "visitedAt": "2026-04-18T16:52:14.649Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://hono.dev/docs/middleware/builtin/method-override",
+    "outputPath": "output/hono/docs/middleware/builtin/method-override/index.md",
+    "title": "Method Override Middleware ​",
+    "contentHash": "f94327372b9e26a11352b15459d0dc7ff10b2cb150735ed3de8e4c05cf7ed822",
+    "visitedAt": "2026-04-18T16:52:50.617Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://hono.dev/docs/middleware/builtin/pretty-json",
+    "outputPath": "output/hono/docs/middleware/builtin/pretty-json/index.md",
+    "title": "Pretty JSON Middleware ​",
+    "contentHash": "be9835c546d2951b519280a1757ef5286fa6108ed6664a1ca42afd02df3aadd9",
+    "visitedAt": "2026-04-18T16:52:51.049Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://hono.dev/docs/middleware/builtin/language",
+    "outputPath": "output/hono/docs/middleware/builtin/language/index.md",
+    "title": "Language Middleware ​",
+    "contentHash": "e14eaa3417686861685f49bbddf982bb0ef643aad331dd0114648b99aedcc244",
+    "visitedAt": "2026-04-18T16:52:56.492Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://hono.dev/docs/middleware/builtin/timeout",
+    "outputPath": "output/hono/docs/middleware/builtin/timeout/index.md",
+    "title": "Timeout Middleware ​",
+    "contentHash": "36235b95663a3b4d572bba7f7eb9cc76c9f551fd46c41e78166aeb88bd770a5b",
+    "visitedAt": "2026-04-18T16:53:31.318Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://hono.dev/docs/middleware/builtin/request-id",
+    "outputPath": "output/hono/docs/middleware/builtin/request-id/index.md",
+    "title": "Request ID Middleware ​",
+    "contentHash": "671e105ce927a0cdac6d4ee15bc40ac50f754f5e4a30a0efd4a09b9ea56393a1",
+    "visitedAt": "2026-04-18T16:53:33.055Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://hono.dev/docs/middleware/builtin/secure-headers",
+    "outputPath": "output/hono/docs/middleware/builtin/secure-headers/index.md",
+    "title": "Secure Headers Middleware ​",
+    "contentHash": "c5173554aa62c8c612ad7e97ea70619205a99574449f513fe68923a8b0e5efe0",
+    "visitedAt": "2026-04-18T16:53:36.313Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://hono.dev/docs/middleware/third-party",
+    "outputPath": "output/hono/docs/middleware/third-party/index.md",
+    "title": "Third-party Middleware ​",
+    "contentHash": "be9835c546d2951b519280a1757ef5286fa6108ed6664a1ca42afd02df3aadd9",
+    "visitedAt": "2026-04-18T16:54:09.760Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://hono.dev/docs/middleware/builtin/timing",
+    "outputPath": "output/hono/docs/middleware/builtin/timing/index.md",
+    "title": "Server-Timing Middleware ​",
+    "contentHash": "f792b08ef6629547f60b64f43c000423933a896ed12d43be281c85f3c8866bb8",
+    "visitedAt": "2026-04-18T16:54:11.608Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://hono.dev/docs/middleware/builtin/trailing-slash",
+    "outputPath": "output/hono/docs/middleware/builtin/trailing-slash/index.md",
+    "title": "Trailing Slash Middleware ​",
+    "contentHash": "030c7bcec5c43706932666d825191af5988250c82bbfba1a7b568b2992f18c92",
+    "visitedAt": "2026-04-18T16:54:14.034Z",
+    "status": "visited"
+  }
+]

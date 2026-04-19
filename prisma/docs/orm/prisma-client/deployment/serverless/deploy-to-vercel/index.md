@@ -1,0 +1,104 @@
+---
+title: "Deploy to Vercel"
+source: "https://www.prisma.io/docs/orm/prisma-client/deployment/serverless/deploy-to-vercel"
+canonical_url: "https://www.prisma.io/docs/orm/prisma-client/deployment/serverless/deploy-to-vercel"
+docset: "prisma"
+kind: "library"
+adapter: "generic"
+last_crawled_at: "2026-04-18T16:54:18.965Z"
+content_hash: "674e23eb3d4024b634927a34bacadbb4a4a2208dca4e91deb8601d78439ef2aa"
+menu_path: ["Deploy to Vercel"]
+section_path: []
+nav_prev: {"path": "prisma/docs/orm/prisma-client/deployment/serverless/deploy-to-netlify/index.md", "title": "Deploy to Netlify"}
+nav_next: {"path": "prisma/docs/orm/prisma-client/deployment/traditional/deploy-to-flyio/index.md", "title": "Deploy to Fly.io"}
+---
+
+This guide takes you through the steps to set up and deploy a serverless application that uses Prisma to [Vercel](https://vercel.com/).
+
+Vercel is a cloud platform that hosts static sites, serverless, and edge functions. You can integrate a Vercel project with a GitHub repository to allow you to deploy automatically when you make new commits.
+
+We created an [example application](https://github.com/prisma/deployment-example-vercel) using Next.js you can use as a reference when deploying an application using Prisma to Vercel.
+
+While our examples use Next.js, you can deploy other applications to Vercel. See [Using Express with Vercel](https://vercel.com/guides/using-express-with-vercel) and [Nuxt on Vercel](https://vercel.com/docs/frameworks/nuxt) as examples of other options.
+
+### [Updating Prisma Client during Vercel builds](#updating-prisma-client-during-vercel-builds)
+
+Vercel will automatically cache dependencies on deployment. For most applications, this will not cause any issues. However, for Prisma ORM, it may result in an outdated version of Prisma Client on a change in your Prisma schema. To avoid this issue, add `prisma generate` to the `postinstall` script of your application:
+
+```
+{
+  ...
+  "scripts": {
+    "postinstall": "prisma generate"
+  }
+  ...
+}
+```
+
+This will re-generate Prisma Client at build time so that your deployment always has an up-to-date client. Another option to avoid an outdated Prisma Client is to check your client into version control. This way each deployment is guaranteed to include the correct Prisma Client.
+
+### [CI/CD workflows](#cicd-workflows)
+
+In a more sophisticated CI/CD environment, you may additionally want to update the database schema with any migrations you have performed during local development. You can do this using the [`prisma migrate deploy`](prisma/docs/orm/reference/prisma-cli-reference/index.md#migrate-deploy) command.
+
+In that case, you could create a custom build command in your `package.json` (e.g. called `vercel-build`) that looks as follows:
+
+```
+{
+  ...
+  "scripts" {
+    "vercel-build": "prisma generate && prisma migrate deploy && next build", 
+  }
+  ...
+}
+```
+
+You can invoke this script inside your CI/CD pipeline using the following command:
+
+By default, your application will have a single _production_ environment associated with the `main` git branch of your repository. If you open a pull request to change your application, Vercel creates a new _preview_ environment.
+
+Vercel uses the `DATABASE_URL` environment variable you define when you import the project for both the production and preview environments. This causes problems if you create a pull request with a database schema migration because the pull request will change the schema of the production database.
+
+To prevent this, use a _second_ hosted database to handle preview deployments. Once you have that connection string, you can add a `DATABASE_URL` for your preview environment using the Vercel dashboard:
+
+1.  Click the **Settings** tab of your Vercel project.
+    
+2.  Click **Environment variables**.
+    
+3.  Add an environment variable with a key of `DATABASE_URL` and select only the **Preview** environment option:
+    
+    ![Add an environment variable for the preview environment](https://www.prisma.io/docs/img/orm/prisma-client/deployment/serverless/images/300-60-deploy-to-vercel-preview-environment-variable.png?dpl=dpl_2TrAJrUt7dXR3AAWNDvwk5WL6VFX)
+    
+4.  Set the value to the connection string of your second database:
+    
+    ```
+    postgresql://dbUsername:dbPassword@myhost:5432/mydb
+    ```
+    
+5.  Click **Save**.
+    
+
+When you use a Function-as-a-Service provider, like Vercel Serverless functions, every invocation may result in a new connection to your database. This can cause your database to quickly run out of open connections and cause your application to stall. For this reason, pooling connections to your database is essential.
+
+You can use [Prisma Postgres](https://www.prisma.io/docs/postgres), which has built-in connection pooling, to reduce your Prisma Client bundle size, and to avoid cold starts.
+
+For more information on connection management for serverless environments, refer to our [connection management guide](prisma/docs/orm/prisma-client/setup-and-configuration/databases-connections/index.md#serverless-environments-faas).
+
+[Fluid compute](https://vercel.com/fluid) is a compute model from Vercel that combines the flexibility of serverless with the stability of servers, making it ideal for dynamic workloads such as streaming data and AI APIs. Vercel's Fluid compute [supports both edge and Node.js runtimes](https://vercel.com/docs/fluid-compute#available-runtime-support). A common challenge in traditional serverless platforms is leaked database connections when functions are suspended and pools can't close idle connections. Fluid provides [`attachDatabasePool`](https://vercel.com/blog/the-real-serverless-compute-to-database-connection-problem-solved) to ensure idle connections are released before a function is suspended.
+
+Use `attachDatabasePool` together with [Prisma's driver adapters](prisma/docs/orm/core-concepts/supported-databases/database-drivers/index.md) to safely manage connections in Fluid:
+
+```
+import { Pool } from "pg";
+import { attachDatabasePool } from "@vercel/functions";
+import { PrismaPg } from "@prisma/adapter-pg";
+import { PrismaClient } from "./generated/client";
+
+const pool = new Pool({ connectionString: process.env.POSTGRES_URL });
+
+attachDatabasePool(pool);
+
+export const prisma = new PrismaClient({
+  adapter: new PrismaPg(pool),
+});
+```

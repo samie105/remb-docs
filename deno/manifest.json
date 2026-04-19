@@ -1,0 +1,1826 @@
+[
+  {
+    "url": "https://docs.deno.com/runtime/",
+    "outputPath": "output/deno/runtime/index.md",
+    "title": "Welcome to Deno",
+    "contentHash": "2634e861ee30d8a7d9ab961a3eb09ec39e81aa54675ff384079e52dc3201934f",
+    "visitedAt": "2026-04-18T16:32:14.614Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/api/deno/~/Deno.jupyter.html",
+    "outputPath": "output/deno/api/deno/~/Deno.jupyter.html/index.md",
+    "title": "function Deno.jupyter.html",
+    "contentHash": "fac35d1a2a73914642201f084cf24f350054c97c5f517aaefb7f346783545b92",
+    "visitedAt": "2026-04-18T16:32:15.102Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/api/deno/",
+    "outputPath": "output/deno/api/deno/index.md",
+    "title": "Deno Namespace APIs",
+    "contentHash": "73b1d3156b64f46de07c08cab763d3d1162f47427a697cf8b49c678b32d258a0",
+    "visitedAt": "2026-04-18T16:32:22.379Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/api/node/assert/",
+    "outputPath": "output/deno/api/node/assert/index.md",
+    "title": "assert - Node documentation",
+    "contentHash": "a612aef8f5b5e8706b4df54366f87f4b3892cb3e2a88a9a61856b5c197483137",
+    "visitedAt": "2026-04-18T16:32:54.760Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/api/node/",
+    "outputPath": "output/deno/api/node/index.md",
+    "title": "Node.js Built-in APIs",
+    "contentHash": "55c013948126cfbe84ba5b0c04746875c19ea699d56ba0f8813d44d5a096b8de",
+    "visitedAt": "2026-04-18T16:32:55.459Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/api/node/async_hooks/",
+    "outputPath": "output/deno/api/node/async_hooks/index.md",
+    "title": "async_hooks - Node documentation",
+    "contentHash": "326d51ea472b57473034f2b671db6cebf4cefdc4eebb87f6959a7a849989cdd9",
+    "visitedAt": "2026-04-18T16:32:58.642Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/api/node/buffer/",
+    "outputPath": "output/deno/api/node/buffer/index.md",
+    "title": "buffer - Node documentation",
+    "contentHash": "85bd8628f68cf575b39237eb97f815b1616237d7a1039e8e7022b1bd96e7e205",
+    "visitedAt": "2026-04-18T16:33:32.939Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/api/node/child_process/",
+    "outputPath": "output/deno/api/node/child_process/index.md",
+    "title": "child_process - Node documentation",
+    "contentHash": "a652ee4150bc5fd88be45ab2d688a46fe769da82c47da420fb3ac71cd809a656",
+    "visitedAt": "2026-04-18T16:33:34.275Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/api/node/cluster/",
+    "outputPath": "output/deno/api/node/cluster/index.md",
+    "title": "cluster - Node documentation",
+    "contentHash": "606d9496e8ccef1e129361b6f8cecbbbae73f79e11faf1fbf77623ffbecd1f9b",
+    "visitedAt": "2026-04-18T16:33:39.374Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/api/node/constants/",
+    "outputPath": "output/deno/api/node/constants/index.md",
+    "title": "constants - Node documentation",
+    "contentHash": "d53765e190aa68ec0a6e559cd27d66f6fe2589d408b3cc82d5a84700816aebce",
+    "visitedAt": "2026-04-18T16:34:15.073Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/api/node/console/",
+    "outputPath": "output/deno/api/node/console/index.md",
+    "title": "console - Node documentation",
+    "contentHash": "a5f8a24cf17e810ba80f5e95451a03edf2b85844900a50dea5d0d11a5b6b5464",
+    "visitedAt": "2026-04-18T16:34:15.370Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/api/node/crypto/",
+    "outputPath": "output/deno/api/node/crypto/index.md",
+    "title": "crypto - Node documentation",
+    "contentHash": "d10eacaf1ea94d2670c99e93c0b14dca2e2e143f269017c3f19413f7194848d1",
+    "visitedAt": "2026-04-18T16:34:25.598Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/api/node/dgram/",
+    "outputPath": "output/deno/api/node/dgram/index.md",
+    "title": "dgram - Node documentation",
+    "contentHash": "ee4d2881b70b522bfdf7c23b63769a5a2abaa2acfe2536910bd8eec81e7cf5ad",
+    "visitedAt": "2026-04-18T16:34:52.185Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/api/node/diagnostics_channel/",
+    "outputPath": "output/deno/api/node/diagnostics_channel/index.md",
+    "title": "diagnostics_channel - Node documentation",
+    "contentHash": "0712263961e902488513bb4cb333c22197ecf7b9e258748f7777cf6d8e838077",
+    "visitedAt": "2026-04-18T16:34:57.991Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/api/node/dns/",
+    "outputPath": "output/deno/api/node/dns/index.md",
+    "title": "dns - Node documentation",
+    "contentHash": "102a4dc5b4ac8d777044ce210cfe4d1aaa76b26c61544106133bfd57807c46c6",
+    "visitedAt": "2026-04-18T16:35:06.403Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/api/node/dns/promises/",
+    "outputPath": "output/deno/api/node/dns/promises/index.md",
+    "title": "dns/promises - Node documentation",
+    "contentHash": "f0a4b0ab58d9020b33faafca7586fd986fc3c63df1b8765623810f2e8b1699ad",
+    "visitedAt": "2026-04-18T16:35:31.862Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/api/node/domain/",
+    "outputPath": "output/deno/api/node/domain/index.md",
+    "title": "domain - Node documentation",
+    "contentHash": "4cc0aaaf0c6909c8fb86db59d5447793c2fbfb5f555b6e6a9614edbbad70f869",
+    "visitedAt": "2026-04-18T16:35:38.415Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/api/node/events/",
+    "outputPath": "output/deno/api/node/events/index.md",
+    "title": "events - Node documentation",
+    "contentHash": "71b44a3785af612e4eb8fd3a0708ef51755c3ffd29b7ca3e316459ac7be8397b",
+    "visitedAt": "2026-04-18T16:35:44.049Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/api/node/fs/",
+    "outputPath": "output/deno/api/node/fs/index.md",
+    "title": "fs - Node documentation",
+    "contentHash": "a97a96909fbf4ccb8fa8bf7fbe07a0ae67c95dd733ae7d5c21a4ccf84ec564eb",
+    "visitedAt": "2026-04-18T16:36:18.813Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/api/node/fs/promises/",
+    "outputPath": "output/deno/api/node/fs/promises/index.md",
+    "title": "fs/promises - Node documentation",
+    "contentHash": "3bce783f7485e2dafcebd590c52d98c15a1ebed7c793eefb2a6c6d3a6a359974",
+    "visitedAt": "2026-04-18T16:36:19.433Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/api/node/http/",
+    "outputPath": "output/deno/api/node/http/index.md",
+    "title": "http - Node documentation",
+    "contentHash": "8cd4561d4d65a0759d0658fe0f8069085c2174d362b234d29768c6a79e36d0f3",
+    "visitedAt": "2026-04-18T16:36:21.104Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/api/node/https/",
+    "outputPath": "output/deno/api/node/https/index.md",
+    "title": "https - Node documentation",
+    "contentHash": "968ee27491da63cfc9656d736af16f2ed6cded2d41c464dc25bf85ec318754b3",
+    "visitedAt": "2026-04-18T16:36:54.889Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/api/node/http2/",
+    "outputPath": "output/deno/api/node/http2/index.md",
+    "title": "http2 - Node documentation",
+    "contentHash": "604752dcc51b1a7903a9e77d1e9cfbb4f643a1f63bd9cfa8562a393f3af516b2",
+    "visitedAt": "2026-04-18T16:37:01.264Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/api/node/inspector/",
+    "outputPath": "output/deno/api/node/inspector/index.md",
+    "title": "inspector - Node documentation",
+    "contentHash": "abb0fe967df0b3eb1742a04e82f22919128742c93118bb24b4b7b3eff4d7fe5d",
+    "visitedAt": "2026-04-18T16:37:05.556Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/api/node/inspector/promises/",
+    "outputPath": "output/deno/api/node/inspector/promises/index.md",
+    "title": "inspector/promises - Node documentation",
+    "contentHash": "9012ad1da9ad4a167e736aff7c95f9bb05403765a4a2a6d6aaea2a481bdb48c9",
+    "visitedAt": "2026-04-18T16:37:42.996Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/api/node/module/",
+    "outputPath": "output/deno/api/node/module/index.md",
+    "title": "module - Node documentation",
+    "contentHash": "9b170d1949b70d1a8f341dd2c41b76135a87a04101ffccf68fc70bacb8d22652",
+    "visitedAt": "2026-04-18T16:37:46.718Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/api/node/net/",
+    "outputPath": "output/deno/api/node/net/index.md",
+    "title": "net - Node documentation",
+    "contentHash": "24c07cbfe8a50a4232bc76147794ff1534329386ab4df806f7870fb1056d6628",
+    "visitedAt": "2026-04-18T16:37:47.493Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/api/node/path/",
+    "outputPath": "output/deno/api/node/path/index.md",
+    "title": "path - Node documentation",
+    "contentHash": "2f2f1507e849995d11b84896bdc81c7924120f093239775b7ae7935c37c0542f",
+    "visitedAt": "2026-04-18T16:38:24.686Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/api/node/os/",
+    "outputPath": "output/deno/api/node/os/index.md",
+    "title": "os - Node documentation",
+    "contentHash": "888e62675179f8570701959d05885baee2f826838a7ed58ce8d79e2a302758af",
+    "visitedAt": "2026-04-18T16:38:26.285Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/api/node/perf_hooks/",
+    "outputPath": "output/deno/api/node/perf_hooks/index.md",
+    "title": "perf_hooks - Node documentation",
+    "contentHash": "79112191e7d5fdfdfc0d30eece7fbd639035e3b15e8293ef056c6b832f408864",
+    "visitedAt": "2026-04-18T16:38:27.236Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/api/node/punycode/",
+    "outputPath": "output/deno/api/node/punycode/index.md",
+    "title": "punycode - Node documentation",
+    "contentHash": "24cbc4d5e906238c83ea84d87cef4afb345bb04d4787193244e811904b9a0d51",
+    "visitedAt": "2026-04-18T16:39:02.008Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/api/node/querystring/",
+    "outputPath": "output/deno/api/node/querystring/index.md",
+    "title": "querystring - Node documentation",
+    "contentHash": "cbcd8728a6301148b4e8b8f1b26eca113d0c21afb9cc935ab6d572636565ea08",
+    "visitedAt": "2026-04-18T16:39:04.105Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/api/node/process/",
+    "outputPath": "output/deno/api/node/process/index.md",
+    "title": "process - Node documentation",
+    "contentHash": "6c06ade3bfcc2f55d544d4bcf5f200ff6e5ada1b475683f46b4d1273681d0dd0",
+    "visitedAt": "2026-04-18T16:39:07.118Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/api/node/readline/",
+    "outputPath": "output/deno/api/node/readline/index.md",
+    "title": "readline - Node documentation",
+    "contentHash": "ee5244703ea322a95f7091df845d1c2502daeb0b0b66e300978c9308048c7631",
+    "visitedAt": "2026-04-18T16:39:41.671Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/api/node/readline/promises/",
+    "outputPath": "output/deno/api/node/readline/promises/index.md",
+    "title": "readline/promises - Node documentation",
+    "contentHash": "182e1362f035d35ef5cd19a04468d1ea6cc4a649c333df52e4ac2cb0777e0e75",
+    "visitedAt": "2026-04-18T16:39:43.718Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/api/node/repl/",
+    "outputPath": "output/deno/api/node/repl/index.md",
+    "title": "repl - Node documentation",
+    "contentHash": "16d127650d4ab5f40d166f332c2a99f956df233c7a1104a3c31cbba94463de62",
+    "visitedAt": "2026-04-18T16:39:46.462Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/api/node/sea/",
+    "outputPath": "output/deno/api/node/sea/index.md",
+    "title": "sea - Node documentation",
+    "contentHash": "d2bbfcd7bf1e7c1f6f217f4dfa0bdd78eacda087bcb8dde9ce0543c6e9bc3837",
+    "visitedAt": "2026-04-18T16:40:17.242Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/api/node/sqlite/",
+    "outputPath": "output/deno/api/node/sqlite/index.md",
+    "title": "sqlite - Node documentation",
+    "contentHash": "9b113777c98db9c7a10c2937458a17fa58d0086071ba381b4eaa006d96ce01ae",
+    "visitedAt": "2026-04-18T16:40:19.902Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/api/node/stream/",
+    "outputPath": "output/deno/api/node/stream/index.md",
+    "title": "stream - Node documentation",
+    "contentHash": "2b41da08559152d5a4f47d6f3958b44bd83bf1e0e3e5239fd61e9586ba98fab0",
+    "visitedAt": "2026-04-18T16:40:24.343Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/api/node/stream/consumers/",
+    "outputPath": "output/deno/api/node/stream/consumers/index.md",
+    "title": "stream/consumers - Node documentation",
+    "contentHash": "6d75370891dd01844504c3bf991c1f274c3f56ed4324527f810252579d89c6ec",
+    "visitedAt": "2026-04-18T16:40:52.600Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/api/node/stream/promises/",
+    "outputPath": "output/deno/api/node/stream/promises/index.md",
+    "title": "stream/promises - Node documentation",
+    "contentHash": "831229406c786b145ea238e41e8441befe3a6dfd4f5a131deb82e7d95856928c",
+    "visitedAt": "2026-04-18T16:40:54.970Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/api/node/stream/web/",
+    "outputPath": "output/deno/api/node/stream/web/index.md",
+    "title": "stream/web - Node documentation",
+    "contentHash": "8324303d62ea3e0e8f6555e1a93f779aa2c3f00739b09d27333983d2c1798368",
+    "visitedAt": "2026-04-18T16:41:00.578Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/api/node/string_decoder/",
+    "outputPath": "output/deno/api/node/string_decoder/index.md",
+    "title": "string_decoder - Node documentation",
+    "contentHash": "60541947b0ba080798e88c7e17a3cdf80f4e55a229bb9f9409b1d7417e759743",
+    "visitedAt": "2026-04-18T16:41:27.154Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/api/node/test/",
+    "outputPath": "output/deno/api/node/test/index.md",
+    "title": "test - Node documentation",
+    "contentHash": "f30b68c81e12c804b64f466d31132aa5dea0c7b12850eea081f7465def0b5110",
+    "visitedAt": "2026-04-18T16:41:34.224Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/api/node/test/reporters/",
+    "outputPath": "output/deno/api/node/test/reporters/index.md",
+    "title": "test/reporters - Node documentation",
+    "contentHash": "d744fbc0b156b4c05b94ac208533b9a0e3ead2133b420c399d2d72b2ec2f5a1e",
+    "visitedAt": "2026-04-18T16:41:38.999Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/api/node/timers/",
+    "outputPath": "output/deno/api/node/timers/index.md",
+    "title": "timers - Node documentation",
+    "contentHash": "9d4c49f81cc13cdb9ab8273a86181277b36c65fe58ef832e2cbba0832aa14aad",
+    "visitedAt": "2026-04-18T16:42:05.974Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/api/node/timers/promises/",
+    "outputPath": "output/deno/api/node/timers/promises/index.md",
+    "title": "timers/promises - Node documentation",
+    "contentHash": "979c647c32fdfa90c47f452ad688748fa5f5ed1c9bf2be933d039970a07f1fa8",
+    "visitedAt": "2026-04-18T16:42:09.912Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/api/node/tls/",
+    "outputPath": "output/deno/api/node/tls/index.md",
+    "title": "tls - Node documentation",
+    "contentHash": "db75464c71f64b87ebd34525599afc87a48774779c0367ac62cb66c836ad32b6",
+    "visitedAt": "2026-04-18T16:42:14.727Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/api/node/trace_events/",
+    "outputPath": "output/deno/api/node/trace_events/index.md",
+    "title": "trace_events - Node documentation",
+    "contentHash": "959ef45133449b1d8c202cd5bf70159b7b5dd59dabb796a15261d1fa1830830d",
+    "visitedAt": "2026-04-18T16:42:43.120Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/api/node/tty/",
+    "outputPath": "output/deno/api/node/tty/index.md",
+    "title": "tty - Node documentation",
+    "contentHash": "1544383eb605a91e43a11548f85325ebfad1f825d865682f435434458f50b61c",
+    "visitedAt": "2026-04-18T16:42:46.115Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/api/node/url/",
+    "outputPath": "output/deno/api/node/url/index.md",
+    "title": "url - Node documentation",
+    "contentHash": "a0e0ded3aa20b796498a150531b36646bbafbfdd3317b198a17861b36aea434b",
+    "visitedAt": "2026-04-18T16:42:50.054Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/api/node/util/",
+    "outputPath": "output/deno/api/node/util/index.md",
+    "title": "util - Node documentation",
+    "contentHash": "c3076497f0ed997e2bbe952cf47dde51e93995a67fa0aec659875753ae569fdb",
+    "visitedAt": "2026-04-18T16:43:23.433Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/api/node/util/types/",
+    "outputPath": "output/deno/api/node/util/types/index.md",
+    "title": "util/types - Node documentation",
+    "contentHash": "81e47c03cbef7630a56aba5fa0b722c07cb49dd01c36e48a7d352f6ab2ab7496",
+    "visitedAt": "2026-04-18T16:43:24.185Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/api/node/v8/",
+    "outputPath": "output/deno/api/node/v8/index.md",
+    "title": "v8 - Node documentation",
+    "contentHash": "6d3523317e92d49e6877c06c186ce30904e3a2aa2ac7bc4ba907bc7227ecce38",
+    "visitedAt": "2026-04-18T16:43:26.749Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/api/node/wasi/",
+    "outputPath": "output/deno/api/node/wasi/index.md",
+    "title": "wasi - Node documentation",
+    "contentHash": "d56e7a38d7f3657185545d6ee4ad62028f832c3573750051e8329396d0799751",
+    "visitedAt": "2026-04-18T16:44:03.781Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/api/node/worker_threads/",
+    "outputPath": "output/deno/api/node/worker_threads/index.md",
+    "title": "worker_threads - Node documentation",
+    "contentHash": "dfae88183de892ffb55870cd567ab09a49770c3ca82cfb4da5869374e0807c2a",
+    "visitedAt": "2026-04-18T16:44:04.755Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/api/node/vm/",
+    "outputPath": "output/deno/api/node/vm/index.md",
+    "title": "vm - Node documentation",
+    "contentHash": "d676b7188f06e78713725be1094ff9bca07fee8f47a8f9e3d7a0c5a1f82977d6",
+    "visitedAt": "2026-04-18T16:44:05.390Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/runtime/contributing/",
+    "outputPath": "output/deno/runtime/contributing/index.md",
+    "title": "Contributing and support",
+    "contentHash": "9067ffc88952b4146f1b6abbf2ebbe837e6330d346248283559070da90ad3404",
+    "visitedAt": "2026-04-18T16:44:42.123Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/api/node/zlib/",
+    "outputPath": "output/deno/api/node/zlib/index.md",
+    "title": "zlib - Node documentation",
+    "contentHash": "41ea391255273df50053b4e5809ba86c77301c8c91214b53f049ffe80d153457",
+    "visitedAt": "2026-04-18T16:44:44.889Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/api/web/",
+    "outputPath": "output/deno/api/web/index.md",
+    "title": "Web Platform APIs",
+    "contentHash": "e37d9999d1fd504e27bd20543d115f20ce56ab99caa4fda3baac2771c2eab297",
+    "visitedAt": "2026-04-18T16:44:46.168Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/runtime/contributing/architecture/",
+    "outputPath": "output/deno/runtime/contributing/architecture/index.md",
+    "title": "Architecture Overview",
+    "contentHash": "76aa704bc9f7c56e07475426c783cac3d679b641394d7c7767d30758cbd9f86a",
+    "visitedAt": "2026-04-18T16:45:18.454Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/runtime/contributing/docs/",
+    "outputPath": "output/deno/runtime/contributing/docs/index.md",
+    "title": "Documentation guidelines",
+    "contentHash": "048b3c61a9db3384306c8b9f8fa3b646fd5d530dbcfa35566ce5542a3b340277",
+    "visitedAt": "2026-04-18T16:45:19.921Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/runtime/contributing/examples/",
+    "outputPath": "output/deno/runtime/contributing/examples/index.md",
+    "title": "Contributing an example",
+    "contentHash": "ca412b4654beccddf85b786e2f4541142cb487dfa1aa9f7948018521a2aa1c61",
+    "visitedAt": "2026-04-18T16:45:20.081Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/runtime/contributing/release_schedule/",
+    "outputPath": "output/deno/runtime/contributing/release_schedule/index.md",
+    "title": "Release Schedule",
+    "contentHash": "9fa8c67ee22e2c72ab7e35932d186690800f8d984b72a18f9c64cfc888b11aea",
+    "visitedAt": "2026-04-18T16:45:52.533Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/runtime/contributing/style_guide/",
+    "outputPath": "output/deno/runtime/contributing/style_guide/index.md",
+    "title": "Deno Style Guide",
+    "contentHash": "efbad8bfd6c6915d9653aaef1a9b2a39176bd0f9123888ddb2ead172aa1a9a14",
+    "visitedAt": "2026-04-18T16:45:58.036Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/runtime/fundamentals/configuration/",
+    "outputPath": "output/deno/runtime/fundamentals/configuration/index.md",
+    "title": "deno.json and package.json",
+    "contentHash": "cc25a0cbb20643f7c303bb89280efacadd70d3df6af54950f935ed87690429e3",
+    "visitedAt": "2026-04-18T16:46:00.093Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/runtime/fundamentals/debugging/",
+    "outputPath": "output/deno/runtime/fundamentals/debugging/index.md",
+    "title": "Debugging",
+    "contentHash": "0bd2faf721b0452aa941be468a1206a02f1d2ecb5e252e968b5a9cd679f66ec0",
+    "visitedAt": "2026-04-18T16:46:30.838Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/runtime/fundamentals/ffi/",
+    "outputPath": "output/deno/runtime/fundamentals/ffi/index.md",
+    "title": "Foreign Function Interface (FFI)",
+    "contentHash": "684df1cf361bcea30f211e8750d3e09daec900b0afb67f09eb8f5eef9562fd62",
+    "visitedAt": "2026-04-18T16:46:36.376Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/runtime/fundamentals/http_server/",
+    "outputPath": "output/deno/runtime/fundamentals/http_server/index.md",
+    "title": "Writing an HTTP Server",
+    "contentHash": "35af05319c634f0d3ce1b07cdbc16b3e8629a47d4e1c2e0d1f89281ce496c52b",
+    "visitedAt": "2026-04-18T16:46:37.381Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/runtime/fundamentals/linting_and_formatting/",
+    "outputPath": "output/deno/runtime/fundamentals/linting_and_formatting/index.md",
+    "title": "Linting and formatting",
+    "contentHash": "6c4c7492d49cbafebfb6d42328e663fd06f4c2f2961b75efdeac5ec07bfc79b3",
+    "visitedAt": "2026-04-18T16:47:08.961Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/runtime/fundamentals/node/",
+    "outputPath": "output/deno/runtime/fundamentals/node/index.md",
+    "title": "Node and npm Compatibility",
+    "contentHash": "5cc3e00ec277a39b3f31ae6c458bce0134de454b814733b8357dc6cb38d7bc1c",
+    "visitedAt": "2026-04-18T16:47:16.077Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/runtime/fundamentals/modules/",
+    "outputPath": "output/deno/runtime/fundamentals/modules/index.md",
+    "title": "Modules and dependencies",
+    "contentHash": "d3bbe848b15f71493d00ee39ae9320b2c23bec0a977c7d553ecf6b603b95d5f8",
+    "visitedAt": "2026-04-18T16:47:17.095Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/runtime/fundamentals/open_telemetry/",
+    "outputPath": "output/deno/runtime/fundamentals/open_telemetry/index.md",
+    "title": "OpenTelemetry",
+    "contentHash": "5db8d720a818b9050da18fa31babd4072ca65499577d3d96741953a9b071dd84",
+    "visitedAt": "2026-04-18T16:47:51.844Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/runtime/fundamentals/stability_and_releases/",
+    "outputPath": "output/deno/runtime/fundamentals/stability_and_releases/index.md",
+    "title": "Stability and releases",
+    "contentHash": "d484884bcf7e55d6173f03551036c501976b8daa1edffc8fc3f0c13cc3c55d1f",
+    "visitedAt": "2026-04-18T16:47:52.140Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/runtime/fundamentals/security/",
+    "outputPath": "output/deno/runtime/fundamentals/security/index.md",
+    "title": "Security and permissions",
+    "contentHash": "4068c62c7dd4e1987cc91d8d0124df794896a0233e282913d0b3a7405bb580c0",
+    "visitedAt": "2026-04-18T16:47:53.953Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/runtime/fundamentals/typescript/",
+    "outputPath": "output/deno/runtime/fundamentals/typescript/index.md",
+    "title": "TypeScript support",
+    "contentHash": "cc46829e47eb52d2afeb5678b137331410c1f30aaafe34c5e828feaa0ad907bb",
+    "visitedAt": "2026-04-18T16:48:28.738Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/runtime/fundamentals/web_dev/",
+    "outputPath": "output/deno/runtime/fundamentals/web_dev/index.md",
+    "title": "Web development",
+    "contentHash": "7d8fe2c68d63d1591051f76e4a69f600a992784ed8b1e0d09989b0758339f755",
+    "visitedAt": "2026-04-18T16:48:29.018Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/runtime/fundamentals/testing/",
+    "outputPath": "output/deno/runtime/fundamentals/testing/index.md",
+    "title": "Testing",
+    "contentHash": "a8527a3f2750984942559b78cc27cb1d976950cdc54bd5ad192ad8db71c34c1d",
+    "visitedAt": "2026-04-18T16:48:30.917Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/runtime/getting_started/command_line_interface/",
+    "outputPath": "output/deno/runtime/getting_started/command_line_interface/index.md",
+    "title": "Command line interface",
+    "contentHash": "2d5a19b1285012052015bb8c621e72824b5bc675493f09b78cf9675b9ee54112",
+    "visitedAt": "2026-04-18T16:49:04.492Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/runtime/getting_started/first_project/",
+    "outputPath": "output/deno/runtime/getting_started/first_project/index.md",
+    "title": "Making a Deno project",
+    "contentHash": "0ed91aa0c78a7823c31586fbca9e83e081a8cf53df17367fcd15db3006e2d4b1",
+    "visitedAt": "2026-04-18T16:49:04.763Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/runtime/fundamentals/workspaces/",
+    "outputPath": "output/deno/runtime/fundamentals/workspaces/index.md",
+    "title": "Workspaces and monorepos",
+    "contentHash": "47f6f4a646f75b307af94906445f7764cc1b84d6d141f1090b03dac5f2a5a8bf",
+    "visitedAt": "2026-04-18T16:49:07.686Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/runtime/getting_started/installation/",
+    "outputPath": "output/deno/runtime/getting_started/installation/index.md",
+    "title": "Installation",
+    "contentHash": "99045da1793d5ed81c41016bdb7c2553818e63a11ffdce738bb9657784796b3a",
+    "visitedAt": "2026-04-18T16:49:40.193Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/runtime/getting_started/setup_your_environment/",
+    "outputPath": "output/deno/runtime/getting_started/setup_your_environment/index.md",
+    "title": "Set up your environment",
+    "contentHash": "a7fc1a440ced9d1bd9c8810a6435981e6ae0d619587b7fc77fa2ab885590db1f",
+    "visitedAt": "2026-04-18T16:49:40.930Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/runtime/help/",
+    "outputPath": "output/deno/runtime/help/index.md",
+    "title": "Where to get help",
+    "contentHash": "499a5e05e93de520164144cc2a640689403f506e65225747cc0fe87bc8041a50",
+    "visitedAt": "2026-04-18T16:49:41.069Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/runtime/reference/cli/",
+    "outputPath": "output/deno/runtime/reference/cli/index.md",
+    "title": "Deno CLI Subcommands",
+    "contentHash": "ee749104c503ef696a13f4d79edc0726e2620a0a52b333015e9e73f5fd2d23ac",
+    "visitedAt": "2026-04-18T16:50:14.131Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/runtime/reference/bundling/",
+    "outputPath": "output/deno/runtime/reference/bundling/index.md",
+    "title": "Bundling",
+    "contentHash": "e0d16ea8c6075a679f1fef59d42eeef49acbce9e317abb8518f0227bdb2e263a",
+    "visitedAt": "2026-04-18T16:50:14.878Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/runtime/reference/cli/add/",
+    "outputPath": "output/deno/runtime/reference/cli/add/index.md",
+    "title": "deno add",
+    "contentHash": "73dd9f41f09dbfbe965eba2e1f0db2c1dd5943cb0dcf473abdd347431e4280b9",
+    "visitedAt": "2026-04-18T16:50:14.994Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/runtime/reference/cli/approve_scripts/",
+    "outputPath": "output/deno/runtime/reference/cli/approve_scripts/index.md",
+    "title": "deno approve-scripts",
+    "contentHash": "7c1726c0e7f564437c52813c29365ec6ada1b6e4fd3d80e9fd7bfcc0fa73ddd2",
+    "visitedAt": "2026-04-18T16:50:48.077Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/runtime/reference/cli/audit/",
+    "outputPath": "output/deno/runtime/reference/cli/audit/index.md",
+    "title": "deno audit",
+    "contentHash": "1a8cdf69a7aa9d43487eba50f278cdcd275428d4ee8327bcb8d41359516dabd4",
+    "visitedAt": "2026-04-18T16:50:49.503Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/runtime/reference/cli/bench/",
+    "outputPath": "output/deno/runtime/reference/cli/bench/index.md",
+    "title": "deno bench",
+    "contentHash": "289d5991d54fac2a3b706bd6ebd45ff19929a31ec79a8f93d6cae0909c003628",
+    "visitedAt": "2026-04-18T16:50:51.533Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/runtime/reference/cli/bundle/",
+    "outputPath": "output/deno/runtime/reference/cli/bundle/index.md",
+    "title": "deno bundle",
+    "contentHash": "86feba1d3b086237403c6681f66e12c3ba1e014f4e287ede3f8696743755e7e2",
+    "visitedAt": "2026-04-18T16:51:22.458Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/runtime/reference/cli/check/",
+    "outputPath": "output/deno/runtime/reference/cli/check/index.md",
+    "title": "deno check",
+    "contentHash": "b48974d0512642d1a53cb6bc7124fc9c43721a6e0e4e5652ed46979a9fb671af",
+    "visitedAt": "2026-04-18T16:51:24.930Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/runtime/reference/cli/clean/",
+    "outputPath": "output/deno/runtime/reference/cli/clean/index.md",
+    "title": "deno clean",
+    "contentHash": "77e8e031a10b5d59bd172da364cfb8c62bbd2b21b836d053c3c04785451d4fdf",
+    "visitedAt": "2026-04-18T16:51:25.499Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/runtime/reference/cli/compile/",
+    "outputPath": "output/deno/runtime/reference/cli/compile/index.md",
+    "title": "deno compile",
+    "contentHash": "4a946554207af4a75f2af371593223f7b5621b47955784c9bb8b38ed8c21141a",
+    "visitedAt": "2026-04-18T16:51:58.729Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/runtime/reference/cli/completions/",
+    "outputPath": "output/deno/runtime/reference/cli/completions/index.md",
+    "title": "deno completions",
+    "contentHash": "795013d5ac47cb906326a0368aa0bc8f0e4458142508bc06ad30df9547bf9599",
+    "visitedAt": "2026-04-18T16:51:59.178Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/runtime/reference/cli/coverage/",
+    "outputPath": "output/deno/runtime/reference/cli/coverage/index.md",
+    "title": "deno coverage",
+    "contentHash": "764908b31b850bfb1130d15f59de939ae82b81ce381d4866f5465148de0cffd3",
+    "visitedAt": "2026-04-18T16:52:01.092Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/runtime/reference/cli/create/",
+    "outputPath": "output/deno/runtime/reference/cli/create/index.md",
+    "title": "deno create",
+    "contentHash": "a72246770cc298a663f9aea028057c25d69f7ca60f8046094cd1c61dc677bd15",
+    "visitedAt": "2026-04-18T16:52:33.846Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/runtime/reference/cli/deploy/",
+    "outputPath": "output/deno/runtime/reference/cli/deploy/index.md",
+    "title": "deno deploy",
+    "contentHash": "a694a833ffee8e2e0b00a7e1f4fb5efc94bd54e4764306e5f3815122e80ec9e6",
+    "visitedAt": "2026-04-18T16:52:36.759Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/runtime/reference/cli/doc/",
+    "outputPath": "output/deno/runtime/reference/cli/doc/index.md",
+    "title": "deno doc",
+    "contentHash": "da5fea3b454ad50f9049cb36628f51b354209062e2791c9087c42cfac8565d4f",
+    "visitedAt": "2026-04-18T16:52:36.923Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/runtime/reference/cli/env_variables/",
+    "outputPath": "output/deno/runtime/reference/cli/env_variables/index.md",
+    "title": "Environment variables",
+    "contentHash": "2ff8d370cb37e0971257040756a17352c4b85a9a62ac883b509e4afc6a162ab5",
+    "visitedAt": "2026-04-18T16:53:07.770Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/runtime/reference/cli/eval/",
+    "outputPath": "output/deno/runtime/reference/cli/eval/index.md",
+    "title": "deno eval",
+    "contentHash": "0f7f24fdf25c182aa15f41b41fd006cfa2af2b1bd8958366bf1062330ab6adfd",
+    "visitedAt": "2026-04-18T16:53:11.882Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/runtime/reference/cli/fmt/",
+    "outputPath": "output/deno/runtime/reference/cli/fmt/index.md",
+    "title": "deno fmt",
+    "contentHash": "23bf4875eeccf0907a97989baacb9ae7f506f9ba4f6122ec5306297472df33c2",
+    "visitedAt": "2026-04-18T16:53:12.507Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/runtime/reference/cli/info/",
+    "outputPath": "output/deno/runtime/reference/cli/info/index.md",
+    "title": "deno info",
+    "contentHash": "35b05fcac8f7faa21124ebef506ee2d6c7e5adab8c178c12a96146ebd390ab64",
+    "visitedAt": "2026-04-18T16:53:42.705Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/runtime/reference/cli/init/",
+    "outputPath": "output/deno/runtime/reference/cli/init/index.md",
+    "title": "deno init",
+    "contentHash": "34bc56435cab953dd953fbfa8b589674e5a47e401bfbe5f97065db84701b559e",
+    "visitedAt": "2026-04-18T16:53:47.077Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/runtime/reference/cli/install/",
+    "outputPath": "output/deno/runtime/reference/cli/install/index.md",
+    "title": "deno install",
+    "contentHash": "adcbe722ae0af16f7146d877b0cba12df280dc91569709336c26082ffdb1967c",
+    "visitedAt": "2026-04-18T16:53:48.093Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/runtime/reference/cli/lsp/",
+    "outputPath": "output/deno/runtime/reference/cli/lsp/index.md",
+    "title": "deno lsp",
+    "contentHash": "d9939de159c6125811e71ae00f94a88ce5190a5177a47123984dcca13cc2dffd",
+    "visitedAt": "2026-04-18T16:54:20.879Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/runtime/reference/cli/jupyter/",
+    "outputPath": "output/deno/runtime/reference/cli/jupyter/index.md",
+    "title": "Jupyter Kernel for Deno",
+    "contentHash": "28e4db2e3d6c9921981fd6823caf0379f96be9e2b8ac9a9f398e4bde4fdfd11c",
+    "visitedAt": "2026-04-18T16:54:21.620Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/runtime/reference/cli/lint/",
+    "outputPath": "output/deno/runtime/reference/cli/lint/index.md",
+    "title": "deno lint",
+    "contentHash": "42ef2b378d03d0c0e6669fdea8066426f9e088080e5066a77990531452d5e5e4",
+    "visitedAt": "2026-04-18T16:54:22.233Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/runtime/reference/cli/remove/",
+    "outputPath": "output/deno/runtime/reference/cli/remove/index.md",
+    "title": "deno remove",
+    "contentHash": "01d1dc0b8090631b7a9274cccb61e911a31bcffc7819e930a50274735d883893",
+    "visitedAt": "2026-04-18T16:54:55.408Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/runtime/reference/cli/outdated/",
+    "outputPath": "output/deno/runtime/reference/cli/outdated/index.md",
+    "title": "deno outdated",
+    "contentHash": "f288ed0354a46d82fb42503082d0fab1257c5334648e67b2bdc2b485df6ccd04",
+    "visitedAt": "2026-04-18T16:54:55.663Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/runtime/reference/cli/publish/",
+    "outputPath": "output/deno/runtime/reference/cli/publish/index.md",
+    "title": "deno publish",
+    "contentHash": "c452f940aa6d50a388d801d4cd76c182db72eb16857eb36d16d2fae978154184",
+    "visitedAt": "2026-04-18T16:54:55.802Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/runtime/reference/cli/sandbox/",
+    "outputPath": "output/deno/runtime/reference/cli/sandbox/index.md",
+    "title": "deno sandbox",
+    "contentHash": "be3bfbade6d4b6dbfbdb2a96f7d41cf0c7af7eb825882cdcce2c80f70830f345",
+    "visitedAt": "2026-04-18T16:55:30.200Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/runtime/reference/cli/run/",
+    "outputPath": "output/deno/runtime/reference/cli/run/index.md",
+    "title": "deno run",
+    "contentHash": "28e87d1600493ab0fc7fe70a51fdb274dc5caaf232f6436c0434acb0c31c4ea3",
+    "visitedAt": "2026-04-18T16:55:30.613Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/runtime/reference/cli/repl/",
+    "outputPath": "output/deno/runtime/reference/cli/repl/index.md",
+    "title": "deno repl",
+    "contentHash": "16fcfa4605f051bb19f97ffae8cfc04f713751692e44bc461bca23135671fd0c",
+    "visitedAt": "2026-04-18T16:55:31.327Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/runtime/reference/cli/serve/",
+    "outputPath": "output/deno/runtime/reference/cli/serve/index.md",
+    "title": "deno serve",
+    "contentHash": "61bb1a7bfe7868f754435fed34fab9aed3703c23bf3be3be81e63fc12b80de5d",
+    "visitedAt": "2026-04-18T16:56:04.856Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/runtime/reference/cli/test/",
+    "outputPath": "output/deno/runtime/reference/cli/test/index.md",
+    "title": "deno test",
+    "contentHash": "a129d91e33d1b51cb2ad1387a11657a1dd803daee7c42c404ca7e6cc7537a114",
+    "visitedAt": "2026-04-18T16:56:06.499Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/runtime/reference/cli/task/",
+    "outputPath": "output/deno/runtime/reference/cli/task/index.md",
+    "title": "deno task",
+    "contentHash": "1fb8906412849bbc74e793a8e4add6116eceb2106c34a2cad980d27465a3e21c",
+    "visitedAt": "2026-04-18T16:56:08.226Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/runtime/reference/cli/types/",
+    "outputPath": "output/deno/runtime/reference/cli/types/index.md",
+    "title": "deno types",
+    "contentHash": "08d4a60bd6457d51b3ccfbf39a9fd549761a3d6225b227c95c174f6729efeaa7",
+    "visitedAt": "2026-04-18T16:56:37.605Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/runtime/reference/cli/uninstall/",
+    "outputPath": "output/deno/runtime/reference/cli/uninstall/index.md",
+    "title": "deno uninstall",
+    "contentHash": "7f56671d370507eb37ee7d124593a8ef8d4a55cdc61c41d1b3bc6209739e98c1",
+    "visitedAt": "2026-04-18T16:56:40.658Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/runtime/reference/cli/unstable_flags/",
+    "outputPath": "output/deno/runtime/reference/cli/unstable_flags/index.md",
+    "title": "Unstable feature flags",
+    "contentHash": "5e3e8a08f91b9bf8d4e21be4f9f09838a1c5bbb1394dab75d1a74a28ee5bf9b3",
+    "visitedAt": "2026-04-18T16:56:42.998Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/runtime/reference/cli/update/",
+    "outputPath": "output/deno/runtime/reference/cli/update/index.md",
+    "title": "deno update",
+    "contentHash": "ccb436b0c8d858f5905583e1ef98cddc279778e0a74cc35b4090fc91f059150c",
+    "visitedAt": "2026-04-18T16:57:10.870Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/runtime/reference/cli/upgrade/",
+    "outputPath": "output/deno/runtime/reference/cli/upgrade/index.md",
+    "title": "deno upgrade",
+    "contentHash": "30a285360520788cca9121bf45c931f61524fd64cfa5bd3ed7bc4e43ae0a5d40",
+    "visitedAt": "2026-04-18T16:57:14.757Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/runtime/reference/cli/x/",
+    "outputPath": "output/deno/runtime/reference/cli/x/index.md",
+    "title": "deno x",
+    "contentHash": "975cf25255f60ac520835133185c60cfa342f63044ac9cf595b5ce00da419cbb",
+    "visitedAt": "2026-04-18T16:57:16.894Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/runtime/reference/continuous_integration/",
+    "outputPath": "output/deno/runtime/reference/continuous_integration/index.md",
+    "title": "Continuous integration",
+    "contentHash": "480b4fa457e1f6bacca2cc22ab6def68bfc04e3b337c9da746addcde1e7e365b",
+    "visitedAt": "2026-04-18T16:57:44.154Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/runtime/reference/deno_namespace_apis/",
+    "outputPath": "output/deno/runtime/reference/deno_namespace_apis/index.md",
+    "title": "Deno Namespace APIs",
+    "contentHash": "73b1d3156b64f46de07c08cab763d3d1162f47427a697cf8b49c678b32d258a0",
+    "visitedAt": "2026-04-18T16:57:51.370Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/runtime/reference/docker/",
+    "outputPath": "output/deno/runtime/reference/docker/index.md",
+    "title": "Deno and Docker",
+    "contentHash": "2ddfd6f93cc49527aab85c85b8d39b6b78a9c71ce89fb922edfd2e5391987e4a",
+    "visitedAt": "2026-04-18T16:57:51.535Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/runtime/reference/documentation/",
+    "outputPath": "output/deno/runtime/reference/documentation/index.md",
+    "title": "Documentation Tests",
+    "contentHash": "cc93e9ebf9c724a1e847ab65c07403fb6631a3029ba95e2365796a51bca2a73f",
+    "visitedAt": "2026-04-18T16:58:16.917Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/runtime/reference/env_variables/",
+    "outputPath": "output/deno/runtime/reference/env_variables/index.md",
+    "title": "Environment variables",
+    "contentHash": "2ff8d370cb37e0971257040756a17352c4b85a9a62ac883b509e4afc6a162ab5",
+    "visitedAt": "2026-04-18T16:58:25.188Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/runtime/reference/jsx/",
+    "outputPath": "output/deno/runtime/reference/jsx/index.md",
+    "title": "JSX",
+    "contentHash": "722a71c4b64ec31cefcb278727af38130093c0d145e804887808c698520b0056",
+    "visitedAt": "2026-04-18T16:58:26.531Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/runtime/reference/lint_plugins/",
+    "outputPath": "output/deno/runtime/reference/lint_plugins/index.md",
+    "title": "Lint Plugins",
+    "contentHash": "7eeee70a272e803fbe067f3b36caa908e5f47847b08e23ce145756910ff34856",
+    "visitedAt": "2026-04-18T16:58:50.751Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/runtime/reference/lsp_integration/",
+    "outputPath": "output/deno/runtime/reference/lsp_integration/index.md",
+    "title": "Language Server Integration",
+    "contentHash": "703c30c7d4e955d9eb49feb18874930a581934ace8dd5dc86ac3cb15dc7d6f05",
+    "visitedAt": "2026-04-18T16:59:01.641Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/runtime/reference/migration_guide/",
+    "outputPath": "output/deno/runtime/reference/migration_guide/index.md",
+    "title": "Deno 1.x to 2.x Migration Guide",
+    "contentHash": "ab28393e9351e8c9fc6568ba063d19a77c70ed319088a7a6d199bed2d06383ab",
+    "visitedAt": "2026-04-18T16:59:06.263Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/runtime/reference/node_apis/",
+    "outputPath": "output/deno/runtime/reference/node_apis/index.md",
+    "title": "Node APIs",
+    "contentHash": "b3000aa4d83ce952d372fca58ce5be44208fd7dd13ed3b171defb9f2162c0c57",
+    "visitedAt": "2026-04-18T16:59:25.267Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/runtime/reference/std/",
+    "outputPath": "output/deno/runtime/reference/std/index.md",
+    "title": "Deno Standard Library (@std)",
+    "contentHash": "95b9fd3744b7d739bfc407940edfb053d687ff5ef114408e02de9faff24e995c",
+    "visitedAt": "2026-04-18T16:59:34.325Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/runtime/reference/std/assert/",
+    "outputPath": "output/deno/runtime/reference/std/assert/index.md",
+    "title": "Standard Assertions (@std/assert)",
+    "contentHash": "d8f44ae68d773bacd895884ac6720c1ac65972c5b874a8a91c2258cbcb7aa7c0",
+    "visitedAt": "2026-04-18T16:59:39.073Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/runtime/reference/std/async/",
+    "outputPath": "output/deno/runtime/reference/std/async/index.md",
+    "title": "@std/async",
+    "contentHash": "0a986bdc65b5b83237108a8757542a50c83345c7e228d278996acf72cd9f5544",
+    "visitedAt": "2026-04-18T16:59:57.635Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/runtime/reference/std/bytes/",
+    "outputPath": "output/deno/runtime/reference/std/bytes/index.md",
+    "title": "@std/bytes",
+    "contentHash": "fddf1addda49619202f9e2846b80c06624f2eb7467baa0608766627e9ba871ea",
+    "visitedAt": "2026-04-18T17:00:07.115Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/runtime/reference/std/cache/",
+    "outputPath": "output/deno/runtime/reference/std/cache/index.md",
+    "title": "@std/cache",
+    "contentHash": "4516a88e7ead89b11717434f00c0b6e7a18f2ab145f0fcccc3990b1b55a47386",
+    "visitedAt": "2026-04-18T17:00:12.154Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/runtime/reference/std/cbor/",
+    "outputPath": "output/deno/runtime/reference/std/cbor/index.md",
+    "title": "@std/cbor",
+    "contentHash": "fd7f2cdfaf5014fd3068a2394b05991085fd59cd670b66616072f1af208cbff8",
+    "visitedAt": "2026-04-18T17:00:30.288Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/runtime/reference/std/cli/",
+    "outputPath": "output/deno/runtime/reference/std/cli/index.md",
+    "title": "@std/cli",
+    "contentHash": "9cc094fa7cf4418d00b48738d5c2acb37f1752b4fa9f3e2474083e04a1ec4654",
+    "visitedAt": "2026-04-18T17:00:39.511Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/runtime/reference/std/collections/",
+    "outputPath": "output/deno/runtime/reference/std/collections/index.md",
+    "title": "@std/collections",
+    "contentHash": "661f8cc05992c9e280325d545af88f7f8e6ba68fbef2e37323a6d78e59dfbf85",
+    "visitedAt": "2026-04-18T17:00:44.788Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/runtime/reference/std/crypto/",
+    "outputPath": "output/deno/runtime/reference/std/crypto/index.md",
+    "title": "@std/crypto",
+    "contentHash": "211b8b1d10e842d338cedb30c4623fa72d78234878803c86a1e9dce739441560",
+    "visitedAt": "2026-04-18T17:01:02.592Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/runtime/reference/std/csv/",
+    "outputPath": "output/deno/runtime/reference/std/csv/index.md",
+    "title": "@std/csv",
+    "contentHash": "42321d7a2ca6f3badefa67affbda05c9b5538203f3cc4d9c93b47c24a188406f",
+    "visitedAt": "2026-04-18T17:01:13.093Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/runtime/reference/std/data-structures/",
+    "outputPath": "output/deno/runtime/reference/std/data-structures/index.md",
+    "title": "@std/data-structures",
+    "contentHash": "64e0ffa01824f7b78ddaf57be7f3c11325ae6e616e4bcf687875325e9d116d68",
+    "visitedAt": "2026-04-18T17:01:17.683Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/runtime/reference/std/datetime/",
+    "outputPath": "output/deno/runtime/reference/std/datetime/index.md",
+    "title": "@std/datetime",
+    "contentHash": "11a7f377ab034310d7046d2fed3d9182f70317b6311fafc4e85f6c0a36b7a668",
+    "visitedAt": "2026-04-18T17:01:35.546Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/runtime/reference/std/dotenv/",
+    "outputPath": "output/deno/runtime/reference/std/dotenv/index.md",
+    "title": "@std/dotenv",
+    "contentHash": "f08fca352715d4d536e399e568a190cdb63f448500c20fe65e15f11e2f23de5f",
+    "visitedAt": "2026-04-18T17:01:45.333Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/runtime/reference/std/encoding/",
+    "outputPath": "output/deno/runtime/reference/std/encoding/index.md",
+    "title": "@std/encoding",
+    "contentHash": "788d888ee4f9bd6912622adc53f36e025f5e7baff521f8cebab71caef3fdd4e1",
+    "visitedAt": "2026-04-18T17:01:50.838Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/runtime/reference/std/expect/",
+    "outputPath": "output/deno/runtime/reference/std/expect/index.md",
+    "title": "@std/expect",
+    "contentHash": "256e682e2ee33b60ee8c4f1381cf5c6ac7b6156d87146a7ec02798d4d440b497",
+    "visitedAt": "2026-04-18T17:02:08.135Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/runtime/reference/std/fmt/",
+    "outputPath": "output/deno/runtime/reference/std/fmt/index.md",
+    "title": "@std/fmt",
+    "contentHash": "7a6316709cdca05fd6ed9ca53eeeeeb8a06d6cc9a073a5f0f83fcfb5b317277a",
+    "visitedAt": "2026-04-18T17:02:17.788Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/runtime/reference/std/front-matter/",
+    "outputPath": "output/deno/runtime/reference/std/front-matter/index.md",
+    "title": "@std/front-matter",
+    "contentHash": "86fa21a4ba5a7928e50f11d25959d2f425a0c5adeb826d6331911655db325d73",
+    "visitedAt": "2026-04-18T17:02:23.662Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/runtime/reference/std/fs/",
+    "outputPath": "output/deno/runtime/reference/std/fs/index.md",
+    "title": "@std/fs",
+    "contentHash": "94893e7a1dbff5db2a224b1df266078fd553c6a3f07bcd9c42764ff0c64bd266",
+    "visitedAt": "2026-04-18T17:02:40.330Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/runtime/reference/std/html/",
+    "outputPath": "output/deno/runtime/reference/std/html/index.md",
+    "title": "@std/html",
+    "contentHash": "0905c2c3a60bb3270c31817893e402a75e5666e85d084aee25daf42248aa5a39",
+    "visitedAt": "2026-04-18T17:02:49.835Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/runtime/reference/std/http/",
+    "outputPath": "output/deno/runtime/reference/std/http/index.md",
+    "title": "@std/http",
+    "contentHash": "081bdb79ec73076ab3f76de8b917550fdf19472a5dd9680e77ec33a57cbca6bf",
+    "visitedAt": "2026-04-18T17:02:56.171Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/runtime/reference/std/ini/",
+    "outputPath": "output/deno/runtime/reference/std/ini/index.md",
+    "title": "@std/ini",
+    "contentHash": "bad2315ed012306b0dda1f066a3c7825bee118b6a14d134a2686b2a30412e09b",
+    "visitedAt": "2026-04-18T17:03:13.042Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/runtime/reference/std/internal/",
+    "outputPath": "output/deno/runtime/reference/std/internal/index.md",
+    "title": "@std/internal",
+    "contentHash": "f228bd314801a41b682d3269733f0542198358b738c2adf00e11323dfada9e88",
+    "visitedAt": "2026-04-18T17:03:22.282Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/runtime/reference/std/io/",
+    "outputPath": "output/deno/runtime/reference/std/io/index.md",
+    "title": "@std/io",
+    "contentHash": "d5c303865920c1c7764695ca25212c6e6ea45076b195a85b7d5c0526c4740609",
+    "visitedAt": "2026-04-18T17:03:28.455Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/runtime/reference/std/json/",
+    "outputPath": "output/deno/runtime/reference/std/json/index.md",
+    "title": "@std/json",
+    "contentHash": "3213c9b9c136902b4b323a62572c59441c1d36b923707462e31dda35c0922bf5",
+    "visitedAt": "2026-04-18T17:03:45.067Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/runtime/reference/std/jsonc/",
+    "outputPath": "output/deno/runtime/reference/std/jsonc/index.md",
+    "title": "@std/jsonc",
+    "contentHash": "ab833add00b8c3b159d8304bc3e7abd2144387ec0207b26094871e9a1efacc98",
+    "visitedAt": "2026-04-18T17:03:54.308Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/runtime/reference/std/log/",
+    "outputPath": "output/deno/runtime/reference/std/log/index.md",
+    "title": "@std/log",
+    "contentHash": "ca125fd9e6ef4808d3c06dd9d30993e95afba8593ac8f8ea6c01debaa2a3e9e2",
+    "visitedAt": "2026-04-18T17:04:00.494Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/runtime/reference/std/math/",
+    "outputPath": "output/deno/runtime/reference/std/math/index.md",
+    "title": "@std/math",
+    "contentHash": "b6647ee722b2fef94eed73a2cb42f6bc2a55b0b947c55e7d67397da652a87084",
+    "visitedAt": "2026-04-18T17:04:17.070Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/runtime/reference/std/media-types/",
+    "outputPath": "output/deno/runtime/reference/std/media-types/index.md",
+    "title": "@std/media-types",
+    "contentHash": "30fafc5ab99bd1f84778d11758d52bd752c60308555cc855b468283758f3e831",
+    "visitedAt": "2026-04-18T17:04:26.353Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/runtime/reference/std/msgpack/",
+    "outputPath": "output/deno/runtime/reference/std/msgpack/index.md",
+    "title": "@std/msgpack",
+    "contentHash": "7ec4fde1f0b448f01cf25e3e154381be0fb7e49b164a1c01418b6bdaf383fc4a",
+    "visitedAt": "2026-04-18T17:04:33.283Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/runtime/reference/std/net/",
+    "outputPath": "output/deno/runtime/reference/std/net/index.md",
+    "title": "@std/net",
+    "contentHash": "bf984db02f0996bc69f2d0bd3ad9aefae8d994196d3d044cf0d7737ae473c28d",
+    "visitedAt": "2026-04-18T17:04:49.142Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/runtime/reference/std/path/",
+    "outputPath": "output/deno/runtime/reference/std/path/index.md",
+    "title": "@std/path",
+    "contentHash": "fb8e2b5d06e24b6a3fec5585d4dfeefd94fc3b12f2c1e39dddeeea5f78e0fb6d",
+    "visitedAt": "2026-04-18T17:04:59.142Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/runtime/reference/std/random/",
+    "outputPath": "output/deno/runtime/reference/std/random/index.md",
+    "title": "@std/random",
+    "contentHash": "d847969e40eafa0d2af6ceae141a3100b671690e5eb63e28eb8c5aafebdf3d2f",
+    "visitedAt": "2026-04-18T17:05:05.427Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/runtime/reference/std/regexp/",
+    "outputPath": "output/deno/runtime/reference/std/regexp/index.md",
+    "title": "@std/regexp",
+    "contentHash": "de9af1c0396071ad2873e3415a788c21375cc4e5d1650043d023095c99673f6a",
+    "visitedAt": "2026-04-18T17:05:21.134Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/runtime/reference/std/semver/",
+    "outputPath": "output/deno/runtime/reference/std/semver/index.md",
+    "title": "@std/semver",
+    "contentHash": "4ff8afb04fae1a4fa45d329c6505b95d20c4b8f403f8b7c5a2acb62959ac1f7a",
+    "visitedAt": "2026-04-18T17:05:32.166Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/runtime/reference/std/streams/",
+    "outputPath": "output/deno/runtime/reference/std/streams/index.md",
+    "title": "@std/streams",
+    "contentHash": "cfcf58023fa0ae301ea61c7c97188f083a677e2b315824be75461e9de050a7dd",
+    "visitedAt": "2026-04-18T17:05:37.418Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/runtime/reference/std/tar/",
+    "outputPath": "output/deno/runtime/reference/std/tar/index.md",
+    "title": "@std/tar",
+    "contentHash": "32bc50b37e3d13f477850b1a2bca5d175dddcdec39991a8dfc3390c87f5f725e",
+    "visitedAt": "2026-04-18T17:05:53.386Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/runtime/reference/std/testing/",
+    "outputPath": "output/deno/runtime/reference/std/testing/index.md",
+    "title": "@std/testing",
+    "contentHash": "79ebb6078053108388417e3328b8c717b689863f965bd27fc949c7a322c08297",
+    "visitedAt": "2026-04-18T17:06:04.307Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/runtime/reference/std/text/",
+    "outputPath": "output/deno/runtime/reference/std/text/index.md",
+    "title": "@std/text",
+    "contentHash": "57955a9c19a98d3b69ecb979ec8f900e958627c2a7b2c17a7df84d110da893c9",
+    "visitedAt": "2026-04-18T17:06:09.442Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/runtime/reference/std/toml/",
+    "outputPath": "output/deno/runtime/reference/std/toml/index.md",
+    "title": "@std/toml",
+    "contentHash": "100db2d0e2c2ddab646a74cb42e10ef505527a9696dca63a1ef7d0106b487170",
+    "visitedAt": "2026-04-18T17:06:25.811Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/runtime/reference/std/ulid/",
+    "outputPath": "output/deno/runtime/reference/std/ulid/index.md",
+    "title": "@std/ulid",
+    "contentHash": "b9ca96c1e8459e81e58e4013c1fef0b6f6f40021af9ccec324206bff7a7cd247",
+    "visitedAt": "2026-04-18T17:06:36.478Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/runtime/reference/std/uuid/",
+    "outputPath": "output/deno/runtime/reference/std/uuid/index.md",
+    "title": "@std/uuid",
+    "contentHash": "1297b177aa1336a122278b63734d8f173f2f8202098e975b98cded6c544a4738",
+    "visitedAt": "2026-04-18T17:06:41.530Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/runtime/reference/std/webgpu/",
+    "outputPath": "output/deno/runtime/reference/std/webgpu/index.md",
+    "title": "@std/webgpu",
+    "contentHash": "020b01a95cf8a1f2e52ab9a45aadd6b391fe36617b463a41b43e368391253c36",
+    "visitedAt": "2026-04-18T17:06:58.057Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/runtime/reference/std/xml/",
+    "outputPath": "output/deno/runtime/reference/std/xml/index.md",
+    "title": "@std/xml",
+    "contentHash": "675c828b7b916b0576815cf372130bd8ce801841d03db2c76f67a3af0ca0cced",
+    "visitedAt": "2026-04-18T17:07:08.857Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/runtime/reference/std/yaml/",
+    "outputPath": "output/deno/runtime/reference/std/yaml/index.md",
+    "title": "@std/yaml",
+    "contentHash": "2521ae487c45506361fe7f01317a5546a2c46b48cfd9b64edcce84363035d16a",
+    "visitedAt": "2026-04-18T17:07:14.227Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/runtime/reference/ts_config_migration/",
+    "outputPath": "output/deno/runtime/reference/ts_config_migration/index.md",
+    "title": "Configuring TypeScript",
+    "contentHash": "81a628f733542ca81add27e97a779c82bc499627bc05b5dd6e337748e1cc8983",
+    "visitedAt": "2026-04-18T17:07:32.319Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/runtime/reference/vscode/",
+    "outputPath": "output/deno/runtime/reference/vscode/index.md",
+    "title": "Deno & Visual Studio Code",
+    "contentHash": "c96cf7641268caa21eebb3227df50ff55b53ded1ee14e05569dc4fb10e8efce8",
+    "visitedAt": "2026-04-18T17:07:42.332Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/runtime/reference/wasm/",
+    "outputPath": "output/deno/runtime/reference/wasm/index.md",
+    "title": "WebAssembly",
+    "contentHash": "db2440622a87d0090ec75cf2c5d3f9d7544f80aff8638d0e1cad3ce349113c67",
+    "visitedAt": "2026-04-18T17:07:47.479Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/runtime/reference/web_platform_apis/",
+    "outputPath": "output/deno/runtime/reference/web_platform_apis/index.md",
+    "title": "Web Platform APIs",
+    "contentHash": "bca42a5c99c8f77bac1da3fb797d977873327054d3246cc635c4b06a53ccfc62",
+    "visitedAt": "2026-04-18T17:08:06.444Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/runtime/contributing/profiling/",
+    "outputPath": "output/deno/runtime/contributing/profiling/index.md",
+    "title": "Contributing and support",
+    "contentHash": "9067ffc88952b4146f1b6abbf2ebbe837e6330d346248283559070da90ad3404",
+    "visitedAt": "2026-04-18T17:08:14.959Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/api/deno",
+    "outputPath": "output/deno/api/deno/index.md",
+    "title": "Deno Namespace APIs",
+    "contentHash": "73b1d3156b64f46de07c08cab763d3d1162f47427a697cf8b49c678b32d258a0",
+    "visitedAt": "2026-04-18T17:08:23.396Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/api/deno/cloud",
+    "outputPath": "output/deno/api/deno/cloud/index.md",
+    "title": "Cloud - Deno documentation",
+    "contentHash": "451c9c31bcbd761baaa3fdb81cbcfa66b0ea23ff77efcd2352256c261869ecfc",
+    "visitedAt": "2026-04-18T17:08:38.841Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/api/deno/errors",
+    "outputPath": "output/deno/api/deno/errors/index.md",
+    "title": "Errors - Deno documentation",
+    "contentHash": "b922f15f7c405a94e82a102f9bd611248b2d4ea27f3448014e83530a591191db",
+    "visitedAt": "2026-04-18T17:08:47.355Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/api/deno/fetch",
+    "outputPath": "output/deno/api/deno/fetch/index.md",
+    "title": "Fetch - Deno documentation",
+    "contentHash": "ba9a1744e19d4f1fd967102c873e54b2c3526fe58c2b72bde3d2b56b06039977",
+    "visitedAt": "2026-04-18T17:08:56.163Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/api/deno/ffi",
+    "outputPath": "output/deno/api/deno/ffi/index.md",
+    "title": "FFI - Deno documentation",
+    "contentHash": "eac5fd3ef86b2a90abe1762e4407fc5804019a79d3165062fc4b64f8a1360bf2",
+    "visitedAt": "2026-04-18T17:09:11.768Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/api/deno/file-system",
+    "outputPath": "output/deno/api/deno/file-system/index.md",
+    "title": "File System - Deno documentation",
+    "contentHash": "f6b7b4ed650d7ebec257bb6351fe60132f78684a17bfbecc7ff47ad68742249c",
+    "visitedAt": "2026-04-18T17:09:20.575Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/api/deno/gpu",
+    "outputPath": "output/deno/api/deno/gpu/index.md",
+    "title": "GPU - Deno documentation",
+    "contentHash": "9312ed52c97bdffb534b66ed01df8acfa1d9c712687de18e589ec91266a66261",
+    "visitedAt": "2026-04-18T17:09:28.176Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/api/deno/http-server",
+    "outputPath": "output/deno/api/deno/http-server/index.md",
+    "title": "HTTP Server - Deno documentation",
+    "contentHash": "1e59fde25683bc2d545b3094394eafcf34aae63ec355ff1014ea959325fbc3ee",
+    "visitedAt": "2026-04-18T17:09:43.885Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/api/deno/io",
+    "outputPath": "output/deno/api/deno/io/index.md",
+    "title": "I/O - Deno documentation",
+    "contentHash": "258791b83fc6e6abed843646c14bdbf3986ce9a1e9c909503fcad3f48f613ad9",
+    "visitedAt": "2026-04-18T17:09:52.719Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/api/deno/jupyter",
+    "outputPath": "output/deno/api/deno/jupyter/index.md",
+    "title": "Jupyter - Deno documentation",
+    "contentHash": "540b786a589fe3fe3ad45815cf66cf7447af62d274548c9d05ef58010613266e",
+    "visitedAt": "2026-04-18T17:10:00.350Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/api/deno/linter",
+    "outputPath": "output/deno/api/deno/linter/index.md",
+    "title": "Linter - Deno documentation",
+    "contentHash": "3314d47c41dde4bd282aa79c601cc3e49f1c3081fd33e4f144fcf54aca1d803c",
+    "visitedAt": "2026-04-18T17:10:19.688Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/api/deno/network",
+    "outputPath": "output/deno/api/deno/network/index.md",
+    "title": "Network - Deno documentation",
+    "contentHash": "f55d58dda05fe15fb4c45fbd64378121811e5524bb35d88327ec0e451907319b",
+    "visitedAt": "2026-04-18T17:10:25.915Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/api/deno/permissions",
+    "outputPath": "output/deno/api/deno/permissions/index.md",
+    "title": "Permissions - Deno documentation",
+    "contentHash": "bcbbf9e60d7e1f8d6c442766e31ba19e69ccfae3796162d7c88e26d76b620960",
+    "visitedAt": "2026-04-18T17:10:32.667Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/api/deno/runtime",
+    "outputPath": "output/deno/api/deno/runtime/index.md",
+    "title": "Runtime - Deno documentation",
+    "contentHash": "2de3425c0cb85613002f850d58cf220154f61ef4901a78887d542169bef95335",
+    "visitedAt": "2026-04-18T17:10:52.240Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/api/deno/subprocess",
+    "outputPath": "output/deno/api/deno/subprocess/index.md",
+    "title": "Subprocess - Deno documentation",
+    "contentHash": "9db9649852abe080d93ac39c3fd581740630f7e9b6c9d8fba61e3f17ac49e5cb",
+    "visitedAt": "2026-04-18T17:10:58.013Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/api/deno/telemetry",
+    "outputPath": "output/deno/api/deno/telemetry/index.md",
+    "title": "Telemetry - Deno documentation",
+    "contentHash": "343ca74d20bce07cfffff60c5097df3ffd020ab806d995bebff2577c255c44e7",
+    "visitedAt": "2026-04-18T17:11:04.684Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/api/deno/testing",
+    "outputPath": "output/deno/api/deno/testing/index.md",
+    "title": "Testing - Deno documentation",
+    "contentHash": "b98e1b337a290282a2b8263503dc30cd788e1e7e1c947c738b799c91201f12ab",
+    "visitedAt": "2026-04-18T17:11:24.532Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/api/deno/websockets",
+    "outputPath": "output/deno/api/deno/websockets/index.md",
+    "title": "WebSockets - Deno documentation",
+    "contentHash": "f5872df1bc4a7b34f742d052fe522c04569fa5a4f003cbf439a416294cbf14e1",
+    "visitedAt": "2026-04-18T17:11:29.971Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/api/deno/all_symbols",
+    "outputPath": "output/deno/api/deno/all_symbols/index.md",
+    "title": "All Symbols - Deno documentation",
+    "contentHash": "5280b9f51fef5c92dee66e340f9e0b8fb153a1bc93c32e90c960de8822d9a525",
+    "visitedAt": "2026-04-18T17:11:46.360Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/api/web",
+    "outputPath": "output/deno/api/web/index.md",
+    "title": "Web Platform APIs",
+    "contentHash": "e37d9999d1fd504e27bd20543d115f20ce56ab99caa4fda3baac2771c2eab297",
+    "visitedAt": "2026-04-18T17:11:59.228Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/api/web/cache",
+    "outputPath": "output/deno/api/web/cache/index.md",
+    "title": "Cache - Web documentation",
+    "contentHash": "8cf48ea3da2881ffdc12715a265e3b4d5215ffca20e3bfec6c439c588d68c1dc",
+    "visitedAt": "2026-04-18T17:12:01.992Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/api/web/canvas",
+    "outputPath": "output/deno/api/web/canvas/index.md",
+    "title": "Canvas - Web documentation",
+    "contentHash": "fde877aaf3f76191628e24cd8a679a0a4d3fe049907ce327337304156837666a",
+    "visitedAt": "2026-04-18T17:12:18.597Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/api/web/crypto",
+    "outputPath": "output/deno/api/web/crypto/index.md",
+    "title": "Crypto - Web documentation",
+    "contentHash": "4837de9b90ad342c6b203d1633ef0f3573238cca55ff82d124be1ba9bfee7730",
+    "visitedAt": "2026-04-18T17:12:32.091Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/api/web/encoding",
+    "outputPath": "output/deno/api/web/encoding/index.md",
+    "title": "Encoding - Web documentation",
+    "contentHash": "b51aba85c16b81005e190c1edfff7987e78f8f1fcd3b7c58d352aa74c6fef651",
+    "visitedAt": "2026-04-18T17:12:34.199Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/api/web/events",
+    "outputPath": "output/deno/api/web/events/index.md",
+    "title": "Events - Web documentation",
+    "contentHash": "15bd097157f6ab42852c2537fdc8e2e911fdf9d9aaf379fa339060e3aa38f20e",
+    "visitedAt": "2026-04-18T17:12:50.880Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/api/web/fetch",
+    "outputPath": "output/deno/api/web/fetch/index.md",
+    "title": "Fetch - Web documentation",
+    "contentHash": "7a2cc3d2100a06565adb205401b6ff41344016126ecb931d4121ae50f4204e95",
+    "visitedAt": "2026-04-18T17:13:04.599Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/api/web/file",
+    "outputPath": "output/deno/api/web/file/index.md",
+    "title": "File - Web documentation",
+    "contentHash": "4f72e03df02fc57edaf9d4a40980a3d467a19299221762c6ace11e8b9f0d0821",
+    "visitedAt": "2026-04-18T17:13:06.524Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/api/web/gpu",
+    "outputPath": "output/deno/api/web/gpu/index.md",
+    "title": "GPU - Web documentation",
+    "contentHash": "27d865f61f51d235ec9aa85bec8920470c682807616c8b0d8b19d61445ae6a01",
+    "visitedAt": "2026-04-18T17:13:25.628Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/api/web/io",
+    "outputPath": "output/deno/api/web/io/index.md",
+    "title": "I/O - Web documentation",
+    "contentHash": "e221de3f7dc81dc59393cff3726983edb24551c102dbfae6c92653454703af5c",
+    "visitedAt": "2026-04-18T17:13:36.691Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/api/web/intl",
+    "outputPath": "output/deno/api/web/intl/index.md",
+    "title": "Intl - Web documentation",
+    "contentHash": "3a9962adde5d624b3c68f295e042a560da92784e4dde65125300941cf14e1fd9",
+    "visitedAt": "2026-04-18T17:13:38.544Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/api/web/messaging",
+    "outputPath": "output/deno/api/web/messaging/index.md",
+    "title": "Messaging - Web documentation",
+    "contentHash": "9d2aeb4fd2a8a23fb9d724bfa7911394e92782db77cc126efafb60917b5427fd",
+    "visitedAt": "2026-04-18T17:13:58.089Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/api/web/performance",
+    "outputPath": "output/deno/api/web/performance/index.md",
+    "title": "Performance - Web documentation",
+    "contentHash": "9c8747d9b110bf988c6407f59eedea49ac2f2fa0590a3f2d3b601b2cd749bffe",
+    "visitedAt": "2026-04-18T17:14:08.825Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/api/web/platform",
+    "outputPath": "output/deno/api/web/platform/index.md",
+    "title": "Platform - Web documentation",
+    "contentHash": "654809b145f4f630abb756720eb4b43e12aac537524efdeec495d4659f397d97",
+    "visitedAt": "2026-04-18T17:14:11.685Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/api/web/storage",
+    "outputPath": "output/deno/api/web/storage/index.md",
+    "title": "Storage - Web documentation",
+    "contentHash": "2473f0d61069c53a6fcda667d397f8b86bd90a3ca22ceb6a8bc7e761bd638a7c",
+    "visitedAt": "2026-04-18T17:14:30.309Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/api/web/streams",
+    "outputPath": "output/deno/api/web/streams/index.md",
+    "title": "Streams - Web documentation",
+    "contentHash": "fc6186e9ba4f106a40037aae00a8d8f079f3b012baa0b299396cc7145eb27ed5",
+    "visitedAt": "2026-04-18T17:14:41.843Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/api/web/temporal",
+    "outputPath": "output/deno/api/web/temporal/index.md",
+    "title": "404Sorry, couldn’t find that page.",
+    "contentHash": "9aced6d024da36660a871c5db578521177e510347d59e0afa6f3d163760463b7",
+    "visitedAt": "2026-04-18T17:14:43.751Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/api/web/url",
+    "outputPath": "output/deno/api/web/url/index.md",
+    "title": "URL - Web documentation",
+    "contentHash": "c83c394e767bef2542b4e1730da7c81e485f41fe709ceeaf17fe4035aedd773f",
+    "visitedAt": "2026-04-18T17:15:02.489Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/api/web/wasm",
+    "outputPath": "output/deno/api/web/wasm/index.md",
+    "title": "Wasm - Web documentation",
+    "contentHash": "4538de369291fc7d1e1c101be14fbeb9f722e16e61079a98366f86fc20edbbdf",
+    "visitedAt": "2026-04-18T17:15:14.422Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/api/web/websockets",
+    "outputPath": "output/deno/api/web/websockets/index.md",
+    "title": "WebSockets - Web documentation",
+    "contentHash": "aad5f87a89749a983050608b509838a81da3687f5dc28080a403102f3854a913",
+    "visitedAt": "2026-04-18T17:15:15.943Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/api/web/workers",
+    "outputPath": "output/deno/api/web/workers/index.md",
+    "title": "Workers - Web documentation",
+    "contentHash": "b073a27510dfdc12db2439cb6413e4a996020fc03dd551590cfc038a9d3bd29a",
+    "visitedAt": "2026-04-18T17:15:34.712Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/api/node",
+    "outputPath": "output/deno/api/node/index.md",
+    "title": "Node.js Built-in APIs",
+    "contentHash": "55c013948126cfbe84ba5b0c04746875c19ea699d56ba0f8813d44d5a096b8de",
+    "visitedAt": "2026-04-18T17:15:48.594Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/api/web/all_symbols",
+    "outputPath": "output/deno/api/web/all_symbols/index.md",
+    "title": "All Symbols - Web documentation",
+    "contentHash": "c7c782f05b4cd8dd558e06ae0b41b2be4d0ccdc9933364bb858a89ce419f1eb5",
+    "visitedAt": "2026-04-18T17:15:51.703Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/api/node/assert/strict/",
+    "outputPath": "output/deno/api/node/assert/strict/index.md",
+    "title": "namespace assert.strict",
+    "contentHash": "a334f45bee005d969c12ae8d809c8ffba6e0c0fcd4005a59d7bd4ba6124f1d19",
+    "visitedAt": "2026-04-18T17:16:06.946Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/api/",
+    "outputPath": "output/deno/api/index.md",
+    "title": "Deno Namespace APIs",
+    "contentHash": "73b1d3156b64f46de07c08cab763d3d1162f47427a697cf8b49c678b32d258a0",
+    "visitedAt": "2026-04-18T17:16:27.485Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/api/deno/~/Deno",
+    "outputPath": "output/deno/api/deno/~/Deno/index.md",
+    "title": "namespace Deno",
+    "contentHash": "4c1fc082ba9de34bc865150a5c50c3c9602e322cabca237803947b20c81f95e2",
+    "visitedAt": "2026-04-18T17:16:44.730Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.deno.com/api/node/all_symbols",
+    "outputPath": "output/deno/api/node/all_symbols/index.md",
+    "title": "All Symbols - Node documentation",
+    "contentHash": "159fec4f8bf609997226f37fc3a3a685a44693e3709cfa8dd461e4ed9c59aac9",
+    "visitedAt": "2026-04-18T17:17:10.095Z",
+    "status": "visited"
+  }
+]

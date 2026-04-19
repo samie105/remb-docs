@@ -1,0 +1,117 @@
+---
+title: "Back on dry land. Take your blog from day to night, no island required!"
+source: "https://docs.astro.build/en/tutorial/6-islands/2/"
+canonical_url: "https://docs.astro.build/en/tutorial/6-islands/2/"
+docset: "astro"
+kind: "framework"
+adapter: "generic"
+last_crawled_at: "2026-04-18T16:49:01.442Z"
+content_hash: "21f72db5b63b7e568333c5e586f3f02d6ef59c5e1fb0140f6bfbe3e43a512565"
+menu_path: ["Back on dry land. Take your blog from day to night, no island required!"]
+section_path: []
+nav_prev: {"path": "astro/en/tutorial/6-islands/1/index.md", "title": "Build your first Astro island"}
+nav_next: {"path": "astro/en/tutorial/6-islands/3/index.md", "title": "Congratulations!"}
+---
+
+# Back on dry land. Take your blog from day to night, no island required!
+
+Now that you can build Astro islands for interactive elements, don’t forget that you can go pretty far with just vanilla JavaScript and CSS!
+
+Let’s build a clickable icon to let your users toggle between light or dark mode using another `<script>` tag for interactivity… with no framework JavaScript sent to the browser.
+
+Get ready to…
+
+*   Build an interactive theme toggle with only JavaScript and CSS
+*   Send as little JavaScript to the browser as possible!
+
+## Add and style a theme toggle icon
+
+[Section titled “Add and style a theme toggle icon”](#add-and-style-a-theme-toggle-icon)
+
+1.  Create a new file at `src/components/ThemeIcon.astro` and paste the following code into it:
+    
+    ```
+    ------<button id="themeToggle" aria-label="Toggle theme">  <svg aria-hidden="true" width="30px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">    <path class="sun" fill-rule="evenodd" d="M12 17.5a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zm0 1.5a7 7 0 1 0 0-14 7 7 0 0 0 0 14zm12-7a.8.8 0 0 1-.8.8h-2.4a.8.8 0 0 1 0-1.6h2.4a.8.8 0 0 1 .8.8zM4 12a.8.8 0 0 1-.8.8H.8a.8.8 0 0 1 0-1.6h2.5a.8.8 0 0 1 .8.8zm16.5-8.5a.8.8 0 0 1 0 1l-1.8 1.8a.8.8 0 0 1-1-1l1.7-1.8a.8.8 0 0 1 1 0zM6.3 17.7a.8.8 0 0 1 0 1l-1.7 1.8a.8.8 0 1 1-1-1l1.7-1.8a.8.8 0 0 1 1 0zM12 0a.8.8 0 0 1 .8.8v2.5a.8.8 0 0 1-1.6 0V.8A.8.8 0 0 1 12 0zm0 20a.8.8 0 0 1 .8.8v2.4a.8.8 0 0 1-1.6 0v-2.4a.8.8 0 0 1 .8-.8zM3.5 3.5a.8.8 0 0 1 1 0l1.8 1.8a.8.8 0 1 1-1 1L3.5 4.6a.8.8 0 0 1 0-1zm14.2 14.2a.8.8 0 0 1 1 0l1.8 1.7a.8.8 0 0 1-1 1l-1.8-1.7a.8.8 0 0 1 0-1z"/>    <path class="moon" fill-rule="evenodd" d="M16.5 6A10.5 10.5 0 0 1 4.7 16.4 8.5 8.5 0 1 0 16.4 4.7l.1 1.3zm-1.7-2a9 9 0 0 1 .2 2 9 9 0 0 1-11 8.8 9.4 9.4 0 0 1-.8-.3c-.4 0-.8.3-.7.7a10 10 0 0 0 .3.8 10 10 0 0 0 9.2 6 10 10 0 0 0 4-19.2 9.7 9.7 0 0 0-.9-.3c-.3-.1-.7.3-.6.7a9 9 0 0 1 .3.8z"/>  </svg></button>
+    <style>  #themeToggle {    border: 0;    background: none;  }  .sun { fill: black; }  .moon { fill: transparent; }
+      :global(.dark) .sun { fill: transparent; }  :global(.dark) .moon { fill: white; }</style>
+    ```
+    
+2.  Import and add the `<ThemeIcon />` component to `Header.astro` so that it will be displayed on all pages. Wrap both `<ThemeIcon />` and `<Menu />` inside a `<div>` to group them together for styling, and add the `<style>` tag as shown below for some basic styles to improve the layout.
+    
+    ```
+    ---import Menu from './Menu.astro';import Navigation from './Navigation.astro';import ThemeIcon from './ThemeIcon.astro';---<header>  <nav>    <div>      <ThemeIcon />      <Menu />    </div>    <Navigation />  </nav></header>
+    <style>  div {    display: flex;    justify-content: space-between;  }</style>
+    ```
+    
+3.  Visit your browser preview at `http://localhost:4321` to see the icon now on all your pages. You can try clicking it, but you have not written a script to make it interactive yet.
+    
+
+## Add CSS styling for a dark theme
+
+[Section titled “Add CSS styling for a dark theme”](#add-css-styling-for-a-dark-theme)
+
+Choose some alternate colors to use in dark mode.
+
+1.  In `global.css`, define some dark styles. You can choose your own, or copy and paste:
+    
+    ```
+    html.dark {  background-color: #0d0950;  color: #fff;}
+    .dark .menu {  background-color: #fff;  color: #000;}
+    .dark .nav-links a:hover,.dark .nav-links a:focus {  color: #0d0950;}
+    .dark .nav-links a {  color: #fff;}
+    .dark a {  color: #ff9776;}
+    ```
+    
+
+## Add client-side interactivity
+
+[Section titled “Add client-side interactivity”](#add-client-side-interactivity)
+
+To add interactivity to an Astro component, you can use a `<script>` tag. This script can check and set the current theme from `localStorage` and toggle the theme when the icon is clicked.
+
+1.  Add the following `<script>` tag in `src/components/ThemeIcon.astro` after your `<style>` tag:
+    
+    ```
+    <style>  .sun { fill: black; }  .moon { fill: transparent; }
+      :global(.dark) .sun { fill: transparent; }  :global(.dark) .moon { fill: white; }</style>
+    <script is:inline>  const theme = (() => {    const localStorageTheme = localStorage?.getItem("theme") ?? '';    if (['dark', 'light'].includes(localStorageTheme)) {      return localStorageTheme;    }    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {      return 'dark';    }      return 'light';  })();
+      if (theme === 'light') {    document.documentElement.classList.remove('dark');  } else {    document.documentElement.classList.add('dark');  }
+      window.localStorage.setItem('theme', theme);
+      const handleToggleClick = () => {    const element = document.documentElement;    element.classList.toggle("dark");
+        const isDark = element.classList.contains("dark");    localStorage.setItem("theme", isDark ? "dark" : "light");  }
+      document.getElementById("themeToggle")?.addEventListener("click", handleToggleClick);</script>
+    ```
+    
+2.  Check your browser preview at `http://localhost:4321` and click the theme icon. Verify that you can change between light and dark modes.
+    
+
+### Test your knowledge
+
+[Section titled “Test your knowledge”](#test-your-knowledge)
+
+Choose whether each of the following statements describes Astro `<script>` tags, UI framework components, or both.
+
+1.  They allow you to include interactive UI elements on your website.
+    
+2.  They will create static elements on your site unless you include a `client:` to send their JavaScript to the client and run in the browser.
+    
+3.  They allow you to “try out” a new framework without requiring you to start an entirely new project using that tech stack.
+    
+4.  They allow you to reuse code you have written in other frameworks and you can often just drop them right into your site.
+    
+5.  They allow you to add interactivity without needing to know or learn any other JavaScript frameworks.
+    
+
+## Checklist
+
+[Section titled “Checklist”](#checklist)
+
+ *    I can use JavaScript for interactivity when I don’t want to add a framework.
+
+### Resources
+
+[Section titled “Resources”](#resources)
+
+*   [Client-side `<script>` in Astro](/en/guides/client-side-scripts/)
+
+[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

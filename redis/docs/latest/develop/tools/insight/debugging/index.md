@@ -1,0 +1,103 @@
+---
+title: "Redis Insight debugging information"
+source: "https://redis.io/docs/latest/develop/tools/insight/debugging/"
+canonical_url: "https://redis.io/docs/latest/develop/tools/insight/debugging/"
+docset: "redis"
+kind: "database"
+adapter: "generic"
+last_crawled_at: "2026-04-18T17:07:23.973Z"
+content_hash: "228d4747923df8adb5a87dd5059eeb4d8c7c22fc244f013e47e0654d92449667"
+menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Client tools","→","Client tools","→\n      \n        Redis Insight","→","Redis Insight","→\n      \n        Redis Insight debugging information","→","Redis Insight debugging information"]
+section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Client tools","→","Client tools","→\n      \n        Redis Insight","→","Redis Insight","→\n      \n        Redis Insight debugging information","→","Redis Insight debugging information"]
+nav_prev: {"path": "redis/docs/latest/develop/tools/insight/copilot-faq/index.md", "title": "Redis Copilot FAQ"}
+nav_next: {"path": "redis/docs/latest/develop/tools/insight/insight-stream-consumer/index.md", "title": "Manage streams and consumer groups in Redis Insight"}
+---
+
+# Redis Insight debugging information
+
+Redis Insight debugging information
+
+If you are experiencing errors or other issues when using Redis Insight, follow the steps below to learn more about the errors and to identify root cause.
+
+## Connection issues
+
+If you experience connection issues, try these steps.
+
+### 1\. Launch Redis Insight in debug mode
+
+Run the following command to launch Redis Insight in debug mode to investigate connection issues:
+
+*   **Windows**:
+    
+    `cmd /C "set DEBUG=ioredis* && ".\Redis Insight.exe""`
+    
+*   **macOS** (from the Applications folder):
+    
+    `DEBUG=ioredis* open "Redis Insight.app"`
+    
+*   **Linux**:
+    
+    `DEBUG=ioredis* "redis insight"`
+    
+
+### 2\. Investigate logs
+
+You can review the Redis Insight log files (files with a `.log` extension) to get detailed information about system issues. These are the locations on supported platforms:
+
+*   **Docker**: In the `/data/logs` directory _inside the container_.
+*   **macOS**: In the `/Users/<your-username>/.redis-insight` directory.
+*   **Windows**: In the `C:\Users\<your-username>\.redis-insight` directory.
+*   **Linux**: In the `/home/<your-username>/.redis-insight` directory.
+
+## Other issues
+
+### To debug issues other than connectivity
+
+*   **Windows**:
+    
+    `cmd /C "set DEBUG=* && ".\Redis Insight.exe""`
+    
+*   **macOS** (from the Applications folder):
+    
+    `DEBUG=* open "Redis Insight.app"`
+    
+*   **Linux**:
+    
+    `DEBUG=* "redis insight"`
+    
+
+### Get detailed Redis Insight logs
+
+*   **Windows**:
+    
+    `cmd /C "set STDOUT_LOGGER=true && set LOG_LEVEL=debug && set LOGGER_OMIT_DATA=false && ".\Redis Insight.exe""`
+    
+*   **macOS** (from the Applications folder):
+    
+    `LOG_LEVEL=debug LOGGER_OMIT_DATA=false open "Redis Insight.app"`
+    
+*   **Linux**:
+    
+    `LOG_LEVEL=debug LOGGER_OMIT_DATA=false "redis insight"`
+    
+    Note: if you use LOGGER\_OMIT\_DATA=false, logs may contain sensitive data.
+    
+
+### To log everything
+
+*   **Windows**:
+    
+    `cmd /C "set STDOUT_LOGGER=true && set LOG_LEVEL=debug && set LOGGER_OMIT_DATA=false && set DEBUG=* && ".\Redis Insight.exe""`
+    
+*   **macOS** (from the Applications folder):
+    
+    `LOG_LEVEL=debug LOGGER_OMIT_DATA=false DEBUG=* open "Redis Insight.app"`
+    
+*   **Linux**:
+    
+    `LOG_LEVEL=debug LOGGER_OMIT_DATA=false DEBUG=* "redis insight"`
+    
+    Note: if you use LOGGER\_OMIT\_DATA=false or DEBUG=\*, logs may contain sensitive data.
+    
+
+## On this page
