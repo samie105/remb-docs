@@ -1,0 +1,3089 @@
+[
+  {
+    "url": "https://docs.astro.build/en/getting-started/",
+    "outputPath": "output/astro/en/getting-started/index.md",
+    "title": "Astro Docs",
+    "contentHash": "aba8dd7fbbdf2672e2c68c0205126c7d8176312b201a3191004a9a8273547854",
+    "visitedAt": "2026-04-18T16:31:49.459Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/astro-courses/",
+    "outputPath": "output/astro/en/astro-courses/index.md",
+    "title": "Astro Courses",
+    "contentHash": "63e0b26726d4cd71bf264e72a708013a52d8be36720bd82bc7723d73d33436d2",
+    "visitedAt": "2026-04-18T16:31:50.098Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/basics/astro-components/",
+    "outputPath": "output/astro/en/basics/astro-components/index.md",
+    "title": "Components",
+    "contentHash": "b832dce6993cd041bbee22c14b15291f42d4a541710144b598adda034435f5a0",
+    "visitedAt": "2026-04-18T16:31:52.834Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/basics/astro-pages/",
+    "outputPath": "output/astro/en/basics/astro-pages/index.md",
+    "title": "Pages",
+    "contentHash": "a72cad35368337be037e487efd20343377a91956db65f9e38e8ef757f8c7f235",
+    "visitedAt": "2026-04-18T16:31:56.554Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/basics/layouts/",
+    "outputPath": "output/astro/en/basics/layouts/index.md",
+    "title": "Layouts",
+    "contentHash": "fb01857589d86086a19992af0e522eb1ffa6321317835cb2dd71ba7d4bdbd562",
+    "visitedAt": "2026-04-18T16:31:57.987Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/basics/project-structure/",
+    "outputPath": "output/astro/en/basics/project-structure/index.md",
+    "title": "Project structure",
+    "contentHash": "696747c043fd192411374a50ad4e516d3886a52a901368bd72abad57260a289d",
+    "visitedAt": "2026-04-18T16:31:59.247Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/concepts/islands/",
+    "outputPath": "output/astro/en/concepts/islands/index.md",
+    "title": "Islands architecture",
+    "contentHash": "ad72cfdcbb63b3b833a03b83ae826e099b13f037d440256346fe964c5f245bce",
+    "visitedAt": "2026-04-18T16:32:02.472Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/concepts/why-astro/",
+    "outputPath": "output/astro/en/concepts/why-astro/index.md",
+    "title": "Why Astro?",
+    "contentHash": "d3c4888fedc416a100f41ae5f0335316e16e02c3d772c963e9d871cf7538b211",
+    "visitedAt": "2026-04-18T16:32:04.357Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/develop-and-build/",
+    "outputPath": "output/astro/en/develop-and-build/index.md",
+    "title": "Develop and build",
+    "contentHash": "b52eb773b7e963a7dc675f2626f7132add138666fed83b9357a6b223737e7c92",
+    "visitedAt": "2026-04-18T16:32:08.245Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/contribute/",
+    "outputPath": "output/astro/en/contribute/index.md",
+    "title": "Contribute to Astro",
+    "contentHash": "b635f7d7600c0b35f1b91698eff4cca5850fc7c5c0c425a14e77b645f59441c0",
+    "visitedAt": "2026-04-18T16:32:10.420Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/editor-setup/",
+    "outputPath": "output/astro/en/editor-setup/index.md",
+    "title": "Editor setup",
+    "contentHash": "956e6d14479339da1e57a13dcae3ec1675e8766d56969dc234a4bb1bd13d09dc",
+    "visitedAt": "2026-04-18T16:32:11.381Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/actions/",
+    "outputPath": "output/astro/en/guides/actions/index.md",
+    "title": "Actions",
+    "contentHash": "78eaa94ab09cc599e2930c5f9d2b04052c44019309fe84d0b8136f6cacd25e97",
+    "visitedAt": "2026-04-18T16:32:19.223Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/authentication/",
+    "outputPath": "output/astro/en/guides/authentication/index.md",
+    "title": "Authentication",
+    "contentHash": "6413ef71ca15d2b908ae8f48db2332facb9c83956e5b5f70a82e0bf377dd51e8",
+    "visitedAt": "2026-04-18T16:32:20.975Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/astro-db/",
+    "outputPath": "output/astro/en/guides/astro-db/index.md",
+    "title": "Astro DB",
+    "contentHash": "b08704cd65302d1001d8b453b6e8bafb4d6251696b85f7cfb5777222b705e4bb",
+    "visitedAt": "2026-04-18T16:32:23.535Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/backend/",
+    "outputPath": "output/astro/en/guides/backend/index.md",
+    "title": "Use a backend service with Astro",
+    "contentHash": "090ef707953bd5ea638575cb202e67e7920a197b0e272fcc30a25ad910a6d6e2",
+    "visitedAt": "2026-04-18T16:32:26.365Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/backend/appwrite/",
+    "outputPath": "output/astro/en/guides/backend/appwrite/index.md",
+    "title": "Appwrite & Astro",
+    "contentHash": "023df2f5e1bd5ae6ccda7e9534379f6c2baf7c1e62e90417fc79549c0a63eb7f",
+    "visitedAt": "2026-04-18T16:32:28.543Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/backend/neon/",
+    "outputPath": "output/astro/en/guides/backend/neon/index.md",
+    "title": "Neon Postgres & Astro",
+    "contentHash": "3d41820780e6c8a880e7f2c64dbdf5b6db9ec1bef78d77d3011678dd93b6eb63",
+    "visitedAt": "2026-04-18T16:32:32.903Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/backend/firebase/",
+    "outputPath": "output/astro/en/guides/backend/firebase/index.md",
+    "title": "Firebase & Astro",
+    "contentHash": "e92e1c29b57e648b23740a32d32d81b86e28fc2084a9d45ca12cb37d9306160a",
+    "visitedAt": "2026-04-18T16:32:37.798Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/backend/prisma-postgres/",
+    "outputPath": "output/astro/en/guides/backend/prisma-postgres/index.md",
+    "title": "Prisma Postgres & Astro",
+    "contentHash": "6d9cb58d0dea63cb3f341ddee9dff6071a1772c6247be6571489dee3e9d1c61e",
+    "visitedAt": "2026-04-18T16:32:39.652Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/backend/scalekit/",
+    "outputPath": "output/astro/en/guides/backend/scalekit/index.md",
+    "title": "Scalekit & Astro",
+    "contentHash": "2f780ce350d9127c94625c9a3d1d3317a492e0024ad4a147e1f42f42031c6864",
+    "visitedAt": "2026-04-18T16:32:42.310Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/backend/sentry/",
+    "outputPath": "output/astro/en/guides/backend/sentry/index.md",
+    "title": "Monitor your Astro Site with Sentry",
+    "contentHash": "1ca113ccc20f4d4371484563553df67e82fd4d5f95fde48f35dac562b92e33c9",
+    "visitedAt": "2026-04-18T16:32:43.411Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/backend/turso/",
+    "outputPath": "output/astro/en/guides/backend/turso/index.md",
+    "title": "Turso & Astro",
+    "contentHash": "71cb11e72d0397b9c4ef8bfa0b072ca8fd949ad58f70bd483f61a84e0c883f91",
+    "visitedAt": "2026-04-18T16:32:47.024Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/backend/supabase/",
+    "outputPath": "output/astro/en/guides/backend/supabase/index.md",
+    "title": "Supabase & Astro",
+    "contentHash": "bbb148d67766c1876f604d63c76aefe7cf7b7b2f59f76148ec66d47269ef0eff",
+    "visitedAt": "2026-04-18T16:32:48.706Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/backend/xata/",
+    "outputPath": "output/astro/en/guides/backend/xata/index.md",
+    "title": "Xata & Astro",
+    "contentHash": "01b431150205a1a28c5c1afb8e894247dbefdbc1453b04fd8bbdcd316c855512",
+    "visitedAt": "2026-04-18T16:32:50.550Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/build-with-ai/",
+    "outputPath": "output/astro/en/guides/build-with-ai/index.md",
+    "title": "Building Astro sites with AI tools",
+    "contentHash": "5bc51d45e4a554ebbdc63d1be9e7f707c38d9ece8a71cfaf045a938ebbbfc368",
+    "visitedAt": "2026-04-18T16:32:56.821Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/client-side-scripts/",
+    "outputPath": "output/astro/en/guides/client-side-scripts/index.md",
+    "title": "Scripts and event handling",
+    "contentHash": "d94551a5376d68b86e48d99ad2d5488710920861e8419164f528d28abc6afebc",
+    "visitedAt": "2026-04-18T16:32:58.653Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/cms/",
+    "outputPath": "output/astro/en/guides/cms/index.md",
+    "title": "Use a CMS with Astro",
+    "contentHash": "f73d165a753e1bedd495ff81ff37a1c4ac09a34da645fe11db28a20833d913ea",
+    "visitedAt": "2026-04-18T16:33:02.248Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/cms/apostrophecms/",
+    "outputPath": "output/astro/en/guides/cms/apostrophecms/index.md",
+    "title": "ApostropheCMS & Astro",
+    "contentHash": "e67a413195d4fb2e9560302f9bc4eea0cdd70e5a421529ded42d364f18f0c178",
+    "visitedAt": "2026-04-18T16:33:13.970Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/cms/builderio/",
+    "outputPath": "output/astro/en/guides/cms/builderio/index.md",
+    "title": "Builder.io & Astro",
+    "contentHash": "97c441d7afb7fd9f435bf541c8551dee2c9a76a391f423efbf9abfd43d996824",
+    "visitedAt": "2026-04-18T16:33:16.221Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/cms/buttercms/",
+    "outputPath": "output/astro/en/guides/cms/buttercms/index.md",
+    "title": "ButterCMS & Astro",
+    "contentHash": "dbadec6b3aba7539bc06eee42533f00a768dba87e657b96d5298d71877858638",
+    "visitedAt": "2026-04-18T16:33:16.640Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/cms/caisy/",
+    "outputPath": "output/astro/en/guides/cms/caisy/index.md",
+    "title": "Caisy & Astro",
+    "contentHash": "9b3652e9752995300572a545cce8443ca9d63be34d7fce9dbdb4764b312ae7ee",
+    "visitedAt": "2026-04-18T16:33:21.423Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/cms/cloudcannon/",
+    "outputPath": "output/astro/en/guides/cms/cloudcannon/index.md",
+    "title": "CloudCannon & Astro",
+    "contentHash": "7710cadbacf0bb14ece707034d3fcdf3f45a4a9dc27e1156868ca96771fabc6c",
+    "visitedAt": "2026-04-18T16:33:27.436Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/cms/contentful/",
+    "outputPath": "output/astro/en/guides/cms/contentful/index.md",
+    "title": "Contentful & Astro",
+    "contentHash": "97fbd02419015cb49531872c1ebf80c3ef76e3cd88632f9a9c1e5ef138b48658",
+    "visitedAt": "2026-04-18T16:33:33.206Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/cms/cosmic/",
+    "outputPath": "output/astro/en/guides/cms/cosmic/index.md",
+    "title": "Cosmic & Astro",
+    "contentHash": "0e4b711d89761d177a52f4046d1706eeb13a6eba28982d05669405e6f8cc1c79",
+    "visitedAt": "2026-04-18T16:33:36.778Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/cms/craft-cms/",
+    "outputPath": "output/astro/en/guides/cms/craft-cms/index.md",
+    "title": "Craft CMS & Astro",
+    "contentHash": "24213772d9fb1a2cf8ae655db0749df500ed0399a95be2b84a734232fc4aeee5",
+    "visitedAt": "2026-04-18T16:33:39.072Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/cms/craft-cross-cms/",
+    "outputPath": "output/astro/en/guides/cms/craft-cross-cms/index.md",
+    "title": "Craft Cross CMS & Astro",
+    "contentHash": "e4c6382e51ca4d345517744d3d951a54ef2614f5c9763b7a7faaf35d29a22464",
+    "visitedAt": "2026-04-18T16:33:42.551Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/cms/crystallize/",
+    "outputPath": "output/astro/en/guides/cms/crystallize/index.md",
+    "title": "Crystallize & Astro",
+    "contentHash": "4192d9a32d9508b3aee7e603e259e8f8005ae4e1c57ec4193402e108c5351c25",
+    "visitedAt": "2026-04-18T16:33:49.138Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/cms/datocms/",
+    "outputPath": "output/astro/en/guides/cms/datocms/index.md",
+    "title": "DatoCMS & Astro",
+    "contentHash": "4249e5611ba36e53b203b171c9e85330e266507f9b859c38089d212b6b71c132",
+    "visitedAt": "2026-04-18T16:33:51.568Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/cms/decap-cms/",
+    "outputPath": "output/astro/en/guides/cms/decap-cms/index.md",
+    "title": "Decap CMS & Astro",
+    "contentHash": "adf2e6d3c7b7de54694756c305438fcf1f4921a541d89f5f1616ca3e15f26fe4",
+    "visitedAt": "2026-04-18T16:33:53.935Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/cms/directus/",
+    "outputPath": "output/astro/en/guides/cms/directus/index.md",
+    "title": "Directus & Astro",
+    "contentHash": "33ba45b681d7a85b71fb81ae0ebbc3d8ad17e0e2f84e57fc85f98d5819596665",
+    "visitedAt": "2026-04-18T16:33:57.200Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/cms/drupal/",
+    "outputPath": "output/astro/en/guides/cms/drupal/index.md",
+    "title": "Drupal & Astro",
+    "contentHash": "eefcee7d8545ea7b651d4c4d336c6c0da5467154bc7e5e34e74cac607a014c6f",
+    "visitedAt": "2026-04-18T16:34:06.933Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/cms/flotiq/",
+    "outputPath": "output/astro/en/guides/cms/flotiq/index.md",
+    "title": "Flotiq & Astro",
+    "contentHash": "07d94d9db2064fa2c2e37d49f0d1d246123ade6d22804243d46ec2651a94a340",
+    "visitedAt": "2026-04-18T16:34:11.031Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/cms/frontmatter-cms/",
+    "outputPath": "output/astro/en/guides/cms/frontmatter-cms/index.md",
+    "title": "Front Matter CMS & Astro",
+    "contentHash": "4c54b24629551b4a2157bbc3f60dd90a7ee67670d37ed1e59a9a314a25bd7ca2",
+    "visitedAt": "2026-04-18T16:34:12.611Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/cms/gitcms/",
+    "outputPath": "output/astro/en/guides/cms/gitcms/index.md",
+    "title": "GitCMS & Astro",
+    "contentHash": "332ef04f614fdaf61abb9789c114a41b0c249ab07b3fd8582286d93c4fde06a9",
+    "visitedAt": "2026-04-18T16:34:18.276Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/cms/ghost/",
+    "outputPath": "output/astro/en/guides/cms/ghost/index.md",
+    "title": "Ghost & Astro",
+    "contentHash": "b60a6e3fe62dcbd7a7c4c665a79bf46ed7e1f03e4cd3dede728098e3d1c39126",
+    "visitedAt": "2026-04-18T16:34:20.154Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/cms/hashnode/",
+    "outputPath": "output/astro/en/guides/cms/hashnode/index.md",
+    "title": "Hashnode & Astro",
+    "contentHash": "668ba8d7ff2cb0ef6e77c236cb5e7cc99a958bca97a379b3db43701ab511fa2a",
+    "visitedAt": "2026-04-18T16:34:28.186Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/cms/hygraph/",
+    "outputPath": "output/astro/en/guides/cms/hygraph/index.md",
+    "title": "Hygraph & Astro",
+    "contentHash": "fc9e0e76410f1314a0e95743555adad5a6df5831052415b8dbc50dce023bdbf4",
+    "visitedAt": "2026-04-18T16:34:29.766Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/cms/jekyllpad/",
+    "outputPath": "output/astro/en/guides/cms/jekyllpad/index.md",
+    "title": "JekyllPad & Astro",
+    "contentHash": "19a4598d5332c8a50afe52ef836e561acb5fc125c5907e21a479476269bdc268",
+    "visitedAt": "2026-04-18T16:34:31.470Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/cms/keystatic/",
+    "outputPath": "output/astro/en/guides/cms/keystatic/index.md",
+    "title": "Keystatic & Astro",
+    "contentHash": "7f1c804b1f869d930a3f8d58cbd4403c90a82883213dfaabb32a9fff1570b0ce",
+    "visitedAt": "2026-04-18T16:34:36.722Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/cms/keystonejs/",
+    "outputPath": "output/astro/en/guides/cms/keystonejs/index.md",
+    "title": "KeystoneJS & Astro",
+    "contentHash": "f493e6fc190be30c80ce0b8d0a12d44f19112baa8b78a86d398887586802fbe1",
+    "visitedAt": "2026-04-18T16:34:40.646Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/cms/microcms/",
+    "outputPath": "output/astro/en/guides/cms/microcms/index.md",
+    "title": "microCMS & Astro",
+    "contentHash": "6e4c6b1594041da1418b668d297bd47b08c1736bd9191439107c9420d69a0193",
+    "visitedAt": "2026-04-18T16:34:45.055Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/cms/kontent-ai/",
+    "outputPath": "output/astro/en/guides/cms/kontent-ai/index.md",
+    "title": "Kontent.ai & Astro",
+    "contentHash": "80b6008bb0317a4def33c9d35400897d5dc689608f1fe30ed3de804a3d2ee6b3",
+    "visitedAt": "2026-04-18T16:34:48.149Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/cms/optimizely/",
+    "outputPath": "output/astro/en/guides/cms/optimizely/index.md",
+    "title": "Optimizely CMS & Astro",
+    "contentHash": "3c1855f70ab8d12a496dff39b60d4e7ea4a306c47fc220723e2609c2789df095",
+    "visitedAt": "2026-04-18T16:34:49.976Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/cms/pages-cms/",
+    "outputPath": "output/astro/en/guides/cms/pages-cms/index.md",
+    "title": "Pages CMS & Astro",
+    "contentHash": "a067c14ae7d80ffce94b28143ef4ea7406d0f8b5ffd84791de39f2653968ff32",
+    "visitedAt": "2026-04-18T16:34:54.125Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/cms/preprcms/",
+    "outputPath": "output/astro/en/guides/cms/preprcms/index.md",
+    "title": "Prepr CMS & Astro",
+    "contentHash": "428268c99741978fb44f957a5c8e74fa59dc1a0a0e5f64e6b7359fe6f21a983d",
+    "visitedAt": "2026-04-18T16:35:02.316Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/cms/prismic/",
+    "outputPath": "output/astro/en/guides/cms/prismic/index.md",
+    "title": "Prismic & Astro",
+    "contentHash": "e30e59d704c0a43ad1babc646557714c5c2eaab936223a593be1d95356bb8382",
+    "visitedAt": "2026-04-18T16:35:04.050Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/cms/payload/",
+    "outputPath": "output/astro/en/guides/cms/payload/index.md",
+    "title": "Payload CMS & Astro",
+    "contentHash": "b98d8a2c4bd32e145e94175276be70f93cd4a358eb6fcec381bc92412fbecb80",
+    "visitedAt": "2026-04-18T16:35:05.899Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/cms/sitecore/",
+    "outputPath": "output/astro/en/guides/cms/sitecore/index.md",
+    "title": "Sitecore Experience Manager & Astro",
+    "contentHash": "d4ce0d49826ce905dcd2861dc4bcbe7a521641111766b6a979f2d00d992b811f",
+    "visitedAt": "2026-04-18T16:35:17.001Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/cms/sanity/",
+    "outputPath": "output/astro/en/guides/cms/sanity/index.md",
+    "title": "Sanity & Astro",
+    "contentHash": "81db259cab025c16218969df5d4190d43b86043ecb6a5e0260b28dadfcdfe8a6",
+    "visitedAt": "2026-04-18T16:35:17.377Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/cms/sitepins/",
+    "outputPath": "output/astro/en/guides/cms/sitepins/index.md",
+    "title": "Sitepins & Astro",
+    "contentHash": "58ba79fb9fdeaa0da0cf37e9ccee76e605cd05e2ecc81b5de17259bd23d9ca11",
+    "visitedAt": "2026-04-18T16:35:18.605Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/cms/statamic/",
+    "outputPath": "output/astro/en/guides/cms/statamic/index.md",
+    "title": "Headless Statamic & Astro",
+    "contentHash": "675b54c47780331f10b3e0525c63f883bf222b583c8043a5f9f092da5545e4d4",
+    "visitedAt": "2026-04-18T16:35:27.054Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/cms/spinal/",
+    "outputPath": "output/astro/en/guides/cms/spinal/index.md",
+    "title": "Spinal & Astro",
+    "contentHash": "a6db4da5c272e68dc647aeeae314a7975ee0552a4a05bf56bfd074b43ac09a09",
+    "visitedAt": "2026-04-18T16:35:27.435Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/cms/storyblok/",
+    "outputPath": "output/astro/en/guides/cms/storyblok/index.md",
+    "title": "Storyblok & Astro",
+    "contentHash": "874360dfbc5d0539aaf7b8031769c78e9bd39af1d956458051fd69a7847421ad",
+    "visitedAt": "2026-04-18T16:35:35.060Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/cms/studiocms/",
+    "outputPath": "output/astro/en/guides/cms/studiocms/index.md",
+    "title": "StudioCMS & Astro",
+    "contentHash": "1a4f6b127956c5d32b033ea678562e08ea564dce8f3dd000c2b289b09a3b973d",
+    "visitedAt": "2026-04-18T16:35:39.275Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/cms/strapi/",
+    "outputPath": "output/astro/en/guides/cms/strapi/index.md",
+    "title": "Strapi & Astro",
+    "contentHash": "edc77e50fa8e6bf7ef2f4df98f9762e10b6df6b6b51976386843ed4ec89c2311",
+    "visitedAt": "2026-04-18T16:35:41.651Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/cms/tina-cms/",
+    "outputPath": "output/astro/en/guides/cms/tina-cms/index.md",
+    "title": "Tina CMS & Astro",
+    "contentHash": "071e83ad919101ac3e2fce70b462e18fd763013da0c717bb744ea935827ede17",
+    "visitedAt": "2026-04-18T16:35:44.622Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/cms/vault-cms/",
+    "outputPath": "output/astro/en/guides/cms/vault-cms/index.md",
+    "title": "Vault CMS & Astro",
+    "contentHash": "46d7668f001cd6b1cbd6d47b7ee91bc0fce9d58d7793476b6a6708dffe1e0796",
+    "visitedAt": "2026-04-18T16:35:49.002Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/cms/umbraco/",
+    "outputPath": "output/astro/en/guides/cms/umbraco/index.md",
+    "title": "Umbraco & Astro",
+    "contentHash": "732c929d896854cdebbc98f16f380f77c7c7996acf59803639aa5d663f0254b5",
+    "visitedAt": "2026-04-18T16:35:52.052Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/cms/wordpress/",
+    "outputPath": "output/astro/en/guides/cms/wordpress/index.md",
+    "title": "Headless WordPress & Astro",
+    "contentHash": "25fce6769757f5c5653e99948fc26794197b4c602de9e6a7ad501a37bffd6e7e",
+    "visitedAt": "2026-04-18T16:35:56.584Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/configuring-astro/",
+    "outputPath": "output/astro/en/guides/configuring-astro/index.md",
+    "title": "Configuration overview",
+    "contentHash": "671a3301fb5d4f47666b1e813da6110dc422abd36717a3a1fef432ff3299c6ec",
+    "visitedAt": "2026-04-18T16:36:00.600Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/content-collections/",
+    "outputPath": "output/astro/en/guides/content-collections/index.md",
+    "title": "Content collections",
+    "contentHash": "621696bb0997fda913c3623784f7527dd92640e065adc632764626763b9df498",
+    "visitedAt": "2026-04-18T16:36:08.333Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/data-fetching/",
+    "outputPath": "output/astro/en/guides/data-fetching/index.md",
+    "title": "Data fetching",
+    "contentHash": "8d02b8cedfb9f27f39be846a782e200988451a94f1a8999288c8da0229c98747",
+    "visitedAt": "2026-04-18T16:36:10.798Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/deploy/",
+    "outputPath": "output/astro/en/guides/deploy/index.md",
+    "title": "Deploy your Astro Site",
+    "contentHash": "3daf0a0a09bf750d0d9cf5a7ae594820ffcf5eab4ebc2838780fde33ff40bf35",
+    "visitedAt": "2026-04-18T16:36:14.360Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/deploy/aws-via-flightcontrol/",
+    "outputPath": "output/astro/en/guides/deploy/aws-via-flightcontrol/index.md",
+    "title": "Deploy your Astro Site to AWS with Flightcontrol",
+    "contentHash": "3a4245945c3d965e3b97c6a1aeb7355d4b8fc3f9a0cf0218a66c8a089de0b4d9",
+    "visitedAt": "2026-04-18T16:36:17.344Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/deploy/aws-via-sst/",
+    "outputPath": "output/astro/en/guides/deploy/aws-via-sst/index.md",
+    "title": "Deploy your Astro Site to AWS with SST",
+    "contentHash": "98dd865968e007fbc54d6ef0e381cba664d05463544a899f45db48e6e22ec046",
+    "visitedAt": "2026-04-18T16:36:20.599Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/deploy/azion/",
+    "outputPath": "output/astro/en/guides/deploy/azion/index.md",
+    "title": "Deploy your Astro Site to Azion",
+    "contentHash": "2e3729c8060a57ba111568a6b7495c1240d46f6941923afa3bb7cfd0a530f4f5",
+    "visitedAt": "2026-04-18T16:36:24.150Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/deploy/aws/",
+    "outputPath": "output/astro/en/guides/deploy/aws/index.md",
+    "title": "Deploy your Astro Site to AWS",
+    "contentHash": "cd5ee1929c4f25f06e930b0bc7d65622cfdb20d3c06f409daa18fb05e649a894",
+    "visitedAt": "2026-04-18T16:36:27.968Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/deploy/buddy/",
+    "outputPath": "output/astro/en/guides/deploy/buddy/index.md",
+    "title": "Deploy your Astro Site with Buddy",
+    "contentHash": "3aad1f206190a53a0628d8cdbd0421ade5b0513d8d54cbab02384778e4cf3af7",
+    "visitedAt": "2026-04-18T16:36:31.077Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/deploy/cleavr/",
+    "outputPath": "output/astro/en/guides/deploy/cleavr/index.md",
+    "title": "Deploy your Astro Site with Cleavr",
+    "contentHash": "507ea5a587ec4accd183d6b754f946074fd64aa6fb5abd82558fbb0493ac1230",
+    "visitedAt": "2026-04-18T16:36:32.905Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/deploy/clever-cloud/",
+    "outputPath": "output/astro/en/guides/deploy/clever-cloud/index.md",
+    "title": "Deploy your Astro Site to Clever Cloud",
+    "contentHash": "834a277758ac77fb7f1a116aa334a3c3b3e477343ea2490628937de5a7433a06",
+    "visitedAt": "2026-04-18T16:36:37.089Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/deploy/cloudflare/",
+    "outputPath": "output/astro/en/guides/deploy/cloudflare/index.md",
+    "title": "Deploy your Astro Site to Cloudflare",
+    "contentHash": "e99cdff5ff1b345199b1bbc670b3579f0e95d33f37b43ae2b342cf175e7eaa99",
+    "visitedAt": "2026-04-18T16:36:41.475Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/deploy/cloudray/",
+    "outputPath": "output/astro/en/guides/deploy/cloudray/index.md",
+    "title": "Deploy your Astro Site with CloudRay",
+    "contentHash": "4bd819dedbe98a48f930c62834fc3daa98fa5d7f5bd9f5e73645cd8c806762bc",
+    "visitedAt": "2026-04-18T16:36:43.237Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/deploy/deno/",
+    "outputPath": "output/astro/en/guides/deploy/deno/index.md",
+    "title": "Deploy your Astro Site with Deno",
+    "contentHash": "98c0ab28e007582385c5727a907f18324f5926c10d6e9fa6afab0b22a6ca43c9",
+    "visitedAt": "2026-04-18T16:36:48.679Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/deploy/deployhq/",
+    "outputPath": "output/astro/en/guides/deploy/deployhq/index.md",
+    "title": "Deploy your Astro Site with DeployHQ",
+    "contentHash": "9d8b0bff61f965805811cadd5208baa8fdad3f4d9c4aa65acc90d5607f06ba40",
+    "visitedAt": "2026-04-18T16:36:51.635Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/deploy/edgeone-pages/",
+    "outputPath": "output/astro/en/guides/deploy/edgeone-pages/index.md",
+    "title": "Deploy your Astro Site to EdgeOne Pages",
+    "contentHash": "8c2947ad9d9b6dd08a18059c72d7409911bfb75e46117a317b1c4a9396fe3e19",
+    "visitedAt": "2026-04-18T16:36:53.044Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/deploy/firebase/",
+    "outputPath": "output/astro/en/guides/deploy/firebase/index.md",
+    "title": "Deploy your Astro Site to Google’s Firebase Hosting",
+    "contentHash": "4b8dd75466af5d905efa90e211d12bcecf5906a8b850663953b80b9d47303a2b",
+    "visitedAt": "2026-04-18T16:37:02.358Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/deploy/flyio/",
+    "outputPath": "output/astro/en/guides/deploy/flyio/index.md",
+    "title": "Deploy your Astro Site to Fly.io",
+    "contentHash": "20854a16a03259fc0a6191932922e014f4a15ffbda160438a008c12e5bb387db",
+    "visitedAt": "2026-04-18T16:37:05.883Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/deploy/fleek/",
+    "outputPath": "output/astro/en/guides/deploy/fleek/index.md",
+    "title": "Deploy your Astro Site to Fleek",
+    "contentHash": "e224334a2fd11c3eb3e0fa23d4829276637305953db323a4000358a1596adf72",
+    "visitedAt": "2026-04-18T16:37:08.680Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/deploy/github/",
+    "outputPath": "output/astro/en/guides/deploy/github/index.md",
+    "title": "Deploy your Astro Site to GitHub Pages",
+    "contentHash": "90c5ed012b229f2dfbc9dc3651ff57709aeae41c8d7a75971a0d4b2ca4309bf5",
+    "visitedAt": "2026-04-18T16:37:15.205Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/deploy/google-cloud/",
+    "outputPath": "output/astro/en/guides/deploy/google-cloud/index.md",
+    "title": "Deploy your Astro Site to Google Cloud",
+    "contentHash": "00c21a8dd532791443c0fd2c97682ace45808ed037c3c046ca2ff9281ec50690",
+    "visitedAt": "2026-04-18T16:37:19.457Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/deploy/gitlab/",
+    "outputPath": "output/astro/en/guides/deploy/gitlab/index.md",
+    "title": "Deploy your Astro Site to GitLab Pages",
+    "contentHash": "c2eb808ca20c318d26a0a0f952348a015d73e98fba732d28fab9986cd943cb32",
+    "visitedAt": "2026-04-18T16:37:20.715Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/deploy/heroku/",
+    "outputPath": "output/astro/en/guides/deploy/heroku/index.md",
+    "title": "Deploy your Astro Site to Heroku",
+    "contentHash": "3aa5a03452ee8797fd4957f5178809bb9d8e27df8466ee080c589610122dd0cf",
+    "visitedAt": "2026-04-18T16:37:24.502Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/deploy/microsoft-azure/",
+    "outputPath": "output/astro/en/guides/deploy/microsoft-azure/index.md",
+    "title": "Deploy your Astro Site to Microsoft Azure",
+    "contentHash": "b7498c3425ef22619eb7a0d5e3e1fb71129caa763a0d56e52c012843cda41fd5",
+    "visitedAt": "2026-04-18T16:37:27.714Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/deploy/juno/",
+    "outputPath": "output/astro/en/guides/deploy/juno/index.md",
+    "title": "Deploy your Astro Site to Juno",
+    "contentHash": "daba77141eb368fd85aa95da49651b0c1c41f832ecf2c47f4c33199a653db703",
+    "visitedAt": "2026-04-18T16:37:30.561Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/deploy/netlify/",
+    "outputPath": "output/astro/en/guides/deploy/netlify/index.md",
+    "title": "Deploy your Astro Site to Netlify",
+    "contentHash": "ecc3a8d67d5edc9d3a5466d96b1bcbf127c4b766c15095b06842d1365625c0c1",
+    "visitedAt": "2026-04-18T16:37:35.159Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/deploy/railway/",
+    "outputPath": "output/astro/en/guides/deploy/railway/index.md",
+    "title": "Deploy your Astro Site with Railway",
+    "contentHash": "e9e76516588201b071afc56c0eaed7a11f4153454d7e7f0c409c865e8e2bc020",
+    "visitedAt": "2026-04-18T16:37:37.956Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/deploy/render/",
+    "outputPath": "output/astro/en/guides/deploy/render/index.md",
+    "title": "Deploy your Astro Site to Render",
+    "contentHash": "f85962d4df8af0f3baffd75cfa62ab9d8623998fc2035278fb5cc0f4089a068d",
+    "visitedAt": "2026-04-18T16:37:40.080Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/deploy/seenode/",
+    "outputPath": "output/astro/en/guides/deploy/seenode/index.md",
+    "title": "Deploy your Astro Site to Seenode",
+    "contentHash": "4ea00d5f01e60f666985e61a98bccb65fc2d31839908fde6f2d9816d0799a0d6",
+    "visitedAt": "2026-04-18T16:37:46.448Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/deploy/stormkit/",
+    "outputPath": "output/astro/en/guides/deploy/stormkit/index.md",
+    "title": "Deploy your Astro Site to Stormkit",
+    "contentHash": "eee82bcec07a29444492e194dade1b05390b87d124d1268945d080177cffb6b1",
+    "visitedAt": "2026-04-18T16:37:47.017Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/deploy/sevalla/",
+    "outputPath": "output/astro/en/guides/deploy/sevalla/index.md",
+    "title": "Deploy your Astro Site to Sevalla",
+    "contentHash": "2616dbf32395b66abab7dcf6b4d7ee25b12b6271927520cbf07d75cd2db3064e",
+    "visitedAt": "2026-04-18T16:37:48.542Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/deploy/surge/",
+    "outputPath": "output/astro/en/guides/deploy/surge/index.md",
+    "title": "Deploy your Astro Site to Surge",
+    "contentHash": "e47fae81c98fb177ab2aeb8ae98bb3edb78cf9a08defbe56b9f0114ae33b7842",
+    "visitedAt": "2026-04-18T16:37:55.574Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/deploy/vercel/",
+    "outputPath": "output/astro/en/guides/deploy/vercel/index.md",
+    "title": "Deploy your Astro Site to Vercel",
+    "contentHash": "bdc69abff200524854fd53c8ee64b96ee95073f9ca836102902b7825e7b2d594",
+    "visitedAt": "2026-04-18T16:37:57.053Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/deploy/zeabur/",
+    "outputPath": "output/astro/en/guides/deploy/zeabur/index.md",
+    "title": "Deploy your Astro Site to Zeabur",
+    "contentHash": "d781c4912e7a457a60376ba04e681216a4abc51cf27e6092e3ba7e493bcd7d64",
+    "visitedAt": "2026-04-18T16:37:57.538Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/deploy/zerops/",
+    "outputPath": "output/astro/en/guides/deploy/zerops/index.md",
+    "title": "Deploy your Astro Site to Zerops",
+    "contentHash": "9f8888982b5be8ea14ea85b7020d854bdd330ee2e81ab9b1bbb06c66673aede6",
+    "visitedAt": "2026-04-18T16:38:05.221Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/dev-toolbar/",
+    "outputPath": "output/astro/en/guides/dev-toolbar/index.md",
+    "title": "Dev toolbar",
+    "contentHash": "5b70e7db52eed48fdd7b48c0ac08bca792d44fa259cfe628c467ad13828abb93",
+    "visitedAt": "2026-04-18T16:38:05.326Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/deploy/zephyr/",
+    "outputPath": "output/astro/en/guides/deploy/zephyr/index.md",
+    "title": "Deploy your Astro Site to Zephyr Cloud",
+    "contentHash": "41b80c0dbfd0203e11037efcb204cc2f81f62c4b106c0516bbfcab299e20e33e",
+    "visitedAt": "2026-04-18T16:38:09.373Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/ecommerce/",
+    "outputPath": "output/astro/en/guides/ecommerce/index.md",
+    "title": "E-commerce",
+    "contentHash": "b6e4fe5e83a2961dc748d9ec12c073ad9fa4f42553e0f12351cff1850bd67e49",
+    "visitedAt": "2026-04-18T16:38:13.365Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/endpoints/",
+    "outputPath": "output/astro/en/guides/endpoints/index.md",
+    "title": "Endpoints",
+    "contentHash": "e5dbe38bc8a9c5e304094c4b8ce905ff83178f1d668af75989e183c9ce13a490",
+    "visitedAt": "2026-04-18T16:38:14.439Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/environment-variables/",
+    "outputPath": "output/astro/en/guides/environment-variables/index.md",
+    "title": "Using environment variables",
+    "contentHash": "915f602a8c57351cfed2b672b647770397cd5f9e949af014061db638aa6ec6b6",
+    "visitedAt": "2026-04-18T16:38:19.228Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/framework-components/",
+    "outputPath": "output/astro/en/guides/framework-components/index.md",
+    "title": "Front-end frameworks",
+    "contentHash": "ab2abc6b62fca05dc3a0d674079cbf50c936b158c5f1e2db4a0b2dc2fcc84671",
+    "visitedAt": "2026-04-18T16:38:24.294Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/fonts/",
+    "outputPath": "output/astro/en/guides/fonts/index.md",
+    "title": "Using custom fonts",
+    "contentHash": "983c3cdd162d9863fe85a987c41321557c7dc35a1113e64f375a9d0afe9843ac",
+    "visitedAt": "2026-04-18T16:38:27.504Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/images/",
+    "outputPath": "output/astro/en/guides/images/index.md",
+    "title": "Images",
+    "contentHash": "93f6e71968b0b79df167eaaccee40e34d431529e08e78f3a3cee218c7713eb36",
+    "visitedAt": "2026-04-18T16:38:32.119Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/imports/",
+    "outputPath": "output/astro/en/guides/imports/index.md",
+    "title": "Imports reference",
+    "contentHash": "c0b9a989437ad408cdb34fd0c1d1d3c1c5f7d76859a95dfb224e224a3a934a43",
+    "visitedAt": "2026-04-18T16:38:35.942Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/integrations-guide/alpinejs/",
+    "outputPath": "output/astro/en/guides/integrations-guide/alpinejs/index.md",
+    "title": "@astrojs/\n\t\t\t\t\talpinejs",
+    "contentHash": "65ec82502416488d20a490738a05ed0bf6e1329a8614758f1d9d79afe3aa69d1",
+    "visitedAt": "2026-04-18T16:38:37.644Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/integrations-guide/deno/",
+    "outputPath": "output/astro/en/guides/integrations-guide/deno/index.md",
+    "title": "@deno/astro-adapter",
+    "contentHash": "11d05b13d4ddf4a5aaf53bb3fd24883b26baf2a2029aee34a7e53b7038774e4f",
+    "visitedAt": "2026-04-18T16:38:43.753Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/integrations-guide/cloudflare/",
+    "outputPath": "output/astro/en/guides/integrations-guide/cloudflare/index.md",
+    "title": "@astrojs/\n\t\t\t\t\tcloudflare",
+    "contentHash": "d8a09baeede50867e0377a012edb5273299bd3b6d37e81150caca5d1971b263e",
+    "visitedAt": "2026-04-18T16:38:45.575Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/integrations-guide/db/",
+    "outputPath": "output/astro/en/guides/integrations-guide/db/index.md",
+    "title": "@astrojs/\n\t\t\t\t\tdb",
+    "contentHash": "a02154b1a1538b1c0c0a16967db9d969598ec22f88da78ac73ae60e6ddb78f67",
+    "visitedAt": "2026-04-18T16:38:47.219Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/integrations-guide/lit/",
+    "outputPath": "output/astro/en/guides/integrations-guide/lit/index.md",
+    "title": "Lit",
+    "contentHash": "b90a208f803f6db1ca1fd450b58c005ae4893556454f2a61be2f5c0a2946f5a8",
+    "visitedAt": "2026-04-18T16:38:50.947Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/integrations-guide/markdoc/",
+    "outputPath": "output/astro/en/guides/integrations-guide/markdoc/index.md",
+    "title": "@astrojs/\n\t\t\t\t\tmarkdoc",
+    "contentHash": "3616417ed6b47e21114fb2ff371ccaf0be973fa726f2effbc94e671cf842697a",
+    "visitedAt": "2026-04-18T16:38:59.476Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/integrations-guide/mdx/",
+    "outputPath": "output/astro/en/guides/integrations-guide/mdx/index.md",
+    "title": "@astrojs/\n\t\t\t\t\tmdx",
+    "contentHash": "a52922e570a8e409981160e649f5cef25c3ebaf8521519a358832d42ee0cda64",
+    "visitedAt": "2026-04-18T16:39:02.601Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/integrations-guide/node/",
+    "outputPath": "output/astro/en/guides/integrations-guide/node/index.md",
+    "title": "@astrojs/\n\t\t\t\t\tnode",
+    "contentHash": "220d11d55e2a56441470de09fd00e3cd2e4ed88c59a381f2706996cfe2c85d4e",
+    "visitedAt": "2026-04-18T16:39:10.428Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/integrations-guide/partytown/",
+    "outputPath": "output/astro/en/guides/integrations-guide/partytown/index.md",
+    "title": "@astrojs/\n\t\t\t\t\tpartytown",
+    "contentHash": "651f150f7eeac795dc7636414e0961ea8ee3ff69083af2979bd534ee68ccb078",
+    "visitedAt": "2026-04-18T16:39:16.854Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/integrations-guide/preact/",
+    "outputPath": "output/astro/en/guides/integrations-guide/preact/index.md",
+    "title": "@astrojs/\n\t\t\t\t\tpreact",
+    "contentHash": "bf83714aa6e1c0f11a3919c656c9a63379c7520f503f8b0efc32e309e5ee592f",
+    "visitedAt": "2026-04-18T16:39:22.654Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/integrations-guide/prefetch/",
+    "outputPath": "output/astro/en/guides/integrations-guide/prefetch/index.md",
+    "title": "@astrojs/prefetch",
+    "contentHash": "e6d14d0b50b42e78b326a5758dabda4260d22123cb12401f2a631f3a1c97116d",
+    "visitedAt": "2026-04-18T16:39:29.821Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/integrations-guide/react/",
+    "outputPath": "output/astro/en/guides/integrations-guide/react/index.md",
+    "title": "@astrojs/\n\t\t\t\t\treact",
+    "contentHash": "5c1a89f9d81b1935b4999d72054f6a88de877c41fe8385504986ac6b4876b688",
+    "visitedAt": "2026-04-18T16:39:37.000Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/integrations-guide/sitemap/",
+    "outputPath": "output/astro/en/guides/integrations-guide/sitemap/index.md",
+    "title": "@astrojs/\n\t\t\t\t\tsitemap",
+    "contentHash": "a4eeb5491fe06694a75086f7a575cb399201eabe7c8d2b2635643524c626f4dd",
+    "visitedAt": "2026-04-18T16:39:41.702Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/integrations-guide/solid-js/",
+    "outputPath": "output/astro/en/guides/integrations-guide/solid-js/index.md",
+    "title": "@astrojs/\n\t\t\t\t\tsolid-js",
+    "contentHash": "03f45dd5db5f031935f375c18823fd20cc5c6248b49d136064836864d6e316b1",
+    "visitedAt": "2026-04-18T16:39:45.075Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/integrations-guide/svelte/",
+    "outputPath": "output/astro/en/guides/integrations-guide/svelte/index.md",
+    "title": "@astrojs/\n\t\t\t\t\tsvelte",
+    "contentHash": "5a70e2177dbfba8681a09d871d87d50baa8c91a9d80fadc695ca2da3df96f7db",
+    "visitedAt": "2026-04-18T16:39:49.747Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/integrations-guide/tailwind/",
+    "outputPath": "output/astro/en/guides/integrations-guide/tailwind/index.md",
+    "title": "@astrojs/tailwind",
+    "contentHash": "35034341a50334ce66580f834440b707dfedb935c20c7aba82f43403312600a9",
+    "visitedAt": "2026-04-18T16:39:50.192Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/integrations-guide/vue/",
+    "outputPath": "output/astro/en/guides/integrations-guide/vue/index.md",
+    "title": "@astrojs/\n\t\t\t\t\tvue",
+    "contentHash": "4a99edf75679625d99534d21a7d87fe78080fcf6197f976e928f29daa2dadd3e",
+    "visitedAt": "2026-04-18T16:39:59.675Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/integrations-guide/vercel/",
+    "outputPath": "output/astro/en/guides/integrations-guide/vercel/index.md",
+    "title": "@astrojs/\n\t\t\t\t\tvercel",
+    "contentHash": "5a5db1b3a1af1173e83c020edd298178e28916e304555d04f196ff578c58a7d8",
+    "visitedAt": "2026-04-18T16:40:04.209Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/integrations/",
+    "outputPath": "output/astro/en/guides/integrations/index.md",
+    "title": "Working with integrations",
+    "contentHash": "15fe91fdd119d243d2ba6a9e459bc7f9ffdd3e9c0e9a4330ccc78fcd2cf11ae5",
+    "visitedAt": "2026-04-18T16:40:11.768Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/internationalization/",
+    "outputPath": "output/astro/en/guides/internationalization/index.md",
+    "title": "Internationalization (i18n) Routing",
+    "contentHash": "a766ce168fd8edbd3a402ab638e2d62c48bfd481e168d4b90640e76c8b0fe2e9",
+    "visitedAt": "2026-04-18T16:40:14.534Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/media/",
+    "outputPath": "output/astro/en/guides/media/index.md",
+    "title": "Image and video hosting with Astro",
+    "contentHash": "cdd5f3ede60d83f3c3efb776034036d78a87154f829308210668de221d41da6c",
+    "visitedAt": "2026-04-18T16:40:19.791Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/markdown-content/",
+    "outputPath": "output/astro/en/guides/markdown-content/index.md",
+    "title": "Markdown in Astro",
+    "contentHash": "cdbd47aea51042c7fca5b4a90f9842be27ca25f0489cae6744002821265fe7b5",
+    "visitedAt": "2026-04-18T16:40:21.141Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/integrations-guide/netlify/",
+    "outputPath": "output/astro/en/guides/integrations-guide/netlify/index.md",
+    "visitedAt": "2026-04-18T16:40:21.789Z",
+    "status": "failed",
+    "error": "page.goto: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://docs.astro.build/en/guides/integrations-guide/netlify/\", waiting until \"domcontentloaded\"\u001b[22m\n"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/media/cloudinary/",
+    "outputPath": "output/astro/en/guides/media/cloudinary/index.md",
+    "title": "Cloudinary & Astro",
+    "contentHash": "f42fb15665b2d8d5bdfac7714ec081271e413d1280e9f054af369653480adb92",
+    "visitedAt": "2026-04-18T16:40:26.416Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/media/mux/",
+    "outputPath": "output/astro/en/guides/media/mux/index.md",
+    "title": "Mux & Astro",
+    "contentHash": "6c3e67c9267c220235cdc055f367a4d884e94df09a69adc6fb2f230eebc338d0",
+    "visitedAt": "2026-04-18T16:40:30.018Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/middleware/",
+    "outputPath": "output/astro/en/guides/middleware/index.md",
+    "title": "Middleware",
+    "contentHash": "63ff61881067e6689890f0e8cb56e85f601406dc78327246c2cbc71101688fd7",
+    "visitedAt": "2026-04-18T16:40:32.596Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/migrate-to-astro/",
+    "outputPath": "output/astro/en/guides/migrate-to-astro/index.md",
+    "title": "Migrate an existing project to Astro",
+    "contentHash": "478d02bf80824e5a8b804f8316fb2de00f3e59ccd19888d75d75ed3465f1651b",
+    "visitedAt": "2026-04-18T16:40:33.795Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/migrate-to-astro/from-docusaurus/",
+    "outputPath": "output/astro/en/guides/migrate-to-astro/from-docusaurus/index.md",
+    "title": "Migrating from Docusaurus",
+    "contentHash": "808e917f24215dc381fca492f1d81733f05d7a740c50a01416bec1b515554b94",
+    "visitedAt": "2026-04-18T16:40:38.265Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/migrate-to-astro/from-create-react-app/",
+    "outputPath": "output/astro/en/guides/migrate-to-astro/from-create-react-app/index.md",
+    "title": "Migrating from Create React App (CRA)",
+    "contentHash": "33048e79f10357d07223244294221d40e7ffe34f9f7c6ecf88a8ac62e60208a7",
+    "visitedAt": "2026-04-18T16:40:41.789Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/migrate-to-astro/from-eleventy/",
+    "outputPath": "output/astro/en/guides/migrate-to-astro/from-eleventy/index.md",
+    "title": "Migrating from Eleventy",
+    "contentHash": "63b29412fb882574d257550194ce1a40555201a68c5066a916587c25b8f7c675",
+    "visitedAt": "2026-04-18T16:40:43.242Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/migrate-to-astro/from-gitbook/",
+    "outputPath": "output/astro/en/guides/migrate-to-astro/from-gitbook/index.md",
+    "title": "Migrating from GitBook",
+    "contentHash": "640d91a50a366739315dc8b34d25d443fc75bb35ffbfdb9c6333de1a4bd45515",
+    "visitedAt": "2026-04-18T16:40:47.990Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/migrate-to-astro/from-gatsby/",
+    "outputPath": "output/astro/en/guides/migrate-to-astro/from-gatsby/index.md",
+    "title": "Migrating from Gatsby",
+    "contentHash": "1f1b1a74807c1934ee92cdc424bf92a440683e8d72974831be638664589cc026",
+    "visitedAt": "2026-04-18T16:40:49.822Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/migrate-to-astro/from-gridsome/",
+    "outputPath": "output/astro/en/guides/migrate-to-astro/from-gridsome/index.md",
+    "title": "Migrating from Gridsome",
+    "contentHash": "5bbc486bdc2cc266914acb8eaca292a2cd962eb75e4ef4b49b892a5a09486868",
+    "visitedAt": "2026-04-18T16:40:50.339Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/migrate-to-astro/from-jekyll/",
+    "outputPath": "output/astro/en/guides/migrate-to-astro/from-jekyll/index.md",
+    "title": "Migrating from Jekyll",
+    "contentHash": "a6f5bcef51e680ff0f602143a876ab6e66127fe1dfb47c66b0261a0aa72b4223",
+    "visitedAt": "2026-04-18T16:40:56.813Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/migrate-to-astro/from-hugo/",
+    "outputPath": "output/astro/en/guides/migrate-to-astro/from-hugo/index.md",
+    "title": "Migrating from Hugo",
+    "contentHash": "775bbf9b8974d6c5703132969013cdf316c78b49a6e16fc7c8c0da9dcefd3bb8",
+    "visitedAt": "2026-04-18T16:40:57.946Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/migrate-to-astro/from-nextjs/",
+    "outputPath": "output/astro/en/guides/migrate-to-astro/from-nextjs/index.md",
+    "title": "Migrating from Next.js",
+    "contentHash": "c2cde8d7071661a3fb22fe6296541bc772ab12300ca2048ea2f0cfa30cec1605",
+    "visitedAt": "2026-04-18T16:41:02.399Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/migrate-to-astro/from-pelican/",
+    "outputPath": "output/astro/en/guides/migrate-to-astro/from-pelican/index.md",
+    "title": "Migrating from Pelican",
+    "contentHash": "f2a38fdead8aa86c2b0559a2fbb83efa6b4c4c7cd860fab48d70b2aeff4612db",
+    "visitedAt": "2026-04-18T16:41:06.912Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/migrate-to-astro/from-nuxtjs/",
+    "outputPath": "output/astro/en/guides/migrate-to-astro/from-nuxtjs/index.md",
+    "title": "Migrating from NuxtJS",
+    "contentHash": "c028b660ed66c96a72bd0fbcf2ce201e190b9aac9f0ad80b8d752575e267c971",
+    "visitedAt": "2026-04-18T16:41:11.268Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/migrate-to-astro/from-sveltekit/",
+    "outputPath": "output/astro/en/guides/migrate-to-astro/from-sveltekit/index.md",
+    "title": "Migrating from SvelteKit",
+    "contentHash": "6ed7d5a800fe05befb4f9359d2ec53342317a20b0420a6a8f5e8e834ce04f710",
+    "visitedAt": "2026-04-18T16:41:12.305Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/migrate-to-astro/from-vuepress/",
+    "outputPath": "output/astro/en/guides/migrate-to-astro/from-vuepress/index.md",
+    "title": "Migrating from VuePress",
+    "contentHash": "9298762b285ada916e1d50d2054c0b23173bdecc3e43431be8ec0e02ba11bed8",
+    "visitedAt": "2026-04-18T16:41:13.382Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/migrate-to-astro/from-wordpress/",
+    "outputPath": "output/astro/en/guides/migrate-to-astro/from-wordpress/index.md",
+    "title": "Migrating from WordPress",
+    "contentHash": "d9c27dac5e52e1a5c55a7fc6137df308c51a2046a7f8cb8c1acfbca064fe7b18",
+    "visitedAt": "2026-04-18T16:41:17.885Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/on-demand-rendering/",
+    "outputPath": "output/astro/en/guides/on-demand-rendering/index.md",
+    "title": "On-demand rendering",
+    "contentHash": "54a805595a6b75eb654fde392efa6d24e022c6704add04ac4c4a4d7283756955",
+    "visitedAt": "2026-04-18T16:41:18.477Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/prefetch/",
+    "outputPath": "output/astro/en/guides/prefetch/index.md",
+    "title": "Prefetch",
+    "contentHash": "66bc88cdf80c6bec0f1ad4a84663788938baf4e8523c25b618d6182bebc0810d",
+    "visitedAt": "2026-04-18T16:41:19.868Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/server-islands/",
+    "outputPath": "output/astro/en/guides/server-islands/index.md",
+    "title": "Server islands",
+    "contentHash": "e795b6965c4c6a042f1eac7e4903d482ac147752fcffb4aaae6df4b90d79b309",
+    "visitedAt": "2026-04-18T16:41:24.211Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/sessions/",
+    "outputPath": "output/astro/en/guides/sessions/index.md",
+    "title": "Sessions",
+    "contentHash": "d139733edef7cf6167f49f6ff012ef00b629076cdfe5c0e85dabe77e62f0bd2f",
+    "visitedAt": "2026-04-18T16:41:26.905Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/routing/",
+    "outputPath": "output/astro/en/guides/routing/index.md",
+    "title": "Routing",
+    "contentHash": "586c5164ceb8e07a46db8fcce6958b9c035827f1d35a1b5385e38c3a4bf429b5",
+    "visitedAt": "2026-04-18T16:41:28.986Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/styling/",
+    "outputPath": "output/astro/en/guides/styling/index.md",
+    "title": "Styles and CSS",
+    "contentHash": "786037649a691912b14eb14cf25b82d52d2bfe88843d93f3ff50cc050b9a6c71",
+    "visitedAt": "2026-04-18T16:41:37.928Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/testing/",
+    "outputPath": "output/astro/en/guides/testing/index.md",
+    "title": "Testing",
+    "contentHash": "de12a78fd54a8ee75bee6d74a73bfea6b44586823c0c68469e01e2b09a714bf3",
+    "visitedAt": "2026-04-18T16:41:38.855Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/syntax-highlighting/",
+    "outputPath": "output/astro/en/guides/syntax-highlighting/index.md",
+    "title": "Syntax Highlighting",
+    "contentHash": "aeebdd29826633a0a3bb1d65664067d2ec06f8ef691b65cf0673c090a0fd5c81",
+    "visitedAt": "2026-04-18T16:41:39.221Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/troubleshooting/",
+    "outputPath": "output/astro/en/guides/troubleshooting/index.md",
+    "title": "Troubleshooting",
+    "contentHash": "1dfecfe4fe1f7d90d9cf8ec9ddf17b83dd8501b81cf6c4ae261877581bd780dc",
+    "visitedAt": "2026-04-18T16:41:45.231Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/typescript/",
+    "outputPath": "output/astro/en/guides/typescript/index.md",
+    "title": "TypeScript",
+    "contentHash": "61dce6d0f2f235a17aada11911390578ecb82bb282fdad3265d3c08407968cba",
+    "visitedAt": "2026-04-18T16:41:46.983Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/upgrade-to/v1/",
+    "outputPath": "output/astro/en/guides/upgrade-to/v1/index.md",
+    "title": "Legacy v0.x Upgrade Guide",
+    "contentHash": "ebb7b7fa9632fadee63e3fce7da37f64a53004f0c9fc7096e01c47e424d93ad5",
+    "visitedAt": "2026-04-18T16:41:49.599Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/upgrade-to/v2/",
+    "outputPath": "output/astro/en/guides/upgrade-to/v2/index.md",
+    "title": "Upgrade to Astro v2",
+    "contentHash": "f91ca978684f3f98f4952cf2ab4928f51a7879eeb4de25934bd7534f1ee1b50a",
+    "visitedAt": "2026-04-18T16:41:51.999Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/upgrade-to/v4/",
+    "outputPath": "output/astro/en/guides/upgrade-to/v4/index.md",
+    "title": "Upgrade to Astro v4",
+    "contentHash": "9d08c18729c72568fee34cb1f95586da25bc1028da048f3045e72862e5eab66e",
+    "visitedAt": "2026-04-18T16:41:57.805Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/upgrade-to/v3/",
+    "outputPath": "output/astro/en/guides/upgrade-to/v3/index.md",
+    "title": "Upgrade to Astro v3",
+    "contentHash": "a1e4e6b77b9668d735c9d5e3000396724b2ef94fa1d06d11ae0bde62cb5bea94",
+    "visitedAt": "2026-04-18T16:42:00.465Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/upgrade-to/v5/",
+    "outputPath": "output/astro/en/guides/upgrade-to/v5/index.md",
+    "title": "Upgrade to Astro v5",
+    "contentHash": "20bbbcb57bf32ccec4c1ea3b377b898eb839b5b7473dfd588a340ddda149cea4",
+    "visitedAt": "2026-04-18T16:42:11.082Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/view-transitions/",
+    "outputPath": "output/astro/en/guides/view-transitions/index.md",
+    "title": "View transitions",
+    "contentHash": "4314ab8012eb9c5507c43c338e3d2a376957f8a2ae612a19007b1748c89353ca",
+    "visitedAt": "2026-04-18T16:42:14.465Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/upgrade-to/v6/",
+    "outputPath": "output/astro/en/guides/upgrade-to/v6/index.md",
+    "title": "Upgrade to Astro v6",
+    "contentHash": "1616814db89b15c867994495d796e968284c4072c74314cea08333d303a4ff17",
+    "visitedAt": "2026-04-18T16:42:19.932Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/install-and-setup/",
+    "outputPath": "output/astro/en/install-and-setup/index.md",
+    "title": "Install Astro",
+    "contentHash": "9961153b90594d0fca78f7988b1927a1582500f0a2db73761f2e0c0bdf407904",
+    "visitedAt": "2026-04-18T16:42:24.396Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/adapter-reference/",
+    "outputPath": "output/astro/en/reference/adapter-reference/index.md",
+    "title": "Astro Adapter API",
+    "contentHash": "2921dd56432127797f0bf2024f67ed97121315c1146fcac1ba6e93cfc8cdbe3f",
+    "visitedAt": "2026-04-18T16:42:30.025Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/api-reference/",
+    "outputPath": "output/astro/en/reference/api-reference/index.md",
+    "title": "Astro render context",
+    "contentHash": "36f3b322de18a8f9993010919a156d3ba8ef3c93914562ca592c91295793923a",
+    "visitedAt": "2026-04-18T16:42:34.136Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/astro-syntax/",
+    "outputPath": "output/astro/en/reference/astro-syntax/index.md",
+    "title": "Template expressions reference",
+    "contentHash": "142d6af8bd5a4028a9f5399d39fb5e0331e6793b1ca660ed6404bbece3586379",
+    "visitedAt": "2026-04-18T16:42:38.335Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/cli-reference/",
+    "outputPath": "output/astro/en/reference/cli-reference/index.md",
+    "title": "CLI Commands",
+    "contentHash": "eb1fd92300bbaa2e69b7041ce4a9d662410843a26bdd03aec8aad8071c19f2cc",
+    "visitedAt": "2026-04-18T16:42:43.166Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/container-reference/",
+    "outputPath": "output/astro/en/reference/container-reference/index.md",
+    "title": "Astro Container API (experimental)",
+    "contentHash": "c68e00100acd9e9447852de2b0b859d62c66d3bf35560034f7aca9b1de5359e1",
+    "visitedAt": "2026-04-18T16:42:47.882Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/configuration-reference/",
+    "outputPath": "output/astro/en/reference/configuration-reference/index.md",
+    "title": "Configuration Reference",
+    "contentHash": "072d7c5a65864301b3caec46ef97fefb522de2848f4965347c74acdf1d8de5bc",
+    "visitedAt": "2026-04-18T16:42:57.941Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/content-loader-reference/",
+    "outputPath": "output/astro/en/reference/content-loader-reference/index.md",
+    "title": "Astro Content Loader API",
+    "contentHash": "c4655017173d3eb9e5942660beeb318319c0631adbab6654ee3c3a68f08e93b5",
+    "visitedAt": "2026-04-18T16:43:03.967Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/dev-toolbar-app-reference/",
+    "outputPath": "output/astro/en/reference/dev-toolbar-app-reference/index.md",
+    "title": "Dev Toolbar App API",
+    "contentHash": "3fea1c6171fa1b074e500f0ef432b111f9cb696ce6715372a23eb50374babb4f",
+    "visitedAt": "2026-04-18T16:43:07.158Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/directives-reference/",
+    "outputPath": "output/astro/en/reference/directives-reference/index.md",
+    "title": "Template directives reference",
+    "contentHash": "be8a2efc926930810f65d100af9eabb4d1edcca948ba749bf6f01c9174427ffa",
+    "visitedAt": "2026-04-18T16:43:11.406Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/action-called-from-server-error/",
+    "outputPath": "output/astro/en/reference/errors/action-called-from-server-error/index.md",
+    "title": "Action unexpected called from the server.",
+    "contentHash": "23117c9d23a25df077bf28d578b3f73d1750b29305e6b622345b344f9461bbf1",
+    "visitedAt": "2026-04-18T16:43:13.713Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/error-reference/",
+    "outputPath": "output/astro/en/reference/error-reference/index.md",
+    "title": "Error reference",
+    "contentHash": "176cece70df306a42f2a372f71f0dfebbfbc4213336a345ac2737f15a8219580",
+    "visitedAt": "2026-04-18T16:43:15.787Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/action-not-found-error/",
+    "outputPath": "output/astro/en/reference/errors/action-not-found-error/index.md",
+    "title": "Action not found.",
+    "contentHash": "3b1035342b56e9c348ed64874a7dd23c81cf37eda0cd6b57a0df24dee1abe6fc",
+    "visitedAt": "2026-04-18T16:43:17.678Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/action-query-string-invalid-error/",
+    "outputPath": "output/astro/en/reference/errors/action-query-string-invalid-error/index.md",
+    "title": "An invalid Action query string was passed by a form.",
+    "contentHash": "3d5882fdbd4640043c1757007325e84f5ca2894c6371dc2d30cc2124aa5c50c7",
+    "visitedAt": "2026-04-18T16:43:19.257Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/actions-cant-be-loaded/",
+    "outputPath": "output/astro/en/reference/errors/actions-cant-be-loaded/index.md",
+    "title": "Can't load the Astro actions.",
+    "contentHash": "3ad418530dd50c249fcd6f9a92a6c0c22247491e533e62031331c893338cc668",
+    "visitedAt": "2026-04-18T16:43:21.015Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/actions-returned-invalid-data-error/",
+    "outputPath": "output/astro/en/reference/errors/actions-returned-invalid-data-error/index.md",
+    "title": "Action handler returned invalid data.",
+    "contentHash": "3890c95fb1e4153530f2aa0905cf907153e094c30be8620c32a1c9606c4e5e70",
+    "visitedAt": "2026-04-18T16:43:23.538Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/actions-used-with-for-get-error/",
+    "outputPath": "output/astro/en/reference/errors/actions-used-with-for-get-error/index.md",
+    "title": "An invalid Action query string was passed by a form.",
+    "contentHash": "d510a2a3755207eac3d2b5579d4623562ee3d9e4857876cfc3ab7906f3a82c43",
+    "visitedAt": "2026-04-18T16:43:26.503Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/actions-without-server-output-error/",
+    "outputPath": "output/astro/en/reference/errors/actions-without-server-output-error/index.md",
+    "title": "Actions must be used with server output.",
+    "contentHash": "b9544468729a8db7ebb03f6f9693bdfbd2ffd641ee646407ce9ffc04add4553b",
+    "visitedAt": "2026-04-18T16:43:28.129Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/adapter-support-output-mismatch/",
+    "outputPath": "output/astro/en/reference/errors/adapter-support-output-mismatch/index.md",
+    "title": "Adapter does not support server output.",
+    "contentHash": "2cf713ce6de24dfb7477c0e18f2a697720e198b3cb43c80cbd4179e9961cbb8c",
+    "visitedAt": "2026-04-18T16:43:30.136Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/astro-glob-no-match/",
+    "outputPath": "output/astro/en/reference/errors/astro-glob-no-match/index.md",
+    "title": "Astro.glob() did not match any files.",
+    "contentHash": "e7dd6025e23166288d8d77206f63db276dc041c3c7c4c147663e61e922a3d4c6",
+    "visitedAt": "2026-04-18T16:43:32.221Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/astro-glob-used-outside/",
+    "outputPath": "output/astro/en/reference/errors/astro-glob-used-outside/index.md",
+    "title": "Astro.glob() used outside of an Astro file.",
+    "contentHash": "87fdd8929691f5b9731244f5d90e7a6203d66a1e80f0337ac5c3896e5d7976e5",
+    "visitedAt": "2026-04-18T16:43:33.591Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/astro-response-headers-reassigned/",
+    "outputPath": "output/astro/en/reference/errors/astro-response-headers-reassigned/index.md",
+    "title": "Astro.response.headers must not be reassigned.",
+    "contentHash": "8451d8a174333cb04bfb2b4ae3b055444ba2a16eb4b9da84cdef1e6f0ec01de0",
+    "visitedAt": "2026-04-18T16:43:35.269Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/cache-not-enabled/",
+    "outputPath": "output/astro/en/reference/errors/cache-not-enabled/index.md",
+    "title": "Cache is not enabled.",
+    "contentHash": "0136364c6815759e9c3026ff7ee954ab9b53547036926584369bd3ae6988d7bb",
+    "visitedAt": "2026-04-18T16:43:39.142Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/cache-provider-not-found/",
+    "outputPath": "output/astro/en/reference/errors/cache-provider-not-found/index.md",
+    "title": "Cache provider not found.",
+    "contentHash": "8f61f1e4fee25f2c893c68317e756050e3f7ca2953b418065746e2415dd5d806",
+    "visitedAt": "2026-04-18T16:43:40.133Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/cache-query-config-conflict/",
+    "outputPath": "output/astro/en/reference/errors/cache-query-config-conflict/index.md",
+    "title": "Conflicting cache query configuration.",
+    "contentHash": "38e3c678b6c974ccf90947daf7484feaf41ebc1cf60937983c47e2f7874574c3",
+    "visitedAt": "2026-04-18T16:43:41.032Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/cannot-extract-font-type/",
+    "outputPath": "output/astro/en/reference/errors/cannot-extract-font-type/index.md",
+    "title": "Cannot extract the font type from the given URL.",
+    "contentHash": "f740f45738e3efde7369499d5306858b9e8b23bef916e15c853655b1ed229f66",
+    "visitedAt": "2026-04-18T16:43:44.276Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/cannot-determine-weight-and-style-from-font-file/",
+    "outputPath": "output/astro/en/reference/errors/cannot-determine-weight-and-style-from-font-file/index.md",
+    "title": "Cannot determine weight and style from font file.",
+    "contentHash": "4ac7d8c4acc51c4918f7bc418c2fd2d892ac3a964bf8cddbdeb664889b6139e2",
+    "visitedAt": "2026-04-18T16:43:44.849Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/cannot-fetch-font-file/",
+    "outputPath": "output/astro/en/reference/errors/cannot-fetch-font-file/index.md",
+    "title": "Cannot fetch the given font file.",
+    "contentHash": "1fe8fa83b9bf5f1a349a4ef5edf05e284775a6219a99b0f4c09f62baf521aa24",
+    "visitedAt": "2026-04-18T16:43:45.295Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/cannot-optimize-svg/",
+    "outputPath": "output/astro/en/reference/errors/cannot-optimize-svg/index.md",
+    "title": "Cannot optimize SVG",
+    "contentHash": "3b7053fbfb809ccebf39fe38cb55bdaf6fb35c5f97e885129ef1948d9cbec4c1",
+    "visitedAt": "2026-04-18T16:43:50.038Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/cant-render-page/",
+    "outputPath": "output/astro/en/reference/errors/cant-render-page/index.md",
+    "title": "Astro can't render the route.",
+    "contentHash": "52dd24a96b65eb556dfb19681b80b9b73ddc5d502cdfe40f80bc24dbd5275941",
+    "visitedAt": "2026-04-18T16:43:51.463Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/cant-use-astro-config-module-error/",
+    "outputPath": "output/astro/en/reference/errors/cant-use-astro-config-module-error/index.md",
+    "title": "Cannot use the astro:config module without enabling the experimental feature.",
+    "contentHash": "dc4226386aef05e7f023c9cf7cec6b7597368ffe20770b904df508516c3dd4be",
+    "visitedAt": "2026-04-18T16:43:52.052Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/client-address-not-available/",
+    "outputPath": "output/astro/en/reference/errors/client-address-not-available/index.md",
+    "title": "Astro.clientAddress is not available in current adapter.",
+    "contentHash": "6d28b514c880b6bf2a213f0cba3e53f0217a00b2ae843dd48c01a936c3860b12",
+    "visitedAt": "2026-04-18T16:43:55.498Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/config-legacy-key/",
+    "outputPath": "output/astro/en/reference/errors/config-legacy-key/index.md",
+    "title": "Legacy configuration detected.",
+    "contentHash": "cc44f044a5bac93e6d608d8df9dd9f94af4bd2904119bc025f4be2bca2c5d6a3",
+    "visitedAt": "2026-04-18T16:43:55.911Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/collection-does-not-exist-error/",
+    "outputPath": "output/astro/en/reference/errors/collection-does-not-exist-error/index.md",
+    "title": "Collection does not exist",
+    "contentHash": "b75e35902bd99fb1bdd053b4bec3f638c2420ea503c47686c5cd33a961f2e0d2",
+    "visitedAt": "2026-04-18T16:43:56.785Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/config-not-found/",
+    "outputPath": "output/astro/en/reference/errors/config-not-found/index.md",
+    "title": "Specified configuration file not found.",
+    "contentHash": "bf6d485ca042362af2d4b1042a01c2bf14fcf3975b86eced2a81d053d981584f",
+    "visitedAt": "2026-04-18T16:44:00.584Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/content-collection-invalid-type/",
+    "outputPath": "output/astro/en/reference/errors/content-collection-invalid-type/index.md",
+    "title": "Content collection has an invalid type field.",
+    "contentHash": "6335690accb71d15864761206b3aca5147fc89f76f281c354bfc3ef4ad6854f0",
+    "visitedAt": "2026-04-18T16:44:01.734Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/content-collection-missing-loader/",
+    "outputPath": "output/astro/en/reference/errors/content-collection-missing-loader/index.md",
+    "title": "Content collection is missing a loader definition.",
+    "contentHash": "43c9e85e16a441af7ef51c8b86f973e4382d59e622a030432a8a7edfceac230a",
+    "visitedAt": "2026-04-18T16:44:02.841Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/content-collection-type-mismatch-error/",
+    "outputPath": "output/astro/en/reference/errors/content-collection-type-mismatch-error/index.md",
+    "title": "Collection contains entries of a different type.",
+    "contentHash": "3e9a5a9269b0f988d551cd4d5095cf9b179bccd822e7301cc3992c60067cc6b6",
+    "visitedAt": "2026-04-18T16:44:05.438Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/content-entry-data-error/",
+    "outputPath": "output/astro/en/reference/errors/content-entry-data-error/index.md",
+    "title": "Content entry data does not match schema.",
+    "contentHash": "173c755d421f0f73ba921beab599a48993f2ec6a393eaab8bcff8b1cd8d8c408",
+    "visitedAt": "2026-04-18T16:44:09.069Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/content-loader-invalid-data-error/",
+    "outputPath": "output/astro/en/reference/errors/content-loader-invalid-data-error/index.md",
+    "title": "Content entry is missing an ID",
+    "contentHash": "a58d4c35a614c781e10f72f92b9d9f808c8951c88480a0047d0a1e097b1ec1c8",
+    "visitedAt": "2026-04-18T16:44:09.949Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/content-loader-returns-invalid-id/",
+    "outputPath": "output/astro/en/reference/errors/content-loader-returns-invalid-id/index.md",
+    "title": "Content loader returned an entry with an invalid id.",
+    "contentHash": "c004eaf8619550b35169d4cb8fbd2a132e306f7f24832041f0a19accfca6d1dd",
+    "visitedAt": "2026-04-18T16:44:11.622Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/could-not-transform-image/",
+    "outputPath": "output/astro/en/reference/errors/could-not-transform-image/index.md",
+    "title": "Could not transform image.",
+    "contentHash": "93a4aef65bec5979faa8cd25ddca2ed9b8f553680750a65a20282607ad534b1b",
+    "visitedAt": "2026-04-18T16:44:13.698Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/content-schema-contains-slug-error/",
+    "outputPath": "output/astro/en/reference/errors/content-schema-contains-slug-error/index.md",
+    "title": "Content Schema should not contain slug.",
+    "contentHash": "fd2d824d5938de5933c46ed4a7eb5e7ad129400916c2f9042e55b0b2939c4f3f",
+    "visitedAt": "2026-04-18T16:44:14.306Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/csp-not-enabled/",
+    "outputPath": "output/astro/en/reference/errors/csp-not-enabled/index.md",
+    "title": "CSP feature isn't enabled",
+    "contentHash": "fee0c37afc593dc26b08e95b3c155a5c348b906a57db9bb84294bbdf5453fe65",
+    "visitedAt": "2026-04-18T16:44:15.245Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/csssyntax-error/",
+    "outputPath": "output/astro/en/reference/errors/csssyntax-error/index.md",
+    "title": "CSS Syntax Error.",
+    "contentHash": "36cd556af04433d52c611036aa8c37789a7cc653273287afbf908f0b59811b86",
+    "visitedAt": "2026-04-18T16:44:17.582Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/data-collection-entry-parse-error/",
+    "outputPath": "output/astro/en/reference/errors/data-collection-entry-parse-error/index.md",
+    "title": "Data collection entry failed to parse.",
+    "contentHash": "0a91d886f0a1d4ee01c36338da6617982862e78771794fc52c9debccaf6ca34c",
+    "visitedAt": "2026-04-18T16:44:17.920Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/duplicate-content-entry-slug-error/",
+    "outputPath": "output/astro/en/reference/errors/duplicate-content-entry-slug-error/index.md",
+    "title": "Duplicate content entry slug.",
+    "contentHash": "2b62c428c6057fbff42074c48d72f73f3c39cca75f76d79a2e9e6bc251ccc39b",
+    "visitedAt": "2026-04-18T16:44:18.840Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/endpoint-did-not-return-aresponse/",
+    "outputPath": "output/astro/en/reference/errors/endpoint-did-not-return-aresponse/index.md",
+    "title": "The endpoint did not return a Response.",
+    "contentHash": "1e4e316a502217c050e0a853b1785be138d8a071d3dd281e83e10cecb472bcf0",
+    "visitedAt": "2026-04-18T16:44:22.014Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/env-invalid-variable/",
+    "outputPath": "output/astro/en/reference/errors/env-invalid-variable/index.md",
+    "title": "Invalid Environment Variable",
+    "contentHash": "2ba7e8fe1f9b806668e73281f583f71027a1e26096d54786afc735eac0fd1408",
+    "visitedAt": "2026-04-18T16:44:23.483Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/env-invalid-variables/",
+    "outputPath": "output/astro/en/reference/errors/env-invalid-variables/index.md",
+    "title": "Invalid Environment Variables",
+    "contentHash": "e1df0db001af1ef55fae8c71ea6650c57ac40d38a0c02612b8efbd4669a8fcdf",
+    "visitedAt": "2026-04-18T16:44:24.383Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/env-prefix-conflicts-with-secret/",
+    "outputPath": "output/astro/en/reference/errors/env-prefix-conflicts-with-secret/index.md",
+    "title": "envPrefix conflicts with secret environment variables",
+    "contentHash": "58c5cbf748c4196b956e96621580dc8f043cf1a39a11f2d4bcd6b4216abb7642",
+    "visitedAt": "2026-04-18T16:44:28.957Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/expected-image-options/",
+    "outputPath": "output/astro/en/reference/errors/expected-image-options/index.md",
+    "title": "Expected image options.",
+    "contentHash": "0a786a4220e494269ad344d521ebfee742c0f0ccf5be3a2dfd67ae346283f79e",
+    "visitedAt": "2026-04-18T16:44:29.785Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/env-unsupported-get-secret/",
+    "outputPath": "output/astro/en/reference/errors/env-unsupported-get-secret/index.md",
+    "title": "Unsupported astro:env getSecret",
+    "contentHash": "89e597cf7ef358d6d886c0a6c5ac4791d78face0c22bda3009dd9e839e7bf249",
+    "visitedAt": "2026-04-18T16:44:30.113Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/expected-image/",
+    "outputPath": "output/astro/en/reference/errors/expected-image/index.md",
+    "title": "Expected src to be an image.",
+    "contentHash": "bb345f4aee3e75ba56777a4ce596b85eb08a66568fc15aac576baea9e99e857b",
+    "visitedAt": "2026-04-18T16:44:34.205Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/failed-to-fetch-remote-image-dimensions/",
+    "outputPath": "output/astro/en/reference/errors/failed-to-fetch-remote-image-dimensions/index.md",
+    "title": "Failed to retrieve remote image dimensions",
+    "contentHash": "bbad52a934d29a4f196142efcb2879031dce8ee15f8da8b54f1033cda3aeace9",
+    "visitedAt": "2026-04-18T16:44:34.839Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/expected-not-esmimage/",
+    "outputPath": "output/astro/en/reference/errors/expected-not-esmimage/index.md",
+    "title": "Expected image options, not an ESM-imported image.",
+    "contentHash": "7b57d55e882d1fb46e31c46c637f153053fec0fcbe680e90f0dc131303f165d3",
+    "visitedAt": "2026-04-18T16:44:35.356Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/failed-to-find-page-map-ssr/",
+    "outputPath": "output/astro/en/reference/errors/failed-to-find-page-map-ssr/index.md",
+    "title": "Astro couldn't find the correct page to render",
+    "contentHash": "a7aa2befb12c7ea780d3eee71d4b14117bef36df04740e615382ed262391de1d",
+    "visitedAt": "2026-04-18T16:44:38.099Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/failed-to-load-module-ssr/",
+    "outputPath": "output/astro/en/reference/errors/failed-to-load-module-ssr/index.md",
+    "title": "Could not import file.",
+    "contentHash": "dc67ca54924c37a0385aa6e310f266d2e90208cc14f442535f1b49f032db7a78",
+    "visitedAt": "2026-04-18T16:44:38.715Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/file-glob-not-supported/",
+    "outputPath": "output/astro/en/reference/errors/file-glob-not-supported/index.md",
+    "title": "Glob patterns are not supported in the file loader",
+    "contentHash": "e07ef4282456b4c881f472754bdfacac0151dc7ad8a6bbb72610e1825babce95",
+    "visitedAt": "2026-04-18T16:44:39.343Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/file-parser-not-found/",
+    "outputPath": "output/astro/en/reference/errors/file-parser-not-found/index.md",
+    "title": "File parser not found",
+    "contentHash": "f211dd554248b5f908ecc6af0d972fe9569f9faa15ae5b2b77bbfaa6202ecde0",
+    "visitedAt": "2026-04-18T16:44:41.917Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/forbidden-rewrite/",
+    "outputPath": "output/astro/en/reference/errors/forbidden-rewrite/index.md",
+    "title": "Forbidden rewrite to a static route.",
+    "contentHash": "cb8bf659a731dfa196e55d6ed8464d6dadd3498fdcdbdb1010c4cf7daf30be75",
+    "visitedAt": "2026-04-18T16:44:42.543Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/font-family-not-found/",
+    "outputPath": "output/astro/en/reference/errors/font-family-not-found/index.md",
+    "title": "Font family not found",
+    "contentHash": "158114429e257867fccac5b41b3f6c474b904e99e6223d1ded9372d701233cef",
+    "visitedAt": "2026-04-18T16:44:42.847Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/generate-content-types-error/",
+    "outputPath": "output/astro/en/reference/errors/generate-content-types-error/index.md",
+    "title": "Failed to generate content types.",
+    "contentHash": "e899a4fac823db07c535ad1d8b43956eb7a1d1b1126a2ead08d08230da8e9046",
+    "visitedAt": "2026-04-18T16:44:46.006Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/get-entry-deprecation-error/",
+    "outputPath": "output/astro/en/reference/errors/get-entry-deprecation-error/index.md",
+    "title": "Invalid use of getDataEntryById or getEntryBySlug function.",
+    "contentHash": "6b0d7bc3cf7032a09bb606ebdf594175d60923f156f7f7d3c14bec61e20a8d35",
+    "visitedAt": "2026-04-18T16:44:46.844Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/get-image-not-used-on-server/",
+    "outputPath": "output/astro/en/reference/errors/get-image-not-used-on-server/index.md",
+    "title": "getImage() must be used on the server.",
+    "contentHash": "2f6da97a9556d90a478acde39ba9124d223dac0e13e2efacff3361d67399d9f1",
+    "visitedAt": "2026-04-18T16:44:47.547Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/get-static-paths-expected-params/",
+    "outputPath": "output/astro/en/reference/errors/get-static-paths-expected-params/index.md",
+    "title": "Missing params property on getStaticPaths route.",
+    "contentHash": "d074504d998c3184f1ce32b5af8b7b05eb19d60947a147fdb49391234d022114",
+    "visitedAt": "2026-04-18T16:44:50.814Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/get-static-paths-removed-rsshelper/",
+    "outputPath": "output/astro/en/reference/errors/get-static-paths-removed-rsshelper/index.md",
+    "title": "getStaticPaths RSS helper is not available anymore.",
+    "contentHash": "a577395a968fb98c061994374e6f77aaf01366e67bcdec4ffc058b8d43897c0d",
+    "visitedAt": "2026-04-18T16:44:51.103Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/get-static-paths-invalid-route-param/",
+    "outputPath": "output/astro/en/reference/errors/get-static-paths-invalid-route-param/index.md",
+    "title": "Invalid route parameter returned by getStaticPaths().",
+    "contentHash": "7397a18eb2560e2697b372f90caa31b575f6c39923457260cc5e6ab48db960e9",
+    "visitedAt": "2026-04-18T16:44:51.657Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/get-static-paths-required/",
+    "outputPath": "output/astro/en/reference/errors/get-static-paths-required/index.md",
+    "title": "getStaticPaths() function required for dynamic routes.",
+    "contentHash": "fd7e067ce13297a1700e452c0a08a410a78ea79c24b00b63dc8b4f146484de2b",
+    "visitedAt": "2026-04-18T16:44:54.253Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/i18n-no-locale-found-in-path/",
+    "outputPath": "output/astro/en/reference/errors/i18n-no-locale-found-in-path/index.md",
+    "title": "The path doesn't contain any locale",
+    "contentHash": "cfca4698c52cb78b36fc477cb61e053caec15283a0ed6ab14ab81458dec4525a",
+    "visitedAt": "2026-04-18T16:44:55.664Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/i18n-not-enabled/",
+    "outputPath": "output/astro/en/reference/errors/i18n-not-enabled/index.md",
+    "title": "i18n Not Enabled",
+    "contentHash": "b7c14ec1f0408279ea7725e7764b86b87dd6f1d3784c2fcb86b9d7cdc44580f8",
+    "visitedAt": "2026-04-18T16:44:57.132Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/image-not-found/",
+    "outputPath": "output/astro/en/reference/errors/image-not-found/index.md",
+    "title": "Image not found.",
+    "contentHash": "efd322b8af32defdac958d8e484e1dc5a30786f13ad645c778a73850d1e8dba1",
+    "visitedAt": "2026-04-18T16:44:59.675Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/image-missing-alt/",
+    "outputPath": "output/astro/en/reference/errors/image-missing-alt/index.md",
+    "title": "Image missing required \"alt\" property.",
+    "contentHash": "19cd7214ca9444b943053b1b50bcabb147e40cdd5beab844ab24202e9a66a11d",
+    "visitedAt": "2026-04-18T16:45:00.909Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/incompatible-descriptor-options/",
+    "outputPath": "output/astro/en/reference/errors/incompatible-descriptor-options/index.md",
+    "title": "Cannot set both densities and widths",
+    "contentHash": "cc05400f46ab96a83c2b522c23106e83f7ffb1d03e82f2522fe3f00b6e960f6b",
+    "visitedAt": "2026-04-18T16:45:03.197Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/incorrect-strategy-for-i18n/",
+    "outputPath": "output/astro/en/reference/errors/incorrect-strategy-for-i18n/index.md",
+    "title": "You can't use the current function with the current strategy",
+    "contentHash": "8aaaee1820fb3f619d4de4158d52988549fbd086451a53f4aa19f40a38c05f81",
+    "visitedAt": "2026-04-18T16:45:06.063Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/invalid-component-args/",
+    "outputPath": "output/astro/en/reference/errors/invalid-component-args/index.md",
+    "title": "Invalid component arguments.",
+    "contentHash": "6c49f843ca691c72f407873273431b38d64028d0a0e59882bffbde5df354a089",
+    "visitedAt": "2026-04-18T16:45:07.644Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/invalid-content-entry-data-error/",
+    "outputPath": "output/astro/en/reference/errors/invalid-content-entry-data-error/index.md",
+    "title": "Content entry data does not match schema.",
+    "contentHash": "173c755d421f0f73ba921beab599a48993f2ec6a393eaab8bcff8b1cd8d8c408",
+    "visitedAt": "2026-04-18T16:45:08.494Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/invalid-content-entry-frontmatter-error/",
+    "outputPath": "output/astro/en/reference/errors/invalid-content-entry-frontmatter-error/index.md",
+    "title": "Content entry frontmatter does not match schema.",
+    "contentHash": "b9ebb46cbd8abd2a69ea08bac45e47cf23d11098d003a256d74b188810d80600",
+    "visitedAt": "2026-04-18T16:45:10.430Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/invalid-content-entry-slug-error/",
+    "outputPath": "output/astro/en/reference/errors/invalid-content-entry-slug-error/index.md",
+    "title": "Invalid content entry slug.",
+    "contentHash": "1541af7e490eb7996989485e00f2db4eedbd3e1d5a691f7bed3827414798d2c0",
+    "visitedAt": "2026-04-18T16:45:12.112Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/invalid-dynamic-route/",
+    "outputPath": "output/astro/en/reference/errors/invalid-dynamic-route/index.md",
+    "title": "Invalid dynamic route.",
+    "contentHash": "9cc9b19d0986fc7229041b5b188001b88ac5db39eebbef7928840218f1023f0e",
+    "visitedAt": "2026-04-18T16:45:12.578Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/invalid-frontmatter-injection-error/",
+    "outputPath": "output/astro/en/reference/errors/invalid-frontmatter-injection-error/index.md",
+    "title": "Invalid frontmatter injection.",
+    "contentHash": "cda6663e4f5c82ae7356dc541dbcad3f18d3609ea5af7ea569ce777c2e27632c",
+    "visitedAt": "2026-04-18T16:45:14.054Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/invalid-get-static-path-param/",
+    "outputPath": "output/astro/en/reference/errors/invalid-get-static-path-param/index.md",
+    "title": "Invalid value returned by a getStaticPaths path.",
+    "contentHash": "c748bae18f4895ab22d7a43a63f7d75c41fc9473ee4d5ff87d65374755a42e62",
+    "visitedAt": "2026-04-18T16:45:15.934Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/invalid-get-static-paths-entry/",
+    "outputPath": "output/astro/en/reference/errors/invalid-get-static-paths-entry/index.md",
+    "title": "Invalid entry inside getStaticPath's return value",
+    "contentHash": "0db3dc1a7b0eaeb5870cb6cc6ead843368abbd185cf0ead9641bebb1775b3217",
+    "visitedAt": "2026-04-18T16:45:16.915Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/invalid-get-static-paths-return/",
+    "outputPath": "output/astro/en/reference/errors/invalid-get-static-paths-return/index.md",
+    "title": "Invalid value returned by getStaticPaths.",
+    "contentHash": "8175ac930cfcb09e41e3c9cf80c44cc54dbab0a720239b1f42cd5109ed5b6098",
+    "visitedAt": "2026-04-18T16:45:18.703Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/invalid-glob/",
+    "outputPath": "output/astro/en/reference/errors/invalid-glob/index.md",
+    "title": "Invalid glob pattern.",
+    "contentHash": "54d2ed7b00371404b26e6750c0fffed82d271b98af051b3645bf6b701de4a34a",
+    "visitedAt": "2026-04-18T16:45:19.635Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/invalid-i18n-middleware-configuration/",
+    "outputPath": "output/astro/en/reference/errors/invalid-i18n-middleware-configuration/index.md",
+    "title": "Invalid internationalization middleware configuration",
+    "contentHash": "27495cb7eea0ea7113b0effcd36bc27157058d75e806e4c1ae1773e0913384d6",
+    "visitedAt": "2026-04-18T16:45:20.893Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/invalid-image-service/",
+    "outputPath": "output/astro/en/reference/errors/invalid-image-service/index.md",
+    "title": "Error while loading image service.",
+    "contentHash": "490ad2b16a98019f7fdcc60cbf510fc44da152ddaa3da0edcb090ee9385ead78",
+    "visitedAt": "2026-04-18T16:45:23.052Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/invalid-prerender-export/",
+    "outputPath": "output/astro/en/reference/errors/invalid-prerender-export/index.md",
+    "title": "Invalid prerender export.",
+    "contentHash": "c08d809bc5e35a36cfbd9d35ec94f7f09aee9052dda2a2b8e534d4db60ca6ba1",
+    "visitedAt": "2026-04-18T16:45:24.089Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/invalid-redirect-destination/",
+    "outputPath": "output/astro/en/reference/errors/invalid-redirect-destination/index.md",
+    "title": "Invalid redirect destination.",
+    "contentHash": "b2bacb3462357758aa1fed2c3a6a3da96a6930e22035306b29b3e48ff404c50a",
+    "visitedAt": "2026-04-18T16:45:26.016Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/invalid-rewrite404/",
+    "outputPath": "output/astro/en/reference/errors/invalid-rewrite404/index.md",
+    "title": "You attempted to rewrite a 404 inside a static page, and this isn't allowed.",
+    "contentHash": "4834fe57c703a056df7f3399480462d135517aa3a0e724b7b0e1ebf9937ed324",
+    "visitedAt": "2026-04-18T16:45:28.072Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/legacy-content-config-error/",
+    "outputPath": "output/astro/en/reference/errors/legacy-content-config-error/index.md",
+    "title": "Legacy content config file found.",
+    "contentHash": "584df7fd2fb1ed8421086763f1a3268a7388424ac0e2d0d800acd73ae6486a96",
+    "visitedAt": "2026-04-18T16:45:28.735Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/live-content-config-error/",
+    "outputPath": "output/astro/en/reference/errors/live-content-config-error/index.md",
+    "title": "Error in live content config.",
+    "contentHash": "74c1547c742b9bec084e5d11f823994f3e734c24d3aa771f4534d2c139eea2dd",
+    "visitedAt": "2026-04-18T16:45:30.833Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/local-image-used-wrongly/",
+    "outputPath": "output/astro/en/reference/errors/local-image-used-wrongly/index.md",
+    "title": "Local images must be imported.",
+    "contentHash": "284905c11af7042ce020fffae82bc9389470a5fd01e4a36de3cf84ebdd6d93bc",
+    "visitedAt": "2026-04-18T16:45:32.572Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/locals-not-an-object/",
+    "outputPath": "output/astro/en/reference/errors/locals-not-an-object/index.md",
+    "title": "Value assigned to locals is not accepted.",
+    "contentHash": "74a581f33a5cbd879a746353c475bb6cd0d01431648200fa6e1f85bb457c7851",
+    "visitedAt": "2026-04-18T16:45:33.188Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/locals-not-serializable/",
+    "outputPath": "output/astro/en/reference/errors/locals-not-serializable/index.md",
+    "title": "Astro.locals is not serializable",
+    "contentHash": "68a67cad126a90a198225b027ecf70f807d2eee2e68577e64ccd5d7d6f9a1464",
+    "visitedAt": "2026-04-18T16:45:34.914Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/locals-reassigned/",
+    "outputPath": "output/astro/en/reference/errors/locals-reassigned/index.md",
+    "title": "locals must not be reassigned.",
+    "contentHash": "0bb52f52c3c6458c7ebcc23e2d3df5133c54d6deac7c615a32578acf68919fba",
+    "visitedAt": "2026-04-18T16:45:36.596Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/markdown-content-schema-validation-error/",
+    "outputPath": "output/astro/en/reference/errors/markdown-content-schema-validation-error/index.md",
+    "title": "Content collection frontmatter invalid.",
+    "contentHash": "f90fb8daafadf855df8e28db35ff27cbcd2e6d595e082cda7317315dad4d3196",
+    "visitedAt": "2026-04-18T16:45:37.140Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/markdown-frontmatter-parse-error/",
+    "outputPath": "output/astro/en/reference/errors/markdown-frontmatter-parse-error/index.md",
+    "title": "Failed to parse Markdown frontmatter.",
+    "contentHash": "4a49c7867e88bdfcff315451d0583372719f2146118d21f16be9c3fbdf463d91",
+    "visitedAt": "2026-04-18T16:45:38.517Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/markdown-image-not-found/",
+    "outputPath": "output/astro/en/reference/errors/markdown-image-not-found/index.md",
+    "title": "Image not found.",
+    "contentHash": "d4961c31be15e48e8cd232d23cdd0895d8a19509c71c256903a418145ecabbaa",
+    "visitedAt": "2026-04-18T16:45:40.652Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/mdx-integration-missing-error/",
+    "outputPath": "output/astro/en/reference/errors/mdx-integration-missing-error/index.md",
+    "title": "MDX integration missing.",
+    "contentHash": "27534d93fa179ab67fbf57a38078de0cf83321b49388a9ff681aaf76d4712165",
+    "visitedAt": "2026-04-18T16:45:41.081Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/middleware-cant-be-loaded/",
+    "outputPath": "output/astro/en/reference/errors/middleware-cant-be-loaded/index.md",
+    "title": "Can't load the middleware.",
+    "contentHash": "1b64075a1a398477e9feab29c19cb53a924603218cf0bb2af7441e4c42de23ef",
+    "visitedAt": "2026-04-18T16:45:42.542Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/middleware-no-data-or-next-called/",
+    "outputPath": "output/astro/en/reference/errors/middleware-no-data-or-next-called/index.md",
+    "title": "The middleware didn't return a Response.",
+    "contentHash": "ef8b024f343f73aa7a59809e18e1e4e860ecf06a6d1141cef67591c353b9479b",
+    "visitedAt": "2026-04-18T16:45:45.003Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/middleware-not-aresponse/",
+    "outputPath": "output/astro/en/reference/errors/middleware-not-aresponse/index.md",
+    "title": "The middleware returned something that is not a Response object.",
+    "contentHash": "4ecb92e93ca6a211443f38d442eed9b4fb60e5fc9c25c348b7937d7a08342b4f",
+    "visitedAt": "2026-04-18T16:45:45.735Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/missing-image-dimension/",
+    "outputPath": "output/astro/en/reference/errors/missing-image-dimension/index.md",
+    "title": "Missing image dimensions",
+    "contentHash": "cc8ed68ef2f898e26ca70d3466b253b7f070870dad82c0395ad1c6853fbff4ef",
+    "visitedAt": "2026-04-18T16:45:46.798Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/missing-index-for-internationalization/",
+    "outputPath": "output/astro/en/reference/errors/missing-index-for-internationalization/index.md",
+    "title": "Index page not found.",
+    "contentHash": "bb2e9813da5d0629f9315fa2e92d075d5c2f712a26b9e70672bf2072bc9f85d8",
+    "visitedAt": "2026-04-18T16:45:49.457Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/missing-locale/",
+    "outputPath": "output/astro/en/reference/errors/missing-locale/index.md",
+    "title": "The provided locale does not exist.",
+    "contentHash": "9bfcc4098c82ccb78dde0c73edb68cfc77f1e44452b2eae1896614882e9614a4",
+    "visitedAt": "2026-04-18T16:45:49.644Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/missing-media-query-directive/",
+    "outputPath": "output/astro/en/reference/errors/missing-media-query-directive/index.md",
+    "title": "Missing value for client:media directive.",
+    "contentHash": "4ea2d5131f771b46cd9b53b2450e05ec5198c613a5cc6eb42486af76855afe78",
+    "visitedAt": "2026-04-18T16:45:51.199Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/missing-middleware-for-internationalization/",
+    "outputPath": "output/astro/en/reference/errors/missing-middleware-for-internationalization/index.md",
+    "title": "Enabled manual internationalization routing without having a middleware.",
+    "contentHash": "f3b53c6888adf26ee459ccfcf8c00745fbf9b88a8961247427a5adca9c27a86f",
+    "visitedAt": "2026-04-18T16:45:53.581Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/missing-sharp/",
+    "outputPath": "output/astro/en/reference/errors/missing-sharp/index.md",
+    "title": "Could not find Sharp.",
+    "contentHash": "85d174896b1f1aa5d3b286b50bc3b9195c5e39bfcfbb15229730a49c67160606",
+    "visitedAt": "2026-04-18T16:45:54.313Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/mixed-content-data-collection-error/",
+    "outputPath": "output/astro/en/reference/errors/mixed-content-data-collection-error/index.md",
+    "title": "Content and data cannot be in same collection.",
+    "contentHash": "a5b9041bcade9b5bda1a588ce5f96c3ab53904f9742be24a97c5b98062a99187",
+    "visitedAt": "2026-04-18T16:45:55.620Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/no-adapter-installed-server-islands/",
+    "outputPath": "output/astro/en/reference/errors/no-adapter-installed-server-islands/index.md",
+    "title": "Cannot use Server Islands without an adapter.",
+    "contentHash": "f242a9000d02764bc8835cc598fe8e373c8ba92b558544dbca6ec78857ddc64d",
+    "visitedAt": "2026-04-18T16:45:58.881Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/no-adapter-installed/",
+    "outputPath": "output/astro/en/reference/errors/no-adapter-installed/index.md",
+    "title": "Cannot use Server-side Rendering without an adapter.",
+    "contentHash": "d01ac6f7e05a5527ca22911c0a98ab260b3579f513b2f78a484b7bc91dc76ccd",
+    "visitedAt": "2026-04-18T16:46:00.447Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/no-client-entrypoint/",
+    "outputPath": "output/astro/en/reference/errors/no-client-entrypoint/index.md",
+    "title": "No client entrypoint specified in renderer.",
+    "contentHash": "a41637654b0dce897bd39d3f564106acb3ccccc2f61c06daa456ffdaa76b81b6",
+    "visitedAt": "2026-04-18T16:46:03.019Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/no-client-only-hint/",
+    "outputPath": "output/astro/en/reference/errors/no-client-only-hint/index.md",
+    "title": "Missing hint on client:only directive.",
+    "contentHash": "00d8ce999b2e754652aff616dd97454e9b071510d4ec6ebb5def23fd909213c4",
+    "visitedAt": "2026-04-18T16:46:04.285Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/no-image-metadata/",
+    "outputPath": "output/astro/en/reference/errors/no-image-metadata/index.md",
+    "title": "Could not process image metadata.",
+    "contentHash": "a81539225f1e0c47c194f9784ca057e2d4b95570b8c010c3a1ed1f93ae1b9885",
+    "visitedAt": "2026-04-18T16:46:05.940Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/no-matching-import/",
+    "outputPath": "output/astro/en/reference/errors/no-matching-import/index.md",
+    "title": "No import found for component.",
+    "contentHash": "48e4238e15f18b8e426426a5e2b55272c3b8b5070df45de72a7f6635f2b1fba8",
+    "visitedAt": "2026-04-18T16:46:07.438Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/no-matching-renderer/",
+    "outputPath": "output/astro/en/reference/errors/no-matching-renderer/index.md",
+    "title": "No matching renderer found.",
+    "contentHash": "1a4ce2f0bc01ca0da9d23f7c35faf353dda6c4035f05f631fd69f8c9f2c02e23",
+    "visitedAt": "2026-04-18T16:46:09.184Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/no-matching-static-path-found/",
+    "outputPath": "output/astro/en/reference/errors/no-matching-static-path-found/index.md",
+    "title": "No static path found for requested path.",
+    "contentHash": "2eae00bc8ec71b6cde89d26439639544f6a10d32cfaec1c4cdccf20350862c05",
+    "visitedAt": "2026-04-18T16:46:10.338Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/no-prerendered-routes-with-domains/",
+    "outputPath": "output/astro/en/reference/errors/no-prerendered-routes-with-domains/index.md",
+    "title": "Prerendered routes aren't supported when internationalization domains are enabled.",
+    "contentHash": "2850bf754e9020fd08e7289518d2d3eb593bf41a2185ac786b25d9b58dbcd0a7",
+    "visitedAt": "2026-04-18T16:46:12.302Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/only-response-can-be-returned/",
+    "outputPath": "output/astro/en/reference/errors/only-response-can-be-returned/index.md",
+    "title": "Invalid type returned by Astro page.",
+    "contentHash": "8377985f16050fb21aa69f6a7f729d88b7796c2309122b29f1485478783feaa3",
+    "visitedAt": "2026-04-18T16:46:13.589Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/page-number-param-not-found/",
+    "outputPath": "output/astro/en/reference/errors/page-number-param-not-found/index.md",
+    "title": "Page number param not found.",
+    "contentHash": "8742512e9c0c14b6ce7bec9d41f3d32aeb7d263e94c81bf9d9902591e57fab1e",
+    "visitedAt": "2026-04-18T16:46:14.397Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/prerender-client-address-not-available/",
+    "outputPath": "output/astro/en/reference/errors/prerender-client-address-not-available/index.md",
+    "title": "Astro.clientAddress cannot be used inside prerendered routes.",
+    "contentHash": "8000565f14326c0225b85f9bc2012032543dbd835076375d6586f68f5fe70ff6",
+    "visitedAt": "2026-04-18T16:46:15.645Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/prerender-dynamic-endpoint-path-collide/",
+    "outputPath": "output/astro/en/reference/errors/prerender-dynamic-endpoint-path-collide/index.md",
+    "title": "Prerendered dynamic endpoint has path collision.",
+    "contentHash": "2e3b5db78c35ae14feda51a9570b792d234b5d3adf7d8f879378bc091748fdf4",
+    "visitedAt": "2026-04-18T16:46:17.316Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/prerender-route-conflict/",
+    "outputPath": "output/astro/en/reference/errors/prerender-route-conflict/index.md",
+    "title": "Prerendered route generates the same path as another route.",
+    "contentHash": "38c874d7d243e96c2a3ac196a3c597778beca87f3652dae679871b237442c6eb",
+    "visitedAt": "2026-04-18T16:46:17.655Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/redirect-with-no-location/",
+    "outputPath": "output/astro/en/reference/errors/redirect-with-no-location/index.md",
+    "title": "A redirect must be given a location with the Location header.",
+    "contentHash": "27bec2061ec6b262e1c8678af68e494d25337a0f49fe739caf8067c81d8de5c5",
+    "visitedAt": "2026-04-18T16:46:19.163Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/render-undefined-entry-error/",
+    "outputPath": "output/astro/en/reference/errors/render-undefined-entry-error/index.md",
+    "title": "Attempted to render an undefined content collection entry.",
+    "contentHash": "a3e35c2a2d6a5576e95d0aea907d65c83450ac70d97b4e527598a61f158debba",
+    "visitedAt": "2026-04-18T16:46:21.156Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/remote-image-not-allowed/",
+    "outputPath": "output/astro/en/reference/errors/remote-image-not-allowed/index.md",
+    "title": "Remote image is not allowed",
+    "contentHash": "b91c680149bac6410220be4de20650b847a6e54607cec61ce3447c2cb88e1583",
+    "visitedAt": "2026-04-18T16:46:21.762Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/reserved-slot-name/",
+    "outputPath": "output/astro/en/reference/errors/reserved-slot-name/index.md",
+    "title": "Invalid slot name.",
+    "contentHash": "fb10f28db51efd7f45838b97b277cd336fdfe3550b0b20f15a108d0ccee828b7",
+    "visitedAt": "2026-04-18T16:46:23.481Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/response-sent-error/",
+    "outputPath": "output/astro/en/reference/errors/response-sent-error/index.md",
+    "title": "Unable to set response.",
+    "contentHash": "733d867d780fcb1b9b5bf0f9cd65dfc41200a2d0ab810a173a6790072f9e06aa",
+    "visitedAt": "2026-04-18T16:46:25.505Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/rewrite-encountered-an-error/",
+    "outputPath": "output/astro/en/reference/errors/rewrite-encountered-an-error/index.md",
+    "title": "Astro couldn't find the route to rewrite, or if was found but it emitted an error during the rendering phase.",
+    "contentHash": "da8363e7fb084121c7be627992a180bf445fa4925e71805f20cb750ba6dc7cc0",
+    "visitedAt": "2026-04-18T16:46:25.842Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/rewrite-with-body-used/",
+    "outputPath": "output/astro/en/reference/errors/rewrite-with-body-used/index.md",
+    "title": "Cannot use Astro.rewrite after the request body has been read",
+    "contentHash": "cb6314a78100d5bb625b9c2e61d6b34e77521c380bf643219916c41555cb19b7",
+    "visitedAt": "2026-04-18T16:46:27.563Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/route-not-found/",
+    "outputPath": "output/astro/en/reference/errors/route-not-found/index.md",
+    "title": "Route not found.",
+    "contentHash": "452212ac25b6bc06b751e25f0d79fc404aea37103fb32ddbebd4f7369352b6e5",
+    "visitedAt": "2026-04-18T16:46:29.113Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/server-only-module/",
+    "outputPath": "output/astro/en/reference/errors/server-only-module/index.md",
+    "title": "Module is only available server-side",
+    "contentHash": "7bd09a758bece3b89c9d7a887d852a8da473d79338ae2ab976c1ca54a8c2eba0",
+    "visitedAt": "2026-04-18T16:46:30.205Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/session-config-missing-error/",
+    "outputPath": "output/astro/en/reference/errors/session-config-missing-error/index.md",
+    "title": "Session storage was enabled but not configured.",
+    "contentHash": "acb2f0d085fab6385a895df5515c07649e4c224cdd323361826eab55a9417ef0",
+    "visitedAt": "2026-04-18T16:46:32.522Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/session-config-without-flag-error/",
+    "outputPath": "output/astro/en/reference/errors/session-config-without-flag-error/index.md",
+    "title": "Session flag not set",
+    "contentHash": "5358d6842b9fcfbf1528b9f1a0447053fecc0a744de751438c16f0fc06d3210d",
+    "visitedAt": "2026-04-18T16:46:34.286Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/session-storage-init-error/",
+    "outputPath": "output/astro/en/reference/errors/session-storage-init-error/index.md",
+    "title": "Session storage could not be initialized.",
+    "contentHash": "77dff7faf83078e364f242a90a93f4572c0e6d21808740bc1e8c3eab51be5c65",
+    "visitedAt": "2026-04-18T16:46:35.150Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/session-storage-save-error/",
+    "outputPath": "output/astro/en/reference/errors/session-storage-save-error/index.md",
+    "title": "Session data could not be saved.",
+    "contentHash": "7dd110350cb157e774c8b1078014153ff67ce9372155de57f4d5e7f5ab941692",
+    "visitedAt": "2026-04-18T16:46:37.383Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/session-without-supported-adapter-output-error/",
+    "outputPath": "output/astro/en/reference/errors/session-without-supported-adapter-output-error/index.md",
+    "title": "Sessions cannot be used with an adapter that doesn't support server output.",
+    "contentHash": "560aba08c34130bbb936a72b72aefdb5371061361927e52e04e2a30fb446b722",
+    "visitedAt": "2026-04-18T16:46:39.005Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/static-client-address-not-available/",
+    "outputPath": "output/astro/en/reference/errors/static-client-address-not-available/index.md",
+    "title": "Astro.clientAddress is not available in prerendered pages.",
+    "contentHash": "78cb927f51c902a2cdef58494c89755fa3b5f7bc2125c3b38071e4a0f03d7542",
+    "visitedAt": "2026-04-18T16:46:39.671Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/static-redirect-not-available/",
+    "outputPath": "output/astro/en/reference/errors/static-redirect-not-available/index.md",
+    "title": "Astro.redirect is not available in static mode.",
+    "contentHash": "7d94dfed57706b73fac204d848c5eadb5b176f8a028a1b41bfa40a1265fd4b5b",
+    "visitedAt": "2026-04-18T16:46:41.791Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/unavailable-astro-global/",
+    "outputPath": "output/astro/en/reference/errors/unavailable-astro-global/index.md",
+    "title": "Unavailable Astro global in getStaticPaths()",
+    "contentHash": "bf0a29458f008da3e7953a13d1c339d40a7b4de16f758a02d1f5136e89133410",
+    "visitedAt": "2026-04-18T16:46:42.645Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/unhandled-rejection/",
+    "outputPath": "output/astro/en/reference/errors/unhandled-rejection/index.md",
+    "title": "Unhandled rejection",
+    "contentHash": "a0120ec54b2d72c5ae11782d1e761be63fcf2f27ceff3f0d941ea2292ccd15a8",
+    "visitedAt": "2026-04-18T16:46:43.501Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/unknown-clierror/",
+    "outputPath": "output/astro/en/reference/errors/unknown-clierror/index.md",
+    "title": "Unknown CLI Error.",
+    "contentHash": "1556b022abf96f119365e10f04f276c947aac1569b7b241abbafba4bfc838536",
+    "visitedAt": "2026-04-18T16:46:45.599Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/unknown-config-error/",
+    "outputPath": "output/astro/en/reference/errors/unknown-config-error/index.md",
+    "title": "Unknown configuration error.",
+    "contentHash": "954501918080f187abce70bcb1d1d73c107baa5133368bcc6c4b9c35b2d8e3b8",
+    "visitedAt": "2026-04-18T16:46:46.775Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/unknown-compiler-error/",
+    "outputPath": "output/astro/en/reference/errors/unknown-compiler-error/index.md",
+    "title": "Unknown compiler error.",
+    "contentHash": "53c83b299a4badbcb7506b98968652893a97985fefb373f247cd9f1cc6124f8a",
+    "visitedAt": "2026-04-18T16:46:47.026Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/unknown-content-collection-error/",
+    "outputPath": "output/astro/en/reference/errors/unknown-content-collection-error/index.md",
+    "title": "Unknown Content Collection Error.",
+    "contentHash": "ccbed70a60dd3823133b723cd2561d534520bd6ad57ce3077ae5654acef39c82",
+    "visitedAt": "2026-04-18T16:46:48.816Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/unknown-csserror/",
+    "outputPath": "output/astro/en/reference/errors/unknown-csserror/index.md",
+    "title": "Unknown CSS Error.",
+    "contentHash": "72da6dd41ff82e50ad763d3dad5cb5246b2623bd6d8c8fe7dd0d4c144c44cfbe",
+    "visitedAt": "2026-04-18T16:46:50.507Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/unknown-filesystem-error/",
+    "outputPath": "output/astro/en/reference/errors/unknown-filesystem-error/index.md",
+    "title": "An unknown error occurred while reading or writing files to disk.",
+    "contentHash": "f4bd43cec22237f1ee3ef05de14656484bc484911bf2debd33a3b50a8ed83d69",
+    "visitedAt": "2026-04-18T16:46:50.785Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/unknown-markdown-error/",
+    "outputPath": "output/astro/en/reference/errors/unknown-markdown-error/index.md",
+    "title": "Unknown Markdown Error.",
+    "contentHash": "6026aed0987f1e700134155ce3dbc33789d99007f9ace9ad50b76e491c72f81c",
+    "visitedAt": "2026-04-18T16:46:52.740Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/unknown-vite-error/",
+    "outputPath": "output/astro/en/reference/errors/unknown-vite-error/index.md",
+    "title": "Unknown Vite Error.",
+    "contentHash": "5b7e674d4990ccc315cbd259f17d687ef7d1a98cc7e4cde38cdde73abf02fbcb",
+    "visitedAt": "2026-04-18T16:46:53.656Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/unsupported-config-transform-error/",
+    "outputPath": "output/astro/en/reference/errors/unsupported-config-transform-error/index.md",
+    "title": "Unsupported transform in content config.",
+    "contentHash": "8b63ab84e66a9be50730f934c0754238550a5cbef486bc7e8b3eb46a753ab3ba",
+    "visitedAt": "2026-04-18T16:46:54.401Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/unsupported-external-redirect/",
+    "outputPath": "output/astro/en/reference/errors/unsupported-external-redirect/index.md",
+    "title": "Unsupported or malformed URL.",
+    "contentHash": "d23549fee8df4faaed053b297b4d88e02e66752b0db37aee7811237abbfb2a6b",
+    "visitedAt": "2026-04-18T16:46:56.077Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/unsupported-image-conversion/",
+    "outputPath": "output/astro/en/reference/errors/unsupported-image-conversion/index.md",
+    "title": "Unsupported image conversion",
+    "contentHash": "57cf1a50670629992ba67362f820c373648987fe6524e1656ba30a08d7494fb6",
+    "visitedAt": "2026-04-18T16:46:56.985Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/errors/unsupported-image-format/",
+    "outputPath": "output/astro/en/reference/errors/unsupported-image-format/index.md",
+    "title": "Unsupported image format",
+    "contentHash": "687ad84f1db44cd4cfa7fecd611eb78d76c3d1d846744e05a5b49bc7a779b7ff",
+    "visitedAt": "2026-04-18T16:46:57.852Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/experimental-flags/",
+    "outputPath": "output/astro/en/reference/experimental-flags/index.md",
+    "title": "Configuring experimental flags",
+    "contentHash": "ec15797969d55f72663aa0002787b389462e28a02f15bc16c33110a179079bec",
+    "visitedAt": "2026-04-18T16:46:59.018Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/experimental-flags/chrome-devtools-workspace/",
+    "outputPath": "output/astro/en/reference/experimental-flags/chrome-devtools-workspace/index.md",
+    "title": "Experimental Chrome DevTools workspace",
+    "contentHash": "7eae4b92a371388209fe178623b832ec10da93e8b71587e6b10450480037a8a8",
+    "visitedAt": "2026-04-18T16:47:00.361Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/experimental-flags/client-prerender/",
+    "outputPath": "output/astro/en/reference/experimental-flags/client-prerender/index.md",
+    "title": "Experimental client prerendering",
+    "contentHash": "946ba3bf6a03ece925a025ab57e888358b50e438a5c67aebdf827431c42e4323",
+    "visitedAt": "2026-04-18T16:47:02.056Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/experimental-flags/content-intellisense/",
+    "outputPath": "output/astro/en/reference/experimental-flags/content-intellisense/index.md",
+    "title": "Experimental Intellisense for content collections",
+    "contentHash": "90e196985e7f3a77cd21c19cc4a0258fd7fafaf2aff732be8e21c79fdaad7dfa",
+    "visitedAt": "2026-04-18T16:47:02.906Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/experimental-flags/queued-rendering/",
+    "outputPath": "output/astro/en/reference/experimental-flags/queued-rendering/index.md",
+    "title": "Experimental queued rendering",
+    "contentHash": "0eb4d283c2212cdfc65eb5593145a3fbcecaeb574f4e772fad29de0a8c59155c",
+    "visitedAt": "2026-04-18T16:47:06.249Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/experimental-flags/rust-compiler/",
+    "outputPath": "output/astro/en/reference/experimental-flags/rust-compiler/index.md",
+    "title": "Experimental Rust compiler",
+    "contentHash": "c9ab0c01b3bb0a8f4a87e291005ecc1628a85378203a9b9043fada8d9cfd26b3",
+    "visitedAt": "2026-04-18T16:47:08.842Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/experimental-flags/route-caching/",
+    "outputPath": "output/astro/en/reference/experimental-flags/route-caching/index.md",
+    "title": "Experimental route caching",
+    "contentHash": "7fb8f2420673a70c7c41aa37403323982414ae45eb68cada50e2ff49230afe81",
+    "visitedAt": "2026-04-18T16:47:13.387Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/experimental-flags/svg-optimization/",
+    "outputPath": "output/astro/en/reference/experimental-flags/svg-optimization/index.md",
+    "title": "Experimental SVG optimization",
+    "contentHash": "f57c6f76dd7b49ef9a315552caa78d413008a41c16c6e806dc95afa70eb16164",
+    "visitedAt": "2026-04-18T16:47:14.089Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/font-provider-reference/",
+    "outputPath": "output/astro/en/reference/font-provider-reference/index.md",
+    "title": "Astro Font Provider API",
+    "contentHash": "cf8fc18bc352629a81a6b9220e15612dee738a5968ef36f0481a61017bfc10fa",
+    "visitedAt": "2026-04-18T16:47:18.671Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/image-service-reference/",
+    "outputPath": "output/astro/en/reference/image-service-reference/index.md",
+    "title": "Image Service API",
+    "contentHash": "430bf8bf4eebcaef1276d30763b657b0f771d2f02ee563a0874f3b3674b782fa",
+    "visitedAt": "2026-04-18T16:47:20.363Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/legacy-flags/",
+    "outputPath": "output/astro/en/reference/legacy-flags/index.md",
+    "title": "Legacy flags",
+    "contentHash": "ae0213f362605a694ed2a543f78865bf9ba28721ed9e77ba51719f0196f9b657",
+    "visitedAt": "2026-04-18T16:47:22.538Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/modules/astro-actions/",
+    "outputPath": "output/astro/en/reference/modules/astro-actions/index.md",
+    "title": "Actions API Reference",
+    "contentHash": "7c4cc68a70be2c67ba3b688b3c069f73601309811c183780b3e1261193580c22",
+    "visitedAt": "2026-04-18T16:47:27.471Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/modules/astro-app/",
+    "outputPath": "output/astro/en/reference/modules/astro-app/index.md",
+    "title": "Adapter Server Entrypoint API Reference",
+    "contentHash": "03ad48d4883add460bc0534c6f624d3df6eba38be3d3badcf4c965c78720dbb5",
+    "visitedAt": "2026-04-18T16:47:28.789Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/integrations-reference/",
+    "outputPath": "output/astro/en/reference/integrations-reference/index.md",
+    "title": "Astro Integration API",
+    "contentHash": "5185462849e86022ac939f4bd7b9881e1fd9505d172dbcaf347cb21b21b73a90",
+    "visitedAt": "2026-04-18T16:47:34.761Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/modules/astro-config/",
+    "outputPath": "output/astro/en/reference/modules/astro-config/index.md",
+    "title": "Config imports API Reference",
+    "contentHash": "620ea03b36e0f9a32461559c35b6224bfd11d8174c85814235370f4094b9c5da",
+    "visitedAt": "2026-04-18T16:47:35.923Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/modules/astro-assets/",
+    "outputPath": "output/astro/en/reference/modules/astro-assets/index.md",
+    "title": "Image and Assets API Reference",
+    "contentHash": "832f2b29406a984a4a10089b67588f43ce26572cd01f016c2f37f3e1bb933532",
+    "visitedAt": "2026-04-18T16:47:38.987Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/modules/astro-env/",
+    "outputPath": "output/astro/en/reference/modules/astro-env/index.md",
+    "title": "Environment Variables API Reference",
+    "contentHash": "98dc5b486f98e8ba6d99055ead2a83967458344588796266a5dfa5c502efed6c",
+    "visitedAt": "2026-04-18T16:47:40.920Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/modules/astro-content/",
+    "outputPath": "output/astro/en/reference/modules/astro-content/index.md",
+    "title": "Content Collections API Reference",
+    "contentHash": "efaab34f952a8af04b10a054716e2593fd7e930253c1a8292bedd188083b3d4a",
+    "visitedAt": "2026-04-18T16:47:42.356Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/modules/astro-i18n/",
+    "outputPath": "output/astro/en/reference/modules/astro-i18n/index.md",
+    "title": "Internationalization API Reference",
+    "contentHash": "2381c909a2cbcf612098ff198052e71d84636b34467c86cd8d4c121bc1ca8c6c",
+    "visitedAt": "2026-04-18T16:47:46.009Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/modules/astro-middleware/",
+    "outputPath": "output/astro/en/reference/modules/astro-middleware/index.md",
+    "title": "Middleware API Reference",
+    "contentHash": "30234128160addd4d992fb585d96a09f3572fa1fc8efe7433c0d60de3dbc8873",
+    "visitedAt": "2026-04-18T16:47:46.554Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/modules/astro-static-paths/",
+    "outputPath": "output/astro/en/reference/modules/astro-static-paths/index.md",
+    "title": "Static Paths API Reference",
+    "contentHash": "b370cd307042e457fee414beb945ce2344246be35e0e00f0903de9ec84486409",
+    "visitedAt": "2026-04-18T16:47:47.221Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/modules/astro-zod/",
+    "outputPath": "output/astro/en/reference/modules/astro-zod/index.md",
+    "title": "Zod API Reference",
+    "contentHash": "860a8abb3d351c4617718839a8e3a3070d090825e3ce4e28d26ceaadb9a560c2",
+    "visitedAt": "2026-04-18T16:47:51.321Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/programmatic-reference/",
+    "outputPath": "output/astro/en/reference/programmatic-reference/index.md",
+    "title": "Programmatic Astro API (experimental)",
+    "contentHash": "533c80df532b3f70e6bda694e491de60bdbcee2bf30616e703774f2c35831b37",
+    "visitedAt": "2026-04-18T16:47:52.507Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/modules/astro-transitions/",
+    "outputPath": "output/astro/en/reference/modules/astro-transitions/index.md",
+    "title": "View Transitions Router API Reference",
+    "contentHash": "4f2828a0393a48c4f5e61b15dbab16e23755709f074457cd187efdd8297689d5",
+    "visitedAt": "2026-04-18T16:47:55.441Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/renderer-reference/",
+    "outputPath": "output/astro/en/reference/renderer-reference/index.md",
+    "title": "Astro Renderer API",
+    "contentHash": "d53e43690339f51a303c0cbb9426d82c7af331509ebe56a6ad17abeac1888180",
+    "visitedAt": "2026-04-18T16:47:58.950Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/routing-reference/",
+    "outputPath": "output/astro/en/reference/routing-reference/index.md",
+    "title": "Routing Reference",
+    "contentHash": "ec8b6e7b3acc5f90cb5f8fbce3ea5f6c19b9edc2414459c99a14b08d004a5308",
+    "visitedAt": "2026-04-18T16:47:59.215Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/reference/session-driver-reference/",
+    "outputPath": "output/astro/en/reference/session-driver-reference/index.md",
+    "title": "Astro Session Driver API",
+    "contentHash": "e4778f5c5d3d48630282f66da5467c2f7ff248f36a984c6466f41a4615fa9ccf",
+    "visitedAt": "2026-04-18T16:48:00.769Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/tutorial/0-introduction/",
+    "outputPath": "output/astro/en/tutorial/0-introduction/index.md",
+    "title": "Build your first Astro Blog",
+    "contentHash": "a63ffbf8f2e5b1c88d1f281ad7da06a0265b7d553ef7ba07d1218958dd2914b5",
+    "visitedAt": "2026-04-18T16:48:02.887Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/tutorial/0-introduction/1/",
+    "outputPath": "output/astro/en/tutorial/0-introduction/1/index.md",
+    "title": "About this Tutorial",
+    "contentHash": "0f9ab1671eb2bfb2dc35fcf25cb4e3183dab6a0f7466cdee23973eb035e7a388",
+    "visitedAt": "2026-04-18T16:48:03.197Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/tutorial/1-setup/",
+    "outputPath": "output/astro/en/tutorial/1-setup/index.md",
+    "title": "Check in: Unit 1 - Setup",
+    "contentHash": "dd851d45e0c7f71be446f1c5eeed381fb1dd030eeb65f7a259e97f6454714234",
+    "visitedAt": "2026-04-18T16:48:04.868Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/tutorial/1-setup/1/",
+    "outputPath": "output/astro/en/tutorial/1-setup/1/index.md",
+    "title": "Prepare your dev environment",
+    "contentHash": "d3e1a5802c077571edacb3d7ed6934dd4f80c8323b37f2d75979cf8003fd51ba",
+    "visitedAt": "2026-04-18T16:48:07.149Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/tutorial/1-setup/2/",
+    "outputPath": "output/astro/en/tutorial/1-setup/2/index.md",
+    "title": "Create your first Astro project",
+    "contentHash": "461f37983ebdf5d4bee4326761dfe85499f46400782dd3b802768f75db463eb4",
+    "visitedAt": "2026-04-18T16:48:08.919Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/tutorial/1-setup/3/",
+    "outputPath": "output/astro/en/tutorial/1-setup/3/index.md",
+    "title": "Write your first line of Astro",
+    "contentHash": "882750702ae4e482b4c616f3c9b520ab00916cd5a14407955567e7b0996aeb10",
+    "visitedAt": "2026-04-18T16:48:10.001Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/tutorial/1-setup/4/",
+    "outputPath": "output/astro/en/tutorial/1-setup/4/index.md",
+    "title": "Store your repository online",
+    "contentHash": "545e56bf3162597c0563ebdccf2bd21550d26b7778b972a95bef02bec496b3bf",
+    "visitedAt": "2026-04-18T16:48:11.743Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/tutorial/1-setup/5/",
+    "outputPath": "output/astro/en/tutorial/1-setup/5/index.md",
+    "title": "Deploy your site to the web",
+    "contentHash": "34287d812dc141ece2f9d3f25424cd3d367c6f515305188769196aa78fe4d9ad",
+    "visitedAt": "2026-04-18T16:48:13.623Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/tutorial/2-pages/",
+    "outputPath": "output/astro/en/tutorial/2-pages/index.md",
+    "title": "Check in: Unit 2 - Pages",
+    "contentHash": "52bd9b1f1e052e48a38bb25ecb3885643f389bb626741b3138135d5e2cfda7c5",
+    "visitedAt": "2026-04-18T16:48:14.653Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/tutorial/2-pages/1/",
+    "outputPath": "output/astro/en/tutorial/2-pages/1/index.md",
+    "title": "Create your first Astro page",
+    "contentHash": "633bceb3caa61a18c5dcecae9347fc90526ebaef15cc2f59a375511446ef512f",
+    "visitedAt": "2026-04-18T16:48:17.610Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/tutorial/2-pages/2/",
+    "outputPath": "output/astro/en/tutorial/2-pages/2/index.md",
+    "title": "Write your first Markdown blog post",
+    "contentHash": "086c3cf343b0f03b7c522bf5938f9ce4796c5581631cb0eafee53a1a4d5037da",
+    "visitedAt": "2026-04-18T16:48:21.125Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/tutorial/2-pages/3/",
+    "outputPath": "output/astro/en/tutorial/2-pages/3/index.md",
+    "title": "Add dynamic content about you",
+    "contentHash": "6dda9670f6511f46d4f0af18edfcdebe958c37f2ac2b4c34369b6315d6a6979c",
+    "visitedAt": "2026-04-18T16:48:22.758Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/tutorial/2-pages/4/",
+    "outputPath": "output/astro/en/tutorial/2-pages/4/index.md",
+    "title": "Style your About page",
+    "contentHash": "a7d0a794305990da12c532902db4d65ad7c24767e695f260da37413ec7b6b353",
+    "visitedAt": "2026-04-18T16:48:24.718Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/tutorial/3-components/",
+    "outputPath": "output/astro/en/tutorial/3-components/index.md",
+    "title": "Check in: Unit 3 - Components",
+    "contentHash": "e4361d63befc44abb8018343b0c24ee6013d94927a69a1787306e0ab025d1670",
+    "visitedAt": "2026-04-18T16:48:27.264Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/tutorial/2-pages/5/",
+    "outputPath": "output/astro/en/tutorial/2-pages/5/index.md",
+    "title": "Add site-wide styling",
+    "contentHash": "e247a65acb32a6161574efeb0c9002d2b773789db553b926c761001e92d1b926",
+    "visitedAt": "2026-04-18T16:48:28.514Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/tutorial/3-components/1/",
+    "outputPath": "output/astro/en/tutorial/3-components/1/index.md",
+    "title": "Make a reusable Navigation component",
+    "contentHash": "3568e81fd8fc481a2aa417f6ffa084f9a3cd1ee769d31af7810bff761df48e6c",
+    "visitedAt": "2026-04-18T16:48:30.966Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/tutorial/3-components/2/",
+    "outputPath": "output/astro/en/tutorial/3-components/2/index.md",
+    "title": "Create a social media footer",
+    "contentHash": "5ace6218eeb71c84cf4637054e99a28186d9023f55fdcc9c80cdbd6f1a4e4884",
+    "visitedAt": "2026-04-18T16:48:34.668Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/tutorial/3-components/3/",
+    "outputPath": "output/astro/en/tutorial/3-components/3/index.md",
+    "title": "Build it yourself - Header",
+    "contentHash": "4832964aa69b763cd2ff9d8e9f6859560e199695ff20426dab2ba47dbb789ea3",
+    "visitedAt": "2026-04-18T16:48:35.651Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/tutorial/3-components/4/",
+    "outputPath": "output/astro/en/tutorial/3-components/4/index.md",
+    "title": "Send your first script to the browser",
+    "contentHash": "211cd897938be97a0ea47b0b8fc9f81330b4d34ab8c216ed44c5d13be1de9e71",
+    "visitedAt": "2026-04-18T16:48:37.490Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/tutorial/4-layouts/",
+    "outputPath": "output/astro/en/tutorial/4-layouts/index.md",
+    "title": "Check in: Unit 4 - Layouts",
+    "contentHash": "c857a1f1c486cbd5b98aa8149edb7d2d88d2fef3a922d715964ba9e656d05a2a",
+    "visitedAt": "2026-04-18T16:48:39.796Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/tutorial/4-layouts/1/",
+    "outputPath": "output/astro/en/tutorial/4-layouts/1/index.md",
+    "title": "Build your first layout",
+    "contentHash": "e7298cc74bd037c9265403190dabc4c7256024b09a8d03ccc80b4901f40b4b7e",
+    "visitedAt": "2026-04-18T16:48:43.041Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/tutorial/4-layouts/2/",
+    "outputPath": "output/astro/en/tutorial/4-layouts/2/index.md",
+    "title": "Create and pass data to a custom blog layout",
+    "contentHash": "cb1c57aa51f28d4270e3cce6c4048f80d1835e2eebd2d90c1a2caac803f191c0",
+    "visitedAt": "2026-04-18T16:48:44.304Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/tutorial/4-layouts/3/",
+    "outputPath": "output/astro/en/tutorial/4-layouts/3/index.md",
+    "title": "Combine layouts to get the best of both worlds",
+    "contentHash": "6652d76c49a1e952f9178a268f4b90e2c20171a7dd846dd267e68a8290b4168f",
+    "visitedAt": "2026-04-18T16:48:45.954Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/tutorial/5-astro-api/",
+    "outputPath": "output/astro/en/tutorial/5-astro-api/index.md",
+    "title": "Check in: Unit 5 - Astro API",
+    "contentHash": "0e0945f4ab51abc940a414fb6cc638fc312307c68bcf63aa5ad088c18648f4c2",
+    "visitedAt": "2026-04-18T16:48:48.517Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/tutorial/5-astro-api/1/",
+    "outputPath": "output/astro/en/tutorial/5-astro-api/1/index.md",
+    "title": "Create a blog post archive",
+    "contentHash": "3cefde31b6a62902046063dea10c81c696746dda6f95cad33e64942700598cf4",
+    "visitedAt": "2026-04-18T16:48:50.697Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/tutorial/5-astro-api/2/",
+    "outputPath": "output/astro/en/tutorial/5-astro-api/2/index.md",
+    "title": "Generate tag pages",
+    "contentHash": "00166dfd897c7d92d306244cf5333beb728699398a383eec269c74e5d5352b62",
+    "visitedAt": "2026-04-18T16:48:52.564Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/tutorial/5-astro-api/3/",
+    "outputPath": "output/astro/en/tutorial/5-astro-api/3/index.md",
+    "title": "Build a tag index page",
+    "contentHash": "3f804a1d55bceca966f4495d585d760f252df27f2faf6e72254e8fe843aab2be",
+    "visitedAt": "2026-04-18T16:48:55.605Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/tutorial/5-astro-api/4/",
+    "outputPath": "output/astro/en/tutorial/5-astro-api/4/index.md",
+    "title": "Add an RSS feed",
+    "contentHash": "3b44a411ad16e3243eda801569ea2e46ea35f026c9a6bfc836c8914b749dcf30",
+    "visitedAt": "2026-04-18T16:48:56.098Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/tutorial/6-islands/",
+    "outputPath": "output/astro/en/tutorial/6-islands/index.md",
+    "title": "Check in: Unit 6 - Astro Islands",
+    "contentHash": "b6bd7927944f296305aaf92012159619c3762023117d77618bcfbf44b39f7ef3",
+    "visitedAt": "2026-04-18T16:48:57.419Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/tutorial/6-islands/1/",
+    "outputPath": "output/astro/en/tutorial/6-islands/1/index.md",
+    "title": "Build your first Astro island",
+    "contentHash": "39280bf48269039330a487a4516e631cc7a978fbd9f4520821cce237399503f3",
+    "visitedAt": "2026-04-18T16:49:01.010Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/tutorial/6-islands/2/",
+    "outputPath": "output/astro/en/tutorial/6-islands/2/index.md",
+    "title": "Back on dry land. Take your blog from day to night, no island required!",
+    "contentHash": "21f72db5b63b7e568333c5e586f3f02d6ef59c5e1fb0140f6bfbe3e43a512565",
+    "visitedAt": "2026-04-18T16:49:01.442Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/tutorial/6-islands/3/",
+    "outputPath": "output/astro/en/tutorial/6-islands/3/index.md",
+    "title": "Congratulations!",
+    "contentHash": "2755402c696e282df8cd1c8b697560e46cf670aa0e69be081e4d669e3a09026a",
+    "visitedAt": "2026-04-18T16:49:03.081Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/upgrade-astro/",
+    "outputPath": "output/astro/en/upgrade-astro/index.md",
+    "title": "Upgrade Astro",
+    "contentHash": "bbdd1248c651f8f693f4a7498f1a617eff2201c721ca2f52cc450978c27b364f",
+    "visitedAt": "2026-04-18T16:49:06.379Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.astro.build/en/tutorial/6-islands/4/",
+    "outputPath": "output/astro/en/tutorial/6-islands/4/index.md",
+    "title": "Optional: Make a content collection",
+    "contentHash": "f8dc177e0a63d982aaa81a8e6f12f59e8a6fc129820341ad727b397ab02b2753",
+    "visitedAt": "2026-04-18T16:49:07.624Z",
+    "status": "visited"
+  }
+]

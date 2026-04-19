@@ -9,10 +9,7 @@ last_crawled_at: "2026-04-18T16:54:33.239Z"
 content_hash: "6470241ebf4b897464a50c0608470ddf63a7adfec50b4622dca06e9af49ae938"
 menu_path: ["Generate code coverage reports with the Bun test runner"]
 section_path: []
-nav_prev: {"path": "bun/bun/docs/guides/test/concurrent-test-glob/index.md", "title": "Selectively run tests concurrently with glob patterns"}
-nav_next: {"path": "bun/bun/docs/guides/test/coverage-threshold/index.md", "title": "Set a code coverage threshold with the Bun test runner"}
 ---
-
 [Skip to main content](#content-area)
 
 [Bun home page![light logo](https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z_zHyy/logo/logo-with-wordmark-dark.svg?fit=max&auto=format&n=JUhaF6Mf68z_zHyy&q=85&s=3f55cd23822028e40658b192c927f3e4)![dark logo](https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z_zHyy/logo/logo-with-wordmark-light.svg?fit=max&auto=format&n=JUhaF6Mf68z_zHyy&q=85&s=8a0c5928d9dc3631f0d33e17c257e2ec)](/docs)

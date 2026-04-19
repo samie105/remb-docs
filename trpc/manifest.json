@@ -1,0 +1,2002 @@
+[
+  {
+    "url": "https://trpc.io/docs/v10/",
+    "outputPath": "output/trpc/docs/v10/index.md",
+    "title": "tRPC",
+    "contentHash": "c36bfcd104efa17936c5c23c1660d45db4ce2cde49a03ef4351082e8d015d0ab",
+    "visitedAt": "2026-04-18T16:31:48.149Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/quickstart",
+    "outputPath": "output/trpc/docs/quickstart/index.md",
+    "title": "Quickstart",
+    "contentHash": "8d973d985f0d6dccf1e49e9a15a54e49764c18ef4943f48da9386b23d288f14e",
+    "visitedAt": "2026-04-18T16:31:57.688Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/v10/client",
+    "outputPath": "output/trpc/docs/v10/client/index.md",
+    "title": "Client Overview",
+    "contentHash": "e1eedc8eba6a775fcfb08304d9f6f2185664200419681c27caaeb047e599d029",
+    "visitedAt": "2026-04-18T16:31:59.304Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/v10/client/cors",
+    "outputPath": "output/trpc/docs/v10/client/cors/index.md",
+    "title": "Send cookies cross-origin",
+    "contentHash": "76a959db7fa49d588433411093dbc15c9bd663f304557390577d4b037d3d7560",
+    "visitedAt": "2026-04-18T16:32:04.963Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/v10/client/headers",
+    "outputPath": "output/trpc/docs/v10/client/headers/index.md",
+    "title": "Custom header",
+    "contentHash": "3d3ea21b40d41a60c6745867277e9efaaa40f31585f5c1b8b004b19ffc3d974e",
+    "visitedAt": "2026-04-18T16:32:11.558Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/v10/client/links",
+    "outputPath": "output/trpc/docs/v10/client/links/index.md",
+    "title": "Links Overview",
+    "contentHash": "0dcc1cfc25cd308bc376a3dab3a2f331fbd104c5d6b104920be33859b4158a70",
+    "visitedAt": "2026-04-18T16:32:14.560Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/v10/client/links/httpBatchLink",
+    "outputPath": "output/trpc/docs/v10/client/links/httpBatchLink/index.md",
+    "title": "HTTP Batch Link",
+    "contentHash": "43b22b54ed9f6499e8b2da178b88084a63403b1f9e9669a345cb39bf3ae72ebf",
+    "visitedAt": "2026-04-18T16:32:20.927Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/v10/client/links/httpBatchStreamLink",
+    "outputPath": "output/trpc/docs/v10/client/links/httpBatchStreamLink/index.md",
+    "title": "HTTP Batch Stream Link",
+    "contentHash": "82cf1adcef39087c508f35d081339e2a5490b06f447cfe8a07906c73cd3c7b4b",
+    "visitedAt": "2026-04-18T16:32:26.708Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/v10/client/links/httpLink",
+    "outputPath": "output/trpc/docs/v10/client/links/httpLink/index.md",
+    "title": "HTTP Link",
+    "contentHash": "ea49a9ad8ae0c584338214608a96dbca50b581907e74b2127aff5cb8cd7748fc",
+    "visitedAt": "2026-04-18T16:32:29.656Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/v10/client/links/loggerLink",
+    "outputPath": "output/trpc/docs/v10/client/links/loggerLink/index.md",
+    "title": "Logger Link",
+    "contentHash": "352cdb2de1ee66343598d63329e0d39991d090618aeb3c113288ae90ebf10046",
+    "visitedAt": "2026-04-18T16:32:35.417Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/v10/client/links/wsLink",
+    "outputPath": "output/trpc/docs/v10/client/links/wsLink/index.md",
+    "title": "WebSocket Link",
+    "contentHash": "bbd530c1a0440489811a0434c2c3dc44a346c4dc9cfc416cefd9f882dac0db61",
+    "visitedAt": "2026-04-18T16:32:39.420Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/v10/client/links/splitLink",
+    "outputPath": "output/trpc/docs/v10/client/links/splitLink/index.md",
+    "title": "Split Link",
+    "contentHash": "b4367b4fec51a44d938c00da77dbb5045ef7c68047d2bab58bfd3284812900d4",
+    "visitedAt": "2026-04-18T16:32:42.623Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/v10/client/nextjs",
+    "outputPath": "output/trpc/docs/v10/client/nextjs/index.md",
+    "title": "Next.js Integration",
+    "contentHash": "5366637a7991adcddb6ac6b962800e99209a5e2d513b4fb2576ec330cc020497",
+    "visitedAt": "2026-04-18T16:32:44.434Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/v10/client/nextjs/aborting-procedure-calls",
+    "outputPath": "output/trpc/docs/v10/client/nextjs/aborting-procedure-calls/index.md",
+    "title": "Aborting Procedure Calls",
+    "contentHash": "aee42abf3e675b5949a177feaa5785cc602b2b433ed58b43fd8bc73392ed85d8",
+    "visitedAt": "2026-04-18T16:32:47.500Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/v10/client/nextjs/server-side-helpers",
+    "outputPath": "output/trpc/docs/v10/client/nextjs/server-side-helpers/index.md",
+    "title": "Server-Side Helpers",
+    "contentHash": "50e930cc469a79376434dbca193e073c06779e3a578e01665ccc074b14db5a20",
+    "visitedAt": "2026-04-18T16:32:55.141Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/v10/client/nextjs/setup",
+    "outputPath": "output/trpc/docs/v10/client/nextjs/setup/index.md",
+    "title": "Set up with Next.js",
+    "contentHash": "c59e68bfa83bf30c18615ebcd4bcca58c0043a7a63adc5cd8757434fb3a6bbfe",
+    "visitedAt": "2026-04-18T16:33:06.026Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/v10/client/nextjs/ssg",
+    "outputPath": "output/trpc/docs/v10/client/nextjs/ssg/index.md",
+    "title": "Static Site Generation",
+    "contentHash": "fd9437380c2edc4e4e54aa00dc143ab7f14424dff020315393a2c7f09c66dea3",
+    "visitedAt": "2026-04-18T16:33:14.753Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/v10/client/nextjs/ssr",
+    "outputPath": "output/trpc/docs/v10/client/nextjs/ssr/index.md",
+    "title": "Server-Side Rendering",
+    "contentHash": "7b166c246be81c79962b8d190906bfa292c99677d8756a59fccb574a08b8f4fd",
+    "visitedAt": "2026-04-18T16:33:20.222Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/v10/client/nextjs/starter-projects",
+    "outputPath": "output/trpc/docs/v10/client/nextjs/starter-projects/index.md",
+    "title": "Starter Projects",
+    "contentHash": "12d0baa7e22c55e094fd059344bd83e23ad9ae076e44555d28819b072afb52de",
+    "visitedAt": "2026-04-18T16:33:24.358Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/v10/client/react",
+    "outputPath": "output/trpc/docs/v10/client/react/index.md",
+    "title": "React Query Integration",
+    "contentHash": "195c63f9d42075f801c37b35a12198e8b93f80f0d889b3634b9eba39a56e53a7",
+    "visitedAt": "2026-04-18T16:33:29.836Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/v10/client/react/aborting-procedure-calls",
+    "outputPath": "output/trpc/docs/v10/client/react/aborting-procedure-calls/index.md",
+    "title": "Aborting Procedure Calls",
+    "contentHash": "317546541a6d06a72fd56566f77b8afb56f3f43f962b487f6f1b463d657fef7b",
+    "visitedAt": "2026-04-18T16:33:32.877Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/v10/client/react/getQueryKey",
+    "outputPath": "output/trpc/docs/v10/client/react/getQueryKey/index.md",
+    "title": "getQueryKey",
+    "contentHash": "ae361ce9f8398d0e8e57057a2cc80d077feecad8a8c15fa5822389eed444a529",
+    "visitedAt": "2026-04-18T16:33:40.500Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/v10/client/react/infer-types",
+    "outputPath": "output/trpc/docs/v10/client/react/infer-types/index.md",
+    "title": "Inferring Types",
+    "contentHash": "97bd91df16572d0e13c5b259d9a7b2e3e4ebc90680a01528cb22a3b64bfe91a5",
+    "visitedAt": "2026-04-18T16:33:53.220Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/v10/client/react/setup",
+    "outputPath": "output/trpc/docs/v10/client/react/setup/index.md",
+    "title": "Set up the React Query Integration",
+    "contentHash": "d1e96a48ee7684ef984a3d1061b9685e218a5117a42962d715c6727ebd137f75",
+    "visitedAt": "2026-04-18T16:33:57.626Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/v10/client/react/suspense",
+    "outputPath": "output/trpc/docs/v10/client/react/suspense/index.md",
+    "title": "Suspense",
+    "contentHash": "9b1cb5448785793b047549d812090342df558cc2ff622c3318611248019f750d",
+    "visitedAt": "2026-04-18T16:34:00.217Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/v10/client/react/useInfiniteQuery",
+    "outputPath": "output/trpc/docs/v10/client/react/useInfiniteQuery/index.md",
+    "title": "useInfiniteQuery",
+    "contentHash": "fb59bf5182b61058747949b3c7609692be5e4b39035709d657fe42ea7b90029d",
+    "visitedAt": "2026-04-18T16:34:11.834Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/v10/client/react/useMutation",
+    "outputPath": "output/trpc/docs/v10/client/react/useMutation/index.md",
+    "title": "useMutation()",
+    "contentHash": "18c047483c5b82040ce7bb233dfed1cafb2fc4497b6c8284ac16f7698f183631",
+    "visitedAt": "2026-04-18T16:34:20.017Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/v10/client/react/useQueries",
+    "outputPath": "output/trpc/docs/v10/client/react/useQueries/index.md",
+    "title": "useQueries()",
+    "contentHash": "48e55df471dfec124786c235b15d3298eaa8529e7f76b6e4fd3e183ae106c578",
+    "visitedAt": "2026-04-18T16:34:22.956Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/v10/client/react/useQuery",
+    "outputPath": "output/trpc/docs/v10/client/react/useQuery/index.md",
+    "title": "useQuery()",
+    "contentHash": "d90381c5f8cb81ea64a758bf50d432268d26f8595401da7260731c385629bac2",
+    "visitedAt": "2026-04-18T16:34:31.055Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/v10/client/vanilla",
+    "outputPath": "output/trpc/docs/v10/client/vanilla/index.md",
+    "title": "tRPC Client",
+    "contentHash": "7ba58f5329be295a41b2b4875a6503afa29532121729f339a313c42c6004ff6c",
+    "visitedAt": "2026-04-18T16:34:36.305Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/v10/client/react/useUtils",
+    "outputPath": "output/trpc/docs/v10/client/react/useUtils/index.md",
+    "title": "useUtils",
+    "contentHash": "ea08d63c0c9212f57c3ffbaebdcec3796994b51f14bd6e49311a9dda035641a6",
+    "visitedAt": "2026-04-18T16:34:45.268Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/v10/client/vanilla/aborting-procedure-calls",
+    "outputPath": "output/trpc/docs/v10/client/vanilla/aborting-procedure-calls/index.md",
+    "title": "Aborting Procedure Calls",
+    "contentHash": "1690d665f2f21f2dacabac72491fbca49354081e67ab0ff9f125b3ac3fe1925c",
+    "visitedAt": "2026-04-18T16:34:49.855Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/v10/client/vanilla/setup",
+    "outputPath": "output/trpc/docs/v10/client/vanilla/setup/index.md",
+    "title": "Set up a tRPC Client",
+    "contentHash": "fac0ae57e4e54aa0cc08140812bb4b888e876969af353fbc62f8095ab0eb5d4c",
+    "visitedAt": "2026-04-18T16:34:56.112Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/v10/client/vanilla/infer-types",
+    "outputPath": "output/trpc/docs/v10/client/vanilla/infer-types/index.md",
+    "title": "Inferring Types",
+    "contentHash": "dfce87e7b4fc1cf325e046f9046ecb7cd10505fcaeb8038bc0fc25555c8dbf58",
+    "visitedAt": "2026-04-18T16:35:03.753Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/v10/community/contributing",
+    "outputPath": "output/trpc/docs/v10/community/contributing/index.md",
+    "title": "Contributing",
+    "contentHash": "ac7d6b5f0b81db8bb74c6fd4e1b07b8b1fe239fd748c9461b98a34d96b2b550c",
+    "visitedAt": "2026-04-18T16:35:10.583Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/v10/community/awesome-trpc",
+    "outputPath": "output/trpc/docs/v10/community/awesome-trpc/index.md",
+    "title": "Awesome tRPC Collection",
+    "contentHash": "ca3eec159a5b1c77cb34ec5a16ee0018874d69816b5db11b149b953dce55eae7",
+    "visitedAt": "2026-04-18T16:35:15.071Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/v10/community/sponsors",
+    "outputPath": "output/trpc/docs/v10/community/sponsors/index.md",
+    "title": "Sponsors",
+    "contentHash": "2e1c2acc4ac114b9d177f5498346a7ecf88daa3ac6bb8da55854011b18cf2318",
+    "visitedAt": "2026-04-18T16:35:25.895Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/v10/concepts",
+    "outputPath": "output/trpc/docs/v10/concepts/index.md",
+    "title": "Concepts",
+    "contentHash": "41fe8b213a1c1fb598ed3dca36d5493cf2d7ce830a689175cc147545f74293e5",
+    "visitedAt": "2026-04-18T16:35:28.649Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/v10/example-apps",
+    "outputPath": "output/trpc/docs/v10/example-apps/index.md",
+    "title": "Example Apps",
+    "contentHash": "e5d3c9d3a78a73c8ad8ec91d2eb08322cc82b3168bc3c997dfddbfd9e76bde7d",
+    "visitedAt": "2026-04-18T16:35:42.514Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/v10/faq",
+    "outputPath": "output/trpc/docs/v10/faq/index.md",
+    "title": "FAQ / Troubleshooting",
+    "contentHash": "70da03accda58ec77372d2261f8dde6d15d5ea9cdd877fe40b55c86615b61875",
+    "visitedAt": "2026-04-18T16:35:46.198Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/v10/community/love",
+    "outputPath": "output/trpc/docs/v10/community/love/index.md",
+    "title": "Testimonials / Love",
+    "contentHash": "e157823e720533715185fb5d1d507ffac6116c5ac6535e5a92add6afb5e45837",
+    "visitedAt": "2026-04-18T16:35:51.083Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/v10/further",
+    "outputPath": "output/trpc/docs/v10/further/index.md",
+    "title": "Extra Information",
+    "contentHash": "0145367bb5abd5035c9a82f56914cdb6e25728951fd8d9f21c20a79c0d48bcc3",
+    "visitedAt": "2026-04-18T16:35:58.091Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/v10/further-reading",
+    "outputPath": "output/trpc/docs/v10/further-reading/index.md",
+    "title": "Further Reading",
+    "contentHash": "5d006e77c90cf420c10f68ae287dc23691aff731eb3005498cc9bd92f1d4b551",
+    "visitedAt": "2026-04-18T16:36:04.199Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/v10/getting-started",
+    "outputPath": "output/trpc/docs/v10/getting-started/index.md",
+    "title": "Getting Started",
+    "contentHash": "6abfdd40e8654edfcca7879fda9000c7441737a5084efcb1267d33901c30de83",
+    "visitedAt": "2026-04-18T16:36:09.530Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/v10/landing-intro/Step1",
+    "outputPath": "output/trpc/docs/v10/landing-intro/Step1/index.md",
+    "title": "Step1",
+    "contentHash": "b724c9efce5c63e7737908768617f6ac0d3cdba390abe8e2cf6fe147a7564206",
+    "visitedAt": "2026-04-18T16:36:22.144Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/v10/landing-intro/Step3",
+    "outputPath": "output/trpc/docs/v10/landing-intro/Step3/index.md",
+    "title": "Step3",
+    "contentHash": "dd138d62172dbf6c13057d131ab91f97514bf6666fc49b15b7c97bc599b68454",
+    "visitedAt": "2026-04-18T16:36:29.518Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/v10/landing-intro/Step2",
+    "outputPath": "output/trpc/docs/v10/landing-intro/Step2/index.md",
+    "title": "Step2",
+    "contentHash": "6dc44d6c3982a8385b2f4725fd247b7efeda6a5f185cbe6a5d57a115d0afdd5a",
+    "visitedAt": "2026-04-18T16:36:30.557Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/v10/migrate-from-v9-to-v10",
+    "outputPath": "output/trpc/docs/v10/migrate-from-v9-to-v10/index.md",
+    "title": "Migrate from v9 to v10",
+    "contentHash": "c778915fc909e06a5a0e0fae4eb59bacfdc9552351394d0682d63e52ab711262",
+    "visitedAt": "2026-04-18T16:36:44.984Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/v10/rpc",
+    "outputPath": "output/trpc/docs/v10/rpc/index.md",
+    "title": "HTTP RPC Specification",
+    "contentHash": "45f7be0a55ee6c3141ae3254f19e913356cf815402f3c7a4c467d56860581330",
+    "visitedAt": "2026-04-18T16:36:57.429Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/v10/server/adapters",
+    "outputPath": "output/trpc/docs/v10/server/adapters/index.md",
+    "title": "Adapters",
+    "contentHash": "e87309762e7e2c4afec66dc94e9ee809b6b06b537d3e3def545bafe1dd576fec",
+    "visitedAt": "2026-04-18T16:37:01.847Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/v10/quickstart",
+    "outputPath": "output/trpc/docs/v10/quickstart/index.md",
+    "title": "Quickstart",
+    "contentHash": "1186bf94b9e6dc2fd1194ff9ee474de08fdd6113901263042946a0440f2d9bd1",
+    "visitedAt": "2026-04-18T16:37:23.890Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/v10/server/adapters/aws-lambda",
+    "outputPath": "output/trpc/docs/v10/server/adapters/aws-lambda/index.md",
+    "title": "AWS Lambda + API Gateway Adapter",
+    "contentHash": "a5b7ef3ba361f328d890a327994182cc2def3bc1a06f34b1ad5bfb2a5f5432b2",
+    "visitedAt": "2026-04-18T16:37:29.256Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/v10/server/adapters/express",
+    "outputPath": "output/trpc/docs/v10/server/adapters/express/index.md",
+    "title": "Express Adapter",
+    "contentHash": "2fb487d7f25fc5d05090a3585b091217c78dd4c97ec641af10e59d2d17f078de",
+    "visitedAt": "2026-04-18T16:37:38.687Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/v10/server/adapters/fetch",
+    "outputPath": "output/trpc/docs/v10/server/adapters/fetch/index.md",
+    "title": "Fetch / Edge Runtimes Adapter",
+    "contentHash": "de9cdd83e186828896bffb9fa639db02e0de2803808c9036c84abbd06d208465",
+    "visitedAt": "2026-04-18T16:38:05.890Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/v10/server/adapters/fastify",
+    "outputPath": "output/trpc/docs/v10/server/adapters/fastify/index.md",
+    "title": "Fastify Adapter",
+    "contentHash": "7a63561ff92ab323e42f9c124d8378fa083794c71835fe15cab0d89f531e3574",
+    "visitedAt": "2026-04-18T16:38:13.030Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/v10/server/adapters/nextjs",
+    "outputPath": "output/trpc/docs/v10/server/adapters/nextjs/index.md",
+    "title": "Next.js Adapter",
+    "contentHash": "b3e6824a3efd4f2adaa50ba25957affc1ac122c57fc4e093d3506d73f70b2e79",
+    "visitedAt": "2026-04-18T16:38:18.237Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/v10/server/adapters/standalone",
+    "outputPath": "output/trpc/docs/v10/server/adapters/standalone/index.md",
+    "title": "Standalone Adapter",
+    "contentHash": "d681637585595cbcbf011ab1a873b32316e8834a687b270ca80ca9ab45d5e844",
+    "visitedAt": "2026-04-18T16:38:30.493Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/v10/server/authorization",
+    "outputPath": "output/trpc/docs/v10/server/authorization/index.md",
+    "title": "Authorization",
+    "contentHash": "03e3e798667bf7a871fd598b312fad20f2596be8cf01c427ddd06bf072da511c",
+    "visitedAt": "2026-04-18T16:38:37.158Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/v10/server/caching",
+    "outputPath": "output/trpc/docs/v10/server/caching/index.md",
+    "title": "Response Caching",
+    "contentHash": "34de0be4d37337043ae4b821d7133406898ea553e43ebfa7f60a56bcc75db2e7",
+    "visitedAt": "2026-04-18T16:38:45.279Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/v10/server/data-transformers",
+    "outputPath": "output/trpc/docs/v10/server/data-transformers/index.md",
+    "title": "Data Transformers",
+    "contentHash": "70e6ac7fd38ff68bc5f017a7d125ae10900922752433c4c517252a3907da83ab",
+    "visitedAt": "2026-04-18T16:38:57.638Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/v10/server/context",
+    "outputPath": "output/trpc/docs/v10/server/context/index.md",
+    "title": "Context",
+    "contentHash": "3a7d2df7143e3f7e0c86054f02c06137a4a4f1c7ee83f104b44952a2cdcce1e6",
+    "visitedAt": "2026-04-18T16:39:11.721Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/v10/server/error-formatting",
+    "outputPath": "output/trpc/docs/v10/server/error-formatting/index.md",
+    "title": "Error Formatting",
+    "contentHash": "2377d7dce3158d2f0ebc955c7995bea501cf7a8c024b22f36d60547cd9af44d5",
+    "visitedAt": "2026-04-18T16:39:15.423Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/v10/server/error-handling",
+    "outputPath": "output/trpc/docs/v10/server/error-handling/index.md",
+    "title": "Error Handling",
+    "contentHash": "90528132e5003b9b517bd063591b0c5ec846c5838e87c5d8483db1ce40a2adf1",
+    "visitedAt": "2026-04-18T16:39:26.188Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/v10/server/merging-routers",
+    "outputPath": "output/trpc/docs/v10/server/merging-routers/index.md",
+    "title": "Merging Routers",
+    "contentHash": "de879c98c1841a14375f133774dc0973c1ab925cde2dfb6babaae1ff4a88090b",
+    "visitedAt": "2026-04-18T16:39:29.985Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/v10/server/introduction",
+    "outputPath": "output/trpc/docs/v10/server/introduction/index.md",
+    "title": "tRPC server documentation",
+    "contentHash": "d13443c463c25eec3bcb29d84a5c206f0b3ceca3fa8ec5347e3f2a1dcd1f3605",
+    "visitedAt": "2026-04-18T16:39:33.380Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/v10/server/metadata",
+    "outputPath": "output/trpc/docs/v10/server/metadata/index.md",
+    "title": "Metadata",
+    "contentHash": "1c6429a82fa0bc69ef887e841082df807a613e4fbbc7bc7097abfec685a78c4f",
+    "visitedAt": "2026-04-18T16:39:40.500Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/v10/server/procedures",
+    "outputPath": "output/trpc/docs/v10/server/procedures/index.md",
+    "title": "Define Procedures",
+    "contentHash": "641b06eb8b0c0dd6a2f0d39d67f99311090524f18e1845ab389608a977a8b361",
+    "visitedAt": "2026-04-18T16:39:51.392Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/v10/server/middlewares",
+    "outputPath": "output/trpc/docs/v10/server/middlewares/index.md",
+    "title": "Middlewares",
+    "contentHash": "0c321234ded7f104407420af3a63969ba8353e49b981f41b5f7f5ec21cf9c8f1",
+    "visitedAt": "2026-04-18T16:40:12.130Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/v10/server/routers",
+    "outputPath": "output/trpc/docs/v10/server/routers/index.md",
+    "title": "Define Routers",
+    "contentHash": "5d5c87278574f2046b1856fcb23cfe4b757dca56e9ed31cdf6ed36822b5ba720",
+    "visitedAt": "2026-04-18T16:40:16.513Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/v10/server/server-side-calls",
+    "outputPath": "output/trpc/docs/v10/server/server-side-calls/index.md",
+    "title": "Server Side Calls",
+    "contentHash": "cdda10cb27a01a7fff367772184ff1583583e60cbc51ddf747ac830be9313947",
+    "visitedAt": "2026-04-18T16:40:24.565Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/v10/subscriptions",
+    "outputPath": "output/trpc/docs/v10/subscriptions/index.md",
+    "title": "Subscriptions / WebSockets",
+    "contentHash": "fd1dc368ff63b18c49f795c4c7db0513af1909f8ac36c1dc6c56af5c65603ea3",
+    "visitedAt": "2026-04-18T16:40:34.121Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/v10/server/validators",
+    "outputPath": "output/trpc/docs/v10/server/validators/index.md",
+    "title": "Input & Output Validators",
+    "contentHash": "5fb83186ab4f2877b472c073b6aab9e98aaa9ea6e489e8c91595c8ecc8b31a50",
+    "visitedAt": "2026-04-18T16:40:47.598Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/v10/videos-and-community-resources",
+    "outputPath": "output/trpc/docs/v10/videos-and-community-resources/index.md",
+    "title": "Videos and Community Resources",
+    "contentHash": "6dcc9866a21514aeeed89d4c1b67b5a922dcdba29a86062bc61a0e1c9137064f",
+    "visitedAt": "2026-04-18T16:40:54.317Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/v9/",
+    "outputPath": "output/trpc/docs/v9/index.md",
+    "title": "tRPC | tRPC",
+    "contentHash": "28411899305acb7935b8c2fa6db494300359795be88d00e0e89054aca513aec5",
+    "visitedAt": "2026-04-18T16:40:57.118Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/v9/authorization",
+    "outputPath": "output/trpc/docs/v9/authorization/index.md",
+    "title": "Authorization",
+    "contentHash": "9a0bdf784b36823a68cfd3f8dfaf6f576a132743f5c0ff07adac6ef14feebe23",
+    "visitedAt": "2026-04-18T16:41:04.067Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/v9/awesome-trpc",
+    "outputPath": "output/trpc/docs/v9/awesome-trpc/index.md",
+    "title": "Awesome tRPC Collection",
+    "contentHash": "6c25a6cb8000293c96c272ff021e7301db2f4ca5bdf9852c011d22e13b0ba06f",
+    "visitedAt": "2026-04-18T16:41:10.934Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/v9/aws-lambda",
+    "outputPath": "output/trpc/docs/v9/aws-lambda/index.md",
+    "title": "Usage with Amazon Lambda through the API Gateway",
+    "contentHash": "1c7ca15af3097f3ab2ff2c6f3314217753739f9a06aca36b87a69ed2423bfee0",
+    "visitedAt": "2026-04-18T16:41:15.251Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/v9/caching",
+    "outputPath": "output/trpc/docs/v9/caching/index.md",
+    "title": "Response Caching",
+    "contentHash": "2cb56168e174cadb0bb90bc3e633f1dfef410697f2f29e803325e0216610eb19",
+    "visitedAt": "2026-04-18T16:41:20.579Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/v9/contributing",
+    "outputPath": "output/trpc/docs/v9/contributing/index.md",
+    "title": "Contributing",
+    "contentHash": "43d286dc61376b65c744be27142bff9dcd8be465867f35eb03b2a626a5e8c65c",
+    "visitedAt": "2026-04-18T16:41:24.703Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/v9/context",
+    "outputPath": "output/trpc/docs/v9/context/index.md",
+    "title": "Request Context",
+    "contentHash": "32509d282008cfba53be2429ea14f4ce7d1f44f287923152bb58004512ef1b5a",
+    "visitedAt": "2026-04-18T16:41:26.964Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/v9/cors",
+    "outputPath": "output/trpc/docs/v9/cors/index.md",
+    "title": "Send cookies cross-origin",
+    "contentHash": "f25b9e7de1d18f6c17fff67245d2845372403899b2892ed538e9282ed5c2cb50",
+    "visitedAt": "2026-04-18T16:41:34.297Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/v9/data-transformers",
+    "outputPath": "output/trpc/docs/v9/data-transformers/index.md",
+    "title": "Data Transformers",
+    "contentHash": "fb5b36fac612eab40eca03d9f8b00353f9920540a5610d1213d7c3e303e00ad9",
+    "visitedAt": "2026-04-18T16:41:41.945Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/v9/error-formatting",
+    "outputPath": "output/trpc/docs/v9/error-formatting/index.md",
+    "title": "Error Formatting",
+    "contentHash": "bfc40210aafb6762d310febe51f1a5e6735b958b31b3b1c20eeeeb80c3203b22",
+    "visitedAt": "2026-04-18T16:41:45.072Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/v9/error-handling",
+    "outputPath": "output/trpc/docs/v9/error-handling/index.md",
+    "title": "Error Handling",
+    "contentHash": "00c12781100270571824f3ba73d1514bfa75eba54d2a4aaef6ec5f81b0512998",
+    "visitedAt": "2026-04-18T16:41:48.135Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/v9/example-apps",
+    "outputPath": "output/trpc/docs/v9/example-apps/index.md",
+    "title": "Example Apps",
+    "contentHash": "f05cb2803e4670bb0028db8cadd466bb4cc38c08914ee482f9807863ea8eea0c",
+    "visitedAt": "2026-04-18T16:41:52.580Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/v9/express",
+    "outputPath": "output/trpc/docs/v9/express/index.md",
+    "title": "Usage with Express.js",
+    "contentHash": "f11729e1abfe5c7eba7280b0a0d59f87be7bfa7ed38b7b4dce2d21c84a94d9a4",
+    "visitedAt": "2026-04-18T16:41:55.555Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/v9/fastify",
+    "outputPath": "output/trpc/docs/v9/fastify/index.md",
+    "title": "Usage with Fastify",
+    "contentHash": "eabd386bfb2ef3817a3f76d48bf682f0c341cfdd800ee8bf254d884ab78f1927",
+    "visitedAt": "2026-04-18T16:42:01.669Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/v9/header",
+    "outputPath": "output/trpc/docs/v9/header/index.md",
+    "title": "Custom header",
+    "contentHash": "96359f5ed6078b7ef53e9a6e7130f6fc47b8ebf0280cc7eedd41424a1c827a01",
+    "visitedAt": "2026-04-18T16:42:04.839Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/v9/further-reading",
+    "outputPath": "output/trpc/docs/v9/further-reading/index.md",
+    "title": "Further Reading",
+    "contentHash": "a84a8ebd7c387e495dcbcdbdbec477ea16e7929ec2fe6e453b0a1b91655f62d8",
+    "visitedAt": "2026-04-18T16:42:06.508Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/v9/infer-types",
+    "outputPath": "output/trpc/docs/v9/infer-types/index.md",
+    "title": "Inferring Types",
+    "contentHash": "1e17c203090adcf2bd43415109b522a085c912c74f275872ffd26fb1fbd6ddc2",
+    "visitedAt": "2026-04-18T16:42:13.957Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/v9/links",
+    "outputPath": "output/trpc/docs/v9/links/index.md",
+    "title": "Links & Request Batching",
+    "contentHash": "59fd3ee7e1dcd499f5aa8d50484c3db123808be5558b187e1a9f2812cd78abd4",
+    "visitedAt": "2026-04-18T16:42:21.353Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/v9/invalidateQueries",
+    "outputPath": "output/trpc/docs/v9/invalidateQueries/index.md",
+    "title": "invalidateQueries",
+    "contentHash": "c61b5f57a222c9c7909cb2ddd70312e6ac6f108f2f214792ab05c3813869149d",
+    "visitedAt": "2026-04-18T16:42:29.464Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/v9/merging-routers",
+    "outputPath": "output/trpc/docs/v9/merging-routers/index.md",
+    "title": "Merging Routers",
+    "contentHash": "2b627bde61d52a9d809cae64cdaa3c90d52cca294899239e875a1b1d09f5e000",
+    "visitedAt": "2026-04-18T16:42:35.619Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/v9/metadata",
+    "outputPath": "output/trpc/docs/v9/metadata/index.md",
+    "title": "Route Metadata",
+    "contentHash": "c3d0e04a96080e288096b5508e2239467b959e080900b1c48abc40d455132dfc",
+    "visitedAt": "2026-04-18T16:42:40.221Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/v9/love",
+    "outputPath": "output/trpc/docs/v9/love/index.md",
+    "title": "Testimonials / Love",
+    "contentHash": "303599920469557b1d67d6e412f7dd3cdc25c243a7d6f1b39ae25f0ca42820dd",
+    "visitedAt": "2026-04-18T16:42:47.085Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/v9/middlewares",
+    "outputPath": "output/trpc/docs/v9/middlewares/index.md",
+    "title": "Middlewares",
+    "contentHash": "7d5394bdc8ae7a6a9e3d89aba722f411cf035a8514125530185339a1a1bcdbd5",
+    "visitedAt": "2026-04-18T16:42:50.782Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/v9/nextjs",
+    "outputPath": "output/trpc/docs/v9/nextjs/index.md",
+    "title": "Usage with Next.js",
+    "contentHash": "db1396623e1eeed135bd6949b35b623e1a346be04ebe7586fb4c10a042c760fa",
+    "visitedAt": "2026-04-18T16:43:01.910Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/v9/output-validation",
+    "outputPath": "output/trpc/docs/v9/output-validation/index.md",
+    "title": "Output Validation",
+    "contentHash": "cd4f473065d2b66d1818db724110aaa81dc17ce4f01103d7a3e473aa100e6612",
+    "visitedAt": "2026-04-18T16:43:05.746Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/v9/quickstart",
+    "outputPath": "output/trpc/docs/v9/quickstart/index.md",
+    "title": "Quickstart",
+    "contentHash": "885603a7c7338b5b482b18ae0fe19faed654c933c993061e4ce0de9538ce4756",
+    "visitedAt": "2026-04-18T16:43:10.279Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/v9/react-mutations",
+    "outputPath": "output/trpc/docs/v9/react-mutations/index.md",
+    "title": "useMutation()",
+    "contentHash": "f2bd457f4cd33be4313c06829a14d158afddea11348ca570550e40a7eba3fe18",
+    "visitedAt": "2026-04-18T16:43:21.579Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/v9/react",
+    "outputPath": "output/trpc/docs/v9/react/index.md",
+    "title": "Usage with React",
+    "contentHash": "b23d3b14c977f4b2acdb0f61f91da84d40e20874ae24b39ebf1f088eada20bdc",
+    "visitedAt": "2026-04-18T16:43:25.273Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/v9/react-queries",
+    "outputPath": "output/trpc/docs/v9/react-queries/index.md",
+    "title": "useQuery()",
+    "contentHash": "a435dece9ac289093d3f2384f70bfc292e1dd0e8ba5826680a47b3d5459974b3",
+    "visitedAt": "2026-04-18T16:43:32.460Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/v9/router",
+    "outputPath": "output/trpc/docs/v9/router/index.md",
+    "title": "Define Router",
+    "contentHash": "e29f1ee17d475e6ea94131f7010e17b2469b900897eebe39a23f1386f231d5fe",
+    "visitedAt": "2026-04-18T16:43:42.899Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/v9/rpc",
+    "outputPath": "output/trpc/docs/v9/rpc/index.md",
+    "title": "HTTP RPC Specification",
+    "contentHash": "066443fc2ddd4399b29b02cfb4c5b77bdf692eff54ab8e7e07b361547f0a9593",
+    "visitedAt": "2026-04-18T16:43:48.266Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/v9/sponsors",
+    "outputPath": "output/trpc/docs/v9/sponsors/index.md",
+    "title": "Sponsors",
+    "contentHash": "20e55f04918b2ee0a07ade9fd52c1d800f46592b2949460b8bb4cd835ff19934",
+    "visitedAt": "2026-04-18T16:43:49.692Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/v9/ssg",
+    "outputPath": "output/trpc/docs/v9/ssg/index.md",
+    "title": "Static Site Generation",
+    "contentHash": "bba6196367a3ecee6f0caba939997a4c565fcdd13f5d2eff3b656cd6942d647d",
+    "visitedAt": "2026-04-18T16:43:55.707Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/v9/ssr",
+    "outputPath": "output/trpc/docs/v9/ssr/index.md",
+    "title": "Server-Side Rendering",
+    "contentHash": "2abf8c33ee54b54e46ce1487d45c92851e35bfcf2fa59f3d686f46a21a09975f",
+    "visitedAt": "2026-04-18T16:44:00.083Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/v9/ssg-helpers",
+    "outputPath": "output/trpc/docs/v9/ssg-helpers/index.md",
+    "title": "SSG Helpers",
+    "contentHash": "6d0fcbbe90a3866265c30ff933f13451ebceb4ed05da896c0abaf773112c05fe",
+    "visitedAt": "2026-04-18T16:44:01.885Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/v9/starter-projects",
+    "outputPath": "output/trpc/docs/v9/starter-projects/index.md",
+    "title": "Starter Projects",
+    "contentHash": "d2be5020a09a63c0944a2c9aad8ad3fb8bb923a1a4f1dd317f6f9e17156e9015",
+    "visitedAt": "2026-04-18T16:44:07.005Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/v9/subscriptions",
+    "outputPath": "output/trpc/docs/v9/subscriptions/index.md",
+    "title": "Subscriptions / WebSockets",
+    "contentHash": "5b1dba11492aeaa7e54bad2a21e821bc22f5a9cde1ce457faadb17269e457aea",
+    "visitedAt": "2026-04-18T16:44:16.621Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/v9/useInfiniteQuery",
+    "outputPath": "output/trpc/docs/v9/useInfiniteQuery/index.md",
+    "title": "useInfiniteQuery",
+    "contentHash": "9b2edc9bdce46e9f7de01ff1069ce9929521c00aae57a602c9694aaebb716051",
+    "visitedAt": "2026-04-18T16:44:20.329Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/v9/vanilla",
+    "outputPath": "output/trpc/docs/v9/vanilla/index.md",
+    "title": "Vanilla client",
+    "contentHash": "212e6726aff244d6b353af6da432605c4dd1b54097e098a4d28026d77083c692",
+    "visitedAt": "2026-04-18T16:44:25.486Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/client",
+    "outputPath": "output/trpc/docs/client/index.md",
+    "title": "tRPC Client",
+    "contentHash": "876b6723937b2287c92decf47ed9796e88f63d1493b6b0e9d4300a366a1ddc71",
+    "visitedAt": "2026-04-18T16:44:28.996Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/",
+    "outputPath": "output/trpc/docs/index.md",
+    "title": "tRPC | tRPC",
+    "contentHash": "081fc80a86489680c1364f7ebe52aad8a208bd706faeb1835f56acaace101582",
+    "visitedAt": "2026-04-18T16:44:31.608Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/client/cors",
+    "outputPath": "output/trpc/docs/client/cors/index.md",
+    "title": "Send cookies cross-origin",
+    "contentHash": "8b671d32d8829b38a97a6764eb62de5d5e2e063233dfe1f25b6ee8aa614a43ee",
+    "visitedAt": "2026-04-18T16:44:35.632Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/client/headers",
+    "outputPath": "output/trpc/docs/client/headers/index.md",
+    "title": "Headers",
+    "contentHash": "193901ba691e08cc471b193493bd5d5debecd550acec113bb81beeef9f3cbe7f",
+    "visitedAt": "2026-04-18T16:44:38.963Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/client/links",
+    "outputPath": "output/trpc/docs/client/links/index.md",
+    "title": "Links Overview",
+    "contentHash": "357b13ef830a5466197f887a7b8992648e2666254fc2b6d4543b99e759af8d71",
+    "visitedAt": "2026-04-18T16:44:41.146Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/client/links/httpBatchLink",
+    "outputPath": "output/trpc/docs/client/links/httpBatchLink/index.md",
+    "title": "HTTP Batch Link",
+    "contentHash": "83406f954e8f3bf2915cf0a90f22f8f645562c3f3efdaa2c0c42972c27d6838c",
+    "visitedAt": "2026-04-18T16:44:46.897Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/client/links/httpLink",
+    "outputPath": "output/trpc/docs/client/links/httpLink/index.md",
+    "title": "HTTP Link",
+    "contentHash": "c19c919d1138930b1b84cc363f63813917aaee6b1694fbe6c91ac3779d2efa9d",
+    "visitedAt": "2026-04-18T16:44:50.971Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/client/links/httpBatchStreamLink",
+    "outputPath": "output/trpc/docs/client/links/httpBatchStreamLink/index.md",
+    "title": "HTTP Batch Stream Link",
+    "contentHash": "29d613169e361c7cdd92b7a6a2cb6cf34cfcaa69fa6a46d0762d61f2738a946f",
+    "visitedAt": "2026-04-18T16:44:53.448Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/client/links/httpSubscriptionLink",
+    "outputPath": "output/trpc/docs/client/links/httpSubscriptionLink/index.md",
+    "title": "HTTP Subscription Link",
+    "contentHash": "32cf2c367519cc09950bc4f8b0319104525057fb2719fecc956c387ac435fb73",
+    "visitedAt": "2026-04-18T16:45:07.270Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/client/links/localLink",
+    "outputPath": "output/trpc/docs/client/links/localLink/index.md",
+    "title": "Local Link",
+    "contentHash": "f20b085613e33efe674a63c028e94a66266ba3cf00a38747ada07ab915e4d360",
+    "visitedAt": "2026-04-18T16:45:09.244Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/client/links/loggerLink",
+    "outputPath": "output/trpc/docs/client/links/loggerLink/index.md",
+    "title": "Logger Link",
+    "contentHash": "062850f0abc0bbbbe4800bb78df033b88893f875479b6d20288815bdc2305899",
+    "visitedAt": "2026-04-18T16:45:12.828Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/client/links/splitLink",
+    "outputPath": "output/trpc/docs/client/links/splitLink/index.md",
+    "title": "Split Link",
+    "contentHash": "db70f8604b45fea1775282c21808c4e814aebeab594e5e3f09ec400784a892c3",
+    "visitedAt": "2026-04-18T16:45:17.892Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/client/links/retryLink",
+    "outputPath": "output/trpc/docs/client/links/retryLink/index.md",
+    "title": "Retry Link",
+    "contentHash": "9fb0f2f873fc72ea6973d57ea617f19cddef53f5bb9df6efba4c41d57cf1fce3",
+    "visitedAt": "2026-04-18T16:45:20.460Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/client/links/wsLink",
+    "outputPath": "output/trpc/docs/client/links/wsLink/index.md",
+    "title": "WebSocket Link",
+    "contentHash": "b505c1a23a3143c38619988a2aa800a888f326800669a45e32bf29e412526233",
+    "visitedAt": "2026-04-18T16:45:24.215Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/client/nextjs",
+    "outputPath": "output/trpc/docs/client/nextjs/index.md",
+    "title": "Next.js Integration",
+    "contentHash": "c485c6f9d7fd8072b9e2ae315dece5233bcf35a77ecb790ffe4d610dad564771",
+    "visitedAt": "2026-04-18T16:45:29.737Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/client/nextjs/app-router-setup",
+    "outputPath": "output/trpc/docs/client/nextjs/app-router-setup/index.md",
+    "title": "Set up with Next.js App Router",
+    "contentHash": "b949a55c41b5b9f49cd4d0da9a4e49b9790213bce68f5b5ca1706664d83df076",
+    "visitedAt": "2026-04-18T16:45:39.115Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/client/nextjs/pages-router/aborting-procedure-calls",
+    "outputPath": "output/trpc/docs/client/nextjs/pages-router/aborting-procedure-calls/index.md",
+    "title": "Aborting Procedure Calls",
+    "contentHash": "83abca433d5fa9929f00108b2b45fb65c5faddf4afc97a663c3a80eb04bfe9f3",
+    "visitedAt": "2026-04-18T16:45:42.099Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/client/nextjs/pages-router/server-side-helpers",
+    "outputPath": "output/trpc/docs/client/nextjs/pages-router/server-side-helpers/index.md",
+    "title": "Server-Side Helpers",
+    "contentHash": "70a7cbab95893ea9990f44aab2cb1af43b80d743cfefe18b27ea62f222e4dc54",
+    "visitedAt": "2026-04-18T16:45:45.808Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/client/nextjs/pages-router/setup",
+    "outputPath": "output/trpc/docs/client/nextjs/pages-router/setup/index.md",
+    "title": "Set up with Next.js Pages Router",
+    "contentHash": "563646ebab78080c2a1ccb88af4ff8d989866bfba4be4d4d9fe243fb9c096d75",
+    "visitedAt": "2026-04-18T16:45:53.265Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/client/nextjs/pages-router/ssg",
+    "outputPath": "output/trpc/docs/client/nextjs/pages-router/ssg/index.md",
+    "title": "Static Site Generation",
+    "contentHash": "a3c3ab226d1f41a05a3a8b9a70dbb04e70d28e102e525bd25ff415c9b2189739",
+    "visitedAt": "2026-04-18T16:45:57.716Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/client/nextjs/pages-router/ssr",
+    "outputPath": "output/trpc/docs/client/nextjs/pages-router/ssr/index.md",
+    "title": "Server-Side Rendering",
+    "contentHash": "f1a41560e776e0c1f9d1ab7f09968e64c8b8d06e5f5d0ee34a1b334d206d4bbe",
+    "visitedAt": "2026-04-18T16:46:08.601Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/client/nextjs/starter-projects",
+    "outputPath": "output/trpc/docs/client/nextjs/starter-projects/index.md",
+    "title": "Starter Projects",
+    "contentHash": "97d0b5736b1d0435f3a20446344d4c71fa3ae08af8e704b691dfc128f6c5170a",
+    "visitedAt": "2026-04-18T16:46:13.430Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/client/nextjs/server-actions",
+    "outputPath": "output/trpc/docs/client/nextjs/server-actions/index.md",
+    "title": "Server Actions",
+    "contentHash": "5180cf1b98f5f789f959a20e11b8500b26fa14f66999640f1217767cdb41f093",
+    "visitedAt": "2026-04-18T16:46:16.920Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/client/react",
+    "outputPath": "output/trpc/docs/client/react/index.md",
+    "title": "React Query Integration (Classic)",
+    "contentHash": "d0446929003dda361539fc37f243cf70553777417750c71caf51c31e6bbce555",
+    "visitedAt": "2026-04-18T16:46:19.770Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/client/react/aborting-procedure-calls",
+    "outputPath": "output/trpc/docs/client/react/aborting-procedure-calls/index.md",
+    "title": "Aborting Procedure Calls",
+    "contentHash": "861c6b9422d39934cd4e60b1ced8b78bda5d734ba932b00a3ad21c92b0bbb948",
+    "visitedAt": "2026-04-18T16:46:23.808Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/client/react/createTRPCQueryUtils",
+    "outputPath": "output/trpc/docs/client/react/createTRPCQueryUtils/index.md",
+    "title": "createTRPCQueryUtils",
+    "contentHash": "ed7534cbd827f4bcbda5f1fd75932c99019a0ddfb857179b915c47b1004b279a",
+    "visitedAt": "2026-04-18T16:46:26.510Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/client/react/disabling-queries",
+    "outputPath": "output/trpc/docs/client/react/disabling-queries/index.md",
+    "title": "Disabling Queries",
+    "contentHash": "533e857ac9bea2f31a4507fee7495d4a3288f499791234d853269ac1e5782446",
+    "visitedAt": "2026-04-18T16:46:27.814Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/client/react/getQueryKey",
+    "outputPath": "output/trpc/docs/client/react/getQueryKey/index.md",
+    "title": "getQueryKey",
+    "contentHash": "9f234ca858691e45cacb100f409af313820aae43b2e255d21ff35f4a82b79450",
+    "visitedAt": "2026-04-18T16:46:31.873Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/client/react/infer-types",
+    "outputPath": "output/trpc/docs/client/react/infer-types/index.md",
+    "title": "Inferring Types",
+    "contentHash": "1e0f003d105ca662c052c06075577f5d5783501210db586c0de041674a355cc3",
+    "visitedAt": "2026-04-18T16:46:40.021Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/client/react/server-components",
+    "outputPath": "output/trpc/docs/client/react/server-components/index.md",
+    "title": "Set up with React Server Components",
+    "contentHash": "9f171a1dbfd2c88bce92e48e6e36caeecbbf2ad14245e00b1579f46bcc2082d2",
+    "visitedAt": "2026-04-18T16:46:46.190Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/client/react/setup",
+    "outputPath": "output/trpc/docs/client/react/setup/index.md",
+    "title": "Set up the React Query Integration",
+    "contentHash": "3dac4f2a07b83d0b67394ad24ea74912451285dd69d72e2d1e1abbb7e9eed03b",
+    "visitedAt": "2026-04-18T16:46:49.281Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/client/react/suspense",
+    "outputPath": "output/trpc/docs/client/react/suspense/index.md",
+    "title": "Suspense",
+    "contentHash": "5eff6b92662afa2b4ff70214f062d8905d40d8f7f02360a75698518df5c14224",
+    "visitedAt": "2026-04-18T16:46:52.362Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/client/react/useMutation",
+    "outputPath": "output/trpc/docs/client/react/useMutation/index.md",
+    "title": "useMutation()",
+    "contentHash": "81de89088c50bbf4940823005976bde0a6aaf1d7be659ada175fafc464ddf030",
+    "visitedAt": "2026-04-18T16:46:57.549Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/client/react/useInfiniteQuery",
+    "outputPath": "output/trpc/docs/client/react/useInfiniteQuery/index.md",
+    "title": "useInfiniteQuery()",
+    "contentHash": "859e9627693c7d76673f8fdc5d608838b704df92c2f8d5d57b87382b418dac6d",
+    "visitedAt": "2026-04-18T16:46:59.510Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/client/react/useQueries",
+    "outputPath": "output/trpc/docs/client/react/useQueries/index.md",
+    "title": "useQueries()",
+    "contentHash": "0834e9f4c86b7a7faa6e2b89644248b07bc372397eb9240710135c43fe0feaaa",
+    "visitedAt": "2026-04-18T16:47:02.899Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/client/react/useQuery",
+    "outputPath": "output/trpc/docs/client/react/useQuery/index.md",
+    "title": "useQuery()",
+    "contentHash": "e778d5684925393c938a9c752c3a882915b0d119ef582f4b0c53996f14836887",
+    "visitedAt": "2026-04-18T16:47:12.303Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/client/react/useSubscription",
+    "outputPath": "output/trpc/docs/client/react/useSubscription/index.md",
+    "title": "useSubscription()",
+    "contentHash": "35807a4ec34bc661d8d7f3f106c09ca333229869a0c244819b9e3d7924434162",
+    "visitedAt": "2026-04-18T16:47:17.546Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/client/react/useUtils",
+    "outputPath": "output/trpc/docs/client/react/useUtils/index.md",
+    "title": "useUtils",
+    "contentHash": "547cc7e38a674f61f4b72d9bcd2ba1139d1a3062154545987df189424a58ed05",
+    "visitedAt": "2026-04-18T16:47:24.660Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/client/tanstack-react-query",
+    "outputPath": "output/trpc/docs/client/tanstack-react-query/index.md",
+    "title": "TanStack React Query",
+    "contentHash": "7323d11f3add833bb9e93196ec658475a7e558c8aebffa33a54880cf2bd65844",
+    "visitedAt": "2026-04-18T16:47:27.219Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/client/tanstack-react-query/migrating",
+    "outputPath": "output/trpc/docs/client/tanstack-react-query/migrating/index.md",
+    "title": "Migrating from the classic React Client",
+    "contentHash": "c826eee52d827d6e28a7a1a278814c07244112bf8a67a5f6531b53e85344dfca",
+    "visitedAt": "2026-04-18T16:47:29.554Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/client/tanstack-react-query/server-components",
+    "outputPath": "output/trpc/docs/client/tanstack-react-query/server-components/index.md",
+    "title": "Set up with React Server Components",
+    "contentHash": "37623a97043f88b36400154fa89f1a8fc235d328c966fc894e59510345adfadb",
+    "visitedAt": "2026-04-18T16:47:38.750Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/client/tanstack-react-query/setup",
+    "outputPath": "output/trpc/docs/client/tanstack-react-query/setup/index.md",
+    "title": "TanStack React Query",
+    "contentHash": "74d200d8fdd9ce93ef33387dac73a73029df0538801736e0f40eda47a5c3718e",
+    "visitedAt": "2026-04-18T16:47:42.097Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/client/tanstack-react-query/usage",
+    "outputPath": "output/trpc/docs/client/tanstack-react-query/usage/index.md",
+    "title": "TanStack React Query",
+    "contentHash": "fe737168e26bab609821ccae545636ef091a43dfc617bf91d90392c03562f3b1",
+    "visitedAt": "2026-04-18T16:47:51.541Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/client/vanilla",
+    "outputPath": "output/trpc/docs/client/vanilla/index.md",
+    "title": "tRPC Client",
+    "contentHash": "876b6723937b2287c92decf47ed9796e88f63d1493b6b0e9d4300a366a1ddc71",
+    "visitedAt": "2026-04-18T16:47:53.471Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/client/vanilla/aborting-procedure-calls",
+    "outputPath": "output/trpc/docs/client/vanilla/aborting-procedure-calls/index.md",
+    "title": "Aborting Procedure Calls",
+    "contentHash": "99f5879d020cd565d4a1eca643fb327ecac7153894b9a7acd6cb4f787bc780c7",
+    "visitedAt": "2026-04-18T16:47:56.036Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/client/vanilla/setup",
+    "outputPath": "output/trpc/docs/client/vanilla/setup/index.md",
+    "title": "Set up a tRPC Client",
+    "contentHash": "e3cbee63dd56c0b451e69cd5693bbfbe702fb463827177ba266bfe773c689db6",
+    "visitedAt": "2026-04-18T16:48:01.387Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/client/vanilla/infer-types",
+    "outputPath": "output/trpc/docs/client/vanilla/infer-types/index.md",
+    "title": "Inferring Types",
+    "contentHash": "3c31fa191b91f2d1faf4b9bb66f6e26f0f12d24ed98dddbff9463b815a0587c1",
+    "visitedAt": "2026-04-18T16:48:04.533Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/community/awesome-trpc",
+    "outputPath": "output/trpc/docs/community/awesome-trpc/index.md",
+    "title": "Awesome tRPC Collection",
+    "contentHash": "6c15d4e79f54907a51dde891249eac180c8b4573d0e9e1400357403e87c69b6a",
+    "visitedAt": "2026-04-18T16:48:09.522Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/community/contributing",
+    "outputPath": "output/trpc/docs/community/contributing/index.md",
+    "title": "Contributing",
+    "contentHash": "cc834df4b10fe5145c92aeb158db22efa7c6052306b176a9718f2703d4161aa3",
+    "visitedAt": "2026-04-18T16:48:12.020Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/community/sponsors",
+    "outputPath": "output/trpc/docs/community/sponsors/index.md",
+    "title": "Sponsors",
+    "contentHash": "aef3a4922d623ee1a7fb608028fb756ba93238602b7862313a38d9936befedc6",
+    "visitedAt": "2026-04-18T16:48:17.617Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/concepts",
+    "outputPath": "output/trpc/docs/concepts/index.md",
+    "title": "Concepts",
+    "contentHash": "fccf4d6807da1358b2a41775f564cda5a98002eb1791e266c390e52d142287b9",
+    "visitedAt": "2026-04-18T16:48:21.814Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/community/love",
+    "outputPath": "output/trpc/docs/community/love/index.md",
+    "title": "Testimonials / Love",
+    "contentHash": "0848b18a65a3951ce41852a05622d3547c1659d80b6b79ace7e163f7225ebde4",
+    "visitedAt": "2026-04-18T16:48:23.919Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/example-apps",
+    "outputPath": "output/trpc/docs/example-apps/index.md",
+    "title": "Example Apps",
+    "contentHash": "af14119a7f58afc8f78157236893ba7914a479cef5101597cf41af1ba85d2eca",
+    "visitedAt": "2026-04-18T16:48:26.086Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/faq",
+    "outputPath": "output/trpc/docs/faq/index.md",
+    "title": "FAQ / Troubleshooting",
+    "contentHash": "7c045dc8dabda31d60e3aeaffb4623742cc9ea59d46c66904d78de17da9094ee",
+    "visitedAt": "2026-04-18T16:48:29.784Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/further-reading",
+    "outputPath": "output/trpc/docs/further-reading/index.md",
+    "title": "Further Reading",
+    "contentHash": "a1dd39d6adbbecb7127d576dfa29203736d5c972d30737d27d18ca1028abd157",
+    "visitedAt": "2026-04-18T16:48:31.417Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/landing-intro/Step1",
+    "outputPath": "output/trpc/docs/landing-intro/Step1/index.md",
+    "title": "Step1",
+    "contentHash": "b724c9efce5c63e7737908768617f6ac0d3cdba390abe8e2cf6fe147a7564206",
+    "visitedAt": "2026-04-18T16:48:35.991Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/landing-intro/Step2",
+    "outputPath": "output/trpc/docs/landing-intro/Step2/index.md",
+    "title": "Step2",
+    "contentHash": "6dc44d6c3982a8385b2f4725fd247b7efeda6a5f185cbe6a5d57a115d0afdd5a",
+    "visitedAt": "2026-04-18T16:48:38.366Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/landing-intro/Step3",
+    "outputPath": "output/trpc/docs/landing-intro/Step3/index.md",
+    "title": "Step3",
+    "contentHash": "686118d05d6a9c420c8f53988a50f064690ba67fbdab6cf08a71618b8d386171",
+    "visitedAt": "2026-04-18T16:48:41.278Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/migrate-from-v10-to-v11",
+    "outputPath": "output/trpc/docs/migrate-from-v10-to-v11/index.md",
+    "title": "Migrate from v10 to v11",
+    "contentHash": "0190f89c2621294a2a90e4e3df93ca14788825b28f6b5c21080d749349382a27",
+    "visitedAt": "2026-04-18T16:48:48.571Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/rpc",
+    "outputPath": "output/trpc/docs/rpc/index.md",
+    "title": "HTTP RPC Specification",
+    "contentHash": "4a62eb857e39f92ef6de146b97a8ef577a0fd574f65025c9ad987f27e9823c39",
+    "visitedAt": "2026-04-18T16:48:53.945Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/openapi",
+    "outputPath": "output/trpc/docs/openapi/index.md",
+    "title": "OpenAPI (alpha)",
+    "contentHash": "2d18322ee4331a6aa751a71053941ce5fba5f78e85e14acd26b89a0898bf898b",
+    "visitedAt": "2026-04-18T16:48:57.746Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/server/adapters",
+    "outputPath": "output/trpc/docs/server/adapters/index.md",
+    "title": "Overview",
+    "contentHash": "6d926a3122c9384ea0ade18ee892b8ae631832d1f55e31b9308467c858fed852",
+    "visitedAt": "2026-04-18T16:48:59.803Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/server/adapters/aws-lambda",
+    "outputPath": "output/trpc/docs/server/adapters/aws-lambda/index.md",
+    "title": "AWS Lambda + API Gateway Adapter",
+    "contentHash": "86411297f959469829e8f56f18c62e9f436e084a2eaf92fbfad5a0e99315198f",
+    "visitedAt": "2026-04-18T16:49:02.255Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/server/adapters/express",
+    "outputPath": "output/trpc/docs/server/adapters/express/index.md",
+    "title": "Express Adapter",
+    "contentHash": "73e8a55f620e460d3a50ae42a4de9ab39b8baa000b947a0b28b29bec06d2daa1",
+    "visitedAt": "2026-04-18T16:49:04.780Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/server/adapters/fastify",
+    "outputPath": "output/trpc/docs/server/adapters/fastify/index.md",
+    "title": "Fastify Adapter",
+    "contentHash": "8e85f04c4e8e60ee65c6b6aa87e56c5258eb4faea75cdde28f2c7ea27578911e",
+    "visitedAt": "2026-04-18T16:49:09.669Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/server/adapters/nextjs",
+    "outputPath": "output/trpc/docs/server/adapters/nextjs/index.md",
+    "title": "Next.js Adapter",
+    "contentHash": "56af26b0fd5e06e2ad3dfd5b79c4a0248b0e16753c24a5177e251de9f73e00e0",
+    "visitedAt": "2026-04-18T16:49:14.797Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/server/adapters/fetch",
+    "outputPath": "output/trpc/docs/server/adapters/fetch/index.md",
+    "title": "Fetch / Edge Runtimes Adapter",
+    "contentHash": "cc422ffb2db3455d887a6c9ec55e71e91c50a7202247a12a16fa0d10236509ea",
+    "visitedAt": "2026-04-18T16:49:21.067Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/server/adapters/standalone",
+    "outputPath": "output/trpc/docs/server/adapters/standalone/index.md",
+    "title": "Standalone Adapter",
+    "contentHash": "6c85ff51975bdd5f3b0f803a18cc299baee22a9c6968bd50be82d69556744955",
+    "visitedAt": "2026-04-18T16:49:28.544Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/server/authorization",
+    "outputPath": "output/trpc/docs/server/authorization/index.md",
+    "title": "Authorization",
+    "contentHash": "3333d47935db88baf55324c941fe5fcb2a1a405e6c3730f3a28f3ce6b94c2a73",
+    "visitedAt": "2026-04-18T16:49:33.782Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/server/caching",
+    "outputPath": "output/trpc/docs/server/caching/index.md",
+    "title": "Response Caching",
+    "contentHash": "c81f56ca2282ddb1b1c1643ec7633daa04a2902f6a0b6b7c051b5da4c2fb024a",
+    "visitedAt": "2026-04-18T16:49:35.720Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/server/context",
+    "outputPath": "output/trpc/docs/server/context/index.md",
+    "title": "Context",
+    "contentHash": "f4a76f95b882d99bcafa79465bc5073510e75fb94377c31c6ab062479b9eda0d",
+    "visitedAt": "2026-04-18T16:49:41.570Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/server/error-formatting",
+    "outputPath": "output/trpc/docs/server/error-formatting/index.md",
+    "title": "Error Formatting",
+    "contentHash": "505dd89e9c1358d799e116f900963c2b048a9d41d5e3c9aeabf28c48e9d97597",
+    "visitedAt": "2026-04-18T16:49:45.271Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/server/data-transformers",
+    "outputPath": "output/trpc/docs/server/data-transformers/index.md",
+    "title": "Data Transformers",
+    "contentHash": "42c620d418c1fe4428e13e57339e7d7289fcd90fe35579806d1fc2c5a8bd476b",
+    "visitedAt": "2026-04-18T16:49:47.271Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/server/error-handling",
+    "outputPath": "output/trpc/docs/server/error-handling/index.md",
+    "title": "Error Handling",
+    "contentHash": "4042d6e308d3e7972c22047b0c4c1b21bb1e44773fef4feef857a68bd4422301",
+    "visitedAt": "2026-04-18T16:49:51.363Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/server/merging-routers",
+    "outputPath": "output/trpc/docs/server/merging-routers/index.md",
+    "title": "Merging Routers",
+    "contentHash": "8a8daaca720a179ccb8d7327f824ff7715f2b0227a261da42d10fc6b0ce349f1",
+    "visitedAt": "2026-04-18T16:49:55.012Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/server/metadata",
+    "outputPath": "output/trpc/docs/server/metadata/index.md",
+    "title": "Metadata",
+    "contentHash": "fdf15ed375b45821a3a0c2c0bb0b1edeb1b95a05b79fd66f5049d31433ce240c",
+    "visitedAt": "2026-04-18T16:49:59.845Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/server/non-json-content-types",
+    "outputPath": "output/trpc/docs/server/non-json-content-types/index.md",
+    "title": "Content Types",
+    "contentHash": "d6b574ef665b27049f76337cbcfafe1874c09a7cf2c8d02f97b5e74fb5354ffc",
+    "visitedAt": "2026-04-18T16:50:07.012Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/server/middlewares",
+    "outputPath": "output/trpc/docs/server/middlewares/index.md",
+    "title": "Middlewares",
+    "contentHash": "8eb38615459671aa01d2a55952a4c18df80466cec0570abe407ed704d6e1a8d0",
+    "visitedAt": "2026-04-18T16:50:14.172Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/server/overview",
+    "outputPath": "output/trpc/docs/server/overview/index.md",
+    "title": "Backend Usage",
+    "contentHash": "cd768a616756b68f1cf6db9441b22206c362d10257ad2749f4519be36e28570a",
+    "visitedAt": "2026-04-18T16:50:16.702Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/server/procedures",
+    "outputPath": "output/trpc/docs/server/procedures/index.md",
+    "title": "Define Procedures",
+    "contentHash": "b6697df49b2ca06dddb11deb971da430483ba8f44b73ccb4bb502a733c699b34",
+    "visitedAt": "2026-04-18T16:50:22.234Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/server/routers",
+    "outputPath": "output/trpc/docs/server/routers/index.md",
+    "title": "Define Routers",
+    "contentHash": "71dfdfbb3be7993b4792674f0c5b0dea4d14a84aba4381b2134f68931fcc08cc",
+    "visitedAt": "2026-04-18T16:50:26.512Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/server/server-side-calls",
+    "outputPath": "output/trpc/docs/server/server-side-calls/index.md",
+    "title": "Server Side Calls",
+    "contentHash": "ea18f4eae8a127bbe9288ed01ee10fcecb113e4a790453459a238ddca6c3496c",
+    "visitedAt": "2026-04-18T16:50:32.575Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/server/subscriptions",
+    "outputPath": "output/trpc/docs/server/subscriptions/index.md",
+    "title": "Subscriptions",
+    "contentHash": "00b0856800a8f25a40f9260319bb496da6a787b810a3d2e2b376403f942c7c7b",
+    "visitedAt": "2026-04-18T16:50:41.920Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/server/validators",
+    "outputPath": "output/trpc/docs/server/validators/index.md",
+    "title": "Input & Output Validators",
+    "contentHash": "4435ee49b28ff144dacc40a26c867fa346a26abb34494c85862715f5cc61f4db",
+    "visitedAt": "2026-04-18T16:50:50.419Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/server/websockets",
+    "outputPath": "output/trpc/docs/server/websockets/index.md",
+    "title": "WebSockets",
+    "contentHash": "68ee47958ee527ff832a7b113c8106cbd571c41ac0e50771713e6ec919f6590c",
+    "visitedAt": "2026-04-18T16:50:57.199Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/skills",
+    "outputPath": "output/trpc/docs/skills/index.md",
+    "title": "Agent Skills",
+    "contentHash": "aebc0e629e8e8e87bddba989d1c9c87f63207ba79e618b881536a5ce9fa54a61",
+    "visitedAt": "2026-04-18T16:50:58.507Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/test",
+    "outputPath": "output/trpc/docs/test/index.md",
+    "title": "Test",
+    "contentHash": "7399f1b46ff6246f540437141e9e369e545902f07207e43c0eca534c65f10fd0",
+    "visitedAt": "2026-04-18T16:51:02.910Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/typedoc/client/",
+    "outputPath": "output/trpc/docs/typedoc/client/index.md",
+    "title": "@trpc/client",
+    "contentHash": "fe45d2e79eca928b6a7f21bc608cfffb6baae03102cb4247197f97db18fa1c33",
+    "visitedAt": "2026-04-18T16:51:05.145Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/typedoc/client/index/",
+    "outputPath": "output/trpc/docs/typedoc/client/index/index.md",
+    "title": "index",
+    "contentHash": "9f2025cab08fdcebde168e5fc321f53faeedf6e94afe61ddbfdfaac3339564c6",
+    "visitedAt": "2026-04-18T16:51:08.261Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/typedoc/client/index/classes/TRPCClientError",
+    "outputPath": "output/trpc/docs/typedoc/client/index/classes/TRPCClientError/index.md",
+    "title": "Class: TRPCClientError<TRouterOrProcedure>",
+    "contentHash": "15db2ec3428c1cd88a0bb298d946e4bbf20010f0ee4acfb4bf1b30ec89436020",
+    "visitedAt": "2026-04-18T16:51:11.232Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/typedoc/client/index/classes/TRPCUntypedClient",
+    "outputPath": "output/trpc/docs/typedoc/client/index/classes/TRPCUntypedClient/index.md",
+    "title": "Class: TRPCUntypedClient<TInferrable>",
+    "contentHash": "2aa258bb097743cc9f709f6b609cf6fe042874ccb36f11d4da9aa4f634085dfc",
+    "visitedAt": "2026-04-18T16:51:12.574Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/typedoc/client/index/functions/createTRPCProxyClient",
+    "outputPath": "output/trpc/docs/typedoc/client/index/functions/createTRPCProxyClient/index.md",
+    "title": "Function: createTRPCProxyClient()",
+    "contentHash": "66147c40e0ea2f26501cd68f2aac7a9c606057bad9b80bc1720dfccc50ffbca4",
+    "visitedAt": "2026-04-18T16:51:14.493Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/typedoc/client/index/functions/createTRPCUntypedClient",
+    "outputPath": "output/trpc/docs/typedoc/client/index/functions/createTRPCUntypedClient/index.md",
+    "title": "Function: createTRPCUntypedClient()",
+    "contentHash": "41ed9e54571c5d0851bd9b13a082b13cfb72822b893c48b3ef3ea82c80289ffe",
+    "visitedAt": "2026-04-18T16:51:16.687Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/typedoc/client/index/functions/createWSClient",
+    "outputPath": "output/trpc/docs/typedoc/client/index/functions/createWSClient/index.md",
+    "title": "Function: createWSClient()",
+    "contentHash": "8a5aa660adb2daba560aee885d688b257055ce2b88b83a7dae50854a5e824166",
+    "visitedAt": "2026-04-18T16:51:18.070Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/typedoc/client/index/functions/experimental_localLink",
+    "outputPath": "output/trpc/docs/typedoc/client/index/functions/experimental_localLink/index.md",
+    "title": "Function: experimental_localLink()",
+    "contentHash": "837a4ecc70c4d7cfcd4bf2a6445e378993f3125a80f39c552d287268e73f400f",
+    "visitedAt": "2026-04-18T16:51:22.512Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/typedoc/client/index/functions/getFetch",
+    "outputPath": "output/trpc/docs/typedoc/client/index/functions/getFetch/index.md",
+    "title": "Function: getFetch()",
+    "contentHash": "633b2253dc66e67cc1f85b2125b4fd1b8e812eb96efa6a30c654bcb02b039dac",
+    "visitedAt": "2026-04-18T16:51:24.784Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/typedoc/client/index/functions/httpBatchStreamLink",
+    "outputPath": "output/trpc/docs/typedoc/client/index/functions/httpBatchStreamLink/index.md",
+    "title": "Function: httpBatchStreamLink()",
+    "contentHash": "3c47bd0466c4c57081a8f2dbd283878423683ffa1fac621c3433ea9e1a6bb257",
+    "visitedAt": "2026-04-18T16:51:25.633Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/typedoc/client/index/functions/httpSubscriptionLink",
+    "outputPath": "output/trpc/docs/typedoc/client/index/functions/httpSubscriptionLink/index.md",
+    "title": "Function: httpSubscriptionLink()",
+    "contentHash": "2e7565b6b398fcbe342a00a6ba0877c8d7dc5997ebe40356062b000580a7de05",
+    "visitedAt": "2026-04-18T16:51:29.785Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/typedoc/client/index/functions/isFormData",
+    "outputPath": "output/trpc/docs/typedoc/client/index/functions/isFormData/index.md",
+    "title": "Function: isFormData()",
+    "contentHash": "7c9efef803f16bfae71c806c6f14f61175a145d6a251c167fea1002d3106b9b8",
+    "visitedAt": "2026-04-18T16:51:32.389Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/typedoc/client/index/functions/isNonJsonSerializable",
+    "outputPath": "output/trpc/docs/typedoc/client/index/functions/isNonJsonSerializable/index.md",
+    "title": "Function: isNonJsonSerializable()",
+    "contentHash": "22a73e6a4ddb7bf972b53bf2219a8697ba8b34f289a8376ec4abfc6f827e8f55",
+    "visitedAt": "2026-04-18T16:51:33.102Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/typedoc/client/index/functions/isOctetType",
+    "outputPath": "output/trpc/docs/typedoc/client/index/functions/isOctetType/index.md",
+    "title": "Function: isOctetType()",
+    "contentHash": "d12e566512948753e0d43d02672443fd4f1a0dc0dc5dd2de0bf95a56ba295905",
+    "visitedAt": "2026-04-18T16:51:35.435Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/typedoc/client/index/functions/retryLink",
+    "outputPath": "output/trpc/docs/typedoc/client/index/functions/retryLink/index.md",
+    "title": "Function: retryLink()",
+    "contentHash": "e797f0a04ab891bc482053bf62ec54f228e3e9c6ffb6fd22bb09322d231cf7da",
+    "visitedAt": "2026-04-18T16:51:41.920Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/typedoc/client/index/functions/isTRPCClientError",
+    "outputPath": "output/trpc/docs/typedoc/client/index/functions/isTRPCClientError/index.md",
+    "title": "Function: isTRPCClientError()",
+    "contentHash": "1f90ce0a43be4f760174e3f44d8e2ce71fc06f4f3c6c6a561cffa1f9a81d34de",
+    "visitedAt": "2026-04-18T16:51:42.260Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/typedoc/client/index/functions/unstable_httpBatchStreamLink",
+    "outputPath": "output/trpc/docs/typedoc/client/index/functions/unstable_httpBatchStreamLink/index.md",
+    "title": "Function: unstable_httpBatchStreamLink()",
+    "contentHash": "480635f3b9fa1512326990ec94cc78d1530bf5d2760012fca41d75908650357e",
+    "visitedAt": "2026-04-18T16:51:45.745Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/typedoc/client/index/functions/unstable_localLink",
+    "outputPath": "output/trpc/docs/typedoc/client/index/functions/unstable_localLink/index.md",
+    "title": "Function: unstable_localLink()",
+    "contentHash": "f4c59b2e83836bc673cc71448877164cf62449d9c534976536c1522bc3694419",
+    "visitedAt": "2026-04-18T16:51:49.730Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/typedoc/client/index/functions/unstable_httpSubscriptionLink",
+    "outputPath": "output/trpc/docs/typedoc/client/index/functions/unstable_httpSubscriptionLink/index.md",
+    "title": "Function: unstable_httpSubscriptionLink()",
+    "contentHash": "bc6c87a5fe6fdf0af9b208f67617f80e0cf9c47969b9e03d4ca4b342eb01c795",
+    "visitedAt": "2026-04-18T16:51:50.290Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/typedoc/client/index/interfaces/Encoder",
+    "outputPath": "output/trpc/docs/typedoc/client/index/interfaces/Encoder/index.md",
+    "title": "Interface: Encoder",
+    "contentHash": "da98feeb3fc152c815c924445112015e2e4d5820a7e7c310da1b3f9e36db4bb5",
+    "visitedAt": "2026-04-18T16:51:52.448Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/typedoc/client/index/interfaces/TRPCClientRuntime",
+    "outputPath": "output/trpc/docs/typedoc/client/index/interfaces/TRPCClientRuntime/index.md",
+    "title": "Interface: TRPCClientRuntime",
+    "contentHash": "78fec214bfd599086582f18ddfe2b428306385cc88514ff2e0d44152a9ba9bda",
+    "visitedAt": "2026-04-18T16:51:55.228Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/typedoc/client/index/interfaces/TRPCClientErrorBase",
+    "outputPath": "output/trpc/docs/typedoc/client/index/interfaces/TRPCClientErrorBase/index.md",
+    "title": "Interface: TRPCClientErrorBase<TShape>",
+    "contentHash": "4ec6a958b491ae97ba99a0a59810aae8dd8c8701447a2fda69b7d177b9f28bdf",
+    "visitedAt": "2026-04-18T16:51:57.579Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/typedoc/client/index/interfaces/TRPCProcedureOptions",
+    "outputPath": "output/trpc/docs/typedoc/client/index/interfaces/TRPCProcedureOptions/index.md",
+    "title": "Interface: TRPCProcedureOptions",
+    "contentHash": "34dc13e435387b1659207c2533dba2ab0546ed9daf13b0a9bdbb812376ce016b",
+    "visitedAt": "2026-04-18T16:51:59.498Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/typedoc/client/index/interfaces/TRPCRequestOptions",
+    "outputPath": "output/trpc/docs/typedoc/client/index/interfaces/TRPCRequestOptions/index.md",
+    "title": "Interface: TRPCRequestOptions",
+    "contentHash": "93c99d60724d4f72ff7276b80e3bf19908f98b015d3602dc6f1d1607babd33f9",
+    "visitedAt": "2026-04-18T16:52:00.485Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/typedoc/client/index/type-aliases/CreateTRPCClient",
+    "outputPath": "output/trpc/docs/typedoc/client/index/type-aliases/CreateTRPCClient/index.md",
+    "title": "Type Alias: CreateTRPCClient<TRouter>",
+    "contentHash": "17bb8b6fa8b34780f392f152e70f3f24d2679aef177020213acaaddb273ef116",
+    "visitedAt": "2026-04-18T16:52:05.882Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/typedoc/client/index/interfaces/WebSocketClientOptions",
+    "outputPath": "output/trpc/docs/typedoc/client/index/interfaces/WebSocketClientOptions/index.md",
+    "title": "Interface: WebSocketClientOptions",
+    "contentHash": "1b51eb657cdc410c8d07d300f161d905780643b8784f15c66d01da0877b7bb98",
+    "visitedAt": "2026-04-18T16:52:07.546Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/typedoc/client/index/type-aliases/HTTPBatchLinkOptions",
+    "outputPath": "output/trpc/docs/typedoc/client/index/type-aliases/HTTPBatchLinkOptions/index.md",
+    "title": "Type Alias: HTTPBatchLinkOptions<TRoot>",
+    "contentHash": "ff23121c28a1c090bc40bd6bf08fa06e109d0aff0c954c5c2054e49de17135b4",
+    "visitedAt": "2026-04-18T16:52:08.539Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/typedoc/client/index/type-aliases/HTTPBatchStreamLinkOptions",
+    "outputPath": "output/trpc/docs/typedoc/client/index/type-aliases/HTTPBatchStreamLinkOptions/index.md",
+    "title": "Type Alias: HTTPBatchStreamLinkOptions<TRoot>",
+    "contentHash": "1a5a9455a00f6aef427bdad85b65ba5a47542a2b73a11ae800626f42ec0c2645",
+    "visitedAt": "2026-04-18T16:52:11.639Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/typedoc/client/index/type-aliases/LocalLinkOptions",
+    "outputPath": "output/trpc/docs/typedoc/client/index/type-aliases/LocalLinkOptions/index.md",
+    "title": "Type Alias: LocalLinkOptions<TRouter>",
+    "contentHash": "24c3654596640f75ebe4b9c5f2076a64f23e58977b588a6d75aff280fa967dd0",
+    "visitedAt": "2026-04-18T16:52:15.572Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/typedoc/client/index/type-aliases/inferRouterProxyClient",
+    "outputPath": "output/trpc/docs/typedoc/client/index/type-aliases/inferRouterProxyClient/index.md",
+    "title": "Type Alias: inferRouterProxyClient<TRouter>",
+    "contentHash": "1dc824ca4f0b3655e2915159f75c326df7bb0e4dcbecafbefd6aff7ae793be0b",
+    "visitedAt": "2026-04-18T16:52:16.281Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/typedoc/client/index/type-aliases/TRPCClient",
+    "outputPath": "output/trpc/docs/typedoc/client/index/type-aliases/TRPCClient/index.md",
+    "title": "Type Alias: TRPCClient<TRouter>",
+    "contentHash": "5d8a0ee05fea36803f341d1776cee0be23b0984819704311ffd032d570129740",
+    "visitedAt": "2026-04-18T16:52:20.591Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/typedoc/client/index/type-aliases/TRPCFetch",
+    "outputPath": "output/trpc/docs/typedoc/client/index/type-aliases/TRPCFetch/index.md",
+    "title": "Type Alias: TRPCFetch()",
+    "contentHash": "a51de5eafa08a139cf5686c4d5f1145fee9326dec277f6551d0327c861759239",
+    "visitedAt": "2026-04-18T16:52:23.462Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/typedoc/client/index/type-aliases/TRPCClientErrorLike",
+    "outputPath": "output/trpc/docs/typedoc/client/index/type-aliases/TRPCClientErrorLike/index.md",
+    "title": "Type Alias: TRPCClientErrorLike<TInferrable>",
+    "contentHash": "6620e64b03b4e8b9c8016d9025dbda5068a9a2c275d2f3f8bc20c41b6e538969",
+    "visitedAt": "2026-04-18T16:52:23.960Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/typedoc/client/index/type-aliases/TRPCLink",
+    "outputPath": "output/trpc/docs/typedoc/client/index/type-aliases/TRPCLink/index.md",
+    "title": "Type Alias: TRPCLink()<TInferrable>",
+    "contentHash": "c0f4d57108cb8befa2dd9c3fea3c772549933c6ae08f19a177c833ded36a7e8c",
+    "visitedAt": "2026-04-18T16:52:25.963Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/typedoc/client/index/type-aliases/TRPCWebSocketClient",
+    "outputPath": "output/trpc/docs/typedoc/client/index/type-aliases/TRPCWebSocketClient/index.md",
+    "title": "Type Alias: TRPCWebSocketClient",
+    "contentHash": "4fbdba8d4ad61daf03f86319aa4a245af2e8082f8f14ca6fbc4e1964056f577a",
+    "visitedAt": "2026-04-18T16:52:29.239Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/typedoc/client/index/variables/jsonEncoder",
+    "outputPath": "output/trpc/docs/typedoc/client/index/variables/jsonEncoder/index.md",
+    "title": "Variable: jsonEncoder",
+    "contentHash": "1db390a4d02906ea7295076bce0a0d6b106ab562cd87d6a2d6656c08d1b6d835",
+    "visitedAt": "2026-04-18T16:52:29.992Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/typedoc/client/links/httpBatchLink/",
+    "outputPath": "output/trpc/docs/typedoc/client/links/httpBatchLink/index.md",
+    "title": "links/httpBatchLink",
+    "contentHash": "129eb0370b61091ff36fafe463ec9be6aea1119114a8dc69f36593d860178eee",
+    "visitedAt": "2026-04-18T16:52:30.781Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/typedoc/client/links/httpBatchLink/functions/httpBatchLink",
+    "outputPath": "output/trpc/docs/typedoc/client/links/httpBatchLink/functions/httpBatchLink/index.md",
+    "title": "Function: httpBatchLink()",
+    "contentHash": "afc8a13e4db950e9a7f3dc4f3825aefd03b00a71f6616414b5a6e332deb20a4e",
+    "visitedAt": "2026-04-18T16:52:35.055Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/typedoc/client/links/httpLink/",
+    "outputPath": "output/trpc/docs/typedoc/client/links/httpLink/index.md",
+    "title": "links/httpLink",
+    "contentHash": "c517209b61e7b23f29bbac22292d541c7f81d47b724f7ae8b9c2273a1ee789a0",
+    "visitedAt": "2026-04-18T16:52:35.930Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/typedoc/client/links/httpLink/functions/httpLink",
+    "outputPath": "output/trpc/docs/typedoc/client/links/httpLink/functions/httpLink/index.md",
+    "title": "Function: httpLink()",
+    "contentHash": "e7c08011c8e77bf6be9b82973d1893f7977e8a435895f7e59bd092a255e76395",
+    "visitedAt": "2026-04-18T16:52:36.828Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/typedoc/client/links/httpLink/type-aliases/HTTPLinkOptions",
+    "outputPath": "output/trpc/docs/typedoc/client/links/httpLink/type-aliases/HTTPLinkOptions/index.md",
+    "title": "Type Alias: HTTPLinkOptions<TRoot>",
+    "contentHash": "9d3060a60ad3d1c8830557f022950cb77f6d166a959a4d82f233e046b682e719",
+    "visitedAt": "2026-04-18T16:52:40.797Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/typedoc/client/links/loggerLink/",
+    "outputPath": "output/trpc/docs/typedoc/client/links/loggerLink/index.md",
+    "title": "links/loggerLink",
+    "contentHash": "7d6c52e1b8feb35128c67909e108ae383a89207b19950a886dfbadb9b1474626",
+    "visitedAt": "2026-04-18T16:52:42.315Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/typedoc/client/links/loggerLink/functions/loggerLink",
+    "outputPath": "output/trpc/docs/typedoc/client/links/loggerLink/functions/loggerLink/index.md",
+    "title": "Function: loggerLink()",
+    "contentHash": "9d9d54c9a95a7a7e5793b02ba82463624bb4566e6ad458208efd54ff65f3e6da",
+    "visitedAt": "2026-04-18T16:52:42.764Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/typedoc/client/links/loggerLink/interfaces/LoggerLinkOptions",
+    "outputPath": "output/trpc/docs/typedoc/client/links/loggerLink/interfaces/LoggerLinkOptions/index.md",
+    "title": "Interface: LoggerLinkOptions<TRouter>",
+    "contentHash": "84ec29b3ed070aa9e745440f3db8ad71c28aceb1a5130c10ca80d550ae0c02b8",
+    "visitedAt": "2026-04-18T16:52:47.101Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/typedoc/client/links/splitLink/",
+    "outputPath": "output/trpc/docs/typedoc/client/links/splitLink/index.md",
+    "title": "links/splitLink",
+    "contentHash": "a903a1e932db72f97251fb638da2cff9dcf619756f29e49e342c2ca0e08c0c83",
+    "visitedAt": "2026-04-18T16:52:50.128Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/typedoc/client/links/splitLink/functions/splitLink",
+    "outputPath": "output/trpc/docs/typedoc/client/links/splitLink/functions/splitLink/index.md",
+    "title": "Function: splitLink()",
+    "contentHash": "d0a339e270df8028de87c9b26e84593063b50f0b566c946a196b222fc7e43a4f",
+    "visitedAt": "2026-04-18T16:52:52.410Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/typedoc/client/links/wsLink/wsLink/",
+    "outputPath": "output/trpc/docs/typedoc/client/links/wsLink/wsLink/index.md",
+    "title": "links/wsLink/wsLink",
+    "contentHash": "305bb5581f090748bac3b0c6b172f3e013f5e01d7f96252e8b374211e7c738f4",
+    "visitedAt": "2026-04-18T16:52:55.864Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/typedoc/client/links/wsLink/wsLink/functions/wsLink",
+    "outputPath": "output/trpc/docs/typedoc/client/links/wsLink/wsLink/functions/wsLink/index.md",
+    "title": "Function: wsLink()",
+    "contentHash": "0c10a79ed708873bc8c0643c1cfd82a48bb9a68a2927d2133b69d767a8c37ea8",
+    "visitedAt": "2026-04-18T16:52:56.423Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/typedoc/client/links/wsLink/wsLink/type-aliases/WebSocketLinkOptions",
+    "outputPath": "output/trpc/docs/typedoc/client/links/wsLink/wsLink/type-aliases/WebSocketLinkOptions/index.md",
+    "title": "Type Alias: WebSocketLinkOptions<TRouter>",
+    "contentHash": "76e38b1b25167f4a44266cf41adf0f0d833c27a16854e6a9eb35dd713d1dbe35",
+    "visitedAt": "2026-04-18T16:52:58.592Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/typedoc/next/functions/createTRPCNext",
+    "outputPath": "output/trpc/docs/typedoc/next/functions/createTRPCNext/index.md",
+    "title": "Function: createTRPCNext()",
+    "contentHash": "40cdc69a9fb872421afd0299507f03dc8c3a5a4384b7119fe093c84986ae62ed",
+    "visitedAt": "2026-04-18T16:53:02.104Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://trpc.io/docs/typedoc/next/",
+    "outputPath": "output/trpc/docs/typedoc/next/index.md",
+    "title": "@trpc/next",
+    "contentHash": "345643ef26fec1c117a978dbfbdfdcdc771a6cd97c5db26626fb284f151964c3",
+    "visitedAt": "2026-04-18T16:53:03.084Z",
+    "status": "visited"
+  }
+]

@@ -1,0 +1,532 @@
+[
+  {
+    "title": "Current",
+    "url": "https://www.postgresql.org/docs/current/index.html",
+    "children": []
+  },
+  {
+    "title": "Next",
+    "url": "https://www.postgresql.org/docs/current/preface.html",
+    "children": []
+  },
+  {
+    "title": "Legal Notice",
+    "url": "https://www.postgresql.org/docs/current/legalnotice.html",
+    "children": []
+  },
+  {
+    "title": "1. What Is PostgreSQL?",
+    "url": "https://www.postgresql.org/docs/current/intro-whatis.html",
+    "children": []
+  },
+  {
+    "title": "2. A Brief History of PostgreSQL",
+    "url": "https://www.postgresql.org/docs/current/history.html",
+    "children": []
+  },
+  {
+    "title": "3. Conventions",
+    "url": "https://www.postgresql.org/docs/current/notation.html",
+    "children": []
+  },
+  {
+    "title": "4. Further Information",
+    "url": "https://www.postgresql.org/docs/current/resources.html",
+    "children": []
+  },
+  {
+    "title": "5. Bug Reporting Guidelines",
+    "url": "https://www.postgresql.org/docs/current/bug-reporting.html",
+    "children": []
+  },
+  {
+    "title": "I. Tutorial",
+    "url": "https://www.postgresql.org/docs/current/tutorial.html",
+    "children": []
+  },
+  {
+    "title": "1. Getting Started",
+    "url": "https://www.postgresql.org/docs/current/tutorial-start.html",
+    "children": []
+  },
+  {
+    "title": "2. The SQL Language",
+    "url": "https://www.postgresql.org/docs/current/tutorial-sql.html",
+    "children": []
+  },
+  {
+    "title": "3. Advanced Features",
+    "url": "https://www.postgresql.org/docs/current/tutorial-advanced.html",
+    "children": []
+  },
+  {
+    "title": "II. The SQL Language",
+    "url": "https://www.postgresql.org/docs/current/sql.html",
+    "children": []
+  },
+  {
+    "title": "4. SQL Syntax",
+    "url": "https://www.postgresql.org/docs/current/sql-syntax.html",
+    "children": []
+  },
+  {
+    "title": "5. Data Definition",
+    "url": "https://www.postgresql.org/docs/current/ddl.html",
+    "children": []
+  },
+  {
+    "title": "6. Data Manipulation",
+    "url": "https://www.postgresql.org/docs/current/dml.html",
+    "children": []
+  },
+  {
+    "title": "7. Queries",
+    "url": "https://www.postgresql.org/docs/current/queries.html",
+    "children": []
+  },
+  {
+    "title": "8. Data Types",
+    "url": "https://www.postgresql.org/docs/current/datatype.html",
+    "children": []
+  },
+  {
+    "title": "9. Functions and Operators",
+    "url": "https://www.postgresql.org/docs/current/functions.html",
+    "children": []
+  },
+  {
+    "title": "10. Type Conversion",
+    "url": "https://www.postgresql.org/docs/current/typeconv.html",
+    "children": []
+  },
+  {
+    "title": "11. Indexes",
+    "url": "https://www.postgresql.org/docs/current/indexes.html",
+    "children": []
+  },
+  {
+    "title": "12. Full Text Search",
+    "url": "https://www.postgresql.org/docs/current/textsearch.html",
+    "children": []
+  },
+  {
+    "title": "13. Concurrency Control",
+    "url": "https://www.postgresql.org/docs/current/mvcc.html",
+    "children": []
+  },
+  {
+    "title": "14. Performance Tips",
+    "url": "https://www.postgresql.org/docs/current/performance-tips.html",
+    "children": []
+  },
+  {
+    "title": "15. Parallel Query",
+    "url": "https://www.postgresql.org/docs/current/parallel-query.html",
+    "children": []
+  },
+  {
+    "title": "III. Server Administration",
+    "url": "https://www.postgresql.org/docs/current/admin.html",
+    "children": []
+  },
+  {
+    "title": "16. Installation from Binaries",
+    "url": "https://www.postgresql.org/docs/current/install-binaries.html",
+    "children": []
+  },
+  {
+    "title": "17. Installation from Source Code",
+    "url": "https://www.postgresql.org/docs/current/installation.html",
+    "children": []
+  },
+  {
+    "title": "18. Server Setup and Operation",
+    "url": "https://www.postgresql.org/docs/current/runtime.html",
+    "children": []
+  },
+  {
+    "title": "19. Server Configuration",
+    "url": "https://www.postgresql.org/docs/current/runtime-config.html",
+    "children": []
+  },
+  {
+    "title": "20. Client Authentication",
+    "url": "https://www.postgresql.org/docs/current/client-authentication.html",
+    "children": []
+  },
+  {
+    "title": "21. Database Roles",
+    "url": "https://www.postgresql.org/docs/current/user-manag.html",
+    "children": []
+  },
+  {
+    "title": "22. Managing Databases",
+    "url": "https://www.postgresql.org/docs/current/managing-databases.html",
+    "children": []
+  },
+  {
+    "title": "23. Localization",
+    "url": "https://www.postgresql.org/docs/current/charset.html",
+    "children": []
+  },
+  {
+    "title": "24. Routine Database Maintenance Tasks",
+    "url": "https://www.postgresql.org/docs/current/maintenance.html",
+    "children": []
+  },
+  {
+    "title": "25. Backup and Restore",
+    "url": "https://www.postgresql.org/docs/current/backup.html",
+    "children": []
+  },
+  {
+    "title": "26. High Availability, Load Balancing, and Replication",
+    "url": "https://www.postgresql.org/docs/current/high-availability.html",
+    "children": []
+  },
+  {
+    "title": "27. Monitoring Database Activity",
+    "url": "https://www.postgresql.org/docs/current/monitoring.html",
+    "children": []
+  },
+  {
+    "title": "28. Reliability and the Write-Ahead Log",
+    "url": "https://www.postgresql.org/docs/current/wal.html",
+    "children": []
+  },
+  {
+    "title": "29. Logical Replication",
+    "url": "https://www.postgresql.org/docs/current/logical-replication.html",
+    "children": []
+  },
+  {
+    "title": "30. Just-in-Time Compilation (JIT)",
+    "url": "https://www.postgresql.org/docs/current/jit.html",
+    "children": []
+  },
+  {
+    "title": "31. Regression Tests",
+    "url": "https://www.postgresql.org/docs/current/regress.html",
+    "children": []
+  },
+  {
+    "title": "IV. Client Interfaces",
+    "url": "https://www.postgresql.org/docs/current/client-interfaces.html",
+    "children": []
+  },
+  {
+    "title": "32. libpq — C Library",
+    "url": "https://www.postgresql.org/docs/current/libpq.html",
+    "children": []
+  },
+  {
+    "title": "33. Large Objects",
+    "url": "https://www.postgresql.org/docs/current/largeobjects.html",
+    "children": []
+  },
+  {
+    "title": "34. ECPG — Embedded SQL in C",
+    "url": "https://www.postgresql.org/docs/current/ecpg.html",
+    "children": []
+  },
+  {
+    "title": "35. The Information Schema",
+    "url": "https://www.postgresql.org/docs/current/information-schema.html",
+    "children": []
+  },
+  {
+    "title": "V. Server Programming",
+    "url": "https://www.postgresql.org/docs/current/server-programming.html",
+    "children": []
+  },
+  {
+    "title": "36. Extending SQL",
+    "url": "https://www.postgresql.org/docs/current/extend.html",
+    "children": []
+  },
+  {
+    "title": "37. Triggers",
+    "url": "https://www.postgresql.org/docs/current/triggers.html",
+    "children": []
+  },
+  {
+    "title": "38. Event Triggers",
+    "url": "https://www.postgresql.org/docs/current/event-triggers.html",
+    "children": []
+  },
+  {
+    "title": "39. The Rule System",
+    "url": "https://www.postgresql.org/docs/current/rules.html",
+    "children": []
+  },
+  {
+    "title": "40. Procedural Languages",
+    "url": "https://www.postgresql.org/docs/current/xplang.html",
+    "children": []
+  },
+  {
+    "title": "41. PL/pgSQL — SQL Procedural Language",
+    "url": "https://www.postgresql.org/docs/current/plpgsql.html",
+    "children": []
+  },
+  {
+    "title": "42. PL/Tcl — Tcl Procedural Language",
+    "url": "https://www.postgresql.org/docs/current/pltcl.html",
+    "children": []
+  },
+  {
+    "title": "43. PL/Perl — Perl Procedural Language",
+    "url": "https://www.postgresql.org/docs/current/plperl.html",
+    "children": []
+  },
+  {
+    "title": "44. PL/Python — Python Procedural Language",
+    "url": "https://www.postgresql.org/docs/current/plpython.html",
+    "children": []
+  },
+  {
+    "title": "45. Server Programming Interface",
+    "url": "https://www.postgresql.org/docs/current/spi.html",
+    "children": []
+  },
+  {
+    "title": "46. Background Worker Processes",
+    "url": "https://www.postgresql.org/docs/current/bgworker.html",
+    "children": []
+  },
+  {
+    "title": "47. Logical Decoding",
+    "url": "https://www.postgresql.org/docs/current/logicaldecoding.html",
+    "children": []
+  },
+  {
+    "title": "48. Replication Progress Tracking",
+    "url": "https://www.postgresql.org/docs/current/replication-origins.html",
+    "children": []
+  },
+  {
+    "title": "49. Archive Modules",
+    "url": "https://www.postgresql.org/docs/current/archive-modules.html",
+    "children": []
+  },
+  {
+    "title": "50. OAuth Validator Modules",
+    "url": "https://www.postgresql.org/docs/current/oauth-validators.html",
+    "children": []
+  },
+  {
+    "title": "VI. Reference",
+    "url": "https://www.postgresql.org/docs/current/reference.html",
+    "children": []
+  },
+  {
+    "title": "I. SQL Commands",
+    "url": "https://www.postgresql.org/docs/current/sql-commands.html",
+    "children": []
+  },
+  {
+    "title": "II. PostgreSQL Client Applications",
+    "url": "https://www.postgresql.org/docs/current/reference-client.html",
+    "children": []
+  },
+  {
+    "title": "III. PostgreSQL Server Applications",
+    "url": "https://www.postgresql.org/docs/current/reference-server.html",
+    "children": []
+  },
+  {
+    "title": "VII. Internals",
+    "url": "https://www.postgresql.org/docs/current/internals.html",
+    "children": []
+  },
+  {
+    "title": "51. Overview of PostgreSQL Internals",
+    "url": "https://www.postgresql.org/docs/current/overview.html",
+    "children": []
+  },
+  {
+    "title": "52. System Catalogs",
+    "url": "https://www.postgresql.org/docs/current/catalogs.html",
+    "children": []
+  },
+  {
+    "title": "53. System Views",
+    "url": "https://www.postgresql.org/docs/current/views.html",
+    "children": []
+  },
+  {
+    "title": "54. Frontend/Backend Protocol",
+    "url": "https://www.postgresql.org/docs/current/protocol.html",
+    "children": []
+  },
+  {
+    "title": "55. PostgreSQL Coding Conventions",
+    "url": "https://www.postgresql.org/docs/current/source.html",
+    "children": []
+  },
+  {
+    "title": "56. Native Language Support",
+    "url": "https://www.postgresql.org/docs/current/nls.html",
+    "children": []
+  },
+  {
+    "title": "57. Writing a Procedural Language Handler",
+    "url": "https://www.postgresql.org/docs/current/plhandler.html",
+    "children": []
+  },
+  {
+    "title": "58. Writing a Foreign Data Wrapper",
+    "url": "https://www.postgresql.org/docs/current/fdwhandler.html",
+    "children": []
+  },
+  {
+    "title": "59. Writing a Table Sampling Method",
+    "url": "https://www.postgresql.org/docs/current/tablesample-method.html",
+    "children": []
+  },
+  {
+    "title": "60. Writing a Custom Scan Provider",
+    "url": "https://www.postgresql.org/docs/current/custom-scan.html",
+    "children": []
+  },
+  {
+    "title": "61. Genetic Query Optimizer",
+    "url": "https://www.postgresql.org/docs/current/geqo.html",
+    "children": []
+  },
+  {
+    "title": "62. Table Access Method Interface Definition",
+    "url": "https://www.postgresql.org/docs/current/tableam.html",
+    "children": []
+  },
+  {
+    "title": "63. Index Access Method Interface Definition",
+    "url": "https://www.postgresql.org/docs/current/indexam.html",
+    "children": []
+  },
+  {
+    "title": "64. Write Ahead Logging for Extensions",
+    "url": "https://www.postgresql.org/docs/current/wal-for-extensions.html",
+    "children": []
+  },
+  {
+    "title": "65. Built-in Index Access Methods",
+    "url": "https://www.postgresql.org/docs/current/indextypes.html",
+    "children": []
+  },
+  {
+    "title": "66. Database Physical Storage",
+    "url": "https://www.postgresql.org/docs/current/storage.html",
+    "children": []
+  },
+  {
+    "title": "67. Transaction Processing",
+    "url": "https://www.postgresql.org/docs/current/transactions.html",
+    "children": []
+  },
+  {
+    "title": "68. System Catalog Declarations and Initial Contents",
+    "url": "https://www.postgresql.org/docs/current/bki.html",
+    "children": []
+  },
+  {
+    "title": "69. How the Planner Uses Statistics",
+    "url": "https://www.postgresql.org/docs/current/planner-stats-details.html",
+    "children": []
+  },
+  {
+    "title": "70. Backup Manifest Format",
+    "url": "https://www.postgresql.org/docs/current/backup-manifest-format.html",
+    "children": []
+  },
+  {
+    "title": "VIII. Appendixes",
+    "url": "https://www.postgresql.org/docs/current/appendixes.html",
+    "children": []
+  },
+  {
+    "title": "A. PostgreSQL Error Codes",
+    "url": "https://www.postgresql.org/docs/current/errcodes-appendix.html",
+    "children": []
+  },
+  {
+    "title": "B. Date/Time Support",
+    "url": "https://www.postgresql.org/docs/current/datetime-appendix.html",
+    "children": []
+  },
+  {
+    "title": "C. SQL Key Words",
+    "url": "https://www.postgresql.org/docs/current/sql-keywords-appendix.html",
+    "children": []
+  },
+  {
+    "title": "D. SQL Conformance",
+    "url": "https://www.postgresql.org/docs/current/features.html",
+    "children": []
+  },
+  {
+    "title": "E. Release Notes",
+    "url": "https://www.postgresql.org/docs/current/release.html",
+    "children": []
+  },
+  {
+    "title": "F. Additional Supplied Modules and Extensions",
+    "url": "https://www.postgresql.org/docs/current/contrib.html",
+    "children": []
+  },
+  {
+    "title": "G. Additional Supplied Programs",
+    "url": "https://www.postgresql.org/docs/current/contrib-prog.html",
+    "children": []
+  },
+  {
+    "title": "H. External Projects",
+    "url": "https://www.postgresql.org/docs/current/external-projects.html",
+    "children": []
+  },
+  {
+    "title": "I. The Source Code Repository",
+    "url": "https://www.postgresql.org/docs/current/sourcerepo.html",
+    "children": []
+  },
+  {
+    "title": "J. Documentation",
+    "url": "https://www.postgresql.org/docs/current/docguide.html",
+    "children": []
+  },
+  {
+    "title": "K. PostgreSQL Limits",
+    "url": "https://www.postgresql.org/docs/current/limits.html",
+    "children": []
+  },
+  {
+    "title": "L. Acronyms",
+    "url": "https://www.postgresql.org/docs/current/acronyms.html",
+    "children": []
+  },
+  {
+    "title": "M. Glossary",
+    "url": "https://www.postgresql.org/docs/current/glossary.html",
+    "children": []
+  },
+  {
+    "title": "N. Color Support",
+    "url": "https://www.postgresql.org/docs/current/color.html",
+    "children": []
+  },
+  {
+    "title": "O. Obsolete or Renamed Features",
+    "url": "https://www.postgresql.org/docs/current/appendix-obsolete.html",
+    "children": []
+  },
+  {
+    "title": "Bibliography",
+    "url": "https://www.postgresql.org/docs/current/biblio.html",
+    "children": []
+  },
+  {
+    "title": "Index",
+    "url": "https://www.postgresql.org/docs/current/bookindex.html",
+    "children": []
+  }
+]

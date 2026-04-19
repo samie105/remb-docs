@@ -1,0 +1,12 @@
+[
+  {
+    "title": "DOCS",
+    "url": "https://supabase.com/docs",
+    "children": []
+  },
+  {
+    "title": "Start",
+    "url": "https://supabase.com/docs/guides/getting-started",
+    "children": []
+  }
+]

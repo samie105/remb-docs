@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Quick\n                        starts",
+    "url": "https://redis.io/docs/latest/get-started/",
+    "children": []
+  },
+  {
+    "title": "Develop with Redis",
+    "url": "https://redis.io/docs/latest/develop",
+    "children": []
+  },
+  {
+    "title": "Libraries and tools",
+    "url": "https://redis.io/docs/latest/integrate",
+    "children": []
+  },
+  {
+    "title": "Redis products",
+    "url": "https://redis.io/docs/latest/operate",
+    "children": []
+  },
+  {
+    "title": "Commands",
+    "url": "https://redis.io/docs/latest/commands",
+    "children": []
+  },
+  {
+    "title": "APIs",
+    "url": "https://redis.io/docs/latest/apis",
+    "children": []
+  }
+]
