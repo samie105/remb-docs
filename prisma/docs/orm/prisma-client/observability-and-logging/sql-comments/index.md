@@ -5,23 +5,22 @@ canonical_url: "https://www.prisma.io/docs/orm/prisma-client/observability-and-l
 docset: "prisma"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:46:29.949Z"
-content_hash: "a765ff3417b250a4c78210101427058d57d0f4786104665710c1952d5142eeae"
+last_crawled_at: "2026-04-27T19:38:52.554Z"
+content_hash: "f33598b45c60743702b0672ed885977a638a538538f718e5b17f26e497ee941e"
 menu_path: ["SQL comments"]
 section_path: []
-nav_prev: {"path": "prisma/docs/orm/prisma-client/observability-and-logging/opentelemetry-tracing/index.md", "title": "OpenTelemetry tracing"}
-nav_next: {"path": "prisma/docs/orm/prisma-client/queries/advanced/query-optimization-performance/index.md", "title": "Query optimization"}
+tab_variants: ["npm","pnpm","yarn","bun","npm","pnpm","yarn","bun"]
+content_language: "en"
 ---
-
 Add metadata to your SQL queries as comments for improved observability, debugging, and tracing
 
 SQL comments allow you to append metadata to your database queries, making it easier to correlate queries with application context. Prisma ORM supports the [sqlcommenter format](https://google.github.io/sqlcommenter/) developed by Google, which is widely supported by database monitoring tools.
 
 SQL comments are useful for:
 
-*   **Observability**: Correlate database queries with application traces using `traceparent`
-*   **Query insights**: Tag queries with metadata for analysis in database monitoring tools
-*   **Debugging**: Add custom context to queries for easier troubleshooting
+-   **Observability**: Correlate database queries with application traces using `traceparent`
+-   **Query insights**: Tag queries with metadata for analysis in database monitoring tools
+-   **Debugging**: Add custom context to queries for easier troubleshooting
 
 Install one or more first-party plugins depending on your use case:
 
@@ -159,10 +158,10 @@ The `traceparent` header follows the [W3C Trace Context](https://www.w3.org/TR/t
 
 Where:
 
-*   `version`: Always `00` for the current spec
-*   `trace-id`: 32 hexadecimal characters representing the trace ID
-*   `parent-id`: 16 hexadecimal characters representing the parent span ID
-*   `trace-flags`: 2 hexadecimal characters; `01` indicates sampled
+-   `version`: Always `00` for the current spec
+-   `trace-id`: 32 hexadecimal characters representing the trace ID
+-   `parent-id`: 16 hexadecimal characters representing the parent span ID
+-   `trace-flags`: 2 hexadecimal characters; `01` indicates sampled
 
 You can create your own SQL commenter plugins to add custom metadata to queries.
 
@@ -216,42 +215,19 @@ interface SqlCommenterContext {
 
 The `query` property provides information about the Prisma operation:
 
-Property
-
-Type
-
-Description
-
-`type`
-
-`'single'` | `'compacted'`
-
-Whether this is a single query or a batched query
-
-`modelName`
-
-`string` | `undefined`
-
-The model being queried (e.g., `"User"`). Undefined for raw queries.
-
-`action`
-
-`string`
-
-The Prisma operation (e.g., `"findMany"`, `"createOne"`, `"queryRaw"`)
-
-`query`
-
-`unknown` (single) or `queries: unknown[]` (compacted)
-
-The full query object(s). Structure is not part of the public API.
+| Property | Type | Description |
+| --- | --- | --- |
+| `type` | `'single'` | `'compacted'` | Whether this is a single query or a batched query |
+| `modelName` | `string` | `undefined` | The model being queried (e.g., `"User"`). Undefined for raw queries. |
+| `action` | `string` | The Prisma operation (e.g., `"findMany"`, `"createOne"`, `"queryRaw"`) |
+| `query` | `unknown` (single) or `queries: unknown[]` (compacted) | The full query object(s). Structure is not part of the public API. |
 
 The `sql` property is the raw SQL query generated from this Prisma query. It is always available when `PrismaClient` connects to the database and renders SQL queries directly. When using Prisma Accelerate, SQL rendering happens on Accelerate side and the raw SQL strings are not available when SQL commenter plugins are executed on the `PrismaClient` side.
 
 #### [Single vs. compacted queries](#single-vs-compacted-queries)
 
-*   **Single queries** (`type: 'single'`): A single Prisma query is being executed
-*   **Compacted queries** (`type: 'compacted'`): Multiple queries have been batched into a single SQL statement (e.g., automatic `findUnique` batching)
+-   **Single queries** (`type: 'single'`): A single Prisma query is being executed
+-   **Compacted queries** (`type: 'compacted'`): Multiple queries have been batched into a single SQL statement (e.g., automatic `findUnique` batching)
 
 ### [Example: Application metadata](#example-application-metadata)
 
@@ -434,12 +410,12 @@ SELECT "id", "name" FROM "User" /*application='my-app',environment='production',
 
 Key behaviors:
 
-*   Plugins are called synchronously in array order
-*   Later plugins override earlier ones if they return the same key
-*   Keys with `undefined` values are filtered out (they do not remove keys set by earlier plugins)
-*   Keys and values are URL-encoded per the sqlcommenter spec
-*   Single quotes in values are escaped as `\'`
-*   Comments are appended to the end of SQL queries
+-   Plugins are called synchronously in array order
+-   Later plugins override earlier ones if they return the same key
+-   Keys with `undefined` values are filtered out (they do not remove keys set by earlier plugins)
+-   Keys and values are URL-encoded per the sqlcommenter spec
+-   Single quotes in values are escaped as `\'`
+-   Comments are appended to the end of SQL queries
 
 ```
 type SqlCommenterTags = { readonly [key: string]: string | undefined };
@@ -464,8 +440,8 @@ interface SqlCommenterContext {
 
 Context provided to plugins containing information about the query.
 
-*   **`query`**: Information about the Prisma query being executed. See [`SqlCommenterQueryInfo`](#sqlcommenterqueryinfo).
-*   **`sql`**: The SQL query being executed. It is only available when using driver adapters but not when using Accelerate.
+-   **`query`**: Information about the Prisma query being executed. See [`SqlCommenterQueryInfo`](#sqlcommenterqueryinfo).
+-   **`sql`**: The SQL query being executed. It is only available when using driver adapters but not when using Accelerate.
 
 ```
 type SqlCommenterQueryInfo =

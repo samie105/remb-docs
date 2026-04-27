@@ -5,59 +5,13 @@ canonical_url: "https://tailwindcss.com/docs/max-height"
 docset: "tailwind"
 kind: "framework"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:52:44.354Z"
-content_hash: "b76620e598acbcaaf7b1eda6c8b7527a43974b19aea6f7f98cfc1f9514baca1e"
+last_crawled_at: "2026-04-27T20:04:47.365Z"
+content_hash: "ed656ab9a756abe8794e9d9aa236c0a5b45f1f98281aaabb3921029943dc1ced"
 menu_path: ["max-height"]
 section_path: []
-nav_prev: {"path": "tailwind/docs/min-height/index.md", "title": "min-height"}
-nav_next: {"path": "tailwind/docs/inline-size/index.md", "title": "inline-size"}
+content_language: "en"
 ---
-
 Utilities for setting the maximum height of an element.
-
-Class
-
-Styles
-
-`max-h-<number>`
-
-`max-height: calc(var(--spacing) * <number>);`
-
-`max-h-<fraction>`
-
-`max-height: calc(<fraction> * 100%);`
-
-`max-h-none`
-
-`max-height: none;`
-
-`max-h-px`
-
-`max-height: 1px;`
-
-`max-h-full`
-
-`max-height: 100%;`
-
-`max-h-screen`
-
-`max-height: 100vh;`
-
-`max-h-dvh`
-
-`max-height: 100dvh;`
-
-`max-h-dvw`
-
-`max-height: 100dvw;`
-
-`max-h-lvh`
-
-`max-height: 100lvh;`
-
-`max-h-lvw`
-
-`max-height: 100lvw;`
 
 ## [Examples](#examples)
 
@@ -123,7 +77,7 @@ Prefix a `max-height` utility with a breakpoint variant like `md:` to only apply
 <div class="h-48 max-h-full md:max-h-screen ...">  <!-- ... --></div>
 ```
 
-Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).
+Learn more about using variants in the [variants documentation](https://tailwindcss.com/docs/hover-focus-and-other-states).
 
 ## [Customizing your theme](#customizing-your-theme)
 
@@ -133,4 +87,4 @@ The `max-h-<number>` utilities are driven by the `--spacing` theme variable, whi
 @theme {  --spacing: 1px; }
 ```
 
-Learn more about customizing the spacing scale in the [theme variable documentation](tailwind/docs/theme/index.md).
+Learn more about customizing the spacing scale in the [theme variable documentation](https://tailwindcss.com/docs/theme).

@@ -5,29 +5,30 @@ canonical_url: "https://docs.deno.com/runtime/reference/cli/bench/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:50:51.533Z"
-content_hash: "289d5991d54fac2a3b706bd6ebd45ff19929a31ec79a8f93d6cae0909c003628"
+last_crawled_at: "2026-04-27T17:26:10.640Z"
+content_hash: "482aabb2ff5baee53fbdd941af9b18dca3a49f905d6dc6b634dfae76b3016ad7"
 menu_path: ["deno bench"]
 section_path: []
+content_language: "en"
 ---
-On this page
+**On this page**
 
-*   [Quickstart](#quickstart)
-*   [Writing benchmarks](#writing-benchmarks)
-    *   [Async functions](#async-functions)
-    *   [Critical sections](#critical-sections)
-*   [Grouping and baselines](#grouping-and-baselines)
-*   [Running benchmarks](#running-benchmarks)
-*   [Filtering](#filtering)
-    *   [Command line filtering](#command-line-filtering)
-    *   [Bench definition filtering](#bench-definition-filtering)
-        *   [Filtering out (ignoring these benches)](#filtering-out-\(ignoring-these-benches\))
-        *   [Filtering in (only run these benches)](#filtering-in-\(only-run-these-benches\))
-*   [JSON output](#json-output)
-*   [Type checking options](#type-checking-options)
-*   [Dependency management options](#dependency-management-options)
-*   [Options](#options)
-*   [File watching options](#file-watching-options)
+-   [Quickstart](#quickstart)
+-   [Writing benchmarks](#writing-benchmarks)
+    -   [Async functions](#async-functions)
+    -   [Critical sections](#critical-sections)
+-   [Grouping and baselines](#grouping-and-baselines)
+-   [Running benchmarks](#running-benchmarks)
+-   [Filtering](#filtering)
+    -   [Command line filtering](#command-line-filtering)
+    -   [Bench definition filtering](#bench-definition-filtering)
+        -   [Filtering out (ignoring these benches)](#filtering-out-\(ignoring-these-benches\))
+        -   [Filtering in (only run these benches)](#filtering-in-\(only-run-these-benches\))
+-   [JSON output](#json-output)
+-   [Type checking options](#type-checking-options)
+-   [Dependency management options](#dependency-management-options)
+-   [Options](#options)
+-   [File watching options](#file-watching-options)
 
 ## Quickstart
 
@@ -189,9 +190,9 @@ To run a benchmark, call `deno bench` with the file that contains your bench fun
 
 The glob expands to:
 
-*   files named `bench.{ts, tsx, mts, js, mjs, jsx}`,
-*   or files ending with `.bench.{ts, tsx, mts, js, mjs, jsx}`,
-*   or files ending with `_bench.{ts, tsx, mts, js, mjs, jsx}`
+-   files named `bench.{ts, tsx, mts, js, mjs, jsx}`,
+-   or files ending with `.bench.{ts, tsx, mts, js, mjs, jsx}`,
+-   or files ending with `_bench.{ts, tsx, mts, js, mjs, jsx}`
 
 \>\_
 

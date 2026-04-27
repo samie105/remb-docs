@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/app/api-reference/config/next-config-js/
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:08:19.927Z"
-content_hash: "ce956c826750b2732860b5cd3648534c596e9f9c9d6c40e08698e32dc7f2307c"
+last_crawled_at: "2026-04-27T18:07:09.269Z"
+content_hash: "e917bc6c6e94dc9b416e0823fb312c5bbc6a7917680f79a0ec7d46fb02d2b023"
 menu_path: ["reactStrictMode"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/api-reference/config/next-config-js/reactMaxHeadersLength/index.md", "title": "reactMaxHeadersLength"}
-nav_next: {"path": "nextjs/docs/app/api-reference/config/next-config-js/redirects/index.md", "title": "redirects"}
+version: "latest"
+content_language: "en"
 ---
+[Configuration](/docs/app/api-reference/config)[next.config.js](/docs/app/api-reference/config/next-config-js)reactStrictMode
 
 # reactStrictMode
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 > **Good to know**: Since Next.js 13.5.1, Strict Mode is `true` by default with `app` router, so the above configuration is only necessary for `pages`. You can still disable Strict Mode by setting `reactStrictMode: false`.
 
@@ -35,20 +36,4 @@ module.exports = {
 
 If you or your team are not ready to use Strict Mode in your entire application, that's OK! You can incrementally migrate on a page-by-page basis using `<React.StrictMode>`.
 
-[Previous
-
-reactMaxHeadersLength
-
-](/docs/app/api-reference/config/next-config-js/reactMaxHeadersLength)
-
-[Next
-
-redirects
-
-](/docs/app/api-reference/config/next-config-js/redirects)
-
 Was this helpful?
-
-supported.
-
-Send

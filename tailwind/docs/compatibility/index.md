@@ -5,23 +5,21 @@ canonical_url: "https://tailwindcss.com/docs/compatibility"
 docset: "tailwind"
 kind: "framework"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:33:23.062Z"
-content_hash: "c10701e8d8778bc896d423e448af84e93315f4aef1a74550a4fdd42392a652cc"
+last_crawled_at: "2026-04-27T19:46:54.403Z"
+content_hash: "ed7dacd05cf67783a406d56c5a897aa7029d6abb3d6e76193633cb6ccb754771"
 menu_path: ["Compatibility"]
 section_path: []
-nav_prev: {"path": "tailwind/docs/editor-setup/index.md", "title": "Editor setup"}
-nav_next: {"path": "tailwind/docs/upgrade-guide/index.md", "title": "Upgrade guide"}
+content_language: "en"
 ---
-
 Learn about browser support and compatibility with other tooling.
 
 ## [Browser support](#browser-support)
 
 Tailwind CSS v4.0 is designed for and tested on modern browsers, and the core functionality of the framework specifically depends on these browser versions:
 
-*   **Chrome 111** _(released March 2023)_
-*   **Safari 16.4** _(released March 2023)_
-*   **Firefox 128** _(released July 2024)_
+-   **Chrome 111** _(released March 2023)_
+-   **Safari 16.4** _(released March 2023)_
+-   **Firefox 128** _(released July 2024)_
 
 Tailwind also includes support for many bleeding-edge platform features like `field-sizing: content`, `@starting-style`, and `text-wrap: balance` that have limited browser support. It's up to you if you want to use these modern features in your projects — if the browsers you're targeting don't support them, simply don't use those utilities and variants.
 
@@ -39,8 +37,6 @@ Since Tailwind is designed for modern browsers, you actually don't need a prepro
 
 Tailwind will automatically bundle other CSS files you include with `@import`, without the need for a separate preprocessing tool.
 
-app.css
-
 ```
 @import "tailwindcss";@import "./typography.css";
 ```
@@ -50,8 +46,6 @@ In this example, the `typography.css` file will be bundled into your compiled CS
 ### [Variables](#variables)
 
 All modern browsers support [native CSS variables](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties) without the need for any sort of preprocessor:
-
-typography.css
 
 ```
 .typography {  font-size: var(--text-base);  color: var(--color-gray-700);}
@@ -63,15 +57,11 @@ Tailwind relies on CSS variables heavily internally, so if you can use Tailwind 
 
 Under the hood Tailwind uses [Lightning CSS](https://lightningcss.dev/) to process nested CSS like this:
 
-typography.css
-
 ```
 .typography {  p {    font-size: var(--text-base);  }  img {    border-radius: var(--radius-lg);  }}
 ```
 
 Tailwind flattens that nested CSS for you so it can be understood by all modern browsers:
-
-output.css
 
 ```
 .typography p {  font-size: var(--text-base);}.typography img {  border-radius: var(--radius-lg);}
@@ -89,7 +79,7 @@ On top of that, when you're building things with Tailwind CSS, you do the vast m
 
 When using preprocessors like Sass or Less, you may have used functions like `darken` or `lighten` to adjust colors.
 
-When using Tailwind, the recommended workflow is to use a predefined color palette that includes light and dark shades of each color, like the expertly designed [default color palette](tailwind/docs/colors/index.md) included with the framework.
+When using Tailwind, the recommended workflow is to use a predefined color palette that includes light and dark shades of each color, like the expertly designed [default color palette](https://tailwindcss.com/docs/colors) included with the framework.
 
 ```
 <button class="bg-indigo-500 hover:bg-indigo-600 ...">  <!-- ... --></button>
@@ -121,15 +111,11 @@ This means features like `@apply` won't work the way you expect unless you expli
 
 Import your global styles as reference to make sure your theme variables are defined
 
-Button.module.css
-
 ```
 @reference "../app.css";button {  @apply bg-blue-500;}
 ```
 
 Alternatively, you can also just use CSS variables instead of `@apply` which has the added benefit of letting Tailwind skip processing those files and will improve your build performance:
-
-Button.module.css
 
 ```
 button {  background: var(--color-blue-500);}
@@ -145,15 +131,11 @@ If you do use `<style>` blocks, make sure to import your global styles as refere
 
 Import your global styles as reference to make sure your theme variables are defined
 
-Button.vue
-
 ```
 <template>  <button><slot /></button></template><style scoped>  @reference "../app.css";  button {    @apply bg-blue-500;  }</style>
 ```
 
 Or just use your globally defined CSS variables instead of features like `@apply`, which don't require Tailwind to process your component CSS at all:
-
-Button.vue
 
 ```
 <template>  <button><slot /></button></template><style scoped>  button {    background-color: var(--color-blue-500);  }</style>

@@ -5,10 +5,11 @@ canonical_url: "https://docs.deno.com/api/node/querystring/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:39:04.105Z"
-content_hash: "cbcd8728a6301148b4e8b8f1b26eca113d0c21afb9cc935ab6d572636565ea08"
+last_crawled_at: "2026-04-27T17:10:35.461Z"
+content_hash: "975d7b31d7e30f813574fa47b14dae7eaf00d778821d7b58fa3129d2dbbe2a58"
 menu_path: ["querystring - Node documentation"]
 section_path: []
+content_language: "en"
 ---
 ### Usage in Deno
 
@@ -23,8 +24,6 @@ import querystring from 'node:querystring';
 ```
 
 `querystring` is more performant than `URLSearchParams` but is not a standardized API. Use `URLSearchParams` when performance is not critical or when compatibility with browser code is desirable.
-
-### Functions [#](#Functions)
 
 f
 
@@ -50,8 +49,6 @@ f
 
 The `querystring.unescape()` method performs decoding of URL percent-encoded characters on the given `str`.
 
-### Interfaces [#](#Interfaces)
-
 I
 
 [ParsedUrlQuery](.././querystring/~/ParsedUrlQuery "ParsedUrlQuery")
@@ -70,8 +67,8 @@ I
 
 No documentation available
 
-*   [decodeURIComponent](.././querystring/~/ParseOptions#property_decodeuricomponent)
-*   [maxKeys](.././querystring/~/ParseOptions#property_maxkeys)
+-   [decodeURIComponent](.././querystring/~/ParseOptions#property_decodeuricomponent)
+-   [maxKeys](.././querystring/~/ParseOptions#property_maxkeys)
 
 I
 
@@ -79,9 +76,7 @@ I
 
 The `node:querystring` module provides utilities for parsing and formatting URL query strings. It can be accessed using:
 
-*   [encodeURIComponent](.././querystring/~/StringifyOptions#property_encodeuricomponent)
-
-### Variables [#](#Variables)
+-   [encodeURIComponent](.././querystring/~/StringifyOptions#property_encodeuricomponent)
 
 v
 

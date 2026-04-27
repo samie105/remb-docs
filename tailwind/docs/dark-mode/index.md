@@ -5,14 +5,12 @@ canonical_url: "https://tailwindcss.com/docs/dark-mode"
 docset: "tailwind"
 kind: "framework"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:36:35.732Z"
-content_hash: "62eec780490461e1cabfb530b0bf4ac1bfb2032455f21bf2f52905875ed1f4d5"
+last_crawled_at: "2026-04-27T19:48:28.614Z"
+content_hash: "411931b496eb611f1c7caf7278745385ac71d1f558fd989b3047e36c928be8e9"
 menu_path: ["Dark mode"]
 section_path: []
-nav_prev: {"path": "tailwind/docs/responsive-design/index.md", "title": "Responsive design"}
-nav_next: {"path": "tailwind/docs/theme/index.md", "title": "Theme variables"}
+content_language: "en"
 ---
-
 Using variants to style your site in dark mode.
 
 ## [Overview](#overview)
@@ -43,15 +41,11 @@ By default this uses the `prefers-color-scheme` CSS media feature, but you can a
 
 If you want your dark theme to be driven by a CSS selector instead of the `prefers-color-scheme` media query, override the `dark` variant to use your custom selector:
 
-app.css
-
 ```
 @import "tailwindcss";@custom-variant dark (&:where(.dark, .dark *));
 ```
 
 Now instead of `dark:*` utilities being applied based on `prefers-color-scheme`, they will be applied whenever the `dark` class is present earlier in the HTML tree:
-
-HTML
 
 ```
 <html class="dark">  <body>    <div class="bg-white dark:bg-black">      <!-- ... -->    </div>  </body></html>
@@ -63,15 +57,11 @@ How you add the `dark` class to the `html` element is up to you, but a common ap
 
 To use a data attribute instead of a class to activate dark mode, just override the `dark` variant with an attribute selector instead:
 
-app.css
-
 ```
 @import "tailwindcss";@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
 ```
 
 Now dark mode utilities will be applied whenever the `data-theme` attribute is set to `dark` somewhere up the tree:
-
-HTML
 
 ```
 <html data-theme="dark">  <body>    <div class="bg-white dark:bg-black">      <!-- ... -->    </div>  </body></html>
@@ -82,8 +72,6 @@ HTML
 To build three-way theme toggles that support light mode, dark mode, and your system theme, use a custom dark mode selector and the [`window.matchMedia()` API](https://developer.mozilla.org/en-US/docs/Web/API/Window/matchMedia) to detect the system theme and update the `html` element when needed.
 
 Here's a simple example of how you can support light mode, dark mode, as well as respecting the operating system preference:
-
-spaghetti.js
 
 ```
 // On page load or when changing themes, best to add inline in `head` to avoid FOUCdocument.documentElement.classList.toggle(  "dark",  localStorage.theme === "dark" ||    (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches),);// Whenever the user explicitly chooses light modelocalStorage.theme = "light";// Whenever the user explicitly chooses dark modelocalStorage.theme = "dark";// Whenever the user explicitly chooses to respect the OS preferencelocalStorage.removeItem("theme");

@@ -5,30 +5,31 @@ canonical_url: "https://docs.deno.com/runtime/reference/cli/compile/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:51:58.729Z"
-content_hash: "4a946554207af4a75f2af371593223f7b5621b47955784c9bb8b38ed8c21141a"
+last_crawled_at: "2026-04-27T17:27:16.513Z"
+content_hash: "549a095f6801cb7dba6942a2f884d993c209fa154f1b1c80d3918ab57f66a5c0"
 menu_path: ["deno compile"]
 section_path: []
+content_language: "en"
 ---
-On this page
+**On this page**
 
-*   [Flags](#flags)
-*   [Cross Compilation](#cross-compilation)
-    *   [Supported Targets](#supported-targets)
-*   [Icons](#icons)
-*   [Dynamic Imports](#dynamic-imports)
-*   [Including Data Files or Directories](#including-data-files-or-directories)
-*   [Workers](#workers)
-*   [Self-Extracting Executables](#self-extracting-executables)
-    *   [Trade-offs](#trade-offs)
-*   [Code Signing](#code-signing)
-    *   [macOS](#macos)
-    *   [Windows](#windows)
-*   [Unavailable in executables](#unavailable-in-executables)
-*   [Type checking options](#type-checking-options)
-*   [Dependency management options](#dependency-management-options)
-*   [Options](#options)
-*   [Compile options](#compile-options)
+-   [Flags](#flags)
+-   [Cross Compilation](#cross-compilation)
+    -   [Supported Targets](#supported-targets)
+-   [Icons](#icons)
+-   [Dynamic Imports](#dynamic-imports)
+-   [Including Data Files or Directories](#including-data-files-or-directories)
+-   [Workers](#workers)
+-   [Self-Extracting Executables](#self-extracting-executables)
+    -   [Trade-offs](#trade-offs)
+-   [Code Signing](#code-signing)
+    -   [macOS](#macos)
+    -   [Windows](#windows)
+-   [Unavailable in executables](#unavailable-in-executables)
+-   [Type checking options](#type-checking-options)
+-   [Dependency management options](#dependency-management-options)
+-   [Options](#options)
+-   [Compile options](#compile-options)
 
 ## Flags
 
@@ -66,41 +67,13 @@ deno compile --target x86_64-pc-windows-msvc --icon ./icon.ico main.ts
 
 Deno supports cross compiling to all targets regardless of the host platform.
 
-OS
-
-Architecture
-
-Target
-
-Windows
-
-x86\_64
-
-`x86_64-pc-windows-msvc`
-
-macOS
-
-x86\_64
-
-`x86_64-apple-darwin`
-
-macOS
-
-ARM64
-
-`aarch64-apple-darwin`
-
-Linux
-
-x86\_64
-
-`x86_64-unknown-linux-gnu`
-
-Linux
-
-ARM64
-
-`aarch64-unknown-linux-gnu`
+| OS | Architecture | Target |
+| --- | --- | --- |
+| Windows | x86\_64 | `x86_64-pc-windows-msvc` |
+| macOS | x86\_64 | `x86_64-apple-darwin` |
+| macOS | ARM64 | `aarch64-apple-darwin` |
+| Linux | x86\_64 | `x86_64-unknown-linux-gnu` |
+| Linux | ARM64 | `aarch64-unknown-linux-gnu` |
 
 ## Icons
 
@@ -200,9 +173,9 @@ The extraction directory is chosen in order of preference:
 
 1.  `<exe_dir>/.<exe_name>/<hash>/` (next to the compiled binary)
 2.  Platform data directory fallback:
-    *   Linux: `$XDG_DATA_HOME/<exe_name>/<hash>` or `~/.local/share/<exe_name>/<hash>`
-    *   macOS: `~/Library/Application Support/<exe_name>/<hash>`
-    *   Windows: `%LOCALAPPDATA%\<exe_name>\<hash>`
+    -   Linux: `$XDG_DATA_HOME/<exe_name>/<hash>` or `~/.local/share/<exe_name>/<hash>`
+    -   macOS: `~/Library/Application Support/<exe_name>/<hash>`
+    -   Windows: `%LOCALAPPDATA%\<exe_name>\<hash>`
 
 Files are only extracted once — subsequent runs reuse the extracted directory if it already exists and the hash matches.
 
@@ -210,10 +183,10 @@ Files are only extracted once — subsequent runs reuse the extracted directory 
 
 Self-extracting mode enables broader compatibility, but comes with some trade-offs:
 
-*   **Initial startup cost**: The first run takes longer due to file extraction.
-*   **Disk usage**: Extracted files take up additional space on disk.
-*   **Memory usage**: Higher memory usage since embedded content can no longer be referenced as static data.
-*   **Tamper risk**: Users or other code can modify the extracted files on disk.
+-   **Initial startup cost**: The first run takes longer due to file extraction.
+-   **Disk usage**: Extracted files take up additional space on disk.
+-   **Memory usage**: Higher memory usage since embedded content can no longer be referenced as static data.
+-   **Tamper risk**: Users or other code can modify the extracted files on disk.
 
 ## Code Signing
 
@@ -254,8 +227,8 @@ signtool sign /fd SHA256 main.exe
 
 ## Unavailable in executables
 
-*   [Web Storage API](/runtime/reference/web_platform_apis/#web-storage)
-*   [Web Cache](/api/web/~/Cache)
+-   [Web Storage API](/runtime/reference/web_platform_apis/#web-storage)
+-   [Web Cache](/api/web/~/Cache)
 
 Command line usage:
 

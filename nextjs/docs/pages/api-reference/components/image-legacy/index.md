@@ -5,19 +5,20 @@ canonical_url: "https://nextjs.org/docs/pages/api-reference/components/image-leg
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:19:55.838Z"
-content_hash: "c97e72cc71313b5ea723bbbc900d7e72e8281f0a41a4288664e0057468228db1"
+last_crawled_at: "2026-04-27T18:19:18.893Z"
+content_hash: "63e8bc1e9b821a06fd3c72dae9593dbdd1dc76b99b764dc3a9bc5d0ed3edf6d5"
 menu_path: ["Image (Legacy)"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/pages/api-reference/components/image/index.md", "title": "Image"}
-nav_next: {"path": "nextjs/docs/pages/api-reference/components/link/index.md", "title": "Link"}
+version: "latest"
+content_language: "en"
 ---
+[API Reference](/docs/pages/api-reference)[Components](/docs/pages/api-reference/components)Image (Legacy)
 
 # Image (Legacy)
 
 This is a legacy API and no longer recommended. It's still supported for backward compatibility.
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 Starting with Next.js 13, the `next/image` component was rewritten to improve both the performance and developer experience. In order to provide a backwards compatible upgrade solution, the old `next/image` was renamed to `next/legacy/image`.
 
@@ -27,17 +28,17 @@ Starting with Next.js 13, the `next/image` component was rewritten to improve bo
 
 Compared to `next/legacy/image`, the new `next/image` component has the following changes:
 
-*   Removes `<span>` wrapper around `<img>` in favor of [native computed aspect ratio](https://caniuse.com/mdn-html_elements_img_aspect_ratio_computed_from_attributes)
-*   Adds support for canonical `style` prop
-    *   Removes `layout` prop in favor of `style` or `className`
-    *   Removes `objectFit` prop in favor of `style` or `className`
-    *   Removes `objectPosition` prop in favor of `style` or `className`
-*   Removes `IntersectionObserver` implementation in favor of [native lazy loading](https://caniuse.com/loading-lazy-attr)
-    *   Removes `lazyBoundary` prop since there is no native equivalent
-    *   Removes `lazyRoot` prop since there is no native equivalent
-*   Removes `loader` config in favor of [`loader`](#loader) prop
-*   Changed `alt` prop from optional to required
-*   Changed `onLoadingComplete` callback to receive reference to `<img>` element
+-   Removes `<span>` wrapper around `<img>` in favor of [native computed aspect ratio](https://caniuse.com/mdn-html_elements_img_aspect_ratio_computed_from_attributes)
+-   Adds support for canonical `style` prop
+    -   Removes `layout` prop in favor of `style` or `className`
+    -   Removes `objectFit` prop in favor of `style` or `className`
+    -   Removes `objectPosition` prop in favor of `style` or `className`
+-   Removes `IntersectionObserver` implementation in favor of [native lazy loading](https://caniuse.com/loading-lazy-attr)
+    -   Removes `lazyBoundary` prop since there is no native equivalent
+    -   Removes `lazyRoot` prop since there is no native equivalent
+-   Removes `loader` config in favor of [`loader`](#loader) prop
+-   Changed `alt` prop from optional to required
+-   Changed `onLoadingComplete` callback to receive reference to `<img>` element
 
 ## Required Props[](#required-props)
 
@@ -47,14 +48,14 @@ The `<Image />` component requires the following properties.
 
 Must be one of the following:
 
-*   A [statically imported](/docs/pages/api-reference/components/image#src) image file
-*   A path string. This can be either an absolute external URL, or an internal path depending on the [loader](#loader) prop or [loader configuration](#loader-configuration).
+-   A [statically imported](/docs/pages/api-reference/components/image#src) image file
+-   A path string. This can be either an absolute external URL, or an internal path depending on the [loader](#loader) prop or [loader configuration](#loader-configuration).
 
 When using the default [loader](#loader), also consider the following for source images:
 
-*   When src is an external URL, you must also configure [remotePatterns](#remote-patterns)
-*   When src is [animated](#animated-images) or not a known format (JPEG, PNG, WebP, AVIF, GIF, TIFF) the image will be served as-is
-*   When src is SVG format, it will be blocked unless `unoptimized` or `dangerouslyAllowSVG` is enabled
+-   When src is an external URL, you must also configure [remotePatterns](#remote-patterns)
+-   When src is [animated](#animated-images) or not a known format (JPEG, PNG, WebP, AVIF, GIF, TIFF) the image will be served as-is
+-   When src is SVG format, it will be blocked unless `unoptimized` or `dangerouslyAllowSVG` is enabled
 
 ### width[](#width)
 
@@ -84,68 +85,25 @@ The `<Image />` component accepts a number of additional properties beyond those
 
 The layout behavior of the image as the viewport changes size.
 
-`layout`
+| `layout` | Behavior | `srcSet` | `sizes` | Has wrapper and sizer |
+| --- | --- | --- | --- | --- |
+| `intrinsic` (default) | Scale _down_ to fit width of container, up to image size | `1x`, `2x` (based on [imageSizes](#image-sizes)) | N/A | yes |
+| `fixed` | Sized to `width` and `height` exactly | `1x`, `2x` (based on [imageSizes](#image-sizes)) | N/A | yes |
+| `responsive` | Scale to fit width of container | `640w`, `750w`, ... `2048w`, `3840w` (based on [imageSizes](#image-sizes) and [deviceSizes](#device-sizes)) | `100vw` | yes |
+| `fill` | Grow in both X and Y axes to fill container | `640w`, `750w`, ... `2048w`, `3840w` (based on [imageSizes](#image-sizes) and [deviceSizes](#device-sizes)) | `100vw` | yes |
 
-Behavior
-
-`srcSet`
-
-`sizes`
-
-Has wrapper and sizer
-
-`intrinsic` (default)
-
-Scale _down_ to fit width of container, up to image size
-
-`1x`, `2x` (based on [imageSizes](#image-sizes))
-
-N/A
-
-yes
-
-`fixed`
-
-Sized to `width` and `height` exactly
-
-`1x`, `2x` (based on [imageSizes](#image-sizes))
-
-N/A
-
-yes
-
-`responsive`
-
-Scale to fit width of container
-
-`640w`, `750w`, ... `2048w`, `3840w` (based on [imageSizes](#image-sizes) and [deviceSizes](#device-sizes))
-
-`100vw`
-
-yes
-
-`fill`
-
-Grow in both X and Y axes to fill container
-
-`640w`, `750w`, ... `2048w`, `3840w` (based on [imageSizes](#image-sizes) and [deviceSizes](#device-sizes))
-
-`100vw`
-
-yes
-
-*   [Demo the `intrinsic` layout (default)](https://image-legacy-component.nextjs.gallery/layout-intrinsic)
-    *   When `intrinsic`, the image will scale the dimensions down for smaller viewports, but maintain the original dimensions for larger viewports.
-*   [Demo the `fixed` layout](https://image-legacy-component.nextjs.gallery/layout-fixed)
-    *   When `fixed`, the image dimensions will not change as the viewport changes (no responsiveness) similar to the native `img` element.
-*   [Demo the `responsive` layout](https://image-legacy-component.nextjs.gallery/layout-responsive)
-    *   When `responsive`, the image will scale the dimensions down for smaller viewports and scale up for larger viewports.
-    *   Ensure the parent element uses `display: block` in their stylesheet.
-*   [Demo the `fill` layout](https://image-legacy-component.nextjs.gallery/layout-fill)
-    *   When `fill`, the image will stretch both width and height to the dimensions of the parent element, provided the parent element is relative.
-    *   This is usually paired with the [`objectFit`](#objectfit) property.
-    *   Ensure the parent element has `position: relative` in their stylesheet.
-*   [Demo background image](https://image-legacy-component.nextjs.gallery/background)
+-   [Demo the `intrinsic` layout (default)](https://image-legacy-component.nextjs.gallery/layout-intrinsic)
+    -   When `intrinsic`, the image will scale the dimensions down for smaller viewports, but maintain the original dimensions for larger viewports.
+-   [Demo the `fixed` layout](https://image-legacy-component.nextjs.gallery/layout-fixed)
+    -   When `fixed`, the image dimensions will not change as the viewport changes (no responsiveness) similar to the native `img` element.
+-   [Demo the `responsive` layout](https://image-legacy-component.nextjs.gallery/layout-responsive)
+    -   When `responsive`, the image will scale the dimensions down for smaller viewports and scale up for larger viewports.
+    -   Ensure the parent element uses `display: block` in their stylesheet.
+-   [Demo the `fill` layout](https://image-legacy-component.nextjs.gallery/layout-fill)
+    -   When `fill`, the image will stretch both width and height to the dimensions of the parent element, provided the parent element is relative.
+    -   This is usually paired with the [`objectFit`](#objectfit) property.
+    -   Ensure the parent element has `position: relative` in their stylesheet.
+-   [Demo background image](https://image-legacy-component.nextjs.gallery/background)
 
 ### loader[](#loader)
 
@@ -153,9 +111,9 @@ A custom function used to resolve URLs. Setting the loader as a prop on the Imag
 
 A `loader` is a function returning a URL string for the image, given the following parameters:
 
-*   [`src`](#src)
-*   [`width`](#width)
-*   [`quality`](#quality)
+-   [`src`](#src)
+-   [`width`](#width)
+-   [`quality`](#quality)
 
 Here is an example of using a custom loader:
 
@@ -210,8 +168,8 @@ This example `sizes` could have a dramatic effect on performance metrics. Withou
 
 Learn more about `srcset` and `sizes`:
 
-*   [web.dev](https://web.dev/learn/design/responsive-images/#sizes)
-*   [mdn](https://developer.mozilla.org/docs/Web/HTML/Element/img#attr-sizes)
+-   [web.dev](https://web.dev/learn/design/responsive-images/#sizes)
+-   [mdn](https://developer.mozilla.org/docs/Web/HTML/Element/img#attr-sizes)
 
 ### quality[](#quality)
 
@@ -237,9 +195,9 @@ When `empty`, there will be no placeholder while the image is loading, only empt
 
 Try it out:
 
-*   [Demo the `blur` placeholder](https://image-legacy-component.nextjs.gallery/placeholder)
-*   [Demo the shimmer effect with `blurDataURL` prop](https://image-legacy-component.nextjs.gallery/shimmer)
-*   [Demo the color effect with `blurDataURL` prop](https://image-legacy-component.nextjs.gallery/color)
+-   [Demo the `blur` placeholder](https://image-legacy-component.nextjs.gallery/placeholder)
+-   [Demo the shimmer effect with `blurDataURL` prop](https://image-legacy-component.nextjs.gallery/shimmer)
+-   [Demo the color effect with `blurDataURL` prop](https://image-legacy-component.nextjs.gallery/color)
 
 ## Advanced Props[](#advanced-props)
 
@@ -271,8 +229,8 @@ A callback function that is invoked once the image is completely loaded and the 
 
 The `onLoadingComplete` function accepts one parameter, an object with the following properties:
 
-*   [`naturalWidth`](https://developer.mozilla.org/docs/Web/API/HTMLImageElement/naturalWidth)
-*   [`naturalHeight`](https://developer.mozilla.org/docs/Web/API/HTMLImageElement/naturalHeight)
+-   [`naturalWidth`](https://developer.mozilla.org/docs/Web/API/HTMLImageElement/naturalWidth)
+-   [`naturalHeight`](https://developer.mozilla.org/docs/Web/API/HTMLImageElement/naturalHeight)
 
 ### loading[](#loading)
 
@@ -292,9 +250,9 @@ Must be a base64-encoded image. It will be enlarged and blurred, so a very small
 
 Try it out:
 
-*   [Demo the default `blurDataURL` prop](https://image-legacy-component.nextjs.gallery/placeholder)
-*   [Demo the shimmer effect with `blurDataURL` prop](https://image-legacy-component.nextjs.gallery/shimmer)
-*   [Demo the color effect with `blurDataURL` prop](https://image-legacy-component.nextjs.gallery/color)
+-   [Demo the default `blurDataURL` prop](https://image-legacy-component.nextjs.gallery/placeholder)
+-   [Demo the shimmer effect with `blurDataURL` prop](https://image-legacy-component.nextjs.gallery/shimmer)
+-   [Demo the color effect with `blurDataURL` prop](https://image-legacy-component.nextjs.gallery/color)
 
 You can also [generate a solid color Data URL](https://png-pixel.com) to match the image.
 
@@ -388,9 +346,9 @@ module.exports = {
 
 Other properties on the `<Image />` component will be passed to the underlying `img` element with the exception of the following:
 
-*   `srcSet`. Use [Device Sizes](#device-sizes) instead.
-*   `ref`. Use [`onLoadingComplete`](#onloadingcomplete) instead.
-*   `decoding`. It is always `"async"`.
+-   `srcSet`. Use [Device Sizes](#device-sizes) instead.
+-   `ref`. Use [`onLoadingComplete`](#onloadingcomplete) instead.
+-   `decoding`. It is always `"async"`.
 
 ## Configuration Options[](#configuration-options)
 
@@ -441,8 +399,8 @@ module.exports = {
 
 Wildcard patterns can be used for both `pathname` and `hostname` and have the following syntax:
 
-*   `*` match a single path segment or subdomain
-*   `**` match any number of path segments at the end or subdomains at the beginning
+-   `*` match a single path segment or subdomain
+-   `**` match any number of path segments at the end or subdomains at the beginning
 
 The `**` syntax does not work in the middle of the pattern.
 
@@ -521,12 +479,12 @@ module.exports = {
 
 The following Image Optimization cloud providers are included:
 
-*   Default: Works automatically with `next dev`, `next start`, or a custom server
-*   [Vercel](https://vercel.com): Works automatically when you deploy on Vercel, no configuration necessary. [Learn more](https://vercel.com/docs/concepts/image-optimization?utm_source=next-site&utm_medium=docs&utm_campaign=next-website)
-*   [Imgix](https://www.imgix.com): `loader: 'imgix'`
-*   [Cloudinary](https://cloudinary.com): `loader: 'cloudinary'`
-*   [Akamai](https://www.akamai.com): `loader: 'akamai'`
-*   Custom: `loader: 'custom'` use a custom cloud provider by implementing the [`loader`](#loader) prop on the `next/legacy/image` component
+-   Default: Works automatically with `next dev`, `next start`, or a custom server
+-   [Vercel](https://vercel.com): Works automatically when you deploy on Vercel, no configuration necessary. [Learn more](https://vercel.com/docs/concepts/image-optimization?utm_source=next-site&utm_medium=docs&utm_campaign=next-website)
+-   [Imgix](https://www.imgix.com): `loader: 'imgix'`
+-   [Cloudinary](https://cloudinary.com): `loader: 'cloudinary'`
+-   [Akamai](https://www.akamai.com): `loader: 'akamai'`
+-   Custom: `loader: 'custom'` use a custom cloud provider by implementing the [`loader`](#loader) prop on the `next/legacy/image` component
 
 If you need a different provider, you can use the [`loader`](#loader) prop with `next/legacy/image`.
 
@@ -614,10 +572,10 @@ module.exports = {
 
 > **Good to know**:
 > 
-> *   We still recommend using WebP for most use cases.
-> *   AVIF generally takes 50% longer to encode but it compresses 20% smaller compared to WebP. This means that the first time an image is requested, it will typically be slower and then subsequent requests that are cached will be faster.
-> *   When using multiple formats, Next.js will cache each format separately. This means increased storage requirements compared to using a single format, as both AVIF and WebP versions of images will be stored for different browser support.
-> *   If you self-host with a Proxy/CDN in front of Next.js, you must configure the Proxy to forward the `Accept` header.
+> -   We still recommend using WebP for most use cases.
+> -   AVIF generally takes 50% longer to encode but it compresses 20% smaller compared to WebP. This means that the first time an image is requested, it will typically be slower and then subsequent requests that are cached will be faster.
+> -   When using multiple formats, Next.js will cache each format separately. This means increased storage requirements compared to using a single format, as both AVIF and WebP versions of images will be stored for different browser support.
+> -   If you self-host with a Proxy/CDN in front of Next.js, you must configure the Proxy to forward the `Accept` header.
 
 ## Caching Behavior[](#caching-behavior)
 
@@ -627,15 +585,15 @@ Images are optimized dynamically upon request and stored in the `<distDir>/cache
 
 The cache status of an image can be determined by reading the value of the `x-nextjs-cache` (`x-vercel-cache` when deployed on Vercel) response header. The possible values are the following:
 
-*   `MISS` - the path is not in the cache (occurs at most once, on the first visit)
-*   `STALE` - the path is in the cache but exceeded the revalidate time so it will be updated in the background
-*   `HIT` - the path is in the cache and has not exceeded the revalidate time
+-   `MISS` - the path is not in the cache (occurs at most once, on the first visit)
+-   `STALE` - the path is in the cache but exceeded the revalidate time so it will be updated in the background
+-   `HIT` - the path is in the cache and has not exceeded the revalidate time
 
 The expiration (or rather Max Age) is defined by either the [`minimumCacheTTL`](#minimum-cache-ttl) configuration or the upstream image `Cache-Control` header, whichever is larger. Specifically, the `max-age` value of the `Cache-Control` header is used. If both `s-maxage` and `max-age` are found, then `s-maxage` is preferred. The `max-age` is also passed-through to any downstream clients including CDNs and browsers.
 
-*   You can configure [`minimumCacheTTL`](#minimum-cache-ttl) to increase the cache duration when the upstream image does not include `Cache-Control` header or the value is very low.
-*   You can configure [`deviceSizes`](#device-sizes) and [`imageSizes`](#image-sizes) to reduce the total number of possible generated images.
-*   You can configure [formats](#acceptable-formats) to disable multiple formats in favor of a single image format.
+-   You can configure [`minimumCacheTTL`](#minimum-cache-ttl) to increase the cache duration when the upstream image does not include `Cache-Control` header or the value is very low.
+-   You can configure [`deviceSizes`](#device-sizes) and [`imageSizes`](#image-sizes) to reduce the total number of possible generated images.
+-   You can configure [formats](#acceptable-formats) to disable multiple formats in favor of a single image format.
 
 ### Minimum Cache TTL[](#minimum-cache-ttl)
 
@@ -737,20 +695,9 @@ Auto-detection for animated files is best-effort and supports GIF, APNG, and Web
 
 ## Version History[](#version-history)
 
-Version
-
-Changes
-
-`v16.0.0`
-
-`next/legacy/image` deprecated and will be removed in a future version of Next.js. Please use `next/image` instead.
-
-`v13.0.0`
-
-`next/image` renamed to `next/legacy/image`
+| Version | Changes |
+| --- | --- |
+| `v16.0.0` | `next/legacy/image` deprecated and will be removed in a future version of Next.js. Please use `next/image` instead. |
+| `v13.0.0` | `next/image` renamed to `next/legacy/image` |
 
 Was this helpful?
-
-supported.
-
-Send

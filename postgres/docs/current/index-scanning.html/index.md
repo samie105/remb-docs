@@ -5,14 +5,12 @@ canonical_url: "https://www.postgresql.org/docs/current/index-scanning.html"
 docset: "postgres"
 kind: "database"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:52:19.745Z"
-content_hash: "4aa3a4965de1abf73ed140dd776682089d0a8f3d6eec0909d05a335eef37e32e"
+last_crawled_at: "2026-04-27T20:51:05.952Z"
+content_hash: "1b4cf67b9f0cc28ca6f94ccd1cd6ea41db851325f38ffa00ef1a2920a7092779"
 menu_path: ["PostgreSQL: Documentation: 18: 63.3. Index Scanning"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/index-locking.html/index.md", "title": "PostgreSQL: Documentation: 18: 63.4.\u00a0Index Locking Considerations"}
-nav_next: {"path": "postgres/docs/current/index-unique-checks.html/index.md", "title": "PostgreSQL: Documentation: 18: 63.5.\u00a0Index Uniqueness Checks"}
+content_language: "en"
 ---
-
 In an index scan, the index access method is responsible for regurgitating the TIDs of all the tuples it has been told about that match the _scan keys_. The access method is _not_ involved in actually fetching those tuples from the index's parent table, nor in determining whether they pass the scan's visibility test or other conditions.
 
 A scan key is the internal representation of a `WHERE` clause of the form _`index_key`_ _`operator`_ _`constant`_, where the index key is one of the columns of the index and the operator is one of the members of the operator family associated with that index column. An index scan has zero or more scan keys, which are implicitly ANDed — the returned tuples are expected to satisfy all the indicated conditions.
@@ -23,9 +21,9 @@ Note that it is entirely up to the access method to ensure that it correctly fin
 
 Some access methods return index entries in a well-defined order, others do not. There are actually two different ways that an access method can support sorted output:
 
-*   Access methods that always return entries in the natural ordering of their data (such as btree) should set `amcanorder` to true. Currently, such access methods must use btree-compatible strategy numbers for their equality and ordering operators.
+-   Access methods that always return entries in the natural ordering of their data (such as btree) should set `amcanorder` to true. Currently, such access methods must use btree-compatible strategy numbers for their equality and ordering operators.
     
-*   Access methods that support ordering operators should set `amcanorderbyop` to true. This indicates that the index is capable of returning entries in an order satisfying `ORDER BY` _`index_key`_ _`operator`_ _`constant`_. Scan modifiers of that form can be passed to `amrescan` as described previously.
+-   Access methods that support ordering operators should set `amcanorderbyop` to true. This indicates that the index is capable of returning entries in an order satisfying `ORDER BY` _`index_key`_ _`operator`_ _`constant`_. Scan modifiers of that form can be passed to `amrescan` as described previously.
     
 
 The `amgettuple` function has a `direction` argument, which can be either `ForwardScanDirection` (the normal case) or `BackwardScanDirection`. If the first call after `amrescan` specifies `BackwardScanDirection`, then the set of matching index entries is to be scanned back-to-front rather than in the normal front-to-back direction, so `amgettuple` must return the last matching tuple in the index, rather than the first one as it normally would. (This will only occur for access methods that set `amcanorder` to true.) After the first call, `amgettuple` must be prepared to advance the scan in either direction from the most recently returned entry. (But if `amcanbackward` is false, all subsequent calls will have the same direction as the first one.)

@@ -5,14 +5,13 @@ canonical_url: "https://www.prisma.io/docs/orm/core-concepts/supported-databases
 docset: "prisma"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:40:53.402Z"
-content_hash: "ceb2d1e67d52c96ece9db672cc83727ca21508c9d6e753035361e8614c99fa03"
+last_crawled_at: "2026-04-27T19:36:43.069Z"
+content_hash: "3d0cf142cab4cf36e25ec6258b3f293c2555219b0adfe6f211608feb523389be"
 menu_path: ["MySQL"]
 section_path: []
-nav_prev: {"path": "prisma/docs/orm/core-concepts/supported-databases/mongodb/index.md", "title": "MongoDB"}
-nav_next: {"path": "prisma/docs/orm/core-concepts/supported-databases/postgresql/index.md", "title": "PostgreSQL"}
+tab_variants: ["npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun"]
+content_language: "en"
 ---
-
 Supported databases
 
 Use Prisma ORM with MySQL databases including self-hosted MySQL/MariaDB and serverless PlanetScale
@@ -21,6 +20,8 @@ Prisma ORM supports MySQL and MariaDB databases, including self-hosted servers a
 
 Configure the MySQL provider in your Prisma schema:
 
+schema.prisma
+
 ```
 datasource db {
   provider = "mysql"
@@ -28,6 +29,8 @@ datasource db {
 ```
 
 **Self-hosted MySQL/MariaDB:**
+
+prisma.config.ts
 
 ```
 import { defineConfig, env } from "prisma/config";
@@ -42,6 +45,8 @@ export default defineConfig({
 
 **PlanetScale:**
 
+prisma.config.ts
+
 ```
 import { defineConfig, env } from "prisma/config";
 
@@ -53,7 +58,7 @@ export default defineConfig({
 });
 ```
 
-Use JavaScript database drivers via [driver adapters](prisma/docs/orm/core-concepts/supported-databases/database-drivers/index.md#driver-adapters):
+Use JavaScript database drivers via [driver adapters](https://www.prisma.io/docs/orm/core-concepts/supported-databases/database-drivers#driver-adapters):
 
 **With `mariadb` driver:**
 
@@ -87,54 +92,35 @@ const prisma = new PrismaClient({ adapter });
 
 Standard MySQL (5.6+) or MariaDB (10.0+) servers.
 
-*   Connection URL: `mysql://user:pass@host:3306/database`
-*   Full Prisma Migrate support
-*   Use `prisma migrate dev` for development
-*   Both MySQL and MariaDB use the same `mysql` provider
+-   Connection URL: `mysql://user:pass@host:3306/database`
+-   Full Prisma Migrate support
+-   Use `prisma migrate dev` for development
+-   Both MySQL and MariaDB use the same `mysql` provider
 
 **Connection string arguments:**
 
-Argument
-
-Default
-
-Description
-
-`connect_timeout`
-
-`5`
-
-Seconds to wait for connection
-
-`sslcert`
-
-Path to server certificate
-
-`sslidentity`
-
-Path to PKCS12 certificate
-
-`sslaccept`
-
-`accept_invalid_certs`
-
-Certificate validation mode
+| Argument | Default | Description |
+| --- | --- | --- |
+| `connect_timeout` | `5` | Seconds to wait for connection |
+| `sslcert` |  | Path to server certificate |
+| `sslidentity` |  | Path to PKCS12 certificate |
+| `sslaccept` | `accept_invalid_certs` | Certificate validation mode |
 
 ### [PlanetScale](#planetscale)
 
 Serverless MySQL-compatible database built on Vitess clustering system.
 
-*   Connection URL: Update host to `aws.connect.psdb.cloud`
-*   Uses Vitess for horizontal scaling
-*   Database branching workflow (development/production branches)
-*   Non-blocking schema changes
+-   Connection URL: Update host to `aws.connect.psdb.cloud`
+-   Uses Vitess for horizontal scaling
+-   Database branching workflow (development/production branches)
+-   Non-blocking schema changes
 
 **Key features:**
 
-*   Enterprise scalability across multiple servers
-*   Database branches for schema testing
-*   Non-blocking schema deployments
-*   Serverless-optimized (avoids connection limits)
+-   Enterprise scalability across multiple servers
+-   Database branches for schema testing
+-   Non-blocking schema deployments
+-   Serverless-optimized (avoids connection limits)
 
 **Branch workflow:**
 
@@ -153,6 +139,8 @@ PlanetScale generates its own schema diff when merging branches.
 **Option 1: Emulate relations (recommended for default PlanetScale)**
 
 Set `relationMode = "prisma"` to handle relations in Prisma Client:
+
+schema.prisma
 
 ```
 datasource db {
@@ -187,47 +175,19 @@ model Comment {
 
 ### [Type mapping between MySQL and Prisma schema](#type-mapping-between-mysql-and-prisma-schema)
 
-Prisma
+| Prisma | MySQL/MariaDB |
+| --- | --- |
+| `String` | `VARCHAR(191)` |
+| `Boolean` | `TINYINT(1)` |
+| `Int` | `INT` |
+| `BigInt` | `BIGINT` |
+| `Float` | `DOUBLE` |
+| `Decimal` | `DECIMAL(65,30)` |
+| `DateTime` | `DATETIME(3)` |
+| `Json` | `JSON` |
+| `Bytes` | `LONGBLOB` |
 
-MySQL/MariaDB
-
-`String`
-
-`VARCHAR(191)`
-
-`Boolean`
-
-`TINYINT(1)`
-
-`Int`
-
-`INT`
-
-`BigInt`
-
-`BIGINT`
-
-`Float`
-
-`DOUBLE`
-
-`Decimal`
-
-`DECIMAL(65,30)`
-
-`DateTime`
-
-`DATETIME(3)`
-
-`Json`
-
-`JSON`
-
-`Bytes`
-
-`LONGBLOB`
-
-See [full type mapping reference](prisma/docs/orm/reference/prisma-schema-reference/index.md#model-field-scalar-types) for complete details.
+See [full type mapping reference](https://www.prisma.io/docs/orm/reference/prisma-schema-reference#model-field-scalar-types) for complete details.
 
 **SSL connections:**
 
@@ -262,8 +222,6 @@ model User {
 
 PlanetScale production branches are read-only for direct DDL. If you get error P3022, ensure you're:
 
-*   Using `prisma db push` instead of `prisma migrate`
-*   Working on a development branch, or
-*   Using a deploy request to update production
-
-[Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/core-concepts/supported-databases/mysql.mdx)
+-   Using `prisma db push` instead of `prisma migrate`
+-   Working on a development branch, or
+-   Using a deploy request to update production

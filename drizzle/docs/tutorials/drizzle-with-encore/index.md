@@ -5,14 +5,19 @@ canonical_url: "https://orm.drizzle.team/docs/tutorials/drizzle-with-encore"
 docset: "drizzle"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:22:52.424Z"
-content_hash: "eaae47b56bc6ad5d09c3df1a05d0e3bafadb7763167cc747176b6205db0d182e"
+last_crawled_at: "2026-04-27T19:27:00.045Z"
+content_hash: "bac357b019b1f778cdcbe64e263510c32d28aad7a928b7e671bc8b8234c52ced"
 menu_path: ["Drizzle with Encore"]
 section_path: []
-nav_prev: {"path": "drizzle/docs/tutorials/drizzle-nextjs-neon/index.md", "title": "Todo App with Neon Postgres"}
-nav_next: {"path": "drizzle/docs/tutorials/drizzle-with-neon/index.md", "title": "Drizzle with Neon Postgres"}
+content_language: "en"
 ---
+This tutorial demonstrates how to use **Drizzle ORM** with **Encore**, an open source backend framework with built-in infrastructure automation and observability.
 
+This guide assumes familiarity with:
+
+-   You should have the Encore CLI installed. You can install it with:
+
+```bash
 # macOS
 brew install encoredev/tap/encore
 
@@ -23,15 +28,7 @@ curl -L https://encore.dev/install.sh | bash
 iwr https://encore.dev/install.ps1 | iex
 ```
 
-*   You should have installed Drizzle ORM and [Drizzle kit](drizzle/docs/kit-overview/index.md). You can do this by running the following command:
-
-npm
-
-yarn
-
-pnpm
-
-bun
+-   You should have installed Drizzle ORM and [Drizzle kit](https://orm.drizzle.team/docs/kit-overview). You can do this by running the following command:
 
 ```
 npm i drizzle-orm
@@ -59,20 +56,12 @@ bun add -D drizzle-kit
 
 You can create a new Encore project with Drizzle already configured:
 
-```
+```bash
 encore app create my-app --example=ts/drizzle
 cd my-app
 ```
 
 Or if you have an existing Encore project, install Drizzle:
-
-npm
-
-yarn
-
-pnpm
-
-bun
 
 ```
 npm i drizzle-orm
@@ -98,7 +87,7 @@ bun add -D drizzle-kit
 
 Define your database in a `database.ts` file. Encore automatically provisions a PostgreSQL database locally using Docker and in the cloud when you deploy:
 
-```
+```typescript
 import { SQLDatabase } from "encore.dev/storage/sqldb";
 import { drizzle } from "drizzle-orm/node-postgres";
 import * as schema from "./schema";
@@ -119,7 +108,7 @@ Setting `source: "drizzle"` tells Encore to use Drizzle’s migration format.
 
 Create a `schema.ts` file to define your tables:
 
-```
+```typescript
 import * as p from "drizzle-orm/pg-core";
 
 export const users = p.pgTable("users", {
@@ -134,7 +123,7 @@ export const users = p.pgTable("users", {
 
 Create a `drizzle.config.ts` file:
 
-```
+```typescript
 import { defineConfig } from "drizzle-kit";
 
 export default defineConfig({
@@ -148,7 +137,7 @@ export default defineConfig({
 
 Run Drizzle Kit to generate migrations from your schema:
 
-```
+```bash
 drizzle-kit generate
 ```
 
@@ -158,7 +147,7 @@ This creates migration files in the `migrations` folder.
 
 Use Drizzle in your Encore endpoints:
 
-```
+```typescript
 import { api } from "encore.dev/api";
 import { orm } from "./database";
 import { users } from "./schema";
@@ -194,7 +183,7 @@ export const create = api(
 
 Start your Encore app:
 
-```
+```bash
 encore run
 ```
 
@@ -204,6 +193,6 @@ Migrations are automatically applied when you run your Encore application. You d
 
 ## Learn more[](#learn-more)
 
-*   [Encore Documentation](https://encore.dev/docs)
-*   [Encore Drizzle Guide](https://encore.dev/docs/ts/develop/orms/drizzle)
-*   [Drizzle ORM Documentation](drizzle/docs/overview/index.md)
+-   [Encore Documentation](https://encore.dev/docs)
+-   [Encore Drizzle Guide](https://encore.dev/docs/ts/develop/orms/drizzle)
+-   [Drizzle ORM Documentation](https://orm.drizzle.team/docs/overview)

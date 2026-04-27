@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/app/guides/migrating-to-cache-components
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:15:14.621Z"
-content_hash: "c3424b26a05439828520cc0457a67e83713d351b487455602acddc80f9e81cfe"
+last_crawled_at: "2026-04-27T18:14:14.256Z"
+content_hash: "a81afa2e0f98460572fc1b50b0aa8872450807e253cc4f790a14e1d08082d51a"
 menu_path: ["Migrating to Cache Components"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/guides/migrating/from-vite/index.md", "title": "How to migrate from Vite to Next.js"}
-nav_next: {"path": "nextjs/docs/app/guides/multi-tenant/index.md", "title": "How to build multi-tenant apps in Next.js"}
+version: "latest"
+content_language: "en"
 ---
+[App Router](/docs/app)[Guides](/docs/app/guides)Migrating to Cache Components
 
 # Migrating to Cache Components
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 When [Cache Components](/docs/app/api-reference/config/next-config-js/cacheComponents) is enabled, route segment configs like `dynamic`, `revalidate`, and `fetchCache` are replaced by [`use cache`](/docs/app/api-reference/directives/use-cache) and [`cacheLife`](/docs/app/api-reference/functions/cacheLife).
 
@@ -24,8 +25,6 @@ When [Cache Components](/docs/app/api-reference/config/next-config-js/cacheCompo
 **Not needed.** All pages are dynamic by default.
 
 app/page.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -39,8 +38,6 @@ export default function Page() {
 ```
 
 app/page.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -61,8 +58,6 @@ For runtime data access (`cookies()`, `headers()`, etc.), errors will direct you
 
 app/page.tsx
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -76,8 +71,6 @@ export default async function Page() {
 ```
 
 app/page.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -99,8 +92,6 @@ export default async function Page() {
 
 app/page.tsx
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -113,8 +104,6 @@ export default async function Page() {
 ```
 
 app/page.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -135,8 +124,6 @@ export default async function Page() {
 
 app/page.tsx
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -145,8 +132,6 @@ export const fetchCache = 'force-cache'
 ```
 
 app/page.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -163,20 +148,4 @@ export default async function Page() {
 
 **Not supported.** Cache Components requires the Node.js runtime. Switch to the Node.js runtime (the default) by removing the `runtime = 'edge'` export. If you need edge behavior for specific routes, use [Proxy](/docs/app/api-reference/file-conventions/proxy) instead.
 
-[Previous
-
-Vite
-
-](/docs/app/guides/migrating/from-vite)
-
-[Next
-
-Multi-tenant
-
-](/docs/app/guides/multi-tenant)
-
 Was this helpful?
-
-supported.
-
-Send

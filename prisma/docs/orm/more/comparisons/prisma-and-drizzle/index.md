@@ -5,28 +5,26 @@ canonical_url: "https://www.prisma.io/docs/orm/more/comparisons/prisma-and-drizz
 docset: "prisma"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:41:51.275Z"
-content_hash: "16bf43f6ed9ab83a85192b73b8e1f976221ed1a5a5d112ff13de7018cc2d591a"
+last_crawled_at: "2026-04-27T19:36:59.685Z"
+content_hash: "cce806c394e2ca7a9cfeb24752d94821eccf07883e22163f9bed46165085a68d"
 menu_path: ["Drizzle"]
 section_path: []
-nav_prev: {"path": "prisma/docs/orm/core-concepts/supported-databases/sqlite/index.md", "title": "SQLite"}
-nav_next: {"path": "prisma/docs/orm/more/comparisons/prisma-and-mongoose/index.md", "title": "Mongoose"}
+content_language: "en"
 ---
-
 Prisma and Drizzle take different approaches to working with databases. While Drizzle appeals to developers who prefer writing queries close to SQL, Prisma is designed to support teams building and maintaining production applications—where clarity, collaboration, and long-term maintainability matter.
 
 While both libraries solve similar problems, they work in very different ways and have individual pros and cons. Which one to choose will depend on the needs of your project and the exact tradeoffs that are important for it.
 
 **Drizzle** is a traditional SQL query builder that lets you compose SQL queries with JavaScript/TypeScript functions. It can be used to query a database or run migrations. Drizzle also offers a Queries API, which offers a higher level abstraction from SQL and can be used to read nested relations. Drizzle schema is defined in TypeScript files, which are used to generate SQL migrations and are then executed against a database.
 
-**Prisma ORM** mitigates many problems of traditional ORMs, such as bloated model instances, mixing business with storage logic, lack of type-safety or unpredictable queries caused e.g. by lazy loading. It uses the [Prisma schema](prisma/docs/orm/prisma-schema/overview/index.md) to define application models in a declarative way. Prisma Migrate then allows the generation of SQL migrations from the Prisma schema and executes them against the database. CRUD queries are provided by Prisma Client, a lightweight and entirely type-safe database client for Node.js and TypeScript.
+**Prisma ORM** mitigates many problems of traditional ORMs, such as bloated model instances, mixing business with storage logic, lack of type-safety or unpredictable queries caused e.g. by lazy loading. It uses the [Prisma schema](https://www.prisma.io/docs/orm/prisma-schema/overview) to define application models in a declarative way. Prisma Migrate then allows the generation of SQL migrations from the Prisma schema and executes them against the database. CRUD queries are provided by Prisma Client, a lightweight and entirely type-safe database client for Node.js and TypeScript.
 
 Prisma is designed to help teams ship faster—especially when not everyone is a SQL expert.
 
-*   **No SQL bottlenecks**: With Prisma, you don’t need deep SQL knowledge to be productive. Your entire team can contribute to backend code—without relying on one person to write raw queries or debug database logic.
-*   **Shared mental model**: Prisma’s schema is human-readable and easy to reason about. It provides a single, consistent view of your application’s data model.
-*   **Easier code reviews**: Schema changes and data access patterns are transparent and consistent, making it easier for reviewers to understand and approve backend changes.
-*   **Predictable workflows**: Prisma automates migration generation, client typing, and query construction—so your team doesn’t have to.
+-   **No SQL bottlenecks**: With Prisma, you don’t need deep SQL knowledge to be productive. Your entire team can contribute to backend code—without relying on one person to write raw queries or debug database logic.
+-   **Shared mental model**: Prisma’s schema is human-readable and easy to reason about. It provides a single, consistent view of your application’s data model.
+-   **Easier code reviews**: Schema changes and data access patterns are transparent and consistent, making it easier for reviewers to understand and approve backend changes.
+-   **Predictable workflows**: Prisma automates migration generation, client typing, and query construction—so your team doesn’t have to.
 
 Drizzle can be great in the hands of a single developer who knows SQL or prefers learning it. But once you have a team, Prisma removes the friction and knowledge risk that slows you down.
 
@@ -36,9 +34,9 @@ With Prisma, you get _full_ type safety thanks to the generated types. This mean
 
 With Prisma, your data model lives in a single file: schema.prisma.
 
-*   **It’s explicit**: No need to infer types or decipher SQL-generating functions—your schema is right there.
-*   **It’s readable**: Even non-technical teammates can understand your models and relationships.
-*   **It powers everything**: Migrations, TypeScript types, autocompletion, ERD generation, and more all come from your schema.
+-   **It’s explicit**: No need to infer types or decipher SQL-generating functions—your schema is right there.
+-   **It’s readable**: Even non-technical teammates can understand your models and relationships.
+-   **It powers everything**: Migrations, TypeScript types, autocompletion, ERD generation, and more all come from your schema.
 
 In contrast, Drizzle’s schema is built via TypeScript code, which makes it harder to visualize your full data model, increases cognitive load, and can lead to inconsistencies in how models are defined across the codebase. [Read more](https://www.prisma.io/blog/prisma-schema-language-the-best-way-to-define-your-data) about why we are bullish on PSL (Prisma Schema Language).
 
@@ -46,15 +44,15 @@ Want to see your schema as an ERD? With Prisma, it’s one command: `npx prisma 
 
 Drizzle and Prisma ORM operate on different levels of abstraction. Drizzle's philosophy is "If you know SQL, you know Drizzle ORM". It mirrors SQL in its API while Prisma Client provides a higher-level abstraction that was designed with the common tasks of application developers in mind. Prisma ORM's API design heavily leans on the idea of [making the right thing easy](https://jason.energy/right-thing-easy-thing/).
 
-While Prisma Client operates on a higher level of abstraction, you are able to drop down to [raw SQL](prisma/docs/orm/prisma-client/using-raw-sql/index.md) at any time. However, full use of Prisma ORM and development of your application does not require SQL knowledge. Prisma ORM's goal is to construct a query syntax focused on developer experience and productivity that feels familiar to developers. You can learn more about this here: [Why Prisma](prisma/docs/orm/index.md#why-prisma-orm).
+While Prisma Client operates on a higher level of abstraction, you are able to drop down to [raw SQL](https://www.prisma.io/docs/orm/prisma-client/using-raw-sql) at any time. However, full use of Prisma ORM and development of your application does not require SQL knowledge. Prisma ORM's goal is to construct a query syntax focused on developer experience and productivity that feels familiar to developers. You can learn more about this here: [Why Prisma](https://www.prisma.io/docs/orm#why-prisma-orm).
 
-For the few queries that are unable to be expressed in the Prisma Client API, Prisma ORM also offers [TypedSQL](prisma/docs/orm/prisma-client/using-raw-sql/typedsql/index.md) which provides a more familiar and type-safe experience by directly utilizing `.sql` files. Your existing SQL tooling and workflow can work alongside Prisma Client to handle any level of abstraction desired.
+For the few queries that are unable to be expressed in the Prisma Client API, Prisma ORM also offers [TypedSQL](https://www.prisma.io/docs/orm/prisma-client/using-raw-sql/typedsql) which provides a more familiar and type-safe experience by directly utilizing `.sql` files. Your existing SQL tooling and workflow can work alongside Prisma Client to handle any level of abstraction desired.
 
 While fully typed SQL queries are available in Prisma ORM with TypedSQL, the following sections examine a few examples of how the Prisma and Drizzle APIs differ and what the rationale of Prisma ORM's API design is in these cases.
 
 ### [Data modeling](#data-modeling)
 
-Prisma models are defined in the [Prisma schema](prisma/docs/orm/prisma-schema/overview/index.md), while Drizzle uses TypeScript functions for table definitions. These functions are then exported and used in queries.
+Prisma models are defined in the [Prisma schema](https://www.prisma.io/docs/orm/prisma-schema/overview), while Drizzle uses TypeScript functions for table definitions. These functions are then exported and used in queries.
 
 Prisma generates a lightweight database client that exposes a tailored and fully type-safe API to read and write data for the models that are defined in the Prisma schema, following the DataMapper ORM pattern.
 
@@ -179,15 +177,15 @@ const deletedUser = await db.delete(users).where(eq(users.email, "nilu@prisma.io
 
 ### [Relations](#relations)
 
-Working with records that are connected via foreign keys can become very complex in SQL. Prisma ORM's concept of [virtual relation field](prisma/docs/orm/prisma-schema/data-model/relations/index.md#relation-fields) enables an intuitive and convenient way for application developers to work with related data. Some benefits of Prisma ORM's approach are:
+Working with records that are connected via foreign keys can become very complex in SQL. Prisma ORM's concept of [virtual relation field](https://www.prisma.io/docs/orm/prisma-schema/data-model/relations#relation-fields) enables an intuitive and convenient way for application developers to work with related data. Some benefits of Prisma ORM's approach are:
 
-*   traversing relationships via the fluent API ([docs](prisma/docs/orm/prisma-client/queries/relation-queries/index.md#fluent-api))
-*   nested writes that enable updating/creating connected records ([docs](prisma/docs/orm/prisma-client/queries/relation-queries/index.md#nested-writes))
-*   applying filters on related records ([docs](prisma/docs/orm/prisma-client/queries/relation-queries/index.md#relation-filters))
-*   easy and type-safe querying of nested data without worrying about underlying SQL ([docs](prisma/docs/orm/prisma-client/queries/relation-queries/index.md#nested-reads))
-*   creating nested TypeScript typings based on models and their relations ([docs](prisma/docs/orm/prisma-client/type-safety/index.md))
-*   intuitive modeling of relations in the data model via relation fields ([docs](prisma/docs/orm/prisma-schema/data-model/relations/index.md))
-*   implicit handling of relation tables (also sometimes called JOIN, link, pivot or junction tables) ([docs](prisma/docs/orm/prisma-schema/data-model/relations/many-to-many-relations/index.md#implicit-many-to-many-relations))
+-   traversing relationships via the fluent API ([docs](https://www.prisma.io/docs/orm/prisma-client/queries/relation-queries#fluent-api))
+-   nested writes that enable updating/creating connected records ([docs](https://www.prisma.io/docs/orm/prisma-client/queries/relation-queries#nested-writes))
+-   applying filters on related records ([docs](https://www.prisma.io/docs/orm/prisma-client/queries/relation-queries#relation-filters))
+-   easy and type-safe querying of nested data without worrying about underlying SQL ([docs](https://www.prisma.io/docs/orm/prisma-client/queries/relation-queries#nested-reads))
+-   creating nested TypeScript typings based on models and their relations ([docs](https://www.prisma.io/docs/orm/prisma-client/type-safety))
+-   intuitive modeling of relations in the data model via relation fields ([docs](https://www.prisma.io/docs/orm/prisma-schema/data-model/relations))
+-   implicit handling of relation tables (also sometimes called JOIN, link, pivot or junction tables) ([docs](https://www.prisma.io/docs/orm/prisma-schema/data-model/relations/many-to-many-relations#implicit-many-to-many-relations))
 
 ```
 const posts = await prisma.post.findMany({
@@ -286,12 +284,12 @@ These products work hand-in-hand with Prisma ORM to offer comprehensive data too
 
 Prisma minimizes the risk of human error when working with your database.
 
-*   **Renaming a field?** Prisma updates the schema, the database, and the generated client. You stay in sync automatically.
-*   **Changing a relationship?** Prisma generates a safe migration and enforces correctness via full type safety.
+-   **Renaming a field?** Prisma updates the schema, the database, and the generated client. You stay in sync automatically.
+-   **Changing a relationship?** Prisma generates a safe migration and enforces correctness via full type safety.
 
 Teams choose Prisma because it enforces correctness and helps you move fast without breaking things.
 
-Both Drizzle and Prisma ORM have cases where users want to do something not directly supported by the library. Drizzle relies on the expressiveness of SQL to avoid these cases, while Prisma ORM has [Prisma Client extensions](prisma/docs/orm/prisma-client/client-extensions/index.md) to allow any user to add additional behaviors to their instance of Prisma Client. These extensions are also shareable, meaning teams can develop them for use across their projects or even for use by other teams.
+Both Drizzle and Prisma ORM have cases where users want to do something not directly supported by the library. Drizzle relies on the expressiveness of SQL to avoid these cases, while Prisma ORM has [Prisma Client extensions](https://www.prisma.io/docs/orm/prisma-client/client-extensions) to allow any user to add additional behaviors to their instance of Prisma Client. These extensions are also shareable, meaning teams can develop them for use across their projects or even for use by other teams.
 
 While Drizzle is a relatively new product, Prisma ORM was [released in 2021](https://www.prisma.io/blog/how-prisma-orm-became-the-most-downloaded-orm-for-node-js) and is well established in the JavaScript/TypeScript space. It has proven value and many companies trust [Prisma ORM in production](https://www.prisma.io/showcase).
 
@@ -299,26 +297,26 @@ Prisma ORM is also included as the data layer tool of choice in many meta-framew
 
 Thanks to its maturity, Prisma's community has developed a [plethora of useful tools](https://www.prisma.io/ecosystem) that helps with various Prisma workflows. Here are a few highlights:
 
-*   [`prisma-erd-generator`](https://github.com/keonik/prisma-erd-generator#prisma-entity-relationship-diagram-generator): Visualizes the Prisma schema as an entity-relationship-diagram (ERD).
-*   [`prisma-zod-generator`](https://github.com/omar-dulaimi/prisma-zod-generator): Generates [Zod](https://github.com/colinhacks/zod) schemas from the Prisma schema.
-*   [`bridg`](https://github.com/bridg-db/bridg): Let's you access your database from the frontend using Prisma Client.
-*   [`jest-prisma`](https://github.com/Quramy/jest-prisma): Environment for Prisma integrated testing with [Jest](https://jestjs.io/).
-*   [`prisma-pothos-types`](https://github.com/hayes/pothos/tree/main/packages/plugin-prisma): Creates GraphQL types based on Prisma models when using [GraphQL Pothos](https://github.com/hayes/pothos/tree/main).
-*   [`prisma-trpc-generator`](https://github.com/omar-dulaimi/prisma-trpc-generator): Creates [tRPC](https://trpc.io/) routers from your Prisma schema.
-*   [`@cerbos/orm-prisma`](https://github.com/cerbos/query-plan-adapters/tree/main/prisma): Filter data based on authorization policies from [Cerbos](https://www.cerbos.dev/).
+-   [`prisma-erd-generator`](https://github.com/keonik/prisma-erd-generator#prisma-entity-relationship-diagram-generator): Visualizes the Prisma schema as an entity-relationship-diagram (ERD).
+-   [`prisma-zod-generator`](https://github.com/omar-dulaimi/prisma-zod-generator): Generates [Zod](https://github.com/colinhacks/zod) schemas from the Prisma schema.
+-   [`bridg`](https://github.com/bridg-db/bridg): Let's you access your database from the frontend using Prisma Client.
+-   [`jest-prisma`](https://github.com/Quramy/jest-prisma): Environment for Prisma integrated testing with [Jest](https://jestjs.io/).
+-   [`prisma-pothos-types`](https://github.com/hayes/pothos/tree/main/packages/plugin-prisma): Creates GraphQL types based on Prisma models when using [GraphQL Pothos](https://github.com/hayes/pothos/tree/main).
+-   [`prisma-trpc-generator`](https://github.com/omar-dulaimi/prisma-trpc-generator): Creates [tRPC](https://trpc.io/) routers from your Prisma schema.
+-   [`@cerbos/orm-prisma`](https://github.com/cerbos/query-plan-adapters/tree/main/prisma): Filter data based on authorization policies from [Cerbos](https://www.cerbos.dev/).
 
 Prisma isn’t just an ORM—it’s a complete type-safe data toolkit:
 
-*   Prisma Schema → migrations, types, and documentation
-*   Prisma Client → auto-completed, fully type-safe queries
-*   Prisma Studio → a [GUI](https://prisma.io/studio) to inspect and edit data
-*   Native integrations → PlanetScale, Vercel, Cloudflare D1, Neon, and more
+-   Prisma Schema → migrations, types, and documentation
+-   Prisma Client → auto-completed, fully type-safe queries
+-   Prisma Studio → a [GUI](https://prisma.io/studio) to inspect and edit data
+-   Native integrations → PlanetScale, Vercel, Cloudflare D1, Neon, and more
 
 Both Drizzle and Prisma ORM support multiple and different kinds of databases. Drizzle achieves this support through driver implementations created by Drizzle, which integrate with existing third-party database drivers.
 
 Prisma ORM has begun adding support for [third-party database drivers](https://www.prisma.io/blog/serverless-database-drivers-kml1ehxorxzv). Prisma also defaults connections to TLS, which improves security.
 
-Additionally, Prisma ORM supports CockroachDB, Microsoft SQL Server, and MongoDB, which Drizzle does not currently support. Prisma ORM also offers the [relation mode](prisma/docs/orm/prisma-schema/data-model/relations/relation-mode/index.md) that allows Prisma ORM to emulate foreign key constraints for those database engines that do not support it. Drizzle currently supports Cloudflare D1, `bun:sqlite`, and SQLite via HTTP Proxy, which Prisma ORM currently does not.
+Additionally, Prisma ORM supports CockroachDB, Microsoft SQL Server, and MongoDB, which Drizzle does not currently support. Prisma ORM also offers the [relation mode](https://www.prisma.io/docs/orm/prisma-schema/data-model/relations/relation-mode) that allows Prisma ORM to emulate foreign key constraints for those database engines that do not support it. Drizzle currently supports Cloudflare D1, `bun:sqlite`, and SQLite via HTTP Proxy, which Prisma ORM currently does not.
 
 We understand that performance is a key consideration when selecting an ORM. To compare performance of various ORMs, you can use the open-source [database latency benchmark tool](https://pris.ly/benchmark) hosted by Vercel. This tool allows you to evaluate the latency and throughput of various ORMs under different workloads and configurations. By running the benchmarks against the databases or database providers you are considering, you can get a clear picture of their relative performance characteristics to help make an informed decision.
 
@@ -326,11 +324,11 @@ Alternatively, you can also review findings on the [benchmark tool](https://benc
 
 Yes, we are biased, but this is also what we have heard from our users and customers:
 
-*   "We switched from Drizzle to Prisma because schema drift was killing us. Prisma just works."
-*   "I onboarded a junior dev in 2 hours thanks to Prisma’s schema. With Drizzle, it would’ve taken days."
-*   "I trust Prisma to keep our database sane. No one on our team needs to be a Postgres expert."
-*   "The pace of updates and new features from the Prisma team has been nothing short of outstanding."
+-   "We switched from Drizzle to Prisma because schema drift was killing us. Prisma just works."
+-   "I onboarded a junior dev in 2 hours thanks to Prisma’s schema. With Drizzle, it would’ve taken days."
+-   "I trust Prisma to keep our database sane. No one on our team needs to be a Postgres expert."
+-   "The pace of updates and new features from the Prisma team has been nothing short of outstanding."
 
-Both Drizzle ORM and Prisma ORM are tools for data access and migrations. Drizzle is focused on being a thin wrapper around a SQL-like syntax while Prisma is focused on a convenient and expressive API. Other important differences include Prisma ORM's support of MSSQL and MongoDB, support for additional features via [Prisma Client extensions](prisma/docs/orm/prisma-client/client-extensions/index.md), additional cloud-ready products, and a robust ecosystem.
+Both Drizzle ORM and Prisma ORM are tools for data access and migrations. Drizzle is focused on being a thin wrapper around a SQL-like syntax while Prisma is focused on a convenient and expressive API. Other important differences include Prisma ORM's support of MSSQL and MongoDB, support for additional features via [Prisma Client extensions](https://www.prisma.io/docs/orm/prisma-client/client-extensions), additional cloud-ready products, and a robust ecosystem.
 
 On the other hand, for teams that are a mix of developers (front-end, back-end, and full-stack) that have varying levels of experience with databases, Prisma ORM offers a comprehensive and easy-to-learn approach for data access and managing database schemas.

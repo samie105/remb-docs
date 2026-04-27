@@ -5,13 +5,14 @@ canonical_url: "https://nextjs.org/docs/messages/no-duplicate-head"
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:18:17.425Z"
-content_hash: "bfa48f05f99b91831cd253019cd473192c2e2a94b875cc9c6875d241d5a74c12"
+last_crawled_at: "2026-04-27T18:17:43.179Z"
+content_hash: "ec1020604217c4692a26133df618208c92a3c51724e34b15dab2d670e8dfbfa2"
 menu_path: ["No Duplicate Head"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/messages/no-document-import-in-page/index.md", "title": "No Document Import in Page"}
-nav_next: {"path": "nextjs/docs/messages/no-head-element/index.md", "title": "No Head Element"}
+version: "latest"
+content_language: "en"
 ---
+[Docs](/docs)[Errors](/docs)No Duplicate Head
 
 # No Duplicate Head
 
@@ -53,10 +54,6 @@ export default MyDocument
 
 ## Useful Links[](#useful-links)
 
-*   [Custom Document](/docs/pages/building-your-application/routing/custom-document)
+-   [Custom Document](/docs/pages/building-your-application/routing/custom-document)
 
 Was this helpful?
-
-supported.
-
-Send

@@ -5,10 +5,11 @@ canonical_url: "https://docs.deno.com/api/node/wasi/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:44:03.781Z"
-content_hash: "d56e7a38d7f3657185545d6ee4ad62028f832c3573750051e8329396d0799751"
+last_crawled_at: "2026-04-27T17:16:44.897Z"
+content_hash: "6ba10fe28bd2bb8b0263e67e106db62ab49f04b7996fcca00ba5c0685c64dccc"
 menu_path: ["wasi - Node documentation"]
 section_path: []
+content_language: "en"
 ---
 ### Usage in Deno
 
@@ -84,20 +85,16 @@ Use [wabt](https://github.com/WebAssembly/wabt) to compile `.wat` to `.wasm`
 wat2wasm demo.wat
 ```
 
-### Classes [#](#Classes)
-
 c
 
 [WASI](.././wasi/~/WASI "WASI")
 
 No documentation available
 
-*   [getImportObject](.././wasi/~/WASI#method_getimportobject_0)
-*   [initialize](.././wasi/~/WASI#method_initialize_0)
-*   [start](.././wasi/~/WASI#method_start_0)
-*   [wasiImport](.././wasi/~/WASI#property_wasiimport)
-
-### Interfaces [#](#Interfaces)
+-   [getImportObject](.././wasi/~/WASI#method_getimportobject_0)
+-   [initialize](.././wasi/~/WASI#method_initialize_0)
+-   [start](.././wasi/~/WASI#method_start_0)
+-   [wasiImport](.././wasi/~/WASI#property_wasiimport)
 
 I
 
@@ -105,11 +102,11 @@ I
 
 No documentation available
 
-*   [args](.././wasi/~/WASIOptions#property_args)
-*   [env](.././wasi/~/WASIOptions#property_env)
-*   [preopens](.././wasi/~/WASIOptions#property_preopens)
-*   [returnOnExit](.././wasi/~/WASIOptions#property_returnonexit)
-*   [stderr](.././wasi/~/WASIOptions#property_stderr)
-*   [stdin](.././wasi/~/WASIOptions#property_stdin)
-*   [stdout](.././wasi/~/WASIOptions#property_stdout)
-*   [version](.././wasi/~/WASIOptions#property_version)
+-   [args](.././wasi/~/WASIOptions#property_args)
+-   [env](.././wasi/~/WASIOptions#property_env)
+-   [preopens](.././wasi/~/WASIOptions#property_preopens)
+-   [returnOnExit](.././wasi/~/WASIOptions#property_returnonexit)
+-   [stderr](.././wasi/~/WASIOptions#property_stderr)
+-   [stdin](.././wasi/~/WASIOptions#property_stdin)
+-   [stdout](.././wasi/~/WASIOptions#property_stdout)
+-   [version](.././wasi/~/WASIOptions#property_version)

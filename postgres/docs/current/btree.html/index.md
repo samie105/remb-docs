@@ -5,14 +5,12 @@ canonical_url: "https://www.postgresql.org/docs/current/btree.html"
 docset: "postgres"
 kind: "database"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:47:42.511Z"
-content_hash: "6f99d9736d62a08b4db00bef10ce2936ff6a26c956df8e953f787d862ebb5fcb"
+last_crawled_at: "2026-04-27T20:48:17.425Z"
+content_hash: "038c295089bc1b5ef7e221b4e10d93f425998027a36931f4356a11e8599e0d0e"
 menu_path: ["PostgreSQL: Documentation: 18: 65.1. B-Tree Indexes"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/btree-gist.html/index.md", "title": "PostgreSQL: Documentation: 18: F.8.\u00a0btree_gist \u2014 GiST operator classes with B-tree behavior"}
-nav_next: {"path": "postgres/docs/current/catalog-pg-namespace.html/index.md", "title": "PostgreSQL: Documentation: 18: 52.32.\u00a0pg_namespace"}
+content_language: "en"
 ---
-
 ### 65.1.3. B-Tree Support Functions [#](#BTREE-SUPPORT-FUNCS)
 
 As shown in [Table 36.9](https://www.postgresql.org/docs/current/xindex.html#XINDEX-BTREE-SUPPORT-TABLE "Table 36.9. B-Tree Support Functions"), btree defines one required and five optional support functions. The six user-defined methods are:
@@ -40,13 +38,13 @@ _`val`_ and _`base`_ must be of the same type, which is one of the types support
 
 The essential semantics of an `in_range` function depend on the two Boolean flag parameters. It should add or subtract _`base`_ and _`offset`_, then compare _`val`_ to the result, as follows:
 
-*   if `!`_`sub`_ and `!`_`less`_, return _`val`_ `>=` (_`base`_ `+` _`offset`_)
+-   if `!`_`sub`_ and `!`_`less`_, return _`val`_ `>=` (_`base`_ `+` _`offset`_)
     
-*   if `!`_`sub`_ and _`less`_, return _`val`_ `<=` (_`base`_ `+` _`offset`_)
+-   if `!`_`sub`_ and _`less`_, return _`val`_ `<=` (_`base`_ `+` _`offset`_)
     
-*   if _`sub`_ and `!`_`less`_, return _`val`_ `>=` (_`base`_ `-` _`offset`_)
+-   if _`sub`_ and `!`_`less`_, return _`val`_ `>=` (_`base`_ `-` _`offset`_)
     
-*   if _`sub`_ and _`less`_, return _`val`_ `<=` (_`base`_ `-` _`offset`_)
+-   if _`sub`_ and _`less`_, return _`val`_ `<=` (_`base`_ `-` _`offset`_)
     
 
 Before doing so, the function should check the sign of _`offset`_: if it is less than zero, raise error `ERRCODE_INVALID_PRECEDING_OR_FOLLOWING_SIZE` (22013) with error text like “invalid preceding or following size in window function”. (This is required by the SQL standard, although nonstandard operator families might perhaps choose to ignore this restriction, since there seems to be little semantic necessity for it.) This requirement is delegated to the `in_range` function so that the core code needn't understand what “less than zero” means for a particular data type.
@@ -55,13 +53,13 @@ An additional expectation is that `in_range` functions should, if practical, avo
 
 The results of the `in_range` function must be consistent with the sort ordering imposed by the operator family. To be precise, given any fixed values of _`offset`_ and _`sub`_, then:
 
-*   If `in_range` with _`less`_ = true is true for some _`val1`_ and _`base`_, it must be true for every _`val2`_ `<=` _`val1`_ with the same _`base`_.
+-   If `in_range` with _`less`_ = true is true for some _`val1`_ and _`base`_, it must be true for every _`val2`_ `<=` _`val1`_ with the same _`base`_.
     
-*   If `in_range` with _`less`_ = true is false for some _`val1`_ and _`base`_, it must be false for every _`val2`_ `>=` _`val1`_ with the same _`base`_.
+-   If `in_range` with _`less`_ = true is false for some _`val1`_ and _`base`_, it must be false for every _`val2`_ `>=` _`val1`_ with the same _`base`_.
     
-*   If `in_range` with _`less`_ = true is true for some _`val`_ and _`base1`_, it must be true for every _`base2`_ `>=` _`base1`_ with the same _`val`_.
+-   If `in_range` with _`less`_ = true is true for some _`val`_ and _`base1`_, it must be true for every _`base2`_ `>=` _`base1`_ with the same _`val`_.
     
-*   If `in_range` with _`less`_ = true is false for some _`val`_ and _`base1`_, it must be false for every _`base2`_ `<=` _`base1`_ with the same _`val`_.
+-   If `in_range` with _`less`_ = true is false for some _`val`_ and _`base1`_, it must be false for every _`base2`_ `<=` _`base1`_ with the same _`val`_.
     
 
 Analogous statements with inverted conditions hold when _`less`_ = false.

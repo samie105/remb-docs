@@ -5,23 +5,39 @@ canonical_url: "https://nextjs.org/docs/app/guides/sass"
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:16:11.112Z"
-content_hash: "af2f1931c98bccff48c282f5de73532af5cb81b0488a4524408819130e85de22"
+last_crawled_at: "2026-04-27T18:15:25.902Z"
+content_hash: "9f10ce7610bdba6f2ff7ffc5749cbbf5a3b8943f23b4a607271683367db94b4a"
 menu_path: ["How to use Sass"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/guides/rendering-philosophy/index.md", "title": "Next.js Rendering Philosophy"}
-nav_next: {"path": "nextjs/docs/app/guides/scripts/index.md", "title": "How to load and optimize scripts"}
+version: "latest"
+tab_variants: ["pnpm","npm","yarn","bun"]
+content_language: "en"
 ---
+[App Router](/docs/app)[Guides](/docs/app/guides)Sass
 
 # How to use Sass
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 Next.js has built-in support for integrating with Sass after the package is installed using both the `.scss` and `.sass` extensions. You can use component-level Sass via CSS Modules and the `.module.scss`or `.module.sass` extension.
 
 First, install [`sass`](https://github.com/sass/sass):
 
-pnpmnpmyarnbun
+#### pnpm
+
+pnpm
+
+#### npm
+
+npm
+
+#### yarn
+
+yarn
+
+#### bun
+
+bun
 
 Terminal
 
@@ -40,8 +56,6 @@ pnpm add -D sass
 If you want to configure your Sass options, use `sassOptions` in `next.config`.
 
 next.config.ts
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -62,8 +76,6 @@ export default nextConfig
 You can use the `implementation` property to specify the Sass implementation to use. By default, Next.js uses the [`sass`](https://www.npmjs.com/package/sass) package.
 
 next.config.ts
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -107,20 +119,4 @@ export default function Page() {
 }
 ```
 
-[Previous
-
-Rendering Philosophy
-
-](/docs/app/guides/rendering-philosophy)
-
-[Next
-
-Scripts
-
-](/docs/app/guides/scripts)
-
 Was this helpful?
-
-supported.
-
-Send

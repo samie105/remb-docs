@@ -5,14 +5,15 @@ canonical_url: "https://docs.deno.com/runtime/contributing/release_schedule/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:45:52.533Z"
-content_hash: "9fa8c67ee22e2c72ab7e35932d186690800f8d984b72a18f9c64cfc888b11aea"
+last_crawled_at: "2026-04-27T17:18:55.838Z"
+content_hash: "983cad56dfaaf4bbd76e94a9bdaaa828fd8ecbed8d9f812fd8de9c98925ba2d6"
 menu_path: ["Release Schedule"]
 section_path: []
+content_language: "en"
 ---
-On this page
+**On this page**
 
-*   [Canary channel](#canary-channel)
+-   [Canary channel](#canary-channel)
 
 A new minor release for the `deno` cli is scheduled for release every 12 weeks.
 

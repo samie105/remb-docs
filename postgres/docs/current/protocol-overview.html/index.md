@@ -5,14 +5,12 @@ canonical_url: "https://www.postgresql.org/docs/current/protocol-overview.html"
 docset: "postgres"
 kind: "database"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:50:32.437Z"
-content_hash: "886147f67ab42f1345799da2bd45b7303e8b53ecb0789e7b7385da51342e1f0e"
+last_crawled_at: "2026-04-27T20:49:58.333Z"
+content_hash: "4c2f7bb1f800a0500033b67b5b785df1f0fa3d0faa6a1cec83399609bdda3002"
 menu_path: ["PostgreSQL: Documentation: 18: 54.1. Overview"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/protocol-logicalrep-message-formats.html/index.md", "title": "PostgreSQL: Documentation: 18: 54.9.\u00a0Logical Replication Message Formats"}
-nav_next: {"path": "postgres/docs/current/protocol-replication.html/index.md", "title": "PostgreSQL: Documentation: 18: 54.4.\u00a0Streaming Replication Protocol"}
+content_language: "en"
 ---
-
 The protocol has separate phases for startup and normal operation. In the startup phase, the frontend opens a connection to the server and authenticates itself to the satisfaction of the server. (This might involve a single message, or multiple messages depending on the authentication method being used.) If all goes well, the server then sends status information to the frontend, and finally enters normal operation. Except for the initial startup-request message, this part of the protocol is driven by the server.
 
 During normal operation, the frontend sends queries and other commands to the backend, and the backend sends back query results and other responses. There are a few cases (such as `NOTIFY`) wherein the backend will send unsolicited messages, but for the most part this portion of a session is driven by frontend requests.
@@ -60,33 +58,9 @@ The protocol negotiation was introduced in PostgreSQL version 9.3.21. Earlier ve
 **Table 54.1. Protocol Versions**
 
   
-
-Version
-
-Supported by
-
-Description
-
-3.2
-
-PostgreSQL 18 and later
-
-Current latest version. The secret key used in query cancellation was enlarged from 4 bytes to a variable length field. The BackendKeyData message was changed to accommodate that, and the CancelRequest message was redefined to have a variable length payload.
-
-3.1
-
-\-
-
-Reserved. Version 3.1 has not been used by any PostgreSQL version, but it was skipped because old versions of the popular pgbouncer application had a bug in the protocol negotiation which made it incorrectly claim that it supported version 3.1.
-
-3.0
-
-PostgreSQL 7.4 and later
-
- 
-
-2.0
-
-up to PostgreSQL 13
-
-See previous releases of the PostgreSQL documentation for details
+| Version | Supported by | Description |
+| --- | --- | --- |
+| 3.2 | PostgreSQL 18 and later | Current latest version. The secret key used in query cancellation was enlarged from 4 bytes to a variable length field. The BackendKeyData message was changed to accommodate that, and the CancelRequest message was redefined to have a variable length payload. |
+| 3.1 | \- | Reserved. Version 3.1 has not been used by any PostgreSQL version, but it was skipped because old versions of the popular pgbouncer application had a bug in the protocol negotiation which made it incorrectly claim that it supported version 3.1. |
+| 3.0 | PostgreSQL 7.4 and later |   |
+| 2.0 | up to PostgreSQL 13 | See previous releases of the PostgreSQL documentation for details |

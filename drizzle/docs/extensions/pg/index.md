@@ -5,14 +5,12 @@ canonical_url: "https://orm.drizzle.team/docs/extensions/pg"
 docset: "drizzle"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:48:40.132Z"
-content_hash: "41e95b48f2922426ffe230c238907f49a3bce5efbac288159bbbb151f0f03ad1"
+last_crawled_at: "2026-04-27T18:38:40.904Z"
+content_hash: "7d7f5c96d75eef733c50af71528af7fda10089f5cd038f2edb1f6bf3254d372e"
 menu_path: ["PostgreSQL extensions"]
 section_path: []
-nav_prev: {"path": "drizzle/docs/rls/index.md", "title": "Row-Level Security (RLS)"}
-nav_next: {"path": "drizzle/docs/relations/index.md", "title": "Drizzle soft relations"}
+content_language: "en"
 ---
-
 ### `pg_vector`[](#pg_vector)
 
 There is no specific code to create an extension inside the Drizzle schema. We assume that if you are using vector types, indexes, and queries, you have a PostgreSQL database with the pg\_vector extension installed.
@@ -21,9 +19,9 @@ There is no specific code to create an extension inside the Drizzle schema. We a
 
 Store your vectors with the rest of your data. Supports:
 
-*   exact and approximate nearest neighbor search
-*   single-precision, half-precision, binary, and sparse vectors
-*   L2 distance, inner product, cosine distance, L1 distance, Hamming distance, and Jaccard distance
+-   exact and approximate nearest neighbor search
+-   single-precision, half-precision, binary, and sparse vectors
+-   L2 distance, inner product, cosine distance, L1 distance, Hamming distance, and Jaccard distance
 
 #### Column Types[](#column-types)
 
@@ -33,13 +31,13 @@ Store your vectors with the rest of your data
 
 For more info please refer to the official pg\_vector docs **[docs.](https://github.com/pgvector/pgvector)**
 
-```
+```ts
 const table = pgTable('table', {
     embedding: vector({ dimensions: 3 })
 })
 ```
 
-```
+```sql
 CREATE TABLE IF NOT EXISTS "table" (
 	"embedding" vector(3)
 );
@@ -53,7 +51,7 @@ Let’s take a few examples of `pg_vector` indexes from the `pg_vector` docs and
 
 #### L2 distance, Inner product and Cosine distance[](#l2-distance-inner-product-and-cosine-distance)
 
-```
+```ts
 // CREATE INDEX ON items USING hnsw (embedding vector_l2_ops);
 // CREATE INDEX ON items USING hnsw (embedding vector_ip_ops);
 // CREATE INDEX ON items USING hnsw (embedding vector_cosine_ops);
@@ -69,7 +67,7 @@ const table = pgTable('items', {
 
 #### L1 distance, Hamming distance and Jaccard distance - added in pg\_vector 0.7.0 version[](#l1-distance-hamming-distance-and-jaccard-distance---added-in-pg_vector-070-version)
 
-```
+```ts
 // CREATE INDEX ON items USING hnsw (embedding vector_l1_ops);
 // CREATE INDEX ON items USING hnsw (embedding bit_hamming_ops);
 // CREATE INDEX ON items USING hnsw (embedding bit_jaccard_ops);
@@ -89,7 +87,7 @@ For queries, you can use predefined functions for vectors or create custom ones 
 
 You can also use the following helpers:
 
-```
+```ts
 import { l2Distance, l1Distance, innerProduct, 
           cosineDistance, hammingDistance, jaccardDistance } from 'drizzle-orm'
 
@@ -105,7 +103,7 @@ jaccardDistance(table.column, '101') // table.column <%> '101'
 
 If `pg_vector` has some other functions to use, you can replicate implementation from existing one we have. Here is how it can be done
 
-```
+```ts
 export function l2Distance(
   column: SQLWrapper | AnyColumn,
   value: number[] | string[] | TypedQueryBuilder<any> | string,
@@ -123,7 +121,7 @@ Name it as you wish and change the operator. This example allows for a numbers a
 
 Let’s take a few examples of `pg_vector` queries from the `pg_vector` docs and translate them to Drizzle
 
-```
+```ts
 import { l2Distance } from 'drizzle-orm';
 
 // SELECT * FROM items ORDER BY embedding <-> '[3,1,2]' LIMIT 5;
@@ -150,7 +148,7 @@ As [PostGIS](https://postgis.net/) website mentions:
 
 > PostGIS extends the capabilities of the PostgreSQL relational database by adding support for storing, indexing, and querying geospatial data.
 
-If you are using the `introspect` or `push` commands with the PostGIS extension and don’t want PostGIS tables to be included, you can use [`extensionsFilters`](drizzle/docs/drizzle-config-file/index.md#extensionsfilters) to ignore all the PostGIS tables
+If you are using the `introspect` or `push` commands with the PostGIS extension and don’t want PostGIS tables to be included, you can use [`extensionsFilters`](https://orm.drizzle.team/docs/drizzle-config-file#extensionsfilters) to ignore all the PostGIS tables
 
 #### Column Types[](#column-types-1)
 
@@ -160,7 +158,7 @@ Store your geometry data with the rest of your data
 
 For more info please refer to the official PostGIS docs **[docs.](https://postgis.net/workshops/postgis-intro/geometries.html)**
 
-```
+```ts
 const items = pgTable('items', {
   geo: geometry('geo', { type: 'point' }),
   geoObj: geometry('geo_obj', { type: 'point', mode: 'xy' }),
@@ -172,8 +170,8 @@ const items = pgTable('items', {
 
 Type `geometry` has 2 modes for mappings from the database: `tuple` and `xy`.
 
-*   `tuple` will be accepted for insert and mapped on select to a tuple. So, the database geometry will be typed as \[1,2\] with drizzle.
-*   `xy` will be accepted for insert and mapped on select to an object with x, y coordinates. So, the database geometry will be typed as `{ x: 1, y: 2 }` with drizzle
+-   `tuple` will be accepted for insert and mapped on select to a tuple. So, the database geometry will be typed as \[1,2\] with drizzle.
+-   `xy` will be accepted for insert and mapped on select to an object with x, y coordinates. So, the database geometry will be typed as `{ x: 1, y: 2 }` with drizzle
 
 **type**
 
@@ -185,7 +183,7 @@ With the available Drizzle indexes API, you should be able to write any indexes 
 
 **Examples**
 
-```
+```ts
 // CREATE INDEX custom_idx ON table USING GIST (geom);
 
 const table = pgTable('table', {

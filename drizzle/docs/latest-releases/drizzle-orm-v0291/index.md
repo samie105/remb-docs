@@ -5,22 +5,20 @@ canonical_url: "https://orm.drizzle.team/docs/latest-releases/drizzle-orm-v0291"
 docset: "drizzle"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:12:23.325Z"
-content_hash: "8feb274270a5c1cca621897effc367072ebca105894365ec6f2addc7bb9f611e"
+last_crawled_at: "2026-04-27T19:11:01.338Z"
+content_hash: "c1b277633e25769534ee8223bdb6828bcea1fd813a6c52dec842d7b61bb471ae"
 menu_path: ["Drizzle ORM - DrizzleORM v0.29.1 release"]
 section_path: []
-nav_prev: {"path": "drizzle/docs/latest-releases/drizzle-orm-v0290/index.md", "title": "Drizzle ORM - DrizzleORM v0.29.0 release"}
-nav_next: {"path": "drizzle/docs/latest-releases/drizzle-orm-v0292/index.md", "title": "Drizzle ORM - DrizzleORM v0.29.2 release"}
+content_language: "en"
 ---
-
 DrizzleORM v0.29.1 release
 
 Nov 29, 2023
 
 ## Fixes
 
-*   Forward args correctly when using withReplica feature ([#1536](https://github.com/drizzle-team/drizzle-orm/pull/1536))
-*   Fix selectDistinctOn not working with multiple columns ([#1466](https://github.com/drizzle-team/drizzle-orm/pull/1466))
+-   Forward args correctly when using withReplica feature ([#1536](https://github.com/drizzle-team/drizzle-orm/pull/1536))
+-   Fix selectDistinctOn not working with multiple columns ([#1466](https://github.com/drizzle-team/drizzle-orm/pull/1466))
 
 ## New Features/Helpers
 
@@ -36,7 +34,7 @@ Here is a list of functions and equivalent using `sql` template:
 
 count
 
-```
+```ts
 await db.select({ value: count() }).from(users);
 await db.select({ value: count(users.id) }).from(users);
 
@@ -51,7 +49,7 @@ await db.select({
 
 countDistinct
 
-```
+```ts
 await db.select({ value: countDistinct(users.id) }).from(users);
 
 // It's equivalent to writing
@@ -62,7 +60,7 @@ await db.select({
 
 avg
 
-```
+```ts
 await db.select({ value: avg(users.id) }).from(users);
 
 // It's equivalent to writing
@@ -73,7 +71,7 @@ await db.select({
 
 avgDistinct
 
-```
+```ts
 await db.select({ value: avgDistinct(users.id) }).from(users);
 
 // It's equivalent to writing
@@ -84,7 +82,7 @@ await db.select({
 
 sum
 
-```
+```ts
 await db.select({ value: sum(users.id) }).from(users);
 
 // It's equivalent to writing
@@ -95,7 +93,7 @@ await db.select({
 
 sumDistinct
 
-```
+```ts
 await db.select({ value: sumDistinct(users.id) }).from(users);
 
 // It's equivalent to writing
@@ -106,7 +104,7 @@ await db.select({
 
 max
 
-```
+```ts
 await db.select({ value: max(users.id) }).from(users);
 
 // It's equivalent to writing
@@ -117,7 +115,7 @@ await db.select({
 
 min
 
-```
+```ts
 await db.select({ value: min(users.id) }).from(users);
 
 // It's equivalent to writing
@@ -126,23 +124,15 @@ await db.select({
 }).from(users);
 ```
 
-To find more information check docs: [aggregation helpers](drizzle/docs/select/index.md#aggregations-helpers)
+To find more information check docs: [aggregation helpers](https://orm.drizzle.team/docs/select#aggregations-helpers)
 
 ## New Packages
 
 ### Drizzle ESLint Plugin
 
-For cases where it’s impossible to perform type checks for specific scenarios, or where it’s possible but error messages would be challenging to understand, we’ve decided to create an ESLint package with recommended rules. This package aims to assist developers in handling crucial scenarios during development. For more information you can check [docs](drizzle/docs/eslint-plugin/index.md).
+For cases where it’s impossible to perform type checks for specific scenarios, or where it’s possible but error messages would be challenging to understand, we’ve decided to create an ESLint package with recommended rules. This package aims to assist developers in handling crucial scenarios during development. For more information you can check [docs](https://orm.drizzle.team/docs/eslint-plugin).
 
 ### Install
-
-npm
-
-yarn
-
-pnpm
-
-bun
 
 ```
 npm i eslint eslint-plugin-drizzle
@@ -161,14 +151,6 @@ bun add eslint eslint-plugin-drizzle
 ```
 
 You can install those packages for typescript support in your IDE
-
-npm
-
-yarn
-
-pnpm
-
-bun
 
 ```
 npm i @typescript-eslint/eslint-plugin @typescript-eslint/parser
@@ -190,7 +172,7 @@ bun add @typescript-eslint/eslint-plugin @typescript-eslint/parser
 
 Create a `.eslintrc.yml` file, add `drizzle` to the `plugins`, and specify the rules you want to use. You can find a list of all existing rules below
 
-```
+```yaml
 root: true
 parser: '@typescript-eslint/parser'
 parserOptions:
@@ -206,7 +188,7 @@ rules:
 
 This plugin exports an all config that makes use of all rules (except for deprecated ones).
 
-```
+```yaml
 root: true
 extends:
   - "plugin:drizzle/all"
@@ -219,7 +201,7 @@ plugins:
 
 At the moment, `all` is equivalent to `recommended`
 
-```
+```yaml
 root: true
 extends:
   - "plugin:drizzle/recommended"
@@ -236,7 +218,7 @@ plugins:
 
 Error Message:
 
-```
+```plaintext
 Without `.where(...)` you will delete all the rows in a table. If you didn't want to do it, please use `db.delete(...).where(...)` instead. Otherwise you can ignore this rule here
 ```
 
@@ -244,13 +226,13 @@ Optionally, you can define a `drizzleObjectName` in the plugin options that acce
 
 Example, config 1:
 
-```
+```json
 "rules": {
   "drizzle/enforce-delete-with-where": ["error"]
 }
 ```
 
-```
+```ts
 class MyClass {
   public delete() {
     return {}
@@ -269,13 +251,13 @@ db.delete()
 
 Example, config 2:
 
-```
+```json
 "rules": {
   "drizzle/enforce-delete-with-where": ["error", { "drizzleObjectName": ["db"] }],
 }
 ```
 
-```
+```ts
 class MyClass {
   public delete() {
     return {}
@@ -296,7 +278,7 @@ db.delete()
 
 Error Message:
 
-```
+```plaintext
 Without `.where(...)` you will update all the rows in a table. If you didn't want to do it, please use `db.update(...).set(...).where(...)` instead. Otherwise you can ignore this rule here
 ```
 
@@ -304,13 +286,13 @@ Optionally, you can define a `drizzleObjectName` in the plugin options that acce
 
 Example, config 1:
 
-```
+```json
 "rules": {
   "drizzle/enforce-update-with-where": ["error"]
 }
 ```
 
-```
+```ts
 class MyClass {
   public update() {
     return {}
@@ -329,13 +311,13 @@ db.update()
 
 Example, config 2:
 
-```
+```json
 "rules": {
   "drizzle/enforce-update-with-where": ["error", { "drizzleObjectName": ["db"] }],
 }
 ```
 
-```
+```ts
 class MyClass {
   public update() {
     return {}

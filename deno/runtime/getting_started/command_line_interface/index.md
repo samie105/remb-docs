@@ -5,25 +5,26 @@ canonical_url: "https://docs.deno.com/runtime/getting_started/command_line_inter
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:49:04.492Z"
-content_hash: "2d5a19b1285012052015bb8c621e72824b5bc675493f09b78cf9675b9ee54112"
+last_crawled_at: "2026-04-27T17:23:27.673Z"
+content_hash: "ed65dd60caccc4669b1660880b7f64554e3ed2834e479f0bb94d54afbe18a52a"
 menu_path: ["Command line interface"]
 section_path: []
+content_language: "en"
 ---
-On this page
+**On this page**
 
-*   [An example subcommand - deno run](#an-example-subcommand---deno-run)
-*   [Passing script arguments](#passing-script-arguments)
-*   [Argument and flag ordering](#argument-and-flag-ordering)
-*   [Common flags](#common-flags)
-    *   [Watch mode](#watch-mode)
-    *   [Hot Module Replacement mode](#hot-module-replacement-mode)
-    *   [Integrity flags (lock files)](#integrity-flags-\(lock-files\))
-    *   [Cache and compilation flags](#cache-and-compilation-flags)
-    *   [Runtime flags](#runtime-flags)
-    *   [Type checking flags](#type-checking-flags)
-    *   [Permission flags](#permission-flags)
-    *   [Other runtime flags](#other-runtime-flags)
+-   [An example subcommand - deno run](#an-example-subcommand---deno-run)
+-   [Passing script arguments](#passing-script-arguments)
+-   [Argument and flag ordering](#argument-and-flag-ordering)
+-   [Common flags](#common-flags)
+    -   [Watch mode](#watch-mode)
+    -   [Hot Module Replacement mode](#hot-module-replacement-mode)
+    -   [Integrity flags (lock files)](#integrity-flags-\(lock-files\))
+    -   [Cache and compilation flags](#cache-and-compilation-flags)
+    -   [Runtime flags](#runtime-flags)
+    -   [Type checking flags](#type-checking-flags)
+    -   [Permission flags](#permission-flags)
+    -   [Other runtime flags](#other-runtime-flags)
 
 Deno is a command line program. The Deno command line interface (CLI) can be used to run scripts, manage dependencies, and even compile your code into standalone executables. You may be familiar with some simple commands having followed the examples thus far. This page will provide a more detailed overview of the Deno CLI.
 
@@ -94,8 +95,8 @@ You can supply the `--watch` flag to `deno run`, `deno test`, and `deno fmt` to 
 
 The files that are watched will depend on the subcommand used:
 
-*   for `deno run` and `deno test` the entrypoint, and all local files that the entrypoint statically imports will be watched.
-*   for `deno fmt` all local files and directories specified as command line arguments (or the working directory if no specific files/directories is passed) are watched.
+-   for `deno run` and `deno test` the entrypoint, and all local files that the entrypoint statically imports will be watched.
+-   for `deno fmt` all local files and directories specified as command line arguments (or the working directory if no specific files/directories is passed) are watched.
 
 ```shell
 deno run --watch main.ts
@@ -181,37 +182,15 @@ You can also type-check your code before execution by using the `--check` argume
 
 This flag affects `deno run` and `deno eval`. The following table describes the type-checking behavior of various subcommands. Here "Local" means that only errors from local code will induce type-errors, modules imported from https URLs (remote) may have type errors that are not reported. (To turn on type-checking for all modules, use `--check=all`.)
 
-Subcommand
-
-Type checking mode
-
-`deno bench`
-
-📁 Local
-
-`deno check`
-
-📁 Local
-
-`deno compile`
-
-📁 Local
-
-`deno eval`
-
-❌ None
-
-`deno repl`
-
-❌ None
-
-`deno run`
-
-❌ None
-
-`deno test`
-
-📁 Local
+| Subcommand | Type checking mode |
+| --- | --- |
+| `deno bench` | 📁 Local |
+| `deno check` | 📁 Local |
+| `deno compile` | 📁 Local |
+| `deno eval` | ❌ None |
+| `deno repl` | ❌ None |
+| `deno run` | ❌ None |
+| `deno test` | 📁 Local |
 
 ### Permission flags
 

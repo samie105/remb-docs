@@ -5,35 +5,13 @@ canonical_url: "https://tailwindcss.com/docs/backdrop-filter-hue-rotate"
 docset: "tailwind"
 kind: "framework"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:10:08.487Z"
-content_hash: "cdae760e2216887c9468b5fdc448fb7cf3b0f1c39e965536bc0f24061f01bcaa"
+last_crawled_at: "2026-04-27T20:29:12.143Z"
+content_hash: "d713b556f440c950c0e008b69a05c3463868a7b04992cd2828ee09679d6ab2bc"
 menu_path: ["backdrop-filter: hue-rotate()"]
 section_path: []
-nav_prev: {"path": "tailwind/docs/backdrop-filter-grayscale/index.md", "title": "backdrop-filter: grayscale()"}
-nav_next: {"path": "tailwind/docs/backdrop-filter-invert/index.md", "title": "backdrop-filter: invert()"}
+content_language: "en"
 ---
-
 Utilities for applying backdrop hue-rotate filters to an element.
-
-Class
-
-Styles
-
-`backdrop-hue-rotate-<number>`
-
-`backdrop-filter: hue-rotate(<number>deg);`
-
-`-backdrop-hue-rotate-<number>`
-
-`backdrop-filter: hue-rotate(calc(<number>deg * -1));`
-
-`backdrop-hue-rotate-(<custom-property>)`
-
-`backdrop-filter: hue-rotate(var(<custom-property>));`
-
-`backdrop-hue-rotate-[<value>]`
-
-`backdrop-filter: hue-rotate(<value>);`
 
 ## [Examples](#examples)
 
@@ -77,4 +55,4 @@ Prefix a `backdrop-filter: hue-rotate()` utility with a breakpoint variant like 
 <div class="backdrop-hue-rotate-15 md:backdrop-hue-rotate-0 ...">  <!-- ... --></div>
 ```
 
-Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).
+Learn more about using variants in the [variants documentation](https://tailwindcss.com/docs/hover-focus-and-other-states).

@@ -5,23 +5,22 @@ canonical_url: "https://nextjs.org/docs/app/api-reference/components/script"
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:06:35.286Z"
-content_hash: "67d43958ead3e06bdec6ac4c9d36269739ba97e2c1bcc585f303fadcba4a2cc2"
+last_crawled_at: "2026-04-27T18:05:28.042Z"
+content_hash: "4ca27bb4a7a95e7687cf0360f34fc0fa3c1ee877d94315516d4198504c9e21e2"
 menu_path: ["Script Component"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/api-reference/components/link/index.md", "title": "Link Component"}
-nav_next: {"path": "nextjs/docs/app/api-reference/file-conventions/index.md", "title": "File-system conventions"}
+version: "latest"
+content_language: "en"
 ---
+[API Reference](/docs/app/api-reference)[Components](/docs/app/api-reference/components)Script Component
 
 # Script Component
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 This API reference will help you understand how to use [props](#props) available for the Script Component. For features and usage, please see the [Optimizing Scripts](/docs/app/guides/scripts) page.
 
 app/dashboard/page.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -41,53 +40,13 @@ export default function Dashboard() {
 
 Here's a summary of the props available for the Script Component:
 
-Prop
-
-Example
-
-Type
-
-Required
-
-[`src`](#src)
-
-`src="http://example.com/script"`
-
-String
-
-Required unless inline script is used
-
-[`strategy`](#strategy)
-
-`strategy="lazyOnload"`
-
-String
-
-\-
-
-[`onLoad`](#onload)
-
-`onLoad={onLoadFunc}`
-
-Function
-
-\-
-
-[`onReady`](#onready)
-
-`onReady={onReadyFunc}`
-
-Function
-
-\-
-
-[`onError`](#onerror)
-
-`onError={onErrorFunc}`
-
-Function
-
-\-
+| Prop | Example | Type | Required |
+| --- | --- | --- | --- |
+| [`src`](#src) | `src="http://example.com/script"` | String | Required unless inline script is used |
+| [`strategy`](#strategy) | `strategy="lazyOnload"` | String | \- |
+| [`onLoad`](#onload) | `onLoad={onLoadFunc}` | Function | \- |
+| [`onReady`](#onready) | `onReady={onReadyFunc}` | Function | \- |
+| [`onError`](#onerror) | `onError={onErrorFunc}` | Function | \- |
 
 ## Required Props[](#required-props)
 
@@ -105,10 +64,10 @@ The `<Script />` component accepts a number of additional properties beyond thos
 
 The loading strategy of the script. There are four different strategies that can be used:
 
-*   `beforeInteractive`: Load before any Next.js code and before any page hydration occurs.
-*   `afterInteractive`: (**default**) Load early but after some hydration on the page occurs.
-*   `lazyOnload`: Load during browser idle time.
-*   `worker`: (experimental) Load in a web worker.
+-   `beforeInteractive`: Load before any Next.js code and before any page hydration occurs.
+-   `afterInteractive`: (**default**) Load early but after some hydration on the page occurs.
+-   `lazyOnload`: Load during browser idle time.
+-   `worker`: (experimental) Load in a web worker.
 
 ### `beforeInteractive`[](#beforeinteractive)
 
@@ -121,8 +80,6 @@ Scripts denoted with this strategy are preloaded and fetched before any first-pa
 **This strategy should only be used for critical scripts that need to be fetched as soon as possible.**
 
 app/layout.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -152,8 +109,8 @@ export default function RootLayout({
 
 Some examples of scripts that should be fetched as soon as possible with `beforeInteractive` include:
 
-*   Bot detectors
-*   Cookie consent managers
+-   Bot detectors
+-   Cookie consent managers
 
 ### `afterInteractive`[](#afterinteractive)
 
@@ -177,8 +134,8 @@ export default function Page() {
 
 Some examples of scripts that are good candidates for `afterInteractive` include:
 
-*   Tag managers
-*   Analytics
+-   Tag managers
+-   Analytics
 
 ### `lazyOnload`[](#lazyonload)
 
@@ -202,8 +159,8 @@ export default function Page() {
 
 Examples of scripts that do not need to load immediately and can be fetched with `lazyOnload` include:
 
-*   Chat support plugins
-*   Social media widgets
+-   Chat support plugins
+-   Social media widgets
 
 ### `worker`[](#worker)
 
@@ -226,8 +183,6 @@ module.exports = {
 `worker` scripts can **only currently be used in the `pages/` directory**:
 
 pages/home.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -252,8 +207,6 @@ Some third-party scripts require users to run JavaScript code once after the scr
 Here's an example of executing a lodash method only after the library has been loaded.
 
 app/page.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -285,8 +238,6 @@ Some third-party scripts require users to run JavaScript code after the script h
 Here's an example of how to re-instantiate a Google Maps JS embed every time the component is mounted:
 
 app/page.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -325,8 +276,6 @@ Sometimes it is helpful to catch when a script fails to load. These errors can b
 
 app/page.tsx
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -350,40 +299,11 @@ export default function Page() {
 
 ## Version History[](#version-history)
 
-Version
-
-Changes
-
-`v13.0.0`
-
-`beforeInteractive` and `afterInteractive` is modified to support `app`.
-
-`v12.2.4`
-
-`onReady` prop added.
-
-`v12.2.2`
-
-Allow `next/script` with `beforeInteractive` to be placed in `_document`.
-
-`v11.0.0`
-
-`next/script` introduced.
-
-[Previous
-
-Link Component
-
-](/docs/app/api-reference/components/link)
-
-[Next
-
-File-system conventions
-
-](/docs/app/api-reference/file-conventions)
+| Version | Changes |
+| --- | --- |
+| `v13.0.0` | `beforeInteractive` and `afterInteractive` is modified to support `app`. |
+| `v12.2.4` | `onReady` prop added. |
+| `v12.2.2` | Allow `next/script` with `beforeInteractive` to be placed in `_document`. |
+| `v11.0.0` | `next/script` introduced. |
 
 Was this helpful?
-
-supported.
-
-Send

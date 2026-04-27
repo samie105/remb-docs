@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/pages/api-reference/config/next-config-j
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:21:27.316Z"
-content_hash: "df273a2c44c4d44b11c429dcc9b9fe1f5530476d1b92eebcc9ec4fa81e3e6620"
+last_crawled_at: "2026-04-27T18:20:50.775Z"
+content_hash: "5087c665c5db0944830e3c4a84814915aa86c63679fedf38d34ac0c42f7af8c9"
 menu_path: ["trailingSlash"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/pages/api-reference/config/next-config-js/serverExternalPackages/index.md", "title": "serverExternalPackages"}
-nav_next: {"path": "nextjs/docs/pages/api-reference/config/next-config-js/transpilePackages/index.md", "title": "transpilePackages"}
+version: "latest"
+content_language: "en"
 ---
+[Configuration](/docs/pages/api-reference/config)[next.config.js Options](/docs/pages/api-reference/config/next-config-js)trailingSlash
 
 # trailingSlash
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 By default Next.js will redirect URLs with trailing slashes to their counterpart without a trailing slash. For example `/about/` will redirect to `/about`. You can configure this behavior to act the opposite way, where URLs without trailing slashes are redirected to their counterparts with trailing slashes.
 
@@ -33,8 +34,8 @@ With this option set, URLs like `/about` will redirect to `/about/`.
 
 When using `trailingSlash: true`, certain URLs are exceptions and will not have a trailing slash appended:
 
-*   Static file URLs, such as files with extensions.
-*   Any paths under `.well-known/`.
+-   Static file URLs, such as files with extensions.
+-   Any paths under `.well-known/`.
 
 For example, the following URLs will remain unchanged: `/file.txt`, `images/photos/picture.png`, and `.well-known/subfolder/config.json`.
 
@@ -42,16 +43,8 @@ When used with [`output: "export"`](/docs/app/guides/static-exports) configurati
 
 ## Version History[](#version-history)
 
-Version
-
-Changes
-
-`v9.5.0`
-
-`trailingSlash` added.
+| Version | Changes |
+| --- | --- |
+| `v9.5.0` | `trailingSlash` added. |
 
 Was this helpful?
-
-supported.
-
-Send

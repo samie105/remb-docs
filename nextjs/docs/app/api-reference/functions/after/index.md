@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/app/api-reference/functions/after"
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:11:09.146Z"
-content_hash: "6e734229d5697170cb093d366ce9bd1a79b658556fb4ed822666e40977946e9f"
+last_crawled_at: "2026-04-27T18:09:49.832Z"
+content_hash: "3adbeabe1960416eef31c4f86b3850fd1d16178f97585771db61952cc84c003e"
 menu_path: ["after"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/api-reference/functions/index.md", "title": "Functions"}
-nav_next: {"path": "nextjs/docs/app/api-reference/functions/cacheLife/index.md", "title": "cacheLife"}
+version: "latest"
+content_language: "en"
 ---
+[API Reference](/docs/app/api-reference)[Functions](/docs/app/api-reference/functions)after
 
 # after
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 `after` allows you to schedule work to be executed after a response (or prerender) is finished. This is useful for tasks and other side effects that should not block the response, such as logging and analytics.
 
@@ -24,8 +25,6 @@ It can be used in [Server Components](/docs/app/getting-started/server-and-clien
 The function accepts a callback that will be executed after the response (or prerender) is finished:
 
 app/layout.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -49,7 +48,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
 ### Parameters[](#parameters)
 
-*   A callback function which will be executed after the response (or prerender) is finished.
+-   A callback function which will be executed after the response (or prerender) is finished.
 
 ### Duration[](#duration)
 
@@ -57,9 +56,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
 ## Good to know[](#good-to-know)
 
-*   `after` will be executed even if the response didn't complete successfully. Including when an error is thrown or when `notFound` or `redirect` is called.
-*   You can use React `cache` to deduplicate functions called inside `after`.
-*   `after` can be nested inside other `after` calls, for example, you can create utility functions that wrap `after` calls to add additional functionality.
+-   `after` will be executed even if the response didn't complete successfully. Including when an error is thrown or when `notFound` or `redirect` is called.
+-   You can use React `cache` to deduplicate functions called inside `after`.
+-   `after` can be nested inside other `after` calls, for example, you can create utility functions that wrap `after` calls to add additional functionality.
 
 ## Examples[](#examples)
 
@@ -72,8 +71,6 @@ Whether you can use request APIs like [`cookies`](/docs/app/api-reference/functi
 You can call `cookies` and `headers` directly inside the `after` callback when used in [Route Handlers](/docs/app/api-reference/file-conventions/route) and [Server Functions](/docs/app/getting-started/mutating-data). This is useful for logging activity after a mutation or API request. For example:
 
 app/api/route.ts
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -110,8 +107,6 @@ If you need request data inside an `after` callback in a Server Component, read 
 
 app/page.tsx
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -144,8 +139,6 @@ When using [Cache Components](/docs/app/getting-started/caching), components tha
 You can combine this pattern with `after` by reading request data in a dynamic component and passing it into `after`:
 
 app/page.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -183,29 +176,16 @@ In this example, `<h1>` and the `<Suspense>` fallback are included in the static
 
 ## Platform Support[](#platform-support)
 
-Deployment Option
-
-Supported
-
-[Node.js server](/docs/app/getting-started/deploying#nodejs-server)
-
-Yes
-
-[Docker container](/docs/app/getting-started/deploying#docker)
-
-Yes
-
-[Static export](/docs/app/getting-started/deploying#static-export)
-
-No
-
-[Adapters](/docs/app/getting-started/deploying#adapters)
-
-Platform-specific
+| Deployment Option | Supported |
+| --- | --- |
+| [Node.js server](/docs/app/getting-started/deploying#nodejs-server) | Yes |
+| [Docker container](/docs/app/getting-started/deploying#docker) | Yes |
+| [Static export](/docs/app/getting-started/deploying#static-export) | No |
+| [Adapters](/docs/app/getting-started/deploying#adapters) | Platform-specific |
 
 Learn how to [configure `after`](/docs/app/guides/self-hosting#after) when self-hosting Next.js.
 
-Reference: supporting `after` for serverless platforms
+**Reference: supporting after for serverless platforms**
 
 Using `after` in a serverless context requires waiting for asynchronous tasks to finish after the response has been sent. In Next.js and Vercel, this is achieved using a primitive called `waitUntil(promise)`, which extends the lifetime of a serverless invocation until all promises passed to [`waitUntil`](https://vercel.com/docs/functions/functions-api-reference#waituntil) have settled.
 
@@ -255,32 +235,9 @@ const handler = (req, res) => {
 
 ## Version History[](#version-history)
 
-Version
-
-Changes
-
-`v15.1.0`
-
-`after` became stable.
-
-`v15.0.0-rc`
-
-`unstable_after` introduced.
-
-[Previous
-
-Functions
-
-](/docs/app/api-reference/functions)
-
-[Next
-
-cacheLife
-
-](/docs/app/api-reference/functions/cacheLife)
+| Version | Changes |
+| --- | --- |
+| `v15.1.0` | `after` became stable. |
+| `v15.0.0-rc` | `unstable_after` introduced. |
 
 Was this helpful?
-
-supported.
-
-Send

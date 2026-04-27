@@ -5,20 +5,17 @@ canonical_url: "https://docs.deno.com/api/web/canvas"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:12:18.597Z"
-content_hash: "fde877aaf3f76191628e24cd8a679a0a4d3fe049907ce327337304156837666a"
+last_crawled_at: "2026-04-27T17:57:04.579Z"
+content_hash: "93a504a48ffcd2b40a520c7ad5bfa51d4bba71bea47a4dad04b9815e1b702112"
 menu_path: ["Canvas - Web documentation"]
 section_path: []
+content_language: "en"
 ---
-### Functions [#](#Functions)
-
 f
 
 [createImageBitmap](./././~/createImageBitmap "createImageBitmap")
 
 Create a new [`ImageBitmap`](./././~/ImageBitmap) object from a given source.
-
-### Interfaces [#](#Interfaces)
 
 I
 
@@ -28,10 +25,10 @@ v
 
 `ImageBitmap` interface represents a bitmap image which can be drawn to a canvas.
 
-*   [close](./././~/ImageBitmap#method_close_0)
-*   [height](./././~/ImageBitmap#property_height)
-*   [prototype](./././~/ImageBitmap#property_prototype)
-*   [width](./././~/ImageBitmap#property_width)
+-   [close](./././~/ImageBitmap#method_close_0)
+-   [height](./././~/ImageBitmap#property_height)
+-   [prototype](./././~/ImageBitmap#property_prototype)
+-   [width](./././~/ImageBitmap#property_width)
 
 I
 
@@ -39,14 +36,12 @@ I
 
 The options of [`createImageBitmap`](./././~/createImageBitmap).
 
-*   [colorSpaceConversion](./././~/ImageBitmapOptions#property_colorspaceconversion)
-*   [imageOrientation](./././~/ImageBitmapOptions#property_imageorientation)
-*   [premultiplyAlpha](./././~/ImageBitmapOptions#property_premultiplyalpha)
-*   [resizeHeight](./././~/ImageBitmapOptions#property_resizeheight)
-*   [resizeQuality](./././~/ImageBitmapOptions#property_resizequality)
-*   [resizeWidth](./././~/ImageBitmapOptions#property_resizewidth)
-
-### Type Aliases [#](<#Type Aliases>)
+-   [colorSpaceConversion](./././~/ImageBitmapOptions#property_colorspaceconversion)
+-   [imageOrientation](./././~/ImageBitmapOptions#property_imageorientation)
+-   [premultiplyAlpha](./././~/ImageBitmapOptions#property_premultiplyalpha)
+-   [resizeHeight](./././~/ImageBitmapOptions#property_resizeheight)
+-   [resizeQuality](./././~/ImageBitmapOptions#property_resizequality)
+-   [resizeWidth](./././~/ImageBitmapOptions#property_resizewidth)
 
 T
 

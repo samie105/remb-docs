@@ -5,14 +5,12 @@ canonical_url: "https://www.postgresql.org/docs/current/functions-statistics.htm
 docset: "postgres"
 kind: "database"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:46:50.697Z"
-content_hash: "777de9986e994c63c0146e9b41479bfc258e75ea2a3013841536f96aff48a164"
+last_crawled_at: "2026-04-27T20:47:47.001Z"
+content_hash: "9dfb9bceeb2a8d0d01ac91d864960ffdf8ba28eda79bbac7b8fc5893ea91ae36"
 menu_path: ["PostgreSQL: Documentation: 18: 9.31. Statistics Information Functions"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/functions-srf.html/index.md", "title": "PostgreSQL: Documentation: 18: 9.26.\u00a0Set Returning Functions"}
-nav_next: {"path": "postgres/docs/current/functions-string.html/index.md", "title": "PostgreSQL: Documentation: 18: 9.4.\u00a0String Functions and Operators"}
+content_language: "en"
 ---
-
 February 26, 2026: [PostgreSQL 18.3, 17.9, 16.13, 15.17, and 14.22 Released!](/about/news/postgresql-183-179-1613-1517-and-1422-released-3246/)
 
 [Documentation](/docs/ "Documentation") → [PostgreSQL 18](/docs/18/index.html)
@@ -29,49 +27,20 @@ PostgreSQL provides a function to inspect complex statistics defined using the `
 
 ### 9.31.1. Inspecting MCV Lists [#](#FUNCTIONS-STATISTICS-MCV)
 
-```
+```function
 pg_mcv_list_items
 ```
 
 `pg_mcv_list_items` returns a set of records describing all items stored in a multi-column MCV list. It returns the following columns:
 
   
-
-Name
-
-Type
-
-Description
-
-`index`
-
-`integer`
-
-index of the item in the MCV list
-
-`values`
-
-`text[]`
-
-values stored in the MCV item
-
-`nulls`
-
-`boolean[]`
-
-flags identifying `NULL` values
-
-`frequency`
-
-`double precision`
-
-frequency of this MCV item
-
-`base_frequency`
-
-`double precision`
-
-base frequency of this MCV item
+| Name | Type | Description |
+| --- | --- | --- |
+| `index` | `integer` | index of the item in the MCV list |
+| `values` | `text[]` | values stored in the MCV item |
+| `nulls` | `boolean[]` | flags identifying `NULL` values |
+| `frequency` | `double precision` | frequency of this MCV item |
+| `base_frequency` | `double precision` | base frequency of this MCV item |
 
 The `pg_mcv_list_items` function can be used like this:
 

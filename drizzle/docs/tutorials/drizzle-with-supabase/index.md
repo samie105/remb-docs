@@ -5,27 +5,17 @@ canonical_url: "https://orm.drizzle.team/docs/tutorials/drizzle-with-supabase"
 docset: "drizzle"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:24:03.144Z"
-content_hash: "6895a2653fdd15bd1b2457e8a5b826a9861a5abecdf13b7531e5def913842f31"
+last_crawled_at: "2026-04-27T19:28:09.733Z"
+content_hash: "c76d21520d13dee023552ffafadc1677b30f4b480c22b14444f4214d1d50ca18"
 menu_path: ["Drizzle with Supabase Database"]
 section_path: []
-nav_prev: {"path": "drizzle/docs/tutorials/drizzle-with-nile/index.md", "title": "Drizzle with Nile Database"}
-nav_next: {"path": "drizzle/docs/tutorials/drizzle-with-supabase-edge-functions/index.md", "title": "Drizzle with Supabase Edge Functions"}
+content_language: "en"
 ---
-
 This tutorial demonstrates how to use Drizzle ORM with [Supabase Database](https://supabase.com/docs/guides/database/overview). Every Supabase project comes with a full [Postgres](https://www.postgresql.org/) database.
 
 This guide assumes familiarity with:
 
-*   You should have installed Drizzle ORM and [Drizzle kit](drizzle/docs/kit-overview/index.md). You can do this by running the following command:
-
-npm
-
-yarn
-
-pnpm
-
-bun
+-   You should have installed Drizzle ORM and [Drizzle kit](https://orm.drizzle.team/docs/kit-overview). You can do this by running the following command:
 
 ```
 npm i drizzle-orm
@@ -47,15 +37,7 @@ bun add drizzle-orm
 bun add -D drizzle-kit
 ```
 
-*   You should have installed `dotenv` package for managing environment variables. Read more about this package [here](https://www.npmjs.com/package/dotenv)
-
-npm
-
-yarn
-
-pnpm
-
-bun
+-   You should have installed `dotenv` package for managing environment variables. Read more about this package [here](https://www.npmjs.com/package/dotenv)
 
 ```
 npm i dotenv
@@ -73,15 +55,7 @@ pnpm add dotenv
 bun add dotenv
 ```
 
-*   You should have installed `postgres` package for connecting to the Postgres database. Read more about this package [here](https://www.npmjs.com/package/postgres)
-
-npm
-
-yarn
-
-pnpm
-
-bun
+-   You should have installed `postgres` package for connecting to the Postgres database. Read more about this package [here](https://www.npmjs.com/package/postgres)
 
 ```
 npm i postgres
@@ -99,7 +73,7 @@ pnpm add postgres
 bun add postgres
 ```
 
-*   You should have the latest version of [Supabase CLI](https://supabase.com/docs/guides/cli/getting-started#installing-the-supabase-cli) installed (Only if you want to use the Supabase CLI for migrations)
+-   You should have the latest version of [Supabase CLI](https://supabase.com/docs/guides/cli/getting-started#installing-the-supabase-cli) installed (Only if you want to use the Supabase CLI for migrations)
 
 Check [Supabase documentation](https://supabase.com/docs/guides/database/connecting-to-postgres#connecting-with-drizzle) to learn how to connect to the database with Drizzle ORM.
 
@@ -115,7 +89,7 @@ Navigate to [Database Settings](https://supabase.com/dashboard/project/_/setting
 
 Add `DATABASE_URL` variable to your `.env` or `.env.local` file.
 
-```
+```plaintext
 DATABASE_URL=<YOUR_DATABASE_URL>
 ```
 
@@ -125,7 +99,7 @@ Read more about Connection Pooler and pooling modes in the [documentation](https
 
 Create a `index.ts` file in the `src/db` directory and set up your database configuration:
 
-```
+```typescript
 import { config } from 'dotenv';
 import { drizzle } from 'drizzle-orm/postgres-js';
 import postgres from 'postgres';
@@ -140,7 +114,7 @@ export const db = drizzle({ client });
 
 Create a `schema.ts` file in the `src/db` directory and declare your tables:
 
-```
+```typescript
 import { integer, pgTable, serial, text, timestamp } from 'drizzle-orm/pg-core';
 
 export const usersTable = pgTable('users_table', {
@@ -172,11 +146,11 @@ export type SelectPost = typeof postsTable.$inferSelect;
 
 #### Setup Drizzle config file[](#setup-drizzle-config-file)
 
-**Drizzle config** - a configuration file that is used by [Drizzle Kit](drizzle/docs/kit-overview/index.md) and contains all the information about your database connection, migration folder and schema files.
+**Drizzle config** - a configuration file that is used by [Drizzle Kit](https://orm.drizzle.team/docs/kit-overview) and contains all the information about your database connection, migration folder and schema files.
 
 Create a `drizzle.config.ts` file in the root of your project and add the following content:
 
-```
+```typescript
 import { config } from 'dotenv';
 import { defineConfig } from 'drizzle-kit';
 
@@ -198,7 +172,7 @@ You can generate migrations using `drizzle-kit generate` command and then run th
 
 Generate migrations:
 
-```
+```bash
 npx drizzle-kit generate
 ```
 
@@ -206,7 +180,7 @@ These migrations are stored in the `supabase/migrations` directory, as specified
 
 Example of a generated migration:
 
-```
+```sql
 CREATE TABLE IF NOT EXISTS "posts_table" (
 	"id" serial PRIMARY KEY NOT NULL,
 	"title" text NOT NULL,
@@ -233,17 +207,17 @@ END $$;
 
 Run migrations:
 
-```
+```bash
 npx drizzle-kit migrate
 ```
 
-Learn more about [migration process](drizzle/docs/migrations/index.md). You can also apply migrations using [Supabase CLI](https://supabase.com/docs/guides/cli/getting-started):
+Learn more about [migration process](https://orm.drizzle.team/docs/migrations). You can also apply migrations using [Supabase CLI](https://supabase.com/docs/guides/cli/getting-started):
 
-*   For tables that already exist, manually review the generated migration files from `npx drizzle-kit generate` and comment out or adjust any unsafe pure create statements (e.g., `CREATE SCHEMA "auth";`) while ensuring safe conditional creates (e.g., `CREATE TABLE IF NOT EXISTS "auth"."users"`) are properly handled.
+-   For tables that already exist, manually review the generated migration files from `npx drizzle-kit generate` and comment out or adjust any unsafe pure create statements (e.g., `CREATE SCHEMA "auth";`) while ensuring safe conditional creates (e.g., `CREATE TABLE IF NOT EXISTS "auth"."users"`) are properly handled.
 
-Alternatively, you can push changes directly to the database using [Drizzle kit push command](drizzle/docs/kit-overview/index.md#prototyping-with-db-push):
+Alternatively, you can push changes directly to the database using [Drizzle kit push command](https://orm.drizzle.team/docs/kit-overview#prototyping-with-db-push):
 
-```
+```bash
 npx drizzle-kit push
 ```
 
@@ -255,25 +229,25 @@ To apply migrations using the Supabase CLI you should follow these steps:
 
 Generate migrations using Drizzle Kit:
 
-```
+```bash
 npx drizzle-kit generate
 ```
 
 Initialize the local Supabase project:
 
-```
+```bash
 supabase init
 ```
 
 Link it to your remote project:
 
-```
+```bash
 supabase link
 ```
 
 Push changes to the database:
 
-```
+```bash
 supabase db push
 ```
 
@@ -281,7 +255,7 @@ supabase db push
 
 This is the basic file structure of the project. In the `src/db` directory, we have database-related files including connection in `index.ts` and schema definitions in `schema.ts`.
 
-```
+```plaintext
 📦 <project root>
  ├ 📂 src
  │   ├ 📂 db
@@ -306,9 +280,9 @@ For instance, we create `src/db/queries` folder and separate files for each oper
 
 #### Insert data[](#insert-data)
 
-Read more about insert query in the [documentation](drizzle/docs/insert/index.md).
+Read more about insert query in the [documentation](https://orm.drizzle.team/docs/insert).
 
-```
+```typescript
 import { db } from '../index';
 import { InsertPost, InsertUser, postsTable, usersTable } from '../schema';
 
@@ -323,15 +297,15 @@ export async function createPost(data: InsertPost) {
 
 #### Select data[](#select-data)
 
-Read more about select query in the [documentation](drizzle/docs/select/index.md).
+Read more about select query in the [documentation](https://orm.drizzle.team/docs/select).
 
 IMPORTANT
 
-`getColumns` available starting from `drizzle-orm@1.0.0-beta.2`(read more [here](drizzle/docs/upgrade-v1/index.md))
+`getColumns` available starting from `drizzle-orm@1.0.0-beta.2`(read more [here](https://orm.drizzle.team/docs/upgrade-v1))
 
 If you are on pre-1 version(like `0.45.1`) then use `getTableColumns`
 
-```
+```typescript
 import { asc, between, count, eq, getColumns, sql } from 'drizzle-orm';
 import { db } from '../index';
 import { SelectUser, postsTable, usersTable } from '../schema';
@@ -394,13 +368,13 @@ export async function getPostsForLast24Hours(
 }
 ```
 
-Alternatively, you can use [relational query syntax](drizzle/docs/rqb/index.md).
+Alternatively, you can use [relational query syntax](https://orm.drizzle.team/docs/rqb).
 
 #### Update data[](#update-data)
 
-Read more about update query in the [documentation](drizzle/docs/update/index.md).
+Read more about update query in the [documentation](https://orm.drizzle.team/docs/update).
 
-```
+```typescript
 import { eq } from 'drizzle-orm';
 import { db } from '../index';
 import { SelectPost, postsTable } from '../schema';
@@ -412,9 +386,9 @@ export async function updatePost(id: SelectPost['id'], data: Partial<Omit<Select
 
 #### Delete data[](#delete-data)
 
-Read more about delete query in the [documentation](drizzle/docs/delete/index.md).
+Read more about delete query in the [documentation](https://orm.drizzle.team/docs/delete).
 
-```
+```typescript
 import { eq } from 'drizzle-orm';
 import { db } from '../index';
 import { SelectUser, usersTable } from '../schema';

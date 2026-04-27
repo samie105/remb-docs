@@ -5,10 +5,11 @@ canonical_url: "https://docs.deno.com/api/node/timers/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:42:05.974Z"
-content_hash: "9d4c49f81cc13cdb9ab8273a86181277b36c65fe58ef832e2cbba0832aa14aad"
+last_crawled_at: "2026-04-27T17:14:01.439Z"
+content_hash: "3d1da28c1566a632456870a2bff98e2585970ca77cc6cdc32511c894c31d1921"
 menu_path: ["timers - Node documentation"]
 section_path: []
+content_language: "en"
 ---
 ### Usage in Deno
 
@@ -19,8 +20,6 @@ import * as mod from "node:timers";
 The `timer` module exposes a global API for scheduling functions to be called at some future period of time. Because the timer functions are globals, there is no need to import `node:timers` to use the API.
 
 The timer functions within Node.js implement a similar API as the timers API provided by Web Browsers but use a different internal implementation that is built around the Node.js [Event Loop](https://nodejs.org/en/docs/guides/event-loop-timers-and-nexttick/#setimmediate-vs-settimeout).
-
-### Functions [#](#Functions)
 
 f
 
@@ -98,18 +97,16 @@ f
 
 No documentation available
 
-### Interfaces [#](#Interfaces)
-
 I
 
 [Immediate](.././timers/~/Immediate "Immediate")
 
 This object is created internally and is returned from `setImmediate()`. It can be passed to `clearImmediate()` in order to cancel the scheduled actions.
 
-*   [\_onImmediate](.././timers/~/Immediate#method__onimmediate_0)
-*   [hasRef](.././timers/~/Immediate#method_hasref_0)
-*   [ref](.././timers/~/Immediate#method_ref_0)
-*   [unref](.././timers/~/Immediate#method_unref_0)
+-   [\_onImmediate](.././timers/~/Immediate#method__onimmediate_0)
+-   [hasRef](.././timers/~/Immediate#method_hasref_0)
+-   [ref](.././timers/~/Immediate#method_ref_0)
+-   [unref](.././timers/~/Immediate#method_unref_0)
 
 I
 
@@ -117,8 +114,8 @@ I
 
 No documentation available
 
-*   [wait](.././timers/promises/~/promises.Scheduler#method_wait_0)
-*   [yield](.././timers/promises/~/promises.Scheduler#method_yield_0)
+-   [wait](.././timers/promises/~/promises.Scheduler#method_wait_0)
+-   [yield](.././timers/promises/~/promises.Scheduler#method_yield_0)
 
 I
 
@@ -126,12 +123,12 @@ I
 
 This object is created internally and is returned from `setTimeout()` and `setInterval()`. It can be passed to either `clearTimeout()` or `clearInterval()` in order to cancel the scheduled actions.
 
-*   [\_onTimeout](.././timers/~/Timeout#method__ontimeout_0)
-*   [close](.././timers/~/Timeout#method_close_0)
-*   [hasRef](.././timers/~/Timeout#method_hasref_0)
-*   [ref](.././timers/~/Timeout#method_ref_0)
-*   [refresh](.././timers/~/Timeout#method_refresh_0)
-*   [unref](.././timers/~/Timeout#method_unref_0)
+-   [\_onTimeout](.././timers/~/Timeout#method__ontimeout_0)
+-   [close](.././timers/~/Timeout#method_close_0)
+-   [hasRef](.././timers/~/Timeout#method_hasref_0)
+-   [ref](.././timers/~/Timeout#method_ref_0)
+-   [refresh](.././timers/~/Timeout#method_refresh_0)
+-   [unref](.././timers/~/Timeout#method_unref_0)
 
 I
 
@@ -139,7 +136,7 @@ I
 
 No documentation available
 
-*   [ref](.././timers/~/TimerOptions#property_ref)
+-   [ref](.././timers/~/TimerOptions#property_ref)
 
 I
 
@@ -147,18 +144,14 @@ I
 
 No documentation available
 
-*   [hasRef](.././timers/~/Timer#method_hasref_0)
-*   [refresh](.././timers/~/Timer#method_refresh_0)
-
-### Namespaces [#](#Namespaces)
+-   [hasRef](.././timers/~/Timer#method_hasref_0)
+-   [refresh](.././timers/~/Timer#method_refresh_0)
 
 N
 
 [promises](.././timers/~/promises "promises")
 
 The `timers/promises` API provides an alternative set of timer functions that return `Promise` objects. The API is accessible via `require('node:timers/promises')`.
-
-### Variables [#](#Variables)
 
 v
 

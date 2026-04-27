@@ -5,13 +5,14 @@ canonical_url: "https://nextjs.org/docs/messages/next-script-for-ga"
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:18:01.948Z"
-content_hash: "f572d052fb4ce7796915560e61dd94cddeccde0a8bf1539aad5e5d04597945a8"
+last_crawled_at: "2026-04-27T18:17:29.389Z"
+content_hash: "b0a0cb0a5674c38894b5e1bf2b729ddfc4bccc8e7357fe427c83e503eae820a2"
 menu_path: ["Using Google Analytics with Next.js (through `@next/third-parties/google`)"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/messages/next-request-in-use-cache/index.md", "title": "Cannot access `cookies()` or `headers()` in `\"use cache\"`"}
-nav_next: {"path": "nextjs/docs/messages/no-assign-module-variable/index.md", "title": "No assign module variable"}
+version: "latest"
+content_language: "en"
 ---
+[Docs](/docs)[Errors](/docs)Using Google Analytics with Next.js (through \`@next/third-parties/google\`)
 
 # Using Google Analytics with Next.js (through \`@next/third-parties/google\`)
 
@@ -34,8 +35,6 @@ The `GoogleAnalytics` component can be used to include [Google Analytics 4](http
 To load Google Analytics for all routes, include the component directly in your root layout and pass in your measurement ID:
 
 app/layout.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -74,8 +73,6 @@ The `GoogleTagManager` component can be used to add [Google Tag Manager](https:/
 
 app/layout.tsx
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -109,17 +106,13 @@ export default function Page() {
 
 ## Good to know[](#good-to-know)
 
-*   If you are using the Pages Router, please refer to the [`pages/` documentation](/docs/pages/guides/third-party-libraries).
-*   `@next/third-parties` also supports [other third parties](/docs/app/guides/third-party-libraries#google-tag-manager).
-*   Using `@next/third-parties` is not required. You can also use the `next/script` component directly. Refer to the [`next/script` documentation](/docs/app/guides/scripts) to learn more.
+-   If you are using the Pages Router, please refer to the [`pages/` documentation](/docs/pages/guides/third-party-libraries).
+-   `@next/third-parties` also supports [other third parties](/docs/app/guides/third-party-libraries#google-tag-manager).
+-   Using `@next/third-parties` is not required. You can also use the `next/script` component directly. Refer to the [`next/script` documentation](/docs/app/guides/scripts) to learn more.
 
 ## Useful Links[](#useful-links)
 
-*   [`@next/third-parties` Documentation](/docs/app/guides/third-party-libraries)
-*   [`next/script` Documentation](/docs/app/guides/scripts)
+-   [`@next/third-parties` Documentation](/docs/app/guides/third-party-libraries)
+-   [`next/script` Documentation](/docs/app/guides/scripts)
 
 Was this helpful?
-
-supported.
-
-Send

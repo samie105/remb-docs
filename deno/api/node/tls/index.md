@@ -5,10 +5,11 @@ canonical_url: "https://docs.deno.com/api/node/tls/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:42:14.727Z"
-content_hash: "db75464c71f64b87ebd34525599afc87a48774779c0367ac62cb66c836ad32b6"
+last_crawled_at: "2026-04-27T17:14:34.018Z"
+content_hash: "77f6bad8b9fd73d65e56306ecd0fa2373688e9d25c7ac7dddf9a29b2251e34b0"
 menu_path: ["tls - Node documentation"]
 section_path: []
+content_language: "en"
 ---
 ### Usage in Deno
 
@@ -22,24 +23,22 @@ The `node:tls` module provides an implementation of the Transport Layer Security
 import tls from 'node:tls';
 ```
 
-### Classes [#](#Classes)
-
 c
 
 [Server](.././tls/~/Server "Server")
 
 Accepts encrypted connections using TLS or SSL.
 
-*   [addContext](.././tls/~/Server#method_addcontext_0)
-*   [addListener](.././tls/~/Server#method_addlistener_0)
-*   [emit](.././tls/~/Server#method_emit_0)
-*   [getTicketKeys](.././tls/~/Server#method_getticketkeys_0)
-*   [on](.././tls/~/Server#method_on_0)
-*   [once](.././tls/~/Server#method_once_0)
-*   [prependListener](.././tls/~/Server#method_prependlistener_0)
-*   [prependOnceListener](.././tls/~/Server#method_prependoncelistener_0)
-*   [setSecureContext](.././tls/~/Server#method_setsecurecontext_0)
-*   [setTicketKeys](.././tls/~/Server#method_setticketkeys_0)
+-   [addContext](.././tls/~/Server#method_addcontext_0)
+-   [addListener](.././tls/~/Server#method_addlistener_0)
+-   [emit](.././tls/~/Server#method_emit_0)
+-   [getTicketKeys](.././tls/~/Server#method_getticketkeys_0)
+-   [on](.././tls/~/Server#method_on_0)
+-   [once](.././tls/~/Server#method_once_0)
+-   [prependListener](.././tls/~/Server#method_prependlistener_0)
+-   [prependOnceListener](.././tls/~/Server#method_prependoncelistener_0)
+-   [setSecureContext](.././tls/~/Server#method_setsecurecontext_0)
+-   [setTicketKeys](.././tls/~/Server#method_setticketkeys_0)
 
 c
 
@@ -47,36 +46,34 @@ c
 
 Performs transparent encryption of written data and all required TLS negotiation.
 
-*   [addListener](.././tls/~/TLSSocket#method_addlistener_0)
-*   [alpnProtocol](.././tls/~/TLSSocket#property_alpnprotocol)
-*   [authorizationError](.././tls/~/TLSSocket#property_authorizationerror)
-*   [authorized](.././tls/~/TLSSocket#property_authorized)
-*   [disableRenegotiation](.././tls/~/TLSSocket#method_disablerenegotiation_0)
-*   [emit](.././tls/~/TLSSocket#method_emit_0)
-*   [enableTrace](.././tls/~/TLSSocket#method_enabletrace_0)
-*   [encrypted](.././tls/~/TLSSocket#property_encrypted)
-*   [exportKeyingMaterial](.././tls/~/TLSSocket#method_exportkeyingmaterial_0)
-*   [getCertificate](.././tls/~/TLSSocket#method_getcertificate_0)
-*   [getCipher](.././tls/~/TLSSocket#method_getcipher_0)
-*   [getEphemeralKeyInfo](.././tls/~/TLSSocket#method_getephemeralkeyinfo_0)
-*   [getFinished](.././tls/~/TLSSocket#method_getfinished_0)
-*   [getPeerCertificate](.././tls/~/TLSSocket#method_getpeercertificate_0)
-*   [getPeerFinished](.././tls/~/TLSSocket#method_getpeerfinished_0)
-*   [getPeerX509Certificate](.././tls/~/TLSSocket#method_getpeerx509certificate_0)
-*   [getProtocol](.././tls/~/TLSSocket#method_getprotocol_0)
-*   [getSession](.././tls/~/TLSSocket#method_getsession_0)
-*   [getSharedSigalgs](.././tls/~/TLSSocket#method_getsharedsigalgs_0)
-*   [getTLSTicket](.././tls/~/TLSSocket#method_gettlsticket_0)
-*   [getX509Certificate](.././tls/~/TLSSocket#method_getx509certificate_0)
-*   [isSessionReused](.././tls/~/TLSSocket#method_issessionreused_0)
-*   [on](.././tls/~/TLSSocket#method_on_0)
-*   [once](.././tls/~/TLSSocket#method_once_0)
-*   [prependListener](.././tls/~/TLSSocket#method_prependlistener_0)
-*   [prependOnceListener](.././tls/~/TLSSocket#method_prependoncelistener_0)
-*   [renegotiate](.././tls/~/TLSSocket#method_renegotiate_0)
-*   [setMaxSendFragment](.././tls/~/TLSSocket#method_setmaxsendfragment_0)
-
-### Functions [#](#Functions)
+-   [addListener](.././tls/~/TLSSocket#method_addlistener_0)
+-   [alpnProtocol](.././tls/~/TLSSocket#property_alpnprotocol)
+-   [authorizationError](.././tls/~/TLSSocket#property_authorizationerror)
+-   [authorized](.././tls/~/TLSSocket#property_authorized)
+-   [disableRenegotiation](.././tls/~/TLSSocket#method_disablerenegotiation_0)
+-   [emit](.././tls/~/TLSSocket#method_emit_0)
+-   [enableTrace](.././tls/~/TLSSocket#method_enabletrace_0)
+-   [encrypted](.././tls/~/TLSSocket#property_encrypted)
+-   [exportKeyingMaterial](.././tls/~/TLSSocket#method_exportkeyingmaterial_0)
+-   [getCertificate](.././tls/~/TLSSocket#method_getcertificate_0)
+-   [getCipher](.././tls/~/TLSSocket#method_getcipher_0)
+-   [getEphemeralKeyInfo](.././tls/~/TLSSocket#method_getephemeralkeyinfo_0)
+-   [getFinished](.././tls/~/TLSSocket#method_getfinished_0)
+-   [getPeerCertificate](.././tls/~/TLSSocket#method_getpeercertificate_0)
+-   [getPeerFinished](.././tls/~/TLSSocket#method_getpeerfinished_0)
+-   [getPeerX509Certificate](.././tls/~/TLSSocket#method_getpeerx509certificate_0)
+-   [getProtocol](.././tls/~/TLSSocket#method_getprotocol_0)
+-   [getSession](.././tls/~/TLSSocket#method_getsession_0)
+-   [getSharedSigalgs](.././tls/~/TLSSocket#method_getsharedsigalgs_0)
+-   [getTLSTicket](.././tls/~/TLSSocket#method_gettlsticket_0)
+-   [getX509Certificate](.././tls/~/TLSSocket#method_getx509certificate_0)
+-   [isSessionReused](.././tls/~/TLSSocket#method_issessionreused_0)
+-   [on](.././tls/~/TLSSocket#method_on_0)
+-   [once](.././tls/~/TLSSocket#method_once_0)
+-   [prependListener](.././tls/~/TLSSocket#method_prependlistener_0)
+-   [prependOnceListener](.././tls/~/TLSSocket#method_prependoncelistener_0)
+-   [renegotiate](.././tls/~/TLSSocket#method_renegotiate_0)
+-   [setMaxSendFragment](.././tls/~/TLSSocket#method_setmaxsendfragment_0)
 
 f
 
@@ -114,20 +111,18 @@ f
 
 No documentation available
 
-### Interfaces [#](#Interfaces)
-
 I
 
 [Certificate](.././tls/~/Certificate "Certificate")
 
 No documentation available
 
-*   [C](.././tls/~/Certificate#property_c)
-*   [CN](.././tls/~/Certificate#property_cn)
-*   [L](.././tls/~/Certificate#property_l)
-*   [O](.././tls/~/Certificate#property_o)
-*   [OU](.././tls/~/Certificate#property_ou)
-*   [ST](.././tls/~/Certificate#property_st)
+-   [C](.././tls/~/Certificate#property_c)
+-   [CN](.././tls/~/Certificate#property_cn)
+-   [L](.././tls/~/Certificate#property_l)
+-   [O](.././tls/~/Certificate#property_o)
+-   [OU](.././tls/~/Certificate#property_ou)
+-   [ST](.././tls/~/Certificate#property_st)
 
 I
 
@@ -135,9 +130,9 @@ I
 
 No documentation available
 
-*   [name](.././tls/~/CipherNameAndProtocol#property_name)
-*   [standardName](.././tls/~/CipherNameAndProtocol#property_standardname)
-*   [version](.././tls/~/CipherNameAndProtocol#property_version)
+-   [name](.././tls/~/CipherNameAndProtocol#property_name)
+-   [standardName](.././tls/~/CipherNameAndProtocol#property_standardname)
+-   [version](.././tls/~/CipherNameAndProtocol#property_version)
 
 I
 
@@ -145,12 +140,12 @@ I
 
 No documentation available
 
-*   [ALPNProtocols](.././tls/~/CommonConnectionOptions#property_alpnprotocols)
-*   [SNICallback](.././tls/~/CommonConnectionOptions#property_snicallback)
-*   [enableTrace](.././tls/~/CommonConnectionOptions#property_enabletrace)
-*   [rejectUnauthorized](.././tls/~/CommonConnectionOptions#property_rejectunauthorized)
-*   [requestCert](.././tls/~/CommonConnectionOptions#property_requestcert)
-*   [secureContext](.././tls/~/CommonConnectionOptions#property_securecontext)
+-   [ALPNProtocols](.././tls/~/CommonConnectionOptions#property_alpnprotocols)
+-   [SNICallback](.././tls/~/CommonConnectionOptions#property_snicallback)
+-   [enableTrace](.././tls/~/CommonConnectionOptions#property_enabletrace)
+-   [rejectUnauthorized](.././tls/~/CommonConnectionOptions#property_rejectunauthorized)
+-   [requestCert](.././tls/~/CommonConnectionOptions#property_requestcert)
+-   [secureContext](.././tls/~/CommonConnectionOptions#property_securecontext)
 
 I
 
@@ -158,17 +153,17 @@ I
 
 No documentation available
 
-*   [checkServerIdentity](.././tls/~/ConnectionOptions#property_checkserveridentity)
-*   [host](.././tls/~/ConnectionOptions#property_host)
-*   [lookup](.././tls/~/ConnectionOptions#property_lookup)
-*   [minDHSize](.././tls/~/ConnectionOptions#property_mindhsize)
-*   [path](.././tls/~/ConnectionOptions#property_path)
-*   [port](.././tls/~/ConnectionOptions#property_port)
-*   [pskCallback](.././tls/~/ConnectionOptions#method_pskcallback_0)
-*   [servername](.././tls/~/ConnectionOptions#property_servername)
-*   [session](.././tls/~/ConnectionOptions#property_session)
-*   [socket](.././tls/~/ConnectionOptions#property_socket)
-*   [timeout](.././tls/~/ConnectionOptions#property_timeout)
+-   [checkServerIdentity](.././tls/~/ConnectionOptions#property_checkserveridentity)
+-   [host](.././tls/~/ConnectionOptions#property_host)
+-   [lookup](.././tls/~/ConnectionOptions#property_lookup)
+-   [minDHSize](.././tls/~/ConnectionOptions#property_mindhsize)
+-   [path](.././tls/~/ConnectionOptions#property_path)
+-   [port](.././tls/~/ConnectionOptions#property_port)
+-   [pskCallback](.././tls/~/ConnectionOptions#method_pskcallback_0)
+-   [servername](.././tls/~/ConnectionOptions#property_servername)
+-   [session](.././tls/~/ConnectionOptions#property_session)
+-   [socket](.././tls/~/ConnectionOptions#property_socket)
+-   [timeout](.././tls/~/ConnectionOptions#property_timeout)
 
 I
 
@@ -176,7 +171,7 @@ I
 
 No documentation available
 
-*   [issuerCertificate](.././tls/~/DetailedPeerCertificate#property_issuercertificate)
+-   [issuerCertificate](.././tls/~/DetailedPeerCertificate#property_issuercertificate)
 
 I
 
@@ -184,9 +179,9 @@ I
 
 No documentation available
 
-*   [name](.././tls/~/EphemeralKeyInfo#property_name)
-*   [size](.././tls/~/EphemeralKeyInfo#property_size)
-*   [type](.././tls/~/EphemeralKeyInfo#property_type)
+-   [name](.././tls/~/EphemeralKeyInfo#property_name)
+-   [size](.././tls/~/EphemeralKeyInfo#property_size)
+-   [type](.././tls/~/EphemeralKeyInfo#property_type)
 
 I
 
@@ -194,8 +189,8 @@ I
 
 No documentation available
 
-*   [passphrase](.././tls/~/KeyObject#property_passphrase)
-*   [pem](.././tls/~/KeyObject#property_pem)
+-   [passphrase](.././tls/~/KeyObject#property_passphrase)
+-   [pem](.././tls/~/KeyObject#property_pem)
 
 I
 
@@ -203,25 +198,25 @@ I
 
 No documentation available
 
-*   [asn1Curve](.././tls/~/PeerCertificate#property_asn1curve)
-*   [bits](.././tls/~/PeerCertificate#property_bits)
-*   [ca](.././tls/~/PeerCertificate#property_ca)
-*   [exponent](.././tls/~/PeerCertificate#property_exponent)
-*   [ext\_key\_usage](.././tls/~/PeerCertificate#property_ext_key_usage)
-*   [fingerprint](.././tls/~/PeerCertificate#property_fingerprint)
-*   [fingerprint256](.././tls/~/PeerCertificate#property_fingerprint256)
-*   [fingerprint512](.././tls/~/PeerCertificate#property_fingerprint512)
-*   [infoAccess](.././tls/~/PeerCertificate#property_infoaccess)
-*   [issuer](.././tls/~/PeerCertificate#property_issuer)
-*   [modulus](.././tls/~/PeerCertificate#property_modulus)
-*   [nistCurve](.././tls/~/PeerCertificate#property_nistcurve)
-*   [pubkey](.././tls/~/PeerCertificate#property_pubkey)
-*   [raw](.././tls/~/PeerCertificate#property_raw)
-*   [serialNumber](.././tls/~/PeerCertificate#property_serialnumber)
-*   [subject](.././tls/~/PeerCertificate#property_subject)
-*   [subjectaltname](.././tls/~/PeerCertificate#property_subjectaltname)
-*   [valid\_from](.././tls/~/PeerCertificate#property_valid_from)
-*   [valid\_to](.././tls/~/PeerCertificate#property_valid_to)
+-   [asn1Curve](.././tls/~/PeerCertificate#property_asn1curve)
+-   [bits](.././tls/~/PeerCertificate#property_bits)
+-   [ca](.././tls/~/PeerCertificate#property_ca)
+-   [exponent](.././tls/~/PeerCertificate#property_exponent)
+-   [ext\_key\_usage](.././tls/~/PeerCertificate#property_ext_key_usage)
+-   [fingerprint](.././tls/~/PeerCertificate#property_fingerprint)
+-   [fingerprint256](.././tls/~/PeerCertificate#property_fingerprint256)
+-   [fingerprint512](.././tls/~/PeerCertificate#property_fingerprint512)
+-   [infoAccess](.././tls/~/PeerCertificate#property_infoaccess)
+-   [issuer](.././tls/~/PeerCertificate#property_issuer)
+-   [modulus](.././tls/~/PeerCertificate#property_modulus)
+-   [nistCurve](.././tls/~/PeerCertificate#property_nistcurve)
+-   [pubkey](.././tls/~/PeerCertificate#property_pubkey)
+-   [raw](.././tls/~/PeerCertificate#property_raw)
+-   [serialNumber](.././tls/~/PeerCertificate#property_serialnumber)
+-   [subject](.././tls/~/PeerCertificate#property_subject)
+-   [subjectaltname](.././tls/~/PeerCertificate#property_subjectaltname)
+-   [valid\_from](.././tls/~/PeerCertificate#property_valid_from)
+-   [valid\_to](.././tls/~/PeerCertificate#property_valid_to)
 
 I
 
@@ -229,8 +224,8 @@ I
 
 No documentation available
 
-*   [identity](.././tls/~/PSKCallbackNegotation#property_identity)
-*   [psk](.././tls/~/PSKCallbackNegotation#property_psk)
+-   [identity](.././tls/~/PSKCallbackNegotation#property_identity)
+-   [psk](.././tls/~/PSKCallbackNegotation#property_psk)
 
 I
 
@@ -238,8 +233,8 @@ I
 
 No documentation available
 
-*   [buf](.././tls/~/PxfObject#property_buf)
-*   [passphrase](.././tls/~/PxfObject#property_passphrase)
+-   [buf](.././tls/~/PxfObject#property_buf)
+-   [passphrase](.././tls/~/PxfObject#property_passphrase)
 
 I
 
@@ -247,7 +242,7 @@ I
 
 No documentation available
 
-*   [context](.././tls/~/SecureContext#property_context)
+-   [context](.././tls/~/SecureContext#property_context)
 
 I
 
@@ -255,29 +250,29 @@ I
 
 No documentation available
 
-*   [ALPNCallback](.././tls/~/SecureContextOptions#property_alpncallback)
-*   [allowPartialTrustChain](.././tls/~/SecureContextOptions#property_allowpartialtrustchain)
-*   [ca](.././tls/~/SecureContextOptions#property_ca)
-*   [cert](.././tls/~/SecureContextOptions#property_cert)
-*   [ciphers](.././tls/~/SecureContextOptions#property_ciphers)
-*   [clientCertEngine](.././tls/~/SecureContextOptions#property_clientcertengine)
-*   [crl](.././tls/~/SecureContextOptions#property_crl)
-*   [dhparam](.././tls/~/SecureContextOptions#property_dhparam)
-*   [ecdhCurve](.././tls/~/SecureContextOptions#property_ecdhcurve)
-*   [honorCipherOrder](.././tls/~/SecureContextOptions#property_honorcipherorder)
-*   [key](.././tls/~/SecureContextOptions#property_key)
-*   [maxVersion](.././tls/~/SecureContextOptions#property_maxversion)
-*   [minVersion](.././tls/~/SecureContextOptions#property_minversion)
-*   [passphrase](.././tls/~/SecureContextOptions#property_passphrase)
-*   [pfx](.././tls/~/SecureContextOptions#property_pfx)
-*   [privateKeyEngine](.././tls/~/SecureContextOptions#property_privatekeyengine)
-*   [privateKeyIdentifier](.././tls/~/SecureContextOptions#property_privatekeyidentifier)
-*   [secureOptions](.././tls/~/SecureContextOptions#property_secureoptions)
-*   [secureProtocol](.././tls/~/SecureContextOptions#property_secureprotocol)
-*   [sessionIdContext](.././tls/~/SecureContextOptions#property_sessionidcontext)
-*   [sessionTimeout](.././tls/~/SecureContextOptions#property_sessiontimeout)
-*   [sigalgs](.././tls/~/SecureContextOptions#property_sigalgs)
-*   [ticketKeys](.././tls/~/SecureContextOptions#property_ticketkeys)
+-   [ALPNCallback](.././tls/~/SecureContextOptions#property_alpncallback)
+-   [allowPartialTrustChain](.././tls/~/SecureContextOptions#property_allowpartialtrustchain)
+-   [ca](.././tls/~/SecureContextOptions#property_ca)
+-   [cert](.././tls/~/SecureContextOptions#property_cert)
+-   [ciphers](.././tls/~/SecureContextOptions#property_ciphers)
+-   [clientCertEngine](.././tls/~/SecureContextOptions#property_clientcertengine)
+-   [crl](.././tls/~/SecureContextOptions#property_crl)
+-   [dhparam](.././tls/~/SecureContextOptions#property_dhparam)
+-   [ecdhCurve](.././tls/~/SecureContextOptions#property_ecdhcurve)
+-   [honorCipherOrder](.././tls/~/SecureContextOptions#property_honorcipherorder)
+-   [key](.././tls/~/SecureContextOptions#property_key)
+-   [maxVersion](.././tls/~/SecureContextOptions#property_maxversion)
+-   [minVersion](.././tls/~/SecureContextOptions#property_minversion)
+-   [passphrase](.././tls/~/SecureContextOptions#property_passphrase)
+-   [pfx](.././tls/~/SecureContextOptions#property_pfx)
+-   [privateKeyEngine](.././tls/~/SecureContextOptions#property_privatekeyengine)
+-   [privateKeyIdentifier](.././tls/~/SecureContextOptions#property_privatekeyidentifier)
+-   [secureOptions](.././tls/~/SecureContextOptions#property_secureoptions)
+-   [secureProtocol](.././tls/~/SecureContextOptions#property_secureprotocol)
+-   [sessionIdContext](.././tls/~/SecureContextOptions#property_sessionidcontext)
+-   [sessionTimeout](.././tls/~/SecureContextOptions#property_sessiontimeout)
+-   [sigalgs](.././tls/~/SecureContextOptions#property_sigalgs)
+-   [ticketKeys](.././tls/~/SecureContextOptions#property_ticketkeys)
 
 I
 
@@ -285,11 +280,11 @@ I
 
 No documentation available
 
-*   [handshakeTimeout](.././tls/~/TlsOptions#property_handshaketimeout)
-*   [pskCallback](.././tls/~/TlsOptions#method_pskcallback_0)
-*   [pskIdentityHint](.././tls/~/TlsOptions#property_pskidentityhint)
-*   [sessionTimeout](.././tls/~/TlsOptions#property_sessiontimeout)
-*   [ticketKeys](.././tls/~/TlsOptions#property_ticketkeys)
+-   [handshakeTimeout](.././tls/~/TlsOptions#property_handshaketimeout)
+-   [pskCallback](.././tls/~/TlsOptions#method_pskcallback_0)
+-   [pskIdentityHint](.././tls/~/TlsOptions#property_pskidentityhint)
+-   [sessionTimeout](.././tls/~/TlsOptions#property_sessiontimeout)
+-   [ticketKeys](.././tls/~/TlsOptions#property_ticketkeys)
 
 I
 
@@ -297,10 +292,10 @@ I
 
 No documentation available
 
-*   [isServer](.././tls/~/TLSSocketOptions#property_isserver)
-*   [requestOCSP](.././tls/~/TLSSocketOptions#property_requestocsp)
-*   [server](.././tls/~/TLSSocketOptions#property_server)
-*   [session](.././tls/~/TLSSocketOptions#property_session)
+-   [isServer](.././tls/~/TLSSocketOptions#property_isserver)
+-   [requestOCSP](.././tls/~/TLSSocketOptions#property_requestocsp)
+-   [server](.././tls/~/TLSSocketOptions#property_server)
+-   [session](.././tls/~/TLSSocketOptions#property_session)
 
 I
 
@@ -308,18 +303,14 @@ I
 
 No documentation available
 
-*   [cleartext](.././tls/~/SecurePair#property_cleartext)
-*   [encrypted](.././tls/~/SecurePair#property_encrypted)
-
-### Type Aliases [#](<#Type Aliases>)
+-   [cleartext](.././tls/~/SecurePair#property_cleartext)
+-   [encrypted](.././tls/~/SecurePair#property_encrypted)
 
 T
 
 [SecureVersion](.././tls/~/SecureVersion "SecureVersion")
 
 No documentation available
-
-### Variables [#](#Variables)
 
 v
 

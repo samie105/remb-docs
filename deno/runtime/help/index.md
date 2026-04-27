@@ -5,17 +5,18 @@ canonical_url: "https://docs.deno.com/runtime/help/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:49:41.069Z"
-content_hash: "499a5e05e93de520164144cc2a640689403f506e65225747cc0fe87bc8041a50"
+last_crawled_at: "2026-04-27T17:24:31.612Z"
+content_hash: "9c6f293b9a6ec41e600381d06f4f80f9953fc470f2a1cf5d4c0d448cb52e7a7d"
 menu_path: ["Where to get help"]
 section_path: []
+content_language: "en"
 ---
-On this page
+**On this page**
 
-*   [Community Discord](#community-discord)
-*   [Stack Overflow](#stack-overflow)
-*   [DEV's Deno Community](#dev's-deno-community)
-*   [Examples and Tutorials](#examples-and-tutorials)
+-   [Community Discord](#community-discord)
+-   [Stack Overflow](#stack-overflow)
+-   [DEV's Deno Community](#dev's-deno-community)
+-   [Examples and Tutorials](#examples-and-tutorials)
 
 Stuck? Lost? Get Help from the Deno Community.
 
@@ -35,4 +36,4 @@ A great place to find interesting articles about best practices, application arc
 
 Deno provides a wide range of examples and tutorials that might address your problem:
 
-*   [Deno by Example](/examples/): Practical code snippets for common tasks
+-   [Deno by Example](/examples/): Practical code snippets for common tasks

@@ -5,14 +5,12 @@ canonical_url: "https://www.postgresql.org/docs/current/xoper-optimization.html"
 docset: "postgres"
 kind: "database"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:39:33.137Z"
-content_hash: "837f96b38945316a624470e80e1bbad6cb7a940078fb70af9616458ed9ad94e6"
+last_crawled_at: "2026-04-27T20:44:38.726Z"
+content_hash: "7d4fcb591b0aafc00d26c9f2c6cf380c5c4fefbe268062348a4ea0a0a3832c0c"
 menu_path: ["PostgreSQL: Documentation: 18: 36.15. Operator Optimization Information"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/xindex.html/index.md", "title": "PostgreSQL: Documentation: 18: 36.16.\u00a0Interfacing Extensions to Indexes"}
-nav_next: {"path": "postgres/docs/current/xtypes.html/index.md", "title": "PostgreSQL: Documentation: 18: 36.13.\u00a0User-Defined Types"}
+content_language: "en"
 ---
-
 A PostgreSQL operator definition can include several optional clauses that tell the system useful things about how the operator behaves. These clauses should be provided whenever appropriate, because they can make for considerable speedups in execution of queries that use the operator. But if you provide them, you must be sure that they are right! Incorrect use of an optimization clause can result in slow queries, subtly wrong output, or other Bad Things. You can always leave out an optimization clause if you are not sure about it; the only consequence is that queries might run slower than they need to.
 
 Additional optimization clauses might be added in future versions of PostgreSQL. The ones described here are all the ones that release 18.3 understands.
@@ -47,17 +45,7 @@ for the current operator and a particular constant value. This assists the optim
 
 Writing new restriction selectivity estimation functions is far beyond the scope of this chapter, but fortunately you can usually just use one of the system's standard estimators for many of your own operators. These are the standard restriction estimators:
 
-`eqsel` for `=`
-
-`neqsel` for `<>`
-
-`scalarltsel` for `<`
-
-`scalarlesel` for `<=`
-
-`scalargtsel` for `>`
-
-`scalargesel` for `>=`
+<table summary="Simple list"><tbody><tr><td><code>eqsel</code> for <code>=</code></td></tr><tr><td><code>neqsel</code> for <code>&lt;&gt;</code></td></tr><tr><td><code>scalarltsel</code> for <code>&lt;</code></td></tr><tr><td><code>scalarlesel</code> for <code>&lt;=</code></td></tr><tr><td><code>scalargtsel</code> for <code>&gt;</code></td></tr><tr><td><code>scalargesel</code> for <code>&gt;=</code></td></tr></tbody></table>
 
 You can frequently get away with using either `eqsel` or `neqsel` for operators that have very high or very low selectivity, even if they aren't really equality or inequality. For example, the approximate-equality geometric operators use `eqsel` on the assumption that they'll usually only match a small fraction of the entries in a table.
 
@@ -77,25 +65,7 @@ for the current operator. As with the `RESTRICT` clause, this helps the optimize
 
 As before, this chapter will make no attempt to explain how to write a join selectivity estimator function, but will just suggest that you use one of the standard estimators if one is applicable:
 
-`eqjoinsel` for `=`
-
-`neqjoinsel` for `<>`
-
-`scalarltjoinsel` for `<`
-
-`scalarlejoinsel` for `<=`
-
-`scalargtjoinsel` for `>`
-
-`scalargejoinsel` for `>=`
-
-`matchingjoinsel` for generic matching operators
-
-`areajoinsel` for 2D area-based comparisons
-
-`positionjoinsel` for 2D position-based comparisons
-
-`contjoinsel` for 2D containment-based comparisons
+<table summary="Simple list"><tbody><tr><td><code>eqjoinsel</code> for <code>=</code></td></tr><tr><td><code>neqjoinsel</code> for <code>&lt;&gt;</code></td></tr><tr><td><code>scalarltjoinsel</code> for <code>&lt;</code></td></tr><tr><td><code>scalarlejoinsel</code> for <code>&lt;=</code></td></tr><tr><td><code>scalargtjoinsel</code> for <code>&gt;</code></td></tr><tr><td><code>scalargejoinsel</code> for <code>&gt;=</code></td></tr><tr><td><code>matchingjoinsel</code> for generic matching operators</td></tr><tr><td><code>areajoinsel</code> for 2D area-based comparisons</td></tr><tr><td><code>positionjoinsel</code> for 2D position-based comparisons</td></tr><tr><td><code>contjoinsel</code> for 2D containment-based comparisons</td></tr></tbody></table>
 
 ### 36.15.5. `HASHES` [#](#XOPER-HASHES)
 

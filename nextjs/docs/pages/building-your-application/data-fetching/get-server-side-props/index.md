@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/pages/building-your-application/data-fet
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:22:55.724Z"
-content_hash: "f4149ae3d762c94377bcedc20a2fa03bfd58d5e4d76b54bb93b053de1124f4e4"
+last_crawled_at: "2026-04-27T18:22:16.961Z"
+content_hash: "669310f570b5f4ccc525a9d185a730afd32944cffd2593a3e5ecbb4eada9e617"
 menu_path: ["getServerSideProps"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/pages/building-your-application/data-fetching/get-static-paths/index.md", "title": "getStaticPaths"}
-nav_next: {"path": "nextjs/docs/pages/building-your-application/data-fetching/client-side/index.md", "title": "Client-side Fetching"}
+version: "latest"
+content_language: "en"
 ---
+[Building Your Application](/docs/pages/building-your-application)[Data Fetching](/docs/pages/building-your-application/data-fetching)getServerSideProps
 
 # getServerSideProps
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 `getServerSideProps` is a Next.js function that can be used to fetch data and render the contents of a page at request time.
 
@@ -24,8 +25,6 @@ Last updated April 15, 2026
 You can use `getServerSideProps` by exporting it from a Page Component. The example below shows how you can fetch data from a 3rd party API in `getServerSideProps`, and pass the data to the page as props:
 
 pages/index.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -64,18 +63,18 @@ If you do not need to fetch the data at request time, or would prefer to cache t
 
 ## Behavior[](#behavior)
 
-*   `getServerSideProps` runs on the server.
-*   `getServerSideProps` can only be exported from a **page**.
-*   `getServerSideProps` returns JSON.
-*   When a user visits a page, `getServerSideProps` will be used to fetch data at request time, and the data is used to render the initial HTML of the page.
-*   `props` passed to the page component can be viewed on the client as part of the initial HTML. This is to allow the page to be [hydrated](https://react.dev/reference/react-dom/hydrate) correctly. Make sure that you don't pass any sensitive information that shouldn't be available on the client in `props`.
-*   When a user visits the page through [`next/link`](/docs/pages/api-reference/components/link) or [`next/router`](/docs/pages/api-reference/functions/use-router), Next.js sends an API request to the server, which runs `getServerSideProps`.
-*   You do not have to call a Next.js [API Route](/docs/pages/building-your-application/routing/api-routes) to fetch data when using `getServerSideProps` since the function runs on the server. Instead, you can call a CMS, database, or other third-party APIs directly from inside `getServerSideProps`.
+-   `getServerSideProps` runs on the server.
+-   `getServerSideProps` can only be exported from a **page**.
+-   `getServerSideProps` returns JSON.
+-   When a user visits a page, `getServerSideProps` will be used to fetch data at request time, and the data is used to render the initial HTML of the page.
+-   `props` passed to the page component can be viewed on the client as part of the initial HTML. This is to allow the page to be [hydrated](https://react.dev/reference/react-dom/hydrate) correctly. Make sure that you don't pass any sensitive information that shouldn't be available on the client in `props`.
+-   When a user visits the page through [`next/link`](/docs/pages/api-reference/components/link) or [`next/router`](/docs/pages/api-reference/functions/use-router), Next.js sends an API request to the server, which runs `getServerSideProps`.
+-   You do not have to call a Next.js [API Route](/docs/pages/building-your-application/routing/api-routes) to fetch data when using `getServerSideProps` since the function runs on the server. Instead, you can call a CMS, database, or other third-party APIs directly from inside `getServerSideProps`.
 
 > **Good to know:**
 > 
-> *   See [`getServerSideProps` API reference](/docs/pages/api-reference/functions/get-server-side-props) for parameters and props that can be used with `getServerSideProps`.
-> *   You can use the [next-code-elimination tool](https://next-code-elimination.vercel.app/) to verify what Next.js eliminates from the client-side bundle.
+> -   See [`getServerSideProps` API reference](/docs/pages/api-reference/functions/get-server-side-props) for parameters and props that can be used with `getServerSideProps`.
+> -   You can use the [next-code-elimination tool](https://next-code-elimination.vercel.app/) to verify what Next.js eliminates from the client-side bundle.
 
 ## Error Handling[](#error-handling)
 
@@ -110,7 +109,3 @@ export async function getServerSideProps({ req, res }) {
 However, before reaching for `cache-control`, we recommend seeing if [`getStaticProps`](/docs/pages/building-your-application/data-fetching/get-static-props) with [ISR](/docs/pages/guides/incremental-static-regeneration) is a better fit for your use case.
 
 Was this helpful?
-
-supported.
-
-Send

@@ -5,73 +5,86 @@ canonical_url: "https://tailwindcss.com/docs/skew"
 docset: "tailwind"
 kind: "framework"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:13:47.193Z"
-content_hash: "89032970a7d325abb117b36e4a8e8d3f33765ccde41c114ab4e6ce178b9bbdf7"
+last_crawled_at: "2026-04-27T20:35:00.952Z"
+content_hash: "5c4ff7856e6ae193c630802a6c20fd5973d0b0eac63f01e1b42646a3958d3477"
 menu_path: ["skew"]
 section_path: []
-nav_prev: {"path": "tailwind/docs/scale/index.md", "title": "scale"}
-nav_next: {"path": "tailwind/docs/transform/index.md", "title": "transform"}
+content_language: "en"
 ---
+[](/)
+
+[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
+
+1.  Transforms
+2.  skew
+
+Transforms
 
 # skew
 
 Utilities for skewing elements with transform.
 
-Class
-
-Styles
-
-`skew-<number>`
-
+| Class | Styles |
+| --- | --- |
+| `skew-<number>` | 
 `transform: skewX(<number>deg) skewY(<number>deg);`
 
-`-skew-<number>`
+ |
+| `-skew-<number>` | 
 
 `transform: skewX(-<number>deg) skewY(-<number>deg);`
 
-`skew-(<custom-property>)`
+ |
+| `skew-(<custom-property>)` | 
 
 `transform: skewX(var(<custom-property>)) skewY(var(<custom-property>));`
 
-`skew-[<value>]`
+ |
+| `skew-[<value>]` | 
 
 `transform: skewX(<value>) skewY(<value>);`
 
-`skew-x-<number>`
+ |
+| `skew-x-<number>` | 
 
 `transform: skewX(<number>deg));`
 
-`-skew-x-<number>`
+ |
+| `-skew-x-<number>` | 
 
 `transform: skewX(-<number>deg));`
 
-`skew-x-(<custom-property>)`
+ |
+| `skew-x-(<custom-property>)` | 
 
 `transform: skewX(var(<custom-property>));`
 
-`skew-x-[<value>]`
+ |
+| `skew-x-[<value>]` | 
 
 `transform: skewX(<value>));`
 
-`skew-y-<number>`
+ |
+| `skew-y-<number>` | 
 
 `transform: skewY(<number>deg);`
 
-`-skew-y-<number>`
+ |
+| `-skew-y-<number>` | 
 
 `transform: skewY(-<number>deg);`
 
-`skew-y-(<custom-property>)`
+ |
+| `skew-y-(<custom-property>)` | 
 
 `transform: skewY(var(<custom-property>));`
 
-`skew-y-[<value>]`
+ |
+| `skew-y-[<value>]` | 
 
 `transform: skewY(<value>);`
 
-## [Examples](#examples)
-
-### [Basic example](#basic-example)
+ |
 
 Use `skew-<number>` utilities like `skew-4` and `skew-10` to skew an element on both axes:
 
@@ -91,8 +104,6 @@ skew-12
 <img class="skew-3 ..." src="/img/mountains.jpg" /><img class="skew-6 ..." src="/img/mountains.jpg" /><img class="skew-12 ..." src="/img/mountains.jpg" />
 ```
 
-### [Using negative values](#using-negative-values)
-
 Use `-skew-<number>` utilities like `-skew-4` and `-skew-10` to skew an element on both axes:
 
 \-skew-3
@@ -110,8 +121,6 @@ Use `-skew-<number>` utilities like `-skew-4` and `-skew-10` to skew an element 
 ```
 <img class="-skew-3 ..." src="/img/mountains.jpg" /><img class="-skew-6 ..." src="/img/mountains.jpg" /><img class="-skew-12 ..." src="/img/mountains.jpg" />
 ```
-
-### [Skewing on the x-axis](#skewing-on-the-x-axis)
 
 Use `skew-x-<number>` utilities like `skew-x-4` and `-skew-x-10` to skew an element on the x-axis:
 
@@ -131,8 +140,6 @@ skew-x-12
 <img class="-skew-x-12 ..." src="/img/mountains.jpg" /><img class="skew-x-6 ..." src="/img/mountains.jpg" /><img class="skew-x-12 ..." src="/img/mountains.jpg" />
 ```
 
-### [Skewing on the y-axis](#skewing-on-the-y-axis)
-
 Use `skew-y-<number>` utilities like `skew-y-4` and `-skew-y-10` to skew an element on the y-axis:
 
 \-skew-y-12
@@ -151,8 +158,6 @@ skew-y-12
 <img class="-skew-y-12 ..." src="/img/mountains.jpg" /><img class="skew-y-6 ..." src="/img/mountains.jpg" /><img class="skew-y-12 ..." src="/img/mountains.jpg" />
 ```
 
-### [Using a custom value](#using-a-custom-value)
-
 Use the `skew-[<value>]` syntax to set the skew based on a completely custom value:
 
 ```
@@ -167,8 +172,6 @@ For CSS variables, you can also use the `skew-(<custom-property>)` syntax:
 
 This is just a shorthand for `skew-[var(<custom-property>)]` that adds the `var()` function for you automatically.
 
-### [Responsive design](#responsive-design)
-
 Prefix `skewX()` and `skewY()` utilities with a breakpoint variant like `md:` to only apply the utility at medium screen sizes and above:
 
 ```
@@ -179,23 +182,27 @@ Learn more about using variants in the [variants documentation](/docs/hover-focu
 
 ### On this page
 
-*   [Quick reference](#quick-reference)
-*   [Examples](#examples)
-    *   [Basic example](#basic-example)
-    *   [Using negative values](#using-negative-values)
-    *   [Skewing on the x-axis](#skewing-on-the-x-axis)
-    *   [Skewing on the y-axis](#skewing-on-the-y-axis)
-    *   [Using a custom value](#using-a-custom-value)
-    *   [Responsive design](#responsive-design)
+-   [Quick reference](#quick-reference)
+-   [Examples](#examples)
+    -   [Basic example](#basic-example)
+    -   [Using negative values](#using-negative-values)
+    -   [Skewing on the x-axis](#skewing-on-the-x-axis)
+    -   [Skewing on the y-axis](#skewing-on-the-y-axis)
+    -   [Using a custom value](#using-a-custom-value)
+    -   [Responsive design](#responsive-design)
 
-![Build UIs that don’t suck — 5-day mini-course](/_next/static/media/course-promo.d3d6bc78.jpg)
+[
 
-5-day mini-course
+![Refactoring UI](/_next/static/media/book-promo.3012c0f6.png)
 
-Build UIs that don’t suck.
+From the creators of Tailwind CSS
 
-Short, tactical video lessons from the creator of Tailwind CSS, delivered directly to your inbox every day for a week.
+Make your ideas look awesome, without relying on a designer.
 
-[Get the free course](/build-uis-that-dont-suck)
+> “This is the survival kit I wish I had when I started building apps.”
+> 
+> Derrick Reimer, SavvyCal
+
+](https://www.refactoringui.com/?ref=sidebar)
 
 Copyright © 2026 Tailwind Labs Inc.·[Trademark Policy](/brand)

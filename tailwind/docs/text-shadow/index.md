@@ -5,59 +5,13 @@ canonical_url: "https://tailwindcss.com/docs/text-shadow"
 docset: "tailwind"
 kind: "framework"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:04:05.069Z"
-content_hash: "b18f6a570345dbadd19461995d351e1c58ef1fb0b54fde9a4441530bc390469f"
+last_crawled_at: "2026-04-27T20:21:03.680Z"
+content_hash: "088e60c34b0a606d67ed04578c7fb78fd89ad58209d9767530bb3fca0a227b4d"
 menu_path: ["text-shadow"]
 section_path: []
-nav_prev: {"path": "tailwind/docs/box-shadow/index.md", "title": "box-shadow"}
-nav_next: {"path": "tailwind/docs/opacity/index.md", "title": "opacity"}
+content_language: "en"
 ---
-
 Utilities for controlling the shadow of a text element.
-
-Class
-
-Styles
-
-`text-shadow-2xs`
-
-`text-shadow: var(--text-shadow-2xs); /* 0px 1px 0px rgb(0 0 0 / 0.15) */`
-
-`text-shadow-xs`
-
-`text-shadow: var(--text-shadow-xs); /* 0px 1px 1px rgb(0 0 0 / 0.2) */`
-
-`text-shadow-sm`
-
-`text-shadow: var(--text-shadow-sm); /* 0px 1px 0px rgb(0 0 0 / 0.075), 0px 1px 1px rgb(0 0 0 / 0.075), 0px 2px 2px rgb(0 0 0 / 0.075) */`
-
-`text-shadow-md`
-
-`text-shadow: var(--text-shadow-md); /* 0px 1px 1px rgb(0 0 0 / 0.1), 0px 1px 2px rgb(0 0 0 / 0.1), 0px 2px 4px rgb(0 0 0 / 0.1) */`
-
-`text-shadow-lg`
-
-`text-shadow: var(--text-shadow-lg); /* 0px 1px 2px rgb(0 0 0 / 0.1), 0px 3px 2px rgb(0 0 0 / 0.1), 0px 4px 8px rgb(0 0 0 / 0.1) */`
-
-`text-shadow-none`
-
-`text-shadow: none;`
-
-`text-shadow-(<custom-property>)`
-
-`text-shadow: var(<custom-property>);`
-
-`text-shadow-(color:<custom-property>)`
-
-`--tw-shadow-color var(<custom-property>);`
-
-`text-shadow-[<value>]`
-
-`text-shadow: <value>;`
-
-`text-shadow-inherit`
-
-`--tw-shadow-color inherit;`
 
 ## [Examples](#examples)
 
@@ -137,7 +91,7 @@ Prefix a `text-shadow` utility with a breakpoint variant like `md:` to only appl
 <p class="text-shadow-none md:text-shadow-lg ...">  Lorem ipsum dolor sit amet...</p>
 ```
 
-Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).
+Learn more about using variants in the [variants documentation](https://tailwindcss.com/docs/hover-focus-and-other-states).
 
 ## [Customizing your theme](#customizing-your-theme)
 
@@ -155,7 +109,7 @@ Now the `text-shadow-xl` utility can be used in your markup:
 <p class="text-shadow-xl">  Lorem ipsum dolor sit amet...</p>
 ```
 
-Learn more about customizing your theme in the [theme documentation](tailwind/docs/theme/index.md#customizing-your-theme).
+Learn more about customizing your theme in the [theme documentation](https://tailwindcss.com/docs/theme#customizing-your-theme).
 
 ### [Customizing shadow colors](#customizing-shadow-colors)
 
@@ -171,4 +125,4 @@ Now the `text-shadow-regal-blue` utility can be used in your markup:
 <p class="text-shadow-regal-blue">  Lorem ipsum dolor sit amet...</p>
 ```
 
-Learn more about customizing your theme in the [theme documentation](tailwind/docs/theme/index.md#customizing-your-theme).
+Learn more about customizing your theme in the [theme documentation](https://tailwindcss.com/docs/theme#customizing-your-theme).

@@ -5,22 +5,23 @@ canonical_url: "https://docs.deno.com/runtime/fundamentals/web_dev/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:48:29.018Z"
-content_hash: "7d8fe2c68d63d1591051f76e4a69f600a992784ed8b1e0d09989b0758339f755"
+last_crawled_at: "2026-04-27T17:22:54.278Z"
+content_hash: "bfdfc01e724fcf2bc8a52a4580b6aa5b43df75a5233c3bf16d49542a8bdc7508"
 menu_path: ["Web development"]
 section_path: []
+content_language: "en"
 ---
-On this page
+**On this page**
 
-*   [React/Next](#react%2Fnext)
-*   [Fresh](#fresh)
-*   [Astro](#astro)
-*   [Vite](#vite)
-*   [Lume](#lume)
-*   [Docusaurus](#docusaurus)
-*   [Hono](#hono)
-*   [Oak](#oak)
-*   [Node projects](#node-projects)
+-   [React/Next](#react%2Fnext)
+-   [Fresh](#fresh)
+-   [Astro](#astro)
+-   [Vite](#vite)
+-   [Lume](#lume)
+-   [Docusaurus](#docusaurus)
+-   [Hono](#hono)
+-   [Oak](#oak)
+-   [Node projects](#node-projects)
 
 Deno offers a secure and developer-friendly environment for building web applications, making your web dev a delightful experience.
 

@@ -5,16 +5,18 @@ canonical_url: "https://nextjs.org/docs/pages"
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:18:50.694Z"
-content_hash: "43026bb4a6e094a11a298e61f60b00fe342a5842773505ec722f11d52adf52f7"
+last_crawled_at: "2026-04-27T18:18:13.850Z"
+content_hash: "9b95216e8377b69e39d6fe32167d1164fafdd6db6f8e29f7939685ebece54946"
 menu_path: ["Pages Router"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/messages/webpack5/index.md", "title": "Webpack 5 Adoption"}
+version: "latest"
+content_language: "en"
 ---
+[Next.js Docs](/docs)Pages Router
 
 # Pages Router
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 > You're viewing the documentation for the Pages Router. See the [App Router](/docs/app) documentation for the latest features.
 
@@ -49,7 +51,3 @@ Next.js API Reference for the Pages Router.
 ](/docs/pages/api-reference)
 
 Was this helpful?
-
-supported.
-
-Send

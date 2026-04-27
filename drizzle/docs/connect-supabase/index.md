@@ -5,32 +5,22 @@ canonical_url: "https://orm.drizzle.team/docs/connect-supabase"
 docset: "drizzle"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:43:07.193Z"
-content_hash: "19cd7b4ef84572231d67789d03f4b662b2bd08a84c17ea7dbf353506a03dc552"
+last_crawled_at: "2026-04-27T18:32:29.867Z"
+content_hash: "c9c3ddbba83761a1064b8a36c39bb3ffbee08f745657e66c4e8c9842c8ddfe31"
 menu_path: ["Drizzle <> Supabase"]
 section_path: []
-nav_prev: {"path": "drizzle/docs/connect-prisma-postgres/index.md", "title": "Drizzle <> Prisma Postgres"}
-nav_next: {"path": "drizzle/docs/connect-xata/index.md", "title": "Drizzle <> Xata"}
+content_language: "en"
 ---
-
 This guide assumes familiarity with:
 
-*   Database [connection basics](drizzle/docs/connect-overview/index.md) with Drizzle
-*   Drizzle PostgreSQL drivers - [docs](drizzle/docs/get-started-postgresql/index.md)
+-   Database [connection basics](https://orm.drizzle.team/docs/connect-overview) with Drizzle
+-   Drizzle PostgreSQL drivers - [docs](https://orm.drizzle.team/docs/get-started-postgresql)
 
 According to the **[official website](https://supabase.com/docs)**, Supabase is an open source Firebase alternative for building secure and performant Postgres backends with minimal configuration.
 
 Checkout official **[Supabase + Drizzle](https://supabase.com/docs/guides/database/connecting-to-postgres#connecting-with-drizzle)** docs.
 
 #### Step 1 - Install packages[](#step-1---install-packages)
-
-npm
-
-yarn
-
-pnpm
-
-bun
 
 ```
 npm i drizzle-orm postgres
@@ -54,7 +44,7 @@ bun add -D drizzle-kit
 
 #### Step 2 - Initialize the driver and make a query[](#step-2---initialize-the-driver-and-make-a-query)
 
-```
+```typescript
 import { drizzle } from 'drizzle-orm/postgres-js'
 
 const db = drizzle(process.env.DATABASE_URL);
@@ -64,7 +54,7 @@ const allUsers = await db.select().from(...);
 
 If you need to provide your existing driver:
 
-```
+```typescript
 import { drizzle } from 'drizzle-orm/postgres-js'
 import postgres from 'postgres'
 
@@ -76,7 +66,7 @@ const allUsers = await db.select().from(...);
 
 If you decide to use connection pooling via Supabase (described [here](https://supabase.com/docs/guides/database/connecting-to-postgres#connection-pooler)), and have “Transaction” pool mode enabled, then ensure to turn off prepare, as prepared statements are not supported.
 
-```
+```typescript
 import { drizzle } from 'drizzle-orm/postgres-js'
 import postgres from 'postgres'
 

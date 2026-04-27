@@ -5,14 +5,12 @@ canonical_url: "https://orm.drizzle.team/docs/latest-releases/drizzle-orm-v0311"
 docset: "drizzle"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:15:11.141Z"
-content_hash: "a5d423b4fec655d1c79ed4992892375360d60c6f592b0b374a2e89dd3184c64d"
+last_crawled_at: "2026-04-27T19:15:26.910Z"
+content_hash: "6a6617a6359db17b712c3fe37f1260ca019ac623aa27dee45c7ee91730be251e"
 menu_path: ["New Features"]
 section_path: []
-nav_prev: {"path": "drizzle/docs/latest-releases/drizzle-orm-v0310/index.md", "title": "Drizzle Kit updates: drizzle-kit@0.22.0"}
-nav_next: {"path": "drizzle/docs/latest-releases/drizzle-orm-v0312/index.md", "title": "Drizzle ORM - DrizzleORM v0.31.2 release"}
+content_language: "en"
 ---
-
 DrizzleORM v0.31.1 release
 
 Jun 4, 2024
@@ -25,7 +23,7 @@ Jun 4, 2024
 
 As of `v0.31.1` Drizzle ORM now has native support for Expo SQLite Live Queries! We’ve implemented a native `useLiveQuery` React Hook which observes necessary database changes and automatically re-runs database queries. It works with both SQL-like and Drizzle Queries:
 
-```
+```tsx
 import { useLiveQuery, drizzle } from 'drizzle-orm/expo-sqlite';
 import { openDatabaseSync } from 'expo-sqlite';
 import { users } from './schema';

@@ -5,25 +5,28 @@ canonical_url: "https://www.postgresql.org/docs/current/functions-uuid.html"
 docset: "postgres"
 kind: "database"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:47:37.700Z"
-content_hash: "4bb29162aa976be67dbe2abd2b990251d2e80f4e47b9ad4798da9b411de1b064"
+last_crawled_at: "2026-04-27T20:48:14.116Z"
+content_hash: "76bb6237613c7d7f57e19e80c0a40f6cdbfbc52da90d8896d6a4c79e173e4aba"
 menu_path: ["PostgreSQL: Documentation: 18: 9.14. UUID Functions"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/functions-subquery.html/index.md", "title": "PostgreSQL: Documentation: 18: 9.24.\u00a0Subquery Expressions"}
-nav_next: {"path": "postgres/docs/current/functions-xml.html/index.md", "title": "PostgreSQL: Documentation: 18: 9.15.\u00a0XML Functions"}
+content_language: "en"
 ---
-
 Development Versions: [devel](https://www.postgresql.org/docs/devel/functions-uuid.html "PostgreSQL devel - 9.14. UUID Functions")
 
 [Table 9.45](https://www.postgresql.org/docs/current/functions-uuid.html#FUNC_UUID_GEN_TABLE "Table 9.45. UUID Generation Functions") shows the PostgreSQL functions that can be used to generate UUIDs.
 
 **Table 9.45. UUID Generation Functions**
 
+| 
 Function
 
 Description
 
 Example(s)
+
+ |
+| --- |
+| 
 
 `gen_random_uuid` ( ) → `uuid`
 
@@ -35,11 +38,16 @@ Generates a version 4 (random) UUID
 
 `uuidv4()` → `b42410ee-132f-42ee-9e4f-09a6485c95b8`
 
+ |
+| 
+
 `uuidv7` ( \[ _`shift`_ `interval` \] ) → `uuid`
 
 Generates a version 7 (time-ordered) UUID. The timestamp is computed using UNIX timestamp with millisecond precision + sub-millisecond timestamp + random. The optional parameter _`shift`_ will shift the computed timestamp by the given `interval`.
 
 `uuidv7()` → `019535d9-3df7-79fb-b466-fa907fa17f9e`
+
+ |
 
   
 

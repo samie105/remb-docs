@@ -5,23 +5,13 @@ canonical_url: "https://orm.drizzle.team/docs/connect-op-sqlite"
 docset: "drizzle"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:40:41.504Z"
-content_hash: "38591fc7efa004decd2f13246993d991e6feaf1202824966700b681ac3ce6540"
+last_crawled_at: "2026-04-27T18:30:15.959Z"
+content_hash: "943ae98e07ba73eeb36bd30ccb6b6770a6d5e8fc83825e101708609440881912"
 menu_path: ["Drizzle <> OP SQLite"]
 section_path: []
-nav_prev: {"path": "drizzle/docs/connect-expo-sqlite/index.md", "title": "Drizzle <> Expo SQLite"}
-nav_next: {"path": "drizzle/docs/connect-react-native-sqlite/index.md", "title": "Drizzle <> React Native SQLite"}
+content_language: "en"
 ---
-
 According to the **[official github page](https://github.com/OP-Engineering/op-sqlite)**, OP-SQLite embeds the latest version of SQLite and provides a low-level API to execute SQL queries.
-
-npm
-
-yarn
-
-pnpm
-
-bun
 
 ```
 npm i drizzle-orm @op-engineering/op-sqlite
@@ -43,7 +33,7 @@ bun add drizzle-orm @op-engineering/op-sqlite
 bun add -D drizzle-kit
 ```
 
-```
+```ts
 import { drizzle } from "drizzle-orm/op-sqlite";
 import { open } from '@op-engineering/op-sqlite';
 
@@ -56,14 +46,14 @@ await db.select().from(users);
 ```
 
 You can use Drizzle Kit for SQL migration generation.  
-Please make sure to check how [Drizzle Kit migrations](drizzle/docs/kit-overview/index.md) work before proceeding.  
+Please make sure to check how [Drizzle Kit migrations](https://orm.drizzle.team/docs/kit-overview) work before proceeding.  
 OP SQLite requires you to have SQL migrations bundled into the app and we’ve got you covered.
 
 #### Install babel plugin[](#install-babel-plugin)
 
 It’s necessary to bundle SQL migration files as string directly to your bundle.
 
-```
+```shell
 npm install babel-plugin-inline-import
 ```
 
@@ -71,7 +61,7 @@ npm install babel-plugin-inline-import
 
 You will need to update `babel.config.js`, `metro.config.js` and `drizzle.config.ts` files
 
-```
+```js
 module.exports = {
   presets: ['module:@react-native/babel-preset'],
   plugins: [
@@ -85,7 +75,7 @@ module.exports = {
 };
 ```
 
-```
+```js
 const { getDefaultConfig } = require('@react-native/metro-config');
 
 const config = getDefaultConfig(__dirname);
@@ -97,7 +87,7 @@ module.exports = config;
 
 Make sure to have `dialect: 'sqlite'` and `driver: 'expo'` in Drizzle Kit config
 
-```
+```ts
 import { defineConfig } from 'drizzle-kit';
 
 export default defineConfig({
@@ -112,7 +102,7 @@ export default defineConfig({
 
 After creating SQL schema file and drizzle.config.ts file, you can generate migrations
 
-```
+```bash
 npx drizzle-kit generate
 ```
 
@@ -120,7 +110,7 @@ npx drizzle-kit generate
 
 Now you need to import `migrations.js` file into your Expo/React Native app from `./drizzle` folder. You can run migrations on application startup using our custom `useMigrations` migrations hook on in `useEffect` hook manually as you want.
 
-```
+```ts
 import { drizzle } from "drizzle-orm/op-sqlite";
 import { open } from '@op-engineering/op-sqlite';
 import { useMigrations } from 'drizzle-orm/op-sqlite/migrator';

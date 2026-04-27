@@ -5,15 +5,16 @@ canonical_url: "https://docs.deno.com/runtime/reference/std/jsonc/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:03:54.308Z"
-content_hash: "ab833add00b8c3b159d8304bc3e7abd2144387ec0207b26094871e9a1efacc98"
+last_crawled_at: "2026-04-27T17:44:42.067Z"
+content_hash: "cb916386f21d1802851a6958150d2d512386543981e2131e3f6feb11f3c1b90f"
 menu_path: ["@std/jsonc"]
 section_path: []
+content_language: "en"
 ---
-On this page
+**On this page**
 
-*   [Overview](#overview)
-    *   [Add to your project](#add-to-your-project)
+-   [Overview](#overview)
+    -   [Add to your project](#add-to-your-project)
 
 ## Overview
 

@@ -5,10 +5,11 @@ canonical_url: "https://docs.deno.com/api/node/repl/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:39:46.462Z"
-content_hash: "16d127650d4ab5f40d166f332c2a99f956df233c7a1104a3c31cbba94463de62"
+last_crawled_at: "2026-04-27T17:11:18.473Z"
+content_hash: "90190a23dcb99430e33a20cd9f70c4eeeaa8760cae90c265ab36216db680b92a"
 menu_path: ["repl - Node documentation"]
 section_path: []
+content_language: "en"
 ---
 ### Usage in Deno
 
@@ -26,15 +27,13 @@ The `node:repl` module provides a Read-Eval-Print-Loop (REPL) implementation tha
 import repl from 'node:repl';
 ```
 
-### Classes [#](#Classes)
-
 c
 
 [Recoverable](.././repl/~/Recoverable "Recoverable")
 
 No documentation available
 
-*   [err](.././repl/~/Recoverable#property_err)
+-   [err](.././repl/~/Recoverable#property_err)
 
 c
 
@@ -42,36 +41,34 @@ c
 
 No documentation available
 
-*   [addListener](.././repl/~/REPLServer#method_addlistener_0)
-*   [clearBufferedCommand](.././repl/~/REPLServer#method_clearbufferedcommand_0)
-*   [commands](.././repl/~/REPLServer#property_commands)
-*   [completer](.././repl/~/REPLServer#property_completer)
-*   [context](.././repl/~/REPLServer#property_context)
-*   [defineCommand](.././repl/~/REPLServer#method_definecommand_0)
-*   [displayPrompt](.././repl/~/REPLServer#method_displayprompt_0)
-*   [editorMode](.././repl/~/REPLServer#property_editormode)
-*   [emit](.././repl/~/REPLServer#method_emit_0)
-*   [eval](.././repl/~/REPLServer#property_eval)
-*   [ignoreUndefined](.././repl/~/REPLServer#property_ignoreundefined)
-*   [input](.././repl/~/REPLServer#property_input)
-*   [inputStream](.././repl/~/REPLServer#property_inputstream)
-*   [last](.././repl/~/REPLServer#property_last)
-*   [lastError](.././repl/~/REPLServer#property_lasterror)
-*   [on](.././repl/~/REPLServer#method_on_0)
-*   [once](.././repl/~/REPLServer#method_once_0)
-*   [output](.././repl/~/REPLServer#property_output)
-*   [outputStream](.././repl/~/REPLServer#property_outputstream)
-*   [prependListener](.././repl/~/REPLServer#method_prependlistener_0)
-*   [prependOnceListener](.././repl/~/REPLServer#method_prependoncelistener_0)
-*   [replMode](.././repl/~/REPLServer#property_replmode)
-*   [setupHistory](.././repl/~/REPLServer#method_setuphistory_0)
-*   [underscoreAssigned](.././repl/~/REPLServer#property_underscoreassigned)
-*   [underscoreErrAssigned](.././repl/~/REPLServer#property_underscoreerrassigned)
-*   [useColors](.././repl/~/REPLServer#property_usecolors)
-*   [useGlobal](.././repl/~/REPLServer#property_useglobal)
-*   [writer](.././repl/~/REPLServer#property_writer)
-
-### Functions [#](#Functions)
+-   [addListener](.././repl/~/REPLServer#method_addlistener_0)
+-   [clearBufferedCommand](.././repl/~/REPLServer#method_clearbufferedcommand_0)
+-   [commands](.././repl/~/REPLServer#property_commands)
+-   [completer](.././repl/~/REPLServer#property_completer)
+-   [context](.././repl/~/REPLServer#property_context)
+-   [defineCommand](.././repl/~/REPLServer#method_definecommand_0)
+-   [displayPrompt](.././repl/~/REPLServer#method_displayprompt_0)
+-   [editorMode](.././repl/~/REPLServer#property_editormode)
+-   [emit](.././repl/~/REPLServer#method_emit_0)
+-   [eval](.././repl/~/REPLServer#property_eval)
+-   [ignoreUndefined](.././repl/~/REPLServer#property_ignoreundefined)
+-   [input](.././repl/~/REPLServer#property_input)
+-   [inputStream](.././repl/~/REPLServer#property_inputstream)
+-   [last](.././repl/~/REPLServer#property_last)
+-   [lastError](.././repl/~/REPLServer#property_lasterror)
+-   [on](.././repl/~/REPLServer#method_on_0)
+-   [once](.././repl/~/REPLServer#method_once_0)
+-   [output](.././repl/~/REPLServer#property_output)
+-   [outputStream](.././repl/~/REPLServer#property_outputstream)
+-   [prependListener](.././repl/~/REPLServer#method_prependlistener_0)
+-   [prependOnceListener](.././repl/~/REPLServer#method_prependoncelistener_0)
+-   [replMode](.././repl/~/REPLServer#property_replmode)
+-   [setupHistory](.././repl/~/REPLServer#method_setuphistory_0)
+-   [underscoreAssigned](.././repl/~/REPLServer#property_underscoreassigned)
+-   [underscoreErrAssigned](.././repl/~/REPLServer#property_underscoreerrassigned)
+-   [useColors](.././repl/~/REPLServer#property_usecolors)
+-   [useGlobal](.././repl/~/REPLServer#property_useglobal)
+-   [writer](.././repl/~/REPLServer#property_writer)
 
 f
 
@@ -79,16 +76,14 @@ f
 
 No documentation available
 
-### Interfaces [#](#Interfaces)
-
 I
 
 [REPLCommand](.././repl/~/REPLCommand "REPLCommand")
 
 No documentation available
 
-*   [action](.././repl/~/REPLCommand#property_action)
-*   [help](.././repl/~/REPLCommand#property_help)
+-   [action](.././repl/~/REPLCommand#property_action)
+-   [help](.././repl/~/REPLCommand#property_help)
 
 I
 
@@ -96,21 +91,19 @@ I
 
 No documentation available
 
-*   [breakEvalOnSigint](.././repl/~/ReplOptions#property_breakevalonsigint)
-*   [completer](.././repl/~/ReplOptions#property_completer)
-*   [eval](.././repl/~/ReplOptions#property_eval)
-*   [ignoreUndefined](.././repl/~/ReplOptions#property_ignoreundefined)
-*   [input](.././repl/~/ReplOptions#property_input)
-*   [output](.././repl/~/ReplOptions#property_output)
-*   [preview](.././repl/~/ReplOptions#property_preview)
-*   [prompt](.././repl/~/ReplOptions#property_prompt)
-*   [replMode](.././repl/~/ReplOptions#property_replmode)
-*   [terminal](.././repl/~/ReplOptions#property_terminal)
-*   [useColors](.././repl/~/ReplOptions#property_usecolors)
-*   [useGlobal](.././repl/~/ReplOptions#property_useglobal)
-*   [writer](.././repl/~/ReplOptions#property_writer)
-
-### Type Aliases [#](<#Type Aliases>)
+-   [breakEvalOnSigint](.././repl/~/ReplOptions#property_breakevalonsigint)
+-   [completer](.././repl/~/ReplOptions#property_completer)
+-   [eval](.././repl/~/ReplOptions#property_eval)
+-   [ignoreUndefined](.././repl/~/ReplOptions#property_ignoreundefined)
+-   [input](.././repl/~/ReplOptions#property_input)
+-   [output](.././repl/~/ReplOptions#property_output)
+-   [preview](.././repl/~/ReplOptions#property_preview)
+-   [prompt](.././repl/~/ReplOptions#property_prompt)
+-   [replMode](.././repl/~/ReplOptions#property_replmode)
+-   [terminal](.././repl/~/ReplOptions#property_terminal)
+-   [useColors](.././repl/~/ReplOptions#property_usecolors)
+-   [useGlobal](.././repl/~/ReplOptions#property_useglobal)
+-   [writer](.././repl/~/ReplOptions#property_writer)
 
 T
 
@@ -129,8 +122,6 @@ T
 [REPLWriter](.././repl/~/REPLWriter "REPLWriter")
 
 No documentation available
-
-### Variables [#](#Variables)
 
 v
 

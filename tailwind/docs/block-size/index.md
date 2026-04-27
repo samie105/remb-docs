@@ -5,59 +5,13 @@ canonical_url: "https://tailwindcss.com/docs/block-size"
 docset: "tailwind"
 kind: "framework"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:53:29.699Z"
-content_hash: "ae9dd2c88ca9e5e7ae334fa1eaacdba668bc0daed0c632b9c6b70b35afabdf4b"
+last_crawled_at: "2026-04-27T20:05:57.334Z"
+content_hash: "176db791975868adadc6b0fd82caa005f40fb11fd0562590f4b8f64f3b17904e"
 menu_path: ["block-size"]
 section_path: []
-nav_prev: {"path": "tailwind/docs/max-inline-size/index.md", "title": "max-inline-size"}
-nav_next: {"path": "tailwind/docs/min-block-size/index.md", "title": "min-block-size"}
+content_language: "en"
 ---
-
 Utilities for setting the block size of an element.
-
-Class
-
-Styles
-
-`block-<number>`
-
-`block-size: calc(var(--spacing) * <number>);`
-
-`block-<fraction>`
-
-`block-size: calc(<fraction> * 100%);`
-
-`block-auto`
-
-`block-size: auto;`
-
-`block-px`
-
-`block-size: 1px;`
-
-`block-full`
-
-`block-size: 100%;`
-
-`block-screen`
-
-`block-size: 100vh;`
-
-`block-dvh`
-
-`block-size: 100dvh;`
-
-`block-dvw`
-
-`block-size: 100dvw;`
-
-`block-lvh`
-
-`block-size: 100lvh;`
-
-`block-lvw`
-
-`block-size: 100lvw;`
 
 ## [Examples](#examples)
 
@@ -157,7 +111,7 @@ Prefix a `block-size` utility with a breakpoint variant like `md:` to only apply
 <div class="block-1/2 md:block-full ...">  <!-- ... --></div>
 ```
 
-Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).
+Learn more about using variants in the [variants documentation](https://tailwindcss.com/docs/hover-focus-and-other-states).
 
 ## [Customizing your theme](#customizing-your-theme)
 
@@ -167,4 +121,4 @@ The `block-<number>` utilities are driven by the `--spacing` theme variable, whi
 @theme {  --spacing: 1px; }
 ```
 
-Learn more about customizing the spacing scale in the [theme variable documentation](tailwind/docs/theme/index.md).
+Learn more about customizing the spacing scale in the [theme variable documentation](https://tailwindcss.com/docs/theme).

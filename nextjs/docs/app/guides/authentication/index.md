@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/app/guides/authentication"
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:14:06.473Z"
-content_hash: "e7f821e7aa16598637e07520ecc8ae36d9355675b7049f1431901567ec0c39c3"
+last_crawled_at: "2026-04-27T18:12:53.768Z"
+content_hash: "48e0762a895c2ef309d5a95c2b43d99b801d035693fc77bcef028637bb96af44"
 menu_path: ["How to implement authentication in Next.js"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/guides/analytics/index.md", "title": "How to add analytics to your Next.js application"}
-nav_next: {"path": "nextjs/docs/app/guides/backend-for-frontend/index.md", "title": "How to use Next.js as a backend for your frontend"}
+version: "latest"
+content_language: "en"
 ---
+[App Router](/docs/app)[Guides](/docs/app/guides)Authentication
 
 # How to implement authentication in Next.js
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 Understanding authentication is crucial for protecting your application's data. This page will guide you through what React and Next.js features to use to implement auth.
 
@@ -27,7 +28,7 @@ Before starting, it helps to break down the process into three concepts:
 
 This diagram shows the authentication flow using React and Next.js features:
 
-![Diagram showing the authentication flow with React and Next.js features](/_next/image?url=https%3A%2F%2Fh8DxKfmAPhn8O0p3.public.blob.vercel-storage.com%2Fdocs%2Flight%2Fauthentication-overview.png&w=3840&q=75)![Diagram showing the authentication flow with React and Next.js features](/_next/image?url=https%3A%2F%2Fh8DxKfmAPhn8O0p3.public.blob.vercel-storage.com%2Fdocs%2Fdark%2Fauthentication-overview.png&w=3840&q=75)
+![Diagram showing the authentication flow with React and Next.js features](https://h8DxKfmAPhn8O0p3.public.blob.vercel-storage.com/docs/light/authentication-overview.png)
 
 The examples on this page walk through basic username and password auth for educational purposes. While you can implement a custom auth solution, for increased security and simplicity, we recommend using an authentication library. These offer built-in solutions for authentication, session management, and authorization, as well as additional features such as social logins, multi-factor authentication, and role-based access control. You can find a list in the [Auth Libraries](#auth-libraries) section.
 
@@ -46,8 +47,6 @@ Here are the steps to implement signup/login functionality:
 To capture user credentials, create a form that invokes a Server Action on submission. For example, a signup form that accepts the user's name, email, and password:
 
 app/ui/signup-form.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -77,8 +76,6 @@ export function SignupForm() {
 
 app/actions/auth.ts
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -92,8 +89,6 @@ Use the Server Action to validate the form fields on the server. If your authent
 Using Zod as an example, you can define a form schema with appropriate error messages:
 
 app/lib/definitions.ts
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -133,8 +128,6 @@ To prevent unnecessary calls to your authentication provider's API or database, 
 
 app/actions/auth.ts
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -162,8 +155,6 @@ export async function signup(state: FormState, formData: FormData) {
 Back in your `<SignupForm />`, you can use React's `useActionState` hook to display validation errors while the form is submitting:
 
 app/ui/signup-form.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -214,8 +205,8 @@ export default function SignupForm() {
 
 > **Good to know:**
 > 
-> *   In React 19, `useFormStatus` includes additional keys on the returned object, like data, method, and action. If you are not using React 19, only the `pending` key is available.
-> *   Before mutating data, you should always ensure a user is also authorized to perform the action. See [Authentication and Authorization](#authorization).
+> -   In React 19, `useFormStatus` includes additional keys on the returned object, like data, method, and action. If you are not using React 19, only the `pending` key is available.
+> -   Before mutating data, you should always ensure a user is also authorized to perform the action. See [Authentication and Authorization](#authorization).
 
 #### 3\. Create a user or check user credentials[](#3-create-a-user-or-check-user-credentials)
 
@@ -224,8 +215,6 @@ After validating form fields, you can create a new user account or check if the 
 Continuing from the previous example:
 
 app/actions/auth.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -267,8 +256,8 @@ After successfully creating the user account or verifying the user credentials, 
 
 > **Tips:**
 > 
-> *   The example above is verbose since it breaks down the authentication steps for the purpose of education. This highlights that implementing your own secure solution can quickly become complex. Consider using an [Auth Library](#auth-libraries) to simplify the process.
-> *   To improve the user experience, you may want to check for duplicate emails or usernames earlier in the registration flow. For example, as the user types in a username or the input field loses focus. This can help prevent unnecessary form submissions and provide immediate feedback to the user. You can debounce requests with libraries such as [use-debounce](https://www.npmjs.com/package/use-debounce) to manage the frequency of these checks.
+> -   The example above is verbose since it breaks down the authentication steps for the purpose of education. This highlights that implementing your own secure solution can quickly become complex. Consider using an [Auth Library](#auth-libraries) to simplify the process.
+> -   To improve the user experience, you may want to check for duplicate emails or usernames earlier in the registration flow. For example, as the user types in a username or the input field loses focus. This can help prevent unnecessary form submissions and provide immediate feedback to the user. You can debounce requests with libraries such as [use-debounce](https://www.npmjs.com/package/use-debounce) to manage the frequency of these checks.
 
 ## Session Management[](#session-management)
 
@@ -325,8 +314,6 @@ Next, you can use your preferred [session management library](#session-managemen
 
 app/lib/session.ts
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -359,23 +346,21 @@ export async function decrypt(session: string | undefined = '') {
 
 > **Tips**:
 > 
-> *   The payload should contain the **minimum**, unique user data that'll be used in subsequent requests, such as the user's ID, role, etc. It should not contain personally identifiable information like phone number, email address, credit card information, etc, or sensitive data like passwords.
+> -   The payload should contain the **minimum**, unique user data that'll be used in subsequent requests, such as the user's ID, role, etc. It should not contain personally identifiable information like phone number, email address, credit card information, etc, or sensitive data like passwords.
 
 #### 3\. Setting cookies (recommended options)[](#3-setting-cookies-recommended-options)
 
 To store the session in a cookie, use the Next.js [`cookies`](/docs/app/api-reference/functions/cookies) API. The cookie should be set on the server, and include the recommended options:
 
-*   **HttpOnly**: Prevents client-side JavaScript from accessing the cookie.
-*   **Secure**: Use https to send the cookie.
-*   **SameSite**: Specify whether the cookie can be sent with cross-site requests.
-*   **Max-Age or Expires**: Delete the cookie after a certain period.
-*   **Path**: Define the URL path for the cookie.
+-   **HttpOnly**: Prevents client-side JavaScript from accessing the cookie.
+-   **Secure**: Use https to send the cookie.
+-   **SameSite**: Specify whether the cookie can be sent with cross-site requests.
+-   **Max-Age or Expires**: Delete the cookie after a certain period.
+-   **Path**: Define the URL path for the cookie.
 
 Please refer to [MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies) for more information on each of these options.
 
 app/lib/session.ts
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -402,8 +387,6 @@ Back in your Server Action, you can invoke the `createSession()` function, and u
 
 app/actions/auth.ts
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -425,16 +408,14 @@ export async function signup(state: FormState, formData: FormData) {
 
 > **Tips**:
 > 
-> *   **Cookies should be set on the server** to prevent client-side tampering.
-> *   🎥 Watch: Learn more about stateless sessions and authentication with Next.js → [YouTube (11 minutes)](https://www.youtube.com/watch?v=DJvM2lSPn6w).
+> -   **Cookies should be set on the server** to prevent client-side tampering.
+> -   🎥 Watch: Learn more about stateless sessions and authentication with Next.js → [YouTube (11 minutes)](https://www.youtube.com/watch?v=DJvM2lSPn6w).
 
 #### Updating (or refreshing) sessions[](#updating-or-refreshing-sessions)
 
 You can also extend the session's expiration time. This is useful for keeping the user logged in after they access the application again. For example:
 
 app/lib/session.ts
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -472,8 +453,6 @@ To delete the session, you can delete the cookie:
 
 app/lib/session.ts
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -489,8 +468,6 @@ export async function deleteSession() {
 Then you can reuse the `deleteSession()` function in your application, for example, on logout:
 
 app/actions/auth.ts
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -515,8 +492,6 @@ To create and manage database sessions, you'll need to follow these steps:
 For example:
 
 app/lib/session.ts
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -557,8 +532,8 @@ export async function createSession(id: number) {
 
 > **Tips**:
 > 
-> *   For faster access, you may consider adding server caching for the lifetime of the session. You can also keep the session data in your primary database, and combine data requests to reduce the number of queries.
-> *   You may opt to use database sessions for more advanced use cases, such as keeping track of the last time a user logged in, or number of active devices, or give users the ability to log out of all devices.
+> -   For faster access, you may consider adding server caching for the lifetime of the session. You can also keep the session data in your primary database, and combine data requests to reduce the number of queries.
+> -   You may opt to use database sessions for more advanced use cases, such as keeping track of the last time a user logged in, or number of active devices, or give users the ability to log out of all devices.
 
 After implementing session management, you'll need to add authorization logic to control what users can access and do within your application. Continue to the [Authorization](#authorization) section to learn more.
 
@@ -573,24 +548,22 @@ There are two main types of authorization checks:
 
 For both cases, we recommend:
 
-*   Creating a [Data Access Layer](#creating-a-data-access-layer-dal) to centralize your authorization logic
-*   Using [Data Transfer Objects (DTO)](#using-data-transfer-objects-dto) to only return the necessary data
-*   Optionally use [Proxy](#optimistic-checks-with-proxy-optional) to perform optimistic checks.
+-   Creating a [Data Access Layer](#creating-a-data-access-layer-dal) to centralize your authorization logic
+-   Using [Data Transfer Objects (DTO)](#using-data-transfer-objects-dto) to only return the necessary data
+-   Optionally use [Proxy](#optimistic-checks-with-proxy-optional) to perform optimistic checks.
 
 ### Optimistic checks with Proxy (Optional)[](#optimistic-checks-with-proxy-optional)
 
 There are some cases where you may want to use [Proxy](/docs/app/api-reference/file-conventions/proxy) and redirect users based on permissions:
 
-*   To perform optimistic checks. Since Proxy runs on every route, it's a good way to centralize redirect logic and pre-filter unauthorized users.
-*   To protect static routes that share data between users (e.g. content behind a paywall).
+-   To perform optimistic checks. Since Proxy runs on every route, it's a good way to centralize redirect logic and pre-filter unauthorized users.
+-   To protect static routes that share data between users (e.g. content behind a paywall).
 
 However, since Proxy runs on every route, including [prefetched](/docs/app/getting-started/linking-and-navigating#prefetching) routes, it's important to only read the session from the cookie (optimistic checks), and avoid database checks to prevent performance issues.
 
 For example:
 
 proxy.ts
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -640,9 +613,9 @@ While Proxy can be useful for initial checks, it should not be your only line of
 
 > **Tips**:
 > 
-> *   In Proxy, you can also read cookies using `req.cookies.get('session').value`.
-> *   Proxy uses the Node.js runtime, check if your Auth library and session management library are compatible. You may need to use [Middleware](https://github.com/vercel/next.js/blob/v15.5.6/docs/01-app/03-api-reference/03-file-conventions/middleware.mdx) if your Auth library only supports [Edge Runtime](/docs/app/api-reference/edge)
-> *   You can use the `matcher` property in the Proxy to specify which routes Proxy should run on. Although, for auth, it's recommended Proxy runs on all routes.
+> -   In Proxy, you can also read cookies using `req.cookies.get('session').value`.
+> -   Proxy uses the Node.js runtime, check if your Auth library and session management library are compatible. You may need to use [Middleware](https://github.com/vercel/next.js/blob/v15.5.6/docs/01-app/03-api-reference/03-file-conventions/middleware.mdx) if your Auth library only supports [Edge Runtime](/docs/app/api-reference/edge)
+> -   You can use the `matcher` property in the Proxy to specify which routes Proxy should run on. Although, for auth, it's recommended Proxy runs on all routes.
 
 ### Creating a Data Access Layer (DAL)[](#creating-a-data-access-layer-dal)
 
@@ -653,8 +626,6 @@ The DAL should include a function that verifies the user's session as they inter
 For example, create a separate file for your DAL that includes a `verifySession()` function. Then use React's [cache](https://react.dev/reference/react/cache) API to memoize the return value of the function during a React render pass:
 
 app/lib/dal.ts
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -679,8 +650,6 @@ export const verifySession = cache(async () => {
 You can then invoke the `verifySession()` function in your data requests, Server Actions, Route Handlers:
 
 app/lib/dal.ts
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -712,9 +681,9 @@ export const getUser = cache(async () => {
 
 > **Tip**:
 > 
-> *   A DAL can be used to protect data fetched at request time. However, for static routes that share data between users, data will be fetched at build time and not at request time. Use [Proxy](#optimistic-checks-with-proxy-optional) to protect static routes.
-> *   For secure checks, you can check if the session is valid by comparing the session ID with your database. Use React's [cache](https://react.dev/reference/react/cache) function to avoid unnecessary duplicate requests to the database during a render pass.
-> *   You may wish to consolidate related data requests in a JavaScript class that runs `verifySession()` before any methods.
+> -   A DAL can be used to protect data fetched at request time. However, for static routes that share data between users, data will be fetched at build time and not at request time. Use [Proxy](#optimistic-checks-with-proxy-optional) to protect static routes.
+> -   For secure checks, you can check if the session is valid by comparing the session ID with your database. Use React's [cache](https://react.dev/reference/react/cache) function to avoid unnecessary duplicate requests to the database during a render pass.
+> -   You may wish to consolidate related data requests in a JavaScript class that runs `verifySession()` before any methods.
 
 ### Using Data Transfer Objects (DTO)[](#using-data-transfer-objects-dto)
 
@@ -723,8 +692,6 @@ When retrieving data, it's recommended you return only the necessary data that w
 However, if you have no control over the returned data structure, or are working in a team where you want to avoid whole objects being passed to the client, you can use strategies such as specifying what fields are safe to be exposed to the client.
 
 app/lib/dto.ts
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -763,16 +730,14 @@ By centralizing your data requests and authorization logic in a DAL and using DT
 
 > **Good to know**:
 > 
-> *   There are a couple of different ways you can define a DTO, from using `toJSON()`, to individual functions like the example above, or JS classes. Since these are JavaScript patterns and not a React or Next.js feature, we recommend doing some research to find the best pattern for your application.
-> *   Learn more about security best practices in our [Security in Next.js article](/blog/security-nextjs-server-components-actions).
+> -   There are a couple of different ways you can define a DTO, from using `toJSON()`, to individual functions like the example above, or JS classes. Since these are JavaScript patterns and not a React or Next.js feature, we recommend doing some research to find the best pattern for your application.
+> -   Learn more about security best practices in our [Security in Next.js article](/blog/security-nextjs-server-components-actions).
 
 ### Server Components[](#server-components)
 
 Auth check in [Server Components](/docs/app/getting-started/server-and-client-components) are useful for role-based access. For example, to conditionally render components based on the user's role:
 
 app/dashboard/page.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -811,8 +776,6 @@ For example, in a dashboard page, you can verify the user session and fetch the 
 
 app/dashboard/page.tsx
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -838,8 +801,6 @@ export default async function DashboardPage() {
 You can also perform auth checks in leaf components that conditionally render UI elements based on user permissions. For example, a component that displays admin-only actions:
 
 app/ui/admin-actions.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -867,8 +828,8 @@ This pattern allows you to show or hide UI elements based on user permissions wh
 
 > **Good to know:**
 > 
-> *   A common pattern in SPAs is to `return null` in a layout or a top-level component if a user is not authorized. This pattern is **not recommended** since Next.js applications have multiple entry points, which will not prevent nested route segments and Server Actions from being accessed.
-> *   Ensure that any Server Actions called from these components also perform their own authorization checks, as client-side UI restrictions alone are not sufficient for security.
+> -   A common pattern in SPAs is to `return null` in a layout or a top-level component if a user is not authorized. This pattern is **not recommended** since Next.js applications have multiple entry points, which will not prevent nested route segments and Server Actions from being accessed.
+> -   Ensure that any Server Actions called from these components also perform their own authorization checks, as client-side UI restrictions alone are not sufficient for security.
 
 ### Server Actions[](#server-actions)
 
@@ -877,8 +838,6 @@ Treat [Server Actions](/docs/app/getting-started/mutating-data) with the same se
 In the example below, we check the user's role before allowing the action to proceed:
 
 app/lib/actions.ts
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -906,8 +865,6 @@ Treat [Route Handlers](/docs/app/api-reference/file-conventions/route) with the 
 For example:
 
 app/api/route.ts
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -943,8 +900,6 @@ Using context providers for auth works due to [interleaving](/docs/app/getting-s
 This works, but any child Server Components will be rendered on the server first, and will not have access to the context provider’s session data:
 
 app/layout.ts
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -985,47 +940,31 @@ Now that you've learned about authentication in Next.js, here are Next.js-compat
 
 ### Auth Libraries[](#auth-libraries)
 
-*   [Auth0](https://auth0.com/docs/quickstart/webapp/nextjs)
-*   [Better Auth](https://www.better-auth.com/docs/integrations/next)
-*   [Clerk](https://clerk.com/docs/quickstarts/nextjs)
-*   [Descope](https://docs.descope.com/getting-started/nextjs)
-*   [Kinde](https://kinde.com/docs/developer-tools/nextjs-sdk)
-*   [Logto](https://docs.logto.io/quick-starts/next-app-router)
-*   [NextAuth.js](https://authjs.dev/getting-started/installation?framework=next.js)
-*   [Ory](https://www.ory.sh/docs/getting-started/integrate-auth/nextjs)
-*   [Stack Auth](https://docs.stack-auth.com/getting-started/setup)
-*   [Supabase](https://supabase.com/docs/guides/getting-started/quickstarts/nextjs)
-*   [Stytch](https://stytch.com/docs/guides/quickstarts/nextjs)
-*   [WorkOS](https://workos.com/docs/user-management/nextjs)
+-   [Auth0](https://auth0.com/docs/quickstart/webapp/nextjs)
+-   [Better Auth](https://www.better-auth.com/docs/integrations/next)
+-   [Clerk](https://clerk.com/docs/quickstarts/nextjs)
+-   [Descope](https://docs.descope.com/getting-started/nextjs)
+-   [Kinde](https://kinde.com/docs/developer-tools/nextjs-sdk)
+-   [Logto](https://docs.logto.io/quick-starts/next-app-router)
+-   [NextAuth.js](https://authjs.dev/getting-started/installation?framework=next.js)
+-   [Ory](https://www.ory.sh/docs/getting-started/integrate-auth/nextjs)
+-   [Stack Auth](https://docs.stack-auth.com/getting-started/setup)
+-   [Supabase](https://supabase.com/docs/guides/getting-started/quickstarts/nextjs)
+-   [Stytch](https://stytch.com/docs/guides/quickstarts/nextjs)
+-   [WorkOS](https://workos.com/docs/user-management/nextjs)
 
 ### Session Management Libraries[](#session-management-libraries)
 
-*   [Iron Session](https://github.com/vvo/iron-session)
-*   [Jose](https://github.com/panva/jose)
+-   [Iron Session](https://github.com/vvo/iron-session)
+-   [Jose](https://github.com/panva/jose)
 
 ## Further Reading[](#further-reading)
 
 To continue learning about authentication and security, check out the following resources:
 
-*   [How to think about security in Next.js](/blog/security-nextjs-server-components-actions)
-*   [Understanding XSS Attacks](https://vercel.com/guides/understanding-xss-attacks)
-*   [Understanding CSRF Attacks](https://vercel.com/guides/understanding-csrf-attacks)
-*   [The Copenhagen Book](https://thecopenhagenbook.com/)
-
-[Previous
-
-Analytics
-
-](/docs/app/guides/analytics)
-
-[Next
-
-Backend for Frontend
-
-](/docs/app/guides/backend-for-frontend)
+-   [How to think about security in Next.js](/blog/security-nextjs-server-components-actions)
+-   [Understanding XSS Attacks](https://vercel.com/guides/understanding-xss-attacks)
+-   [Understanding CSRF Attacks](https://vercel.com/guides/understanding-csrf-attacks)
+-   [The Copenhagen Book](https://thecopenhagenbook.com/)
 
 Was this helpful?
-
-supported.
-
-Send

@@ -5,34 +5,35 @@ canonical_url: "https://docs.deno.com/runtime/fundamentals/workspaces/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:49:07.686Z"
-content_hash: "47f6f4a646f75b307af94906445f7764cc1b84d6d141f1090b03dac5f2a5a8bf"
+last_crawled_at: "2026-04-27T17:23:12.541Z"
+content_hash: "be6be87a1f1091aa7f1b150f7533de2c6586b697355e0617ec20eb8bbe2c920d"
 menu_path: ["Workspaces and monorepos"]
 section_path: []
+content_language: "en"
 ---
-On this page
+**On this page**
 
-*   [Example](#example)
-*   [Workspace path patterns](#workspace-path-patterns)
-*   [How Deno resolves workspace dependencies](#how-deno-resolves-workspace-dependencies)
-    *   [Important note for containerization](#important-note-for-containerization)
-    *   [Multiple package entries](#multiple-package-entries)
-    *   [Publishing workspace packages to registries](#publishing-workspace-packages-to-registries)
-        *   [Publishing to JSR](#publishing-to-jsr)
-        *   [Managing interdependent packages](#managing-interdependent-packages)
-    *   [Migrating from npm workspaces](#migrating-from-npm-workspaces)
-*   [Configuring built-in Deno tools](#configuring-built-in-deno-tools)
-*   [Running commands across workspaces](#running-commands-across-workspaces)
-    *   [Type checking](#type-checking)
-    *   [Running tests](#running-tests)
-    *   [Formatting and linting](#formatting-and-linting)
-    *   [Using workspace tasks](#using-workspace-tasks)
-*   [Sharing and managing dependencies](#sharing-and-managing-dependencies)
-    *   [Sharing development dependencies](#sharing-development-dependencies)
-    *   [Managing version conflicts](#managing-version-conflicts)
-    *   [Interdependent workspace members](#interdependent-workspace-members)
-*   [Using workspace protocol in package.json](#using-workspace-protocol-in-package.json)
-*   [npm and pnpm workspace compatibility](#npm-and-pnpm-workspace-compatibility)
+-   [Example](#example)
+-   [Workspace path patterns](#workspace-path-patterns)
+-   [How Deno resolves workspace dependencies](#how-deno-resolves-workspace-dependencies)
+    -   [Important note for containerization](#important-note-for-containerization)
+    -   [Multiple package entries](#multiple-package-entries)
+    -   [Publishing workspace packages to registries](#publishing-workspace-packages-to-registries)
+        -   [Publishing to JSR](#publishing-to-jsr)
+        -   [Managing interdependent packages](#managing-interdependent-packages)
+    -   [Migrating from npm workspaces](#migrating-from-npm-workspaces)
+-   [Configuring built-in Deno tools](#configuring-built-in-deno-tools)
+-   [Running commands across workspaces](#running-commands-across-workspaces)
+    -   [Type checking](#type-checking)
+    -   [Running tests](#running-tests)
+    -   [Formatting and linting](#formatting-and-linting)
+    -   [Using workspace tasks](#using-workspace-tasks)
+-   [Sharing and managing dependencies](#sharing-and-managing-dependencies)
+    -   [Sharing development dependencies](#sharing-development-dependencies)
+    -   [Managing version conflicts](#managing-version-conflicts)
+    -   [Interdependent workspace members](#interdependent-workspace-members)
+-   [Using workspace protocol in package.json](#using-workspace-protocol-in-package.json)
+-   [npm and pnpm workspace compatibility](#npm-and-pnpm-workspace-compatibility)
 
 Deno supports workspaces, also known as "monorepos", which allow you to manage multiple related and interdependent packages simultaneously.
 
@@ -50,9 +51,9 @@ This configures a workspace with `add` and `subtract` members, which are directo
 
 Each workspace member directory can contain:
 
-*   Only a `deno.json` (Deno-first package)
-*   Both a `deno.json` and a `package.json` (hybrid package – useful while migrating or when you need Node metadata as well as Deno config)
-*   Only a `package.json` (Node-first package that still participates in the Deno workspace)
+-   Only a `deno.json` (Deno-first package)
+-   Both a `deno.json` and a `package.json` (hybrid package – useful while migrating or when you need Node metadata as well as Deno config)
+-   Only a `package.json` (Node-first package that still participates in the Deno workspace)
 
 When a member contains only a `package.json`, you can still import it from anywhere else in the workspace using the `name` field specified in that `package.json` (for example `import { something } from "@scope/my-node-only-pkg";`). Deno will resolve that bare specifier as long as the directory is listed in the root workspace configuration. This lets you gradually adopt Deno tooling without having to add a `deno.json` to every existing Node package up front.
 
@@ -273,9 +274,9 @@ my-package/deno.json
 
 The `"."` entry is the default entry that's picked when importing `@scope/my-package`. Therefore, the above `deno.json` example provides the following entries:
 
-*   `@scope/my-package`
-*   `@scope/my-package/foo`
-*   `@scope/my-package/other`
+-   `@scope/my-package`
+-   `@scope/my-package/foo`
+-   `@scope/my-package/other`
 
 ### Publishing workspace packages to registries
 
@@ -437,281 +438,46 @@ Some configuration options only make sense at the root of the workspace, eg. spe
 
 Here's a full matrix of various `deno.json` options available at the workspace root and its members:
 
-Option
-
-Workspace
-
-Package
-
-Notes
-
-compilerOptions
-
-✅
-
-✅
-
-importMap
-
-✅
-
-❌
-
-Exclusive with imports and scopes per config file. Additionally, it is not supported to have importMap in the workspace config, and imports in the package config.
-
-imports
-
-✅
-
-✅
-
-Exclusive with importMap per config file.
-
-scopes
-
-✅
-
-❌
-
-Exclusive with importMap per config file.
-
-exclude
-
-✅
-
-✅
-
-lint.include
-
-✅
-
-✅
-
-lint.exclude
-
-✅
-
-✅
-
-lint.files
-
-⚠️
-
-❌
-
-Deprecated
-
-lint.rules.tags
-
-✅
-
-✅
-
-Tags are merged by appending package to workspace list. Duplicates are ignored.
-
-lint.rules.include
-
-lint.rules.exclude
-
-✅
-
-✅
-
-Rules are merged per package, with package taking priority over workspace (package include is stronger than workspace exclude).
-
-lint.report
-
-✅
-
-❌
-
-Only one reporter can be active at a time, so allowing different reporters per workspace would not work in the case where you lint files spanning multiple packages.
-
-fmt.include
-
-✅
-
-✅
-
-fmt.exclude
-
-✅
-
-✅
-
-fmt.files
-
-⚠️
-
-❌
-
-Deprecated
-
-fmt.useTabs
-
-✅
-
-✅
-
-Package takes priority over workspace.
-
-fmt.indentWidth
-
-✅
-
-✅
-
-Package takes priority over workspace.
-
-fmt.singleQuote
-
-✅
-
-✅
-
-Package takes priority over workspace.
-
-fmt.proseWrap
-
-✅
-
-✅
-
-Package takes priority over workspace.
-
-fmt.semiColons
-
-✅
-
-✅
-
-Package takes priority over workspace.
-
-fmt.options.\*
-
-⚠️
-
-❌
-
-Deprecated
-
-nodeModulesDir
-
-✅
-
-❌
-
-Resolution behaviour must be the same in the entire workspace.
-
-vendor
-
-✅
-
-❌
-
-Resolution behaviour must be the same in the entire workspace.
-
-tasks
-
-✅
-
-✅
-
-Package tasks take priority over workspace. cwd used is the cwd of the config file that the task was inside of.
-
-test.include
-
-✅
-
-✅
-
-test.exclude
-
-✅
-
-✅
-
-test.files
-
-⚠️
-
-❌
-
-Deprecated
-
-publish.include
-
-✅
-
-✅
-
-publish.exclude
-
-✅
-
-✅
-
-bench.include
-
-✅
-
-✅
-
-bench.exclude
-
-✅
-
-✅
-
-bench.files
-
-⚠️
-
-❌
-
-Deprecated
-
-lock
-
-✅
-
-❌
-
-Only a single lock file may exist per resolver, and only resolver may exist per workspace, so conditional enablement of the lockfile per package does not make sense.
-
-unstable
-
-✅
-
-❌
-
-For simplicities sake, we do not allow unstable flags, because a lot of the CLI assumes that unstable flags are immutable and global to the entire process. Also weird interaction with DENO\_UNSTABLE\_\* flags.
-
-name
-
-❌
-
-✅
-
-version
-
-❌
-
-✅
-
-exports
-
-❌
-
-✅
-
-workspace
-
-✅
-
-❌
-
-Nested workspaces are not supported.
+| Option | Workspace | Package | Notes |
+| --- | --- | --- | --- |
+| compilerOptions | ✅ | ✅ |  |
+| importMap | ✅ | ❌ | Exclusive with imports and scopes per config file. Additionally, it is not supported to have importMap in the workspace config, and imports in the package config. |
+| imports | ✅ | ✅ | Exclusive with importMap per config file. |
+| scopes | ✅ | ❌ | Exclusive with importMap per config file. |
+| exclude | ✅ | ✅ |  |
+| lint.include | ✅ | ✅ |  |
+| lint.exclude | ✅ | ✅ |  |
+| lint.files | ⚠️ | ❌ | Deprecated |
+| lint.rules.tags | ✅ | ✅ | Tags are merged by appending package to workspace list. Duplicates are ignored. |
+| lint.rules.include |  |  |  |
+| lint.rules.exclude | ✅ | ✅ | Rules are merged per package, with package taking priority over workspace (package include is stronger than workspace exclude). |
+| lint.report | ✅ | ❌ | Only one reporter can be active at a time, so allowing different reporters per workspace would not work in the case where you lint files spanning multiple packages. |
+| fmt.include | ✅ | ✅ |  |
+| fmt.exclude | ✅ | ✅ |  |
+| fmt.files | ⚠️ | ❌ | Deprecated |
+| fmt.useTabs | ✅ | ✅ | Package takes priority over workspace. |
+| fmt.indentWidth | ✅ | ✅ | Package takes priority over workspace. |
+| fmt.singleQuote | ✅ | ✅ | Package takes priority over workspace. |
+| fmt.proseWrap | ✅ | ✅ | Package takes priority over workspace. |
+| fmt.semiColons | ✅ | ✅ | Package takes priority over workspace. |
+| fmt.options.\* | ⚠️ | ❌ | Deprecated |
+| nodeModulesDir | ✅ | ❌ | Resolution behaviour must be the same in the entire workspace. |
+| vendor | ✅ | ❌ | Resolution behaviour must be the same in the entire workspace. |
+| tasks | ✅ | ✅ | Package tasks take priority over workspace. cwd used is the cwd of the config file that the task was inside of. |
+| test.include | ✅ | ✅ |  |
+| test.exclude | ✅ | ✅ |  |
+| test.files | ⚠️ | ❌ | Deprecated |
+| publish.include | ✅ | ✅ |  |
+| publish.exclude | ✅ | ✅ |  |
+| bench.include | ✅ | ✅ |  |
+| bench.exclude | ✅ | ✅ |  |
+| bench.files | ⚠️ | ❌ | Deprecated |
+| lock | ✅ | ❌ | Only a single lock file may exist per resolver, and only resolver may exist per workspace, so conditional enablement of the lockfile per package does not make sense. |
+| unstable | ✅ | ❌ | For simplicities sake, we do not allow unstable flags, because a lot of the CLI assumes that unstable flags are immutable and global to the entire process. Also weird interaction with DENO\_UNSTABLE\_\* flags. |
+| name | ❌ | ✅ |  |
+| version | ❌ | ✅ |  |
+| exports | ❌ | ✅ |  |
+| workspace | ✅ | ❌ | Nested workspaces are not supported. |
 
 ## Running commands across workspaces
 
@@ -911,9 +677,9 @@ package.json
 
 The following workspace protocol specifiers are supported:
 
-*   `workspace:*` - Use the latest version available in the workspace
-*   `workspace:~` - Use the workspace version with only patch-level changes
-*   `workspace:^` - Use the workspace version with semver-compatible changes
+-   `workspace:*` - Use the latest version available in the workspace
+-   `workspace:~` - Use the workspace version with only patch-level changes
+-   `workspace:^` - Use the workspace version with semver-compatible changes
 
 ## npm and pnpm workspace compatibility
 

@@ -5,15 +5,16 @@ canonical_url: "https://docs.deno.com/runtime/reference/std/webgpu/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:06:58.057Z"
-content_hash: "020b01a95cf8a1f2e52ab9a45aadd6b391fe36617b463a41b43e368391253c36"
+last_crawled_at: "2026-04-27T17:49:10.041Z"
+content_hash: "41790bc83183de57f77e8cc9441921bf36fc599cf13a1869f31f86475d8a3ce4"
 menu_path: ["@std/webgpu"]
 section_path: []
+content_language: "en"
 ---
-On this page
+**On this page**
 
-*   [Overview](#overview)
-    *   [Add to your project](#add-to-your-project)
+-   [Overview](#overview)
+    -   [Add to your project](#add-to-your-project)
 
 Unstable
 

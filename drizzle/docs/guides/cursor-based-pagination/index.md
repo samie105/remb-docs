@@ -5,29 +5,17 @@ canonical_url: "https://orm.drizzle.team/docs/guides/cursor-based-pagination"
 docset: "drizzle"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:03:47.556Z"
-content_hash: "a9aca573da8308f0389d3031528808b3fb756e95bcd08689c9a3cf827f758cb9"
+last_crawled_at: "2026-04-27T18:58:39.566Z"
+content_hash: "9be1ff010868585ca52086ec134492927d77eccaaa3022a5ecc174efc96a484d"
 menu_path: ["Drizzle ORM - SQL Cursor-based pagination"]
 section_path: []
-nav_prev: {"path": "drizzle/docs/guides/count-rows/index.md", "title": "Drizzle ORM - Count rows"}
-nav_next: {"path": "drizzle/docs/guides/d1-http-with-drizzle-kit/index.md", "title": "Drizzle ORM - Cloudflare D1 HTTP API with Drizzle Kit"}
+content_language: "en"
 ---
-
 Drizzle | SQL Cursor-based pagination
-
-PostgreSQL
-
-MySQL
-
-SQLite
 
 This guide demonstrates how to implement `cursor-based` pagination in Drizzle:
 
-index.ts
-
-schema.ts
-
-```
+```ts
 import { asc, gt } from 'drizzle-orm';
 import { users } from './schema';
 
@@ -46,11 +34,11 @@ const nextUserPage = async (cursor?: number, pageSize = 3) => {
 await nextUserPage(3);
 ```
 
-```
+```sql
 select * from users order by id asc limit 3;
 ```
 
-```
+```ts
 // next page, 4-6 rows returned
 [
   {
@@ -76,7 +64,7 @@ select * from users order by id asc limit 3;
 
 If you need dynamic order by you can do like below:
 
-```
+```ts
 const nextUserPage = async (order: 'asc' | 'desc' = 'asc', cursor?: number, pageSize = 3) => {
   await db
     .select()
@@ -98,7 +86,7 @@ The main idea of this pagination is to use cursor as a pointer to a specific row
 
 If you need to order by a non-unique and non-sequential column, you can use multiple columns for cursor. This is how you can do it:
 
-```
+```ts
 import { and, asc, eq, gt, or } from 'drizzle-orm';
 
 const nextUserPage = async (
@@ -130,13 +118,13 @@ await nextUserPage({
 });
 ```
 
-```
+```sql
 select * from users
   where (first_name > 'Alex' or (first_name = 'Alex' and id > 2))
   order by first_name asc, id asc limit 3;
 ```
 
-```
+```ts
 // next page, 4-6 rows returned
 [
   {
@@ -162,7 +150,7 @@ select * from users
 
 Make sure to create indices for the columns that you use for cursor to make query efficient.
 
-```
+```ts
 import { index, ...imports } from 'drizzle-orm/pg-core';
 
 export const users = pgTable('users', {
@@ -174,7 +162,7 @@ export const users = pgTable('users', {
 ]);
 ```
 
-```
+```sql
 -- As of now drizzle-kit only supports index name and on() param, so you have to add order manually
 CREATE INDEX IF NOT EXISTS "first_name_index" ON "users" ("first_name" ASC);
 CREATE INDEX IF NOT EXISTS "first_name_and_id_index" ON "users" ("first_name" ASC,"id" ASC);
@@ -182,7 +170,7 @@ CREATE INDEX IF NOT EXISTS "first_name_and_id_index" ON "users" ("first_name" AS
 
 If you are using primary key which is not sequential (e.g. `UUIDv4`), you should add sequential column (e.g. `created_at` column) and use multiple cursor. This is how you can do it:
 
-```
+```ts
 
 const nextUserPage = async (
   cursor?: {
@@ -216,7 +204,7 @@ await nextUserPage({
 
 Drizzle has useful relational queries API, that lets you easily implement `cursor-based` pagination:
 
-```
+```ts
 import * as schema from './db/schema';
 
 const db = drizzle(..., { schema });
@@ -237,4 +225,4 @@ await nextUserPage(3);
 
 **Drawbacks** of `cursor-based` pagination: the inability to directly navigate to a specific page and complexity of implementation. Since you add more columns to the sort order, you’ll need to add more filters to the `where` clause for the cursor comparison to ensure consistent pagination.
 
-So, if you need to directly navigate to a specific page or you need simpler implementation of pagination, you should consider using [offset/limit](drizzle/docs/guides/limit-offset-pagination/index.md) pagination instead.
+So, if you need to directly navigate to a specific page or you need simpler implementation of pagination, you should consider using [offset/limit](https://orm.drizzle.team/docs/guides/limit-offset-pagination) pagination instead.

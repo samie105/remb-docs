@@ -5,20 +5,18 @@ canonical_url: "https://orm.drizzle.team/docs/get-started/bun-sql-new"
 docset: "drizzle"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:51:28.997Z"
-content_hash: "32fefd306b64ac434c5cba0d54bde390fdda2278b4be54c06064348bee55f6d3"
+last_crawled_at: "2026-04-27T18:42:01.197Z"
+content_hash: "6126c12469cb46fd127cca68b99e42d809ac3c2af7f95417dbea034e80201276"
 menu_path: ["Get Started with Drizzle and Bun:SQLite"]
 section_path: []
-nav_prev: {"path": "drizzle/docs/get-started/bun-sql-existing/index.md", "title": "Get Started with Drizzle and SQLite in existing project"}
-nav_next: {"path": "drizzle/docs/get-started/bun-sqlite-existing/index.md", "title": "Get Started with Drizzle and Bun:SQLite in existing project"}
+content_language: "en"
 ---
-
 ## Get Started with Drizzle and Bun:SQLite
 
 This guide assumes familiarity with:
 
-*   **bun** - javaScript all-in-one toolkit - [read here](https://bun.sh/)
-*   **Bun SQL** - native bindings for working with PostgreSQL databases - [read here](https://bun.sh/docs/api/sql)
+-   **bun** - javaScript all-in-one toolkit - [read here](https://bun.sh/)
+-   **Bun SQL** - native bindings for working with PostgreSQL databases - [read here](https://bun.sh/docs/api/sql)
 
 WARNING
 
@@ -28,7 +26,7 @@ In version `1.2.0`, Bun has issues with executing concurrent statements, which m
 
 This is the basic file structure of the project. In the `src/db` directory, we have table definition in `schema.ts`. In `drizzle` folder there are sql migration file and snapshots.
 
-```
+```plaintext
 📦 <project root>
  ├ 📂 drizzle
  ├ 📂 src
@@ -42,14 +40,6 @@ This is the basic file structure of the project. In the `src/db` directory, we h
 ```
 
 #### Step 1 - Install required packages[](#step-1---install-required-packages)
-
-npm
-
-yarn
-
-pnpm
-
-bun
 
 ```
 npm i drizzle-orm
@@ -75,10 +65,6 @@ bun add -D drizzle-kit @types/bun
 
 Create a `.env` file in the root of your project and add your database connection variable:
 
-```
-DATABASE_URL=
-```
-
 #### Step 3 - Connect Drizzle ORM to the database[](#step-3---connect-drizzle-orm-to-the-database)
 
 Create a `index.ts` file in the `src` directory and initialize the connection:
@@ -87,14 +73,14 @@ bun sql
 
 bun sql with config
 
-```
+```typescript
 import 'dotenv/config';
 import { drizzle } from 'drizzle-orm/bun-sql';
 
 const db = drizzle(process.env.DATABASE_URL!);
 ```
 
-```
+```typescript
 import 'dotenv/config';
 import { drizzle } from 'drizzle-orm/bun-sql';
 
@@ -104,7 +90,7 @@ const db = drizzle({ connection: { url: process.env.DATABASE_URL! }});
 
 If you need to provide your existing driver:
 
-```
+```typescript
 import 'dotenv/config';
 import { drizzle } from 'drizzle-orm/bun-sql';
 import { SQL } from 'bun';
@@ -117,7 +103,7 @@ const db = drizzle({ client });
 
 Create a `schema.ts` file in the `src/db` directory and declare your table:
 
-```
+```typescript
 import { integer, pgTable, varchar } from "drizzle-orm/pg-core";
 
 export const usersTable = pgTable("users", {
@@ -130,11 +116,11 @@ export const usersTable = pgTable("users", {
 
 #### Step 5 - Setup Drizzle config file[](#step-5---setup-drizzle-config-file)
 
-**Drizzle config** - a configuration file that is used by [Drizzle Kit](drizzle/docs/kit-overview/index.md) and contains all the information about your database connection, migration folder and schema files.
+**Drizzle config** - a configuration file that is used by [Drizzle Kit](https://orm.drizzle.team/docs/kit-overview) and contains all the information about your database connection, migration folder and schema files.
 
 Create a `drizzle.config.ts` file in the root of your project and add the following content:
 
-```
+```typescript
 import 'dotenv/config';
 import { defineConfig } from 'drizzle-kit';
 
@@ -152,11 +138,11 @@ export default defineConfig({
 
 You can directly apply changes to your database using the `drizzle-kit push` command. This is a convenient method for quickly testing new schema designs or modifications in a local development environment, allowing for rapid iterations without the need to manage migration files:
 
-```
+```bash
 npx drizzle-kit push
 ```
 
-Read more about the push command in [documentation](drizzle/docs/drizzle-kit-push/index.md).
+Read more about the push command in [documentation](https://orm.drizzle.team/docs/drizzle-kit-push).
 
 Tips
 
@@ -164,23 +150,23 @@ Alternatively, you can generate migrations using the `drizzle-kit generate` comm
 
 Generate migrations:
 
-```
+```bash
 npx drizzle-kit generate
 ```
 
 Apply migrations:
 
-```
+```bash
 npx drizzle-kit migrate
 ```
 
-Read more about migration process in [documentation](drizzle/docs/kit-overview/index.md).
+Read more about migration process in [documentation](https://orm.drizzle.team/docs/kit-overview).
 
 #### Step 7 - Seed and Query the database[](#step-7---seed-and-query-the-database)
 
 Let’s **update** the `src/index.ts` file with queries to create, read, update, and delete users
 
-```
+```typescript
 import 'dotenv/config';
 import { drizzle } from 'drizzle-orm/bun-sql';
 import { eq } from 'drizzle-orm';
@@ -228,6 +214,6 @@ main();
 
 To run a script with `bun`, use the following command:
 
-```
+```bash
 bun src/index.ts
 ```

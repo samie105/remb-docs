@@ -5,14 +5,12 @@ canonical_url: "https://orm.drizzle.team/docs/indexes-constraints"
 docset: "drizzle"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:08:22.404Z"
-content_hash: "a35750f9cb67a05d6134e37fb1622e04e372cfff43064a4cd7e60cc929e924b4"
+last_crawled_at: "2026-04-27T19:04:54.220Z"
+content_hash: "4c05a6b39a3f6a6fea74d835fa906ca27b906d928f90cc76bd1d8e3609c62e96"
 menu_path: ["Indexes & Constraints"]
 section_path: []
-nav_prev: {"path": "drizzle/docs/column-types/pg/index.md", "title": "PostgreSQL column types"}
-nav_next: {"path": "drizzle/docs/sequences/index.md", "title": "Sequences"}
+content_language: "en"
 ---
-
 ## Constraints[](#constraints)
 
 SQL constraints are the rules enforced on table columns. They are used to prevent invalid data from being entered into the database.
@@ -37,7 +35,7 @@ MSSQL
 
 CockroachDB
 
-```
+```typescript
 import { sql } from "drizzle-orm";
 import { integer, uuid, pgTable } from "drizzle-orm/pg-core";
 
@@ -49,7 +47,7 @@ const table = pgTable('table', {
 });
 ```
 
-```
+```sql
 CREATE TABLE "table" (
   "integer1" integer DEFAULT 42,
   "integer2" integer DEFAULT '42'::integer,
@@ -58,7 +56,7 @@ CREATE TABLE "table" (
 );
 ```
 
-```
+```typescript
 import { sql } from "drizzle-orm";
 import { int, time, mysqlTable } from "drizzle-orm/mysql-core";
 
@@ -68,14 +66,14 @@ const table = mysqlTable("table", {
 });
 ```
 
-```
+```sql
 CREATE TABLE `table` (
   `int` int DEFAULT 42,
   `time` time DEFAULT cast("14:06:10" AS TIME)
 );
 ```
 
-```
+```typescript
 import { sql } from "drizzle-orm";
 import { integer, sqliteTable } from "drizzle-orm/sqlite-core";
 
@@ -85,14 +83,14 @@ const table = sqliteTable('table', {
 });
 ```
 
-```
+```sql
 CREATE TABLE `table` (
   `int1` integer DEFAULT 42
   `int2` integer DEFAULT (abs(42))
 );
 ```
 
-```
+```typescript
 import { sql } from "drizzle-orm";
 import { int, time, singlestoreTable } from "drizzle-orm/singlestore-core";
 
@@ -102,14 +100,14 @@ const table = singlestoreTable("table", {
 });
 ```
 
-```
+```sql
 CREATE TABLE `table` (
   `int` int DEFAULT 42,
   `time` time DEFAULT cast("14:06:10" AS TIME)
 );
 ```
 
-```
+```typescript
 import { sql } from "drizzle-orm";
 import { int, time, mssqlTable } from "drizzle-orm/mssql-core";
 
@@ -119,14 +117,14 @@ const table = mssqlTable("table", {
 });
 ```
 
-```
+```sql
 CREATE TABLE [table] (
   [int] int DEFAULT 42,
   [description] text DEFAULT 'This is your dashboard!'
 );
 ```
 
-```
+```typescript
 import { sql } from "drizzle-orm";
 import { int4, uuid, cockroachTable } from "drizzle-orm/cockroach-core";
 
@@ -138,7 +136,7 @@ const table = cockroachTable('table', {
 });
 ```
 
-```
+```sql
 CREATE TABLE "table" (
   "integer1" int4 DEFAULT 42,
   "integer2" int4 DEFAULT '42'::integer,
@@ -165,7 +163,7 @@ MSSQL
 
 CockroachDB
 
-```
+```typescript
 import { integer, pgTable } from "drizzle-orm/pg-core";
 
 const table = pgTable('table', {
@@ -173,13 +171,13 @@ const table = pgTable('table', {
 });
 ```
 
-```
+```sql
 CREATE TABLE "table" (
   "integer" integer NOT NULL
 );
 ```
 
-```
+```typescript
 import { int, mysqlTable } from "drizzle-orm/mysql-core";
 
 const table = mysqlTable('table', {
@@ -187,25 +185,25 @@ const table = mysqlTable('table', {
 });
 ```
 
-```
+```sql
 CREATE TABLE `table` (
   `int` int NOT NULL
 );
 ```
 
-```
+```typescript
 const table = sqliteTable('table', { 
   numInt: integer('numInt').notNull() 
 });
 ```
 
-```
+```sql
 CREATE TABLE table (
   `numInt` integer NOT NULL
 );
 ```
 
-```
+```typescript
 import { int, singlestoreTable } from "drizzle-orm/singlestore-core";
 
 const table = singlestoreTable('table', {
@@ -213,13 +211,13 @@ const table = singlestoreTable('table', {
 });
 ```
 
-```
+```sql
 CREATE TABLE `table` (
   `int` int NOT NULL
 );
 ```
 
-```
+```typescript
 import { int, mssqlTable } from "drizzle-orm/mssql-core";
 
 const table = mssqlTable('table', {
@@ -227,13 +225,13 @@ const table = mssqlTable('table', {
 });
 ```
 
-```
+```sql
 CREATE TABLE [table] (
   [int] int NOT NULL
 );
 ```
 
-```
+```typescript
 import { int4, cockroachTable } from "drizzle-orm/cockroach-core";
 
 const table = cockroachTable('table', {
@@ -241,7 +239,7 @@ const table = cockroachTable('table', {
 });
 ```
 
-```
+```sql
 CREATE TABLE "table" (
   "integer" int4 NOT NULL
 );
@@ -269,7 +267,7 @@ MSSQL
 
 CockroachDB
 
-```
+```typescript
 import { integer, text, unique, pgTable } from "drizzle-orm/pg-core";
 
 export const user = pgTable('user', {
@@ -297,7 +295,7 @@ export const userNulls = pgTable('user_nulls_example', {
 ]);
 ```
 
-```
+```sql
 CREATE TABLE "composite_example" (
     "id" integer,
   "name" text,
@@ -322,7 +320,7 @@ CREATE TABLE "user_nulls_example" (
 );
 ```
 
-```
+```typescript
 import { int, varchar, unique, mysqlTable } from "drizzle-orm/mysql-core";
 
 export const user = mysqlTable('user', {
@@ -342,7 +340,7 @@ export const composite = mysqlTable('composite_example', {
 ]);
 ```
 
-```
+```sql
 CREATE TABLE `user` (
 	`id` int,
 	CONSTRAINT `user_id_unique` UNIQUE(`id`)
@@ -361,7 +359,7 @@ CREATE TABLE `composite_example` (
 );
 ```
 
-```
+```typescript
 import { int, text, unique, sqliteTable } from "drizzle-orm/sqlite-core";
 
 export const user = sqliteTable('user', {
@@ -381,7 +379,7 @@ export const composite = sqliteTable('composite_example', {
 ]);
 ```
 
-```
+```sql
 CREATE TABLE `user` (
     `id` integer
 );
@@ -401,7 +399,7 @@ CREATE UNIQUE INDEX `custom_name` ON `table` (`id`);
 CREATE UNIQUE INDEX `user_id_unique` ON `user` (`id`);
 ```
 
-```
+```typescript
 import { int, varchar, unique, singlestoreTable } from "drizzle-orm/singlestore-core";
 
 export const user = singlestoreTable('user', {
@@ -421,7 +419,7 @@ export const composite = singlestoreTable('composite_example', {
 ]);
 ```
 
-```
+```sql
 CREATE TABLE `user` (
 	`id` int,
 	CONSTRAINT `user_id_unique` UNIQUE(`id`)
@@ -444,7 +442,7 @@ IMPORTANT
 
 With MSSQL you can’t create unique constraint on `text`, `ntext`, `varchar(max)`, `nvarchar(max)`
 
-```
+```typescript
 import { int, varchar, unique, mssqlTable } from "drizzle-orm/mssql-core";
 
 export const user = mssqlTable('user', {
@@ -464,7 +462,7 @@ export const composite = mssqlTable('composite_example', {
 ]);
 ```
 
-```
+```sql
 CREATE TABLE [user] (
 	[id] int,
 	CONSTRAINT [user_id_key] UNIQUE([id])
@@ -483,7 +481,7 @@ CREATE TABLE [composite_example] (
 );
 ```
 
-```
+```typescript
 import { int4, text, unique, cockroachTable } from "drizzle-orm/cockroach-core";
 
 export const user = cockroachTable('user', {
@@ -503,7 +501,7 @@ export const composite = cockroachTable('composite_example', {
 ]);
 ```
 
-```
+```sql
 CREATE TABLE "user" (
 	"id" integer,
 	CONSTRAINT "user_id_unique" UNIQUE("id")
@@ -542,7 +540,7 @@ MSSQL
 
 CockroachDB
 
-```
+```typescript
 import { sql } from "drizzle-orm";
 import { check, integer, pgTable, text, uuid } from "drizzle-orm/pg-core";
 
@@ -559,7 +557,7 @@ export const users = pgTable(
 );
 ```
 
-```
+```sql
 CREATE TABLE "users" (
     "id" uuid PRIMARY KEY DEFAULT gen_random_uuid() NOT NULL,
     "username" text NOT NULL,
@@ -568,7 +566,7 @@ CREATE TABLE "users" (
 );
 ```
 
-```
+```typescript
 import { sql } from "drizzle-orm";
 import { check, int, mysqlTable, text } from "drizzle-orm/mysql-core";
 
@@ -585,7 +583,7 @@ export const users = mysqlTable(
 );
 ```
 
-```
+```sql
 CREATE TABLE `users` (
     `id` int NOT NULL,
     `username` text NOT NULL,
@@ -595,7 +593,7 @@ CREATE TABLE `users` (
 );
 ```
 
-```
+```typescript
 import { sql } from "drizzle-orm";
 import { check, int, sqliteTable, text } from "drizzle-orm/sqlite-core";
 
@@ -612,7 +610,7 @@ export const users = sqliteTable(
 );
 ```
 
-```
+```sql
 CREATE TABLE `users` (
     `id` integer PRIMARY KEY NOT NULL,
     `username` text NOT NULL,
@@ -623,7 +621,7 @@ CREATE TABLE `users` (
 
 Currently not supported in SingleStore
 
-```
+```typescript
 import { sql } from "drizzle-orm";
 import { check, int, mssqlTable, text } from "drizzle-orm/mssql-core";
 
@@ -640,7 +638,7 @@ export const users = mssqlTable(
 );
 ```
 
-```
+```sql
 CREATE TABLE [users] (
     [id] int PRIMARY KEY,
     [username] text NOT NULL,
@@ -649,7 +647,7 @@ CREATE TABLE [users] (
 );
 ```
 
-```
+```typescript
 import { sql } from "drizzle-orm";
 import { check, int4, cockroachTable, text, uuid } from "drizzle-orm/cockroach-core";
 
@@ -666,7 +664,7 @@ export const users = cockroachTable(
 );
 ```
 
-```
+```sql
 CREATE TABLE "users" (
     "id" uuid PRIMARY KEY DEFAULT gen_random_uuid() NOT NULL,
     "username" text NOT NULL,
@@ -694,7 +692,7 @@ MSSQL
 
 CockroachDB
 
-```
+```typescript
 import { serial, text, pgTable } from "drizzle-orm/pg-core";
 
 const user = pgTable('user', {
@@ -706,7 +704,7 @@ const table = pgTable('table', {
 });
 ```
 
-```
+```sql
 CREATE TABLE "user" (
   "id" serial PRIMARY KEY
 );
@@ -716,7 +714,7 @@ CREATE TABLE "table" (
 );
 ```
 
-```
+```typescript
 import { int, text, mysqlTable } from "drizzle-orm/mysql-core";
 
 export const user = mysqlTable("user", {
@@ -728,7 +726,7 @@ export const table = mysqlTable("table", {
 })
 ```
 
-```
+```sql
 CREATE TABLE `user` (
   `id` int AUTO_INCREMENT PRIMARY KEY NOT NULL
 );
@@ -738,7 +736,7 @@ CREATE TABLE `table` (
 );
 ```
 
-```
+```typescript
 import { integer, sqliteTable } from "drizzle-orm/sqlite-core";
 
 export const user = sqliteTable("user", {
@@ -750,7 +748,7 @@ export const pet = sqliteTable("pet", {
 })
 ```
 
-```
+```sql
 CREATE TABLE `user` (
   `id` integer PRIMARY KEY AUTOINCREMENT NOT NULL
 );
@@ -760,7 +758,7 @@ CREATE TABLE `pet` (
 )
 ```
 
-```
+```typescript
 import { int, text, singlestoreTable } from "drizzle-orm/singlestore-core";
 
 export const user = singlestoreTable("user", {
@@ -772,7 +770,7 @@ export const table = singlestoreTable("table", {
 })
 ```
 
-```
+```sql
 CREATE TABLE `user` (
   `id` int AUTO_INCREMENT PRIMARY KEY NOT NULL
 );
@@ -782,7 +780,7 @@ CREATE TABLE `table` (
 );
 ```
 
-```
+```typescript
 import { int, text, mssqlTable } from "drizzle-orm/mssql-core";
 
 export const user = mssqlTable("user", {
@@ -790,14 +788,14 @@ export const user = mssqlTable("user", {
 })
 ```
 
-```
+```sql
 CREATE TABLE [user] (
   [id] int,
   CONSTRAINT [user_pkey] PRIMARY KEY [id]
 );
 ```
 
-```
+```typescript
 import { int4, text, cockroachTable } from "drizzle-orm/cockroach-core";
 
 const user = cockroachTable('user', {
@@ -809,7 +807,7 @@ const table = cockroachTable('table', {
 });
 ```
 
-```
+```sql
 CREATE TABLE "user" (
   "id" int4 PRIMARY KEY
 );
@@ -837,7 +835,7 @@ MSSQL
 
 CockroachDB
 
-```
+```typescript
 import { serial, text, integer, primaryKey, pgTable } from "drizzle-orm/pg-core";
 
 export const user = pgTable("user", {
@@ -860,7 +858,7 @@ export const booksToAuthors = pgTable("books_to_authors", {
 ]);
 ```
 
-```
+```sql
 ...
 
 CREATE TABLE "books_to_authors" (
@@ -872,7 +870,7 @@ CREATE TABLE "books_to_authors" (
 ALTER TABLE "books_to_authors" ADD CONSTRAINT "custom_name" PRIMARY KEY("book_id","author_id");
 ```
 
-```
+```typescript
 import { int, text, primaryKey, mysqlTable } from "drizzle-orm/mysql-core";
 
 export const user = mysqlTable("user", {
@@ -895,7 +893,7 @@ export const booksToAuthors = mysqlTable("books_to_authors", {
 ]);
 ```
 
-```
+```sql
 ...
 
 CREATE TABLE `books_to_authors` (
@@ -905,7 +903,7 @@ CREATE TABLE `books_to_authors` (
 );
 ```
 
-```
+```typescript
 import { integer, text, primaryKey, sqliteTable} from "drizzle-orm/sqlite-core";
 
 export const user = sqliteTable("user", {
@@ -928,7 +926,7 @@ export const bookToAuthor = sqliteTable("book_to_author", {
 ]);
 ```
 
-```
+```sql
 ...
 
 CREATE TABLE `book_to_author` (
@@ -938,7 +936,7 @@ CREATE TABLE `book_to_author` (
 );
 ```
 
-```
+```typescript
 import { int, text, primaryKey, mysqlTable } from "drizzle-orm/singlestore-core";
 
 export const user = singlestoreTable("user", {
@@ -961,7 +959,7 @@ export const booksToAuthors = singlestoreTable("books_to_authors", {
 ]);
 ```
 
-```
+```sql
 ...
 
 CREATE TABLE `books_to_authors` (
@@ -971,7 +969,7 @@ CREATE TABLE `books_to_authors` (
 );
 ```
 
-```
+```typescript
 import { int, text, primaryKey, mssqlTable } from "drizzle-orm/mssql-core";
 
 export const user = mssqlTable("user", {
@@ -994,7 +992,7 @@ export const booksToAuthors = mssqlTable("books_to_authors", {
 ]);
 ```
 
-```
+```sql
 ...
 
 CREATE TABLE [books_to_authors] (
@@ -1004,7 +1002,7 @@ CREATE TABLE [books_to_authors] (
 );
 ```
 
-```
+```typescript
 import { int4, text, primaryKey, cockroachTable } from "drizzle-orm/cockroach-core";
 
 export const user = cockroachTable("user", {
@@ -1027,7 +1025,7 @@ export const booksToAuthors = cockroachTable("books_to_authors", {
 ]);
 ```
 
-```
+```sql
 ...
 
 CREATE TABLE "books_to_authors" (
@@ -1057,7 +1055,7 @@ MSSQL
 
 CockroachDB
 
-```
+```typescript
 import { serial, text, integer, pgTable } from "drizzle-orm/pg-core";
 
 export const user = pgTable("user", {
@@ -1072,7 +1070,7 @@ export const book = pgTable("book", {
 });
 ```
 
-```
+```typescript
 import { int, text, mysqlTable } from "drizzle-orm/mysql-core";
 
 export const user = mysqlTable("user", {
@@ -1087,7 +1085,7 @@ export const book = mysqlTable("book", {
 });
 ```
 
-```
+```typescript
 import { integer, text, sqliteTable } from "drizzle-orm/sqlite-core";
 
 export const user = sqliteTable("user", {
@@ -1104,7 +1102,7 @@ export const book = sqliteTable("book", {
 
 Currently not supported in SingleStore
 
-```
+```typescript
 import { int, text, mssqlTable } from "drizzle-orm/mssql-core";
 
 export const user = mssqlTable("user", {
@@ -1119,7 +1117,7 @@ export const book = mssqlTable("book", {
 });
 ```
 
-```
+```typescript
 import { int4, text, cockroachTable } from "drizzle-orm/cockroach-core";
 
 export const user = cockroachTable("user", {
@@ -1148,7 +1146,7 @@ MSSQL
 
 CockroachDB
 
-```
+```typescript
 import { serial, text, integer, foreignKey, pgTable, AnyPgColumn } from "drizzle-orm/pg-core";
 
 export const user = pgTable("user", {
@@ -1171,7 +1169,7 @@ export const user = pgTable("user", {
 ]);
 ```
 
-```
+```typescript
 import { int, text, foreignKey, AnyMySqlColumn, mysqlTable } from "drizzle-orm/mysql-core";
 
 export const user = mysqlTable("user", {
@@ -1194,7 +1192,7 @@ export const user = mysqlTable("user", {
 ]);
 ```
 
-```
+```typescript
 import { integer, text, foreignKey, sqliteTable, AnySQLiteColumn } from "drizzle-orm/sqlite-core";
 
 export const user = sqliteTable("user", {
@@ -1219,7 +1217,7 @@ export const user = sqliteTable("user", {
 
 Currently not supported in SingleStore
 
-```
+```typescript
 import { int, text, foreignKey, mssqlTable, AnyMsSQLColumn } from "drizzle-orm/mssql-core";
 
 export const user = mssqlTable("user", {
@@ -1242,7 +1240,7 @@ export const user = mssqlTable("user", {
 ]);
 ```
 
-```
+```typescript
 import { int4, text, foreignKey, cockroachTable, AnyCockroachColumn } from "drizzle-orm/cockroach-core";
 
 export const user = cockroachTable("user", {
@@ -1279,7 +1277,7 @@ MSSQL
 
 CockroachDB
 
-```
+```typescript
 import { serial, text, foreignKey, pgTable, AnyPgColumn } from "drizzle-orm/pg-core";
 
 export const user = pgTable("user", {
@@ -1302,7 +1300,7 @@ export const profile = pgTable("profile", {
 ])
 ```
 
-```
+```typescript
 import { int, text, primaryKey, foreignKey, mysqlTable, AnyMySqlColumn } from "drizzle-orm/mysql-core";
 
 export const user = mysqlTable("user", {
@@ -1325,7 +1323,7 @@ export const profile = mysqlTable("profile", {
 ]);
 ```
 
-```
+```typescript
 import { integer, text, primaryKey, foreignKey, sqliteTable, AnySQLiteColumn } from "drizzle-orm/sqlite-core";
 
 export const user = sqliteTable("user", {
@@ -1350,7 +1348,7 @@ export const profile = sqliteTable("profile", {
 
 Currently not supported in SingleStore
 
-```
+```typescript
 import { int, text, primaryKey, foreignKey, mssqlTable, AnyMsSqlColumn } from "drizzle-orm/mssql-core";
 
 export const user = mssqlTable("user", {
@@ -1373,7 +1371,7 @@ export const profile = mssqlTable("profile", {
 ]);
 ```
 
-```
+```typescript
 import { int4, text, foreignKey, cockroachTable, AnyCockroachColumn } from "drizzle-orm/cockroach-core";
 
 export const user = cockroachTable("user", {
@@ -1412,7 +1410,7 @@ MSSQL
 
 CockroachDB
 
-```
+```typescript
 import { serial, text, index, uniqueIndex, pgTable } from "drizzle-orm/pg-core";
 
 export const user = pgTable("user", {
@@ -1425,7 +1423,7 @@ export const user = pgTable("user", {
 ]);
 ```
 
-```
+```sql
 CREATE TABLE "user" (
   ...
 );
@@ -1442,7 +1440,7 @@ After versions `drizzle-kit@0.22.0` and `drizzle-orm@0.31.0` all fields are supp
 
 Starting from 0.31.0 a new index api for Drizzle ORM provides set of all params for index creation:
 
-```
+```ts
 // First example, with `.on()`
 index('name')
   .on(table.column1.asc(), table.column2.nullsFirst(), ...) or .onOnly(table.column1.desc().nullsLast(), table.column2, ...)
@@ -1457,7 +1455,7 @@ index('name')
   .with({ fillfactor: '70' })
 ```
 
-```
+```typescript
 import { int, text, index, uniqueIndex, mysqlTable } from "drizzle-orm/mysql-core";
 
 export const user = mysqlTable("user", {
@@ -1470,7 +1468,7 @@ export const user = mysqlTable("user", {
 ]);
 ```
 
-```
+```sql
 CREATE TABLE `user` (
   ...
 );
@@ -1485,7 +1483,7 @@ As of now `drizzle-kit` only supports index `name` and `on()` param.
 
 Drizzle ORM provides set of all params for index creation:
 
-```
+```typescript
 // Index declaration reference
 index("name")
   .on(table.name)
@@ -1494,7 +1492,7 @@ index("name")
   .lock("default") // "none" | "default" | "exclusive" | "shared"
 ```
 
-```
+```typescript
 import { integer, text, index, uniqueIndex, sqliteTable } from "drizzle-orm/sqlite-core";
 
 export const user = sqliteTable("user", {
@@ -1507,7 +1505,7 @@ export const user = sqliteTable("user", {
 ]);
 ```
 
-```
+```sql
 CREATE TABLE `user` (
   ...
 );
@@ -1518,14 +1516,14 @@ CREATE UNIQUE INDEX `email_idx` ON `user` (`email`);
 
 Drizzle ORM provides set of all params for index creation:
 
-```
+```typescript
 // Index declaration reference
 index("name")
   .on(table.name)
   .where(sql`...`)
 ```
 
-```
+```typescript
 import { int, text, index, uniqueIndex, singlestoreTable } from "drizzle-orm/singlestore-core";
 
 export const user = singlestoreTable("user", {
@@ -1538,7 +1536,7 @@ export const user = singlestoreTable("user", {
 ]);
 ```
 
-```
+```sql
 CREATE TABLE `user` (
   ...
 );
@@ -1547,7 +1545,7 @@ CREATE INDEX `name_idx` ON `user` (`name`);
 CREATE UNIQUE INDEX `email_idx` ON `user` (`email`);
 ```
 
-```
+```typescript
 import { int, text, index, uniqueIndex, mssqlTable } from "drizzle-orm/mssql-core";
 
 export const user = mysqlTable("user", {
@@ -1560,7 +1558,7 @@ export const user = mysqlTable("user", {
 ]);
 ```
 
-```
+```sql
 CREATE TABLE [user] (
   ...
 );
@@ -1575,14 +1573,14 @@ With MSSQL you can’t create unique index on `text`, `ntext`, `varchar(max)`, `
 
 Drizzle ORM provides set of params for index creation:
 
-```
+```typescript
 // Index declaration reference
 index("name")
   .on(table.name)
   .where(sql``)
 ```
 
-```
+```typescript
 import { int4, text, index, uniqueIndex, cockroachTable } from "drizzle-orm/cockroach-core";
 
 export const user = cockroachTable("user", {
@@ -1595,7 +1593,7 @@ export const user = cockroachTable("user", {
 ]);
 ```
 
-```
+```sql
 CREATE TABLE "user" (
   ...
 );
@@ -1604,7 +1602,7 @@ CREATE INDEX "name_idx" ON "user" ("name");
 CREATE UNIQUE INDEX "email_idx" ON "user" ("email");
 ```
 
-```
+```ts
 // First example, with `.on()`
 index('name')
   .on(table.column1.asc(), table.column2) or .onOnly(table.column1.desc(), table.column2, ...)

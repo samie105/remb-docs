@@ -5,59 +5,13 @@ canonical_url: "https://tailwindcss.com/docs/background-image"
 docset: "tailwind"
 kind: "framework"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:01:32.412Z"
-content_hash: "b3cfccefa0d42de026ff44f1795d233e53d7cf05444f555d07b386e4152522be"
+last_crawled_at: "2026-04-27T20:16:55.499Z"
+content_hash: "b3b87927aae5cb79a0965b79cf022e395d7402b8ed74a9d1f35fd94bae98af15"
 menu_path: ["background-image"]
 section_path: []
-nav_prev: {"path": "tailwind/docs/background-color/index.md", "title": "background-color"}
-nav_next: {"path": "tailwind/docs/background-origin/index.md", "title": "background-origin"}
+content_language: "en"
 ---
-
 Utilities for controlling an element's background image.
-
-Class
-
-Styles
-
-`bg-[<value>]`
-
-`background-image: <value>;`
-
-`bg-(image:<custom-property>)`
-
-`background-image: var(<custom-property>);`
-
-`bg-none`
-
-`background-image: none;`
-
-`bg-linear-to-t`
-
-`background-image: linear-gradient(to top, var(--tw-gradient-stops));`
-
-`bg-linear-to-tr`
-
-`background-image: linear-gradient(to top right, var(--tw-gradient-stops));`
-
-`bg-linear-to-r`
-
-`background-image: linear-gradient(to right, var(--tw-gradient-stops));`
-
-`bg-linear-to-br`
-
-`background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));`
-
-`bg-linear-to-b`
-
-`background-image: linear-gradient(to bottom, var(--tw-gradient-stops));`
-
-`bg-linear-to-bl`
-
-`background-image: linear-gradient(to bottom left, var(--tw-gradient-stops));`
-
-`bg-linear-to-l`
-
-`background-image: linear-gradient(to left, var(--tw-gradient-stops));`
 
 ## [Examples](#examples)
 
@@ -173,7 +127,7 @@ Prefix a `background-image` utility with a breakpoint variant like `md:` to only
 <div class="from-purple-400 md:from-yellow-500 ...">  <!-- ... --></div>
 ```
 
-Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).
+Learn more about using variants in the [variants documentation](https://tailwindcss.com/docs/hover-focus-and-other-states).
 
 ## [Customizing your theme](#customizing-your-theme)
 
@@ -189,4 +143,4 @@ Now utilities like `from-regal-blue`,`via-regal-blue`, and `to-regal-blue` can b
 <div class="from-regal-blue">  <!-- ... --></div>
 ```
 
-Learn more about customizing your theme in the [theme documentation](tailwind/docs/theme/index.md#customizing-your-theme).
+Learn more about customizing your theme in the [theme documentation](https://tailwindcss.com/docs/theme#customizing-your-theme).

@@ -5,23 +5,22 @@ canonical_url: "https://nextjs.org/docs/app/api-reference/config/next-config-js/
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:08:29.876Z"
-content_hash: "cfacd34bf03af65e1a4648350723fe38157ad76e418985f2a298150ff63a8b28"
+last_crawled_at: "2026-04-27T18:07:15.647Z"
+content_hash: "9c9dc21d14c4c3eeab66038a547ea1b08fadaa181fde7ff9ed84a0883e28bd88"
 menu_path: ["sassOptions"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/api-reference/config/next-config-js/rewrites/index.md", "title": "rewrites"}
-nav_next: {"path": "nextjs/docs/app/api-reference/config/next-config-js/serverActions/index.md", "title": "serverActions"}
+version: "latest"
+content_language: "en"
 ---
+[Configuration](/docs/app/api-reference/config)[next.config.js](/docs/app/api-reference/config/next-config-js)sassOptions
 
 # sassOptions
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 `sassOptions` allow you to configure the Sass compiler.
 
 next.config.ts
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -46,23 +45,7 @@ export default nextConfig
 
 > **Good to know:**
 > 
-> *   `sassOptions` are not typed outside of `implementation` because Next.js does not maintain the other possible properties.
-> *   The `functions` property for defining custom Sass functions is only supported with webpack. When using Turbopack, custom Sass functions are not available because Turbopack's Rust-based architecture cannot directly execute JavaScript functions passed through this option.
-
-[Previous
-
-rewrites
-
-](/docs/app/api-reference/config/next-config-js/rewrites)
-
-[Next
-
-serverActions
-
-](/docs/app/api-reference/config/next-config-js/serverActions)
+> -   `sassOptions` are not typed outside of `implementation` because Next.js does not maintain the other possible properties.
+> -   The `functions` property for defining custom Sass functions is only supported with webpack. When using Turbopack, custom Sass functions are not available because Turbopack's Rust-based architecture cannot directly execute JavaScript functions passed through this option.
 
 Was this helpful?
-
-supported.
-
-Send

@@ -5,14 +5,12 @@ canonical_url: "https://www.postgresql.org/docs/current/datetime-units-history.h
 docset: "postgres"
 kind: "database"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:49:38.480Z"
-content_hash: "5f5f8d1f458dd5fd89e3ac70d3d2baa4237456392f1fcffc773314e7d18a3817"
+last_crawled_at: "2026-04-27T20:49:21.851Z"
+content_hash: "09d3371b5407e02e1bbe0afb1ad1ff8ed7265ec36a372a538fdfcc3cf23da812"
 menu_path: ["PostgreSQL: Documentation: 18: B.6. History of Units"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/datetime-posix-timezone-specs.html/index.md", "title": "PostgreSQL: Documentation: 18: B.5.\u00a0POSIX Time Zone Specifications"}
-nav_next: {"path": "postgres/docs/current/dblink.html/index.md", "title": "PostgreSQL: Documentation: 18: F.11.\u00a0dblink \u2014 connect to other PostgreSQL databases"}
+content_language: "en"
 ---
-
 The SQL standard states that “Within the definition of a ‘datetime literal’, the ‘datetime values’ are constrained by the natural rules for dates and times according to the Gregorian calendar”. PostgreSQL follows the SQL standard's lead by counting dates exclusively in the Gregorian calendar, even for years before that calendar was in use. This rule is known as the _proleptic Gregorian calendar_.
 
 The Julian calendar was introduced by Julius Caesar in 45 BC. It was in common use in the Western world until the year 1582, when countries started changing to the Gregorian calendar. In the Julian calendar, the tropical year is approximated as 365 1/4 days = 365.25 days. This gives an error of about 1 day in 128 years.
@@ -21,11 +19,7 @@ The accumulating calendar error prompted Pope Gregory XIII to reform the calenda
 
 The approximation 365+97/400 is achieved by having 97 leap years every 400 years, using the following rules:
 
-Every year divisible by 4 is a leap year.
-
-However, every year divisible by 100 is not a leap year.
-
-However, every year divisible by 400 is a leap year after all.
+<table summary="Simple list"><tbody><tr><td>Every year divisible by 4 is a leap year.</td></tr><tr><td>However, every year divisible by 100 is not a leap year.</td></tr><tr><td>However, every year divisible by 400 is a leap year after all.</td></tr></tbody></table>
 
 So, 1700, 1800, 1900, 2100, and 2200 are not leap years. But 1600, 2000, and 2400 are leap years. By contrast, in the older Julian calendar all years divisible by 4 are leap years.
 

@@ -5,45 +5,51 @@ canonical_url: "https://tailwindcss.com/docs/grid-template-columns"
 docset: "tailwind"
 kind: "framework"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:47:06.294Z"
-content_hash: "5f852c0c078bf9bd7420438dbf0bd7415b76247438682413c34ce2db628422a8"
+last_crawled_at: "2026-04-27T19:57:54.296Z"
+content_hash: "169b678d07279d6dcbdeb2958996c9876e4bc310fe52b306f628a7d1d0f3f94f"
 menu_path: ["grid-template-columns"]
 section_path: []
-nav_prev: {"path": "tailwind/docs/order/index.md", "title": "order"}
-nav_next: {"path": "tailwind/docs/grid-column/index.md", "title": "grid-column"}
+content_language: "en"
 ---
+[](/)
+
+[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
+
+1.  Flexbox & Grid
+2.  grid-template-columns
+
+Flexbox & Grid
 
 # grid-template-columns
 
 Utilities for specifying the columns in a grid layout.
 
-Class
-
-Styles
-
-`grid-cols-<number>`
-
+| Class | Styles |
+| --- | --- |
+| `grid-cols-<number>` | 
 `grid-template-columns: repeat(<number>, minmax(0, 1fr));`
 
-`grid-cols-none`
+ |
+| `grid-cols-none` | 
 
 `grid-template-columns: none;`
 
-`grid-cols-subgrid`
+ |
+| `grid-cols-subgrid` | 
 
 `grid-template-columns: subgrid;`
 
-`grid-cols-[<value>]`
+ |
+| `grid-cols-[<value>]` | 
 
 `grid-template-columns: <value>;`
 
-`grid-cols-(<custom-property>)`
+ |
+| `grid-cols-(<custom-property>)` | 
 
 `grid-template-columns: var(<custom-property>);`
 
-## [Examples](#examples)
-
-### [Specifying the grid columns](#specifying-the-grid-columns)
+ |
 
 Use `grid-cols-<number>` utilities like `grid-cols-2` and `grid-cols-4` to create grids with _n_ equally sized columns:
 
@@ -69,8 +75,6 @@ Use `grid-cols-<number>` utilities like `grid-cols-2` and `grid-cols-4` to creat
 <div class="grid grid-cols-4 gap-4">  <div>01</div>  <!-- ... -->  <div>09</div></div>
 ```
 
-### [Implementing a subgrid](#implementing-a-subgrid)
-
 Use the `grid-cols-subgrid` utility to adopt the column tracks defined by the item's parent:
 
 01
@@ -89,8 +93,6 @@ Use the `grid-cols-subgrid` utility to adopt the column tracks defined by the it
 <div class="grid grid-cols-4 gap-4">  <div>01</div>  <!-- ... -->  <div>05</div>  <div class="col-span-3 grid grid-cols-subgrid gap-4">    <div class="col-start-2">06</div>  </div></div>
 ```
 
-### [Using a custom value](#using-a-custom-value)
-
 Use the `grid-cols-[<value>]` syntax to set the columns based on a completely custom value:
 
 ```
@@ -105,8 +107,6 @@ For CSS variables, you can also use the `grid-cols-(<custom-property>)` syntax:
 
 This is just a shorthand for `grid-cols-[var(<custom-property>)]` that adds the `var()` function for you automatically.
 
-### [Responsive design](#responsive-design)
-
 Prefix a `grid-template-columns` utility with a breakpoint variant like `md:` to only apply the utility at medium screen sizes and above:
 
 ```
@@ -117,21 +117,25 @@ Learn more about using variants in the [variants documentation](/docs/hover-focu
 
 ### On this page
 
-*   [Quick reference](#quick-reference)
-*   [Examples](#examples)
-    *   [Specifying the grid columns](#specifying-the-grid-columns)
-    *   [Implementing a subgrid](#implementing-a-subgrid)
-    *   [Using a custom value](#using-a-custom-value)
-    *   [Responsive design](#responsive-design)
+-   [Quick reference](#quick-reference)
+-   [Examples](#examples)
+    -   [Specifying the grid columns](#specifying-the-grid-columns)
+    -   [Implementing a subgrid](#implementing-a-subgrid)
+    -   [Using a custom value](#using-a-custom-value)
+    -   [Responsive design](#responsive-design)
 
-![Build UIs that don’t suck — 5-day mini-course](/_next/static/media/course-promo.d3d6bc78.jpg)
+[
 
-5-day mini-course
+![Refactoring UI](/_next/static/media/book-promo.3012c0f6.png)
 
-Build UIs that don’t suck.
+From the creators of Tailwind CSS
 
-Short, tactical video lessons from the creator of Tailwind CSS, delivered directly to your inbox every day for a week.
+Make your ideas look awesome, without relying on a designer.
 
-[Get the free course](/build-uis-that-dont-suck)
+> “This is the survival kit I wish I had when I started building apps.”
+> 
+> Derrick Reimer, SavvyCal
+
+](https://www.refactoringui.com/?ref=sidebar)
 
 Copyright © 2026 Tailwind Labs Inc.·[Trademark Policy](/brand)

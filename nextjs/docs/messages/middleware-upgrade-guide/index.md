@@ -5,13 +5,14 @@ canonical_url: "https://nextjs.org/docs/messages/middleware-upgrade-guide"
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:17:52.001Z"
-content_hash: "8b5d1e54a32a4dbc5ebd998e414f62e771e614b416b52f9100afc7342b235b85"
+last_crawled_at: "2026-04-27T18:17:19.869Z"
+content_hash: "36f5df228da16ea644c883bf01fbf4e2685eac0f3ad7e6e35a3a4a167dfa3d7c"
 menu_path: ["Middleware Upgrade Guide"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/messages/inline-script-id/index.md", "title": "Inline script id"}
-nav_next: {"path": "nextjs/docs/messages/missing-suspense-with-csr-bailout/index.md", "title": "Missing Suspense boundary with useSearchParams"}
+version: "latest"
+content_language: "en"
 ---
+[Docs](/docs)[Errors](/docs)Middleware Upgrade Guide
 
 # Middleware Upgrade Guide
 
@@ -19,8 +20,8 @@ As we work on improving Middleware for General Availability (GA), we've made som
 
 This upgrade guide will help you understand the changes, why they were made, and how to migrate your existing Middleware to the new API. The guide is for Next.js developers who:
 
-*   Currently use the beta Next.js Middleware features
-*   Choose to upgrade to the next stable version of Next.js (`v12.2`)
+-   Currently use the beta Next.js Middleware features
+-   Choose to upgrade to the next stable version of Next.js (`v12.2`)
 
 You can start upgrading your Middleware usage today with the latest release (`npm i next@latest`).
 
@@ -45,9 +46,9 @@ If you're using Next.js on Vercel, your existing deploys using Middleware will c
 
 ### Summary of changes[](#summary-of-changes)
 
-*   Define a single Middleware file next to your `pages` folder
-*   No need to prefix the file with an underscore
-*   A custom matcher can be used to define matching routes using an exported config object
+-   Define a single Middleware file next to your `pages` folder
+-   No need to prefix the file with an underscore
+-   A custom matcher can be used to define matching routes using an exported config object
 
 ### Explanation[](#explanation)
 
@@ -55,11 +56,11 @@ Previously, you could create a `_middleware.ts` file under the `pages` directory
 
 Based on customer feedback, we have replaced this API with a single root Middleware, which provides the following improvements:
 
-*   **Faster execution with lower latency**: With nested Middleware, a single request could invoke multiple Middleware functions. A single Middleware means a single function execution, which is more efficient.
-*   **Less expensive**: Middleware usage is billed per invocation. Using nested Middleware, a single request could invoke multiple Middleware functions, meaning multiple Middleware charges per request. A single Middleware means a single invocation per request and is more cost effective.
-*   **Middleware can conveniently filter on things besides routes**: With nested Middleware, the Middleware files were located in the `pages` directory and Middleware was executed based on request paths. By moving to a single root Middleware, you can still execute code based on request paths, but you can now more conveniently execute Middleware based on other conditions, like `cookies` or the presence of a request header.
-*   **Deterministic execution ordering**: With nested Middleware, a single request could match multiple Middleware functions. For example, a request to `/dashboard/users/*` would invoke Middleware defined in both `/dashboard/users/_middleware.ts` and `/dashboard/_middleware.js`. However, the execution order is difficult to reason about. Moving to a single, root Middleware more explicitly defines execution order.
-*   **Supports Next.js Layouts (RFC)**: Moving to a single, root Middleware helps support the new [Layouts (RFC) in Next.js](/blog/layouts-rfc).
+-   **Faster execution with lower latency**: With nested Middleware, a single request could invoke multiple Middleware functions. A single Middleware means a single function execution, which is more efficient.
+-   **Less expensive**: Middleware usage is billed per invocation. Using nested Middleware, a single request could invoke multiple Middleware functions, meaning multiple Middleware charges per request. A single Middleware means a single invocation per request and is more cost effective.
+-   **Middleware can conveniently filter on things besides routes**: With nested Middleware, the Middleware files were located in the `pages` directory and Middleware was executed based on request paths. By moving to a single root Middleware, you can still execute code based on request paths, but you can now more conveniently execute Middleware based on other conditions, like `cookies` or the presence of a request header.
+-   **Deterministic execution ordering**: With nested Middleware, a single request could match multiple Middleware functions. For example, a request to `/dashboard/users/*` would invoke Middleware defined in both `/dashboard/users/_middleware.ts` and `/dashboard/_middleware.js`. However, the execution order is difficult to reason about. Moving to a single, root Middleware more explicitly defines execution order.
+-   **Supports Next.js Layouts (RFC)**: Moving to a single, root Middleware helps support the new [Layouts (RFC) in Next.js](/blog/layouts-rfc).
 
 ### How to upgrade[](#how-to-upgrade)
 
@@ -123,9 +124,9 @@ export function middleware(request: NextRequest) {
 
 ### Summary of changes[](#summary-of-changes-1)
 
-*   Middleware can no longer produce a response body
-*   If your Middleware _does_ respond with a body, a runtime error will be thrown
-*   Migrate to using `rewrite`/`redirect` to pages/APIs handling a response
+-   Middleware can no longer produce a response body
+-   If your Middleware _does_ respond with a body, a runtime error will be thrown
+-   Migrate to using `rewrite`/`redirect` to pages/APIs handling a response
 
 ### Explanation[](#explanation-1)
 
@@ -214,21 +215,11 @@ export default async function handler(req: NextRequest) {
 
 ### Summary of changes[](#summary-of-changes-2)
 
-Added
-
-Removed
-
-`cookies.set`
-
-`cookie`
-
-`cookies.delete`
-
-`clearCookie`
-
-`cookies.getWithOptions`
-
-`cookies`
+| Added | Removed |
+| --- | --- |
+| `cookies.set` | `cookie` |
+| `cookies.delete` | `clearCookie` |
+| `cookies.getWithOptions` | `cookies` |
 
 ### Explanation[](#explanation-2)
 
@@ -238,9 +229,9 @@ Based on beta feedback, we are changing the Cookies API in `NextRequest` and `Ne
 
 `NextResponse` now has a `cookies` instance with:
 
-*   `cookies.delete`
-*   `cookies.set`
-*   `cookies.getWithOptions`
+-   `cookies.delete`
+-   `cookies.set`
+-   `cookies.getWithOptions`
 
 As well as other extended methods from `Map`.
 
@@ -305,8 +296,8 @@ export function middleware() {
 
 ### Summary of changes[](#summary-of-changes-3)
 
-*   Accessing the user agent is no longer available on the request object
-*   We've added a new `userAgent` helper to reduce Middleware size by `17kb`
+-   Accessing the user agent is no longer available on the request object
+-   We've added a new `userAgent` helper to reduce Middleware size by `17kb`
 
 ### Explanation[](#explanation-3)
 
@@ -316,8 +307,8 @@ The helper is imported from `next/server` and allows you to opt in to using the 
 
 ### How to upgrade[](#how-to-upgrade-3)
 
-*   Import the `userAgent` helper from `next/server`
-*   Destructure the properties you need to work with
+-   Import the `userAgent` helper from `next/server`
+-   Destructure the properties you need to work with
 
 #### Before[](#before-2)
 
@@ -354,7 +345,7 @@ export function middleware(request: NextRequest) {
 
 ### Summary of changes[](#summary-of-changes-4)
 
-*   Use [`URLPattern`](https://developer.mozilla.org/docs/Web/API/URLPattern) to check if a Middleware is being invoked for a certain page match
+-   Use [`URLPattern`](https://developer.mozilla.org/docs/Web/API/URLPattern) to check if a Middleware is being invoked for a certain page match
 
 ### Explanation[](#explanation-4)
 
@@ -430,7 +421,7 @@ export function middleware(request: NextRequest) {
 
 ### Summary of changes[](#summary-of-changes-5)
 
-*   Middleware will be executed for _all_ requests, including `_next`
+-   Middleware will be executed for _all_ requests, including `_next`
 
 ### Explanation[](#explanation-5)
 
@@ -441,7 +432,3 @@ For cases where Middleware is used for authorization, you should migrate to use 
 See [No Response Body](#no-response-body) for an example of how to migrate to use `rewrite`/`redirect`.
 
 Was this helpful?
-
-supported.
-
-Send

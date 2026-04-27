@@ -5,59 +5,13 @@ canonical_url: "https://tailwindcss.com/docs/border-color"
 docset: "tailwind"
 kind: "framework"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:02:49.355Z"
-content_hash: "1ba9bf103dc8b306f10accbfb1e49ee4a361399df6e989753f4dbaa73de849eb"
+last_crawled_at: "2026-04-27T20:18:44.076Z"
+content_hash: "a7c7f82668f613502bb6b17d0198594dded3017f1f0db0e739eaa8c5c0f69357"
 menu_path: ["border-color"]
 section_path: []
-nav_prev: {"path": "tailwind/docs/border-width/index.md", "title": "border-width"}
-nav_next: {"path": "tailwind/docs/border-style/index.md", "title": "border-style"}
+content_language: "en"
 ---
-
 Utilities for controlling the color of an element's borders.
-
-Class
-
-Styles
-
-`border-inherit`
-
-`border-color: inherit;`
-
-`border-current`
-
-`border-color: currentColor;`
-
-`border-transparent`
-
-`border-color: transparent;`
-
-`border-black`
-
-`border-color: var(--color-black); /* #000 */`
-
-`border-white`
-
-`border-color: var(--color-white); /* #fff */`
-
-`border-red-50`
-
-`border-color: var(--color-red-50); /* oklch(97.1% 0.013 17.38) */`
-
-`border-red-100`
-
-`border-color: var(--color-red-100); /* oklch(93.6% 0.032 17.717) */`
-
-`border-red-200`
-
-`border-color: var(--color-red-200); /* oklch(88.5% 0.062 18.334) */`
-
-`border-red-300`
-
-`border-color: var(--color-red-300); /* oklch(80.8% 0.114 19.571) */`
-
-`border-red-400`
-
-`border-color: var(--color-red-400); /* oklch(70.4% 0.191 22.216) */`
 
 ## [Examples](#examples)
 
@@ -175,7 +129,7 @@ Email address
 <input class="border-2 border-gray-700 focus:border-pink-600 ..." />
 ```
 
-Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).
+Learn more about using variants in the [variants documentation](https://tailwindcss.com/docs/hover-focus-and-other-states).
 
 ### [Responsive design](#responsive-design)
 
@@ -185,7 +139,7 @@ Prefix a `border-color` utility with a breakpoint variant like `md:` to only app
 <div class="border-blue-500 md:border-green-500 ...">  <!-- ... --></div>
 ```
 
-Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).
+Learn more about using variants in the [variants documentation](https://tailwindcss.com/docs/hover-focus-and-other-states).
 
 ## [Customizing your theme](#customizing-your-theme)
 
@@ -201,4 +155,4 @@ Now the `border-regal-blue` utility can be used in your markup:
 <div class="border-regal-blue">  <!-- ... --></div>
 ```
 
-Learn more about customizing your theme in the [theme documentation](tailwind/docs/theme/index.md#customizing-your-theme).
+Learn more about customizing your theme in the [theme documentation](https://tailwindcss.com/docs/theme#customizing-your-theme).

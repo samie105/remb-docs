@@ -5,14 +5,12 @@ canonical_url: "https://www.postgresql.org/docs/current/bloom.html"
 docset: "postgres"
 kind: "database"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:42:51.372Z"
-content_hash: "3f52d6be53bf8691119476484364f80ceaa8901e91ab6d272a1c476e58d6d911"
+last_crawled_at: "2026-04-27T20:45:56.942Z"
+content_hash: "02769bec2b59cf60162b822de88bac31413e720417ed97b4fda03e3c862694eb"
 menu_path: ["PostgreSQL: Documentation: 18: F.6. bloom — bloom filter index access method"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/bki-structure.html/index.md", "title": "PostgreSQL: Documentation: 18: 68.5.\u00a0Structure of the Bootstrap BKI File"}
-nav_next: {"path": "postgres/docs/current/brin.html/index.md", "title": "PostgreSQL: Documentation: 18: 65.5.\u00a0BRIN Indexes"}
+content_language: "en"
 ---
-
 A Bloom filter is a space-efficient data structure that is used to test whether an element is a member of a set. In the case of an index access method, it allows fast exclusion of non-matching tuples via signatures whose size is determined at index creation.
 
 A signature is a lossy representation of the indexed attribute(s), and as such is prone to reporting false positives; that is, it may be reported that an element is in the set, when it is not. So index search results must always be rechecked using the actual attribute values from the heap entry. Larger signatures reduce the odds of a false positive and thus reduce the number of useless heap visits, but of course also make the index larger and hence slower to scan.
@@ -159,10 +157,10 @@ DEFAULT FOR TYPE text USING bloom AS
 
 ### F.6.4. Limitations [#](#BLOOM-LIMITATIONS)
 
-*   Only operator classes for `int4` and `text` are included with the module.
+-   Only operator classes for `int4` and `text` are included with the module.
     
-*   Only the `=` operator is supported for search. But it is possible to add support for arrays with union and intersection operations in the future.
+-   Only the `=` operator is supported for search. But it is possible to add support for arrays with union and intersection operations in the future.
     
-*   `bloom` access method doesn't support `UNIQUE` indexes.
+-   `bloom` access method doesn't support `UNIQUE` indexes.
     
-*   `bloom` access method doesn't support searching for `NULL` values.
+-   `bloom` access method doesn't support searching for `NULL` values.

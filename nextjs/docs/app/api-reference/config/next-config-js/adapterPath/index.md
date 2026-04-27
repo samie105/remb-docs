@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/app/api-reference/config/next-config-js/
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:06:48.244Z"
-content_hash: "8f6a70e20f3ff278ec23d1c5163dc21025da1111a76bda025d9c787ad0c497bf"
+last_crawled_at: "2026-04-27T18:05:40.594Z"
+content_hash: "c985dbd0a43b4c81b553c68f2a437047d48902c96d8a74d957ef2476727ef71e"
 menu_path: ["adapterPath"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/api-reference/config/next-config-js/index.md", "title": "next.config.js"}
-nav_next: {"path": "nextjs/docs/app/api-reference/config/next-config-js/allowedDevOrigins/index.md", "title": "allowedDevOrigins"}
+version: "latest"
+content_language: "en"
 ---
+[Configuration](/docs/app/api-reference/config)[next.config.js](/docs/app/api-reference/config/next-config-js)adapterPath
 
 # adapterPath
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 Next.js provides a built-in adapters API. It allows deployment platforms or build systems to integrate with the Next.js build process.
 
@@ -42,17 +43,17 @@ Alternatively `NEXT_ADAPTER_PATH` can be set to enable zero-config usage in depl
 
 For full adapter implementation details, use the dedicated Adapters section:
 
-*   [Configuration](/docs/app/api-reference/adapters/configuration)
-*   [Creating an Adapter](/docs/app/api-reference/adapters/creating-an-adapter)
-*   [API Reference](/docs/app/api-reference/adapters/api-reference)
-*   [Testing Adapters](/docs/app/api-reference/adapters/testing-adapters)
-*   [Routing with `@next/routing`](/docs/app/api-reference/adapters/routing-with-next-routing)
-*   [Implementing PPR in an Adapter](/docs/app/api-reference/adapters/implementing-ppr-in-an-adapter)
-*   [Runtime Integration](/docs/app/api-reference/adapters/runtime-integration)
-*   [Invoking Entrypoints](/docs/app/api-reference/adapters/invoking-entrypoints)
-*   [Output Types](/docs/app/api-reference/adapters/output-types)
-*   [Routing Information](/docs/app/api-reference/adapters/routing-information)
-*   [Use Cases](/docs/app/api-reference/adapters/use-cases)
+-   [Configuration](/docs/app/api-reference/adapters/configuration)
+-   [Creating an Adapter](/docs/app/api-reference/adapters/creating-an-adapter)
+-   [API Reference](/docs/app/api-reference/adapters/api-reference)
+-   [Testing Adapters](/docs/app/api-reference/adapters/testing-adapters)
+-   [Routing with `@next/routing`](/docs/app/api-reference/adapters/routing-with-next-routing)
+-   [Implementing PPR in an Adapter](/docs/app/api-reference/adapters/implementing-ppr-in-an-adapter)
+-   [Runtime Integration](/docs/app/api-reference/adapters/runtime-integration)
+-   [Invoking Entrypoints](/docs/app/api-reference/adapters/invoking-entrypoints)
+-   [Output Types](/docs/app/api-reference/adapters/output-types)
+-   [Routing Information](/docs/app/api-reference/adapters/routing-information)
+-   [Use Cases](/docs/app/api-reference/adapters/use-cases)
 
 ## Creating an Adapter[](#creating-an-adapter)
 
@@ -94,20 +95,4 @@ See [Routing Information](/docs/app/api-reference/adapters/routing-information).
 
 See [Use Cases](/docs/app/api-reference/adapters/use-cases).
 
-[Previous
-
-next.config.js
-
-](/docs/app/api-reference/config/next-config-js)
-
-[Next
-
-allowedDevOrigins
-
-](/docs/app/api-reference/config/next-config-js/allowedDevOrigins)
-
 Was this helpful?
-
-supported.
-
-Send

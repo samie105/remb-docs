@@ -5,14 +5,12 @@ canonical_url: "https://www.postgresql.org/docs/current/view-pg-locks.html"
 docset: "postgres"
 kind: "database"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:49:27.584Z"
-content_hash: "8911614b9bfde2c510edad0434be0707a8af1987406b7361209d847e7f18dfcc"
+last_crawled_at: "2026-04-27T20:49:16.421Z"
+content_hash: "a4ee2d4dad72af4b3c7745efc950e24c9e5007a4dc3f9bdcff16e5e2c4d6ac1f"
 menu_path: ["PostgreSQL: Documentation: 18: 53.13. pg_locks"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/view-pg-indexes.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.12.\u00a0pg_indexes"}
-nav_next: {"path": "postgres/docs/current/view-pg-matviews.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.14.\u00a0pg_matviews"}
+content_language: "en"
 ---
-
 The view `pg_locks` provides access to information about the locks held by active processes within the database server. See [Chapter 13](https://www.postgresql.org/docs/current/mvcc.html "Chapter 13. Concurrency Control") for more discussion of locking.
 
 `pg_locks` contains one row per active lockable object, requested lock mode, and relevant process. Thus, the same lockable object might appear many times, if multiple processes are holding or waiting for locks on it. However, an object that currently has no locks on it will not appear at all.
@@ -21,73 +19,125 @@ There are several distinct types of lockable objects: whole relations (e.g., tab
 
 **Table 53.13. `pg_locks` Columns**
 
+| 
 Column Type
 
 Description
+
+ |
+| --- |
+| 
 
 `locktype` `text`
 
 Type of the lockable object: `relation`, `extend`, `frozenid`, `page`, `tuple`, `transactionid`, `virtualxid`, `spectoken`, `object`, `userlock`, `advisory`, or `applytransaction`. (See also [Table 27.11](https://www.postgresql.org/docs/current/monitoring-stats.html#WAIT-EVENT-LOCK-TABLE "Table 27.11. Wait Events of Type Lock").)
 
+ |
+| 
+
 `database` `oid` (references [`pg_database`](https://www.postgresql.org/docs/current/catalog-pg-database.html "52.15. pg_database").`oid`)
 
 OID of the database in which the lock target exists, or zero if the target is a shared object, or null if the target is a transaction ID
+
+ |
+| 
 
 `relation` `oid` (references [`pg_class`](https://www.postgresql.org/docs/current/catalog-pg-class.html "52.11. pg_class").`oid`)
 
 OID of the relation targeted by the lock, or null if the target is not a relation or part of a relation
 
+ |
+| 
+
 `page` `int4`
 
 Page number targeted by the lock within the relation, or null if the target is not a relation page or tuple
+
+ |
+| 
 
 `tuple` `int2`
 
 Tuple number targeted by the lock within the page, or null if the target is not a tuple
 
+ |
+| 
+
 `virtualxid` `text`
 
 Virtual ID of the transaction targeted by the lock, or null if the target is not a virtual transaction ID; see [Chapter 67](https://www.postgresql.org/docs/current/transactions.html "Chapter 67. Transaction Processing")
+
+ |
+| 
 
 `transactionid` `xid`
 
 ID of the transaction targeted by the lock, or null if the target is not a transaction ID; [Chapter 67](https://www.postgresql.org/docs/current/transactions.html "Chapter 67. Transaction Processing")
 
+ |
+| 
+
 `classid` `oid` (references [`pg_class`](https://www.postgresql.org/docs/current/catalog-pg-class.html "52.11. pg_class").`oid`)
 
 OID of the system catalog containing the lock target, or null if the target is not a general database object
+
+ |
+| 
 
 `objid` `oid` (references any OID column)
 
 OID of the lock target within its system catalog, or null if the target is not a general database object
 
+ |
+| 
+
 `objsubid` `int2`
 
 Column number targeted by the lock (the `classid` and `objid` refer to the table itself), or zero if the target is some other general database object, or null if the target is not a general database object
+
+ |
+| 
 
 `virtualtransaction` `text`
 
 Virtual ID of the transaction that is holding or awaiting this lock
 
+ |
+| 
+
 `pid` `int4`
 
 Process ID of the server process holding or awaiting this lock, or null if the lock is held by a prepared transaction
+
+ |
+| 
 
 `mode` `text`
 
 Name of the lock mode held or desired by this process (see [Section 13.3.1](https://www.postgresql.org/docs/current/explicit-locking.html#LOCKING-TABLES "13.3.1. Table-Level Locks") and [Section 13.2.3](https://www.postgresql.org/docs/current/transaction-iso.html#XACT-SERIALIZABLE "13.2.3. Serializable Isolation Level"))
 
+ |
+| 
+
 `granted` `bool`
 
 True if lock is held, false if lock is awaited
+
+ |
+| 
 
 `fastpath` `bool`
 
 True if lock was taken via fast path, false if taken via main lock table
 
+ |
+| 
+
 `waitstart` `timestamptz`
 
 Time when the server process started waiting for this lock, or null if the lock is held. Note that this can be null for a very short period of time after the wait started even though `granted` is `false`.
+
+ |
 
 `granted` is true in a row representing a lock held by the indicated process. False indicates that this process is currently waiting to acquire this lock, which implies that at least one other process is holding or waiting for a conflicting lock mode on the same lockable object. The waiting process will sleep until the other lock is released (or a deadlock situation is detected). A single process can be waiting to acquire at most one lock at a time.
 

@@ -5,51 +5,30 @@ canonical_url: "https://docs.deno.com/runtime/contributing/architecture/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:45:18.454Z"
-content_hash: "76aa704bc9f7c56e07475426c783cac3d679b641394d7c7767d30758cbd9f86a"
+last_crawled_at: "2026-04-27T17:18:09.033Z"
+content_hash: "e5a43e9aad6509d60c4626913a6ac3d0e15b6dbe9fd72dbad65bb5464d1c2f29"
 menu_path: ["Architecture Overview"]
 section_path: []
+content_language: "en"
 ---
-On this page
+**On this page**
 
-*   [Deno and Linux analogy](#deno-and-linux-analogy)
-    *   [Resources](#resources)
-    *   [Metrics](#metrics)
-*   [Conference](#conference)
+-   [Deno and Linux analogy](#deno-and-linux-analogy)
+    -   [Resources](#resources)
+    -   [Metrics](#metrics)
+-   [Conference](#conference)
 
 ## Deno and Linux analogy
 
-**Linux**
-
-**Deno**
-
-Processes
-
-Web Workers
-
-Syscalls
-
-Ops
-
-File descriptors (fd)
-
-[Resource ids (rid)](#resources)
-
-Scheduler
-
-Tokio
-
-Userland: libc++ / glib / boost
-
-[https://jsr.io/@std](https://jsr.io/@std)
-
-/proc/$$/stat
-
-[Deno.metrics()](#metrics)
-
-man pages
-
-deno types / [https://docs.deno.com](https://docs.deno.com)
+| **Linux** | **Deno** |
+| --- | --- |
+| Processes | Web Workers |
+| Syscalls | Ops |
+| File descriptors (fd) | [Resource ids (rid)](#resources) |
+| Scheduler | Tokio |
+| Userland: libc++ / glib / boost | [https://jsr.io/@std](https://jsr.io/@std) |
+| /proc/$$/stat | [Deno.metrics()](#metrics) |
+| man pages | deno types / [https://docs.deno.com](https://docs.deno.com) |
 
 ### Resources
 
@@ -88,5 +67,5 @@ Metrics is Deno's internal counter for various statistics.
 
 ## Conference
 
-*   Ryan Dahl. (May 27, 2020). [An interesting case with Deno](https://www.youtube.com/watch?v=1b7FoBwxc7E). Deno Israel.
-*   Bartek Iwańczuk. (Oct 6, 2020). [Deno internals - how modern JS/TS runtime is built](https://www.youtube.com/watch?v=AOvg_GbnsbA&t=35m13s). Paris Deno.
+-   Ryan Dahl. (May 27, 2020). [An interesting case with Deno](https://www.youtube.com/watch?v=1b7FoBwxc7E). Deno Israel.
+-   Bartek Iwańczuk. (Oct 6, 2020). [Deno internals - how modern JS/TS runtime is built](https://www.youtube.com/watch?v=AOvg_GbnsbA&t=35m13s). Paris Deno.

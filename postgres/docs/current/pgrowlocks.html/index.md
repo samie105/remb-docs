@@ -5,14 +5,12 @@ canonical_url: "https://www.postgresql.org/docs/current/pgrowlocks.html"
 docset: "postgres"
 kind: "database"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:44:15.131Z"
-content_hash: "9f77fbe72677639562b24f60a1d2b98fd7b5ba98a51bfb7030f5a8dc5ed36f32"
+last_crawled_at: "2026-04-27T20:46:26.203Z"
+content_hash: "04e037d02d6b7d2f8c9cbb8b7e4b4eaffe3ddcd70cd05258c55adb1482b8e4e7"
 menu_path: ["PostgreSQL: Documentation: 18: F.31. pgrowlocks — show a table's row locking information"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/pgprewarm.html/index.md", "title": "PostgreSQL: Documentation: 18: F.30.\u00a0pg_prewarm \u2014 preload relation data into buffer caches"}
-nav_next: {"path": "postgres/docs/current/pgstatstatements.html/index.md", "title": "PostgreSQL: Documentation: 18: F.32.\u00a0pg_stat_statements \u2014 track statistics of SQL planning and execution"}
+content_language: "en"
 ---
-
 The `pgrowlocks` module provides a function to show row locking information for a specified table.
 
 By default use is restricted to superusers, roles with privileges of the `pg_stat_scan_tables` role, and users with `SELECT` permissions on the table.
@@ -26,48 +24,14 @@ The parameter is the name of a table. The result is a set of records, with one r
 **Table F.21. `pgrowlocks` Output Columns**
 
   
-
-Name
-
-Type
-
-Description
-
-`locked_row`
-
-`tid`
-
-Tuple ID (TID) of locked row
-
-`locker`
-
-`xid`
-
-Transaction ID of locker, or multixact ID if multitransaction; see [Section 67.1](https://www.postgresql.org/docs/current/transaction-id.html "67.1. Transactions and Identifiers")
-
-`multi`
-
-`boolean`
-
-True if locker is a multitransaction
-
-`xids`
-
-`xid[]`
-
-Transaction IDs of lockers (more than one if multitransaction)
-
-`modes`
-
-`text[]`
-
-Lock mode of lockers (more than one if multitransaction), an array of `For Key Share`, `For Share`, `For No Key Update`, `No Key Update`, `For Update`, `Update`.
-
-`pids`
-
-`integer[]`
-
-Process IDs of locking backends (more than one if multitransaction)
+| Name | Type | Description |
+| --- | --- | --- |
+| `locked_row` | `tid` | Tuple ID (TID) of locked row |
+| `locker` | `xid` | Transaction ID of locker, or multixact ID if multitransaction; see [Section 67.1](https://www.postgresql.org/docs/current/transaction-id.html "67.1. Transactions and Identifiers") |
+| `multi` | `boolean` | True if locker is a multitransaction |
+| `xids` | `xid[]` | Transaction IDs of lockers (more than one if multitransaction) |
+| `modes` | `text[]` | Lock mode of lockers (more than one if multitransaction), an array of `For Key Share`, `For Share`, `For No Key Update`, `No Key Update`, `For Update`, `Update`. |
+| `pids` | `integer[]` | Process IDs of locking backends (more than one if multitransaction) |
 
 `pgrowlocks` takes `AccessShareLock` for the target table and reads each row one by one to collect the row locking information. This is not very speedy for a large table. Note that:
 

@@ -5,53 +5,61 @@ canonical_url: "https://tailwindcss.com/docs/transition-timing-function"
 docset: "tailwind"
 kind: "framework"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:12:32.556Z"
-content_hash: "3165e4cf08640cc06310e86a4231f5ae9dbe894555c88939008d19861036c192"
+last_crawled_at: "2026-04-27T20:32:40.577Z"
+content_hash: "932a94f71d6d6713355f3890820059e1c2b7e02124cec86bfb1063fc410480ac"
 menu_path: ["transition-timing-function"]
 section_path: []
-nav_prev: {"path": "tailwind/docs/transition-duration/index.md", "title": "transition-duration"}
-nav_next: {"path": "tailwind/docs/transition-delay/index.md", "title": "transition-delay"}
+content_language: "en"
 ---
+[](/)
+
+[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
+
+1.  Transitions & Animation
+2.  transition-timing-function
+
+Transitions & Animation
 
 # transition-timing-function
 
 Utilities for controlling the easing of CSS transitions.
 
-Class
-
-Styles
-
-`ease-linear`
-
+| Class | Styles |
+| --- | --- |
+| `ease-linear` | 
 `transition-timing-function: linear;`
 
-`ease-in`
+ |
+| `ease-in` | 
 
 `transition-timing-function: var(--ease-in); /* cubic-bezier(0.4, 0, 1, 1) */`
 
-`ease-out`
+ |
+| `ease-out` | 
 
 `transition-timing-function: var(--ease-out); /* cubic-bezier(0, 0, 0.2, 1) */`
 
-`ease-in-out`
+ |
+| `ease-in-out` | 
 
 `transition-timing-function: var(--ease-in-out); /* cubic-bezier(0.4, 0, 0.2, 1) */`
 
-`ease-initial`
+ |
+| `ease-initial` | 
 
 `transition-timing-function: initial;`
 
-`ease-(<custom-property>)`
+ |
+| `ease-(<custom-property>)` | 
 
 `transition-timing-function: var(<custom-property>);`
 
-`ease-[<value>]`
+ |
+| `ease-[<value>]` | 
 
 `transition-timing-function: <value>;`
 
-## [Examples](#examples)
-
-### [Basic example](#basic-example)
+ |
 
 Use utilities like `ease-in` and `ease-out` to control the easing curve of an element's transition:
 
@@ -67,8 +75,6 @@ ease-in-out
 <button class="duration-300 ease-in ...">Button A</button><button class="duration-300 ease-out ...">Button B</button><button class="duration-300 ease-in-out ...">Button C</button>
 ```
 
-### [Using a custom value](#using-a-custom-value)
-
 Use the `ease-[<value>]` syntax to set the transition timing function based on a completely custom value:
 
 ```
@@ -83,8 +89,6 @@ For CSS variables, you can also use the `ease-(<custom-property>)` syntax:
 
 This is just a shorthand for `ease-[var(<custom-property>)]` that adds the `var()` function for you automatically.
 
-### [Responsive design](#responsive-design)
-
 Prefix a `transition-timing-function` utility with a breakpoint variant like `md:` to only apply the utility at medium screen sizes and above:
 
 ```
@@ -92,8 +96,6 @@ Prefix a `transition-timing-function` utility with a breakpoint variant like `md
 ```
 
 Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
-
-## [Customizing your theme](#customizing-your-theme)
 
 Use the `--ease-*` theme variables to customize the transition timing function utilities in your project:
 
@@ -111,25 +113,21 @@ Learn more about customizing your theme in the [theme documentation](/docs/theme
 
 ### On this page
 
-*   [Quick reference](#quick-reference)
-*   [Examples](#examples)
-    *   [Basic example](#basic-example)
-    *   [Using a custom value](#using-a-custom-value)
-    *   [Responsive design](#responsive-design)
-*   [Customizing your theme](#customizing-your-theme)
+-   [Quick reference](#quick-reference)
+-   [Examples](#examples)
+    -   [Basic example](#basic-example)
+    -   [Using a custom value](#using-a-custom-value)
+    -   [Responsive design](#responsive-design)
+-   [Customizing your theme](#customizing-your-theme)
 
-[
+![Build UIs that don’t suck — 5-day mini-course](/_next/static/media/course-promo.d3d6bc78.jpg)
 
-![Refactoring UI](/_next/static/media/book-promo.3012c0f6.png)
+5-day mini-course
 
-From the creators of Tailwind CSS
+Build UIs that don’t suck.
 
-Make your ideas look awesome, without relying on a designer.
+Short, tactical video lessons from the creator of Tailwind CSS, delivered directly to your inbox every day for a week.
 
-> “This is the survival kit I wish I had when I started building apps.”
-> 
-> Derrick Reimer, SavvyCal
-
-](https://www.refactoringui.com/?ref=sidebar)
+[Get the free course](/build-uis-that-dont-suck)
 
 Copyright © 2026 Tailwind Labs Inc.·[Trademark Policy](/brand)

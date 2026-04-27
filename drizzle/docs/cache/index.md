@@ -5,14 +5,12 @@ canonical_url: "https://orm.drizzle.team/docs/cache"
 docset: "drizzle"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:33:40.226Z"
-content_hash: "661daf676ac0ecf7d725640317c8ed68ac8f66769078742ad401422af4025b23"
+last_crawled_at: "2026-04-27T18:24:31.493Z"
+content_hash: "b2c6bccaafa217da70bd904e3cc81e66020f93e71e20ae2150fc621c6efbe6aa"
 menu_path: ["Cache"]
 section_path: []
-nav_prev: {"path": "drizzle/docs/batch-api/index.md", "title": "Batch API"}
-nav_next: {"path": "drizzle/docs/dynamic-query-building/index.md", "title": "Dynamic query building"}
+content_language: "en"
 ---
-
 Drizzle sends every query straight to your database by default. There are no hidden actions, no automatic caching or invalidation - you’ll always see exactly what runs. If you want caching, you must opt in.
 
 By default, Drizzle uses a `explicit` caching strategy (i.e. `global: false`), so nothing is ever cached unless you ask. This prevents surprises or hidden performance traps in your application. Alternatively, you can flip on `all` caching (`global: true`) so that every select will look in cache first.
@@ -23,7 +21,7 @@ By default, Drizzle uses a `explicit` caching strategy (i.e. `global: false`), s
 
 Drizzle provides an `upstashCache()` helper out of the box. By default, this uses Upstash Redis with automatic configuration if environment variables are set.
 
-```
+```ts
 import { upstashCache } from "drizzle-orm/cache/upstash";
 import { drizzle } from "drizzle-orm/...";
 
@@ -34,7 +32,7 @@ const db = drizzle(process.env.DB_URL!, {
 
 You can also explicitly define your Upstash credentials, enable global caching for all queries by default or pass custom caching options:
 
-```
+```ts
 import { upstashCache } from "drizzle-orm/cache/upstash";
 import { drizzle } from "drizzle-orm/...";
 
@@ -57,7 +55,7 @@ const db = drizzle(process.env.DB_URL!, {
 
 Drizzle supports the following cache config options for Upstash:
 
-```
+```ts
 export type CacheConfig = {
   /**
    * Expiration in seconds (positive integer)
@@ -77,7 +75,7 @@ Once you’ve configured caching, here’s how the cache behaves:
 
 **Case 1: Drizzle with `global: false` (default, opt-in caching)**
 
-```
+```ts
 import { upstashCache } from "drizzle-orm/cache/upstash";
 import { drizzle } from "drizzle-orm/...";
 
@@ -89,7 +87,7 @@ const db = drizzle(process.env.DB_URL!, {
 
 In this case, the following query won’t read from cache
 
-```
+```ts
 const res = await db.select().from(users);
 
 // Any mutate operation will still trigger the cache's onMutate handler
@@ -99,13 +97,13 @@ await db.insert(users).value({ email: "cacheman@upstash.com" });
 
 To make this query read from the cache, call `.$withCache()`
 
-```
+```ts
 const res = await db.select().from(users).$withCache();
 ```
 
 `.$withCache` has a set of options you can use to manage and configure this specific query strategy
 
-```
+```ts
 // rewrite the config for this specific query
 .$withCache({ config: {} })
 
@@ -123,14 +121,14 @@ This example is only relevant if you manually set `autoInvalidate: false`. By de
 
 You might want to turn off `autoInvalidate` if:
 
-*   your data doesn’t change often, and slight staleness is acceptable (e.g. product listings, blog posts)
-*   you handle cache invalidation manually
+-   your data doesn’t change often, and slight staleness is acceptable (e.g. product listings, blog posts)
+-   you handle cache invalidation manually
 
 In those cases, turning it off can reduce unnecessary cache invalidation. However, in most cases, we recommend keeping the default enabled.
 
 Example: Imagine you cache the following query on `usersTable` with a 3-second TTL:
 
-```
+```ts
 const recent = await db
   .select().from(usersTable)
   .$withCache({ config: { ex: 3 }, autoInvalidate: false });
@@ -140,7 +138,7 @@ If someone runs `db.insert(usersTable)...` the cache won’t be invalidated imme
 
 **Case 2: Drizzle with `global: true` option**
 
-```
+```ts
 import { upstashCache } from "drizzle-orm/cache/upstash";
 import { drizzle } from "drizzle-orm/...";
 
@@ -151,20 +149,20 @@ const db = drizzle(process.env.DB_URL!, {
 
 In this case, the following query will read from cache
 
-```
+```ts
 const res = await db.select().from(users);
 ```
 
 If you want to disable cache for this specific query, call `.$withCache(false)`
 
-```
+```ts
 // disable cache for this query
 const res = await db.select().from(users).$withCache(false);
 ```
 
 You can also use cache instance from a `db` to invalidate specific tables or tags
 
-```
+```ts
 // Invalidate all queries that use the `users` table. You can do this with the Drizzle instance.
 await db.$cache.invalidate({ tables: users });
 // or
@@ -187,7 +185,7 @@ This example shows how to plug in a custom `cache` in Drizzle: you provide funct
 
 Cache extension provides this set of config options
 
-```
+```ts
 export type CacheConfig = {
   /** expire time, in seconds */
   ex?: number;
@@ -204,11 +202,11 @@ export type CacheConfig = {
 };
 ```
 
-```
+```ts
 const db = drizzle(process.env.DB_URL!, { cache: new TestGlobalCache() });
 ```
 
-```
+```ts
 import Keyv from "keyv";
 
 export class TestGlobalCache extends Cache {
@@ -319,24 +317,24 @@ export class TestGlobalCache extends Cache {
 
 #### Queries that won’t be handled by the `cache` extension:[](#queries-that-wont-be-handled-by-the-cache-extension)
 
-*   Using cache with raw queries, such as:
+-   Using cache with raw queries, such as:
 
-```
+```ts
 db.execute(sql`select 1`);
 ```
 
-*   Using cache with `batch` feature in `d1` and `libsql`
+-   Using cache with `batch` feature in `d1` and `libsql`
 
-```
+```ts
 db.batch([
     db.insert(users).values(...),
     db.update(users).set(...).where()
 ])
 ```
 
-*   Using cache in transactions
+-   Using cache in transactions
 
-```
+```ts
 await db.transaction(async (tx) => {
   await tx.update(accounts).set(...).where(...);
   await tx.update...
@@ -345,12 +343,12 @@ await db.transaction(async (tx) => {
 
 #### Limitations that are temporary and will be handled soon:[](#limitations-that-are-temporary-and-will-be-handled-soon)
 
-*   Using cache with Drizzle Relational Queries
+-   Using cache with Drizzle Relational Queries
 
-```
+```ts
 await db.query.users.findMany();
 ```
 
-*   Using cache with `better-sqlite3`, `Durable Objects`, `expo sqlite`
-*   Using cache with AWS Data API drivers
-*   Using cache with views
+-   Using cache with `better-sqlite3`, `Durable Objects`, `expo sqlite`
+-   Using cache with AWS Data API drivers
+-   Using cache with views

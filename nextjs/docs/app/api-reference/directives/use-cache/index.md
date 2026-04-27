@@ -5,33 +5,32 @@ canonical_url: "https://nextjs.org/docs/app/api-reference/directives/use-cache"
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:09:25.231Z"
-content_hash: "763d814613606b5bf325e430982a4d997e1b9191ebd487ccbfb57908f53cdbf8"
+last_crawled_at: "2026-04-27T18:08:10.838Z"
+content_hash: "82091647fdfbf06f6cf60a5d4b6f201ca69e7981cbf8794be1b05ad7b7401e6c"
 menu_path: ["use cache"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/api-reference/directives/index.md", "title": "Directives"}
-nav_next: {"path": "nextjs/docs/app/api-reference/directives/use-cache-private/index.md", "title": "use cache: private"}
+version: "latest"
+content_language: "en"
 ---
+[API Reference](/docs/app/api-reference)[Directives](/docs/app/api-reference/directives)use cache
 
 # use cache
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 The `use cache` directive allows you to mark a route, React component, or a function as cacheable. It can be used at the top of a file to indicate that all exports in the file should be cached, or inline at the top of function or component to cache the return value.
 
 > **Good to know:**
 > 
-> *   To use cookies or headers, read them outside cached scopes and pass values as arguments. This is the preferred pattern.
-> *   If the in-memory cache isn't sufficient for runtime data, [`'use cache: remote'`](/docs/app/api-reference/directives/use-cache-remote) allows platforms to provide a dedicated cache handler, though it requires a network roundtrip to check the cache and typically incurs platform fees.
-> *   For compliance requirements or when you can't refactor to pass runtime data as arguments to a `use cache` scope, see [`'use cache: private'`](/docs/app/api-reference/directives/use-cache-private).
+> -   To use cookies or headers, read them outside cached scopes and pass values as arguments. This is the preferred pattern.
+> -   If the in-memory cache isn't sufficient for runtime data, [`'use cache: remote'`](/docs/app/api-reference/directives/use-cache-remote) allows platforms to provide a dedicated cache handler, though it requires a network roundtrip to check the cache and typically incurs platform fees.
+> -   For compliance requirements or when you can't refactor to pass runtime data as arguments to a `use cache` scope, see [`'use cache: private'`](/docs/app/api-reference/directives/use-cache-private).
 
 ## Usage[](#usage)
 
 `use cache` is a Cache Components feature. To enable it, add the [`cacheComponents`](/docs/app/api-reference/config/next-config-js/cacheComponents) option to your `next.config.ts` file:
 
 next.config.ts
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -106,8 +105,8 @@ Arguments to cached functions and their return values must be serializable.
 
 For a complete reference, see:
 
-*   [Serializable arguments](https://react.dev/reference/rsc/use-server#serializable-parameters-and-return-values) - Uses **React Server Components** serialization
-*   [Serializable return types](https://react.dev/reference/rsc/use-client#serializable-types) - Uses **React Client Components** serialization
+-   [Serializable arguments](https://react.dev/reference/rsc/use-server#serializable-parameters-and-return-values) - Uses **React Server Components** serialization
+-   [Serializable return types](https://react.dev/reference/rsc/use-client#serializable-types) - Uses **React Client Components** serialization
 
 > **Good to know:** Arguments and return values use different serialization systems. Server Component serialization (for arguments) is more restrictive than Client Component serialization (for return values). This means you can return JSX elements but cannot accept them as arguments unless using pass-through patterns.
 
@@ -115,22 +114,22 @@ For a complete reference, see:
 
 **Arguments:**
 
-*   Primitives: `string`, `number`, `boolean`, `null`, `undefined`
-*   Plain objects: `{ key: value }`
-*   Arrays: `[1, 2, 3]`
-*   Dates, Maps, Sets, TypedArrays, ArrayBuffers
-*   React elements (as pass-through only)
+-   Primitives: `string`, `number`, `boolean`, `null`, `undefined`
+-   Plain objects: `{ key: value }`
+-   Arrays: `[1, 2, 3]`
+-   Dates, Maps, Sets, TypedArrays, ArrayBuffers
+-   React elements (as pass-through only)
 
 **Return values:**
 
-*   Same as arguments, plus JSX elements
+-   Same as arguments, plus JSX elements
 
 ### Unsupported types[](#unsupported-types)
 
-*   Class instances
-*   Functions (except as pass-through)
-*   Symbols, WeakMaps, WeakSets
-*   URL instances
+-   Class instances
+-   Functions (except as pass-through)
+-   Symbols, WeakMaps, WeakSets
+-   URL instances
 
 app/components/user-card.tsx
 
@@ -209,17 +208,10 @@ While `use cache` is designed primarily to include uncached data in the static s
 
 Runtime cache behavior depends on your hosting environment:
 
-Environment
-
-Runtime Caching Behavior
-
-**Serverless**
-
-Cache entries typically don't persist across requests (each request can be a different instance). Build-time caching works normally.
-
-**Self-hosted**
-
-Cache entries persist across requests. Control cache size with [`cacheMaxMemorySize`](/docs/app/api-reference/config/next-config-js/incrementalCacheHandlerPath).
+| Environment | Runtime Caching Behavior |
+| --- | --- |
+| **Serverless** | Cache entries typically don't persist across requests (each request can be a different instance). Build-time caching works normally. |
+| **Self-hosted** | Cache entries persist across requests. Control cache size with [`cacheMaxMemorySize`](/docs/app/api-reference/config/next-config-js/incrementalCacheHandlerPath). |
 
 If the default in-memory cache isn't enough, consider **[`use cache: remote`](/docs/app/api-reference/directives/use-cache-remote)** which allows platforms to provide a dedicated cache handler (like Redis or KV database). This helps reduce hits against data sources not scaled to your total traffic, though it comes with costs (storage, network latency, platform fees).
 
@@ -265,9 +257,9 @@ The `x-nextjs-stale-time` response header communicates cache lifetime from serve
 
 By default, `use cache` uses the `default` profile with these settings:
 
-*   **stale**: 5 minutes (client-side)
-*   **revalidate**: 15 minutes (server-side)
-*   **expire**: Never expires by time
+-   **stale**: 5 minutes (client-side)
+-   **revalidate**: 15 minutes (server-side)
+-   **expire**: Never expires by time
 
 lib/data.ts
 
@@ -334,8 +326,6 @@ To prerender an entire route, add `use cache` to the top of **both** the `layout
 
 app/layout.tsx
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -349,8 +339,6 @@ export default async function Layout({ children }: { children: ReactNode }) {
 Any components imported and nested in `page` file are part of the cache output associated with the `page`.
 
 app/page.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -373,15 +361,13 @@ export default async function Page() {
 
 > **Good to know**:
 > 
-> *   If `use cache` is added only to the `layout` or the `page`, only that route segment and any components imported into it will be cached.
+> -   If `use cache` is added only to the `layout` or the `page`, only that route segment and any components imported into it will be cached.
 
 ### Caching a component's output with `use cache`[](#caching-a-components-output-with-use-cache)
 
 You can use `use cache` at the component level to cache any fetches or computations performed within that component. The cache entry will be reused as long as the serialized props produce the same value in each instance.
 
 app/components/bookings.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -406,8 +392,6 @@ Since you can add `use cache` to any asynchronous function, you aren't limited t
 
 app/actions.ts
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -426,8 +410,6 @@ In React, composition with `children` or slots is a well-known pattern for build
 As long as you don't directly reference any of the JSX slots inside the body of the cacheable function itself, their presence in the returned output won't affect the cache entry.
 
 app/page.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -466,8 +448,6 @@ You can also pass Server Actions through cached components to Client Components 
 
 app/page.tsx
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -495,8 +475,6 @@ async function CachedComponent({
 ```
 
 app/ClientComponent.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -614,41 +592,21 @@ Use Next.js's built-in `fetch()` deduplication or use separate Maps for cached a
 
 ## Platform Support[](#platform-support)
 
-Deployment Option
-
-Supported
-
-[Node.js server](/docs/app/getting-started/deploying#nodejs-server)
-
-Yes
-
-[Docker container](/docs/app/getting-started/deploying#docker)
-
-Yes
-
-[Static export](/docs/app/getting-started/deploying#static-export)
-
-No
-
-[Adapters](/docs/app/getting-started/deploying#adapters)
-
-Platform-specific
+| Deployment Option | Supported |
+| --- | --- |
+| [Node.js server](/docs/app/getting-started/deploying#nodejs-server) | Yes |
+| [Docker container](/docs/app/getting-started/deploying#docker) | Yes |
+| [Static export](/docs/app/getting-started/deploying#static-export) | No |
+| [Adapters](/docs/app/getting-started/deploying#adapters) | Platform-specific |
 
 Learn how to [configure caching](/docs/app/guides/self-hosting#caching-and-isr) when self-hosting Next.js.
 
 ## Version History[](#version-history)
 
-Version
-
-Changes
-
-`v16.0.0`
-
-`"use cache"` is enabled with the Cache Components feature.
-
-`v15.0.0`
-
-`"use cache"` is introduced as an experimental feature.
+| Version | Changes |
+| --- | --- |
+| `v16.0.0` | `"use cache"` is enabled with the Cache Components feature. |
+| `v15.0.0` | `"use cache"` is introduced as an experimental feature. |
 
 ## Related
 
@@ -698,20 +656,4 @@ API Reference for the revalidateTag function.
 
 ](/docs/app/api-reference/functions/revalidateTag)
 
-[Previous
-
-Directives
-
-](/docs/app/api-reference/directives)
-
-[Next
-
-use cache: private
-
-](/docs/app/api-reference/directives/use-cache-private)
-
 Was this helpful?
-
-supported.
-
-Send

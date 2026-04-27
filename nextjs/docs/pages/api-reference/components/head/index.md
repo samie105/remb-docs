@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/pages/api-reference/components/head"
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:19:46.975Z"
-content_hash: "8c82421c77e5a56bba005949ba5730794f7639446e14713986a8c00596ff6739"
+last_crawled_at: "2026-04-27T18:19:10.170Z"
+content_hash: "031164d68dbcd77ed5b5279b9194f314d7ffe8d7a28e14938ac6817c7f5bd2b7"
 menu_path: ["Head"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/pages/api-reference/components/form/index.md", "title": "Form"}
-nav_next: {"path": "nextjs/docs/pages/api-reference/components/image/index.md", "title": "Image"}
+version: "latest"
+content_language: "en"
 ---
+[API Reference](/docs/pages/api-reference)[Components](/docs/pages/api-reference/components)Head
 
 # Head
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 We expose a built-in component for appending elements to the `head` of the page:
 
@@ -80,7 +81,3 @@ We recommend using [`next/script`](/docs/pages/guides/scripts) in your component
 You **cannot** use `<Head>` to set attributes on `<html>` or `<body>` tags. This will result in an `next-head-count is missing` error. `next/head` can only handle tags inside the HTML `<head>` tag.
 
 Was this helpful?
-
-supported.
-
-Send

@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/pages/api-reference/config/next-config-j
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:20:40.062Z"
-content_hash: "d60d6e669ba5c1037b4ad7d8fb0a7ec99ce11304d1f00e7d1b8e91ff9dda3f9f"
+last_crawled_at: "2026-04-27T18:20:06.560Z"
+content_hash: "243230e2f3c5b74ce9141b0c8ced34ea104e5702f84ca2fa756e47e2f312fd46"
 menu_path: ["exportPathMap"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/pages/api-reference/config/next-config-js/env/index.md", "title": "env"}
-nav_next: {"path": "nextjs/docs/pages/api-reference/config/next-config-js/generateBuildId/index.md", "title": "generateBuildId"}
+version: "latest"
+content_language: "en"
 ---
+[Configuration](/docs/pages/api-reference/config)[next.config.js Options](/docs/pages/api-reference/config/next-config-js)exportPathMap
 
 # exportPathMap
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 > This feature is exclusive to `next export` and currently **deprecated** in favor of `getStaticPaths` with `pages` or `generateStaticParams` with `app`.
 
@@ -23,9 +24,9 @@ Last updated April 15, 2026
 
 Let's start with an example, to create a custom `exportPathMap` for an app with the following pages:
 
-*   `pages/index.js`
-*   `pages/about.js`
-*   `pages/post.js`
+-   `pages/index.js`
+-   `pages/about.js`
+-   `pages/post.js`
 
 Open `next.config.js` and add the following `exportPathMap` config:
 
@@ -54,16 +55,16 @@ The pages will then be exported as HTML files, for example, `/about` will become
 
 `exportPathMap` is an `async` function that receives 2 arguments: the first one is `defaultPathMap`, which is the default map used by Next.js. The second argument is an object with:
 
-*   `dev` - `true` when `exportPathMap` is being called in development. `false` when running `next export`. In development `exportPathMap` is used to define routes.
-*   `dir` - Absolute path to the project directory
-*   `outDir` - Absolute path to the `out/` directory ([configurable with `-o`](#customizing-the-output-directory)). When `dev` is `true` the value of `outDir` will be `null`.
-*   `distDir` - Absolute path to the `.next/` directory (configurable with the [`distDir`](/docs/pages/api-reference/config/next-config-js/distDir) config)
-*   `buildId` - The generated build id
+-   `dev` - `true` when `exportPathMap` is being called in development. `false` when running `next export`. In development `exportPathMap` is used to define routes.
+-   `dir` - Absolute path to the project directory
+-   `outDir` - Absolute path to the `out/` directory ([configurable with `-o`](#customizing-the-output-directory)). When `dev` is `true` the value of `outDir` will be `null`.
+-   `distDir` - Absolute path to the `.next/` directory (configurable with the [`distDir`](/docs/pages/api-reference/config/next-config-js/distDir) config)
+-   `buildId` - The generated build id
 
 The returned object is a map of pages where the `key` is the `pathname` and the `value` is an object that accepts the following fields:
 
-*   `page`: `String` - the page inside the `pages` directory to render
-*   `query`: `Object` - the `query` object passed to `getInitialProps` when prerendering. Defaults to `{}`
+-   `page`: `String` - the page inside the `pages` directory to render
+-   `query`: `Object` - the `query` object passed to `getInitialProps` when prerendering. Defaults to `{}`
 
 > The exported `pathname` can also be a filename (for example, `/readme.md`), but you may need to set the `Content-Type` header to `text/html` when serving its content if it is different than `.html`.
 
@@ -94,7 +95,3 @@ next export -o outdir
 > **Warning**: Using `exportPathMap` is deprecated and is overridden by `getStaticPaths` inside `pages`. We don't recommend using them together.
 
 Was this helpful?
-
-supported.
-
-Send

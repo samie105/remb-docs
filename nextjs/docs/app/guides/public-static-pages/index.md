@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/app/guides/public-static-pages"
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:16:02.518Z"
-content_hash: "ead5625803ba8edcf5c5d2700c307c388323af7afe3217e45e5cc1ec4082d9f5"
+last_crawled_at: "2026-04-27T18:15:13.675Z"
+content_hash: "ff9c76f570453a9b6cdb5016f0b72fd49582b6eb5973db21d8294d112e0003b9"
 menu_path: ["Building public pages"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/guides/progressive-web-apps/index.md", "title": "How to build a Progressive Web Application (PWA) with Next.js"}
-nav_next: {"path": "nextjs/docs/app/guides/redirecting/index.md", "title": "How to handle redirects in Next.js"}
+version: "latest"
+content_language: "en"
 ---
+[App Router](/docs/app)[Guides](/docs/app/guides)Public pages
 
 # Building public pages
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 Public pages show the same content to every user. Common examples include landing pages, marketing pages, and product pages.
 
@@ -31,9 +32,9 @@ We'll start with a static header, add a product list with async external data, a
 
 You can find the resources used in this example here:
 
-*   [Video](https://youtu.be/F6romq71KtI)
-*   [Demo](https://cache-components-public-pages.labs.vercel.dev/)
-*   [Code](https://github.com/vercel-labs/cache-components-public-pages)
+-   [Video](https://youtu.be/F6romq71KtI)
+-   [Demo](https://cache-components-public-pages.labs.vercel.dev/)
+-   [Code](https://github.com/vercel-labs/cache-components-public-pages)
 
 ### Step 1: Add a simple header[](#step-1-add-a-simple-header)
 
@@ -120,8 +121,8 @@ To protect us from this performance cliff, Next.js will show us a [warning](/doc
 
 At this point, we have to decide how to **unblock** the response. Either:
 
-*   [**Cache**](/docs/app/glossary#cache-components) the component, so it becomes **stable** and can be prerendered with the rest of the page.
-*   [**Stream**](/docs/app/glossary#streaming) the component, so it becomes **non-blocking** and the rest of the page doesn't have to wait for it.
+-   [**Cache**](/docs/app/glossary#cache-components) the component, so it becomes **stable** and can be prerendered with the rest of the page.
+-   [**Stream**](/docs/app/glossary#streaming) the component, so it becomes **non-blocking** and the rest of the page doesn't have to wait for it.
 
 In our case, the product catalog is shared across all users, so caching is the right choice.
 
@@ -277,24 +278,8 @@ We started with a static page, added async work, and resolved the blocking behav
 
 In future guides, we'll learn how to:
 
-*   Revalidate prerendered pages or cached data.
-*   Create variants of the same page with route params.
-*   Create private pages with personalized user data.
-
-[Previous
-
-PWAs
-
-](/docs/app/guides/progressive-web-apps)
-
-[Next
-
-Redirecting
-
-](/docs/app/guides/redirecting)
+-   Revalidate prerendered pages or cached data.
+-   Create variants of the same page with route params.
+-   Create private pages with personalized user data.
 
 Was this helpful?
-
-supported.
-
-Send

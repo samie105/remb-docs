@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/app/api-reference/config/next-config-js/
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:07:05.414Z"
-content_hash: "79a35dd86fe40c0be75779e88507fd4f7b7dc206ca9c3b6217d4e34e81daceaf"
+last_crawled_at: "2026-04-27T18:05:58.734Z"
+content_hash: "7ee4822cda84feccf1c2f7c439a53951c1cdac2f08ea23653f09968b86837d2e"
 menu_path: ["cacheHandlers"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/api-reference/config/next-config-js/cacheComponents/index.md", "title": "cacheComponents"}
-nav_next: {"path": "nextjs/docs/app/api-reference/config/next-config-js/cacheLife/index.md", "title": "cacheLife"}
+version: "latest"
+content_language: "en"
 ---
+[Configuration](/docs/app/api-reference/config)[next.config.js](/docs/app/api-reference/config/next-config-js)cacheHandlers
 
 # cacheHandlers
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 The `cacheHandlers` configuration allows you to define custom cache storage implementations for [`'use cache'`](/docs/app/api-reference/directives/use-cache) and [`'use cache: remote'`](/docs/app/api-reference/directives/use-cache-remote). This enables you to store cached components and functions in external services or customize the caching behavior. [`'use cache: private'`](/docs/app/api-reference/directives/use-cache-private) is not configurable.
 
@@ -44,8 +45,6 @@ To configure custom cache handlers:
 
 next.config.ts
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -63,8 +62,8 @@ export default nextConfig
 
 ### Handler types[](#handler-types)
 
-*   **`default`**: Used by the `'use cache'` directive
-*   **`remote`**: Used by the `'use cache: remote'` directive
+-   **`default`**: Used by the `'use cache'` directive
+-   **`remote`**: Used by the `'use cache: remote'` directive
 
 If you don't configure `cacheHandlers`, Next.js uses an in-memory LRU (Least Recently Used) cache for both `default` and `remote`. You can view the [default implementation](https://github.com/vercel/next.js/blob/canary/packages/next/src/server/lib/cache-handlers/default.ts) as a reference.
 
@@ -84,23 +83,10 @@ Retrieve a cache entry for the given cache key.
 get(cacheKey: string, softTags: string[]): Promise<CacheEntry | undefined>
 ```
 
-Parameter
-
-Type
-
-Description
-
-`cacheKey`
-
-`string`
-
-The unique key for the cache entry.
-
-`softTags`
-
-`string[]`
-
-Implicit tags derived from the route path. See [Soft Tags](#soft-tags) for how to use them.
+| Parameter | Type | Description |
+| --- | --- | --- |
+| `cacheKey` | `string` | The unique key for the cache entry. |
+| `softTags` | `string[]` | Implicit tags derived from the route path. See [Soft Tags](#soft-tags) for how to use them. |
 
 Returns a `CacheEntry` object if found, or `undefined` if not found or expired.
 
@@ -131,23 +117,10 @@ Store a cache entry for the given cache key.
 set(cacheKey: string, pendingEntry: Promise<CacheEntry>): Promise<void>
 ```
 
-Parameter
-
-Type
-
-Description
-
-`cacheKey`
-
-`string`
-
-The unique key to store the entry under.
-
-`pendingEntry`
-
-`Promise<CacheEntry>`
-
-A promise that resolves to the cache entry.
+| Parameter | Type | Description |
+| --- | --- | --- |
+| `cacheKey` | `string` | The unique key to store the entry under. |
+| `pendingEntry` | `Promise<CacheEntry>` | A promise that resolves to the cache entry. |
 
 The entry may still be pending when this is called (i.e., its value stream may still be written to). Your handler should await the promise before processing the entry.
 
@@ -198,23 +171,15 @@ Get the maximum revalidation timestamp for a set of tags.
 getExpiration(tags: string[]): Promise<number>
 ```
 
-Parameter
-
-Type
-
-Description
-
-`tags`
-
-`string[]`
-
-Array of tags to check expiration for.
+| Parameter | Type | Description |
+| --- | --- | --- |
+| `tags` | `string[]` | Array of tags to check expiration for. |
 
 Returns:
 
-*   `0` if none of the tags were ever revalidated
-*   A timestamp (in milliseconds) representing the most recent revalidation
-*   `Infinity` to indicate soft tags should be checked in the `get` method instead
+-   `0` if none of the tags were ever revalidated
+-   A timestamp (in milliseconds) representing the most recent revalidation
+-   `Infinity` to indicate soft tags should be checked in the `get` method instead
 
 If you're not tracking tag revalidation timestamps, return `0`. Otherwise, find the most recent revalidation timestamp across all the provided tags. Return `Infinity` if you prefer to handle soft tag checking in the `get` method.
 
@@ -238,23 +203,10 @@ Called when tags are revalidated or expired.
 updateTags(tags: string[], durations?: { expire?: number }): Promise<void>
 ```
 
-Parameter
-
-Type
-
-Description
-
-`tags`
-
-`string[]`
-
-Array of tags to update.
-
-`durations`
-
-`{ expire?: number }`
-
-Optional expiration duration in seconds.
+| Parameter | Type | Description |
+| --- | --- | --- |
+| `tags` | `string[]` | Array of tags to update. |
+| `durations` | `{ expire?: number }` | Optional expiration duration in seconds. |
 
 Your handler should update its internal state to mark these tags as invalidated.
 
@@ -290,52 +242,19 @@ interface CacheEntry {
 }
 ```
 
-Property
-
-Type
-
-Description
-
-`value`
-
-`ReadableStream<Uint8Array>`
-
-The cached data as a stream.
-
-`tags`
-
-`string[]`
-
-Cache tags (excluding soft tags).
-
-`stale`
-
-`number`
-
-Duration in seconds for client-side staleness.
-
-`timestamp`
-
-`number`
-
-When the entry was created (timestamp in milliseconds).
-
-`expire`
-
-`number`
-
-How long the entry is allowed to be used (in seconds).
-
-`revalidate`
-
-`number`
-
-How long until the entry should be revalidated (in seconds).
+| Property | Type | Description |
+| --- | --- | --- |
+| `value` | `ReadableStream<Uint8Array>` | The cached data as a stream. |
+| `tags` | `string[]` | Cache tags (excluding soft tags). |
+| `stale` | `number` | Duration in seconds for client-side staleness. |
+| `timestamp` | `number` | When the entry was created (timestamp in milliseconds). |
+| `expire` | `number` | How long the entry is allowed to be used (in seconds). |
+| `revalidate` | `number` | How long until the entry should be revalidated (in seconds). |
 
 > **Good to know**:
 > 
-> *   The `value` is a [`ReadableStream`](https://developer.mozilla.org/docs/Web/API/ReadableStream). Use [`.tee()`](https://developer.mozilla.org/docs/Web/API/ReadableStream/tee) if you need to read and store the stream data.
-> *   If the stream errors with partial data, your handler must decide whether to keep the partial cache or discard it.
+> -   The `value` is a [`ReadableStream`](https://developer.mozilla.org/docs/Web/API/ReadableStream). Use [`.tee()`](https://developer.mozilla.org/docs/Web/API/ReadableStream/tee) if you need to read and store the stream data.
+> -   If the stream errors with partial data, your handler must decide whether to keep the partial cache or discard it.
 
 ## Examples[](#examples)
 
@@ -570,49 +489,32 @@ In the cache handler API, soft tags are passed to the [`get()`](#get) method as 
 
 The `CacheEntry.value` is a [`ReadableStream<Uint8Array>`](https://developer.mozilla.org/docs/Web/API/ReadableStream). When implementing a cache handler that stores entries externally, keep in mind:
 
-*   **Use `.tee()`** if you need to both store and return the stream. One branch goes to storage, the other is returned to the caller.
-*   **Memory implications**: large pages produce large cache entries. For S3-like storage backends, consider streaming directly to storage without buffering the entire entry in memory.
-*   **Partial writes**: the stream may error partway through rendering. Your handler should decide whether to keep partial entries or discard them. Discarding is safer, as partial entries can produce incomplete pages.
+-   **Use `.tee()`** if you need to both store and return the stream. One branch goes to storage, the other is returned to the caller.
+-   **Memory implications**: large pages produce large cache entries. For S3-like storage backends, consider streaming directly to storage without buffering the entire entry in memory.
+-   **Partial writes**: the stream may error partway through rendering. Your handler should decide whether to keep partial entries or discard them. Discarding is safer, as partial entries can produce incomplete pages.
 
 ## Error Handling[](#error-handling)
 
 Cache operations should be implemented defensively:
 
-*   **`set()` failure**: the response is still served to the user because `set()` is called asynchronously after the response stream is already flowing. The cache entry is lost, and the next request triggers a fresh render.
-*   **`get()` failure**: your handler should catch internal errors and return `undefined` (the "cache miss" signal). The framework does not wrap `get()` in a try/catch, so an unhandled exception from `get()` will propagate as a render error.
-*   **Partial writes**: if a cache entry is partially written and then read, the behavior is undefined. Use atomic writes or a write-then-rename pattern to avoid serving partial entries.
+-   **`set()` failure**: the response is still served to the user because `set()` is called asynchronously after the response stream is already flowing. The cache entry is lost, and the next request triggers a fresh render.
+-   **`get()` failure**: your handler should catch internal errors and return `undefined` (the "cache miss" signal). The framework does not wrap `get()` in a try/catch, so an unhandled exception from `get()` will propagate as a render error.
+-   **Partial writes**: if a cache entry is partially written and then read, the behavior is undefined. Use atomic writes or a write-then-rename pattern to avoid serving partial entries.
 
 ## Platform Support[](#platform-support)
 
-Deployment Option
-
-Supported
-
-[Node.js server](/docs/app/getting-started/deploying#nodejs-server)
-
-Yes
-
-[Docker container](/docs/app/getting-started/deploying#docker)
-
-Yes
-
-[Static export](/docs/app/getting-started/deploying#static-export)
-
-No
-
-[Adapters](/docs/app/getting-started/deploying#adapters)
-
-Platform-specific
+| Deployment Option | Supported |
+| --- | --- |
+| [Node.js server](/docs/app/getting-started/deploying#nodejs-server) | Yes |
+| [Docker container](/docs/app/getting-started/deploying#docker) | Yes |
+| [Static export](/docs/app/getting-started/deploying#static-export) | No |
+| [Adapters](/docs/app/getting-started/deploying#adapters) | Platform-specific |
 
 ## Version History[](#version-history)
 
-Version
-
-Changes
-
-`v16.0.0`
-
-`cacheHandlers` introduced.
+| Version | Changes |
+| --- | --- |
+| `v16.0.0` | `cacheHandlers` introduced. |
 
 ## Related
 
@@ -644,20 +546,4 @@ Learn how to set up cacheLife configurations in Next.js.
 
 ](/docs/app/api-reference/config/next-config-js/cacheLife)
 
-[Previous
-
-cacheComponents
-
-](/docs/app/api-reference/config/next-config-js/cacheComponents)
-
-[Next
-
-cacheLife
-
-](/docs/app/api-reference/config/next-config-js/cacheLife)
-
 Was this helpful?
-
-supported.
-
-Send

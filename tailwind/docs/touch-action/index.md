@@ -5,65 +5,76 @@ canonical_url: "https://tailwindcss.com/docs/touch-action"
 docset: "tailwind"
 kind: "framework"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:17:55.196Z"
-content_hash: "3d73867504476035685f1c4057613f65109c9070553c3ae60ce9ffb534bbed9e"
+last_crawled_at: "2026-04-27T20:40:18.500Z"
+content_hash: "10da5a0567979d4ae0068ee64b31ca864a1cbd5762d38a1dad61965290c182ab"
 menu_path: ["touch-action"]
 section_path: []
-nav_prev: {"path": "tailwind/docs/scroll-snap-type/index.md", "title": "scroll-snap-type"}
-nav_next: {"path": "tailwind/docs/user-select/index.md", "title": "user-select"}
+content_language: "en"
 ---
+[](/)
+
+[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
+
+1.  Interactivity
+2.  touch-action
+
+Interactivity
 
 # touch-action
 
 Utilities for controlling how an element can be scrolled and zoomed on touchscreens.
 
-Class
-
-Styles
-
-`touch-auto`
-
+| Class | Styles |
+| --- | --- |
+| `touch-auto` | 
 `touch-action: auto;`
 
-`touch-none`
+ |
+| `touch-none` | 
 
 `touch-action: none;`
 
-`touch-pan-x`
+ |
+| `touch-pan-x` | 
 
 `touch-action: pan-x;`
 
-`touch-pan-left`
+ |
+| `touch-pan-left` | 
 
 `touch-action: pan-left;`
 
-`touch-pan-right`
+ |
+| `touch-pan-right` | 
 
 `touch-action: pan-right;`
 
-`touch-pan-y`
+ |
+| `touch-pan-y` | 
 
 `touch-action: pan-y;`
 
-`touch-pan-up`
+ |
+| `touch-pan-up` | 
 
 `touch-action: pan-up;`
 
-`touch-pan-down`
+ |
+| `touch-pan-down` | 
 
 `touch-action: pan-down;`
 
-`touch-pinch-zoom`
+ |
+| `touch-pinch-zoom` | 
 
 `touch-action: pinch-zoom;`
 
-`touch-manipulation`
+ |
+| `touch-manipulation` | 
 
 `touch-action: manipulation;`
 
-## [Examples](#examples)
-
-### [Basic example](#basic-example)
+ |
 
 Use utilities like `touch-pan-y` and `touch-pinch-zoom` to control how an element can be scrolled (panned) and zoomed (pinched) on touchscreens:
 
@@ -89,8 +100,6 @@ touch-pan-y
 <div class="h-48 w-full touch-auto overflow-auto ...">  <img class="h-auto w-[150%] max-w-none" src="..." /></div><div class="h-48 w-full touch-none overflow-auto ...">  <img class="h-auto w-[150%] max-w-none" src="..." /></div><div class="h-48 w-full touch-pan-x overflow-auto ...">  <img class="h-auto w-[150%] max-w-none" src="..." /></div><div class="h-48 w-full touch-pan-y overflow-auto ...">  <img class="h-auto w-[150%] max-w-none" src="..." /></div>
 ```
 
-### [Responsive design](#responsive-design)
-
 Prefix a `touch-action` utility with a breakpoint variant like `md:` to only apply the utility at medium screen sizes and above:
 
 ```
@@ -101,19 +110,23 @@ Learn more about using variants in the [variants documentation](/docs/hover-focu
 
 ### On this page
 
-*   [Quick reference](#quick-reference)
-*   [Examples](#examples)
-    *   [Basic example](#basic-example)
-    *   [Responsive design](#responsive-design)
+-   [Quick reference](#quick-reference)
+-   [Examples](#examples)
+    -   [Basic example](#basic-example)
+    -   [Responsive design](#responsive-design)
 
-![Build UIs that don’t suck — 5-day mini-course](/_next/static/media/course-promo.d3d6bc78.jpg)
+[
 
-5-day mini-course
+![Refactoring UI](/_next/static/media/book-promo.3012c0f6.png)
 
-Build UIs that don’t suck.
+From the creators of Tailwind CSS
 
-Short, tactical video lessons from the creator of Tailwind CSS, delivered directly to your inbox every day for a week.
+Make your ideas look awesome, without relying on a designer.
 
-[Get the free course](/build-uis-that-dont-suck)
+> “This is the survival kit I wish I had when I started building apps.”
+> 
+> Derrick Reimer, SavvyCal
+
+](https://www.refactoringui.com/?ref=sidebar)
 
 Copyright © 2026 Tailwind Labs Inc.·[Trademark Policy](/brand)

@@ -5,51 +5,52 @@ canonical_url: "https://www.prisma.io/docs/orm/prisma-migrate/workflows/prototyp
 docset: "prisma"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:51:11.153Z"
-content_hash: "ffa2d6126f13c791e406552def3d7de5a6dcec560fed6c0b0ebfc4d4a206c708"
+last_crawled_at: "2026-04-27T19:41:39.893Z"
+content_hash: "56b60a44d57e0cb20eadce11b7fe92dc0fba4e19d7b13825b48936539665846f"
 menu_path: ["Prototyping your schema"]
 section_path: []
-nav_prev: {"path": "prisma/docs/orm/prisma-migrate/workflows/patching-and-hotfixing/index.md", "title": "Patching & hotfixing"}
-nav_next: {"path": "prisma/docs/orm/prisma-migrate/workflows/seeding/index.md", "title": "Seeding"}
+tab_variants: ["npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun"]
+content_language: "en"
 ---
-
 Workflows
 
 Rapidly prototype your Prisma schema using db push without migrations
 
-The Prisma CLI has a dedicated command for prototyping schemas: [`db push`](prisma/docs/orm/reference/prisma-cli-reference/index.md#db-push)
+The Prisma CLI has a dedicated command for prototyping schemas: [`db push`](https://www.prisma.io/docs/orm/reference/prisma-cli-reference#db-push)
 
 `db push` uses the same engine as Prisma Migrate to synchronize your Prisma schema with your database schema. The `db push` command:
 
-*   Introspects the database to infer and executes the changes required to make your database schema reflect the state of your Prisma schema.
-*   Does not automatically trigger generators (for example, Prisma Client). You need to manually invoke `prisma generate` after making schema changes.
-*   If `db push` anticipates that the changes could result in data loss, it will:
-    *   Throw an error
-    *   Require the `--accept-data-loss` option if you still want to make the changes
+-   Introspects the database to infer and executes the changes required to make your database schema reflect the state of your Prisma schema.
+-   Does not automatically trigger generators (for example, Prisma Client). You need to manually invoke `prisma generate` after making schema changes.
+-   If `db push` anticipates that the changes could result in data loss, it will:
+    -   Throw an error
+    -   Require the `--accept-data-loss` option if you still want to make the changes
 
 `db push` works well if:
 
-*   You want to **quickly prototype and iterate** on schema design locally without the need to deploy these changes to other environments such as other developers, or staging and production environments.
-*   You are prioritizing reaching a **desired end-state** and not the changes or steps executed to reach that end-state (there is no way to preview changes made by `db push`)
-*   You do not need to control how schema changes impact data. There is no way to orchestrate schema and data migrations—if `db push` anticipates that changes will result in data loss, you can either accept data loss with the `--accept-data-loss` option or stop the process. There is no way to customize the changes.
+-   You want to **quickly prototype and iterate** on schema design locally without the need to deploy these changes to other environments such as other developers, or staging and production environments.
+-   You are prioritizing reaching a **desired end-state** and not the changes or steps executed to reach that end-state (there is no way to preview changes made by `db push`)
+-   You do not need to control how schema changes impact data. There is no way to orchestrate schema and data migrations—if `db push` anticipates that changes will result in data loss, you can either accept data loss with the `--accept-data-loss` option or stop the process. There is no way to customize the changes.
 
-See [Schema prototyping with `db push`](prisma/docs/orm/prisma-migrate/workflows/prototyping-your-schema/index.md) for an example of how to use `db push` in this way.
+See [Schema prototyping with `db push`](https://www.prisma.io/docs/orm/prisma-migrate/workflows/prototyping-your-schema) for an example of how to use `db push` in this way.
 
 `db push` is **not recommended** if:
 
-*   You want to replicate your schema changes in other environments without losing data. You can use `db push` for prototyping, but you should use migrations to commit the schema changes and apply these in your other environments.
-*   You want fine-grained control over how the schema changes are executed - for example, [renaming a column instead of dropping it and creating a new one](prisma/docs/orm/prisma-migrate/workflows/customizing-migrations/index.md#example-rename-a-field).
-*   You want to keep track of changes made to the database schema over time. `db push` does not create any artifacts that allow you to keep track of these changes.
-*   You want the schema changes to be reversible. You can use `db push` again to revert to the original state, but this might result in data loss.
+-   You want to replicate your schema changes in other environments without losing data. You can use `db push` for prototyping, but you should use migrations to commit the schema changes and apply these in your other environments.
+-   You want fine-grained control over how the schema changes are executed - for example, [renaming a column instead of dropping it and creating a new one](https://www.prisma.io/docs/orm/prisma-migrate/workflows/customizing-migrations#example-rename-a-field).
+-   You want to keep track of changes made to the database schema over time. `db push` does not create any artifacts that allow you to keep track of these changes.
+-   You want the schema changes to be reversible. You can use `db push` again to revert to the original state, but this might result in data loss.
 
-Yes, you can [use `db push` and Prisma Migrate together in your development workflow](prisma/docs/orm/prisma-migrate/workflows/prototyping-your-schema/index.md) . For example, you can:
+Yes, you can [use `db push` and Prisma Migrate together in your development workflow](https://www.prisma.io/docs/orm/prisma-migrate/workflows/prototyping-your-schema) . For example, you can:
 
-*   Use `db push` to prototype a schema at the start of a project and initialize a migration history when you are happy with the first draft
-*   Use `db push` to prototype a change to an existing schema, then run `prisma migrate dev` to generate a migration from your changes (you will be asked to reset)
+-   Use `db push` to prototype a schema at the start of a project and initialize a migration history when you are happy with the first draft
+-   Use `db push` to prototype a change to an existing schema, then run `prisma migrate dev` to generate a migration from your changes (you will be asked to reset)
 
 The following scenario demonstrates how to use `db push` to synchronize a new schema with an empty database, and evolve that schema - including what happens when `db push` detects that a change will result in data loss.
 
-*   Create a first draft of your schema:
+-   Create a first draft of your schema:
+    
+    schema.prisma
     
     ```
     generator client {
@@ -95,9 +96,11 @@ The following scenario demonstrates how to use `db push` to synchronize a new sc
     }
     ```
     
-*   Use `db push` to push the initial schema to the database:
+-   Use `db push` to push the initial schema to the database:
     
-*   Create some example content:
+-   Create some example content:
+    
+    main.ts
     
     ```
     const add = await prisma.user.create({
@@ -114,7 +117,9 @@ The following scenario demonstrates how to use `db push` to synchronize a new sc
     });
     ```
     
-*   Make an additive change - for example, create a new required field:
+-   Make an additive change - for example, create a new required field:
+    
+    schema.prisma
     
     ```
     model Post {
@@ -129,20 +134,20 @@ The following scenario demonstrates how to use `db push` to synchronize a new sc
     }
     ```
     
-*   Push the changes:
+-   Push the changes:
     
     `db push` will fail because you cannot add a required field to a table with existing content unless you provide a default value.
     
-*   Reset **all data** in your database and re-apply migrations.
+-   Reset **all data** in your database and re-apply migrations.
     
 
-*   Continue to evolve your schema until it reaches a relatively stable state.
+-   Continue to evolve your schema until it reaches a relatively stable state.
     
-*   Initialize a migration history:
+-   Initialize a migration history:
     
     The steps taken to reach the initial prototype are not preserved - `db push` does not generate a history.
     
-*   Push your migration history and Prisma schema to source control (e.g. Git).
+-   Push your migration history and Prisma schema to source control (e.g. Git).
     
 
 At this point, the final draft of your prototyping is preserved in a migration and can be pushed to other environments (testing, production, or other members of your team).
@@ -151,7 +156,9 @@ At this point, the final draft of your prototyping is preserved in a migration a
 
 The following scenario demonstrates how to use `db push` to prototype a change to a Prisma schema where a migration history already exists.
 
-*   Check out the latest Prisma schema and migration history:
+-   Check out the latest Prisma schema and migration history:
+    
+    schema.prisma
     
     ```
     generator client {
@@ -197,14 +204,16 @@ The following scenario demonstrates how to use `db push` to prototype a change t
     }
     ```
     
-*   Prototype your new feature, which can involve any number of steps. For example, you might:
+-   Prototype your new feature, which can involve any number of steps. For example, you might:
     
-    *   Create a `tags String[]` field, then run `db push`
-    *   Change the field type to `tags Tag[]` and add a new model named `Tag`, then run `db push`
-    *   Change your mind and restore the original `tags String[]` field, then call `db push`
-    *   Make a manual change to the `tags` field in the database - for example, adding a constraint
+    -   Create a `tags String[]` field, then run `db push`
+    -   Change the field type to `tags Tag[]` and add a new model named `Tag`, then run `db push`
+    -   Change your mind and restore the original `tags String[]` field, then call `db push`
+    -   Make a manual change to the `tags` field in the database - for example, adding a constraint
     
     After experimenting with several solutions, the final schema change looks like this:
+    
+    schema.prisma
     
     ```
     model Post {
@@ -220,7 +229,7 @@ The following scenario demonstrates how to use `db push` to prototype a change t
     }
     ```
     
-*   To create a migration that adds the new `tags` field, run the `migrate dev` command:
+-   To create a migration that adds the new `tags` field, run the `migrate dev` command:
     
     Prisma Migrate will prompt you to reset because the changes you made manually and with `db push` while prototyping are not part of the migration history:
     
@@ -231,8 +240,6 @@ The following scenario demonstrates how to use `db push` to prototype a change t
     ```
     
 
-*   Prisma Migrate replays the existing migration history, generates a new migration based on your schema changes, and applies those changes to the database.
+-   Prisma Migrate replays the existing migration history, generates a new migration based on your schema changes, and applies those changes to the database.
 
 At this point, the final result of your prototyping is preserved in a migration, and can be pushed to other environments (testing, production, or other members of your team).
-
-[Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/prisma-migrate/workflows/prototyping-your-schema.mdx)

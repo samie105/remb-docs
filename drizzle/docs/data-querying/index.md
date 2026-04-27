@@ -5,14 +5,12 @@ canonical_url: "https://orm.drizzle.team/docs/data-querying"
 docset: "drizzle"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:44:50.510Z"
-content_hash: "00c767e32fe55f1da31e3c7c04adc83deddb46b7a5a33385f23775043dceccbf"
+last_crawled_at: "2026-04-27T18:34:11.150Z"
+content_hash: "9a4d064852101fd2a8b1e2984b82cc5d0b66f1762c02b4ecf45df3e310df318e"
 menu_path: ["Drizzle Queries + CRUD"]
 section_path: []
-nav_prev: {"path": "drizzle/docs/connect-overview/index.md", "title": "Database connection with Drizzle"}
-nav_next: {"path": "drizzle/docs/migrations/index.md", "title": "Drizzle migrations fundamentals"}
+content_language: "en"
 ---
-
 ## Drizzle Queries + CRUD
 
 Drizzle gives you a few ways for querying your database and it’s up to you to decide which one you’ll need in your next project. It can be either SQL-like syntax or Relational Syntax. Let’s check them:
@@ -26,7 +24,7 @@ Other ORMs and data frameworks tend to deviate from or abstract away SQL, leadin
 
 Drizzle is the opposite. We embrace SQL and built Drizzle to be SQL-like at its core, so you have little to no learning curve and full access to the power of SQL.
 
-```
+```typescript
 // Access your data
 await db
   .select()
@@ -35,7 +33,7 @@ await db
 	.where(eq(posts.id, 10))
 ```
 
-```
+```sql
 SELECT * 
 FROM posts
 LEFT JOIN comments ON posts.id = comments.post_id
@@ -44,17 +42,11 @@ WHERE posts.id = 10
 
 With SQL-like syntax, you can replicate much of what you can do with pure SQL and know exactly what Drizzle will do and what query will be generated. You can perform a wide range of queries, including select, insert, update, delete, as well as using aliases, WITH clauses, subqueries, prepared statements, and more. Let’s look at more examples
 
-insert
-
-update
-
-delete
-
-```
+```ts
 await db.insert(users).values({ email: 'user@gmail.com' })
 ```
 
-```
+```sql
 INSERT INTO users (email) VALUES ('user@gmail.com')
 ```
 
@@ -66,7 +58,7 @@ We’ve built the Queries API so you can fetch relational, nested data from the 
 
 **Drizzle always outputs exactly one SQL query**. Feel free to use it with serverless databases, and never worry about performance or roundtrip costs!
 
-```
+```ts
 const result = await db.query.users.findMany({
 	with: {
 		posts: true
@@ -80,7 +72,7 @@ With Drizzle, queries can be composed and partitioned in any way you want. You c
 
 #### Compose a WHERE statement and then use it in a query[](#compose-a-where-statement-and-then-use-it-in-a-query)
 
-```
+```ts
 async function getProductsBy({
   name,
   category,
@@ -105,7 +97,7 @@ async function getProductsBy({
 
 #### Separate subqueries into different variables, and then use them in the main query[](#separate-subqueries-into-different-variables-and-then-use-them-in-the-main-query)
 
-```
+```ts
 const subquery = db
 	.select()
 	.from(internalStaff)

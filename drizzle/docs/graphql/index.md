@@ -5,27 +5,17 @@ canonical_url: "https://orm.drizzle.team/docs/graphql"
 docset: "drizzle"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:03:13.583Z"
-content_hash: "e05fb13bc56236fe36752898b6925dcde0874b34d5c7a451f7ceaed391a7556c"
+last_crawled_at: "2026-04-27T18:57:31.745Z"
+content_hash: "651efa08fc17d9727c9ce66392ebeec6946281268a49d7e4b34fb8386747b813"
 menu_path: ["drizzle-graphql"]
 section_path: []
-nav_prev: {"path": "drizzle/docs/eslint-plugin/index.md", "title": "ESLint Drizzle Plugin"}
-nav_next: {"path": "drizzle/docs/column-types/cockroach/index.md", "title": "CockroachDB column types"}
+content_language: "en"
 ---
-
 Create a GraphQL server from a Drizzle schema in one line, and easily enhance it with custom queries and mutations.
 
 ## Quick start[](#quick-start)
 
 Make sure your `drizzle-orm` version is at least `0.30.9`, and update if needed:
-
-npm
-
-yarn
-
-pnpm
-
-bun
 
 ```
 npm i drizzle-orm@latest
@@ -45,14 +35,6 @@ bun add drizzle-orm@latest
 
 ### Apollo Server[](#apollo-server)
 
-npm
-
-yarn
-
-pnpm
-
-bun
-
 ```
 npm i drizzle-graphql @apollo/server graphql
 ```
@@ -69,11 +51,7 @@ pnpm add drizzle-graphql @apollo/server graphql
 bun add drizzle-graphql @apollo/server graphql
 ```
 
-server.ts
-
-schema.ts
-
-```
+```ts
 import { buildSchema } from 'drizzle-graphql';
 import { drizzle } from 'drizzle-orm/...';
 import client from './db';
@@ -94,14 +72,6 @@ console.log(`🚀 Server ready at ${url}`);
 
 ### GraphQL Yoga[](#graphql-yoga)
 
-npm
-
-yarn
-
-pnpm
-
-bun
-
 ```
 npm i drizzle-graphql graphql-yoga graphql
 ```
@@ -118,11 +88,7 @@ pnpm add drizzle-graphql graphql-yoga graphql
 bun add drizzle-graphql graphql-yoga graphql
 ```
 
-server.ts
-
-schema.ts
-
-```
+```ts
 import { buildSchema } from 'drizzle-graphql';
 import { drizzle } from 'drizzle-orm/...';
 import { createYoga } from 'graphql-yoga';
@@ -148,11 +114,7 @@ server.listen(4000, () => {
 
 If you want to customize your schema, you can use `entities` object to build your own new schema:
 
-server.ts
-
-schema.ts
-
-```
+```ts
 import { buildSchema } from 'drizzle-graphql';
 import { drizzle } from 'drizzle-orm/...';
 import { GraphQLList, GraphQLNonNull, GraphQLObjectType, GraphQLSchema } from 'graphql';

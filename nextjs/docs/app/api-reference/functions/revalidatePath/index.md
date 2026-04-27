@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/app/api-reference/functions/revalidatePa
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:12:09.566Z"
-content_hash: "b4f87ba1af9b19f8d3b7824868182e45f21edc6a2e9ce158cb71a46cb751d71e"
+last_crawled_at: "2026-04-27T18:10:53.986Z"
+content_hash: "34fb47f375ff142dc267db07c89d67217072fd64af6ac3b7e7109ea05a188f03"
 menu_path: ["revalidatePath"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/api-reference/functions/refresh/index.md", "title": "refresh"}
-nav_next: {"path": "nextjs/docs/app/api-reference/functions/revalidateTag/index.md", "title": "revalidateTag"}
+version: "latest"
+content_language: "en"
 ---
+[API Reference](/docs/app/api-reference)[Functions](/docs/app/api-reference/functions)revalidatePath
 
 # revalidatePath
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 `revalidatePath` allows you to invalidate [cached data](/docs/app/getting-started/caching) on-demand for a specific path.
 
@@ -27,8 +28,8 @@ Last updated April 15, 2026
 
 > **Good to know**:
 > 
-> *   **Server Functions**: Updates the UI immediately (if viewing the affected path). Currently, it also causes all previously visited pages to refresh when navigated to again. This behavior is temporary and will be updated in the future to apply only to the specific path.
-> *   **Route Handlers**: Marks the path for revalidation. The revalidation is done on the next visit to the specified path. This means calling `revalidatePath` with a dynamic route segment will not immediately trigger many revalidations at once. The invalidation only happens when the path is next visited.
+> -   **Server Functions**: Updates the UI immediately (if viewing the affected path). Currently, it also causes all previously visited pages to refresh when navigated to again. This behavior is temporary and will be updated in the future to apply only to the specific path.
+> -   **Route Handlers**: Marks the path for revalidation. The revalidation is done on the next visit to the specified path. This means calling `revalidatePath` with a dynamic route segment will not immediately trigger many revalidations at once. The invalidation only happens when the path is next visited.
 
 ## Parameters[](#parameters)
 
@@ -36,8 +37,8 @@ Last updated April 15, 2026
 revalidatePath(path: string, type?: 'page' | 'layout'): void;
 ```
 
-*   `path`: Either a string that represents your route file structure. This can be a literal path like `/product/123`, or a route pattern with dynamic segments like `/product/[slug]`. Do not append `/page` or `/layout`, use the `type` parameter instead. Must not exceed 1024 characters. This value is case-sensitive. You do not need to include a trailing slash, regardless of your [`trailingSlash`](/docs/app/api-reference/config/next-config-js/trailingSlash) config.
-*   `type`: (optional) `'page'` or `'layout'` string to change the type of path to revalidate. If `path` contains a dynamic segment, for example `/product/[slug]`, this parameter is required. If `path` is a literal path like `/product/1`, omit `type`.
+-   `path`: Either a string that represents your route file structure. This can be a literal path like `/product/123`, or a route pattern with dynamic segments like `/product/[slug]`. Do not append `/page` or `/layout`, use the `type` parameter instead. Must not exceed 1024 characters. This value is case-sensitive. You do not need to include a trailing slash, regardless of your [`trailingSlash`](/docs/app/api-reference/config/next-config-js/trailingSlash) config.
+-   `type`: (optional) `'page'` or `'layout'` string to change the type of path to revalidate. If `path` contains a dynamic segment, for example `/product/[slug]`, this parameter is required. If `path` is a literal path like `/product/1`, omit `type`.
 
 Use a literal path when you want to refresh a [single page](#revalidating-a-specific-path). Use a route pattern plus `type` to refresh [all matching pages](#revalidating-a-page-path).
 
@@ -49,9 +50,9 @@ Use a literal path when you want to refresh a [single page](#revalidating-a-spec
 
 The path parameter can point to pages, layouts, or route handlers:
 
-*   **Pages**: Invalidates the specific page
-*   **Layouts**: Invalidates the layout (the `layout.tsx` at that segment), all nested layouts beneath it, and all pages beneath them
-*   **Route Handlers**: Invalidates cached data accessed within route handlers. For example `revalidatePath("/api/data")` invalidates this GET handler:
+-   **Pages**: Invalidates the specific page
+-   **Layouts**: Invalidates the layout (the `layout.tsx` at that segment), all nested layouts beneath it, and all pages beneath them
+-   **Route Handlers**: Invalidates cached data accessed within route handlers. For example `revalidatePath("/api/data")` invalidates this GET handler:
 
 app/api/data/route.ts
 
@@ -102,9 +103,9 @@ This is because `revalidatePath` operates on the route file structure, not the U
 
 `revalidatePath`, [`revalidateTag`](/docs/app/api-reference/functions/revalidateTag) and [`updateTag`](/docs/app/api-reference/functions/updateTag) serve different purposes:
 
-*   **`revalidatePath`**: Invalidates a specific page or layout path
-*   **`revalidateTag`**: Marks data with specific tags as **stale**. Applies across all pages that use those tags
-*   **`updateTag`**: Expires data with specific tags. Applies across all pages that use those tags
+-   **`revalidatePath`**: Invalidates a specific page or layout path
+-   **`revalidateTag`**: Marks data with specific tags as **stale**. Applies across all pages that use those tags
+-   **`updateTag`**: Expires data with specific tags. Applies across all pages that use those tags
 
 When you call `revalidatePath`, only the specified path gets fresh data on the next visit. Other pages that use the same data tags will continue to serve cached data until those specific tags are also revalidated:
 
@@ -122,8 +123,8 @@ const recentPosts = await fetch('https://api.vercel.app/blog?limit=5', {
 
 After calling `revalidatePath('/blog')`:
 
-*   **Page A (/blog)**: Shows fresh data (page re-rendered)
-*   **Page B (/dashboard)**: Still shows stale data (cache tag 'posts' not invalidated)
+-   **Page A (/blog)**: Shows fresh data (page re-rendered)
+-   **Page B (/dashboard)**: Still shows stale data (cache tag 'posts' not invalidated)
 
 Learn about the difference between [`revalidateTag` and `updateTag`](/docs/app/api-reference/functions/updateTag#differences-from-revalidatetag).
 
@@ -193,8 +194,6 @@ This will purge the [Client Cache](/docs/app/glossary#client-cache), and invalid
 
 app/actions.ts
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -211,8 +210,6 @@ export default async function submit() {
 ### Route Handler[](#route-handler)
 
 app/api/revalidate/route.ts
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -236,20 +233,4 @@ export async function GET(request: NextRequest) {
 }
 ```
 
-[Previous
-
-refresh
-
-](/docs/app/api-reference/functions/refresh)
-
-[Next
-
-revalidateTag
-
-](/docs/app/api-reference/functions/revalidateTag)
-
 Was this helpful?
-
-supported.
-
-Send

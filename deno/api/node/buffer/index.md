@@ -5,10 +5,11 @@ canonical_url: "https://docs.deno.com/api/node/buffer/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:33:32.939Z"
-content_hash: "85bd8628f68cf575b39237eb97f815b1616237d7a1039e8e7022b1bd96e7e205"
+last_crawled_at: "2026-04-27T17:03:28.114Z"
+content_hash: "d26dac9b1eddaee55d1ecf32e47124911663c963294399b417da35b05c00853f"
 menu_path: ["buffer - Node documentation"]
 section_path: []
+content_language: "en"
 ---
 ### Usage in Deno
 
@@ -55,8 +56,6 @@ const buf6 = Buffer.from('tést');
 const buf7 = Buffer.from('tést', 'latin1');
 ```
 
-### Classes [#](#Classes)
-
 c
 
 I
@@ -67,13 +66,13 @@ v
 
 A [`Blob`](https://developer.mozilla.org/en-US/docs/Web/API/Blob) encapsulates immutable, raw data that can be safely shared across multiple worker threads.
 
-*   [arrayBuffer](/api/web/~/Blob#method_arraybuffer_0)
-*   [bytes](/api/web/~/Blob#method_bytes_0)
-*   [size](/api/web/~/Blob#property_size)
-*   [slice](/api/web/~/Blob#method_slice_0)
-*   [stream](/api/web/~/Blob#method_stream_0)
-*   [text](/api/web/~/Blob#method_text_0)
-*   [type](/api/web/~/Blob#property_type)
+-   [arrayBuffer](/api/web/~/Blob#method_arraybuffer_0)
+-   [bytes](/api/web/~/Blob#method_bytes_0)
+-   [size](/api/web/~/Blob#property_size)
+-   [slice](/api/web/~/Blob#method_slice_0)
+-   [stream](/api/web/~/Blob#method_stream_0)
+-   [text](/api/web/~/Blob#method_text_0)
+-   [type](/api/web/~/Blob#property_type)
 
 c
 
@@ -85,10 +84,8 @@ v
 
 A [`File`](https://developer.mozilla.org/en-US/docs/Web/API/File) provides information about files.
 
-*   [lastModified](.././buffer/~/File#property_lastmodified)
-*   [name](.././buffer/~/File#property_name)
-
-### Functions [#](#Functions)
+-   [lastModified](.././buffer/~/File#property_lastmodified)
+-   [name](.././buffer/~/File#property_name)
 
 f
 
@@ -126,16 +123,14 @@ f
 
 Re-encodes the given `Buffer` or `Uint8Array` instance from one character encoding to another. Returns a new `Buffer` instance.
 
-### Interfaces [#](#Interfaces)
-
 I
 
 [BlobOptions](.././buffer/~/BlobOptions "BlobOptions")
 
 No documentation available
 
-*   [endings](.././buffer/~/BlobOptions#property_endings)
-*   [type](.././buffer/~/BlobOptions#property_type)
+-   [endings](.././buffer/~/BlobOptions#property_endings)
+-   [type](.././buffer/~/BlobOptions#property_type)
 
 I
 
@@ -145,84 +140,84 @@ v
 
 No documentation available
 
-*   [compare](.././buffer/~/Buffer#method_compare_0)
-*   [copy](.././buffer/~/Buffer#method_copy_0)
-*   [equals](.././buffer/~/Buffer#method_equals_0)
-*   [fill](.././buffer/~/Buffer#method_fill_0)
-*   [includes](.././buffer/~/Buffer#method_includes_0)
-*   [indexOf](.././buffer/~/Buffer#method_indexof_0)
-*   [lastIndexOf](.././buffer/~/Buffer#method_lastindexof_0)
-*   [readBigInt64BE](.././buffer/~/Buffer#method_readbigint64be_0)
-*   [readBigInt64LE](.././buffer/~/Buffer#method_readbigint64le_0)
-*   [readBigUInt64BE](.././buffer/~/Buffer#method_readbiguint64be_0)
-*   [readBigUInt64LE](.././buffer/~/Buffer#method_readbiguint64le_0)
-*   [readBigUint64BE](.././buffer/~/Buffer#method_readbiguint64be_0)
-*   [readBigUint64LE](.././buffer/~/Buffer#method_readbiguint64le_0)
-*   [readDoubleBE](.././buffer/~/Buffer#method_readdoublebe_0)
-*   [readDoubleLE](.././buffer/~/Buffer#method_readdoublele_0)
-*   [readFloatBE](.././buffer/~/Buffer#method_readfloatbe_0)
-*   [readFloatLE](.././buffer/~/Buffer#method_readfloatle_0)
-*   [readInt16BE](.././buffer/~/Buffer#method_readint16be_0)
-*   [readInt16LE](.././buffer/~/Buffer#method_readint16le_0)
-*   [readInt32BE](.././buffer/~/Buffer#method_readint32be_0)
-*   [readInt32LE](.././buffer/~/Buffer#method_readint32le_0)
-*   [readInt8](.././buffer/~/Buffer#method_readint8_0)
-*   [readIntBE](.././buffer/~/Buffer#method_readintbe_0)
-*   [readIntLE](.././buffer/~/Buffer#method_readintle_0)
-*   [readUInt16BE](.././buffer/~/Buffer#method_readuint16be_0)
-*   [readUInt16LE](.././buffer/~/Buffer#method_readuint16le_0)
-*   [readUInt32BE](.././buffer/~/Buffer#method_readuint32be_0)
-*   [readUInt32LE](.././buffer/~/Buffer#method_readuint32le_0)
-*   [readUInt8](.././buffer/~/Buffer#method_readuint8_0)
-*   [readUIntBE](.././buffer/~/Buffer#method_readuintbe_0)
-*   [readUIntLE](.././buffer/~/Buffer#method_readuintle_0)
-*   [readUint16BE](.././buffer/~/Buffer#method_readuint16be_0)
-*   [readUint16LE](.././buffer/~/Buffer#method_readuint16le_0)
-*   [readUint32BE](.././buffer/~/Buffer#method_readuint32be_0)
-*   [readUint32LE](.././buffer/~/Buffer#method_readuint32le_0)
-*   [readUint8](.././buffer/~/Buffer#method_readuint8_0)
-*   [readUintBE](.././buffer/~/Buffer#method_readuintbe_0)
-*   [readUintLE](.././buffer/~/Buffer#method_readuintle_0)
-*   [reverse](.././buffer/~/Buffer#method_reverse_0)
-*   [slice](.././buffer/~/Buffer#method_slice_0)
-*   [subarray](.././buffer/~/Buffer#method_subarray_0)
-*   [swap16](.././buffer/~/Buffer#method_swap16_0)
-*   [swap32](.././buffer/~/Buffer#method_swap32_0)
-*   [swap64](.././buffer/~/Buffer#method_swap64_0)
-*   [toJSON](.././buffer/~/Buffer#method_tojson_0)
-*   [toString](.././buffer/~/Buffer#method_tostring_0)
-*   [write](.././buffer/~/Buffer#method_write_0)
-*   [writeBigInt64BE](.././buffer/~/Buffer#method_writebigint64be_0)
-*   [writeBigInt64LE](.././buffer/~/Buffer#method_writebigint64le_0)
-*   [writeBigUInt64BE](.././buffer/~/Buffer#method_writebiguint64be_0)
-*   [writeBigUInt64LE](.././buffer/~/Buffer#method_writebiguint64le_0)
-*   [writeBigUint64BE](.././buffer/~/Buffer#method_writebiguint64be_0)
-*   [writeBigUint64LE](.././buffer/~/Buffer#method_writebiguint64le_0)
-*   [writeDoubleBE](.././buffer/~/Buffer#method_writedoublebe_0)
-*   [writeDoubleLE](.././buffer/~/Buffer#method_writedoublele_0)
-*   [writeFloatBE](.././buffer/~/Buffer#method_writefloatbe_0)
-*   [writeFloatLE](.././buffer/~/Buffer#method_writefloatle_0)
-*   [writeInt16BE](.././buffer/~/Buffer#method_writeint16be_0)
-*   [writeInt16LE](.././buffer/~/Buffer#method_writeint16le_0)
-*   [writeInt32BE](.././buffer/~/Buffer#method_writeint32be_0)
-*   [writeInt32LE](.././buffer/~/Buffer#method_writeint32le_0)
-*   [writeInt8](.././buffer/~/Buffer#method_writeint8_0)
-*   [writeIntBE](.././buffer/~/Buffer#method_writeintbe_0)
-*   [writeIntLE](.././buffer/~/Buffer#method_writeintle_0)
-*   [writeUInt16BE](.././buffer/~/Buffer#method_writeuint16be_0)
-*   [writeUInt16LE](.././buffer/~/Buffer#method_writeuint16le_0)
-*   [writeUInt32BE](.././buffer/~/Buffer#method_writeuint32be_0)
-*   [writeUInt32LE](.././buffer/~/Buffer#method_writeuint32le_0)
-*   [writeUInt8](.././buffer/~/Buffer#method_writeuint8_0)
-*   [writeUIntBE](.././buffer/~/Buffer#method_writeuintbe_0)
-*   [writeUIntLE](.././buffer/~/Buffer#method_writeuintle_0)
-*   [writeUint16BE](.././buffer/~/Buffer#method_writeuint16be_0)
-*   [writeUint16LE](.././buffer/~/Buffer#method_writeuint16le_0)
-*   [writeUint32BE](.././buffer/~/Buffer#method_writeuint32be_0)
-*   [writeUint32LE](.././buffer/~/Buffer#method_writeuint32le_0)
-*   [writeUint8](.././buffer/~/Buffer#method_writeuint8_0)
-*   [writeUintBE](.././buffer/~/Buffer#method_writeuintbe_0)
-*   [writeUintLE](.././buffer/~/Buffer#method_writeuintle_0)
+-   [compare](.././buffer/~/Buffer#method_compare_0)
+-   [copy](.././buffer/~/Buffer#method_copy_0)
+-   [equals](.././buffer/~/Buffer#method_equals_0)
+-   [fill](.././buffer/~/Buffer#method_fill_0)
+-   [includes](.././buffer/~/Buffer#method_includes_0)
+-   [indexOf](.././buffer/~/Buffer#method_indexof_0)
+-   [lastIndexOf](.././buffer/~/Buffer#method_lastindexof_0)
+-   [readBigInt64BE](.././buffer/~/Buffer#method_readbigint64be_0)
+-   [readBigInt64LE](.././buffer/~/Buffer#method_readbigint64le_0)
+-   [readBigUInt64BE](.././buffer/~/Buffer#method_readbiguint64be_0)
+-   [readBigUInt64LE](.././buffer/~/Buffer#method_readbiguint64le_0)
+-   [readBigUint64BE](.././buffer/~/Buffer#method_readbiguint64be_0)
+-   [readBigUint64LE](.././buffer/~/Buffer#method_readbiguint64le_0)
+-   [readDoubleBE](.././buffer/~/Buffer#method_readdoublebe_0)
+-   [readDoubleLE](.././buffer/~/Buffer#method_readdoublele_0)
+-   [readFloatBE](.././buffer/~/Buffer#method_readfloatbe_0)
+-   [readFloatLE](.././buffer/~/Buffer#method_readfloatle_0)
+-   [readInt16BE](.././buffer/~/Buffer#method_readint16be_0)
+-   [readInt16LE](.././buffer/~/Buffer#method_readint16le_0)
+-   [readInt32BE](.././buffer/~/Buffer#method_readint32be_0)
+-   [readInt32LE](.././buffer/~/Buffer#method_readint32le_0)
+-   [readInt8](.././buffer/~/Buffer#method_readint8_0)
+-   [readIntBE](.././buffer/~/Buffer#method_readintbe_0)
+-   [readIntLE](.././buffer/~/Buffer#method_readintle_0)
+-   [readUInt16BE](.././buffer/~/Buffer#method_readuint16be_0)
+-   [readUInt16LE](.././buffer/~/Buffer#method_readuint16le_0)
+-   [readUInt32BE](.././buffer/~/Buffer#method_readuint32be_0)
+-   [readUInt32LE](.././buffer/~/Buffer#method_readuint32le_0)
+-   [readUInt8](.././buffer/~/Buffer#method_readuint8_0)
+-   [readUIntBE](.././buffer/~/Buffer#method_readuintbe_0)
+-   [readUIntLE](.././buffer/~/Buffer#method_readuintle_0)
+-   [readUint16BE](.././buffer/~/Buffer#method_readuint16be_0)
+-   [readUint16LE](.././buffer/~/Buffer#method_readuint16le_0)
+-   [readUint32BE](.././buffer/~/Buffer#method_readuint32be_0)
+-   [readUint32LE](.././buffer/~/Buffer#method_readuint32le_0)
+-   [readUint8](.././buffer/~/Buffer#method_readuint8_0)
+-   [readUintBE](.././buffer/~/Buffer#method_readuintbe_0)
+-   [readUintLE](.././buffer/~/Buffer#method_readuintle_0)
+-   [reverse](.././buffer/~/Buffer#method_reverse_0)
+-   [slice](.././buffer/~/Buffer#method_slice_0)
+-   [subarray](.././buffer/~/Buffer#method_subarray_0)
+-   [swap16](.././buffer/~/Buffer#method_swap16_0)
+-   [swap32](.././buffer/~/Buffer#method_swap32_0)
+-   [swap64](.././buffer/~/Buffer#method_swap64_0)
+-   [toJSON](.././buffer/~/Buffer#method_tojson_0)
+-   [toString](.././buffer/~/Buffer#method_tostring_0)
+-   [write](.././buffer/~/Buffer#method_write_0)
+-   [writeBigInt64BE](.././buffer/~/Buffer#method_writebigint64be_0)
+-   [writeBigInt64LE](.././buffer/~/Buffer#method_writebigint64le_0)
+-   [writeBigUInt64BE](.././buffer/~/Buffer#method_writebiguint64be_0)
+-   [writeBigUInt64LE](.././buffer/~/Buffer#method_writebiguint64le_0)
+-   [writeBigUint64BE](.././buffer/~/Buffer#method_writebiguint64be_0)
+-   [writeBigUint64LE](.././buffer/~/Buffer#method_writebiguint64le_0)
+-   [writeDoubleBE](.././buffer/~/Buffer#method_writedoublebe_0)
+-   [writeDoubleLE](.././buffer/~/Buffer#method_writedoublele_0)
+-   [writeFloatBE](.././buffer/~/Buffer#method_writefloatbe_0)
+-   [writeFloatLE](.././buffer/~/Buffer#method_writefloatle_0)
+-   [writeInt16BE](.././buffer/~/Buffer#method_writeint16be_0)
+-   [writeInt16LE](.././buffer/~/Buffer#method_writeint16le_0)
+-   [writeInt32BE](.././buffer/~/Buffer#method_writeint32be_0)
+-   [writeInt32LE](.././buffer/~/Buffer#method_writeint32le_0)
+-   [writeInt8](.././buffer/~/Buffer#method_writeint8_0)
+-   [writeIntBE](.././buffer/~/Buffer#method_writeintbe_0)
+-   [writeIntLE](.././buffer/~/Buffer#method_writeintle_0)
+-   [writeUInt16BE](.././buffer/~/Buffer#method_writeuint16be_0)
+-   [writeUInt16LE](.././buffer/~/Buffer#method_writeuint16le_0)
+-   [writeUInt32BE](.././buffer/~/Buffer#method_writeuint32be_0)
+-   [writeUInt32LE](.././buffer/~/Buffer#method_writeuint32le_0)
+-   [writeUInt8](.././buffer/~/Buffer#method_writeuint8_0)
+-   [writeUIntBE](.././buffer/~/Buffer#method_writeuintbe_0)
+-   [writeUIntLE](.././buffer/~/Buffer#method_writeuintle_0)
+-   [writeUint16BE](.././buffer/~/Buffer#method_writeuint16be_0)
+-   [writeUint16LE](.././buffer/~/Buffer#method_writeuint16le_0)
+-   [writeUint32BE](.././buffer/~/Buffer#method_writeuint32be_0)
+-   [writeUint32LE](.././buffer/~/Buffer#method_writeuint32le_0)
+-   [writeUint8](.././buffer/~/Buffer#method_writeuint8_0)
+-   [writeUintBE](.././buffer/~/Buffer#method_writeuintbe_0)
+-   [writeUintLE](.././buffer/~/Buffer#method_writeuintle_0)
 
 I
 
@@ -230,18 +225,18 @@ I
 
 No documentation available
 
-*   [alloc](.././buffer/~/BufferConstructor#method_alloc_0)
-*   [allocUnsafe](.././buffer/~/BufferConstructor#method_allocunsafe_0)
-*   [allocUnsafeSlow](.././buffer/~/BufferConstructor#method_allocunsafeslow_0)
-*   [byteLength](.././buffer/~/BufferConstructor#method_bytelength_0)
-*   [compare](.././buffer/~/BufferConstructor#method_compare_0)
-*   [concat](.././buffer/~/BufferConstructor#method_concat_0)
-*   [copyBytesFrom](.././buffer/~/BufferConstructor#method_copybytesfrom_0)
-*   [from](.././buffer/~/BufferConstructor#method_from_0)
-*   [isBuffer](.././buffer/~/BufferConstructor#method_isbuffer_0)
-*   [isEncoding](.././buffer/~/BufferConstructor#method_isencoding_0)
-*   [of](.././buffer/~/BufferConstructor#method_of_0)
-*   [poolSize](.././buffer/~/BufferConstructor#property_poolsize)
+-   [alloc](.././buffer/~/BufferConstructor#method_alloc_0)
+-   [allocUnsafe](.././buffer/~/BufferConstructor#method_allocunsafe_0)
+-   [allocUnsafeSlow](.././buffer/~/BufferConstructor#method_allocunsafeslow_0)
+-   [byteLength](.././buffer/~/BufferConstructor#method_bytelength_0)
+-   [compare](.././buffer/~/BufferConstructor#method_compare_0)
+-   [concat](.././buffer/~/BufferConstructor#method_concat_0)
+-   [copyBytesFrom](.././buffer/~/BufferConstructor#method_copybytesfrom_0)
+-   [from](.././buffer/~/BufferConstructor#method_from_0)
+-   [isBuffer](.././buffer/~/BufferConstructor#method_isbuffer_0)
+-   [isEncoding](.././buffer/~/BufferConstructor#method_isencoding_0)
+-   [of](.././buffer/~/BufferConstructor#method_of_0)
+-   [poolSize](.././buffer/~/BufferConstructor#property_poolsize)
 
 I
 
@@ -249,11 +244,9 @@ I
 
 No documentation available
 
-*   [endings](.././buffer/~/FileOptions#property_endings)
-*   [lastModified](.././buffer/~/FileOptions#property_lastmodified)
-*   [type](.././buffer/~/FileOptions#property_type)
-
-### Type Aliases [#](<#Type Aliases>)
+-   [endings](.././buffer/~/FileOptions#property_endings)
+-   [lastModified](.././buffer/~/FileOptions#property_lastmodified)
+-   [type](.././buffer/~/FileOptions#property_type)
 
 T
 
@@ -279,16 +272,14 @@ T
 
 No documentation available
 
-### Variables [#](#Variables)
-
 v
 
 [constants](.././buffer/~/constants "constants")
 
 No documentation available
 
-*   [MAX\_LENGTH](.././buffer/~/constants#property_max_length)
-*   [MAX\_STRING\_LENGTH](.././buffer/~/constants#property_max_string_length)
+-   [MAX\_LENGTH](.././buffer/~/constants#property_max_length)
+-   [MAX\_STRING\_LENGTH](.././buffer/~/constants#property_max_string_length)
 
 v
 
@@ -314,4 +305,4 @@ v
 
 No documentation available
 
-*   [prototype](.././buffer/~/SlowBuffer#property_prototype)
+-   [prototype](.././buffer/~/SlowBuffer#property_prototype)

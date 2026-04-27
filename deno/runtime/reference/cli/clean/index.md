@@ -5,19 +5,20 @@ canonical_url: "https://docs.deno.com/runtime/reference/cli/clean/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:51:25.499Z"
-content_hash: "77e8e031a10b5d59bd172da364cfb8c62bbd2b21b836d053c3c04785451d4fdf"
+last_crawled_at: "2026-04-27T17:26:59.685Z"
+content_hash: "493d7a8eeb1e0127f39328b8b8dd1db4b8ba7e17af09f0ad00bde6e8aca64ac4"
 menu_path: ["deno clean"]
 section_path: []
+content_language: "en"
 ---
-On this page
+**On this page**
 
-*   [Basic usage](#basic-usage)
-*   [Dry run](#dry-run)
-*   [Keeping specific caches](#keeping-specific-caches)
-*   [When to use this](#when-to-use-this)
-*   [Options](#options)
-*   [Dependency management options](#dependency-management-options)
+-   [Basic usage](#basic-usage)
+-   [Dry run](#dry-run)
+-   [Keeping specific caches](#keeping-specific-caches)
+-   [When to use this](#when-to-use-this)
+-   [Options](#options)
+-   [Dependency management options](#dependency-management-options)
 
 `deno clean` removes Deno's global module cache directory. See [Modules](/runtime/fundamentals/modules/) for more information about how Deno caches dependencies.
 
@@ -53,8 +54,8 @@ deno clean --except=npm,jsr
 
 Use `deno clean` when you need to:
 
-*   Resolve issues caused by corrupted or stale cached modules
-*   Free disk space used by cached dependencies
+-   Resolve issues caused by corrupted or stale cached modules
+-   Free disk space used by cached dependencies
 
 Command line usage:
 

@@ -5,21 +5,22 @@ canonical_url: "https://docs.deno.com/runtime/reference/cli/eval/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:53:11.882Z"
-content_hash: "0f7f24fdf25c182aa15f41b41fd006cfa2af2b1bd8958366bf1062330ab6adfd"
+last_crawled_at: "2026-04-27T17:29:09.652Z"
+content_hash: "83981c61071ffd1a04cbb15d1ba0b65afb5a52c6f1cab9c8456d856a99e381d3"
 menu_path: ["deno eval"]
 section_path: []
+content_language: "en"
 ---
-On this page
+**On this page**
 
-*   [Basic usage](#basic-usage)
-*   [CommonJS support](#commonjs-support)
-*   [Printing expression results](#printing-expression-results)
-*   [Reading from stdin](#reading-from-stdin)
-*   [Type checking options](#type-checking-options)
-*   [Dependency management options](#dependency-management-options)
-*   [Options](#options)
-*   [Debugging options](#debugging-options)
+-   [Basic usage](#basic-usage)
+-   [CommonJS support](#commonjs-support)
+-   [Printing expression results](#printing-expression-results)
+-   [Reading from stdin](#reading-from-stdin)
+-   [Type checking options](#type-checking-options)
+-   [Dependency management options](#dependency-management-options)
+-   [Options](#options)
+-   [Debugging options](#debugging-options)
 
 `deno eval` executes a string of code directly from the command line without needing a file. Unlike `deno run`, **`deno eval` runs with all permissions enabled by default**.
 

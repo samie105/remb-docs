@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/app/api-reference/functions/fetch"
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:11:28.835Z"
-content_hash: "be962c525e1bfdd4b96dc1720db4e3749f69d2f886b39eba14d506e07ec7e3d6"
+last_crawled_at: "2026-04-27T18:10:10.237Z"
+content_hash: "a488df0f53e9bd4c83a4d9682bdbdc4acf62d470171b7076e8e383aea71c32b9"
 menu_path: ["fetch"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/api-reference/functions/draft-mode/index.md", "title": "draftMode"}
-nav_next: {"path": "nextjs/docs/app/api-reference/functions/forbidden/index.md", "title": "forbidden"}
+version: "latest"
+content_language: "en"
 ---
+[API Reference](/docs/app/api-reference)[Functions](/docs/app/api-reference/functions)fetch
 
 # fetch
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 Next.js extends the [Web `fetch()` API](https://developer.mozilla.org/docs/Web/API/Fetch_API) to allow each request on the server to set its own persistent caching and revalidation semantics.
 
@@ -24,8 +25,6 @@ In the browser, the `cache` option indicates how a fetch request will interact w
 You can call `fetch` with `async` and `await` directly within Server Components.
 
 app/page.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -55,11 +54,11 @@ Configure how the request should interact with Next.js [caching](/docs/app/getti
 fetch(`https://...`, { cache: 'force-cache' | 'no-store' })
 ```
 
-*   **`auto no cache`** (default): Next.js fetches the resource from the remote server on every request in development, but will fetch once during `next build` because the route will be statically prerendered. If [Request-time APIs](/docs/app/glossary#request-time-apis) are detected on the route, Next.js will fetch the resource on every request.
-*   **`no-store`**: Next.js fetches the resource from the remote server on every request, even if Request-time APIs are not detected on the route.
-*   **`force-cache`**: Next.js looks for a matching request in its server-side cache.
-    *   If there is a match and it is fresh, it will be returned from the cache.
-    *   If there is no match or a stale match, Next.js will fetch the resource from the remote server and update the cache with the downloaded resource.
+-   **`auto no cache`** (default): Next.js fetches the resource from the remote server on every request in development, but will fetch once during `next build` because the route will be statically prerendered. If [Request-time APIs](/docs/app/glossary#request-time-apis) are detected on the route, Next.js will fetch the resource on every request.
+-   **`no-store`**: Next.js fetches the resource from the remote server on every request, even if Request-time APIs are not detected on the route.
+-   **`force-cache`**: Next.js looks for a matching request in its server-side cache.
+    -   If there is a match and it is fresh, it will be returned from the cache.
+    -   If there is no match or a stale match, Next.js will fetch the resource from the remote server and update the cache with the downloaded resource.
 
 ### `options.next.revalidate`[](#optionsnextrevalidate)
 
@@ -69,15 +68,15 @@ fetch(`https://...`, { next: { revalidate: false | 0 | number } })
 
 Set the cache lifetime of a resource (in seconds).
 
-*   **`false`** - Cache the resource indefinitely. Semantically equivalent to `revalidate: Infinity`. The HTTP cache may evict older resources over time.
-*   **`0`** - Prevent the resource from being cached.
-*   **`number`** - (in seconds) Specify the resource should have a cache lifetime of at most `n` seconds.
+-   **`false`** - Cache the resource indefinitely. Semantically equivalent to `revalidate: Infinity`. The HTTP cache may evict older resources over time.
+-   **`0`** - Prevent the resource from being cached.
+-   **`number`** - (in seconds) Specify the resource should have a cache lifetime of at most `n` seconds.
 
 > **Good to know**:
 > 
-> *   If an individual `fetch()` request sets a `revalidate` number lower than the [default `revalidate`](/docs/app/guides/caching-without-cache-components#route-segment-config-revalidate) of a route, the whole route revalidation interval will be decreased.
-> *   If two fetch requests with the same URL in the same route have different `revalidate` values, the lower value will be used.
-> *   Conflicting options such as `{ revalidate: 3600, cache: 'no-store' }` are not allowed, both will be ignored, and in development mode a warning will be printed to the terminal.
+> -   If an individual `fetch()` request sets a `revalidate` number lower than the [default `revalidate`](/docs/app/guides/caching-without-cache-components#route-segment-config-revalidate) of a route, the whole route revalidation interval will be decreased.
+> -   If two fetch requests with the same URL in the same route have different `revalidate` values, the lower value will be used.
+> -   Conflicting options such as `{ revalidate: 3600, cache: 'no-store' }` are not allowed, both will be ignored, and in development mode a warning will be printed to the terminal.
 
 ### `options.next.tags`[](#optionsnexttags)
 
@@ -118,28 +117,8 @@ Browsers typically include `cache-control: no-cache` when the cache is disabled 
 
 ## Version History[](#version-history)
 
-Version
-
-Changes
-
-`v13.0.0`
-
-`fetch` introduced.
-
-[Previous
-
-draftMode
-
-](/docs/app/api-reference/functions/draft-mode)
-
-[Next
-
-forbidden
-
-](/docs/app/api-reference/functions/forbidden)
+| Version | Changes |
+| --- | --- |
+| `v13.0.0` | `fetch` introduced. |
 
 Was this helpful?
-
-supported.
-
-Send

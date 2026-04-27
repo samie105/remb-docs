@@ -5,14 +5,12 @@ canonical_url: "https://orm.drizzle.team/docs/goodies"
 docset: "drizzle"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:02:39.358Z"
-content_hash: "89e688f34feac3ea0d61438a971b1ce7c3c7259f03c243af819f36f0493f07e8"
+last_crawled_at: "2026-04-27T18:56:59.551Z"
+content_hash: "d4e4cbaa20465aa2aa29796a21e9f920368deccc7dcfa652af24139c39e25f28"
 menu_path: ["Drizzle ORM - Goodies"]
 section_path: []
-nav_prev: {"path": "drizzle/docs/custom-types/index.md", "title": "Common way of defining custom types"}
-nav_next: {"path": "drizzle/docs/zod/index.md", "title": "zod"}
+content_language: "en"
 ---
-
 ## Type API[](#type-api)
 
 To retrieve a type from your table schema for `select` and `insert` queries, you can make use of our type helpers.
@@ -29,7 +27,7 @@ MSSQL
 
 CockroachDB
 
-```
+```ts
 import { serial, text, pgTable } from 'drizzle-orm/pg-core';
 import { type InferSelectModel, type InferInsertModel } from 'drizzle-orm'
 
@@ -48,7 +46,7 @@ type SelectUser = InferSelectModel<typeof users>;
 type InsertUser = InferInsertModel<typeof users>;
 ```
 
-```
+```ts
 import { int, text, mysqlTable } from 'drizzle-orm/mysql-core';
 import { type InferSelectModel, type InferInsertModel } from 'drizzle-orm'
 
@@ -67,7 +65,7 @@ type SelectUser = InferSelectModel<typeof users>;
 type InsertUser = InferInsertModel<typeof users>;
 ```
 
-```
+```ts
 import { int, text, sqliteTable } from 'drizzle-orm/sqlite-core';
 import { type InferSelectModel, type InferInsertModel } from 'drizzle-orm'
 
@@ -86,7 +84,7 @@ type SelectUser = InferSelectModel<typeof users>;
 type InsertUser = InferInsertModel<typeof users>;
 ```
 
-```
+```ts
 import { int, text, singlestoreTable } from 'drizzle-orm/singlestore-core';
 import { type InferSelectModel, type InferInsertModel } from 'drizzle-orm'
 
@@ -105,7 +103,7 @@ type SelectUser = InferSelectModel<typeof users>;
 type InsertUser = InferInsertModel<typeof users>;
 ```
 
-```
+```ts
 import { int, text, mssqlTable } from 'drizzle-orm/mssql-core';
 import { type InferSelectModel, type InferInsertModel } from 'drizzle-orm'
 
@@ -124,7 +122,7 @@ type SelectUser = InferSelectModel<typeof users>;
 type InsertUser = InferInsertModel<typeof users>;
 ```
 
-```
+```ts
 import { int4, text, cockroachTable } from 'drizzle-orm/cockroach-core';
 import { type InferSelectModel, type InferInsertModel } from 'drizzle-orm'
 
@@ -147,7 +145,7 @@ type InsertUser = InferInsertModel<typeof users>;
 
 To enable default query logging, just pass `{ logger: true }` to the `drizzle` initialization function:
 
-```
+```typescript
 import { drizzle } from 'drizzle-orm/...'; // driver specific
 
 const db = drizzle({ logger: true });
@@ -155,7 +153,7 @@ const db = drizzle({ logger: true });
 
 You can change the logs destination by creating a `DefaultLogger` instance and providing a custom `writer` to it:
 
-```
+```typescript
 import { DefaultLogger, LogWriter } from 'drizzle-orm/logger';
 import { drizzle } from 'drizzle-orm/...'; // driver specific
 
@@ -171,7 +169,7 @@ const db = drizzle({ logger });
 
 You can also create a custom logger:
 
-```
+```typescript
 import { Logger } from 'drizzle-orm/logger';
 import { drizzle } from 'drizzle-orm/...'; // driver specific
 
@@ -201,7 +199,7 @@ MSSQL
 
 CockroachDB
 
-```
+```ts
 import { serial, text, pgTableCreator } from 'drizzle-orm/pg-core';
 
 const pgTable = pgTableCreator((name) => `project1_${name}`);
@@ -212,7 +210,7 @@ const users = pgTable('users', {
 });
 ```
 
-```
+```ts
 import { int, text, mysqlTableCreator } from 'drizzle-orm/mysql-core';
 
 const mysqlTable = mysqlTableCreator((name) => `project1_${name}`);
@@ -223,7 +221,7 @@ const users = mysqlTable('users', {
 });
 ```
 
-```
+```ts
 import { int, text, sqliteTableCreator } from 'drizzle-orm/sqlite-core';
 
 const sqliteTable = sqliteTableCreator((name) => `project1_${name}`);
@@ -234,7 +232,7 @@ const users = sqliteTable('users', {
 });
 ```
 
-```
+```ts
 import { int, text, singlestoreTableCreator } from 'drizzle-orm/singlestore-core';
 
 const singlestoreTable = singlestoreTableCreator((name) => `project1_${name}`);
@@ -245,7 +243,7 @@ const users = singlestoreTable('users', {
 });
 ```
 
-```
+```ts
 import { int, text, mssqlTableCreator } from 'drizzle-orm/mssql-core';
 
 const mssqlTable = mssqlTableCreator((name) => `project1_${name}`);
@@ -256,7 +254,7 @@ const users = mssqlTable('users', {
 });
 ```
 
-```
+```ts
 import { int4, text, cockroachTableCreator } from 'drizzle-orm/cockroach-core';
 
 const pgTable = cockroachTableCreator((name) => `project1_${name}`);
@@ -267,7 +265,7 @@ const users = pgTable('users', {
 });
 ```
 
-```
+```ts
 import { defineConfig } from "drizzle-kit";
 
 export default defineConfig({
@@ -283,7 +281,7 @@ export default defineConfig({
 
 You can apply multiple `or` filters:
 
-```
+```ts
 tablesFilter: ["project1_*", "project2_*"]
 ```
 
@@ -291,7 +289,7 @@ tablesFilter: ["project1_*", "project2_*"]
 
 You can print SQL queries with `db` instance or by using **[`standalone query builder`](#standalone-query-builder)**.
 
-```
+```typescript
 const query = db
   .select({ id: users.id, name: users.name })
   .from(users)
@@ -320,19 +318,19 @@ MSSQL
 
 CockroachDB
 
-```
+```ts
 const statement = sql`select * from ${users} where ${users.id} = ${userId}`;
 const res: postgres.RowList<Record<string, unknown>[]> = await db.execute(statement)
 ```
 
-```
+```typescript
 import { ..., MySqlQueryResult } from "drizzle-orm/mysql2";
 
 const statement = sql`select * from ${users} where ${users.id} = ${userId}`;
 const res: MySqlRawQueryResult = await db.execute(statement);
 ```
 
-```
+```ts
 const statement = sql`select * from ${users} where ${users.id} = ${userId}`;
 
 const res: unknown[] = db.all(statement)
@@ -341,21 +339,21 @@ const res: unknown[][] = db.values(statement)
 const res: Database.RunResult = db.run(statement)
 ```
 
-```
+```typescript
 import { ..., SingleStoreQueryResult } from "drizzle-orm/singlestore";
 
 const statement = sql`select * from ${users} where ${users.id} = ${userId}`;
 const res: SingleStoreRawQueryResult = await db.execute(statement);
 ```
 
-```
+```typescript
 import { sql } from "drizzle-orm";
 
 const statement = sql`select * from ${users} where ${users.id} = ${userId}`;
 const res = await db.execute(statement);
 ```
 
-```
+```ts
 const statement = sql`select * from ${users} where ${users.id} = ${userId}`;
 const res = await db.execute(statement)
 ```
@@ -376,7 +374,7 @@ MSSQL
 
 CockroachDB
 
-```
+```typescript
 import { QueryBuilder } from 'drizzle-orm/pg-core';
 
 const qb = new QueryBuilder();
@@ -385,7 +383,7 @@ const query = qb.select().from(users).where(eq(users.name, 'Dan'));
 const { sql, params } = query.toSQL();
 ```
 
-```
+```typescript
 import { QueryBuilder } from 'drizzle-orm/mysql-core';
 
 const qb = new QueryBuilder();
@@ -394,7 +392,7 @@ const query = qb.select().from(users).where(eq(users.name, 'Dan'));
 const { sql, params } = query.toSQL();
 ```
 
-```
+```typescript
 import { QueryBuilder } from 'drizzle-orm/sqlite-core';
 
 const qb = new QueryBuilder();
@@ -403,7 +401,7 @@ const query = qb.select().from(users).where(eq(users.name, 'Dan'));
 const { sql, params } = query.toSQL();
 ```
 
-```
+```typescript
 import { QueryBuilder } from 'drizzle-orm/singlestore-core';
 
 const qb = new QueryBuilder();
@@ -412,7 +410,7 @@ const query = qb.select().from(users).where(eq(users.name, 'Dan'));
 const { sql, params } = query.toSQL();
 ```
 
-```
+```typescript
 import { QueryBuilder } from 'drizzle-orm/mssql-core';
 
 const qb = new QueryBuilder();
@@ -421,7 +419,7 @@ const query = qb.select().from(users).where(eq(users.name, 'Dan'));
 const { sql, params } = query.toSQL();
 ```
 
-```
+```typescript
 import { QueryBuilder } from 'drizzle-orm/cockroach-core';
 
 const qb = new QueryBuilder();
@@ -436,7 +434,7 @@ You can get a typed columns map, very useful when you need to omit certain colum
 
 IMPORTANT
 
-`getColumns` available starting from `drizzle-orm@1.0.0-beta.2`(read more [here](drizzle/docs/upgrade-v1/index.md))
+`getColumns` available starting from `drizzle-orm@1.0.0-beta.2`(read more [here](https://orm.drizzle.team/docs/upgrade-v1))
 
 If you are on pre-1 version(like `0.45.1`) then use `getTableColumns`
 
@@ -454,11 +452,7 @@ MSSQL
 
 CockroachDB
 
-index.ts
-
-schema.ts
-
-```
+```ts
 import { getColumns } from "drizzle-orm";
 import { user } from "./schema";
 
@@ -467,7 +461,7 @@ const { password, role, ...rest } = getColumns(user);
 await db.select({ ...rest }).from(users);
 ```
 
-```
+```ts
 import { serial, text, pgTable } from "drizzle-orm/pg-core";
 
 export const user = pgTable("user", {
@@ -479,11 +473,7 @@ export const user = pgTable("user", {
 });
 ```
 
-index.ts
-
-schema.ts
-
-```
+```ts
 import { getColumns } from "drizzle-orm";
 import { user } from "./schema";
 
@@ -492,7 +482,7 @@ const { password, role, ...rest } = getColumns(user);
 await db.select({ ...rest }).from(users);
 ```
 
-```
+```ts
 import { int, text, mysqlTable } from "drizzle-orm/mysql-core";
 
 export const user = mysqlTable("user", {
@@ -504,11 +494,7 @@ export const user = mysqlTable("user", {
 });
 ```
 
-index.ts
-
-schema.ts
-
-```
+```ts
 import { getColumns } from "drizzle-orm";
 import { user } from "./schema";
 
@@ -517,7 +503,7 @@ const { password, role, ...rest } = getColumns(user);
 await db.select({ ...rest }).from(users);
 ```
 
-```
+```ts
 import { integer, text, sqliteTable } from "drizzle-orm/sqlite-core";
 
 export const user = sqliteTable("user", {
@@ -529,11 +515,7 @@ export const user = sqliteTable("user", {
 });
 ```
 
-index.ts
-
-schema.ts
-
-```
+```ts
 import { getColumns } from "drizzle-orm";
 import { user } from "./schema";
 
@@ -542,7 +524,7 @@ const { password, role, ...rest } = getColumns(user);
 await db.select({ ...rest }).from(users);
 ```
 
-```
+```ts
 import { int, text, singlestoreTable } from "drizzle-orm/singlestore-core";
 
 export const user = singlestoreTable("user", {
@@ -554,11 +536,7 @@ export const user = singlestoreTable("user", {
 });
 ```
 
-index.ts
-
-schema.ts
-
-```
+```ts
 import { getColumns } from "drizzle-orm";
 import { user } from "./schema";
 
@@ -567,7 +545,7 @@ const { password, role, ...rest } = getColumns(user);
 await db.select({ ...rest }).from(users);
 ```
 
-```
+```ts
 import { int, text, mssqlTable } from "drizzle-orm/mssql-core";
 
 export const user = mssqlTable("user", {
@@ -579,11 +557,7 @@ export const user = mssqlTable("user", {
 });
 ```
 
-index.ts
-
-schema.ts
-
-```
+```ts
 import { getColumns } from "drizzle-orm";
 import { user } from "./schema";
 
@@ -592,7 +566,7 @@ const { password, role, ...rest } = getColumns(user);
 await db.select({ ...rest }).from(users);
 ```
 
-```
+```ts
 import { int4, text, pgTable } from "drizzle-orm/cockroach-core";
 
 export const user = pgTable("user", {
@@ -618,7 +592,7 @@ MSSQL
 
 CockroachDB
 
-```
+```ts
 import { getTableConfig, pgTable } from 'drizzle-orm/pg-core';
 
 export const table = pgTable(...);
@@ -634,7 +608,7 @@ const {
 } = getTableConfig(table);
 ```
 
-```
+```ts
 import { getTableConfig, mysqlTable } from 'drizzle-orm/mysql-core';
 
 export const table = mysqlTable(...);
@@ -650,7 +624,7 @@ const {
 } = getTableConfig(table);
 ```
 
-```
+```ts
 import { getTableConfig, sqliteTable } from 'drizzle-orm/sqlite-core';
 
 export const table = sqliteTable(...);
@@ -666,7 +640,7 @@ const {
 } = getTableConfig(table);
 ```
 
-```
+```ts
 import { getTableConfig, mysqlTable } from 'drizzle-orm/singlestore-core';
 
 export const table = singlestoreTable(...);
@@ -681,7 +655,7 @@ const {
 } = getTableConfig(table);
 ```
 
-```
+```ts
 import { getTableConfig, mssqlTable } from 'drizzle-orm/mssql-core';
 
 export const table = mssqlTable(...);
@@ -696,7 +670,7 @@ const {
 } = getTableConfig(table);
 ```
 
-```
+```ts
 import { getTableConfig, cockroachTable } from 'drizzle-orm/cockroach-core';
 
 export const table = cockroachTable(...);
@@ -722,7 +696,7 @@ You should always use `is()` instead of `instanceof`
 
 **Few examples**
 
-```
+```ts
 import { Column, is } from 'drizzle-orm';
 
 if (is(value, Column)) {
@@ -736,7 +710,7 @@ This API is a successor to an undefined `drizzle({} as any)` API which we’ve u
 
 We decided to build and expose a proper API, every `drizzle` driver now has `drizzle.mock()`:
 
-```
+```ts
 import { drizzle } from "drizzle-orm/...";
 
 const db = drizzle.mock();
@@ -744,7 +718,7 @@ const db = drizzle.mock();
 
 you can provide schema if necessary for types
 
-```
+```ts
 import { drizzle } from "drizzle-orm/...";
 import * as schema from "./schema"
 

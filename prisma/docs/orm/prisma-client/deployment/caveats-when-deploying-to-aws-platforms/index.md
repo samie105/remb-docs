@@ -5,14 +5,12 @@ canonical_url: "https://www.prisma.io/docs/orm/prisma-client/deployment/caveats-
 docset: "prisma"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:45:38.434Z"
-content_hash: "44287f8ed768e8de6c6f6857a6df84b8c66f314fc21d2be12a3717f916ce8626"
+last_crawled_at: "2026-04-27T19:38:28.559Z"
+content_hash: "81a47dbdc3eb5807042dd1f467737425708f8ccd6ebc40e754ca06168711ce09"
 menu_path: ["Caveats when deploying to AWS platforms"]
 section_path: []
-nav_prev: {"path": "prisma/docs/orm/prisma-client/debugging-and-troubleshooting/handling-exceptions-and-errors/index.md", "title": "Handling exceptions and errors"}
-nav_next: {"path": "prisma/docs/orm/prisma-client/deployment/deploy-database-changes-with-prisma-migrate/index.md", "title": "Deploying database changes with Prisma Migrate"}
+content_language: "en"
 ---
-
 Deployment
 
 Known caveats when deploying to an AWS platform
@@ -30,6 +28,8 @@ AWS Elastic Beanstalk is a PaaS-like deployment service that abstracts away infr
 When deploying an app using Prisma Client to AWS Elastic Beanstalk, Prisma ORM generates the Prisma Client code into `node_modules`. This is typically done in a `postinstall` hook defined in a `package.json`.
 
 Because Beanstalk limits the ability to write to the filesystem in the `postinstall` hook, you need to create an [`.npmrc`](https://docs.npmjs.com/cli/v6/configuring-npm/npmrc/) file in the root of your project and add the following configuration:
+
+.npmrc
 
 ```
 unsafe-perm=true
@@ -71,5 +71,3 @@ The `sslmode=no-verify` setting passes `rejectUnauthorized: false` to the SSL co
 ### [Note](#note)
 
 While using `sslmode=no-verify` can be a quick fix, it bypasses SSL verification and might not meet security requirements for production environments. In such cases, ensure that a valid SSL certificate is properly configured.
-
-[Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/prisma-client/deployment/caveats-when-deploying-to-aws-platforms.mdx)

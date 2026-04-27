@@ -5,28 +5,30 @@ canonical_url: "https://nextjs.org/docs/pages/api-reference/config/eslint"
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:20:08.001Z"
-content_hash: "0bb3bfa3d3c844b7d72c0807ba83b7a080e7048c733cfe07725fc0b4bbeb22e0"
+last_crawled_at: "2026-04-27T18:19:37.328Z"
+content_hash: "431c45d667aae23a558b5049bf3446342141b04a0bf0881ff2089e8a305d0c0c"
 menu_path: ["ESLint"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/pages/api-reference/config/typescript/index.md", "title": "TypeScript"}
-nav_next: {"path": "nextjs/docs/pages/api-reference/cli/index.md", "title": "CLI"}
+version: "latest"
+tab_variants: ["pnpm","npm","yarn","bun","pnpm","npm","yarn","bun","pnpm","npm","yarn","bun","pnpm","npm","yarn","bun"]
+content_language: "en"
 ---
+[API Reference](/docs/pages/api-reference)[Configuration](/docs/pages/api-reference/config)ESLint
 
 # ESLint
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 Next.js provides an ESLint configuration package, [`eslint-config-next`](https://www.npmjs.com/package/eslint-config-next), that makes it easy to catch common issues in your application. It includes the [`@next/eslint-plugin-next`](https://www.npmjs.com/package/@next/eslint-plugin-next) plugin along with recommended rule-sets from [`eslint-plugin-react`](https://www.npmjs.com/package/eslint-plugin-react) and [`eslint-plugin-react-hooks`](https://www.npmjs.com/package/eslint-plugin-react-hooks).
 
 The package provides two main configurations:
 
-*   **`eslint-config-next`**: Base configuration with Next.js, React, and React Hooks rules. Supports both JavaScript and TypeScript files.
-*   **`eslint-config-next/core-web-vitals`**: Includes everything from the base config, plus upgrades rules that impact [Core Web Vitals](https://web.dev/vitals/) from warnings to errors. Recommended for most projects.
+-   **`eslint-config-next`**: Base configuration with Next.js, React, and React Hooks rules. Supports both JavaScript and TypeScript files.
+-   **`eslint-config-next/core-web-vitals`**: Includes everything from the base config, plus upgrades rules that impact [Core Web Vitals](https://web.dev/vitals/) from warnings to errors. Recommended for most projects.
 
 Additionally, for TypeScript projects:
 
-*   **`eslint-config-next/typescript`**: Adds TypeScript-specific linting rules from [`typescript-eslint`](https://typescript-eslint.io/). Use this alongside the base or core-web-vitals config.
+-   **`eslint-config-next/typescript`**: Adds TypeScript-specific linting rules from [`typescript-eslint`](https://typescript-eslint.io/). Use this alongside the base or core-web-vitals config.
 
 ## Setup ESLint[](#setup-eslint)
 
@@ -34,7 +36,21 @@ Get linting working quickly with the ESLint CLI (flat config):
 
 1.  Install ESLint and the Next.js config:
     
-    pnpmnpmyarnbun
+    #### pnpm
+    
+    pnpm
+    
+    #### npm
+    
+    npm
+    
+    #### yarn
+    
+    yarn
+    
+    #### bun
+    
+    bun
     
     Terminal
     
@@ -67,7 +83,21 @@ Get linting working quickly with the ESLint CLI (flat config):
     
 3.  Run ESLint:
     
-    pnpmnpmyarnbun
+    #### pnpm
+    
+    pnpm
+    
+    #### npm
+    
+    npm
+    
+    #### yarn
+    
+    yarn
+    
+    #### bun
+    
+    bun
     
     Terminal
     
@@ -80,107 +110,41 @@ Get linting working quickly with the ESLint CLI (flat config):
 
 The `eslint-config-next` package includes the `recommended` rule-sets from the following ESLint plugins:
 
-*   [`eslint-plugin-react`](https://www.npmjs.com/package/eslint-plugin-react)
-*   [`eslint-plugin-react-hooks`](https://www.npmjs.com/package/eslint-plugin-react-hooks)
-*   [`@next/eslint-plugin-next`](https://www.npmjs.com/package/@next/eslint-plugin-next)
+-   [`eslint-plugin-react`](https://www.npmjs.com/package/eslint-plugin-react)
+-   [`eslint-plugin-react-hooks`](https://www.npmjs.com/package/eslint-plugin-react-hooks)
+-   [`@next/eslint-plugin-next`](https://www.npmjs.com/package/@next/eslint-plugin-next)
 
 ### Rules[](#rules)
 
 The `@next/eslint-plugin-next` rules included are:
 
-Enabled in recommended config
-
-Rule
-
-Description
-
-[@next/next/google-font-display](/docs/messages/google-font-display)
-
-Enforce font-display behavior with Google Fonts.
-
-[@next/next/google-font-preconnect](/docs/messages/google-font-preconnect)
-
-Ensure `preconnect` is used with Google Fonts.
-
-[@next/next/inline-script-id](/docs/messages/inline-script-id)
-
-Enforce `id` attribute on `next/script` components with inline content.
-
-[@next/next/next-script-for-ga](/docs/messages/next-script-for-ga)
-
-Prefer `next/script` component when using the inline script for Google Analytics.
-
-[@next/next/no-assign-module-variable](/docs/messages/no-assign-module-variable)
-
-Prevent assignment to the `module` variable.
-
-[@next/next/no-async-client-component](/docs/messages/no-async-client-component)
-
-Prevent Client Components from being async functions.
-
-[@next/next/no-before-interactive-script-outside-document](/docs/messages/no-before-interactive-script-outside-document)
-
-Prevent usage of `next/script`'s `beforeInteractive` strategy outside of `pages/_document.js`.
-
-[@next/next/no-css-tags](/docs/messages/no-css-tags)
-
-Prevent manual stylesheet tags.
-
-[@next/next/no-document-import-in-page](/docs/messages/no-document-import-in-page)
-
-Prevent importing `next/document` outside of `pages/_document.js`.
-
-[@next/next/no-duplicate-head](/docs/messages/no-duplicate-head)
-
-Prevent duplicate usage of `<Head>` in `pages/_document.js`.
-
-[@next/next/no-head-element](/docs/messages/no-head-element)
-
-Prevent usage of `<head>` element.
-
-[@next/next/no-head-import-in-document](/docs/messages/no-head-import-in-document)
-
-Prevent usage of `next/head` in `pages/_document.js`.
-
-[@next/next/no-html-link-for-pages](/docs/messages/no-html-link-for-pages)
-
-Prevent usage of `<a>` elements to navigate to internal Next.js pages.
-
-[@next/next/no-img-element](/docs/messages/no-img-element)
-
-Prevent usage of `<img>` element due to slower LCP and higher bandwidth.
-
-[@next/next/no-page-custom-font](/docs/messages/no-page-custom-font)
-
-Prevent page-only custom fonts.
-
-[@next/next/no-script-component-in-head](/docs/messages/no-script-component-in-head)
-
-Prevent usage of `next/script` in `next/head` component.
-
-[@next/next/no-styled-jsx-in-document](/docs/messages/no-styled-jsx-in-document)
-
-Prevent usage of `styled-jsx` in `pages/_document.js`.
-
-[@next/next/no-sync-scripts](/docs/messages/no-sync-scripts)
-
-Prevent synchronous scripts.
-
-[@next/next/no-title-in-document-head](/docs/messages/no-title-in-document-head)
-
-Prevent usage of `<title>` with `Head` component from `next/document`.
-
-@next/next/no-typos
-
-Prevent common typos in [Next.js's data fetching functions](/docs/pages/building-your-application/data-fetching)
-
-[@next/next/no-unwanted-polyfillio](/docs/messages/no-unwanted-polyfillio)
-
-Prevent duplicate polyfills from Polyfill.io.
+| Enabled in recommended config | Rule | Description |
+| --- | --- | --- |
+|  | [@next/next/google-font-display](/docs/messages/google-font-display) | Enforce font-display behavior with Google Fonts. |
+|  | [@next/next/google-font-preconnect](/docs/messages/google-font-preconnect) | Ensure `preconnect` is used with Google Fonts. |
+|  | [@next/next/inline-script-id](/docs/messages/inline-script-id) | Enforce `id` attribute on `next/script` components with inline content. |
+|  | [@next/next/next-script-for-ga](/docs/messages/next-script-for-ga) | Prefer `next/script` component when using the inline script for Google Analytics. |
+|  | [@next/next/no-assign-module-variable](/docs/messages/no-assign-module-variable) | Prevent assignment to the `module` variable. |
+|  | [@next/next/no-async-client-component](/docs/messages/no-async-client-component) | Prevent Client Components from being async functions. |
+|  | [@next/next/no-before-interactive-script-outside-document](/docs/messages/no-before-interactive-script-outside-document) | Prevent usage of `next/script`'s `beforeInteractive` strategy outside of `pages/_document.js`. |
+|  | [@next/next/no-css-tags](/docs/messages/no-css-tags) | Prevent manual stylesheet tags. |
+|  | [@next/next/no-document-import-in-page](/docs/messages/no-document-import-in-page) | Prevent importing `next/document` outside of `pages/_document.js`. |
+|  | [@next/next/no-duplicate-head](/docs/messages/no-duplicate-head) | Prevent duplicate usage of `<Head>` in `pages/_document.js`. |
+|  | [@next/next/no-head-element](/docs/messages/no-head-element) | Prevent usage of `<head>` element. |
+|  | [@next/next/no-head-import-in-document](/docs/messages/no-head-import-in-document) | Prevent usage of `next/head` in `pages/_document.js`. |
+|  | [@next/next/no-html-link-for-pages](/docs/messages/no-html-link-for-pages) | Prevent usage of `<a>` elements to navigate to internal Next.js pages. |
+|  | [@next/next/no-img-element](/docs/messages/no-img-element) | Prevent usage of `<img>` element due to slower LCP and higher bandwidth. |
+|  | [@next/next/no-page-custom-font](/docs/messages/no-page-custom-font) | Prevent page-only custom fonts. |
+|  | [@next/next/no-script-component-in-head](/docs/messages/no-script-component-in-head) | Prevent usage of `next/script` in `next/head` component. |
+|  | [@next/next/no-styled-jsx-in-document](/docs/messages/no-styled-jsx-in-document) | Prevent usage of `styled-jsx` in `pages/_document.js`. |
+|  | [@next/next/no-sync-scripts](/docs/messages/no-sync-scripts) | Prevent synchronous scripts. |
+|  | [@next/next/no-title-in-document-head](/docs/messages/no-title-in-document-head) | Prevent usage of `<title>` with `Head` component from `next/document`. |
+|  | @next/next/no-typos | Prevent common typos in [Next.js's data fetching functions](/docs/pages/building-your-application/data-fetching) |
+|  | [@next/next/no-unwanted-polyfillio](/docs/messages/no-unwanted-polyfillio) | Prevent duplicate polyfills from Polyfill.io. |
 
 We recommend using an appropriate [integration](https://eslint.org/docs/user-guide/integrations#editors) to view warnings and errors directly in your code editor during development.
 
-`next lint` removal
+**next lint removal**
 
 Starting with Next.js 16, `next lint` is removed.
 
@@ -312,7 +276,21 @@ ESLint also contains code formatting rules, which can conflict with your existin
 
 First, install the dependency:
 
-pnpmnpmyarnbun
+#### pnpm
+
+pnpm
+
+#### npm
+
+npm
+
+#### yarn
+
+yarn
+
+#### bun
+
+bun
 
 Terminal
 
@@ -372,19 +350,33 @@ If you already have ESLint configured in your application, there are two approac
 
 Use `@next/eslint-plugin-next` directly if you have any of the following already configured:
 
-*   Conflicting plugins installed separately or through another config (such as `airbnb` or `react-app`):
-    *   `react`
-    *   `react-hooks`
-    *   `jsx-a11y`
-    *   `import`
-*   Custom `parserOptions` different from Next.js defaults (only if you have [customized your Babel configuration](/docs/pages/guides/babel))
-*   `eslint-plugin-import` with custom Node.js and/or TypeScript [resolvers](https://github.com/benmosher/eslint-plugin-import#resolvers)
+-   Conflicting plugins installed separately or through another config (such as `airbnb` or `react-app`):
+    -   `react`
+    -   `react-hooks`
+    -   `jsx-a11y`
+    -   `import`
+-   Custom `parserOptions` different from Next.js defaults (only if you have [customized your Babel configuration](/docs/pages/guides/babel))
+-   `eslint-plugin-import` with custom Node.js and/or TypeScript [resolvers](https://github.com/benmosher/eslint-plugin-import#resolvers)
 
 In these cases, use `@next/eslint-plugin-next` directly to avoid conflicts:
 
 First, install the plugin:
 
-pnpmnpmyarnbun
+#### pnpm
+
+pnpm
+
+#### npm
+
+npm
+
+#### yarn
+
+yarn
+
+#### bun
+
+bun
 
 Terminal
 
@@ -440,16 +432,8 @@ When you spread `...nextConfig`, you're adding multiple config objects that incl
 
 > **Good to know:** This approach works well for straightforward setups. If you have a complex existing config with specific file patterns or plugin configurations that conflict, consider using the plugin directly (as shown above) for more granular control.
 
-Version
-
-Changes
-
-`v16.0.0`
-
-`next lint` and the `eslint` next.config.js option were removed in favor of the ESLint CLI. A [codemod](/docs/app/guides/upgrading/codemods#migrate-from-next-lint-to-eslint-cli) is available to help you migrate.
+| Version | Changes |
+| --- | --- |
+| `v16.0.0` | `next lint` and the `eslint` next.config.js option were removed in favor of the ESLint CLI. A [codemod](/docs/app/guides/upgrading/codemods#migrate-from-next-lint-to-eslint-cli) is available to help you migrate. |
 
 Was this helpful?
-
-supported.
-
-Send

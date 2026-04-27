@@ -5,23 +5,26 @@ canonical_url: "https://www.postgresql.org/docs/current/lo-funcs.html"
 docset: "postgres"
 kind: "database"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:40:04.406Z"
-content_hash: "ffe2545fa8c0ba0fe52168846c27cf79dd3fa11b9496f3d0f49048728ec7964a"
+last_crawled_at: "2026-04-27T20:44:49.639Z"
+content_hash: "e5b0fba4b7d9774878bea6aa9efd9eb790e3456d6a42a7bf96eeec693b10c188"
 menu_path: ["PostgreSQL: Documentation: 18: 33.4. Server-Side Functions"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/lo-examplesect.html/index.md", "title": "PostgreSQL: Documentation: 18: 33.5.\u00a0Example Program"}
-nav_next: {"path": "postgres/docs/current/lo-implementation.html/index.md", "title": "PostgreSQL: Documentation: 18: 33.2.\u00a0Implementation Features"}
+content_language: "en"
 ---
-
 Server-side functions tailored for manipulating large objects from SQL are listed in [Table 33.1](https://www.postgresql.org/docs/current/lo-funcs.html#LO-FUNCS-TABLE "Table 33.1. SQL-Oriented Large Object Functions").
 
 **Table 33.1. SQL-Oriented Large Object Functions**
 
+| 
 Function
 
 Description
 
 Example(s)
+
+ |
+| --- |
+| 
 
 `lo_from_bytea` ( _`loid`_ `oid`, _`data`_ `bytea` ) → `oid`
 
@@ -29,17 +32,25 @@ Creates a large object and stores _`data`_ in it. If _`loid`_ is zero then the s
 
 `lo_from_bytea(0, '\xffffff00')` → `24528`
 
+ |
+| 
+
 `lo_put` ( _`loid`_ `oid`, _`offset`_ `bigint`, _`data`_ `bytea` ) → `void`
 
 Writes _`data`_ starting at the given offset within the large object; the large object is enlarged if necessary.
 
 `lo_put(24528, 1, '\xaa')` →
 
+ |
+| 
+
 `lo_get` ( _`loid`_ `oid` \[, _`offset`_ `bigint`, _`length`_ `integer` \] ) → `bytea`
 
 Extracts the large object's contents, or a substring thereof.
 
 `lo_get(24528, 0, 3)` → `\xffaaff`
+
+ |
 
 There are additional server-side functions corresponding to each of the client-side functions described earlier; indeed, for the most part the client-side functions are simply interfaces to the equivalent server-side functions. The ones just as convenient to call via SQL commands are `lo_creat`, `lo_create`, `lo_unlink`, `lo_import`, and `lo_export`. Here are examples of their use:
 

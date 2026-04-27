@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/pages/api-reference/functions/next-reque
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:22:23.334Z"
-content_hash: "10973c1a9b8436c69e6a9fea2a25de1ef875d60482bb5d643938447923134797"
+last_crawled_at: "2026-04-27T18:21:45.975Z"
+content_hash: "be30ebe1849dee35a7b699d74ceddc092d8d79d8db9f05e6204600d79fa0c289"
 menu_path: ["NextRequest"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/pages/api-reference/functions/get-static-props/index.md", "title": "getStaticProps"}
-nav_next: {"path": "nextjs/docs/pages/api-reference/functions/next-response/index.md", "title": "NextResponse"}
+version: "latest"
+content_language: "en"
 ---
+[API Reference](/docs/pages/api-reference)[Functions](/docs/pages/api-reference/functions)NextRequest
 
 # NextRequest
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 NextRequest extends the [Web Request API](https://developer.mozilla.org/docs/Web/API/Request) with additional convenience methods.
 
@@ -98,80 +99,23 @@ request.nextUrl.searchParams
 
 The following options are available:
 
-Property
-
-Type
-
-Description
-
-`basePath`
-
-`string`
-
-The [base path](/docs/pages/api-reference/config/next-config-js/basePath) of the URL.
-
-`buildId`
-
-`string` | `undefined`
-
-The build identifier of the Next.js application. Can be [customized](/docs/pages/api-reference/config/next-config-js/generateBuildId).
-
-`defaultLocale`
-
-`string` | `undefined`
-
-The default locale for [internationalization](/docs/pages/guides/internationalization).
-
-`domainLocale`
-
-\- `defaultLocale`
-
-`string`
-
-The default locale within a domain.
-
-\- `domain`
-
-`string`
-
-The domain associated with a specific locale.
-
-\- `http`
-
-`boolean` | `undefined`
-
-Indicates if the domain is using HTTP.
-
-`locales`
-
-`string[]` | `undefined`
-
-An array of available locales.
-
-`locale`
-
-`string` | `undefined`
-
-The currently active locale.
-
-`url`
-
-`URL`
-
-The URL object.
+| Property | Type | Description |
+| --- | --- | --- |
+| `basePath` | `string` | The [base path](/docs/pages/api-reference/config/next-config-js/basePath) of the URL. |
+| `buildId` | `string` | `undefined` | The build identifier of the Next.js application. Can be [customized](/docs/pages/api-reference/config/next-config-js/generateBuildId). |
+| `defaultLocale` | `string` | `undefined` | The default locale for [internationalization](/docs/pages/guides/internationalization). |
+| `domainLocale` |  |  |
+| \- `defaultLocale` | `string` | The default locale within a domain. |
+| \- `domain` | `string` | The domain associated with a specific locale. |
+| \- `http` | `boolean` | `undefined` | Indicates if the domain is using HTTP. |
+| `locales` | `string[]` | `undefined` | An array of available locales. |
+| `locale` | `string` | `undefined` | The currently active locale. |
+| `url` | `URL` | The URL object. |
 
 ## Version History[](#version-history)
 
-Version
-
-Changes
-
-`v15.0.0`
-
-`ip` and `geo` removed.
+| Version | Changes |
+| --- | --- |
+| `v15.0.0` | `ip` and `geo` removed. |
 
 Was this helpful?
-
-supported.
-
-Send

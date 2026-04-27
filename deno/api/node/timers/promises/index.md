@@ -5,10 +5,11 @@ canonical_url: "https://docs.deno.com/api/node/timers/promises/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:42:09.912Z"
-content_hash: "979c647c32fdfa90c47f452ad688748fa5f5ed1c9bf2be933d039970a07f1fa8"
+last_crawled_at: "2026-04-27T17:14:20.577Z"
+content_hash: "3731f17a53ba54b7d294ff6ddd53f45585ec445b09f9cdee5d90e786121462b2"
 menu_path: ["timers/promises - Node documentation"]
 section_path: []
+content_language: "en"
 ---
 ### Usage in Deno
 
@@ -25,8 +26,6 @@ import {
   setInterval,
 } from 'node:timers/promises';
 ```
-
-### Functions [#](#Functions)
 
 f
 
@@ -46,18 +45,14 @@ f
 
 No documentation available
 
-### Interfaces [#](#Interfaces)
-
 I
 
 [Scheduler](../.././timers/promises/~/Scheduler "Scheduler")
 
 No documentation available
 
-*   [wait](../.././timers/promises/~/Scheduler#method_wait_0)
-*   [yield](../.././timers/promises/~/Scheduler#method_yield_0)
-
-### Variables [#](#Variables)
+-   [wait](../.././timers/promises/~/Scheduler#method_wait_0)
+-   [yield](../.././timers/promises/~/Scheduler#method_yield_0)
 
 v
 

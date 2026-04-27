@@ -5,14 +5,13 @@ canonical_url: "https://www.prisma.io/docs/orm/prisma-client/type-safety"
 docset: "prisma"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:49:09.357Z"
-content_hash: "1101598ba2505eb4a24636473af3f8af2df076717e1ac2963368b37b59379bd7"
+last_crawled_at: "2026-04-27T19:40:17.732Z"
+content_hash: "d8ab059c7b94576e3e885ea756520f64f257919589c725db22d93776b0bd8f07"
 menu_path: ["Type safety Overview"]
 section_path: []
-nav_prev: {"path": "prisma/docs/orm/prisma-client/testing/unit-testing/index.md", "title": "Unit testing"}
-nav_next: {"path": "prisma/docs/orm/prisma-client/type-safety/operating-against-partial-structures-of-model-types/index.md", "title": "Operating against partial structures of your model types"}
+tab_variants: ["Generated type","Model","Generated type","Example query","Generated type","Example query"]
+content_language: "en"
 ---
-
 Prisma Client provides full type safety for queries, even for partial queries or included relations. This page explains how to leverage the generated types and utilities
 
 The generated code for Prisma Client contains several helpful types and utilities that you can use to make your application more type-safe. This page describes patterns for leveraging them.
@@ -38,7 +37,7 @@ const createUser = await prisma.user.create({
 });
 ```
 
-See also: [Using the `Prisma.UserCreateInput` generated type](prisma/docs/orm/prisma-client/queries/crud/index.md#create-a-single-record)
+See also: [Using the `Prisma.UserCreateInput` generated type](https://www.prisma.io/docs/orm/prisma-client/queries/crud#create-a-single-record)
 
 Generated types are TypeScript types that are derived from your models. You can use them to create typed objects that you pass into top-level methods like `prisma.user.create(...)` or `prisma.user.update(...)`, or options such as `select` or `include`.
 
@@ -96,11 +95,11 @@ userPosts.posts;
 userPosts.profile;
 ```
 
-> See the [model query options](prisma/docs/orm/reference/prisma-client-reference/index.md#model-query-options) reference for more information about the different types available.
+> See the [model query options](https://www.prisma.io/docs/orm/reference/prisma-client-reference#model-query-options) reference for more information about the different types available.
 
 ### [Generated `UncheckedInput` types](#generated-uncheckedinput-types)
 
-The `UncheckedInput` types are a special set of generated types that allow you to perform some operations that Prisma Client considers "unsafe", like directly writing [relation scalar fields](prisma/docs/orm/prisma-schema/data-model/relations/index.md). You can choose either the "safe" `Input` types or the "unsafe" `UncheckedInput` type when doing operations like `create`, `update`, or `upsert`.
+The `UncheckedInput` types are a special set of generated types that allow you to perform some operations that Prisma Client considers "unsafe", like directly writing [relation scalar fields](https://www.prisma.io/docs/orm/prisma-schema/data-model/relations). You can choose either the "safe" `Input` types or the "unsafe" `UncheckedInput` type when doing operations like `create`, `update`, or `upsert`.
 
 For example, this Prisma schema has a one-to-many relation between `User` and `Post`:
 
@@ -125,22 +124,22 @@ The first tab shows the `PostUncheckedCreateInput` generated type. It contains t
 
 The same query can be rewritten using the "safer" `PostCreateInput` type. This type does not contain the `authorId` field but instead contains the `author` relation field.
 
-This query will also result in an error if an author with an `id` of `1` does not exist. In this case, Prisma Client will give a more descriptive error message. You can also use the [`connectOrCreate`](prisma/docs/orm/reference/prisma-client-reference/index.md#connectorcreate) API to safely create a new user if one does not already exist with the given `id`.
+This query will also result in an error if an author with an `id` of `1` does not exist. In this case, Prisma Client will give a more descriptive error message. You can also use the [`connectOrCreate`](https://www.prisma.io/docs/orm/reference/prisma-client-reference#connectorcreate) API to safely create a new user if one does not already exist with the given `id`.
 
 We recommend using the "safe" `Input` types whenever possible.
 
 To help you create highly type-safe applications, Prisma Client provides a set of type utilities that tap into input and output types. These types are fully dynamic, which means that they adapt to any given model and schema. You can use them to improve the auto-completion and developer experience of your projects.
 
-This is especially useful in [shared Prisma Client extensions](prisma/docs/orm/prisma-client/client-extensions/shared-extensions/index.md).
+This is especially useful in [shared Prisma Client extensions](https://www.prisma.io/docs/orm/prisma-client/client-extensions/shared-extensions).
 
 The following type utilities are available in Prisma Client:
 
-*   `Exact<Input, Shape>`: Enforces strict type safety on `Input`. `Exact` makes sure that a generic type `Input` strictly complies with the type that you specify in `Shape`. It [narrows](https://www.typescriptlang.org/docs/handbook/2/narrowing.html) `Input` down to the most precise types.
-*   `Args<Type, Operation>`: Retrieves the input arguments for any given model and operation. This is particularly useful for extension authors who want to do the following:
-    *   Re-use existing types to extend or modify them.
-    *   Benefit from the same auto-completion experience as on existing operations.
-*   `Result<Type, Arguments, Operation>`: Takes the input arguments and provides the result for a given model and operation. You would usually use this in conjunction with `Args`. As with `Args`, `Result` helps you to re-use existing types to extend or modify them.
-*   `Payload<Type, Operation>`: Retrieves the entire structure of the result, as scalars and relations objects for a given model and operation. For example, you can use this to determine which keys are scalars or objects at a type level.
+-   `Exact<Input, Shape>`: Enforces strict type safety on `Input`. `Exact` makes sure that a generic type `Input` strictly complies with the type that you specify in `Shape`. It [narrows](https://www.typescriptlang.org/docs/handbook/2/narrowing.html) `Input` down to the most precise types.
+-   `Args<Type, Operation>`: Retrieves the input arguments for any given model and operation. This is particularly useful for extension authors who want to do the following:
+    -   Re-use existing types to extend or modify them.
+    -   Benefit from the same auto-completion experience as on existing operations.
+-   `Result<Type, Arguments, Operation>`: Takes the input arguments and provides the result for a given model and operation. You would usually use this in conjunction with `Args`. As with `Args`, `Result` helps you to re-use existing types to extend or modify them.
+-   `Payload<Type, Operation>`: Retrieves the entire structure of the result, as scalars and relations objects for a given model and operation. For example, you can use this to determine which keys are scalars or objects at a type level.
 
 As an example, here's a quick way you can enforce that the arguments to a function matches what you will pass to a `post.create`:
 

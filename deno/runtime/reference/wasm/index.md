@@ -5,23 +5,24 @@ canonical_url: "https://docs.deno.com/runtime/reference/wasm/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:07:47.479Z"
-content_hash: "db2440622a87d0090ec75cf2c5d3f9d7544f80aff8638d0e1cad3ce349113c67"
+last_crawled_at: "2026-04-27T17:50:36.645Z"
+content_hash: "f0dbdc18b7d70f560128bb08f32514e4d077fd98104600e0607d84c3cd91101f"
 menu_path: ["WebAssembly"]
 section_path: []
+content_language: "en"
 ---
-On this page
+**On this page**
 
-*   [Wasm modules](#wasm-modules)
-    *   [Type Checking](#type-checking)
-    *   [Imports](#imports)
-        *   [Overriding import specifiers](#overriding-import-specifiers)
-*   [Using WebAssembly via the WebAssembly API](#using-webassembly-via-the-webassembly-api)
-*   [Using the Streaming WebAssembly APIs](#using-the-streaming-webassembly-apis)
-*   [WebAssembly API](#webassembly-api)
-*   [Working with Non-Numeric Types](#working-with-non-numeric-types)
-*   [Using wasmbuild for Rust WebAssembly in Deno](#using-wasmbuild-for-rust-webassembly-in-deno)
-*   [Optimization](#optimization)
+-   [Wasm modules](#wasm-modules)
+    -   [Type Checking](#type-checking)
+    -   [Imports](#imports)
+        -   [Overriding import specifiers](#overriding-import-specifiers)
+-   [Using WebAssembly via the WebAssembly API](#using-webassembly-via-the-webassembly-api)
+-   [Using the Streaming WebAssembly APIs](#using-the-streaming-webassembly-apis)
+-   [WebAssembly API](#webassembly-api)
+-   [Working with Non-Numeric Types](#working-with-non-numeric-types)
+-   [Using wasmbuild for Rust WebAssembly in Deno](#using-wasmbuild-for-rust-webassembly-in-deno)
+-   [Optimization](#optimization)
 
 Designed to be used alongside JavaScript to speed up key application components, [WebAssembly](https://webassembly.org/) (Wasm) can have much higher, and more consistent execution speed than JavaScript - similar to C, C++, or Rust. Deno can execute WebAssembly modules with the same interfaces that [browsers provide](https://developer.mozilla.org/en-US/docs/WebAssembly) and by importing them as modules.
 

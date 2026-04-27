@@ -5,19 +5,20 @@ canonical_url: "https://docs.deno.com/runtime/reference/cli/env_variables/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:53:07.770Z"
-content_hash: "2ff8d370cb37e0971257040756a17352c4b85a9a62ac883b509e4afc6a162ab5"
+last_crawled_at: "2026-04-27T17:28:56.724Z"
+content_hash: "4e5e62fd155b5482f97475677da3d885472a25000dfd7fe2554cc2e16f89225c"
 menu_path: ["Environment variables"]
 section_path: []
+content_language: "en"
 ---
-On this page
+**On this page**
 
-*   [Built-in Deno.env method](#built-in-deno.env-method)
-*   [.env file](#.env-file)
-*   [@std/dotenv](#%40std%2Fdotenv)
-*   [Set a variable when running a command](#set-a-variable-when-running-a-command)
-*   [std/cli](#std%2Fcli)
-*   [Special environment variables](#special-environment-variables)
+-   [Built-in Deno.env method](#built-in-deno.env-method)
+-   [.env file](#.env-file)
+-   [@std/dotenv](#%40std%2Fdotenv)
+-   [Set a variable when running a command](#set-a-variable-when-running-a-command)
+-   [std/cli](#std%2Fcli)
+-   [Special environment variables](#special-environment-variables)
 
 There are a few ways to use environment variables in Deno:
 
@@ -132,91 +133,30 @@ The Deno Standard Library has a [`std/cli` module](https://jsr.io/@std/cli) for 
 
 The Deno runtime has these special environment variables.
 
-name
-
-description
-
-DENO\_AUTH\_TOKENS
-
-A semi-colon separated list of bearer tokens and hostnames to use when fetching remote modules from private repositories  
-(e.g. `abcde12345@deno.land;54321edcba@github.com`)
-
-DENO\_TLS\_CA\_STORE
-
-Comma-separated list of order dependent certificate stores.  
-Possible values: `system`, `mozilla`. Defaults to `mozilla`.
-
-DENO\_CERT
-
-Load certificate authority from PEM encoded file
-
-DENO\_COVERAGE\_DIR
-
-Set the directory for collecting coverage profile data. This option only works for [`deno test` subcommand](/runtime/reference/cli/test/).
-
-DENO\_DIR
-
-Set the cache directory
-
-DENO\_INSTALL\_ROOT
-
-Set deno install's output directory (defaults to `$HOME/.deno/bin`)
-
-DENO\_REPL\_HISTORY
-
-Set REPL history file path History file is disabled when the value is empty  
-(defaults to `$DENO_DIR/deno_history.txt`)
-
-DENO\_NO\_PACKAGE\_JSON
-
-Disables auto-resolution of `package.json`
-
-DENO\_NO\_PROMPT
-
-Set to disable permission prompts on access  
-(alternative to passing `--no-prompt` on invocation)
-
-DENO\_NO\_UPDATE\_CHECK
-
-Set to disable checking if a newer Deno version is available
-
-DENO\_V8\_FLAGS
-
-Set V8 command line options
-
-DENO\_JOBS
-
-Number of parallel workers used for the `--parallel` flag with the test subcommand.  
-Defaults to number of available CPUs.
-
-DENO\_KV\_ACCESS\_TOKEN
-
-Personal access token used when connecting to Deno KV databases (for example via [`Deno.openKv`](/api/deno/~/Deno.openKv) or `@deno/kv` with a KV Connect URL).
-
-DENO\_WEBGPU\_TRACE
-
-Path to a directory to output a [WGPU trace](https://github.com/gfx-rs/wgpu/pull/619) to when using the WebGPU API
-
-DENO\_WEBGPU\_BACKEND
-
-Select the backend WebGPU will use, or a comma separated list of backends in order of preference. Possible values are `vulkan`, `dx12`, `metal`, or `opengl`
-
-HTTP\_PROXY
-
-Proxy address for HTTP requests (module downloads, fetch)
-
-HTTPS\_PROXY
-
-Proxy address for HTTPS requests (module downloads, fetch)
-
-NPM\_CONFIG\_REGISTRY
-
-URL to use for the npm registry.
-
-NO\_COLOR
-
-Set to disable color
-
-NO\_PROXY
-
-Comma-separated list of hosts which do not use a proxy (module downloads, fetch)
+| name | description |
+| --- | --- |
+| DENO\_AUTH\_TOKENS | A semi-colon separated list of bearer tokens and hostnames to use when fetching remote modules from private repositories  
+(e.g. `abcde12345@deno.land;54321edcba@github.com`) |
+| DENO\_TLS\_CA\_STORE | Comma-separated list of order dependent certificate stores.  
+Possible values: `system`, `mozilla`. Defaults to `mozilla`. |
+| DENO\_CERT | Load certificate authority from PEM encoded file |
+| DENO\_COVERAGE\_DIR | Set the directory for collecting coverage profile data. This option only works for [`deno test` subcommand](/runtime/reference/cli/test/). |
+| DENO\_DIR | Set the cache directory |
+| DENO\_INSTALL\_ROOT | Set deno install's output directory (defaults to `$HOME/.deno/bin`) |
+| DENO\_REPL\_HISTORY | Set REPL history file path History file is disabled when the value is empty  
+(defaults to `$DENO_DIR/deno_history.txt`) |
+| DENO\_NO\_PACKAGE\_JSON | Disables auto-resolution of `package.json` |
+| DENO\_NO\_PROMPT | Set to disable permission prompts on access  
+(alternative to passing `--no-prompt` on invocation) |
+| DENO\_NO\_UPDATE\_CHECK | Set to disable checking if a newer Deno version is available |
+| DENO\_V8\_FLAGS | Set V8 command line options |
+| DENO\_JOBS | Number of parallel workers used for the `--parallel` flag with the test subcommand.  
+Defaults to number of available CPUs. |
+| DENO\_KV\_ACCESS\_TOKEN | Personal access token used when connecting to Deno KV databases (for example via [`Deno.openKv`](/api/deno/~/Deno.openKv) or `@deno/kv` with a KV Connect URL). |
+| DENO\_WEBGPU\_TRACE | Path to a directory to output a [WGPU trace](https://github.com/gfx-rs/wgpu/pull/619) to when using the WebGPU API |
+| DENO\_WEBGPU\_BACKEND | Select the backend WebGPU will use, or a comma separated list of backends in order of preference. Possible values are `vulkan`, `dx12`, `metal`, or `opengl` |
+| HTTP\_PROXY | Proxy address for HTTP requests (module downloads, fetch) |
+| HTTPS\_PROXY | Proxy address for HTTPS requests (module downloads, fetch) |
+| NPM\_CONFIG\_REGISTRY | URL to use for the npm registry. |
+| NO\_COLOR | Set to disable color |
+| NO\_PROXY | Comma-separated list of hosts which do not use a proxy (module downloads, fetch) |

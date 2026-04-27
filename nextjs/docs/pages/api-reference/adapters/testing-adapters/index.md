@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/pages/api-reference/adapters/testing-ada
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:19:22.789Z"
-content_hash: "aeba7fdc63f94cfdb62644761b071a8a4ced1cb34402a378fb91960c3a4434b5"
+last_crawled_at: "2026-04-27T18:18:43.107Z"
+content_hash: "38445555ea06dacf9e255c6ae13e125625d8735f6f92eebfd1903d7da5e6e9a2"
 menu_path: ["Testing Adapters"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/pages/api-reference/adapters/api-reference/index.md", "title": "API Reference"}
-nav_next: {"path": "nextjs/docs/pages/api-reference/adapters/routing-with-next-routing/index.md", "title": "Routing with @next/routing"}
+version: "latest"
+content_language: "en"
 ---
+[API Reference](/docs/pages/api-reference)[Adapters](/docs/pages/api-reference/adapters)Testing Adapters
 
 # Testing Adapters
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 Next.js provides a test harness for validating adapters. Running the end-to-end tests for deployment.
 
@@ -151,9 +152,9 @@ jobs:
 
 The test harness looks for these environment variables:
 
-*   `NEXT_TEST_DEPLOY_SCRIPT_PATH`: Path to the executable that builds and deploys the isolated test app
-*   `NEXT_TEST_DEPLOY_LOGS_SCRIPT_PATH`: Path to the executable that returns build and runtime logs for that deployment
-*   `NEXT_TEST_CLEANUP_SCRIPT_PATH`: Path to the optional executable that tears the deployment down after the test run
+-   `NEXT_TEST_DEPLOY_SCRIPT_PATH`: Path to the executable that builds and deploys the isolated test app
+-   `NEXT_TEST_DEPLOY_LOGS_SCRIPT_PATH`: Path to the executable that returns build and runtime logs for that deployment
+-   `NEXT_TEST_CLEANUP_SCRIPT_PATH`: Path to the optional executable that tears the deployment down after the test run
 
 ## Custom deploy script contract[](#custom-deploy-script-contract)
 
@@ -161,9 +162,9 @@ The deploy script `NEXT_TEST_DEPLOY_SCRIPT_PATH` is executed with `cwd` set to t
 
 The deploy script must follow this contract:
 
-*   Exit with a non-zero code on failure.
-*   Print the deployment URL to `stdout`. This will be used to verify the deployment. Avoid writing anything else to `stdout`.
-*   Write diagnostic output to `stderr` or to files inside the working directory.
+-   Exit with a non-zero code on failure.
+-   Print the deployment URL to `stdout`. This will be used to verify the deployment. Avoid writing anything else to `stdout`.
+-   Write diagnostic output to `stderr` or to files inside the working directory.
 
 Because the deploy script and logs script run as separate processes, any data you want to use later, such as build IDs or server logs, should be persisted to files inside the working directory.
 
@@ -217,9 +218,9 @@ Additionally it receives `NEXT_TEST_DIR` and `NEXT_TEST_DEPLOY_URL` as environme
 
 Its output must include lines starting with:
 
-*   `BUILD_ID:`
-*   `DEPLOYMENT_ID:`
-*   `IMMUTABLE_ASSET_TOKEN:` (use the value `undefined` if your adapter does not produce one)
+-   `BUILD_ID:`
+-   `DEPLOYMENT_ID:`
+-   `IMMUTABLE_ASSET_TOKEN:` (use the value `undefined` if your adapter does not produce one)
 
 After those markers, the logs script can print any additional build or server logs that would help debug failures.
 
@@ -250,7 +251,3 @@ Additionally it receives `NEXT_TEST_DIR` and `NEXT_TEST_DEPLOY_URL` as environme
 The cleanup script can be used to clean up any resources created by the deploy script. It runs after the tests have completed.
 
 Was this helpful?
-
-supported.
-
-Send

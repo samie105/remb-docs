@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/app/api-reference/functions/image-respon
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:11:51.599Z"
-content_hash: "b2387079ca2a6c8780cde79cb1cadabcc9e0f1353fa5e14ea7f64be29be10d77"
+last_crawled_at: "2026-04-27T18:10:32.662Z"
+content_hash: "1e11d112f14ad9876fea9e40bf13db3bbc413645000c3bca39fdb22e20e4ab81"
 menu_path: ["ImageResponse"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/api-reference/functions/headers/index.md", "title": "headers"}
-nav_next: {"path": "nextjs/docs/app/api-reference/functions/next-request/index.md", "title": "NextRequest"}
+version: "latest"
+content_language: "en"
 ---
+[API Reference](/docs/app/api-reference)[Functions](/docs/app/api-reference/functions)ImageResponse
 
 # ImageResponse
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 The `ImageResponse` constructor allows you to generate dynamic images using JSX and CSS. This is useful for generating social media images such as Open Graph images, Twitter cards, and more.
 
@@ -60,10 +61,10 @@ Please refer to [Satori’s documentation](https://github.com/vercel/satori#css)
 
 ## Behavior[](#behavior)
 
-*   `ImageResponse` uses [@vercel/og](https://vercel.com/docs/concepts/functions/edge-functions/og-image-generation), [Satori](https://github.com/vercel/satori), and Resvg to convert HTML and CSS into PNG.
-*   Only flexbox and a subset of CSS properties are supported. Advanced layouts (e.g. `display: grid`) will not work.
-*   Maximum bundle size of `500KB`. The bundle size includes your JSX, CSS, fonts, images, and any other assets. If you exceed the limit, consider reducing the size of any assets or fetching at runtime.
-*   Only `ttf`, `otf`, and `woff` font formats are supported. To maximize the font parsing speed, `ttf` or `otf` are preferred over `woff`.
+-   `ImageResponse` uses [@vercel/og](https://vercel.com/docs/concepts/functions/edge-functions/og-image-generation), [Satori](https://github.com/vercel/satori), and Resvg to convert HTML and CSS into PNG.
+-   Only flexbox and a subset of CSS properties are supported. Advanced layouts (e.g. `display: grid`) will not work.
+-   Maximum bundle size of `500KB`. The bundle size includes your JSX, CSS, fonts, images, and any other assets. If you exceed the limit, consider reducing the size of any assets or fetching at runtime.
+-   Only `ttf`, `otf`, and `woff` font formats are supported. To maximize the font parsing speed, `ttf` or `otf` are preferred over `woff`.
 
 ## Examples[](#examples)
 
@@ -225,36 +226,10 @@ export default async function Image() {
 
 ## Version History[](#version-history)
 
-Version
-
-Changes
-
-`v14.0.0`
-
-`ImageResponse` moved from `next/server` to `next/og`
-
-`v13.3.0`
-
-`ImageResponse` can be imported from `next/server`.
-
-`v13.0.0`
-
-`ImageResponse` introduced via `@vercel/og` package.
-
-[Previous
-
-headers
-
-](/docs/app/api-reference/functions/headers)
-
-[Next
-
-NextRequest
-
-](/docs/app/api-reference/functions/next-request)
+| Version | Changes |
+| --- | --- |
+| `v14.0.0` | `ImageResponse` moved from `next/server` to `next/og` |
+| `v13.3.0` | `ImageResponse` can be imported from `next/server`. |
+| `v13.0.0` | `ImageResponse` introduced via `@vercel/og` package. |
 
 Was this helpful?
-
-supported.
-
-Send

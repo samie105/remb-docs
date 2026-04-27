@@ -5,30 +5,29 @@ canonical_url: "https://nextjs.org/docs/app/getting-started/linking-and-navigati
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:13:25.195Z"
-content_hash: "b067d948be1ce0f8626a6fff1a2d5663961fb2257b732bf42295cbf6cfae82bb"
+last_crawled_at: "2026-04-27T18:12:09.899Z"
+content_hash: "a2b5805b950da579573d6bb5c4fe422512b1d11f44a1ac5c5efd5305269195e8"
 menu_path: ["Linking and Navigating"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/getting-started/layouts-and-pages/index.md", "title": "Layouts and Pages"}
-nav_next: {"path": "nextjs/docs/app/getting-started/server-and-client-components/index.md", "title": "Server and Client Components"}
+version: "latest"
+content_language: "en"
 ---
+[App Router](/docs/app)[Getting Started](/docs/app/getting-started)Linking and Navigating
 
 # Linking and Navigating
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 In Next.js, routes are rendered on the server by default. This often means the client has to wait for a server response before a new route can be shown. Next.js comes with built-in [prefetching](#prefetching), [streaming](#streaming), and [client-side transitions](#client-side-transitions) ensuring navigation stays fast and responsive.
 
 This guide explains how navigation works in Next.js and how you can optimize it for [dynamic routes](#dynamic-routes-without-loadingtsx) and [slow networks](#slow-networks).
 
-## How navigation works[](#how-navigation-works)
-
 To understand how navigation works in Next.js, it helps to be familiar with the following concepts:
 
-*   [Server Rendering](#server-rendering)
-*   [Prefetching](#prefetching)
-*   [Streaming](#streaming)
-*   [Client-side transitions](#client-side-transitions)
+-   [Server Rendering](#server-rendering)
+-   [Prefetching](#prefetching)
+-   [Streaming](#streaming)
+-   [Client-side transitions](#client-side-transitions)
 
 ### Server Rendering[](#server-rendering)
 
@@ -36,8 +35,8 @@ In Next.js, [Layouts and Pages](/docs/app/getting-started/layouts-and-pages) are
 
 There are two types of server rendering, based on _when_ it happens:
 
-*   **Prerendering** happens at build time or during [revalidation](/docs/app/getting-started/revalidating) and the result is cached.
-*   **Dynamic Rendering** happens at request time in response to a client request.
+-   **Prerendering** happens at build time or during [revalidation](/docs/app/getting-started/revalidating) and the result is cached.
+-   **Dynamic Rendering** happens at request time in response to a client request.
 
 The trade-off of server rendering is that the client must wait for the server to respond before the new route can be shown. Next.js addresses this delay by [prefetching](#prefetching) routes the user is likely to visit and performing [client-side transitions](#client-side-transitions).
 
@@ -50,8 +49,6 @@ Prefetching is the process of loading a route in the background before the user 
 Next.js automatically prefetches routes linked with the [`<Link>` component](/docs/app/api-reference/components/link) when they enter the user's viewport.
 
 app/layout.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -77,12 +74,12 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
 How much of the route is prefetched depends on whether it's static or dynamic:
 
-*   **Static Route**: the full route is prefetched.
-*   **Dynamic Route**: prefetching is skipped, or the route is partially prefetched if [`loading.tsx`](/docs/app/api-reference/file-conventions/loading) is present.
+-   **Static Route**: the full route is prefetched.
+-   **Dynamic Route**: prefetching is skipped, or the route is partially prefetched if [`loading.tsx`](/docs/app/api-reference/file-conventions/loading) is present.
 
 By skipping or partially prefetching dynamic routes, Next.js avoids unnecessary work on the server for routes the users may never visit. However, waiting for a server response before navigation can give the users the impression that the app is not responding.
 
-![Server Rendering without Streaming](/_next/image?url=https%3A%2F%2Fh8DxKfmAPhn8O0p3.public.blob.vercel-storage.com%2Fdocs%2Flight%2Fserver-rendering-without-streaming.png&w=3840&q=75)![Server Rendering without Streaming](/_next/image?url=https%3A%2F%2Fh8DxKfmAPhn8O0p3.public.blob.vercel-storage.com%2Fdocs%2Fdark%2Fserver-rendering-without-streaming.png&w=3840&q=75)
+![Server Rendering without Streaming](https://h8DxKfmAPhn8O0p3.public.blob.vercel-storage.com/docs/light/server-rendering-without-streaming.png)
 
 To improve the navigation experience to dynamic routes, you can use [streaming](#streaming).
 
@@ -92,15 +89,13 @@ Streaming allows the server to send parts of a dynamic route to the client as so
 
 For dynamic routes, it means they can be **partially prefetched**. That is, shared layouts and loading skeletons can be requested ahead of time.
 
-![How Server Rendering with Streaming Works](/_next/image?url=https%3A%2F%2Fh8DxKfmAPhn8O0p3.public.blob.vercel-storage.com%2Fdocs%2Flight%2Fserver-rendering-with-streaming.png&w=3840&q=75)![How Server Rendering with Streaming Works](/_next/image?url=https%3A%2F%2Fh8DxKfmAPhn8O0p3.public.blob.vercel-storage.com%2Fdocs%2Fdark%2Fserver-rendering-with-streaming.png&w=3840&q=75)
+![How Server Rendering with Streaming Works](https://h8DxKfmAPhn8O0p3.public.blob.vercel-storage.com/docs/light/server-rendering-with-streaming.png)
 
 To use streaming, create a `loading.tsx` in your route folder:
 
-![loading.js special file](/_next/image?url=https%3A%2F%2Fh8DxKfmAPhn8O0p3.public.blob.vercel-storage.com%2Fdocs%2Flight%2Floading-special-file.png&w=3840&q=75)![loading.js special file](/_next/image?url=https%3A%2F%2Fh8DxKfmAPhn8O0p3.public.blob.vercel-storage.com%2Fdocs%2Fdark%2Floading-special-file.png&w=3840&q=75)
+![loading.js special file](https://h8DxKfmAPhn8O0p3.public.blob.vercel-storage.com/docs/light/loading-special-file.png)
 
 app/dashboard/loading.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -117,9 +112,9 @@ Behind the scenes, Next.js will automatically wrap the `page.tsx` contents in a 
 
 Benefits of `loading.tsx`:
 
-*   Immediate navigation and visual feedback for the user.
-*   Shared layouts remain interactive and navigation is interruptible.
-*   Improved Core Web Vitals: [TTFB](https://web.dev/articles/ttfb), [FCP](https://web.dev/articles/fcp), and [TTI](https://web.dev/articles/tti).
+-   Immediate navigation and visual feedback for the user.
+-   Shared layouts remain interactive and navigation is interruptible.
+-   Improved Core Web Vitals: [TTFB](https://web.dev/articles/ttfb), [FCP](https://web.dev/articles/fcp), and [TTI](https://web.dev/articles/tti).
 
 To further improve the navigation experience, Next.js performs a [client-side transition](#client-side-transitions) with the `<Link>` component.
 
@@ -129,8 +124,8 @@ Traditionally, navigation to a server-rendered page triggers a full page load. T
 
 Next.js avoids this with client-side transitions using the `<Link>` component. Instead of reloading the page, it updates the content dynamically by:
 
-*   Keeping any shared layouts and UI.
-*   Replacing the current page with the prefetched loading state or a new page if available.
+-   Keeping any shared layouts and UI.
+-   Replacing the current page with the prefetched loading state or a new page if available.
 
 Client-side transitions are what makes a server-rendered apps _feel_ like client-rendered apps. And when paired with [prefetching](#prefetching) and [streaming](#streaming), it enables fast transitions, even for dynamic routes.
 
@@ -147,8 +142,6 @@ When navigating to a dynamic route, the client must wait for the server response
 We recommend adding `loading.tsx` to dynamic routes to enable partial prefetching, trigger immediate navigation, and display a loading UI while the route renders.
 
 app/blog/\[slug\]/loading.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -167,8 +160,6 @@ If a [dynamic segment](/docs/app/api-reference/file-conventions/dynamic-routes) 
 Ensure the route is statically generated at build time by adding `generateStaticParams`:
 
 app/blog/\[slug\]/page.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -198,8 +189,6 @@ On slow or unstable networks, prefetching may not finish before the user clicks 
 To improve perceived performance, you can use the [`useLinkStatus` hook](/docs/app/api-reference/functions/use-link-status) to show immediate feedback while the transition is in progress.
 
 app/ui/loading-indicator.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -232,14 +221,12 @@ You can opt out of prefetching by setting the `prefetch` prop to `false` on the 
 
 However, disabling prefetching comes with trade-offs:
 
-*   **Static routes** will only be fetched when the user clicks the link.
-*   **Dynamic routes** will need to be rendered on the server first before the client can navigate to it.
+-   **Static routes** will only be fetched when the user clicks the link.
+-   **Dynamic routes** will need to be rendered on the server first before the client can navigate to it.
 
 To reduce resource usage without fully disabling prefetch, you can prefetch only on hover. This limits prefetching to routes the user is more _likely_ to visit, rather than all links in the viewport.
 
 app/ui/hover-prefetch-link.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -276,8 +263,8 @@ function HoverPrefetchLink({
 
 React mitigates this with Selective Hydration and you can further improve this by:
 
-*   Using the [`@next/bundle-analyzer`](/docs/app/guides/package-bundling#nextbundle-analyzer-for-webpack) plugin to identify and reduce bundle size by removing large dependencies.
-*   Moving logic from the client to the server where possible. See the [Server and Client Components](/docs/app/getting-started/server-and-client-components) docs for guidance.
+-   Using the [`@next/bundle-analyzer`](/docs/app/guides/package-bundling#nextbundle-analyzer-for-webpack) plugin to identify and reduce bundle size by removing large dependencies.
+-   Moving logic from the client to the server where possible. See the [Server and Client Components](/docs/app/getting-started/server-and-client-components) docs for guidance.
 
 ## Examples[](#examples)
 
@@ -361,20 +348,4 @@ Learn how to configure prefetching in Next.js
 
 ](/docs/app/guides/prefetching)
 
-[Previous
-
-Layouts and Pages
-
-](/docs/app/getting-started/layouts-and-pages)
-
-[Next
-
-Server and Client Components
-
-](/docs/app/getting-started/server-and-client-components)
-
 Was this helpful?
-
-supported.
-
-Send

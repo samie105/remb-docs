@@ -5,17 +5,19 @@ canonical_url: "https://nextjs.org/docs/app/getting-started/server-and-client-co
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:13:49.176Z"
-content_hash: "b9d1ea1b473be59ab32c0420bc938be67e9b2f22c3c205a1baa9df5e48e30953"
+last_crawled_at: "2026-04-27T18:12:32.270Z"
+content_hash: "b1c7024ad36d21383f16b0ec011fefbd16622c5dd0d7a1e627340aae3374e926"
 menu_path: ["Server and Client Components"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/getting-started/linking-and-navigating/index.md", "title": "Linking and Navigating"}
-nav_next: {"path": "nextjs/docs/app/getting-started/fetching-data/index.md", "title": "Fetching Data"}
+version: "latest"
+tab_variants: ["pnpm","npm","yarn","bun"]
+content_language: "en"
 ---
+[App Router](/docs/app)[Getting Started](/docs/app/getting-started)Server and Client Components
 
 # Server and Client Components
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 By default, layouts and pages are [Server Components](https://react.dev/reference/rsc/server-components), which lets you fetch data and render parts of your UI on the server, optionally cache the result, and stream it to the client. When you need interactivity or browser APIs, you can use [Client Components](https://react.dev/reference/rsc/use-client) to layer in functionality.
 
@@ -27,23 +29,21 @@ The client and server environments have different capabilities. Server and Clien
 
 Use **Client Components** when you need:
 
-*   [State](https://react.dev/learn/managing-state) and [event handlers](https://react.dev/learn/responding-to-events). E.g. `onClick`, `onChange`.
-*   [Lifecycle logic](https://react.dev/learn/lifecycle-of-reactive-effects). E.g. `useEffect`.
-*   Browser-only APIs. E.g. `localStorage`, `window`, `Navigator.geolocation`, etc.
-*   [Custom hooks](https://react.dev/learn/reusing-logic-with-custom-hooks).
+-   [State](https://react.dev/learn/managing-state) and [event handlers](https://react.dev/learn/responding-to-events). E.g. `onClick`, `onChange`.
+-   [Lifecycle logic](https://react.dev/learn/lifecycle-of-reactive-effects). E.g. `useEffect`.
+-   Browser-only APIs. E.g. `localStorage`, `window`, `Navigator.geolocation`, etc.
+-   [Custom hooks](https://react.dev/learn/reusing-logic-with-custom-hooks).
 
 Use **Server Components** when you need:
 
-*   Fetch data from databases or APIs close to the source.
-*   Use API keys, tokens, and other secrets without exposing them to the client.
-*   Reduce the amount of JavaScript sent to the browser.
-*   Improve the [First Contentful Paint (FCP)](https://web.dev/fcp/), and stream content progressively to the client.
+-   Fetch data from databases or APIs close to the source.
+-   Use API keys, tokens, and other secrets without exposing them to the client.
+-   Reduce the amount of JavaScript sent to the browser.
+-   Improve the [First Contentful Paint (FCP)](https://web.dev/fcp/), and stream content progressively to the client.
 
 For example, the `<Page>` component is a Server Component that fetches data about a post, and passes it as props to the `<LikeButton>` which handles client-side interactivity.
 
 app/\[id\]/page.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -73,8 +73,6 @@ export default async function Page({
 
 app/ui/like-button.tsx
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -93,16 +91,16 @@ export default function LikeButton({ likes }: { likes: number }) {
 
 On the server, Next.js uses React's APIs to orchestrate rendering. The rendering work is split into chunks, by individual route segments ([layouts and pages](/docs/app/getting-started/layouts-and-pages)):
 
-*   **Server Components** are rendered into a special data format called the React Server Component Payload (RSC Payload).
-*   **Client Components** and the RSC Payload are used to [prerender](/docs/app/glossary#prerendering) HTML.
+-   **Server Components** are rendered into a special data format called the React Server Component Payload (RSC Payload).
+-   **Client Components** and the RSC Payload are used to [prerender](/docs/app/glossary#prerendering) HTML.
 
 > **What is the React Server Component Payload (RSC)?**
 > 
 > The RSC Payload is a compact binary representation of the rendered React Server Components tree. It's used by React on the client to update the browser's DOM. The RSC Payload contains:
 > 
-> *   The rendered result of Server Components
-> *   Placeholders for where Client Components should be rendered and references to their JavaScript files
-> *   Any props passed from a Server Component to a Client Component
+> -   The rendered result of Server Components
+> -   Placeholders for where Client Components should be rendered and references to their JavaScript files
+> -   Any props passed from a Server Component to a Client Component
 
 ### On the client (first load)[](#on-the-client-first-load)
 
@@ -116,12 +114,10 @@ Then, on the client:
 > 
 > Hydration is React's process for attaching [event handlers](https://react.dev/learn/responding-to-events) to the DOM, to make the static HTML interactive.
 
-### Subsequent Navigations[](#subsequent-navigations)
-
 On subsequent navigations:
 
-*   The **RSC Payload** is prefetched and cached for instant navigation.
-*   **Client Components** are rendered entirely on the client, without the server-rendered HTML.
+-   The **RSC Payload** is prefetched and cached for instant navigation.
+-   **Client Components** are rendered entirely on the client, without the server-rendered HTML.
 
 ## Examples[](#examples)
 
@@ -130,8 +126,6 @@ On subsequent navigations:
 You can create a Client Component by adding the [`"use client"`](https://react.dev/reference/react/use-client) directive at the top of the file, above your imports.
 
 app/ui/counter.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -164,8 +158,6 @@ For example, the `<Layout>` component contains mostly static elements like a log
 
 app/layout.tsx
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -190,8 +182,6 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
 app/ui/search.tsx
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -207,8 +197,6 @@ export default function Search() {
 You can pass data from Server Components to Client Components using props.
 
 app/\[id\]/page.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -229,8 +217,6 @@ export default async function Page({
 ```
 
 app/ui/like-button.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -254,8 +240,6 @@ A common pattern is to use `children` to create a _slot_ in a `<ClientComponent>
 
 app/ui/modal.tsx
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -269,8 +253,6 @@ export default function Modal({ children }: { children: React.ReactNode }) {
 Then, in a parent Server Component (e.g.`<Page>`), you can pass a `<Cart>` as the child of the `<Modal>`:
 
 app/page.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -297,8 +279,6 @@ To use context, create a Client Component that accepts `children`:
 
 app/theme-provider.tsx
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -320,8 +300,6 @@ export default function ThemeProvider({
 Then, import it into a Server Component (e.g. `layout`):
 
 app/layout.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -357,8 +335,6 @@ If you use `<Carousel />` within a Client Component, it will work as expected:
 
 app/gallery.tsx
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -386,8 +362,6 @@ To fix this, you can wrap third-party components that rely on client-only featur
 
 app/carousel.tsx
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -401,8 +375,6 @@ export default Carousel
 Now, you can use `<Carousel />` directly within a Server Component:
 
 app/page.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -431,8 +403,6 @@ export default function Page() {
 JavaScript modules can be shared between both Server and Client Components modules. This means it's possible to accidentally import server-only code into the client. For example, consider the following function:
 
 lib/data.ts
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -480,7 +450,21 @@ The corresponding [`client-only` package](https://www.npmjs.com/package/client-o
 
 In Next.js, installing `server-only` or `client-only` is **optional**. However, if your linting rules flag extraneous dependencies, you may install them to avoid issues.
 
-pnpmnpmyarnbun
+#### pnpm
+
+pnpm
+
+#### npm
+
+npm
+
+#### yarn
+
+yarn
+
+#### bun
+
+bun
 
 Terminal
 
@@ -504,20 +488,4 @@ Learn how to use the use client directive to render a component on the client.
 
 ](/docs/app/api-reference/directives/use-client)
 
-[Previous
-
-Linking and Navigating
-
-](/docs/app/getting-started/linking-and-navigating)
-
-[Next
-
-Fetching Data
-
-](/docs/app/getting-started/fetching-data)
-
 Was this helpful?
-
-supported.
-
-Send

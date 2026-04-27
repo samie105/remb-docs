@@ -5,30 +5,29 @@ canonical_url: "https://nextjs.org/docs/app/api-reference/file-conventions/not-f
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:10:26.366Z"
-content_hash: "545cdfc043fc1f38b2103e10bbe24ac73fb5cb26eca5e1020e9910e785a4d3eb"
+last_crawled_at: "2026-04-27T18:09:09.671Z"
+content_hash: "8b07c560ba8548eb252133c36b96a72f9dff4d2085701726d86c81e94c72ebd0"
 menu_path: ["not-found.js"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/api-reference/file-conventions/mdx-components/index.md", "title": "mdx-components.js"}
-nav_next: {"path": "nextjs/docs/app/api-reference/file-conventions/page/index.md", "title": "page.js"}
+version: "latest"
+content_language: "en"
 ---
+[API Reference](/docs/app/api-reference)[File-system conventions](/docs/app/api-reference/file-conventions)not-found.js
 
 # not-found.js
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 Next.js provides two conventions to handle not found cases:
 
-*   **`not-found.js`**: Used when you call the [`notFound`](/docs/app/api-reference/functions/not-found) function in a route segment.
-*   **`global-not-found.js`**: Used to define a global 404 page for unmatched routes across your entire app. This is handled at the routing level and doesn't depend on rendering a layout or page.
+-   **`not-found.js`**: Used when you call the [`notFound`](/docs/app/api-reference/functions/not-found) function in a route segment.
+-   **`global-not-found.js`**: Used to define a global 404 page for unmatched routes across your entire app. This is handled at the routing level and doesn't depend on rendering a layout or page.
 
 ## `not-found.js`[](#not-foundjs)
 
 The **not-found** file is used to render UI when the [`notFound`](/docs/app/api-reference/functions/not-found) function is thrown within a route segment. Along with serving a custom UI, Next.js will return a `200` HTTP status code for streamed responses, and `404` for non-streamed responses (see [Status Codes](/docs/app/api-reference/file-conventions/loading#status-codes) for details about SEO).
 
 app/not-found.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -58,8 +57,8 @@ The `global-not-found.js` file bypasses your app's normal rendering, which means
 
 `global-not-found.js` is useful when you can't build a 404 page using a combination of `layout.js` and `not-found.js`. This can happen in two cases:
 
-*   Your app has multiple root layouts (e.g. `app/(admin)/layout.tsx` and `app/(shop)/layout.tsx`), so there's no single layout to compose a global 404 from.
-*   Your root layout is defined using top-level dynamic segments (e.g. `app/[country]/layout.tsx`), which makes composing a consistent 404 page harder.
+-   Your app has multiple root layouts (e.g. `app/(admin)/layout.tsx` and `app/(shop)/layout.tsx`), so there's no single layout to compose a global 404 from.
+-   Your root layout is defined using top-level dynamic segments (e.g. `app/[country]/layout.tsx`), which makes composing a consistent 404 page harder.
 
 To enable it, add the `globalNotFound` flag in `next.config.ts`:
 
@@ -80,8 +79,6 @@ export default nextConfig
 Then, create a file in the root of the `app` directory: `app/global-not-found.js`:
 
 app/global-not-found.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -128,8 +125,6 @@ By default, `not-found` is a Server Component. You can mark it as `async` to fet
 
 app/not-found.tsx
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -162,8 +157,6 @@ For `global-not-found.js`, you can export a `metadata` object or a [`generateMet
 
 app/global-not-found.tsx
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -190,36 +183,10 @@ export default function GlobalNotFound() {
 
 ## Version History[](#version-history)
 
-Version
-
-Changes
-
-`v15.4.0`
-
-`global-not-found.js` introduced (experimental).
-
-`v13.3.0`
-
-Root `app/not-found` handles global unmatched URLs.
-
-`v13.0.0`
-
-`not-found` introduced.
-
-[Previous
-
-mdx-components.js
-
-](/docs/app/api-reference/file-conventions/mdx-components)
-
-[Next
-
-page.js
-
-](/docs/app/api-reference/file-conventions/page)
+| Version | Changes |
+| --- | --- |
+| `v15.4.0` | `global-not-found.js` introduced (experimental). |
+| `v13.3.0` | Root `app/not-found` handles global unmatched URLs. |
+| `v13.0.0` | `not-found` introduced. |
 
 Was this helpful?
-
-supported.
-
-Send

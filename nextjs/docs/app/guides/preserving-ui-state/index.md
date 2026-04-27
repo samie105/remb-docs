@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/app/guides/preserving-ui-state"
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:15:53.153Z"
-content_hash: "7dee068d908e7882fcb5d6a511af57252c8e60c4981d27bfcd0adec93e70a692"
+last_crawled_at: "2026-04-27T18:15:05.640Z"
+content_hash: "70f44f57d302fa00fd582b0602c04d367c829dd03fa728c93952cf96dad60fc8"
 menu_path: ["Preserving UI state across navigations"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/guides/prefetching/index.md", "title": "Prefetching"}
-nav_next: {"path": "nextjs/docs/app/guides/production-checklist/index.md", "title": "How to optimize your Next.js application for production"}
+version: "latest"
+content_language: "en"
 ---
+[App Router](/docs/app)[Guides](/docs/app/guides)Preserving UI state
 
 # Preserving UI state across navigations
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 > **Good to know:** This guide assumes [Cache Components](/docs/app/getting-started/caching) is enabled. Enable it by setting [`cacheComponents: true`](/docs/app/api-reference/config/next-config-js/cacheComponents) in your Next config file.
 
@@ -314,9 +315,9 @@ When Activity hides the component, the cleanup sets `media="not all"`, which dis
 
 Hidden Activity content has `display: none` but remains in the document. This applies both to routes preserved by Cache Components and to content you hide with `<Activity>` directly. It affects end-to-end testing with tools like Playwright, Cypress, or Puppeteer:
 
-*   **DOM queries can find hidden elements.** Selectors may match elements regardless of visibility.
-*   **Interactions with hidden elements fail or timeout.** Most tools wait for elements to become visible before interacting.
-*   **Assertions may match hidden content.** Be explicit about visibility when asserting element presence.
+-   **DOM queries can find hidden elements.** Selectors may match elements regardless of visibility.
+-   **Interactions with hidden elements fail or timeout.** Most tools wait for elements to become visible before interacting.
+-   **Assertions may match hidden content.** Be explicit about visibility when asserting element presence.
 
 ### Use visibility-aware selectors[](#use-visibility-aware-selectors)
 
@@ -510,9 +511,9 @@ The ref persists across hide/show cycles (refs aren't cleaned up), so `hasMounte
 
 The [Activity Patterns Demo](https://react-activity-patterns.labs.vercel.dev) ([source](https://github.com/vercel-labs/react-activity-patterns)) is a Next.js app with Cache Components enabled and three routes. Navigate between them to see state preservation in action:
 
-*   **Data** — sortable table and selectable list that keep their state across navigations, plus a reviews section that prerenders in the background
-*   **Forms** — filter panel with DOM state (`<details>`, checkboxes, text inputs) that persists, and a newsletter form that resets after submission using `useLayoutEffect` cleanup
-*   **Side Effects** — a live timer that pauses when you navigate away and resumes when you return, and a video player that auto-pauses with playback position preserved
+-   **Data** — sortable table and selectable list that keep their state across navigations, plus a reviews section that prerenders in the background
+-   **Forms** — filter panel with DOM state (`<details>`, checkboxes, text inputs) that persists, and a newsletter form that resets after submission using `useLayoutEffect` cleanup
+-   **Side Effects** — a live timer that pauses when you navigate away and resumes when you return, and a video player that auto-pauses with playback position preserved
 
 ## Related
 
@@ -526,20 +527,4 @@ Learn how to cache data and UI in Next.js
 
 ](/docs/app/getting-started/caching)
 
-[Previous
-
-Prefetching
-
-](/docs/app/guides/prefetching)
-
-[Next
-
-Production
-
-](/docs/app/guides/production-checklist)
-
 Was this helpful?
-
-supported.
-
-Send

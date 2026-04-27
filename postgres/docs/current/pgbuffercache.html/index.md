@@ -5,14 +5,12 @@ canonical_url: "https://www.postgresql.org/docs/current/pgbuffercache.html"
 docset: "postgres"
 kind: "database"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:47:04.111Z"
-content_hash: "0d05b5711991340198c68fc2320ead4017baaad14a7ccb0632851116cc4cb795"
+last_crawled_at: "2026-04-27T20:47:52.689Z"
+content_hash: "d420053553434155e2adf146ce46cc9e9635b2ca32ef63bfb47f6dfd1014bc94"
 menu_path: ["PostgreSQL: Documentation: 18: F.25. pg_buffercache — inspect PostgreSQL buffer cache state"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/pgbench.html/index.md", "title": "PostgreSQL: Documentation: 18: pgbench"}
-nav_next: {"path": "postgres/docs/current/pgcrypto.html/index.md", "title": "PostgreSQL: Documentation: 18: F.26.\u00a0pgcrypto \u2014 cryptographic functions"}
+content_language: "en"
 ---
-
 The `pg_buffercache` module provides a means for examining what's happening in the shared buffer cache in real time. It also offers a low-level way to evict data from it, for testing purposes.
 
 This module provides the `pg_buffercache_pages()` function (wrapped in the `pg_buffercache` view), the `pg_buffercache_numa_pages()` function (wrapped in the `pg_buffercache_numa` view), the `pg_buffercache_summary()` function, the `pg_buffercache_usage_counts()` function, the `pg_buffercache_evict()` function, the `pg_buffercache_evict_relation()` function and the `pg_buffercache_evict_all()` function.
@@ -39,45 +37,76 @@ The definitions of the columns exposed by the view are shown in [Table F.14](ht
 
 **Table F.14. `pg_buffercache` Columns**
 
+| 
 Column Type
 
 Description
+
+ |
+| --- |
+| 
 
 `bufferid` `integer`
 
 ID, in the range 1..`shared_buffers`
 
+ |
+| 
+
 `relfilenode` `oid` (references [`pg_class`](https://www.postgresql.org/docs/current/catalog-pg-class.html "52.11. pg_class").`relfilenode`)
 
 Filenode number of the relation
+
+ |
+| 
 
 `reltablespace` `oid` (references [`pg_tablespace`](https://www.postgresql.org/docs/current/catalog-pg-tablespace.html "52.56. pg_tablespace").`oid`)
 
 Tablespace OID of the relation
 
+ |
+| 
+
 `reldatabase` `oid` (references [`pg_database`](https://www.postgresql.org/docs/current/catalog-pg-database.html "52.15. pg_database").`oid`)
 
 Database OID of the relation
+
+ |
+| 
 
 `relforknumber` `smallint`
 
 Fork number within the relation; see `common/relpath.h`
 
+ |
+| 
+
 `relblocknumber` `bigint`
 
 Page number within the relation
+
+ |
+| 
 
 `isdirty` `boolean`
 
 Is the page dirty?
 
+ |
+| 
+
 `usagecount` `smallint`
 
 Clock-sweep access count
 
+ |
+| 
+
 `pinning_backends` `integer`
 
 Number of backends pinning this buffer
+
+ |
 
 There is one row for each buffer in the shared cache. Unused buffers are shown with all fields null except `bufferid`. Shared system catalogs are shown as belonging to database zero.
 
@@ -91,21 +120,34 @@ The definitions of the columns exposed by the view are shown in [Table F.15](ht
 
 **Table F.15. `pg_buffercache_numa` Columns**
 
+| 
 Column Type
 
 Description
+
+ |
+| --- |
+| 
 
 `bufferid` `integer`
 
 ID, in the range 1..`shared_buffers`
 
+ |
+| 
+
 `os_page_num` `bigint`
 
 number of OS memory page for this buffer
 
+ |
+| 
+
 `numa_node` `int`
 
 ID of NUMA node
+
+ |
 
 As NUMA node ID inquiry for each page requires memory pages to be paged-in, the first execution of this function can take a noticeable amount of time. In all the cases (first execution or not), retrieving this information is costly and querying the view at a high frequency is not recommended.
 
@@ -119,29 +161,48 @@ The definitions of the columns exposed by the function are shown in [Table F.16
 
 **Table F.16. `pg_buffercache_summary()` Output Columns**
 
+| 
 Column Type
 
 Description
+
+ |
+| --- |
+| 
 
 `buffers_used` `int4`
 
 Number of used shared buffers
 
+ |
+| 
+
 `buffers_unused` `int4`
 
 Number of unused shared buffers
+
+ |
+| 
 
 `buffers_dirty` `int4`
 
 Number of dirty shared buffers
 
+ |
+| 
+
 `buffers_pinned` `int4`
 
 Number of pinned shared buffers
 
+ |
+| 
+
 `usagecount_avg` `float8`
 
 Average usage count of used shared buffers
+
+ |
 
 The `pg_buffercache_summary()` function returns a single row summarizing the state of all shared buffers. Similar and more detailed information is provided by the `pg_buffercache` view, but `pg_buffercache_summary()` is significantly cheaper.
 
@@ -153,25 +214,41 @@ The definitions of the columns exposed by the function are shown in [Table F.17
 
 **Table F.17. `pg_buffercache_usage_counts()` Output Columns**
 
+| 
 Column Type
 
 Description
+
+ |
+| --- |
+| 
 
 `usage_count` `int4`
 
 A possible buffer usage count
 
+ |
+| 
+
 `buffers` `int4`
 
 Number of buffers with the usage count
+
+ |
+| 
 
 `dirty` `int4`
 
 Number of dirty buffers with the usage count
 
+ |
+| 
+
 `pinned` `int4`
 
 Number of pinned buffers with the usage count
+
+ |
 
 The `pg_buffercache_usage_counts()` function returns a set of rows summarizing the states of all shared buffers, aggregated over the possible usage count values. Similar and more detailed information is provided by the `pg_buffercache` view, but `pg_buffercache_usage_counts()` is significantly cheaper.
 

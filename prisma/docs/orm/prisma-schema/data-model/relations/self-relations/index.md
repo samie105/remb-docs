@@ -5,18 +5,12 @@ canonical_url: "https://www.prisma.io/docs/orm/prisma-schema/data-model/relation
 docset: "prisma"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:55:40.905Z"
-content_hash: "8fcc6a4560fccfa83d59285cd3213ceaa5d0e2d75f5903162fbf4d5af2b35314"
+last_crawled_at: "2026-04-27T19:45:00.614Z"
+content_hash: "7d52d5c59d24bbc131bff29493f10517c254ffb639080afb6bc90155eea2ff0b"
 menu_path: ["Self-relations"]
 section_path: []
-nav_prev: {"path": "prisma/docs/orm/prisma-schema/data-model/relations/relation-mode/index.md", "title": "Relation mode"}
-nav_next: {"path": "prisma/docs/orm/prisma-schema/data-model/relations/troubleshooting-relations/index.md", "title": "Troubleshooting relations"}
+content_language: "en"
 ---
-
-Data Model
-
-Relations
-
 How to define and work with self-relations in Prisma.
 
 A relation field can reference its own model, called a _self-relation_. Self-relations can be 1-1, 1-n, or m-n.
@@ -33,15 +27,15 @@ model User {
 
 This expresses:
 
-*   A user can have zero or one predecessor
-*   A user can have zero or one successor
+-   A user can have zero or one predecessor
+-   A user can have zero or one successor
 
 **Key rules:**
 
-*   Both sides must use the same `@relation` name
-*   One side must be fully annotated with `fields` and `references`
-*   The foreign key needs `@unique` for 1-1
-*   Cannot be required on both sides (impossible to create first record)
+-   Both sides must use the same `@relation` name
+-   One side must be fully annotated with `fields` and `references`
+-   The foreign key needs `@unique` for 1-1
+-   Cannot be required on both sides (impossible to create first record)
 
 ```
 model User {
@@ -55,8 +49,8 @@ model User {
 
 This expresses:
 
-*   A user has zero or one teacher
-*   A user can have zero or more students
+-   A user has zero or one teacher
+-   A user can have zero or more students
 
 No `@unique` constraint on `teacherId` - multiple students can share the same teacher.
 
@@ -71,8 +65,8 @@ model User {
 
 This expresses:
 
-*   A user can be followed by zero or more users
-*   A user can follow zero or more users
+-   A user can be followed by zero or more users
+-   A user can follow zero or more users
 
 For relational databases, this is an implicit m-n (Prisma manages the relation table).
 
@@ -108,5 +102,3 @@ model User {
   following  User[]  @relation("UserFollows")
 }
 ```
-
-[Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/prisma-schema/data-model/relations/self-relations.mdx)

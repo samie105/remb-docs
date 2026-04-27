@@ -5,13 +5,14 @@ canonical_url: "https://nextjs.org/docs/messages/next-request-in-use-cache"
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:17:59.420Z"
-content_hash: "018498a248d0b3dd15629fa2d51a9d075519488f11b9b989630444c5494e2ac9"
+last_crawled_at: "2026-04-27T18:17:25.106Z"
+content_hash: "e8bb7b7539af8c8d6d8fdd3c020483cbdaf18b5d9b393b2c1db777b0fdfa37de"
 menu_path: ["Cannot access `cookies()` or `headers()` in `\"use cache\"`"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/messages/next-dynamic-modules/index.md", "title": "`next/dynamic` has deprecated loading multiple modules at once"}
-nav_next: {"path": "nextjs/docs/messages/next-script-for-ga/index.md", "title": "Using Google Analytics with Next.js (through `@next/third-parties/google`)"}
+version: "latest"
+content_language: "en"
 ---
+[Docs](/docs)[Errors](/docs)Cannot access \`cookies()\` or \`headers()\` in \`"use cache"\`
 
 # Cannot access \`cookies()\` or \`headers()\` in \`"use cache"\`
 
@@ -63,12 +64,8 @@ export default async function Page() {
 
 ## Useful Links[](#useful-links)
 
-*   [`headers()` function](/docs/app/api-reference/functions/headers)
-*   [`cookies()` function](/docs/app/api-reference/functions/cookies)
-*   [`draftMode()` function](/docs/app/api-reference/functions/draft-mode)
+-   [`headers()` function](/docs/app/api-reference/functions/headers)
+-   [`cookies()` function](/docs/app/api-reference/functions/cookies)
+-   [`draftMode()` function](/docs/app/api-reference/functions/draft-mode)
 
 Was this helpful?
-
-supported.
-
-Send

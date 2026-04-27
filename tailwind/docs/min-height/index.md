@@ -5,59 +5,13 @@ canonical_url: "https://tailwindcss.com/docs/min-height"
 docset: "tailwind"
 kind: "framework"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:52:41.763Z"
-content_hash: "e292918e603f1e8b9918c1ff812292ebdde48ac289783fbd4fcb002e226790a1"
+last_crawled_at: "2026-04-27T20:04:44.191Z"
+content_hash: "5d7648abe5c8bdbc63ce9fae20b80f8db87a917985fcf541db404611d9938497"
 menu_path: ["min-height"]
 section_path: []
-nav_prev: {"path": "tailwind/docs/height/index.md", "title": "height"}
-nav_next: {"path": "tailwind/docs/max-height/index.md", "title": "max-height"}
+content_language: "en"
 ---
-
 Utilities for setting the minimum height of an element.
-
-Class
-
-Styles
-
-`min-h-<number>`
-
-`min-height: calc(var(--spacing) * <number>);`
-
-`min-h-<fraction>`
-
-`min-height: calc(<fraction> * 100%);`
-
-`min-h-px`
-
-`min-height: 1px;`
-
-`min-h-full`
-
-`min-height: 100%;`
-
-`min-h-screen`
-
-`min-height: 100vh;`
-
-`min-h-dvh`
-
-`min-height: 100dvh;`
-
-`min-h-dvw`
-
-`min-height: 100dvw;`
-
-`min-h-lvh`
-
-`min-height: 100lvh;`
-
-`min-h-lvw`
-
-`min-height: 100lvw;`
-
-`min-h-svw`
-
-`min-height: 100svw;`
 
 ## [Examples](#examples)
 
@@ -125,7 +79,7 @@ Prefix a `min-height` utility with a breakpoint variant like `md:` to only apply
 <div class="h-24 min-h-0 md:min-h-full ...">  <!-- ... --></div>
 ```
 
-Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).
+Learn more about using variants in the [variants documentation](https://tailwindcss.com/docs/hover-focus-and-other-states).
 
 ## [Customizing your theme](#customizing-your-theme)
 
@@ -135,4 +89,4 @@ The `min-h-<number>` utilities are driven by the `--spacing` theme variable, whi
 @theme {  --spacing: 1px; }
 ```
 
-Learn more about customizing the spacing scale in the [theme variable documentation](tailwind/docs/theme/index.md).
+Learn more about customizing the spacing scale in the [theme variable documentation](https://tailwindcss.com/docs/theme).

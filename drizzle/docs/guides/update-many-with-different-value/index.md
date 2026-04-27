@@ -5,25 +5,17 @@ canonical_url: "https://orm.drizzle.team/docs/guides/update-many-with-different-
 docset: "drizzle"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:07:44.722Z"
-content_hash: "7dc750daebb39badb1ec4050212c4e1f65ea98d7ac0742e995db16e03b579ec2"
+last_crawled_at: "2026-04-27T19:04:15.530Z"
+content_hash: "ee742b283a05df23761aef9e070a84a9e569248328108e36307b8a5a3e9b98a5"
 menu_path: ["Drizzle ORM - Update many with different values for each row"]
 section_path: []
-nav_prev: {"path": "drizzle/docs/guides/unique-case-insensitive-email/index.md", "title": "Drizzle ORM - Unique and Case-Insensitive Email Handling"}
-nav_next: {"path": "drizzle/docs/guides/upsert/index.md", "title": "Drizzle ORM - Upsert Query"}
+content_language: "en"
 ---
-
 Drizzle | Update many with different values for each row
-
-PostgreSQL
-
-MySQL
-
-SQLite
 
 To implement update many with different values for each row within 1 request you can use `sql` operator with `case` statement and `.update().set()` methods like this:
 
-```
+```ts
 import { SQL, inArray, sql } from 'drizzle-orm';
 import { users } from './schema';
 
@@ -66,7 +58,7 @@ const finalSql: SQL = sql.join(sqlChunks, sql.raw(' '));
 await db.update(users).set({ city: finalSql }).where(inArray(users.id, ids));
 ```
 
-```
+```sql
 update users set "city" = 
   (case when id = 1 then 'New York' when id = 2 then 'Los Angeles' when id = 3 then 'Chicago' end)
 where id in (1, 2, 3)

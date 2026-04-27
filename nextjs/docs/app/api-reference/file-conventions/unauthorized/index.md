@@ -5,25 +5,24 @@ canonical_url: "https://nextjs.org/docs/app/api-reference/file-conventions/unaut
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:11:03.467Z"
-content_hash: "3dfdde589b69934008b4222bcc083b3c90856f47d0bb396b582ca1d0612bdd70"
+last_crawled_at: "2026-04-27T18:09:44.399Z"
+content_hash: "6f4afa219c2ff930f26b83ca120664fe4e38bb9eb6b4bbdc879411354c93dec0"
 menu_path: ["unauthorized.js"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/api-reference/file-conventions/template/index.md", "title": "template.js"}
-nav_next: {"path": "nextjs/docs/app/api-reference/file-conventions/metadata/index.md", "title": "Metadata Files API Reference"}
+version: "latest"
+content_language: "en"
 ---
+[API Reference](/docs/app/api-reference)[File-system conventions](/docs/app/api-reference/file-conventions)unauthorized.js
 
 # unauthorized.js
 
 This feature is currently experimental and subject to change, it's not recommended for production. Try it out and share your feedback on [GitHub](https://github.com/vercel/next.js/issues).
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 The **unauthorized** file is used to render UI when the [`unauthorized`](/docs/app/api-reference/functions/unauthorized) function is invoked during authentication. Along with allowing you to customize the UI, Next.js will return a `401` status code.
 
 app/unauthorized.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -55,8 +54,6 @@ You can use [`unauthorized`](/docs/app/api-reference/functions/unauthorized) fun
 
 app/dashboard/page.tsx
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -76,8 +73,6 @@ export default async function DashboardPage() {
 
 app/unauthorized.tsx
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -96,13 +91,9 @@ export default function UnauthorizedPage() {
 
 ## Version History[](#version-history)
 
-Version
-
-Changes
-
-`v15.1.0`
-
-`unauthorized.js` introduced.
+| Version | Changes |
+| --- | --- |
+| `v15.1.0` | `unauthorized.js` introduced. |
 
 [
 
@@ -112,20 +103,4 @@ API Reference for the unauthorized function.
 
 ](/docs/app/api-reference/functions/unauthorized)
 
-[Previous
-
-template.js
-
-](/docs/app/api-reference/file-conventions/template)
-
-[Next
-
-Metadata Files
-
-](/docs/app/api-reference/file-conventions/metadata)
-
 Was this helpful?
-
-supported.
-
-Send

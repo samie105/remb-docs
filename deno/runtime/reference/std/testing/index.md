@@ -5,25 +5,26 @@ canonical_url: "https://docs.deno.com/runtime/reference/std/testing/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:06:04.307Z"
-content_hash: "79ebb6078053108388417e3328b8c717b689863f965bd27fc949c7a322c08297"
+last_crawled_at: "2026-04-27T17:47:53.676Z"
+content_hash: "ddee6eb5726e0ba483c9c858426908abcd7769435deea6c0d8e5f4b35c40d71b"
 menu_path: ["@std/testing"]
 section_path: []
+content_language: "en"
 ---
-On this page
+**On this page**
 
-*   [Overview](#overview)
-    *   [Add to your project](#add-to-your-project)
+-   [Overview](#overview)
+    -   [Add to your project](#add-to-your-project)
 
 ## Overview
 
 This package provides utilities for testing.
 
-*   [BDD style testing](https://jsr.io/@std/testing/doc/bdd/~)
-*   [Test doubles (mocking)](https://jsr.io/@std/testing/doc/mock/~)
-*   [Faking time and timers](https://jsr.io/@std/testing/doc/time/~)
-*   [Snapshot testing](https://jsr.io/@std/testing/doc/snapshot/~)
-*   [Type assertions](https://jsr.io/@std/testing/doc/types/~)
+-   [BDD style testing](https://jsr.io/@std/testing/doc/bdd/~)
+-   [Test doubles (mocking)](https://jsr.io/@std/testing/doc/mock/~)
+-   [Faking time and timers](https://jsr.io/@std/testing/doc/time/~)
+-   [Snapshot testing](https://jsr.io/@std/testing/doc/snapshot/~)
+-   [Type assertions](https://jsr.io/@std/testing/doc/types/~)
 
 ```js
 import { assertSpyCalls, spy } from "@std/testing/mock";

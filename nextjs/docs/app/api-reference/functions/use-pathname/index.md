@@ -5,25 +5,24 @@ canonical_url: "https://nextjs.org/docs/app/api-reference/functions/use-pathname
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:12:31.859Z"
-content_hash: "a7c1f5e24daaa322a305d7c6bfa7f62d022b07c094f9acfb6520977b4eeb8bd3"
+last_crawled_at: "2026-04-27T18:11:14.512Z"
+content_hash: "ca7686897ae063100b5c999b8bea783e59c6de0521cf432a87088c5e9f85aaa7"
 menu_path: ["usePathname"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/api-reference/functions/use-params/index.md", "title": "useParams"}
-nav_next: {"path": "nextjs/docs/app/api-reference/functions/use-report-web-vitals/index.md", "title": "useReportWebVitals"}
+version: "latest"
+content_language: "en"
 ---
+[API Reference](/docs/app/api-reference)[Functions](/docs/app/api-reference/functions)usePathname
 
 # usePathname
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 `usePathname` is a **Client Component** hook that lets you read the current URL's **pathname**.
 
 > **Good to know**: When [`cacheComponents`](/docs/app/api-reference/config/next-config-js/cacheComponents) is enabled `usePathname` may require a `Suspense` boundary around it if your route has a dynamic param. If you use `generateStaticParams` the `Suspense` boundary is optional
 
 app/example-client-component.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -44,10 +43,10 @@ For example, a Client Component with `usePathname` will be rendered into HTML on
 
 > **Good to know**:
 > 
-> *   Reading the current URL from a [Server Component](/docs/app/getting-started/server-and-client-components) is not supported. This design is intentional to support layout state being preserved across page navigations.
-> *   If your page is being statically prerendered and your app has [rewrites](/docs/app/api-reference/config/next-config-js/rewrites) in `next.config` or a [Proxy](/docs/app/api-reference/file-conventions/proxy) file, reading the pathname with `usePathname()` can result in hydration mismatch errors—because the initial value comes from the server and may not match the actual browser pathname after routing. See our [example](#avoid-hydration-mismatch-with-rewrites) for a way to mitigate this issue.
+> -   Reading the current URL from a [Server Component](/docs/app/getting-started/server-and-client-components) is not supported. This design is intentional to support layout state being preserved across page navigations.
+> -   If your page is being statically prerendered and your app has [rewrites](/docs/app/api-reference/config/next-config-js/rewrites) in `next.config` or a [Proxy](/docs/app/api-reference/file-conventions/proxy) file, reading the pathname with `usePathname()` can result in hydration mismatch errors—because the initial value comes from the server and may not match the actual browser pathname after routing. See our [example](#avoid-hydration-mismatch-with-rewrites) for a way to mitigate this issue.
 
-Compatibility with Pages Router
+**Compatibility with Pages Router**
 
 If you have components that use `usePathname` and they are imported into routes within the Pages Router, be aware that `usePathname` may return `null` if the router is not yet initialized. This can occur in cases such as [fallback routes](/docs/pages/api-reference/functions/get-static-paths#fallback-true) or during [Automatic Static Optimization](https://nextjs.org/docs/pages/building-your-application/rendering/static#automatic-static-optimization) in the Pages Router.
 
@@ -65,33 +64,18 @@ const pathname = usePathname()
 
 `usePathname` returns a string of the current URL's pathname. For example:
 
-URL
-
-Returned value
-
-`/`
-
-`'/'`
-
-`/dashboard`
-
-`'/dashboard'`
-
-`/dashboard?v=2`
-
-`'/dashboard'`
-
-`/blog/hello-world`
-
-`'/blog/hello-world'`
+| URL | Returned value |
+| --- | --- |
+| `/` | `'/'` |
+| `/dashboard` | `'/dashboard'` |
+| `/dashboard?v=2` | `'/dashboard'` |
+| `/blog/hello-world` | `'/blog/hello-world'` |
 
 ## Examples[](#examples)
 
 ### Do something in response to a route change[](#do-something-in-response-to-a-route-change)
 
 app/example-client-component.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -118,8 +102,6 @@ To avoid hydration mismatches, design the UI so that only a small, isolated part
 
 app/example-client-component.tsx
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -144,28 +126,8 @@ export default function PathnameBadge() {
 }
 ```
 
-Version
-
-Changes
-
-`v13.0.0`
-
-`usePathname` introduced.
-
-[Previous
-
-useParams
-
-](/docs/app/api-reference/functions/use-params)
-
-[Next
-
-useReportWebVitals
-
-](/docs/app/api-reference/functions/use-report-web-vitals)
+| Version | Changes |
+| --- | --- |
+| `v13.0.0` | `usePathname` introduced. |
 
 Was this helpful?
-
-supported.
-
-Send

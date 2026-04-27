@@ -5,17 +5,15 @@ canonical_url: "https://orm.drizzle.team/docs/dynamic-query-building"
 docset: "drizzle"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:47:48.037Z"
-content_hash: "58164da604a782a098b70eee859deafcd2369fac93b6b93cd81fa2a0c1892cf5"
+last_crawled_at: "2026-04-27T18:37:33.367Z"
+content_hash: "a536585fc3d7e9d972d6fd179c2139d04f934a5f71b27435d6bb5d8717c2d4c0"
 menu_path: ["Dynamic query building"]
 section_path: []
-nav_prev: {"path": "drizzle/docs/cache/index.md", "title": "Cache"}
-nav_next: {"path": "drizzle/docs/read-replicas/index.md", "title": "Read Replicas"}
+content_language: "en"
 ---
-
 By default, as all the query builders in Drizzle try to conform to SQL as much as possible, you can only invoke most of the methods once. For example, in a `SELECT` statement there might only be one `WHERE` clause, so you can only invoke `.where()` once:
 
-```
+```ts
 const query = db
 	.select()
 	.from(users)
@@ -29,7 +27,7 @@ This behavior is useful for conventional query building, i.e. when you create th
 
 Let’s see how it works by implementing a simple `withPagination` function that adds `LIMIT` and `OFFSET` clauses to a query based on the provided page number and an optional page size:
 
-```
+```ts
 function withPagination<T extends PgSelect>(
 	qb: T,
 	page: number = 1,
@@ -47,7 +45,7 @@ withPagination(dynamicQuery, 1); // ✅ OK
 
 Note that the `withPagination` function is generic, which allows you to modify the result type of the query builder inside it, for example by adding a join:
 
-```
+```ts
 function withFriends<T extends PgSelect>(qb: T) {
 	return qb.leftJoin(friends, eq(friends.userId, users.id));
 }
@@ -60,59 +58,20 @@ This is possible, because `PgSelect` and other similar types are specifically de
 
 Here is the list of all types that can be used as generic parameters in dynamic query building:
 
-**Dialect**
+| **Dialect** | **Type** |
+| --- | --- |
+| **Query** | **Select** | **Insert** | **Update** | **Delete** |
+| --- | --- | --- | --- | --- |
+| Postgres | `PgSelect` | `PgInsert` | `PgUpdate` | `PgDelete` |
+| `PgSelectQueryBuilder` |
+| MySQL | `MySqlSelect` | `MySqlInsert` | `MySqlUpdate` | `MySqlDelete` |
+| `MySqlSelectQueryBuilder` |
+| SQLite | `SQLiteSelect` | `SQLiteInsert` | `SQLiteUpdate` | `SQLiteDelete` |
+| `SQLiteSelectQueryBuilder` |
 
-**Type**
+The `...QueryBuilder` types are for usage with [standalone query builder instances](https://orm.drizzle.team/docs/goodies#standalone-query-builder). DB query builders are subclasses of them, so you can use them as well.
 
-**Query**
-
-**Select**
-
-**Insert**
-
-**Update**
-
-**Delete**
-
-Postgres
-
-`PgSelect`
-
-`PgInsert`
-
-`PgUpdate`
-
-`PgDelete`
-
-`PgSelectQueryBuilder`
-
-MySQL
-
-`MySqlSelect`
-
-`MySqlInsert`
-
-`MySqlUpdate`
-
-`MySqlDelete`
-
-`MySqlSelectQueryBuilder`
-
-SQLite
-
-`SQLiteSelect`
-
-`SQLiteInsert`
-
-`SQLiteUpdate`
-
-`SQLiteDelete`
-
-`SQLiteSelectQueryBuilder`
-
-The `...QueryBuilder` types are for usage with [standalone query builder instances](drizzle/docs/goodies/index.md#standalone-query-builder). DB query builders are subclasses of them, so you can use them as well.
-
-```
+```ts
 	import { QueryBuilder } from 'drizzle-orm/pg-core';
 
 	function withFriends<T extends PgSelectQueryBuilder>(qb: T) {

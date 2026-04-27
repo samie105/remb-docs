@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/app/guides/analytics"
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:13:59.798Z"
-content_hash: "a0adbdc5da71fef30b9856b43969ddd2e9adc6029a5dd6202cd48e2964ba908d"
+last_crawled_at: "2026-04-27T18:12:44.584Z"
+content_hash: "7871fefc4bba0c9f5a7e9e28a5350ba6e4d2322be0b05a9f49958438b2407824"
 menu_path: ["How to add analytics to your Next.js application"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/guides/ai-agents/index.md", "title": "How to set up your Next.js project for AI coding agents"}
-nav_next: {"path": "nextjs/docs/app/guides/authentication/index.md", "title": "How to implement authentication in Next.js"}
+version: "latest"
+content_language: "en"
 ---
+[App Router](/docs/app)[Guides](/docs/app/guides)Analytics
 
 # How to add analytics to your Next.js application
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 Next.js has built-in support for measuring and reporting performance metrics. You can either use the [`useReportWebVitals`](/docs/app/api-reference/functions/use-report-web-vitals) hook to manage reporting yourself, or alternatively, Vercel provides a [managed service](https://vercel.com/analytics?utm_source=next-site&utm_medium=docs&utm_campaign=next-website) to automatically collect and visualize metrics for you.
 
@@ -79,18 +80,16 @@ View the [API Reference](/docs/app/api-reference/functions/use-report-web-vitals
 
 [Web Vitals](https://web.dev/vitals/) are a set of useful metrics that aim to capture the user experience of a web page. The following web vitals are all included:
 
-*   [Time to First Byte](https://developer.mozilla.org/docs/Glossary/Time_to_first_byte) (TTFB)
-*   [First Contentful Paint](https://developer.mozilla.org/docs/Glossary/First_contentful_paint) (FCP)
-*   [Largest Contentful Paint](https://web.dev/lcp/) (LCP)
-*   [First Input Delay](https://web.dev/fid/) (FID)
-*   [Cumulative Layout Shift](https://web.dev/cls/) (CLS)
-*   [Interaction to Next Paint](https://web.dev/inp/) (INP)
+-   [Time to First Byte](https://developer.mozilla.org/docs/Glossary/Time_to_first_byte) (TTFB)
+-   [First Contentful Paint](https://developer.mozilla.org/docs/Glossary/First_contentful_paint) (FCP)
+-   [Largest Contentful Paint](https://web.dev/lcp/) (LCP)
+-   [First Input Delay](https://web.dev/fid/) (FID)
+-   [Cumulative Layout Shift](https://web.dev/cls/) (CLS)
+-   [Interaction to Next Paint](https://web.dev/inp/) (INP)
 
 You can handle all the results of these metrics using the `name` property.
 
 app/\_components/web-vitals.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -150,20 +149,4 @@ useReportWebVitals((metric) => {
 > 
 > Read more about [sending results to Google Analytics](https://github.com/GoogleChrome/web-vitals#send-the-results-to-google-analytics).
 
-[Previous
-
-AI Coding Agents
-
-](/docs/app/guides/ai-agents)
-
-[Next
-
-Authentication
-
-](/docs/app/guides/authentication)
-
 Was this helpful?
-
-supported.
-
-Send

@@ -5,14 +5,12 @@ canonical_url: "https://www.postgresql.org/docs/current/spgist.html"
 docset: "postgres"
 kind: "database"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:51:57.412Z"
-content_hash: "d947520fdc1e0dea113309c3a445ff64b59712ad2cb7b0c497550cae0feeb981"
+last_crawled_at: "2026-04-27T20:50:52.084Z"
+content_hash: "3fa6479c177e22c9812766cfb9378740ceeaf33bb3c013878193f33d25d4614f"
 menu_path: ["PostgreSQL: Documentation: 18: 65.3. SP-GiST Indexes"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/source-format.html/index.md", "title": "PostgreSQL: Documentation: 18: 55.1.\u00a0Formatting"}
-nav_next: {"path": "postgres/docs/current/spi-spi-getbinval.html/index.md", "title": "PostgreSQL: Documentation: 18: SPI_getbinval"}
+content_language: "en"
 ---
-
 ### 65.3.1. Introduction [#](#SPGIST-INTRO)
 
 SP-GiST is an abbreviation for space-partitioned GiST. SP-GiST supports partitioned search trees, which facilitate development of a wide range of different non-balanced data structures, such as quad-trees, k-d trees, and radix trees (tries). The common feature of these structures is that they repeatedly divide the search space into partitions that need not be of equal size. Searches that are well matched to the partitioning rule can be very fast.
@@ -30,174 +28,75 @@ The core PostgreSQL distribution includes the SP-GiST operator classes shown in 
 **Table 65.2. Built-in SP-GiST Operator Classes**
 
   
-
-Name
-
-Indexable Operators
-
-Ordering Operators
-
-`box_ops`
-
-`<< (box,box)`
-
-`<-> (box,point)`
-
-`&< (box,box)`
-
-`&> (box,box)`
-
-`>> (box,box)`
-
-`<@ (box,box)`
-
-`@> (box,box)`
-
-`~= (box,box)`
-
-`&& (box,box)`
-
-`<<| (box,box)`
-
-`&<| (box,box)`
-
-`|&> (box,box)`
-
-`|>> (box,box)`
-
-`inet_ops`
-
-`<< (inet,inet)`
-
- 
-
-`<<= (inet,inet)`
-
-`>> (inet,inet)`
-
-`>>= (inet,inet)`
-
-`= (inet,inet)`
-
-`<> (inet,inet)`
-
-`< (inet,inet)`
-
-`<= (inet,inet)`
-
-`> (inet,inet)`
-
-`>= (inet,inet)`
-
-`&& (inet,inet)`
-
-`kd_point_ops`
-
-`|>> (point,point)`
-
-`<-> (point,point)`
-
-`<< (point,point)`
-
-`>> (point,point)`
-
-`<<| (point,point)`
-
-`~= (point,point)`
-
-`<@ (point,box)`
-
-`poly_ops`
-
-`<< (polygon,polygon)`
-
-`<-> (polygon,point)`
-
-`&< (polygon,polygon)`
-
-`&> (polygon,polygon)`
-
-`>> (polygon,polygon)`
-
-`<@ (polygon,polygon)`
-
-`@> (polygon,polygon)`
-
-`~= (polygon,polygon)`
-
-`&& (polygon,polygon)`
-
-`<<| (polygon,polygon)`
-
-`&<| (polygon,polygon)`
-
-`|>> (polygon,polygon)`
-
-`|&> (polygon,polygon)`
-
-`quad_point_ops`
-
-`|>> (point,point)`
-
-`<-> (point,point)`
-
-`<< (point,point)`
-
-`>> (point,point)`
-
-`<<| (point,point)`
-
-`~= (point,point)`
-
-`<@ (point,box)`
-
-`range_ops`
-
-`= (anyrange,anyrange)`
-
- 
-
-`&& (anyrange,anyrange)`
-
-`@> (anyrange,anyelement)`
-
-`@> (anyrange,anyrange)`
-
-`<@ (anyrange,anyrange)`
-
-`<< (anyrange,anyrange)`
-
-`>> (anyrange,anyrange)`
-
-`&< (anyrange,anyrange)`
-
-`&> (anyrange,anyrange)`
-
-`-|- (anyrange,anyrange)`
-
-`text_ops`
-
-`= (text,text)`
-
- 
-
-`< (text,text)`
-
-`<= (text,text)`
-
-`> (text,text)`
-
-`>= (text,text)`
-
-`~<~ (text,text)`
-
-`~<=~ (text,text)`
-
-`~>=~ (text,text)`
-
-`~>~ (text,text)`
-
-`^@ (text,text)`
+| Name | Indexable Operators | Ordering Operators |
+| --- | --- | --- |
+| `box_ops` | `<< (box,box)` | `<-> (box,point)` |
+| `&< (box,box)` |
+| `&> (box,box)` |
+| `>> (box,box)` |
+| `<@ (box,box)` |
+| `@> (box,box)` |
+| `~= (box,box)` |
+| `&& (box,box)` |
+| `<<| (box,box)` |
+| `&<| (box,box)` |
+| `|&> (box,box)` |
+| `|>> (box,box)` |
+| `inet_ops` | `<< (inet,inet)` |   |
+| `<<= (inet,inet)` |
+| `>> (inet,inet)` |
+| `>>= (inet,inet)` |
+| `= (inet,inet)` |
+| `<> (inet,inet)` |
+| `< (inet,inet)` |
+| `<= (inet,inet)` |
+| `> (inet,inet)` |
+| `>= (inet,inet)` |
+| `&& (inet,inet)` |
+| `kd_point_ops` | `|>> (point,point)` | `<-> (point,point)` |
+| `<< (point,point)` |
+| `>> (point,point)` |
+| `<<| (point,point)` |
+| `~= (point,point)` |
+| `<@ (point,box)` |
+| `poly_ops` | `<< (polygon,polygon)` | `<-> (polygon,point)` |
+| `&< (polygon,polygon)` |
+| `&> (polygon,polygon)` |
+| `>> (polygon,polygon)` |
+| `<@ (polygon,polygon)` |
+| `@> (polygon,polygon)` |
+| `~= (polygon,polygon)` |
+| `&& (polygon,polygon)` |
+| `<<| (polygon,polygon)` |
+| `&<| (polygon,polygon)` |
+| `|>> (polygon,polygon)` |
+| `|&> (polygon,polygon)` |
+| `quad_point_ops` | `|>> (point,point)` | `<-> (point,point)` |
+| `<< (point,point)` |
+| `>> (point,point)` |
+| `<<| (point,point)` |
+| `~= (point,point)` |
+| `<@ (point,box)` |
+| `range_ops` | `= (anyrange,anyrange)` |   |
+| `&& (anyrange,anyrange)` |
+| `@> (anyrange,anyelement)` |
+| `@> (anyrange,anyrange)` |
+| `<@ (anyrange,anyrange)` |
+| `<< (anyrange,anyrange)` |
+| `>> (anyrange,anyrange)` |
+| `&< (anyrange,anyrange)` |
+| `&> (anyrange,anyrange)` |
+| `-|- (anyrange,anyrange)` |
+| `text_ops` | `= (text,text)` |   |
+| `< (text,text)` |
+| `<= (text,text)` |
+| `> (text,text)` |
+| `>= (text,text)` |
+| `~<~ (text,text)` |
+| `~<=~ (text,text)` |
+| `~>=~ (text,text)` |
+| `~>~ (text,text)` |
+| `^@ (text,text)` |
 
 Of the two operator classes for type `point`, `quad_point_ops` is the default. `kd_point_ops` supports the same operators but uses a different index data structure that may offer better performance in some applications.
 

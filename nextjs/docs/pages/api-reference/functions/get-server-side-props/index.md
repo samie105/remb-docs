@@ -5,23 +5,22 @@ canonical_url: "https://nextjs.org/docs/pages/api-reference/functions/get-server
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:22:13.382Z"
-content_hash: "ea8fe7f5c1928f0968f8678b6ca204d94d2e188f830c468f1b1598049f559ce6"
+last_crawled_at: "2026-04-27T18:21:37.932Z"
+content_hash: "278e9479a4fd144f96ba7fbf3c24fe85f166ba07b92e82cf31b7a7523b81a5f0"
 menu_path: ["getServerSideProps"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/pages/api-reference/functions/get-initial-props/index.md", "title": "getInitialProps"}
-nav_next: {"path": "nextjs/docs/pages/api-reference/functions/get-static-paths/index.md", "title": "getStaticPaths"}
+version: "latest"
+content_language: "en"
 ---
+[API Reference](/docs/pages/api-reference)[Functions](/docs/pages/api-reference/functions)getServerSideProps
 
 # getServerSideProps
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 When exporting a function called `getServerSideProps` (Server-Side Rendering) from a page, Next.js will prerender this page on each request using the data returned by `getServerSideProps`. This is useful if you want to fetch data that changes often, and have the page update to show the most current data.
 
 pages/index.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -58,53 +57,19 @@ You can import modules in top-level scope for use in `getServerSideProps`. Impor
 
 The `context` parameter is an object containing the following keys:
 
-Name
-
-Description
-
-`params`
-
-If this page uses a [dynamic route](/docs/pages/building-your-application/routing/dynamic-routes), `params` contains the route parameters. If the page name is `[id].js`, then `params` will look like `{ id: ... }`.
-
-`req`
-
-[The `HTTP` IncomingMessage object](https://nodejs.org/api/http.html#http_class_http_incomingmessage), with an additional `cookies` prop, which is an object with string keys mapping to string values of cookies.
-
-`res`
-
-[The `HTTP` response object](https://nodejs.org/api/http.html#http_class_http_serverresponse).
-
-`query`
-
-An object representing the query string, including dynamic route parameters.
-
-`preview`
-
-(Deprecated for `draftMode`) `preview` is `true` if the page is in the [Preview Mode](/docs/pages/guides/preview-mode) and `false` otherwise.
-
-`previewData`
-
-(Deprecated for `draftMode`) The [preview](/docs/pages/guides/preview-mode) data set by `setPreviewData`.
-
-`draftMode`
-
-`draftMode` is `true` if the page is in the [Draft Mode](/docs/pages/guides/draft-mode) and `false` otherwise.
-
-`resolvedUrl`
-
-A normalized version of the request `URL` that strips the `_next/data` prefix for client transitions and includes original query values.
-
-`locale`
-
-Contains the active locale (if enabled).
-
-`locales`
-
-Contains all supported locales (if enabled).
-
-`defaultLocale`
-
-Contains the configured default locale (if enabled).
+| Name | Description |
+| --- | --- |
+| `params` | If this page uses a [dynamic route](/docs/pages/building-your-application/routing/dynamic-routes), `params` contains the route parameters. If the page name is `[id].js`, then `params` will look like `{ id: ... }`. |
+| `req` | [The `HTTP` IncomingMessage object](https://nodejs.org/api/http.html#http_class_http_incomingmessage), with an additional `cookies` prop, which is an object with string keys mapping to string values of cookies. |
+| `res` | [The `HTTP` response object](https://nodejs.org/api/http.html#http_class_http_serverresponse). |
+| `query` | An object representing the query string, including dynamic route parameters. |
+| `preview` | (Deprecated for `draftMode`) `preview` is `true` if the page is in the [Preview Mode](/docs/pages/guides/preview-mode) and `false` otherwise. |
+| `previewData` | (Deprecated for `draftMode`) The [preview](/docs/pages/guides/preview-mode) data set by `setPreviewData`. |
+| `draftMode` | `draftMode` is `true` if the page is in the [Draft Mode](/docs/pages/guides/draft-mode) and `false` otherwise. |
+| `resolvedUrl` | A normalized version of the request `URL` that strips the `_next/data` prefix for client transitions and includes original query values. |
+| `locale` | Contains the active locale (if enabled). |
+| `locales` | Contains all supported locales (if enabled). |
+| `defaultLocale` | Contains the configured default locale (if enabled). |
 
 ## getServerSideProps return values[](#getserversideprops-return-values)
 
@@ -169,24 +134,10 @@ export async function getServerSideProps(context) {
 
 ## Version History[](#version-history)
 
-Version
-
-Changes
-
-`v13.4.0`
-
-[App Router](/docs/app/getting-started/fetching-data) is now stable with simplified data fetching
-
-`v10.0.0`
-
-`locale`, `locales`, `defaultLocale`, and `notFound` options added.
-
-`v9.3.0`
-
-`getServerSideProps` introduced.
+| Version | Changes |
+| --- | --- |
+| `v13.4.0` | [App Router](/docs/app/getting-started/fetching-data) is now stable with simplified data fetching |
+| `v10.0.0` | `locale`, `locales`, `defaultLocale`, and `notFound` options added. |
+| `v9.3.0` | `getServerSideProps` introduced. |
 
 Was this helpful?
-
-supported.
-
-Send

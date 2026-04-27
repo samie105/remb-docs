@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/app/api-reference/file-conventions/metad
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:10:10.624Z"
-content_hash: "a2122317247655692e3a6b4485314f5d4380f210b693238c1f59d6fe1b47f6ee"
+last_crawled_at: "2026-04-27T18:08:52.266Z"
+content_hash: "cdc56de1e46b72c960fb0314ff91e46a4dad2e1ba9c0575db93ed11a6d594589"
 menu_path: ["Metadata Files API Reference"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/api-reference/file-conventions/unauthorized/index.md", "title": "unauthorized.js"}
-nav_next: {"path": "nextjs/docs/app/api-reference/file-conventions/metadata/app-icons/index.md", "title": "favicon, icon, and apple-icon"}
+version: "latest"
+content_language: "en"
 ---
+[API Reference](/docs/app/api-reference)[File-system conventions](/docs/app/api-reference/file-conventions)Metadata Files
 
 # Metadata Files API Reference
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 This section of the docs covers **Metadata file conventions**. File-based metadata can be defined by adding special metadata files to route segments.
 
@@ -25,8 +26,8 @@ Once a file is defined, Next.js will automatically serve the file (with hashes i
 
 > **Good to know**:
 > 
-> *   Special Route Handlers like [`sitemap.ts`](/docs/app/api-reference/file-conventions/metadata/sitemap), [`opengraph-image.tsx`](/docs/app/api-reference/file-conventions/metadata/opengraph-image), and [`icon.tsx`](/docs/app/api-reference/file-conventions/metadata/app-icons), and other [metadata files](/docs/app/api-reference/file-conventions/metadata) are cached by default.
-> *   If using along with [`proxy.ts`](/docs/app/api-reference/file-conventions/proxy), [configure the matcher](/docs/app/api-reference/file-conventions/proxy#matcher) to exclude the metadata files.
+> -   Special Route Handlers like [`sitemap.ts`](/docs/app/api-reference/file-conventions/metadata/sitemap), [`opengraph-image.tsx`](/docs/app/api-reference/file-conventions/metadata/opengraph-image), and [`icon.tsx`](/docs/app/api-reference/file-conventions/metadata/app-icons), and other [metadata files](/docs/app/api-reference/file-conventions/metadata) are cached by default.
+> -   If using along with [`proxy.ts`](/docs/app/api-reference/file-conventions/proxy), [configure the matcher](/docs/app/api-reference/file-conventions/proxy#matcher) to exclude the metadata files.
 
 [
 
@@ -60,20 +61,4 @@ API Reference for the sitemap.xml file.
 
 ](/docs/app/api-reference/file-conventions/metadata/sitemap)
 
-[Previous
-
-unauthorized.js
-
-](/docs/app/api-reference/file-conventions/unauthorized)
-
-[Next
-
-favicon, icon, and apple-icon
-
-](/docs/app/api-reference/file-conventions/metadata/app-icons)
-
 Was this helpful?
-
-supported.
-
-Send

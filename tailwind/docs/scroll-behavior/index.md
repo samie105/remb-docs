@@ -5,33 +5,36 @@ canonical_url: "https://tailwindcss.com/docs/scroll-behavior"
 docset: "tailwind"
 kind: "framework"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:16:43.496Z"
-content_hash: "782d2fb85a432a17e642e4e559df06f02c16074c94efefd53d67c6bb6149e753"
+last_crawled_at: "2026-04-27T20:38:31.710Z"
+content_hash: "ff8d7d7442d4d25b17863454a4ec1aafac0427269593f8e8d02ee7931b0230fe"
 menu_path: ["scroll-behavior"]
 section_path: []
-nav_prev: {"path": "tailwind/docs/resize/index.md", "title": "resize"}
-nav_next: {"path": "tailwind/docs/scroll-margin/index.md", "title": "scroll-margin"}
+content_language: "en"
 ---
+[](/)
+
+[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
+
+1.  Interactivity
+2.  scroll-behavior
+
+Interactivity
 
 # scroll-behavior
 
 Utilities for controlling the scroll behavior of an element.
 
-Class
-
-Styles
-
-`scroll-auto`
-
+| Class | Styles |
+| --- | --- |
+| `scroll-auto` | 
 `scroll-behavior: auto;`
 
-`scroll-smooth`
+ |
+| `scroll-smooth` | 
 
 `scroll-behavior: smooth;`
 
-## [Examples](#examples)
-
-### [Using smooth scrolling](#using-smooth-scrolling)
+ |
 
 Use the `scroll-smooth` utility to enable smooth scrolling within an element:
 
@@ -41,8 +44,6 @@ Use the `scroll-smooth` utility to enable smooth scrolling within an element:
 
 Setting the `scroll-behavior` only affects scroll events that are triggered by the browser.
 
-### [Using normal scrolling](#using-normal-scrolling)
-
 Use the `scroll-auto` utility to revert to the default browser behavior for scrolling:
 
 ```
@@ -51,10 +52,10 @@ Use the `scroll-auto` utility to revert to the default browser behavior for scro
 
 ### On this page
 
-*   [Quick reference](#quick-reference)
-*   [Examples](#examples)
-    *   [Using smooth scrolling](#using-smooth-scrolling)
-    *   [Using normal scrolling](#using-normal-scrolling)
+-   [Quick reference](#quick-reference)
+-   [Examples](#examples)
+    -   [Using smooth scrolling](#using-smooth-scrolling)
+    -   [Using normal scrolling](#using-normal-scrolling)
 
 [
 

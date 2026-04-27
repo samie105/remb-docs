@@ -5,27 +5,25 @@ canonical_url: "https://orm.drizzle.team/docs/drizzle-kit-up"
 docset: "drizzle"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:47:14.345Z"
-content_hash: "aedb0e00921cce807864d859f7fbc01f5597f80911f1c81929c9c9d609d71b63"
+last_crawled_at: "2026-04-27T18:37:00.991Z"
+content_hash: "a2fefde2c1f3e58c3b356125002761bbb8f98bbe5a947bbaa8522757aa0b2ffa"
 menu_path: ["drizzle-kit up"]
 section_path: []
-nav_prev: {"path": "drizzle/docs/drizzle-kit-check/index.md", "title": "drizzle-kit check"}
-nav_next: {"path": "drizzle/docs/drizzle-kit-studio/index.md", "title": "drizzle-kit studio"}
+content_language: "en"
 ---
-
 `drizzle-kit up` command lets you upgrade drizzle schema snapshots to a newer version. It’s required whenever we introduce breaking changes to the json snapshots of the schema and upgrade the internal version.
 
   
 
 * * *
 
-`drizzle-kit up` command requires you to specify both `dialect` and database connection credentials, you can provide them either via [drizzle.config.ts](drizzle/docs/drizzle-config-file/index.md) config file or via CLI options
+`drizzle-kit up` command requires you to specify both `dialect` and database connection credentials, you can provide them either via [drizzle.config.ts](https://orm.drizzle.team/docs/drizzle-config-file) config file or via CLI options
 
 With config file
 
 As CLI options
 
-```
+```ts
 // drizzle.config.ts
 import { defineConfig } from "drizzle-kit";
 
@@ -34,25 +32,17 @@ export default defineConfig({
 });
 ```
 
-```
+```shell
 npx drizzle-kit up
 ```
 
-```
+```shell
 npx drizzle-kit up --dialect=postgresql
 ```
 
 ### Multiple configuration files in one project[](#multiple-configuration-files-in-one-project)
 
 You can have multiple config files in the project, it’s very useful when you have multiple database stages or multiple databases on the same project:
-
-npm
-
-yarn
-
-pnpm
-
-bun
 
 ```
 npx drizzle-kit migrate --config=drizzle-dev.config.ts
@@ -74,7 +64,7 @@ bunx drizzle-kit migrate --config=drizzle-dev.config.ts
 bunx drizzle-kit migrate --config=drizzle-prod.config.ts
 ```
 
-```
+```plaintext
 📦 <project root>
  ├ 📂 drizzle
  ├ 📂 src
@@ -87,31 +77,15 @@ bunx drizzle-kit migrate --config=drizzle-prod.config.ts
 
 ### Extended list of configurations[](#extended-list-of-configurations)
 
-We recommend configuring `drizzle-kit` through [drizzle.config.ts](drizzle/docs/drizzle-config-file/index.md) file, yet you can provide all configuration options through CLI if necessary, e.g. in CI/CD pipelines, etc.
+We recommend configuring `drizzle-kit` through [drizzle.config.ts](https://orm.drizzle.team/docs/drizzle-config-file) file, yet you can provide all configuration options through CLI if necessary, e.g. in CI/CD pipelines, etc.
 
-`dialect`
-
-`required`
-
-Database dialect you are using. Can be `postgresql`,`mysql` or `sqlite`
-
-`out`
-
-Migrations folder, default=`./drizzle`
-
-`config`
-
-Configuration file path, default=`drizzle.config.ts`
+|  |  |  |
+| --- | --- | --- |
+| `dialect` | `required` | Database dialect you are using. Can be `postgresql`,`mysql` or `sqlite` |
+| `out` |  | Migrations folder, default=`./drizzle` |
+| `config` |  | Configuration file path, default=`drizzle.config.ts` |
 
   
-
-npm
-
-yarn
-
-pnpm
-
-bun
 
 ```
 npx drizzle-kit up --dialect=postgresql

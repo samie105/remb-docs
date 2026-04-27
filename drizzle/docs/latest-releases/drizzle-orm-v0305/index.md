@@ -5,14 +5,12 @@ canonical_url: "https://orm.drizzle.team/docs/latest-releases/drizzle-orm-v0305"
 docset: "drizzle"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:14:03.761Z"
-content_hash: "fa49c63edae9664e0da64a00b4ed34b169e829dbc4a902dfeba367a75f78fb6b"
+last_crawled_at: "2026-04-27T19:13:47.379Z"
+content_hash: "4d278d57401451dfded8d5a0be80d050c2f65e4cdf28f2218d2abdc75aba6de3"
 menu_path: ["Drizzle ORM - DrizzleORM v0.30.5 release"]
 section_path: []
-nav_prev: {"path": "drizzle/docs/latest-releases/drizzle-orm-v0304/index.md", "title": "Drizzle ORM - DrizzleORM v0.30.4 release"}
-nav_next: {"path": "drizzle/docs/latest-releases/drizzle-orm-v0306/index.md", "title": "Drizzle ORM - DrizzleORM v0.30.6 release"}
+content_language: "en"
 ---
-
 DrizzleORM v0.30.5 release
 
 Mar 27, 2024
@@ -25,7 +23,7 @@ Adds a dynamic update value to the column. The function will be called when the 
 
 > Note: This value does not affect the `drizzle-kit` behavior, it is only used at runtime in `drizzle-orm`.
 
-```
+```ts
 const usersOnUpdate = pgTable('users_on_update', {
   id: serial('id').primaryKey(),
   name: text('name').notNull(),
@@ -37,4 +35,4 @@ const usersOnUpdate = pgTable('users_on_update', {
 
 ## Fixes
 
-*   Insertions on columns with the smallserial datatype are not optional - [#1848](https://github.com/drizzle-team/drizzle-orm/issues/1848)
+-   Insertions on columns with the smallserial datatype are not optional - [#1848](https://github.com/drizzle-team/drizzle-orm/issues/1848)

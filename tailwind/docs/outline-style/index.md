@@ -5,43 +5,13 @@ canonical_url: "https://tailwindcss.com/docs/outline-style"
 docset: "tailwind"
 kind: "framework"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:03:27.666Z"
-content_hash: "896783c46e5fe09111a5358ebdfd069f55d1609af820a0ebde3cb40eed18ee31"
+last_crawled_at: "2026-04-27T20:19:52.751Z"
+content_hash: "56d42c9ee1a97159ce81b6b48719c7f32fe6b4eb474f272c9d15961339129be5"
 menu_path: ["outline-style"]
 section_path: []
-nav_prev: {"path": "tailwind/docs/outline-color/index.md", "title": "outline-color"}
-nav_next: {"path": "tailwind/docs/outline-offset/index.md", "title": "outline-offset"}
+content_language: "en"
 ---
-
 Utilities for controlling the style of an element's outline.
-
-Class
-
-Styles
-
-`outline-solid`
-
-`outline-style: solid;`
-
-`outline-dashed`
-
-`outline-style: dashed;`
-
-`outline-dotted`
-
-`outline-style: dotted;`
-
-`outline-double`
-
-`outline-style: double;`
-
-`outline-none`
-
-`outline-style: none;`
-
-`outline-hidden`
-
-`outline: 2px solid transparent; outline-offset: 2px;`
 
 ## [Examples](#examples)
 
@@ -91,4 +61,4 @@ Prefix an `outline-style` utility with a breakpoint variant like `md:` to only a
 <div class="outline md:outline-dashed ...">  <!-- ... --></div>
 ```
 
-Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).
+Learn more about using variants in the [variants documentation](https://tailwindcss.com/docs/hover-focus-and-other-states).

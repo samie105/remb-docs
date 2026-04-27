@@ -5,19 +5,20 @@ canonical_url: "https://nextjs.org/docs/pages/api-reference/config/next-config-j
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:21:39.459Z"
-content_hash: "400611cf058b9c4cce9ed24db3e538dfd69053ca530f5fc01c4912cf5a757d57"
+last_crawled_at: "2026-04-27T18:21:03.218Z"
+content_hash: "98125e6dbba920b71f3f0439090b3b3c30267df7bc8e5b507fa074f78ae9cc87"
 menu_path: ["urlImports"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/pages/api-reference/config/next-config-js/typescript/index.md", "title": "typescript"}
-nav_next: {"path": "nextjs/docs/pages/api-reference/config/next-config-js/useLightningcss/index.md", "title": "useLightningcss"}
+version: "latest"
+content_language: "en"
 ---
+[Configuration](/docs/pages/api-reference/config)[next.config.js Options](/docs/pages/api-reference/config/next-config-js)urlImports
 
 # urlImports
 
 This feature is currently experimental and subject to change, it's not recommended for production. Try it out and share your feedback on [GitHub](https://github.com/vercel/next.js/issues).
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 URL imports are an experimental feature that allows you to import modules directly from external servers (instead of from the local disk).
 
@@ -51,8 +52,8 @@ This feature is being designed with **security as the top priority**. To start, 
 
 When using URL imports, Next.js will create a `next.lock` directory containing a lockfile and fetched assets. This directory **must be committed to Git**, not ignored by `.gitignore`.
 
-*   When running `next dev`, Next.js will download and add all newly discovered URL Imports to your lockfile.
-*   When running `next build`, Next.js will use only the lockfile to build the application for production.
+-   When running `next dev`, Next.js will download and add all newly discovered URL Imports to your lockfile.
+-   When running `next build`, Next.js will use only the lockfile to build the application for production.
 
 Typically, no network requests are needed and any outdated lockfile will cause the build to fail. One exception is resources that respond with `Cache-Control: no-cache`. These resources will have a `no-cache` entry in the lockfile and will always be fetched from the network on each build.
 
@@ -104,7 +105,3 @@ console.log(logo.pathname)
 ```
 
 Was this helpful?
-
-supported.
-
-Send

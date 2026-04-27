@@ -5,61 +5,15 @@ canonical_url: "https://tailwindcss.com/docs/grid-row"
 docset: "tailwind"
 kind: "framework"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:47:48.704Z"
-content_hash: "05ff2c065937270c69e8ddeec236f6b8e97c2f71954729b42e51de335fc638c8"
+last_crawled_at: "2026-04-27T19:58:56.345Z"
+content_hash: "76864c57cdb98d65be1b2a58cd0e35cb1959c0910720cfb0a64f365f8e8e42b1"
 menu_path: ["grid-row"]
 section_path: []
-nav_prev: {"path": "tailwind/docs/grid-template-rows/index.md", "title": "grid-template-rows"}
-nav_next: {"path": "tailwind/docs/grid-auto-flow/index.md", "title": "grid-auto-flow"}
+content_language: "en"
 ---
-
 Flexbox & Grid
 
 Utilities for controlling how elements are sized and placed across grid rows.
-
-Class
-
-Styles
-
-`row-span-<number>`
-
-`grid-row: span <number> / span <number>;`
-
-`row-span-full`
-
-`grid-row: 1 / -1;`
-
-`row-span-(<custom-property>)`
-
-`grid-row: span var(<custom-property>) / span var(<custom-property>);`
-
-`row-span-[<value>]`
-
-`grid-row: span <value> / span <value>;`
-
-`row-start-<number>`
-
-`grid-row-start: <number>;`
-
-`-row-start-<number>`
-
-`grid-row-start: calc(<number> * -1);`
-
-`row-start-auto`
-
-`grid-row-start: auto;`
-
-`row-start-(<custom-property>)`
-
-`grid-row-start: var(<custom-property>);`
-
-`row-start-[<value>]`
-
-`grid-row-start: <value>;`
-
-`row-end-<number>`
-
-`grid-row-end: <number>;`
 
 ## [Examples](#examples)
 
@@ -117,4 +71,4 @@ Prefix `grid-row`,`grid-row-start`, and `grid-row-end` utilities with a breakpoi
 <div class="row-span-3 md:row-span-4 ...">  <!-- ... --></div>
 ```
 
-Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).
+Learn more about using variants in the [variants documentation](https://tailwindcss.com/docs/hover-focus-and-other-states).

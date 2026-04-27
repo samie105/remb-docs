@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/pages/getting-started/fonts"
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:23:45.796Z"
-content_hash: "e9e204ae7ffa83502c924b98d5874078d2db81104c14d579e6884272a82c0497"
+last_crawled_at: "2026-04-27T18:23:04.112Z"
+content_hash: "3ea38b3f9f4a7e6ccf1b0d989763e11029a176a0074c05d5650e1a36942b833d"
 menu_path: ["How to use fonts"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/pages/getting-started/images/index.md", "title": "Image Optimization"}
-nav_next: {"path": "nextjs/docs/pages/getting-started/css/index.md", "title": "How to use CSS in your application"}
+version: "latest"
+content_language: "en"
 ---
+[Pages Router](/docs/pages)[Getting Started](/docs/pages/getting-started)Fonts
 
 # How to use fonts
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 The [`next/font`](/docs/app/api-reference/components/font) module automatically optimizes your fonts and removes external network requests for improved privacy and performance.
 
@@ -24,8 +25,6 @@ It includes **built-in self-hosting** for any font file. This means you can opti
 To start using `next/font`, import it from [`next/font/local`](#local-fonts) or [`next/font/google`](#google-fonts), call it as a function with the appropriate options, and set the `className` of the element you want to apply the font to. For example, you can apply fonts globally in your [Custom App](/docs/pages/building-your-application/routing/custom-app) (`pages/_app`):
 
 pages/\_app.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -54,8 +53,6 @@ To start using a Google Font, import your chosen font from `next/font/google`:
 
 pages/\_app.tsx
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -78,8 +75,6 @@ export default function MyApp({ Component, pageProps }: AppProps) {
 We recommend using [variable fonts](https://fonts.google.com/variablefonts) for the best performance and flexibility. But if you can't use a variable font, you will need to specify a weight:
 
 pages/\_app.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -106,8 +101,6 @@ export default function MyApp({ Component, pageProps }: AppProps) {
 To use a local font, import your font from `next/font/local` and specify the [`src`](/docs/pages/api-reference/components/font#src) of your local font file. Fonts can be stored in the [`public`](/docs/pages/api-reference/file-conventions/public-folder) folder or inside the `pages` folder. For example:
 
 pages/\_app.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -170,7 +163,3 @@ API Reference for the Font Module
 ](/docs/pages/api-reference/components/font)
 
 Was this helpful?
-
-supported.
-
-Send

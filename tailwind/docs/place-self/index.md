@@ -5,47 +5,13 @@ canonical_url: "https://tailwindcss.com/docs/place-self"
 docset: "tailwind"
 kind: "framework"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:50:32.186Z"
-content_hash: "4cbe6349570c977a15cb667fef4bf874a5a8863d8ad95ef819ba56199edff917"
+last_crawled_at: "2026-04-27T20:02:28.356Z"
+content_hash: "b0a3585fa56267adc03e1dd7b66f03496165d555c02ed88001d867065d8a4972"
 menu_path: ["place-self"]
 section_path: []
-nav_prev: {"path": "tailwind/docs/place-items/index.md", "title": "place-items"}
-nav_next: {"path": "tailwind/docs/padding/index.md", "title": "padding"}
+content_language: "en"
 ---
-
 Utilities for controlling how an individual item is justified and aligned at the same time.
-
-Class
-
-Styles
-
-`place-self-auto`
-
-`place-self: auto;`
-
-`place-self-start`
-
-`place-self: start;`
-
-`place-self-end`
-
-`place-self: end;`
-
-`place-self-end-safe`
-
-`place-self: safe end;`
-
-`place-self-center`
-
-`place-self: center;`
-
-`place-self-center-safe`
-
-`place-self: safe center;`
-
-`place-self-stretch`
-
-`place-self: stretch;`
 
 ## [Examples](#examples)
 
@@ -157,4 +123,4 @@ Prefix a `place-self` utility with a breakpoint variant like `md:` to only apply
 <div class="place-self-start md:place-self-end ...">  <!-- ... --></div>
 ```
 
-Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).
+Learn more about using variants in the [variants documentation](https://tailwindcss.com/docs/hover-focus-and-other-states).

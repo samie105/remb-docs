@@ -5,10 +5,11 @@ canonical_url: "https://docs.deno.com/api/node/util/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:43:23.433Z"
-content_hash: "c3076497f0ed997e2bbe952cf47dde51e93995a67fa0aec659875753ae569fdb"
+last_crawled_at: "2026-04-27T17:15:40.181Z"
+content_hash: "c59860675dd8f668321a330e1afdd0a2d14433a3d9548e847c4c3722facd163d"
 menu_path: ["util - Node documentation"]
 section_path: []
+content_language: "en"
 ---
 ### Usage in Deno
 
@@ -22,21 +23,19 @@ The `node:util` module supports the needs of Node.js internal APIs. Many of the 
 import util from 'node:util';
 ```
 
-### Classes [#](#Classes)
-
 c
 
 [MIMEParams](.././util/~/MIMEParams "MIMEParams")
 
 No documentation available
 
-*   [delete](.././util/~/MIMEParams#method_delete_0)
-*   [entries](.././util/~/MIMEParams#method_entries_0)
-*   [get](.././util/~/MIMEParams#method_get_0)
-*   [has](.././util/~/MIMEParams#method_has_0)
-*   [keys](.././util/~/MIMEParams#method_keys_0)
-*   [set](.././util/~/MIMEParams#method_set_0)
-*   [values](.././util/~/MIMEParams#method_values_0)
+-   [delete](.././util/~/MIMEParams#method_delete_0)
+-   [entries](.././util/~/MIMEParams#method_entries_0)
+-   [get](.././util/~/MIMEParams#method_get_0)
+-   [has](.././util/~/MIMEParams#method_has_0)
+-   [keys](.././util/~/MIMEParams#method_keys_0)
+-   [set](.././util/~/MIMEParams#method_set_0)
+-   [values](.././util/~/MIMEParams#method_values_0)
 
 c
 
@@ -44,11 +43,11 @@ c
 
 No documentation available
 
-*   [essence](.././util/~/MIMEType#property_essence)
-*   [params](.././util/~/MIMEType#property_params)
-*   [subtype](.././util/~/MIMEType#property_subtype)
-*   [toString](.././util/~/MIMEType#method_tostring_0)
-*   [type](.././util/~/MIMEType#property_type)
+-   [essence](.././util/~/MIMEType#property_essence)
+-   [params](.././util/~/MIMEType#property_params)
+-   [subtype](.././util/~/MIMEType#property_subtype)
+-   [toString](.././util/~/MIMEType#method_tostring_0)
+-   [type](.././util/~/MIMEType#property_type)
 
 c
 
@@ -58,10 +57,10 @@ v
 
 An implementation of the [WHATWG Encoding Standard](https://encoding.spec.whatwg.org/) `TextDecoder` API.
 
-*   [decode](.././util/~/TextDecoder#method_decode_0)
-*   [encoding](.././util/~/TextDecoder#property_encoding)
-*   [fatal](.././util/~/TextDecoder#property_fatal)
-*   [ignoreBOM](.././util/~/TextDecoder#property_ignorebom)
+-   [decode](.././util/~/TextDecoder#method_decode_0)
+-   [encoding](.././util/~/TextDecoder#property_encoding)
+-   [fatal](.././util/~/TextDecoder#property_fatal)
+-   [ignoreBOM](.././util/~/TextDecoder#property_ignorebom)
 
 c
 
@@ -71,11 +70,9 @@ v
 
 An implementation of the [WHATWG Encoding Standard](https://encoding.spec.whatwg.org/) `TextEncoder` API. All instances of `TextEncoder` only support UTF-8 encoding.
 
-*   [encode](.././util/~/TextEncoder#method_encode_0)
-*   [encodeInto](.././util/~/TextEncoder#method_encodeinto_0)
-*   [encoding](.././util/~/TextEncoder#property_encoding)
-
-### Functions [#](#Functions)
+-   [encode](.././util/~/TextEncoder#method_encode_0)
+-   [encodeInto](.././util/~/TextEncoder#method_encodeinto_0)
+-   [encoding](.././util/~/TextEncoder#property_encoding)
 
 f
 
@@ -555,19 +552,17 @@ f
 
 The `util.log()` method prints the given `string` to `stdout` with an included timestamp.
 
-### Interfaces [#](#Interfaces)
-
 I
 
 [CallSiteObject](.././util/~/CallSiteObject "CallSiteObject")
 
 No documentation available
 
-*   [columnNumber](.././util/~/CallSiteObject#property_columnnumber)
-*   [functionName](.././util/~/CallSiteObject#property_functionname)
-*   [lineNumber](.././util/~/CallSiteObject#property_linenumber)
-*   [scriptId](.././util/~/CallSiteObject#property_scriptid)
-*   [scriptName](.././util/~/CallSiteObject#property_scriptname)
+-   [columnNumber](.././util/~/CallSiteObject#property_columnnumber)
+-   [functionName](.././util/~/CallSiteObject#property_functionname)
+-   [lineNumber](.././util/~/CallSiteObject#property_linenumber)
+-   [scriptId](.././util/~/CallSiteObject#property_scriptid)
+-   [scriptName](.././util/~/CallSiteObject#property_scriptname)
 
 I
 
@@ -575,7 +570,7 @@ I
 
 No documentation available
 
-*   [\_\_promisify\_\_](.././util/~/CustomPromisifyLegacy#property___promisify__)
+-   [\_\_promisify\_\_](.././util/~/CustomPromisifyLegacy#property___promisify__)
 
 I
 
@@ -589,7 +584,7 @@ I
 
 No documentation available
 
-*   [enabled](.././util/~/DebugLogger#property_enabled)
+-   [enabled](.././util/~/DebugLogger#property_enabled)
 
 I
 
@@ -597,8 +592,8 @@ I
 
 No documentation available
 
-*   [read](.././util/~/EncodeIntoResult#property_read)
-*   [written](.././util/~/EncodeIntoResult#property_written)
+-   [read](.././util/~/EncodeIntoResult#property_read)
+-   [written](.././util/~/EncodeIntoResult#property_written)
 
 I
 
@@ -606,7 +601,7 @@ I
 
 No documentation available
 
-*   [sourceMap](.././util/~/GetCallSitesOptions#property_sourcemap)
+-   [sourceMap](.././util/~/GetCallSitesOptions#property_sourcemap)
 
 I
 
@@ -614,18 +609,18 @@ I
 
 No documentation available
 
-*   [breakLength](.././util/~/InspectOptions#property_breaklength)
-*   [colors](.././util/~/InspectOptions#property_colors)
-*   [compact](.././util/~/InspectOptions#property_compact)
-*   [customInspect](.././util/~/InspectOptions#property_custominspect)
-*   [depth](.././util/~/InspectOptions#property_depth)
-*   [getters](.././util/~/InspectOptions#property_getters)
-*   [maxArrayLength](.././util/~/InspectOptions#property_maxarraylength)
-*   [maxStringLength](.././util/~/InspectOptions#property_maxstringlength)
-*   [numericSeparator](.././util/~/InspectOptions#property_numericseparator)
-*   [showHidden](.././util/~/InspectOptions#property_showhidden)
-*   [showProxy](.././util/~/InspectOptions#property_showproxy)
-*   [sorted](.././util/~/InspectOptions#property_sorted)
+-   [breakLength](.././util/~/InspectOptions#property_breaklength)
+-   [colors](.././util/~/InspectOptions#property_colors)
+-   [compact](.././util/~/InspectOptions#property_compact)
+-   [customInspect](.././util/~/InspectOptions#property_custominspect)
+-   [depth](.././util/~/InspectOptions#property_depth)
+-   [getters](.././util/~/InspectOptions#property_getters)
+-   [maxArrayLength](.././util/~/InspectOptions#property_maxarraylength)
+-   [maxStringLength](.././util/~/InspectOptions#property_maxstringlength)
+-   [numericSeparator](.././util/~/InspectOptions#property_numericseparator)
+-   [showHidden](.././util/~/InspectOptions#property_showhidden)
+-   [showProxy](.././util/~/InspectOptions#property_showproxy)
+-   [sorted](.././util/~/InspectOptions#property_sorted)
 
 I
 
@@ -633,7 +628,7 @@ I
 
 No documentation available
 
-*   [stylize](.././util/~/InspectOptionsStylized#method_stylize_0)
+-   [stylize](.././util/~/InspectOptionsStylized#method_stylize_0)
 
 I
 
@@ -641,12 +636,12 @@ I
 
 No documentation available
 
-*   [allowNegative](.././util/~/ParseArgsConfig#property_allownegative)
-*   [allowPositionals](.././util/~/ParseArgsConfig#property_allowpositionals)
-*   [args](.././util/~/ParseArgsConfig#property_args)
-*   [options](.././util/~/ParseArgsConfig#property_options)
-*   [strict](.././util/~/ParseArgsConfig#property_strict)
-*   [tokens](.././util/~/ParseArgsConfig#property_tokens)
+-   [allowNegative](.././util/~/ParseArgsConfig#property_allownegative)
+-   [allowPositionals](.././util/~/ParseArgsConfig#property_allowpositionals)
+-   [args](.././util/~/ParseArgsConfig#property_args)
+-   [options](.././util/~/ParseArgsConfig#property_options)
+-   [strict](.././util/~/ParseArgsConfig#property_strict)
+-   [tokens](.././util/~/ParseArgsConfig#property_tokens)
 
 I
 
@@ -654,10 +649,10 @@ I
 
 No documentation available
 
-*   [default](.././util/~/ParseArgsOptionDescriptor#property_default)
-*   [multiple](.././util/~/ParseArgsOptionDescriptor#property_multiple)
-*   [short](.././util/~/ParseArgsOptionDescriptor#property_short)
-*   [type](.././util/~/ParseArgsOptionDescriptor#property_type)
+-   [default](.././util/~/ParseArgsOptionDescriptor#property_default)
+-   [multiple](.././util/~/ParseArgsOptionDescriptor#property_multiple)
+-   [short](.././util/~/ParseArgsOptionDescriptor#property_short)
+-   [type](.././util/~/ParseArgsOptionDescriptor#property_type)
 
 I
 
@@ -665,15 +660,11 @@ I
 
 No documentation available
 
-### Namespaces [#](#Namespaces)
-
 N
 
 [types](.././util/~/types "types")
 
 No documentation available
-
-### Type Aliases [#](<#Type Aliases>)
 
 T
 
@@ -812,8 +803,6 @@ T
 [TokenForOptions](.././util/~/TokenForOptions "TokenForOptions")
 
 No documentation available
-
-### Variables [#](#Variables)
 
 v
 

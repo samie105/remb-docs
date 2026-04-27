@@ -5,14 +5,12 @@ canonical_url: "https://www.postgresql.org/docs/current/protocol-replication.htm
 docset: "postgres"
 kind: "database"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:52:18.956Z"
-content_hash: "97b45e23a096d2cf6561f74935b90ece3a618b21f48a03c67ae5c86614135685"
+last_crawled_at: "2026-04-27T20:51:04.371Z"
+content_hash: "a4f5a4922c1e0f6f07b99a22f022d0de8647ebb16689ff27a9929c3fce7feee5"
 menu_path: ["PostgreSQL: Documentation: 18: 54.4. Streaming Replication Protocol"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/protocol-overview.html/index.md", "title": "PostgreSQL: Documentation: 18: 54.1.\u00a0Overview"}
-nav_next: {"path": "postgres/docs/current/queries-order.html/index.md", "title": "PostgreSQL: Documentation: 18: 7.5.\u00a0Sorting Rows (ORDER BY)"}
+content_language: "en"
 ---
-
 To initiate streaming replication, the frontend sends the `replication` parameter in the startup message. A Boolean value of `true` (or `on`, `yes`, `1`) tells the backend to go into physical replication walsender mode, wherein a small set of replication commands, shown below, can be issued instead of SQL statements.
 
 Passing `database` as the value for the `replication` parameter instructs the backend to go into logical replication walsender mode, connecting to the database specified in the `dbname` parameter. In logical replication walsender mode, the replication commands shown below as well as normal SQL commands can be issued.
@@ -311,7 +309,7 @@ Instructs the server to start streaming a base backup. The system will automatic
 
 `LABEL` _`'label'`_
 
-Sets the label of the backup. If none is specified, a backup label of `base backup` will be used. The quoting rules for the label are the same as a standard SQL string with [standard\_conforming\_strings](postgres/docs/current/runtime-config-compatible.html/index.md#GUC-STANDARD-CONFORMING-STRINGS) turned on.
+Sets the label of the backup. If none is specified, a backup label of `base backup` will be used. The quoting rules for the label are the same as a standard SQL string with [standard\_conforming\_strings](https://www.postgresql.org/docs/current/runtime-config-compatible.html#GUC-STANDARD-CONFORMING-STRINGS) turned on.
 
 `TARGET` _`'target'`_
 
@@ -443,21 +441,21 @@ After the CopyOutResponse, or all such responses, have been sent, a final ordina
 
 The tar archive for the data directory and each tablespace will contain all files in the directories, regardless of whether they are PostgreSQL files or other files added to the same directory. The only excluded files are:
 
-*   `postmaster.pid`
+-   `postmaster.pid`
     
-*   `postmaster.opts`
+-   `postmaster.opts`
     
-*   `pg_internal.init` (found in multiple directories)
+-   `pg_internal.init` (found in multiple directories)
     
-*   Various temporary files and directories created during the operation of the PostgreSQL server, such as any file or directory beginning with `pgsql_tmp` and temporary relations.
+-   Various temporary files and directories created during the operation of the PostgreSQL server, such as any file or directory beginning with `pgsql_tmp` and temporary relations.
     
-*   Unlogged relations, except for the init fork which is required to recreate the (empty) unlogged relation on recovery.
+-   Unlogged relations, except for the init fork which is required to recreate the (empty) unlogged relation on recovery.
     
-*   `pg_wal`, including subdirectories. If the backup is run with WAL files included, a synthesized version of `pg_wal` will be included, but it will only contain the files necessary for the backup to work, not the rest of the contents.
+-   `pg_wal`, including subdirectories. If the backup is run with WAL files included, a synthesized version of `pg_wal` will be included, but it will only contain the files necessary for the backup to work, not the rest of the contents.
     
-*   `pg_dynshmem`, `pg_notify`, `pg_replslot`, `pg_serial`, `pg_snapshots`, `pg_stat_tmp`, and `pg_subtrans` are copied as empty directories (even if they are symbolic links).
+-   `pg_dynshmem`, `pg_notify`, `pg_replslot`, `pg_serial`, `pg_snapshots`, `pg_stat_tmp`, and `pg_subtrans` are copied as empty directories (even if they are symbolic links).
     
-*   Files other than regular files and directories, such as symbolic links (other than for the directories listed above) and special device and operating system files, are skipped. (Symbolic links in `pg_tblspc` are maintained.)
+-   Files other than regular files and directories, such as symbolic links (other than for the directories listed above) and special device and operating system files, are skipped. (Symbolic links in `pg_tblspc` are maintained.)
     
 
 Owner, group, and file mode are set if the underlying file system on the server supports it.

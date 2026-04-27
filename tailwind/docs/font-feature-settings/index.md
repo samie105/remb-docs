@@ -5,33 +5,36 @@ canonical_url: "https://tailwindcss.com/docs/font-feature-settings"
 docset: "tailwind"
 kind: "framework"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:56:01.299Z"
-content_hash: "58956cb8d5f7274b234404f56cd14e9e29e6dd67b706d35d41e9917f1ce475cf"
+last_crawled_at: "2026-04-27T20:08:49.475Z"
+content_hash: "8ceb5430d76ed99a9ee043219d119811538730e2dd2106502b0af144aa1d1ca4"
 menu_path: ["font-feature-settings"]
 section_path: []
-nav_prev: {"path": "tailwind/docs/font-variant-numeric/index.md", "title": "font-variant-numeric"}
-nav_next: {"path": "tailwind/docs/letter-spacing/index.md", "title": "letter-spacing"}
+content_language: "en"
 ---
+[](/)
+
+[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
+
+1.  Typography
+2.  font-feature-settings
+
+Typography
 
 # font-feature-settings
 
 Utilities for controlling advanced typographic features.
 
-Class
-
-Styles
-
-`font-features-[<value>]`
-
+| Class | Styles |
+| --- | --- |
+| `font-features-[<value>]` | 
 `font-feature-settings: <value>;`
 
-`font-features-(<custom-property>)`
+ |
+| `font-features-(<custom-property>)` | 
 
 `font-feature-settings: var(<custom-property>);`
 
-## [Examples](#examples)
-
-### [Basic example](#basic-example)
+ |
 
 Use the `font-features-[<value>]` utility to enable OpenType features in fonts that support them:
 
@@ -39,23 +42,17 @@ Use the `font-features-[<value>]` utility to enable OpenType features in fonts t
 <p class="font-features-['smcp'] ...">This text uses small caps.</p>
 ```
 
-### [Enabling multiple features](#enabling-multiple-features)
-
 You can enable multiple OpenType features by separating them with commas:
 
 ```
 <p class="font-features-['smcp','onum'] ...">This text uses small caps and oldstyle numbers.</p>
 ```
 
-### [Using CSS variables](#using-css-variables)
-
 Use the `font-features-(<custom-property>)` syntax to apply font feature settings from a CSS variable:
 
 ```
 <p class="font-features-(--my-features) ...">  <!-- ... --></p>
 ```
-
-### [Responsive design](#responsive-design)
 
 Prefix a `font-feature-settings` utility with a breakpoint variant like `md:` to only apply the utility at medium screen sizes and above:
 
@@ -67,21 +64,25 @@ Learn more about using variants in the [variants documentation](/docs/hover-focu
 
 ### On this page
 
-*   [Quick reference](#quick-reference)
-*   [Examples](#examples)
-    *   [Basic example](#basic-example)
-    *   [Enabling multiple features](#enabling-multiple-features)
-    *   [Using CSS variables](#using-css-variables)
-    *   [Responsive design](#responsive-design)
+-   [Quick reference](#quick-reference)
+-   [Examples](#examples)
+    -   [Basic example](#basic-example)
+    -   [Enabling multiple features](#enabling-multiple-features)
+    -   [Using CSS variables](#using-css-variables)
+    -   [Responsive design](#responsive-design)
 
-![Build UIs that don’t suck — 5-day mini-course](/_next/static/media/course-promo.d3d6bc78.jpg)
+[
 
-5-day mini-course
+![Refactoring UI](/_next/static/media/book-promo.3012c0f6.png)
 
-Build UIs that don’t suck.
+From the creators of Tailwind CSS
 
-Short, tactical video lessons from the creator of Tailwind CSS, delivered directly to your inbox every day for a week.
+Make your ideas look awesome, without relying on a designer.
 
-[Get the free course](/build-uis-that-dont-suck)
+> “This is the survival kit I wish I had when I started building apps.”
+> 
+> Derrick Reimer, SavvyCal
+
+](https://www.refactoringui.com/?ref=sidebar)
 
 Copyright © 2026 Tailwind Labs Inc.·[Trademark Policy](/brand)

@@ -5,61 +5,15 @@ canonical_url: "https://tailwindcss.com/docs/grid-column"
 docset: "tailwind"
 kind: "framework"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:47:08.439Z"
-content_hash: "39eca86f180f72257e1c48bd773a4710003e08f8152921e680938f582337c6ea"
+last_crawled_at: "2026-04-27T19:58:21.920Z"
+content_hash: "95f80e8d86dd10e455d4fcaae8e0116d877da7c42fa80d963bf8e1c6b8eb2b04"
 menu_path: ["grid-column"]
 section_path: []
-nav_prev: {"path": "tailwind/docs/grid-template-columns/index.md", "title": "grid-template-columns"}
-nav_next: {"path": "tailwind/docs/grid-template-rows/index.md", "title": "grid-template-rows"}
+content_language: "en"
 ---
-
 Flexbox & Grid
 
 Utilities for controlling how elements are sized and placed across grid columns.
-
-Class
-
-Styles
-
-`col-span-<number>`
-
-`grid-column: span <number> / span <number>;`
-
-`col-span-full`
-
-`grid-column: 1 / -1;`
-
-`col-span-(<custom-property>)`
-
-`grid-column: span var(<custom-property>) / span var(<custom-property>);`
-
-`col-span-[<value>]`
-
-`grid-column: span <value> / span <value>;`
-
-`col-start-<number>`
-
-`grid-column-start: <number>;`
-
-`-col-start-<number>`
-
-`grid-column-start: calc(<number> * -1);`
-
-`col-start-auto`
-
-`grid-column-start: auto;`
-
-`col-start-(<custom-property>)`
-
-`grid-column-start: var(<custom-property>);`
-
-`col-start-[<value>]`
-
-`grid-column-start: <value>;`
-
-`col-end-<number>`
-
-`grid-column-end: <number>;`
 
 ## [Examples](#examples)
 
@@ -127,4 +81,4 @@ Prefix `grid-column`,`grid-column-start`, and `grid-column-end` utilities with a
 <div class="col-span-2 md:col-span-6 ...">  <!-- ... --></div>
 ```
 
-Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).
+Learn more about using variants in the [variants documentation](https://tailwindcss.com/docs/hover-focus-and-other-states).

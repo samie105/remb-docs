@@ -5,14 +5,13 @@ canonical_url: "https://tailwindcss.com/docs/hover-focus-and-other-states"
 docset: "tailwind"
 kind: "framework"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:35:50.240Z"
-content_hash: "c0db115eaff6c9b037b02e63cc1cc5211d355559f3f332dc20e9f983c4deb7bf"
+last_crawled_at: "2026-04-27T19:47:55.012Z"
+content_hash: "42f4e88c9a75ba034176a4af670d4644493d236efa07f79133ee58cf143f948b"
 menu_path: ["Hover, focus, and other states"]
 section_path: []
-nav_prev: {"path": "tailwind/docs/styling-with-utility-classes/index.md", "title": "Styling with utility classes"}
-nav_next: {"path": "tailwind/docs/responsive-design/index.md", "title": "Responsive design"}
+tab_variants: ["HTML","Generated CSS","HTML","Generated CSS","HTML","Generated CSS","HTML","Generated CSS","HTML","Generated CSS","HTML","Generated CSS","HTML","Generated CSS","HTML","Generated CSS","HTML","Generated CSS","HTML","Generated CSS"]
+content_language: "en"
 ---
-
 Using utilities to style elements on hover, focus, and more.
 
 Every utility class in Tailwind can be applied _conditionally_ by adding a variant to the beginning of the class name that describes the condition you want to target.
@@ -25,7 +24,7 @@ Hover over this button to see the background color change
 <button class="bg-sky-500 hover:bg-sky-700 ...">Save changes</button>
 ```
 
-How does this compare to traditional CSS?
+**How does this compare to traditional CSS?**
 
 When writing CSS the traditional way, a single class name would do different things based on the current state:
 
@@ -49,11 +48,11 @@ This is what we mean when we say a utility class can be applied _conditionally_ 
 
 Tailwind includes variants for just about everything you'll ever need, including:
 
-*   [Pseudo-classes](#pseudo-classes), like `:hover`, `:focus`, `:first-child`, and `:required`
-*   [Pseudo-elements](#pseudo-elements), like `::before`, `::after`, `::placeholder`, and `::selection`
-*   [Media and feature queries](#media-and-feature-queries), like responsive breakpoints, dark mode, and `prefers-reduced-motion`
-*   [Attribute selectors](#attribute-selectors), like `[dir="rtl"]` and `[open]`
-*   [Child selectors](#child-selectors), like `& > *` and `& *`
+-   [Pseudo-classes](#pseudo-classes), like `:hover`, `:focus`, `:first-child`, and `:required`
+-   [Pseudo-elements](#pseudo-elements), like `::before`, `::after`, `::placeholder`, and `::selection`
+-   [Media and feature queries](#media-and-feature-queries), like responsive breakpoints, dark mode, and `prefers-reduced-motion`
+-   [Attribute selectors](#attribute-selectors), like `[dir="rtl"]` and `[open]`
+-   [Child selectors](#child-selectors), like `& > *` and `& *`
 
 These variants can even be stacked to target more specific situations, for example changing the background color in dark mode, at the medium breakpoint, on hover:
 
@@ -84,42 +83,6 @@ See the [pseudo-class reference](#pseudo-class-reference) for a complete list of
 Style an element when it is the first-child or last-child using the `first` and `last` variants:
 
 You can also style an element when it's an odd or even child using the `odd` and `even` variants:
-
-Name
-
-Title
-
-Email
-
-Jane Cooper
-
-Regional Paradigm Technician
-
-jane.cooper@example.com
-
-Cody Fisher
-
-Product Directives Officer
-
-cody.fisher@example.com
-
-Leonard Krasner
-
-Senior Designer
-
-leonard.krasner@example.com
-
-Emily Selman
-
-VP, Hardware Engineering
-
-emily.selman@example.com
-
-Anna Roberts
-
-Chief Strategy Officer
-
-anna.roberts@example.com
 
 ```
 <table>  <!-- ... -->  <tbody>    {#each people as person}      <!-- Use different background colors for odd and even rows -->      <tr class="odd:bg-white even:bg-gray-50 dark:odd:bg-gray-900/50 dark:even:bg-gray-950">        <td>{person.name}</td>        <td>{person.title}</td>        <td>{person.email}</td>      </tr>    {/each}  </tbody></table>
@@ -233,9 +196,9 @@ This pattern works with every pseudo-class variant, for example `group-focus`, `
 
 When nesting groups, you can style something based on the state of a _specific_ parent group by giving that parent a unique group name using a `group/{name}` class, and including that name in variants using classes like `group-hover/{name}`:
 
-*   [Call](#)
-*   [Call](#)
-*   [Call](#)
+-   [Call](#)
+-   [Call](#)
+-   [Call](#)
 
 ```
 <ul role="list">  {#each people as person}    <li class="group/item ...">      <!-- ... -->      <a class="group/edit invisible group-hover/item:visible ..." href="tel:{person.phone}">        <span class="group-hover/edit:text-gray-700 ...">Call</span>        <svg class="group-hover/edit:translate-x-0.5 group-hover/edit:text-gray-500 ..."><!-- ... --></svg>      </a>    </li>  {/each}</ul>
@@ -245,16 +208,32 @@ Groups can be named however you like and don’t need to be configured in any wa
 
 #### [Arbitrary groups](#arbitrary-groups)
 
-You can create one-off `group-*` variants on the fly by providing your own selector as an [arbitrary value](tailwind/docs/adding-custom-styles/index.md#using-arbitrary-values) between square brackets:
+You can create one-off `group-*` variants on the fly by providing your own selector as an [arbitrary value](https://tailwindcss.com/docs/adding-custom-styles#using-arbitrary-values) between square brackets:
+
+#### HTML
 
 ```
 <div class="group is-published">  <div class="hidden group-[.is-published]:block">    Published  </div></div>
 ```
 
+#### Generated CSS
+
+```
+.group-\[\.is-published\]\:block {  &:is(:where(.group):is(.is-published) *) {    display: block;  }}
+```
+
 For more control, you can use the `&` character to mark where `.group` should end up in the final selector relative to the selector you are passing in:
+
+#### HTML
 
 ```
 <div class="group">  <div class="group-[:nth-of-type(3)_&]:block">    <!-- ... -->  </div></div>
+```
+
+#### Generated CSS
+
+```
+.group-\[\:nth-of-type\(3\)_\&\]\:block {  &:is(:nth-of-type(3) :where(.group) *) {    display: block;  }}
 ```
 
 #### [Implicit groups](#implicit-groups)
@@ -301,16 +280,32 @@ Peers can be named however you like and don’t need to be configured in any way
 
 #### [Arbitrary peers](#arbitrary-peers)
 
-You can create one-off `peer-*` variants on the fly by providing your own selector as an [arbitrary value](tailwind/docs/adding-custom-styles/index.md#using-arbitrary-values) between square brackets:
+You can create one-off `peer-*` variants on the fly by providing your own selector as an [arbitrary value](https://tailwindcss.com/docs/adding-custom-styles#using-arbitrary-values) between square brackets:
+
+#### HTML
 
 ```
 <form>  <label for="email">Email:</label>  <input id="email" name="email" type="email" class="is-dirty peer" required />  <div class="peer-[.is-dirty]:peer-required:block hidden">This field is required.</div>  <!-- ... --></form>
 ```
 
+#### Generated CSS
+
+```
+.peer-\[\.is-dirty\]\:peer-required\:block {  &:is(:where(.peer):is(.is-dirty) ~ *) {    &:is(:where(.peer):required ~ *) {      display: block;    }  }}
+```
+
 For more control, you can use the `&` character to mark where `.peer` should end up in the final selector relative to the selector you are passing in:
+
+#### HTML
 
 ```
 <div>  <input type="text" class="peer" />  <div class="hidden peer-[:nth-of-type(3)_&]:block">    <!-- ... -->  </div></div>
+```
+
+#### Generated CSS
+
+```
+.peer-\[\:nth-of-type\(3\)_\&\]\:block {  &:is(:nth-of-type(3) :where(.peer) ~ *) {    display: block;  }}
 ```
 
 ## [Pseudo-elements](#pseudo-elements)
@@ -363,9 +358,9 @@ Style the counters or bullets in lists using the `marker` variant:
 
 ## Ingredients
 
-*   5 cups chopped Porcini mushrooms
-*   1/2 cup of olive oil
-*   3lb of celery
+-   5 cups chopped Porcini mushrooms
+-   1/2 cup of olive oil
+-   3lb of celery
 
 ```
 <ul role="list" class="list-disc marker:text-sky-400 ...">  <li>5 cups chopped Porcini mushrooms</li>  <li>1/2 cup of olive oil</li>  <li>3lb of celery</li></ul>
@@ -413,7 +408,7 @@ Style the backdrop of a [native `<dialog>` element](https://developer.mozilla.or
 <dialog class="backdrop:bg-gray-50">  <form method="dialog">    <!-- ... -->  </form></dialog>
 ```
 
-If you're using native `<dialog>` elements in your project, you may also want to read about [styling open/closed states](tailwind/docs/hover-focus-and-other-states/index.md#openclosed-state) using the `open` variant.
+If you're using native `<dialog>` elements in your project, you may also want to read about [styling open/closed states](https://tailwindcss.com/docs/hover-focus-and-other-states#openclosed-state) using the `open` variant.
 
 ### [Responsive breakpoints](#responsive-breakpoints)
 
@@ -431,7 +426,7 @@ To style an element based on the width of a parent element instead of the viewpo
 <div class="@container">  <div class="flex flex-col @md:flex-row">    <!-- ... -->  </div></div>
 ```
 
-Check out the [Responsive design](tailwind/docs/responsive-design/index.md) documentation for an in-depth look at how these features work.
+Check out the [Responsive design](https://tailwindcss.com/docs/responsive-design) documentation for an in-depth look at how these features work.
 
 ### [prefers-color-scheme](#prefers-color-scheme)
 
@@ -455,7 +450,7 @@ The Zero Gravity Pen can be used to write in any orientation, including upside-d
 <div class="bg-white dark:bg-gray-900 ...">  <!-- ... -->  <h3 class="text-gray-900 dark:text-white ...">Writes upside-down</h3>  <p class="text-gray-500 dark:text-gray-400 ...">    The Zero Gravity Pen can be used to write in any orientation, including upside-down. It even works in outer space.  </p></div>
 ```
 
-Check out the [Dark Mode](tailwind/docs/dark-mode/index.md) documentation for an in-depth look at how this feature works.
+Check out the [Dark Mode](https://tailwindcss.com/docs/dark-mode) documentation for an in-depth look at how this feature works.
 
 ### [prefers-reduced-motion](#prefers-reduced-motion)
 
@@ -507,7 +502,7 @@ Use the `not-forced-colors` variant to apply styles based when the user is _not_
 <div class="not-forced-colors:appearance-none ...">  <!-- ... --></div>
 ```
 
-Tailwind also includes a [forced color adjust](tailwind/docs/forced-color-adjust/index.md) utilities to opt in and out of forced colors.
+Tailwind also includes a [forced color adjust](https://tailwindcss.com/docs/forced-color-adjust) utilities to opt in and out of forced colors.
 
 ### [inverted-colors](#inverted-colors)
 
@@ -613,45 +608,17 @@ For example, to apply the `bg-sky-700` class when the `aria-checked` attribute i
 
 By default we've included variants for the most common boolean ARIA attributes:
 
-Variant
-
-CSS
-
-`aria-busy`
-
-`&[aria-busy="true"]`
-
-`aria-checked`
-
-`&[aria-checked="true"]`
-
-`aria-disabled`
-
-`&[aria-disabled="true"]`
-
-`aria-expanded`
-
-`&[aria-expanded="true"]`
-
-`aria-hidden`
-
-`&[aria-hidden="true"]`
-
-`aria-pressed`
-
-`&[aria-pressed="true"]`
-
-`aria-readonly`
-
-`&[aria-readonly="true"]`
-
-`aria-required`
-
-`&[aria-required="true"]`
-
-`aria-selected`
-
-`&[aria-selected="true"]`
+| Variant | CSS |
+| --- | --- |
+| `aria-busy` | `&[aria-busy="true"]` |
+| `aria-checked` | `&[aria-checked="true"]` |
+| `aria-disabled` | `&[aria-disabled="true"]` |
+| `aria-expanded` | `&[aria-expanded="true"]` |
+| `aria-hidden` | `&[aria-hidden="true"]` |
+| `aria-pressed` | `&[aria-pressed="true"]` |
+| `aria-readonly` | `&[aria-readonly="true"]` |
+| `aria-required` | `&[aria-required="true"]` |
+| `aria-selected` | `&[aria-selected="true"]` |
 
 You can customize which `aria-*` variants are available by creating a new variant:
 
@@ -661,38 +628,36 @@ You can customize which `aria-*` variants are available by creating a new varian
 
 If you need to use a one-off `aria` variant that doesn’t make sense to include in your project, or for more complex ARIA attributes that take specific values, use square brackets to generate a property on the fly using any arbitrary value:
 
-Invoice #
+| Invoice # | Client | Amount |
+| --- | --- | --- |
+| #100 | Pendant Publishing | $2,000.00 |
+| #101 | Kruger Industrial Smoothing | $545.00 |
+| #102 | J. Peterman | $10,000.25 |
 
-Client
-
-Amount
-
-#100
-
-Pendant Publishing
-
-$2,000.00
-
-#101
-
-Kruger Industrial Smoothing
-
-$545.00
-
-#102
-
-J. Peterman
-
-$10,000.25
+#### HTML
 
 ```
 <table>  <thead>    <tr>      <th        aria-sort="ascending"        class="aria-[sort=ascending]:bg-[url('/img/down-arrow.svg')] aria-[sort=descending]:bg-[url('/img/up-arrow.svg')]"      >        Invoice #      </th>      <!-- ... -->    </tr>  </thead>  <!-- ... --></table>
 ```
 
+#### Generated CSS
+
+```
+.aria-\[sort\=ascending\]\:bg-\[url\(\'\/img\/down-arrow\.svg\'\)\] {  &[aria-sort="ascending"] {    background-image: url('/img/down-arrow.svg');  }}.aria-\[sort\=descending\]\:bg-\[url\(\'\/img\/up-arrow\.svg\'\)\] {  &[aria-sort="descending"] {    background-image: url('/img/up-arrow.svg');  }}
+```
+
 ARIA state variants can also target parent and sibling elements using the `group-aria-*` and `peer-aria-*` variants:
+
+#### HTML
 
 ```
 <table>  <thead>    <tr>    <th aria-sort="ascending" class="group">      Invoice #      <svg class="group-aria-[sort=ascending]:rotate-0 group-aria-[sort=descending]:rotate-180"><!-- ... --></svg>    </th>    <!-- ... -->    </tr>  </thead>  <!-- ... --></table>
+```
+
+#### Generated CSS
+
+```
+.group-aria-\[sort\=ascending\]\:rotate-0 {  &:is(:where(.group)[aria-sort="ascending"] *) {    rotate: 0deg;  }}.group-aria-\[sort\=descending\]\:rotate-180 {  &:is(:where(.group)[aria-sort="descending"] *) {    rotate: 180deg;  }}
 ```
 
 ### [Data attributes](#data-attributes)
@@ -712,8 +677,6 @@ If you need to check for a specific value you may use an arbitrary value:
 ```
 
 Alternatively, you can configure shortcuts for common data attributes you're using in your project by creating a new variant in the `data-*` namespace:
-
-app.css
 
 ```
 @import "tailwindcss";@custom-variant data-checked (&[data-ui~="checked"]);
@@ -741,10 +704,6 @@ Right-to-left
 
 ![](https://images.unsplash.com/photo-1563833717765-00462801314e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80)
 
-تامر كرم
-
-الرئيس التنفيذي
-
 ```
 <div class="group flex items-center">  <img class="h-12 w-12 shrink-0 rounded-full" src="..." alt="" />  <div class="ltr:ml-3 rtl:mr-3">    <p class="text-gray-700 group-hover:text-gray-900 ...">...</p>    <p class="text-gray-500 group-hover:text-gray-700 ...">...</p>  </div></div>
 ```
@@ -757,7 +716,7 @@ Use the `open` variant to conditionally add styles when a `<details>` or `<dialo
 
 Try toggling the disclosure to see the styles change
 
-Why do they call it Ovaltine?
+**Why do they call it Ovaltine?**
 
 The mug is round. The jar is round. They should call it Roundtine.
 
@@ -833,30 +792,62 @@ Like `*`, the `**` variant can be used to style children of an element. The main
 
 ### [Using arbitrary variants](#using-arbitrary-variants)
 
-Just like [arbitrary values](tailwind/docs/adding-custom-styles/index.md#using-arbitrary-values) let you use custom values with your utility classes, arbitrary variants let you write custom selector variants directly in your HTML.
+Just like [arbitrary values](https://tailwindcss.com/docs/adding-custom-styles#using-arbitrary-values) let you use custom values with your utility classes, arbitrary variants let you write custom selector variants directly in your HTML.
 
 Arbitrary variants are just format strings that represent the selector, wrapped in square brackets. For example, this arbitrary variant changes the cursor to `grabbing` when the element has the `is-dragging` class:
+
+#### HTML
 
 ```
 <ul role="list">  {#each items as item}    <li class="[&.is-dragging]:cursor-grabbing">{item}</li>  {/each}</ul>
 ```
 
+#### Generated CSS
+
+```
+.\[\&\.is-dragging\]\:cursor-grabbing {  &.is-dragging {    cursor: grabbing;  }}
+```
+
 Arbitrary variants can be stacked with built-in variants or with each other, just like the rest of the variants in Tailwind:
+
+#### HTML
 
 ```
 <ul role="list">  {#each items as item}    <li class="[&.is-dragging]:active:cursor-grabbing">{item}</li>  {/each}</ul>
 ```
 
+#### Generated CSS
+
+```
+.\[\&\.is-dragging\]\:active\:cursor-grabbing {  &.is-dragging {    &:active {      cursor: grabbing;    }  }}
+```
+
 If you need spaces in your selector, you can use an underscore. For example, this arbitrary variant selects all `p` elements within the element where you've added the class:
+
+#### HTML
 
 ```
 <div class="[&_p]:mt-4">  <p>Lorem ipsum...</p>  <ul>    <li>      <p>Lorem ipsum...</p>    </li>    <!-- ... -->  </ul></div>
 ```
 
+#### Generated CSS
+
+```
+.\[\&_p\]\:mt-4 {  & p {    margin-top: calc(var(--spacing) * 4);  }}
+```
+
 You can also use at-rules like `@media` or `@supports` in arbitrary variants:
+
+#### HTML
 
 ```
 <div class="flex [@supports(display:grid)]:grid">  <!-- ... --></div>
+```
+
+#### Generated CSS
+
+```
+.\[\@supports\(display\:grid\)\]\:grid {  @supports (display:grid) {    display: grid;  }}
 ```
 
 With at-rule custom variants the `&` placeholder isn't necessary, just like when nesting with a preprocessor.
@@ -875,7 +866,7 @@ Now you can use the `theme-midnight:<utility>` variant in your HTML:
 <html data-theme="midnight">  <button class="theme-midnight:bg-black ..."></button></html>
 ```
 
-Learn more about adding custom variants in the [adding custom variants documentation](tailwind/docs/adding-custom-styles/index.md#adding-custom-variants).
+Learn more about adding custom variants in the [adding custom variants documentation](https://tailwindcss.com/docs/adding-custom-styles#adding-custom-variants).
 
 ## [Appendix](#appendix)
 
@@ -883,521 +874,9 @@ Learn more about adding custom variants in the [adding custom variants documenta
 
 A quick reference table of every single variant included in Tailwind by default.
 
-Variant
-
-CSS
-
-[hover](#hover)
-
-`@media (hover: hover) { &:hover }`
-
-[focus](#focus)
-
-`&:focus`
-
-[focus-within](#focus-within)
-
-`&:focus-within`
-
-[focus-visible](#focus-visible)
-
-`&:focus-visible`
-
-[active](#active)
-
-`&:active`
-
-[visited](#visited)
-
-`&:visited`
-
-[target](#target)
-
-`&:target`
-
-[\*](#styling-direct-children)
-
-`:is(& > *)`
-
-[\*\*](#styling-all-descendants)
-
-`:is(& *)`
-
-[has-\[...\]](#has)
-
-`&:has(...)`
-
-[group-\[...\]](#styling-based-on-parent-state)
-
-`&:is(:where(.group)... *)`
-
-[peer-\[...\]](#styling-based-on-sibling-state)
-
-`&:is(:where(.peer)... ~ *)`
-
-[in-\[...\]](#implicit-groups)
-
-`:where(...) &`
-
-[not-\[...\]](#not)
-
-`&:not(...)`
-
-[inert](#styling-inert-elements)
-
-`&:is([inert], [inert] *)`
-
-[first](#first)
-
-`&:first-child`
-
-[last](#last)
-
-`&:last-child`
-
-[only](#only)
-
-`&:only-child`
-
-[odd](#odd)
-
-`&:nth-child(odd)`
-
-[even](#even)
-
-`&:nth-child(even)`
-
-[first-of-type](#first-of-type)
-
-`&:first-of-type`
-
-[last-of-type](#last-of-type)
-
-`&:last-of-type`
-
-[only-of-type](#only-of-type)
-
-`&:only-of-type`
-
-[nth-\[...\]](#nth)
-
-`&:nth-child(...)`
-
-[nth-last-\[...\]](#nth-last)
-
-`&:nth-last-child(...)`
-
-[nth-of-type-\[...\]](#nth-of-type)
-
-`&:nth-of-type(...)`
-
-[nth-last-of-type-\[...\]](#nth-last-of-type)
-
-`&:nth-last-of-type(...)`
-
-[empty](#empty)
-
-`&:empty`
-
-[disabled](#disabled)
-
-`&:disabled`
-
-[enabled](#enabled)
-
-`&:enabled`
-
-[checked](#checked)
-
-`&:checked`
-
-[indeterminate](#indeterminate)
-
-`&:indeterminate`
-
-[default](#default)
-
-`&:default`
-
-[optional](#optional)
-
-`&:optional`
-
-[required](#required)
-
-`&:required`
-
-[valid](#valid)
-
-`&:valid`
-
-[invalid](#invalid)
-
-`&:invalid`
-
-[user-valid](#user-valid)
-
-`&:user-valid`
-
-[user-invalid](#user-invalid)
-
-`&:user-invalid`
-
-[in-range](#in-range)
-
-`&:in-range`
-
-[out-of-range](#out-of-range)
-
-`&:out-of-range`
-
-[placeholder-shown](#placeholder-shown)
-
-`&:placeholder-shown`
-
-[details-content](#placeholder-shown)
-
-`&:details-content`
-
-[autofill](#autofill)
-
-`&:autofill`
-
-[read-only](#read-only)
-
-`&:read-only`
-
-[before](#before-and-after)
-
-`&::before`
-
-[after](#before-and-after)
-
-`&::after`
-
-[first-letter](#first-line-and-first-letter)
-
-`&::first-letter`
-
-[first-line](#first-line-and-first-letter)
-
-`&::first-line`
-
-[marker](#marker)
-
-`&::marker, & *::marker`
-
-[selection](#selection)
-
-`&::selection`
-
-[file](#file)
-
-`&::file-selector-button`
-
-[backdrop](#backdrop)
-
-`&::backdrop`
-
-[placeholder](#placeholder)
-
-`&::placeholder`
-
-[sm](#responsive-breakpoints)
-
-`@media (width >= 40rem)`
-
-[md](#responsive-breakpoints)
-
-`@media (width >= 48rem)`
-
-[lg](#responsive-breakpoints)
-
-`@media (width >= 64rem)`
-
-[xl](#responsive-breakpoints)
-
-`@media (width >= 80rem)`
-
-[2xl](#responsive-breakpoints)
-
-`@media (width >= 96rem)`
-
-[min-\[...\]](#responsive-breakpoints)
-
-`@media (width >= ...)`
-
-[max-sm](#responsive-breakpoints)
-
-`@media (width < 40rem)`
-
-[max-md](#responsive-breakpoints)
-
-`@media (width < 48rem)`
-
-[max-lg](#responsive-breakpoints)
-
-`@media (width < 64rem)`
-
-[max-xl](#responsive-breakpoints)
-
-`@media (width < 80rem)`
-
-[max-2xl](#responsive-breakpoints)
-
-`@media (width < 96rem)`
-
-[max-\[...\]](#responsive-breakpoints)
-
-`@media (width < ...)`
-
-[@3xs](#responsive-breakpoints)
-
-`@container (width >= 16rem)`
-
-[@2xs](#responsive-breakpoints)
-
-`@container (width >= 18rem)`
-
-[@xs](#responsive-breakpoints)
-
-`@container (width >= 20rem)`
-
-[@sm](#responsive-breakpoints)
-
-`@container (width >= 24rem)`
-
-[@md](#responsive-breakpoints)
-
-`@container (width >= 28rem)`
-
-[@lg](#responsive-breakpoints)
-
-`@container (width >= 32rem)`
-
-[@xl](#responsive-breakpoints)
-
-`@container (width >= 36rem)`
-
-[@2xl](#responsive-breakpoints)
-
-`@container (width >= 42rem)`
-
-[@3xl](#responsive-breakpoints)
-
-`@container (width >= 48rem)`
-
-[@4xl](#responsive-breakpoints)
-
-`@container (width >= 56rem)`
-
-[@5xl](#responsive-breakpoints)
-
-`@container (width >= 64rem)`
-
-[@6xl](#responsive-breakpoints)
-
-`@container (width >= 72rem)`
-
-[@7xl](#responsive-breakpoints)
-
-`@container (width >= 80rem)`
-
-[@min-\[...\]](#responsive-breakpoints)
-
-`@container (width >= ...)`
-
-[@max-3xs](#responsive-breakpoints)
-
-`@container (width < 16rem)`
-
-[@max-2xs](#responsive-breakpoints)
-
-`@container (width < 18rem)`
-
-[@max-xs](#responsive-breakpoints)
-
-`@container (width < 20rem)`
-
-[@max-sm](#responsive-breakpoints)
-
-`@container (width < 24rem)`
-
-[@max-md](#responsive-breakpoints)
-
-`@container (width < 28rem)`
-
-[@max-lg](#responsive-breakpoints)
-
-`@container (width < 32rem)`
-
-[@max-xl](#responsive-breakpoints)
-
-`@container (width < 36rem)`
-
-[@max-2xl](#responsive-breakpoints)
-
-`@container (width < 42rem)`
-
-[@max-3xl](#responsive-breakpoints)
-
-`@container (width < 48rem)`
-
-[@max-4xl](#responsive-breakpoints)
-
-`@container (width < 56rem)`
-
-[@max-5xl](#responsive-breakpoints)
-
-`@container (width < 64rem)`
-
-[@max-6xl](#responsive-breakpoints)
-
-`@container (width < 72rem)`
-
-[@max-7xl](#responsive-breakpoints)
-
-`@container (width < 80rem)`
-
-[@max-\[...\]](#responsive-breakpoints)
-
-`@container (width < ...)`
-
-[dark](#prefers-color-scheme)
-
-`@media (prefers-color-scheme: dark)`
-
-[motion-safe](#prefers-reduced-motion)
-
-`@media (prefers-reduced-motion: no-preference)`
-
-[motion-reduce](#prefers-reduced-motion)
-
-`@media (prefers-reduced-motion: reduce)`
-
-[contrast-more](#prefers-contrast)
-
-`@media (prefers-contrast: more)`
-
-[contrast-less](#prefers-contrast)
-
-`@media (prefers-contrast: less)`
-
-[forced-colors](#forced-colors)
-
-`@media (forced-colors: active)`
-
-[inverted-colors](#inverted-colors)
-
-`@media (inverted-colors: inverted)`
-
-[pointer-fine](#pointer-and-any-pointer)
-
-`@media (pointer: fine)`
-
-[pointer-coarse](#pointer-and-any-pointer)
-
-`@media (pointer: coarse)`
-
-[pointer-none](#pointer-and-any-pointer)
-
-`@media (pointer: none)`
-
-[any-pointer-fine](#pointer-and-any-pointer)
-
-`@media (any-pointer: fine)`
-
-[any-pointer-coarse](#pointer-and-any-pointer)
-
-`@media (any-pointer: coarse)`
-
-[any-pointer-none](#pointer-and-any-pointer)
-
-`@media (any-pointer: none)`
-
-[portrait](#orientation)
-
-`@media (orientation: portrait)`
-
-[landscape](#orientation)
-
-`@media (orientation: landscape)`
-
-[noscript](#scripting)
-
-`@media (scripting: none)`
-
-[print](#print)
-
-`@media print`
-
-[supports-\[…\]](#supports)
-
-`@supports (…)`
-
-[aria-busy](#aria-states)
-
-`&[aria-busy="true"]`
-
-[aria-checked](#aria-states)
-
-`&[aria-checked="true"]`
-
-[aria-disabled](#aria-states)
-
-`&[aria-disabled="true"]`
-
-[aria-expanded](#aria-states)
-
-`&[aria-expanded="true"]`
-
-[aria-hidden](#aria-states)
-
-`&[aria-hidden="true"]`
-
-[aria-pressed](#aria-states)
-
-`&[aria-pressed="true"]`
-
-[aria-readonly](#aria-states)
-
-`&[aria-readonly="true"]`
-
-[aria-required](#aria-states)
-
-`&[aria-required="true"]`
-
-[aria-selected](#aria-states)
-
-`&[aria-selected="true"]`
-
-[aria-\[…\]](#aria-states)
-
-`&[aria-…]`
-
-[data-\[…\]](#data-attributes)
-
-`&[data-…]`
-
-[rtl](#rtl-support)
-
-`&:where(:dir(rtl), [dir="rtl"], [dir="rtl"] *)`
-
-[ltr](#rtl-support)
-
-`&:where(:dir(ltr), [dir="ltr"], [dir="ltr"] *)`
-
-[open](#openclosed-state)
-
-`&:is([open], :popover-open, :open)`
-
-[starting](#starting-style)
-
-`@starting-style`
-
 ### [Pseudo-class reference](#pseudo-class-reference)
 
-This is a comprehensive list of examples for all the pseudo-class variants included in Tailwind to complement the [pseudo-classes documentation](tailwind/docs/hover-focus-and-other-states/index.md#pseudo-classes) at the beginning of this guide.
+This is a comprehensive list of examples for all the pseudo-class variants included in Tailwind to complement the [pseudo-classes documentation](https://tailwindcss.com/docs/hover-focus-and-other-states#pseudo-classes) at the beginning of this guide.
 
 #### [:hover](#hover)
 

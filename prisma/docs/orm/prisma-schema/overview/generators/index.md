@@ -5,17 +5,16 @@ canonical_url: "https://www.prisma.io/docs/orm/prisma-schema/overview/generators
 docset: "prisma"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:53:02.633Z"
-content_hash: "a8cecf0bab7e4fca53f07bab13652efe99e5b4d4310bf027cf062489a84d1213"
+last_crawled_at: "2026-04-27T19:42:46.231Z"
+content_hash: "332393349ea03110dd1846b79187372a5823320fbc4d2e5c6334c4f7f5e33535"
 menu_path: ["Generators"]
 section_path: []
-nav_prev: {"path": "prisma/docs/orm/prisma-schema/overview/data-sources/index.md", "title": "Data sources"}
-nav_next: {"path": "prisma/docs/orm/prisma-schema/overview/location/index.md", "title": "Schema location"}
+tab_variants: ["npm","pnpm","yarn","bun"]
+content_language: "en"
 ---
-
 Generators in your Prisma schema specify what assets are generated when the \`prisma generate\` command is invoked. This page explains how to configure generators
 
-A Prisma schema can have one or more generators, represented by the [`generator`](prisma/docs/orm/reference/prisma-schema-reference/index.md#generator) block:
+A Prisma schema can have one or more generators, represented by the [`generator`](https://www.prisma.io/docs/orm/reference/prisma-schema-reference#generator) block:
 
 ```
 generator client {
@@ -38,11 +37,11 @@ This generator ensures you can bundle your application code exactly the way you 
 
 Here are the main differences compared to `prisma-client-js`:
 
-*   Requires an `output` path; no "magic" generation into `node_modules` any more
-*   Doesn't load `.env` at runtime; use `dotenv` or set environment variables manually instead
-*   Supports ESM and CommonJS via the `moduleFormat` field
-*   More flexible thanks to additional [fields](#field-reference)
-*   Outputs plain TypeScript that's bundled just like the rest of your application code
+-   Requires an `output` path; no "magic" generation into `node_modules` any more
+-   Doesn't load `.env` at runtime; use `dotenv` or set environment variables manually instead
+-   Supports ESM and CommonJS via the `moduleFormat` field
+-   More flexible thanks to additional [fields](#field-reference)
+-   Outputs plain TypeScript that's bundled just like the rest of your application code
 
 The `prisma-client` generator is the default generator.
 
@@ -52,7 +51,9 @@ Follow these steps to use the new `prisma-client` generator in your project.
 
 #### [1\. Configure the `prisma-client` generator in `schema.prisma`](#1-configure-the-prisma-client-generator-in-schemaprisma)
 
-Update your [`generator`](prisma/docs/orm/prisma-schema/overview/generators/index.md) block:
+Update your [`generator`](https://www.prisma.io/docs/orm/prisma-schema/overview/generators) block:
+
+prisma/schema.prisma
 
 ```
 generator client {
@@ -87,6 +88,8 @@ This generates the code for Prisma Client (including the query engine binary) in
 
 After generating the Prisma Client, import it from the path you specified:
 
+src/index.ts
+
 ```
 import { PrismaClient } from "./generated/prisma/client";
 import { PrismaPg } from "@prisma/adapter-pg"; // or the adapter for your database
@@ -100,6 +103,8 @@ Prisma Client is now ready to use in your project.
 
 If you're importing types generated for your models, you can do so as follows:
 
+src/index.ts
+
 ```
 import { UserModel, PostModel } from "./generated/prisma/models";
 ```
@@ -108,6 +113,8 @@ import { UserModel, PostModel } from "./generated/prisma/models";
 
 If you're importing types generated for your enums, you can do so as follows:
 
+src/index.ts
+
 ```
 import { Role, User } from "./generated/prisma/enums";
 ```
@@ -115,6 +122,8 @@ import { Role, User } from "./generated/prisma/enums";
 #### [Importing in browser environments](#importing-in-browser-environments)
 
 If you need to access generated types in your frontend code, you can import them as follows:
+
+src/index.ts
 
 ```
 import { Role } from "./generated/prisma/browser";
@@ -125,6 +134,8 @@ Note that `./generated/prisma/browser` does not expose a `PrismaClient`.
 ### [Field reference](#field-reference)
 
 Use the following options in the `generator client { ... }` block. Only `output` is required. The other fields have defaults or are inferred from your environment and `tsconfig.json`.
+
+schema.prisma
 
 ```
 generator client {
@@ -143,41 +154,15 @@ generator client {
 
 Below are the options for the `prisma-client` generator:
 
-**Option**
-
-**Default**
-
-**Description**
-
-`output` (**required**)
-
-Directory where Prisma Client is generated, e.g. `../src/generated/prisma`.
-
-`runtime`
-
-`nodejs`
-
-Target runtime environment.  
+| **Option** | **Default** | **Description** |
+| --- | --- | --- |
+| `output` (**required**) |  | Directory where Prisma Client is generated, e.g. `../src/generated/prisma`. |
+| `runtime` | `nodejs` | Target runtime environment.  
 Supported values:  
-`nodejs`, `deno`, `bun`, `workerd` (alias `cloudflare`), `vercel-edge` (alias `edge-light`), `react-native`.
-
-`moduleFormat`
-
-Inferred from environment
-
-Module format (`esm` or `cjs`). Determines whether `import.meta.url` or `__dirname` is used.
-
-`generatedFileExtension`
-
-`ts`
-
-File extension for generated TypeScript files (`ts`, `mts`, `cts`).
-
-`importFileExtension`
-
-Inferred from environment
-
-File extension used in **import statements**. Can be `ts`, `mts`, `cts`, `js`, `mjs`, `cjs`, or empty (for bare imports).
+`nodejs`, `deno`, `bun`, `workerd` (alias `cloudflare`), `vercel-edge` (alias `edge-light`), `react-native`. |
+| `moduleFormat` | Inferred from environment | Module format (`esm` or `cjs`). Determines whether `import.meta.url` or `__dirname` is used. |
+| `generatedFileExtension` | `ts` | File extension for generated TypeScript files (`ts`, `mts`, `cts`). |
+| `importFileExtension` | Inferred from environment | File extension used in **import statements**. Can be `ts`, `mts`, `cts`, `js`, `mjs`, `cjs`, or empty (for bare imports). |
 
 ### [Importing types](#importing-types)
 
@@ -204,11 +189,13 @@ generated/
 
 For use in your server code.
 
-*   Provides access to the `PrismaClient` instance and all model and utility types.
-*   Provides best compatibility with the `prisma-client-js` generated output.
-*   Contains transitive dependencies on server only-packages, so cannot be used in browser contexts.
+-   Provides access to the `PrismaClient` instance and all model and utility types.
+-   Provides best compatibility with the `prisma-client-js` generated output.
+-   Contains transitive dependencies on server only-packages, so cannot be used in browser contexts.
 
 Example:
+
+src/index.ts
 
 ```
 import { Prisma, type Post, PrismaClient } from "./generated/prisma/client";
@@ -218,12 +205,14 @@ import { Prisma, type Post, PrismaClient } from "./generated/prisma/client";
 
 For using types in your frontend (i.e. code that runs in the browser).
 
-*   Contains no transitive dependencies on Node.js or other server-only packages.
-*   Contains no real `PrismaClient` constructor.
-*   Contains all model and enum types and values.
-*   Provides access to various utilities like `Prisma.JsonNull` and `Prisma.Decimal`.
+-   Contains no transitive dependencies on Node.js or other server-only packages.
+-   Contains no real `PrismaClient` constructor.
+-   Contains all model and enum types and values.
+-   Provides access to various utilities like `Prisma.JsonNull` and `Prisma.Decimal`.
 
 Example:
+
+src/index.ts
 
 ```
 import { Prisma, type Post } from "./generated/prisma/browser";
@@ -233,11 +222,13 @@ import { Prisma, type Post } from "./generated/prisma/browser";
 
 Isolated access to user defined enum types and values.
 
-*   Contains no transitive dependencies and is very slim.
-*   Can be used on backend and frontend.
-*   Prefer this for optimal tree shaking and typecheck performance when accessing enums.
+-   Contains no transitive dependencies and is very slim.
+-   Can be used on backend and frontend.
+-   Prefer this for optimal tree shaking and typecheck performance when accessing enums.
 
 Example:
+
+src/index.ts
 
 ```
 import { MyEnum } from "./generated/prisma/enums";
@@ -247,10 +238,12 @@ import { MyEnum } from "./generated/prisma/enums";
 
 Isolated access to all model types.
 
-*   Can be used on backend and frontend.
-*   Contains all models including their derived utility types like `<ModelName>WhereInput` or `<ModelName>UpdateInput>`.
+-   Can be used on backend and frontend.
+-   Contains all models including their derived utility types like `<ModelName>WhereInput` or `<ModelName>UpdateInput>`.
 
 Example:
+
+src/index.ts
 
 ```
 import type {
@@ -265,10 +258,12 @@ import type {
 
 Isolated access to the types for an individual model.
 
-*   Can be used on backend and frontend.
-*   Contains the models including its derived utility types like `<ModelName>WhereInput` or `<ModelName>UpdateInput>`.
+-   Can be used on backend and frontend.
+-   Contains the models including its derived utility types like `<ModelName>WhereInput` or `<ModelName>UpdateInput>`.
 
 Example:
+
+src/index.ts
 
 ```
 import type { UserModel, UserWhereInput, UserUpdateInput } from "./generated/prisma/models/User";
@@ -288,128 +283,12 @@ import type { IntFilter } from "./generated/prisma/commonInputTypes";
 
 ### [Breaking changes from `prisma-client-js`](#breaking-changes-from-prisma-client-js)
 
-*   Requires an `output` path on the `generator` block
-*   No `Prisma.validator` function; you can use TypeScript native [`satisfies`](https://www.prisma.io/blog/satisfies-operator-ur8ys8ccq7zb) keyword instead
+-   Requires an `output` path on the `generator` block
+-   No `Prisma.validator` function; you can use TypeScript native [`satisfies`](https://www.prisma.io/blog/satisfies-operator-ur8ys8ccq7zb) keyword instead
 
 ### [Examples](#examples)
 
 To see what the new `prisma-client` generator looks like in practice, check out our minimal and [ready-to-run examples](https://github.com/prisma/prisma-examples):
-
-Example
-
-Framework
-
-Bundler
-
-Runtime
-
-Monorepo
-
-[`nextjs-starter-webpack`](https://github.com/prisma/prisma-examples/tree/latest/generator-prisma-client/nextjs-starter-webpack)
-
-Next.js 15
-
-Webpack
-
-Node.js
-
-n/a
-
-[`nextjs-starter-turbopack`](https://github.com/prisma/prisma-examples/tree/latest/generator-prisma-client/nextjs-starter-turbopack)
-
-Next.js 15
-
-Turbopack (alpha)
-
-Node.js
-
-n/a
-
-[`nextjs-starter-webpack-monorepo`](https://github.com/prisma/prisma-examples/tree/latest/generator-prisma-client/nextjs-starter-webpack-monorepo)
-
-Next.js 15
-
-Webpack
-
-Node.js
-
-pnpm
-
-[`nextjs-starter-webpack-with-middleware`](https://github.com/prisma/prisma-examples/tree/latest/generator-prisma-client/nextjs-starter-webpack-with-middleware)
-
-Next.js 15
-
-Webpack
-
-Node.js (main pages), `vercel-edge` (middleware)
-
-n/a
-
-[`nextjs-starter-webpack-turborepo`](https://github.com/prisma/prisma-examples/tree/latest/generator-prisma-client/nextjs-starter-webpack-turborepo)
-
-Next.js 15
-
-Webpack
-
-Node.js
-
-turborepo
-
-[`react-router-starter-nodejs`](https://github.com/prisma/prisma-examples/tree/latest/generator-prisma-client/react-router-starter-nodejs)
-
-React Router 7
-
-Vite 6
-
-Node.js
-
-n/a
-
-[`react-router-starter-cloudflare-workerd`](https://github.com/prisma/prisma-examples/tree/latest/generator-prisma-client/react-router-starter-cloudflare-workerd)
-
-React Router 7
-
-n/a
-
-[`nuxt3-starter-nodejs`](https://github.com/prisma/prisma-examples/tree/latest/generator-prisma-client/nuxt3-starter-nodejs)
-
-Nuxt 3
-
-Vite 6
-
-Node.js
-
-n/a
-
-[`nuxt4-starter-nodejs`](https://github.com/prisma/prisma-examples/tree/latest/generator-prisma-client/nuxt4-starter-nodejs)
-
-Nuxt 4
-
-Vite 7
-
-Node.js
-
-n/a
-
-[`bun`](https://github.com/prisma/prisma-examples/tree/latest/generator-prisma-client/deno-deploy)
-
-None
-
-None
-
-Deno 2
-
-n/a
-
-[`deno`](https://github.com/prisma/prisma-examples/tree/latest/generator-prisma-client/deno-deploy)
-
-None
-
-None
-
-Deno 2
-
-n/a
 
 The `prisma-client-js` generator requires the `@prisma/client` npm package and generates Prisma Client into `node_modules`.
 
@@ -417,8 +296,10 @@ The `prisma-client-js` generator requires the `@prisma/client` npm package and g
 
 The generator for Prisma's JavaScript Client accepts multiple additional properties:
 
-*   `previewFeatures`: [Preview features](prisma/docs/orm/reference/preview-features/client-preview-features/index.md) to include
-*   `binaryTargets`: Engine binary targets for `prisma-client-js` (for example, `debian-openssl-1.1.x` if you are deploying to Ubuntu 18+, or `native` if you are working locally)
+-   `previewFeatures`: [Preview features](https://www.prisma.io/docs/orm/reference/preview-features/client-preview-features) to include
+-   `binaryTargets`: Engine binary targets for `prisma-client-js` (for example, `debian-openssl-1.1.x` if you are deploying to Ubuntu 18+, or `native` if you are working locally)
+
+prisma/schema.prisma
 
 ```
 generator client {
@@ -430,40 +311,40 @@ generator client {
 
 The following is a list of community created generators.
 
-*   [`prisma-dbml-generator`](https://notiz.dev/blog/prisma-dbml-generator/): Transforms the Prisma schema into [Database Markup Language](https://dbml.dbdiagram.io/home/) (DBML) which allows for an easy visual representation
-*   [`prisma-docs-generator`](https://github.com/pantharshit00/prisma-docs-generator): Generates an individual API reference for Prisma Client
-*   [`prisma-json-schema-generator`](https://github.com/valentinpalkovic/prisma-json-schema-generator): Transforms the Prisma schema in [JSON schema](https://json-schema.org/)
-*   [`prisma-json-types-generator`](https://github.com/arthurfiorette/prisma-json-types-generator): Enhances `prisma-client-js` (or `prisma-client`) to provide strongly typed JSON fields for all databases, based on your schema. It improves code generation, Intellisense, and more, without affecting runtime code.
-*   [`typegraphql-prisma`](https://github.com/MichalLytek/typegraphql-prisma#readme): Generates [TypeGraphQL](https://typegraphql.com/) CRUD resolvers for Prisma models
-*   [`typegraphql-prisma-nestjs`](https://github.com/EndyKaufman/typegraphql-prisma-nestjs#readme): Fork of [`typegraphql-prisma`](https://github.com/MichalLytek/typegraphql-prisma), which also generates CRUD resolvers for Prisma models but for NestJS
-*   [`prisma-typegraphql-types-gen`](https://github.com/YassinEldeeb/prisma-tgql-types-gen): Generates [TypeGraphQL](https://typegraphql.com/) class types and enums from your prisma type definitions, the generated output can be edited without being overwritten by the next gen and has the ability to correct you when you mess up the types with your edits.
-*   [`nexus-prisma`](https://github.com/prisma/nexus-prisma/): Allows for projecting Prisma models to GraphQL via [GraphQL Nexus](https://nexusjs.org/docs/)
-*   [`prisma-nestjs-graphql`](https://github.com/unlight/prisma-nestjs-graphql): Generates object types, inputs, args, etc. from the Prisma Schema for usage with `@nestjs/graphql` module
-*   [`prisma-appsync`](https://github.com/maoosi/prisma-appsync): Generates a full-blown GraphQL API for [AWS AppSync](https://aws.amazon.com/appsync/)
-*   [`prisma-kysely`](https://github.com/valtyr/prisma-kysely): Generates type definitions for Kysely, a TypeScript SQL query builder. This can be useful to perform queries against your database from an edge runtime, or to write more complex SQL queries not possible in Prisma without dropping type safety.
-*   [`prisma-generator-nestjs-dto`](https://github.com/vegardit/prisma-generator-nestjs-dto): Generates DTO and Entity classes with relation `connect` and `create` options for use with [NestJS Resources](https://docs.nestjs.com/recipes/crud-generator) and [@nestjs/swagger](https://www.npmjs.com/package/@nestjs/swagger)
-*   [`prisma-erd-generator`](https://github.com/keonik/prisma-erd-generator): Generates an entity relationship diagram
-*   [`prisma-generator-plantuml-erd`](https://github.com/dbgso/prisma-generator-plantuml-erd/tree/main/packages/generator): Generator to generate ER diagrams for PlantUML. Markdown and Asciidoc documents can also be generated by activating the option.
-*   [`prisma-class-generator`](https://github.com/kimjbstar/prisma-class-generator): Generates classes from your Prisma Schema that can be used as DTO, Swagger Response, TypeGraphQL and so on.
-*   [`zod-prisma`](https://github.com/CarterGrimmeisen/zod-prisma): Creates Zod schemas from your Prisma models.
-*   [`prisma-pothos-types`](https://github.com/hayes/pothos/tree/main/packages/plugin-prisma): Makes it easier to define Prisma-based object types, and helps solve n+1 queries for relations. It also has integrations for the Relay plugin to make defining nodes and connections easy and efficient.
-*   [`prisma-generator-pothos-codegen`](https://github.com/Cauen/prisma-generator-pothos-codegen): Auto generate input types (for use as args) and auto generate decoupled type-safe base files makes it easy to create customizable objects, queries and mutations for [Pothos](https://pothos-graphql.dev/) from Prisma schema. Optionally generate all crud at once from the base files.
-*   [`prisma-joi-generator`](https://github.com/omar-dulaimi/prisma-joi-generator): Generate full Joi schemas from your Prisma schema.
-*   [`prisma-yup-generator`](https://github.com/omar-dulaimi/prisma-yup-generator): Generate full Yup schemas from your Prisma schema.
-*   [`prisma-class-validator-generator`](https://github.com/omar-dulaimi/prisma-class-validator-generator): Emit TypeScript models from your Prisma schema with class validator validations ready.
-*   [`prisma-zod-generator`](https://github.com/omar-dulaimi/prisma-zod-generator): Emit Zod schemas from your Prisma schema.
-*   [`prisma-trpc-generator`](https://github.com/omar-dulaimi/prisma-trpc-generator): Emit fully implemented tRPC routers.
-*   [`prisma-json-server-generator`](https://github.com/omar-dulaimi/prisma-json-server-generator): Emit a JSON file that can be run with json-server.
-*   [`prisma-trpc-shield-generator`](https://github.com/omar-dulaimi/prisma-trpc-shield-generator): Emit a tRPC shield from your Prisma schema.
-*   [`prisma-custom-models-generator`](https://github.com/omar-dulaimi/prisma-custom-models-generator): Emit custom models from your Prisma schema, based on Prisma recommendations.
-*   [`nestjs-prisma-graphql-crud-gen`](https://github.com/mk668a/nestjs-prisma-graphql-crud-gen): Generate CRUD resolvers from GraphQL schema with NestJS and Prisma.
-*   [`prisma-generator-dart`](https://github.com/FredrikBorgstrom/abcx3/tree/master/libs/prisma-generator-dart): Generates Dart/Flutter class files with to- and fromJson methods.
-*   [`prisma-generator-graphql-typedef`](https://github.com/mavvy22/prisma-generator-graphql-typedef): Generates graphql schema.
-*   [`prisma-markdown`](https://github.com/samchon/prisma-markdown): Generates markdown document composed with ERD diagrams and their descriptions. Supports pagination of ERD diagrams through `@namespace` comment tag.
-*   [`prisma-models-graph`](https://github.com/dangchinh25/prisma-models-graph): Generates a bi-directional models graph for schema without strict relationship defined in the schema, works via a custom schema annotation.
-*   [`prisma-generator-fake-data`](https://github.com/luisrudge/prisma-generator-fake-data): Generates realistic-looking fake data for your Prisma models that can be used in unit/integration tests, demos, and more.
-*   [`prisma-generator-drizzle`](https://github.com/farreldarian/prisma-generator-drizzle): A Prisma generator for generating Drizzle schema with ease.
-*   [`prisma-generator-express`](https://github.com/multipliedtwice/prisma-generator-express): Generates Express CRUD and Router generator function.
-*   [`prismabox`](https://github.com/m1212e/prismabox): Generates versatile [typebox](https://github.com/sinclairzx81/typebox) schema from your Prisma models.
-*   [`prisma-generator-typescript-interfaces`](https://github.com/mogzol/prisma-generator-typescript-interfaces): Generates zero-dependency TypeScript interfaces from your Prisma schema.
-*   [`prisma-openapi`](https://github.com/nitzano/prisma-openapi): Generates OpenAPI schema from Prisma models.
+-   [`prisma-dbml-generator`](https://notiz.dev/blog/prisma-dbml-generator/): Transforms the Prisma schema into [Database Markup Language](https://dbml.dbdiagram.io/home/) (DBML) which allows for an easy visual representation
+-   [`prisma-docs-generator`](https://github.com/pantharshit00/prisma-docs-generator): Generates an individual API reference for Prisma Client
+-   [`prisma-json-schema-generator`](https://github.com/valentinpalkovic/prisma-json-schema-generator): Transforms the Prisma schema in [JSON schema](https://json-schema.org/)
+-   [`prisma-json-types-generator`](https://github.com/arthurfiorette/prisma-json-types-generator): Enhances `prisma-client-js` (or `prisma-client`) to provide strongly typed JSON fields for all databases, based on your schema. It improves code generation, Intellisense, and more, without affecting runtime code.
+-   [`typegraphql-prisma`](https://github.com/MichalLytek/typegraphql-prisma#readme): Generates [TypeGraphQL](https://typegraphql.com/) CRUD resolvers for Prisma models
+-   [`typegraphql-prisma-nestjs`](https://github.com/EndyKaufman/typegraphql-prisma-nestjs#readme): Fork of [`typegraphql-prisma`](https://github.com/MichalLytek/typegraphql-prisma), which also generates CRUD resolvers for Prisma models but for NestJS
+-   [`prisma-typegraphql-types-gen`](https://github.com/YassinEldeeb/prisma-tgql-types-gen): Generates [TypeGraphQL](https://typegraphql.com/) class types and enums from your prisma type definitions, the generated output can be edited without being overwritten by the next gen and has the ability to correct you when you mess up the types with your edits.
+-   [`nexus-prisma`](https://github.com/prisma/nexus-prisma/): Allows for projecting Prisma models to GraphQL via [GraphQL Nexus](https://nexusjs.org/docs/)
+-   [`prisma-nestjs-graphql`](https://github.com/unlight/prisma-nestjs-graphql): Generates object types, inputs, args, etc. from the Prisma Schema for usage with `@nestjs/graphql` module
+-   [`prisma-appsync`](https://github.com/maoosi/prisma-appsync): Generates a full-blown GraphQL API for [AWS AppSync](https://aws.amazon.com/appsync/)
+-   [`prisma-kysely`](https://github.com/valtyr/prisma-kysely): Generates type definitions for Kysely, a TypeScript SQL query builder. This can be useful to perform queries against your database from an edge runtime, or to write more complex SQL queries not possible in Prisma without dropping type safety.
+-   [`prisma-generator-nestjs-dto`](https://github.com/vegardit/prisma-generator-nestjs-dto): Generates DTO and Entity classes with relation `connect` and `create` options for use with [NestJS Resources](https://docs.nestjs.com/recipes/crud-generator) and [@nestjs/swagger](https://www.npmjs.com/package/@nestjs/swagger)
+-   [`prisma-erd-generator`](https://github.com/keonik/prisma-erd-generator): Generates an entity relationship diagram
+-   [`prisma-generator-plantuml-erd`](https://github.com/dbgso/prisma-generator-plantuml-erd/tree/main/packages/generator): Generator to generate ER diagrams for PlantUML. Markdown and Asciidoc documents can also be generated by activating the option.
+-   [`prisma-class-generator`](https://github.com/kimjbstar/prisma-class-generator): Generates classes from your Prisma Schema that can be used as DTO, Swagger Response, TypeGraphQL and so on.
+-   [`zod-prisma`](https://github.com/CarterGrimmeisen/zod-prisma): Creates Zod schemas from your Prisma models.
+-   [`prisma-pothos-types`](https://github.com/hayes/pothos/tree/main/packages/plugin-prisma): Makes it easier to define Prisma-based object types, and helps solve n+1 queries for relations. It also has integrations for the Relay plugin to make defining nodes and connections easy and efficient.
+-   [`prisma-generator-pothos-codegen`](https://github.com/Cauen/prisma-generator-pothos-codegen): Auto generate input types (for use as args) and auto generate decoupled type-safe base files makes it easy to create customizable objects, queries and mutations for [Pothos](https://pothos-graphql.dev/) from Prisma schema. Optionally generate all crud at once from the base files.
+-   [`prisma-joi-generator`](https://github.com/omar-dulaimi/prisma-joi-generator): Generate full Joi schemas from your Prisma schema.
+-   [`prisma-yup-generator`](https://github.com/omar-dulaimi/prisma-yup-generator): Generate full Yup schemas from your Prisma schema.
+-   [`prisma-class-validator-generator`](https://github.com/omar-dulaimi/prisma-class-validator-generator): Emit TypeScript models from your Prisma schema with class validator validations ready.
+-   [`prisma-zod-generator`](https://github.com/omar-dulaimi/prisma-zod-generator): Emit Zod schemas from your Prisma schema.
+-   [`prisma-trpc-generator`](https://github.com/omar-dulaimi/prisma-trpc-generator): Emit fully implemented tRPC routers.
+-   [`prisma-json-server-generator`](https://github.com/omar-dulaimi/prisma-json-server-generator): Emit a JSON file that can be run with json-server.
+-   [`prisma-trpc-shield-generator`](https://github.com/omar-dulaimi/prisma-trpc-shield-generator): Emit a tRPC shield from your Prisma schema.
+-   [`prisma-custom-models-generator`](https://github.com/omar-dulaimi/prisma-custom-models-generator): Emit custom models from your Prisma schema, based on Prisma recommendations.
+-   [`nestjs-prisma-graphql-crud-gen`](https://github.com/mk668a/nestjs-prisma-graphql-crud-gen): Generate CRUD resolvers from GraphQL schema with NestJS and Prisma.
+-   [`prisma-generator-dart`](https://github.com/FredrikBorgstrom/abcx3/tree/master/libs/prisma-generator-dart): Generates Dart/Flutter class files with to- and fromJson methods.
+-   [`prisma-generator-graphql-typedef`](https://github.com/mavvy22/prisma-generator-graphql-typedef): Generates graphql schema.
+-   [`prisma-markdown`](https://github.com/samchon/prisma-markdown): Generates markdown document composed with ERD diagrams and their descriptions. Supports pagination of ERD diagrams through `@namespace` comment tag.
+-   [`prisma-models-graph`](https://github.com/dangchinh25/prisma-models-graph): Generates a bi-directional models graph for schema without strict relationship defined in the schema, works via a custom schema annotation.
+-   [`prisma-generator-fake-data`](https://github.com/luisrudge/prisma-generator-fake-data): Generates realistic-looking fake data for your Prisma models that can be used in unit/integration tests, demos, and more.
+-   [`prisma-generator-drizzle`](https://github.com/farreldarian/prisma-generator-drizzle): A Prisma generator for generating Drizzle schema with ease.
+-   [`prisma-generator-express`](https://github.com/multipliedtwice/prisma-generator-express): Generates Express CRUD and Router generator function.
+-   [`prismabox`](https://github.com/m1212e/prismabox): Generates versatile [typebox](https://github.com/sinclairzx81/typebox) schema from your Prisma models.
+-   [`prisma-generator-typescript-interfaces`](https://github.com/mogzol/prisma-generator-typescript-interfaces): Generates zero-dependency TypeScript interfaces from your Prisma schema.
+-   [`prisma-openapi`](https://github.com/nitzano/prisma-openapi): Generates OpenAPI schema from Prisma models.

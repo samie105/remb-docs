@@ -5,59 +5,13 @@ canonical_url: "https://tailwindcss.com/docs/scroll-padding"
 docset: "tailwind"
 kind: "framework"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:16:47.431Z"
-content_hash: "9dc5e72edf3e741abf9c15dc0a0917e889e72a3bc28ccaff6a92bc4859e3c214"
+last_crawled_at: "2026-04-27T20:39:06.961Z"
+content_hash: "fa9ff50257c9f82c01665fd514119aeefc15e3d7903ae02e793d8dd0278e86cb"
 menu_path: ["scroll-padding"]
 section_path: []
-nav_prev: {"path": "tailwind/docs/scroll-margin/index.md", "title": "scroll-margin"}
-nav_next: {"path": "tailwind/docs/scroll-snap-align/index.md", "title": "scroll-snap-align"}
+content_language: "en"
 ---
-
 Utilities for controlling an element's scroll offset within a snap container.
-
-Class
-
-Styles
-
-`scroll-p-<number>`
-
-`scroll-padding: calc(var(--spacing) * <number>);`
-
-`-scroll-p-<number>`
-
-`scroll-padding: calc(var(--spacing) * -<number>);`
-
-`scroll-p-(<custom-property>)`
-
-`scroll-padding: var(<custom-property>);`
-
-`scroll-p-[<value>]`
-
-`scroll-padding: <value>;`
-
-`scroll-px-<number>`
-
-`scroll-padding-inline: calc(var(--spacing) * <number>);`
-
-`-scroll-px-<number>`
-
-`scroll-padding-inline: calc(var(--spacing) * -<number>);`
-
-`scroll-px-(<custom-property>)`
-
-`scroll-padding-inline: var(<custom-property>);`
-
-`scroll-px-[<value>]`
-
-`scroll-padding-inline: <value>;`
-
-`scroll-py-<number>`
-
-`scroll-padding-block: calc(var(--spacing) * <number>);`
-
-`-scroll-py-<number>`
-
-`scroll-padding-block: calc(var(--spacing) * -<number>);`
 
 ## [Examples](#examples)
 
@@ -123,7 +77,7 @@ Prefix a `scroll-padding` utility with a breakpoint variant like `md:` to only a
 <div class="scroll-p-8 md:scroll-p-0 ...">  <!-- ... --></div>
 ```
 
-Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).
+Learn more about using variants in the [variants documentation](https://tailwindcss.com/docs/hover-focus-and-other-states).
 
 ## [Customizing your theme](#customizing-your-theme)
 
@@ -133,4 +87,4 @@ The `scroll-p-<number>`,`scroll-px-<number>`,`scroll-py-<number>`,`scroll-ps-<nu
 @theme {  --spacing: 1px; }
 ```
 
-Learn more about customizing the spacing scale in the [theme variable documentation](tailwind/docs/theme/index.md).
+Learn more about customizing the spacing scale in the [theme variable documentation](https://tailwindcss.com/docs/theme).

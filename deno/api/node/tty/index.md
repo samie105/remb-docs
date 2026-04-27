@@ -5,10 +5,11 @@ canonical_url: "https://docs.deno.com/api/node/tty/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:42:46.115Z"
-content_hash: "1544383eb605a91e43a11548f85325ebfad1f825d865682f435434458f50b61c"
+last_crawled_at: "2026-04-27T17:15:06.111Z"
+content_hash: "76e10df5dc5a87c5200dacf4d4c44c63e3290c59e4a3a22fe6de2a8e50f94533"
 menu_path: ["tty - Node documentation"]
 section_path: []
+content_language: "en"
 ---
 ### Usage in Deno
 
@@ -33,17 +34,15 @@ false
 
 In most cases, there should be little to no reason for an application to manually create instances of the `tty.ReadStream` and `tty.WriteStream` classes.
 
-### Classes [#](#Classes)
-
 c
 
 [ReadStream](.././tty/~/ReadStream "ReadStream")
 
 Represents the readable side of a TTY. In normal circumstances `process.stdin` will be the only `tty.ReadStream` instance in a Node.js process and there should be no reason to create additional instances.
 
-*   [isRaw](.././tty/~/ReadStream#property_israw)
-*   [isTTY](.././tty/~/ReadStream#property_istty)
-*   [setRawMode](.././tty/~/ReadStream#method_setrawmode_0)
+-   [isRaw](.././tty/~/ReadStream#property_israw)
+-   [isTTY](.././tty/~/ReadStream#property_istty)
+-   [setRawMode](.././tty/~/ReadStream#method_setrawmode_0)
 
 c
 
@@ -51,32 +50,28 @@ c
 
 Represents the writable side of a TTY. In normal circumstances, `process.stdout` and `process.stderr` will be the only`tty.WriteStream` instances created for a Node.js process and there should be no reason to create additional instances.
 
-*   [addListener](.././tty/~/WriteStream#method_addlistener_0)
-*   [clearLine](.././tty/~/WriteStream#method_clearline_0)
-*   [clearScreenDown](.././tty/~/WriteStream#method_clearscreendown_0)
-*   [columns](.././tty/~/WriteStream#property_columns)
-*   [cursorTo](.././tty/~/WriteStream#method_cursorto_0)
-*   [emit](.././tty/~/WriteStream#method_emit_0)
-*   [getColorDepth](.././tty/~/WriteStream#method_getcolordepth_0)
-*   [getWindowSize](.././tty/~/WriteStream#method_getwindowsize_0)
-*   [hasColors](.././tty/~/WriteStream#method_hascolors_0)
-*   [isTTY](.././tty/~/WriteStream#property_istty)
-*   [moveCursor](.././tty/~/WriteStream#method_movecursor_0)
-*   [on](.././tty/~/WriteStream#method_on_0)
-*   [once](.././tty/~/WriteStream#method_once_0)
-*   [prependListener](.././tty/~/WriteStream#method_prependlistener_0)
-*   [prependOnceListener](.././tty/~/WriteStream#method_prependoncelistener_0)
-*   [rows](.././tty/~/WriteStream#property_rows)
-
-### Functions [#](#Functions)
+-   [addListener](.././tty/~/WriteStream#method_addlistener_0)
+-   [clearLine](.././tty/~/WriteStream#method_clearline_0)
+-   [clearScreenDown](.././tty/~/WriteStream#method_clearscreendown_0)
+-   [columns](.././tty/~/WriteStream#property_columns)
+-   [cursorTo](.././tty/~/WriteStream#method_cursorto_0)
+-   [emit](.././tty/~/WriteStream#method_emit_0)
+-   [getColorDepth](.././tty/~/WriteStream#method_getcolordepth_0)
+-   [getWindowSize](.././tty/~/WriteStream#method_getwindowsize_0)
+-   [hasColors](.././tty/~/WriteStream#method_hascolors_0)
+-   [isTTY](.././tty/~/WriteStream#property_istty)
+-   [moveCursor](.././tty/~/WriteStream#method_movecursor_0)
+-   [on](.././tty/~/WriteStream#method_on_0)
+-   [once](.././tty/~/WriteStream#method_once_0)
+-   [prependListener](.././tty/~/WriteStream#method_prependlistener_0)
+-   [prependOnceListener](.././tty/~/WriteStream#method_prependoncelistener_0)
+-   [rows](.././tty/~/WriteStream#property_rows)
 
 f
 
 [isatty](.././tty/~/isatty "isatty")
 
 The `tty.isatty()` method returns `true` if the given `fd` is associated with a TTY and `false` if it is not, including whenever `fd` is not a non-negative integer.
-
-### Type Aliases [#](<#Type Aliases>)
 
 T
 

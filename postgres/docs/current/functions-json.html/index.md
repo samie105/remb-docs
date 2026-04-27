@@ -5,14 +5,12 @@ canonical_url: "https://www.postgresql.org/docs/current/functions-json.html"
 docset: "postgres"
 kind: "database"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:47:19.789Z"
-content_hash: "b7d09a46d33581f6f91b47274a71493f9d747bc02ec87dfcf25b7c6c04cf7f72"
+last_crawled_at: "2026-04-27T20:48:00.518Z"
+content_hash: "dfebe36472f6425c0c790f9d7be078bbaed4d1233cec3cb4d2a8ab33eb3492cc"
 menu_path: ["PostgreSQL: Documentation: 18: 9.16. JSON Functions and Operators"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/functions-info.html/index.md", "title": "PostgreSQL: Documentation: 18: 9.27.\u00a0System Information Functions and Operators"}
-nav_next: {"path": "postgres/docs/current/functions-logical.html/index.md", "title": "PostgreSQL: Documentation: 18: 9.1.\u00a0Logical Operators"}
+content_language: "en"
 ---
-
 `json_array_elements` ( `json` ) → `setof json`
 
 `jsonb_array_elements` ( `jsonb` ) → `setof jsonb`
@@ -113,17 +111,17 @@ Expands the top-level JSON object to a row having the composite type of the _`ba
 
 To convert a JSON value to the SQL type of an output column, the following rules are applied in sequence:
 
-*   A JSON null value is converted to an SQL null in all cases.
+-   A JSON null value is converted to an SQL null in all cases.
     
-*   If the output column is of type `json` or `jsonb`, the JSON value is just reproduced exactly.
+-   If the output column is of type `json` or `jsonb`, the JSON value is just reproduced exactly.
     
-*   If the output column is a composite (row) type, and the JSON value is a JSON object, the fields of the object are converted to columns of the output row type by recursive application of these rules.
+-   If the output column is a composite (row) type, and the JSON value is a JSON object, the fields of the object are converted to columns of the output row type by recursive application of these rules.
     
-*   Likewise, if the output column is an array type and the JSON value is a JSON array, the elements of the JSON array are converted to elements of the output array by recursive application of these rules.
+-   Likewise, if the output column is an array type and the JSON value is a JSON array, the elements of the JSON array are converted to elements of the output array by recursive application of these rules.
     
-*   Otherwise, if the JSON value is a string, the contents of the string are fed to the input conversion function for the column's data type.
+-   Otherwise, if the JSON value is a string, the contents of the string are fed to the input conversion function for the column's data type.
     
-*   Otherwise, the ordinary text representation of the JSON value is fed to the input conversion function for the column's data type.
+-   Otherwise, the ordinary text representation of the JSON value is fed to the input conversion function for the column's data type.
     
 
 While the example below uses a constant JSON value, typical use would be to reference a `json` or `jsonb` column laterally from another table in the query's `FROM` clause. Writing `json_populate_record` in the `FROM` clause is good practice, since all of the extracted columns are available for use without duplicate function calls.
@@ -289,7 +287,7 @@ Returns the first JSON item returned by the JSON path for the specified JSON val
 
 `jsonb_path_query_first_tz` ( _`target`_ `jsonb`, _`path`_ `jsonpath` \[, _`vars`_ `jsonb` \[, _`silent`_ `boolean` \]\] ) → `jsonb`
 
-These functions act like their counterparts described above without the `_tz` suffix, except that these functions support comparisons of date/time values that require timezone-aware conversions. The example below requires interpretation of the date-only value `2015-08-02` as a timestamp with time zone, so the result depends on the current [TimeZone](postgres/docs/current/runtime-config-client.html/index.md#GUC-TIMEZONE) setting. Due to this dependency, these functions are marked as stable, which means these functions cannot be used in indexes. Their counterparts are immutable, and so can be used in indexes; but they will throw errors if asked to make such comparisons.
+These functions act like their counterparts described above without the `_tz` suffix, except that these functions support comparisons of date/time values that require timezone-aware conversions. The example below requires interpretation of the date-only value `2015-08-02` as a timestamp with time zone, so the result depends on the current [TimeZone](https://www.postgresql.org/docs/current/runtime-config-client.html#GUC-TIMEZONE) setting. Due to this dependency, these functions are marked as stable, which means these functions cannot be used in indexes. Their counterparts are immutable, and so can be used in indexes; but they will throw errors if asked to make such comparisons.
 
 `jsonb_path_exists_tz('["2015-08-01 12:00:00-05"]', '$[*] ? (@.datetime() < "2015-08-02".datetime())')` → `t`
 

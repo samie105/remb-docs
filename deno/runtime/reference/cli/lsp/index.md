@@ -5,15 +5,16 @@ canonical_url: "https://docs.deno.com/runtime/reference/cli/lsp/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:54:20.879Z"
-content_hash: "d9939de159c6125811e71ae00f94a88ce5190a5177a47123984dcca13cc2dffd"
+last_crawled_at: "2026-04-27T17:31:08.787Z"
+content_hash: "7add3df87085313f4d5d1b986aa2cbc42a9074af52a263599cc3ca4969840c79"
 menu_path: ["deno lsp"]
 section_path: []
+content_language: "en"
 ---
-On this page
+**On this page**
 
-*   [Usage](#usage)
-*   [Editor setup](#editor-setup)
+-   [Usage](#usage)
+-   [Editor setup](#editor-setup)
 
 Info
 
@@ -35,5 +36,5 @@ The language server communicates over stdin/stdout using the [Language Server Pr
 
 For instructions on configuring your editor to use the Deno language server, see:
 
-*   [Deno & VS Code](/runtime/reference/vscode/)
-*   [LSP integration](/runtime/reference/lsp_integration/) for other editors
+-   [Deno & VS Code](/runtime/reference/vscode/)
+-   [LSP integration](/runtime/reference/lsp_integration/) for other editors

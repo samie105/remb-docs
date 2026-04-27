@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/pages/api-reference"
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:18:56.207Z"
-content_hash: "b618da10b0b9c434733caa9bc5b919ba1a63b7d385fb52d3dfd29244d2dde6bf"
+last_crawled_at: "2026-04-27T18:18:16.104Z"
+content_hash: "ee0c33876f8ee9c9029e4320ed674a9a0dbf098ef20189ea099bb7d072eea2f7"
 menu_path: ["API Reference"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/pages/building-your-application/configuring/index.md", "title": "Configuring"}
-nav_next: {"path": "nextjs/docs/pages/api-reference/components/index.md", "title": "Components"}
+version: "latest"
+content_language: "en"
 ---
+[Next.js Docs](/docs)[Pages Router](/docs/pages)API Reference
 
 # API Reference
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 [
 
@@ -68,7 +69,3 @@ Turbopack is an incremental bundler optimized for JavaScript and TypeScript, wri
 ](/docs/pages/api-reference/turbopack)
 
 Was this helpful?
-
-supported.
-
-Send

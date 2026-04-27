@@ -5,19 +5,20 @@ canonical_url: "https://docs.deno.com/runtime/reference/cli/check/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:51:24.930Z"
-content_hash: "b48974d0512642d1a53cb6bc7124fc9c43721a6e0e4e5652ed46979a9fb671af"
+last_crawled_at: "2026-04-27T17:26:43.143Z"
+content_hash: "93234718b8df98cf1fc197d3b316d954cf34ba9519410f3340bf8078fe3cf45c"
 menu_path: ["deno check"]
 section_path: []
+content_language: "en"
 ---
-On this page
+**On this page**
 
-*   [Basic usage](#basic-usage)
-*   [Type-checking remote modules](#type-checking-remote-modules)
-*   [Type-checking JavaScript files](#type-checking-javascript-files)
-*   [Using in CI](#using-in-ci)
-*   [Dependency management options](#dependency-management-options)
-*   [Options](#options)
+-   [Basic usage](#basic-usage)
+-   [Type-checking remote modules](#type-checking-remote-modules)
+-   [Type-checking JavaScript files](#type-checking-javascript-files)
+-   [Using in CI](#using-in-ci)
+-   [Dependency management options](#dependency-management-options)
+-   [Options](#options)
 
 `deno check` type-checks your TypeScript (or JavaScript) code without running it. This is useful in CI pipelines or before deploying to catch type errors early. For more on TypeScript in Deno, see the [TypeScript](/runtime/fundamentals/typescript/) guide.
 

@@ -5,17 +5,19 @@ canonical_url: "https://nextjs.org/docs/app/guides/testing/playwright"
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:16:39.648Z"
-content_hash: "7631c786f1239d9de4d0df3521181162882084b732344961bfe4c20f2baa942f"
+last_crawled_at: "2026-04-27T18:16:02.052Z"
+content_hash: "d02b62540335374fd7cb19a857965e423ccff4bf197cd104848fef11fe7d3b97"
 menu_path: ["How to set up Playwright with Next.js"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/guides/testing/jest/index.md", "title": "How to set up Jest with Next.js"}
-nav_next: {"path": "nextjs/docs/app/guides/testing/vitest/index.md", "title": "How to set up Vitest with Next.js"}
+version: "latest"
+tab_variants: ["pnpm","npm","yarn","bun","pnpm","npm","yarn","bun"]
+content_language: "en"
 ---
+[Guides](/docs/app/guides)[Testing](/docs/app/guides/testing)Playwright
 
 # How to set up Playwright with Next.js
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 Playwright is a testing framework that lets you automate Chromium, Firefox, and WebKit with a single API. You can use it to write **End-to-End (E2E)** testing. This guide will show you how to set up Playwright with Next.js and write your first tests.
 
@@ -23,7 +25,21 @@ Playwright is a testing framework that lets you automate Chromium, Firefox, and 
 
 The fastest way to get started is to use `create-next-app` with the [with-playwright example](https://github.com/vercel/next.js/tree/canary/examples/with-playwright). This will create a Next.js project complete with Playwright configured.
 
-pnpmnpmyarnbun
+#### pnpm
+
+pnpm
+
+#### npm
+
+npm
+
+#### yarn
+
+yarn
+
+#### bun
+
+bun
 
 Terminal
 
@@ -35,7 +51,21 @@ pnpm create next-app --example with-playwright with-playwright-app
 
 To install Playwright, run the following command:
 
-pnpmnpmyarnbun
+#### pnpm
+
+pnpm
+
+#### npm
+
+npm
+
+#### yarn
+
+yarn
+
+#### bun
+
+bun
 
 Terminal
 
@@ -114,24 +144,8 @@ Playwright will by default run your tests in the [headless mode](https://playwri
 
 You can learn more about Playwright and Continuous Integration from these resources:
 
-*   [Next.js with Playwright example](https://github.com/vercel/next.js/tree/canary/examples/with-playwright)
-*   [Playwright on your CI provider](https://playwright.dev/docs/ci)
-*   [Playwright Discord](https://discord.com/invite/playwright-807756831384403968)
-
-[Previous
-
-Jest
-
-](/docs/app/guides/testing/jest)
-
-[Next
-
-Vitest
-
-](/docs/app/guides/testing/vitest)
+-   [Next.js with Playwright example](https://github.com/vercel/next.js/tree/canary/examples/with-playwright)
+-   [Playwright on your CI provider](https://playwright.dev/docs/ci)
+-   [Playwright Discord](https://discord.com/invite/playwright-807756831384403968)
 
 Was this helpful?
-
-supported.
-
-Send

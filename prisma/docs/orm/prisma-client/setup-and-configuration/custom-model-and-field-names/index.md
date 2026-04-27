@@ -5,23 +5,21 @@ canonical_url: "https://www.prisma.io/docs/orm/prisma-client/setup-and-configura
 docset: "prisma"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:47:12.130Z"
-content_hash: "65f0c1892cb0602d48fb3dd8fc7863d5381d21097250b4d84cd23beb1070bdb1"
+last_crawled_at: "2026-04-27T19:39:16.422Z"
+content_hash: "dafdb4bd1d34e2808289b9f3b8e6b50cbd687a78100d28312346298f94931b67"
 menu_path: ["Custom model and field names"]
 section_path: []
-nav_prev: {"path": "prisma/docs/orm/prisma-client/queries/transactions/index.md", "title": "Transactions and batch queries"}
-nav_next: {"path": "prisma/docs/orm/prisma-client/setup-and-configuration/database-polyfills/index.md", "title": "Database polyfills"}
+content_language: "en"
 ---
-
 Setup and Configuration
 
 Learn how you can decouple the naming of Prisma models from database tables to improve the ergonomics of the generated Prisma Client API
 
-The Prisma Client API is generated based on the models in your [Prisma schema](prisma/docs/orm/prisma-schema/overview/index.md). Models are _typically_ 1
+The Prisma Client API is generated based on the models in your [Prisma schema](https://www.prisma.io/docs/orm/prisma-schema/overview). Models are _typically_ 1
 
 mappings of your database tables.
 
-In some cases, especially when using [introspection](prisma/docs/orm/prisma-schema/introspection/index.md), it might be useful to _decouple_ the naming of database tables and columns from the names that are used in your Prisma Client API. This can be done via the [`@map` and `@@map`](prisma/docs/orm/prisma-schema/data-model/models/index.md#mapping-model-names-to-tables-or-collections) attributes in your Prisma schema.
+In some cases, especially when using [introspection](https://www.prisma.io/docs/orm/prisma-schema/introspection), it might be useful to _decouple_ the naming of database tables and columns from the names that are used in your Prisma Client API. This can be done via the [`@map` and `@@map`](https://www.prisma.io/docs/orm/prisma-schema/data-model/models#mapping-model-names-to-tables-or-collections) attributes in your Prisma schema.
 
 You can use `@map` and `@@map` to rename MongoDB fields and collections respectively. This page uses a relational database example.
 
@@ -104,7 +102,7 @@ There are a few "issues" with this Prisma schema when the Prisma Client API is g
 
 **Adhering to Prisma ORM's naming conventions**
 
-Prisma ORM has a [naming convention](prisma/docs/orm/reference/prisma-schema-reference/index.md#naming-conventions) of **camelCasing** and using the **singular form** for Prisma models. If these naming conventions are not met, the Prisma schema can become harder to interpret and the generated Prisma Client API will feel less natural. Consider the following, generated model:
+Prisma ORM has a [naming convention](https://www.prisma.io/docs/orm/reference/prisma-schema-reference#naming-conventions) of **camelCasing** and using the **singular form** for Prisma models. If these naming conventions are not met, the Prisma schema can become harder to interpret and the generated Prisma Client API will feel less natural. Consider the following, generated model:
 
 ```
 model users {
@@ -130,11 +128,11 @@ model User {
 }
 ```
 
-Because these fields are "Prisma ORM-level" [relation fields](prisma/docs/orm/prisma-schema/data-model/relations/index.md#relation-fields) that do not manifest you can manually rename them in your Prisma schema.
+Because these fields are "Prisma ORM-level" [relation fields](https://www.prisma.io/docs/orm/prisma-schema/data-model/relations#relation-fields) that do not manifest you can manually rename them in your Prisma schema.
 
 **Naming of annotated relation fields**
 
-Foreign keys are represented as a combination of a [annotated relation fields](prisma/docs/orm/prisma-schema/data-model/relations/index.md#relation-fields) and its corresponding relation scalar field in the Prisma schema. Here's how all the relations from the SQL schema are currently represented:
+Foreign keys are represented as a combination of a [annotated relation fields](https://www.prisma.io/docs/orm/prisma-schema/data-model/relations#relation-fields) and its corresponding relation scalar field in the Prisma schema. Here's how all the relations from the SQL schema are currently represented:
 
 ```
 model categories {
@@ -257,7 +255,7 @@ const userByProfile = await prisma.profile
   .users();
 ```
 
-Prisma ORM-level [relation fields](prisma/docs/orm/prisma-schema/data-model/relations/index.md#relation-fields) (sometimes referred to as "virtual relation fields") only exist in the Prisma schema, but do not actually manifest in the underlying database. You can therefore name these fields whatever you want.
+Prisma ORM-level [relation fields](https://www.prisma.io/docs/orm/prisma-schema/data-model/relations#relation-fields) (sometimes referred to as "virtual relation fields") only exist in the Prisma schema, but do not actually manifest in the underlying database. You can therefore name these fields whatever you want.
 
 Consider the following example of an ambiguous relation in a SQL database:
 
@@ -311,5 +309,3 @@ model User {
   //edit-end
 }
 ```
-
-[Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/prisma-client/setup-and-configuration/custom-model-and-field-names.mdx)

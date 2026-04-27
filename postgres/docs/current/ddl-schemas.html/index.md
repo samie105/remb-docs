@@ -5,14 +5,12 @@ canonical_url: "https://www.postgresql.org/docs/current/ddl-schemas.html"
 docset: "postgres"
 kind: "database"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:35:18.604Z"
-content_hash: "2facbeccc9eff46d04411abb8dd057b403c631ddd54ce86948ceb4243f2645d4"
+last_crawled_at: "2026-04-27T20:43:27.089Z"
+content_hash: "7552da4c3ad358ececadc0c246f350ecafc8a776e2ce0a3f09ad018f1c26d14f"
 menu_path: ["PostgreSQL: Documentation: 18: 5.10. Schemas"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/ddl-rowsecurity.html/index.md", "title": "PostgreSQL: Documentation: 18: 5.9.\u00a0Row Security Policies"}
-nav_next: {"path": "postgres/docs/current/ddl-system-columns.html/index.md", "title": "PostgreSQL: Documentation: 18: 5.6.\u00a0System Columns"}
+content_language: "en"
 ---
-
 A PostgreSQL database cluster contains one or more named databases. Roles and a few other object types are shared across the entire cluster. A client connection to the server can only access data in a single database, the one specified in the connection request.
 
 ### Note
@@ -23,11 +21,11 @@ A database contains one or more named _schemas_, which in turn contain tables. S
 
 There are several reasons why one might want to use schemas:
 
-*   To allow many users to use one database without interfering with each other.
+-   To allow many users to use one database without interfering with each other.
     
-*   To organize database objects into logical groups to make them more manageable.
+-   To organize database objects into logical groups to make them more manageable.
     
-*   Third-party applications can be put into separate schemas so they do not collide with the names of other objects.
+-   Third-party applications can be put into separate schemas so they do not collide with the names of other objects.
     
 
 Schemas are analogous to directories at the operating system level, except that schemas cannot be nested.
@@ -156,13 +154,13 @@ Since system table names begin with `pg_`, it is best to avoid such names to ens
 
 Schemas can be used to organize your data in many ways. A _secure schema usage pattern_ prevents untrusted users from changing the behavior of other users' queries. When a database does not use a secure schema usage pattern, users wishing to securely query that database would take protective action at the beginning of each session. Specifically, they would begin each session by setting `search_path` to the empty string or otherwise removing schemas that are writable by non-superusers from `search_path`. There are a few usage patterns easily supported by the default configuration:
 
-*   Constrain ordinary users to user-private schemas. To implement this pattern, first ensure that no schemas have public `CREATE` privileges. Then, for every user needing to create non-temporary objects, create a schema with the same name as that user, for example `CREATE SCHEMA alice AUTHORIZATION alice`. (Recall that the default search path starts with `$user`, which resolves to the user name. Therefore, if each user has a separate schema, they access their own schemas by default.) This pattern is a secure schema usage pattern unless an untrusted user is the database owner or has been granted `ADMIN OPTION` on a relevant role, in which case no secure schema usage pattern exists.
+-   Constrain ordinary users to user-private schemas. To implement this pattern, first ensure that no schemas have public `CREATE` privileges. Then, for every user needing to create non-temporary objects, create a schema with the same name as that user, for example `CREATE SCHEMA alice AUTHORIZATION alice`. (Recall that the default search path starts with `$user`, which resolves to the user name. Therefore, if each user has a separate schema, they access their own schemas by default.) This pattern is a secure schema usage pattern unless an untrusted user is the database owner or has been granted `ADMIN OPTION` on a relevant role, in which case no secure schema usage pattern exists.
     
     In PostgreSQL 15 and later, the default configuration supports this usage pattern. In prior versions, or when using a database that has been upgraded from a prior version, you will need to remove the public `CREATE` privilege from the `public` schema (issue `REVOKE CREATE ON SCHEMA public FROM PUBLIC`). Then consider auditing the `public` schema for objects named like objects in schema `pg_catalog`.
     
-*   Remove the public schema from the default search path, by modifying [`postgresql.conf`](https://www.postgresql.org/docs/current/config-setting.html#CONFIG-SETTING-CONFIGURATION-FILE "19.1.2. Parameter Interaction via the Configuration File") or by issuing `ALTER ROLE ALL SET search_path = "$user"`. Then, grant privileges to create in the public schema. Only qualified names will choose public schema objects. While qualified table references are fine, calls to functions in the public schema [will be unsafe or unreliable](https://www.postgresql.org/docs/current/typeconv-func.html "10.3. Functions"). If you create functions or extensions in the public schema, use the first pattern instead. Otherwise, like the first pattern, this is secure unless an untrusted user is the database owner or has been granted `ADMIN OPTION` on a relevant role.
+-   Remove the public schema from the default search path, by modifying [`postgresql.conf`](https://www.postgresql.org/docs/current/config-setting.html#CONFIG-SETTING-CONFIGURATION-FILE "19.1.2. Parameter Interaction via the Configuration File") or by issuing `ALTER ROLE ALL SET search_path = "$user"`. Then, grant privileges to create in the public schema. Only qualified names will choose public schema objects. While qualified table references are fine, calls to functions in the public schema [will be unsafe or unreliable](https://www.postgresql.org/docs/current/typeconv-func.html "10.3. Functions"). If you create functions or extensions in the public schema, use the first pattern instead. Otherwise, like the first pattern, this is secure unless an untrusted user is the database owner or has been granted `ADMIN OPTION` on a relevant role.
     
-*   Keep the default search path, and grant privileges to create in the public schema. All users access the public schema implicitly. This simulates the situation where schemas are not available at all, giving a smooth transition from the non-schema-aware world. However, this is never a secure pattern. It is acceptable only when the database has a single user or a few mutually-trusting users. In databases upgraded from PostgreSQL 14 or earlier, this is the default.
+-   Keep the default search path, and grant privileges to create in the public schema. All users access the public schema implicitly. This simulates the situation where schemas are not available at all, giving a smooth transition from the non-schema-aware world. However, this is never a secure pattern. It is acceptable only when the database has a single user or a few mutually-trusting users. In databases upgraded from PostgreSQL 14 or earlier, this is the default.
     
 
 For any pattern, to install shared applications (tables to be used by everyone, additional functions provided by third parties, etc.), put them into separate schemas. Remember to grant appropriate privileges to allow the other users to access them. Users can then refer to these additional objects by qualifying the names with a schema name, or they can put the additional schemas into their search path, as they choose.

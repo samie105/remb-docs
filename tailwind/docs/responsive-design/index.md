@@ -5,14 +5,12 @@ canonical_url: "https://tailwindcss.com/docs/responsive-design"
 docset: "tailwind"
 kind: "framework"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:36:46.355Z"
-content_hash: "4c45b39caef077f4c476d5db910bb6c0f720546ecd27f71da90d6fab4d79228c"
+last_crawled_at: "2026-04-27T19:48:07.738Z"
+content_hash: "9d1626e0fd92168013874e395c35b085fa280d4c9c85798d7e666eb26b4360dc"
 menu_path: ["Responsive design"]
 section_path: []
-nav_prev: {"path": "tailwind/docs/hover-focus-and-other-states/index.md", "title": "Hover, focus, and other states"}
-nav_next: {"path": "tailwind/docs/dark-mode/index.md", "title": "Dark mode"}
+content_language: "en"
 ---
-
 Using responsive utility variants to build adaptive user interfaces.
 
 ## [Overview](#overview)
@@ -21,15 +19,11 @@ Every utility class in Tailwind can be applied conditionally at different breakp
 
 First, make sure you've added the [viewport meta tag](https://developer.mozilla.org/en-US/docs/Web/HTML/Viewport_meta_tag) to the `<head>` of your document:
 
-index.html
-
 ```
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 ```
 
 Then to add a utility but only have it take effect at a certain breakpoint, all you need to do is prefix the utility with the breakpoint name, followed by the `:` character:
-
-HTML
 
 ```
 <!-- Width of 16 by default, 32 on medium screens, and 48 on large screens --><img class="w-16 md:w-32 lg:w-48" src="..." />
@@ -37,41 +31,13 @@ HTML
 
 There are five breakpoints by default, inspired by common device resolutions:
 
-Breakpoint prefix
-
-Minimum width
-
-CSS
-
-`sm`
-
-40rem _(640px)_
-
-`@media (width >= 40rem) { ... }`
-
-`md`
-
-48rem _(768px)_
-
-`@media (width >= 48rem) { ... }`
-
-`lg`
-
-64rem _(1024px)_
-
-`@media (width >= 64rem) { ... }`
-
-`xl`
-
-80rem _(1280px)_
-
-`@media (width >= 80rem) { ... }`
-
-`2xl`
-
-96rem _(1536px)_
-
-`@media (width >= 96rem) { ... }`
+| Breakpoint prefix | Minimum width | CSS |
+| --- | --- | --- |
+| `sm` | 40rem _(640px)_ | `@media (width >= 40rem) { ... }` |
+| `md` | 48rem _(768px)_ | `@media (width >= 48rem) { ... }` |
+| `lg` | 64rem _(1024px)_ | `@media (width >= 64rem) { ... }` |
+| `xl` | 80rem _(1280px)_ | `@media (width >= 80rem) { ... }` |
+| `2xl` | 96rem _(1536px)_ | `@media (width >= 96rem) { ... }` |
 
 This works for **every utility class in the framework**, which means you can change literally anything at a given breakpoint — even things like letter spacing or cursor styles.
 
@@ -83,9 +49,9 @@ Here's a simple example of a marketing page component that uses a stacked layout
 
 Here's how the example above works:
 
-*   By default, the outer `div` is `display: block`, but by adding the `md:flex` utility, it becomes `display: flex` on medium screens and larger.
-*   When the parent is a flex container, we want to make sure the image never shrinks, so we've added `md:shrink-0` to prevent shrinking on medium screens and larger. Technically we could have just used `shrink-0` since it would do nothing on smaller screens, but since it only matters on `md` screens, it's a good idea to make that clear in the class name.
-*   On small screens the image is automatically full width by default. On medium screens and up, we've constrained the width to a fixed size and ensured the image is full height using `md:h-full md:w-48`.
+-   By default, the outer `div` is `display: block`, but by adding the `md:flex` utility, it becomes `display: flex` on medium screens and larger.
+-   When the parent is a flex container, we want to make sure the image never shrinks, so we've added `md:shrink-0` to prevent shrinking on medium screens and larger. Technically we could have just used `shrink-0` since it would do nothing on smaller screens, but since it only matters on `md` screens, it's a good idea to make that clear in the class name.
+-   On small screens the image is automatically full width by default. On medium screens and up, we've constrained the width to a fixed size and ensured the image is full height using `md:h-full md:w-48`.
 
 We've only used one breakpoint in this example, but you could easily customize this component at other sizes using the `sm`, `lg`, `xl`, or `2xl` responsive prefixes as well.
 
@@ -101,15 +67,11 @@ Where this approach surprises people most often is that to style something for m
 
 Don't use `sm:` to target mobile devices
 
-HTML
-
 ```
 <!-- This will only center text on screens 640px and wider, not on small screens --><div class="sm:text-center"></div>
 ```
 
 Use unprefixed utilities to target mobile, and override them at larger breakpoints
-
-HTML
 
 ```
 <!-- This will center text on mobile, and left align it on screens 640px and wider --><div class="text-center sm:text-left"></div>
@@ -123,43 +85,23 @@ By default, styles applied by rules like `md:flex` will apply at that breakpoint
 
 If you'd like to apply a utility _only_ when a specific breakpoint range is active, stack a responsive variant like `md` with a `max-*` variant to limit that style to a specific range:
 
-HTML
-
 ```
 <div class="md:max-xl:flex">  <!-- ... --></div>
 ```
 
 Tailwind generates a corresponding `max-*` variant for each breakpoint, so out of the box the following variants are available:
 
-Variant
-
-Media query
-
-`max-sm`
-
-`@media (width < 40rem) { ... }`
-
-`max-md`
-
-`@media (width < 48rem) { ... }`
-
-`max-lg`
-
-`@media (width < 64rem) { ... }`
-
-`max-xl`
-
-`@media (width < 80rem) { ... }`
-
-`max-2xl`
-
-`@media (width < 96rem) { ... }`
+| Variant | Media query |
+| --- | --- |
+| `max-sm` | `@media (width < 40rem) { ... }` |
+| `max-md` | `@media (width < 48rem) { ... }` |
+| `max-lg` | `@media (width < 64rem) { ... }` |
+| `max-xl` | `@media (width < 80rem) { ... }` |
+| `max-2xl` | `@media (width < 96rem) { ... }` |
 
 ### [Targeting a single breakpoint](#targeting-a-single-breakpoint)
 
 To target a single breakpoint, target the range for that breakpoint by stacking a responsive variant like `md` with the `max-*` variant for the next breakpoint:
-
-HTML
 
 ```
 <div class="md:max-lg:flex">  <!-- ... --></div>
@@ -173,15 +115,11 @@ Read about [targeting breakpoint ranges](#targeting-a-breakpoint-range) to learn
 
 Use the `--breakpoint-*` theme variables to customize your breakpoints:
 
-app.css
-
 ```
 @import "tailwindcss";@theme {  --breakpoint-xs: 30rem;  --breakpoint-2xl: 100rem;  --breakpoint-3xl: 120rem;}
 ```
 
 This updates the `2xl` breakpoint to use `100rem` instead of the default `96rem`, and creates new `xs` and `3xl` breakpoints that can be used in your markup:
-
-HTML
 
 ```
 <div class="grid xs:grid-cols-2 3xl:grid-cols-6">  <!-- ... --></div>
@@ -191,13 +129,11 @@ Note that it's important to always use the same unit for defining your breakpoin
 
 Tailwind uses `rem` for the default breakpoints, so if you are adding additional breakpoints to the defaults, make sure you use `rem` as well.
 
-Learn more about customizing your theme in the [theme documentation](tailwind/docs/theme/index.md).
+Learn more about customizing your theme in the [theme documentation](https://tailwindcss.com/docs/theme).
 
 ### [Removing default breakpoints](#removing-default-breakpoints)
 
 To remove a default breakpoint, reset its value to the `initial` keyword:
-
-app.css
 
 ```
 @import "tailwindcss";@theme {  --breakpoint-2xl: initial;}
@@ -205,13 +141,11 @@ app.css
 
 You can also reset all of the default breakpoints using `--breakpoint-*: initial`, then define all of your breakpoints from scratch:
 
-app.css
-
 ```
 @import "tailwindcss";@theme {  --breakpoint-*: initial;  --breakpoint-tablet: 40rem;  --breakpoint-laptop: 64rem;  --breakpoint-desktop: 80rem;}
 ```
 
-Learn more removing default theme values in the [theme documentation](tailwind/docs/theme/index.md).
+Learn more removing default theme values in the [theme documentation](https://tailwindcss.com/docs/theme).
 
 ### [Using arbitrary values](#using-arbitrary-values)
 
@@ -221,7 +155,7 @@ If you need to use a one-off breakpoint that doesn’t make sense to include in 
 <div class="max-[600px]:bg-sky-300 min-[320px]:text-center">  <!-- ... --></div>
 ```
 
-Learn more about arbitrary value support in the [arbitrary values](tailwind/docs/adding-custom-styles/index.md#using-arbitrary-values) documentation.
+Learn more about arbitrary value support in the [arbitrary values](https://tailwindcss.com/docs/adding-custom-styles#using-arbitrary-values) documentation.
 
 ## [Container queries](#container-queries)
 
@@ -233,8 +167,6 @@ Learn more about arbitrary value support in the [arbitrary values](tailwind/docs
 
 Use the `@container` class to mark an element as a container, then use variants like `@sm` and `@md` to style child elements based on the size of the container:
 
-HTML
-
 ```
 <div class="@container">  <div class="flex flex-col @md:flex-row">    <!-- ... -->  </div></div>
 ```
@@ -245,8 +177,6 @@ Just like breakpoint variants, container queries are mobile-first in Tailwind CS
 
 Use variants like `@max-sm` and `@max-md` to apply a style below a specific container size:
 
-HTML
-
 ```
 <div class="@container">  <div class="flex flex-row @max-md:flex-col">    <!-- ... -->  </div></div>
 ```
@@ -255,8 +185,6 @@ HTML
 
 Stack a regular container query variant with a max-width container query variant to target a specific range:
 
-HTML
-
 ```
 <div class="@container">  <div class="flex flex-row @sm:@max-md:flex-col">    <!-- ... -->  </div></div>
 ```
@@ -264,8 +192,6 @@ HTML
 ### [Named containers](#named-containers)
 
 For complex designs that use multiple nested containers, you can name containers using `@container/{name}` and target specific containers with variants like `@sm/{name}` and `@md/{name}`:
-
-HTML
 
 ```
 <div class="@container/main">  <!-- ... -->  <div class="flex flex-row @sm/main:flex-col">    <!-- ... -->  </div></div>
@@ -277,27 +203,21 @@ This makes it possible to style something based on the size of a distant contain
 
 Use the `--container-*` theme variables to customize your container sizes:
 
-app.css
-
 ```
 @import "tailwindcss";@theme {  --container-8xl: 96rem;}
 ```
 
 This adds a new `8xl` container query variant that can be used in your markup:
 
-HTML
-
 ```
 <div class="@container">  <div class="flex flex-col @8xl:flex-row">    <!-- ... -->  </div></div>
 ```
 
-Learn more about customizing your theme in the [theme documentation](tailwind/docs/theme/index.md).
+Learn more about customizing your theme in the [theme documentation](https://tailwindcss.com/docs/theme).
 
 ### [Using arbitrary values](#using-arbitrary-container-query-values)
 
 Use variants like `@min-[475px]` and `@max-[960px]` for one-off container query sizes you don't want to add to your theme:
-
-HTML
 
 ```
 <div class="@container">  <div class="flex flex-col @min-[475px]:flex-row">    <!-- ... -->  </div></div>
@@ -307,8 +227,6 @@ HTML
 
 Use [container query length units](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_containment/Container_queries#container_query_length_units) like `cqw` as arbitrary values in other utility classes to reference the container size:
 
-HTML
-
 ```
 <div class="@container">  <div class="w-[50cqw]">    <!-- ... -->  </div></div>
 ```
@@ -317,86 +235,18 @@ HTML
 
 By default, Tailwind includes container sizes ranging from 16rem _(256px)_ to 80rem _(1280px)_:
 
-Variant
-
-Minimum width
-
-CSS
-
-`@3xs`
-
-16rem _(256px)_
-
-`@container (width >= 16rem) { … }`
-
-`@2xs`
-
-18rem _(288px)_
-
-`@container (width >= 18rem) { … }`
-
-`@xs`
-
-20rem _(320px)_
-
-`@container (width >= 20rem) { … }`
-
-`@sm`
-
-24rem _(384px)_
-
-`@container (width >= 24rem) { … }`
-
-`@md`
-
-28rem _(448px)_
-
-`@container (width >= 28rem) { … }`
-
-`@lg`
-
-32rem _(512px)_
-
-`@container (width >= 32rem) { … }`
-
-`@xl`
-
-36rem _(576px)_
-
-`@container (width >= 36rem) { … }`
-
-`@2xl`
-
-42rem _(672px)_
-
-`@container (width >= 42rem) { … }`
-
-`@3xl`
-
-48rem _(768px)_
-
-`@container (width >= 48rem) { … }`
-
-`@4xl`
-
-56rem _(896px)_
-
-`@container (width >= 56rem) { … }`
-
-`@5xl`
-
-64rem _(1024px)_
-
-`@container (width >= 64rem) { … }`
-
-`@6xl`
-
-72rem _(1152px)_
-
-`@container (width >= 72rem) { … }`
-
-`@7xl`
-
-80rem _(1280px)_
-
-`@container (width >= 80rem) { … }`
+| Variant | Minimum width | CSS |
+| --- | --- | --- |
+| `@3xs` | 16rem _(256px)_ | `@container (width >= 16rem) { … }` |
+| `@2xs` | 18rem _(288px)_ | `@container (width >= 18rem) { … }` |
+| `@xs` | 20rem _(320px)_ | `@container (width >= 20rem) { … }` |
+| `@sm` | 24rem _(384px)_ | `@container (width >= 24rem) { … }` |
+| `@md` | 28rem _(448px)_ | `@container (width >= 28rem) { … }` |
+| `@lg` | 32rem _(512px)_ | `@container (width >= 32rem) { … }` |
+| `@xl` | 36rem _(576px)_ | `@container (width >= 36rem) { … }` |
+| `@2xl` | 42rem _(672px)_ | `@container (width >= 42rem) { … }` |
+| `@3xl` | 48rem _(768px)_ | `@container (width >= 48rem) { … }` |
+| `@4xl` | 56rem _(896px)_ | `@container (width >= 56rem) { … }` |
+| `@5xl` | 64rem _(1024px)_ | `@container (width >= 64rem) { … }` |
+| `@6xl` | 72rem _(1152px)_ | `@container (width >= 72rem) { … }` |
+| `@7xl` | 80rem _(1280px)_ | `@container (width >= 80rem) { … }` |

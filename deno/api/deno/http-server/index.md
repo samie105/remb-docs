@@ -5,20 +5,17 @@ canonical_url: "https://docs.deno.com/api/deno/http-server"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:09:43.885Z"
-content_hash: "1e59fde25683bc2d545b3094394eafcf34aae63ec355ff1014ea959325fbc3ee"
+last_crawled_at: "2026-04-27T17:53:17.896Z"
+content_hash: "9439cf4c375e75653be9b28bb1fe6bea5aa04a6fa6f51401ae45ce21fd5418a8"
 menu_path: ["HTTP Server - Deno documentation"]
 section_path: []
+content_language: "en"
 ---
-### Functions [#](#Functions)
-
 f
 
 [Deno.serve](./././~/Deno.serve "Deno.serve")
 
 Serves HTTP requests with the given handler.
-
-### Interfaces [#](#Interfaces)
 
 I
 
@@ -26,11 +23,11 @@ I
 
 An instance of the server created using `Deno.serve()` API.
 
-*   [addr](./././~/Deno.HttpServer#property_addr)
-*   [finished](./././~/Deno.HttpServer#property_finished)
-*   [ref](./././~/Deno.HttpServer#method_ref_0)
-*   [shutdown](./././~/Deno.HttpServer#method_shutdown_0)
-*   [unref](./././~/Deno.HttpServer#method_unref_0)
+-   [addr](./././~/Deno.HttpServer#property_addr)
+-   [finished](./././~/Deno.HttpServer#property_finished)
+-   [ref](./././~/Deno.HttpServer#method_ref_0)
+-   [shutdown](./././~/Deno.HttpServer#method_shutdown_0)
+-   [unref](./././~/Deno.HttpServer#method_unref_0)
 
 I
 
@@ -38,8 +35,8 @@ I
 
 Interface that module run with `deno serve` subcommand must conform to.
 
-*   [fetch](./././~/Deno.ServeDefaultExport#property_fetch)
-*   [onListen](./././~/Deno.ServeDefaultExport#property_onlisten)
+-   [fetch](./././~/Deno.ServeDefaultExport#property_fetch)
+-   [onListen](./././~/Deno.ServeDefaultExport#property_onlisten)
 
 I
 
@@ -47,8 +44,8 @@ I
 
 Additional information for an HTTP request and its connection.
 
-*   [completed](./././~/Deno.ServeHandlerInfo#property_completed)
-*   [remoteAddr](./././~/Deno.ServeHandlerInfo#property_remoteaddr)
+-   [completed](./././~/Deno.ServeHandlerInfo#property_completed)
+-   [remoteAddr](./././~/Deno.ServeHandlerInfo#property_remoteaddr)
 
 I
 
@@ -56,7 +53,7 @@ I
 
 No documentation available
 
-*   [handler](./././~/Deno.ServeInit#property_handler)
+-   [handler](./././~/Deno.ServeInit#property_handler)
 
 I
 
@@ -64,9 +61,9 @@ I
 
 Options which can be set when calling [`Deno.serve`](./././~/Deno.serve).
 
-*   [onError](./././~/Deno.ServeOptions#property_onerror)
-*   [onListen](./././~/Deno.ServeOptions#property_onlisten)
-*   [signal](./././~/Deno.ServeOptions#property_signal)
+-   [onError](./././~/Deno.ServeOptions#property_onerror)
+-   [onListen](./././~/Deno.ServeOptions#property_onlisten)
+-   [signal](./././~/Deno.ServeOptions#property_signal)
 
 I
 
@@ -74,11 +71,11 @@ I
 
 Options that can be passed to `Deno.serve` to create a server listening on a TCP port.
 
-*   [hostname](./././~/Deno.ServeTcpOptions#property_hostname)
-*   [port](./././~/Deno.ServeTcpOptions#property_port)
-*   [reusePort](./././~/Deno.ServeTcpOptions#property_reuseport)
-*   [tcpBacklog](./././~/Deno.ServeTcpOptions#property_tcpbacklog)
-*   [transport](./././~/Deno.ServeTcpOptions#property_transport)
+-   [hostname](./././~/Deno.ServeTcpOptions#property_hostname)
+-   [port](./././~/Deno.ServeTcpOptions#property_port)
+-   [reusePort](./././~/Deno.ServeTcpOptions#property_reuseport)
+-   [tcpBacklog](./././~/Deno.ServeTcpOptions#property_tcpbacklog)
+-   [transport](./././~/Deno.ServeTcpOptions#property_transport)
 
 I
 
@@ -86,8 +83,8 @@ I
 
 Options that can be passed to `Deno.serve` to create a server listening on a Unix domain socket.
 
-*   [path](./././~/Deno.ServeUnixOptions#property_path)
-*   [transport](./././~/Deno.ServeUnixOptions#property_transport)
+-   [path](./././~/Deno.ServeUnixOptions#property_path)
+-   [transport](./././~/Deno.ServeUnixOptions#property_transport)
 
 I
 
@@ -95,11 +92,9 @@ I
 
 Options that can be passed to `Deno.serve` to create a server listening on a VSOCK socket.
 
-*   [cid](./././~/Deno.ServeVsockOptions#property_cid)
-*   [port](./././~/Deno.ServeVsockOptions#property_port)
-*   [transport](./././~/Deno.ServeVsockOptions#property_transport)
-
-### Type Aliases [#](<#Type Aliases>)
+-   [cid](./././~/Deno.ServeVsockOptions#property_cid)
+-   [port](./././~/Deno.ServeVsockOptions#property_port)
+-   [transport](./././~/Deno.ServeVsockOptions#property_transport)
 
 T
 

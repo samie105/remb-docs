@@ -5,23 +5,39 @@ canonical_url: "https://nextjs.org/docs/app/guides/upgrading/version-15"
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:17:00.409Z"
-content_hash: "3dbab657e5d62966f5aec5c867da4e672a7a7ec31d3929d3401b842a9f1f79ea"
+last_crawled_at: "2026-04-27T18:16:27.496Z"
+content_hash: "4fadd10cf7da1cd9c95fcdea72c08359a035254be740695cb25ef1ebaa51f5ad"
 menu_path: ["How to upgrade to version 15"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/guides/upgrading/version-14/index.md", "title": "How to upgrade to version 14"}
-nav_next: {"path": "nextjs/docs/app/guides/upgrading/version-16/index.md", "title": "How to upgrade to version 16"}
+version: "latest"
+tab_variants: ["pnpm","npm","yarn","bun","pnpm","npm","yarn","bun"]
+content_language: "en"
 ---
+[Guides](/docs/app/guides)[Upgrading](/docs/app/guides/upgrading)Version 15
 
 # How to upgrade to version 15
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 ## Upgrading from 14 to 15[](#upgrading-from-14-to-15)
 
 To update to Next.js version 15, you can use the `upgrade` codemod:
 
-pnpmnpmyarnbun
+#### pnpm
+
+pnpm
+
+#### npm
+
+npm
+
+#### yarn
+
+yarn
+
+#### bun
+
+bun
 
 Terminal
 
@@ -31,7 +47,21 @@ pnpm dlx @next/codemod@canary upgrade latest
 
 If you prefer to do it manually, ensure that you're installing the latest Next & React versions:
 
-pnpmnpmyarnbun
+#### pnpm
+
+pnpm
+
+#### npm
+
+npm
+
+#### yarn
+
+yarn
+
+#### bun
+
+bun
 
 Terminal
 
@@ -41,14 +71,14 @@ pnpm add next@latest react@latest react-dom@latest eslint-config-next@latest
 
 > **Good to know:**
 > 
-> *   If you see a peer dependencies warning, you may need to update `react` and `react-dom` to the suggested versions, or use the `--force` or `--legacy-peer-deps` flag to ignore the warning. This won't be necessary once both Next.js 15 and React 19 are stable.
+> -   If you see a peer dependencies warning, you may need to update `react` and `react-dom` to the suggested versions, or use the `--force` or `--legacy-peer-deps` flag to ignore the warning. This won't be necessary once both Next.js 15 and React 19 are stable.
 
 ## React 19[](#react-19)
 
-*   The minimum versions of `react` and `react-dom` is now 19.
-*   `useFormState` has been replaced by `useActionState`. The `useFormState` hook is still available in React 19, but it is deprecated and will be removed in a future release. `useActionState` is recommended and includes additional properties like reading the `pending` state directly. [Learn more](https://react.dev/reference/react/useActionState).
-*   `useFormStatus` now includes additional keys like `data`, `method`, and `action`. If you are not using React 19, only the `pending` key is available. [Learn more](https://react.dev/reference/react-dom/hooks/useFormStatus).
-*   Read more in the [React 19 upgrade guide](https://react.dev/blog/2024/04/25/react-19-upgrade-guide).
+-   The minimum versions of `react` and `react-dom` is now 19.
+-   `useFormState` has been replaced by `useActionState`. The `useFormState` hook is still available in React 19, but it is deprecated and will be removed in a future release. `useActionState` is recommended and includes additional properties like reading the `pending` state directly. [Learn more](https://react.dev/reference/react/useActionState).
+-   `useFormStatus` now includes additional keys like `data`, `method`, and `action`. If you are not using React 19, only the `pending` key is available. [Learn more](https://react.dev/reference/react-dom/hooks/useFormStatus).
+-   Read more in the [React 19 upgrade guide](https://react.dev/blog/2024/04/25/react-19-upgrade-guide).
 
 > **Good to know:** If you are using TypeScript, ensure you also upgrade `@types/react` and `@types/react-dom` to their latest versions.
 
@@ -56,11 +86,11 @@ pnpm add next@latest react@latest react-dom@latest eslint-config-next@latest
 
 Previously synchronous Request-time APIs that rely on request information are now **asynchronous**:
 
-*   [`cookies`](/docs/app/api-reference/functions/cookies)
-*   [`headers`](/docs/app/api-reference/functions/headers)
-*   [`draftMode`](/docs/app/api-reference/functions/draft-mode)
-*   `params` in [`layout.js`](/docs/app/api-reference/file-conventions/layout), [`page.js`](/docs/app/api-reference/file-conventions/page), [`route.js`](/docs/app/api-reference/file-conventions/route), [`default.js`](/docs/app/api-reference/file-conventions/default), [`opengraph-image`](/docs/app/api-reference/file-conventions/metadata/opengraph-image), [`twitter-image`](/docs/app/api-reference/file-conventions/metadata/opengraph-image), [`icon`](/docs/app/api-reference/file-conventions/metadata/app-icons), and [`apple-icon`](/docs/app/api-reference/file-conventions/metadata/app-icons).
-*   `searchParams` in [`page.js`](/docs/app/api-reference/file-conventions/page)
+-   [`cookies`](/docs/app/api-reference/functions/cookies)
+-   [`headers`](/docs/app/api-reference/functions/headers)
+-   [`draftMode`](/docs/app/api-reference/functions/draft-mode)
+-   `params` in [`layout.js`](/docs/app/api-reference/file-conventions/layout), [`page.js`](/docs/app/api-reference/file-conventions/page), [`route.js`](/docs/app/api-reference/file-conventions/route), [`default.js`](/docs/app/api-reference/file-conventions/default), [`opengraph-image`](/docs/app/api-reference/file-conventions/metadata/opengraph-image), [`twitter-image`](/docs/app/api-reference/file-conventions/metadata/opengraph-image), [`icon`](/docs/app/api-reference/file-conventions/metadata/app-icons), and [`apple-icon`](/docs/app/api-reference/file-conventions/metadata/app-icons).
+-   `searchParams` in [`page.js`](/docs/app/api-reference/file-conventions/page)
 
 To ease the burden of migration, a [codemod is available](/docs/app/guides/upgrading/codemods#150) to automate the process and the APIs can temporarily be accessed synchronously.
 
@@ -83,8 +113,6 @@ const token = cookieStore.get('token')
 #### Temporary Synchronous Usage[](#temporary-synchronous-usage)
 
 app/page.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -121,8 +149,6 @@ const userAgent = headersList.get('user-agent')
 
 app/page.tsx
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -156,8 +182,6 @@ const { isEnabled } = await draftMode()
 
 app/page.tsx
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -176,8 +200,6 @@ const { isEnabled } = draftMode() as unknown as UnsafeUnwrappedDraftMode
 #### Asynchronous Layout[](#asynchronous-layout)
 
 app/layout.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -221,8 +243,6 @@ export default async function Layout({
 
 app/layout.tsx
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -256,8 +276,6 @@ export default function Layout(props: {
 #### Asynchronous Page[](#asynchronous-page)
 
 app/page.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -372,8 +390,6 @@ export default function Page(props) {
 #### Route Handlers[](#route-handlers)
 
 app/api/route.ts
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -563,20 +579,4 @@ export function middleware(request: NextRequest) {
 }
 ```
 
-[Previous
-
-Version 14
-
-](/docs/app/guides/upgrading/version-14)
-
-[Next
-
-Version 16
-
-](/docs/app/guides/upgrading/version-16)
-
 Was this helpful?
-
-supported.
-
-Send

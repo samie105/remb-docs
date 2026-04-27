@@ -5,14 +5,12 @@ canonical_url: "https://orm.drizzle.team/docs/migrate/migrate-from-typeorm"
 docset: "drizzle"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:17:27.993Z"
-content_hash: "dd15d247599e455c6b0f18b571d10f18ed6e54b3f1e5da656c5cca7c7f6a58f7"
+last_crawled_at: "2026-04-27T19:18:18.542Z"
+content_hash: "0bcf67f8225c95c1bf1442f063d8d475815ca9af86024f6eb0cb9184c81f6ade"
 menu_path: ["Migrate from TypeORM to Drizzle"]
 section_path: []
-nav_prev: {"path": "drizzle/docs/migrate/migrate-from-sequelize/index.md", "title": "Migrate from Sequelize to Drizzle"}
-nav_next: {"path": "drizzle/docs/rqb-fundamentals/index.md", "title": "404"}
+content_language: "en"
 ---
-
 This guide provides a straightforward approach to migrating a basic **TypeORM** project to **Drizzle ORM**. Although the example focuses on `PostgreSQL`, the process is similar for other supported databases.
 
 Regardless of your application type or API layer, the steps to transition from **TypeORM** to **Drizzle ORM** remain consistent:
@@ -27,15 +25,7 @@ The corresponding tables have been created using a generated TypeORM migration.
 
 #### Install Drizzle ORM & Drizzle Kit[](#install-drizzle-orm--drizzle-kit)
 
-The first step is to install **Drizzle ORM** and `pg` package which we will use as a driver. The second step is to install **Drizzle Kit** and types for `pg`. [Drizzle Kit](drizzle/docs/kit-overview/index.md) - CLI companion for automatic SQL migrations generation and rapid prototyping.
-
-npm
-
-yarn
-
-pnpm
-
-bun
+The first step is to install **Drizzle ORM** and `pg` package which we will use as a driver. The second step is to install **Drizzle Kit** and types for `pg`. [Drizzle Kit](https://orm.drizzle.team/docs/kit-overview) - CLI companion for automatic SQL migrations generation and rapid prototyping.
 
 ```
 npm i drizzle-orm pg
@@ -63,7 +53,7 @@ bun add -D drizzle-kit @types/pg
 
 Create a `drizzle.config.ts` file in the root of your project and add the following content:
 
-```
+```typescript
 import 'dotenv/config'; // make sure to install dotenv package
 import { defineConfig } from 'drizzle-kit';
 
@@ -89,13 +79,13 @@ export default defineConfig({
 
 **Drizzle Kit** provides a CLI command to introspect your database and generate a schema file. The schema file contains all the information about your database tables, columns, relations, and indices.
 
-```
+```bash
 npx drizzle-kit introspect
 ```
 
 This command will generate a schema.ts file, along with snapshots and migrations in the src/drizzle folder.
 
-```
+```typescript
 import {
   pgTable,
   serial,
@@ -165,7 +155,7 @@ export const orderDetails = pgTable(
 
 Expand
 
-```
+```sql
 -- Current sql file was generated after introspecting the database
 
 CREATE TABLE IF NOT EXISTS "migrations" (
@@ -228,7 +218,7 @@ Expand
 
 Also, if you want to use relational queries, you have to update your schema file with relational tables:
 
-```
+```typescript
 // ...other imports
 import { relations } from 'drizzle-orm';
 
@@ -254,7 +244,7 @@ export const orderDetailsRelations = relations(orderDetails, ({ one }) => ({
 
 Now we have the following file structure:
 
-```
+```text
 📦 <project root>
  ├ 📂 src
  │  ├ 📂 drizzle
@@ -282,7 +272,7 @@ Now we have the following file structure:
 
 Create a `db.ts` file in the `src/drizzle` folder and set up your database configuration:
 
-```
+```typescript
 import { drizzle } from 'drizzle-orm/node-postgres';
 import { Client } from 'pg';
 import * as schema from './schema';
@@ -299,7 +289,7 @@ export const client = new Client({
 export const db = drizzle({ client, schema });
 ```
 
-```
+```typescript
 import 'dotenv/config';
 import { client, db } from './drizzle/db';
 import { resolve } from 'node:path';
@@ -325,7 +315,7 @@ We will show how to insert new rows into `suppliers` and `products` tables.
 
 1.  `POST /suppliers`
 
-```
+```typescript
 import dataSource from '../db/typeorm.config';
 import { Supplier } from '../entities/supplier.entity';
 
@@ -349,7 +339,7 @@ await repository.save(suppliers);
 
 With **Drizzle ORM**, the query is implemented as follows:
 
-```
+```typescript
 import { db } from '../drizzle/db';
 import { suppliers } from '../drizzle/schema';
 
@@ -369,7 +359,7 @@ await db.insert(suppliers).values([
 
 2.  `POST /products`
 
-```
+```typescript
 import dataSource from '../db/typeorm.config';
 import { Product } from '../entities/product.entity';
 
@@ -409,7 +399,7 @@ With **Drizzle ORM**, the query is implemented as follows:
 
 Be careful with the `unitPrice` field. In **TypeORM** it’s a `number` type, but in **Drizzle ORM** it’s a `string` type, which can handle more than 16383 digits after the decimal point, unlike the `number` type.
 
-```
+```typescript
 await db.insert(products).values([
   {
     name: 'TestProductName1',
@@ -446,7 +436,7 @@ In this section we will show how to select one row, multiple rows, count rows, f
 
 In **TypeORM**, the response type is not strictly typed. For example, if you choose to include a relation or select only a few fields instead of all, these modifications will not be reflected in the response type.
 
-```
+```typescript
 import dataSource from '../db/typeorm.config';
 import { Product } from '../entities/product.entity';
 
@@ -462,7 +452,7 @@ const response = await repostitory.findOne({
 
 In **Drizzle ORM**, the query is implemented as follows:
 
-```
+```typescript
 import { eq } from 'drizzle-orm';
 import { db } from '../drizzle/db';
 import { products, suppliers } from '../drizzle/schema';
@@ -489,7 +479,7 @@ const response = await db.query.products.findFirst({
 
 In **Drizzle ORM**, the response type will match precisely what is specified in the select object, so including the `supplier` relation is fully type-safe.
 
-```
+```typescript
 // response type
 const response: {
   product: {
@@ -512,7 +502,7 @@ const response: {
 
 In **TypeORM**, the result is not type-safe as it doesn’t specify the fields you want to select.
 
-```
+```typescript
 import { ILike } from 'typeorm';
 import dataSource from '../db/typeorm.config';
 import { Product } from '../entities/product.entity';
@@ -531,7 +521,7 @@ const response = await repostitory.findAndCount({
 
 In **Drizzle ORM**, the query is implemented as follows:
 
-```
+```typescript
 import { ilike, sql } from 'drizzle-orm';
 import { db } from '../drizzle/db';
 import { products } from '../drizzle/schema';
@@ -582,7 +572,7 @@ Expand
 
 In **Drizzle ORM**, the result is strictly type-safe, meaning the fields you select are explicitly defined.
 
-```
+```typescript
 // response type
 const response: {
   id: number;
@@ -598,7 +588,7 @@ In **TypeORM** you can’t use `aggregation functions` with relations and select
 
 We want to select `id`, `orderDate` and `shipCountry` fields from `orders` table and by using `aggregation functions` sum `totalPrice` of order, `totalQuantity` of products in the order and count `totalProducts` in the order.
 
-```
+```typescript
 import dataSource from '../db/typeorm.config';
 import { Order } from '../entities/order.entity';
 
@@ -626,7 +616,7 @@ const response = await orderQueryBuilder
 
 In **Drizzle ORM**, the query is implemented as follows:
 
-```
+```typescript
 import { eq, sql } from 'drizzle-orm';
 import { db } from '../drizzle/db';
 import { orders, orderDetails, products } from '../drizzle/schema';
@@ -651,7 +641,7 @@ const response = await db
 
 In **Drizzle ORM**, the result will be type-safe with aggregations too.
 
-```
+```typescript
 // response type
 const response: {
   id: number;
@@ -671,7 +661,7 @@ In this section, we will show you how to update multiple rows.
 
 1.  `PATCH /suppliers/:id`
 
-```
+```typescript
 import dataSource from '../db/typeorm.config';
 import { Supplier } from '../entities/supplier.entity';
 
@@ -692,7 +682,7 @@ await repository.save(supplier);
 
 In **Drizzle ORM**, the query is implemented as follows:
 
-```
+```typescript
 import { eq } from 'drizzle-orm';
 import { db } from '../drizzle/db';
 import { suppliers } from '../drizzle/schema';
@@ -714,7 +704,7 @@ In this section, we will show you how to delete a single row and multiple rows u
 
 1.  `DELETE /orders/:id`
 
-```
+```typescript
 import dataSource from '../db/typeorm.config';
 import { OrderDetail } from '../entities/order-detail.entity';
 import { Order } from '../entities/order.entity';
@@ -744,7 +734,7 @@ try {
 
 In **Drizzle ORM**, the query is implemented as follows:
 
-```
+```typescript
 import { eq } from 'drizzle-orm';
 import { db } from '../drizzle/db';
 import { orderDetails, orders } from '../drizzle/schema';

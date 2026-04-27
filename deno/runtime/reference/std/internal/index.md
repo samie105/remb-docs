@@ -5,11 +5,14 @@ canonical_url: "https://docs.deno.com/runtime/reference/std/internal/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:03:22.282Z"
-content_hash: "f228bd314801a41b682d3269733f0542198358b738c2adf00e11323dfada9e88"
+last_crawled_at: "2026-04-27T17:43:50.807Z"
+content_hash: "464f63508a334b2e0265856bfb0fbe564c46da729d3447683567871fb8adfb7d"
 menu_path: ["@std/internal"]
 section_path: []
+content_language: "en"
 ---
+[Skip to main content](#content)
+
 Internal
 
 This @std package is for internal use and not intended for public consumption. APIs may change or be removed.

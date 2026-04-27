@@ -5,15 +5,16 @@ canonical_url: "https://docs.deno.com/runtime/reference/std/data-structures/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:01:17.683Z"
-content_hash: "64e0ffa01824f7b78ddaf57be7f3c11325ae6e616e4bcf687875325e9d116d68"
+last_crawled_at: "2026-04-27T17:40:58.415Z"
+content_hash: "f22fa5981ea0f8e46f9748ae01a1edde6e99fb606ee031c4f5fb5939fe4deccf"
 menu_path: ["@std/data-structures"]
 section_path: []
+content_language: "en"
 ---
-On this page
+**On this page**
 
-*   [Overview](#overview)
-    *   [Add to your project](#add-to-your-project)
+-   [Overview](#overview)
+    -   [Add to your project](#add-to-your-project)
 
 ## Overview
 

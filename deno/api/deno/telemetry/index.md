@@ -5,20 +5,17 @@ canonical_url: "https://docs.deno.com/api/deno/telemetry"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:11:04.684Z"
-content_hash: "343ca74d20bce07cfffff60c5097df3ffd020ab806d995bebff2577c255c44e7"
+last_crawled_at: "2026-04-27T17:55:26.725Z"
+content_hash: "b5f27135747af357f188611724de3c941a9274919bdd74892cd3cdfdf2841721"
 menu_path: ["Telemetry - Deno documentation"]
 section_path: []
+content_language: "en"
 ---
-### Namespaces [#](#Namespaces)
-
 N
 
 [Deno.telemetry](./././~/Deno.telemetry "Deno.telemetry")
 
 APIs for working with the OpenTelemetry observability framework. Deno can export traces, metrics, and logs to OpenTelemetry compatible backends via the OTLP protocol.
-
-### Variables [#](#Variables)
 
 v
 

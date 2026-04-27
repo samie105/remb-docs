@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/app/guides/forms"
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:14:42.231Z"
-content_hash: "ff54c26afd70a0f65d75fd51834c14505c55eda34a980b230870b2b667b6aacd"
+last_crawled_at: "2026-04-27T18:13:34.863Z"
+content_hash: "f141dc6c5877ec283546e101527432573a1a16d61cc390faaf42b3647a8b9552"
 menu_path: ["How to create forms with Server Actions"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/guides/environment-variables/index.md", "title": "How to use environment variables in Next.js"}
-nav_next: {"path": "nextjs/docs/app/guides/how-revalidation-works/index.md", "title": "How revalidation works in Next.js"}
+version: "latest"
+content_language: "en"
 ---
+[App Router](/docs/app)[Guides](/docs/app/guides)Forms
 
 # How to create forms with Server Actions
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 React Server Actions are [Server Functions](https://react.dev/reference/rsc/server-functions) that execute on the server. They can be called in Server and Client Components to handle form submissions. This guide will walk you through how to create forms in Next.js with Server Actions.
 
@@ -28,8 +29,6 @@ React extends the HTML [`<form>`](https://developer.mozilla.org/docs/Web/HTML/El
 When used in a form, the function automatically receives the [`FormData`](https://developer.mozilla.org/docs/Web/API/FormData/FormData) object. You can then extract the data using the native [`FormData` methods](https://developer.mozilla.org/en-US/docs/Web/API/FormData#instance_methods):
 
 app/invoices/page.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -67,8 +66,6 @@ Outside of form fields, you can pass additional arguments to a Server Function u
 
 app/client-component.tsx
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -92,8 +89,6 @@ The Server Function will receive the `userId` as an additional argument:
 
 app/actions.ts
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -104,19 +99,17 @@ export async function updateUser(userId: string, formData: FormData) {}
 
 > **Good to know**:
 > 
-> *   An alternative is to pass arguments as hidden input fields in the form (e.g. `<input type="hidden" name="userId" value={userId} />`). However, the value will be part of the rendered HTML and will not be encoded.
-> *   `bind` works in both Server and Client Components and supports progressive enhancement.
+> -   An alternative is to pass arguments as hidden input fields in the form (e.g. `<input type="hidden" name="userId" value={userId} />`). However, the value will be part of the rendered HTML and will not be encoded.
+> -   `bind` works in both Server and Client Components and supports progressive enhancement.
 
 ## Form validation[](#form-validation)
 
 Forms can be validated on the client or server.
 
-*   For **client-side validation**, you can use the HTML attributes like `required` and `type="email"` for basic validation.
-*   For **server-side validation**, you can use a library like [zod](https://zod.dev/) to validate the form fields. For example:
+-   For **client-side validation**, you can use the HTML attributes like `required` and `type="email"` for basic validation.
+-   For **server-side validation**, you can use a library like [zod](https://zod.dev/) to validate the form fields. For example:
 
 app/actions.ts
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -155,8 +148,6 @@ When using `useActionState`, the Server function signature will change to receiv
 
 app/actions.ts
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -175,8 +166,6 @@ export async function createUser(initialState: any, formData: FormData) {
 You can then conditionally render the error message based on the `state` object.
 
 app/ui/signup.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -211,8 +200,6 @@ The [`useActionState`](https://react.dev/reference/react/useActionState) hook ex
 
 app/ui/signup.tsx
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -237,8 +224,6 @@ Alternatively, you can use the [`useFormStatus`](https://react.dev/reference/rea
 
 app/ui/button.tsx
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -260,8 +245,6 @@ export function SubmitButton() {
 You can then nest the `SubmitButton` component inside the form:
 
 app/ui/signup.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -286,8 +269,6 @@ export function Signup() {
 You can use the React [`useOptimistic`](https://react.dev/reference/react/useOptimistic) hook to optimistically update the UI before the Server Function finishes executing, rather than waiting for the response:
 
 app/page.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -339,8 +320,6 @@ You can trigger a form submission programmatically using the [`requestSubmit()`]
 
 app/entry.tsx
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -367,20 +346,4 @@ export function Entry() {
 
 This will trigger the submission of the nearest `<form>` ancestor, which will invoke the Server Function.
 
-[Previous
-
-Environment Variables
-
-](/docs/app/guides/environment-variables)
-
-[Next
-
-How Revalidation Works
-
-](/docs/app/guides/how-revalidation-works)
-
 Was this helpful?
-
-supported.
-
-Send

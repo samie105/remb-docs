@@ -5,27 +5,28 @@ canonical_url: "https://nextjs.org/docs/pages/api-reference/adapters/output-type
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:19:12.651Z"
-content_hash: "9b7231c113fd752f1c8809dc03ae3a40887d4d000a3d58f3767a034ce17f2eec"
+last_crawled_at: "2026-04-27T18:18:33.602Z"
+content_hash: "4f5551b0f7d55691551928a4717abdc4e2bd82dc5f4c70b6a694452b09ef99a5"
 menu_path: ["Output Types"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/pages/api-reference/adapters/invoking-entrypoints/index.md", "title": "Invoking Entrypoints"}
-nav_next: {"path": "nextjs/docs/pages/api-reference/adapters/routing-information/index.md", "title": "Routing Information"}
+version: "latest"
+content_language: "en"
 ---
+[API Reference](/docs/pages/api-reference)[Adapters](/docs/pages/api-reference/adapters)Output Types
 
 # Output Types
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 The `outputs` object contains arrays of build output types:
 
-*   `outputs.pages`: React pages from the `pages/` directory
-*   `outputs.pagesApi`: API routes from `pages/api/`
-*   `outputs.appPages`: React pages from the `app/` directory
-*   `outputs.appRoutes`: API and metadata routes from `app/`
-*   `outputs.prerenders`: ISR-enabled routes and static prerenders
-*   `outputs.staticFiles`: Static assets and auto-statically optimized pages
-*   `outputs.middleware`: Middleware function (if present)
+-   `outputs.pages`: React pages from the `pages/` directory
+-   `outputs.pagesApi`: API routes from `pages/api/`
+-   `outputs.appPages`: React pages from the `app/` directory
+-   `outputs.appRoutes`: API and metadata routes from `app/`
+-   `outputs.prerenders`: ISR-enabled routes and static prerenders
+-   `outputs.staticFiles`: Static assets and auto-statically optimized pages
+-   `outputs.middleware`: Middleware function (if present)
 
 > **Note:** When `config.output` is set to `'export'`, only `outputs.staticFiles` is populated. All other arrays (`pages`, `appPages`, `pagesApi`, `appRoutes`, `prerenders`) will be empty since the entire application is exported as static files.
 
@@ -221,7 +222,3 @@ Static assets and auto-statically optimized pages:
 ```
 
 Was this helpful?
-
-supported.
-
-Send

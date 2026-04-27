@@ -5,33 +5,36 @@ canonical_url: "https://tailwindcss.com/docs/field-sizing"
 docset: "tailwind"
 kind: "framework"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:16:08.262Z"
-content_hash: "1dc4e5b38636f381ed780bdb0bd2d6ba7c1dcb3b34ba5d034f058bcb3ad6e2b1"
+last_crawled_at: "2026-04-27T20:37:57.099Z"
+content_hash: "f46aa07a1351cbc69e8be1471b27303f435849c0660a120d04946410defa28ed"
 menu_path: ["field-sizing"]
 section_path: []
-nav_prev: {"path": "tailwind/docs/cursor/index.md", "title": "cursor"}
-nav_next: {"path": "tailwind/docs/pointer-events/index.md", "title": "pointer-events"}
+content_language: "en"
 ---
+[](/)
+
+[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
+
+1.  Interactivity
+2.  field-sizing
+
+Interactivity
 
 # field-sizing
 
 Utilities for controlling the sizing of form controls.
 
-Class
-
-Styles
-
-`field-sizing-fixed`
-
+| Class | Styles |
+| --- | --- |
+| `field-sizing-fixed` | 
 `field-sizing: fixed;`
 
-`field-sizing-content`
+ |
+| `field-sizing-content` | 
 
 `field-sizing: content;`
 
-## [Examples](#examples)
-
-### [Sizing based on content](#sizing-based-on-content)
+ |
 
 Use the `field-sizing-content` utility to allow a form control to adjust its size based on the content:
 
@@ -43,8 +46,6 @@ Latex Salesman, Vanderlay Industries
 <textarea class="field-sizing-content ..." rows="2">  Latex Salesman, Vanderlay Industries</textarea>
 ```
 
-### [Using a fixed size](#using-a-fixed-size)
-
 Use the `field-sizing-fixed` utility to make a form control use a fixed size:
 
 Type in the input below to see the size remain the same
@@ -54,8 +55,6 @@ Latex Salesman, Vanderlay Industries
 ```
 <textarea class="field-sizing-fixed w-80 ..." rows="2">  Latex Salesman, Vanderlay Industries</textarea>
 ```
-
-### [Responsive design](#responsive-design)
 
 Prefix a `field-sizing` utility with a breakpoint variant like `md:` to only apply the utility at medium screen sizes and above:
 
@@ -67,11 +66,11 @@ Learn more about using variants in the [variants documentation](/docs/hover-focu
 
 ### On this page
 
-*   [Quick reference](#quick-reference)
-*   [Examples](#examples)
-    *   [Sizing based on content](#sizing-based-on-content)
-    *   [Using a fixed size](#using-a-fixed-size)
-    *   [Responsive design](#responsive-design)
+-   [Quick reference](#quick-reference)
+-   [Examples](#examples)
+    -   [Sizing based on content](#sizing-based-on-content)
+    -   [Using a fixed size](#using-a-fixed-size)
+    -   [Responsive design](#responsive-design)
 
 ![Build UIs that don’t suck — 5-day mini-course](/_next/static/media/course-promo.d3d6bc78.jpg)
 

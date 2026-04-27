@@ -5,10 +5,11 @@ canonical_url: "https://docs.deno.com/api/node/vm/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:44:05.390Z"
-content_hash: "d676b7188f06e78713725be1094ff9bca07fee8f47a8f9e3d7a0c5a1f82977d6"
+last_crawled_at: "2026-04-27T17:16:30.155Z"
+content_hash: "29bd9acd6a07659bb21e8f5e60f9f4aa38a3f2b62ad49f9332dd44eab81ffb16"
 menu_path: ["vm - Node documentation"]
 section_path: []
+content_language: "en"
 ---
 ### Usage in Deno
 
@@ -45,22 +46,20 @@ console.log(context.y); // 17
 console.log(x); // 1; y is not defined.
 ```
 
-### Classes [#](#Classes)
-
 c
 
 [Module](.././vm/~/Module "Module")
 
 This feature is only available with the `--experimental-vm-modules` command flag enabled.
 
-*   [context](.././vm/~/Module#property_context)
-*   [dependencySpecifiers](.././vm/~/Module#property_dependencyspecifiers)
-*   [error](.././vm/~/Module#property_error)
-*   [evaluate](.././vm/~/Module#method_evaluate_0)
-*   [identifier](.././vm/~/Module#property_identifier)
-*   [link](.././vm/~/Module#method_link_0)
-*   [namespace](.././vm/~/Module#property_namespace)
-*   [status](.././vm/~/Module#property_status)
+-   [context](.././vm/~/Module#property_context)
+-   [dependencySpecifiers](.././vm/~/Module#property_dependencyspecifiers)
+-   [error](.././vm/~/Module#property_error)
+-   [evaluate](.././vm/~/Module#method_evaluate_0)
+-   [identifier](.././vm/~/Module#property_identifier)
+-   [link](.././vm/~/Module#method_link_0)
+-   [namespace](.././vm/~/Module#property_namespace)
+-   [status](.././vm/~/Module#property_status)
 
 c
 
@@ -68,14 +67,14 @@ c
 
 No documentation available
 
-*   [cachedData](.././vm/~/Script#property_cacheddata)
-*   [cachedDataProduced](.././vm/~/Script#property_cacheddataproduced)
-*   [cachedDataRejected](.././vm/~/Script#property_cacheddatarejected)
-*   [createCachedData](.././vm/~/Script#method_createcacheddata_0)
-*   [runInContext](.././vm/~/Script#method_runincontext_0)
-*   [runInNewContext](.././vm/~/Script#method_runinnewcontext_0)
-*   [runInThisContext](.././vm/~/Script#method_runinthiscontext_0)
-*   [sourceMapURL](.././vm/~/Script#property_sourcemapurl)
+-   [cachedData](.././vm/~/Script#property_cacheddata)
+-   [cachedDataProduced](.././vm/~/Script#property_cacheddataproduced)
+-   [cachedDataRejected](.././vm/~/Script#property_cacheddatarejected)
+-   [createCachedData](.././vm/~/Script#method_createcacheddata_0)
+-   [runInContext](.././vm/~/Script#method_runincontext_0)
+-   [runInNewContext](.././vm/~/Script#method_runinnewcontext_0)
+-   [runInThisContext](.././vm/~/Script#method_runinthiscontext_0)
+-   [sourceMapURL](.././vm/~/Script#property_sourcemapurl)
 
 c
 
@@ -89,9 +88,7 @@ c
 
 This feature is only available with the `--experimental-vm-modules` command flag enabled.
 
-*   [setExport](.././vm/~/SyntheticModule#method_setexport_0)
-
-### Functions [#](#Functions)
+-   [setExport](.././vm/~/SyntheticModule#method_setexport_0)
 
 f
 
@@ -135,17 +132,15 @@ f
 
 `vm.runInThisContext()` compiles `code`, runs it within the context of the current `global` and returns the result. Running code does not have access to local scope, but does have access to the current `global` object.
 
-### Interfaces [#](#Interfaces)
-
 I
 
 [BaseOptions](.././vm/~/BaseOptions "BaseOptions")
 
 No documentation available
 
-*   [columnOffset](.././vm/~/BaseOptions#property_columnoffset)
-*   [filename](.././vm/~/BaseOptions#property_filename)
-*   [lineOffset](.././vm/~/BaseOptions#property_lineoffset)
+-   [columnOffset](.././vm/~/BaseOptions#property_columnoffset)
+-   [filename](.././vm/~/BaseOptions#property_filename)
+-   [lineOffset](.././vm/~/BaseOptions#property_lineoffset)
 
 I
 
@@ -153,10 +148,10 @@ I
 
 No documentation available
 
-*   [cachedData](.././vm/~/CompileFunctionOptions#property_cacheddata)
-*   [contextExtensions](.././vm/~/CompileFunctionOptions#property_contextextensions)
-*   [parsingContext](.././vm/~/CompileFunctionOptions#property_parsingcontext)
-*   [produceCachedData](.././vm/~/CompileFunctionOptions#property_producecacheddata)
+-   [cachedData](.././vm/~/CompileFunctionOptions#property_cacheddata)
+-   [contextExtensions](.././vm/~/CompileFunctionOptions#property_contextextensions)
+-   [parsingContext](.././vm/~/CompileFunctionOptions#property_parsingcontext)
+-   [produceCachedData](.././vm/~/CompileFunctionOptions#property_producecacheddata)
 
 I
 
@@ -170,10 +165,10 @@ I
 
 No documentation available
 
-*   [codeGeneration](.././vm/~/CreateContextOptions#property_codegeneration)
-*   [microtaskMode](.././vm/~/CreateContextOptions#property_microtaskmode)
-*   [name](.././vm/~/CreateContextOptions#property_name)
-*   [origin](.././vm/~/CreateContextOptions#property_origin)
+-   [codeGeneration](.././vm/~/CreateContextOptions#property_codegeneration)
+-   [microtaskMode](.././vm/~/CreateContextOptions#property_microtaskmode)
+-   [name](.././vm/~/CreateContextOptions#property_name)
+-   [origin](.././vm/~/CreateContextOptions#property_origin)
 
 I
 
@@ -181,8 +176,8 @@ I
 
 No documentation available
 
-*   [execution](.././vm/~/MeasureMemoryOptions#property_execution)
-*   [mode](.././vm/~/MeasureMemoryOptions#property_mode)
+-   [execution](.././vm/~/MeasureMemoryOptions#property_execution)
+-   [mode](.././vm/~/MeasureMemoryOptions#property_mode)
 
 I
 
@@ -190,7 +185,7 @@ I
 
 No documentation available
 
-*   [total](.././vm/~/MemoryMeasurement#property_total)
+-   [total](.././vm/~/MemoryMeasurement#property_total)
 
 I
 
@@ -198,8 +193,8 @@ I
 
 No documentation available
 
-*   [breakOnSigint](.././vm/~/ModuleEvaluateOptions#property_breakonsigint)
-*   [timeout](.././vm/~/ModuleEvaluateOptions#property_timeout)
+-   [breakOnSigint](.././vm/~/ModuleEvaluateOptions#property_breakonsigint)
+-   [timeout](.././vm/~/ModuleEvaluateOptions#property_timeout)
 
 I
 
@@ -207,8 +202,8 @@ I
 
 No documentation available
 
-*   [cachedData](.././vm/~/RunningCodeInNewContextOptions#property_cacheddata)
-*   [importModuleDynamically](.././vm/~/RunningCodeInNewContextOptions#property_importmoduledynamically)
+-   [cachedData](.././vm/~/RunningCodeInNewContextOptions#property_cacheddata)
+-   [importModuleDynamically](.././vm/~/RunningCodeInNewContextOptions#property_importmoduledynamically)
 
 I
 
@@ -216,8 +211,8 @@ I
 
 No documentation available
 
-*   [cachedData](.././vm/~/RunningCodeOptions#property_cacheddata)
-*   [importModuleDynamically](.././vm/~/RunningCodeOptions#property_importmoduledynamically)
+-   [cachedData](.././vm/~/RunningCodeOptions#property_cacheddata)
+-   [importModuleDynamically](.././vm/~/RunningCodeOptions#property_importmoduledynamically)
 
 I
 
@@ -225,10 +220,10 @@ I
 
 No documentation available
 
-*   [contextCodeGeneration](.././vm/~/RunningScriptInNewContextOptions#property_contextcodegeneration)
-*   [contextName](.././vm/~/RunningScriptInNewContextOptions#property_contextname)
-*   [contextOrigin](.././vm/~/RunningScriptInNewContextOptions#property_contextorigin)
-*   [microtaskMode](.././vm/~/RunningScriptInNewContextOptions#property_microtaskmode)
+-   [contextCodeGeneration](.././vm/~/RunningScriptInNewContextOptions#property_contextcodegeneration)
+-   [contextName](.././vm/~/RunningScriptInNewContextOptions#property_contextname)
+-   [contextOrigin](.././vm/~/RunningScriptInNewContextOptions#property_contextorigin)
+-   [microtaskMode](.././vm/~/RunningScriptInNewContextOptions#property_microtaskmode)
 
 I
 
@@ -236,9 +231,9 @@ I
 
 No documentation available
 
-*   [breakOnSigint](.././vm/~/RunningScriptOptions#property_breakonsigint)
-*   [displayErrors](.././vm/~/RunningScriptOptions#property_displayerrors)
-*   [timeout](.././vm/~/RunningScriptOptions#property_timeout)
+-   [breakOnSigint](.././vm/~/RunningScriptOptions#property_breakonsigint)
+-   [displayErrors](.././vm/~/RunningScriptOptions#property_displayerrors)
+-   [timeout](.././vm/~/RunningScriptOptions#property_timeout)
 
 I
 
@@ -246,9 +241,9 @@ I
 
 No documentation available
 
-*   [cachedData](.././vm/~/ScriptOptions#property_cacheddata)
-*   [importModuleDynamically](.././vm/~/ScriptOptions#property_importmoduledynamically)
-*   [produceCachedData](.././vm/~/ScriptOptions#property_producecacheddata)
+-   [cachedData](.././vm/~/ScriptOptions#property_cacheddata)
+-   [importModuleDynamically](.././vm/~/ScriptOptions#property_importmoduledynamically)
+-   [produceCachedData](.././vm/~/ScriptOptions#property_producecacheddata)
 
 I
 
@@ -256,13 +251,13 @@ I
 
 No documentation available
 
-*   [cachedData](.././vm/~/SourceTextModuleOptions#property_cacheddata)
-*   [columnOffset](.././vm/~/SourceTextModuleOptions#property_columnoffset)
-*   [context](.././vm/~/SourceTextModuleOptions#property_context)
-*   [identifier](.././vm/~/SourceTextModuleOptions#property_identifier)
-*   [importModuleDynamically](.././vm/~/SourceTextModuleOptions#property_importmoduledynamically)
-*   [initializeImportMeta](.././vm/~/SourceTextModuleOptions#property_initializeimportmeta)
-*   [lineOffset](.././vm/~/SourceTextModuleOptions#property_lineoffset)
+-   [cachedData](.././vm/~/SourceTextModuleOptions#property_cacheddata)
+-   [columnOffset](.././vm/~/SourceTextModuleOptions#property_columnoffset)
+-   [context](.././vm/~/SourceTextModuleOptions#property_context)
+-   [identifier](.././vm/~/SourceTextModuleOptions#property_identifier)
+-   [importModuleDynamically](.././vm/~/SourceTextModuleOptions#property_importmoduledynamically)
+-   [initializeImportMeta](.././vm/~/SourceTextModuleOptions#property_initializeimportmeta)
+-   [lineOffset](.././vm/~/SourceTextModuleOptions#property_lineoffset)
 
 I
 
@@ -270,18 +265,14 @@ I
 
 No documentation available
 
-*   [context](.././vm/~/SyntheticModuleOptions#property_context)
-*   [identifier](.././vm/~/SyntheticModuleOptions#property_identifier)
-
-### Namespaces [#](#Namespaces)
+-   [context](.././vm/~/SyntheticModuleOptions#property_context)
+-   [identifier](.././vm/~/SyntheticModuleOptions#property_identifier)
 
 N
 
 [constants](.././vm/~/constants "constants")
 
 Returns an object containing commonly used constants for VM operations.
-
-### Type Aliases [#](<#Type Aliases>)
 
 T
 
@@ -300,8 +291,6 @@ T
 [ModuleStatus](.././vm/~/ModuleStatus "ModuleStatus")
 
 No documentation available
-
-### Variables [#](#Variables)
 
 v
 

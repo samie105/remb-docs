@@ -5,13 +5,14 @@ canonical_url: "https://nextjs.org/docs/messages/google-font-preconnect"
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:17:45.454Z"
-content_hash: "3485397f308e978469ba0d6b5a88fe8ea9c11099023fd30f5f20eb99f19c3713"
+last_crawled_at: "2026-04-27T18:17:13.727Z"
+content_hash: "830f0e4c4614d6f46c02645073ac98a50ef79f129fa33da6cd2c56435f731493"
 menu_path: ["Google Font Preconnect"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/messages/google-font-display/index.md", "title": "Google Font Display"}
-nav_next: {"path": "nextjs/docs/messages/inline-script-id/index.md", "title": "Inline script id"}
+version: "latest"
+content_language: "en"
 ---
+[Docs](/docs)[Errors](/docs)Google Font Preconnect
 
 # Google Font Preconnect
 
@@ -37,12 +38,8 @@ pages/\_document.js
 
 ## Useful Links[](#useful-links)
 
-*   [Preconnect to required origins](https://web.dev/uses-rel-preconnect/)
-*   [Preconnect and dns-prefetch](https://web.dev/preconnect-and-dns-prefetch/#resolve-domain-name-early-with-reldns-prefetch)
-*   [Next.js Font Optimization](/docs/pages/api-reference/components/font)
+-   [Preconnect to required origins](https://web.dev/uses-rel-preconnect/)
+-   [Preconnect and dns-prefetch](https://web.dev/preconnect-and-dns-prefetch/#resolve-domain-name-early-with-reldns-prefetch)
+-   [Next.js Font Optimization](/docs/pages/api-reference/components/font)
 
 Was this helpful?
-
-supported.
-
-Send

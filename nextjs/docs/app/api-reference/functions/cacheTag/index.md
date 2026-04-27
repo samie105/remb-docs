@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/app/api-reference/functions/cacheTag"
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:11:14.858Z"
-content_hash: "f0989e0da887e040295526a6a238303ca5e8bc8dc4cb53d5eea4f7f75f7cc15d"
+last_crawled_at: "2026-04-27T18:09:54.829Z"
+content_hash: "37672ddb2c66f148d886180042f556da35fb1b84b47fb4aee2955aa91b2b3008"
 menu_path: ["cacheTag"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/api-reference/functions/cacheLife/index.md", "title": "cacheLife"}
-nav_next: {"path": "nextjs/docs/app/api-reference/functions/catchError/index.md", "title": "unstable_catchError"}
+version: "latest"
+content_language: "en"
 ---
+[API Reference](/docs/app/api-reference)[Functions](/docs/app/api-reference/functions)cacheTag
 
 # cacheTag
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 The `cacheTag` function allows you to tag cached data for on-demand invalidation. By associating tags with cache entries, you can selectively purge or revalidate specific cache entries without affecting other cached data.
 
@@ -24,8 +25,6 @@ The `cacheTag` function allows you to tag cached data for on-demand invalidation
 To use `cacheTag`, enable the [`cacheComponents` flag](/docs/app/api-reference/config/next-config-js/cacheComponents) in your `next.config.js` file:
 
 next.config.ts
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -42,8 +41,6 @@ export default nextConfig
 The `cacheTag` function takes one or more string values.
 
 app/data.ts
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -62,8 +59,6 @@ You can then purge the cache on-demand using [`revalidateTag`](/docs/app/api-ref
 
 app/action.ts
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -79,14 +74,14 @@ export default async function submit() {
 
 ## Good to know[](#good-to-know)
 
-*   **Idempotent Tags**: Applying the same tag multiple times has no additional effect.
-*   **Multiple Tags**: You can assign multiple tags to a single cache entry by passing multiple string values to `cacheTag`.
+-   **Idempotent Tags**: Applying the same tag multiple times has no additional effect.
+-   **Multiple Tags**: You can assign multiple tags to a single cache entry by passing multiple string values to `cacheTag`.
 
 ```
 cacheTag('tag-one', 'tag-two')
 ```
 
-*   **Limits**: The max length for a custom tag is 256 characters and the max tag items is 128.
+-   **Limits**: The max length for a custom tag is 256 characters and the max tag items is 128.
 
 ## Examples[](#examples)
 
@@ -95,8 +90,6 @@ cacheTag('tag-one', 'tag-two')
 Tag your cached data by calling `cacheTag` within a cached function or component:
 
 app/components/bookings.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -126,8 +119,6 @@ You can use the data returned from an async function to tag the cache entry.
 
 app/components/bookings.tsx
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -153,8 +144,6 @@ export async function Bookings({ type = 'haircut' }: BookingsProps) {
 Using [`revalidateTag`](/docs/app/api-reference/functions/revalidateTag), you can invalidate the cache for a specific tag when needed:
 
 app/actions.ts
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -199,20 +188,4 @@ Learn how to use the cacheLife function to set the cache expiration time for a c
 
 ](/docs/app/api-reference/functions/cacheLife)
 
-[Previous
-
-cacheLife
-
-](/docs/app/api-reference/functions/cacheLife)
-
-[Next
-
-unstable\_catchError
-
-](/docs/app/api-reference/functions/catchError)
-
 Was this helpful?
-
-supported.
-
-Send

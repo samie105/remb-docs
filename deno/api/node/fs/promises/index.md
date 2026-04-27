@@ -5,10 +5,11 @@ canonical_url: "https://docs.deno.com/api/node/fs/promises/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:36:19.433Z"
-content_hash: "3bce783f7485e2dafcebd590c52d98c15a1ebed7c793eefb2a6c6d3a6a359974"
+last_crawled_at: "2026-04-27T17:06:50.609Z"
+content_hash: "c27254e4039b16802de99b83c0f1cc3da8c78450c3f62f7b882af7934ff4cdf9"
 menu_path: ["fs/promises - Node documentation"]
 section_path: []
+content_language: "en"
 ---
 ### Usage in Deno
 
@@ -19,8 +20,6 @@ import * as mod from "node:fs/promises";
 The `fs/promises` API provides asynchronous file system methods that return promises.
 
 The promise APIs use the underlying Node.js threadpool to perform file system operations off the event loop thread. These operations are not synchronized or threadsafe. Care must be taken when performing multiple concurrent modifications on the same file or data corruption may occur.
-
-### Functions [#](#Functions)
 
 f
 
@@ -208,20 +207,18 @@ f
 
 No documentation available
 
-### Interfaces [#](#Interfaces)
-
 I
 
 [CreateReadStreamOptions](../.././fs/promises/~/CreateReadStreamOptions "CreateReadStreamOptions")
 
 No documentation available
 
-*   [autoClose](../.././fs/promises/~/CreateReadStreamOptions#property_autoclose)
-*   [emitClose](../.././fs/promises/~/CreateReadStreamOptions#property_emitclose)
-*   [encoding](../.././fs/promises/~/CreateReadStreamOptions#property_encoding)
-*   [end](../.././fs/promises/~/CreateReadStreamOptions#property_end)
-*   [highWaterMark](../.././fs/promises/~/CreateReadStreamOptions#property_highwatermark)
-*   [start](../.././fs/promises/~/CreateReadStreamOptions#property_start)
+-   [autoClose](../.././fs/promises/~/CreateReadStreamOptions#property_autoclose)
+-   [emitClose](../.././fs/promises/~/CreateReadStreamOptions#property_emitclose)
+-   [encoding](../.././fs/promises/~/CreateReadStreamOptions#property_encoding)
+-   [end](../.././fs/promises/~/CreateReadStreamOptions#property_end)
+-   [highWaterMark](../.././fs/promises/~/CreateReadStreamOptions#property_highwatermark)
+-   [start](../.././fs/promises/~/CreateReadStreamOptions#property_start)
 
 I
 
@@ -229,12 +226,12 @@ I
 
 No documentation available
 
-*   [autoClose](../.././fs/promises/~/CreateWriteStreamOptions#property_autoclose)
-*   [emitClose](../.././fs/promises/~/CreateWriteStreamOptions#property_emitclose)
-*   [encoding](../.././fs/promises/~/CreateWriteStreamOptions#property_encoding)
-*   [flush](../.././fs/promises/~/CreateWriteStreamOptions#property_flush)
-*   [highWaterMark](../.././fs/promises/~/CreateWriteStreamOptions#property_highwatermark)
-*   [start](../.././fs/promises/~/CreateWriteStreamOptions#property_start)
+-   [autoClose](../.././fs/promises/~/CreateWriteStreamOptions#property_autoclose)
+-   [emitClose](../.././fs/promises/~/CreateWriteStreamOptions#property_emitclose)
+-   [encoding](../.././fs/promises/~/CreateWriteStreamOptions#property_encoding)
+-   [flush](../.././fs/promises/~/CreateWriteStreamOptions#property_flush)
+-   [highWaterMark](../.././fs/promises/~/CreateWriteStreamOptions#property_highwatermark)
+-   [start](../.././fs/promises/~/CreateWriteStreamOptions#property_start)
 
 I
 
@@ -242,8 +239,8 @@ I
 
 No documentation available
 
-*   [eventType](../.././fs/promises/~/FileChangeInfo#property_eventtype)
-*   [filename](../.././fs/promises/~/FileChangeInfo#property_filename)
+-   [eventType](../.././fs/promises/~/FileChangeInfo#property_eventtype)
+-   [filename](../.././fs/promises/~/FileChangeInfo#property_filename)
 
 I
 
@@ -251,26 +248,26 @@ I
 
 No documentation available
 
-*   [appendFile](../.././fs/promises/~/FileHandle#method_appendfile_0)
-*   [chmod](../.././fs/promises/~/FileHandle#method_chmod_0)
-*   [chown](../.././fs/promises/~/FileHandle#method_chown_0)
-*   [close](../.././fs/promises/~/FileHandle#method_close_0)
-*   [createReadStream](../.././fs/promises/~/FileHandle#method_createreadstream_0)
-*   [createWriteStream](../.././fs/promises/~/FileHandle#method_createwritestream_0)
-*   [datasync](../.././fs/promises/~/FileHandle#method_datasync_0)
-*   [fd](../.././fs/promises/~/FileHandle#property_fd)
-*   [read](../.././fs/promises/~/FileHandle#method_read_0)
-*   [readFile](../.././fs/promises/~/FileHandle#method_readfile_0)
-*   [readLines](../.././fs/promises/~/FileHandle#method_readlines_0)
-*   [readableWebStream](../.././fs/promises/~/FileHandle#method_readablewebstream_0)
-*   [readv](../.././fs/promises/~/FileHandle#method_readv_0)
-*   [stat](../.././fs/promises/~/FileHandle#method_stat_0)
-*   [sync](../.././fs/promises/~/FileHandle#method_sync_0)
-*   [truncate](../.././fs/promises/~/FileHandle#method_truncate_0)
-*   [utimes](../.././fs/promises/~/FileHandle#method_utimes_0)
-*   [write](../.././fs/promises/~/FileHandle#method_write_0)
-*   [writeFile](../.././fs/promises/~/FileHandle#method_writefile_0)
-*   [writev](../.././fs/promises/~/FileHandle#method_writev_0)
+-   [appendFile](../.././fs/promises/~/FileHandle#method_appendfile_0)
+-   [chmod](../.././fs/promises/~/FileHandle#method_chmod_0)
+-   [chown](../.././fs/promises/~/FileHandle#method_chown_0)
+-   [close](../.././fs/promises/~/FileHandle#method_close_0)
+-   [createReadStream](../.././fs/promises/~/FileHandle#method_createreadstream_0)
+-   [createWriteStream](../.././fs/promises/~/FileHandle#method_createwritestream_0)
+-   [datasync](../.././fs/promises/~/FileHandle#method_datasync_0)
+-   [fd](../.././fs/promises/~/FileHandle#property_fd)
+-   [read](../.././fs/promises/~/FileHandle#method_read_0)
+-   [readFile](../.././fs/promises/~/FileHandle#method_readfile_0)
+-   [readLines](../.././fs/promises/~/FileHandle#method_readlines_0)
+-   [readableWebStream](../.././fs/promises/~/FileHandle#method_readablewebstream_0)
+-   [readv](../.././fs/promises/~/FileHandle#method_readv_0)
+-   [stat](../.././fs/promises/~/FileHandle#method_stat_0)
+-   [sync](../.././fs/promises/~/FileHandle#method_sync_0)
+-   [truncate](../.././fs/promises/~/FileHandle#method_truncate_0)
+-   [utimes](../.././fs/promises/~/FileHandle#method_utimes_0)
+-   [write](../.././fs/promises/~/FileHandle#method_write_0)
+-   [writeFile](../.././fs/promises/~/FileHandle#method_writefile_0)
+-   [writev](../.././fs/promises/~/FileHandle#method_writev_0)
 
 I
 
@@ -278,10 +275,10 @@ I
 
 No documentation available
 
-*   [buffer](../.././fs/promises/~/FileReadOptions#property_buffer)
-*   [length](../.././fs/promises/~/FileReadOptions#property_length)
-*   [offset](../.././fs/promises/~/FileReadOptions#property_offset)
-*   [position](../.././fs/promises/~/FileReadOptions#property_position)
+-   [buffer](../.././fs/promises/~/FileReadOptions#property_buffer)
+-   [length](../.././fs/promises/~/FileReadOptions#property_length)
+-   [offset](../.././fs/promises/~/FileReadOptions#property_offset)
+-   [position](../.././fs/promises/~/FileReadOptions#property_position)
 
 I
 
@@ -289,8 +286,8 @@ I
 
 No documentation available
 
-*   [buffer](../.././fs/promises/~/FileReadResult#property_buffer)
-*   [bytesRead](../.././fs/promises/~/FileReadResult#property_bytesread)
+-   [buffer](../.././fs/promises/~/FileReadResult#property_buffer)
+-   [bytesRead](../.././fs/promises/~/FileReadResult#property_bytesread)
 
 I
 
@@ -298,8 +295,8 @@ I
 
 No documentation available
 
-*   [flag](../.././fs/promises/~/FlagAndOpenMode#property_flag)
-*   [mode](../.././fs/promises/~/FlagAndOpenMode#property_mode)
+-   [flag](../.././fs/promises/~/FlagAndOpenMode#property_flag)
+-   [mode](../.././fs/promises/~/FlagAndOpenMode#property_mode)
 
 I
 
@@ -307,9 +304,7 @@ I
 
 No documentation available
 
-*   [type](../.././fs/promises/~/ReadableWebStreamOptions#property_type)
-
-### Variables [#](#Variables)
+-   [type](../.././fs/promises/~/ReadableWebStreamOptions#property_type)
 
 v
 

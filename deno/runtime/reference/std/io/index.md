@@ -5,15 +5,16 @@ canonical_url: "https://docs.deno.com/runtime/reference/std/io/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:03:28.455Z"
-content_hash: "d5c303865920c1c7764695ca25212c6e6ea45076b195a85b7d5c0526c4740609"
+last_crawled_at: "2026-04-27T17:44:10.341Z"
+content_hash: "5b6c2caa07a3f827cc84d16395c0ef2c7fbebad64f9f72bb1af87b24ac1681d6"
 menu_path: ["@std/io"]
 section_path: []
+content_language: "en"
 ---
-On this page
+**On this page**
 
-*   [Overview](#overview)
-    *   [Add to your project](#add-to-your-project)
+-   [Overview](#overview)
+    -   [Add to your project](#add-to-your-project)
 
 Unstable
 

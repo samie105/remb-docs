@@ -5,17 +5,15 @@ canonical_url: "https://www.postgresql.org/docs/current/amcheck.html"
 docset: "postgres"
 kind: "database"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:47:35.817Z"
-content_hash: "51bc1c0d67627dc566b98b70eac808009de8fdfde063130daf6a63d20ad2d13b"
+last_crawled_at: "2026-04-27T20:48:12.102Z"
+content_hash: "86cfe8566f46e73b32137696ac65d9e6fdc335a1f8f11ff2712964cb150fa011"
 menu_path: ["PostgreSQL: Documentation: 18: F.1. amcheck — tools to verify table and index consistency"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/index.md", "title": "PostgreSQL 18.3 Documentation"}
-nav_next: {"path": "postgres/docs/current/app-dropdb.html/index.md", "title": "PostgreSQL: Documentation: 18: dropdb"}
+content_language: "en"
 ---
-
 The `amcheck` module provides functions that allow you to verify the logical consistency of the structure of relations.
 
-The B-Tree checking functions verify various _invariants_ in the structure of the representation of particular relations. The correctness of the access method functions behind index scans and other important operations relies on these invariants always holding. For example, certain functions verify, among other things, that all B-Tree pages have items in “logical” order (e.g., for B-Tree indexes on `text`, index tuples should be in collated lexical order). If that particular invariant somehow fails to hold, we can expect binary searches on the affected page to incorrectly guide index scans, resulting in wrong answers to SQL queries. If the structure appears to be valid, no error is raised. While these checking functions are run, the [search\_path](postgres/docs/current/runtime-config-client.html/index.md#GUC-SEARCH-PATH) is temporarily changed to `pg_catalog, pg_temp`.
+The B-Tree checking functions verify various _invariants_ in the structure of the representation of particular relations. The correctness of the access method functions behind index scans and other important operations relies on these invariants always holding. For example, certain functions verify, among other things, that all B-Tree pages have items in “logical” order (e.g., for B-Tree indexes on `text`, index tuples should be in collated lexical order). If that particular invariant somehow fails to hold, we can expect binary searches on the affected page to incorrectly guide index scans, resulting in wrong answers to SQL queries. If the structure appears to be valid, no error is raised. While these checking functions are run, the [search\_path](https://www.postgresql.org/docs/current/runtime-config-client.html#GUC-SEARCH-PATH) is temporarily changed to `pg_catalog, pg_temp`.
 
 Verification is performed using the same procedures as those used by index scans themselves, which may be user-defined operator class code. For example, B-Tree index verification relies on comparisons made with one or more B-Tree support function 1 routines. See [Section 36.16.3](https://www.postgresql.org/docs/current/xindex.html#XINDEX-SUPPORT "36.16.3. Index Method Support Routines") for details of operator class support functions.
 
@@ -149,25 +147,25 @@ The summarizing structure is bound in size by `maintenance_work_mem`. In order t
 
 `amcheck` can be effective at detecting various types of failure modes that [data checksums](https://www.postgresql.org/docs/current/app-initdb.html#APP-INITDB-DATA-CHECKSUMS) will fail to catch. These include:
 
-*   Structural inconsistencies caused by incorrect operator class implementations.
+-   Structural inconsistencies caused by incorrect operator class implementations.
     
     This includes issues caused by the comparison rules of operating system collations changing. Comparisons of datums of a collatable type like `text` must be immutable (just as all comparisons used for B-Tree index scans must be immutable), which implies that operating system collation rules must never change. Though rare, updates to operating system collation rules can cause these issues. More commonly, an inconsistency in the collation order between a primary server and a standby server is implicated, possibly because the _major_ operating system version in use is inconsistent. Such inconsistencies will generally only arise on standby servers, and so can generally only be detected on standby servers.
     
     If a problem like this arises, it may not affect each individual index that is ordered using an affected collation, simply because _indexed_ values might happen to have the same absolute ordering regardless of the behavioral inconsistency. See [Section 23.1](https://www.postgresql.org/docs/current/locale.html "23.1. Locale Support") and [Section 23.2](https://www.postgresql.org/docs/current/collation.html "23.2. Collation Support") for further details about how PostgreSQL uses operating system locales and collations.
     
-*   Structural inconsistencies between indexes and the heap relations that are indexed (when _`heapallindexed`_ verification is performed).
+-   Structural inconsistencies between indexes and the heap relations that are indexed (when _`heapallindexed`_ verification is performed).
     
     There is no cross-checking of indexes against their heap relation during normal operation. Symptoms of heap corruption can be subtle.
     
-*   Corruption caused by hypothetical undiscovered bugs in the underlying PostgreSQL access method code, sort code, or transaction management code.
+-   Corruption caused by hypothetical undiscovered bugs in the underlying PostgreSQL access method code, sort code, or transaction management code.
     
     Automatic verification of the structural integrity of indexes plays a role in the general testing of new or proposed PostgreSQL features that could plausibly allow a logical inconsistency to be introduced. Verification of table structure and associated visibility and transaction status information plays a similar role. One obvious testing strategy is to call `amcheck` functions continuously when running the standard regression tests. See [Section 31.1](https://www.postgresql.org/docs/current/regress-run.html "31.1. Running the Tests") for details on running the tests.
     
-*   File system or storage subsystem faults when data checksums are disabled.
+-   File system or storage subsystem faults when data checksums are disabled.
     
     Note that `amcheck` examines a page as represented in some shared memory buffer at the time of verification if there is only a shared buffer hit when accessing the block. Consequently, `amcheck` does not necessarily examine data read from the file system at the time of verification. Note that when checksums are enabled, `amcheck` may raise an error due to a checksum failure when a corrupt block is read into a buffer.
     
-*   Corruption caused by faulty RAM, or the broader memory subsystem.
+-   Corruption caused by faulty RAM, or the broader memory subsystem.
     
     PostgreSQL does not protect against correctable memory errors and it is assumed you will operate using RAM that uses industry standard Error Correcting Codes (ECC) or better protection. However, ECC memory is typically only immune to single-bit errors, and should not be assumed to provide _absolute_ protection against failures that result in memory corruption.
     

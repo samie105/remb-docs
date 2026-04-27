@@ -5,20 +5,21 @@ canonical_url: "https://docs.deno.com/runtime/reference/lint_plugins/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:58:50.751Z"
-content_hash: "7eeee70a272e803fbe067f3b36caa908e5f47847b08e23ce145756910ff34856"
+last_crawled_at: "2026-04-27T17:37:10.250Z"
+content_hash: "640a17cd83dda2336d226ab2385f38d6e46525f57c07d1668430aa3dfa8b7b50"
 menu_path: ["Lint Plugins"]
 section_path: []
+content_language: "en"
 ---
-On this page
+**On this page**
 
-*   [Example plugin](#example-plugin)
-*   [Using selectors to match nodes](#using-selectors-to-match-nodes)
-*   [Applying fixes](#applying-fixes)
-*   [Running cleanup code](#running-cleanup-code)
-*   [Excluding custom rules](#excluding-custom-rules)
-*   [Ignoring custom lint reports](#ignoring-custom-lint-reports)
-*   [Testing plugins](#testing-plugins)
+-   [Example plugin](#example-plugin)
+-   [Using selectors to match nodes](#using-selectors-to-match-nodes)
+-   [Applying fixes](#applying-fixes)
+-   [Running cleanup code](#running-cleanup-code)
+-   [Excluding custom rules](#excluding-custom-rules)
+-   [Ignoring custom lint reports](#ignoring-custom-lint-reports)
+-   [Testing plugins](#testing-plugins)
 
 Caution
 
@@ -127,73 +128,24 @@ export default plugin;
 
 Note, that we can always refine our match further in JavaScript if the matching logic is too complex to be expressed as a selector alone. The full list of the supported syntax for selectors is:
 
-Syntax
-
-Description
-
-`Foo + Foo`
-
-Next sibling selector
-
-`Foo > Bar`
-
-Child combinator
-
-`Foo ~ Bar`
-
-Subsequent sibling combinator
-
-`Foo Bar`
-
-Descendant combinator
-
-`Foo[attr]`
-
-Attribute existence
-
-`Foo[attr.length < 2]`
-
-Attribute value comparison
-
-`Foo[attr=/(foo|bar)*/]`
-
-Attribute value regex check
-
-`:first-child`
-
-First child pseudo-class
-
-`:last-child`
-
-Last child pseudo-class
-
-`:nth-child(2n + 1)`
-
-Nth-child pseudo-class
-
-`:not(> Bar)`
-
-Not pseudo-class
-
-`:is(> Bar)`
-
-Is pseudo-class
-
-`:where(> Bar)`
-
-Where pseudo-class (same as `:is()`)
-
-`:matches(> Bar)`
-
-Matches pseudo-class (same as `:is()`)
-
-`:has(> Bar)`
-
-Has pseudo-class
-
-`IfStatement.test`
-
-Field selector `.<field>`
+| Syntax | Description |
+| --- | --- |
+| `Foo + Foo` | Next sibling selector |
+| `Foo > Bar` | Child combinator |
+| `Foo ~ Bar` | Subsequent sibling combinator |
+| `Foo Bar` | Descendant combinator |
+| `Foo[attr]` | Attribute existence |
+| `Foo[attr.length < 2]` | Attribute value comparison |
+| `Foo[attr=/(foo|bar)*/]` | Attribute value regex check |
+| `:first-child` | First child pseudo-class |
+| `:last-child` | Last child pseudo-class |
+| `:nth-child(2n + 1)` | Nth-child pseudo-class |
+| `:not(> Bar)` | Not pseudo-class |
+| `:is(> Bar)` | Is pseudo-class |
+| `:where(> Bar)` | Where pseudo-class (same as `:is()`) |
+| `:matches(> Bar)` | Matches pseudo-class (same as `:is()`) |
+| `:has(> Bar)` | Has pseudo-class |
+| `IfStatement.test` | Field selector `.<field>` |
 
 There is also the `:exit` pseudo that is only valid at the end of the whole selector. When it's present, Deno will call the function while going **up** the tree instead of when going down.
 
@@ -219,14 +171,14 @@ context.report({
 
 The `fixer` object has the following methods:
 
-*   `insertTextAfter(node, text)`: Insert text after the given node.
-*   `insertTextAfterRange(range, text)`: Insert text after the given range.
-*   `insertTextBefore(node, text)`: Insert text before the given node.
-*   `insertTextBeforeRange(range, text)`: Insert text before the given range.
-*   `remove(node)`: Remove the given node.
-*   `removeRange(range)`: Remove text in the given range.
-*   `replaceText(node, text)`: Replace the text in the given node.
-*   `replaceTextRange(range, text)`: Replace the text in the given range.
+-   `insertTextAfter(node, text)`: Insert text after the given node.
+-   `insertTextAfterRange(range, text)`: Insert text after the given range.
+-   `insertTextBefore(node, text)`: Insert text before the given node.
+-   `insertTextBeforeRange(range, text)`: Insert text before the given range.
+-   `remove(node)`: Remove the given node.
+-   `removeRange(range)`: Remove text in the given range.
+-   `replaceText(node, text)`: Replace the text in the given node.
+-   `replaceTextRange(range, text)`: Replace the text in the given range.
 
 The `fix()` method can also return an array of fixes or yield multiple fixes if it's a generator function.
 

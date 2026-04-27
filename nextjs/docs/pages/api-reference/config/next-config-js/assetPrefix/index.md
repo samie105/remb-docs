@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/pages/api-reference/config/next-config-j
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:20:17.145Z"
-content_hash: "036905fbb0aa07d25499fd8df05758e221c709ab3b0f28f71f5c163a61ea881d"
+last_crawled_at: "2026-04-27T18:19:43.805Z"
+content_hash: "87f0e2de5a7f1a2c031a916e8aff1a01d9bb4fe4e4b7e041f637d76c2b73bf54"
 menu_path: ["assetPrefix"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/pages/api-reference/config/next-config-js/allowedDevOrigins/index.md", "title": "allowedDevOrigins"}
-nav_next: {"path": "nextjs/docs/pages/api-reference/config/next-config-js/basePath/index.md", "title": "basePath"}
+version: "latest"
+content_language: "en"
 ---
+[Configuration](/docs/pages/api-reference/config)[next.config.js Options](/docs/pages/api-reference/config/next-config-js)assetPrefix
 
 # assetPrefix
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 > **Attention**: [Deploying to Vercel](/docs/pages/getting-started/deploying) automatically configures a global CDN for your Next.js project. You do not need to manually setup an Asset Prefix.
 
@@ -61,12 +62,8 @@ The exact configuration for uploading your files to a given CDN will depend on y
 
 While `assetPrefix` covers requests to `_next/static`, it does not influence the following paths:
 
-*   Files in the [public](/docs/pages/api-reference/file-conventions/public-folder) folder; if you want to serve those assets over a CDN, you'll have to introduce the prefix yourself
-*   `/_next/data/` requests for `getServerSideProps` pages. These requests will always be made against the main domain since they're not static.
-*   `/_next/data/` requests for `getStaticProps` pages. These requests will always be made against the main domain to support [Incremental Static Generation](/docs/pages/guides/incremental-static-regeneration), even if you're not using it (for consistency).
+-   Files in the [public](/docs/pages/api-reference/file-conventions/public-folder) folder; if you want to serve those assets over a CDN, you'll have to introduce the prefix yourself
+-   `/_next/data/` requests for `getServerSideProps` pages. These requests will always be made against the main domain since they're not static.
+-   `/_next/data/` requests for `getStaticProps` pages. These requests will always be made against the main domain to support [Incremental Static Generation](/docs/pages/guides/incremental-static-regeneration), even if you're not using it (for consistency).
 
 Was this helpful?
-
-supported.
-
-Send

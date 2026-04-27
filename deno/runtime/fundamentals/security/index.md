@@ -5,27 +5,28 @@ canonical_url: "https://docs.deno.com/runtime/fundamentals/security/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:47:53.953Z"
-content_hash: "4068c62c7dd4e1987cc91d8d0124df794896a0233e282913d0b3a7405bb580c0"
+last_crawled_at: "2026-04-27T17:21:46.845Z"
+content_hash: "6496b415b1db7ed10897d3dc77d4868c97047f02c1c29b75c252bbbc9eff03ad"
 menu_path: ["Security and permissions"]
 section_path: []
+content_language: "en"
 ---
-On this page
+**On this page**
 
-*   [Key Principles](#key-principles)
-*   [Permissions](#permissions)
-    *   [Configuration file](#configuration-file)
-    *   [File system access](#file-system-access)
-        *   [Symbolic links](#symbolic-links)
-    *   [Network access](#network-access)
-    *   [Environment variables](#environment-variables)
-    *   [System Information](#system-information)
-    *   [Subprocesses](#subprocesses)
-    *   [FFI (Foreign Function Interface)](#ffi-\(foreign-function-interface\))
-    *   [Importing from the Web](#importing-from-the-web)
-*   [Evaluation of code](#evaluation-of-code)
-*   [Executing untrusted code](#executing-untrusted-code)
-*   [Permission broker](#permission-broker)
+-   [Key Principles](#key-principles)
+-   [Permissions](#permissions)
+    -   [Configuration file](#configuration-file)
+    -   [File system access](#file-system-access)
+        -   [Symbolic links](#symbolic-links)
+    -   [Network access](#network-access)
+    -   [Environment variables](#environment-variables)
+    -   [System Information](#system-information)
+    -   [Subprocesses](#subprocesses)
+    -   [FFI (Foreign Function Interface)](#ffi-\(foreign-function-interface\))
+    -   [Importing from the Web](#importing-from-the-web)
+-   [Evaluation of code](#evaluation-of-code)
+-   [Executing untrusted code](#executing-untrusted-code)
+-   [Permission broker](#permission-broker)
 
 Deno is secure by default. Unless you specifically enable it, a program run with Deno has no access to sensitive APIs, such as file system access, network connectivity, or environment access. You must explicitly grant access to these resources with command line flags or with a runtime permission prompt. This is a major difference from Node, where dependencies are automatically granted full access to all system I/O, potentially introducing hidden vulnerabilities into your project.
 
@@ -35,12 +36,12 @@ Before using Deno to run completely untrusted code, read the [section on executi
 
 Before diving into the specifics of permissions, it's important to understand the key principles of Deno's security model:
 
-*   **No access to I/O by default**: Code executing in a Deno runtime has no access to read or write arbitrary files on the file system, to make network requests or open network listeners, to access environment variables, or to spawn subprocesses.
-*   **No limits on the execution of code at the same privilege level**: Deno allows the execution of any code (JS/TS/Wasm) via multiple means, including `eval`, `new Function`, dynamic imports and web workers at the same privilege level with little restriction as to where the code originates (network, npm, JSR, etc).
-*   **Multiple invocations of the same application can share data**: Deno provides a mechanism for multiple invocations of the same application to share data, through built in caching and KV storage APIs. Different applications can not see each other's data.
-*   **All code executing on the same thread shares the same privilege level**: All code executing on the same thread shares the same privilege level. It is not possible for different modules to have different privilege levels within the same thread.
-*   **Code can not escalate its privileges without user consent**: Code executing in a Deno runtime can not escalate its privileges without the user agreeing explicitly to an escalation via interactive prompt or a invocation time flag.
-*   **The initial static module graph can import local files without restrictions**: All files that are imported in the initial static module graph can be imported without restrictions, so even if an explicit read permission is not granted for that file. This does not apply to any dynamic module imports.
+-   **No access to I/O by default**: Code executing in a Deno runtime has no access to read or write arbitrary files on the file system, to make network requests or open network listeners, to access environment variables, or to spawn subprocesses.
+-   **No limits on the execution of code at the same privilege level**: Deno allows the execution of any code (JS/TS/Wasm) via multiple means, including `eval`, `new Function`, dynamic imports and web workers at the same privilege level with little restriction as to where the code originates (network, npm, JSR, etc).
+-   **Multiple invocations of the same application can share data**: Deno provides a mechanism for multiple invocations of the same application to share data, through built in caching and KV storage APIs. Different applications can not see each other's data.
+-   **All code executing on the same thread shares the same privilege level**: All code executing on the same thread shares the same privilege level. It is not possible for different modules to have different privilege levels within the same thread.
+-   **Code can not escalate its privileges without user consent**: Code executing in a Deno runtime can not escalate its privileges without the user agreeing explicitly to an escalation via interactive prompt or a invocation time flag.
+-   **The initial static module graph can import local files without restrictions**: All files that are imported in the initial static module graph can be imported without restrictions, so even if an explicit read permission is not granted for that file. This does not apply to any dynamic module imports.
 
 These key principles are designed to provide an environment where a user can execute code with minimal risk of harm to the host machine or network. The security model is designed to be simple to understand and to provide a clear separation of concerns between the runtime and the code executing within it. The security model is enforced by the Deno runtime, and is not dependent on the underlying operating system.
 
@@ -69,10 +70,10 @@ By default, Deno will not generate a stack trace for permission requests as it c
 
 Deno can also generate an audit log of all accessed permissions; this can be achieved using the `DENO_AUDIT_PERMISSIONS` environment variable to a path. This works regardless if permissions are allowed or not. The output is in JSONL format, where each line is an object with the following keys:
 
-*   `v`: the version of the format
-*   `datetime`: when the permission was accessed, in RFC 3339 format
-*   `permission`: the name of the permission
-*   `value`: the value that the permission was accessed with, or `null` if it was accessed with no value
+-   `v`: the version of the format
+-   `datetime`: when the permission was accessed, in RFC 3339 format
+-   `permission`: the name of the permission
+-   `value`: the value that the permission was accessed with, or `null` if it was accessed with no value
 
 A schema for this can be found in [permission-audit.v1.json](https://github.com/denoland/deno/blob/main/cli/schemas/permission-audit.v1.json).
 
@@ -148,18 +149,18 @@ deno run --deny-write script.ts
 
 Some APIs in Deno are implemented using file system operations under the hood, even though they do not provide direct read/write access to specific files. These APIs read and write to disk but do not require any explicit read/write permissions. Some examples of these APIs are:
 
-*   `localStorage`
-*   Deno KV
-*   `caches`
-*   `Blob`
+-   `localStorage`
+-   Deno KV
+-   `caches`
+-   `Blob`
 
 Because these APIs are implemented using file system operations, users can use them to consume file system resources like storage space, even if they do not have direct access to the file system.
 
 During module loading, Deno can load files from disk. This sometimes requires explicit permissions, and sometimes is allowed by default:
 
-*   All files that are imported from the entrypoint module in a way that they can be statically analyzed are allowed to be read by default. This includes static `import` statements and dynamic `import()` calls where the argument is a string literal that points to a specific file or a directory of files. The full list of files that are in this list can be printed using `deno info <entrypoint>`.
-*   Files that are dynamically imported in a way that can not be statically analyzed require runtime read permissions.
-*   Files inside of a `node_modules/` directory are allowed to be read by default.
+-   All files that are imported from the entrypoint module in a way that they can be statically analyzed are allowed to be read by default. This includes static `import` statements and dynamic `import()` calls where the argument is a string literal that points to a specific file or a directory of files. The full list of files that are in this list can be printed using `deno info <entrypoint>`.
+-   Files that are dynamically imported in a way that can not be statically analyzed require runtime read permissions.
+-   Files inside of a `node_modules/` directory are allowed to be read by default.
 
 When fetching modules from the network, or when transpiling code from TypeScript to JavaScript, Deno uses the file system as a cache. This means that file system resources like storage space can be consumed by Deno even if the user has not explicitly granted read/write permissions.
 
@@ -169,9 +170,9 @@ When reading or writing through a symbolic link, Deno checks permissions based o
 
 However, Deno prevents privilege escalation through symlinks. If a symlink resolves to a sensitive system path, additional permissions are required:
 
-*   **`/proc`, `/dev`, `/sys` (Linux)**: Reading or writing through symlinks that resolve to these paths requires `--allow-all`, as these paths can expose sensitive system information.
-*   **`/proc/**/environ`**: Requires `--allow-env` since it exposes environment variables.
-*   **`/dev/null`, `/dev/zero`, `/dev/random`, `/dev/urandom`**: These safe device files are always accessible without additional permissions.
+-   **`/proc`, `/dev`, `/sys` (Linux)**: Reading or writing through symlinks that resolve to these paths requires `--allow-all`, as these paths can expose sensitive system information.
+-   **`/proc/**/environ`**: Requires `--allow-env` since it exposes environment variables.
+-   **`/dev/null`, `/dev/zero`, `/dev/random`, `/dev/urandom`**: These safe device files are always accessible without additional permissions.
 
 Creating symlinks with [`Deno.symlink()`](/api/deno/~/Deno.symlink) requires both `--allow-read` and `--allow-write` with full access (not path-specific), because symlinks can point to arbitrary locations.
 
@@ -226,11 +227,11 @@ deno run --deny-net script.ts
 
 During module loading, Deno can load modules from the network. By default Deno allows loading modules from the following locations using both static and dynamic imports, without requiring explicit network access:
 
-*   `https://deno.land/`
-*   `https://jsr.io/`
-*   `https://esm.sh/`
-*   `https://raw.githubusercontent.com`
-*   `https://gist.githubusercontent.com`
+-   `https://deno.land/`
+-   `https://jsr.io/`
+-   `https://esm.sh/`
+-   `https://raw.githubusercontent.com`
+-   `https://gist.githubusercontent.com`
 
 These locations are trusted "public good" registries that are not expected to enable data exfiltration through URL paths. You can add more trusted registries using the `--allow-import` flag.
 
@@ -407,12 +408,12 @@ $ deno run --allow-import=example.com main.ts
 
 By default Deno allows importing sources from following hosts:
 
-*   `deno.land`
-*   `esm.sh`
-*   `jsr.io`
-*   `cdn.jsdelivr.net`
-*   `raw.githubusercontent.com`
-*   `gist.githubusercontent.com`
+-   `deno.land`
+-   `esm.sh`
+-   `jsr.io`
+-   `cdn.jsdelivr.net`
+-   `raw.githubusercontent.com`
+-   `gist.githubusercontent.com`
 
 Imports are only allowed using HTTPS.
 
@@ -437,29 +438,29 @@ This code can be hosted on the network, be in a local file (if read permissions 
 
 While Deno provides security features that are designed to protect the host machine and network from harm, untrusted code is still scary. When executing untrusted code, it is important to have more than one layer of defense. Some suggestions for executing untrusted code are outlined below, and we recommend using all of these when executing arbitrary untrusted code:
 
-*   Run `deno` with limited permissions and determine upfront what code actually needs to run (and prevent more code being loaded using `--frozen` lockfile and `--cached-only`).
-*   Use OS provided sandboxing mechanisms like `chroot`, `cgroups`, `seccomp`, etc.
-*   Use a sandboxed environment like a VM or MicroVM (gVisor, Firecracker, etc).
+-   Run `deno` with limited permissions and determine upfront what code actually needs to run (and prevent more code being loaded using `--frozen` lockfile and `--cached-only`).
+-   Use OS provided sandboxing mechanisms like `chroot`, `cgroups`, `seccomp`, etc.
+-   Use a sandboxed environment like a VM or MicroVM (gVisor, Firecracker, etc).
 
 ## Permission broker
 
 For centralized and policy-driven permission decisions, Deno can delegate all permission checks to an external broker process. Enable this by setting the `DENO_PERMISSION_BROKER_PATH` environment variable to a path that Deno will use to connect to the broker:
 
-*   On Unix-like systems: a Unix domain socket path (for example, `/tmp/deno-perm.sock`).
-*   On Windows: a named pipe (for example, `\\.\pipe\deno-perm-broker`).
+-   On Unix-like systems: a Unix domain socket path (for example, `/tmp/deno-perm.sock`).
+-   On Windows: a named pipe (for example, `\\.\pipe\deno-perm-broker`).
 
 When a permission broker is active:
 
-*   All `--allow-*` and `--deny-*` flags are ignored.
-*   Interactive permission prompts are not shown (equivalent to non-interactive mode).
-*   Every permission check is sent to the broker; the broker must reply with a decision for each request.
+-   All `--allow-*` and `--deny-*` flags are ignored.
+-   Interactive permission prompts are not shown (equivalent to non-interactive mode).
+-   Every permission check is sent to the broker; the broker must reply with a decision for each request.
 
 If anything goes wrong during brokering (for example: Deno cannot connect to the socket/pipe, messages are malformed, arrive out of order, IDs do not match, or the connection closes unexpectedly), Deno immediately terminates the process to preserve integrity and prevent permission escalation.
 
 The request/response message shapes are versioned and defined by JSON Schemas:
 
-*   Request schema: [permission-broker-request.v1.json](https://github.com/denoland/deno/blob/main/cli/schemas/permission-broker-request.v1.json)
-*   Response schema: [permission-broker-response.v1.json](https://github.com/denoland/deno/blob/main/cli/schemas/permission-broker-response.v1.json)
+-   Request schema: [permission-broker-request.v1.json](https://github.com/denoland/deno/blob/main/cli/schemas/permission-broker-request.v1.json)
+-   Response schema: [permission-broker-response.v1.json](https://github.com/denoland/deno/blob/main/cli/schemas/permission-broker-response.v1.json)
 
 Each request contains a version (`v`), the Deno process ID (`pid`), a unique monotonic request `id`, a timestamp (`datetime`, RFC 3339), the `permission` name, and an optional `value` depending on permission type. The response must echo the `id` and include a `result` of either `"allow"` or `"deny"`. When denied, a human-readable `reason` may be included.
 

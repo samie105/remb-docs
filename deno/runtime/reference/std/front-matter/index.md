@@ -5,15 +5,16 @@ canonical_url: "https://docs.deno.com/runtime/reference/std/front-matter/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:02:23.662Z"
-content_hash: "86fa21a4ba5a7928e50f11d25959d2f425a0c5adeb826d6331911655db325d73"
+last_crawled_at: "2026-04-27T17:42:34.507Z"
+content_hash: "3fdcd0be48dc4e2c79f13e709c1dd86c6e35339a224344740150bd40881dd86b"
 menu_path: ["@std/front-matter"]
 section_path: []
+content_language: "en"
 ---
-On this page
+**On this page**
 
-*   [Overview](#overview)
-    *   [Add to your project](#add-to-your-project)
+-   [Overview](#overview)
+    -   [Add to your project](#add-to-your-project)
 
 ## Overview
 

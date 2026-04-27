@@ -5,31 +5,32 @@ canonical_url: "https://docs.deno.com/runtime/reference/docker/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:57:51.535Z"
-content_hash: "2ddfd6f93cc49527aab85c85b8d39b6b78a9c71ce89fb922edfd2e5391987e4a"
+last_crawled_at: "2026-04-27T17:36:04.737Z"
+content_hash: "a3a4fef144e306cc1c5062b55518e03ebf4e7db15572546bd992743706572ef2"
 menu_path: ["Deno and Docker"]
 section_path: []
+content_language: "en"
 ---
-On this page
+**On this page**
 
-*   [Using Deno with Docker](#using-deno-with-docker)
-    *   [Best Practices](#best-practices)
-        *   [Use Multi-stage Builds](#use-multi-stage-builds)
-        *   [Permission Flags](#permission-flags)
-        *   [Development Container](#development-container)
-    *   [Common Issues and Solutions](#common-issues-and-solutions)
-    *   [Example .dockerignore](#example-.dockerignore)
-    *   [Available Docker Tags](#available-docker-tags)
-    *   [Environment Variables](#environment-variables)
-    *   [Running Tests in Docker](#running-tests-in-docker)
-    *   [Using Docker Compose](#using-docker-compose)
-    *   [Health Checks](#health-checks)
-    *   [Common Development Workflow](#common-development-workflow)
-    *   [Security Considerations](#security-considerations)
-*   [Working with Workspaces in Docker](#working-with-workspaces-in-docker)
-    *   [1\. Full Workspace Containerization](#1.-full-workspace-containerization)
-    *   [2\. Minimal Workspace Containerization](#2.-minimal-workspace-containerization)
-    *   [Best Practices](#best-practices-1)
+-   [Using Deno with Docker](#using-deno-with-docker)
+    -   [Best Practices](#best-practices)
+        -   [Use Multi-stage Builds](#use-multi-stage-builds)
+        -   [Permission Flags](#permission-flags)
+        -   [Development Container](#development-container)
+    -   [Common Issues and Solutions](#common-issues-and-solutions)
+    -   [Example .dockerignore](#example-.dockerignore)
+    -   [Available Docker Tags](#available-docker-tags)
+    -   [Environment Variables](#environment-variables)
+    -   [Running Tests in Docker](#running-tests-in-docker)
+    -   [Using Docker Compose](#using-docker-compose)
+    -   [Health Checks](#health-checks)
+    -   [Common Development Workflow](#common-development-workflow)
+    -   [Security Considerations](#security-considerations)
+-   [Working with Workspaces in Docker](#working-with-workspaces-in-docker)
+    -   [1\. Full Workspace Containerization](#1.-full-workspace-containerization)
+    -   [2\. Minimal Workspace Containerization](#2.-minimal-workspace-containerization)
+    -   [Best Practices](#best-practices-1)
 
 ## Using Deno with Docker
 
@@ -99,17 +100,17 @@ CMD ["deno", "run", "--watch", "--allow-net", "main.ts"]
 
 1.  **Permission Denied Errors**
     
-    *   Use `--allow-*` flags appropriately
-    *   Consider using `deno.json` permissions
+    -   Use `--allow-*` flags appropriately
+    -   Consider using `deno.json` permissions
 2.  **Large Image Sizes**
     
-    *   Use multi-stage builds
-    *   Include only necessary files
-    *   Add proper `.dockerignore`
+    -   Use multi-stage builds
+    -   Include only necessary files
+    -   Add proper `.dockerignore`
 3.  **Cache Invalidation**
     
-    *   Separate dependency caching
-    *   Use proper layer ordering
+    -   Separate dependency caching
+    -   Use proper layer ordering
 
 ### Example .dockerignore
 
@@ -127,11 +128,11 @@ node_modules/
 
 Deno provides several official tags:
 
-*   `denoland/deno:latest` - Latest stable release
-*   `denoland/deno:alpine` - Alpine-based smaller image
-*   `denoland/deno:distroless` - Google's distroless-based image
-*   `denoland/deno:ubuntu` - Ubuntu-based image
-*   `denoland/deno:1.x` - Specific version tags
+-   `denoland/deno:latest` - Latest stable release
+-   `denoland/deno:alpine` - Alpine-based smaller image
+-   `denoland/deno:distroless` - Google's distroless-based image
+-   `denoland/deno:ubuntu` - Ubuntu-based image
+-   `denoland/deno:1.x` - Specific version tags
 
 ### Environment Variables
 
@@ -201,7 +202,7 @@ docker run -it --rm \
 
 ### Security Considerations
 
-*   Run as non-root user:
+-   Run as non-root user:
 
 ```dockerfile
 # Create deno user
@@ -214,13 +215,13 @@ USER deno
 # Continue with rest of Dockerfile
 ```
 
-*   Use minimal permissions:
+-   Use minimal permissions:
 
 ```dockerfile
 CMD ["deno", "run", "--allow-net=api.example.com", "--allow-read=/app", "main.ts"]
 ```
 
-*   Consider using `--deny-*` flags for additional security
+-   Consider using `--deny-*` flags for additional security
 
 ## Working with Workspaces in Docker
 
@@ -330,9 +331,9 @@ rm -rf tmp-build-context
 
 ### Best Practices
 
-*   Always include the root `deno.json` file
-*   Maintain the same directory structure as development
-*   Document workspace dependencies clearly
-*   Use build scripts to manage context
-*   Include only required workspace members
-*   Update `.dockerignore` when dependencies change
+-   Always include the root `deno.json` file
+-   Maintain the same directory structure as development
+-   Document workspace dependencies clearly
+-   Use build scripts to manage context
+-   Include only required workspace members
+-   Update `.dockerignore` when dependencies change

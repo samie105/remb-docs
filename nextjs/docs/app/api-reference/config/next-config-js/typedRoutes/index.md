@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/app/api-reference/config/next-config-js/
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:08:57.062Z"
-content_hash: "1dd68f3500b9e4864686ff676ece02d56945ffa1aad6de302ec7cc58c560034e"
+last_crawled_at: "2026-04-27T18:07:44.734Z"
+content_hash: "823e2b4af552a369335987b364b1404ef231319faa4eb4fb6ed22dcc3009fb60"
 menu_path: ["typedRoutes"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/api-reference/config/next-config-js/turbopackIgnoreIssue/index.md", "title": "turbopack.ignoreIssue"}
-nav_next: {"path": "nextjs/docs/app/api-reference/config/next-config-js/typescript/index.md", "title": "typescript"}
+version: "latest"
+content_language: "en"
 ---
+[Configuration](/docs/app/api-reference/config)[next.config.js](/docs/app/api-reference/config/next-config-js)typedRoutes
 
 # typedRoutes
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 > **Note**: This option has been marked as stable, so you should use `typedRoutes` instead of `experimental.typedRoutes`.
 
@@ -32,20 +33,4 @@ const nextConfig = {
 module.exports = nextConfig
 ```
 
-[Previous
-
-turbopack.ignoreIssue
-
-](/docs/app/api-reference/config/next-config-js/turbopackIgnoreIssue)
-
-[Next
-
-typescript
-
-](/docs/app/api-reference/config/next-config-js/typescript)
-
 Was this helpful?
-
-supported.
-
-Send

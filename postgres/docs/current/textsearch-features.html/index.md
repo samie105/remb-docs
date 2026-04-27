@@ -5,14 +5,12 @@ canonical_url: "https://www.postgresql.org/docs/current/textsearch-features.html
 docset: "postgres"
 kind: "database"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:33:45.948Z"
-content_hash: "4f33367f188670336be987505a93401ce80cf50c183e6a028207ded679140e8e"
+last_crawled_at: "2026-04-27T20:42:56.736Z"
+content_hash: "23b291cfe366ed291baaf65719d95ade2d87139bbf66880baaf6543d98a6145e"
 menu_path: ["PostgreSQL: Documentation: 18: 12.4. Additional Features"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/textsearch-debugging.html/index.md", "title": "PostgreSQL: Documentation: 18: 12.8.\u00a0Testing and Debugging Text Search"}
-nav_next: {"path": "postgres/docs/current/textsearch-limitations.html/index.md", "title": "PostgreSQL: Documentation: 18: 12.11.\u00a0Limitations"}
+content_language: "en"
 ---
-
 This section describes additional functions and operators that are useful in connection with text search.
 
 ### 12.4.1. Manipulating Documents [#](#TEXTSEARCH-MANIPULATE-TSVECTOR)
@@ -225,11 +223,11 @@ ts\_stat(_`sqlquery`_ `text`, \[ _`weights`_ `text`, \]
 
 _`sqlquery`_ is a text value containing an SQL query which must return a single `tsvector` column. `ts_stat` executes the query and returns statistics about each distinct lexeme (word) contained in the `tsvector` data. The columns returned are
 
-*   _`word`_ `text` — the value of a lexeme
+-   _`word`_ `text` — the value of a lexeme
     
-*   _`ndoc`_ `integer` — number of documents (`tsvector`s) the word occurred in
+-   _`ndoc`_ `integer` — number of documents (`tsvector`s) the word occurred in
     
-*   _`nentry`_ `integer` — total number of occurrences of the word
+-   _`nentry`_ `integer` — total number of occurrences of the word
     
 
 If _`weights`_ is supplied, only occurrences having one of those weights are counted.

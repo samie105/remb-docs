@@ -5,23 +5,22 @@ canonical_url: "https://nextjs.org/docs/app/api-reference/file-conventions/route
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:10:44.467Z"
-content_hash: "2fc498a96b9d809d48a020359c94c6d9523bda0ecff0f0c3464c0b80a5792a9f"
+last_crawled_at: "2026-04-27T18:09:27.256Z"
+content_hash: "d635b58cc5d0fd966e868e5031925b4409a00b082f80af438197e415ac25ff92"
 menu_path: ["route.js"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/api-reference/file-conventions/public-folder/index.md", "title": "public Folder"}
-nav_next: {"path": "nextjs/docs/app/api-reference/file-conventions/route-segment-config/dynamicParams/index.md", "title": "dynamicParams"}
+version: "latest"
+content_language: "en"
 ---
+[API Reference](/docs/app/api-reference)[File-system conventions](/docs/app/api-reference/file-conventions)route.js
 
 # route.js
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 Route Handlers allow you to create custom request handlers for a given route using the Web [Request](https://developer.mozilla.org/docs/Web/API/Request) and [Response](https://developer.mozilla.org/docs/Web/API/Response) APIs.
 
 route.ts
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -38,8 +37,6 @@ export async function GET() {
 A **route** file allows you to create custom request handlers for a given route. The following [HTTP methods](https://developer.mozilla.org/docs/Web/HTTP/Methods) are supported: `GET`, `POST`, `PUT`, `PATCH`, `DELETE`, `HEAD`, and `OPTIONS`.
 
 route.ts
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -68,8 +65,6 @@ The `request` object is a [NextRequest](/docs/app/api-reference/functions/next-r
 
 route.ts
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -82,11 +77,9 @@ export async function GET(request: NextRequest) {
 
 #### `context` (optional)[](#context-optional)
 
-*   **`params`**: a promise that resolves to an object containing the [dynamic route parameters](/docs/app/api-reference/file-conventions/dynamic-routes) for the current route.
+-   **`params`**: a promise that resolves to an object containing the [dynamic route parameters](/docs/app/api-reference/file-conventions/dynamic-routes) for the current route.
 
 app/dashboard/\[team\]/route.ts
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -99,29 +92,11 @@ export async function GET(
 }
 ```
 
-Example
-
-URL
-
-`params`
-
-`app/dashboard/[team]/route.js`
-
-`/dashboard/1`
-
-`Promise<{ team: '1' }>`
-
-`app/shop/[tag]/[item]/route.js`
-
-`/shop/1/2`
-
-`Promise<{ tag: '1', item: '2' }>`
-
-`app/blog/[...slug]/route.js`
-
-`/blog/1/2`
-
-`Promise<{ slug: ['1', '2'] }>`
+| Example | URL | `params` |
+| --- | --- | --- |
+| `app/dashboard/[team]/route.js` | `/dashboard/1` | `Promise<{ team: '1' }>` |
+| `app/shop/[tag]/[item]/route.js` | `/shop/1/2` | `Promise<{ tag: '1', item: '2' }>` |
+| `app/blog/[...slug]/route.js` | `/blog/1/2` | `Promise<{ slug: ['1', '2'] }>` |
 
 ### Route Context Helper[](#route-context-helper)
 
@@ -140,8 +115,8 @@ export async function GET(_req: NextRequest, ctx: RouteContext<'/users/[id]'>) {
 
 > **Good to know**
 > 
-> *   Types are generated during `next dev`, `next build` or `next typegen`.
-> *   After type generation, the `RouteContext` helper is globally available. It doesn't need to be imported.
+> -   Types are generated during `next dev`, `next build` or `next typegen`.
+> -   After type generation, the `RouteContext` helper is globally available. It doesn't need to be imported.
 
 ## Examples[](#examples)
 
@@ -150,8 +125,6 @@ export async function GET(_req: NextRequest, ctx: RouteContext<'/users/[id]'>) {
 You can read or set cookies with [`cookies`](/docs/app/api-reference/functions/cookies) from `next/headers`.
 
 route.ts
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -170,8 +143,6 @@ export async function GET(request: NextRequest) {
 Alternatively, you can return a new `Response` using the [`Set-Cookie`](https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie) header.
 
 app/api/route.ts
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -193,8 +164,6 @@ You can also use the underlying Web APIs to read cookies from the request ([`Nex
 
 app/api/route.ts
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -211,8 +180,6 @@ You can read headers with [`headers`](/docs/app/api-reference/functions/headers)
 
 route.ts
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -228,8 +195,6 @@ export async function GET(request: NextRequest) {
 This `headers` instance is read-only. To set headers, you need to return a new `Response` with new `headers`.
 
 app/api/route.ts
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -251,8 +216,6 @@ You can also use the underlying Web APIs to read headers from the request ([`Nex
 
 app/api/route.ts
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -268,8 +231,6 @@ export async function GET(request: NextRequest) {
 You can [revalidate cached data](/docs/app/guides/incremental-static-regeneration) using the `revalidate` route segment config option.
 
 app/posts/route.ts
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -288,8 +249,6 @@ export async function GET() {
 
 app/api/route.ts
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -306,8 +265,6 @@ Route Handlers can use [Dynamic Segments](/docs/app/api-reference/file-conventio
 
 app/items/\[slug\]/route.ts
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -319,29 +276,11 @@ export async function GET(
 }
 ```
 
-Route
-
-Example URL
-
-`params`
-
-`app/items/[slug]/route.js`
-
-`/items/a`
-
-`Promise<{ slug: 'a' }>`
-
-`app/items/[slug]/route.js`
-
-`/items/b`
-
-`Promise<{ slug: 'b' }>`
-
-`app/items/[slug]/route.js`
-
-`/items/c`
-
-`Promise<{ slug: 'c' }>`
+| Route | Example URL | `params` |
+| --- | --- | --- |
+| `app/items/[slug]/route.js` | `/items/a` | `Promise<{ slug: 'a' }>` |
+| `app/items/[slug]/route.js` | `/items/b` | `Promise<{ slug: 'b' }>` |
+| `app/items/[slug]/route.js` | `/items/c` | `Promise<{ slug: 'c' }>` |
 
 #### Static Generation with `generateStaticParams`[](#static-generation-with-generatestaticparams)
 
@@ -356,8 +295,6 @@ See the [generateStaticParams with Route Handlers](/docs/app/api-reference/funct
 The request object passed to the Route Handler is a `NextRequest` instance, which includes [some additional convenience methods](/docs/app/api-reference/functions/next-request#nexturl), such as those for more easily handling query parameters.
 
 app/api/search/route.ts
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -376,8 +313,6 @@ export function GET(request: NextRequest) {
 Streaming is commonly used in combination with Large Language Models (LLMs), such as OpenAI, for AI-generated content. Learn more about the [AI SDK](https://sdk.vercel.ai/docs/introduction).
 
 app/api/chat/route.ts
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -399,8 +334,6 @@ export async function POST(req: Request) {
 These abstractions use the Web APIs to create a stream. You can also use the underlying Web APIs directly.
 
 app/api/route.ts
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -450,8 +383,6 @@ You can read the `Request` body using the standard Web API methods:
 
 app/items/route.ts
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -466,8 +397,6 @@ export async function POST(request: Request) {
 You can read the `FormData` using the `request.formData()` function:
 
 app/items/route.ts
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -488,8 +417,6 @@ You can set CORS headers for a specific Route Handler using the standard Web API
 
 app/api/route.ts
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -507,15 +434,13 @@ export async function GET(request: Request) {
 
 > **Good to know**:
 > 
-> *   To add CORS headers to multiple Route Handlers, you can use [Proxy](/docs/app/api-reference/file-conventions/proxy#cors) or the [`next.config.js` file](/docs/app/api-reference/config/next-config-js/headers#cors).
+> -   To add CORS headers to multiple Route Handlers, you can use [Proxy](/docs/app/api-reference/file-conventions/proxy#cors) or the [`next.config.js` file](/docs/app/api-reference/config/next-config-js/headers#cors).
 
 ### Webhooks[](#webhooks)
 
 You can use a Route Handler to receive webhooks from third-party services:
 
 app/api/route.ts
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -543,8 +468,6 @@ Notably, unlike API Routes with the Pages Router, you do not need to use `bodyPa
 You can use Route Handlers to return non-UI content. Note that [`sitemap.xml`](/docs/app/api-reference/file-conventions/metadata/sitemap#generating-a-sitemap-using-code-js-ts), [`robots.txt`](/docs/app/api-reference/file-conventions/metadata/robots#generate-a-robots-file), [`app icons`](/docs/app/api-reference/file-conventions/metadata/app-icons#generate-icons-using-code-js-ts-tsx), and [open graph images](/docs/app/api-reference/file-conventions/metadata/opengraph-image) all have built-in support.
 
 app/rss.xml/route.ts
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -576,8 +499,6 @@ Route Handlers use the same [route segment configuration](/docs/app/api-referenc
 
 app/items/route.ts
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -593,36 +514,10 @@ See the [API reference](/docs/app/api-reference/file-conventions/route-segment-c
 
 ## Version History[](#version-history)
 
-Version
-
-Changes
-
-`v15.0.0-RC`
-
-`context.params` is now a promise. A [codemod](/docs/app/guides/upgrading/codemods#150) is available
-
-`v15.0.0-RC`
-
-The default caching for `GET` handlers was changed from static to dynamic
-
-`v13.2.0`
-
-Route Handlers are introduced.
-
-[Previous
-
-public
-
-](/docs/app/api-reference/file-conventions/public-folder)
-
-[Next
-
-Route Groups
-
-](/docs/app/api-reference/file-conventions/route-groups)
+| Version | Changes |
+| --- | --- |
+| `v15.0.0-RC` | `context.params` is now a promise. A [codemod](/docs/app/guides/upgrading/codemods#150) is available |
+| `v15.0.0-RC` | The default caching for `GET` handlers was changed from static to dynamic |
+| `v13.2.0` | Route Handlers are introduced. |
 
 Was this helpful?
-
-supported.
-
-Send

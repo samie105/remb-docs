@@ -5,40 +5,41 @@ canonical_url: "https://docs.deno.com/api/deno"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:08:23.396Z"
-content_hash: "73b1d3156b64f46de07c08cab763d3d1162f47427a697cf8b49c678b32d258a0"
+last_crawled_at: "2026-04-27T17:51:24.334Z"
+content_hash: "81f2c82a17705954922fc1cbd0a10a16f15f78308e6f434ee2d616ff0b6be2ec"
 menu_path: ["Deno Namespace APIs"]
 section_path: []
+content_language: "en"
 ---
-On this page
+**On this page**
 
-*   [API Documentation](#api-documentation)
-*   [File System](#file-system)
-*   [Network](#network)
-*   [Subprocesses](#subprocesses)
-*   [Errors](#errors)
-*   [HTTP Server](#http-server)
-*   [Permissions](#permissions)
-    *   [Permission descriptors](#permission-descriptors)
-    *   [Query permissions](#query-permissions)
-    *   [Permission states](#permission-states)
-    *   [Permission strength](#permission-strength)
-    *   [Request permissions](#request-permissions)
-    *   [Revoke permissions](#revoke-permissions)
-*   [import.meta](#import.meta)
-    *   [import.meta.url](#import.meta.url)
-    *   [import.meta.main](#import.meta.main)
-    *   [import.meta.filename](#import.meta.filename)
-    *   [import.meta.dirname](#import.meta.dirname)
-    *   [import.meta.resolve](#import.meta.resolve)
-*   [FFI](#ffi)
-    *   [Non-blocking FFI](#non-blocking-ffi)
-    *   [Callbacks](#callbacks)
-    *   [Supported types](#supported-types)
-    *   [deno\_bindgen](#deno_bindgen)
-*   [Program Lifecycle](#program-lifecycle)
-*   [main.ts](#main.ts)
-    *   [beforeunload](#beforeunload)
+-   [API Documentation](#api-documentation)
+-   [File System](#file-system)
+-   [Network](#network)
+-   [Subprocesses](#subprocesses)
+-   [Errors](#errors)
+-   [HTTP Server](#http-server)
+-   [Permissions](#permissions)
+    -   [Permission descriptors](#permission-descriptors)
+    -   [Query permissions](#query-permissions)
+    -   [Permission states](#permission-states)
+    -   [Permission strength](#permission-strength)
+    -   [Request permissions](#request-permissions)
+    -   [Revoke permissions](#revoke-permissions)
+-   [import.meta](#import.meta)
+    -   [import.meta.url](#import.meta.url)
+    -   [import.meta.main](#import.meta.main)
+    -   [import.meta.filename](#import.meta.filename)
+    -   [import.meta.dirname](#import.meta.dirname)
+    -   [import.meta.resolve](#import.meta.resolve)
+-   [FFI](#ffi)
+    -   [Non-blocking FFI](#non-blocking-ffi)
+    -   [Callbacks](#callbacks)
+    -   [Supported types](#supported-types)
+    -   [deno\_bindgen](#deno_bindgen)
+-   [Program Lifecycle](#program-lifecycle)
+-   [main.ts](#main.ts)
+    -   [beforeunload](#beforeunload)
 
 The global `Deno` namespace contains APIs that are not web standard, including APIs for reading from files, opening TCP sockets, serving HTTP, and executing subprocesses, etc.
 
@@ -54,9 +55,9 @@ The Deno runtime comes with [various functions for working with files and direct
 
 Refer to the links below for code examples of how to use the file system functions.
 
-*   [Reading files in streams](/examples/file_server_tutorial/)
-*   [Reading a text file (`Deno.readTextFile`)](/examples/reading_files/)
-*   [Writing a text file (`Deno.writeTextFile`)](/examples/writing_files/)
+-   [Reading files in streams](/examples/file_server_tutorial/)
+-   [Reading a text file (`Deno.readTextFile`)](/examples/reading_files/)
+-   [Writing a text file (`Deno.writeTextFile`)](/examples/writing_files/)
 
 ## Network
 
@@ -64,16 +65,16 @@ The Deno runtime comes with [built-in functions for dealing with connections to 
 
 Refer to the links below for code examples for common functions.
 
-*   [Connect to the hostname and port (`Deno.connect`)](/api/deno/~/Deno.connect)
-*   [Announcing on the local transport address (`Deno.listen`)](/api/deno/~/Deno.listen)
+-   [Connect to the hostname and port (`Deno.connect`)](/api/deno/~/Deno.connect)
+-   [Announcing on the local transport address (`Deno.listen`)](/api/deno/~/Deno.listen)
 
 For practical examples of networking functionality:
 
-*   [HTTP Server: Hello world](/examples/http_server/)
-*   [HTTP Server: Routing](/examples/http_server_routing/)
-*   [TCP Echo Server](/examples/tcp_echo_server/)
-*   [WebSockets example](/examples/http_server_websocket/)
-*   [Build a chat app with WebSockets tutorial](/examples/chat_app_tutorial/)
+-   [HTTP Server: Hello world](/examples/http_server/)
+-   [HTTP Server: Routing](/examples/http_server_routing/)
+-   [TCP Echo Server](/examples/tcp_echo_server/)
+-   [WebSockets example](/examples/http_server_websocket/)
+-   [Build a chat app with WebSockets tutorial](/examples/chat_app_tutorial/)
 
 ## Subprocesses
 
@@ -81,8 +82,8 @@ The Deno runtime comes with [built-in functions for spinning up subprocesses](/a
 
 Refer to the links below for code samples of how to create a subprocess.
 
-*   [Creating a subprocess (`Deno.Command`)](/examples/subprocess_tutorial/)
-*   [Collecting output from subprocesses](/examples/subprocesses_output/)
+-   [Creating a subprocess (`Deno.Command`)](/examples/subprocess_tutorial/)
+-   [Collecting output from subprocesses](/examples/subprocesses_output/)
 
 ## Errors
 
@@ -116,8 +117,8 @@ try {
 
 Deno has two HTTP Server APIs:
 
-*   [`Deno.serve`](/api/deno/~/Deno.serve): native, _higher-level_, supports HTTP/1.1 and HTTP2, this is the preferred API to write HTTP servers in Deno.
-*   [`Deno.serveHttp`](/api/deno/~/Deno.serveHttp): native, _low-level_, supports HTTP/1.1 and HTTP2.
+-   [`Deno.serve`](/api/deno/~/Deno.serve): native, _higher-level_, supports HTTP/1.1 and HTTP2, this is the preferred API to write HTTP servers in Deno.
+-   [`Deno.serveHttp`](/api/deno/~/Deno.serveHttp): native, _low-level_, supports HTTP/1.1 and HTTP2.
 
 To start an HTTP server on a given port, use the `Deno.serve` function. This function takes a handler function that will be called for each incoming request, and is expected to return a response (or a promise resolving to a response). For example:
 
@@ -133,10 +134,10 @@ You can [read more about how to use the HTTP server APIs](/runtime/fundamentals/
 
 For practical examples of HTTP servers:
 
-*   [Simple file server tutorial](/examples/file_server_tutorial/)
-*   [HTTP server serving files](/examples/http_server_files/)
-*   [HTTP server with streaming](/examples/http_server_streaming/)
-*   [HTTP server WebSockets](/examples/http_server_websocket/)
+-   [Simple file server tutorial](/examples/file_server_tutorial/)
+-   [HTTP server serving files](/examples/http_server_files/)
+-   [HTTP server with streaming](/examples/http_server_streaming/)
+-   [HTTP server WebSockets](/examples/http_server_websocket/)
 
 ## Permissions
 
@@ -673,156 +674,32 @@ It is also possible for native libraries to setup interrupt handlers and to have
 
 Here's a list of types supported currently by the Deno FFI API.
 
-FFI Type
-
-Deno
-
-C
-
-Rust
-
-`i8`
-
-`number`
-
-`char` / `signed char`
-
-`i8`
-
-`u8`
-
-`number`
-
-`unsigned char`
-
-`u8`
-
-`i16`
-
-`number`
-
-`short int`
-
-`i16`
-
-`u16`
-
-`number`
-
-`unsigned short int`
-
-`u16`
-
-`i32`
-
-`number`
-
-`int` / `signed int`
-
-`i32`
-
-`u32`
-
-`number`
-
-`unsigned int`
-
-`u32`
-
-`i64`
-
-`bigint`
-
-`long long int`
-
-`i64`
-
-`u64`
-
-`bigint`
-
-`unsigned long long int`
-
-`u64`
-
-`usize`
-
-`bigint`
-
-`size_t`
-
-`usize`
-
-`isize`
-
-`bigint`
-
-`size_t`
-
-`isize`
-
-`f32`
-
-`number`
-
-`float`
-
-`f32`
-
-`f64`
-
-`number`
-
-`double`
-
-`f64`
-
-`void`\[1\]
-
-`undefined`
-
-`void`
-
-`()`
-
-`pointer`
-
-`{} | null`
-
-`void *`
-
-`*mut c_void`
-
-`buffer`\[2\]
-
-`TypedArray | null`
-
-`uint8_t *`
-
-`*mut u8`
-
-`function`\[3\]
-
-`{} | null`
-
-`void (*fun)()`
-
-`Option<extern "C" fn()>`
-
-`{ struct: [...] }`\[4\]
-
-`TypedArray`
-
-`struct MyStruct`
-
-`MyStruct`
+| FFI Type | Deno | C | Rust |
+| --- | --- | --- | --- |
+| `i8` | `number` | `char` / `signed char` | `i8` |
+| `u8` | `number` | `unsigned char` | `u8` |
+| `i16` | `number` | `short int` | `i16` |
+| `u16` | `number` | `unsigned short int` | `u16` |
+| `i32` | `number` | `int` / `signed int` | `i32` |
+| `u32` | `number` | `unsigned int` | `u32` |
+| `i64` | `bigint` | `long long int` | `i64` |
+| `u64` | `bigint` | `unsigned long long int` | `u64` |
+| `usize` | `bigint` | `size_t` | `usize` |
+| `isize` | `bigint` | `size_t` | `isize` |
+| `f32` | `number` | `float` | `f32` |
+| `f64` | `number` | `double` | `f64` |
+| `void`\[1\] | `undefined` | `void` | `()` |
+| `pointer` | `{} | null` | `void *` | `*mut c_void` |
+| `buffer`\[2\] | `TypedArray | null` | `uint8_t *` | `*mut u8` |
+| `function`\[3\] | `{} | null` | `void (*fun)()` | `Option<extern "C" fn()>` |
+| `{ struct: [...] }`\[4\] | `TypedArray` | `struct MyStruct` | `MyStruct` |
 
 As of Deno 1.25, the `pointer` type has been split into a `pointer` and a `buffer` type to ensure users take advantage of optimizations for Typed Arrays, and as of Deno 1.31 the JavaScript representation of `pointer` has become an opaque pointer object or `null` for null pointers.
 
-*   \[1\] `void` type can only be used as a result type.
-*   \[2\] `buffer` type accepts TypedArrays as parameter, but it always returns a pointer object or `null` when used as result type like the `pointer` type.
-*   \[3\] `function` type works exactly the same as the `pointer` type as a parameter and result type.
-*   \[4\] `struct` type is for passing and returning C structs by value (copy). The `struct` array must enumerate each of the struct's fields' type in order. The structs are padded automatically: Packed structs can be defined by using an appropriate amount of `u8` fields to avoid padding. Only TypedArrays are supported as structs, and structs are always returned as `Uint8Array`s.
+-   \[1\] `void` type can only be used as a result type.
+-   \[2\] `buffer` type accepts TypedArrays as parameter, but it always returns a pointer object or `null` when used as result type like the `pointer` type.
+-   \[3\] `function` type works exactly the same as the `pointer` type as a parameter and result type.
+-   \[4\] `struct` type is for passing and returning C structs by value (copy). The `struct` array must enumerate each of the struct's fields' type in order. The structs are padded automatically: Packed structs can be defined by using an appropriate amount of `u8` fields to avoid padding. Only TypedArrays are supported as structs, and structs are always returned as `Uint8Array`s.
 
 ### deno\_bindgen
 
@@ -862,20 +739,20 @@ Any issues related to `deno_bindgen` should be reported at [https://github.com/d
 
 Deno supports browser compatible lifecycle events:
 
-*   [`load`](https://developer.mozilla.org/en-US/docs/Web/API/Window/load_event#:~:text=The%20load%20event%20is%20fired,for%20resources%20to%20finish%20loading.): fired when the whole page has loaded, including all dependent resources such as stylesheets and images.
-*   [`beforeunload`](https://developer.mozilla.org/en-US/docs/Web/API/Window/beforeunload_event#:~:text=The%20beforeunload%20event%20is%20fired,want%20to%20leave%20the%20page.): fired when the event loop has no more work to do and is about to exit. Scheduling more asynchronous work (like timers or network requests) will cause the program to continue.
-*   [`unload`](https://developer.mozilla.org/en-US/docs/Web/API/Window/unload_event): fired when the program has no more work to do. Scheduling more asynchronous work (like timers or network requests) **does not** keep the program alive.
-*   [`unhandledrejection`](https://developer.mozilla.org/en-US/docs/Web/API/Window/unhandledrejection_event): fired when a promise that has no rejection handler is rejected, ie. a promise that has no `.catch()` handler or a second argument to `.then()`.
-*   [`rejectionhandled`](https://developer.mozilla.org/en-US/docs/Web/API/Window/rejectionhandled_event): fired when a `.catch()` handler is added to a promise that has already been rejected. This event is fired only if there's `unhandledrejection` listener installed that prevents propagation of the event (which would result in the program terminating with an error).
-*   [`error`](https://developer.mozilla.org/en-US/docs/Web/API/Window/error_event): fired when an uncaught exception occurs. If a listener is registered, it prevents the default behavior of printing the error to the console and terminating the program.
+-   [`load`](https://developer.mozilla.org/en-US/docs/Web/API/Window/load_event#:~:text=The%20load%20event%20is%20fired,for%20resources%20to%20finish%20loading.): fired when the whole page has loaded, including all dependent resources such as stylesheets and images.
+-   [`beforeunload`](https://developer.mozilla.org/en-US/docs/Web/API/Window/beforeunload_event#:~:text=The%20beforeunload%20event%20is%20fired,want%20to%20leave%20the%20page.): fired when the event loop has no more work to do and is about to exit. Scheduling more asynchronous work (like timers or network requests) will cause the program to continue.
+-   [`unload`](https://developer.mozilla.org/en-US/docs/Web/API/Window/unload_event): fired when the program has no more work to do. Scheduling more asynchronous work (like timers or network requests) **does not** keep the program alive.
+-   [`unhandledrejection`](https://developer.mozilla.org/en-US/docs/Web/API/Window/unhandledrejection_event): fired when a promise that has no rejection handler is rejected, ie. a promise that has no `.catch()` handler or a second argument to `.then()`.
+-   [`rejectionhandled`](https://developer.mozilla.org/en-US/docs/Web/API/Window/rejectionhandled_event): fired when a `.catch()` handler is added to a promise that has already been rejected. This event is fired only if there's `unhandledrejection` listener installed that prevents propagation of the event (which would result in the program terminating with an error).
+-   [`error`](https://developer.mozilla.org/en-US/docs/Web/API/Window/error_event): fired when an uncaught exception occurs. If a listener is registered, it prevents the default behavior of printing the error to the console and terminating the program.
 
 Deno also supports Node.js compatible lifecycle events:
 
-*   [`process.on("beforeExit")`](https://nodejs.org/api/process.html#event-beforeexit): fired when the event loop has no more work to do and is about to exit. Scheduling more asynchronous work (like timers or network requests) will cause the program to continue. Counterpart to `beforeunload` Web event. Fires immediately after `beforeunload` event.
-*   [`process.on("exit")`](https://nodejs.org/api/process.html#event-exit): fired when the program has no more work to do. Scheduling more asynchronous work (like timers or network requests) **does not** keep the program alive. Counterpart to `unload` Web event. Fired immediately after `unload` event.
-*   [`process.on("rejectionHandled")`](https://nodejs.org/api/process.html#event-rejectionhandled): fired when a `.catch()` handler is added to a promise that has already been rejected. Counterpart to `rejectionhandled` Web event. Fired immediately after `rejectionhandled` event.
-*   [`process.on("uncaughtException")`](https://nodejs.org/api/process.html#event-uncaughtexception): fired when an uncaught exception bubbles up. If a listener is registered, it prevents the default behavior of printing the stack trace and exiting. Counterpart to `error` Web event. Fired immediately after `error` event.
-*   [`process.on("unhandledRejection")`](https://nodejs.org/api/process.html#event-unhandledrejection): fired when a promise is rejected and no rejection handler is attached. Counterpart to `unhandledrejection` Web event. Fired immediately after `unhandledrejection` event.
+-   [`process.on("beforeExit")`](https://nodejs.org/api/process.html#event-beforeexit): fired when the event loop has no more work to do and is about to exit. Scheduling more asynchronous work (like timers or network requests) will cause the program to continue. Counterpart to `beforeunload` Web event. Fires immediately after `beforeunload` event.
+-   [`process.on("exit")`](https://nodejs.org/api/process.html#event-exit): fired when the program has no more work to do. Scheduling more asynchronous work (like timers or network requests) **does not** keep the program alive. Counterpart to `unload` Web event. Fired immediately after `unload` event.
+-   [`process.on("rejectionHandled")`](https://nodejs.org/api/process.html#event-rejectionhandled): fired when a `.catch()` handler is added to a promise that has already been rejected. Counterpart to `rejectionhandled` Web event. Fired immediately after `rejectionhandled` event.
+-   [`process.on("uncaughtException")`](https://nodejs.org/api/process.html#event-uncaughtexception): fired when an uncaught exception bubbles up. If a listener is registered, it prevents the default behavior of printing the stack trace and exiting. Counterpart to `error` Web event. Fired immediately after `error` event.
+-   [`process.on("unhandledRejection")`](https://nodejs.org/api/process.html#event-unhandledrejection): fired when a promise is rejected and no rejection handler is attached. Counterpart to `unhandledrejection` Web event. Fired immediately after `unhandledrejection` event.
 
 You can use these events to provide setup and cleanup code in your program.
 
@@ -941,8 +818,8 @@ console.log("log from imported script");
 
 A couple notes on this example:
 
-*   `addEventListener` and `onload`/`onunload` are prefixed with `globalThis`, but you could also use `self` or no prefix at all. [It is not recommended to use `window` as a prefix](https://docs.deno.com/lint/rules/no-window-prefix).
-*   You can use `addEventListener` and/or `onload`/`onunload` to define handlers for events. There is a major difference between them, let's run the example:
+-   `addEventListener` and `onload`/`onunload` are prefixed with `globalThis`, but you could also use `self` or no prefix at all. [It is not recommended to use `window` as a prefix](https://docs.deno.com/lint/rules/no-window-prefix).
+-   You can use `addEventListener` and/or `onload`/`onunload` to define handlers for events. There is a major difference between them, let's run the example:
 
 ```shell
 $ deno run main.ts

@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/app/getting-started/mutating-data"
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:13:31.433Z"
-content_hash: "8dd399f2abfb293e99d7ed7893d02d76485c7f93032f6cbab440f5459634af54"
+last_crawled_at: "2026-04-27T18:12:16.114Z"
+content_hash: "2c61e3a77f919d725dd250ccd1f5872050f7eda968fe613c616439b8a6a01aac"
 menu_path: ["Mutating Data"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/getting-started/fetching-data/index.md", "title": "Fetching Data"}
-nav_next: {"path": "nextjs/docs/app/getting-started/caching/index.md", "title": "Caching"}
+version: "latest"
+content_language: "en"
 ---
+[App Router](/docs/app)[Getting Started](/docs/app/getting-started)Mutating Data
 
 # Mutating Data
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 You can mutate data in Next.js using [React Server Functions](https://react.dev/reference/rsc/server-functions). This page will go through how you can [create](#creating-server-functions) and [invoke](#invoking-server-functions) Server Functions.
 
@@ -27,8 +28,8 @@ In an `action` or mutation context, they are also called **Server Actions**.
 
 By convention, a Server Action is an async function used with [`startTransition`](https://react.dev/reference/react/startTransition). This happens automatically when the function is:
 
-*   Passed to a `<form>` using the `action` prop.
-*   Passed to a `<button>` using the `formAction` prop.
+-   Passed to a `<form>` using the `action` prop.
+-   Passed to a `<button>` using the `formAction` prop.
 
 When an action is invoked, Next.js can return both the updated UI and new data in a single server roundtrip.
 
@@ -43,8 +44,6 @@ Server Functions are reachable via direct POST requests, not just through your a
 A Server Function can be defined by using the [`use server`](https://react.dev/reference/rsc/use-server) directive. You can place the directive at the top of an **asynchronous** function to mark the function as a Server Function, or at the top of a separate file to mark all exports of that file.
 
 app/lib/actions.ts
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -86,8 +85,6 @@ Server Functions can be inlined in Server Components by adding the `"use server"
 
 app/page.tsx
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -110,8 +107,6 @@ It's not possible to define Server Functions in Client Components. However, you 
 
 app/actions.ts
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -121,8 +116,6 @@ export async function createPost() {}
 ```
 
 app/ui/button.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -147,8 +140,6 @@ You can also pass an action to a Client Component as a prop:
 ```
 
 app/client-component.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -181,8 +172,6 @@ When invoked in a form, the function automatically receives the [`FormData`](htt
 
 app/ui/form.tsx
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -200,8 +189,6 @@ export function Form() {
 ```
 
 app/actions.ts
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -229,8 +216,6 @@ export async function createPost(formData: FormData) {
 You can invoke a Server Function in a Client Component by using event handlers such as `onClick`.
 
 app/like-button.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -267,8 +252,6 @@ While executing a Server Function, you can show a loading indicator with React's
 
 app/ui/button.tsx
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -294,8 +277,6 @@ export function Button() {
 After a mutation, you may want to refresh the current page to show the latest data. You can do this by calling [`refresh`](/docs/app/api-reference/functions/refresh) from `next/cache` in a Server Action:
 
 app/lib/actions.ts
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -325,8 +306,6 @@ After performing a mutation, you can revalidate the Next.js cache and show the u
 
 app/lib/actions.ts
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -351,8 +330,6 @@ export async function createPost(formData: FormData) {
 You may want to redirect the user to a different page after a mutation. You can do this by calling [`redirect`](/docs/app/api-reference/functions/redirect) within the Server Function.
 
 app/lib/actions.ts
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -388,8 +365,6 @@ When you [set or delete](/docs/app/api-reference/functions/cookies#understanding
 
 app/actions.ts
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -416,8 +391,6 @@ export async function exampleAction() {
 You can use the React [`useEffect`](https://react.dev/reference/react/useEffect) hook to invoke a Server Action when the component mounts or a dependency changes. This is useful for mutations that depend on global events or need to be triggered automatically. For example, `onKeyDown` for app shortcuts, an intersection observer hook for infinite scrolling, or when the component mounts to update a view count:
 
 app/view-count.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -467,20 +440,4 @@ API Reference for the redirect function.
 
 ](/docs/app/api-reference/functions/redirect)
 
-[Previous
-
-Fetching Data
-
-](/docs/app/getting-started/fetching-data)
-
-[Next
-
-Caching
-
-](/docs/app/getting-started/caching)
-
 Was this helpful?
-
-supported.
-
-Send

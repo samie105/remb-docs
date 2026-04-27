@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/pages/api-reference/config/next-config-j
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:20:32.321Z"
-content_hash: "16de2d3b58c44fed6d5e5a5199db246ed3052c01d3779d3e456d925fdb5b10a5"
+last_crawled_at: "2026-04-27T18:19:57.985Z"
+content_hash: "bb2bf508c8d050e1b36e5a3623b5eb6e8c3c78c995fded9a2ecc1bc678519031"
 menu_path: ["devIndicators"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/pages/api-reference/config/next-config-js/deploymentId/index.md", "title": "deploymentId"}
-nav_next: {"path": "nextjs/docs/pages/api-reference/config/next-config-js/distDir/index.md", "title": "distDir"}
+version: "latest"
+content_language: "en"
 ---
+[Configuration](/docs/pages/api-reference/config)[next.config.js Options](/docs/pages/api-reference/config/next-config-js)devIndicators
 
 # devIndicators
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 `devIndicators` allows you to configure the on-screen indicator that gives context about the current route you're viewing during development.
 
@@ -55,24 +56,10 @@ When exporting [`getServerSideProps`](/docs/pages/building-your-application/data
 
 ## Version History[](#version-history)
 
-Version
-
-Changes
-
-`v16.0.0`
-
-`appIsrStatus`, `buildActivity`, and `buildActivityPosition` options have been removed.
-
-`v15.2.0`
-
-Improved on-screen indicator with new `position` option. `appIsrStatus`, `buildActivity`, and `buildActivityPosition` options have been deprecated.
-
-`v15.0.0`
-
-Static on-screen indicator added with `appIsrStatus` option.
+| Version | Changes |
+| --- | --- |
+| `v16.0.0` | `appIsrStatus`, `buildActivity`, and `buildActivityPosition` options have been removed. |
+| `v15.2.0` | Improved on-screen indicator with new `position` option. `appIsrStatus`, `buildActivity`, and `buildActivityPosition` options have been deprecated. |
+| `v15.0.0` | Static on-screen indicator added with `appIsrStatus` option. |
 
 Was this helpful?
-
-supported.
-
-Send

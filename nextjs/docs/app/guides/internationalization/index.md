@@ -5,26 +5,27 @@ canonical_url: "https://nextjs.org/docs/app/guides/internationalization"
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:14:53.711Z"
-content_hash: "a850f1c04ae4a3b25965b1506addb452f679f4626e1103423c30bbd0cdc9469b"
+last_crawled_at: "2026-04-27T18:13:46.140Z"
+content_hash: "31828aad6c40ce909e374a2fa7a9a9a318ba00ba0fb8a13ef21661c2571b5e9f"
 menu_path: ["Internationalization"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/guides/instrumentation/index.md", "title": "How to set up instrumentation"}
-nav_next: {"path": "nextjs/docs/app/guides/json-ld/index.md", "title": "How to implement JSON-LD in your Next.js application"}
+version: "latest"
+content_language: "en"
 ---
+[App Router](/docs/app)[Guides](/docs/app/guides)Internationalization
 
 # Internationalization
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 Next.js enables you to configure the routing and rendering of content to support multiple languages. Making your site adaptive to different locales includes translated content (localization) and internationalized routes.
 
 ## Terminology[](#terminology)
 
-*   **Locale:** An identifier for a set of language and formatting preferences. This usually includes the preferred language of the user and possibly their geographic region.
-    *   `en-US`: English as spoken in the United States
-    *   `nl-NL`: Dutch as spoken in the Netherlands
-    *   `nl`: Dutch, no specific region
+-   **Locale:** An identifier for a set of language and formatting preferences. This usually includes the preferred language of the user and possibly their geographic region.
+    -   `en-US`: English as spoken in the United States
+    -   `nl-NL`: Dutch as spoken in the Netherlands
+    -   `nl`: Dutch, no specific region
 
 ## Routing Overview[](#routing-overview)
 
@@ -89,8 +90,6 @@ Finally, ensure all special files inside `app/` are nested under `app/[lang]`. T
 
 app/\[lang\]/page.tsx
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -136,8 +135,6 @@ We can then create a `getDictionary` function to load the translations for the r
 
 app/\[lang\]/dictionaries.ts
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -161,8 +158,6 @@ Given the currently selected language, we can fetch the dictionary inside of a l
 Since `lang` is typed as `string`, using `hasLocale` narrows the type to your supported locales. It also ensures a 404 is returned if a translation is missing, rather than a runtime error.
 
 app/\[lang\]/page.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -188,8 +183,6 @@ To generate static routes for a given set of locales, we can use `generateStatic
 
 app/\[lang\]/layout.tsx
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -211,30 +204,14 @@ export default async function RootLayout({
 
 ## Resources[](#resources)
 
-*   [Minimal i18n routing and translations](https://github.com/vercel/next.js/tree/canary/examples/i18n-routing)
-*   [`next-intl`](https://next-intl.dev)
-*   [`next-international`](https://github.com/QuiiBz/next-international)
-*   [`next-i18n-router`](https://github.com/i18nexus/next-i18n-router)
-*   [`paraglide-next`](https://inlang.com/m/osslbuzt/paraglide-next-i18n)
-*   [`lingui`](https://lingui.dev)
-*   [`tolgee`](https://tolgee.io/apps-integrations/next)
-*   [`next-intlayer`](https://intlayer.org/doc/environment/nextjs)
-*   [`gt-next`](https://generaltranslation.com/en/docs/next)
-
-[Previous
-
-Instrumentation
-
-](/docs/app/guides/instrumentation)
-
-[Next
-
-JSON-LD
-
-](/docs/app/guides/json-ld)
+-   [Minimal i18n routing and translations](https://github.com/vercel/next.js/tree/canary/examples/i18n-routing)
+-   [`next-intl`](https://next-intl.dev)
+-   [`next-international`](https://github.com/QuiiBz/next-international)
+-   [`next-i18n-router`](https://github.com/i18nexus/next-i18n-router)
+-   [`paraglide-next`](https://inlang.com/m/osslbuzt/paraglide-next-i18n)
+-   [`lingui`](https://lingui.dev)
+-   [`tolgee`](https://tolgee.io/apps-integrations/next)
+-   [`next-intlayer`](https://intlayer.org/doc/environment/nextjs)
+-   [`gt-next`](https://generaltranslation.com/en/docs/next)
 
 Was this helpful?
-
-supported.
-
-Send

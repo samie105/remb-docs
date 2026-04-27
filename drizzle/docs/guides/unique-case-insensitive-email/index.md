@@ -5,14 +5,12 @@ canonical_url: "https://orm.drizzle.team/docs/guides/unique-case-insensitive-ema
 docset: "drizzle"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:07:29.864Z"
-content_hash: "48101bbe7a0c31897c40a9b1b08e6254d341a695dff912e30f2d0bd3b4715883"
+last_crawled_at: "2026-04-27T19:03:43.566Z"
+content_hash: "9f3ba33ff0bf4442c3f3d6fd4b18c4601b2321d8167cd94e860780150ebfbef2"
 menu_path: ["Drizzle ORM - Unique and Case-Insensitive Email Handling"]
 section_path: []
-nav_prev: {"path": "drizzle/docs/guides/toggling-a-boolean-field/index.md", "title": "Drizzle ORM - SQL Toggle value"}
-nav_next: {"path": "drizzle/docs/guides/update-many-with-different-value/index.md", "title": "Drizzle ORM - Update many with different values for each row"}
+content_language: "en"
 ---
-
 Drizzle | Unique and Case-Insensitive Email Handling
 
 ### PostgreSQL[](#postgresql)
@@ -21,11 +19,7 @@ To implement a unique and case-insensitive `email` handling in PostgreSQL with D
 
 Drizzle has simple and flexible API, which lets you easily create such an index using SQL-like syntax:
 
-schema.ts
-
-migration.sql
-
-```
+```ts
 import { SQL, sql } from 'drizzle-orm';
 import { AnyPgColumn, pgTable, serial, text, uniqueIndex } from 'drizzle-orm/pg-core';
 
@@ -48,7 +42,7 @@ export function lower(email: AnyPgColumn): SQL {
 }
 ```
 
-```
+```sql
 CREATE TABLE IF NOT EXISTS "users" (
   "id" serial PRIMARY KEY NOT NULL,
   "name" text NOT NULL,
@@ -60,7 +54,7 @@ CREATE UNIQUE INDEX IF NOT EXISTS "emailUniqueIndex" ON "users" USING btree (low
 
 This is how you can select user by `email` with `lower` function:
 
-```
+```ts
 import { eq } from 'drizzle-orm';
 import { lower, users } from './schema';
 
@@ -74,7 +68,7 @@ const findUserByEmail = async (email: string) => {
 };
 ```
 
-```
+```sql
 select * from "users" where lower(email) = 'john@email.com';
 ```
 
@@ -84,11 +78,7 @@ In MySQL, the default collation setting for string comparison is case-insensitiv
 
 Drizzle has simple and flexible API, which lets you easily create such an index using SQL-like syntax:
 
-schema.ts
-
-migration.sql
-
-```
+```ts
 import { SQL, sql } from 'drizzle-orm';
 import { AnyMySqlColumn, mysqlTable, serial, uniqueIndex, varchar } from 'drizzle-orm/mysql-core';
 
@@ -111,7 +101,7 @@ export function lower(email: AnyMySqlColumn): SQL {
 }
 ```
 
-```
+```sql
 CREATE TABLE `users` (
     `id` serial AUTO_INCREMENT NOT NULL,
     `name` varchar(255) NOT NULL,
@@ -127,7 +117,7 @@ Functional indexes are supported in MySQL starting from version `8.0.13`. For th
 
 This is how you can select user by `email` with `lower` function:
 
-```
+```ts
 import { eq } from 'drizzle-orm';
 import { lower, users } from './schema';
 
@@ -141,7 +131,7 @@ const findUserByEmail = async (email: string) => {
 };
 ```
 
-```
+```sql
 select * from `users` where lower(email) = 'john@email.com';
 ```
 
@@ -151,11 +141,7 @@ To implement a unique and case-insensitive `email` handling in SQLite with Drizz
 
 Drizzle has simple and flexible API, which lets you easily create such an index using SQL-like syntax:
 
-schema.ts
-
-migration.sql
-
-```
+```ts
 import { SQL, sql } from 'drizzle-orm';
 import { AnySQLiteColumn, integer, sqliteTable, text, uniqueIndex } from 'drizzle-orm/sqlite-core';
 
@@ -178,7 +164,7 @@ export function lower(email: AnySQLiteColumn): SQL {
 }
 ```
 
-```
+```sql
 CREATE TABLE `users` (
     `id` integer PRIMARY KEY NOT NULL,
     `name` text NOT NULL,
@@ -190,7 +176,7 @@ CREATE UNIQUE INDEX `emailUniqueIndex` ON `users` (lower(`email`));
 
 This is how you can select user by `email` with `lower` function:
 
-```
+```ts
 import { eq } from 'drizzle-orm';
 import { lower, users } from './schema';
 
@@ -204,6 +190,6 @@ const findUserByEmail = async (email: string) => {
 };
 ```
 
-```
+```sql
 select * from "users" where lower(email) = 'john@email.com';
 ```

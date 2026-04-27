@@ -5,29 +5,45 @@ canonical_url: "https://nextjs.org/docs/app/guides/testing/cypress"
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:16:34.484Z"
-content_hash: "fd52c48774024e0d9cab65e71015fd683f4609c90388704eab8e24779bf36bcf"
+last_crawled_at: "2026-04-27T18:15:54.109Z"
+content_hash: "aee7a65e30797d5f8a3893d51a13f1c91fd562ddc3747847404ec7fc30f94a0d"
 menu_path: ["How to set up Cypress with Next.js"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/guides/testing/index.md", "title": "Testing"}
-nav_next: {"path": "nextjs/docs/app/guides/testing/jest/index.md", "title": "How to set up Jest with Next.js"}
+version: "latest"
+tab_variants: ["pnpm","npm","yarn","bun","pnpm","npm","yarn","bun","pnpm","npm","yarn","bun"]
+content_language: "en"
 ---
+[Guides](/docs/app/guides)[Testing](/docs/app/guides/testing)Cypress
 
 # How to set up Cypress with Next.js
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 [Cypress](https://www.cypress.io/) is a test runner used for **End-to-End (E2E)** and **Component Testing**. This page will show you how to set up Cypress with Next.js and write your first tests.
 
 > **Warning:**
 > 
-> *   Cypress versions below 13.6.3 do not support [TypeScript version 5](https://github.com/cypress-io/cypress/issues/27731) with `moduleResolution:"bundler"`. However, this issue has been resolved in Cypress version 13.6.3 and later. [cypress v13.6.3](https://docs.cypress.io/guides/references/changelog#13-6-3)
+> -   Cypress versions below 13.6.3 do not support [TypeScript version 5](https://github.com/cypress-io/cypress/issues/27731) with `moduleResolution:"bundler"`. However, this issue has been resolved in Cypress version 13.6.3 and later. [cypress v13.6.3](https://docs.cypress.io/guides/references/changelog#13-6-3)
 
 ## Quickstart[](#quickstart)
 
 You can use `create-next-app` with the [with-cypress example](https://github.com/vercel/next.js/tree/canary/examples/with-cypress) to quickly get started.
 
-pnpmnpmyarnbun
+#### pnpm
+
+pnpm
+
+#### npm
+
+npm
+
+#### yarn
+
+yarn
+
+#### bun
+
+bun
 
 Terminal
 
@@ -39,7 +55,21 @@ pnpm create next-app --example with-cypress with-cypress-app
 
 To manually set up Cypress, install `cypress` as a dev dependency:
 
-pnpmnpmyarnbun
+#### pnpm
+
+pnpm
+
+#### npm
+
+npm
+
+#### yarn
+
+yarn
+
+#### bun
+
+bun
 
 Terminal
 
@@ -65,7 +95,21 @@ package.json
 
 Run Cypress for the first time to open the Cypress testing suite:
 
-pnpmnpmyarnbun
+#### pnpm
+
+pnpm
+
+#### npm
+
+npm
+
+#### yarn
+
+yarn
+
+#### bun
+
+bun
 
 Terminal
 
@@ -80,8 +124,6 @@ You can choose to configure **E2E Testing** and/or **Component Testing**. Select
 Ensure your `cypress.config` file has the following configuration:
 
 cypress.config.ts
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -157,8 +199,8 @@ Run `npm run build && npm run start` to build your Next.js application, then run
 
 > **Good to know:**
 > 
-> *   You can use `cy.visit("/")` instead of `cy.visit("http://localhost:3000/")` by adding `baseUrl: 'http://localhost:3000'` to the `cypress.config.js` configuration file.
-> *   Alternatively, you can install the [`start-server-and-test`](https://www.npmjs.com/package/start-server-and-test) package to run the Next.js production server in conjunction with Cypress. After installation, add `"test": "start-server-and-test start http://localhost:3000 cypress"` to your `package.json` scripts field. Remember to rebuild your application after new changes.
+> -   You can use `cy.visit("/")` instead of `cy.visit("http://localhost:3000/")` by adding `baseUrl: 'http://localhost:3000'` to the `cypress.config.js` configuration file.
+> -   Alternatively, you can install the [`start-server-and-test`](https://www.npmjs.com/package/start-server-and-test) package to run the Next.js production server in conjunction with Cypress. After installation, add `"test": "start-server-and-test start http://localhost:3000 cypress"` to your `package.json` scripts field. Remember to rebuild your application after new changes.
 
 ## Creating your first Cypress component test[](#creating-your-first-cypress-component-test)
 
@@ -169,8 +211,6 @@ Select **Component Testing** in the Cypress app, then select **Next.js** as your
 Ensure your `cypress.config` file has the following configuration:
 
 cypress.config.ts
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -211,8 +251,8 @@ describe('<Page />', () => {
 
 > **Good to know**:
 > 
-> *   Cypress currently doesn't support Component Testing for `async` Server Components. We recommend using E2E testing.
-> *   Since component tests do not require a Next.js server, features like `<Image />` that rely on a server being available may not function out-of-the-box.
+> -   Cypress currently doesn't support Component Testing for `async` Server Components. We recommend using E2E testing.
+> -   Since component tests do not require a Next.js server, features like `<Image />` that rely on a server being available may not function out-of-the-box.
 
 ### Running Component Tests[](#running-component-tests)
 
@@ -238,26 +278,10 @@ package.json
 
 You can learn more about Cypress and Continuous Integration from these resources:
 
-*   [Next.js with Cypress example](https://github.com/vercel/next.js/tree/canary/examples/with-cypress)
-*   [Cypress Continuous Integration Docs](https://docs.cypress.io/guides/continuous-integration/introduction)
-*   [Cypress GitHub Actions Guide](https://on.cypress.io/github-actions)
-*   [Official Cypress GitHub Action](https://github.com/cypress-io/github-action)
-*   [Cypress Discord](https://discord.com/invite/cypress)
-
-[Previous
-
-Testing
-
-](/docs/app/guides/testing)
-
-[Next
-
-Jest
-
-](/docs/app/guides/testing/jest)
+-   [Next.js with Cypress example](https://github.com/vercel/next.js/tree/canary/examples/with-cypress)
+-   [Cypress Continuous Integration Docs](https://docs.cypress.io/guides/continuous-integration/introduction)
+-   [Cypress GitHub Actions Guide](https://on.cypress.io/github-actions)
+-   [Official Cypress GitHub Action](https://github.com/cypress-io/github-action)
+-   [Cypress Discord](https://discord.com/invite/cypress)
 
 Was this helpful?
-
-supported.
-
-Send

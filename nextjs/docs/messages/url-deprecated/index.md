@@ -5,13 +5,14 @@ canonical_url: "https://nextjs.org/docs/messages/url-deprecated"
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:18:45.589Z"
-content_hash: "3beac465732a738cf232be0af873995b081bbb4bdc852edc0c25104c283309c7"
+last_crawled_at: "2026-04-27T18:18:08.729Z"
+content_hash: "79038a116dd5f99a38e61026d12e3fe213a911f026a032aef80b394e200d3f60"
 menu_path: ["`url` is deprecated"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/messages/sync-dynamic-apis/index.md", "title": "Dynamic APIs are Asynchronous"}
-nav_next: {"path": "nextjs/docs/messages/webpack5/index.md", "title": "Webpack 5 Adoption"}
+version: "latest"
+content_language: "en"
 ---
+[Docs](/docs)[Errors](/docs)\`url\` is deprecated
 
 # \`url\` is deprecated
 
@@ -50,7 +51,3 @@ We provide a codemod (a code to code transformation) to automatically change the
 You can find this codemod and instructions on how to run it here: [Use `withRouter`](/docs/pages/guides/upgrading/codemods#url-to-withrouter)
 
 Was this helpful?
-
-supported.
-
-Send

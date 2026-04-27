@@ -5,25 +5,25 @@ canonical_url: "https://nextjs.org/docs/app/guides/scripts"
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:16:13.798Z"
-content_hash: "d4f28e162a0e246f0434dcf2b9575fd382c6afb178b1161928f05442ea78fb5e"
+last_crawled_at: "2026-04-27T18:15:28.139Z"
+content_hash: "9a315f8bc537a8bbaa743cb2d451176af042895b3e2e25391442f206bfade9a2"
 menu_path: ["How to load and optimize scripts"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/guides/sass/index.md", "title": "How to use Sass"}
-nav_next: {"path": "nextjs/docs/app/guides/self-hosting/index.md", "title": "How to self-host your Next.js application"}
+version: "latest"
+tab_variants: ["pnpm","npm","yarn","bun"]
+content_language: "en"
 ---
+[App Router](/docs/app)[Guides](/docs/app/guides)Scripts
 
 # How to load and optimize scripts
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 ### Layout Scripts[](#layout-scripts)
 
 To load a third-party script for multiple routes, import `next/script` and include the script directly in your layout component:
 
 app/dashboard/layout.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -52,8 +52,6 @@ To load a third-party script for all routes, import `next/script` and include th
 
 app/layout.tsx
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -81,10 +79,10 @@ This script will load and execute when _any_ route in your application is access
 
 Although the default behavior of `next/script` allows you to load third-party scripts in any page or layout, you can fine-tune its loading behavior by using the `strategy` property:
 
-*   `beforeInteractive`: Load the script before any Next.js code and before any page hydration occurs.
-*   `afterInteractive`: (**default**) Load the script early but after some hydration on the page occurs.
-*   `lazyOnload`: Load the script later during browser idle time.
-*   `worker`: (experimental) Load the script in a web worker.
+-   `beforeInteractive`: Load the script before any Next.js code and before any page hydration occurs.
+-   `afterInteractive`: (**default**) Load the script early but after some hydration on the page occurs.
+-   `lazyOnload`: Load the script later during browser idle time.
+-   `worker`: (experimental) Load the script in a web worker.
 
 Refer to the [`next/script`](/docs/app/api-reference/components/script#strategy) API reference documentation to learn more about each strategy and their use cases.
 
@@ -108,7 +106,21 @@ module.exports = {
 
 Then, run the development server and Next.js will guide you through the installation of the required packages to finish the setup:
 
-pnpmnpmyarnbun
+#### pnpm
+
+pnpm
+
+#### npm
+
+npm
+
+#### yarn
+
+yarn
+
+#### bun
+
+bun
 
 Terminal
 
@@ -121,8 +133,6 @@ You'll see instructions like these: Please install Partytown by running `npm ins
 Once setup is complete, defining `strategy="worker"` will automatically instantiate Partytown in your application and offload the script to a web worker.
 
 pages/home.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -167,15 +177,13 @@ Or by using the `dangerouslySetInnerHTML` property:
 
 Event handlers can be used with the Script component to execute additional code after a certain event occurs:
 
-*   `onLoad`: Execute code after the script has finished loading.
-*   `onReady`: Execute code after the script has finished loading and every time the component is mounted.
-*   `onError`: Execute code if the script fails to load.
+-   `onLoad`: Execute code after the script has finished loading.
+-   `onReady`: Execute code after the script has finished loading and every time the component is mounted.
+-   `onError`: Execute code if the script fails to load.
 
 These handlers will only work when `next/script` is imported and used inside of a [Client Component](/docs/app/getting-started/server-and-client-components) where `"use client"` is defined as the first line of code:
 
 app/page.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -205,8 +213,6 @@ Refer to the [`next/script`](/docs/app/api-reference/components/script#onload) A
 There are many DOM attributes that can be assigned to a `<script>` element that are not used by the Script component, like [`nonce`](https://developer.mozilla.org/docs/Web/HTML/Global_attributes/nonce) or [custom data attributes](https://developer.mozilla.org/docs/Web/HTML/Global_attributes/data-*). Including any additional attributes will automatically forward it to the final, optimized `<script>` element that is included in the HTML.
 
 app/page.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -239,20 +245,4 @@ Optimize third-party scripts in your Next.js application using the built-in \`ne
 
 ](/docs/app/api-reference/components/script)
 
-[Previous
-
-Sass
-
-](/docs/app/guides/sass)
-
-[Next
-
-Self-Hosting
-
-](/docs/app/guides/self-hosting)
-
 Was this helpful?
-
-supported.
-
-Send

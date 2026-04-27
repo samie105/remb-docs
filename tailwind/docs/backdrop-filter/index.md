@@ -5,37 +5,41 @@ canonical_url: "https://tailwindcss.com/docs/backdrop-filter"
 docset: "tailwind"
 kind: "framework"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:08:56.671Z"
-content_hash: "726c6140c78e52ba449fa2b89ceab56fb74fc56b3769f3b359bebb023b772733"
+last_crawled_at: "2026-04-27T20:27:30.328Z"
+content_hash: "614841a8001d74593d135a3958be006782038ab478798eb617ec04aa021cd0cb"
 menu_path: ["backdrop-filter"]
 section_path: []
-nav_prev: {"path": "tailwind/docs/filter-sepia/index.md", "title": "filter: sepia()"}
-nav_next: {"path": "tailwind/docs/backdrop-filter-blur/index.md", "title": "backdrop-filter: blur()"}
+content_language: "en"
 ---
+[](/)
+
+[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
+
+1.  Filters
+2.  backdrop-filter
+
+Filters
 
 # backdrop-filter
 
 Utilities for applying backdrop filters to an element.
 
-Class
-
-Styles
-
-`backdrop-filter-none`
-
+| Class | Styles |
+| --- | --- |
+| `backdrop-filter-none` | 
 `backdrop-filter: none;`
 
-`backdrop-filter-(<custom-property>)`
+ |
+| `backdrop-filter-(<custom-property>)` | 
 
 `backdrop-filter: var(<custom-property>);`
 
-`backdrop-filter-[<value>]`
+ |
+| `backdrop-filter-[<value>]` | 
 
 `backdrop-filter: <value>;`
 
-## [Examples](#examples)
-
-### [Basic example](#basic-example)
+ |
 
 Use utilities like `backdrop-blur-xs` and `backdrop-grayscale` to apply filters to an element's backdrop:
 
@@ -57,15 +61,11 @@ combined
 
 You can combine the following backdrop filter utilities: [blur](/docs/backdrop-filter-blur), [brightness](/docs/backdrop-filter-brightness), [contrast](/docs/backdrop-filter-contrast), [grayscale](/docs/backdrop-filter-grayscale), [hue-rotate](/docs/backdrop-filter-hue-rotate), [invert](/docs/backdrop-filter-invert), [opacity](/docs/backdrop-filter-opacity), [saturate](/docs/backdrop-filter-saturate), and [sepia](/docs/backdrop-filter-sepia).
 
-### [Removing filters](#removing-filters)
-
 Use the `backdrop-filter-none` utility to remove all of the backdrop filters applied to an element:
 
 ```
 <div class="backdrop-blur-md backdrop-brightness-150 md:backdrop-filter-none"></div>
 ```
-
-### [Using a custom value](#using-a-custom-value)
 
 Use the `backdrop-filter-[<value>]` syntax to set the backdrop filter based on a completely custom value:
 
@@ -81,8 +81,6 @@ For CSS variables, you can also use the `backdrop-filter-(<custom-property>)` sy
 
 This is just a shorthand for `backdrop-filter-[var(<custom-property>)]` that adds the `var()` function for you automatically.
 
-### [Applying on hover](#applying-on-hover)
-
 Prefix a `backdrop-filter` utility with a variant like `hover:*` to only apply the utility in that state:
 
 ```
@@ -90,8 +88,6 @@ Prefix a `backdrop-filter` utility with a variant like `hover:*` to only apply t
 ```
 
 Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
-
-### [Responsive design](#responsive-design)
 
 Prefix a `backdrop-filter` utility with a breakpoint variant like `md:` to only apply the utility at medium screen sizes and above:
 
@@ -103,13 +99,13 @@ Learn more about using variants in the [variants documentation](/docs/hover-focu
 
 ### On this page
 
-*   [Quick reference](#quick-reference)
-*   [Examples](#examples)
-    *   [Basic example](#basic-example)
-    *   [Removing filters](#removing-filters)
-    *   [Using a custom value](#using-a-custom-value)
-    *   [Applying on hover](#applying-on-hover)
-    *   [Responsive design](#responsive-design)
+-   [Quick reference](#quick-reference)
+-   [Examples](#examples)
+    -   [Basic example](#basic-example)
+    -   [Removing filters](#removing-filters)
+    -   [Using a custom value](#using-a-custom-value)
+    -   [Applying on hover](#applying-on-hover)
+    -   [Responsive design](#responsive-design)
 
 [
 

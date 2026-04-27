@@ -5,15 +5,13 @@ canonical_url: "https://orm.drizzle.team/docs/column-types/pg"
 docset: "drizzle"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:35:58.192Z"
-content_hash: "4415edb4737d09fd08decaaa19436f180a52e95d92c496e39d0c6f9cfd7738f1"
+last_crawled_at: "2026-04-27T18:25:45.224Z"
+content_hash: "01c9920ebf92af96d940eb6d554a06e177547ff8981727ebb48a535adcebdca4"
 menu_path: ["PostgreSQL column types"]
 section_path: []
-nav_prev: {"path": "drizzle/docs/connect-drizzle-proxy/index.md", "title": "Drizzle HTTP proxy"}
-nav_next: {"path": "drizzle/docs/indexes-constraints/index.md", "title": "Indexes & Constraints"}
+content_language: "en"
 ---
-
-We have native support for all of them, yet if that’s not enough for you, feel free to create **[custom types](drizzle/docs/custom-types/index.md)**.
+We have native support for all of them, yet if that’s not enough for you, feel free to create **[custom types](https://orm.drizzle.team/docs/custom-types)**.
 
 important
 
@@ -21,7 +19,7 @@ All examples in this part of the documentation do not use database column name a
 
 You can use database aliases in column names if you want, and you can also use the `casing` parameter to define a mapping strategy for Drizzle.
 
-You can read more about it [here](drizzle/docs/sql-schema-declaration/index.md#shape-your-data-schema)
+You can read more about it [here](https://orm.drizzle.team/docs/sql-schema-declaration#shape-your-data-schema)
 
 ### integer[](#integer)
 
@@ -30,7 +28,7 @@ Signed 4-byte integer
 
 If you need `integer autoincrement` please refer to **[serial.](#serial)**
 
-```
+```typescript
 import { integer, pgTable } from "drizzle-orm/pg-core";
 
 export const table = pgTable('table', {
@@ -38,13 +36,13 @@ export const table = pgTable('table', {
 });
 ```
 
-```
+```sql
 CREATE TABLE "table" (
 	"int" integer
 );
 ```
 
-```
+```typescript
 import { sql } from "drizzle-orm";
 import { integer, pgTable } from "drizzle-orm/pg-core";
 
@@ -54,7 +52,7 @@ export const table = pgTable('table', {
 });
 ```
 
-```
+```sql
 CREATE TABLE "table" (
 	"int1" integer DEFAULT 10,
 	"int2" integer DEFAULT '10'::int
@@ -68,7 +66,7 @@ Small-range signed 2-byte integer
 
 If you need `smallint autoincrement` please refer to **[smallserial.](#smallserial)**
 
-```
+```typescript
 import { smallint, pgTable } from "drizzle-orm/pg-core";
 
 export const table = pgTable('table', {
@@ -76,13 +74,13 @@ export const table = pgTable('table', {
 });
 ```
 
-```
+```sql
 CREATE TABLE "table" (
 	"smallint" smallint
 );
 ```
 
-```
+```typescript
 import { sql } from "drizzle-orm";
 import { smallint, pgTable } from "drizzle-orm/pg-core";
 
@@ -92,7 +90,7 @@ export const table = pgTable('table', {
 });
 ```
 
-```
+```sql
 CREATE TABLE "table" (
 	"smallint1" smallint DEFAULT 10,
 	"smallint2" smallint DEFAULT '10'::smallint
@@ -108,7 +106,7 @@ If you need `bigint autoincrement` please refer to **[bigserial.](#bigserial)**
 
 If you’re expecting values above 2^31 but below 2^53, you can utilise `mode: 'number'` and deal with javascript number as opposed to bigint.
 
-```
+```typescript
 import { bigint, pgTable } from "drizzle-orm/pg-core";
 
 export const table = pgTable('table', {
@@ -122,13 +120,13 @@ bigint: bigint({ mode: 'number' })
 bigint: bigint({ mode: 'bigint' })
 ```
 
-```
+```sql
 CREATE TABLE "table" (
 	"bigint" bigint
 );
 ```
 
-```
+```typescript
 import { sql } from "drizzle-orm";
 import { bigint, pgTable } from "drizzle-orm/pg-core";
 
@@ -138,7 +136,7 @@ export const table = pgTable('table', {
 });
 ```
 
-```
+```sql
 CREATE TABLE "table" (
 	"bigint1" bigint DEFAULT 10,
 	"bigint2" bigint DEFAULT '10'::bigint
@@ -152,7 +150,7 @@ Auto incrementing 4-bytes integer, notational convenience for creating unique id
 
 For more info please refer to the official PostgreSQL **[docs.](https://www.postgresql.org/docs/current/datatype-numeric.html#DATATYPE-SERIAL)**
 
-```
+```typescript
 import { serial, pgTable } from "drizzle-orm/pg-core";
 
 export const table = pgTable('table', {
@@ -160,7 +158,7 @@ export const table = pgTable('table', {
 });
 ```
 
-```
+```sql
 CREATE TABLE "table" (
 	"serial" serial NOT NULL
 );
@@ -173,7 +171,7 @@ Auto incrementing 2-bytes integer, notational convenience for creating unique id
 
 For more info please refer to the official PostgreSQL **[docs.](https://www.postgresql.org/docs/current/datatype-numeric.html#DATATYPE-SERIAL)**
 
-```
+```typescript
 import { smallserial, pgTable } from "drizzle-orm/pg-core";
 
 export const table = pgTable('table', {
@@ -181,7 +179,7 @@ export const table = pgTable('table', {
 });
 ```
 
-```
+```sql
 CREATE TABLE "table" (
 	"smallserial" smallserial NOT NULL
 );
@@ -196,7 +194,7 @@ For more info please refer to the official PostgreSQL **[docs.](https://www.post
 
 If you’re expecting values above 2^31 but below 2^53, you can utilise `mode: 'number'` and deal with javascript number as opposed to bigint.
 
-```
+```typescript
 import { bigserial, pgTable } from "drizzle-orm/pg-core";
 
 export const table = pgTable('table', {
@@ -204,7 +202,7 @@ export const table = pgTable('table', {
 });
 ```
 
-```
+```sql
 CREATE TABLE "table" (
 	"bigserial" bigserial NOT NULL
 );
@@ -218,7 +216,7 @@ PostgreSQL provides the standard SQL type boolean.
 
 For more info please refer to the official PostgreSQL **[docs.](https://www.postgresql.org/docs/current/datatype-boolean.html)**
 
-```
+```typescript
 import { boolean, pgTable } from "drizzle-orm/pg-core";
 
 export const table = pgTable('table', {
@@ -226,7 +224,7 @@ export const table = pgTable('table', {
 });
 ```
 
-```
+```sql
 CREATE TABLE "table" (
 	"boolean" boolean
 );
@@ -238,7 +236,7 @@ PostgreSQL provides the standard SQL type bytea.
 
 For more info please refer to the official PostgreSQL **[docs.](https://www.postgresql.org/docs/current/datatype-binary.html)**
 
-```
+```typescript
 import { bytea, pgTable } from "drizzle-orm/pg-core";
 
 export const table = pgTable('table', {
@@ -246,7 +244,7 @@ export const table = pgTable('table', {
 });
 ```
 
-```
+```sql
 CREATE TABLE IF NOT EXISTS "table" (
 	"bytea" bytea,
 );
@@ -261,7 +259,7 @@ For more info please refer to the official PostgreSQL **[docs.](https://www.post
 
 You can define `{ enum: ["value1", "value2"] }` config to infer `insert` and `select` types, it **won’t** check runtime values.
 
-```
+```typescript
 import { text, pgTable } from "drizzle-orm/pg-core";
 
 export const table = pgTable('table', {
@@ -272,7 +270,7 @@ export const table = pgTable('table', {
 text: text({ enum: ["value1", "value2"] })
 ```
 
-```
+```sql
 CREATE TABLE "table" (
 	"text" text
 );
@@ -289,7 +287,7 @@ You can define `{ enum: ["value1", "value2"] }` config to infer `insert` and `se
 
 The `length` parameter is optional according to PostgreSQL docs.
 
-```
+```typescript
 import { varchar, pgTable } from "drizzle-orm/pg-core";
 
 export const table = pgTable('table', {
@@ -301,7 +299,7 @@ export const table = pgTable('table', {
 varchar: varchar({ enum: ["value1", "value2"] }),
 ```
 
-```
+```sql
 CREATE TABLE "table" (
 	"varchar1" varchar,
 	"varchar2" varchar(256)
@@ -319,7 +317,7 @@ You can define `{ enum: ["value1", "value2"] }` config to infer `insert` and `se
 
 The `length` parameter is optional according to PostgreSQL docs.
 
-```
+```typescript
 import { char, pgTable } from "drizzle-orm/pg-core";
 
 export const table = pgTable('table', {
@@ -331,7 +329,7 @@ export const table = pgTable('table', {
 char: char({ enum: ["value1", "value2"] }),
 ```
 
-```
+```sql
 CREATE TABLE "table" (
 	"char1" char,
 	"char2" char(256)
@@ -345,7 +343,7 @@ Exact numeric of selectable precision. Can store numbers with a very large numbe
 
 For more info please refer to the official PostgreSQL **[docs.](https://www.postgresql.org/docs/current/datatype-numeric.html#DATATYPE-NUMERIC-DECIMAL)**
 
-```
+```typescript
 import { numeric, pgTable } from "drizzle-orm/pg-core";
 
 export const table = pgTable('table', {
@@ -357,7 +355,7 @@ export const table = pgTable('table', {
 });
 ```
 
-```
+```sql
 CREATE TABLE "table" (
 	"numeric1" numeric,
 	"numeric2" numeric(100),
@@ -378,7 +376,7 @@ Single precision floating-point number (4 bytes)
 
 For more info please refer to the official PostgreSQL **[docs.](https://www.postgresql.org/docs/current/datatype-numeric.html)**
 
-```
+```typescript
 import { sql } from "drizzle-orm";
 import { real, pgTable } from "drizzle-orm/pg-core";  
 
@@ -389,7 +387,7 @@ const table = pgTable('table', {
 });
 ```
 
-```
+```sql
 CREATE TABLE "table" (
 	"real1" real,
 	"real2" real default 10.10,
@@ -404,7 +402,7 @@ Double precision floating-point number (8 bytes)
 
 For more info please refer to the official PostgreSQL **[docs.](https://www.postgresql.org/docs/current/datatype-numeric.html)**
 
-```
+```typescript
 import { sql } from "drizzle-orm";
 import { doublePrecision, pgTable } from "drizzle-orm/pg-core";
 
@@ -415,7 +413,7 @@ const table = pgTable('table', {
 });
 ```
 
-```
+```sql
 CREATE TABLE "table" (
 	"double1" double precision,
 	"double2" double precision default 10.10,
@@ -430,7 +428,7 @@ Textual JSON data, as specified in **[RFC 7159.](https://tools.ietf.org/html/rfc
 
 For more info please refer to the official PostgreSQL **[docs.](https://www.postgresql.org/docs/current/datatype-json.html)**
 
-```
+```typescript
 import { sql } from "drizzle-orm";
 import { json, pgTable } from "drizzle-orm/pg-core";
 
@@ -441,7 +439,7 @@ const table = pgTable('table', {
 });
 ```
 
-```
+```sql
 CREATE TABLE "table" (
 	"json1" json,
 	"json2" json default '{"foo": "bar"}'::json,
@@ -451,7 +449,7 @@ CREATE TABLE "table" (
 
 You can specify `.$type<..>()` for json object inference, it **won’t** check runtime values. It provides compile time protection for default values, insert and select schemas.
 
-```
+```typescript
 // will be inferred as { foo: string }
 json: json().$type<{ foo: string }>();
 
@@ -469,7 +467,7 @@ Binary JSON data, decomposed.
 
 For more info please refer to the official PostgreSQL **[docs.](https://www.postgresql.org/docs/current/datatype-json.html)**
 
-```
+```typescript
 import { jsonb, pgTable } from "drizzle-orm/pg-core";
 
 const table = pgTable('table', {
@@ -479,7 +477,7 @@ const table = pgTable('table', {
 });
 ```
 
-```
+```sql
 CREATE TABLE "table" (
 	"jsonb1" jsonb,
 	"jsonb2" jsonb default '{"foo": "bar"}'::jsonb,
@@ -489,7 +487,7 @@ CREATE TABLE "table" (
 
 You can specify `.$type<..>()` for json object inference, it **won’t** check runtime values. It provides compile time protection for default values, insert and select schemas.
 
-```
+```typescript
 // will be inferred as { foo: string }
 jsonb: jsonb().$type<{ foo: string }>();
 
@@ -508,7 +506,7 @@ The data type uuid stores Universally Unique Identifiers (UUID) as defined by RF
 
 For more info please refer to the official PostgreSQL **[docs.](https://www.postgresql.org/docs/current/datatype-uuid.html)**
 
-```
+```ts
 import { uuid, pgTable } from "drizzle-orm/pg-core";
 
 const table = pgTable('table', {
@@ -518,7 +516,7 @@ const table = pgTable('table', {
 });
 ```
 
-```
+```sql
 CREATE TABLE "table" (
 	"uuid1" uuid,
 	"uuid2" uuid default gen_random_uuid(),
@@ -533,7 +531,7 @@ Time of day with or without time zone.
 
 For more info please refer to the official PostgreSQL **[docs.](https://www.postgresql.org/docs/current/datatype-datetime.html)**
 
-```
+```typescript
 import { time, pgTable } from "drizzle-orm/pg-core";
 
 const table = pgTable('table', {
@@ -544,7 +542,7 @@ const table = pgTable('table', {
 });
 ```
 
-```
+```sql
 CREATE TABLE "table" (
 	"time1" time,
 	"time2" time with timezone,
@@ -560,7 +558,7 @@ Date and time with or without time zone.
 
 For more info please refer to the official PostgreSQL **[docs.](https://www.postgresql.org/docs/current/datatype-datetime.html)**
 
-```
+```typescript
 import { sql } from "drizzle-orm";
 import { timestamp, pgTable } from "drizzle-orm/pg-core";
 
@@ -572,7 +570,7 @@ const table = pgTable('table', {
 });
 ```
 
-```
+```sql
 CREATE TABLE "table" (
 	"timestamp1" timestamp,
 	"timestamp2" timestamp (6) with time zone,
@@ -583,7 +581,7 @@ CREATE TABLE "table" (
 
 You can specify either `date` or `string` infer modes:
 
-```
+```typescript
 // will infer as date
 timestamp: timestamp({ mode: "date" }),
 
@@ -605,7 +603,7 @@ As PostgreSQL docs stated:
 
 So for `timestamp with timezone` you will get back string converted to a timezone set in your Postgres instance. You can check timezone using this sql query:
 
-```
+```sql
 show timezone;
 ```
 
@@ -616,7 +614,7 @@ Calendar date (year, month, day)
 
 For more info please refer to the official PostgreSQL **[docs.](https://www.postgresql.org/docs/current/datatype-datetime.html)**
 
-```
+```typescript
 import { date, pgTable } from "drizzle-orm/pg-core";
 
 const table = pgTable('table', {
@@ -624,7 +622,7 @@ const table = pgTable('table', {
 });
 ```
 
-```
+```sql
 CREATE TABLE "table" (
 	"date" date
 );
@@ -632,7 +630,7 @@ CREATE TABLE "table" (
 
 You can specify either `date` or `string` infer modes:
 
-```
+```typescript
 // will infer as date
 date: date({ mode: "date" }),
 
@@ -647,7 +645,7 @@ Time span
 
 For more info please refer to the official PostgreSQL **[docs.](https://www.postgresql.org/docs/current/datatype-datetime.html)**
 
-```
+```typescript
 import { interval, pgTable } from "drizzle-orm/pg-core";
 
 const table = pgTable('table', {
@@ -657,7 +655,7 @@ const table = pgTable('table', {
 });
 ```
 
-```
+```sql
 CREATE TABLE "table" (
 	"interval1" interval,
 	"interval2" interval day,
@@ -674,19 +672,19 @@ For more info please refer to the official PostgreSQL **[docs.](https://www.post
 
 Type `point` has 2 modes for mappings from the database: `tuple` and `xy`.
 
-*   `tuple` will be accepted for insert and mapped on select to a tuple. So, the database Point(1,2) will be typed as \[1,2\] with drizzle.
+-   `tuple` will be accepted for insert and mapped on select to a tuple. So, the database Point(1,2) will be typed as \[1,2\] with drizzle.
     
-*   `xy` will be accepted for insert and mapped on select to an object with x, y coordinates. So, the database Point(1,2) will be typed as `{ x: 1, y: 2 }` with drizzle
+-   `xy` will be accepted for insert and mapped on select to an object with x, y coordinates. So, the database Point(1,2) will be typed as `{ x: 1, y: 2 }` with drizzle
     
 
-```
+```typescript
 const items = pgTable('items', {
  point: point(),
  pointObj: point({ mode: 'xy' }),
 });
 ```
 
-```
+```sql
 CREATE TABLE "items" (
 	"point" point,
 	"pointObj" point
@@ -702,19 +700,19 @@ For more info please refer to the official PostgreSQL **[docs.](https://www.post
 
 Type `line` has 2 modes for mappings from the database: `tuple` and `abc`.
 
-*   `tuple` will be accepted for insert and mapped on select to a tuple. So, the database Line3 will be typed as \[1,2,3\] with drizzle.
+-   `tuple` will be accepted for insert and mapped on select to a tuple. So, the database Line3 will be typed as \[1,2,3\] with drizzle.
     
-*   `abc` will be accepted for insert and mapped on select to an object with a, b, and c constants from the equation `Ax + By + C = 0`. So, the database Line3 will be typed as `{ a: 1, b: 2, c: 3 }` with drizzle.
+-   `abc` will be accepted for insert and mapped on select to an object with a, b, and c constants from the equation `Ax + By + C = 0`. So, the database Line3 will be typed as `{ a: 1, b: 2, c: 3 }` with drizzle.
     
 
-```
+```typescript
 const items = pgTable('items', {
  line: line(),
  lineObj: line({ mode: 'abc' }),
 });
 ```
 
-```
+```sql
 CREATE TABLE "items" (
 	"line" line,
 	"lineObj" line
@@ -728,7 +726,7 @@ Enumerated (enum) types are data types that comprise a static, ordered set of va
 
 For more info please refer to the official PostgreSQL **[docs.](https://www.postgresql.org/docs/current/datatype-enum.html)**
 
-```
+```typescript
 import { pgEnum, pgTable } from "drizzle-orm/pg-core";
 
 export const moodEnum = pgEnum('mood', ['sad', 'ok', 'happy']);
@@ -738,7 +736,7 @@ export const table = pgTable('table', {
 });
 ```
 
-```
+```sql
 CREATE TYPE mood AS ENUM ('sad', 'ok', 'happy');
 
 CREATE TABLE "table" (
@@ -752,7 +750,7 @@ Every column builder has a `.$type()` method, which allows you to customize the 
 
 This is useful, for example, with unknown or branded types:
 
-```
+```ts
 type UserId = number & { __brand: 'user_id' };
 type Data = {
 	foo: string;
@@ -773,23 +771,23 @@ PostgreSQL supports identity columns as a way to automatically generate unique i
 
 **Types of Identity Columns**
 
-*   `GENERATED ALWAYS AS IDENTITY`: The database always generates a value for the column. Manual insertion or updates to this column are not allowed unless the OVERRIDING SYSTEM VALUE clause is used.
-*   `GENERATED BY DEFAULT AS IDENTITY`: The database generates a value by default, but manual values can also be inserted or updated. If a manual value is provided, it will be used instead of the system-generated value.
+-   `GENERATED ALWAYS AS IDENTITY`: The database always generates a value for the column. Manual insertion or updates to this column are not allowed unless the OVERRIDING SYSTEM VALUE clause is used.
+-   `GENERATED BY DEFAULT AS IDENTITY`: The database generates a value by default, but manual values can also be inserted or updated. If a manual value is provided, it will be used instead of the system-generated value.
 
 **Key Features**
 
-*   Automatic Value Generation: Utilizes sequences to generate unique values for each new row.
-*   Customizable Sequence Options: You can define starting values, increments, and other sequence options.
-*   Support for Multiple Identity Columns: PostgreSQL allows more than one identity column per table.
+-   Automatic Value Generation: Utilizes sequences to generate unique values for each new row.
+-   Customizable Sequence Options: You can define starting values, increments, and other sequence options.
+-   Support for Multiple Identity Columns: PostgreSQL allows more than one identity column per table.
 
 **Limitations**
 
-*   Manual Insertion Restrictions: For columns defined with GENERATED ALWAYS AS IDENTITY, manual insertion or updates require the OVERRIDING SYSTEM VALUE clause.
-*   Sequence Constraints: Identity columns depend on sequences, which must be managed correctly to avoid conflicts or gaps.
+-   Manual Insertion Restrictions: For columns defined with GENERATED ALWAYS AS IDENTITY, manual insertion or updates require the OVERRIDING SYSTEM VALUE clause.
+-   Sequence Constraints: Identity columns depend on sequences, which must be managed correctly to avoid conflicts or gaps.
 
 **Usage example**
 
-```
+```ts
 import { pgTable, integer, text } from 'drizzle-orm/pg-core' 
 
 export const ingredients = pgTable("ingredients", {
@@ -809,7 +807,7 @@ The `DEFAULT` clause specifies a default value to use for the column if no value
 
 An explicit `DEFAULT` clause may specify that the default value is `NULL`, a string constant, a blob constant, a signed-number, or any constant expression enclosed in parentheses.
 
-```
+```typescript
 import { sql } from "drizzle-orm";
 import { integer, pgTable, uuid } from "drizzle-orm/pg-core";
 
@@ -821,7 +819,7 @@ const table = pgTable('table', {
 });
 ```
 
-```
+```sql
 CREATE TABLE "table" (
 	"integer1" integer DEFAULT 42,
 	"integer2" integer DEFAULT '42'::integer,
@@ -836,7 +834,7 @@ These functions can assist you in utilizing various implementations such as `uui
 
 Note: This value does not affect the `drizzle-kit` behavior, it is only used at runtime in `drizzle-orm`
 
-```
+```ts
 import { text, pgTable } from "drizzle-orm/pg-core";
 import { createId } from '@paralleldrive/cuid2';
 
@@ -851,7 +849,7 @@ Adds a dynamic update value to the column. The function will be called when the 
 
 Note: This value does not affect the `drizzle-kit` behavior, it is only used at runtime in `drizzle-orm`
 
-```
+```ts
 import { integer, timestamp, text, pgTable } from "drizzle-orm/pg-core";
 
 const table = pgTable('table', {
@@ -865,7 +863,7 @@ const table = pgTable('table', {
 
 `NOT NULL` constraint dictates that the associated column may not contain a `NULL` value.
 
-```
+```typescript
 import { integer, pgTable } from "drizzle-orm/pg-core";
 
 const table = pgTable('table', {
@@ -873,7 +871,7 @@ const table = pgTable('table', {
 });
 ```
 
-```
+```sql
 CREATE TABLE "table" (
 	"integer" integer NOT NULL
 );
@@ -883,7 +881,7 @@ CREATE TABLE "table" (
 
 A primary key constraint indicates that a column, or group of columns, can be used as a unique identifier for rows in the table. This requires that the values be both unique and not null.
 
-```
+```typescript
 import { serial, pgTable } from "drizzle-orm/pg-core";
 
 const table = pgTable('table', {
@@ -891,7 +889,7 @@ const table = pgTable('table', {
 });
 ```
 
-```
+```sql
 CREATE TABLE "table" (
 	"id" serial PRIMARY KEY NOT NULL
 );

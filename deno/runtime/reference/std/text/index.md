@@ -5,15 +5,16 @@ canonical_url: "https://docs.deno.com/runtime/reference/std/text/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:06:09.442Z"
-content_hash: "57955a9c19a98d3b69ecb979ec8f900e958627c2a7b2c17a7df84d110da893c9"
+last_crawled_at: "2026-04-27T17:48:06.304Z"
+content_hash: "cd78bedd2dc740989a68323944d9753e01e6a7d6657d1cf633756fc806e39a6a"
 menu_path: ["@std/text"]
 section_path: []
+content_language: "en"
 ---
-On this page
+**On this page**
 
-*   [Overview](#overview)
-    *   [Add to your project](#add-to-your-project)
+-   [Overview](#overview)
+    -   [Add to your project](#add-to-your-project)
 
 ## Overview
 

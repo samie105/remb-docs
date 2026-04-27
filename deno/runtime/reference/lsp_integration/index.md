@@ -5,36 +5,37 @@ canonical_url: "https://docs.deno.com/runtime/reference/lsp_integration/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:59:01.641Z"
-content_hash: "703c30c7d4e955d9eb49feb18874930a581934ace8dd5dc86ac3cb15dc7d6f05"
+last_crawled_at: "2026-04-27T17:37:25.931Z"
+content_hash: "da4f4d636e74ccfd499493ad566d60a3cf4e16b26a4477472f32b4a6c644d94c"
 menu_path: ["Language Server Integration"]
 section_path: []
+content_language: "en"
 ---
-On this page
+**On this page**
 
-*   [Structure](#structure)
-*   [Settings](#settings)
-*   [Commands](#commands)
-    *   [.cache](#.cache)
-    *   [showReferences](#showreferences)
-    *   [test](#test)
-*   [Requests](#requests)
-    *   [/cache](#%2Fcache)
-    *   [performance](#performance)
-    *   [reloadImportRegistries](#reloadimportregistries)
-    *   [virtualTextDocument](#virtualtextdocument)
-    *   [task](#task)
-*   [Notifications](#notifications)
-*   [Language IDs](#language-ids)
-*   [Testing](#testing)
-    *   [Testing settings](#testing-settings)
-    *   [Testing notifications](#testing-notifications)
-        *   [deno/testModule](#deno%2Ftestmodule)
-        *   [deno/testModuleDelete](#deno%2Ftestmoduledelete)
-        *   [deno/testRunProgress](#deno%2Ftestrunprogress)
-    *   [Testing requests](#testing-requests)
-        *   [deno/testRun](#deno%2Ftestrun)
-        *   [deno/testRunCancel](#deno%2Ftestruncancel)
+-   [Structure](#structure)
+-   [Settings](#settings)
+-   [Commands](#commands)
+    -   [.cache](#.cache)
+    -   [showReferences](#showreferences)
+    -   [test](#test)
+-   [Requests](#requests)
+    -   [/cache](#%2Fcache)
+    -   [performance](#performance)
+    -   [reloadImportRegistries](#reloadimportregistries)
+    -   [virtualTextDocument](#virtualtextdocument)
+    -   [task](#task)
+-   [Notifications](#notifications)
+-   [Language IDs](#language-ids)
+-   [Testing](#testing)
+    -   [Testing settings](#testing-settings)
+    -   [Testing notifications](#testing-notifications)
+        -   [deno/testModule](#deno%2Ftestmodule)
+        -   [deno/testModuleDelete](#deno%2Ftestmoduledelete)
+        -   [deno/testRunProgress](#deno%2Ftestrunprogress)
+    -   [Testing requests](#testing-requests)
+        -   [deno/testRun](#deno%2Ftestrun)
+        -   [deno/testRunCancel](#deno%2Ftestruncancel)
 
 Tip
 
@@ -54,33 +55,33 @@ When the language server is started, a `LanguageServer` instance is created whic
 
 The language server supports a number of settings for a workspace:
 
-*   `deno.enable`
-*   `deno.enablePaths`
-*   `deno.cache`
-*   `deno.certificateStores`
-*   `deno.config`
-*   `deno.importMap`
-*   `deno.internalDebug`
-*   `deno.codeLens.implementations`
-*   `deno.codeLens.references`
-*   `deno.codeLens.referencesAllFunctions`
-*   `deno.codeLens.test`
-*   `deno.suggest.completeFunctionCalls`
-*   `deno.suggest.names`
-*   `deno.suggest.paths`
-*   `deno.suggest.autoImports`
-*   `deno.suggest.imports.autoDiscover`
-*   `deno.suggest.imports.hosts`
-*   `deno.lint`
-*   `deno.tlsCertificate`
-*   `deno.unsafelyIgnoreCertificateErrors`
-*   `deno.unstable`
+-   `deno.enable`
+-   `deno.enablePaths`
+-   `deno.cache`
+-   `deno.certificateStores`
+-   `deno.config`
+-   `deno.importMap`
+-   `deno.internalDebug`
+-   `deno.codeLens.implementations`
+-   `deno.codeLens.references`
+-   `deno.codeLens.referencesAllFunctions`
+-   `deno.codeLens.test`
+-   `deno.suggest.completeFunctionCalls`
+-   `deno.suggest.names`
+-   `deno.suggest.paths`
+-   `deno.suggest.autoImports`
+-   `deno.suggest.imports.autoDiscover`
+-   `deno.suggest.imports.hosts`
+-   `deno.lint`
+-   `deno.tlsCertificate`
+-   `deno.unsafelyIgnoreCertificateErrors`
+-   `deno.unstable`
 
 And there are settings that are supported on a per resource basis by the language server:
 
-*   `deno.enable`
-*   `deno.enablePaths`
-*   `deno.codeLens.test`
+-   `deno.enable`
+-   `deno.enablePaths`
+-   `deno.codeLens.test`
 
 Deno analyzes these settings at multiple points in the language server process. First, when the `initialize` request arrives from the client, the `initializationOptions` will be assumed to be an object that represents the `deno` namespace of options. For example, the following value will enable Deno with the unstable APIs for this instance of the language server.
 
@@ -175,18 +176,18 @@ interface RegistryStatusNotificationParams {
 
 The language server supports diagnostics and formatting for the following [text document language IDs](https://microsoft.github.io/language-server-protocol/specifications/specification-current/#textDocumentItem):
 
-*   `"javascript"`
-*   `"javascriptreact"`
-*   `"jsx"` _non standard, same as `javascriptreact`_
-*   `"typescript"`
-*   `"typescriptreact"`
-*   `"tsx"` _non standard, same as `typescriptreact`_
+-   `"javascript"`
+-   `"javascriptreact"`
+-   `"jsx"` _non standard, same as `javascriptreact`_
+-   `"typescript"`
+-   `"typescriptreact"`
+-   `"tsx"` _non standard, same as `typescriptreact`_
 
 The language server supports only formatting for the following language IDs:
 
-*   `"json"`
-*   `"jsonc"`
-*   `"markdown"`
+-   `"json"`
+-   `"jsonc"`
+-   `"markdown"`
 
 ## Testing
 
@@ -218,8 +219,8 @@ It should also be noted that when the testing API capabilities are enabled, the 
 
 There are specific settings which change the behavior of the language server:
 
-*   `deno.testing.args` - An array of strings which will be provided as arguments when executing tests. This works in the same fashion as the `deno test` subcommand.
-*   `deno.testing.enable` - A binary flag that enables or disables the testing server
+-   `deno.testing.args` - An array of strings which will be provided as arguments when executing tests. This works in the same fashion as the `deno test` subcommand.
+-   `deno.testing.enable` - A binary flag that enables or disables the testing server
 
 ### Testing notifications
 
@@ -231,9 +232,9 @@ When a module containing tests is discovered by the server, it will notify the c
 
 Deno structures in this fashion:
 
-*   A module can contain _n_ tests.
-*   A test can contain _n_ steps.
-*   A step can contain _n_ steps.
+-   A module can contain _n_ tests.
+-   A test can contain _n_ steps.
+-   A step can contain _n_ steps.
 
 When Deno does static analysis of a test module, it attempts to identify any tests and test steps. Because of the dynamic way tests can be declared in Deno, they cannot always be statically identified and can only be identified when the module is executed. The notification is designed to handle both of these situations when updating the client. When tests are discovered statically, the notification `kind` will be `"replace"`, when tests or steps are discovered at execution time, the notification `kind` will be `"insert"`.
 
@@ -294,13 +295,13 @@ The client should process these messages and update any UI representation.
 
 The state change is represented in the `.message.kind` property of the `TestRunProgressParams`. The states are:
 
-*   `"enqueued"` - A test or test step has been enqueued for testing.
-*   `"skipped"` - A test or test step was skipped. This occurs when the Deno test has the `ignore` option set to `true`.
-*   `"started"` - A test or test step has started.
-*   `"passed"` - A test or test step has passed.
-*   `"failed"` - A test or test step has failed. This is intended to indicate an error with the test harness instead of the test itself, but Deno currently does not support this distinction.
-*   `"errored"` - The test or test step has errored. Additional information about the error will be in the `.message.messages` property.
-*   `"end"` - The test run has ended.
+-   `"enqueued"` - A test or test step has been enqueued for testing.
+-   `"skipped"` - A test or test step was skipped. This occurs when the Deno test has the `ignore` option set to `true`.
+-   `"started"` - A test or test step has started.
+-   `"passed"` - A test or test step has passed.
+-   `"failed"` - A test or test step has failed. This is intended to indicate an error with the test harness instead of the test itself, but Deno currently does not support this distinction.
+-   `"errored"` - The test or test step has errored. Additional information about the error will be in the `.message.messages` property.
+-   `"end"` - The test run has ended.
 
 ```ts
 interface TestIdentifier {

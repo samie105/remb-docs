@@ -5,43 +5,44 @@ canonical_url: "https://docs.deno.com/runtime/fundamentals/testing/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:48:30.917Z"
-content_hash: "a8527a3f2750984942559b78cc27cb1d976950cdc54bd5ad192ad8db71c34c1d"
+last_crawled_at: "2026-04-27T17:22:21.838Z"
+content_hash: "5dab73cac5f26f4b15c5c3fb08a63fd2aa8a559aa70dc0d2ecc7f8f1f824af4e"
 menu_path: ["Testing"]
 section_path: []
+content_language: "en"
 ---
-On this page
+**On this page**
 
-*   [Writing Tests](#writing-tests)
-*   [Running Tests](#running-tests)
-*   [Test Steps](#test-steps)
-*   [Test Hooks](#test-hooks)
-    *   [Available Hooks](#available-hooks)
-    *   [Hook Execution Order](#hook-execution-order)
-    *   [Examples](#examples)
-    *   [Multiple Hooks](#multiple-hooks)
-*   [Command line filtering](#command-line-filtering)
-    *   [Filtering by string](#filtering-by-string)
-    *   [Filtering by Pattern](#filtering-by-pattern)
-    *   [Including and excluding test files in the configuration file](#including-and-excluding-test-files-in-the-configuration-file)
-*   [Test definition selection](#test-definition-selection)
-    *   [Ignoring/Skipping Tests](#ignoring%2Fskipping-tests)
-    *   [Only Run Specific Tests](#only-run-specific-tests)
-*   [Failing fast](#failing-fast)
-*   [Reporters](#reporters)
-*   [Spying, mocking (test doubles), stubbing and faking time](#spying%2C-mocking-\(test-doubles\)%2C-stubbing-and-faking-time)
-*   [Coverage](#coverage)
-*   [Behavior-Driven Development](#behavior-driven-development)
-*   [Documentation Tests](#documentation-tests)
-    *   [Example code blocks](#example-code-blocks)
-    *   [Exported items are automatically imported](#exported-items-are-automatically-imported)
-    *   [Skipping code blocks](#skipping-code-blocks)
-*   [Sanitizers](#sanitizers)
-    *   [Resource sanitizer](#resource-sanitizer)
-    *   [Async operation sanitizer](#async-operation-sanitizer)
-    *   [Exit sanitizer](#exit-sanitizer)
-*   [Snapshot testing](#snapshot-testing)
-*   [Tests and Permissions](#tests-and-permissions)
+-   [Writing Tests](#writing-tests)
+-   [Running Tests](#running-tests)
+-   [Test Steps](#test-steps)
+-   [Test Hooks](#test-hooks)
+    -   [Available Hooks](#available-hooks)
+    -   [Hook Execution Order](#hook-execution-order)
+    -   [Examples](#examples)
+    -   [Multiple Hooks](#multiple-hooks)
+-   [Command line filtering](#command-line-filtering)
+    -   [Filtering by string](#filtering-by-string)
+    -   [Filtering by Pattern](#filtering-by-pattern)
+    -   [Including and excluding test files in the configuration file](#including-and-excluding-test-files-in-the-configuration-file)
+-   [Test definition selection](#test-definition-selection)
+    -   [Ignoring/Skipping Tests](#ignoring%2Fskipping-tests)
+    -   [Only Run Specific Tests](#only-run-specific-tests)
+-   [Failing fast](#failing-fast)
+-   [Reporters](#reporters)
+-   [Spying, mocking (test doubles), stubbing and faking time](#spying%2C-mocking-\(test-doubles\)%2C-stubbing-and-faking-time)
+-   [Coverage](#coverage)
+-   [Behavior-Driven Development](#behavior-driven-development)
+-   [Documentation Tests](#documentation-tests)
+    -   [Example code blocks](#example-code-blocks)
+    -   [Exported items are automatically imported](#exported-items-are-automatically-imported)
+    -   [Skipping code blocks](#skipping-code-blocks)
+-   [Sanitizers](#sanitizers)
+    -   [Resource sanitizer](#resource-sanitizer)
+    -   [Async operation sanitizer](#async-operation-sanitizer)
+    -   [Exit sanitizer](#exit-sanitizer)
+-   [Snapshot testing](#snapshot-testing)
+-   [Tests and Permissions](#tests-and-permissions)
 
 Deno provides a built-in test runner for writing and running tests in both JavaScript and TypeScript. This makes it easy to ensure your code is reliable and functions as expected without needing to install any additional dependencies or tools. The `deno test` runner allows you fine-grained control over permissions for each test, ensuring that code does not do anything unexpected.
 
@@ -143,15 +144,15 @@ Deno provides test hooks that allow you to run setup and teardown code before an
 
 ### Available Hooks
 
-*   `Deno.test.beforeAll(fn)` - Runs once before all tests in the current scope
-*   `Deno.test.beforeEach(fn)` - Runs before each individual test
-*   `Deno.test.afterEach(fn)` - Runs after each individual test
-*   `Deno.test.afterAll(fn)` - Runs once after all tests in the current scope
+-   `Deno.test.beforeAll(fn)` - Runs once before all tests in the current scope
+-   `Deno.test.beforeEach(fn)` - Runs before each individual test
+-   `Deno.test.afterEach(fn)` - Runs after each individual test
+-   `Deno.test.afterAll(fn)` - Runs once after all tests in the current scope
 
 ### Hook Execution Order
 
-*   **beforeAll/beforeEach**: Execute in FIFO (first in, first out) order
-*   **afterEach/afterAll**: Execute in LIFO (last in, first out) order
+-   **beforeAll/beforeEach**: Execute in FIFO (first in, first out) order
+-   **afterEach/afterAll**: Execute in LIFO (last in, first out) order
 
 If an exception is raised in any hook, remaining hooks of the same type will not run, and the current test will be marked as failed.
 
@@ -359,9 +360,9 @@ This will cause the test runner to stop execution after the first test failure.
 
 Deno includes three built-in reporters to format test output:
 
-*   `pretty` (default): Provides a detailed and readable output.
-*   `dot`: Offers a concise output, useful for quickly seeing test results.
-*   `junit`: Produces output in JUnit XML format, which is useful for integrating with CI/CD tools.
+-   `pretty` (default): Provides a detailed and readable output.
+-   `dot`: Offers a concise output, useful for quickly seeing test results.
+-   `junit`: Produces output in JUnit XML format, which is useful for integrating with CI/CD tools.
 
 You can specify which reporter to use with the --reporter flag:
 
@@ -422,7 +423,7 @@ describe("add function", () => {
 
 Check out the [`@std/testing` documentation](/runtime/reference/std/testing/) for more information on these functions and hooks.
 
-*   [BDD testing tutorial](/examples/bdd_tutorial/)
+-   [BDD testing tutorial](/examples/bdd_tutorial/)
 
 ## Documentation Tests
 
@@ -450,16 +451,16 @@ export function add(a: number, b: number): number {
 
 The triple backticks mark the start and end of code blocks, the language is determined by the language identifier attribute which may be one of the following:
 
-*   `js`
-*   `javascript`
-*   `mjs`
-*   `cjs`
-*   `jsx`
-*   `ts`
-*   `typescript`
-*   `mts`
-*   `cts`
-*   `tsx`
+-   `js`
+-   `javascript`
+-   `mjs`
+-   `cjs`
+-   `jsx`
+-   `ts`
+-   `typescript`
+-   `mts`
+-   `cts`
+-   `tsx`
 
 If no language identifier is specified then the language is inferred from media type of the source document that the code block is extracted from.
 
@@ -655,7 +656,7 @@ The [Deno Standard Library](/runtime/reference/std/) includes a [snapshot module
 
 Snapshot testing enables catching a wide array of bugs with very little code. It is particularly helpful in situations where it is difficult to precisely express what should be asserted, without requiring a prohibitive amount of code, or where the assertions a test makes are expected to change often.
 
-*   [Snapshot testing tutorial](/examples/snapshot_test_tutorial/)
+-   [Snapshot testing tutorial](/examples/snapshot_test_tutorial/)
 
 ## Tests and Permissions
 

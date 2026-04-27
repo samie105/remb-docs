@@ -5,25 +5,24 @@ canonical_url: "https://nextjs.org/docs/pages/api-reference/components/link"
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:20:00.579Z"
-content_hash: "275647d09c2dd24167d1cea3d2f307c0248386b2c183a946b499943676892938"
+last_crawled_at: "2026-04-27T18:19:23.081Z"
+content_hash: "ac2d399706f19946022ff9a0c7f6e9700023323898ea066cec3530fcc2f43b30"
 menu_path: ["Link"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/pages/api-reference/components/image-legacy/index.md", "title": "Image (Legacy)"}
-nav_next: {"path": "nextjs/docs/pages/api-reference/components/script/index.md", "title": "Script"}
+version: "latest"
+content_language: "en"
 ---
+[API Reference](/docs/pages/api-reference)[Components](/docs/pages/api-reference/components)Link
 
 # Link
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 `<Link>` is a React component that extends the HTML `<a>` element to provide [prefetching](/docs/app/getting-started/linking-and-navigating#prefetching) and client-side navigation between routes. It is the primary way to navigate between routes in Next.js.
 
 Basic usage:
 
 pages/index.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -39,77 +38,16 @@ export default function Home() {
 
 The following props can be passed to the `<Link>` component:
 
-Prop
-
-Example
-
-Type
-
-Required
-
-[`href`](#href-required)
-
-`href="/dashboard"`
-
-String or Object
-
-Yes
-
-[`as`](#as)
-
-`as="/post/abc"`
-
-String or Object
-
-\-
-
-[`replace`](#replace)
-
-`replace={false}`
-
-Boolean
-
-\-
-
-[`scroll`](#scroll)
-
-`scroll={false}`
-
-Boolean
-
-\-
-
-[`prefetch`](#prefetch)
-
-`prefetch={false}`
-
-Boolean
-
-\-
-
-[`shallow`](#shallow)
-
-`shallow={false}`
-
-Boolean
-
-\-
-
-[`locale`](#locale)
-
-`locale="fr"`
-
-String or Boolean
-
-\-
-
-[`onNavigate`](#onnavigate)
-
-`onNavigate={(e) => {}}`
-
-Function
-
-\-
+| Prop | Example | Type | Required |
+| --- | --- | --- | --- |
+| [`href`](#href-required) | `href="/dashboard"` | String or Object | Yes |
+| [`as`](#as) | `as="/post/abc"` | String or Object | \- |
+| [`replace`](#replace) | `replace={false}` | Boolean | \- |
+| [`scroll`](#scroll) | `scroll={false}` | Boolean | \- |
+| [`prefetch`](#prefetch) | `prefetch={false}` | Boolean | \- |
+| [`shallow`](#shallow) | `shallow={false}` | Boolean | \- |
+| [`locale`](#locale) | `locale="fr"` | String or Boolean | \- |
+| [`onNavigate`](#onnavigate) | `onNavigate={(e) => {}}` | Function | \- |
 
 > **Good to know**: `<a>` tag attributes such as `className` or `target="_blank"` can be added to `<Link>` as props and will be passed to the underlying `<a>` element.
 
@@ -118,8 +56,6 @@ Function
 The path or URL to navigate to.
 
 pages/index.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -147,8 +83,6 @@ export default function Home() {
 
 pages/index.tsx
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -173,8 +107,6 @@ When `scroll = {false}`, Next.js will not attempt to scroll to the first Page el
 
 pages/index.tsx
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -195,12 +127,10 @@ Prefetching happens when a `<Link />` component enters the user's viewport (init
 
 The following values can be passed to the `prefetch` prop:
 
-*   **`true` (default)**: The full route and its data will be prefetched.
-*   `false`: Prefetching will not happen when entering the viewport, but will happen on hover. If you want to completely remove fetching on hover as well, consider using an `<a>` tag or [incrementally adopting](/docs/app/guides/migrating/app-router-migration) the App Router, which enables disabling prefetching on hover too.
+-   **`true` (default)**: The full route and its data will be prefetched.
+-   `false`: Prefetching will not happen when entering the viewport, but will happen on hover. If you want to completely remove fetching on hover as well, consider using an `<a>` tag or [incrementally adopting](/docs/app/guides/migrating/app-router-migration) the App Router, which enables disabling prefetching on hover too.
 
 pages/index.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -222,8 +152,6 @@ Update the path of the current page without rerunning [`getStaticProps`](/docs/p
 
 pages/index.tsx
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -243,8 +171,6 @@ export default function Home() {
 The active locale is automatically prepended. `locale` allows for providing a different locale. When `false` `href` has to include the locale as the default behavior is disabled.
 
 pages/index.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -283,8 +209,6 @@ An event handler called during client-side navigation. The handler receives an e
 
 app/page.tsx
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -310,9 +234,9 @@ export default function Page() {
 
 > **Good to know**: While `onClick` and `onNavigate` may seem similar, they serve different purposes. `onClick` executes for all click events, while `onNavigate` only runs during client-side navigation. Some key differences:
 > 
-> *   When using modifier keys (`Ctrl`/`Cmd` + Click), `onClick` executes but `onNavigate` doesn't since Next.js prevents default navigation for new tabs.
-> *   External URLs won't trigger `onNavigate` since it's only for client-side and same-origin navigations.
-> *   Links with the `download` attribute will work with `onClick` but not `onNavigate` since the browser will treat the linked URL as a download.
+> -   When using modifier keys (`Ctrl`/`Cmd` + Click), `onClick` executes but `onNavigate` doesn't since Next.js prevents default navigation for new tabs.
+> -   External URLs won't trigger `onNavigate` since it's only for client-side and same-origin navigations.
+> -   Links with the `download` attribute will work with `onClick` but not `onNavigate` since the browser will treat the linked URL as a download.
 
 ### `transitionTypes`[](#transitiontypes)
 
@@ -327,8 +251,6 @@ For [dynamic route segments](/docs/pages/building-your-application/routing/dynam
 For example, you can generate a list of links to the dynamic route `pages/blog/[slug].js`
 
 pages/blog/index.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -364,8 +286,6 @@ If you'd like to scroll to a specific `id` on navigation, you can append your UR
 `Link` can also receive a URL object and it will automatically format it to create the URL string:
 
 pages/index.ts
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -404,8 +324,8 @@ export default Home
 
 The above example has a link to:
 
-*   A predefined route: `/about?name=test`
-*   A [dynamic route](/docs/pages/building-your-application/routing/dynamic-routes#convention): `/blog/my-post`
+-   A predefined route: `/about?name=test`
+-   A [dynamic route](/docs/pages/building-your-application/routing/dynamic-routes#convention): `/blog/my-post`
 
 You can use every property as defined in the [Node.js URL module documentation](https://nodejs.org/api/url.html#url_url_strings_and_url_objects).
 
@@ -414,8 +334,6 @@ You can use every property as defined in the [Node.js URL module documentation](
 The default behavior of the `Link` component is to `push` a new URL into the `history` stack. You can use the `replace` prop to prevent adding a new entry, as in the following example:
 
 pages/index.js
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -437,8 +355,6 @@ The default behavior of `Link` is to scroll to the top of the page. When there i
 
 pages/index.tsx
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -458,8 +374,6 @@ export default function Home() {
 Because Next.js skips sticky and fixed positioned elements when finding the scroll target, content may end up behind a sticky header after navigation. For example, if your layout has a sticky header:
 
 app/layout.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -504,8 +418,6 @@ For example, if you want to serve a `/dashboard` route that has authenticated an
 
 proxy.ts
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -526,8 +438,6 @@ export function proxy(request: Request) {
 In this case, you would want to use the following code in your `<Link />` component:
 
 pages/index.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -552,36 +462,13 @@ export default function Home() {
 
 ## Version history[](#version-history)
 
-Version
-
-Changes
-
-`v15.4.0`
-
-Add `auto` as an alias to the default `prefetch` behavior.
-
-`v15.3.0`
-
-Add `onNavigate` API
-
-`v13.0.0`
-
-No longer requires a child `<a>` tag. A [codemod](/docs/app/guides/upgrading/codemods#remove-a-tags-from-link-components) is provided to automatically update your codebase.
-
-`v10.0.0`
-
-`href` props pointing to a dynamic route are automatically resolved and no longer require an `as` prop.
-
-`v8.0.0`
-
-Improved prefetching performance.
-
-`v1.0.0`
-
-`next/link` introduced.
+| Version | Changes |
+| --- | --- |
+| `v15.4.0` | Add `auto` as an alias to the default `prefetch` behavior. |
+| `v15.3.0` | Add `onNavigate` API |
+| `v13.0.0` | No longer requires a child `<a>` tag. A [codemod](/docs/app/guides/upgrading/codemods#remove-a-tags-from-link-components) is provided to automatically update your codebase. |
+| `v10.0.0` | `href` props pointing to a dynamic route are automatically resolved and no longer require an `as` prop. |
+| `v8.0.0` | Improved prefetching performance. |
+| `v1.0.0` | `next/link` introduced. |
 
 Was this helpful?
-
-supported.
-
-Send

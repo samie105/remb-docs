@@ -5,59 +5,13 @@ canonical_url: "https://tailwindcss.com/docs/max-width"
 docset: "tailwind"
 kind: "framework"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:51:56.463Z"
-content_hash: "b86da7c07f025dc22b51dac6e8fdc3432b5e1732f797e3da8f3096bfd950f042"
+last_crawled_at: "2026-04-27T20:04:09.839Z"
+content_hash: "7a04aeb41c7f39ba3275cb3a56e59aac16ec4e6635f1c1770ec0ae7a714e2fc3"
 menu_path: ["max-width"]
 section_path: []
-nav_prev: {"path": "tailwind/docs/min-width/index.md", "title": "min-width"}
-nav_next: {"path": "tailwind/docs/height/index.md", "title": "height"}
+content_language: "en"
 ---
-
 Utilities for setting the maximum width of an element.
-
-Class
-
-Styles
-
-`max-w-<number>`
-
-`max-width: calc(var(--spacing) * <number>);`
-
-`max-w-<fraction>`
-
-`max-width: calc(<fraction> * 100%);`
-
-`max-w-3xs`
-
-`max-width: var(--container-3xs); /* 16rem (256px) */`
-
-`max-w-2xs`
-
-`max-width: var(--container-2xs); /* 18rem (288px) */`
-
-`max-w-xs`
-
-`max-width: var(--container-xs); /* 20rem (320px) */`
-
-`max-w-sm`
-
-`max-width: var(--container-sm); /* 24rem (384px) */`
-
-`max-w-md`
-
-`max-width: var(--container-md); /* 28rem (448px) */`
-
-`max-w-lg`
-
-`max-width: var(--container-lg); /* 32rem (512px) */`
-
-`max-w-xl`
-
-`max-width: var(--container-xl); /* 36rem (576px) */`
-
-`max-w-2xl`
-
-`max-width: var(--container-2xl); /* 42rem (672px) */`
 
 ## [Examples](#examples)
 
@@ -129,7 +83,7 @@ Prefix a `max-width` utility with a breakpoint variant like `md:` to only apply 
 <div class="max-w-sm md:max-w-lg ...">  <!-- ... --></div>
 ```
 
-Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).
+Learn more about using variants in the [variants documentation](https://tailwindcss.com/docs/hover-focus-and-other-states).
 
 ## [Customizing your theme](#customizing-your-theme)
 
@@ -139,4 +93,4 @@ The `max-w-<number>` utilities are driven by the `--spacing` theme variable, whi
 @theme {  --spacing: 1px; }
 ```
 
-Learn more about customizing the spacing scale in the [theme variable documentation](tailwind/docs/theme/index.md).
+Learn more about customizing the spacing scale in the [theme variable documentation](https://tailwindcss.com/docs/theme).

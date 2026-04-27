@@ -5,14 +5,12 @@ canonical_url: "https://www.postgresql.org/docs/current/explicit-locking.html"
 docset: "postgres"
 kind: "database"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:45:19.397Z"
-content_hash: "1ca6742ea9a7abdf20b903ff1cdc06d292c49c53ac5f869cba775f157158fb62"
+last_crawled_at: "2026-04-27T20:46:54.244Z"
+content_hash: "ea445b34851418081dacbacb705e50a337c6e63bde1ead1b59b090ec456b801a"
 menu_path: ["PostgreSQL: Documentation: 18: 13.3. Explicit Locking"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/event-trigger-table-rewrite-example.html/index.md", "title": "PostgreSQL: Documentation: 18: 38.4.\u00a0A Table Rewrite Event Trigger Example"}
-nav_next: {"path": "postgres/docs/current/extend-extensions.html/index.md", "title": "PostgreSQL: Documentation: 18: 36.17.\u00a0Packaging Related Objects into an Extension"}
+content_language: "en"
 ---
-
 PostgreSQL provides various lock modes to control concurrent access to data in tables. These modes can be used for application-controlled locking in situations where MVCC does not give the desired behavior. Also, most PostgreSQL commands automatically acquire locks of appropriate modes to ensure that referenced tables are not dropped or modified in incompatible ways while the command executes. (For example, `TRUNCATE` cannot safely be executed concurrently with other operations on the same table, so it obtains an `ACCESS EXCLUSIVE` lock on the table to enforce that.)
 
 To examine a list of the currently outstanding locks in a database server, use the [`pg_locks`](https://www.postgresql.org/docs/current/view-pg-locks.html "53.13. pg_locks") system view. For more information on monitoring the status of the lock manager subsystem, refer to [Chapter 27](https://www.postgresql.org/docs/current/monitoring.html "Chapter 27. Monitoring Database Activity").
@@ -80,170 +78,18 @@ Once acquired, a lock is normally held until the end of the transaction. But if 
 **Table 13.2. Conflicting Lock Modes**
 
         
-
-Requested Lock Mode
-
-Existing Lock Mode
-
-`ACCESS SHARE`
-
-`ROW SHARE`
-
-`ROW EXCL.`
-
-`SHARE UPDATE EXCL.`
-
-`SHARE`
-
-`SHARE ROW EXCL.`
-
-`EXCL.`
-
-`ACCESS EXCL.`
-
-`ACCESS SHARE`
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-X
-
-`ROW SHARE`
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-X
-
-X
-
-`ROW EXCL.`
-
- 
-
- 
-
- 
-
- 
-
-X
-
-X
-
-X
-
-X
-
-`SHARE UPDATE EXCL.`
-
- 
-
- 
-
- 
-
-X
-
-X
-
-X
-
-X
-
-X
-
-`SHARE`
-
- 
-
- 
-
-X
-
-X
-
- 
-
-X
-
-X
-
-X
-
-`SHARE ROW EXCL.`
-
- 
-
- 
-
-X
-
-X
-
-X
-
-X
-
-X
-
-X
-
-`EXCL.`
-
- 
-
-X
-
-X
-
-X
-
-X
-
-X
-
-X
-
-X
-
-`ACCESS EXCL.`
-
-X
-
-X
-
-X
-
-X
-
-X
-
-X
-
-X
-
-X
+| Requested Lock Mode | Existing Lock Mode |
+| --- | --- |
+| `ACCESS SHARE` | `ROW SHARE` | `ROW EXCL.` | `SHARE UPDATE EXCL.` | `SHARE` | `SHARE ROW EXCL.` | `EXCL.` | `ACCESS EXCL.` |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| `ACCESS SHARE` |   |   |   |   |   |   |   | X |
+| `ROW SHARE` |   |   |   |   |   |   | X | X |
+| `ROW EXCL.` |   |   |   |   | X | X | X | X |
+| `SHARE UPDATE EXCL.` |   |   |   | X | X | X | X | X |
+| `SHARE` |   |   | X | X |   | X | X | X |
+| `SHARE ROW EXCL.` |   |   | X | X | X | X | X | X |
+| `EXCL.` |   | X | X | X | X | X | X | X |
+| `ACCESS EXCL.` | X | X | X | X | X | X | X | X |
 
   
 
@@ -276,58 +122,14 @@ PostgreSQL doesn't remember any information about modified rows in memory, so th
 **Table 13.3. Conflicting Row-Level Locks**
 
     
-
-Requested Lock Mode
-
-Current Lock Mode
-
-FOR KEY SHARE
-
-FOR SHARE
-
-FOR NO KEY UPDATE
-
-FOR UPDATE
-
-FOR KEY SHARE
-
- 
-
- 
-
- 
-
-X
-
-FOR SHARE
-
- 
-
- 
-
-X
-
-X
-
-FOR NO KEY UPDATE
-
- 
-
-X
-
-X
-
-X
-
-FOR UPDATE
-
-X
-
-X
-
-X
-
-X
+| Requested Lock Mode | Current Lock Mode |
+| --- | --- |
+| FOR KEY SHARE | FOR SHARE | FOR NO KEY UPDATE | FOR UPDATE |
+| --- | --- | --- | --- |
+| FOR KEY SHARE |   |   |   | X |
+| FOR SHARE |   |   | X | X |
+| FOR NO KEY UPDATE |   | X | X | X |
+| FOR UPDATE | X | X | X | X |
 
   
 
@@ -366,7 +168,7 @@ There are two ways to acquire an advisory lock in PostgreSQL: at session level o
 
 Like all locks in PostgreSQL, a complete list of advisory locks currently held by any session can be found in the [`pg_locks`](https://www.postgresql.org/docs/current/view-pg-locks.html "53.13. pg_locks") system view.
 
-Both advisory locks and regular locks are stored in a shared memory pool whose size is defined by the configuration variables [max\_locks\_per\_transaction](https://www.postgresql.org/docs/current/runtime-config-locks.html#GUC-MAX-LOCKS-PER-TRANSACTION) and [max\_connections](postgres/docs/current/runtime-config-connection.html/index.md#GUC-MAX-CONNECTIONS). Care must be taken not to exhaust this memory or the server will be unable to grant any locks at all. This imposes an upper limit on the number of advisory locks grantable by the server, typically in the tens to hundreds of thousands depending on how the server is configured.
+Both advisory locks and regular locks are stored in a shared memory pool whose size is defined by the configuration variables [max\_locks\_per\_transaction](https://www.postgresql.org/docs/current/runtime-config-locks.html#GUC-MAX-LOCKS-PER-TRANSACTION) and [max\_connections](https://www.postgresql.org/docs/current/runtime-config-connection.html#GUC-MAX-CONNECTIONS). Care must be taken not to exhaust this memory or the server will be unable to grant any locks at all. This imposes an upper limit on the number of advisory locks grantable by the server, typically in the tens to hundreds of thousands depending on how the server is configured.
 
 In certain cases using advisory locking methods, especially in queries involving explicit ordering and `LIMIT` clauses, care must be taken to control the locks acquired because of the order in which SQL expressions are evaluated. For example:
 

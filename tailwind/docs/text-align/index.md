@@ -5,43 +5,13 @@ canonical_url: "https://tailwindcss.com/docs/text-align"
 docset: "tailwind"
 kind: "framework"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:57:13.175Z"
-content_hash: "5f05034244a13252e5466433c158004af1c034c449384f3468d3717946642d0e"
+last_crawled_at: "2026-04-27T20:11:05.314Z"
+content_hash: "4796433f6d4ef6cc71a916b6eafff9960b1b2101693a46d71ccf7aad6e7599a0"
 menu_path: ["text-align"]
 section_path: []
-nav_prev: {"path": "tailwind/docs/list-style-type/index.md", "title": "list-style-type"}
-nav_next: {"path": "tailwind/docs/color/index.md", "title": "color"}
+content_language: "en"
 ---
-
 Utilities for controlling the alignment of text.
-
-Class
-
-Styles
-
-`text-left`
-
-`text-align: left;`
-
-`text-center`
-
-`text-align: center;`
-
-`text-right`
-
-`text-align: right;`
-
-`text-justify`
-
-`text-align: justify;`
-
-`text-start`
-
-`text-align: start;`
-
-`text-end`
-
-`text-align: end;`
 
 ## [Examples](#examples)
 
@@ -103,4 +73,4 @@ Prefix a `text-align` utility with a breakpoint variant like `md:` to only apply
 <p class="text-left md:text-center ...">  Lorem ipsum dolor sit amet...</p>
 ```
 
-Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).
+Learn more about using variants in the [variants documentation](https://tailwindcss.com/docs/hover-focus-and-other-states).

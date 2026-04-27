@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/app/api-reference/functions/not-found"
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:11:57.634Z"
-content_hash: "4b4cc6d07faa59cce95ca65a681e89eb66a0113edbbc6d3602f74b4b22d10bf6"
+last_crawled_at: "2026-04-27T18:10:42.548Z"
+content_hash: "95a2c9c58e2d0597b7c677d132e3c34d124c843057023acbca01afd2a6e61c8c"
 menu_path: ["notFound"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/api-reference/functions/next-response/index.md", "title": "NextResponse"}
-nav_next: {"path": "nextjs/docs/app/api-reference/functions/permanentRedirect/index.md", "title": "permanentRedirect"}
+version: "latest"
+content_language: "en"
 ---
+[API Reference](/docs/app/api-reference)[Functions](/docs/app/api-reference/functions)notFound
 
 # notFound
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 The `notFound` function allows you to render the [`not-found file`](/docs/app/api-reference/file-conventions/not-found) within a route segment as well as inject a [`<meta name="robots" content="noindex" />`](/docs/app/api-reference/file-conventions/loading#status-codes) tag for search engines.
 
@@ -50,28 +51,8 @@ export default async function Profile({ params }) {
 
 ## Version History[](#version-history)
 
-Version
-
-Changes
-
-`v13.0.0`
-
-`notFound` introduced.
-
-[Previous
-
-NextResponse
-
-](/docs/app/api-reference/functions/next-response)
-
-[Next
-
-permanentRedirect
-
-](/docs/app/api-reference/functions/permanentRedirect)
+| Version | Changes |
+| --- | --- |
+| `v13.0.0` | `notFound` introduced. |
 
 Was this helpful?
-
-supported.
-
-Send

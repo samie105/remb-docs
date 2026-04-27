@@ -5,19 +5,20 @@ canonical_url: "https://docs.deno.com/runtime/reference/cli/completions/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:51:59.178Z"
-content_hash: "795013d5ac47cb906326a0368aa0bc8f0e4458142508bc06ad30df9547bf9599"
+last_crawled_at: "2026-04-27T17:27:31.738Z"
+content_hash: "26494c187ed23d5652f664b49a535b2a33f03eb18399282f24fd62b215e472f8"
 menu_path: ["deno completions"]
 section_path: []
+content_language: "en"
 ---
-On this page
+**On this page**
 
-*   [Examples](#examples)
-    *   [Configure Bash shell completion](#configure-bash-shell-completion)
-    *   [Configure PowerShell shell completion](#configure-powershell-shell-completion)
-    *   [Configure zsh shell completion](#configure-zsh-shell-completion)
-    *   [Configure fish shell completion](#configure-fish-shell-completion)
-*   [Options](#options)
+-   [Examples](#examples)
+    -   [Configure Bash shell completion](#configure-bash-shell-completion)
+    -   [Configure PowerShell shell completion](#configure-powershell-shell-completion)
+    -   [Configure zsh shell completion](#configure-zsh-shell-completion)
+    -   [Configure fish shell completion](#configure-fish-shell-completion)
+-   [Options](#options)
 
 You can use the output script to configure autocompletion for `deno` commands. For example: `deno un` -> Tab -> `deno uninstall`.
 

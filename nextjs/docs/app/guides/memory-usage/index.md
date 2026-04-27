@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/app/guides/memory-usage"
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:15:10.858Z"
-content_hash: "645b4f7bfa6b3082ff7f2c685e949d3e8cce96b1b767cb33e01dea2c3c74115a"
+last_crawled_at: "2026-04-27T18:14:04.499Z"
+content_hash: "c5caa9fca43ef440fcbae8a5477a6113409483db6295851ff0e20d14220164b3"
 menu_path: ["How to optimize memory usage"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/guides/mdx/index.md", "title": "How to use markdown and MDX in Next.js"}
-nav_next: {"path": "nextjs/docs/app/guides/migrating/index.md", "title": "Migrating"}
+version: "latest"
+content_language: "en"
 ---
+[App Router](/docs/app)[Guides](/docs/app/guides)Memory Usage
 
 # How to optimize memory usage
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 As applications grow and become more feature rich, they can demand more resources when developing locally or creating production builds.
 
@@ -126,7 +127,7 @@ const nextConfig = {
 export default nextConfig
 ```
 
-*   [Ignoring TypeScript Errors](/docs/app/api-reference/config/typescript#disabling-typescript-errors-in-production)
+-   [Ignoring TypeScript Errors](/docs/app/api-reference/config/typescript#disabling-typescript-errors-in-production)
 
 Keep in mind that this may produce faulty deploys due to type errors. We strongly recommend only promoting builds to production after static analysis has completed. If you deploy to Vercel, you can check out the [guide for staging deployments](https://vercel.com/docs/deployments/managing-deployments#staging-and-promoting-a-production-deployment) to learn how to promote builds to production after custom tasks have succeeded.
 
@@ -154,8 +155,6 @@ To disable this optimization, set the `experimental.preloadEntriesOnStart` flag 
 
 next.config.ts
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -172,20 +171,4 @@ export default config
 
 Next.js doesn't unload these JavaScript modules, meaning that even with this optimization disabled, the memory footprint of your Next.js server will eventually be the same if all pages are eventually requested.
 
-[Previous
-
-MDX
-
-](/docs/app/guides/mdx)
-
-[Next
-
-Migrating
-
-](/docs/app/guides/migrating)
-
 Was this helpful?
-
-supported.
-
-Send

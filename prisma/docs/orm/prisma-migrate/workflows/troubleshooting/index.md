@@ -5,22 +5,21 @@ canonical_url: "https://www.prisma.io/docs/orm/prisma-migrate/workflows/troubles
 docset: "prisma"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:51:32.443Z"
-content_hash: "1cbc32a735cc5cf9e43f524d2092756f3f972ce446c8d8268bcfc3611fef721c"
+last_crawled_at: "2026-04-27T19:41:59.123Z"
+content_hash: "b833c14d51887518e4b935517a3dda61163261edd62ec1ca209ba07682fc3ef9"
 menu_path: ["Troubleshooting"]
 section_path: []
-nav_prev: {"path": "prisma/docs/orm/prisma-migrate/workflows/squashing-migrations/index.md", "title": "Squashing migrations"}
-nav_next: {"path": "prisma/docs/orm/prisma-migrate/workflows/unsupported-database-features/index.md", "title": "Unsupported database features (Prisma Migrate)"}
+tab_variants: ["npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun"]
+content_language: "en"
 ---
-
 Workflows
 
 Troubleshooting issues with Prisma Migrate in a development environment.
 
 This guide describes how to resolve issues with Prisma Migrate in a development environment, which often involves resetting your database. For production-focused troubleshooting, see:
 
-*   [Production troubleshooting](prisma/docs/orm/prisma-migrate/workflows/patching-and-hotfixing/index.md)
-*   [Patching / hotfixing production databases](prisma/docs/orm/prisma-migrate/workflows/patching-and-hotfixing/index.md)
+-   [Production troubleshooting](https://www.prisma.io/docs/orm/prisma-migrate/workflows/patching-and-hotfixing)
+-   [Patching / hotfixing production databases](https://www.prisma.io/docs/orm/prisma-migrate/workflows/patching-and-hotfixing)
 
 ## [Handling migration history conflicts](#handling-migration-history-conflicts)
 
@@ -28,8 +27,8 @@ A migration history conflict occurs when there are discrepancies between the **m
 
 #### [Causes of migration history conflict in a development environment](#causes-of-migration-history-conflict-in-a-development-environment)
 
-*   A migration that has already been applied is later modified
-*   A migration that has already been applied is missing from the file system
+-   A migration that has already been applied is later modified
+-   A migration that has already been applied is missing from the file system
 
 In a development environment, switching between feature branches can result in a history conflict because the `_prisma_migrations` table contains migrations from `branch-1`, and switching to `branch-2` might cause some of those migrations to disappear.
 
@@ -43,23 +42,23 @@ Database schema drift occurs when your database schema is out of sync with your 
 
 Schema drift can occur if:
 
-*   The database schema was changed _without_ using migrations - for example, by using [`prisma db push`](prisma/docs/orm/reference/prisma-cli-reference/index.md#db-push) or manually changing the database schema.
+-   The database schema was changed _without_ using migrations - for example, by using [`prisma db push`](https://www.prisma.io/docs/orm/reference/prisma-cli-reference#db-push) or manually changing the database schema.
 
 #### [Fixing schema drift in a development environment](#fixing-schema-drift-in-a-development-environment)
 
 If you made manual changes to the database that you do not want to keep, or can easily replicate in the Prisma schema:
 
-*   Reset your database:
+-   Reset your database:
 
-*   Replicate the changes in the Prisma schema and generate a new migration:
+-   Replicate the changes in the Prisma schema and generate a new migration:
 
 If you made manual changes to the database that you want to keep, you can:
 
-*   Introspect the database:
+-   Introspect the database:
 
 Prisma will update your schema with the changes made directly in the database.
 
-*   Generate a new migration to include the introspected changes in your migration history:
+-   Generate a new migration to include the introspected changes in your migration history:
 
 Prisma Migrate will prompt you to reset, then applies all existing migrations and a new migration based on the introspected changes. Your database and migration history are now in sync, including your manual changes.
 
@@ -67,10 +66,10 @@ Prisma Migrate will prompt you to reset, then applies all existing migrations an
 
 A migration might fail if:
 
-*   You [modify a migration before running it](prisma/docs/orm/prisma-migrate/workflows/customizing-migrations/index.md) and introduce a syntax error
-*   You add a mandatory (`NOT NULL`) column to a table that already has data
-*   The migration process stopped unexpectedly
-*   The database shut down in the middle of the migration process
+-   You [modify a migration before running it](https://www.prisma.io/docs/orm/prisma-migrate/workflows/customizing-migrations) and introduce a syntax error
+-   You add a mandatory (`NOT NULL`) column to a table that already has data
+-   The migration process stopped unexpectedly
+-   The database shut down in the middle of the migration process
 
 Each migration in the `_prisma_migrations` table has a `logs` column that stores the error.
 
@@ -78,16 +77,16 @@ Each migration in the `_prisma_migrations` table has a `logs` column that stores
 
 The easiest way to handle a failed migration in a developer environment is to address the root cause and reset the database. For example:
 
-*   If you introduced a SQL syntax error by manually editing the database, update the `migration.sql` file that failed and reset the database:
+-   If you introduced a SQL syntax error by manually editing the database, update the `migration.sql` file that failed and reset the database:
 
-*   If you introduced a change in the Prisma schema that cannot be applied to a database with data (for example, a mandatory column in a table with data):
-    *   Delete the `migration.sql` file.
-    *   Modify the schema - for example, add a default value to the mandatory field.
-    *   Migrate:
+-   If you introduced a change in the Prisma schema that cannot be applied to a database with data (for example, a mandatory column in a table with data):
+    -   Delete the `migration.sql` file.
+    -   Modify the schema - for example, add a default value to the mandatory field.
+    -   Migrate:
 
 Prisma Migrate will prompt you to reset the database and re-apply all migrations.
 
-*   If something interrupted the migration process, reset the database:
+-   If something interrupted the migration process, reset the database:
 
 You might see the following error if you attempt to run Prisma Migrate commands in an environment that uses PgBouncer for connection pooling:
 
@@ -96,6 +95,4 @@ Error: undefined: Database error
 Error querying the database: db error: ERROR: prepared statement "s0" already exists
 ```
 
-See [Prisma Migrate and PgBouncer workaround](prisma/docs/orm/prisma-client/setup-and-configuration/databases-connections/pgbouncer/index.md) for further information and a workaround.
-
-[Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/prisma-migrate/workflows/troubleshooting.mdx)
+See [Prisma Migrate and PgBouncer workaround](https://www.prisma.io/docs/orm/prisma-client/setup-and-configuration/databases-connections/pgbouncer) for further information and a workaround.

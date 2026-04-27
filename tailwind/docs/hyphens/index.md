@@ -5,37 +5,41 @@ canonical_url: "https://tailwindcss.com/docs/hyphens"
 docset: "tailwind"
 kind: "framework"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:00:18.228Z"
-content_hash: "92b43dff882d86c830998bf981fbe4664f530dca81788f411ad380a0cafcb8b9"
+last_crawled_at: "2026-04-27T20:15:10.032Z"
+content_hash: "ee74ebafe99fcd68b3830480d0158f43a7102e05adef5ee42bffa60478c67751"
 menu_path: ["hyphens"]
 section_path: []
-nav_prev: {"path": "tailwind/docs/overflow-wrap/index.md", "title": "overflow-wrap"}
-nav_next: {"path": "tailwind/docs/content/index.md", "title": "content"}
+content_language: "en"
 ---
+[](/)
+
+[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
+
+1.  Typography
+2.  hyphens
+
+Typography
 
 # hyphens
 
 Utilities for controlling how words should be hyphenated.
 
-Class
-
-Styles
-
-`hyphens-none`
-
+| Class | Styles |
+| --- | --- |
+| `hyphens-none` | 
 `hyphens: none;`
 
-`hyphens-manual`
+ |
+| `hyphens-manual` | 
 
 `hyphens: manual;`
 
-`hyphens-auto`
+ |
+| `hyphens-auto` | 
 
 `hyphens: auto;`
 
-## [Examples](#examples)
-
-### [Preventing hyphenation](#preventing-hyphenation)
+ |
 
 Use the `hyphens-none` utility to prevent words from being hyphenated even if the line break suggestion `&shy;` is used:
 
@@ -44,8 +48,6 @@ Officially recognized by the Duden dictionary as the longest word in German, Kra
 ```
 <p class="hyphens-none">  ... Kraftfahrzeug&shy;haftpflichtversicherung is a ...</p>
 ```
-
-### [Manual hyphenation](#manual-hyphenation)
 
 Use the `hyphens-manual` utility to only set hyphenation points where the line break suggestion `&shy;` is used:
 
@@ -57,8 +59,6 @@ Officially recognized by the Duden dictionary as the longest word in German, Kra
 
 This is the default browser behavior.
 
-### [Automatic hyphenation](#automatic-hyphenation)
-
 Use the `hyphens-auto` utility to allow the browser to automatically choose hyphenation points based on the language:
 
 Officially recognized by the Duden dictionary as the longest word in German, Kraftfahrzeughaftpflichtversicherung is a 36 letter word for motor vehicle liability insurance.
@@ -68,8 +68,6 @@ Officially recognized by the Duden dictionary as the longest word in German, Kra
 ```
 
 The line break suggestion `&shy;` will be preferred over automatic hyphenation points.
-
-### [Responsive design](#responsive-design)
 
 Prefix a `hyphens` utility with a breakpoint variant like `md:` to only apply the utility at medium screen sizes and above:
 
@@ -81,12 +79,12 @@ Learn more about using variants in the [variants documentation](/docs/hover-focu
 
 ### On this page
 
-*   [Quick reference](#quick-reference)
-*   [Examples](#examples)
-    *   [Preventing hyphenation](#preventing-hyphenation)
-    *   [Manual hyphenation](#manual-hyphenation)
-    *   [Automatic hyphenation](#automatic-hyphenation)
-    *   [Responsive design](#responsive-design)
+-   [Quick reference](#quick-reference)
+-   [Examples](#examples)
+    -   [Preventing hyphenation](#preventing-hyphenation)
+    -   [Manual hyphenation](#manual-hyphenation)
+    -   [Automatic hyphenation](#automatic-hyphenation)
+    -   [Responsive design](#responsive-design)
 
 [
 

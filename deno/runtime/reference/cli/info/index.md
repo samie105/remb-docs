@@ -5,18 +5,19 @@ canonical_url: "https://docs.deno.com/runtime/reference/cli/info/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:53:42.705Z"
-content_hash: "35b05fcac8f7faa21124ebef506ee2d6c7e5adab8c178c12a96146ebd390ab64"
+last_crawled_at: "2026-04-27T17:29:42.114Z"
+content_hash: "16dc32114c8d2185732e179d1cf68f948618f5d6b4e9655a48bebf07bdccc7d8"
 menu_path: ["deno info"]
 section_path: []
+content_language: "en"
 ---
-On this page
+**On this page**
 
-*   [Example](#example)
-*   [JSON output](#json-output)
-*   [Cache location](#cache-location)
-*   [Options](#options)
-*   [Dependency management options](#dependency-management-options)
+-   [Example](#example)
+-   [JSON output](#json-output)
+-   [Cache location](#cache-location)
+-   [Options](#options)
+-   [Dependency management options](#dependency-management-options)
 
 `deno info` displays information about a module's dependency tree. See [Modules](/runtime/fundamentals/modules/) for more about how Deno resolves and caches dependencies.
 

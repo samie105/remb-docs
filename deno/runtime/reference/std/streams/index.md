@@ -5,15 +5,16 @@ canonical_url: "https://docs.deno.com/runtime/reference/std/streams/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:05:37.418Z"
-content_hash: "cfcf58023fa0ae301ea61c7c97188f083a677e2b315824be75461e9de050a7dd"
+last_crawled_at: "2026-04-27T17:47:21.776Z"
+content_hash: "599bfddf352ff3515ebc7f50e54889ec05b259fcf79c97b43bb45ff76bdf9aae"
 menu_path: ["@std/streams"]
 section_path: []
+content_language: "en"
 ---
-On this page
+**On this page**
 
-*   [Overview](#overview)
-    *   [Add to your project](#add-to-your-project)
+-   [Overview](#overview)
+    -   [Add to your project](#add-to-your-project)
 
 ## Overview
 

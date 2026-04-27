@@ -5,27 +5,13 @@ canonical_url: "https://orm.drizzle.team/docs/seed-overview"
 docset: "drizzle"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:20:34.789Z"
-content_hash: "400463c982b530b5758b25d05f4aa2f03da4d93089ecd7e86a348d63030f699b"
+last_crawled_at: "2026-04-27T19:23:27.739Z"
+content_hash: "62a27b5cf60edc6a4b6ecec230293c236b343b2f8fc36df190599b15a253e6c7"
 menu_path: ["Drizzle Seed"]
 section_path: []
-nav_prev: {"path": "drizzle/docs/drizzle-config-file/index.md", "title": "Drizzle Kit configuration file"}
-nav_next: {"path": "drizzle/docs/seed-functions/index.md", "title": "Generators"}
+content_language: "en"
 ---
-
 ## Drizzle Seed
-
-PostgreSQL
-
-SQLite
-
-MySQL
-
-SingleStore
-
-CockroachDB
-
-MS SQL
 
 IMPORTANT
 
@@ -43,21 +29,13 @@ A pseudorandom number generator is an algorithm that produces a sequence of numb
 
 #### Benefits of Using a pRNG:[](#benefits-of-using-a-prng)
 
-*   Consistency: Ensures that your tests run on the same data every time.
-*   Debugging: Makes it easier to reproduce and fix bugs by providing a consistent data set.
-*   Collaboration: Team members can share seed numbers to work with the same data sets.
+-   Consistency: Ensures that your tests run on the same data every time.
+-   Debugging: Makes it easier to reproduce and fix bugs by providing a consistent data set.
+-   Collaboration: Team members can share seed numbers to work with the same data sets.
 
 With drizzle-seed, you get the best of both worlds: the ability to generate realistic fake data and the control to reproduce it whenever needed.
 
 ## Installation[](#installation)
-
-npm
-
-yarn
-
-pnpm
-
-bun
 
 ```
 npm i drizzle-seed
@@ -79,7 +57,7 @@ bun add drizzle-seed
 
 In this example we will create 10 users with random names and ids
 
-```
+```ts
 import { pgTable, integer, text } from "drizzle-orm/pg-core";
 import { drizzle } from "drizzle-orm/node-postgres";
 import { seed } from "drizzle-seed";
@@ -103,7 +81,7 @@ main();
 
 By default, the `seed` function will create 10 entities. However, if you need more for your tests, you can specify this in the seed options object
 
-```
+```ts
 await seed(db, schema, { count: 1000 });
 ```
 
@@ -111,7 +89,7 @@ await seed(db, schema, { count: 1000 });
 
 If you need a seed to generate a different set of values for all subsequent runs, you can define a different number in the `seed` option. Any new number will generate a unique set of values
 
-```
+```ts
 await seed(db, schema, { seed: 12345 });
 ```
 
@@ -119,7 +97,7 @@ await seed(db, schema, { seed: 12345 });
 
 With `drizzle-seed`, you can easily reset your database and seed it with new values, for example, in your test suites
 
-```
+```ts
 // path to a file with schema you want to reset
 import * as schema from "./schema.ts";
 import { reset } from "drizzle-seed";
@@ -148,13 +126,13 @@ MS SQL
 
 For PostgreSQL, the `drizzle-seed` package will generate `TRUNCATE` statements with the `CASCADE` option to ensure that all tables are empty after running the reset function
 
-```
+```sql
 TRUNCATE tableName1, tableName2, ... CASCADE;
 ```
 
 For MySQL, the `drizzle-seed` package will first disable `FOREIGN_KEY_CHECKS` to ensure the next step won’t fail, and then generate `TRUNCATE` statements to empty the content of all tables
 
-```
+```sql
 SET FOREIGN_KEY_CHECKS = 0;
 TRUNCATE tableName1;
 TRUNCATE tableName2;
@@ -164,7 +142,7 @@ SET FOREIGN_KEY_CHECKS = 1;
 
 For SQLite, the `drizzle-seed` package will first disable the `foreign_keys` pragma to ensure the next step won’t fail, and then generate `DELETE FROM` statements to empty the content of all tables
 
-```
+```sql
 PRAGMA foreign_keys = OFF;
 DELETE FROM tableName1;
 DELETE FROM tableName2;
@@ -174,7 +152,7 @@ PRAGMA foreign_keys = ON;
 
 For SingleStore, the `drizzle-seed` package will first disable `FOREIGN_KEY_CHECKS` to ensure the next step won’t fail, and then generate `TRUNCATE` statements to empty the content of all tables
 
-```
+```sql
 SET FOREIGN_KEY_CHECKS = 0;
 TRUNCATE tableName1;
 TRUNCATE tableName2;
@@ -184,7 +162,7 @@ SET FOREIGN_KEY_CHECKS = 1;
 
 For CockroachDB, the `drizzle-seed` package will generate `TRUNCATE` statements with the `CASCADE` option to ensure that all tables are empty after running the reset function
 
-```
+```sql
 TRUNCATE tableName1, tableName2, ... CASCADE;
 ```
 
@@ -194,7 +172,7 @@ It then iterates over those tables, drops all foreign key constraints related to
 
 Finally, the package recreates the original foreign key constraints for each table.
 
-```
+```sql
 -- gather information about all fk constraints
 
 -- drops all fk constraints related to each table
@@ -218,9 +196,9 @@ In case you need to change the behavior of the seed generator functions that `dr
 
 `.refine` is a callback that receives a list of all available generator functions from `drizzle-seed`. It should return an object with keys representing the tables you want to refine, defining their behavior as needed. Each table can specify several properties to simplify seeding your database:
 
-*   `columns`: Refine the default behavior of each column by specifying the required generator function.
-*   `count`: Specify the number of rows to insert into the database. By default, it’s 10. If a global count is defined in the `seed()` options, the count defined here will override it for this specific table.
-*   `with`: Define how many referenced entities to create for each parent table if you want to generate associated entities.
+-   `columns`: Refine the default behavior of each column by specifying the required generator function.
+-   `count`: Specify the number of rows to insert into the database. By default, it’s 10. If a global count is defined in the `seed()` options, the count defined here will override it for this specific table.
+-   `with`: Define how many referenced entities to create for each parent table if you want to generate associated entities.
 
 info
 
@@ -228,7 +206,7 @@ You can also specify a weighted random distribution for the number of referenced
 
 **API**
 
-```
+```ts
 await seed(db, schema).refine((f) => ({
   users: {
     columns: {},
@@ -242,7 +220,7 @@ await seed(db, schema).refine((f) => ({
 
 Let’s check a few examples with an explanation of what will happen:
 
-```
+```ts
 import { pgTable, integer, text } from "drizzle-orm/pg-core";
 
 export const users = pgTable("users", {
@@ -259,7 +237,7 @@ export const posts = pgTable("posts", {
 
 **Example 1**: Seed only the `users` table with 20 entities and with refined seed logic for the `name` column
 
-```
+```ts
 import { drizzle } from "drizzle-orm/node-postgres";
 import { seed } from "drizzle-seed";
 import * as schema from './schema.ts'
@@ -282,7 +260,7 @@ main();
 
 **Example 2**: Seed the `users` table with 20 entities and add 10 `posts` for each `user` by seeding the `posts` table and creating a reference from `posts` to `users`
 
-```
+```ts
 import { drizzle } from "drizzle-orm/node-postgres";
 import { seed } from "drizzle-seed";
 import * as schema from './schema.ts'
@@ -305,7 +283,7 @@ main();
 
 **Example 3**: Seed the `users` table with 5 entities and populate the database with 100 `posts` without connecting them to the `users` entities. Refine `id` generation for `users` so that it will give any int from `10000` to `20000` and remains unique, and refine `posts` to retrieve values from a self-defined array
 
-```
+```ts
 import { drizzle } from "drizzle-orm/node-postgres";
 import { seed } from "drizzle-seed";
 import * as schema from './schema.ts'
@@ -347,7 +325,7 @@ main();
 
 IMPORTANT
 
-There are many more possibilities that we will define in these docs, but for now, you can explore a few sections in this documentation. Check the [Generators](drizzle/docs/seed-functions/index.md) section to get familiar with all the available generator functions you can use.
+There are many more possibilities that we will define in these docs, but for now, you can explore a few sections in this documentation. Check the [Generators](https://orm.drizzle.team/docs/seed-functions) section to get familiar with all the available generator functions you can use.
 
 A particularly great feature is the ability to use weighted randomization, both for generator values created for a column and for determining the number of related entities that can be generated by `drizzle-seed`.
 
@@ -359,12 +337,12 @@ There may be cases where you need to use multiple datasets with a different prio
 
 The Drizzle Seed package has a few places where weighted random can be used:
 
-*   Columns inside each table refinements
-*   The `with` property, determining the amount of related entities to be created
+-   Columns inside each table refinements
+-   The `with` property, determining the amount of related entities to be created
 
 Let’s check an example for both:
 
-```
+```ts
 import { pgTable, integer, text, varchar, doublePrecision } from "drizzle-orm/pg-core";
 
 export const orders = pgTable(
@@ -397,7 +375,7 @@ export const details = pgTable(
 
 **Example 1**: Refine the `unitPrice` generation logic to generate `5000` random prices, with a 30% chance of prices between 10-100 and a 70% chance of prices between 100-300
 
-```
+```ts
 import { drizzle } from "drizzle-orm/node-postgres";
 import { seed } from "drizzle-seed";
 import * as schema from './schema.ts'
@@ -431,7 +409,7 @@ main();
 
 **Example 2**: For each order, generate 1 to 3 details with a 60% chance, 5 to 7 details with a 30% chance, and 8 to 10 details with a 10% chance
 
-```
+```ts
 import { drizzle } from "drizzle-orm/node-postgres";
 import { seed } from "drizzle-seed";
 import * as schema from './schema.ts'
@@ -458,11 +436,7 @@ main();
 
 ## Complex example[](#complex-example)
 
-main.ts
-
-schema.ts
-
-```
+```ts
 import { seed } from "drizzle-seed";
 import * as schema from "./schema.ts";
 

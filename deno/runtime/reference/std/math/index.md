@@ -5,15 +5,16 @@ canonical_url: "https://docs.deno.com/runtime/reference/std/math/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:04:17.070Z"
-content_hash: "b6647ee722b2fef94eed73a2cb42f6bc2a55b0b947c55e7d67397da652a87084"
+last_crawled_at: "2026-04-27T17:45:13.814Z"
+content_hash: "dfb70dc9cc5eee76fa5d45a67eaebd8de1d93f93308139720820993828dd832e"
 menu_path: ["@std/math"]
 section_path: []
+content_language: "en"
 ---
-On this page
+**On this page**
 
-*   [Overview](#overview)
-    *   [Add to your project](#add-to-your-project)
+-   [Overview](#overview)
+    -   [Add to your project](#add-to-your-project)
 
 ## Overview
 

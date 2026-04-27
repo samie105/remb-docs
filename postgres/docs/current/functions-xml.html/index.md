@@ -5,14 +5,12 @@ canonical_url: "https://www.postgresql.org/docs/current/functions-xml.html"
 docset: "postgres"
 kind: "database"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:51:12.695Z"
-content_hash: "6669653c4e9ff05cdb83aad7eda4343a60ed6ab27e289a4ff2e4493224e50f6d"
+last_crawled_at: "2026-04-27T20:50:23.779Z"
+content_hash: "f86aed342b3bb24961bd5aaaedd285b9aa1f5d0f2cf7d3e1fde4ad314b679b9f"
 menu_path: ["PostgreSQL: Documentation: 18: 9.15. XML Functions"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/functions-uuid.html/index.md", "title": "PostgreSQL: Documentation: 18: 9.14.\u00a0UUID Functions"}
-nav_next: {"path": "postgres/docs/current/geqo-intro.html/index.md", "title": "PostgreSQL: Documentation: 18: 61.1.\u00a0Query Handling as a Complex Optimization Problem"}
+content_language: "en"
 ---
-
 The functions and function-like expressions described in this section operate on values of type `xml`. See [Section 8.13](https://www.postgresql.org/docs/current/datatype-xml.html "8.13. XML Type") for information about the `xml` type. The function-like expressions `xmlparse` and `xmlserialize` for converting to and from type `xml` are documented there, not in this section.
 
 Use of most of these functions requires PostgreSQL to have been built with `configure --with-libxml`.
@@ -119,7 +117,7 @@ SELECT xmlelement(name foo, xmlattributes('xyz' as bar),
 ----------------------------------------------
  <foo bar="xyz"><abc/><!--test--><xyz/></foo>
 
-Content of other types will be formatted into valid XML character data. This means in particular that the characters <, >, and & will be converted to entities. Binary data (data type `bytea`) will be represented in base64 or hex encoding, depending on the setting of the configuration parameter [xmlbinary](postgres/docs/current/runtime-config-client.html/index.md#GUC-XMLBINARY). The particular behavior for individual data types is expected to evolve in order to align the PostgreSQL mappings with those specified in SQL:2006 and later, as discussed in [Section D.3.1.3](https://www.postgresql.org/docs/current/xml-limits-conformance.html#FUNCTIONS-XML-LIMITS-CASTS "D.3.1.3. Mappings between SQL and XML Data Types and Values").
+Content of other types will be formatted into valid XML character data. This means in particular that the characters <, >, and & will be converted to entities. Binary data (data type `bytea`) will be represented in base64 or hex encoding, depending on the setting of the configuration parameter [xmlbinary](https://www.postgresql.org/docs/current/runtime-config-client.html#GUC-XMLBINARY). The particular behavior for individual data types is expected to evolve in order to align the PostgreSQL mappings with those specified in SQL:2006 and later, as discussed in [Section D.3.1.3](https://www.postgresql.org/docs/current/xml-limits-conformance.html#FUNCTIONS-XML-LIMITS-CASTS "D.3.1.3. Mappings between SQL and XML Data Types and Values").
 
 #### 9.15.1.5. `xmlforest` [#](#FUNCTIONS-PRODUCING-XML-XMLFOREST)
 
@@ -264,7 +262,7 @@ In the SQL standard, the `xmlexists` function evaluates an expression in the XML
 xml_is_well_formed
 ```
 
-These functions check whether a `text` string represents well-formed XML, returning a Boolean result. `xml_is_well_formed_document` checks for a well-formed document, while `xml_is_well_formed_content` checks for well-formed content. `xml_is_well_formed` does the former if the [xmloption](postgres/docs/current/runtime-config-client.html/index.md#GUC-XMLOPTION) configuration parameter is set to `DOCUMENT`, or the latter if it is set to `CONTENT`. This means that `xml_is_well_formed` is useful for seeing whether a simple cast to type `xml` will succeed, whereas the other two functions are useful for seeing whether the corresponding variants of `XMLPARSE` will succeed.
+These functions check whether a `text` string represents well-formed XML, returning a Boolean result. `xml_is_well_formed_document` checks for a well-formed document, while `xml_is_well_formed_content` checks for well-formed content. `xml_is_well_formed` does the former if the [xmloption](https://www.postgresql.org/docs/current/runtime-config-client.html#GUC-XMLOPTION) configuration parameter is set to `DOCUMENT`, or the latter if it is set to `CONTENT`. This means that `xml_is_well_formed` is useful for seeing whether a simple cast to type `xml` will succeed, whereas the other two functions are useful for seeing whether the corresponding variants of `XMLPARSE` will succeed.
 
 Examples:
 
@@ -634,11 +632,3 @@ As an example of using the output produced by these functions, [Example 9.1](ht
   </xsl:template>
 
 </xsl:stylesheet>
-
-  
-
-  
-
-* * *
-
-[\[8\]](#id-1.5.8.21.7.5.15.2) A result containing more than one element node at the top level, or non-whitespace text outside of an element, is an example of content form. An XPath result can be of neither form, for example if it returns an attribute node selected from the element that contains it. Such a result will be put into content form with each such disallowed node replaced by its string value, as defined for the XPath 1.0 `string` function.

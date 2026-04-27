@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/pages/building-your-application/data-fet
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:22:55.277Z"
-content_hash: "a22381da912db7ca7eef91178e060122188dcb70a1f6c565a13896de6b6f77b0"
+last_crawled_at: "2026-04-27T18:22:15.262Z"
+content_hash: "24a76d245310d1a39ff7b9abe55a8a6794a9c130b6fbd128679de01208e3b4ee"
 menu_path: ["Client-side Fetching"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/pages/building-your-application/data-fetching/get-server-side-props/index.md", "title": "getServerSideProps"}
-nav_next: {"path": "nextjs/docs/pages/building-your-application/configuring/index.md", "title": "Configuring"}
+version: "latest"
+content_language: "en"
 ---
+[Building Your Application](/docs/pages/building-your-application)[Data Fetching](/docs/pages/building-your-application/data-fetching)Client-side Fetching
 
 # Client-side Fetching
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 Client-side data fetching is useful when your page doesn't require SEO indexing, when you don't need to prerender your data, or when the content of your pages needs to update frequently. Unlike the server-side rendering APIs, you can use client-side data fetching at the component level.
 
@@ -84,7 +85,3 @@ function Profile() {
 ```
 
 Was this helpful?
-
-supported.
-
-Send

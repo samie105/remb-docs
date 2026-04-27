@@ -5,14 +5,12 @@ canonical_url: "https://orm.drizzle.team/docs/latest-releases/drizzle-orm-v0320"
 docset: "drizzle"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:15:51.558Z"
-content_hash: "f9e4cba8cb0df35d5181281a7822bd0bf77a063b587020ff3b9dc70559e8c0b8"
+last_crawled_at: "2026-04-27T19:16:33.903Z"
+content_hash: "da60e6a1c8c28d55e0e65bda4bad45cdf53b2c775db04fc99243b33a280c503a"
 menu_path: ["Release notes for drizzle-orm@0.32.0 and drizzle-kit@0.23.0"]
 section_path: []
-nav_prev: {"path": "drizzle/docs/latest-releases/drizzle-orm-v0314/index.md", "title": "Drizzle ORM - DrizzleORM v0.31.4 release"}
-nav_next: {"path": "drizzle/docs/latest-releases/drizzle-orm-v0321/index.md", "title": "Drizzle ORM - DrizzleORM v0.32.1 release"}
+content_language: "en"
 ---
-
 DrizzleORM v0.32.0 release
 
 Jul 10, 2024
@@ -27,7 +25,7 @@ Jul 10, 2024
 
 MySQL itself doesn’t have native support for `RETURNING` after using `INSERT`. There is only one way to do it for `primary keys` with `autoincrement` (or `serial`) types, where you can access `insertId` and `affectedRows` fields. We’ve prepared an automatic way for you to handle such cases with Drizzle and automatically receive all inserted IDs as separate objects
 
-```
+```ts
 import { boolean, int, text, mysqlTable } from 'drizzle-orm/mysql-core';
 
 const usersTable = mysqlTable('users', {
@@ -42,7 +40,7 @@ const result = await db.insert(usersTable).values([{ name: 'John' }, { name: 'Jo
 
 Also with Drizzle, you can specify a `primary key` with `$default` function that will generate custom primary keys at runtime. We will also return those generated keys for you in the `$returningId()` call
 
-```
+```ts
 import { varchar, text, mysqlTable } from 'drizzle-orm/mysql-core';
 import { createId } from '@paralleldrive/cuid2';
 
@@ -63,7 +61,7 @@ You can now specify sequences in Postgres within any schema you need and define 
 
 ##### **Example**
 
-```
+```ts
 import { pgSchema, pgSequence } from "drizzle-orm/pg-core";
 
 // No params specified
@@ -91,7 +89,7 @@ export const customSequence = customSchema.sequence("name");
 
 ##### **Example**
 
-```
+```ts
 import { pgTable, integer, text } from 'drizzle-orm/pg-core' 
 
 export const ingredients = pgTable("ingredients", {
@@ -113,7 +111,7 @@ You can now specify generated columns on any column supported by PostgreSQL to u
 
 > Note: we will add `tsVector` column type before latest release
 
-```
+```ts
 import { SQL, sql } from "drizzle-orm";
 import { customType, index, integer, pgTable, text } from "drizzle-orm/pg-core";
 
@@ -142,7 +140,7 @@ export const test = pgTable(
 
 In case you don’t need to reference any columns from your table, you can use just `sql` template or a `string`
 
-```
+```ts
 export const users = pgTable("users", {
   id: integer("id"),
   name: text("name"),
@@ -168,7 +166,7 @@ Drizzle Kit will also have limitations for `push` command:
 
 ##### **Example**
 
-```
+```ts
 export const users = mysqlTable("users", {
   id: int("id"),
   id2: int("id2"),
@@ -219,14 +217,14 @@ You can auto-accept all data-loss statements using the push command. It’s only
 
 You can now customize migration file prefixes to make the format suitable for your migration tools:
 
-*   `index` is the default type and will result in `0001_name.sql` file names;
-*   `supabase` and `timestamp` are equal and will result in `20240627123900_name.sql` file names;
-*   `unix` will result in unix seconds prefixes `1719481298_name.sql` file names;
-*   `none` will omit the prefix completely;
+-   `index` is the default type and will result in `0001_name.sql` file names;
+-   `supabase` and `timestamp` are equal and will result in `20240627123900_name.sql` file names;
+-   `unix` will result in unix seconds prefixes `1719481298_name.sql` file names;
+-   `none` will omit the prefix completely;
 
 ##### **Example**: Supabase migrations format
 
-```
+```ts
 import { defineConfig } from "drizzle-kit";
 
 export default defineConfig({

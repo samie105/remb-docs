@@ -5,13 +5,14 @@ canonical_url: "https://nextjs.org/docs/messages/no-document-import-in-page"
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:18:16.464Z"
-content_hash: "e8309461ad5b3cf2631034d901784f5fcac3344aaf4725498c022e1ce38e3280"
+last_crawled_at: "2026-04-27T18:17:42.510Z"
+content_hash: "1a88a888cb7994241815a5249f8d24976126c27eee039ff29629a7764f2bb202"
 menu_path: ["No Document Import in Page"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/messages/no-css-tags/index.md", "title": "No CSS Tags"}
-nav_next: {"path": "nextjs/docs/messages/no-duplicate-head/index.md", "title": "No Duplicate Head"}
+version: "latest"
+content_language: "en"
 ---
+[Docs](/docs)[Errors](/docs)No Document Import in Page
 
 # No Document Import in Page
 
@@ -39,10 +40,6 @@ export default MyDocument
 
 ## Useful Links[](#useful-links)
 
-*   [Custom Document](/docs/pages/building-your-application/routing/custom-document)
+-   [Custom Document](/docs/pages/building-your-application/routing/custom-document)
 
 Was this helpful?
-
-supported.
-
-Send

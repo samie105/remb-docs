@@ -5,30 +5,31 @@ canonical_url: "https://docs.deno.com/runtime/reference/cli/unstable_flags/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:56:42.998Z"
-content_hash: "5e3e8a08f91b9bf8d4e21be4f9f09838a1c5bbb1394dab75d1a74a28ee5bf9b3"
+last_crawled_at: "2026-04-27T17:34:26.761Z"
+content_hash: "3f5b28a814c184e82c99f8deed6f460bdd4d213c925ad3f8fa021db3a9b4035a"
 menu_path: ["Unstable feature flags"]
 section_path: []
+content_language: "en"
 ---
-On this page
+**On this page**
 
-*   [Using flags at the command line](#using-flags-at-the-command-line)
-*   [Configuring flags in deno.json](#configuring-flags-in-deno.json)
-*   [Configuration via environment variables](#configuration-via-environment-variables)
-*   [\--unstable-bare-node-builtins](#--unstable-bare-node-builtins)
-*   [\--unstable-detect-cjs](#--unstable-detect-cjs)
-*   [\--unstable-node-globals](#--unstable-node-globals)
-*   [\--unstable-sloppy-imports](#--unstable-sloppy-imports)
-*   [\--unstable-unsafe-proto](#--unstable-unsafe-proto)
-*   [\--unstable-webgpu](#--unstable-webgpu)
-*   [\--unstable-broadcast-channel](#--unstable-broadcast-channel)
-*   [\--unstable-worker-options](#--unstable-worker-options)
-*   [\--unstable-cron](#--unstable-cron)
-*   [\--unstable-kv](#--unstable-kv)
-*   [\--unstable-net](#--unstable-net)
-*   [\--unstable-otel](#--unstable-otel)
-*   [\--unstable](#--unstable)
-*   [\--unstable-temporal](#--unstable-temporal)
+-   [Using flags at the command line](#using-flags-at-the-command-line)
+-   [Configuring flags in deno.json](#configuring-flags-in-deno.json)
+-   [Configuration via environment variables](#configuration-via-environment-variables)
+-   [\--unstable-bare-node-builtins](#--unstable-bare-node-builtins)
+-   [\--unstable-detect-cjs](#--unstable-detect-cjs)
+-   [\--unstable-node-globals](#--unstable-node-globals)
+-   [\--unstable-sloppy-imports](#--unstable-sloppy-imports)
+-   [\--unstable-unsafe-proto](#--unstable-unsafe-proto)
+-   [\--unstable-webgpu](#--unstable-webgpu)
+-   [\--unstable-broadcast-channel](#--unstable-broadcast-channel)
+-   [\--unstable-worker-options](#--unstable-worker-options)
+-   [\--unstable-cron](#--unstable-cron)
+-   [\--unstable-kv](#--unstable-kv)
+-   [\--unstable-net](#--unstable-net)
+-   [\--unstable-otel](#--unstable-otel)
+-   [\--unstable](#--unstable)
+-   [\--unstable-temporal](#--unstable-temporal)
 
 New Deno runtime features are often released behind feature flags, so that users can try out new APIs and features before they are finalized. Current unstable feature flags are listed on this page, and can also be found in the CLI help text by running:
 
@@ -105,10 +106,10 @@ Requires Deno >= 2.1.2
 
 This flags injects Node specific globals into the global scope. The injected globals are:
 
-*   `Buffer`
-*   `global`
-*   `setImmediate`
-*   `clearImmediate`
+-   `Buffer`
+-   `global`
+-   `setImmediate`
+-   `clearImmediate`
 
 Note, that `process` is already available as a global starting with Deno 2.0.
 
@@ -137,9 +138,9 @@ Executing the script with sloppy imports enabled will remove the error, but prov
 
 Sloppy imports will allow (but print warnings for) the following:
 
-*   Omit file extensions from imports
-*   Use incorrect file extensions (e.g. importing with a `.js` extension when the actual file is `.ts`)
-*   Import a directory path, and automatically use `index.js` or `index.ts` as the import for that directory
+-   Omit file extensions from imports
+-   Use incorrect file extensions (e.g. importing with a `.js` extension when the actual file is `.ts`)
+-   Import a directory path, and automatically use `index.js` or `index.ts` as the import for that directory
 
 [`deno compile`](/runtime/reference/cli/compile/) does not support sloppy imports.
 
@@ -206,8 +207,8 @@ Enabling this flag makes [Deno KV](/deploy/kv/manual) APIs available in the `Den
 
 Enable unstable net APIs. These APIs include:
 
-*   [`WebSocketStream`](https://developer.mozilla.org/en-US/docs/Web/API/WebSocketStream)
-*   [`Deno.DatagramConn`](https://docs.deno.com/api/deno/~/Deno.DatagramConn)
+-   [`WebSocketStream`](https://developer.mozilla.org/en-US/docs/Web/API/WebSocketStream)
+-   [`Deno.DatagramConn`](https://docs.deno.com/api/deno/~/Deno.DatagramConn)
 
 ## `--unstable-otel`
 
@@ -221,8 +222,8 @@ Caution
 
 The `--unstable` flag is no longer being used for new features, and will be removed in a future release. All unstable features that were available using this flag are now available as granular unstable flags, notably:
 
-*   `--unstable-kv`
-*   `--unstable-cron`
+-   `--unstable-kv`
+-   `--unstable-cron`
 
 Please use these feature flags instead moving forward.
 

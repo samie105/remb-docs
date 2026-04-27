@@ -5,27 +5,13 @@ canonical_url: "https://orm.drizzle.team/docs/schemas"
 docset: "drizzle"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:20:21.699Z"
-content_hash: "49aec2b8c70ab9c77b237f84356be680f402e0a4ac8ef8970832909f6aa53d9e"
+last_crawled_at: "2026-04-27T19:22:52.497Z"
+content_hash: "8e7199beb82d44e1793c3fdebe5e2153379c2c5e6b849a12eb2a419f6aeea1a6"
 menu_path: ["Table schemas"]
 section_path: []
-nav_prev: {"path": "drizzle/docs/views/index.md", "title": "Views"}
-nav_next: {"path": "drizzle/docs/relations-v2/index.md", "title": "Drizzle relations"}
+content_language: "en"
 ---
-
 ## Table schemas
-
-PostgreSQL
-
-MySQL
-
-SQLite
-
-SingleStore
-
-MSSQL
-
-CockroachDB
 
 If you declare an entity within a schema, query builder will prepend schema names in queries:  
 `select * from "schema"."users"`
@@ -42,7 +28,7 @@ MSSQL
 
 CockroachDB
 
-```
+```ts
 import { serial, text, pgSchema } from "drizzle-orm/pg-core";
 
 export const mySchema = pgSchema("my_schema");
@@ -54,10 +40,9 @@ export const mySchemaUsers = mySchema.table('users', {
   name: text('name'),
   color: colors('color').default('red'),
 });
-
 ```
 
-```
+```sql
 CREATE SCHEMA "my_schema";
 
 CREATE TYPE "my_schema"."colors" AS ENUM ('red', 'green', 'blue');
@@ -69,7 +54,7 @@ CREATE TABLE "my_schema"."users" (
 );
 ```
 
-```
+```ts
 import { int, text, mysqlSchema } from "drizzle-orm/mysql-core";
 
 export const mySchema = mysqlSchema("my_schema")
@@ -80,7 +65,7 @@ export const mySchemaUsers = mySchema.table("users", {
 });
 ```
 
-```
+```sql
 CREATE SCHEMA "my_schema";
 
 CREATE TABLE "my_schema"."users" (
@@ -91,7 +76,7 @@ CREATE TABLE "my_schema"."users" (
 
 SQLite does not have support for schemas 😕
 
-```
+```ts
 import { int, text, singlestoreSchema } from "drizzle-orm/singlestore-core";
 
 export const mySchema = singlestoreSchema("my_schema")
@@ -102,7 +87,7 @@ export const mySchemaUsers = mySchema.table("users", {
 });
 ```
 
-```
+```sql
 CREATE SCHEMA "my_schema";
 
 CREATE TABLE "my_schema"."users" (
@@ -111,7 +96,7 @@ CREATE TABLE "my_schema"."users" (
 );
 ```
 
-```
+```ts
 import { int, text, mssqlSchema } from "drizzle-orm/mssql-core";
 
 export const mySchema = mssqlSchema("my_schema")
@@ -122,7 +107,7 @@ export const mySchemaUsers = mySchema.table("users", {
 });
 ```
 
-```
+```sql
 CREATE SCHEMA [my_schema];
 
 CREATE TABLE [my_schema].[users] (
@@ -131,7 +116,7 @@ CREATE TABLE [my_schema].[users] (
 );
 ```
 
-```
+```ts
 import { int4, text, cockroachSchema } from "drizzle-orm/cockroach-core";
 
 export const mySchema = cockroachSchema("my_schema");
@@ -143,10 +128,9 @@ export const mySchemaUsers = mySchema.table('users', {
   name: text(),
   color: colors().default('red'),
 });
-
 ```
 
-```
+```sql
 CREATE SCHEMA "my_schema";
 
 CREATE TYPE "my_schema"."colors" AS ENUM ('red', 'green', 'blue');

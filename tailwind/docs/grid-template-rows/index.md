@@ -5,45 +5,51 @@ canonical_url: "https://tailwindcss.com/docs/grid-template-rows"
 docset: "tailwind"
 kind: "framework"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:47:46.813Z"
-content_hash: "affd0381b6ba1d27dc48b2a4dc1f1b70945b8315f26c9c2d7e973a6a78447775"
+last_crawled_at: "2026-04-27T19:58:29.033Z"
+content_hash: "050d733558a30a342a00e88e646c8f4bd6c8e7dca05473b26044d51583c8a4e9"
 menu_path: ["grid-template-rows"]
 section_path: []
-nav_prev: {"path": "tailwind/docs/grid-column/index.md", "title": "grid-column"}
-nav_next: {"path": "tailwind/docs/grid-row/index.md", "title": "grid-row"}
+content_language: "en"
 ---
+[](/)
+
+[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
+
+1.  Flexbox & Grid
+2.  grid-template-rows
+
+Flexbox & Grid
 
 # grid-template-rows
 
 Utilities for specifying the rows in a grid layout.
 
-Class
-
-Styles
-
-`grid-rows-<number>`
-
+| Class | Styles |
+| --- | --- |
+| `grid-rows-<number>` | 
 `grid-template-rows: repeat(<number>, minmax(0, 1fr));`
 
-`grid-rows-none`
+ |
+| `grid-rows-none` | 
 
 `grid-template-rows: none;`
 
-`grid-rows-subgrid`
+ |
+| `grid-rows-subgrid` | 
 
 `grid-template-rows: subgrid;`
 
-`grid-rows-[<value>]`
+ |
+| `grid-rows-[<value>]` | 
 
 `grid-template-rows: <value>;`
 
-`grid-rows-(<custom-property>)`
+ |
+| `grid-rows-(<custom-property>)` | 
 
 `grid-template-rows: var(<custom-property>);`
 
-## [Examples](#examples)
-
-### [Specifying the grid rows](#specifying-the-grid-rows)
+ |
 
 Use `grid-rows-<number>` utilities like `grid-rows-2` and `grid-rows-4` to create grids with _n_ equally sized rows:
 
@@ -68,8 +74,6 @@ Use `grid-rows-<number>` utilities like `grid-rows-2` and `grid-rows-4` to creat
 ```
 <div class="grid grid-flow-col grid-rows-4 gap-4">  <div>01</div>  <!-- ... -->  <div>09</div></div>
 ```
-
-### [Implementing a subgrid](#implementing-a-subgrid)
 
 Use the `grid-rows-subgrid` utility to adopt the row tracks defined by the item's parent:
 
@@ -97,8 +101,6 @@ Use the `grid-rows-subgrid` utility to adopt the row tracks defined by the item'
 <div class="grid grid-flow-col grid-rows-4 gap-4">  <div>01</div>  <!-- ... -->  <div>05</div>  <div class="row-span-3 grid grid-rows-subgrid gap-4">    <div class="row-start-2">06</div>  </div>  <div>07</div>  <!-- ... -->  <div>10</div></div>
 ```
 
-### [Using a custom value](#using-a-custom-value)
-
 Use the `grid-rows-[<value>]` syntax to set the rows based on a completely custom value:
 
 ```
@@ -113,8 +115,6 @@ For CSS variables, you can also use the `grid-rows-(<custom-property>)` syntax:
 
 This is just a shorthand for `grid-rows-[var(<custom-property>)]` that adds the `var()` function for you automatically.
 
-### [Responsive design](#responsive-design)
-
 Prefix a `grid-template-rows` utility with a breakpoint variant like `md:` to only apply the utility at medium screen sizes and above:
 
 ```
@@ -125,12 +125,12 @@ Learn more about using variants in the [variants documentation](/docs/hover-focu
 
 ### On this page
 
-*   [Quick reference](#quick-reference)
-*   [Examples](#examples)
-    *   [Specifying the grid rows](#specifying-the-grid-rows)
-    *   [Implementing a subgrid](#implementing-a-subgrid)
-    *   [Using a custom value](#using-a-custom-value)
-    *   [Responsive design](#responsive-design)
+-   [Quick reference](#quick-reference)
+-   [Examples](#examples)
+    -   [Specifying the grid rows](#specifying-the-grid-rows)
+    -   [Implementing a subgrid](#implementing-a-subgrid)
+    -   [Using a custom value](#using-a-custom-value)
+    -   [Responsive design](#responsive-design)
 
 [
 

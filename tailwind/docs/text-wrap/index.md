@@ -5,35 +5,13 @@ canonical_url: "https://tailwindcss.com/docs/text-wrap"
 docset: "tailwind"
 kind: "framework"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:59:05.917Z"
-content_hash: "c1bb157b57f4ab3a476171423c8f46edf51a4367fc310d0565b81999fb7741b4"
+last_crawled_at: "2026-04-27T20:13:24.670Z"
+content_hash: "510548616b38d6b113e3e8dcc896e9f2595f2e3b7b2690c585ed69d6fd77a4ce"
 menu_path: ["text-wrap"]
 section_path: []
-nav_prev: {"path": "tailwind/docs/text-overflow/index.md", "title": "text-overflow"}
-nav_next: {"path": "tailwind/docs/text-indent/index.md", "title": "text-indent"}
+content_language: "en"
 ---
-
 Utilities for controlling how text wraps within an element.
-
-Class
-
-Styles
-
-`text-wrap`
-
-`text-wrap: wrap;`
-
-`text-nowrap`
-
-`text-wrap: nowrap;`
-
-`text-balance`
-
-`text-wrap: balance;`
-
-`text-pretty`
-
-`text-wrap: pretty;`
 
 ## [Examples](#examples)
 
@@ -91,4 +69,4 @@ Prefix a `text-wrap` utility with a breakpoint variant like `md:` to only apply 
 <h1 class="text-pretty md:text-balance ...">  <!-- ... --></h1>
 ```
 
-Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).
+Learn more about using variants in the [variants documentation](https://tailwindcss.com/docs/hover-focus-and-other-states).

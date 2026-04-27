@@ -5,15 +5,16 @@ canonical_url: "https://docs.deno.com/runtime/reference/std/collections/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:00:44.788Z"
-content_hash: "661f8cc05992c9e280325d545af88f7f8e6ba68fbef2e37323a6d78e59dfbf85"
+last_crawled_at: "2026-04-27T17:40:06.613Z"
+content_hash: "f0a4aecad2ea56f56b6fc817b2fcce7c027f8a6626c204f5d54a5394f41cf63a"
 menu_path: ["@std/collections"]
 section_path: []
+content_language: "en"
 ---
-On this page
+**On this page**
 
-*   [Overview](#overview)
-    *   [Add to your project](#add-to-your-project)
+-   [Overview](#overview)
+    -   [Add to your project](#add-to-your-project)
 
 ## Overview
 

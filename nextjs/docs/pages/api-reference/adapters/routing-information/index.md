@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/pages/api-reference/adapters/routing-inf
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:19:16.899Z"
-content_hash: "2621ce1aed6392571f1c1e6921be1fff54097e499524cbef2ce97fa3d091c4bb"
+last_crawled_at: "2026-04-27T18:18:35.456Z"
+content_hash: "7fd60bb4411a4eba91752d1567139b81a773e5048a45ecb544d6293f6a580ba5"
 menu_path: ["Routing Information"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/pages/api-reference/adapters/output-types/index.md", "title": "Output Types"}
-nav_next: {"path": "nextjs/docs/pages/api-reference/adapters/use-cases/index.md", "title": "Use Cases"}
+version: "latest"
+content_language: "en"
 ---
+[API Reference](/docs/pages/api-reference)[Adapters](/docs/pages/api-reference/adapters)Routing Information
 
 # Routing Information
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 The `routing` object in `onBuildComplete` provides complete routing information with processed patterns ready for deployment:
 
@@ -47,17 +48,13 @@ Final rewrite routes checked when earlier phases did not produce a match.
 
 Each route entry can include:
 
-*   `source`: Original route pattern (optional for generated internal rules)
-*   `sourceRegex`: Compiled regex for matching requests
-*   `destination`: Internal destination or redirect destination
-*   `headers`: Headers to apply
-*   `has`: Positive matching conditions
-*   `missing`: Negative matching conditions
-*   `status`: Redirect status code
-*   `priority`: Internal route priority flag
+-   `source`: Original route pattern (optional for generated internal rules)
+-   `sourceRegex`: Compiled regex for matching requests
+-   `destination`: Internal destination or redirect destination
+-   `headers`: Headers to apply
+-   `has`: Positive matching conditions
+-   `missing`: Negative matching conditions
+-   `status`: Redirect status code
+-   `priority`: Internal route priority flag
 
 Was this helpful?
-
-supported.
-
-Send

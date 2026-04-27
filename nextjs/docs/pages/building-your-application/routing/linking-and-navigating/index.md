@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/pages/building-your-application/routing/
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:23:31.801Z"
-content_hash: "510ecd6de79d1a2c9b213505c71b013aedf21226202af7e1e9fa226b07b44081"
+last_crawled_at: "2026-04-27T18:22:49.398Z"
+content_hash: "a4c101df7d72d640b6b333fbfeceecc6dd78cc9835d6e0c6012de547243945b7"
 menu_path: ["Linking and Navigating"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/pages/building-your-application/routing/dynamic-routes/index.md", "title": "Dynamic Routes"}
-nav_next: {"path": "nextjs/docs/pages/building-your-application/routing/custom-app/index.md", "title": "Custom App"}
+version: "latest"
+content_language: "en"
 ---
+[Building Your Application](/docs/pages/building-your-application)[Routing](/docs/pages/building-your-application/routing)Linking and Navigating
 
 # Linking and Navigating
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 The Next.js router allows you to do client-side route transitions between pages, similar to a single-page application.
 
@@ -45,9 +46,9 @@ export default Home
 
 The example above uses multiple links. Each one maps a path (`href`) to a known page:
 
-*   `/` → `pages/index.js`
-*   `/about` → `pages/about.js`
-*   `/blog/hello-world` → `pages/blog/[slug].js`
+-   `/` → `pages/index.js`
+-   `/about` → `pages/about.js`
+-   `/blog/hello-world` → `pages/blog/[slug].js`
 
 Any `<Link />` in the viewport (initially or through scroll) will be prefetched by default (including the corresponding data) for pages using [Static Generation](/docs/pages/building-your-application/data-fetching/get-static-props). The corresponding data for [server-rendered](/docs/pages/building-your-application/data-fetching/get-server-side-props) routes is fetched _only when_ the `<Link />` is clicked.
 
@@ -106,8 +107,8 @@ export default Posts
 
 Now, instead of using interpolation to create the path, we use a URL object in `href` where:
 
-*   `pathname` is the name of the page in the `pages` directory. `/blog/[slug]` in this case.
-*   `query` is an object with the dynamic segment. `slug` in this case.
+-   `pathname` is the name of the page in the `pages` directory. `/blog/[slug]` in this case.
+-   `query` is an object with the dynamic segment. `slug` in this case.
 
 ## Injecting the router[](#injecting-the-router)
 
@@ -137,9 +138,9 @@ export default function ReadMore() {
 
 ## Shallow Routing[](#shallow-routing)
 
-Examples
+**Examples**
 
-*   [Shallow Routing](https://github.com/vercel/next.js/tree/canary/examples/with-shallow-routing)
+-   [Shallow Routing](https://github.com/vercel/next.js/tree/canary/examples/with-shallow-routing)
 
 Shallow routing allows you to change the URL without running data fetching methods again, that includes [`getServerSideProps`](/docs/pages/building-your-application/data-fetching/get-server-side-props), [`getStaticProps`](/docs/pages/building-your-application/data-fetching/get-static-props), and [`getInitialProps`](/docs/pages/api-reference/functions/get-initial-props).
 
@@ -195,7 +196,3 @@ Since that's a new page, it'll unload the current page, load the new one and wai
 When shallow routing is used with proxy it will not ensure the new page matches the current page like previously done without proxy. This is due to proxy being able to rewrite dynamically and can't be verified client-side without a data fetch which is skipped with shallow, so a shallow route change must always be treated as shallow.
 
 Was this helpful?
-
-supported.
-
-Send

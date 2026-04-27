@@ -5,23 +5,24 @@ canonical_url: "https://nextjs.org/docs/app/api-reference/directives/use-cache-r
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:09:31.387Z"
-content_hash: "ff7ec4b65ce95b40290653f8a410e6f749379af53d4a587e4b3e6b7cf02e8a0a"
+last_crawled_at: "2026-04-27T18:08:17.138Z"
+content_hash: "af001171540fa795f3337c0fb6a6d98e09553c05cac5b7307568324db0936b69"
 menu_path: ["use cache: remote"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/api-reference/directives/use-cache-private/index.md", "title": "use cache: private"}
-nav_next: {"path": "nextjs/docs/app/api-reference/directives/use-client/index.md", "title": "use client"}
+version: "latest"
+content_language: "en"
 ---
+[API Reference](/docs/app/api-reference)[Directives](/docs/app/api-reference/directives)use cache: remote
 
 # use cache: remote
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 While the `use cache` directive is sufficient for most application needs, you might notice that cached operations are re-running more often than expected, or that your upstream services (CMS, databases, external APIs) are getting more hits than you'd expect. This can happen because `use cache` stores entries in-memory, which has inherent limitations:
 
-*   Cache entries being evicted to make room for new ones
-*   Memory constraints in your deployment environment
-*   Cache not persisting across requests or server restarts
+-   Cache entries being evicted to make room for new ones
+-   Memory constraints in your deployment environment
+-   Cache not persisting across requests or server restarts
 
 Note that `use cache` still provides value beyond server-side caching: it informs Next.js what can be prefetched and defines stale times for client-side navigation.
 
@@ -32,8 +33,6 @@ The `'use cache: remote'` directive lets you declaratively specify that a cached
 To use `'use cache: remote'`, enable the [`cacheComponents`](/docs/app/api-reference/config/next-config-js/cacheComponents) flag in your `next.config.ts` file:
 
 next.config.ts
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -51,25 +50,25 @@ Then add `'use cache: remote'` to the functions or components where you've deter
 
 ### When to avoid remote caching[](#when-to-avoid-remote-caching)
 
-*   If you already have a server-side cache key-value store wrapping your data layer, `use cache` may be sufficient to include data in the static shell without adding another caching layer
-*   If operations are already fast (< 50ms) due to proximity or local access, the remote cache lookup might not improve performance
-*   If cache keys have mostly unique values per request (search filters, price ranges, user-specific parameters), cache utilization will be near-zero
-*   If data changes frequently (seconds to minutes), cache hits will quickly go stale, leading to frequent misses and waiting for upstream revalidation
+-   If you already have a server-side cache key-value store wrapping your data layer, `use cache` may be sufficient to include data in the static shell without adding another caching layer
+-   If operations are already fast (< 50ms) due to proximity or local access, the remote cache lookup might not improve performance
+-   If cache keys have mostly unique values per request (search filters, price ranges, user-specific parameters), cache utilization will be near-zero
+-   If data changes frequently (seconds to minutes), cache hits will quickly go stale, leading to frequent misses and waiting for upstream revalidation
 
 ### When remote caching makes sense[](#when-remote-caching-makes-sense)
 
 Remote caching provides the most value when content is deferred to request time (outside the static shell). This typically happens when a component accesses request values like [`cookies()`](/docs/app/api-reference/functions/cookies), [`headers()`](/docs/app/api-reference/functions/headers), or [`searchParams`](/docs/app/api-reference/file-conventions/page#searchparams-optional), placing it inside a Suspense boundary. In this context:
 
-*   Each request executes the component and looks up the cache
-*   In serverless environments, each instance has its own ephemeral memory with low cache hit rates
-*   Remote caching provides a shared cache across all instances, improving hit rates and reducing backend load
+-   Each request executes the component and looks up the cache
+-   In serverless environments, each instance has its own ephemeral memory with low cache hit rates
+-   Remote caching provides a shared cache across all instances, improving hit rates and reducing backend load
 
 Compelling scenarios for `'use cache: remote'`:
 
-*   **Rate-limited APIs**: Your upstream service has rate limits or request quotas that you risk hitting
-*   **Protecting slow backends**: Your database or API becomes a bottleneck under high traffic
-*   **Expensive operations**: Database queries or computations that are costly to run repeatedly
-*   **Flaky or unreliable services**: External services that occasionally fail or have availability issues
+-   **Rate-limited APIs**: Your upstream service has rate limits or request quotas that you risk hitting
+-   **Protecting slow backends**: Your database or API becomes a bottleneck under high traffic
+-   **Expensive operations**: Database queries or computations that are costly to run repeatedly
+-   **Flaky or unreliable services**: External services that occasionally fail or have availability issues
 
 In these cases, the cost and latency of remote caching is justified by avoiding worse outcomes (rate limit errors, backend overload, high compute bills, or degraded user experience).
 
@@ -79,61 +78,14 @@ For static shell content, `use cache` is usually sufficient. If your upstream so
 
 Next.js provides three caching directives, each designed for different use cases:
 
-Feature
-
-`use cache`
-
-`'use cache: remote'`
-
-`'use cache: private'`
-
-**Server-side caching**
-
-In-memory or cache handler
-
-Remote cache handler
-
-None
-
-**Cache scope**
-
-Shared across all users
-
-Shared across all users
-
-Per-client (browser)
-
-**Can access cookies/headers directly**
-
-No (must pass as arguments)
-
-No (must pass as arguments)
-
-Yes
-
-**Server cache utilization**
-
-May be low outside static shell
-
-High (shared across instances)
-
-N/A
-
-**Additional costs**
-
-None
-
-Infrastructure (storage, network)
-
-None
-
-**Latency impact**
-
-None
-
-Cache handler lookup
-
-None
+| Feature | `use cache` | `'use cache: remote'` | `'use cache: private'` |
+| --- | --- | --- | --- |
+| **Server-side caching** | In-memory or cache handler | Remote cache handler | None |
+| **Cache scope** | Shared across all users | Shared across all users | Per-client (browser) |
+| **Can access cookies/headers directly** | No (must pass as arguments) | No (must pass as arguments) | Yes |
+| **Server cache utilization** | May be low outside static shell | High (shared across instances) | N/A |
+| **Additional costs** | None | Infrastructure (storage, network) | None |
+| **Latency impact** | None | Cache handler lookup | None |
 
 ### Caching with runtime data[](#caching-with-runtime-data)
 
@@ -202,8 +154,8 @@ The same principle applies to user-specific data. Rather than caching per-user d
 
 For example, if users have a language preference in their session, extract that preference and use it to cache shared content:
 
-*   Instead of remote caching `getUserProfile(sessionID)`, which creates one entry per user
-*   Remote cache `getCMSContent(language)` to create one entry per language
+-   Instead of remote caching `getUserProfile(sessionID)`, which creates one entry per user
+-   Remote cache `getCMSContent(language)` to create one entry per language
 
 app/components/welcome-message.tsx
 
@@ -243,10 +195,10 @@ Only use [`'use cache: private'`](/docs/app/api-reference/directives/use-cache-p
 
 Remote caches have specific nesting rules:
 
-*   Remote caches **can** be nested inside other remote caches (`'use cache: remote'`)
-*   Remote caches **can** be nested inside regular caches (`'use cache'`)
-*   Remote caches **cannot** be nested inside private caches (`'use cache: private'`)
-*   Private caches **cannot** be nested inside remote caches
+-   Remote caches **can** be nested inside other remote caches (`'use cache: remote'`)
+-   Remote caches **can** be nested inside regular caches (`'use cache'`)
+-   Remote caches **cannot** be nested inside private caches (`'use cache: private'`)
+-   Private caches **cannot** be nested inside remote caches
 
 ```
 // VALID: Remote inside remote
@@ -308,8 +260,6 @@ The following examples demonstrate common patterns for using `'use cache: remote
 Cache product pricing based on the user's currency preference. Since the currency is stored in a cookie, this component renders at request time. Remote caching is valuable here because all users with the same currency share the cached price, and in serverless environments, all instances share the same remote cache.
 
 app/product/\[id\]/page.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -601,44 +551,27 @@ function RecommendationsList({ items }) {
 
 > **Good to know**:
 > 
-> *   Remote caches are stored in server-side cache handlers and shared across all users
-> *   `'use cache: remote'` works outside the static shell where [`use cache`](/docs/app/api-reference/directives/use-cache) may not provide server-side cache hits
-> *   Use [`cacheTag()`](/docs/app/api-reference/functions/cacheTag) and [`revalidateTag()`](/docs/app/api-reference/functions/revalidateTag) to invalidate remote caches on-demand
-> *   Use [`cacheLife()`](/docs/app/api-reference/functions/cacheLife) to configure cache expiration
-> *   For user-specific data, use [`'use cache: private'`](/docs/app/api-reference/directives/use-cache-private) instead of `'use cache: remote'`
-> *   Remote caches reduce origin load by storing computed or fetched data server-side
+> -   Remote caches are stored in server-side cache handlers and shared across all users
+> -   `'use cache: remote'` works outside the static shell where [`use cache`](/docs/app/api-reference/directives/use-cache) may not provide server-side cache hits
+> -   Use [`cacheTag()`](/docs/app/api-reference/functions/cacheTag) and [`revalidateTag()`](/docs/app/api-reference/functions/revalidateTag) to invalidate remote caches on-demand
+> -   Use [`cacheLife()`](/docs/app/api-reference/functions/cacheLife) to configure cache expiration
+> -   For user-specific data, use [`'use cache: private'`](/docs/app/api-reference/directives/use-cache-private) instead of `'use cache: remote'`
+> -   Remote caches reduce origin load by storing computed or fetched data server-side
 
 ## Platform Support[](#platform-support)
 
-Deployment Option
-
-Supported
-
-[Node.js server](/docs/app/getting-started/deploying#nodejs-server)
-
-Yes
-
-[Docker container](/docs/app/getting-started/deploying#docker)
-
-Yes
-
-[Static export](/docs/app/getting-started/deploying#static-export)
-
-No
-
-[Adapters](/docs/app/getting-started/deploying#adapters)
-
-Yes
+| Deployment Option | Supported |
+| --- | --- |
+| [Node.js server](/docs/app/getting-started/deploying#nodejs-server) | Yes |
+| [Docker container](/docs/app/getting-started/deploying#docker) | Yes |
+| [Static export](/docs/app/getting-started/deploying#static-export) | No |
+| [Adapters](/docs/app/getting-started/deploying#adapters) | Yes |
 
 ## Version History[](#version-history)
 
-Version
-
-Changes
-
-`v16.0.0`
-
-`"use cache: remote"` is enabled with the Cache Components feature.
+| Version | Changes |
+| --- | --- |
+| `v16.0.0` | `"use cache: remote"` is enabled with the Cache Components feature. |
 
 ## Related
 
@@ -688,20 +621,4 @@ API Reference for the connection function.
 
 ](/docs/app/api-reference/functions/connection)
 
-[Previous
-
-use cache: private
-
-](/docs/app/api-reference/directives/use-cache-private)
-
-[Next
-
-use client
-
-](/docs/app/api-reference/directives/use-client)
-
 Was this helpful?
-
-supported.
-
-Send

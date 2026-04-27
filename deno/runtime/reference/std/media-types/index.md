@@ -5,15 +5,16 @@ canonical_url: "https://docs.deno.com/runtime/reference/std/media-types/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:04:26.353Z"
-content_hash: "30fafc5ab99bd1f84778d11758d52bd752c60308555cc855b468283758f3e831"
+last_crawled_at: "2026-04-27T17:45:26.178Z"
+content_hash: "576a6aa9fcbf18ae321e945acd6a9c77e4c852f7c0aad53f055dd5a1f0494c0a"
 menu_path: ["@std/media-types"]
 section_path: []
+content_language: "en"
 ---
-On this page
+**On this page**
 
-*   [Overview](#overview)
-    *   [Add to your project](#add-to-your-project)
+-   [Overview](#overview)
+    -   [Add to your project](#add-to-your-project)
 
 ## Overview
 

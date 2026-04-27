@@ -5,57 +5,66 @@ canonical_url: "https://tailwindcss.com/docs/align-items"
 docset: "tailwind"
 kind: "framework"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:49:47.031Z"
-content_hash: "ebd1d8aeede2a719cce12cf96879afdb483b034b9b7d0b2c0d40a18b161016d3"
+last_crawled_at: "2026-04-27T20:01:19.343Z"
+content_hash: "717ade59d52e8a88ce26d84a4fc71ee486f74cd3ba51878196f758c82a8bf0c3"
 menu_path: ["align-items"]
 section_path: []
-nav_prev: {"path": "tailwind/docs/align-content/index.md", "title": "align-content"}
-nav_next: {"path": "tailwind/docs/align-self/index.md", "title": "align-self"}
+content_language: "en"
 ---
+[](/)
+
+[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
+
+1.  Flexbox & Grid
+2.  align-items
+
+Flexbox & Grid
 
 # align-items
 
 Utilities for controlling how flex and grid items are positioned along a container's cross axis.
 
-Class
-
-Styles
-
-`items-start`
-
+| Class | Styles |
+| --- | --- |
+| `items-start` | 
 `align-items: flex-start;`
 
-`items-end`
+ |
+| `items-end` | 
 
 `align-items: flex-end;`
 
-`items-end-safe`
+ |
+| `items-end-safe` | 
 
 `align-items: safe flex-end;`
 
-`items-center`
+ |
+| `items-center` | 
 
 `align-items: center;`
 
-`items-center-safe`
+ |
+| `items-center-safe` | 
 
 `align-items: safe center;`
 
-`items-baseline`
+ |
+| `items-baseline` | 
 
 `align-items: baseline;`
 
-`items-baseline-last`
+ |
+| `items-baseline-last` | 
 
 `align-items: last baseline;`
 
-`items-stretch`
+ |
+| `items-stretch` | 
 
 `align-items: stretch;`
 
-## [Examples](#examples)
-
-### [Stretch](#stretch)
+ |
 
 Use the `items-stretch` utility to stretch items to fill the container's cross axis:
 
@@ -69,8 +78,6 @@ Use the `items-stretch` utility to stretch items to fill the container's cross a
 <div class="flex items-stretch ...">  <div class="py-4">01</div>  <div class="py-12">02</div>  <div class="py-8">03</div></div>
 ```
 
-### [Start](#start)
-
 Use the `items-start` utility to align items to the start of the container's cross axis:
 
 01
@@ -82,8 +89,6 @@ Use the `items-start` utility to align items to the start of the container's cro
 ```
 <div class="flex items-start ...">  <div class="py-4">01</div>  <div class="py-12">02</div>  <div class="py-8">03</div></div>
 ```
-
-### [Center](#center)
 
 Use the `items-center` utility to align items along the center of the container's cross axis:
 
@@ -97,8 +102,6 @@ Use the `items-center` utility to align items along the center of the container'
 <div class="flex items-center ...">  <div class="py-4">01</div>  <div class="py-12">02</div>  <div class="py-8">03</div></div>
 ```
 
-### [End](#end)
-
 Use the `items-end` utility to align items to the end of the container's cross axis:
 
 01
@@ -111,8 +114,6 @@ Use the `items-end` utility to align items to the end of the container's cross a
 <div class="flex items-end ...">  <div class="py-4">01</div>  <div class="py-12">02</div>  <div class="py-8">03</div></div>
 ```
 
-### [Baseline](#baseline)
-
 Use the `items-baseline` utility to align items along the container's cross axis such that all of their baselines align:
 
 01
@@ -124,8 +125,6 @@ Use the `items-baseline` utility to align items along the container's cross axis
 ```
 <div class="flex items-baseline ...">  <div class="pt-2 pb-6">01</div>  <div class="pt-8 pb-12">02</div>  <div class="pt-12 pb-4">03</div></div>
 ```
-
-### [Last baseline](#last-baseline)
 
 Use the `items-baseline-last` utility to align items along the container's cross axis such that all of their baselines align with the last baseline in the container:
 
@@ -151,8 +150,6 @@ A multidisciplinary designer.
 
 This is useful for ensuring that text items align with each other, even if they have different heights.
 
-### [Responsive design](#responsive-design)
-
 Prefix an `align-items` utility with a breakpoint variant like `md:` to only apply the utility at medium screen sizes and above:
 
 ```
@@ -163,15 +160,15 @@ Learn more about using variants in the [variants documentation](/docs/hover-focu
 
 ### On this page
 
-*   [Quick reference](#quick-reference)
-*   [Examples](#examples)
-    *   [Stretch](#stretch)
-    *   [Start](#start)
-    *   [Center](#center)
-    *   [End](#end)
-    *   [Baseline](#baseline)
-    *   [Last baseline](#last-baseline)
-    *   [Responsive design](#responsive-design)
+-   [Quick reference](#quick-reference)
+-   [Examples](#examples)
+    -   [Stretch](#stretch)
+    -   [Start](#start)
+    -   [Center](#center)
+    -   [End](#end)
+    -   [Baseline](#baseline)
+    -   [Last baseline](#last-baseline)
+    -   [Responsive design](#responsive-design)
 
 [
 

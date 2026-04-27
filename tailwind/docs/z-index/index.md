@@ -5,41 +5,46 @@ canonical_url: "https://tailwindcss.com/docs/z-index"
 docset: "tailwind"
 kind: "framework"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:45:09.018Z"
-content_hash: "8e9d386df8f1187c1de9fd9207c4f9ee6bff8ed99cbd5a02b001312e8fec8a7b"
+last_crawled_at: "2026-04-27T19:55:39.063Z"
+content_hash: "3d4a9eeffbbf04f941185345f0031f055c6851a00fa1ebf261535ffd711042b3"
 menu_path: ["z-index"]
 section_path: []
-nav_prev: {"path": "tailwind/docs/visibility/index.md", "title": "visibility"}
-nav_next: {"path": "tailwind/docs/flex-basis/index.md", "title": "flex-basis"}
+content_language: "en"
 ---
+[](/)
+
+[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
+
+1.  Layout
+2.  z-index
+
+Layout
 
 # z-index
 
 Utilities for controlling the stack order of an element.
 
-Class
-
-Styles
-
-`z-<number>`
-
+| Class | Styles |
+| --- | --- |
+| `z-<number>` | 
 `z-index: <number>;`
 
-`z-auto`
+ |
+| `z-auto` | 
 
 `z-index: auto;`
 
-`z-[<value>]`
+ |
+| `z-[<value>]` | 
 
 `z-index: <value>;`
 
-`z-(<custom-property>)`
+ |
+| `z-(<custom-property>)` | 
 
 `z-index: var(<custom-property>);`
 
-## [Examples](#examples)
-
-### [Basic example](#basic-example)
+ |
 
 Use the `z-<number>` utilities like `z-10` and `z-50` to control the stack order (or three-dimensional positioning) of an element, regardless of the order it has been displayed:
 
@@ -57,8 +62,6 @@ Use the `z-<number>` utilities like `z-10` and `z-50` to control the stack order
 <div class="z-40 ...">05</div><div class="z-30 ...">04</div><div class="z-20 ...">03</div><div class="z-10 ...">02</div><div class="z-0 ...">01</div>
 ```
 
-### [Using negative values](#using-negative-values)
-
 To use a negative z-index value, prefix the class name with a dash to convert it to a negative value:
 
 01
@@ -75,8 +78,6 @@ To use a negative z-index value, prefix the class name with a dash to convert it
 <div class="...">05</div><div class="...">04</div><div class="-z-10 ...">03</div><div class="...">02</div><div class="...">01</div>
 ```
 
-### [Using a custom value](#using-a-custom-value)
-
 Use the `z-[<value>]` syntax to set the stack order based on a completely custom value:
 
 ```
@@ -91,8 +92,6 @@ For CSS variables, you can also use the `z-(<custom-property>)` syntax:
 
 This is just a shorthand for `z-[var(<custom-property>)]` that adds the `var()` function for you automatically.
 
-### [Responsive design](#responsive-design)
-
 Prefix a `z-index` utility with a breakpoint variant like `md:` to only apply the utility at medium screen sizes and above:
 
 ```
@@ -103,12 +102,12 @@ Learn more about using variants in the [variants documentation](/docs/hover-focu
 
 ### On this page
 
-*   [Quick reference](#quick-reference)
-*   [Examples](#examples)
-    *   [Basic example](#basic-example)
-    *   [Using negative values](#using-negative-values)
-    *   [Using a custom value](#using-a-custom-value)
-    *   [Responsive design](#responsive-design)
+-   [Quick reference](#quick-reference)
+-   [Examples](#examples)
+    -   [Basic example](#basic-example)
+    -   [Using negative values](#using-negative-values)
+    -   [Using a custom value](#using-a-custom-value)
+    -   [Responsive design](#responsive-design)
 
 ![Build UIs that don’t suck — 5-day mini-course](/_next/static/media/course-promo.d3d6bc78.jpg)
 

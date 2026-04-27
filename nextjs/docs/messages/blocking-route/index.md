@@ -5,13 +5,14 @@ canonical_url: "https://nextjs.org/docs/messages/blocking-route"
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:17:36.228Z"
-content_hash: "6a0838eb7c8b62be325f82df0838e48071d4ec31d154d42ddde33b2e099c8716"
+last_crawled_at: "2026-04-27T18:17:04.772Z"
+content_hash: "1b7fa18f8fcdf6cc4405bd72138f05c57963b6519119fb930be547f68ddf087e"
 menu_path: ["Uncached data was accessed outside of `<Suspense>`"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/messages/app-container-deprecated/index.md", "title": "Addressing \"App Container Deprecated\" Error in Next.js"}
-nav_next: {"path": "nextjs/docs/messages/conflicting-public-file-page/index.md", "title": "Conflicting Public File and Page File"}
+version: "latest"
+content_language: "en"
 ---
+[Docs](/docs)[Errors](/docs)Uncached data was accessed outside of \`<Suspense>\`
 
 # Uncached data was accessed outside of \`<Suspense>\`
 
@@ -23,9 +24,9 @@ While some data is inherently only available when a user request is being handle
 
 This usually happens when a component does one of the following without a parent `<Suspense>` boundary:
 
-*   Awaiting `params` in a Page or Layout, or awaiting `searchParams` in a Page
-*   Calling `cookies()`, `headers()`, or `connection()`
-*   Fetching data that isn't cached with `"use cache"`
+-   Awaiting `params` in a Page or Layout, or awaiting `searchParams` in a Page
+-   Calling `cookies()`, `headers()`, or `connection()`
+-   Fetching data that isn't cached with `"use cache"`
 
 The fix depends on what data you're accessing and how you want your app to behave — see the examples below.
 
@@ -198,9 +199,9 @@ Alternatively you can add a Suspense boundary above the component that is access
 
 Layout `params` and Page `params` and `searchParams` props are promises. If you await them directly in your Page or Layout component without a `<Suspense>` boundary, the page can be blocked from prerendering. You can fix this by:
 
-*   Passing the promise to a child component wrapped in `<Suspense>` and awaiting it there
-*   Adding a [`loading.js`](/docs/app/api-reference/file-conventions/loading) file to the route segment
-*   Using [`generateStaticParams`](/docs/app/api-reference/functions/generate-static-params) to provide known param values at build time (see [below](#generatestaticparams))
+-   Passing the promise to a child component wrapped in `<Suspense>` and awaiting it there
+-   Adding a [`loading.js`](/docs/app/api-reference/file-conventions/loading) file to the route segment
+-   Using [`generateStaticParams`](/docs/app/api-reference/functions/generate-static-params) to provide known param values at build time (see [below](#generatestaticparams))
 
 For example, `const { id } = await params` directly in a Page component is a common trigger for this error:
 
@@ -381,16 +382,12 @@ Alternatively you can add a Suspense boundary above the component that is access
 
 ## Useful Links[](#useful-links)
 
-*   [`Suspense` React API](https://react.dev/reference/react/Suspense)
-*   [`headers` function](/docs/app/api-reference/functions/headers)
-*   [`cookies` function](/docs/app/api-reference/functions/cookies)
-*   [`draftMode` function](/docs/app/api-reference/functions/draft-mode)
-*   [`connection` function](/docs/app/api-reference/functions/connection)
-*   [`cacheLife` function](/docs/app/api-reference/functions/cacheLife)
-*   [`cacheTag` function](/docs/app/api-reference/functions/cacheTag)
+-   [`Suspense` React API](https://react.dev/reference/react/Suspense)
+-   [`headers` function](/docs/app/api-reference/functions/headers)
+-   [`cookies` function](/docs/app/api-reference/functions/cookies)
+-   [`draftMode` function](/docs/app/api-reference/functions/draft-mode)
+-   [`connection` function](/docs/app/api-reference/functions/connection)
+-   [`cacheLife` function](/docs/app/api-reference/functions/cacheLife)
+-   [`cacheTag` function](/docs/app/api-reference/functions/cacheTag)
 
 Was this helpful?
-
-supported.
-
-Send

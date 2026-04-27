@@ -5,26 +5,24 @@ canonical_url: "https://orm.drizzle.team/docs/get-started/gel-new"
 docset: "drizzle"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:55:15.197Z"
-content_hash: "25c4c93267365acdffc739cba9e20b550bade1efe88f63d9771ece247155a45b"
+last_crawled_at: "2026-04-27T18:46:02.235Z"
+content_hash: "0901171e4f749ac69680663b0669f2aec8a3e37b3b0099f91875c7b7af0bf7f1"
 menu_path: ["Get Started with Drizzle and Gel"]
 section_path: []
-nav_prev: {"path": "drizzle/docs/get-started/gel-existing/index.md", "title": "Get Started with Drizzle and Gel in existing project"}
-nav_next: {"path": "drizzle/docs/get-started/mssql-existing/index.md", "title": "Get Started with Drizzle and MSSQL in existing project"}
+content_language: "en"
 ---
-
 ## Get Started with Drizzle and Gel
 
 This guide assumes familiarity with:
 
-*   **tsx** - package for running TypeScript files - [read here](https://tsx.is/)
-*   **gel-js** - package for querying your Gel database - [read here](https://github.com/geldata/gel-js)
+-   **tsx** - package for running TypeScript files - [read here](https://tsx.is/)
+-   **gel-js** - package for querying your Gel database - [read here](https://github.com/geldata/gel-js)
 
 Drizzle has native support for Gel connections with the `gel` client.
 
 This is the basic file structure of the project. In the `src` directory, we have table definition in `index.ts`. In `drizzle` folder there are generated Gel to Drizzle schema
 
-```
+```plaintext
 📦 <project root>
  ├ 📂 drizzle
  ├ 📂 src
@@ -35,14 +33,6 @@ This is the basic file structure of the project. In the `src` directory, we have
 ```
 
 #### Step 1 - Install and init **Gel** project[](#step-1---install-and-init-gel-project)
-
-npm
-
-yarn
-
-pnpm
-
-bun
 
 ```
 npx gel project init
@@ -64,7 +54,7 @@ bunx gel project init
 
 In `dbschema/default.esdl` file add a basic Gel schema
 
-```
+```plaintext
 module default {
     type user {
         name: str;
@@ -78,19 +68,19 @@ module default {
 
 Generate Gel migration file:
 
-```
+```bash
 gel migration create
 ```
 
 Apply Gel migrations to the database
 
-```
+```bash
 gel migration apply
 ```
 
 Now you should have this file structure
 
-```
+```plaintext
 📦 <project root>
  ├ 📂 dbschema
  │ ├ 📂 migrations
@@ -105,14 +95,6 @@ Now you should have this file structure
 ```
 
 #### Step 4 - Install required packages[](#step-4---install-required-packages)
-
-npm
-
-yarn
-
-pnpm
-
-bun
 
 ```
 npm i drizzle-orm gel
@@ -136,11 +118,11 @@ bun add -D drizzle-kit tsx
 
 #### Step 5 - Setup Drizzle config file[](#step-5---setup-drizzle-config-file)
 
-**Drizzle config** - a configuration file that is used by [Drizzle Kit](drizzle/docs/kit-overview/index.md) and contains all the information about your database connection, migration folder and schema files.
+**Drizzle config** - a configuration file that is used by [Drizzle Kit](https://orm.drizzle.team/docs/kit-overview) and contains all the information about your database connection, migration folder and schema files.
 
 Create a `drizzle.config.ts` file in the root of your project and add the following content:
 
-```
+```typescript
 import { defineConfig } from 'drizzle-kit';
 
 export default defineConfig({
@@ -151,14 +133,6 @@ export default defineConfig({
 #### Step 6 - Pull Gel types to Drizzle schema[](#step-6---pull-gel-types-to-drizzle-schema)
 
 Pull your database schema:
-
-npm
-
-yarn
-
-pnpm
-
-bun
 
 ```
 npx drizzle-kit pull
@@ -178,7 +152,7 @@ bunx drizzle-kit pull
 
 Here is an example of the generated schema.ts file:
 
-```
+```typescript
 import { gelTable, uniqueIndex, uuid, smallint, text } from "drizzle-orm/gel-core"
 import { sql } from "drizzle-orm"
 
@@ -196,7 +170,7 @@ export const users = gelTable("users", {
 
 Create a `index.ts` file in the `src` directory and initialize the connection:
 
-```
+```typescript
 import { drizzle } from "drizzle-orm/gel";
 import { createClient } from "gel";
 
@@ -206,7 +180,7 @@ const db = drizzle({ client: gelClient });
 
 #### Step 8 - Query the database[](#step-8---query-the-database)
 
-```
+```typescript
 import { eq } from "drizzle-orm";
 import { drizzle } from "drizzle-orm/gel";
 import { createClient } from "gel";
@@ -259,14 +233,6 @@ You’ve already installed `tsx`, so we can run our queries now
 
 **Run `index.ts` script**
 
-npm
-
-yarn
-
-pnpm
-
-bun
-
 ```
 npx tsx src/index.ts
 ```
@@ -287,7 +253,7 @@ tips
 
 We suggest using `bun` to run TypeScript files. With `bun`, such scripts can be executed without issues or additional settings, regardless of whether your project is configured with CommonJS (CJS), ECMAScript Modules (ESM), or any other module format. To run a script with `bun`, use the following command:
 
-```
+```bash
 bun src/index.ts
 ```
 

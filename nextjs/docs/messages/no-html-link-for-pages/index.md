@@ -5,13 +5,14 @@ canonical_url: "https://nextjs.org/docs/messages/no-html-link-for-pages"
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:18:25.768Z"
-content_hash: "0236df5c42263a8665b53eac6c2e67fbaa9a4877b9c2b037840a5b8de41709bd"
+last_crawled_at: "2026-04-27T18:17:50.511Z"
+content_hash: "05c7fa35b775e6dbf9fa26fb0a0d094c4ca4a4be46cb48cf28592d4bace9d25c"
 menu_path: ["No HTML link for pages"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/messages/no-head-import-in-document/index.md", "title": "No Head Import in Document"}
-nav_next: {"path": "nextjs/docs/messages/no-img-element/index.md", "title": "No img element"}
+version: "latest"
+content_language: "en"
 ---
+[Docs](/docs)[Errors](/docs)No HTML link for pages
 
 # No HTML link for pages
 
@@ -81,10 +82,6 @@ eslint.config.json
 
 ## Useful Links[](#useful-links)
 
-*   [next/link API Reference](/docs/pages/api-reference/components/link)
+-   [next/link API Reference](/docs/pages/api-reference/components/link)
 
 Was this helpful?
-
-supported.
-
-Send

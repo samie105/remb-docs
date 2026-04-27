@@ -5,27 +5,17 @@ canonical_url: "https://orm.drizzle.team/docs/tutorials/drizzle-with-turso"
 docset: "drizzle"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:24:26.223Z"
-content_hash: "3b0970dcc35119bd31de98622397a0ef02afed5e7380cf1c03bf36ace0d3d6bc"
+last_crawled_at: "2026-04-27T19:28:44.606Z"
+content_hash: "9c1790bf3b9eaceb828269ba8d85cb40e1824411bfe3461b59ac55cd3d00696f"
 menu_path: ["Drizzle with Turso"]
 section_path: []
-nav_prev: {"path": "drizzle/docs/tutorials/drizzle-with-supabase-edge-functions/index.md", "title": "Drizzle with Supabase Edge Functions"}
-nav_next: {"path": "drizzle/docs/tutorials/drizzle-with-vercel/index.md", "title": "Drizzle with Vercel Postgres"}
+content_language: "en"
 ---
-
 This tutorial demonstrates how to use Drizzle ORM with [Turso](https://docs.turso.tech/introduction).
 
 This guide assumes familiarity with:
 
-*   You should have installed Drizzle ORM and [Drizzle kit](drizzle/docs/kit-overview/index.md). You can do this by running the following command:
-
-npm
-
-yarn
-
-pnpm
-
-bun
+-   You should have installed Drizzle ORM and [Drizzle kit](https://orm.drizzle.team/docs/kit-overview). You can do this by running the following command:
 
 ```
 npm i drizzle-orm
@@ -47,15 +37,7 @@ bun add drizzle-orm
 bun add -D drizzle-kit
 ```
 
-*   You should have installed `dotenv` package for managing environment variables. Read more about this package [here](https://www.npmjs.com/package/dotenv)
-
-npm
-
-yarn
-
-pnpm
-
-bun
+-   You should have installed `dotenv` package for managing environment variables. Read more about this package [here](https://www.npmjs.com/package/dotenv)
 
 ```
 npm i dotenv
@@ -73,15 +55,7 @@ pnpm add dotenv
 bun add dotenv
 ```
 
-*   You should have installed `@libsql/client` package. Read more about this package [here](https://www.npmjs.com/package/@libsql/client).
-
-npm
-
-yarn
-
-pnpm
-
-bun
+-   You should have installed `@libsql/client` package. Read more about this package [here](https://www.npmjs.com/package/@libsql/client).
 
 ```
 npm i @libsql/client
@@ -99,7 +73,7 @@ pnpm add @libsql/client
 bun add @libsql/client
 ```
 
-*   You should have installed Turso CLI. Check [documentation](https://docs.turso.tech/cli/introduction) for more information
+-   You should have installed Turso CLI. Check [documentation](https://docs.turso.tech/cli/introduction) for more information
 
 [Turso](https://docs.turso.tech/concepts) is a SQLite-compatible database built on [libSQL](https://docs.turso.tech/libsql), the Open Contribution fork of SQLite. It enables scaling to hundreds of thousands of databases per organization and supports replication to any location, including your own servers, for microsecond-latency access. You can read more about Turso’s concepts [here](https://docs.turso.tech/concepts).
 
@@ -113,13 +87,13 @@ Check [official documentation](https://docs.turso.tech/quickstart) to setup Turs
 
 Signup:
 
-```
+```bash
 turso auth signup
 ```
 
 Login:
 
-```
+```bash
 turso auth login
 ```
 
@@ -127,13 +101,13 @@ turso auth login
 
 Create new database by running the `turso db create <DATABASE_NAME>` command:
 
-```
+```bash
 turso db create drizzle-turso-db
 ```
 
 To see information about the database, run the following command:
 
-```
+```bash
 turso db show drizzle-turso-db
 ```
 
@@ -141,7 +115,7 @@ turso db show drizzle-turso-db
 
 To create an authentication token for your database, run the following command:
 
-```
+```bash
 turso db tokens create drizzle-turso-db
 ```
 
@@ -151,7 +125,7 @@ Learn more about this command and its options in the [documentation](https://doc
 
 Update your `.env` or `.env.local` file with connection url and authentication token.
 
-```
+```text
 TURSO_CONNECTION_URL=
 TURSO_AUTH_TOKEN=
 ```
@@ -160,7 +134,7 @@ TURSO_AUTH_TOKEN=
 
 Create a `index.ts` file in the `src/db` directory and set up your database configuration:
 
-```
+```typescript
 import { config } from 'dotenv';
 import { drizzle } from 'drizzle-orm/libsql';
 
@@ -176,7 +150,7 @@ export const db = drizzle({ connection: {
 
 Create a `schema.ts` file in the `src/db` directory and declare your tables:
 
-```
+```typescript
 import { sql } from 'drizzle-orm';
 import { integer, sqliteTable, text } from 'drizzle-orm/sqlite-core';
 
@@ -209,11 +183,11 @@ export type SelectPost = typeof postsTable.$inferSelect;
 
 #### Setup Drizzle config file[](#setup-drizzle-config-file)
 
-**Drizzle config** - a configuration file that is used by [Drizzle Kit](drizzle/docs/kit-overview/index.md) and contains all the information about your database connection, migration folder and schema files.
+**Drizzle config** - a configuration file that is used by [Drizzle Kit](https://orm.drizzle.team/docs/kit-overview) and contains all the information about your database connection, migration folder and schema files.
 
 Create a `drizzle.config.ts` file in the root of your project and add the following content:
 
-```
+```typescript
 import { config } from 'dotenv';
 import { defineConfig } from 'drizzle-kit';
 
@@ -236,7 +210,7 @@ You can generate migrations using `drizzle-kit generate` command and then run th
 
 Generate migrations:
 
-```
+```bash
 npx drizzle-kit generate
 ```
 
@@ -244,7 +218,7 @@ These migrations are stored in the `migrations` directory, as specified in your 
 
 Example of a generated migration:
 
-```
+```sql
 CREATE TABLE `posts` (
 	`id` integer PRIMARY KEY NOT NULL,
 	`title` text NOT NULL,
@@ -267,13 +241,13 @@ CREATE UNIQUE INDEX `users_email_unique` ON `users` (`email`);
 
 Run migrations:
 
-```
+```bash
 npx drizzle-kit migrate
 ```
 
-Alternatively, you can push changes directly to the database using [Drizzle kit push command](drizzle/docs/kit-overview/index.md#prototyping-with-db-push):
+Alternatively, you can push changes directly to the database using [Drizzle kit push command](https://orm.drizzle.team/docs/kit-overview#prototyping-with-db-push):
 
-```
+```bash
 npx drizzle-kit push
 ```
 
@@ -285,7 +259,7 @@ Push command is good for situations where you need to quickly test new schema de
 
 This is the basic file structure of the project. In the `src/db` directory, we have database-related files including connection in `index.ts` and schema definitions in `schema.ts`.
 
-```
+```plaintext
 📦 <project root>
  ├ 📂 src
  │   ├ 📂 db
@@ -308,9 +282,9 @@ For instance, we create `src/db/queries` folder and separate files for each oper
 
 #### Insert data[](#insert-data)
 
-Read more about insert query in the [documentation](drizzle/docs/insert/index.md).
+Read more about insert query in the [documentation](https://orm.drizzle.team/docs/insert).
 
-```
+```typescript
 import { db } from '../index';
 import { InsertPost, InsertUser, postsTable, usersTable } from '../schema';
 
@@ -325,15 +299,15 @@ export async function createPost(data: InsertPost) {
 
 #### Select data[](#select-data)
 
-Read more about select query in the [documentation](drizzle/docs/select/index.md).
+Read more about select query in the [documentation](https://orm.drizzle.team/docs/select).
 
 IMPORTANT
 
-`getColumns` available starting from `drizzle-orm@1.0.0-beta.2`(read more [here](drizzle/docs/upgrade-v1/index.md))
+`getColumns` available starting from `drizzle-orm@1.0.0-beta.2`(read more [here](https://orm.drizzle.team/docs/upgrade-v1))
 
 If you are on pre-1 version(like `0.45.1`) then use `getTableColumns`
 
-```
+```typescript
 import { asc, count, eq, getColumns, gt, sql } from 'drizzle-orm';
 import { db } from '../index';
 import { SelectUser, postsTable, usersTable } from '../schema';
@@ -396,13 +370,13 @@ export async function getPostsForLast24Hours(
 }
 ```
 
-Alternatively, you can use [relational query syntax](drizzle/docs/rqb/index.md).
+Alternatively, you can use [relational query syntax](https://orm.drizzle.team/docs/rqb).
 
 #### Update data[](#update-data)
 
-Read more about update query in the [documentation](drizzle/docs/update/index.md).
+Read more about update query in the [documentation](https://orm.drizzle.team/docs/update).
 
-```
+```typescript
 import { eq } from 'drizzle-orm';
 import { db } from '../index';
 import { SelectPost, postsTable } from '../schema';
@@ -414,9 +388,9 @@ export async function updatePost(id: SelectPost['id'], data: Partial<Omit<Select
 
 #### Delete data[](#delete-data)
 
-Read more about delete query in the [documentation](drizzle/docs/delete/index.md).
+Read more about delete query in the [documentation](https://orm.drizzle.team/docs/delete).
 
-```
+```typescript
 import { eq } from 'drizzle-orm';
 import { db } from '../index';
 import { SelectUser, usersTable } from '../schema';

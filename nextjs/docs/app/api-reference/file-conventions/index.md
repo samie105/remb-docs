@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/app/api-reference/file-conventions"
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:09:39.868Z"
-content_hash: "74546bf1042d1dd989675f5b1ce72d0a21498117e9e676a98c7015c075e5820c"
+last_crawled_at: "2026-04-27T18:08:25.274Z"
+content_hash: "d4cdaded86264ba391450c4a4e4e142172eff2c0306a825996666f3fc78971a2"
 menu_path: ["File-system conventions"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/api-reference/components/script/index.md", "title": "Script Component"}
-nav_next: {"path": "nextjs/docs/app/api-reference/file-conventions/default/index.md", "title": "default.js"}
+version: "latest"
+content_language: "en"
 ---
+[App Router](/docs/app)[API Reference](/docs/app/api-reference)File-system conventions
 
 # File-system conventions
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 [
 
@@ -151,20 +152,4 @@ Learn about how to configure options for Next.js route segments.
 
 ](/docs/app/api-reference/file-conventions/route-segment-config)
 
-[Previous
-
-Script Component
-
-](/docs/app/api-reference/components/script)
-
-[Next
-
-default.js
-
-](/docs/app/api-reference/file-conventions/default)
-
 Was this helpful?
-
-supported.
-
-Send

@@ -5,19 +5,17 @@ canonical_url: "https://orm.drizzle.team/docs/drizzle-config-file"
 docset: "drizzle"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:45:45.474Z"
-content_hash: "95e2edb4fffbe2eb04761309555b7d021409ca192728baa0651301fbd56b79ac"
+last_crawled_at: "2026-04-27T18:34:46.996Z"
+content_hash: "183fd8ecc1291172e2dc839d594be58b5ad79e6ba63fe364be8b896ba64a7a88"
 menu_path: ["Drizzle Kit configuration file"]
 section_path: []
-nav_prev: {"path": "drizzle/docs/kit-web-mobile/index.md", "title": "Drizzle migrations in web and mobile environments"}
-nav_next: {"path": "drizzle/docs/seed-overview/index.md", "title": "Drizzle Seed"}
+content_language: "en"
 ---
-
 ## Drizzle Kit configuration file
 
 Drizzle Kit lets you declare configuration options in `TypeScript` or `JavaScript` configuration files.
 
-```
+```plaintext
 📦 <project root>
  ├ ...
  ├ 📂 drizzle
@@ -30,7 +28,7 @@ drizzle.config.ts
 
 drizzle.config.js
 
-```
+```ts
 import { defineConfig } from "drizzle-kit";
 
 export default defineConfig({
@@ -42,7 +40,7 @@ export default defineConfig({
 
 Example of an extended config file
 
-```
+```ts
 import { defineConfig } from "drizzle-kit";
 
 export default defineConfig({
@@ -89,14 +87,6 @@ Expand
 
 You can have multiple config files in the project, it’s very useful when you have multiple database stages or multiple databases or different databases on the same project:
 
-npm
-
-yarn
-
-pnpm
-
-bun
-
 ```
 npx drizzle-kit generate --config=drizzle-dev.config.ts
 npx drizzle-kit generate --config=drizzle-prod.config.ts
@@ -117,7 +107,7 @@ bunx drizzle-kit generate --config=drizzle-dev.config.ts
 bunx drizzle-kit generate --config=drizzle-prod.config.ts
 ```
 
-```
+```plaintext
 📦 <project root>
  ├ 📂 drizzle
  ├ 📂 src
@@ -135,7 +125,7 @@ It’s very useful since you can have many separate schemas for different databa
 
 Migration folder contains folders with `.sql` migration files which is used by `drizzle-kit`
 
-```
+```plaintext
 📦 <project root>
  ├ ...
  ├ 📂 drizzle
@@ -148,7 +138,7 @@ Migration folder contains folders with `.sql` migration files which is used by `
  └ 📜 package.json
 ```
 
-```
+```ts
 import { defineConfig } from "drizzle-kit";
 
 export default defineConfig({
@@ -162,19 +152,13 @@ export default defineConfig({
 
 Dialect of the database you’re using
 
-type
+|  |  |
+| --- | --- |
+| type | `postgresql` `mysql` `sqlite` `turso` `singlestore` `mssql` `cockroachdb` |
+| default | — |
+| commands | `generate` `migrate` `push` `pull` `check` `up` |
 
-`postgresql` `mysql` `sqlite` `turso` `singlestore` `mssql` `cockroachdb`
-
-default
-
-—
-
-commands
-
-`generate` `migrate` `push` `pull` `check` `up`
-
-```
+```ts
 import { defineConfig } from "drizzle-kit";
 
 export default defineConfig({
@@ -186,17 +170,11 @@ export default defineConfig({
 
 [`glob`](https://www.digitalocean.com/community/tools/glob?comments=true&glob=/**/*.js&matches=false&tests=//%20This%20will%20match%20as%20it%20ends%20with%20%27.js%27&tests=/hello/world.js&tests=//%20This%20won%27t%20match!&tests=/test/some/globs) based path to drizzle schema file(s) or folder(s) contaning schema files.
 
-type
-
-`string` `string[]`
-
-default
-
-—
-
-commands
-
-`generate` `push`
+|  |  |
+| --- | --- |
+| type | `string` `string[]` |
+| default | — |
+| commands | `generate` `push` |
 
 Example 1
 
@@ -206,7 +184,7 @@ Example 3
 
 Example 4
 
-```
+```plaintext
 📦 <project root>
  ├ ...
  ├ 📂 drizzle
@@ -218,7 +196,7 @@ Example 4
  └ 📜 package.json
 ```
 
-```
+```ts
 import { defineConfig } from "drizzle-kit";
 
 export default defineConfig({
@@ -230,19 +208,13 @@ export default defineConfig({
 
 Defines output folder of your SQL migration files, json snapshots of your schema and `schema.ts` from `drizzle-kit pull` command.
 
-type
+|  |  |
+| --- | --- |
+| type | `string` `string[]` |
+| default | `drizzle` |
+| commands | `generate` `migrate` `push` `pull` `check` `up` |
 
-`string` `string[]`
-
-default
-
-`drizzle`
-
-commands
-
-`generate` `migrate` `push` `pull` `check` `up`
-
-```
+```ts
 import { defineConfig } from "drizzle-kit";
 
 export default defineConfig({
@@ -256,17 +228,11 @@ Drizzle Kit automatically picks available database driver from your current proj
 
 `driver` option let’s you explicitely pick those exceptions drivers.
 
-type
-
-`aws-data-api` `d1-http` `pglight`
-
-default
-
-—
-
-commands
-
-`migrate` `push` `pull`
+|  |  |
+| --- | --- |
+| type | `aws-data-api` `d1-http` `pglight` |
+| default | — |
+| commands | `migrate` `push` `pull` |
 
 AWS Data API
 
@@ -274,7 +240,7 @@ PGLite
 
 Cloudflare D1 HTTP
 
-```
+```ts
 import { defineConfig } from "drizzle-kit";
 
 export default defineConfig({
@@ -289,7 +255,7 @@ export default defineConfig({
 });
 ```
 
-```
+```ts
 import { defineConfig } from "drizzle-kit";
 
 export default defineConfig({
@@ -306,7 +272,7 @@ export default defineConfig({
 });
 ```
 
-```
+```ts
 import { defineConfig } from "drizzle-kit";
 
 export default defineConfig({
@@ -325,17 +291,11 @@ export default defineConfig({
 
 Database connection credentials in a form of `url`, `user:password@host:port/db` params or exceptions drivers(`aws-data-api` `d1-http` `pglight` ) specific connection options.
 
-type
-
-union of drivers connection options
-
-default
-
-—
-
-commands
-
-`migrate` `push` `pull`
+|  |  |
+| --- | --- |
+| type | union of drivers connection options |
+| default | — |
+| commands | `migrate` `push` `pull` |
 
 PostgreSQL
 
@@ -351,7 +311,7 @@ AWS Data API
 
 PGLite
 
-```
+```ts
 import { defineConfig } from 'drizzle-kit'
 
 export default defineConfig({
@@ -362,7 +322,7 @@ export default defineConfig({
 });
 ```
 
-```
+```ts
 import { defineConfig } from 'drizzle-kit'
 
 // via connection params
@@ -379,7 +339,7 @@ export default defineConfig({
 });
 ```
 
-```
+```ts
 import { defineConfig } from 'drizzle-kit'
 
 export default defineConfig({
@@ -394,7 +354,7 @@ export default defineConfig({
 });
 ```
 
-```
+```ts
 import { defineConfig } from 'drizzle-kit'
 
 export default defineConfig({
@@ -412,7 +372,7 @@ export default defineConfig({
 });
 ```
 
-```
+```ts
 import { defineConfig } from 'drizzle-kit'
 
 export default defineConfig({
@@ -426,7 +386,7 @@ export default defineConfig({
 });
 ```
 
-```
+```ts
 import { defineConfig } from 'drizzle-kit'
 
 export default defineConfig({
@@ -440,7 +400,7 @@ export default defineConfig({
 });
 ```
 
-```
+```ts
 import { defineConfig } from 'drizzle-kit'
 
 export default defineConfig({
@@ -458,19 +418,13 @@ When running `drizzle-kit migrate` - drizzle will records about successfully app
 
 `migrations` config options lets you change both migrations log `table` name and `schema`.
 
-type
+|  |  |
+| --- | --- |
+| type | `{ table: string, schema: string }` |
+| default | `{ table: "__drizzle_migrations", schema: "drizzle" }` |
+| commands | `migrate` |
 
-`{ table: string, schema: string }`
-
-default
-
-`{ table: "__drizzle_migrations", schema: "drizzle" }`
-
-commands
-
-`migrate`
-
-```
+```ts
 export default defineConfig({
   dialect: "postgresql",
   schema: "./src/schema.ts",
@@ -487,23 +441,13 @@ Configuration for `drizzle-kit pull` command.
 
 `casing` is responsible for in-code column keys casing
 
-type
+|  |  |
+| --- | --- |
+| type | `{ casing: "preserve" | "camel" }` |
+| default | `{ casing: "camel" }` |
+| commands | `pull` |
 
-`{ casing: "preserve" | "camel" }`
-
-default
-
-`{ casing: "camel" }`
-
-commands
-
-`pull`
-
-camel
-
-preserve
-
-```
+```ts
 import * as p from "drizzle-orm/pg-core"
 
 export const users = p.pgTable("users", {
@@ -515,11 +459,11 @@ export const users = p.pgTable("users", {
 });
 ```
 
-```
+```sql
 SELECT a.attname AS column_name, format_type(a.atttypid, a.atttypmod) as data_type FROM pg_catalog.pg_attribute a;
 ```
 
-```
+```plaintext
  column_name   | data_type        
 ---------------+------------------------
  id            | serial
@@ -531,25 +475,19 @@ SELECT a.attname AS column_name, format_type(a.atttypid, a.atttypmod) as data_ty
 
 ### `tablesFilter`[](#tablesfilter)
 
-If you want to run multiple projects with one database - check out [our guide](drizzle/docs/goodies/index.md#multi-project-schema).
+If you want to run multiple projects with one database - check out [our guide](https://orm.drizzle.team/docs/goodies#multi-project-schema).
 
 `drizzle-kit push` and `drizzle-kit pull` will by default manage all tables in `public` schema. You can configure list of tables, schemas and extensions via `tablesFilters`, `schemaFilter` and `extensionFilters` options.
 
 `tablesFilter` option lets you specify [`glob`](https://www.digitalocean.com/community/tools/glob?comments=true&glob=/**/*.js&matches=false&tests=//%20This%20will%20match%20as%20it%20ends%20with%20%27.js%27&tests=/hello/world.js&tests=//%20This%20won%27t%20match!&tests=/test/some/globs) based table names filter, e.g. `["users", "user_info"]` or `"user*"`
 
-type
+|  |  |
+| --- | --- |
+| type | `string` `string[]` |
+| default | — |
+| commands | `generate` `push` `pull` |
 
-`string` `string[]`
-
-default
-
-—
-
-commands
-
-`generate` `push` `pull`
-
-```
+```ts
 import { defineConfig } from "drizzle-kit";
 
 export default defineConfig({
@@ -570,33 +508,24 @@ How it works in 0.x versions
 
 `schemaFilter` option lets you specify list of schemas for Drizzle Kit to manage
 
-type
+|  |  |
+| --- | --- |
+| type | `string[]` |
+| default | `["public"]` |
+| commands | `push` `pull` |
 
-`string[]`
-
-default
-
-`["public"]`
-
-commands
-
-`push` `pull`
-
-If you want to run multiple projects with one database - check out [our guide](drizzle/docs/goodies/index.md#multi-project-schema).
+If you want to run multiple projects with one database - check out [our guide](https://orm.drizzle.team/docs/goodies#multi-project-schema).
 
 `drizzle-kit push` and `drizzle-kit pull` will by default manage all schemas.
 
 `schemaFilter` option lets you specify [`glob`](https://www.digitalocean.com/community/tools/glob?comments=true&glob=/**/*.js&matches=false&tests=//%20This%20will%20match%20as%20it%20ends%20with%20%27.js%27&tests=/hello/world.js&tests=//%20This%20won%27t%20match!&tests=/test/some/globs) based schema names filter, e.g. `["public", "auth"]` or `"tenant_*"`
 
-type
+|  |  |
+| --- | --- |
+| type | `string[]` |
+| commands | `push` `pull` |
 
-`string[]`
-
-commands
-
-`push` `pull`
-
-```
+```ts
 export default defineConfig({
   dialect: "postgresql",
   schemaFilter: ["public", "schema1", "schema2"],
@@ -609,19 +538,13 @@ Some extensions like [`postgis`](https://postgis.net/), when installed on the da
 
 `extensionsFilters` option lets you declare list of installed extensions for drizzle kit to ignore their tables in the schema.
 
-type
+|  |  |
+| --- | --- |
+| type | `["postgis"]` |
+| default | `[]` |
+| commands | `push` `pull` |
 
-`["postgis"]`
-
-default
-
-`[]`
-
-commands
-
-`push` `pull`
-
-```
+```ts
 export default defineConfig({
   dialect: "postgresql",
   extensionsFilters: ["postgis"],
@@ -640,27 +563,21 @@ If you are using Drizzle Kit to manage your schema and especially the defined ro
 
 The `roles` option lets you:
 
-*   Enable or disable role management with Drizzle Kit.
-*   Exclude specific roles from management by Drizzle Kit.
-*   Include specific roles for management by Drizzle Kit.
-*   Enable modes for providers like `Neon` and `Supabase`, which do not manage their specific roles.
-*   Combine all the options above
+-   Enable or disable role management with Drizzle Kit.
+-   Exclude specific roles from management by Drizzle Kit.
+-   Include specific roles for management by Drizzle Kit.
+-   Enable modes for providers like `Neon` and `Supabase`, which do not manage their specific roles.
+-   Combine all the options above
 
-type
-
-`boolean | { provider: "neon" | "supabase", include: string[], exclude: string[]}`
-
-default
-
-`false`
-
-commands
-
-`push` `pull` `generate`
+|  |  |
+| --- | --- |
+| type | `boolean | { provider: "neon" | "supabase", include: string[], exclude: string[]}` |
+| default | `false` |
+| commands | `push` `pull` `generate` |
 
 By default, `drizzle-kit` won’t manage roles for you, so you will need to enable that. in `drizzle.config.ts`
 
-```
+```ts
 export default defineConfig({
   dialect: "postgresql",
   entities: {
@@ -671,7 +588,7 @@ export default defineConfig({
 
 **You have a role `admin` and want to exclude it from the list of manageable roles**
 
-```
+```ts
 // drizzle.config.ts
 import { defineConfig } from "drizzle-kit";
 
@@ -687,7 +604,7 @@ export default defineConfig({
 
 **You have a role `admin` and want to include to the list of manageable roles**
 
-```
+```ts
 // drizzle.config.ts
 import { defineConfig } from "drizzle-kit";
 
@@ -703,7 +620,7 @@ export default defineConfig({
 
 **If you are using `Neon` and want to exclude roles defined by `Neon`, you can use the provider option**
 
-```
+```ts
 // drizzle.config.ts
 import { defineConfig } from "drizzle-kit";
 
@@ -719,7 +636,7 @@ export default defineConfig({
 
 **If you are using `Supabase` and want to exclude roles defined by `Supabase`, you can use the provider option**
 
-```
+```ts
 // drizzle.config.ts
 import { defineConfig } from "drizzle-kit";
 
@@ -737,7 +654,7 @@ important
 
 You may encounter situations where Drizzle is slightly outdated compared to new roles specified by database providers, so you may need to use both the `provider` option and `exclude` additional roles. You can easily do this with Drizzle:
 
-```
+```ts
 // drizzle.config.ts
 import { defineConfig } from "drizzle-kit";
 
@@ -756,19 +673,13 @@ export default defineConfig({
 
 Prompts confirmation to run printed SQL statements when running `drizzle-kit push` command.
 
-type
+|  |  |
+| --- | --- |
+| type | `boolean` |
+| default | `false` |
+| commands | `push` |
 
-`boolean`
-
-default
-
-`false`
-
-commands
-
-`push`
-
-```
+```ts
 export default defineConfig({
   dialect: "postgresql",
   strict: false,
@@ -779,19 +690,13 @@ export default defineConfig({
 
 Print all SQL statements during `drizzle-kit push` command.
 
-type
+|  |  |
+| --- | --- |
+| type | `boolean` |
+| default | `true` |
+| commands | `generate` `pull` |
 
-`boolean`
-
-default
-
-`true`
-
-commands
-
-`generate` `pull`
-
-```
+```ts
 export default defineConfig({
   dialect: "postgresql",
   verbose: false,
@@ -804,19 +709,13 @@ Drizzle Kit will automatically embed `--> statement-breakpoint` into generated S
 
 `breakpoints` option flag lets you switch it on and off
 
-type
+|  |  |
+| --- | --- |
+| type | `boolean` |
+| default | `true` |
+| commands | `generate` `pull` |
 
-`boolean`
-
-default
-
-`true`
-
-commands
-
-`generate` `pull`
-
-```
+```ts
 export default defineConfig({
   dialect: "postgresql",
   breakpoints: false,

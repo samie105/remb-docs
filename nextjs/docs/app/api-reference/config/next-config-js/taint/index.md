@@ -5,32 +5,31 @@ canonical_url: "https://nextjs.org/docs/app/api-reference/config/next-config-js/
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:08:43.355Z"
-content_hash: "89f74450d7db59dd7b8cf3fbc7aa3708f04333fbc7735dadb82d36d7b552213c"
+last_crawled_at: "2026-04-27T18:07:30.442Z"
+content_hash: "a5ad9a397f7b0ba4a6581872dfd1dbe94e6f327a1f7831a941e4bbd978c2ff16"
 menu_path: ["taint"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/api-reference/config/next-config-js/staticGeneration/index.md", "title": "staticGeneration*"}
-nav_next: {"path": "nextjs/docs/app/api-reference/config/next-config-js/trailingSlash/index.md", "title": "trailingSlash"}
+version: "latest"
+content_language: "en"
 ---
+[Configuration](/docs/app/api-reference/config)[next.config.js](/docs/app/api-reference/config/next-config-js)taint
 
 # taint
 
 This feature is currently experimental and subject to change, it's not recommended for production. Try it out and share your feedback on [GitHub](https://github.com/vercel/next.js/issues).
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 ## Usage[](#usage)
 
 The `taint` option enables support for experimental React APIs for tainting objects and values. This feature helps prevent sensitive data from being accidentally passed to the client. When enabled, you can use:
 
-*   [`experimental_taintObjectReference`](https://react.dev/reference/react/experimental_taintObjectReference) taint objects references.
-*   [`experimental_taintUniqueValue`](https://react.dev/reference/react/experimental_taintUniqueValue) to taint unique values.
+-   [`experimental_taintObjectReference`](https://react.dev/reference/react/experimental_taintObjectReference) taint objects references.
+-   [`experimental_taintUniqueValue`](https://react.dev/reference/react/experimental_taintUniqueValue) to taint unique values.
 
 > **Good to know**: Activating this flag also enables the React `experimental` channel for `app` directory.
 
 next.config.ts
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -52,17 +51,17 @@ The taint APIs allows you to be defensive, by declaratively and explicitly marki
 
 This is helpful for cases where:
 
-*   The methods to read data are out of your control
-*   You have to work with sensitive data shapes not defined by you
-*   Sensitive data is accessed during Server Component rendering
+-   The methods to read data are out of your control
+-   You have to work with sensitive data shapes not defined by you
+-   Sensitive data is accessed during Server Component rendering
 
 It is recommended to model your data and APIs so that sensitive data is not returned to contexts where it is not needed.
 
 ## Caveats[](#caveats)
 
-*   Tainting can only keep track of objects by reference. Copying an object creates an untainted version, which loses all guarantees given by the API. You'll need to taint the copy.
-*   Tainting cannot keep track of data derived from a tainted value. You also need to taint the derived value.
-*   Values are tainted for as long as their lifetime reference is within scope. See the [`experimental_taintUniqueValue` parameters reference](https://react.dev/reference/react/experimental_taintUniqueValue#parameters), for more information.
+-   Tainting can only keep track of objects by reference. Copying an object creates an untainted version, which loses all guarantees given by the API. You'll need to taint the copy.
+-   Tainting cannot keep track of data derived from a tainted value. You also need to taint the derived value.
+-   Values are tainted for as long as their lifetime reference is within scope. See the [`experimental_taintUniqueValue` parameters reference](https://react.dev/reference/react/experimental_taintUniqueValue#parameters), for more information.
 
 ## Examples[](#examples)
 
@@ -180,20 +179,4 @@ export async function Dashboard() {
 
 A better approach is to remove `SERVICE_API_KEY` from the data returned by `getSystemConfig`.
 
-[Previous
-
-staticGeneration\*
-
-](/docs/app/api-reference/config/next-config-js/staticGeneration)
-
-[Next
-
-trailingSlash
-
-](/docs/app/api-reference/config/next-config-js/trailingSlash)
-
 Was this helpful?
-
-supported.
-
-Send

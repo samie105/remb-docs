@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/app/guides/self-hosting"
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:16:17.879Z"
-content_hash: "095b0472aaf5943906607949dc887981a35ff9f05b1f967a3a80eb2a360b56ec"
+last_crawled_at: "2026-04-27T18:15:32.401Z"
+content_hash: "1b3f71f9a3c82c3383807851608f66ef0d70e1d5affe0b9d9c04844fc52d8092"
 menu_path: ["How to self-host your Next.js application"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/guides/scripts/index.md", "title": "How to load and optimize scripts"}
-nav_next: {"path": "nextjs/docs/app/guides/single-page-applications/index.md", "title": "How to build single-page applications with Next.js"}
+version: "latest"
+content_language: "en"
 ---
+[App Router](/docs/app)[Guides](/docs/app/guides)Self-Hosting
 
 # How to self-host your Next.js application
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 When [deploying](/docs/app/getting-started/deploying) your Next.js app, you may want to configure how different features are handled based on your infrastructure.
 
@@ -33,9 +34,9 @@ Image Optimization can be used with a [static export](/docs/app/guides/static-ex
 
 > **Good to know:**
 > 
-> *   On glibc-based Linux systems, Image Optimization may require [additional configuration](https://sharp.pixelplumbing.com/install#linux-memory-allocator) to prevent excessive memory usage.
-> *   Learn more about the [caching behavior of optimized images](/docs/app/api-reference/components/image#minimumcachettl) and how to configure the TTL.
-> *   You can also [disable Image Optimization](/docs/app/api-reference/components/image#unoptimized) and still retain other benefits of using `next/image` if you prefer. For example, if you are optimizing images yourself separately.
+> -   On glibc-based Linux systems, Image Optimization may require [additional configuration](https://sharp.pixelplumbing.com/install#linux-memory-allocator) to prevent excessive memory usage.
+> -   Learn more about the [caching behavior of optimized images](/docs/app/api-reference/components/image#minimumcachettl) and how to configure the TTL.
+> -   You can also [disable Image Optimization](/docs/app/api-reference/components/image#unoptimized) and still retain other benefits of using `next/image` if you prefer. For example, if you are optimizing images yourself separately.
 
 ## Proxy[](#proxy)
 
@@ -54,8 +55,6 @@ Next.js can support both build time and runtime environment variables.
 You safely read environment variables on the server during dynamic rendering.
 
 app/page.ts
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -76,7 +75,7 @@ This allows you to use a singular Docker image that can be promoted through mult
 
 > **Good to know:**
 > 
-> *   You can run code on server startup using the [`register` function](/docs/app/guides/instrumentation).
+> -   You can run code on server startup using the [`register` function](/docs/app/guides/instrumentation).
 
 ## Caching and ISR[](#caching-and-isr)
 
@@ -90,9 +89,9 @@ You can configure the Next.js cache location if you want to persist cached pages
 
 ### Automatic Caching[](#automatic-caching)
 
-*   Next.js sets the `Cache-Control` header of `public, max-age=31536000, immutable` to truly immutable assets. It cannot be overridden. These immutable files contain a SHA-hash in the file name, so they can be safely cached indefinitely. For example, [Static Image Imports](/docs/app/getting-started/images#local-images). You can [configure the TTL](/docs/app/api-reference/components/image#minimumcachettl) for images.
-*   Incremental Static Regeneration (ISR) sets the `Cache-Control` header of `s-maxage: <revalidate in getStaticProps>, stale-while-revalidate`. This revalidation time is defined in your [`getStaticProps` function](/docs/pages/building-your-application/data-fetching/get-static-props) in seconds. If you set `revalidate: false`, it will default to a one-year cache duration. To leverage this at the CDN layer, your CDN/reverse proxy must respect these directives and cache-key variability ([CDN Caching](/docs/app/guides/cdn-caching)); otherwise, responses may bypass CDN caching or serve stale/mismatched variants during client-side navigation.
-*   Dynamically rendered pages set a `Cache-Control` header of `private, no-cache, no-store, max-age=0, must-revalidate` to prevent user-specific data from being cached. This applies to both the App Router and Pages Router. This also includes [Draft Mode](/docs/app/guides/draft-mode).
+-   Next.js sets the `Cache-Control` header of `public, max-age=31536000, immutable` to truly immutable assets. It cannot be overridden. These immutable files contain a SHA-hash in the file name, so they can be safely cached indefinitely. For example, [Static Image Imports](/docs/app/getting-started/images#local-images). You can [configure the TTL](/docs/app/api-reference/components/image#minimumcachettl) for images.
+-   Incremental Static Regeneration (ISR) sets the `Cache-Control` header of `s-maxage: <revalidate in getStaticProps>, stale-while-revalidate`. This revalidation time is defined in your [`getStaticProps` function](/docs/pages/building-your-application/data-fetching/get-static-props) in seconds. If you set `revalidate: false`, it will default to a one-year cache duration. To leverage this at the CDN layer, your CDN/reverse proxy must respect these directives and cache-key variability ([CDN Caching](/docs/app/guides/cdn-caching)); otherwise, responses may bypass CDN caching or serve stale/mismatched variants during client-side navigation.
+-   Dynamically rendered pages set a `Cache-Control` header of `private, no-cache, no-store, max-age=0, must-revalidate` to prevent user-specific data from being cached. This applies to both the App Router and Pages Router. This also includes [Draft Mode](/docs/app/guides/draft-mode).
 
 ### Static Assets[](#static-assets)
 
@@ -165,7 +164,7 @@ Using a custom cache handler will allow you to ensure consistency across all pod
 
 > **Good to know:**
 > 
-> *   `revalidatePath` is a convenience layer on top of cache tags. Calling `revalidatePath` will call the `revalidateTag` function with a special default tag for the provided page.
+> -   `revalidatePath` is a convenience layer on top of cache tags. Calling `revalidatePath` will call the `revalidateTag` function with a special default tag for the provided page.
 
 ## Build Cache[](#build-cache)
 
@@ -214,15 +213,15 @@ By default, Next.js uses an in-memory cache that is not shared across instances.
 
 When self-hosting across multiple instances or doing rolling deployments, [version skew](/docs/app/glossary#version-skew) can cause:
 
-*   **Missing assets**: The client requests JavaScript or CSS files that no longer exist on the server
-*   **Server Function mismatches**: The client invokes a Server Function using an ID from a previous build that the server no longer recognizes
-*   **Navigation failures**: Prefetched page data from an old deployment is incompatible with the new server
+-   **Missing assets**: The client requests JavaScript or CSS files that no longer exist on the server
+-   **Server Function mismatches**: The client invokes a Server Function using an ID from a previous build that the server no longer recognizes
+-   **Navigation failures**: Prefetched page data from an old deployment is incompatible with the new server
 
 Next.js uses the [`deploymentId`](/docs/app/api-reference/config/next-config-js/deploymentId) to detect and handle version skew. When a deployment ID is configured:
 
-*   Static assets include a `?dpl=<deploymentId>` query parameter
-*   Client-side navigation requests include an `x-deployment-id` header
-*   The server compares the client's deployment ID with its own
+-   Static assets include a `?dpl=<deploymentId>` query parameter
+-   Client-side navigation requests include an `x-deployment-id` header
+-   The server compares the client's deployment ID with its own
 
 If a mismatch is detected, Next.js triggers a hard navigation (full page reload) instead of a client-side navigation. This ensures the client fetches assets from a consistent deployment version.
 
@@ -264,9 +263,9 @@ module.exports = {
 
 Beyond nginx, ensure that your entire infrastructure supports streaming end-to-end:
 
-*   **Load balancers** must support chunked transfer encoding or HTTP/2 streaming. Some cloud load balancers (for example, AWS ALB with Lambda integration) may buffer responses by default.
-*   **Reverse proxies** between the load balancer and Next.js must also pass through chunked responses without buffering.
-*   If using [Partial Prerendering](/docs/app/guides/ppr-platform-guide), streaming support is required. Without it, the static shell and dynamic content are delivered together after the full render completes, eliminating PPR's time-to-first-byte advantage.
+-   **Load balancers** must support chunked transfer encoding or HTTP/2 streaming. Some cloud load balancers (for example, AWS ALB with Lambda integration) may buffer responses by default.
+-   **Reverse proxies** between the load balancer and Next.js must also pass through chunked responses without buffering.
+-   If using [Partial Prerendering](/docs/app/guides/ppr-platform-guide), streaming support is required. Without it, the static shell and dynamic content are delivered together after the full render completes, eliminating PPR's time-to-first-byte advantage.
 
 ## Multi-Instance Cache Coordination[](#multi-instance-cache-coordination)
 
@@ -296,20 +295,4 @@ For detailed guidance on CDN caching behavior, graceful degradation, and cache v
 
 When stopping the server, ensure a graceful shutdown by sending `SIGINT` or `SIGTERM` signals and waiting. The Next.js server will finish in-flight requests and execute any pending `after()` callbacks before exiting. Platforms should allow a configurable drain period (10-30 seconds is recommended) to ensure all background work completes.
 
-[Previous
-
-Scripts
-
-](/docs/app/guides/scripts)
-
-[Next
-
-SPAs
-
-](/docs/app/guides/single-page-applications)
-
 Was this helpful?
-
-supported.
-
-Send

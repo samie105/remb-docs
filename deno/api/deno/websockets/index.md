@@ -5,20 +5,17 @@ canonical_url: "https://docs.deno.com/api/deno/websockets"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:11:29.971Z"
-content_hash: "f5872df1bc4a7b34f742d052fe522c04569fa5a4f003cbf439a416294cbf14e1"
+last_crawled_at: "2026-04-27T17:55:58.436Z"
+content_hash: "f215932323a495e01e8732dbaf42a55f58abfd3350194e1232bab49a97bc3afe"
 menu_path: ["WebSockets - Deno documentation"]
 section_path: []
+content_language: "en"
 ---
-### Functions [#](#Functions)
-
 f
 
 [Deno.upgradeWebSocket](./././~/Deno.upgradeWebSocket "Deno.upgradeWebSocket")
 
 Upgrade an incoming HTTP request to a WebSocket.
-
-### Interfaces [#](#Interfaces)
 
 I
 
@@ -26,8 +23,8 @@ I
 
 Options which can be set when performing a [`Deno.upgradeWebSocket`](./././~/Deno.upgradeWebSocket) upgrade of a `Request`
 
-*   [idleTimeout](./././~/Deno.UpgradeWebSocketOptions#property_idletimeout)
-*   [protocol](./././~/Deno.UpgradeWebSocketOptions#property_protocol)
+-   [idleTimeout](./././~/Deno.UpgradeWebSocketOptions#property_idletimeout)
+-   [protocol](./././~/Deno.UpgradeWebSocketOptions#property_protocol)
 
 I
 
@@ -35,5 +32,5 @@ I
 
 The object that is returned from a [`Deno.upgradeWebSocket`](./././~/Deno.upgradeWebSocket) request.
 
-*   [response](./././~/Deno.WebSocketUpgrade#property_response)
-*   [socket](./././~/Deno.WebSocketUpgrade#property_socket)
+-   [response](./././~/Deno.WebSocketUpgrade#property_response)
+-   [socket](./././~/Deno.WebSocketUpgrade#property_socket)

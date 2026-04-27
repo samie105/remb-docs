@@ -5,65 +5,76 @@ canonical_url: "https://tailwindcss.com/docs/filter-blur"
 docset: "tailwind"
 kind: "framework"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:07:08.942Z"
-content_hash: "aec4c2b15406f065605af2a1fd760b4d59743ee06308faba56bec6140483a294"
+last_crawled_at: "2026-04-27T20:25:10.823Z"
+content_hash: "7013e6df7a076457ba494c08a4847bd506000000d7ec79300a1fed37a609b5f8"
 menu_path: ["filter: blur()"]
 section_path: []
-nav_prev: {"path": "tailwind/docs/filter/index.md", "title": "filter"}
-nav_next: {"path": "tailwind/docs/filter-brightness/index.md", "title": "filter: brightness()"}
+content_language: "en"
 ---
+[](/)
+
+[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
+
+1.  Filters
+2.  blur
+
+Filters
 
 # filter: blur()
 
 Utilities for applying blur filters to an element.
 
-Class
-
-Styles
-
-`blur-xs`
-
+| Class | Styles |
+| --- | --- |
+| `blur-xs` | 
 `filter: blur(var(--blur-xs)); /* 4px */`
 
-`blur-sm`
+ |
+| `blur-sm` | 
 
 `filter: blur(var(--blur-sm)); /* 8px */`
 
-`blur-md`
+ |
+| `blur-md` | 
 
 `filter: blur(var(--blur-md)); /* 12px */`
 
-`blur-lg`
+ |
+| `blur-lg` | 
 
 `filter: blur(var(--blur-lg)); /* 16px */`
 
-`blur-xl`
+ |
+| `blur-xl` | 
 
 `filter: blur(var(--blur-xl)); /* 24px */`
 
-`blur-2xl`
+ |
+| `blur-2xl` | 
 
 `filter: blur(var(--blur-2xl)); /* 40px */`
 
-`blur-3xl`
+ |
+| `blur-3xl` | 
 
 `filter: blur(var(--blur-3xl)); /* 64px */`
 
-`blur-none`
+ |
+| `blur-none` | 
 
 `filter: ;`
 
-`blur-(<custom-property>)`
+ |
+| `blur-(<custom-property>)` | 
 
 `filter: blur(var(<custom-property>));`
 
-`blur-[<value>]`
+ |
+| `blur-[<value>]` | 
 
 `filter: blur(<value>);`
 
-## [Examples](#examples)
-
-### [Basic example](#basic-example)
+ |
 
 Use utilities like `blur-sm` and `blur-lg` to blur an element:
 
@@ -87,8 +98,6 @@ blur-2xl
 <img class="blur-none" src="/img/mountains.jpg" /><img class="blur-sm" src="/img/mountains.jpg" /><img class="blur-lg" src="/img/mountains.jpg" /><img class="blur-2xl" src="/img/mountains.jpg" />
 ```
 
-### [Using a custom value](#using-a-custom-value)
-
 Use the `blur-[<value>]` syntax to set the blur based on a completely custom value:
 
 ```
@@ -103,8 +112,6 @@ For CSS variables, you can also use the `blur-(<custom-property>)` syntax:
 
 This is just a shorthand for `blur-[var(<custom-property>)]` that adds the `var()` function for you automatically.
 
-### [Responsive design](#responsive-design)
-
 Prefix a `filter: blur()` utility with a breakpoint variant like `md:` to only apply the utility at medium screen sizes and above:
 
 ```
@@ -112,8 +119,6 @@ Prefix a `filter: blur()` utility with a breakpoint variant like `md:` to only a
 ```
 
 Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
-
-## [Customizing your theme](#customizing-your-theme)
 
 Use the `--blur-*` theme variables to customize the blur utilities in your project:
 
@@ -131,25 +136,21 @@ Learn more about customizing your theme in the [theme documentation](/docs/theme
 
 ### On this page
 
-*   [Quick reference](#quick-reference)
-*   [Examples](#examples)
-    *   [Basic example](#basic-example)
-    *   [Using a custom value](#using-a-custom-value)
-    *   [Responsive design](#responsive-design)
-*   [Customizing your theme](#customizing-your-theme)
+-   [Quick reference](#quick-reference)
+-   [Examples](#examples)
+    -   [Basic example](#basic-example)
+    -   [Using a custom value](#using-a-custom-value)
+    -   [Responsive design](#responsive-design)
+-   [Customizing your theme](#customizing-your-theme)
 
-[
+![Build UIs that don’t suck — 5-day mini-course](/_next/static/media/course-promo.d3d6bc78.jpg)
 
-![Refactoring UI](/_next/static/media/book-promo.3012c0f6.png)
+5-day mini-course
 
-From the creators of Tailwind CSS
+Build UIs that don’t suck.
 
-Make your ideas look awesome, without relying on a designer.
+Short, tactical video lessons from the creator of Tailwind CSS, delivered directly to your inbox every day for a week.
 
-> “This is the survival kit I wish I had when I started building apps.”
-> 
-> Derrick Reimer, SavvyCal
-
-](https://www.refactoringui.com/?ref=sidebar)
+[Get the free course](/build-uis-that-dont-suck)
 
 Copyright © 2026 Tailwind Labs Inc.·[Trademark Policy](/brand)

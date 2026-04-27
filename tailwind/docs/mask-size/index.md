@@ -5,45 +5,51 @@ canonical_url: "https://tailwindcss.com/docs/mask-size"
 docset: "tailwind"
 kind: "framework"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:06:33.270Z"
-content_hash: "f4b17619cb849cffef2aa0060f102e8687fc98be8eef622114020a7ddc2671d8"
+last_crawled_at: "2026-04-27T20:24:00.126Z"
+content_hash: "3fad8ccbfb31758efe5a3e3754996fe74c47d255b1ceae16372f4dca4c45bb9f"
 menu_path: ["mask-size"]
 section_path: []
-nav_prev: {"path": "tailwind/docs/mask-repeat/index.md", "title": "mask-repeat"}
-nav_next: {"path": "tailwind/docs/mask-type/index.md", "title": "mask-type"}
+content_language: "en"
 ---
+[](/)
+
+[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
+
+1.  Effects
+2.  mask-size
+
+Effects
 
 # mask-size
 
 Utilities for controlling the size of an element's mask image.
 
-Class
-
-Styles
-
-`mask-auto`
-
+| Class | Styles |
+| --- | --- |
+| `mask-auto` | 
 `mask-size: auto;`
 
-`mask-cover`
+ |
+| `mask-cover` | 
 
 `mask-size: cover;`
 
-`mask-contain`
+ |
+| `mask-contain` | 
 
 `mask-size: contain;`
 
-`mask-size-(<custom-property>)`
+ |
+| `mask-size-(<custom-property>)` | 
 
 `mask-size: var(<custom-property>);`
 
-`mask-size-[<value>]`
+ |
+| `mask-size-[<value>]` | 
 
 `mask-size: <value>;`
 
-## [Examples](#examples)
-
-### [Filling the container](#filling-the-container)
+ |
 
 Use the `mask-cover` utility to scale the mask image until it fills the mask layer, cropping the image if needed:
 
@@ -51,23 +57,17 @@ Use the `mask-cover` utility to scale the mask image until it fills the mask lay
 <div class="mask-cover mask-[url(/img/scribble.png)] bg-[url(/img/mountains.jpg)] ..."></div>
 ```
 
-### [Filling without cropping](#filling-without-cropping)
-
 Use the `mask-contain` utility to scale the mask image to the outer edges without cropping or stretching:
 
 ```
 <div class="mask-contain mask-[url(/img/scribble.png)] bg-[url(/img/mountains.jpg)] ..."></div>
 ```
 
-### [Using the default size](#using-the-default-size)
-
 Use the `mask-auto` utility to display the mask image at its default size:
 
 ```
 <div class="mask-auto mask-[url(/img/scribble.png)] bg-[url(/img/mountains.jpg)] ..."></div>
 ```
-
-### [Using a custom value](#using-a-custom-value)
 
 Use the `mask-size-[<value>]` syntax to set the mask image size based on a completely custom value:
 
@@ -83,8 +83,6 @@ For CSS variables, you can also use the `mask-size-(<custom-property>)` syntax:
 
 This is just a shorthand for `mask-size-[var(<custom-property>)]` that adds the `var()` function for you automatically.
 
-### [Responsive design](#responsive-design)
-
 Prefix a `mask-size` utility with a breakpoint variant like `md:` to only apply the utility at medium screen sizes and above:
 
 ```
@@ -95,26 +93,22 @@ Learn more about using variants in the [variants documentation](/docs/hover-focu
 
 ### On this page
 
-*   [Quick reference](#quick-reference)
-*   [Examples](#examples)
-    *   [Filling the container](#filling-the-container)
-    *   [Filling without cropping](#filling-without-cropping)
-    *   [Using the default size](#using-the-default-size)
-    *   [Using a custom value](#using-a-custom-value)
-    *   [Responsive design](#responsive-design)
+-   [Quick reference](#quick-reference)
+-   [Examples](#examples)
+    -   [Filling the container](#filling-the-container)
+    -   [Filling without cropping](#filling-without-cropping)
+    -   [Using the default size](#using-the-default-size)
+    -   [Using a custom value](#using-a-custom-value)
+    -   [Responsive design](#responsive-design)
 
-[
+![Build UIs that don’t suck — 5-day mini-course](/_next/static/media/course-promo.d3d6bc78.jpg)
 
-![Refactoring UI](/_next/static/media/book-promo.3012c0f6.png)
+5-day mini-course
 
-From the creators of Tailwind CSS
+Build UIs that don’t suck.
 
-Make your ideas look awesome, without relying on a designer.
+Short, tactical video lessons from the creator of Tailwind CSS, delivered directly to your inbox every day for a week.
 
-> “This is the survival kit I wish I had when I started building apps.”
-> 
-> Derrick Reimer, SavvyCal
-
-](https://www.refactoringui.com/?ref=sidebar)
+[Get the free course](/build-uis-that-dont-suck)
 
 Copyright © 2026 Tailwind Labs Inc.·[Trademark Policy](/brand)

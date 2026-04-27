@@ -5,26 +5,27 @@ canonical_url: "https://nextjs.org/docs/app/api-reference/directives/use-cache-p
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:09:23.990Z"
-content_hash: "2f5d9c00b4dff32101466e501bce237b406da42f989597764bb359dc373222d3"
+last_crawled_at: "2026-04-27T18:08:09.628Z"
+content_hash: "a9a9be703172589ea86654a393ff33d3396dbbb4cfc2d4c4175e031908188e5b"
 menu_path: ["use cache: private"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/api-reference/directives/use-cache/index.md", "title": "use cache"}
-nav_next: {"path": "nextjs/docs/app/api-reference/directives/use-cache-remote/index.md", "title": "use cache: remote"}
+version: "latest"
+content_language: "en"
 ---
+[API Reference](/docs/app/api-reference)[Directives](/docs/app/api-reference/directives)use cache: private
 
 # use cache: private
 
 This feature is currently experimental and subject to change, it's not recommended for production. Try it out and share your feedback on [GitHub](https://github.com/vercel/next.js/issues).
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 The `'use cache: private'` directive allows functions to access runtime request APIs like `cookies()`, `headers()`, and `searchParams` within a cached scope. However, results are **never stored on the server**, they're cached only in the browser's memory and do not persist across page reloads.
 
 Reach for `'use cache: private'` when:
 
-*   You want to cache a function that already accesses runtime data, and refactoring to [move the runtime access outside and pass values as arguments](/docs/app/getting-started/caching#working-with-runtime-apis) is not practical.
-*   Compliance requirements prevent storing certain data on the server, even temporarily
+-   You want to cache a function that already accesses runtime data, and refactoring to [move the runtime access outside and pass values as arguments](/docs/app/getting-started/caching#working-with-runtime-apis) is not practical.
+-   Compliance requirements prevent storing certain data on the server, even temporarily
 
 Because this directive accesses runtime data, the function executes on every server render and is excluded from running during [static shell](/docs/app/getting-started/caching#how-rendering-works) generation.
 
@@ -39,8 +40,6 @@ For a comparison of the different cache directives, see [How `use cache: remote`
 To use `'use cache: private'`, enable the [`cacheComponents`](/docs/app/api-reference/config/next-config-js/cacheComponents) flag in your `next.config.ts` file:
 
 next.config.ts
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -63,8 +62,6 @@ Then add `'use cache: private'` to your function along with a `cacheLife` config
 In this example, we demonstrate that you can access cookies within a `'use cache: private'` scope:
 
 app/product/\[id\]/page.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -124,47 +121,20 @@ async function getRecommendations(productId: string) {
 
 The following request-specific APIs can be used inside `'use cache: private'` functions:
 
-API
+| API | Allowed in `use cache` | Allowed in `'use cache: private'` |
+| --- | --- | --- |
+| `cookies()` | No | Yes |
+| `headers()` | No | Yes |
+| `searchParams` | No | Yes |
+| `connection()` | No | No |
 
-Allowed in `use cache`
-
-Allowed in `'use cache: private'`
-
-`cookies()`
-
-No
-
-Yes
-
-`headers()`
-
-No
-
-Yes
-
-`searchParams`
-
-No
-
-Yes
-
-`connection()`
-
-No
-
-No
-
-> **Note:** The [`connection()`](nextjs/docs/app/api-reference/functions/connection/index.md) API is prohibited in both `use cache` and `'use cache: private'` as it provides connection-specific information that cannot be safely cached.
+> **Note:** The [`connection()`](https://nextjs.org/docs/app/api-reference/functions/connection) API is prohibited in both `use cache` and `'use cache: private'` as it provides connection-specific information that cannot be safely cached.
 
 ## Version History[](#version-history)
 
-Version
-
-Changes
-
-`v16.0.0`
-
-`"use cache: private"` is enabled with the Cache Components feature.
+| Version | Changes |
+| --- | --- |
+| `v16.0.0` | `"use cache: private"` is enabled with the Cache Components feature. |
 
 ## Related
 
@@ -196,20 +166,4 @@ Learn how to use the cacheTag function to manage cache invalidation in your Next
 
 ](/docs/app/api-reference/functions/cacheTag)
 
-[Previous
-
-use cache
-
-](/docs/app/api-reference/directives/use-cache)
-
-[Next
-
-use cache: remote
-
-](/docs/app/api-reference/directives/use-cache-remote)
-
 Was this helpful?
-
-supported.
-
-Send

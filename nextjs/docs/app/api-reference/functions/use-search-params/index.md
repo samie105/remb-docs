@@ -5,25 +5,24 @@ canonical_url: "https://nextjs.org/docs/app/api-reference/functions/use-search-p
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:12:42.118Z"
-content_hash: "fb43ad68ab921fc48598c9ddeacb85ef478d6d1bf14d538b5562d977c9f8cc52"
+last_crawled_at: "2026-04-27T18:11:23.986Z"
+content_hash: "8bb6f0c54acb79eabd0c9f74940f3eba3709f67bad13c7f116934cca1031f9da"
 menu_path: ["useSearchParams"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/api-reference/functions/use-router/index.md", "title": "useRouter"}
-nav_next: {"path": "nextjs/docs/app/api-reference/functions/use-selected-layout-segment/index.md", "title": "useSelectedLayoutSegment"}
+version: "latest"
+content_language: "en"
 ---
+[API Reference](/docs/app/api-reference)[Functions](/docs/app/api-reference/functions)useSearchParams
 
 # useSearchParams
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 `useSearchParams` is a **Client Component** hook that lets you read the current URL's **query string**.
 
 `useSearchParams` returns a **read-only** version of the [`URLSearchParams`](https://developer.mozilla.org/docs/Web/API/URLSearchParams) interface.
 
 app/dashboard/search-bar.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -55,50 +54,30 @@ const searchParams = useSearchParams()
 
 `useSearchParams` returns a **read-only** version of the [`URLSearchParams`](https://developer.mozilla.org/docs/Web/API/URLSearchParams) interface, which includes utility methods for reading the URL's query string:
 
-*   [`URLSearchParams.get()`](https://developer.mozilla.org/docs/Web/API/URLSearchParams/get): Returns the first value associated with the search parameter. For example:
+-   [`URLSearchParams.get()`](https://developer.mozilla.org/docs/Web/API/URLSearchParams/get): Returns the first value associated with the search parameter. For example:
     
-    URL
+    | URL | `searchParams.get("a")` |
+    | --- | --- |
+    | `/dashboard?a=1` | `'1'` |
+    | `/dashboard?a=` | `''` |
+    | `/dashboard?b=3` | `null` |
+    | `/dashboard?a=1&a=2` | `'1'` _\- use [`getAll()`](https://developer.mozilla.org/docs/Web/API/URLSearchParams/getAll) to get all values_ |
     
-    `searchParams.get("a")`
+-   [`URLSearchParams.has()`](https://developer.mozilla.org/docs/Web/API/URLSearchParams/has): Returns a boolean value indicating if the given parameter exists. For example:
     
-    `/dashboard?a=1`
+    | URL | `searchParams.has("a")` |
+    | --- | --- |
+    | `/dashboard?a=1` | `true` |
+    | `/dashboard?b=3` | `false` |
     
-    `'1'`
-    
-    `/dashboard?a=`
-    
-    `''`
-    
-    `/dashboard?b=3`
-    
-    `null`
-    
-    `/dashboard?a=1&a=2`
-    
-    `'1'` _\- use [`getAll()`](https://developer.mozilla.org/docs/Web/API/URLSearchParams/getAll) to get all values_
-    
-*   [`URLSearchParams.has()`](https://developer.mozilla.org/docs/Web/API/URLSearchParams/has): Returns a boolean value indicating if the given parameter exists. For example:
-    
-    URL
-    
-    `searchParams.has("a")`
-    
-    `/dashboard?a=1`
-    
-    `true`
-    
-    `/dashboard?b=3`
-    
-    `false`
-    
-*   Learn more about other **read-only** methods of [`URLSearchParams`](https://developer.mozilla.org/docs/Web/API/URLSearchParams), including the [`getAll()`](https://developer.mozilla.org/docs/Web/API/URLSearchParams/getAll), [`keys()`](https://developer.mozilla.org/docs/Web/API/URLSearchParams/keys), [`values()`](https://developer.mozilla.org/docs/Web/API/URLSearchParams/values), [`entries()`](https://developer.mozilla.org/docs/Web/API/URLSearchParams/entries), [`forEach()`](https://developer.mozilla.org/docs/Web/API/URLSearchParams/forEach), and [`toString()`](https://developer.mozilla.org/docs/Web/API/URLSearchParams/toString).
+-   Learn more about other **read-only** methods of [`URLSearchParams`](https://developer.mozilla.org/docs/Web/API/URLSearchParams), including the [`getAll()`](https://developer.mozilla.org/docs/Web/API/URLSearchParams/getAll), [`keys()`](https://developer.mozilla.org/docs/Web/API/URLSearchParams/keys), [`values()`](https://developer.mozilla.org/docs/Web/API/URLSearchParams/values), [`entries()`](https://developer.mozilla.org/docs/Web/API/URLSearchParams/entries), [`forEach()`](https://developer.mozilla.org/docs/Web/API/URLSearchParams/forEach), and [`toString()`](https://developer.mozilla.org/docs/Web/API/URLSearchParams/toString).
     
 
 > **Good to know**:
 > 
-> *   `useSearchParams` is a [Client Component](/docs/app/getting-started/server-and-client-components) hook and is **not supported** in [Server Components](/docs/app/getting-started/server-and-client-components) to prevent stale values during [partial rendering](/docs/app/getting-started/linking-and-navigating#client-side-transitions).
-> *   If you want to fetch data in a Server Component based on search params, it's often a better option to read the [`searchParams` prop](/docs/app/api-reference/file-conventions/page#searchparams-optional) of the corresponding Page. You can then pass it down by props to any component (Server or Client) within that Page.
-> *   If an application includes the `/pages` directory, `useSearchParams` will return `ReadonlyURLSearchParams | null`. The `null` value is for compatibility during migration since search params cannot be known during prerendering of a page that doesn't use `getServerSideProps`
+> -   `useSearchParams` is a [Client Component](/docs/app/getting-started/server-and-client-components) hook and is **not supported** in [Server Components](/docs/app/getting-started/server-and-client-components) to prevent stale values during [partial rendering](/docs/app/getting-started/linking-and-navigating#client-side-transitions).
+> -   If you want to fetch data in a Server Component based on search params, it's often a better option to read the [`searchParams` prop](/docs/app/api-reference/file-conventions/page#searchparams-optional) of the corresponding Page. You can then pass it down by props to any component (Server or Client) within that Page.
+> -   If an application includes the `/pages` directory, `useSearchParams` will return `ReadonlyURLSearchParams | null`. The `null` value is for compatibility during migration since search params cannot be known during prerendering of a page that doesn't use `getServerSideProps`
 
 ## Behavior[](#behavior)
 
@@ -113,8 +92,6 @@ We recommend wrapping the Client Component that uses `useSearchParams` in a `<Su
 For example:
 
 app/dashboard/search-bar.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -136,8 +113,6 @@ export default function SearchBar() {
 ```
 
 app/dashboard/page.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -169,11 +144,11 @@ export default function Page() {
 
 > **Good to know**:
 > 
-> *   In development, routes are rendered on-demand, so `useSearchParams` doesn't suspend and things may appear to work without `Suspense`.
-> *   During production builds, a static page that calls `useSearchParams` from a Client Component must be wrapped in a `Suspense` boundary, otherwise the build fails with the [Missing Suspense boundary with useSearchParams](/docs/messages/missing-suspense-with-csr-bailout) error.
-> *   If you intend the route to be dynamically rendered, prefer using the [`connection`](/docs/app/api-reference/functions/connection) function first in a Server Component to wait for an incoming request, this excludes everything below from prerendering. See what makes a route dynamic in the [Dynamic Rendering guide](/docs/app/glossary#dynamic-rendering).
-> *   If you're already in a Server Component Page, consider using the [`searchParams` prop](/docs/app/api-reference/file-conventions/page#searchparams-optional) and passing the values to Client Components.
-> *   You can also pass the Page [`searchParams` prop](/docs/app/api-reference/file-conventions/page#searchparams-optional) directly to a Client Component and unwrap it with React's `use()`. Although this will suspend, so the Client Component should be wrapped with a `Suspense` boundary.
+> -   In development, routes are rendered on-demand, so `useSearchParams` doesn't suspend and things may appear to work without `Suspense`.
+> -   During production builds, a static page that calls `useSearchParams` from a Client Component must be wrapped in a `Suspense` boundary, otherwise the build fails with the [Missing Suspense boundary with useSearchParams](/docs/messages/missing-suspense-with-csr-bailout) error.
+> -   If you intend the route to be dynamically rendered, prefer using the [`connection`](/docs/app/api-reference/functions/connection) function first in a Server Component to wait for an incoming request, this excludes everything below from prerendering. See what makes a route dynamic in the [Dynamic Rendering guide](/docs/app/glossary#dynamic-rendering).
+> -   If you're already in a Server Component Page, consider using the [`searchParams` prop](/docs/app/api-reference/file-conventions/page#searchparams-optional) and passing the values to Client Components.
+> -   You can also pass the Page [`searchParams` prop](/docs/app/api-reference/file-conventions/page#searchparams-optional) directly to a Client Component and unwrap it with React's `use()`. Although this will suspend, so the Client Component should be wrapped with a `Suspense` boundary.
 
 ### Dynamic Rendering[](#dynamic-rendering)
 
@@ -182,8 +157,6 @@ If a route is dynamically rendered, `useSearchParams` will be available on the s
 For example:
 
 app/dashboard/search-bar.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -207,8 +180,6 @@ export default function SearchBar() {
 
 app/dashboard/page.tsx
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -230,7 +201,7 @@ export default async function Page() {
 
 > **Good to know**:
 > 
-> *   Previously, setting `export const dynamic = 'force-dynamic'` on the page was used to force dynamic rendering. Prefer using [`connection()`](/docs/app/api-reference/functions/connection) instead, as it semantically ties dynamic rendering to the incoming request.
+> -   Previously, setting `export const dynamic = 'force-dynamic'` on the page was used to force dynamic rendering. Prefer using [`connection()`](/docs/app/api-reference/functions/connection) instead, as it semantically ties dynamic rendering to the incoming request.
 
 ### Server Components[](#server-components)
 
@@ -251,8 +222,6 @@ Instead, use the Page [`searchParams`](/docs/app/api-reference/file-conventions/
 You can use [`useRouter`](/docs/app/api-reference/functions/use-router) or [`Link`](/docs/app/api-reference/components/link) to set new `searchParams`. After a navigation is performed, the current [`page.js`](/docs/app/api-reference/file-conventions/page) will receive an updated [`searchParams` prop](/docs/app/api-reference/file-conventions/page#searchparams-optional).
 
 app/example-client-component.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -306,28 +275,8 @@ export default function ExampleClientComponent() {
 
 ## Version History[](#version-history)
 
-Version
-
-Changes
-
-`v13.0.0`
-
-`useSearchParams` introduced.
-
-[Previous
-
-useRouter
-
-](/docs/app/api-reference/functions/use-router)
-
-[Next
-
-useSelectedLayoutSegment
-
-](/docs/app/api-reference/functions/use-selected-layout-segment)
+| Version | Changes |
+| --- | --- |
+| `v13.0.0` | `useSearchParams` introduced. |
 
 Was this helpful?
-
-supported.
-
-Send

@@ -5,14 +5,12 @@ canonical_url: "https://orm.drizzle.team/docs/latest-releases/drizzle-orm-v0310"
 docset: "drizzle"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:15:12.751Z"
-content_hash: "4883efaed8c4b83697d5d0cbd6ccda1b13245ae2224b0f4f3609f5be7c04c97a"
+last_crawled_at: "2026-04-27T19:14:55.072Z"
+content_hash: "808170b4770076a16150024a4d7b7aabbc48cde0fd8fedc6d8bff3c0a0978268"
 menu_path: ["Drizzle Kit updates: drizzle-kit@0.22.0"]
 section_path: []
-nav_prev: {"path": "drizzle/docs/latest-releases/drizzle-orm-v0309/index.md", "title": "Drizzle ORM - DrizzleORM v0.30.9 release"}
-nav_next: {"path": "drizzle/docs/latest-releases/drizzle-orm-v0311/index.md", "title": "New Features"}
+content_language: "en"
 ---
-
 DrizzleORM v0.31.0 release
 
 May 31, 2024
@@ -27,11 +25,11 @@ The previous Drizzle+PostgreSQL indexes API was incorrect and was not aligned wi
 
 Previous API
 
-*   No way to define SQL expressions inside `.on`.
-*   `.using` and `.on` in our case are the same thing, so the API is incorrect here.
-*   `.asc()`, `.desc()`, `.nullsFirst()`, and `.nullsLast()` should be specified for each column or expression on indexes, but not on an index itself.
+-   No way to define SQL expressions inside `.on`.
+-   `.using` and `.on` in our case are the same thing, so the API is incorrect here.
+-   `.asc()`, `.desc()`, `.nullsFirst()`, and `.nullsLast()` should be specified for each column or expression on indexes, but not on an index itself.
 
-```
+```ts
 // Index declaration reference
 index('name')
   .on(table.column1, table.column2, ...) or .onOnly(table.column1, table.column2, ...)
@@ -44,7 +42,7 @@ index('name')
 
 Current API
 
-```
+```ts
 // First example, with `.on()`
 index('name')
   .on(table.column1.asc(), table.column2.nullsFirst(), ...) or .onOnly(table.column1.desc().nullsLast(), table.column2, ...)
@@ -71,7 +69,7 @@ Let’s take a few examples of `pg_vector` indexes from the `pg_vector` docs and
 
 #### L2 distance, Inner product and Cosine distance
 
-```
+```ts
 // CREATE INDEX ON items USING hnsw (embedding vector_l2_ops);
 // CREATE INDEX ON items USING hnsw (embedding vector_ip_ops);
 // CREATE INDEX ON items USING hnsw (embedding vector_cosine_ops);
@@ -87,7 +85,7 @@ const table = pgTable('items', {
 
 #### L1 distance, Hamming distance and Jaccard distance - added in pg\_vector 0.7.0 version
 
-```
+```ts
 // CREATE INDEX ON items USING hnsw (embedding vector_l1_ops);
 // CREATE INDEX ON items USING hnsw (embedding bit_hamming_ops);
 // CREATE INDEX ON items USING hnsw (embedding bit_jaccard_ops);
@@ -105,7 +103,7 @@ For queries, you can use predefined functions for vectors or create custom ones 
 
 You can also use the following helpers:
 
-```
+```ts
 import { l2Distance, l1Distance, innerProduct, 
           cosineDistance, hammingDistance, jaccardDistance } from 'drizzle-orm'
 
@@ -121,7 +119,7 @@ jaccardDistance(table.column, '101') // table.column <%> '101'
 
 If `pg_vector` has some other functions to use, you can replicate implimentation from existing one we have. Here is how it can be done
 
-```
+```ts
 export function l2Distance(
   column: SQLWrapper | AnyColumn,
   value: number[] | string[] | TypedQueryBuilder<any> | string,
@@ -139,7 +137,7 @@ Name it as you wish and change the operator. This example allows for a numbers a
 
 Let’s take a few examples of `pg_vector` queries from the `pg_vector` docs and translate them to Drizzle
 
-```
+```ts
 import { l2Distance } from 'drizzle-orm';
 
 // SELECT * FROM items ORDER BY embedding <-> '[3,1,2]' LIMIT 5;
@@ -164,12 +162,12 @@ You can now use `point` and `line` from [PostgreSQL Geometric Types](https://www
 
 Type `point` has 2 modes for mappings from the database: `tuple` and `xy`.
 
-*   `tuple` will be accepted for insert and mapped on select to a tuple. So, the database Point(1,2) will be typed as \[1,2\] with drizzle.
+-   `tuple` will be accepted for insert and mapped on select to a tuple. So, the database Point(1,2) will be typed as \[1,2\] with drizzle.
     
-*   `xy` will be accepted for insert and mapped on select to an object with x, y coordinates. So, the database Point(1,2) will be typed as `{ x: 1, y: 2 }` with drizzle
+-   `xy` will be accepted for insert and mapped on select to an object with x, y coordinates. So, the database Point(1,2) will be typed as `{ x: 1, y: 2 }` with drizzle
     
 
-```
+```ts
 const items = pgTable('items', {
  point: point('point'),
  pointObj: point('point_xy', { mode: 'xy' }),
@@ -178,12 +176,12 @@ const items = pgTable('items', {
 
 Type `line` has 2 modes for mappings from the database: `tuple` and `abc`.
 
-*   `tuple` will be accepted for insert and mapped on select to a tuple. So, the database Line3 will be typed as \[1,2,3\] with drizzle.
+-   `tuple` will be accepted for insert and mapped on select to a tuple. So, the database Line3 will be typed as \[1,2,3\] with drizzle.
     
-*   `abc` will be accepted for insert and mapped on select to an object with a, b, and c constants from the equation `Ax + By + C = 0`. So, the database Line3 will be typed as `{ a: 1, b: 2, c: 3 }` with drizzle.
+-   `abc` will be accepted for insert and mapped on select to an object with a, b, and c constants from the equation `Ax + By + C = 0`. So, the database Line3 will be typed as `{ a: 1, b: 2, c: 3 }` with drizzle.
     
 
-```
+```ts
 const items = pgTable('items', {
  line: line('line'),
  lineObj: line('line_abc', { mode: 'abc' }),
@@ -196,7 +194,7 @@ const items = pgTable('items', {
 
 `geometry` type from postgis extension:
 
-```
+```ts
 const items = pgTable('items', {
   geo: geometry('geo', { type: 'point' }),
   geoObj: geometry('geo_obj', { type: 'point', mode: 'xy' }),
@@ -206,8 +204,8 @@ const items = pgTable('items', {
 
 **mode** Type `geometry` has 2 modes for mappings from the database: `tuple` and `xy`.
 
-*   `tuple` will be accepted for insert and mapped on select to a tuple. So, the database geometry will be typed as \[1,2\] with drizzle.
-*   `xy` will be accepted for insert and mapped on select to an object with x, y coordinates. So, the database geometry will be typed as `{ x: 1, y: 2 }` with drizzle
+-   `tuple` will be accepted for insert and mapped on select to a tuple. So, the database geometry will be typed as \[1,2\] with drizzle.
+-   `xy` will be accepted for insert and mapped on select to an object with x, y coordinates. So, the database geometry will be typed as `{ x: 1, y: 2 }` with drizzle
 
 **type**
 
@@ -223,9 +221,9 @@ The current release has a predefined type: `point`, which is the `geometry(Point
 
 Drizzle Kit can now handle:
 
-*   `point` and `line` from PostgreSQL
-*   `vector` from the PostgreSQL `pg_vector` extension
-*   `geometry` from the PostgreSQL `PostGIS` extension
+-   `point` and `line` from PostgreSQL
+-   `vector` from the PostgreSQL `pg_vector` extension
+-   `geometry` from the PostgreSQL `PostGIS` extension
 
 ### 🎉 New param in drizzle.config - `extensionsFilters`
 
@@ -237,7 +235,7 @@ Currently, we only support the `postgis` option, but we plan to add more extensi
 
 The `postgis` option will skip the `geography_columns`, `geometry_columns`, and `spatial_ref_sys` tables
 
-```
+```ts
 import { defineConfig } from 'drizzle-kit'
 
 export default defaultConfig({
@@ -250,9 +248,9 @@ export default defaultConfig({
 
 ### Update zod schemas for database credentials and write tests to all the positive/negative cases
 
-*   support full set of SSL params in kit config, provide types from node:tls connection
+-   support full set of SSL params in kit config, provide types from node:tls connection
 
-```
+```ts
 import { defineConfig } from 'drizzle-kit'
 
 export default defaultConfig({
@@ -263,7 +261,7 @@ export default defaultConfig({
 })
 ```
 
-```
+```ts
 import { defineConfig } from 'drizzle-kit'
 
 export default defaultConfig({
@@ -282,7 +280,7 @@ Those drivers have different file path patterns, and Drizzle Kit will accept bot
 
 In this release MySQL and SQLite will properly map expressions into SQL query. Expressions won’t be escaped in string but columns will be
 
-```
+```ts
 export const users = sqliteTable(
   'users',
   {
@@ -295,7 +293,7 @@ export const users = sqliteTable(
 );
 ```
 
-```
+```sql
 -- before
 CREATE UNIQUE INDEX `emailUniqueIndex` ON `users` (`lower("users"."email")`);
 
@@ -305,10 +303,10 @@ CREATE UNIQUE INDEX `emailUniqueIndex` ON `users` (lower("email"));
 
 ## Bug Fixes
 
-*   \[BUG\]: multiple constraints not added (only the first one is generated) - [#2341](https://github.com/drizzle-team/drizzle-orm/issues/2341)
-*   Drizzle Studio: Error: Connection terminated unexpectedly - [#435](https://github.com/drizzle-team/drizzle-kit-mirror/issues/435)
-*   Unable to run sqlite migrations local - [#432](https://github.com/drizzle-team/drizzle-kit-mirror/issues/432)
-*   error: unknown option ‘—config’ - [#423](https://github.com/drizzle-team/drizzle-kit-mirror/issues/423)
+-   \[BUG\]: multiple constraints not added (only the first one is generated) - [#2341](https://github.com/drizzle-team/drizzle-orm/issues/2341)
+-   Drizzle Studio: Error: Connection terminated unexpectedly - [#435](https://github.com/drizzle-team/drizzle-kit-mirror/issues/435)
+-   Unable to run sqlite migrations local - [#432](https://github.com/drizzle-team/drizzle-kit-mirror/issues/432)
+-   error: unknown option ‘—config’ - [#423](https://github.com/drizzle-team/drizzle-kit-mirror/issues/423)
 
 ## How `push` and `generate` works for indexes
 
@@ -318,7 +316,7 @@ CREATE UNIQUE INDEX `emailUniqueIndex` ON `users` (lower("email"));
 
 Example
 
-```
+```ts
 index().on(table.id, table.email) // will work well and name will be autogeneretaed
 index('my_name').on(table.id, table.email) // will work well
 
@@ -330,15 +328,15 @@ index('my_name').on(sql`lower(${table.email})`) // will work well
 
 #### Push won’t generate statements if these fields(list below) were changed in an existing index:
 
-*   expressions inside `.on()` and `.using()`
-*   `.where()` statements
-*   operator classes `.op()` on columns
+-   expressions inside `.on()` and `.using()`
+-   `.where()` statements
+-   operator classes `.op()` on columns
 
 If you are using `push` workflows and want to change these fields in the index, you would need to:
 
-*   Comment out the index
-*   Push
-*   Uncomment the index and change those fields
-*   Push again
+-   Comment out the index
+-   Push
+-   Uncomment the index and change those fields
+-   Push again
 
 For the `generate` command, `drizzle-kit` will be triggered by any changes in the index for any property in the new drizzle indexes API, so there are no limitations here.

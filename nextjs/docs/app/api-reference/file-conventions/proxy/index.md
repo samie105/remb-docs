@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/app/api-reference/file-conventions/proxy
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:10:38.061Z"
-content_hash: "fa60f0b8f2053d7457ec4d8225fd116fd2eb57eac1d99fbbea0e16343588fd59"
+last_crawled_at: "2026-04-27T18:09:19.786Z"
+content_hash: "797daa8857ac287010d48218d1fb20bbe760c3394c952171ba3fcb775819e1c6"
 menu_path: ["proxy.js"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/api-reference/file-conventions/parallel-routes/index.md", "title": "Parallel Routes"}
-nav_next: {"path": "nextjs/docs/app/api-reference/file-conventions/public-folder/index.md", "title": "public Folder"}
+version: "latest"
+content_language: "en"
 ---
+[API Reference](/docs/app/api-reference)[File-system conventions](/docs/app/api-reference/file-conventions)proxy.js
 
 # proxy.js
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 > **Note**: The `middleware` file convention is deprecated and has been renamed to `proxy`. See [Migration to Proxy](#migration-to-proxy) for more details.
 
@@ -34,8 +35,6 @@ Create a `proxy.ts` (or `.js`) file in the project root, or inside `src` if appl
 If you’ve customized [`pageExtensions`](/docs/app/api-reference/config/next-config-js/pageExtensions), for example to `.page.ts` or `.page.js`, name your file `proxy.page.ts` or `proxy.page.js` accordingly.
 
 proxy.ts
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -76,8 +75,8 @@ Optionally, a config object can be exported alongside the Proxy function. This o
 
 The `matcher` option allows you to target specific paths for the Proxy to run on. You can specify these paths in several ways:
 
-*   For a single path: Directly use a string to define the path, like `'/about'`.
-*   For multiple paths: Use an array to list multiple paths, such as `matcher: ['/about', '/contact']`, which applies the Proxy to both `/about` and `/contact`.
+-   For a single path: Directly use a string to define the path, like `'/about'`.
+-   For multiple paths: Use an array to list multiple paths, such as `matcher: ['/about', '/contact']`, which applies the Proxy to both `/about` and `/contact`.
 
 proxy.js
 
@@ -104,10 +103,10 @@ This enables precise control over which paths to include or exclude.
 
 The `matcher` option accepts an array of objects with the following keys:
 
-*   `source`: The path or pattern used to match the request paths. It can be a string for direct path matching or a pattern for more complex matching.
-*   `locale` (optional): A boolean that, when set to `false`, ignores locale-based routing in path matching.
-*   `has` (optional): Specifies conditions based on the presence of specific request elements such as headers, query parameters, or cookies.
-*   `missing` (optional): Focuses on conditions where certain request elements are absent, like missing headers or cookies.
+-   `source`: The path or pattern used to match the request paths. It can be a string for direct path matching or a pattern for more complex matching.
+-   `locale` (optional): A boolean that, when set to `false`, ignores locale-based routing in path matching.
+-   `has` (optional): Specifies conditions based on the presence of specific request elements such as headers, query parameters, or cookies.
+-   `missing` (optional): Focuses on conditions where certain request elements are absent, like missing headers or cookies.
 
 proxy.js
 
@@ -139,8 +138,8 @@ Read more details on [path-to-regexp](https://github.com/pillarjs/path-to-regexp
 
 > **Good to know**:
 > 
-> *   The `matcher` values need to be constants so they can be statically analyzed at build-time. Dynamic values such as variables will be ignored.
-> *   For backward compatibility, Next.js always considers `/public` as `/public/index`. Therefore, a matcher of `/public/:path` will match.
+> -   The `matcher` values need to be constants so they can be statically analyzed at build-time. Dynamic values such as variables will be ignored.
+> -   For backward compatibility, Next.js always considers `/public` as `/public/index`. Therefore, a matcher of `/public/:path` will match.
 
 ## Params[](#params)
 
@@ -149,8 +148,6 @@ Read more details on [path-to-regexp](https://github.com/pillarjs/path-to-regexp
 When defining Proxy, the default export function accepts a single parameter, `request`. This parameter is an instance of `NextRequest`, which represents the incoming HTTP request.
 
 proxy.ts
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -177,17 +174,17 @@ export const proxy: NextProxy = (request, event) => {
 
 > **Good to know**:
 > 
-> *   `NextRequest` is a type that represents incoming HTTP requests in Next.js Proxy, whereas [`NextResponse`](#nextresponse) is a class used to manipulate and send back HTTP responses.
+> -   `NextRequest` is a type that represents incoming HTTP requests in Next.js Proxy, whereas [`NextResponse`](#nextresponse) is a class used to manipulate and send back HTTP responses.
 
 ## NextResponse[](#nextresponse)
 
 The `NextResponse` API allows you to:
 
-*   `redirect` the incoming request to a different URL
-*   `rewrite` the response by displaying a given URL
-*   Set request headers for API Routes, `getServerSideProps`, and `rewrite` destinations
-*   Set response cookies
-*   Set response headers
+-   `redirect` the incoming request to a different URL
+-   `rewrite` the response by displaying a given URL
+-   Set request headers for API Routes, `getServerSideProps`, and `rewrite` destinations
+-   Set response cookies
+-   Set response headers
 
 To produce a response from Proxy, you can:
 
@@ -285,8 +282,6 @@ export default async function proxy(req) {
 
 proxy.ts
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -312,8 +307,6 @@ Cookies are regular headers. On a `Request`, they are stored in the `Cookie` hea
 2.  For outgoing responses, `cookies` have the following methods `get`, `getAll`, `set`, and `delete`.
 
 proxy.ts
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -355,8 +348,6 @@ You can set request and response headers using the `NextResponse` API (setting _
 
 proxy.ts
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -384,8 +375,8 @@ export function proxy(request: NextRequest) {
 
 Note that the snippet uses:
 
-*   `NextResponse.next({ request: { headers: requestHeaders } })` to make `requestHeaders` available upstream
-*   **NOT** `NextResponse.next({ headers: requestHeaders })` which makes `requestHeaders` available to clients
+-   `NextResponse.next({ request: { headers: requestHeaders } })` to make `requestHeaders` available upstream
+-   **NOT** `NextResponse.next({ headers: requestHeaders })` which makes `requestHeaders` available to clients
 
 Learn more in [NextResponse headers in Proxy](/docs/app/api-reference/functions/next-response#next).
 
@@ -414,8 +405,6 @@ module.exports = {
 You can set CORS headers in Proxy to allow cross-origin requests, including [simple](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS#simple_requests) and [preflighted](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS#preflighted_requests) requests.
 
 proxy.ts
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -472,8 +461,6 @@ export const config = {
 You can respond from Proxy directly by returning a `Response` or `NextResponse` instance. (This is available since [Next.js v13.1.0](https://nextjs.org/blog/next-13-1#nextjs-advanced-proxy))
 
 proxy.ts
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -632,25 +619,12 @@ expect(getRewrittenUrl(response)).toEqual('https://other-domain.com/docs')
 
 ## Platform support[](#platform-support)
 
-Deployment Option
-
-Supported
-
-[Node.js server](/docs/app/getting-started/deploying#nodejs-server)
-
-Yes
-
-[Docker container](/docs/app/getting-started/deploying#docker)
-
-Yes
-
-[Static export](/docs/app/getting-started/deploying#static-export)
-
-No
-
-[Adapters](/docs/app/getting-started/deploying#adapters)
-
-Platform-specific
+| Deployment Option | Supported |
+| --- | --- |
+| [Node.js server](/docs/app/getting-started/deploying#nodejs-server) | Yes |
+| [Docker container](/docs/app/getting-started/deploying#docker) | Yes |
+| [Static export](/docs/app/getting-started/deploying#static-export) | No |
+| [Adapters](/docs/app/getting-started/deploying#adapters) | Platform-specific |
 
 Learn how to [configure Proxy](/docs/app/guides/self-hosting#proxy) when self-hosting Next.js.
 
@@ -689,41 +663,16 @@ The codemod will rename the file and the function name from `middleware` to `pro
 
 ## Version history[](#version-history)
 
-Version
-
-Changes
-
-`v16.0.0`
-
-Middleware is deprecated and renamed to Proxy
-
-`v15.5.0`
-
-Middleware can now use the Node.js runtime (stable)
-
-`v15.2.0`
-
-Middleware can now use the Node.js runtime (experimental)
-
-`v13.1.0`
-
-Advanced Middleware flags added
-
-`v13.0.0`
-
-Middleware can modify request headers, response headers, and send responses
-
-`v12.2.0`
-
-Middleware is stable, please see the [upgrade guide](/docs/messages/middleware-upgrade-guide)
-
-`v12.0.9`
-
-Enforce absolute URLs in Edge Runtime ([PR](https://github.com/vercel/next.js/pull/33410))
-
-`v12.0.0`
-
-Middleware (Beta) added
+| Version | Changes |
+| --- | --- |
+| `v16.0.0` | Middleware is deprecated and renamed to Proxy |
+| `v15.5.0` | Middleware can now use the Node.js runtime (stable) |
+| `v15.2.0` | Middleware can now use the Node.js runtime (experimental) |
+| `v13.1.0` | Advanced Middleware flags added |
+| `v13.0.0` | Middleware can modify request headers, response headers, and send responses |
+| `v12.2.0` | Middleware is stable, please see the [upgrade guide](/docs/messages/middleware-upgrade-guide) |
+| `v12.0.9` | Enforce absolute URLs in Edge Runtime ([PR](https://github.com/vercel/next.js/pull/33410)) |
+| `v12.0.0` | Middleware (Beta) added |
 
 ## Learn more about Proxy
 
@@ -741,20 +690,4 @@ API Reference for NextResponse.
 
 ](/docs/app/api-reference/functions/next-response)
 
-[Previous
-
-Parallel Routes
-
-](/docs/app/api-reference/file-conventions/parallel-routes)
-
-[Next
-
-public
-
-](/docs/app/api-reference/file-conventions/public-folder)
-
 Was this helpful?
-
-supported.
-
-Send

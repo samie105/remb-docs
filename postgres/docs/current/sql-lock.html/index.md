@@ -5,16 +5,12 @@ canonical_url: "https://www.postgresql.org/docs/current/sql-lock.html"
 docset: "postgres"
 kind: "database"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:36:45.533Z"
-content_hash: "280cbd4e95ec704a6e2f4593d43fee904ed5bd2d05034474df80d5836d0aa7f4"
+last_crawled_at: "2026-04-27T20:43:50.208Z"
+content_hash: "3ac6f2065f6c8296f8cc51cea12a220827f61d1b9d55657798ee9af48bc02db2"
 menu_path: ["PostgreSQL: Documentation: 18: LOCK"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/sql-listen.html/index.md", "title": "PostgreSQL: Documentation: 18: LISTEN"}
-nav_next: {"path": "postgres/docs/current/sql-merge.html/index.md", "title": "PostgreSQL: Documentation: 18: MERGE"}
+content_language: "en"
 ---
-
-LOCK — lock a table
-
 ## Synopsis
 
 LOCK \[ TABLE \] \[ ONLY \] _`name`_ \[ \* \] \[, ...\] \[ IN _`lockmode`_ MODE \] \[ NOWAIT \]

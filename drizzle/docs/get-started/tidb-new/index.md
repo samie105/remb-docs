@@ -5,32 +5,30 @@ canonical_url: "https://orm.drizzle.team/docs/get-started/tidb-new"
 docset: "drizzle"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:00:51.120Z"
-content_hash: "cca216a819bbe5e4bad3b2fab60d5260993f6b2a4ef339f05861180c1861fa70"
+last_crawled_at: "2026-04-27T18:54:05.531Z"
+content_hash: "30f3589a7d3a9ed96b1e8d0eab6732f74d696533c880d3749d6b34bbff6b7538"
 menu_path: ["Get Started with Drizzle and TiDB"]
 section_path: []
-nav_prev: {"path": "drizzle/docs/get-started/tidb-existing/index.md", "title": "Get Started with Drizzle and TiDB in existing project"}
-nav_next: {"path": "drizzle/docs/get-started/turso-database-existing/index.md", "title": "Get Started with Drizzle and Turso Database in existing project"}
+content_language: "en"
 ---
-
 ## Get Started with Drizzle and TiDB
 
 This guide assumes familiarity with:
 
-*   **dotenv** - package for managing environment variables - [read here](https://www.npmjs.com/package/dotenv)
-*   **tsx** - package for running TypeScript files - [read here](https://tsx.is/)
-*   **TiDB** - The Distributed SQL Database by PingCAP - [read here](https://www.pingcap.com/)
-*   **serverless-js** - package for serverless and edge compute platforms that require HTTP external connections - [read here](https://github.com/tidbcloud/serverless-js)
+-   **dotenv** - package for managing environment variables - [read here](https://www.npmjs.com/package/dotenv)
+-   **tsx** - package for running TypeScript files - [read here](https://tsx.is/)
+-   **TiDB** - The Distributed SQL Database by PingCAP - [read here](https://www.pingcap.com/)
+-   **serverless-js** - package for serverless and edge compute platforms that require HTTP external connections - [read here](https://github.com/tidbcloud/serverless-js)
 
 important
 
-For this tutorial, we will use the `@tidbcloud/serverless` driver to make **HTTP** calls. If you need to connect to TiDB through TCP, you can refer to our [MySQL Get Started](drizzle/docs/get-started/mysql-new/index.md) page
+For this tutorial, we will use the `@tidbcloud/serverless` driver to make **HTTP** calls. If you need to connect to TiDB through TCP, you can refer to our [MySQL Get Started](https://orm.drizzle.team/docs/get-started/mysql-new) page
 
 #### Basic file structure
 
 This is the basic file structure of the project. In the `src/db` directory, we have table definition in `schema.ts`. In `drizzle` folder there are sql migration file and snapshots.
 
-```
+```plaintext
 📦 <project root>
  ├ 📂 drizzle
  ├ 📂 src
@@ -44,14 +42,6 @@ This is the basic file structure of the project. In the `src/db` directory, we h
 ```
 
 #### Step 1 - Install **@tidbcloud/serverless** package[](#step-1---install-tidbcloudserverless-package)
-
-npm
-
-yarn
-
-pnpm
-
-bun
 
 ```
 npm i drizzle-orm @tidbcloud/serverless dotenv
@@ -77,15 +67,11 @@ bun add -D drizzle-kit tsx
 
 Create a `.env` file in the root of your project and add your database connection variable:
 
-```
-DATABASE_URL=
-```
-
 #### Step 3 - Connect Drizzle ORM to the database[](#step-3---connect-drizzle-orm-to-the-database)
 
 Create a `index.ts` file in the `src/db` directory and initialize the connection:
 
-```
+```typescript
 import { drizzle } from 'drizzle-orm/tidb-serverless';
 
 const db = drizzle(process.env.DATABASE_URL!);
@@ -93,7 +79,7 @@ const db = drizzle(process.env.DATABASE_URL!);
 
 If you need to provide your existing driver:
 
-```
+```typescript
 import { connect } from '@tidbcloud/serverless';
 import { drizzle } from 'drizzle-orm/tidb-serverless';
 
@@ -105,7 +91,7 @@ const db = drizzle({ client: client });
 
 Create a `schema.ts` file in the `src/db` directory and declare your table:
 
-```
+```typescript
 import { int, mysqlTable, serial, varchar } from 'drizzle-orm/mysql-core';
 
 export const usersTable = mysqlTable('users_table', {
@@ -118,11 +104,11 @@ export const usersTable = mysqlTable('users_table', {
 
 #### Step 5 - Setup Drizzle config file[](#step-5---setup-drizzle-config-file)
 
-**Drizzle config** - a configuration file that is used by [Drizzle Kit](drizzle/docs/kit-overview/index.md) and contains all the information about your database connection, migration folder and schema files.
+**Drizzle config** - a configuration file that is used by [Drizzle Kit](https://orm.drizzle.team/docs/kit-overview) and contains all the information about your database connection, migration folder and schema files.
 
 Create a `drizzle.config.ts` file in the root of your project and add the following content:
 
-```
+```typescript
 import 'dotenv/config';
 import { defineConfig } from 'drizzle-kit';
 
@@ -140,11 +126,11 @@ export default defineConfig({
 
 You can directly apply changes to your database using the `drizzle-kit push` command. This is a convenient method for quickly testing new schema designs or modifications in a local development environment, allowing for rapid iterations without the need to manage migration files:
 
-```
+```bash
 npx drizzle-kit push
 ```
 
-Read more about the push command in [documentation](drizzle/docs/drizzle-kit-push/index.md).
+Read more about the push command in [documentation](https://orm.drizzle.team/docs/drizzle-kit-push).
 
 Tips
 
@@ -152,23 +138,23 @@ Alternatively, you can generate migrations using the `drizzle-kit generate` comm
 
 Generate migrations:
 
-```
+```bash
 npx drizzle-kit generate
 ```
 
 Apply migrations:
 
-```
+```bash
 npx drizzle-kit migrate
 ```
 
-Read more about migration process in [documentation](drizzle/docs/kit-overview/index.md).
+Read more about migration process in [documentation](https://orm.drizzle.team/docs/kit-overview).
 
 #### Step 7 - Seed and Query the database[](#step-7---seed-and-query-the-database)
 
 Let’s **update** the `src/index.ts` file with queries to create, read, update, and delete users
 
-```
+```typescript
 import 'dotenv/config';
 import { drizzle } from 'drizzle-orm/tidb-serverless';
 import { eq } from 'drizzle-orm';
@@ -220,14 +206,6 @@ You’ve already installed `tsx`, so we can run our queries now
 
 **Run `index.ts` script**
 
-npm
-
-yarn
-
-pnpm
-
-bun
-
 ```
 npx tsx src/index.ts
 ```
@@ -248,7 +226,7 @@ tips
 
 We suggest using `bun` to run TypeScript files. With `bun`, such scripts can be executed without issues or additional settings, regardless of whether your project is configured with CommonJS (CJS), ECMAScript Modules (ESM), or any other module format. To run a script with `bun`, use the following command:
 
-```
+```bash
 bun src/index.ts
 ```
 

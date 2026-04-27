@@ -5,14 +5,12 @@ canonical_url: "https://www.postgresql.org/docs/current/brin.html"
 docset: "postgres"
 kind: "database"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:45:43.899Z"
-content_hash: "5d773558b21565f5fc78b40fae4661db141f82e795640798e3a438b801054273"
+last_crawled_at: "2026-04-27T20:47:07.278Z"
+content_hash: "844ffa6b6adff3dae4cb23466650a590603187c0cd1526a41b874c5cbc65a70a"
 menu_path: ["PostgreSQL: Documentation: 18: 65.5. BRIN Indexes"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/bloom.html/index.md", "title": "PostgreSQL: Documentation: 18: F.6.\u00a0bloom \u2014 bloom filter index access method"}
-nav_next: {"path": "postgres/docs/current/btree-gin.html/index.md", "title": "PostgreSQL: Documentation: 18: F.7.\u00a0btree_gin \u2014 GIN operator classes with B-tree behavior"}
+content_language: "en"
 ---
-
 ### 65.5.1. Introduction [#](#BRIN-INTRO)
 
 BRIN stands for Block Range Index. BRIN is designed for handling very large tables in which certain columns have some natural correlation with their physical location within the table.
@@ -31,11 +29,9 @@ At the time of creation, all existing heap pages are scanned and a summary index
 
 There are several ways to trigger the initial summarization of a page range. If the table is vacuumed, either manually or by [autovacuum](https://www.postgresql.org/docs/current/routine-vacuuming.html#AUTOVACUUM "24.1.6. The Autovacuum Daemon"), all existing unsummarized page ranges are summarized. Also, if the index's [autosummarize](https://www.postgresql.org/docs/current/sql-createindex.html#INDEX-RELOPTION-AUTOSUMMARIZE) parameter is enabled, which it isn't by default, whenever autovacuum runs in that database, summarization will occur for all unsummarized page ranges that have been filled, regardless of whether the table itself is processed by autovacuum; see below.
 
-Lastly, the following functions can be used (while these functions run, [search\_path](postgres/docs/current/runtime-config-client.html/index.md#GUC-SEARCH-PATH) is temporarily changed to `pg_catalog, pg_temp`):
+Lastly, the following functions can be used (while these functions run, [search\_path](https://www.postgresql.org/docs/current/runtime-config-client.html#GUC-SEARCH-PATH) is temporarily changed to `pg_catalog, pg_temp`):
 
-`brin_summarize_new_values(regclass)` which summarizes all unsummarized ranges;
-
-`brin_summarize_range(regclass, bigint)` which summarizes only the range containing the given page, if it is unsummarized.
+<table summary="Simple list"><tbody><tr><td><code>brin_summarize_new_values(regclass)</code> which summarizes all unsummarized ranges;</td></tr><tr><td><code>brin_summarize_range(regclass, bigint)</code> which summarizes only the range containing the given page, if it is unsummarized.</td></tr></tbody></table>
 
 When autosummarization is enabled, a request is sent to `autovacuum` to execute a targeted summarization for a block range when an insertion is detected for the first item of the first page of the next block range, to be fulfilled the next time an autovacuum worker finishes running in the same database. If the request queue is full, the request is not recorded and a message is sent to the server log:
 
@@ -54,718 +50,290 @@ The _minmax_ operator classes store the minimum and the maximum values appearing
 **Table 65.4. Built-in BRIN Operator Classes**
 
  
-
-Name
-
-Indexable Operators
-
-`bit_minmax_ops`
-
-`= (bit,bit)`
-
-`< (bit,bit)`
-
-`> (bit,bit)`
-
-`<= (bit,bit)`
-
-`>= (bit,bit)`
-
-`box_inclusion_ops`
-
-`@> (box,point)`
-
-`<< (box,box)`
-
-`&< (box,box)`
-
-`&> (box,box)`
-
-`>> (box,box)`
-
-`<@ (box,box)`
-
-`@> (box,box)`
-
-`~= (box,box)`
-
-`&& (box,box)`
-
-`<<| (box,box)`
-
-`&<| (box,box)`
-
-`|&> (box,box)`
-
-`|>> (box,box)`
-
-`bpchar_bloom_ops`
-
-`= (character,character)`
-
-`bpchar_minmax_ops`
-
-`= (character,character)`
-
-`< (character,character)`
-
-`<= (character,character)`
-
-`> (character,character)`
-
-`>= (character,character)`
-
-`bytea_bloom_ops`
-
-`= (bytea,bytea)`
-
-`bytea_minmax_ops`
-
-`= (bytea,bytea)`
-
-`< (bytea,bytea)`
-
-`<= (bytea,bytea)`
-
-`> (bytea,bytea)`
-
-`>= (bytea,bytea)`
-
-`char_bloom_ops`
-
-`= ("char","char")`
-
-`char_minmax_ops`
-
-`= ("char","char")`
-
-`< ("char","char")`
-
-`<= ("char","char")`
-
-`> ("char","char")`
-
-`>= ("char","char")`
-
-`date_bloom_ops`
-
-`= (date,date)`
-
-`date_minmax_ops`
-
-`= (date,date)`
-
-`< (date,date)`
-
-`<= (date,date)`
-
-`> (date,date)`
-
-`>= (date,date)`
-
-`date_minmax_multi_ops`
-
-`= (date,date)`
-
-`< (date,date)`
-
-`<= (date,date)`
-
-`> (date,date)`
-
-`>= (date,date)`
-
-`float4_bloom_ops`
-
-`= (float4,float4)`
-
-`float4_minmax_ops`
-
-`= (float4,float4)`
-
-`< (float4,float4)`
-
-`> (float4,float4)`
-
-`<= (float4,float4)`
-
-`>= (float4,float4)`
-
-`float4_minmax_multi_ops`
-
-`= (float4,float4)`
-
-`< (float4,float4)`
-
-`> (float4,float4)`
-
-`<= (float4,float4)`
-
-`>= (float4,float4)`
-
-`float8_bloom_ops`
-
-`= (float8,float8)`
-
-`float8_minmax_ops`
-
-`= (float8,float8)`
-
-`< (float8,float8)`
-
-`<= (float8,float8)`
-
-`> (float8,float8)`
-
-`>= (float8,float8)`
-
-`float8_minmax_multi_ops`
-
-`= (float8,float8)`
-
-`< (float8,float8)`
-
-`<= (float8,float8)`
-
-`> (float8,float8)`
-
-`>= (float8,float8)`
-
-`inet_inclusion_ops`
-
-`<< (inet,inet)`
-
-`<<= (inet,inet)`
-
-`>> (inet,inet)`
-
-`>>= (inet,inet)`
-
-`= (inet,inet)`
-
-`&& (inet,inet)`
-
-`inet_bloom_ops`
-
-`= (inet,inet)`
-
-`inet_minmax_ops`
-
-`= (inet,inet)`
-
-`< (inet,inet)`
-
-`<= (inet,inet)`
-
-`> (inet,inet)`
-
-`>= (inet,inet)`
-
-`inet_minmax_multi_ops`
-
-`= (inet,inet)`
-
-`< (inet,inet)`
-
-`<= (inet,inet)`
-
-`> (inet,inet)`
-
-`>= (inet,inet)`
-
-`int2_bloom_ops`
-
-`= (int2,int2)`
-
-`int2_minmax_ops`
-
-`= (int2,int2)`
-
-`< (int2,int2)`
-
-`> (int2,int2)`
-
-`<= (int2,int2)`
-
-`>= (int2,int2)`
-
-`int2_minmax_multi_ops`
-
-`= (int2,int2)`
-
-`< (int2,int2)`
-
-`> (int2,int2)`
-
-`<= (int2,int2)`
-
-`>= (int2,int2)`
-
-`int4_bloom_ops`
-
-`= (int4,int4)`
-
-`int4_minmax_ops`
-
-`= (int4,int4)`
-
-`< (int4,int4)`
-
-`> (int4,int4)`
-
-`<= (int4,int4)`
-
-`>= (int4,int4)`
-
-`int4_minmax_multi_ops`
-
-`= (int4,int4)`
-
-`< (int4,int4)`
-
-`> (int4,int4)`
-
-`<= (int4,int4)`
-
-`>= (int4,int4)`
-
-`int8_bloom_ops`
-
-`= (bigint,bigint)`
-
-`int8_minmax_ops`
-
-`= (bigint,bigint)`
-
-`< (bigint,bigint)`
-
-`> (bigint,bigint)`
-
-`<= (bigint,bigint)`
-
-`>= (bigint,bigint)`
-
-`int8_minmax_multi_ops`
-
-`= (bigint,bigint)`
-
-`< (bigint,bigint)`
-
-`> (bigint,bigint)`
-
-`<= (bigint,bigint)`
-
-`>= (bigint,bigint)`
-
-`interval_bloom_ops`
-
-`= (interval,interval)`
-
-`interval_minmax_ops`
-
-`= (interval,interval)`
-
-`< (interval,interval)`
-
-`<= (interval,interval)`
-
-`> (interval,interval)`
-
-`>= (interval,interval)`
-
-`interval_minmax_multi_ops`
-
-`= (interval,interval)`
-
-`< (interval,interval)`
-
-`<= (interval,interval)`
-
-`> (interval,interval)`
-
-`>= (interval,interval)`
-
-`macaddr_bloom_ops`
-
-`= (macaddr,macaddr)`
-
-`macaddr_minmax_ops`
-
-`= (macaddr,macaddr)`
-
-`< (macaddr,macaddr)`
-
-`<= (macaddr,macaddr)`
-
-`> (macaddr,macaddr)`
-
-`>= (macaddr,macaddr)`
-
-`macaddr_minmax_multi_ops`
-
-`= (macaddr,macaddr)`
-
-`< (macaddr,macaddr)`
-
-`<= (macaddr,macaddr)`
-
-`> (macaddr,macaddr)`
-
-`>= (macaddr,macaddr)`
-
-`macaddr8_bloom_ops`
-
-`= (macaddr8,macaddr8)`
-
-`macaddr8_minmax_ops`
-
-`= (macaddr8,macaddr8)`
-
-`< (macaddr8,macaddr8)`
-
-`<= (macaddr8,macaddr8)`
-
-`> (macaddr8,macaddr8)`
-
-`>= (macaddr8,macaddr8)`
-
-`macaddr8_minmax_multi_ops`
-
-`= (macaddr8,macaddr8)`
-
-`< (macaddr8,macaddr8)`
-
-`<= (macaddr8,macaddr8)`
-
-`> (macaddr8,macaddr8)`
-
-`>= (macaddr8,macaddr8)`
-
-`name_bloom_ops`
-
-`= (name,name)`
-
-`name_minmax_ops`
-
-`= (name,name)`
-
-`< (name,name)`
-
-`<= (name,name)`
-
-`> (name,name)`
-
-`>= (name,name)`
-
-`numeric_bloom_ops`
-
-`= (numeric,numeric)`
-
-`numeric_minmax_ops`
-
-`= (numeric,numeric)`
-
-`< (numeric,numeric)`
-
-`<= (numeric,numeric)`
-
-`> (numeric,numeric)`
-
-`>= (numeric,numeric)`
-
-`numeric_minmax_multi_ops`
-
-`= (numeric,numeric)`
-
-`< (numeric,numeric)`
-
-`<= (numeric,numeric)`
-
-`> (numeric,numeric)`
-
-`>= (numeric,numeric)`
-
-`oid_bloom_ops`
-
-`= (oid,oid)`
-
-`oid_minmax_ops`
-
-`= (oid,oid)`
-
-`< (oid,oid)`
-
-`> (oid,oid)`
-
-`<= (oid,oid)`
-
-`>= (oid,oid)`
-
-`oid_minmax_multi_ops`
-
-`= (oid,oid)`
-
-`< (oid,oid)`
-
-`> (oid,oid)`
-
-`<= (oid,oid)`
-
-`>= (oid,oid)`
-
-`pg_lsn_bloom_ops`
-
-`= (pg_lsn,pg_lsn)`
-
-`pg_lsn_minmax_ops`
-
-`= (pg_lsn,pg_lsn)`
-
-`< (pg_lsn,pg_lsn)`
-
-`> (pg_lsn,pg_lsn)`
-
-`<= (pg_lsn,pg_lsn)`
-
-`>= (pg_lsn,pg_lsn)`
-
-`pg_lsn_minmax_multi_ops`
-
-`= (pg_lsn,pg_lsn)`
-
-`< (pg_lsn,pg_lsn)`
-
-`> (pg_lsn,pg_lsn)`
-
-`<= (pg_lsn,pg_lsn)`
-
-`>= (pg_lsn,pg_lsn)`
-
-`range_inclusion_ops`
-
-`= (anyrange,anyrange)`
-
-`< (anyrange,anyrange)`
-
-`<= (anyrange,anyrange)`
-
-`>= (anyrange,anyrange)`
-
-`> (anyrange,anyrange)`
-
-`&& (anyrange,anyrange)`
-
-`@> (anyrange,anyelement)`
-
-`@> (anyrange,anyrange)`
-
-`<@ (anyrange,anyrange)`
-
-`<< (anyrange,anyrange)`
-
-`>> (anyrange,anyrange)`
-
-`&< (anyrange,anyrange)`
-
-`&> (anyrange,anyrange)`
-
-`-|- (anyrange,anyrange)`
-
-`text_bloom_ops`
-
-`= (text,text)`
-
-`text_minmax_ops`
-
-`= (text,text)`
-
-`< (text,text)`
-
-`<= (text,text)`
-
-`> (text,text)`
-
-`>= (text,text)`
-
-`tid_bloom_ops`
-
-`= (tid,tid)`
-
-`tid_minmax_ops`
-
-`= (tid,tid)`
-
-`< (tid,tid)`
-
-`> (tid,tid)`
-
-`<= (tid,tid)`
-
-`>= (tid,tid)`
-
-`tid_minmax_multi_ops`
-
-`= (tid,tid)`
-
-`< (tid,tid)`
-
-`> (tid,tid)`
-
-`<= (tid,tid)`
-
-`>= (tid,tid)`
-
-`timestamp_bloom_ops`
-
-`= (timestamp,timestamp)`
-
-`timestamp_minmax_ops`
-
-`= (timestamp,timestamp)`
-
-`< (timestamp,timestamp)`
-
-`<= (timestamp,timestamp)`
-
-`> (timestamp,timestamp)`
-
-`>= (timestamp,timestamp)`
-
-`timestamp_minmax_multi_ops`
-
-`= (timestamp,timestamp)`
-
-`< (timestamp,timestamp)`
-
-`<= (timestamp,timestamp)`
-
-`> (timestamp,timestamp)`
-
-`>= (timestamp,timestamp)`
-
-`timestamptz_bloom_ops`
-
-`= (timestamptz,timestamptz)`
-
-`timestamptz_minmax_ops`
-
-`= (timestamptz,timestamptz)`
-
-`< (timestamptz,timestamptz)`
-
-`<= (timestamptz,timestamptz)`
-
-`> (timestamptz,timestamptz)`
-
-`>= (timestamptz,timestamptz)`
-
-`timestamptz_minmax_multi_ops`
-
-`= (timestamptz,timestamptz)`
-
-`< (timestamptz,timestamptz)`
-
-`<= (timestamptz,timestamptz)`
-
-`> (timestamptz,timestamptz)`
-
-`>= (timestamptz,timestamptz)`
-
-`time_bloom_ops`
-
-`= (time,time)`
-
-`time_minmax_ops`
-
-`= (time,time)`
-
-`< (time,time)`
-
-`<= (time,time)`
-
-`> (time,time)`
-
-`>= (time,time)`
-
-`time_minmax_multi_ops`
-
-`= (time,time)`
-
-`< (time,time)`
-
-`<= (time,time)`
-
-`> (time,time)`
-
-`>= (time,time)`
-
-`timetz_bloom_ops`
-
-`= (timetz,timetz)`
-
-`timetz_minmax_ops`
-
-`= (timetz,timetz)`
-
-`< (timetz,timetz)`
-
-`<= (timetz,timetz)`
-
-`> (timetz,timetz)`
-
-`>= (timetz,timetz)`
-
-`timetz_minmax_multi_ops`
-
-`= (timetz,timetz)`
-
-`< (timetz,timetz)`
-
-`<= (timetz,timetz)`
-
-`> (timetz,timetz)`
-
-`>= (timetz,timetz)`
-
-`uuid_bloom_ops`
-
-`= (uuid,uuid)`
-
-`uuid_minmax_ops`
-
-`= (uuid,uuid)`
-
-`< (uuid,uuid)`
-
-`> (uuid,uuid)`
-
-`<= (uuid,uuid)`
-
-`>= (uuid,uuid)`
-
-`uuid_minmax_multi_ops`
-
-`= (uuid,uuid)`
-
-`< (uuid,uuid)`
-
-`> (uuid,uuid)`
-
-`<= (uuid,uuid)`
-
-`>= (uuid,uuid)`
-
-`varbit_minmax_ops`
-
-`= (varbit,varbit)`
-
-`< (varbit,varbit)`
-
-`> (varbit,varbit)`
-
-`<= (varbit,varbit)`
-
-`>= (varbit,varbit)`
+| Name | Indexable Operators |
+| --- | --- |
+| `bit_minmax_ops` | `= (bit,bit)` |
+| `< (bit,bit)` |
+| `> (bit,bit)` |
+| `<= (bit,bit)` |
+| `>= (bit,bit)` |
+| `box_inclusion_ops` | `@> (box,point)` |
+| `<< (box,box)` |
+| `&< (box,box)` |
+| `&> (box,box)` |
+| `>> (box,box)` |
+| `<@ (box,box)` |
+| `@> (box,box)` |
+| `~= (box,box)` |
+| `&& (box,box)` |
+| `<<| (box,box)` |
+| `&<| (box,box)` |
+| `|&> (box,box)` |
+| `|>> (box,box)` |
+| `bpchar_bloom_ops` | `= (character,character)` |
+| `bpchar_minmax_ops` | `= (character,character)` |
+| `< (character,character)` |
+| `<= (character,character)` |
+| `> (character,character)` |
+| `>= (character,character)` |
+| `bytea_bloom_ops` | `= (bytea,bytea)` |
+| `bytea_minmax_ops` | `= (bytea,bytea)` |
+| `< (bytea,bytea)` |
+| `<= (bytea,bytea)` |
+| `> (bytea,bytea)` |
+| `>= (bytea,bytea)` |
+| `char_bloom_ops` | `= ("char","char")` |
+| `char_minmax_ops` | `= ("char","char")` |
+| `< ("char","char")` |
+| `<= ("char","char")` |
+| `> ("char","char")` |
+| `>= ("char","char")` |
+| `date_bloom_ops` | `= (date,date)` |
+| `date_minmax_ops` | `= (date,date)` |
+| `< (date,date)` |
+| `<= (date,date)` |
+| `> (date,date)` |
+| `>= (date,date)` |
+| `date_minmax_multi_ops` | `= (date,date)` |
+| `< (date,date)` |
+| `<= (date,date)` |
+| `> (date,date)` |
+| `>= (date,date)` |
+| `float4_bloom_ops` | `= (float4,float4)` |
+| `float4_minmax_ops` | `= (float4,float4)` |
+| `< (float4,float4)` |
+| `> (float4,float4)` |
+| `<= (float4,float4)` |
+| `>= (float4,float4)` |
+| `float4_minmax_multi_ops` | `= (float4,float4)` |
+| `< (float4,float4)` |
+| `> (float4,float4)` |
+| `<= (float4,float4)` |
+| `>= (float4,float4)` |
+| `float8_bloom_ops` | `= (float8,float8)` |
+| `float8_minmax_ops` | `= (float8,float8)` |
+| `< (float8,float8)` |
+| `<= (float8,float8)` |
+| `> (float8,float8)` |
+| `>= (float8,float8)` |
+| `float8_minmax_multi_ops` | `= (float8,float8)` |
+| `< (float8,float8)` |
+| `<= (float8,float8)` |
+| `> (float8,float8)` |
+| `>= (float8,float8)` |
+| `inet_inclusion_ops` | `<< (inet,inet)` |
+| `<<= (inet,inet)` |
+| `>> (inet,inet)` |
+| `>>= (inet,inet)` |
+| `= (inet,inet)` |
+| `&& (inet,inet)` |
+| `inet_bloom_ops` | `= (inet,inet)` |
+| `inet_minmax_ops` | `= (inet,inet)` |
+| `< (inet,inet)` |
+| `<= (inet,inet)` |
+| `> (inet,inet)` |
+| `>= (inet,inet)` |
+| `inet_minmax_multi_ops` | `= (inet,inet)` |
+| `< (inet,inet)` |
+| `<= (inet,inet)` |
+| `> (inet,inet)` |
+| `>= (inet,inet)` |
+| `int2_bloom_ops` | `= (int2,int2)` |
+| `int2_minmax_ops` | `= (int2,int2)` |
+| `< (int2,int2)` |
+| `> (int2,int2)` |
+| `<= (int2,int2)` |
+| `>= (int2,int2)` |
+| `int2_minmax_multi_ops` | `= (int2,int2)` |
+| `< (int2,int2)` |
+| `> (int2,int2)` |
+| `<= (int2,int2)` |
+| `>= (int2,int2)` |
+| `int4_bloom_ops` | `= (int4,int4)` |
+| `int4_minmax_ops` | `= (int4,int4)` |
+| `< (int4,int4)` |
+| `> (int4,int4)` |
+| `<= (int4,int4)` |
+| `>= (int4,int4)` |
+| `int4_minmax_multi_ops` | `= (int4,int4)` |
+| `< (int4,int4)` |
+| `> (int4,int4)` |
+| `<= (int4,int4)` |
+| `>= (int4,int4)` |
+| `int8_bloom_ops` | `= (bigint,bigint)` |
+| `int8_minmax_ops` | `= (bigint,bigint)` |
+| `< (bigint,bigint)` |
+| `> (bigint,bigint)` |
+| `<= (bigint,bigint)` |
+| `>= (bigint,bigint)` |
+| `int8_minmax_multi_ops` | `= (bigint,bigint)` |
+| `< (bigint,bigint)` |
+| `> (bigint,bigint)` |
+| `<= (bigint,bigint)` |
+| `>= (bigint,bigint)` |
+| `interval_bloom_ops` | `= (interval,interval)` |
+| `interval_minmax_ops` | `= (interval,interval)` |
+| `< (interval,interval)` |
+| `<= (interval,interval)` |
+| `> (interval,interval)` |
+| `>= (interval,interval)` |
+| `interval_minmax_multi_ops` | `= (interval,interval)` |
+| `< (interval,interval)` |
+| `<= (interval,interval)` |
+| `> (interval,interval)` |
+| `>= (interval,interval)` |
+| `macaddr_bloom_ops` | `= (macaddr,macaddr)` |
+| `macaddr_minmax_ops` | `= (macaddr,macaddr)` |
+| `< (macaddr,macaddr)` |
+| `<= (macaddr,macaddr)` |
+| `> (macaddr,macaddr)` |
+| `>= (macaddr,macaddr)` |
+| `macaddr_minmax_multi_ops` | `= (macaddr,macaddr)` |
+| `< (macaddr,macaddr)` |
+| `<= (macaddr,macaddr)` |
+| `> (macaddr,macaddr)` |
+| `>= (macaddr,macaddr)` |
+| `macaddr8_bloom_ops` | `= (macaddr8,macaddr8)` |
+| `macaddr8_minmax_ops` | `= (macaddr8,macaddr8)` |
+| `< (macaddr8,macaddr8)` |
+| `<= (macaddr8,macaddr8)` |
+| `> (macaddr8,macaddr8)` |
+| `>= (macaddr8,macaddr8)` |
+| `macaddr8_minmax_multi_ops` | `= (macaddr8,macaddr8)` |
+| `< (macaddr8,macaddr8)` |
+| `<= (macaddr8,macaddr8)` |
+| `> (macaddr8,macaddr8)` |
+| `>= (macaddr8,macaddr8)` |
+| `name_bloom_ops` | `= (name,name)` |
+| `name_minmax_ops` | `= (name,name)` |
+| `< (name,name)` |
+| `<= (name,name)` |
+| `> (name,name)` |
+| `>= (name,name)` |
+| `numeric_bloom_ops` | `= (numeric,numeric)` |
+| `numeric_minmax_ops` | `= (numeric,numeric)` |
+| `< (numeric,numeric)` |
+| `<= (numeric,numeric)` |
+| `> (numeric,numeric)` |
+| `>= (numeric,numeric)` |
+| `numeric_minmax_multi_ops` | `= (numeric,numeric)` |
+| `< (numeric,numeric)` |
+| `<= (numeric,numeric)` |
+| `> (numeric,numeric)` |
+| `>= (numeric,numeric)` |
+| `oid_bloom_ops` | `= (oid,oid)` |
+| `oid_minmax_ops` | `= (oid,oid)` |
+| `< (oid,oid)` |
+| `> (oid,oid)` |
+| `<= (oid,oid)` |
+| `>= (oid,oid)` |
+| `oid_minmax_multi_ops` | `= (oid,oid)` |
+| `< (oid,oid)` |
+| `> (oid,oid)` |
+| `<= (oid,oid)` |
+| `>= (oid,oid)` |
+| `pg_lsn_bloom_ops` | `= (pg_lsn,pg_lsn)` |
+| `pg_lsn_minmax_ops` | `= (pg_lsn,pg_lsn)` |
+| `< (pg_lsn,pg_lsn)` |
+| `> (pg_lsn,pg_lsn)` |
+| `<= (pg_lsn,pg_lsn)` |
+| `>= (pg_lsn,pg_lsn)` |
+| `pg_lsn_minmax_multi_ops` | `= (pg_lsn,pg_lsn)` |
+| `< (pg_lsn,pg_lsn)` |
+| `> (pg_lsn,pg_lsn)` |
+| `<= (pg_lsn,pg_lsn)` |
+| `>= (pg_lsn,pg_lsn)` |
+| `range_inclusion_ops` | `= (anyrange,anyrange)` |
+| `< (anyrange,anyrange)` |
+| `<= (anyrange,anyrange)` |
+| `>= (anyrange,anyrange)` |
+| `> (anyrange,anyrange)` |
+| `&& (anyrange,anyrange)` |
+| `@> (anyrange,anyelement)` |
+| `@> (anyrange,anyrange)` |
+| `<@ (anyrange,anyrange)` |
+| `<< (anyrange,anyrange)` |
+| `>> (anyrange,anyrange)` |
+| `&< (anyrange,anyrange)` |
+| `&> (anyrange,anyrange)` |
+| `-|- (anyrange,anyrange)` |
+| `text_bloom_ops` | `= (text,text)` |
+| `text_minmax_ops` | `= (text,text)` |
+| `< (text,text)` |
+| `<= (text,text)` |
+| `> (text,text)` |
+| `>= (text,text)` |
+| `tid_bloom_ops` | `= (tid,tid)` |
+| `tid_minmax_ops` | `= (tid,tid)` |
+| `< (tid,tid)` |
+| `> (tid,tid)` |
+| `<= (tid,tid)` |
+| `>= (tid,tid)` |
+| `tid_minmax_multi_ops` | `= (tid,tid)` |
+| `< (tid,tid)` |
+| `> (tid,tid)` |
+| `<= (tid,tid)` |
+| `>= (tid,tid)` |
+| `timestamp_bloom_ops` | `= (timestamp,timestamp)` |
+| `timestamp_minmax_ops` | `= (timestamp,timestamp)` |
+| `< (timestamp,timestamp)` |
+| `<= (timestamp,timestamp)` |
+| `> (timestamp,timestamp)` |
+| `>= (timestamp,timestamp)` |
+| `timestamp_minmax_multi_ops` | `= (timestamp,timestamp)` |
+| `< (timestamp,timestamp)` |
+| `<= (timestamp,timestamp)` |
+| `> (timestamp,timestamp)` |
+| `>= (timestamp,timestamp)` |
+| `timestamptz_bloom_ops` | `= (timestamptz,timestamptz)` |
+| `timestamptz_minmax_ops` | `= (timestamptz,timestamptz)` |
+| `< (timestamptz,timestamptz)` |
+| `<= (timestamptz,timestamptz)` |
+| `> (timestamptz,timestamptz)` |
+| `>= (timestamptz,timestamptz)` |
+| `timestamptz_minmax_multi_ops` | `= (timestamptz,timestamptz)` |
+| `< (timestamptz,timestamptz)` |
+| `<= (timestamptz,timestamptz)` |
+| `> (timestamptz,timestamptz)` |
+| `>= (timestamptz,timestamptz)` |
+| `time_bloom_ops` | `= (time,time)` |
+| `time_minmax_ops` | `= (time,time)` |
+| `< (time,time)` |
+| `<= (time,time)` |
+| `> (time,time)` |
+| `>= (time,time)` |
+| `time_minmax_multi_ops` | `= (time,time)` |
+| `< (time,time)` |
+| `<= (time,time)` |
+| `> (time,time)` |
+| `>= (time,time)` |
+| `timetz_bloom_ops` | `= (timetz,timetz)` |
+| `timetz_minmax_ops` | `= (timetz,timetz)` |
+| `< (timetz,timetz)` |
+| `<= (timetz,timetz)` |
+| `> (timetz,timetz)` |
+| `>= (timetz,timetz)` |
+| `timetz_minmax_multi_ops` | `= (timetz,timetz)` |
+| `< (timetz,timetz)` |
+| `<= (timetz,timetz)` |
+| `> (timetz,timetz)` |
+| `>= (timetz,timetz)` |
+| `uuid_bloom_ops` | `= (uuid,uuid)` |
+| `uuid_minmax_ops` | `= (uuid,uuid)` |
+| `< (uuid,uuid)` |
+| `> (uuid,uuid)` |
+| `<= (uuid,uuid)` |
+| `>= (uuid,uuid)` |
+| `uuid_minmax_multi_ops` | `= (uuid,uuid)` |
+| `< (uuid,uuid)` |
+| `> (uuid,uuid)` |
+| `<= (uuid,uuid)` |
+| `>= (uuid,uuid)` |
+| `varbit_minmax_ops` | `= (varbit,varbit)` |
+| `< (varbit,varbit)` |
+| `> (varbit,varbit)` |
+| `<= (varbit,varbit)` |
+| `>= (varbit,varbit)` |
 
   
 
@@ -850,202 +418,49 @@ To write an operator class for a data type that implements a totally ordered set
 **Table 65.5. Function and Support Numbers for Minmax Operator Classes**
 
  
-
-Operator class member
-
-Object
-
-Support Function 1
-
-internal function `brin_minmax_opcinfo()`
-
-Support Function 2
-
-internal function `brin_minmax_add_value()`
-
-Support Function 3
-
-internal function `brin_minmax_consistent()`
-
-Support Function 4
-
-internal function `brin_minmax_union()`
-
-Operator Strategy 1
-
-operator less-than
-
-Operator Strategy 2
-
-operator less-than-or-equal-to
-
-Operator Strategy 3
-
-operator equal-to
-
-Operator Strategy 4
-
-operator greater-than-or-equal-to
-
-Operator Strategy 5
-
-operator greater-than
+| Operator class member | Object |
+| --- | --- |
+| Support Function 1 | internal function `brin_minmax_opcinfo()` |
+| Support Function 2 | internal function `brin_minmax_add_value()` |
+| Support Function 3 | internal function `brin_minmax_consistent()` |
+| Support Function 4 | internal function `brin_minmax_union()` |
+| Operator Strategy 1 | operator less-than |
+| Operator Strategy 2 | operator less-than-or-equal-to |
+| Operator Strategy 3 | operator equal-to |
+| Operator Strategy 4 | operator greater-than-or-equal-to |
+| Operator Strategy 5 | operator greater-than |
 
 To write an operator class for a complex data type which has values included within another type, it's possible to use the inclusion support functions alongside the corresponding operators, as shown in [Table 65.6](https://www.postgresql.org/docs/current/brin.html#BRIN-EXTENSIBILITY-INCLUSION-TABLE "Table 65.6. Function and Support Numbers for Inclusion Operator Classes"). It requires only a single additional function, which can be written in any language. More functions can be defined for additional functionality. All operators are optional. Some operators require other operators, as shown as dependencies on the table.
 
 **Table 65.6. Function and Support Numbers for Inclusion Operator Classes**
 
   
-
-Operator class member
-
-Object
-
-Dependency
-
-Support Function 1
-
-internal function `brin_inclusion_opcinfo()`
-
- 
-
-Support Function 2
-
-internal function `brin_inclusion_add_value()`
-
- 
-
-Support Function 3
-
-internal function `brin_inclusion_consistent()`
-
- 
-
-Support Function 4
-
-internal function `brin_inclusion_union()`
-
- 
-
-Support Function 11
-
-function to merge two elements
-
- 
-
-Support Function 12
-
-optional function to check whether two elements are mergeable
-
- 
-
-Support Function 13
-
-optional function to check if an element is contained within another
-
- 
-
-Support Function 14
-
-optional function to check whether an element is empty
-
- 
-
-Operator Strategy 1
-
-operator left-of
-
-Operator Strategy 4
-
-Operator Strategy 2
-
-operator does-not-extend-to-the-right-of
-
-Operator Strategy 5
-
-Operator Strategy 3
-
-operator overlaps
-
- 
-
-Operator Strategy 4
-
-operator does-not-extend-to-the-left-of
-
-Operator Strategy 1
-
-Operator Strategy 5
-
-operator right-of
-
-Operator Strategy 2
-
-Operator Strategy 6, 18
-
-operator same-as-or-equal-to
-
-Operator Strategy 7
-
-Operator Strategy 7, 16, 24, 25
-
-operator contains-or-equal-to
-
- 
-
-Operator Strategy 8, 26, 27
-
-operator is-contained-by-or-equal-to
-
-Operator Strategy 3
-
-Operator Strategy 9
-
-operator does-not-extend-above
-
-Operator Strategy 11
-
-Operator Strategy 10
-
-operator is-below
-
-Operator Strategy 12
-
-Operator Strategy 11
-
-operator is-above
-
-Operator Strategy 9
-
-Operator Strategy 12
-
-operator does-not-extend-below
-
-Operator Strategy 10
-
-Operator Strategy 20
-
-operator less-than
-
-Operator Strategy 5
-
-Operator Strategy 21
-
-operator less-than-or-equal-to
-
-Operator Strategy 5
-
-Operator Strategy 22
-
-operator greater-than
-
-Operator Strategy 1
-
-Operator Strategy 23
-
-operator greater-than-or-equal-to
-
-Operator Strategy 1
+| Operator class member | Object | Dependency |
+| --- | --- | --- |
+| Support Function 1 | internal function `brin_inclusion_opcinfo()` |   |
+| Support Function 2 | internal function `brin_inclusion_add_value()` |   |
+| Support Function 3 | internal function `brin_inclusion_consistent()` |   |
+| Support Function 4 | internal function `brin_inclusion_union()` |   |
+| Support Function 11 | function to merge two elements |   |
+| Support Function 12 | optional function to check whether two elements are mergeable |   |
+| Support Function 13 | optional function to check if an element is contained within another |   |
+| Support Function 14 | optional function to check whether an element is empty |   |
+| Operator Strategy 1 | operator left-of | Operator Strategy 4 |
+| Operator Strategy 2 | operator does-not-extend-to-the-right-of | Operator Strategy 5 |
+| Operator Strategy 3 | operator overlaps |   |
+| Operator Strategy 4 | operator does-not-extend-to-the-left-of | Operator Strategy 1 |
+| Operator Strategy 5 | operator right-of | Operator Strategy 2 |
+| Operator Strategy 6, 18 | operator same-as-or-equal-to | Operator Strategy 7 |
+| Operator Strategy 7, 16, 24, 25 | operator contains-or-equal-to |   |
+| Operator Strategy 8, 26, 27 | operator is-contained-by-or-equal-to | Operator Strategy 3 |
+| Operator Strategy 9 | operator does-not-extend-above | Operator Strategy 11 |
+| Operator Strategy 10 | operator is-below | Operator Strategy 12 |
+| Operator Strategy 11 | operator is-above | Operator Strategy 9 |
+| Operator Strategy 12 | operator does-not-extend-below | Operator Strategy 10 |
+| Operator Strategy 20 | operator less-than | Operator Strategy 5 |
+| Operator Strategy 21 | operator less-than-or-equal-to | Operator Strategy 5 |
+| Operator Strategy 22 | operator greater-than | Operator Strategy 1 |
+| Operator Strategy 23 | operator greater-than-or-equal-to | Operator Strategy 1 |
 
 Support function numbers 1 through 10 are reserved for the BRIN internal functions, so the SQL level functions start with number 11. Support function number 11 is the main function required to build the index. It should accept two arguments with the same data type as the operator class, and return the union of them. The inclusion operator class can store union values with different data types if it is defined with the `STORAGE` parameter. The return value of the union function should match the `STORAGE` data type.
 
@@ -1056,38 +471,15 @@ To write an operator class for a data type that implements only an equality oper
 **Table 65.7. Procedure and Support Numbers for Bloom Operator Classes**
 
  
-
-Operator class member
-
-Object
-
-Support Procedure 1
-
-internal function `brin_bloom_opcinfo()`
-
-Support Procedure 2
-
-internal function `brin_bloom_add_value()`
-
-Support Procedure 3
-
-internal function `brin_bloom_consistent()`
-
-Support Procedure 4
-
-internal function `brin_bloom_union()`
-
-Support Procedure 5
-
-internal function `brin_bloom_options()`
-
-Support Procedure 11
-
-function to compute hash of an element
-
-Operator Strategy 1
-
-operator equal-to
+| Operator class member | Object |
+| --- | --- |
+| Support Procedure 1 | internal function `brin_bloom_opcinfo()` |
+| Support Procedure 2 | internal function `brin_bloom_add_value()` |
+| Support Procedure 3 | internal function `brin_bloom_consistent()` |
+| Support Procedure 4 | internal function `brin_bloom_union()` |
+| Support Procedure 5 | internal function `brin_bloom_options()` |
+| Support Procedure 11 | function to compute hash of an element |
+| Operator Strategy 1 | operator equal-to |
 
 Support procedure numbers 1-10 are reserved for the BRIN internal functions, so the SQL level functions start with number 11. Support function number 11 is the main function required to build the index. It should accept one argument with the same data type as the operator class, and return a hash of the value.
 
@@ -1096,53 +488,18 @@ The minmax-multi operator class is also intended for data types implementing a t
 **Table 65.8. Procedure and Support Numbers for minmax-multi Operator Classes**
 
  
-
-Operator class member
-
-Object
-
-Support Procedure 1
-
-internal function `brin_minmax_multi_opcinfo()`
-
-Support Procedure 2
-
-internal function `brin_minmax_multi_add_value()`
-
-Support Procedure 3
-
-internal function `brin_minmax_multi_consistent()`
-
-Support Procedure 4
-
-internal function `brin_minmax_multi_union()`
-
-Support Procedure 5
-
-internal function `brin_minmax_multi_options()`
-
-Support Procedure 11
-
-function to compute distance between two values (length of a range)
-
-Operator Strategy 1
-
-operator less-than
-
-Operator Strategy 2
-
-operator less-than-or-equal-to
-
-Operator Strategy 3
-
-operator equal-to
-
-Operator Strategy 4
-
-operator greater-than-or-equal-to
-
-Operator Strategy 5
-
-operator greater-than
+| Operator class member | Object |
+| --- | --- |
+| Support Procedure 1 | internal function `brin_minmax_multi_opcinfo()` |
+| Support Procedure 2 | internal function `brin_minmax_multi_add_value()` |
+| Support Procedure 3 | internal function `brin_minmax_multi_consistent()` |
+| Support Procedure 4 | internal function `brin_minmax_multi_union()` |
+| Support Procedure 5 | internal function `brin_minmax_multi_options()` |
+| Support Procedure 11 | function to compute distance between two values (length of a range) |
+| Operator Strategy 1 | operator less-than |
+| Operator Strategy 2 | operator less-than-or-equal-to |
+| Operator Strategy 3 | operator equal-to |
+| Operator Strategy 4 | operator greater-than-or-equal-to |
+| Operator Strategy 5 | operator greater-than |
 
 Both minmax and inclusion operator classes support cross-data-type operators, though with these the dependencies become more complicated. The minmax operator class requires a full set of operators to be defined with both arguments having the same data type. It allows additional data types to be supported by defining extra sets of operators. Inclusion operator class operator strategies are dependent on another operator strategy as shown in [Table 65.6](https://www.postgresql.org/docs/current/brin.html#BRIN-EXTENSIBILITY-INCLUSION-TABLE "Table 65.6. Function and Support Numbers for Inclusion Operator Classes"), or the same operator strategy as themselves. They require the dependency operator to be defined with the `STORAGE` data type as the left-hand-side argument and the other supported data type to be the right-hand-side argument of the supported operator. See `float4_minmax_ops` as an example of minmax, and `box_inclusion_ops` as an example of inclusion.

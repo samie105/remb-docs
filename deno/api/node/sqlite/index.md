@@ -5,10 +5,11 @@ canonical_url: "https://docs.deno.com/api/node/sqlite/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:40:19.902Z"
-content_hash: "9b113777c98db9c7a10c2937458a17fa58d0086071ba381b4eaa006d96ce01ae"
+last_crawled_at: "2026-04-27T17:11:50.750Z"
+content_hash: "1ab248979756d08cb76922da473de2e4b5d362a7ac681eb46e84363d61c8c3f9"
 menu_path: ["sqlite - Node documentation"]
 section_path: []
+content_language: "en"
 ---
 ### Usage in Deno
 
@@ -57,23 +58,21 @@ console.log(query.all());
 // Prints: [ { key: 1, value: 'hello' }, { key: 2, value: 'world' } ]
 ```
 
-### Classes [#](#Classes)
-
 c
 
 [DatabaseSync](.././sqlite/~/DatabaseSync "DatabaseSync")
 
 This class represents a single [connection](https://www.sqlite.org/c3ref/sqlite3.html) to a SQLite database. All APIs exposed by this class execute synchronously.
 
-*   [applyChangeset](.././sqlite/~/DatabaseSync#method_applychangeset_0)
-*   [close](.././sqlite/~/DatabaseSync#method_close_0)
-*   [createSession](.././sqlite/~/DatabaseSync#method_createsession_0)
-*   [enableLoadExtension](.././sqlite/~/DatabaseSync#method_enableloadextension_0)
-*   [exec](.././sqlite/~/DatabaseSync#method_exec_0)
-*   [function](.././sqlite/~/DatabaseSync#method_function_0)
-*   [loadExtension](.././sqlite/~/DatabaseSync#method_loadextension_0)
-*   [open](.././sqlite/~/DatabaseSync#method_open_0)
-*   [prepare](.././sqlite/~/DatabaseSync#method_prepare_0)
+-   [applyChangeset](.././sqlite/~/DatabaseSync#method_applychangeset_0)
+-   [close](.././sqlite/~/DatabaseSync#method_close_0)
+-   [createSession](.././sqlite/~/DatabaseSync#method_createsession_0)
+-   [enableLoadExtension](.././sqlite/~/DatabaseSync#method_enableloadextension_0)
+-   [exec](.././sqlite/~/DatabaseSync#method_exec_0)
+-   [function](.././sqlite/~/DatabaseSync#method_function_0)
+-   [loadExtension](.././sqlite/~/DatabaseSync#method_loadextension_0)
+-   [open](.././sqlite/~/DatabaseSync#method_open_0)
+-   [prepare](.././sqlite/~/DatabaseSync#method_prepare_0)
 
 c
 
@@ -81,16 +80,14 @@ c
 
 This class represents a single [prepared statement](https://www.sqlite.org/c3ref/stmt.html). This class cannot be instantiated via its constructor. Instead, instances are created via the`database.prepare()` method. All APIs exposed by this class execute synchronously.
 
-*   [all](.././sqlite/~/StatementSync#method_all_0)
-*   [expandedSQL](.././sqlite/~/StatementSync#property_expandedsql)
-*   [get](.././sqlite/~/StatementSync#method_get_0)
-*   [iterate](.././sqlite/~/StatementSync#method_iterate_0)
-*   [run](.././sqlite/~/StatementSync#method_run_0)
-*   [setAllowBareNamedParameters](.././sqlite/~/StatementSync#method_setallowbarenamedparameters_0)
-*   [setReadBigInts](.././sqlite/~/StatementSync#method_setreadbigints_0)
-*   [sourceSQL](.././sqlite/~/StatementSync#property_sourcesql)
-
-### Interfaces [#](#Interfaces)
+-   [all](.././sqlite/~/StatementSync#method_all_0)
+-   [expandedSQL](.././sqlite/~/StatementSync#property_expandedsql)
+-   [get](.././sqlite/~/StatementSync#method_get_0)
+-   [iterate](.././sqlite/~/StatementSync#method_iterate_0)
+-   [run](.././sqlite/~/StatementSync#method_run_0)
+-   [setAllowBareNamedParameters](.././sqlite/~/StatementSync#method_setallowbarenamedparameters_0)
+-   [setReadBigInts](.././sqlite/~/StatementSync#method_setreadbigints_0)
+-   [sourceSQL](.././sqlite/~/StatementSync#property_sourcesql)
 
 I
 
@@ -98,8 +95,8 @@ I
 
 No documentation available
 
-*   [filter](.././sqlite/~/ApplyChangesetOptions#property_filter)
-*   [onConflict](.././sqlite/~/ApplyChangesetOptions#property_onconflict)
+-   [filter](.././sqlite/~/ApplyChangesetOptions#property_filter)
+-   [onConflict](.././sqlite/~/ApplyChangesetOptions#property_onconflict)
 
 I
 
@@ -107,8 +104,8 @@ I
 
 No documentation available
 
-*   [db](.././sqlite/~/CreateSessionOptions#property_db)
-*   [table](.././sqlite/~/CreateSessionOptions#property_table)
+-   [db](.././sqlite/~/CreateSessionOptions#property_db)
+-   [table](.././sqlite/~/CreateSessionOptions#property_table)
 
 I
 
@@ -116,11 +113,11 @@ I
 
 No documentation available
 
-*   [allowExtension](.././sqlite/~/DatabaseSyncOptions#property_allowextension)
-*   [enableDoubleQuotedStringLiterals](.././sqlite/~/DatabaseSyncOptions#property_enabledoublequotedstringliterals)
-*   [enableForeignKeyConstraints](.././sqlite/~/DatabaseSyncOptions#property_enableforeignkeyconstraints)
-*   [open](.././sqlite/~/DatabaseSyncOptions#property_open)
-*   [readOnly](.././sqlite/~/DatabaseSyncOptions#property_readonly)
+-   [allowExtension](.././sqlite/~/DatabaseSyncOptions#property_allowextension)
+-   [enableDoubleQuotedStringLiterals](.././sqlite/~/DatabaseSyncOptions#property_enabledoublequotedstringliterals)
+-   [enableForeignKeyConstraints](.././sqlite/~/DatabaseSyncOptions#property_enableforeignkeyconstraints)
+-   [open](.././sqlite/~/DatabaseSyncOptions#property_open)
+-   [readOnly](.././sqlite/~/DatabaseSyncOptions#property_readonly)
 
 I
 
@@ -128,10 +125,10 @@ I
 
 No documentation available
 
-*   [deterministic](.././sqlite/~/FunctionOptions#property_deterministic)
-*   [directOnly](.././sqlite/~/FunctionOptions#property_directonly)
-*   [useBigIntArguments](.././sqlite/~/FunctionOptions#property_usebigintarguments)
-*   [varargs](.././sqlite/~/FunctionOptions#property_varargs)
+-   [deterministic](.././sqlite/~/FunctionOptions#property_deterministic)
+-   [directOnly](.././sqlite/~/FunctionOptions#property_directonly)
+-   [useBigIntArguments](.././sqlite/~/FunctionOptions#property_usebigintarguments)
+-   [varargs](.././sqlite/~/FunctionOptions#property_varargs)
 
 I
 
@@ -139,9 +136,9 @@ I
 
 No documentation available
 
-*   [changeset](.././sqlite/~/Session#method_changeset_0)
-*   [close](.././sqlite/~/Session#method_close_0)
-*   [patchset](.././sqlite/~/Session#method_patchset_0)
+-   [changeset](.././sqlite/~/Session#method_changeset_0)
+-   [close](.././sqlite/~/Session#method_close_0)
+-   [patchset](.././sqlite/~/Session#method_patchset_0)
 
 I
 
@@ -149,18 +146,14 @@ I
 
 No documentation available
 
-*   [changes](.././sqlite/~/StatementResultingChanges#property_changes)
-*   [lastInsertRowid](.././sqlite/~/StatementResultingChanges#property_lastinsertrowid)
-
-### Namespaces [#](#Namespaces)
+-   [changes](.././sqlite/~/StatementResultingChanges#property_changes)
+-   [lastInsertRowid](.././sqlite/~/StatementResultingChanges#property_lastinsertrowid)
 
 N
 
 [constants](.././sqlite/~/constants "constants")
 
 No documentation available
-
-### Type Aliases [#](<#Type Aliases>)
 
 T
 
@@ -179,8 +172,6 @@ T
 [SupportedValueType](.././sqlite/~/SupportedValueType "SupportedValueType")
 
 No documentation available
-
-### Variables [#](#Variables)
 
 v
 

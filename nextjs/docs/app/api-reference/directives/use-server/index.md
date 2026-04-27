@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/app/api-reference/directives/use-server"
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:09:34.681Z"
-content_hash: "d93ecc9a51ddd19b708003e19a626bbbcc038e9153b39ba569bfdcbc0f1d904e"
+last_crawled_at: "2026-04-27T18:08:20.656Z"
+content_hash: "ee7cab26f8ef781944e43bcdc202ac1727a03117c5a8170d49bb1bf24b045638"
 menu_path: ["use server"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/api-reference/directives/use-client/index.md", "title": "use client"}
-nav_next: {"path": "nextjs/docs/app/api-reference/components/index.md", "title": "Components"}
+version: "latest"
+content_language: "en"
 ---
+[API Reference](/docs/app/api-reference)[Directives](/docs/app/api-reference/directives)use server
 
 # use server
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 The `use server` directive designates a function or file to be executed on the **server side**. It can be used at the top of a file to indicate that all functions in the file are server-side, or inline at the top of a function to mark the function as a [Server Function](https://19.react.dev/reference/rsc/server-functions). This is a React feature.
 
@@ -24,8 +25,6 @@ The `use server` directive designates a function or file to be executed on the *
 The following example shows a file with a `use server` directive at the top. All functions in the file are executed on the server.
 
 app/actions.ts
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -53,8 +52,6 @@ Assuming you have a `fetchUsers` Server Function in `actions.ts`:
 
 app/actions.ts
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -79,8 +76,6 @@ Then you can import the `fetchUsers` Server Function into a Client Component and
 
 app/components/my-button.tsx
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -97,8 +92,6 @@ export default function MyButton() {
 In the following example, `use server` is used inline at the top of a function to mark it as a [Server Function](https://19.react.dev/reference/rsc/server-functions):
 
 app/posts/\[id\]/page.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -130,8 +123,6 @@ Always authenticate and authorize users before performing sensitive server-side 
 
 app/actions.ts
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -158,20 +149,4 @@ Server Function return values are serialized and sent to the client. Only return
 
 See the [React documentation](https://react.dev/reference/rsc/use-server) for more information on `use server`.
 
-[Previous
-
-use client
-
-](/docs/app/api-reference/directives/use-client)
-
-[Next
-
-Components
-
-](/docs/app/api-reference/components)
-
 Was this helpful?
-
-supported.
-
-Send

@@ -5,14 +5,12 @@ canonical_url: "https://orm.drizzle.team/docs/latest-releases/drizzle-orm-v0290"
 docset: "drizzle"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:11:59.565Z"
-content_hash: "2fd0734a25e13a6130c0af652ea3154aabb0d2cf16633cdec938838ffd2d9e02"
+last_crawled_at: "2026-04-27T19:10:28.225Z"
+content_hash: "46b31e6411f97e6583d5c691d9d06a1751e674636e0ae82b863bac08bdf648dc"
 menu_path: ["Drizzle ORM - DrizzleORM v0.29.0 release"]
 section_path: []
-nav_prev: {"path": "drizzle/docs/latest-releases/drizzle-orm-v0286/index.md", "title": "Drizzle ORM - DrizzleORM v0.28.6 release"}
-nav_next: {"path": "drizzle/docs/latest-releases/drizzle-orm-v0291/index.md", "title": "Drizzle ORM - DrizzleORM v0.29.1 release"}
+content_language: "en"
 ---
-
 DrizzleORM v0.29.0 release
 
 Nov 9, 2023
@@ -25,19 +23,19 @@ Nov 9, 2023
 
 You can now specify `bigint unsigned` type
 
-```
+```ts
 const table = mysqlTable('table', {
   id: bigint('id', { mode: 'number', unsigned: true }),
 });
 ```
 
-Read more in [docs](drizzle/docs/column-types/mysql/index.md#bigint)
+Read more in [docs](https://orm.drizzle.team/docs/column-types/mysql#bigint)
 
 ### 🎉 Improved query builder types
 
 Starting from `0.29.0` by default, as all the query builders in Drizzle try to conform to SQL as much as possible, you can only invoke most of the methods once. For example, in a SELECT statement there might only be one WHERE clause, so you can only invoke .where() once:
 
-```
+```ts
 const query = db
   .select()
   .from(users)
@@ -49,7 +47,7 @@ This behavior is useful for conventional query building, i.e. when you create th
 
 Let’s see how it works by implementing a simple withPagination function that adds LIMIT and OFFSET clauses to a query based on the provided page number and an optional page size:
 
-```
+```ts
 function withPagination<T extends PgSelect>(
   qb: T,
   page: number,
@@ -67,7 +65,7 @@ withPagination(dynamicQuery, 1); // ✅ OK
 
 Note that the withPagination function is generic, which allows you to modify the result type of the query builder inside it, for example by adding a join:
 
-```
+```ts
 function withFriends<T extends PgSelect>(qb: T) {
   return qb.leftJoin(friends, eq(friends.userId, users.id));
 }
@@ -76,13 +74,13 @@ let query = db.select().from(users).where(eq(users.id, 1)).$dynamic();
 query = withFriends(query);
 ```
 
-Read more in [docs](drizzle/docs/dynamic-query-building/index.md)
+Read more in [docs](https://orm.drizzle.team/docs/dynamic-query-building)
 
 ### 🎉 Possibility to specify name for primary keys and foreign keys
 
 There is an issue when constraint names exceed the 64-character limit of the database. This causes the database engine to truncate the name, potentially leading to issues. Starting from `0.29.0`, you have the option to specify custom names for both `primaryKey()` and `foreignKey()`. We have also deprecated the old `primaryKey()` syntax, which can still be used but will be removed in future releases
 
-```
+```ts
 const table = pgTable('table', {
   id: integer('id'),
   name: text('name'),
@@ -96,13 +94,13 @@ const table = pgTable('table', {
 }));
 ```
 
-Read more in [docs](drizzle/docs/indexes-constraints/index.md#composite-primary-key)
+Read more in [docs](https://orm.drizzle.team/docs/indexes-constraints#composite-primary-key)
 
 ### 🎉 Read Replicas Support
 
 You can now use the Drizzle `withReplica` function to specify different database connections for read replicas and the main instance for write operations. By default, `withReplicas` will use a random read replica for read operations and the main instance for all other data modification operations. You can also specify custom logic for choosing which read replica connection to use. You have the freedom to make any weighted, custom decision for that. Here are some usage examples:
 
-```
+```ts
 const primaryDb = drizzle({ client });
 const read1 = drizzle({ client });
 const read2 = drizzle({ client });
@@ -121,7 +119,7 @@ db.delete(usersTable).where(eq(usersTable.id, 1))
 
 Implementation example of custom logic for selecting read replicas, where the first replica has a 70% chance of being chosen, and the second replica has a 30% chance of being chosen. Note that you can implement any type of random selection for read replicas
 
-```
+```ts
 const db = withReplicas(primaryDb, [read1, read2], (replicas) => {
     const weight = [0.7, 0.3];
     let cumulativeProbability = 0;
@@ -137,7 +135,7 @@ const db = withReplicas(primaryDb, [read1, read2], (replicas) => {
 
 `withReplicas` function is available for all dialects in Drizzle ORM
 
-Read more in [docs](drizzle/docs/read-replicas/index.md)
+Read more in [docs](https://orm.drizzle.team/docs/read-replicas)
 
 ### 🎉 Set operators support (UNION, UNION ALL, INTERSECT, INTERSECT ALL, EXCEPT, EXCEPT ALL)
 
@@ -145,7 +143,7 @@ Huge thanks to @Angelelz for the significant contribution he made, from API disc
 
 Usage examples: All set operators can be used in a two ways: `import approach` or `builder approach`
 
-```
+```ts
 // Import approach
 import { union } from 'drizzle-orm/pg-core'
 
@@ -155,12 +153,12 @@ const allCustomersQuery = db.select().from(customers);
 const result = await union(allUsersQuery, allCustomersQuery)
 ```
 
-```
+```ts
 // Builder approach
 const result = await db.select().from(users).union(db.select().from(customers));
 ```
 
-Read more in [docs](drizzle/docs/set-operations/index.md)
+Read more in [docs](https://orm.drizzle.team/docs/set-operations)
 
 ### 🎉 New MySQL Proxy Driver
 
@@ -170,7 +168,7 @@ You need to implement two endpoints on your server that will be used for queries
 
 You can find both server and driver implementation examples in the `./examples/mysql-proxy` folder
 
-```
+```ts
 // Driver
 import axios from 'axios';
 import { eq } from 'drizzle-orm/expressions';
@@ -219,7 +217,7 @@ async function main() {
 }
 ```
 
-Read more in [docs](drizzle/docs/get-started-mysql/index.md#http-proxy)
+Read more in [docs](https://orm.drizzle.team/docs/get-started-mysql#http-proxy)
 
 ### 🎉 New PostgreSQL Proxy Driver
 
@@ -229,7 +227,7 @@ You need to implement two endpoints on your server that will be used for queries
 
 You can find both server and driver implementation examples in the `./examples/pg-proxy` folder
 
-```
+```ts
 import axios from 'axios';
 import { eq } from 'drizzle-orm/expressions';
 import { drizzle } from 'drizzle-orm/pg-proxy';
@@ -263,7 +261,7 @@ async function main() {
 }
 ```
 
-Read more in [docs](drizzle/docs/get-started-postgresql/index.md#http-proxy)
+Read more in [docs](https://orm.drizzle.team/docs/get-started-postgresql#http-proxy)
 
 ### 🎉 `D1` Batch API support
 
@@ -271,7 +269,7 @@ Reference: [https://developers.cloudflare.com/d1/platform/client-api/#dbbatch](h
 
 Batch API usage example:
 
-```
+```ts
 const batchResponse = await db.batch([
   db.insert(usersTable).values({ id: 1, name: 'John' }).returning({
     id: usersTable.id,
@@ -285,7 +283,7 @@ const batchResponse = await db.batch([
 ]);
 ```
 
-```
+```ts
 type BatchResponse = [
   {
     id: number;
@@ -312,7 +310,7 @@ type BatchResponse = [
 
 All possible builders that can be used inside `db.batch`:
 
-```
+```ts
 `db.all()`,
 `db.get()`,
 `db.values()`,
@@ -325,7 +323,7 @@ All possible builders that can be used inside `db.batch`:
 `db.insert()...`,
 ```
 
-More usage examples here: [integration-tests/tests/d1-batch.test.ts](https://github.com/drizzle-team/drizzle-orm/blob/beta/integration-tests/tests/d1-batch.test.ts) and in [docs](drizzle/docs/batch-api/index.md)
+More usage examples here: [integration-tests/tests/d1-batch.test.ts](https://github.com/drizzle-team/drizzle-orm/blob/beta/integration-tests/tests/d1-batch.test.ts) and in [docs](https://orm.drizzle.team/docs/batch-api)
 
 * * *
 

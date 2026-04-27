@@ -5,14 +5,12 @@ canonical_url: "https://www.postgresql.org/docs/current/pgcrypto.html"
 docset: "postgres"
 kind: "database"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:46:53.730Z"
-content_hash: "1ccc151a9bff1422c171cea7bd2596b3538acc73a9e076cc8213d9a01655ba38"
+last_crawled_at: "2026-04-27T20:47:46.014Z"
+content_hash: "485d8aa33eb0a6f9831ee27d15e850e3a6c1938bf9a290103a8054bcefb436bc"
 menu_path: ["PostgreSQL: Documentation: 18: F.26. pgcrypto — cryptographic functions"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/pgbuffercache.html/index.md", "title": "PostgreSQL: Documentation: 18: F.25.\u00a0pg_buffercache \u2014 inspect PostgreSQL buffer cache state"}
-nav_next: {"path": "postgres/docs/current/pgfreespacemap.html/index.md", "title": "PostgreSQL: Documentation: 18: F.27.\u00a0pg_freespacemap \u2014 examine the free space map"}
+content_language: "en"
 ---
-
 The `pgcrypto` module provides cryptographic functions for PostgreSQL.
 
 This module is considered “trusted”, that is, it can be installed by non-superusers who have `CREATE` privilege on the current database.
@@ -65,90 +63,14 @@ The algorithms in `crypt()` differ from the usual MD5 or SHA-1 hashing algorithm
 **Table F.18. Supported Algorithms for `crypt()`**
 
      
-
-Algorithm
-
-Max Password Length
-
-Adaptive?
-
-Salt Bits
-
-Output Length
-
-Description
-
-`bf`
-
-72
-
-yes
-
-128
-
-60
-
-Blowfish-based, variant 2a
-
-`md5`
-
-unlimited
-
-no
-
-48
-
-34
-
-MD5-based crypt
-
-`xdes`
-
-8
-
-yes
-
-24
-
-20
-
-Extended DES
-
-`des`
-
-8
-
-no
-
-12
-
-13
-
-Original UNIX crypt
-
-`sha256crypt`
-
-unlimited
-
-yes
-
-up to 32
-
-80
-
-Adapted from publicly available reference implementation [Unix crypt using SHA-256 and SHA-512](https://www.akkadia.org/drepper/SHA-crypt.txt)
-
-`sha512crypt`
-
-unlimited
-
-yes
-
-up to 32
-
-123
-
-Adapted from publicly available reference implementation [Unix crypt using SHA-256 and SHA-512](https://www.akkadia.org/drepper/SHA-crypt.txt)
+| Algorithm | Max Password Length | Adaptive? | Salt Bits | Output Length | Description |
+| --- | --- | --- | --- | --- | --- |
+| `bf` | 72 | yes | 128 | 60 | Blowfish-based, variant 2a |
+| `md5` | unlimited | no | 48 | 34 | MD5-based crypt |
+| `xdes` | 8 | yes | 24 | 20 | Extended DES |
+| `des` | 8 | no | 12 | 13 | Original UNIX crypt |
+| `sha256crypt` | unlimited | yes | up to 32 | 80 | Adapted from publicly available reference implementation [Unix crypt using SHA-256 and SHA-512](https://www.akkadia.org/drepper/SHA-crypt.txt) |
+| `sha512crypt` | unlimited | yes | up to 32 | 123 | Adapted from publicly available reference implementation [Unix crypt using SHA-256 and SHA-512](https://www.akkadia.org/drepper/SHA-crypt.txt) |
 
   
 
@@ -181,38 +103,11 @@ The _`iter_count`_ parameter lets the user specify the iteration count, for algo
 **Table F.19. Iteration Counts for `crypt()`**
 
    
-
-Algorithm
-
-Default
-
-Min
-
-Max
-
-`xdes`
-
-725
-
-1
-
-16777215
-
-`bf`
-
-6
-
-4
-
-31
-
-`sha256crypt, sha512crypt`
-
-5000
-
-1000
-
-999999999
+| Algorithm | Default | Min | Max |
+| --- | --- | --- | --- |
+| `xdes` | 725 | 1 | 16777215 |
+| `bf` | 6 | 4 | 31 |
+| `sha256crypt, sha512crypt` | 5000 | 1000 | 999999999 |
 
 For `xdes` there is an additional limitation that the iteration count must be an odd number.
 
@@ -225,108 +120,28 @@ The default _`iter_count`_ for `sha256crypt` and `sha512crypt` of `5000` is cons
 **Table F.20. Hash Algorithm Speeds**
 
     
-
-Algorithm
-
-Hashes/sec
-
-For `[a-z]`
-
-For `[A-Za-z0-9]`
-
-Duration relative to `md5 hash`
-
-`crypt-bf/8`
-
-1792
-
-4 years
-
-3927 years
-
-100k
-
-`crypt-bf/7`
-
-3648
-
-2 years
-
-1929 years
-
-50k
-
-`crypt-bf/6`
-
-7168
-
-1 year
-
-982 years
-
-25k
-
-`crypt-bf/5`
-
-13504
-
-188 days
-
-521 years
-
-12.5k
-
-`crypt-md5`
-
-171584
-
-15 days
-
-41 years
-
-1k
-
-`crypt-des`
-
-23221568
-
-157.5 minutes
-
-108 days
-
-7
-
-`sha1`
-
-37774272
-
-90 minutes
-
-68 days
-
-4
-
-`md5` (hash)
-
-150085504
-
-22.5 minutes
-
-17 days
-
-1
+| Algorithm | Hashes/sec | For `[a-z]` | For `[A-Za-z0-9]` | Duration relative to `md5 hash` |
+| --- | --- | --- | --- | --- |
+| `crypt-bf/8` | 1792 | 4 years | 3927 years | 100k |
+| `crypt-bf/7` | 3648 | 2 years | 1929 years | 50k |
+| `crypt-bf/6` | 7168 | 1 year | 982 years | 25k |
+| `crypt-bf/5` | 13504 | 188 days | 521 years | 12.5k |
+| `crypt-md5` | 171584 | 15 days | 41 years | 1k |
+| `crypt-des` | 23221568 | 157.5 minutes | 108 days | 7 |
+| `sha1` | 37774272 | 90 minutes | 68 days | 4 |
+| `md5` (hash) | 150085504 | 22.5 minutes | 17 days | 1 |
 
 Notes:
 
-*   The machine used is an Intel Mobile Core i3.
+-   The machine used is an Intel Mobile Core i3.
     
-*   `crypt-des` and `crypt-md5` algorithm numbers are taken from John the Ripper v1.6.38 `-test` output.
+-   `crypt-des` and `crypt-md5` algorithm numbers are taken from John the Ripper v1.6.38 `-test` output.
     
-*   `md5 hash` numbers are from mdcrack 1.2.
+-   `md5 hash` numbers are from mdcrack 1.2.
     
-*   `sha1` numbers are from lcrack-20031130-beta.
+-   `sha1` numbers are from lcrack-20031130-beta.
     
-*   `crypt-bf` numbers are taken using a simple program that loops over 1000 8-character passwords. That way the speed with different numbers of iterations can be shown. For reference: `john -test` shows 13506 loops/sec for `crypt-bf/5`. (The very small difference in results is in accordance with the fact that the `crypt-bf` implementation in `pgcrypto` is the same one used in John the Ripper.)
+-   `crypt-bf` numbers are taken using a simple program that loops over 1000 8-character passwords. That way the speed with different numbers of iterations can be shown. For reference: `john -test` shows 13506 loops/sec for `crypt-bf/5`. (The very small difference in results is in accordance with the fact that the `crypt-bf` implementation in `pgcrypto` is the same one used in John the Ripper.)
     
 
 Note that “try all combinations” is not a realistic exercise. Usually password cracking is done with the help of dictionaries, which contain both regular words and various mutations of them. So, even somewhat word-like passwords could be cracked much faster than the above numbers suggest, while a 6-character non-word-like password may escape cracking. Or not.
@@ -337,9 +152,9 @@ The functions here implement the encryption part of the OpenPGP ([RFC 4880](http
 
 An encrypted PGP message consists of 2 parts, or _packets_:
 
-*   Packet containing a session key — either symmetric-key or public-key encrypted.
+-   Packet containing a session key — either symmetric-key or public-key encrypted.
     
-*   Packet containing data encrypted with the session key.
+-   Packet containing data encrypted with the session key.
     
 
 When encrypting with a symmetric key (i.e., a password):
@@ -415,11 +230,11 @@ pgp\_key\_id(bytea) returns text
 
 It can return 2 special key IDs:
 
-*   `SYMKEY`
+-   `SYMKEY`
     
     The message is encrypted with a symmetric key.
     
-*   `ANYKEY`
+-   `ANYKEY`
     
     The message is public-key encrypted, but the key ID has been removed. That means you will need to try all your secret keys on it to see which one decrypts it. `pgcrypto` itself does not produce such messages.
     
@@ -577,11 +392,11 @@ For more details see `man gpg`, [The GNU Privacy Handbook](https://www.gnupg.org
 
 #### F.26.3.10. Limitations of PGP Code [#](#PGCRYPTO-PGP-ENC-FUNCS-LIMITATIONS)
 
-*   No support for signing. That also means that it is not checked whether the encryption subkey belongs to the master key.
+-   No support for signing. That also means that it is not checked whether the encryption subkey belongs to the master key.
     
-*   No support for encryption key as master key. As such practice is generally discouraged, this should not be a problem.
+-   No support for encryption key as master key. As such practice is generally discouraged, this should not be a problem.
     
-*   No support for several subkeys. This may seem like a problem, as this is common practice. On the other hand, you should not use your regular GPG/PGP keys with `pgcrypto`, but create new ones, as the usage scenario is rather different.
+-   No support for several subkeys. This may seem like a problem, as this is common practice. On the other hand, you should not use your regular GPG/PGP keys with `pgcrypto`, but create new ones, as the usage scenario is rather different.
     
 
 ### F.26.4. Raw Encryption Functions [#](#PGCRYPTO-RAW-ENC-FUNCS)
@@ -611,25 +426,25 @@ _`algorithm`_ \[ `-` _`mode`_ \] \[ `/pad:` _`padding`_ \]
 
 where _`algorithm`_ is one of:
 
-*   `bf` — Blowfish
+-   `bf` — Blowfish
     
-*   `aes` — AES (Rijndael-128, -192 or -256)
+-   `aes` — AES (Rijndael-128, -192 or -256)
     
 
 and _`mode`_ is one of:
 
-*   `cbc` — next block depends on previous (default)
+-   `cbc` — next block depends on previous (default)
     
-*   `cfb` — next block depends on previous encrypted block
+-   `cfb` — next block depends on previous encrypted block
     
-*   `ecb` — each block is encrypted separately (for testing only)
+-   `ecb` — each block is encrypted separately (for testing only)
     
 
 and _`padding`_ is one of:
 
-*   `pkcs` — data may be any length (default)
+-   `pkcs` — data may be any length (default)
     
-*   `none` — data must be multiple of cipher block size
+-   `none` — data must be multiple of cipher block size
     
 
 So, for example, these are equivalent:
@@ -701,27 +516,8 @@ Marko Kreen `<[markokr@gmail.com](mailto:markokr@gmail.com)>`
 `pgcrypto` uses code from the following sources:
 
   
-
-Algorithm
-
-Author
-
-Source origin
-
-DES crypt
-
-David Burren and others
-
-FreeBSD libcrypt
-
-MD5 crypt
-
-Poul-Henning Kamp
-
-FreeBSD libcrypt
-
-Blowfish crypt
-
-Solar Designer
-
-www.openwall.com
+| Algorithm | Author | Source origin |
+| --- | --- | --- |
+| DES crypt | David Burren and others | FreeBSD libcrypt |
+| MD5 crypt | Poul-Henning Kamp | FreeBSD libcrypt |
+| Blowfish crypt | Solar Designer | www.openwall.com |

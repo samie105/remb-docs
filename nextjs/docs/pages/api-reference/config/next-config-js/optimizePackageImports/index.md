@@ -5,19 +5,20 @@ canonical_url: "https://nextjs.org/docs/pages/api-reference/config/next-config-j
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:20:59.943Z"
-content_hash: "c9e3923cfb39eca7026cf7242f1d1d571244e239a18b9c85df2fcbdfe029424b"
+last_crawled_at: "2026-04-27T18:20:25.482Z"
+content_hash: "4f4621d96119fb85b5013027813054c386c3c8aa3cf7969dfaa09e435cb6f6f1"
 menu_path: ["optimizePackageImports"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/pages/api-reference/config/next-config-js/onDemandEntries/index.md", "title": "onDemandEntries"}
-nav_next: {"path": "nextjs/docs/pages/api-reference/config/next-config-js/output/index.md", "title": "output"}
+version: "latest"
+content_language: "en"
 ---
+[Configuration](/docs/pages/api-reference/config)[next.config.js Options](/docs/pages/api-reference/config/next-config-js)optimizePackageImports
 
 # optimizePackageImports
 
 This feature is currently experimental and subject to change, it's not recommended for production. Try it out and share your feedback on [GitHub](https://github.com/vercel/next.js/issues).
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 Some packages can export hundreds or thousands of modules, which can cause performance issues in development and production.
 
@@ -35,36 +36,32 @@ module.exports = {
 
 The following libraries are optimized by default:
 
-*   `lucide-react`
-*   `date-fns`
-*   `lodash-es`
-*   `ramda`
-*   `antd`
-*   `react-bootstrap`
-*   `ahooks`
-*   `@ant-design/icons`
-*   `@headlessui/react`
-*   `@headlessui-float/react`
-*   `@heroicons/react/20/solid`
-*   `@heroicons/react/24/solid`
-*   `@heroicons/react/24/outline`
-*   `@visx/visx`
-*   `@tremor/react`
-*   `rxjs`
-*   `@mui/material`
-*   `@mui/icons-material`
-*   `recharts`
-*   `react-use`
-*   `@material-ui/core`
-*   `@material-ui/icons`
-*   `@tabler/icons-react`
-*   `mui-core`
-*   `react-icons/*`
-*   `effect`
-*   `@effect/*`
+-   `lucide-react`
+-   `date-fns`
+-   `lodash-es`
+-   `ramda`
+-   `antd`
+-   `react-bootstrap`
+-   `ahooks`
+-   `@ant-design/icons`
+-   `@headlessui/react`
+-   `@headlessui-float/react`
+-   `@heroicons/react/20/solid`
+-   `@heroicons/react/24/solid`
+-   `@heroicons/react/24/outline`
+-   `@visx/visx`
+-   `@tremor/react`
+-   `rxjs`
+-   `@mui/material`
+-   `@mui/icons-material`
+-   `recharts`
+-   `react-use`
+-   `@material-ui/core`
+-   `@material-ui/icons`
+-   `@tabler/icons-react`
+-   `mui-core`
+-   `react-icons/*`
+-   `effect`
+-   `@effect/*`
 
 Was this helpful?
-
-supported.
-
-Send

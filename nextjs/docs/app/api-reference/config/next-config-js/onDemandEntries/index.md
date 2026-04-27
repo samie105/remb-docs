@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/app/api-reference/config/next-config-js/
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:07:59.064Z"
-content_hash: "e99dc374967d592b0cf375469a0ddc867e6a3afdda33a747018d0136f325f5cf"
+last_crawled_at: "2026-04-27T18:06:47.117Z"
+content_hash: "7e06fc2cfd6530b515d3d5641c00f604d7f94ab8113a19f7ba92265483fe9832"
 menu_path: ["onDemandEntries"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/api-reference/config/next-config-js/mdxRs/index.md", "title": "mdxRs"}
-nav_next: {"path": "nextjs/docs/app/api-reference/config/next-config-js/optimizePackageImports/index.md", "title": "optimizePackageImports"}
+version: "latest"
+content_language: "en"
 ---
+[Configuration](/docs/app/api-reference/config)[next.config.js](/docs/app/api-reference/config/next-config-js)onDemandEntries
 
 # onDemandEntries
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 Next.js exposes some options that give you some control over how the server will dispose or keep in memory built pages in development.
 
@@ -34,20 +35,4 @@ module.exports = {
 }
 ```
 
-[Previous
-
-mdxRs
-
-](/docs/app/api-reference/config/next-config-js/mdxRs)
-
-[Next
-
-optimizePackageImports
-
-](/docs/app/api-reference/config/next-config-js/optimizePackageImports)
-
 Was this helpful?
-
-supported.
-
-Send

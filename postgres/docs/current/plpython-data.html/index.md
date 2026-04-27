@@ -5,46 +5,44 @@ canonical_url: "https://www.postgresql.org/docs/current/plpython-data.html"
 docset: "postgres"
 kind: "database"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:54:21.683Z"
-content_hash: "05a121a3a2a9ed76ef81c961e34f3d90e818e8ce13f90ec2973c1a95156daf40"
+last_crawled_at: "2026-04-27T20:52:47.491Z"
+content_hash: "8d4aca17795efb14c263ce8f57fd4f038d5668b24aa24689d08e9088b4abe067"
 menu_path: ["PostgreSQL: Documentation: 18: 44.2. Data Values"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/plpgsql-trigger.html/index.md", "title": "PostgreSQL: Documentation: 18: 41.10.\u00a0Trigger Functions"}
-nav_next: {"path": "postgres/docs/current/plpython-database.html/index.md", "title": "PostgreSQL: Documentation: 18: 44.6.\u00a0Database Access"}
+content_language: "en"
 ---
-
 Generally speaking, the aim of PL/Python is to provide a “natural” mapping between the PostgreSQL and the Python worlds. This informs the data mapping rules described below.
 
 ### 44.2.1. Data Type Mapping [#](#PLPYTHON-DATA-TYPE-MAPPING)
 
 When a PL/Python function is called, its arguments are converted from their PostgreSQL data type to a corresponding Python type:
 
-*   PostgreSQL `boolean` is converted to Python `bool`.
+-   PostgreSQL `boolean` is converted to Python `bool`.
     
-*   PostgreSQL `smallint`, `int`, `bigint` and `oid` are converted to Python `int`.
+-   PostgreSQL `smallint`, `int`, `bigint` and `oid` are converted to Python `int`.
     
-*   PostgreSQL `real` and `double` are converted to Python `float`.
+-   PostgreSQL `real` and `double` are converted to Python `float`.
     
-*   PostgreSQL `numeric` is converted to Python `Decimal`. This type is imported from the `cdecimal` package if that is available. Otherwise, `decimal.Decimal` from the standard library will be used. `cdecimal` is significantly faster than `decimal`. In Python 3.3 and up, however, `cdecimal` has been integrated into the standard library under the name `decimal`, so there is no longer any difference.
+-   PostgreSQL `numeric` is converted to Python `Decimal`. This type is imported from the `cdecimal` package if that is available. Otherwise, `decimal.Decimal` from the standard library will be used. `cdecimal` is significantly faster than `decimal`. In Python 3.3 and up, however, `cdecimal` has been integrated into the standard library under the name `decimal`, so there is no longer any difference.
     
-*   PostgreSQL `bytea` is converted to Python `bytes`.
+-   PostgreSQL `bytea` is converted to Python `bytes`.
     
-*   All other data types, including the PostgreSQL character string types, are converted to a Python `str` (in Unicode like all Python strings).
+-   All other data types, including the PostgreSQL character string types, are converted to a Python `str` (in Unicode like all Python strings).
     
-*   For nonscalar data types, see below.
+-   For nonscalar data types, see below.
     
 
 When a PL/Python function returns, its return value is converted to the function's declared PostgreSQL return data type as follows:
 
-*   When the PostgreSQL return type is `boolean`, the return value will be evaluated for truth according to the _Python_ rules. That is, 0 and empty string are false, but notably `'f'` is true.
+-   When the PostgreSQL return type is `boolean`, the return value will be evaluated for truth according to the _Python_ rules. That is, 0 and empty string are false, but notably `'f'` is true.
     
-*   When the PostgreSQL return type is `bytea`, the return value will be converted to Python `bytes` using the respective Python built-ins, with the result being converted to `bytea`.
+-   When the PostgreSQL return type is `bytea`, the return value will be converted to Python `bytes` using the respective Python built-ins, with the result being converted to `bytea`.
     
-*   For all other PostgreSQL return types, the return value is converted to a string using the Python built-in `str`, and the result is passed to the input function of the PostgreSQL data type. (If the Python value is a `float`, it is converted using the `repr` built-in instead of `str`, to avoid loss of precision.)
+-   For all other PostgreSQL return types, the return value is converted to a string using the Python built-in `str`, and the result is passed to the input function of the PostgreSQL data type. (If the Python value is a `float`, it is converted using the `repr` built-in instead of `str`, to avoid loss of precision.)
     
     Strings are automatically converted to the PostgreSQL server encoding when they are passed to PostgreSQL.
     
-*   For nonscalar data types, see below.
+-   For nonscalar data types, see below.
     
 
 Note that logical mismatches between the declared PostgreSQL return type and the Python data type of the actual return object are not flagged; the value will be converted in any case.

@@ -5,18 +5,19 @@ canonical_url: "https://docs.deno.com/runtime/fundamentals/stability_and_release
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:47:52.140Z"
-content_hash: "d484884bcf7e55d6173f03551036c501976b8daa1edffc8fc3f0c13cc3c55d1f"
+last_crawled_at: "2026-04-27T17:22:04.512Z"
+content_hash: "41eff11d86ac8c67831672c94bfa2712307cae7ccefa1c7c4421f87afab16d8e"
 menu_path: ["Stability and releases"]
 section_path: []
+content_language: "en"
 ---
-On this page
+**On this page**
 
-*   [Release schedule, channels, and long term support](#release-schedule%2C-channels%2C-and-long-term-support)
-    *   [Release channels](#release-channels)
-    *   [Long Term Support (LTS)](#long-term-support-\(lts\))
-*   [Unstable APIs](#unstable-apis)
-*   [Standard library](#standard-library)
+-   [Release schedule, channels, and long term support](#release-schedule%2C-channels%2C-and-long-term-support)
+    -   [Release channels](#release-channels)
+    -   [Long Term Support (LTS)](#long-term-support-\(lts\))
+-   [Unstable APIs](#unstable-apis)
+-   [Standard library](#standard-library)
 
 As of Deno 1.0.0, the `Deno` namespace APIs are stable. That means we will strive to make code working under 1.0.0 continue to work in future versions.
 
@@ -30,10 +31,10 @@ Patch releases including bug fixes for the latest minor version are released as 
 
 Deno offers 4 release channels
 
-*   `stable` - a semver minor/patch release, as described above. This is **the default** distribution channel that is recommended for most users.
-*   `lts` - long term support for a particular stable release, recommended for enterprise users who prefer not to upgrade so often. See below for details.
-*   `rc` - a release candidate for the upcoming semver minor release.
-*   `canary` - an unstable release that changes multiple times per day, allows to try out latest bug fixes and new features that might end up in the `stable` channel.
+-   `stable` - a semver minor/patch release, as described above. This is **the default** distribution channel that is recommended for most users.
+-   `lts` - long term support for a particular stable release, recommended for enterprise users who prefer not to upgrade so often. See below for details.
+-   `rc` - a release candidate for the upcoming semver minor release.
+-   `canary` - an unstable release that changes multiple times per day, allows to try out latest bug fixes and new features that might end up in the `stable` channel.
 
 ### Long Term Support (LTS)
 
@@ -43,35 +44,17 @@ LTS support will be discontinued after April 30, 2026; there will be no LTS rele
 
 Deno offers an LTS (long-term support) channel. This is a minor semver version that we maintain with only backwards-compatible bug fixes.
 
-LTS release version
-
-LTS maintenance start
-
-LTS maintenance end
-
-v2.1
-
-Feb 1st, 2025
-
-Apr 30th, 2025
-
-v2.2
-
-May 1st, 2025
-
-Oct 31st, 2025
-
-v2.5
-
-Nov 1st, 2025
-
-Apr 30th, 2026
+| LTS release version | LTS maintenance start | LTS maintenance end |
+| --- | --- | --- |
+| v2.1 | Feb 1st, 2025 | Apr 30th, 2025 |
+| v2.2 | May 1st, 2025 | Oct 31st, 2025 |
+| v2.5 | Nov 1st, 2025 | Apr 30th, 2026 |
 
 LTS backports include:
 
-*   Security patches
-*   Critical bug fixes (e.g., crashes, incorrect computations)
-*   **Critical** performance improvements _may_ be backported based on severity.
+-   Security patches
+-   Critical bug fixes (e.g., crashes, incorrect computations)
+-   **Critical** performance improvements _may_ be backported based on severity.
 
 **API changes and major new features will not be backported.**
 

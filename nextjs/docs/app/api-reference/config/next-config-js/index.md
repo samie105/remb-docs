@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/app/api-reference/config/next-config-js"
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:06:43.154Z"
-content_hash: "c531ddc96ee8b2974b5c3634454d1b5a7f2de0133a0e3a053e189600d29cedcd"
+last_crawled_at: "2026-04-27T18:05:35.498Z"
+content_hash: "6bd5391a0f019267760f9565796b48d94c2b7097745bdcfdb2a5aead101564af"
 menu_path: ["next.config.js"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/api-reference/config/index.md", "title": "Configuration"}
-nav_next: {"path": "nextjs/docs/app/api-reference/config/next-config-js/adapterPath/index.md", "title": "adapterPath"}
+version: "latest"
+content_language: "en"
 ---
+[API Reference](/docs/app/api-reference)[Configuration](/docs/app/api-reference/config)next.config.js
 
 # next.config.js
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 Next.js can be configured through a `next.config.js` file in the root of your project directory (for example, by `package.json`) with a default export.
 
@@ -525,20 +526,4 @@ Learn how to use the webVitalsAttribution option to pinpoint the source of Web V
 
 ](/docs/app/api-reference/config/next-config-js/webVitalsAttribution)
 
-[Previous
-
-Configuration
-
-](/docs/app/api-reference/config)
-
-[Next
-
-adapterPath
-
-](/docs/app/api-reference/config/next-config-js/adapterPath)
-
 Was this helpful?
-
-supported.
-
-Send

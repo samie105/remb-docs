@@ -5,28 +5,29 @@ canonical_url: "https://docs.deno.com/runtime/reference/cli/test/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:56:06.499Z"
-content_hash: "a129d91e33d1b51cb2ad1387a11657a1dd803daee7c42c404ca7e6cc7537a114"
+last_crawled_at: "2026-04-27T17:33:33.758Z"
+content_hash: "2eafd70fa34afb152404b851f3df8d385bcca74400c507b5b1c5ce6b34dae903"
 menu_path: ["deno test"]
 section_path: []
+content_language: "en"
 ---
-On this page
+**On this page**
 
-*   [Running tests](#running-tests)
-*   [Permissions](#permissions)
-*   [Watch mode](#watch-mode)
-*   [Parallel execution](#parallel-execution)
-*   [Code coverage](#code-coverage)
-*   [Reporters](#reporters)
-*   [Randomize order](#randomize-order)
-*   [Leak detection](#leak-detection)
-*   [Testing code in documentation](#testing-code-in-documentation)
-*   [Type checking options](#type-checking-options)
-*   [Dependency management options](#dependency-management-options)
-*   [Options](#options)
-*   [Debugging options](#debugging-options)
-*   [Testing options](#testing-options)
-*   [File watching options](#file-watching-options)
+-   [Running tests](#running-tests)
+-   [Permissions](#permissions)
+-   [Watch mode](#watch-mode)
+-   [Parallel execution](#parallel-execution)
+-   [Code coverage](#code-coverage)
+-   [Reporters](#reporters)
+-   [Randomize order](#randomize-order)
+-   [Leak detection](#leak-detection)
+-   [Testing code in documentation](#testing-code-in-documentation)
+-   [Type checking options](#type-checking-options)
+-   [Dependency management options](#dependency-management-options)
+-   [Options](#options)
+-   [Debugging options](#debugging-options)
+-   [Testing options](#testing-options)
+-   [File watching options](#file-watching-options)
 
 Deno ships with a built-in test runner using the [`Deno.test()`](/api/deno/~/Deno.test) API. To learn how to write tests, see the [Testing fundamentals](/runtime/fundamentals/testing/) guide. For assertions, see [`@std/assert`](/runtime/reference/std/assert/) and [`@std/expect`](/runtime/reference/std/expect/).
 

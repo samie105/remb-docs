@@ -5,24 +5,24 @@ canonical_url: "https://www.prisma.io/docs/orm/prisma-client/special-fields-and-
 docset: "prisma"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:48:02.507Z"
-content_hash: "2b7f09314a9d546f0970734eddfb687e595504bdc0ef4bc79077c3b0fe6c66ce"
+last_crawled_at: "2026-04-27T19:39:36.167Z"
+content_hash: "b7bef0b570ee285d758a5f4549c48476c43a329c2ae1cd52c6b6edf0699b81b2"
 menu_path: ["Composite types"]
 section_path: []
-nav_prev: {"path": "prisma/docs/orm/prisma-client/special-fields-and-types/index.md", "title": "Fields & types"}
-nav_next: {"path": "prisma/docs/orm/prisma-client/special-fields-and-types/null-and-undefined/index.md", "title": "Null and undefined"}
+content_language: "en"
 ---
-
-[Composite types](prisma/docs/orm/prisma-schema/data-model/models/index.md), known as [embedded documents](https://www.mongodb.com/docs/manual/data-modeling/#embedded-data) in MongoDB, allow you to embed records within other records.
+[Composite types](https://www.prisma.io/docs/orm/prisma-schema/data-model/models), known as [embedded documents](https://www.mongodb.com/docs/manual/data-modeling/#embedded-data) in MongoDB, allow you to embed records within other records.
 
 This page explains how to:
 
-*   [find](#finding-records-that-contain-composite-types-with-find-and-findmany) records that contain composite types using `findFirst` and `findMany`
-*   [create](#creating-records-with-composite-types-using-create-and-createmany) new records with composite types using `create` and `createMany`
-*   [update](#changing-composite-types-within-update-and-updatemany) composite types within existing records using `update` and `updateMany`
-*   [delete](#deleting-records-that-contain-composite-types-with-delete-and-deletemany) records with composite types using `delete` and `deleteMany`
+-   [find](#finding-records-that-contain-composite-types-with-find-and-findmany) records that contain composite types using `findFirst` and `findMany`
+-   [create](#creating-records-with-composite-types-using-create-and-createmany) new records with composite types using `create` and `createMany`
+-   [update](#changing-composite-types-within-update-and-updatemany) composite types within existing records using `update` and `updateMany`
+-   [delete](#deleting-records-that-contain-composite-types-with-delete-and-deletemany) records with composite types using `delete` and `deleteMany`
 
 We’ll use this schema for the examples that follow:
+
+schema.prisma
 
 ```
 generator client {
@@ -84,21 +84,23 @@ In this schema, the `Product` model has a `Photo[]` composite type, and the `Ord
 
 There are currently some limitations when using composite types in Prisma Client:
 
-*   [`findUnique()`](prisma/docs/orm/reference/prisma-client-reference/index.md#findunique) can't filter on composite types
-*   [`aggregate`](prisma/docs/orm/prisma-client/queries/aggregation-grouping-summarizing/index.md#aggregate), [`groupBy()`](prisma/docs/orm/prisma-client/queries/aggregation-grouping-summarizing/index.md#group-by), [`count`](prisma/docs/orm/prisma-client/queries/aggregation-grouping-summarizing/index.md#count) don’t support composite operations
+-   [`findUnique()`](https://www.prisma.io/docs/orm/reference/prisma-client-reference#findunique) can't filter on composite types
+-   [`aggregate`](https://www.prisma.io/docs/orm/prisma-client/queries/aggregation-grouping-summarizing#aggregate), [`groupBy()`](https://www.prisma.io/docs/orm/prisma-client/queries/aggregation-grouping-summarizing#group-by), [`count`](https://www.prisma.io/docs/orm/prisma-client/queries/aggregation-grouping-summarizing#count) don’t support composite operations
 
 When you carry out a database read on a composite type and all of the following conditions are true, Prisma Client inserts the default value into the result:
 
-*   A field on the composite type is [required](prisma/docs/orm/prisma-schema/data-model/models/index.md#optional-and-mandatory-fields), and
-*   this field has a [default value](prisma/docs/orm/prisma-schema/data-model/models/index.md#defining-a-default-value), and
-*   this field is not present in the returned document or documents.
+-   A field on the composite type is [required](https://www.prisma.io/docs/orm/prisma-schema/data-model/models#optional-and-mandatory-fields), and
+-   this field has a [default value](https://www.prisma.io/docs/orm/prisma-schema/data-model/models#defining-a-default-value), and
+-   this field is not present in the returned document or documents.
 
 Note:
 
-*   This is the same behavior as with [model fields](prisma/docs/orm/reference/prisma-schema-reference/index.md#model-field-scalar-types).
-*   On read operations, Prisma Client inserts the default value into the result, but does not insert the default value into the database.
+-   This is the same behavior as with [model fields](https://www.prisma.io/docs/orm/reference/prisma-schema-reference#model-field-scalar-types).
+-   On read operations, Prisma Client inserts the default value into the result, but does not insert the default value into the database.
 
 In our example schema, suppose that you add a required field to `photo`. This field, `bitDepth`, has a default value:
+
+schema.prisma
 
 ```
 ...
@@ -110,7 +112,7 @@ type Photo {
 ...
 ```
 
-Suppose that you then run `npx prisma db push` to [update your database](prisma/docs/orm/reference/prisma-cli-reference/index.md#db-push) and regenerate your Prisma Client with `npx prisma generate`. Then, you run the following application code:
+Suppose that you then run `npx prisma db push` to [update your database](https://www.prisma.io/docs/orm/reference/prisma-cli-reference#db-push) and regenerate your Prisma Client with `npx prisma generate`. Then, you run the following application code:
 
 ```
 console.dir(await prisma.product.findMany({}), { depth: Infinity });
@@ -126,10 +128,10 @@ The following section describes the operations available for filtering by a sing
 
 Use the `is`, `equals`, `isNot` and `isSet` operations to change a single composite type:
 
-*   `is`: Filter results by matching composite types. Requires one or more fields to be present _(e.g. Filter orders by the street name on the shipping address)_
-*   `equals`: Filter results by matching composite types. Requires all fields to be present. _(e.g. Filter orders by the full shipping address)_
-*   `isNot`: Filter results by non-matching composite types
-*   `isSet` : Filter optional fields to include only results that have been set (either set to a value, or explicitly set to `null`). Setting this filter to `true` will exclude `undefined` results that are not set at all.
+-   `is`: Filter results by matching composite types. Requires one or more fields to be present _(e.g. Filter orders by the street name on the shipping address)_
+-   `equals`: Filter results by matching composite types. Requires all fields to be present. _(e.g. Filter orders by the full shipping address)_
+-   `isNot`: Filter results by non-matching composite types
+-   `isSet` : Filter optional fields to include only results that have been set (either set to a value, or explicitly set to `null`). Setting this filter to `true` will exclude `undefined` results that are not set at all.
 
 For example, use `is` to filter for orders with a street name of `'555 Candy Cane Lane'`:
 
@@ -205,12 +207,12 @@ const orders = await prisma.order.findMany({
 
 Use the `equals`, `isEmpty`, `every`, `some` and `none` operations to filter for multiple composite types:
 
-*   `equals`: Checks exact equality of the list
-*   `isEmpty`: Checks if the list is empty
-*   `every`: Every item in the list must match the condition
-*   `some`: One or more of the items in the list must match the condition
-*   `none`: None of the items in the list can match the condition
-*   `isSet` : Filter optional fields to include only results that have been set (either set to a value, or explicitly set to `null`). Setting this filter to `true` will exclude `undefined` results that are not set at all.
+-   `equals`: Checks exact equality of the list
+-   `isEmpty`: Checks if the list is empty
+-   `every`: Every item in the list must match the condition
+-   `some`: One or more of the items in the list must match the condition
+-   `none`: None of the items in the list can match the condition
+-   `isSet` : Filter optional fields to include only results that have been set (either set to a value, or explicitly set to `null`). Setting this filter to `true` will exclude `undefined` results that are not set at all.
 
 For example, you can use `equals` to find products with a specific list of photos (all `url`, `height` and `width` fields must match):
 
@@ -434,10 +436,10 @@ Composite types can be set, updated or removed within an `update` or `updateMany
 
 Use the `set`, `unset` `update` and `upsert` operations to change a single composite type:
 
-*   Use `set` to set a composite type, overriding any existing value
-*   Use `unset` to unset a composite type. Unlike `set: null`, `unset` removes the field entirely
-*   Use `update` to update a composite type
-*   Use `upsert` to `update` an existing composite type if it exists, and otherwise `set` the composite type
+-   Use `set` to set a composite type, overriding any existing value
+-   Use `unset` to unset a composite type. Unlike `set: null`, `unset` removes the field entirely
+-   Use `update` to update a composite type
+-   Use `upsert` to `update` an existing composite type if it exists, and otherwise `set` the composite type
 
 For example, use `update` to update a required `shippingAddress` with an `Address` composite type inside an `Order`:
 
@@ -500,7 +502,7 @@ const order = await prisma.order.update({
 });
 ```
 
-You can use [filters](prisma/docs/orm/prisma-client/special-fields-and-types/composite-types/index.md#finding-records-that-contain-composite-types-with-find-and-findmany) within `updateMany` to update all records that match a composite type. The following example uses the `is` filter to match the street name from a shipping address on a list of orders:
+You can use [filters](https://www.prisma.io/docs/orm/prisma-client/special-fields-and-types/composite-types#finding-records-that-contain-composite-types-with-find-and-findmany) within `updateMany` to update all records that match a composite type. The following example uses the `is` filter to match the street name from a shipping address on a list of orders:
 
 ```
 const orders = await prisma.order.updateMany({
@@ -525,10 +527,10 @@ const orders = await prisma.order.updateMany({
 
 Use the `set`, `push`, `updateMany` and `deleteMany` operations to change a list of composite types:
 
-*   `set`: Set an embedded list of composite types, overriding any existing list
-*   `push`: Push values to the end of an embedded list of composite types
-*   `updateMany`: Update many composite types at once
-*   `deleteMany`: Delete many composite types at once
+-   `set`: Set an embedded list of composite types, overriding any existing list
+-   `push`: Push values to the end of an embedded list of composite types
+-   `updateMany`: Update many composite types at once
+-   `deleteMany`: Delete many composite types at once
 
 For example, use `push` to add a new photo to the `photos` list:
 
@@ -628,7 +630,7 @@ const deleteProduct = await prisma.product.deleteMany({
 });
 ```
 
-You can also use [filters](prisma/docs/orm/prisma-client/special-fields-and-types/composite-types/index.md#finding-records-that-contain-composite-types-with-find-and-findmany) to delete records that match a composite type. The example below uses the `some` filter to delete products that contain a certain photo:
+You can also use [filters](https://www.prisma.io/docs/orm/prisma-client/special-fields-and-types/composite-types#finding-records-that-contain-composite-types-with-find-and-findmany) to delete records that match a composite type. The example below uses the `some` filter to delete products that contain a certain photo:
 
 ```
 const product = await prisma.product.deleteMany({
@@ -658,9 +660,9 @@ const orders = await prisma.order.findMany({
 
 Be careful when you carry out any of the following operations on a record with a composite type that has a unique constraint. In this situation, MongoDB does not enforce unique values inside a record.
 
-*   When you create the record
-*   When you add data to the record
-*   When you update data in the record
+-   When you create the record
+-   When you add data to the record
+-   When you update data in the record
 
 If your schema has a composite type with a `@@unique` constraint, MongoDB prevents you from storing the same value for the constrained value in two or more of the records that contain this composite type. However, MongoDB does does not prevent you from storing multiple copies of the same field value in a single record.
 
@@ -707,7 +709,7 @@ Note: MongoDB throws an error if you try to store the same value in two separate
 
 ### [Use Prisma ORM relations to enforce unique values in a record](#use-prisma-orm-relations-to-enforce-unique-values-in-a-record)
 
-In the example above, MongoDB did not enforce the unique constraint on a nested address name. However, you can model your data differently to enforce unique values in a record. To do so, use Prisma ORM [relations](prisma/docs/orm/prisma-schema/data-model/relations/index.md) to turn the composite type into a collection. Set a relationship to this collection and place a unique constraint on the field that you want to be unique.
+In the example above, MongoDB did not enforce the unique constraint on a nested address name. However, you can model your data differently to enforce unique values in a record. To do so, use Prisma ORM [relations](https://www.prisma.io/docs/orm/prisma-schema/data-model/relations) to turn the composite type into a collection. Set a relationship to this collection and place a unique constraint on the field that you want to be unique.
 
 In the following example, MongoDB enforces unique values in a record. There is a relation between `Mailbox` and the `Address` model. Also, the `name` field in the `Address` model has a unique constraint.
 

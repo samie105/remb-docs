@@ -5,34 +5,35 @@ canonical_url: "https://docs.deno.com/runtime/reference/cli/sandbox/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:55:30.200Z"
-content_hash: "be3bfbade6d4b6dbfbdb2a96f7d41cf0c7af7eb825882cdcce2c80f70830f345"
+last_crawled_at: "2026-04-27T17:32:47.009Z"
+content_hash: "52183390854fcbd95479e239049460d8aa0edca1dd1c0e1de8d18d93b5a85eec"
 menu_path: ["deno sandbox"]
 section_path: []
+content_language: "en"
 ---
-On this page
+**On this page**
 
-*   [Authentication](#authentication)
-*   [Global options](#global-options)
-*   [Subcommands](#subcommands)
-    *   [Create a new sandbox](#create-a-new-sandbox)
-    *   [List your sandboxes](#list-your-sandboxes)
-    *   [Kill a sandbox](#kill-a-sandbox)
-    *   [Copy files](#copy-files)
-    *   [Execute a command](#execute-a-command)
-    *   [Extend timeout](#extend-timeout)
-    *   [SSH into a sandbox](#ssh-into-a-sandbox)
-    *   [Deploy a sandbox](#deploy-a-sandbox)
-    *   [Manage volumes](#manage-volumes)
-        *   [Create a volume](#create-a-volume)
-        *   [List volumes](#list-volumes)
-        *   [Delete a volume](#delete-a-volume)
-        *   [Snapshot a volume](#snapshot-a-volume)
-    *   [Manage snapshots](#manage-snapshots)
-        *   [Create a snapshot](#create-a-snapshot)
-        *   [List snapshots](#list-snapshots)
-        *   [Delete a snapshot](#delete-a-snapshot)
-    *   [Switch organizations or apps](#switch-organizations-or-apps)
+-   [Authentication](#authentication)
+-   [Global options](#global-options)
+-   [Subcommands](#subcommands)
+    -   [Create a new sandbox](#create-a-new-sandbox)
+    -   [List your sandboxes](#list-your-sandboxes)
+    -   [Kill a sandbox](#kill-a-sandbox)
+    -   [Copy files](#copy-files)
+    -   [Execute a command](#execute-a-command)
+    -   [Extend timeout](#extend-timeout)
+    -   [SSH into a sandbox](#ssh-into-a-sandbox)
+    -   [Deploy a sandbox](#deploy-a-sandbox)
+    -   [Manage volumes](#manage-volumes)
+        -   [Create a volume](#create-a-volume)
+        -   [List volumes](#list-volumes)
+        -   [Delete a volume](#delete-a-volume)
+        -   [Snapshot a volume](#snapshot-a-volume)
+    -   [Manage snapshots](#manage-snapshots)
+        -   [Create a snapshot](#create-a-snapshot)
+        -   [List snapshots](#list-snapshots)
+        -   [Delete a snapshot](#delete-a-snapshot)
+    -   [Switch organizations or apps](#switch-organizations-or-apps)
 
 The `deno sandbox` command allows you to spin up a secure Linux microVM, designed for running untrusted code in a sandboxed environment. See the [Sandbox documentation](/sandbox/cli/) for more detailed examples of usage.
 
@@ -42,10 +43,10 @@ In order to use the `deno sandbox` command, you need to have a Deno Deploy accou
 
 ## Global options
 
-*   `-h`, `--help` - Show this help.
-*   `--token` \- Auth token to use
-*   `--config` \- Path for the config file
-*   `--org` \- The name of the organization
+-   `-h`, `--help` - Show this help.
+-   `--token` \- Auth token to use
+-   `--config` \- Path for the config file
+-   `--org` \- The name of the organization
 
 ## Subcommands
 

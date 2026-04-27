@@ -5,26 +5,12 @@ canonical_url: "https://orm.drizzle.team/docs/views"
 docset: "drizzle"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:26:21.222Z"
-content_hash: "9c8899d4ad9b9c75eabfcd21c78daf88c0c8eedc43aa0945b5f329055488110c"
+last_crawled_at: "2026-04-27T19:31:38.647Z"
+content_hash: "cc7eb1b66f913f9d2b3b1f1f54222e3da9f0cb302c024334b9a7b0294a3175b1"
 menu_path: ["Views"]
 section_path: []
-nav_prev: {"path": "drizzle/docs/sequences/index.md", "title": "Sequences"}
-nav_next: {"path": "drizzle/docs/schemas/index.md", "title": "Table schemas"}
+content_language: "en"
 ---
-
-PostgreSQL
-
-SQLite
-
-MySQL
-
-SingleStore
-
-MSSQL
-
-CockroachDB
-
 There’re several ways you can declare views with Drizzle ORM.
 
 You can declare views that have to be created or you can declare views that already exist in the database.
@@ -45,7 +31,7 @@ MSSQL
 
 CockroachDB
 
-```
+```ts
 import { pgTable, pgView, serial, text, timestamp } from "drizzle-orm/pg-core";
 
 export const user = pgTable("user", {
@@ -62,12 +48,12 @@ export const userView = pgView("user_view").as((qb) => qb.select().from(user));
 export const customersView = pgView("customers_view").as((qb) => qb.select().from(user).where(eq(user.role, "customer")));
 ```
 
-```
+```sql
 CREATE VIEW "user_view" AS SELECT * FROM "user";
 CREATE VIEW "customers_view" AS SELECT * FROM "user" WHERE "role" = 'customer';
 ```
 
-```
+```ts
 import { text, mysqlTable, mysqlView, int, timestamp } from "drizzle-orm/mysql-core";
 
 export const user = mysqlTable("user", {
@@ -84,12 +70,12 @@ export const userView = mysqlView("user_view").as((qb) => qb.select().from(user)
 export const customersView = mysqlView("customers_view").as((qb) => qb.select().from(user).where(eq(user.role, "customer")));
 ```
 
-```
+```sql
 CREATE VIEW "user_view" AS SELECT * FROM "user";
 CREATE VIEW "customers_view" AS SELECT * FROM "user" WHERE "role" = 'customer';
 ```
 
-```
+```ts
 import { integer, text, sqliteView, sqliteTable } from "drizzle-orm/sqlite-core";
 
 export const user = sqliteTable("user", {
@@ -106,12 +92,12 @@ export const userView = sqliteView("user_view").as((qb) => qb.select().from(user
 export const customersView = sqliteView("customers_view").as((qb) => qb.select().from(user).where(eq(user.role, "customer")));
 ```
 
-```
+```sql
 CREATE VIEW "user_view" AS SELECT * FROM "user";
 CREATE VIEW "customers_view" AS SELECT * FROM "user" WHERE "role" = 'customer';
 ```
 
-```
+```ts
 import { mssqlTable, mssqlView, int, text, timestamp } from "drizzle-orm/mssql-core";
 
 export const user = mssqlTable("user", {
@@ -128,14 +114,14 @@ export const userView = mssqlView("user_view").as((qb) => qb.select().from(user)
 export const customersView = mssqlView("customers_view").as((qb) => qb.select().from(user).where(eq(user.role, "customer")));
 ```
 
-```
+```sql
 CREATE VIEW [user_view] AS (SELECT * FROM "user");
 CREATE VIEW [customers_view] AS (SELECT * FROM "user" WHERE "role" = 'customer');
 ```
 
 If you need a subset of columns you can use `.select({ ... })` method in query builder, like this:
 
-```
+```ts
 export const customersView = mssqlView("customers_view").as((qb) => {
   return qb
     .select({
@@ -147,11 +133,11 @@ export const customersView = mssqlView("customers_view").as((qb) => {
 });
 ```
 
-```
+```sql
 CREATE VIEW [customers_view] AS (SELECT "id", "name", "email" FROM "user" WHERE "role" = 'customer');
 ```
 
-```
+```ts
 import { cockroachTable, cockroachView, int4, text, timestamp } from "drizzle-orm/cockroach-core";
 
 export const user = cockroachTable("user", {
@@ -168,7 +154,7 @@ export const userView = cockroachView("user_view").as((qb) => qb.select().from(u
 export const customersView = cockroachView("customers_view").as((qb) => qb.select().from(user).where(eq(user.role, "customer")));
 ```
 
-```
+```sql
 CREATE VIEW "user_view" AS SELECT * FROM "user";
 CREATE VIEW "customers_view" AS SELECT * FROM "user" WHERE "role" = 'customer';
 ```
@@ -185,7 +171,7 @@ MSSQL
 
 CockroachDB
 
-```
+```ts
 import { pgTable, pgView, serial, text, timestamp, QueryBuilder} from "drizzle-orm/pg-core";
 
 const qb = new QueryBuilder();
@@ -204,12 +190,12 @@ export const userView = pgView("user_view").as(qb.select().from(user));
 export const customersView = pgView("customers_view").as(qb.select().from(user).where(eq(user.role, "customer")));
 ```
 
-```
+```sql
 CREATE VIEW "user_view" AS SELECT * FROM "user";
 CREATE VIEW "customers_view" AS SELECT * FROM "user" WHERE "role" = 'customer';
 ```
 
-```
+```ts
 import { text, mysqlTable, mysqlView, int, timestamp, QueryBuilder } from "drizzle-orm/mysql-core";
 
 const qb = new QueryBuilder();
@@ -228,12 +214,12 @@ export const userView = mysqlView("user_view").as(qb.select().from(user));
 export const customersView = mysqlView("customers_view").as(qb.select().from(user).where(eq(user.role, "customer")));
 ```
 
-```
+```sql
 CREATE VIEW "user_view" AS SELECT * FROM "user";
 CREATE VIEW "customers_view" AS SELECT * FROM "user" WHERE "role" = 'customer';
 ```
 
-```
+```ts
 import { integer, text, sqliteView, sqliteTable, QueryBuilder } from "drizzle-orm/sqlite-core";
 
 const qb = new QueryBuilder();
@@ -252,12 +238,12 @@ export const userView = sqliteView("user_view").as((qb) => qb.select().from(user
 export const customerView = sqliteView("customers_view").as((qb) => qb.select().from(user).where(eq(user.role, "customer")));
 ```
 
-```
+```sql
 CREATE VIEW "user_view" AS SELECT * FROM "user";
 CREATE VIEW "customers_view" AS SELECT * FROM "user" WHERE "role" = 'customer';
 ```
 
-```
+```ts
 import { int, text, mssqlView, mssqlTable, QueryBuilder } from "drizzle-orm/mssql-core";
 
 const qb = new QueryBuilder();
@@ -276,12 +262,12 @@ export const userView = mssqlView("user_view").as((qb) => qb.select().from(user)
 export const customerView = mssqlView("customers_view").as((qb) => qb.select().from(user).where(eq(user.role, "customer")));
 ```
 
-```
+```sql
 CREATE VIEW [user_view] AS (SELECT * FROM "user");
 CREATE VIEW [customers_view] AS (SELECT * FROM "user" WHERE "role" = 'customer');
 ```
 
-```
+```ts
 import { cockroachTable, cockroachView, int4, text, timestamp, QueryBuilder} from "drizzle-orm/cockroach-core";
 
 const qb = new QueryBuilder();
@@ -300,7 +286,7 @@ export const userView = cockroachView("user_view").as(qb.select().from(user));
 export const customersView = cockroachView("customers_view").as(qb.select().from(user).where(eq(user.role, "customer")));
 ```
 
-```
+```sql
 CREATE VIEW "user_view" AS SELECT * FROM "user";
 CREATE VIEW "customers_view" AS SELECT * FROM "user" WHERE "role" = 'customer';
 ```
@@ -309,7 +295,7 @@ CREATE VIEW "customers_view" AS SELECT * FROM "user" WHERE "role" = 'customer';
 
 Whenever you need to declare view using a syntax that is not supported by the query builder, you can directly use `sql` operator and explicitly specify view columns schema.
 
-```
+```ts
 // regular view
 const newYorkers = pgView('new_yorkers', {
   id: serial('id').primaryKey(),
@@ -329,7 +315,7 @@ const newYorkers = pgMaterializedView('new_yorkers', {
 
 When you’re provided with a read only access to an existing view in the database you should use `.existing()` view configuration, `drizzle-kit` will ignore and will not generate a `create view` statement in the generated migration.
 
-```
+```ts
 export const user = pgTable("user", {
   id: serial(),
   name: text(),
@@ -357,35 +343,21 @@ export const trimmedUser = pgMaterializedView("trimmed_user", {
 
 ### Materialized views[](#materialized-views)
 
-PostgreSQL
-
-MySQL
-
-SQLite
-
-MSSQL
-
-Cockroach
-
 According to the official docs, PostgreSQL and CockroachDB have both **[`regular`](https://www.postgresql.org/docs/current/sql-createview.html)** and **[`materialized`](https://www.postgresql.org/docs/current/sql-creatematerializedview.html)** views.
 
 Materialized views in PostgreSQL and CockroachDB use the rule system like views do, but persist the results in a table-like form.
 
-PostgreSQL
-
-CockroachDB
-
-```
+```ts
 const newYorkers = pgMaterializedView('new_yorkers').as((qb) => qb.select().from(users).where(eq(users.cityId, 1)));
 ```
 
-```
+```sql
 CREATE MATERIALIZED VIEW "new_yorkers" AS SELECT * FROM "users";
 ```
 
 You can then refresh materialized views in the application runtime:
 
-```
+```ts
 await db.refreshMaterializedView(newYorkers);
 
 await db.refreshMaterializedView(newYorkers).concurrently();
@@ -393,17 +365,17 @@ await db.refreshMaterializedView(newYorkers).concurrently();
 await db.refreshMaterializedView(newYorkers).withNoData();
 ```
 
-```
+```ts
 const newYorkers = cockroachMaterializedView('new_yorkers').as((qb) => qb.select().from(users).where(eq(users.cityId, 1)));
 ```
 
-```
+```sql
 CREATE MATERIALIZED VIEW "new_yorkers" AS SELECT * FROM "users";
 ```
 
 You can then refresh materialized views in the application runtime:
 
-```
+```ts
 await db.refreshMaterializedView(newYorkers);
 
 await db.refreshMaterializedView(newYorkers).concurrently();
@@ -415,11 +387,7 @@ await db.refreshMaterializedView(newYorkers).withNoData();
 
 All the parameters inside the query will be inlined, instead of replaced by `$1`, `$2`, etc.
 
-PostgreSQL
-
-CockroachDB
-
-```
+```ts
 // regular view
 const newYorkers = pgView('new_yorkers')
   .with({
@@ -463,7 +431,7 @@ const newYorkers2 = pgMaterializedView('new_yorkers')
   });
 ```
 
-```
+```ts
 // regular view
 const newYorkers = cockroachView('new_yorkers')
   .as((qb) => {

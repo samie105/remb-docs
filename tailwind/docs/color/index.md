@@ -5,59 +5,13 @@ canonical_url: "https://tailwindcss.com/docs/color"
 docset: "tailwind"
 kind: "framework"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:57:15.651Z"
-content_hash: "e7a519da4202a1115683b64d503d1621e30e02a97564cff5700e3cc6012164aa"
+last_crawled_at: "2026-04-27T20:11:06.440Z"
+content_hash: "ff5b4008fcf5cae5697c2620322f702a8bd11541f6dfa44f3257b4ad3d3b4ab2"
 menu_path: ["color"]
 section_path: []
-nav_prev: {"path": "tailwind/docs/text-align/index.md", "title": "text-align"}
-nav_next: {"path": "tailwind/docs/text-decoration-line/index.md", "title": "text-decoration-line"}
+content_language: "en"
 ---
-
 Utilities for controlling the text color of an element.
-
-Class
-
-Styles
-
-`text-inherit`
-
-`color: inherit;`
-
-`text-current`
-
-`color: currentColor;`
-
-`text-transparent`
-
-`color: transparent;`
-
-`text-black`
-
-`color: var(--color-black); /* #000 */`
-
-`text-white`
-
-`color: var(--color-white); /* #fff */`
-
-`text-red-50`
-
-`color: var(--color-red-50); /* oklch(97.1% 0.013 17.38) */`
-
-`text-red-100`
-
-`color: var(--color-red-100); /* oklch(93.6% 0.032 17.717) */`
-
-`text-red-200`
-
-`color: var(--color-red-200); /* oklch(88.5% 0.062 18.334) */`
-
-`text-red-300`
-
-`color: var(--color-red-300); /* oklch(80.8% 0.114 19.571) */`
-
-`text-red-400`
-
-`color: var(--color-red-400); /* oklch(70.4% 0.191 22.216) */`
 
 ## [Examples](#examples)
 
@@ -115,7 +69,7 @@ Oh I gotta get on that [internet](https://en.wikipedia.org/wiki/Internet), I'm l
 <p class="...">  Oh I gotta get on that  <a class="underline hover:text-blue-600 dark:hover:text-blue-400" href="https://en.wikipedia.org/wiki/Internet">internet</a>,  I'm late on everything!</p>
 ```
 
-Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).
+Learn more about using variants in the [variants documentation](https://tailwindcss.com/docs/hover-focus-and-other-states).
 
 ### [Responsive design](#responsive-design)
 
@@ -125,7 +79,7 @@ Prefix a `color` utility with a breakpoint variant like `md:` to only apply the 
 <p class="text-blue-600 md:text-green-600 ...">  Lorem ipsum dolor sit amet...</p>
 ```
 
-Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).
+Learn more about using variants in the [variants documentation](https://tailwindcss.com/docs/hover-focus-and-other-states).
 
 ## [Customizing your theme](#customizing-your-theme)
 
@@ -141,4 +95,4 @@ Now the `text-regal-blue` utility can be used in your markup:
 <p class="text-regal-blue">  Lorem ipsum dolor sit amet...</p>
 ```
 
-Learn more about customizing your theme in the [theme documentation](tailwind/docs/theme/index.md#customizing-your-theme).
+Learn more about customizing your theme in the [theme documentation](https://tailwindcss.com/docs/theme#customizing-your-theme).

@@ -5,14 +5,13 @@ canonical_url: "https://www.prisma.io/docs/orm/prisma-migrate/workflows/customiz
 docset: "prisma"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:50:37.180Z"
-content_hash: "39d5fe6479e64215cf429205f56ac4076c832f4f70b683bdaca3902642624fd5"
+last_crawled_at: "2026-04-27T19:41:10.423Z"
+content_hash: "eafe8e75aea154bc85e937d4a157ced3f4c66c1f92ef1348ccd31555be53d2c5"
 menu_path: ["Customizing migrations"]
 section_path: []
-nav_prev: {"path": "prisma/docs/orm/prisma-migrate/workflows/baselining/index.md", "title": "Baselining a database"}
-nav_next: {"path": "prisma/docs/orm/prisma-migrate/workflows/development-and-production/index.md", "title": "Development and production"}
+tab_variants: ["npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","Before","After","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","Before","After","npm","pnpm","yarn","bun"]
+content_language: "en"
 ---
-
 Workflows
 
 How to edit a migration file before applying it to avoid data loss in production.
@@ -23,20 +22,22 @@ This guide explains how to edit migration files and gives some examples of use c
 
 To edit a migration file before applying it, the general procedure is the following:
 
-*   Make a schema change that requires custom SQL (for example, to preserve existing data)
-*   Create a draft migration using:
+-   Make a schema change that requires custom SQL (for example, to preserve existing data)
+-   Create a draft migration using:
 
-*   Modify the generated SQL file.
-*   Apply the modified SQL by running:
+-   Modify the generated SQL file.
+-   Apply the modified SQL by running:
 
 ### [Example: Rename a field](#example-rename-a-field)
 
 By default, renaming a field in the schema results in a migration that will:
 
-*   `CREATE` a new column (for example, `fullname`)
-*   `DROP` the existing column (for example, `name`) and the data in that column
+-   `CREATE` a new column (for example, `fullname`)
+-   `DROP` the existing column (for example, `name`) and the data in that column
 
 To actually **rename** a field and avoid data loss when you run the migration in production, you need to modify the generated migration SQL before applying it to the database. Consider the following schema fragment - the `biograpy` field is spelled wrong.
+
+schema.prisma
 
 ```
 model Profile {
@@ -61,11 +62,11 @@ model Profile {
 }
 ```
 
-*   Run the following command to create a **draft migration** that you can edit before applying to the database:
+-   Run the following command to create a **draft migration** that you can edit before applying to the database:
 
-*   Edit the draft migration as shown, changing `DROP` / `DELETE` to a single `RENAME COLUMN`:
+-   Edit the draft migration as shown, changing `DROP` / `DELETE` to a single `RENAME COLUMN`:
 
-*   Save and apply the migration:
+-   Save and apply the migration:
 
 You can use the same technique to rename a `model` - edit the generated SQL to _rename_ the table rather than drop and re-create it.
 
@@ -79,7 +80,9 @@ The pattern involves two components: your application code accessing the databas
 
 With the _expand and contract_ pattern, renaming the field `bio` to `biography` would look as follows with Prisma:
 
-*   Add the new `biography` field to your Prisma schema and create a migration
+-   Add the new `biography` field to your Prisma schema and create a migration
+
+schema.prisma
 
 ```
 model Profile {
@@ -91,8 +94,10 @@ model Profile {
 }
 ```
 
-*   _Expand_: update the application code and write to both the `bio` and `biography` fields, but continue reading from the `bio` field, and deploy the code
-*   Create an empty migration and copy existing data from the `bio` to the `biography` field
+-   _Expand_: update the application code and write to both the `bio` and `biography` fields, but continue reading from the `bio` field, and deploy the code
+-   Create an empty migration and copy existing data from the `bio` to the `biography` field
+
+migration.sql
 
 ```
 UPDATE "Profile" SET biography = bio;
@@ -102,6 +107,8 @@ UPDATE "Profile" SET biography = bio;
 5.  Update application code to **read** from the new `biography` field
 6.  Update application code to **stop writing** to the `bio` field
 7.  _Contract_: remove the `bio` from the Prisma schema, and create a migration to remove the `bio` field
+
+schema.prisma
 
 ```
 model Profile {
@@ -123,7 +130,9 @@ To learn more, check out the Data Guide article on [the expand and contract patt
 
 To change the direction of a 1-1 relation:
 
-*   Make the change in the schema:
+-   Make the change in the schema:
+
+schema.prisma
 
 ```
 model User {
@@ -141,7 +150,7 @@ model Profile {
 }
 ```
 
-*   Run the following command to create a **draft migration** that you can edit before applying to the database:
+-   Run the following command to create a **draft migration** that you can edit before applying to the database:
 
 ```
 ⚠️  There will be data loss when applying the migration:
@@ -149,8 +158,6 @@ model Profile {
 • The migration will add a unique constraint covering the columns `[profileId]` on the table `User`. If there are existing duplicate values, the migration will fail.
 ```
 
-*   Edit the draft migration as shown:
+-   Edit the draft migration as shown:
 
-*   Save and apply the migration:
-
-[Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/prisma-migrate/workflows/customizing-migrations.mdx)
+-   Save and apply the migration:

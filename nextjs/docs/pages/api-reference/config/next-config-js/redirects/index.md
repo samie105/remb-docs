@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/pages/api-reference/config/next-config-j
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:21:21.301Z"
-content_hash: "7b7b8e7ed0f7ff7734c9506a36e4c367513f0bac124b676a9c4d981c30ce2c49"
+last_crawled_at: "2026-04-27T18:20:45.630Z"
+content_hash: "8c7af228eb5539fce530c0e9b9e6b540410042f6fec2b9c8f112e1b95a3a954c"
 menu_path: ["redirects"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/pages/api-reference/config/next-config-js/reactStrictMode/index.md", "title": "reactStrictMode"}
-nav_next: {"path": "nextjs/docs/pages/api-reference/config/next-config-js/rewrites/index.md", "title": "rewrites"}
+version: "latest"
+content_language: "en"
 ---
+[Configuration](/docs/pages/api-reference/config)[next.config.js Options](/docs/pages/api-reference/config/next-config-js)redirects
 
 # redirects
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 Redirects allow you to redirect an incoming request path to a different destination path.
 
@@ -39,16 +40,16 @@ module.exports = {
 
 `redirects` is an async function that expects an array to be returned holding objects with `source`, `destination`, and `permanent` properties:
 
-*   `source` is the incoming request path pattern.
-*   `destination` is the path you want to route to.
-*   `permanent` `true` or `false` - if `true` will use the 308 status code which instructs clients/search engines to cache the redirect forever, if `false` will use the 307 status code which is temporary and is not cached.
+-   `source` is the incoming request path pattern.
+-   `destination` is the path you want to route to.
+-   `permanent` `true` or `false` - if `true` will use the 308 status code which instructs clients/search engines to cache the redirect forever, if `false` will use the 307 status code which is temporary and is not cached.
 
 > **Why does Next.js use 307 and 308?** Traditionally a 302 was used for a temporary redirect, and a 301 for a permanent redirect, but many browsers changed the request method of the redirect to `GET`, regardless of the original method. For example, if the browser made a request to `POST /v1/users` which returned status code `302` with location `/v2/users`, the subsequent request might be `GET /v2/users` instead of the expected `POST /v2/users`. Next.js uses the 307 temporary redirect, and 308 permanent redirect status codes to explicitly preserve the request method used.
 
-*   `basePath`: `false` or `undefined` - if false the `basePath` won't be included when matching, can be used for external redirects only.
-*   `locale`: `false` or `undefined` - whether the locale should not be included when matching.
-*   `has` is an array of [has objects](#header-cookie-and-query-matching) with the `type`, `key` and `value` properties.
-*   `missing` is an array of [missing objects](#header-cookie-and-query-matching) with the `type`, `key` and `value` properties.
+-   `basePath`: `false` or `undefined` - if false the `basePath` won't be included when matching, can be used for external redirects only.
+-   `locale`: `false` or `undefined` - whether the locale should not be included when matching.
+-   `has` is an array of [has objects](#header-cookie-and-query-matching) with the `type`, `key` and `value` properties.
+-   `missing` is an array of [missing objects](#header-cookie-and-query-matching) with the `type`, `key` and `value` properties.
 
 Redirects are checked before the filesystem which includes pages and `/public` files.
 
@@ -159,9 +160,9 @@ To only match a redirect when header, cookie, or query values also match the `ha
 
 `has` and `missing` items can have the following fields:
 
-*   `type`: `String` - must be either `header`, `cookie`, `host`, or `query`.
-*   `key`: `String` - the key from the selected type to match against.
-*   `value`: `String` or `undefined` - the value to check for, if undefined any value will match. A regex like string can be used to capture a specific part of the value, e.g. if the value `first-(?<paramName>.*)` is used for `first-second` then `second` will be usable in the destination with `:paramName`.
+-   `type`: `String` - must be either `header`, `cookie`, `host`, or `query`.
+-   `key`: `String` - the key from the selected type to match against.
+-   `value`: `String` or `undefined` - the value to check for, if undefined any value will match. A regex like string can be used to capture a specific part of the value, e.g. if the value `first-(?<paramName>.*)` is used for `first-second` then `second` will be usable in the destination with `:paramName`.
 
 next.config.js
 
@@ -335,29 +336,15 @@ In some rare cases, you might need to assign a custom status code for older HTTP
 
 ## Other Redirects[](#other-redirects)
 
-*   Inside [API Routes](/docs/pages/building-your-application/routing/api-routes) and [Route Handlers](/docs/app/api-reference/file-conventions/route), you can redirect based on the incoming request.
-*   Inside [`getStaticProps`](/docs/pages/building-your-application/data-fetching/get-static-props) and [`getServerSideProps`](/docs/pages/building-your-application/data-fetching/get-server-side-props), you can redirect specific pages at request-time.
+-   Inside [API Routes](/docs/pages/building-your-application/routing/api-routes) and [Route Handlers](/docs/app/api-reference/file-conventions/route), you can redirect based on the incoming request.
+-   Inside [`getStaticProps`](/docs/pages/building-your-application/data-fetching/get-static-props) and [`getServerSideProps`](/docs/pages/building-your-application/data-fetching/get-server-side-props), you can redirect specific pages at request-time.
 
 ## Version History[](#version-history)
 
-Version
-
-Changes
-
-`v13.3.0`
-
-`missing` added.
-
-`v10.2.0`
-
-`has` added.
-
-`v9.5.0`
-
-`redirects` added.
+| Version | Changes |
+| --- | --- |
+| `v13.3.0` | `missing` added. |
+| `v10.2.0` | `has` added. |
+| `v9.5.0` | `redirects` added. |
 
 Was this helpful?
-
-supported.
-
-Send

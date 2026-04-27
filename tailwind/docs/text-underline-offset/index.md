@@ -5,45 +5,51 @@ canonical_url: "https://tailwindcss.com/docs/text-underline-offset"
 docset: "tailwind"
 kind: "framework"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:58:29.739Z"
-content_hash: "fa42c5ec4f496fa4648217473c578fa81276b2a7b1d6cf9cd835e02c871702c1"
+last_crawled_at: "2026-04-27T20:12:49.654Z"
+content_hash: "65c499e4daad7cf6e456732e5e6eeee631f7e4e23041075a63241b1c0ff9fe3d"
 menu_path: ["text-underline-offset"]
 section_path: []
-nav_prev: {"path": "tailwind/docs/text-decoration-thickness/index.md", "title": "text-decoration-thickness"}
-nav_next: {"path": "tailwind/docs/text-transform/index.md", "title": "text-transform"}
+content_language: "en"
 ---
+[](/)
+
+[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
+
+1.  Typography
+2.  text-underline-offset
+
+Typography
 
 # text-underline-offset
 
 Utilities for controlling the offset of a text underline.
 
-Class
-
-Styles
-
-`underline-offset-<number>`
-
+| Class | Styles |
+| --- | --- |
+| `underline-offset-<number>` | 
 `text-underline-offset: <number>px;`
 
-`-underline-offset-<number>`
+ |
+| `-underline-offset-<number>` | 
 
 `text-underline-offset: calc(<number>px * -1);`
 
-`underline-offset-auto`
+ |
+| `underline-offset-auto` | 
 
 `text-underline-offset: auto;`
 
-`underline-offset-(<custom-property>)`
+ |
+| `underline-offset-(<custom-property>)` | 
 
 `text-underline-offset: var(<custom-property>);`
 
-`underline-offset-[<value>]`
+ |
+| `underline-offset-[<value>]` | 
 
 `text-underline-offset: <value>;`
 
-## [Examples](#examples)
-
-### [Basic example](#basic-example)
+ |
 
 Use `underline-offset-<number>` utilities like `underline-offset-2` and `underline-offset-4` to change the offset of a text underline:
 
@@ -67,8 +73,6 @@ The quick brown fox jumps over the lazy dog.
 <p class="underline underline-offset-1">The quick brown fox...</p><p class="underline underline-offset-2">The quick brown fox...</p><p class="underline underline-offset-4">The quick brown fox...</p><p class="underline underline-offset-8">The quick brown fox...</p>
 ```
 
-### [Using a custom value](#using-a-custom-value)
-
 Use the `underline-offset-[<value>]` syntax to set the text underline offset based on a completely custom value:
 
 ```
@@ -83,8 +87,6 @@ For CSS variables, you can also use the `underline-offset-(<custom-property>)` s
 
 This is just a shorthand for `underline-offset-[var(<custom-property>)]` that adds the `var()` function for you automatically.
 
-### [Responsive design](#responsive-design)
-
 Prefix a `text-underline-offset` utility with a breakpoint variant like `md:` to only apply the utility at medium screen sizes and above:
 
 ```
@@ -95,11 +97,11 @@ Learn more about using variants in the [variants documentation](/docs/hover-focu
 
 ### On this page
 
-*   [Quick reference](#quick-reference)
-*   [Examples](#examples)
-    *   [Basic example](#basic-example)
-    *   [Using a custom value](#using-a-custom-value)
-    *   [Responsive design](#responsive-design)
+-   [Quick reference](#quick-reference)
+-   [Examples](#examples)
+    -   [Basic example](#basic-example)
+    -   [Using a custom value](#using-a-custom-value)
+    -   [Responsive design](#responsive-design)
 
 ![Build UIs that don’t suck — 5-day mini-course](/_next/static/media/course-promo.d3d6bc78.jpg)
 

@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/app/api-reference/config/next-config-js/
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:06:53.383Z"
-content_hash: "8347cc753215a4125ce3791649d43c003af4e8e93f97b92f2d7e8b9253cb9468"
+last_crawled_at: "2026-04-27T18:05:48.857Z"
+content_hash: "1b363e1820dd02f76fdd764d34f2c0c8985f9d96e32253c2c2ac6f8623f6e583"
 menu_path: ["assetPrefix"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/api-reference/config/next-config-js/appDir/index.md", "title": "appDir"}
-nav_next: {"path": "nextjs/docs/app/api-reference/config/next-config-js/authInterrupts/index.md", "title": "authInterrupts"}
+version: "latest"
+content_language: "en"
 ---
+[Configuration](/docs/app/api-reference/config)[next.config.js](/docs/app/api-reference/config/next-config-js)assetPrefix
 
 # assetPrefix
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 > **Attention**: [Deploying to Vercel](/docs/app/getting-started/deploying) automatically configures a global CDN for your Next.js project. You do not need to manually setup an Asset Prefix.
 
@@ -61,22 +62,6 @@ The exact configuration for uploading your files to a given CDN will depend on y
 
 While `assetPrefix` covers requests to `_next/static`, it does not influence the following paths:
 
-*   Files in the [public](/docs/app/api-reference/file-conventions/public-folder) folder; if you want to serve those assets over a CDN, you'll have to introduce the prefix yourself
-
-[Previous
-
-appDir
-
-](/docs/app/api-reference/config/next-config-js/appDir)
-
-[Next
-
-authInterrupts
-
-](/docs/app/api-reference/config/next-config-js/authInterrupts)
+-   Files in the [public](/docs/app/api-reference/file-conventions/public-folder) folder; if you want to serve those assets over a CDN, you'll have to introduce the prefix yourself
 
 Was this helpful?
-
-supported.
-
-Send

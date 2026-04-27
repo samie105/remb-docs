@@ -5,15 +5,16 @@ canonical_url: "https://docs.deno.com/runtime/reference/std/ini/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:03:13.042Z"
-content_hash: "bad2315ed012306b0dda1f066a3c7825bee118b6a14d134a2686b2a30412e09b"
+last_crawled_at: "2026-04-27T17:43:38.514Z"
+content_hash: "4a79ba1d0f066ffc32c8ffb0869c90f01ec1880c20df80fa65e8333e8f965cf1"
 menu_path: ["@std/ini"]
 section_path: []
+content_language: "en"
 ---
-On this page
+**On this page**
 
-*   [Overview](#overview)
-    *   [Add to your project](#add-to-your-project)
+-   [Overview](#overview)
+    -   [Add to your project](#add-to-your-project)
 
 Unstable
 

@@ -5,14 +5,12 @@ canonical_url: "https://www.postgresql.org/docs/current/spi-visibility.html"
 docset: "postgres"
 kind: "database"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:36:11.037Z"
-content_hash: "4df6917d8bf10abc102a8301c26e1a03e85082c2439806364d8eefc301f9ad2d"
+last_crawled_at: "2026-04-27T20:43:41.625Z"
+content_hash: "5340fb361a2454f3abd95f1e3fa540b48721bebc116202266c675c116ac899bb"
 menu_path: ["PostgreSQL: Documentation: 18: 45.5. Visibility of Data Changes"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/spi-transaction.html/index.md", "title": "PostgreSQL: Documentation: 18: 45.4.\u00a0Transaction Management"}
-nav_next: {"path": "postgres/docs/current/sql-alterdefaultprivileges.html/index.md", "title": "PostgreSQL: Documentation: 18: ALTER DEFAULT PRIVILEGES"}
+content_language: "en"
 ---
-
 February 26, 2026: [PostgreSQL 18.3, 17.9, 16.13, 15.17, and 14.22 Released!](/about/news/postgresql-183-179-1613-1517-and-1422-released-3246/)
 
 [Documentation](/docs/ "Documentation") → [PostgreSQL 18](/docs/18/index.html)
@@ -27,17 +25,17 @@ Unsupported versions: [13](/docs/13/spi-visibility.html "PostgreSQL 13 - 45.5. 
 
 The following rules govern the visibility of data changes in functions that use SPI (or any other C function):
 
-*   During the execution of an SQL command, any data changes made by the command are invisible to the command itself. For example, in:
+-   During the execution of an SQL command, any data changes made by the command are invisible to the command itself. For example, in:
     
     INSERT INTO a SELECT \* FROM a;
     
     the inserted rows are invisible to the `SELECT` part.
     
-*   Changes made by a command C are visible to all commands that are started after C, no matter whether they are started inside C (during the execution of C) or after C is done.
+-   Changes made by a command C are visible to all commands that are started after C, no matter whether they are started inside C (during the execution of C) or after C is done.
     
-*   Commands executed via SPI inside a function called by an SQL command (either an ordinary function or a trigger) follow one or the other of the above rules depending on the read/write flag passed to SPI. Commands executed in read-only mode follow the first rule: they cannot see changes of the calling command. Commands executed in read-write mode follow the second rule: they can see all changes made so far.
+-   Commands executed via SPI inside a function called by an SQL command (either an ordinary function or a trigger) follow one or the other of the above rules depending on the read/write flag passed to SPI. Commands executed in read-only mode follow the first rule: they cannot see changes of the calling command. Commands executed in read-write mode follow the second rule: they can see all changes made so far.
     
-*   All standard procedural languages set the SPI read-write mode depending on the volatility attribute of the function. Commands of `STABLE` and `IMMUTABLE` functions are done in read-only mode, while commands of `VOLATILE` functions are done in read-write mode. While authors of C functions are able to violate this convention, it's unlikely to be a good idea to do so.
+-   All standard procedural languages set the SPI read-write mode depending on the volatility attribute of the function. Commands of `STABLE` and `IMMUTABLE` functions are done in read-only mode, while commands of `VOLATILE` functions are done in read-write mode. While authors of C functions are able to violate this convention, it's unlikely to be a good idea to do so.
     
 
 The next section contains an example that illustrates the application of these rules.

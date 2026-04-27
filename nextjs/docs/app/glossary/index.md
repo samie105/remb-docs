@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/app/glossary"
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:13:53.706Z"
-content_hash: "7bfd6685bf8c1f74599da4074ff37bce23b724fee24d21e64a049e5eaf559b64"
+last_crawled_at: "2026-04-27T18:12:39.759Z"
+content_hash: "0b0f2b9a1cab62658afdf3c03eb8277503823eb4e7c6292d18624ccd65d1f687"
 menu_path: ["Next.js Glossary"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/api-reference/turbopack/index.md", "title": "Turbopack"}
-nav_next: {"path": "nextjs/docs/pages/getting-started/index.md", "title": "Getting Started - Pages Router"}
+version: "latest"
+content_language: "en"
 ---
+[Next.js Docs](/docs)[App Router](/docs/app)Glossary
 
 # Next.js Glossary
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 # A[](#a)
 
@@ -46,8 +47,6 @@ JavaScript bundles sent to the browser. Next.js splits these automatically based
 ## Client Component[](#client-component)
 
 A React component that runs in the browser. In Next.js, Client Components can also be rendered on the server during initial page generation. They can use state, effects, event handlers, and browser APIs, and are marked with the [`"use client"` directive](#use-client-directive) at the top of a file. Learn more in [Server and Client Components](/docs/app/getting-started/server-and-client-components).
-
-## Client-side navigation[](#client-side-navigation)
 
 A navigation technique where the page content updates dynamically without a full page reload. Next.js uses client-side navigation with the [`<Link>` component](/docs/app/api-reference/components/link), keeping shared layouts interactive and preserving browser state. Learn more in [Linking and Navigating](/docs/app/getting-started/linking-and-navigating#client-side-transitions).
 
@@ -195,10 +194,10 @@ Sending users from one URL to another. In Next.js, redirects can be configured i
 
 Functions that access request-specific data, causing a component to opt into [dynamic rendering](#dynamic-rendering). These include:
 
-*   [`cookies()`](/docs/app/api-reference/functions/cookies) - Access request cookies
-*   [`headers()`](/docs/app/api-reference/functions/headers) - Access request headers
-*   [`searchParams`](/docs/app/api-reference/file-conventions/page#searchparams-optional) - Access URL query parameters
-*   [`draftMode()`](/docs/app/api-reference/functions/draft-mode) - Enable or check draft mode
+-   [`cookies()`](/docs/app/api-reference/functions/cookies) - Access request cookies
+-   [`headers()`](/docs/app/api-reference/functions/headers) - Access request headers
+-   [`searchParams`](/docs/app/api-reference/file-conventions/page#searchparams-optional) - Access URL query parameters
+-   [`draftMode()`](/docs/app/api-reference/functions/draft-mode) - Enable or check draft mode
 
 ## Runtime rendering[](#runtime-rendering)
 
@@ -296,20 +295,4 @@ A directive that marks a function as a [Server Function](#server-function) that 
 
 After a new version of your application is deployed, clients that are still active may reference JavaScript, CSS, or data from an older build. This mismatch between client and server versions is called version skew, and it can cause missing assets, Server Action errors, and navigation failures. Next.js uses [`deploymentId`](/docs/app/api-reference/config/next-config-js/deploymentId) to detect and handle version skew. Learn more in [Self-Hosting - Version Skew](/docs/app/guides/self-hosting#version-skew).
 
-[Previous
-
-Turbopack
-
-](/docs/app/api-reference/turbopack)
-
-[Next
-
-Architecture
-
-](/docs/architecture)
-
 Was this helpful?
-
-supported.
-
-Send

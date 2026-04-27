@@ -5,14 +5,12 @@ canonical_url: "https://orm.drizzle.team/docs/latest-releases/drizzle-orm-v0110"
 docset: "drizzle"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:10:07.135Z"
-content_hash: "049a0206399e82ac7f9b567d67496d656761ae45ab1dc65f65265052860d1c83"
+last_crawled_at: "2026-04-27T19:07:40.603Z"
+content_hash: "177503c2885fe653b64d294a5ab3638370a29b4a808890743507d1e1fad4841d"
 menu_path: ["Drizzle ORM - DrizzleORM v0.11.0 release"]
 section_path: []
-nav_prev: {"path": "drizzle/docs/latest-releases/drizzle-kit-v0232/index.md", "title": "Drizzle ORM - Drizzle Kit v0.23.2 release"}
-nav_next: {"path": "drizzle/docs/latest-releases/drizzle-orm-v0162/index.md", "title": "Drizzle ORM - DrizzleORM v0.16.2 release"}
+content_language: "en"
 ---
-
 DrizzleORM v0.11.0 release
 
 Jul 20, 2022
@@ -21,7 +19,7 @@ DrizzleORM - is an open source TypeScript ORM, supports PostgreSQL and about to 
 
 With drizzle you have a fully typed SQL schema in-code which benefits you in multiple different major ways, which I’ll cover later
 
-```
+```ts
 // declaring enum in database
 export const popularityEnum = createEnum({ alias: 'popularity', values: ['unknown', 'known', 'popular'] });
 
@@ -53,7 +51,7 @@ export class CitiesTable extends PgTable<CitiesTable> {
 
 This is quick start example of how you connect to the database and make your first query with typed result
 
-```
+```ts
 import { drizzle, PgTable } from 'drizzle-orm'
 
 export class UsersTable extends PgTable<UsersTable> {
@@ -75,7 +73,7 @@ const users: User[] = await usersTable.select().execute();
 
 This is how you use `WHERE` statement with filters, run partial select queries, use `limit/offset` and `orderBy`
 
-```
+```ts
 await table.select().where(
   eq(table.id, 42)
 ).execute();
@@ -104,7 +102,7 @@ await table.select().orderBy((table) => table.name, Order.DESC)
 
 This is how you run `inserts`, `updates` and `deletes`
 
-```
+```ts
 const result = await usersTable.insert({
   name: "Andrew",
   createdAt: new Date(),
@@ -130,7 +128,7 @@ await usersTable.delete()
 
 One of the most powerful features we have in our ORM are fully typed joins, compiler won’t let you make a mistake
 
-```
+```ts
 const usersTable = new UsersTable(db);
 const citiesTable = new CitiesTable(db);
 
@@ -144,7 +142,7 @@ const citiesWithUsers: { city: City, user: User }[] = result.map((city, user) =>
 
 Here’s a `many to many` relationship example
 
-```
+```ts
 export class UsersTable extends PgTable<UsersTable> {
   id = this.serial("id").primaryKey();
     name = this.varchar("name");
@@ -176,7 +174,7 @@ Last but not least are migrations. We’ve implemented a CLI tool for automatic 
 
 For a typescript schema below
 
-```
+```ts
 import { PgTable } from "drizzle-orm";
 
 export class UsersTable extends PgTable<UsersTable> {
@@ -201,7 +199,7 @@ export class AuthOtpTable extends PgTable<AuthOtpTable> {
 }
 ```
 
-```
+```sql
 -- SQL migration
 CREATE TABLE IF NOT EXISTS auth_otp (
     "id" SERIAL PRIMARY KEY,

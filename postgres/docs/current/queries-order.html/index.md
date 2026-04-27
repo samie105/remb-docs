@@ -5,14 +5,12 @@ canonical_url: "https://www.postgresql.org/docs/current/queries-order.html"
 docset: "postgres"
 kind: "database"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:40:23.686Z"
-content_hash: "c4ff00657185a90fbed01f04a78bc497ac8a273b0b17a52374368e8d47d20c53"
+last_crawled_at: "2026-04-27T20:44:57.506Z"
+content_hash: "6fb73ad961f70f9491543f5d893b8d798711c6202b8796d2c080d73364267b53"
 menu_path: ["PostgreSQL: Documentation: 18: 7.5. Sorting Rows (ORDER BY)"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/protocol-replication.html/index.md", "title": "PostgreSQL: Documentation: 18: 54.4.\u00a0Streaming Replication Protocol"}
-nav_next: {"path": "postgres/docs/current/queries-overview.html/index.md", "title": "PostgreSQL: Documentation: 18: 7.1.\u00a0Overview"}
+content_language: "en"
 ---
-
 After a query has produced an output table (after the select list has been processed) it can optionally be sorted. If sorting is not chosen, the rows will be returned in an unspecified order. The actual order in that case will depend on the scan and join plan types and the order on disk, but it must not be relied on. A particular output ordering can only be guaranteed if the sort step is explicitly chosen.
 
 The `ORDER BY` clause specifies the sort order:
@@ -44,9 +42,3 @@ SELECT a + b AS sum, c FROM table1 ORDER BY sum + c;          -- wrong
 This restriction is made to reduce ambiguity. There is still ambiguity if an `ORDER BY` item is a simple name that could match either an output column name or a column from the table expression. The output column is used in such cases. This would only cause confusion if you use `AS` to rename an output column to match some other table column's name.
 
 `ORDER BY` can be applied to the result of a `UNION`, `INTERSECT`, or `EXCEPT` combination, but in this case it is only permitted to sort by output column names or numbers, not by expressions.
-
-  
-
-* * *
-
-[\[6\]](#id-1.5.6.9.5.10) Actually, PostgreSQL uses the _default B-tree operator class_ for the expression's data type to determine the sort ordering for `ASC` and `DESC`. Conventionally, data types will be set up so that the `<` and `>` operators correspond to this sort ordering, but a user-defined data type's designer could choose to do something different.

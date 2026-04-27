@@ -5,15 +5,16 @@ canonical_url: "https://docs.deno.com/runtime/reference/std/http/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:02:56.171Z"
-content_hash: "081bdb79ec73076ab3f76de8b917550fdf19472a5dd9680e77ec33a57cbca6bf"
+last_crawled_at: "2026-04-27T17:43:18.849Z"
+content_hash: "2baa9e84ea8896c3c8b208f8750b966f5eda83204cb1fe528f939bf6fd57ddf2"
 menu_path: ["@std/http"]
 section_path: []
+content_language: "en"
 ---
-On this page
+**On this page**
 
-*   [Overview](#overview)
-    *   [Add to your project](#add-to-your-project)
+-   [Overview](#overview)
+    -   [Add to your project](#add-to-your-project)
 
 ## Overview
 
@@ -51,7 +52,7 @@ A set of functions which can be used to negotiate content types, encodings and l
 
 ## User agent handling
 
-The [`UserAgent`](https://jsr.io/@std/http@1.0.25/doc/~/UserAgent) class provides user agent string parsing, allowing a user agent flag to be semantically understood.
+The [`UserAgent`](https://jsr.io/@std/http@1.1.0/doc/~/UserAgent) class provides user agent string parsing, allowing a user agent flag to be semantically understood.
 
 For example to integrate the user agent provided in the header `User-Agent` in an http request would look like this:
 

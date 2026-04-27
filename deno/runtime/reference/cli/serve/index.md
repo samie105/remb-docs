@@ -5,27 +5,28 @@ canonical_url: "https://docs.deno.com/runtime/reference/cli/serve/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:56:04.856Z"
-content_hash: "61bb1a7bfe7868f754435fed34fab9aed3703c23bf3be3be81e63fc12b80de5d"
+last_crawled_at: "2026-04-27T17:33:00.215Z"
+content_hash: "b6c8fa038c98a7d65b83f0044a604b9aa5925234a091e3e947e055e57128f11a"
 menu_path: ["deno serve"]
 section_path: []
+content_language: "en"
 ---
-On this page
+**On this page**
 
-*   [Basic usage](#basic-usage)
-*   [Default export shape](#default-export-shape)
-    *   [fetch (required)](#fetch-\(required\))
-    *   [onListen (optional)](#onlisten-\(optional\))
-*   [Routing requests](#routing-requests)
-*   [Binding to a hostname](#binding-to-a-hostname)
-*   [Horizontal scaling](#horizontal-scaling)
-*   [Watch mode](#watch-mode)
-*   [Permissions](#permissions)
-*   [Type checking options](#type-checking-options)
-*   [Dependency management options](#dependency-management-options)
-*   [Options](#options)
-*   [Debugging options](#debugging-options)
-*   [File watching options](#file-watching-options)
+-   [Basic usage](#basic-usage)
+-   [Default export shape](#default-export-shape)
+    -   [fetch (required)](#fetch-\(required\))
+    -   [onListen (optional)](#onlisten-\(optional\))
+-   [Routing requests](#routing-requests)
+-   [Binding to a hostname](#binding-to-a-hostname)
+-   [Horizontal scaling](#horizontal-scaling)
+-   [Watch mode](#watch-mode)
+-   [Permissions](#permissions)
+-   [Type checking options](#type-checking-options)
+-   [Dependency management options](#dependency-management-options)
+-   [Options](#options)
+-   [Debugging options](#debugging-options)
+-   [File watching options](#file-watching-options)
 
 `deno serve` runs a file as an HTTP server using [`Deno.serve()`](/api/deno/~/Deno.serve). The file must export a default object with a `fetch` handler. For a full guide on building HTTP servers, see [Writing an HTTP Server](/runtime/fundamentals/http_server/).
 

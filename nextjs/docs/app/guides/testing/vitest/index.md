@@ -5,17 +5,19 @@ canonical_url: "https://nextjs.org/docs/app/guides/testing/vitest"
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:16:44.422Z"
-content_hash: "d46a144732ac695a6acc4e8f5357dfb295e834b5e54d49bda4e8701ffb4d4481"
+last_crawled_at: "2026-04-27T18:16:06.424Z"
+content_hash: "90b29c2cd7ceb4d5233b95c2b73f3ff3f296459ff5e57142e4694d550df21d4f"
 menu_path: ["How to set up Vitest with Next.js"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/guides/testing/playwright/index.md", "title": "How to set up Playwright with Next.js"}
-nav_next: {"path": "nextjs/docs/app/guides/third-party-libraries/index.md", "title": "How to optimize third-party libraries"}
+version: "latest"
+tab_variants: ["pnpm","npm","yarn","bun","pnpm","npm","yarn","bun","pnpm","npm","yarn","bun"]
+content_language: "en"
 ---
+[Guides](/docs/app/guides)[Testing](/docs/app/guides/testing)Vitest
 
 # How to set up Vitest with Next.js
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 Vitest and React Testing Library are frequently used together for **Unit Testing**. This guide will show you how to setup Vitest with Next.js and write your first tests.
 
@@ -25,7 +27,21 @@ Vitest and React Testing Library are frequently used together for **Unit Testing
 
 You can use `create-next-app` with the Next.js [with-vitest](https://github.com/vercel/next.js/tree/canary/examples/with-vitest) example to quickly get started:
 
-pnpmnpmyarnbun
+#### pnpm
+
+pnpm
+
+#### npm
+
+npm
+
+#### yarn
+
+yarn
+
+#### bun
+
+bun
 
 Terminal
 
@@ -37,7 +53,21 @@ pnpm create next-app --example with-vitest with-vitest-app
 
 To manually set up Vitest, install `vitest` and the following packages as dev dependencies:
 
-pnpmnpmyarnbun
+#### pnpm
+
+pnpm
+
+#### npm
+
+npm
+
+#### yarn
+
+yarn
+
+#### bun
+
+bun
 
 Terminal
 
@@ -51,8 +81,6 @@ pnpm add -D vitest @vitejs/plugin-react jsdom @testing-library/react @testing-li
 Create a `vitest.config.mts|js` file in the root of your project, and add the following options:
 
 vitest.config.mts
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -94,8 +122,6 @@ Check that everything is working by creating a test to check if the `<Page />` c
 
 app/page.tsx
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -112,8 +138,6 @@ export default function Page() {
 ```
 
 \_\_tests\_\_/page.test.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -134,7 +158,21 @@ test('Page', () => {
 
 Then, run the following command to run your tests:
 
-pnpmnpmyarnbun
+#### pnpm
+
+pnpm
+
+#### npm
+
+npm
+
+#### yarn
+
+yarn
+
+#### bun
+
+bun
 
 Terminal
 
@@ -146,24 +184,8 @@ pnpm test
 
 You may find these resources helpful:
 
-*   [Next.js with Vitest example](https://github.com/vercel/next.js/tree/canary/examples/with-vitest)
-*   [Vitest Docs](https://vitest.dev/guide/)
-*   [React Testing Library Docs](https://testing-library.com/docs/react-testing-library/intro/)
-
-[Previous
-
-Playwright
-
-](/docs/app/guides/testing/playwright)
-
-[Next
-
-Third Party Libraries
-
-](/docs/app/guides/third-party-libraries)
+-   [Next.js with Vitest example](https://github.com/vercel/next.js/tree/canary/examples/with-vitest)
+-   [Vitest Docs](https://vitest.dev/guide/)
+-   [React Testing Library Docs](https://testing-library.com/docs/react-testing-library/intro/)
 
 Was this helpful?
-
-supported.
-
-Send

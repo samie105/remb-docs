@@ -5,14 +5,13 @@ canonical_url: "https://www.prisma.io/docs/orm/more/comparisons/prisma-and-seque
 docset: "prisma"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:42:18.673Z"
-content_hash: "519aa31e94e1b02d0b2551505e293e05d4a4ace044f8b5b0fb6bf66cf41ab3ba"
+last_crawled_at: "2026-04-27T19:37:13.810Z"
+content_hash: "458582827947c87382aa78a582aab3315943783591af6649b68d077ff7bac32e"
 menu_path: ["Sequelize"]
 section_path: []
-nav_prev: {"path": "prisma/docs/orm/more/comparisons/prisma-and-mongoose/index.md", "title": "Mongoose"}
-nav_next: {"path": "prisma/docs/orm/more/comparisons/prisma-and-typeorm/index.md", "title": "TypeORM"}
+tab_variants: ["Using include","Fluent API","Using save","Using create","Using save","Using update","Manual","Automatic"]
+content_language: "en"
 ---
-
 Comparisons
 
 Learn how Prisma ORM compares to Sequelize
@@ -25,7 +24,7 @@ While Prisma ORM and Sequelize solve similar problems, they work in very differe
 
 **Prisma ORM** is a new kind of ORM that mitigates many problems of traditional ORMs, such as bloated model instances, mixing business with storage logic, lack of type-safety or unpredictable queries caused e.g. by lazy loading.
 
-It uses the [Prisma schema](prisma/docs/orm/prisma-schema/overview/index.md) to define application models in a declarative way. Prisma Migrate then allows to generate SQL migrations from the Prisma schema and executes them against the database. CRUD queries are provided by Prisma Client, a lightweight and entirely type-safe database client for Node.js and TypeScript.
+It uses the [Prisma schema](https://www.prisma.io/docs/orm/prisma-schema/overview) to define application models in a declarative way. Prisma Migrate then allows to generate SQL migrations from the Prisma schema and executes them against the database. CRUD queries are provided by Prisma Client, a lightweight and entirely type-safe database client for Node.js and TypeScript.
 
 ### [Fetching single objects](#fetching-single-objects)
 
@@ -317,5 +316,3 @@ const user = await prisma.user.create({
 ```
 
 **Sequelize**
-
-[Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/more/comparisons/prisma-and-sequelize.mdx)

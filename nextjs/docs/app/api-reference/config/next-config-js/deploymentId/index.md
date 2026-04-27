@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/app/api-reference/config/next-config-js/
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:07:17.622Z"
-content_hash: "dd55c44848f72cde67221da99ea08f54c1e99289d6605c1788bc97873d815ade"
+last_crawled_at: "2026-04-27T18:06:09.109Z"
+content_hash: "942a366e16e5c0c5ba78ce5a3e42a937689a1ca48c992dd8db1d9f0a9b6122cf"
 menu_path: ["deploymentId"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/api-reference/config/next-config-js/cssChunking/index.md", "title": "cssChunking"}
-nav_next: {"path": "nextjs/docs/app/api-reference/config/next-config-js/devIndicators/index.md", "title": "devIndicators"}
+version: "latest"
+content_language: "en"
 ---
+[Configuration](/docs/app/api-reference/config)[next.config.js](/docs/app/api-reference/config/next-config-js)deploymentId
 
 # deploymentId
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 The `deploymentId` option allows you to set an identifier for your deployment. This identifier is used for [version skew](/docs/app/guides/self-hosting#version-skew) protection and cache busting during rolling deployments.
 
@@ -56,9 +57,9 @@ During a rolling deployment, some server instances may be running the new versio
 
 Setting a consistent `deploymentId` per deployment ensures:
 
-*   Clients always request assets from a matching deployment version
-*   Mismatches trigger a full reload to fetch the correct assets
-*   Server Functions work correctly across deployment boundaries
+-   Clients always request assets from a matching deployment version
+-   Mismatches trigger a full reload to fetch the correct assets
+-   Server Functions work correctly across deployment boundaries
 
 ### Multi-server environments[](#multi-server-environments)
 
@@ -74,37 +75,14 @@ module.exports = {
 
 ## Version History[](#version-history)
 
-Version
-
-Changes
-
-`v14.1.4`
-
-`deploymentId` stabilized as top-level config option.
-
-`v13.4.10`
-
-`experimental.deploymentId` introduced.
+| Version | Changes |
+| --- | --- |
+| `v14.1.4` | `deploymentId` stabilized as top-level config option. |
+| `v13.4.10` | `experimental.deploymentId` introduced. |
 
 ## Related[](#related)
 
-*   [Self-Hosting - Version Skew](/docs/app/guides/self-hosting#version-skew)
-*   [generateBuildId](/docs/app/api-reference/config/next-config-js/generateBuildId)
-
-[Previous
-
-cssChunking
-
-](/docs/app/api-reference/config/next-config-js/cssChunking)
-
-[Next
-
-devIndicators
-
-](/docs/app/api-reference/config/next-config-js/devIndicators)
+-   [Self-Hosting - Version Skew](/docs/app/guides/self-hosting#version-skew)
+-   [generateBuildId](/docs/app/api-reference/config/next-config-js/generateBuildId)
 
 Was this helpful?
-
-supported.
-
-Send

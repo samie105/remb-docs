@@ -5,23 +5,25 @@ canonical_url: "https://nextjs.org/docs/app/guides/ai-agents"
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:13:58.814Z"
-content_hash: "b49c8b579a694877965c58447a6f174e851f5ad9a23465c1873016bfbf0e2f8e"
+last_crawled_at: "2026-04-27T18:12:45.330Z"
+content_hash: "16334c1e335edcc9b146a8985439c8156895c0c4fc620531da6202e7c9e03ae4"
 menu_path: ["How to set up your Next.js project for AI coding agents"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/guides/index.md", "title": "Guides"}
-nav_next: {"path": "nextjs/docs/app/guides/analytics/index.md", "title": "How to add analytics to your Next.js application"}
+version: "latest"
+tab_variants: ["pnpm","npm","yarn","bun"]
+content_language: "en"
 ---
+[App Router](/docs/app)[Guides](/docs/app/guides)AI Coding Agents
 
 # How to set up your Next.js project for AI coding agents
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 Next.js ships version-matched documentation inside the `next` package, allowing AI coding agents to reference accurate, up-to-date APIs and patterns. An `AGENTS.md` file at the root of your project directs agents to these bundled docs instead of their training data.
 
 ## How it works[](#how-it-works)
 
-When you install `next`, the Next.js documentation is bundled at `node_modules/next/dist/docs/`. The bundled docs mirror the structure of the [Next.js documentation site](nextjs/docs/index.md):
+When you install `next`, the Next.js documentation is bundled at `node_modules/next/dist/docs/`. The bundled docs mirror the structure of the [Next.js documentation site](https://nextjs.org/docs):
 
 ```
 node_modules/next/dist/docs/
@@ -44,7 +46,21 @@ The `AGENTS.md` file at the root of your project tells agents to read these bund
 
 [`create-next-app`](/docs/app/api-reference/cli/create-next-app) generates `AGENTS.md` and `CLAUDE.md` automatically. No additional setup is needed:
 
-pnpmnpmyarnbun
+#### pnpm
+
+pnpm
+
+#### npm
+
+npm
+
+#### yarn
+
+yarn
+
+#### bun
+
+bun
 
 Terminal
 
@@ -84,7 +100,7 @@ CLAUDE.md
 @AGENTS.md
 ```
 
-For earlier versions
+**For earlier versions**
 
 On version 16.1 and earlier, use the codemod to generate these files automatically:
 
@@ -114,20 +130,4 @@ Learn how to use Next.js MCP support to allow coding agents access to your appli
 
 ](/docs/app/guides/mcp)
 
-[Previous
-
-Guides
-
-](/docs/app/guides)
-
-[Next
-
-Analytics
-
-](/docs/app/guides/analytics)
-
 Was this helpful?
-
-supported.
-
-Send

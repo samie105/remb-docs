@@ -5,40 +5,34 @@ canonical_url: "https://docs.deno.com/runtime/reference/cli/repl/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:55:31.327Z"
-content_hash: "16fcfa4605f051bb19f97ffae8cfc04f713751692e44bc461bca23135671fd0c"
+last_crawled_at: "2026-04-27T17:32:14.189Z"
+content_hash: "628612176160da0baf2320bf037513cd5678a3425c609584534f386ed9bd2451"
 menu_path: ["deno repl"]
 section_path: []
+content_language: "en"
 ---
-On this page
+**On this page**
 
-*   [Special variables](#special-variables)
-*   [Special functions](#special-functions)
-*   [\--eval flag](#--eval-flag)
-*   [\--eval-file flag](#--eval-file-flag)
-    *   [Relative Import Path Resolution](#relative-import-path-resolution)
-*   [Tab completions](#tab-completions)
-*   [Keyboard shortcuts](#keyboard-shortcuts)
-*   [DENO\_REPL\_HISTORY](#deno_repl_history)
-*   [Options](#options)
-*   [Dependency management options](#dependency-management-options)
-*   [Debugging options](#debugging-options)
+-   [Special variables](#special-variables)
+-   [Special functions](#special-functions)
+-   [\--eval flag](#--eval-flag)
+-   [\--eval-file flag](#--eval-file-flag)
+    -   [Relative Import Path Resolution](#relative-import-path-resolution)
+-   [Tab completions](#tab-completions)
+-   [Keyboard shortcuts](#keyboard-shortcuts)
+-   [DENO\_REPL\_HISTORY](#deno_repl_history)
+-   [Options](#options)
+-   [Dependency management options](#dependency-management-options)
+-   [Debugging options](#debugging-options)
 
 ## Special variables
 
 The REPL provides a couple of special variables, that are always available:
 
-Identifier
-
-Description
-
-\_
-
-Yields the last evaluated expression
-
-\_error
-
-Yields the last thrown error
+| Identifier | Description |
+| --- | --- |
+| \_ | Yields the last evaluated expression |
+| \_error | Yields the last thrown error |
 
 \>\_
 
@@ -59,17 +53,10 @@ undefined
 
 The REPL provides several functions in the global scope:
 
-Function
-
-Description
-
-clear()
-
-Clears the entire terminal screen
-
-close()
-
-Close the current REPL session
+| Function | Description |
+| --- | --- |
+| clear() | Clears the entire terminal screen |
+| close() | Close the current REPL session |
 
 ## `--eval` flag
 
@@ -142,157 +129,45 @@ readTextFileSync  readFileSync      readDir           readLink          readAllS
 
 ## Keyboard shortcuts
 
-Keystroke
-
-Action
-
-Ctrl-A, Home
-
-Move cursor to the beginning of line
-
-Ctrl-B, Left
-
-Move cursor one character left
-
-Ctrl-C
-
-Interrupt and cancel the current edit
-
-Ctrl-D
-
-If line _is_ empty, signal end of line
-
-Ctrl-D, Del
-
-If line is _not_ empty, delete character under cursor
-
-Ctrl-E, End
-
-Move cursor to end of line
-
-Ctrl-F, Right
-
-Move cursor one character right
-
-Ctrl-H, Backspace
-
-Delete character before cursor
-
-Ctrl-I, Tab
-
-Next completion
-
-Ctrl-J, Ctrl-M, Enter
-
-Finish the line entry
-
-Ctrl-K
-
-Delete from cursor to end of line
-
-Ctrl-L
-
-Clear screen
-
-Ctrl-N, Down
-
-Next match from history
-
-Ctrl-P, Up
-
-Previous match from history
-
-Ctrl-R
-
-Reverse Search history (Ctrl-S forward, Ctrl-G cancel)
-
-Ctrl-T
-
-Transpose previous character with current character
-
-Ctrl-U
-
-Delete from start of line to cursor
-
-Ctrl-V, Ctrl-Q
-
-Insert the subsequent character verbatim instead of performing any Action associated with it. For example, to insert a newline while editing a multi-line history entry, press Ctrl-V then Ctrl-J (Ctrl-J is the ASCII Control Character `Line Feed`)
-
-Ctrl-W
-
-Delete word leading up to cursor (using white space as a word boundary)
-
-Ctrl-X Ctrl-U
-
-Undo
-
-Ctrl-Y
-
-Paste from Yank buffer
-
-Ctrl-Y
-
-Paste from Yank buffer (Meta-Y to paste next yank instead)
-
-Ctrl-Z
-
-Suspend (Unix only)
-
-Ctrl-\_
-
-Undo
-
-Meta-0, 1, ..., -
-
-Specify the digit to the argument. `–` starts a negative argument.
-
-Meta <
-
-Move to first entry in history
-
-Meta >
-
-Move to last entry in history
-
-Meta-B, Alt-Left
-
-Move cursor to previous word
-
-Meta-Backspace
-
-Kill from the start of the current word, or, if between words, to the start of the previous word
-
-Meta-C
-
-Capitalize the current word
-
-Meta-D
-
-Delete forwards one word
-
-Meta-F, Alt-Right
-
-Move cursor to next word
-
-Meta-L
-
-Lower-case the next word
-
-Meta-T
-
-Transpose words
-
-Meta-U
-
-Upper-case the next word
-
-Meta-Y
-
-See Ctrl-Y
-
-Ctrl-S
-
-Insert a new line
+| Keystroke | Action |
+| --- | --- |
+| Ctrl-A, Home | Move cursor to the beginning of line |
+| Ctrl-B, Left | Move cursor one character left |
+| Ctrl-C | Interrupt and cancel the current edit |
+| Ctrl-D | If line _is_ empty, signal end of line |
+| Ctrl-D, Del | If line is _not_ empty, delete character under cursor |
+| Ctrl-E, End | Move cursor to end of line |
+| Ctrl-F, Right | Move cursor one character right |
+| Ctrl-H, Backspace | Delete character before cursor |
+| Ctrl-I, Tab | Next completion |
+| Ctrl-J, Ctrl-M, Enter | Finish the line entry |
+| Ctrl-K | Delete from cursor to end of line |
+| Ctrl-L | Clear screen |
+| Ctrl-N, Down | Next match from history |
+| Ctrl-P, Up | Previous match from history |
+| Ctrl-R | Reverse Search history (Ctrl-S forward, Ctrl-G cancel) |
+| Ctrl-T | Transpose previous character with current character |
+| Ctrl-U | Delete from start of line to cursor |
+| Ctrl-V, Ctrl-Q | Insert the subsequent character verbatim instead of performing any Action associated with it. For example, to insert a newline while editing a multi-line history entry, press Ctrl-V then Ctrl-J (Ctrl-J is the ASCII Control Character `Line Feed`) |
+| Ctrl-W | Delete word leading up to cursor (using white space as a word boundary) |
+| Ctrl-X Ctrl-U | Undo |
+| Ctrl-Y | Paste from Yank buffer |
+| Ctrl-Y | Paste from Yank buffer (Meta-Y to paste next yank instead) |
+| Ctrl-Z | Suspend (Unix only) |
+| Ctrl-\_ | Undo |
+| Meta-0, 1, ..., - | Specify the digit to the argument. `–` starts a negative argument. |
+| Meta < | Move to first entry in history |
+| Meta > | Move to last entry in history |
+| Meta-B, Alt-Left | Move cursor to previous word |
+| Meta-Backspace | Kill from the start of the current word, or, if between words, to the start of the previous word |
+| Meta-C | Capitalize the current word |
+| Meta-D | Delete forwards one word |
+| Meta-F, Alt-Right | Move cursor to next word |
+| Meta-L | Lower-case the next word |
+| Meta-T | Transpose words |
+| Meta-U | Upper-case the next word |
+| Meta-Y | See Ctrl-Y |
+| Ctrl-S | Insert a new line |
 
 ## `DENO_REPL_HISTORY`
 

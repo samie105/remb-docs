@@ -5,99 +5,66 @@ canonical_url: "https://tailwindcss.com/docs/installation/using-vite"
 docset: "tailwind"
 kind: "framework"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:32:26.128Z"
-content_hash: "e8ff1c692fac59f45045a0a7d1010d161a6550a64b19628d59ad1679f7016cba"
+last_crawled_at: "2026-04-27T19:45:45.600Z"
+content_hash: "0c2b88880d03af3cd0c092dfde30533266eb6527743ec85a4cc0399368b7e666"
 menu_path: ["Get started with Tailwind CSS"]
 section_path: []
-nav_prev: {"path": "tailwind/docs/forced-color-adjust/index.md", "title": "forced-color-adjust"}
+content_language: "en"
 ---
-
 Tailwind CSS works by scanning all of your HTML files, JavaScript components, and any other templates for class names, generating the corresponding styles and then writing them to a static CSS file.
 
 It's fast, flexible, and reliable — with zero-runtime.
 
-*   ## [Using Vite](tailwind/docs/installation/using-vite/index.md)
+-   ## [Using Vite](https://tailwindcss.com/docs/installation/using-vite)
     
-*   ## [Using PostCSS](https://tailwindcss.com/docs/installation/using-postcss)
+-   ## [Using PostCSS](https://tailwindcss.com/docs/installation/using-postcss)
     
-*   ## [Tailwind CLI](https://tailwindcss.com/docs/installation/tailwind-cli)
+-   ## [Tailwind CLI](https://tailwindcss.com/docs/installation/tailwind-cli)
     
-*   ## [Framework Guides](https://tailwindcss.com/docs/installation/framework-guides)
+-   ## [Framework Guides](https://tailwindcss.com/docs/installation/framework-guides)
     
-*   ## [Play CDN](https://tailwindcss.com/docs/installation/play-cdn)
+-   ## [Play CDN](https://tailwindcss.com/docs/installation/play-cdn)
     
 
 ### Installing Tailwind CSS as a Vite plugin
 
 Installing Tailwind CSS as a Vite plugin is the most seamless way to integrate it with frameworks like Laravel, SvelteKit, React Router, Nuxt, and SolidJS.
 
-01
-
 #### Create your project
 
 Start by creating a new Vite project if you don’t have one set up already. The most common approach is to use [Create Vite](https://vite.dev/guide/#scaffolding-your-first-vite-project).
-
-Terminal
 
 ```
 npm create vite@latest my-projectcd my-project
 ```
 
-02
-
 #### Install Tailwind CSS
 
 Install `tailwindcss` and `@tailwindcss/vite` via npm.
-
-Terminal
 
 ```
 npm install tailwindcss @tailwindcss/vite
 ```
 
-03
-
 #### Configure the Vite plugin
 
 Add the `@tailwindcss/vite` plugin to your Vite configuration.
-
-vite.config.ts
 
 ```
 import { defineConfig } from 'vite'import tailwindcss from '@tailwindcss/vite'export default defineConfig({  plugins: [    tailwindcss(),  ],})
 ```
 
-04
-
 #### Import Tailwind CSS
 
 Add an `@import` to your CSS file that imports Tailwind CSS.
-
-CSS
-
-```
-@import "tailwindcss";
-```
-
-05
 
 #### Start your build process
 
 Run your build process with `npm run dev` or whatever command is configured in your `package.json` file.
 
-Terminal
-
-```
-npm run dev
-```
-
-06
-
 #### Start using Tailwind in your HTML
 
 Make sure your compiled CSS is included in the `<head>` _(your framework might handle this for you)_, then start using Tailwind’s utility classes to style your content.
-
-HTML
 
 ```
 <!doctype html><html><head>  <meta charset="UTF-8">  <meta name="viewport" content="width=device-width, initial-scale=1.0">  <link href="/src/style.css" rel="stylesheet"></head><body>  <h1 class="text-3xl font-bold underline">    Hello world!  </h1></body></html>

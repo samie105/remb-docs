@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/app/api-reference/config/next-config-js/
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:08:09.884Z"
-content_hash: "768f6bad8ec8601fa6f2631ae33b622e0def386a31536ec0f00d44a30ee4cdb7"
+last_crawled_at: "2026-04-27T18:06:58.623Z"
+content_hash: "ca3f5289c576238215ed5c21acd2811a06fca4cef064e91160229d2209e6c163"
 menu_path: ["productionBrowserSourceMaps"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/api-reference/config/next-config-js/poweredByHeader/index.md", "title": "poweredByHeader"}
-nav_next: {"path": "nextjs/docs/app/api-reference/config/next-config-js/proxyClientMaxBodySize/index.md", "title": "proxyClientMaxBodySize"}
+version: "latest"
+content_language: "en"
 ---
+[Configuration](/docs/app/api-reference/config)[next.config.js](/docs/app/api-reference/config/next-config-js)productionBrowserSourceMaps
 
 # productionBrowserSourceMaps
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 Source Maps are enabled by default during development. During production builds, they are disabled to prevent you leaking your source on the client, unless you specifically opt-in with the configuration flag.
 
@@ -31,23 +32,7 @@ module.exports = {
 
 When the `productionBrowserSourceMaps` option is enabled, the source maps will be output in the same directory as the JavaScript files. Next.js will automatically serve these files when requested.
 
-*   Adding source maps can increase `next build` time
-*   Increases memory usage during `next build`
-
-[Previous
-
-poweredByHeader
-
-](/docs/app/api-reference/config/next-config-js/poweredByHeader)
-
-[Next
-
-proxyClientMaxBodySize
-
-](/docs/app/api-reference/config/next-config-js/proxyClientMaxBodySize)
+-   Adding source maps can increase `next build` time
+-   Increases memory usage during `next build`
 
 Was this helpful?
-
-supported.
-
-Send

@@ -5,14 +5,12 @@ canonical_url: "https://www.prisma.io/docs/orm/prisma-client/using-raw-sql"
 docset: "prisma"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:49:28.104Z"
-content_hash: "907e56204a650cf9fc86fab319371c789ecb0b3b25bad67450419f7e35567faf"
+last_crawled_at: "2026-04-27T19:40:24.843Z"
+content_hash: "a7fa99db2e9e00bf5de1d2ebaad9adeecc81822c719dec0bf9384fadc869b9c9"
 menu_path: ["Write your own SQL"]
 section_path: []
-nav_prev: {"path": "prisma/docs/orm/prisma-client/type-safety/prisma-type-system/index.md", "title": "How to use Prisma ORM's type system"}
-nav_next: {"path": "prisma/docs/orm/prisma-client/using-raw-sql/raw-queries/index.md", "title": "Raw queries"}
+content_language: "en"
 ---
-
 Using Raw SQL
 
 Learn how to use raw SQL queries in Prisma Client
@@ -21,7 +19,7 @@ While the Prisma Client API aims to make all your database queries intuitive, ty
 
 This can happen for various reasons, such as the need to optimize the performance of a specific query or because your data requirements can't be fully expressed by Prisma Client's query API.
 
-In most cases, [TypedSQL](#writing-type-safe-queries-with-prisma-client-and-typedsql) allows you to express your query in SQL while still benefiting from Prisma Client's excellent user experience. However, since TypedSQL is statically typed, it may not handle certain scenarios, such as dynamically generated `WHERE` clauses. In these cases, you will need to use [`$queryRaw`](prisma/docs/orm/prisma-client/using-raw-sql/raw-queries/index.md#queryraw) or [`$executeRaw`](prisma/docs/orm/prisma-client/using-raw-sql/raw-queries/index.md#executeraw), or their unsafe counterparts.
+In most cases, [TypedSQL](#writing-type-safe-queries-with-prisma-client-and-typedsql) allows you to express your query in SQL while still benefiting from Prisma Client's excellent user experience. However, since TypedSQL is statically typed, it may not handle certain scenarios, such as dynamically generated `WHERE` clauses. In these cases, you will need to use [`$queryRaw`](https://www.prisma.io/docs/orm/prisma-client/using-raw-sql/raw-queries#queryraw) or [`$executeRaw`](https://www.prisma.io/docs/orm/prisma-client/using-raw-sql/raw-queries#executeraw), or their unsafe counterparts.
 
 ### [What is TypedSQL?](#what-is-typedsql)
 
@@ -36,13 +34,13 @@ With TypedSQL, you can:
 
 TypedSQL is particularly useful for:
 
-*   Complex reporting queries that are difficult to express using Prisma's query API
-*   Performance-critical operations that require fine-tuned SQL
-*   Leveraging database-specific features not yet supported in Prisma's API
+-   Complex reporting queries that are difficult to express using Prisma's query API
+-   Performance-critical operations that require fine-tuned SQL
+-   Leveraging database-specific features not yet supported in Prisma's API
 
 By using TypedSQL, you can write efficient, type-safe database queries without sacrificing the power and flexibility of raw SQL. This feature allows you to seamlessly integrate custom SQL queries into your Prisma-powered applications, ensuring type safety and improving developer productivity.
 
-For a detailed guide on how to get started with TypedSQL, including setup instructions and usage examples, please refer to our [TypedSQL documentation](prisma/docs/orm/prisma-client/using-raw-sql/typedsql/index.md).
+For a detailed guide on how to get started with TypedSQL, including setup instructions and usage examples, please refer to our [TypedSQL documentation](https://www.prisma.io/docs/orm/prisma-client/using-raw-sql/typedsql).
 
 While not as ergonomic as [TypedSQL](#writing-type-safe-queries-with-prisma-client-and-typedsql), raw queries are still supported and useful when TypedSQL queries are not possible due to features not yet supported in TypedSQL or when the query is dynamically generated.
 
@@ -50,10 +48,10 @@ While not as ergonomic as [TypedSQL](#writing-type-safe-queries-with-prisma-clie
 
 Prisma ORM supports four methods to execute raw SQL queries in relational databases:
 
-*   [`$queryRaw`](prisma/docs/orm/prisma-client/using-raw-sql/raw-queries/index.md#queryraw)
-*   [`$executeRaw`](prisma/docs/orm/prisma-client/using-raw-sql/raw-queries/index.md#executeraw)
-*   [`$queryRawUnsafe`](prisma/docs/orm/prisma-client/using-raw-sql/raw-queries/index.md#queryrawunsafe)
-*   [`$executeRawUnsafe`](prisma/docs/orm/prisma-client/using-raw-sql/raw-queries/index.md#executerawunsafe)
+-   [`$queryRaw`](https://www.prisma.io/docs/orm/prisma-client/using-raw-sql/raw-queries#queryraw)
+-   [`$executeRaw`](https://www.prisma.io/docs/orm/prisma-client/using-raw-sql/raw-queries#executeraw)
+-   [`$queryRawUnsafe`](https://www.prisma.io/docs/orm/prisma-client/using-raw-sql/raw-queries#queryrawunsafe)
+-   [`$executeRawUnsafe`](https://www.prisma.io/docs/orm/prisma-client/using-raw-sql/raw-queries#executerawunsafe)
 
 These commands are similar to using TypedSQL, but they are not type-safe and are written as strings in your code rather than in dedicated `.sql` files.
 
@@ -61,14 +59,12 @@ These commands are similar to using TypedSQL, but they are not type-safe and are
 
 For MongoDB, Prisma ORM supports three methods to execute raw queries:
 
-*   [`$runCommandRaw`](prisma/docs/orm/prisma-client/using-raw-sql/raw-queries/index.md#runcommandraw)
-*   [`<model>.findRaw`](prisma/docs/orm/prisma-client/using-raw-sql/raw-queries/index.md#findraw)
-*   [`<model>.aggregateRaw`](prisma/docs/orm/prisma-client/using-raw-sql/raw-queries/index.md#aggregateraw)
+-   [`$runCommandRaw`](https://www.prisma.io/docs/orm/prisma-client/using-raw-sql/raw-queries#runcommandraw)
+-   [`<model>.findRaw`](https://www.prisma.io/docs/orm/prisma-client/using-raw-sql/raw-queries#findraw)
+-   [`<model>.aggregateRaw`](https://www.prisma.io/docs/orm/prisma-client/using-raw-sql/raw-queries#aggregateraw)
 
 These methods allow you to execute raw MongoDB commands and queries, providing flexibility when you need to use MongoDB-specific features or optimizations.
 
 `$runCommandRaw` is used to execute database commands, `<model>.findRaw` is used to find documents that match a filter, and `<model>.aggregateRaw` is used for aggregation operations.
 
 Similar to raw queries in relational databases, these methods are not type-safe and require manual handling of the query results.
-
-[Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/prisma-client/using-raw-sql/index.mdx)

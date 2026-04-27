@@ -5,30 +5,20 @@ canonical_url: "https://orm.drizzle.team/docs/connect-expo-sqlite"
 docset: "drizzle"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:39:43.541Z"
-content_hash: "8c12a55fff2a2b3b4dee205e40409a434afbdac7d269b0d7e5ce7cb98a7a1c0c"
+last_crawled_at: "2026-04-27T18:29:08.207Z"
+content_hash: "e4feb205ce20675c7d6e3d0a8b225e41f67ab1caaed5cf8cdfcddf6f8c1bab4d"
 menu_path: ["Drizzle <> Expo SQLite"]
 section_path: []
-nav_prev: {"path": "drizzle/docs/connect-cloudflare-do/index.md", "title": "Drizzle <> Cloudflare Durable Objects SQLite"}
-nav_next: {"path": "drizzle/docs/connect-op-sqlite/index.md", "title": "Drizzle <> OP SQLite"}
+content_language: "en"
 ---
-
 According to the **[official website](https://expo.dev/)**, Expo is an ecosystem of tools to develop, build and ship applications on React Native. It’s powered by Hermes JavaScript runtime and Metro bundler, Drizzle Expo driver is built to natively support both.
 
 Drizzle ORM has the best in class toolkit for Expo SQLite:
 
-*   Native ORM driver for Expo SQLite ✅
-*   [Drizzle Kit](drizzle/docs/kit-overview/index.md) support for migration generation and bundling in application ✅
-*   [Drizzle Studio](https://github.com/drizzle-team/drizzle-studio-expo) dev tools plugin to browse on device database ✅
-*   Live Queries ✅
-
-npm
-
-yarn
-
-pnpm
-
-bun
+-   Native ORM driver for Expo SQLite ✅
+-   [Drizzle Kit](https://orm.drizzle.team/docs/kit-overview) support for migration generation and bundling in application ✅
+-   [Drizzle Studio](https://github.com/drizzle-team/drizzle-studio-expo) dev tools plugin to browse on device database ✅
+-   Live Queries ✅
 
 ```
 npm i drizzle-orm expo-sqlite@next
@@ -50,7 +40,7 @@ bun add drizzle-orm expo-sqlite@next
 bun add -D drizzle-kit
 ```
 
-```
+```ts
 import { drizzle } from "drizzle-orm/expo-sqlite";
 import { openDatabaseSync } from "expo-sqlite";
 
@@ -64,7 +54,7 @@ await db.select().from(users);
 
 With `useLiveQuery` hook you can make any Drizzle query reactive:
 
-```
+```ts
 import { useLiveQuery, drizzle } from 'drizzle-orm/expo-sqlite';
 import { openDatabaseSync } from 'expo-sqlite';
 import { Text } from 'react-native';
@@ -85,14 +75,14 @@ export default App;
 #### Expo SQLite migrations with Drizzle Kit[](#expo-sqlite-migrations-with-drizzle-kit)
 
 You can use Drizzle Kit for SQL migration generation.  
-Please make sure to check how [Drizzle migrations](drizzle/docs/kit-overview/index.md) work before proceeding.  
+Please make sure to check how [Drizzle migrations](https://orm.drizzle.team/docs/kit-overview) work before proceeding.  
 Expo / React Native requires you to have SQL migrations bundled into the app and we’ve got you covered.
 
 #### Install babel plugin[](#install-babel-plugin)
 
 It’s necessary to bundle SQL migration files as string directly to your bundle.
 
-```
+```shell
 npm install babel-plugin-inline-import
 ```
 
@@ -100,7 +90,7 @@ npm install babel-plugin-inline-import
 
 You will need to update `babel.config.js`, `metro.config.js` and `drizzle.config.ts` files
 
-```
+```js
 module.exports = function(api) {
   api.cache(true);
 
@@ -111,7 +101,7 @@ module.exports = function(api) {
 };
 ```
 
-```
+```js
 const { getDefaultConfig } = require('expo/metro-config');
 
 /** @type {import('expo/metro-config').MetroConfig} */
@@ -124,7 +114,7 @@ module.exports = config;
 
 Make sure to have `dialect: 'sqlite'` and `driver: 'expo'` in Drizzle Kit config
 
-```
+```ts
 import { defineConfig } from 'drizzle-kit';
 
 export default defineConfig({
@@ -139,7 +129,7 @@ export default defineConfig({
 
 After creating SQL schema file and drizzle.config.ts file, you can generate migrations
 
-```
+```bash
 npx drizzle-kit generate
 ```
 
@@ -147,7 +137,7 @@ npx drizzle-kit generate
 
 Now you need to import `migrations.js` file into your Expo/React Native app from `./drizzle` folder. You can run migrations on application startup using our custom `useMigrations` migrations hook on in `useEffect` hook manually as you want.
 
-```
+```ts
 import { drizzle } from "drizzle-orm/expo-sqlite";
 import { openDatabaseSync } from "expo-sqlite";
 import { useMigrations } from 'drizzle-orm/expo-sqlite/migrator';

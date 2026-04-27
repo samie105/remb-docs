@@ -5,15 +5,16 @@ canonical_url: "https://docs.deno.com/runtime/reference/std/cli/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:00:39.511Z"
-content_hash: "9cc094fa7cf4418d00b48738d5c2acb37f1752b4fa9f3e2474083e04a1ec4654"
+last_crawled_at: "2026-04-27T17:39:54.863Z"
+content_hash: "d8c833072ced9f2c1af021abf206295527857c81b816d15d3bbb85cd9ecb747f"
 menu_path: ["@std/cli"]
 section_path: []
+content_language: "en"
 ---
-On this page
+**On this page**
 
-*   [Overview](#overview)
-    *   [Add to your project](#add-to-your-project)
+-   [Overview](#overview)
+    -   [Add to your project](#add-to-your-project)
 
 ## Overview
 

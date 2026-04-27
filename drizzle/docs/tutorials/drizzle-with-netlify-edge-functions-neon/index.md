@@ -5,14 +5,12 @@ canonical_url: "https://orm.drizzle.team/docs/tutorials/drizzle-with-netlify-edg
 docset: "drizzle"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:23:28.022Z"
-content_hash: "f8bd73350405c589db5cefd4f18024a24a698ec41bfca6fd5dd2df1bb4658baf"
+last_crawled_at: "2026-04-27T19:27:34.092Z"
+content_hash: "1e2297926da3d4f76871d83d20ae13ccf626f2d5fc61f0b0c455fb3db58a669b"
 menu_path: ["Drizzle with Netlify Edge Functions and Neon Postgres"]
 section_path: []
-nav_prev: {"path": "drizzle/docs/tutorials/drizzle-with-neon/index.md", "title": "Drizzle with Neon Postgres"}
-nav_next: {"path": "drizzle/docs/tutorials/drizzle-with-netlify-edge-functions-supabase/index.md", "title": "Drizzle with Netlify Edge Functions and Supabase Database"}
+content_language: "en"
 ---
-
 #### Setup Neon Postgres[](#setup-neon-postgres)
 
 Log in to the [Neon Console](https://console.neon.tech/app/projects) and navigate to the Projects section. Select a project or click the `New Project` button to create a new one.
@@ -23,13 +21,13 @@ Your Neon projects come with a ready-to-use Postgres database named `neondb`. We
 
 In **Project Dashboard** section click the `Connect` button and copy your database connection string. It should look similar to this:
 
-```
+```bash
 postgres://username:password@ep-cool-darkness-123456.us-east-2.aws.neon.tech/neondb?sslmode=require
 ```
 
 Add the `DATABASE_URL` environment variable to your `.env` file, which you’ll use to connect to the Neon database.
 
-```
+```text
 DATABASE_URL=NEON_DATABASE_CONNECTION_STRING
 ```
 
@@ -39,7 +37,7 @@ Create `netlify/edge-functions` directory in the root of your project. This is w
 
 Create a function `user.ts` in the `netlify/edge-functions` directory.
 
-```
+```typescript
 import type { Context } from "@netlify/edge-functions";
 
 export default async (request: Request, context: Context) => {
@@ -55,7 +53,7 @@ The types for the `Request` and `Response` objects are in the global scope.
 
 Create a `import_map.json` file in the root of your project and add the following content:
 
-```
+```json
 {
   "imports": {
     "drizzle-orm/": "https://esm.sh/drizzle-orm/",
@@ -70,7 +68,7 @@ Read more about `import_map.json` in Netlify Edge Functions [here](https://docs.
 
 Create a `netlify.toml` file in the root of your project and add the following content:
 
-```
+```toml
 [functions]
   deno_import_map = "./import_map.json"
 
@@ -85,7 +83,7 @@ This configuration tells Netlify to use the `import_map.json` file for Deno impo
 
 Create a `schema.ts` file in the `netlify/edge-functions/common` directory and declare a table schema:
 
-```
+```typescript
 import { pgTable, serial, text, integer } from "drizzle-orm/pg-core";
 
 export const usersTable = pgTable('users_table', {
@@ -98,11 +96,11 @@ export const usersTable = pgTable('users_table', {
 
 #### Setup Drizzle config file[](#setup-drizzle-config-file)
 
-**Drizzle config** - a configuration file that is used by [Drizzle Kit](drizzle/docs/kit-overview/index.md) and contains all the information about your database connection, migration folder and schema files.
+**Drizzle config** - a configuration file that is used by [Drizzle Kit](https://orm.drizzle.team/docs/kit-overview) and contains all the information about your database connection, migration folder and schema files.
 
 Create a `drizzle.config.ts` file in the root of your project and add the following content:
 
-```
+```typescript
 import 'dotenv/config'; // remove this line if you use Node.js v20.6.0 or later
 import type { Config } from "drizzle-kit";
 
@@ -120,7 +118,7 @@ In this tutorial we will use Drizzle kit to push changes to the Neon database.
 
 #### Apply changes to the database[](#apply-changes-to-the-database)
 
-```
+```bash
 npx drizzle-kit push
 ```
 
@@ -128,13 +126,13 @@ IMPORTANT
 
 Push command is good for situations where you need to quickly test new schema designs or changes in a local development environment, allowing for fast iterations without the overhead of managing migration files.
 
-Alternatively, you can use migrations workflow. Read about it here: [Migrations](drizzle/docs/migrations/index.md).
+Alternatively, you can use migrations workflow. Read about it here: [Migrations](https://orm.drizzle.team/docs/migrations).
 
 #### Connect Drizzle ORM to your database[](#connect-drizzle-orm-to-your-database)
 
 Update your `netlify/edge-functions/user.ts` file and set up your database configuration:
 
-```
+```typescript
 import type { Context } from "@netlify/edge-functions";
 import { usersTable } from "./common/schema.ts";
 import { neon } from '@neondatabase/serverless';
@@ -158,7 +156,7 @@ You might see a red underline under the imports if you’re using VS Code. The E
 
 Run the following command to start the Netlify dev server:
 
-```
+```bash
 netlify dev
 ```
 
@@ -166,7 +164,7 @@ When you first run the command it will suggest to configure VS Code to use Edge 
 
 Open your browser and navigate to the route `/user`. You should see the user data returned from the Neon database:
 
-```
+```plaintext
 []
 ```
 
@@ -176,7 +174,7 @@ It could be an empty array if you haven’t added any data to the `users_table` 
 
 Run the following command to initialize a new Netlify project:
 
-```
+```bash
 netlify init
 ```
 
@@ -186,7 +184,7 @@ Answer the questions in the CLI to create a new Netlify project. In this tutoria
 
 Run the following command to import your environment variables into Netlify:
 
-```
+```bash
 netlify env:import .env
 ```
 
@@ -196,7 +194,7 @@ Read more about Netlify environment variables [here](https://docs.netlify.com/en
 
 Run the following command to deploy your project:
 
-```
+```bash
 netlify deploy
 ```
 
@@ -204,7 +202,7 @@ Follow the instructions in the CLI to deploy your project to Netlify. In this tu
 
 It is a [draft deployment](https://docs.netlify.com/cli/get-started/#draft-deploys) by default. To do a production deployment, run the following command:
 
-```
+```bash
 netlify deploy --prod
 ```
 

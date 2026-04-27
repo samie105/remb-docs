@@ -5,39 +5,26 @@ canonical_url: "https://orm.drizzle.team/docs/seed-versioning"
 docset: "drizzle"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:20:55.979Z"
-content_hash: "1eaf017e6ffeaef2a65b9493a558ddde78fb95ecceb99811a1559a7a39da9bba"
+last_crawled_at: "2026-04-27T19:23:32.134Z"
+content_hash: "3fe449bc990f5672ef654d632f020fdfd5e5576e68f7e04ce49709ae2d442c38"
 menu_path: ["Versioning"]
 section_path: []
-nav_prev: {"path": "drizzle/docs/seed-functions/index.md", "title": "Generators"}
-nav_next: {"path": "drizzle/docs/rqb-v2/index.md", "title": "Drizzle Queries"}
+content_language: "en"
 ---
-
 `drizzle-seed` uses versioning to manage outputs for static and dynamic data. To ensure true determinism, ensure that values remain unchanged when using the same `seed` number. If changes are made to static data sources or dynamic data generation logic, the version will be updated, allowing you to choose between sticking with the previous version or using the latest.
 
 You can upgrade to the latest `drizzle-seed` version for new features, such as additional generators, while maintaining deterministic outputs with a previous version if needed. This is particularly useful when you need to rely on existing deterministic data while accessing new functionality.
 
-```
+```ts
 await seed(db, schema, { version: '2' });
 ```
 
 ## History[](#history)
 
-api version
-
-npm version
-
-Changed generators
-
-`v1`
-
-`0.1.1`
-
-`v2 (LTS)`
-
-`0.2.1`
-
-`string()`, `interval({ isUnique: true })`
+| api version | npm version | Changed generators |
+| --- | --- | --- |
+| `v1` | `0.1.1` |  |
+| `v2 (LTS)` | `0.2.1` | `string()`, `interval({ isUnique: true })` |
 
 How it works under the hood?
 
@@ -47,27 +34,14 @@ For example, `lastName` generator was changed, and new version, `V2`, of this ge
 
 Later, `firstName` generator was changed, making `V3` version of this generator available.
 
-`V1`
-
-`V2`
-
-`V3(latest)`
-
-**LastNameGen**
-
-`LastNameGenV1`
-
-`LastNameGenV2`
-
-**FirstNameGen**
-
-`FirstNameGenV1`
-
-`FirstNameGenV3`
+|  | `V1` | `V2` | `V3(latest)` |
+| --- | --- | --- | --- |
+| **LastNameGen** | `LastNameGenV1` | `LastNameGenV2` |  |
+| **FirstNameGen** | `FirstNameGenV1` |  | `FirstNameGenV3` |
 
 ##### Use the `firstName` generator of version 3 and the `lastName` generator of version 2[](#use-the-firstname-generator-of-version-3-and-the-lastname-generator-of-version-2)
 
-```
+```ts
 await seed(db, schema);
 ```
 
@@ -75,13 +49,13 @@ If you are not ready to use latest generator version right away, you can specify
 
 ##### Use the `firstName` generator of version 1 and the `lastName` generator of version 2[](#use-the-firstname-generator-of-version-1-and-the-lastname-generator-of-version-2)
 
-```
+```ts
 await seed(db, schema, { version: '2' });
 ```
 
 ##### Use the `firstName` generator of version 1 and the `lastName` generator of version 1.[](#use-the-firstname-generator-of-version-1-and-the-lastname-generator-of-version-1)
 
-```
+```ts
 await seed(db, schema, { version: '1' });
 ```
 
@@ -95,9 +69,7 @@ An older version of the generator could produce intervals like `1 minute 60 seco
 
 You will be affected, if your table includes a unique column of type `interval`:
 
-PostgreSQL
-
-```
+```ts
 import { drizzle } from "drizzle-orm/node-postgres";
 import { pgTable, interval } from "drizzle-orm/pg-core";
 import { seed } from "drizzle-seed";
@@ -117,13 +89,7 @@ main();
 
 You will be affected, if you use the unique `interval` generator in your seeding script, as shown in the script below:
 
-PostgreSQL
-
-MySQL
-
-SQLite
-
-```
+```ts
 import { drizzle } from "drizzle-orm/node-postgres";
 import { pgTable, interval, char, varchar, text } from "drizzle-orm/pg-core";
 import { seed } from "drizzle-seed";
@@ -161,7 +127,7 @@ async function main() {
 main();
 ```
 
-```
+```ts
 import { binary, char, mysqlTable, text, varbinary, varchar } from 'drizzle-orm/mysql-core';
 import { drizzle } from 'drizzle-orm/mysql2';
 import { seed } from "drizzle-seed";
@@ -202,7 +168,7 @@ async function main() {
 main();
 ```
 
-```
+```ts
 import { blob, sqliteTable, text } from 'drizzle-orm/sqlite-core';
 import { drizzle } from 'drizzle-orm/better-sqlite3';
 import { seed } from 'drizzle-seed';
@@ -240,13 +206,7 @@ Ability to generate a unique string based on the length of the text column (e.g.
 
 You will be affected, if your table includes a column of a text-like type with a maximum length parameter or a unique column of a text-like type:
 
-PostgreSQL
-
-MySQL
-
-SQLite
-
-```
+```ts
 import { drizzle } from "drizzle-orm/node-postgres";
 import { pgTable, char, varchar, text } from "drizzle-orm/pg-core";
 import { seed } from "drizzle-seed";
@@ -269,7 +229,7 @@ async function main() {
 main();
 ```
 
-```
+```ts
 import { binary, char, mysqlTable, varbinary, varchar } from 'drizzle-orm/mysql-core';
 import { drizzle } from 'drizzle-orm/mysql2';
 import { seed } from "drizzle-seed";
@@ -294,7 +254,7 @@ async function main() {
 main();
 ```
 
-```
+```ts
 import { drizzle } from 'drizzle-orm/better-sqlite3';
 import { blob, sqliteTable, text } from 'drizzle-orm/sqlite-core';
 import { seed } from "drizzle-seed";
@@ -317,13 +277,7 @@ main();
 
 You will be affected, if you use the `string` generator in your seeding script, as shown in the script below:
 
-PostgreSQL
-
-MySQL
-
-SQLite
-
-```
+```ts
 import { drizzle } from "drizzle-orm/node-postgres";
 import { pgTable, char, varchar, text } from "drizzle-orm/pg-core";
 import { seed } from "drizzle-seed";
@@ -365,7 +319,7 @@ async function main() {
 main();
 ```
 
-```
+```ts
 import { binary, char, mysqlTable, text, varbinary, varchar } from 'drizzle-orm/mysql-core';
 import { drizzle } from 'drizzle-orm/mysql2';
 import { seed } from "drizzle-seed";
@@ -413,7 +367,7 @@ async function main() {
 main();
 ```
 
-```
+```ts
 import { blob, sqliteTable, text } from 'drizzle-orm/sqlite-core';
 import { drizzle } from 'drizzle-orm/better-sqlite3';
 import { seed } from "drizzle-seed";

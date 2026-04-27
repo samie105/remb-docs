@@ -5,49 +5,15 @@ canonical_url: "https://tailwindcss.com/docs/line-height"
 docset: "tailwind"
 kind: "framework"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:56:37.953Z"
-content_hash: "1b7f227d2e62589ad40ca1b14964d9b83c79fcb9f27132ba3a82bc7c83314a0f"
+last_crawled_at: "2026-04-27T20:09:56.421Z"
+content_hash: "1d59760ca95d8351b99758a43839b8a547937253d10fef2b338178a8afafd4f1"
 menu_path: ["line-height"]
 section_path: []
-nav_prev: {"path": "tailwind/docs/line-clamp/index.md", "title": "line-clamp"}
-nav_next: {"path": "tailwind/docs/list-style-image/index.md", "title": "list-style-image"}
+content_language: "en"
 ---
-
 Typography
 
 Utilities for controlling the leading, or line height, of an element.
-
-Class
-
-Styles
-
-`text-<size>/<number>`
-
-`font-size: <size>; line-height: calc(var(--spacing) * <number>);`
-
-`text-<size>/(<custom-property>)`
-
-`font-size: <size>; line-height: var(<custom-property>);`
-
-`text-<size>/[<value>]`
-
-`font-size: <size>; line-height: <value>;`
-
-`leading-none`
-
-`line-height: 1;`
-
-`leading-<number>`
-
-`line-height: calc(var(--spacing) * <number>);`
-
-`leading-(<custom-property>)`
-
-`line-height: var(<custom-property>);`
-
-`leading-[<value>]`
-
-`line-height: <value>;`
 
 ## [Examples](#examples)
 
@@ -71,7 +37,7 @@ So I started to walk into the water. I won't lie to you boys, I was terrified. B
 <p class="text-base/6 ...">So I started to walk into the water...</p><p class="text-base/7 ...">So I started to walk into the water...</p><p class="text-base/8 ...">So I started to walk into the water...</p>
 ```
 
-Each font size utility also sets a default line height when one isn't provided. You can learn more about these values and how to customize them in the [font-size documentation](tailwind/docs/font-size/index.md).
+Each font size utility also sets a default line height when one isn't provided. You can learn more about these values and how to customize them in the [font-size documentation](https://tailwindcss.com/docs/font-size).
 
 ### [Setting independently](#setting-independently)
 
@@ -127,7 +93,7 @@ Prefix a `line-height` utility with a breakpoint variant like `md:` to only appl
 <p class="leading-5 md:leading-6 ...">  Lorem ipsum dolor sit amet...</p>
 ```
 
-Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).
+Learn more about using variants in the [variants documentation](https://tailwindcss.com/docs/hover-focus-and-other-states).
 
 ## [Customizing your theme](#customizing-your-theme)
 
@@ -137,4 +103,4 @@ The `leading-<number>` utilities are driven by the `--spacing` theme variable, w
 @theme {  --spacing: 1px; }
 ```
 
-Learn more about customizing the spacing scale in the [theme variable documentation](tailwind/docs/theme/index.md).
+Learn more about customizing the spacing scale in the [theme variable documentation](https://tailwindcss.com/docs/theme).

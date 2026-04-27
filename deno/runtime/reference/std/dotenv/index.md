@@ -5,15 +5,16 @@ canonical_url: "https://docs.deno.com/runtime/reference/std/dotenv/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:01:45.333Z"
-content_hash: "f08fca352715d4d536e399e568a190cdb63f448500c20fe65e15f11e2f23de5f"
+last_crawled_at: "2026-04-27T17:41:30.286Z"
+content_hash: "796f26c861aaf321e558b5180d5f19953c2c2e22e540e6360fd9bf722f8229ec"
 menu_path: ["@std/dotenv"]
 section_path: []
+content_language: "en"
 ---
-On this page
+**On this page**
 
-*   [Overview](#overview)
-    *   [Add to your project](#add-to-your-project)
+-   [Overview](#overview)
+    -   [Add to your project](#add-to-your-project)
 
 Unstable
 

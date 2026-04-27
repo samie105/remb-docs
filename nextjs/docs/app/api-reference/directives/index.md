@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/app/api-reference/directives"
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:09:17.497Z"
-content_hash: "58baee4c632f6be00c6ebaa0df4fadf4d37cd14db925cd2479b482ff3643c686"
+last_crawled_at: "2026-04-27T18:08:03.148Z"
+content_hash: "d48c270771d2bad6ae0226d45ff0d399cb58582fb0e5480cdd0c12db227df99d"
 menu_path: ["Directives"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/api-reference/index.md", "title": "API Reference"}
-nav_next: {"path": "nextjs/docs/app/api-reference/directives/use-cache/index.md", "title": "use cache"}
+version: "latest"
+content_language: "en"
 ---
+[App Router](/docs/app)[API Reference](/docs/app/api-reference)Directives
 
 # Directives
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 The following directives are available:
 
@@ -51,20 +52,4 @@ Learn how to use the use server directive to execute code on the server.
 
 ](/docs/app/api-reference/directives/use-server)
 
-[Previous
-
-API Reference
-
-](/docs/app/api-reference)
-
-[Next
-
-use cache
-
-](/docs/app/api-reference/directives/use-cache)
-
 Was this helpful?
-
-supported.
-
-Send

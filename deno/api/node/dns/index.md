@@ -5,10 +5,11 @@ canonical_url: "https://docs.deno.com/api/node/dns/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:35:06.403Z"
-content_hash: "102a4dc5b4ac8d777044ce210cfe4d1aaa76b26c61544106133bfd57807c46c6"
+last_crawled_at: "2026-04-27T17:05:38.408Z"
+content_hash: "ce2611b8b5fefae0bb51b042a25375f4bb94157ca72f81ed3f3fe344550635be"
 menu_path: ["dns - Node documentation"]
 section_path: []
+content_language: "en"
 ---
 ### Usage in Deno
 
@@ -52,32 +53,30 @@ dns.resolve4('archive.org', (err, addresses) => {
 
 See the [Implementation considerations section](https://nodejs.org/docs/latest-v22.x/api/dns.html#implementation-considerations) for more information.
 
-### Classes [#](#Classes)
-
 c
 
 [promises.Resolver](.././dns/promises/~/promises.Resolver "promises.Resolver")
 
 An independent resolver for DNS requests.
 
-*   [cancel](.././dns/promises/~/promises.Resolver#method_cancel_0)
-*   [getServers](.././dns/promises/~/promises.Resolver#property_getservers)
-*   [resolve](.././dns/promises/~/promises.Resolver#property_resolve)
-*   [resolve4](.././dns/promises/~/promises.Resolver#property_resolve4)
-*   [resolve6](.././dns/promises/~/promises.Resolver#property_resolve6)
-*   [resolveAny](.././dns/promises/~/promises.Resolver#property_resolveany)
-*   [resolveCaa](.././dns/promises/~/promises.Resolver#property_resolvecaa)
-*   [resolveCname](.././dns/promises/~/promises.Resolver#property_resolvecname)
-*   [resolveMx](.././dns/promises/~/promises.Resolver#property_resolvemx)
-*   [resolveNaptr](.././dns/promises/~/promises.Resolver#property_resolvenaptr)
-*   [resolveNs](.././dns/promises/~/promises.Resolver#property_resolvens)
-*   [resolvePtr](.././dns/promises/~/promises.Resolver#property_resolveptr)
-*   [resolveSoa](.././dns/promises/~/promises.Resolver#property_resolvesoa)
-*   [resolveSrv](.././dns/promises/~/promises.Resolver#property_resolvesrv)
-*   [resolveTxt](.././dns/promises/~/promises.Resolver#property_resolvetxt)
-*   [reverse](.././dns/promises/~/promises.Resolver#property_reverse)
-*   [setLocalAddress](.././dns/promises/~/promises.Resolver#method_setlocaladdress_0)
-*   [setServers](.././dns/promises/~/promises.Resolver#property_setservers)
+-   [cancel](.././dns/promises/~/promises.Resolver#method_cancel_0)
+-   [getServers](.././dns/promises/~/promises.Resolver#property_getservers)
+-   [resolve](.././dns/promises/~/promises.Resolver#property_resolve)
+-   [resolve4](.././dns/promises/~/promises.Resolver#property_resolve4)
+-   [resolve6](.././dns/promises/~/promises.Resolver#property_resolve6)
+-   [resolveAny](.././dns/promises/~/promises.Resolver#property_resolveany)
+-   [resolveCaa](.././dns/promises/~/promises.Resolver#property_resolvecaa)
+-   [resolveCname](.././dns/promises/~/promises.Resolver#property_resolvecname)
+-   [resolveMx](.././dns/promises/~/promises.Resolver#property_resolvemx)
+-   [resolveNaptr](.././dns/promises/~/promises.Resolver#property_resolvenaptr)
+-   [resolveNs](.././dns/promises/~/promises.Resolver#property_resolvens)
+-   [resolvePtr](.././dns/promises/~/promises.Resolver#property_resolveptr)
+-   [resolveSoa](.././dns/promises/~/promises.Resolver#property_resolvesoa)
+-   [resolveSrv](.././dns/promises/~/promises.Resolver#property_resolvesrv)
+-   [resolveTxt](.././dns/promises/~/promises.Resolver#property_resolvetxt)
+-   [reverse](.././dns/promises/~/promises.Resolver#property_reverse)
+-   [setLocalAddress](.././dns/promises/~/promises.Resolver#method_setlocaladdress_0)
+-   [setServers](.././dns/promises/~/promises.Resolver#property_setservers)
 
 c
 
@@ -85,26 +84,24 @@ c
 
 An independent resolver for DNS requests.
 
-*   [cancel](.././dns/~/Resolver#method_cancel_0)
-*   [getServers](.././dns/~/Resolver#property_getservers)
-*   [resolve](.././dns/~/Resolver#property_resolve)
-*   [resolve4](.././dns/~/Resolver#property_resolve4)
-*   [resolve6](.././dns/~/Resolver#property_resolve6)
-*   [resolveAny](.././dns/~/Resolver#property_resolveany)
-*   [resolveCaa](.././dns/~/Resolver#property_resolvecaa)
-*   [resolveCname](.././dns/~/Resolver#property_resolvecname)
-*   [resolveMx](.././dns/~/Resolver#property_resolvemx)
-*   [resolveNaptr](.././dns/~/Resolver#property_resolvenaptr)
-*   [resolveNs](.././dns/~/Resolver#property_resolvens)
-*   [resolvePtr](.././dns/~/Resolver#property_resolveptr)
-*   [resolveSoa](.././dns/~/Resolver#property_resolvesoa)
-*   [resolveSrv](.././dns/~/Resolver#property_resolvesrv)
-*   [resolveTxt](.././dns/~/Resolver#property_resolvetxt)
-*   [reverse](.././dns/~/Resolver#property_reverse)
-*   [setLocalAddress](.././dns/~/Resolver#method_setlocaladdress_0)
-*   [setServers](.././dns/~/Resolver#property_setservers)
-
-### Functions [#](#Functions)
+-   [cancel](.././dns/~/Resolver#method_cancel_0)
+-   [getServers](.././dns/~/Resolver#property_getservers)
+-   [resolve](.././dns/~/Resolver#property_resolve)
+-   [resolve4](.././dns/~/Resolver#property_resolve4)
+-   [resolve6](.././dns/~/Resolver#property_resolve6)
+-   [resolveAny](.././dns/~/Resolver#property_resolveany)
+-   [resolveCaa](.././dns/~/Resolver#property_resolvecaa)
+-   [resolveCname](.././dns/~/Resolver#property_resolvecname)
+-   [resolveMx](.././dns/~/Resolver#property_resolvemx)
+-   [resolveNaptr](.././dns/~/Resolver#property_resolvenaptr)
+-   [resolveNs](.././dns/~/Resolver#property_resolvens)
+-   [resolvePtr](.././dns/~/Resolver#property_resolveptr)
+-   [resolveSoa](.././dns/~/Resolver#property_resolvesoa)
+-   [resolveSrv](.././dns/~/Resolver#property_resolvesrv)
+-   [resolveTxt](.././dns/~/Resolver#property_resolvetxt)
+-   [reverse](.././dns/~/Resolver#property_reverse)
+-   [setLocalAddress](.././dns/~/Resolver#method_setlocaladdress_0)
+-   [setServers](.././dns/~/Resolver#property_setservers)
 
 f
 
@@ -346,15 +343,13 @@ f
 
 Sets the IP address and port of servers to be used when performing DNS resolution. The `servers` argument is an array of [RFC 5952](https://tools.ietf.org/html/rfc5952#section-6) formatted addresses. If the port is the IANA default DNS port (53) it can be omitted.
 
-### Interfaces [#](#Interfaces)
-
 I
 
 [AnyAaaaRecord](.././dns/~/AnyAaaaRecord "AnyAaaaRecord")
 
 No documentation available
 
-*   [type](.././dns/~/AnyAaaaRecord#property_type)
+-   [type](.././dns/~/AnyAaaaRecord#property_type)
 
 I
 
@@ -362,7 +357,7 @@ I
 
 No documentation available
 
-*   [type](.././dns/~/AnyARecord#property_type)
+-   [type](.././dns/~/AnyARecord#property_type)
 
 I
 
@@ -370,8 +365,8 @@ I
 
 No documentation available
 
-*   [type](.././dns/~/AnyCnameRecord#property_type)
-*   [value](.././dns/~/AnyCnameRecord#property_value)
+-   [type](.././dns/~/AnyCnameRecord#property_type)
+-   [value](.././dns/~/AnyCnameRecord#property_value)
 
 I
 
@@ -379,7 +374,7 @@ I
 
 No documentation available
 
-*   [type](.././dns/~/AnyMxRecord#property_type)
+-   [type](.././dns/~/AnyMxRecord#property_type)
 
 I
 
@@ -387,7 +382,7 @@ I
 
 No documentation available
 
-*   [type](.././dns/~/AnyNaptrRecord#property_type)
+-   [type](.././dns/~/AnyNaptrRecord#property_type)
 
 I
 
@@ -395,8 +390,8 @@ I
 
 No documentation available
 
-*   [type](.././dns/~/AnyNsRecord#property_type)
-*   [value](.././dns/~/AnyNsRecord#property_value)
+-   [type](.././dns/~/AnyNsRecord#property_type)
+-   [value](.././dns/~/AnyNsRecord#property_value)
 
 I
 
@@ -404,8 +399,8 @@ I
 
 No documentation available
 
-*   [type](.././dns/~/AnyPtrRecord#property_type)
-*   [value](.././dns/~/AnyPtrRecord#property_value)
+-   [type](.././dns/~/AnyPtrRecord#property_type)
+-   [value](.././dns/~/AnyPtrRecord#property_value)
 
 I
 
@@ -413,7 +408,7 @@ I
 
 No documentation available
 
-*   [type](.././dns/~/AnySoaRecord#property_type)
+-   [type](.././dns/~/AnySoaRecord#property_type)
 
 I
 
@@ -421,7 +416,7 @@ I
 
 No documentation available
 
-*   [type](.././dns/~/AnySrvRecord#property_type)
+-   [type](.././dns/~/AnySrvRecord#property_type)
 
 I
 
@@ -429,8 +424,8 @@ I
 
 No documentation available
 
-*   [entries](.././dns/~/AnyTxtRecord#property_entries)
-*   [type](.././dns/~/AnyTxtRecord#property_type)
+-   [entries](.././dns/~/AnyTxtRecord#property_entries)
+-   [type](.././dns/~/AnyTxtRecord#property_type)
 
 I
 
@@ -438,12 +433,12 @@ I
 
 No documentation available
 
-*   [contactemail](.././dns/~/CaaRecord#property_contactemail)
-*   [contactphone](.././dns/~/CaaRecord#property_contactphone)
-*   [critical](.././dns/~/CaaRecord#property_critical)
-*   [iodef](.././dns/~/CaaRecord#property_iodef)
-*   [issue](.././dns/~/CaaRecord#property_issue)
-*   [issuewild](.././dns/~/CaaRecord#property_issuewild)
+-   [contactemail](.././dns/~/CaaRecord#property_contactemail)
+-   [contactphone](.././dns/~/CaaRecord#property_contactphone)
+-   [critical](.././dns/~/CaaRecord#property_critical)
+-   [iodef](.././dns/~/CaaRecord#property_iodef)
+-   [issue](.././dns/~/CaaRecord#property_issue)
+-   [issuewild](.././dns/~/CaaRecord#property_issuewild)
 
 I
 
@@ -451,8 +446,8 @@ I
 
 No documentation available
 
-*   [address](.././dns/~/LookupAddress#property_address)
-*   [family](.././dns/~/LookupAddress#property_family)
+-   [address](.././dns/~/LookupAddress#property_address)
+-   [family](.././dns/~/LookupAddress#property_family)
 
 I
 
@@ -460,7 +455,7 @@ I
 
 No documentation available
 
-*   [all](.././dns/~/LookupAllOptions#property_all)
+-   [all](.././dns/~/LookupAllOptions#property_all)
 
 I
 
@@ -468,7 +463,7 @@ I
 
 No documentation available
 
-*   [all](.././dns/~/LookupOneOptions#property_all)
+-   [all](.././dns/~/LookupOneOptions#property_all)
 
 I
 
@@ -476,11 +471,11 @@ I
 
 No documentation available
 
-*   [all](.././dns/~/LookupOptions#property_all)
-*   [family](.././dns/~/LookupOptions#property_family)
-*   [hints](.././dns/~/LookupOptions#property_hints)
-*   [order](.././dns/~/LookupOptions#property_order)
-*   [verbatim](.././dns/~/LookupOptions#property_verbatim)
+-   [all](.././dns/~/LookupOptions#property_all)
+-   [family](.././dns/~/LookupOptions#property_family)
+-   [hints](.././dns/~/LookupOptions#property_hints)
+-   [order](.././dns/~/LookupOptions#property_order)
+-   [verbatim](.././dns/~/LookupOptions#property_verbatim)
 
 I
 
@@ -488,8 +483,8 @@ I
 
 No documentation available
 
-*   [exchange](.././dns/~/MxRecord#property_exchange)
-*   [priority](.././dns/~/MxRecord#property_priority)
+-   [exchange](.././dns/~/MxRecord#property_exchange)
+-   [priority](.././dns/~/MxRecord#property_priority)
 
 I
 
@@ -497,12 +492,12 @@ I
 
 No documentation available
 
-*   [flags](.././dns/~/NaptrRecord#property_flags)
-*   [order](.././dns/~/NaptrRecord#property_order)
-*   [preference](.././dns/~/NaptrRecord#property_preference)
-*   [regexp](.././dns/~/NaptrRecord#property_regexp)
-*   [replacement](.././dns/~/NaptrRecord#property_replacement)
-*   [service](.././dns/~/NaptrRecord#property_service)
+-   [flags](.././dns/~/NaptrRecord#property_flags)
+-   [order](.././dns/~/NaptrRecord#property_order)
+-   [preference](.././dns/~/NaptrRecord#property_preference)
+-   [regexp](.././dns/~/NaptrRecord#property_regexp)
+-   [replacement](.././dns/~/NaptrRecord#property_replacement)
+-   [service](.././dns/~/NaptrRecord#property_service)
 
 I
 
@@ -510,8 +505,8 @@ I
 
 No documentation available
 
-*   [address](.././dns/~/RecordWithTtl#property_address)
-*   [ttl](.././dns/~/RecordWithTtl#property_ttl)
+-   [address](.././dns/~/RecordWithTtl#property_address)
+-   [ttl](.././dns/~/RecordWithTtl#property_ttl)
 
 I
 
@@ -519,7 +514,7 @@ I
 
 No documentation available
 
-*   [ttl](.././dns/~/ResolveOptions#property_ttl)
+-   [ttl](.././dns/~/ResolveOptions#property_ttl)
 
 I
 
@@ -527,8 +522,8 @@ I
 
 No documentation available
 
-*   [timeout](.././dns/~/ResolverOptions#property_timeout)
-*   [tries](.././dns/~/ResolverOptions#property_tries)
+-   [timeout](.././dns/~/ResolverOptions#property_timeout)
+-   [tries](.././dns/~/ResolverOptions#property_tries)
 
 I
 
@@ -536,7 +531,7 @@ I
 
 No documentation available
 
-*   [ttl](.././dns/~/ResolveWithTtlOptions#property_ttl)
+-   [ttl](.././dns/~/ResolveWithTtlOptions#property_ttl)
 
 I
 
@@ -544,13 +539,13 @@ I
 
 No documentation available
 
-*   [expire](.././dns/~/SoaRecord#property_expire)
-*   [hostmaster](.././dns/~/SoaRecord#property_hostmaster)
-*   [minttl](.././dns/~/SoaRecord#property_minttl)
-*   [nsname](.././dns/~/SoaRecord#property_nsname)
-*   [refresh](.././dns/~/SoaRecord#property_refresh)
-*   [retry](.././dns/~/SoaRecord#property_retry)
-*   [serial](.././dns/~/SoaRecord#property_serial)
+-   [expire](.././dns/~/SoaRecord#property_expire)
+-   [hostmaster](.././dns/~/SoaRecord#property_hostmaster)
+-   [minttl](.././dns/~/SoaRecord#property_minttl)
+-   [nsname](.././dns/~/SoaRecord#property_nsname)
+-   [refresh](.././dns/~/SoaRecord#property_refresh)
+-   [retry](.././dns/~/SoaRecord#property_retry)
+-   [serial](.././dns/~/SoaRecord#property_serial)
 
 I
 
@@ -558,20 +553,16 @@ I
 
 No documentation available
 
-*   [name](.././dns/~/SrvRecord#property_name)
-*   [port](.././dns/~/SrvRecord#property_port)
-*   [priority](.././dns/~/SrvRecord#property_priority)
-*   [weight](.././dns/~/SrvRecord#property_weight)
-
-### Namespaces [#](#Namespaces)
+-   [name](.././dns/~/SrvRecord#property_name)
+-   [port](.././dns/~/SrvRecord#property_port)
+-   [priority](.././dns/~/SrvRecord#property_priority)
+-   [weight](.././dns/~/SrvRecord#property_weight)
 
 N
 
 [promises](.././dns/~/promises "promises")
 
 The `dns.promises` API provides an alternative set of asynchronous DNS methods that return `Promise` objects rather than using callbacks. The API is accessible via `import { promises as dnsPromises } from 'node:dns'` or `import dnsPromises from 'node:dns/promises'`.
-
-### Type Aliases [#](<#Type Aliases>)
 
 T
 
@@ -584,8 +575,6 @@ T
 [AnyRecordWithTtl](.././dns/~/AnyRecordWithTtl "AnyRecordWithTtl")
 
 No documentation available
-
-### Variables [#](#Variables)
 
 v
 

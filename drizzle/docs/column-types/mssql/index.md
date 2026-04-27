@@ -5,25 +5,15 @@ canonical_url: "https://orm.drizzle.team/docs/column-types/mssql"
 docset: "drizzle"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:33:59.018Z"
-content_hash: "bd787f1e91ddd5c289e032de49bb7ec2db5e19082ebcfa0e27581a2d4e8d4d5d"
+last_crawled_at: "2026-04-27T18:25:07.969Z"
+content_hash: "9a7433a063035f71efc263f43e4f67fa85943eb206c8db4cc5a3eaba3eff1bff"
 menu_path: ["MSSQL column types"]
 section_path: []
-nav_prev: {"path": "drizzle/docs/column-types/cockroach/index.md", "title": "CockroachDB column types"}
-nav_next: {"path": "drizzle/docs/column-types/mysql/index.md", "title": "MySQL column types"}
+content_language: "en"
 ---
-
 WARNING
 
 This page explains concepts available on drizzle versions `1.0.0-beta.2` and higher.
-
-npm
-
-yarn
-
-pnpm
-
-bun
 
 ```
 npm i drizzle-orm@beta
@@ -45,7 +35,7 @@ bun add drizzle-orm@beta
 bun add drizzle-kit@beta -D
 ```
 
-We have native support for all of them, yet if that’s not enough for you, feel free to create **[custom types](drizzle/docs/custom-types/index.md)**.
+We have native support for all of them, yet if that’s not enough for you, feel free to create **[custom types](https://orm.drizzle.team/docs/custom-types)**.
 
 important
 
@@ -53,13 +43,13 @@ All examples in this part of the documentation do not use database column name a
 
 You can use database aliases in column names if you want, and you can also use the `casing` parameter to define a mapping strategy for Drizzle.
 
-You can read more about it [here](drizzle/docs/sql-schema-declaration/index.md#shape-your-data-schema)
+You can read more about it [here](https://orm.drizzle.team/docs/sql-schema-declaration#shape-your-data-schema)
 
 ### int[](#int)
 
 Signed 4-byte integer
 
-```
+```typescript
 import { int, mssqlTable } from "drizzle-orm/mssql-core";
 
 export const table = mssqlTable('table', {
@@ -67,13 +57,13 @@ export const table = mssqlTable('table', {
 });
 ```
 
-```
+```sql
 CREATE TABLE [table] (
 	[int] int
 );
 ```
 
-```
+```typescript
 import { sql } from "drizzle-orm";
 import { int, mssqlTable } from "drizzle-orm/mssql-core";
 
@@ -82,7 +72,7 @@ export const table = pgTable('table', {
 });
 ```
 
-```
+```sql
 CREATE TABLE [table] (
 	[int1] int DEFAULT 10
 );
@@ -94,7 +84,7 @@ CREATE TABLE [table] (
 
 Small-range signed 2-byte integer
 
-```
+```typescript
 import { smallint, mssqlTable } from "drizzle-orm/mssql-core";
 
 export const table = mssqlTable('table', {
@@ -102,13 +92,13 @@ export const table = mssqlTable('table', {
 });
 ```
 
-```
+```sql
 CREATE TABLE [table] (
 	[smallint] smallint
 );
 ```
 
-```
+```typescript
 import { sql } from "drizzle-orm";
 import { smallint, mssqlTable } from "drizzle-orm/mssql-core";
 
@@ -117,7 +107,7 @@ export const table = mssqlTable('table', {
 });
 ```
 
-```
+```sql
 CREATE TABLE [table] (
 	[smallint1] smallint DEFAULT 10
 );
@@ -129,7 +119,7 @@ CREATE TABLE [table] (
 
 Small-range signed 1-byte integer
 
-```
+```typescript
 import { tinyint, mssqlTable } from "drizzle-orm/mssql-core";
 
 export const table = mssqlTable('table', {
@@ -137,13 +127,13 @@ export const table = mssqlTable('table', {
 });
 ```
 
-```
+```sql
 CREATE TABLE [table] (
 	[tinyint] tinyint
 );
 ```
 
-```
+```typescript
 import { sql } from "drizzle-orm";
 import { tinyint, mssqlTable } from "drizzle-orm/mssql-core";
 
@@ -152,7 +142,7 @@ export const table = mssqlTable('table', {
 });
 ```
 
-```
+```sql
 CREATE TABLE [table] (
 	[tinyint1] tinyint DEFAULT 10
 );
@@ -166,7 +156,7 @@ Signed 8-byte integer
 
 If you’re expecting values above 2^31 but below 2^53, you can utilise `mode: 'number'` and deal with javascript number as opposed to bigint.
 
-```
+```typescript
 import { bigint, mssqlTable } from "drizzle-orm/mssql-core";
 
 export const table = mssqlTable('table', {
@@ -183,13 +173,13 @@ bigint: bigint({ mode: 'bigint' })
 bigint: bigint({ mode: 'string' })
 ```
 
-```
+```sql
 CREATE TABLE [table] (
 	[bigint] bigint
 );
 ```
 
-```
+```typescript
 import { sql } from "drizzle-orm";
 import { bigint, mssqlTable } from "drizzle-orm/mssql-core";
 
@@ -198,7 +188,7 @@ export const table = mssqlTable('table', {
 });
 ```
 
-```
+```sql
 CREATE TABLE [table] (
 	[bigint1] bigint DEFAULT 10
 );
@@ -210,7 +200,7 @@ An integer data type that can take a value of `1`, `0`, or `NULL`
 
 Drizzle will accept `true` or `false` as values instead of `1` and `0`
 
-```
+```typescript
 import { bit, mssqlTable } from "drizzle-orm/mssql-core";
 
 export const table = mssqlTable('table', {
@@ -218,7 +208,7 @@ export const table = mssqlTable('table', {
 });
 ```
 
-```
+```sql
 CREATE TABLE [table] (
 	[bit] bit
 );
@@ -233,7 +223,7 @@ For more info please refer to the official MSSQL **[docs.](https://learn.microso
 
 You can define `{ enum: ["value1", "value2"] }` config to infer `insert` and `select` types, it **won’t** check runtime values.
 
-```
+```typescript
 import { text, mssqlTable } from "drizzle-orm/mssql-core";
 
 export const table = mssqlTable('table', {
@@ -244,7 +234,7 @@ export const table = mssqlTable('table', {
 text: text({ enum: ["value1", "value2"] })
 ```
 
-```
+```sql
 CREATE TABLE [table] (
 	[text] text
 );
@@ -259,7 +249,7 @@ For more info please refer to the official MSSQL **[docs.](https://learn.microso
 
 You can define `{ enum: ["value1", "value2"] }` config to infer `insert` and `select` types, it **won’t** check runtime values.
 
-```
+```typescript
 import { text, mssqlTable } from "drizzle-orm/mssql-core";
 
 export const table = mssqlTable('table', {
@@ -270,7 +260,7 @@ export const table = mssqlTable('table', {
 ntext: ntext({ enum: ["value1", "value2"] })
 ```
 
-```
+```sql
 CREATE TABLE [table] (
 	[ntext] ntext
 );
@@ -287,7 +277,7 @@ You can define `{ enum: ["value1", "value2"] }` config to infer `insert` and `se
 
 The `length` parameter is optional according to MSSQL docs.
 
-```
+```typescript
 import { varchar, mssqlTable } from "drizzle-orm/mssql-core";
 
 export const table = mssqlTable('table', {
@@ -300,7 +290,7 @@ export const table = mssqlTable('table', {
 varchar: varchar({ enum: ["value1", "value2"] }),
 ```
 
-```
+```sql
 CREATE TABLE [table] (
 	[varchar1] varchar,
 	[varchar2] varchar(256),
@@ -319,7 +309,7 @@ You can define `{ enum: ["value1", "value2"] }` config to infer `insert` and `se
 
 The `length` parameter is optional according to MSSQL docs.
 
-```
+```typescript
 import { nvarchar, mssqlTable } from "drizzle-orm/mssql-core";
 
 export const table = mssqlTable('table', {
@@ -334,7 +324,7 @@ nvarchar: nvarchar({ enum: ["value1", "value2"] }),
 nvarchar: nvarchar({ mode: 'json' })
 ```
 
-```
+```sql
 CREATE TABLE [table] (
 	[nvarchar1] nvarchar,
 	[nvarchar2] nvarchar(256)
@@ -353,7 +343,7 @@ You can define `{ enum: ["value1", "value2"] }` config to infer `insert` and `se
 
 The `length` parameter is optional according to MSSQL docs.
 
-```
+```typescript
 import { char, mssqlTable } from "drizzle-orm/mssql-core";
 
 export const table = mssqlTable('table', {
@@ -365,7 +355,7 @@ export const table = mssqlTable('table', {
 char: char({ enum: ["value1", "value2"] }),
 ```
 
-```
+```sql
 CREATE TABLE [table] (
 	[char1] char,
 	[char2] char(256)
@@ -384,7 +374,7 @@ You can define `{ enum: ["value1", "value2"] }` config to infer `insert` and `se
 
 The `length` parameter is optional according to MSSQL docs.
 
-```
+```typescript
 import { nchar, mssqlTable } from "drizzle-orm/mssql-core";
 
 export const table = mssqlTable('table', {
@@ -396,7 +386,7 @@ export const table = mssqlTable('table', {
 nchar: nchar({ enum: ["value1", "value2"] }),
 ```
 
-```
+```sql
 CREATE TABLE [table] (
 	[nchar1] nchar,
 	[nchar2] nchar(256)
@@ -407,7 +397,7 @@ CREATE TABLE [table] (
 
 Fixed-length binary data with a length of n bytes, where n is a value from 1 through 8,000. The storage size is n bytes.
 
-```
+```typescript
 import { binary, mssqlTable } from "drizzle-orm/mssql-core";
 
 const table = mssqlTable('table', {
@@ -416,7 +406,7 @@ const table = mssqlTable('table', {
 });
 ```
 
-```
+```sql
 CREATE TABLE [table] (
 	[binary] binary,
 	[binary1] binary(256)
@@ -427,7 +417,7 @@ CREATE TABLE [table] (
 
 Variable-length binary data. n can be a value from 1 through 8,000. max indicates that the maximum storage size is 2^31-1 bytes
 
-```
+```typescript
 import { varbinary, mssqlTable } from "drizzle-orm/mssql-core";
 
 const table = mssqlTable('table', {
@@ -437,7 +427,7 @@ const table = mssqlTable('table', {
 });
 ```
 
-```
+```sql
 CREATE TABLE [table] (
 	[varbinary] varbinary,
 	[varbinary1] varbinary(256),
@@ -453,7 +443,7 @@ Fixed precision and scale numbers. When maximum precision is used, valid values 
 
 For more info please refer to the official MSSQL **[docs.](https://learn.microsoft.com/en-us/sql/t-sql/data-types/decimal-and-numeric-transact-sql?view=sql-server-ver17#decimal---p---s----and-numeric---p---s---)**
 
-```
+```typescript
 import { numeric, mssqlTable } from "drizzle-orm/mssql-core";
 
 export const table = mssqlTable('table', {
@@ -465,7 +455,7 @@ export const table = mssqlTable('table', {
 });
 ```
 
-```
+```sql
 CREATE TABLE [table] (
 	[numeric1] numeric,
 	[numeric2] numeric(100),
@@ -483,7 +473,7 @@ The ISO synonym for real is float(24).
 
 For more info please refer to the official MSSQL **[docs.](https://learn.microsoft.com/en-us/sql/t-sql/data-types/float-and-real-transact-sql?view=sql-server-ver17)**
 
-```
+```typescript
 import { sql } from "drizzle-orm";
 import { real, mssqlTable } from "drizzle-orm/mssql-core";  
 
@@ -493,7 +483,7 @@ const table = mssqlTable('table', {
 });
 ```
 
-```
+```sql
 CREATE TABLE [table] (
 	[real1] real,
 	[real2] real default 10.10
@@ -506,7 +496,7 @@ float \[ (n) \] Where n is the number of bits that are used to store the mantiss
 
 For more info please refer to the official MSSQL **[docs.](https://learn.microsoft.com/en-us/sql/t-sql/data-types/float-and-real-transact-sql?view=sql-server-ver17#syntax)**
 
-```
+```typescript
 import { sql } from "drizzle-orm";
 import { float, mssqlTable } from "drizzle-orm/mssql-core";
 
@@ -516,7 +506,7 @@ const table = mssqlTable('table', {
 });
 ```
 
-```
+```sql
 CREATE TABLE [table] (
 	[float1] float,
 	[float2] float(16)
@@ -531,7 +521,7 @@ Defines a time of a day. The time is without time zone awareness and is based on
 
 For more info please refer to the official MSSQL **[docs.](https://learn.microsoft.com/en-us/sql/t-sql/data-types/time-transact-sql?view=sql-server-ver17#time-description)**
 
-```
+```typescript
 import { time, mssqlTable } from "drizzle-orm/mssql-core";
 
 const table = mssqlTable('table', {
@@ -542,7 +532,7 @@ const table = mssqlTable('table', {
 });
 ```
 
-```
+```sql
 CREATE TABLE [table] (
 	[time1] time,
 	[time2] time,
@@ -559,7 +549,7 @@ Calendar date (year, month, day)
 
 For more info please refer to the official MSSQL **[docs.](https://learn.microsoft.com/en-us/sql/t-sql/data-types/date-transact-sql?view=sql-server-ver17#date-description)**
 
-```
+```typescript
 import { date, mssqlTable } from "drizzle-orm/mssql-core";
 
 const table = mssqlTable('table', {
@@ -567,7 +557,7 @@ const table = mssqlTable('table', {
 });
 ```
 
-```
+```sql
 CREATE TABLE [table] (
 	[date] date
 );
@@ -575,7 +565,7 @@ CREATE TABLE [table] (
 
 You can specify either `date` or `string` infer modes:
 
-```
+```typescript
 // will infer as date
 date: date({ mode: "date" }),
 
@@ -595,7 +585,7 @@ Avoid using datetime for new work. Instead, use the time, date, datetime2, and d
 
 For more info please refer to the official MSSQL **[docs.](https://learn.microsoft.com/en-us/sql/t-sql/data-types/datetime-transact-sql?view=sql-server-ver17#description)**
 
-```
+```typescript
 import { datetime, mssqlTable } from "drizzle-orm/mssql-core";
 
 const table = mssqlTable('table', {
@@ -603,7 +593,7 @@ const table = mssqlTable('table', {
 });
 ```
 
-```
+```sql
 CREATE TABLE [table] (
 	[datetime] datetime
 );
@@ -611,7 +601,7 @@ CREATE TABLE [table] (
 
 You can specify either `date` or `string` infer modes:
 
-```
+```typescript
 // will infer as date
 datetime: datetime({ mode: "date" }),
 
@@ -627,7 +617,7 @@ Defines a date that is combined with a time of day that is based on 24-hour cloc
 
 For more info please refer to the official MSSQL **[docs.](https://learn.microsoft.com/en-us/sql/t-sql/data-types/datetime2-transact-sql?view=sql-server-ver17#datetime2-description)**
 
-```
+```typescript
 import { datetime2, mssqlTable } from "drizzle-orm/mssql-core";
 
 const table = mssqlTable('table', {
@@ -635,7 +625,7 @@ const table = mssqlTable('table', {
 });
 ```
 
-```
+```sql
 CREATE TABLE [table] (
 	[datetime2] datetime2
 );
@@ -643,7 +633,7 @@ CREATE TABLE [table] (
 
 You can specify either `date` or `string` infer modes:
 
-```
+```typescript
 // will infer as date
 datetime2: datetime2({ mode: "date" }),
 
@@ -659,7 +649,7 @@ Defines a date that is combined with a time of a day based on a 24-hour clock li
 
 For more info please refer to the official MSSQL **[docs.](https://learn.microsoft.com/en-us/sql/t-sql/data-types/datetimeoffset-transact-sql?view=sql-server-ver17#datetimeoffset-description)**
 
-```
+```typescript
 import { datetimeoffset, mssqlTable } from "drizzle-orm/mssql-core";
 
 const table = mssqlTable('table', {
@@ -667,7 +657,7 @@ const table = mssqlTable('table', {
 });
 ```
 
-```
+```sql
 CREATE TABLE [table] (
 	[datetimeoffset] datetimeoffset
 );
@@ -675,7 +665,7 @@ CREATE TABLE [table] (
 
 You can specify either `date` or `string` infer modes:
 
-```
+```typescript
 // will infer as date
 datetimeoffset: datetimeoffset({ mode: "date" }),
 
@@ -689,7 +679,7 @@ Every column builder has a `.$type()` method, which allows you to customize the 
 
 This is useful, for example, with unknown or branded types:
 
-```
+```ts
 type UserId = number & { __brand: 'user_id' };
 type Data = {
 	foo: string;
@@ -708,7 +698,7 @@ The `DEFAULT` clause specifies a default value to use for the column if no value
 
 An explicit `DEFAULT` clause may specify that the default value is `NULL`, a string constant, a blob constant, a signed-number, or any constant expression enclosed in parentheses.
 
-```
+```typescript
 import { sql } from "drizzle-orm";
 import { int, mssqlTable, text } from "drizzle-orm/mssql-core";
 
@@ -718,7 +708,7 @@ const table = mssqlTable('table', {
 });
 ```
 
-```
+```sql
 CREATE TABLE [table] (
 	[integer1] integer DEFAULT 42,
 	[text] text DEFAULT 'text',
@@ -729,7 +719,7 @@ When using `$default()` or `$defaultFn()`, which are simply different aliases fo
 
 Note: This value does not affect the `drizzle-kit` behavior, it is only used at runtime in `drizzle-orm`
 
-```
+```ts
 import { text, mssqlTable } from "drizzle-orm/mssql-core";
 import { createId } from '@paralleldrive/cuid2';
 
@@ -744,7 +734,7 @@ Adds a dynamic update value to the column. The function will be called when the 
 
 Note: This value does not affect the `drizzle-kit` behavior, it is only used at runtime in `drizzle-orm`
 
-```
+```ts
 import { int, datetime2, text, mssqlTable } from "drizzle-orm/mssql-core";
 
 const table = mssqlTable('table', {
@@ -758,7 +748,7 @@ const table = mssqlTable('table', {
 
 `NOT NULL` constraint dictates that the associated column may not contain a `NULL` value.
 
-```
+```typescript
 import { int, mssqlTable } from "drizzle-orm/mssql-core";
 
 const table = mssqlTable('table', {
@@ -766,7 +756,7 @@ const table = mssqlTable('table', {
 });
 ```
 
-```
+```sql
 CREATE TABLE [table] (
 	[int] int NOT NULL
 );
@@ -776,7 +766,7 @@ CREATE TABLE [table] (
 
 A primary key constraint indicates that a column, or group of columns, can be used as a unique identifier for rows in the table. This requires that the values be both unique and not null.
 
-```
+```typescript
 import { int, mssqlTable } from "drizzle-orm/mssql-core";
 
 const table = pgTable('table', {
@@ -784,7 +774,7 @@ const table = pgTable('table', {
 });
 ```
 
-```
+```sql
 CREATE TABLE [table] (
 	[id] int PRIMARY KEY
 );

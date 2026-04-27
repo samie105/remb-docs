@@ -5,19 +5,20 @@ canonical_url: "https://nextjs.org/docs/app/api-reference/config/next-config-js/
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:08:34.490Z"
-content_hash: "7a380f7d603b61326b3e535d929d5960e5f4c58d00e73132a97649e572614a4c"
+last_crawled_at: "2026-04-27T18:07:20.074Z"
+content_hash: "aaca2488c7b486ed3e2a8ad8b25adb33850bb70efd7909e82dc7436aa130172a"
 menu_path: ["serverComponentsHmrCache"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/api-reference/config/next-config-js/serverActions/index.md", "title": "serverActions"}
-nav_next: {"path": "nextjs/docs/app/api-reference/config/next-config-js/serverExternalPackages/index.md", "title": "serverExternalPackages"}
+version: "latest"
+content_language: "en"
 ---
+[Configuration](/docs/app/api-reference/config)[next.config.js](/docs/app/api-reference/config/next-config-js)serverComponentsHmrCache
 
 # serverComponentsHmrCache
 
 This feature is currently experimental and subject to change, it's not recommended for production. Try it out and share your feedback on [GitHub](https://github.com/vercel/next.js/issues).
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 The experimental `serverComponentsHmrCache` option allows you to cache `fetch` responses in Server Components across Hot Module Replacement (HMR) refreshes in local development. This results in faster responses and reduced costs for billed API calls.
 
@@ -26,8 +27,6 @@ By default, the HMR cache applies to all `fetch` requests, including those with 
 You can disable the HMR cache by setting `serverComponentsHmrCache` to `false` in your `next.config.js` file:
 
 next.config.ts
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -45,20 +44,4 @@ export default nextConfig
 
 > **Good to know:** For better observability, we recommend using the [`logging.fetches`](/docs/app/api-reference/config/next-config-js/logging) option which logs fetch cache hits and misses in the console during development.
 
-[Previous
-
-serverActions
-
-](/docs/app/api-reference/config/next-config-js/serverActions)
-
-[Next
-
-serverExternalPackages
-
-](/docs/app/api-reference/config/next-config-js/serverExternalPackages)
-
 Was this helpful?
-
-supported.
-
-Send

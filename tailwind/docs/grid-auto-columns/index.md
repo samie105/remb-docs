@@ -5,57 +5,62 @@ canonical_url: "https://tailwindcss.com/docs/grid-auto-columns"
 docset: "tailwind"
 kind: "framework"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:48:24.835Z"
-content_hash: "08a93bc81df04a8ff4cd6571e06902a9b41a4d1c45b2bf91c0d846a7a8c0bab0"
+last_crawled_at: "2026-04-27T19:59:30.800Z"
+content_hash: "1d17a098b22d38cfc69742a460595de80c1cb32aa9df38ec13646d9aecfd1393"
 menu_path: ["grid-auto-columns"]
 section_path: []
-nav_prev: {"path": "tailwind/docs/grid-auto-flow/index.md", "title": "grid-auto-flow"}
-nav_next: {"path": "tailwind/docs/grid-auto-rows/index.md", "title": "grid-auto-rows"}
+content_language: "en"
 ---
+[](/)
+
+[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
+
+1.  Flexbox & Grid
+2.  grid-auto-columns
+
+Flexbox & Grid
 
 # grid-auto-columns
 
 Utilities for controlling the size of implicitly-created grid columns.
 
-Class
-
-Styles
-
-`auto-cols-auto`
-
+| Class | Styles |
+| --- | --- |
+| `auto-cols-auto` | 
 `grid-auto-columns: auto;`
 
-`auto-cols-min`
+ |
+| `auto-cols-min` | 
 
 `grid-auto-columns: min-content;`
 
-`auto-cols-max`
+ |
+| `auto-cols-max` | 
 
 `grid-auto-columns: max-content;`
 
-`auto-cols-fr`
+ |
+| `auto-cols-fr` | 
 
 `grid-auto-columns: minmax(0, 1fr);`
 
-`auto-cols-(<custom-property>)`
+ |
+| `auto-cols-(<custom-property>)` | 
 
 `grid-auto-columns: var(<custom-property>);`
 
-`auto-cols-[<value>]`
+ |
+| `auto-cols-[<value>]` | 
 
 `grid-auto-columns: <value>;`
 
-## [Examples](#examples)
-
-### [Basic example](#basic-example)
+ |
 
 Use utilities like `auto-cols-min` and `auto-cols-max` to control the size of implicitly-created grid columns:
 
 ```
 <div class="grid auto-cols-max grid-flow-col">  <div>01</div>  <div>02</div>  <div>03</div></div>
 ```
-
-### [Using a custom value](#using-a-custom-value)
 
 Use the `auto-cols-[<value>]` syntax to set the size of implicitly-created grid columns based on a completely custom value:
 
@@ -71,8 +76,6 @@ For CSS variables, you can also use the `auto-cols-(<custom-property>)` syntax:
 
 This is just a shorthand for `auto-cols-[var(<custom-property>)]` that adds the `var()` function for you automatically.
 
-### [Responsive design](#responsive-design)
-
 Prefix a `grid-auto-columns` utility with a breakpoint variant like `md:` to only apply the utility at medium screen sizes and above:
 
 ```
@@ -83,11 +86,11 @@ Learn more about using variants in the [variants documentation](/docs/hover-focu
 
 ### On this page
 
-*   [Quick reference](#quick-reference)
-*   [Examples](#examples)
-    *   [Basic example](#basic-example)
-    *   [Using a custom value](#using-a-custom-value)
-    *   [Responsive design](#responsive-design)
+-   [Quick reference](#quick-reference)
+-   [Examples](#examples)
+    -   [Basic example](#basic-example)
+    -   [Using a custom value](#using-a-custom-value)
+    -   [Responsive design](#responsive-design)
 
 [
 

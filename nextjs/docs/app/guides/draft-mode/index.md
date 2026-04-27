@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/app/guides/draft-mode"
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:14:35.952Z"
-content_hash: "24b57cb5e955ae802913265cb8dc82bbabb4091232e1f916da695ce7401ebacc"
+last_crawled_at: "2026-04-27T18:13:28.942Z"
+content_hash: "3b7b7d0ab531789974196c1f8f8834d481c5744c531c08116cc2efd8a32976a0"
 menu_path: ["How to preview content with Draft Mode in Next.js"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/guides/deploying-to-platforms/index.md", "title": "Deploying Next.js to different platforms"}
-nav_next: {"path": "nextjs/docs/app/guides/environment-variables/index.md", "title": "How to use environment variables in Next.js"}
+version: "latest"
+content_language: "en"
 ---
+[App Router](/docs/app)[Guides](/docs/app/guides)Draft Mode
 
 # How to preview content with Draft Mode in Next.js
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 **Draft Mode** allows you to preview draft content from your headless CMS in your Next.js application. This is useful for static pages that are generated at build time as it allows you to switch to [dynamic rendering](/docs/app/glossary#dynamic-rendering) and see the draft changes without having to rebuild your entire site.
 
@@ -26,8 +27,6 @@ This page walks through how to enable and use Draft Mode.
 Create a [Route Handler](/docs/app/api-reference/file-conventions/route). It can have any name, for example, `app/api/draft/route.ts`.
 
 app/api/draft/route.ts
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -40,8 +39,6 @@ export async function GET(request: Request) {
 Then, import the [`draftMode`](/docs/app/api-reference/functions/draft-mode) function and call the `enable()` method.
 
 app/api/draft/route.ts
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -74,17 +71,15 @@ Terminal
 https://<your-site>/api/draft?secret=<token>&slug=<path>
 ```
 
-> *   `<your-site>` should be your deployment domain.
-> *   `<token>` should be replaced with the secret token you generated.
-> *   `<path>` should be the path for the page that you want to view. If you want to view `/posts/one`, then you should use `&slug=/posts/one`.
+> -   `<your-site>` should be your deployment domain.
+> -   `<token>` should be replaced with the secret token you generated.
+> -   `<path>` should be the path for the page that you want to view. If you want to view `/posts/one`, then you should use `&slug=/posts/one`.
 > 
 > Your headless CMS might allow you to include a variable in the draft URL so that `<path>` can be set dynamically based on the CMS’s data like so: `&slug=/posts/{entry.fields.slug}`
 
 3.  In your Route Handler, check that the secret matches and that the `slug` parameter exists (if not, the request should fail), call `draftMode.enable()` to set the cookie. Then, redirect the browser to the path specified by `slug`:
 
 app/api/draft/route.ts
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -135,8 +130,6 @@ Furthermore, the value of `isEnabled` will be `true`.
 
 app/page.tsx
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -181,20 +174,4 @@ API Reference for the draftMode function.
 
 ](/docs/app/api-reference/functions/draft-mode)
 
-[Previous
-
-Deploying to Platforms
-
-](/docs/app/guides/deploying-to-platforms)
-
-[Next
-
-Environment Variables
-
-](/docs/app/guides/environment-variables)
-
 Was this helpful?
-
-supported.
-
-Send

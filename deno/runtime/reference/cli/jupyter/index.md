@@ -5,21 +5,22 @@ canonical_url: "https://docs.deno.com/runtime/reference/cli/jupyter/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:54:21.620Z"
-content_hash: "28e4db2e3d6c9921981fd6823caf0379f96be9e2b8ac9a9f398e4bde4fdfd11c"
+last_crawled_at: "2026-04-27T17:30:36.992Z"
+content_hash: "3f666ba4b54e9e03985ea7f511364ecfed2b8f117aaf061fa7517b760ecb1281"
 menu_path: ["Jupyter Kernel for Deno"]
 section_path: []
+content_language: "en"
 ---
-On this page
+**On this page**
 
-*   [Quickstart](#quickstart)
-    *   [VS Code](#vs-code)
-    *   [JetBrains IDEs](#jetbrains-ides)
-*   [Rich content output](#rich-content-output)
-*   [prompt and confirm APIs](#prompt-and-confirm-apis)
-*   [IO pub channel broadcasting](#io-pub-channel-broadcasting)
-*   [Examples](#examples)
-*   [jupyter console integration](#jupyter-console-integration)
+-   [Quickstart](#quickstart)
+    -   [VS Code](#vs-code)
+    -   [JetBrains IDEs](#jetbrains-ides)
+-   [Rich content output](#rich-content-output)
+-   [prompt and confirm APIs](#prompt-and-confirm-apis)
+-   [IO pub channel broadcasting](#io-pub-channel-broadcasting)
+-   [Examples](#examples)
+-   [jupyter console integration](#jupyter-console-integration)
 
 Deno ships with a built-in Jupyter kernel that allows you to write JavaScript and TypeScript; use Web and Deno APIs and import `npm` packages straight in your interactive notebooks.
 
@@ -35,15 +36,15 @@ You can run `deno jupyter --install` to force installation of the kernel. Deno a
 
 After completing the installation process, the Deno kernel will be available in the notebook creation dialog in JupyterLab and the classic notebook:
 
-![Jupyter notebook kernel selection](/runtime/reference/images/jupyter_notebook.png)
+![Jupyter notebook kernel selection](https://docs.deno.com/runtime/reference/images/jupyter_notebook.png)
 
 You can use the Deno Jupyter kernel in any editor that supports Jupyter notebooks.
 
 ### VS Code
 
-*   Install the [VSCode Jupyter extension](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter)
-*   Open or create a notebook file by opening the Command Palette (Ctrl+Shift+P) and selecting "Create: New Jupyter Notebook". This can be done manually by creating a file with the ".ipynb" file extension.
-*   When on a new or existing Notebook, click creating a new Jupyter Notebook select "Jupyter kernels" and then select Deno
+-   Install the [VSCode Jupyter extension](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter)
+-   Open or create a notebook file by opening the Command Palette (Ctrl+Shift+P) and selecting "Create: New Jupyter Notebook". This can be done manually by creating a file with the ".ipynb" file extension.
+-   When on a new or existing Notebook, click creating a new Jupyter Notebook select "Jupyter kernels" and then select Deno
 
 ![Selecting Deno in VS Code](https://github.com/denoland/deno-docs/assets/836375/32f0ccc3-35f7-47e5-84f4-17c20a5b5732)
 
@@ -105,7 +106,7 @@ await Deno.jupyter.display({
 }, { raw: true });
 ```
 
-![ API example](/runtime/reference/images/jupyter-display.png)
+![ API example](https://docs.deno.com/runtime/reference/images/jupyter-display.png)
 
 Your notebook frontend will automatically select the "richest" MIME type to display based on its capabilities.
 
@@ -121,7 +122,7 @@ Deno.jupyter.html`<h1>Hello, world!</h1>
 <p>Lorem ipsum <i>dolor</i> <b>sit</b> <u>amet</u></p>`;
 ```
 
-![ API example](/runtime/reference/images/jupyter-html.png)
+![ API example](https://docs.deno.com/runtime/reference/images/jupyter-html.png)
 
 [`Deno.jupyter.md`](/api/deno/~/Deno.jupyter.md) is a tagged template that will render provided string as a Markdown document in the notebook.
 
@@ -132,7 +133,7 @@ Deno.jupyter
 **Interactive compute with Jupyter _built into Deno_!**`;
 ```
 
-![ API example](/runtime/reference/images/jupyter-md.png)
+![ API example](https://docs.deno.com/runtime/reference/images/jupyter-md.png)
 
 [`Deno.jupyter.svg`](/api/deno/~/Deno.jupyter.svg) is a tagged template that will render provided string as an SVG figure in the notebook.
 
@@ -142,7 +143,7 @@ Deno.jupyter.svg`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
     </svg>`;
 ```
 
-![ API example](/runtime/reference/images/jupyter-svg.png)
+![ API example](https://docs.deno.com/runtime/reference/images/jupyter-svg.png)
 
 [`Deno.jupyter.image`](/api/deno/~/Deno.jupyter.image) is function that will render a JPG or PNG image. You can pass a filepath, or already read bytes:
 
@@ -206,7 +207,7 @@ Plot.plot({
 });
 ```
 
-![Example plot generated using  library](/runtime/reference/images/jupyter-plot.png)
+![Example plot generated using  library](https://docs.deno.com/runtime/reference/images/jupyter-plot.png)
 
 See [https://github.com/rgbkrk/denotebooks](https://github.com/rgbkrk/denotebooks) for more advanced examples leveraging data analysis and visualisation libraries like Polars, Observable and d3.
 
@@ -214,4 +215,4 @@ See [https://github.com/rgbkrk/denotebooks](https://github.com/rgbkrk/denotebook
 
 You can also use Deno Jupyter kernel in the `jupyter console` REPL. To do that, you should launch your console with `jupyter console --kernel deno`.
 
-![Using the Deno kernel in a CLI](/runtime/reference/images/jupyter-cli.gif)
+![Using the Deno kernel in a CLI](https://docs.deno.com/runtime/reference/images/jupyter-cli.gif)

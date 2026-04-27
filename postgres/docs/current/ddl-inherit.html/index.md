@@ -5,14 +5,12 @@ canonical_url: "https://www.postgresql.org/docs/current/ddl-inherit.html"
 docset: "postgres"
 kind: "database"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:41:15.806Z"
-content_hash: "5aedafcf421e182c1511621abb526ec44ef256712f7d8282f548e7c04fb330ff"
+last_crawled_at: "2026-04-27T20:45:18.537Z"
+content_hash: "35165debae36b7b9ad6bb8ce6a170a895a199e89d1e909b783c6651257c3584e"
 menu_path: ["PostgreSQL: Documentation: 18: 5.11. Inheritance"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/ddl-identity-columns.html/index.md", "title": "PostgreSQL: Documentation: 18: 5.3.\u00a0Identity Columns"}
-nav_next: {"path": "postgres/docs/current/ddl-others.html/index.md", "title": "PostgreSQL: Documentation: 18: 5.14.\u00a0Other Database Objects"}
+content_language: "en"
 ---
-
 PostgreSQL implements table inheritance, which can be a useful tool for database designers. (SQL:1999 and later define a type inheritance feature, which differs in many respects from the features described here.)
 
 Let's start with an example: suppose we are trying to build a data model for cities. Each state has many cities, but only one capital. We want to be able to quickly retrieve the capital city for any particular state. This can be done by creating two tables, one for state capitals and one for cities that are not capitals. However, what happens when we want to ask for data about a city, regardless of whether it is a capital or not? The inheritance feature can help to resolve this problem. We define the `capitals` table so that it inherits from `cities`:
@@ -127,11 +125,11 @@ Note that not all SQL commands are able to work on inheritance hierarchies. Comm
 
 A serious limitation of the inheritance feature is that indexes (including unique constraints) and foreign key constraints only apply to single tables, not to their inheritance children. This is true on both the referencing and referenced sides of a foreign key constraint. Thus, in the terms of the above example:
 
-*   If we declared `cities`.`name` to be `UNIQUE` or a `PRIMARY KEY`, this would not stop the `capitals` table from having rows with names duplicating rows in `cities`. And those duplicate rows would by default show up in queries from `cities`. In fact, by default `capitals` would have no unique constraint at all, and so could contain multiple rows with the same name. You could add a unique constraint to `capitals`, but this would not prevent duplication compared to `cities`.
+-   If we declared `cities`.`name` to be `UNIQUE` or a `PRIMARY KEY`, this would not stop the `capitals` table from having rows with names duplicating rows in `cities`. And those duplicate rows would by default show up in queries from `cities`. In fact, by default `capitals` would have no unique constraint at all, and so could contain multiple rows with the same name. You could add a unique constraint to `capitals`, but this would not prevent duplication compared to `cities`.
     
-*   Similarly, if we were to specify that `cities`.`name` `REFERENCES` some other table, this constraint would not automatically propagate to `capitals`. In this case you could work around it by manually adding the same `REFERENCES` constraint to `capitals`.
+-   Similarly, if we were to specify that `cities`.`name` `REFERENCES` some other table, this constraint would not automatically propagate to `capitals`. In this case you could work around it by manually adding the same `REFERENCES` constraint to `capitals`.
     
-*   Specifying that another table's column `REFERENCES cities(name)` would allow the other table to contain city names, but not capital names. There is no good workaround for this case.
+-   Specifying that another table's column `REFERENCES cities(name)` would allow the other table to contain city names, but not capital names. There is no good workaround for this case.
     
 
 Some functionality not implemented for inheritance hierarchies is implemented for declarative partitioning. Considerable care is needed in deciding whether partitioning with legacy inheritance is useful for your application.

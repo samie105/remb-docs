@@ -5,13 +5,12 @@ canonical_url: "https://docs.deno.com/api/web/storage"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:14:30.309Z"
-content_hash: "2473f0d61069c53a6fcda667d397f8b86bd90a3ca22ceb6a8bc7e761bd638a7c"
+last_crawled_at: "2026-04-27T18:00:18.482Z"
+content_hash: "34c29169fb56bf51d54936db18362cf38077884395aac91545f9050ea7956f57"
 menu_path: ["Storage - Web documentation"]
 section_path: []
+content_language: "en"
 ---
-### Interfaces [#](#Interfaces)
-
 I
 
 v
@@ -20,15 +19,13 @@ v
 
 This Web Storage API interface provides access to a particular domain's session or local storage. It allows, for example, the addition, modification, or deletion of stored data items.
 
-*   [clear](./././~/Storage#method_clear_0)
-*   [getItem](./././~/Storage#method_getitem_0)
-*   [key](./././~/Storage#method_key_0)
-*   [length](./././~/Storage#property_length)
-*   [prototype](./././~/Storage#property_prototype)
-*   [removeItem](./././~/Storage#method_removeitem_0)
-*   [setItem](./././~/Storage#method_setitem_0)
-
-### Variables [#](#Variables)
+-   [clear](./././~/Storage#method_clear_0)
+-   [getItem](./././~/Storage#method_getitem_0)
+-   [key](./././~/Storage#method_key_0)
+-   [length](./././~/Storage#property_length)
+-   [prototype](./././~/Storage#property_prototype)
+-   [removeItem](./././~/Storage#method_removeitem_0)
+-   [setItem](./././~/Storage#method_setitem_0)
 
 v
 

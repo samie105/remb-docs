@@ -5,41 +5,46 @@ canonical_url: "https://tailwindcss.com/docs/filter-invert"
 docset: "tailwind"
 kind: "framework"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:08:22.820Z"
-content_hash: "dd243900818c22f361554a8f38f2905671486dd9ad5da3bd7b08c2ce24cdd065"
+last_crawled_at: "2026-04-27T20:26:53.060Z"
+content_hash: "ddd2630a265cab2bc7b7822ba194fe6cb536edc98630ee68b3fd92e6e7f89d98"
 menu_path: ["filter: invert()"]
 section_path: []
-nav_prev: {"path": "tailwind/docs/filter-hue-rotate/index.md", "title": "filter: hue-rotate()"}
-nav_next: {"path": "tailwind/docs/filter-saturate/index.md", "title": "filter: saturate()"}
+content_language: "en"
 ---
+[](/)
+
+[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
+
+1.  Filters
+2.  invert
+
+Filters
 
 # filter: invert()
 
 Utilities for applying invert filters to an element.
 
-Class
-
-Styles
-
-`invert`
-
+| Class | Styles |
+| --- | --- |
+| `invert` | 
 `filter: invert(100%);`
 
-`invert-<number>`
+ |
+| `invert-<number>` | 
 
 `filter: invert(<number>%);`
 
-`invert-(<custom-property>)`
+ |
+| `invert-(<custom-property>)` | 
 
 `filter: invert(var(<custom-property>));`
 
-`invert-[<value>]`
+ |
+| `invert-[<value>]` | 
 
 `filter: invert(<value>);`
 
-## [Examples](#examples)
-
-### [Basic example](#basic-example)
+ |
 
 Use utilities like `invert` and `invert-20` to control the color inversion of an element:
 
@@ -59,8 +64,6 @@ invert
 <img class="invert-0" src="/img/mountains.jpg" /><img class="invert-20" src="/img/mountains.jpg" /><img class="invert" src="/img/mountains.jpg" />
 ```
 
-### [Using a custom value](#using-a-custom-value)
-
 Use the `invert-[<value>]` syntax to set the color inversion based on a completely custom value:
 
 ```
@@ -75,8 +78,6 @@ For CSS variables, you can also use the `invert-(<custom-property>)` syntax:
 
 This is just a shorthand for `invert-[var(<custom-property>)]` that adds the `var()` function for you automatically.
 
-### [Responsive design](#responsive-design)
-
 Prefix a `filter: invert()` utility with a breakpoint variant like `md:` to only apply the utility at medium screen sizes and above:
 
 ```
@@ -87,24 +88,20 @@ Learn more about using variants in the [variants documentation](/docs/hover-focu
 
 ### On this page
 
-*   [Quick reference](#quick-reference)
-*   [Examples](#examples)
-    *   [Basic example](#basic-example)
-    *   [Using a custom value](#using-a-custom-value)
-    *   [Responsive design](#responsive-design)
+-   [Quick reference](#quick-reference)
+-   [Examples](#examples)
+    -   [Basic example](#basic-example)
+    -   [Using a custom value](#using-a-custom-value)
+    -   [Responsive design](#responsive-design)
 
-[
+![Build UIs that don’t suck — 5-day mini-course](/_next/static/media/course-promo.d3d6bc78.jpg)
 
-![Refactoring UI](/_next/static/media/book-promo.3012c0f6.png)
+5-day mini-course
 
-From the creators of Tailwind CSS
+Build UIs that don’t suck.
 
-Make your ideas look awesome, without relying on a designer.
+Short, tactical video lessons from the creator of Tailwind CSS, delivered directly to your inbox every day for a week.
 
-> “This is the survival kit I wish I had when I started building apps.”
-> 
-> Derrick Reimer, SavvyCal
-
-](https://www.refactoringui.com/?ref=sidebar)
+[Get the free course](/build-uis-that-dont-suck)
 
 Copyright © 2026 Tailwind Labs Inc.·[Trademark Policy](/brand)

@@ -5,57 +5,15 @@ canonical_url: "https://tailwindcss.com/docs/align-self"
 docset: "tailwind"
 kind: "framework"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:49:49.382Z"
-content_hash: "a6632226d6b45f1cd623a1f02cd2d88394cdb0746cb5c24bde3bcab9f6125e88"
+last_crawled_at: "2026-04-27T20:01:50.182Z"
+content_hash: "ff43c8c7bab04bfeb931b6c5efe98ca6d3fa55292b6f79a054bd21ee4ffe391a"
 menu_path: ["align-self"]
 section_path: []
-nav_prev: {"path": "tailwind/docs/align-items/index.md", "title": "align-items"}
-nav_next: {"path": "tailwind/docs/place-content/index.md", "title": "place-content"}
+content_language: "en"
 ---
-
 Flexbox & Grid
 
 Utilities for controlling how an individual flex or grid item is positioned along its container's cross axis.
-
-Class
-
-Styles
-
-`self-auto`
-
-`align-self: auto;`
-
-`self-start`
-
-`align-self: flex-start;`
-
-`self-end`
-
-`align-self: flex-end;`
-
-`self-end-safe`
-
-`align-self: safe flex-end;`
-
-`self-center`
-
-`align-self: center;`
-
-`self-center-safe`
-
-`align-self: safe center;`
-
-`self-stretch`
-
-`align-self: stretch;`
-
-`self-baseline`
-
-`align-self: baseline;`
-
-`self-baseline-last`
-
-`align-self: last baseline;`
 
 ## [Examples](#examples)
 
@@ -169,4 +127,4 @@ Prefix an `align-self` utility with a breakpoint variant like `md:` to only appl
 <div class="self-auto md:self-end ...">  <!-- ... --></div>
 ```
 
-Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).
+Learn more about using variants in the [variants documentation](https://tailwindcss.com/docs/hover-focus-and-other-states).

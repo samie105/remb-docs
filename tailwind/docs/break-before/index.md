@@ -5,65 +5,72 @@ canonical_url: "https://tailwindcss.com/docs/break-before"
 docset: "tailwind"
 kind: "framework"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:40:34.158Z"
-content_hash: "00c49062058fa7f380b2ca0700cc12cf51d5df63c58c1cde4695c32f90bf901a"
+last_crawled_at: "2026-04-27T19:51:27.255Z"
+content_hash: "92bbd31a8cab6a867015bb9c89a0b01a9155d4f02f26104c59cebfb5f719b89d"
 menu_path: ["break-before"]
 section_path: []
-nav_prev: {"path": "tailwind/docs/break-after/index.md", "title": "break-after"}
-nav_next: {"path": "tailwind/docs/break-inside/index.md", "title": "break-inside"}
+content_language: "en"
 ---
+[](/)
+
+[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
+
+1.  Layout
+2.  break-before
+
+Layout
 
 # break-before
 
 Utilities for controlling how a column or page should break before an element.
 
-Class
-
-Styles
-
-`break-before-auto`
-
+| Class | Styles |
+| --- | --- |
+| `break-before-auto` | 
 `break-before: auto;`
 
-`break-before-avoid`
+ |
+| `break-before-avoid` | 
 
 `break-before: avoid;`
 
-`break-before-all`
+ |
+| `break-before-all` | 
 
 `break-before: all;`
 
-`break-before-avoid-page`
+ |
+| `break-before-avoid-page` | 
 
 `break-before: avoid-page;`
 
-`break-before-page`
+ |
+| `break-before-page` | 
 
 `break-before: page;`
 
-`break-before-left`
+ |
+| `break-before-left` | 
 
 `break-before: left;`
 
-`break-before-right`
+ |
+| `break-before-right` | 
 
 `break-before: right;`
 
-`break-before-column`
+ |
+| `break-before-column` | 
 
 `break-before: column;`
 
-## [Examples](#examples)
-
-### [Basic example](#basic-example)
+ |
 
 Use utilities like `break-before-column` and `break-before-page` to control how a column or page break should behave before an element:
 
 ```
 <div class="columns-2">  <p>Well, let me tell you something, ...</p>  <p class="break-before-column">Sure, go ahead, laugh...</p>  <p>Maybe we can live without...</p>  <p>Look. If you think this is...</p></div>
 ```
-
-### [Responsive design](#responsive-design)
 
 Prefix a `break-before` utility with a breakpoint variant like `md:` to only apply the utility at medium screen sizes and above:
 
@@ -75,19 +82,23 @@ Learn more about using variants in the [variants documentation](/docs/hover-focu
 
 ### On this page
 
-*   [Quick reference](#quick-reference)
-*   [Examples](#examples)
-    *   [Basic example](#basic-example)
-    *   [Responsive design](#responsive-design)
+-   [Quick reference](#quick-reference)
+-   [Examples](#examples)
+    -   [Basic example](#basic-example)
+    -   [Responsive design](#responsive-design)
 
-![Build UIs that don’t suck — 5-day mini-course](/_next/static/media/course-promo.d3d6bc78.jpg)
+[
 
-5-day mini-course
+![Refactoring UI](/_next/static/media/book-promo.3012c0f6.png)
 
-Build UIs that don’t suck.
+From the creators of Tailwind CSS
 
-Short, tactical video lessons from the creator of Tailwind CSS, delivered directly to your inbox every day for a week.
+Make your ideas look awesome, without relying on a designer.
 
-[Get the free course](/build-uis-that-dont-suck)
+> “This is the survival kit I wish I had when I started building apps.”
+> 
+> Derrick Reimer, SavvyCal
+
+](https://www.refactoringui.com/?ref=sidebar)
 
 Copyright © 2026 Tailwind Labs Inc.·[Trademark Policy](/brand)

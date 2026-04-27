@@ -5,14 +5,12 @@ canonical_url: "https://www.postgresql.org/docs/current/sql-syntax-lexical.html"
 docset: "postgres"
 kind: "database"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:46:10.201Z"
-content_hash: "edf0bc6a25dcf3047f3173410a316192e2c2d3a97d69b3e71ea6ea83a433fd7e"
+last_crawled_at: "2026-04-27T20:47:19.169Z"
+content_hash: "b1ad2a6a451f9b2e81543ef14878b14f6fffba9721e345aa9a295d7e037579b0"
 menu_path: ["PostgreSQL: Documentation: 18: 4.1. Lexical Structure"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/sql-syntax-calling-funcs.html/index.md", "title": "PostgreSQL: Documentation: 18: 4.3.\u00a0Calling Functions"}
-nav_next: {"path": "postgres/docs/current/sql-truncate.html/index.md", "title": "PostgreSQL: Documentation: 18: TRUNCATE"}
+content_language: "en"
 ---
-
 SQL input consists of a sequence of _commands_. A command is composed of a sequence of _tokens_, terminated by a semicolon (“;”). The end of the input stream also terminates a command. Which tokens are valid depends on the syntax of the particular command.
 
 A token can be a _key word_, an _identifier_, a _quoted identifier_, a _literal_ (or constant), or a special character symbol. Tokens are normally separated by whitespace (space, tab, newline), but need not be if there is no ambiguity (which is generally only the case if a special character is adjacent to some other token type).
@@ -107,42 +105,16 @@ PostgreSQL also accepts “escape” string constants, which are an extension to
 **Table 4.1. Backslash Escape Sequences**
 
  
-
-Backslash Escape Sequence
-
-Interpretation
-
-`\b`
-
-backspace
-
-`\f`
-
-form feed
-
-`\n`
-
-newline
-
-`\r`
-
-carriage return
-
-`\t`
-
-tab
-
-``\_`o`_``, ``\_`oo`_``, ``\_`ooo`_`` (_`o`_ = 0–7)
-
-octal byte value
-
-``\x_`h`_``, ``\x_`hh`_`` (_`h`_ = 0–9, A–F)
-
-hexadecimal byte value
-
-``\u_`xxxx`_``, ``\U_`xxxxxxxx`_`` (_`x`_ = 0–9, A–F)
-
-16 or 32-bit hexadecimal Unicode character value
+| Backslash Escape Sequence | Interpretation |
+| --- | --- |
+| `\b` | backspace |
+| `\f` | form feed |
+| `\n` | newline |
+| `\r` | carriage return |
+| `\t` | tab |
+| ``\_`o`_``, ``\_`oo`_``, ``\_`ooo`_`` (_`o`_ = 0–7) | octal byte value |
+| ``\x_`h`_``, ``\x_`hh`_`` (_`h`_ = 0–9, A–F) | hexadecimal byte value |
+| ``\u_`xxxx`_``, ``\U_`xxxxxxxx`_`` (_`x`_ = 0–9, A–F) | 16 or 32-bit hexadecimal Unicode character value |
 
 Any other character following a backslash is taken literally. Thus, to include a backslash character, write two backslashes (`\\`). Also, a single quote can be included in an escape string by writing `\'`, in addition to the normal way of `''`.
 
@@ -150,9 +122,9 @@ It is your responsibility that the byte sequences you create, especially when us
 
 ### Caution
 
-If the configuration parameter [standard\_conforming\_strings](postgres/docs/current/runtime-config-compatible.html/index.md#GUC-STANDARD-CONFORMING-STRINGS) is `off`, then PostgreSQL recognizes backslash escapes in both regular and escape string constants. However, as of PostgreSQL 9.1, the default is `on`, meaning that backslash escapes are recognized only in escape string constants. This behavior is more standards-compliant, but might break applications which rely on the historical behavior, where backslash escapes were always recognized. As a workaround, you can set this parameter to `off`, but it is better to migrate away from using backslash escapes. If you need to use a backslash escape to represent a special character, write the string constant with an `E`.
+If the configuration parameter [standard\_conforming\_strings](https://www.postgresql.org/docs/current/runtime-config-compatible.html#GUC-STANDARD-CONFORMING-STRINGS) is `off`, then PostgreSQL recognizes backslash escapes in both regular and escape string constants. However, as of PostgreSQL 9.1, the default is `on`, meaning that backslash escapes are recognized only in escape string constants. This behavior is more standards-compliant, but might break applications which rely on the historical behavior, where backslash escapes were always recognized. As a workaround, you can set this parameter to `off`, but it is better to migrate away from using backslash escapes. If you need to use a backslash escape to represent a special character, write the string constant with an `E`.
 
-In addition to `standard_conforming_strings`, the configuration parameters [escape\_string\_warning](postgres/docs/current/runtime-config-compatible.html/index.md#GUC-ESCAPE-STRING-WARNING) and [backslash\_quote](postgres/docs/current/runtime-config-compatible.html/index.md#GUC-BACKSLASH-QUOTE) govern treatment of backslashes in string constants.
+In addition to `standard_conforming_strings`, the configuration parameters [escape\_string\_warning](https://www.postgresql.org/docs/current/runtime-config-compatible.html#GUC-ESCAPE-STRING-WARNING) and [backslash\_quote](https://www.postgresql.org/docs/current/runtime-config-compatible.html#GUC-BACKSLASH-QUOTE) govern treatment of backslashes in string constants.
 
 The character with the code zero cannot be in a string constant.
 
@@ -178,7 +150,7 @@ Either the 4-digit or the 6-digit escape form can be used to specify UTF-16 surr
 
 If the server encoding is not UTF-8, the Unicode code point identified by one of these escape sequences is converted to the actual server encoding; an error is reported if that's not possible.
 
-Also, the Unicode escape syntax for string constants only works when the configuration parameter [standard\_conforming\_strings](postgres/docs/current/runtime-config-compatible.html/index.md#GUC-STANDARD-CONFORMING-STRINGS) is turned on. This is because otherwise this syntax could confuse clients that parse the SQL statements to the point that it could lead to SQL injections and similar security issues. If the parameter is set to off, this syntax will be rejected with an error message.
+Also, the Unicode escape syntax for string constants only works when the configuration parameter [standard\_conforming\_strings](https://www.postgresql.org/docs/current/runtime-config-compatible.html#GUC-STANDARD-CONFORMING-STRINGS) is turned on. This is because otherwise this syntax could confuse clients that parse the SQL statements to the point that it could lead to SQL injections and similar security issues. If the parameter is set to off, this syntax will be rejected with an error message.
 
 #### 4.1.2.4. Dollar-Quoted String Constants [#](#SQL-SYNTAX-DOLLAR-QUOTING)
 
@@ -303,9 +275,9 @@ An operator name is a sequence of up to `NAMEDATALEN`\-1 (63 by default) charact
 
 There are a few restrictions on operator names, however:
 
-*   `--` and `/*` cannot appear anywhere in an operator name, since they will be taken as the start of a comment.
+-   `--` and `/*` cannot appear anywhere in an operator name, since they will be taken as the start of a comment.
     
-*   A multiple-character operator name cannot end in `+` or `-`, unless the name also contains at least one of these characters:
+-   A multiple-character operator name cannot end in `+` or `-`, unless the name also contains at least one of these characters:
     
       
     ~ ! @ # % ^ & | \` ?  
@@ -319,21 +291,21 @@ When working with non-SQL-standard operator names, you will usually need to sepa
 
 Some characters that are not alphanumeric have a special meaning that is different from being an operator. Details on the usage can be found at the location where the respective syntax element is described. This section only exists to advise the existence and summarize the purposes of these characters.
 
-*   A dollar sign (`$`) followed by digits is used to represent a positional parameter in the body of a function definition or a prepared statement. In other contexts the dollar sign can be part of an identifier or a dollar-quoted string constant.
+-   A dollar sign (`$`) followed by digits is used to represent a positional parameter in the body of a function definition or a prepared statement. In other contexts the dollar sign can be part of an identifier or a dollar-quoted string constant.
     
-*   Parentheses (`()`) have their usual meaning to group expressions and enforce precedence. In some cases parentheses are required as part of the fixed syntax of a particular SQL command.
+-   Parentheses (`()`) have their usual meaning to group expressions and enforce precedence. In some cases parentheses are required as part of the fixed syntax of a particular SQL command.
     
-*   Brackets (`[]`) are used to select the elements of an array. See [Section 8.15](https://www.postgresql.org/docs/current/arrays.html "8.15. Arrays") for more information on arrays.
+-   Brackets (`[]`) are used to select the elements of an array. See [Section 8.15](https://www.postgresql.org/docs/current/arrays.html "8.15. Arrays") for more information on arrays.
     
-*   Commas (`,`) are used in some syntactical constructs to separate the elements of a list.
+-   Commas (`,`) are used in some syntactical constructs to separate the elements of a list.
     
-*   The semicolon (`;`) terminates an SQL command. It cannot appear anywhere within a command, except within a string constant or quoted identifier.
+-   The semicolon (`;`) terminates an SQL command. It cannot appear anywhere within a command, except within a string constant or quoted identifier.
     
-*   The colon (`:`) is used to select “slices” from arrays. (See [Section 8.15](https://www.postgresql.org/docs/current/arrays.html "8.15. Arrays").) In certain SQL dialects (such as Embedded SQL), the colon is used to prefix variable names.
+-   The colon (`:`) is used to select “slices” from arrays. (See [Section 8.15](https://www.postgresql.org/docs/current/arrays.html "8.15. Arrays").) In certain SQL dialects (such as Embedded SQL), the colon is used to prefix variable names.
     
-*   The asterisk (`*`) is used in some contexts to denote all the fields of a table row or composite value. It also has a special meaning when used as the argument of an aggregate function, namely that the aggregate does not require any explicit parameter.
+-   The asterisk (`*`) is used in some contexts to denote all the fields of a table row or composite value. It also has a special meaning when used as the argument of an aggregate function, namely that the aggregate does not require any explicit parameter.
     
-*   The period (`.`) is used in numeric constants, and to separate schema, table, and column names.
+-   The period (`.`) is used in numeric constants, and to separate schema, table, and column names.
     
 
 ### 4.1.6. Operator Precedence [#](#SQL-PRECEDENCE)
@@ -343,108 +315,24 @@ Some characters that are not alphanumeric have a special meaning that is differe
 **Table 4.2. Operator Precedence (highest to lowest)**
 
   
-
-Operator/Element
-
-Associativity
-
-Description
-
-`.`
-
-left
-
-table/column name separator
-
-`::`
-
-left
-
-PostgreSQL\-style typecast
-
-`[` `]`
-
-left
-
-array element selection
-
-`+` `-`
-
-right
-
-unary plus, unary minus
-
-`COLLATE`
-
-left
-
-collation selection
-
-`AT`
-
-left
-
-`AT TIME ZONE`, `AT LOCAL`
-
-`^`
-
-left
-
-exponentiation
-
-`*` `/` `%`
-
-left
-
-multiplication, division, modulo
-
-`+` `-`
-
-left
-
-addition, subtraction
-
-(any other operator)
-
-left
-
-all other native and user-defined operators
-
-`BETWEEN` `IN` `LIKE` `ILIKE` `SIMILAR`
-
- 
-
-range containment, set membership, string matching
-
-`<` `>` `=` `<=` `>=` `<>`
-
- 
-
-comparison operators
-
-`IS` `ISNULL` `NOTNULL`
-
- 
-
-`IS TRUE`, `IS FALSE`, `IS NULL`, `IS DISTINCT FROM`, etc.
-
-`NOT`
-
-right
-
-logical negation
-
-`AND`
-
-left
-
-logical conjunction
-
-`OR`
-
-left
-
-logical disjunction
+| Operator/Element | Associativity | Description |
+| --- | --- | --- |
+| `.` | left | table/column name separator |
+| `::` | left | PostgreSQL\-style typecast |
+| `[` `]` | left | array element selection |
+| `+` `-` | right | unary plus, unary minus |
+| `COLLATE` | left | collation selection |
+| `AT` | left | `AT TIME ZONE`, `AT LOCAL` |
+| `^` | left | exponentiation |
+| `*` `/` `%` | left | multiplication, division, modulo |
+| `+` `-` | left | addition, subtraction |
+| (any other operator) | left | all other native and user-defined operators |
+| `BETWEEN` `IN` `LIKE` `ILIKE` `SIMILAR` |   | range containment, set membership, string matching |
+| `<` `>` `=` `<=` `>=` `<>` |   | comparison operators |
+| `IS` `ISNULL` `NOTNULL` |   | `IS TRUE`, `IS FALSE`, `IS NULL`, `IS DISTINCT FROM`, etc. |
+| `NOT` | right | logical negation |
+| `AND` | left | logical conjunction |
+| `OR` | left | logical disjunction |
 
 Note that the operator precedence rules also apply to user-defined operators that have the same names as the built-in operators mentioned above. For example, if you define a “+” operator for some custom data type it will have the same precedence as the built-in “+” operator, no matter what yours does.
 

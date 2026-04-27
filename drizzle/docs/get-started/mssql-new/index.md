@@ -5,14 +5,12 @@ canonical_url: "https://orm.drizzle.team/docs/get-started/mssql-new"
 docset: "drizzle"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:55:49.247Z"
-content_hash: "6517bb7ef220f117f4105b7bde5ff355277383ef2eece077a5372d1f12e684c0"
+last_crawled_at: "2026-04-27T18:46:36.266Z"
+content_hash: "be8bf92796f296320e5e11bfd7a1938398d80769fa6038520dbfdaa132038da7"
 menu_path: ["Get Started with Drizzle and MSSQL"]
 section_path: []
-nav_prev: {"path": "drizzle/docs/get-started/mssql-existing/index.md", "title": "Get Started with Drizzle and MSSQL in existing project"}
-nav_next: {"path": "drizzle/docs/get-started/mysql-existing/index.md", "title": "Get Started with Drizzle and MySQL in existing project"}
+content_language: "en"
 ---
-
 ## Get Started with Drizzle and MSSQL
 
 WARNING
@@ -23,9 +21,9 @@ This page explains concepts available on drizzle versions `1.0.0-beta.2` and hig
 
 This guide assumes familiarity with:
 
-*   **dotenv** - package for managing environment variables - [read here](https://www.npmjs.com/package/dotenv)
-*   **tsx** - package for running TypeScript files - [read here](https://tsx.is/)
-*   **node-mssql** - package for querying your MSSQL database - [read here](https://github.com/tediousjs/node-mssql)
+-   **dotenv** - package for managing environment variables - [read here](https://www.npmjs.com/package/dotenv)
+-   **tsx** - package for running TypeScript files - [read here](https://tsx.is/)
+-   **node-mssql** - package for querying your MSSQL database - [read here](https://github.com/tediousjs/node-mssql)
 
 Drizzle has native support for PostgreSQL connections with the `node-mssql` driver.
 
@@ -33,7 +31,7 @@ Drizzle has native support for PostgreSQL connections with the `node-mssql` driv
 
 This is the basic file structure of the project. In the `src/db` directory, we have table definition in `schema.ts`. In `drizzle` folder there are sql migration file and snapshots.
 
-```
+```plaintext
 📦 <project root>
  ├ 📂 drizzle
  ├ 📂 src
@@ -47,14 +45,6 @@ This is the basic file structure of the project. In the `src/db` directory, we h
 ```
 
 #### Step 1 - Install **mssql** package[](#step-1---install-mssql-package)
-
-npm
-
-yarn
-
-pnpm
-
-bun
 
 ```
 npm i drizzle-orm@beta mssql dotenv
@@ -80,10 +70,6 @@ bun add -D drizzle-kit@beta tsx
 
 Create a `.env` file in the root of your project and add your database connection variable:
 
-```
-DATABASE_URL=
-```
-
 #### Step 3 - Connect Drizzle ORM to the database[](#step-3---connect-drizzle-orm-to-the-database)
 
 Create a `index.ts` file in the `src/db` directory and initialize the connection:
@@ -94,14 +80,14 @@ node-mssql with config
 
 your node-mssql driver
 
-```
+```typescript
 import 'dotenv/config';
 import { drizzle } from 'drizzle-orm/node-mssql';
 
 const db = drizzle(process.env.DATABASE_URL!);
 ```
 
-```
+```typescript
 import 'dotenv/config';
 import { drizzle } from 'drizzle-orm/node-mssql';
 
@@ -114,7 +100,7 @@ const db = drizzle({
 });
 ```
 
-```
+```typescript
 import { drizzle } from "drizzle-orm/node-mssql";
 import type { ConnectionPool } from 'mssql';
 
@@ -128,7 +114,7 @@ const result = await db.execute('select 1');
 
 Create a `schema.ts` file in the `src/db` directory and declare your table:
 
-```
+```typescript
 import { int, mssqlTable, varchar } from "drizzle-orm/mssql-core";
 
 export const usersTable = mssqlTable("users", {
@@ -141,11 +127,11 @@ export const usersTable = mssqlTable("users", {
 
 #### Step 5 - Setup Drizzle config file[](#step-5---setup-drizzle-config-file)
 
-**Drizzle config** - a configuration file that is used by [Drizzle Kit](drizzle/docs/kit-overview/index.md) and contains all the information about your database connection, migration folder and schema files.
+**Drizzle config** - a configuration file that is used by [Drizzle Kit](https://orm.drizzle.team/docs/kit-overview) and contains all the information about your database connection, migration folder and schema files.
 
 Create a `drizzle.config.ts` file in the root of your project and add the following content:
 
-```
+```typescript
 import 'dotenv/config';
 import { defineConfig } from 'drizzle-kit';
 
@@ -163,11 +149,11 @@ export default defineConfig({
 
 You can directly apply changes to your database using the `drizzle-kit push` command. This is a convenient method for quickly testing new schema designs or modifications in a local development environment, allowing for rapid iterations without the need to manage migration files:
 
-```
+```bash
 npx drizzle-kit push
 ```
 
-Read more about the push command in [documentation](drizzle/docs/drizzle-kit-push/index.md).
+Read more about the push command in [documentation](https://orm.drizzle.team/docs/drizzle-kit-push).
 
 Tips
 
@@ -175,23 +161,23 @@ Alternatively, you can generate migrations using the `drizzle-kit generate` comm
 
 Generate migrations:
 
-```
+```bash
 npx drizzle-kit generate
 ```
 
 Apply migrations:
 
-```
+```bash
 npx drizzle-kit migrate
 ```
 
-Read more about migration process in [documentation](drizzle/docs/kit-overview/index.md).
+Read more about migration process in [documentation](https://orm.drizzle.team/docs/kit-overview).
 
 #### Step 7 - Seed and Query the database[](#step-7---seed-and-query-the-database)
 
 Let’s **update** the `src/index.ts` file with queries to create, read, update, and delete users
 
-```
+```typescript
 import 'dotenv/config';
 import { drizzle } from 'drizzle-orm/node-mssql';
 import { eq } from 'drizzle-orm';
@@ -243,14 +229,6 @@ You’ve already installed `tsx`, so we can run our queries now
 
 **Run `index.ts` script**
 
-npm
-
-yarn
-
-pnpm
-
-bun
-
 ```
 npx tsx src/index.ts
 ```
@@ -271,7 +249,7 @@ tips
 
 We suggest using `bun` to run TypeScript files. With `bun`, such scripts can be executed without issues or additional settings, regardless of whether your project is configured with CommonJS (CJS), ECMAScript Modules (ESM), or any other module format. To run a script with `bun`, use the following command:
 
-```
+```bash
 bun src/index.ts
 ```
 

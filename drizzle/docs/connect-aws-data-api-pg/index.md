@@ -5,23 +5,13 @@ canonical_url: "https://orm.drizzle.team/docs/connect-aws-data-api-pg"
 docset: "drizzle"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:36:49.659Z"
-content_hash: "9e17a244ef20566f2c70414d988a0ef5defa4911994809ef127aebd698e71f59"
+last_crawled_at: "2026-04-27T18:26:53.975Z"
+content_hash: "15fc848af935bd0b269cd0bdabce2b0a6bdf59077348a2fa7b27178abea77ba5"
 menu_path: ["Drizzle <> AWS Data API Postgres"]
 section_path: []
-nav_prev: {"path": "drizzle/docs/connect-react-native-sqlite/index.md", "title": "Drizzle <> React Native SQLite"}
-nav_next: {"path": "drizzle/docs/connect-aws-data-api-mysql/index.md", "title": "Drizzle <> AWS Data API MySQL"}
+content_language: "en"
 ---
-
 #### Step 1 - Install packages[](#step-1---install-packages)
-
-npm
-
-yarn
-
-pnpm
-
-bun
 
 ```
 npm i drizzle-orm @aws-sdk/client-rds-data
@@ -45,7 +35,7 @@ bun add -D drizzle-kit
 
 #### Step 2 - Initialize the driver and make a query[](#step-2---initialize-the-driver-and-make-a-query)
 
-```
+```typescript
 import { drizzle } from 'drizzle-orm/aws-data-api/pg';
 
 // These three properties are required. You can also specify
@@ -61,7 +51,7 @@ await db.select().from(...);
 
 If you need to provide your existing driver:
 
-```
+```typescript
 import { drizzle } from 'drizzle-orm/aws-data-api/pg';
 import { RDSDataClient } from '@aws-sdk/client-rds-data';
 

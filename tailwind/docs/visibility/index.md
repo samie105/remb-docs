@@ -5,31 +5,13 @@ canonical_url: "https://tailwindcss.com/docs/visibility"
 docset: "tailwind"
 kind: "framework"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:45:06.858Z"
-content_hash: "530e50aae4b50ab6811af8f93ad0357a8c675a9b03b6f2fed6ec6692289bb2f5"
+last_crawled_at: "2026-04-27T19:55:29.290Z"
+content_hash: "9eee1ea521fd0a9ad5e11f9556863cb696b62a16c48734f52d6f4cb16b9492b6"
 menu_path: ["visibility"]
 section_path: []
-nav_prev: {"path": "tailwind/docs/top-right-bottom-left/index.md", "title": "top / right / bottom / left"}
-nav_next: {"path": "tailwind/docs/z-index/index.md", "title": "z-index"}
+content_language: "en"
 ---
-
 Utilities for controlling the visibility of an element.
-
-Class
-
-Styles
-
-`visible`
-
-`visibility: visible;`
-
-`invisible`
-
-`visibility: hidden;`
-
-`collapse`
-
-`visibility: collapse;`
 
 ## [Examples](#examples)
 
@@ -47,7 +29,7 @@ Use the `invisible` utility to hide an element, but still maintain its place in 
 <div class="grid grid-cols-3 gap-4">  <div>01</div>  <div class="invisible ...">02</div>  <div>03</div></div>
 ```
 
-To completely remove an element from the document, use the [display](tailwind/docs/display/index.md#hidden) property instead.
+To completely remove an element from the document, use the [display](https://tailwindcss.com/docs/display#hidden) property instead.
 
 ### [Collapsing elements](#collapsing-elements)
 
@@ -55,81 +37,27 @@ Use the `collapse` utility to hide table rows, row groups, columns, and column g
 
 Showing all rows
 
-Invoice #
-
-Client
-
-Amount
-
-#100
-
-Pendant Publishing
-
-$2,000.00
-
-#101
-
-Kruger Industrial Smoothing
-
-$545.00
-
-#102
-
-J. Peterman
-
-$10,000.25
+| Invoice # | Client | Amount |
+| --- | --- | --- |
+| #100 | Pendant Publishing | $2,000.00 |
+| #101 | Kruger Industrial Smoothing | $545.00 |
+| #102 | J. Peterman | $10,000.25 |
 
 Hiding a row using `` `collapse` ``
 
-Invoice #
-
-Client
-
-Amount
-
-#100
-
-Pendant Publishing
-
-$2,000.00
-
-#101
-
-Kruger Industrial Smoothing
-
-$545.00
-
-#102
-
-J. Peterman
-
-$10,000.25
+| Invoice # | Client | Amount |
+| --- | --- | --- |
+| #100 | Pendant Publishing | $2,000.00 |
+| #101 | Kruger Industrial Smoothing | $545.00 |
+| #102 | J. Peterman | $10,000.25 |
 
 Hiding a row using `` `hidden` ``
 
-Invoice #
-
-Client
-
-Amount
-
-#100
-
-Pendant Publishing
-
-$2,000.00
-
-#101
-
-Kruger Industrial Smoothing
-
-$545.00
-
-#102
-
-J. Peterman
-
-$10,000.25
+| Invoice # | Client | Amount |
+| --- | --- | --- |
+| #100 | Pendant Publishing | $2,000.00 |
+| #101 | Kruger Industrial Smoothing | $545.00 |
+| #102 | J. Peterman | $10,000.25 |
 
 ```
 <table>  <thead>    <tr>      <th>Invoice #</th>      <th>Client</th>      <th>Amount</th>    </tr>  </thead>  <tbody>    <tr>      <td>#100</td>      <td>Pendant Publishing</td>      <td>$2,000.00</td>    </tr>    <tr class="collapse">      <td>#101</td>      <td>Kruger Industrial Smoothing</td>      <td>$545.00</td>    </tr>    <tr>      <td>#102</td>      <td>J. Peterman</td>      <td>$10,000.25</td>    </tr>  </tbody></table>
@@ -161,4 +89,4 @@ Prefix a `visibility` utility with a breakpoint variant like `md:` to only apply
 <div class="visible md:invisible ...">  <!-- ... --></div>
 ```
 
-Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).
+Learn more about using variants in the [variants documentation](https://tailwindcss.com/docs/hover-focus-and-other-states).

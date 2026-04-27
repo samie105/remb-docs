@@ -5,14 +5,12 @@ canonical_url: "https://orm.drizzle.team/docs/prisma"
 docset: "drizzle"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:18:09.829Z"
-content_hash: "fa465e3b8f87fa08bfb2ea246d001840c45bdc6c1f179147d21b4776e36b0e2e"
+last_crawled_at: "2026-04-27T19:19:57.965Z"
+content_hash: "85b1e66993aaeb9c279022518794c98d2645a813073b134baf32f2ddeedb6a40"
 menu_path: ["Drizzle extension for Prisma"]
 section_path: []
-nav_prev: {"path": "drizzle/docs/effect-schema/index.md", "title": "effect-schema"}
-nav_next: {"path": "drizzle/docs/eslint-plugin/index.md", "title": "ESLint Drizzle Plugin"}
+content_language: "en"
 ---
-
 ## Drizzle extension for Prisma
 
 If you have an existing project with Prisma and want to try Drizzle or gradually adopt it, you can use our first-class extension that will add Drizzle API to your Prisma client. It will allow you to use Drizzle alongside your Prisma queries reusing your existing DB connection.
@@ -22,14 +20,6 @@ If you have an existing project with Prisma and want to try Drizzle or gradually
 #### Install dependencies[](#install-dependencies)
 
 You need to install Drizzle itself and a generator package that will create Drizzle schema from the Prisma schema.
-
-npm
-
-yarn
-
-pnpm
-
-bun
 
 ```
 npm i drizzle-orm@latest
@@ -55,7 +45,7 @@ bun add -D drizzle-prisma-generator
 
 Add Drizzle generator to your Prisma schema. `output` is the path where generated Drizzle schema TS files will be placed.
 
-```
+```prisma
 generator client {
   provider = "prisma-client-js"
 }
@@ -83,19 +73,13 @@ model User {
 
 #### Generate Drizzle schema[](#generate-drizzle-schema)
 
-```
+```bash
 prisma generate
 ```
 
 #### Add Drizzle extension to your Prisma client[](#add-drizzle-extension-to-your-prisma-client)
 
-PostgreSQL
-
-MySQL
-
-SQLite
-
-```
+```ts
 import { PrismaClient } from '@prisma/client';
 import { drizzle } from 'drizzle-orm/prisma/pg';
 
@@ -106,7 +90,7 @@ const prisma = new PrismaClient().$extends(drizzle());
 
 In order to use Drizzle query builder, you need references to Drizzle tables. You can import them from the output path that you specified in the generator config.
 
-```
+```ts
 import { User } from './drizzle';
 
 await prisma.$drizzle.insert().into(User).values({ email: 'sorenbs@drizzle.team', name: 'Søren' });
@@ -115,6 +99,6 @@ const users = await prisma.$drizzle.select().from(User);
 
 ## Limitations[](#limitations)
 
-*   [Relational queries](drizzle/docs/rqb/index.md) are not supported due to a [Prisma driver limitation](https://github.com/prisma/prisma/issues/17576). Because of it, Prisma is unable to return query results in array format, which is required for relational queries to work.
-*   In SQLite, `.values()` (e.g. `await db.select().from(table).values()`) is not supported, because of the same reason as above.
-*   [Prepared statements](drizzle/docs/perf-queries/index.md#prepared-statement) support is limited - `.prepare()` will only build the SQL query on Drizzle side, because there is no Prisma API for prepared queries.
+-   [Relational queries](https://orm.drizzle.team/docs/rqb) are not supported due to a [Prisma driver limitation](https://github.com/prisma/prisma/issues/17576). Because of it, Prisma is unable to return query results in array format, which is required for relational queries to work.
+-   In SQLite, `.values()` (e.g. `await db.select().from(table).values()`) is not supported, because of the same reason as above.
+-   [Prepared statements](https://orm.drizzle.team/docs/perf-queries#prepared-statement) support is limited - `.prepare()` will only build the SQL query on Drizzle side, because there is no Prisma API for prepared queries.

@@ -5,23 +5,21 @@ canonical_url: "https://www.postgresql.org/docs/current/xfunc.html"
 docset: "postgres"
 kind: "database"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:40:54.750Z"
-content_hash: "14094696174546d91a05a15c5fb90e863549df8e59269104bc19f241f2b789e0"
+last_crawled_at: "2026-04-27T20:45:10.066Z"
+content_hash: "5ebf7ab5d68c3dee9d10556d8fb70675e4736d7b2aa52eb34b3b2cd19a705d81"
 menu_path: ["PostgreSQL: Documentation: 18: 36.3. User-Defined Functions"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/xfunc-pl.html/index.md", "title": "PostgreSQL: Documentation: 18: 36.8.\u00a0Procedural Language Functions"}
-nav_next: {"path": "postgres/docs/current/xindex.html/index.md", "title": "PostgreSQL: Documentation: 18: 36.16.\u00a0Interfacing Extensions to Indexes"}
+content_language: "en"
 ---
-
 PostgreSQL provides four kinds of functions:
 
-*   query language functions (functions written in SQL) ([Section 36.5](https://www.postgresql.org/docs/current/xfunc-sql.html "36.5. Query Language (SQL) Functions"))
+-   query language functions (functions written in SQL) ([Section 36.5](https://www.postgresql.org/docs/current/xfunc-sql.html "36.5. Query Language (SQL) Functions"))
     
-*   procedural language functions (functions written in, for example, PL/pgSQL or PL/Tcl) ([Section 36.8](https://www.postgresql.org/docs/current/xfunc-pl.html "36.8. Procedural Language Functions"))
+-   procedural language functions (functions written in, for example, PL/pgSQL or PL/Tcl) ([Section 36.8](https://www.postgresql.org/docs/current/xfunc-pl.html "36.8. Procedural Language Functions"))
     
-*   internal functions ([Section 36.9](https://www.postgresql.org/docs/current/xfunc-internal.html "36.9. Internal Functions"))
+-   internal functions ([Section 36.9](https://www.postgresql.org/docs/current/xfunc-internal.html "36.9. Internal Functions"))
     
-*   C-language functions ([Section 36.10](https://www.postgresql.org/docs/current/xfunc-c.html "36.10. C-Language Functions"))
+-   C-language functions ([Section 36.10](https://www.postgresql.org/docs/current/xfunc-c.html "36.10. C-Language Functions"))
     
 
 Every kind of function can take base types, composite types, or combinations of these as arguments (parameters). In addition, every kind of function can return a base type or a composite type. Functions can also be defined to return sets of base or composite values.

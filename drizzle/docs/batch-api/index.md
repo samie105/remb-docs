@@ -5,14 +5,12 @@ canonical_url: "https://orm.drizzle.team/docs/batch-api"
 docset: "drizzle"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:32:25.856Z"
-content_hash: "269219505662e56d6d2b4c541d6ee0302c24dd08b3342d95fc2d33bf3b898803"
+last_crawled_at: "2026-04-27T18:24:30.059Z"
+content_hash: "3a73b9f33a735642ebbb5cbfc60681b790fe9f6e58d2a398c5e868542f57ff6d"
 menu_path: ["Batch API"]
 section_path: []
-nav_prev: {"path": "drizzle/docs/transactions/index.md", "title": "Transactions"}
-nav_next: {"path": "drizzle/docs/cache/index.md", "title": "Cache"}
+content_language: "en"
 ---
-
 ## Batch API
 
 **LibSQL Batch API explanation**: _[source](https://docs.turso.tech/sdk/ts/reference#batch-transactions)_
@@ -25,7 +23,7 @@ nav_next: {"path": "drizzle/docs/cache/index.md", "title": "Cache"}
 
 Drizzle ORM provides APIs to run SQL statements in batch for `LibSQL`, `Neon` and `D1`:
 
-```
+```ts
 const batchResponse: BatchResponse = await db.batch([
 	db.insert(usersTable).values({ id: 1, name: 'John' }).returning({ id: usersTable.id }),
 	db.update(usersTable).set({ name: 'Dan' }).where(eq(usersTable.id, 1)),
@@ -37,13 +35,7 @@ const batchResponse: BatchResponse = await db.batch([
 
 Type for `batchResponse` in this example would be:
 
-libSQL
-
-Neon
-
-D1
-
-```
+```ts
 type BatchResponse = [
 	{
 		id: number;
@@ -68,7 +60,7 @@ type BatchResponse = [
 ]
 ```
 
-```
+```ts
 type BatchResponse = [
 	{
 		id: number;
@@ -93,7 +85,7 @@ type BatchResponse = [
 ]
 ```
 
-```
+```ts
 type BatchResponse = [
   {
     id: number;
@@ -120,7 +112,7 @@ type BatchResponse = [
 
 All possible builders that can be used inside `db.batch`:
 
-```
+```ts
 db.all(),
 db.get(),
 db.values(),

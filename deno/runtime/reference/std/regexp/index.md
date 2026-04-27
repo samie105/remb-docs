@@ -5,15 +5,16 @@ canonical_url: "https://docs.deno.com/runtime/reference/std/regexp/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:05:21.134Z"
-content_hash: "de9af1c0396071ad2873e3415a788c21375cc4e5d1650043d023095c99673f6a"
+last_crawled_at: "2026-04-27T17:46:49.961Z"
+content_hash: "f641e493a0b992ce331ee8748beae992275b70c8109acc63a6adcf070dfae41a"
 menu_path: ["@std/regexp"]
 section_path: []
+content_language: "en"
 ---
-On this page
+**On this page**
 
-*   [Overview](#overview)
-    *   [Add to your project](#add-to-your-project)
+-   [Overview](#overview)
+    -   [Add to your project](#add-to-your-project)
 
 ## Overview
 

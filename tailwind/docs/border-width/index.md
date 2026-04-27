@@ -5,59 +5,13 @@ canonical_url: "https://tailwindcss.com/docs/border-width"
 docset: "tailwind"
 kind: "framework"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:02:50.541Z"
-content_hash: "bc150873d7e105ee9ae5f5f6aebafa28b8f3ea4a0bc1c190510dd3ff6f7d0bc2"
+last_crawled_at: "2026-04-27T20:18:40.245Z"
+content_hash: "5b2c61d17d6def875989af9520152a581d94a675e6fd475afe3badde0cbcab6d"
 menu_path: ["border-width"]
 section_path: []
-nav_prev: {"path": "tailwind/docs/border-radius/index.md", "title": "border-radius"}
-nav_next: {"path": "tailwind/docs/border-color/index.md", "title": "border-color"}
+content_language: "en"
 ---
-
 Utilities for controlling the width of an element's borders.
-
-Class
-
-Styles
-
-`border`
-
-`border-width: 1px;`
-
-`border-<number>`
-
-`border-width: <number>px;`
-
-`border-(length:<custom-property>)`
-
-`border-width: var(<custom-property>);`
-
-`border-[<value>]`
-
-`border-width: <value>;`
-
-`border-x`
-
-`border-inline-width: 1px;`
-
-`border-x-<number>`
-
-`border-inline-width: <number>px;`
-
-`border-x-(length:<custom-property>)`
-
-`border-inline-width: var(<custom-property>);`
-
-`border-x-[<value>]`
-
-`border-inline-width: <value>;`
-
-`border-y`
-
-`border-block-width: 1px;`
-
-`border-y-<number>`
-
-`border-block-width: <number>px;`
 
 ## [Examples](#examples)
 
@@ -175,4 +129,4 @@ Prefix a `border-width` utility with a breakpoint variant like `md:` to only app
 <div class="border-2 md:border-t-4 ...">  <!-- ... --></div>
 ```
 
-Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).
+Learn more about using variants in the [variants documentation](https://tailwindcss.com/docs/hover-focus-and-other-states).

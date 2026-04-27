@@ -5,24 +5,25 @@ canonical_url: "https://docs.deno.com/runtime/reference/cli/run/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:55:30.613Z"
-content_hash: "28e87d1600493ab0fc7fe70a51fdb274dc5caaf232f6436c0434acb0c31c4ea3"
+last_crawled_at: "2026-04-27T17:32:26.932Z"
+content_hash: "c3e22534e3c6aaecc9af1191a061832d19d890496171ea0194e3d3ab9124e9e0"
 menu_path: ["deno run"]
 section_path: []
+content_language: "en"
 ---
-On this page
+**On this page**
 
-*   [Usage](#usage)
-    *   [Permissions examples](#permissions-examples)
-*   [Watch](#watch)
-*   [Running a package.json script](#running-a-package.json-script)
-*   [Running code from stdin](#running-code-from-stdin)
-*   [Terminate run](#terminate-run)
-*   [Type checking options](#type-checking-options)
-*   [Dependency management options](#dependency-management-options)
-*   [Options](#options)
-*   [Debugging options](#debugging-options)
-*   [File watching options](#file-watching-options)
+-   [Usage](#usage)
+    -   [Permissions examples](#permissions-examples)
+-   [Watch](#watch)
+-   [Running a package.json script](#running-a-package.json-script)
+-   [Running code from stdin](#running-code-from-stdin)
+-   [Terminate run](#terminate-run)
+-   [Type checking options](#type-checking-options)
+-   [Dependency management options](#dependency-management-options)
+-   [Options](#options)
+-   [Debugging options](#debugging-options)
+-   [File watching options](#file-watching-options)
 
 ## Usage
 

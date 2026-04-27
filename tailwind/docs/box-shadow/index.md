@@ -5,59 +5,13 @@ canonical_url: "https://tailwindcss.com/docs/box-shadow"
 docset: "tailwind"
 kind: "framework"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:04:07.493Z"
-content_hash: "05414728dc97bda0e37059ec4e133cdb57be9cc4402a3ecb68b4d63a1b339c9c"
+last_crawled_at: "2026-04-27T20:20:30.673Z"
+content_hash: "ed308ee8f7f6b85d915c60d8275b598b4c3f1b5517e46aca7a6976260c4aa7a9"
 menu_path: ["box-shadow"]
 section_path: []
-nav_prev: {"path": "tailwind/docs/outline-offset/index.md", "title": "outline-offset"}
-nav_next: {"path": "tailwind/docs/text-shadow/index.md", "title": "text-shadow"}
+content_language: "en"
 ---
-
 Utilities for controlling the box shadow of an element.
-
-Class
-
-Styles
-
-`shadow-2xs`
-
-`box-shadow: var(--shadow-2xs); /* 0 1px rgb(0 0 0 / 0.05) */`
-
-`shadow-xs`
-
-`box-shadow: var(--shadow-xs); /* 0 1px 2px 0 rgb(0 0 0 / 0.05) */`
-
-`shadow-sm`
-
-`box-shadow: var(--shadow-sm); /* 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1) */`
-
-`shadow-md`
-
-`box-shadow: var(--shadow-md); /* 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1) */`
-
-`shadow-lg`
-
-`box-shadow: var(--shadow-lg); /* 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1) */`
-
-`shadow-xl`
-
-`box-shadow: var(--shadow-xl); /* 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1) */`
-
-`shadow-2xl`
-
-`box-shadow: var(--shadow-2xl); /* 0 25px 50px -12px rgb(0 0 0 / 0.25) */`
-
-`shadow-none`
-
-`box-shadow: 0 0 #0000;`
-
-`shadow-(<custom-property>)`
-
-`box-shadow: var(<custom-property>);`
-
-`shadow-(color:<custom-property>)`
-
-`--tw-shadow-color: var(<custom-property>);`
 
 ## [Examples](#examples)
 
@@ -231,7 +185,7 @@ Prefix a `box-shadow` utility with a breakpoint variant like `md:` to only apply
 <div class="shadow-none md:shadow-lg ...">  <!-- ... --></div>
 ```
 
-Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).
+Learn more about using variants in the [variants documentation](https://tailwindcss.com/docs/hover-focus-and-other-states).
 
 ## [Customizing your theme](#customizing-your-theme)
 
@@ -249,7 +203,7 @@ Now the `shadow-3xl` utility can be used in your markup:
 <div class="shadow-3xl">  <!-- ... --></div>
 ```
 
-Learn more about customizing your theme in the [theme documentation](tailwind/docs/theme/index.md#customizing-your-theme).
+Learn more about customizing your theme in the [theme documentation](https://tailwindcss.com/docs/theme#customizing-your-theme).
 
 ### [Customizing inset shadows](#customizing-inset-shadows)
 
@@ -265,7 +219,7 @@ Now the `inset-shadow-md` utility can be used in your markup:
 <div class="inset-shadow-md">  <!-- ... --></div>
 ```
 
-Learn more about customizing your theme in the [theme documentation](tailwind/docs/theme/index.md#customizing-your-theme).
+Learn more about customizing your theme in the [theme documentation](https://tailwindcss.com/docs/theme#customizing-your-theme).
 
 ### [Customizing shadow colors](#customizing-shadow-colors)
 
@@ -281,4 +235,4 @@ Now utilities like `shadow-regal-blue`,`inset-shadow-regal-blue`,`ring-regal-blu
 <div class="shadow-regal-blue">  <!-- ... --></div>
 ```
 
-Learn more about customizing your theme in the [theme documentation](tailwind/docs/theme/index.md#customizing-your-theme).
+Learn more about customizing your theme in the [theme documentation](https://tailwindcss.com/docs/theme#customizing-your-theme).

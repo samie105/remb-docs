@@ -5,21 +5,22 @@ canonical_url: "https://docs.deno.com/runtime/contributing/docs/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:45:19.921Z"
-content_hash: "048b3c61a9db3384306c8b9f8fa3b646fd5d530dbcfa35566ce5542a3b340277"
+last_crawled_at: "2026-04-27T17:18:24.110Z"
+content_hash: "7b175703a615884961c8d2239ad62172a8fd7e7fc5af942731636b1a3eb253eb"
 menu_path: ["Documentation guidelines"]
 section_path: []
+content_language: "en"
 ---
-On this page
+**On this page**
 
-*   [Running the docs locally](#running-the-docs-locally)
+-   [Running the docs locally](#running-the-docs-locally)
 
 We welcome and appreciate contributions to the Deno documentation. If you find an issue, or want to add to the docs, each page has an "Edit this page" button at the bottom of the page. Clicking this button will take you to the source file for that page in the [Deno docs repository](https://github.com/denoland/docs/). You can then make your changes and submit a pull request.
 
 Some pages in the Deno documentation are generated from source files in the Deno repository. These pages are not directly editable:
 
-*   The [API reference](/api/deno/) pages are generated from type definitions in the Deno repository.
-*   The [CLI reference](/runtime/reference/cli/) pages for each individual command are generated from source files in the Deno repository.
+-   The [API reference](/api/deno/) pages are generated from type definitions in the Deno repository.
+-   The [CLI reference](/runtime/reference/cli/) pages for each individual command are generated from source files in the Deno repository.
 
 If you find an issue with one of these pages, you can either submit a pull request to the Deno repository. Or raise an issue in the [Deno docs repository](https://github.com/denoland/docs/issues) and we'll get it fixed.
 

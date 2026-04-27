@@ -5,61 +5,71 @@ canonical_url: "https://tailwindcss.com/docs/align-content"
 docset: "tailwind"
 kind: "framework"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:49:51.366Z"
-content_hash: "6f83e2e8b1c64251e3071af6e68290b316ee0e5d196a5acffd2384766ae921c3"
+last_crawled_at: "2026-04-27T20:01:14.819Z"
+content_hash: "40b0493e675505b164344a3b8284462810df82af60a7af79dec38d2d60a56a12"
 menu_path: ["align-content"]
 section_path: []
-nav_prev: {"path": "tailwind/docs/justify-self/index.md", "title": "justify-self"}
-nav_next: {"path": "tailwind/docs/align-items/index.md", "title": "align-items"}
+content_language: "en"
 ---
+[](/)
+
+[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
+
+1.  Flexbox & Grid
+2.  align-content
+
+Flexbox & Grid
 
 # align-content
 
 Utilities for controlling how rows are positioned in multi-row flex and grid containers.
 
-Class
-
-Styles
-
-`content-normal`
-
+| Class | Styles |
+| --- | --- |
+| `content-normal` | 
 `align-content: normal;`
 
-`content-center`
+ |
+| `content-center` | 
 
 `align-content: center;`
 
-`content-start`
+ |
+| `content-start` | 
 
 `align-content: flex-start;`
 
-`content-end`
+ |
+| `content-end` | 
 
 `align-content: flex-end;`
 
-`content-between`
+ |
+| `content-between` | 
 
 `align-content: space-between;`
 
-`content-around`
+ |
+| `content-around` | 
 
 `align-content: space-around;`
 
-`content-evenly`
+ |
+| `content-evenly` | 
 
 `align-content: space-evenly;`
 
-`content-baseline`
+ |
+| `content-baseline` | 
 
 `align-content: baseline;`
 
-`content-stretch`
+ |
+| `content-stretch` | 
 
 `align-content: stretch;`
 
-## [Examples](#examples)
-
-### [Start](#start)
+ |
 
 Use `content-start` to pack rows in a container against the start of the cross axis:
 
@@ -77,8 +87,6 @@ Use `content-start` to pack rows in a container against the start of the cross a
 <div class="grid h-56 grid-cols-3 content-start gap-4 ...">  <div>01</div>  <div>02</div>  <div>03</div>  <div>04</div>  <div>05</div></div>
 ```
 
-### [Center](#center)
-
 Use `content-center` to pack rows in a container in the center of the cross axis:
 
 01
@@ -94,8 +102,6 @@ Use `content-center` to pack rows in a container in the center of the cross axis
 ```
 <div class="grid h-56 grid-cols-3 content-center gap-4 ...">  <div>01</div>  <div>02</div>  <div>03</div>  <div>04</div>  <div>05</div></div>
 ```
-
-### [End](#end)
 
 Use `content-end` to pack rows in a container against the end of the cross axis:
 
@@ -113,8 +119,6 @@ Use `content-end` to pack rows in a container against the end of the cross axis:
 <div class="grid h-56 grid-cols-3 content-end gap-4 ...">  <div>01</div>  <div>02</div>  <div>03</div>  <div>04</div>  <div>05</div></div>
 ```
 
-### [Space between](#space-between)
-
 Use `content-between` to distribute rows in a container such that there is an equal amount of space between each line:
 
 01
@@ -130,8 +134,6 @@ Use `content-between` to distribute rows in a container such that there is an eq
 ```
 <div class="grid h-56 grid-cols-3 content-between gap-4 ...">  <div>01</div>  <div>02</div>  <div>03</div>  <div>04</div>  <div>05</div></div>
 ```
-
-### [Space around](#space-around)
 
 Use `content-around` to distribute rows in a container such that there is an equal amount of space around each line:
 
@@ -149,8 +151,6 @@ Use `content-around` to distribute rows in a container such that there is an equ
 <div class="grid h-56 grid-cols-3 content-around gap-4 ...">  <div>01</div>  <div>02</div>  <div>03</div>  <div>04</div>  <div>05</div></div>
 ```
 
-### [Space evenly](#space-evenly)
-
 Use `content-evenly` to distribute rows in a container such that there is an equal amount of space around each item, but also accounting for the doubling of space you would normally see between each item when using `content-around`:
 
 01
@@ -166,8 +166,6 @@ Use `content-evenly` to distribute rows in a container such that there is an equ
 ```
 <div class="grid h-56 grid-cols-3 content-evenly gap-4 ...">  <div>01</div>  <div>02</div>  <div>03</div>  <div>04</div>  <div>05</div></div>
 ```
-
-### [Stretch](#stretch)
 
 Use `content-stretch` to allow content items to fill the available space along the container’s cross axis:
 
@@ -185,8 +183,6 @@ Use `content-stretch` to allow content items to fill the available space along t
 <div class="grid h-56 grid-cols-3 content-stretch gap-4 ...">  <div>01</div>  <div>02</div>  <div>03</div>  <div>04</div>  <div>05</div></div>
 ```
 
-### [Normal](#normal)
-
 Use `content-normal` to pack content items in their default position as if no `align-content` value was set:
 
 01
@@ -203,8 +199,6 @@ Use `content-normal` to pack content items in their default position as if no `a
 <div class="grid h-56 grid-cols-3 content-normal gap-4 ...">  <div>01</div>  <div>02</div>  <div>03</div>  <div>04</div>  <div>05</div></div>
 ```
 
-### [Responsive design](#responsive-design)
-
 Prefix an `align-content` utility with a breakpoint variant like `md:` to only apply the utility at medium screen sizes and above:
 
 ```
@@ -215,26 +209,30 @@ Learn more about using variants in the [variants documentation](/docs/hover-focu
 
 ### On this page
 
-*   [Quick reference](#quick-reference)
-*   [Examples](#examples)
-    *   [Start](#start)
-    *   [Center](#center)
-    *   [End](#end)
-    *   [Space between](#space-between)
-    *   [Space around](#space-around)
-    *   [Space evenly](#space-evenly)
-    *   [Stretch](#stretch)
-    *   [Normal](#normal)
-    *   [Responsive design](#responsive-design)
+-   [Quick reference](#quick-reference)
+-   [Examples](#examples)
+    -   [Start](#start)
+    -   [Center](#center)
+    -   [End](#end)
+    -   [Space between](#space-between)
+    -   [Space around](#space-around)
+    -   [Space evenly](#space-evenly)
+    -   [Stretch](#stretch)
+    -   [Normal](#normal)
+    -   [Responsive design](#responsive-design)
 
-![Build UIs that don’t suck — 5-day mini-course](/_next/static/media/course-promo.d3d6bc78.jpg)
+[
 
-5-day mini-course
+![Refactoring UI](/_next/static/media/book-promo.3012c0f6.png)
 
-Build UIs that don’t suck.
+From the creators of Tailwind CSS
 
-Short, tactical video lessons from the creator of Tailwind CSS, delivered directly to your inbox every day for a week.
+Make your ideas look awesome, without relying on a designer.
 
-[Get the free course](/build-uis-that-dont-suck)
+> “This is the survival kit I wish I had when I started building apps.”
+> 
+> Derrick Reimer, SavvyCal
+
+](https://www.refactoringui.com/?ref=sidebar)
 
 Copyright © 2026 Tailwind Labs Inc.·[Trademark Policy](/brand)

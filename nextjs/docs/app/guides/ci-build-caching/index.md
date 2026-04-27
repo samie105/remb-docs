@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/app/guides/ci-build-caching"
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:14:17.982Z"
-content_hash: "159606f61c5f9e1f4b292eb68dd650db6b725a95223681d10339d29e5d2f9260"
+last_crawled_at: "2026-04-27T18:13:05.133Z"
+content_hash: "f364e3ac27e8e3bb6fe13b9824fd558c102ae87f49757ad20e694105d4c6959d"
 menu_path: ["How to configure Continuous Integration (CI) build caching"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/guides/cdn-caching/index.md", "title": "Using a CDN with Next.js"}
-nav_next: {"path": "nextjs/docs/app/guides/content-security-policy/index.md", "title": "How to set a Content Security Policy (CSP) for your Next.js application"}
+version: "latest"
+content_language: "en"
 ---
+[App Router](/docs/app)[Guides](/docs/app/guides)CI Build Caching
 
 # How to configure Continuous Integration (CI) build caching
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 To improve build performance, Next.js saves a cache to `.next/cache` that is shared between builds.
 
@@ -181,20 +182,4 @@ stage("Build") {
 }
 ```
 
-[Previous
-
-CDN Caching
-
-](/docs/app/guides/cdn-caching)
-
-[Next
-
-Content Security Policy
-
-](/docs/app/guides/content-security-policy)
-
 Was this helpful?
-
-supported.
-
-Send

@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/app/api-reference/functions/unstable_cac
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:12:16.558Z"
-content_hash: "0adfce0c28c4799a176de93bb8441573090e7d358a5f535cc8bffb4e071b4b48"
+last_crawled_at: "2026-04-27T18:10:58.686Z"
+content_hash: "aa35fcfdee3a070c27260ea7d5cfef85e63ef98ec0bfa019d5cda835ac7c99cc"
 menu_path: ["unstable_cache"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/api-reference/functions/unauthorized/index.md", "title": "unauthorized"}
-nav_next: {"path": "nextjs/docs/app/api-reference/functions/unstable_noStore/index.md", "title": "unstable_noStore"}
+version: "latest"
+content_language: "en"
 ---
+[API Reference](/docs/app/api-reference)[Functions](/docs/app/api-reference/functions)unstable\_cache
 
 # unstable\_cache
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 > **Note:** This API has been replaced by [`use cache`](/docs/app/api-reference/directives/use-cache) in Next.js 16. We recommend opting into [Cache Components](/docs/app/getting-started/caching) and replacing `unstable_cache` with the `use cache` directive.
 
@@ -38,8 +39,8 @@ export default async function Component({ userID }) {
 
 > **Good to know**:
 > 
-> *   Accessing uncached data sources such as `headers` or `cookies` inside a cache scope is not supported. If you need this data inside a cached function use `headers` outside of the cached function and pass the required uncached data in as an argument.
-> *   This API uses Next.js' built-in cache to persist the result across requests and deployments. See [Caching and Revalidating](/docs/app/getting-started/caching).
+> -   Accessing uncached data sources such as `headers` or `cookies` inside a cache scope is not supported. If you need this data inside a cached function use `headers` outside of the cached function and pass the required uncached data in as an argument.
+> -   This API uses Next.js' built-in cache to persist the result across requests and deployments. See [Caching and Revalidating](/docs/app/getting-started/caching).
 
 ## Parameters[](#parameters)
 
@@ -47,11 +48,11 @@ export default async function Component({ userID }) {
 const data = unstable_cache(fetchData, keyParts, options)()
 ```
 
-*   `fetchData`: This is an asynchronous function that fetches the data you want to cache. It must be a function that returns a `Promise`.
-*   `keyParts`: This is an extra array of keys that further adds identification to the cache. By default, `unstable_cache` already uses the arguments and the stringified version of your function as the cache key. It is optional in most cases; the only time you need to use it is when you use external variables without passing them as parameters. However, it is important to add closures used within the function if you do not pass them as parameters.
-*   `options`: This is an object that controls how the cache behaves. It can contain the following properties:
-    *   `tags`: An array of tags that can be used to control cache invalidation. Next.js will not use this to uniquely identify the function.
-    *   `revalidate`: The number of seconds after which the cache should be revalidated. Omit or pass `false` to cache indefinitely or until matching `revalidateTag()` or `revalidatePath()` methods are called.
+-   `fetchData`: This is an asynchronous function that fetches the data you want to cache. It must be a function that returns a `Promise`.
+-   `keyParts`: This is an extra array of keys that further adds identification to the cache. By default, `unstable_cache` already uses the arguments and the stringified version of your function as the cache key. It is optional in most cases; the only time you need to use it is when you use external variables without passing them as parameters. However, it is important to add closures used within the function if you do not pass them as parameters.
+-   `options`: This is an object that controls how the cache behaves. It can contain the following properties:
+    -   `tags`: An array of tags that can be used to control cache invalidation. Next.js will not use this to uniquely identify the function.
+    -   `revalidate`: The number of seconds after which the cache should be revalidated. Omit or pass `false` to cache indefinitely or until matching `revalidateTag()` or `revalidatePath()` methods are called.
 
 ## Returns[](#returns)
 
@@ -60,8 +61,6 @@ const data = unstable_cache(fetchData, keyParts, options)()
 ## Example[](#example)
 
 app/page.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -91,28 +90,8 @@ export default async function Page({
 
 ## Version History[](#version-history)
 
-Version
-
-Changes
-
-`v14.0.0`
-
-`unstable_cache` introduced.
-
-[Previous
-
-unauthorized
-
-](/docs/app/api-reference/functions/unauthorized)
-
-[Next
-
-unstable\_noStore
-
-](/docs/app/api-reference/functions/unstable_noStore)
+| Version | Changes |
+| --- | --- |
+| `v14.0.0` | `unstable_cache` introduced. |
 
 Was this helpful?
-
-supported.
-
-Send

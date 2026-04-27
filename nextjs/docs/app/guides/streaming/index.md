@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/app/guides/streaming"
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:16:28.126Z"
-content_hash: "f6cc7f3de972a0e2985f278a54c98f6c92e1b75e8c6be7bddec1f85dc01634fa"
+last_crawled_at: "2026-04-27T18:15:41.825Z"
+content_hash: "0738b3d88c75014a627fffa5cc00ecfe968c2b381a7f90eba0f376188f70a54e"
 menu_path: ["Streaming"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/guides/static-exports/index.md", "title": "How to create a static export of your Next.js application"}
-nav_next: {"path": "nextjs/docs/app/guides/tailwind-v3-css/index.md", "title": "How to install Tailwind CSS v3 in your Next.js application"}
+version: "latest"
+content_language: "en"
 ---
+[App Router](/docs/app)[Guides](/docs/app/guides)Streaming
 
 # Streaming
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 ## What is streaming?[](#what-is-streaming)
 
@@ -29,11 +30,11 @@ React's server renderer produces HTML in chunks aligned with `<Suspense>` bounda
 
 The companion [streaming demo](https://streaming-demo.labs.vercel.dev/) ([source](https://github.com/vercel-labs/streaming-demo)) lets you see each concept from this guide in action:
 
-*   Page-level streaming with `loading.tsx` (skeleton appears instantly, content streams in after ~2s)
-*   Granular streaming with sibling `<Suspense>` boundaries that resolve independently
-*   Hydration comparison: a single blocking pass vs split hydration with Suspense boundaries
-*   Raw HTML streaming in a Route Handler, with early CSS discovery
-*   A configurable `ReadableStream` API endpoint for experimenting with chunk sizes and browser buffering
+-   Page-level streaming with `loading.tsx` (skeleton appears instantly, content streams in after ~2s)
+-   Granular streaming with sibling `<Suspense>` boundaries that resolve independently
+-   Hydration comparison: a single blocking pass vs split hydration with Suspense boundaries
+-   Raw HTML streaming in a Route Handler, with early CSS discovery
+-   A configurable `ReadableStream` API endpoint for experimenting with chunk sizes and browser buffering
 
 ## How the App Router delivers a page[](#how-the-app-router-delivers-a-page)
 
@@ -51,7 +52,7 @@ The component payload is a serialized representation of the component tree that 
 
 Everything that renders before any async work resolves is called the **static shell**: your layouts, navigation, and the fallback UI defined by your `<Suspense>` boundaries. It is sent immediately, giving the user something to see and interact with while dynamic content streams in. With [Cache Components](/docs/app/getting-started/caching), the static shell is prerendered at build time and served instantly from the edge.
 
-![How Server Rendering with Streaming Works](/_next/image?url=https%3A%2F%2Fh8DxKfmAPhn8O0p3.public.blob.vercel-storage.com%2Fdocs%2Flight%2Fserver-rendering-with-streaming.png&w=3840&q=75)![How Server Rendering with Streaming Works](/_next/image?url=https%3A%2F%2Fh8DxKfmAPhn8O0p3.public.blob.vercel-storage.com%2Fdocs%2Fdark%2Fserver-rendering-with-streaming.png&w=3840&q=75)
+![How Server Rendering with Streaming Works](https://h8DxKfmAPhn8O0p3.public.blob.vercel-storage.com/docs/light/server-rendering-with-streaming.png)
 
 Each `<Suspense>` boundary is an independent streaming point. Components inside different boundaries resolve and stream in independently. They don't block each other.
 
@@ -59,11 +60,9 @@ Each `<Suspense>` boundary is an independent streaming point. Components inside 
 
 The simplest way to add streaming is with a `loading.js` file. Place it alongside your `page.js` and Next.js automatically wraps the page content in a `<Suspense>` boundary, using your loading component as the fallback.
 
-![loading.js special file](/_next/image?url=https%3A%2F%2Fh8DxKfmAPhn8O0p3.public.blob.vercel-storage.com%2Fdocs%2Flight%2Floading-special-file.png&w=3840&q=75)![loading.js special file](/_next/image?url=https%3A%2F%2Fh8DxKfmAPhn8O0p3.public.blob.vercel-storage.com%2Fdocs%2Fdark%2Floading-special-file.png&w=3840&q=75)
+![loading.js special file](https://h8DxKfmAPhn8O0p3.public.blob.vercel-storage.com/docs/light/loading-special-file.png)
 
 app/dashboard/loading.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -82,13 +81,13 @@ export default function Loading() {
 
 Behind the scenes, `loading.js` is nested inside `layout.js` and wraps `page.js` in a `<Suspense>` boundary:
 
-![loading.js overview](/_next/image?url=https%3A%2F%2Fh8DxKfmAPhn8O0p3.public.blob.vercel-storage.com%2Fdocs%2Flight%2Floading-overview.png&w=3840&q=75)![loading.js overview](/_next/image?url=https%3A%2F%2Fh8DxKfmAPhn8O0p3.public.blob.vercel-storage.com%2Fdocs%2Fdark%2Floading-overview.png&w=3840&q=75)
+![loading.js overview](https://h8DxKfmAPhn8O0p3.public.blob.vercel-storage.com/docs/light/loading-overview.png)
 
 This means:
 
-*   The layout renders immediately as part of the static shell.
-*   The loading skeleton is shown instantly as the Suspense fallback.
-*   When the page component finishes loading, its HTML replaces the skeleton.
+-   The layout renders immediately as part of the static shell.
+-   The loading skeleton is shown instantly as the Suspense fallback.
+-   When the page component finishes loading, its HTML replaces the skeleton.
 
 `loading.js` is useful when there's nothing meaningful to show until the page's data resolves. If the page needs to await data before it can render anything, a full-page skeleton is a reasonable fallback.
 
@@ -103,8 +102,6 @@ See the [`loading.js` API reference](/docs/app/api-reference/file-conventions/lo
 When multiple components perform async work (fetching data, reading from a database), wrap each one in its own `<Suspense>` boundary. Each boundary streams independently as its async work completes, in whatever order that happens, without blocking each other:
 
 app/dashboard/page.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -141,8 +138,6 @@ In this example, if `Revenue` resolves in 200ms, `RecentOrders` in 1s, and `Reco
 You can nest `<Suspense>` boundaries to create a layered loading experience. For example, a product page might stream the header immediately, the product details next, and the reviews last:
 
 app/product/\[id\]/page.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -187,8 +182,6 @@ Instead, pass the promise down and let the consuming component resolve it inside
 
 app/dashboard/layout.tsx
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -222,8 +215,6 @@ In this example, `<Nav>` and `{children}` render as part of the static shell bec
 The same principle applies to `params` and `searchParams`. Rather than destructuring them at the page level, pass the promise to the component that needs the value:
 
 app/shop/\[category\]/page.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -259,8 +250,6 @@ You can also unwrap the promise inline with `.then()`, so the child component re
 
 app/shop/\[category\]/page.tsx
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -275,33 +264,12 @@ This keeps `ProductGrid` simple (it takes a `string`, not a `Promise`) while sti
 
 ### When to use `loading.js` vs `<Suspense>`[](#when-to-use-loadingjs-vs-suspense)
 
-`loading.js`
-
-`<Suspense>`
-
-**Scope**
-
-Entire page
-
-Any component
-
-**Setup**
-
-Drop in a file
-
-Wrap components explicitly
-
-**Navigation**
-
-Prefetched as instant fallback
-
-Not prefetched by default
-
-**Best for**
-
-Pages where nothing renders without data
-
-Most pages, for granular control
+|  | `loading.js` | `<Suspense>` |
+| --- | --- | --- |
+| **Scope** | Entire page | Any component |
+| **Setup** | Drop in a file | Wrap components explicitly |
+| **Navigation** | Prefetched as instant fallback | Not prefetched by default |
+| **Best for** | Pages where nothing renders without data | Most pages, for granular control |
 
 Prefer explicit `<Suspense>` boundaries close to the dynamic access. When the prerenderer encounters dynamic work, it walks up the tree looking for the nearest Suspense boundary. If none is found, the build fails with a [blocking route error](/docs/messages/blocking-route). A `loading.js` high in the tree is a valid boundary, so the framework finds it and stops, but now the entire page falls back to a full-page skeleton instead of streaming granularly.
 
@@ -316,8 +284,6 @@ Because the HTTP status code (`200 OK`) has already been sent with the first chu
 You can start a fetch in a [Server Component](/docs/app/glossary#server-component) and pass the unresolved promise as a prop to a [Client Component](/docs/app/glossary#client-component). The promise can be passed through as many layers as needed. Only the component that calls React's [`use`](https://react.dev/reference/react/use) API to read the value needs a `<Suspense>` boundary around it:
 
 app/dashboard/page.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -345,8 +311,6 @@ export default function Dashboard() {
 ```
 
 app/dashboard/stats-chart.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -392,8 +356,6 @@ The patterns above rely on React and Suspense to stream UI. Outside of React ren
 
 app/api/stream/route.ts
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -429,8 +391,6 @@ You can also stream files without loading them entirely into memory. Use `FileHa
 
 app/api/download/route.ts
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -462,16 +422,16 @@ Without streaming, the server waits for all data before sending any HTML, so TTF
 
 If your LCP element (a hero image, a main heading, a product photo) is inside a Suspense boundary, it can't paint until that boundary resolves. To keep LCP fast:
 
-*   Keep LCP elements **outside** or **above** Suspense boundaries so they render as part of the static shell.
-*   Use the [`preload`](/docs/app/api-reference/components/image#preload) prop on `next/image` for LCP images. This injects a `<link rel="preload">` into the `<head>`, so the browser starts fetching the image from the very first chunk, before the `<img>` tag even appears in the HTML.
-*   For non-image LCP elements (text, headings), make sure they are not wrapped in a Suspense boundary that depends on slow data.
+-   Keep LCP elements **outside** or **above** Suspense boundaries so they render as part of the static shell.
+-   Use the [`preload`](/docs/app/api-reference/components/image#preload) prop on `next/image` for LCP images. This injects a `<link rel="preload">` into the `<head>`, so the browser starts fetching the image from the very first chunk, before the `<img>` tag even appears in the HTML.
+-   For non-image LCP elements (text, headings), make sure they are not wrapped in a Suspense boundary that depends on slow data.
 
 ### CLS (Cumulative Layout Shift)[](#cls-cumulative-layout-shift)
 
 When a Suspense fallback is replaced by the resolved content, the browser reflows the page. If the fallback and the resolved content are different sizes, the surrounding layout shifts. To minimize CLS:
 
-*   Design skeleton fallbacks that **match the dimensions** of the content they represent. A skeleton with the same height and width as the final card grid prevents shifts.
-*   Use fixed or min-height containers around Suspense boundaries so the space is reserved before content arrives.
+-   Design skeleton fallbacks that **match the dimensions** of the content they represent. A skeleton with the same height and width as the final card grid prevents shifts.
+-   Use fixed or min-height containers around Suspense boundaries so the space is reserved before content arrives.
 
 ### INP (Interaction to Next Paint)[](#inp-interaction-to-next-paint)
 
@@ -496,8 +456,6 @@ When a `<Suspense>` fallback renders or a component suspends, the server must co
 The response body begins streaming when a Suspense fallback renders (for example, a `loading.tsx`) or when a component suspends under a `<Suspense>` boundary. To get a real HTTP status code for errors, place `notFound()` **before** any `await` or `<Suspense>` boundary:
 
 app/post/\[slug\]/page.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -634,25 +592,12 @@ The `<template id="B:0">` markers are the Suspense fallback placeholders. When a
 
 ### Platform support[](#platform-support)
 
-Deployment Option
-
-Supported
-
-[Node.js server](/docs/app/getting-started/deploying#nodejs-server)
-
-Yes
-
-[Docker container](/docs/app/getting-started/deploying#docker)
-
-Yes
-
-[Static export](/docs/app/getting-started/deploying#static-export)
-
-No
-
-[Adapters](/docs/app/getting-started/deploying#adapters)
-
-Platform-specific
+| Deployment Option | Supported |
+| --- | --- |
+| [Node.js server](/docs/app/getting-started/deploying#nodejs-server) | Yes |
+| [Docker container](/docs/app/getting-started/deploying#docker) | Yes |
+| [Static export](/docs/app/getting-started/deploying#static-export) | No |
+| [Adapters](/docs/app/getting-started/deploying#adapters) | Platform-specific |
 
 See the [Self-Hosting guide](/docs/app/guides/self-hosting#streaming-and-suspense) for detailed configuration instructions.
 
@@ -664,10 +609,10 @@ The key decisions are **what to cache** and **where to place Suspense boundaries
 
 ## Further reading[](#further-reading)
 
-*   [RSC Explorer](https://rscexplorer.dev/) - interactive tool to explore the component payload format and see how React reconstructs the tree from streamed chunks
-*   [Streams API on web.dev](https://web.dev/articles/streams) - introduction to the Web Streams API that underpins streaming in Route Handlers
-*   [Chunked transfer encoding (MDN)](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Transfer-Encoding) - the HTTP/1.1 mechanism that enables streaming responses
-*   [browser.engineering](https://browser.engineering/) - deep dive into how browsers handle network responses, rendering, and progressive display
+-   [RSC Explorer](https://rscexplorer.dev/) - interactive tool to explore the component payload format and see how React reconstructs the tree from streamed chunks
+-   [Streams API on web.dev](https://web.dev/articles/streams) - introduction to the Web Streams API that underpins streaming in Route Handlers
+-   [Chunked transfer encoding (MDN)](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Transfer-Encoding) - the HTTP/1.1 mechanism that enables streaming responses
+-   [browser.engineering](https://browser.engineering/) - deep dive into how browsers handle network responses, rendering, and progressive display
 
 Related API references and guides.
 
@@ -703,20 +648,4 @@ Learn how Next.js treats static and dynamic rendering as a spectrum at the compo
 
 ](/docs/app/guides/rendering-philosophy)
 
-[Previous
-
-Static Exports
-
-](/docs/app/guides/static-exports)
-
-[Next
-
-Tailwind CSS v3
-
-](/docs/app/guides/tailwind-v3-css)
-
 Was this helpful?
-
-supported.
-
-Send

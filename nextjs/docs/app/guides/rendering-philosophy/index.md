@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/app/guides/rendering-philosophy"
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:16:07.911Z"
-content_hash: "7f6536e543b2c6e0bbe31963d8e907368d7b65c29f14be860c8ef2a7f4ead145"
+last_crawled_at: "2026-04-27T18:15:20.533Z"
+content_hash: "7ec2387ce3ddf4d46c74d0987770c3d70d0e339e7e0f8267c4344296ef2ed368"
 menu_path: ["Next.js Rendering Philosophy"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/guides/redirecting/index.md", "title": "How to handle redirects in Next.js"}
-nav_next: {"path": "nextjs/docs/app/guides/sass/index.md", "title": "How to use Sass"}
+version: "latest"
+content_language: "en"
 ---
+[App Router](/docs/app)[Guides](/docs/app/guides)Rendering Philosophy
 
 # Next.js Rendering Philosophy
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 ## Static and Dynamic as a Spectrum[](#static-and-dynamic-as-a-spectrum)
 
@@ -29,9 +30,9 @@ This is what Partial Prerendering, [Cache Components](/docs/app/getting-started/
 
 This model benefits developers and users in concrete ways:
 
-*   **Faster perceived load times.** The static shell renders immediately while dynamic content streams in. Users see useful content right away instead of waiting for the entire page to render.
-*   **Incremental caching.** Developers can add caching and revalidation incrementally, without deciding upfront at build time whether a route is static or dynamic. Any page can be revalidated on demand, and any function can be cached with [`use cache`](/docs/app/api-reference/directives/use-cache).
-*   **Granular caching.** Cache a function with [`use cache`](/docs/app/api-reference/directives/use-cache), not a route. Revalidate a [tag](/docs/app/api-reference/functions/revalidateTag), not a deployment. This means an expensive database query can be cached independently of the rest of the page.
+-   **Faster perceived load times.** The static shell renders immediately while dynamic content streams in. Users see useful content right away instead of waiting for the entire page to render.
+-   **Incremental caching.** Developers can add caching and revalidation incrementally, without deciding upfront at build time whether a route is static or dynamic. Any page can be revalidated on demand, and any function can be cached with [`use cache`](/docs/app/api-reference/directives/use-cache).
+-   **Granular caching.** Cache a function with [`use cache`](/docs/app/api-reference/directives/use-cache), not a route. Revalidate a [tag](/docs/app/api-reference/functions/revalidateTag), not a deployment. This means an expensive database query can be cached independently of the rest of the page.
 
 ## The Trade-Off[](#the-trade-off)
 
@@ -55,10 +56,10 @@ The trade-off is infrastructure complexity. A finer-grained rendering boundary t
 
 The component-level rendering model has direct implications for platforms hosting Next.js applications:
 
-*   **Streaming** is required because static and dynamic content are served in a single response. The server sends initial content first, then streams dynamic portions as they resolve. See [Streaming](/docs/app/guides/streaming) for details.
-*   **Cache coordination** is required when running multiple instances because any cached content can be invalidated on demand via [`revalidateTag()`](/docs/app/api-reference/functions/revalidateTag) or [`revalidatePath()`](/docs/app/api-reference/functions/revalidatePath). See [How Revalidation Works](/docs/app/guides/how-revalidation-works) for the architecture.
-*   **Cache consistency** matters because revalidation regenerates both the HTML response and the RSC payload (the serialized React Server Components data used for client-side navigation). If these get out of sync, users may see inconsistent data during navigation. See [How Revalidation Works](/docs/app/guides/how-revalidation-works) for consistency requirements.
-*   **PPR shell delivery at CDN latency** can require additional platform integration to store the static shell separately and resume dynamic rendering correctly. See [PPR Platform Guide](/docs/app/guides/ppr-platform-guide) for implementation details.
+-   **Streaming** is required because static and dynamic content are served in a single response. The server sends initial content first, then streams dynamic portions as they resolve. See [Streaming](/docs/app/guides/streaming) for details.
+-   **Cache coordination** is required when running multiple instances because any cached content can be invalidated on demand via [`revalidateTag()`](/docs/app/api-reference/functions/revalidateTag) or [`revalidatePath()`](/docs/app/api-reference/functions/revalidatePath). See [How Revalidation Works](/docs/app/guides/how-revalidation-works) for the architecture.
+-   **Cache consistency** matters because revalidation regenerates both the HTML response and the RSC payload (the serialized React Server Components data used for client-side navigation). If these get out of sync, users may see inconsistent data during navigation. See [How Revalidation Works](/docs/app/guides/how-revalidation-works) for consistency requirements.
+-   **PPR shell delivery at CDN latency** can require additional platform integration to store the static shell separately and resume dynamic rendering correctly. See [PPR Platform Guide](/docs/app/guides/ppr-platform-guide) for implementation details.
 
 Each of these infrastructure requirements maps directly to a capability: streaming enables progressive delivery, cache coordination propagates invalidations across instances, cache consistency keeps HTML and RSC aligned, and PPR-at-edge often requires extra shell/resume integration.
 
@@ -108,20 +109,4 @@ Understand which Next.js features require specific platform capabilities and how
 
 ](/docs/app/guides/deploying-to-platforms)
 
-[Previous
-
-Redirecting
-
-](/docs/app/guides/redirecting)
-
-[Next
-
-Sass
-
-](/docs/app/guides/sass)
-
 Was this helpful?
-
-supported.
-
-Send

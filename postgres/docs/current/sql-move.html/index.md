@@ -5,16 +5,12 @@ canonical_url: "https://www.postgresql.org/docs/current/sql-move.html"
 docset: "postgres"
 kind: "database"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:40:18.117Z"
-content_hash: "60d76d642ddd5deca55cf2f0f1ca4bb05e2615a8e252cf4b7c295e4a2e07cc9b"
+last_crawled_at: "2026-04-27T20:44:56.563Z"
+content_hash: "eff54e7f126155d638b955b56b4719fe51070f6430f05426b1a36c0bf92272ee"
 menu_path: ["PostgreSQL: Documentation: 18: MOVE"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/sql-merge.html/index.md", "title": "PostgreSQL: Documentation: 18: MERGE"}
-nav_next: {"path": "postgres/docs/current/sql-notify.html/index.md", "title": "PostgreSQL: Documentation: 18: NOTIFY"}
+content_language: "en"
 ---
-
-MOVE — position a cursor
-
 ## Synopsis
 
 MOVE \[ _`direction`_ \] \[ FROM | IN \] _`cursor_name`_

@@ -5,27 +5,28 @@ canonical_url: "https://nextjs.org/docs/app/api-reference/adapters/output-types"
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:05:50.890Z"
-content_hash: "359ee9f4e5614be40059c8f447ff7b8dfeb73e8b22e93cb0bf5cdabede1cc762"
+last_crawled_at: "2026-04-27T18:04:42.109Z"
+content_hash: "2161d6dbae534bcb8eac0a1905ec89f3b4d3e66839c83e65f6bae02de1d742e9"
 menu_path: ["Output Types"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/api-reference/adapters/invoking-entrypoints/index.md", "title": "Invoking Entrypoints"}
-nav_next: {"path": "nextjs/docs/app/api-reference/adapters/routing-information/index.md", "title": "Routing Information"}
+version: "latest"
+content_language: "en"
 ---
+[API Reference](/docs/app/api-reference)[Adapters](/docs/app/api-reference/adapters)Output Types
 
 # Output Types
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 The `outputs` object contains arrays of build output types:
 
-*   `outputs.pages`: React pages from the `pages/` directory
-*   `outputs.pagesApi`: API routes from `pages/api/`
-*   `outputs.appPages`: React pages from the `app/` directory
-*   `outputs.appRoutes`: API and metadata routes from `app/`
-*   `outputs.prerenders`: ISR-enabled routes and static prerenders
-*   `outputs.staticFiles`: Static assets and auto-statically optimized pages
-*   `outputs.middleware`: Middleware function (if present)
+-   `outputs.pages`: React pages from the `pages/` directory
+-   `outputs.pagesApi`: API routes from `pages/api/`
+-   `outputs.appPages`: React pages from the `app/` directory
+-   `outputs.appRoutes`: API and metadata routes from `app/`
+-   `outputs.prerenders`: ISR-enabled routes and static prerenders
+-   `outputs.staticFiles`: Static assets and auto-statically optimized pages
+-   `outputs.middleware`: Middleware function (if present)
 
 > **Note:** When `config.output` is set to `'export'`, only `outputs.staticFiles` is populated. All other arrays (`pages`, `appPages`, `pagesApi`, `appRoutes`, `prerenders`) will be empty since the entire application is exported as static files.
 
@@ -220,20 +221,4 @@ Static assets and auto-statically optimized pages:
 }
 ```
 
-[Previous
-
-Invoking Entrypoints
-
-](/docs/app/api-reference/adapters/invoking-entrypoints)
-
-[Next
-
-Routing Information
-
-](/docs/app/api-reference/adapters/routing-information)
-
 Was this helpful?
-
-supported.
-
-Send

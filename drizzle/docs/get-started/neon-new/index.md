@@ -5,33 +5,31 @@ canonical_url: "https://orm.drizzle.team/docs/get-started/neon-new"
 docset: "drizzle"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:56:28.851Z"
-content_hash: "c95dd12012c6ff7e1b74cf97b7c593be5bd5dce5cfdbb016222f518f3ea3795f"
+last_crawled_at: "2026-04-27T18:47:45.431Z"
+content_hash: "fbe55b7c3a791712b3527d69288f47a14f0e5a210b9e7d94e8a5b91e35da7333"
 menu_path: ["Get Started with Drizzle and Neon"]
 section_path: []
-nav_prev: {"path": "drizzle/docs/get-started/neon-existing/index.md", "title": "Get Started with Drizzle and Neon in existing project"}
-nav_next: {"path": "drizzle/docs/get-started/nile-existing/index.md", "title": "Get Started with Drizzle and Nile in existing project"}
+content_language: "en"
 ---
-
 ## Get Started with Drizzle and Neon
 
 This guide assumes familiarity with:
 
-*   **dotenv** - package for managing environment variables - [read here](https://www.npmjs.com/package/dotenv)
-*   **tsx** - package for running TypeScript files - [read here](https://tsx.is/)
-*   **Neon** - serverless Postgres platform - [read here](https://neon.tech/docs/introduction)
+-   **dotenv** - package for managing environment variables - [read here](https://www.npmjs.com/package/dotenv)
+-   **tsx** - package for running TypeScript files - [read here](https://tsx.is/)
+-   **Neon** - serverless Postgres platform - [read here](https://neon.tech/docs/introduction)
 
 Drizzle has native support for Neon connections with the `neon-http` and `neon-websockets` drivers. These use the **neon-serverless** driver under the hood.
 
 With the `neon-http` and `neon-websockets` drivers, you can access a Neon database from serverless environments over HTTP or WebSockets instead of TCP. Querying over HTTP is faster for single, non-interactive transactions.
 
-If you need session or interactive transaction support, or a fully compatible drop-in replacement for the `pg` driver, you can use the WebSocket-based `neon-serverless` driver. You can connect to a Neon database directly using [Postgres](drizzle/docs/get-started/postgresql-new/index.md)
+If you need session or interactive transaction support, or a fully compatible drop-in replacement for the `pg` driver, you can use the WebSocket-based `neon-serverless` driver. You can connect to a Neon database directly using [Postgres](https://orm.drizzle.team/docs/get-started/postgresql-new)
 
 #### Basic file structure
 
 This is the basic file structure of the project. In the `src/db` directory, we have table definition in `schema.ts`. In `drizzle` folder there are sql migration file and snapshots.
 
-```
+```plaintext
 📦 <project root>
  ├ 📂 drizzle
  ├ 📂 src
@@ -45,14 +43,6 @@ This is the basic file structure of the project. In the `src/db` directory, we h
 ```
 
 #### Step 1 - Install **@neondatabase/serverless** package[](#step-1---install-neondatabaseserverless-package)
-
-npm
-
-yarn
-
-pnpm
-
-bun
 
 ```
 npm i drizzle-orm @neondatabase/serverless dotenv
@@ -78,15 +68,11 @@ bun add -D drizzle-kit tsx
 
 Create a `.env` file in the root of your project and add your database connection variable:
 
-```
-DATABASE_URL=
-```
-
 #### Step 3 - Connect Drizzle ORM to the database[](#step-3---connect-drizzle-orm-to-the-database)
 
 Create a `index.ts` file in the `src` directory and initialize the connection:
 
-```
+```typescript
 import { drizzle } from 'drizzle-orm/neon-http';
 
 const db = drizzle(process.env.DATABASE_URL);
@@ -94,7 +80,7 @@ const db = drizzle(process.env.DATABASE_URL);
 
 If you need a synchronous connection, you can use our additional connection API, where you specify a driver connection and pass it to the Drizzle instance.
 
-```
+```typescript
 import { neon } from '@neondatabase/serverless';
 import { drizzle } from 'drizzle-orm/neon-http';
 
@@ -106,7 +92,7 @@ const db = drizzle({ client: sql });
 
 Create a `schema.ts` file in the `src/db` directory and declare your table:
 
-```
+```typescript
 import { integer, pgTable, varchar } from "drizzle-orm/pg-core";
 
 export const usersTable = pgTable("users", {
@@ -119,11 +105,11 @@ export const usersTable = pgTable("users", {
 
 #### Step 5 - Setup Drizzle config file[](#step-5---setup-drizzle-config-file)
 
-**Drizzle config** - a configuration file that is used by [Drizzle Kit](drizzle/docs/kit-overview/index.md) and contains all the information about your database connection, migration folder and schema files.
+**Drizzle config** - a configuration file that is used by [Drizzle Kit](https://orm.drizzle.team/docs/kit-overview) and contains all the information about your database connection, migration folder and schema files.
 
 Create a `drizzle.config.ts` file in the root of your project and add the following content:
 
-```
+```typescript
 import 'dotenv/config';
 import { defineConfig } from 'drizzle-kit';
 
@@ -141,11 +127,11 @@ export default defineConfig({
 
 You can directly apply changes to your database using the `drizzle-kit push` command. This is a convenient method for quickly testing new schema designs or modifications in a local development environment, allowing for rapid iterations without the need to manage migration files:
 
-```
+```bash
 npx drizzle-kit push
 ```
 
-Read more about the push command in [documentation](drizzle/docs/drizzle-kit-push/index.md).
+Read more about the push command in [documentation](https://orm.drizzle.team/docs/drizzle-kit-push).
 
 Tips
 
@@ -153,23 +139,23 @@ Alternatively, you can generate migrations using the `drizzle-kit generate` comm
 
 Generate migrations:
 
-```
+```bash
 npx drizzle-kit generate
 ```
 
 Apply migrations:
 
-```
+```bash
 npx drizzle-kit migrate
 ```
 
-Read more about migration process in [documentation](drizzle/docs/kit-overview/index.md).
+Read more about migration process in [documentation](https://orm.drizzle.team/docs/kit-overview).
 
 #### Step 7 - Seed and Query the database[](#step-7---seed-and-query-the-database)
 
 Let’s **update** the `src/index.ts` file with queries to create, read, update, and delete users
 
-```
+```typescript
 import 'dotenv/config';
 import { drizzle } from 'drizzle-orm/neon-http';
 import { eq } from 'drizzle-orm';
@@ -221,14 +207,6 @@ You’ve already installed `tsx`, so we can run our queries now
 
 **Run `index.ts` script**
 
-npm
-
-yarn
-
-pnpm
-
-bun
-
 ```
 npx tsx src/index.ts
 ```
@@ -249,7 +227,7 @@ tips
 
 We suggest using `bun` to run TypeScript files. With `bun`, such scripts can be executed without issues or additional settings, regardless of whether your project is configured with CommonJS (CJS), ECMAScript Modules (ESM), or any other module format. To run a script with `bun`, use the following command:
 
-```
+```bash
 bun src/index.ts
 ```
 

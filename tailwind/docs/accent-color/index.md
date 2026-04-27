@@ -5,65 +5,76 @@ canonical_url: "https://tailwindcss.com/docs/accent-color"
 docset: "tailwind"
 kind: "framework"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:14:59.682Z"
-content_hash: "cf74740dfd24a03b2fdde998c465d89734c677c5e272c0e78da510d34fc98568"
+last_crawled_at: "2026-04-27T20:36:11.455Z"
+content_hash: "983ce882073753beba1574ad8aa7387a9be7ce1d104b89a8a4db418c59a2113a"
 menu_path: ["accent-color"]
 section_path: []
-nav_prev: {"path": "tailwind/docs/translate/index.md", "title": "translate"}
-nav_next: {"path": "tailwind/docs/appearance/index.md", "title": "appearance"}
+content_language: "en"
 ---
+[](/)
+
+[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
+
+1.  Interactivity
+2.  accent-color
+
+Interactivity
 
 # accent-color
 
 Utilities for controlling the accented color of a form control.
 
-Class
-
-Styles
-
-`accent-inherit`
-
+| Class | Styles |
+| --- | --- |
+| `accent-inherit` | 
 `accent-color: inherit;`
 
-`accent-current`
+ |
+| `accent-current` | 
 
 `accent-color: currentColor;`
 
-`accent-transparent`
+ |
+| `accent-transparent` | 
 
 `accent-color: transparent;`
 
-`accent-black`
+ |
+| `accent-black` | 
 
 `accent-color: var(--color-black); /* #000 */`
 
-`accent-white`
+ |
+| `accent-white` | 
 
 `accent-color: var(--color-white); /* #fff */`
 
-`accent-red-50`
+ |
+| `accent-red-50` | 
 
 `accent-color: var(--color-red-50); /* oklch(97.1% 0.013 17.38) */`
 
-`accent-red-100`
+ |
+| `accent-red-100` | 
 
 `accent-color: var(--color-red-100); /* oklch(93.6% 0.032 17.717) */`
 
-`accent-red-200`
+ |
+| `accent-red-200` | 
 
 `accent-color: var(--color-red-200); /* oklch(88.5% 0.062 18.334) */`
 
-`accent-red-300`
+ |
+| `accent-red-300` | 
 
 `accent-color: var(--color-red-300); /* oklch(80.8% 0.114 19.571) */`
 
-`accent-red-400`
+ |
+| `accent-red-400` | 
 
 `accent-color: var(--color-red-400); /* oklch(70.4% 0.191 22.216) */`
 
-## [Examples](#examples)
-
-### [Setting the accent color](#setting-the-accent-color)
+ |
 
 Use utilities like `accent-rose-500` and `accent-lime-600` to change the accent color of an element:
 
@@ -77,8 +88,6 @@ Customized
 
 This is helpful for styling elements like checkboxes and radio groups by overriding the browser's default color.
 
-### [Changing the opacity](#changing-the-opacity)
-
 Use the color opacity modifier to control the opacity of an element's accent color:
 
 accent-purple-500/25
@@ -90,8 +99,6 @@ accent-purple-500/75
 ```
 
 Setting the accent color opacity has limited browser-support and only works in Firefox at this time.
-
-### [Using a custom value](#using-a-custom-value)
 
 Use the `accent-[<value>]` syntax to set the accent color based on a completely custom value:
 
@@ -107,8 +114,6 @@ For CSS variables, you can also use the `accent-(<custom-property>)` syntax:
 
 This is just a shorthand for `accent-[var(<custom-property>)]` that adds the `var()` function for you automatically.
 
-### [Applying on hover](#applying-on-hover)
-
 Prefix an `accent-color` utility with a variant like `hover:*` to only apply the utility in that state:
 
 Agree to terms
@@ -119,8 +124,6 @@ Agree to terms
 
 Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
 
-### [Responsive design](#responsive-design)
-
 Prefix an `accent-color` utility with a breakpoint variant like `md:` to only apply the utility at medium screen sizes and above:
 
 ```
@@ -128,8 +131,6 @@ Prefix an `accent-color` utility with a breakpoint variant like `md:` to only ap
 ```
 
 Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
-
-## [Customizing your theme](#customizing-your-theme)
 
 Use the `--color-*` theme variables to customize the color utilities in your project:
 
@@ -147,14 +148,14 @@ Learn more about customizing your theme in the [theme documentation](/docs/theme
 
 ### On this page
 
-*   [Quick reference](#quick-reference)
-*   [Examples](#examples)
-    *   [Setting the accent color](#setting-the-accent-color)
-    *   [Changing the opacity](#changing-the-opacity)
-    *   [Using a custom value](#using-a-custom-value)
-    *   [Applying on hover](#applying-on-hover)
-    *   [Responsive design](#responsive-design)
-*   [Customizing your theme](#customizing-your-theme)
+-   [Quick reference](#quick-reference)
+-   [Examples](#examples)
+    -   [Setting the accent color](#setting-the-accent-color)
+    -   [Changing the opacity](#changing-the-opacity)
+    -   [Using a custom value](#using-a-custom-value)
+    -   [Applying on hover](#applying-on-hover)
+    -   [Responsive design](#responsive-design)
+-   [Customizing your theme](#customizing-your-theme)
 
 [
 

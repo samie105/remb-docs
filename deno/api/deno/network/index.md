@@ -5,24 +5,21 @@ canonical_url: "https://docs.deno.com/api/deno/network"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:10:25.915Z"
-content_hash: "f55d58dda05fe15fb4c45fbd64378121811e5524bb35d88327ec0e451907319b"
+last_crawled_at: "2026-04-27T17:54:22.807Z"
+content_hash: "e624abcd9f3babfa06138cd4be0e648b07e1c20860a783b66ea8a34d0584f9bd"
 menu_path: ["Network - Deno documentation"]
 section_path: []
+content_language: "en"
 ---
-### Classes [#](#Classes)
-
 c
 
 [Deno.QuicEndpoint](./././~/Deno.QuicEndpoint "Deno.QuicEndpoint")
 
 No documentation available
 
-*   [addr](./././~/Deno.QuicEndpoint#property_addr)
-*   [close](./././~/Deno.QuicEndpoint#method_close_0)
-*   [listen](./././~/Deno.QuicEndpoint#method_listen_0)
-
-### Functions [#](#Functions)
+-   [addr](./././~/Deno.QuicEndpoint#property_addr)
+-   [close](./././~/Deno.QuicEndpoint#method_close_0)
+-   [listen](./././~/Deno.QuicEndpoint#method_listen_0)
 
 f
 
@@ -84,17 +81,15 @@ f
 
 Upgrade a QUIC connection into a WebTransport instance.
 
-### Interfaces [#](#Interfaces)
-
 I
 
 [Deno.CaaRecord](./././~/Deno.CaaRecord "Deno.CaaRecord")
 
 If [`Deno.resolveDns`](./././~/Deno.resolveDns) is called with `"CAA"` record type specified, it will resolve with an array of objects with this interface.
 
-*   [critical](./././~/Deno.CaaRecord#property_critical)
-*   [tag](./././~/Deno.CaaRecord#property_tag)
-*   [value](./././~/Deno.CaaRecord#property_value)
+-   [critical](./././~/Deno.CaaRecord#property_critical)
+-   [tag](./././~/Deno.CaaRecord#property_tag)
+-   [value](./././~/Deno.CaaRecord#property_value)
 
 I
 
@@ -102,16 +97,16 @@ I
 
 No documentation available
 
-*   [close](./././~/Deno.Conn#method_close_0)
-*   [closeWrite](./././~/Deno.Conn#method_closewrite_0)
-*   [localAddr](./././~/Deno.Conn#property_localaddr)
-*   [read](./././~/Deno.Conn#method_read_0)
-*   [readable](./././~/Deno.Conn#property_readable)
-*   [ref](./././~/Deno.Conn#method_ref_0)
-*   [remoteAddr](./././~/Deno.Conn#property_remoteaddr)
-*   [unref](./././~/Deno.Conn#method_unref_0)
-*   [writable](./././~/Deno.Conn#property_writable)
-*   [write](./././~/Deno.Conn#method_write_0)
+-   [close](./././~/Deno.Conn#method_close_0)
+-   [closeWrite](./././~/Deno.Conn#method_closewrite_0)
+-   [localAddr](./././~/Deno.Conn#property_localaddr)
+-   [read](./././~/Deno.Conn#method_read_0)
+-   [readable](./././~/Deno.Conn#property_readable)
+-   [ref](./././~/Deno.Conn#method_ref_0)
+-   [remoteAddr](./././~/Deno.Conn#property_remoteaddr)
+-   [unref](./././~/Deno.Conn#method_unref_0)
+-   [writable](./././~/Deno.Conn#property_writable)
+-   [write](./././~/Deno.Conn#method_write_0)
 
 I
 
@@ -119,10 +114,10 @@ I
 
 No documentation available
 
-*   [hostname](./././~/Deno.ConnectOptions#property_hostname)
-*   [port](./././~/Deno.ConnectOptions#property_port)
-*   [signal](./././~/Deno.ConnectOptions#property_signal)
-*   [transport](./././~/Deno.ConnectOptions#property_transport)
+-   [hostname](./././~/Deno.ConnectOptions#property_hostname)
+-   [port](./././~/Deno.ConnectOptions#property_port)
+-   [signal](./././~/Deno.ConnectOptions#property_signal)
+-   [transport](./././~/Deno.ConnectOptions#property_transport)
 
 I
 
@@ -130,13 +125,13 @@ I
 
 No documentation available
 
-*   [alpnProtocols](./././~/Deno.ConnectQuicOptions#property_alpnprotocols)
-*   [caCerts](./././~/Deno.ConnectQuicOptions#property_cacerts)
-*   [endpoint](./././~/Deno.ConnectQuicOptions#property_endpoint)
-*   [hostname](./././~/Deno.ConnectQuicOptions#property_hostname)
-*   [port](./././~/Deno.ConnectQuicOptions#property_port)
-*   [serverName](./././~/Deno.ConnectQuicOptions#property_servername)
-*   [zeroRtt](./././~/Deno.ConnectQuicOptions#property_zerortt)
+-   [alpnProtocols](./././~/Deno.ConnectQuicOptions#property_alpnprotocols)
+-   [caCerts](./././~/Deno.ConnectQuicOptions#property_cacerts)
+-   [endpoint](./././~/Deno.ConnectQuicOptions#property_endpoint)
+-   [hostname](./././~/Deno.ConnectQuicOptions#property_hostname)
+-   [port](./././~/Deno.ConnectQuicOptions#property_port)
+-   [serverName](./././~/Deno.ConnectQuicOptions#property_servername)
+-   [zeroRtt](./././~/Deno.ConnectQuicOptions#property_zerortt)
 
 I
 
@@ -144,11 +139,11 @@ I
 
 No documentation available
 
-*   [alpnProtocols](./././~/Deno.ConnectTlsOptions#property_alpnprotocols)
-*   [caCerts](./././~/Deno.ConnectTlsOptions#property_cacerts)
-*   [hostname](./././~/Deno.ConnectTlsOptions#property_hostname)
-*   [port](./././~/Deno.ConnectTlsOptions#property_port)
-*   [unsafelyDisableHostnameVerification](./././~/Deno.ConnectTlsOptions#property_unsafelydisablehostnameverification)
+-   [alpnProtocols](./././~/Deno.ConnectTlsOptions#property_alpnprotocols)
+-   [caCerts](./././~/Deno.ConnectTlsOptions#property_cacerts)
+-   [hostname](./././~/Deno.ConnectTlsOptions#property_hostname)
+-   [port](./././~/Deno.ConnectTlsOptions#property_port)
+-   [unsafelyDisableHostnameVerification](./././~/Deno.ConnectTlsOptions#property_unsafelydisablehostnameverification)
 
 I
 
@@ -156,12 +151,12 @@ I
 
 A generic transport listener for message-oriented protocols.
 
-*   [addr](./././~/Deno.DatagramConn#property_addr)
-*   [close](./././~/Deno.DatagramConn#method_close_0)
-*   [joinMulticastV4](./././~/Deno.DatagramConn#method_joinmulticastv4_0)
-*   [joinMulticastV6](./././~/Deno.DatagramConn#method_joinmulticastv6_0)
-*   [receive](./././~/Deno.DatagramConn#method_receive_0)
-*   [send](./././~/Deno.DatagramConn#method_send_0)
+-   [addr](./././~/Deno.DatagramConn#property_addr)
+-   [close](./././~/Deno.DatagramConn#method_close_0)
+-   [joinMulticastV4](./././~/Deno.DatagramConn#method_joinmulticastv4_0)
+-   [joinMulticastV6](./././~/Deno.DatagramConn#method_joinmulticastv6_0)
+-   [receive](./././~/Deno.DatagramConn#method_receive_0)
+-   [send](./././~/Deno.DatagramConn#method_send_0)
 
 I
 
@@ -169,11 +164,11 @@ I
 
 A generic network listener for stream-oriented protocols.
 
-*   [accept](./././~/Deno.Listener#method_accept_0)
-*   [addr](./././~/Deno.Listener#property_addr)
-*   [close](./././~/Deno.Listener#method_close_0)
-*   [ref](./././~/Deno.Listener#method_ref_0)
-*   [unref](./././~/Deno.Listener#method_unref_0)
+-   [accept](./././~/Deno.Listener#method_accept_0)
+-   [addr](./././~/Deno.Listener#property_addr)
+-   [close](./././~/Deno.Listener#method_close_0)
+-   [ref](./././~/Deno.Listener#method_ref_0)
+-   [unref](./././~/Deno.Listener#method_unref_0)
 
 I
 
@@ -181,9 +176,9 @@ I
 
 No documentation available
 
-*   [hostname](./././~/Deno.ListenOptions#property_hostname)
-*   [port](./././~/Deno.ListenOptions#property_port)
-*   [tcpBacklog](./././~/Deno.ListenOptions#property_tcpbacklog)
+-   [hostname](./././~/Deno.ListenOptions#property_hostname)
+-   [port](./././~/Deno.ListenOptions#property_port)
+-   [tcpBacklog](./././~/Deno.ListenOptions#property_tcpbacklog)
 
 I
 
@@ -191,8 +186,8 @@ I
 
 No documentation available
 
-*   [alpnProtocols](./././~/Deno.ListenTlsOptions#property_alpnprotocols)
-*   [transport](./././~/Deno.ListenTlsOptions#property_transport)
+-   [alpnProtocols](./././~/Deno.ListenTlsOptions#property_alpnprotocols)
+-   [transport](./././~/Deno.ListenTlsOptions#property_transport)
 
 I
 
@@ -200,9 +195,9 @@ I
 
 Represents membership of a IPv4 multicast group.
 
-*   [leave](./././~/Deno.MulticastV4Membership#property_leave)
-*   [setLoopback](./././~/Deno.MulticastV4Membership#property_setloopback)
-*   [setTTL](./././~/Deno.MulticastV4Membership#property_setttl)
+-   [leave](./././~/Deno.MulticastV4Membership#property_leave)
+-   [setLoopback](./././~/Deno.MulticastV4Membership#property_setloopback)
+-   [setTTL](./././~/Deno.MulticastV4Membership#property_setttl)
 
 I
 
@@ -210,8 +205,8 @@ I
 
 Represents membership of a IPv6 multicast group.
 
-*   [leave](./././~/Deno.MulticastV6Membership#property_leave)
-*   [setLoopback](./././~/Deno.MulticastV6Membership#property_setloopback)
+-   [leave](./././~/Deno.MulticastV6Membership#property_leave)
+-   [setLoopback](./././~/Deno.MulticastV6Membership#property_setloopback)
 
 I
 
@@ -219,8 +214,8 @@ I
 
 If [`Deno.resolveDns`](./././~/Deno.resolveDns) is called with `"MX"` record type specified, it will return an array of objects with this interface.
 
-*   [exchange](./././~/Deno.MxRecord#property_exchange)
-*   [preference](./././~/Deno.MxRecord#property_preference)
+-   [exchange](./././~/Deno.MxRecord#property_exchange)
+-   [preference](./././~/Deno.MxRecord#property_preference)
 
 I
 
@@ -228,12 +223,12 @@ I
 
 If [`Deno.resolveDns`](./././~/Deno.resolveDns) is called with `"NAPTR"` record type specified, it will return an array of objects with this interface.
 
-*   [flags](./././~/Deno.NaptrRecord#property_flags)
-*   [order](./././~/Deno.NaptrRecord#property_order)
-*   [preference](./././~/Deno.NaptrRecord#property_preference)
-*   [regexp](./././~/Deno.NaptrRecord#property_regexp)
-*   [replacement](./././~/Deno.NaptrRecord#property_replacement)
-*   [services](./././~/Deno.NaptrRecord#property_services)
+-   [flags](./././~/Deno.NaptrRecord#property_flags)
+-   [order](./././~/Deno.NaptrRecord#property_order)
+-   [preference](./././~/Deno.NaptrRecord#property_preference)
+-   [regexp](./././~/Deno.NaptrRecord#property_regexp)
+-   [replacement](./././~/Deno.NaptrRecord#property_replacement)
+-   [services](./././~/Deno.NaptrRecord#property_services)
 
 I
 
@@ -241,9 +236,9 @@ I
 
 No documentation available
 
-*   [hostname](./././~/Deno.NetAddr#property_hostname)
-*   [port](./././~/Deno.NetAddr#property_port)
-*   [transport](./././~/Deno.NetAddr#property_transport)
+-   [hostname](./././~/Deno.NetAddr#property_hostname)
+-   [port](./././~/Deno.NetAddr#property_port)
+-   [transport](./././~/Deno.NetAddr#property_transport)
 
 I
 
@@ -251,13 +246,13 @@ I
 
 The information for a network interface returned from a call to [`Deno.networkInterfaces`](./././~/Deno.networkInterfaces).
 
-*   [address](./././~/Deno.NetworkInterfaceInfo#property_address)
-*   [cidr](./././~/Deno.NetworkInterfaceInfo#property_cidr)
-*   [family](./././~/Deno.NetworkInterfaceInfo#property_family)
-*   [mac](./././~/Deno.NetworkInterfaceInfo#property_mac)
-*   [name](./././~/Deno.NetworkInterfaceInfo#property_name)
-*   [netmask](./././~/Deno.NetworkInterfaceInfo#property_netmask)
-*   [scopeid](./././~/Deno.NetworkInterfaceInfo#property_scopeid)
+-   [address](./././~/Deno.NetworkInterfaceInfo#property_address)
+-   [cidr](./././~/Deno.NetworkInterfaceInfo#property_cidr)
+-   [family](./././~/Deno.NetworkInterfaceInfo#property_family)
+-   [mac](./././~/Deno.NetworkInterfaceInfo#property_mac)
+-   [name](./././~/Deno.NetworkInterfaceInfo#property_name)
+-   [netmask](./././~/Deno.NetworkInterfaceInfo#property_netmask)
+-   [scopeid](./././~/Deno.NetworkInterfaceInfo#property_scopeid)
 
 I
 
@@ -265,8 +260,8 @@ I
 
 No documentation available
 
-*   [alpnProtocols](./././~/Deno.QuicAcceptOptions#property_alpnprotocols)
-*   [zeroRtt](./././~/Deno.QuicAcceptOptions#property_zerortt)
+-   [alpnProtocols](./././~/Deno.QuicAcceptOptions#property_alpnprotocols)
+-   [zeroRtt](./././~/Deno.QuicAcceptOptions#property_zerortt)
 
 I
 
@@ -274,8 +269,8 @@ I
 
 No documentation available
 
-*   [readable](./././~/Deno.QuicBidirectionalStream#property_readable)
-*   [writable](./././~/Deno.QuicBidirectionalStream#property_writable)
+-   [readable](./././~/Deno.QuicBidirectionalStream#property_readable)
+-   [writable](./././~/Deno.QuicBidirectionalStream#property_writable)
 
 I
 
@@ -283,8 +278,8 @@ I
 
 No documentation available
 
-*   [closeCode](./././~/Deno.QuicCloseInfo#property_closecode)
-*   [reason](./././~/Deno.QuicCloseInfo#property_reason)
+-   [closeCode](./././~/Deno.QuicCloseInfo#property_closecode)
+-   [reason](./././~/Deno.QuicCloseInfo#property_reason)
 
 I
 
@@ -292,20 +287,20 @@ I
 
 No documentation available
 
-*   [close](./././~/Deno.QuicConn#method_close_0)
-*   [closed](./././~/Deno.QuicConn#property_closed)
-*   [createBidirectionalStream](./././~/Deno.QuicConn#method_createbidirectionalstream_0)
-*   [createUnidirectionalStream](./././~/Deno.QuicConn#method_createunidirectionalstream_0)
-*   [endpoint](./././~/Deno.QuicConn#property_endpoint)
-*   [handshake](./././~/Deno.QuicConn#property_handshake)
-*   [incomingBidirectionalStreams](./././~/Deno.QuicConn#property_incomingbidirectionalstreams)
-*   [incomingUnidirectionalStreams](./././~/Deno.QuicConn#property_incomingunidirectionalstreams)
-*   [maxDatagramSize](./././~/Deno.QuicConn#property_maxdatagramsize)
-*   [protocol](./././~/Deno.QuicConn#property_protocol)
-*   [readDatagram](./././~/Deno.QuicConn#method_readdatagram_0)
-*   [remoteAddr](./././~/Deno.QuicConn#property_remoteaddr)
-*   [sendDatagram](./././~/Deno.QuicConn#method_senddatagram_0)
-*   [serverName](./././~/Deno.QuicConn#property_servername)
+-   [close](./././~/Deno.QuicConn#method_close_0)
+-   [closed](./././~/Deno.QuicConn#property_closed)
+-   [createBidirectionalStream](./././~/Deno.QuicConn#method_createbidirectionalstream_0)
+-   [createUnidirectionalStream](./././~/Deno.QuicConn#method_createunidirectionalstream_0)
+-   [endpoint](./././~/Deno.QuicConn#property_endpoint)
+-   [handshake](./././~/Deno.QuicConn#property_handshake)
+-   [incomingBidirectionalStreams](./././~/Deno.QuicConn#property_incomingbidirectionalstreams)
+-   [incomingUnidirectionalStreams](./././~/Deno.QuicConn#property_incomingunidirectionalstreams)
+-   [maxDatagramSize](./././~/Deno.QuicConn#property_maxdatagramsize)
+-   [protocol](./././~/Deno.QuicConn#property_protocol)
+-   [readDatagram](./././~/Deno.QuicConn#method_readdatagram_0)
+-   [remoteAddr](./././~/Deno.QuicConn#property_remoteaddr)
+-   [sendDatagram](./././~/Deno.QuicConn#method_senddatagram_0)
+-   [serverName](./././~/Deno.QuicConn#property_servername)
 
 I
 
@@ -313,8 +308,8 @@ I
 
 No documentation available
 
-*   [hostname](./././~/Deno.QuicEndpointOptions#property_hostname)
-*   [port](./././~/Deno.QuicEndpointOptions#property_port)
+-   [hostname](./././~/Deno.QuicEndpointOptions#property_hostname)
+-   [port](./././~/Deno.QuicEndpointOptions#property_port)
 
 I
 
@@ -322,12 +317,12 @@ I
 
 An incoming connection for which the server has not yet begun its part of the handshake.
 
-*   [accept](./././~/Deno.QuicIncoming#method_accept_0)
-*   [ignore](./././~/Deno.QuicIncoming#method_ignore_0)
-*   [localIp](./././~/Deno.QuicIncoming#property_localip)
-*   [refuse](./././~/Deno.QuicIncoming#method_refuse_0)
-*   [remoteAddr](./././~/Deno.QuicIncoming#property_remoteaddr)
-*   [remoteAddressValidated](./././~/Deno.QuicIncoming#property_remoteaddressvalidated)
+-   [accept](./././~/Deno.QuicIncoming#method_accept_0)
+-   [ignore](./././~/Deno.QuicIncoming#method_ignore_0)
+-   [localIp](./././~/Deno.QuicIncoming#property_localip)
+-   [refuse](./././~/Deno.QuicIncoming#method_refuse_0)
+-   [remoteAddr](./././~/Deno.QuicIncoming#property_remoteaddr)
+-   [remoteAddressValidated](./././~/Deno.QuicIncoming#property_remoteaddressvalidated)
 
 I
 
@@ -335,10 +330,10 @@ I
 
 Specialized listener that accepts QUIC connections.
 
-*   [accept](./././~/Deno.QuicListener#method_accept_0)
-*   [endpoint](./././~/Deno.QuicListener#property_endpoint)
-*   [incoming](./././~/Deno.QuicListener#method_incoming_0)
-*   [stop](./././~/Deno.QuicListener#method_stop_0)
+-   [accept](./././~/Deno.QuicListener#method_accept_0)
+-   [endpoint](./././~/Deno.QuicListener#property_endpoint)
+-   [incoming](./././~/Deno.QuicListener#method_incoming_0)
+-   [stop](./././~/Deno.QuicListener#method_stop_0)
 
 I
 
@@ -346,9 +341,9 @@ I
 
 No documentation available
 
-*   [alpnProtocols](./././~/Deno.QuicListenOptions#property_alpnprotocols)
-*   [cert](./././~/Deno.QuicListenOptions#property_cert)
-*   [key](./././~/Deno.QuicListenOptions#property_key)
+-   [alpnProtocols](./././~/Deno.QuicListenOptions#property_alpnprotocols)
+-   [cert](./././~/Deno.QuicListenOptions#property_cert)
+-   [key](./././~/Deno.QuicListenOptions#property_key)
 
 I
 
@@ -356,7 +351,7 @@ I
 
 No documentation available
 
-*   [id](./././~/Deno.QuicReceiveStream#property_id)
+-   [id](./././~/Deno.QuicReceiveStream#property_id)
 
 I
 
@@ -364,8 +359,8 @@ I
 
 No documentation available
 
-*   [id](./././~/Deno.QuicSendStream#property_id)
-*   [sendOrder](./././~/Deno.QuicSendStream#property_sendorder)
+-   [id](./././~/Deno.QuicSendStream#property_id)
+-   [sendOrder](./././~/Deno.QuicSendStream#property_sendorder)
 
 I
 
@@ -373,8 +368,8 @@ I
 
 No documentation available
 
-*   [sendOrder](./././~/Deno.QuicSendStreamOptions#property_sendorder)
-*   [waitUntilAvailable](./././~/Deno.QuicSendStreamOptions#property_waituntilavailable)
+-   [sendOrder](./././~/Deno.QuicSendStreamOptions#property_sendorder)
+-   [waitUntilAvailable](./././~/Deno.QuicSendStreamOptions#property_waituntilavailable)
 
 I
 
@@ -382,8 +377,8 @@ I
 
 No documentation available
 
-*   [preferredAddressV4](./././~/Deno.QuicServerTransportOptions#property_preferredaddressv4)
-*   [preferredAddressV6](./././~/Deno.QuicServerTransportOptions#property_preferredaddressv6)
+-   [preferredAddressV4](./././~/Deno.QuicServerTransportOptions#property_preferredaddressv4)
+-   [preferredAddressV6](./././~/Deno.QuicServerTransportOptions#property_preferredaddressv6)
 
 I
 
@@ -391,11 +386,11 @@ I
 
 No documentation available
 
-*   [congestionControl](./././~/Deno.QuicTransportOptions#property_congestioncontrol)
-*   [keepAliveInterval](./././~/Deno.QuicTransportOptions#property_keepaliveinterval)
-*   [maxConcurrentBidirectionalStreams](./././~/Deno.QuicTransportOptions#property_maxconcurrentbidirectionalstreams)
-*   [maxConcurrentUnidirectionalStreams](./././~/Deno.QuicTransportOptions#property_maxconcurrentunidirectionalstreams)
-*   [maxIdleTimeout](./././~/Deno.QuicTransportOptions#property_maxidletimeout)
+-   [congestionControl](./././~/Deno.QuicTransportOptions#property_congestioncontrol)
+-   [keepAliveInterval](./././~/Deno.QuicTransportOptions#property_keepaliveinterval)
+-   [maxConcurrentBidirectionalStreams](./././~/Deno.QuicTransportOptions#property_maxconcurrentbidirectionalstreams)
+-   [maxConcurrentUnidirectionalStreams](./././~/Deno.QuicTransportOptions#property_maxconcurrentunidirectionalstreams)
+-   [maxIdleTimeout](./././~/Deno.QuicTransportOptions#property_maxidletimeout)
 
 I
 
@@ -403,8 +398,8 @@ I
 
 Options which can be set when using [`Deno.resolveDns`](./././~/Deno.resolveDns).
 
-*   [nameServer](./././~/Deno.ResolveDnsOptions#property_nameserver)
-*   [signal](./././~/Deno.ResolveDnsOptions#property_signal)
+-   [nameServer](./././~/Deno.ResolveDnsOptions#property_nameserver)
+-   [signal](./././~/Deno.ResolveDnsOptions#property_signal)
 
 I
 
@@ -412,13 +407,13 @@ I
 
 If [`Deno.resolveDns`](./././~/Deno.resolveDns) is called with `"SOA"` record type specified, it will return an array of objects with this interface.
 
-*   [expire](./././~/Deno.SoaRecord#property_expire)
-*   [minimum](./././~/Deno.SoaRecord#property_minimum)
-*   [mname](./././~/Deno.SoaRecord#property_mname)
-*   [refresh](./././~/Deno.SoaRecord#property_refresh)
-*   [retry](./././~/Deno.SoaRecord#property_retry)
-*   [rname](./././~/Deno.SoaRecord#property_rname)
-*   [serial](./././~/Deno.SoaRecord#property_serial)
+-   [expire](./././~/Deno.SoaRecord#property_expire)
+-   [minimum](./././~/Deno.SoaRecord#property_minimum)
+-   [mname](./././~/Deno.SoaRecord#property_mname)
+-   [refresh](./././~/Deno.SoaRecord#property_refresh)
+-   [retry](./././~/Deno.SoaRecord#property_retry)
+-   [rname](./././~/Deno.SoaRecord#property_rname)
+-   [serial](./././~/Deno.SoaRecord#property_serial)
 
 I
 
@@ -426,10 +421,10 @@ I
 
 If [`Deno.resolveDns`](./././~/Deno.resolveDns) is called with `"SRV"` record type specified, it will return an array of objects with this interface.
 
-*   [port](./././~/Deno.SrvRecord#property_port)
-*   [priority](./././~/Deno.SrvRecord#property_priority)
-*   [target](./././~/Deno.SrvRecord#property_target)
-*   [weight](./././~/Deno.SrvRecord#property_weight)
+-   [port](./././~/Deno.SrvRecord#property_port)
+-   [priority](./././~/Deno.SrvRecord#property_priority)
+-   [target](./././~/Deno.SrvRecord#property_target)
+-   [weight](./././~/Deno.SrvRecord#property_weight)
 
 I
 
@@ -437,10 +432,10 @@ I
 
 No documentation available
 
-*   [alpnProtocols](./././~/Deno.StartTlsOptions#property_alpnprotocols)
-*   [caCerts](./././~/Deno.StartTlsOptions#property_cacerts)
-*   [hostname](./././~/Deno.StartTlsOptions#property_hostname)
-*   [unsafelyDisableHostnameVerification](./././~/Deno.StartTlsOptions#property_unsafelydisablehostnameverification)
+-   [alpnProtocols](./././~/Deno.StartTlsOptions#property_alpnprotocols)
+-   [caCerts](./././~/Deno.StartTlsOptions#property_cacerts)
+-   [hostname](./././~/Deno.StartTlsOptions#property_hostname)
+-   [unsafelyDisableHostnameVerification](./././~/Deno.StartTlsOptions#property_unsafelydisablehostnameverification)
 
 I
 
@@ -448,8 +443,8 @@ I
 
 No documentation available
 
-*   [setKeepAlive](./././~/Deno.TcpConn#method_setkeepalive_0)
-*   [setNoDelay](./././~/Deno.TcpConn#method_setnodelay_0)
+-   [setKeepAlive](./././~/Deno.TcpConn#method_setkeepalive_0)
+-   [setNoDelay](./././~/Deno.TcpConn#method_setnodelay_0)
 
 I
 
@@ -457,7 +452,7 @@ I
 
 No documentation available
 
-*   [reusePort](./././~/Deno.TcpListenOptions#property_reuseport)
+-   [reusePort](./././~/Deno.TcpListenOptions#property_reuseport)
 
 I
 
@@ -465,9 +460,9 @@ I
 
 Provides certified key material from strings. The key material is provided in `PEM`\-format (Privacy Enhanced Mail, [https://www.rfc-editor.org/rfc/rfc1422](https://www.rfc-editor.org/rfc/rfc1422)) which can be identified by having `-----BEGIN-----` and `-----END-----` markers at the beginning and end of the strings. This type of key is not compatible with `DER`\-format keys which are binary.
 
-*   [cert](./././~/Deno.TlsCertifiedKeyPem#property_cert)
-*   [key](./././~/Deno.TlsCertifiedKeyPem#property_key)
-*   [keyFormat](./././~/Deno.TlsCertifiedKeyPem#property_keyformat)
+-   [cert](./././~/Deno.TlsCertifiedKeyPem#property_cert)
+-   [key](./././~/Deno.TlsCertifiedKeyPem#property_key)
+-   [keyFormat](./././~/Deno.TlsCertifiedKeyPem#property_keyformat)
 
 I
 
@@ -475,7 +470,7 @@ I
 
 No documentation available
 
-*   [handshake](./././~/Deno.TlsConn#method_handshake_0)
+-   [handshake](./././~/Deno.TlsConn#method_handshake_0)
 
 I
 
@@ -483,7 +478,7 @@ I
 
 No documentation available
 
-*   [alpnProtocol](./././~/Deno.TlsHandshakeInfo#property_alpnprotocol)
+-   [alpnProtocol](./././~/Deno.TlsHandshakeInfo#property_alpnprotocol)
 
 I
 
@@ -491,8 +486,8 @@ I
 
 Unstable options which can be set when opening a datagram listener via [`Deno.listenDatagram`](./././~/Deno.listenDatagram).
 
-*   [loopback](./././~/Deno.UdpListenOptions#property_loopback)
-*   [reuseAddress](./././~/Deno.UdpListenOptions#property_reuseaddress)
+-   [loopback](./././~/Deno.UdpListenOptions#property_loopback)
+-   [reuseAddress](./././~/Deno.UdpListenOptions#property_reuseaddress)
 
 I
 
@@ -500,8 +495,8 @@ I
 
 No documentation available
 
-*   [path](./././~/Deno.UnixAddr#property_path)
-*   [transport](./././~/Deno.UnixAddr#property_transport)
+-   [path](./././~/Deno.UnixAddr#property_path)
+-   [transport](./././~/Deno.UnixAddr#property_transport)
 
 I
 
@@ -515,8 +510,8 @@ I
 
 No documentation available
 
-*   [path](./././~/Deno.UnixConnectOptions#property_path)
-*   [transport](./././~/Deno.UnixConnectOptions#property_transport)
+-   [path](./././~/Deno.UnixConnectOptions#property_path)
+-   [transport](./././~/Deno.UnixConnectOptions#property_transport)
 
 I
 
@@ -524,7 +519,7 @@ I
 
 Options which can be set when opening a Unix listener via [`Deno.listen`](./././~/Deno.listen) or [`Deno.listenDatagram`](./././~/Deno.listenDatagram).
 
-*   [path](./././~/Deno.UnixListenOptions#property_path)
+-   [path](./././~/Deno.UnixListenOptions#property_path)
 
 I
 
@@ -532,9 +527,9 @@ I
 
 No documentation available
 
-*   [cid](./././~/Deno.VsockAddr#property_cid)
-*   [port](./././~/Deno.VsockAddr#property_port)
-*   [transport](./././~/Deno.VsockAddr#property_transport)
+-   [cid](./././~/Deno.VsockAddr#property_cid)
+-   [port](./././~/Deno.VsockAddr#property_port)
+-   [transport](./././~/Deno.VsockAddr#property_transport)
 
 I
 
@@ -548,9 +543,9 @@ I
 
 No documentation available
 
-*   [cid](./././~/Deno.VsockConnectOptions#property_cid)
-*   [port](./././~/Deno.VsockConnectOptions#property_port)
-*   [transport](./././~/Deno.VsockConnectOptions#property_transport)
+-   [cid](./././~/Deno.VsockConnectOptions#property_cid)
+-   [port](./././~/Deno.VsockConnectOptions#property_port)
+-   [transport](./././~/Deno.VsockConnectOptions#property_transport)
 
 I
 
@@ -558,10 +553,8 @@ I
 
 Options which can be set when opening a VSOCK listener via [`Deno.listen`](./././~/Deno.listen).
 
-*   [cid](./././~/Deno.VsockListenOptions#property_cid)
-*   [port](./././~/Deno.VsockListenOptions#property_port)
-
-### Type Aliases [#](<#Type Aliases>)
+-   [cid](./././~/Deno.VsockListenOptions#property_cid)
+-   [port](./././~/Deno.VsockListenOptions#property_port)
 
 T
 

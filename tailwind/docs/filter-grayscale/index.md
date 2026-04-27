@@ -5,41 +5,46 @@ canonical_url: "https://tailwindcss.com/docs/filter-grayscale"
 docset: "tailwind"
 kind: "framework"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:07:44.819Z"
-content_hash: "cfb9a5ed3d5ef0ed1021aa4ad20920be6fa9bdc8dd75f8909d5c7d295a11cf1d"
+last_crawled_at: "2026-04-27T20:26:20.252Z"
+content_hash: "ecfba0b96c05430d0e94cf6a8a246f5b0a64f279a1835cfa8159f1480aa2fd57"
 menu_path: ["filter: grayscale()"]
 section_path: []
-nav_prev: {"path": "tailwind/docs/filter-drop-shadow/index.md", "title": "filter: drop-shadow()"}
-nav_next: {"path": "tailwind/docs/filter-hue-rotate/index.md", "title": "filter: hue-rotate()"}
+content_language: "en"
 ---
+[](/)
+
+[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
+
+1.  Filters
+2.  grayscale
+
+Filters
 
 # filter: grayscale()
 
 Utilities for applying grayscale filters to an element.
 
-Class
-
-Styles
-
-`grayscale`
-
+| Class | Styles |
+| --- | --- |
+| `grayscale` | 
 `filter: grayscale(100%);`
 
-`grayscale-<number>`
+ |
+| `grayscale-<number>` | 
 
 `filter: grayscale(<number>%);`
 
-`grayscale-(<custom-property>)`
+ |
+| `grayscale-(<custom-property>)` | 
 
 `filter: grayscale(var(<custom-property>));`
 
-`grayscale-[<value>]`
+ |
+| `grayscale-[<value>]` | 
 
 `filter: grayscale(<value>);`
 
-## [Examples](#examples)
-
-### [Basic example](#basic-example)
+ |
 
 Use utilities like `grayscale` and `grayscale-75` to control the amount of grayscale effect applied to an element:
 
@@ -63,8 +68,6 @@ grayscale
 <img class="grayscale-0 ..." src="/img/mountains.jpg" /><img class="grayscale-25 ..." src="/img/mountains.jpg" /><img class="grayscale-50 ..." src="/img/mountains.jpg" /><img class="grayscale ..." src="/img/mountains.jpg" />
 ```
 
-### [Using a custom value](#using-a-custom-value)
-
 Use the `grayscale-[<value>]` syntax to set the grayscale based on a completely custom value:
 
 ```
@@ -79,8 +82,6 @@ For CSS variables, you can also use the `grayscale-(<custom-property>)` syntax:
 
 This is just a shorthand for `grayscale-[var(<custom-property>)]` that adds the `var()` function for you automatically.
 
-### [Responsive design](#responsive-design)
-
 Prefix a `filter: grayscale()` utility with a breakpoint variant like `md:` to only apply the utility at medium screen sizes and above:
 
 ```
@@ -91,11 +92,11 @@ Learn more about using variants in the [variants documentation](/docs/hover-focu
 
 ### On this page
 
-*   [Quick reference](#quick-reference)
-*   [Examples](#examples)
-    *   [Basic example](#basic-example)
-    *   [Using a custom value](#using-a-custom-value)
-    *   [Responsive design](#responsive-design)
+-   [Quick reference](#quick-reference)
+-   [Examples](#examples)
+    -   [Basic example](#basic-example)
+    -   [Using a custom value](#using-a-custom-value)
+    -   [Responsive design](#responsive-design)
 
 [
 

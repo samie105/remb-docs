@@ -5,25 +5,17 @@ canonical_url: "https://orm.drizzle.team/docs/guides/select-parent-rows-with-at-
 docset: "drizzle"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:06:56.081Z"
-content_hash: "b7c63c949566d45371868402aecabf86f75189c4d817ff6fea84f86c72df2cb6"
+last_crawled_at: "2026-04-27T19:03:09.285Z"
+content_hash: "a47344e95778cc5560a5a924568e205ffa201ea5641a3e919f45560f517e325f"
 menu_path: ["Drizzle ORM - Select parent rows with at least one related child row"]
 section_path: []
-nav_prev: {"path": "drizzle/docs/guides/seeding-with-partially-exposed-tables/index.md", "title": "Drizzle ORM - Seeding Partially Exposed Tables with Foreign Key"}
-nav_next: {"path": "drizzle/docs/guides/timestamp-default-value/index.md", "title": "Drizzle ORM - SQL Timestamp as a default value"}
+content_language: "en"
 ---
-
 Drizzle | Select parent rows with at least one related child row
-
-PostgreSQL
-
-MySQL
-
-SQLite
 
 This guide demonstrates how to select parent rows with the condition of having at least one related child row. Below, there are examples of schema definitions and the corresponding database data:
 
-```
+```ts
 import { integer, pgTable, serial, text } from 'drizzle-orm/pg-core';
 
 export const users = pgTable('users', {
@@ -40,11 +32,7 @@ export const posts = pgTable('posts', {
 });
 ```
 
-users.db
-
-posts.db
-
-```
+```plaintext
 +----+------------+----------------------+
 | id |    name    |        email         |
 +----+------------+----------------------+
@@ -58,7 +46,7 @@ posts.db
 
 To select parent rows with at least one related child row and retrieve child data you can use `.innerJoin()` method:
 
-```
+```ts
 import { eq } from 'drizzle-orm';
 import { users, posts } from './schema';
 
@@ -74,13 +62,13 @@ await db
   .orderBy(users.id);
 ```
 
-```
+```sql
 select users.*, posts.* from users
   inner join posts on users.id = posts.user_id
   order by users.id;
 ```
 
-```
+```ts
 // result data, there is no user with id 2 because he has no posts
 [
   {
@@ -115,7 +103,7 @@ select users.*, posts.* from users
 
 To only select parent rows with at least one related child row you can use subquery with `exists()` function like this:
 
-```
+```ts
 import { eq, exists, sql } from 'drizzle-orm';
 
 const sq = db
@@ -126,11 +114,11 @@ const sq = db
 await db.select().from(users).where(exists(sq));
 ```
 
-```
+```sql
 select * from users where exists (select 1 from posts where posts.user_id = users.id);
 ```
 
-```
+```ts
 // result data, there is no user with id 2 because he has no posts
 [
   { id: 1, name: 'John Doe', email: 'john_doe@email.com' },

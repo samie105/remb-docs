@@ -5,49 +5,56 @@ canonical_url: "https://tailwindcss.com/docs/background-repeat"
 docset: "tailwind"
 kind: "framework"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:02:09.432Z"
-content_hash: "351ca0ca4b39edec9a178d25f9cc064594e3fd58198ed5d43cb1cafda5fb8bd2"
+last_crawled_at: "2026-04-27T20:17:30.534Z"
+content_hash: "183052af4be35d0961c87a843b15fca194277fa0011665c05c0539328a5b3a02"
 menu_path: ["background-repeat"]
 section_path: []
-nav_prev: {"path": "tailwind/docs/background-position/index.md", "title": "background-position"}
-nav_next: {"path": "tailwind/docs/background-size/index.md", "title": "background-size"}
+content_language: "en"
 ---
+[](/)
+
+[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
+
+1.  Backgrounds
+2.  background-repeat
+
+Backgrounds
 
 # background-repeat
 
 Utilities for controlling the repetition of an element's background image.
 
-Class
-
-Styles
-
-`bg-repeat`
-
+| Class | Styles |
+| --- | --- |
+| `bg-repeat` | 
 `background-repeat: repeat;`
 
-`bg-repeat-x`
+ |
+| `bg-repeat-x` | 
 
 `background-repeat: repeat-x;`
 
-`bg-repeat-y`
+ |
+| `bg-repeat-y` | 
 
 `background-repeat: repeat-y;`
 
-`bg-repeat-space`
+ |
+| `bg-repeat-space` | 
 
 `background-repeat: space;`
 
-`bg-repeat-round`
+ |
+| `bg-repeat-round` | 
 
 `background-repeat: round;`
 
-`bg-no-repeat`
+ |
+| `bg-no-repeat` | 
 
 `background-repeat: no-repeat;`
 
-## [Examples](#examples)
-
-### [Basic example](#basic-example)
+ |
 
 Use the `bg-repeat` utility to repeat the background image both vertically and horizontally:
 
@@ -55,15 +62,11 @@ Use the `bg-repeat` utility to repeat the background image both vertically and h
 <div class="bg-[url(/img/clouds.svg)] bg-center bg-repeat ..."></div>
 ```
 
-### [Repeating horizontally](#repeating-horizontally)
-
 Use the `bg-repeat-x` utility to only repeat the background image horizontally:
 
 ```
 <div class="bg-[url(/img/clouds.svg)] bg-center bg-repeat-x ..."></div>
 ```
-
-### [Repeating vertically](#repeating-vertically)
 
 Use the `bg-repeat-y` utility to only repeat the background image vertically:
 
@@ -71,15 +74,11 @@ Use the `bg-repeat-y` utility to only repeat the background image vertically:
 <div class="bg-[url(/img/clouds.svg)] bg-center bg-repeat-y ..."></div>
 ```
 
-### [Preventing clipping](#preventing-clipping)
-
 Use the `bg-repeat-space` utility to repeat the background image without clipping:
 
 ```
 <div class="bg-[url(/img/clouds.svg)] bg-center bg-repeat-space ..."></div>
 ```
-
-### [Preventing clipping and gaps](#preventing-clipping-and-gaps)
 
 Use the `bg-repeat-round` utility to repeat the background image without clipping, stretching if needed to avoid gaps:
 
@@ -87,15 +86,11 @@ Use the `bg-repeat-round` utility to repeat the background image without clippin
 <div class="bg-[url(/img/clouds.svg)] bg-center bg-repeat-round ..."></div>
 ```
 
-### [Disabling repeating](#disabling-repeating)
-
 Use the `bg-no-repeat` utility to prevent a background image from repeating:
 
 ```
 <div class="bg-[url(/img/clouds.svg)] bg-center bg-no-repeat ..."></div>
 ```
-
-### [Responsive design](#responsive-design)
 
 Prefix a `background-repeat` utility with a breakpoint variant like `md:` to only apply the utility at medium screen sizes and above:
 
@@ -107,15 +102,15 @@ Learn more about using variants in the [variants documentation](/docs/hover-focu
 
 ### On this page
 
-*   [Quick reference](#quick-reference)
-*   [Examples](#examples)
-    *   [Basic example](#basic-example)
-    *   [Repeating horizontally](#repeating-horizontally)
-    *   [Repeating vertically](#repeating-vertically)
-    *   [Preventing clipping](#preventing-clipping)
-    *   [Preventing clipping and gaps](#preventing-clipping-and-gaps)
-    *   [Disabling repeating](#disabling-repeating)
-    *   [Responsive design](#responsive-design)
+-   [Quick reference](#quick-reference)
+-   [Examples](#examples)
+    -   [Basic example](#basic-example)
+    -   [Repeating horizontally](#repeating-horizontally)
+    -   [Repeating vertically](#repeating-vertically)
+    -   [Preventing clipping](#preventing-clipping)
+    -   [Preventing clipping and gaps](#preventing-clipping-and-gaps)
+    -   [Disabling repeating](#disabling-repeating)
+    -   [Responsive design](#responsive-design)
 
 ![Build UIs that don’t suck — 5-day mini-course](/_next/static/media/course-promo.d3d6bc78.jpg)
 

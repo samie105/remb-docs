@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/pages/building-your-application/routing/
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:23:26.279Z"
-content_hash: "3226756541068e2b867342f76614335b81b2c01deeb73318fe9b2fcf477ff602"
+last_crawled_at: "2026-04-27T18:22:44.390Z"
+content_hash: "8f8936397b0ea28fa771635eae79b270e6231ad81687aada5c274fa09e7b94b3"
 menu_path: ["Custom Errors"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/pages/building-your-application/routing/api-routes/index.md", "title": "API Routes"}
-nav_next: {"path": "nextjs/docs/pages/building-your-application/rendering/server-side-rendering/index.md", "title": "Server-side Rendering (SSR)"}
+version: "latest"
+content_language: "en"
 ---
+[Building Your Application](/docs/pages/building-your-application)[Routing](/docs/pages/building-your-application/routing)Custom Errors
 
 # Custom Errors
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 ## 404 Page[](#404-page)
 
@@ -112,11 +113,7 @@ If you have a custom `Error` component be sure to import that one instead. `next
 
 ### Caveats[](#caveats)
 
-*   `Error` does not currently support Next.js [Data Fetching methods](/docs/pages/building-your-application/data-fetching) like [`getStaticProps`](/docs/pages/building-your-application/data-fetching/get-static-props) or [`getServerSideProps`](/docs/pages/building-your-application/data-fetching/get-server-side-props).
-*   `_error`, like `_app`, is a reserved pathname. `_error` is used to define the customized layouts and behaviors of the error pages. `/_error` will render 404 when accessed directly via [routing](/docs/pages/building-your-application/routing) or rendering in a [custom server](/docs/pages/guides/custom-server).
+-   `Error` does not currently support Next.js [Data Fetching methods](/docs/pages/building-your-application/data-fetching) like [`getStaticProps`](/docs/pages/building-your-application/data-fetching/get-static-props) or [`getServerSideProps`](/docs/pages/building-your-application/data-fetching/get-server-side-props).
+-   `_error`, like `_app`, is a reserved pathname. `_error` is used to define the customized layouts and behaviors of the error pages. `/_error` will render 404 when accessed directly via [routing](/docs/pages/building-your-application/routing) or rendering in a [custom server](/docs/pages/guides/custom-server).
 
 Was this helpful?
-
-supported.
-
-Send

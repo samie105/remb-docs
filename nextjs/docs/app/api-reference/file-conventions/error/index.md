@@ -5,25 +5,24 @@ canonical_url: "https://nextjs.org/docs/app/api-reference/file-conventions/error
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:09:48.195Z"
-content_hash: "bd525c36d83058d7f89edbb33e35a3b5e52b9485b6333312d7e718d5b2324077"
+last_crawled_at: "2026-04-27T18:08:32.962Z"
+content_hash: "72c66d1d2a2ed2c867ef9a549aa11b0b97133caa7f92a6e15ad989062a345f4d"
 menu_path: ["error.js"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/api-reference/file-conventions/dynamic-routes/index.md", "title": "Dynamic Route Segments"}
-nav_next: {"path": "nextjs/docs/app/api-reference/file-conventions/forbidden/index.md", "title": "forbidden.js"}
+version: "latest"
+content_language: "en"
 ---
+[API Reference](/docs/app/api-reference)[File-system conventions](/docs/app/api-reference/file-conventions)error.js
 
 # error.js
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 An **error** file allows you to handle unexpected runtime errors and display fallback UI.
 
-![error.js special file](/_next/image?url=https%3A%2F%2Fh8DxKfmAPhn8O0p3.public.blob.vercel-storage.com%2Fdocs%2Flight%2Ferror-special-file.png&w=3840&q=75)![error.js special file](/_next/image?url=https%3A%2F%2Fh8DxKfmAPhn8O0p3.public.blob.vercel-storage.com%2Fdocs%2Fdark%2Ferror-special-file.png&w=3840&q=75)
+![error.js special file](https://h8DxKfmAPhn8O0p3.public.blob.vercel-storage.com/docs/light/error-special-file.png)
 
 app/dashboard/error.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -62,13 +61,13 @@ export default function Error({
 
 `error.js` wraps a route segment and its nested children in a [React Error Boundary](https://react.dev/reference/react/Component#catching-rendering-errors-with-an-error-boundary). When an error throws within the boundary, the `error` component shows as the fallback UI.
 
-![How error.js works](/_next/image?url=https%3A%2F%2Fh8DxKfmAPhn8O0p3.public.blob.vercel-storage.com%2Fdocs%2Flight%2Ferror-overview.png&w=3840&q=75)![How error.js works](/_next/image?url=https%3A%2F%2Fh8DxKfmAPhn8O0p3.public.blob.vercel-storage.com%2Fdocs%2Fdark%2Ferror-overview.png&w=3840&q=75)
+![How error.js works](https://h8DxKfmAPhn8O0p3.public.blob.vercel-storage.com/docs/light/error-overview.png)
 
 > **Good to know**:
 > 
-> *   The [React DevTools](https://react.dev/learn/react-developer-tools) allow you to toggle error boundaries to test error states.
-> *   If you want errors to bubble up to the parent error boundary, you can `throw` when rendering the `error` component.
-> *   For component-level error recovery that aren't tied to route segments like [`error.js`](/docs/app/api-reference/file-conventions/error), use the [`unstable_catchError`](/docs/app/api-reference/functions/catchError) function.
+> -   The [React DevTools](https://react.dev/learn/react-developer-tools) allow you to toggle error boundaries to test error states.
+> -   If you want errors to bubble up to the parent error boundary, you can `throw` when rendering the `error` component.
+> -   For component-level error recovery that aren't tied to route segments like [`error.js`](/docs/app/api-reference/file-conventions/error), use the [`unstable_catchError`](/docs/app/api-reference/functions/catchError) function.
 
 In the [component hierarchy](/docs/app/getting-started/project-structure#component-hierarchy), `error.js` wraps `loading.js`, `not-found.js`, `page.js`, and nested `layout.js` files in a React error boundary. It does **not** wrap the `layout.js` or `template.js` above it in the same segment. To handle errors in the root layout, use [`global-error.js`](/docs/app/api-reference/file-conventions/error#global-error).
 
@@ -84,8 +83,8 @@ An instance of an [`Error`](https://developer.mozilla.org/docs/Web/JavaScript/Re
 
 #### `error.message`[](#errormessage)
 
-*   Errors forwarded from Client Components show the original `Error` message.
-*   Errors forwarded from Server Components show a generic message with an identifier. This is to prevent leaking sensitive details. You can use the identifier, under `errors.digest`, to match the corresponding server-side logs.
+-   Errors forwarded from Client Components show the original `Error` message.
+-   Errors forwarded from Server Components show a generic message with an identifier. This is to prevent leaking sensitive details. You can use the identifier, under `errors.digest`, to match the corresponding server-side logs.
 
 #### `error.digest`[](#errordigest)
 
@@ -98,8 +97,6 @@ The cause of an error can sometimes be temporary. In these cases, trying again m
 An error component can use the `unstable_retry()` function to prompt the user to attempt to recover from the error. When executed, the function will try to re-fetch and re-render the error boundary's children. If successful, the fallback error component is replaced with the result of the re-render.
 
 app/dashboard/error.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -136,8 +133,6 @@ While less common, you can handle errors in the root layout or template using `g
 
 app/global-error.tsx
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -169,8 +164,6 @@ When rendering fails on the client, it can be useful to show the last known serv
 The `GracefullyDegradingErrorBoundary` is an example of a custom error boundary that captures and preserves the current HTML before an error occurs. If a rendering error happens, it re-renders the captured HTML and displays a persistent notification bar to inform the user.
 
 app/dashboard/error.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -240,25 +233,12 @@ export default GracefullyDegradingErrorBoundary
 
 ## Version History[](#version-history)
 
-Version
-
-Changes
-
-`v16.2.0`
-
-`unstable_retry` prop added.
-
-`v15.2.0`
-
-Also display `global-error` in development.
-
-`v13.1.0`
-
-`global-error` introduced.
-
-`v13.0.0`
-
-`error` introduced.
+| Version | Changes |
+| --- | --- |
+| `v16.2.0` | `unstable_retry` prop added. |
+| `v15.2.0` | Also display `global-error` in development. |
+| `v13.1.0` | `global-error` introduced. |
+| `v13.0.0` | `error` introduced. |
 
 ## Learn more about error handling
 
@@ -270,20 +250,4 @@ Learn how to display expected errors and handle uncaught exceptions.
 
 ](/docs/app/getting-started/error-handling)
 
-[Previous
-
-Dynamic Segments
-
-](/docs/app/api-reference/file-conventions/dynamic-routes)
-
-[Next
-
-forbidden.js
-
-](/docs/app/api-reference/file-conventions/forbidden)
-
 Was this helpful?
-
-supported.
-
-Send

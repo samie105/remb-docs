@@ -5,41 +5,46 @@ canonical_url: "https://tailwindcss.com/docs/filter-hue-rotate"
 docset: "tailwind"
 kind: "framework"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:08:22.459Z"
-content_hash: "7bf404e628ca8e2b28c78f0a36370482dbf8172b98adf32fa3915dc79a250a30"
+last_crawled_at: "2026-04-27T20:26:21.434Z"
+content_hash: "0ad29f2ebf7b3df9d2f602772b477f5997fbe71494a2379c94c3742a43561e13"
 menu_path: ["filter: hue-rotate()"]
 section_path: []
-nav_prev: {"path": "tailwind/docs/filter-grayscale/index.md", "title": "filter: grayscale()"}
-nav_next: {"path": "tailwind/docs/filter-invert/index.md", "title": "filter: invert()"}
+content_language: "en"
 ---
+[](/)
+
+[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
+
+1.  Filters
+2.  hue-rotate
+
+Filters
 
 # filter: hue-rotate()
 
 Utilities for applying hue-rotate filters to an element.
 
-Class
-
-Styles
-
-`hue-rotate-<number>`
-
+| Class | Styles |
+| --- | --- |
+| `hue-rotate-<number>` | 
 `filter: hue-rotate(<number>deg);`
 
-`-hue-rotate-<number>`
+ |
+| `-hue-rotate-<number>` | 
 
 `filter: hue-rotate(calc(<number>deg * -1));`
 
-`hue-rotate-(<custom-property>)`
+ |
+| `hue-rotate-(<custom-property>)` | 
 
 `filter: hue-rotate(var(<custom-property>));`
 
-`hue-rotate-[<value>]`
+ |
+| `hue-rotate-[<value>]` | 
 
 `filter: hue-rotate(<value>);`
 
-## [Examples](#examples)
-
-### [Basic example](#basic-example)
+ |
 
 Use utilities like `hue-rotate-90` and `hue-rotate-180` to rotate the hue of an element by degrees:
 
@@ -63,8 +68,6 @@ hue-rotate-270
 <img class="hue-rotate-15" src="/img/mountains.jpg" /><img class="hue-rotate-90" src="/img/mountains.jpg" /><img class="hue-rotate-180" src="/img/mountains.jpg" /><img class="hue-rotate-270" src="/img/mountains.jpg" />
 ```
 
-### [Using negative values](#using-negative-values)
-
 Use utilities like `-hue-rotate-15` and `-hue-rotate-45` to set a negative hue rotate value:
 
 \-hue-rotate-15
@@ -83,8 +86,6 @@ Use utilities like `-hue-rotate-15` and `-hue-rotate-45` to set a negative hue r
 <img class="-hue-rotate-15" src="/img/mountains.jpg" /><img class="-hue-rotate-45" src="/img/mountains.jpg" /><img class="-hue-rotate-90" src="/img/mountains.jpg" />
 ```
 
-### [Using a custom value](#using-a-custom-value)
-
 Use the `hue-rotate-[<value>]` syntax to set the hue rotation based on a completely custom value:
 
 ```
@@ -99,8 +100,6 @@ For CSS variables, you can also use the `hue-rotate-(<custom-property>)` syntax:
 
 This is just a shorthand for `hue-rotate-[var(<custom-property>)]` that adds the `var()` function for you automatically.
 
-### [Responsive design](#responsive-design)
-
 Prefix a `filter: hue-rotate()` utility with a breakpoint variant like `md:` to only apply the utility at medium screen sizes and above:
 
 ```
@@ -111,12 +110,12 @@ Learn more about using variants in the [variants documentation](/docs/hover-focu
 
 ### On this page
 
-*   [Quick reference](#quick-reference)
-*   [Examples](#examples)
-    *   [Basic example](#basic-example)
-    *   [Using negative values](#using-negative-values)
-    *   [Using a custom value](#using-a-custom-value)
-    *   [Responsive design](#responsive-design)
+-   [Quick reference](#quick-reference)
+-   [Examples](#examples)
+    -   [Basic example](#basic-example)
+    -   [Using negative values](#using-negative-values)
+    -   [Using a custom value](#using-a-custom-value)
+    -   [Responsive design](#responsive-design)
 
 ![Build UIs that don’t suck — 5-day mini-course](/_next/static/media/course-promo.d3d6bc78.jpg)
 

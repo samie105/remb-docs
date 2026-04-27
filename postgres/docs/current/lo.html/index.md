@@ -5,14 +5,12 @@ canonical_url: "https://www.postgresql.org/docs/current/lo.html"
 docset: "postgres"
 kind: "database"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:48:54.484Z"
-content_hash: "f20a0c5eedde61c562b53951987c567963ecbceadea92cddb24d1dd50b3654ad"
+last_crawled_at: "2026-04-27T20:48:58.631Z"
+content_hash: "02380ef820fb793b656f74ad7b4b8fc39c685dbc36587d5edcb36892aa187fdc"
 menu_path: ["PostgreSQL: Documentation: 18: F.21. lo — manage large objects"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/lo-implementation.html/index.md", "title": "PostgreSQL: Documentation: 18: 33.2.\u00a0Implementation Features"}
-nav_next: {"path": "postgres/docs/current/locale.html/index.md", "title": "PostgreSQL: Documentation: 18: 23.1.\u00a0Locale Support"}
+content_language: "en"
 ---
-
 Development Versions: [devel](https://www.postgresql.org/docs/devel/lo.html "PostgreSQL devel - F.21. lo — manage large objects")
 
 The `lo` module provides support for managing Large Objects (also called LOs or BLOBs). This includes a data type `lo` and a trigger `lo_manage`.
@@ -29,7 +27,7 @@ Now this is fine for PostgreSQL\-specific applications, but standard code using 
 
 The `lo` module allows fixing this by attaching a trigger to tables that contain LO reference columns. The trigger essentially just does a `lo_unlink` whenever you delete or modify a value referencing a large object. When you use this trigger, you are assuming that there is only one database reference to any large object that is referenced in a trigger-controlled column!
 
-The module also provides a data type `lo`, which is really just a [](postgres/docs/current/glossary.html/index.md#GLOSSARY-DOMAIN)[domain](https://www.postgresql.org/docs/current/glossary.html#GLOSSARY-DOMAIN "Domain") over the `oid` type. This is useful for differentiating database columns that hold large object references from those that are OIDs of other things. You don't have to use the `lo` type to use the trigger, but it may be convenient to use it to keep track of which columns in your database represent large objects that you are managing with the trigger. It is also rumored that the ODBC driver gets confused if you don't use `lo` for BLOB columns.
+The module also provides a data type `lo`, which is really just a [](https://www.postgresql.org/docs/current/glossary.html#GLOSSARY-DOMAIN)[domain](https://www.postgresql.org/docs/current/glossary.html#GLOSSARY-DOMAIN "Domain") over the `oid` type. This is useful for differentiating database columns that hold large object references from those that are OIDs of other things. You don't have to use the `lo` type to use the trigger, but it may be convenient to use it to keep track of which columns in your database represent large objects that you are managing with the trigger. It is also rumored that the ODBC driver gets confused if you don't use `lo` for BLOB columns.
 
 ### F.21.2. How to Use It [#](#LO-HOW-TO-USE)
 
@@ -44,10 +42,10 @@ For each column that will contain unique references to large objects, create a `
 
 ### F.21.3. Limitations [#](#LO-LIMITATIONS)
 
-*   Dropping a table will still orphan any objects it contains, as the trigger is not executed. You can avoid this by preceding the `DROP TABLE` with ``DELETE FROM _`table`_``.
+-   Dropping a table will still orphan any objects it contains, as the trigger is not executed. You can avoid this by preceding the `DROP TABLE` with ``DELETE FROM _`table`_``.
     
     `TRUNCATE` has the same hazard.
     
     If you already have, or suspect you have, orphaned large objects, see the [vacuumlo](https://www.postgresql.org/docs/current/vacuumlo.html "vacuumlo") module to help you clean them up. It's a good idea to run vacuumlo occasionally as a back-stop to the `lo_manage` trigger.
     
-*   Some frontends may create their own tables, and will not create the associated trigger(s). Also, users may not remember (or know) to create the triggers.
+-   Some frontends may create their own tables, and will not create the associated trigger(s). Also, users may not remember (or know) to create the triggers.

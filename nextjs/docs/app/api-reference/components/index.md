@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/app/api-reference/components"
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:06:13.662Z"
-content_hash: "11cb00c959d8bed60cf10c48af7d6182cbccc60ad3173b279fab4dda699ba68a"
+last_crawled_at: "2026-04-27T18:05:07.900Z"
+content_hash: "528ef4590dc7e6af18f6a2140ea3cf29e94faaf5289555038f14f93e27a66fa0"
 menu_path: ["Components"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/api-reference/directives/use-server/index.md", "title": "use server"}
-nav_next: {"path": "nextjs/docs/app/api-reference/components/font/index.md", "title": "Font Module"}
+version: "latest"
+content_language: "en"
 ---
+[App Router](/docs/app)[API Reference](/docs/app/api-reference)Components
 
 # Components
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 [
 
@@ -49,20 +50,4 @@ Optimize third-party scripts in your Next.js application using the built-in \`ne
 
 ](/docs/app/api-reference/components/script)
 
-[Previous
-
-use server
-
-](/docs/app/api-reference/directives/use-server)
-
-[Next
-
-Font
-
-](/docs/app/api-reference/components/font)
-
 Was this helpful?
-
-supported.
-
-Send

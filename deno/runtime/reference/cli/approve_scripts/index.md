@@ -5,16 +5,17 @@ canonical_url: "https://docs.deno.com/runtime/reference/cli/approve_scripts/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:50:48.077Z"
-content_hash: "7c1726c0e7f564437c52813c29365ec6ada1b6e4fd3d80e9fd7bfcc0fa73ddd2"
+last_crawled_at: "2026-04-27T17:25:36.033Z"
+content_hash: "796331243a7acf801b9db0e7812e51777d0d8b3ca3ee3f78cce2006a5f1e9b27"
 menu_path: ["deno approve-scripts"]
 section_path: []
+content_language: "en"
 ---
-On this page
+**On this page**
 
-*   [Basic usage](#basic-usage)
-*   [Why lifecycle scripts are blocked by default](#why-lifecycle-scripts-are-blocked-by-default)
-*   [Options](#options)
+-   [Basic usage](#basic-usage)
+-   [Why lifecycle scripts are blocked by default](#why-lifecycle-scripts-are-blocked-by-default)
+-   [Options](#options)
 
 `deno approve-scripts` lets you review and approve pending npm lifecycle scripts (such as `postinstall`) in your dependency tree. Unlike npm, Deno does not run these scripts by default for security reasons.
 

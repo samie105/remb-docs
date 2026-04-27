@@ -5,37 +5,41 @@ canonical_url: "https://tailwindcss.com/docs/filter-contrast"
 docset: "tailwind"
 kind: "framework"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:07:45.285Z"
-content_hash: "440e75f65f5c2b1239433aca3652fec79ff214c3f2a55a5adbc5649c415cd7fd"
+last_crawled_at: "2026-04-27T20:25:45.835Z"
+content_hash: "a189f0207f3a54557fcbc8ba551d660ac217ab452ff58fe8ffdd90796bece052"
 menu_path: ["filter: contrast()"]
 section_path: []
-nav_prev: {"path": "tailwind/docs/filter-brightness/index.md", "title": "filter: brightness()"}
-nav_next: {"path": "tailwind/docs/filter-drop-shadow/index.md", "title": "filter: drop-shadow()"}
+content_language: "en"
 ---
+[](/)
+
+[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
+
+1.  Filters
+2.  contrast
+
+Filters
 
 # filter: contrast()
 
 Utilities for applying contrast filters to an element.
 
-Class
-
-Styles
-
-`contrast-<number>`
-
+| Class | Styles |
+| --- | --- |
+| `contrast-<number>` | 
 `filter: contrast(<number>%);`
 
-`contrast-(<custom-property>)`
+ |
+| `contrast-(<custom-property>)` | 
 
 `filter: contrast(var(<custom-property>));`
 
-`contrast-[<value>]`
+ |
+| `contrast-[<value>]` | 
 
 `filter: contrast(<value>);`
 
-## [Examples](#examples)
-
-### [Basic example](#basic-example)
+ |
 
 Use utilities like `contrast-50` and `contrast-100` to control an element's contrast:
 
@@ -59,8 +63,6 @@ contrast-200
 <img class="contrast-50 ..." src="/img/mountains.jpg" /><img class="contrast-100 ..." src="/img/mountains.jpg" /><img class="contrast-125 ..." src="/img/mountains.jpg" /><img class="contrast-200 ..." src="/img/mountains.jpg" />
 ```
 
-### [Using a custom value](#using-a-custom-value)
-
 Use the `contrast-[<value>]` syntax to set the contrast based on a completely custom value:
 
 ```
@@ -75,8 +77,6 @@ For CSS variables, you can also use the `contrast-(<custom-property>)` syntax:
 
 This is just a shorthand for `contrast-[var(<custom-property>)]` that adds the `var()` function for you automatically.
 
-### [Responsive design](#responsive-design)
-
 Prefix a `filter: contrast()` utility with a breakpoint variant like `md:` to only apply the utility at medium screen sizes and above:
 
 ```
@@ -87,24 +87,20 @@ Learn more about using variants in the [variants documentation](/docs/hover-focu
 
 ### On this page
 
-*   [Quick reference](#quick-reference)
-*   [Examples](#examples)
-    *   [Basic example](#basic-example)
-    *   [Using a custom value](#using-a-custom-value)
-    *   [Responsive design](#responsive-design)
+-   [Quick reference](#quick-reference)
+-   [Examples](#examples)
+    -   [Basic example](#basic-example)
+    -   [Using a custom value](#using-a-custom-value)
+    -   [Responsive design](#responsive-design)
 
-[
+![Build UIs that don’t suck — 5-day mini-course](/_next/static/media/course-promo.d3d6bc78.jpg)
 
-![Refactoring UI](/_next/static/media/book-promo.3012c0f6.png)
+5-day mini-course
 
-From the creators of Tailwind CSS
+Build UIs that don’t suck.
 
-Make your ideas look awesome, without relying on a designer.
+Short, tactical video lessons from the creator of Tailwind CSS, delivered directly to your inbox every day for a week.
 
-> “This is the survival kit I wish I had when I started building apps.”
-> 
-> Derrick Reimer, SavvyCal
-
-](https://www.refactoringui.com/?ref=sidebar)
+[Get the free course](/build-uis-that-dont-suck)
 
 Copyright © 2026 Tailwind Labs Inc.·[Trademark Policy](/brand)

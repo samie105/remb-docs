@@ -5,59 +5,13 @@ canonical_url: "https://tailwindcss.com/docs/padding"
 docset: "tailwind"
 kind: "framework"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:51:17.775Z"
-content_hash: "b5846e1b79308e4c690c4244538cbafa0fbb9b66bac588c9d6af893351f62387"
+last_crawled_at: "2026-04-27T20:02:59.489Z"
+content_hash: "294ec35404f43493f736fc2235eac0fd03aaa66fe48326315feaf522f70c069b"
 menu_path: ["padding"]
 section_path: []
-nav_prev: {"path": "tailwind/docs/place-self/index.md", "title": "place-self"}
-nav_next: {"path": "tailwind/docs/margin/index.md", "title": "margin"}
+content_language: "en"
 ---
-
 Utilities for controlling an element's padding.
-
-Class
-
-Styles
-
-`p-<number>`
-
-`padding: calc(var(--spacing) * <number>);`
-
-`p-px`
-
-`padding: 1px;`
-
-`p-(<custom-property>)`
-
-`padding: var(<custom-property>);`
-
-`p-[<value>]`
-
-`padding: <value>;`
-
-`px-<number>`
-
-`padding-inline: calc(var(--spacing) * <number>);`
-
-`px-px`
-
-`padding-inline: 1px;`
-
-`px-(<custom-property>)`
-
-`padding-inline: var(<custom-property>);`
-
-`px-[<value>]`
-
-`padding-inline: <value>;`
-
-`py-<number>`
-
-`padding-block: calc(var(--spacing) * <number>);`
-
-`py-px`
-
-`padding-block: 1px;`
 
 ## [Examples](#examples)
 
@@ -115,7 +69,7 @@ pe-8
 <div>  <div dir="ltr">    <div class="ps-8 ...">ps-8</div>    <div class="pe-8 ...">pe-8</div>  </div>  <div dir="rtl">    <div class="ps-8 ...">ps-8</div>    <div class="pe-8 ...">pe-8</div>  </div></div>
 ```
 
-For more control, you can also use the [LTR and RTL modifiers](tailwind/docs/hover-focus-and-other-states/index.md#rtl-support) to conditionally apply specific styles depending on the current text direction.
+For more control, you can also use the [LTR and RTL modifiers](https://tailwindcss.com/docs/hover-focus-and-other-states#rtl-support) to conditionally apply specific styles depending on the current text direction.
 
 Use the `pbs-<number>` and `pbe-<number>` utilities to set the `padding-block-start` and `padding-block-end` logical properties, which map to either the top or bottom side based on the writing mode:
 
@@ -147,7 +101,7 @@ Prefix a `padding` utility with a breakpoint variant like `md:` to only apply th
 <div class="py-4 md:py-8 ...">  <!-- ... --></div>
 ```
 
-Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).
+Learn more about using variants in the [variants documentation](https://tailwindcss.com/docs/hover-focus-and-other-states).
 
 ## [Customizing your theme](#customizing-your-theme)
 
@@ -157,4 +111,4 @@ The `p-<number>`,`px-<number>`,`py-<number>`,`ps-<number>`,`pe-<number>`,`pbs-<n
 @theme {  --spacing: 1px; }
 ```
 
-Learn more about customizing the spacing scale in the [theme variable documentation](tailwind/docs/theme/index.md).
+Learn more about customizing the spacing scale in the [theme variable documentation](https://tailwindcss.com/docs/theme).

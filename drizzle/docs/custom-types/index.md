@@ -5,14 +5,12 @@ canonical_url: "https://orm.drizzle.team/docs/custom-types"
 docset: "drizzle"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:44:54.040Z"
-content_hash: "d4fd8d8e359e2941d195bc4156a76f125aad525b1a34076306b68ff12e246ecf"
+last_crawled_at: "2026-04-27T18:34:11.617Z"
+content_hash: "f24bbbbe03aa87902b11c1a638fd2f7b197a22bc9e18de55aef0063820a137a0"
 menu_path: ["Common way of defining custom types"]
 section_path: []
-nav_prev: {"path": "drizzle/docs/read-replicas/index.md", "title": "Read Replicas"}
-nav_next: {"path": "drizzle/docs/goodies/index.md", "title": "Drizzle ORM - Goodies"}
+content_language: "en"
 ---
-
 ## Common way of defining custom types
 
 ## Examples[](#examples)
@@ -23,7 +21,7 @@ info
 
 Each dialect exposes `customType` function
 
-```
+```ts
 import { customType } from 'drizzle-orm/pg-core';
 ...
 import { customType } from 'drizzle-orm/mysql-core';
@@ -37,7 +35,7 @@ import { customType } from 'drizzle-orm/singlestore-core';
 
 **Integer**
 
-```
+```typescript
 import { customType } from 'drizzle-orm/pg-core';
 
 const customSerial = customType<{ data: number; }>(
@@ -51,7 +49,7 @@ const customSerial = customType<{ data: number; }>(
 
 **Text**
 
-```
+```typescript
 import { customType } from 'drizzle-orm/pg-core';
 
 const customText = customType<{ data: string }>({
@@ -63,7 +61,7 @@ const customText = customType<{ data: string }>({
 
 **Boolean**
 
-```
+```typescript
 import { customType } from 'drizzle-orm/pg-core';
 
 const customBoolean = customType<{ data: boolean }>({
@@ -75,7 +73,7 @@ const customBoolean = customType<{ data: boolean }>({
 
 **Jsonb**
 
-```
+```typescript
 import { customType } from 'drizzle-orm/pg-core';
 
 const customJsonb = <TData>(name: string) =>
@@ -91,7 +89,7 @@ const customJsonb = <TData>(name: string) =>
 
 **Timestamp**
 
-```
+```typescript
 import { customType } from 'drizzle-orm/pg-core';
 
 const customTimestamp = customType<
@@ -117,7 +115,7 @@ const customTimestamp = customType<
 
 Usage for all types will be same as defined functions in Drizzle ORM. For example:
 
-```
+```typescript
 const usersTable = pgTable('users', {
   id: customSerial('id').primaryKey(),
   name: customText('name').notNull(),
@@ -132,7 +130,7 @@ const usersTable = pgTable('users', {
 
 You can check ts-doc for `types` and `param` definition.
 
-```
+```typescript
 export interface CustomTypeValues = {
   /**
    * Required type for custom column, that will infer proper type model
@@ -266,11 +264,11 @@ export interface CustomTypeParams<T extends CustomTypeValues> {
   	/**
  	 * Optional mapping function, that is used for transforming data returned by transofmed to JSON in database data to desired format
  	 *
- 	 * Used by [relational queries](drizzle/docs/rqb-v2/index.md)
+ 	 * Used by [relational queries](https://orm.drizzle.team/docs/rqb-v2)
  	 *
  	 * Defaults to {@link fromDriver} function
  	 * @example
- 	 * For example, when querying bigint column via [RQB](drizzle/docs/rqb-v2/index.md) or [JSON functions](drizzle/docs/json-functions/index.md), the result field will be returned as it's string representation, as opposed to bigint from regular query
+ 	 * For example, when querying bigint column via [RQB](https://orm.drizzle.team/docs/rqb-v2) or [JSON functions](https://orm.drizzle.team/docs/json-functions), the result field will be returned as it's string representation, as opposed to bigint from regular query
  	 * To handle that, we need a separate function to handle such field's mapping:
  	 * ```
  	 * fromJson(value: string): bigint {
@@ -294,11 +292,11 @@ export interface CustomTypeParams<T extends CustomTypeValues> {
  	fromJson?: (value: T['jsonData']) => T['data'];
 
   	/**
- 	 * Optional selection modifier function, that is used for modifying selection of column inside [JSON functions](drizzle/docs/json-functions/index.md)
+ 	 * Optional selection modifier function, that is used for modifying selection of column inside [JSON functions](https://orm.drizzle.team/docs/json-functions)
  	 *
  	 * Additional mapping that could be required for such scenarios can be handled using {@link fromJson} function
  	 *
- 	 * Used by [relational queries](drizzle/docs/rqb-v2/index.md)
+ 	 * Used by [relational queries](https://orm.drizzle.team/docs/rqb-v2)
  	 * @example
  	 * For example, when using bigint we need to cast field to text to preserve data integrity
  	 * ```

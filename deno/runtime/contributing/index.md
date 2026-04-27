@@ -5,29 +5,30 @@ canonical_url: "https://docs.deno.com/runtime/contributing/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:44:42.123Z"
-content_hash: "9067ffc88952b4146f1b6abbf2ebbe837e6330d346248283559070da90ad3404"
+last_crawled_at: "2026-04-27T17:17:52.404Z"
+content_hash: "6ade55c8bf1f85254456175cf22b1abbe13e9ed5040cf2b2bb75095cfd20862d"
 menu_path: ["Contributing and support"]
 section_path: []
+content_language: "en"
 ---
-On this page
+**On this page**
 
-*   [Projects](#projects)
-    *   [deno](#deno)
-    *   [deno\_std](#deno_std)
-    *   [fresh](#fresh)
-    *   [deno\_lint](#deno_lint)
-    *   [deno\_doc](#deno_doc)
-    *   [rusty\_v8](#rusty_v8)
-    *   [serde\_v8](#serde_v8)
-    *   [deno\_docker](#deno_docker)
-*   [General remarks](#general-remarks)
-*   [Submitting a pull request](#submitting-a-pull-request)
-*   [Documenting APIs](#documenting-apis)
-    *   [JavaScript and TypeScript](#javascript-and-typescript)
-    *   [Rust](#rust)
-*   [Profiling](#profiling)
-    *   [Using Samply](#using-samply)
+-   [Projects](#projects)
+    -   [deno](#deno)
+    -   [deno\_std](#deno_std)
+    -   [fresh](#fresh)
+    -   [deno\_lint](#deno_lint)
+    -   [deno\_doc](#deno_doc)
+    -   [rusty\_v8](#rusty_v8)
+    -   [serde\_v8](#serde_v8)
+    -   [deno\_docker](#deno_docker)
+-   [General remarks](#general-remarks)
+-   [Submitting a pull request](#submitting-a-pull-request)
+-   [Documenting APIs](#documenting-apis)
+    -   [JavaScript and TypeScript](#javascript-and-typescript)
+    -   [Rust](#rust)
+-   [Profiling](#profiling)
+    -   [Using Samply](#using-samply)
 
 We welcome and appreciate all contributions to Deno.
 
@@ -89,17 +90,17 @@ Official Docker images for Deno.
 
 ## General remarks
 
-*   Read the [style guide](/runtime/contributing/style_guide).
+-   Read the [style guide](/runtime/contributing/style_guide).
     
-*   Please don't make [the benchmarks](https://deno.land/benchmarks) worse.
+-   Please don't make [the benchmarks](https://deno.land/benchmarks) worse.
     
-*   Ask for help in the [community chat room](https://discord.gg/deno).
+-   Ask for help in the [community chat room](https://discord.gg/deno).
     
-*   If you are going to work on an issue, mention so in the issue's comments _before_ you start working on the issue.
+-   If you are going to work on an issue, mention so in the issue's comments _before_ you start working on the issue.
     
-*   If you are going to work on a new feature, create an issue and discuss with other contributors _before_ you start working on the feature; we appreciate all contributions but not all proposed features will be accepted. We don't want you to spend hours working on code that might not be accepted.
+-   If you are going to work on a new feature, create an issue and discuss with other contributors _before_ you start working on the feature; we appreciate all contributions but not all proposed features will be accepted. We don't want you to spend hours working on code that might not be accepted.
     
-*   Please be professional in the forums. We follow [Rust's code of conduct](https://www.rust-lang.org/policies/code-of-conduct) (CoC). Have a problem? Email [ry@tinyclouds.org](mailto:ry@tinyclouds.org).
+-   Please be professional in the forums. We follow [Rust's code of conduct](https://www.rust-lang.org/policies/code-of-conduct) (CoC). Have a problem? Email [ry@tinyclouds.org](mailto:ry@tinyclouds.org).
     
 
 ## Submitting a pull request
@@ -110,15 +111,15 @@ Before submitting a PR to any of the repos, please make sure the following is do
 
 Examples of good PR title:
 
-*   fix(std/http): fix race condition in server
-*   docs(console): update docstrings
-*   feat(doc): handle nested re-exports
+-   fix(std/http): fix race condition in server
+-   docs(console): update docstrings
+-   feat(doc): handle nested re-exports
 
 Examples of bad PR title:
 
-*   fix #7123
-*   update docs
-*   fix bugs
+-   fix #7123
+-   update docs
+-   fix bugs
 
 2.  Ensure there is a related issue and that it is referenced in the PR text.
 3.  Ensure there are tests that cover the changes.
@@ -159,8 +160,8 @@ samply record -r 20000 deno run -A main.js
 
 You can analyze the generated flamegraph to identify:
 
-*   Hot spots where most CPU time is spent
-*   Unexpected function calls
-*   Potential areas for optimization
+-   Hot spots where most CPU time is spent
+-   Unexpected function calls
+-   Potential areas for optimization
 
 When submitting performance-related contributions, including profiling data can help the team to understand and validate your improvements.

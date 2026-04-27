@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/pages/api-reference/config/next-config-j
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:21:14.855Z"
-content_hash: "399a7883cfda3389732255a600838e17aba0401d02af16764ea1853b78d53f2d"
+last_crawled_at: "2026-04-27T18:20:39.640Z"
+content_hash: "1b00202b384d24c3b6e0d33c245c2374700bfc280129d2d1499ea2070a75b97b"
 menu_path: ["experimental.proxyClientMaxBodySize"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/pages/api-reference/config/next-config-js/productionBrowserSourceMaps/index.md", "title": "productionBrowserSourceMaps"}
-nav_next: {"path": "nextjs/docs/pages/api-reference/config/next-config-js/reactStrictMode/index.md", "title": "reactStrictMode"}
+version: "latest"
+content_language: "en"
 ---
+[Configuration](/docs/pages/api-reference/config)[next.config.js Options](/docs/pages/api-reference/config/next-config-js)experimental.proxyClientMaxBodySize
 
 # experimental.proxyClientMaxBodySize
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 When proxy is used, Next.js automatically clones the request body and buffers it in memory to enable multiple reads - both in proxy and the underlying route handler. To prevent excessive memory usage, this configuration option sets a size limit on the buffered body.
 
@@ -28,8 +29,6 @@ By default, the maximum body size is **10MB**. If a request body exceeds this li
 Specify the size using a human-readable string format:
 
 next.config.ts
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -52,8 +51,6 @@ Supported units: `b`, `kb`, `mb`, `gb`
 Alternatively, specify the size in bytes as a number:
 
 next.config.ts
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -80,8 +77,8 @@ When a request body exceeds the configured limit:
 
 If your application needs to process the full request body, you should either:
 
-*   Increase the `proxyClientMaxBodySize` limit
-*   Handle the partial body gracefully in your application logic
+-   Increase the `proxyClientMaxBodySize` limit
+-   Handle the partial body gracefully in your application logic
 
 ## Example[](#example)
 
@@ -119,13 +116,9 @@ export async function POST(request: NextRequest) {
 
 ## Good to know[](#good-to-know)
 
-*   This setting only applies when proxy is used in your application
-*   The default limit of 10MB is designed to balance memory usage and typical use cases
-*   The limit applies per-request, not globally across all concurrent requests
-*   For applications handling large file uploads, consider increasing the limit accordingly
+-   This setting only applies when proxy is used in your application
+-   The default limit of 10MB is designed to balance memory usage and typical use cases
+-   The limit applies per-request, not globally across all concurrent requests
+-   For applications handling large file uploads, consider increasing the limit accordingly
 
 Was this helpful?
-
-supported.
-
-Send

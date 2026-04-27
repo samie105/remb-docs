@@ -5,33 +5,32 @@ canonical_url: "https://nextjs.org/docs/app/api-reference/functions/generate-vie
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:11:46.117Z"
-content_hash: "dd6fbd62df8cd34a6c5757d19c2a8f8a1d40ca4dfcf094871e043bf3b368fb23"
+last_crawled_at: "2026-04-27T18:10:26.865Z"
+content_hash: "d299e2fbb5e9d2ccf9d588a8b44f2dc2c11de540710e7a74b22bfd0497f2cbdf"
 menu_path: ["generateViewport"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/api-reference/functions/generate-static-params/index.md", "title": "generateStaticParams"}
-nav_next: {"path": "nextjs/docs/app/api-reference/functions/headers/index.md", "title": "headers"}
+version: "latest"
+content_language: "en"
 ---
+[API Reference](/docs/app/api-reference)[Functions](/docs/app/api-reference/functions)generateViewport
 
 # generateViewport
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 You can customize the initial viewport of the page with the static `viewport` object or the dynamic `generateViewport` function.
 
 > **Good to know**:
 > 
-> *   The `viewport` object and `generateViewport` function exports are **only supported in Server Components**.
-> *   You cannot export both the `viewport` object and `generateViewport` function from the same route segment.
-> *   If you're coming from migrating `metadata` exports, you can use [metadata-to-viewport-export codemod](/docs/app/guides/upgrading/codemods#metadata-to-viewport-export) to update your changes.
+> -   The `viewport` object and `generateViewport` function exports are **only supported in Server Components**.
+> -   You cannot export both the `viewport` object and `generateViewport` function from the same route segment.
+> -   If you're coming from migrating `metadata` exports, you can use [metadata-to-viewport-export codemod](/docs/app/guides/upgrading/codemods#metadata-to-viewport-export) to update your changes.
 
 ## The `viewport` object[](#the-viewport-object)
 
 To define the viewport options, export a `viewport` object from a `layout.jsx` or `page.jsx` file.
 
 layout.tsx | page.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -51,8 +50,6 @@ export default function Page() {}
 
 layout.tsx | page.tsx
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -67,7 +64,7 @@ In TypeScript, the `params` argument can be typed via [`PageProps<'/route'>`](/d
 
 > **Good to know**:
 > 
-> *   If the viewport doesn't depend on request information, it should be defined using the static [`viewport` object](#the-viewport-object) rather than `generateViewport`.
+> -   If the viewport doesn't depend on request information, it should be defined using the static [`viewport` object](#the-viewport-object) rather than `generateViewport`.
 
 ## Viewport Fields[](#viewport-fields)
 
@@ -78,8 +75,6 @@ Learn more about [`theme-color`](https://developer.mozilla.org/docs/Web/HTML/Ele
 **Simple theme color**
 
 layout.tsx | page.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -100,8 +95,6 @@ export const viewport: Viewport = {
 **With media attribute**
 
 layout.tsx | page.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -128,8 +121,6 @@ export const viewport: Viewport = {
 > **Good to know**: The `viewport` meta tag is automatically set, and manual configuration is usually unnecessary as the default is sufficient. However, the information is provided for completeness.
 
 layout.tsx | page.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -160,8 +151,6 @@ export const viewport: Viewport = {
 Learn more about [`color-scheme`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta/name#:~:text=color%2Dscheme%3A%20specifies,of%20the%20following%3A).
 
 layout.tsx | page.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -287,13 +276,9 @@ export const viewport = {
 
 ## Version History[](#version-history)
 
-Version
-
-Changes
-
-`v14.0.0`
-
-`viewport` and `generateViewport` introduced.
+| Version | Changes |
+| --- | --- |
+| `v14.0.0` | `viewport` and `generateViewport` introduced. |
 
 ## Next Steps
 
@@ -319,20 +304,4 @@ Learn how to enable the cacheComponents flag in Next.js.
 
 ](/docs/app/api-reference/config/next-config-js/cacheComponents)
 
-[Previous
-
-generateStaticParams
-
-](/docs/app/api-reference/functions/generate-static-params)
-
-[Next
-
-headers
-
-](/docs/app/api-reference/functions/headers)
-
 Was this helpful?
-
-supported.
-
-Send

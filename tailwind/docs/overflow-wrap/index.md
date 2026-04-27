@@ -5,31 +5,13 @@ canonical_url: "https://tailwindcss.com/docs/overflow-wrap"
 docset: "tailwind"
 kind: "framework"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:00:19.439Z"
-content_hash: "c552a0eb622a044e3509e03c3c64cdf3ad65fafff796fe21410885ddf0c092d6"
+last_crawled_at: "2026-04-27T20:15:10.439Z"
+content_hash: "924d2ac70e63e3f0639742633fa6ce63b63a0c8e563e26e48e487256697e10f8"
 menu_path: ["overflow-wrap"]
 section_path: []
-nav_prev: {"path": "tailwind/docs/word-break/index.md", "title": "word-break"}
-nav_next: {"path": "tailwind/docs/hyphens/index.md", "title": "hyphens"}
+content_language: "en"
 ---
-
 Utilities for controlling line breaks within words in an overflowing element.
-
-Class
-
-Styles
-
-`wrap-break-word`
-
-`overflow-wrap: break-word;`
-
-`wrap-anywhere`
-
-`overflow-wrap: anywhere;`
-
-`wrap-normal`
-
-`overflow-wrap: normal;`
 
 ## [Examples](#examples)
 
@@ -87,4 +69,4 @@ Prefix an `overflow-wrap` utility with a breakpoint variant like `md:` to only a
 <p class="wrap-normal md:wrap-break-word ...">  Lorem ipsum dolor sit amet...</p>
 ```
 
-Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).
+Learn more about using variants in the [variants documentation](https://tailwindcss.com/docs/hover-focus-and-other-states).

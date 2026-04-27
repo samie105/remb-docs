@@ -5,41 +5,46 @@ canonical_url: "https://tailwindcss.com/docs/backdrop-filter-sepia"
 docset: "tailwind"
 kind: "framework"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:10:44.497Z"
-content_hash: "4c72be81f2b3e32e4440fc9c5afdbe78a4d3e034f38e6fd3243b2344ffef9155"
+last_crawled_at: "2026-04-27T20:30:21.112Z"
+content_hash: "69317c48f2e90e94105205ed3be9a129051b1236988d34a9cbd7b7e30c518938"
 menu_path: ["backdrop-filter: sepia()"]
 section_path: []
-nav_prev: {"path": "tailwind/docs/backdrop-filter-saturate/index.md", "title": "backdrop-filter: saturate()"}
-nav_next: {"path": "tailwind/docs/border-collapse/index.md", "title": "border-collapse"}
+content_language: "en"
 ---
+[](/)
+
+[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
+
+1.  Filters
+2.  sepia
+
+Filters
 
 # backdrop-filter: sepia()
 
 Utilities for applying backdrop sepia filters to an element.
 
-Class
-
-Styles
-
-`backdrop-sepia`
-
+| Class | Styles |
+| --- | --- |
+| `backdrop-sepia` | 
 `backdrop-filter: sepia(100%);`
 
-`backdrop-sepia-<number>`
+ |
+| `backdrop-sepia-<number>` | 
 
 `backdrop-filter: sepia(<number>%);`
 
-`backdrop-sepia-(<custom-property>)`
+ |
+| `backdrop-sepia-(<custom-property>)` | 
 
 `backdrop-filter: sepia(var(<custom-property>));`
 
-`backdrop-sepia-[<value>]`
+ |
+| `backdrop-sepia-[<value>]` | 
 
 `backdrop-filter: sepia(<value>);`
 
-## [Examples](#examples)
-
-### [Basic example](#basic-example)
+ |
 
 Use utilities like `backdrop-sepia` and `backdrop-sepia-50` to control the sepia effect applied to an element's backdrop:
 
@@ -59,8 +64,6 @@ backdrop-sepia
 <div class="bg-[url(/img/mountains.jpg)]">  <div class="bg-white/30 backdrop-sepia-0 ..."></div></div><div class="bg-[url(/img/mountains.jpg)]">  <div class="bg-white/30 backdrop-sepia-50 ..."></div></div><div class="bg-[url(/img/mountains.jpg)]">  <div class="bg-white/30 backdrop-sepia ..."></div></div>
 ```
 
-### [Using a custom value](#using-a-custom-value)
-
 Use the `backdrop-sepia-[<value>]` syntax to set the backdrop sepia based on a completely custom value:
 
 ```
@@ -75,8 +78,6 @@ For CSS variables, you can also use the `backdrop-sepia-(<custom-property>)` syn
 
 This is just a shorthand for `backdrop-sepia-[var(<custom-property>)]` that adds the `var()` function for you automatically.
 
-### [Responsive design](#responsive-design)
-
 Prefix a `backdrop-filter: sepia()` utility with a breakpoint variant like `md:` to only apply the utility at medium screen sizes and above:
 
 ```
@@ -87,11 +88,11 @@ Learn more about using variants in the [variants documentation](/docs/hover-focu
 
 ### On this page
 
-*   [Quick reference](#quick-reference)
-*   [Examples](#examples)
-    *   [Basic example](#basic-example)
-    *   [Using a custom value](#using-a-custom-value)
-    *   [Responsive design](#responsive-design)
+-   [Quick reference](#quick-reference)
+-   [Examples](#examples)
+    -   [Basic example](#basic-example)
+    -   [Using a custom value](#using-a-custom-value)
+    -   [Responsive design](#responsive-design)
 
 ![Build UIs that don’t suck — 5-day mini-course](/_next/static/media/course-promo.d3d6bc78.jpg)
 

@@ -5,28 +5,26 @@ canonical_url: "https://www.prisma.io/docs/orm/prisma-schema/data-model/database
 docset: "prisma"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:51:46.992Z"
-content_hash: "a1c8ee2670ece3cbf996bab82ae27d4d53779456591da56a4ab8dc66b1e73fb4"
+last_crawled_at: "2026-04-27T19:42:02.048Z"
+content_hash: "2f445b7d6001a936686f00a6d78c4976531c92cd67acffe949c8abc097ec341b"
 menu_path: ["Database mapping"]
 section_path: []
-nav_prev: {"path": "prisma/docs/orm/prisma-migrate/workflows/unsupported-database-features/index.md", "title": "Unsupported database features (Prisma Migrate)"}
-nav_next: {"path": "prisma/docs/orm/prisma-schema/data-model/externally-managed-tables/index.md", "title": "External tables"}
+content_language: "en"
 ---
+The [Prisma schema](https://www.prisma.io/docs/orm/prisma-schema/overview) includes mechanisms that allow you to define names of certain database objects. You can:
 
-The [Prisma schema](prisma/docs/orm/prisma-schema/overview/index.md) includes mechanisms that allow you to define names of certain database objects. You can:
-
-*   [Map model and field names to different collection/table and field/column names](#mapping-collectiontable-and-fieldcolumn-names)
-*   [Define constraint and index names](#constraint-and-index-names)
+-   [Map model and field names to different collection/table and field/column names](#mapping-collectiontable-and-fieldcolumn-names)
+-   [Define constraint and index names](#constraint-and-index-names)
 
 Sometimes the names used to describe entities in your database might not match the names you would prefer in your generated API. Mapping names in the Prisma schema allows you to influence the naming in your Client API without having to change the underlying database names.
 
-A common approach for naming tables/collections in databases for example is to use plural form and [snake\_case](https://en.wikipedia.org/wiki/Snake_case) notation. However, we recommended a different [naming convention (singular form, PascalCase)](prisma/docs/orm/reference/prisma-schema-reference/index.md#naming-conventions).
+A common approach for naming tables/collections in databases for example is to use plural form and [snake\_case](https://en.wikipedia.org/wiki/Snake_case) notation. However, we recommended a different [naming convention (singular form, PascalCase)](https://www.prisma.io/docs/orm/reference/prisma-schema-reference#naming-conventions).
 
-`@map` and `@@map` allow you to [tune the shape of your Prisma Client API](prisma/docs/orm/prisma-client/setup-and-configuration/custom-model-and-field-names/index.md) by decoupling model and field names from table and column names in the underlying database.
+`@map` and `@@map` allow you to [tune the shape of your Prisma Client API](https://www.prisma.io/docs/orm/prisma-client/setup-and-configuration/custom-model-and-field-names) by decoupling model and field names from table and column names in the underlying database.
 
 ### [Map collection / table names](#map-collection--table-names)
 
-As an example, when you [introspect](prisma/docs/orm/prisma-schema/introspection/index.md) a database with a table named `comments`, the resulting Prisma model will look like this:
+As an example, when you [introspect](https://www.prisma.io/docs/orm/prisma-schema/introspection) a database with a table named `comments`, the resulting Prisma model will look like this:
 
 ```
 model comments {
@@ -34,7 +32,7 @@ model comments {
 }
 ```
 
-However, you can still choose `Comment` as the name of the model (e.g. to follow the naming convention) without renaming the underlying `comments` table in the database by using the [`@@map`](prisma/docs/orm/reference/prisma-schema-reference/index.md) attribute:
+However, you can still choose `Comment` as the name of the model (e.g. to follow the naming convention) without renaming the underlying `comments` table in the database by using the [`@@map`](https://www.prisma.io/docs/orm/reference/prisma-schema-reference) attribute:
 
 ```
 model Comment {
@@ -48,7 +46,7 @@ With this modified model definition, Prisma Client automatically maps the `Comme
 
 ### [Map field / column names](#map-field--column-names)
 
-You can also [`@map`](prisma/docs/orm/reference/prisma-schema-reference/index.md#map) a column/field name:
+You can also [`@map`](https://www.prisma.io/docs/orm/reference/prisma-schema-reference#map) a column/field name:
 
 ```
 model Comment {
@@ -77,8 +75,8 @@ enum Type {
 
 In this example:
 
-*   `@@map("comment_source_enum")` maps the enum name `Type` to `comment_source_enum` in the database
-*   `@map("comment_twitter")` maps the enum value `Twitter` to `comment_twitter` in the database
+-   `@@map("comment_source_enum")` maps the enum name `Type` to `comment_source_enum` in the database
+-   `@map("comment_twitter")` maps the enum value `Twitter` to `comment_twitter` in the database
 
 #### [Effect on generated TypeScript](#effect-on-generated-typescript)
 
@@ -102,7 +100,7 @@ export const Status = {
 
 This means `Status.PENDING` evaluates to `"PENDING"`, not `"pending"`. The mapping is handled at the database level only.
 
-You can optionally use the `map` argument to explicitly define the **underlying constraint and index names** in the Prisma schema for the attributes [`@id`](prisma/docs/orm/reference/prisma-schema-reference/index.md#id), [`@@id`](prisma/docs/orm/reference/prisma-schema-reference/index.md), [`@unique`](prisma/docs/orm/reference/prisma-schema-reference/index.md#unique), [`@@unique`](prisma/docs/orm/reference/prisma-schema-reference/index.md), [`@@index`](prisma/docs/orm/reference/prisma-schema-reference/index.md#index) and [`@relation`](prisma/docs/orm/reference/prisma-schema-reference/index.md#relation).
+You can optionally use the `map` argument to explicitly define the **underlying constraint and index names** in the Prisma schema for the attributes [`@id`](https://www.prisma.io/docs/orm/reference/prisma-schema-reference#id), [`@@id`](https://www.prisma.io/docs/orm/reference/prisma-schema-reference), [`@unique`](https://www.prisma.io/docs/orm/reference/prisma-schema-reference#unique), [`@@unique`](https://www.prisma.io/docs/orm/reference/prisma-schema-reference), [`@@index`](https://www.prisma.io/docs/orm/reference/prisma-schema-reference#index) and [`@relation`](https://www.prisma.io/docs/orm/reference/prisma-schema-reference#relation).
 
 When introspecting a database, the `map` argument will _only_ be rendered in the schema if the name _differs_ from Prisma ORM's [default constraint naming convention for indexes and constraints](#prisma-orms-default-naming-conventions-for-indexes-and-constraints).
 
@@ -110,8 +108,8 @@ When introspecting a database, the `map` argument will _only_ be rendered in the
 
 Some use cases for explicitly named constraints include:
 
-*   Company policy
-*   Conventions of other tools
+-   Company policy
+-   Conventions of other tools
 
 ### [Prisma ORM's default naming conventions for indexes and constraints](#prisma-orms-default-naming-conventions-for-indexes-and-constraints)
 
@@ -119,35 +117,12 @@ Prisma ORM naming convention was chosen to align with PostgreSQL since it is det
 
 Prisma ORM always uses the database names of entities when generating the default index and constraint names. If a model is remapped to a different name in the data model via `@@map` or `@map`, the default name generation will still take the name of the _table_ in the database as input. The same is true for fields and _columns_.
 
-Entity
-
-Convention
-
-Example
-
-Primary Key
-
-{tablename}\_pkey
-
-`User_pkey`
-
-Unique Constraint
-
-{tablename}\_{column\_names}\_key
-
-`User_firstName_last_Name_key`
-
-Non-Unique Index
-
-{tablename}\_{column\_names}\_idx
-
-`User_age_idx`
-
-Foreign Key
-
-{tablename}\_{column\_names}\_fkey
-
-`User_childName_fkey`
+| Entity | Convention | Example |
+| --- | --- | --- |
+| Primary Key | {tablename}\_pkey | `User_pkey` |
+| Unique Constraint | {tablename}\_{column\_names}\_key | `User_firstName_last_Name_key` |
+| Non-Unique Index | {tablename}\_{column\_names}\_idx | `User_age_idx` |
+| Foreign Key | {tablename}\_{column\_names}\_fkey | `User_childName_fkey` |
 
 Since most databases have a length limit for entity names, the names will be trimmed if necessary to not violate the database limits. We will shorten the part before the `_suffix` as necessary so that the full name is at most the maximum length permitted.
 
@@ -182,35 +157,12 @@ Since no explicit names are provided via `map` arguments Prisma will assume they
 
 The following table lists the name of each constraint and index in the underlying database:
 
-Constraint or index
-
-Follows convention
-
-Underlying constraint or index names
-
-`@id` (on `User` > `id` field)
-
-Yes
-
-`User_pk`
-
-`@@index` (on `Post`)
-
-Yes
-
-`Post_title_authorName_idx`
-
-`@id` (on `Post` > `id` field)
-
-Yes
-
-`Post_pk`
-
-`@relation` (on `Post` > `author`)
-
-Yes
-
-`Post_authorName_fkey`
+| Constraint or index | Follows convention | Underlying constraint or index names |
+| --- | --- | --- |
+| `@id` (on `User` > `id` field) | Yes | `User_pk` |
+| `@@index` (on `Post`) | Yes | `Post_title_authorName_idx` |
+| `@id` (on `Post` > `id` field) | Yes | `Post_pk` |
+| `@relation` (on `Post` > `author`) | Yes | `Post_authorName_fkey` |
 
 ### [Using custom constraint / index names](#using-custom-constraint--index-names)
 
@@ -239,35 +191,12 @@ model Post {
 
 The following table lists the name of each constraint and index in the underlying database:
 
-Constraint or index
-
-Follows convention
-
-Underlying constraint or index names
-
-`@id` (on `User` > `id` field)
-
-No
-
-`Custom_Primary_Key_Constraint_Name`
-
-`@@index` (on `Post`)
-
-No
-
-`My_Custom_Index_Name`
-
-`@id` (on `Post` > `id` field)
-
-Yes
-
-`Post_pk`
-
-`@relation` (on `Post` > `author`)
-
-Yes
-
-`Post_authorName_fkey`
+| Constraint or index | Follows convention | Underlying constraint or index names |
+| --- | --- | --- |
+| `@id` (on `User` > `id` field) | No | `Custom_Primary_Key_Constraint_Name` |
+| `@@index` (on `Post`) | No | `My_Custom_Index_Name` |
+| `@id` (on `Post` > `id` field) | Yes | `Post_pk` |
+| `@relation` (on `Post` > `author`) | Yes | `Post_authorName_fkey` |
 
 ### [Related: Naming indexes and primary keys for Prisma Client](#related-naming-indexes-and-primary-keys-for-prisma-client)
 

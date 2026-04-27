@@ -5,14 +5,12 @@ canonical_url: "https://www.prisma.io/docs/orm/more/troubleshooting/check-constr
 docset: "prisma"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:43:21.145Z"
-content_hash: "eaff84a9df727fd52b9f1d092070a9458a8d531cff895c535c4c825d8073b852"
+last_crawled_at: "2026-04-27T19:37:38.434Z"
+content_hash: "9895b87c06fff154d6bc1ba9f677dfcb8d35cb5bbfa1da01b97634ebaa6c2b09"
 menu_path: ["Check constraints"]
 section_path: []
-nav_prev: {"path": "prisma/docs/orm/more/troubleshooting/bundler-issues/index.md", "title": "Bundler issues"}
-nav_next: {"path": "prisma/docs/orm/more/troubleshooting/graphql-autocompletion/index.md", "title": "GraphQL autocompletion"}
+content_language: "en"
 ---
-
 Troubleshooting
 
 Learn how to configure CHECK constraints for data validation with Prisma ORM and PostgreSQL
@@ -21,9 +19,9 @@ This page explains how to configure [check constraints](https://www.postgresql.o
 
 Check constraints can be added when you create the table (using `CREATE TABLE`) or to a table that already exists (using `ALTER TABLE`).
 
-*   A [PostgreSQL](https://www.postgresql.org/) database server running
-*   The [`psql`](https://www.postgresql.org/docs/13/app-psql.html) command line client
-*   [Node.js](https://nodejs.org/) installed
+-   A [PostgreSQL](https://www.postgresql.org/) database server running
+-   The [`psql`](https://www.postgresql.org/docs/13/app-psql.html) command line client
+-   [Node.js](https://nodejs.org/) installed
 
 Create a table with a check constraint on a single column:
 
@@ -113,5 +111,3 @@ Error: new row for relation "product" violates check constraint "price_value_che
 ```
 
 Check constraints are resolved in alphabetical order, and only the first constraint to fail appears in the error message.
-
-[Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/more/troubleshooting/check-constraints.mdx)

@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/app/getting-started/layouts-and-pages"
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:13:24.010Z"
-content_hash: "f3d18d6ba3bbbe79356bbfb0b13c8d7e317a0f0f9efe0601a3f4802869cbd464"
+last_crawled_at: "2026-04-27T18:12:03.859Z"
+content_hash: "a4d44ca8a03779de5f1028557d26f42c6e822f198bfa8fea985d35179a944ccd"
 menu_path: ["Layouts and Pages"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/getting-started/project-structure/index.md", "title": "Project structure and organization"}
-nav_next: {"path": "nextjs/docs/app/getting-started/linking-and-navigating/index.md", "title": "Linking and Navigating"}
+version: "latest"
+content_language: "en"
 ---
+[App Router](/docs/app)[Getting Started](/docs/app/getting-started)Layouts and Pages
 
 # Layouts and Pages
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 Next.js uses **file-system based routing**, meaning you can use folders and files to define routes. This page will guide you through how to create layouts and pages, and link between them.
 
@@ -23,11 +24,9 @@ Next.js uses **file-system based routing**, meaning you can use folders and file
 
 A **page** is UI that is rendered on a specific route. To create a page, add a [`page` file](/docs/app/api-reference/file-conventions/page) inside the `app` directory and default export a React component. For example, to create an index page (`/`):
 
-![page.js special file](/_next/image?url=https%3A%2F%2Fh8DxKfmAPhn8O0p3.public.blob.vercel-storage.com%2Fdocs%2Flight%2Fpage-special-file.png&w=3840&q=75)![page.js special file](/_next/image?url=https%3A%2F%2Fh8DxKfmAPhn8O0p3.public.blob.vercel-storage.com%2Fdocs%2Fdark%2Fpage-special-file.png&w=3840&q=75)
+![page.js special file](https://h8DxKfmAPhn8O0p3.public.blob.vercel-storage.com/docs/light/page-special-file.png)
 
 app/page.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -45,11 +44,9 @@ You can define a layout by default exporting a React component from a [`layout` 
 
 For example, to create a layout that accepts your index page as child, add a `layout` file inside the `app` directory:
 
-![layout.js special file](/_next/image?url=https%3A%2F%2Fh8DxKfmAPhn8O0p3.public.blob.vercel-storage.com%2Fdocs%2Flight%2Flayout-special-file.png&w=3840&q=75)![layout.js special file](/_next/image?url=https%3A%2F%2Fh8DxKfmAPhn8O0p3.public.blob.vercel-storage.com%2Fdocs%2Fdark%2Flayout-special-file.png&w=3840&q=75)
+![layout.js special file](https://h8DxKfmAPhn8O0p3.public.blob.vercel-storage.com/docs/light/layout-special-file.png)
 
 app/layout.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -77,22 +74,20 @@ The layout above is called a [root layout](/docs/app/api-reference/file-conventi
 
 A nested route is a route composed of multiple URL segments. For example, the `/blog/[slug]` route is composed of three segments:
 
-*   `/` (Root Segment)
-*   `blog` (Segment)
-*   `[slug]` (Leaf Segment)
+-   `/` (Root Segment)
+-   `blog` (Segment)
+-   `[slug]` (Leaf Segment)
 
 In Next.js:
 
-*   **Folders** are used to define the route segments that map to URL segments.
-*   **Files** (like `page` and `layout`) are used to create UI that is shown for a segment.
+-   **Folders** are used to define the route segments that map to URL segments.
+-   **Files** (like `page` and `layout`) are used to create UI that is shown for a segment.
 
 To create nested routes, you can nest folders inside each other. For example, to add a route for `/blog`, create a folder called `blog` in the `app` directory. Then, to make `/blog` publicly accessible, add a `page.tsx` file:
 
-![File hierarchy showing blog folder and a page.js file](/_next/image?url=https%3A%2F%2Fh8DxKfmAPhn8O0p3.public.blob.vercel-storage.com%2Fdocs%2Flight%2Fblog-nested-route.png&w=3840&q=75)![File hierarchy showing blog folder and a page.js file](/_next/image?url=https%3A%2F%2Fh8DxKfmAPhn8O0p3.public.blob.vercel-storage.com%2Fdocs%2Fdark%2Fblog-nested-route.png&w=3840&q=75)
+![File hierarchy showing blog folder and a page.js file](https://h8DxKfmAPhn8O0p3.public.blob.vercel-storage.com/docs/light/blog-nested-route.png)
 
 app/blog/page.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -116,11 +111,9 @@ export default async function Page() {
 
 You can continue nesting folders to create nested routes. For example, to create a route for a specific blog post, create a new `[slug]` folder inside `blog` and add a `page` file:
 
-![File hierarchy showing blog folder with a nested slug folder and a page.js file](/_next/image?url=https%3A%2F%2Fh8DxKfmAPhn8O0p3.public.blob.vercel-storage.com%2Fdocs%2Flight%2Fblog-post-nested-route.png&w=3840&q=75)![File hierarchy showing blog folder with a nested slug folder and a page.js file](/_next/image?url=https%3A%2F%2Fh8DxKfmAPhn8O0p3.public.blob.vercel-storage.com%2Fdocs%2Fdark%2Fblog-post-nested-route.png&w=3840&q=75)
+![File hierarchy showing blog folder with a nested slug folder and a page.js file](https://h8DxKfmAPhn8O0p3.public.blob.vercel-storage.com/docs/light/blog-post-nested-route.png)
 
 app/blog/\[slug\]/page.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -140,11 +133,9 @@ By default, layouts in the folder hierarchy are also nested, which means they wr
 
 For example, to create a layout for the `/blog` route, add a new `layout` file inside the `blog` folder.
 
-![File hierarchy showing root layout wrapping the blog layout](/_next/image?url=https%3A%2F%2Fh8DxKfmAPhn8O0p3.public.blob.vercel-storage.com%2Fdocs%2Flight%2Fnested-layouts.png&w=3840&q=75)![File hierarchy showing root layout wrapping the blog layout](/_next/image?url=https%3A%2F%2Fh8DxKfmAPhn8O0p3.public.blob.vercel-storage.com%2Fdocs%2Fdark%2Fnested-layouts.png&w=3840&q=75)
+![File hierarchy showing root layout wrapping the blog layout](https://h8DxKfmAPhn8O0p3.public.blob.vercel-storage.com/docs/light/nested-layouts.png)
 
 app/blog/layout.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -167,8 +158,6 @@ If you were to combine the two layouts above, the root layout (`app/layout.js`) 
 To create a dynamic segment, wrap the segment (folder) name in square brackets: `[segmentName]`. For example, in the `app/blog/[slug]/page.tsx` route, the `[slug]` is the dynamic segment.
 
 app/blog/\[slug\]/page.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -200,8 +189,6 @@ In a Server Component **page**, you can access search parameters using the [`sea
 
 app/page.tsx
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -222,9 +209,9 @@ Learn more about `useSearchParams` in [prerendered](/docs/app/api-reference/func
 
 ### What to use and when[](#what-to-use-and-when)
 
-*   Use the `searchParams` prop when you need search parameters to **load data for the page** (e.g. pagination, filtering from a database).
-*   Use `useSearchParams` when search parameters are used **only on the client** (e.g. filtering a list already loaded via props).
-*   As a small optimization, you can use `new URLSearchParams(window.location.search)` in **callbacks or event handlers** to read search params without triggering re-renders.
+-   Use the `searchParams` prop when you need search parameters to **load data for the page** (e.g. pagination, filtering from a database).
+-   Use `useSearchParams` when search parameters are used **only on the client** (e.g. filtering a list already loaded via props).
+-   As a small optimization, you can use `new URLSearchParams(window.location.search)` in **callbacks or event handlers** to read search params without triggering re-renders.
 
 ## Linking between pages[](#linking-between-pages)
 
@@ -233,8 +220,6 @@ You can use the [`<Link>` component](/docs/app/api-reference/components/link) to
 For example, to generate a list of blog posts, import `<Link>` from `next/link` and pass a `href` prop to the component:
 
 app/ui/post.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -262,8 +247,8 @@ export default async function Post({ post }) {
 
 Next.js exposes utility types that infer `params` and named slots from your route structure:
 
-*   [**PageProps**](/docs/app/api-reference/file-conventions/page#page-props-helper): Props for `page` components, including `params` and `searchParams`.
-*   [**LayoutProps**](/docs/app/api-reference/file-conventions/layout#layout-props-helper): Props for `layout` components, including `children` and any named slots (e.g. folders like `@analytics`).
+-   [**PageProps**](/docs/app/api-reference/file-conventions/page#page-props-helper): Props for `page` components, including `params` and `searchParams`.
+-   [**LayoutProps**](/docs/app/api-reference/file-conventions/layout#layout-props-helper): Props for `layout` components, including `children` and any named slots (e.g. folders like `@analytics`).
 
 These are globally available helpers, generated when running either `next dev`, `next build` or [`next typegen`](/docs/app/api-reference/cli/next#next-typegen-options).
 
@@ -292,9 +277,9 @@ export default function Layout(props: LayoutProps<'/dashboard'>) {
 
 > **Good to know**
 > 
-> *   Static routes resolve `params` to `{}`.
-> *   `PageProps`, `LayoutProps` are global helpers — no imports required.
-> *   Types are generated during `next dev`, `next build` or `next typegen`.
+> -   Static routes resolve `params` to `{}`.
+> -   `PageProps`, `LayoutProps` are global helpers — no imports required.
+> -   Types are generated during `next dev`, `next build` or `next typegen`.
 
 ## API Reference
 
@@ -332,20 +317,4 @@ Dynamic Route Segments can be used to programmatically generate route segments f
 
 ](/docs/app/api-reference/file-conventions/dynamic-routes)
 
-[Previous
-
-Project Structure
-
-](/docs/app/getting-started/project-structure)
-
-[Next
-
-Linking and Navigating
-
-](/docs/app/getting-started/linking-and-navigating)
-
 Was this helpful?
-
-supported.
-
-Send

@@ -5,69 +5,81 @@ canonical_url: "https://tailwindcss.com/docs/justify-content"
 docset: "tailwind"
 kind: "framework"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:49:09.188Z"
-content_hash: "a9bda35f73806d30e25d148e6c882dd0ef02d15c523229b513901322779ed94a"
+last_crawled_at: "2026-04-27T20:00:10.691Z"
+content_hash: "c177b1d52977262ce575dea1e35d03e8cb2cc16091495fcbd91a33fe7539a503"
 menu_path: ["justify-content"]
 section_path: []
-nav_prev: {"path": "tailwind/docs/gap/index.md", "title": "gap"}
-nav_next: {"path": "tailwind/docs/justify-items/index.md", "title": "justify-items"}
+content_language: "en"
 ---
+[](/)
+
+[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
+
+1.  Flexbox & Grid
+2.  justify-content
+
+Flexbox & Grid
 
 # justify-content
 
 Utilities for controlling how flex and grid items are positioned along a container's main axis.
 
-Class
-
-Styles
-
-`justify-start`
-
+| Class | Styles |
+| --- | --- |
+| `justify-start` | 
 `justify-content: flex-start;`
 
-`justify-end`
+ |
+| `justify-end` | 
 
 `justify-content: flex-end;`
 
-`justify-end-safe`
+ |
+| `justify-end-safe` | 
 
 `justify-content: safe flex-end;`
 
-`justify-center`
+ |
+| `justify-center` | 
 
 `justify-content: center;`
 
-`justify-center-safe`
+ |
+| `justify-center-safe` | 
 
 `justify-content: safe center;`
 
-`justify-between`
+ |
+| `justify-between` | 
 
 `justify-content: space-between;`
 
-`justify-around`
+ |
+| `justify-around` | 
 
 `justify-content: space-around;`
 
-`justify-evenly`
+ |
+| `justify-evenly` | 
 
 `justify-content: space-evenly;`
 
-`justify-stretch`
+ |
+| `justify-stretch` | 
 
 `justify-content: stretch;`
 
-`justify-baseline`
+ |
+| `justify-baseline` | 
 
 `justify-content: baseline;`
 
-`justify-normal`
+ |
+| `justify-normal` | 
 
 `justify-content: normal;`
 
-## [Examples](#examples)
-
-### [Start](#start)
+ |
 
 Use the `justify-start` utility to justify items against the start of the container's main axis:
 
@@ -80,8 +92,6 @@ Use the `justify-start` utility to justify items against the start of the contai
 ```
 <div class="flex justify-start ...">  <div>01</div>  <div>02</div>  <div>03</div></div>
 ```
-
-### [Center](#center)
 
 Use the `justify-center` or `justify-center-safe` utilities to justify items along the center of the container's main axis:
 
@@ -121,8 +131,6 @@ justify-center-safe
 
 When there is not enough space available, the `justify-center-safe` utility will align items to the start of the container instead of the center.
 
-### [End](#end)
-
 Use the `justify-end` or `justify-end-safe` utilities to justify items against the end of the container's main axis:
 
 Resize the container to see the alignment behavior
@@ -161,8 +169,6 @@ justify-end-safe
 
 When there is not enough space available, the `justify-end-safe` utility will align items to the start of the container instead of the end.
 
-### [Space between](#space-between)
-
 Use the `justify-between` utility to justify items along the container's main axis such that there is an equal amount of space between each item:
 
 01
@@ -174,8 +180,6 @@ Use the `justify-between` utility to justify items along the container's main ax
 ```
 <div class="flex justify-between ...">  <div>01</div>  <div>02</div>  <div>03</div></div>
 ```
-
-### [Space around](#space-around)
 
 Use the `justify-around` utility to justify items along the container's main axis such that there is an equal amount of space on each side of each item:
 
@@ -189,8 +193,6 @@ Use the `justify-around` utility to justify items along the container's main axi
 <div class="flex justify-around ...">  <div>01</div>  <div>02</div>  <div>03</div></div>
 ```
 
-### [Space evenly](#space-evenly)
-
 Use the `justify-evenly` utility to justify items along the container's main axis such that there is an equal amount of space around each item, but also accounting for the doubling of space you would normally see between each item when using `justify-around`:
 
 01
@@ -202,8 +204,6 @@ Use the `justify-evenly` utility to justify items along the container's main axi
 ```
 <div class="flex justify-evenly ...">  <div>01</div>  <div>02</div>  <div>03</div></div>
 ```
-
-### [Stretch](#stretch)
 
 Use the `justify-stretch` utility to allow auto-sized content items to fill the available space along the container's main axis:
 
@@ -217,8 +217,6 @@ Use the `justify-stretch` utility to allow auto-sized content items to fill the 
 <div class="grid grid-cols-[4rem_auto_4rem] justify-stretch ...">  <div>01</div>  <div>02</div>  <div>03</div></div>
 ```
 
-### [Normal](#normal)
-
 Use the `justify-normal` utility to pack content items in their default position as if no `justify-content` value was set:
 
 01
@@ -231,8 +229,6 @@ Use the `justify-normal` utility to pack content items in their default position
 <div class="flex justify-normal ...">  <div>01</div>  <div>02</div>  <div>03</div></div>
 ```
 
-### [Responsive design](#responsive-design)
-
 Prefix a `justify-content` utility with a breakpoint variant like `md:` to only apply the utility at medium screen sizes and above:
 
 ```
@@ -243,26 +239,30 @@ Learn more about using variants in the [variants documentation](/docs/hover-focu
 
 ### On this page
 
-*   [Quick reference](#quick-reference)
-*   [Examples](#examples)
-    *   [Start](#start)
-    *   [Center](#center)
-    *   [End](#end)
-    *   [Space between](#space-between)
-    *   [Space around](#space-around)
-    *   [Space evenly](#space-evenly)
-    *   [Stretch](#stretch)
-    *   [Normal](#normal)
-    *   [Responsive design](#responsive-design)
+-   [Quick reference](#quick-reference)
+-   [Examples](#examples)
+    -   [Start](#start)
+    -   [Center](#center)
+    -   [End](#end)
+    -   [Space between](#space-between)
+    -   [Space around](#space-around)
+    -   [Space evenly](#space-evenly)
+    -   [Stretch](#stretch)
+    -   [Normal](#normal)
+    -   [Responsive design](#responsive-design)
 
-![Build UIs that don’t suck — 5-day mini-course](/_next/static/media/course-promo.d3d6bc78.jpg)
+[
 
-5-day mini-course
+![Refactoring UI](/_next/static/media/book-promo.3012c0f6.png)
 
-Build UIs that don’t suck.
+From the creators of Tailwind CSS
 
-Short, tactical video lessons from the creator of Tailwind CSS, delivered directly to your inbox every day for a week.
+Make your ideas look awesome, without relying on a designer.
 
-[Get the free course](/build-uis-that-dont-suck)
+> “This is the survival kit I wish I had when I started building apps.”
+> 
+> Derrick Reimer, SavvyCal
+
+](https://www.refactoringui.com/?ref=sidebar)
 
 Copyright © 2026 Tailwind Labs Inc.·[Trademark Policy](/brand)

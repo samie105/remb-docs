@@ -5,25 +5,15 @@ canonical_url: "https://orm.drizzle.team/docs/eslint-plugin"
 docset: "drizzle"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:47:55.364Z"
-content_hash: "f67a720a94a1d1d23e9b95ca4423523e83b47916d082d1b208287e463f76edf6"
+last_crawled_at: "2026-04-27T18:38:07.110Z"
+content_hash: "5ff03bd1f9d8d4bc93efb2e65fc26866b2cd4cf2a1b37805dcaf8e1a49ad34db"
 menu_path: ["ESLint Drizzle Plugin"]
 section_path: []
-nav_prev: {"path": "drizzle/docs/prisma/index.md", "title": "Drizzle extension for Prisma"}
-nav_next: {"path": "drizzle/docs/graphql/index.md", "title": "drizzle-graphql"}
+content_language: "en"
 ---
-
 For cases where it’s impossible to perform type checks for specific scenarios, or where it’s possible but error messages would be challenging to understand, we’ve decided to create an ESLint package with recommended rules. This package aims to assist developers in handling crucial scenarios during development
 
 ## Install[](#install)
-
-npm
-
-yarn
-
-pnpm
-
-bun
 
 ```
 npm i eslint-plugin-drizzle
@@ -49,7 +39,7 @@ bun add @typescript-eslint/eslint-plugin @typescript-eslint/parser
 
 **`.eslintrc.yml` example**
 
-```
+```yml
 root: true
 parser: '@typescript-eslint/parser'
 parserOptions:
@@ -65,7 +55,7 @@ rules:
 
 This plugin exports an `all` that makes use of all rules (except for deprecated ones).
 
-```
+```yml
 root: true
 extends:
   - "plugin:drizzle/all"
@@ -80,7 +70,7 @@ plugins:
 
 At the moment, `all` is equivalent to `recommended`
 
-```
+```yml
 root: true
 extends:
   - "plugin:drizzle/recommended"
@@ -101,12 +91,12 @@ Optionally, you can define a `drizzleObjectName` in the plugin options that acce
 
 Example, config 1:
 
-```
+```yml
 rules:
   'drizzle/enforce-delete-with-where': "error"
 ```
 
-```
+```ts
 class MyClass {
   public delete() {
     return {}
@@ -125,7 +115,7 @@ db.delete()
 
 Example, config 2:
 
-```
+```yml
 rules:
   'drizzle/enforce-delete-with-where':
     - "error"
@@ -133,7 +123,7 @@ rules:
       - "db"
 ```
 
-```
+```ts
 class MyClass {
   public delete() {
     return {}
@@ -158,12 +148,12 @@ Optionally, you can define a `drizzleObjectName` in the plugin options that acce
 
 Example, config 1:
 
-```
+```yml
 rules:
   'drizzle/enforce-update-with-where': "error"
 ```
 
-```
+```ts
 class MyClass {
   public update() {
     return {}
@@ -182,7 +172,7 @@ db.update()
 
 Example, config 2:
 
-```
+```yml
 rules:
   'drizzle/enforce-update-with-where':
     - "error"
@@ -190,7 +180,7 @@ rules:
       - "db"
 ```
 
-```
+```ts
 class MyClass {
   public update() {
     return {}

@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/app/api-reference/config/next-config-js/
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:08:26.264Z"
-content_hash: "5c9437ea76e80aa7f0791a20a54f5993a512eef44d27d612151ae81180b3b147"
+last_crawled_at: "2026-04-27T18:07:15.319Z"
+content_hash: "a0918f06ed3310cd5aeb92ef3e9053d3a68567cb16a6bbd0c29a07d0846983dd"
 menu_path: ["rewrites"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/api-reference/config/next-config-js/redirects/index.md", "title": "redirects"}
-nav_next: {"path": "nextjs/docs/app/api-reference/config/next-config-js/sassOptions/index.md", "title": "sassOptions"}
+version: "latest"
+content_language: "en"
 ---
+[Configuration](/docs/app/api-reference/config)[next.config.js](/docs/app/api-reference/config/next-config-js)rewrites
 
 # rewrites
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 Rewrites allow you to map an incoming request path to a different destination path.
 
@@ -42,12 +43,12 @@ Rewrites are applied to client-side routing. In the example above, navigating to
 
 `rewrites` is an async function that expects to return either an array or an object of arrays (see below) holding objects with `source` and `destination` properties:
 
-*   `source`: `String` - is the incoming request path pattern.
-*   `destination`: `String` is the path you want to route to.
-*   `basePath`: `false` or `undefined` - if false the basePath won't be included when matching, can be used for external rewrites only.
-*   `locale`: `false` or `undefined` - whether the locale should not be included when matching.
-*   `has` is an array of [has objects](#header-cookie-and-query-matching) with the `type`, `key` and `value` properties.
-*   `missing` is an array of [missing objects](#header-cookie-and-query-matching) with the `type`, `key` and `value` properties.
+-   `source`: `String` - is the incoming request path pattern.
+-   `destination`: `String` is the path you want to route to.
+-   `basePath`: `false` or `undefined` - if false the basePath won't be included when matching, can be used for external rewrites only.
+-   `locale`: `false` or `undefined` - whether the locale should not be included when matching.
+-   `has` is an array of [has objects](#header-cookie-and-query-matching) with the `type`, `key` and `value` properties.
+-   `missing` is an array of [missing objects](#header-cookie-and-query-matching) with the `type`, `key` and `value` properties.
 
 When the `rewrites` function returns an array, rewrites are applied after checking the filesystem (pages and `/public` files) and before dynamic routes. When the `rewrites` function returns an object of arrays with a specific shape, this behavior can be changed and more finely controlled, as of `v10.1` of Next.js:
 
@@ -245,9 +246,9 @@ To only match a rewrite when header, cookie, or query values also match the `has
 
 `has` and `missing` items can have the following fields:
 
-*   `type`: `String` - must be either `header`, `cookie`, `host`, or `query`.
-*   `key`: `String` - the key from the selected type to match against.
-*   `value`: `String` or `undefined` - the value to check for, if undefined any value will match. A regex like string can be used to capture a specific part of the value, e.g. if the value `first-(?<paramName>.*)` is used for `first-second` then `second` will be usable in the destination with `:paramName`.
+-   `type`: `String` - must be either `header`, `cookie`, `host`, or `query`.
+-   `key`: `String` - the key from the selected type to match against.
+-   `value`: `String` or `undefined` - the value to check for, if undefined any value will match. A regex like string can be used to capture a specific part of the value, e.g. if the value `first-(?<paramName>.*)` is used for `first-second` then `second` will be usable in the destination with `:paramName`.
 
 next.config.js
 
@@ -332,9 +333,9 @@ module.exports = {
 
 ## Rewriting to an external URL[](#rewriting-to-an-external-url)
 
-Examples
+**Examples**
 
-*   [Using Multiple Zones](https://github.com/vercel/next.js/tree/canary/examples/with-zones)
+-   [Using Multiple Zones](https://github.com/vercel/next.js/tree/canary/examples/with-zones)
 
 Rewrites allow you to rewrite to an external URL. This is especially useful for incrementally adopting Next.js. The following is an example rewrite for redirecting the `/blog` route of your main app to an external site.
 
@@ -432,36 +433,10 @@ module.exports = {
 
 ## Version History[](#version-history)
 
-Version
-
-Changes
-
-`v13.3.0`
-
-`missing` added.
-
-`v10.2.0`
-
-`has` added.
-
-`v9.5.0`
-
-Headers added.
-
-[Previous
-
-redirects
-
-](/docs/app/api-reference/config/next-config-js/redirects)
-
-[Next
-
-sassOptions
-
-](/docs/app/api-reference/config/next-config-js/sassOptions)
+| Version | Changes |
+| --- | --- |
+| `v13.3.0` | `missing` added. |
+| `v10.2.0` | `has` added. |
+| `v9.5.0` | Headers added. |
 
 Was this helpful?
-
-supported.
-
-Send

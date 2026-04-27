@@ -5,22 +5,24 @@ canonical_url: "https://nextjs.org/docs/app/guides/environment-variables"
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:14:41.712Z"
-content_hash: "6029b06a19b26962ce84f0b469ad99f02e86cce8e2f641fd86e2e68c1a239d54"
+last_crawled_at: "2026-04-27T18:13:36.304Z"
+content_hash: "4a1f6f970f12091ce274ec78233893ad4c6bdafb092d60eb11953b4b7f8a02f2"
 menu_path: ["How to use environment variables in Next.js"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/guides/draft-mode/index.md", "title": "How to preview content with Draft Mode in Next.js"}
-nav_next: {"path": "nextjs/docs/app/guides/forms/index.md", "title": "How to create forms with Server Actions"}
+version: "latest"
+tab_variants: ["pnpm","npm","yarn","bun"]
+content_language: "en"
 ---
+[App Router](/docs/app)[Guides](/docs/app/guides)Environment Variables
 
 # How to use environment variables in Next.js
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 Next.js comes with built-in support for environment variables, which allows you to do the following:
 
-*   [Use `.env` to load environment variables](#loading-environment-variables)
-*   [Bundle environment variables for the browser by prefixing with `NEXT_PUBLIC_`](#bundling-environment-variables-for-the-browser)
+-   [Use `.env` to load environment variables](#loading-environment-variables)
+-   [Bundle environment variables for the browser by prefixing with `NEXT_PUBLIC_`](#bundling-environment-variables-for-the-browser)
 
 > **Warning:** The default `create-next-app` template ensures all `.env` files are added to your `.gitignore`. You almost never want to commit these files to your repository.
 
@@ -77,7 +79,21 @@ This package is used internally by Next.js to load environment variables from `.
 
 To use it, install the package and use the `loadEnvConfig` function to load the environment variables:
 
-pnpmnpmyarnbun
+#### pnpm
+
+pnpm
+
+#### npm
+
+npm
+
+#### yarn
+
+yarn
+
+#### bun
+
+bun
 
 Terminal
 
@@ -86,8 +102,6 @@ pnpm add @next/env
 ```
 
 envConfig.ts
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -101,8 +115,6 @@ loadEnvConfig(projectDir)
 Then, you can import the configuration where needed. For example:
 
 orm.config.ts
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -185,8 +197,6 @@ You can safely read environment variables on the server during dynamic rendering
 
 app/page.ts
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -206,7 +216,7 @@ This allows you to use a singular Docker image that can be promoted through mult
 
 **Good to know:**
 
-*   You can run code on server startup using the [`register` function](/docs/app/guides/instrumentation).
+-   You can run code on server startup using the [`register` function](/docs/app/guides/instrumentation).
 
 ## Test Environment Variables[](#test-environment-variables)
 
@@ -246,33 +256,13 @@ For example, if `NODE_ENV` is `development` and you define a variable in both `.
 
 ## Good to know[](#good-to-know)
 
-*   If you are using a [`/src` directory](/docs/app/api-reference/file-conventions/src-folder), `.env.*` files should remain in the root of your project.
-*   If the environment variable `NODE_ENV` is unassigned, Next.js automatically assigns `development` when running the `next dev` command, or `production` for all other commands.
+-   If you are using a [`/src` directory](/docs/app/api-reference/file-conventions/src-folder), `.env.*` files should remain in the root of your project.
+-   If the environment variable `NODE_ENV` is unassigned, Next.js automatically assigns `development` when running the `next dev` command, or `production` for all other commands.
 
 ## Version History[](#version-history)
 
-Version
-
-Changes
-
-`v9.4.0`
-
-Support `.env` and `NEXT_PUBLIC_` introduced.
-
-[Previous
-
-Draft Mode
-
-](/docs/app/guides/draft-mode)
-
-[Next
-
-Forms
-
-](/docs/app/guides/forms)
+| Version | Changes |
+| --- | --- |
+| `v9.4.0` | Support `.env` and `NEXT_PUBLIC_` introduced. |
 
 Was this helpful?
-
-supported.
-
-Send

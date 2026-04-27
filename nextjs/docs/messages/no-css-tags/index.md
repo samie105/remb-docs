@@ -5,13 +5,14 @@ canonical_url: "https://nextjs.org/docs/messages/no-css-tags"
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:18:12.962Z"
-content_hash: "c75d679205663377f262ef8aba7da2cc63b8971d35d4794fd3188761394fcb94"
+last_crawled_at: "2026-04-27T18:17:38.401Z"
+content_hash: "b44592f9905d6a98034b9a586910c6e4181375a1c0f90f7f1679630fb8675717"
 menu_path: ["No CSS Tags"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/messages/no-cache/index.md", "title": "No Cache Detected"}
-nav_next: {"path": "nextjs/docs/messages/no-document-import-in-page/index.md", "title": "No Document Import in Page"}
+version: "latest"
+content_language: "en"
 ---
+[Docs](/docs)[Errors](/docs)No CSS Tags
 
 # No CSS Tags
 
@@ -59,7 +60,3 @@ export class Home {
 Refer to the [Built-In CSS Support](/docs/app/getting-started/css) documentation to learn about all the ways to include CSS to your application.
 
 Was this helpful?
-
-supported.
-
-Send

@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/app/api-reference/functions/revalidateTa
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:12:11.343Z"
-content_hash: "abb307b2c45712be01a8be0535963426ed4e303ecb104b512979294d02517c74"
+last_crawled_at: "2026-04-27T18:10:53.456Z"
+content_hash: "a36ed0e9bff44369c76777916f38c4757ea4cf285bda4bb80cd14b3b0c7427eb"
 menu_path: ["revalidateTag"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/api-reference/functions/revalidatePath/index.md", "title": "revalidatePath"}
-nav_next: {"path": "nextjs/docs/app/api-reference/functions/unauthorized/index.md", "title": "unauthorized"}
+version: "latest"
+content_language: "en"
 ---
+[API Reference](/docs/app/api-reference)[Functions](/docs/app/api-reference/functions)revalidateTag
 
 # revalidateTag
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 `revalidateTag` allows you to invalidate cached data on-demand for a specific cache tag.
 
@@ -31,9 +32,9 @@ This function is ideal for content where a slight delay in updates is acceptable
 
 The revalidation behavior depends on whether you provide the second argument:
 
-*   **With `profile="max"` (recommended)**: The tag entry is marked as stale, and the next time a resource with that tag is visited, it will use stale-while-revalidate semantics. This means the stale content is served while fresh content is fetched in the background.
-*   **With a custom cache life profile**: For advanced usage, you can specify any cache life profile that your application has defined, allowing for custom revalidation behaviors tailored to your specific caching requirements.
-*   **Without the second argument (deprecated)**: The tag entry is expired immediately, and the next request to that resource will be a blocking revalidate/cache miss. This behavior is now deprecated, and you should either use `profile="max"` or migrate to [`updateTag`](/docs/app/api-reference/functions/updateTag).
+-   **With `profile="max"` (recommended)**: The tag entry is marked as stale, and the next time a resource with that tag is visited, it will use stale-while-revalidate semantics. This means the stale content is served while fresh content is fetched in the background.
+-   **With a custom cache life profile**: For advanced usage, you can specify any cache life profile that your application has defined, allowing for custom revalidation behaviors tailored to your specific caching requirements.
+-   **Without the second argument (deprecated)**: The tag entry is expired immediately, and the next request to that resource will be a blocking revalidate/cache miss. This behavior is now deprecated, and you should either use `profile="max"` or migrate to [`updateTag`](/docs/app/api-reference/functions/updateTag).
 
 > **Good to know**: When using `profile="max"`, `revalidateTag` marks tagged data as stale, but fresh data is only fetched when pages using that tag are next visited. This means calling `revalidateTag` will not immediately trigger many revalidations at once. The invalidation only happens when any page using that tag is next visited.
 
@@ -43,18 +44,18 @@ The revalidation behavior depends on whether you provide the second argument:
 revalidateTag(tag: string, profile: string | { expire?: number }): void;
 ```
 
-*   `tag`: A string representing the cache tag associated with the data you want to revalidate. Must not exceed 256 characters. This value is case-sensitive.
-*   `profile`: A string that specifies the revalidation behavior. The recommended value is `"max"` which provides stale-while-revalidate semantics, or any of the other default or custom profiles defined in [`cacheLife`](/docs/app/api-reference/config/next-config-js/cacheLife). Alternatively, you can pass an object with an `expire` property for custom expiration behavior.
+-   `tag`: A string representing the cache tag associated with the data you want to revalidate. Must not exceed 256 characters. This value is case-sensitive.
+-   `profile`: A string that specifies the revalidation behavior. The recommended value is `"max"` which provides stale-while-revalidate semantics, or any of the other default or custom profiles defined in [`cacheLife`](/docs/app/api-reference/config/next-config-js/cacheLife). Alternatively, you can pass an object with an `expire` property for custom expiration behavior.
 
 Tags must first be assigned to cached data. You can do this in two ways:
 
-*   Using the [`next.tags`](/docs/app/api-reference/functions/fetch) option with `fetch` for caching external API requests:
+-   Using the [`next.tags`](/docs/app/api-reference/functions/fetch) option with `fetch` for caching external API requests:
 
 ```
 fetch(url, { next: { tags: ['posts'] } })
 ```
 
-*   Using [`cacheTag`](/docs/app/api-reference/functions/cacheTag) inside cached functions or components with the `'use cache'` directive:
+-   Using [`cacheTag`](/docs/app/api-reference/functions/cacheTag) inside cached functions or components with the `'use cache'` directive:
 
 ```
 import { cacheTag } from 'next/cache'
@@ -86,8 +87,6 @@ The following examples demonstrate how to use `revalidateTag` in different conte
 
 app/actions.ts
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -104,8 +103,6 @@ export default async function submit() {
 ### Route Handler[](#route-handler)
 
 app/api/revalidate/route.ts
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -131,20 +128,4 @@ export async function GET(request: NextRequest) {
 
 > **Good to know**: For webhooks or third-party services that need immediate expiration, you can pass `{ expire: 0 }` as the second argument: `revalidateTag(tag, { expire: 0 })`. This pattern is necessary when external systems call your Route Handlers and require data to expire immediately. For all other cases, it's recommended to use [`updateTag`](/docs/app/api-reference/functions/updateTag) in Server Actions for immediate updates instead.
 
-[Previous
-
-revalidatePath
-
-](/docs/app/api-reference/functions/revalidatePath)
-
-[Next
-
-unauthorized
-
-](/docs/app/api-reference/functions/unauthorized)
-
 Was this helpful?
-
-supported.
-
-Send

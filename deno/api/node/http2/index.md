@@ -5,10 +5,11 @@ canonical_url: "https://docs.deno.com/api/node/http2/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:37:01.264Z"
-content_hash: "604752dcc51b1a7903a9e77d1e9cfbb4f643a1f63bd9cfa8562a393f3af516b2"
+last_crawled_at: "2026-04-27T17:07:26.876Z"
+content_hash: "19a176d8afb77d7f437c7089fcd96518a794e5b051b58a3f3de93eb671f635e1"
 menu_path: ["http2 - Node documentation"]
 section_path: []
+content_language: "en"
 ---
 ### Usage in Deno
 
@@ -22,38 +23,36 @@ The `node:http2` module provides an implementation of the [HTTP/2](https://tools
 import http2 from 'node:http2';
 ```
 
-### Classes [#](#Classes)
-
 c
 
 [Http2ServerRequest](.././http2/~/Http2ServerRequest "Http2ServerRequest")
 
 A `Http2ServerRequest` object is created by Server or SecureServer and passed as the first argument to the `'request'` event. It may be used to access a request status, headers, and data.
 
-*   [aborted](.././http2/~/Http2ServerRequest#property_aborted)
-*   [addListener](.././http2/~/Http2ServerRequest#method_addlistener_0)
-*   [authority](.././http2/~/Http2ServerRequest#property_authority)
-*   [complete](.././http2/~/Http2ServerRequest#property_complete)
-*   [connection](.././http2/~/Http2ServerRequest#property_connection)
-*   [emit](.././http2/~/Http2ServerRequest#method_emit_0)
-*   [headers](.././http2/~/Http2ServerRequest#property_headers)
-*   [httpVersion](.././http2/~/Http2ServerRequest#property_httpversion)
-*   [httpVersionMajor](.././http2/~/Http2ServerRequest#property_httpversionmajor)
-*   [httpVersionMinor](.././http2/~/Http2ServerRequest#property_httpversionminor)
-*   [method](.././http2/~/Http2ServerRequest#property_method)
-*   [on](.././http2/~/Http2ServerRequest#method_on_0)
-*   [once](.././http2/~/Http2ServerRequest#method_once_0)
-*   [prependListener](.././http2/~/Http2ServerRequest#method_prependlistener_0)
-*   [prependOnceListener](.././http2/~/Http2ServerRequest#method_prependoncelistener_0)
-*   [rawHeaders](.././http2/~/Http2ServerRequest#property_rawheaders)
-*   [rawTrailers](.././http2/~/Http2ServerRequest#property_rawtrailers)
-*   [read](.././http2/~/Http2ServerRequest#method_read_0)
-*   [scheme](.././http2/~/Http2ServerRequest#property_scheme)
-*   [setTimeout](.././http2/~/Http2ServerRequest#method_settimeout_0)
-*   [socket](.././http2/~/Http2ServerRequest#property_socket)
-*   [stream](.././http2/~/Http2ServerRequest#property_stream)
-*   [trailers](.././http2/~/Http2ServerRequest#property_trailers)
-*   [url](.././http2/~/Http2ServerRequest#property_url)
+-   [aborted](.././http2/~/Http2ServerRequest#property_aborted)
+-   [addListener](.././http2/~/Http2ServerRequest#method_addlistener_0)
+-   [authority](.././http2/~/Http2ServerRequest#property_authority)
+-   [complete](.././http2/~/Http2ServerRequest#property_complete)
+-   [connection](.././http2/~/Http2ServerRequest#property_connection)
+-   [emit](.././http2/~/Http2ServerRequest#method_emit_0)
+-   [headers](.././http2/~/Http2ServerRequest#property_headers)
+-   [httpVersion](.././http2/~/Http2ServerRequest#property_httpversion)
+-   [httpVersionMajor](.././http2/~/Http2ServerRequest#property_httpversionmajor)
+-   [httpVersionMinor](.././http2/~/Http2ServerRequest#property_httpversionminor)
+-   [method](.././http2/~/Http2ServerRequest#property_method)
+-   [on](.././http2/~/Http2ServerRequest#method_on_0)
+-   [once](.././http2/~/Http2ServerRequest#method_once_0)
+-   [prependListener](.././http2/~/Http2ServerRequest#method_prependlistener_0)
+-   [prependOnceListener](.././http2/~/Http2ServerRequest#method_prependoncelistener_0)
+-   [rawHeaders](.././http2/~/Http2ServerRequest#property_rawheaders)
+-   [rawTrailers](.././http2/~/Http2ServerRequest#property_rawtrailers)
+-   [read](.././http2/~/Http2ServerRequest#method_read_0)
+-   [scheme](.././http2/~/Http2ServerRequest#property_scheme)
+-   [setTimeout](.././http2/~/Http2ServerRequest#method_settimeout_0)
+-   [socket](.././http2/~/Http2ServerRequest#property_socket)
+-   [stream](.././http2/~/Http2ServerRequest#property_stream)
+-   [trailers](.././http2/~/Http2ServerRequest#property_trailers)
+-   [url](.././http2/~/Http2ServerRequest#property_url)
 
 c
 
@@ -61,38 +60,36 @@ c
 
 This object is created internally by an HTTP server, not by the user. It is passed as the second parameter to the `'request'` event.
 
-*   [addListener](.././http2/~/Http2ServerResponse#method_addlistener_0)
-*   [addTrailers](.././http2/~/Http2ServerResponse#method_addtrailers_0)
-*   [appendHeader](.././http2/~/Http2ServerResponse#method_appendheader_0)
-*   [connection](.././http2/~/Http2ServerResponse#property_connection)
-*   [createPushResponse](.././http2/~/Http2ServerResponse#method_createpushresponse_0)
-*   [emit](.././http2/~/Http2ServerResponse#method_emit_0)
-*   [end](.././http2/~/Http2ServerResponse#method_end_0)
-*   [finished](.././http2/~/Http2ServerResponse#property_finished)
-*   [getHeader](.././http2/~/Http2ServerResponse#method_getheader_0)
-*   [getHeaderNames](.././http2/~/Http2ServerResponse#method_getheadernames_0)
-*   [getHeaders](.././http2/~/Http2ServerResponse#method_getheaders_0)
-*   [hasHeader](.././http2/~/Http2ServerResponse#method_hasheader_0)
-*   [headersSent](.././http2/~/Http2ServerResponse#property_headerssent)
-*   [on](.././http2/~/Http2ServerResponse#method_on_0)
-*   [once](.././http2/~/Http2ServerResponse#method_once_0)
-*   [prependListener](.././http2/~/Http2ServerResponse#method_prependlistener_0)
-*   [prependOnceListener](.././http2/~/Http2ServerResponse#method_prependoncelistener_0)
-*   [removeHeader](.././http2/~/Http2ServerResponse#method_removeheader_0)
-*   [req](.././http2/~/Http2ServerResponse#property_req)
-*   [sendDate](.././http2/~/Http2ServerResponse#property_senddate)
-*   [setHeader](.././http2/~/Http2ServerResponse#method_setheader_0)
-*   [setTimeout](.././http2/~/Http2ServerResponse#method_settimeout_0)
-*   [socket](.././http2/~/Http2ServerResponse#property_socket)
-*   [statusCode](.././http2/~/Http2ServerResponse#property_statuscode)
-*   [statusMessage](.././http2/~/Http2ServerResponse#property_statusmessage)
-*   [stream](.././http2/~/Http2ServerResponse#property_stream)
-*   [write](.././http2/~/Http2ServerResponse#method_write_0)
-*   [writeContinue](.././http2/~/Http2ServerResponse#method_writecontinue_0)
-*   [writeEarlyHints](.././http2/~/Http2ServerResponse#method_writeearlyhints_0)
-*   [writeHead](.././http2/~/Http2ServerResponse#method_writehead_0)
-
-### Functions [#](#Functions)
+-   [addListener](.././http2/~/Http2ServerResponse#method_addlistener_0)
+-   [addTrailers](.././http2/~/Http2ServerResponse#method_addtrailers_0)
+-   [appendHeader](.././http2/~/Http2ServerResponse#method_appendheader_0)
+-   [connection](.././http2/~/Http2ServerResponse#property_connection)
+-   [createPushResponse](.././http2/~/Http2ServerResponse#method_createpushresponse_0)
+-   [emit](.././http2/~/Http2ServerResponse#method_emit_0)
+-   [end](.././http2/~/Http2ServerResponse#method_end_0)
+-   [finished](.././http2/~/Http2ServerResponse#property_finished)
+-   [getHeader](.././http2/~/Http2ServerResponse#method_getheader_0)
+-   [getHeaderNames](.././http2/~/Http2ServerResponse#method_getheadernames_0)
+-   [getHeaders](.././http2/~/Http2ServerResponse#method_getheaders_0)
+-   [hasHeader](.././http2/~/Http2ServerResponse#method_hasheader_0)
+-   [headersSent](.././http2/~/Http2ServerResponse#property_headerssent)
+-   [on](.././http2/~/Http2ServerResponse#method_on_0)
+-   [once](.././http2/~/Http2ServerResponse#method_once_0)
+-   [prependListener](.././http2/~/Http2ServerResponse#method_prependlistener_0)
+-   [prependOnceListener](.././http2/~/Http2ServerResponse#method_prependoncelistener_0)
+-   [removeHeader](.././http2/~/Http2ServerResponse#method_removeheader_0)
+-   [req](.././http2/~/Http2ServerResponse#property_req)
+-   [sendDate](.././http2/~/Http2ServerResponse#property_senddate)
+-   [setHeader](.././http2/~/Http2ServerResponse#method_setheader_0)
+-   [setTimeout](.././http2/~/Http2ServerResponse#method_settimeout_0)
+-   [socket](.././http2/~/Http2ServerResponse#property_socket)
+-   [statusCode](.././http2/~/Http2ServerResponse#property_statuscode)
+-   [statusMessage](.././http2/~/Http2ServerResponse#property_statusmessage)
+-   [stream](.././http2/~/Http2ServerResponse#property_stream)
+-   [write](.././http2/~/Http2ServerResponse#method_write_0)
+-   [writeContinue](.././http2/~/Http2ServerResponse#method_writecontinue_0)
+-   [writeEarlyHints](.././http2/~/Http2ServerResponse#method_writeearlyhints_0)
+-   [writeHead](.././http2/~/Http2ServerResponse#method_writehead_0)
 
 f
 
@@ -136,15 +133,13 @@ f
 
 Create an HTTP/2 server session from an existing socket.
 
-### Interfaces [#](#Interfaces)
-
 I
 
 [AlternativeServiceOptions](.././http2/~/AlternativeServiceOptions "AlternativeServiceOptions")
 
 No documentation available
 
-*   [origin](.././http2/~/AlternativeServiceOptions#property_origin)
+-   [origin](.././http2/~/AlternativeServiceOptions#property_origin)
 
 I
 
@@ -152,13 +147,13 @@ I
 
 No documentation available
 
-*   [addListener](.././http2/~/ClientHttp2Session#method_addlistener_0)
-*   [emit](.././http2/~/ClientHttp2Session#method_emit_0)
-*   [on](.././http2/~/ClientHttp2Session#method_on_0)
-*   [once](.././http2/~/ClientHttp2Session#method_once_0)
-*   [prependListener](.././http2/~/ClientHttp2Session#method_prependlistener_0)
-*   [prependOnceListener](.././http2/~/ClientHttp2Session#method_prependoncelistener_0)
-*   [request](.././http2/~/ClientHttp2Session#method_request_0)
+-   [addListener](.././http2/~/ClientHttp2Session#method_addlistener_0)
+-   [emit](.././http2/~/ClientHttp2Session#method_emit_0)
+-   [on](.././http2/~/ClientHttp2Session#method_on_0)
+-   [once](.././http2/~/ClientHttp2Session#method_once_0)
+-   [prependListener](.././http2/~/ClientHttp2Session#method_prependlistener_0)
+-   [prependOnceListener](.././http2/~/ClientHttp2Session#method_prependoncelistener_0)
+-   [request](.././http2/~/ClientHttp2Session#method_request_0)
 
 I
 
@@ -166,12 +161,12 @@ I
 
 No documentation available
 
-*   [addListener](.././http2/~/ClientHttp2Stream#method_addlistener_0)
-*   [emit](.././http2/~/ClientHttp2Stream#method_emit_0)
-*   [on](.././http2/~/ClientHttp2Stream#method_on_0)
-*   [once](.././http2/~/ClientHttp2Stream#method_once_0)
-*   [prependListener](.././http2/~/ClientHttp2Stream#method_prependlistener_0)
-*   [prependOnceListener](.././http2/~/ClientHttp2Stream#method_prependoncelistener_0)
+-   [addListener](.././http2/~/ClientHttp2Stream#method_addlistener_0)
+-   [emit](.././http2/~/ClientHttp2Stream#method_emit_0)
+-   [on](.././http2/~/ClientHttp2Stream#method_on_0)
+-   [once](.././http2/~/ClientHttp2Stream#method_once_0)
+-   [prependListener](.././http2/~/ClientHttp2Stream#method_prependlistener_0)
+-   [prependOnceListener](.././http2/~/ClientHttp2Stream#method_prependoncelistener_0)
 
 I
 
@@ -179,9 +174,9 @@ I
 
 No documentation available
 
-*   [createConnection](.././http2/~/ClientSessionOptions#property_createconnection)
-*   [maxReservedRemoteStreams](.././http2/~/ClientSessionOptions#property_maxreservedremotestreams)
-*   [protocol](.././http2/~/ClientSessionOptions#property_protocol)
+-   [createConnection](.././http2/~/ClientSessionOptions#property_createconnection)
+-   [maxReservedRemoteStreams](.././http2/~/ClientSessionOptions#property_maxreservedremotestreams)
+-   [protocol](.././http2/~/ClientSessionOptions#property_protocol)
 
 I
 
@@ -189,12 +184,12 @@ I
 
 No documentation available
 
-*   [endStream](.././http2/~/ClientSessionRequestOptions#property_endstream)
-*   [exclusive](.././http2/~/ClientSessionRequestOptions#property_exclusive)
-*   [parent](.././http2/~/ClientSessionRequestOptions#property_parent)
-*   [signal](.././http2/~/ClientSessionRequestOptions#property_signal)
-*   [waitForTrailers](.././http2/~/ClientSessionRequestOptions#property_waitfortrailers)
-*   [weight](.././http2/~/ClientSessionRequestOptions#property_weight)
+-   [endStream](.././http2/~/ClientSessionRequestOptions#property_endstream)
+-   [exclusive](.././http2/~/ClientSessionRequestOptions#property_exclusive)
+-   [parent](.././http2/~/ClientSessionRequestOptions#property_parent)
+-   [signal](.././http2/~/ClientSessionRequestOptions#property_signal)
+-   [waitForTrailers](.././http2/~/ClientSessionRequestOptions#property_waitfortrailers)
+-   [weight](.././http2/~/ClientSessionRequestOptions#property_weight)
 
 I
 
@@ -202,12 +197,12 @@ I
 
 No documentation available
 
-*   [addListener](.././http2/~/Http2SecureServer#method_addlistener_0)
-*   [emit](.././http2/~/Http2SecureServer#method_emit_0)
-*   [on](.././http2/~/Http2SecureServer#method_on_0)
-*   [once](.././http2/~/Http2SecureServer#method_once_0)
-*   [prependListener](.././http2/~/Http2SecureServer#method_prependlistener_0)
-*   [prependOnceListener](.././http2/~/Http2SecureServer#method_prependoncelistener_0)
+-   [addListener](.././http2/~/Http2SecureServer#method_addlistener_0)
+-   [emit](.././http2/~/Http2SecureServer#method_emit_0)
+-   [on](.././http2/~/Http2SecureServer#method_on_0)
+-   [once](.././http2/~/Http2SecureServer#method_once_0)
+-   [prependListener](.././http2/~/Http2SecureServer#method_prependlistener_0)
+-   [prependOnceListener](.././http2/~/Http2SecureServer#method_prependoncelistener_0)
 
 I
 
@@ -215,12 +210,12 @@ I
 
 No documentation available
 
-*   [addListener](.././http2/~/Http2Server#method_addlistener_0)
-*   [emit](.././http2/~/Http2Server#method_emit_0)
-*   [on](.././http2/~/Http2Server#method_on_0)
-*   [once](.././http2/~/Http2Server#method_once_0)
-*   [prependListener](.././http2/~/Http2Server#method_prependlistener_0)
-*   [prependOnceListener](.././http2/~/Http2Server#method_prependoncelistener_0)
+-   [addListener](.././http2/~/Http2Server#method_addlistener_0)
+-   [emit](.././http2/~/Http2Server#method_emit_0)
+-   [on](.././http2/~/Http2Server#method_on_0)
+-   [once](.././http2/~/Http2Server#method_once_0)
+-   [prependListener](.././http2/~/Http2Server#method_prependlistener_0)
+-   [prependOnceListener](.././http2/~/Http2Server#method_prependoncelistener_0)
 
 I
 
@@ -228,8 +223,8 @@ I
 
 No documentation available
 
-*   [setTimeout](.././http2/~/HTTP2ServerCommon#method_settimeout_0)
-*   [updateSettings](.././http2/~/HTTP2ServerCommon#method_updatesettings_0)
+-   [setTimeout](.././http2/~/HTTP2ServerCommon#method_settimeout_0)
+-   [updateSettings](.././http2/~/HTTP2ServerCommon#method_updatesettings_0)
 
 I
 
@@ -237,33 +232,33 @@ I
 
 No documentation available
 
-*   [addListener](.././http2/~/Http2Session#method_addlistener_0)
-*   [alpnProtocol](.././http2/~/Http2Session#property_alpnprotocol)
-*   [close](.././http2/~/Http2Session#method_close_0)
-*   [closed](.././http2/~/Http2Session#property_closed)
-*   [connecting](.././http2/~/Http2Session#property_connecting)
-*   [destroy](.././http2/~/Http2Session#method_destroy_0)
-*   [destroyed](.././http2/~/Http2Session#property_destroyed)
-*   [emit](.././http2/~/Http2Session#method_emit_0)
-*   [encrypted](.././http2/~/Http2Session#property_encrypted)
-*   [goaway](.././http2/~/Http2Session#method_goaway_0)
-*   [localSettings](.././http2/~/Http2Session#property_localsettings)
-*   [on](.././http2/~/Http2Session#method_on_0)
-*   [once](.././http2/~/Http2Session#method_once_0)
-*   [originSet](.././http2/~/Http2Session#property_originset)
-*   [pendingSettingsAck](.././http2/~/Http2Session#property_pendingsettingsack)
-*   [ping](.././http2/~/Http2Session#method_ping_0)
-*   [prependListener](.././http2/~/Http2Session#method_prependlistener_0)
-*   [prependOnceListener](.././http2/~/Http2Session#method_prependoncelistener_0)
-*   [ref](.././http2/~/Http2Session#method_ref_0)
-*   [remoteSettings](.././http2/~/Http2Session#property_remotesettings)
-*   [setLocalWindowSize](.././http2/~/Http2Session#method_setlocalwindowsize_0)
-*   [setTimeout](.././http2/~/Http2Session#method_settimeout_0)
-*   [settings](.././http2/~/Http2Session#method_settings_0)
-*   [socket](.././http2/~/Http2Session#property_socket)
-*   [state](.././http2/~/Http2Session#property_state)
-*   [type](.././http2/~/Http2Session#property_type)
-*   [unref](.././http2/~/Http2Session#method_unref_0)
+-   [addListener](.././http2/~/Http2Session#method_addlistener_0)
+-   [alpnProtocol](.././http2/~/Http2Session#property_alpnprotocol)
+-   [close](.././http2/~/Http2Session#method_close_0)
+-   [closed](.././http2/~/Http2Session#property_closed)
+-   [connecting](.././http2/~/Http2Session#property_connecting)
+-   [destroy](.././http2/~/Http2Session#method_destroy_0)
+-   [destroyed](.././http2/~/Http2Session#property_destroyed)
+-   [emit](.././http2/~/Http2Session#method_emit_0)
+-   [encrypted](.././http2/~/Http2Session#property_encrypted)
+-   [goaway](.././http2/~/Http2Session#method_goaway_0)
+-   [localSettings](.././http2/~/Http2Session#property_localsettings)
+-   [on](.././http2/~/Http2Session#method_on_0)
+-   [once](.././http2/~/Http2Session#method_once_0)
+-   [originSet](.././http2/~/Http2Session#property_originset)
+-   [pendingSettingsAck](.././http2/~/Http2Session#property_pendingsettingsack)
+-   [ping](.././http2/~/Http2Session#method_ping_0)
+-   [prependListener](.././http2/~/Http2Session#method_prependlistener_0)
+-   [prependOnceListener](.././http2/~/Http2Session#method_prependoncelistener_0)
+-   [ref](.././http2/~/Http2Session#method_ref_0)
+-   [remoteSettings](.././http2/~/Http2Session#property_remotesettings)
+-   [setLocalWindowSize](.././http2/~/Http2Session#method_setlocalwindowsize_0)
+-   [setTimeout](.././http2/~/Http2Session#method_settimeout_0)
+-   [settings](.././http2/~/Http2Session#method_settings_0)
+-   [socket](.././http2/~/Http2Session#property_socket)
+-   [state](.././http2/~/Http2Session#property_state)
+-   [type](.././http2/~/Http2Session#property_type)
+-   [unref](.././http2/~/Http2Session#method_unref_0)
 
 I
 
@@ -271,29 +266,29 @@ I
 
 No documentation available
 
-*   [aborted](.././http2/~/Http2Stream#property_aborted)
-*   [addListener](.././http2/~/Http2Stream#method_addlistener_0)
-*   [bufferSize](.././http2/~/Http2Stream#property_buffersize)
-*   [close](.././http2/~/Http2Stream#method_close_0)
-*   [closed](.././http2/~/Http2Stream#property_closed)
-*   [destroyed](.././http2/~/Http2Stream#property_destroyed)
-*   [emit](.././http2/~/Http2Stream#method_emit_0)
-*   [endAfterHeaders](.././http2/~/Http2Stream#property_endafterheaders)
-*   [id](.././http2/~/Http2Stream#property_id)
-*   [on](.././http2/~/Http2Stream#method_on_0)
-*   [once](.././http2/~/Http2Stream#method_once_0)
-*   [pending](.././http2/~/Http2Stream#property_pending)
-*   [prependListener](.././http2/~/Http2Stream#method_prependlistener_0)
-*   [prependOnceListener](.././http2/~/Http2Stream#method_prependoncelistener_0)
-*   [priority](.././http2/~/Http2Stream#method_priority_0)
-*   [rstCode](.././http2/~/Http2Stream#property_rstcode)
-*   [sendTrailers](.././http2/~/Http2Stream#method_sendtrailers_0)
-*   [sentHeaders](.././http2/~/Http2Stream#property_sentheaders)
-*   [sentInfoHeaders](.././http2/~/Http2Stream#property_sentinfoheaders)
-*   [sentTrailers](.././http2/~/Http2Stream#property_senttrailers)
-*   [session](.././http2/~/Http2Stream#property_session)
-*   [setTimeout](.././http2/~/Http2Stream#method_settimeout_0)
-*   [state](.././http2/~/Http2Stream#property_state)
+-   [aborted](.././http2/~/Http2Stream#property_aborted)
+-   [addListener](.././http2/~/Http2Stream#method_addlistener_0)
+-   [bufferSize](.././http2/~/Http2Stream#property_buffersize)
+-   [close](.././http2/~/Http2Stream#method_close_0)
+-   [closed](.././http2/~/Http2Stream#property_closed)
+-   [destroyed](.././http2/~/Http2Stream#property_destroyed)
+-   [emit](.././http2/~/Http2Stream#method_emit_0)
+-   [endAfterHeaders](.././http2/~/Http2Stream#property_endafterheaders)
+-   [id](.././http2/~/Http2Stream#property_id)
+-   [on](.././http2/~/Http2Stream#method_on_0)
+-   [once](.././http2/~/Http2Stream#method_once_0)
+-   [pending](.././http2/~/Http2Stream#property_pending)
+-   [prependListener](.././http2/~/Http2Stream#method_prependlistener_0)
+-   [prependOnceListener](.././http2/~/Http2Stream#method_prependoncelistener_0)
+-   [priority](.././http2/~/Http2Stream#method_priority_0)
+-   [rstCode](.././http2/~/Http2Stream#property_rstcode)
+-   [sendTrailers](.././http2/~/Http2Stream#method_sendtrailers_0)
+-   [sentHeaders](.././http2/~/Http2Stream#property_sentheaders)
+-   [sentInfoHeaders](.././http2/~/Http2Stream#property_sentinfoheaders)
+-   [sentTrailers](.././http2/~/Http2Stream#property_senttrailers)
+-   [session](.././http2/~/Http2Stream#property_session)
+-   [setTimeout](.././http2/~/Http2Stream#method_settimeout_0)
+-   [state](.././http2/~/Http2Stream#property_state)
 
 I
 
@@ -301,10 +296,10 @@ I
 
 No documentation available
 
-*   [:authority](.././http2/~/IncomingHttpHeaders#property_:authority)
-*   [:method](.././http2/~/IncomingHttpHeaders#property_:method)
-*   [:path](.././http2/~/IncomingHttpHeaders#property_:path)
-*   [:scheme](.././http2/~/IncomingHttpHeaders#property_:scheme)
+-   [:authority](.././http2/~/IncomingHttpHeaders#property_:authority)
+-   [:method](.././http2/~/IncomingHttpHeaders#property_:method)
+-   [:path](.././http2/~/IncomingHttpHeaders#property_:path)
+-   [:scheme](.././http2/~/IncomingHttpHeaders#property_:scheme)
 
 I
 
@@ -312,7 +307,7 @@ I
 
 No documentation available
 
-*   [:status](.././http2/~/IncomingHttpStatusHeader#property_:status)
+-   [:status](.././http2/~/IncomingHttpStatusHeader#property_:status)
 
 I
 
@@ -320,86 +315,86 @@ I
 
 No documentation available
 
-*   [accept](.././http/~/OutgoingHttpHeaders#property_accept)
-*   [accept-charset](.././http/~/OutgoingHttpHeaders#property_accept-charset)
-*   [accept-encoding](.././http/~/OutgoingHttpHeaders#property_accept-encoding)
-*   [accept-language](.././http/~/OutgoingHttpHeaders#property_accept-language)
-*   [accept-ranges](.././http/~/OutgoingHttpHeaders#property_accept-ranges)
-*   [access-control-allow-credentials](.././http/~/OutgoingHttpHeaders#property_access-control-allow-credentials)
-*   [access-control-allow-headers](.././http/~/OutgoingHttpHeaders#property_access-control-allow-headers)
-*   [access-control-allow-methods](.././http/~/OutgoingHttpHeaders#property_access-control-allow-methods)
-*   [access-control-allow-origin](.././http/~/OutgoingHttpHeaders#property_access-control-allow-origin)
-*   [access-control-expose-headers](.././http/~/OutgoingHttpHeaders#property_access-control-expose-headers)
-*   [access-control-max-age](.././http/~/OutgoingHttpHeaders#property_access-control-max-age)
-*   [access-control-request-headers](.././http/~/OutgoingHttpHeaders#property_access-control-request-headers)
-*   [access-control-request-method](.././http/~/OutgoingHttpHeaders#property_access-control-request-method)
-*   [age](.././http/~/OutgoingHttpHeaders#property_age)
-*   [allow](.././http/~/OutgoingHttpHeaders#property_allow)
-*   [authorization](.././http/~/OutgoingHttpHeaders#property_authorization)
-*   [cache-control](.././http/~/OutgoingHttpHeaders#property_cache-control)
-*   [cdn-cache-control](.././http/~/OutgoingHttpHeaders#property_cdn-cache-control)
-*   [connection](.././http/~/OutgoingHttpHeaders#property_connection)
-*   [content-disposition](.././http/~/OutgoingHttpHeaders#property_content-disposition)
-*   [content-encoding](.././http/~/OutgoingHttpHeaders#property_content-encoding)
-*   [content-language](.././http/~/OutgoingHttpHeaders#property_content-language)
-*   [content-length](.././http/~/OutgoingHttpHeaders#property_content-length)
-*   [content-location](.././http/~/OutgoingHttpHeaders#property_content-location)
-*   [content-range](.././http/~/OutgoingHttpHeaders#property_content-range)
-*   [content-security-policy](.././http/~/OutgoingHttpHeaders#property_content-security-policy)
-*   [content-security-policy-report-only](.././http/~/OutgoingHttpHeaders#property_content-security-policy-report-only)
-*   [content-type](.././http/~/OutgoingHttpHeaders#property_content-type)
-*   [cookie](.././http/~/OutgoingHttpHeaders#property_cookie)
-*   [date](.././http/~/OutgoingHttpHeaders#property_date)
-*   [dav](.././http/~/OutgoingHttpHeaders#property_dav)
-*   [dnt](.././http/~/OutgoingHttpHeaders#property_dnt)
-*   [etag](.././http/~/OutgoingHttpHeaders#property_etag)
-*   [expect](.././http/~/OutgoingHttpHeaders#property_expect)
-*   [expires](.././http/~/OutgoingHttpHeaders#property_expires)
-*   [forwarded](.././http/~/OutgoingHttpHeaders#property_forwarded)
-*   [from](.././http/~/OutgoingHttpHeaders#property_from)
-*   [host](.././http/~/OutgoingHttpHeaders#property_host)
-*   [if-match](.././http/~/OutgoingHttpHeaders#property_if-match)
-*   [if-modified-since](.././http/~/OutgoingHttpHeaders#property_if-modified-since)
-*   [if-none-match](.././http/~/OutgoingHttpHeaders#property_if-none-match)
-*   [if-range](.././http/~/OutgoingHttpHeaders#property_if-range)
-*   [if-unmodified-since](.././http/~/OutgoingHttpHeaders#property_if-unmodified-since)
-*   [last-modified](.././http/~/OutgoingHttpHeaders#property_last-modified)
-*   [link](.././http/~/OutgoingHttpHeaders#property_link)
-*   [location](.././http/~/OutgoingHttpHeaders#property_location)
-*   [max-forwards](.././http/~/OutgoingHttpHeaders#property_max-forwards)
-*   [origin](.././http/~/OutgoingHttpHeaders#property_origin)
-*   [pragma](.././http/~/OutgoingHttpHeaders#property_pragma)
-*   [proxy-authenticate](.././http/~/OutgoingHttpHeaders#property_proxy-authenticate)
-*   [proxy-authorization](.././http/~/OutgoingHttpHeaders#property_proxy-authorization)
-*   [public-key-pins](.././http/~/OutgoingHttpHeaders#property_public-key-pins)
-*   [public-key-pins-report-only](.././http/~/OutgoingHttpHeaders#property_public-key-pins-report-only)
-*   [range](.././http/~/OutgoingHttpHeaders#property_range)
-*   [referer](.././http/~/OutgoingHttpHeaders#property_referer)
-*   [referrer-policy](.././http/~/OutgoingHttpHeaders#property_referrer-policy)
-*   [refresh](.././http/~/OutgoingHttpHeaders#property_refresh)
-*   [retry-after](.././http/~/OutgoingHttpHeaders#property_retry-after)
-*   [sec-websocket-accept](.././http/~/OutgoingHttpHeaders#property_sec-websocket-accept)
-*   [sec-websocket-extensions](.././http/~/OutgoingHttpHeaders#property_sec-websocket-extensions)
-*   [sec-websocket-key](.././http/~/OutgoingHttpHeaders#property_sec-websocket-key)
-*   [sec-websocket-protocol](.././http/~/OutgoingHttpHeaders#property_sec-websocket-protocol)
-*   [sec-websocket-version](.././http/~/OutgoingHttpHeaders#property_sec-websocket-version)
-*   [server](.././http/~/OutgoingHttpHeaders#property_server)
-*   [set-cookie](.././http/~/OutgoingHttpHeaders#property_set-cookie)
-*   [strict-transport-security](.././http/~/OutgoingHttpHeaders#property_strict-transport-security)
-*   [te](.././http/~/OutgoingHttpHeaders#property_te)
-*   [trailer](.././http/~/OutgoingHttpHeaders#property_trailer)
-*   [transfer-encoding](.././http/~/OutgoingHttpHeaders#property_transfer-encoding)
-*   [upgrade](.././http/~/OutgoingHttpHeaders#property_upgrade)
-*   [upgrade-insecure-requests](.././http/~/OutgoingHttpHeaders#property_upgrade-insecure-requests)
-*   [user-agent](.././http/~/OutgoingHttpHeaders#property_user-agent)
-*   [vary](.././http/~/OutgoingHttpHeaders#property_vary)
-*   [via](.././http/~/OutgoingHttpHeaders#property_via)
-*   [warning](.././http/~/OutgoingHttpHeaders#property_warning)
-*   [www-authenticate](.././http/~/OutgoingHttpHeaders#property_www-authenticate)
-*   [x-content-type-options](.././http/~/OutgoingHttpHeaders#property_x-content-type-options)
-*   [x-dns-prefetch-control](.././http/~/OutgoingHttpHeaders#property_x-dns-prefetch-control)
-*   [x-frame-options](.././http/~/OutgoingHttpHeaders#property_x-frame-options)
-*   [x-xss-protection](.././http/~/OutgoingHttpHeaders#property_x-xss-protection)
+-   [accept](.././http/~/OutgoingHttpHeaders#property_accept)
+-   [accept-charset](.././http/~/OutgoingHttpHeaders#property_accept-charset)
+-   [accept-encoding](.././http/~/OutgoingHttpHeaders#property_accept-encoding)
+-   [accept-language](.././http/~/OutgoingHttpHeaders#property_accept-language)
+-   [accept-ranges](.././http/~/OutgoingHttpHeaders#property_accept-ranges)
+-   [access-control-allow-credentials](.././http/~/OutgoingHttpHeaders#property_access-control-allow-credentials)
+-   [access-control-allow-headers](.././http/~/OutgoingHttpHeaders#property_access-control-allow-headers)
+-   [access-control-allow-methods](.././http/~/OutgoingHttpHeaders#property_access-control-allow-methods)
+-   [access-control-allow-origin](.././http/~/OutgoingHttpHeaders#property_access-control-allow-origin)
+-   [access-control-expose-headers](.././http/~/OutgoingHttpHeaders#property_access-control-expose-headers)
+-   [access-control-max-age](.././http/~/OutgoingHttpHeaders#property_access-control-max-age)
+-   [access-control-request-headers](.././http/~/OutgoingHttpHeaders#property_access-control-request-headers)
+-   [access-control-request-method](.././http/~/OutgoingHttpHeaders#property_access-control-request-method)
+-   [age](.././http/~/OutgoingHttpHeaders#property_age)
+-   [allow](.././http/~/OutgoingHttpHeaders#property_allow)
+-   [authorization](.././http/~/OutgoingHttpHeaders#property_authorization)
+-   [cache-control](.././http/~/OutgoingHttpHeaders#property_cache-control)
+-   [cdn-cache-control](.././http/~/OutgoingHttpHeaders#property_cdn-cache-control)
+-   [connection](.././http/~/OutgoingHttpHeaders#property_connection)
+-   [content-disposition](.././http/~/OutgoingHttpHeaders#property_content-disposition)
+-   [content-encoding](.././http/~/OutgoingHttpHeaders#property_content-encoding)
+-   [content-language](.././http/~/OutgoingHttpHeaders#property_content-language)
+-   [content-length](.././http/~/OutgoingHttpHeaders#property_content-length)
+-   [content-location](.././http/~/OutgoingHttpHeaders#property_content-location)
+-   [content-range](.././http/~/OutgoingHttpHeaders#property_content-range)
+-   [content-security-policy](.././http/~/OutgoingHttpHeaders#property_content-security-policy)
+-   [content-security-policy-report-only](.././http/~/OutgoingHttpHeaders#property_content-security-policy-report-only)
+-   [content-type](.././http/~/OutgoingHttpHeaders#property_content-type)
+-   [cookie](.././http/~/OutgoingHttpHeaders#property_cookie)
+-   [date](.././http/~/OutgoingHttpHeaders#property_date)
+-   [dav](.././http/~/OutgoingHttpHeaders#property_dav)
+-   [dnt](.././http/~/OutgoingHttpHeaders#property_dnt)
+-   [etag](.././http/~/OutgoingHttpHeaders#property_etag)
+-   [expect](.././http/~/OutgoingHttpHeaders#property_expect)
+-   [expires](.././http/~/OutgoingHttpHeaders#property_expires)
+-   [forwarded](.././http/~/OutgoingHttpHeaders#property_forwarded)
+-   [from](.././http/~/OutgoingHttpHeaders#property_from)
+-   [host](.././http/~/OutgoingHttpHeaders#property_host)
+-   [if-match](.././http/~/OutgoingHttpHeaders#property_if-match)
+-   [if-modified-since](.././http/~/OutgoingHttpHeaders#property_if-modified-since)
+-   [if-none-match](.././http/~/OutgoingHttpHeaders#property_if-none-match)
+-   [if-range](.././http/~/OutgoingHttpHeaders#property_if-range)
+-   [if-unmodified-since](.././http/~/OutgoingHttpHeaders#property_if-unmodified-since)
+-   [last-modified](.././http/~/OutgoingHttpHeaders#property_last-modified)
+-   [link](.././http/~/OutgoingHttpHeaders#property_link)
+-   [location](.././http/~/OutgoingHttpHeaders#property_location)
+-   [max-forwards](.././http/~/OutgoingHttpHeaders#property_max-forwards)
+-   [origin](.././http/~/OutgoingHttpHeaders#property_origin)
+-   [pragma](.././http/~/OutgoingHttpHeaders#property_pragma)
+-   [proxy-authenticate](.././http/~/OutgoingHttpHeaders#property_proxy-authenticate)
+-   [proxy-authorization](.././http/~/OutgoingHttpHeaders#property_proxy-authorization)
+-   [public-key-pins](.././http/~/OutgoingHttpHeaders#property_public-key-pins)
+-   [public-key-pins-report-only](.././http/~/OutgoingHttpHeaders#property_public-key-pins-report-only)
+-   [range](.././http/~/OutgoingHttpHeaders#property_range)
+-   [referer](.././http/~/OutgoingHttpHeaders#property_referer)
+-   [referrer-policy](.././http/~/OutgoingHttpHeaders#property_referrer-policy)
+-   [refresh](.././http/~/OutgoingHttpHeaders#property_refresh)
+-   [retry-after](.././http/~/OutgoingHttpHeaders#property_retry-after)
+-   [sec-websocket-accept](.././http/~/OutgoingHttpHeaders#property_sec-websocket-accept)
+-   [sec-websocket-extensions](.././http/~/OutgoingHttpHeaders#property_sec-websocket-extensions)
+-   [sec-websocket-key](.././http/~/OutgoingHttpHeaders#property_sec-websocket-key)
+-   [sec-websocket-protocol](.././http/~/OutgoingHttpHeaders#property_sec-websocket-protocol)
+-   [sec-websocket-version](.././http/~/OutgoingHttpHeaders#property_sec-websocket-version)
+-   [server](.././http/~/OutgoingHttpHeaders#property_server)
+-   [set-cookie](.././http/~/OutgoingHttpHeaders#property_set-cookie)
+-   [strict-transport-security](.././http/~/OutgoingHttpHeaders#property_strict-transport-security)
+-   [te](.././http/~/OutgoingHttpHeaders#property_te)
+-   [trailer](.././http/~/OutgoingHttpHeaders#property_trailer)
+-   [transfer-encoding](.././http/~/OutgoingHttpHeaders#property_transfer-encoding)
+-   [upgrade](.././http/~/OutgoingHttpHeaders#property_upgrade)
+-   [upgrade-insecure-requests](.././http/~/OutgoingHttpHeaders#property_upgrade-insecure-requests)
+-   [user-agent](.././http/~/OutgoingHttpHeaders#property_user-agent)
+-   [vary](.././http/~/OutgoingHttpHeaders#property_vary)
+-   [via](.././http/~/OutgoingHttpHeaders#property_via)
+-   [warning](.././http/~/OutgoingHttpHeaders#property_warning)
+-   [www-authenticate](.././http/~/OutgoingHttpHeaders#property_www-authenticate)
+-   [x-content-type-options](.././http/~/OutgoingHttpHeaders#property_x-content-type-options)
+-   [x-dns-prefetch-control](.././http/~/OutgoingHttpHeaders#property_x-dns-prefetch-control)
+-   [x-frame-options](.././http/~/OutgoingHttpHeaders#property_x-frame-options)
+-   [x-xss-protection](.././http/~/OutgoingHttpHeaders#property_x-xss-protection)
 
 I
 
@@ -413,8 +408,8 @@ I
 
 No documentation available
 
-*   [allowHTTP1](.././http2/~/SecureServerOptions#property_allowhttp1)
-*   [origins](.././http2/~/SecureServerOptions#property_origins)
+-   [allowHTTP1](.././http2/~/SecureServerOptions#property_allowhttp1)
+-   [origins](.././http2/~/SecureServerOptions#property_origins)
 
 I
 
@@ -428,15 +423,15 @@ I
 
 No documentation available
 
-*   [addListener](.././http2/~/ServerHttp2Session#method_addlistener_0)
-*   [altsvc](.././http2/~/ServerHttp2Session#method_altsvc_0)
-*   [emit](.././http2/~/ServerHttp2Session#method_emit_0)
-*   [on](.././http2/~/ServerHttp2Session#method_on_0)
-*   [once](.././http2/~/ServerHttp2Session#method_once_0)
-*   [origin](.././http2/~/ServerHttp2Session#method_origin_0)
-*   [prependListener](.././http2/~/ServerHttp2Session#method_prependlistener_0)
-*   [prependOnceListener](.././http2/~/ServerHttp2Session#method_prependoncelistener_0)
-*   [server](.././http2/~/ServerHttp2Session#property_server)
+-   [addListener](.././http2/~/ServerHttp2Session#method_addlistener_0)
+-   [altsvc](.././http2/~/ServerHttp2Session#method_altsvc_0)
+-   [emit](.././http2/~/ServerHttp2Session#method_emit_0)
+-   [on](.././http2/~/ServerHttp2Session#method_on_0)
+-   [once](.././http2/~/ServerHttp2Session#method_once_0)
+-   [origin](.././http2/~/ServerHttp2Session#method_origin_0)
+-   [prependListener](.././http2/~/ServerHttp2Session#method_prependlistener_0)
+-   [prependOnceListener](.././http2/~/ServerHttp2Session#method_prependoncelistener_0)
+-   [server](.././http2/~/ServerHttp2Session#property_server)
 
 I
 
@@ -444,13 +439,13 @@ I
 
 No documentation available
 
-*   [additionalHeaders](.././http2/~/ServerHttp2Stream#method_additionalheaders_0)
-*   [headersSent](.././http2/~/ServerHttp2Stream#property_headerssent)
-*   [pushAllowed](.././http2/~/ServerHttp2Stream#property_pushallowed)
-*   [pushStream](.././http2/~/ServerHttp2Stream#method_pushstream_0)
-*   [respond](.././http2/~/ServerHttp2Stream#method_respond_0)
-*   [respondWithFD](.././http2/~/ServerHttp2Stream#method_respondwithfd_0)
-*   [respondWithFile](.././http2/~/ServerHttp2Stream#method_respondwithfile_0)
+-   [additionalHeaders](.././http2/~/ServerHttp2Stream#method_additionalheaders_0)
+-   [headersSent](.././http2/~/ServerHttp2Stream#property_headerssent)
+-   [pushAllowed](.././http2/~/ServerHttp2Stream#property_pushallowed)
+-   [pushStream](.././http2/~/ServerHttp2Stream#method_pushstream_0)
+-   [respond](.././http2/~/ServerHttp2Stream#method_respond_0)
+-   [respondWithFD](.././http2/~/ServerHttp2Stream#method_respondwithfd_0)
+-   [respondWithFile](.././http2/~/ServerHttp2Stream#method_respondwithfile_0)
 
 I
 
@@ -458,8 +453,8 @@ I
 
 No documentation available
 
-*   [streamResetBurst](.././http2/~/ServerOptions#property_streamresetburst)
-*   [streamResetRate](.././http2/~/ServerOptions#property_streamresetrate)
+-   [streamResetBurst](.././http2/~/ServerOptions#property_streamresetburst)
+-   [streamResetRate](.././http2/~/ServerOptions#property_streamresetrate)
 
 I
 
@@ -467,10 +462,10 @@ I
 
 No documentation available
 
-*   [Http1IncomingMessage](.././http2/~/ServerSessionOptions#property_http1incomingmessage)
-*   [Http1ServerResponse](.././http2/~/ServerSessionOptions#property_http1serverresponse)
-*   [Http2ServerRequest](.././http2/~/ServerSessionOptions#property_http2serverrequest)
-*   [Http2ServerResponse](.././http2/~/ServerSessionOptions#property_http2serverresponse)
+-   [Http1IncomingMessage](.././http2/~/ServerSessionOptions#property_http1incomingmessage)
+-   [Http1ServerResponse](.././http2/~/ServerSessionOptions#property_http1serverresponse)
+-   [Http2ServerRequest](.././http2/~/ServerSessionOptions#property_http2serverrequest)
+-   [Http2ServerResponse](.././http2/~/ServerSessionOptions#property_http2serverresponse)
 
 I
 
@@ -478,10 +473,10 @@ I
 
 No documentation available
 
-*   [length](.././http2/~/ServerStreamFileResponseOptions#property_length)
-*   [offset](.././http2/~/ServerStreamFileResponseOptions#property_offset)
-*   [statCheck](.././http2/~/ServerStreamFileResponseOptions#method_statcheck_0)
-*   [waitForTrailers](.././http2/~/ServerStreamFileResponseOptions#property_waitfortrailers)
+-   [length](.././http2/~/ServerStreamFileResponseOptions#property_length)
+-   [offset](.././http2/~/ServerStreamFileResponseOptions#property_offset)
+-   [statCheck](.././http2/~/ServerStreamFileResponseOptions#method_statcheck_0)
+-   [waitForTrailers](.././http2/~/ServerStreamFileResponseOptions#property_waitfortrailers)
 
 I
 
@@ -489,7 +484,7 @@ I
 
 No documentation available
 
-*   [onError](.././http2/~/ServerStreamFileResponseOptionsWithError#method_onerror_0)
+-   [onError](.././http2/~/ServerStreamFileResponseOptionsWithError#method_onerror_0)
 
 I
 
@@ -497,8 +492,8 @@ I
 
 No documentation available
 
-*   [endStream](.././http2/~/ServerStreamResponseOptions#property_endstream)
-*   [waitForTrailers](.././http2/~/ServerStreamResponseOptions#property_waitfortrailers)
+-   [endStream](.././http2/~/ServerStreamResponseOptions#property_endstream)
+-   [waitForTrailers](.././http2/~/ServerStreamResponseOptions#property_waitfortrailers)
 
 I
 
@@ -506,17 +501,17 @@ I
 
 No documentation available
 
-*   [maxDeflateDynamicTableSize](.././http2/~/SessionOptions#property_maxdeflatedynamictablesize)
-*   [maxHeaderListPairs](.././http2/~/SessionOptions#property_maxheaderlistpairs)
-*   [maxOutstandingPings](.././http2/~/SessionOptions#property_maxoutstandingpings)
-*   [maxSendHeaderBlockLength](.././http2/~/SessionOptions#property_maxsendheaderblocklength)
-*   [maxSessionMemory](.././http2/~/SessionOptions#property_maxsessionmemory)
-*   [paddingStrategy](.././http2/~/SessionOptions#property_paddingstrategy)
-*   [peerMaxConcurrentStreams](.././http2/~/SessionOptions#property_peermaxconcurrentstreams)
-*   [remoteCustomSettings](.././http2/~/SessionOptions#property_remotecustomsettings)
-*   [selectPadding](.././http2/~/SessionOptions#method_selectpadding_0)
-*   [settings](.././http2/~/SessionOptions#property_settings)
-*   [unknownProtocolTimeout](.././http2/~/SessionOptions#property_unknownprotocoltimeout)
+-   [maxDeflateDynamicTableSize](.././http2/~/SessionOptions#property_maxdeflatedynamictablesize)
+-   [maxHeaderListPairs](.././http2/~/SessionOptions#property_maxheaderlistpairs)
+-   [maxOutstandingPings](.././http2/~/SessionOptions#property_maxoutstandingpings)
+-   [maxSendHeaderBlockLength](.././http2/~/SessionOptions#property_maxsendheaderblocklength)
+-   [maxSessionMemory](.././http2/~/SessionOptions#property_maxsessionmemory)
+-   [paddingStrategy](.././http2/~/SessionOptions#property_paddingstrategy)
+-   [peerMaxConcurrentStreams](.././http2/~/SessionOptions#property_peermaxconcurrentstreams)
+-   [remoteCustomSettings](.././http2/~/SessionOptions#property_remotecustomsettings)
+-   [selectPadding](.././http2/~/SessionOptions#method_selectpadding_0)
+-   [settings](.././http2/~/SessionOptions#property_settings)
+-   [unknownProtocolTimeout](.././http2/~/SessionOptions#property_unknownprotocoltimeout)
 
 I
 
@@ -524,15 +519,15 @@ I
 
 No documentation available
 
-*   [deflateDynamicTableSize](.././http2/~/SessionState#property_deflatedynamictablesize)
-*   [effectiveLocalWindowSize](.././http2/~/SessionState#property_effectivelocalwindowsize)
-*   [effectiveRecvDataLength](.././http2/~/SessionState#property_effectiverecvdatalength)
-*   [inflateDynamicTableSize](.././http2/~/SessionState#property_inflatedynamictablesize)
-*   [lastProcStreamID](.././http2/~/SessionState#property_lastprocstreamid)
-*   [localWindowSize](.././http2/~/SessionState#property_localwindowsize)
-*   [nextStreamID](.././http2/~/SessionState#property_nextstreamid)
-*   [outboundQueueSize](.././http2/~/SessionState#property_outboundqueuesize)
-*   [remoteWindowSize](.././http2/~/SessionState#property_remotewindowsize)
+-   [deflateDynamicTableSize](.././http2/~/SessionState#property_deflatedynamictablesize)
+-   [effectiveLocalWindowSize](.././http2/~/SessionState#property_effectivelocalwindowsize)
+-   [effectiveRecvDataLength](.././http2/~/SessionState#property_effectiverecvdatalength)
+-   [inflateDynamicTableSize](.././http2/~/SessionState#property_inflatedynamictablesize)
+-   [lastProcStreamID](.././http2/~/SessionState#property_lastprocstreamid)
+-   [localWindowSize](.././http2/~/SessionState#property_localwindowsize)
+-   [nextStreamID](.././http2/~/SessionState#property_nextstreamid)
+-   [outboundQueueSize](.././http2/~/SessionState#property_outboundqueuesize)
+-   [remoteWindowSize](.././http2/~/SessionState#property_remotewindowsize)
 
 I
 
@@ -540,13 +535,13 @@ I
 
 No documentation available
 
-*   [enableConnectProtocol](.././http2/~/Settings#property_enableconnectprotocol)
-*   [enablePush](.././http2/~/Settings#property_enablepush)
-*   [headerTableSize](.././http2/~/Settings#property_headertablesize)
-*   [initialWindowSize](.././http2/~/Settings#property_initialwindowsize)
-*   [maxConcurrentStreams](.././http2/~/Settings#property_maxconcurrentstreams)
-*   [maxFrameSize](.././http2/~/Settings#property_maxframesize)
-*   [maxHeaderListSize](.././http2/~/Settings#property_maxheaderlistsize)
+-   [enableConnectProtocol](.././http2/~/Settings#property_enableconnectprotocol)
+-   [enablePush](.././http2/~/Settings#property_enablepush)
+-   [headerTableSize](.././http2/~/Settings#property_headertablesize)
+-   [initialWindowSize](.././http2/~/Settings#property_initialwindowsize)
+-   [maxConcurrentStreams](.././http2/~/Settings#property_maxconcurrentstreams)
+-   [maxFrameSize](.././http2/~/Settings#property_maxframesize)
+-   [maxHeaderListSize](.././http2/~/Settings#property_maxheaderlistsize)
 
 I
 
@@ -554,8 +549,8 @@ I
 
 No documentation available
 
-*   [length](.././http2/~/StatOptions#property_length)
-*   [offset](.././http2/~/StatOptions#property_offset)
+-   [length](.././http2/~/StatOptions#property_length)
+-   [offset](.././http2/~/StatOptions#property_offset)
 
 I
 
@@ -563,10 +558,10 @@ I
 
 No documentation available
 
-*   [exclusive](.././http2/~/StreamPriorityOptions#property_exclusive)
-*   [parent](.././http2/~/StreamPriorityOptions#property_parent)
-*   [silent](.././http2/~/StreamPriorityOptions#property_silent)
-*   [weight](.././http2/~/StreamPriorityOptions#property_weight)
+-   [exclusive](.././http2/~/StreamPriorityOptions#property_exclusive)
+-   [parent](.././http2/~/StreamPriorityOptions#property_parent)
+-   [silent](.././http2/~/StreamPriorityOptions#property_silent)
+-   [weight](.././http2/~/StreamPriorityOptions#property_weight)
 
 I
 
@@ -574,22 +569,18 @@ I
 
 No documentation available
 
-*   [localClose](.././http2/~/StreamState#property_localclose)
-*   [localWindowSize](.././http2/~/StreamState#property_localwindowsize)
-*   [remoteClose](.././http2/~/StreamState#property_remoteclose)
-*   [state](.././http2/~/StreamState#property_state)
-*   [sumDependencyWeight](.././http2/~/StreamState#property_sumdependencyweight)
-*   [weight](.././http2/~/StreamState#property_weight)
-
-### Namespaces [#](#Namespaces)
+-   [localClose](.././http2/~/StreamState#property_localclose)
+-   [localWindowSize](.././http2/~/StreamState#property_localwindowsize)
+-   [remoteClose](.././http2/~/StreamState#property_remoteclose)
+-   [state](.././http2/~/StreamState#property_state)
+-   [sumDependencyWeight](.././http2/~/StreamState#property_sumdependencyweight)
+-   [weight](.././http2/~/StreamState#property_weight)
 
 N
 
 [constants](.././http2/~/constants "constants")
 
 No documentation available
-
-### Variables [#](#Variables)
 
 v
 

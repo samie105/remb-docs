@@ -5,14 +5,12 @@ canonical_url: "https://orm.drizzle.team/docs/latest-releases/drizzle-orm-v0162"
 docset: "drizzle"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:10:18.941Z"
-content_hash: "747dc73c6d6fd918e946f19a78a415204c3f402ebc5f959c2196c6edfc2246eb"
+last_crawled_at: "2026-04-27T19:08:14.767Z"
+content_hash: "52aa4c6101a0cada973408b4fe2c740f4dc97ca86723de07761d747738972bc6"
 menu_path: ["Drizzle ORM - DrizzleORM v0.16.2 release"]
 section_path: []
-nav_prev: {"path": "drizzle/docs/latest-releases/drizzle-orm-v0110/index.md", "title": "Drizzle ORM - DrizzleORM v0.11.0 release"}
-nav_next: {"path": "drizzle/docs/latest-releases/drizzle-orm-v0272/index.md", "title": "Drizzle ORM - DrizzleORM v0.27.2 release"}
+content_language: "en"
 ---
-
 DrizzleORM v0.16.2 release
 
 Jan 21, 2023
@@ -25,7 +23,7 @@ Since last major update we’ve added numerous requested features 🚀
 
 You can now declare [PostgreSQL schemas](https://www.postgresql.org/docs/current/ddl-schemas.html) and tables to be created within this schema
 
-```
+```ts
 // src/schema.ts
 import { pgSchema } from "drizzle-orm-pg";
 
@@ -38,7 +36,7 @@ export const users = mySchema("users", {
 });
 ```
 
-```
+```sql
 CREATE SCHEMA "my_schema";
 
 CREATE TABLE IF NOT EXISTS "my_schema"."users" (
@@ -50,7 +48,7 @@ CREATE TABLE IF NOT EXISTS "my_schema"."users" (
 
 [drizzle-kit](https://driz.link/kit) will automatically generate all needed SQL migrations
 
-```
+```shell
 drizzle-kit generate:pg --schema=src/schema.ts --out=migrations/ 
 ```
 
@@ -58,7 +56,7 @@ drizzle-kit generate:pg --schema=src/schema.ts --out=migrations/
 
 You can now declare [MySQL databases/schemas](https://dev.mysql.com/doc/refman/8.0/en/create-database.html) and tables to be created within it
 
-```
+```ts
 // schema.ts
 import { mysqlSchema } from "drizzle-orm-mysql";
 
@@ -75,7 +73,7 @@ const users = mySchema("users", {
 
 which will automatically generate you SQL migration
 
-```
+```sql
 CREATE DATABASE `my_schema`;
 
 CREATE TABLE `my_schema`.`users` (
@@ -89,19 +87,19 @@ CREATE TABLE `my_schema`.`users` (
 
 You can now pull database schema from your existing PostgreSQL database within seconds with [drizzle-kit](https://driz.link/kit), this vanishes mostly any friction for you to switch from any existing orm or vanilla SQL. It supports:
 
-*   enums
-*   tables with all native and non-native columns
-*   indexes
-*   foreign keys, self references and cyclic fks
-*   schemas
+-   enums
+-   tables with all native and non-native columns
+-   indexes
+-   foreign keys, self references and cyclic fks
+-   schemas
 
-```
+```shell
 drizzle-kit introspect:pg --out=migrations/ --connectionString=postgresql://user:pass@host:port/db_name
 ```
 
 it will print you `schema.ts`
 
-```
+```ts
 export const myEnum = pgEnum("my_enum", ["one", "two", "three"]);
 export const mySchema = pgSchema("my_schema");
 
@@ -194,7 +192,7 @@ export const example = pgTable(
 
 We’ve added full support for [postgres.js](https://github.com/porsager/postgres), it is lightweight and it is fast 🚀
 
-```
+```ts
 // schema.ts
 import { pgTable, serial, text, varchar } from "drizzle-orm-pg";
 export const users = pgTable("users", {
@@ -220,7 +218,7 @@ Full PostgreSQL docs see [here](https://github.com/drizzle-team/drizzle-orm/tree
 
 We’ve added useful operators for you to create any needed non-native PostgreSQL or MySQL types
 
-```
+```ts
 // PostgreSQL
 const customText = customType<{ data: string }>({
   dataType() {

@@ -5,14 +5,12 @@ canonical_url: "https://orm.drizzle.team/docs/latest-releases/drizzle-orm-v0300"
 docset: "drizzle"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:13:05.869Z"
-content_hash: "66b92e5da760ff885c0ff64160714e8d9e9ba0f022417e0d327f6a768dcdacba"
+last_crawled_at: "2026-04-27T19:12:08.213Z"
+content_hash: "78495b4c1bc8bff5f7c45df16594796eb09b5df2c5d52c883d0c12d4a9759e3c"
 menu_path: ["Drizzle ORM - DrizzleORM v0.30.0 release"]
 section_path: []
-nav_prev: {"path": "drizzle/docs/latest-releases/drizzle-orm-v0295/index.md", "title": "Drizzle ORM - DrizzleORM v0.29.5 release"}
-nav_next: {"path": "drizzle/docs/latest-releases/drizzle-orm-v0301/index.md", "title": "Drizzle ORM - DrizzleORM v0.30.1 release"}
+content_language: "en"
 ---
-
 DrizzleORM v0.30.0 release
 
 Mar 7, 2024
@@ -25,14 +23,14 @@ The Postgres timestamp mapping has been changed to align all drivers with the sa
 
 We’ve made this change as a minor release, just as a warning, that:
 
-*   If you were using timestamps and were waiting for a specific response, the behavior will now be changed. When mapping to the driver, we will always use `.toISOString` for both timestamps with timezone and without timezone.
+-   If you were using timestamps and were waiting for a specific response, the behavior will now be changed. When mapping to the driver, we will always use `.toISOString` for both timestamps with timezone and without timezone.
     
-*   If you were using the `postgres.js` driver outside of Drizzle, all `postgres.js` clients passed to Drizzle will have mutated behavior for dates. All dates will be strings in the response.
+-   If you were using the `postgres.js` driver outside of Drizzle, all `postgres.js` clients passed to Drizzle will have mutated behavior for dates. All dates will be strings in the response.
     
 
 Parsers that were changed for `postgres.js`.
 
-```
+```ts
 const transparentParser = (val: any) => val;
 
 // Override postgres.js default date parsers: https://github.com/porsager/postgres/discussions/761
@@ -46,18 +44,18 @@ Ideally, as is the case with almost all other drivers, we should have the possib
 
 If we’ve overlooked this capability and it is already available with \`postgres.js“, please ping us in our Discord!
 
-A few more references for timestamps without and with timezones can be found in our [docs](drizzle/docs/column-types/pg/index.md#timestamp)
+A few more references for timestamps without and with timezones can be found in our [docs](https://orm.drizzle.team/docs/column-types/pg#timestamp)
 
-Check docs for getting started with `postgres.js` driver and Drizzle [here](drizzle/docs/get-started-postgresql/index.md#postgresjs)
+Check docs for getting started with `postgres.js` driver and Drizzle [here](https://orm.drizzle.team/docs/get-started-postgresql#postgresjs)
 
 ## Fixes
 
-*   timestamp with mode string is returned as Date object instead of string - ([#806](https://github.com/drizzle-team/drizzle-orm/issues/806))
-*   Dates are always dates ([#971](https://github.com/drizzle-team/drizzle-orm/issues/971))
-*   Inconsistencies when working with timestamps and corresponding datetime objects in javascript. ([#1176](https://github.com/drizzle-team/drizzle-orm/issues/1176))
-*   timestamp columns showing string type, however actually returning a Date object. ([#1185](https://github.com/drizzle-team/drizzle-orm/issues/1185))
-*   Wrong data type for postgres date colum ([#1407](https://github.com/drizzle-team/drizzle-orm/issues/1407))
-*   invalid timestamp conversion when using PostgreSQL with TimeZone set to UTC ([#1587](https://github.com/drizzle-team/drizzle-orm/issues/1587))
-*   Postgres insert into timestamp with time zone removes milliseconds ([#1061](https://github.com/drizzle-team/drizzle-orm/issues/1061))
-*   update timestamp field (using AWS Data API) ([#1164](https://github.com/drizzle-team/drizzle-orm/issues/1164))
-*   Invalid date from relational queries ([#895](https://github.com/drizzle-team/drizzle-orm/issues/895))
+-   timestamp with mode string is returned as Date object instead of string - ([#806](https://github.com/drizzle-team/drizzle-orm/issues/806))
+-   Dates are always dates ([#971](https://github.com/drizzle-team/drizzle-orm/issues/971))
+-   Inconsistencies when working with timestamps and corresponding datetime objects in javascript. ([#1176](https://github.com/drizzle-team/drizzle-orm/issues/1176))
+-   timestamp columns showing string type, however actually returning a Date object. ([#1185](https://github.com/drizzle-team/drizzle-orm/issues/1185))
+-   Wrong data type for postgres date colum ([#1407](https://github.com/drizzle-team/drizzle-orm/issues/1407))
+-   invalid timestamp conversion when using PostgreSQL with TimeZone set to UTC ([#1587](https://github.com/drizzle-team/drizzle-orm/issues/1587))
+-   Postgres insert into timestamp with time zone removes milliseconds ([#1061](https://github.com/drizzle-team/drizzle-orm/issues/1061))
+-   update timestamp field (using AWS Data API) ([#1164](https://github.com/drizzle-team/drizzle-orm/issues/1164))
+-   Invalid date from relational queries ([#895](https://github.com/drizzle-team/drizzle-orm/issues/895))

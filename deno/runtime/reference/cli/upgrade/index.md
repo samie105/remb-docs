@@ -5,23 +5,24 @@ canonical_url: "https://docs.deno.com/runtime/reference/cli/upgrade/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:57:14.757Z"
-content_hash: "30a285360520788cca9121bf45c931f61524fd64cfa5bd3ed7bc4e43ae0a5d40"
+last_crawled_at: "2026-04-27T17:34:59.240Z"
+content_hash: "bc05a12a8d681baaab60bedec314377619946e9b3a13e8f86f07617bed2eaf20"
 menu_path: ["deno upgrade"]
 section_path: []
+content_language: "en"
 ---
-On this page
+**On this page**
 
-*   [Examples](#examples)
-    *   [Upgrade to the latest version](#upgrade-to-the-latest-version)
-    *   [Upgrade to a specific version](#upgrade-to-a-specific-version)
-    *   [Check available upgrade without installing](#check-available-upgrade-without-installing)
-*   [\--quiet flag](#--quiet-flag)
-*   [Cached downloads](#cached-downloads)
-*   [Checksum verification](#checksum-verification)
-*   [Canary build](#canary-build)
-*   [Upgrade options](#upgrade-options)
-*   [Options](#options)
+-   [Examples](#examples)
+    -   [Upgrade to the latest version](#upgrade-to-the-latest-version)
+    -   [Upgrade to a specific version](#upgrade-to-a-specific-version)
+    -   [Check available upgrade without installing](#check-available-upgrade-without-installing)
+-   [\--quiet flag](#--quiet-flag)
+-   [Cached downloads](#cached-downloads)
+-   [Checksum verification](#checksum-verification)
+-   [Canary build](#canary-build)
+-   [Upgrade options](#upgrade-options)
+-   [Options](#options)
 
 ## Examples
 

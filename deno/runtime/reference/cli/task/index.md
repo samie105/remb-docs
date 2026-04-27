@@ -5,39 +5,40 @@ canonical_url: "https://docs.deno.com/runtime/reference/cli/task/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:56:08.226Z"
-content_hash: "1fb8906412849bbc74e793a8e4add6116eceb2106c34a2cad980d27465a3e21c"
+last_crawled_at: "2026-04-27T17:33:22.063Z"
+content_hash: "3c9c0e553479f3dac2476591e748c837d1c71980341011ea3e38c582d287ca70"
 menu_path: ["deno task"]
 section_path: []
+content_language: "en"
 ---
-On this page
+**On this page**
 
-*   [Description](#description)
-*   [Specifying the current working directory](#specifying-the-current-working-directory)
-*   [Getting directory deno task was run from](#getting-directory-deno-task-was-run-from)
-*   [Wildcard matching of tasks](#wildcard-matching-of-tasks)
-*   [Task dependencies](#task-dependencies)
-*   [Node and npx binary support](#node-and-npx-binary-support)
-*   [Workspace support](#workspace-support)
-*   [Syntax](#syntax)
-    *   [Boolean lists](#boolean-lists)
-    *   [Sequential lists](#sequential-lists)
-    *   [Async commands](#async-commands)
-    *   [Environment variables](#environment-variables)
-        *   [Setting environment variables for a command](#setting-environment-variables-for-a-command)
-    *   [Shell variables](#shell-variables)
-    *   [Exit status variable](#exit-status-variable)
-    *   [Pipelines](#pipelines)
-    *   [Command substitution](#command-substitution)
-    *   [Negate exit code](#negate-exit-code)
-    *   [Redirects](#redirects)
-    *   [Cross-platform shebang](#cross-platform-shebang)
-    *   [Glob expansion](#glob-expansion)
-    *   [Shell options](#shell-options)
-*   [Built-in commands](#built-in-commands)
-*   [package.json support](#package.json-support)
-*   [Options](#options)
-*   [Dependency management options](#dependency-management-options)
+-   [Description](#description)
+-   [Specifying the current working directory](#specifying-the-current-working-directory)
+-   [Getting directory deno task was run from](#getting-directory-deno-task-was-run-from)
+-   [Wildcard matching of tasks](#wildcard-matching-of-tasks)
+-   [Task dependencies](#task-dependencies)
+-   [Node and npx binary support](#node-and-npx-binary-support)
+-   [Workspace support](#workspace-support)
+-   [Syntax](#syntax)
+    -   [Boolean lists](#boolean-lists)
+    -   [Sequential lists](#sequential-lists)
+    -   [Async commands](#async-commands)
+    -   [Environment variables](#environment-variables)
+        -   [Setting environment variables for a command](#setting-environment-variables-for-a-command)
+    -   [Shell variables](#shell-variables)
+    -   [Exit status variable](#exit-status-variable)
+    -   [Pipelines](#pipelines)
+    -   [Command substitution](#command-substitution)
+    -   [Negate exit code](#negate-exit-code)
+    -   [Redirects](#redirects)
+    -   [Cross-platform shebang](#cross-platform-shebang)
+    -   [Glob expansion](#glob-expansion)
+    -   [Shell options](#shell-options)
+-   [Built-in commands](#built-in-commands)
+-   [package.json support](#package.json-support)
+-   [Options](#options)
+-   [Dependency management options](#dependency-management-options)
 
 ## Description
 
@@ -624,10 +625,10 @@ The supported glob characters are `*`, `?`, and `[`/`]`.
 
 `deno task` supports shell options in Deno 2.6.6 and above to control glob expansion and pipeline behavior. By default, `failglob` and `globstar` are enabled.
 
-*   **failglob** - When enabled, globs that don't match any files will cause an error. Disable with `shopt -u failglob`.
-*   **globstar** - When enabled, `**` matches zero or more directories. Disable with `shopt -u globstar`.
-*   **nullglob** - When enabled, globs that don't match any files expand to nothing instead of the literal glob pattern. Enable with `shopt -s nullglob`.
-*   **pipefail** - When enabled, the exit code of a pipeline is the exit code of the last command to exit with a non-zero status, or zero if all commands exit successfully. Enable with `set -o pipefail`.
+-   **failglob** - When enabled, globs that don't match any files will cause an error. Disable with `shopt -u failglob`.
+-   **globstar** - When enabled, `**` matches zero or more directories. Disable with `shopt -u globstar`.
+-   **nullglob** - When enabled, globs that don't match any files expand to nothing instead of the literal glob pattern. Enable with `shopt -s nullglob`.
+-   **pipefail** - When enabled, the exit code of a pipeline is the exit code of the last command to exit with a non-zero status, or zero if all commands exit successfully. Enable with `set -o pipefail`.
 
 Examples:
 
@@ -656,21 +657,21 @@ Shell options do not propagate to `deno task` subprocesses. Each `deno task` inv
 
 `deno task` ships with several built-in commands that work the same out of the box on Windows, Mac, and Linux.
 
-*   [`cp`](https://man7.org/linux/man-pages/man1/cp.1.html) - Copies files.
-*   [`mv`](https://man7.org/linux/man-pages/man1/mv.1.html) - Moves files.
-*   [`rm`](https://man7.org/linux/man-pages/man1/rm.1.html) - Remove files or directories.
-    *   Ex: `rm -rf [FILE]...` - Commonly used to recursively delete files or directories.
-*   [`mkdir`](https://man7.org/linux/man-pages/man1/mkdir.1.html) - Makes directories.
-    *   Ex. `mkdir -p DIRECTORY...` - Commonly used to make a directory and all its parents with no error if it exists.
-*   [`pwd`](https://man7.org/linux/man-pages/man1/pwd.1.html) - Prints the name of the current/working directory.
-*   [`sleep`](https://man7.org/linux/man-pages/man1/sleep.1.html) - Delays for a specified amount of time.
-    *   Ex. `sleep 1` to sleep for 1 second, `sleep 0.5` to sleep for half a second, or `sleep 1m` to sleep a minute
-*   [`echo`](https://man7.org/linux/man-pages/man1/echo.1.html) - Displays a line of text.
-*   [`cat`](https://man7.org/linux/man-pages/man1/cat.1.html) - Concatenates files and outputs them on stdout. When no arguments are provided it reads and outputs stdin.
-*   [`exit`](https://man7.org/linux/man-pages/man1/exit.1p.html) - Causes the shell to exit.
-*   [`head`](https://man7.org/linux/man-pages/man1/head.1.html) - Output the first part of a file.
-*   [`unset`](https://man7.org/linux/man-pages/man1/unset.1p.html) - Unsets environment variables.
-*   [`xargs`](https://man7.org/linux/man-pages/man1/xargs.1p.html) - Builds arguments from stdin and executes a command.
+-   [`cp`](https://man7.org/linux/man-pages/man1/cp.1.html) - Copies files.
+-   [`mv`](https://man7.org/linux/man-pages/man1/mv.1.html) - Moves files.
+-   [`rm`](https://man7.org/linux/man-pages/man1/rm.1.html) - Remove files or directories.
+    -   Ex: `rm -rf [FILE]...` - Commonly used to recursively delete files or directories.
+-   [`mkdir`](https://man7.org/linux/man-pages/man1/mkdir.1.html) - Makes directories.
+    -   Ex. `mkdir -p DIRECTORY...` - Commonly used to make a directory and all its parents with no error if it exists.
+-   [`pwd`](https://man7.org/linux/man-pages/man1/pwd.1.html) - Prints the name of the current/working directory.
+-   [`sleep`](https://man7.org/linux/man-pages/man1/sleep.1.html) - Delays for a specified amount of time.
+    -   Ex. `sleep 1` to sleep for 1 second, `sleep 0.5` to sleep for half a second, or `sleep 1m` to sleep a minute
+-   [`echo`](https://man7.org/linux/man-pages/man1/echo.1.html) - Displays a line of text.
+-   [`cat`](https://man7.org/linux/man-pages/man1/cat.1.html) - Concatenates files and outputs them on stdout. When no arguments are provided it reads and outputs stdin.
+-   [`exit`](https://man7.org/linux/man-pages/man1/exit.1p.html) - Causes the shell to exit.
+-   [`head`](https://man7.org/linux/man-pages/man1/head.1.html) - Output the first part of a file.
+-   [`unset`](https://man7.org/linux/man-pages/man1/unset.1p.html) - Unsets environment variables.
+-   [`xargs`](https://man7.org/linux/man-pages/man1/xargs.1p.html) - Builds arguments from stdin and executes a command.
 
 If you find a useful flag missing on a command or have any suggestions for additional commands that should be supported out of the box, then please [open an issue](https://github.com/denoland/deno_task_shell/issues) on the [deno\_task\_shell](https://github.com/denoland/deno_task_shell/) repo.
 

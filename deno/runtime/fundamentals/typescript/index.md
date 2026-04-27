@@ -5,23 +5,24 @@ canonical_url: "https://docs.deno.com/runtime/fundamentals/typescript/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:48:28.738Z"
-content_hash: "cc46829e47eb52d2afeb5678b137331410c1f30aaafe34c5e828feaa0ad907bb"
+last_crawled_at: "2026-04-27T17:22:37.503Z"
+content_hash: "fa53c3667c360b45cc16b3efb8882aeb6f510aa8026ef7185f4b5ce60dbc1b34"
 menu_path: ["TypeScript support"]
 section_path: []
+content_language: "en"
 ---
-On this page
+**On this page**
 
-*   [Type Checking](#type-checking)
-*   [Using with JavaScript](#using-with-javascript)
-*   [Providing declaration files](#providing-declaration-files)
-    *   [Providing types in the source](#providing-types-in-the-source)
-    *   [Providing types in the importer](#providing-types-in-the-importer)
-    *   [Providing types for HTTP modules](#providing-types-for-http-modules)
-*   [Type checking for browsers and web workers](#type-checking-for-browsers-and-web-workers)
-*   [Augmenting global types](#augmenting-global-types)
-    *   [Using declare global to augment the global scope](#using-declare-global-to-augment-the-global-scope)
-    *   [Using .d.ts files to augment the global scope](#using-.d.ts-files-to-augment-the-global-scope)
+-   [Type Checking](#type-checking)
+-   [Using with JavaScript](#using-with-javascript)
+-   [Providing declaration files](#providing-declaration-files)
+    -   [Providing types in the source](#providing-types-in-the-source)
+    -   [Providing types in the importer](#providing-types-in-the-importer)
+    -   [Providing types for HTTP modules](#providing-types-for-http-modules)
+-   [Type checking for browsers and web workers](#type-checking-for-browsers-and-web-workers)
+-   [Augmenting global types](#augmenting-global-types)
+    -   [Using declare global to augment the global scope](#using-declare-global-to-augment-the-global-scope)
+    -   [Using .d.ts files to augment the global scope](#using-.d.ts-files-to-augment-the-global-scope)
 
 TypeScript is a first class language in Deno. You can run or import TypeScript without installing anything more than the Deno CLI. With its built-in TypeScript compiler, Deno will compile your TypeScript code to JavaScript with no extra config needed. Deno can also type check your TypeScript code, without requiring a separate type checking tool like `tsc`.
 
@@ -68,9 +69,9 @@ When Deno encounters a type error when using this flag, the process will exit be
 
 In order to avoid this, you will either need to:
 
-*   resolve the issue
-*   use the `// @ts-ignore` or `// @ts-expect-error` pragmas to ignore the error
-*   or skip type checking all together.
+-   resolve the issue
+-   use the `// @ts-ignore` or `// @ts-expect-error` pragmas to ignore the error
+-   or skip type checking all together.
 
 When testing your code, type checking is enabled by default. You can use the `--no-check` flag to skip type checking if preferred:
 

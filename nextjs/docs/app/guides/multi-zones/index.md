@@ -5,33 +5,34 @@ canonical_url: "https://nextjs.org/docs/app/guides/multi-zones"
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:15:31.680Z"
-content_hash: "6fc8b4607e524447c1cf8f8efc4ad91db9aa38bd7a53d60b23564b7da4d3fc46"
+last_crawled_at: "2026-04-27T18:14:35.465Z"
+content_hash: "dc0879a1c58960bb38e517fb5fbed8279bd5e7d83a0aa8582899c5636c386b4c"
 menu_path: ["How to build micro-frontends using multi-zones and Next.js"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/guides/multi-tenant/index.md", "title": "How to build multi-tenant apps in Next.js"}
-nav_next: {"path": "nextjs/docs/app/guides/open-telemetry/index.md", "title": "How to set up instrumentation with OpenTelemetry"}
+version: "latest"
+content_language: "en"
 ---
+[App Router](/docs/app)[Guides](/docs/app/guides)Multi-zones
 
 # How to build micro-frontends using multi-zones and Next.js
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
-Examples
+**Examples**
 
-*   [With Zones](https://github.com/vercel/next.js/tree/canary/examples/with-zones)
+-   [With Zones](https://github.com/vercel/next.js/tree/canary/examples/with-zones)
 
 Multi-Zones are an approach to micro-frontends that separate a large application on a domain into smaller Next.js applications that each serve a set of paths. This is useful when there are collections of pages unrelated to the other pages in the application. By moving those pages to a separate zone (i.e., a separate application), you can reduce the size of each application which improves build times and removes code that is only necessary for one of the zones. Since applications are decoupled, Multi-Zones also allows other applications on the domain to use their own choice of framework.
 
 For example, let's say you have the following set of pages that you would like to split up:
 
-*   `/blog/*` for all blog posts
-*   `/dashboard/*` for all pages when the user is logged-in to the dashboard
-*   `/*` for the rest of your website not covered by other zones
+-   `/blog/*` for all blog posts
+-   `/dashboard/*` for all pages when the user is logged-in to the dashboard
+-   `/*` for the rest of your website not covered by other zones
 
 With Multi-Zones support, you can create three applications that all are served on the same domain and look the same to the user, but you can develop and deploy each of the applications independently.
 
-![Three zones: A, B, C. Showing a hard navigation between routes from different zones, and soft navigations between routes within the same zone.](/_next/image?url=https%3A%2F%2Fh8DxKfmAPhn8O0p3.public.blob.vercel-storage.com%2Fdocs%2Flight%2Fmulti-zones.png&w=3840&q=75)![Three zones: A, B, C. Showing a hard navigation between routes from different zones, and soft navigations between routes within the same zone.](/_next/image?url=https%3A%2F%2Fh8DxKfmAPhn8O0p3.public.blob.vercel-storage.com%2Fdocs%2Fdark%2Fmulti-zones.png&w=3840&q=75)
+![Three zones: A, B, C. Showing a hard navigation between routes from different zones, and soft navigations between routes within the same zone.](https://h8DxKfmAPhn8O0p3.public.blob.vercel-storage.com/docs/light/multi-zones.png)
 
 Navigating between pages in the same zone will perform soft navigations, a navigation that does not require reloading the page. For example, in this diagram, navigating from `/` to `/products` will be a soft navigation.
 
@@ -149,20 +150,4 @@ const nextConfig = {
 
 See [`serverActions.allowedOrigins`](/docs/app/api-reference/config/next-config-js/serverActions#allowedorigins) for more information.
 
-[Previous
-
-Multi-tenant
-
-](/docs/app/guides/multi-tenant)
-
-[Next
-
-OpenTelemetry
-
-](/docs/app/guides/open-telemetry)
-
 Was this helpful?
-
-supported.
-
-Send

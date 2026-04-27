@@ -5,49 +5,56 @@ canonical_url: "https://tailwindcss.com/docs/mask-origin"
 docset: "tailwind"
 kind: "framework"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:05:55.302Z"
-content_hash: "81f2056ae12a0020f7640e9522fb903511e2b9cd2e0ca52d92e2b5de85132bdf"
+last_crawled_at: "2026-04-27T20:23:24.272Z"
+content_hash: "dac8040f0668233608a53bd3ea8d8330419b6e9f455155bc5e3c5be1c55d2033"
 menu_path: ["mask-origin"]
 section_path: []
-nav_prev: {"path": "tailwind/docs/mask-mode/index.md", "title": "mask-mode"}
-nav_next: {"path": "tailwind/docs/mask-position/index.md", "title": "mask-position"}
+content_language: "en"
 ---
+[](/)
+
+[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
+
+1.  Effects
+2.  mask-origin
+
+Effects
 
 # mask-origin
 
 Utilities for controlling how an element's mask image is positioned relative to borders, padding, and content.
 
-Class
-
-Styles
-
-`mask-origin-border`
-
+| Class | Styles |
+| --- | --- |
+| `mask-origin-border` | 
 `mask-origin: border-box;`
 
-`mask-origin-padding`
+ |
+| `mask-origin-padding` | 
 
 `mask-origin: padding-box;`
 
-`mask-origin-content`
+ |
+| `mask-origin-content` | 
 
 `mask-origin: content-box;`
 
-`mask-origin-fill`
+ |
+| `mask-origin-fill` | 
 
 `mask-origin: fill-box;`
 
-`mask-origin-stroke`
+ |
+| `mask-origin-stroke` | 
 
 `mask-origin: stroke-box;`
 
-`mask-origin-view`
+ |
+| `mask-origin-view` | 
 
 `mask-origin: view-box;`
 
-## [Examples](#examples)
-
-### [Basic example](#basic-example)
+ |
 
 Use utilities like `mask-origin-border`, `mask-origin-padding`, and `mask-origin-content` to control where an element's mask is rendered:
 
@@ -61,8 +68,6 @@ mask-origin-content
 <div class="mask-origin-border border-3 p-1.5 mask-[url(/img/circle.png)] bg-[url(/img/mountains.jpg)] ..."></div><div class="mask-origin-padding border-3 p-1.5 mask-[url(/img/circle.png)] bg-[url(/img/mountains.jpg)] ..."></div><div class="mask-origin-content border-3 p-1.5 mask-[url(/img/circle.png)] bg-[url(/img/mountains.jpg)] ..."></div>
 ```
 
-### [Responsive design](#responsive-design)
-
 Prefix a `mask-origin` utility with a breakpoint variant like `md:` to only apply the utility at medium screen sizes and above:
 
 ```
@@ -73,19 +78,23 @@ Learn more about using variants in the [variants documentation](/docs/hover-focu
 
 ### On this page
 
-*   [Quick reference](#quick-reference)
-*   [Examples](#examples)
-    *   [Basic example](#basic-example)
-    *   [Responsive design](#responsive-design)
+-   [Quick reference](#quick-reference)
+-   [Examples](#examples)
+    -   [Basic example](#basic-example)
+    -   [Responsive design](#responsive-design)
 
-![Build UIs that don’t suck — 5-day mini-course](/_next/static/media/course-promo.d3d6bc78.jpg)
+[
 
-5-day mini-course
+![Refactoring UI](/_next/static/media/book-promo.3012c0f6.png)
 
-Build UIs that don’t suck.
+From the creators of Tailwind CSS
 
-Short, tactical video lessons from the creator of Tailwind CSS, delivered directly to your inbox every day for a week.
+Make your ideas look awesome, without relying on a designer.
 
-[Get the free course](/build-uis-that-dont-suck)
+> “This is the survival kit I wish I had when I started building apps.”
+> 
+> Derrick Reimer, SavvyCal
+
+](https://www.refactoringui.com/?ref=sidebar)
 
 Copyright © 2026 Tailwind Labs Inc.·[Trademark Policy](/brand)

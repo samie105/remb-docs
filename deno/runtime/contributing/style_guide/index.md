@@ -5,38 +5,39 @@ canonical_url: "https://docs.deno.com/runtime/contributing/style_guide/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:45:58.036Z"
-content_hash: "efbad8bfd6c6915d9653aaef1a9b2a39176bd0f9123888ddb2ead172aa1a9a14"
+last_crawled_at: "2026-04-27T17:19:14.995Z"
+content_hash: "ed6bf08cbb716c70ae2c452be0e27efce63415c90e7bb81bfce6230639e52640"
 menu_path: ["Deno Style Guide"]
 section_path: []
+content_language: "en"
 ---
-On this page
+**On this page**
 
-*   [Copyright Headers](#copyright-headers)
-*   [Use underscores, not dashes in filenames](#use-underscores%2C-not-dashes-in-filenames)
-*   [Add tests for new features](#add-tests-for-new-features)
-*   [TODO Comments](#todo-comments)
-*   [Meta-programming is discouraged. Including the use of Proxy](#meta-programming-is-discouraged.-including-the-use-of-proxy)
-*   [Inclusive code](#inclusive-code)
-*   [Rust](#rust)
-*   [TypeScript](#typescript)
-    *   [Use TypeScript instead of JavaScript](#use-typescript-instead-of-javascript)
-    *   [Do not use the filename index.ts/index.js](#do-not-use-the-filename-index.ts%2Findex.js)
-    *   [Exported functions: max 2 args, put the rest into an options object](#exported-functions%3A-max-2-args%2C-put-the-rest-into-an-options-object)
-    *   [Export all interfaces that are used as parameters to an exported member](#export-all-interfaces-that-are-used-as-parameters-to-an-exported-member)
-    *   [Minimize dependencies; do not make circular imports](#minimize-dependencies%3B-do-not-make-circular-imports)
-    *   [If a filename starts with an underscore: \_foo.ts, do not link to it](#if-a-filename-starts-with-an-underscore%3A-_foo.ts%2C-do-not-link-to-it)
-    *   [Use JSDoc for exported symbols](#use-jsdoc-for-exported-symbols)
-    *   [Resolve linting problems using directives](#resolve-linting-problems-using-directives)
-    *   [Each module should come with a test module](#each-module-should-come-with-a-test-module)
-    *   [Unit Tests should be explicit](#unit-tests-should-be-explicit)
-    *   [Top-level functions should not use arrow syntax](#top-level-functions-should-not-use-arrow-syntax)
-    *   [Error Messages](#error-messages)
-*   [std](#std)
-    *   [Do not depend on external code.](#do-not-depend-on-external-code.)
-    *   [Document and maintain browser compatibility.](#document-and-maintain-browser-compatibility.)
-    *   [Prefer # over private keyword](#prefer-%23-over-private-keyword)
-    *   [Naming convention](#naming-convention)
+-   [Copyright Headers](#copyright-headers)
+-   [Use underscores, not dashes in filenames](#use-underscores%2C-not-dashes-in-filenames)
+-   [Add tests for new features](#add-tests-for-new-features)
+-   [TODO Comments](#todo-comments)
+-   [Meta-programming is discouraged. Including the use of Proxy](#meta-programming-is-discouraged.-including-the-use-of-proxy)
+-   [Inclusive code](#inclusive-code)
+-   [Rust](#rust)
+-   [TypeScript](#typescript)
+    -   [Use TypeScript instead of JavaScript](#use-typescript-instead-of-javascript)
+    -   [Do not use the filename index.ts/index.js](#do-not-use-the-filename-index.ts%2Findex.js)
+    -   [Exported functions: max 2 args, put the rest into an options object](#exported-functions%3A-max-2-args%2C-put-the-rest-into-an-options-object)
+    -   [Export all interfaces that are used as parameters to an exported member](#export-all-interfaces-that-are-used-as-parameters-to-an-exported-member)
+    -   [Minimize dependencies; do not make circular imports](#minimize-dependencies%3B-do-not-make-circular-imports)
+    -   [If a filename starts with an underscore: \_foo.ts, do not link to it](#if-a-filename-starts-with-an-underscore%3A-_foo.ts%2C-do-not-link-to-it)
+    -   [Use JSDoc for exported symbols](#use-jsdoc-for-exported-symbols)
+    -   [Resolve linting problems using directives](#resolve-linting-problems-using-directives)
+    -   [Each module should come with a test module](#each-module-should-come-with-a-test-module)
+    -   [Unit Tests should be explicit](#unit-tests-should-be-explicit)
+    -   [Top-level functions should not use arrow syntax](#top-level-functions-should-not-use-arrow-syntax)
+    -   [Error Messages](#error-messages)
+-   [std](#std)
+    -   [Do not depend on external code.](#do-not-depend-on-external-code.)
+    -   [Document and maintain browser compatibility.](#document-and-maintain-browser-compatibility.)
+    -   [Prefer # over private keyword](#prefer-%23-over-private-keyword)
+    -   [Naming convention](#naming-convention)
 
 Note
 
@@ -110,8 +111,8 @@ When designing function interfaces, stick to the following rules.
     
     Other arguments can be objects, but they must be distinguishable from a 'plain' Object runtime, by having either:
     
-    *   a distinguishing prototype (e.g. `Array`, `Map`, `Date`, `class MyThing`).
-    *   a well-known symbol property (e.g. an iterable with `Symbol.iterator`).
+    -   a distinguishing prototype (e.g. `Array`, `Map`, `Date`, `class MyThing`).
+    -   a well-known symbol property (e.g. an iterable with `Symbol.iterator`).
     
     This allows the API to evolve in a backwards compatible way, even when the position of the options object changes.
     

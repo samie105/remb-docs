@@ -5,25 +5,24 @@ canonical_url: "https://nextjs.org/docs/app/api-reference/file-conventions/mdx-c
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:10:08.223Z"
-content_hash: "3161675f0505d8ec7c1ba05467d58c4b36fdde70c6aa0d2fe3cb818452a137f3"
+last_crawled_at: "2026-04-27T18:08:50.890Z"
+content_hash: "6d8c1600cff492821235d74d5ccca5037715982c5a7252fea44028e419600792"
 menu_path: ["mdx-components.js"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/api-reference/file-conventions/loading/index.md", "title": "loading.js"}
-nav_next: {"path": "nextjs/docs/app/api-reference/file-conventions/not-found/index.md", "title": "not-found.js"}
+version: "latest"
+content_language: "en"
 ---
+[API Reference](/docs/app/api-reference)[File-system conventions](/docs/app/api-reference/file-conventions)mdx-components.js
 
 # mdx-components.js
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 The `mdx-components.js|tsx` file is **required** to use [`@next/mdx` with App Router](/docs/app/guides/mdx) and will not work without it. Additionally, you can use it to [customize styles](/docs/app/guides/mdx#using-custom-styles-and-components).
 
 Use the file `mdx-components.tsx` (or `.js`) in the root of your project to define MDX Components. For example, at the same level as `pages` or `app`, or inside `src` if applicable.
 
 mdx-components.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -45,8 +44,6 @@ The file must export a single function named `useMDXComponents`. This function d
 
 mdx-components.tsx
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -61,13 +58,9 @@ export function useMDXComponents(): MDXComponents {
 
 ## Version History[](#version-history)
 
-Version
-
-Changes
-
-`v13.1.2`
-
-MDX Components added
+| Version | Changes |
+| --- | --- |
+| `v13.1.2` | MDX Components added |
 
 ## Learn more about MDX Components
 
@@ -79,20 +72,4 @@ Learn how to configure MDX and use it in your Next.js apps.
 
 ](/docs/app/guides/mdx)
 
-[Previous
-
-loading.js
-
-](/docs/app/api-reference/file-conventions/loading)
-
-[Next
-
-not-found.js
-
-](/docs/app/api-reference/file-conventions/not-found)
-
 Was this helpful?
-
-supported.
-
-Send

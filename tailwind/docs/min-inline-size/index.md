@@ -5,61 +5,15 @@ canonical_url: "https://tailwindcss.com/docs/min-inline-size"
 docset: "tailwind"
 kind: "framework"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:53:31.025Z"
-content_hash: "37aa028b8519c5180c2b8fbba57db7d629684b5597a293a62bf4a626cf82fa7f"
+last_crawled_at: "2026-04-27T20:05:22.026Z"
+content_hash: "db289090b0d9f0b9ebb8191b58ed8b6477ed65861783e3c322c653a4dfa7e54b"
 menu_path: ["min-inline-size"]
 section_path: []
-nav_prev: {"path": "tailwind/docs/inline-size/index.md", "title": "inline-size"}
-nav_next: {"path": "tailwind/docs/max-inline-size/index.md", "title": "max-inline-size"}
+content_language: "en"
 ---
-
 Sizing
 
 Utilities for setting the minimum inline size of an element.
-
-Class
-
-Styles
-
-`min-inline-<number>`
-
-`min-inline-size: calc(var(--spacing) * <number>);`
-
-`min-inline-<fraction>`
-
-`min-inline-size: calc(<fraction> * 100%);`
-
-`min-inline-3xs`
-
-`min-inline-size: var(--container-3xs); /* 16rem (256px) */`
-
-`min-inline-2xs`
-
-`min-inline-size: var(--container-2xs); /* 18rem (288px) */`
-
-`min-inline-xs`
-
-`min-inline-size: var(--container-xs); /* 20rem (320px) */`
-
-`min-inline-sm`
-
-`min-inline-size: var(--container-sm); /* 24rem (384px) */`
-
-`min-inline-md`
-
-`min-inline-size: var(--container-md); /* 28rem (448px) */`
-
-`min-inline-lg`
-
-`min-inline-size: var(--container-lg); /* 32rem (512px) */`
-
-`min-inline-xl`
-
-`min-inline-size: var(--container-xl); /* 36rem (576px) */`
-
-`min-inline-2xl`
-
-`min-inline-size: var(--container-2xl); /* 42rem (672px) */`
 
 ## [Examples](#examples)
 
@@ -139,7 +93,7 @@ Prefix a `min-inline-size` utility with a breakpoint variant like `md:` to only 
 <div class="inline-24 min-inline-full md:min-inline-0 ...">  <!-- ... --></div>
 ```
 
-Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).
+Learn more about using variants in the [variants documentation](https://tailwindcss.com/docs/hover-focus-and-other-states).
 
 ## [Customizing your theme](#customizing-your-theme)
 
@@ -149,4 +103,4 @@ The `min-inline-<number>` utilities are driven by the `--spacing` theme variable
 @theme {  --spacing: 1px; }
 ```
 
-Learn more about customizing the spacing scale in the [theme variable documentation](tailwind/docs/theme/index.md).
+Learn more about customizing the spacing scale in the [theme variable documentation](https://tailwindcss.com/docs/theme).

@@ -5,17 +5,19 @@ canonical_url: "https://nextjs.org/docs/app/guides/migrating/from-create-react-a
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:15:21.908Z"
-content_hash: "0a4f515d4940e31f327fec40300d8034c4f4db4c0e1e09f3aae4625c0b63c2ba"
+last_crawled_at: "2026-04-27T18:14:26.055Z"
+content_hash: "cd9f34034066348509c83d7cd88ea3c396a9b5870f5c228da150faa372f5efa4"
 menu_path: ["How to migrate from Create React App to Next.js"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/guides/migrating/app-router-migration/index.md", "title": "How to migrate from Pages to the App Router"}
-nav_next: {"path": "nextjs/docs/app/guides/migrating/from-vite/index.md", "title": "How to migrate from Vite to Next.js"}
+version: "latest"
+tab_variants: ["pnpm","npm","yarn","bun","pnpm","npm","yarn","bun"]
+content_language: "en"
 ---
+[Guides](/docs/app/guides)[Migrating](/docs/app/guides/migrating)Create React App
 
 # How to migrate from Create React App to Next.js
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 This guide will help you migrate an existing Create React App (CRA) site to Next.js.
 
@@ -68,7 +70,21 @@ Our goal is to get a working Next.js application as quickly as possible so that 
 
 Install Next.js in your existing project:
 
-pnpmnpmyarnbun
+#### pnpm
+
+pnpm
+
+#### npm
+
+npm
+
+#### yarn
+
+yarn
+
+#### bun
+
+bun
 
 Terminal
 
@@ -106,8 +122,6 @@ The closest equivalent of the root layout file in a CRA application is `public/i
 
 app/layout.tsx
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -123,8 +137,6 @@ export default function RootLayout({
 Now copy the content of your old `index.html` into this `<RootLayout>` component. Replace `body div#root` (and `body noscript`) with `<div id="root">{children}</div>`.
 
 app/layout.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -159,8 +171,6 @@ Next.js automatically includes the `<meta charset="UTF-8" />` and `<meta name="v
 
 app/layout.tsx
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -188,8 +198,6 @@ Any [metadata files](/docs/app/getting-started/metadata-and-og-images#file-based
 
 app/layout.tsx
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -215,8 +223,6 @@ export default function RootLayout({
 Finally, Next.js can manage your last `<head>` tags with the [Metadata API](/docs/app/getting-started/metadata-and-og-images). Move your final metadata info into an exported [`metadata` object](/docs/app/api-reference/functions/generate-metadata#metadata-object):
 
 app/layout.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -252,8 +258,6 @@ Like CRA, Next.js supports [CSS Modules](/docs/app/getting-started/css#css-modul
 If you have a global CSS file, import it into your `app/layout.tsx`:
 
 app/layout.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -301,8 +305,6 @@ app
 
 app/\[\[...slug\]\]/page.tsx
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -325,8 +327,6 @@ Create a `client.tsx` (or `client.js`) in `app/[[...slug]]/`:
 
 app/\[\[...slug\]\]/client.tsx
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -341,14 +341,12 @@ export function ClientOnly() {
 }
 ```
 
-*   The `'use client'` directive makes this file a **Client Component**.
-*   The `dynamic` import with `ssr: false` disables server-side rendering for the `<App />` component, making it truly client-only (SPA).
+-   The `'use client'` directive makes this file a **Client Component**.
+-   The `dynamic` import with `ssr: false` disables server-side rendering for the `<App />` component, making it truly client-only (SPA).
 
 Now update your `page.tsx` (or `page.js`) to use your new component:
 
 app/\[\[...slug\]\]/page.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -438,7 +436,21 @@ next-env.d.ts
 
 Now you can run:
 
-pnpmnpmyarnbun
+#### pnpm
+
+pnpm
+
+#### npm
+
+npm
+
+#### yarn
+
+yarn
+
+#### bun
+
+bun
 
 Terminal
 
@@ -452,11 +464,11 @@ Open [http://localhost:3000](http://localhost:3000). You should see your applica
 
 You can now remove artifacts that are specific to Create React App:
 
-*   `public/index.html`
-*   `src/index.tsx`
-*   `src/react-app-env.d.ts`
-*   The `reportWebVitals` setup
-*   The `react-scripts` dependency (uninstall it from `package.json`)
+-   `public/index.html`
+-   `src/index.tsx`
+-   `src/react-app-env.d.ts`
+-   The `reportWebVitals` setup
+-   The `react-scripts` dependency (uninstall it from `package.json`)
 
 ## Additional Considerations[](#additional-considerations)
 
@@ -553,31 +565,15 @@ You can still provide a [custom webpack configuration](/docs/app/api-reference/c
 
 If everything worked, you now have a functioning Next.js application running as a single-page application. You aren’t yet leveraging Next.js features like server-side rendering or file-based routing, but you can now do so incrementally:
 
-*   **Migrate from React Router** to the [Next.js App Router](/docs/app) for:
-    *   Automatic code splitting
-    *   [Streaming server rendering](/docs/app/api-reference/file-conventions/loading)
-    *   [React Server Components](/docs/app/getting-started/server-and-client-components)
-*   **Optimize images** with the [`<Image>` component](/docs/app/api-reference/components/image)
-*   **Optimize fonts** with [`next/font`](/docs/app/api-reference/components/font)
-*   **Optimize third-party scripts** with the [`<Script>` component](/docs/app/guides/scripts)
-*   **Enable ESLint** with Next.js [recommended rules](/docs/app/api-reference/config/eslint#setup-eslint)
+-   **Migrate from React Router** to the [Next.js App Router](/docs/app) for:
+    -   Automatic code splitting
+    -   [Streaming server rendering](/docs/app/api-reference/file-conventions/loading)
+    -   [React Server Components](/docs/app/getting-started/server-and-client-components)
+-   **Optimize images** with the [`<Image>` component](/docs/app/api-reference/components/image)
+-   **Optimize fonts** with [`next/font`](/docs/app/api-reference/components/font)
+-   **Optimize third-party scripts** with the [`<Script>` component](/docs/app/guides/scripts)
+-   **Enable ESLint** with Next.js [recommended rules](/docs/app/api-reference/config/eslint#setup-eslint)
 
 > **Note**: Using a static export (`output: 'export'`) [does not currently support](https://github.com/vercel/next.js/issues/54393) the `useParams` hook or other server features. To use all Next.js features, remove `output: 'export'` from your `next.config.ts`.
 
-[Previous
-
-App Router
-
-](/docs/app/guides/migrating/app-router-migration)
-
-[Next
-
-Vite
-
-](/docs/app/guides/migrating/from-vite)
-
 Was this helpful?
-
-supported.
-
-Send

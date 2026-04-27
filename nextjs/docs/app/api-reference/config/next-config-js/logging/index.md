@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/app/api-reference/config/next-config-js/
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:07:54.137Z"
-content_hash: "20dfae063ad7b7200f82f53203eba1a8acf634fa3ce933624d9765bc3cc77919"
+last_crawled_at: "2026-04-27T18:06:42.901Z"
+content_hash: "8846b0590769be729457b1c9ebf12c00fddb213cdc2be7a990d6521a788a1cb3"
 menu_path: ["logging"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/api-reference/config/next-config-js/inlineCss/index.md", "title": "inlineCss"}
-nav_next: {"path": "nextjs/docs/app/api-reference/config/next-config-js/mdxRs/index.md", "title": "mdxRs"}
+version: "latest"
+content_language: "en"
 ---
+[Configuration](/docs/app/api-reference/config)[next.config.js](/docs/app/api-reference/config/next-config-js)logging
 
 # logging
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 ## Options[](#options)
 
@@ -118,25 +119,12 @@ module.exports = {
 
 The `browserToTerminal` option accepts the following values:
 
-Value
-
-Description
-
-`'warn'`
-
-Forward only warnings and errors, by default
-
-`'error'`
-
-Forward only errors
-
-`true`
-
-Forward all console output (log, info, warn, error)
-
-`false`
-
-Disable browser log forwarding
+| Value | Description |
+| --- | --- |
+| `'warn'` | Forward only warnings and errors, by default |
+| `'error'` | Forward only errors |
+| `true` | Forward all console output (log, info, warn, error) |
+| `false` | Disable browser log forwarding |
 
 next.config.js
 
@@ -193,44 +181,12 @@ module.exports = {
 
 ## Version History[](#version-history)
 
-Version
-
-Changes
-
-`v16.2.0`
-
-`browserToTerminal` added (moved from `experimental.browserDebugInfoInTerminal`)
-
-`v15.4.0`
-
-`experimental.browserDebugInfoInTerminal` introduced
-
-`v15.2.0`
-
-`incomingRequests` added
-
-`v15.0.0`
-
-`logging: false` option added, `fetches.hmrRefreshes` added for App Router
-
-`v14.0.0`
-
-`logging.fetches` moved to stable for App Router
-
-[Previous
-
-inlineCss
-
-](/docs/app/api-reference/config/next-config-js/inlineCss)
-
-[Next
-
-mdxRs
-
-](/docs/app/api-reference/config/next-config-js/mdxRs)
+| Version | Changes |
+| --- | --- |
+| `v16.2.0` | `browserToTerminal` added (moved from `experimental.browserDebugInfoInTerminal`) |
+| `v15.4.0` | `experimental.browserDebugInfoInTerminal` introduced |
+| `v15.2.0` | `incomingRequests` added |
+| `v15.0.0` | `logging: false` option added, `fetches.hmrRefreshes` added for App Router |
+| `v14.0.0` | `logging.fetches` moved to stable for App Router |
 
 Was this helpful?
-
-supported.
-
-Send

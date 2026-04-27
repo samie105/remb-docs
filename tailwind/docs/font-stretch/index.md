@@ -5,73 +5,86 @@ canonical_url: "https://tailwindcss.com/docs/font-stretch"
 docset: "tailwind"
 kind: "framework"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:55:25.475Z"
-content_hash: "a45db0006c8b5873d976c62005e0f063852c0aeafde8e466aa47e3860642e7af"
+last_crawled_at: "2026-04-27T20:08:15.455Z"
+content_hash: "a34099a2a28e22893808cc5c19e9d2e4379c346f90a8b3d12d972d38552a445a"
 menu_path: ["font-stretch"]
 section_path: []
-nav_prev: {"path": "tailwind/docs/font-weight/index.md", "title": "font-weight"}
-nav_next: {"path": "tailwind/docs/font-variant-numeric/index.md", "title": "font-variant-numeric"}
+content_language: "en"
 ---
+[](/)
+
+[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
+
+1.  Typography
+2.  font-stretch
+
+Typography
 
 # font-stretch
 
 Utilities for selecting the width of a font face.
 
-Class
-
-Styles
-
-`font-stretch-ultra-condensed`
-
+| Class | Styles |
+| --- | --- |
+| `font-stretch-ultra-condensed` | 
 `font-stretch: ultra-condensed; /* 50% */`
 
-`font-stretch-extra-condensed`
+ |
+| `font-stretch-extra-condensed` | 
 
 `font-stretch: extra-condensed; /* 62.5% */`
 
-`font-stretch-condensed`
+ |
+| `font-stretch-condensed` | 
 
 `font-stretch: condensed; /* 75% */`
 
-`font-stretch-semi-condensed`
+ |
+| `font-stretch-semi-condensed` | 
 
 `font-stretch: semi-condensed; /* 87.5% */`
 
-`font-stretch-normal`
+ |
+| `font-stretch-normal` | 
 
 `font-stretch: normal; /* 100% */`
 
-`font-stretch-semi-expanded`
+ |
+| `font-stretch-semi-expanded` | 
 
 `font-stretch: semi-expanded; /* 112.5% */`
 
-`font-stretch-expanded`
+ |
+| `font-stretch-expanded` | 
 
 `font-stretch: expanded; /* 125% */`
 
-`font-stretch-extra-expanded`
+ |
+| `font-stretch-extra-expanded` | 
 
 `font-stretch: extra-expanded; /* 150% */`
 
-`font-stretch-ultra-expanded`
+ |
+| `font-stretch-ultra-expanded` | 
 
 `font-stretch: ultra-expanded; /* 200% */`
 
-`font-stretch-<percentage>`
+ |
+| `font-stretch-<percentage>` | 
 
 `font-stretch: <percentage>;`
 
-`font-stretch-(<custom-property>)`
+ |
+| `font-stretch-(<custom-property>)` | 
 
 `font-stretch: var(<custom-property>);`
 
-`font-stretch-[<value>]`
+ |
+| `font-stretch-[<value>]` | 
 
 `font-stretch: <value>;`
 
-## [Examples](#examples)
-
-### [Basic example](#basic-example)
+ |
 
 Use utilities like `font-stretch-condensed` and `font-stretch-expanded` to set the width of a font face:
 
@@ -101,8 +114,6 @@ The quick brown fox jumps over the lazy dog.
 
 This only applies to fonts that have multiple width variations available, otherwise the browser selects the closest match.
 
-### [Using percentages](#using-percentages)
-
 Use `font-stretch-<percentage>` utilities like `font-stretch-50%` and `font-stretch-125%` to set the width of a font face using a percentage:
 
 font-stretch-50%
@@ -121,8 +132,6 @@ The quick brown fox jumps over the lazy dog.
 <p class="font-stretch-50%">The quick brown fox...</p><p class="font-stretch-100%">The quick brown fox...</p><p class="font-stretch-150%">The quick brown fox...</p>
 ```
 
-### [Using a custom value](#using-a-custom-value)
-
 Use the `font-stretch-[<value>]` syntax to set the font width based on a completely custom value:
 
 ```
@@ -137,8 +146,6 @@ For CSS variables, you can also use the `font-stretch-(<custom-property>)` synta
 
 This is just a shorthand for `font-stretch-[var(<custom-property>)]` that adds the `var()` function for you automatically.
 
-### [Responsive design](#responsive-design)
-
 Prefix a `font-stretch` utility with a breakpoint variant like `md:` to only apply the utility at medium screen sizes and above:
 
 ```
@@ -149,21 +156,25 @@ Learn more about using variants in the [variants documentation](/docs/hover-focu
 
 ### On this page
 
-*   [Quick reference](#quick-reference)
-*   [Examples](#examples)
-    *   [Basic example](#basic-example)
-    *   [Using percentages](#using-percentages)
-    *   [Using a custom value](#using-a-custom-value)
-    *   [Responsive design](#responsive-design)
+-   [Quick reference](#quick-reference)
+-   [Examples](#examples)
+    -   [Basic example](#basic-example)
+    -   [Using percentages](#using-percentages)
+    -   [Using a custom value](#using-a-custom-value)
+    -   [Responsive design](#responsive-design)
 
-![Build UIs that don’t suck — 5-day mini-course](/_next/static/media/course-promo.d3d6bc78.jpg)
+[
 
-5-day mini-course
+![Refactoring UI](/_next/static/media/book-promo.3012c0f6.png)
 
-Build UIs that don’t suck.
+From the creators of Tailwind CSS
 
-Short, tactical video lessons from the creator of Tailwind CSS, delivered directly to your inbox every day for a week.
+Make your ideas look awesome, without relying on a designer.
 
-[Get the free course](/build-uis-that-dont-suck)
+> “This is the survival kit I wish I had when I started building apps.”
+> 
+> Derrick Reimer, SavvyCal
+
+](https://www.refactoringui.com/?ref=sidebar)
 
 Copyright © 2026 Tailwind Labs Inc.·[Trademark Policy](/brand)

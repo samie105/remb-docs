@@ -5,23 +5,22 @@ canonical_url: "https://nextjs.org/docs/pages/api-reference/functions/use-params
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:22:30.005Z"
-content_hash: "e11763cf74b21e13dea6b660d0a102bacd73ce423c8192252c31d942d5c02e2d"
+last_crawled_at: "2026-04-27T18:21:51.348Z"
+content_hash: "3a5954bd4e5ff96075d846ef630a7697df40ee86669050aa2c70c84d26c782d8"
 menu_path: ["useParams"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/pages/api-reference/functions/next-response/index.md", "title": "NextResponse"}
-nav_next: {"path": "nextjs/docs/pages/api-reference/functions/use-report-web-vitals/index.md", "title": "useReportWebVitals"}
+version: "latest"
+content_language: "en"
 ---
+[API Reference](/docs/pages/api-reference)[Functions](/docs/pages/api-reference/functions)useParams
 
 # useParams
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 `useParams` is a hook that lets you read a route's [dynamic params](/docs/pages/building-your-application/routing/dynamic-routes) filled in by the current URL.
 
 pages/shop/\[slug\].tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -55,42 +54,19 @@ const params = useParams()
 
 `useParams` returns an object containing the current route's filled in [dynamic parameters](/docs/pages/building-your-application/routing/dynamic-routes), or `null` during [prerendering](#behavior-during-prerendering).
 
-*   Each property in the object is an active dynamic segment.
-*   The property name is the segment's name, and the property value is what the segment is filled in with.
-*   The property value will either be a `string` or array of `string`s depending on the [type of dynamic segment](/docs/pages/building-your-application/routing/dynamic-routes).
-*   If the route contains no dynamic parameters, `useParams` returns an empty object.
+-   Each property in the object is an active dynamic segment.
+-   The property name is the segment's name, and the property value is what the segment is filled in with.
+-   The property value will either be a `string` or array of `string`s depending on the [type of dynamic segment](/docs/pages/building-your-application/routing/dynamic-routes).
+-   If the route contains no dynamic parameters, `useParams` returns an empty object.
 
 For example:
 
-Route
-
-URL
-
-`useParams()`
-
-`pages/shop/page.js`
-
-`/shop`
-
-`{}`
-
-`pages/shop/[slug].js`
-
-`/shop/1`
-
-`{ slug: '1' }`
-
-`pages/shop/[tag]/[item].js`
-
-`/shop/1/2`
-
-`{ tag: '1', item: '2' }`
-
-`pages/shop/[...slug].js`
-
-`/shop/1/2`
-
-`{ slug: ['1', '2'] }`
+| Route | URL | `useParams()` |
+| --- | --- | --- |
+| `pages/shop/page.js` | `/shop` | `{}` |
+| `pages/shop/[slug].js` | `/shop/1` | `{ slug: '1' }` |
+| `pages/shop/[tag]/[item].js` | `/shop/1/2` | `{ tag: '1', item: '2' }` |
+| `pages/shop/[...slug].js` | `/shop/1/2` | `{ slug: ['1', '2'] }` |
 
 > **Good to know**: `useParams` is a [React Hook](https://react.dev/learn#using-hooks) and cannot be used with classes.
 
@@ -103,8 +79,6 @@ For pages that are [statically optimized](/docs/pages/building-your-application/
 This is because params cannot be known during static generation for dynamic routes.
 
 pages/shop/\[slug\].tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -129,8 +103,6 @@ export default function ShopPage() {
 When using [`getServerSideProps`](/docs/pages/building-your-application/data-fetching/get-server-side-props), the page is server-rendered on each request and `useParams` will return the actual params immediately:
 
 pages/shop/\[slug\].tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -162,8 +134,6 @@ export async function getServerSideProps() {
 
 pages/shop/\[slug\].tsx
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -191,8 +161,6 @@ export default function ShopPage() {
 
 components/breadcrumb.tsx
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -215,16 +183,8 @@ export function Breadcrumb() {
 
 ## Version History[](#version-history)
 
-Version
-
-Changes
-
-`v13.3.0`
-
-`useParams` introduced.
+| Version | Changes |
+| --- | --- |
+| `v13.3.0` | `useParams` introduced. |
 
 Was this helpful?
-
-supported.
-
-Send

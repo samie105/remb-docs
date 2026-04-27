@@ -5,17 +5,15 @@ canonical_url: "https://www.postgresql.org/docs/current/pgstatstatements.html"
 docset: "postgres"
 kind: "database"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:43:23.723Z"
-content_hash: "4e5423a48ecc9cd4e4b1652a9d01d820e1eccf18eadbb556759417b12a989d9f"
+last_crawled_at: "2026-04-27T20:46:07.561Z"
+content_hash: "d5671c3c43077542bc8ef913810de81d4980b3fb6a870f8c537ef6f56430bea7"
 menu_path: ["PostgreSQL: Documentation: 18: F.32. pg_stat_statements — track statistics of SQL planning and execution"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/pgrowlocks.html/index.md", "title": "PostgreSQL: Documentation: 18: F.31.\u00a0pgrowlocks \u2014 show a table's row locking information"}
-nav_next: {"path": "postgres/docs/current/pgstattuple.html/index.md", "title": "PostgreSQL: Documentation: 18: F.33.\u00a0pgstattuple \u2014 obtain tuple-level statistics"}
+content_language: "en"
 ---
-
 The `pg_stat_statements` module provides a means for tracking planning and execution statistics of all SQL statements executed by a server.
 
-The module must be loaded by adding `pg_stat_statements` to [shared\_preload\_libraries](postgres/docs/current/runtime-config-client.html/index.md#GUC-SHARED-PRELOAD-LIBRARIES) in `postgresql.conf`, because it requires additional shared memory. This means that a server restart is needed to add or remove the module. In addition, query identifier calculation must be enabled in order for the module to be active, which is done automatically if [compute\_query\_id](postgres/docs/current/runtime-config-statistics.html/index.md#GUC-COMPUTE-QUERY-ID) is set to `auto` or `on`, or any third-party module that calculates query identifiers is loaded.
+The module must be loaded by adding `pg_stat_statements` to [shared\_preload\_libraries](https://www.postgresql.org/docs/current/runtime-config-client.html#GUC-SHARED-PRELOAD-LIBRARIES) in `postgresql.conf`, because it requires additional shared memory. This means that a server restart is needed to add or remove the module. In addition, query identifier calculation must be enabled in order for the module to be active, which is done automatically if [compute\_query\_id](https://www.postgresql.org/docs/current/runtime-config-statistics.html#GUC-COMPUTE-QUERY-ID) is set to `auto` or `on`, or any third-party module that calculates query identifiers is loaded.
 
 When `pg_stat_statements` is active, it tracks statistics across all databases of the server. To access and manipulate these statistics, the module provides views `pg_stat_statements` and `pg_stat_statements_info`, and the utility functions `pg_stat_statements_reset` and `pg_stat_statements`. These are not available globally but can be enabled for a specific database with `CREATE EXTENSION pg_stat_statements`.
 
@@ -25,217 +23,377 @@ The statistics gathered by the module are made available via a view named `pg_st
 
 **Table F.22. `pg_stat_statements` Columns**
 
+| 
 Column Type
 
 Description
+
+ |
+| --- |
+| 
 
 `userid` `oid` (references [`pg_authid`](https://www.postgresql.org/docs/current/catalog-pg-authid.html "52.8. pg_authid").`oid`)
 
 OID of user who executed the statement
 
+ |
+| 
+
 `dbid` `oid` (references [`pg_database`](https://www.postgresql.org/docs/current/catalog-pg-database.html "52.15. pg_database").`oid`)
 
 OID of database in which the statement was executed
+
+ |
+| 
 
 `toplevel` `bool`
 
 True if the query was executed as a top-level statement (always true if `pg_stat_statements.track` is set to `top`)
 
+ |
+| 
+
 `queryid` `bigint`
 
 Hash code to identify identical normalized queries.
+
+ |
+| 
 
 `query` `text`
 
 Text of a representative statement
 
+ |
+| 
+
 `plans` `bigint`
 
 Number of times the statement was planned (if `pg_stat_statements.track_planning` is enabled, otherwise zero)
+
+ |
+| 
 
 `total_plan_time` `double precision`
 
 Total time spent planning the statement, in milliseconds (if `pg_stat_statements.track_planning` is enabled, otherwise zero)
 
+ |
+| 
+
 `min_plan_time` `double precision`
 
 Minimum time spent planning the statement, in milliseconds. This field will be zero if `pg_stat_statements.track_planning` is disabled, or if the counter has been reset using the `pg_stat_statements_reset` function with the `minmax_only` parameter set to `true` and never been planned since.
+
+ |
+| 
 
 `max_plan_time` `double precision`
 
 Maximum time spent planning the statement, in milliseconds. This field will be zero if `pg_stat_statements.track_planning` is disabled, or if the counter has been reset using the `pg_stat_statements_reset` function with the `minmax_only` parameter set to `true` and never been planned since.
 
+ |
+| 
+
 `mean_plan_time` `double precision`
 
 Mean time spent planning the statement, in milliseconds (if `pg_stat_statements.track_planning` is enabled, otherwise zero)
+
+ |
+| 
 
 `stddev_plan_time` `double precision`
 
 Population standard deviation of time spent planning the statement, in milliseconds (if `pg_stat_statements.track_planning` is enabled, otherwise zero)
 
+ |
+| 
+
 `calls` `bigint`
 
 Number of times the statement was executed
+
+ |
+| 
 
 `total_exec_time` `double precision`
 
 Total time spent executing the statement, in milliseconds
 
+ |
+| 
+
 `min_exec_time` `double precision`
 
 Minimum time spent executing the statement, in milliseconds, this field will be zero until this statement is executed first time after reset performed by the `pg_stat_statements_reset` function with the `minmax_only` parameter set to `true`
+
+ |
+| 
 
 `max_exec_time` `double precision`
 
 Maximum time spent executing the statement, in milliseconds, this field will be zero until this statement is executed first time after reset performed by the `pg_stat_statements_reset` function with the `minmax_only` parameter set to `true`
 
+ |
+| 
+
 `mean_exec_time` `double precision`
 
 Mean time spent executing the statement, in milliseconds
+
+ |
+| 
 
 `stddev_exec_time` `double precision`
 
 Population standard deviation of time spent executing the statement, in milliseconds
 
+ |
+| 
+
 `rows` `bigint`
 
 Total number of rows retrieved or affected by the statement
+
+ |
+| 
 
 `shared_blks_hit` `bigint`
 
 Total number of shared block cache hits by the statement
 
+ |
+| 
+
 `shared_blks_read` `bigint`
 
 Total number of shared blocks read by the statement
+
+ |
+| 
 
 `shared_blks_dirtied` `bigint`
 
 Total number of shared blocks dirtied by the statement
 
+ |
+| 
+
 `shared_blks_written` `bigint`
 
 Total number of shared blocks written by the statement
+
+ |
+| 
 
 `local_blks_hit` `bigint`
 
 Total number of local block cache hits by the statement
 
+ |
+| 
+
 `local_blks_read` `bigint`
 
 Total number of local blocks read by the statement
+
+ |
+| 
 
 `local_blks_dirtied` `bigint`
 
 Total number of local blocks dirtied by the statement
 
+ |
+| 
+
 `local_blks_written` `bigint`
 
 Total number of local blocks written by the statement
+
+ |
+| 
 
 `temp_blks_read` `bigint`
 
 Total number of temp blocks read by the statement
 
+ |
+| 
+
 `temp_blks_written` `bigint`
 
 Total number of temp blocks written by the statement
 
+ |
+| 
+
 `shared_blk_read_time` `double precision`
 
-Total time the statement spent reading shared blocks, in milliseconds (if [track\_io\_timing](postgres/docs/current/runtime-config-statistics.html/index.md#GUC-TRACK-IO-TIMING) is enabled, otherwise zero)
+Total time the statement spent reading shared blocks, in milliseconds (if [track\_io\_timing](https://www.postgresql.org/docs/current/runtime-config-statistics.html#GUC-TRACK-IO-TIMING) is enabled, otherwise zero)
+
+ |
+| 
 
 `shared_blk_write_time` `double precision`
 
-Total time the statement spent writing shared blocks, in milliseconds (if [track\_io\_timing](postgres/docs/current/runtime-config-statistics.html/index.md#GUC-TRACK-IO-TIMING) is enabled, otherwise zero)
+Total time the statement spent writing shared blocks, in milliseconds (if [track\_io\_timing](https://www.postgresql.org/docs/current/runtime-config-statistics.html#GUC-TRACK-IO-TIMING) is enabled, otherwise zero)
+
+ |
+| 
 
 `local_blk_read_time` `double precision`
 
-Total time the statement spent reading local blocks, in milliseconds (if [track\_io\_timing](postgres/docs/current/runtime-config-statistics.html/index.md#GUC-TRACK-IO-TIMING) is enabled, otherwise zero)
+Total time the statement spent reading local blocks, in milliseconds (if [track\_io\_timing](https://www.postgresql.org/docs/current/runtime-config-statistics.html#GUC-TRACK-IO-TIMING) is enabled, otherwise zero)
+
+ |
+| 
 
 `local_blk_write_time` `double precision`
 
-Total time the statement spent writing local blocks, in milliseconds (if [track\_io\_timing](postgres/docs/current/runtime-config-statistics.html/index.md#GUC-TRACK-IO-TIMING) is enabled, otherwise zero)
+Total time the statement spent writing local blocks, in milliseconds (if [track\_io\_timing](https://www.postgresql.org/docs/current/runtime-config-statistics.html#GUC-TRACK-IO-TIMING) is enabled, otherwise zero)
+
+ |
+| 
 
 `temp_blk_read_time` `double precision`
 
-Total time the statement spent reading temporary file blocks, in milliseconds (if [track\_io\_timing](postgres/docs/current/runtime-config-statistics.html/index.md#GUC-TRACK-IO-TIMING) is enabled, otherwise zero)
+Total time the statement spent reading temporary file blocks, in milliseconds (if [track\_io\_timing](https://www.postgresql.org/docs/current/runtime-config-statistics.html#GUC-TRACK-IO-TIMING) is enabled, otherwise zero)
+
+ |
+| 
 
 `temp_blk_write_time` `double precision`
 
-Total time the statement spent writing temporary file blocks, in milliseconds (if [track\_io\_timing](postgres/docs/current/runtime-config-statistics.html/index.md#GUC-TRACK-IO-TIMING) is enabled, otherwise zero)
+Total time the statement spent writing temporary file blocks, in milliseconds (if [track\_io\_timing](https://www.postgresql.org/docs/current/runtime-config-statistics.html#GUC-TRACK-IO-TIMING) is enabled, otherwise zero)
+
+ |
+| 
 
 `wal_records` `bigint`
 
 Total number of WAL records generated by the statement
 
+ |
+| 
+
 `wal_fpi` `bigint`
 
 Total number of WAL full page images generated by the statement
+
+ |
+| 
 
 `wal_bytes` `numeric`
 
 Total amount of WAL generated by the statement in bytes
 
+ |
+| 
+
 `wal_buffers_full` `bigint`
 
 Number of times the WAL buffers became full
+
+ |
+| 
 
 `jit_functions` `bigint`
 
 Total number of functions JIT-compiled by the statement
 
+ |
+| 
+
 `jit_generation_time` `double precision`
 
 Total time spent by the statement on generating JIT code, in milliseconds
+
+ |
+| 
 
 `jit_inlining_count` `bigint`
 
 Number of times functions have been inlined
 
+ |
+| 
+
 `jit_inlining_time` `double precision`
 
 Total time spent by the statement on inlining functions, in milliseconds
+
+ |
+| 
 
 `jit_optimization_count` `bigint`
 
 Number of times the statement has been optimized
 
+ |
+| 
+
 `jit_optimization_time` `double precision`
 
 Total time spent by the statement on optimizing, in milliseconds
+
+ |
+| 
 
 `jit_emission_count` `bigint`
 
 Number of times code has been emitted
 
+ |
+| 
+
 `jit_emission_time` `double precision`
 
 Total time spent by the statement on emitting code, in milliseconds
+
+ |
+| 
 
 `jit_deform_count` `bigint`
 
 Total number of tuple deform functions JIT-compiled by the statement
 
+ |
+| 
+
 `jit_deform_time` `double precision`
 
 Total time spent by the statement on JIT-compiling tuple deform functions, in milliseconds
+
+ |
+| 
 
 `parallel_workers_to_launch` `bigint`
 
 Number of parallel workers planned to be launched
 
+ |
+| 
+
 `parallel_workers_launched` `bigint`
 
 Number of parallel workers actually launched
+
+ |
+| 
 
 `stats_since` `timestamp with time zone`
 
 Time at which statistics gathering started for this statement
 
+ |
+| 
+
 `minmax_stats_since` `timestamp with time zone`
 
 Time at which min/max statistics gathering started for this statement (fields `min_plan_time`, `max_plan_time`, `min_exec_time` and `max_exec_time`)
+
+ |
 
 For security reasons, only superusers and roles with privileges of the `pg_read_all_stats` role are allowed to see the SQL text and `queryid` of queries executed by other users. Other users can see the statistics, however, if the view has been installed in their database.
 
@@ -243,7 +401,7 @@ Plannable queries (that is, `SELECT`, `INSERT`, `UPDATE`, `DELETE`, and `MERGE`)
 
 ### Note
 
-The following details about constant replacement and `queryid` only apply when [compute\_query\_id](postgres/docs/current/runtime-config-statistics.html/index.md#GUC-COMPUTE-QUERY-ID) is enabled. If you use an external module instead to compute `queryid`, you should refer to its documentation for details.
+The following details about constant replacement and `queryid` only apply when [compute\_query\_id](https://www.postgresql.org/docs/current/runtime-config-statistics.html#GUC-COMPUTE-QUERY-ID) is enabled. If you use an external module instead to compute `queryid`, you should refer to its documentation for details.
 
 When a constant's value has been ignored for purposes of matching the query to other queries, the constant is replaced by a parameter symbol, such as `$1`, in the `pg_stat_statements` display. The rest of the query text is that of the first query that had the particular `queryid` hash value associated with the `pg_stat_statements` entry.
 
@@ -282,17 +440,27 @@ The statistics of the `pg_stat_statements` module itself are tracked and made av
 
 **Table F.23. `pg_stat_statements_info` Columns**
 
+| 
 Column Type
 
 Description
+
+ |
+| --- |
+| 
 
 `dealloc` `bigint`
 
 Total number of times `pg_stat_statements` entries about the least-executed statements were deallocated because more distinct statements than `pg_stat_statements.max` were observed
 
+ |
+| 
+
 `stats_reset` `timestamp with time zone`
 
 Time at which all statistics in the `pg_stat_statements` view were last reset.
+
+ |
 
   
 

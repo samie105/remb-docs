@@ -5,14 +5,12 @@ canonical_url: "https://www.postgresql.org/docs/current/datetime-posix-timezone-
 docset: "postgres"
 kind: "database"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:50:21.749Z"
-content_hash: "a54b54a3dec0249bfabfbc0fd198357be6e08767c6e726b8a2b06b2825e4b8df"
+last_crawled_at: "2026-04-27T20:49:49.975Z"
+content_hash: "72211b93b154f0bdc182cd1951323471b4d2a0afc29d33a8bfe2357eb01017a4"
 menu_path: ["PostgreSQL: Documentation: 18: B.5. POSIX Time Zone Specifications"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/datetime-keywords.html/index.md", "title": "PostgreSQL: Documentation: 18: B.3.\u00a0Date/Time Key Words"}
-nav_next: {"path": "postgres/docs/current/datetime-units-history.html/index.md", "title": "PostgreSQL: Documentation: 18: B.6.\u00a0History of Units"}
+content_language: "en"
 ---
-
 PostgreSQL can accept time zone specifications that are written according to the POSIX standard's rules for the `TZ` environment variable. POSIX time zone specifications are inadequate to deal with the complexity of real-world time zone history, but there are sometimes reasons to use them.
 
 A POSIX time zone specification has the form
@@ -21,15 +19,15 @@ _`STD`_ _`offset`_ \[ _`DST`_ \[ _`dstoffset`_ \] \[ , _`rule`_ \] \]
 
 (For readability, we show spaces between the fields, but spaces should not be used in practice.) The fields are:
 
-*   _`STD`_ is the zone abbreviation to be used for standard time.
+-   _`STD`_ is the zone abbreviation to be used for standard time.
     
-*   _`offset`_ is the zone's standard-time offset from UTC.
+-   _`offset`_ is the zone's standard-time offset from UTC.
     
-*   _`DST`_ is the zone abbreviation to be used for daylight-savings time. If this field and the following ones are omitted, the zone uses a fixed UTC offset with no daylight-savings rule.
+-   _`DST`_ is the zone abbreviation to be used for daylight-savings time. If this field and the following ones are omitted, the zone uses a fixed UTC offset with no daylight-savings rule.
     
-*   _`dstoffset`_ is the daylight-savings offset from UTC. This field is typically omitted, since it defaults to one hour less than the standard-time _`offset`_, which is usually the right thing.
+-   _`dstoffset`_ is the daylight-savings offset from UTC. This field is typically omitted, since it defaults to one hour less than the standard-time _`offset`_, which is usually the right thing.
     
-*   _`rule`_ defines the rule for when daylight savings is in effect, as described below.
+-   _`rule`_ defines the rule for when daylight savings is in effect, as described below.
     
 
 In this syntax, a zone abbreviation can be a string of letters, such as `EST`, or an arbitrary string surrounded by angle brackets, such as `<UTC-05>`. Note that the zone abbreviations given here are only used for output, and even then only in some timestamp output formats. The zone abbreviations recognized in timestamp input are determined as explained in [Section B.4](https://www.postgresql.org/docs/current/datetime-config-files.html "B.4. Date/Time Configuration Files").

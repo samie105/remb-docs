@@ -5,14 +5,12 @@ canonical_url: "https://www.postgresql.org/docs/current/plpgsql-statements.html"
 docset: "postgres"
 kind: "database"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:49:53.423Z"
-content_hash: "9b313fd7dcd8c6269a5f4168bf9fe2c9c00360f4a33db63385445b217b586d71"
+last_crawled_at: "2026-04-27T20:49:33.369Z"
+content_hash: "5e10bd14304f47f04ab46d1087afbbcbeb7cc10ba01950ee39b71c0689770c66"
 menu_path: ["PostgreSQL: Documentation: 18: 41.5. Basic Statements"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/plpgsql-expressions.html/index.md", "title": "PostgreSQL: Documentation: 18: 41.4.\u00a0Expressions"}
-nav_next: {"path": "postgres/docs/current/plpgsql-trigger.html/index.md", "title": "PostgreSQL: Documentation: 18: 41.10.\u00a0Trigger Functions"}
+content_language: "en"
 ---
-
 In this section and the following ones, we describe all the statement types that are explicitly understood by PL/pgSQL. Anything not recognized as one of these statement types is presumed to be an SQL command and is sent to the main database engine to execute, as described in [Section 41.5.2](https://www.postgresql.org/docs/current/plpgsql-statements.html#PLPGSQL-STATEMENTS-GENERAL-SQL "41.5.2. Executing SQL Commands").
 
 ### 41.5.1. Assignment [#](#PLPGSQL-STATEMENTS-ASSIGNMENT)
@@ -260,46 +258,27 @@ GET DIAGNOSTICS integer\_var = ROW\_COUNT;
 **Table 41.1. Available Diagnostics Items**
 
   
-
-Name
-
-Type
-
-Description
-
-`ROW_COUNT`
-
-`bigint`
-
-the number of rows processed by the most recent SQL command
-
-`PG_CONTEXT`
-
-`text`
-
-line(s) of text describing the current call stack (see [Section 41.6.9](https://www.postgresql.org/docs/current/plpgsql-control-structures.html#PLPGSQL-CALL-STACK "41.6.9. Obtaining Execution Location Information"))
-
-`PG_ROUTINE_OID`
-
-`oid`
-
-OID of the current function
+| Name | Type | Description |
+| --- | --- | --- |
+| `ROW_COUNT` | `bigint` | the number of rows processed by the most recent SQL command |
+| `PG_CONTEXT` | `text` | line(s) of text describing the current call stack (see [Section 41.6.9](https://www.postgresql.org/docs/current/plpgsql-control-structures.html#PLPGSQL-CALL-STACK "41.6.9. Obtaining Execution Location Information")) |
+| `PG_ROUTINE_OID` | `oid` | OID of the current function |
 
 The second method to determine the effects of a command is to check the special variable named `FOUND`, which is of type `boolean`. `FOUND` starts out false within each PL/pgSQL function call. It is set by each of the following types of statements:
 
-*   A `SELECT INTO` statement sets `FOUND` true if a row is assigned, false if no row is returned.
+-   A `SELECT INTO` statement sets `FOUND` true if a row is assigned, false if no row is returned.
     
-*   A `PERFORM` statement sets `FOUND` true if it produces (and discards) one or more rows, false if no row is produced.
+-   A `PERFORM` statement sets `FOUND` true if it produces (and discards) one or more rows, false if no row is produced.
     
-*   `UPDATE`, `INSERT`, `DELETE`, and `MERGE` statements set `FOUND` true if at least one row is affected, false if no row is affected.
+-   `UPDATE`, `INSERT`, `DELETE`, and `MERGE` statements set `FOUND` true if at least one row is affected, false if no row is affected.
     
-*   A `FETCH` statement sets `FOUND` true if it returns a row, false if no row is returned.
+-   A `FETCH` statement sets `FOUND` true if it returns a row, false if no row is returned.
     
-*   A `MOVE` statement sets `FOUND` true if it successfully repositions the cursor, false otherwise.
+-   A `MOVE` statement sets `FOUND` true if it successfully repositions the cursor, false otherwise.
     
-*   A `FOR` or `FOREACH` statement sets `FOUND` true if it iterates one or more times, else false. `FOUND` is set this way when the loop exits; inside the execution of the loop, `FOUND` is not modified by the loop statement, although it might be changed by the execution of other statements within the loop body.
+-   A `FOR` or `FOREACH` statement sets `FOUND` true if it iterates one or more times, else false. `FOUND` is set this way when the loop exits; inside the execution of the loop, `FOUND` is not modified by the loop statement, although it might be changed by the execution of other statements within the loop body.
     
-*   `RETURN QUERY` and `RETURN QUERY EXECUTE` statements set `FOUND` true if the query returns at least one row, false if no row is returned.
+-   `RETURN QUERY` and `RETURN QUERY EXECUTE` statements set `FOUND` true if the query returns at least one row, false if no row is returned.
     
 
 Other PL/pgSQL statements do not change the state of `FOUND`. Note in particular that `EXECUTE` changes the output of `GET DIAGNOSTICS`, but does not change `FOUND`.

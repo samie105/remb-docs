@@ -5,16 +5,17 @@ canonical_url: "https://docs.deno.com/runtime/reference/cli/audit/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:50:49.503Z"
-content_hash: "1a8cdf69a7aa9d43487eba50f278cdcd275428d4ee8327bcb8d41359516dabd4"
+last_crawled_at: "2026-04-27T17:25:55.260Z"
+content_hash: "6a2e252dc6e0a5b71599c8737263f157f10e31cb98b561323f5c5f378b654ca1"
 menu_path: ["deno audit"]
 section_path: []
+content_language: "en"
 ---
-On this page
+**On this page**
 
-*   [Examples](#examples)
-*   [Dependency management options](#dependency-management-options)
-*   [Options](#options)
+-   [Examples](#examples)
+-   [Dependency management options](#dependency-management-options)
+-   [Options](#options)
 
 The `deno audit` command checks your project's dependencies for known security vulnerabilities. It reads your lock file and reports any advisories found in vulnerability databases.
 

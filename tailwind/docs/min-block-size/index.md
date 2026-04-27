@@ -5,59 +5,13 @@ canonical_url: "https://tailwindcss.com/docs/min-block-size"
 docset: "tailwind"
 kind: "framework"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:54:11.488Z"
-content_hash: "198a0981a542c61e3e8c1a8c7f928ab8ccccda42f3f472a144702490849fa407"
+last_crawled_at: "2026-04-27T20:06:30.012Z"
+content_hash: "84b89c50d455ee4351f23ede4bb0124e0708528afe912ecf29ab40d88abe01ab"
 menu_path: ["min-block-size"]
 section_path: []
-nav_prev: {"path": "tailwind/docs/block-size/index.md", "title": "block-size"}
-nav_next: {"path": "tailwind/docs/max-block-size/index.md", "title": "max-block-size"}
+content_language: "en"
 ---
-
 Utilities for setting the minimum block size of an element.
-
-Class
-
-Styles
-
-`min-block-<number>`
-
-`min-block-size: calc(var(--spacing) * <number>);`
-
-`min-block-<fraction>`
-
-`min-block-size: calc(<fraction> * 100%);`
-
-`min-block-px`
-
-`min-block-size: 1px;`
-
-`min-block-full`
-
-`min-block-size: 100%;`
-
-`min-block-screen`
-
-`min-block-size: 100vh;`
-
-`min-block-dvh`
-
-`min-block-size: 100dvh;`
-
-`min-block-dvw`
-
-`min-block-size: 100dvw;`
-
-`min-block-lvh`
-
-`min-block-size: 100lvh;`
-
-`min-block-lvw`
-
-`min-block-size: 100lvw;`
-
-`min-block-svw`
-
-`min-block-size: 100svw;`
 
 ## [Examples](#examples)
 
@@ -123,7 +77,7 @@ Prefix a `min-block-size` utility with a breakpoint variant like `md:` to only a
 <div class="block-24 min-block-0 md:min-block-full ...">  <!-- ... --></div>
 ```
 
-Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).
+Learn more about using variants in the [variants documentation](https://tailwindcss.com/docs/hover-focus-and-other-states).
 
 ## [Customizing your theme](#customizing-your-theme)
 
@@ -133,4 +87,4 @@ The `min-block-<number>` utilities are driven by the `--spacing` theme variable,
 @theme {  --spacing: 1px; }
 ```
 
-Learn more about customizing the spacing scale in the [theme variable documentation](tailwind/docs/theme/index.md).
+Learn more about customizing the spacing scale in the [theme variable documentation](https://tailwindcss.com/docs/theme).

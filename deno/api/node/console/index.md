@@ -5,10 +5,11 @@ canonical_url: "https://docs.deno.com/api/node/console/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:34:15.370Z"
-content_hash: "a5f8a24cf17e810ba80f5e95451a03edf2b85844900a50dea5d0d11a5b6b5464"
+last_crawled_at: "2026-04-27T17:04:04.857Z"
+content_hash: "fbae8b207d4a58c5e5c3bf9e7c5e3e2163e8b9833cc158b97c3fa130f77aeeb4"
 menu_path: ["console - Node documentation"]
 section_path: []
+content_language: "en"
 ---
 ### Usage in Deno
 
@@ -20,8 +21,8 @@ The `node:console` module provides a simple debugging console that is similar to
 
 The module exports two specific components:
 
-*   A `Console` class with methods such as `console.log()`, `console.error()`, and `console.warn()` that can be used to write to any Node.js stream.
-*   A global `console` instance configured to write to [`process.stdout`](https://nodejs.org/docs/latest-v22.x/api/process.html#processstdout) and [`process.stderr`](https://nodejs.org/docs/latest-v22.x/api/process.html#processstderr). The global `console` can be used without importing the `node:console` module.
+-   A `Console` class with methods such as `console.log()`, `console.error()`, and `console.warn()` that can be used to write to any Node.js stream.
+-   A global `console` instance configured to write to [`process.stdout`](https://nodejs.org/docs/latest-v22.x/api/process.html#processstdout) and [`process.stderr`](https://nodejs.org/docs/latest-v22.x/api/process.html#processstderr). The global `console` can be used without importing the `node:console` module.
 
 _**Warning**_: The global console object's methods are neither consistently synchronous like the browser APIs they resemble, nor are they consistently asynchronous like all other Node.js streams. See the [`note on process I/O`](https://nodejs.org/docs/latest-v22.x/api/process.html#a-note-on-process-io) for more information.
 
@@ -67,37 +68,35 @@ myConsole.warn(`Danger ${name}! Danger!`);
 // Prints: Danger Will Robinson! Danger!, to err
 ```
 
-### Interfaces [#](#Interfaces)
-
 I
 
 [Console](.././console/~/Console "Console")
 
 No documentation available
 
-*   [Console](.././console/~/Console#property_console)
-*   [assert](.././console/~/Console#method_assert_0)
-*   [clear](.././console/~/Console#method_clear_0)
-*   [count](.././console/~/Console#method_count_0)
-*   [countReset](.././console/~/Console#method_countreset_0)
-*   [debug](.././console/~/Console#method_debug_0)
-*   [dir](.././console/~/Console#method_dir_0)
-*   [dirxml](.././console/~/Console#method_dirxml_0)
-*   [error](.././console/~/Console#method_error_0)
-*   [group](.././console/~/Console#method_group_0)
-*   [groupCollapsed](.././console/~/Console#method_groupcollapsed_0)
-*   [groupEnd](.././console/~/Console#method_groupend_0)
-*   [info](.././console/~/Console#method_info_0)
-*   [log](.././console/~/Console#method_log_0)
-*   [profile](.././console/~/Console#method_profile_0)
-*   [profileEnd](.././console/~/Console#method_profileend_0)
-*   [table](.././console/~/Console#method_table_0)
-*   [time](.././console/~/Console#method_time_0)
-*   [timeEnd](.././console/~/Console#method_timeend_0)
-*   [timeLog](.././console/~/Console#method_timelog_0)
-*   [timeStamp](.././console/~/Console#method_timestamp_0)
-*   [trace](.././console/~/Console#method_trace_0)
-*   [warn](.././console/~/Console#method_warn_0)
+-   [Console](.././console/~/Console#property_console)
+-   [assert](.././console/~/Console#method_assert_0)
+-   [clear](.././console/~/Console#method_clear_0)
+-   [count](.././console/~/Console#method_count_0)
+-   [countReset](.././console/~/Console#method_countreset_0)
+-   [debug](.././console/~/Console#method_debug_0)
+-   [dir](.././console/~/Console#method_dir_0)
+-   [dirxml](.././console/~/Console#method_dirxml_0)
+-   [error](.././console/~/Console#method_error_0)
+-   [group](.././console/~/Console#method_group_0)
+-   [groupCollapsed](.././console/~/Console#method_groupcollapsed_0)
+-   [groupEnd](.././console/~/Console#method_groupend_0)
+-   [info](.././console/~/Console#method_info_0)
+-   [log](.././console/~/Console#method_log_0)
+-   [profile](.././console/~/Console#method_profile_0)
+-   [profileEnd](.././console/~/Console#method_profileend_0)
+-   [table](.././console/~/Console#method_table_0)
+-   [time](.././console/~/Console#method_time_0)
+-   [timeEnd](.././console/~/Console#method_timeend_0)
+-   [timeLog](.././console/~/Console#method_timelog_0)
+-   [timeStamp](.././console/~/Console#method_timestamp_0)
+-   [trace](.././console/~/Console#method_trace_0)
+-   [warn](.././console/~/Console#method_warn_0)
 
 I
 
@@ -105,7 +104,7 @@ I
 
 No documentation available
 
-*   [prototype](.././console/~/console.ConsoleConstructor#property_prototype)
+-   [prototype](.././console/~/console.ConsoleConstructor#property_prototype)
 
 I
 
@@ -113,14 +112,12 @@ I
 
 No documentation available
 
-*   [colorMode](.././console/~/console.ConsoleConstructorOptions#property_colormode)
-*   [groupIndentation](.././console/~/console.ConsoleConstructorOptions#property_groupindentation)
-*   [ignoreErrors](.././console/~/console.ConsoleConstructorOptions#property_ignoreerrors)
-*   [inspectOptions](.././console/~/console.ConsoleConstructorOptions#property_inspectoptions)
-*   [stderr](.././console/~/console.ConsoleConstructorOptions#property_stderr)
-*   [stdout](.././console/~/console.ConsoleConstructorOptions#property_stdout)
-
-### Namespaces [#](#Namespaces)
+-   [colorMode](.././console/~/console.ConsoleConstructorOptions#property_colormode)
+-   [groupIndentation](.././console/~/console.ConsoleConstructorOptions#property_groupindentation)
+-   [ignoreErrors](.././console/~/console.ConsoleConstructorOptions#property_ignoreerrors)
+-   [inspectOptions](.././console/~/console.ConsoleConstructorOptions#property_inspectoptions)
+-   [stderr](.././console/~/console.ConsoleConstructorOptions#property_stderr)
+-   [stdout](.././console/~/console.ConsoleConstructorOptions#property_stdout)
 
 N
 

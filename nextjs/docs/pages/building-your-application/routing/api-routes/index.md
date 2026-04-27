@@ -5,24 +5,25 @@ canonical_url: "https://nextjs.org/docs/pages/building-your-application/routing/
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:23:18.500Z"
-content_hash: "5d5431a7af97c6310878b16a93d4abdf14fe87e9d6da2309ffaa864d685aa804"
+last_crawled_at: "2026-04-27T18:22:39.774Z"
+content_hash: "0c1bdb5e3ea0e76e4163ab8a628a256c447c40f22046eaff94b3d6f7e8ad76df"
 menu_path: ["API Routes"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/pages/building-your-application/routing/custom-document/index.md", "title": "Custom Document"}
-nav_next: {"path": "nextjs/docs/pages/building-your-application/routing/custom-error/index.md", "title": "Custom Errors"}
+version: "latest"
+content_language: "en"
 ---
+[Building Your Application](/docs/pages/building-your-application)[Routing](/docs/pages/building-your-application/routing)API Routes
 
 # API Routes
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
-Examples
+**Examples**
 
-*   [API Routes Request Helpers](https://github.com/vercel/next.js/tree/canary/examples/api-routes-proxy)
-*   [API Routes with GraphQL](https://github.com/vercel/next.js/tree/canary/examples/api-routes-graphql)
-*   [API Routes with REST](https://github.com/vercel/next.js/tree/canary/examples/api-routes-rest)
-*   [API Routes with CORS](https://github.com/vercel/next.js/tree/canary/examples/api-routes-cors)
+-   [API Routes Request Helpers](https://github.com/vercel/next.js/tree/canary/examples/api-routes-proxy)
+-   [API Routes with GraphQL](https://github.com/vercel/next.js/tree/canary/examples/api-routes-graphql)
+-   [API Routes with REST](https://github.com/vercel/next.js/tree/canary/examples/api-routes-rest)
+-   [API Routes with CORS](https://github.com/vercel/next.js/tree/canary/examples/api-routes-cors)
 
 > **Good to know**: If you are using the App Router, you can use [Server Components](/docs/app/getting-started/server-and-client-components) or [Route Handlers](/docs/app/api-reference/file-conventions/route) instead of API Routes.
 
@@ -33,8 +34,6 @@ Any file inside the folder `pages/api` is mapped to `/api/*` and will be treated
 For example, the following API route returns a JSON response with a status code of `200`:
 
 pages/api/hello.ts
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -55,9 +54,9 @@ export default function handler(
 
 > **Good to know**:
 > 
-> *   API Routes [do not specify CORS headers](https://developer.mozilla.org/docs/Web/HTTP/CORS), meaning they are **same-origin only** by default. You can customize such behavior by wrapping the request handler with the [CORS request helpers](https://github.com/vercel/next.js/tree/canary/examples/api-routes-cors).
-> *   API Routes can't be used with [static exports](/docs/pages/guides/static-exports). However, [Route Handlers](/docs/app/api-reference/file-conventions/route) in the App Router can.
-> *   API Routes will be affected by [`pageExtensions` configuration](/docs/pages/api-reference/config/next-config-js/pageExtensions) in `next.config.js`.
+> -   API Routes [do not specify CORS headers](https://developer.mozilla.org/docs/Web/HTTP/CORS), meaning they are **same-origin only** by default. You can customize such behavior by wrapping the request handler with the [CORS request helpers](https://github.com/vercel/next.js/tree/canary/examples/api-routes-cors).
+> -   API Routes can't be used with [static exports](/docs/pages/guides/static-exports). However, [Route Handlers](/docs/app/api-reference/file-conventions/route) in the App Router can.
+> -   API Routes will be affected by [`pageExtensions` configuration](/docs/pages/api-reference/config/next-config-js/pageExtensions) in `next.config.js`.
 
 ## Parameters[](#parameters)
 
@@ -67,16 +66,14 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
 }
 ```
 
-*   `req`: An instance of [http.IncomingMessage](https://nodejs.org/api/http.html#class-httpincomingmessage)
-*   `res`: An instance of [http.ServerResponse](https://nodejs.org/api/http.html#class-httpserverresponse)
+-   `req`: An instance of [http.IncomingMessage](https://nodejs.org/api/http.html#class-httpincomingmessage)
+-   `res`: An instance of [http.ServerResponse](https://nodejs.org/api/http.html#class-httpserverresponse)
 
 ## HTTP Methods[](#http-methods)
 
 To handle different HTTP methods in an API route, you can use `req.method` in your request handler, like so:
 
 pages/api/hello.ts
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -96,9 +93,9 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
 
 API Routes provide built-in request helpers which parse the incoming request (`req`):
 
-*   `req.cookies` - An object containing the cookies sent by the request. Defaults to `{}`
-*   `req.query` - An object containing the [query string](https://en.wikipedia.org/wiki/Query_string). Defaults to `{}`
-*   `req.body` - An object containing the body parsed by `content-type`, or `null` if no body was sent
+-   `req.cookies` - An object containing the cookies sent by the request. Defaults to `{}`
+-   `req.query` - An object containing the [query string](https://en.wikipedia.org/wiki/Query_string). Defaults to `{}`
+-   `req.body` - An object containing the body parsed by `content-type`, or `null` if no body was sent
 
 ### Custom config[](#custom-config)
 
@@ -178,11 +175,11 @@ The [Server Response object](https://nodejs.org/api/http.html#http_class_http_se
 
 The included helpers are:
 
-*   `res.status(code)` - A function to set the status code. `code` must be a valid [HTTP status code](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes)
-*   `res.json(body)` - Sends a JSON response. `body` must be a [serializable object](https://developer.mozilla.org/docs/Glossary/Serialization)
-*   `res.send(body)` - Sends the HTTP response. `body` can be a `string`, an `object` or a `Buffer`
-*   `res.redirect([status,] path)` - Redirects to a specified path or URL. `status` must be a valid [HTTP status code](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes). If not specified, `status` defaults to "307" "Temporary redirect".
-*   `res.revalidate(urlPath)` - [Revalidate a page on demand](/docs/pages/guides/incremental-static-regeneration#on-demand-revalidation-with-revalidatepath) using `getStaticProps`. `urlPath` must be a `string`.
+-   `res.status(code)` - A function to set the status code. `code` must be a valid [HTTP status code](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes)
+-   `res.json(body)` - Sends a JSON response. `body` must be a [serializable object](https://developer.mozilla.org/docs/Glossary/Serialization)
+-   `res.send(body)` - Sends the HTTP response. `body` can be a `string`, an `object` or a `Buffer`
+-   `res.redirect([status,] path)` - Redirects to a specified path or URL. `status` must be a valid [HTTP status code](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes). If not specified, `status` defaults to "307" "Temporary redirect".
+-   `res.revalidate(urlPath)` - [Revalidate a page on demand](/docs/pages/guides/incremental-static-regeneration#on-demand-revalidation-with-revalidatepath) using `getStaticProps`. `urlPath` must be a `string`.
 
 ### Setting the status code of a response[](#setting-the-status-code-of-a-response)
 
@@ -191,8 +188,6 @@ When sending a response back to the client, you can set the status code of the r
 The following example sets the status code of the response to `200` (`OK`) and returns a `message` property with the value of `Hello from Next.js!` as a JSON response:
 
 pages/api/hello.ts
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -218,8 +213,6 @@ When sending a response back to the client you can send a JSON response, this mu
 The following example sends a JSON response with the status code `200` (`OK`) and the result of the async operation. It's contained in a try catch block to handle any errors that may occur, with the appropriate status code and error message caught and sent back to the client:
 
 pages/api/hello.ts
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -247,8 +240,6 @@ The following example sends a HTTP response with the status code `200` (`OK`) an
 
 pages/api/hello.ts
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -274,8 +265,6 @@ Taking a form as an example, you may want to redirect your client to a specified
 The following example redirects the client to the `/` path if the form is successfully submitted:
 
 pages/api/hello.ts
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -324,8 +313,6 @@ API Routes support [dynamic routes](/docs/pages/building-your-application/routin
 
 pages/api/post/\[pid\].ts
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -343,7 +330,7 @@ Now, a request to `/api/post/abc` will respond with the text: `Post: abc`.
 
 API Routes can be extended to catch all paths by adding three dots (`...`) inside the brackets. For example:
 
-*   `pages/api/post/[...slug].js` matches `/api/post/a`, but also `/api/post/a/b`, `/api/post/a/b/c` and so on.
+-   `pages/api/post/[...slug].js` matches `/api/post/a`, but also `/api/post/a/b`, `/api/post/a/b/c` and so on.
 
 > **Good to know**: You can use names other than `slug`, such as: `[...param]`
 
@@ -362,8 +349,6 @@ And in the case of `/api/post/a/b`, and any other matching path, new parameters 
 For example:
 
 pages/api/post/\[...slug\].ts
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -396,10 +381,10 @@ The `query` objects are as follows:
 
 ### Caveats[](#caveats)
 
-*   Predefined API routes take precedence over dynamic API routes, and dynamic API routes over catch all API routes. Take a look at the following examples:
-    *   `pages/api/post/create.js` - Will match `/api/post/create`
-    *   `pages/api/post/[pid].js` - Will match `/api/post/1`, `/api/post/abc`, etc. But not `/api/post/create`
-    *   `pages/api/post/[...slug].js` - Will match `/api/post/1/2`, `/api/post/a/b/c`, etc. But not `/api/post/create`, `/api/post/abc`
+-   Predefined API routes take precedence over dynamic API routes, and dynamic API routes over catch all API routes. Take a look at the following examples:
+    -   `pages/api/post/create.js` - Will match `/api/post/create`
+    -   `pages/api/post/[pid].js` - Will match `/api/post/1`, `/api/post/abc`, etc. But not `/api/post/create`
+    -   `pages/api/post/[...slug].js` - Will match `/api/post/1/2`, `/api/post/a/b/c`, etc. But not `/api/post/create`, `/api/post/abc`
 
 ## Streaming responses[](#streaming-responses)
 
@@ -408,8 +393,6 @@ While the Pages Router does support streaming responses with API Routes, we reco
 Here's how you can stream a response from an API Route with `writeHead`:
 
 pages/api/hello.ts
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -435,7 +418,3 @@ export default async function handler(
 ```
 
 Was this helpful?
-
-supported.
-
-Send

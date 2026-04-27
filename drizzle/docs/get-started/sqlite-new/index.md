@@ -5,31 +5,29 @@ canonical_url: "https://orm.drizzle.team/docs/get-started/sqlite-new"
 docset: "drizzle"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:00:11.910Z"
-content_hash: "10ccb90a0d6b5c14f6d8da1c681f2c515557c39b75f0b409e37181a22fa59c91"
+last_crawled_at: "2026-04-27T18:52:55.963Z"
+content_hash: "89beda67a541d26316f3846c193967474512f5c733caa1da2e9d1c1ce63950bc"
 menu_path: ["Get Started with Drizzle and SQLite"]
 section_path: []
-nav_prev: {"path": "drizzle/docs/get-started/sqlite-existing/index.md", "title": "Get Started with Drizzle and SQLite in existing project"}
-nav_next: {"path": "drizzle/docs/get-started/supabase-existing/index.md", "title": "Get Started with Drizzle and Supabase in existing project"}
+content_language: "en"
 ---
-
 ## Get Started with Drizzle and SQLite
 
 This guide assumes familiarity with:
 
-*   **dotenv** - package for managing environment variables - [read here](https://www.npmjs.com/package/dotenv)
-*   **tsx** - package for running TypeScript files - [read here](https://tsx.is/)
-*   **libsql** - a fork of SQLite optimized for low query latency, making it suitable for global applications - [read here](https://docs.turso.tech/libsql)
+-   **dotenv** - package for managing environment variables - [read here](https://www.npmjs.com/package/dotenv)
+-   **tsx** - package for running TypeScript files - [read here](https://tsx.is/)
+-   **libsql** - a fork of SQLite optimized for low query latency, making it suitable for global applications - [read here](https://docs.turso.tech/libsql)
 
 Drizzle has native support for SQLite connections with the `libsql` and `better-sqlite3` drivers.
 
-We will use `libsql` for this get started example. But if you want to find more ways to connect to SQLite check our [SQLite Connection](drizzle/docs/get-started-sqlite/index.md) page
+We will use `libsql` for this get started example. But if you want to find more ways to connect to SQLite check our [SQLite Connection](https://orm.drizzle.team/docs/get-started-sqlite) page
 
 #### Basic file structure
 
 This is the basic file structure of the project. In the `src/db` directory, we have table definition in `schema.ts`. In `drizzle` folder there are sql migration file and snapshots.
 
-```
+```plaintext
 📦 <project root>
  ├ 📂 drizzle
  ├ 📂 src
@@ -43,14 +41,6 @@ This is the basic file structure of the project. In the `src/db` directory, we h
 ```
 
 #### Step 1 - Install required packages[](#step-1---install-required-packages)
-
-npm
-
-yarn
-
-pnpm
-
-bun
 
 ```
 npm i drizzle-orm @libsql/client dotenv
@@ -76,15 +66,11 @@ bun add -D drizzle-kit tsx
 
 Create a `.env` file in the root of your project and add your database connection variable:
 
-```
-DB_FILE_NAME=
-```
-
 important
 
 For example, if you want to create an SQLite database file in the root of your project for testing purposes, you need to use `file:` before the actual filename, as this is the format required by `LibSQL`, like this:
 
-```
+```plaintext
 DB_FILE_NAME=file:local.db
 ```
 
@@ -94,18 +80,14 @@ You can check the **[LibSQL docs](https://docs.turso.tech/sdk/ts/reference#local
 
 Create a `index.ts` file in the `src` directory and initialize the connection:
 
-libsql
-
-libsql with config
-
-```
+```typescript
 import 'dotenv/config';
 import { drizzle } from 'drizzle-orm/libsql';
 
 const db = drizzle(process.env.DB_FILE_NAME!);
 ```
 
-```
+```typescript
 import 'dotenv/config';
 import { drizzle } from 'drizzle-orm/libsql';
 
@@ -115,7 +97,7 @@ const db = drizzle({ connection: { url: process.env.DB_FILE_NAME! }});
 
 If you need to provide your existing driver:
 
-```
+```typescript
 import 'dotenv/config';
 import { drizzle } from 'drizzle-orm/libsql';
 import { createClient } from '@libsql/client';
@@ -128,7 +110,7 @@ const db = drizzle({ client });
 
 Create a `schema.ts` file in the `src/db` directory and declare your table:
 
-```
+```typescript
 import { int, sqliteTable, text } from "drizzle-orm/sqlite-core";
 
 export const usersTable = sqliteTable("users_table", {
@@ -141,11 +123,11 @@ export const usersTable = sqliteTable("users_table", {
 
 #### Step 5 - Setup Drizzle config file[](#step-5---setup-drizzle-config-file)
 
-**Drizzle config** - a configuration file that is used by [Drizzle Kit](drizzle/docs/kit-overview/index.md) and contains all the information about your database connection, migration folder and schema files.
+**Drizzle config** - a configuration file that is used by [Drizzle Kit](https://orm.drizzle.team/docs/kit-overview) and contains all the information about your database connection, migration folder and schema files.
 
 Create a `drizzle.config.ts` file in the root of your project and add the following content:
 
-```
+```typescript
 import 'dotenv/config';
 import { defineConfig } from 'drizzle-kit';
 
@@ -163,11 +145,11 @@ export default defineConfig({
 
 You can directly apply changes to your database using the `drizzle-kit push` command. This is a convenient method for quickly testing new schema designs or modifications in a local development environment, allowing for rapid iterations without the need to manage migration files:
 
-```
+```bash
 npx drizzle-kit push
 ```
 
-Read more about the push command in [documentation](drizzle/docs/drizzle-kit-push/index.md).
+Read more about the push command in [documentation](https://orm.drizzle.team/docs/drizzle-kit-push).
 
 Tips
 
@@ -175,23 +157,23 @@ Alternatively, you can generate migrations using the `drizzle-kit generate` comm
 
 Generate migrations:
 
-```
+```bash
 npx drizzle-kit generate
 ```
 
 Apply migrations:
 
-```
+```bash
 npx drizzle-kit migrate
 ```
 
-Read more about migration process in [documentation](drizzle/docs/kit-overview/index.md).
+Read more about migration process in [documentation](https://orm.drizzle.team/docs/kit-overview).
 
 #### Step 7 - Seed and Query the database[](#step-7---seed-and-query-the-database)
 
 Let’s **update** the `src/index.ts` file with queries to create, read, update, and delete users
 
-```
+```typescript
 import 'dotenv/config';
 import { drizzle } from 'drizzle-orm/libsql';
 import { eq } from 'drizzle-orm';
@@ -243,14 +225,6 @@ You’ve already installed `tsx`, so we can run our queries now
 
 **Run `index.ts` script**
 
-npm
-
-yarn
-
-pnpm
-
-bun
-
 ```
 npx tsx src/index.ts
 ```
@@ -271,7 +245,7 @@ tips
 
 We suggest using `bun` to run TypeScript files. With `bun`, such scripts can be executed without issues or additional settings, regardless of whether your project is configured with CommonJS (CJS), ECMAScript Modules (ESM), or any other module format. To run a script with `bun`, use the following command:
 
-```
+```bash
 bun src/index.ts
 ```
 

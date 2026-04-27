@@ -5,41 +5,46 @@ canonical_url: "https://tailwindcss.com/docs/transition-duration"
 docset: "tailwind"
 kind: "framework"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:11:57.076Z"
-content_hash: "b4c08ec4ad30fc93ca7708dafa1e2796cff2b7f4d4b8c9e0e831ba15d82b05b4"
+last_crawled_at: "2026-04-27T20:32:06.319Z"
+content_hash: "6f186d297e536d3f8e6980e05fd45c89fa78753a94d18e1786d1a101a2a7741f"
 menu_path: ["transition-duration"]
 section_path: []
-nav_prev: {"path": "tailwind/docs/transition-behavior/index.md", "title": "transition-behavior"}
-nav_next: {"path": "tailwind/docs/transition-timing-function/index.md", "title": "transition-timing-function"}
+content_language: "en"
 ---
+[](/)
+
+[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
+
+1.  Transitions & Animation
+2.  transition-duration
+
+Transitions & Animation
 
 # transition-duration
 
 Utilities for controlling the duration of CSS transitions.
 
-Class
-
-Styles
-
-`duration-<number>`
-
+| Class | Styles |
+| --- | --- |
+| `duration-<number>` | 
 `transition-duration: <number>ms;`
 
-`duration-initial`
+ |
+| `duration-initial` | 
 
 `transition-duration: initial;`
 
-`duration-(<custom-property>)`
+ |
+| `duration-(<custom-property>)` | 
 
 `transition-duration: var(<custom-property>);`
 
-`duration-[<value>]`
+ |
+| `duration-[<value>]` | 
 
 `transition-duration: <value>;`
 
-## [Examples](#examples)
-
-### [Basic example](#basic-example)
+ |
 
 Use utilities like `duration-150` and `duration-700` to set the transition duration of an element in milliseconds:
 
@@ -55,15 +60,11 @@ duration-700
 <button class="transition duration-150 ease-in-out ...">Button A</button><button class="transition duration-300 ease-in-out ...">Button B</button><button class="transition duration-700 ease-in-out ...">Button C</button>
 ```
 
-### [Supporting reduced motion](#supporting-reduced-motion)
-
 For situations where the user has specified that they prefer reduced motion, you can conditionally apply animations and transitions using the `motion-safe` and `motion-reduce` variants:
 
 ```
 <button type="button" class="duration-300 motion-reduce:duration-0 ...">  <!-- ... --></button>
 ```
-
-### [Using a custom value](#using-a-custom-value)
 
 Use the `duration-[<value>]` syntax to set the transition duration based on a completely custom value:
 
@@ -79,8 +80,6 @@ For CSS variables, you can also use the `duration-(<custom-property>)` syntax:
 
 This is just a shorthand for `duration-[var(<custom-property>)]` that adds the `var()` function for you automatically.
 
-### [Responsive design](#responsive-design)
-
 Prefix a `transition-duration` utility with a breakpoint variant like `md:` to only apply the utility at medium screen sizes and above:
 
 ```
@@ -91,12 +90,12 @@ Learn more about using variants in the [variants documentation](/docs/hover-focu
 
 ### On this page
 
-*   [Quick reference](#quick-reference)
-*   [Examples](#examples)
-    *   [Basic example](#basic-example)
-    *   [Supporting reduced motion](#supporting-reduced-motion)
-    *   [Using a custom value](#using-a-custom-value)
-    *   [Responsive design](#responsive-design)
+-   [Quick reference](#quick-reference)
+-   [Examples](#examples)
+    -   [Basic example](#basic-example)
+    -   [Supporting reduced motion](#supporting-reduced-motion)
+    -   [Using a custom value](#using-a-custom-value)
+    -   [Responsive design](#responsive-design)
 
 [
 

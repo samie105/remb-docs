@@ -5,15 +5,16 @@ canonical_url: "https://docs.deno.com/runtime/reference/std/uuid/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:06:41.530Z"
-content_hash: "1297b177aa1336a122278b63734d8f173f2f8202098e975b98cded6c544a4738"
+last_crawled_at: "2026-04-27T17:48:57.668Z"
+content_hash: "f4a1ebb45496215b7f5a85cd4029bee0c905bdc1f4ee7657fc383ee667ce04b2"
 menu_path: ["@std/uuid"]
 section_path: []
+content_language: "en"
 ---
-On this page
+**On this page**
 
-*   [Overview](#overview)
-    *   [Add to your project](#add-to-your-project)
+-   [Overview](#overview)
+    -   [Add to your project](#add-to-your-project)
 
 ## Overview
 

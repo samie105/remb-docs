@@ -5,59 +5,13 @@ canonical_url: "https://tailwindcss.com/docs/max-block-size"
 docset: "tailwind"
 kind: "framework"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:54:07.006Z"
-content_hash: "3bd1e5341258fd689d5584d8a4df2c32ad117d0c61e9b5e1d35e1101481003de"
+last_crawled_at: "2026-04-27T20:06:32.809Z"
+content_hash: "5ef26d1a4bc7168ec06df4b954834dacdf7a761fb141dae4d7fe11afce546541"
 menu_path: ["max-block-size"]
 section_path: []
-nav_prev: {"path": "tailwind/docs/min-block-size/index.md", "title": "min-block-size"}
-nav_next: {"path": "tailwind/docs/font-family/index.md", "title": "font-family"}
+content_language: "en"
 ---
-
 Utilities for setting the maximum block size of an element.
-
-Class
-
-Styles
-
-`max-block-<number>`
-
-`max-block-size: calc(var(--spacing) * <number>);`
-
-`max-block-<fraction>`
-
-`max-block-size: calc(<fraction> * 100%);`
-
-`max-block-none`
-
-`max-block-size: none;`
-
-`max-block-px`
-
-`max-block-size: 1px;`
-
-`max-block-full`
-
-`max-block-size: 100%;`
-
-`max-block-screen`
-
-`max-block-size: 100vh;`
-
-`max-block-dvh`
-
-`max-block-size: 100dvh;`
-
-`max-block-dvw`
-
-`max-block-size: 100dvw;`
-
-`max-block-lvh`
-
-`max-block-size: 100lvh;`
-
-`max-block-lvw`
-
-`max-block-size: 100lvw;`
 
 ## [Examples](#examples)
 
@@ -119,7 +73,7 @@ Prefix a `max-block-size` utility with a breakpoint variant like `md:` to only a
 <div class="block-48 max-block-full md:max-block-screen ...">  <!-- ... --></div>
 ```
 
-Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).
+Learn more about using variants in the [variants documentation](https://tailwindcss.com/docs/hover-focus-and-other-states).
 
 ## [Customizing your theme](#customizing-your-theme)
 
@@ -129,4 +83,4 @@ The `max-block-<number>` utilities are driven by the `--spacing` theme variable,
 @theme {  --spacing: 1px; }
 ```
 
-Learn more about customizing the spacing scale in the [theme variable documentation](tailwind/docs/theme/index.md).
+Learn more about customizing the spacing scale in the [theme variable documentation](https://tailwindcss.com/docs/theme).

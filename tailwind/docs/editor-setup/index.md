@@ -5,14 +5,12 @@ canonical_url: "https://tailwindcss.com/docs/editor-setup"
 docset: "tailwind"
 kind: "framework"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:33:16.392Z"
-content_hash: "22c722e5224ff8c8cd27dc18ab7f37e5a83b2fe334be04102fc96301c9c22226"
+last_crawled_at: "2026-04-27T19:46:19.986Z"
+content_hash: "2e7240c81ea79b8f9c798732b3a37aeca33896b85cf2b4983517ab2ee7cc352f"
 menu_path: ["Editor setup"]
 section_path: []
-nav_prev: {"path": "tailwind/docs/installation/index.md", "title": "Get started with Tailwind CSS"}
-nav_next: {"path": "tailwind/docs/compatibility/index.md", "title": "Compatibility"}
+content_language: "en"
 ---
-
 Tooling to improve the developer experience when working with Tailwind CSS.
 
 ## [Syntax support](#syntax-support)
@@ -45,10 +43,10 @@ The official [Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/it
 
 ![Tailwind CSS IntelliSense extension for Visual Studio Code](https://tailwindcss.com/_next/static/media/intellisense.64b4d269.png)
 
-*   **Autocomplete** — providing intelligent suggestions for utility classes, as well as [CSS functions and directives](tailwind/docs/functions-and-directives/index.md).
-*   **Linting** — highlighting errors and potential bugs in both your CSS and your markup.
-*   **Hover previews** — revealing the complete CSS for utility classes when you hover over them.
-*   **Syntax highlighting** — so that Tailwind features that use custom CSS syntax are highlighted correctly.
+-   **Autocomplete** — providing intelligent suggestions for utility classes, as well as [CSS functions and directives](https://tailwindcss.com/docs/functions-and-directives).
+-   **Linting** — highlighting errors and potential bugs in both your CSS and your markup.
+-   **Hover previews** — revealing the complete CSS for utility classes when you hover over them.
+-   **Syntax highlighting** — so that Tailwind features that use custom CSS syntax are highlighted correctly.
 
 Check out the project [on GitHub](https://github.com/tailwindcss/intellisense) to learn more, or [add it to Visual Studio Code](vscode:extension/bradlc.vscode-tailwindcss) to get started now.
 
@@ -59,8 +57,6 @@ We maintain an official [Prettier plugin](https://github.com/tailwindlabs/pretti
 ![](https://tailwindcss.com/_next/static/media/prettier-banner.1039345a.jpg)
 
 It works seamlessly with custom Tailwind configurations, and because it’s just a Prettier plugin, it works anywhere Prettier works — including every popular editor and IDE, and of course on the command line.
-
-HTML
 
 ```
 <!-- Before --><button class="text-white px-4 sm:px-8 py-2 sm:py-3 bg-sky-700 hover:bg-sky-800">Submit</button><!-- After --><button class="bg-sky-700 px-4 py-2 text-white hover:bg-sky-800 sm:px-8 sm:py-3">Submit</button>

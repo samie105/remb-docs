@@ -5,26 +5,25 @@ canonical_url: "https://docs.deno.com/api/deno/ffi"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:09:11.768Z"
-content_hash: "eac5fd3ef86b2a90abe1762e4407fc5804019a79d3165062fc4b64f8a1360bf2"
+last_crawled_at: "2026-04-27T17:52:29.049Z"
+content_hash: "8a900bf451d4e20015c5af40fabeae0810784a987f88fd2ec9c772907762466f"
 menu_path: ["FFI - Deno documentation"]
 section_path: []
+content_language: "en"
 ---
-### Classes [#](#Classes)
-
 c
 
 [Deno.UnsafeCallback](./././~/Deno.UnsafeCallback "Deno.UnsafeCallback")
 
 An unsafe function pointer for passing JavaScript functions as C function pointers to foreign function calls.
 
-*   [callback](./././~/Deno.UnsafeCallback#property_callback)
-*   [close](./././~/Deno.UnsafeCallback#method_close_0)
-*   [definition](./././~/Deno.UnsafeCallback#property_definition)
-*   [pointer](./././~/Deno.UnsafeCallback#property_pointer)
-*   [ref](./././~/Deno.UnsafeCallback#method_ref_0)
-*   [threadSafe](./././~/Deno.UnsafeCallback#method_threadsafe_0)
-*   [unref](./././~/Deno.UnsafeCallback#method_unref_0)
+-   [callback](./././~/Deno.UnsafeCallback#property_callback)
+-   [close](./././~/Deno.UnsafeCallback#method_close_0)
+-   [definition](./././~/Deno.UnsafeCallback#property_definition)
+-   [pointer](./././~/Deno.UnsafeCallback#property_pointer)
+-   [ref](./././~/Deno.UnsafeCallback#method_ref_0)
+-   [threadSafe](./././~/Deno.UnsafeCallback#method_threadsafe_0)
+-   [unref](./././~/Deno.UnsafeCallback#method_unref_0)
 
 c
 
@@ -32,9 +31,9 @@ c
 
 An unsafe pointer to a function, for calling functions that are not present as symbols.
 
-*   [call](./././~/Deno.UnsafeFnPointer#property_call)
-*   [definition](./././~/Deno.UnsafeFnPointer#property_definition)
-*   [pointer](./././~/Deno.UnsafeFnPointer#property_pointer)
+-   [call](./././~/Deno.UnsafeFnPointer#property_call)
+-   [definition](./././~/Deno.UnsafeFnPointer#property_definition)
+-   [pointer](./././~/Deno.UnsafeFnPointer#property_pointer)
 
 c
 
@@ -42,11 +41,11 @@ c
 
 A collection of static functions for interacting with pointer objects.
 
-*   [create](./././~/Deno.UnsafePointer#method_create_0)
-*   [equals](./././~/Deno.UnsafePointer#method_equals_0)
-*   [of](./././~/Deno.UnsafePointer#method_of_0)
-*   [offset](./././~/Deno.UnsafePointer#method_offset_0)
-*   [value](./././~/Deno.UnsafePointer#method_value_0)
+-   [create](./././~/Deno.UnsafePointer#method_create_0)
+-   [equals](./././~/Deno.UnsafePointer#method_equals_0)
+-   [of](./././~/Deno.UnsafePointer#method_of_0)
+-   [offset](./././~/Deno.UnsafePointer#method_offset_0)
+-   [value](./././~/Deno.UnsafePointer#method_value_0)
 
 c
 
@@ -54,24 +53,22 @@ c
 
 An unsafe pointer view to a memory location as specified by the `pointer` value. The `UnsafePointerView` API follows the standard built in interface `DataView` for accessing the underlying types at an memory location (numbers, strings and raw bytes).
 
-*   [copyInto](./././~/Deno.UnsafePointerView#method_copyinto_0)
-*   [getArrayBuffer](./././~/Deno.UnsafePointerView#method_getarraybuffer_0)
-*   [getBigInt64](./././~/Deno.UnsafePointerView#method_getbigint64_0)
-*   [getBigUint64](./././~/Deno.UnsafePointerView#method_getbiguint64_0)
-*   [getBool](./././~/Deno.UnsafePointerView#method_getbool_0)
-*   [getCString](./././~/Deno.UnsafePointerView#method_getcstring_0)
-*   [getFloat32](./././~/Deno.UnsafePointerView#method_getfloat32_0)
-*   [getFloat64](./././~/Deno.UnsafePointerView#method_getfloat64_0)
-*   [getInt16](./././~/Deno.UnsafePointerView#method_getint16_0)
-*   [getInt32](./././~/Deno.UnsafePointerView#method_getint32_0)
-*   [getInt8](./././~/Deno.UnsafePointerView#method_getint8_0)
-*   [getPointer](./././~/Deno.UnsafePointerView#method_getpointer_0)
-*   [getUint16](./././~/Deno.UnsafePointerView#method_getuint16_0)
-*   [getUint32](./././~/Deno.UnsafePointerView#method_getuint32_0)
-*   [getUint8](./././~/Deno.UnsafePointerView#method_getuint8_0)
-*   [pointer](./././~/Deno.UnsafePointerView#property_pointer)
-
-### Functions [#](#Functions)
+-   [copyInto](./././~/Deno.UnsafePointerView#method_copyinto_0)
+-   [getArrayBuffer](./././~/Deno.UnsafePointerView#method_getarraybuffer_0)
+-   [getBigInt64](./././~/Deno.UnsafePointerView#method_getbigint64_0)
+-   [getBigUint64](./././~/Deno.UnsafePointerView#method_getbiguint64_0)
+-   [getBool](./././~/Deno.UnsafePointerView#method_getbool_0)
+-   [getCString](./././~/Deno.UnsafePointerView#method_getcstring_0)
+-   [getFloat32](./././~/Deno.UnsafePointerView#method_getfloat32_0)
+-   [getFloat64](./././~/Deno.UnsafePointerView#method_getfloat64_0)
+-   [getInt16](./././~/Deno.UnsafePointerView#method_getint16_0)
+-   [getInt32](./././~/Deno.UnsafePointerView#method_getint32_0)
+-   [getInt8](./././~/Deno.UnsafePointerView#method_getint8_0)
+-   [getPointer](./././~/Deno.UnsafePointerView#method_getpointer_0)
+-   [getUint16](./././~/Deno.UnsafePointerView#method_getuint16_0)
+-   [getUint32](./././~/Deno.UnsafePointerView#method_getuint32_0)
+-   [getUint8](./././~/Deno.UnsafePointerView#method_getuint8_0)
+-   [pointer](./././~/Deno.UnsafePointerView#property_pointer)
 
 f
 
@@ -79,16 +76,14 @@ f
 
 Opens an external dynamic library and registers symbols, making foreign functions available to be called.
 
-### Interfaces [#](#Interfaces)
-
 I
 
 [Deno.DynamicLibrary](./././~/Deno.DynamicLibrary "Deno.DynamicLibrary")
 
 A dynamic library resource. Use [`Deno.dlopen`](./././~/Deno.dlopen) to load a dynamic library and return this interface.
 
-*   [close](./././~/Deno.DynamicLibrary#method_close_0)
-*   [symbols](./././~/Deno.DynamicLibrary#property_symbols)
+-   [close](./././~/Deno.DynamicLibrary#method_close_0)
+-   [symbols](./././~/Deno.DynamicLibrary#property_symbols)
 
 I
 
@@ -96,11 +91,11 @@ I
 
 The interface for a foreign function as defined by its parameter and result types.
 
-*   [name](./././~/Deno.ForeignFunction#property_name)
-*   [nonblocking](./././~/Deno.ForeignFunction#property_nonblocking)
-*   [optional](./././~/Deno.ForeignFunction#property_optional)
-*   [parameters](./././~/Deno.ForeignFunction#property_parameters)
-*   [result](./././~/Deno.ForeignFunction#property_result)
+-   [name](./././~/Deno.ForeignFunction#property_name)
+-   [nonblocking](./././~/Deno.ForeignFunction#property_nonblocking)
+-   [optional](./././~/Deno.ForeignFunction#property_optional)
+-   [parameters](./././~/Deno.ForeignFunction#property_parameters)
+-   [result](./././~/Deno.ForeignFunction#property_result)
 
 I
 
@@ -114,9 +109,9 @@ I
 
 No documentation available
 
-*   [name](./././~/Deno.ForeignStatic#property_name)
-*   [optional](./././~/Deno.ForeignStatic#property_optional)
-*   [type](./././~/Deno.ForeignStatic#property_type)
+-   [name](./././~/Deno.ForeignStatic#property_name)
+-   [optional](./././~/Deno.ForeignStatic#property_optional)
+-   [type](./././~/Deno.ForeignStatic#property_type)
 
 I
 
@@ -124,7 +119,7 @@ I
 
 The native struct type for interfacing with foreign functions.
 
-*   [struct](./././~/Deno.NativeStructType#property_struct)
+-   [struct](./././~/Deno.NativeStructType#property_struct)
 
 I
 
@@ -132,7 +127,7 @@ I
 
 A non-null pointer, represented as an object at runtime. The object's prototype is `null` and cannot be changed. The object cannot be assigned to either and is thus entirely read-only.
 
-*   [brand](./././~/Deno.PointerObject#property_brand)
+-   [brand](./././~/Deno.PointerObject#property_brand)
 
 I
 
@@ -140,10 +135,8 @@ I
 
 Definition of a unsafe callback function.
 
-*   [parameters](./././~/Deno.UnsafeCallbackDefinition#property_parameters)
-*   [result](./././~/Deno.UnsafeCallbackDefinition#property_result)
-
-### Type Aliases [#](<#Type Aliases>)
+-   [parameters](./././~/Deno.UnsafeCallbackDefinition#property_parameters)
+-   [result](./././~/Deno.UnsafeCallbackDefinition#property_result)
 
 T
 
@@ -324,8 +317,6 @@ T
 [Deno.UnsafeCallbackFunction](./././~/Deno.UnsafeCallbackFunction "Deno.UnsafeCallbackFunction")
 
 An unsafe callback function.
-
-### Variables [#](#Variables)
 
 v
 

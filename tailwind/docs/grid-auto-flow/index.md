@@ -5,45 +5,51 @@ canonical_url: "https://tailwindcss.com/docs/grid-auto-flow"
 docset: "tailwind"
 kind: "framework"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:47:45.016Z"
-content_hash: "c581b02126bca366ab5774a091d5ee955013c32c5dfc3ce8bb84280f5b02d934"
+last_crawled_at: "2026-04-27T19:59:02.516Z"
+content_hash: "c469b40cd663fd4227ed7fe51b0e1d48dda3d363bcf14668c9a77b00772d3567"
 menu_path: ["grid-auto-flow"]
 section_path: []
-nav_prev: {"path": "tailwind/docs/grid-row/index.md", "title": "grid-row"}
-nav_next: {"path": "tailwind/docs/grid-auto-columns/index.md", "title": "grid-auto-columns"}
+content_language: "en"
 ---
+[](/)
+
+[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
+
+1.  Flexbox & Grid
+2.  grid-auto-flow
+
+Flexbox & Grid
 
 # grid-auto-flow
 
 Utilities for controlling how elements in a grid are auto-placed.
 
-Class
-
-Styles
-
-`grid-flow-row`
-
+| Class | Styles |
+| --- | --- |
+| `grid-flow-row` | 
 `grid-auto-flow: row;`
 
-`grid-flow-col`
+ |
+| `grid-flow-col` | 
 
 `grid-auto-flow: column;`
 
-`grid-flow-dense`
+ |
+| `grid-flow-dense` | 
 
 `grid-auto-flow: dense;`
 
-`grid-flow-row-dense`
+ |
+| `grid-flow-row-dense` | 
 
 `grid-auto-flow: row dense;`
 
-`grid-flow-col-dense`
+ |
+| `grid-flow-col-dense` | 
 
 `grid-auto-flow: column dense;`
 
-## [Examples](#examples)
-
-### [Basic example](#basic-example)
+ |
 
 Use utilities like `grid-flow-col` and `grid-flow-row-dense` to control how the auto-placement algorithm works for a grid layout:
 
@@ -61,8 +67,6 @@ Use utilities like `grid-flow-col` and `grid-flow-row-dense` to control how the 
 <div class="grid grid-flow-row-dense grid-cols-3 grid-rows-3 ...">  <div class="col-span-2">01</div>  <div class="col-span-2">02</div>  <div>03</div>  <div>04</div>  <div>05</div></div>
 ```
 
-### [Responsive design](#responsive-design)
-
 Prefix a `grid-auto-flow` utility with a breakpoint variant like `md:` to only apply the utility at medium screen sizes and above:
 
 ```
@@ -73,19 +77,23 @@ Learn more about using variants in the [variants documentation](/docs/hover-focu
 
 ### On this page
 
-*   [Quick reference](#quick-reference)
-*   [Examples](#examples)
-    *   [Basic example](#basic-example)
-    *   [Responsive design](#responsive-design)
+-   [Quick reference](#quick-reference)
+-   [Examples](#examples)
+    -   [Basic example](#basic-example)
+    -   [Responsive design](#responsive-design)
 
-![Build UIs that don’t suck — 5-day mini-course](/_next/static/media/course-promo.d3d6bc78.jpg)
+[
 
-5-day mini-course
+![Refactoring UI](/_next/static/media/book-promo.3012c0f6.png)
 
-Build UIs that don’t suck.
+From the creators of Tailwind CSS
 
-Short, tactical video lessons from the creator of Tailwind CSS, delivered directly to your inbox every day for a week.
+Make your ideas look awesome, without relying on a designer.
 
-[Get the free course](/build-uis-that-dont-suck)
+> “This is the survival kit I wish I had when I started building apps.”
+> 
+> Derrick Reimer, SavvyCal
+
+](https://www.refactoringui.com/?ref=sidebar)
 
 Copyright © 2026 Tailwind Labs Inc.·[Trademark Policy](/brand)

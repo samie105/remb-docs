@@ -5,37 +5,41 @@ canonical_url: "https://tailwindcss.com/docs/stroke-width"
 docset: "tailwind"
 kind: "framework"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:18:31.720Z"
-content_hash: "d182d8e0a27cbb240dc702c6e65d88c4f03f956afc54458f12b76102b4109bd4"
+last_crawled_at: "2026-04-27T20:42:02.595Z"
+content_hash: "b0a56097bb0bcc62e4168835f874e1c6902e772c6b0a567234424d79e7fb7544"
 menu_path: ["stroke-width"]
 section_path: []
-nav_prev: {"path": "tailwind/docs/stroke/index.md", "title": "stroke"}
-nav_next: {"path": "tailwind/docs/forced-color-adjust/index.md", "title": "forced-color-adjust"}
+content_language: "en"
 ---
+[](/)
+
+[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
+
+1.  SVG
+2.  stroke-width
+
+SVG
 
 # stroke-width
 
 Utilities for styling the stroke width of SVG elements.
 
-Class
-
-Styles
-
-`stroke-<number>`
-
+| Class | Styles |
+| --- | --- |
+| `stroke-<number>` | 
 `stroke-width: <number>;`
 
-`stroke-(length:<custom-property>)`
+ |
+| `stroke-(length:<custom-property>)` | 
 
 `stroke-width: var(<custom-property>);`
 
-`stroke-[<value>]`
+ |
+| `stroke-[<value>]` | 
 
 `stroke-width: <value>;`
 
-## [Examples](#examples)
-
-### [Basic example](#basic-example)
+ |
 
 Use `stroke-<number>` utilities like `stroke-1` and `stroke-2` to set the stroke width of an SVG:
 
@@ -44,8 +48,6 @@ Use `stroke-<number>` utilities like `stroke-1` and `stroke-2` to set the stroke
 ```
 
 This can be useful for styling icon sets like [Heroicons](https://heroicons.com).
-
-### [Using a custom value](#using-a-custom-value)
 
 Use the `stroke-[<value>]` syntax to set the stroke width based on a completely custom value:
 
@@ -61,8 +63,6 @@ For CSS variables, you can also use the `stroke-(length:<custom-property>)` synt
 
 This is just a shorthand for `stroke-[length:var(<custom-property>)]` that adds the `var()` function for you automatically.
 
-### [Responsive design](#responsive-design)
-
 Prefix a `stroke-width` utility with a breakpoint variant like `md:` to only apply the utility at medium screen sizes and above:
 
 ```
@@ -73,11 +73,11 @@ Learn more about using variants in the [variants documentation](/docs/hover-focu
 
 ### On this page
 
-*   [Quick reference](#quick-reference)
-*   [Examples](#examples)
-    *   [Basic example](#basic-example)
-    *   [Using a custom value](#using-a-custom-value)
-    *   [Responsive design](#responsive-design)
+-   [Quick reference](#quick-reference)
+-   [Examples](#examples)
+    -   [Basic example](#basic-example)
+    -   [Using a custom value](#using-a-custom-value)
+    -   [Responsive design](#responsive-design)
 
 ![Build UIs that don’t suck — 5-day mini-course](/_next/static/media/course-promo.d3d6bc78.jpg)
 

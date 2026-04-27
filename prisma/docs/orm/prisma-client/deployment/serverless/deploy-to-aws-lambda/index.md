@@ -5,46 +5,41 @@ canonical_url: "https://www.prisma.io/docs/orm/prisma-client/deployment/serverle
 docset: "prisma"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:54:04.793Z"
-content_hash: "d29d274adbd88702062a9ab9d65ae9ce8230ce7896e75031fa22474f0bcb2881"
+last_crawled_at: "2026-04-27T19:43:46.839Z"
+content_hash: "0b808d1bea8e594a630d693d1987a39e8f5b5e347980a718e097076d3be6d48b"
 menu_path: ["Deploy to AWS Lambda"]
 section_path: []
-nav_prev: {"path": "prisma/docs/orm/prisma-client/deployment/edge/overview/index.md", "title": "Deploying edge functions with Prisma ORM"}
-nav_next: {"path": "prisma/docs/orm/prisma-client/deployment/serverless/deploy-to-azure-functions/index.md", "title": "Deploy to Azure Functions"}
+tab_variants: ["npm","pnpm","yarn","bun"]
+content_language: "en"
 ---
-
-Deployment
-
-Serverless
-
 Learn how to deploy your Prisma ORM-backed applications to AWS Lambda with AWS SAM, Serverless Framework, or SST
 
-Questions answered in this page
+**Questions answered in this page**
 
-*   How to deploy Prisma to AWS Lambda?
-*   Which binaryTargets should I configure?
-*   How to handle connection pooling on Lambda?
+-   How to deploy Prisma to AWS Lambda?
+-   Which binaryTargets should I configure?
+-   How to handle connection pooling on Lambda?
 
 While a deployment framework is not required to deploy to AWS Lambda, this guide covers deploying with:
 
-*   [AWS Serverless Application Model (SAM)](https://aws.amazon.com/serverless/sam/) is an open-source framework from AWS that can be used in the creation of serverless applications. AWS SAM includes the [AWS SAM CLI](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-sam-reference.html#serverless-sam-cli), which you can use to build, test, and deploy your application.
+-   [AWS Serverless Application Model (SAM)](https://aws.amazon.com/serverless/sam/) is an open-source framework from AWS that can be used in the creation of serverless applications. AWS SAM includes the [AWS SAM CLI](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-sam-reference.html#serverless-sam-cli), which you can use to build, test, and deploy your application.
     
-*   [Serverless Framework](https://www.serverless.com/framework) provides a CLI that helps with workflow automation and AWS resource provisioning. While Prisma ORM works well with the Serverless Framework "out of the box", there are a few improvements that can be made within your project to ensure a smooth deployment and performance. There is also additional configuration that is needed if you are using the [`serverless-webpack`](https://www.npmjs.com/package/serverless-webpack) or [`serverless-bundle`](https://www.npmjs.com/package/serverless-bundle) libraries.
+-   [Serverless Framework](https://www.serverless.com/framework) provides a CLI that helps with workflow automation and AWS resource provisioning. While Prisma ORM works well with the Serverless Framework "out of the box", there are a few improvements that can be made within your project to ensure a smooth deployment and performance. There is also additional configuration that is needed if you are using the [`serverless-webpack`](https://www.npmjs.com/package/serverless-webpack) or [`serverless-bundle`](https://www.npmjs.com/package/serverless-bundle) libraries.
     
-*   [SST](https://sst.dev/) provides tools that make it easy for developers to define, test, debug, and deploy their applications. Prisma ORM works well with SST but must be configured so that your schema is correctly packaged by SST.
+-   [SST](https://sst.dev/) provides tools that make it easy for developers to define, test, debug, and deploy their applications. Prisma ORM works well with SST but must be configured so that your schema is correctly packaged by SST.
     
 
 This section covers changes you will need to make to your application, regardless of framework. After following these steps, follow the steps for your framework.
 
-*   [Deploying with AWS SAM](#deploying-with-aws-sam)
-*   [Deploying with the Serverless Framework](#deploying-with-the-serverless-framework)
-*   [Deploying with SST](#deploying-with-sst)
+-   [Deploying with AWS SAM](#deploying-with-aws-sam)
+-   [Deploying with the Serverless Framework](#deploying-with-the-serverless-framework)
+-   [Deploying with SST](#deploying-with-sst)
 
 ### [Connection pooling](#connection-pooling)
 
 In a Function as a Service (FaaS) environment, each function invocation typically creates a new database connection. Unlike a continuously running Node.js server, these connections aren't maintained between executions. For better performance in serverless environments, implement connection pooling to reuse existing database connections rather than creating new ones for each function call.
 
-You can use [Prisma Postgres](https://www.prisma.io/docs/postgres), which has built-in connection pooling, to solve this issue. For other solutions, see the [connection management guide for serverless environments](prisma/docs/orm/prisma-client/setup-and-configuration/databases-connections/index.md#serverless-environments-faas).
+You can use [Prisma Postgres](https://www.prisma.io/docs/postgres), which has built-in connection pooling, to solve this issue. For other solutions, see the [connection management guide for serverless environments](https://www.prisma.io/docs/orm/prisma-client/setup-and-configuration/databases-connections#serverless-environments-faas).
 
 ### [Loading environment variables](#loading-environment-variables)
 
@@ -57,6 +52,8 @@ Your functions will need the `DATABASE_URL` environment variable to access the d
 First, make sure that the plugin is installed:
 
 Then, add `serverless-dotenv-plugin` to your list of plugins in `serverless.yml`:
+
+serverless.yml
 
 ```
 plugins:
@@ -84,6 +81,8 @@ While SST supports `.env` files, [it is not recommended](https://v2.sst.dev/conf
 
 The SST guide [available here](https://v2.sst.dev/config#overview) is a step-by-step guide to get started with `Config`. Assuming you have created a new secret called `DATABASE_URL` and have [bound that secret to your app](https://v2.sst.dev/config#bind-the-config), you can set up `PrismaClient` with the following:
 
+prisma.ts
+
 ```
 import { PrismaClient } from "./generated/client";
 import { Config } from "sst/node/config";
@@ -100,5 +99,3 @@ if (process.env.NODE_ENV !== "production") globalForPrisma.prisma = prisma;
 
 export default prisma;
 ```
-
-[Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/prisma-client/deployment/serverless/deploy-to-aws-lambda.mdx)

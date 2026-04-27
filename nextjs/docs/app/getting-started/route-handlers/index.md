@@ -5,23 +5,24 @@ canonical_url: "https://nextjs.org/docs/app/getting-started/route-handlers"
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:13:42.724Z"
-content_hash: "00a47c47a9e49eb1bc4a28fe4ab313fc2f3a7a03594c05b5eefd04e3c99c2b09"
+last_crawled_at: "2026-04-27T18:12:24.615Z"
+content_hash: "ead1a8300a496175eb903c366d72a86265c7d02e72faa820bc106f3be5d1d7d7"
 menu_path: ["Route Handlers"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/getting-started/metadata-and-og-images/index.md", "title": "Metadata and OG images"}
-nav_next: {"path": "nextjs/docs/app/getting-started/proxy/index.md", "title": "Proxy"}
+version: "latest"
+content_language: "en"
 ---
+[App Router](/docs/app)[Getting Started](/docs/app/getting-started)Route Handlers
 
 # Route Handlers
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 ## Route Handlers[](#route-handlers)
 
 Route Handlers allow you to create custom request handlers for a given route using the Web [Request](https://developer.mozilla.org/docs/Web/API/Request) and [Response](https://developer.mozilla.org/docs/Web/API/Response) APIs.
 
-![Route.js Special File](/_next/image?url=https%3A%2F%2Fh8DxKfmAPhn8O0p3.public.blob.vercel-storage.com%2Fdocs%2Flight%2Froute-special-file.png&w=3840&q=75)![Route.js Special File](/_next/image?url=https%3A%2F%2Fh8DxKfmAPhn8O0p3.public.blob.vercel-storage.com%2Fdocs%2Fdark%2Froute-special-file.png&w=3840&q=75)
+![Route.js Special File](https://h8DxKfmAPhn8O0p3.public.blob.vercel-storage.com/docs/light/route-special-file.png)
 
 > **Good to know**: Route Handlers are only available inside the `app` directory. They are the equivalent of [API Routes](/docs/pages/building-your-application/routing/api-routes) inside the `pages` directory meaning you **do not** need to use API Routes and Route Handlers together.
 
@@ -30,8 +31,6 @@ Route Handlers allow you to create custom request handlers for a given route usi
 Route Handlers are defined in a [`route.js|ts` file](/docs/app/api-reference/file-conventions/route) inside the `app` directory:
 
 app/api/route.ts
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -54,8 +53,6 @@ In addition to supporting the native [Request](https://developer.mozilla.org/doc
 Route Handlers are not cached by default. You can, however, opt into caching for `GET` methods. Other supported HTTP methods are **not** cached. To cache a `GET` method, use a [route config option](/docs/app/guides/caching-without-cache-components#dynamic) such as `export const dynamic = 'force-static'` in your Route Handler file.
 
 app/items/route.ts
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -152,38 +149,18 @@ Special Route Handlers like [`sitemap.ts`](/docs/app/api-reference/file-conventi
 
 You can consider a `route` the lowest level routing primitive.
 
-*   They **do not** participate in layouts or client-side navigations like `page`.
-*   There **cannot** be a `route.js` file at the same route as `page.js`.
+-   They **do not** participate in layouts or client-side navigations like `page`.
+-   There **cannot** be a `route.js` file at the same route as `page.js`.
 
-Page
-
-Route
-
-Result
-
-`app/page.js`
-
-`app/route.js`
-
-Conflict
-
-`app/page.js`
-
-`app/api/route.js`
-
-Valid
-
-`app/[user]/page.js`
-
-`app/api/route.js`
-
-Valid
+| Page | Route | Result |
+| --- | --- | --- |
+| `app/page.js` | `app/route.js` | Conflict |
+| `app/page.js` | `app/api/route.js` | Valid |
+| `app/[user]/page.js` | `app/api/route.js` | Valid |
 
 Each `route.js` or `page.js` file takes over all HTTP verbs for that route.
 
 app/page.ts
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -205,8 +182,6 @@ In TypeScript, you can type the `context` parameter for Route Handlers with the 
 
 app/users/\[id\]/route.ts
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -220,7 +195,7 @@ export async function GET(_req: NextRequest, ctx: RouteContext<'/users/[id]'>) {
 
 > **Good to know**
 > 
-> *   Types are generated during `next dev`, `next build` or `next typegen`.
+> -   Types are generated during `next dev`, `next build` or `next typegen`.
 
 ## API Reference
 
@@ -240,20 +215,4 @@ Learn how to use Next.js as a backend framework
 
 ](/docs/app/guides/backend-for-frontend)
 
-[Previous
-
-Metadata and OG images
-
-](/docs/app/getting-started/metadata-and-og-images)
-
-[Next
-
-Proxy
-
-](/docs/app/getting-started/proxy)
-
 Was this helpful?
-
-supported.
-
-Send

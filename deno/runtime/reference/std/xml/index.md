@@ -5,15 +5,16 @@ canonical_url: "https://docs.deno.com/runtime/reference/std/xml/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:07:08.857Z"
-content_hash: "675c828b7b916b0576815cf372130bd8ce801841d03db2c76f67a3af0ca0cced"
+last_crawled_at: "2026-04-27T17:49:29.717Z"
+content_hash: "be934a282a2ed0a916f6464725dc67974b8d132ec4a78275247064df4cc7860d"
 menu_path: ["@std/xml"]
 section_path: []
+content_language: "en"
 ---
-On this page
+**On this page**
 
-*   [Overview](#overview)
-    *   [Add to your project](#add-to-your-project)
+-   [Overview](#overview)
+    -   [Add to your project](#add-to-your-project)
 
 ## Overview
 
@@ -25,23 +26,10 @@ This module implements a non-validating XML 1.0 parser based on the [W3C XML 1.0
 
 Two parsing APIs are provided for different use cases:
 
-API
-
-Use Case
-
-Output
-
-[`parse`](https://jsr.io/@std/xml@0.1.0/doc/~/parse)
-
-Parse a complete XML string
-
-Document tree
-
-[`parseXmlStream`](https://jsr.io/@std/xml@0.1.0/doc/~/parseXmlStream)
-
-Streaming with maximum throughput
-
-Direct callbacks
+| API | Use Case | Output |
+| --- | --- | --- |
+| [`parse`](https://jsr.io/@std/xml@0.1.1/doc/~/parse) | Parse a complete XML string | Document tree |
+| [`parseXmlStream`](https://jsr.io/@std/xml@0.1.1/doc/~/parseXmlStream) | Streaming with maximum throughput | Direct callbacks |
 
 ## Quick Examples
 
@@ -94,9 +82,9 @@ await parseXmlStreamFromBytes(response.body!, {
 
 Both parsers support optional position tracking (line, column, offset) for debugging and error reporting:
 
-*   **DOM parser ([`parse`](https://jsr.io/@std/xml@0.1.0/doc/~/parse))**: Position tracking is **enabled by default** to provide detailed error messages. Disable with `{ trackPosition: false }` for a performance boost when parsing trusted XML.
+-   **DOM parser ([`parse`](https://jsr.io/@std/xml@0.1.1/doc/~/parse))**: Position tracking is **enabled by default** to provide detailed error messages. Disable with `{ trackPosition: false }` for a performance boost when parsing trusted XML.
     
-*   **Streaming parser ([`parseXmlStream`](https://jsr.io/@std/xml@0.1.0/doc/~/parseXmlStream))**: Position tracking is **disabled by default** for optimal streaming performance. Enable with `{ trackPosition: true }` when you need position info.
+-   **Streaming parser ([`parseXmlStream`](https://jsr.io/@std/xml@0.1.1/doc/~/parseXmlStream))**: Position tracking is **disabled by default** for optimal streaming performance. Enable with `{ trackPosition: true }` when you need position info.
     
 
 ### Add to your project

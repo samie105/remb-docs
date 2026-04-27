@@ -5,49 +5,15 @@ canonical_url: "https://tailwindcss.com/docs/animation"
 docset: "tailwind"
 kind: "framework"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:12:33.725Z"
-content_hash: "4866e5774ccedc4d61b4fb5b197b353de5074dd84d548c19b43c940944d43a40"
+last_crawled_at: "2026-04-27T20:33:15.185Z"
+content_hash: "622673baf4164e156accadf6977cbf8456e76fe40c2d069ce07b73063326c966"
 menu_path: ["animation"]
 section_path: []
-nav_prev: {"path": "tailwind/docs/transition-delay/index.md", "title": "transition-delay"}
-nav_next: {"path": "tailwind/docs/backface-visibility/index.md", "title": "backface-visibility"}
+content_language: "en"
 ---
-
 Transitions & Animation
 
 Utilities for animating elements with CSS animations.
-
-Class
-
-Styles
-
-`animate-spin`
-
-`animation: var(--animate-spin); /* spin 1s linear infinite */ @keyframes spin { to { transform: rotate(360deg); } }`
-
-`animate-ping`
-
-`animation: var(--animate-ping); /* ping 1s cubic-bezier(0, 0, 0.2, 1) infinite */ @keyframes ping { 75%, 100% { transform: scale(2); opacity: 0; } }`
-
-`animate-pulse`
-
-`animation: var(--animate-pulse); /* pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite */ @keyframes pulse { 50% { opacity: 0.5; } }`
-
-`animate-bounce`
-
-`animation: var(--animate-bounce); /* bounce 1s infinite */ @keyframes bounce { 0%, 100% { transform: translateY(-25%); animation-timing-function: cubic-bezier(0.8, 0, 1, 1); } 50% { transform: none; animation-timing-function: cubic-bezier(0, 0, 0.2, 1); } }`
-
-`animate-none`
-
-`animation: none;`
-
-`animate-(<custom-property>)`
-
-`animation: var(<custom-property>);`
-
-`animate-[<value>]`
-
-`animation: <value>;`
 
 ## [Examples](#examples)
 
@@ -115,7 +81,7 @@ Prefix an `animation` utility with a breakpoint variant like `md:` to only apply
 <div class="animate-none md:animate-spin ...">  <!-- ... --></div>
 ```
 
-Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).
+Learn more about using variants in the [variants documentation](https://tailwindcss.com/docs/hover-focus-and-other-states).
 
 ## [Customizing your theme](#customizing-your-theme)
 
@@ -131,4 +97,4 @@ Now the `animate-wiggle` utility can be used in your markup:
 <div class="animate-wiggle">  <!-- ... --></div>
 ```
 
-Learn more about customizing your theme in the [theme documentation](tailwind/docs/theme/index.md#customizing-your-theme).
+Learn more about customizing your theme in the [theme documentation](https://tailwindcss.com/docs/theme#customizing-your-theme).

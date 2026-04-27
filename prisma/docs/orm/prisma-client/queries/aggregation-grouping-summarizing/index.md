@@ -5,19 +5,17 @@ canonical_url: "https://www.prisma.io/docs/orm/prisma-client/queries/aggregation
 docset: "prisma"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:46:47.557Z"
-content_hash: "23683febcfa2e79b3193ad9d17aafdf5317ae74eba01bec55d671a1df40b8b8f"
+last_crawled_at: "2026-04-27T19:39:00.006Z"
+content_hash: "30ab252ff945ae334fc7c3defe10b3128bebdd34fc100f65ff39817e493190d6"
 menu_path: ["Aggregation, grouping, and summarizing"]
 section_path: []
-nav_prev: {"path": "prisma/docs/orm/prisma-client/queries/advanced/query-optimization-performance/index.md", "title": "Query optimization"}
-nav_next: {"path": "prisma/docs/orm/prisma-client/queries/crud/index.md", "title": "CRUD"}
+content_language: "en"
 ---
-
 Use Prisma Client to aggregate, group by, count, and select distinct.
 
 Prisma Client allows you to count records, aggregate number fields, and select distinct field values.
 
-Prisma Client allows you to [`aggregate`](prisma/docs/orm/reference/prisma-client-reference/index.md#aggregate) on the **number** fields (such as `Int` and `Float`) of a model. The following query returns the average age of all users:
+Prisma Client allows you to [`aggregate`](https://www.prisma.io/docs/orm/reference/prisma-client-reference#aggregate) on the **number** fields (such as `Int` and `Float`) of a model. The following query returns the average age of all users:
 
 ```
 const aggregations = await prisma.user.aggregate({
@@ -29,9 +27,9 @@ console.log('Average age:' + aggregations._avg.age);
 
 You can combine aggregation with filtering and ordering. For example, the following query returns the average age of users:
 
-*   Ordered by `age` ascending
-*   Where `email` contains `prisma.io`
-*   Limited to the 10 users
+-   Ordered by `age` ascending
+-   Where `email` contains `prisma.io`
+-   Limited to the 10 users
 
 ```
 const aggregations = await prisma.user.aggregate({
@@ -70,12 +68,12 @@ const aggregations = await prisma.user.aggregate({
 
 The query returns `{ _avg: { age: null } }` in either of the following scenarios:
 
-*   There are no users
-*   The value of every user's `age` field is `null`
+-   There are no users
+-   The value of every user's `age` field is `null`
 
 This allows you to differentiate between the true aggregate value (which could be zero) and no data.
 
-Prisma Client's [`groupBy()`](prisma/docs/orm/reference/prisma-client-reference/index.md#groupby) allows you to **group records** by one or more field values - such as `country`, or `country` and `city` and **perform aggregations** on each group, such as finding the average age of people living in a particular city.
+Prisma Client's [`groupBy()`](https://www.prisma.io/docs/orm/reference/prisma-client-reference#groupby) allows you to **group records** by one or more field values - such as `country`, or `country` and `city` and **perform aggregations** on each group, such as finding the average age of people living in a particular city.
 
 The following example groups all users by the `country` field and returns the total number of profile views for each country:
 
@@ -205,9 +203,9 @@ const groupUsers = await prisma.user.groupBy({
 
 The following constraints apply when you combine `groupBy()` and `orderBy`:
 
-*   You can `orderBy` fields that are present in `by`
-*   You can `orderBy` aggregate (Preview in 2.21.0 and later)
-*   If you use `skip` and/or `take` with `groupBy()`, you must also include `orderBy` in the query
+-   You can `orderBy` fields that are present in `by`
+-   You can `orderBy` aggregate (Preview in 2.21.0 and later)
+-   If you use `skip` and/or `take` with `groupBy()`, you must also include `orderBy` in the query
 
 #### [Order by aggregate group](#order-by-aggregate-group)
 
@@ -269,7 +267,7 @@ Both `distinct` and `groupBy()` group records by one or more unique field values
 
 ### [Count records](#count-records)
 
-Use [`count()`](prisma/docs/orm/reference/prisma-client-reference/index.md#count) to count the number of records or non-`null` field values. The following example query counts all users:
+Use [`count()`](https://www.prisma.io/docs/orm/reference/prisma-client-reference#count) to count the number of records or non-`null` field values. The following example query counts all users:
 
 ```
 const userCount = await prisma.user.count();
@@ -299,10 +297,10 @@ const usersWithCount = await prisma.user.findMany({
 
 The `_count` parameter:
 
-*   Can be used inside a top-level `include` _or_ `select`
-*   Can be used with any query that returns records (including `delete`, `update`, and `findFirst`)
-*   Can return [multiple relation counts](#return-multiple-relation-counts)
-*   Can [filter relation counts](#filter-the-relation-count) (from version 4.3.0)
+-   Can be used inside a top-level `include` _or_ `select`
+-   Can be used with any query that returns records (including `delete`, `update`, and `findFirst`)
+-   Can return [multiple relation counts](#return-multiple-relation-counts)
+-   Can [filter relation counts](#filter-the-relation-count) (from version 4.3.0)
 
 #### [Return a relations count with `include`](#return-a-relations-count-with-include)
 
@@ -376,7 +374,7 @@ const usersWithCount = await prisma.user.findMany({
 
 #### [Filter the relation count](#filter-the-relation-count)
 
-Use `where` to filter the fields returned by the `_count` output type. You can do this on [scalar fields](prisma/docs/orm/prisma-schema/data-model/models/index.md#scalar-fields) and [relation fields](prisma/docs/orm/prisma-schema/data-model/models/index.md#relation-fields).
+Use `where` to filter the fields returned by the `_count` output type. You can do this on [scalar fields](https://www.prisma.io/docs/orm/prisma-schema/data-model/models#scalar-fields) and [relation fields](https://www.prisma.io/docs/orm/prisma-schema/data-model/models#relation-fields).
 
 For example, the following query returns all user posts with the title "Hello!":
 
@@ -415,8 +413,8 @@ await prisma.user.findMany({
 
 In [2.15.0](https://github.com/prisma/prisma/releases/2.15.0) and later, you can count all records as well as all instances of non-`null` field values. The following query returns a count of:
 
-*   All `User` records (`_all`)
-*   All non-`null` `name` values (not distinct values, just values that are not `null`)
+-   All `User` records (`_all`)
+-   All non-`null` `name` values (not distinct values, just values that are not `null`)
 
 ```
 const userCount = await prisma.user.count({
@@ -455,7 +453,7 @@ const postCount = await prisma.post.count({
 });
 ```
 
-Prisma Client allows you to filter duplicate rows from a Prisma Query response to a [`findMany`](prisma/docs/orm/reference/prisma-client-reference/index.md#findmany) query using [`distinct`](prisma/docs/orm/reference/prisma-client-reference/index.md#distinct) . `distinct` is often used in combination with [`select`](prisma/docs/orm/reference/prisma-client-reference/index.md#select) to identify certain unique combinations of values in the rows of your table.
+Prisma Client allows you to filter duplicate rows from a Prisma Query response to a [`findMany`](https://www.prisma.io/docs/orm/reference/prisma-client-reference#findmany) query using [`distinct`](https://www.prisma.io/docs/orm/reference/prisma-client-reference#distinct) . `distinct` is often used in combination with [`select`](https://www.prisma.io/docs/orm/reference/prisma-client-reference#select) to identify certain unique combinations of values in the rows of your table.
 
 The following example returns all fields for all `User` records with distinct `name` field values:
 
@@ -488,18 +486,20 @@ const distinctRoles = await prisma.user.findMany({
 
 Prisma Client's `distinct` option does not use SQL `SELECT DISTINCT`. Instead, `distinct` uses:
 
-*   A `SELECT` query
-*   In-memory post-processing to select distinct
+-   A `SELECT` query
+-   In-memory post-processing to select distinct
 
 It was designed in this way in order to **support `select` and `include`** as part of `distinct` queries.
 
 The following example selects distinct on `gameId` and `playerId`, ordered by `score`, in order to return **each player's highest score per game**. The query uses `include` and `select` to include additional data:
 
-*   Select `score` (field on `Play`)
-*   Select related player name (relation between `Play` and `User`)
-*   Select related game name (relation between `Play` and `Game`)
+-   Select `score` (field on `Play`)
+-   Select related player name (relation between `Play` and `User`)
+-   Select related game name (relation between `Play` and `Game`)
 
-Expand for sample schema
+**Expand for sample schema**
+
+schema.prisma
 
 ```
 model User {

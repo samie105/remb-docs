@@ -5,50 +5,51 @@ canonical_url: "https://docs.deno.com/runtime/fundamentals/modules/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:47:17.095Z"
-content_hash: "d3bbe848b15f71493d00ee39ae9320b2c23bec0a977c7d553ecf6b603b95d5f8"
+last_crawled_at: "2026-04-27T17:20:57.540Z"
+content_hash: "a956cbd6e8f925925cc6e526f204be11178d7ac3ee0eb6c4588a8e3f9b886b79"
 menu_path: ["Modules and dependencies"]
 section_path: []
+content_language: "en"
 ---
-On this page
+**On this page**
 
-*   [Importing modules](#importing-modules)
-*   [Import attributes](#import-attributes)
-*   [WebAssembly modules](#webassembly-modules)
-*   [Data URL imports](#data-url-imports)
-*   [Importing third party modules and libraries](#importing-third-party-modules-and-libraries)
-*   [Managing third party modules and libraries](#managing-third-party-modules-and-libraries)
-*   [Differentiating between imports or importMap in deno.json and --import-map option](#differentiating-between-imports-or-importmap-in-deno.json-and---import-map-option)
-*   [Adding dependencies with deno add](#adding-dependencies-with-deno-add)
-*   [Package Versions](#package-versions)
-*   [HTTPS imports](#https-imports)
-*   [Overriding dependencies](#overriding-dependencies)
-    *   [Overriding local packages](#overriding-local-packages)
-    *   [Overriding NPM packages](#overriding-npm-packages)
-    *   [Overriding HTTPS imports](#overriding-https-imports)
-*   [Vendoring remote modules](#vendoring-remote-modules)
-*   [Publishing modules](#publishing-modules)
-*   [Reloading modules](#reloading-modules)
-*   [Development only dependencies](#development-only-dependencies)
-    *   [JSR packages in package.json](#jsr-packages-in-package.json)
-    *   [Dependency overrides](#dependency-overrides)
-    *   [Why does Deno not have a devImports field?](#why-does-deno-not-have-a-devimports-field%3F)
-*   [Using only cached modules](#using-only-cached-modules)
-*   [Integrity Checking and Lock Files](#integrity-checking-and-lock-files)
-    *   [Frozen lockfile](#frozen-lockfile)
-    *   [Changing lockfile path](#changing-lockfile-path)
-*   [Supply chain management](#supply-chain-management)
-    *   [Core practices](#core-practices)
-    *   [Typical CI pattern](#typical-ci-pattern)
-    *   [Updating dependencies intentionally](#updating-dependencies-intentionally)
-    *   [Troubleshooting a frozen lockfile](#troubleshooting-a-frozen-lockfile)
-    *   [Safe regeneration checklist](#safe-regeneration-checklist)
-    *   [Vendor vs lockfile](#vendor-vs-lockfile)
-    *   [Quick decision guide](#quick-decision-guide)
-    *   [Minimum supply chain baseline (recommended)](#minimum-supply-chain-baseline-\(recommended\))
-*   [Private repositories](#private-repositories)
-    *   [DENO\_AUTH\_TOKENS](#deno_auth_tokens)
-    *   [GitHub](#github)
+-   [Importing modules](#importing-modules)
+-   [Import attributes](#import-attributes)
+-   [WebAssembly modules](#webassembly-modules)
+-   [Data URL imports](#data-url-imports)
+-   [Importing third party modules and libraries](#importing-third-party-modules-and-libraries)
+-   [Managing third party modules and libraries](#managing-third-party-modules-and-libraries)
+-   [Differentiating between imports or importMap in deno.json and --import-map option](#differentiating-between-imports-or-importmap-in-deno.json-and---import-map-option)
+-   [Adding dependencies with deno add](#adding-dependencies-with-deno-add)
+-   [Package Versions](#package-versions)
+-   [HTTPS imports](#https-imports)
+-   [Overriding dependencies](#overriding-dependencies)
+    -   [Overriding local packages](#overriding-local-packages)
+    -   [Overriding NPM packages](#overriding-npm-packages)
+    -   [Overriding HTTPS imports](#overriding-https-imports)
+-   [Vendoring remote modules](#vendoring-remote-modules)
+-   [Publishing modules](#publishing-modules)
+-   [Reloading modules](#reloading-modules)
+-   [Development only dependencies](#development-only-dependencies)
+    -   [JSR packages in package.json](#jsr-packages-in-package.json)
+    -   [Dependency overrides](#dependency-overrides)
+    -   [Why does Deno not have a devImports field?](#why-does-deno-not-have-a-devimports-field%3F)
+-   [Using only cached modules](#using-only-cached-modules)
+-   [Integrity Checking and Lock Files](#integrity-checking-and-lock-files)
+    -   [Frozen lockfile](#frozen-lockfile)
+    -   [Changing lockfile path](#changing-lockfile-path)
+-   [Supply chain management](#supply-chain-management)
+    -   [Core practices](#core-practices)
+    -   [Typical CI pattern](#typical-ci-pattern)
+    -   [Updating dependencies intentionally](#updating-dependencies-intentionally)
+    -   [Troubleshooting a frozen lockfile](#troubleshooting-a-frozen-lockfile)
+    -   [Safe regeneration checklist](#safe-regeneration-checklist)
+    -   [Vendor vs lockfile](#vendor-vs-lockfile)
+    -   [Quick decision guide](#quick-decision-guide)
+    -   [Minimum supply chain baseline (recommended)](#minimum-supply-chain-baseline-\(recommended\))
+-   [Private repositories](#private-repositories)
+    -   [DENO\_AUTH\_TOKENS](#deno_auth_tokens)
+    -   [GitHub](#github)
 
 Deno uses [ECMAScript modules](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules) as its default module system to align with modern JavaScript standards and to promote a more efficient and consistent development experience. It's the official standard for JavaScript modules, allows for better tree-shaking, improved tooling integration, and native support across different environments.
 
@@ -317,73 +318,20 @@ For example:
 
 Here is an overview of all the ways you can specify a version or a range:
 
-Symbol
-
-Description
-
-Example
-
-`1.2.3`
-
-An exact version. Only this specific version will be used.
-
-`1.2.3`
-
-`^1.2.3`
-
-Compatible with version 1.2.3. Allows updates that do not change the leftmost non-zero digit.  
-For example, `1.2.4` and `1.3.0` are allowed, but `2.0.0` is not.
-
-`^1.2.3`
-
-`~1.2.3`
-
-Approximately equivalent to version 1.2.3. Allows updates to the patch version.  
-For example, `1.2.4` is allowed, but `1.3.0` is not.
-
-`~1.2.3`
-
-`>=1.2.3`
-
-Greater than or equal to version 1.2.3. Any version `1.2.3` or higher is allowed.
-
-`>=1.2.3`
-
-`<=1.2.3`
-
-Less than or equal to version 1.2.3. Any version `1.2.3` or lower is allowed.
-
-`<=1.2.3`
-
-`>1.2.3`
-
-Greater than version 1.2.3. Only versions higher than `1.2.3` are allowed.
-
-`>1.2.3`
-
-`<1.2.3`
-
-Less than version 1.2.3. Only versions lower than `1.2.3` are allowed.
-
-`<1.2.3`
-
-`1.2.x`
-
-Any patch version within the minor version 1.2. For example, `1.2.0`, `1.2.1`, etc.
-
-`1.2.x`
-
-`1.x`
-
-Any minor and patch version within the major version 1. For example, `1.0.0`, `1.1.0`, `1.2.0`, etc.
-
-`1.x`
-
-`*`
-
-Any version is allowed.
-
-`*`
+| Symbol | Description | Example |
+| --- | --- | --- |
+| `1.2.3` | An exact version. Only this specific version will be used. | `1.2.3` |
+| `^1.2.3` | Compatible with version 1.2.3. Allows updates that do not change the leftmost non-zero digit.  
+For example, `1.2.4` and `1.3.0` are allowed, but `2.0.0` is not. | `^1.2.3` |
+| `~1.2.3` | Approximately equivalent to version 1.2.3. Allows updates to the patch version.  
+For example, `1.2.4` is allowed, but `1.3.0` is not. | `~1.2.3` |
+| `>=1.2.3` | Greater than or equal to version 1.2.3. Any version `1.2.3` or higher is allowed. | `>=1.2.3` |
+| `<=1.2.3` | Less than or equal to version 1.2.3. Any version `1.2.3` or lower is allowed. | `<=1.2.3` |
+| `>1.2.3` | Greater than version 1.2.3. Only versions higher than `1.2.3` are allowed. | `>1.2.3` |
+| `<1.2.3` | Less than version 1.2.3. Only versions lower than `1.2.3` are allowed. | `<1.2.3` |
+| `1.2.x` | Any patch version within the minor version 1.2. For example, `1.2.0`, `1.2.1`, etc. | `1.2.x` |
+| `1.x` | Any minor and patch version within the major version 1. For example, `1.0.0`, `1.1.0`, `1.2.0`, etc. | `1.x` |
+| `*` | Any version is allowed. | `*` |
 
 ## HTTPS imports
 
@@ -405,9 +353,9 @@ or part of your `deno.json` import map:
 
 Supporting HTTPS imports enables us to support the following JavaScript CDNs, as they provide URL access to JavaScript modules:
 
-*   [deno.land/x](https://deno.land/x)
-*   [esm.sh](https://esm.sh)
-*   [unpkg.com](https://unpkg.com)
+-   [deno.land/x](https://deno.land/x)
+-   [esm.sh](https://esm.sh)
+-   [unpkg.com](https://unpkg.com)
 
 HTTPS imports are useful if you have a small, often single file, Deno project that doesn't require any other configuration. With HTTPS imports, you can avoid having a `deno.json` file at all. It is **not** advised to use this style of import in larger applications however, as you may end up with version conflicts (where different files use different version specifiers). HTTP imports are not supported by `deno add`/`deno install` commands.
 
@@ -439,14 +387,14 @@ deno.json
 
 Key points:
 
-*   The `links` field accepts paths to directories containing packages or workspaces. If you reference a single package within a workspace, the entire workspace will be included.
-*   Both JSR and npm packages are supported.
-*   This feature is only respected in the workspace root. Using `links` elsewhere will trigger warnings.
+-   The `links` field accepts paths to directories containing packages or workspaces. If you reference a single package within a workspace, the entire workspace will be included.
+-   Both JSR and npm packages are supported.
+-   This feature is only respected in the workspace root. Using `links` elsewhere will trigger warnings.
 
 Limitations:
 
-*   Git-based dependency overrides are unavailable.
-*   The `links` field requires proper configuration in the workspace root.
+-   Git-based dependency overrides are unavailable.
+-   The `links` field requires proper configuration in the workspace root.
 
 ### Overriding NPM packages
 
@@ -464,13 +412,13 @@ To use a local npm package, configure the `links` field in your `deno.json`:
 
 This feature requires a `node_modules` directory and has different behaviors depending on your `nodeModulesDir` setting:
 
-*   With `"nodeModulesDir": "auto"`: The directory is recreated on each run, which slightly increases startup time but ensures the latest version is always used.
-*   With `"nodeModulesDir": "manual"` (default when using package.json): You must run `deno install` after updating the package to get the changes into the workspace's `node_modules` directory.
+-   With `"nodeModulesDir": "auto"`: The directory is recreated on each run, which slightly increases startup time but ensures the latest version is always used.
+-   With `"nodeModulesDir": "manual"` (default when using package.json): You must run `deno install` after updating the package to get the changes into the workspace's `node_modules` directory.
 
 Limitations:
 
-*   Specifying a local copy of an npm package or changing its dependencies will purge npm packages from the lockfile, which may cause npm resolution to work differently.
-*   The npm package name must exist in the registry, even if you're using a local copy.
+-   Specifying a local copy of an npm package or changing its dependencies will purge npm packages from the lockfile, which may cause npm resolution to work differently.
+-   The npm package name must exist in the registry, even if you're using a local copy.
 
 ### Overriding HTTPS imports
 
@@ -495,9 +443,9 @@ deno.json
 
 Key points:
 
-*   The `scopes` field in the import map allows you to redirect specific imports to alternative paths.
-*   This is commonly used to override remote dependencies with local files for testing or development purposes.
-*   Scopes apply only to the root of your project. Nested scopes within dependencies are ignored.
+-   The `scopes` field in the import map allows you to redirect specific imports to alternative paths.
+-   This is commonly used to override remote dependencies with local files for testing or development purposes.
+-   Scopes apply only to the root of your project. Nested scopes within dependencies are ignored.
 
 ## Vendoring remote modules
 
@@ -535,9 +483,9 @@ For more advanced overrides, such as substituting dependencies during developmen
 
 Any Deno program that defines an export can be published as a module. This allows other developers to import and use your code in their own projects. Modules can be published to:
 
-*   [JSR](https://jsr.io) - recommended, supports TypeScript natively and auto-generates documentation for you
-*   [npm](https://www.npmjs.com/) - use [dnt](https://github.com/denoland/dnt) to create the npm package
-*   [deno.land/x](https://deno.com/add_module) - for HTTPS imports, use JSR instead if possible
+-   [JSR](https://jsr.io) - recommended, supports TypeScript natively and auto-generates documentation for you
+-   [npm](https://www.npmjs.com/) - use [dnt](https://github.com/denoland/dnt) to create the npm package
+-   [deno.land/x](https://deno.com/add_module) - for HTTPS imports, use JSR instead if possible
 
 ## Reloading modules
 
@@ -708,17 +656,17 @@ deno.json
 
 Modern JavaScript projects pull code from many sources (JSR, npm, HTTPS URLs, local workspaces). Good supply chain management helps you achieve four goals:
 
-*   Determinism: everyone (and your CI) runs the exact same code.
-*   Security: unexpected upstream changes or compromises are detected early.
-*   Velocity: you can update dependencies intentionally when you choose.
-*   Resilience: builds keep working offline or when registries have outages.
+-   Determinism: everyone (and your CI) runs the exact same code.
+-   Security: unexpected upstream changes or compromises are detected early.
+-   Velocity: you can update dependencies intentionally when you choose.
+-   Resilience: builds keep working offline or when registries have outages.
 
 ### Core practices
 
 1.  Pin versions deliberately
-    *   For applications, prefer exact versions (for example `jsr:@luca/cases@1.2.3`).
-    *   For libraries, a caret range (`^1.2.3`) lets consumers get backwards‑compatible fixes.
-    *   Avoid unbounded (`*`) or overly broad ranges in production applications.
+    -   For applications, prefer exact versions (for example `jsr:@luca/cases@1.2.3`).
+    -   For libraries, a caret range (`^1.2.3`) lets consumers get backwards‑compatible fixes.
+    -   Avoid unbounded (`*`) or overly broad ranges in production applications.
 2.  Commit your `deno.lock` file.
 3.  Enable a frozen lockfile in CI / production (`--frozen` or `"lock": { "frozen": true }`) so new, unseen dependencies fail the build instead of silently appearing.
 4.  Vendor when you need hermetic/offline builds (`"vendor": true`) or when you must patch third‑party code locally. Vendoring does not remove the need for a lockfile—it complements it.
@@ -765,41 +713,13 @@ error: Module not found in frozen lockfile: https://example.com/dependency/mod.t
 
 Common causes and fixes:
 
-Symptom
-
-Cause
-
-Fix
-
-Need to bump a version but command fails with frozen error
-
-Lockfile is in frozen mode
-
-Re-run with `--frozen=false` (one-off) or temporarily set `"lock": { "frozen": false }`, then update and re-freeze
-
-New transitive dependency appears after editing code
-
-Code now imports something not in lockfile
-
-Unfreeze (`--frozen=false`) and run `deno install --entrypoint <entry>.ts` to record it
-
-Removed imports but lockfile still contains old entries
-
-Lockfile is additive; entries persist
-
-(Optional) regenerate: move `deno.lock` aside (`mv deno.lock deno.lock.old`), run install to recreate, compare, then commit
-
-Lockfile corruption / merge conflict
-
-Manual edit or conflict left inconsistent JSON
-
-Delete conflicting sections and re-run install, or regenerate entirely
-
-Using vendored deps but lockfile complains
-
-Vendor dir out of sync with lockfile
-
-Re-run `deno install --entrypoint <entry>` (unfrozen) to sync both, then commit
+| Symptom | Cause | Fix |
+| --- | --- | --- |
+| Need to bump a version but command fails with frozen error | Lockfile is in frozen mode | Re-run with `--frozen=false` (one-off) or temporarily set `"lock": { "frozen": false }`, then update and re-freeze |
+| New transitive dependency appears after editing code | Code now imports something not in lockfile | Unfreeze (`--frozen=false`) and run `deno install --entrypoint <entry>.ts` to record it |
+| Removed imports but lockfile still contains old entries | Lockfile is additive; entries persist | (Optional) regenerate: move `deno.lock` aside (`mv deno.lock deno.lock.old`), run install to recreate, compare, then commit |
+| Lockfile corruption / merge conflict | Manual edit or conflict left inconsistent JSON | Delete conflicting sections and re-run install, or regenerate entirely |
+| Using vendored deps but lockfile complains | Vendor dir out of sync with lockfile | Re-run `deno install --entrypoint <entry>` (unfrozen) to sync both, then commit |
 
 ### Safe regeneration checklist
 
@@ -815,36 +735,20 @@ Only regenerate the entire `deno.lock` when necessary (corruption, massive pruni
 
 These are complementary:
 
-*   Lockfile: records exact resolved versions + integrity hashes for remote and npm/JSR deps.
-*   Vendor directory: stores the actual source locally for hermetic, offline, and patchable builds.
+-   Lockfile: records exact resolved versions + integrity hashes for remote and npm/JSR deps.
+-   Vendor directory: stores the actual source locally for hermetic, offline, and patchable builds.
 
 Use both for maximum reproducibility. A frozen lockfile alone does not make your build fully hermetic if the remote source disappears; vendoring closes that gap.
 
 ### Quick decision guide
 
-Need
-
-Use
-
-Detect upstream tampering
-
-Lockfile (commit & freeze)
-
-Offline / air-gapped build
-
-`vendor: true` + lockfile
-
-Patch third-party code
-
-Vendoring or `scopes` overrides (short-term)
-
-Fast CI with integrity
-
-`deno install --frozen`
-
-Intentionally upgrade
-
-Temporarily unfreeze, run install, review diff
+| Need | Use |
+| --- | --- |
+| Detect upstream tampering | Lockfile (commit & freeze) |
+| Offline / air-gapped build | `vendor: true` + lockfile |
+| Patch third-party code | Vendoring or `scopes` overrides (short-term) |
+| Fast CI with integrity | `deno install --frozen` |
+| Intentionally upgrade | Temporarily unfreeze, run install, review diff |
 
 ### Minimum supply chain baseline (recommended)
 
@@ -876,8 +780,8 @@ Deno supports sending bearer tokens when requesting a remote module. Bearer toke
 
 The Deno CLI will look for an environment variable named `DENO_AUTH_TOKENS` to determine what authentication tokens it should consider using when requesting remote modules. The value of the environment variable is in the format of _n_ number of tokens delimited by a semi-colon (`;`) where each token is either:
 
-*   a bearer token in the format of `{token}@{hostname[:port]}` or
-*   basic auth data in the format of `{username}:{password}@{hostname[:port]}`
+-   a bearer token in the format of `{token}@{hostname[:port]}` or
+-   basic auth data in the format of `{username}:{password}@{hostname[:port]}`
 
 For example, a single token for `deno.land` would look something like this:
 
@@ -909,15 +813,15 @@ When Deno goes to fetch a remote module, where the hostname matches the hostname
 
 To access private repositories on GitHub, you would need to issue yourself a _personal access token_. You do this by logging into GitHub and going under _Settings -> Developer settings -> Personal access tokens_:
 
-![Personal access tokens settings on GitHub](/runtime/fundamentals/images/private-pat.png)
+![Personal access tokens settings on GitHub](https://docs.deno.com/runtime/fundamentals/images/private-pat.png)
 
 You would then choose to _Generate new token_ and give your token a description and appropriate access to the `repo` scope. The `repo` scope will enable reading file contents (more on [scopes in the GitHub docs](https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/scopes-for-oauth-apps#available-scopes)):
 
-![Creating a new personal access token on GitHub](/runtime/fundamentals/images/private-github-new-token.png)
+![Creating a new personal access token on GitHub](https://docs.deno.com/runtime/fundamentals/images/private-github-new-token.png)
 
 And once created GitHub will display the new token a single time, the value of which you would want to use in the environment variable:
 
-![Display of newly created token on GitHub](/runtime/fundamentals/images/private-github-token-display.png)
+![Display of newly created token on GitHub](https://docs.deno.com/runtime/fundamentals/images/private-github-token-display.png)
 
 In order to access modules that are contained in a private repository on GitHub, you would want to use the generated token in the `DENO_AUTH_TOKENS` environment variable scoped to the `raw.githubusercontent.com` hostname. For example:
 

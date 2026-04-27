@@ -5,14 +5,12 @@ canonical_url: "https://www.postgresql.org/docs/current/textsearch-debugging.htm
 docset: "postgres"
 kind: "database"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:33:58.233Z"
-content_hash: "798a9f4963297f0612e80a411cd76ae8365a9e28c0b0512379d5f7214bd58a4a"
+last_crawled_at: "2026-04-27T20:43:01.435Z"
+content_hash: "532f2ff1cf47221232fe9df785267d798c825dfde45f4aafe375b503e5cbc759"
 menu_path: ["PostgreSQL: Documentation: 18: 12.8. Testing and Debugging Text Search"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/sslinfo.html/index.md", "title": "PostgreSQL: Documentation: 18: F.42.\u00a0sslinfo \u2014 obtain client SSL information"}
-nav_next: {"path": "postgres/docs/current/textsearch-features.html/index.md", "title": "PostgreSQL: Documentation: 18: 12.4.\u00a0Additional Features"}
+content_language: "en"
 ---
-
 The behavior of a custom text search configuration can easily become confusing. The functions described in this section are useful for testing text search objects. You can test a complete configuration, or test parsers and dictionaries separately.
 
 ### 12.8.1. Configuration Testing [#](#TEXTSEARCH-CONFIGURATION-TESTING)
@@ -32,17 +30,17 @@ ts\_debug(\[ _`config`_ `regconfig`, \] _`document`_ `text`,
 
 `ts_debug` returns one row for each token identified in the text by the parser. The columns returned are
 
-*   _`alias`_ `text` — short name of the token type
+-   _`alias`_ `text` — short name of the token type
     
-*   _`description`_ `text` — description of the token type
+-   _`description`_ `text` — description of the token type
     
-*   _`token`_ `text` — text of the token
+-   _`token`_ `text` — text of the token
     
-*   _`dictionaries`_ `regdictionary[]` — the dictionaries selected by the configuration for this token type
+-   _`dictionaries`_ `regdictionary[]` — the dictionaries selected by the configuration for this token type
     
-*   _`dictionary`_ `regdictionary` — the dictionary that recognized the token, or `NULL` if none did
+-   _`dictionary`_ `regdictionary` — the dictionary that recognized the token, or `NULL` if none did
     
-*   _`lexemes`_ `text[]` — the lexeme(s) produced by the dictionary that recognized the token, or `NULL` if none did; an empty array (`{}`) means it was recognized as a stop word
+-   _`lexemes`_ `text[]` — the lexeme(s) produced by the dictionary that recognized the token, or `NULL` if none did; an empty array (`{}`) means it was recognized as a stop word
     
 
 Here is a simple example:

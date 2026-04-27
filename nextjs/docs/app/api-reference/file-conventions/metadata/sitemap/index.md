@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/app/api-reference/file-conventions/metad
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:10:25.846Z"
-content_hash: "773f7c0eebf7c2612c1eb88e48e733500fffa6c4777f43a3e333a56a8e6003ef"
+last_crawled_at: "2026-04-27T18:09:06.822Z"
+content_hash: "abef14d761a6bb6de41b2f470d4dd5c3960e22ab58cee650fe5030db2f486404"
 menu_path: ["sitemap.xml"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/api-reference/file-conventions/metadata/robots/index.md", "title": "robots.txt"}
-nav_next: {"path": "nextjs/docs/app/api-reference/file-conventions/route-segment-config/index.md", "title": "Route Segment Config"}
+version: "latest"
+content_language: "en"
 ---
+[File-system conventions](/docs/app/api-reference/file-conventions)[Metadata Files](/docs/app/api-reference/file-conventions/metadata)sitemap.xml
 
 # sitemap.xml
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 `sitemap.(xml|js|ts)` is a special file that matches the [Sitemaps XML format](https://www.sitemaps.org/protocol.html) to help search engine crawlers index your site more efficiently.
 
@@ -55,8 +56,6 @@ You can use the `sitemap.(js|ts)` file convention to programmatically **generate
 > **Good to know**: `sitemap.js` is a special Route Handler that is cached by default unless it uses a [Request-time API](/docs/app/glossary#request-time-apis) or [dynamic config](/docs/app/guides/caching-without-cache-components#dynamic) option.
 
 app/sitemap.ts
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -120,8 +119,6 @@ You can use `images` property to create image sitemaps. Learn more details in th
 
 app/sitemap.ts
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -167,8 +164,6 @@ acme.com/sitemap.xml
 You can use `videos` property to create video sitemaps. Learn more details in the [Google Developer Docs](https://developers.google.com/search/docs/crawling-indexing/sitemaps/video-sitemaps).
 
 app/sitemap.ts
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -221,8 +216,6 @@ acme.com/sitemap.xml
 ### Generate a localized Sitemap[](#generate-a-localized-sitemap)
 
 app/sitemap.ts
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -316,14 +309,12 @@ While a single sitemap will work for most applications. For large web applicatio
 
 There are two ways you can create multiple sitemaps:
 
-*   By nesting `sitemap.(xml|js|ts)` inside multiple route segments e.g. `app/sitemap.xml` and `app/products/sitemap.xml`.
-*   By using the [`generateSitemaps`](/docs/app/api-reference/functions/generate-sitemaps) function.
+-   By nesting `sitemap.(xml|js|ts)` inside multiple route segments e.g. `app/sitemap.xml` and `app/products/sitemap.xml`.
+-   By using the [`generateSitemaps`](/docs/app/api-reference/functions/generate-sitemaps) function.
 
 For example, to split a sitemap using `generateSitemaps`, return an array of objects with the sitemap `id`. Then, use the `id` to generate the unique sitemaps.
 
 app/product/sitemap.ts
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -382,25 +373,12 @@ type Sitemap = Array<{
 
 ## Version History[](#version-history)
 
-Version
-
-Changes
-
-`v16.0.0`
-
-`id` is now a promise that resolves to a `string`.
-
-`v14.2.0`
-
-Add localizations support.
-
-`v13.4.14`
-
-Add `changeFrequency` and `priority` attributes to sitemaps.
-
-`v13.3.0`
-
-`sitemap` introduced.
+| Version | Changes |
+| --- | --- |
+| `v16.0.0` | `id` is now a promise that resolves to a `string`. |
+| `v14.2.0` | Add localizations support. |
+| `v13.4.14` | Add `changeFrequency` and `priority` attributes to sitemaps. |
+| `v13.3.0` | `sitemap` introduced. |
 
 ## Next Steps
 
@@ -414,20 +392,4 @@ Learn how to use the generateSiteMaps function to create multiple sitemaps for y
 
 ](/docs/app/api-reference/functions/generate-sitemaps)
 
-[Previous
-
-robots.txt
-
-](/docs/app/api-reference/file-conventions/metadata/robots)
-
-[Next
-
-Route Segment Config
-
-](/docs/app/api-reference/file-conventions/route-segment-config)
-
 Was this helpful?
-
-supported.
-
-Send

@@ -5,47 +5,23 @@ canonical_url: "https://www.postgresql.org/docs/current/sourcerepo.html"
 docset: "postgres"
 kind: "database"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:49:59.435Z"
-content_hash: "a4f866a72cfd86bcd8110dc07547459973cb7857f86e6977638cbe0334bf7cd0"
+last_crawled_at: "2026-04-27T20:49:36.401Z"
+content_hash: "8c5d843b573d17301cf787bed227f93ca2c8dc7a9f7ce302250e9d4f08d2f49a"
 menu_path: ["PostgreSQL: Documentation: 18: Appendix I. The Source Code Repository"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/sql-keywords-appendix.html/index.md", "title": "PostgreSQL: Documentation: 18: Appendix\u00a0C.\u00a0SQL Key Words"}
-nav_next: {"path": "postgres/docs/current/docguide.html/index.md", "title": "PostgreSQL: Documentation: 18: Appendix\u00a0J.\u00a0Documentation"}
+content_language: "en"
 ---
-
 Development Versions: [devel](https://www.postgresql.org/docs/devel/sourcerepo.html "PostgreSQL devel - Appendix I. The Source Code Repository")
 
-Appendix I. The Source Code Repository
-
-[Prev](https://www.postgresql.org/docs/current/external-extensions.html "H.4. Extensions") 
-
-[Up](https://www.postgresql.org/docs/current/appendixes.html "Part VIII. Appendixes")
-
-Part VIII. Appendixes
-
-[Home](https://www.postgresql.org/docs/current/index.html "PostgreSQL 18.3 Documentation")
-
- [Next](https://www.postgresql.org/docs/current/git.html "I.1. Getting the Source via Git")
+| Appendix I. The Source Code Repository |
+| --- |
+| [Prev](https://www.postgresql.org/docs/current/external-extensions.html "H.4. Extensions")  | [Up](https://www.postgresql.org/docs/current/appendixes.html "Part VIII. Appendixes") | Part VIII. Appendixes | [Home](https://www.postgresql.org/docs/current/index.html "PostgreSQL 18.3 Documentation") |  [Next](https://www.postgresql.org/docs/current/git.html "I.1. Getting the Source via Git") |
 
 * * *
 
 The PostgreSQL source code is stored and managed using the Git version control system. A public mirror of the master repository is available; it is updated within a minute of any change to the master repository.
 
 Our wiki, [https://wiki.postgresql.org/wiki/Working\_with\_Git](https://wiki.postgresql.org/wiki/Working_with_Git), has some discussion on working with Git.
-
-* * *
-
-[Prev](https://www.postgresql.org/docs/current/external-extensions.html "H.4. Extensions") 
-
-[Up](https://www.postgresql.org/docs/current/appendixes.html "Part VIII. Appendixes")
-
- [Next](https://www.postgresql.org/docs/current/git.html "I.1. Getting the Source via Git")
-
-H.4. Extensions 
-
-[Home](https://www.postgresql.org/docs/current/index.html "PostgreSQL 18.3 Documentation")
-
- I.1. Getting the Source via Git
 
 ## Submit correction
 

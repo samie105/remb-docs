@@ -5,21 +5,20 @@ canonical_url: "https://www.prisma.io/docs/orm/prisma-client/deployment/edge/dep
 docset: "prisma"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:53:41.664Z"
-content_hash: "ba76f0f05149bbaa048dab2ed0b17b3b9dff5ebfbae5b387aa9dcaee49b6c654"
+last_crawled_at: "2026-04-27T19:43:33.073Z"
+content_hash: "1c1c39054276c93f97132f4b4dcbb6829b833318fb48563585fd95dce518d00e"
 menu_path: ["Deploy to Cloudflare Workers & Pages"]
 section_path: []
-nav_prev: {"path": "prisma/docs/orm/prisma-client/deployment/deploy-prisma/index.md", "title": "Deploy Prisma ORM"}
-nav_next: {"path": "prisma/docs/orm/prisma-client/deployment/edge/deploy-to-deno-deploy/index.md", "title": "Deploy to Deno Deploy"}
+tab_variants: ["npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun"]
+content_language: "en"
 ---
-
 Learn the things you need to know in order to deploy an app that uses Prisma Client for talking to a database to a Cloudflare Worker or to Cloudflare Pages
 
-Questions answered in this page
+**Questions answered in this page**
 
-*   How to deploy Prisma to Cloudflare Workers?
-*   Which drivers work on Workers/Pages?
-*   How to configure DATABASE\_URL and envs?
+-   How to deploy Prisma to Cloudflare Workers?
+-   Which drivers work on Workers/Pages?
+-   How to configure DATABASE\_URL and envs?
 
 This section covers _general_ things you need to be aware of when deploying to Cloudflare Workers or Pages and are using Prisma ORM, regardless of the database provider you use.
 
@@ -33,21 +32,21 @@ Enter a name for your project and choose a database region.
 
 This command:
 
-*   Connects your CLI to your [Prisma Data Platform](https://console.prisma.io/?utm_source=docs&utm_medium=content&utm_content=orm) account. If you're not logged in or don't have an account, your browser will open to guide you through creating a new account or signing into your existing one.
-*   Creates a `prisma` directory containing a `schema.prisma` file for your database models.
-*   Creates a `.env` file with your `DATABASE_URL`.
+-   Connects your CLI to your [Prisma Data Platform](https://console.prisma.io/?utm_source=docs&utm_medium=content&utm_content=orm) account. If you're not logged in or don't have an account, your browser will open to guide you through creating a new account or signing into your existing one.
+-   Creates a `prisma` directory containing a `schema.prisma` file for your database models.
+-   Creates a `.env` file with your `DATABASE_URL`.
 
 ### [Using an edge-compatible driver](#using-an-edge-compatible-driver)
 
-When deploying a Cloudflare Worker that uses Prisma ORM, you need to use an [edge-compatible driver](prisma/docs/orm/prisma-client/deployment/edge/overview/index.md#edge-compatibility-of-database-drivers) and its respective [driver adapter](prisma/docs/orm/core-concepts/supported-databases/database-drivers/index.md#driver-adapters) for Prisma ORM.
+When deploying a Cloudflare Worker that uses Prisma ORM, you need to use an [edge-compatible driver](https://www.prisma.io/docs/orm/prisma-client/deployment/edge/overview#edge-compatibility-of-database-drivers) and its respective [driver adapter](https://www.prisma.io/docs/orm/core-concepts/supported-databases/database-drivers#driver-adapters) for Prisma ORM.
 
 The edge-compatible drivers for Cloudflare Workers and Pages are:
 
-*   [Neon Serverless](https://neon.tech/docs/serverless/serverless-driver) uses HTTP to access the database
-*   [PlanetScale Serverless](https://planetscale.com/docs/tutorials/planetscale-serverless-driver) uses HTTP to access the database
-*   [`node-postgres`](https://node-postgres.com/) (`pg`) uses Cloudflare's `connect()` (TCP) to access the database
-*   [`@libsql/client`](https://github.com/tursodatabase/libsql-client-ts) is used to access Turso databases via HTTP
-*   [Cloudflare D1](prisma/docs/orm/prisma-client/deployment/edge/deploy-to-cloudflare/index.md) is used to access D1 databases
+-   [Neon Serverless](https://neon.tech/docs/serverless/serverless-driver) uses HTTP to access the database
+-   [PlanetScale Serverless](https://planetscale.com/docs/tutorials/planetscale-serverless-driver) uses HTTP to access the database
+-   [`node-postgres`](https://node-postgres.com/) (`pg`) uses Cloudflare's `connect()` (TCP) to access the database
+-   [`@libsql/client`](https://github.com/tursodatabase/libsql-client-ts) is used to access Turso databases via HTTP
+-   [Cloudflare D1](https://www.prisma.io/docs/orm/prisma-client/deployment/edge/deploy-to-cloudflare) is used to access D1 databases
 
 There's [also work being done](https://github.com/sidorares/node-mysql2/pull/2289) on the `node-mysql2` driver which will enable access to traditional MySQL databases from Cloudflare Workers and Pages in the future as well.
 
@@ -62,6 +61,8 @@ datasource db {
   provider = "postgresql" // this might also be `mysql` or another value depending on your database
 }
 ```
+
+prisma.config.ts
 
 ```
 import "dotenv/config";
@@ -81,11 +82,15 @@ When using your Worker in **development**, you can configure your database conne
 
 Assuming you use the `DATABASE_URL` environment variable from above, you can set it inside `.dev.vars` as follows:
 
+.dev.vars
+
 ```
 DATABASE_URL="your-database-connection-string"
 ```
 
 In the above snippet, `your-database-connection-string` is a placeholder that you need to replace with the value of your own connection string, for example:
+
+.dev.vars
 
 ```
 DATABASE_URL="postgresql://admin:mypassword42@somehost.aws.com:5432/mydb"
@@ -97,19 +102,21 @@ This means that you need to make sure that Prisma ORM gets access to the environ
 
 There are several options for achieving this:
 
-*   Run your Prisma CLI commands using [`dotenv`](https://www.npmjs.com/package/dotenv-cli) to specify from where the CLI should read the environment variable, for example:
+-   Run your Prisma CLI commands using [`dotenv`](https://www.npmjs.com/package/dotenv-cli) to specify from where the CLI should read the environment variable, for example:
     
     ```
     dotenv -e .dev.vars -- npx prisma migrate dev
     ```
     
-*   Create a script in `package.json` that reads `.dev.vars` via [`dotenv`](https://www.npmjs.com/package/dotenv-cli). You can then execute `prisma` commands as follows: `npm run env -- npx prisma migrate dev`. Here's a reference for the script:
+-   Create a script in `package.json` that reads `.dev.vars` via [`dotenv`](https://www.npmjs.com/package/dotenv-cli). You can then execute `prisma` commands as follows: `npm run env -- npx prisma migrate dev`. Here's a reference for the script:
+    
+    package.json
     
     ```
     "scripts":  { "env": "dotenv -e .dev.vars" }
     ```
     
-*   Duplicate the `DATABASE_URL` and any other relevant env vars into a new file called `.env` which can then be used by Prisma ORM.
+-   Duplicate the `DATABASE_URL` and any other relevant env vars into a new file called `.env` which can then be used by Prisma ORM.
 
 #### [Production](#production)
 
@@ -127,8 +134,8 @@ Cloudflare offers an option to run Next.js apps on Cloudflare Pages with [`@clou
 
 Based on some testing, we found the following:
 
-*   You can deploy using the PlanetScale or Neon Serverless Driver.
-*   Traditional PostgreSQL deployments using `pg` don't work because `pg` itself currently does not work with `@cloudflare/next-on-pages` (see [here](https://github.com/cloudflare/next-on-pages/issues/605)).
+-   You can deploy using the PlanetScale or Neon Serverless Driver.
+-   Traditional PostgreSQL deployments using `pg` don't work because `pg` itself currently does not work with `@cloudflare/next-on-pages` (see [here](https://github.com/cloudflare/next-on-pages/issues/605)).
 
 Feel free to reach out to us on [Discord](https://pris.ly/discord?utm_source=docs&utm_medium=inline_text) if you find that anything has changed about this.
 
@@ -156,12 +163,14 @@ model User {
 
 If you are using a traditional PostgreSQL database that's accessed via TCP and the `pg` driver, you need to:
 
-*   use the `@prisma/adapter-pg` database adapter (learn more [here](prisma/docs/orm/core-concepts/supported-databases/postgresql/index.md#using-driver-adapters))
-*   set `node_compat = true` in `wrangler.toml` (see the [Cloudflare docs](https://developers.cloudflare.com/workers/runtime-apis/nodejs/))
+-   use the `@prisma/adapter-pg` database adapter (learn more [here](https://www.prisma.io/docs/orm/core-concepts/supported-databases/postgresql#using-driver-adapters))
+-   set `node_compat = true` in `wrangler.toml` (see the [Cloudflare docs](https://developers.cloudflare.com/workers/runtime-apis/nodejs/))
 
 #### [1\. Configure Prisma schema & database connection](#1-configure-prisma-schema--database-connection)
 
 First, ensure that the database connection is configured properly. Database connection URLs are configured in `prisma.config.ts`:
+
+schema.prisma
 
 ```
 generator client {
@@ -173,6 +182,8 @@ datasource db {
   provider = "postgresql"
 }
 ```
+
+prisma.config.ts
 
 ```
 import "dotenv/config";
@@ -188,6 +199,8 @@ export default defineConfig({
 
 Next, you need to set the `DATABASE_URL` environment variable to the value of your database connection string. You'll do this in a file called `.dev.vars` used by Cloudflare:
 
+.dev.vars
+
 ```
 DATABASE_URL="postgresql://admin:mypassword42@somehost.aws.com:5432/mydb"
 ```
@@ -195,6 +208,8 @@ DATABASE_URL="postgresql://admin:mypassword42@somehost.aws.com:5432/mydb"
 Because the Prisma CLI by default is only compatible with `.env` files, you can adjust your `package.json` with the following script that loads the env vars from `.dev.vars`. You can then use this script to load the env vars before executing a `prisma` command.
 
 Add this script to your `package.json`:
+
+package.json
 
 ```
 {
@@ -216,6 +231,8 @@ Next, install the required packages:
 #### [3\. Set `node_compat = true` in `wrangler.toml`](#3-set-node_compat--true-in-wranglertoml)
 
 In your `wrangler.toml` file, add the following line:
+
+wrangler.toml
 
 ```
 node_compat = true
@@ -264,9 +281,9 @@ The command will output the URL where you can access the deployed Worker.
 
 If you are using a PlanetScale database, you need to:
 
-*   use the `@prisma/adapter-planetscale` database adapter (learn more [here](prisma/docs/orm/core-concepts/supported-databases/mysql/index.md#planetscale))
+-   use the `@prisma/adapter-planetscale` database adapter (learn more [here](https://www.prisma.io/docs/orm/core-concepts/supported-databases/mysql#planetscale))
     
-*   manually remove the conflicting `cache` field:
+-   manually remove the conflicting `cache` field:
     
     ```
     export default {
@@ -291,6 +308,8 @@ If you are using a PlanetScale database, you need to:
 
 First, ensure that the database connection is configured properly. Database connection URLs are configured in `prisma.config.ts`:
 
+schema.prisma
+
 ```
 generator client {
   provider = "prisma-client"
@@ -302,6 +321,8 @@ datasource db {
   relationMode = "prisma" // required for PlanetScale (as by default foreign keys are disabled)
 }
 ```
+
+prisma.config.ts
 
 ```
 import "dotenv/config";
@@ -317,6 +338,8 @@ export default defineConfig({
 
 Next, you need to set the `DATABASE_URL` environment variable to the value of your database connection string. You'll do this in a file called `.dev.vars` used by Cloudflare:
 
+.dev.vars
+
 ```
 DATABASE_URL="mysql://32qxa2r7hfl3102wrccj:password@us-east.connect.psdb.cloud/demo-cf-worker-ps?sslaccept=strict"
 ```
@@ -324,6 +347,8 @@ DATABASE_URL="mysql://32qxa2r7hfl3102wrccj:password@us-east.connect.psdb.cloud/d
 Because the Prisma CLI by default is only compatible with `.env` files, you can adjust your `package.json` with the following script that loads the env vars from `.dev.vars`. You can then use this script to load the env vars before executing a `prisma` command.
 
 Add this script to your `package.json`:
+
+package.json
 
 ```
 {
@@ -392,11 +417,13 @@ The command will output the URL where you can access the deployed Worker.
 
 If you are using a Neon database, you need to:
 
-*   use the `@prisma/adapter-neon` database adapter (learn more [here](prisma/docs/orm/core-concepts/supported-databases/postgresql/index.md#using-driver-adapters))
+-   use the `@prisma/adapter-neon` database adapter (learn more [here](https://www.prisma.io/docs/orm/core-concepts/supported-databases/postgresql#using-driver-adapters))
 
 #### [1\. Configure Prisma schema & database connection](#1-configure-prisma-schema--database-connection-2)
 
 First, ensure that the database connection is configured properly. Database connection URLs are configured in `prisma.config.ts`:
+
+schema.prisma
 
 ```
 generator client {
@@ -408,6 +435,8 @@ datasource db {
   provider = "postgresql"
 }
 ```
+
+prisma.config.ts
 
 ```
 import "dotenv/config";
@@ -423,6 +452,8 @@ export default defineConfig({
 
 Next, you need to set the `DATABASE_URL` environment variable to the value of your database connection string. You'll do this in a file called `.dev.vars` used by Cloudflare:
 
+.dev.vars
+
 ```
 DATABASE_URL="postgresql://janedoe:password@ep-nameless-pond-a23b1mdz.eu-central-1.aws.neon.tech/neondb?sslmode=require"
 ```
@@ -430,6 +461,8 @@ DATABASE_URL="postgresql://janedoe:password@ep-nameless-pond-a23b1mdz.eu-central
 Because the Prisma CLI by default is only compatible with `.env` files, you can adjust your `package.json` with the following script that loads the env vars from `.dev.vars`. You can then use this script to load the env vars before executing a `prisma` command.
 
 Add this script to your `package.json`:
+
+package.json
 
 ```
 {

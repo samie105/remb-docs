@@ -5,19 +5,17 @@ canonical_url: "https://orm.drizzle.team/docs/transactions"
 docset: "drizzle"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:22:18.854Z"
-content_hash: "e5a6ff3598776bdc4f486de081a20a3e52484011cbc0adf7c8b3bfa1be393373"
+last_crawled_at: "2026-04-27T19:25:50.431Z"
+content_hash: "7e0031222bd0c683615f6cbdb5973ec695fc029b2fa32f550d898ec961553e2e"
 menu_path: ["Transactions"]
 section_path: []
-nav_prev: {"path": "drizzle/docs/generated-columns/index.md", "title": "Generated Columns"}
-nav_next: {"path": "drizzle/docs/batch-api/index.md", "title": "Batch API"}
+content_language: "en"
 ---
-
 SQL transaction is a grouping of one or more SQL statements that interact with a database. A transaction in its entirety can commit to a database as a single logical unit or rollback (become undone) as a single logical unit.
 
 Drizzle ORM provides APIs to run SQL statements in transactions:
 
-```
+```ts
 const db = drizzle(...)
 
 await db.transaction(async (tx) => {
@@ -28,7 +26,7 @@ await db.transaction(async (tx) => {
 
 Drizzle ORM supports `savepoints` with nested transactions API:
 
-```
+```ts
 const db = drizzle(...)
 
 await db.transaction(async (tx) => {
@@ -43,7 +41,7 @@ await db.transaction(async (tx) => {
 
 You can embed business logic to the transaction and rollback whenever needed:
 
-```
+```ts
 const db = drizzle(...)
 
 await db.transaction(async (tx) => {
@@ -60,7 +58,7 @@ await db.transaction(async (tx) => {
 
 You can return values from the transaction:
 
-```
+```ts
 const db = drizzle(...)
 
 const newBalance: number = await db.transaction(async (tx) => {
@@ -72,9 +70,9 @@ const newBalance: number = await db.transaction(async (tx) => {
 });
 ```
 
-You can use transactions with **[relational queries](drizzle/docs/rqb/index.md)**:
+You can use transactions with **[relational queries](https://orm.drizzle.team/docs/rqb)**:
 
-```
+```ts
 const db = drizzle({ schema })
 
 await db.transaction(async (tx) => {
@@ -100,7 +98,7 @@ MSSQL
 
 CockroachDB
 
-```
+```ts
 await db.transaction(
   async (tx) => {
     await tx.update(accounts).set({ balance: sql`${accounts.balance} - 100.00` }).where(eq(users.name, "Dan"));
@@ -123,7 +121,7 @@ interface PgTransactionConfig {
 }
 ```
 
-```
+```ts
 await db.transaction(
   async (tx) => {
     await tx.update(accounts).set({ balance: sql`${accounts.balance} - 100.00` }).where(eq(users.name, "Dan"));
@@ -146,7 +144,7 @@ interface MySqlTransactionConfig {
 }
 ```
 
-```
+```ts
 await db.transaction(
   async (tx) => {
     await tx.update(accounts).set({ balance: sql`${accounts.balance} - 100.00` }).where(eq(users.name, "Dan"));
@@ -161,7 +159,7 @@ interface SQLiteTransactionConfig {
 }
 ```
 
-```
+```ts
 await db.transaction(
   async (tx) => {
     await tx.update(accounts).set({ balance: sql`${accounts.balance} - 100.00` }).where(eq(users.name, "Dan"));
@@ -184,7 +182,7 @@ interface SingleStoreTransactionConfig {
 }
 ```
 
-```
+```ts
 await db.transaction(
   async (tx) => {
     await tx.update(accounts).set({ balance: sql`${accounts.balance} - 100.00` }).where(eq(users.name, "Dan"));
@@ -199,7 +197,7 @@ interface MsSqlTransactionConfig {
 }
 ```
 
-```
+```ts
 await db.transaction(
   async (tx) => {
     await tx.update(accounts).set({ balance: sql`${accounts.balance} - 100.00` }).where(eq(users.name, "Dan"));

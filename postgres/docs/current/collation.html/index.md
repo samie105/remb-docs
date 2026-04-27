@@ -5,19 +5,17 @@ canonical_url: "https://www.postgresql.org/docs/current/collation.html"
 docset: "postgres"
 kind: "database"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:54:13.020Z"
-content_hash: "870905e1a48b16d0e4872d20f59569ead55ad6886ace6aec85dd2b0f514bbc3d"
+last_crawled_at: "2026-04-27T20:52:36.900Z"
+content_hash: "e93cfe3619373e4ffa8b321617f1be0880474fd9ef28e7ee0924c101ad6e12c7"
 menu_path: ["PostgreSQL: Documentation: 18: 23.2. Collation Support"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/catalog-pg-tablespace.html/index.md", "title": "PostgreSQL: Documentation: 18: 52.56.\u00a0pg_tablespace"}
-nav_next: {"path": "postgres/docs/current/color-when.html/index.md", "title": "PostgreSQL: Documentation: 18: N.1.\u00a0When Color is Used"}
+content_language: "en"
 ---
-
 The collation feature allows specifying the sort order and character classification behavior of data per-column, or even per-operation. This alleviates the restriction that the `LC_COLLATE` and `LC_CTYPE` settings of a database cannot be changed after its creation.
 
 ### 23.2.1. Concepts [#](#COLLATION-CONCEPTS)
 
-Conceptually, every expression of a collatable data type has a collation. (The built-in collatable data types are `text`, `varchar`, and `char`. User-defined base types can also be marked collatable, and of course a [](postgres/docs/current/glossary.html/index.md#GLOSSARY-DOMAIN)[domain](https://www.postgresql.org/docs/current/glossary.html#GLOSSARY-DOMAIN "Domain") over a collatable data type is collatable.) If the expression is a column reference, the collation of the expression is the defined collation of the column. If the expression is a constant, the collation is the default collation of the data type of the constant. The collation of a more complex expression is derived from the collations of its inputs, as described below.
+Conceptually, every expression of a collatable data type has a collation. (The built-in collatable data types are `text`, `varchar`, and `char`. User-defined base types can also be marked collatable, and of course a [](https://www.postgresql.org/docs/current/glossary.html#GLOSSARY-DOMAIN)[domain](https://www.postgresql.org/docs/current/glossary.html#GLOSSARY-DOMAIN "Domain") over a collatable data type is collatable.) If the expression is a column reference, the collation of the expression is the defined collation of the column. If the expression is a constant, the collation is the default collation of the data type of the constant. The collation of a more complex expression is derived from the collations of its inputs, as described below.
 
 The collation of an expression can be the “default” collation, which means the locale settings defined for the database. It is also possible for an expression's collation to be indeterminate. In such cases, ordering operations and other operations that need to know the collation will fail.
 
@@ -94,7 +92,7 @@ On all platforms, the following collations are supported:
 
 `unicode`
 
-This SQL standard collation sorts using the Unicode Collation Algorithm with the Default Unicode Collation Element Table. It is available in all encodings. ICU support is required to use this collation, and behavior may change if PostgreSQL is built with a different version of ICU. (This collation has the same behavior as the ICU root locale; see [`und-x-icu` (for “undefined”)](postgres/docs/current/collation.html/index.md#COLLATION-MANAGING-PREDEFINED-ICU-UND-X-ICU).)
+This SQL standard collation sorts using the Unicode Collation Algorithm with the Default Unicode Collation Element Table. It is available in all encodings. ICU support is required to use this collation, and behavior may change if PostgreSQL is built with a different version of ICU. (This collation has the same behavior as the ICU root locale; see [`und-x-icu` (for “undefined”)](https://www.postgresql.org/docs/current/collation.html#COLLATION-MANAGING-PREDEFINED-ICU-UND-X-ICU).)
 
 `ucs_basic`
 
@@ -241,104 +239,17 @@ Comparison of two strings (collation) in ICU is determined by a multi-level proc
 **Table 23.1. ICU Collation Levels**
 
        
-
-Level
-
-Description
-
-`'f' = 'f'`
-
-`'ab' = U&'a\2063b'`
-
-`'x-y' = 'x_y'`
-
-`'g' = 'G'`
-
-`'n' = 'ñ'`
-
-`'y' = 'z'`
-
-level1
-
-Base Character
-
-`true`
-
-`true`
-
-`true`
-
-`true`
-
-`true`
-
-`false`
-
-level2
-
-Accents
-
-`true`
-
-`true`
-
-`true`
-
-`true`
-
-`false`
-
-`false`
-
-level3
-
-Case/Variants
-
-`true`
-
-`true`
-
-`true`
-
-`false`
-
-`false`
-
-`false`
-
-level4
-
-Punctuation[\[a\]](#ftn.id-1.6.10.4.6.3.4.2.10.4.2.1)
-
-`true`
-
-`true`
-
-`false`
-
-`false`
-
-`false`
-
-`false`
-
-identic
-
-All
-
-`true`
-
-`false`
-
-`false`
-
-`false`
-
-`false`
-
-`false`
-
+| Level | Description | `'f' = 'f'` | `'ab' = U&'a\2063b'` | `'x-y' = 'x_y'` | `'g' = 'G'` | `'n' = 'ñ'` | `'y' = 'z'` |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| level1 | Base Character | `true` | `true` | `true` | `true` | `true` | `false` |
+| level2 | Accents | `true` | `true` | `true` | `true` | `false` | `false` |
+| level3 | Case/Variants | `true` | `true` | `true` | `false` | `false` | `false` |
+| level4 | Punctuation[\[a\]](#ftn.id-1.6.10.4.6.3.4.2.10.4.2.1) | `true` | `true` | `false` | `false` | `false` | `false` |
+| identic | All | `true` | `false` | `false` | `false` | `false` | `false` |
+| 
 [\[a\]](#id-1.6.10.4.6.3.4.2.10.4.2.1) only with `ka-shifted`; see [Table 23.2](https://www.postgresql.org/docs/current/collation.html#ICU-COLLATION-SETTINGS-TABLE "Table 23.2. ICU Collation Settings")
+
+ |
 
 At every level, even with full normalization off, basic normalization is performed. For example, `'á'` may be composed of the code points `U&'\0061\0301'` or the single code point `U&'\00E1'`, and those sequences will be considered equal even at the `identic` level. To treat any difference in code point representation as distinct, use a collation created with `deterministic` set to `true`.
 
@@ -363,100 +274,35 @@ SELECT 'x-y' = 'x\_y' COLLATE level4; -- false
 **Table 23.2. ICU Collation Settings**
 
    
-
-Key
-
-Values
-
-Default
-
-Description
-
-`co`
-
-`emoji`, `phonebk`, `standard`, _`...`_
-
-`standard`
-
-Collation type. See [Section 23.2.3.5](https://www.postgresql.org/docs/current/collation.html#ICU-EXTERNAL-REFERENCES "23.2.3.5. External References for ICU") for additional options and details.
-
-`ka`
-
-`noignore`, `shifted`
-
-`noignore`
-
-If set to `shifted`, causes some characters (e.g. punctuation or space) to be ignored in comparison. Key `ks` must be set to `level3` or lower to take effect. Set key `kv` to control which character classes are ignored.
-
-`kb`
-
-`true`, `false`
-
-`false`
-
-Backwards comparison for the level 2 differences. For example, locale `und-u-kb` sorts `'àe'` before `'aé'`.
-
-`kc`
-
-`true`, `false`
-
-`false`
-
+| Key | Values | Default | Description |
+| --- | --- | --- | --- |
+| `co` | `emoji`, `phonebk`, `standard`, _`...`_ | `standard` | Collation type. See [Section 23.2.3.5](https://www.postgresql.org/docs/current/collation.html#ICU-EXTERNAL-REFERENCES "23.2.3.5. External References for ICU") for additional options and details. |
+| `ka` | `noignore`, `shifted` | `noignore` | If set to `shifted`, causes some characters (e.g. punctuation or space) to be ignored in comparison. Key `ks` must be set to `level3` or lower to take effect. Set key `kv` to control which character classes are ignored. |
+| `kb` | `true`, `false` | `false` | Backwards comparison for the level 2 differences. For example, locale `und-u-kb` sorts `'àe'` before `'aé'`. |
+| `kc` | `true`, `false` | `false` | 
 Separates case into a "level 2.5" that falls between accents and other level 3 features.
 
 If set to `true` and `ks` is set to `level1`, will ignore accents but take case into account.
 
-`kf`
-
-`upper`, `lower`, `false`
-
-`false`
-
-If set to `upper`, upper case sorts before lower case. If set to `lower`, lower case sorts before upper case. If set to `false`, the sort depends on the rules of the locale.
-
-`kn`
-
-`true`, `false`
-
-`false`
-
-If set to `true`, numbers within a string are treated as a single numeric value rather than a sequence of digits. For example, `'id-45'` sorts before `'id-123'`.
-
-`kk`
-
-`true`, `false`
-
-`false`
+ |
+| `kf` | `upper`, `lower`, `false` | `false` | If set to `upper`, upper case sorts before lower case. If set to `lower`, lower case sorts before upper case. If set to `false`, the sort depends on the rules of the locale. |
+| `kn` | `true`, `false` | `false` | If set to `true`, numbers within a string are treated as a single numeric value rather than a sequence of digits. For example, `'id-45'` sorts before `'id-123'`. |
+| `kk` | `true`, `false` | `false` | 
 
 Enable full normalization; may affect performance. Basic normalization is performed even when set to `false`. Locales for languages that require full normalization typically enable it by default.
 
 Full normalization is important in some cases, such as when multiple accents are applied to a single character. For example, the code point sequences `U&'\0065\0323\0302'` and `U&'\0065\0302\0323'` represent an `e` with circumflex and dot-below accents applied in different orders. With full normalization on, these code point sequences are treated as equal; otherwise they are unequal.
 
-`kr`
-
-`space`, `punct`, `symbol`, `currency`, `digit`, _`script-id`_
-
- 
+ |
+| `kr` | `space`, `punct`, `symbol`, `currency`, `digit`, _`script-id`_ |   | 
 
 Set to one or more of the valid values, or any BCP 47 _`script-id`_, e.g. `latn` ("Latin") or `grek` ("Greek"). Multiple values are separated by "`-`".
 
 Redefines the ordering of classes of characters; those characters belonging to a class earlier in the list sort before characters belonging to a class later in the list. For instance, the value `digit-currency-space` (as part of a language tag like `und-u-kr-digit-currency-space`) sorts punctuation before digits and spaces.
 
-`ks`
-
-`level1`, `level2`, `level3`, `level4`, `identic`
-
-`level3`
-
-Sensitivity (or "strength") when determining equality, with `level1` the least sensitive to differences and `identic` the most sensitive to differences. See [Table 23.1](https://www.postgresql.org/docs/current/collation.html#ICU-COLLATION-LEVELS "Table 23.1. ICU Collation Levels") for details.
-
-`kv`
-
-`space`, `punct`, `symbol`, `currency`
-
-`punct`
-
-Classes of characters ignored during comparison at level 3. Setting to a later value includes earlier values; e.g. `symbol` also includes `punct` and `space` in the characters to be ignored. Key `ka` must be set to `shifted` and key `ks` must be set to `level3` or lower to take effect.
+ |
+| `ks` | `level1`, `level2`, `level3`, `level4`, `identic` | `level3` | Sensitivity (or "strength") when determining equality, with `level1` the least sensitive to differences and `identic` the most sensitive to differences. See [Table 23.1](https://www.postgresql.org/docs/current/collation.html#ICU-COLLATION-LEVELS "Table 23.1. ICU Collation Levels") for details. |
+| `kv` | `space`, `punct`, `symbol`, `currency` | `punct` | Classes of characters ignored during comparison at level 3. Setting to a later value includes earlier values; e.g. `symbol` also includes `punct` and `space` in the characters to be ignored. Key `ka` must be set to `shifted` and key `ks` must be set to `level3` or lower to take effect. |
 
 Defaults may depend on locale. The above table is not meant to be complete. See [Section 23.2.3.5](https://www.postgresql.org/docs/current/collation.html#ICU-EXTERNAL-REFERENCES "23.2.3.5. External References for ICU") for additional options and details.
 

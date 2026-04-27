@@ -5,15 +5,16 @@ canonical_url: "https://docs.deno.com/runtime/reference/std/encoding/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:01:50.838Z"
-content_hash: "788d888ee4f9bd6912622adc53f36e025f5e7baff521f8cebab71caef3fdd4e1"
+last_crawled_at: "2026-04-27T17:41:43.052Z"
+content_hash: "78656a15415f6d623db3b5be41045325ba47464367f3d709aed470fce81b6c52"
 menu_path: ["@std/encoding"]
 section_path: []
+content_language: "en"
 ---
-On this page
+**On this page**
 
-*   [Overview](#overview)
-    *   [Add to your project](#add-to-your-project)
+-   [Overview](#overview)
+    -   [Add to your project](#add-to-your-project)
 
 ## Overview
 

@@ -5,27 +5,28 @@ canonical_url: "https://nextjs.org/docs/messages/empty-generate-static-params"
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:17:41.031Z"
-content_hash: "19b5fb40c6b5b22e8dba048a0d8db177e0b6769e94fd6638215465f3c1926a68"
+last_crawled_at: "2026-04-27T18:17:09.635Z"
+content_hash: "9ac2ab56a1921605619083a0f341322cc3c11401e53779a25bca05808b077ab7"
 menu_path: ["Empty generateStaticParams with Cache Components"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/messages/conflicting-public-file-page/index.md", "title": "Conflicting Public File and Page File"}
-nav_next: {"path": "nextjs/docs/messages/google-font-display/index.md", "title": "Google Font Display"}
+version: "latest"
+content_language: "en"
 ---
+[Docs](/docs)[Errors](/docs)Empty generateStaticParams with Cache Components
 
 # Empty generateStaticParams with Cache Components
 
 ## Why This Error Occurred[](#why-this-error-occurred)
 
-You're using [Cache Components](nextjs/docs/app/getting-started/caching/index.md) in your Next.js application, and one of your `generateStaticParams` functions returned an empty array, which causes a build error.
+You're using [Cache Components](https://nextjs.org/docs/app/getting-started/caching) in your Next.js application, and one of your `generateStaticParams` functions returned an empty array, which causes a build error.
 
 When Cache Components is enabled, Next.js performs build-time validation to ensure your routes can be properly prerendered without runtime dynamic access errors. If `generateStaticParams` returns an empty array, Next.js cannot validate that your route won't access dynamic values (like `await cookies()`, `await headers()`, or `await searchParams`) at runtime, which would cause errors.
 
 This strict requirement ensures:
 
-*   Build-time validation catches potential runtime errors early
-*   All routes using Cache Components have at least one static variant to validate against
-*   You don't accidentally deploy routes that will fail at runtime
+-   Build-time validation catches potential runtime errors early
+-   All routes using Cache Components have at least one static variant to validate against
+-   You don't accidentally deploy routes that will fail at runtime
 
 ## Possible Ways to Fix It[](#possible-ways-to-fix-it)
 
@@ -90,12 +91,8 @@ Using placeholders provides minimal build-time validation and increases the risk
 
 ## Useful Links[](#useful-links)
 
-*   [Cache Components Documentation](nextjs/docs/app/getting-started/caching/index.md)
-*   [generateStaticParams API Reference](nextjs/docs/app/api-reference/functions/generate-static-params/index.md)
-*   [Dynamic Routes with Cache Components](/docs/app/api-reference/file-conventions/dynamic-routes#with-cache-components)
+-   [Cache Components Documentation](https://nextjs.org/docs/app/getting-started/caching)
+-   [generateStaticParams API Reference](https://nextjs.org/docs/app/api-reference/functions/generate-static-params)
+-   [Dynamic Routes with Cache Components](/docs/app/api-reference/file-conventions/dynamic-routes#with-cache-components)
 
 Was this helpful?
-
-supported.
-
-Send

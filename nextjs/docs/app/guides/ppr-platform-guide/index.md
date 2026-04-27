@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/app/guides/ppr-platform-guide"
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:15:38.574Z"
-content_hash: "fd7b431fd1642b591e4d23a46a7887b07c3a21744a667ba86867b0abfa929b8e"
+last_crawled_at: "2026-04-27T18:14:51.921Z"
+content_hash: "0c2dd9469e137e63a58da7e3d6d43f9e66cb957a6ac09039e410e81289dc8d31"
 menu_path: ["Implementing Partial Prerendering on your platform"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/guides/package-bundling/index.md", "title": "Optimizing package bundling"}
-nav_next: {"path": "nextjs/docs/app/guides/prefetching/index.md", "title": "Prefetching"}
+version: "latest"
+content_language: "en"
 ---
+[App Router](/docs/app)[Guides](/docs/app/guides)PPR Platform Guide
 
 # Implementing Partial Prerendering on your platform
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 Partial Prerendering (PPR) combines static and dynamic rendering in a single route. At build time, Next.js generates a static HTML shell and a `postponedState` blob for each PPR-enabled route. At request time, the shell is served immediately and dynamic portions are rendered and streamed to the client.
 
@@ -27,9 +28,9 @@ This page explains how platforms can implement PPR support at different levels o
 
 For each PPR route, Next.js produces:
 
-*   A **static HTML shell** containing all the content that can be prerendered, with [Suspense](/docs/app/guides/streaming#what-is-streaming) fallbacks where dynamic content will appear.
-*   A **`postponedState`** value: a serialized string. Treat it as opaque: pass it through without parsing or modifying it. Altering `postponedState` produces incorrect dynamic rendering output.
-*   An **RSC payload** for the static portions of the page.
+-   A **static HTML shell** containing all the content that can be prerendered, with [Suspense](/docs/app/guides/streaming#what-is-streaming) fallbacks where dynamic content will appear.
+-   A **`postponedState`** value: a serialized string. Treat it as opaque: pass it through without parsing or modifying it. Altering `postponedState` produces incorrect dynamic rendering output.
+-   An **RSC payload** for the static portions of the page.
 
 ### Request time[](#request-time)
 
@@ -83,9 +84,9 @@ In standard `next start`, the server handles both the shell and dynamic render i
 
 When the CDN makes an HTTP request to a separate Next.js origin:
 
-*   Send a **POST** request to the route with the header `next-resume: 1`.
-*   Include the `postponedState` blob as the **request body**.
-*   The server will render only the deferred Suspense boundaries and stream the result.
+-   Send a **POST** request to the route with the header `next-resume: 1`.
+-   Include the `postponedState` blob as the **request body**.
+-   The server will render only the deferred Suspense boundaries and stream the result.
 
 > **Good to know:** When a POST request combines a Server Action with a PPR resume, the request body contains the postponed state followed by the action body. The `x-next-resume-state-length` header carries the byte length of the postponed state prefix so the handler can separate the two. For a pure PPR resume (the common case), the entire request body is the postponed state and this header is not needed.
 
@@ -93,9 +94,9 @@ When the CDN makes an HTTP request to a separate Next.js origin:
 
 When the platform invokes the handler function directly:
 
-*   Call the entrypoint handler with `req.method` set to `'POST'`, the `next-resume: 1` header on the request, and the `postponedState` as the request body. (You can also pass `requestMeta: { postponed: postponedState }` as the third argument to the handler invocation, which is equivalent but bypasses the HTTP layer entirely.)
-*   The handler renders only the deferred Suspense boundaries and streams the result to `res`.
-*   No HTTP round-trip is needed: the handler is invoked in-process.
+-   Call the entrypoint handler with `req.method` set to `'POST'`, the `next-resume: 1` header on the request, and the `postponedState` as the request body. (You can also pass `requestMeta: { postponed: postponedState }` as the third argument to the handler invocation, which is equivalent but bypasses the HTTP layer entirely.)
+-   The handler renders only the deferred Suspense boundaries and streams the result to `res`.
+-   No HTTP round-trip is needed: the handler is invoked in-process.
 
 ### Finding PPR routes in build output[](#finding-ppr-routes-in-build-output)
 
@@ -148,20 +149,4 @@ Configure a custom adapter for Next.js to hook into the build process.
 
 ](/docs/app/api-reference/config/next-config-js/adapterPath)
 
-[Previous
-
-Package Bundling
-
-](/docs/app/guides/package-bundling)
-
-[Next
-
-Prefetching
-
-](/docs/app/guides/prefetching)
-
 Was this helpful?
-
-supported.
-
-Send

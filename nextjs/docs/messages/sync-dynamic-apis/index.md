@@ -5,13 +5,14 @@ canonical_url: "https://nextjs.org/docs/messages/sync-dynamic-apis"
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:18:45.125Z"
-content_hash: "5740f63c89a304937e096b95ae60df5bdd289c73f891ba3900439755e5844a71"
+last_crawled_at: "2026-04-27T18:18:07.077Z"
+content_hash: "ee2df844bba810774aeec030a94c560bed91a24118ace3e2a56fec41aaddcd90"
 menu_path: ["Dynamic APIs are Asynchronous"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/messages/no-unwanted-polyfillio/index.md", "title": "No Unwanted Polyfill.io"}
-nav_next: {"path": "nextjs/docs/messages/url-deprecated/index.md", "title": "`url` is deprecated"}
+version: "latest"
+content_language: "en"
 ---
+[Docs](/docs)[Errors](/docs)Dynamic APIs are Asynchronous
 
 # Dynamic APIs are Asynchronous
 
@@ -23,8 +24,8 @@ Somewhere in your code you used an API that opts into [dynamic rendering](/docs/
 
 Dynamic APIs are:
 
-*   The `params` and `searchParams` props that get provided to pages, layouts, metadata APIs, and route handlers.
-*   `cookies()`, `draftMode()`, and `headers()` from `next/headers`
+-   The `params` and `searchParams` props that get provided to pages, layouts, metadata APIs, and route handlers.
+-   `cookies()`, `draftMode()`, and `headers()` from `next/headers`
 
 In Next 15, these APIs have been made asynchronous. You can read more about this in the Next.js 15 [Upgrade Guide](/docs/app/guides/upgrading/version-15).
 
@@ -107,7 +108,3 @@ If you didn't address the comments that starting with `@next-codemod-error` left
 > You can delay unwrapping the Promise (either with `await` or `React.use`) until you actually need to consume the value. This will allow Next.js to statically render more of your page.
 
 Was this helpful?
-
-supported.
-
-Send

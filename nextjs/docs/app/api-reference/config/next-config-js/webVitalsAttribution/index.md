@@ -5,19 +5,20 @@ canonical_url: "https://nextjs.org/docs/app/api-reference/config/next-config-js/
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:09:11.650Z"
-content_hash: "7cc60aa1149591e10223a0a0369afb36b33b4ebfbdedc94b9af482fd0ef8a55b"
+last_crawled_at: "2026-04-27T18:07:57.425Z"
+content_hash: "18cca0719e1fa014fb38977ce8aeaaa2927559600b81231970d3bdfbef57cc43"
 menu_path: ["webVitalsAttribution"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/api-reference/config/next-config-js/webpack/index.md", "title": "Custom Webpack Config"}
-nav_next: {"path": "nextjs/docs/app/api-reference/config/typescript/index.md", "title": "TypeScript"}
+version: "latest"
+content_language: "en"
 ---
+[Configuration](/docs/app/api-reference/config)[next.config.js](/docs/app/api-reference/config/next-config-js)webVitalsAttribution
 
 # webVitalsAttribution
 
 This feature is currently experimental and subject to change, it's not recommended for production. Try it out and share your feedback on [GitHub](https://github.com/vercel/next.js/issues).
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 When debugging issues related to Web Vitals, it is often helpful if we can pinpoint the source of the problem. For example, in the case of Cumulative Layout Shift (CLS), we might want to know the first element that shifted when the single largest layout shift occurred. Or, in the case of Largest Contentful Paint (LCP), we might want to identify the element corresponding to the LCP for the page. If the LCP element is an image, knowing the URL of the image resource can help us locate the asset we need to optimize.
 
@@ -37,20 +38,4 @@ module.exports = {
 
 Valid attribution values are all `web-vitals` metrics specified in the [`NextWebVitalsMetric`](https://github.com/vercel/next.js/blob/442378d21dd56d6e769863eb8c2cb521a463a2e0/packages/next/shared/lib/utils.ts#L43) type.
 
-[Previous
-
-webpack
-
-](/docs/app/api-reference/config/next-config-js/webpack)
-
-[Next
-
-TypeScript
-
-](/docs/app/api-reference/config/typescript)
-
 Was this helpful?
-
-supported.
-
-Send

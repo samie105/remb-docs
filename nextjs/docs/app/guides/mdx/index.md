@@ -5,17 +5,19 @@ canonical_url: "https://nextjs.org/docs/app/guides/mdx"
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:15:09.246Z"
-content_hash: "26bbf372c882743998b5998de0277cc2e99f15ff178873130c90657f154f4ff6"
+last_crawled_at: "2026-04-27T18:14:09.649Z"
+content_hash: "5c7a86c76319fafe9fa3e8d8240aafdc9b5c3630f3e1e91bce62bca46be07aff"
 menu_path: ["How to use markdown and MDX in Next.js"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/guides/mcp/index.md", "title": "Enabling Next.js MCP Server for Coding Agents"}
-nav_next: {"path": "nextjs/docs/app/guides/memory-usage/index.md", "title": "How to optimize memory usage"}
+version: "latest"
+tab_variants: ["pnpm","npm","yarn","bun"]
+content_language: "en"
 ---
+[App Router](/docs/app)[Guides](/docs/app/guides)MDX
 
 # How to use markdown and MDX in Next.js
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 [Markdown](https://daringfireball.net/projects/markdown/syntax) is a lightweight markup language used to format text. It allows you to write using plain text syntax and convert it to structurally valid HTML. It's commonly used for writing content on websites and blogs.
 
@@ -43,7 +45,21 @@ The `@next/mdx` package, and related packages, are used to configure Next.js so 
 
 Install these packages to render MDX with Next.js:
 
-pnpmnpmyarnbun
+#### pnpm
+
+pnpm
+
+#### npm
+
+npm
+
+#### yarn
+
+yarn
+
+#### bun
+
+bun
 
 Terminal
 
@@ -95,8 +111,6 @@ Create an `mdx-components.tsx` (or `.js`) file in the root of your project to de
 
 mdx-components.tsx
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -111,9 +125,9 @@ export function useMDXComponents(): MDXComponents {
 
 > **Good to know**:
 > 
-> *   `mdx-components.tsx` is **required** to use `@next/mdx` with App Router and will not work without it.
-> *   Learn more about the [`mdx-components.tsx` file convention](/docs/app/api-reference/file-conventions/mdx-components).
-> *   Learn how to [use custom styles and components](#using-custom-styles-and-components).
+> -   `mdx-components.tsx` is **required** to use `@next/mdx` with App Router and will not work without it.
+> -   Learn more about the [`mdx-components.tsx` file convention](/docs/app/api-reference/file-conventions/mdx-components).
+> -   Learn how to [use custom styles and components](#using-custom-styles-and-components).
 
 ## Rendering MDX[](#rendering-mdx)
 
@@ -179,8 +193,6 @@ Import the MDX file inside the page to display the content:
 
 app/mdx-page/page.tsx
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -199,13 +211,11 @@ You can import dynamic MDX components instead of using filesystem routing for MD
 
 For example, you can have a dynamic route segment which loads MDX components from a separate directory:
 
-![Route segments for dynamic MDX components](/_next/image?url=https%3A%2F%2Fh8DxKfmAPhn8O0p3.public.blob.vercel-storage.com%2Fdocs%2Flight%2Fmdx-files.png&w=3840&q=75)![Route segments for dynamic MDX components](/_next/image?url=https%3A%2F%2Fh8DxKfmAPhn8O0p3.public.blob.vercel-storage.com%2Fdocs%2Fdark%2Fmdx-files.png&w=3840&q=75)
+![Route segments for dynamic MDX components](https://h8DxKfmAPhn8O0p3.public.blob.vercel-storage.com/docs/light/mdx-files.png)
 
 [`generateStaticParams`](/docs/app/api-reference/functions/generate-static-params) can be used to prerender the provided routes. By marking `dynamicParams` as `false`, accessing a route not defined in `generateStaticParams` will 404.
 
 app/blog/\[slug\]/page.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -266,8 +276,6 @@ Adding styles and components in `mdx-components.tsx` will affect _all_ MDX files
 
 mdx-components.tsx
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -304,8 +312,6 @@ You can apply local styles and components to specific pages by passing them into
 
 app/mdx-page/page.tsx
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -330,8 +336,6 @@ To share a layout across MDX pages, you can use the [built-in layouts support](/
 
 app/mdx-page/layout.tsx
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -351,8 +355,6 @@ The plugin adds a set of `prose` classes that can be used to add typographic sty
 
 app/mdx-page/layout.tsx
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -370,17 +372,15 @@ export default function MdxLayout({ children }: { children: React.ReactNode }) {
 
 Frontmatter is a YAML like key/value pairing that can be used to store data about a page. `@next/mdx` does **not** support frontmatter by default, though there are many solutions for adding frontmatter to your MDX content, such as:
 
-*   [remark-frontmatter](https://github.com/remarkjs/remark-frontmatter)
-*   [remark-mdx-frontmatter](https://github.com/remcohaszing/remark-mdx-frontmatter)
-*   [gray-matter](https://github.com/jonschlinkert/gray-matter)
+-   [remark-frontmatter](https://github.com/remarkjs/remark-frontmatter)
+-   [remark-mdx-frontmatter](https://github.com/remcohaszing/remark-mdx-frontmatter)
+-   [gray-matter](https://github.com/jonschlinkert/gray-matter)
 
 `@next/mdx` **does** allow you to use exports like any other JavaScript component:
 
 Metadata can now be referenced outside of the MDX file:
 
 app/blog/page.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -398,8 +398,8 @@ A common use case for this is when you want to iterate over a collection of MDX 
 
 > **Good to know**:
 > 
-> *   Using `fs`, `globby`, etc. can only be used server-side.
-> *   View the [Portfolio Starter Kit](https://vercel.com/templates/next.js/portfolio-starter-kit) template for a complete working example.
+> -   Using `fs`, `globby`, etc. can only be used server-side.
+> -   View the [Portfolio Starter Kit](https://vercel.com/templates/next.js/portfolio-starter-kit) template for a complete working example.
 
 ## remark and rehype Plugins[](#remark-and-rehype-plugins)
 
@@ -535,26 +535,10 @@ module.exports = withMDX({
 
 ## Helpful Links[](#helpful-links)
 
-*   [MDX](https://mdxjs.com)
-*   [`@next/mdx`](https://www.npmjs.com/package/@next/mdx)
-*   [remark](https://github.com/remarkjs/remark)
-*   [rehype](https://github.com/rehypejs/rehype)
-*   [Markdoc](https://markdoc.dev/docs/nextjs)
-
-[Previous
-
-Next.js MCP Server
-
-](/docs/app/guides/mcp)
-
-[Next
-
-Memory Usage
-
-](/docs/app/guides/memory-usage)
+-   [MDX](https://mdxjs.com)
+-   [`@next/mdx`](https://www.npmjs.com/package/@next/mdx)
+-   [remark](https://github.com/remarkjs/remark)
+-   [rehype](https://github.com/rehypejs/rehype)
+-   [Markdoc](https://markdoc.dev/docs/nextjs)
 
 Was this helpful?
-
-supported.
-
-Send

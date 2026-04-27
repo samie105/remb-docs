@@ -5,13 +5,14 @@ canonical_url: "https://nextjs.org/docs/messages/conflicting-public-file-page"
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:17:40.076Z"
-content_hash: "5957cef18d2cc2438542d6939200a13cac5d8893d932767c6c594ba56caae7dc"
+last_crawled_at: "2026-04-27T18:17:07.664Z"
+content_hash: "ad4cde548d01738cae816c032b89f150f1c9f082979a712f8cd4c8eeb6fc2169"
 menu_path: ["Conflicting Public File and Page File"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/messages/blocking-route/index.md", "title": "Uncached data was accessed outside of `<Suspense>`"}
-nav_next: {"path": "nextjs/docs/messages/empty-generate-static-params/index.md", "title": "Empty generateStaticParams with Cache Components"}
+version: "latest"
+content_language: "en"
 ---
+[Docs](/docs)[Errors](/docs)Conflicting Public File and Page File
 
 # Conflicting Public File and Page File
 
@@ -47,10 +48,6 @@ pages/
 
 ## Useful Links[](#useful-links)
 
-*   [Static file serving docs](/docs/pages/api-reference/file-conventions/public-folder)
+-   [Static file serving docs](/docs/pages/api-reference/file-conventions/public-folder)
 
 Was this helpful?
-
-supported.
-
-Send

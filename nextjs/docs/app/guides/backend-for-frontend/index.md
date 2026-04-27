@@ -5,23 +5,39 @@ canonical_url: "https://nextjs.org/docs/app/guides/backend-for-frontend"
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:14:07.211Z"
-content_hash: "9d107ad109e51c4d333ab25cfc5b69ea14a5746de3466c29f8cf192ee176c250"
+last_crawled_at: "2026-04-27T18:12:58.115Z"
+content_hash: "887e974a4b1b5c24705ebbea7754c655b6617498eb3d37dd0204d1aa9cbd0428"
 menu_path: ["How to use Next.js as a backend for your frontend"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/guides/authentication/index.md", "title": "How to implement authentication in Next.js"}
-nav_next: {"path": "nextjs/docs/app/guides/caching-without-cache-components/index.md", "title": "Caching and Revalidating (Previous Model)"}
+version: "latest"
+tab_variants: ["pnpm","npm","yarn","bun"]
+content_language: "en"
 ---
+[App Router](/docs/app)[Guides](/docs/app/guides)Backend for Frontend
 
 # How to use Next.js as a backend for your frontend
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 Next.js supports the "Backend for Frontend" pattern. This lets you create public endpoints to handle HTTP requests and return any content type—not just HTML. You can also access data sources and perform side effects like updating remote data.
 
 If you are starting a new project, using `create-next-app` with the `--api` flag automatically includes an example `route.ts` in your new project's `app/` folder, demonstrating how to create an API endpoint.
 
-pnpmnpmyarnbun
+#### pnpm
+
+pnpm
+
+#### npm
+
+npm
+
+#### yarn
+
+yarn
+
+#### bun
+
+bun
 
 Terminal
 
@@ -31,15 +47,15 @@ pnpm create next-app --api
 
 > **Good to know**: Next.js backend capabilities are not a full backend replacement. They serve as an API layer that:
 > 
-> *   is publicly reachable
-> *   handles any HTTP request
-> *   can return any content type
+> -   is publicly reachable
+> -   handles any HTTP request
+> -   can return any content type
 
 To implement this pattern, use:
 
-*   [Route Handlers](/docs/app/api-reference/file-conventions/route)
-*   [`proxy`](/docs/app/api-reference/file-conventions/proxy)
-*   In Pages Router, [API Routes](/docs/pages/building-your-application/routing/api-routes)
+-   [Route Handlers](/docs/app/api-reference/file-conventions/route)
+-   [`proxy`](/docs/app/api-reference/file-conventions/proxy)
+-   In Pages Router, [API Routes](/docs/pages/building-your-application/routing/api-routes)
 
 ## Public Endpoints[](#public-endpoints)
 
@@ -48,8 +64,6 @@ Route Handlers are public HTTP endpoints. Any client can access them.
 Create a Route Handler using the `route.ts` or `route.js` file convention:
 
 /app/api/route.ts
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -62,8 +76,6 @@ This handles `GET` requests sent to `/api`.
 Use `try/catch` blocks for operations that may throw an exception:
 
 /app/api/route.ts
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -93,23 +105,21 @@ Route Handlers let you serve non-UI responses, including JSON, XML, images, file
 
 Next.js uses file conventions for common endpoints:
 
-*   [`sitemap.xml`](/docs/app/api-reference/file-conventions/metadata/sitemap)
-*   [`opengraph-image.jpg`, `twitter-image`](/docs/app/api-reference/file-conventions/metadata/opengraph-image)
-*   [favicon, app icon, and apple-icon](/docs/app/api-reference/file-conventions/metadata/app-icons)
-*   [`manifest.json`](/docs/app/api-reference/file-conventions/metadata/manifest)
-*   [`robots.txt`](/docs/app/api-reference/file-conventions/metadata/robots)
+-   [`sitemap.xml`](/docs/app/api-reference/file-conventions/metadata/sitemap)
+-   [`opengraph-image.jpg`, `twitter-image`](/docs/app/api-reference/file-conventions/metadata/opengraph-image)
+-   [favicon, app icon, and apple-icon](/docs/app/api-reference/file-conventions/metadata/app-icons)
+-   [`manifest.json`](/docs/app/api-reference/file-conventions/metadata/manifest)
+-   [`robots.txt`](/docs/app/api-reference/file-conventions/metadata/robots)
 
 You can also define custom ones, such as:
 
-*   `llms.txt`
-*   `rss.xml`
-*   `.well-known`
+-   `llms.txt`
+-   `rss.xml`
+-   `.well-known`
 
 For example, `app/rss.xml/route.ts` creates a Route Handler for `rss.xml`.
 
 /app/rss.xml/route.ts
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -181,8 +191,6 @@ When a request to `/docs/getting-started` includes `Accept: text/markdown`, the 
 
 app/docs/md/\[...slug\]/route.ts
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -225,8 +233,8 @@ curl https://example.com/docs/getting-started
 
 > **Good to know:**
 > 
-> *   The `/docs/md/...` route is still directly accessible without the rewrite. If you want to restrict it to only serve via the rewrite, use [`proxy`](/docs/app/api-reference/file-conventions/proxy) to block direct requests that don't include the expected `Accept` header.
-> *   For more advanced negotiation logic, you can use [`proxy`](/docs/app/api-reference/file-conventions/proxy) instead of rewrites for more flexibility.
+> -   The `/docs/md/...` route is still directly accessible without the rewrite. If you want to restrict it to only serve via the rewrite, use [`proxy`](/docs/app/api-reference/file-conventions/proxy) to block direct requests that don't include the expected `Accept` header.
+> -   For more advanced negotiation logic, you can use [`proxy`](/docs/app/api-reference/file-conventions/proxy) instead of rewrites for more flexibility.
 
 ### Consuming request payloads[](#consuming-request-payloads)
 
@@ -235,8 +243,6 @@ Use Request [instance methods](https://developer.mozilla.org/en-US/docs/Web/API/
 `GET` and `HEAD` requests don’t carry a body.
 
 /app/api/echo-body/route.ts
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -250,8 +256,6 @@ export async function POST(request: Request) {
 > **Good to know**: Validate data before passing it to other systems
 
 /app/api/send-email/route.ts
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -280,8 +284,6 @@ export async function POST(request: Request) {
 You can only read the request body once. Clone the request if you need to read it again:
 
 /app/api/clone/route.ts
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -342,8 +344,6 @@ You can use a Route Handler as a `proxy` to another backend. Add validation logi
 
 /app/api/\[...slug\]/route.ts
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -375,8 +375,8 @@ export async function POST(request: Request, { params }) {
 
 Or use:
 
-*   `proxy` [rewrites](#proxy)
-*   [`rewrites`](/docs/app/api-reference/config/next-config-js/rewrites) in `next.config.js`.
+-   `proxy` [rewrites](#proxy)
+-   [`rewrites`](/docs/app/api-reference/config/next-config-js/rewrites) in `next.config.js`.
 
 ## NextRequest and NextResponse[](#nextrequest-and-nextresponse)
 
@@ -391,8 +391,6 @@ Both provide methods for reading and manipulating cookies.
 You can pass `NextRequest` to any function expecting `Request`. Likewise, you can return `NextResponse` where a `Response` is expected.
 
 /app/echo-pathname/route.ts
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -424,8 +422,6 @@ For example, revalidate a route when content changes in a CMS. Configure the CMS
 
 /app/webhook/route.ts
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -453,8 +449,6 @@ export async function GET(request: NextRequest) {
 Callback URLs are another use case. When a user completes a third-party flow, the third party sends them to a callback URL. Use a Route Handler to verify the response and decide where to redirect the user.
 
 /app/auth/callback/route.ts
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -484,8 +478,6 @@ export async function GET(request: NextRequest) {
 
 app/api/route.ts
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -505,8 +497,6 @@ Only one `proxy` file is allowed per project. Use `config.matcher` to target spe
 Use `proxy` to generate a response before the request reaches a route path.
 
 proxy.ts
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -531,8 +521,6 @@ You can also proxy requests using `proxy`:
 
 proxy.ts
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -549,8 +537,6 @@ export function proxy(request: Request) {
 Another type of response `proxy` can produce are redirects:
 
 proxy.ts
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -571,8 +557,8 @@ export function proxy(request: Request) {
 
 Be deliberate about where headers go, and avoid directly passing incoming request headers to the outgoing response.
 
-*   **Upstream request headers**: In Proxy, `NextResponse.next({ request: { headers } })` modifies the headers your server receives and does not expose them to the client.
-*   **Response headers**: `new Response(..., { headers })`, `NextResponse.json(..., { headers })`, `NextResponse.next({ headers })`, or `response.headers.set(...)` send headers back to the client. If sensitive values were appended to these headers, they will be visible to clients.
+-   **Upstream request headers**: In Proxy, `NextResponse.next({ request: { headers } })` modifies the headers your server receives and does not expose them to the client.
+-   **Response headers**: `new Response(..., { headers })`, `NextResponse.json(..., { headers })`, `NextResponse.next({ headers })`, or `response.headers.set(...)` send headers back to the client. If sensitive values were appended to these headers, they will be visible to clients.
 
 Learn more in [NextResponse headers in Proxy](/docs/app/api-reference/functions/next-response#next).
 
@@ -581,8 +567,6 @@ Learn more in [NextResponse headers in Proxy](/docs/app/api-reference/functions/
 You can implement rate limiting in your Next.js backend. In addition to code-based checks, enable any rate limiting features provided by your host.
 
 /app/resource/route.ts
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -623,7 +607,7 @@ Preflight requests use the `OPTIONS` method to ask the server if a request is al
 
 If `OPTIONS` is not defined, Next.js adds it automatically and sets the `Allow` header based on the other defined methods.
 
-*   [CORS](/docs/app/api-reference/file-conventions/route#cors)
+-   [CORS](/docs/app/api-reference/file-conventions/route#cors)
 
 ## Library patterns[](#library-patterns)
 
@@ -677,12 +661,12 @@ For Server Components rendered on demand, fetching from Route Handlers is slower
 
 Server Components cover most data-fetching needs. However, fetching data client side might be necessary for:
 
-*   Data that depends on client-only Web APIs:
-    *   Geo-location API
-    *   Storage API
-    *   Audio API
-    *   File API
-*   Frequently polled data
+-   Data that depends on client-only Web APIs:
+    -   Geo-location API
+    -   Storage API
+    -   Audio API
+    -   File API
+-   Frequently polled data
 
 For these, use community libraries like [`swr`](https://swr.vercel.app/) or [`react-query`](https://tanstack.com/query/latest/docs/framework/react/overview).
 
@@ -714,10 +698,10 @@ export function GET() {
 
 Some hosts deploy Route Handlers as lambda functions. This means:
 
-*   Route Handlers cannot share data between requests.
-*   The environment may not support writing to File System.
-*   Long-running handlers may be terminated due to timeouts.
-*   WebSockets won’t work because the connection closes on timeout, or after the response is generated.
+-   Route Handlers cannot share data between requests.
+-   The environment may not support writing to File System.
+-   Long-running handlers may be terminated due to timeouts.
+-   WebSockets won’t work because the connection closes on timeout, or after the response is generated.
 
 ## API Reference
 
@@ -743,20 +727,4 @@ Add rewrites to your Next.js app.
 
 ](/docs/app/api-reference/config/next-config-js/rewrites)
 
-[Previous
-
-Authentication
-
-](/docs/app/guides/authentication)
-
-[Next
-
-Caching (Previous Model)
-
-](/docs/app/guides/caching-without-cache-components)
-
 Was this helpful?
-
-supported.
-
-Send

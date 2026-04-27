@@ -5,14 +5,12 @@ canonical_url: "https://www.postgresql.org/docs/current/sql-dropfunction.html"
 docset: "postgres"
 kind: "database"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:38:53.451Z"
-content_hash: "d6e7b5137b858890bcf5eae39700b2435a7d46c9dc6cb0e21e3ddda151f8c117"
+last_crawled_at: "2026-04-27T20:44:26.909Z"
+content_hash: "c5d51820d7fe7eb6f7546ddcef189a27a28b3c51880c843cf1786bc395949496"
 menu_path: ["PostgreSQL: Documentation: 18: DROP FUNCTION"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/sql-dropeventtrigger.html/index.md", "title": "PostgreSQL: Documentation: 18: DROP EVENT TRIGGER"}
-nav_next: {"path": "postgres/docs/current/sql-dropgroup.html/index.md", "title": "PostgreSQL: Documentation: 18: DROP GROUP"}
+content_language: "en"
 ---
-
 DROP FUNCTION — remove a function
 
 ## Synopsis
@@ -78,8 +76,8 @@ which refers to a function with zero arguments, whereas the first variant can re
 
 This command conforms to the SQL standard, with these PostgreSQL extensions:
 
-*   The standard only allows one function to be dropped per command.
+-   The standard only allows one function to be dropped per command.
     
-*   The `IF EXISTS` option
+-   The `IF EXISTS` option
     
-*   The ability to specify argument modes and names
+-   The ability to specify argument modes and names

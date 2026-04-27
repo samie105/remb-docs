@@ -5,43 +5,44 @@ canonical_url: "https://docs.deno.com/runtime/fundamentals/configuration/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:46:00.093Z"
-content_hash: "cc25a0cbb20643f7c303bb89280efacadd70d3df6af54950f935ed87690429e3"
+last_crawled_at: "2026-04-27T17:19:30.903Z"
+content_hash: "15baa9661f0a300191e16c32df774d7756385c23eca53e80fa85e5b28b127c3a"
 menu_path: ["deno.json and package.json"]
 section_path: []
+content_language: "en"
 ---
-On this page
+**On this page**
 
-*   [package.json support](#package.json-support)
-*   [Dependencies](#dependencies)
-    *   [Custom path mappings](#custom-path-mappings)
-    *   [Overriding packages](#overriding-packages)
-*   [Tasks](#tasks)
-*   [Linting](#linting)
-*   [Formatting](#formatting)
-*   [Lockfile](#lockfile)
-*   [Node modules directory](#node-modules-directory)
-*   [TypeScript compiler options](#typescript-compiler-options)
-*   [Unstable features](#unstable-features)
-*   [include and exclude](#include-and-exclude)
-    *   [include](#include)
-    *   [exclude](#exclude)
-    *   [Top level exclude](#top-level-exclude)
-    *   [Publish - Override .gitignore](#publish---override-.gitignore)
-*   [Exports](#exports)
-*   [Permissions](#permissions)
-    *   [Named permissions](#named-permissions)
-    *   [Default permission](#default-permission)
-    *   [Allow, deny, and ignore](#allow%2C-deny%2C-and-ignore)
-        *   [Object form syntax](#object-form-syntax)
-        *   [Available permissions](#available-permissions)
-        *   [Behavior](#behavior)
-        *   [Example](#example)
-    *   [Test, bench, and compile permissions](#test%2C-bench%2C-and-compile-permissions)
-    *   [Security risk](#security-risk)
-*   [An example deno.json file](#an-example-deno.json-file)
-*   [JSON schema](#json-schema)
-*   [Proxies](#proxies)
+-   [package.json support](#package.json-support)
+-   [Dependencies](#dependencies)
+    -   [Custom path mappings](#custom-path-mappings)
+    -   [Overriding packages](#overriding-packages)
+-   [Tasks](#tasks)
+-   [Linting](#linting)
+-   [Formatting](#formatting)
+-   [Lockfile](#lockfile)
+-   [Node modules directory](#node-modules-directory)
+-   [TypeScript compiler options](#typescript-compiler-options)
+-   [Unstable features](#unstable-features)
+-   [include and exclude](#include-and-exclude)
+    -   [include](#include)
+    -   [exclude](#exclude)
+    -   [Top level exclude](#top-level-exclude)
+    -   [Publish - Override .gitignore](#publish---override-.gitignore)
+-   [Exports](#exports)
+-   [Permissions](#permissions)
+    -   [Named permissions](#named-permissions)
+    -   [Default permission](#default-permission)
+    -   [Allow, deny, and ignore](#allow%2C-deny%2C-and-ignore)
+        -   [Object form syntax](#object-form-syntax)
+        -   [Available permissions](#available-permissions)
+        -   [Behavior](#behavior)
+        -   [Example](#example)
+    -   [Test, bench, and compile permissions](#test%2C-bench%2C-and-compile-permissions)
+    -   [Security risk](#security-risk)
+-   [An example deno.json file](#an-example-deno.json-file)
+-   [JSON schema](#json-schema)
+-   [Proxies](#proxies)
 
 You can configure Deno using a `deno.json` file. This file can be used to configure the TypeScript compiler, linter, formatter, and other Deno tools.
 
@@ -170,9 +171,9 @@ deno.json
 
 This capability addresses several common development challenges:
 
-*   Dependency bug fixes
-*   Private local libraries
-*   Compatibility issues
+-   Dependency bug fixes
+-   Private local libraries
+-   Compatibility issues
 
 The package being referenced doesn't need to be published at all. It just needs to have the proper package name and metadata in `deno.json` or `package.json`, so that Deno knows what package it's dealing with. This provides greater flexibility and modularity, maintaining clean separation between your main code and external packages.
 
@@ -243,11 +244,11 @@ deno.json
 
 This configuration will:
 
-*   only lint files in the `src/` directory,
-*   not lint files in the `src/testdata/` directory or any TypeScript files in the `src/fixtures/` directory.
-*   specify that the recommended linting rules should be applied,
-*   add the `ban-untagged-todo`, and
-*   exclude the `no-unused-vars` rule.
+-   only lint files in the `src/` directory,
+-   not lint files in the `src/testdata/` directory or any TypeScript files in the `src/fixtures/` directory.
+-   specify that the recommended linting rules should be applied,
+-   add the `ban-untagged-todo`, and
+-   exclude the `no-unused-vars` rule.
 
 You can find a full list of available linting rules in the [List of rules](/lint/) documentation page.
 
@@ -276,14 +277,14 @@ deno.json
 
 This configuration will:
 
-*   use tabs instead of spaces for indentation,
-*   limit lines to 80 characters,
-*   use an indentation width of 4 spaces,
-*   add semicolons to the end of statements,
-*   use single quotes for strings,
-*   preserve prose wrapping,
-*   format files in the `src/` directory,
-*   exclude files in the `src/testdata/` directory and any TypeScript files in the `src/fixtures/` directory.
+-   use tabs instead of spaces for indentation,
+-   limit lines to 80 characters,
+-   use an indentation width of 4 spaces,
+-   add semicolons to the end of statements,
+-   use single quotes for strings,
+-   preserve prose wrapping,
+-   format files in the `src/` directory,
+-   exclude files in the `src/testdata/` directory and any TypeScript files in the `src/fixtures/` directory.
 
 Read more about [formatting your code with Deno](/runtime/fundamentals/linting_and_formatting/).
 
@@ -304,8 +305,8 @@ deno.json
 
 This configuration will:
 
-*   specify lockfile location at `./deno.lock` (this is the default and can be omitted)
-*   tell Deno that you want to error out if any dependency changes
+-   specify lockfile location at `./deno.lock` (this is the default and can be omitted)
+-   tell Deno that you want to error out if any dependency changes
 
 Deno uses lockfile by default, you can disable it with following configuration:
 
@@ -333,26 +334,16 @@ deno.json
 
 You can set this field to following values:
 
-Value
-
-Behavior
-
-`"none"`
-
-Don't use a local `node_modules` directory. Instead use global cache in `$DENO_DIR` that is automatically kept up to date by Deno.
-
-`"auto"`
-
-Use a local `node_modules` directory. The directory is automatically created and kept up to date by Deno.
-
-`"manual"`
-
-Use a local `node_modules` directory. User must keep this directory up to date manually, eg. using `deno install` or `npm install`.
+| Value | Behavior |
+| --- | --- |
+| `"none"` | Don't use a local `node_modules` directory. Instead use global cache in `$DENO_DIR` that is automatically kept up to date by Deno. |
+| `"auto"` | Use a local `node_modules` directory. The directory is automatically created and kept up to date by Deno. |
+| `"manual"` | Use a local `node_modules` directory. User must keep this directory up to date manually, eg. using `deno install` or `npm install`. |
 
 It is not required to specify this setting, the following defaults are applied:
 
-*   `"none"` if there is no `package.json` file in your project directory
-*   `"manual"` if there is a `package.json` file in your project directory
+-   `"none"` if there is no `package.json` file in your project directory
+-   `"manual"` if there is a `package.json` file in your project directory
 
 When using workspaces, this setting can only be used in the workspace root. Specifying it in any of the members will result in warnings. The `"manual"` setting will only be applied automatically if there's a `package.json` file in the workspace root.
 
@@ -465,7 +456,7 @@ The `.gitignore` is taken into account for the `deno publish` command. In Deno 1
 
 .gitignore
 
-```title=".gitignore"
+```title
 dist/
 .env
 ```
@@ -525,8 +516,8 @@ deno.json
 
 This configuration will:
 
-*   expose `module1` and `module2` as entry points for your package,
-*   allow importing any file from the `utils` directory using a wildcard. This means users can import these modules using the specified paths, while other files in your package remain private.
+-   expose `module1` and `module2` as entry points for your package,
+-   allow importing any file from the `utils` directory using a wildcard. This means users can import these modules using the specified paths, while other files in your package remain private.
 
 To use the exports in your code, you can import them like this:
 
@@ -545,8 +536,8 @@ Deno 2.5+ supports storing [permission](/runtime/fundamentals/security/#permissi
 
 Permissions can be defined as key-value pairs under arbitrarily-named permission sets under the `"permissions"` key. Within each set,
 
-*   the key is the name of a [permission](/runtime/fundamentals/security/#permissions) that would follow `--allow-` or `--deny-` in the CLI invocation (i.e. `read`, `write`, `net`, `env`, `sys`, `run`, `ffi`, `import`)
-*   the value is a boolean (`true` / `false` correspond to allow / deny), an array of strings representing paths, domains etc., or an object with `allow`, `deny`, and/or `ignore` boolean key-value pairs.
+-   the key is the name of a [permission](/runtime/fundamentals/security/#permissions) that would follow `--allow-` or `--deny-` in the CLI invocation (i.e. `read`, `write`, `net`, `env`, `sys`, `run`, `ffi`, `import`)
+-   the value is a boolean (`true` / `false` correspond to allow / deny), an array of strings representing paths, domains etc., or an object with `allow`, `deny`, and/or `ignore` boolean key-value pairs.
 
 ```jsonc
 {
@@ -635,14 +626,14 @@ You can use the object form:
 
 The `allow`, `deny`, and `ignore` keys work differently depending on the permission type:
 
-*   **`read` and `env`**: Support `allow`, `deny`, and `ignore`
-*   **`write`, `net`, `run`, `ffi`, `sys`, and `import`**: Support `allow` and `deny` (but not `ignore`)
+-   **`read` and `env`**: Support `allow`, `deny`, and `ignore`
+-   **`write`, `net`, `run`, `ffi`, `sys`, and `import`**: Support `allow` and `deny` (but not `ignore`)
 
 #### Behavior
 
-*   **`allow`**: Explicitly grant access to specific resources. Can be `true` (to allow all), `false` (to allow none), or an array of specific paths/values to allow.
-*   **`deny`**: Explicitly deny access (throw [PermissionDenied](https://docs.deno.com/api/deno/~/Deno.errors.PermissionDenied)) to specific resources, even if they would otherwise be allowed. Can be `true` (to deny all), `false` (to deny none), or an array of specific paths/values to deny.
-*   **`ignore`**: (Only for `read` and `env` permissions) Silently ignore access attempts to specific resources without throwing errors. Can be `true`, `false`, or an array of specific paths/values to ignore.
+-   **`allow`**: Explicitly grant access to specific resources. Can be `true` (to allow all), `false` (to allow none), or an array of specific paths/values to allow.
+-   **`deny`**: Explicitly deny access (throw [PermissionDenied](https://docs.deno.com/api/deno/~/Deno.errors.PermissionDenied)) to specific resources, even if they would otherwise be allowed. Can be `true` (to deny all), `false` (to deny none), or an array of specific paths/values to deny.
+-   **`ignore`**: (Only for `read` and `env` permissions) Silently ignore access attempts to specific resources without throwing errors. Can be `true`, `false`, or an array of specific paths/values to ignore.
 
 #### Example
 

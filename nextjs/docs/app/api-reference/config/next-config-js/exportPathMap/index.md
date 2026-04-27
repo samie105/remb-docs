@@ -5,19 +5,20 @@ canonical_url: "https://nextjs.org/docs/app/api-reference/config/next-config-js/
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:07:29.636Z"
-content_hash: "c3c4c2f1b64f4201fc7c6b60997e3c65c54d2e37466224e71d48307bb1defe51"
+last_crawled_at: "2026-04-27T18:06:22.452Z"
+content_hash: "61e31b4c4b69636ec3cc56ac30e477637b8fb0a6f2a650fa7237f7865ce51ecf"
 menu_path: ["exportPathMap"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/api-reference/config/next-config-js/expireTime/index.md", "title": "expireTime"}
-nav_next: {"path": "nextjs/docs/app/api-reference/config/next-config-js/generateBuildId/index.md", "title": "generateBuildId"}
+version: "latest"
+content_language: "en"
 ---
+[Configuration](/docs/app/api-reference/config)[next.config.js](/docs/app/api-reference/config/next-config-js)exportPathMap
 
 # exportPathMap
 
 This is a legacy API and no longer recommended. It's still supported for backward compatibility.
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 > This feature is exclusive to `next export` and currently **deprecated** in favor of `getStaticPaths` with `pages` or `generateStaticParams` with `app`.
 
@@ -25,9 +26,9 @@ Last updated April 15, 2026
 
 Let's start with an example, to create a custom `exportPathMap` for an app with the following pages:
 
-*   `pages/index.js`
-*   `pages/about.js`
-*   `pages/post.js`
+-   `pages/index.js`
+-   `pages/about.js`
+-   `pages/post.js`
 
 Open `next.config.js` and add the following `exportPathMap` config:
 
@@ -56,16 +57,16 @@ The pages will then be exported as HTML files, for example, `/about` will become
 
 `exportPathMap` is an `async` function that receives 2 arguments: the first one is `defaultPathMap`, which is the default map used by Next.js. The second argument is an object with:
 
-*   `dev` - `true` when `exportPathMap` is being called in development. `false` when running `next export`. In development `exportPathMap` is used to define routes.
-*   `dir` - Absolute path to the project directory
-*   `outDir` - Absolute path to the `out/` directory ([configurable with `-o`](#customizing-the-output-directory)). When `dev` is `true` the value of `outDir` will be `null`.
-*   `distDir` - Absolute path to the `.next/` directory (configurable with the [`distDir`](/docs/pages/api-reference/config/next-config-js/distDir) config)
-*   `buildId` - The generated build id
+-   `dev` - `true` when `exportPathMap` is being called in development. `false` when running `next export`. In development `exportPathMap` is used to define routes.
+-   `dir` - Absolute path to the project directory
+-   `outDir` - Absolute path to the `out/` directory ([configurable with `-o`](#customizing-the-output-directory)). When `dev` is `true` the value of `outDir` will be `null`.
+-   `distDir` - Absolute path to the `.next/` directory (configurable with the [`distDir`](/docs/pages/api-reference/config/next-config-js/distDir) config)
+-   `buildId` - The generated build id
 
 The returned object is a map of pages where the `key` is the `pathname` and the `value` is an object that accepts the following fields:
 
-*   `page`: `String` - the page inside the `pages` directory to render
-*   `query`: `Object` - the `query` object passed to `getInitialProps` when prerendering. Defaults to `{}`
+-   `page`: `String` - the page inside the `pages` directory to render
+-   `query`: `Object` - the `query` object passed to `getInitialProps` when prerendering. Defaults to `{}`
 
 > The exported `pathname` can also be a filename (for example, `/readme.md`), but you may need to set the `Content-Type` header to `text/html` when serving its content if it is different than `.html`.
 
@@ -95,20 +96,4 @@ next export -o outdir
 
 > **Warning**: Using `exportPathMap` is deprecated and is overridden by `getStaticPaths` inside `pages`. We don't recommend using them together.
 
-[Previous
-
-expireTime
-
-](/docs/app/api-reference/config/next-config-js/expireTime)
-
-[Next
-
-generateBuildId
-
-](/docs/app/api-reference/config/next-config-js/generateBuildId)
-
 Was this helpful?
-
-supported.
-
-Send

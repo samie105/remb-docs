@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/app/api-reference/functions"
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:11:06.654Z"
-content_hash: "c57a17dc760ab9db9ce83a2e105db3ad287117978ea3cb476fe84f9f9378a3a9"
+last_crawled_at: "2026-04-27T18:09:48.531Z"
+content_hash: "94c07e6679acd9a5dc05c57021f759785b6454c4e1bb480d3a0a1342590d2bb5"
 menu_path: ["Functions"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/api-reference/file-conventions/route-segment-config/index.md", "title": "Route Segment Config"}
-nav_next: {"path": "nextjs/docs/app/api-reference/functions/after/index.md", "title": "after"}
+version: "latest"
+content_language: "en"
 ---
+[App Router](/docs/app)[API Reference](/docs/app/api-reference)Functions
 
 # Functions
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 [
 
@@ -247,20 +248,4 @@ The userAgent helper extends the Web Request API with additional properties and 
 
 ](/docs/app/api-reference/functions/userAgent)
 
-[Previous
-
-runtime
-
-](/docs/app/api-reference/file-conventions/route-segment-config/runtime)
-
-[Next
-
-after
-
-](/docs/app/api-reference/functions/after)
-
 Was this helpful?
-
-supported.
-
-Send

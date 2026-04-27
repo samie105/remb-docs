@@ -5,26 +5,27 @@ canonical_url: "https://docs.deno.com/runtime/fundamentals/ffi/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:46:36.376Z"
-content_hash: "684df1cf361bcea30f211e8750d3e09daec900b0afb67f09eb8f5eef9562fd62"
+last_crawled_at: "2026-04-27T17:20:03.987Z"
+content_hash: "4a0196e0dce253be1e5b58254b6c423fdffeb7f936ed0e4449e59dc103204f36"
 menu_path: ["Foreign Function Interface (FFI)"]
 section_path: []
+content_language: "en"
 ---
-On this page
+**On this page**
 
-*   [Introduction to FFI](#introduction-to-ffi)
-*   [Security considerations](#security-considerations)
-*   [Basic usage](#basic-usage)
-*   [Supported types](#supported-types)
-*   [Working with structs](#working-with-structs)
-*   [Working with callbacks](#working-with-callbacks)
-*   [Best practices with FFI](#best-practices-with-ffi)
-*   [Examples](#examples)
-    *   [Using a Rust library](#using-a-rust-library)
-    *   [Examples](#examples-1)
-*   [Related Approaches to Native Code Integration](#related-approaches-to-native-code-integration)
-    *   [Using Node-API (N-API) with Deno](#using-node-api-\(n-api\)-with-deno)
-*   [Alternatives to FFI](#alternatives-to-ffi)
+-   [Introduction to FFI](#introduction-to-ffi)
+-   [Security considerations](#security-considerations)
+-   [Basic usage](#basic-usage)
+-   [Supported types](#supported-types)
+-   [Working with structs](#working-with-structs)
+-   [Working with callbacks](#working-with-callbacks)
+-   [Best practices with FFI](#best-practices-with-ffi)
+-   [Examples](#examples)
+    -   [Using a Rust library](#using-a-rust-library)
+    -   [Examples](#examples-1)
+-   [Related Approaches to Native Code Integration](#related-approaches-to-native-code-integration)
+    -   [Using Node-API (N-API) with Deno](#using-node-api-\(n-api\)-with-deno)
+-   [Alternatives to FFI](#alternatives-to-ffi)
 
 Deno's Foreign Function Interface (FFI) allows JavaScript and TypeScript code to call functions in dynamic libraries written in languages like C, C++, or Rust. This enables you to integrate native code performance and capabilities directly into your Deno applications.
 
@@ -34,9 +35,9 @@ Deno's Foreign Function Interface (FFI) allows JavaScript and TypeScript code to
 
 FFI provides a bridge between Deno's JavaScript runtime and native code. This allows you to:
 
-*   Use existing native libraries within your Deno applications
-*   Implement performance-critical code in languages like Rust or C
-*   Access operating system APIs and hardware features not directly available in JavaScript
+-   Use existing native libraries within your Deno applications
+-   Implement performance-critical code in languages like Rust or C
+-   Access operating system APIs and hardware features not directly available in JavaScript
 
 Deno's FFI implementation is based on the [`Deno.dlopen`](/api/deno/~/Deno.dlopen) API, which loads dynamic libraries and creates JavaScript bindings to the functions they export.
 
@@ -54,10 +55,10 @@ Info
 
 **Important security warning**: Unlike JavaScript code running in the Deno sandbox, native libraries loaded via FFI have the same access level as the Deno process itself. This means they can:
 
-*   Access the filesystem
-*   Make network connections
-*   Access environment variables
-*   Execute system commands
+-   Access the filesystem
+-   Make network connections
+-   Access environment variables
+-   Execute system commands
 
 Always ensure you trust the native libraries you're loading through FFI.
 
@@ -85,156 +86,32 @@ dylib.close();
 
 Deno's FFI supports a variety of data types for parameters and return values:
 
-FFI Type
-
-Deno
-
-C
-
-Rust
-
-`i8`
-
-`number`
-
-`char` / `signed char`
-
-`i8`
-
-`u8`
-
-`number`
-
-`unsigned char`
-
-`u8`
-
-`i16`
-
-`number`
-
-`short int`
-
-`i16`
-
-`u16`
-
-`number`
-
-`unsigned short int`
-
-`u16`
-
-`i32`
-
-`number`
-
-`int` / `signed int`
-
-`i32`
-
-`u32`
-
-`number`
-
-`unsigned int`
-
-`u32`
-
-`i64`
-
-`bigint`
-
-`long long int`
-
-`i64`
-
-`u64`
-
-`bigint`
-
-`unsigned long long int`
-
-`u64`
-
-`usize`
-
-`bigint`
-
-`size_t`
-
-`usize`
-
-`isize`
-
-`bigint`
-
-`size_t`
-
-`isize`
-
-`f32`
-
-`number`
-
-`float`
-
-`f32`
-
-`f64`
-
-`number`
-
-`double`
-
-`f64`
-
-`void`\[1\]
-
-`undefined`
-
-`void`
-
-`()`
-
-`pointer`
-
-`{} | null`
-
-`void *`
-
-`*mut c_void`
-
-`buffer`\[2\]
-
-`TypedArray | null`
-
-`uint8_t *`
-
-`*mut u8`
-
-`function`\[3\]
-
-`{} | null`
-
-`void (*fun)()`
-
-`Option<extern "C" fn()>`
-
-`{ struct: [...] }`\[4\]
-
-`TypedArray`
-
-`struct MyStruct`
-
-`MyStruct`
+| FFI Type | Deno | C | Rust |
+| --- | --- | --- | --- |
+| `i8` | `number` | `char` / `signed char` | `i8` |
+| `u8` | `number` | `unsigned char` | `u8` |
+| `i16` | `number` | `short int` | `i16` |
+| `u16` | `number` | `unsigned short int` | `u16` |
+| `i32` | `number` | `int` / `signed int` | `i32` |
+| `u32` | `number` | `unsigned int` | `u32` |
+| `i64` | `bigint` | `long long int` | `i64` |
+| `u64` | `bigint` | `unsigned long long int` | `u64` |
+| `usize` | `bigint` | `size_t` | `usize` |
+| `isize` | `bigint` | `size_t` | `isize` |
+| `f32` | `number` | `float` | `f32` |
+| `f64` | `number` | `double` | `f64` |
+| `void`\[1\] | `undefined` | `void` | `()` |
+| `pointer` | `{} | null` | `void *` | `*mut c_void` |
+| `buffer`\[2\] | `TypedArray | null` | `uint8_t *` | `*mut u8` |
+| `function`\[3\] | `{} | null` | `void (*fun)()` | `Option<extern "C" fn()>` |
+| `{ struct: [...] }`\[4\] | `TypedArray` | `struct MyStruct` | `MyStruct` |
 
 As of Deno 1.25, the `pointer` type has been split into a `pointer` and a `buffer` type to ensure users take advantage of optimizations for Typed Arrays, and as of Deno 1.31 the JavaScript representation of `pointer` has become an opaque pointer object or `null` for null pointers.
 
-*   \[1\] `void` type can only be used as a result type.
-*   \[2\] `buffer` type accepts TypedArrays as parameter, but it always returns a pointer object or `null` when used as result type like the `pointer` type.
-*   \[3\] `function` type works exactly the same as the `pointer` type as a parameter and result type.
-*   \[4\] `struct` type is for passing and returning C structs by value (copy). The `struct` array must enumerate each of the struct's fields' type in order. The structs are padded automatically: Packed structs can be defined by using an appropriate amount of `u8` fields to avoid padding. Only TypedArrays are supported as structs, and structs are always returned as `Uint8Array`s.
+-   \[1\] `void` type can only be used as a result type.
+-   \[2\] `buffer` type accepts TypedArrays as parameter, but it always returns a pointer object or `null` when used as result type like the `pointer` type.
+-   \[3\] `function` type works exactly the same as the `pointer` type as a parameter and result type.
+-   \[4\] `struct` type is for passing and returning C structs by value (copy). The `struct` array must enumerate each of the struct's fields' type in order. The structs are padded automatically: Packed structs can be defined by using an appropriate amount of `u8` fields to avoid padding. Only TypedArrays are supported as structs, and structs are always returned as `Uint8Array`s.
 
 ## Working with structs
 
@@ -378,10 +255,10 @@ dylib.close();
 
 ### Examples
 
-*   [Netsaur](https://github.com/denosaurs/netsaur/blob/c1efc3e2df6e2aaf4a1672590a404143203885a6/packages/core/src/backends/cpu/mod.ts)
-*   [WebView\_deno](https://github.com/webview/webview_deno/blob/main/src/ffi.ts)
-*   [Deno\_sdl2](https://github.com/littledivy/deno_sdl2/blob/main/mod.ts)
-*   [Deno FFI examples repository](https://github.com/denoffi/denoffi_examples)
+-   [Netsaur](https://github.com/denosaurs/netsaur/blob/c1efc3e2df6e2aaf4a1672590a404143203885a6/packages/core/src/backends/cpu/mod.ts)
+-   [WebView\_deno](https://github.com/webview/webview_deno/blob/main/src/ffi.ts)
+-   [Deno\_sdl2](https://github.com/littledivy/deno_sdl2/blob/main/mod.ts)
+-   [Deno FFI examples repository](https://github.com/denoffi/denoffi_examples)
 
 These community-maintained repos includes working examples of FFI integrations with various native libraries across different operating systems.
 
@@ -409,29 +286,11 @@ console.log(someNativeAddon.doSomething());
 
 How is this different from FFI?
 
-**Aspect**
-
-**FFI**
-
-**Node-API Support**
-
-Setup
-
-No build step required
-
-Requires precompiled binaries or build step
-
-Portability
-
-Tied to library ABI
-
-ABI-stable across versions
-
-Use Case
-
-Direct library calls
-
-Reuse Node.js addons
+| **Aspect** | **FFI** | **Node-API Support** |
+| --- | --- | --- |
+| Setup | No build step required | Requires precompiled binaries or build step |
+| Portability | Tied to library ABI | ABI-stable across versions |
+| Use Case | Direct library calls | Reuse Node.js addons |
 
 Node-API support is ideal for leveraging existing Node.js native modules, whereas FFI is best for direct, lightweight calls to native libraries.
 
@@ -439,8 +298,8 @@ Node-API support is ideal for leveraging existing Node.js native modules, wherea
 
 Before using FFI, consider these alternatives:
 
-*   [WebAssembly](/runtime/reference/wasm/), for portable native code that runs within Deno's sandbox.
-*   Use [`Deno.command`](/api/deno/~/Deno.command) to execute external binaries and subprocesses with controlled permissions.
-*   Check whether [Deno's native APIs](/api/deno) already provide the functionality you need.
+-   [WebAssembly](/runtime/reference/wasm/), for portable native code that runs within Deno's sandbox.
+-   Use [`Deno.command`](/api/deno/~/Deno.command) to execute external binaries and subprocesses with controlled permissions.
+-   Check whether [Deno's native APIs](/api/deno) already provide the functionality you need.
 
 Deno's FFI capabilities provide powerful integration with native code, enabling performance optimizations and access to system-level functionality. However, this power comes with significant security considerations. Always be cautious when working with FFI and ensure you trust the native libraries you're using.

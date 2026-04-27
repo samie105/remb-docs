@@ -5,31 +5,29 @@ canonical_url: "https://orm.drizzle.team/docs/get-started/postgresql-new"
 docset: "drizzle"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:58:58.734Z"
-content_hash: "3460931eadf694392708cc086e69bab22e09ce608b14bd44e1678750e4f258cf"
+last_crawled_at: "2026-04-27T18:51:11.862Z"
+content_hash: "80b6d23219fd7f5eabe1a2af1a51886465b284d3a1cb4046fafa5f3b39139951"
 menu_path: ["Get Started with Drizzle and PostgreSQL"]
 section_path: []
-nav_prev: {"path": "drizzle/docs/get-started/postgresql-existing/index.md", "title": "Get Started with Drizzle and PostgreSQL in existing project"}
-nav_next: {"path": "drizzle/docs/get-started/singlestore-existing/index.md", "title": "Get Started with Drizzle and SingleStore in existing project"}
+content_language: "en"
 ---
-
 ## Get Started with Drizzle and PostgreSQL
 
 This guide assumes familiarity with:
 
-*   **dotenv** - package for managing environment variables - [read here](https://www.npmjs.com/package/dotenv)
-*   **tsx** - package for running TypeScript files - [read here](https://tsx.is/)
-*   **node-postgres** - package for querying your PostgreSQL database - [read here](https://node-postgres.com/)
+-   **dotenv** - package for managing environment variables - [read here](https://www.npmjs.com/package/dotenv)
+-   **tsx** - package for running TypeScript files - [read here](https://tsx.is/)
+-   **node-postgres** - package for querying your PostgreSQL database - [read here](https://node-postgres.com/)
 
 Drizzle has native support for PostgreSQL connections with the `node-postgres` and `postgres.js` drivers.
 
-We will use `node-postgres` for this get started example. But if you want to find more ways to connect to postgresql check our [PostgreSQL Connection](drizzle/docs/get-started-postgresql/index.md) page
+We will use `node-postgres` for this get started example. But if you want to find more ways to connect to postgresql check our [PostgreSQL Connection](https://orm.drizzle.team/docs/get-started-postgresql) page
 
 #### Basic file structure
 
 This is the basic file structure of the project. In the `src/db` directory, we have table definition in `schema.ts`. In `drizzle` folder there are sql migration file and snapshots.
 
-```
+```plaintext
 📦 <project root>
  ├ 📂 drizzle
  ├ 📂 src
@@ -43,14 +41,6 @@ This is the basic file structure of the project. In the `src/db` directory, we h
 ```
 
 #### Step 1 - Install **node-postgres** package[](#step-1---install-node-postgres-package)
-
-npm
-
-yarn
-
-pnpm
-
-bun
 
 ```
 npm i drizzle-orm pg dotenv
@@ -76,15 +66,11 @@ bun add -D drizzle-kit tsx @types/pg
 
 Create a `.env` file in the root of your project and add your database connection variable:
 
-```
-DATABASE_URL=
-```
-
 tips
 
 If you don’t have a PostgreSQL database yet and want to create one for testing, you can use our guide on how to set up PostgreSQL in Docker.
 
-The PostgreSQL in Docker guide is available [here](drizzle/docs/guides/postgresql-local-setup/index.md). Go set it up, generate a database URL (explained in the guide), and come back for the next steps
+The PostgreSQL in Docker guide is available [here](https://orm.drizzle.team/docs/guides/postgresql-local-setup). Go set it up, generate a database URL (explained in the guide), and come back for the next steps
 
 #### Step 3 - Connect Drizzle ORM to the database[](#step-3---connect-drizzle-orm-to-the-database)
 
@@ -96,14 +82,14 @@ node-postgres with config
 
 your node-postgres driver
 
-```
+```typescript
 import 'dotenv/config';
 import { drizzle } from 'drizzle-orm/node-postgres';
 
 const db = drizzle(process.env.DATABASE_URL!);
 ```
 
-```
+```typescript
 import 'dotenv/config';
 import { drizzle } from 'drizzle-orm/node-postgres';
 
@@ -116,7 +102,7 @@ const db = drizzle({
 });
 ```
 
-```
+```typescript
 import 'dotenv/config';
 import { drizzle } from "drizzle-orm/node-postgres";
 import { Pool } from "pg";
@@ -131,7 +117,7 @@ const db = drizzle({ client: pool });
 
 Create a `schema.ts` file in the `src/db` directory and declare your table:
 
-```
+```typescript
 import { integer, pgTable, varchar } from "drizzle-orm/pg-core";
 
 export const usersTable = pgTable("users", {
@@ -144,11 +130,11 @@ export const usersTable = pgTable("users", {
 
 #### Step 5 - Setup Drizzle config file[](#step-5---setup-drizzle-config-file)
 
-**Drizzle config** - a configuration file that is used by [Drizzle Kit](drizzle/docs/kit-overview/index.md) and contains all the information about your database connection, migration folder and schema files.
+**Drizzle config** - a configuration file that is used by [Drizzle Kit](https://orm.drizzle.team/docs/kit-overview) and contains all the information about your database connection, migration folder and schema files.
 
 Create a `drizzle.config.ts` file in the root of your project and add the following content:
 
-```
+```typescript
 import 'dotenv/config';
 import { defineConfig } from 'drizzle-kit';
 
@@ -166,11 +152,11 @@ export default defineConfig({
 
 You can directly apply changes to your database using the `drizzle-kit push` command. This is a convenient method for quickly testing new schema designs or modifications in a local development environment, allowing for rapid iterations without the need to manage migration files:
 
-```
+```bash
 npx drizzle-kit push
 ```
 
-Read more about the push command in [documentation](drizzle/docs/drizzle-kit-push/index.md).
+Read more about the push command in [documentation](https://orm.drizzle.team/docs/drizzle-kit-push).
 
 Tips
 
@@ -178,23 +164,23 @@ Alternatively, you can generate migrations using the `drizzle-kit generate` comm
 
 Generate migrations:
 
-```
+```bash
 npx drizzle-kit generate
 ```
 
 Apply migrations:
 
-```
+```bash
 npx drizzle-kit migrate
 ```
 
-Read more about migration process in [documentation](drizzle/docs/kit-overview/index.md).
+Read more about migration process in [documentation](https://orm.drizzle.team/docs/kit-overview).
 
 #### Step 7 - Seed and Query the database[](#step-7---seed-and-query-the-database)
 
 Let’s **update** the `src/index.ts` file with queries to create, read, update, and delete users
 
-```
+```typescript
 import 'dotenv/config';
 import { drizzle } from 'drizzle-orm/node-postgres';
 import { eq } from 'drizzle-orm';
@@ -246,14 +232,6 @@ You’ve already installed `tsx`, so we can run our queries now
 
 **Run `index.ts` script**
 
-npm
-
-yarn
-
-pnpm
-
-bun
-
 ```
 npx tsx src/index.ts
 ```
@@ -274,7 +252,7 @@ tips
 
 We suggest using `bun` to run TypeScript files. With `bun`, such scripts can be executed without issues or additional settings, regardless of whether your project is configured with CommonJS (CJS), ECMAScript Modules (ESM), or any other module format. To run a script with `bun`, use the following command:
 
-```
+```bash
 bun src/index.ts
 ```
 

@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/app/guides/deploying-to-platforms"
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:14:36.300Z"
-content_hash: "2f1cb0145aaeb61bc35850a52a49339b9a111784d0cdfabefdfe7abab2e0222a"
+last_crawled_at: "2026-04-27T18:13:27.904Z"
+content_hash: "1280a75841888ef358a219332306402d23500d9f714ce8f79aa1ac5757b9a5c6"
 menu_path: ["Deploying Next.js to different platforms"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/guides/debugging/index.md", "title": "How to use debugging tools with Next.js"}
-nav_next: {"path": "nextjs/docs/app/guides/draft-mode/index.md", "title": "How to preview content with Draft Mode in Next.js"}
+version: "latest"
+content_language: "en"
 ---
+[App Router](/docs/app)[Guides](/docs/app/guides)Deploying to Platforms
 
 # Deploying Next.js to different platforms
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 Next.js [treats static and dynamic content as a spectrum](/docs/app/guides/rendering-philosophy) at the component level. Different features in this model require different platform capabilities. This page helps you understand what your platform needs to support and how to configure your deployment.
 
@@ -41,95 +42,16 @@ Use the feature matrix below through this lens: "Streaming Required" and "Shared
 
 Different features require different infrastructure capabilities. The "Edge Stitching" column is a **performance optimization**, not a correctness requirement. All features work correctly from a single origin server.
 
-Feature
-
-Streaming
-
-Shared Cache
-
-Edge Stitching
-
-Notes
-
-Server Components
-
-Required
-
-No
-
-No
-
-Basic streaming support
-
-ISR (time-based)
-
-No
-
-Recommended
-
-No
-
-Works per-instance without shared cache
-
-ISR (on-demand)
-
-No
-
-Recommended
-
-No
-
-[Tag propagation](/docs/app/guides/how-revalidation-works) needs shared cache for multi-instance
-
-Partial Prerendering
-
-Required
-
-Recommended
-
-Optional
-
-[See PPR Platform Guide](/docs/app/guides/ppr-platform-guide)
-
-Cache Components (`use cache`)
-
-Required
-
-Recommended
-
-No
-
-Shared cache enables cross-instance consistency
-
-Proxy / Middleware
-
-No
-
-No
-
-No
-
-Runs at edge or origin
-
-Server Actions
-
-Required
-
-No
-
-No
-
-POST requests with streaming response
-
-`after()`
-
-No
-
-No
-
-No
-
-Requires [graceful shutdown](/docs/app/guides/self-hosting#after) support
+| Feature | Streaming | Shared Cache | Edge Stitching | Notes |
+| --- | --- | --- | --- | --- |
+| Server Components | Required | No | No | Basic streaming support |
+| ISR (time-based) | No | Recommended | No | Works per-instance without shared cache |
+| ISR (on-demand) | No | Recommended | No | [Tag propagation](/docs/app/guides/how-revalidation-works) needs shared cache for multi-instance |
+| Partial Prerendering | Required | Recommended | Optional | [See PPR Platform Guide](/docs/app/guides/ppr-platform-guide) |
+| Cache Components (`use cache`) | Required | Recommended | No | Shared cache enables cross-instance consistency |
+| Proxy / Middleware | No | No | No | Runs at edge or origin |
+| Server Actions | Required | No | No | POST requests with streaming response |
+| `after()` | No | No | No | Requires [graceful shutdown](/docs/app/guides/self-hosting#after) support |
 
 **Streaming Required** means the platform must support chunked transfer encoding or HTTP/2 streaming and must not buffer the response before sending it to the client.
 
@@ -139,75 +61,14 @@ Requires [graceful shutdown](/docs/app/guides/self-hosting#after) support
 
 The following table maps infrastructure primitives for each major CDN. These are available building blocks, not finished integrations:
 
-CDN
-
-Edge Compute
-
-Key-Value / Tags
-
-Blob Storage
-
-PPR Resuming
-
-Cloudflare
-
-Workers
-
-KV
-
-R2
-
-Yes (worker)
-
-Akamai
-
-EdgeWorkers
-
-EdgeKV
-
-Object Storage
-
-Yes (worker)
-
-Amazon CloudFront
-
-Lambda@Edge
-
-KeyValueStore
-
-S3
-
-Yes (Lambda)
-
-Fastly
-
-Compute
-
-KV Store
-
-Object Storage
-
-Yes (WASM)
-
-Azure
-
-Functions
-
-Managed Redis
-
-Blob Storage
-
-Yes (server)
-
-Google Cloud
-
-Cloud Run
-
-Various KV
-
-Cloud Storage
-
-Yes (server)
+| CDN | Edge Compute | Key-Value / Tags | Blob Storage | PPR Resuming |
+| --- | --- | --- | --- | --- |
+| Cloudflare | Workers | KV | R2 | Yes (worker) |
+| Akamai | EdgeWorkers | EdgeKV | Object Storage | Yes (worker) |
+| Amazon CloudFront | Lambda@Edge | KeyValueStore | S3 | Yes (Lambda) |
+| Fastly | Compute | KV Store | Object Storage | Yes (WASM) |
+| Azure | Functions | Managed Redis | Blob Storage | Yes (server) |
+| Google Cloud | Cloud Run | Various KV | Cloud Storage | Yes (server) |
 
 These are available building blocks, not finished integrations. Most community adapters today deploy Next.js as a Docker container or Node.js server without leveraging CDN-specific primitives like edge KV or PPR resuming. See the [Deploying](/docs/app/getting-started/deploying#adapters) page for the current list of adapters. For CDN-specific caching considerations (including known limitations with `Vary` on custom headers), see [CDN Caching](/docs/app/guides/cdn-caching).
 
@@ -228,9 +89,9 @@ Verified adapters are hosted under the [Next.js GitHub organization](https://git
 
 For verified adapters and platforms working toward verified status through the [Ecosystem Working Group](https://nextjs.org/ecosystem-working-group), the Next.js team commits to:
 
-*   **Coordinated testing.** Before major releases, we work with platform teams to run the compatibility test suite and surface issues early.
-*   **Early access.** Adapter authors receive early access to API changes during RFCs and release candidates.
-*   **Direct support.** When the adapter contract needs updating, we work directly with adapter teams.
+-   **Coordinated testing.** Before major releases, we work with platform teams to run the compatibility test suite and surface issues early.
+-   **Early access.** Adapter authors receive early access to API changes during RFCs and release candidates.
+-   **Direct support.** When the adapter contract needs updating, we work directly with adapter teams.
 
 > **Good to know:** Platforms can build closed-source adapters on the same public API and test suite. However, closed-source adapters will not be listed as verified, since the Next.js team cannot verify what it cannot inspect.
 
@@ -266,20 +127,4 @@ Configure a custom adapter for Next.js to hook into the build process.
 
 ](/docs/app/api-reference/config/next-config-js/adapterPath)
 
-[Previous
-
-Debugging
-
-](/docs/app/guides/debugging)
-
-[Next
-
-Draft Mode
-
-](/docs/app/guides/draft-mode)
-
 Was this helpful?
-
-supported.
-
-Send

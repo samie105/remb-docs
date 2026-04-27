@@ -5,15 +5,14 @@ canonical_url: "https://www.prisma.io/docs/orm/prisma-client/special-fields-and-
 docset: "prisma"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:48:38.482Z"
-content_hash: "e5e46272122d3fcc5c6c7a0b60f59638776c7df2502fefba9d715a33e0bdf096"
+last_crawled_at: "2026-04-27T19:40:01.426Z"
+content_hash: "d7601dd28bfe6ee5047f337c46c49347347dea75f1e344fd784a17193d238feb"
 menu_path: ["Working with Json fields"]
 section_path: []
-nav_prev: {"path": "prisma/docs/orm/prisma-client/special-fields-and-types/working-with-geometry-fields/index.md", "title": "Working with geometry fields"}
-nav_next: {"path": "prisma/docs/orm/prisma-client/special-fields-and-types/working-with-scalar-lists-arrays/index.md", "title": "Working with scalar lists"}
+tab_variants: ["PostgreSQL","MySQL","PostgreSQL","MySQL","PostgreSQL","MySQL","PostgreSQL","MySQL","PostgreSQL","MySQL","PostgreSQL","MySQL","PostgreSQL","MySQL","PostgreSQL","MySQL","PostgreSQL","MySQL","PostgreSQL","MySQL","PostgreSQL","MySQL","npm","pnpm","yarn","bun"]
+content_language: "en"
 ---
-
-Use the [`Json`](prisma/docs/orm/reference/prisma-schema-reference/index.md#json) Prisma ORM field type to read, write, and perform basic filtering on JSON types in the underlying database. In the following example, the `User` model has an optional `Json` field named `extendedPetsData`:
+Use the [`Json`](https://www.prisma.io/docs/orm/reference/prisma-schema-reference#json) Prisma ORM field type to read, write, and perform basic filtering on JSON types in the underlying database. In the following example, the `User` model has an optional `Json` field named `extendedPetsData`:
 
 ```
 model User {
@@ -48,8 +47,8 @@ export type JsonValue = string | number | boolean | null | JsonObject | JsonArra
 
 Reasons to store data as JSON rather than representing data as related models include:
 
-*   You need to store data that does not have a consistent structure
-*   You are importing data from another system and do not want to map that data to Prisma models
+-   You need to store data that does not have a consistent structure
+-   You are importing data from another system and do not want to map that data to Prisma models
 
 You can use the `Prisma.JsonArray` and `Prisma.JsonObject` utility classes to work with the contents of a `Json` field:
 
@@ -127,14 +126,14 @@ const getUsers = await prisma.user.findMany({
 });
 ```
 
-You can also filter rows by the data inside a `Json` field. We call this **advanced `Json` filtering**. This functionality is supported by [PostgreSQL](prisma/docs/orm/core-concepts/supported-databases/postgresql/index.md) and [MySQL](prisma/docs/orm/core-concepts/supported-databases/mysql/index.md) only with [different syntaxes for the `path` option](#path-syntax-depending-on-database).
+You can also filter rows by the data inside a `Json` field. We call this **advanced `Json` filtering**. This functionality is supported by [PostgreSQL](https://www.prisma.io/docs/orm/core-concepts/supported-databases/postgresql) and [MySQL](https://www.prisma.io/docs/orm/core-concepts/supported-databases/mysql) only with [different syntaxes for the `path` option](#path-syntax-depending-on-database).
 
 ### [`path` syntax depending on database](#path-syntax-depending-on-database)
 
 The filters below use a `path` option to select specific parts of the `Json` value to filter on. The implementation of that filtering differs between connectors:
 
-*   The [MySQL connector](prisma/docs/orm/core-concepts/supported-databases/mysql/index.md) uses [MySQL's implementation of JSON path](https://dev.mysql.com/doc/refman/8.0/en/json.html#json-path-syntax)
-*   The [PostgreSQL connector](prisma/docs/orm/core-concepts/supported-databases/postgresql/index.md) uses the custom JSON functions and operators [supported in version 12 _and earlier_](https://www.postgresql.org/docs/11/functions-json.html)
+-   The [MySQL connector](https://www.prisma.io/docs/orm/core-concepts/supported-databases/mysql) uses [MySQL's implementation of JSON path](https://dev.mysql.com/doc/refman/8.0/en/json.html#json-path-syntax)
+-   The [PostgreSQL connector](https://www.prisma.io/docs/orm/core-concepts/supported-databases/postgresql) uses the custom JSON functions and operators [supported in version 12 _and earlier_](https://www.postgresql.org/docs/11/functions-json.html)
 
 For example, the following is a valid MySQL `path` value:
 
@@ -165,11 +164,11 @@ The following query returns all users where the value of `petType` _contains_ `"
 
 The following string filters are available:
 
-*   [`string_contains`](prisma/docs/orm/reference/prisma-client-reference/index.md#string_contains)
-*   [`string_starts_with`](prisma/docs/orm/reference/prisma-client-reference/index.md#string_starts_with)
-*   [`string_ends_with`](prisma/docs/orm/reference/prisma-client-reference/index.md#string_ends_with) .
+-   [`string_contains`](https://www.prisma.io/docs/orm/reference/prisma-client-reference#string_contains)
+-   [`string_starts_with`](https://www.prisma.io/docs/orm/reference/prisma-client-reference#string_starts_with)
+-   [`string_ends_with`](https://www.prisma.io/docs/orm/reference/prisma-client-reference#string_ends_with) .
 
-To use case insensitive filter with these, you can use the [`mode`](prisma/docs/orm/reference/prisma-client-reference/index.md#mode) option:
+To use case insensitive filter with these, you can use the [`mode`](https://www.prisma.io/docs/orm/reference/prisma-client-reference#mode) option:
 
 ### [Filter on nested object property](#filter-on-nested-object-property)
 
@@ -196,8 +195,8 @@ The following query returns all users where `"pet2"` → `"petName"` is `"Sunny"
 
 The following query returns all users where:
 
-*   `"pet2"` → `"petName"` is `"Sunny"`
-*   `"pet2"` → `"features"` → `"furColor"` contains `"black"`
+-   `"pet2"` → `"petName"` is `"Sunny"`
+-   `"pet2"` → `"features"` → `"furColor"` contains `"black"`
 
 ### [Filtering on an array value](#filtering-on-an-array-value)
 
@@ -211,9 +210,9 @@ The following query returns all users with a pet named `"Claudine"`:
 
 The following array filters are available:
 
-*   [`array_contains`](prisma/docs/orm/reference/prisma-client-reference/index.md#array_contains)
-*   [`array_starts_with`](prisma/docs/orm/reference/prisma-client-reference/index.md#array_starts_with)
-*   [`array_ends_with`](prisma/docs/orm/reference/prisma-client-reference/index.md#array_ends_with)
+-   [`array_contains`](https://www.prisma.io/docs/orm/reference/prisma-client-reference#array_contains)
+-   [`array_starts_with`](https://www.prisma.io/docs/orm/reference/prisma-client-reference#array_starts_with)
+-   [`array_ends_with`](https://www.prisma.io/docs/orm/reference/prisma-client-reference#array_ends_with)
 
 ### [Filtering on nested array value](#filtering-on-nested-array-value)
 
@@ -234,7 +233,7 @@ The following query returns all users that foster cats named `"Fido"` _and_ `"Bo
 
 #### [JSON object arrays](#json-object-arrays)
 
-*   If you are using PostgreSQL, you must pass in an array of objects to match, even if that array only contains one object:
+-   If you are using PostgreSQL, you must pass in an array of objects to match, even if that array only contains one object:
     
     ```
     [{ status: "expired", insuranceID: 92 }]
@@ -248,9 +247,9 @@ The following query returns all users that foster cats named `"Fido"` _and_ `"Bo
     // MySQL
     ```
     
-*   If your filter array contains multiple objects, PostgreSQL will only return results if _all_ objects are present - not if at least one object is present.
+-   If your filter array contains multiple objects, PostgreSQL will only return results if _all_ objects are present - not if at least one object is present.
     
-*   You must set `array_contains` to a JSON object, not a string. If you use a string, Prisma Client escapes the quotation marks and the query will not return results. For example:
+-   You must set `array_contains` to a JSON object, not a string. If you use a string, Prisma Client escapes the quotation marks and the query will not return results. For example:
     
     ```
     array_contains: '[{"status": "expired", "insuranceID": 92}]';
@@ -315,8 +314,8 @@ const getUsers = await prisma.user.findMany({
 });
 ```
 
-*   `$[*]` is the root array of pet objects
-*   `petType` matches the `petType` key in any pet object
+-   `$[*]` is the root array of pet objects
+-   `petType` matches the `petType` key in any pet object
 
 The following query returns all users where at least one pet has an expired insurance:
 
@@ -331,9 +330,9 @@ const getUsers = await prisma.user.findMany({
 });
 ```
 
-*   `$[*]` is the root array of pet objects
-*   `insurances[*]` matches any `insurances` array inside any pet object
-*   `status` matches any `status` key in any insurance object
+-   `$[*]` is the root array of pet objects
+-   `insurances[*]` matches any `insurances` array inside any pet object
+-   `status` matches any `status` key in any insurance object
 
 The following example assumes that the value of `extendedPetsData` is some variation of the following:
 
@@ -356,14 +355,14 @@ The following example:
 
 There are two types of `null` values possible for a `JSON` field in an SQL database.
 
-*   Database `NULL`: The value in the database is a `NULL`.
-*   JSON `null`: The value in the database contains a JSON value that is `null`.
+-   Database `NULL`: The value in the database is a `NULL`.
+-   JSON `null`: The value in the database contains a JSON value that is `null`.
 
 To differentiate between these possibilities, we've introduced three _null enums_ you can use:
 
-*   `JsonNull`: Represents the `null` value in JSON.
-*   `DbNull`: Represents the `NULL` value in the database.
-*   `AnyNull`: Represents both `null` JSON values and `NULL` database values. (Only when filtering)
+-   `JsonNull`: Represents the `null` value in JSON.
+-   `DbNull`: Represents the `NULL` value in the database.
+-   `AnyNull`: Represents both `null` JSON values and `NULL` database values. (Only when filtering)
 
 For example:
 
@@ -436,6 +435,8 @@ Prisma's `Json` fields are untyped by default. To add strong typing, you can use
 
 1.  First, install the package and add the generator to your `schema.prisma`:
     
+    schema.prisma
+    
     ```
     generator client {
       provider = "prisma-client"
@@ -447,7 +448,9 @@ Prisma's `Json` fields are untyped by default. To add strong typing, you can use
     }
     ```
     
-2.  Next, link a field to a TypeScript type using an [AST comment](prisma/docs/orm/prisma-schema/overview/index.md#comments).
+2.  Next, link a field to a TypeScript type using an [AST comment](https://www.prisma.io/docs/orm/prisma-schema/overview#comments).
+    
+    schema.prisma
     
     ```
     model Log {
@@ -459,6 +462,8 @@ Prisma's `Json` fields are untyped by default. To add strong typing, you can use
     ```
     
 3.  Then, define `LogMetaType` in a type declaration file (e.g., `types.ts`) that is included in your `tsconfig.json`.
+    
+    types.ts
     
     ```
     declare global {

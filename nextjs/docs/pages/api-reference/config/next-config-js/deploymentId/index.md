@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/pages/api-reference/config/next-config-j
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:20:30.028Z"
-content_hash: "a2e6196daeecaee507d1d6bf01c3ff85b392314ce24d84d7871be604110112b3"
+last_crawled_at: "2026-04-27T18:19:56.233Z"
+content_hash: "6087d287d98a19b4efaf56024273ea0457839c8f5938dc0fe49f34f6e16700c7"
 menu_path: ["deploymentId"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/pages/api-reference/config/next-config-js/crossOrigin/index.md", "title": "crossOrigin"}
-nav_next: {"path": "nextjs/docs/pages/api-reference/config/next-config-js/devIndicators/index.md", "title": "devIndicators"}
+version: "latest"
+content_language: "en"
 ---
+[Configuration](/docs/pages/api-reference/config)[next.config.js Options](/docs/pages/api-reference/config/next-config-js)deploymentId
 
 # deploymentId
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 The `deploymentId` option allows you to set an identifier for your deployment. This identifier is used for [version skew](/docs/app/guides/self-hosting#version-skew) protection and cache busting during rolling deployments.
 
@@ -56,8 +57,8 @@ During a rolling deployment, some server instances may be running the new versio
 
 Setting a consistent `deploymentId` per deployment ensures:
 
-*   Clients always request assets from a matching deployment version
-*   Mismatches trigger a full reload to fetch the correct assets
+-   Clients always request assets from a matching deployment version
+-   Mismatches trigger a full reload to fetch the correct assets
 
 ### Multi-server environments[](#multi-server-environments)
 
@@ -73,25 +74,14 @@ module.exports = {
 
 ## Version History[](#version-history)
 
-Version
-
-Changes
-
-`v14.1.4`
-
-`deploymentId` stabilized as top-level config option.
-
-`v13.4.10`
-
-`experimental.deploymentId` introduced.
+| Version | Changes |
+| --- | --- |
+| `v14.1.4` | `deploymentId` stabilized as top-level config option. |
+| `v13.4.10` | `experimental.deploymentId` introduced. |
 
 ## Related[](#related)
 
-*   [Self-Hosting - Version Skew](/docs/app/guides/self-hosting#version-skew)
-*   [generateBuildId](/docs/app/api-reference/config/next-config-js/generateBuildId)
+-   [Self-Hosting - Version Skew](/docs/app/guides/self-hosting#version-skew)
+-   [generateBuildId](/docs/app/api-reference/config/next-config-js/generateBuildId)
 
 Was this helpful?
-
-supported.
-
-Send

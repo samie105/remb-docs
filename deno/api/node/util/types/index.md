@@ -5,18 +5,17 @@ canonical_url: "https://docs.deno.com/api/node/util/types/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:43:24.185Z"
-content_hash: "81e47c03cbef7630a56aba5fa0b722c07cb49dd01c36e48a7d352f6ab2ab7496"
+last_crawled_at: "2026-04-27T17:15:57.527Z"
+content_hash: "82be7673a866b0cd4ba7a29163991052275d79fde3c82e5250955301ea04a678"
 menu_path: ["util/types - Node documentation"]
 section_path: []
+content_language: "en"
 ---
 ### Usage in Deno
 
 ```typescript
 import * as mod from "node:util/types";
 ```
-
-### Functions [#](#Functions)
 
 f
 

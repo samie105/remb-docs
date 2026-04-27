@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/pages/building-your-application/routing/
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:23:28.983Z"
-content_hash: "7e5564726db3896606c6a54614b7c61f5eea5acb6aaebe7d956e9c067815f6d5"
+last_crawled_at: "2026-04-27T18:22:46.594Z"
+content_hash: "84ae2285514ad889cfdea52ed5ddc4329069c956f1c11f6bae98d74daf6f1b65"
 menu_path: ["Dynamic Routes"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/pages/building-your-application/routing/pages-and-layouts/index.md", "title": "Pages and Layouts"}
-nav_next: {"path": "nextjs/docs/pages/building-your-application/routing/linking-and-navigating/index.md", "title": "Linking and Navigating"}
+version: "latest"
+content_language: "en"
 ---
+[Building Your Application](/docs/pages/building-your-application)[Routing](/docs/pages/building-your-application/routing)Dynamic Routes
 
 # Dynamic Routes
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 When you don't know the exact segment names ahead of time and want to create routes from dynamic data, you can use Dynamic Segments that are filled in at request time or [prerendered](/docs/pages/building-your-application/data-fetching/get-static-paths) at build time.
 
@@ -38,29 +39,11 @@ export default function Page() {
 }
 ```
 
-Route
-
-Example URL
-
-`params`
-
-`pages/blog/[slug].js`
-
-`/blog/a`
-
-`{ slug: 'a' }`
-
-`pages/blog/[slug].js`
-
-`/blog/b`
-
-`{ slug: 'b' }`
-
-`pages/blog/[slug].js`
-
-`/blog/c`
-
-`{ slug: 'c' }`
+| Route | Example URL | `params` |
+| --- | --- | --- |
+| `pages/blog/[slug].js` | `/blog/a` | `{ slug: 'a' }` |
+| `pages/blog/[slug].js` | `/blog/b` | `{ slug: 'b' }` |
+| `pages/blog/[slug].js` | `/blog/c` | `{ slug: 'c' }` |
 
 ## Catch-all Segments[](#catch-all-segments)
 
@@ -68,29 +51,11 @@ Dynamic Segments can be extended to **catch-all** subsequent segments by adding 
 
 For example, `pages/shop/[...slug].js` will match `/shop/clothes`, but also `/shop/clothes/tops`, `/shop/clothes/tops/t-shirts`, and so on.
 
-Route
-
-Example URL
-
-`params`
-
-`pages/shop/[...slug].js`
-
-`/shop/a`
-
-`{ slug: ['a'] }`
-
-`pages/shop/[...slug].js`
-
-`/shop/a/b`
-
-`{ slug: ['a', 'b'] }`
-
-`pages/shop/[...slug].js`
-
-`/shop/a/b/c`
-
-`{ slug: ['a', 'b', 'c'] }`
+| Route | Example URL | `params` |
+| --- | --- | --- |
+| `pages/shop/[...slug].js` | `/shop/a` | `{ slug: ['a'] }` |
+| `pages/shop/[...slug].js` | `/shop/a/b` | `{ slug: ['a', 'b'] }` |
+| `pages/shop/[...slug].js` | `/shop/a/b/c` | `{ slug: ['a', 'b', 'c'] }` |
 
 ## Optional Catch-all Segments[](#optional-catch-all-segments)
 
@@ -100,35 +65,12 @@ For example, `pages/shop/[[...slug]].js` will **also** match `/shop`, in additio
 
 The difference between **catch-all** and **optional catch-all** segments is that with optional, the route without the parameter is also matched (`/shop` in the example above).
 
-Route
-
-Example URL
-
-`params`
-
-`pages/shop/[[...slug]].js`
-
-`/shop`
-
-`{ slug: undefined }`
-
-`pages/shop/[[...slug]].js`
-
-`/shop/a`
-
-`{ slug: ['a'] }`
-
-`pages/shop/[[...slug]].js`
-
-`/shop/a/b`
-
-`{ slug: ['a', 'b'] }`
-
-`pages/shop/[[...slug]].js`
-
-`/shop/a/b/c`
-
-`{ slug: ['a', 'b', 'c'] }`
+| Route | Example URL | `params` |
+| --- | --- | --- |
+| `pages/shop/[[...slug]].js` | `/shop` | `{ slug: undefined }` |
+| `pages/shop/[[...slug]].js` | `/shop/a` | `{ slug: ['a'] }` |
+| `pages/shop/[[...slug]].js` | `/shop/a/b` | `{ slug: ['a', 'b'] }` |
+| `pages/shop/[[...slug]].js` | `/shop/a/b/c` | `{ slug: ['a', 'b', 'c'] }` |
 
 ## Next Steps
 
@@ -149,7 +91,3 @@ Learn more about the API of the Next.js Router, and access the router instance i
 ](/docs/pages/api-reference/functions/use-router)
 
 Was this helpful?
-
-supported.
-
-Send

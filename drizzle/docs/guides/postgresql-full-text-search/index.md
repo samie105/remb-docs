@@ -5,21 +5,19 @@ canonical_url: "https://orm.drizzle.team/docs/guides/postgresql-full-text-search
 docset: "drizzle"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:06:03.897Z"
-content_hash: "12207e630200592244031992ad315ac8bb7e136d5e6245e75e700ca58b767d39"
+last_crawled_at: "2026-04-27T19:02:01.767Z"
+content_hash: "b8999103b582b5282b5d6f63fd89c5bcc3dbbfdc45ee02237ba8599881472e14"
 menu_path: ["Drizzle ORM - PostgreSQL full-text search"]
 section_path: []
-nav_prev: {"path": "drizzle/docs/guides/postgis-geometry-point/index.md", "title": "Drizzle ORM - PostGIS geometry point"}
-nav_next: {"path": "drizzle/docs/guides/postgresql-local-setup/index.md", "title": "Drizzle ORM - How to setup PostgreSQL locally"}
+content_language: "en"
 ---
-
 Drizzle | PostgreSQL full-text search
 
 This guide demonstrates how to implement full-text search in PostgreSQL with Drizzle ORM. Full-text search is a technique used to search for text within a document or a set of documents. A document is the unit of searching in a full text search system. PostgreSQL provides a set of functions to work with full-text search, such as `to_tsvector` and `to_tsquery`:
 
 The `to_tsvector` function parses a textual document into tokens, reduces the tokens to lexemes, and returns a `tsvector` which lists the lexemes together with their positions in the document:
 
-```
+```ts
 import { sql } from 'drizzle-orm';
 
 const db = drizzle(...);
@@ -29,7 +27,7 @@ await db.execute(
 );
 ```
 
-```
+```json
 [
   {
     to_tsvector: "'drizzl':9 'full':5 'full-text':4
@@ -40,14 +38,14 @@ await db.execute(
 
 The `to_tsquery` function converts a keyword to normalized tokens and returns a `tsquery` that matches the lexemes in a `tsvector`. The `@@` operator is used for direct matches:
 
-```
+```ts
 await db.execute(
   sql`select to_tsvector('english', 'Guide to PostgreSQL full-text search with Drizzle ORM')
     @@ to_tsquery('english', 'Drizzle') as match`,
 );
 ```
 
-```
+```json
 [ { match: true } ]
 ```
 
@@ -59,7 +57,7 @@ migration.sql
 
 db\_data
 
-```
+```ts
 import { index, pgTable, serial, text } from 'drizzle-orm/pg-core';
 
 export const posts = pgTable(
@@ -74,7 +72,7 @@ export const posts = pgTable(
 );
 ```
 
-```
+```json
 [
   { id: 1, title: 'Planning Your First Trip to Europe' },
   { id: 2, title: "Cultural Insights: Exploring Asia's Heritage" },
@@ -88,7 +86,7 @@ export const posts = pgTable(
 
 To implement full-text search in PostgreSQL with Drizzle ORM, you can use the `to_tsvector` and `to_tsquery` functions with `sql` operator:
 
-```
+```ts
 import { sql } from 'drizzle-orm';
 import { posts } from './schema';
 
@@ -100,7 +98,7 @@ await db
   .where(sql`to_tsvector('english', ${posts.title}) @@ to_tsquery('english', ${title})`);
 ```
 
-```
+```json
 [
   { id: 1, title: 'Planning Your First Trip to Europe' },
   { id: 3, title: 'Top 5 Destinations for a Family Trip' },
@@ -111,7 +109,7 @@ await db
 
 To match by any of the keywords, you can use the `|` operator:
 
-```
+```ts
 const title = 'Europe | Asia';
 
 await db
@@ -120,7 +118,7 @@ await db
   .where(sql`to_tsvector('english', ${posts.title}) @@ to_tsquery('english', ${title})`);
 ```
 
-```
+```json
 [
   { id: 1, title: 'Planning Your First Trip to Europe' },
   { id: 2, title: "Cultural Insights: Exploring Asia's Heritage" }
@@ -129,7 +127,7 @@ await db
 
 To match multiple keywords, you can use the `plainto_tsquery` function:
 
-```
+```ts
 // 'discover & Italy'
 const title = 'discover Italy';
 
@@ -139,18 +137,18 @@ await db
   .where(sql`to_tsvector('english', ${posts.title}) @@ plainto_tsquery('english', ${title})`);
 ```
 
-```
+```sql
 select * from posts
   where to_tsvector('english', title) @@ plainto_tsquery('english', 'discover Italy');
 ```
 
-```
+```json
 [ { id: 6, title: 'Discovering Hidden Culinary Gems in Italy' } ]
 ```
 
 To match a phrase, you can use the `phraseto_tsquery` function:
 
-```
+```ts
 // if you query by "trip family", it will not return any result
 // 'family <-> trip'
 const title = 'family trip';
@@ -161,18 +159,18 @@ await db
   .where(sql`to_tsvector('english', ${posts.title}) @@ phraseto_tsquery('english', ${title})`);
 ```
 
-```
+```sql
 select * from posts
   where to_tsvector('english', title) @@ phraseto_tsquery('english', 'family trip');
 ```
 
-```
+```json
 [ { id: 3, title: 'Top 5 Destinations for a Family Trip' } ]
 ```
 
 You can also use `websearch_to_tsquery` function which is a simplified version of `to_tsquery` with an alternative syntax, similar to the one used by web search engines:
 
-```
+```ts
 // 'family | first & trip & europ | asia'
 const title = 'family or first trip Europe or Asia';
 
@@ -182,13 +180,13 @@ await db
   .where(sql`to_tsvector('english', ${posts.title}) @@ websearch_to_tsquery('english', ${title})`);
 ```
 
-```
+```sql
 select * from posts
   where to_tsvector('english', title)
   @@ websearch_to_tsquery('english', 'family or first trip Europe or Asia');
 ```
 
-```
+```json
 [
   { id: 1, title: 'Planning Your First Trip to Europe' },
   { id: 2, title: "Cultural Insights: Exploring Asia's Heritage" },
@@ -204,7 +202,7 @@ migration.sql
 
 db\_data
 
-```
+```ts
 import { sql } from 'drizzle-orm';
 import { index, pgTable, serial, text } from 'drizzle-orm/pg-core';
 
@@ -227,7 +225,7 @@ export const posts = pgTable(
 );
 ```
 
-```
+```json
 [
   {
     id: 1,
@@ -278,7 +276,7 @@ The `setweight` function is used to label the entries of a tsvector with a given
 
 This is how you can query on multiple columns:
 
-```
+```ts
 const title = 'plan';
 
 await db.select().from(posts)
@@ -290,7 +288,7 @@ await db.select().from(posts)
   );
 ```
 
-```
+```json
 [
   {
     id: 1,
@@ -314,11 +312,11 @@ To rank the search results, you can use the `ts_rank` or `ts_rank_cd` functions 
 
 IMPORTANT
 
-`getColumns` available starting from `drizzle-orm@1.0.0-beta.2`(read more [here](drizzle/docs/upgrade-v1/index.md))
+`getColumns` available starting from `drizzle-orm@1.0.0-beta.2`(read more [here](https://orm.drizzle.team/docs/upgrade-v1))
 
 If you are on pre-1 version(like `0.45.1`) then use `getTableColumns`
 
-```
+```ts
 import { desc, getColumns, sql } from 'drizzle-orm';
 
 const search = 'culture | Europe | Italy | adventure';
@@ -343,7 +341,7 @@ await db
   .orderBy((t) => desc(t.rank));
 ```
 
-```
+```json
 [
   {
     id: 1,

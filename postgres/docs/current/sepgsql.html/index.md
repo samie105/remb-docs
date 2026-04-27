@@ -5,14 +5,12 @@ canonical_url: "https://www.postgresql.org/docs/current/sepgsql.html"
 docset: "postgres"
 kind: "database"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:41:00.694Z"
-content_hash: "d6d6a672b25c46d9832b4ed3cbf749bc8a00b3da58d2e9550aaff00b8c397246"
+last_crawled_at: "2026-04-27T20:45:12.501Z"
+content_hash: "5620a594db8165b5edb2defbbb698f73ef66e45bc76f5a26b016c83be0aedb7e"
 menu_path: ["PostgreSQL: Documentation: 18: F.40. sepgsql — SELinux-, label-based mandatory access control (MAC) security module"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/seg.html/index.md", "title": "PostgreSQL: Documentation: 18: F.39.\u00a0seg \u2014 a datatype for line segments or floating point intervals"}
-nav_next: {"path": "postgres/docs/current/server-shutdown.html/index.md", "title": "PostgreSQL: Documentation: 18: 18.5.\u00a0Shutting Down the Server"}
+content_language: "en"
 ---
-
 `sepgsql` is a loadable module that supports label-based mandatory access control (MAC) based on SELinux security policy.
 
 ### Warning
@@ -45,7 +43,7 @@ If SELinux is disabled or not installed, you must set that product up first befo
 
 To build this module, specify [`--with-selinux`](https://www.postgresql.org/docs/current/install-make.html#CONFIGURE-OPTION-WITH-SEPGSQL) (when using [make and autoconf](https://www.postgresql.org/docs/current/install-make.html "17.3. Building and Installation with Autoconf and Make") ) or [`-Dselinux={ auto | enabled | disabled }`](https://www.postgresql.org/docs/current/install-meson.html#CONFIGURE-WITH-SEPGSQL-MESON) (when using [meson](https://www.postgresql.org/docs/current/install-meson.html "17.4. Building and Installation with Meson")). Be sure that the `libselinux-devel` RPM is installed at build time.
 
-To use this module, you must include `sepgsql` in the [shared\_preload\_libraries](postgres/docs/current/runtime-config-client.html/index.md#GUC-SHARED-PRELOAD-LIBRARIES) parameter in `postgresql.conf`. The module will not function correctly if loaded in any other manner. Once the module is loaded, you should execute `sepgsql.sql` in each database. This will install functions needed for security label management, and assign initial security labels.
+To use this module, you must include `sepgsql` in the [shared\_preload\_libraries](https://www.postgresql.org/docs/current/runtime-config-client.html#GUC-SHARED-PRELOAD-LIBRARIES) parameter in `postgresql.conf`. The module will not function correctly if loaded in any other manner. Once the module is loaded, you should execute `sepgsql.sql` in each database. This will install functions needed for security label management, and assign initial security labels.
 
 Here is an example showing how to initialize a fresh database cluster with `sepgsql` functions and security labels installed. Adjust the paths shown as appropriate for your installation:
 
@@ -175,24 +173,24 @@ SELinux defines several permissions to control common operations for each object
 
 Creating a new database object requires `create` permission. SELinux will grant or deny this permission based on the client's security label and the proposed security label for the new object. In some cases, additional privileges are required:
 
-*   [`CREATE DATABASE`](https://www.postgresql.org/docs/current/sql-createdatabase.html "CREATE DATABASE") additionally requires `getattr` permission for the source or template database.
+-   [`CREATE DATABASE`](https://www.postgresql.org/docs/current/sql-createdatabase.html "CREATE DATABASE") additionally requires `getattr` permission for the source or template database.
     
-*   Creating a schema object additionally requires `add_name` permission on the parent schema.
+-   Creating a schema object additionally requires `add_name` permission on the parent schema.
     
-*   Creating a table additionally requires permission to create each individual table column, just as if each table column were a separate top-level object.
+-   Creating a table additionally requires permission to create each individual table column, just as if each table column were a separate top-level object.
     
-*   Creating a function marked as `LEAKPROOF` additionally requires `install` permission. (This permission is also checked when `LEAKPROOF` is set for an existing function.)
+-   Creating a function marked as `LEAKPROOF` additionally requires `install` permission. (This permission is also checked when `LEAKPROOF` is set for an existing function.)
     
 
 When `DROP` command is executed, `drop` will be checked on the object being removed. Permissions will be also checked for objects dropped indirectly via `CASCADE`. Deletion of objects contained within a particular schema (tables, views, sequences and procedures) additionally requires `remove_name` on the schema.
 
 When `ALTER` command is executed, `setattr` will be checked on the object being modified for each object types, except for subsidiary objects such as the indexes or triggers of a table, where permissions are instead checked on the parent object. In some cases, additional permissions are required:
 
-*   Moving an object to a new schema additionally requires `remove_name` permission on the old schema and `add_name` permission on the new one.
+-   Moving an object to a new schema additionally requires `remove_name` permission on the old schema and `add_name` permission on the new one.
     
-*   Setting the `LEAKPROOF` attribute on a function requires `install` permission.
+-   Setting the `LEAKPROOF` attribute on a function requires `install` permission.
     
-*   Using [`SECURITY LABEL`](https://www.postgresql.org/docs/current/sql-security-label.html "SECURITY LABEL") on an object additionally requires `relabelfrom` permission for the object in conjunction with its old security label and `relabelto` permission for the object in conjunction with its new security label. (In cases where multiple label providers are installed and the user tries to set a security label, but it is not managed by SELinux, only `setattr` should be checked here. This is currently not done due to implementation restrictions.)
+-   Using [`SECURITY LABEL`](https://www.postgresql.org/docs/current/sql-security-label.html "SECURITY LABEL") on an object additionally requires `relabelfrom` permission for the object in conjunction with its old security label and `relabelto` permission for the object in conjunction with its new security label. (In cases where multiple label providers are installed and the user tries to set a security label, but it is not managed by SELinux, only `setattr` should be checked here. This is currently not done due to implementation restrictions.)
     
 
 #### F.40.5.4. Trusted Procedures [#](#SEPGSQL-FEATURES-TRUSTED-PROCEDURES)
@@ -265,29 +263,48 @@ We reject the [`LOAD`](https://www.postgresql.org/docs/current/sql-load.html "LO
 
 **Table F.32. Sepgsql Functions**
 
+| 
 Function
 
 Description
+
+ |
+| --- |
+| 
 
 `sepgsql_getcon` () → `text`
 
 Returns the client domain, the current security label of the client.
 
+ |
+| 
+
 `sepgsql_setcon` ( `text` ) → `boolean`
 
 Switches the client domain of the current session to the new domain, if allowed by the security policy. It also accepts `NULL` input as a request to transition to the client's original domain.
+
+ |
+| 
 
 `sepgsql_mcstrans_in` ( `text` ) → `text`
 
 Translates the given qualified MLS/MCS range into raw format if the mcstrans daemon is running.
 
+ |
+| 
+
 `sepgsql_mcstrans_out` ( `text` ) → `text`
 
 Translates the given raw MLS/MCS range into qualified format if the mcstrans daemon is running.
 
+ |
+| 
+
 `sepgsql_restorecon` ( `text` ) → `boolean`
 
 Sets up initial security labels for all objects within the current database. The argument may be `NULL`, or the name of a specfile to be used as alternative of the system default.
+
+ |
 
   
 

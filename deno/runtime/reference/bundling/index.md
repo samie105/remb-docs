@@ -5,23 +5,24 @@ canonical_url: "https://docs.deno.com/runtime/reference/bundling/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:50:14.878Z"
-content_hash: "e0d16ea8c6075a679f1fef59d42eeef49acbce9e317abb8518f0227bdb2e263a"
+last_crawled_at: "2026-04-27T17:24:51.038Z"
+content_hash: "b78473ba3f93188d02dbd53515710c53f4c577959cdc16bc93a2767f1f92bd5b"
 menu_path: ["Bundling"]
 section_path: []
+content_language: "en"
 ---
-On this page
+**On this page**
 
-*   [Supported features](#supported-features)
-*   [Basic example](#basic-example)
-*   [Options Overview](#options-overview)
-*   [Runtime API](#runtime-api)
-    *   [Basic usage](#basic-usage)
-    *   [Processing outputs in memory](#processing-outputs-in-memory)
-*   [HTML entrypoint support](#html-entrypoint-support)
-    *   [Example](#example)
-    *   [When to use HTML bundling](#when-to-use-html-bundling)
-*   [Bundle a React page for the web](#bundle-a-react-page-for-the-web)
+-   [Supported features](#supported-features)
+-   [Basic example](#basic-example)
+-   [Options Overview](#options-overview)
+-   [Runtime API](#runtime-api)
+    -   [Basic usage](#basic-usage)
+    -   [Processing outputs in memory](#processing-outputs-in-memory)
+-   [HTML entrypoint support](#html-entrypoint-support)
+    -   [Example](#example)
+    -   [When to use HTML bundling](#when-to-use-html-bundling)
+-   [Bundle a React page for the web](#bundle-a-react-page-for-the-web)
 
 Caution
 
@@ -35,13 +36,13 @@ This tool is useful for deploying or distributing a project as a single optimize
 
 ## Supported features
 
-*   Resolves and inlines all dependencies
-*   Supports JSX/TSX, TypeScript, and modern JavaScript, including [import attributes](/runtime/fundamentals/modules/#import-attributes) and CSS
-*   HTML entrypoint support (Deno 2.5+)
-*   Optional minification (`--minify`) and source maps (`--sourcemap`)
-*   Code splitting
-*   Platform targeting (`--platform`, supports Deno and browser)
-*   JSX support when configured
+-   Resolves and inlines all dependencies
+-   Supports JSX/TSX, TypeScript, and modern JavaScript, including [import attributes](/runtime/fundamentals/modules/#import-attributes) and CSS
+-   HTML entrypoint support (Deno 2.5+)
+-   Optional minification (`--minify`) and source maps (`--sourcemap`)
+-   Code splitting
+-   Platform targeting (`--platform`, supports Deno and browser)
+-   JSX support when configured
 
 ## Basic example
 
@@ -76,45 +77,17 @@ You can use JSR, npm, http(s) and local imports in the file you are bundling, `d
 
 ## Options Overview
 
-Flag
-
-Description
-
-`-o`, `--output <file>`
-
-Write bundled output to a file
-
-`--outdir <dir>`
-
-Write bundled output to a directory
-
-`--minify`
-
-Minify the output for production
-
-`--format <format>`
-
-Output format (`esm` by default)
-
-`--code-splitting`
-
-Enable code splitting
-
-`--platform <platform>`
-
-Bundle for `browser` or `deno` (default: `deno`)
-
-`--sourcemap`
-
-Include source maps (`linked`, `inline`, `external`)
-
-`--watch`
-
-Automatically rebuild on file changes
-
-`--inline-imports`
-
-Inline imported modules (`true` or `false`)
+| Flag | Description |
+| --- | --- |
+| `-o`, `--output <file>` | Write bundled output to a file |
+| `--outdir <dir>` | Write bundled output to a directory |
+| `--minify` | Minify the output for production |
+| `--format <format>` | Output format (`esm` by default) |
+| `--code-splitting` | Enable code splitting |
+| `--platform <platform>` | Bundle for `browser` or `deno` (default: `deno`) |
+| `--sourcemap` | Include source maps (`linked`, `inline`, `external`) |
+| `--watch` | Automatically rebuild on file changes |
+| `--inline-imports` | Inline imported modules (`true` or `false`) |
 
 * * *
 
@@ -231,8 +204,8 @@ HTML entrypoints are fully supported in both the CLI and the runtime API mention
 
 ### When to use HTML bundling
 
-*   **`deno bundle index.html`** - Great for small, static apps where you want a quick packaged build
-*   **Vite** - Better for complex projects that benefit from the wider Vite ecosystem
+-   **`deno bundle index.html`** - Great for small, static apps where you want a quick packaged build
+-   **Vite** - Better for complex projects that benefit from the wider Vite ecosystem
 
 Both approaches work seamlessly on Deno, so you can choose whichever fits your workflow best.
 
@@ -286,4 +259,4 @@ Listening on http://127.0.0.1:8000
 
 Visiting the page in your browser should show:
 
-![Image of serving bundled React app](/runtime/reference/images/bundled_react.png)
+![Image of serving bundled React app](https://docs.deno.com/runtime/reference/images/bundled_react.png)

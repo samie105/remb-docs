@@ -5,10 +5,11 @@ canonical_url: "https://docs.deno.com/runtime/reference/std/log/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:04:00.494Z"
+last_crawled_at: "2026-04-27T17:44:54.308Z"
 content_hash: "ca125fd9e6ef4808d3c06dd9d30993e95afba8593ac8f8ea6c01debaa2a3e9e2"
 menu_path: ["@std/log"]
 section_path: []
+content_language: "en"
 ---
 No longer recommended
 

@@ -5,27 +5,17 @@ canonical_url: "https://orm.drizzle.team/docs/tutorials/drizzle-with-neon"
 docset: "drizzle"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:23:16.643Z"
-content_hash: "76a9da0c4ce6fc8cdb83a13c7f93a5ce60083ad33822b9b5745ad74afdbdf7df"
+last_crawled_at: "2026-04-27T19:27:00.885Z"
+content_hash: "be7b3255b20e02ab194708f553a679c39e0898663e5dc8e4ff8e7025cef0e941"
 menu_path: ["Drizzle with Neon Postgres"]
 section_path: []
-nav_prev: {"path": "drizzle/docs/tutorials/drizzle-with-encore/index.md", "title": "Drizzle with Encore"}
-nav_next: {"path": "drizzle/docs/tutorials/drizzle-with-netlify-edge-functions-neon/index.md", "title": "Drizzle with Netlify Edge Functions and Neon Postgres"}
+content_language: "en"
 ---
-
 This tutorial demonstrates how to use Drizzle ORM with [Neon Postgres](https://neon.tech/) database. If you do not have an existing Neon account, sign up [here](https://neon.tech/).
 
 This guide assumes familiarity with:
 
-*   You should have installed Drizzle ORM and [Drizzle kit](drizzle/docs/kit-overview/index.md). You can do this by running the following command:
-
-npm
-
-yarn
-
-pnpm
-
-bun
+-   You should have installed Drizzle ORM and [Drizzle kit](https://orm.drizzle.team/docs/kit-overview). You can do this by running the following command:
 
 ```
 npm i drizzle-orm
@@ -47,15 +37,7 @@ bun add drizzle-orm
 bun add -D drizzle-kit
 ```
 
-*   You should also install the [Neon serverless driver](https://neon.tech/docs/serverless/serverless-driver).
-
-npm
-
-yarn
-
-pnpm
-
-bun
+-   You should also install the [Neon serverless driver](https://neon.tech/docs/serverless/serverless-driver).
 
 ```
 npm i @neondatabase/serverless
@@ -73,15 +55,7 @@ pnpm add @neondatabase/serverless
 bun add @neondatabase/serverless
 ```
 
-*   You should have installed the `dotenv` package for managing environment variables.
-
-npm
-
-yarn
-
-pnpm
-
-bun
+-   You should have installed the `dotenv` package for managing environment variables.
 
 ```
 npm i dotenv
@@ -111,13 +85,13 @@ Your Neon projects come with a ready-to-use Postgres database named `neondb`. We
 
 Navigate to the **Connection Details** section in the project console to find your database connection string. It should look similar to this:
 
-```
+```bash
 postgres://username:password@ep-cool-darkness-123456.us-east-2.aws.neon.tech/neondb
 ```
 
 Add the `DATABASE_URL` environment variable to your `.env` or `.env.local` file, which you’ll use to connect to the Neon database.
 
-```
+```text
 DATABASE_URL=NEON_DATABASE_CONNECTION_STRING
 ```
 
@@ -125,7 +99,7 @@ DATABASE_URL=NEON_DATABASE_CONNECTION_STRING
 
 Create a `db.ts` file and set up your database configuration:
 
-```
+```typescript
 import { drizzle } from "drizzle-orm/neon-http";
 import { neon } from "@neondatabase/serverless";
 import { config } from "dotenv";
@@ -140,7 +114,7 @@ export const db = drizzle({ client: sql });
 
 Create a `schema.ts` file and declare your tables:
 
-```
+```typescript
 import { integer, pgTable, serial, text, timestamp } from 'drizzle-orm/pg-core';
 
 export const usersTable = pgTable('users_table', {
@@ -172,11 +146,11 @@ export type SelectPost = typeof postsTable.$inferSelect;
 
 #### Setup Drizzle config file[](#setup-drizzle-config-file)
 
-**Drizzle config** - a configuration file that is used by [Drizzle Kit](drizzle/docs/kit-overview/index.md) and contains all the information about your database connection, migration folder and schema files.
+**Drizzle config** - a configuration file that is used by [Drizzle Kit](https://orm.drizzle.team/docs/kit-overview) and contains all the information about your database connection, migration folder and schema files.
 
 Create a `drizzle.config.ts` file in the root of your project and add the following content:
 
-```
+```typescript
 import { config } from 'dotenv';
 import { defineConfig } from "drizzle-kit";
 
@@ -198,7 +172,7 @@ You can generate migrations using `drizzle-kit generate` command and then run th
 
 Generate migrations:
 
-```
+```bash
 npx drizzle-kit generate
 ```
 
@@ -206,7 +180,7 @@ These migrations are stored in the `drizzle/migrations` directory, as specified 
 
 Example of a generated migration:
 
-```
+```sql
 CREATE TABLE IF NOT EXISTS "posts_table" (
 	"id" serial PRIMARY KEY NOT NULL,
 	"title" text NOT NULL,
@@ -233,13 +207,13 @@ END $$;
 
 Run migrations:
 
-```
+```bash
 npx drizzle-kit migrate
 ```
 
-Alternatively, you can push changes directly to the database using [Drizzle kit push command](drizzle/docs/kit-overview/index.md#prototyping-with-db-push):
+Alternatively, you can push changes directly to the database using [Drizzle kit push command](https://orm.drizzle.team/docs/kit-overview#prototyping-with-db-push):
 
-```
+```bash
 npx drizzle-kit push
 ```
 
@@ -251,7 +225,7 @@ Push command is good for situations where you need to quickly test new schema de
 
 This is the basic file structure of the project. In the `src/db` directory, we have database-related files including connection in `db.ts`, schema definitions in `schema.ts`, and a migration script in `migrate.ts` file which is responsible for applying migrations that stored in the `migrations` directory.
 
-```
+```plaintext
 📦 <project root>
  ├ 📂 src
  │  ├ 📜 db.ts
@@ -273,9 +247,9 @@ For instance, we create `src/queries` folder and separate files for each operati
 
 #### Insert data[](#insert-data)
 
-Read more about insert query in the [documentation](drizzle/docs/insert/index.md).
+Read more about insert query in the [documentation](https://orm.drizzle.team/docs/insert).
 
-```
+```typescript
 import { db } from '../db';
 import { InsertPost, InsertUser, postsTable, usersTable } from '../schema';
 
@@ -290,15 +264,15 @@ export async function createPost(data: InsertPost) {
 
 #### Select data[](#select-data)
 
-Read more about select query in the [documentation](drizzle/docs/select/index.md).
+Read more about select query in the [documentation](https://orm.drizzle.team/docs/select).
 
 IMPORTANT
 
-`getColumns` available starting from `drizzle-orm@1.0.0-beta.2`(read more [here](drizzle/docs/upgrade-v1/index.md))
+`getColumns` available starting from `drizzle-orm@1.0.0-beta.2`(read more [here](https://orm.drizzle.team/docs/upgrade-v1))
 
 If you are on pre-1 version(like `0.45.1`) then use `getTableColumns`
 
-```
+```typescript
 import { asc, between, count, eq, getColumns, sql } from 'drizzle-orm';
 import { db } from '../db';
 import { SelectUser, usersTable, postsTable } from '../schema';
@@ -361,13 +335,13 @@ export async function getPostsForLast24Hours(
 }
 ```
 
-Alternatively, you can use [relational query syntax](drizzle/docs/rqb/index.md).
+Alternatively, you can use [relational query syntax](https://orm.drizzle.team/docs/rqb).
 
 #### Update data[](#update-data)
 
-Read more about update query in the [documentation](drizzle/docs/update/index.md).
+Read more about update query in the [documentation](https://orm.drizzle.team/docs/update).
 
-```
+```typescript
 import { eq } from 'drizzle-orm';
 import { db } from '../db';
 import { SelectPost, postsTable } from '../schema';
@@ -379,9 +353,9 @@ export async function updatePost(id: SelectPost['id'], data: Partial<Omit<Select
 
 #### Delete data[](#delete-data)
 
-Read more about delete query in the [documentation](drizzle/docs/delete/index.md).
+Read more about delete query in the [documentation](https://orm.drizzle.team/docs/delete).
 
-```
+```typescript
 import { db } from '../db';
 import { eq } from 'drizzle-orm';
 import { SelectUser, usersTable } from '../schema';

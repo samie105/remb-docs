@@ -5,14 +5,12 @@ canonical_url: "https://orm.drizzle.team/docs/typebox-legacy"
 docset: "drizzle"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:25:36.340Z"
-content_hash: "1666f9c09951e067db095e8692f2271501c5198e9f25cad7a28a82eb8d72990f"
+last_crawled_at: "2026-04-27T19:30:31.318Z"
+content_hash: "26b97007d2bae1f15a5b781fce31ea7fe2b32181c935a18c8b5672b3eb80c356"
 menu_path: ["typebox-legacy"]
 section_path: []
-nav_prev: {"path": "drizzle/docs/arktype/index.md", "title": "arktype"}
-nav_next: {"path": "drizzle/docs/effect-schema/index.md", "title": "effect-schema"}
+content_language: "en"
 ---
-
 WARNING
 
 Starting from `drizzle-orm@1.0.0-beta.15`, `drizzle-typebox` has been deprecated in favor of first-class schema generation support within Drizzle ORM itself
@@ -22,14 +20,6 @@ You can still use `drizzle-typebox` package but all new update will be added to 
 This version of `typebox` is legacy by using `@sinclair/typebox` package
 
 ### Install the dependencies[](#install-the-dependencies)
-
-npm
-
-yarn
-
-pnpm
-
-bun
 
 ```
 npm i drizzle-orm @sinclair/typebox
@@ -51,7 +41,7 @@ bun add drizzle-orm @sinclair/typebox
 
 Defines the shape of data queried from the database - can be used to validate API responses.
 
-```
+```ts
 import { pgTable, text, integer } from 'drizzle-orm/pg-core';
 import { createSelectSchema } from 'drizzle-orm/typebox-legacy';
 import { Value } from '@sinclair/typebox/value';
@@ -73,7 +63,7 @@ const parsed: { id: number; name: string; age: number } = Value.Parse(userSelect
 
 Views and enums are also supported.
 
-```
+```ts
 import { pgEnum } from 'drizzle-orm/pg-core';
 import { createSelectSchema } from 'drizzle-orm/typebox-legacy';
 import { Value } from '@sinclair/typebox/value';
@@ -91,7 +81,7 @@ const parsed: { id: number; name: string; age: number } = Value.Parse(usersViewS
 
 Defines the shape of data to be inserted into the database - can be used to validate API requests.
 
-```
+```ts
 import { pgTable, text, integer } from 'drizzle-orm/pg-core';
 import { createInsertSchema } from 'drizzle-orm/typebox-legacy';
 import { Value } from '@sinclair/typebox/value';
@@ -116,7 +106,7 @@ await db.insert(users).values(parsed);
 
 Defines the shape of data to be updated in the database - can be used to validate API requests.
 
-```
+```ts
 import { pgTable, text, integer } from 'drizzle-orm/pg-core';
 import { createUpdateSchema } from 'drizzle-orm/typebox-legacy';
 import { Value } from '@sinclair/typebox/value';
@@ -141,7 +131,7 @@ await db.update(users).set(parsed).where(eq(users.name, 'Jane'));
 
 Each create schema function accepts an additional optional parameter that you can used to extend, modify or completely overwite a field’s schema. Defining a callback function will extend or modify while providing a Typebox schema will overwrite it.
 
-```
+```ts
 import { pgTable, text, integer, json } from 'drizzle-orm/pg-core';
 import { createSelectSchema } from 'drizzle-orm/typebox-legacy';
 import { Type } from '@sinclair/typebox';
@@ -176,7 +166,7 @@ For more advanced use cases, you can use the `createSchemaFactory` function.
 
 **Use case: Using an extended Typebox instance**
 
-```
+```ts
 import { pgTable, text, integer } from 'drizzle-orm/pg-core';
 import { createSchemaFactory } from 'drizzle-orm/typebox';
 import { t } from 'elysia'; // Extended Typebox instance
@@ -197,7 +187,7 @@ const userInsertSchema = createInsertSchema(users, {
 
 ### Data type reference[](#data-type-reference)
 
-```
+```ts
 pg.boolean();
 
 mysql.boolean();
@@ -208,7 +198,7 @@ sqlite.integer({ mode: 'boolean' });
 Type.Boolean();
 ```
 
-```
+```ts
 pg.date({ mode: 'date' });
 pg.timestamp({ mode: 'date' });
 
@@ -223,7 +213,7 @@ sqlite.integer({ mode: 'timestamp_ms' });
 Type.Date();
 ```
 
-```
+```ts
 pg.date({ mode: 'string' });
 pg.timestamp({ mode: 'string' });
 pg.cidr();
@@ -251,21 +241,21 @@ sqlite.text({ mode: 'text' });
 Type.String();
 ```
 
-```
+```ts
 pg.bit({ dimensions: ... });
 
 // Schema
 t.RegExp(/^[01]+$/, { maxLength: dimensions });
 ```
 
-```
+```ts
 pg.uuid();
 
 // Schema
 Type.String({ format: 'uuid' });
 ```
 
-```
+```ts
 pg.char({ length: ... });
 
 mysql.char({ length: ... });
@@ -274,7 +264,7 @@ mysql.char({ length: ... });
 Type.String({ minLength: length, maxLength: length });
 ```
 
-```
+```ts
 pg.varchar({ length: ... });
 
 mysql.varchar({ length: ... });
@@ -285,35 +275,35 @@ sqlite.text({ mode: 'text', length: ... });
 Type.String({ maxLength: length });
 ```
 
-```
+```ts
 mysql.tinytext();
 
 // Schema
 Type.String({ maxLength: 255 }); // unsigned 8-bit integer limit
 ```
 
-```
+```ts
 mysql.text();
 
 // Schema
 Type.String({ maxLength: 65_535 }); // unsigned 16-bit integer limit
 ```
 
-```
+```ts
 mysql.mediumtext();
 
 // Schema
 Type.String({ maxLength: 16_777_215 }); // unsigned 24-bit integer limit
 ```
 
-```
+```ts
 mysql.longtext();
 
 // Schema
 Type.String({ maxLength: 4_294_967_295 }); // unsigned 32-bit integer limit
 ```
 
-```
+```ts
 pg.text({ enum: ... });
 pg.char({ enum: ... });
 pg.varchar({ enum: ... });
@@ -332,21 +322,21 @@ sqlite.text({ mode: 'text', enum: ... });
 Type.Enum(enum);
 ```
 
-```
+```ts
 mysql.tinyint();
 
 // Schema
 Type.Integer({ minimum: -128, maximum: 127 }); // 8-bit integer lower and upper limit
 ```
 
-```
+```ts
 mysql.tinyint({ unsigned: true });
 
 // Schema
 Type.Integer({ minimum: 0, maximum: 255 }); // unsigned 8-bit integer lower and upper limit
 ```
 
-```
+```ts
 pg.smallint();
 pg.smallserial();
 
@@ -356,14 +346,14 @@ mysql.smallint();
 Type.Integer({ minimum: -32_768, maximum: 32_767 }); // 16-bit integer lower and upper limit
 ```
 
-```
+```ts
 mysql.smallint({ unsigned: true });
 
 // Schema
 Type.Integer({ minimum: 0, maximum: 65_535 }); // unsigned 16-bit integer lower and upper limit
 ```
 
-```
+```ts
 pg.real();
 
 mysql.float();
@@ -372,28 +362,28 @@ mysql.float();
 Type.Number().min(-8_388_608).max(8_388_607); // 24-bit integer lower and upper limit
 ```
 
-```
+```ts
 mysql.mediumint();
 
 // Schema
 Type.Integer({ minimum: -8_388_608, maximum: 8_388_607 }); // 24-bit integer lower and upper limit
 ```
 
-```
+```ts
 mysql.float({ unsigned: true });
 
 // Schema
 Type.Number({ minimum: 0, maximum: 16_777_215 }); // unsigned 24-bit integer lower and upper limit
 ```
 
-```
+```ts
 mysql.mediumint({ unsigned: true });
 
 // Schema
 Type.Integer({ minimum: 0, maximum: 16_777_215 }); // unsigned 24-bit integer lower and upper limit
 ```
 
-```
+```ts
 pg.integer();
 pg.serial();
 
@@ -403,14 +393,14 @@ mysql.int();
 Type.Integer({ minimum: -2_147_483_648, maximum: 2_147_483_647 }); // 32-bit integer lower and upper limit
 ```
 
-```
+```ts
 mysql.int({ unsigned: true });
 
 // Schema
 Type.Integer({ minimum: 0, maximum: 4_294_967_295 }); // unsgined 32-bit integer lower and upper limit
 ```
 
-```
+```ts
 pg.doublePrecision();
 
 mysql.double();
@@ -422,14 +412,14 @@ sqlite.real();
 Type.Number({ minimum: -140_737_488_355_328, maximum: 140_737_488_355_327 }); // 48-bit integer lower and upper limit
 ```
 
-```
+```ts
 mysql.double({ unsigned: true });
 
 // Schema
 Type.Numer({ minimum: 0, maximum: 281_474_976_710_655 }); // unsigned 48-bit integer lower and upper limit
 ```
 
-```
+```ts
 pg.bigint({ mode: 'number' });
 pg.bigserial({ mode: 'number' });
 
@@ -442,13 +432,13 @@ sqlite.integer({ mode: 'number' });
 Type.Integer({ minimum: -9_007_199_254_740_991, maximum: 9_007_199_254_740_991 }); // Javascript min. and max. safe integers
 ```
 
-```
+```ts
 mysql.serial();
 
 Type.Integer({ minimum: 0, maximum: 9_007_199_254_740_991 }); // Javascript max. safe integer
 ```
 
-```
+```ts
 pg.bigint({ mode: 'bigint' });
 pg.bigserial({ mode: 'bigint' });
 
@@ -460,21 +450,21 @@ sqlite.blob({ mode: 'bigint' });
 Type.BigInt({ minimum: -9_223_372_036_854_775_808n, maximum: 9_223_372_036_854_775_807n }); // 64-bit integer lower and upper limit
 ```
 
-```
+```ts
 mysql.bigint({ mode: 'bigint', unsigned: true });
 
 // Schema
 Type.BigInt({ minimum: 0, maximum: 18_446_744_073_709_551_615n }); // unsigned 64-bit integer lower and upper limit
 ```
 
-```
+```ts
 mysql.year();
 
 // Schema
 Type.Integer({ minimum: 1_901, maximum: 2_155 });
 ```
 
-```
+```ts
 pg.geometry({ type: 'point', mode: 'tuple' });
 pg.point({ mode: 'tuple' });
 
@@ -482,7 +472,7 @@ pg.point({ mode: 'tuple' });
 Type.Tuple([Type.Number(), Type.Number()]);
 ```
 
-```
+```ts
 pg.geometry({ type: 'point', mode: 'xy' });
 pg.point({ mode: 'xy' });
 
@@ -490,7 +480,7 @@ pg.point({ mode: 'xy' });
 Type.Object({ x: Type.Number(), y: Type.Number() });
 ```
 
-```
+```ts
 pg.halfvec({ dimensions: ... });
 pg.vector({ dimensions: ... });
 
@@ -498,21 +488,21 @@ pg.vector({ dimensions: ... });
 Type.Array(Type.Number(), { minItems: dimensions, maxItems: dimensions });
 ```
 
-```
+```ts
 pg.line({ mode: 'abc' });
 
 // Schema
 Type.Object({ a: Type.Number(), b: Type.Number(), c: Type.Number() });
 ```
 
-```
+```ts
 pg.line({ mode: 'tuple' });
 
 // Schema
 Type.Tuple([Type.Number(), Type.Number(), Type.Number()]);
 ```
 
-```
+```ts
 pg.json();
 pg.jsonb();
 
@@ -525,14 +515,14 @@ sqlite.text({ mode: 'json' });
 Type.Recursive((self) => Type.Union([Type.Union([Type.String(), Type.Number(), Type.Boolean(), Type.Null()]), Type.Array(self), Type.Record(Type.String(), self)]));
 ```
 
-```
+```ts
 sqlite.blob({ mode: 'buffer' });
 
 // Schema
 t.Union([t.Union([t.String(), t.Number(), t.Boolean(), t.Null()]), t.Array(t.Any()), t.Record(t.String(), t.Any())]);
 ```
 
-```
+```ts
 pg.dataType().array(...);
 
 // Schema

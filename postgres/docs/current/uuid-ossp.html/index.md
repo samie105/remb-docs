@@ -5,14 +5,12 @@ canonical_url: "https://www.postgresql.org/docs/current/uuid-ossp.html"
 docset: "postgres"
 kind: "database"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:53:17.039Z"
-content_hash: "cce71e70be6df6e60c2e25062d5b55c168107ea6a40dc05127c8701a851b3af7"
+last_crawled_at: "2026-04-27T20:51:42.355Z"
+content_hash: "c602704a06859b55024d9c266df0735f1d92f3cc26433d0b705e1479b38e83fb"
 menu_path: ["PostgreSQL: Documentation: 18: F.49. uuid-ossp — a UUID generator"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/using-explain.html/index.md", "title": "PostgreSQL: Documentation: 18: 14.1.\u00a0Using EXPLAIN"}
-nav_next: {"path": "postgres/docs/current/vacuumlo.html/index.md", "title": "PostgreSQL: Documentation: 18: vacuumlo"}
+content_language: "en"
 ---
-
 The `uuid-ossp` module provides functions to generate universally unique identifiers (UUIDs) using one of several standard algorithms. There are also functions to produce certain special UUID constants. This module is only necessary for special requirements beyond what is available in core PostgreSQL. See [Section 9.14](https://www.postgresql.org/docs/current/functions-uuid.html "9.14. UUID Functions") for built-in ways to generate UUIDs.
 
 This module is considered “trusted”, that is, it can be installed by non-superusers who have `CREATE` privilege on the current database.
@@ -23,17 +21,28 @@ This module is considered “trusted”, that is, it can be installed by non-sup
 
 **Table F.35. Functions for UUID Generation**
 
+| 
 Function
 
 Description
+
+ |
+| --- |
+| 
 
 `uuid_generate_v1` () → `uuid`
 
 Generates a version 1 UUID. This involves the MAC address of the computer and a time stamp. Note that UUIDs of this kind reveal the identity of the computer that created the identifier and the time at which it did so, which might make it unsuitable for certain security-sensitive applications.
 
+ |
+| 
+
 `uuid_generate_v1mc` () → `uuid`
 
 Generates a version 1 UUID, but uses a random multicast MAC address instead of the real MAC address of the computer.
+
+ |
+| 
 
 `uuid_generate_v3` ( _`namespace`_ `uuid`, _`name`_ `text` ) → `uuid`
 
@@ -45,41 +54,68 @@ SELECT uuid\_generate\_v3(uuid\_ns\_url(), 'http://www.postgresql.org');
 
 The name parameter will be MD5-hashed, so the cleartext cannot be derived from the generated UUID. The generation of UUIDs by this method has no random or environment-dependent element and is therefore reproducible.
 
+ |
+| 
+
 `uuid_generate_v4` () → `uuid`
 
 Generates a version 4 UUID, which is derived entirely from random numbers.
+
+ |
+| 
 
 `uuid_generate_v5` ( _`namespace`_ `uuid`, _`name`_ `text` ) → `uuid`
 
 Generates a version 5 UUID, which works like a version 3 UUID except that SHA-1 is used as a hashing method. Version 5 should be preferred over version 3 because SHA-1 is thought to be more secure than MD5.
 
+ |
+
   
 
 **Table F.36. Functions Returning UUID Constants**
 
+| 
 Function
 
 Description
+
+ |
+| --- |
+| 
 
 `uuid_nil` () → `uuid`
 
 Returns a “nil” UUID constant, which does not occur as a real UUID.
 
+ |
+| 
+
 `uuid_ns_dns` () → `uuid`
 
 Returns a constant designating the DNS namespace for UUIDs.
+
+ |
+| 
 
 `uuid_ns_url` () → `uuid`
 
 Returns a constant designating the URL namespace for UUIDs.
 
+ |
+| 
+
 `uuid_ns_oid` () → `uuid`
 
 Returns a constant designating the ISO object identifier (OID) namespace for UUIDs. (This pertains to ASN.1 OIDs, which are unrelated to the OIDs used in PostgreSQL.)
 
+ |
+| 
+
 `uuid_ns_x500` () → `uuid`
 
 Returns a constant designating the X.500 distinguished name (DN) namespace for UUIDs.
+
+ |
 
   
 

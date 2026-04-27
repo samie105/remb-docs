@@ -5,15 +5,16 @@ canonical_url: "https://docs.deno.com/runtime/reference/std/toml/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:06:25.811Z"
-content_hash: "100db2d0e2c2ddab646a74cb42e10ef505527a9696dca63a1ef7d0106b487170"
+last_crawled_at: "2026-04-27T17:48:25.828Z"
+content_hash: "0097c3000665b2d9a64d4f8d3e7b97012a4e2633836680a5cba35c885cc656d6"
 menu_path: ["@std/toml"]
 section_path: []
+content_language: "en"
 ---
-On this page
+**On this page**
 
-*   [Overview](#overview)
-    *   [Add to your project](#add-to-your-project)
+-   [Overview](#overview)
+    -   [Add to your project](#add-to-your-project)
 
 ## Overview
 
@@ -23,20 +24,20 @@ Be sure to read the supported types as not every spec is supported at the moment
 
 ## Supported types and handling
 
-*   [Keys](https://toml.io/en/latest#keys)
-*   [String](https://toml.io/en/latest#string)
-*   [Multiline String](https://toml.io/en/latest#string)
-*   [Literal String](https://toml.io/en/latest#string)
-*   [Integer](https://toml.io/en/latest#integer)
-*   [Float](https://toml.io/en/latest#float)
-*   [Boolean](https://toml.io/en/latest#boolean)
-*   [Offset Date-time](https://toml.io/en/latest#offset-date-time)
-*   [Local Date-time](https://toml.io/en/latest#local-date-time)
-*   [Local Date](https://toml.io/en/latest#local-date)
-*   [Local Time](https://toml.io/en/latest#local-time)
-*   [Table](https://toml.io/en/latest#table)
-*   [Inline Table](https://toml.io/en/latest#inline-table)
-*   [Array of Tables](https://toml.io/en/latest#array-of-tables)
+-   [Keys](https://toml.io/en/latest#keys)
+-   [String](https://toml.io/en/latest#string)
+-   [Multiline String](https://toml.io/en/latest#string)
+-   [Literal String](https://toml.io/en/latest#string)
+-   [Integer](https://toml.io/en/latest#integer)
+-   [Float](https://toml.io/en/latest#float)
+-   [Boolean](https://toml.io/en/latest#boolean)
+-   [Offset Date-time](https://toml.io/en/latest#offset-date-time)
+-   [Local Date-time](https://toml.io/en/latest#local-date-time)
+-   [Local Date](https://toml.io/en/latest#local-date)
+-   [Local Time](https://toml.io/en/latest#local-time)
+-   [Table](https://toml.io/en/latest#table)
+-   [Inline Table](https://toml.io/en/latest#inline-table)
+-   [Array of Tables](https://toml.io/en/latest#array-of-tables)
 
 _Supported with warnings see [Warning](#Warning)._
 

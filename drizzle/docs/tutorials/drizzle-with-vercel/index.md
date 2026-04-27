@@ -5,27 +5,17 @@ canonical_url: "https://orm.drizzle.team/docs/tutorials/drizzle-with-vercel"
 docset: "drizzle"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:24:37.774Z"
-content_hash: "3e2ce21159de388a902d9f496f865ec881cded10aaa95d2b5f971af934c14046"
+last_crawled_at: "2026-04-27T19:29:19.127Z"
+content_hash: "55c6da613b724d0de50ded41fd0f781845b4649425a756ca970e2dbd2203dc65"
 menu_path: ["Drizzle with Vercel Postgres"]
 section_path: []
-nav_prev: {"path": "drizzle/docs/tutorials/drizzle-with-turso/index.md", "title": "Drizzle with Turso"}
-nav_next: {"path": "drizzle/docs/tutorials/drizzle-with-vercel-edge-functions/index.md", "title": "Drizzle with Vercel Edge Functions"}
+content_language: "en"
 ---
-
 This tutorial demonstrates how to use Drizzle ORM with [Vercel Postgres](https://vercel.com/docs/storage/vercel-postgres). Vercel Postgres is a serverless SQL database designed to integrate with Vercel Functions and your frontend framework.
 
 This guide assumes familiarity with:
 
-*   You should have installed Drizzle ORM and [Drizzle kit](drizzle/docs/kit-overview/index.md). You can do this by running the following command:
-
-npm
-
-yarn
-
-pnpm
-
-bun
+-   You should have installed Drizzle ORM and [Drizzle kit](https://orm.drizzle.team/docs/kit-overview). You can do this by running the following command:
 
 ```
 npm i drizzle-orm
@@ -47,15 +37,7 @@ bun add drizzle-orm
 bun add -D drizzle-kit
 ```
 
-*   You should have installed `dotenv` package for managing environment variables. Read more about this package [here](https://www.npmjs.com/package/dotenv)
-
-npm
-
-yarn
-
-pnpm
-
-bun
+-   You should have installed `dotenv` package for managing environment variables. Read more about this package [here](https://www.npmjs.com/package/dotenv)
 
 ```
 npm i dotenv
@@ -73,15 +55,7 @@ pnpm add dotenv
 bun add dotenv
 ```
 
-*   You should have installed `@vercel/postgres` package. Read more about this package [here](https://www.npmjs.com/package/@vercel/postgres)
-
-npm
-
-yarn
-
-pnpm
-
-bun
+-   You should have installed `@vercel/postgres` package. Read more about this package [here](https://www.npmjs.com/package/@vercel/postgres)
 
 ```
 npm i @vercel/postgres
@@ -113,7 +87,7 @@ Navigate to your Vercel Postgres database and copy `POSTGRES_URL` from `.env.loc
 
 Add `POSTGRES_URL` to your `.env.local` or `.env` file.
 
-```
+```plaintext
 POSTGRES_URL=<YOUR_DATABASE_URL>
 ```
 
@@ -121,7 +95,7 @@ POSTGRES_URL=<YOUR_DATABASE_URL>
 
 Create a `index.ts` file in the `src/db` directory and set up your database configuration:
 
-```
+```typescript
 import { drizzle } from 'drizzle-orm/vercel-postgres';
 import { config } from 'dotenv';
 
@@ -134,7 +108,7 @@ export const db = drizzle();
 
 Create a `schema.ts` file in the `src/db` directory and declare your tables:
 
-```
+```typescript
 import { integer, pgTable, serial, text, timestamp } from 'drizzle-orm/pg-core';
 
 export const usersTable = pgTable('users_table', {
@@ -166,11 +140,11 @@ export type SelectPost = typeof postsTable.$inferSelect;
 
 #### Setup Drizzle config file[](#setup-drizzle-config-file)
 
-**Drizzle config** - a configuration file that is used by [Drizzle Kit](drizzle/docs/kit-overview/index.md) and contains all the information about your database connection, migration folder and schema files.
+**Drizzle config** - a configuration file that is used by [Drizzle Kit](https://orm.drizzle.team/docs/kit-overview) and contains all the information about your database connection, migration folder and schema files.
 
 Create a `drizzle.config.ts` file in the root of your project and add the following content:
 
-```
+```typescript
 import { config } from 'dotenv';
 import { defineConfig } from 'drizzle-kit';
 
@@ -192,7 +166,7 @@ You can generate migrations using `drizzle-kit generate` command and then run th
 
 Generate migrations:
 
-```
+```bash
 npx drizzle-kit generate
 ```
 
@@ -200,7 +174,7 @@ These migrations are stored in the `drizzle/migrations` directory, as specified 
 
 Example of a generated migration:
 
-```
+```sql
 CREATE TABLE IF NOT EXISTS "posts_table" (
 	"id" serial PRIMARY KEY NOT NULL,
 	"title" text NOT NULL,
@@ -227,13 +201,13 @@ END $$;
 
 Run migrations:
 
-```
+```bash
 npx drizzle-kit migrate
 ```
 
-Alternatively, you can push changes directly to the database using [Drizzle kit push command](drizzle/docs/kit-overview/index.md#prototyping-with-db-push):
+Alternatively, you can push changes directly to the database using [Drizzle kit push command](https://orm.drizzle.team/docs/kit-overview#prototyping-with-db-push):
 
-```
+```bash
 npx drizzle-kit push
 ```
 
@@ -245,7 +219,7 @@ Push command is good for situations where you need to quickly test new schema de
 
 This is the basic file structure of the project. In the `src/db` directory, we have database-related files including connection in `index.ts` and schema definitions in `schema.ts`.
 
-```
+```plaintext
 📦 <project root>
  ├ 📂 src
  │   ├ 📂 db
@@ -268,9 +242,9 @@ For instance, we create `src/db/queries` folder and separate files for each oper
 
 #### Insert data[](#insert-data)
 
-Read more about insert query in the [documentation](drizzle/docs/insert/index.md).
+Read more about insert query in the [documentation](https://orm.drizzle.team/docs/insert).
 
-```
+```typescript
 import { db } from '../index';
 import { InsertPost, InsertUser, postsTable, usersTable } from '../schema';
 
@@ -285,15 +259,15 @@ export async function createPost(data: InsertPost) {
 
 #### Select data[](#select-data)
 
-Read more about select query in the [documentation](drizzle/docs/select/index.md).
+Read more about select query in the [documentation](https://orm.drizzle.team/docs/select).
 
 IMPORTANT
 
-`getColumns` available starting from `drizzle-orm@1.0.0-beta.2`(read more [here](drizzle/docs/upgrade-v1/index.md))
+`getColumns` available starting from `drizzle-orm@1.0.0-beta.2`(read more [here](https://orm.drizzle.team/docs/upgrade-v1))
 
 If you are on pre-1 version(like `0.45.1`) then use `getTableColumns`
 
-```
+```typescript
 import { asc, between, count, eq, getColumns, sql } from 'drizzle-orm';
 import { db } from '../index';
 import { SelectUser, postsTable, usersTable } from '../schema';
@@ -356,13 +330,13 @@ export async function getPostsForLast24Hours(
 }
 ```
 
-Alternatively, you can use [relational query syntax](drizzle/docs/rqb/index.md).
+Alternatively, you can use [relational query syntax](https://orm.drizzle.team/docs/rqb).
 
 #### Update data[](#update-data)
 
-Read more about update query in the [documentation](drizzle/docs/update/index.md).
+Read more about update query in the [documentation](https://orm.drizzle.team/docs/update).
 
-```
+```typescript
 import { eq } from 'drizzle-orm';
 import { db } from '../index';
 import { SelectPost, postsTable } from '../schema';
@@ -374,9 +348,9 @@ export async function updatePost(id: SelectPost['id'], data: Partial<Omit<Select
 
 #### Delete data[](#delete-data)
 
-Read more about delete query in the [documentation](drizzle/docs/delete/index.md).
+Read more about delete query in the [documentation](https://orm.drizzle.team/docs/delete).
 
-```
+```typescript
 import { eq } from 'drizzle-orm';
 import { db } from '../index';
 import { SelectUser, usersTable } from '../schema';

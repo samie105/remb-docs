@@ -5,14 +5,12 @@ canonical_url: "https://www.prisma.io/docs/orm/core-concepts/data-modeling"
 docset: "prisma"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:32:21.145Z"
-content_hash: "33843c9ff824d8f4fdacda27a147461c61d9c4d6098fb44583811b0684873e14"
+last_crawled_at: "2026-04-27T19:34:11.815Z"
+content_hash: "f113dc65b592751eb5fc36382532d2eb1529efc013b764ab6427a2951c6a8acc"
 menu_path: ["Data modeling"]
 section_path: []
-nav_prev: {"path": "prisma/docs/orm/index.md", "title": "Prisma ORM"}
-nav_next: {"path": "prisma/docs/orm/core-concepts/api-patterns/index.md", "title": "API patterns"}
+content_language: "en"
 ---
-
 Learn how data modeling with Prisma differs from data modeling with SQL or ORMs. Prisma uses a declarative data modeling language to describe a database schema
 
 The term _data modeling_ refers to the **process of defining the shape and structure of the objects in an application**. These objects are often called "application models". In relational databases (like PostgreSQL), they are stored in _tables_ . When using document databases (like MongoDB), they are stored in _collections_.
@@ -21,22 +19,22 @@ Depending on the domain of your application, the models will be different. For e
 
 When modeling data, you typically ask questions like:
 
-*   What are the main entities/concepts in my application?
-*   How do they relate to each other?
-*   What are their main characteristics/properties?
-*   How can they be represented with my technology stack?
+-   What are the main entities/concepts in my application?
+-   How do they relate to each other?
+-   What are their main characteristics/properties?
+-   How can they be represented with my technology stack?
 
 Data modeling typically needs to happen on (at least) two levels:
 
-*   On the **database** level
-*   On the **application** level (i.e., in your programming language)
+-   On the **database** level
+-   On the **application** level (i.e., in your programming language)
 
 The way that the application models are represented on both levels might differ due to a few reasons:
 
-*   Databases and programming languages use different data types
-*   Relations are represented differently in a database than in a programming language
-*   Databases typically have more powerful data modeling capabilities, like indexes, cascading deletes, or a variety of additional constraints (e.g. unique, not null, ...)
-*   Databases and programming languages have different technical constraints
+-   Databases and programming languages use different data types
+-   Relations are represented differently in a database than in a programming language
+-   Databases typically have more powerful data modeling capabilities, like indexes, cascading deletes, or a variety of additional constraints (e.g. unique, not null, ...)
+-   Databases and programming languages have different technical constraints
 
 ### [Data modeling on the database level](#data-modeling-on-the-database-level)
 
@@ -55,44 +53,18 @@ CREATE TABLE users (
 
 A visual representation of the `users` table with some random data might look as follows:
 
-`user_id`
-
-`name`
-
-`email`
-
-`isAdmin`
-
-`1`
-
-`Alice`
-
-`alice@prisma.io`
-
-`false`
-
-`2`
-
-`Bob`
-
-`bob@prisma.io`
-
-`false`
-
-`3`
-
-`Sarah`
-
-`sarah@prisma.io`
-
-`true`
+| `user_id` | `name` | `email` | `isAdmin` |
+| --- | --- | --- | --- |
+| `1` | `Alice` | `alice@prisma.io` | `false` |
+| `2` | `Bob` | `bob@prisma.io` | `false` |
+| `3` | `Sarah` | `sarah@prisma.io` | `true` |
 
 It has the following columns:
 
-*   `user_id`: An integer that increments with every new record in the `users` table. It also represents the [primary key](https://en.wikipedia.org/wiki/Primary_key) for each record.
-*   `name`: A string with at most 255 characters.
-*   `email`: A string with at most 255 characters. Additionally, the added constraints express that no two records can have duplicate values for the `email` column, and that _every_ record needs to have a value for it.
-*   `isAdmin`: A boolean that indicates whether the user has admin rights (default value: `false`)
+-   `user_id`: An integer that increments with every new record in the `users` table. It also represents the [primary key](https://en.wikipedia.org/wiki/Primary_key) for each record.
+-   `name`: A string with at most 255 characters.
+-   `email`: A string with at most 255 characters. Additionally, the added constraints express that no two records can have duplicate values for the `email` column, and that _every_ record needs to have a value for it.
+-   `isAdmin`: A boolean that indicates whether the user has admin rights (default value: `false`)
 
 #### [MongoDB](#mongodb)
 
@@ -109,8 +81,8 @@ In MongoDB databases, models are represented by _collections_ and contain _docum
 
 Prisma Client currently expects a consistent model and [normalized model design](https://www.mongodb.com/docs/manual/data-modeling/best-practices/#std-label-data-modeling-best-practices). This means that:
 
-*   If a model or field is not present in the Prisma schema, it is ignored
-*   If a field is mandatory but not present in the MongoDB dataset, you will get an error
+-   If a model or field is not present in the Prisma schema, it is ignored
+-   If a field is mandatory but not present in the MongoDB dataset, you will get an error
 
 ### [Data modeling on the application level](#data-modeling-on-the-application-level)
 
@@ -190,8 +162,8 @@ User.init(
 
 To get an example with this `User` class to work, you still need to create the corresponding table in the database. With Sequelize, you have two ways of doing this:
 
-*   Run `User.sync()` (typically not recommended for production)
-*   Use [Sequelize migrations](https://sequelize.org/v5/manual/migrations.html) to change your database schema
+-   Run `User.sync()` (typically not recommended for production)
+-   Use [Sequelize migrations](https://sequelize.org/v5/manual/migrations.html) to change your database schema
 
 Note that you'll never instantiate the `User` class manually (using `new User(...)`) as was shown in the previous section, but rather call _static_ methods on the `User` class which then return the `User` model instances:
 
@@ -205,10 +177,10 @@ The resulting `user` object is an instance of Sequelize's `Model` class (because
 
 Depending on which parts of Prisma ORM you want to use in your application, the data modeling flow looks slightly different. The following two sections explain the workflows for using [**only Prisma Client**](#using-only-prisma-client) and using [**Prisma Client and Prisma Migrate**](#using-prisma-client-and-prisma-migrate).
 
-No matter which approach though, with Prisma ORM you never create application models in your programming language by manually defining classes, interfaces, or structs. Instead, the application models are defined in your [Prisma schema](prisma/docs/orm/prisma-schema/overview/index.md):
+No matter which approach though, with Prisma ORM you never create application models in your programming language by manually defining classes, interfaces, or structs. Instead, the application models are defined in your [Prisma schema](https://www.prisma.io/docs/orm/prisma-schema/overview):
 
-*   **Only Prisma Client**: Application models in the Prisma schema are _generated based on the introspection of your database schema_. Data modeling happens primarily on the database-level.
-*   **Prisma Client and Prisma Migrate**: Data modeling happens in the Prisma schema by _manually adding application models_ to it. Prisma Migrate maps these application models to tables in the underlying database (currently only supported for relational databases).
+-   **Only Prisma Client**: Application models in the Prisma schema are _generated based on the introspection of your database schema_. Data modeling happens primarily on the database-level.
+-   **Prisma Client and Prisma Migrate**: Data modeling happens in the Prisma schema by _manually adding application models_ to it. Prisma Migrate maps these application models to tables in the underlying database (currently only supported for relational databases).
 
 As an example, the `User` model from the previous example would be represented as follows in the Prisma schema:
 
@@ -264,7 +236,7 @@ Here is an overview of the main workflow:
 
 ### [Using Prisma Client and Prisma Migrate](#using-prisma-client-and-prisma-migrate)
 
-When using [Prisma Migrate](prisma/docs/orm/prisma-migrate/index.md), you define your application model in the Prisma schema and with relational databases use the `prisma migrate` subcommand to generate plain SQL migration files, which you can edit before applying. With MongoDB, you use `prisma db push` instead which applies the changes to your database directly.
+When using [Prisma Migrate](https://www.prisma.io/docs/orm/prisma-migrate), you define your application model in the Prisma schema and with relational databases use the `prisma migrate` subcommand to generate plain SQL migration files, which you can edit before applying. With MongoDB, you use `prisma db push` instead which applies the changes to your database directly.
 
 Here is an overview of the main workflow:
 

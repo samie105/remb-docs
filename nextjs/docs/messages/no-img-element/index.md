@@ -5,13 +5,14 @@ canonical_url: "https://nextjs.org/docs/messages/no-img-element"
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:18:26.740Z"
-content_hash: "de3dc8519a151244791a1f4f5746d63f092919bfebbc5a260a70a4843b764f20"
+last_crawled_at: "2026-04-27T18:17:51.970Z"
+content_hash: "f3eb2d49e9b5bf67b1abbff0cb2236cf14a44987402372a91109c9c253328be6"
 menu_path: ["No img element"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/messages/no-html-link-for-pages/index.md", "title": "No HTML link for pages"}
-nav_next: {"path": "nextjs/docs/messages/no-page-custom-font/index.md", "title": "No Page Custom Font"}
+version: "latest"
+content_language: "en"
 ---
+[Docs](/docs)[Errors](/docs)No img element
 
 # No img element
 
@@ -29,9 +30,9 @@ An `<img>` element was used to display an image instead of `<Image />` from `nex
 > 
 > Common image optimization platform pricing:
 > 
-> *   [Vercel pricing](https://vercel.com/pricing)
-> *   [Cloudinary pricing](https://cloudinary.com/pricing)
-> *   [imgix pricing](https://imgix.com/pricing)
+> -   [Vercel pricing](https://vercel.com/pricing)
+> -   [Cloudinary pricing](https://cloudinary.com/pricing)
+> -   [imgix pricing](https://imgix.com/pricing)
 
 > **Note**: If self-hosting, remember to install [`sharp`](https://www.npmjs.com/package/sharp) and check if your server has enough storage to cache the optimized images.
 
@@ -102,13 +103,9 @@ module.exports = {
 
 ## Useful Links[](#useful-links)
 
-*   [Image Component and Image Optimization](/docs/pages/api-reference/components/image)
-*   [next/image API Reference](/docs/pages/api-reference/components/image)
-*   [Largest Contentful Paint (LCP)](/learn/seo/web-performance/lcp)
-*   [Next.js config loaderFile option](/docs/pages/api-reference/components/image#loaderfile)
+-   [Image Component and Image Optimization](/docs/pages/api-reference/components/image)
+-   [next/image API Reference](/docs/pages/api-reference/components/image)
+-   [Largest Contentful Paint (LCP)](/learn/seo/web-performance/lcp)
+-   [Next.js config loaderFile option](/docs/pages/api-reference/components/image#loaderfile)
 
 Was this helpful?
-
-supported.
-
-Send

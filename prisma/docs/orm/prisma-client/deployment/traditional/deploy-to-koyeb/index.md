@@ -5,14 +5,13 @@ canonical_url: "https://www.prisma.io/docs/orm/prisma-client/deployment/traditio
 docset: "prisma"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:54:34.046Z"
-content_hash: "a06f6a0629c815740bb9c04b4a2261c93e4695a2c30305ed56577b7bd6515ae9"
+last_crawled_at: "2026-04-27T19:44:09.525Z"
+content_hash: "9396ad918e49a3973eeb8433aec03a37c9aae7705bbf035ecf7623ee25ebc6d6"
 menu_path: ["Deploy to Koyeb"]
 section_path: []
-nav_prev: {"path": "prisma/docs/orm/prisma-client/deployment/traditional/deploy-to-heroku/index.md", "title": "Deploy to Heroku"}
-nav_next: {"path": "prisma/docs/orm/prisma-client/deployment/traditional/deploy-to-railway/index.md", "title": "Deploy to Railway"}
+tab_variants: ["npm","pnpm","yarn","bun"]
+content_language: "en"
 ---
-
 Learn how to deploy a Node.js server that uses Prisma ORM to Koyeb Serverless Platform
 
 In this guide, you will set up and deploy a Node.js server that uses Prisma ORM with PostgreSQL to [Koyeb](https://www.koyeb.com/). The application exposes a REST API and uses Prisma Client to handle fetching, creating, and deleting records from a database.
@@ -23,28 +22,28 @@ When using the [Koyeb git-driven deployment](https://www.koyeb.com/docs/build-an
 
 The application has the following components:
 
-*   **Backend**: Node.js REST API built with Express.js with resource endpoints that use Prisma Client to handle database operations against a PostgreSQL database (e.g., hosted on Heroku).
-*   **Frontend**: Static HTML page to interact with the API.
+-   **Backend**: Node.js REST API built with Express.js with resource endpoints that use Prisma Client to handle database operations against a PostgreSQL database (e.g., hosted on Heroku).
+-   **Frontend**: Static HTML page to interact with the API.
 
-![Koyeb deployment architecture diagram showing a Node.js backend with Prisma Client, static frontend, and PostgreSQL database.](https://www.prisma.io/docs/img/orm/prisma-client/deployment/traditional/images/koyeb-architecture.png?dpl=dpl_2TrAJrUt7dXR3AAWNDvwk5WL6VFX)
+![Koyeb deployment architecture diagram showing a Node.js backend with Prisma Client, static frontend, and PostgreSQL database.](/docs/img/orm/prisma-client/deployment/traditional/images/koyeb-architecture.png)
 
 The focus of this guide is showing how to deploy projects using Prisma ORM to Koyeb. The starting point will be the [Prisma Koyeb example](https://github.com/koyeb/example-prisma), which contains an Express.js server with a couple of preconfigured REST endpoints and a simple frontend.
 
 > **Note:** The various **checkpoints** throughout the guide allow you to validate whether you performed the steps correctly.
 
-*   Hosted PostgreSQL database and a URL from which it can be accessed, e.g. `postgresql://username:password@your_postgres_db.cloud.com/db_identifier` (you can use Supabase, which offers a [free plan](https://dev.to/prisma/set-up-a-free-postgresql-database-on-supabase-to-use-with-prisma-3pk6)).
-*   [GitHub](https://github.com/) account with an empty public repository we will use to push the code.
-*   [Koyeb](https://www.koyeb.com/) account.
-*   Node.js installed.
+-   Hosted PostgreSQL database and a URL from which it can be accessed, e.g. `postgresql://username:password@your_postgres_db.cloud.com/db_identifier` (you can use Supabase, which offers a [free plan](https://dev.to/prisma/set-up-a-free-postgresql-database-on-supabase-to-use-with-prisma-3pk6)).
+-   [GitHub](https://github.com/) account with an empty public repository we will use to push the code.
+-   [Koyeb](https://www.koyeb.com/) account.
+-   Node.js installed.
 
-At the core of Prisma ORM is the [Prisma schema](prisma/docs/orm/prisma-schema/overview/index.md) – a declarative configuration where you define your data model and other Prisma ORM-related configuration. The Prisma schema is also a single source of truth for both Prisma Client and Prisma Migrate.
+At the core of Prisma ORM is the [Prisma schema](https://www.prisma.io/docs/orm/prisma-schema/overview) – a declarative configuration where you define your data model and other Prisma ORM-related configuration. The Prisma schema is also a single source of truth for both Prisma Client and Prisma Migrate.
 
-In this guide, you will create the database schema with [Prisma Migrate](prisma/docs/orm/prisma-migrate/index.md) to create the database schema. Prisma Migrate is based on the Prisma schema and works by generating `.sql` migration files that are executed against the database.
+In this guide, you will create the database schema with [Prisma Migrate](https://www.prisma.io/docs/orm/prisma-migrate) to create the database schema. Prisma Migrate is based on the Prisma schema and works by generating `.sql` migration files that are executed against the database.
 
 Migrate comes with two primary workflows:
 
-*   Creating migrations and applying them during local development with `prisma migrate dev`
-*   Applying generated migration to production with `prisma migrate deploy`
+-   Creating migrations and applying them during local development with `prisma migrate dev`
+-   Applying generated migration to production with `prisma migrate deploy`
 
 For brevity, the guide does not cover how migrations are created with `prisma migrate dev`. Rather, it focuses on the production workflow and uses the Prisma schema and SQL migration that are included in the example code.
 
@@ -126,7 +125,7 @@ Last, give your application a name and click the **Create App** button.
 
 **Checkpoint:** Open the deployed app by clicking on the screenshot of the deployed app. Once the page loads, click on the **Check API status** button, which should return: `{"up":true}`
 
-![Koyeb app creation interface showing environment variables configuration and Create App button.](https://www.prisma.io/docs/img/orm/prisma-client/deployment/traditional/images/koyeb-app-creation.png?dpl=dpl_2TrAJrUt7dXR3AAWNDvwk5WL6VFX)
+![Koyeb app creation interface showing environment variables configuration and Create App button.](/docs/img/orm/prisma-client/deployment/traditional/images/koyeb-app-creation.png)
 
 Congratulations! You have successfully deployed the app to Koyeb.
 
@@ -138,13 +137,13 @@ You can use the static frontend to interact with the API you deployed via the pr
 
 Open up the preview URL in your browser, the URL should like this: `https://APP_NAME-ORG_NAME.koyeb.app`. You should see the following:
 
-![Deployed Prisma app frontend in browser showing Check API status, Seed data, and Load feed buttons.](https://www.prisma.io/docs/img/orm/prisma-client/deployment/traditional/images/koyeb-deployed.png?dpl=dpl_2TrAJrUt7dXR3AAWNDvwk5WL6VFX)
+![Deployed Prisma app frontend in browser showing Check API status, Seed data, and Load feed buttons.](/docs/img/orm/prisma-client/deployment/traditional/images/koyeb-deployed.png)
 
 The buttons allow you to make requests to the REST API and view the response:
 
-*   **Check API status**: Will call the REST API status endpoint that returns `{"up":true}`.
-*   **Seed data**: Will seed the database with a test `user` and `post`. Returns the created users.
-*   **Load feed**: Will load all `users` in the database with their related `profiles`.
+-   **Check API status**: Will call the REST API status endpoint that returns `{"up":true}`.
+-   **Seed data**: Will seed the database with a test `user` and `post`. Returns the created users.
+-   **Load feed**: Will load all `users` in the database with their related `profiles`.
 
 For more insight into Prisma Client's API, look at the route handlers in the `src/index.js` file.
 

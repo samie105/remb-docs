@@ -5,21 +5,24 @@ canonical_url: "https://www.postgresql.org/docs/current/functions-srf.html"
 docset: "postgres"
 kind: "database"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:50:36.038Z"
-content_hash: "3b5035df4fa91cb48538b28a5af907a9dad25aadedea73e023287ef7dd8c5e39"
+last_crawled_at: "2026-04-27T20:49:59.031Z"
+content_hash: "d2be562521fdf4d3cf73180f874e8be1c648dba5415fdb9bdf395f2d2d2ae153"
 menu_path: ["PostgreSQL: Documentation: 18: 9.26. Set Returning Functions"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/functions-matching.html/index.md", "title": "PostgreSQL: Documentation: 18: 9.7.\u00a0Pattern Matching"}
-nav_next: {"path": "postgres/docs/current/functions-statistics.html/index.md", "title": "PostgreSQL: Documentation: 18: 9.31.\u00a0Statistics Information Functions"}
+content_language: "en"
 ---
-
 This section describes functions that possibly return more than one row. The most widely used functions in this class are series generating functions, as detailed in [Table 9.69](https://www.postgresql.org/docs/current/functions-srf.html#FUNCTIONS-SRF-SERIES "Table 9.69. Series Generating Functions") and [Table 9.70](https://www.postgresql.org/docs/current/functions-srf.html#FUNCTIONS-SRF-SUBSCRIPTS "Table 9.70. Subscript Generating Functions"). Other, more specialized set-returning functions are described elsewhere in this manual. See [Section 7.2.1.4](https://www.postgresql.org/docs/current/queries-table-expressions.html#QUERIES-TABLEFUNCTIONS "7.2.1.4. Table Functions") for ways to combine multiple set-returning functions.
 
 **Table 9.69. Series Generating Functions**
 
+| 
 Function
 
 Description
+
+ |
+| --- |
+| 
 
 `generate_series` ( _`start`_ `integer`, _`stop`_ `integer` \[, _`step`_ `integer` \] ) → `setof integer`
 
@@ -29,11 +32,16 @@ Description
 
 Generates a series of values from _`start`_ to _`stop`_, with a step size of _`step`_. _`step`_ defaults to 1.
 
+ |
+| 
+
 `generate_series` ( _`start`_ `timestamp`, _`stop`_ `timestamp`, _`step`_ `interval` ) → `setof timestamp`
 
 `generate_series` ( _`start`_ `timestamp with time zone`, _`stop`_ `timestamp with time zone`, _`step`_ `interval` \[, _`timezone`_ `text` \] ) → `setof timestamp with time zone`
 
-Generates a series of values from _`start`_ to _`stop`_, with a step size of _`step`_. In the timezone-aware form, times of day and daylight-savings adjustments are computed according to the time zone named by the _`timezone`_ argument, or the current [TimeZone](postgres/docs/current/runtime-config-client.html/index.md#GUC-TIMEZONE) setting if that is omitted.
+Generates a series of values from _`start`_ to _`stop`_, with a step size of _`step`_. In the timezone-aware form, times of day and daylight-savings adjustments are computed according to the time zone named by the _`timezone`_ argument, or the current [TimeZone](https://www.postgresql.org/docs/current/runtime-config-client.html#GUC-TIMEZONE) setting if that is omitted.
+
+ |
 
 When _`step`_ is positive, zero rows are returned if _`start`_ is greater than _`stop`_. Conversely, when _`step`_ is negative, zero rows are returned if _`start`_ is less than _`stop`_. Zero rows are also returned if any input is `NULL`. It is an error for _`step`_ to be zero. Some examples follow:
 
@@ -111,17 +119,27 @@ SELECT \* FROM generate\_series('2001-10-22 00:00 -04:00'::timestamptz,
 
 **Table 9.70. Subscript Generating Functions**
 
+| 
 Function
 
 Description
+
+ |
+| --- |
+| 
 
 `generate_subscripts` ( _`array`_ `anyarray`, _`dim`_ `integer` ) → `setof integer`
 
 Generates a series comprising the valid subscripts of the _`dim`_'th dimension of the given array.
 
+ |
+| 
+
 `generate_subscripts` ( _`array`_ `anyarray`, _`dim`_ `integer`, _`reverse`_ `boolean` ) → `setof integer`
 
 Generates a series comprising the valid subscripts of the _`dim`_'th dimension of the given array. When _`reverse`_ is true, returns the series in reverse order.
+
+ |
 
 `generate_subscripts` is a convenience function that generates the set of valid subscripts for the specified dimension of the given array. Zero rows are returned for arrays that do not have the requested dimension, or if any input is `NULL`. Some examples follow:
 

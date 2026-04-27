@@ -5,22 +5,23 @@ canonical_url: "https://nextjs.org/docs/pages/api-reference/cli"
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:19:28.015Z"
-content_hash: "301cb72ecdba63c8ee340eeebe90b8ad45decd56631bed0dde551a16f9e9d621"
+last_crawled_at: "2026-04-27T18:18:48.229Z"
+content_hash: "b19aee72600b66ca6c4ad352a757a1afe35c839480546685e46468b084d7abec"
 menu_path: ["CLI"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/pages/api-reference/config/eslint/index.md", "title": "ESLint"}
-nav_next: {"path": "nextjs/docs/pages/api-reference/cli/create-next-app/index.md", "title": "create-next-app CLI"}
+version: "latest"
+content_language: "en"
 ---
+[Pages Router](/docs/pages)[API Reference](/docs/pages/api-reference)CLI
 
 # CLI
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 Next.js comes with **two** Command Line Interface (CLI) tools:
 
-*   **`create-next-app`**: Quickly create a new Next.js application using the default template or an [example](https://github.com/vercel/next.js/tree/canary/examples) from a public GitHub repository.
-*   **`next`**: Run the Next.js development server, build your application, and more.
+-   **`create-next-app`**: Quickly create a new Next.js application using the default template or an [example](https://github.com/vercel/next.js/tree/canary/examples) from a public GitHub repository.
+-   **`next`**: Run the Next.js development server, build your application, and more.
 
 [
 
@@ -37,7 +38,3 @@ Learn how to run and build your application with the Next.js CLI.
 ](/docs/pages/api-reference/cli/next)
 
 Was this helpful?
-
-supported.
-
-Send

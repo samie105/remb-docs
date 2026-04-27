@@ -5,16 +5,12 @@ canonical_url: "https://www.postgresql.org/docs/current/sql-close.html"
 docset: "postgres"
 kind: "database"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:52:10.175Z"
-content_hash: "207efa99b25a6b137cba1e39542501fcd0749eff450073d6661fb8b9dff97837"
+last_crawled_at: "2026-04-27T20:50:59.914Z"
+content_hash: "97a6249927cf873845d27b0826f426957ffc809a15bb2f7758f8781c363b07f0"
 menu_path: ["PostgreSQL: Documentation: 18: CLOSE"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/sql-checkpoint.html/index.md", "title": "PostgreSQL: Documentation: 18: CHECKPOINT"}
-nav_next: {"path": "postgres/docs/current/sql-cluster.html/index.md", "title": "PostgreSQL: Documentation: 18: CLUSTER"}
+content_language: "en"
 ---
-
-CLOSE — close a cursor
-
 ## Synopsis
 
 CLOSE { _`name`_ | ALL }

@@ -5,27 +5,28 @@ canonical_url: "https://docs.deno.com/runtime/reference/cli/fmt/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:53:12.507Z"
-content_hash: "23bf4875eeccf0907a97989baacb9ae7f506f9ba4f6122ec5306297472df33c2"
+last_crawled_at: "2026-04-27T17:29:29.883Z"
+content_hash: "98158520ba8d7518de848f33752f8993a6c0e04f4a0f6ef9bf7e9909978c904f"
 menu_path: ["deno fmt"]
 section_path: []
+content_language: "en"
 ---
-On this page
+**On this page**
 
-*   [Basic usage](#basic-usage)
-*   [Watch mode](#watch-mode)
-*   [Check formatting in CI](#check-formatting-in-ci)
-*   [Formatting stdin](#formatting-stdin)
-*   [Configuring the formatter](#configuring-the-formatter)
-*   [Including and excluding files](#including-and-excluding-files)
-*   [Supported file types](#supported-file-types)
-*   [Ignoring code](#ignoring-code)
-    *   [JavaScript / TypeScript / JSONC](#javascript-%2F-typescript-%2F-jsonc)
-    *   [Markdown / HTML / CSS](#markdown-%2F-html-%2F-css)
-    *   [YAML](#yaml)
-*   [Options](#options)
-*   [Formatting options](#formatting-options)
-*   [File watching options](#file-watching-options)
+-   [Basic usage](#basic-usage)
+-   [Watch mode](#watch-mode)
+-   [Check formatting in CI](#check-formatting-in-ci)
+-   [Formatting stdin](#formatting-stdin)
+-   [Configuring the formatter](#configuring-the-formatter)
+-   [Including and excluding files](#including-and-excluding-files)
+-   [Supported file types](#supported-file-types)
+-   [Ignoring code](#ignoring-code)
+    -   [JavaScript / TypeScript / JSONC](#javascript-%2F-typescript-%2F-jsonc)
+    -   [Markdown / HTML / CSS](#markdown-%2F-html-%2F-css)
+    -   [YAML](#yaml)
+-   [Options](#options)
+-   [Formatting options](#formatting-options)
+-   [File watching options](#file-watching-options)
 
 Deno ships with a built-in code formatter based on [dprint](https://dprint.dev/) that auto-formats your code to a consistent style. For a broader overview, see [Linting and Formatting](/runtime/fundamentals/linting_and_formatting/).
 
@@ -131,99 +132,28 @@ deno fmt --ignore=dist/,build/
 
 ## Supported file types
 
-File Type
-
-Extension
-
-Notes
-
-JavaScript
-
-`.js`, `.cjs`, `.mjs`
-
-TypeScript
-
-`.ts`, `.mts`, `.cts`
-
-JSX
-
-`.jsx`
-
-TSX
-
-`.tsx`
-
-Markdown
-
-`.md`, `.mkd`, `.mkdn`, `.mdwn`, `.mdown`, `.markdown`
-
-JSON
-
-`.json`
-
-JSONC
-
-`.jsonc`
-
-CSS
-
-`.css`
-
-HTML
-
-`.html`
-
-[Nunjucks](https://mozilla.github.io/nunjucks/)
-
-`.njk`
-
-[Vento](https://github.com/ventojs/vento)
-
-`.vto`
-
-YAML
-
-`.yml`, `.yaml`
-
-Sass
-
-`.sass`
-
-SCSS
-
-`.scss`
-
-LESS
-
-`.less`
-
-Jupyter Notebook
-
-`.ipynb`
-
-Astro
-
-`.astro`
-
-Requires `--unstable-component` flag or `"unstable": ["fmt-component"]` config option.
-
-Svelte
-
-`.svelte`
-
-Requires `--unstable-component` flag or `"unstable": ["fmt-component"]` config option.
-
-Vue
-
-`.vue`
-
-Requires `--unstable-component` flag or `"unstable": ["fmt-component"]` config option.
-
-SQL
-
-`.sql`
-
-Requires `--unstable-sql` flag or `"unstable": ["fmt-sql"]` config option.
+| File Type | Extension | Notes |
+| --- | --- | --- |
+| JavaScript | `.js`, `.cjs`, `.mjs` |  |
+| TypeScript | `.ts`, `.mts`, `.cts` |  |
+| JSX | `.jsx` |  |
+| TSX | `.tsx` |  |
+| Markdown | `.md`, `.mkd`, `.mkdn`, `.mdwn`, `.mdown`, `.markdown` |  |
+| JSON | `.json` |  |
+| JSONC | `.jsonc` |  |
+| CSS | `.css` |  |
+| HTML | `.html` |  |
+| [Nunjucks](https://mozilla.github.io/nunjucks/) | `.njk` |  |
+| [Vento](https://github.com/ventojs/vento) | `.vto` |  |
+| YAML | `.yml`, `.yaml` |  |
+| Sass | `.sass` |  |
+| SCSS | `.scss` |  |
+| LESS | `.less` |  |
+| Jupyter Notebook | `.ipynb` |  |
+| Astro | `.astro` | Requires `--unstable-component` flag or `"unstable": ["fmt-component"]` config option. |
+| Svelte | `.svelte` | Requires `--unstable-component` flag or `"unstable": ["fmt-component"]` config option. |
+| Vue | `.vue` | Requires `--unstable-component` flag or `"unstable": ["fmt-component"]` config option. |
+| SQL | `.sql` | Requires `--unstable-sql` flag or `"unstable": ["fmt-sql"]` config option. |
 
 Note
 

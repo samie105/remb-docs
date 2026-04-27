@@ -5,33 +5,36 @@ canonical_url: "https://tailwindcss.com/docs/pointer-events"
 docset: "tailwind"
 kind: "framework"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:16:11.040Z"
-content_hash: "b3b1a4ee5403d38ca3267f5d3ea41b0286f46b0e62058dd730a635c22e79aefc"
+last_crawled_at: "2026-04-27T20:37:56.787Z"
+content_hash: "6ce7891ac16dd915de1636a971ae041b81bc7e3e98432891aa5d71317067bd97"
 menu_path: ["pointer-events"]
 section_path: []
-nav_prev: {"path": "tailwind/docs/field-sizing/index.md", "title": "field-sizing"}
-nav_next: {"path": "tailwind/docs/resize/index.md", "title": "resize"}
+content_language: "en"
 ---
+[](/)
+
+[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
+
+1.  Interactivity
+2.  pointer-events
+
+Interactivity
 
 # pointer-events
 
 Utilities for controlling whether an element responds to pointer events.
 
-Class
-
-Styles
-
-`pointer-events-auto`
-
+| Class | Styles |
+| --- | --- |
+| `pointer-events-auto` | 
 `pointer-events: auto;`
 
-`pointer-events-none`
+ |
+| `pointer-events-none` | 
 
 `pointer-events: none;`
 
-## [Examples](#examples)
-
-### [Ignoring pointer events](#ignoring-pointer-events)
+ |
 
 Use the `pointer-events-none` utility to make an element ignore pointer events, like `:hover` and `click` events:
 
@@ -47,8 +50,6 @@ pointer-events-none
 
 The pointer events will still trigger on child elements and pass-through to elements that are "beneath" the target.
 
-### [Restoring pointer events](#restoring-pointer-events)
-
 Use the `pointer-events-auto` utility to revert to the default browser behavior for pointer events:
 
 ```
@@ -57,10 +58,10 @@ Use the `pointer-events-auto` utility to revert to the default browser behavior 
 
 ### On this page
 
-*   [Quick reference](#quick-reference)
-*   [Examples](#examples)
-    *   [Ignoring pointer events](#ignoring-pointer-events)
-    *   [Restoring pointer events](#restoring-pointer-events)
+-   [Quick reference](#quick-reference)
+-   [Examples](#examples)
+    -   [Ignoring pointer events](#ignoring-pointer-events)
+    -   [Restoring pointer events](#restoring-pointer-events)
 
 [
 

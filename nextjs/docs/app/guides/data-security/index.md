@@ -5,17 +5,19 @@ canonical_url: "https://nextjs.org/docs/app/guides/data-security"
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:14:30.681Z"
-content_hash: "a563e812b79af626c67c7e7aae5ff499c3f68ec99acb126b7359c7fd4dea7f3b"
+last_crawled_at: "2026-04-27T18:13:22.718Z"
+content_hash: "48d31ff94551d07bdb76489394365553dc111d5c29df59611408e5a6cb26f724"
 menu_path: ["How to think about data security in Next.js"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/guides/custom-server/index.md", "title": "How to set up a custom server in Next.js"}
-nav_next: {"path": "nextjs/docs/app/guides/debugging/index.md", "title": "How to use debugging tools with Next.js"}
+version: "latest"
+tab_variants: ["pnpm","npm","yarn","bun"]
+content_language: "en"
 ---
+[App Router](/docs/app)[Guides](/docs/app/guides)Data Security
 
 # How to think about data security in Next.js
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 [React Server Components](https://react.dev/reference/rsc/server-components) improve performance and simplify data fetching, but also shift where and how data is accessed, changing some of the traditional security assumptions for handling data in frontend apps.
 
@@ -25,9 +27,9 @@ This guide will help you understand how to think about data security in Next.js 
 
 There are three main approaches we recommend for fetching data in Next.js, depending on the size and age of your project:
 
-*   [HTTP APIs](#external-http-apis): for existing large applications and organizations.
-*   [Data Access Layer](#data-access-layer): for new projects.
-*   [Component-Level Data Access](#component-level-data-access): for prototypes and learning.
+-   [HTTP APIs](#external-http-apis): for existing large applications and organizations.
+-   [Data Access Layer](#data-access-layer): for new projects.
+-   [Component-Level Data Access](#component-level-data-access): for prototypes and learning.
 
 We recommend choosing one data fetching approach and avoiding mixing them. This makes it clear for both developers working in your code base and security auditors what to expect.
 
@@ -57,8 +59,8 @@ export default async function Page() {
 
 This approach works well when:
 
-*   You already have security practices in place.
-*   Separate backend teams use other languages or manage APIs independently.
+-   You already have security practices in place.
+-   Separate backend teams use other languages or manage APIs independently.
 
 ### Data Access Layer[](#data-access-layer)
 
@@ -66,9 +68,9 @@ For new projects, we recommend creating a dedicated **Data Access Layer (DAL)**.
 
 A Data Access Layer should:
 
-*   Only run on the server.
-*   Perform authorization checks.
-*   Return safe, minimal **Data Transfer Objects (DTOs)**.
+-   Only run on the server.
+-   Perform authorization checks.
+-   Return safe, minimal **Data Transfer Objects (DTOs)**.
 
 This approach centralizes all data access logic, making it easier to enforce consistent data access and reduces the risk of authorization bugs. You also get the benefit of sharing an in-memory cache across different parts of a request.
 
@@ -223,13 +225,13 @@ On the initial load, both Server and Client Components run on the server to gene
 
 **Server Components:**
 
-*   Run only on the server.
-*   Can safely access environment variables, secrets, databases, and internal APIs.
+-   Run only on the server.
+-   Can safely access environment variables, secrets, databases, and internal APIs.
 
 **Client Components:**
 
-*   Run on the server during prerendering, but must follow the same security assumptions as code running in the browser.
-*   Must not access privileged data or server-only modules.
+-   Run on the server during prerendering, but must follow the same security assumptions as code running in the browser.
+-   Must not access privileged data or server-only modules.
 
 This ensures the app is secure by default, but it's possible to accidentally expose private data through how data is fetched or passed to components.
 
@@ -237,8 +239,8 @@ This ensures the app is secure by default, but it's possible to accidentally exp
 
 To prevent accidental exposure of private data to the client, you can use React Taint APIs:
 
-*   [`experimental_taintObjectReference`](https://react.dev/reference/react/experimental_taintObjectReference) for data objects.
-*   [`experimental_taintUniqueValue`](https://react.dev/reference/react/experimental_taintUniqueValue) for specific values.
+-   [`experimental_taintObjectReference`](https://react.dev/reference/react/experimental_taintObjectReference) for data objects.
+-   [`experimental_taintUniqueValue`](https://react.dev/reference/react/experimental_taintUniqueValue) for specific values.
 
 You can enable usage in your Next.js app with the [`experimental.taint`](/docs/app/api-reference/config/next-config-js/taint) option in `next.config.js`:
 
@@ -256,14 +258,28 @@ This prevents the tainted objects or values from being passed to the client. How
 
 > **Good to know:**
 > 
-> *   By default, environment variables are only available on the Server. Next.js exposes any environment variable prefixed with `NEXT_PUBLIC_` to the client. [Learn more](/docs/app/guides/environment-variables).
-> *   Functions and classes are already blocked from being passed to Client Components by default.
+> -   By default, environment variables are only available on the Server. Next.js exposes any environment variable prefixed with `NEXT_PUBLIC_` to the client. [Learn more](/docs/app/guides/environment-variables).
+> -   Functions and classes are already blocked from being passed to Client Components by default.
 
 ### Preventing client-side execution of server-only code[](#preventing-client-side-execution-of-server-only-code)
 
 To prevent server-only code from being executed on the client, you can mark a module with the [`server-only`](https://www.npmjs.com/package/server-only) package:
 
-pnpmnpmyarnbun
+#### pnpm
+
+pnpm
+
+#### npm
+
+npm
+
+#### yarn
+
+yarn
+
+#### bun
+
+bun
 
 Terminal
 
@@ -291,8 +307,8 @@ By default, when a Server Action is created and exported, it is reachable via a 
 
 To improve security, Next.js has the following built-in features:
 
-*   **Secure action IDs:** Next.js creates encrypted, non-deterministic IDs to allow the client to reference and call the Server Action. These IDs are periodically recalculated between builds for enhanced security.
-*   **Dead code elimination:** Unused Server Actions (referenced by their IDs) are removed from client bundle to avoid public access.
+-   **Secure action IDs:** Next.js creates encrypted, non-deterministic IDs to allow the client to reference and call the Server Action. These IDs are periodically recalculated between builds for enhanced security.
+-   **Dead code elimination:** Unused Server Actions (referenced by their IDs) are removed from client bundle to avoid public access.
 
 > **Good to know**:
 > 
@@ -502,8 +518,6 @@ Defining a Server Action inside a component creates a [closure](https://develope
 
 app/page.tsx
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -614,11 +628,11 @@ export default function Page() {
 
 If you're doing an audit of a Next.js project, here are a few things we recommend looking extra at:
 
-*   **Data Access Layer:** Is there an established practice for an isolated Data Access Layer? Verify that database packages and environment variables are not imported outside the Data Access Layer.
-*   **`"use client"` files:** Are the Component props expecting private data? Are the type signatures overly broad?
-*   **`"use server"` files:** Are the Action arguments validated in the action or inside the Data Access Layer? Is the user re-authorized inside the action? Does the action check ownership of the resource (authorization, not just authentication)? Are return values filtered to only what the client needs? Is database access delegated to a `server-only` Data Access Layer?
-*   **`/[param]/.`** Folders with brackets are user input. Are params validated?
-*   **`proxy.ts` and `route.ts`:** Have a lot of power. Spend extra time auditing these using traditional techniques. Perform Penetration Testing or Vulnerability Scanning regularly or in alignment with your team's software development lifecycle.
+-   **Data Access Layer:** Is there an established practice for an isolated Data Access Layer? Verify that database packages and environment variables are not imported outside the Data Access Layer.
+-   **`"use client"` files:** Are the Component props expecting private data? Are the type signatures overly broad?
+-   **`"use server"` files:** Are the Action arguments validated in the action or inside the Data Access Layer? Is the user re-authorized inside the action? Does the action check ownership of the resource (authorization, not just authentication)? Are return values filtered to only what the client needs? Is database access delegated to a `server-only` Data Access Layer?
+-   **`/[param]/.`** Folders with brackets are user input. Are params validated?
+-   **`proxy.ts` and `route.ts`:** Have a lot of power. Spend extra time auditing these using traditional techniques. Perform Penetration Testing or Vulnerability Scanning regularly or in alignment with your team's software development lifecycle.
 
 ## Next Steps
 
@@ -644,20 +658,4 @@ Learn how to create forms in Next.js with React Server Actions.
 
 ](/docs/app/guides/forms)
 
-[Previous
-
-Custom Server
-
-](/docs/app/guides/custom-server)
-
-[Next
-
-Debugging
-
-](/docs/app/guides/debugging)
-
 Was this helpful?
-
-supported.
-
-Send

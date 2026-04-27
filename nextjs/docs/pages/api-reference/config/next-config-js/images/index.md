@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/pages/api-reference/config/next-config-j
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:20:54.661Z"
-content_hash: "00122958730ca6d43d4344f6e57beb45430fb708e745abb6bce426894f0ddb83"
+last_crawled_at: "2026-04-27T18:20:19.669Z"
+content_hash: "4d19fd379521b720dd85344059d19c41fa5fc97c7cd174faeb016ce40cca8991"
 menu_path: ["images"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/pages/api-reference/config/next-config-js/httpAgentOptions/index.md", "title": "httpAgentOptions"}
-nav_next: {"path": "nextjs/docs/pages/api-reference/config/next-config-js/logging/index.md", "title": "logging"}
+version: "latest"
+content_language: "en"
 ---
+[Configuration](/docs/pages/api-reference/config)[next.config.js Options](/docs/pages/api-reference/config/next-config-js)images
 
 # images
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 If you want to use a cloud provider to optimize images instead of using the Next.js built-in Image Optimization API, you can configure `next.config.js` with the following:
 
@@ -46,22 +47,22 @@ To learn more about configuring the behavior of the built-in [Image Optimization
 
 ## Example Loader Configuration[](#example-loader-configuration)
 
-*   [Akamai](#akamai)
-*   [AWS CloudFront](#aws-cloudfront)
-*   [Cloudinary](#cloudinary)
-*   [Cloudflare](#cloudflare)
-*   [Contentful](#contentful)
-*   [Fastly](#fastly)
-*   [Gumlet](#gumlet)
-*   [ImageEngine](#imageengine)
-*   [Imgix](#imgix)
-*   [PixelBin](#pixelbin)
-*   [Sanity](#sanity)
-*   [Sirv](#sirv)
-*   [Supabase](#supabase)
-*   [Thumbor](#thumbor)
-*   [Imagekit](#imagekitio)
-*   [Nitrogen AIO](#nitrogen-aio)
+-   [Akamai](#akamai)
+-   [AWS CloudFront](#aws-cloudfront)
+-   [Cloudinary](#cloudinary)
+-   [Cloudflare](#cloudflare)
+-   [Contentful](#contentful)
+-   [Fastly](#fastly)
+-   [Gumlet](#gumlet)
+-   [ImageEngine](#imageengine)
+-   [Imgix](#imgix)
+-   [PixelBin](#pixelbin)
+-   [Sanity](#sanity)
+-   [Sirv](#sirv)
+-   [Supabase](#supabase)
+-   [Thumbor](#thumbor)
+-   [Imagekit](#imagekitio)
+-   [Nitrogen AIO](#nitrogen-aio)
 
 ### Akamai[](#akamai)
 
@@ -265,7 +266,3 @@ export default function aioLoader({ src, width, quality }) {
 ```
 
 Was this helpful?
-
-supported.
-
-Send

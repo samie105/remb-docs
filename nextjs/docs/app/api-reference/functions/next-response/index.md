@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/app/api-reference/functions/next-respons
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:11:55.371Z"
-content_hash: "763380b1704626c42798d6ec99e538f9e3851b2b73f7f03135721eae49c4984c"
+last_crawled_at: "2026-04-27T18:10:38.720Z"
+content_hash: "56690bff38ca6983313b41f28748a5d9afa6d3e5e0eaf9a4041cb9e0c2dd3d81"
 menu_path: ["NextResponse"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/api-reference/functions/next-request/index.md", "title": "NextRequest"}
-nav_next: {"path": "nextjs/docs/app/api-reference/functions/not-found/index.md", "title": "notFound"}
+version: "latest"
+content_language: "en"
 ---
+[API Reference](/docs/app/api-reference)[Functions](/docs/app/api-reference/functions)NextResponse
 
 # NextResponse
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 NextResponse extends the [Web Response API](https://developer.mozilla.org/docs/Web/API/Response) with additional convenience methods.
 
@@ -90,8 +91,6 @@ response.cookies.delete('experiments')
 Produce a response with the given JSON body.
 
 app/api/route.ts
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -212,20 +211,4 @@ function proxy(request: NextRequest) {
 }
 ```
 
-[Previous
-
-NextRequest
-
-](/docs/app/api-reference/functions/next-request)
-
-[Next
-
-notFound
-
-](/docs/app/api-reference/functions/not-found)
-
 Was this helpful?
-
-supported.
-
-Send

@@ -5,57 +5,19 @@ canonical_url: "https://tailwindcss.com/docs/table-layout"
 docset: "tailwind"
 kind: "framework"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:11:20.676Z"
-content_hash: "243c14e9498f18f105048cb51bbc58ccd2611862e2be1f5f622a8d1658c3e736"
+last_crawled_at: "2026-04-27T20:30:56.906Z"
+content_hash: "c6c26d72c029fc0cbeb5ad62fbbbb51ea36e74f0769715a1a51a3477ed68bab6"
 menu_path: ["table-layout"]
 section_path: []
-nav_prev: {"path": "tailwind/docs/border-spacing/index.md", "title": "border-spacing"}
-nav_next: {"path": "tailwind/docs/caption-side/index.md", "title": "caption-side"}
+content_language: "en"
 ---
-
 Utilities for controlling the table layout algorithm.
-
-Class
-
-Styles
-
-`table-auto`
-
-`table-layout: auto;`
-
-`table-fixed`
-
-`table-layout: fixed;`
 
 ## [Examples](#examples)
 
 ### [Sizing columns automatically](#sizing-columns-automatically)
 
 Use the `table-auto` utility to automatically size table columns to fit the contents of its cells:
-
-Song
-
-Artist
-
-Year
-
-The Sliding Mr. Bones (Next Stop, Pottersville)
-
-Malcolm Lockyer
-
-1961
-
-Witchy Woman
-
-The Eagles
-
-1972
-
-Shining Star
-
-Earth, Wind, and Fire
-
-1975
 
 ```
 <table class="table-auto">  <thead>    <tr>      <th>Song</th>      <th>Artist</th>      <th>Year</th>    </tr>  </thead>  <tbody>    <tr>      <td>The Sliding Mr. Bones (Next Stop, Pottersville)</td>      <td>Malcolm Lockyer</td>      <td>1961</td>    </tr>    <tr>      <td>Witchy Woman</td>      <td>The Eagles</td>      <td>1972</td>    </tr>    <tr>      <td>Shining Star</td>      <td>Earth, Wind, and Fire</td>      <td>1975</td>    </tr>  </tbody></table>
@@ -64,30 +26,6 @@ Earth, Wind, and Fire
 ### [Using fixed column widths](#using-fixed-column-widths)
 
 Use the `table-fixed` utility to ignore the content of the table cells and use fixed widths for each column:
-
-Song
-
-Artist
-
-Year
-
-The Sliding Mr. Bones (Next Stop, Pottersville)
-
-Malcolm Lockyer
-
-1961
-
-Witchy Woman
-
-The Eagles
-
-1972
-
-Shining Star
-
-Earth, Wind, and Fire
-
-1975
 
 ```
 <table class="table-fixed">  <thead>    <tr>      <th>Song</th>      <th>Artist</th>      <th>Year</th>    </tr>  </thead>  <tbody>    <tr>      <td>The Sliding Mr. Bones (Next Stop, Pottersville)</td>      <td>Malcolm Lockyer</td>      <td>1961</td>    </tr>    <tr>      <td>Witchy Woman</td>      <td>The Eagles</td>      <td>1972</td>    </tr>    <tr>      <td>Shining Star</td>      <td>Earth, Wind, and Fire</td>      <td>1975</td>    </tr>  </tbody></table>
@@ -103,4 +41,4 @@ Prefix a `table-layout` utility with a breakpoint variant like `md:` to only app
 <div class="table-auto md:table-fixed ...">  <!-- ... --></div>
 ```
 
-Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).
+Learn more about using variants in the [variants documentation](https://tailwindcss.com/docs/hover-focus-and-other-states).

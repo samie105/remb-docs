@@ -5,17 +5,19 @@ canonical_url: "https://nextjs.org/docs/app/guides/testing/jest"
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:16:39.116Z"
-content_hash: "174995aa37cc9b851d4b87572fe05d7bbe2550a3ba44ade8805b9c6f0a37a366"
+last_crawled_at: "2026-04-27T18:15:56.889Z"
+content_hash: "d6411b851682747e685e7bd50ab695c9b0e602f605cd2c1c04d0fdf0370aec38"
 menu_path: ["How to set up Jest with Next.js"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/guides/testing/cypress/index.md", "title": "How to set up Cypress with Next.js"}
-nav_next: {"path": "nextjs/docs/app/guides/testing/playwright/index.md", "title": "How to set up Playwright with Next.js"}
+version: "latest"
+tab_variants: ["pnpm","npm","yarn","bun","pnpm","npm","yarn","bun","pnpm","npm","yarn","bun","pnpm","npm","yarn","bun"]
+content_language: "en"
 ---
+[Guides](/docs/app/guides)[Testing](/docs/app/guides/testing)Jest
 
 # How to set up Jest with Next.js
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 Jest and React Testing Library are frequently used together for **Unit Testing** and **Snapshot Testing**. This guide will show you how to set up Jest with Next.js and write your first tests.
 
@@ -25,7 +27,21 @@ Jest and React Testing Library are frequently used together for **Unit Testing**
 
 You can use `create-next-app` with the Next.js [with-jest](https://github.com/vercel/next.js/tree/canary/examples/with-jest) example to quickly get started:
 
-pnpmnpmyarnbun
+#### pnpm
+
+pnpm
+
+#### npm
+
+npm
+
+#### yarn
+
+yarn
+
+#### bun
+
+bun
 
 Terminal
 
@@ -39,7 +55,21 @@ Since the release of [Next.js 12](https://nextjs.org/blog/next-12), Next.js now 
 
 To set up Jest, install `jest` and the following packages as dev dependencies:
 
-pnpmnpmyarnbun
+#### pnpm
+
+pnpm
+
+#### npm
+
+npm
+
+#### yarn
+
+yarn
+
+#### bun
+
+bun
 
 Terminal
 
@@ -49,7 +79,21 @@ pnpm add -D jest jest-environment-jsdom @testing-library/react @testing-library/
 
 Generate a basic Jest configuration file by running the following command:
 
-pnpmnpmyarnbun
+#### pnpm
+
+pnpm
+
+#### npm
+
+npm
+
+#### yarn
+
+yarn
+
+#### bun
+
+bun
 
 Terminal
 
@@ -62,8 +106,6 @@ This will take you through a series of prompts to setup Jest for your project, i
 Update your config file to use `next/jest`. This transformer has all the necessary configuration options for Jest to work with Next.js:
 
 jest.config.ts
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -90,12 +132,12 @@ export default createJestConfig(config)
 
 Under the hood, `next/jest` is automatically configuring Jest for you, including:
 
-*   Setting up `transform` using the [Next.js Compiler](/docs/architecture/nextjs-compiler).
-*   Auto mocking stylesheets (`.css`, `.module.css`, and their scss variants), image imports and [`next/font`](/docs/app/api-reference/components/font).
-*   Loading `.env` (and all variants) into `process.env`.
-*   Ignoring `node_modules` from test resolving and transforms.
-*   Ignoring `.next` from test resolving.
-*   Loading `next.config.js` for flags that enable SWC transforms.
+-   Setting up `transform` using the [Next.js Compiler](/docs/architecture/nextjs-compiler).
+-   Auto mocking stylesheets (`.css`, `.module.css`, and their scss variants), image imports and [`next/font`](/docs/app/api-reference/components/font).
+-   Loading `.env` (and all variants) into `process.env`.
+-   Ignoring `node_modules` from test resolving and transforms.
+-   Ignoring `.next` from test resolving.
+-   Loading `next.config.js` for flags that enable SWC transforms.
 
 > **Good to know**: To test environment variables directly, load them manually in a separate setup script or in your `jest.config.ts` file. For more information, please see [Test Environment Variables](/docs/app/guides/environment-variables#test-environment-variables).
 
@@ -133,8 +175,6 @@ moduleNameMapper: {
 
 jest.config.ts
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -144,8 +184,6 @@ setupFilesAfterEnv: ['<rootDir>/jest.setup.ts']
 Then, inside `jest.setup`, add the following import:
 
 jest.setup.ts
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -234,7 +272,21 @@ it('renders homepage unchanged', () => {
 
 Then, run the following command to run your tests:
 
-pnpmnpmyarnbun
+#### pnpm
+
+pnpm
+
+#### npm
+
+npm
+
+#### yarn
+
+yarn
+
+#### bun
+
+bun
 
 Terminal
 
@@ -246,25 +298,9 @@ pnpm test
 
 For further reading, you may find these resources helpful:
 
-*   [Next.js with Jest example](https://github.com/vercel/next.js/tree/canary/examples/with-jest)
-*   [Jest Docs](https://jestjs.io/docs/getting-started)
-*   [React Testing Library Docs](https://testing-library.com/docs/react-testing-library/intro/)
-*   [Testing Playground](https://testing-playground.com/) - use good testing practices to match elements.
-
-[Previous
-
-Cypress
-
-](/docs/app/guides/testing/cypress)
-
-[Next
-
-Playwright
-
-](/docs/app/guides/testing/playwright)
+-   [Next.js with Jest example](https://github.com/vercel/next.js/tree/canary/examples/with-jest)
+-   [Jest Docs](https://jestjs.io/docs/getting-started)
+-   [React Testing Library Docs](https://testing-library.com/docs/react-testing-library/intro/)
+-   [Testing Playground](https://testing-playground.com/) - use good testing practices to match elements.
 
 Was this helpful?
-
-supported.
-
-Send

@@ -5,10 +5,11 @@ canonical_url: "https://docs.deno.com/api/node/os/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:38:26.285Z"
-content_hash: "888e62675179f8570701959d05885baee2f826838a7ed58ce8d79e2a302758af"
+last_crawled_at: "2026-04-27T17:09:09.553Z"
+content_hash: "ce35fb043f24b1cb84c62d5492f42376c426311bdefc76eed56762176640cacb"
 menu_path: ["os - Node documentation"]
 section_path: []
+content_language: "en"
 ---
 ### Usage in Deno
 
@@ -21,8 +22,6 @@ The `node:os` module provides operating system-related utility methods and prope
 ```js
 import os from 'node:os';
 ```
-
-### Functions [#](#Functions)
 
 f
 
@@ -144,17 +143,15 @@ f
 
 Returns a string identifying the kernel version.
 
-### Interfaces [#](#Interfaces)
-
 I
 
 [CpuInfo](.././os/~/CpuInfo "CpuInfo")
 
 The `node:os` module provides operating system-related utility methods and properties. It can be accessed using:
 
-*   [model](.././os/~/CpuInfo#property_model)
-*   [speed](.././os/~/CpuInfo#property_speed)
-*   [times](.././os/~/CpuInfo#property_times)
+-   [model](.././os/~/CpuInfo#property_model)
+-   [speed](.././os/~/CpuInfo#property_speed)
+-   [times](.././os/~/CpuInfo#property_times)
 
 I
 
@@ -162,11 +159,11 @@ I
 
 No documentation available
 
-*   [address](.././os/~/NetworkInterfaceBase#property_address)
-*   [cidr](.././os/~/NetworkInterfaceBase#property_cidr)
-*   [internal](.././os/~/NetworkInterfaceBase#property_internal)
-*   [mac](.././os/~/NetworkInterfaceBase#property_mac)
-*   [netmask](.././os/~/NetworkInterfaceBase#property_netmask)
+-   [address](.././os/~/NetworkInterfaceBase#property_address)
+-   [cidr](.././os/~/NetworkInterfaceBase#property_cidr)
+-   [internal](.././os/~/NetworkInterfaceBase#property_internal)
+-   [mac](.././os/~/NetworkInterfaceBase#property_mac)
+-   [netmask](.././os/~/NetworkInterfaceBase#property_netmask)
 
 I
 
@@ -174,8 +171,8 @@ I
 
 No documentation available
 
-*   [family](.././os/~/NetworkInterfaceInfoIPv4#property_family)
-*   [scopeid](.././os/~/NetworkInterfaceInfoIPv4#property_scopeid)
+-   [family](.././os/~/NetworkInterfaceInfoIPv4#property_family)
+-   [scopeid](.././os/~/NetworkInterfaceInfoIPv4#property_scopeid)
 
 I
 
@@ -183,8 +180,8 @@ I
 
 No documentation available
 
-*   [family](.././os/~/NetworkInterfaceInfoIPv6#property_family)
-*   [scopeid](.././os/~/NetworkInterfaceInfoIPv6#property_scopeid)
+-   [family](.././os/~/NetworkInterfaceInfoIPv6#property_family)
+-   [scopeid](.././os/~/NetworkInterfaceInfoIPv6#property_scopeid)
 
 I
 
@@ -192,13 +189,11 @@ I
 
 No documentation available
 
-*   [gid](.././os/~/UserInfo#property_gid)
-*   [homedir](.././os/~/UserInfo#property_homedir)
-*   [shell](.././os/~/UserInfo#property_shell)
-*   [uid](.././os/~/UserInfo#property_uid)
-*   [username](.././os/~/UserInfo#property_username)
-
-### Namespaces [#](#Namespaces)
+-   [gid](.././os/~/UserInfo#property_gid)
+-   [homedir](.././os/~/UserInfo#property_homedir)
+-   [shell](.././os/~/UserInfo#property_shell)
+-   [uid](.././os/~/UserInfo#property_uid)
+-   [username](.././os/~/UserInfo#property_username)
 
 N
 
@@ -232,8 +227,6 @@ v
 
 No documentation available
 
-### Type Aliases [#](<#Type Aliases>)
-
 T
 
 [NetworkInterfaceInfo](.././os/~/NetworkInterfaceInfo "NetworkInterfaceInfo")
@@ -245,8 +238,6 @@ T
 [SignalConstants](.././os/~/SignalConstants "SignalConstants")
 
 No documentation available
-
-### Variables [#](#Variables)
 
 v
 

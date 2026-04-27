@@ -5,19 +5,63 @@ canonical_url: "https://www.prisma.io/docs/orm/prisma-migrate/understanding-pris
 docset: "prisma"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:50:03.331Z"
-content_hash: "15fa3c3245fa08d6b873f6db604782a89f797dde330f3b7f59ccc09341d1e01d"
+last_crawled_at: "2026-04-27T19:40:46.693Z"
+content_hash: "6e852a3511012d37e1802d3734fd9523f377144e4b669ae0db3b0c38337a7da6"
 menu_path: ["Limitations and known issues"]
 section_path: []
-nav_prev: {"path": "prisma/docs/orm/prisma-migrate/understanding-prisma-migrate/shadow-database/index.md", "title": "About the shadow database"}
-nav_next: {"path": "prisma/docs/orm/reference/prisma-cli-reference/index.md", "title": "Prisma CLI reference"}
+content_language: "en"
 ---
+Prisma Migrate does not currently support the MongoDB connector.
 
+Prisma Migrate generates SQL files that are specific to your provider. This means that you cannot use the same migration files for PostgreSQL in production and SQLite in development, because the syntax in the migrations will be incompatible.
+
+As of [2.15.0](https://github.com/prisma/prisma/releases/2.15.0), Prisma Migrate detects when the migrations do not match the configured provider and prints a helpful error message. For example, if your migrations are for a PostgreSQL database but your `provider` is set to `mysql`:
+
+```
+Error: P3014
+
+The datasource provider `postgresql` specified in your schema does not match the one specified in the migration_lock.toml, mysql. Please remove your current migration directory and start a new migration history with prisma migrate dev.
+```
+
+In order to manually switch the database provider, you must:
+
+-   Change the `provider` parameters in the `datasource` block in your schema
+-   Update the `url` in the `datasource` object in your config
+-   Archive or remove your existing migration history - there must not be a `./prisma/migrations` folder
+-   Run `prisma migrate dev` to start a new migration history
+
+The last step creates a new initial migration that goes from an empty database to your current `schema.prisma`. Be aware that:
+
+-   This migration will _only_ contain what is reflected in your `schema.prisma`. If you manually edited your previous migration files to add custom SQL you will need to again add this yourself.
+-   The newly created database using the new provider will not contain any data.
+
+In a development environment, Prisma Migrate sometimes prompts you to reset the database. Resetting drops and recreates the database, which results in data loss. The database is reset when:
+
+-   You call `prisma migrate reset` explicitly
+-   You call `prisma migrate dev` and Prisma Migrate detects drift in the database or a migration history conflict
+
+The `prisma migrate dev` and `prisma migrate reset` commands are designed to be used **in development only**, and should not affect production data.
+
+When the database is reset, if Prisma Migrate detects a seed script in `prisma.config.ts`, it will trigger seeding.
+
+You might see the following error if you attempt to run Prisma Migrate commands in an environment that uses PgBouncer for connection pooling:
+
+```
+Error: undefined: Database error
+Error querying the database: db error: ERROR: prepared statement "s0" already exists
+```
+
+See [Prisma Migrate and PgBouncer workaround](https://www.prisma.io/docs/orm/prisma-client/setup-and-configuration/databases-connections/pgbouncer) for further information and a workaround. Follow [GitHub issue #6485](https://github.com/prisma/prisma/issues/6485) for updates.
+
+Prisma ORM detects when you run CLI commands in non-interactive environments, such as Docker, from Node scripts or in bash shells. When this happens a warning displays, indicating that the environment is non-interactive and the `migrate dev` command is not supported.
+
+To ensure the Docker environment picks up the command, run the image in `interactive` mode so that it reacts to the `migrate dev` command.
+
+```
+docker run --interactive --tty <image name>
 # or
 docker -it <image name>
 
 # Example usage
 docker run -it node
 ```
-
-[Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/prisma-migrate/understanding-prisma-migrate/limitations-and-known-issues.mdx)

@@ -5,25 +5,15 @@ canonical_url: "https://orm.drizzle.team/docs/relations-v2"
 docset: "drizzle"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:19:21.815Z"
-content_hash: "8ac4fa18aa7dbc1d0b364b9e58c20b3a691e286c9de964bf973ec7d6872182f4"
+last_crawled_at: "2026-04-27T19:21:42.178Z"
+content_hash: "3a0dc48ec48c71689af218d8f2df5aa99243dbedbc0217bfdf1a578e5b313ab3"
 menu_path: ["Drizzle relations"]
 section_path: []
-nav_prev: {"path": "drizzle/docs/schemas/index.md", "title": "Table schemas"}
-nav_next: {"path": "drizzle/docs/rls/index.md", "title": "Row-Level Security (RLS)"}
+content_language: "en"
 ---
-
 WARNING
 
 This page explains concepts available on drizzle versions `1.0.0-beta.1` and higher.
-
-npm
-
-yarn
-
-pnpm
-
-bun
 
 ```
 npm i drizzle-orm@beta
@@ -49,9 +39,9 @@ bun add drizzle-kit@beta -D
 
 This guide assumes familiarity with:
 
-*   **Relations Fundamentals** - get familiar with the concepts of foreign key constraints, soft relations, database normalization, etc - [read here](drizzle/docs/rqb-fundamentals/index.md)
-*   **Declare schema** - get familiar with how to define drizzle schemas - [read here](drizzle/docs/sql-schema-declaration/index.md)
-*   **Database connection** - get familiar with how to connect to database using drizzle - [read here](drizzle/docs/get-started-postgresql/index.md)
+-   **Relations Fundamentals** - get familiar with the concepts of foreign key constraints, soft relations, database normalization, etc - [read here](https://orm.drizzle.team/docs/rqb-fundamentals)
+-   **Declare schema** - get familiar with how to define drizzle schemas - [read here](https://orm.drizzle.team/docs/sql-schema-declaration)
+-   **Database connection** - get familiar with how to connect to database using drizzle - [read here](https://orm.drizzle.team/docs/get-started-postgresql)
 
 The sole purpose of Drizzle relations is to let you query your relational data in the most simple and concise way:
 
@@ -59,7 +49,7 @@ Relational queries
 
 Select with joins
 
-```
+```ts
 import { drizzle } from 'drizzle-orm/…';
 import { defineRelations } from 'drizzle-orm';
 import * as p from 'drizzle-orm/pg-core';
@@ -93,7 +83,7 @@ const result = db.query.posts.findMany({
 });
 ```
 
-```
+```ts
 [{
   id: 10,
   content: "My first post!",
@@ -108,7 +98,7 @@ const result = db.query.posts.findMany({
 
 Here is a list of all fields available for `.one()` in drizzle relations
 
-```
+```ts
 const relations = defineRelations({ users, posts }, (r) => ({
 	posts: {
 		author: r.one.users({
@@ -124,19 +114,19 @@ const relations = defineRelations({ users, posts }, (r) => ({
 }))
 ```
 
-*   `author` key is a custom key that appears in the `posts` object when using Drizzle relational queries.
-*   `r.one.users` defines that `author` will be a single object from the `users` table rather than an array of objects.
-*   `from: r.posts.ownerId` specifies the table from which we are establishing a soft relation. In this case, the relation starts from the `ownerId` column in the `posts` table.
-*   `to: r.users.id` specifies the table to which we are establishing a soft relation. In this case, the relation points to the `id` column in the `users` table.
-*   `optional: false` at the type level makes the `author` key in the posts object `required`. This should be used when you are certain that this specific entity will always exist.
-*   `alias` is used to add a specific alias to relationships between tables. If you have multiple identical relationships between two tables, you should differentiate them using `alias`
-*   `where` condition can be used for polymorphic relations. It fetches relations based on a `where` statement. For example, in the case above, only `verified authors` will be retrieved. Learn more about polymorphic relations [here](drizzle/docs/relations-schema-declaration/index.md#polymorphic-relations).
+-   `author` key is a custom key that appears in the `posts` object when using Drizzle relational queries.
+-   `r.one.users` defines that `author` will be a single object from the `users` table rather than an array of objects.
+-   `from: r.posts.ownerId` specifies the table from which we are establishing a soft relation. In this case, the relation starts from the `ownerId` column in the `posts` table.
+-   `to: r.users.id` specifies the table to which we are establishing a soft relation. In this case, the relation points to the `id` column in the `users` table.
+-   `optional: false` at the type level makes the `author` key in the posts object `required`. This should be used when you are certain that this specific entity will always exist.
+-   `alias` is used to add a specific alias to relationships between tables. If you have multiple identical relationships between two tables, you should differentiate them using `alias`
+-   `where` condition can be used for polymorphic relations. It fetches relations based on a `where` statement. For example, in the case above, only `verified authors` will be retrieved. Learn more about polymorphic relations [here](https://orm.drizzle.team/docs/relations-schema-declaration#polymorphic-relations).
 
 ### `many()`[](#many)
 
 Here is a list of all fields available for `.many()` in drizzle relations
 
-```
+```ts
 const relations = defineRelations({ users, posts }, (r) => ({
 	users: {
 		feed: r.many.posts({
@@ -152,13 +142,13 @@ const relations = defineRelations({ users, posts }, (r) => ({
 }))
 ```
 
-*   `feed` key is a custom key that appears in the `users` object when using Drizzle relational queries.
-*   `r.many.posts` defines that `feed` will be an array of objects from the `posts` table rather than just an object
-*   `from: r.users.id` specifies the table from which we are establishing a soft relation. In this case, the relation starts from the `id` column in the `users` table.
-*   `to: r.posts.ownerId` specifies the table to which we are establishing a soft relation. In this case, the relation points to the `ownerId` column in the `posts` table.
-*   `optional: false` at the type level makes the `feed` key in the posts object `required`. This should be used when you are certain that this specific entity will always exist.
-*   `alias` is used to add a specific alias to relationships between tables. If you have multiple identical relationships between two tables, you should differentiate them using `alias`
-*   `where` condition can be used for polymorphic relations. It fetches relations based on a `where` statement. For example, in the case above, only `approved posts` will be retrieved. Learn more about polymorphic relations [here](drizzle/docs/relations-schema-declaration/index.md#polymorphic-relations).
+-   `feed` key is a custom key that appears in the `users` object when using Drizzle relational queries.
+-   `r.many.posts` defines that `feed` will be an array of objects from the `posts` table rather than just an object
+-   `from: r.users.id` specifies the table from which we are establishing a soft relation. In this case, the relation starts from the `id` column in the `users` table.
+-   `to: r.posts.ownerId` specifies the table to which we are establishing a soft relation. In this case, the relation points to the `ownerId` column in the `posts` table.
+-   `optional: false` at the type level makes the `feed` key in the posts object `required`. This should be used when you are certain that this specific entity will always exist.
+-   `alias` is used to add a specific alias to relationships between tables. If you have multiple identical relationships between two tables, you should differentiate them using `alias`
+-   `where` condition can be used for polymorphic relations. It fetches relations based on a `where` statement. For example, in the case above, only `approved posts` will be retrieved. Learn more about polymorphic relations [here](https://orm.drizzle.team/docs/relations-schema-declaration#polymorphic-relations).
 
 ### One-to-one[](#one-to-one)
 
@@ -166,7 +156,7 @@ Drizzle ORM provides you an API to define `one-to-one` relations between tables 
 
 An example of a `one-to-one` relation between users and users, where a user can invite another (this example uses a self reference):
 
-```
+```typescript
 import { pgTable, serial, text, boolean } from 'drizzle-orm/pg-core';
 import { defineRelations } from 'drizzle-orm';
 
@@ -188,7 +178,7 @@ export const relations = defineRelations({ users }, (r) => ({
 
 Another example would be a user having a profile information stored in separate table. In this case, because the foreign key is stored in the “profile\_info” table, the user relation have neither fields or references. This tells Typescript that `user.profileInfo` is nullable:
 
-```
+```typescript
 import { pgTable, serial, text, integer, jsonb } from 'drizzle-orm/pg-core';
 import { defineRelations } from 'drizzle-orm';
 
@@ -222,7 +212,7 @@ Drizzle ORM provides you an API to define `one-to-many` relations between tables
 
 Example of `one-to-many` relation between users and posts they’ve written:
 
-```
+```typescript
 import { pgTable, serial, text, integer } from 'drizzle-orm/pg-core';
 import { defineRelations } from 'drizzle-orm';
 
@@ -252,7 +242,7 @@ export const relations = defineRelations({ users, posts }, (r) => ({
 
 Now lets add comments to the posts:
 
-```
+```typescript
 ...
 
 export const posts = pgTable('posts', {
@@ -294,7 +284,7 @@ Drizzle ORM provides you an API to define `many-to-many` relations between table
 
 Example of `many-to-many` relation between users and groups we are using `through` to bypass junction table selection and directly select many `groups` for each `user`.
 
-```
+```typescript
 import { defineRelations } from 'drizzle-orm';
 import { integer, pgTable, primaryKey, text } from 'drizzle-orm/pg-core';
 
@@ -338,7 +328,7 @@ export const relations = defineRelations({ users, groups, usersToGroups },
 
 **Query example:**
 
-```
+```ts
 const res = await db.query.users.findMany({
   with: { 
     groups: true 
@@ -362,7 +352,7 @@ Previously, you would need to query through a `junction` table and then map it o
 
 ❌ You don’t need to do it now!
 
-```
+```ts
 const response = await db._query.users.findMany({
 	with: {
 		usersToGroups: {
@@ -393,11 +383,7 @@ Predefined `where` statements in Drizzle’s relation definitions are a type of 
 
 We can define a relation between `groups` and `users` so that when querying group’s users, we only retrieve those whose `verified` column is set to `true`
 
-Relations
-
-Schema
-
-```
+```ts
 import { defineRelations } from "drizzle-orm";
 import * as p from "drizzle-orm/pg-core";
 import * as schema from './schema';
@@ -428,7 +414,7 @@ IMPORTANT
 
 You can only specify filters on the target (to) table. So in this example, the where clause will only include columns from the `users` table since we are establishing a relation **TO** users
 
-```
+```ts
 export const relations = defineRelations(schema,(r) => ({
     groups: {
       verifiedUsers: r.many.users({
@@ -447,7 +433,7 @@ export const relations = defineRelations(schema,(r) => ({
 
 In a case you need to separate relations config into several parts you can use `defineRelationsPart` helpers
 
-```
+```ts
 import { defineRelations, defineRelationsPart } from 'drizzle-orm';
 import * as schema from "./schema";
 
@@ -473,7 +459,7 @@ export const part = defineRelationsPart(schema, (r) => ({
 
 and then you can provide it to the db instance
 
-```
+```ts
 const db = drizzle(process.env.DB_URL, { relations: { ...relations, ...part } })
 ```
 
@@ -483,7 +469,7 @@ There are a few rules you would need to follow to make sure it `defineRelationsP
 
 **Rule 1**: If you specify reltions with parts, when passing it to drizzle db function you would need to specify it in the right order(main relations goes first)
 
-```
+```ts
 // ✅
 const db = drizzle(process.env.DB_URL, { relations: { ...relations, ...part } })
 
@@ -491,11 +477,9 @@ const db = drizzle(process.env.DB_URL, { relations: { ...relations, ...part } })
 const db = drizzle(process.env.DB_URL, { relations: { ...part, ...relations } })
 ```
 
-Why it's important?
-
 Even if there will be no type or runtime error, this is how ”…” works with objects. As long as main relation recursively infer all tables names, so it can be available in autocomplete. Here is an example:
 
-```
+```ts
 export const relations = defineRelations(schema, (r) => ({
   users: {
     invitee: r.one.users({
@@ -518,7 +502,7 @@ export const part = defineRelationsPart(schema, (r) => ({
 
 Here `relations` and `part` can be represented and this object:
 
-```
+```json
 // relations
 {
   "users": {"invitee": {...}, "posts": {...}},
@@ -534,7 +518,7 @@ Here `relations` and `part` can be represented and this object:
 
 Having `{ ...relations, ...part }` will result in
 
-```
+```json
 {
   "users": {"invitee": {...}, "posts": {...}},
   "posts": {"author": {...}}
@@ -543,7 +527,7 @@ Having `{ ...relations, ...part }` will result in
 
 and having `{ ...relations, ...part }` will result in
 
-```
+```json
 {
   "users": {"invitee": {...}, "posts": {...}},
   // As you can see in the final object, posts relations information will be lost
@@ -553,7 +537,7 @@ and having `{ ...relations, ...part }` will result in
 
 **Rule 2**: You should have min relations, so drizzle can infer all of the table for autocomplete. If you want to have only parts, then one of your parts should be empty, like this:
 
-```
+```ts
 export const mainPart = defineRelationsPart(schema);
 ```
 
@@ -570,13 +554,11 @@ In a one-to-one relationship, like the “user invites user” example or the �
 
 For optimal performance in one-to-one relationships, you should create an index on the foreign key column in the table that is being referenced (the “target” table in the relation).
 
-Why it is important
-
 When you query data with related one-to-one information, Drizzle performs a JOIN operation. An index on the foreign key column allows the database to quickly locate the related row in the target table, significantly speeding up the join process.
 
 **Example:**
 
-```
+```typescript
 import * as p from 'drizzle-orm/pg-core';
 import { defineRelations } from 'drizzle-orm';
 
@@ -603,7 +585,7 @@ export const relations = defineRelations({ users, profileInfo }, (r) => ({
 
 To optimize queries fetching user data along with their profile information, you should create an index on the `userId` column in the `profile_info` table.
 
-```
+```typescript
 import * as p from 'drizzle-orm/pg-core';
 import { defineRelations } from 'drizzle-orm';
 
@@ -630,7 +612,7 @@ export const relations = defineRelations({ users, profileInfo }, (r) => ({
 }));
 ```
 
-```
+```sql
 CREATE INDEX idx_profile_info_user_id ON profile_info (user_id);
 ```
 
@@ -640,13 +622,11 @@ Similar to one-to-one relationships, one-to-many relations benefit significantly
 
 For one-to-many relationships, create an index on the foreign key column in the table that represents the “many” side of the relationship (the table with the foreign key referencing the “one” side).
 
-Why it is important
-
 When you fetch a user with their posts or posts with their authors, joins are performed. Indexing the foreign key (`authorId` in `posts` table) allows the database to efficiently retrieve all posts associated with a given user or quickly find the author of a post.
 
 **Example:**
 
-```
+```typescript
 import * as p from "drizzle-orm/pg-core";
 import { defineRelations } from 'drizzle-orm';
 
@@ -676,7 +656,7 @@ export const relations = defineRelations({ users, posts }, (r) => ({
 
 To optimize queries involving users and their posts, create an index on the `authorId` column in the `posts` table.
 
-```
+```typescript
 import * as p from "drizzle-orm/pg-core";
 import { defineRelations } from 'drizzle-orm';
 
@@ -706,7 +686,7 @@ export const relations = defineRelations({ users, posts }, (r) => ({
 }));
 ```
 
-```
+```sql
 CREATE INDEX idx_posts_author_id ON posts (author_id);
 ```
 
@@ -719,18 +699,16 @@ For many-to-many relationships, it is generally recommended to create the follow
 1.  **Index on each foreign key column individually:** This optimizes queries that filter or join based on a single side of the relationship (e.g., finding all groups for a user OR all users in a group).
 2.  **Composite index on both foreign key columns together:** This is crucial for efficiently resolving the many-to-many relationship itself. It speeds up queries that need to find the connections between both entities.
 
-Why it is important
-
 When querying many-to-many relations, especially when using `through` in Drizzle ORM, the database needs to efficiently navigate the junction table.
 
-*   Indexes on individual foreign key columns (`userId`, `groupId` in `usersToGroups`) help when you are querying from one side to find the other (e.g., “find groups for a user”).
-*   The composite index on `(userId, groupId)` in `usersToGroups` is particularly important for quickly finding all relationships defined in the junction table. This is used when Drizzle ORM resolves the `many-to-many` relation to fetch related entities.
+-   Indexes on individual foreign key columns (`userId`, `groupId` in `usersToGroups`) help when you are querying from one side to find the other (e.g., “find groups for a user”).
+-   The composite index on `(userId, groupId)` in `usersToGroups` is particularly important for quickly finding all relationships defined in the junction table. This is used when Drizzle ORM resolves the `many-to-many` relation to fetch related entities.
 
 **Example:**
 
 In the “users and groups” example, the `usersToGroups` junction table connects `users` and `groups`.
 
-```
+```typescript
 import { defineRelations } from 'drizzle-orm';
 import * as p from 'drizzle-orm/pg-core';
 
@@ -774,7 +752,7 @@ export const relations = defineRelations({ users, groups, usersToGroups },
 
 To optimize queries for users and groups, create indexes on `usersToGroups` table as follows:
 
-```
+```typescript
 import { defineRelations } from 'drizzle-orm';
 import * as p from 'drizzle-orm/pg-core';
 
@@ -821,7 +799,7 @@ export const relations = defineRelations({ users, groups, usersToGroups },
 );
 ```
 
-```
+```sql
 CREATE INDEX idx_users_to_groups_user_id ON users_to_groups (user_id);
 CREATE INDEX idx_users_to_groups_group_id ON users_to_groups (group_id);
 CREATE INDEX idx_users_to_groups_composite ON users_to_groups (userId, groupId);
@@ -841,11 +819,7 @@ What this means is `relations` and foreign keys can be used together, but they a
 
 The following two examples will work exactly the same in terms of querying the data using Drizzle relational queries.
 
-schema1.ts
-
-schema2.ts
-
-```
+```ts
 export const users = p.pgTable("users", {
   id: p.integer().primaryKey(),
   name: p.text(),
@@ -871,7 +845,7 @@ export const relations = defineRelations({ users, profileInfo }, (r) => ({
 
 Drizzle also provides the `alias` option as a way to disambiguate relations when you define multiple of them between the same two tables. For example, if you define a `posts` table that has the `author` and `reviewer` relations.
 
-```
+```ts
 import { pgTable, integer, text } from 'drizzle-orm/pg-core';
 import { relations } from 'drizzle-orm';
  

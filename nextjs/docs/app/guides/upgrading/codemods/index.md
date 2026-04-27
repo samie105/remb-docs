@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/app/guides/upgrading/codemods"
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:16:53.241Z"
-content_hash: "5654752ee515be2e6e8933845e92cda61fafefd24c2e5a328373deafe22dfa48"
+last_crawled_at: "2026-04-27T18:16:18.623Z"
+content_hash: "0ad27b6d589400d42f2aae46c8af5ea079748ea93be53d1ff0103c2d5839c2bb"
 menu_path: ["Codemods"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/guides/upgrading/index.md", "title": "Upgrade Guides"}
-nav_next: {"path": "nextjs/docs/app/guides/upgrading/version-14/index.md", "title": "How to upgrade to version 14"}
+version: "latest"
+content_language: "en"
 ---
+[Guides](/docs/app/guides)[Upgrading](/docs/app/guides/upgrading)Codemods
 
 # Codemods
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 Codemods are transformations that run on your codebase programmatically. This allows a large number of changes to be programmatically applied without having to manually go through every file.
 
@@ -33,10 +34,10 @@ npx @next/codemod <transform> <path>
 
 Replacing `<transform>` and `<path>` with appropriate values.
 
-*   `transform` - name of transform
-*   `path` - files or directory to transform
-*   `--dry` Do a dry-run, no code will be edited
-*   `--print` Prints the changed output for comparison
+-   `transform` - name of transform
+-   `path` - files or directory to transform
+-   `--dry` Do a dry-run, no code will be edited
+-   `--print` Prints the changed output for comparison
 
 ## Upgrade[](#upgrade)
 
@@ -50,8 +51,8 @@ npx @next/codemod upgrade [revision]
 
 ### Options[](#options)
 
-*   `revision` (optional): Specify the upgrade type (`patch`, `minor`, `major`), an NPM dist tag (e.g. `latest`, `canary`, `rc`), or an exact version (e.g. `15.0.0`). Defaults to `minor` for stable versions.
-*   `--verbose`: Show more detailed output during the upgrade process.
+-   `revision` (optional): Specify the upgrade type (`patch`, `minor`, `major`), an NPM dist tag (e.g. `latest`, `canary`, `rc`), or an exact version (e.g. `15.0.0`). Defaults to `minor` for stable versions.
+-   `--verbose`: Show more detailed output during the upgrade process.
 
 For example:
 
@@ -76,8 +77,8 @@ npx @next/codemod upgrade canary
 
 > **Good to know**:
 > 
-> *   If the target version is the same as or lower than your current version, the command exits without making changes.
-> *   During the upgrade, you may be prompted to choose which Next.js codemods to apply and run React 19 codemods if upgrading React.
+> -   If the target version is the same as or lower than your current version, the command exits without making changes.
+> -   During the upgrade, you may be prompted to choose which Next.js codemods to apply and run React 19 codemods if upgrading React.
 
 ## Codemods[](#codemods)
 
@@ -141,12 +142,12 @@ npx @next/codemod@latest middleware-to-proxy .
 
 This codemod migrates projects from using the deprecated `middleware` convention to using the `proxy` convention. It:
 
-*   Renames `middleware.<extension>` to `proxy.<extension>` (e.g. `middleware.ts` to `proxy.ts`)
-*   Renames named export `middleware` to `proxy`
-*   Renames Next.js config property `experimental.middlewarePrefetch` to `experimental.proxyPrefetch`
-*   Renames Next.js config property `experimental.middlewareClientMaxBodySize` to `experimental.proxyClientMaxBodySize`
-*   Renames Next.js config property `experimental.externalMiddlewareRewritesResolve` to `experimental.externalProxyRewritesResolve`
-*   Renames Next.js config property `skipMiddlewareUrlNormalize` to `skipProxyUrlNormalize`
+-   Renames `middleware.<extension>` to `proxy.<extension>` (e.g. `middleware.ts` to `proxy.ts`)
+-   Renames named export `middleware` to `proxy`
+-   Renames Next.js config property `experimental.middlewarePrefetch` to `experimental.proxyPrefetch`
+-   Renames Next.js config property `experimental.middlewareClientMaxBodySize` to `experimental.proxyClientMaxBodySize`
+-   Renames Next.js config property `experimental.externalMiddlewareRewritesResolve` to `experimental.externalProxyRewritesResolve`
+-   Renames Next.js config property `skipMiddlewareUrlNormalize` to `skipProxyUrlNormalize`
 
 For example:
 
@@ -184,10 +185,10 @@ npx @next/codemod@canary next-lint-to-eslint-cli .
 
 This codemod migrates projects from using `next lint` to using the ESLint CLI with your local ESLint config. It:
 
-*   Creates an `eslint.config.mjs` file with Next.js recommended configurations
-*   Updates `package.json` scripts to use `eslint .` instead of `next lint`
-*   Adds necessary ESLint dependencies to `package.json`
-*   Preserves existing ESLint configurations when found
+-   Creates an `eslint.config.mjs` file with Next.js recommended configurations
+-   Updates `package.json` scripts to use `eslint .` instead of `next lint`
+-   Adds necessary ESLint dependencies to `package.json`
+-   Preserves existing ESLint configurations when found
 
 For example:
 
@@ -259,7 +260,7 @@ Terminal
 npx @next/codemod@latest app-dir-runtime-config-experimental-edge .
 ```
 
-This codemod transforms [Route Segment Config `runtime`](nextjs/docs/app/api-reference/file-conventions/route-segment-config/runtime/index.md) value `experimental-edge` to `edge`.
+This codemod transforms [Route Segment Config `runtime`](https://nextjs.org/docs/app/api-reference/file-conventions/route-segment-config/runtime) value `experimental-edge` to `edge`.
 
 For example:
 
@@ -575,11 +576,11 @@ npx @next/codemod@latest next-image-experimental .
 
 Dangerously migrates from `next/legacy/image` to the new `next/image` by adding inline styles and removing unused props.
 
-*   Removes `layout` prop and adds `style`.
-*   Removes `objectFit` prop and adds `style`.
-*   Removes `objectPosition` prop and adds `style`.
-*   Removes `lazyBoundary` prop.
-*   Removes `lazyRoot` prop.
+-   Removes `layout` prop and adds `style`.
+-   Removes `objectFit` prop and adds `style`.
+-   Removes `objectPosition` prop and adds `style`.
+-   Removes `lazyBoundary` prop.
+-   Removes `lazyRoot` prop.
 
 #### Remove `<a>` Tags From Link Components[](#remove-a-tags-from-link-components)
 
@@ -791,20 +792,4 @@ export default withRouter(
 
 This is one case. All the cases that are transformed (and tested) can be found in the [`__testfixtures__` directory](https://github.com/vercel/next.js/tree/canary/packages/next-codemod/transforms/__testfixtures__/url-to-withrouter).
 
-[Previous
-
-Upgrading
-
-](/docs/app/guides/upgrading)
-
-[Next
-
-Version 14
-
-](/docs/app/guides/upgrading/version-14)
-
 Was this helpful?
-
-supported.
-
-Send

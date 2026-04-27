@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/app/api-reference/file-conventions/defau
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:09:42.627Z"
-content_hash: "e5e177591b9f5324e9b25ee805a542317f1dd1aed9548f56c60fe8549ed26853"
+last_crawled_at: "2026-04-27T18:08:27.318Z"
+content_hash: "2da6323779427a397879c6651f59d322261df5cd4872621da85e0d45dd588b80"
 menu_path: ["default.js"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/api-reference/file-conventions/index.md", "title": "File-system conventions"}
-nav_next: {"path": "nextjs/docs/app/api-reference/file-conventions/dynamic-routes/index.md", "title": "Dynamic Route Segments"}
+version: "latest"
+content_language: "en"
 ---
+[API Reference](/docs/app/api-reference)[File-system conventions](/docs/app/api-reference/file-conventions)default.js
 
 # default.js
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 The `default.js` file is used to render a fallback within [Parallel Routes](/docs/app/api-reference/file-conventions/parallel-routes) when Next.js cannot recover a [slot's](/docs/app/api-reference/file-conventions/parallel-routes#slots) active state after a full-page load.
 
@@ -23,7 +24,7 @@ During [soft navigation](/docs/app/getting-started/linking-and-navigating#client
 
 Consider the following folder structure. The `@team` slot has a `settings` page, but `@analytics` does not.
 
-![Parallel Routes unmatched routes](/_next/image?url=https%3A%2F%2Fh8DxKfmAPhn8O0p3.public.blob.vercel-storage.com%2Fdocs%2Flight%2Fparallel-routes-unmatched-routes.png&w=3840&q=75)![Parallel Routes unmatched routes](/_next/image?url=https%3A%2F%2Fh8DxKfmAPhn8O0p3.public.blob.vercel-storage.com%2Fdocs%2Fdark%2Fparallel-routes-unmatched-routes.png&w=3840&q=75)
+![Parallel Routes unmatched routes](https://h8DxKfmAPhn8O0p3.public.blob.vercel-storage.com/docs/light/parallel-routes-unmatched-routes.png)
 
 When navigating to `/settings`, the `@team` slot will render the `settings` page while maintaining the currently active page for the `@analytics` slot.
 
@@ -49,8 +50,6 @@ A promise that resolves to an object containing the [dynamic route parameters](/
 
 app/\[artist\]/@sidebar/default.js
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -63,26 +62,13 @@ export default async function Default({
 }
 ```
 
-Example
+| Example | URL | `params` |
+| --- | --- | --- |
+| `app/[artist]/@sidebar/default.js` | `/zack` | `Promise<{ artist: 'zack' }>` |
+| `app/[artist]/[album]/@sidebar/default.js` | `/zack/next` | `Promise<{ artist: 'zack', album: 'next' }>` |
 
-URL
-
-`params`
-
-`app/[artist]/@sidebar/default.js`
-
-`/zack`
-
-`Promise<{ artist: 'zack' }>`
-
-`app/[artist]/[album]/@sidebar/default.js`
-
-`/zack/next`
-
-`Promise<{ artist: 'zack', album: 'next' }>`
-
-*   Since the `params` prop is a promise. You must use `async/await` or React's [`use`](https://react.dev/reference/react/use) function to access the values.
-    *   In version 14 and earlier, `params` was a synchronous prop. To help with backwards compatibility, you can still access it synchronously in Next.js 15, but this behavior will be deprecated in the future.
+-   Since the `params` prop is a promise. You must use `async/await` or React's [`use`](https://react.dev/reference/react/use) function to access the values.
+    -   In version 14 and earlier, `params` was a synchronous prop. To help with backwards compatibility, you can still access it synchronously in Next.js 15, but this behavior will be deprecated in the future.
 
 ## Learn more about Parallel Routes
 
@@ -94,20 +80,4 @@ Simultaneously render one or more pages in the same view that can be navigated i
 
 ](/docs/app/api-reference/file-conventions/parallel-routes)
 
-[Previous
-
-File-system conventions
-
-](/docs/app/api-reference/file-conventions)
-
-[Next
-
-Dynamic Segments
-
-](/docs/app/api-reference/file-conventions/dynamic-routes)
-
 Was this helpful?
-
-supported.
-
-Send

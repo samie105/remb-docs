@@ -5,21 +5,21 @@ canonical_url: "https://www.prisma.io/docs/orm/prisma-client/client-extensions/c
 docset: "prisma"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:44:25.471Z"
-content_hash: "85d310bc90cfbf0f140a58d1866313c0b323639ac68f2a380c1fc5bc2cd6ec6d"
+last_crawled_at: "2026-04-27T19:37:59.376Z"
+content_hash: "06ede3ef6417d774d4f742877150fe8b66a1b5b6826719820b4de5e4a9f8bbee"
 menu_path: ["Add methods to Prisma Client"]
 section_path: []
-nav_prev: {"path": "prisma/docs/orm/prisma-client/client-extensions/index.md", "title": "What are Client Extensions"}
-nav_next: {"path": "prisma/docs/orm/prisma-client/client-extensions/extension-examples/index.md", "title": "Shared packages & examples"}
+content_language: "en"
 ---
-
 Client Extensions
+
+## Add methods to Prisma Client
 
 Extend the functionality of Prisma Client, client component
 
-You can use the `client` [Prisma Client extensions](prisma/docs/orm/prisma-client/client-extensions/index.md) component to add top-level methods to Prisma Client.
+You can use the `client` [Prisma Client extensions](https://www.prisma.io/docs/orm/prisma-client/client-extensions) component to add top-level methods to Prisma Client.
 
-Use the `$extends` [client-level method](prisma/docs/orm/reference/prisma-client-reference/index.md#client-methods) to create an _extended client_. An extended client is a variant of the standard Prisma Client that is wrapped by one or more extensions. Use the `client` extension component to add top-level methods to Prisma Client.
+Use the `$extends` [client-level method](https://www.prisma.io/docs/orm/reference/prisma-client-reference#client-methods) to create an _extended client_. An extended client is a variant of the standard Prisma Client that is wrapped by one or more extensions. Use the `client` extension component to add top-level methods to Prisma Client.
 
 To add a top-level method to Prisma Client, use the following structure:
 
@@ -33,8 +33,8 @@ const prisma = new PrismaClient().$extends({
 
 The following example uses the `client` component to add two methods to Prisma Client:
 
-*   `$log` outputs a message.
-*   `$totalQueries` returns the number of queries executed by the current client instance.
+-   `$log` outputs a message.
+-   `$totalQueries` returns the number of queries executed by the current client instance.
 
 ```
 let total = 0;
@@ -61,5 +61,3 @@ async function main() {
   console.log(totalQueries);
 }
 ```
-
-[Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/prisma-client/client-extensions/client.mdx)

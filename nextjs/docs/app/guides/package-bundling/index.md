@@ -5,17 +5,19 @@ canonical_url: "https://nextjs.org/docs/app/guides/package-bundling"
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:15:51.030Z"
-content_hash: "86f90c5919d6209d8dabeefd0c078031210880d68cbac3ab68455b3ec1edaa8a"
+last_crawled_at: "2026-04-27T18:14:59.379Z"
+content_hash: "36247a4b1f7c6f1d6411ed2e86318c03263f9ef998003b9e16667502a4907937"
 menu_path: ["Optimizing package bundling"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/guides/open-telemetry/index.md", "title": "How to set up instrumentation with OpenTelemetry"}
-nav_next: {"path": "nextjs/docs/app/guides/ppr-platform-guide/index.md", "title": "Implementing Partial Prerendering on your platform"}
+version: "latest"
+tab_variants: ["pnpm","npm","yarn","bun","pnpm","npm","yarn","bun","pnpm","npm","yarn","bun"]
+content_language: "en"
 ---
+[App Router](/docs/app)[Guides](/docs/app/guides)Package Bundling
 
 # Optimizing package bundling
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 Bundling is the process of combining your application code and its dependencies into optimized output files for the client and server. Smaller bundles load faster, reduce JavaScript execution time, improve [Core Web Vitals](https://web.dev/articles/vitals), and lower server cold start times.
 
@@ -23,8 +25,8 @@ Next.js automatically optimizes bundles by code splitting, tree-shaking, and oth
 
 There are two tools for analyzing your application's bundles:
 
-*   [Next.js Bundle Analyzer for Turbopack (experimental)](#nextjs-bundle-analyzer-experimental)
-*   [`@next/bundle-analyzer` plugin for Webpack](#nextbundle-analyzer-for-webpack)
+-   [Next.js Bundle Analyzer for Turbopack (experimental)](#nextjs-bundle-analyzer-experimental)
+-   [`@next/bundle-analyzer` plugin for Webpack](#nextbundle-analyzer-for-webpack)
 
 This guide will walk you through how to use each tool and how to [optimize large bundles](#optimizing-large-bundles).
 
@@ -38,7 +40,21 @@ The Next.js Bundle Analyzer is integrated with Turbopack's module graph. You can
 
 To get started, run the following command and open up the interactive view in your browser.
 
-pnpmnpmyarnbun
+#### pnpm
+
+pnpm
+
+#### npm
+
+npm
+
+#### yarn
+
+yarn
+
+#### bun
+
+bun
 
 Terminal
 
@@ -58,7 +74,7 @@ The treemap shows each module as a rectangle. Where the size of the module is re
 
 Click a module to see its size, inspect its full import chain and see exactly where it’s used in your application:
 
-![Next.js Bundle Analyzer import chain view](/_next/image?url=https%3A%2F%2Fh8DxKfmAPhn8O0p3.public.blob.vercel-storage.com%2Fdocs%2Flight%2Fbundle-analyzer.png&w=3840&q=75)![Next.js Bundle Analyzer import chain view](/_next/image?url=https%3A%2F%2Fh8DxKfmAPhn8O0p3.public.blob.vercel-storage.com%2Fdocs%2Fdark%2Fbundle-analyzer.png&w=3840&q=75)
+![Next.js Bundle Analyzer import chain view](https://h8DxKfmAPhn8O0p3.public.blob.vercel-storage.com/docs/light/bundle-analyzer.png)
 
 Next.js Bundle Analyzer import chain view
 
@@ -66,7 +82,21 @@ Next.js Bundle Analyzer import chain view
 
 If you want to share the analysis with teammates or compare bundle sizes before/after optimizations, you can skip the interactive view and save the analysis as a static file with the `--output` flag:
 
-pnpmnpmyarnbun
+#### pnpm
+
+pnpm
+
+#### npm
+
+npm
+
+#### yarn
+
+yarn
+
+#### bun
+
+bun
 
 Terminal
 
@@ -92,7 +122,21 @@ The [`@next/bundle-analyzer`](https://www.npmjs.com/package/@next/bundle-analyze
 
 Install the plugin by running the following command:
 
-pnpmnpmyarnbun
+#### pnpm
+
+pnpm
+
+#### npm
+
+npm
+
+#### yarn
+
+yarn
+
+#### bun
+
+bun
 
 Terminal
 
@@ -258,20 +302,4 @@ Recommendations to ensure the best performance and user experience before taking
 
 ](/docs/app/guides/production-checklist)
 
-[Previous
-
-OpenTelemetry
-
-](/docs/app/guides/open-telemetry)
-
-[Next
-
-PPR Platform Guide
-
-](/docs/app/guides/ppr-platform-guide)
-
 Was this helpful?
-
-supported.
-
-Send

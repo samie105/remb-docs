@@ -5,14 +5,12 @@ canonical_url: "https://www.postgresql.org/docs/current/ecpg-connect.html"
 docset: "postgres"
 kind: "database"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:41:49.944Z"
-content_hash: "1814bbe8ba559d5a50eaafc1493f540e6995f3314d8402e7bf75663462c9f37c"
+last_crawled_at: "2026-04-27T20:45:33.380Z"
+content_hash: "db84fc964aaf0d115ee1a431611deb20cee8e2b96e821d06127ff3dd95dd3613"
 menu_path: ["PostgreSQL: Documentation: 18: 34.2. Managing Database Connections"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/ecpg-concept.html/index.md", "title": "PostgreSQL: Documentation: 18: 34.1.\u00a0The Concept"}
-nav_next: {"path": "postgres/docs/current/ecpg-cpp.html/index.md", "title": "PostgreSQL: Documentation: 18: 34.13.\u00a0C++ Applications"}
+content_language: "en"
 ---
-
 This section describes how to open, close, and switch database connections.
 
 ### 34.2.1. Connecting to the Database Server [#](#ECPG-CONNECTING)
@@ -23,12 +21,12 @@ EXEC SQL CONNECT TO _`target`_ \[AS _`connection-name`_\] \[USER _`user-name`_\]
 
 The _`target`_ can be specified in the following ways:
 
-*   ``_`dbname`_[@_`hostname`_][:_`port`_]``
-*   ``tcp:postgresql://_`hostname`_[:_`port`_][/_`dbname`_][?_`options`_]``
-*   ``unix:postgresql://localhost[:_`port`_][/_`dbname`_][?_`options`_]``
-*   an SQL string literal containing one of the above forms
-*   a reference to a character variable containing one of the above forms (see examples)
-*   `DEFAULT`
+-   ``_`dbname`_[@_`hostname`_][:_`port`_]``
+-   ``tcp:postgresql://_`hostname`_[:_`port`_][/_`dbname`_][?_`options`_]``
+-   ``unix:postgresql://localhost[:_`port`_][/_`dbname`_][?_`options`_]``
+-   an SQL string literal containing one of the above forms
+-   a reference to a character variable containing one of the above forms (see examples)
+-   `DEFAULT`
 
 The connection target `DEFAULT` initiates a connection to the default database under the default user name. No separate user name or connection name can be specified in that case.
 
@@ -36,10 +34,10 @@ If you specify the connection target directly (that is, not as a string literal 
 
 There are also different ways to specify the user name:
 
-*   ``_`username`_``
-*   ``_`username`_/_`password`_``
-*   ``_`username`_ IDENTIFIED BY _`password`_``
-*   ``_`username`_ USING _`password`_``
+-   ``_`username`_``
+-   ``_`username`_/_`password`_``
+-   ``_`username`_ IDENTIFIED BY _`password`_``
+-   ``_`username`_ USING _`password`_``
 
 As above, the parameters _`username`_ and _`password`_ can be an SQL identifier, an SQL string literal, or a reference to a character variable.
 
@@ -170,9 +168,9 @@ EXEC SQL DISCONNECT \[_`connection`_\];
 
 The _`connection`_ can be specified in the following ways:
 
-*   ``_`connection-name`_``
-*   `CURRENT`
-*   `ALL`
+-   ``_`connection-name`_``
+-   `CURRENT`
+-   `ALL`
 
 If no connection name is specified, the current connection is closed.
 

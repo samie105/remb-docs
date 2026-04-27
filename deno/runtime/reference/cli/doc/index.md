@@ -5,23 +5,24 @@ canonical_url: "https://docs.deno.com/runtime/reference/cli/doc/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:52:36.923Z"
-content_hash: "da5fea3b454ad50f9049cb36628f51b354209062e2791c9087c42cfac8565d4f"
+last_crawled_at: "2026-04-27T17:28:36.896Z"
+content_hash: "903d7f75964f365c73ddcd950d943cf1fbc2a5301ba17caa9c6b4885bb3cb6cd"
 menu_path: ["deno doc"]
 section_path: []
+content_language: "en"
 ---
-On this page
+**On this page**
 
-*   [Examples](#examples)
-*   [Linting](#linting)
-*   [Supported JSDoc features and tags](#supported-jsdoc-features-and-tags)
-    *   [Supported Tags](#supported-tags)
-    *   [Inline Linking](#inline-linking)
-*   [HTML output](#html-output)
-*   [JSON output](#json-output)
-*   [Dependency management options](#dependency-management-options)
-*   [Options](#options)
-*   [Documentation options](#documentation-options)
+-   [Examples](#examples)
+-   [Linting](#linting)
+-   [Supported JSDoc features and tags](#supported-jsdoc-features-and-tags)
+    -   [Supported Tags](#supported-tags)
+    -   [Inline Linking](#inline-linking)
+-   [HTML output](#html-output)
+-   [JSON output](#json-output)
+-   [Dependency management options](#dependency-management-options)
+-   [Options](#options)
+-   [Documentation options](#documentation-options)
 
 ## Examples
 
@@ -56,11 +57,11 @@ function add(x: number, y: number): number
 You can use `--lint` flag to check for problems in your documentation while it's being generated. `deno doc` will point out three kinds of problems:
 
 1.  Error for an exported type from the root module referencing a non-exported type.
-    *   Ensures API consumers have access to all the types the API uses. This can be suppressed by exporting the type from a root module (one of the files specified to `deno doc` on the command line) or by marking the type with an `@internal` jsdoc tag.
+    -   Ensures API consumers have access to all the types the API uses. This can be suppressed by exporting the type from a root module (one of the files specified to `deno doc` on the command line) or by marking the type with an `@internal` jsdoc tag.
 2.  Error for missing return type or property type on a **public** type.
-    *   Ensures `deno doc` displays the return/property type and helps improve type checking performance.
+    -   Ensures `deno doc` displays the return/property type and helps improve type checking performance.
 3.  Error for missing JS doc comment on a **public** type.
-    *   Ensures the code is documented. Can be suppressed by adding a jsdoc comment, or via an `@ignore` jsdoc tag to exclude it from the documentation. Alternatively, add an `@internal` tag to keep it in the docs, but signify it's internal.
+    -   Ensures the code is documented. Can be suppressed by adding a jsdoc comment, or via an `@ignore` jsdoc tag to exclude it from the documentation. Alternatively, add an `@internal` tag to keep it in the docs, but signify it's internal.
 
 For example:
 
@@ -99,33 +100,33 @@ For any free-form text places, ie the main description of a JSDoc comment, the d
 
 The following tags are supported, being a selection of tags used and specified by JSDoc, TSDoc and TypeDoc:
 
-*   [`constructor`/`class`](https://jsdoc.app/tags-class): mark a function to be a constructor.
-*   [`ignore`](https://jsdoc.app/tags-ignore): ignore a symbol to be included in the output.
-*   internal: mark a symbol to be used only for internal. In the HTML generator, the symbol will not get a listed entry, however it will still be generated and can be reached if a non-internal symbol links to it.
-*   [`public`](https://jsdoc.app/tags-public): treat a symbol as public API. Equivalent of TypeScript `public` keyword.
-*   [`private`](https://jsdoc.app/tags-private): treat a symbol as private API. Equivalent of TypeScript `private` keyword.
-*   [`protected`](https://jsdoc.app/tags-protected): treat a property or method as protected API. Equivalent of TypeScript `protected` keyword.
-*   [`readonly`](https://jsdoc.app/tags-readonly): mark a symbol to be readonly, meaning that it cannot be overwritten.
-*   [`experimental`](https://tsdoc.org/pages/tags/experimental): mark a symbol as experimental, meaning that the API might change or be removed, or behaviour is not well-defined.
-*   [`deprecated`](https://jsdoc.app/tags-deprecated): mark a symbol as deprecated, meaning that it is not supported anymore and might be removed in a future version.
-*   [`module`](https://jsdoc.app/tags-module): this tag can be defined on a top-level JSDoc comment, which will treat that comment to be for the file instead of the subsequent symbol. A value can be specified, which will use the value as an identifier for the module (ie for default exports).
-*   `category`/`group`: mark a symbol to be of a specific category/group. This is useful for grouping together various symbols together.
-*   [`see`](https://jsdoc.app/tags-see): define an external reference related to the symbol.
-*   [`example`](https://jsdoc.app/tags-example): define an example for the symbol. Unlike JSDoc, code examples need to be wrapped in triple backtick (markdown-style codeblocks), which aligns more with TSDoc than JSDoc.
-*   `tags`: define additional custom labels for a symbol, via a comma separated list.
-*   [`since`](https://jsdoc.app/tags-since): define since when the symbol has been available.
-*   [`callback`](https://jsdoc.app/tags-callback): define a callback.
-*   [`template`/`typeparam`/`typeParam`](https://tsdoc.org/pages/tags/typeparam): define a generic parameter.
-*   [`prop`/`property`](https://jsdoc.app/tags-property): define a property on a symbol.
-*   [`typedef`](https://jsdoc.app/tags-typedef): define a type.
-*   [`param`/`arg`/`argument`](https://jsdoc.app/tags-param): define a parameter on a function.
-*   [`return`/`returns`](https://jsdoc.app/tags-returns): define the return type and/or comment of a function.
-*   [`throws`/`exception`](https://jsdoc.app/tags-throws): define what a function throws when called.
-*   [`enum`](https://jsdoc.app/tags-enum): define an object to be an enum.
-*   [`extends`/`augments`](https://jsdoc.app/tags-augments): define a type that a function extends on.
-*   [`this`](https://jsdoc.app/tags-this): define what the `this` keyword refers to in a function.
-*   [`type`](https://jsdoc.app/tags-type): define the type of a symbol.
-*   [`default`](https://jsdoc.app/tags-default): define the default value for a variable, property or field.
+-   [`constructor`/`class`](https://jsdoc.app/tags-class): mark a function to be a constructor.
+-   [`ignore`](https://jsdoc.app/tags-ignore): ignore a symbol to be included in the output.
+-   internal: mark a symbol to be used only for internal. In the HTML generator, the symbol will not get a listed entry, however it will still be generated and can be reached if a non-internal symbol links to it.
+-   [`public`](https://jsdoc.app/tags-public): treat a symbol as public API. Equivalent of TypeScript `public` keyword.
+-   [`private`](https://jsdoc.app/tags-private): treat a symbol as private API. Equivalent of TypeScript `private` keyword.
+-   [`protected`](https://jsdoc.app/tags-protected): treat a property or method as protected API. Equivalent of TypeScript `protected` keyword.
+-   [`readonly`](https://jsdoc.app/tags-readonly): mark a symbol to be readonly, meaning that it cannot be overwritten.
+-   [`experimental`](https://tsdoc.org/pages/tags/experimental): mark a symbol as experimental, meaning that the API might change or be removed, or behaviour is not well-defined.
+-   [`deprecated`](https://jsdoc.app/tags-deprecated): mark a symbol as deprecated, meaning that it is not supported anymore and might be removed in a future version.
+-   [`module`](https://jsdoc.app/tags-module): this tag can be defined on a top-level JSDoc comment, which will treat that comment to be for the file instead of the subsequent symbol. A value can be specified, which will use the value as an identifier for the module (ie for default exports).
+-   `category`/`group`: mark a symbol to be of a specific category/group. This is useful for grouping together various symbols together.
+-   [`see`](https://jsdoc.app/tags-see): define an external reference related to the symbol.
+-   [`example`](https://jsdoc.app/tags-example): define an example for the symbol. Unlike JSDoc, code examples need to be wrapped in triple backtick (markdown-style codeblocks), which aligns more with TSDoc than JSDoc.
+-   `tags`: define additional custom labels for a symbol, via a comma separated list.
+-   [`since`](https://jsdoc.app/tags-since): define since when the symbol has been available.
+-   [`callback`](https://jsdoc.app/tags-callback): define a callback.
+-   [`template`/`typeparam`/`typeParam`](https://tsdoc.org/pages/tags/typeparam): define a generic parameter.
+-   [`prop`/`property`](https://jsdoc.app/tags-property): define a property on a symbol.
+-   [`typedef`](https://jsdoc.app/tags-typedef): define a type.
+-   [`param`/`arg`/`argument`](https://jsdoc.app/tags-param): define a parameter on a function.
+-   [`return`/`returns`](https://jsdoc.app/tags-returns): define the return type and/or comment of a function.
+-   [`throws`/`exception`](https://jsdoc.app/tags-throws): define what a function throws when called.
+-   [`enum`](https://jsdoc.app/tags-enum): define an object to be an enum.
+-   [`extends`/`augments`](https://jsdoc.app/tags-augments): define a type that a function extends on.
+-   [`this`](https://jsdoc.app/tags-this): define what the `this` keyword refers to in a function.
+-   [`type`](https://jsdoc.app/tags-type): define the type of a symbol.
+-   [`default`](https://jsdoc.app/tags-default): define the default value for a variable, property or field.
 
 ### Inline Linking
 

@@ -5,14 +5,12 @@ canonical_url: "https://orm.drizzle.team/docs/connect-nile"
 docset: "drizzle"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:39:50.833Z"
-content_hash: "6b4e5cac51c9322802e42dc7fa7bd08e15e574090b0855bfccb3071addae3d9d"
+last_crawled_at: "2026-04-27T18:29:42.542Z"
+content_hash: "6ab1b4e9211d1d925767814745a09cf0b71de168d1fdb4b8fe2c68062c0e358c"
 menu_path: ["Drizzle <> Nile"]
 section_path: []
-nav_prev: {"path": "drizzle/docs/connect-pglite/index.md", "title": "Drizzle <> PGlite"}
-nav_next: {"path": "drizzle/docs/connect-bun-sql/index.md", "title": "Drizzle <> Bun SQL"}
+content_language: "en"
 ---
-
 According to the **[official website](https://thenile.dev/)**, Nile is PostgreSQL re-engineered for multi-tenant apps.
 
 Checkout official **[Nile + Drizzle Quickstart](https://www.thenile.dev/docs/getting-started/languages/drizzle)** and **[Migration](https://www.thenile.dev/docs/getting-started/schema_migrations/drizzle)** docs.
@@ -20,14 +18,6 @@ Checkout official **[Nile + Drizzle Quickstart](https://www.thenile.dev/docs/get
 You can use Nile with any of Drizzle’s Postgres drivers, we’ll be showing the use of `node-postgres` below.
 
 #### Step 1 - Install packages[](#step-1---install-packages)
-
-npm
-
-yarn
-
-pnpm
-
-bun
 
 ```
 npm i drizzle-orm postgres
@@ -51,7 +41,7 @@ bun add -D drizzle-kit
 
 #### Step 2 - Initialize the driver and make a query[](#step-2---initialize-the-driver-and-make-a-query)
 
-```
+```typescript
 // Make sure to install the 'pg' package
 import { drizzle } from 'drizzle-orm/node-postgres'
 
@@ -62,7 +52,7 @@ const response = await db.select().from(...);
 
 If you need to provide your existing driver:
 
-```
+```typescript
 // Make sure to install the 'pg' package
 import { drizzle } from "drizzle-orm/node-postgres";
 import { Pool } from "pg";
@@ -82,7 +72,7 @@ In order to set the tenant context, we wrap each query in a transaction that set
 
 The tenant ID can simply be passed into the wrapper as an argument:
 
-```
+```typescript
 import { drizzle } from 'drizzle-orm/node-postgres';
 import { todosTable, tenants } from "./db/schema";
 import { sql } from 'drizzle-orm';
@@ -113,7 +103,7 @@ console.log(response);
 
 If you are using a web framwork that supports it, you can set up [AsyncLocalStorage](https://nodejs.org/api/async_context.html) and use middleware to populate it with the tenant ID. In this case, your Drizzle client setup will be:
 
-```
+```typescript
 import { drizzle } from 'drizzle-orm/node-postgres';
 import dotenv from "dotenv/config";
 import { sql } from "drizzle-orm";
@@ -138,7 +128,7 @@ export function tenantDB<T>(cb: (tx: any) => T | Promise<T>): Promise<T> {
 
 And then, configure a middleware to populate the the AsyncLocalStorage and use `tenantDB` method when handling requests:
 
-```
+```typescript
 // Middleware to set tenant context
 app.use("/api/tenants/:tenantId/*", async (c, next) => {
   const tenantId = c.req.param("tenantId");

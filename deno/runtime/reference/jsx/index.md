@@ -5,22 +5,23 @@ canonical_url: "https://docs.deno.com/runtime/reference/jsx/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:58:26.531Z"
-content_hash: "722a71c4b64ec31cefcb278727af38130093c0d145e804887808c698520b0056"
+last_crawled_at: "2026-04-27T17:36:52.111Z"
+content_hash: "7d8f7cb660f5e86398c875610438f789a6740f11d789bdfa6b38c0ba0eb5c060"
 menu_path: ["JSX"]
 section_path: []
+content_language: "en"
 ---
-On this page
+**On this page**
 
-*   [Default configuration](#default-configuration)
-*   [JSX automatic runtime (recommended)](#jsx-automatic-runtime-\(recommended\))
-    *   [Development transform](#development-transform)
-    *   [Using the JSX import source pragma](#using-the-jsx-import-source-pragma)
-    *   [jsxImportSourceTypes](#jsximportsourcetypes)
-*   [JSX precompile transform](#jsx-precompile-transform)
-*   [Rendering JSX in server responses](#rendering-jsx-in-server-responses)
-    *   [Using Preact with renderToString](#using-preact-with-rendertostring)
-    *   [Using React with renderToString](#using-react-with-rendertostring)
+-   [Default configuration](#default-configuration)
+-   [JSX automatic runtime (recommended)](#jsx-automatic-runtime-\(recommended\))
+    -   [Development transform](#development-transform)
+    -   [Using the JSX import source pragma](#using-the-jsx-import-source-pragma)
+    -   [jsxImportSourceTypes](#jsximportsourcetypes)
+-   [JSX precompile transform](#jsx-precompile-transform)
+-   [Rendering JSX in server responses](#rendering-jsx-in-server-responses)
+    -   [Using Preact with renderToString](#using-preact-with-rendertostring)
+    -   [Using React with renderToString](#using-react-with-rendertostring)
 
 Deno has built-in support for JSX in both `.jsx` files and `.tsx` files. JSX in Deno can be handy for server-side rendering or generating code for browser consumption.
 

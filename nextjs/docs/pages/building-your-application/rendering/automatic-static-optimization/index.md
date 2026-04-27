@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/pages/building-your-application/renderin
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:23:05.917Z"
-content_hash: "26060c9ed0f5f33b7e9e970537a6dd0b761fc440337be6734b9d7542716dbd74"
+last_crawled_at: "2026-04-27T18:22:24.695Z"
+content_hash: "48acd225ed6b33ea70064c99d0f02330efce3a2b87edf7147fe1eb297a8ebb5d"
 menu_path: ["Automatic Static Optimization"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/pages/building-your-application/rendering/static-site-generation/index.md", "title": "Static Site Generation (SSG)"}
-nav_next: {"path": "nextjs/docs/pages/building-your-application/rendering/client-side-rendering/index.md", "title": "Client-side Rendering (CSR)"}
+version: "latest"
+content_language: "en"
 ---
+[Building Your Application](/docs/pages/building-your-application)[Rendering](/docs/pages/building-your-application/rendering)Automatic Static Optimization
 
 # Automatic Static Optimization
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 Next.js automatically determines that a page is static (can be prerendered) if it has no blocking data requirements. This determination is made by the absence of `getServerSideProps` and `getInitialProps` in the page.
 
@@ -35,9 +36,9 @@ During prerendering, the router's `query` object will be empty since we do not h
 
 The cases where the query will be updated after hydration triggering another render are:
 
-*   The page is a [dynamic-route](/docs/pages/building-your-application/routing/dynamic-routes).
-*   The page has query values in the URL.
-*   [Rewrites](/docs/pages/api-reference/config/next-config-js/rewrites) are configured in your `next.config.js` since these can have parameters that may need to be parsed and provided in the `query`.
+-   The page is a [dynamic-route](/docs/pages/building-your-application/routing/dynamic-routes).
+-   The page has query values in the URL.
+-   [Rewrites](/docs/pages/api-reference/config/next-config-js/rewrites) are configured in your `next.config.js` since these can have parameters that may need to be parsed and provided in the `query`.
 
 To be able to distinguish if the query is fully updated and ready for use, you can leverage the `isReady` field on [`next/router`](/docs/pages/api-reference/functions/use-router#router-object).
 
@@ -61,12 +62,8 @@ Terminal
 
 ## Caveats[](#caveats)
 
-*   If you have a [custom `App`](/docs/pages/building-your-application/routing/custom-app) with `getInitialProps` then this optimization will be turned off in pages without [Static Generation](/docs/pages/building-your-application/data-fetching/get-static-props).
-*   If you have a [custom `Document`](/docs/pages/building-your-application/routing/custom-document) with `getInitialProps` be sure you check if `ctx.req` is defined before assuming the page is server-side rendered. `ctx.req` will be `undefined` for pages that are prerendered.
-*   Avoid using the `asPath` value on [`next/router`](/docs/pages/api-reference/functions/use-router#router-object) in the rendering tree until the router's `isReady` field is `true`. Statically optimized pages only know `asPath` on the client and not the server, so using it as a prop may lead to mismatch errors. The [`active-class-name` example](https://github.com/vercel/next.js/tree/canary/examples/active-class-name) demonstrates one way to use `asPath` as a prop.
+-   If you have a [custom `App`](/docs/pages/building-your-application/routing/custom-app) with `getInitialProps` then this optimization will be turned off in pages without [Static Generation](/docs/pages/building-your-application/data-fetching/get-static-props).
+-   If you have a [custom `Document`](/docs/pages/building-your-application/routing/custom-document) with `getInitialProps` be sure you check if `ctx.req` is defined before assuming the page is server-side rendered. `ctx.req` will be `undefined` for pages that are prerendered.
+-   Avoid using the `asPath` value on [`next/router`](/docs/pages/api-reference/functions/use-router#router-object) in the rendering tree until the router's `isReady` field is `true`. Statically optimized pages only know `asPath` on the client and not the server, so using it as a prop may lead to mismatch errors. The [`active-class-name` example](https://github.com/vercel/next.js/tree/canary/examples/active-class-name) demonstrates one way to use `asPath` as a prop.
 
 Was this helpful?
-
-supported.
-
-Send

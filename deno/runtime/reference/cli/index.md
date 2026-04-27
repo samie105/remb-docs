@@ -5,62 +5,63 @@ canonical_url: "https://docs.deno.com/runtime/reference/cli/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:50:14.131Z"
-content_hash: "ee749104c503ef696a13f4d79edc0726e2620a0a52b333015e9e73f5fd2d23ac"
+last_crawled_at: "2026-04-27T17:25:04.133Z"
+content_hash: "5862e25c07cab47ee00488464b3e76f73d8609e8f036b6c957376568c814b221"
 menu_path: ["Deno CLI Subcommands"]
 section_path: []
+content_language: "en"
 ---
-On this page
+**On this page**
 
-*   [Execution](#execution)
-*   [Dependency management](#dependency-management)
-*   [Tooling](#tooling)
-*   [Other](#other)
+-   [Execution](#execution)
+-   [Dependency management](#dependency-management)
+-   [Tooling](#tooling)
+-   [Other](#other)
 
 The Deno CLI (Command Line Interface) allows you to interact with the Deno runtime environment from your terminal or command prompt. The CLI has a number of subcommands that can be used to perform different tasks, check the links below for more information on each subcommand.
 
 ## Execution
 
-*   [deno run](/runtime/reference/cli/run/) - run a script
-*   [deno serve](/runtime/reference/cli/serve/) - run a web server
-*   [deno task](/runtime/reference/cli/task/) - run a task
-*   [deno repl](/runtime/reference/cli/repl/) - starts a read-eval-print-loop
-*   [deno eval](/runtime/reference/cli/eval/) - evaluate provided script
+-   [deno run](/runtime/reference/cli/run/) - run a script
+-   [deno serve](/runtime/reference/cli/serve/) - run a web server
+-   [deno task](/runtime/reference/cli/task/) - run a task
+-   [deno repl](/runtime/reference/cli/repl/) - starts a read-eval-print-loop
+-   [deno eval](/runtime/reference/cli/eval/) - evaluate provided script
 
 ## Dependency management
 
-*   [deno add](/runtime/reference/cli/add) - add dependencies
-*   [deno approve-scripts](/runtime/reference/cli/approve_scripts) - manage lifecycle scripts of npm packages
-*   [deno audit](/runtime/reference/cli/audit) - audit dependencies
-*   deno cache - _(Deprecated. Please use [deno install](/runtime/reference/cli/install/))_
-*   [deno install](/runtime/reference/cli/install/) - install a dependency or a script
-*   [deno uninstall](/runtime/reference/cli/uninstall/) - uninstall a dependency or a script
-*   [deno remove](/runtime/reference/cli/remove) - Remove dependencies
-*   [deno outdated](/runtime/reference/cli/outdated) - view or update outdated dependencies
+-   [deno add](/runtime/reference/cli/add) - add dependencies
+-   [deno approve-scripts](/runtime/reference/cli/approve_scripts) - manage lifecycle scripts of npm packages
+-   [deno audit](/runtime/reference/cli/audit) - audit dependencies
+-   deno cache - _(Deprecated. Please use [deno install](/runtime/reference/cli/install/))_
+-   [deno install](/runtime/reference/cli/install/) - install a dependency or a script
+-   [deno uninstall](/runtime/reference/cli/uninstall/) - uninstall a dependency or a script
+-   [deno remove](/runtime/reference/cli/remove) - Remove dependencies
+-   [deno outdated](/runtime/reference/cli/outdated) - view or update outdated dependencies
 
 ## Tooling
 
-*   [deno bench](/runtime/reference/cli/bench/) - benchmarking tool
-*   [deno check](/runtime/reference/cli/check/) - type check your program without running it
-*   [deno compile](/runtime/reference/cli/compile/) - compile a program into a standalone executable
-*   [deno completions](/runtime/reference/cli/completions/) - generate shell completions
-*   [deno coverage](/runtime/reference/cli/coverage/) - generate test coverage reports
-*   [deno create](/runtime/reference/cli/create/) - scaffold a new project from a template
-*   [deno doc](/runtime/reference/cli/doc/) - generate documentation for a module
-*   [deno deploy](/runtime/reference/cli/deploy) - Manage and publish your projects on the web
-*   [deno fmt](/runtime/reference/cli/fmt/) - format your code
-*   [deno info](/runtime/reference/cli/info/) - inspect an ES module and all of its dependencies
-*   [deno init](/runtime/reference/cli/init/) - create a new project
-*   [deno jupyter](/runtime/reference/cli/jupyter/) - run a Jupyter notebook
-*   [deno lint](/runtime/reference/cli/lint/) - lint your code
-*   [deno lsp](/runtime/reference/cli/lsp/) - language server protocol integration
-*   [deno publish](/runtime/reference/cli/publish/) - publish a module to JSR
-*   [deno test](/runtime/reference/cli/test/) - run your tests
-*   [deno types](/runtime/reference/cli/types/) - print runtime types
-*   [deno upgrade](/runtime/reference/cli/upgrade/) - upgrade Deno to the latest version
-*   [deno x](/runtime/reference/cli/x/) - run an npm or JSR package
+-   [deno bench](/runtime/reference/cli/bench/) - benchmarking tool
+-   [deno check](/runtime/reference/cli/check/) - type check your program without running it
+-   [deno compile](/runtime/reference/cli/compile/) - compile a program into a standalone executable
+-   [deno completions](/runtime/reference/cli/completions/) - generate shell completions
+-   [deno coverage](/runtime/reference/cli/coverage/) - generate test coverage reports
+-   [deno create](/runtime/reference/cli/create/) - scaffold a new project from a template
+-   [deno doc](/runtime/reference/cli/doc/) - generate documentation for a module
+-   [deno deploy](/runtime/reference/cli/deploy) - Manage and publish your projects on the web
+-   [deno fmt](/runtime/reference/cli/fmt/) - format your code
+-   [deno info](/runtime/reference/cli/info/) - inspect an ES module and all of its dependencies
+-   [deno init](/runtime/reference/cli/init/) - create a new project
+-   [deno jupyter](/runtime/reference/cli/jupyter/) - run a Jupyter notebook
+-   [deno lint](/runtime/reference/cli/lint/) - lint your code
+-   [deno lsp](/runtime/reference/cli/lsp/) - language server protocol integration
+-   [deno publish](/runtime/reference/cli/publish/) - publish a module to JSR
+-   [deno test](/runtime/reference/cli/test/) - run your tests
+-   [deno types](/runtime/reference/cli/types/) - print runtime types
+-   [deno upgrade](/runtime/reference/cli/upgrade/) - upgrade Deno to the latest version
+-   [deno x](/runtime/reference/cli/x/) - run an npm or JSR package
 
 ## Other
 
-*   [Unstable feature flags](/runtime/reference/cli/unstable_flags/)
-*   [Integrating the Deno LSP](/runtime/reference/lsp_integration/)
+-   [Unstable feature flags](/runtime/reference/cli/unstable_flags/)
+-   [Integrating the Deno LSP](/runtime/reference/lsp_integration/)

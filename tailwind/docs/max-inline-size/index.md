@@ -5,61 +5,15 @@ canonical_url: "https://tailwindcss.com/docs/max-inline-size"
 docset: "tailwind"
 kind: "framework"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:53:27.625Z"
-content_hash: "dadf4cf462c8ecd5bbf9d85f32602261ca7487f840e6df90a1ee7e7e2e6a5cae"
+last_crawled_at: "2026-04-27T20:05:54.862Z"
+content_hash: "2bbc3d776c526dd1bee0b06290aca38f6940896d401e717fed53d3657cc38906"
 menu_path: ["max-inline-size"]
 section_path: []
-nav_prev: {"path": "tailwind/docs/min-inline-size/index.md", "title": "min-inline-size"}
-nav_next: {"path": "tailwind/docs/block-size/index.md", "title": "block-size"}
+content_language: "en"
 ---
-
 Sizing
 
 Utilities for setting the maximum inline size of an element.
-
-Class
-
-Styles
-
-`max-inline-<number>`
-
-`max-inline-size: calc(var(--spacing) * <number>);`
-
-`max-inline-<fraction>`
-
-`max-inline-size: calc(<fraction> * 100%);`
-
-`max-inline-3xs`
-
-`max-inline-size: var(--container-3xs); /* 16rem (256px) */`
-
-`max-inline-2xs`
-
-`max-inline-size: var(--container-2xs); /* 18rem (288px) */`
-
-`max-inline-xs`
-
-`max-inline-size: var(--container-xs); /* 20rem (320px) */`
-
-`max-inline-sm`
-
-`max-inline-size: var(--container-sm); /* 24rem (384px) */`
-
-`max-inline-md`
-
-`max-inline-size: var(--container-md); /* 28rem (448px) */`
-
-`max-inline-lg`
-
-`max-inline-size: var(--container-lg); /* 32rem (512px) */`
-
-`max-inline-xl`
-
-`max-inline-size: var(--container-xl); /* 36rem (576px) */`
-
-`max-inline-2xl`
-
-`max-inline-size: var(--container-2xl); /* 42rem (672px) */`
 
 ## [Examples](#examples)
 
@@ -117,7 +71,7 @@ Prefix a `max-inline-size` utility with a breakpoint variant like `md:` to only 
 <div class="max-inline-sm md:max-inline-lg ...">  <!-- ... --></div>
 ```
 
-Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).
+Learn more about using variants in the [variants documentation](https://tailwindcss.com/docs/hover-focus-and-other-states).
 
 ## [Customizing your theme](#customizing-your-theme)
 
@@ -127,4 +81,4 @@ The `max-inline-<number>` utilities are driven by the `--spacing` theme variable
 @theme {  --spacing: 1px; }
 ```
 
-Learn more about customizing the spacing scale in the [theme variable documentation](tailwind/docs/theme/index.md).
+Learn more about customizing the spacing scale in the [theme variable documentation](https://tailwindcss.com/docs/theme).

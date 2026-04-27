@@ -5,14 +5,12 @@ canonical_url: "https://www.postgresql.org/docs/current/pgstattuple.html"
 docset: "postgres"
 kind: "database"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:42:33.556Z"
-content_hash: "30f89dd3b54bac8aca7bcf940167fa1b1e91c1bb8b878fbfe894b0f6d196d728"
+last_crawled_at: "2026-04-27T20:45:48.578Z"
+content_hash: "82c4e1436c432e257fdbce65e233e62ebfeebad602f2aa091df68f17dffe33ba"
 menu_path: ["PostgreSQL: Documentation: 18: F.33. pgstattuple — obtain tuple-level statistics"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/pgstatstatements.html/index.md", "title": "PostgreSQL: Documentation: 18: F.32.\u00a0pg_stat_statements \u2014 track statistics of SQL planning and execution"}
-nav_next: {"path": "postgres/docs/current/pgsurgery.html/index.md", "title": "PostgreSQL: Documentation: 18: F.34.\u00a0pg_surgery \u2014 perform low-level surgery on relation data"}
+content_language: "en"
 ---
-
 The `pgstattuple` module provides various functions to obtain tuple-level statistics.
 
 Because these functions return detailed page-level information, access is restricted by default. By default, only the role `pg_stat_scan_tables` has `EXECUTE` privilege. Superusers of course bypass this restriction. After the extension has been installed, users may issue `GRANT` commands to change the privileges on the functions to allow others to execute them. However, it might be preferable to add those users to the `pg_stat_scan_tables` role instead.
@@ -40,66 +38,17 @@ The output columns are described in [Table F.24](https://www.postgresql.org/doc
 **Table F.24. `pgstattuple` Output Columns**
 
   
-
-Column
-
-Type
-
-Description
-
-`table_len`
-
-`bigint`
-
-Physical relation length in bytes
-
-`tuple_count`
-
-`bigint`
-
-Number of live tuples
-
-`tuple_len`
-
-`bigint`
-
-Total length of live tuples in bytes
-
-`tuple_percent`
-
-`float8`
-
-Percentage of live tuples
-
-`dead_tuple_count`
-
-`bigint`
-
-Number of dead tuples
-
-`dead_tuple_len`
-
-`bigint`
-
-Total length of dead tuples in bytes
-
-`dead_tuple_percent`
-
-`float8`
-
-Percentage of dead tuples
-
-`free_space`
-
-`bigint`
-
-Total free space in bytes
-
-`free_percent`
-
-`float8`
-
-Percentage of free space
+| Column | Type | Description |
+| --- | --- | --- |
+| `table_len` | `bigint` | Physical relation length in bytes |
+| `tuple_count` | `bigint` | Number of live tuples |
+| `tuple_len` | `bigint` | Total length of live tuples in bytes |
+| `tuple_percent` | `float8` | Percentage of live tuples |
+| `dead_tuple_count` | `bigint` | Number of dead tuples |
+| `dead_tuple_len` | `bigint` | Total length of dead tuples in bytes |
+| `dead_tuple_percent` | `float8` | Percentage of dead tuples |
+| `free_space` | `bigint` | Total free space in bytes |
+| `free_percent` | `float8` | Percentage of free space |
 
   
 
@@ -135,72 +84,18 @@ leaf\_fragmentation | 0
 The output columns are:
 
   
-
-Column
-
-Type
-
-Description
-
-`version`
-
-`integer`
-
-B-tree version number
-
-`tree_level`
-
-`integer`
-
-Tree level of the root page
-
-`index_size`
-
-`bigint`
-
-Total index size in bytes
-
-`root_block_no`
-
-`bigint`
-
-Location of root page (zero if none)
-
-`internal_pages`
-
-`bigint`
-
-Number of “internal” (upper-level) pages
-
-`leaf_pages`
-
-`bigint`
-
-Number of leaf pages
-
-`empty_pages`
-
-`bigint`
-
-Number of empty pages
-
-`deleted_pages`
-
-`bigint`
-
-Number of deleted pages
-
-`avg_leaf_density`
-
-`float8`
-
-Average density of leaf pages
-
-`leaf_fragmentation`
-
-`float8`
-
-Leaf page fragmentation
+| Column | Type | Description |
+| --- | --- | --- |
+| `version` | `integer` | B-tree version number |
+| `tree_level` | `integer` | Tree level of the root page |
+| `index_size` | `bigint` | Total index size in bytes |
+| `root_block_no` | `bigint` | Location of root page (zero if none) |
+| `internal_pages` | `bigint` | Number of “internal” (upper-level) pages |
+| `leaf_pages` | `bigint` | Number of leaf pages |
+| `empty_pages` | `bigint` | Number of empty pages |
+| `deleted_pages` | `bigint` | Number of deleted pages |
+| `avg_leaf_density` | `float8` | Average density of leaf pages |
+| `leaf_fragmentation` | `float8` | Leaf page fragmentation |
 
 The reported `index_size` will normally correspond to one more page than is accounted for by `internal_pages + leaf_pages + empty_pages + deleted_pages`, because it also includes the index's metapage.
 
@@ -223,30 +118,11 @@ pending\_tuples | 0
 The output columns are:
 
   
-
-Column
-
-Type
-
-Description
-
-`version`
-
-`integer`
-
-GIN version number
-
-`pending_pages`
-
-`integer`
-
-Number of pages in the pending list
-
-`pending_tuples`
-
-`bigint`
-
-Number of tuples in the pending list
+| Column | Type | Description |
+| --- | --- | --- |
+| `version` | `integer` | GIN version number |
+| `pending_pages` | `integer` | Number of pages in the pending list |
+| `pending_tuples` | `bigint` | Number of tuples in the pending list |
 
 `pgstathashindex(regclass) returns record`
 
@@ -266,60 +142,16 @@ free\_percent   | 61.8005949100872
 The output columns are:
 
   
-
-Column
-
-Type
-
-Description
-
-`version`
-
-`integer`
-
-HASH version number
-
-`bucket_pages`
-
-`bigint`
-
-Number of bucket pages
-
-`overflow_pages`
-
-`bigint`
-
-Number of overflow pages
-
-`bitmap_pages`
-
-`bigint`
-
-Number of bitmap pages
-
-`unused_pages`
-
-`bigint`
-
-Number of unused pages
-
-`live_items`
-
-`bigint`
-
-Number of live tuples
-
-`dead_tuples`
-
-`bigint`
-
-Number of dead tuples
-
-`free_percent`
-
-`float`
-
-Percentage of free space
+| Column | Type | Description |
+| --- | --- | --- |
+| `version` | `integer` | HASH version number |
+| `bucket_pages` | `bigint` | Number of bucket pages |
+| `overflow_pages` | `bigint` | Number of overflow pages |
+| `bitmap_pages` | `bigint` | Number of bitmap pages |
+| `unused_pages` | `bigint` | Number of unused pages |
+| `live_items` | `bigint` | Number of live tuples |
+| `dead_tuples` | `bigint` | Number of dead tuples |
+| `free_percent` | `float` | Percentage of free space |
 
 `pg_relpages(regclass) returns bigint`
 
@@ -357,71 +189,17 @@ For pages that cannot be skipped, it scans each tuple, recording its presence an
 **Table F.25. `pgstattuple_approx` Output Columns**
 
   
-
-Column
-
-Type
-
-Description
-
-`table_len`
-
-`bigint`
-
-Physical relation length in bytes (exact)
-
-`scanned_percent`
-
-`float8`
-
-Percentage of table scanned
-
-`approx_tuple_count`
-
-`bigint`
-
-Number of live tuples (estimated)
-
-`approx_tuple_len`
-
-`bigint`
-
-Total length of live tuples in bytes (estimated)
-
-`approx_tuple_percent`
-
-`float8`
-
-Percentage of live tuples
-
-`dead_tuple_count`
-
-`bigint`
-
-Number of dead tuples (exact)
-
-`dead_tuple_len`
-
-`bigint`
-
-Total length of dead tuples in bytes (exact)
-
-`dead_tuple_percent`
-
-`float8`
-
-Percentage of dead tuples
-
-`approx_free_space`
-
-`bigint`
-
-Total free space in bytes (estimated)
-
-`approx_free_percent`
-
-`float8`
-
-Percentage of free space
+| Column | Type | Description |
+| --- | --- | --- |
+| `table_len` | `bigint` | Physical relation length in bytes (exact) |
+| `scanned_percent` | `float8` | Percentage of table scanned |
+| `approx_tuple_count` | `bigint` | Number of live tuples (estimated) |
+| `approx_tuple_len` | `bigint` | Total length of live tuples in bytes (estimated) |
+| `approx_tuple_percent` | `float8` | Percentage of live tuples |
+| `dead_tuple_count` | `bigint` | Number of dead tuples (exact) |
+| `dead_tuple_len` | `bigint` | Total length of dead tuples in bytes (exact) |
+| `dead_tuple_percent` | `float8` | Percentage of dead tuples |
+| `approx_free_space` | `bigint` | Total free space in bytes (estimated) |
+| `approx_free_percent` | `float8` | Percentage of free space |
 
 In the above output, the free space figures may not match the `pgstattuple` output exactly, because the free space map gives us an exact figure, but is not guaranteed to be accurate to the byte.

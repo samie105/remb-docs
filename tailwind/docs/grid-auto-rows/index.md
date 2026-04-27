@@ -5,57 +5,62 @@ canonical_url: "https://tailwindcss.com/docs/grid-auto-rows"
 docset: "tailwind"
 kind: "framework"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:48:26.591Z"
-content_hash: "067d2ee0ac3c7e1963dc551799a4ce64977350a556680c891a66e2cf0e0e7440"
+last_crawled_at: "2026-04-27T19:59:36.078Z"
+content_hash: "1163f35ebddf6c69b33535921bbac7958c1576141b4ef9d4a9968d00c3cf981b"
 menu_path: ["grid-auto-rows"]
 section_path: []
-nav_prev: {"path": "tailwind/docs/grid-auto-columns/index.md", "title": "grid-auto-columns"}
-nav_next: {"path": "tailwind/docs/gap/index.md", "title": "gap"}
+content_language: "en"
 ---
+[](/)
+
+[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
+
+1.  Flexbox & Grid
+2.  grid-auto-rows
+
+Flexbox & Grid
 
 # grid-auto-rows
 
 Utilities for controlling the size of implicitly-created grid rows.
 
-Class
-
-Styles
-
-`auto-rows-auto`
-
+| Class | Styles |
+| --- | --- |
+| `auto-rows-auto` | 
 `grid-auto-rows: auto;`
 
-`auto-rows-min`
+ |
+| `auto-rows-min` | 
 
 `grid-auto-rows: min-content;`
 
-`auto-rows-max`
+ |
+| `auto-rows-max` | 
 
 `grid-auto-rows: max-content;`
 
-`auto-rows-fr`
+ |
+| `auto-rows-fr` | 
 
 `grid-auto-rows: minmax(0, 1fr);`
 
-`auto-rows-(<custom-property>)`
+ |
+| `auto-rows-(<custom-property>)` | 
 
 `grid-auto-rows: var(<custom-property>);`
 
-`auto-rows-[<value>]`
+ |
+| `auto-rows-[<value>]` | 
 
 `grid-auto-rows: <value>;`
 
-## [Examples](#examples)
-
-### [Basic example](#basic-example)
+ |
 
 Use utilities like `auto-rows-min` and `auto-rows-max` to control the size of implicitly-created grid rows:
 
 ```
 <div class="grid grid-flow-row auto-rows-max">  <div>01</div>  <div>02</div>  <div>03</div></div>
 ```
-
-### [Using a custom value](#using-a-custom-value)
 
 Use the `auto-rows-[<value>]` syntax to set the size of implicitly-created grid rows based on a completely custom value:
 
@@ -71,8 +76,6 @@ For CSS variables, you can also use the `auto-rows-(<custom-property>)` syntax:
 
 This is just a shorthand for `auto-rows-[var(<custom-property>)]` that adds the `var()` function for you automatically.
 
-### [Responsive design](#responsive-design)
-
 Prefix a `grid-auto-rows` utility with a breakpoint variant like `md:` to only apply the utility at medium screen sizes and above:
 
 ```
@@ -83,20 +86,24 @@ Learn more about using variants in the [variants documentation](/docs/hover-focu
 
 ### On this page
 
-*   [Quick reference](#quick-reference)
-*   [Examples](#examples)
-    *   [Basic example](#basic-example)
-    *   [Using a custom value](#using-a-custom-value)
-    *   [Responsive design](#responsive-design)
+-   [Quick reference](#quick-reference)
+-   [Examples](#examples)
+    -   [Basic example](#basic-example)
+    -   [Using a custom value](#using-a-custom-value)
+    -   [Responsive design](#responsive-design)
 
-![Build UIs that don’t suck — 5-day mini-course](/_next/static/media/course-promo.d3d6bc78.jpg)
+[
 
-5-day mini-course
+![Refactoring UI](/_next/static/media/book-promo.3012c0f6.png)
 
-Build UIs that don’t suck.
+From the creators of Tailwind CSS
 
-Short, tactical video lessons from the creator of Tailwind CSS, delivered directly to your inbox every day for a week.
+Make your ideas look awesome, without relying on a designer.
 
-[Get the free course](/build-uis-that-dont-suck)
+> “This is the survival kit I wish I had when I started building apps.”
+> 
+> Derrick Reimer, SavvyCal
+
+](https://www.refactoringui.com/?ref=sidebar)
 
 Copyright © 2026 Tailwind Labs Inc.·[Trademark Policy](/brand)

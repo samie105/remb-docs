@@ -5,14 +5,12 @@ canonical_url: "https://www.postgresql.org/docs/current/rangetypes.html"
 docset: "postgres"
 kind: "database"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:34:33.681Z"
-content_hash: "cd5e26f51b97d380ea81fec5757fe40ccc087e64ebc822eadec9ae0d04551e4b"
+last_crawled_at: "2026-04-27T20:43:13.446Z"
+content_hash: "02d24d080995018dc2be2b5917e79050fed03df31cdd9560e5d283eb7ba74253"
 menu_path: ["PostgreSQL: Documentation: 18: 8.17. Range Types"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/query-path.html/index.md", "title": "PostgreSQL: Documentation: 18: 51.1.\u00a0The Path of a Query"}
-nav_next: {"path": "postgres/docs/current/recovery-config.html/index.md", "title": "PostgreSQL: Documentation: 18: O.1.\u00a0recovery.conf file merged into postgresql.conf"}
+content_language: "en"
 ---
-
 Range types are data types representing a range of values of some element type (called the range's _subtype_). For instance, ranges of `timestamp` might be used to represent the ranges of time that a meeting room is reserved. In this case the data type is `tsrange` (short for “timestamp range”), and `timestamp` is the subtype. The subtype must have a total order so that it is well-defined whether element values are within, before, or after a range of values.
 
 Range types are useful because they represent many element values in a single range value, and because concepts such as overlapping ranges can be expressed clearly. The use of time and date ranges for scheduling purposes is the clearest example; but price ranges, measurement ranges from an instrument, and so forth can also be useful.
@@ -23,17 +21,17 @@ Every range type has a corresponding multirange type. A multirange is an ordered
 
 PostgreSQL comes with the following built-in range types:
 
-*   `int4range` — Range of `integer`, `int4multirange` — corresponding Multirange
+-   `int4range` — Range of `integer`, `int4multirange` — corresponding Multirange
     
-*   `int8range` — Range of `bigint`, `int8multirange` — corresponding Multirange
+-   `int8range` — Range of `bigint`, `int8multirange` — corresponding Multirange
     
-*   `numrange` — Range of `numeric`, `nummultirange` — corresponding Multirange
+-   `numrange` — Range of `numeric`, `nummultirange` — corresponding Multirange
     
-*   `tsrange` — Range of `timestamp without time zone`, `tsmultirange` — corresponding Multirange
+-   `tsrange` — Range of `timestamp without time zone`, `tsmultirange` — corresponding Multirange
     
-*   `tstzrange` — Range of `timestamp with time zone`, `tstzmultirange` — corresponding Multirange
+-   `tstzrange` — Range of `timestamp with time zone`, `tstzmultirange` — corresponding Multirange
     
-*   `daterange` — Range of `date`, `datemultirange` — corresponding Multirange
+-   `daterange` — Range of `date`, `datemultirange` — corresponding Multirange
     
 
 In addition, you can define your own range types; see [CREATE TYPE](https://www.postgresql.org/docs/current/sql-createtype.html "CREATE TYPE") for more information.

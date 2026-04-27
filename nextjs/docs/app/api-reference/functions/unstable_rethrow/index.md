@@ -5,19 +5,20 @@ canonical_url: "https://nextjs.org/docs/app/api-reference/functions/unstable_ret
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:12:21.397Z"
-content_hash: "aca1b6b93b6e2502ed6abd60e96566c6c605ef3e20b21e4ce251ec4eed7498b1"
+last_crawled_at: "2026-04-27T18:11:03.775Z"
+content_hash: "d0c7a98c891eab21c1611f812ac60da38c37a0db84d042bb95eb9483fb25170d"
 menu_path: ["unstable_rethrow"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/api-reference/functions/unstable_noStore/index.md", "title": "unstable_noStore"}
-nav_next: {"path": "nextjs/docs/app/api-reference/functions/updateTag/index.md", "title": "updateTag"}
+version: "latest"
+content_language: "en"
 ---
+[API Reference](/docs/app/api-reference)[Functions](/docs/app/api-reference/functions)unstable\_rethrow
 
 # unstable\_rethrow
 
 This feature is currently unstable and subject to change, it's not recommended for production. Try it out and share your feedback on [GitHub](https://github.com/vercel/next.js/issues).
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 `unstable_rethrow` can be used to avoid catching internal errors thrown by Next.js when attempting to handle errors thrown in your application code.
 
@@ -64,39 +65,23 @@ export default async function Page() {
 
 The following Next.js APIs rely on throwing an error which should be rethrown and handled by Next.js itself:
 
-*   [`notFound()`](/docs/app/api-reference/functions/not-found)
-*   [`redirect()`](/docs/app/guides/redirecting#redirect-function)
-*   [`permanentRedirect()`](/docs/app/guides/redirecting#permanentredirect-function)
+-   [`notFound()`](/docs/app/api-reference/functions/not-found)
+-   [`redirect()`](/docs/app/guides/redirecting#redirect-function)
+-   [`permanentRedirect()`](/docs/app/guides/redirecting#permanentredirect-function)
 
 If a route segment is marked to throw an error unless it's static, a Request-time API call will also throw an error that should similarly not be caught by the developer. Note that Partial Prerendering (PPR) affects this behavior as well. These APIs are:
 
-*   [`cookies`](/docs/app/api-reference/functions/cookies)
-*   [`headers`](/docs/app/api-reference/functions/headers)
-*   [`searchParams`](/docs/app/api-reference/file-conventions/page#searchparams-optional)
-*   `fetch(..., { cache: 'no-store' })`
-*   `fetch(..., { next: { revalidate: 0 } })`
+-   [`cookies`](/docs/app/api-reference/functions/cookies)
+-   [`headers`](/docs/app/api-reference/functions/headers)
+-   [`searchParams`](/docs/app/api-reference/file-conventions/page#searchparams-optional)
+-   `fetch(..., { cache: 'no-store' })`
+-   `fetch(..., { next: { revalidate: 0 } })`
 
 > **Good to know**:
 > 
-> *   This method should be called at the top of the catch block, passing the error object as its only argument. It can also be used within a `.catch` handler of a promise.
-> *   You may be able to avoid using `unstable_rethrow` if you encapsulate your API calls that throw and let the **caller** handle the exception.
-> *   Only use `unstable_rethrow` if your caught exceptions may include both application errors and framework-controlled exceptions (like `redirect()` or `notFound()`).
-> *   Any resource cleanup (like clearing intervals, timers, etc) would have to either happen prior to the call to `unstable_rethrow` or within a `finally` block.
-
-[Previous
-
-unstable\_noStore
-
-](/docs/app/api-reference/functions/unstable_noStore)
-
-[Next
-
-updateTag
-
-](/docs/app/api-reference/functions/updateTag)
+> -   This method should be called at the top of the catch block, passing the error object as its only argument. It can also be used within a `.catch` handler of a promise.
+> -   You may be able to avoid using `unstable_rethrow` if you encapsulate your API calls that throw and let the **caller** handle the exception.
+> -   Only use `unstable_rethrow` if your caught exceptions may include both application errors and framework-controlled exceptions (like `redirect()` or `notFound()`).
+> -   Any resource cleanup (like clearing intervals, timers, etc) would have to either happen prior to the call to `unstable_rethrow` or within a `finally` block.
 
 Was this helpful?
-
-supported.
-
-Send

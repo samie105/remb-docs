@@ -5,37 +5,38 @@ canonical_url: "https://docs.deno.com/runtime/reference/ts_config_migration/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:07:32.319Z"
-content_hash: "81a628f733542ca81add27e97a779c82bc499627bc05b5dd6e337748e1cc8983"
+last_crawled_at: "2026-04-27T17:50:03.733Z"
+content_hash: "09f4fea471649d2edc7f8b04e92c05347fac68da1a18f65ea6875d3ace4f8ac7"
 menu_path: ["Configuring TypeScript"]
 section_path: []
+content_language: "en"
 ---
-On this page
+**On this page**
 
-*   [Type Checking JavaScript](#type-checking-javascript)
-*   [Using JSDoc in JavaScript](#using-jsdoc-in-javascript)
-*   [Skipping type checking](#skipping-type-checking)
-*   [Renaming JS files to TS files](#renaming-js-files-to-ts-files)
-*   [Configuring TypeScript in Deno](#configuring-typescript-in-deno)
-*   [tsconfig.json compatibility](#tsconfig.json-compatibility)
-*   [TS Compiler Options](#ts-compiler-options)
-*   [Using the "lib" property](#using-the-%22lib%22-property)
-*   [Targeting Deno and the Browser](#targeting-deno-and-the-browser)
-*   [Types and Type Declarations](#types-and-type-declarations)
-*   [Providing types when importing](#providing-types-when-importing)
-*   [Providing types when hosting](#providing-types-when-hosting)
-    *   [@ts-self-types](#%40ts-self-types)
-    *   [X-TypeScript-Types](#x-typescript-types)
-*   [Using ambient or global types](#using-ambient-or-global-types)
-    *   [Triple-slash directive](#triple-slash-directive)
-    *   [Supplying "types" in deno.json](#supplying-%22types%22-in-deno.json)
-*   [Type Checking Web Workers](#type-checking-web-workers)
-    *   [Triple-slash directives](#triple-slash-directives)
-    *   [Providing "lib" setting in deno.json](#providing-%22lib%22-setting-in-deno.json)
-*   [Important points](#important-points)
-    *   [Type declaration semantics](#type-declaration-semantics)
-*   [Behavior of JavaScript when type checking](#behavior-of-javascript-when-type-checking)
-    *   [Internals](#internals)
+-   [Type Checking JavaScript](#type-checking-javascript)
+-   [Using JSDoc in JavaScript](#using-jsdoc-in-javascript)
+-   [Skipping type checking](#skipping-type-checking)
+-   [Renaming JS files to TS files](#renaming-js-files-to-ts-files)
+-   [Configuring TypeScript in Deno](#configuring-typescript-in-deno)
+-   [tsconfig.json compatibility](#tsconfig.json-compatibility)
+-   [TS Compiler Options](#ts-compiler-options)
+-   [Using the "lib" property](#using-the-%22lib%22-property)
+-   [Targeting Deno and the Browser](#targeting-deno-and-the-browser)
+-   [Types and Type Declarations](#types-and-type-declarations)
+-   [Providing types when importing](#providing-types-when-importing)
+-   [Providing types when hosting](#providing-types-when-hosting)
+    -   [@ts-self-types](#%40ts-self-types)
+    -   [X-TypeScript-Types](#x-typescript-types)
+-   [Using ambient or global types](#using-ambient-or-global-types)
+    -   [Triple-slash directive](#triple-slash-directive)
+    -   [Supplying "types" in deno.json](#supplying-%22types%22-in-deno.json)
+-   [Type Checking Web Workers](#type-checking-web-workers)
+    -   [Triple-slash directives](#triple-slash-directives)
+    -   [Providing "lib" setting in deno.json](#providing-%22lib%22-setting-in-deno.json)
+-   [Important points](#important-points)
+    -   [Type declaration semantics](#type-declaration-semantics)
+-   [Behavior of JavaScript when type checking](#behavior-of-javascript-when-type-checking)
+    -   [Internals](#internals)
 
 Deno’s flexibility shines in its equal treatment of TypeScript and JavaScript. Whether you’re transitioning from JavaScript to TypeScript or vice versa, Deno has features to ease the journey.
 
@@ -88,9 +89,9 @@ TypeScript files benefit from the TypeScript compiler being able to do more thor
 
 Deno aims to simplify TypeScript configuration based on the following design choices:
 
-*   Strict and modern defaults for type-checking rules.
-*   Allowing the omission of settings relating to the target runtime or compatibility, leveraging direct integration with the execution environment.
-*   Project references using `deno.json` directory scopes.
+-   Strict and modern defaults for type-checking rules.
+-   Allowing the omission of settings relating to the target runtime or compatibility, leveraging direct integration with the execution environment.
+-   Project references using `deno.json` directory scopes.
 
 The last point presents a simpler format than `tsconfig.json`'s [`references`](https://www.typescriptlang.org/tsconfig/#references) and [`extends`](https://www.typescriptlang.org/tsconfig/#extends) fields, replacing them with `deno.json` workspaces and root-member inheritance. See the section on [type checking in workspaces](/runtime/fundamentals/workspaces/#type-checking).
 
@@ -102,9 +103,9 @@ Each workspace directory containing a `deno.json` or `package.json` is probed fo
 
 As with `tsc`, the scope of a TSConfig is determined by its [root fields](https://www.typescriptlang.org/tsconfig/#root-fields). In case of overlap:
 
-*   A reference takes precedence over its referrer.
-*   For root references, `foo/bar/tsconfig.json` takes precedence over `foo/tsconfig.json`.
-*   If a parent `deno.json` contains `compilerOptions`, that will take precedence over any TSConfig.
+-   A reference takes precedence over its referrer.
+-   For root references, `foo/bar/tsconfig.json` takes precedence over `foo/tsconfig.json`.
+-   If a parent `deno.json` contains `compilerOptions`, that will take precedence over any TSConfig.
 
 The following fields are supported:
 
@@ -133,147 +134,40 @@ You may be forced to use a `tsconfig.json` file when, for example, the required 
 
 Here is a table of compiler options that can be changed, their default in Deno and any other notes about that option:
 
-Option
-
-Default
-
-Notes
-
-`allowUnreachableCode`
-
-`false`
-
-`allowUnusedLabels`
-
-`false`
-
-`baseUrl`
-
-`"./"`
-
-This is used for resolving bare specifier entries in `paths` and `rootDirs`, but never for bare specifiers in module imports.
-
-`checkJs`
-
-`false`
-
-`jsx`
-
-`"react"`
-
-`jsxFactory`
-
-`"React.createElement"`
-
-`jsxFragmentFactory`
-
-`"React.Fragment"`
-
-`keyofStringsOnly`
-
-`false`
-
-`lib`
-
-`[ "deno.window" ]`
-
-The default for this varies based on other settings in Deno. If it is supplied, it overrides the default. See below for more information.
-
-`module`
-
-`"nodenext"`
-
-Supported values: `["nodenext", "esnext", "preserve"]`.
-
-`moduleResolution`
-
-`"nodenext"`
-
-Supported values: `["nodenext", "bundler"]`.
-
-`noErrorTruncation`
-
-`false`
-
-`noFallthroughCasesInSwitch`
-
-`false`
-
-`noImplicitAny`
-
-`true`
-
-`noImplicitOverride`
-
-`true`
-
-`noImplicitReturns`
-
-`false`
-
-`noImplicitThis`
-
-`true`
-
-`noImplicitUseStrict`
-
-`true`
-
-`noStrictGenericChecks`
-
-`false`
-
-`noUncheckedIndexedAccess`
-
-`false`
-
-`noUnusedLocals`
-
-`false`
-
-`noUnusedParameters`
-
-`false`
-
-`paths`
-
-`{}`
-
-`rootDirs`
-
-`null`
-
-`strict`
-
-`true`
-
-`strictBindCallApply`
-
-`true`
-
-`strictFunctionTypes`
-
-`true`
-
-`strictNullChecks`
-
-`true`
-
-`strictPropertyInitialization`
-
-`true`
-
-`suppressExcessPropertyErrors`
-
-`false`
-
-`suppressImplicitAnyIndexErrors`
-
-`false`
-
-`useUnknownInCatchVariables`
-
-`true`
+| Option | Default | Notes |
+| --- | --- | --- |
+| `allowUnreachableCode` | `false` |  |
+| `allowUnusedLabels` | `false` |  |
+| `baseUrl` | `"./"` | This is used for resolving bare specifier entries in `paths` and `rootDirs`, but never for bare specifiers in module imports. |
+| `checkJs` | `false` |  |
+| `jsx` | `"react"` |  |
+| `jsxFactory` | `"React.createElement"` |  |
+| `jsxFragmentFactory` | `"React.Fragment"` |  |
+| `keyofStringsOnly` | `false` |  |
+| `lib` | `[ "deno.window" ]` | The default for this varies based on other settings in Deno. If it is supplied, it overrides the default. See below for more information. |
+| `module` | `"nodenext"` | Supported values: `["nodenext", "esnext", "preserve"]`. |
+| `moduleResolution` | `"nodenext"` | Supported values: `["nodenext", "bundler"]`. |
+| `noErrorTruncation` | `false` |  |
+| `noFallthroughCasesInSwitch` | `false` |  |
+| `noImplicitAny` | `true` |  |
+| `noImplicitOverride` | `true` |  |
+| `noImplicitReturns` | `false` |  |
+| `noImplicitThis` | `true` |  |
+| `noImplicitUseStrict` | `true` |  |
+| `noStrictGenericChecks` | `false` |  |
+| `noUncheckedIndexedAccess` | `false` |  |
+| `noUnusedLocals` | `false` |  |
+| `noUnusedParameters` | `false` |  |
+| `paths` | `{}` |  |
+| `rootDirs` | `null` |  |
+| `strict` | `true` |  |
+| `strictBindCallApply` | `true` |  |
+| `strictFunctionTypes` | `true` |  |
+| `strictNullChecks` | `true` |  |
+| `strictPropertyInitialization` | `true` |  |
+| `suppressExcessPropertyErrors` | `false` |  |
+| `suppressImplicitAnyIndexErrors` | `false` |  |
+| `useUnknownInCatchVariables` | `true` |  |
 
 For a full list of compiler options and how they affect TypeScript, please refer to the [TypeScript Handbook](https://www.typescriptlang.org/docs/handbook/compiler-options.html).
 
@@ -283,19 +177,19 @@ If you're working on a project that ships code to multiple runtimes, like browse
 
 The built-in libraries that are of interest to users:
 
-*   `"deno.ns"` - This includes all the custom `Deno` global namespace APIs plus the Deno additions to `import.meta`. This should generally not conflict with other libraries or global types.
-*   `"deno.window"` - This is the "default" library used when checking Deno main runtime scripts. It includes the `"deno.ns"` as well as other type libraries for the extensions that are built into Deno. This library will conflict with libraries like `"dom"` and `"dom.iterable"` that are standard TypeScript libraries.
-*   `"deno.worker"` - This is the library used when checking a Deno web worker script. For more information about web workers, check out [Type Checking Web Workers](/runtime/reference/ts_config_migration/#type-checking-web-workers).
-*   `"dom.asynciterable"` - TypeScript currently does not include the DOM async iterables that Deno implements (plus several browsers), so we have implemented it ourselves until it becomes available in TypeScript.
+-   `"deno.ns"` - This includes all the custom `Deno` global namespace APIs plus the Deno additions to `import.meta`. This should generally not conflict with other libraries or global types.
+-   `"deno.window"` - This is the "default" library used when checking Deno main runtime scripts. It includes the `"deno.ns"` as well as other type libraries for the extensions that are built into Deno. This library will conflict with libraries like `"dom"` and `"dom.iterable"` that are standard TypeScript libraries.
+-   `"deno.worker"` - This is the library used when checking a Deno web worker script. For more information about web workers, check out [Type Checking Web Workers](/runtime/reference/ts_config_migration/#type-checking-web-workers).
+-   `"dom.asynciterable"` - TypeScript currently does not include the DOM async iterables that Deno implements (plus several browsers), so we have implemented it ourselves until it becomes available in TypeScript.
 
 These are common libraries that are not enabled by default, but are useful when writing code that is intended to also work in another runtime:
 
-*   `"dom"` - The main browser global library that ships with TypeScript. The type definitions conflict in many ways with `"deno.window"` and so if `"dom"` is used, then consider using just `"deno.ns"` to expose the Deno specific APIs.
-*   `"dom.iterable"` - The iterable extensions to the browser global library.
-*   `"scripthost"` - The library for the Microsoft Windows Script Host.
-*   `"webworker"` - The main library for web workers in the browser. Like `"dom"` this will conflict with `"deno.window"` or `"deno.worker"`, so consider using just `"deno.ns"` to expose the Deno specific APIs.
-*   `"webworker.importscripts"` - The library that exposes the `importScripts()` API in the web worker.
-*   `"webworker.iterable"` - The library that adds iterables to objects within a web worker. Modern browsers support this.
+-   `"dom"` - The main browser global library that ships with TypeScript. The type definitions conflict in many ways with `"deno.window"` and so if `"dom"` is used, then consider using just `"deno.ns"` to expose the Deno specific APIs.
+-   `"dom.iterable"` - The iterable extensions to the browser global library.
+-   `"scripthost"` - The library for the Microsoft Windows Script Host.
+-   `"webworker"` - The main library for web workers in the browser. Like `"dom"` this will conflict with `"deno.window"` or `"deno.worker"`, so consider using just `"deno.ns"` to expose the Deno specific APIs.
+-   `"webworker.importscripts"` - The library that exposes the `importScripts()` API in the web worker.
+-   `"webworker.iterable"` - The library that adds iterables to objects within a web worker. Modern browsers support this.
 
 ## Targeting Deno and the Browser
 

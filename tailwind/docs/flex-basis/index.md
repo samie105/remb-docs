@@ -5,65 +5,76 @@ canonical_url: "https://tailwindcss.com/docs/flex-basis"
 docset: "tailwind"
 kind: "framework"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:45:46.118Z"
-content_hash: "68fbdaba9b501dfd9f36729afd58f534583c92083260df23ee2ed70c3651b5fe"
+last_crawled_at: "2026-04-27T19:56:04.136Z"
+content_hash: "bf68e763f4bcc9493466ae211e907b01dbce0723e8de936e2eb7399aa580323b"
 menu_path: ["flex-basis"]
 section_path: []
-nav_prev: {"path": "tailwind/docs/z-index/index.md", "title": "z-index"}
-nav_next: {"path": "tailwind/docs/flex-direction/index.md", "title": "flex-direction"}
+content_language: "en"
 ---
+[](/)
+
+[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
+
+1.  Flexbox & Grid
+2.  flex-basis
+
+Flexbox & Grid
 
 # flex-basis
 
 Utilities for controlling the initial size of flex items.
 
-Class
-
-Styles
-
-`basis-<number>`
-
+| Class | Styles |
+| --- | --- |
+| `basis-<number>` | 
 `flex-basis: calc(var(--spacing) * <number>);`
 
-`basis-<fraction>`
+ |
+| `basis-<fraction>` | 
 
 `flex-basis: calc(<fraction> * 100%);`
 
-`basis-full`
+ |
+| `basis-full` | 
 
 `flex-basis: 100%;`
 
-`basis-auto`
+ |
+| `basis-auto` | 
 
 `flex-basis: auto;`
 
-`basis-3xs`
+ |
+| `basis-3xs` | 
 
 `flex-basis: var(--container-3xs); /* 16rem (256px) */`
 
-`basis-2xs`
+ |
+| `basis-2xs` | 
 
 `flex-basis: var(--container-2xs); /* 18rem (288px) */`
 
-`basis-xs`
+ |
+| `basis-xs` | 
 
 `flex-basis: var(--container-xs); /* 20rem (320px) */`
 
-`basis-sm`
+ |
+| `basis-sm` | 
 
 `flex-basis: var(--container-sm); /* 24rem (384px) */`
 
-`basis-md`
+ |
+| `basis-md` | 
 
 `flex-basis: var(--container-md); /* 28rem (448px) */`
 
-`basis-lg`
+ |
+| `basis-lg` | 
 
 `flex-basis: var(--container-lg); /* 32rem (512px) */`
 
-## [Examples](#examples)
-
-### [Using the spacing scale](#using-the-spacing-scale)
+ |
 
 Use `basis-<number>` utilities like `basis-64` and `basis-128` to set the initial size of flex items based on the spacing scale:
 
@@ -76,8 +87,6 @@ Use `basis-<number>` utilities like `basis-64` and `basis-128` to set the initia
 ```
 <div class="flex flex-row">  <div class="basis-64">01</div>  <div class="basis-64">02</div>  <div class="basis-128">03</div></div>
 ```
-
-### [Using the container scale](#using-the-container-scale)
 
 Use utilities like `basis-xs` and `basis-sm` to set the initial size of flex items based on the container scale:
 
@@ -93,8 +102,6 @@ Use utilities like `basis-xs` and `basis-sm` to set the initial size of flex ite
 <div class="flex flex-row">  <div class="basis-3xs">01</div>  <div class="basis-2xs">02</div>  <div class="basis-xs">03</div>  <div class="basis-sm">04</div></div>
 ```
 
-### [Using percentages](#using-percentages)
-
 Use `basis-<fraction>` utilities like `basis-1/2` and `basis-2/3` to set the initial size of flex items:
 
 01
@@ -104,8 +111,6 @@ Use `basis-<fraction>` utilities like `basis-1/2` and `basis-2/3` to set the ini
 ```
 <div class="flex flex-row">  <div class="basis-1/3">01</div>  <div class="basis-2/3">02</div></div>
 ```
-
-### [Using a custom value](#using-a-custom-value)
 
 Use the `basis-[<value>]` syntax to set the basis based on a completely custom value:
 
@@ -121,8 +126,6 @@ For CSS variables, you can also use the `basis-(<custom-property>)` syntax:
 
 This is just a shorthand for `basis-[var(<custom-property>)]` that adds the `var()` function for you automatically.
 
-### [Responsive design](#responsive-design)
-
 Prefix a `flex-basis` utility with a breakpoint variant like `md:` to only apply the utility at medium screen sizes and above:
 
 ```
@@ -130,8 +133,6 @@ Prefix a `flex-basis` utility with a breakpoint variant like `md:` to only apply
 ```
 
 Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
-
-## [Customizing your theme](#customizing-your-theme)
 
 Use the `--container-*` theme variables to customize the fixed-width basis utilities in your project:
 
@@ -155,14 +156,14 @@ Learn more about customizing the spacing scale in the [theme documentation](/doc
 
 ### On this page
 
-*   [Quick reference](#quick-reference)
-*   [Examples](#examples)
-    *   [Using the spacing scale](#using-the-spacing-scale)
-    *   [Using the container scale](#using-the-container-scale)
-    *   [Using percentages](#using-percentages)
-    *   [Using a custom value](#using-a-custom-value)
-    *   [Responsive design](#responsive-design)
-*   [Customizing your theme](#customizing-your-theme)
+-   [Quick reference](#quick-reference)
+-   [Examples](#examples)
+    -   [Using the spacing scale](#using-the-spacing-scale)
+    -   [Using the container scale](#using-the-container-scale)
+    -   [Using percentages](#using-percentages)
+    -   [Using a custom value](#using-a-custom-value)
+    -   [Responsive design](#responsive-design)
+-   [Customizing your theme](#customizing-your-theme)
 
 ![Build UIs that don’t suck — 5-day mini-course](/_next/static/media/course-promo.d3d6bc78.jpg)
 

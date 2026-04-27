@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/app/api-reference/config/next-config-js/
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:09:01.697Z"
-content_hash: "b9d066a59ea87f4695c58e21159a3b68e02b0bc3f14cf77ae1918d2c690cbdf9"
+last_crawled_at: "2026-04-27T18:07:48.535Z"
+content_hash: "a64605619f1f05fcab67b225b98c4e3b669405b333c37f607e2da432895d944c"
 menu_path: ["typescript"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/api-reference/config/next-config-js/typedRoutes/index.md", "title": "typedRoutes"}
-nav_next: {"path": "nextjs/docs/app/api-reference/config/next-config-js/urlImports/index.md", "title": "urlImports"}
+version: "latest"
+content_language: "en"
 ---
+[Configuration](/docs/app/api-reference/config)[next.config.js](/docs/app/api-reference/config/next-config-js)typescript
 
 # typescript
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 Configure TypeScript behavior with the `typescript` option in `next.config.js`:
 
@@ -32,29 +33,10 @@ module.exports = {
 
 ## Options[](#options)
 
-Option
-
-Type
-
-Default
-
-Description
-
-`ignoreBuildErrors`
-
-`boolean`
-
-`false`
-
-Allow production builds to complete even with TypeScript errors.
-
-`tsconfigPath`
-
-`string`
-
-`'tsconfig.json'`
-
-Path to a custom `tsconfig.json` file.
+| Option | Type | Default | Description |
+| --- | --- | --- | --- |
+| `ignoreBuildErrors` | `boolean` | `false` | Allow production builds to complete even with TypeScript errors. |
+| `tsconfigPath` | `string` | `'tsconfig.json'` | Path to a custom `tsconfig.json` file. |
 
 ## `ignoreBuildErrors`[](#ignorebuilderrors)
 
@@ -96,20 +78,4 @@ module.exports = {
 
 See the [TypeScript configuration](/docs/app/api-reference/config/typescript#custom-tsconfig-path) page for more details.
 
-[Previous
-
-typedRoutes
-
-](/docs/app/api-reference/config/next-config-js/typedRoutes)
-
-[Next
-
-urlImports
-
-](/docs/app/api-reference/config/next-config-js/urlImports)
-
 Was this helpful?
-
-supported.
-
-Send

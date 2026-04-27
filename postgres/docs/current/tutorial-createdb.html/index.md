@@ -5,14 +5,12 @@ canonical_url: "https://www.postgresql.org/docs/current/tutorial-createdb.html"
 docset: "postgres"
 kind: "database"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:38:04.169Z"
-content_hash: "501789a8b74c75da249c83748820fc36526b47fe318e395ebd5413b3a998af41"
+last_crawled_at: "2026-04-27T20:44:13.258Z"
+content_hash: "2cb0cb1350933cf9fa58df02af8b917aee529674b5bb7980b98a2df413159c17"
 menu_path: ["PostgreSQL: Documentation: 18: 1.3. Creating a Database"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/tutorial-concepts.html/index.md", "title": "PostgreSQL: Documentation: 18: 2.2.\u00a0Concepts"}
-nav_next: {"path": "postgres/docs/current/tutorial-delete.html/index.md", "title": "PostgreSQL: Documentation: 18: 2.9.\u00a0Deletions"}
+content_language: "en"
 ---
-
 The first test to see whether you can access the database server is to try to create a database. A running PostgreSQL server can manage many databases. Typically, a separate database is used for each project or for each user.
 
 Possibly, your site administrator has already created a database for your use. In that case you can omit this step and skip ahead to the next section.
@@ -71,9 +69,3 @@ $
 (For this command, the database name does not default to the user account name. You always need to specify it.) This action physically removes all files associated with the database and cannot be undone, so this should only be done with a great deal of forethought.
 
 More about `createdb` and `dropdb` can be found in [createdb](https://www.postgresql.org/docs/current/app-createdb.html "createdb") and [dropdb](https://www.postgresql.org/docs/current/app-dropdb.html "dropdb") respectively.
-
-  
-
-* * *
-
-[\[1\]](#id-1.4.3.4.10.4) As an explanation for why this works: PostgreSQL user names are separate from operating system user accounts. When you connect to a database, you can choose what PostgreSQL user name to connect as; if you don't, it will default to the same name as your current operating system account. As it happens, there will always be a PostgreSQL user account that has the same name as the operating system user that started the server, and it also happens that that user always has permission to create databases. Instead of logging in as that user you can also specify the `-U` option everywhere to select a PostgreSQL user name to connect as.

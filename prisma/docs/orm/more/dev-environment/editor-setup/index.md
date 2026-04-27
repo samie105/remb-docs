@@ -5,14 +5,13 @@ canonical_url: "https://www.prisma.io/docs/orm/more/dev-environment/editor-setup
 docset: "prisma"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:42:30.180Z"
-content_hash: "990a166f76e6b7ee2a8515bf8b550be89535f7994ae925d718c3f51c7bd72917"
+last_crawled_at: "2026-04-27T19:37:21.698Z"
+content_hash: "bdd4e07d31f23e070e11522c58b26694bc14cd90cdceab1b09b02865a0ef0ade"
 menu_path: ["Editor setup"]
 section_path: []
-nav_prev: {"path": "prisma/docs/orm/more/comparisons/prisma-and-typeorm/index.md", "title": "TypeORM"}
-nav_next: {"path": "prisma/docs/orm/more/dev-environment/environment-variables/index.md", "title": "Environment variables"}
+tab_variants: ["npm","pnpm","yarn","bun"]
+content_language: "en"
 ---
-
 Dev environment
 
 Learn how to configure your editor and IDEs for an optimal developer experience with Prisma ORM
@@ -23,27 +22,27 @@ If you don't see your editor here, please [open a feature request](https://githu
 
 You can install the official [Prisma VS Code extension](https://marketplace.visualstudio.com/items?itemName=Prisma.prisma). It adds extra capabilities to VS Code when developing applications with Prisma ORM:
 
-*   Syntax highlighting of `schema.prisma`
-*   Linting
-    *   Diagnostic tools are used to surface errors and warnings in your schema file as you type.
-*   Code Completion
-    *   Completion results appear for symbols as you type.
-    *   You can trigger this manually with the `Ctrl+Space` shortcut.
-*   Documentation help
-    *   Documentation of a completion result pops up as completion results are provided.
-*   Quick info on hover
-    *   Documentation Comments (`///`) of models and enums appear anywhere you hover over their usages.
-*   Go to Definition
-    *   Jump to or peek a model or enum's declaration.
-*   Formatting
-    *   Format code either manually or on save (if configured).
-        *   To automatically format on save, add the following to your `settings.json` file:
+-   Syntax highlighting of `schema.prisma`
+-   Linting
+    -   Diagnostic tools are used to surface errors and warnings in your schema file as you type.
+-   Code Completion
+    -   Completion results appear for symbols as you type.
+    -   You can trigger this manually with the `Ctrl+Space` shortcut.
+-   Documentation help
+    -   Documentation of a completion result pops up as completion results are provided.
+-   Quick info on hover
+    -   Documentation Comments (`///`) of models and enums appear anywhere you hover over their usages.
+-   Go to Definition
+    -   Jump to or peek a model or enum's declaration.
+-   Formatting
+    -   Format code either manually or on save (if configured).
+        -   To automatically format on save, add the following to your `settings.json` file:
             
             ```
             "editor.formatOnSave": true
             ```
             
-        *   To enable formatting in combination with `prettier`, add the following to your `settings.json` file use the [Prettier plugin for Prisma](https://github.com/umidbekk/prettier-plugin-prisma)
+        -   To enable formatting in combination with `prettier`, add the following to your `settings.json` file use the [Prettier plugin for Prisma](https://github.com/umidbekk/prettier-plugin-prisma)
             
             ```
             "[prisma]": {
@@ -51,45 +50,45 @@ You can install the official [Prisma VS Code extension](https://marketplace.visu
             },
             ```
             
-*   Rename
-    *   Rename models, enums, fields and enum values
-        *   Click into the model or enum, press `F2` and then type the new desired name and press `Enter`
-        *   All usages will be renamed
-        *   Automatically applies `@map` or `@@map` on the schema
-*   Quick-fixes
-    *   Quickly fix typos in model and enum names
-    *   Create new models and enums with a single click
+-   Rename
+    -   Rename models, enums, fields and enum values
+        -   Click into the model or enum, press `F2` and then type the new desired name and press `Enter`
+        -   All usages will be renamed
+        -   Automatically applies `@map` or `@@map` on the schema
+-   Quick-fixes
+    -   Quickly fix typos in model and enum names
+    -   Create new models and enums with a single click
 
 > **Note**: Community projects are not maintained or officially supported by Prisma and some features may by out of sync. Use at your own discretion.
 
 ### [Emacs](#emacs)
 
-*   [emacs-prisma-mode](https://github.com/pimeys/emacs-prisma-mode) provides syntax highlighting of the Prisma Schema Language and uses the Prisma Language Server.
+-   [emacs-prisma-mode](https://github.com/pimeys/emacs-prisma-mode) provides syntax highlighting of the Prisma Schema Language and uses the Prisma Language Server.
 
 ### [Vim](#vim)
 
-*   [vim-prisma](https://github.com/prisma/vim-prisma) provides file detection and syntax highlighting of the Prisma Schema Language.
+-   [vim-prisma](https://github.com/prisma/vim-prisma) provides file detection and syntax highlighting of the Prisma Schema Language.
 
 ### [neovim](#neovim)
 
-*   [coc-prisma](https://github.com/pantharshit00/coc-prisma) implements the Prisma Language Server.
+-   [coc-prisma](https://github.com/pantharshit00/coc-prisma) implements the Prisma Language Server.
 
 ### [JetBrains IDE](#jetbrains-ide)
 
-*   [Prisma ORM](https://plugins.jetbrains.com/plugin/20686-prisma-orm) Provided by JetBrains. This plugin provides PSL grammar, syntax highlighting, LSP, and more.
+-   [Prisma ORM](https://plugins.jetbrains.com/plugin/20686-prisma-orm) Provided by JetBrains. This plugin provides PSL grammar, syntax highlighting, LSP, and more.
 
 ### [Sublime Text](#sublime-text)
 
-*   [Prisma](https://packagecontrol.io/packages/Prisma) - For Sublime Text 3 & 4 - Provides syntax highlighting for the Prisma Schema Language. ([Source Code](https://github.com/Sublime-Instincts/PrismaHighlight/))
-*   [LSP-prisma](https://packagecontrol.io/packages/LSP-prisma) - For Sublime Text 4 - Language Server helper package for Prisma schema files that uses Prisma's Language Server to provide linting, error checking, formatting, autocompletion, renaming etc. Note: It requires the Prisma package to be installed. ([Source Code](https://github.com/Sublime-Instincts/LSP-prisma))
+-   [Prisma](https://packagecontrol.io/packages/Prisma) - For Sublime Text 3 & 4 - Provides syntax highlighting for the Prisma Schema Language. ([Source Code](https://github.com/Sublime-Instincts/PrismaHighlight/))
+-   [LSP-prisma](https://packagecontrol.io/packages/LSP-prisma) - For Sublime Text 4 - Language Server helper package for Prisma schema files that uses Prisma's Language Server to provide linting, error checking, formatting, autocompletion, renaming etc. Note: It requires the Prisma package to be installed. ([Source Code](https://github.com/Sublime-Instincts/LSP-prisma))
 
 ### [nova](#nova)
 
-*   [nova](https://extensions.panic.com/extensions/robb-j/robb-j.Prisma/) provides syntax highlighting of the Prisma Schema Language and uses the Prisma Language Server.
+-   [nova](https://extensions.panic.com/extensions/robb-j/robb-j.Prisma/) provides syntax highlighting of the Prisma Schema Language and uses the Prisma Language Server.
 
 ### [Helix](#helix)
 
-*   [Helix](https://helix-editor.com/) (from version 22.08) provides syntax highlighting of the Prisma Schema Language and uses the Prisma Language Server.
+-   [Helix](https://helix-editor.com/) (from version 22.08) provides syntax highlighting of the Prisma Schema Language and uses the Prisma Language Server.
 
 ### [CLI autocomplete](#cli-autocomplete)
 
@@ -98,5 +97,3 @@ You can install the official [Prisma VS Code extension](https://marketplace.visu
 You can get IDE-style autocompletion for Prisma CLI using [`inshellisense`](https://github.com/microsoft/inshellisense/tree/main). It supports: bash, zsh, fish, pwsh, powershell (Windows Powershell).
 
 To install, run:
-
-[Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/more/dev-environment/editor-setup.mdx)

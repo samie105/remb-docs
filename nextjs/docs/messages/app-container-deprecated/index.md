@@ -5,13 +5,14 @@ canonical_url: "https://nextjs.org/docs/messages/app-container-deprecated"
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:17:34.962Z"
-content_hash: "db9e485db69d3bdf3076151a40bf3f807eabcad5ee727b9619a45fbe91a6fd2c"
+last_crawled_at: "2026-04-27T18:17:03.289Z"
+content_hash: "d9ff6663a6c3fb983d922bec63eb64178d7b716073531be317889106dff6ab7e"
 menu_path: ["Addressing \"App Container Deprecated\" Error in Next.js"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/index.md", "title": "App Router"}
-nav_next: {"path": "nextjs/docs/messages/blocking-route/index.md", "title": "Uncached data was accessed outside of `<Suspense>`"}
+version: "latest"
+content_language: "en"
 ---
+[Docs](/docs)[Errors](/docs)Addressing "App Container Deprecated" Error in Next.js
 
 # Addressing "App Container Deprecated" Error in Next.js
 
@@ -71,10 +72,6 @@ After making this change, your custom `<App>` should work as expected without th
 
 ## Useful Links[](#useful-links)
 
-*   [Custom App](/docs/pages/building-your-application/routing/custom-app)
+-   [Custom App](/docs/pages/building-your-application/routing/custom-app)
 
 Was this helpful?
-
-supported.
-
-Send

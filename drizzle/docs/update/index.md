@@ -5,17 +5,15 @@ canonical_url: "https://orm.drizzle.team/docs/update"
 docset: "drizzle"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:25:46.668Z"
-content_hash: "302960a4af5accdcd59f41817a3781cb669fcf24d23a8781cf2ed198e454b47e"
+last_crawled_at: "2026-04-27T19:31:02.168Z"
+content_hash: "e3f472ea1a9963edab9353277583625f6d635e88c5395c080e63ae2a94368fa3"
 menu_path: ["SQL Update"]
 section_path: []
-nav_prev: {"path": "drizzle/docs/insert/index.md", "title": "SQL Insert"}
-nav_next: {"path": "drizzle/docs/delete/index.md", "title": "SQL Delete"}
+content_language: "en"
 ---
-
 ## SQL Update
 
-```
+```typescript
 await db.update(users)
   .set({ name: 'Mr. Dan' })
   .where(eq(users.name, 'Dan'));
@@ -23,7 +21,7 @@ await db.update(users)
 
 The object that you pass to `update` should have keys that match column names in your database schema. Values of `undefined` are ignored in the object: to set a column to `null`, pass `null`. You can pass SQL as a value to be used in the update object, like this:
 
-```
+```typescript
 await db.update(users)
   .set({ updatedAt: sql`NOW()` })
   .where(eq(users.name, 'Dan'));
@@ -31,25 +29,13 @@ await db.update(users)
 
 ### Limit[](#limit)
 
-PostgreSQL
-
-MySQL
-
-SQLite
-
-SingleStore
-
-MSSQL
-
-CockroachDB
-
 Use `.limit()` to add `limit` clause to the query - for example:
 
-```
+```typescript
 await db.update(usersTable).set({ verified: true }).limit(2);
 ```
 
-```
+```sql
 update "users" set "verified" = $1 limit $2;
 ```
 
@@ -57,7 +43,7 @@ update "users" set "verified" = $1 limit $2;
 
 Use `.orderBy()` to add `order by` clause to the query, sorting the results by the specified fields:
 
-```
+```typescript
 import { asc, desc } from 'drizzle-orm';
 
 await db.update(usersTable).set({ verified: true }).orderBy(usersTable.name);
@@ -68,7 +54,7 @@ await db.update(usersTable).set({ verified: true }).orderBy(usersTable.name, use
 await db.update(usersTable).set({ verified: true }).orderBy(asc(usersTable.name), desc(usersTable.name2));
 ```
 
-```
+```sql
 update "users" set "verified" = $1 order by "name";
 update "users" set "verified" = $1 order by "name" desc;
 
@@ -78,21 +64,9 @@ update "users" set "verified" = $1 order by "name" asc, "name2" desc;
 
 ### Returning[](#returning)
 
-PostgreSQL
-
-SQLite
-
-MySQL
-
-SingleStore
-
-MSSQL
-
-CockroachDB
-
 You can update a row and get it back in PostgreSQL and SQLite:
 
-```
+```typescript
 const updatedUserId: { updatedId: number }[] = await db.update(users)
   .set({ name: 'Mr. Dan' })
   .where(eq(users.name, 'Dan'))
@@ -101,11 +75,9 @@ const updatedUserId: { updatedId: number }[] = await db.update(users)
 
 ### Output[](#output)
 
-MSSQL
-
 You can update a row and get back the row before updated and after:
 
-```
+```typescript
 type User = typeof users.$inferSelect;
 
 const updatedUserId: User[] = await db.update(users)
@@ -116,7 +88,7 @@ const updatedUserId: User[] = await db.update(users)
 
 To return partial users after update:
 
-```
+```ts
 const updatedUserId: { inserted: { updatedId: number }}[] = await db.update(users)
   .set({ name: 'Mr. Dan' })
   .where(eq(users.name, 'Dan'))
@@ -125,7 +97,7 @@ const updatedUserId: { inserted: { updatedId: number }}[] = await db.update(user
 
 To return rows that were in database before update:
 
-```
+```ts
 type User = typeof users.$inferSelect;
 
 const updatedUserId: { deleted: User }[] = await db.update(users)
@@ -136,7 +108,7 @@ const updatedUserId: { deleted: User }[] = await db.update(users)
 
 To return both previous and new version on a row:
 
-```
+```ts
 type User = typeof users.$inferSelect;
 
 const updatedUserId: { deleted: User, inserted: User }[] = await db.update(users)
@@ -149,7 +121,7 @@ const updatedUserId: { deleted: User, inserted: User }[] = await db.update(users
 
 Using the `with` clause can help you simplify complex queries by splitting them into smaller subqueries called common table expressions (CTEs):
 
-```
+```typescript
 const averagePrice = db.$with('average_price').as(
         db.select({ value: sql`avg(${products.price})`.as('value') }).from(products)
 );
@@ -165,7 +137,7 @@ const result = await db.with(averagePrice)
 		});
 ```
 
-```
+```sql
 with "average_price" as (select avg("price") as "value" from "products") 
 update "products" set "cheap" = $1 
 where "products"."price" < (select * from "average_price") 
@@ -173,18 +145,6 @@ returning "id"
 ```
 
 ## Update … from[](#update--from)
-
-PostgreSQL
-
-MySQL
-
-SQLite
-
-SingleStore
-
-MSSQL
-
-CockroachDB
 
 As the SQLite documentation mentions:
 
@@ -196,7 +156,7 @@ Similarly, the PostgreSQL documentation states:
 
 Drizzle also supports this feature starting from version `drizzle-orm@0.36.3`
 
-```
+```ts
 await db
   .update(users)
   .set({ cityId: cities.id })
@@ -204,7 +164,7 @@ await db
   .where(and(eq(cities.name, 'Seattle'), eq(users.name, 'John')))
 ```
 
-```
+```sql
 update "users" set "city_id" = "cities"."id" 
 from "cities" 
 where ("cities"."name" = $1 and "users"."name" = $2)
@@ -214,7 +174,7 @@ where ("cities"."name" = $1 and "users"."name" = $2)
 
 You can also alias tables that are joined (in PG, you can also alias the updating table too).
 
-```
+```ts
 const c = alias(cities, 'c');
 await db
   .update(users)
@@ -222,26 +182,14 @@ await db
   .from(c);
 ```
 
-```
+```sql
 update "users" set "city_id" = "c"."id" 
 from "cities" "c"
 ```
 
-PostgreSQL
-
-MySQL
-
-SQLite
-
-SingleStore
-
-MSSQL
-
-CockroachDB
-
 In Postgres, you can also return columns from the joined tables.
 
-```
+```ts
 const updatedUsers = await db
   .update(users)
   .set({ cityId: cities.id })
@@ -249,7 +197,7 @@ const updatedUsers = await db
   .returning({ id: users.id, cityName: cities.name });
 ```
 
-```
+```sql
 update "users" set "city_id" = "cities"."id" 
 from "cities" 
 returning "users"."id", "cities"."name"

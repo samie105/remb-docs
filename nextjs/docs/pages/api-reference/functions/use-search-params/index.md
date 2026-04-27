@@ -5,25 +5,24 @@ canonical_url: "https://nextjs.org/docs/pages/api-reference/functions/use-search
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:22:35.643Z"
-content_hash: "e8116648f65ba05a4f896a84648ba646024527263fda869e9b5d1148d25a435c"
+last_crawled_at: "2026-04-27T18:21:59.559Z"
+content_hash: "a3b6ab167e519731da8a3189e452d5eb4822641ed03429ad3b448786c10d8159"
 menu_path: ["useSearchParams"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/pages/api-reference/functions/use-router/index.md", "title": "useRouter"}
-nav_next: {"path": "nextjs/docs/pages/api-reference/functions/userAgent/index.md", "title": "userAgent"}
+version: "latest"
+content_language: "en"
 ---
+[API Reference](/docs/pages/api-reference)[Functions](/docs/pages/api-reference/functions)useSearchParams
 
 # useSearchParams
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 `useSearchParams` is a hook that lets you read the current URL's **query string**.
 
 `useSearchParams` returns a **read-only** version of the [`URLSearchParams`](https://developer.mozilla.org/docs/Web/API/URLSearchParams) interface.
 
 pages/dashboard.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -60,43 +59,23 @@ const searchParams = useSearchParams()
 
 The interface includes utility methods for reading the URL's query string:
 
-*   [`URLSearchParams.get()`](https://developer.mozilla.org/docs/Web/API/URLSearchParams/get): Returns the first value associated with the search parameter. For example:
+-   [`URLSearchParams.get()`](https://developer.mozilla.org/docs/Web/API/URLSearchParams/get): Returns the first value associated with the search parameter. For example:
     
-    URL
+    | URL | `searchParams.get("a")` |
+    | --- | --- |
+    | `/dashboard?a=1` | `'1'` |
+    | `/dashboard?a=` | `''` |
+    | `/dashboard?b=3` | `null` |
+    | `/dashboard?a=1&a=2` | `'1'` _\- use [`getAll()`](https://developer.mozilla.org/docs/Web/API/URLSearchParams/getAll) to get all values_ |
     
-    `searchParams.get("a")`
+-   [`URLSearchParams.has()`](https://developer.mozilla.org/docs/Web/API/URLSearchParams/has): Returns a boolean value indicating if the given parameter exists. For example:
     
-    `/dashboard?a=1`
+    | URL | `searchParams.has("a")` |
+    | --- | --- |
+    | `/dashboard?a=1` | `true` |
+    | `/dashboard?b=3` | `false` |
     
-    `'1'`
-    
-    `/dashboard?a=`
-    
-    `''`
-    
-    `/dashboard?b=3`
-    
-    `null`
-    
-    `/dashboard?a=1&a=2`
-    
-    `'1'` _\- use [`getAll()`](https://developer.mozilla.org/docs/Web/API/URLSearchParams/getAll) to get all values_
-    
-*   [`URLSearchParams.has()`](https://developer.mozilla.org/docs/Web/API/URLSearchParams/has): Returns a boolean value indicating if the given parameter exists. For example:
-    
-    URL
-    
-    `searchParams.has("a")`
-    
-    `/dashboard?a=1`
-    
-    `true`
-    
-    `/dashboard?b=3`
-    
-    `false`
-    
-*   Learn more about other **read-only** methods of [`URLSearchParams`](https://developer.mozilla.org/docs/Web/API/URLSearchParams), including the [`getAll()`](https://developer.mozilla.org/docs/Web/API/URLSearchParams/getAll), [`keys()`](https://developer.mozilla.org/docs/Web/API/URLSearchParams/keys), [`values()`](https://developer.mozilla.org/docs/Web/API/URLSearchParams/values), [`entries()`](https://developer.mozilla.org/docs/Web/API/URLSearchParams/entries), [`forEach()`](https://developer.mozilla.org/docs/Web/API/URLSearchParams/forEach), and [`toString()`](https://developer.mozilla.org/docs/Web/API/URLSearchParams/toString).
+-   Learn more about other **read-only** methods of [`URLSearchParams`](https://developer.mozilla.org/docs/Web/API/URLSearchParams), including the [`getAll()`](https://developer.mozilla.org/docs/Web/API/URLSearchParams/getAll), [`keys()`](https://developer.mozilla.org/docs/Web/API/URLSearchParams/keys), [`values()`](https://developer.mozilla.org/docs/Web/API/URLSearchParams/values), [`entries()`](https://developer.mozilla.org/docs/Web/API/URLSearchParams/entries), [`forEach()`](https://developer.mozilla.org/docs/Web/API/URLSearchParams/forEach), and [`toString()`](https://developer.mozilla.org/docs/Web/API/URLSearchParams/toString).
     
 
 > **Good to know**: `useSearchParams` is a [React Hook](https://react.dev/learn#using-hooks) and cannot be used with classes.
@@ -110,8 +89,6 @@ For pages that are [statically optimized](/docs/pages/building-your-application/
 This is because search params cannot be known during static generation as they depend on the request.
 
 pages/dashboard.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -138,8 +115,6 @@ export default function Dashboard() {
 When using [`getServerSideProps`](/docs/pages/building-your-application/data-fetching/get-server-side-props), the page is server-rendered on each request and `useSearchParams` will return the actual search params immediately:
 
 pages/dashboard.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -174,8 +149,6 @@ export async function getServerSideProps() {
 You can use the [`useRouter`](/docs/pages/api-reference/functions/use-router) hook to update search params:
 
 pages/dashboard.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -229,8 +202,6 @@ export default function Dashboard() {
 
 components/search-bar.tsx
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -255,16 +226,8 @@ export function SearchBar() {
 
 ## Version History[](#version-history)
 
-Version
-
-Changes
-
-`v13.0.0`
-
-`useSearchParams` introduced.
+| Version | Changes |
+| --- | --- |
+| `v13.0.0` | `useSearchParams` introduced. |
 
 Was this helpful?
-
-supported.
-
-Send

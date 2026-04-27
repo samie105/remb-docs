@@ -5,17 +5,18 @@ canonical_url: "https://docs.deno.com/runtime/reference/cli/bundle/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:51:22.458Z"
-content_hash: "86feba1d3b086237403c6681f66e12c3ba1e014f4e287ede3f8696743755e7e2"
+last_crawled_at: "2026-04-27T17:26:27.716Z"
+content_hash: "29e093adfaefafdf34e1238e433f095927d9ef278484a4abd7892d62a36251e5"
 menu_path: ["deno bundle"]
 section_path: []
+content_language: "en"
 ---
-On this page
+**On this page**
 
-*   [Basic usage](#basic-usage)
-*   [Type checking options](#type-checking-options)
-*   [Dependency management options](#dependency-management-options)
-*   [Options](#options)
+-   [Basic usage](#basic-usage)
+-   [Type checking options](#type-checking-options)
+-   [Dependency management options](#dependency-management-options)
+-   [Options](#options)
 
 Info
 

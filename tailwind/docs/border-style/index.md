@@ -5,73 +5,86 @@ canonical_url: "https://tailwindcss.com/docs/border-style"
 docset: "tailwind"
 kind: "framework"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:02:49.797Z"
-content_hash: "35f91d1288619279dc20b95567d8ba238981c8e6af8998625b5d8932fa016752"
+last_crawled_at: "2026-04-27T20:19:17.865Z"
+content_hash: "1b45d5e896fece20c6941b2dee32a9b1a967c9b8178d943babf51fb3f2ba72d9"
 menu_path: ["border-style"]
 section_path: []
-nav_prev: {"path": "tailwind/docs/border-color/index.md", "title": "border-color"}
-nav_next: {"path": "tailwind/docs/outline-width/index.md", "title": "outline-width"}
+content_language: "en"
 ---
+[](/)
+
+[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
+
+1.  Borders
+2.  border-style
+
+Borders
 
 # border-style
 
 Utilities for controlling the style of an element's borders.
 
-Class
-
-Styles
-
-`border-solid`
-
+| Class | Styles |
+| --- | --- |
+| `border-solid` | 
 `border-style: solid;`
 
-`border-dashed`
+ |
+| `border-dashed` | 
 
 `border-style: dashed;`
 
-`border-dotted`
+ |
+| `border-dotted` | 
 
 `border-style: dotted;`
 
-`border-double`
+ |
+| `border-double` | 
 
 `border-style: double;`
 
-`border-hidden`
+ |
+| `border-hidden` | 
 
 `border-style: hidden;`
 
-`border-none`
+ |
+| `border-none` | 
 
 `border-style: none;`
 
-`divide-solid`
+ |
+| `divide-solid` | 
 
 `& > :not(:last-child) { border-style: solid; }`
 
-`divide-dashed`
+ |
+| `divide-dashed` | 
 
 `& > :not(:last-child) { border-style: dashed; }`
 
-`divide-dotted`
+ |
+| `divide-dotted` | 
 
 `& > :not(:last-child) { border-style: dotted; }`
 
-`divide-double`
+ |
+| `divide-double` | 
 
 `& > :not(:last-child) { border-style: double; }`
 
-`divide-hidden`
+ |
+| `divide-hidden` | 
 
 `& > :not(:last-child) { border-style: hidden; }`
 
-`divide-none`
+ |
+| `divide-none` | 
 
 `& > :not(:last-child) { border-style: none; }`
 
-## [Examples](#examples)
-
-### [Basic example](#basic-example)
+ |
 
 Use utilities like `border-solid` and `border-dotted` to control an element's border style:
 
@@ -87,8 +100,6 @@ border-double
 <div class="border-2 border-solid ..."></div><div class="border-2 border-dashed ..."></div><div class="border-2 border-dotted ..."></div><div class="border-4 border-double ..."></div>
 ```
 
-### [Removing a border](#removing-a-border)
-
 Use the `border-none` utility to remove an existing border from an element:
 
 ```
@@ -96,8 +107,6 @@ Use the `border-none` utility to remove an existing border from an element:
 ```
 
 This is most commonly used to remove a border style that was applied at a smaller breakpoint.
-
-### [Setting the divider style](#setting-the-divider-style)
 
 Use utilities like `divide-dashed` and `divide-dotted` to control the border style between child elements:
 
@@ -111,8 +120,6 @@ Use utilities like `divide-dashed` and `divide-dotted` to control the border sty
 <div class="grid grid-cols-3 divide-x-3 divide-dashed divide-indigo-500">  <div>01</div>  <div>02</div>  <div>03</div></div>
 ```
 
-### [Responsive design](#responsive-design)
-
 Prefix a `border-style` utility with a breakpoint variant like `md:` to only apply the utility at medium screen sizes and above:
 
 ```
@@ -123,25 +130,21 @@ Learn more about using variants in the [variants documentation](/docs/hover-focu
 
 ### On this page
 
-*   [Quick reference](#quick-reference)
-*   [Examples](#examples)
-    *   [Basic example](#basic-example)
-    *   [Removing a border](#removing-a-border)
-    *   [Setting the divider style](#setting-the-divider-style)
-    *   [Responsive design](#responsive-design)
+-   [Quick reference](#quick-reference)
+-   [Examples](#examples)
+    -   [Basic example](#basic-example)
+    -   [Removing a border](#removing-a-border)
+    -   [Setting the divider style](#setting-the-divider-style)
+    -   [Responsive design](#responsive-design)
 
-[
+![Build UIs that don’t suck — 5-day mini-course](/_next/static/media/course-promo.d3d6bc78.jpg)
 
-![Refactoring UI](/_next/static/media/book-promo.3012c0f6.png)
+5-day mini-course
 
-From the creators of Tailwind CSS
+Build UIs that don’t suck.
 
-Make your ideas look awesome, without relying on a designer.
+Short, tactical video lessons from the creator of Tailwind CSS, delivered directly to your inbox every day for a week.
 
-> “This is the survival kit I wish I had when I started building apps.”
-> 
-> Derrick Reimer, SavvyCal
-
-](https://www.refactoringui.com/?ref=sidebar)
+[Get the free course](/build-uis-that-dont-suck)
 
 Copyright © 2026 Tailwind Labs Inc.·[Trademark Policy](/brand)

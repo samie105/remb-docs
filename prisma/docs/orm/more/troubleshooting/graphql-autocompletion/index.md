@@ -5,14 +5,12 @@ canonical_url: "https://www.prisma.io/docs/orm/more/troubleshooting/graphql-auto
 docset: "prisma"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:43:36.259Z"
-content_hash: "121ce0ac3b2438a9986e54eb79e095e0c31da07c1904f54554e64fdd66517ffc"
+last_crawled_at: "2026-04-27T19:37:40.629Z"
+content_hash: "1bf6d04816ce24225951a3b31654e9c4b6bab8be545b57c760ee724398e8ff2c"
 menu_path: ["GraphQL autocompletion"]
 section_path: []
-nav_prev: {"path": "prisma/docs/orm/more/troubleshooting/check-constraints/index.md", "title": "Check constraints"}
-nav_next: {"path": "prisma/docs/orm/more/troubleshooting/many-to-many-relations/index.md", "title": "Many-to-many relations"}
+content_language: "en"
 ---
-
 Troubleshooting
 
 Get autocompletion for Prisma Client queries in GraphQL resolvers with plain JavaScript
@@ -105,5 +103,3 @@ const resolvers = {
   },
 };
 ```
-
-[Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/more/troubleshooting/graphql-autocompletion.mdx)

@@ -5,30 +5,29 @@ canonical_url: "https://nextjs.org/docs/pages/getting-started/images"
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:23:47.178Z"
-content_hash: "d775a59bdc6f9a3603a92efde0b4ad12bbddfc2ea4d9f5853cd9f7ab6ff18404"
+last_crawled_at: "2026-04-27T18:23:05.211Z"
+content_hash: "cfefb969259d9c09bc71df9ad34a4d76d3a8dc6f2896152032f6d581957a0ebe"
 menu_path: ["Image Optimization"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/pages/getting-started/installation/index.md", "title": "Create a new Next.js application"}
-nav_next: {"path": "nextjs/docs/pages/getting-started/fonts/index.md", "title": "How to use fonts"}
+version: "latest"
+content_language: "en"
 ---
+[Pages Router](/docs/pages)[Getting Started](/docs/pages/getting-started)Images
 
 # Image Optimization
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 The Next.js [`<Image>`](/docs/app/api-reference/components/image) component extends the HTML `<img>` element to provide:
 
-*   **Size optimization:** Automatically serving correctly sized images for each device, using modern image formats like WebP.
-*   **Visual stability:** Preventing [layout shift](https://web.dev/articles/cls) automatically when images are loading.
-*   **Faster page loads:** Only loading images when they enter the viewport using native browser lazy loading, with optional blur-up placeholders.
-*   **Asset flexibility:** Resizing images on-demand, even images stored on remote servers.
+-   **Size optimization:** Automatically serving correctly sized images for each device, using modern image formats like WebP.
+-   **Visual stability:** Preventing [layout shift](https://web.dev/articles/cls) automatically when images are loading.
+-   **Faster page loads:** Only loading images when they enter the viewport using native browser lazy loading, with optional blur-up placeholders.
+-   **Asset flexibility:** Resizing images on-demand, even images stored on remote servers.
 
 To start using `<Image>`, import it from `next/image` and render it within your component.
 
 app/page.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -48,11 +47,9 @@ The `src` property can be a [local](#local-images) or [remote](#remote-images) i
 
 You can store static files, like images and fonts, under a folder called [`public`](/docs/app/api-reference/file-conventions/public-folder) in the root directory. Files inside `public` can then be referenced by your code starting from the base URL (`/`).
 
-![Folder structure showing app and public folders](/_next/image?url=https%3A%2F%2Fh8DxKfmAPhn8O0p3.public.blob.vercel-storage.com%2Fdocs%2Flight%2Fpublic-folder.png&w=3840&q=75)![Folder structure showing app and public folders](/_next/image?url=https%3A%2F%2Fh8DxKfmAPhn8O0p3.public.blob.vercel-storage.com%2Fdocs%2Fdark%2Fpublic-folder.png&w=3840&q=75)
+![Folder structure showing app and public folders](https://h8DxKfmAPhn8O0p3.public.blob.vercel-storage.com/docs/light/public-folder.png)
 
 app/page.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -74,8 +71,6 @@ export default function Page() {
 If the image is statically imported, Next.js will automatically determine the intrinsic [`width`](/docs/app/api-reference/components/image#width-and-height) and [`height`](/docs/app/api-reference/components/image#width-and-height). These values are used to determine the image ratio and prevent [Cumulative Layout Shift](https://web.dev/articles/cls) while your image is loading.
 
 app/page.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -102,8 +97,6 @@ export default function Page() {
 If you can't use a static `import` for your images, you can use a dynamic `import()` in a Server Component to still get automatic `width`, `height`, and `blurDataURL`:
 
 app/blog/\[slug\]/page.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -141,8 +134,6 @@ To use a remote image, you can provide a URL string for the `src` property.
 
 app/page.tsx
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -165,8 +156,6 @@ Since Next.js does not have access to remote files during the build process, you
 To safely allow images from remote servers, you need to define a list of supported URL patterns in [`next.config.js`](/docs/app/api-reference/config/next-config-js). Be as specific as possible to prevent malicious usage. For example, the following configuration will only allow images from a specific AWS S3 bucket:
 
 next.config.ts
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -203,7 +192,3 @@ Optimize Images in your Next.js Application using the built-in \`next/image\` Co
 ](/docs/pages/api-reference/components/image)
 
 Was this helpful?
-
-supported.
-
-Send

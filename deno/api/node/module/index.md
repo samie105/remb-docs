@@ -5,18 +5,17 @@ canonical_url: "https://docs.deno.com/api/node/module/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:37:46.718Z"
-content_hash: "9b170d1949b70d1a8f341dd2c41b76135a87a04101ffccf68fc70bacb8d22652"
+last_crawled_at: "2026-04-27T17:08:34.835Z"
+content_hash: "2d54f2d7b1de98436968c48ddc9ecd314d2dcbe2c51cee313aff43e99d8bd2c2"
 menu_path: ["module - Node documentation"]
 section_path: []
+content_language: "en"
 ---
 ### Usage in Deno
 
 ```typescript
 import * as mod from "node:module";
 ```
-
-### Classes [#](#Classes)
 
 c
 
@@ -28,16 +27,16 @@ N
 
 No documentation available
 
-*   [children](.././module/~/Module#property_children)
-*   [exports](.././module/~/Module#property_exports)
-*   [filename](.././module/~/Module#property_filename)
-*   [id](.././module/~/Module#property_id)
-*   [isPreloading](.././module/~/Module#property_ispreloading)
-*   [loaded](.././module/~/Module#property_loaded)
-*   [parent](.././module/~/Module#property_parent)
-*   [path](.././module/~/Module#property_path)
-*   [paths](.././module/~/Module#property_paths)
-*   [require](.././module/~/Module#method_require_0)
+-   [children](.././module/~/Module#property_children)
+-   [exports](.././module/~/Module#property_exports)
+-   [filename](.././module/~/Module#property_filename)
+-   [id](.././module/~/Module#property_id)
+-   [isPreloading](.././module/~/Module#property_ispreloading)
+-   [loaded](.././module/~/Module#property_loaded)
+-   [parent](.././module/~/Module#property_parent)
+-   [path](.././module/~/Module#property_path)
+-   [paths](.././module/~/Module#property_paths)
+-   [require](.././module/~/Module#method_require_0)
 
 c
 
@@ -45,11 +44,9 @@ c
 
 No documentation available
 
-*   [findEntry](.././module/~/Module.SourceMap#method_findentry_0)
-*   [findOrigin](.././module/~/Module.SourceMap#method_findorigin_0)
-*   [payload](.././module/~/Module.SourceMap#property_payload)
-
-### Functions [#](#Functions)
+-   [findEntry](.././module/~/Module.SourceMap#method_findentry_0)
+-   [findOrigin](.././module/~/Module.SourceMap#method_findorigin_0)
+-   [payload](.././module/~/Module.SourceMap#property_payload)
 
 f
 
@@ -142,18 +139,16 @@ f
 
 No documentation available
 
-### Interfaces [#](#Interfaces)
-
 I
 
 [ImportMeta](.././module/~/ImportMeta "ImportMeta")
 
 No documentation available
 
-*   [dirname](.././module/~/ImportMeta#property_dirname)
-*   [filename](.././module/~/ImportMeta#property_filename)
-*   [resolve](.././module/~/ImportMeta#method_resolve_0)
-*   [url](.././module/~/ImportMeta#property_url)
+-   [dirname](.././module/~/ImportMeta#property_dirname)
+-   [filename](.././module/~/ImportMeta#property_filename)
+-   [resolve](.././module/~/ImportMeta#method_resolve_0)
+-   [url](.././module/~/ImportMeta#property_url)
 
 I
 
@@ -161,9 +156,9 @@ I
 
 No documentation available
 
-*   [directory](.././module/~/Module.EnableCompileCacheResult#property_directory)
-*   [message](.././module/~/Module.EnableCompileCacheResult#property_message)
-*   [status](.././module/~/Module.EnableCompileCacheResult#property_status)
+-   [directory](.././module/~/Module.EnableCompileCacheResult#property_directory)
+-   [message](.././module/~/Module.EnableCompileCacheResult#property_message)
+-   [status](.././module/~/Module.EnableCompileCacheResult#property_status)
 
 I
 
@@ -171,7 +166,7 @@ I
 
 No documentation available
 
-*   [type](.././module/~/Module.ImportAttributes#property_type)
+-   [type](.././module/~/Module.ImportAttributes#property_type)
 
 I
 
@@ -179,9 +174,9 @@ I
 
 No documentation available
 
-*   [format](.././module/~/Module.LoadFnOutput#property_format)
-*   [shortCircuit](.././module/~/Module.LoadFnOutput#property_shortcircuit)
-*   [source](.././module/~/Module.LoadFnOutput#property_source)
+-   [format](.././module/~/Module.LoadFnOutput#property_format)
+-   [shortCircuit](.././module/~/Module.LoadFnOutput#property_shortcircuit)
+-   [source](.././module/~/Module.LoadFnOutput#property_source)
 
 I
 
@@ -189,9 +184,9 @@ I
 
 No documentation available
 
-*   [conditions](.././module/~/Module.LoadHookContext#property_conditions)
-*   [format](.././module/~/Module.LoadHookContext#property_format)
-*   [importAttributes](.././module/~/Module.LoadHookContext#property_importattributes)
+-   [conditions](.././module/~/Module.LoadHookContext#property_conditions)
+-   [format](.././module/~/Module.LoadHookContext#property_format)
+-   [importAttributes](.././module/~/Module.LoadHookContext#property_importattributes)
 
 I
 
@@ -199,9 +194,9 @@ I
 
 No documentation available
 
-*   [data](.././module/~/Module.RegisterOptions#property_data)
-*   [parentURL](.././module/~/Module.RegisterOptions#property_parenturl)
-*   [transferList](.././module/~/Module.RegisterOptions#property_transferlist)
+-   [data](.././module/~/Module.RegisterOptions#property_data)
+-   [parentURL](.././module/~/Module.RegisterOptions#property_parenturl)
+-   [transferList](.././module/~/Module.RegisterOptions#property_transferlist)
 
 I
 
@@ -209,10 +204,10 @@ I
 
 No documentation available
 
-*   [format](.././module/~/Module.ResolveFnOutput#property_format)
-*   [importAttributes](.././module/~/Module.ResolveFnOutput#property_importattributes)
-*   [shortCircuit](.././module/~/Module.ResolveFnOutput#property_shortcircuit)
-*   [url](.././module/~/Module.ResolveFnOutput#property_url)
+-   [format](.././module/~/Module.ResolveFnOutput#property_format)
+-   [importAttributes](.././module/~/Module.ResolveFnOutput#property_importattributes)
+-   [shortCircuit](.././module/~/Module.ResolveFnOutput#property_shortcircuit)
+-   [url](.././module/~/Module.ResolveFnOutput#property_url)
 
 I
 
@@ -220,9 +215,9 @@ I
 
 No documentation available
 
-*   [conditions](.././module/~/Module.ResolveHookContext#property_conditions)
-*   [importAttributes](.././module/~/Module.ResolveHookContext#property_importattributes)
-*   [parentURL](.././module/~/Module.ResolveHookContext#property_parenturl)
+-   [conditions](.././module/~/Module.ResolveHookContext#property_conditions)
+-   [importAttributes](.././module/~/Module.ResolveHookContext#property_importattributes)
+-   [parentURL](.././module/~/Module.ResolveHookContext#property_parenturl)
 
 I
 
@@ -230,7 +225,7 @@ I
 
 No documentation available
 
-*   [lineLengths](.././module/~/Module.SourceMapConstructorOptions#property_linelengths)
+-   [lineLengths](.././module/~/Module.SourceMapConstructorOptions#property_linelengths)
 
 I
 
@@ -238,13 +233,13 @@ I
 
 No documentation available
 
-*   [file](.././module/~/Module.SourceMapPayload#property_file)
-*   [mappings](.././module/~/Module.SourceMapPayload#property_mappings)
-*   [names](.././module/~/Module.SourceMapPayload#property_names)
-*   [sourceRoot](.././module/~/Module.SourceMapPayload#property_sourceroot)
-*   [sources](.././module/~/Module.SourceMapPayload#property_sources)
-*   [sourcesContent](.././module/~/Module.SourceMapPayload#property_sourcescontent)
-*   [version](.././module/~/Module.SourceMapPayload#property_version)
+-   [file](.././module/~/Module.SourceMapPayload#property_file)
+-   [mappings](.././module/~/Module.SourceMapPayload#property_mappings)
+-   [names](.././module/~/Module.SourceMapPayload#property_names)
+-   [sourceRoot](.././module/~/Module.SourceMapPayload#property_sourceroot)
+-   [sources](.././module/~/Module.SourceMapPayload#property_sources)
+-   [sourcesContent](.././module/~/Module.SourceMapPayload#property_sourcescontent)
+-   [version](.././module/~/Module.SourceMapPayload#property_version)
 
 I
 
@@ -252,11 +247,11 @@ I
 
 No documentation available
 
-*   [generatedColumn](.././module/~/Module.SourceMapping#property_generatedcolumn)
-*   [generatedLine](.././module/~/Module.SourceMapping#property_generatedline)
-*   [originalColumn](.././module/~/Module.SourceMapping#property_originalcolumn)
-*   [originalLine](.././module/~/Module.SourceMapping#property_originalline)
-*   [originalSource](.././module/~/Module.SourceMapping#property_originalsource)
+-   [generatedColumn](.././module/~/Module.SourceMapping#property_generatedcolumn)
+-   [generatedLine](.././module/~/Module.SourceMapping#property_generatedline)
+-   [originalColumn](.././module/~/Module.SourceMapping#property_originalcolumn)
+-   [originalLine](.././module/~/Module.SourceMapping#property_originalline)
+-   [originalSource](.././module/~/Module.SourceMapping#property_originalsource)
 
 I
 
@@ -264,10 +259,10 @@ I
 
 No documentation available
 
-*   [columnNumber](.././module/~/Module.SourceOrigin#property_columnnumber)
-*   [fileName](.././module/~/Module.SourceOrigin#property_filename)
-*   [lineNumber](.././module/~/Module.SourceOrigin#property_linenumber)
-*   [name](.././module/~/Module.SourceOrigin#property_name)
+-   [columnNumber](.././module/~/Module.SourceOrigin#property_columnnumber)
+-   [fileName](.././module/~/Module.SourceOrigin#property_filename)
+-   [lineNumber](.././module/~/Module.SourceOrigin#property_linenumber)
+-   [name](.././module/~/Module.SourceOrigin#property_name)
 
 I
 
@@ -275,9 +270,9 @@ I
 
 No documentation available
 
-*   [mode](.././module/~/Module.StripTypeScriptTypesOptions#property_mode)
-*   [sourceMap](.././module/~/Module.StripTypeScriptTypesOptions#property_sourcemap)
-*   [sourceUrl](.././module/~/Module.StripTypeScriptTypesOptions#property_sourceurl)
+-   [mode](.././module/~/Module.StripTypeScriptTypesOptions#property_mode)
+-   [sourceMap](.././module/~/Module.StripTypeScriptTypesOptions#property_sourcemap)
+-   [sourceUrl](.././module/~/Module.StripTypeScriptTypesOptions#property_sourceurl)
 
 I
 
@@ -285,10 +280,10 @@ I
 
 No documentation available
 
-*   [cache](.././module/~/Require#property_cache)
-*   [extensions](.././module/~/Require#property_extensions)
-*   [main](.././module/~/Require#property_main)
-*   [resolve](.././module/~/Require#property_resolve)
+-   [cache](.././module/~/Require#property_cache)
+-   [extensions](.././module/~/Require#property_extensions)
+-   [main](.././module/~/Require#property_main)
+-   [resolve](.././module/~/Require#property_resolve)
 
 I
 
@@ -296,7 +291,7 @@ I
 
 No documentation available
 
-*   [paths](.././module/~/RequireResolve#method_paths_0)
+-   [paths](.././module/~/RequireResolve#method_paths_0)
 
 I
 
@@ -304,7 +299,7 @@ I
 
 No documentation available
 
-*   [paths](.././module/~/RequireResolveOptions#property_paths)
+-   [paths](.././module/~/RequireResolveOptions#property_paths)
 
 I
 
@@ -324,11 +319,9 @@ I
 
 No documentation available
 
-*   [.js](.././module/~/RequireExtensions#property__js)
-*   [.json](.././module/~/RequireExtensions#property__json)
-*   [.node](.././module/~/RequireExtensions#property__node)
-
-### Namespaces [#](#Namespaces)
+-   [.js](.././module/~/RequireExtensions#property__js)
+-   [.json](.././module/~/RequireExtensions#property__json)
+-   [.node](.././module/~/RequireExtensions#property__node)
 
 N
 
@@ -341,8 +334,6 @@ N
 [Module.constants.compileCacheStatus](.././module/~/Module.constants.compileCacheStatus "Module.constants.compileCacheStatus")
 
 The following constants are returned as the `status` field in the object returned by enableCompileCache to indicate the result of the attempt to enable the [module compile cache](https://nodejs.org/docs/latest-v22.x/api/module.html#module-compile-cache).
-
-### Type Aliases [#](<#Type Aliases>)
 
 T
 
@@ -373,8 +364,6 @@ T
 [Module.ResolveHook](.././module/~/Module.ResolveHook "Module.ResolveHook")
 
 The `resolve` hook chain is responsible for telling Node.js where to find and how to cache a given `import` statement or expression, or `require` call. It can optionally return a format (such as `'module'`) as a hint to the `load` hook. If a format is specified, the `load` hook is ultimately responsible for providing the final `format` value (and it is free to ignore the hint provided by `resolve`); if `resolve` provides a `format`, a custom `load` hook is required even if only to pass the value to the Node.js default `load` hook.
-
-### Variables [#](#Variables)
 
 v
 

@@ -5,32 +5,22 @@ canonical_url: "https://orm.drizzle.team/docs/kit-overview"
 docset: "drizzle"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:09:12.152Z"
-content_hash: "b425acccd7bcfc24866390621f2ac9b8806b2d7aa4a645ae2a424a87ae23e3cf"
+last_crawled_at: "2026-04-27T19:06:31.374Z"
+content_hash: "f1ce178180d75ce084bc7f9af4a3cbce9f69b93bec905e1ede1780b52707f887"
 menu_path: ["Migrations with Drizzle Kit"]
 section_path: []
-nav_prev: {"path": "drizzle/docs/relations/index.md", "title": "Drizzle soft relations"}
-nav_next: {"path": "drizzle/docs/drizzle-kit-generate/index.md", "title": "drizzle-kit generate"}
+content_language: "en"
 ---
-
 ## Migrations with Drizzle Kit
 
 This guide assumes familiarity with:
 
-*   Get started with Drizzle and `drizzle-kit` - [read here](drizzle/docs/get-started/index.md)
-*   Drizzle schema fundamentals - [read here](drizzle/docs/sql-schema-declaration/index.md)
-*   Database connection basics - [read here](drizzle/docs/connect-overview/index.md)
-*   Drizzle migrations fundamentals - [read here](drizzle/docs/migrations/index.md)
+-   Get started with Drizzle and `drizzle-kit` - [read here](https://orm.drizzle.team/docs/get-started)
+-   Drizzle schema fundamentals - [read here](https://orm.drizzle.team/docs/sql-schema-declaration)
+-   Database connection basics - [read here](https://orm.drizzle.team/docs/connect-overview)
+-   Drizzle migrations fundamentals - [read here](https://orm.drizzle.team/docs/migrations)
 
 **Drizzle Kit** is a CLI tool for managing SQL database migrations with Drizzle.
-
-npm
-
-yarn
-
-pnpm
-
-bun
 
 ```
 npm i -D drizzle-kit
@@ -51,14 +41,6 @@ bun add -D drizzle-kit
 IMPORTANT
 
 Based on your schema, Drizzle Kit let’s you generate and run SQL migration files, push schema directly to the database, pull schema from database, spin up drizzle studio and has a couple of utility commands.
-
-npm
-
-yarn
-
-pnpm
-
-bun
 
 ```
 npx drizzle-kit generate
@@ -100,38 +82,20 @@ bunx drizzle-kit up
 bunx drizzle-kit studio
 ```
 
-[`drizzle-kit generate`](drizzle/docs/drizzle-kit-generate/index.md)
+|  |  |
+| --- | --- |
+| [`drizzle-kit generate`](https://orm.drizzle.team/docs/drizzle-kit-generate) | lets you generate SQL migration files based on your Drizzle schema either upon declaration or on subsequent changes, [see here](https://orm.drizzle.team/docs/drizzle-kit-generate). |
+| [`drizzle-kit migrate`](https://orm.drizzle.team/docs/drizzle-kit-migrate) | lets you apply generated SQL migration files to your database, [see here](https://orm.drizzle.team/docs/drizzle-kit-migrate). |
+| [`drizzle-kit pull`](https://orm.drizzle.team/docs/drizzle-kit-pull) | lets you pull(introspect) database schema, convert it to Drizzle schema and save it to your codebase, [see here](https://orm.drizzle.team/docs/drizzle-kit-pull) |
+| [`drizzle-kit push`](https://orm.drizzle.team/docs/drizzle-kit-push) | lets you push your Drizzle schema to database either upon declaration or on subsequent schema changes, [see here](https://orm.drizzle.team/docs/drizzle-kit-push) |
+| [`drizzle-kit studio`](https://orm.drizzle.team/docs/drizzle-kit-studio) | will connect to your database and spin up proxy server for Drizzle Studio which you can use for convenient database browsing, [see here](https://orm.drizzle.team/docs/drizzle-kit-studio) |
+| [`drizzle-kit check`](https://orm.drizzle.team/docs/drizzle-kit-check) | will walk through all generate migrations and check for any race conditions(collisions) of generated migrations, [see here](https://orm.drizzle.team/docs/drizzle-kit-check) |
+| [`drizzle-kit up`](https://orm.drizzle.team/docs/drizzle-kit-up) | used to upgrade snapshots of previously generated migrations, [see here](https://orm.drizzle.team/docs/drizzle-kit-up) |
 
-lets you generate SQL migration files based on your Drizzle schema either upon declaration or on subsequent changes, [see here](drizzle/docs/drizzle-kit-generate/index.md).
-
-[`drizzle-kit migrate`](drizzle/docs/drizzle-kit-migrate/index.md)
-
-lets you apply generated SQL migration files to your database, [see here](drizzle/docs/drizzle-kit-migrate/index.md).
-
-[`drizzle-kit pull`](drizzle/docs/drizzle-kit-pull/index.md)
-
-lets you pull(introspect) database schema, convert it to Drizzle schema and save it to your codebase, [see here](drizzle/docs/drizzle-kit-pull/index.md)
-
-[`drizzle-kit push`](drizzle/docs/drizzle-kit-push/index.md)
-
-lets you push your Drizzle schema to database either upon declaration or on subsequent schema changes, [see here](drizzle/docs/drizzle-kit-push/index.md)
-
-[`drizzle-kit studio`](drizzle/docs/drizzle-kit-studio/index.md)
-
-will connect to your database and spin up proxy server for Drizzle Studio which you can use for convenient database browsing, [see here](drizzle/docs/drizzle-kit-studio/index.md)
-
-[`drizzle-kit check`](drizzle/docs/drizzle-kit-check/index.md)
-
-will walk through all generate migrations and check for any race conditions(collisions) of generated migrations, [see here](drizzle/docs/drizzle-kit-check/index.md)
-
-[`drizzle-kit up`](drizzle/docs/drizzle-kit-up/index.md)
-
-used to upgrade snapshots of previously generated migrations, [see here](drizzle/docs/drizzle-kit-up/index.md)
-
-Drizzle Kit is configured through [drizzle.config.ts](drizzle/docs/drizzle-config-file/index.md) configuration file or via CLI params.  
+Drizzle Kit is configured through [drizzle.config.ts](https://orm.drizzle.team/docs/drizzle-config-file) configuration file or via CLI params.  
 It’s required to at least provide SQL `dialect` and `schema` path for Drizzle Kit to know how to generate migrations.
 
-```
+```plaintext
 📦 <project root>
  ├ 📂 drizzle
  ├ 📂 src
@@ -145,7 +109,7 @@ simple config
 
 extended config
 
-```
+```ts
 import { defineConfig } from "drizzle-kit";
 
 export default defineConfig({
@@ -154,7 +118,7 @@ export default defineConfig({
 });
 ```
 
-```
+```ts
 import { defineConfig } from "drizzle-kit";
 
 export default defineConfig({
@@ -189,14 +153,6 @@ export default defineConfig({
 
 You can provide Drizzle Kit config path via CLI param, it’s very useful when you have multiple database stages or multiple databases or different databases on the same project:
 
-npm
-
-yarn
-
-pnpm
-
-bun
-
 ```
 npx drizzle-kit push --config=drizzle-dev.drizzle.config
 npx drizzle-kit push --config=drizzle-prod.drizzle.config
@@ -217,7 +173,7 @@ bunx drizzle-kit push --config=drizzle-dev.drizzle.config
 bunx drizzle-kit push --config=drizzle-prod.drizzle.config
 ```
 
-```
+```plaintext
 📦 <project root>
  ├ 📂 drizzle
  ├ 📂 src

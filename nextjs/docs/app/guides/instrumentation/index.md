@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/app/guides/instrumentation"
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:14:52.453Z"
-content_hash: "b6421b2d6b6204c2a36de6fdde6a454cba4b064a00a4448e3a1babc9fbe2d3b6"
+last_crawled_at: "2026-04-27T18:13:45.090Z"
+content_hash: "4292d405dd9e861a1a94ffcd2bda751ee239a87afb7d1adbe3ebc833a7dfdc71"
 menu_path: ["How to set up instrumentation"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/guides/incremental-static-regeneration/index.md", "title": "How to implement Incremental Static Regeneration (ISR)"}
-nav_next: {"path": "nextjs/docs/app/guides/internationalization/index.md", "title": "Internationalization"}
+version: "latest"
+content_language: "en"
 ---
+[App Router](/docs/app)[Guides](/docs/app/guides)Instrumentation
 
 # How to set up instrumentation
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 Instrumentation is the process of using code to integrate monitoring and logging tools into your application. This allows you to track the performance and behavior of your application, and to debug issues in production.
 
@@ -28,8 +29,6 @@ Then, export a `register` function in the file. This function will be called **o
 For example, to use Next.js with [OpenTelemetry](https://opentelemetry.io/) and [@vercel/otel](https://vercel.com/docs/observability/otel-overview):
 
 instrumentation.ts
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -45,8 +44,8 @@ See the [Next.js with OpenTelemetry example](https://github.com/vercel/next.js/t
 
 > **Good to know**:
 > 
-> *   The `instrumentation` file should be in the root of your project and not inside the `app` or `pages` directory. If you're using the `src` folder, then place the file inside `src` alongside `pages` and `app`.
-> *   If you use the [`pageExtensions` config option](/docs/app/api-reference/config/next-config-js/pageExtensions) to add a suffix, you will also need to update the `instrumentation` filename to match.
+> -   The `instrumentation` file should be in the root of your project and not inside the `app` or `pages` directory. If you're using the `src` folder, then place the file inside `src` alongside `pages` and `app`.
+> -   If you use the [`pageExtensions` config option](/docs/app/api-reference/config/next-config-js/pageExtensions) to add a suffix, you will also need to update the `instrumentation` filename to match.
 
 ## Examples[](#examples)
 
@@ -57,8 +56,6 @@ Sometimes, it may be useful to import a file in your code because of the side ef
 We recommend importing files using JavaScript `import` syntax within your `register` function. The following example demonstrates a basic usage of `import` in a `register` function:
 
 instrumentation.ts
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -77,8 +74,6 @@ export async function register() {
 Next.js calls `register` in all environments, so it's important to conditionally import any code that doesn't support specific runtimes (e.g. [Edge or Node.js](/docs/app/api-reference/edge)). You can use the `NEXT_RUNTIME` environment variable to get the current environment:
 
 instrumentation.ts
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -104,20 +99,4 @@ API reference for the instrumentation.js file.
 
 ](/docs/app/api-reference/file-conventions/instrumentation)
 
-[Previous
-
-ISR
-
-](/docs/app/guides/incremental-static-regeneration)
-
-[Next
-
-Internationalization
-
-](/docs/app/guides/internationalization)
-
 Was this helpful?
-
-supported.
-
-Send

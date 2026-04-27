@@ -5,14 +5,12 @@ canonical_url: "https://orm.drizzle.team/docs/sql-schema-declaration"
 docset: "drizzle"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:21:44.097Z"
-content_hash: "ec11d5d0a002d99f1dfe667eec70befbf0401d158b93ab5f781be3de86f2beea"
+last_crawled_at: "2026-04-27T19:25:16.867Z"
+content_hash: "ccaedaad8129fc639788b9e7014a6c73821f3933537df2129994664fe05c7465"
 menu_path: ["Drizzle schema"]
 section_path: []
-nav_prev: {"path": "drizzle/docs/relations-v1-v2/index.md", "title": "Migrating to Relational Queries version 2"}
-nav_next: {"path": "drizzle/docs/relations-schema-declaration/index.md", "title": "Drizzle Relations Fundamentals"}
+content_language: "en"
 ---
-
 Drizzle lets you define a schema in TypeScript with various models and properties supported by the underlying database. When you define your schema, it serves as the source of truth for future modifications in queries (using Drizzle-ORM) and migrations (using Drizzle-Kit).
 
 If you are using Drizzle-Kit for the migration process, make sure to export all the models defined in your schema files so that Drizzle-Kit can import them and use them in the migration diff process.
@@ -23,7 +21,7 @@ Using callback
 
 Using import \*
 
-```
+```ts
 import { integer, pgTable, varchar } from "drizzle-orm/pg-core";
 
 export const usersTable = pgTable("users", {
@@ -34,7 +32,7 @@ export const usersTable = pgTable("users", {
 });
 ```
 
-```
+```ts
 import { pgTable } from "drizzle-orm/pg-core";
 
 export const usersTable = pgTable("users", (t) => ({
@@ -45,7 +43,7 @@ export const usersTable = pgTable("users", (t) => ({
 }));
 ```
 
-```
+```ts
 import * as p from "drizzle-orm/pg-core";
 
 export const usersTable = p.pgTable("users", {
@@ -70,16 +68,16 @@ This approach works well if you don’t have too many table models defined, or i
 
 Example:
 
-```
+```plaintext
 📦 <project root>
  └ 📂 src
     └ 📂 db
        └ 📜 schema.ts
 ```
 
-In the `drizzle.config.ts` file, you need to specify the path to your schema file. With this configuration, Drizzle will read from the `schema.ts` file and use this information during the migration generation process. For more information about the `drizzle.config.ts` file and migrations with Drizzle, please check: [link](drizzle/docs/drizzle-config-file/index.md)
+In the `drizzle.config.ts` file, you need to specify the path to your schema file. With this configuration, Drizzle will read from the `schema.ts` file and use this information during the migration generation process. For more information about the `drizzle.config.ts` file and migrations with Drizzle, please check: [link](https://orm.drizzle.team/docs/drizzle-config-file)
 
-```
+```ts
 import { defineConfig } from "drizzle-kit";
 
 export default defineConfig({
@@ -94,7 +92,7 @@ You can place your Drizzle models — such as tables, enums, sequences, etc. —
 
 One use case would be to separate each table into its own file.
 
-```
+```plaintext
 📦 <project root>
  └ 📂 src
     └ 📂 db
@@ -107,9 +105,9 @@ One use case would be to separate each table into its own file.
           └ 📜 etc.ts
 ```
 
-In the `drizzle.config.ts` file, you need to specify the path to your schema folder. With this configuration, Drizzle will read from the `schema` folder and find all the files recursively and get all the drizzle tables from there. For more information about the `drizzle.config.ts` file and migrations with Drizzle, please check: [link](drizzle/docs/drizzle-config-file/index.md)
+In the `drizzle.config.ts` file, you need to specify the path to your schema folder. With this configuration, Drizzle will read from the `schema` folder and find all the files recursively and get all the drizzle tables from there. For more information about the `drizzle.config.ts` file and migrations with Drizzle, please check: [link](https://orm.drizzle.team/docs/drizzle-config-file)
 
-```
+```ts
 import { defineConfig } from "drizzle-kit";
 
 export default defineConfig({
@@ -120,7 +118,7 @@ export default defineConfig({
 
 You can also group them in any way you like, such as creating groups for user-related tables, messaging-related tables, product-related tables, etc.
 
-```
+```plaintext
 📦 <project root>
  └ 📂 src
     └ 📂 db
@@ -134,13 +132,13 @@ You can also group them in any way you like, such as creating groups for user-re
 
 Drizzle schema consists of several model types from database you are using. With drizzle you can specify:
 
-*   Tables with columns, constraints, etc.
-*   Schemas(PostgreSQL only)
-*   Enums
-*   Sequences(PostgreSQL only)
-*   Views
-*   Materialized Views
-*   etc.
+-   Tables with columns, constraints, etc.
+-   Schemas(PostgreSQL only)
+-   Enums
+-   Sequences(PostgreSQL only)
+-   Views
+-   Materialized Views
+-   etc.
 
 Let’s go one by one and check how the schema should be defined with drizzle
 
@@ -156,7 +154,7 @@ MySQL Table
 
 SQLite Table
 
-```
+```ts
 import { pgTable, integer } from "drizzle-orm/pg-core"
 
 export const users = pgTable('users', {
@@ -164,7 +162,7 @@ export const users = pgTable('users', {
 });
 ```
 
-```
+```ts
 import { mysqlTable, int } from "drizzle-orm/mysql-core"
 
 export const users = mysqlTable('users', {
@@ -172,7 +170,7 @@ export const users = mysqlTable('users', {
 });
 ```
 
-```
+```ts
 import { sqliteTable, integer } from "drizzle-orm/sqlite-core"
 
 export const users = sqliteTable('users', {
@@ -182,12 +180,12 @@ export const users = sqliteTable('users', {
 
 By default, Drizzle will use the TypeScript key names for columns in database queries. Therefore, the schema and query from the example will generate the SQL query shown below
 
-This example uses a db object, whose initialization is not covered in this part of the documentation. To learn how to connect to the database, please refer to the [Connections Docs](drizzle/docs/get-started-postgresql/index.md)
+This example uses a db object, whose initialization is not covered in this part of the documentation. To learn how to connect to the database, please refer to the [Connections Docs](https://orm.drizzle.team/docs/get-started-postgresql)
 
   
 **TypeScript key = database key**
 
-```
+```ts
 // schema.ts
 import { integer, pgTable, varchar } from "drizzle-orm/pg-core";
 
@@ -197,18 +195,18 @@ export const users = pgTable('users', {
 })
 ```
 
-```
+```ts
 // query.ts
 await db.select().from(users);
 ```
 
-```
+```sql
 SELECT "id", "first_name" from users;
 ```
 
 If you want to use different names in your TypeScript code and in the database, you can use column aliases
 
-```
+```ts
 // schema.ts
 import { integer, pgTable, varchar } from "drizzle-orm/pg-core";
 
@@ -218,12 +216,12 @@ export const users = pgTable('users', {
 })
 ```
 
-```
+```ts
 // query.ts
 await db.select().from(users);
 ```
 
-```
+```sql
 SELECT "id", "first_name" from users;
 ```
 
@@ -233,7 +231,7 @@ Database model names often use `snake_case` conventions, while in TypeScript, it
 
 For such mapping, you can use the `casing` option in the Drizzle DB declaration. This parameter will help you specify the database model naming convention and will attempt to map all JavaScript keys accordingly
 
-```
+```ts
 // schema.ts
 import { drizzle } from "drizzle-orm/node-postgres";
 import { integer, pgTable, varchar } from "drizzle-orm/pg-core";
@@ -244,17 +242,17 @@ export const users = pgTable('users', {
 })
 ```
 
-```
+```ts
 // db.ts
 const db = drizzle({ connection: process.env.DATABASE_URL, casing: 'snake_case' })
 ```
 
-```
+```ts
 // query.ts
 await db.select().from(users);
 ```
 
-```
+```sql
 SELECT "id", "first_name" from users;
 ```
 
@@ -266,7 +264,7 @@ One common feature is to separate columns into different places and then reuse t
 
 We can define those columns in a separate file and then import and spread them across all the table objects you have
 
-```
+```ts
 // columns.helpers.ts
 const timestamps = {
   updated_at: timestamp(),
@@ -275,7 +273,7 @@ const timestamps = {
 }
 ```
 
-```
+```ts
 // users.sql.ts
 export const users = pgTable('users', {
   id: integer(),
@@ -283,7 +281,7 @@ export const users = pgTable('users', {
 })
 ```
 
-```
+```ts
 // posts.sql.ts
 export const posts = pgTable('posts', {
   id: integer(),
@@ -292,12 +290,6 @@ export const posts = pgTable('posts', {
 ```
 
 #### **Schemas**[](#schemas)
-
-PostgreSQL
-
-MySQL
-
-SQLite
 
   
 In PostgreSQL, there is an entity called a `schema` (which we believe should be called `folders`). This creates a structure in PostgreSQL:
@@ -308,7 +300,7 @@ You can manage your PostgreSQL schemas with `pgSchema` and place any other model
 
 Define the schema you want to manage using Drizzle
 
-```
+```ts
 import { pgSchema } from "drizzle-orm/pg-core"
 
 export const customSchema = pgSchema('custom');
@@ -316,7 +308,7 @@ export const customSchema = pgSchema('custom');
 
 Then place the table inside the schema object
 
-```
+```ts
 import { integer, pgSchema } from "drizzle-orm/pg-core";
 
 export const customSchema = pgSchema('custom');
@@ -335,7 +327,7 @@ You can define them with `drizzle-orm` and use them in queries, but they won’t
 
 Define the schema you want to manage using Drizzle
 
-```
+```ts
 import { mysqlSchema } from "drizzle-orm/mysql-core"
 
 export const customSchema = mysqlSchema('custom');
@@ -343,7 +335,7 @@ export const customSchema = mysqlSchema('custom');
 
 Then place the table inside the schema object
 
-```
+```ts
 import { int, mysqlSchema } from "drizzle-orm/mysql-core";
 
 export const customSchema = mysqlSchema('custom');
@@ -364,13 +356,7 @@ Once you know the basics, let’s define a schema example for a real project to 
 
 > All examples will use `generateUniqueString`. The implementation for it will be provided after all the schema examples
 
-PostgreSQL
-
-MySQL
-
-SQLite
-
-```
+```ts
 import { AnyPgColumn } from "drizzle-orm/pg-core";
 import { pgEnum, pgTable as table } from "drizzle-orm/pg-core";
 import * as t from "drizzle-orm/pg-core";
@@ -414,7 +400,7 @@ export const comments = table("comments", {
 });
 ```
 
-```
+```ts
 import { mysqlTable as table } from "drizzle-orm/mysql-core";
 import * as t from "drizzle-orm/mysql-core";
 import { AnyMySqlColumn } from "drizzle-orm/mysql-core";
@@ -456,7 +442,7 @@ export const comments = table("comments", {
 });
 ```
 
-```
+```ts
 import { sqliteTable as table } from "drizzle-orm/sqlite-core";
 import * as t from "drizzle-orm/sqlite-core";
 import { AnySQLiteColumn } from "drizzle-orm/sqlite-core";
@@ -500,7 +486,7 @@ export const comments = table("comments", {
 
 **`generateUniqueString` implementation:**
 
-```
+```ts
 function generateUniqueString(length: number = 12): string {
   const characters =
     "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";

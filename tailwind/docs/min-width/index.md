@@ -5,61 +5,15 @@ canonical_url: "https://tailwindcss.com/docs/min-width"
 docset: "tailwind"
 kind: "framework"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:52:00.257Z"
-content_hash: "4909646c60487e68bae833a989bd336d98f3e5fb4a569d6da58dd4f4bf30ad1c"
+last_crawled_at: "2026-04-27T20:03:38.232Z"
+content_hash: "cad0ee118d2bf4e05e6dbf539470d46ecd72cf5390a55970cd14481d184f0f0b"
 menu_path: ["min-width"]
 section_path: []
-nav_prev: {"path": "tailwind/docs/width/index.md", "title": "width"}
-nav_next: {"path": "tailwind/docs/max-width/index.md", "title": "max-width"}
+content_language: "en"
 ---
-
 Sizing
 
 Utilities for setting the minimum width of an element.
-
-Class
-
-Styles
-
-`min-w-<number>`
-
-`min-width: calc(var(--spacing) * <number>);`
-
-`min-w-<fraction>`
-
-`min-width: calc(<fraction> * 100%);`
-
-`min-w-3xs`
-
-`min-width: var(--container-3xs); /* 16rem (256px) */`
-
-`min-w-2xs`
-
-`min-width: var(--container-2xs); /* 18rem (288px) */`
-
-`min-w-xs`
-
-`min-width: var(--container-xs); /* 20rem (320px) */`
-
-`min-w-sm`
-
-`min-width: var(--container-sm); /* 24rem (384px) */`
-
-`min-w-md`
-
-`min-width: var(--container-md); /* 28rem (448px) */`
-
-`min-w-lg`
-
-`min-width: var(--container-lg); /* 32rem (512px) */`
-
-`min-w-xl`
-
-`min-width: var(--container-xl); /* 36rem (576px) */`
-
-`min-w-2xl`
-
-`min-width: var(--container-2xl); /* 42rem (672px) */`
 
 ## [Examples](#examples)
 
@@ -139,7 +93,7 @@ Prefix a `min-width` utility with a breakpoint variant like `md:` to only apply 
 <div class="w-24 min-w-full md:min-w-0 ...">  <!-- ... --></div>
 ```
 
-Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).
+Learn more about using variants in the [variants documentation](https://tailwindcss.com/docs/hover-focus-and-other-states).
 
 ## [Customizing your theme](#customizing-your-theme)
 
@@ -149,4 +103,4 @@ The `min-w-<number>` utilities are driven by the `--spacing` theme variable, whi
 @theme {  --spacing: 1px; }
 ```
 
-Learn more about customizing the spacing scale in the [theme variable documentation](tailwind/docs/theme/index.md).
+Learn more about customizing the spacing scale in the [theme variable documentation](https://tailwindcss.com/docs/theme).

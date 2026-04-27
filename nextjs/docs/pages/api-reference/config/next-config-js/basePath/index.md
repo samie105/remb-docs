@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/pages/api-reference/config/next-config-j
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:20:19.941Z"
-content_hash: "aedd7f045613a76d4eb08b34d8bf39250622d77922c50bee284ba0030c5a3ff2"
+last_crawled_at: "2026-04-27T18:19:46.215Z"
+content_hash: "2ac79aa96ef215d52d20a4cc7c3b9f1d51c8b9bfe5eeabeb1d13979bc2842e3a"
 menu_path: ["basePath"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/pages/api-reference/config/next-config-js/assetPrefix/index.md", "title": "assetPrefix"}
-nav_next: {"path": "nextjs/docs/pages/api-reference/config/next-config-js/bundlePagesRouterDependencies/index.md", "title": "bundlePagesRouterDependencies"}
+version: "latest"
+content_language: "en"
 ---
+[Configuration](/docs/pages/api-reference/config)[next.config.js Options](/docs/pages/api-reference/config/next-config-js)basePath
 
 # basePath
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 To deploy a Next.js application under a sub-path of a domain you can use the `basePath` config option.
 
@@ -83,7 +84,3 @@ export default Home
 ```
 
 Was this helpful?
-
-supported.
-
-Send

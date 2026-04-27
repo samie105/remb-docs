@@ -5,14 +5,13 @@ canonical_url: "https://www.prisma.io/docs/orm/prisma-client/using-raw-sql/typed
 docset: "prisma"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:49:55.809Z"
-content_hash: "7f2b6c30769e1755648033429a988d6706768f169a9250d1b5d4c1021e6c75bb"
+last_crawled_at: "2026-04-27T19:40:44.625Z"
+content_hash: "d5c2e45cdbbf4ad8274b1e9cb007351b003cedb6fb029b57cc9328bcdf50bcc3"
 menu_path: ["TypedSQL"]
 section_path: []
-nav_prev: {"path": "prisma/docs/orm/prisma-client/using-raw-sql/safeql/index.md", "title": "SafeQL & Prisma Client"}
-nav_next: {"path": "prisma/docs/orm/prisma-migrate/workflows/baselining/index.md", "title": "Baselining a database"}
+tab_variants: ["npm","pnpm","yarn","bun","PostgreSQL","MySQL","SQLite"]
+content_language: "en"
 ---
-
 Learn how to use TypedSQL to write fully type-safe SQL queries that are compatible with any SQL console and Prisma Client
 
 To start using TypedSQL in your Prisma project, follow these steps:
@@ -39,6 +38,8 @@ To start using TypedSQL in your Prisma project, follow these steps:
     
 5.  Write your SQL queries in your new `.sql` file. For example:
     
+    prisma/sql/getUsersWithPosts.sql
+    
     ```
     SELECT u.id, u.name, COUNT(p.id) as "postCount"
     FROM "User" u
@@ -61,6 +62,8 @@ To start using TypedSQL in your Prisma project, follow these steps:
 7.  Now you can import and use your SQL queries in your TypeScript code:
     
 
+/src/index.ts
+
 ```
 import { PrismaClient } from "./generated/prisma/client";
 import { getUsersWithPosts } from "./generated/prisma/sql";
@@ -78,6 +81,8 @@ To pass arguments to your TypedSQL queries, you can use parameterized queries. T
 For PostgreSQL, use the positional placeholders `$1`, `$2`, etc. For MySQL, use `?`. In SQLite, you can use positional (`$1`, `$2`), general (`?`), or named placeholders (`:minAge`, `:maxAge`):
 
 1.  When using the generated function in your TypeScript code, pass the arguments as additional parameters to `$queryRawTyped`:
+
+/src/index.ts
 
 ```
 import { PrismaClient } from "./generated/prisma/client";
@@ -97,11 +102,15 @@ By using parameterized queries, you ensure type safety and protect against SQL i
 
 TypedSQL supports passing arrays as arguments for PostgreSQL. Use PostgreSQL's `ANY` operator with an array parameter.
 
+prisma/sql/getUsersByIds.sql
+
 ```
 SELECT id, name, email
 FROM users
 WHERE id = ANY($1)
 ```
+
+/src/index.ts
 
 ```
 import { PrismaClient } from "./generated/prisma/client";
@@ -175,6 +184,6 @@ const columns = "name, email, age"; // Columns determined at runtime
 const result = await prisma.$queryRawUnsafe(`SELECT ${columns} FROM Users WHERE active = true`);
 ```
 
-In this example, the columns to be selected are defined dynamically and included in the SQL query. While this approach provides flexibility, it requires careful attention to security, particularly to [avoid SQL injection vulnerabilities](prisma/docs/orm/prisma-client/using-raw-sql/raw-queries/index.md#sql-injection-prevention). Additionally, using raw SQL queries means foregoing the type-safety and DX of TypedSQL.
+In this example, the columns to be selected are defined dynamically and included in the SQL query. While this approach provides flexibility, it requires careful attention to security, particularly to [avoid SQL injection vulnerabilities](https://www.prisma.io/docs/orm/prisma-client/using-raw-sql/raw-queries#sql-injection-prevention). Additionally, using raw SQL queries means foregoing the type-safety and DX of TypedSQL.
 
 This feature was heavily inspired by [PgTyped](https://github.com/adelsz/pgtyped) and [SQLx](https://github.com/launchbadge/sqlx). Additionally, SQLite parsing is handled by SQLx.

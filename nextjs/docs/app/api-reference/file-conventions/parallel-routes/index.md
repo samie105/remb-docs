@@ -5,23 +5,24 @@ canonical_url: "https://nextjs.org/docs/app/api-reference/file-conventions/paral
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:10:33.009Z"
-content_hash: "370b2b407800b09bc7afc7ad476a7ddf310e71c690ed53cca60eddacc399f81e"
+last_crawled_at: "2026-04-27T18:09:16.137Z"
+content_hash: "c4dc5a1decfe9b1d61900eb96fd3888f0e1b88561713a6921891a0fc3eaa7bd6"
 menu_path: ["Parallel Routes"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/api-reference/file-conventions/page/index.md", "title": "page.js"}
-nav_next: {"path": "nextjs/docs/app/api-reference/file-conventions/proxy/index.md", "title": "proxy.js"}
+version: "latest"
+content_language: "en"
 ---
+[API Reference](/docs/app/api-reference)[File-system conventions](/docs/app/api-reference/file-conventions)Parallel Routes
 
 # Parallel Routes
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 Parallel Routes allows you to simultaneously or conditionally render one or more pages within the same layout. They are useful for highly dynamic sections of an app, such as dashboards and feeds on social sites.
 
 For example, considering a dashboard, you can use parallel routes to simultaneously render the `team` and `analytics` pages:
 
-![Parallel Routes Diagram](/_next/image?url=https%3A%2F%2Fh8DxKfmAPhn8O0p3.public.blob.vercel-storage.com%2Fdocs%2Flight%2Fparallel-routes.png&w=3840&q=75)![Parallel Routes Diagram](/_next/image?url=https%3A%2F%2Fh8DxKfmAPhn8O0p3.public.blob.vercel-storage.com%2Fdocs%2Fdark%2Fparallel-routes.png&w=3840&q=75)
+![Parallel Routes Diagram](https://h8DxKfmAPhn8O0p3.public.blob.vercel-storage.com/docs/light/parallel-routes.png)
 
 ## Convention[](#convention)
 
@@ -29,13 +30,11 @@ For example, considering a dashboard, you can use parallel routes to simultaneou
 
 Parallel routes are created using named **slots**. Slots are defined with the `@folder` convention. For example, the following file structure defines two slots: `@analytics` and `@team`:
 
-![Parallel Routes File-system Structure](/_next/image?url=https%3A%2F%2Fh8DxKfmAPhn8O0p3.public.blob.vercel-storage.com%2Fdocs%2Flight%2Fparallel-routes-file-system.png&w=3840&q=75)![Parallel Routes File-system Structure](/_next/image?url=https%3A%2F%2Fh8DxKfmAPhn8O0p3.public.blob.vercel-storage.com%2Fdocs%2Fdark%2Fparallel-routes-file-system.png&w=3840&q=75)
+![Parallel Routes File-system Structure](https://h8DxKfmAPhn8O0p3.public.blob.vercel-storage.com/docs/light/parallel-routes-file-system.png)
 
 Slots are passed as props to the shared parent layout. For the example above, the component in `app/layout.js` now accepts the `@analytics` and `@team` slots props, and can render them in parallel alongside the `children` prop:
 
 app/layout.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -63,7 +62,7 @@ However, slots are **not** route segments and do not affect the URL structure. F
 
 > **Good to know**:
 > 
-> *   The `children` prop is an implicit slot that does not need to be mapped to a folder. This means `app/page.js` is equivalent to `app/@children/page.js`.
+> -   The `children` prop is an implicit slot that does not need to be mapped to a folder. This means `app/page.js` is equivalent to `app/@children/page.js`.
 
 ### `default.js`[](#defaultjs)
 
@@ -71,7 +70,7 @@ You can define a `default.js` file to render as a fallback for unmatched slots d
 
 Consider the following folder structure. The `@team` slot has a `/settings` page, but `@analytics` does not.
 
-![Parallel Routes unmatched routes](/_next/image?url=https%3A%2F%2Fh8DxKfmAPhn8O0p3.public.blob.vercel-storage.com%2Fdocs%2Flight%2Fparallel-routes-unmatched-routes.png&w=3840&q=75)![Parallel Routes unmatched routes](/_next/image?url=https%3A%2F%2Fh8DxKfmAPhn8O0p3.public.blob.vercel-storage.com%2Fdocs%2Fdark%2Fparallel-routes-unmatched-routes.png&w=3840&q=75)
+![Parallel Routes unmatched routes](https://h8DxKfmAPhn8O0p3.public.blob.vercel-storage.com/docs/light/parallel-routes-unmatched-routes.png)
 
 When navigating to `/settings`, the `@team` slot will render the `/settings` page while maintaining the currently active page for the `@analytics` slot.
 
@@ -83,12 +82,12 @@ Additionally, since `children` is an implicit slot, you also need to create a `d
 
 By default, Next.js keeps track of the active _state_ (or subpage) for each slot. However, the content rendered within a slot will depend on the type of navigation:
 
-*   [**Soft Navigation**](/docs/app/getting-started/linking-and-navigating#client-side-transitions): During client-side navigation, Next.js will perform a [partial render](/docs/app/getting-started/linking-and-navigating#client-side-transitions), changing the subpage within the slot, while maintaining the other slot's active subpages, even if they don't match the current URL.
-*   **Hard Navigation**: After a full-page load (browser refresh), Next.js cannot determine the active state for the slots that don't match the current URL. Instead, it will render a [`default.js`](#defaultjs) file for the unmatched slots, or `404` if `default.js` doesn't exist.
+-   [**Soft Navigation**](/docs/app/getting-started/linking-and-navigating#client-side-transitions): During client-side navigation, Next.js will perform a [partial render](/docs/app/getting-started/linking-and-navigating#client-side-transitions), changing the subpage within the slot, while maintaining the other slot's active subpages, even if they don't match the current URL.
+-   **Hard Navigation**: After a full-page load (browser refresh), Next.js cannot determine the active state for the slots that don't match the current URL. Instead, it will render a [`default.js`](#defaultjs) file for the unmatched slots, or `404` if `default.js` doesn't exist.
 
 > **Good to know**:
 > 
-> *   The `404` for unmatched routes helps ensure that you don't accidentally render a parallel route on a page that it was not intended for.
+> -   The `404` for unmatched routes helps ensure that you don't accidentally render a parallel route on a page that it was not intended for.
 
 ## Examples[](#examples)
 
@@ -97,8 +96,6 @@ By default, Next.js keeps track of the active _state_ (or subpage) for each slot
 Both [`useSelectedLayoutSegment`](/docs/app/api-reference/functions/use-selected-layout-segment) and [`useSelectedLayoutSegments`](/docs/app/api-reference/functions/use-selected-layout-segments) accept a `parallelRoutesKey` parameter, which allows you to read the active route segment within a slot.
 
 app/layout.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -119,11 +116,9 @@ When a user navigates to `app/@auth/login` (or `/login` in the URL bar), `loginS
 
 You can use Parallel Routes to conditionally render routes based on certain conditions, such as user role. For example, to render a different dashboard page for the `/admin` or `/user` roles:
 
-![Conditional routes diagram](/_next/image?url=https%3A%2F%2Fh8DxKfmAPhn8O0p3.public.blob.vercel-storage.com%2Fdocs%2Flight%2Fconditional-routes-ui.png&w=3840&q=75)![Conditional routes diagram](/_next/image?url=https%3A%2F%2Fh8DxKfmAPhn8O0p3.public.blob.vercel-storage.com%2Fdocs%2Fdark%2Fconditional-routes-ui.png&w=3840&q=75)
+![Conditional routes diagram](https://h8DxKfmAPhn8O0p3.public.blob.vercel-storage.com/docs/light/conditional-routes-ui.png)
 
 app/dashboard/layout.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -148,13 +143,11 @@ You can add a `layout` inside a slot to allow users to navigate the slot indepen
 
 For example, the `@analytics` slot has two subpages: `/page-views` and `/visitors`.
 
-![Analytics slot with two subpages and a layout](/_next/image?url=https%3A%2F%2Fh8DxKfmAPhn8O0p3.public.blob.vercel-storage.com%2Fdocs%2Flight%2Fparallel-routes-tab-groups.png&w=3840&q=75)![Analytics slot with two subpages and a layout](/_next/image?url=https%3A%2F%2Fh8DxKfmAPhn8O0p3.public.blob.vercel-storage.com%2Fdocs%2Fdark%2Fparallel-routes-tab-groups.png&w=3840&q=75)
+![Analytics slot with two subpages and a layout](https://h8DxKfmAPhn8O0p3.public.blob.vercel-storage.com/docs/light/parallel-routes-tab-groups.png)
 
 Within `@analytics`, create a [`layout`](/docs/app/api-reference/file-conventions/layout) file to share the tabs between the two pages:
 
 app/@analytics/layout.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -178,22 +171,20 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
 Parallel Routes can be used together with [Intercepting Routes](/docs/app/api-reference/file-conventions/intercepting-routes) to create modals that support deep linking. This allows you to solve common challenges when building modals, such as:
 
-*   Making the modal content **shareable through a URL**.
-*   **Preserving context** when the page is refreshed, instead of closing the modal.
-*   **Closing the modal on backwards navigation** rather than going to the previous route.
-*   **Reopening the modal on forwards navigation**.
+-   Making the modal content **shareable through a URL**.
+-   **Preserving context** when the page is refreshed, instead of closing the modal.
+-   **Closing the modal on backwards navigation** rather than going to the previous route.
+-   **Reopening the modal on forwards navigation**.
 
 Consider the following UI pattern, where a user can open a login modal from a layout using client-side navigation, or access a separate `/login` page:
 
-![Parallel Routes Diagram](/_next/image?url=https%3A%2F%2Fh8DxKfmAPhn8O0p3.public.blob.vercel-storage.com%2Fdocs%2Flight%2Fparallel-routes-auth-modal.png&w=3840&q=75)![Parallel Routes Diagram](/_next/image?url=https%3A%2F%2Fh8DxKfmAPhn8O0p3.public.blob.vercel-storage.com%2Fdocs%2Fdark%2Fparallel-routes-auth-modal.png&w=3840&q=75)
+![Parallel Routes Diagram](https://h8DxKfmAPhn8O0p3.public.blob.vercel-storage.com/docs/light/parallel-routes-auth-modal.png)
 
 To implement this pattern, start by creating a `/login` route that renders your **main** login page.
 
-![Parallel Routes Diagram](/_next/image?url=https%3A%2F%2Fh8DxKfmAPhn8O0p3.public.blob.vercel-storage.com%2Fdocs%2Flight%2Fparallel-routes-modal-login-page.png&w=3840&q=75)![Parallel Routes Diagram](/_next/image?url=https%3A%2F%2Fh8DxKfmAPhn8O0p3.public.blob.vercel-storage.com%2Fdocs%2Fdark%2Fparallel-routes-modal-login-page.png&w=3840&q=75)
+![Parallel Routes Diagram](https://h8DxKfmAPhn8O0p3.public.blob.vercel-storage.com/docs/light/parallel-routes-modal-login-page.png)
 
 app/login/page.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -209,8 +200,6 @@ Then, inside the `@auth` slot, add [`default.js`](/docs/app/api-reference/file-c
 
 app/@auth/default.tsx
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -222,8 +211,6 @@ export default function Default() {
 Inside your `@auth` slot, intercept the `/login` route by importing the `<Modal>` component and its children into the `@auth/(.)login/page.tsx` file, and updating the folder name to `/@auth/(.)login/page.tsx`.
 
 app/@auth/(.)login/page.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -242,8 +229,8 @@ export default function Page() {
 
 > **Good to know:**
 > 
-> *   The convention `(.)` is used for intercepting routes. See [Intercepting Routes](/docs/app/api-reference/file-conventions/intercepting-routes#convention) docs for more information.
-> *   By separating the `<Modal>` functionality from the modal content (`<Login>`), you can ensure any content inside the modal, e.g. [forms](/docs/app/guides/forms), are Server Components. See [Interleaving Client and Server Components](/docs/app/getting-started/server-and-client-components#interleaving-server-and-client-components) for more information.
+> -   The convention `(.)` is used for intercepting routes. See [Intercepting Routes](/docs/app/api-reference/file-conventions/intercepting-routes#convention) docs for more information.
+> -   By separating the `<Modal>` functionality from the modal content (`<Login>`), you can ensure any content inside the modal, e.g. [forms](/docs/app/guides/forms), are Server Components. See [Interleaving Client and Server Components](/docs/app/getting-started/server-and-client-components#interleaving-server-and-client-components) for more information.
 
 #### Opening the modal[](#opening-the-modal)
 
@@ -252,8 +239,6 @@ Now, you can leverage the Next.js router to open and close the modal. This ensur
 To open the modal, pass the `@auth` slot as a prop to the parent layout and render it alongside the `children` prop.
 
 app/layout.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -287,8 +272,6 @@ You can close the modal by calling `router.back()` or by using the `Link` compon
 
 app/ui/modal.tsx
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -318,8 +301,6 @@ When using the `Link` component to navigate away from a page that shouldn't rend
 
 app/ui/modal.tsx
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -337,8 +318,6 @@ export function Modal({ children }: { children: React.ReactNode }) {
 
 app/@auth/page.tsx
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -351,8 +330,6 @@ Or if navigating to any other page (such as `/foo`, `/foo/bar`, etc), you can us
 
 app/@auth/\[...catchAll\]/page.tsx
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -363,15 +340,15 @@ export default function CatchAll() {
 
 > **Good to know:**
 > 
-> *   We use a catch-all route in our `@auth` slot to close the modal because of how parallel routes behave. Since client-side navigations to a route that no longer match the slot will remain visible, we need to match the slot to a route that returns `null` to close the modal.
-> *   Other examples could include opening a photo modal in a gallery while also having a dedicated `/photo/[id]` page, or opening a shopping cart in a side modal.
-> *   [View an example](https://github.com/vercel-labs/nextgram) of modals with Intercepted and Parallel Routes.
+> -   We use a catch-all route in our `@auth` slot to close the modal because of how parallel routes behave. Since client-side navigations to a route that no longer match the slot will remain visible, we need to match the slot to a route that returns `null` to close the modal.
+> -   Other examples could include opening a photo modal in a gallery while also having a dedicated `/photo/[id]` page, or opening a shopping cart in a side modal.
+> -   [View an example](https://github.com/vercel-labs/nextgram) of modals with Intercepted and Parallel Routes.
 
 ### Loading and Error UI[](#loading-and-error-ui)
 
 Parallel Routes can be streamed independently, allowing you to define independent error and loading states for each route:
 
-![Parallel routes enable custom error and loading states](/_next/image?url=https%3A%2F%2Fh8DxKfmAPhn8O0p3.public.blob.vercel-storage.com%2Fdocs%2Flight%2Fparallel-routes-cinematic-universe.png&w=3840&q=75)![Parallel routes enable custom error and loading states](/_next/image?url=https%3A%2F%2Fh8DxKfmAPhn8O0p3.public.blob.vercel-storage.com%2Fdocs%2Fdark%2Fparallel-routes-cinematic-universe.png&w=3840&q=75)
+![Parallel routes enable custom error and loading states](https://h8DxKfmAPhn8O0p3.public.blob.vercel-storage.com/docs/light/parallel-routes-cinematic-universe.png)
 
 See the [Loading UI](/docs/app/api-reference/file-conventions/loading) and [Error Handling](/docs/app/getting-started/error-handling) documentation for more information.
 
@@ -383,20 +360,4 @@ API Reference for the default.js file.
 
 ](/docs/app/api-reference/file-conventions/default)
 
-[Previous
-
-page.js
-
-](/docs/app/api-reference/file-conventions/page)
-
-[Next
-
-proxy.js
-
-](/docs/app/api-reference/file-conventions/proxy)
-
 Was this helpful?
-
-supported.
-
-Send

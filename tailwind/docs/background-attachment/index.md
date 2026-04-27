@@ -5,14 +5,12 @@ canonical_url: "https://tailwindcss.com/docs/background-attachment"
 docset: "tailwind"
 kind: "framework"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:00:54.985Z"
+last_crawled_at: "2026-04-27T20:15:45.362Z"
 content_hash: "a7f392cdfdddbfc3d21c3ab045e50b3277481e0b240b83068357269874b57a4f"
 menu_path: ["background-attachment"]
 section_path: []
-nav_prev: {"path": "tailwind/docs/content/index.md", "title": "content"}
-nav_next: {"path": "tailwind/docs/background-clip/index.md", "title": "background-clip"}
+content_language: "en"
 ---
-
 My trip to the summit
 
 November 16, 2021 · 4 min read

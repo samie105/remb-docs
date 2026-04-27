@@ -5,19 +5,17 @@ canonical_url: "https://www.prisma.io/docs/orm/prisma-client/special-fields-and-
 docset: "prisma"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:48:14.212Z"
-content_hash: "64531b69e8a2f1c9f35b4c5176f0ff856eb57ab81721869c0c43d530b1061425"
+last_crawled_at: "2026-04-27T19:39:42.268Z"
+content_hash: "606107d275b69e1ae41f9665e5725130504684b924ea942313d20fa744abde6e"
 menu_path: ["Working with compound IDs and unique constraints"]
 section_path: []
-nav_prev: {"path": "prisma/docs/orm/prisma-client/special-fields-and-types/null-and-undefined/index.md", "title": "Null and undefined"}
-nav_next: {"path": "prisma/docs/orm/prisma-client/special-fields-and-types/working-with-geometry-fields/index.md", "title": "Working with geometry fields"}
+content_language: "en"
 ---
-
 Special Fields and Types
 
 How to read, write, and filter by compound IDs and unique constraints
 
-Composite IDs and compound unique constraints can be defined in your Prisma schema using the [`@@id`](prisma/docs/orm/reference/prisma-schema-reference/index.md) and [`@@unique`](prisma/docs/orm/reference/prisma-schema-reference/index.md) attributes.
+Composite IDs and compound unique constraints can be defined in your Prisma schema using the [`@@id`](https://www.prisma.io/docs/orm/reference/prisma-schema-reference) and [`@@unique`](https://www.prisma.io/docs/orm/reference/prisma-schema-reference) attributes.
 
 A composite ID or compound unique constraint uses the combined values of two fields as a primary key or identifier in your database table. In the following example, the `postId` field and `userId` field are used as a composite ID for a `Like` table:
 
@@ -75,11 +73,11 @@ Compound IDs and compound unique constraints can be used when working with _uniq
 
 Below is a list of Prisma Client functions that accept a compound ID or compound unique constraint in the `where` filter of the query:
 
-*   `findUnique()`
-*   `findUniqueOrThrow`
-*   `delete`
-*   `update`
-*   `upsert`
+-   `findUnique()`
+-   `findUniqueOrThrow`
+-   `delete`
+-   `update`
+-   `upsert`
 
 A composite ID and a composite unique constraint is also usable when creating relational data with `connect` and `connectOrCreate`.
 
@@ -189,5 +187,3 @@ await prisma.user.create({
   },
 });
 ```
-
-[Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/prisma-client/special-fields-and-types/working-with-composite-ids-and-constraints.mdx)

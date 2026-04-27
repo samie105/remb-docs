@@ -5,21 +5,19 @@ canonical_url: "https://orm.drizzle.team/docs/relations"
 docset: "drizzle"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:18:44.491Z"
-content_hash: "e8eda839c84e0819983a37db54fcfdcec1d535ecb7d790a264a42d88bdd381c3"
+last_crawled_at: "2026-04-27T19:20:32.771Z"
+content_hash: "21ebd5009501ddf89c1be8c77cc506326cdb7470ff1a590a1d3d58e6b381aa18"
 menu_path: ["Drizzle soft relations"]
 section_path: []
-nav_prev: {"path": "drizzle/docs/extensions/pg/index.md", "title": "PostgreSQL extensions"}
-nav_next: {"path": "drizzle/docs/kit-overview/index.md", "title": "Migrations with Drizzle Kit"}
+content_language: "en"
 ---
-
 The sole purpose of Drizzle relations is to let you query your relational data in the most simple and consise way:
 
 Relational queries
 
 Select with joins
 
-```
+```ts
 import * as schema from './schema';
 import { drizzle } from 'drizzle-orm/…';
 
@@ -32,7 +30,7 @@ const result = db.query.users.findMany({
 });
 ```
 
-```
+```ts
 [{
   id: 10,
   name: "Dan",
@@ -57,7 +55,7 @@ Drizzle ORM provides you an API to define `one-to-one` relations between tables 
 
 An example of a `one-to-one` relation between users and users, where a user can invite another (this example uses a self reference):
 
-```
+```typescript
 import { pgTable, serial, text, integer, boolean } from 'drizzle-orm/pg-core';
 import { relations } from 'drizzle-orm';
 
@@ -77,7 +75,7 @@ export const usersRelations = relations(users, ({ one }) => ({
 
 Another example would be a user having a profile information stored in separate table. In this case, because the foreign key is stored in the “profile\_info” table, the user relation have neither fields or references. This tells Typescript that `user.profileInfo` is nullable:
 
-```
+```typescript
 import { pgTable, serial, text, integer, jsonb } from 'drizzle-orm/pg-core';
 import { relations } from 'drizzle-orm';
 
@@ -110,7 +108,7 @@ Drizzle ORM provides you an API to define `one-to-many` relations between tables
 
 Example of `one-to-many` relation between users and posts they’ve written:
 
-```
+```typescript
 import { pgTable, serial, text, integer } from 'drizzle-orm/pg-core';
 import { relations } from 'drizzle-orm';
 
@@ -139,7 +137,7 @@ export const postsRelations = relations(posts, ({ one }) => ({
 
 Now lets add comments to the posts:
 
-```
+```typescript
 ...
 
 export const posts = pgTable('posts', {
@@ -177,7 +175,7 @@ Drizzle ORM provides you an API to define `many-to-many` relations between table
 
 Example of `many-to-many` relation between users and groups:
 
-```
+```typescript
 import { relations } from 'drizzle-orm';
 import { integer, pgTable, primaryKey, serial, text } from 'drizzle-orm/pg-core';
 
@@ -238,11 +236,7 @@ What this means is `relations` and foreign keys can be used together, but they a
 
 The following two examples will work exactly the same in terms of querying the data using Drizzle relational queries.
 
-schema1.ts
-
-schema2.ts
-
-```
+```ts
 export const users = pgTable('users', {
 	id: serial('id').primaryKey(),
 	name: text('name'),
@@ -270,22 +264,22 @@ You can specify actions that should occur when the referenced data in the parent
 
 On Delete/ Update Actions
 
-*   `CASCADE`: When a row in the parent table is deleted, all corresponding rows in the child table will also be deleted. This ensures that no orphaned rows exist in the child table.
+-   `CASCADE`: When a row in the parent table is deleted, all corresponding rows in the child table will also be deleted. This ensures that no orphaned rows exist in the child table.
     
-*   `NO ACTION`: This is the default action. It prevents the deletion of a row in the parent table if there are related rows in the child table. The DELETE operation in the parent table will fail.
+-   `NO ACTION`: This is the default action. It prevents the deletion of a row in the parent table if there are related rows in the child table. The DELETE operation in the parent table will fail.
     
-*   `RESTRICT`: Similar to NO ACTION, it prevents the deletion of a parent row if there are dependent rows in the child table. It is essentially the same as NO ACTION and included for compatibility reasons.
+-   `RESTRICT`: Similar to NO ACTION, it prevents the deletion of a parent row if there are dependent rows in the child table. It is essentially the same as NO ACTION and included for compatibility reasons.
     
-*   `SET DEFAULT`: If a row in the parent table is deleted, the foreign key column in the child table will be set to its default value if it has one. If it doesn’t have a default value, the DELETE operation will fail.
+-   `SET DEFAULT`: If a row in the parent table is deleted, the foreign key column in the child table will be set to its default value if it has one. If it doesn’t have a default value, the DELETE operation will fail.
     
-*   `SET NULL`: When a row in the parent table is deleted, the foreign key column in the child table will be set to NULL. This action assumes that the foreign key column in the child table allows NULL values.
+-   `SET NULL`: When a row in the parent table is deleted, the foreign key column in the child table will be set to NULL. This action assumes that the foreign key column in the child table allows NULL values.
     
 
 > Analogous to ON DELETE there is also ON UPDATE which is invoked when a referenced column is changed (updated). The possible actions are the same, except that column lists cannot be specified for SET NULL and SET DEFAULT. In this case, CASCADE means that the updated values of the referenced column(s) should be copied into the referencing row(s). in drizzle you can add foreign key action using `references()` second argument.
 
 type of the actions
 
-```
+```typescript
 export type UpdateDeleteAction = 'cascade' | 'restrict' | 'no action' | 'set null' | 'set default';
 
 // second argument of references interface
@@ -297,7 +291,7 @@ actions?: {
 
 In the following example, adding `onDelete: 'cascade'` to the author field on the `posts` schema means that deleting the `user` will also delete all related Post records.
 
-```
+```typescript
 import { pgTable, serial, text, integer } from 'drizzle-orm/pg-core';
 
 export const users = pgTable('users', {
@@ -314,7 +308,7 @@ export const posts = pgTable('posts', {
 
 For constraints specified with the `foreignKey` operator, foreign key actions are defined with the syntax:
 
-```
+```typescript
 import { foreignKey, pgTable, serial, text, integer } from 'drizzle-orm/pg-core';
 
 export const users = pgTable('users', {
@@ -341,7 +335,7 @@ export const posts = pgTable('posts', {
 
 Drizzle also provides the `relationName` option as a way to disambiguate relations when you define multiple of them between the same two tables. For example, if you define a `posts` table that has the `author` and `reviewer` relations.
 
-```
+```ts
 import { pgTable, serial, text, integer } from 'drizzle-orm/pg-core';
 import { relations } from 'drizzle-orm';
  

@@ -5,14 +5,13 @@ canonical_url: "https://www.prisma.io/docs/orm/prisma-client/client-extensions/s
 docset: "prisma"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:53:34.691Z"
-content_hash: "af98c4a38bd20358191b64be66cfcb5e79b455a31d8ae878512ab21ec1a99afd"
+last_crawled_at: "2026-04-27T19:43:09.949Z"
+content_hash: "d971120af81e2616a7ad428da8cbff4f39e2729eff15c3e67f6ec029d6df0952"
 menu_path: ["Fine-Grained Authorization (Permit)"]
 section_path: []
-nav_prev: {"path": "prisma/docs/orm/prisma-client/client-extensions/shared-extensions/index.md", "title": "Shared Prisma Client extensions"}
-nav_next: {"path": "prisma/docs/orm/prisma-client/client-extensions/type-utilities/index.md", "title": "Type utilities"}
+tab_variants: ["npm","pnpm","yarn","bun"]
+content_language: "en"
 ---
-
 Learn how to implement RBAC, ABAC, and ReBAC authorization in your Prisma applications
 
 Database operations often require careful control over who can access or modify which data. While Prisma ORM excels at data modeling and database access, it doesn't include built-in authorization capabilities. This guide shows how to implement fine-grained authorization in your Prisma applications using the `@permitio/permit-prisma` extension.
@@ -35,8 +34,8 @@ This extension supports three access control models from Permit.io:
 
 **Examples**:
 
-*   Allow access if `user.department == document.department`
-*   Allow updates if `document.status == "DRAFT"`
+-   Allow access if `user.department == document.department`
+-   Allow updates if `document.status == "DRAFT"`
 
 **How it works with the extension**: When `enableAttributeSync` is on, resource attributes are automatically synced to Permit.io for policy evaluation.
 
@@ -50,24 +49,24 @@ This extension supports three access control models from Permit.io:
 
 **How it works with the extension**:
 
-*   Resource instances are synced to Permit.io (with `enableResourceSync: true`)
-*   Permission checks include the specific resource instance ID
+-   Resource instances are synced to Permit.io (with `enableResourceSync: true`)
+-   Permission checks include the specific resource instance ID
 
 **Best for**: Collaborative applications where users need different permissions on different instances of the same resource type.
 
 ### [Choosing the right model](#choosing-the-right-model)
 
-*   **RBAC**: When you need simple, role-based access control
-*   **ABAC**: When decisions depend on data properties or contextual information
-*   **ReBAC**: When users need different permissions on different instances
+-   **RBAC**: When you need simple, role-based access control
+-   **ABAC**: When decisions depend on data properties or contextual information
+-   **ReBAC**: When users need different permissions on different instances
 
 ### [Prerequisites](#prerequisites)
 
 Before implementing fine-grained authorization with Prisma, make sure you have:
 
-*   A Prisma application with existing models and queries
-*   Basic understanding of authorization concepts
-*   Node.js and npm installed
+-   A Prisma application with existing models and queries
+-   Basic understanding of authorization concepts
+-   Node.js and npm installed
 
 ### [Installation](#installation)
 
@@ -98,9 +97,9 @@ const prisma = new PrismaClient().$extends(
 RBAC uses roles to determine access permissions. For example, "Admin" roles can perform all actions while "Viewer" roles can only read data.
 
 1.  **Define resources and actions in Permit.io dashboard**:
-    *   Create resources matching your Prisma models (e.g., "document")
-    *   Define actions (e.g., "create", "read", "update", "delete")
-    *   Create roles with permission sets (e.g., "admin", "editor", "viewer")
+    -   Create resources matching your Prisma models (e.g., "document")
+    -   Define actions (e.g., "create", "read", "update", "delete")
+    -   Create roles with permission sets (e.g., "admin", "editor", "viewer")
 2.  **Set the active user in your code**:
 
 ```
@@ -191,12 +190,12 @@ await prisma.$permit.enforceCheck("john@example.com", "delete", {
 
 Here are some common scenarios where fine-grained authorization is valuable:
 
-*   **Multi-tenant applications**: Isolate data between different customers
-*   **Healthcare applications**: Ensure patient data is only accessible to authorized staff
-*   **Collaborative platforms**: Grant different permissions on shared resources
-*   **Content management systems**: Control who can publish, edit, or view content
+-   **Multi-tenant applications**: Isolate data between different customers
+-   **Healthcare applications**: Ensure patient data is only accessible to authorized staff
+-   **Collaborative platforms**: Grant different permissions on shared resources
+-   **Content management systems**: Control who can publish, edit, or view content
 
 By integrating the `@permitio/permit-prisma` extension with your Prisma ORM application, you can implement sophisticated authorization policies that protect your data and ensure users only access what they're permitted to see. The extension supports all major authorization models (RBAC, ABAC, ReBAC) and provides both automatic and manual permission enforcement.
 
-*   [Create a free Permit.io account](https://app.permit.io/)
-*   [View the full extension documentation](https://github.com/permitio/permit-prisma)
+-   [Create a free Permit.io account](https://app.permit.io/)
+-   [View the full extension documentation](https://github.com/permitio/permit-prisma)

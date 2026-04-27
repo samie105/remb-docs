@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/app/guides/view-transitions"
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:17:09.740Z"
-content_hash: "c4d0a3e83788594d52b5fcee9bdea5a6505295029cfa688df77ff3cabfdaa264"
+last_crawled_at: "2026-04-27T18:16:40.026Z"
+content_hash: "1f8ebf96adeb760a4129f67d8f2d349783c1bc7350886f47c81c9a1914a6cbf8"
 menu_path: ["Designing view transitions"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/guides/videos/index.md", "title": "How to use and optimize videos"}
-nav_next: {"path": "nextjs/docs/app/api-reference/index.md", "title": "API Reference"}
+version: "latest"
+content_language: "en"
 ---
+[App Router](/docs/app)[Guides](/docs/app/guides)View transitions
 
 # Designing view transitions
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 In web apps, route changes replace the entire page at once. One set of elements disappears, another appears, with no visual connection between them. A user selects a photo thumbnail to view it in detail on another page. They are the same image, but nothing on screen communicates that.
 
@@ -33,8 +34,8 @@ We'll start by morphing a thumbnail into a hero image (shared elements), then an
 
 You can find the resources used in this example here:
 
-*   [Demo](https://react-view-transitions-demo.labs.vercel.dev)
-*   [Code](https://github.com/vercel-labs/react-view-transitions-demo)
+-   [Demo](https://react-view-transitions-demo.labs.vercel.dev)
+-   [Code](https://github.com/vercel-labs/react-view-transitions-demo)
 
 Before starting, enable view transitions in your Next.js config:
 
@@ -221,8 +222,6 @@ app/globals.css
 The asymmetry is deliberate. Old content should leave quickly so it does not compete for attention. New content should arrive more gently so the user has time to register it. The `var(--duration-exit)` delay on the enter animation means the new content waits for the old content to finish leaving before it appears.
 
 If we refresh the page, the skeleton slides down and fades out, and a moment later the real content slides up and fades in.
-
-### Step 3: Add directional motion for navigation[](#step-3-add-directional-motion-for-navigation)
 
 The gallery now has morphing images and animated loading states. But navigating between pages still has no directional signal. Forward and back navigations look identical. The user cannot tell from the animation whether they moved deeper into the app or returned to a previous page.
 
@@ -417,48 +416,19 @@ You now know how to use view transitions to communicate meaning during navigatio
 
 Each pattern answers a different question for the user:
 
-Pattern
-
-What it communicates
-
-Shared element (morph)
-
-"Same thing, going deeper"
-
-Suspense reveal
-
-"Data loaded"
-
-Directional slide
-
-"Going forward / coming back"
-
-Same-route crossfade
-
-"Same place, different content"
+| Pattern | What it communicates |
+| --- | --- |
+| Shared element (morph) | "Same thing, going deeper" |
+| Suspense reveal | "Data loaded" |
+| Directional slide | "Going forward / coming back" |
+| Same-route crossfade | "Same place, different content" |
 
 For API details and more patterns:
 
-*   [View transition configuration](/docs/app/api-reference/config/next-config-js/viewTransition)
-*   [Link `transitionTypes` prop](/docs/app/api-reference/components/link#transitiontypes)
-*   [`useRouter`](/docs/app/api-reference/functions/use-router) — also supports `transitionTypes` in `push()` and `replace()`
-*   [React `ViewTransition` component](https://react.dev/reference/react/ViewTransition)
-*   [Complete CSS from this guide](https://github.com/vercel-labs/react-view-transitions-demo/blob/main/src/app/globals.css) — all keyframes and view transition rules in one file
-
-[Previous
-
-Videos
-
-](/docs/app/guides/videos)
-
-[Next
-
-API Reference
-
-](/docs/app/api-reference)
+-   [View transition configuration](/docs/app/api-reference/config/next-config-js/viewTransition)
+-   [Link `transitionTypes` prop](/docs/app/api-reference/components/link#transitiontypes)
+-   [`useRouter`](/docs/app/api-reference/functions/use-router) — also supports `transitionTypes` in `push()` and `replace()`
+-   [React `ViewTransition` component](https://react.dev/reference/react/ViewTransition)
+-   [Complete CSS from this guide](https://github.com/vercel-labs/react-view-transitions-demo/blob/main/src/app/globals.css) — all keyframes and view transition rules in one file
 
 Was this helpful?
-
-supported.
-
-Send

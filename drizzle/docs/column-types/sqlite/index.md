@@ -5,17 +5,15 @@ canonical_url: "https://orm.drizzle.team/docs/column-types/sqlite"
 docset: "drizzle"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:37:00.179Z"
-content_hash: "c61cbe69a987e76fa2c14635767238e6d31eba9c38e7264d08caa09d1d26007f"
+last_crawled_at: "2026-04-27T18:26:19.877Z"
+content_hash: "1abe4195498ef0d1b07a87343b6e0fc04c972b9bea73d38575c98c6d3aa6ede9"
 menu_path: ["SQLite column types"]
 section_path: []
-nav_prev: {"path": "drizzle/docs/column-types/singlestore/index.md", "title": "SingleStore column types"}
-nav_next: {"path": "drizzle/docs/docs/drizzle-config-file/index.md", "title": "404"}
+content_language: "en"
 ---
-
 Based on the official **[SQLite docs](https://www.sqlite.org/datatype3.html)**, each value stored in an SQLite database (or manipulated by the database engine) has one of the following storage classes `NULL`, `INTEGER`, `REAL`, `TEXT` and `BLOB`.
 
-We have native support for all of them, yet if that’s not enough for you, feel free to create **[custom types](drizzle/docs/custom-types/index.md)**.
+We have native support for all of them, yet if that’s not enough for you, feel free to create **[custom types](https://orm.drizzle.team/docs/custom-types)**.
 
 important
 
@@ -23,13 +21,13 @@ All examples in this part of the documentation do not use database column name a
 
 You can use database aliases in column names if you want, and you can also use the `casing` parameter to define a mapping strategy for Drizzle.
 
-You can read more about it [here](drizzle/docs/sql-schema-declaration/index.md#shape-your-data-schema)
+You can read more about it [here](https://orm.drizzle.team/docs/sql-schema-declaration#shape-your-data-schema)
 
 ### Integer[](#integer)
 
 A signed integer, stored in `0`, `1`, `2`, `3`, `4`, `6`, or `8` bytes depending on the magnitude of the value.
 
-```
+```typescript
 import { integer, sqliteTable } from "drizzle-orm/sqlite-core";
 
 const table = sqliteTable('table', {
@@ -43,18 +41,18 @@ integer({ mode: 'timestamp_ms' })
 integer({ mode: 'timestamp' }) // Date
 ```
 
-```
+```sql
 CREATE TABLE `table` (
 	`id` integer
 );
 ```
 
-```
+```typescript
 // to make integer primary key auto increment
 integer({ mode: 'number' }).primaryKey({ autoIncrement: true })
 ```
 
-```
+```sql
 CREATE TABLE `table` (
 	`id` integer PRIMARY KEY AUTOINCREMENT NOT NULL
 );
@@ -64,7 +62,7 @@ CREATE TABLE `table` (
 
 A floating point value, stored as an `8-byte IEEE` floating point number.
 
-```
+```typescript
 import { real, sqliteTable } from "drizzle-orm/sqlite-core";
 
 const table = sqliteTable('table', {
@@ -72,7 +70,7 @@ const table = sqliteTable('table', {
 });
 ```
 
-```
+```sql
 CREATE TABLE `table` (
 	`real` real
 );
@@ -84,7 +82,7 @@ A text string, stored using the database encoding (`UTF-8`, `UTF-16BE` or `UTF-1
 
 You can define `{ enum: ["value1", "value2"] }` config to infer `insert` and `select` types, it **won’t** check runtime values.
 
-```
+```typescript
 import { text, sqliteTable } from "drizzle-orm/sqlite-core";
 
 const table = sqliteTable('table', {
@@ -97,7 +95,7 @@ text({ mode: 'json' })
 text({ mode: 'json' }).$type<{ foo: string }>()
 ```
 
-```
+```sql
 CREATE TABLE `table` (
 	`text` text
 );
@@ -113,7 +111,7 @@ All JSON functions currently throw an error if any of their arguments are BLOBs 
 
 See **[https://www.sqlite.org/json1.html](https://www.sqlite.org/json1.html)**.
 
-```
+```typescript
 import { blob, sqliteTable } from "drizzle-orm/sqlite-core";
 
 const table = sqliteTable('table', {
@@ -128,7 +126,7 @@ blob({ mode: 'json' })
 blob({ mode: 'json' }).$type<{ foo: string }>()
 ```
 
-```
+```sql
 CREATE TABLE `table` (
 	`blob` blob
 );
@@ -136,7 +134,7 @@ CREATE TABLE `table` (
 
 You can specify `.$type<..>()` for blob inference, it **won’t** check runtime values. It provides compile time protection for default values, insert and select schemas.
 
-```
+```typescript
 // will be inferred as { foo: string }
 json: blob({ mode: 'json' }).$type<{ foo: string }>();
 
@@ -151,7 +149,7 @@ json: blob({ mode: 'json' }).$type<string[]>().default({});
 
 SQLite does not have native `boolean` data type, yet you can specify `integer` column to be in a `boolean` mode. This allows you to operate boolean values in your code and Drizzle stores them as 0 and 1 integer values in the database.
 
-```
+```typescript
 import { integer, sqliteTable } from "drizzle-orm/sqlite-core";
 
 const table = sqliteTable('table', {
@@ -159,7 +157,7 @@ const table = sqliteTable('table', {
 });
 ```
 
-```
+```sql
 CREATE TABLE `table` (
 	`id` integer
 );
@@ -169,7 +167,7 @@ CREATE TABLE `table` (
 
 Since there is no `bigint` data type in SQLite, Drizzle offers a special `bigint` mode for `blob` columns. This mode allows you to work with BigInt instances in your code, and Drizzle stores them as blob values in the database.
 
-```
+```typescript
 import { blob, sqliteTable } from "drizzle-orm/sqlite-core";
 
 const table = sqliteTable('table', {
@@ -177,7 +175,7 @@ const table = sqliteTable('table', {
 });
 ```
 
-```
+```sql
 CREATE TABLE `table` (
 	`id` blob
 );
@@ -185,7 +183,7 @@ CREATE TABLE `table` (
 
 ### Numeric[](#numeric)
 
-```
+```typescript
 import { blob, sqliteTable } from "drizzle-orm/sqlite-core";
 
 const table = sqliteTable('table', {
@@ -195,7 +193,7 @@ const table = sqliteTable('table', {
 });
 ```
 
-```
+```sql
 CREATE TABLE `table` (
 	`numeric` numeric,
 	`numericNum` numeric,
@@ -207,7 +205,7 @@ CREATE TABLE `table` (
 
 Every column builder has a `.$type()` method, which allows you to customize the data type of the column. This is useful, for example, with unknown or branded types.
 
-```
+```ts
 type UserId = number & { __brand: 'user_id' };
 type Data = {
 	foo: string;
@@ -224,13 +222,13 @@ const users = sqliteTable('users', {
 
 `NOT NULL` constraint dictates that the associated column may not contain a `NULL` value.
 
-```
+```typescript
 const table = sqliteTable('table', { 
 	numInt: integer().notNull() 
 });
 ```
 
-```
+```sql
 CREATE TABLE table (
 	`numInt` integer NOT NULL
 );
@@ -242,7 +240,7 @@ The `DEFAULT` clause specifies a default value to use for the column if no value
 
 An explicit `DEFAULT` clause may specify that the default value is `NULL`, a string constant, a blob constant, a signed-number, or any constant expression enclosed in parentheses.
 
-```
+```typescript
 import { sql } from "drizzle-orm";
 import { integer, sqliteTable } from "drizzle-orm/sqlite-core";
 
@@ -252,7 +250,7 @@ const table = sqliteTable('table', {
 });
 ```
 
-```
+```sql
 CREATE TABLE `table` (
 	`int1` integer DEFAULT 42,
 	`int2` integer DEFAULT (abs(42))
@@ -261,7 +259,7 @@ CREATE TABLE `table` (
 
 A default value may also be one of the special case-independent keywords `CURRENT_TIME`, `CURRENT_DATE` or `CURRENT_TIMESTAMP`.
 
-```
+```typescript
 import { sql } from "drizzle-orm";
 import { text, sqliteTable } from "drizzle-orm/sqlite-core";
 
@@ -272,7 +270,7 @@ const table = sqliteTable("table", {
 });
 ```
 
-```
+```sql
 CREATE TABLE `table` (
 	`time` text DEFAULT (CURRENT_TIME),
 	`date` text DEFAULT (CURRENT_DATE),
@@ -284,7 +282,7 @@ When using `$default()` or `$defaultFn()`, which are simply different aliases fo
 
 Note: This value does not affect the `drizzle-kit` behavior, it is only used at runtime in `drizzle-orm`
 
-```
+```ts
 import { text, sqliteTable } from "drizzle-orm/sqlite-core";
 import { createId } from '@paralleldrive/cuid2';
 
@@ -299,7 +297,7 @@ Adds a dynamic update value to the column. The function will be called when the 
 
 Note: This value does not affect the `drizzle-kit` behavior, it is only used at runtime in `drizzle-orm`
 
-```
+```ts
 import { text, sqliteTable } from "drizzle-orm/sqlite-core";
 
 const table = sqliteTable('table', {

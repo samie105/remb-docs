@@ -5,14 +5,12 @@ canonical_url: "https://www.prisma.io/docs/orm/reference/system-requirements"
 docset: "prisma"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:37:18.706Z"
-content_hash: "e559dd78cffcd14235d67ea93d29074197776bc7672b1fc0c5d0cafeaadbbdbe"
+last_crawled_at: "2026-04-27T19:36:16.617Z"
+content_hash: "93fd7da363e638a2b76e74e27555b3398961f411a29b10cc8ce1584372ba7e6c"
 menu_path: ["System requirements"]
 section_path: []
-nav_prev: {"path": "prisma/docs/orm/reference/supported-databases/index.md", "title": "Supported databases"}
-nav_next: {"path": "prisma/docs/orm/reference/error-reference/index.md", "title": "Error Reference"}
+content_language: "en"
 ---
-
 System requirements for running Prisma ORM
 
 This section lists the software that Prisma ORM requires and the supported operating systems, along with runtime dependency requirements for specific operating systems.
@@ -21,47 +19,29 @@ This section lists the software that Prisma ORM requires and the supported opera
 
 The latest version of Prisma ORM requires the following software:
 
-Tool
+| Tool | Minimum required version |
+| --- | --- |
+| Node.js | ^20.19.0, ^22.12.0, or ^24.0.0 |
+| TypeScript (optional) | 5.4+ |
+| Yarn (optional) | 1.19.2 |
 
-Minimum required version
+-   Prisma ORM supports and tests all _Active LTS_ and _Maintenance LTS_ **Node.js** releases. [Releases that are not in these states like _Current_, and also odd-numbered versions](https://nodejs.org/en/about/releases/) probably also work, but are not recommended for production use.
+-   **TypeScript** is only required for TypeScript users.
+-   When using **Yarn 1**, `1.19.2` is the minimum version compatible with Prisma Client.
 
-Node.js
+See also: [Supported database versions](https://www.prisma.io/docs/orm/reference/supported-databases)
 
-^20.19.0, ^22.12.0, or ^24.0.0
-
-TypeScript (optional)
-
-5.4+
-
-Yarn (optional)
-
-1.19.2
-
-*   Prisma ORM supports and tests all _Active LTS_ and _Maintenance LTS_ **Node.js** releases. [Releases that are not in these states like _Current_, and also odd-numbered versions](https://nodejs.org/en/about/releases/) probably also work, but are not recommended for production use.
-*   **TypeScript** is only required for TypeScript users.
-*   When using **Yarn 1**, `1.19.2` is the minimum version compatible with Prisma Client.
-
-See also: [Supported database versions](prisma/docs/orm/reference/supported-databases/index.md)
-
-Expand for earlier versions
+**Expand for earlier versions**
 
 ### [Prisma ORM v6](#prisma-orm-v6)
 
 Prisma ORM v6 requires the following software:
 
-Minimum required version
-
-Node.js
-
-16.13 / 18.X / 20.X
-
-TypeScript (optional)
-
-4.7+
-
-Yarn (optional)
-
-1.19.2
+|  | Minimum required version |
+| --- | --- |
+| Node.js | 16.13 / 18.X / 20.X |
+| TypeScript (optional) | 4.7+ |
+| Yarn (optional) | 1.19.2 |
 
 ### [Operating systems](#operating-systems)
 
@@ -71,70 +51,29 @@ Prisma ORM is supported on macOS, Windows and most Linux distributions.
 
 Prisma ORM requires the following system libraries to be installed to work:
 
-*   OpenSSL 1.0.x, 1.1.x or 3.x
-*   zlib (`libz.so.1`)
-*   libgcc (`libgcc_s.so.1`)
-*   C standard library (glibc on most Linux distributions or musl libc on Alpine Linux)
+-   OpenSSL 1.0.x, 1.1.x or 3.x
+-   zlib (`libz.so.1`)
+-   libgcc (`libgcc_s.so.1`)
+-   C standard library (glibc on most Linux distributions or musl libc on Alpine Linux)
 
 The following two tables show the supported Linux distro families, OpenSSL versions and C standard libraries for each CPU architecture.
 
 On `AMD64` (`x86_64`) architecture:
 
-Distro family
-
-OpenSSL version
-
-libc version
-
-Alpine
-
-1.1.x, 3.x
-
-musl 1.2.x
-
-RHEL
-
-1.0.x, 1.1.x, 3.x
-
-glibc 2.17+
-
-Debian or others
-
-1.0.x
-
-glibc 2.19+
-
-Debian or others
-
-1.1.x, 3.x
-
-glibc 2.24+
+| Distro family | OpenSSL version | libc version |
+| --- | --- | --- |
+| Alpine | 1.1.x, 3.x | musl 1.2.x |
+| RHEL | 1.0.x, 1.1.x, 3.x | glibc 2.17+ |
+| Debian or others | 1.0.x | glibc 2.19+ |
+| Debian or others | 1.1.x, 3.x | glibc 2.24+ |
 
 On `ARM64` (`aarch64`) architecture:
 
-Distro family
-
-OpenSSL version
-
-libc version
-
-Alpine
-
-1.1.x, 3.x
-
-musl 1.2.x
-
-RHEL
-
-1.0.x, 1.1.x, 3.x
-
-glibc 2.24+
-
-Debian or others
-
-1.0.x, 1.1.x, 3.x
-
-glibc 2.24+
+| Distro family | OpenSSL version | libc version |
+| --- | --- | --- |
+| Alpine | 1.1.x, 3.x | musl 1.2.x |
+| RHEL | 1.0.x, 1.1.x, 3.x | glibc 2.24+ |
+| Debian or others | 1.0.x, 1.1.x, 3.x | glibc 2.24+ |
 
 When Prisma ORM can not resolve the OpenSSL version on a system (e.g. because it is not installed), it will default to OpenSSL 1.1.x.
 
@@ -198,5 +137,3 @@ server.ts:6:48 - error TS2554: Expected 0 arguments, but got 1.
 #### [Solution](#solution-1)
 
 Upgrade the TypeScript dependency in your project to a [version supported by Prisma ORM](#software-requirements). `npm install -D typescript`.
-
-[Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/reference/system-requirements.mdx)

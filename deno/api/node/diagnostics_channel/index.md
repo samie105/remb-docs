@@ -5,10 +5,11 @@ canonical_url: "https://docs.deno.com/api/node/diagnostics_channel/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:34:57.991Z"
-content_hash: "0712263961e902488513bb4cb333c22197ecf7b9e258748f7777cf6d8e838077"
+last_crawled_at: "2026-04-27T17:05:13.341Z"
+content_hash: "1b545b52e2d093c8e0411ea5ea48719c007a75aa792fd7754ed0b5821564f918"
 menu_path: ["diagnostics_channel - Node documentation"]
 section_path: []
+content_language: "en"
 ---
 ### Usage in Deno
 
@@ -28,22 +29,20 @@ It is intended that a module writer wanting to report diagnostics messages will 
 
 If you intend for your module to produce diagnostics data for others to consume it is recommended that you include documentation of what named channels are used along with the shape of the message data. Channel names should generally include the module name to avoid collisions with data from other modules.
 
-### Classes [#](#Classes)
-
 c
 
 [Channel](.././diagnostics_channel/~/Channel "Channel")
 
 The class `Channel` represents an individual named channel within the data pipeline. It is used to track subscribers and to publish messages when there are subscribers present. It exists as a separate object to avoid channel lookups at publish time, enabling very fast publish speeds and allowing for heavy use while incurring very minimal cost. Channels are created with [channel](.././diagnostics_channel/~/channel), constructing a channel directly with `new Channel(name)` is not supported.
 
-*   [bindStore](.././diagnostics_channel/~/Channel#method_bindstore_0)
-*   [hasSubscribers](.././diagnostics_channel/~/Channel#property_hassubscribers)
-*   [name](.././diagnostics_channel/~/Channel#property_name)
-*   [publish](.././diagnostics_channel/~/Channel#method_publish_0)
-*   [runStores](.././diagnostics_channel/~/Channel#method_runstores_0)
-*   [subscribe](.././diagnostics_channel/~/Channel#method_subscribe_0)
-*   [unbindStore](.././diagnostics_channel/~/Channel#method_unbindstore_0)
-*   [unsubscribe](.././diagnostics_channel/~/Channel#method_unsubscribe_0)
+-   [bindStore](.././diagnostics_channel/~/Channel#method_bindstore_0)
+-   [hasSubscribers](.././diagnostics_channel/~/Channel#property_hassubscribers)
+-   [name](.././diagnostics_channel/~/Channel#property_name)
+-   [publish](.././diagnostics_channel/~/Channel#method_publish_0)
+-   [runStores](.././diagnostics_channel/~/Channel#method_runstores_0)
+-   [subscribe](.././diagnostics_channel/~/Channel#method_subscribe_0)
+-   [unbindStore](.././diagnostics_channel/~/Channel#method_unbindstore_0)
+-   [unsubscribe](.././diagnostics_channel/~/Channel#method_unsubscribe_0)
 
 c
 
@@ -51,18 +50,16 @@ c
 
 The class `TracingChannel` is a collection of `TracingChannel Channels` which together express a single traceable action. It is used to formalize and simplify the process of producing events for tracing application flow. [tracingChannel](.././diagnostics_channel/~/tracingChannel) is used to construct a `TracingChannel`. As with `Channel` it is recommended to create and reuse a single `TracingChannel` at the top-level of the file rather than creating them dynamically.
 
-*   [asyncEnd](.././diagnostics_channel/~/TracingChannel#property_asyncend)
-*   [asyncStart](.././diagnostics_channel/~/TracingChannel#property_asyncstart)
-*   [end](.././diagnostics_channel/~/TracingChannel#property_end)
-*   [error](.././diagnostics_channel/~/TracingChannel#property_error)
-*   [start](.././diagnostics_channel/~/TracingChannel#property_start)
-*   [subscribe](.././diagnostics_channel/~/TracingChannel#method_subscribe_0)
-*   [traceCallback](.././diagnostics_channel/~/TracingChannel#method_tracecallback_0)
-*   [tracePromise](.././diagnostics_channel/~/TracingChannel#method_tracepromise_0)
-*   [traceSync](.././diagnostics_channel/~/TracingChannel#method_tracesync_0)
-*   [unsubscribe](.././diagnostics_channel/~/TracingChannel#method_unsubscribe_0)
-
-### Functions [#](#Functions)
+-   [asyncEnd](.././diagnostics_channel/~/TracingChannel#property_asyncend)
+-   [asyncStart](.././diagnostics_channel/~/TracingChannel#property_asyncstart)
+-   [end](.././diagnostics_channel/~/TracingChannel#property_end)
+-   [error](.././diagnostics_channel/~/TracingChannel#property_error)
+-   [start](.././diagnostics_channel/~/TracingChannel#property_start)
+-   [subscribe](.././diagnostics_channel/~/TracingChannel#method_subscribe_0)
+-   [traceCallback](.././diagnostics_channel/~/TracingChannel#method_tracecallback_0)
+-   [tracePromise](.././diagnostics_channel/~/TracingChannel#method_tracepromise_0)
+-   [traceSync](.././diagnostics_channel/~/TracingChannel#method_tracesync_0)
+-   [unsubscribe](.././diagnostics_channel/~/TracingChannel#method_unsubscribe_0)
 
 f
 
@@ -94,19 +91,17 @@ f
 
 Remove a message handler previously registered to this channel with [subscribe](.././diagnostics_channel/~/subscribe).
 
-### Interfaces [#](#Interfaces)
-
 I
 
 [TracingChannelCollection](.././diagnostics_channel/~/TracingChannelCollection "TracingChannelCollection")
 
 No documentation available
 
-*   [asyncEnd](.././diagnostics_channel/~/TracingChannelCollection#property_asyncend)
-*   [asyncStart](.././diagnostics_channel/~/TracingChannelCollection#property_asyncstart)
-*   [end](.././diagnostics_channel/~/TracingChannelCollection#property_end)
-*   [error](.././diagnostics_channel/~/TracingChannelCollection#property_error)
-*   [start](.././diagnostics_channel/~/TracingChannelCollection#property_start)
+-   [asyncEnd](.././diagnostics_channel/~/TracingChannelCollection#property_asyncend)
+-   [asyncStart](.././diagnostics_channel/~/TracingChannelCollection#property_asyncstart)
+-   [end](.././diagnostics_channel/~/TracingChannelCollection#property_end)
+-   [error](.././diagnostics_channel/~/TracingChannelCollection#property_error)
+-   [start](.././diagnostics_channel/~/TracingChannelCollection#property_start)
 
 I
 
@@ -114,13 +109,11 @@ I
 
 No documentation available
 
-*   [asyncEnd](.././diagnostics_channel/~/TracingChannelSubscribers#property_asyncend)
-*   [asyncStart](.././diagnostics_channel/~/TracingChannelSubscribers#property_asyncstart)
-*   [end](.././diagnostics_channel/~/TracingChannelSubscribers#property_end)
-*   [error](.././diagnostics_channel/~/TracingChannelSubscribers#property_error)
-*   [start](.././diagnostics_channel/~/TracingChannelSubscribers#property_start)
-
-### Type Aliases [#](<#Type Aliases>)
+-   [asyncEnd](.././diagnostics_channel/~/TracingChannelSubscribers#property_asyncend)
+-   [asyncStart](.././diagnostics_channel/~/TracingChannelSubscribers#property_asyncstart)
+-   [end](.././diagnostics_channel/~/TracingChannelSubscribers#property_end)
+-   [error](.././diagnostics_channel/~/TracingChannelSubscribers#property_error)
+-   [start](.././diagnostics_channel/~/TracingChannelSubscribers#property_start)
 
 T
 

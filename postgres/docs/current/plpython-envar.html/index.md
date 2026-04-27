@@ -5,37 +5,35 @@ canonical_url: "https://www.postgresql.org/docs/current/plpython-envar.html"
 docset: "postgres"
 kind: "database"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:36:29.950Z"
-content_hash: "b5a48a5d55e1fa04fe06569287b4559537ff8cdb95e7b212b6d53b957e29e62c"
+last_crawled_at: "2026-04-27T20:43:45.419Z"
+content_hash: "708d73d025842f08ec67fbc2f9f95a3e7e895222a40bbbb122c0e5cffcd803cf"
 menu_path: ["PostgreSQL: Documentation: 18: 44.11. Environment Variables"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/plpython-database.html/index.md", "title": "PostgreSQL: Documentation: 18: 44.6.\u00a0Database Access"}
-nav_next: {"path": "postgres/docs/current/plpython-funcs.html/index.md", "title": "PostgreSQL: Documentation: 18: 44.1.\u00a0PL/Python Functions"}
+content_language: "en"
 ---
-
 Some of the environment variables that are accepted by the Python interpreter can also be used to affect PL/Python behavior. They would need to be set in the environment of the main PostgreSQL server process, for example in a start script. The available environment variables depend on the version of Python; see the Python documentation for details. At the time of this writing, the following environment variables have an affect on PL/Python, assuming an adequate Python version:
 
-*   `PYTHONHOME`
+-   `PYTHONHOME`
     
-*   `PYTHONPATH`
+-   `PYTHONPATH`
     
-*   `PYTHONY2K`
+-   `PYTHONY2K`
     
-*   `PYTHONOPTIMIZE`
+-   `PYTHONOPTIMIZE`
     
-*   `PYTHONDEBUG`
+-   `PYTHONDEBUG`
     
-*   `PYTHONVERBOSE`
+-   `PYTHONVERBOSE`
     
-*   `PYTHONCASEOK`
+-   `PYTHONCASEOK`
     
-*   `PYTHONDONTWRITEBYTECODE`
+-   `PYTHONDONTWRITEBYTECODE`
     
-*   `PYTHONIOENCODING`
+-   `PYTHONIOENCODING`
     
-*   `PYTHONUSERBASE`
+-   `PYTHONUSERBASE`
     
-*   `PYTHONHASHSEED`
+-   `PYTHONHASHSEED`
     
 
 (It appears to be a Python implementation detail beyond the control of PL/Python that some of the environment variables listed on the `python` man page are only effective in a command-line interpreter and not an embedded Python interpreter.)

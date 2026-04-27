@@ -5,15 +5,16 @@ canonical_url: "https://docs.deno.com/runtime/reference/std/ulid/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:06:36.478Z"
-content_hash: "b9ca96c1e8459e81e58e4013c1fef0b6f6f40021af9ccec324206bff7a7cd247"
+last_crawled_at: "2026-04-27T17:48:38.165Z"
+content_hash: "396812cf762a7ccf55d3634e41f344e7d642631b06d25cba4d10a9e2f7a6c055"
 menu_path: ["@std/ulid"]
 section_path: []
+content_language: "en"
 ---
-On this page
+**On this page**
 
-*   [Overview](#overview)
-    *   [Add to your project](#add-to-your-project)
+-   [Overview](#overview)
+    -   [Add to your project](#add-to-your-project)
 
 ## Overview
 

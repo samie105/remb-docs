@@ -5,17 +5,19 @@ canonical_url: "https://nextjs.org/docs/app/guides/upgrading/version-16"
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:17:03.176Z"
-content_hash: "7866b350af79425cc304e5dd8242d255753a58556ea138f3ecd1ccb73644ac77"
+last_crawled_at: "2026-04-27T18:16:37.222Z"
+content_hash: "2f1fed800a40d977bb8cbf5b45da67162319b54f082e6cc8bc5ae709ded49ac6"
 menu_path: ["How to upgrade to version 16"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/guides/upgrading/version-15/index.md", "title": "How to upgrade to version 15"}
-nav_next: {"path": "nextjs/docs/app/guides/videos/index.md", "title": "How to use and optimize videos"}
+version: "latest"
+tab_variants: ["pnpm","npm","yarn","bun","pnpm","npm","yarn","bun","pnpm","npm","yarn","bun","pnpm","npm","yarn","bun","pnpm","npm","yarn","bun"]
+content_language: "en"
 ---
+[Guides](/docs/app/guides)[Upgrading](/docs/app/guides/upgrading)Version 16
 
 # How to upgrade to version 16
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 ## Upgrading from 15 to 16[](#upgrading-from-15-to-16)
 
@@ -72,7 +74,21 @@ Learn more in the documentation [here](/docs/app/guides/mcp).
 
 To update to Next.js version 16, you can use the `upgrade` [codemod](/docs/app/guides/upgrading/codemods#160):
 
-pnpmnpmyarnbun
+#### pnpm
+
+pnpm
+
+#### npm
+
+npm
+
+#### yarn
+
+yarn
+
+#### bun
+
+bun
 
 Terminal
 
@@ -82,15 +98,29 @@ pnpm dlx @next/codemod@canary upgrade latest
 
 The [codemod](/docs/app/guides/upgrading/codemods#160) is able to:
 
-*   Update `next.config.js` to use the new `turbopack` configuration
-*   Migrate from `next lint` to the ESLint CLI
-*   Migrate from deprecated `middleware` convention to `proxy`
-*   Remove `unstable_` prefix from stabilized APIs
-*   Remove `experimental_ppr` Route Segment Config from pages and layouts
+-   Update `next.config.js` to use the new `turbopack` configuration
+-   Migrate from `next lint` to the ESLint CLI
+-   Migrate from deprecated `middleware` convention to `proxy`
+-   Remove `unstable_` prefix from stabilized APIs
+-   Remove `experimental_ppr` Route Segment Config from pages and layouts
 
 If you prefer to do it manually, install the latest Next.js and React versions:
 
-pnpmnpmyarnbun
+#### pnpm
+
+pnpm
+
+#### npm
+
+npm
+
+#### yarn
+
+yarn
+
+#### bun
+
+bun
 
 Terminal
 
@@ -102,21 +132,11 @@ If you are using TypeScript, ensure you also upgrade `@types/react` and `@types/
 
 ## Node.js runtime and browser support[](#nodejs-runtime-and-browser-support)
 
-Requirement
-
-Change / Details
-
-Node.js 20.9+
-
-Minimum version now `20.9.0` (LTS); Node.js 18 no longer supported
-
-TypeScript 5+
-
-Minimum version now `5.1.0`
-
-Browsers
-
-Chrome 111+, Edge 111+, Firefox 111+, Safari 16.4+
+| Requirement | Change / Details |
+| --- | --- |
+| Node.js 20.9+ | Minimum version now `20.9.0` (LTS); Node.js 18 no longer supported |
+| TypeScript 5+ | Minimum version now `5.1.0` |
+| Browsers | Chrome 111+, Edge 111+, Firefox 111+, Safari 16.4+ |
 
 ## Turbopack by default[](#turbopack-by-default)
 
@@ -154,9 +174,9 @@ If your project has a [custom `webpack`](/docs/app/api-reference/config/next-con
 
 You have a few different ways to address this:
 
-*   **Use Turbopack anyway:** Run with `next build --turbopack` to build using Turbopack and ignore your `webpack` config.
-*   **Switch to Turbopack fully:** Migrate your `webpack` config to Turbopack-compatible options.
-*   **Keep using Webpack:** Use the `--webpack` flag to opt out of Turbopack and build with Webpack.
+-   **Use Turbopack anyway:** Run with `next build --turbopack` to build using Turbopack and ignore your `webpack` config.
+-   **Switch to Turbopack fully:** Migrate your `webpack` config to Turbopack-compatible options.
+-   **Keep using Webpack:** Use the `--webpack` flag to opt out of Turbopack and build with Webpack.
 
 > **Good to know**: If you see failing builds because a `webpack` configuration was found, but you don't define one yourself, it is likely that a plugin is adding a `webpack` option
 
@@ -218,8 +238,8 @@ export default nextConfig
 
 Make sure to review the `Turbopack` configuration [options](/docs/app/api-reference/config/next-config-js/turbopack). **Next.js 16** introduces various improvements and new options, for example:
 
-*   [Advanced Webpack loader conditions](/docs/app/api-reference/config/next-config-js/turbopack#advanced-webpack-loader-conditions)
-*   [debugIds](/docs/app/api-reference/config/next-config-js/turbopack#debug-ids)
+-   [Advanced Webpack loader conditions](/docs/app/api-reference/config/next-config-js/turbopack#advanced-webpack-loader-conditions)
+-   [debugIds](/docs/app/api-reference/config/next-config-js/turbopack#debug-ids)
 
 ### Resolve alias fallback[](#resolve-alias-fallback)
 
@@ -295,8 +315,6 @@ Enable filesystem caching in your configuration:
 
 next.config.ts
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -313,15 +331,15 @@ export default nextConfig
 
 ## Async Request APIs (Breaking change)[](#async-request-apis-breaking-change)
 
-Version 15 introduced [Async Request APIs](nextjs/docs/app/guides/upgrading/version-15/index.md#async-request-apis-breaking-change) as a breaking change, with **temporary** synchronous compatibility.
+Version 15 introduced [Async Request APIs](https://nextjs.org/docs/app/guides/upgrading/version-15#async-request-apis-breaking-change) as a breaking change, with **temporary** synchronous compatibility.
 
 Starting with **Next.js 16**, synchronous access is fully removed. These APIs can only be accessed asynchronously.
 
-*   [`cookies`](/docs/app/api-reference/functions/cookies)
-*   [`headers`](/docs/app/api-reference/functions/headers)
-*   [`draftMode`](/docs/app/api-reference/functions/draft-mode)
-*   `params` in [`layout.js`](/docs/app/api-reference/file-conventions/layout), [`page.js`](/docs/app/api-reference/file-conventions/page), [`route.js`](/docs/app/api-reference/file-conventions/route), [`default.js`](/docs/app/api-reference/file-conventions/default), [`opengraph-image`](/docs/app/api-reference/file-conventions/metadata/opengraph-image#opengraph-image), [`twitter-image`](/docs/app/api-reference/file-conventions/metadata/opengraph-image#twitter-image), [`icon`](/docs/app/api-reference/file-conventions/metadata/app-icons#icon), and [`apple-icon`](/docs/app/api-reference/file-conventions/metadata/app-icons#apple-icon).
-*   `searchParams` in [`page.js`](/docs/app/api-reference/file-conventions/page)
+-   [`cookies`](/docs/app/api-reference/functions/cookies)
+-   [`headers`](/docs/app/api-reference/functions/headers)
+-   [`draftMode`](/docs/app/api-reference/functions/draft-mode)
+-   `params` in [`layout.js`](/docs/app/api-reference/file-conventions/layout), [`page.js`](/docs/app/api-reference/file-conventions/page), [`route.js`](/docs/app/api-reference/file-conventions/route), [`default.js`](/docs/app/api-reference/file-conventions/default), [`opengraph-image`](/docs/app/api-reference/file-conventions/metadata/opengraph-image#opengraph-image), [`twitter-image`](/docs/app/api-reference/file-conventions/metadata/opengraph-image#twitter-image), [`icon`](/docs/app/api-reference/file-conventions/metadata/app-icons#icon), and [`apple-icon`](/docs/app/api-reference/file-conventions/metadata/app-icons#apple-icon).
+-   `searchParams` in [`page.js`](/docs/app/api-reference/file-conventions/page)
 
 Use the [codemod](/docs/app/guides/upgrading/codemods#migrate-to-async-dynamic-apis) to migrate to async Request-time APIs.
 
@@ -329,9 +347,9 @@ Use the [codemod](/docs/app/guides/upgrading/codemods#migrate-to-async-dynamic-a
 
 To help migrate to async `params` and `searchParams`, you can run [`npx next typegen`](/docs/app/api-reference/cli/next#next-typegen-options) to automatically generate these globally available types helpers:
 
-*   [`PageProps`](/docs/app/api-reference/file-conventions/page#page-props-helper)
-*   [`LayoutProps`](/docs/app/api-reference/file-conventions/layout#layout-props-helper)
-*   [`RouteContext`](/docs/app/api-reference/file-conventions/route#route-context-helper)
+-   [`PageProps`](/docs/app/api-reference/file-conventions/page#page-props-helper)
+-   [`LayoutProps`](/docs/app/api-reference/file-conventions/layout#layout-props-helper)
+-   [`RouteContext`](/docs/app/api-reference/file-conventions/route#route-context-helper)
 
 > **Good to know**: `typegen` was introduced in Next.js 15.5
 
@@ -429,9 +447,9 @@ export default async function sitemap({ id }) {
 
 The App Router in **Next.js 16** uses the latest React [Canary release](https://react.dev/blog/2023/05/03/react-canaries), which includes the newly released React 19.2 features and other features being incrementally stabilized. Highlights include:
 
-*   **[View Transitions](https://react.dev/reference/react/ViewTransition)**: Animate elements that update inside a Transition or navigation
-*   **[`useEffectEvent`](https://react.dev/reference/react/useEffectEvent)**: Extract non-reactive logic from Effects into reusable Effect Event functions
-*   **[Activity](https://react.dev/reference/react/Activity)**: Render "background activity" by hiding UI with `display: none` while maintaining state and cleaning up Effects
+-   **[View Transitions](https://react.dev/reference/react/ViewTransition)**: Animate elements that update inside a Transition or navigation
+-   **[`useEffectEvent`](https://react.dev/reference/react/useEffectEvent)**: Extract non-reactive logic from Effects into reusable Effect Event functions
+-   **[Activity](https://react.dev/reference/react/Activity)**: Render "background activity" by hiding UI with `display: none` while maintaining state and cleaning up Effects
 
 Learn more in the [React 19.2 announcement](https://react.dev/blog/2025/10/01/react-19-2).
 
@@ -442,8 +460,6 @@ Built-in support for the React Compiler is now stable in **Next.js 16** followin
 The `reactCompiler` configuration option has been promoted from `experimental` to stable. It is not enabled by default as we continue gathering build performance data across different application types.
 
 next.config.ts
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -459,7 +475,21 @@ export default nextConfig
 
 Install the latest version of the React Compiler plugin:
 
-pnpmnpmyarnbun
+#### pnpm
+
+pnpm
+
+#### npm
+
+npm
+
+#### yarn
+
+yarn
+
+#### bun
+
+bun
 
 Terminal
 
@@ -487,8 +517,6 @@ If you need immediate expiration rather than stale-while-revalidate, use [`updat
 
 app/actions.ts
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -511,8 +539,6 @@ Use `revalidateTag` for content where a slight delay in updates is acceptable, s
 It does this by expiring and immediately refreshing data within the same request.
 
 app/actions.ts
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -538,8 +564,6 @@ Learn more about when to use `updateTag` or `revalidateTag` [here](/docs/app/api
 [`refresh`](/docs/app/api-reference/functions/refresh) allows you to refresh the client router from within a Server Action.
 
 app/actions.ts
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -578,12 +602,10 @@ You can update your imports to:
 import { cacheLife, cacheTag } from 'next/cache'
 ```
 
-## Enhanced Routing and Navigation[](#enhanced-routing-and-navigation)
-
 **Next.js 16** includes a complete overhaul of the routing and navigation system, making page transitions leaner and faster. This optimizes how Next.js prefetches and caches navigation data:
 
-*   **Layout deduplication**: When prefetching multiple URLs with a shared layout, the layout is downloaded once.
-*   **Incremental prefetching**: Next.js only prefetches parts not already in cache, rather than entire pages.
+-   **Layout deduplication**: When prefetching multiple URLs with a shared layout, the layout is downloaded once.
+-   **Incremental prefetching**: Next.js only prefetches parts not already in cache, rather than entire pages.
 
 These changes require **no code modifications** and are designed to improve performance across all apps.
 
@@ -644,8 +666,6 @@ The named export `middleware` is also deprecated. Rename your function to `proxy
 
 proxy.ts
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -657,8 +677,6 @@ We recommend changing the function name to `proxy`, even if you are using a defa
 Configuration flags that contained the `middleware` name are also renamed. For example, `skipMiddlewareUrlNormalize` is now `skipProxyUrlNormalize`
 
 next.config.ts
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -694,8 +712,6 @@ If you need to use query strings with local images, add the pattern to your conf
 
 next.config.ts
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -727,8 +743,6 @@ If you need the previous behavior, change `minimumCacheTTL` to a lower value, fo
 
 next.config.ts
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -752,8 +766,6 @@ We have looked at request analytics and found out that very few projects ever se
 If you need to support 16px images:
 
 next.config.ts
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -779,8 +791,6 @@ If you need to support multiple quality levels:
 
 next.config.ts
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -803,8 +813,6 @@ A new security restriction blocks local IP optimization by default. Set `images.
 
 next.config.ts
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -824,8 +832,6 @@ export default nextConfig
 The default for `images.maximumRedirects` has changed from unlimited to 3 redirects maximum.
 
 next.config.ts
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -896,7 +902,21 @@ Additionally, a lockfile mechanism prevents multiple `next dev` or `next build` 
 
 Since the development server outputs to `.next/dev`, the [Turbopack tracing command](/docs/app/guides/local-development#turbopack-tracing) should be:
 
-pnpmnpmyarnbun
+#### pnpm
+
+pnpm
+
+#### npm
+
+npm
+
+#### yarn
+
+yarn
+
+#### bun
+
+bun
 
 Terminal
 
@@ -976,8 +996,8 @@ The most effective way to measure actual route performance is through tools such
 
 In previous versions the Next config file was loaded twice during development:
 
-*   When running the `next dev` command
-*   When the `next dev` command started the Next.js server
+-   When running the `next dev` command
+-   When the `next dev` command started the Next.js server
 
 This was inefficient because the `next dev` command doesn't need the config file to start the Next.js server.
 
@@ -1039,8 +1059,8 @@ These features were previously deprecated and are now removed:
 
 AMP adoption has declined significantly, and maintaining this feature adds complexity to the framework. All AMP APIs and configurations have been removed:
 
-*   `amp` configuration from your Next config file
-*   `next/amp` hook imports and usage (`useAmp`)
+-   `amp` configuration from your Next config file
+-   `next/amp` hook imports and usage (`useAmp`)
 
 ```
 // Removed
@@ -1050,7 +1070,7 @@ import { useAmp } from 'next/amp'
 export const config = { amp: true }
 ```
 
-*   `export const config = { amp: true }` from pages
+-   `export const config = { amp: true }` from pages
 
 next.config.js
 
@@ -1073,7 +1093,21 @@ The `next lint` command has been removed. Use Biome or ESLint directly. `next bu
 
 A codemod is available to automate migration:
 
-pnpmnpmyarnbun
+#### pnpm
+
+pnpm
+
+#### npm
+
+npm
+
+#### yarn
+
+yarn
+
+#### bun
+
+bun
 
 Terminal
 
@@ -1185,9 +1219,9 @@ Learn more about [environment variables](/docs/app/guides/environment-variables)
 
 The following options have been removed from [`devIndicators`](/docs/app/api-reference/config/next-config-js/devIndicators):
 
-*   `appIsrStatus`
-*   `buildActivity`
-*   `buildActivityPosition`
+-   `appIsrStatus`
+-   `buildActivity`
+-   `buildActivityPosition`
 
 The indicator itself remains available.
 
@@ -1223,20 +1257,4 @@ module.exports = {
 
 The `unstable_rootParams` function has been removed. We are working on an alternative API that we will ship in an upcoming minor release.
 
-[Previous
-
-Version 15
-
-](/docs/app/guides/upgrading/version-15)
-
-[Next
-
-Videos
-
-](/docs/app/guides/videos)
-
 Was this helpful?
-
-supported.
-
-Send

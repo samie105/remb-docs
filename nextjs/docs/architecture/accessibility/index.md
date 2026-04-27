@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/architecture/accessibility"
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:17:14.502Z"
-content_hash: "e5dc28118cf25e14784df3de35d03e4baaea19122fde2833a3ca46b7609dcb59"
+last_crawled_at: "2026-04-27T18:16:44.205Z"
+content_hash: "3db9695f746faa705a46503f75c5a49d94b3b3a00fc5b0629d6d5f522233ed92"
 menu_path: ["Accessibility"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/architecture/index.md", "title": "Architecture"}
-nav_next: {"path": "nextjs/docs/architecture/fast-refresh/index.md", "title": "Fast Refresh"}
+version: "latest"
+content_language: "en"
 ---
+[Next.js Docs](/docs)[Architecture](/docs/architecture)Accessibility
 
 # Accessibility
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 The Next.js team is committed to making Next.js accessible to all developers (and their end-users). By adding accessibility features to Next.js by default, we aim to make the Web more inclusive for everyone.
 
@@ -31,36 +32,20 @@ The Next.js route announcer looks for the page name to announce by first inspect
 
 Next.js provides an [integrated ESLint experience](/docs/pages/api-reference/config/eslint) out of the box, including custom rules for Next.js. By default, Next.js includes `eslint-plugin-jsx-a11y` to help catch accessibility issues early, including warning on:
 
-*   [aria-props](https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/HEAD/docs/rules/aria-props.md?rgh-link-date=2021-06-04T02%3A10%3A36Z)
-*   [aria-proptypes](https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/HEAD/docs/rules/aria-proptypes.md?rgh-link-date=2021-06-04T02%3A10%3A36Z)
-*   [aria-unsupported-elements](https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/HEAD/docs/rules/aria-unsupported-elements.md?rgh-link-date=2021-06-04T02%3A10%3A36Z)
-*   [role-has-required-aria-props](https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/HEAD/docs/rules/role-has-required-aria-props.md?rgh-link-date=2021-06-04T02%3A10%3A36Z)
-*   [role-supports-aria-props](https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/HEAD/docs/rules/role-supports-aria-props.md?rgh-link-date=2021-06-04T02%3A10%3A36Z)
+-   [aria-props](https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/HEAD/docs/rules/aria-props.md?rgh-link-date=2021-06-04T02%3A10%3A36Z)
+-   [aria-proptypes](https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/HEAD/docs/rules/aria-proptypes.md?rgh-link-date=2021-06-04T02%3A10%3A36Z)
+-   [aria-unsupported-elements](https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/HEAD/docs/rules/aria-unsupported-elements.md?rgh-link-date=2021-06-04T02%3A10%3A36Z)
+-   [role-has-required-aria-props](https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/HEAD/docs/rules/role-has-required-aria-props.md?rgh-link-date=2021-06-04T02%3A10%3A36Z)
+-   [role-supports-aria-props](https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/HEAD/docs/rules/role-supports-aria-props.md?rgh-link-date=2021-06-04T02%3A10%3A36Z)
 
 For example, this plugin helps ensure you add alt text to `img` tags, use correct `aria-*` attributes, use correct `role` attributes, and more.
 
 ## Accessibility Resources[](#accessibility-resources)
 
-*   [WebAIM WCAG checklist](https://webaim.org/standards/wcag/checklist)
-*   [WCAG 2.2 Guidelines](https://www.w3.org/TR/WCAG22/)
-*   [The A11y Project](https://www.a11yproject.com/)
-*   Check [color contrast ratios](https://developer.mozilla.org/docs/Web/Accessibility/Understanding_WCAG/Perceivable/Color_contrast) between foreground and background elements
-*   Use [`prefers-reduced-motion`](https://web.dev/prefers-reduced-motion/) when working with animations
-
-[Previous
-
-Architecture
-
-](/docs/architecture)
-
-[Next
-
-Fast Refresh
-
-](/docs/architecture/fast-refresh)
+-   [WebAIM WCAG checklist](https://webaim.org/standards/wcag/checklist)
+-   [WCAG 2.2 Guidelines](https://www.w3.org/TR/WCAG22/)
+-   [The A11y Project](https://www.a11yproject.com/)
+-   Check [color contrast ratios](https://developer.mozilla.org/docs/Web/Accessibility/Understanding_WCAG/Perceivable/Color_contrast) between foreground and background elements
+-   Use [`prefers-reduced-motion`](https://web.dev/prefers-reduced-motion/) when working with animations
 
 Was this helpful?
-
-supported.
-
-Send

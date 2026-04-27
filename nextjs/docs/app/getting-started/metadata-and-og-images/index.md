@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/app/getting-started/metadata-and-og-imag
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:13:30.045Z"
-content_hash: "be8b598a62879ecfd4994fad4aa50a2f5cf27055fc6e97a14964a057a3a54ff3"
+last_crawled_at: "2026-04-27T18:12:11.025Z"
+content_hash: "c6a26f1665ce53b4f312fc035789ffe007f324415ba1ab675850815336ceba0c"
 menu_path: ["Metadata and OG images"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/getting-started/fonts/index.md", "title": "Font Optimization"}
-nav_next: {"path": "nextjs/docs/app/getting-started/route-handlers/index.md", "title": "Route Handlers"}
+version: "latest"
+content_language: "en"
 ---
+[App Router](/docs/app)[Getting Started](/docs/app/getting-started)Metadata and OG images
 
 # Metadata and OG images
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 The Metadata APIs can be used to define your application metadata for improved SEO and web shareability and include:
 
@@ -31,8 +32,8 @@ The `metadata` object and `generateMetadata` function exports are only supported
 
 There are two default `meta` tags that are always added even if a route doesn't define metadata:
 
-*   The [meta charset tag](https://developer.mozilla.org/docs/Web/HTML/Element/meta#attr-charset) sets the character encoding for the website.
-*   The [meta viewport tag](https://developer.mozilla.org/docs/Web/HTML/Viewport_meta_tag) sets the viewport width and scale for the website to adjust for different devices.
+-   The [meta charset tag](https://developer.mozilla.org/docs/Web/HTML/Element/meta#attr-charset) sets the character encoding for the website.
+-   The [meta viewport tag](https://developer.mozilla.org/docs/Web/HTML/Viewport_meta_tag) sets the viewport width and scale for the website to adjust for different devices.
 
 ```
 <meta charset="utf-8" />
@@ -46,8 +47,6 @@ The other metadata fields can be defined with the `Metadata` object (for [static
 To define static metadata, export a [`Metadata` object](/docs/app/api-reference/functions/generate-metadata#metadata-object) from a static [`layout.js`](/docs/app/api-reference/file-conventions/layout) or [`page.js`](/docs/app/api-reference/file-conventions/page) file. For example, to add a title and description to the blog route:
 
 app/blog/layout.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -69,8 +68,6 @@ You can view a full list of available options, in the [`generateMetadata` docume
 You can use [`generateMetadata`](/docs/app/api-reference/functions/generate-metadata) function to `fetch` metadata that depends on data. For example, to fetch the title and description for a specific blog post:
 
 app/blog/\[slug\]/page.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -122,8 +119,6 @@ There may be cases where you need to fetch the **same** data for metadata and th
 
 app/lib/data.ts
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -138,8 +133,6 @@ export const getPost = cache(async (slug: string) => {
 ```
 
 app/blog/\[slug\]/page.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -168,10 +161,10 @@ export default async function Page({ params }: { params: { slug: string } }) {
 
 The following special files are available for metadata:
 
-*   [favicon.ico, apple-icon.jpg, and icon.jpg](/docs/app/api-reference/file-conventions/metadata/app-icons)
-*   [opengraph-image.jpg and twitter-image.jpg](/docs/app/api-reference/file-conventions/metadata/opengraph-image)
-*   [robots.txt](/docs/app/api-reference/file-conventions/metadata/robots)
-*   [sitemap.xml](/docs/app/api-reference/file-conventions/metadata/sitemap)
+-   [favicon.ico, apple-icon.jpg, and icon.jpg](/docs/app/api-reference/file-conventions/metadata/app-icons)
+-   [opengraph-image.jpg and twitter-image.jpg](/docs/app/api-reference/file-conventions/metadata/opengraph-image)
+-   [robots.txt](/docs/app/api-reference/file-conventions/metadata/robots)
+-   [sitemap.xml](/docs/app/api-reference/file-conventions/metadata/sitemap)
 
 You can use these for static metadata, or you can programmatically generate these files with code.
 
@@ -179,7 +172,7 @@ You can use these for static metadata, or you can programmatically generate thes
 
 Favicons are small icons that represent your site in bookmarks and search results. To add a favicon to your application, create a `favicon.ico` and add to the root of the app folder.
 
-![Favicon Special File inside the App Folder with sibling layout and page files](/_next/image?url=https%3A%2F%2Fh8DxKfmAPhn8O0p3.public.blob.vercel-storage.com%2Fdocs%2Flight%2Ffavicon-ico.png&w=3840&q=75)![Favicon Special File inside the App Folder with sibling layout and page files](/_next/image?url=https%3A%2F%2Fh8DxKfmAPhn8O0p3.public.blob.vercel-storage.com%2Fdocs%2Fdark%2Ffavicon-ico.png&w=3840&q=75)
+![Favicon Special File inside the App Folder with sibling layout and page files](https://h8DxKfmAPhn8O0p3.public.blob.vercel-storage.com/docs/light/favicon-ico.png)
 
 > You can also programmatically generate favicons using code. See the [favicon docs](/docs/app/api-reference/file-conventions/metadata/app-icons) for more information.
 
@@ -187,11 +180,11 @@ Favicons are small icons that represent your site in bookmarks and search result
 
 Open Graph (OG) images are images that represent your site in social media. To add a static OG image to your application, create a `opengraph-image.jpg` file in the root of the app folder.
 
-![OG image special file inside the App folder with sibling layout and page files](/_next/image?url=https%3A%2F%2Fh8DxKfmAPhn8O0p3.public.blob.vercel-storage.com%2Fdocs%2Flight%2Fopengraph-image.png&w=3840&q=75)![OG image special file inside the App folder with sibling layout and page files](/_next/image?url=https%3A%2F%2Fh8DxKfmAPhn8O0p3.public.blob.vercel-storage.com%2Fdocs%2Fdark%2Fopengraph-image.png&w=3840&q=75)
+![OG image special file inside the App folder with sibling layout and page files](https://h8DxKfmAPhn8O0p3.public.blob.vercel-storage.com/docs/light/opengraph-image.png)
 
 You can also add OG images for specific routes by creating a `opengraph-image.jpg` deeper down the folder structure. For example, to create an OG image specific to the `/blog` route, add a `opengraph-image.jpg` file inside the `blog` folder.
 
-![OG image special file inside the blog folder](/_next/image?url=https%3A%2F%2Fh8DxKfmAPhn8O0p3.public.blob.vercel-storage.com%2Fdocs%2Flight%2Fopengraph-image-blog.png&w=3840&q=75)![OG image special file inside the blog folder](/_next/image?url=https%3A%2F%2Fh8DxKfmAPhn8O0p3.public.blob.vercel-storage.com%2Fdocs%2Fdark%2Fopengraph-image-blog.png&w=3840&q=75)
+![OG image special file inside the blog folder](https://h8DxKfmAPhn8O0p3.public.blob.vercel-storage.com/docs/light/opengraph-image-blog.png)
 
 The more specific image will take precedence over any OG images above it in the folder structure.
 
@@ -204,8 +197,6 @@ The [`ImageResponse` constructor](/docs/app/api-reference/functions/image-respon
 For example, to generate a unique OG image for each blog post, add a `opengraph-image.tsx` file inside the `blog` folder, and import the `ImageResponse` constructor from `next/og`:
 
 app/blog/\[slug\]/opengraph-image.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -250,9 +241,9 @@ export default async function Image({ params }: { params: { slug: string } }) {
 
 > **Good to know**:
 > 
-> *   Examples are available in the [Vercel OG Playground](https://og-playground.vercel.app/).
-> *   `ImageResponse` uses [`@vercel/og`](https://vercel.com/docs/og-image-generation), [`satori`](https://github.com/vercel/satori), and `resvg` to convert HTML and CSS into PNG.
-> *   Only flexbox and a subset of CSS properties are supported. Advanced layouts (e.g. `display: grid`) will not work.
+> -   Examples are available in the [Vercel OG Playground](https://og-playground.vercel.app/).
+> -   `ImageResponse` uses [`@vercel/og`](https://vercel.com/docs/og-image-generation), [`satori`](https://github.com/vercel/satori), and `resvg` to convert HTML and CSS into PNG.
+> -   Only flexbox and a subset of CSS properties are supported. Advanced layouts (e.g. `display: grid`) will not work.
 
 ## API Reference
 
@@ -314,20 +305,4 @@ Specify a list of user agents that should receive blocking metadata.
 
 ](/docs/app/api-reference/config/next-config-js/htmlLimitedBots)
 
-[Previous
-
-Font Optimization
-
-](/docs/app/getting-started/fonts)
-
-[Next
-
-Route Handlers
-
-](/docs/app/getting-started/route-handlers)
-
 Was this helpful?
-
-supported.
-
-Send

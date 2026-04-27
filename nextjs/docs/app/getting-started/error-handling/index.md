@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/app/getting-started/error-handling"
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:13:06.416Z"
-content_hash: "c042ffeb5b0854afe7aa6add06b42bdbfa06fbe49ceba3ca8864c2976e360a37"
+last_crawled_at: "2026-04-27T18:11:48.985Z"
+content_hash: "cfcde01b769802f24c799098a7506320508b11d1e0a83fdcf38740a0d77ab27f"
 menu_path: ["Error Handling"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/getting-started/revalidating/index.md", "title": "Revalidating"}
-nav_next: {"path": "nextjs/docs/app/getting-started/css/index.md", "title": "CSS"}
+version: "latest"
+content_language: "en"
 ---
+[App Router](/docs/app)[Getting Started](/docs/app/getting-started)Error Handling
 
 # Error Handling
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 Errors can be divided into two categories: [expected errors](#handling-expected-errors) and [uncaught exceptions](#handling-uncaught-exceptions). This page will walk you through how you can handle these errors in your Next.js application.
 
@@ -30,8 +31,6 @@ You can use the [`useActionState`](https://react.dev/reference/react/useActionSt
 For these errors, avoid using `try`/`catch` blocks and throw errors. Instead, model expected errors as return values.
 
 app/actions.ts
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -57,8 +56,6 @@ export async function createPost(prevState: any, formData: FormData) {
 You can pass your action to the `useActionState` hook and use the returned `state` to display an error message.
 
 app/ui/form.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -94,8 +91,6 @@ When fetching data inside of a Server Component, you can use the response to con
 
 app/page.tsx
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -116,8 +111,6 @@ export default async function Page() {
 You can call the [`notFound`](/docs/app/api-reference/functions/not-found) function within a route segment and use the [`not-found.js`](/docs/app/api-reference/file-conventions/not-found) file to show a 404 UI.
 
 app/blog/\[slug\]/page.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -143,8 +136,6 @@ export default async function Page({
 
 app/blog/\[slug\]/not-found.tsx
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -164,8 +155,6 @@ Next.js uses error boundaries to handle uncaught exceptions. Error boundaries ca
 Create an error boundary by adding an [`error.js`](/docs/app/api-reference/file-conventions/error) file inside a route segment and exporting a React component:
 
 app/dashboard/error.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -204,13 +193,11 @@ export default function ErrorPage({
 
 Errors will bubble up to the nearest parent error boundary. This allows for granular error handling by placing `error.tsx` files at different levels in the [route hierarchy](/docs/app/getting-started/project-structure#component-hierarchy).
 
-![Nested Error Component Hierarchy](/_next/image?url=https%3A%2F%2Fh8DxKfmAPhn8O0p3.public.blob.vercel-storage.com%2Fdocs%2Flight%2Fnested-error-component-hierarchy.png&w=3840&q=75)![Nested Error Component Hierarchy](/_next/image?url=https%3A%2F%2Fh8DxKfmAPhn8O0p3.public.blob.vercel-storage.com%2Fdocs%2Fdark%2Fnested-error-component-hierarchy.png&w=3840&q=75)
+![Nested Error Component Hierarchy](https://h8DxKfmAPhn8O0p3.public.blob.vercel-storage.com/docs/light/nested-error-component-hierarchy.png)
 
 For component-level error recovery, the [`unstable_catchError`](/docs/app/api-reference/functions/catchError) function lets you create error boundaries that can wrap any part of your component tree:
 
 app/custom-error-boundary.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -238,8 +225,6 @@ export default catchError(ErrorFallback)
 Then use the returned component as a wrapper in any layout or page:
 
 app/some-component.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -315,8 +300,6 @@ While less common, you can handle errors in the root layout using the [`global-e
 
 app/global-error.tsx
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -377,20 +360,4 @@ API reference for the not-found.js file.
 
 ](/docs/app/api-reference/file-conventions/not-found)
 
-[Previous
-
-Revalidating
-
-](/docs/app/getting-started/revalidating)
-
-[Next
-
-CSS
-
-](/docs/app/getting-started/css)
-
 Was this helpful?
-
-supported.
-
-Send

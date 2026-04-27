@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/app/api-reference/adapters/api-reference
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:05:39.684Z"
-content_hash: "cc9259e27b21177d9a41671e2ddbe965a5f2e6a9f7a7ba824a735d562be8ccba"
+last_crawled_at: "2026-04-27T18:04:31.759Z"
+content_hash: "71a4900ab54a45859a889717c4dc84f85e2353ae696dd6a32271c7fe24935649"
 menu_path: ["API Reference"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/api-reference/adapters/creating-an-adapter/index.md", "title": "Creating an Adapter"}
-nav_next: {"path": "nextjs/docs/app/api-reference/adapters/testing-adapters/index.md", "title": "Testing Adapters"}
+version: "latest"
+content_language: "en"
 ---
+[API Reference](/docs/app/api-reference)[Adapters](/docs/app/api-reference/adapters)API Reference
 
 # API Reference
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 ## `async modifyConfig(config, context)`[](#async-modifyconfigconfig-context)
 
@@ -23,9 +24,9 @@ Called for any CLI command that loads the `next.config.js` file to allow modific
 
 **Parameters:**
 
-*   `config`: The complete Next.js configuration object
-*   `context.phase`: The current build phase (see [phases](/docs/app/api-reference/config/next-config-js#phase))
-*   `context.nextVersion`: Version of Next.js being used
+-   `config`: The complete Next.js configuration object
+-   `context.phase`: The current build phase (see [phases](/docs/app/api-reference/config/next-config-js#phase))
+-   `context.nextVersion`: Version of Next.js being used
 
 **Returns:** The modified configuration object (can be async)
 
@@ -35,37 +36,21 @@ Called after the build process completes with detailed information about routes 
 
 **Parameters:**
 
-*   `context.routing`: Object containing Next.js routing phases and metadata
-    *   `routing.beforeMiddleware`: Routes executed before middleware (includes header and redirect handling)
-    *   `routing.beforeFiles`: Rewrite routes checked before filesystem route matching
-    *   `routing.afterFiles`: Rewrite routes checked after filesystem route matching
-    *   `routing.dynamicRoutes`: Dynamic route matching table
-    *   `routing.onMatch`: Routes applied after a successful match (for example immutable static asset cache headers)
-    *   `routing.fallback`: Final rewrite fallback routes
-    *   `routing.shouldNormalizeNextData`: Whether `/_next/data/<buildId>/...` URLs should be normalized during matching
-    *   `routing.rsc`: Route metadata used for React Server Components routing behavior
-*   `context.outputs`: Detailed information about all build outputs organized by type
-*   `context.projectDir`: Absolute path to the Next.js project directory
-*   `context.repoRoot`: Absolute path to the detected repository root
-*   `context.distDir`: Absolute path to the build output directory
-*   `context.config`: The final Next.js configuration (with `modifyConfig` applied)
-*   `context.nextVersion`: Version of Next.js being used
-*   `context.buildId`: Unique identifier for the current build
-
-[Previous
-
-Creating an Adapter
-
-](/docs/app/api-reference/adapters/creating-an-adapter)
-
-[Next
-
-Testing Adapters
-
-](/docs/app/api-reference/adapters/testing-adapters)
+-   `context.routing`: Object containing Next.js routing phases and metadata
+    -   `routing.beforeMiddleware`: Routes executed before middleware (includes header and redirect handling)
+    -   `routing.beforeFiles`: Rewrite routes checked before filesystem route matching
+    -   `routing.afterFiles`: Rewrite routes checked after filesystem route matching
+    -   `routing.dynamicRoutes`: Dynamic route matching table
+    -   `routing.onMatch`: Routes applied after a successful match (for example immutable static asset cache headers)
+    -   `routing.fallback`: Final rewrite fallback routes
+    -   `routing.shouldNormalizeNextData`: Whether `/_next/data/<buildId>/...` URLs should be normalized during matching
+    -   `routing.rsc`: Route metadata used for React Server Components routing behavior
+-   `context.outputs`: Detailed information about all build outputs organized by type
+-   `context.projectDir`: Absolute path to the Next.js project directory
+-   `context.repoRoot`: Absolute path to the detected repository root
+-   `context.distDir`: Absolute path to the build output directory
+-   `context.config`: The final Next.js configuration (with `modifyConfig` applied)
+-   `context.nextVersion`: Version of Next.js being used
+-   `context.buildId`: Unique identifier for the current build
 
 Was this helpful?
-
-supported.
-
-Send

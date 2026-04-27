@@ -5,43 +5,13 @@ canonical_url: "https://tailwindcss.com/docs/text-indent"
 docset: "tailwind"
 kind: "framework"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:59:09.948Z"
-content_hash: "ad2dfb39487210ec6116f4173b17fc872af5057f0dac409dd73cc6a09288f230"
+last_crawled_at: "2026-04-27T20:13:59.430Z"
+content_hash: "c7dda90f7a94d74f54b63c0f59ce22e8857054deddb217676bf285d2ee8379b9"
 menu_path: ["text-indent"]
 section_path: []
-nav_prev: {"path": "tailwind/docs/text-wrap/index.md", "title": "text-wrap"}
-nav_next: {"path": "tailwind/docs/vertical-align/index.md", "title": "vertical-align"}
+content_language: "en"
 ---
-
 Utilities for controlling the amount of empty space shown before text in a block.
-
-Class
-
-Styles
-
-`indent-<number>`
-
-`text-indent: calc(var(--spacing) * <number>);`
-
-`-indent-<number>`
-
-`text-indent: calc(var(--spacing) * -<number>);`
-
-`indent-px`
-
-`text-indent: 1px;`
-
-`-indent-px`
-
-`text-indent: -1px;`
-
-`indent-(<custom-property>)`
-
-`text-indent: var(<custom-property>);`
-
-`indent-[<value>]`
-
-`text-indent: <value>;`
 
 ## [Examples](#examples)
 
@@ -89,4 +59,4 @@ Prefix a `text-indent` utility with a breakpoint variant like `md:` to only appl
 <p class="indent-4 md:indent-8 ...">  Lorem ipsum dolor sit amet...</p>
 ```
 
-Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).
+Learn more about using variants in the [variants documentation](https://tailwindcss.com/docs/hover-focus-and-other-states).

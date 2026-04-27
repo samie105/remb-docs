@@ -5,23 +5,22 @@ canonical_url: "https://nextjs.org/docs/pages/building-your-application/data-fet
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:23:01.535Z"
-content_hash: "b1cf7b5589811cf420336088975c3b7163868f00ccd6235d3b46c16f2b67af83"
+last_crawled_at: "2026-04-27T18:22:22.079Z"
+content_hash: "60527287520596aeb1c02f8917c0ef23b211654ef6833f739688e8e28cb9deeb"
 menu_path: ["getStaticProps"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/pages/building-your-application/data-fetching/index.md", "title": "Data Fetching"}
-nav_next: {"path": "nextjs/docs/pages/building-your-application/data-fetching/get-static-paths/index.md", "title": "getStaticPaths"}
+version: "latest"
+content_language: "en"
 ---
+[Building Your Application](/docs/pages/building-your-application)[Data Fetching](/docs/pages/building-your-application/data-fetching)getStaticProps
 
 # getStaticProps
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 If you export a function called `getStaticProps` (Static Site Generation) from a page, Next.js will prerender this page at build time using the props returned by `getStaticProps`.
 
 pages/index.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -56,20 +55,20 @@ The [`getStaticProps` API reference](/docs/pages/api-reference/functions/get-sta
 
 You should use `getStaticProps` if:
 
-*   The data required to render the page is available at build time ahead of a user’s request
-*   The data comes from a headless CMS
-*   The page must be prerendered (for SEO) and be very fast — `getStaticProps` generates `HTML` and `JSON` files, both of which can be cached by a CDN for performance
-*   The data can be publicly cached (not user-specific). This condition can be bypassed in certain specific situation by using a Proxy to rewrite the path.
+-   The data required to render the page is available at build time ahead of a user’s request
+-   The data comes from a headless CMS
+-   The page must be prerendered (for SEO) and be very fast — `getStaticProps` generates `HTML` and `JSON` files, both of which can be cached by a CDN for performance
+-   The data can be publicly cached (not user-specific). This condition can be bypassed in certain specific situation by using a Proxy to rewrite the path.
 
 ## When does getStaticProps run[](#when-does-getstaticprops-run)
 
 `getStaticProps` always runs on the server and never on the client. You can validate code written inside `getStaticProps` is removed from the client-side bundle [with this tool](https://next-code-elimination.vercel.app/).
 
-*   `getStaticProps` always runs during `next build`
-*   `getStaticProps` runs in the background when using [`fallback: true`](/docs/pages/api-reference/functions/get-static-paths#fallback-true)
-*   `getStaticProps` is called before initial render when using [`fallback: blocking`](/docs/pages/api-reference/functions/get-static-paths#fallback-blocking)
-*   `getStaticProps` runs in the background when using `revalidate`
-*   `getStaticProps` runs on-demand in the background when using [`revalidate()`](/docs/pages/guides/incremental-static-regeneration#on-demand-revalidation-with-revalidatepath)
+-   `getStaticProps` always runs during `next build`
+-   `getStaticProps` runs in the background when using [`fallback: true`](/docs/pages/api-reference/functions/get-static-paths#fallback-true)
+-   `getStaticProps` is called before initial render when using [`fallback: blocking`](/docs/pages/api-reference/functions/get-static-paths#fallback-blocking)
+-   `getStaticProps` runs in the background when using `revalidate`
+-   `getStaticProps` runs on-demand in the background when using [`revalidate()`](/docs/pages/guides/incremental-static-regeneration#on-demand-revalidation-with-revalidatepath)
 
 When combined with [Incremental Static Regeneration](/docs/pages/guides/incremental-static-regeneration), `getStaticProps` will run in the background while the stale page is being revalidated, and the fresh page served to the browser.
 
@@ -80,8 +79,6 @@ When combined with [Incremental Static Regeneration](/docs/pages/guides/incremen
 The following example shows how you can fetch a list of blog posts from a CMS.
 
 pages/blog.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -189,7 +186,3 @@ In development (`next dev`), `getStaticProps` will be called on every request.
 You can temporarily bypass static generation and render the page at **request time** instead of build time using [**Preview Mode**](/docs/pages/guides/preview-mode). For example, you might be using a headless CMS and want to preview drafts before they're published.
 
 Was this helpful?
-
-supported.
-
-Send

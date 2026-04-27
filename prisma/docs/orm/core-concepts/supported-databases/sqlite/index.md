@@ -5,14 +5,13 @@ canonical_url: "https://www.prisma.io/docs/orm/core-concepts/supported-databases
 docset: "prisma"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:41:44.580Z"
-content_hash: "2bea168d9d2889db5a30043b70aa61f7ba66f8342f84b338823ac3cc2203f6a4"
+last_crawled_at: "2026-04-27T19:37:02.286Z"
+content_hash: "11661754a46783497a74090abac2b6b975726338a9922c1921ac3907c5ae17a3"
 menu_path: ["SQLite"]
 section_path: []
-nav_prev: {"path": "prisma/docs/orm/core-concepts/supported-databases/sql-server/index.md", "title": "SQL Server"}
-nav_next: {"path": "prisma/docs/orm/more/comparisons/prisma-and-drizzle/index.md", "title": "Drizzle"}
+tab_variants: ["npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun"]
+content_language: "en"
 ---
-
 Supported databases
 
 Use Prisma ORM with SQLite databases including local SQLite, Turso (libSQL), and Cloudflare D1
@@ -21,6 +20,8 @@ Prisma ORM supports SQLite and SQLite-compatible databases. This includes local 
 
 Configure the SQLite provider in your Prisma schema:
 
+schema.prisma
+
 ```
 datasource db {
   provider = "sqlite"
@@ -28,6 +29,8 @@ datasource db {
 ```
 
 Set the connection URL in `prisma.config.ts`:
+
+prisma.config.ts
 
 ```
 import { defineConfig } from "prisma/config";
@@ -40,7 +43,7 @@ export default defineConfig({
 });
 ```
 
-Instead of Prisma's built-in driver, you can use JavaScript database drivers via [driver adapters](prisma/docs/orm/core-concepts/supported-databases/database-drivers/index.md#driver-adapters):
+Instead of Prisma's built-in driver, you can use JavaScript database drivers via [driver adapters](https://www.prisma.io/docs/orm/core-concepts/supported-databases/database-drivers#driver-adapters):
 
 **Local SQLite with `better-sqlite3`:**
 
@@ -79,82 +82,51 @@ const prisma = new PrismaClient({ adapter });
 
 Standard SQLite database files (`.db`). Connection URL format: `file:./path/to/database.db`
 
-*   Use `prisma migrate dev` for schema changes
-*   Store database file anywhere in your filesystem
-*   Best for development and small applications
+-   Use `prisma migrate dev` for schema changes
+-   Store database file anywhere in your filesystem
+-   Best for development and small applications
 
 ### [Turso (libSQL)](#turso-libsql)
 
 Edge-hosted, distributed SQLite-compatible database.
 
-*   Connection URL format: `libsql://[hostname]`
-*   Requires authentication token
-*   Supports embedded replicas for faster local reads
-*   Use local SQLite file + Turso CLI for migrations (see [Turso docs](https://docs.turso.tech/))
+-   Connection URL format: `libsql://[hostname]`
+-   Requires authentication token
+-   Supports embedded replicas for faster local reads
+-   Use local SQLite file + Turso CLI for migrations (see [Turso docs](https://docs.turso.tech/))
 
 **Key differences:**
 
-*   Remote access over HTTP
-*   Replication and automated backups
-*   Schema changes via `prisma migrate diff` + Turso CLI
+-   Remote access over HTTP
+-   Replication and automated backups
+-   Schema changes via `prisma migrate diff` + Turso CLI
 
 ### [Cloudflare D1](#cloudflare-d1)
 
 Serverless SQLite database for Cloudflare Workers.
 
-*   Automatic read-replication across regions
-*   Schema changes via Wrangler CLI + `prisma migrate diff`
-*   Local (`.wrangler/state`) and remote versions available
+-   Automatic read-replication across regions
+-   Schema changes via Wrangler CLI + `prisma migrate diff`
+-   Local (`.wrangler/state`) and remote versions available
 
 **Key differences:**
 
-*   No transaction support currently
-*   Migrations via Wrangler: `wrangler d1 migrations apply`
-*   Deploy with Cloudflare Workers
+-   No transaction support currently
+-   Migrations via Wrangler: `wrangler d1 migrations apply`
+-   Deploy with Cloudflare Workers
 
-Prisma ORM
-
-SQLite
-
-`String`
-
-`TEXT`
-
-`Boolean`
-
-`BOOLEAN`
-
-`Int`
-
-`INTEGER`
-
-`BigInt`
-
-`INTEGER`
-
-`Float`
-
-`REAL`
-
-`Decimal`
-
-`DECIMAL`
-
-`DateTime`
-
-`NUMERIC`
-
-`Json`
-
-`JSONB`
-
-`Bytes`
-
-`BLOB`
-
-`Enum`
-
-`TEXT`
+| Prisma ORM | SQLite |
+| --- | --- |
+| `String` | `TEXT` |
+| `Boolean` | `BOOLEAN` |
+| `Int` | `INTEGER` |
+| `BigInt` | `INTEGER` |
+| `Float` | `REAL` |
+| `Decimal` | `DECIMAL` |
+| `DateTime` | `NUMERIC` |
+| `Json` | `JSONB` |
+| `Bytes` | `BLOB` |
+| `Enum` | `TEXT` |
 
 **Timestamp format with driver adapters:**
 
@@ -167,8 +139,8 @@ const adapter = new PrismaBetterSqlite3(
 );
 ```
 
-*   **ISO 8601 (default)**: Best for new projects
-*   **`unixepoch-ms`**: Required for migrating from Prisma's native driver
+-   **ISO 8601 (default)**: Best for new projects
+-   **`unixepoch-ms`**: Required for migrating from Prisma's native driver
 
 **Enum validation:**
 
@@ -177,5 +149,3 @@ SQLite doesn't enforce enum values at the database level. Invalid values will ca
 **Integer overflow:**
 
 Prisma ORM validates that numbers fit within integer boundaries. If a value exceeds limits, you'll get a P2023 error.
-
-[Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/core-concepts/supported-databases/sqlite.mdx)

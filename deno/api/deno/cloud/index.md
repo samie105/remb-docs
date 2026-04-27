@@ -5,28 +5,27 @@ canonical_url: "https://docs.deno.com/api/deno/cloud"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:08:38.841Z"
-content_hash: "451c9c31bcbd761baaa3fdb81cbcfa66b0ea23ff77efcd2352256c261869ecfc"
+last_crawled_at: "2026-04-27T17:51:41.164Z"
+content_hash: "57396667af04448529a974600ae6bf3b7c4cea11f071ec90811a09cd1d523d0e"
 menu_path: ["Cloud - Deno documentation"]
 section_path: []
+content_language: "en"
 ---
-### Classes [#](#Classes)
-
 c
 
 [Deno.AtomicOperation](./././~/Deno.AtomicOperation "Deno.AtomicOperation")
 
 An operation on a [`Deno.Kv`](./././~/Deno.Kv) that can be performed atomically. Atomic operations do not auto-commit, and must be committed explicitly by calling the `commit` method.
 
-*   [check](./././~/Deno.AtomicOperation#method_check_0)
-*   [commit](./././~/Deno.AtomicOperation#method_commit_0)
-*   [delete](./././~/Deno.AtomicOperation#method_delete_0)
-*   [enqueue](./././~/Deno.AtomicOperation#method_enqueue_0)
-*   [max](./././~/Deno.AtomicOperation#method_max_0)
-*   [min](./././~/Deno.AtomicOperation#method_min_0)
-*   [mutate](./././~/Deno.AtomicOperation#method_mutate_0)
-*   [set](./././~/Deno.AtomicOperation#method_set_0)
-*   [sum](./././~/Deno.AtomicOperation#method_sum_0)
+-   [check](./././~/Deno.AtomicOperation#method_check_0)
+-   [commit](./././~/Deno.AtomicOperation#method_commit_0)
+-   [delete](./././~/Deno.AtomicOperation#method_delete_0)
+-   [enqueue](./././~/Deno.AtomicOperation#method_enqueue_0)
+-   [max](./././~/Deno.AtomicOperation#method_max_0)
+-   [min](./././~/Deno.AtomicOperation#method_min_0)
+-   [mutate](./././~/Deno.AtomicOperation#method_mutate_0)
+-   [set](./././~/Deno.AtomicOperation#method_set_0)
+-   [sum](./././~/Deno.AtomicOperation#method_sum_0)
 
 c
 
@@ -34,17 +33,17 @@ c
 
 A key-value database that can be used to store and retrieve data.
 
-*   [atomic](./././~/Deno.Kv#method_atomic_0)
-*   [close](./././~/Deno.Kv#method_close_0)
-*   [commitVersionstamp](./././~/Deno.Kv#method_commitversionstamp_0)
-*   [delete](./././~/Deno.Kv#method_delete_0)
-*   [enqueue](./././~/Deno.Kv#method_enqueue_0)
-*   [get](./././~/Deno.Kv#method_get_0)
-*   [getMany](./././~/Deno.Kv#method_getmany_0)
-*   [list](./././~/Deno.Kv#method_list_0)
-*   [listenQueue](./././~/Deno.Kv#method_listenqueue_0)
-*   [set](./././~/Deno.Kv#method_set_0)
-*   [watch](./././~/Deno.Kv#method_watch_0)
+-   [atomic](./././~/Deno.Kv#method_atomic_0)
+-   [close](./././~/Deno.Kv#method_close_0)
+-   [commitVersionstamp](./././~/Deno.Kv#method_commitversionstamp_0)
+-   [delete](./././~/Deno.Kv#method_delete_0)
+-   [enqueue](./././~/Deno.Kv#method_enqueue_0)
+-   [get](./././~/Deno.Kv#method_get_0)
+-   [getMany](./././~/Deno.Kv#method_getmany_0)
+-   [list](./././~/Deno.Kv#method_list_0)
+-   [listenQueue](./././~/Deno.Kv#method_listenqueue_0)
+-   [set](./././~/Deno.Kv#method_set_0)
+-   [watch](./././~/Deno.Kv#method_watch_0)
 
 c
 
@@ -52,8 +51,8 @@ c
 
 An iterator over a range of data entries in a [`Deno.Kv`](./././~/Deno.Kv).
 
-*   [cursor](./././~/Deno.KvListIterator#accessor_cursor)
-*   [next](./././~/Deno.KvListIterator#method_next_0)
+-   [cursor](./././~/Deno.KvListIterator#accessor_cursor)
+-   [next](./././~/Deno.KvListIterator#method_next_0)
 
 c
 
@@ -61,9 +60,7 @@ c
 
 Wrapper type for 64-bit unsigned integers for use as values in a [`Deno.Kv`](./././~/Deno.Kv).
 
-*   [value](./././~/Deno.KvU64#property_value)
-
-### Functions [#](#Functions)
+-   [value](./././~/Deno.KvU64#property_value)
 
 f
 
@@ -77,16 +74,14 @@ f
 
 Open a new [`Deno.Kv`](./././~/Deno.Kv) connection to persist data.
 
-### Interfaces [#](#Interfaces)
-
 I
 
 [Deno.AtomicCheck](./././~/Deno.AtomicCheck "Deno.AtomicCheck")
 
 A check to perform as part of a [`Deno.AtomicOperation`](./././~/Deno.AtomicOperation). The check will fail if the versionstamp for the key-value pair in the KV store does not match the given versionstamp. A check with a `null` versionstamp checks that the key-value pair does not currently exist in the KV store.
 
-*   [key](./././~/Deno.AtomicCheck#property_key)
-*   [versionstamp](./././~/Deno.AtomicCheck#property_versionstamp)
+-   [key](./././~/Deno.AtomicCheck#property_key)
+-   [versionstamp](./././~/Deno.AtomicCheck#property_versionstamp)
 
 I
 
@@ -94,11 +89,11 @@ I
 
 CronSchedule is the interface used for JSON format cron `schedule`.
 
-*   [dayOfMonth](./././~/Deno.CronSchedule#property_dayofmonth)
-*   [dayOfWeek](./././~/Deno.CronSchedule#property_dayofweek)
-*   [hour](./././~/Deno.CronSchedule#property_hour)
-*   [minute](./././~/Deno.CronSchedule#property_minute)
-*   [month](./././~/Deno.CronSchedule#property_month)
+-   [dayOfMonth](./././~/Deno.CronSchedule#property_dayofmonth)
+-   [dayOfWeek](./././~/Deno.CronSchedule#property_dayofweek)
+-   [hour](./././~/Deno.CronSchedule#property_hour)
+-   [minute](./././~/Deno.CronSchedule#property_minute)
+-   [month](./././~/Deno.CronSchedule#property_month)
 
 I
 
@@ -106,7 +101,7 @@ I
 
 No documentation available
 
-*   [ok](./././~/Deno.KvCommitError#property_ok)
+-   [ok](./././~/Deno.KvCommitError#property_ok)
 
 I
 
@@ -114,8 +109,8 @@ I
 
 No documentation available
 
-*   [ok](./././~/Deno.KvCommitResult#property_ok)
-*   [versionstamp](./././~/Deno.KvCommitResult#property_versionstamp)
+-   [ok](./././~/Deno.KvCommitResult#property_ok)
+-   [versionstamp](./././~/Deno.KvCommitResult#property_versionstamp)
 
 I
 
@@ -123,9 +118,9 @@ I
 
 A versioned pair of key and value in a [`Deno.Kv`](./././~/Deno.Kv).
 
-*   [key](./././~/Deno.KvEntry#property_key)
-*   [value](./././~/Deno.KvEntry#property_value)
-*   [versionstamp](./././~/Deno.KvEntry#property_versionstamp)
+-   [key](./././~/Deno.KvEntry#property_key)
+-   [value](./././~/Deno.KvEntry#property_value)
+-   [versionstamp](./././~/Deno.KvEntry#property_versionstamp)
 
 I
 
@@ -133,13 +128,11 @@ I
 
 Options for listing key-value pairs in a [`Deno.Kv`](./././~/Deno.Kv).
 
-*   [batchSize](./././~/Deno.KvListOptions#property_batchsize)
-*   [consistency](./././~/Deno.KvListOptions#property_consistency)
-*   [cursor](./././~/Deno.KvListOptions#property_cursor)
-*   [limit](./././~/Deno.KvListOptions#property_limit)
-*   [reverse](./././~/Deno.KvListOptions#property_reverse)
-
-### Type Aliases [#](<#Type Aliases>)
+-   [batchSize](./././~/Deno.KvListOptions#property_batchsize)
+-   [consistency](./././~/Deno.KvListOptions#property_consistency)
+-   [cursor](./././~/Deno.KvListOptions#property_cursor)
+-   [limit](./././~/Deno.KvListOptions#property_limit)
+-   [reverse](./././~/Deno.KvListOptions#property_reverse)
 
 T
 

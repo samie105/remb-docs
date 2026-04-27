@@ -5,35 +5,29 @@ canonical_url: "https://orm.drizzle.team/docs/guides/vector-similarity-search"
 docset: "drizzle"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:08:03.363Z"
-content_hash: "69ed385338400d02264b00fac7c24b8b65e0dfba4ba0e003f17d27096c6e17f4"
+last_crawled_at: "2026-04-27T19:04:49.599Z"
+content_hash: "718eb6766a4929867e3c24b83422c89ee1996deceb94fae80c368b9487d0e216"
 menu_path: ["Drizzle ORM - Vector similarity search with pgvector extension"]
 section_path: []
-nav_prev: {"path": "drizzle/docs/guides/upsert/index.md", "title": "Drizzle ORM - Upsert Query"}
-nav_next: {"path": "drizzle/docs/json-functions/index.md", "title": "404"}
+content_language: "en"
 ---
-
 Drizzle | Vector similarity search with pgvector extension
 
 To implement vector similarity search in PostgreSQL with Drizzle ORM, you can use the `pgvector` extension. This extension provides a set of functions to work with vectors and perform similarity search.
 
 As for now, Drizzle doesn’t create extension automatically, so you need to create it manually. Create an empty migration file and add SQL query:
 
-```
+```bash
 npx drizzle-kit generate --custom
 ```
 
-```
+```sql
 CREATE EXTENSION vector;
 ```
 
 To perform similarity search, you need to create a table with a vector column and an `HNSW` or `IVFFlat` index on this column for better performance:
 
-schema.ts
-
-migration.sql
-
-```
+```ts
 import { index, pgTable, serial, text, vector } from 'drizzle-orm/pg-core';
 
 export const guides = pgTable(
@@ -51,7 +45,7 @@ export const guides = pgTable(
 );
 ```
 
-```
+```sql
 CREATE TABLE IF NOT EXISTS "guides" (
   "id" serial PRIMARY KEY NOT NULL,
   "title" text NOT NULL,
@@ -67,7 +61,7 @@ The `embedding` column is used to store vector embeddings of the guide descripti
 
 In this example we will use `OpenAI` model to generate [embeddings](https://platform.openai.com/docs/guides/embeddings) for the description:
 
-```
+```ts
 import OpenAI from 'openai';
 
 const openai = new OpenAI({
@@ -88,7 +82,7 @@ export const generateEmbedding = async (value: string): Promise<number[]> => {
 
 To search for similar guides by embedding, you can use `gt` and `sql` operators with `cosineDistance` function to calculate the similarity between the `embedding` column and the generated embedding:
 
-```
+```ts
 import { cosineDistance, desc, gt, sql } from 'drizzle-orm';
 import { generateEmbedding } from './embedding';
 import { guides } from './schema';
@@ -111,13 +105,13 @@ const findSimilarGuides = async (description: string) => {
 };
 ```
 
-```
+```ts
 const description = 'Guides on using Drizzle ORM with different platforms';
 
 const similarGuides = await findSimilarGuides(description);
 ```
 
-```
+```json
 [
   {
     name: 'Drizzle with Turso',

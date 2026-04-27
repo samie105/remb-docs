@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/pages/api-reference/functions"
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:22:08.238Z"
-content_hash: "e70861e62f63e4a2e8ebaa416b5e628eef4304e43ab77056c9e7d39071436355"
+last_crawled_at: "2026-04-27T18:21:32.847Z"
+content_hash: "6d1ac144f98a757c9207c5ce6e6b27e60037d5a06a5ed0c05d75e5f2299558f2"
 menu_path: ["Functions"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/pages/api-reference/file-conventions/src-folder/index.md", "title": "src Directory"}
-nav_next: {"path": "nextjs/docs/pages/api-reference/functions/get-initial-props/index.md", "title": "getInitialProps"}
+version: "latest"
+content_language: "en"
 ---
+[Pages Router](/docs/pages)[API Reference](/docs/pages/api-reference)Functions
 
 # Functions
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 [
 
@@ -86,7 +87,3 @@ The userAgent helper extends the Web Request API with additional properties and 
 ](/docs/pages/api-reference/functions/userAgent)
 
 Was this helpful?
-
-supported.
-
-Send

@@ -5,15 +5,16 @@ canonical_url: "https://docs.deno.com/runtime/reference/std/cache/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:00:12.154Z"
-content_hash: "4516a88e7ead89b11717434f00c0b6e7a18f2ab145f0fcccc3990b1b55a47386"
+last_crawled_at: "2026-04-27T17:39:23.144Z"
+content_hash: "b56ff2e5b12cb250e3ef84af8e8721440a3f46bed1fb31ba6559b360ee2c8109"
 menu_path: ["@std/cache"]
 section_path: []
+content_language: "en"
 ---
-On this page
+**On this page**
 
-*   [Overview](#overview)
-    *   [Add to your project](#add-to-your-project)
+-   [Overview](#overview)
+    -   [Add to your project](#add-to-your-project)
 
 Unstable
 

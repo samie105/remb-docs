@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/pages/api-reference/config/next-config-j
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:20:15.234Z"
-content_hash: "ec1a140361c4d534fb7794be6fc50876fa577c1b72f2bd5fb0f6b582b735a270"
+last_crawled_at: "2026-04-27T18:19:41.460Z"
+content_hash: "7e9bf64cb6d8dcdde433146a3da8082d339b56a47b90025783e3e35ce901856a"
 menu_path: ["allowedDevOrigins"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/pages/api-reference/config/next-config-js/adapterPath/index.md", "title": "adapterPath"}
-nav_next: {"path": "nextjs/docs/pages/api-reference/config/next-config-js/assetPrefix/index.md", "title": "assetPrefix"}
+version: "latest"
+content_language: "en"
 ---
+[Configuration](/docs/pages/api-reference/config)[next.config.js Options](/docs/pages/api-reference/config/next-config-js)allowedDevOrigins
 
 # allowedDevOrigins
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 Next.js blocks cross-origin requests to dev-only assets and endpoints during development by default to prevent unauthorized access.
 
@@ -32,7 +33,3 @@ module.exports = {
 ```
 
 Was this helpful?
-
-supported.
-
-Send

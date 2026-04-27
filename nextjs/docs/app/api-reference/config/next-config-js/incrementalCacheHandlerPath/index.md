@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/app/api-reference/config/next-config-js/
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:07:48.421Z"
-content_hash: "b21c40b27a2437720eca36b96685ae6e96161c8ed973ca3ef027948001a8e291"
+last_crawled_at: "2026-04-27T18:06:37.970Z"
+content_hash: "fded5eb00ff660fda39ef82c36ce098ea026dad1fb491b3ada16e1b099bc679c"
 menu_path: ["Custom Next.js Cache Handler"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/api-reference/config/next-config-js/images/index.md", "title": "images"}
-nav_next: {"path": "nextjs/docs/app/api-reference/config/next-config-js/inlineCss/index.md", "title": "inlineCss"}
+version: "latest"
+content_language: "en"
 ---
+[Configuration](/docs/app/api-reference/config)[next.config.js](/docs/app/api-reference/config/next-config-js)cacheHandler
 
 # Custom Next.js Cache Handler
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 You can configure the Next.js cache location if you want to persist cached pages and data to durable storage, or share the cache across multiple containers or instances of your Next.js application.
 
@@ -38,23 +39,10 @@ The cache handler can implement the following methods: `get`, `set`, `revalidate
 
 ### `get()`[](#get)
 
-Parameter
-
-Type
-
-Description
-
-`key`
-
-`string`
-
-The key to the cached value.
-
-`ctx`
-
-`object`
-
-Context including the cache entry kind.
+| Parameter | Type | Description |
+| --- | --- | --- |
+| `key` | `string` | The key to the cached value. |
+| `ctx` | `object` | Context including the cache entry kind. |
 
 The `ctx` parameter contains a `kind` property that indicates the type of cache entry being retrieved. Possible values include `'APP_PAGE'`, `'APP_ROUTE'`, `'PAGES'`, `'FETCH'`, and `'IMAGE'`.
 
@@ -62,29 +50,11 @@ Returns the cached value or `null` if not found.
 
 ### `set()`[](#set)
 
-Parameter
-
-Type
-
-Description
-
-`key`
-
-`string`
-
-The key to store the data under.
-
-`data`
-
-Data or `null`
-
-The data to be cached.
-
-`ctx`
-
-`{ tags: [] }`
-
-The cache tags provided.
+| Parameter | Type | Description |
+| --- | --- | --- |
+| `key` | `string` | The key to store the data under. |
+| `data` | Data or `null` | The data to be cached. |
+| `ctx` | `{ tags: [] }` | The cache tags provided. |
 
 The `data` object contains a `kind` property that indicates the type of cache entry. For image optimization, `kind` will be `'IMAGE'` and the data will include properties like `buffer`, `etag`, `extension`, and `revalidate`.
 
@@ -92,17 +62,9 @@ Returns `Promise<void>`.
 
 ### `revalidateTag()`[](#revalidatetag)
 
-Parameter
-
-Type
-
-Description
-
-`tag`
-
-`string` or `string[]`
-
-The cache tags to revalidate.
+| Parameter | Type | Description |
+| --- | --- | --- |
+| `tag` | `string` or `string[]` | The cache tags to revalidate. |
 
 Returns `Promise<void>`. Learn more about [revalidating data](/docs/app/guides/incremental-static-regeneration) or the [`revalidateTag()`](/docs/app/api-reference/functions/revalidateTag) function.
 
@@ -114,7 +76,7 @@ Returns `void`.
 
 **Good to know:**
 
-*   `revalidatePath` is a convenience layer on top of cache tags. Calling `revalidatePath` will call your `revalidateTag` function, which you can then choose if you want to tag cache keys based on the path.
+-   `revalidatePath` is a convenience layer on top of cache tags. Calling `revalidatePath` will call your `revalidateTag` function, which you can then choose if you want to tag cache keys based on the path.
 
 ## Image Optimization Caching[](#image-optimization-caching)
 
@@ -139,68 +101,23 @@ When handling image cache entries, the `kind` will be `'IMAGE'` and the data wil
 
 ## Platform Support[](#platform-support)
 
-Deployment Option
-
-Supported
-
-[Node.js server](/docs/app/getting-started/deploying#nodejs-server)
-
-Yes
-
-[Docker container](/docs/app/getting-started/deploying#docker)
-
-Yes
-
-[Static export](/docs/app/getting-started/deploying#static-export)
-
-No
-
-[Adapters](/docs/app/getting-started/deploying#adapters)
-
-Platform-specific
+| Deployment Option | Supported |
+| --- | --- |
+| [Node.js server](/docs/app/getting-started/deploying#nodejs-server) | Yes |
+| [Docker container](/docs/app/getting-started/deploying#docker) | Yes |
+| [Static export](/docs/app/getting-started/deploying#static-export) | No |
+| [Adapters](/docs/app/getting-started/deploying#adapters) | Platform-specific |
 
 Learn how to [configure ISR](/docs/app/guides/self-hosting#caching-and-isr) when self-hosting Next.js.
 
 ## Version History[](#version-history)
 
-Version
-
-Changes
-
-`v16.2.0`
-
-`cacheHandler` support for image optimization caching.
-
-`v14.1.0`
-
-Renamed to `cacheHandler` and became stable.
-
-`v13.4.0`
-
-`incrementalCacheHandlerPath` support for `revalidateTag`.
-
-`v13.4.0`
-
-`incrementalCacheHandlerPath` support for standalone output.
-
-`v12.2.0`
-
-Experimental `incrementalCacheHandlerPath` added.
-
-[Previous
-
-images
-
-](/docs/app/api-reference/config/next-config-js/images)
-
-[Next
-
-inlineCss
-
-](/docs/app/api-reference/config/next-config-js/inlineCss)
+| Version | Changes |
+| --- | --- |
+| `v16.2.0` | `cacheHandler` support for image optimization caching. |
+| `v14.1.0` | Renamed to `cacheHandler` and became stable. |
+| `v13.4.0` | `incrementalCacheHandlerPath` support for `revalidateTag`. |
+| `v13.4.0` | `incrementalCacheHandlerPath` support for standalone output. |
+| `v12.2.0` | Experimental `incrementalCacheHandlerPath` added. |
 
 Was this helpful?
-
-supported.
-
-Send

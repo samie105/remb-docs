@@ -5,14 +5,12 @@ canonical_url: "https://www.prisma.io/docs/orm/prisma-schema/data-model/table-in
 docset: "prisma"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:52:31.311Z"
-content_hash: "f225fdeed1a9596cbe167dc549198eb77745916ad34bb5ecf38fcac3f52dc53e"
+last_crawled_at: "2026-04-27T19:42:25.808Z"
+content_hash: "f89dd55f64b88157e14f658422d07a334fa7db5e0e049c64402fe5af98733dea"
 menu_path: ["Table inheritance"]
 section_path: []
-nav_prev: {"path": "prisma/docs/orm/prisma-schema/data-model/relations/troubleshooting-relations/index.md", "title": "Troubleshooting relations"}
-nav_next: {"path": "prisma/docs/orm/prisma-schema/data-model/unsupported-database-features/index.md", "title": "Unsupported database features (Prisma Schema)"}
+content_language: "en"
 ---
-
 Learn about the use cases and patterns for table inheritance in Prisma ORM that enable usage of union types or polymorphic structures in your application.
 
 Table inheritance is a software design pattern that allows the modeling of hierarchical relationships between entities. Using table inheritance on the database level can also enable the use of union types in your JavaScript/TypeScript application or share a set of common properties across multiple models.
@@ -21,9 +19,9 @@ This page introduces two approaches to table inheritance and explains how to use
 
 A common use case for table inheritance may be when an application needs to display a _feed_ of some kind of _content activities_. A content activity in this case, could be a _video_ or an _article_. As an example, let's assume that:
 
-*   a content activity always has an `id` and a `url`
-*   in addition to `id` and a `url`, a video also has a `duration` (modeled as an `Int`)
-*   in addition to `id` and a `url`, an article also a `body` (modeled as a `String`)
+-   a content activity always has an `id` and a `url`
+-   in addition to `id` and a `url`, a video also has a `duration` (modeled as an `Int`)
+-   in addition to `id` and a `url`, an article also a `body` (modeled as a `String`)
 
 ### [Use cases](#use-cases)
 
@@ -48,6 +46,8 @@ For example, if both the `Video` and `Article` models from above should have a s
 ### [Example](#example)
 
 In a simple Prisma schema, this would look as follows. Note that we're adding a `User` model as well to illustrate how this can work with relations:
+
+schema.prisma
 
 ```
 model Video {
@@ -82,8 +82,8 @@ Let's investigate how we can model this using table inheritance.
 
 Here is a quick comparison of the two main approaches for table inheritance:
 
-*   **Single-table inheritance (STI)**: Uses a _single_ table to store data of _all_ the different entities in one location. In our example, there'd be a single `Activity` table with the `id`, `url` as well as the `duration` and `body` column. It also uses a `type` column that indicates whether an _activity_ is a _video_ or an _article_.
-*   **Multi-table inheritance (MTI)**: Uses _multiple_ tables to store the data of the different entities separately and links them via foreign keys. In our example, there'd be an `Activity` table with the `id`, `url` column, a `Video` table with the `duration` and a foreign key to `Activity` as well as an `Article` table with the `body` and a foreign key. There is also a `type` column that acts as a discriminator and indicates whether an _activity_ is a _video_ or an _article_. Note that multi-table inheritance is also sometimes called _delegated types_.
+-   **Single-table inheritance (STI)**: Uses a _single_ table to store data of _all_ the different entities in one location. In our example, there'd be a single `Activity` table with the `id`, `url` as well as the `duration` and `body` column. It also uses a `type` column that indicates whether an _activity_ is a _video_ or an _article_.
+-   **Multi-table inheritance (MTI)**: Uses _multiple_ tables to store the data of the different entities separately and links them via foreign keys. In our example, there'd be an `Activity` table with the `id`, `url` column, a `Video` table with the `duration` and a foreign key to `Activity` as well as an `Article` table with the `body` and a foreign key. There is also a `type` column that acts as a discriminator and indicates whether an _activity_ is a _video_ or an _article_. Note that multi-table inheritance is also sometimes called _delegated types_.
 
 You can learn about the tradeoffs of both approaches [below](#tradeoffs-between-sti-and-mti).
 
@@ -117,8 +117,8 @@ model User {
 
 A few things to note:
 
-*   The model-specific properties `duration` and `body` must be marked as optional (i.e., with `?`). That's because a record in the `Activity` table that represents a _video_ must not have a value for `body`. Conversely, an `Activity` record representing an _article_ can never have a `duration` set.
-*   The `type` discriminator column indicates whether each record represents a _video_ or an _article_ item.
+-   The model-specific properties `duration` and `body` must be marked as optional (i.e., with `?`). That's because a record in the `Activity` table that represents a _video_ must not have a value for `body`. Conversely, an `Activity` record representing an _article_ can never have a `duration` set.
+-   The `type` discriminator column indicates whether each record represents a _video_ or an _article_ item.
 
 ### [Prisma Client API](#prisma-client-api)
 
@@ -184,7 +184,7 @@ const videos: Video[] = videoActivities.map(activityToVideo);
 
 #### [Using Prisma Client extension for a more convenient API](#using-prisma-client-extension-for-a-more-convenient-api)
 
-You can use [Prisma Client extensions](prisma/docs/orm/prisma-client/client-extensions/index.md) to create a more convenient API for the table structures in your database.
+You can use [Prisma Client extensions](https://www.prisma.io/docs/orm/prisma-client/client-extensions) to create a more convenient API for the table structures in your database.
 
 ### [Data model](#data-model-1)
 
@@ -231,9 +231,9 @@ model User {
 
 A few things to note:
 
-*   A 1-1 relation is needed between `Activity` and `Video` as well as `Activity` and `Article`. This relationship is used to fetch the specific information about a record when needed.
-*   The model-specific properties `duration` and `body` can be made _required_ with this approach.
-*   The `type` discriminator column indicates whether each record represents a _video_ or an _article_ item.
+-   A 1-1 relation is needed between `Activity` and `Video` as well as `Activity` and `Article`. This relationship is used to fetch the specific information about a record when needed.
+-   The model-specific properties `duration` and `body` can be made _required_ with this approach.
+-   The `type` discriminator column indicates whether each record represents a _video_ or an _article_ item.
 
 ### [Prisma Client API](#prisma-client-api-1)
 
@@ -314,11 +314,11 @@ const videos: Video[] = videoWithActivities.map(toVideo);
 
 #### [Using Prisma Client extension for a more convenient API](#using-prisma-client-extension-for-a-more-convenient-api-1)
 
-You can use [Prisma Client extensions](prisma/docs/orm/prisma-client/client-extensions/index.md) to create a more convenient API for the table structures in your database.
+You can use [Prisma Client extensions](https://www.prisma.io/docs/orm/prisma-client/client-extensions) to create a more convenient API for the table structures in your database.
 
-*   **Data model**: The data model may feel more clean with MTI. With STI, you may end up with very wide rows and lots of columns that have `NULL` values in them.
-*   **Performance**: MTI may come with a performance cost because you need to join the parent and child tables to access _all_ properties relevant for a model.
-*   **Typings**: With Prisma ORM, MTI gives you proper typings for the specific models (i.e., `Article` and `Video` in the examples above) already, while you need to create these from scratch with STI.
-*   **IDs / Primary keys**: With MTI, records have two IDs (one on the parent and another on the child table) that may not match. You need to consider this in the business logic of your application.
+-   **Data model**: The data model may feel more clean with MTI. With STI, you may end up with very wide rows and lots of columns that have `NULL` values in them.
+-   **Performance**: MTI may come with a performance cost because you need to join the parent and child tables to access _all_ properties relevant for a model.
+-   **Typings**: With Prisma ORM, MTI gives you proper typings for the specific models (i.e., `Article` and `Video` in the examples above) already, while you need to create these from scratch with STI.
+-   **IDs / Primary keys**: With MTI, records have two IDs (one on the parent and another on the child table) that may not match. You need to consider this in the business logic of your application.
 
 While Prisma ORM doesn't natively support union types or polymorphism at the moment, you can check out [Zenstack](https://github.com/zenstackhq/zenstack) which is adding an extra layer of features to the Prisma schema. Read their [blog post about polymorphism in Prisma ORM](https://zenstack.dev/blog/polymorphism) to learn more.

@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/pages/api-reference/config"
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:20:04.323Z"
-content_hash: "60cf66ef59af84fac4e8c224955854cd286b7bff86f4a518423bfd9bc023e7b5"
+last_crawled_at: "2026-04-27T18:19:27.799Z"
+content_hash: "df223b0b987433d759c4bd2ed9b301972363e110f91b31afa30a3745dc01197c"
 menu_path: ["Configuration"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/pages/api-reference/functions/userAgent/index.md", "title": "userAgent"}
-nav_next: {"path": "nextjs/docs/pages/api-reference/config/next-config-js/index.md", "title": "next.config.js Options"}
+version: "latest"
+content_language: "en"
 ---
+[Pages Router](/docs/pages)[API Reference](/docs/pages/api-reference)Configuration
 
 # Configuration
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 [
 
@@ -38,7 +39,3 @@ Next.js reports ESLint errors and warnings during builds by default. Learn how t
 ](/docs/pages/api-reference/config/eslint)
 
 Was this helpful?
-
-supported.
-
-Send

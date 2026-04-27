@@ -5,14 +5,12 @@ canonical_url: "https://www.postgresql.org/docs/current/view-pg-ident-file-mappi
 docset: "postgres"
 kind: "database"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:50:10.795Z"
-content_hash: "793cb15ecb2c8e0af014f7cf96fa9b5dec0e3b0583061966b7b9a7e3c9852f7f"
+last_crawled_at: "2026-04-27T20:49:43.419Z"
+content_hash: "030a01eeebed7647a64671f051a85ca83e6c3966b9dcd5a84cb4ddaf8cbb64ed"
 menu_path: ["PostgreSQL: Documentation: 18: 53.11. pg_ident_file_mappings"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/view-pg-hba-file-rules.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.10.\u00a0pg_hba_file_rules"}
-nav_next: {"path": "postgres/docs/current/view-pg-indexes.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.12.\u00a0pg_indexes"}
+content_language: "en"
 ---
-
 Development Versions: [devel](https://www.postgresql.org/docs/devel/view-pg-ident-file-mappings.html "PostgreSQL devel - 53.11. pg_ident_file_mappings")
 
 The view `pg_ident_file_mappings` provides a summary of the contents of the client user name mapping configuration file, [`pg_ident.conf`](https://www.postgresql.org/docs/current/auth-username-maps.html "20.2. User Name Maps"). A row appears in this view for each non-empty, non-comment line in the file, with annotations indicating whether the map could be applied successfully.
@@ -23,37 +21,62 @@ By default, the `pg_ident_file_mappings` view can be read only by superusers.
 
 **Table 53.11. `pg_ident_file_mappings` Columns**
 
+| 
 Column Type
 
 Description
+
+ |
+| --- |
+| 
 
 `map_number` `int4`
 
 Number of this map, in priority order, if valid, otherwise `NULL`
 
+ |
+| 
+
 `file_name` `text`
 
 Name of the file containing this map
+
+ |
+| 
 
 `line_number` `int4`
 
 Line number of this map in `file_name`
 
+ |
+| 
+
 `map_name` `text`
 
 Name of the map
+
+ |
+| 
 
 `sys_name` `text`
 
 Detected user name of the client
 
+ |
+| 
+
 `pg_username` `text`
 
 Requested PostgreSQL user name
 
+ |
+| 
+
 `error` `text`
 
 If not `NULL`, an error message indicating why this line could not be processed
+
+ |
 
 Usually, a row reflecting an incorrect entry will have values for only the `line_number` and `error` fields.
 

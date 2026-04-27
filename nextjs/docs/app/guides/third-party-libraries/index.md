@@ -5,17 +5,19 @@ canonical_url: "https://nextjs.org/docs/app/guides/third-party-libraries"
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:16:45.481Z"
-content_hash: "9ba475ec073e5944089083a728d82a0ffd1ba2500914bdd5d380481aa69b2ea1"
+last_crawled_at: "2026-04-27T18:16:10.606Z"
+content_hash: "30bd62787304980eceb4a37f1f4d010b7fff9f96e69d0191818a67e05cf386ef"
 menu_path: ["How to optimize third-party libraries"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/guides/testing/vitest/index.md", "title": "How to set up Vitest with Next.js"}
-nav_next: {"path": "nextjs/docs/app/guides/upgrading/index.md", "title": "Upgrade Guides"}
+version: "latest"
+tab_variants: ["pnpm","npm","yarn","bun"]
+content_language: "en"
 ---
+[App Router](/docs/app)[Guides](/docs/app/guides)Third Party Libraries
 
 # How to optimize third-party libraries
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 **`@next/third-parties`** is a library that provides a collection of components and utilities that improve the performance and developer experience of loading popular third-party libraries in your Next.js application.
 
@@ -25,7 +27,21 @@ All third-party integrations provided by `@next/third-parties` have been optimiz
 
 To get started, install the `@next/third-parties` library:
 
-pnpmnpmyarnbun
+#### pnpm
+
+pnpm
+
+#### npm
+
+npm
+
+#### yarn
+
+yarn
+
+#### bun
+
+bun
 
 Terminal
 
@@ -46,8 +62,6 @@ The `GoogleTagManager` component can be used to instantiate a [Google Tag Manage
 To load Google Tag Manager for all routes, include the component directly in your root layout and pass in your GTM container ID:
 
 app/layout.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -114,47 +128,14 @@ If you're using a server-side tag manager and serving `gtm.js` scripts from your
 
 Options to pass to the Google Tag Manager. For a full list of options, read the [Google Tag Manager docs](https://developers.google.com/tag-platform/tag-manager/datalayer).
 
-Name
-
-Type
-
-Description
-
-`gtmId`
-
-Required\*
-
-Your GTM container ID. Usually starts with `GTM-`.
-
-`gtmScriptUrl`
-
-Optional\*
-
-GTM script URL. Defaults to `https://www.googletagmanager.com/gtm.js`.
-
-`dataLayer`
-
-Optional
-
-Data layer object to instantiate the container with.
-
-`dataLayerName`
-
-Optional
-
-Name of the data layer. Defaults to `dataLayer`.
-
-`auth`
-
-Optional
-
-Value of authentication parameter (`gtm_auth`) for environment snippets.
-
-`preview`
-
-Optional
-
-Value of preview parameter (`gtm_preview`) for environment snippets.
+| Name | Type | Description |
+| --- | --- | --- |
+| `gtmId` | Required\* | Your GTM container ID. Usually starts with `GTM-`. |
+| `gtmScriptUrl` | Optional\* | GTM script URL. Defaults to `https://www.googletagmanager.com/gtm.js`. |
+| `dataLayer` | Optional | Data layer object to instantiate the container with. |
+| `dataLayerName` | Optional | Name of the data layer. Defaults to `dataLayer`. |
+| `auth` | Optional | Value of authentication parameter (`gtm_auth`) for environment snippets. |
+| `preview` | Optional | Value of preview parameter (`gtm_preview`) for environment snippets. |
 
 \*`gtmId` can be omitted when `gtmScriptUrl` is provided to support [Google tag gateway for advertisers](https://developers.google.com/tag-platform/tag-manager/gateway/setup-guide?setup=manual).
 
@@ -167,8 +148,6 @@ The `GoogleAnalytics` component can be used to include [Google Analytics 4](http
 To load Google Analytics for all routes, include the component directly in your root layout and pass in your measurement ID:
 
 app/layout.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -239,29 +218,11 @@ To ensure that client-side navigations are being measured correctly, verify that
 
 Options to pass to the `<GoogleAnalytics>` component.
 
-Name
-
-Type
-
-Description
-
-`gaId`
-
-Required
-
-Your [measurement ID](https://support.google.com/analytics/answer/12270356). Usually starts with `G-`.
-
-`dataLayerName`
-
-Optional
-
-Name of the data layer. Defaults to `dataLayer`.
-
-`nonce`
-
-Optional
-
-A [nonce](/docs/app/guides/content-security-policy#nonces).
+| Name | Type | Description |
+| --- | --- | --- |
+| `gaId` | Required | Your [measurement ID](https://support.google.com/analytics/answer/12270356). Usually starts with `G-`. |
+| `dataLayerName` | Optional | Name of the data layer. Defaults to `dataLayer`. |
+| `nonce` | Optional | A [nonce](/docs/app/guides/content-security-policy#nonces). |
 
 ### Google Maps Embed[](#google-maps-embed)
 
@@ -289,89 +250,21 @@ export default function Page() {
 
 Options to pass to the Google Maps Embed. For a full list of options, read the [Google Map Embed docs](https://developers.google.com/maps/documentation/embed/embedding-map).
 
-Name
-
-Type
-
-Description
-
-`apiKey`
-
-Required
-
-Your api key.
-
-`mode`
-
-Required
-
-[Map mode](https://developers.google.com/maps/documentation/embed/embedding-map#choosing_map_modes)
-
-`height`
-
-Optional
-
-Height of the embed. Defaults to `auto`.
-
-`width`
-
-Optional
-
-Width of the embed. Defaults to `auto`.
-
-`style`
-
-Optional
-
-Pass styles to the iframe.
-
-`allowfullscreen`
-
-Optional
-
-Property to allow certain map parts to go full screen.
-
-`loading`
-
-Optional
-
-Defaults to lazy. Consider changing if you know your embed will be above the fold.
-
-`q`
-
-Optional
-
-Defines map marker location. _This may be required depending on the map mode_.
-
-`center`
-
-Optional
-
-Defines the center of the map view.
-
-`zoom`
-
-Optional
-
-Sets initial zoom level of the map.
-
-`maptype`
-
-Optional
-
-Defines type of map tiles to load.
-
-`language`
-
-Optional
-
-Defines the language to use for UI elements and for the display of labels on map tiles.
-
-`region`
-
-Optional
-
-Defines the appropriate borders and labels to display, based on geo-political sensitivities.
+| Name | Type | Description |
+| --- | --- | --- |
+| `apiKey` | Required | Your api key. |
+| `mode` | Required | [Map mode](https://developers.google.com/maps/documentation/embed/embedding-map#choosing_map_modes) |
+| `height` | Optional | Height of the embed. Defaults to `auto`. |
+| `width` | Optional | Width of the embed. Defaults to `auto`. |
+| `style` | Optional | Pass styles to the iframe. |
+| `allowfullscreen` | Optional | Property to allow certain map parts to go full screen. |
+| `loading` | Optional | Defaults to lazy. Consider changing if you know your embed will be above the fold. |
+| `q` | Optional | Defines map marker location. _This may be required depending on the map mode_. |
+| `center` | Optional | Defines the center of the map view. |
+| `zoom` | Optional | Sets initial zoom level of the map. |
+| `maptype` | Optional | Defines type of map tiles to load. |
+| `language` | Optional | Defines the language to use for UI elements and for the display of labels on map tiles. |
+| `region` | Optional | Defines the appropriate borders and labels to display, based on geo-political sensitivities. |
 
 ### YouTube Embed[](#youtube-embed)
 
@@ -389,64 +282,15 @@ export default function Page() {
 
 #### Options[](#options-3)
 
-Name
-
-Type
-
-Description
-
-`videoid`
-
-Required
-
-YouTube video id.
-
-`width`
-
-Optional
-
-Width of the video container. Defaults to `auto`
-
-`height`
-
-Optional
-
-Height of the video container. Defaults to `auto`
-
-`playlabel`
-
-Optional
-
-A visually hidden label for the play button for accessibility.
-
-`params`
-
-Optional
-
-The video player params defined [here](https://developers.google.com/youtube/player_parameters#Parameters).  
+| Name | Type | Description |
+| --- | --- | --- |
+| `videoid` | Required | YouTube video id. |
+| `width` | Optional | Width of the video container. Defaults to `auto` |
+| `height` | Optional | Height of the video container. Defaults to `auto` |
+| `playlabel` | Optional | A visually hidden label for the play button for accessibility. |
+| `params` | Optional | The video player params defined [here](https://developers.google.com/youtube/player_parameters#Parameters).  
 Params are passed as a query param string.  
-Eg: `params="controls=0&start=10&end=30"`
-
-`style`
-
-Optional
-
-Used to apply styles to the video container.
-
-[Previous
-
-Vitest
-
-](/docs/app/guides/testing/vitest)
-
-[Next
-
-Upgrading
-
-](/docs/app/guides/upgrading)
+Eg: `params="controls=0&start=10&end=30"` |
+| `style` | Optional | Used to apply styles to the video container. |
 
 Was this helpful?
-
-supported.
-
-Send

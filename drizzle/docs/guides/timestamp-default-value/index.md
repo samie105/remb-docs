@@ -5,21 +5,19 @@ canonical_url: "https://orm.drizzle.team/docs/guides/timestamp-default-value"
 docset: "drizzle"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:07:11.642Z"
-content_hash: "a429484cee586ae2f2a3525a444ab56abbb19fe8c6c94f18b8a9902582288845"
+last_crawled_at: "2026-04-27T19:03:10.007Z"
+content_hash: "9461eb469a0390fe90636f18cec3be043637bc9f3831ff1d763e99d385553308"
 menu_path: ["Drizzle ORM - SQL Timestamp as a default value"]
 section_path: []
-nav_prev: {"path": "drizzle/docs/guides/select-parent-rows-with-at-least-one-related-child-row/index.md", "title": "Drizzle ORM - Select parent rows with at least one related child row"}
-nav_next: {"path": "drizzle/docs/guides/toggling-a-boolean-field/index.md", "title": "Drizzle ORM - SQL Toggle value"}
+content_language: "en"
 ---
-
 Drizzle | SQL Timestamp as a default value
 
 ### PostgreSQL[](#postgresql)
 
 To set current timestamp as a default value in PostgreSQL, you can use the `defaultNow()` method or `sql` operator with `now()` function which returns the current date and time with the time zone:
 
-```
+```ts
 import { sql } from 'drizzle-orm';
 import { timestamp, pgTable, serial } from 'drizzle-orm/pg-core';
 
@@ -32,7 +30,7 @@ export const users = pgTable('users', {
 });
 ```
 
-```
+```sql
 CREATE TABLE IF NOT EXISTS "users" (
 	"id" serial PRIMARY KEY NOT NULL,
 	"timestamp1" timestamp DEFAULT now() NOT NULL,
@@ -42,7 +40,7 @@ CREATE TABLE IF NOT EXISTS "users" (
 
 The `mode` option defines how values are handled in the application. Values with `string` mode are treated as `string` in the application, but stored as timestamps in the database.
 
-```
+```plaintext
 // Data stored in the database
 +----+----------------------------+----------------------------+
 | id |         timestamp1         |         timestamp2         |
@@ -51,7 +49,7 @@ The `mode` option defines how values are handled in the application. Values with
 +----+----------------------------+----------------------------+
 ```
 
-```
+```ts
 // Data returned by the application
 [
   {
@@ -64,7 +62,7 @@ The `mode` option defines how values are handled in the application. Values with
 
 To set unix timestamp as a default value in PostgreSQL, you can use the `sql` operator and `extract(epoch from now())` function which returns the number of seconds since `1970-01-01 00:00:00 UTC`:
 
-```
+```ts
 import { sql } from 'drizzle-orm';
 import { integer, pgTable, serial } from 'drizzle-orm/pg-core'
 
@@ -76,14 +74,14 @@ export const users = pgTable('users', {
 });
 ```
 
-```
+```sql
 CREATE TABLE IF NOT EXISTS "users" (
 	"id" serial PRIMARY KEY NOT NULL,
 	"timestamp" integer DEFAULT extract(epoch from now()) NOT NULL
 );
 ```
 
-```
+```plaintext
 // Data stored in the database
 +----+------------+
 | id | timestamp  |
@@ -92,7 +90,7 @@ CREATE TABLE IF NOT EXISTS "users" (
 +----+------------+
 ```
 
-```
+```ts
 // Data returned by the application
 [ 
   { 
@@ -106,7 +104,7 @@ CREATE TABLE IF NOT EXISTS "users" (
 
 To set current timestamp as a default value in MySQL, you can use the `defaultNow()` method or `sql` operator with `now()` function which returns the current date and time `(YYYY-MM-DD HH-MM-SS)`:
 
-```
+```ts
 import { sql } from 'drizzle-orm';
 import { mysqlTable, serial, timestamp } from 'drizzle-orm/mysql-core';
 
@@ -122,7 +120,7 @@ export const users = mysqlTable('users', {
 });
 ```
 
-```
+```sql
 CREATE TABLE `users` (
 	`id` serial AUTO_INCREMENT NOT NULL,
 	`timestamp1` timestamp NOT NULL DEFAULT now(),
@@ -134,7 +132,7 @@ CREATE TABLE `users` (
 
 `fsp` option defines the number of fractional seconds to include in the timestamp. The default value is `0`. The `mode` option defines how values are handled in the application. Values with `string` mode are treated as `string` in the application, but stored as timestamps in the database.
 
-```
+```plaintext
 // Data stored in the database
 +----+---------------------+---------------------+-------------------------+
 | id | timestamp1          | timestamp2          | timestamp3              |
@@ -143,7 +141,7 @@ CREATE TABLE `users` (
 +----+---------------------+---------------------+-------------------------+
 ```
 
-```
+```ts
 // Data returned by the application
 [
   {
@@ -157,7 +155,7 @@ CREATE TABLE `users` (
 
 To set unix timestamp as a default value in MySQL, you can use the `sql` operator and `unix_timestamp()` function which returns the number of seconds since `1970-01-01 00:00:00 UTC`:
 
-```
+```ts
 import { sql } from 'drizzle-orm';
 import { mysqlTable, serial, int } from 'drizzle-orm/mysql-core';
 
@@ -169,7 +167,7 @@ export const users = mysqlTable('users', {
 });
 ```
 
-```
+```sql
 CREATE TABLE `users` (
 	`id` serial AUTO_INCREMENT NOT NULL,
 	`timestamp` int NOT NULL DEFAULT (unix_timestamp()),
@@ -177,7 +175,7 @@ CREATE TABLE `users` (
 );
 ```
 
-```
+```plaintext
 // Data stored in the database
 +----+------------+
 | id | timestamp  |
@@ -186,7 +184,7 @@ CREATE TABLE `users` (
 +----+------------+
 ```
 
-```
+```ts
 // Data returned by the application
 [ 
   { 
@@ -200,7 +198,7 @@ CREATE TABLE `users` (
 
 To set current timestamp as a default value in SQLite, you can use `sql` operator with `current_timestamp` constant which returns text representation of the current UTC date and time `(YYYY-MM-DD HH:MM:SS)`:
 
-```
+```ts
 import { sql } from 'drizzle-orm';
 import { integer, sqliteTable, text } from 'drizzle-orm/sqlite-core';
 
@@ -212,14 +210,14 @@ export const users = sqliteTable('users', {
 });
 ```
 
-```
+```sql
 CREATE TABLE `users` (
 	`id` integer PRIMARY KEY NOT NULL,
 	`timestamp` text DEFAULT (current_timestamp) NOT NULL
 );
 ```
 
-```
+```plaintext
 // Data stored in the database
 +----+---------------------+
 | id | timestamp           |
@@ -228,7 +226,7 @@ CREATE TABLE `users` (
 +----+---------------------+
 ```
 
-```
+```ts
 // Data returned by the application
 [
   {
@@ -240,7 +238,7 @@ CREATE TABLE `users` (
 
 To set unix timestamp as a default value in SQLite, you can use the `sql` operator and `unixepoch()` function which returns the number of seconds since `1970-01-01 00:00:00 UTC`:
 
-```
+```ts
 import { sql } from 'drizzle-orm';
 import { integer, sqliteTable } from 'drizzle-orm/sqlite-core';
 
@@ -258,7 +256,7 @@ export const users = sqliteTable('users', {
 });
 ```
 
-```
+```sql
 CREATE TABLE `users` (
 	`id` integer PRIMARY KEY NOT NULL,
 	`timestamp1` integer DEFAULT (unixepoch()) NOT NULL,
@@ -269,7 +267,7 @@ CREATE TABLE `users` (
 
 The `mode` option defines how values are handled in the application. In the application, values with `timestamp` and `timestamp_ms` modes are treated as `Date` objects, but stored as integers in the database. The difference is that `timestamp` handles seconds, while `timestamp_ms` handles milliseconds.
 
-```
+```plaintext
 // Data stored in the database
 +------------+------------+---------------+------------+
 | id         | timestamp1 | timestamp2    | timestamp3 |
@@ -278,7 +276,7 @@ The `mode` option defines how values are handled in the application. In the appl
 +------------+------------+---------------+------------+
 ```
 
-```
+```ts
 // Data returned by the application
 [
   {

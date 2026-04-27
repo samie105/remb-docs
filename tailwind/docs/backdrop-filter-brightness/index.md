@@ -5,37 +5,41 @@ canonical_url: "https://tailwindcss.com/docs/backdrop-filter-brightness"
 docset: "tailwind"
 kind: "framework"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:09:31.550Z"
-content_hash: "4f3128bdb6e766bedca713ac8f1190ecfb84c0ae500dd47bb6fabda86d374179"
+last_crawled_at: "2026-04-27T20:28:04.724Z"
+content_hash: "eb8b19d14e9bd6558797b3cd7a2a3fd2cb753f7701f696ae5428f31a2673c56b"
 menu_path: ["backdrop-filter: brightness()"]
 section_path: []
-nav_prev: {"path": "tailwind/docs/backdrop-filter-blur/index.md", "title": "backdrop-filter: blur()"}
-nav_next: {"path": "tailwind/docs/backdrop-filter-contrast/index.md", "title": "backdrop-filter: contrast()"}
+content_language: "en"
 ---
+[](/)
+
+[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
+
+1.  Filters
+2.  brightness
+
+Filters
 
 # backdrop-filter: brightness()
 
 Utilities for applying backdrop brightness filters to an element.
 
-Class
-
-Styles
-
-`backdrop-brightness-<number>`
-
+| Class | Styles |
+| --- | --- |
+| `backdrop-brightness-<number>` | 
 `backdrop-filter: brightness(<number>%);`
 
-`backdrop-brightness-(<custom-property>)`
+ |
+| `backdrop-brightness-(<custom-property>)` | 
 
 `backdrop-filter: brightness(var(<custom-property>));`
 
-`backdrop-brightness-[<value>]`
+ |
+| `backdrop-brightness-[<value>]` | 
 
 `backdrop-filter: brightness(<value>);`
 
-## [Examples](#examples)
-
-### [Basic example](#basic-example)
+ |
 
 Use utilities like `backdrop-brightness-50` and `backdrop-brightness-100` to control an element's backdrop brightness:
 
@@ -51,8 +55,6 @@ backdrop-brightness-150
 <div class="bg-[url(/img/mountains.jpg)]">  <div class="bg-white/30 backdrop-brightness-50 ..."></div></div><div class="bg-[url(/img/mountains.jpg)]">  <div class="bg-white/30 backdrop-brightness-150 ..."></div></div>
 ```
 
-### [Using a custom value](#using-a-custom-value)
-
 Use the `backdrop-brightness-[<value>]` syntax to set the backdrop brightness based on a completely custom value:
 
 ```
@@ -67,8 +69,6 @@ For CSS variables, you can also use the `backdrop-brightness-(<custom-property>)
 
 This is just a shorthand for `backdrop-brightness-[var(<custom-property>)]` that adds the `var()` function for you automatically.
 
-### [Responsive design](#responsive-design)
-
 Prefix a `backdrop-filter: brightness()` utility with a breakpoint variant like `md:` to only apply the utility at medium screen sizes and above:
 
 ```
@@ -79,24 +79,20 @@ Learn more about using variants in the [variants documentation](/docs/hover-focu
 
 ### On this page
 
-*   [Quick reference](#quick-reference)
-*   [Examples](#examples)
-    *   [Basic example](#basic-example)
-    *   [Using a custom value](#using-a-custom-value)
-    *   [Responsive design](#responsive-design)
+-   [Quick reference](#quick-reference)
+-   [Examples](#examples)
+    -   [Basic example](#basic-example)
+    -   [Using a custom value](#using-a-custom-value)
+    -   [Responsive design](#responsive-design)
 
-[
+![Build UIs that don’t suck — 5-day mini-course](/_next/static/media/course-promo.d3d6bc78.jpg)
 
-![Refactoring UI](/_next/static/media/book-promo.3012c0f6.png)
+5-day mini-course
 
-From the creators of Tailwind CSS
+Build UIs that don’t suck.
 
-Make your ideas look awesome, without relying on a designer.
+Short, tactical video lessons from the creator of Tailwind CSS, delivered directly to your inbox every day for a week.
 
-> “This is the survival kit I wish I had when I started building apps.”
-> 
-> Derrick Reimer, SavvyCal
-
-](https://www.refactoringui.com/?ref=sidebar)
+[Get the free course](/build-uis-that-dont-suck)
 
 Copyright © 2026 Tailwind Labs Inc.·[Trademark Policy](/brand)

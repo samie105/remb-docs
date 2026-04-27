@@ -5,65 +5,76 @@ canonical_url: "https://tailwindcss.com/docs/caret-color"
 docset: "tailwind"
 kind: "framework"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:15:36.547Z"
-content_hash: "e292918c093af723c6cb575f566dfaf61321c2a7a5b9cedc0a7a89720dab3873"
+last_crawled_at: "2026-04-27T20:36:47.838Z"
+content_hash: "e97d7cc079c62d7ddc87bb0151bfd4a63cf472787c3b4143df7793695927f2c8"
 menu_path: ["caret-color"]
 section_path: []
-nav_prev: {"path": "tailwind/docs/appearance/index.md", "title": "appearance"}
-nav_next: {"path": "tailwind/docs/color-scheme/index.md", "title": "color-scheme"}
+content_language: "en"
 ---
+[](/)
+
+[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
+
+1.  Interactivity
+2.  caret-color
+
+Interactivity
 
 # caret-color
 
 Utilities for controlling the color of the text input cursor.
 
-Class
-
-Styles
-
-`caret-inherit`
-
+| Class | Styles |
+| --- | --- |
+| `caret-inherit` | 
 `caret-color: inherit;`
 
-`caret-current`
+ |
+| `caret-current` | 
 
 `caret-color: currentColor;`
 
-`caret-transparent`
+ |
+| `caret-transparent` | 
 
 `caret-color: transparent;`
 
-`caret-black`
+ |
+| `caret-black` | 
 
 `caret-color: var(--color-black); /* #000 */`
 
-`caret-white`
+ |
+| `caret-white` | 
 
 `caret-color: var(--color-white); /* #fff */`
 
-`caret-red-50`
+ |
+| `caret-red-50` | 
 
 `caret-color: var(--color-red-50); /* oklch(97.1% 0.013 17.38) */`
 
-`caret-red-100`
+ |
+| `caret-red-100` | 
 
 `caret-color: var(--color-red-100); /* oklch(93.6% 0.032 17.717) */`
 
-`caret-red-200`
+ |
+| `caret-red-200` | 
 
 `caret-color: var(--color-red-200); /* oklch(88.5% 0.062 18.334) */`
 
-`caret-red-300`
+ |
+| `caret-red-300` | 
 
 `caret-color: var(--color-red-300); /* oklch(80.8% 0.114 19.571) */`
 
-`caret-red-400`
+ |
+| `caret-red-400` | 
 
 `caret-color: var(--color-red-400); /* oklch(70.4% 0.191 22.216) */`
 
-## [Examples](#examples)
-
-### [Basic example](#basic-example)
+ |
 
 Use utilities like `caret-rose-500` and `caret-lime-600` to change the color of the text input cursor:
 
@@ -72,8 +83,6 @@ Focus the textarea to see the new caret color
 ```
 <textarea class="caret-pink-500 ..."></textarea>
 ```
-
-### [Using a custom value](#using-a-custom-value)
 
 Use the `caret-[<value>]` syntax to set the caret color based on a completely custom value:
 
@@ -89,8 +98,6 @@ For CSS variables, you can also use the `caret-(<custom-property>)` syntax:
 
 This is just a shorthand for `caret-[var(<custom-property>)]` that adds the `var()` function for you automatically.
 
-### [Responsive design](#responsive-design)
-
 Prefix a `caret-color` utility with a breakpoint variant like `md:` to only apply the utility at medium screen sizes and above:
 
 ```
@@ -98,8 +105,6 @@ Prefix a `caret-color` utility with a breakpoint variant like `md:` to only appl
 ```
 
 Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
-
-## [Customizing your theme](#customizing-your-theme)
 
 Use the `--color-*` theme variables to customize the color utilities in your project:
 
@@ -117,12 +122,12 @@ Learn more about customizing your theme in the [theme documentation](/docs/theme
 
 ### On this page
 
-*   [Quick reference](#quick-reference)
-*   [Examples](#examples)
-    *   [Basic example](#basic-example)
-    *   [Using a custom value](#using-a-custom-value)
-    *   [Responsive design](#responsive-design)
-*   [Customizing your theme](#customizing-your-theme)
+-   [Quick reference](#quick-reference)
+-   [Examples](#examples)
+    -   [Basic example](#basic-example)
+    -   [Using a custom value](#using-a-custom-value)
+    -   [Responsive design](#responsive-design)
+-   [Customizing your theme](#customizing-your-theme)
 
 [
 

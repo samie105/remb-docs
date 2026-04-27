@@ -5,14 +5,12 @@ canonical_url: "https://www.postgresql.org/docs/current/sql-dropprocedure.html"
 docset: "postgres"
 kind: "database"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:46:22.138Z"
-content_hash: "bb42ab030768b06372a1d9830a10a01118cef4c5bb56d6b9b2659746363e0680"
+last_crawled_at: "2026-04-27T20:47:27.331Z"
+content_hash: "21205eda5147916b5396bd04d9e1ac72ecc3f909b3d4a924c6543dce7f7ba5a4"
 menu_path: ["PostgreSQL: Documentation: 18: DROP PROCEDURE"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/sql-droplanguage.html/index.md", "title": "PostgreSQL: Documentation: 18: DROP LANGUAGE"}
-nav_next: {"path": "postgres/docs/current/sql-droprole.html/index.md", "title": "PostgreSQL: Documentation: 18: DROP ROLE"}
+content_language: "en"
 ---
-
 DROP PROCEDURE — remove a procedure
 
 ## Synopsis
@@ -90,8 +88,8 @@ CREATE PROCEDURE do\_db\_maintenance(IN target\_schema text, IN options text) ..
 
 This command conforms to the SQL standard, with these PostgreSQL extensions:
 
-*   The standard only allows one procedure to be dropped per command.
+-   The standard only allows one procedure to be dropped per command.
     
-*   The `IF EXISTS` option is an extension.
+-   The `IF EXISTS` option is an extension.
     
-*   The ability to specify argument modes and names is an extension, and the lookup rules differ when modes are given.
+-   The ability to specify argument modes and names is an extension, and the lookup rules differ when modes are given.

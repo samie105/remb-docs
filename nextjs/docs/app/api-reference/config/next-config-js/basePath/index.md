@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/app/api-reference/config/next-config-js/
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:06:58.180Z"
-content_hash: "cf197f2dbe49ab22860e1d36c74c71bb51ce7d735fbcfd5816decbe642c68a60"
+last_crawled_at: "2026-04-27T18:05:53.279Z"
+content_hash: "1365e9e6890a4c1ef3d84efde812e43d7db496a26a8221019bf9605bcdde8b7b"
 menu_path: ["basePath"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/api-reference/config/next-config-js/authInterrupts/index.md", "title": "authInterrupts"}
-nav_next: {"path": "nextjs/docs/app/api-reference/config/next-config-js/cacheComponents/index.md", "title": "cacheComponents"}
+version: "latest"
+content_language: "en"
 ---
+[Configuration](/docs/app/api-reference/config)[next.config.js](/docs/app/api-reference/config/next-config-js)basePath
 
 # basePath
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 To deploy a Next.js application under a sub-path of a domain you can use the `basePath` config option.
 
@@ -82,20 +83,4 @@ function Home() {
 export default Home
 ```
 
-[Previous
-
-authInterrupts
-
-](/docs/app/api-reference/config/next-config-js/authInterrupts)
-
-[Next
-
-cacheComponents
-
-](/docs/app/api-reference/config/next-config-js/cacheComponents)
-
 Was this helpful?
-
-supported.
-
-Send

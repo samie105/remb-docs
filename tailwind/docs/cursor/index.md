@@ -5,65 +5,76 @@ canonical_url: "https://tailwindcss.com/docs/cursor"
 docset: "tailwind"
 kind: "framework"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:15:35.842Z"
-content_hash: "8723105884ec9ec2741ffcab0166f619b573a128d0d87c729ce51ab247c85dda"
+last_crawled_at: "2026-04-27T20:37:21.979Z"
+content_hash: "d7db93ed4a9299cf613405cab169c091e64cb8c47e2e09238c66c790df7257aa"
 menu_path: ["cursor"]
 section_path: []
-nav_prev: {"path": "tailwind/docs/color-scheme/index.md", "title": "color-scheme"}
-nav_next: {"path": "tailwind/docs/field-sizing/index.md", "title": "field-sizing"}
+content_language: "en"
 ---
+[](/)
+
+[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
+
+1.  Interactivity
+2.  cursor
+
+Interactivity
 
 # cursor
 
 Utilities for controlling the cursor style when hovering over an element.
 
-Class
-
-Styles
-
-`cursor-auto`
-
+| Class | Styles |
+| --- | --- |
+| `cursor-auto` | 
 `cursor: auto;`
 
-`cursor-default`
+ |
+| `cursor-default` | 
 
 `cursor: default;`
 
-`cursor-pointer`
+ |
+| `cursor-pointer` | 
 
 `cursor: pointer;`
 
-`cursor-wait`
+ |
+| `cursor-wait` | 
 
 `cursor: wait;`
 
-`cursor-text`
+ |
+| `cursor-text` | 
 
 `cursor: text;`
 
-`cursor-move`
+ |
+| `cursor-move` | 
 
 `cursor: move;`
 
-`cursor-help`
+ |
+| `cursor-help` | 
 
 `cursor: help;`
 
-`cursor-not-allowed`
+ |
+| `cursor-not-allowed` | 
 
 `cursor: not-allowed;`
 
-`cursor-none`
+ |
+| `cursor-none` | 
 
 `cursor: none;`
 
-`cursor-context-menu`
+ |
+| `cursor-context-menu` | 
 
 `cursor: context-menu;`
 
-## [Examples](#examples)
-
-### [Basic example](#basic-example)
+ |
 
 Use utilities like `cursor-pointer` and `cursor-grab` to control which cursor is displayed when hovering over an element:
 
@@ -72,8 +83,6 @@ Hover over each button to see the cursor change
 ```
 <button class="cursor-pointer ...">Submit</button><button class="cursor-progress ...">Saving...</button><button class="cursor-not-allowed ..." disabled>Confirm</button>
 ```
-
-### [Using a custom value](#using-a-custom-value)
 
 Use the `cursor-[<value>]` syntax to set the cursor based on a completely custom value:
 
@@ -89,8 +98,6 @@ For CSS variables, you can also use the `cursor-(<custom-property>)` syntax:
 
 This is just a shorthand for `cursor-[var(<custom-property>)]` that adds the `var()` function for you automatically.
 
-### [Responsive design](#responsive-design)
-
 Prefix a `cursor` utility with a breakpoint variant like `md:` to only apply the utility at medium screen sizes and above:
 
 ```
@@ -101,11 +108,11 @@ Learn more about using variants in the [variants documentation](/docs/hover-focu
 
 ### On this page
 
-*   [Quick reference](#quick-reference)
-*   [Examples](#examples)
-    *   [Basic example](#basic-example)
-    *   [Using a custom value](#using-a-custom-value)
-    *   [Responsive design](#responsive-design)
+-   [Quick reference](#quick-reference)
+-   [Examples](#examples)
+    -   [Basic example](#basic-example)
+    -   [Using a custom value](#using-a-custom-value)
+    -   [Responsive design](#responsive-design)
 
 ![Build UIs that don’t suck — 5-day mini-course](/_next/static/media/course-promo.d3d6bc78.jpg)
 

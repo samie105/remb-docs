@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/app/api-reference/config/next-config-js/
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:07:22.099Z"
-content_hash: "b53bf109e7b127dfdc0ce3f1373ffc6c1ddffe4f0f64bbaab3a5c1a499a2f16a"
+last_crawled_at: "2026-04-27T18:06:13.036Z"
+content_hash: "0f36735ab4a56c4a598366be88a79398660835c70e0050fdde9e28ca6a5b59ca"
 menu_path: ["distDir"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/api-reference/config/next-config-js/devIndicators/index.md", "title": "devIndicators"}
-nav_next: {"path": "nextjs/docs/app/api-reference/config/next-config-js/env/index.md", "title": "env"}
+version: "latest"
+content_language: "en"
 ---
+[Configuration](/docs/app/api-reference/config)[next.config.js](/docs/app/api-reference/config/next-config-js)distDir
 
 # distDir
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 You can specify a name to use for a custom build directory to use instead of `.next`.
 
@@ -33,20 +34,4 @@ Now if you run `next build` Next.js will use `build` instead of the default `.ne
 
 > `distDir` **should not** leave your project directory. For example, `../build` is an **invalid** directory.
 
-[Previous
-
-devIndicators
-
-](/docs/app/api-reference/config/next-config-js/devIndicators)
-
-[Next
-
-env
-
-](/docs/app/api-reference/config/next-config-js/env)
-
 Was this helpful?
-
-supported.
-
-Send

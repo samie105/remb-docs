@@ -5,29 +5,25 @@ canonical_url: "https://tailwindcss.com/docs/detecting-classes-in-source-files"
 docset: "tailwind"
 kind: "framework"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:38:13.424Z"
-content_hash: "310e6aa713ee16c6fde8f940f9f25f0bce604a1145aa67c665f831e5d5091500"
+last_crawled_at: "2026-04-27T19:49:40.974Z"
+content_hash: "d67361d0e271700b1a3701b10b967f5176a459deefab12aea01030c4774a510e"
 menu_path: ["Detecting classes in source files"]
 section_path: []
-nav_prev: {"path": "tailwind/docs/adding-custom-styles/index.md", "title": "Adding custom styles"}
-nav_next: {"path": "tailwind/docs/functions-and-directives/index.md", "title": "Functions and directives"}
+content_language: "en"
 ---
-
 Understanding and customizing how Tailwind scans your source files.
 
 ## [Overview](#overview)
 
 Tailwind works by scanning your project for utility classes, then generating all of the necessary CSS based on the classes you've actually used.
 
-This makes sure your CSS is as small as possible, and is also what makes features like [arbitrary values](tailwind/docs/adding-custom-styles/index.md#using-arbitrary-values) possible.
+This makes sure your CSS is as small as possible, and is also what makes features like [arbitrary values](https://tailwindcss.com/docs/adding-custom-styles#using-arbitrary-values) possible.
 
 ### [How classes are detected](#how-classes-are-detected)
 
 Tailwind treats all of your source files as plain text, and doesn't attempt to actually parse your files as code in any way.
 
 Instead it just looks for any tokens in your file that could be classes based on which characters Tailwind is expecting in class names:
-
-JSX
 
 ```
 export function Button({ color, children }) {  const colors = {    black: "bg-black text-white",    blue: "bg-blue-500 text-white",    white: "bg-white text-black",  };  return (    <button className={`${colors[color]} rounded-full px-2 py-1.5 font-sans text-sm/6 font-medium shadow`}>      {children}    </button>  );}
@@ -41,8 +37,6 @@ Since Tailwind scans your source files as plain text, it has no way of understan
 
 Don't construct class names dynamically
 
-HTML
-
 ```
 <div class="text-{{ error ? 'red' : 'green' }}-600"></div>
 ```
@@ -53,8 +47,6 @@ Instead, make sure any class names you’re using exist in full:
 
 Always use complete class names
 
-HTML
-
 ```
 <div class="{{ error ? 'text-red-600' : 'text-green-600' }}"></div>
 ```
@@ -62,8 +54,6 @@ HTML
 If you're using a component library like React or Vue, this means you shouldn't use props to dynamically construct classes:
 
 Don't use props to build class names dynamically
-
-JSX
 
 ```
 function Button({ color, children }) {  return <button className={`bg-${color}-600 hover:bg-${color}-500 ...`}>{children}</button>;}
@@ -73,15 +63,11 @@ Instead, map props to complete class names that are statically detectable at bui
 
 Always map props to static class names
 
-JSX
-
 ```
 function Button({ color, children }) {  const colorVariants = {    blue: "bg-blue-600 hover:bg-blue-500",    red: "bg-red-600 hover:bg-red-500",  };  return <button className={`${colorVariants[color]} ...`}>{children}</button>;}
 ```
 
 This has the added benefit of letting you map different prop values to different color shades for example:
-
-JSX
 
 ```
 function Button({ color, children }) {  const colorVariants = {    blue: "bg-blue-600 hover:bg-blue-500 text-white",    red: "bg-red-500 hover:bg-red-400 text-white",    yellow: "bg-yellow-300 hover:bg-yellow-400 text-black",  };  return <button className={`${colorVariants[color]} ...`}>{children}</button>;}
@@ -93,19 +79,17 @@ As long as you always use complete class names in your code, Tailwind will gener
 
 Tailwind will scan every file in your project for class names, except in the following cases:
 
-*   Files that are in your `.gitignore` file
-*   Files in the `node_modules` directory
-*   Binary files like images, videos, or zip files
-*   CSS files
-*   Common package manager lock files
+-   Files that are in your `.gitignore` file
+-   Files in the `node_modules` directory
+-   Binary files like images, videos, or zip files
+-   CSS files
+-   Common package manager lock files
 
 If you need to scan any files that Tailwind is ignoring by default, you can [explicitly register](#explicitly-registering-sources) those sources.
 
 ## [Explicitly registering sources](#explicitly-registering-sources)
 
 Use `@source` to explicitly register source paths relative to the stylesheet:
-
-CSS
 
 ```
 @import "tailwindcss";@source "../node_modules/@acmecorp/ui-lib";
@@ -119,8 +103,6 @@ Tailwind uses the current working directory as its starting point when scanning 
 
 To set the base path for source detection explicitly, use the `source()` function when importing Tailwind in your CSS:
 
-CSS
-
 ```
 @import "tailwindcss" source("../src");
 ```
@@ -130,8 +112,6 @@ This can be useful when working with monorepos where your build commands run fro
 ### [Ignoring specific paths](#ignoring-specific-paths)
 
 Use `@source not` to ignore specific paths, relative to the stylesheet, when scanning for class names:
-
-CSS
 
 ```
 @import "tailwindcss";@source not "../src/components/legacy";
@@ -143,8 +123,6 @@ This is useful when you have large directories in your project that you know don
 
 Use `source(none)` to completely disable automatic source detection if you want to register all of your sources explicitly:
 
-CSS
-
 ```
 @import "tailwindcss" source(none);@source "../admin";@source "../shared";
 ```
@@ -155,13 +133,9 @@ This can be useful in projects that have multiple Tailwind stylesheets where you
 
 If you need to make sure Tailwind generates certain class names that don’t exist in your content files, use `@source inline()` to force them to be generated:
 
-CSS
-
 ```
 @import "tailwindcss";@source inline("underline");
 ```
-
-Generated CSS
 
 ```
 .underline {  text-decoration-line: underline;}
@@ -171,13 +145,9 @@ Generated CSS
 
 You can also use `@source inline()` to generate classes with variants. For example, to generate the `underline` class with hover and focus variants, add `{hover:,focus:,}` to the source input:
 
-CSS
-
 ```
 @import "tailwindcss";@source inline("{hover:,focus:,}underline");
 ```
-
-Generated CSS
 
 ```
 .underline {  text-decoration-line: underline;}@media (hover: hover) {  .hover\:underline:hover {    text-decoration-line: underline;  }}@media (focus: focus) {  .focus\:underline:focus {    text-decoration-line: underline;  }}
@@ -187,13 +157,9 @@ Generated CSS
 
 The source input is [brace expanded](https://www.gnu.org/software/bash/manual/html_node/Brace-Expansion.html), so you can generate multiple classes at once. For example, to generate all the red background colors with hover variants, use a range:
 
-CSS
-
 ```
 @import "tailwindcss";@source inline("{hover:,}bg-red-{50,{100..900..100},950}");
 ```
-
-Generated CSS
 
 ```
 .bg-red-50 {  background-color: var(--color-red-50);}.bg-red-100 {  background-color: var(--color-red-100);}.bg-red-200 {  background-color: var(--color-red-200);}/* ... */.bg-red-800 {  background-color: var(--color-red-800);}.bg-red-900 {  background-color: var(--color-red-900);}.bg-red-950 {  background-color: var(--color-red-950);}@media (hover: hover) {  .hover\:bg-red-50:hover {    background-color: var(--color-red-50);  }  /* ... */  .hover\:bg-red-950:hover {    background-color: var(--color-red-950);  }}
@@ -204,8 +170,6 @@ This generates red background colors from 100 to 900 in increments of 100, along
 ### [Explicitly excluding classes](#explicitly-excluding-classes)
 
 Use `@source not inline()` to prevent specific classes from being generated, even if they are detected in your source files:
-
-CSS
 
 ```
 @import "tailwindcss";@source not inline("{hover:,focus:,}bg-red-{50,{100..900..100},950}");

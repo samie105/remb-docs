@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/pages/api-reference/file-conventions/ins
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:21:57.452Z"
-content_hash: "61fd0e0936114e48e6a3b8bd6a8f2d72cb226d0689e6cf979c55d33f99dd06d1"
+last_crawled_at: "2026-04-27T18:21:22.034Z"
+content_hash: "9aae9bd47c1c83fb3f6311746f55b823ef9bca2d54918bbe48075023774788b6"
 menu_path: ["instrumentation.js"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/pages/api-reference/file-conventions/index.md", "title": "File-system conventions"}
-nav_next: {"path": "nextjs/docs/pages/api-reference/file-conventions/proxy/index.md", "title": "Proxy"}
+version: "latest"
+content_language: "en"
 ---
+[API Reference](/docs/pages/api-reference)[File-system conventions](/docs/pages/api-reference/file-conventions)instrumentation.js
 
 # instrumentation.js
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 The `instrumentation.js|ts` file is used to integrate observability tools into your application, allowing you to track the performance and behavior, and to debug issues in production.
 
@@ -28,8 +29,6 @@ To use it, place the file in the **root** of your application or inside a [`src`
 The file exports a `register` function that is called **once** when a new Next.js server instance is initiated, and must complete before the server is ready to handle requests. `register` can be an async function.
 
 instrumentation.ts
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -45,12 +44,10 @@ export function register() {
 
 You can optionally export an `onRequestError` function to track **server** errors to any custom observability provider.
 
-*   If you're running any async tasks in `onRequestError`, make sure they're awaited. `onRequestError` will be triggered when the Next.js server captures the error.
-*   The `error` instance might not be the original error instance thrown, as it may be processed by React if encountered during Server Components rendering. If this happens, you can use `digest` property on an error to identify the actual error type.
+-   If you're running any async tasks in `onRequestError`, make sure they're awaited. `onRequestError` will be triggered when the Next.js server captures the error.
+-   The `error` instance might not be the original error instance thrown, as it may be processed by React if encountered during Server Components rendering. If this happens, you can use `digest` property on an error to identify the actual error type.
 
 instrumentation.ts
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -104,9 +101,9 @@ export function onRequestError(
 ): void | Promise<void>
 ```
 
-*   `error`: The caught error itself (type is always `Error`), and a `digest` property which is the unique ID of the error.
-*   `request`: Read-only request information associated with the error.
-*   `context`: The context in which the error occurred. This can be the type of router (App or Pages Router), and/or (Server Components (`'render'`), Route Handlers (`'route'`), Server Actions (`'action'`), or Proxy (`'proxy'`)).
+-   `error`: The caught error itself (type is always `Error`), and a `digest` property which is the unique ID of the error.
+-   `request`: Read-only request information associated with the error.
+-   `context`: The context in which the error occurred. This can be the type of router (App or Pages Router), and/or (Server Components (`'render'`), Route Handlers (`'route'`), Server Actions (`'action'`), or Proxy (`'proxy'`)).
 
 ### Specifying the runtime[](#specifying-the-runtime)
 
@@ -134,24 +131,10 @@ export function onRequestError() {
 
 ## Version History[](#version-history)
 
-Version
-
-Changes
-
-`v15.0.0`
-
-`onRequestError` introduced, `instrumentation` stable
-
-`v14.0.4`
-
-Turbopack support for `instrumentation`
-
-`v13.2.0`
-
-`instrumentation` introduced as an experimental feature
+| Version | Changes |
+| --- | --- |
+| `v15.0.0` | `onRequestError` introduced, `instrumentation` stable |
+| `v14.0.4` | Turbopack support for `instrumentation` |
+| `v13.2.0` | `instrumentation` introduced as an experimental feature |
 
 Was this helpful?
-
-supported.
-
-Send

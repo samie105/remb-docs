@@ -5,14 +5,12 @@ canonical_url: "https://www.postgresql.org/docs/current/textsearch-parsers.html"
 docset: "postgres"
 kind: "database"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:47:48.300Z"
-content_hash: "945503d16ce5824a20f448cb5837b26de8529e9d499fa9a1472fe362156dcf24"
+last_crawled_at: "2026-04-27T20:48:19.554Z"
+content_hash: "9bb86fb1a3291e496e15549a66e5cbc18b3121a38b94a11841e4cc7e2ebc68eb"
 menu_path: ["PostgreSQL: Documentation: 18: 12.5. Parsers"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/textsearch-limitations.html/index.md", "title": "PostgreSQL: Documentation: 18: 12.11.\u00a0Limitations"}
-nav_next: {"path": "postgres/docs/current/textsearch-psql.html/index.md", "title": "PostgreSQL: Documentation: 18: 12.10.\u00a0psql Support"}
+content_language: "en"
 ---
-
 Text search parsers are responsible for splitting raw document text into _tokens_ and identifying each token's type, where the set of possible types is defined by the parser itself. Note that a parser does not modify the text at all — it simply identifies plausible word boundaries. Because of this limited scope, there is less need for application-specific custom parsers than there is for custom dictionaries. At present PostgreSQL provides just one built-in parser, which has been found to be useful for a wide range of applications.
 
 The built-in parser is named `pg_catalog.default`. It recognizes 23 token types, shown in [Table 12.1](https://www.postgresql.org/docs/current/textsearch-parsers.html#TEXTSEARCH-DEFAULT-PARSER "Table 12.1. Default Parser's Token Types").
@@ -20,150 +18,31 @@ The built-in parser is named `pg_catalog.default`. It recognizes 23 token types,
 **Table 12.1. Default Parser's Token Types**
 
   
-
-Alias
-
-Description
-
-Example
-
-`asciiword`
-
-Word, all ASCII letters
-
-`elephant`
-
-`word`
-
-Word, all letters
-
-`mañana`
-
-`numword`
-
-Word, letters and digits
-
-`beta1`
-
-`asciihword`
-
-Hyphenated word, all ASCII
-
-`up-to-date`
-
-`hword`
-
-Hyphenated word, all letters
-
-`lógico-matemática`
-
-`numhword`
-
-Hyphenated word, letters and digits
-
-`postgresql-beta1`
-
-`hword_asciipart`
-
-Hyphenated word part, all ASCII
-
-`postgresql` in the context `postgresql-beta1`
-
-`hword_part`
-
-Hyphenated word part, all letters
-
-`lógico` or `matemática` in the context `lógico-matemática`
-
-`hword_numpart`
-
-Hyphenated word part, letters and digits
-
-`beta1` in the context `postgresql-beta1`
-
-`email`
-
-Email address
-
-`foo@example.com`
-
-`protocol`
-
-Protocol head
-
-`http://`
-
-`url`
-
-URL
-
-`example.com/stuff/index.html`
-
-`host`
-
-Host
-
-`example.com`
-
-`url_path`
-
-URL path
-
-`/stuff/index.html`, in the context of a URL
-
-`file`
-
-File or path name
-
-`/usr/local/foo.txt`, if not within a URL
-
-`sfloat`
-
-Scientific notation
-
-`-1.234e56`
-
-`float`
-
-Decimal notation
-
-`-1.234`
-
-`int`
-
-Signed integer
-
-`-1234`
-
-`uint`
-
-Unsigned integer
-
-`1234`
-
-`version`
-
-Version number
-
-`8.3.0`
-
-`tag`
-
-XML tag
-
-`<a href="dictionaries.html">`
-
-`entity`
-
-XML entity
-
-`&amp;`
-
-`blank`
-
-Space symbols
-
-(any whitespace or punctuation not otherwise recognized)
+| Alias | Description | Example |
+| --- | --- | --- |
+| `asciiword` | Word, all ASCII letters | `elephant` |
+| `word` | Word, all letters | `mañana` |
+| `numword` | Word, letters and digits | `beta1` |
+| `asciihword` | Hyphenated word, all ASCII | `up-to-date` |
+| `hword` | Hyphenated word, all letters | `lógico-matemática` |
+| `numhword` | Hyphenated word, letters and digits | `postgresql-beta1` |
+| `hword_asciipart` | Hyphenated word part, all ASCII | `postgresql` in the context `postgresql-beta1` |
+| `hword_part` | Hyphenated word part, all letters | `lógico` or `matemática` in the context `lógico-matemática` |
+| `hword_numpart` | Hyphenated word part, letters and digits | `beta1` in the context `postgresql-beta1` |
+| `email` | Email address | `foo@example.com` |
+| `protocol` | Protocol head | `http://` |
+| `url` | URL | `example.com/stuff/index.html` |
+| `host` | Host | `example.com` |
+| `url_path` | URL path | `/stuff/index.html`, in the context of a URL |
+| `file` | File or path name | `/usr/local/foo.txt`, if not within a URL |
+| `sfloat` | Scientific notation | `-1.234e56` |
+| `float` | Decimal notation | `-1.234` |
+| `int` | Signed integer | `-1234` |
+| `uint` | Unsigned integer | `1234` |
+| `version` | Version number | `8.3.0` |
+| `tag` | XML tag | `<a href="dictionaries.html">` |
+| `entity` | XML entity | `&amp;` |
+| `blank` | Space symbols | (any whitespace or punctuation not otherwise recognized) |
 
   
 

@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/app/api-reference"
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:05:33.888Z"
-content_hash: "0ce7d6f4e48cf55f46c9d6a785d858853067254e27227ec1efebda943615e408"
+last_crawled_at: "2026-04-27T18:04:26.358Z"
+content_hash: "29dd70329088a62039317a4ff0e38a98224488f8286990cdf4f147c91377b2a8"
 menu_path: ["API Reference"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/guides/view-transitions/index.md", "title": "Designing view transitions"}
-nav_next: {"path": "nextjs/docs/app/api-reference/directives/index.md", "title": "Directives"}
+version: "latest"
+content_language: "en"
 ---
+[Next.js Docs](/docs)[App Router](/docs/app)API Reference
 
 # API Reference
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 [
 
@@ -73,20 +74,4 @@ Turbopack is an incremental bundler optimized for JavaScript and TypeScript, wri
 
 ](/docs/app/api-reference/turbopack)
 
-[Previous
-
-View transitions
-
-](/docs/app/guides/view-transitions)
-
-[Next
-
-Directives
-
-](/docs/app/api-reference/directives)
-
 Was this helpful?
-
-supported.
-
-Send

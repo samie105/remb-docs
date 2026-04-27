@@ -5,10 +5,11 @@ canonical_url: "https://docs.deno.com/api/node/events/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:35:44.049Z"
-content_hash: "71b44a3785af612e4eb8fd3a0708ef51755c3ffd29b7ca3e316459ac7be8397b"
+last_crawled_at: "2026-04-27T17:06:18.147Z"
+content_hash: "8604b042927407c0dcbbc41d6b2cb48d40bf2b94cdc195c5e4a4e78d3d6eb6d0"
 menu_path: ["events - Node documentation"]
 section_path: []
+content_language: "en"
 ---
 ### Usage in Deno
 
@@ -38,20 +39,16 @@ myEmitter.on('event', () => {
 myEmitter.emit('event');
 ```
 
-### Classes [#](#Classes)
-
 c
 
 [EventEmitter.EventEmitterAsyncResource](.././events/~/EventEmitter.EventEmitterAsyncResource "EventEmitter.EventEmitterAsyncResource")
 
 Integrates `EventEmitter` with `AsyncResource` for `EventEmitter`s that require manual async tracking. Specifically, all events emitted by instances of `events.EventEmitterAsyncResource` will run within its `async context`.
 
-*   [asyncId](.././events/~/EventEmitter.EventEmitterAsyncResource#property_asyncid)
-*   [asyncResource](.././events/~/EventEmitter.EventEmitterAsyncResource#property_asyncresource)
-*   [emitDestroy](.././events/~/EventEmitter.EventEmitterAsyncResource#method_emitdestroy_0)
-*   [triggerAsyncId](.././events/~/EventEmitter.EventEmitterAsyncResource#property_triggerasyncid)
-
-### Interfaces [#](#Interfaces)
+-   [asyncId](.././events/~/EventEmitter.EventEmitterAsyncResource#property_asyncid)
+-   [asyncResource](.././events/~/EventEmitter.EventEmitterAsyncResource#property_asyncresource)
+-   [emitDestroy](.././events/~/EventEmitter.EventEmitterAsyncResource#method_emitdestroy_0)
+-   [triggerAsyncId](.././events/~/EventEmitter.EventEmitterAsyncResource#property_triggerasyncid)
 
 c
 
@@ -63,27 +60,27 @@ N
 
 The `EventEmitter` class is defined and exposed by the `node:events` module:
 
-*   [addAbortListener](.././events/~/EventEmitter#method_addabortlistener_0)
-*   [addListener](.././events/~/EventEmitter#method_addlistener_0)
-*   [captureRejectionSymbol](.././events/~/EventEmitter#property_capturerejectionsymbol)
-*   [captureRejections](.././events/~/EventEmitter#property_capturerejections)
-*   [defaultMaxListeners](.././events/~/EventEmitter#property_defaultmaxlisteners)
-*   [emit](.././events/~/EventEmitter#method_emit_0)
-*   [errorMonitor](.././events/~/EventEmitter#property_errormonitor)
-*   [eventNames](.././events/~/EventEmitter#method_eventnames_0)
-*   [getEventListeners](.././events/~/EventEmitter#method_geteventlisteners_0)
-*   [getMaxListeners](.././events/~/EventEmitter#method_getmaxlisteners_0)
-*   [listenerCount](.././events/~/EventEmitter#method_listenercount_0)
-*   [listeners](.././events/~/EventEmitter#method_listeners_0)
-*   [off](.././events/~/EventEmitter#method_off_0)
-*   [on](.././events/~/EventEmitter#method_on_0)
-*   [once](.././events/~/EventEmitter#method_once_0)
-*   [prependListener](.././events/~/EventEmitter#method_prependlistener_0)
-*   [prependOnceListener](.././events/~/EventEmitter#method_prependoncelistener_0)
-*   [rawListeners](.././events/~/EventEmitter#method_rawlisteners_0)
-*   [removeAllListeners](.././events/~/EventEmitter#method_removealllisteners_0)
-*   [removeListener](.././events/~/EventEmitter#method_removelistener_0)
-*   [setMaxListeners](.././events/~/EventEmitter#method_setmaxlisteners_0)
+-   [addAbortListener](.././events/~/EventEmitter#method_addabortlistener_0)
+-   [addListener](.././events/~/EventEmitter#method_addlistener_0)
+-   [captureRejectionSymbol](.././events/~/EventEmitter#property_capturerejectionsymbol)
+-   [captureRejections](.././events/~/EventEmitter#property_capturerejections)
+-   [defaultMaxListeners](.././events/~/EventEmitter#property_defaultmaxlisteners)
+-   [emit](.././events/~/EventEmitter#method_emit_0)
+-   [errorMonitor](.././events/~/EventEmitter#property_errormonitor)
+-   [eventNames](.././events/~/EventEmitter#method_eventnames_0)
+-   [getEventListeners](.././events/~/EventEmitter#method_geteventlisteners_0)
+-   [getMaxListeners](.././events/~/EventEmitter#method_getmaxlisteners_0)
+-   [listenerCount](.././events/~/EventEmitter#method_listenercount_0)
+-   [listeners](.././events/~/EventEmitter#method_listeners_0)
+-   [off](.././events/~/EventEmitter#method_off_0)
+-   [on](.././events/~/EventEmitter#method_on_0)
+-   [once](.././events/~/EventEmitter#method_once_0)
+-   [prependListener](.././events/~/EventEmitter#method_prependlistener_0)
+-   [prependOnceListener](.././events/~/EventEmitter#method_prependoncelistener_0)
+-   [rawListeners](.././events/~/EventEmitter#method_rawlisteners_0)
+-   [removeAllListeners](.././events/~/EventEmitter#method_removealllisteners_0)
+-   [removeListener](.././events/~/EventEmitter#method_removelistener_0)
+-   [setMaxListeners](.././events/~/EventEmitter#method_setmaxlisteners_0)
 
 I
 
@@ -91,7 +88,7 @@ I
 
 No documentation available
 
-*   [signal](.././events/~/EventEmitter.Abortable#property_signal)
+-   [signal](.././events/~/EventEmitter.Abortable#property_signal)
 
 I
 
@@ -99,7 +96,7 @@ I
 
 No documentation available
 
-*   [name](.././events/~/EventEmitter.EventEmitterAsyncResourceOptions#property_name)
+-   [name](.././events/~/EventEmitter.EventEmitterAsyncResourceOptions#property_name)
 
 I
 
@@ -107,7 +104,7 @@ I
 
 No documentation available
 
-*   [eventEmitter](.././events/~/EventEmitter.EventEmitterReferencingAsyncResource#property_eventemitter)
+-   [eventEmitter](.././events/~/EventEmitter.EventEmitterReferencingAsyncResource#property_eventemitter)
 
 I
 
@@ -115,7 +112,7 @@ I
 
 No documentation available
 
-*   [captureRejections](.././events/~/EventEmitterOptions#property_capturerejections)
+-   [captureRejections](.././events/~/EventEmitterOptions#property_capturerejections)
 
 I
 
@@ -123,9 +120,9 @@ I
 
 No documentation available
 
-*   [close](.././events/~/StaticEventEmitterIteratorOptions#property_close)
-*   [highWaterMark](.././events/~/StaticEventEmitterIteratorOptions#property_highwatermark)
-*   [lowWaterMark](.././events/~/StaticEventEmitterIteratorOptions#property_lowwatermark)
+-   [close](.././events/~/StaticEventEmitterIteratorOptions#property_close)
+-   [highWaterMark](.././events/~/StaticEventEmitterIteratorOptions#property_highwatermark)
+-   [lowWaterMark](.././events/~/StaticEventEmitterIteratorOptions#property_lowwatermark)
 
 I
 
@@ -133,9 +130,7 @@ I
 
 No documentation available
 
-*   [signal](.././events/~/StaticEventEmitterOptions#property_signal)
-
-### Type Aliases [#](<#Type Aliases>)
+-   [signal](.././events/~/StaticEventEmitterOptions#property_signal)
 
 T
 

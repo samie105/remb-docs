@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/app/guides/how-revalidation-works"
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:14:47.275Z"
-content_hash: "6468539221986f688c807522e19de8ca9f184a60531cc593dddb3f449b60e85a"
+last_crawled_at: "2026-04-27T18:13:40.165Z"
+content_hash: "1a8511fdfc8a29fd1ae081af13b76bcd66d3ca6dbc60527a3c2af940dca07d38"
 menu_path: ["How revalidation works in Next.js"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/guides/forms/index.md", "title": "How to create forms with Server Actions"}
-nav_next: {"path": "nextjs/docs/app/guides/incremental-static-regeneration/index.md", "title": "How to implement Incremental Static Regeneration (ISR)"}
+version: "latest"
+content_language: "en"
 ---
+[App Router](/docs/app)[Guides](/docs/app/guides)How Revalidation Works
 
 # How revalidation works in Next.js
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 The [Caching](/docs/app/getting-started/caching) page covers how to use `use cache`, `cacheTag`, and `cacheLife`. This page explains **how revalidation works internally**, for platform engineers and advanced users who need to understand the system to implement [custom cache handlers](/docs/app/api-reference/config/next-config-js/cacheHandlers) or debug revalidation behavior.
 
@@ -25,8 +26,8 @@ Most routes in Next.js can be revalidated on demand. This includes App Router ro
 
 There are two types of revalidation:
 
-*   **Time-based revalidation** uses a stale-while-revalidate pattern. The cached content is served immediately, and a background regeneration is triggered when the content's age exceeds the [`cacheLife`](/docs/app/api-reference/functions/cacheLife) or `revalidate` duration. The stale content continues to be served until the fresh content is ready.
-*   **On-demand revalidation** explicitly invalidates cached content by calling [`revalidateTag()`](/docs/app/api-reference/functions/revalidateTag) or [`revalidatePath()`](/docs/app/api-reference/functions/revalidatePath). The next request to that content triggers a fresh render.
+-   **Time-based revalidation** uses a stale-while-revalidate pattern. The cached content is served immediately, and a background regeneration is triggered when the content's age exceeds the [`cacheLife`](/docs/app/api-reference/functions/cacheLife) or `revalidate` duration. The stale content continues to be served until the fresh content is ready.
+-   **On-demand revalidation** explicitly invalidates cached content by calling [`revalidateTag()`](/docs/app/api-reference/functions/revalidateTag) or [`revalidatePath()`](/docs/app/api-reference/functions/revalidatePath). The next request to that content triggers a fresh render.
 
 > **Good to know:** Pages Router on-demand ISR APIs (for example `res.revalidate()` and the `x-prerender-revalidate` flow) are still supported and use the server cache handler (`cacheHandler`, singular). The `cacheHandlers` option (plural) is for `'use cache'` directives.
 
@@ -64,8 +65,8 @@ When running multiple Next.js instances behind a load balancer, revalidation eve
 
 The cache handler API provides two hooks for distributed coordination:
 
-*   **`updateTags()`** is called when `revalidateTag()` is invoked. Your handler should write the invalidation event to shared storage (for example, Redis or a database) so other instances can discover it.
-*   **`refreshTags()`** is called periodically, but always before starting a new request. Your handler should check shared storage for recent invalidation events and update its local tag state accordingly.
+-   **`updateTags()`** is called when `revalidateTag()` is invoked. Your handler should write the invalidation event to shared storage (for example, Redis or a database) so other instances can discover it.
+-   **`refreshTags()`** is called periodically, but always before starting a new request. Your handler should check shared storage for recent invalidation events and update its local tag state accordingly.
 
 For implementation details and a Redis example, see [Custom Cache Handlers](/docs/app/api-reference/config/next-config-js/cacheHandlers).
 
@@ -94,10 +95,10 @@ If a CDN caches Next.js responses, it should respect the `Vary` header and the `
 
 The revalidation system prioritizes availability over strict consistency. Content is always served, even when infrastructure guarantees cannot be fully met:
 
-*   **Cache write failure**: the response is still served to the user because writes are asynchronous. The cache entry is lost, and the next request triggers a fresh render.
-*   **Cache read failure**: your handler should catch internal errors and return `undefined` (the cache miss signal). The route is then server-rendered fresh. The framework does not wrap `get()` in a try/catch, so unhandled exceptions will propagate as render errors.
-*   **HTML/RSC cache inconsistency**: if a CDN caches HTML and RSC responses with different TTLs or invalidation timing, users may see mismatched content during client-side navigation. Cache them together and respect the `Vary` header to avoid this.
-*   **Cross-deployment skew**: during rolling deployments, configure [`deploymentId`](/docs/app/api-reference/config/next-config-js/deploymentId) so that a build ID change triggers a hard navigation to fetch consistent content.
+-   **Cache write failure**: the response is still served to the user because writes are asynchronous. The cache entry is lost, and the next request triggers a fresh render.
+-   **Cache read failure**: your handler should catch internal errors and return `undefined` (the cache miss signal). The route is then server-rendered fresh. The framework does not wrap `get()` in a try/catch, so unhandled exceptions will propagate as render errors.
+-   **HTML/RSC cache inconsistency**: if a CDN caches HTML and RSC responses with different TTLs or invalidation timing, users may see mismatched content during client-side navigation. Cache them together and respect the `Vary` header to avoid this.
+-   **Cross-deployment skew**: during rolling deployments, configure [`deploymentId`](/docs/app/api-reference/config/next-config-js/deploymentId) so that a build ID change triggers a hard navigation to fetch consistent content.
 
 Cache failures result in degraded performance (stale content, extra renders), not broken applications.
 
@@ -129,20 +130,4 @@ API Reference for the revalidateTag function.
 
 ](/docs/app/api-reference/functions/revalidateTag)
 
-[Previous
-
-Forms
-
-](/docs/app/guides/forms)
-
-[Next
-
-ISR
-
-](/docs/app/guides/incremental-static-regeneration)
-
 Was this helpful?
-
-supported.
-
-Send

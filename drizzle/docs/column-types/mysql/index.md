@@ -5,15 +5,13 @@ canonical_url: "https://orm.drizzle.team/docs/column-types/mysql"
 docset: "drizzle"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:35:40.801Z"
-content_hash: "24f0f8c0b169e1101ccaf8e21ec45fc022e9ffc66aa470f2b5b08bbd2be96edf"
+last_crawled_at: "2026-04-27T18:25:44.186Z"
+content_hash: "4fe0a3499668941a3b86da42f699e57f0bf34c876d92f669f86c2d8a9ce791fd"
 menu_path: ["MySQL column types"]
 section_path: []
-nav_prev: {"path": "drizzle/docs/column-types/mssql/index.md", "title": "MSSQL column types"}
-nav_next: {"path": "drizzle/docs/column-types/singlestore/index.md", "title": "SingleStore column types"}
+content_language: "en"
 ---
-
-We have native support for all of them, yet if that’s not enough for you, feel free to create **[custom types](drizzle/docs/custom-types/index.md)**.
+We have native support for all of them, yet if that’s not enough for you, feel free to create **[custom types](https://orm.drizzle.team/docs/custom-types)**.
 
 important
 
@@ -21,13 +19,13 @@ All examples in this part of the documentation do not use database column name a
 
 You can use database aliases in column names if you want, and you can also use the `casing` parameter to define a mapping strategy for Drizzle.
 
-You can read more about it [here](drizzle/docs/sql-schema-declaration/index.md#shape-your-data-schema)
+You can read more about it [here](https://orm.drizzle.team/docs/sql-schema-declaration#shape-your-data-schema)
 
 ### integer[](#integer)
 
 A signed integer, stored in `0`, `1`, `2`, `3`, `4`, `6`, or `8` bytes depending on the magnitude of the value.
 
-```
+```typescript
 import { int, mysqlTable } from "drizzle-orm/mysql-core";
 
 const table = mysqlTable('table', {
@@ -35,7 +33,7 @@ const table = mysqlTable('table', {
 });
 ```
 
-```
+```sql
 CREATE TABLE `table` (
 	`int` int
 );
@@ -43,7 +41,7 @@ CREATE TABLE `table` (
 
 ### tinyint[](#tinyint)
 
-```
+```typescript
 import { tinyint, mysqlTable } from "drizzle-orm/mysql-core";
 
 const table = mysqlTable('table', {
@@ -51,7 +49,7 @@ const table = mysqlTable('table', {
 });
 ```
 
-```
+```sql
 CREATE TABLE `table` (
 	`tinyint` tinyint
 );
@@ -59,7 +57,7 @@ CREATE TABLE `table` (
 
 ### smallint[](#smallint)
 
-```
+```typescript
 import { smallint, mysqlTable } from "drizzle-orm/mysql-core";
 
 const table = mysqlTable('table', {
@@ -67,7 +65,7 @@ const table = mysqlTable('table', {
 });
 ```
 
-```
+```sql
 CREATE TABLE `table` (
 	`smallint` smallint
 );
@@ -75,7 +73,7 @@ CREATE TABLE `table` (
 
 ### mediumint[](#mediumint)
 
-```
+```typescript
 import { mediumint, mysqlTable } from "drizzle-orm/mysql-core";
 
 const table = mysqlTable('table', {
@@ -83,7 +81,7 @@ const table = mysqlTable('table', {
 });
 ```
 
-```
+```sql
 CREATE TABLE `table` (
 	`mediumint` mediumint
 );
@@ -91,7 +89,7 @@ CREATE TABLE `table` (
 
 ### bigint[](#bigint)
 
-```
+```typescript
 import { bigint, mysqlTable } from "drizzle-orm/mysql-core";
 
 const table = mysqlTable('table', {
@@ -105,7 +103,7 @@ bigint('...', { mode: 'number' | 'bigint' });
 bigint('...', { mode: 'number' | 'bigint', unsigned: true })
 ```
 
-```
+```sql
 CREATE TABLE `table` (
 	`bigint` bigint,
 	`bigintUnsigned` bigint unsigned
@@ -116,7 +114,7 @@ We’ve omitted config of `M` in `bigint(M)`, since it indicates the display wid
 
 ### real[](#real)
 
-```
+```typescript
 import { real, mysqlTable } from "drizzle-orm/mysql-core";
 
 const table = mysqlTable('table', {
@@ -124,13 +122,13 @@ const table = mysqlTable('table', {
 });
 ```
 
-```
+```sql
 CREATE TABLE `table` (
 	`real` real
 );
 ```
 
-```
+```typescript
 import { real, mysqlTable } from "drizzle-orm/mysql-core";
 
 const table = mysqlTable('table', {
@@ -139,7 +137,7 @@ const table = mysqlTable('table', {
 });
 ```
 
-```
+```sql
 CREATE TABLE `table` (
 	`realPrecision` real(1),
 	`realPrecisionScale` real(1, 1)
@@ -148,7 +146,7 @@ CREATE TABLE `table` (
 
 ### decimal[](#decimal)
 
-```
+```typescript
 import { decimal, mysqlTable } from "drizzle-orm/mysql-core";
 
 const table = mysqlTable('table', {
@@ -158,7 +156,7 @@ const table = mysqlTable('table', {
 });
 ```
 
-```
+```sql
 CREATE TABLE `table` (
 	`decimal` decimal,
 	`decimalNum` decimal(30),
@@ -166,7 +164,7 @@ CREATE TABLE `table` (
 );
 ```
 
-```
+```typescript
 import { decimal, mysqlTable } from "drizzle-orm/mysql-core";
 
 const table = mysqlTable('table', {
@@ -175,7 +173,7 @@ const table = mysqlTable('table', {
 });
 ```
 
-```
+```sql
 CREATE TABLE `table` (
 	`decimalPrecision` decimal(1),
 	`decimalPrecisionScale` decimal(1, 1)
@@ -184,7 +182,7 @@ CREATE TABLE `table` (
 
 ### double[](#double)
 
-```
+```typescript
 import { double, mysqlTable } from "drizzle-orm/mysql-core";
 
 const table = mysqlTable('table', {
@@ -192,13 +190,13 @@ const table = mysqlTable('table', {
 });
 ```
 
-```
+```sql
 CREATE TABLE `table` (
 	`double` double
 );
 ```
 
-```
+```typescript
 import { double, mysqlTable } from "drizzle-orm/mysql-core";
 
 const table = mysqlTable('table', {
@@ -207,7 +205,7 @@ const table = mysqlTable('table', {
 });
 ```
 
-```
+```sql
 CREATE TABLE `table` (
 	`doublePrecision` double(1),
 	`doublePrecisionScale` double(1, 1)
@@ -216,7 +214,7 @@ CREATE TABLE `table` (
 
 ### float[](#float)
 
-```
+```typescript
 import { float, mysqlTable } from "drizzle-orm/mysql-core";
 
 const table = mysqlTable('table', {
@@ -224,7 +222,7 @@ const table = mysqlTable('table', {
 });
 ```
 
-```
+```sql
 CREATE TABLE `table` (
 	`float` float
 );
@@ -234,7 +232,7 @@ CREATE TABLE `table` (
 
 `SERIAL` is an alias for `BIGINT UNSIGNED NOT NULL AUTO_INCREMENT UNIQUE`.
 
-```
+```typescript
 import { serial, mysqlTable } from "drizzle-orm/mysql-core";
 
 const table = mysqlTable('table', {
@@ -242,7 +240,7 @@ const table = mysqlTable('table', {
 });
 ```
 
-```
+```sql
 CREATE TABLE `table` (
 	`serial` serial AUTO_INCREMENT
 );
@@ -253,7 +251,7 @@ CREATE TABLE `table` (
 `BINARY(M)` stores a fixed-length byte string of exactly M bytes.  
 On insert, shorter values are right-padded with `0x00` bytes to reach M bytes; on retrieval, no padding is stripped. All bytes—including trailing `0x00`—are significant in comparisons, `ORDER BY`, and `DISTINCT`
 
-```
+```typescript
 import { binary, mysqlTable } from "drizzle-orm/mysql-core";
 
 const table = mysqlTable('table', {
@@ -261,7 +259,7 @@ const table = mysqlTable('table', {
 });
 ```
 
-```
+```sql
 CREATE TABLE `table` (
 	`binary` binary
 );
@@ -272,7 +270,7 @@ CREATE TABLE `table` (
 `VARBINARY(M)` stores a variable-length byte string of exactly M bytes.  
 On insert, shorter values are right-padded with `0x00` bytes to reach M bytes; on retrieval, no padding is stripped. All bytes—including trailing `0x00`—are significant in comparisons, `ORDER BY`, and `DISTINCT`
 
-```
+```typescript
 import { varbinary, mysqlTable } from "drizzle-orm/mysql-core";
 
 const table = mysqlTable('table', {
@@ -280,7 +278,7 @@ const table = mysqlTable('table', {
 });
 ```
 
-```
+```sql
 CREATE TABLE `table` (
 	`varbinary` varbinary(2)
 );
@@ -294,7 +292,7 @@ Available starting from `drizzle-orm@1.0.0-beta.2`
 
 A `BLOB` is a binary large object that can hold a variable amount of data.
 
-```
+```typescript
 import { blob, mysqlTable } from "drizzle-orm/mysql-core";
 
 const table = mysqlTable('table', {
@@ -302,7 +300,7 @@ const table = mysqlTable('table', {
 });
 ```
 
-```
+```sql
 CREATE TABLE `table` (
 	`blob` blob
 );
@@ -316,7 +314,7 @@ Available starting from `drizzle-orm@1.0.0-beta.2`
 
 A `TINYBLOB` is a binary large object that can hold a variable amount of data.
 
-```
+```typescript
 import { tinyblob, mysqlTable } from "drizzle-orm/mysql-core";
 
 const table = mysqlTable('table', {
@@ -324,7 +322,7 @@ const table = mysqlTable('table', {
 });
 ```
 
-```
+```sql
 CREATE TABLE `table` (
 	`tinyblob` tinyblob
 );
@@ -338,7 +336,7 @@ Available starting from `drizzle-orm@1.0.0-beta.2`
 
 A `MEDIUMBLOB` is a binary large object that can hold a variable amount of data.
 
-```
+```typescript
 import { mediumblob, mysqlTable } from "drizzle-orm/mysql-core";
 
 const table = mysqlTable('table', {
@@ -346,7 +344,7 @@ const table = mysqlTable('table', {
 });
 ```
 
-```
+```sql
 CREATE TABLE `table` (
 	`mediumblob` mediumblob
 );
@@ -360,7 +358,7 @@ Available starting from `drizzle-orm@1.0.0-beta.2`
 
 A `LONGBLOB` is a binary large object that can hold a variable amount of data.
 
-```
+```typescript
 import { longblob, mysqlTable } from "drizzle-orm/mysql-core";
 
 const table = mysqlTable('table', {
@@ -368,7 +366,7 @@ const table = mysqlTable('table', {
 });
 ```
 
-```
+```sql
 CREATE TABLE `table` (
 	`longblob` longblob
 );
@@ -376,7 +374,7 @@ CREATE TABLE `table` (
 
 ### char[](#char)
 
-```
+```typescript
 import { char, mysqlTable } from "drizzle-orm/mysql-core";
 
 const table = mysqlTable('table', {
@@ -384,7 +382,7 @@ const table = mysqlTable('table', {
 });
 ```
 
-```
+```sql
 CREATE TABLE `table` (
 	`char` char
 );
@@ -394,7 +392,7 @@ CREATE TABLE `table` (
 
 You can define `{ enum: ["value1", "value2"] }` config to infer `insert` and `select` types, it **won’t** check runtime values.
 
-```
+```typescript
 import { varchar, mysqlTable } from "drizzle-orm/mysql-core";
 
 const table = mysqlTable('table', {
@@ -405,7 +403,7 @@ const table = mysqlTable('table', {
 varchar: varchar({ length: 6, enum: ["value1", "value2"] })
 ```
 
-```
+```sql
 CREATE TABLE `table` (
 	`varchar` varchar(2)
 );
@@ -415,7 +413,7 @@ CREATE TABLE `table` (
 
 You can define `{ enum: ["value1", "value2"] }` config to infer `insert` and `select` types, it **won’t** check runtime values.
 
-```
+```typescript
 import { text, mysqlTable } from "drizzle-orm/mysql-core";
 
 const table = mysqlTable('table', {
@@ -426,7 +424,7 @@ const table = mysqlTable('table', {
 text: text({ enum: ["value1", "value2"] });
 ```
 
-```
+```sql
 CREATE TABLE `table` (
 	`text` text
 );
@@ -434,7 +432,7 @@ CREATE TABLE `table` (
 
 ### boolean[](#boolean)
 
-```
+```typescript
 import { boolean, mysqlTable } from "drizzle-orm/mysql-core";
 
 const table = mysqlTable('table', {
@@ -442,7 +440,7 @@ const table = mysqlTable('table', {
 });
 ```
 
-```
+```sql
 CREATE TABLE `table` (
 	`boolean` boolean
 );
@@ -450,7 +448,7 @@ CREATE TABLE `table` (
 
 ### date[](#date)
 
-```
+```typescript
 import { boolean, mysqlTable } from "drizzle-orm/mysql-core";
 
 const table = mysqlTable('table', {
@@ -458,7 +456,7 @@ const table = mysqlTable('table', {
 });
 ```
 
-```
+```sql
 CREATE TABLE `table` (
 	`date` date
 );
@@ -466,7 +464,7 @@ CREATE TABLE `table` (
 
 ### datetime[](#datetime)
 
-```
+```typescript
 import { datetime, mysqlTable } from "drizzle-orm/mysql-core";
 
 const table = mysqlTable('table', {
@@ -477,13 +475,13 @@ datetime('...', { mode: 'date' | "string"}),
 datetime('...', { fsp : 0..6}),
 ```
 
-```
+```sql
 CREATE TABLE `table` (
 	`datetime` datetime
 );
 ```
 
-```
+```typescript
 import { datetime, mysqlTable } from "drizzle-orm/mysql-core";
 
 const table = mysqlTable('table', {
@@ -491,7 +489,7 @@ const table = mysqlTable('table', {
 });
 ```
 
-```
+```sql
 CREATE TABLE `table` (
 	`datetime` datetime(6)
 );
@@ -499,7 +497,7 @@ CREATE TABLE `table` (
 
 ### time[](#time)
 
-```
+```typescript
 import { time, mysqlTable } from "drizzle-orm/mysql-core";
 
 const table = mysqlTable('table', {
@@ -510,7 +508,7 @@ const table = mysqlTable('table', {
 time('...', { fsp: 0..6 }),
 ```
 
-```
+```sql
 CREATE TABLE `table` (
 	`time` time,
 	`timefsp` time(6)
@@ -519,7 +517,7 @@ CREATE TABLE `table` (
 
 ### year[](#year)
 
-```
+```typescript
 import { year, mysqlTable } from "drizzle-orm/mysql-core";
 
 const table = mysqlTable('table', {
@@ -527,7 +525,7 @@ const table = mysqlTable('table', {
 });
 ```
 
-```
+```sql
 CREATE TABLE `table` (
 	`year` year
 );
@@ -535,7 +533,7 @@ CREATE TABLE `table` (
 
 ### timestamp[](#timestamp)
 
-```
+```typescript
 import { timestamp, mysqlTable } from "drizzle-orm/mysql-core";
 
 const table = mysqlTable('table', {
@@ -546,13 +544,13 @@ timestamp('...', { mode: 'date' | "string"}),
 timestamp('...', { fsp : 0..6}),
 ```
 
-```
+```sql
 CREATE TABLE `table` (
 	`timestamp` timestamp
 );
 ```
 
-```
+```typescript
 import { timestamp, mysqlTable } from "drizzle-orm/mysql-core";
 
 const table = mysqlTable('table', {
@@ -560,13 +558,13 @@ const table = mysqlTable('table', {
 });
 ```
 
-```
+```sql
 CREATE TABLE `table` (
 	`timestamp` timestamp(6)
 );
 ```
 
-```
+```typescript
 import { timestamp, mysqlTable } from "drizzle-orm/mysql-core";
 
 const table = mysqlTable('table', {
@@ -574,7 +572,7 @@ const table = mysqlTable('table', {
 });
 ```
 
-```
+```sql
 CREATE TABLE `table` (
 	`timestamp` timestamp DEFAULT (now())
 );
@@ -582,7 +580,7 @@ CREATE TABLE `table` (
 
 ### json[](#json)
 
-```
+```typescript
 import { json, mysqlTable } from "drizzle-orm/mysql-core";
 
 const table = mysqlTable('table', {
@@ -590,7 +588,7 @@ const table = mysqlTable('table', {
 });
 ```
 
-```
+```sql
 CREATE TABLE `table` (
 	`json` json
 );
@@ -598,7 +596,7 @@ CREATE TABLE `table` (
 
 You can specify `.$type<..>()` for json object inference, it **won’t** check runtime values. It provides compile time protection for default values, insert and select schemas.
 
-```
+```typescript
 // will be inferred as { foo: string }
 json: json().$type<{ foo: string }>();
 
@@ -611,7 +609,7 @@ json: json().$type<string[]>().default({});
 
 ### enum[](#enum)
 
-```
+```typescript
 import { mysqlEnum, mysqlTable } from "drizzle-orm/mysql-core";
 
 const table = mysqlTable('table', {
@@ -619,7 +617,7 @@ const table = mysqlTable('table', {
 });
 ```
 
-```
+```sql
 CREATE TABLE `table` (
 	`popularity` enum('unknown','known','popular')
 );
@@ -629,7 +627,7 @@ CREATE TABLE `table` (
 
 Every column builder has a `.$type()` method, which allows you to customize the data type of the column. This is useful, for example, with unknown or branded types.
 
-```
+```ts
 type UserId = number & { __brand: 'user_id' };
 type Data = {
 	foo: string;
@@ -646,7 +644,7 @@ const users = mysqlTable('users', {
 
 `NOT NULL` constraint dictates that the associated column may not contain a `NULL` value.
 
-```
+```typescript
 import { int, mysqlTable } from "drizzle-orm/mysql-core";
 
 const table = mysqlTable('table', {
@@ -654,7 +652,7 @@ const table = mysqlTable('table', {
 });
 ```
 
-```
+```sql
 CREATE TABLE `table` (
 	`int` int NOT NULL
 );
@@ -666,7 +664,7 @@ The `DEFAULT` clause specifies a default value to use for the column if no value
 
 An explicit `DEFAULT` clause may specify that the default value is `NULL`, a string constant, a blob constant, a signed-number, or any constant expression enclosed in parentheses.
 
-```
+```typescript
 import { int, mysqlTable } from "drizzle-orm/mysql-core";
 
 const table = mysqlTable('table', {
@@ -674,7 +672,7 @@ const table = mysqlTable('table', {
 });
 ```
 
-```
+```sql
 CREATE TABLE `table` (
 	`int` int DEFAULT 3
 );
@@ -684,7 +682,7 @@ When using `$default()` or `$defaultFn()`, which are simply different aliases fo
 
 Note: This value does not affect the `drizzle-kit` behavior, it is only used at runtime in `drizzle-orm`
 
-```
+```ts
 import { varchar, mysqlTable } from "drizzle-orm/mysql-core";
 import { createId } from '@paralleldrive/cuid2';
 
@@ -699,7 +697,7 @@ Adds a dynamic update value to the column. The function will be called when the 
 
 Note: This value does not affect the `drizzle-kit` behavior, it is only used at runtime in `drizzle-orm`
 
-```
+```ts
 import { text, mysqlTable } from "drizzle-orm/mysql-core";
 
 const table = mysqlTable('table', {
@@ -709,7 +707,7 @@ const table = mysqlTable('table', {
 
 ### Primary key[](#primary-key)
 
-```
+```typescript
 import { int, mysqlTable } from "drizzle-orm/mysql-core";
 
 const table = mysqlTable('table', {
@@ -717,7 +715,7 @@ const table = mysqlTable('table', {
 });
 ```
 
-```
+```sql
 CREATE TABLE `table` (
 	`int` int PRIMARY KEY NOT NULL
 );
@@ -725,7 +723,7 @@ CREATE TABLE `table` (
 
 ### Auto increment[](#auto-increment)
 
-```
+```typescript
 import { int, mysqlTable } from "drizzle-orm/mysql-core";
 
 const table = mysqlTable('table', {
@@ -733,7 +731,7 @@ const table = mysqlTable('table', {
 });
 ```
 
-```
+```sql
 CREATE TABLE `table` (
 	`int` int AUTO_INCREMENT
 );

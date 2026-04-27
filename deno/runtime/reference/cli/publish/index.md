@@ -5,18 +5,19 @@ canonical_url: "https://docs.deno.com/runtime/reference/cli/publish/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:54:55.802Z"
-content_hash: "c452f940aa6d50a388d801d4cd76c182db72eb16857eb36d16d2fae978154184"
+last_crawled_at: "2026-04-27T17:31:41.111Z"
+content_hash: "a388bd310a8b7531872b61d4a13d7e995e7c89068beb8d197969392f9c97881a"
 menu_path: ["deno publish"]
 section_path: []
+content_language: "en"
 ---
-On this page
+**On this page**
 
-*   [Package Requirements](#package-requirements)
-*   [Examples](#examples)
-*   [Publishing options](#publishing-options)
-*   [Options](#options)
-*   [Type checking options](#type-checking-options)
+-   [Package Requirements](#package-requirements)
+-   [Examples](#examples)
+-   [Publishing options](#publishing-options)
+-   [Options](#options)
+-   [Type checking options](#type-checking-options)
 
 `deno publish` publishes your package to the [JSR](https://jsr.io/) registry.
 
@@ -24,9 +25,9 @@ On this page
 
 Your package must have a `name` and `version` and an `exports` field in its [`deno.json`](/runtime/fundamentals/configuration/) or `jsr.json` file.
 
-*   The `name` field must be unique and follow the `@<scope_name>/<package_name>` convention.
-*   The `version` field must be a valid semver version.
-*   The `exports` field must point to the main entry point of the package. The exports field can either be specified as a single string, or as an object mapping entrypoint names to paths in your package.
+-   The `name` field must be unique and follow the `@<scope_name>/<package_name>` convention.
+-   The `version` field must be a valid semver version.
+-   The `exports` field must point to the main entry point of the package. The exports field can either be specified as a single string, or as an object mapping entrypoint names to paths in your package.
 
 Example:
 

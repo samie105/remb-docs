@@ -5,14 +5,12 @@ canonical_url: "https://orm.drizzle.team/docs/read-replicas"
 docset: "drizzle"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:18:35.991Z"
-content_hash: "4ccd6891ac6f0aac5a01449fd82e44b6b25b13f2f20442f3fad7983d15e6753e"
+last_crawled_at: "2026-04-27T19:20:31.446Z"
+content_hash: "a115c3122453c385c07204114d3ac5e6720d682d1abdf730408142a81c48937f"
 menu_path: ["Read Replicas"]
 section_path: []
-nav_prev: {"path": "drizzle/docs/dynamic-query-building/index.md", "title": "Dynamic query building"}
-nav_next: {"path": "drizzle/docs/custom-types/index.md", "title": "Common way of defining custom types"}
+content_language: "en"
 ---
-
 When your project involves a set of read replica instances, and you require a convenient method for managing SELECT queries from read replicas, as well as performing create, delete, and update operations on the primary instance, you can leverage the `withReplicas()` function within Drizzle
 
 PostgreSQL
@@ -27,7 +25,7 @@ MSSQL
 
 CockroachDB
 
-```
+```ts
 import { sql } from 'drizzle-orm';
 import { drizzle } from 'drizzle-orm/node-postgres';
 import { boolean, jsonb, pgTable, serial, text, timestamp, withReplicas } from 'drizzle-orm/pg-core';
@@ -47,7 +45,7 @@ const read2 = drizzle("postgres://user:password@host:port/read_replica_2");
 const db = withReplicas(primaryDb, [read1, read2]);
 ```
 
-```
+```ts
 import { drizzle } from "drizzle-orm/mysql2";
 import mysql from "mysql2/promise";
 import { boolean, mysqlTable, serial, text, withReplicas } from 'drizzle-orm/mysql-core';
@@ -82,7 +80,7 @@ const read2 = drizzle({ client: read2Client });
 const db = withReplicas(primaryDb, [read1, read2]);
 ```
 
-```
+```ts
 import { sql } from 'drizzle-orm';
 import { sqliteTable, int, text, withReplicas } from 'drizzle-orm/sqlite-core';
 import { createClient } from '@libsql/client';
@@ -100,7 +98,7 @@ const read2 = drizzle({ client: createClient({ url: 'DATABASE_URL', authToken: '
 const db = withReplicas(primaryDb, [read1, read2]);
 ```
 
-```
+```ts
 import { drizzle } from "drizzle-orm/singlestore";
 import mysql from "mysql2/promise";
 import { boolean, singlestoreTable, serial, text, withReplicas } from 'drizzle-orm/singlestore-core';
@@ -135,7 +133,7 @@ const read2 = drizzle({ client: read2Client });
 const db = withReplicas(primaryDb, [read1, read2]);
 ```
 
-```
+```ts
 import { sql } from 'drizzle-orm';
 import { drizzle } from 'drizzle-orm/mssql-postgres';
 import { boolean, mssqlTable, int, text, timestamp, withReplicas } from 'drizzle-orm/mssql-core';
@@ -154,7 +152,7 @@ const read2 = drizzle("postgres://user:password@host:port/read_replica_2");
 const db = withReplicas(primaryDb, [read1, read2]);
 ```
 
-```
+```ts
 import { sql } from 'drizzle-orm';
 import { drizzle } from 'drizzle-orm/cockroach';
 import { boolean, jsonb, cockroachTable, int4, text, timestamp, withReplicas } from 'drizzle-orm/cockroach-core';
@@ -176,7 +174,7 @@ const db = withReplicas(primaryDb, [read1, read2]);
 
 You can now use the `db` instance the same way you did before. Drizzle will handle the choice between read replica and the primary instance automatically
 
-```
+```ts
 // Read from either the read1 connection or the read2 connection
 await db.select().from(usersTable)
 
@@ -186,7 +184,7 @@ await db.delete(usersTable).where(eq(usersTable.id, 1))
 
 You can use the `$primary` key to force using primary instances even for read operations
 
-```
+```ts
 // read from primary
 await db.$primary.select().from(usersTable);
 ```
@@ -195,7 +193,7 @@ With Drizzle, you can also specify custom logic for choosing read replicas. You 
 
 Keep in mind that you can implement any type of random selection method for read replicas
 
-```
+```ts
 const db = withReplicas(primaryDb, [read1, read2], (replicas) => {
     const weight = [0.7, 0.3];
     let cumulativeProbability = 0;

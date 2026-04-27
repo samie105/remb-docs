@@ -5,25 +5,27 @@ canonical_url: "https://nextjs.org/docs/app/guides/progressive-web-apps"
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:15:59.743Z"
-content_hash: "6c7a8ae0f3817313e76b4bbe17de5a2fe381a9bfcfcb58e08deed11c93d02499"
+last_crawled_at: "2026-04-27T18:15:15.680Z"
+content_hash: "a30cebdfa63507f0850e9a7144911abbec02a8fdbcc0bc9b48b26354423a4fbf"
 menu_path: ["How to build a Progressive Web Application (PWA) with Next.js"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/guides/production-checklist/index.md", "title": "How to optimize your Next.js application for production"}
-nav_next: {"path": "nextjs/docs/app/guides/public-static-pages/index.md", "title": "Building public pages"}
+version: "latest"
+tab_variants: ["pnpm","npm","yarn","bun"]
+content_language: "en"
 ---
+[App Router](/docs/app)[Guides](/docs/app/guides)PWAs
 
 # How to build a Progressive Web Application (PWA) with Next.js
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 Progressive Web Applications (PWAs) offer the reach and accessibility of web applications combined with the features and user experience of native mobile apps. With Next.js, you can create PWAs that provide a seamless, app-like experience across all platforms without the need for multiple codebases or app store approvals.
 
 PWAs allow you to:
 
-*   Deploy updates instantly without waiting for app store approval
-*   Create cross-platform applications with a single codebase
-*   Provide native-like features such as home screen installation and push notifications
+-   Deploy updates instantly without waiting for app store approval
+-   Create cross-platform applications with a single codebase
+-   Provide native-like features such as home screen installation and push notifications
 
 ## Creating a PWA with Next.js[](#creating-a-pwa-with-nextjs)
 
@@ -34,8 +36,6 @@ Next.js provides built-in support for creating a [web app manifest](/docs/app/ap
 For example, create a `app/manifest.ts` or `app/manifest.json` file:
 
 app/manifest.ts
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -75,10 +75,10 @@ You can use tools like [favicon generators](https://realfavicongenerator.net/) t
 
 Web Push Notifications are supported with all modern browsers, including:
 
-*   iOS 16.4+ for applications installed to the home screen
-*   Safari 16 for macOS 13 or later
-*   Chromium based browsers
-*   Firefox
+-   iOS 16.4+ for applications installed to the home screen
+-   Safari 16 for macOS 13 or later
+-   Chromium based browsers
+-   Firefox
 
 This makes PWAs a viable alternative to native apps. Notably, you can trigger install prompts without needing offline support.
 
@@ -248,8 +248,6 @@ Create a new file to contain your actions at `app/actions.ts`. This file will ha
 
 app/actions.ts
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -311,7 +309,21 @@ To use the Web Push API, you need to generate [VAPID](https://vapidkeys.com/) ke
 
 First, install web-push globally:
 
-pnpmnpmyarnbun
+#### pnpm
+
+pnpm
+
+#### npm
+
+npm
+
+#### yarn
+
+yarn
+
+#### bun
+
+bun
 
 Terminal
 
@@ -367,9 +379,9 @@ self.addEventListener('notificationclick', function (event) {
 
 This service worker supports custom images and notifications. It handles incoming push events and notification clicks.
 
-*   You can set custom icons for notifications using the `icon` and `badge` properties.
-*   The `vibrate` pattern can be adjusted to create custom vibration alerts on supported devices.
-*   Additional data can be attached to the notification using the `data` property.
+-   You can set custom icons for notifications using the `icon` and `badge` properties.
+-   The `vibrate` pattern can be adjusted to create custom vibration alerts on supported devices.
+-   Additional data can be attached to the notification using the `data` property.
 
 Remember to test your service worker thoroughly to ensure it behaves as expected across different devices and browsers. Also, make sure to update the `'https://your-website.com'` link in the `notificationclick` event listener to the appropriate URL for your application.
 
@@ -388,12 +400,12 @@ Modern browsers will automatically show an installation prompt to users when the
 
 To ensure you can view notifications locally, ensure that:
 
-*   You are [running locally with HTTPS](/docs/app/api-reference/cli/next#using-https-during-development)
-    *   Use `next dev --experimental-https` for testing
-*   Your browser (Chrome, Safari, Firefox) has notifications enabled
-    *   When prompted locally, accept permissions to use notifications
-    *   Ensure notifications are not disabled globally for the entire browser
-    *   If you are still not seeing notifications, try using another browser to debug
+-   You are [running locally with HTTPS](/docs/app/api-reference/cli/next#using-https-during-development)
+    -   Use `next dev --experimental-https` for testing
+-   Your browser (Chrome, Safari, Firefox) has notifications enabled
+    -   When prompted locally, accept permissions to use notifications
+    -   Ensure notifications are not disabled globally for the entire browser
+    -   If you are still not seeing notifications, try using another browser to debug
 
 ### 8\. Securing your application[](#8-securing-your-application)
 
@@ -473,20 +485,4 @@ API Reference for manifest.json file.
 
 ](/docs/app/api-reference/file-conventions/metadata/manifest)
 
-[Previous
-
-Production
-
-](/docs/app/guides/production-checklist)
-
-[Next
-
-Public pages
-
-](/docs/app/guides/public-static-pages)
-
 Was this helpful?
-
-supported.
-
-Send

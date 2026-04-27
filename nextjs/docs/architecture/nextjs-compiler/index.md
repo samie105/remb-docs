@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/architecture/nextjs-compiler"
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:17:20.832Z"
-content_hash: "ee07f8df6d9e0ca081303667021515e7922479dbb8079006eda410727ad99bfe"
+last_crawled_at: "2026-04-27T18:16:50.418Z"
+content_hash: "5ded284cfa5c1fa20b9f850dd97af6a8c058f48de858b6e7b3a3888a0e13d6cb"
 menu_path: ["Next.js Compiler"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/architecture/fast-refresh/index.md", "title": "Fast Refresh"}
-nav_next: {"path": "nextjs/docs/architecture/supported-browsers/index.md", "title": "Supported Browsers"}
+version: "latest"
+content_language: "en"
 ---
+[Next.js Docs](/docs)[Architecture](/docs/architecture)Next.js Compiler
 
 # Next.js Compiler
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 The Next.js Compiler, written in Rust using [SWC](https://swc.rs/), allows Next.js to transform and minify your JavaScript code for production. This replaces Babel for individual files and Terser for minifying output bundles.
 
@@ -29,10 +30,10 @@ SWC can be used for compilation, minification, bundling, and more – and is des
 
 We chose to build on SWC for a few reasons:
 
-*   **Extensibility:** SWC can be used as a Crate inside Next.js, without having to fork the library or workaround design constraints.
-*   **Performance:** We were able to achieve ~3x faster Fast Refresh and ~5x faster builds in Next.js by switching to SWC, with more room for optimization still in progress.
-*   **WebAssembly:** Rust's support for WASM is essential for supporting all possible platforms and taking Next.js development everywhere.
-*   **Community:** The Rust community and ecosystem are amazing and still growing.
+-   **Extensibility:** SWC can be used as a Crate inside Next.js, without having to fork the library or workaround design constraints.
+-   **Performance:** We were able to achieve ~3x faster Fast Refresh and ~5x faster builds in Next.js by switching to SWC, with more room for optimization still in progress.
+-   **WebAssembly:** Rust's support for WASM is essential for supporting all possible platforms and taking Next.js development everywhere.
+-   **Community:** The Rust community and ecosystem are amazing and still growing.
 
 ## Supported Features[](#supported-features)
 
@@ -93,12 +94,12 @@ module.exports = {
 
 The Next.js Compiler transpiles your tests and simplifies configuring Jest together with Next.js including:
 
-*   Auto mocking of `.css`, `.module.css` (and their `.scss` variants), and image imports
-*   Automatically sets up `transform` using SWC
-*   Loading `.env` (and all variants) into `process.env`
-*   Ignores `node_modules` from test resolving and transforms
-*   Ignoring `.next` from test resolving
-*   Loads `next.config.js` for flags that enable experimental SWC transforms
+-   Auto mocking of `.css`, `.module.css` (and their `.scss` variants), and image imports
+-   Automatically sets up `transform` using SWC
+-   Loading `.env` (and all variants) into `process.env`
+-   Ignores `node_modules` from test resolving and transforms
+-   Ignoring `.next` from test resolving
+-   Loads `next.config.js` for flags that enable experimental SWC transforms
 
 First, update to the latest version of Next.js: `npm install next@latest`. Then, update your `jest.config.js` file:
 
@@ -338,8 +339,8 @@ module.exports = {
 
 The hook receives an object with the following properties:
 
-*   `distDir`: The build output directory (defaults to `.next`)
-*   `projectDir`: The root directory of the project
+-   `distDir`: The build output directory (defaults to `.next`)
+-   `projectDir`: The root directory of the project
 
 ## Experimental Features[](#experimental-features)
 
@@ -390,48 +391,13 @@ If you're using a custom Babel setup, [please share your configuration](https://
 
 ## Version History[](#version-history)
 
-Version
-
-Changes
-
-`v13.1.0`
-
-[Module Transpilation](https://nextjs.org/blog/next-13-1#built-in-module-transpilation-stable) and [Modularize Imports](https://nextjs.org/blog/next-13-1#import-resolution-for-smaller-bundles) stable.
-
-`v13.0.0`
-
-SWC Minifier enabled by default.
-
-`v12.3.0`
-
-SWC Minifier [stable](https://nextjs.org/blog/next-12-3#swc-minifier-stable).
-
-`v12.2.0`
-
-[SWC Plugins](#swc-plugins-experimental) experimental support added.
-
-`v12.1.0`
-
-Added support for Styled Components, Jest, Relay, Remove React Properties, Legacy Decorators, Remove Console, and jsxImportSource.
-
-`v12.0.0`
-
-Next.js Compiler [introduced](https://nextjs.org/blog/next-12).
-
-[Previous
-
-Fast Refresh
-
-](/docs/architecture/fast-refresh)
-
-[Next
-
-Supported Browsers
-
-](/docs/architecture/supported-browsers)
+| Version | Changes |
+| --- | --- |
+| `v13.1.0` | [Module Transpilation](https://nextjs.org/blog/next-13-1#built-in-module-transpilation-stable) and [Modularize Imports](https://nextjs.org/blog/next-13-1#import-resolution-for-smaller-bundles) stable. |
+| `v13.0.0` | SWC Minifier enabled by default. |
+| `v12.3.0` | SWC Minifier [stable](https://nextjs.org/blog/next-12-3#swc-minifier-stable). |
+| `v12.2.0` | [SWC Plugins](#swc-plugins-experimental) experimental support added. |
+| `v12.1.0` | Added support for Styled Components, Jest, Relay, Remove React Properties, Legacy Decorators, Remove Console, and jsxImportSource. |
+| `v12.0.0` | Next.js Compiler [introduced](https://nextjs.org/blog/next-12). |
 
 Was this helpful?
-
-supported.
-
-Send

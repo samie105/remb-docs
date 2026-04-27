@@ -5,14 +5,12 @@ canonical_url: "https://www.postgresql.org/docs/current/plpgsql-control-structur
 docset: "postgres"
 kind: "database"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:48:47.381Z"
-content_hash: "4cc167416d80183e2660446189e4b40abf17aec04e49f18b8a49637282371784"
+last_crawled_at: "2026-04-27T20:48:53.934Z"
+content_hash: "c8204f0e880e007447a5b9b56489be4b2d1f97096406ae3c6b8ef37ae6397d6a"
 menu_path: ["PostgreSQL: Documentation: 18: 41.6. Control Structures"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/plperl-under-the-hood.html/index.md", "title": "PostgreSQL: Documentation: 18: 43.8.\u00a0PL/Perl Under the Hood"}
-nav_next: {"path": "postgres/docs/current/plpgsql-cursors.html/index.md", "title": "PostgreSQL: Documentation: 18: 41.7.\u00a0Cursors"}
+content_language: "en"
 ---
-
 Control structures are probably the most useful (and important) part of PL/pgSQL. With PL/pgSQL's control structures, you can manipulate PostgreSQL data in a very flexible and powerful way.
 
 ### 41.6.1. Returning from a Function [#](#PLPGSQL-STATEMENTS-RETURNING)
@@ -108,7 +106,7 @@ SELECT \* FROM get\_available\_flightid(CURRENT\_DATE);
 
 ### Note
 
-The current implementation of `RETURN NEXT` and `RETURN QUERY` stores the entire result set before returning from the function, as discussed above. That means that if a PL/pgSQL function produces a very large result set, performance might be poor: data will be written to disk to avoid memory exhaustion, but the function itself will not return until the entire result set has been generated. A future version of PL/pgSQL might allow users to define set-returning functions that do not have this limitation. Currently, the point at which data begins being written to disk is controlled by the [work\_mem](postgres/docs/current/runtime-config-resource.html/index.md#GUC-WORK-MEM) configuration variable. Administrators who have sufficient memory to store larger result sets in memory should consider increasing this parameter.
+The current implementation of `RETURN NEXT` and `RETURN QUERY` stores the entire result set before returning from the function, as discussed above. That means that if a PL/pgSQL function produces a very large result set, performance might be poor: data will be written to disk to avoid memory exhaustion, but the function itself will not return until the entire result set has been generated. A future version of PL/pgSQL might allow users to define set-returning functions that do not have this limitation. Currently, the point at which data begins being written to disk is controlled by the [work\_mem](https://www.postgresql.org/docs/current/runtime-config-resource.html#GUC-WORK-MEM) configuration variable. Administrators who have sufficient memory to store larger result sets in memory should consider increasing this parameter.
 
 ### 41.6.2. Returning from a Procedure [#](#PLPGSQL-STATEMENTS-RETURNING-PROCEDURE)
 
@@ -142,18 +140,18 @@ The variable corresponding to an output parameter can be a simple variable or a 
 
 `IF` and `CASE` statements let you execute alternative commands based on certain conditions. PL/pgSQL has three forms of `IF`:
 
-*   `IF ... THEN ... END IF`
+-   `IF ... THEN ... END IF`
     
-*   `IF ... THEN ... ELSE ... END IF`
+-   `IF ... THEN ... ELSE ... END IF`
     
-*   `IF ... THEN ... ELSIF ... THEN ... ELSE ... END IF`
+-   `IF ... THEN ... ELSIF ... THEN ... ELSE ... END IF`
     
 
 and two forms of `CASE`:
 
-*   `CASE ... WHEN ... THEN ... ELSE ... END CASE`
+-   `CASE ... WHEN ... THEN ... ELSE ... END CASE`
     
-*   `CASE WHEN ... THEN ... ELSE ... END CASE`
+-   `CASE WHEN ... THEN ... ELSE ... END CASE`
     
 
 #### 41.6.4.1. `IF-THEN` [#](#PLPGSQL-CONDITIONALS-IF-THEN)
@@ -601,72 +599,18 @@ Each _`item`_ is a key word identifying a status value to be assigned to the spe
 **Table 41.2. Error Diagnostics Items**
 
   
-
-Name
-
-Type
-
-Description
-
-`RETURNED_SQLSTATE`
-
-`text`
-
-the SQLSTATE error code of the exception
-
-`COLUMN_NAME`
-
-`text`
-
-the name of the column related to exception
-
-`CONSTRAINT_NAME`
-
-`text`
-
-the name of the constraint related to exception
-
-`PG_DATATYPE_NAME`
-
-`text`
-
-the name of the data type related to exception
-
-`MESSAGE_TEXT`
-
-`text`
-
-the text of the exception's primary message
-
-`TABLE_NAME`
-
-`text`
-
-the name of the table related to exception
-
-`SCHEMA_NAME`
-
-`text`
-
-the name of the schema related to exception
-
-`PG_EXCEPTION_DETAIL`
-
-`text`
-
-the text of the exception's detail message, if any
-
-`PG_EXCEPTION_HINT`
-
-`text`
-
-the text of the exception's hint message, if any
-
-`PG_EXCEPTION_CONTEXT`
-
-`text`
-
-line(s) of text describing the call stack at the time of the exception (see [Section 41.6.9](https://www.postgresql.org/docs/current/plpgsql-control-structures.html#PLPGSQL-CALL-STACK "41.6.9. Obtaining Execution Location Information"))
+| Name | Type | Description |
+| --- | --- | --- |
+| `RETURNED_SQLSTATE` | `text` | the SQLSTATE error code of the exception |
+| `COLUMN_NAME` | `text` | the name of the column related to exception |
+| `CONSTRAINT_NAME` | `text` | the name of the constraint related to exception |
+| `PG_DATATYPE_NAME` | `text` | the name of the data type related to exception |
+| `MESSAGE_TEXT` | `text` | the text of the exception's primary message |
+| `TABLE_NAME` | `text` | the name of the table related to exception |
+| `SCHEMA_NAME` | `text` | the name of the schema related to exception |
+| `PG_EXCEPTION_DETAIL` | `text` | the text of the exception's detail message, if any |
+| `PG_EXCEPTION_HINT` | `text` | the text of the exception's hint message, if any |
+| `PG_EXCEPTION_CONTEXT` | `text` | line(s) of text describing the call stack at the time of the exception (see [Section 41.6.9](https://www.postgresql.org/docs/current/plpgsql-control-structures.html#PLPGSQL-CALL-STACK "41.6.9. Obtaining Execution Location Information")) |
 
 If the exception did not set a value for an item, an empty string will be returned.
 

@@ -5,13 +5,53 @@ canonical_url: "https://orm.drizzle.team/docs/connect-cloudflare-do"
 docset: "drizzle"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:38:47.577Z"
-content_hash: "d0997f41ea88a3db536dd6a78c334609b582a33cf8ec67a8da7f9a7675e208f1"
+last_crawled_at: "2026-04-27T18:28:00.970Z"
+content_hash: "6fc50c7493c7a6c97c9d4930aa05efc66f8609c5c7d171dbbca7532867c115c7"
 menu_path: ["Drizzle <> Cloudflare Durable Objects SQLite"]
 section_path: []
-nav_prev: {"path": "drizzle/docs/connect-node-sqlite/index.md", "title": "Drizzle <> Node SQLite"}
-nav_next: {"path": "drizzle/docs/connect-expo-sqlite/index.md", "title": "Drizzle <> Expo SQLite"}
+content_language: "en"
 ---
+This guide assumes familiarity with:
+
+-   Database [connection basics](https://orm.drizzle.team/docs/connect-overview) with Drizzle
+-   **Cloudflare SQLite Durable Objects** - SQLite database embedded within a Durable Object - [read here](https://developers.cloudflare.com/durable-objects/best-practices/access-durable-objects-storage/#sqlite-storage-backend)
+
+Drizzle ORM fully supports the Cloudflare Durable Objects database and Cloudflare Workers environment. We embrace SQL dialects and dialect specific drivers and syntax and mirror most popular SQLite-like `all`, `get`, `values` and `run` query methods syntax.
+
+To setup project for your Cloudflare Durable Objects please refer to **[official docs.](https://developers.cloudflare.com/durable-objects)**
+
+#### Step 1 - Install packages[](#step-1---install-packages)
+
+```
+npm i drizzle-orm
+npm i -D drizzle-kit
+```
+
+```
+yarn add drizzle-orm
+yarn add -D drizzle-kit
+```
+
+```
+pnpm add drizzle-orm
+pnpm add -D drizzle-kit
+```
+
+```
+bun add drizzle-orm
+bun add -D drizzle-kit
+```
+
+#### Step 2 - Initialize the driver and make a query[](#step-2---initialize-the-driver-and-make-a-query)
+
+You would need to have a `wrangler.toml` file for Durable Objects database and will look something like this:
+
+```toml
+#:schema node_modules/wrangler/config-schema.json
+name = "sqlite-durable-objects"
+main = "src/index.ts"
+compatibility_date = "2024-11-12"
+compatibility_flags = [ "nodejs_compat" ]
 
 # Bind a Durable Object. Durable objects are a scale-to-zero compute primitive based on the actor model.
 # Durable Objects can live for as long as needed. Use these when you need a long-running "server", such as in realtime apps.
@@ -35,7 +75,7 @@ fallthrough = true
 
 Make your first Durable Objects SQLite query:
 
-```
+```typescript
 /// <reference types="@cloudflare/workers-types" />
 import { drizzle, DrizzleSqliteDODatabase } from 'drizzle-orm/durable-sqlite';
 import { DurableObject } from 'cloudflare:workers'

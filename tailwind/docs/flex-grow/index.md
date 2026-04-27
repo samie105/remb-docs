@@ -5,41 +5,46 @@ canonical_url: "https://tailwindcss.com/docs/flex-grow"
 docset: "tailwind"
 kind: "framework"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:46:29.432Z"
-content_hash: "f4b4af9dd64f845eef18259a23ddd5aebfa67d54147b73449bc54850d167c0a2"
+last_crawled_at: "2026-04-27T19:57:13.327Z"
+content_hash: "909812deed33508e67a05b9da5e1bef6c3cdac5a99b411bde6b134ecef68ade1"
 menu_path: ["flex-grow"]
 section_path: []
-nav_prev: {"path": "tailwind/docs/flex/index.md", "title": "flex"}
-nav_next: {"path": "tailwind/docs/flex-shrink/index.md", "title": "flex-shrink"}
+content_language: "en"
 ---
+[](/)
+
+[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
+
+1.  Flexbox & Grid
+2.  flex-grow
+
+Flexbox & Grid
 
 # flex-grow
 
 Utilities for controlling how flex items grow.
 
-Class
-
-Styles
-
-`grow`
-
+| Class | Styles |
+| --- | --- |
+| `grow` | 
 `flex-grow: 1;`
 
-`grow-<number>`
+ |
+| `grow-<number>` | 
 
 `flex-grow: <number>;`
 
-`grow-[<value>]`
+ |
+| `grow-[<value>]` | 
 
 `flex-grow: <value>;`
 
-`grow-(<custom-property>)`
+ |
+| `grow-(<custom-property>)` | 
 
 `flex-grow: var(<custom-property>);`
 
-## [Examples](#examples)
-
-### [Allowing items to grow](#allowing-items-to-grow)
+ |
 
 Use `grow` to allow a flex item to grow to fill any available space:
 
@@ -53,8 +58,6 @@ Use `grow` to allow a flex item to grow to fill any available space:
 <div class="flex ...">  <div class="size-14 flex-none ...">01</div>  <div class="size-14 grow ...">02</div>  <div class="size-14 flex-none ...">03</div></div>
 ```
 
-### [Growing items based on factor](#growing-items-based-on-factor)
-
 Use `grow-<number>` utilities like `grow-3` to make flex items grow proportionally based on their growth factor, allowing them to fill the available space relative to each other:
 
 01
@@ -67,8 +70,6 @@ Use `grow-<number>` utilities like `grow-3` to make flex items grow proportional
 <div class="flex ...">  <div class="size-14 grow-3 ...">01</div>  <div class="size-14 grow-7 ...">02</div>  <div class="size-14 grow-3 ...">03</div></div>
 ```
 
-### [Preventing items from growing](#preventing-items-from-growing)
-
 Use `grow-0` to prevent a flex item from growing:
 
 01
@@ -80,8 +81,6 @@ Use `grow-0` to prevent a flex item from growing:
 ```
 <div class="flex ...">  <div class="size-14 grow ...">01</div>  <div class="size-14 grow-0 ...">02</div>  <div class="size-14 grow ...">03</div></div>
 ```
-
-### [Using a custom value](#using-a-custom-value)
 
 Use the `grow-[<value>]` syntax to set the flex grow factor based on a completely custom value:
 
@@ -97,8 +96,6 @@ For CSS variables, you can also use the `grow-(<custom-property>)` syntax:
 
 This is just a shorthand for `grow-[var(<custom-property>)]` that adds the `var()` function for you automatically.
 
-### [Responsive design](#responsive-design)
-
 Prefix a `flex-grow` utility with a breakpoint variant like `md:` to only apply the utility at medium screen sizes and above:
 
 ```
@@ -109,22 +106,26 @@ Learn more about using variants in the [variants documentation](/docs/hover-focu
 
 ### On this page
 
-*   [Quick reference](#quick-reference)
-*   [Examples](#examples)
-    *   [Allowing items to grow](#allowing-items-to-grow)
-    *   [Growing items based on factor](#growing-items-based-on-factor)
-    *   [Preventing items from growing](#preventing-items-from-growing)
-    *   [Using a custom value](#using-a-custom-value)
-    *   [Responsive design](#responsive-design)
+-   [Quick reference](#quick-reference)
+-   [Examples](#examples)
+    -   [Allowing items to grow](#allowing-items-to-grow)
+    -   [Growing items based on factor](#growing-items-based-on-factor)
+    -   [Preventing items from growing](#preventing-items-from-growing)
+    -   [Using a custom value](#using-a-custom-value)
+    -   [Responsive design](#responsive-design)
 
-![Build UIs that don’t suck — 5-day mini-course](/_next/static/media/course-promo.d3d6bc78.jpg)
+[
 
-5-day mini-course
+![Refactoring UI](/_next/static/media/book-promo.3012c0f6.png)
 
-Build UIs that don’t suck.
+From the creators of Tailwind CSS
 
-Short, tactical video lessons from the creator of Tailwind CSS, delivered directly to your inbox every day for a week.
+Make your ideas look awesome, without relying on a designer.
 
-[Get the free course](/build-uis-that-dont-suck)
+> “This is the survival kit I wish I had when I started building apps.”
+> 
+> Derrick Reimer, SavvyCal
+
+](https://www.refactoringui.com/?ref=sidebar)
 
 Copyright © 2026 Tailwind Labs Inc.·[Trademark Policy](/brand)

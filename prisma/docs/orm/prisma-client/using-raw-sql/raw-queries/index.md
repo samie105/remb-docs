@@ -5,32 +5,30 @@ canonical_url: "https://www.prisma.io/docs/orm/prisma-client/using-raw-sql/raw-q
 docset: "prisma"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:49:48.613Z"
-content_hash: "8f4c209a96ee73db49d1c80f3a227b14678b84d98dd16a7259fc1078f2c9e99e"
+last_crawled_at: "2026-04-27T19:40:34.566Z"
+content_hash: "3f236d519806e74887b8cf29842bca8eef1b1f1ced534683489dbfb784c63c5a"
 menu_path: ["Raw queries"]
 section_path: []
-nav_prev: {"path": "prisma/docs/orm/prisma-client/using-raw-sql/index.md", "title": "Write your own SQL"}
-nav_next: {"path": "prisma/docs/orm/prisma-client/using-raw-sql/safeql/index.md", "title": "SafeQL & Prisma Client"}
+content_language: "en"
 ---
-
 Learn how you can send raw SQL and MongoDB queries to your database using the raw() methods from the Prisma Client API
 
 Prisma Client supports sending raw queries to your database. You may wish to use raw queries if:
 
-*   you want to run a heavily optimized query
-*   you require a feature that Prisma Client does not yet support (please [consider raising an issue](https://github.com/prisma/prisma/issues/new/choose))
+-   you want to run a heavily optimized query
+-   you require a feature that Prisma Client does not yet support (please [consider raising an issue](https://github.com/prisma/prisma/issues/new/choose))
 
 Raw queries are available for all relational databases Prisma ORM supports, as well as MongoDB. For more details, see the relevant sections:
 
-*   [Raw queries with relational databases](#raw-queries-with-relational-databases)
-*   [Raw queries with MongoDB](#raw-queries-with-mongodb)
+-   [Raw queries with relational databases](#raw-queries-with-relational-databases)
+-   [Raw queries with MongoDB](#raw-queries-with-mongodb)
 
 For relational databases, Prisma Client exposes four methods that allow you to send raw queries. You can use:
 
-*   `$queryRaw` to return actual records (for example, using `SELECT`).
-*   `$executeRaw` to return a count of affected rows (for example, after an `UPDATE` or `DELETE`).
-*   `$queryRawUnsafe` to return actual records (for example, using `SELECT`) using a raw string.
-*   `$executeRawUnsafe` to return a count of affected rows (for example, after an `UPDATE` or `DELETE`) using a raw string.
+-   `$queryRaw` to return actual records (for example, using `SELECT`).
+-   `$executeRaw` to return a count of affected rows (for example, after an `UPDATE` or `DELETE`).
+-   `$queryRawUnsafe` to return actual records (for example, using `SELECT`) using a raw string.
+-   `$executeRawUnsafe` to return a count of affected rows (for example, after an `UPDATE` or `DELETE`) using a raw string.
 
 The methods with "Unsafe" in the name are a lot more flexible but are at **significant risk of making your code vulnerable to SQL injection**.
 
@@ -64,7 +62,7 @@ const result = await prisma.$queryRaw(Prisma.sql`SELECT * FROM User WHERE email 
 
 Be aware that:
 
-*   Template variables cannot be used inside SQL string literals. For example, the following query would **not** work:
+-   Template variables cannot be used inside SQL string literals. For example, the following query would **not** work:
     
     ```
     const name = "Bob";
@@ -83,7 +81,7 @@ Be aware that:
     await prisma.$queryRaw`SELECT 'My name is ' || ${name};`;
     ```
     
-*   Template variables can only be used for data values (such as `email` in the example above). Variables cannot be used for identifiers such as column names, table names or database names, or for SQL keywords. For example, the following two queries would **not** work:
+-   Template variables can only be used for data values (such as `email` in the example above). Variables cannot be used for identifiers such as column names, table names or database names, or for SQL keywords. For example, the following two queries would **not** work:
     
     ```
     const myTable = "user";
@@ -95,9 +93,9 @@ Be aware that:
     await prisma.$queryRaw`SELECT * FROM Table ORDER BY ${ordering};`;
     ```
     
-*   Prisma maps any database values returned by `$queryRaw` and `$queryRawUnsafe` to their corresponding JavaScript types. [Learn more](#raw-query-type-mapping).
+-   Prisma maps any database values returned by `$queryRaw` and `$queryRawUnsafe` to their corresponding JavaScript types. [Learn more](#raw-query-type-mapping).
     
-*   `$queryRaw` does not support dynamic table names in PostgreSQL databases. [Learn more](#dynamic-table-names-in-postgresql)
+-   `$queryRaw` does not support dynamic table names in PostgreSQL databases. [Learn more](#dynamic-table-names-in-postgresql)
     
 
 #### [Return type](#return-type)
@@ -133,7 +131,7 @@ const result = await prisma.$queryRaw<User[]>`SELECT * FROM User`;
 
 > **Note**: If you do not provide a type, `$queryRaw` defaults to `unknown`.
 
-If you are selecting **specific fields** of the model or want to include relations, refer to the documentation about [leveraging Prisma Client's generated types](prisma/docs/orm/prisma-client/type-safety/operating-against-partial-structures-of-model-types/index.md#problem-using-variations-of-the-generated-model-type) if you want to make sure that the results are properly typed.
+If you are selecting **specific fields** of the model or want to include relations, refer to the documentation about [leveraging Prisma Client's generated types](https://www.prisma.io/docs/orm/prisma-client/type-safety/operating-against-partial-structures-of-model-types#problem-using-variations-of-the-generated-model-type) if you want to make sure that the results are properly typed.
 
 #### [Type caveats when using raw SQL](#type-caveats-when-using-raw-sql)
 
@@ -225,13 +223,13 @@ const result: number =
 
 Be aware that:
 
-*   `$executeRaw` does not support multiple queries in a single string (for example, `ALTER TABLE` and `CREATE TABLE` together).
+-   `$executeRaw` does not support multiple queries in a single string (for example, `ALTER TABLE` and `CREATE TABLE` together).
     
-*   Prisma Client submits prepared statements, and prepared statements only allow a subset of SQL statements. For example, `START TRANSACTION` is not permitted. You can learn more about [the syntax that MySQL allows in Prepared Statements here](https://dev.mysql.com/doc/refman/8.0/en/sql-prepared-statements.html).
+-   Prisma Client submits prepared statements, and prepared statements only allow a subset of SQL statements. For example, `START TRANSACTION` is not permitted. You can learn more about [the syntax that MySQL allows in Prepared Statements here](https://dev.mysql.com/doc/refman/8.0/en/sql-prepared-statements.html).
     
-*   [`PREPARE` does not support `ALTER`](https://www.postgresql.org/docs/current/sql-prepare.html) - see the [workaround](#alter-limitation-postgresql).
+-   [`PREPARE` does not support `ALTER`](https://www.postgresql.org/docs/current/sql-prepare.html) - see the [workaround](#alter-limitation-postgresql).
     
-*   Template variables cannot be used inside SQL string literals. For example, the following query would **not** work:
+-   Template variables cannot be used inside SQL string literals. For example, the following query would **not** work:
     
     ```
     const name = "Bob";
@@ -250,7 +248,7 @@ Be aware that:
     await prisma.$executeRaw`UPDATE user SET greeting = 'My name is ' || ${name};`;
     ```
     
-*   Template variables can only be used for data values (such as `email` in the example above). Variables cannot be used for identifiers such as column names, table names or database names, or for SQL keywords. For example, the following two queries would **not** work:
+-   Template variables can only be used for data values (such as `email` in the example above). Variables cannot be used for identifiers such as column names, table names or database names, or for SQL keywords. For example, the following two queries would **not** work:
     
     ```
     const myTable = "user";
@@ -326,67 +324,24 @@ In the `result` object, the database values have been mapped to the correspondin
 
 The following table shows the conversion between types used in the database and the JavaScript type returned by the raw query:
 
-Database type
+| Database type | JavaScript type |
+| --- | --- |
+| Text | `String` |
+| 32-bit integer | `Number` |
+| 32-bit unsigned integer | `BigInt` |
+| Floating point number | `Number` |
+| Double precision number | `Number` |
+| 64-bit integer | `BigInt` |
+| Decimal / numeric | `Decimal` |
+| Bytes | `Uint8Array` |
+| Json | `Object` |
+| DateTime | `Date` |
+| Date | `Date` |
+| Time | `Date` |
+| Uuid | `String` |
+| Xml | `String` |
 
-JavaScript type
-
-Text
-
-`String`
-
-32-bit integer
-
-`Number`
-
-32-bit unsigned integer
-
-`BigInt`
-
-Floating point number
-
-`Number`
-
-Double precision number
-
-`Number`
-
-64-bit integer
-
-`BigInt`
-
-Decimal / numeric
-
-`Decimal`
-
-Bytes
-
-`Uint8Array`
-
-Json
-
-`Object`
-
-DateTime
-
-`Date`
-
-Date
-
-`Date`
-
-Time
-
-`Date`
-
-Uuid
-
-`String`
-
-Xml
-
-`String`
-
-Note that the exact name for each database type will vary between databases – for example, the boolean type is known as `boolean` in PostgreSQL and `STRING` in CockroachDB. See the [Scalar types reference](prisma/docs/orm/reference/prisma-schema-reference/index.md#model-field-scalar-types) for full details of type names for each database.
+Note that the exact name for each database type will vary between databases – for example, the boolean type is known as `boolean` in PostgreSQL and `STRING` in CockroachDB. See the [Scalar types reference](https://www.prisma.io/docs/orm/reference/prisma-schema-reference#model-field-scalar-types) for full details of type names for each database.
 
 ### [Raw query typecasting behavior](#raw-query-typecasting-behavior)
 
@@ -413,7 +368,7 @@ await prisma.$queryRaw`SELECT LENGTH(${42}::text);`;
 
 ### [Transactions](#transactions)
 
-You can use `.$executeRaw()` and `.$queryRaw()` inside a [transaction](prisma/docs/orm/prisma-client/queries/transactions/index.md).
+You can use `.$executeRaw()` and `.$queryRaw()` inside a [transaction](https://www.prisma.io/docs/orm/prisma-client/queries/transactions).
 
 ### [Using variables](#using-variables)
 
@@ -428,10 +383,10 @@ const result = await prisma.$queryRaw`SELECT * FROM User WHERE id = ${userId};`;
 
 ✔ Benefits of using the tagged template versions of `$queryRaw` and `$executeRaw` include:
 
-*   Prisma Client escapes all variables.
-*   Tagged templates are database-agnostic - you do not need to remember if variables should be written as `$1` (PostgreSQL) or `?` (MySQL).
-*   [SQL Template Tag](https://github.com/blakeembrey/sql-template-tag) give you access to [useful helpers](#tagged-template-helpers).
-*   Embedded, named variables are easier to read.
+-   Prisma Client escapes all variables.
+-   Tagged templates are database-agnostic - you do not need to remember if variables should be written as `$1` (PostgreSQL) or `?` (MySQL).
+-   [SQL Template Tag](https://github.com/blakeembrey/sql-template-tag) give you access to [useful helpers](#tagged-template-helpers).
+-   Embedded, named variables are easier to read.
 
 > **Note**: You cannot pass a table or column name into a tagged template placeholder. For example, you cannot `SELECT ?` and pass in `*` or `id, name` based on some condition.
 
@@ -474,7 +429,7 @@ await prisma.$executeRawUnsafe('ALTER USER prisma WITH PASSWORD "$1"', password}
 
 ### [Unsupported types](#unsupported-types)
 
-[`Unsupported` types](prisma/docs/orm/reference/prisma-schema-reference/index.md#unsupported) need to be cast to Prisma Client supported types before using them in `$queryRaw` or `$queryRawUnsafe`. For example, take the following model, which has a `location` field with an `Unsupported` type:
+[`Unsupported` types](https://www.prisma.io/docs/orm/reference/prisma-schema-reference#unsupported) need to be cast to Prisma Client supported types before using them in `$queryRaw` or `$queryRawUnsafe`. For example, take the following model, which has a `location` field with an `Unsupported` type:
 
 ```
 model Country {
@@ -671,7 +626,7 @@ console.log(result);
 
 #### [Using `$queryRawUnsafe` and `$executeRawUnsafe` unsafely](#using-queryrawunsafe-and-executerawunsafe-unsafely)
 
-If you cannot use tagged templates, you can instead use [`$queryRawUnsafe`](prisma/docs/orm/prisma-client/using-raw-sql/raw-queries/index.md#queryrawunsafe) or [`$executeRawUnsafe`](prisma/docs/orm/prisma-client/using-raw-sql/raw-queries/index.md#executerawunsafe). However, **be aware that these functions significantly increase the risk of SQL injection vulnerabilities in your code**.
+If you cannot use tagged templates, you can instead use [`$queryRawUnsafe`](https://www.prisma.io/docs/orm/prisma-client/using-raw-sql/raw-queries#queryrawunsafe) or [`$executeRawUnsafe`](https://www.prisma.io/docs/orm/prisma-client/using-raw-sql/raw-queries#executerawunsafe). However, **be aware that these functions significantly increase the risk of SQL injection vulnerabilities in your code**.
 
 The following example concatenates `query` and `inputString`. Prisma Client ❌ **cannot** escape `inputString` in this example, which makes it vulnerable to SQL injection:
 
@@ -723,21 +678,21 @@ const result = await prisma.$queryRawUnsafe(
 
 For MongoDB, Prisma Client exposes three methods that allow you to send raw queries. You can use:
 
-*   `$runCommandRaw` to run a command against the database
-*   `<model>.findRaw` to find zero or more documents that match the filter.
-*   `<model>.aggregateRaw` to perform aggregation operations on a collection.
+-   `$runCommandRaw` to run a command against the database
+-   `<model>.findRaw` to find zero or more documents that match the filter.
+-   `<model>.aggregateRaw` to perform aggregation operations on a collection.
 
 ### [`$runCommandRaw()`](#runcommandraw)
 
 `$runCommandRaw()` runs a raw MongoDB command against the database. As input, it accepts all [MongoDB database commands](https://www.mongodb.com/docs/manual/reference/command/), with the following exceptions:
 
-*   `find` (use [`findRaw()`](#findraw) instead)
-*   `aggregate` (use [`aggregateRaw()`](#aggregateraw) instead)
+-   `find` (use [`findRaw()`](#findraw) instead)
+-   `aggregate` (use [`aggregateRaw()`](#aggregateraw) instead)
 
 When you use `$runCommandRaw()` to run a MongoDB database command, note the following:
 
-*   The object that you pass when you invoke `$runCommandRaw()` must follow the syntax of the MongoDB database command.
-*   You must connect to the database with an appropriate role for the MongoDB database command.
+-   The object that you pass when you invoke `$runCommandRaw()` must follow the syntax of the MongoDB database command.
+-   You must connect to the database with an appropriate role for the MongoDB database command.
 
 In the following example, a query inserts two records with the same `_id`. This bypasses normal document validation.
 
@@ -795,8 +750,8 @@ const result = await prisma.user.findRaw({
 <model>.findRaw(args?: {filter?: InputJsonObject, options?: InputJsonObject}): PrismaPromise<JsonObject>;
 ```
 
-*   `filter`: The query predicate filter. If unspecified, then all documents in the collection will match the [predicate](https://www.mongodb.com/docs/manual/reference/mql/query-predicates/).
-*   `options`: Additional options to pass to the [`find` command](https://www.mongodb.com/docs/manual/reference/command/find/#command-fields).
+-   `filter`: The query predicate filter. If unspecified, then all documents in the collection will match the [predicate](https://www.mongodb.com/docs/manual/reference/mql/query-predicates/).
+-   `options`: Additional options to pass to the [`find` command](https://www.mongodb.com/docs/manual/reference/command/find/#command-fields).
 
 ### [`aggregateRaw()`](#aggregateraw)
 
@@ -821,8 +776,8 @@ const result = await prisma.user.aggregateRaw({
 <model>.aggregateRaw(args?: {pipeline?: InputJsonObject[], options?: InputJsonObject}): PrismaPromise<JsonObject>;
 ```
 
-*   `pipeline`: An array of aggregation stages to process and transform the document stream via the [aggregation pipeline](https://www.mongodb.com/docs/atlas/data-federation/supported-unsupported/supported-aggregation/).
-*   `options`: Additional options to pass to the [`aggregate` command](https://www.mongodb.com/docs/manual/reference/command/aggregate/#command-fields).
+-   `pipeline`: An array of aggregation stages to process and transform the document stream via the [aggregation pipeline](https://www.mongodb.com/docs/atlas/data-federation/supported-unsupported/supported-aggregation/).
+-   `options`: Additional options to pass to the [`aggregate` command](https://www.mongodb.com/docs/manual/reference/command/aggregate/#command-fields).
 
 #### [Caveats](#caveats)
 

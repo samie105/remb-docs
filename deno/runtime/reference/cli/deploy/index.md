@@ -5,58 +5,59 @@ canonical_url: "https://docs.deno.com/runtime/reference/cli/deploy/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:52:36.759Z"
-content_hash: "a694a833ffee8e2e0b00a7e1f4fb5efc94bd54e4764306e5f3815122e80ec9e6"
+last_crawled_at: "2026-04-27T17:28:24.164Z"
+content_hash: "350014e1242d29bdaff6837ae16ced9af86c2904cb3a6753fbdcbb04902b27f6"
 menu_path: ["deno deploy"]
 section_path: []
+content_language: "en"
 ---
-On this page
+**On this page**
 
-*   [Authentication](#authentication)
-*   [Global options](#global-options)
-*   [Subcommands](#subcommands)
-    *   [Create application](#create-application)
-        *   [General options](#general-options)
-        *   [Source options](#source-options)
-        *   [Build configuration options](#build-configuration-options)
-        *   [Runtime mode options](#runtime-mode-options)
-        *   [Build resource options](#build-resource-options)
-        *   [Interactive wizard](#interactive-wizard)
-        *   [Examples](#examples)
-    *   [Environment variables management](#environment-variables-management)
-        *   [List environment variables](#list-environment-variables)
-        *   [Add environment variable](#add-environment-variable)
-        *   [Update environment variable value](#update-environment-variable-value)
-        *   [Specifying environment variable contexts](#specifying-environment-variable-contexts)
-        *   [Delete environment variable](#delete-environment-variable)
-        *   [Load environment variables from file](#load-environment-variables-from-file)
-    *   [Database management](#database-management)
-        *   [Provision a database](#provision-a-database)
-        *   [Link an external database](#link-an-external-database)
-        *   [Assign a database to an app](#assign-a-database-to-an-app)
-        *   [Detach a database from an app](#detach-a-database-from-an-app)
-        *   [Query a database](#query-a-database)
-        *   [List databases](#list-databases)
-        *   [Delete a database](#delete-a-database)
-    *   [Switch organization and application](#switch-organization-and-application)
-    *   [Logout](#logout)
-    *   [Application logs](#application-logs)
-    *   [Sandbox management](#sandbox-management)
-        *   [List sandboxes](#list-sandboxes)
-        *   [Kill a sandbox](#kill-a-sandbox)
-        *   [SSH into a sandbox](#ssh-into-a-sandbox)
-    *   [Configure cloud connections](#configure-cloud-connections)
-        *   [AWS integration setup](#aws-integration-setup)
-    *   [Google Cloud Platform integration setup](#google-cloud-platform-integration-setup)
-*   [Usage examples](#usage-examples)
-    *   [Basic deployment](#basic-deployment)
-    *   [Creating applications](#creating-applications)
-    *   [Switching context](#switching-context)
-    *   [Database management](#database-management-1)
-    *   [Environment setup](#environment-setup)
-    *   [Monitoring](#monitoring)
-    *   [Cloud integration](#cloud-integration)
-*   [Getting help](#getting-help)
+-   [Authentication](#authentication)
+-   [Global options](#global-options)
+-   [Subcommands](#subcommands)
+    -   [Create application](#create-application)
+        -   [General options](#general-options)
+        -   [Source options](#source-options)
+        -   [Build configuration options](#build-configuration-options)
+        -   [Runtime mode options](#runtime-mode-options)
+        -   [Build resource options](#build-resource-options)
+        -   [Interactive wizard](#interactive-wizard)
+        -   [Examples](#examples)
+    -   [Environment variables management](#environment-variables-management)
+        -   [List environment variables](#list-environment-variables)
+        -   [Add environment variable](#add-environment-variable)
+        -   [Update environment variable value](#update-environment-variable-value)
+        -   [Specifying environment variable contexts](#specifying-environment-variable-contexts)
+        -   [Delete environment variable](#delete-environment-variable)
+        -   [Load environment variables from file](#load-environment-variables-from-file)
+    -   [Database management](#database-management)
+        -   [Provision a database](#provision-a-database)
+        -   [Link an external database](#link-an-external-database)
+        -   [Assign a database to an app](#assign-a-database-to-an-app)
+        -   [Detach a database from an app](#detach-a-database-from-an-app)
+        -   [Query a database](#query-a-database)
+        -   [List databases](#list-databases)
+        -   [Delete a database](#delete-a-database)
+    -   [Switch organization and application](#switch-organization-and-application)
+    -   [Logout](#logout)
+    -   [Application logs](#application-logs)
+    -   [Sandbox management](#sandbox-management)
+        -   [List sandboxes](#list-sandboxes)
+        -   [Kill a sandbox](#kill-a-sandbox)
+        -   [SSH into a sandbox](#ssh-into-a-sandbox)
+    -   [Configure cloud connections](#configure-cloud-connections)
+        -   [AWS integration setup](#aws-integration-setup)
+    -   [Google Cloud Platform integration setup](#google-cloud-platform-integration-setup)
+-   [Usage examples](#usage-examples)
+    -   [Basic deployment](#basic-deployment)
+    -   [Creating applications](#creating-applications)
+    -   [Switching context](#switching-context)
+    -   [Database management](#database-management-1)
+    -   [Environment setup](#environment-setup)
+    -   [Monitoring](#monitoring)
+    -   [Cloud integration](#cloud-integration)
+-   [Getting help](#getting-help)
 
 The `deno deploy` command provides a command line interface for managing and deploying applications to [Deno Deploy EA](https://deno.com/deploy), Deno's platform for hosting JavaScript, TypeScript, and WebAssembly applications.
 
@@ -66,16 +67,16 @@ When called without any subcommands, `deno deploy` will deploy your local direct
 
 The deploy command uses secure token-based authentication stored in your system's keyring:
 
-*   **Automatic Authentication**: The CLI will prompt for authentication when needed
-*   **Token Storage**: Deploy tokens are securely stored using the system keyring
-*   **Token Management**: The CLI provides operations to get, set, and delete authentication tokens.
+-   **Automatic Authentication**: The CLI will prompt for authentication when needed
+-   **Token Storage**: Deploy tokens are securely stored using the system keyring
+-   **Token Management**: The CLI provides operations to get, set, and delete authentication tokens.
 
 ## Global options
 
-*   `-h, --help` - Show help information
-*   `--org <name>` - Specify the organization name
-*   `--app <name>` - Specify the application name
-*   `--prod` - Deploy directly to production
+-   `-h, --help` - Show help information
+-   `--org <name>` - Specify the organization name
+-   `--app <name>` - Specify the application name
+-   `--prod` - Deploy directly to production
 
 ## Subcommands
 
@@ -93,50 +94,50 @@ The optional `[root-path]` argument sets the local project directory. Defaults t
 
 #### General options
 
-*   `-h, --help` - Show help information
-*   `--org <name>` - The organization to create the app in
-*   `--app <name>` - The application name (used in the default URL)
-*   `--allow-node-modules` - Include `node_modules` when uploading
-*   `--no-wait` - Skip waiting for the first build to complete
-*   `--dry-run` - Validate flags and run through the flow without actually creating anything
+-   `-h, --help` - Show help information
+-   `--org <name>` - The organization to create the app in
+-   `--app <name>` - The application name (used in the default URL)
+-   `--allow-node-modules` - Include `node_modules` when uploading
+-   `--no-wait` - Skip waiting for the first build to complete
+-   `--dry-run` - Validate flags and run through the flow without actually creating anything
 
 #### Source options
 
 These flags control where the app code comes from:
 
-*   `--source <github|local>` - Deploy from a GitHub repo or the local filesystem
-*   `--owner <name>` - GitHub owner/organization (required when source is `github`)
-*   `--repo <name>` - GitHub repository name (required when source is `github`)
+-   `--source <github|local>` - Deploy from a GitHub repo or the local filesystem
+-   `--owner <name>` - GitHub owner/organization (required when source is `github`)
+-   `--repo <name>` - GitHub repository name (required when source is `github`)
 
 #### Build configuration options
 
-*   `--app-directory <path>` - Path to the app directory within the project
-*   `--framework-preset <preset>` - Use a framework preset for build defaults. Supported values: `astro`, `nextjs`, `nuxt`, `remix`, `solidstart`, `sveltekit`, `fresh`, `lume`, or `""` (none)
-*   `--do-not-use-detected-build-config` - Skip auto-detected build settings and use only the provided flags
-*   `--install-command <command>` - Install command (e.g. `"deno install"`)
-*   `--build-command <command>` - Build command (e.g. `"deno task build"`)
-*   `--pre-deploy-command <command>` - Command to run after building but before deploying
+-   `--app-directory <path>` - Path to the app directory within the project
+-   `--framework-preset <preset>` - Use a framework preset for build defaults. Supported values: `astro`, `nextjs`, `nuxt`, `remix`, `solidstart`, `sveltekit`, `fresh`, `lume`, or `""` (none)
+-   `--do-not-use-detected-build-config` - Skip auto-detected build settings and use only the provided flags
+-   `--install-command <command>` - Install command (e.g. `"deno install"`)
+-   `--build-command <command>` - Build command (e.g. `"deno task build"`)
+-   `--pre-deploy-command <command>` - Command to run after building but before deploying
 
 #### Runtime mode options
 
-*   `--runtime-mode <dynamic|static>` - Whether the app runs as a server or a static site
+-   `--runtime-mode <dynamic|static>` - Whether the app runs as a server or a static site
 
 **Dynamic mode** (server):
 
-*   `--entrypoint <file>` - The entrypoint file (e.g. `main.ts`)
-*   `--arguments <arg>` - Arguments passed to the entrypoint (can be specified multiple times)
-*   `--working-directory <path>` - Working directory for the process
+-   `--entrypoint <file>` - The entrypoint file (e.g. `main.ts`)
+-   `--arguments <arg>` - Arguments passed to the entrypoint (can be specified multiple times)
+-   `--working-directory <path>` - Working directory for the process
 
 **Static mode** (static site):
 
-*   `--static-dir <dir>` - Directory containing the static files to serve
-*   `--single-page-app` - Serve `index.html` for routes that don't match a file (instead of returning 404)
+-   `--static-dir <dir>` - Directory containing the static files to serve
+-   `--single-page-app` - Serve `index.html` for routes that don't match a file (instead of returning 404)
 
 #### Build resource options
 
-*   `--build-timeout <minutes>` - Build timeout. Allowed values: `5`, `10`, `15`, `20`, `25`, `30`
-*   `--build-memory-limit <megabytes>` - Build memory limit in MB. Allowed values: `1024`, `2048`, `3072`, `4096`
-*   `--region <region>` - Deployment region. Allowed values: `us`, `eu`, `global`
+-   `--build-timeout <minutes>` - Build timeout. Allowed values: `5`, `10`, `15`, `20`, `25`, `30`
+-   `--build-memory-limit <megabytes>` - Build memory limit in MB. Allowed values: `1024`, `2048`, `3072`, `4096`
+-   `--region <region>` - Deployment region. Allowed values: `us`, `eu`, `global`
 
 #### Interactive wizard
 
@@ -243,9 +244,9 @@ deno deploy env
 
 **Options:**
 
-*   `-h, --help` - Show help information
-*   `--org <name>` - The name of the organization
-*   `--app <name>` - The name of the application
+-   `-h, --help` - Show help information
+-   `--org <name>` - The name of the organization
+-   `--app <name>` - The name of the application
 
 #### List environment variables
 
@@ -269,7 +270,7 @@ Adds an environment variable to the application.
 
 **Options:**
 
-*   `--secret` - Mark the variable as a secret. Secret values are hidden in the dashboard and in `env list` output.
+-   `--secret` - Mark the variable as a secret. Secret values are hidden in the dashboard and in `env list` output.
 
 \>\_
 
@@ -336,7 +337,7 @@ Loads environment variables from a `.env` file into the application. The CLI aut
 
 **Options:**
 
-*   `--non-secrets <keys...>` - Keys from the `.env` file that should be treated as non-secrets, overriding the auto-detection
+-   `--non-secrets <keys...>` - Keys from the `.env` file that should be treated as non-secrets, overriding the auto-detection
 
 \>\_
 
@@ -359,8 +360,8 @@ deno deploy database
 
 **Options:**
 
-*   `-h, --help` - Show help information
-*   `--org <name>` - The name of the organization
+-   `-h, --help` - Show help information
+-   `--org <name>` - The name of the organization
 
 #### Provision a database
 
@@ -374,8 +375,8 @@ Creates a new database instance.
 
 **Options:**
 
-*   `--kind <denokv|prisma>` - The type of database to provision (required)
-*   `--region <region>` - The primary region for the database (required for Prisma)
+-   `--kind <denokv|prisma>` - The type of database to provision (required)
+-   `--region <region>` - The primary region for the database (required for Prisma)
 
 \>\_
 
@@ -399,12 +400,12 @@ Links an external PostgreSQL database to your organization. You can provide a co
 
 **Options:**
 
-*   `--hostname <host>` - Database hostname (conflicts with connection string)
-*   `--username <user>` - Database username (conflicts with connection string)
-*   `--password <pass>` - Database password (conflicts with connection string)
-*   `--port <number>` - Database port (conflicts with connection string)
-*   `--cert <cert>` - SSL certificate for the connection
-*   `--dry-run` - Test the connection without actually linking
+-   `--hostname <host>` - Database hostname (conflicts with connection string)
+-   `--username <user>` - Database username (conflicts with connection string)
+-   `--password <pass>` - Database password (conflicts with connection string)
+-   `--port <number>` - Database port (conflicts with connection string)
+-   `--cert <cert>` - SSL certificate for the connection
+-   `--dry-run` - Test the connection without actually linking
 
 \>\_
 
@@ -521,8 +522,8 @@ When run without flags, an interactive prompt lets you select the org and app.
 
 **Options:**
 
-*   `--org <name>` - The organization to switch to
-*   `--app <name>` - The application to switch to
+-   `--org <name>` - The organization to switch to
+-   `--app <name>` - The application to switch to
 
 \>\_
 
@@ -556,11 +557,11 @@ deno deploy logs
 
 **Options:**
 
-*   `-h, --help` - Show help information
-*   `--org <name>` - The name of the organization
-*   `--app <name>` - The name of the application
-*   `--start <date>` - The starting timestamp of the logs
-*   `--end <date>` - The ending timestamp of the logs (requires --start)
+-   `-h, --help` - Show help information
+-   `--org <name>` - The name of the organization
+-   `--app <name>` - The name of the application
+-   `--start <date>` - The starting timestamp of the logs
+-   `--end <date>` - The ending timestamp of the logs (requires --start)
 
 \>\_
 
@@ -580,10 +581,10 @@ deno deploy sandbox --help
 
 **Options:**
 
-*   `-h, --help` - Show help information
-*   `--token <token>` - Override the auth token used for sandbox operations
-*   `--config <path>` - Custom path to a Deploy CLI config file
-*   `--org <name>` - Organization that owns the sandboxes
+-   `-h, --help` - Show help information
+-   `--token <token>` - Override the auth token used for sandbox operations
+-   `--config <path>` - Custom path to a Deploy CLI config file
+-   `--org <name>` - Organization that owns the sandboxes
 
 #### List sandboxes
 
@@ -631,9 +632,9 @@ deno deploy setup-aws --org <name> --app <name>
 
 **Options:**
 
-*   `-h, --help` - Show help information
-*   `--org <name>` - The name of the organization (required)
-*   `--app <name>` - The name of the application (required)
+-   `-h, --help` - Show help information
+-   `--org <name>` - The name of the organization (required)
+-   `--app <name>` - The name of the application (required)
 
 \>\_
 
@@ -653,9 +654,9 @@ deno deploy setup-gcp --org <name> --app <name>
 
 **Options:**
 
-*   `-h, --help` - Show help information
-*   `--org <name>` - The name of the organization (required)
-*   `--app <name>` - The name of the application (required)
+-   `-h, --help` - Show help information
+-   `--org <name>` - The name of the organization (required)
+-   `--app <name>` - The name of the application (required)
 
 \>\_
 
@@ -770,9 +771,9 @@ deno deploy setup-gcp --org my-company --app my-api
 
 ## Getting help
 
-*   Use `deno deploy --help` for general help
-*   Use `deno deploy <subcommand> --help` for specific subcommand help
-*   Check the [Deno Deploy documentation](/deploy/) for platform-specific information
+-   Use `deno deploy --help` for general help
+-   Use `deno deploy <subcommand> --help` for specific subcommand help
+-   Check the [Deno Deploy documentation](/deploy/) for platform-specific information
 
 Command line usage:
 

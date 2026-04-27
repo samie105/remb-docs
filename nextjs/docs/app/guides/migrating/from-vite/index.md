@@ -5,17 +5,19 @@ canonical_url: "https://nextjs.org/docs/app/guides/migrating/from-vite"
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:15:26.253Z"
-content_hash: "fef7d68d954c8b712a1a756ec960622f9d53ed46d1a6f0210ee18ec40bebf57e"
+last_crawled_at: "2026-04-27T18:14:35.993Z"
+content_hash: "3bc29d9ed9f8ff08352bcca9fe1b000d246ad974ede357949dde16d309945e44"
 menu_path: ["How to migrate from Vite to Next.js"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/guides/migrating/from-create-react-app/index.md", "title": "How to migrate from Create React App to Next.js"}
-nav_next: {"path": "nextjs/docs/app/guides/migrating-to-cache-components/index.md", "title": "Migrating to Cache Components"}
+version: "latest"
+tab_variants: ["pnpm","npm","yarn","bun"]
+content_language: "en"
 ---
+[Guides](/docs/app/guides)[Migrating](/docs/app/guides/migrating)Vite
 
 # How to migrate from Vite to Next.js
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 This guide will help you migrate an existing Vite application to Next.js.
 
@@ -66,7 +68,21 @@ Our goal with this migration is to get a working Next.js application as quickly 
 
 The first thing you need to do is to install `next` as a dependency:
 
-pnpmnpmyarnbun
+#### pnpm
+
+pnpm
+
+#### npm
+
+npm
+
+#### yarn
+
+yarn
+
+#### bun
+
+bun
 
 Terminal
 
@@ -154,8 +170,6 @@ In this step, you'll convert your `index.html` file into a root layout file:
 
 app/layout.tsx
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -173,8 +187,6 @@ export default function RootLayout({
 3.  Copy the content of your `index.html` file into the previously created `<RootLayout>` component while replacing the `body.div#root` and `body.script` tags with `<div id="root">{children}</div>`:
 
 app/layout.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -205,8 +217,6 @@ export default function RootLayout({
 
 app/layout.tsx
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -234,8 +244,6 @@ export default function RootLayout({
 
 app/layout.tsx
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -261,8 +269,6 @@ export default function RootLayout({
 6.  Finally, Next.js can manage your last `<head>` tags with the [Metadata API](/docs/app/getting-started/metadata-and-og-images). Move your final metadata info into an exported [`metadata` object](/docs/app/api-reference/functions/generate-metadata#metadata-object):
 
 app/layout.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -305,8 +311,6 @@ This directory is what is called an [optional catch-all route segment](/docs/app
 
 app/\[\[...slug\]\]/page.tsx
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -330,8 +334,6 @@ This file imports our global CSS and tells [`generateStaticParams`](/docs/app/ap
 Now, let's move the rest of our Vite application which will run client-only.
 
 app/\[\[...slug\]\]/client.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -359,8 +361,6 @@ const App = dynamic(() => import('../../App'), { ssr: false })
 Now, update your entrypoint page to use the new component:
 
 app/\[\[...slug\]\]/page.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -425,14 +425,14 @@ Alternatively, you can reference the public URL for the image asset based on the
 
 Next.js has support for `.env` [environment variables](/docs/app/guides/environment-variables) similar to Vite. The main difference is the prefix used to expose environment variables on the client-side.
 
-*   Change all environment variables with the `VITE_` prefix to `NEXT_PUBLIC_`.
+-   Change all environment variables with the `VITE_` prefix to `NEXT_PUBLIC_`.
 
 Vite exposes a few built-in environment variables on the special `import.meta.env` object which aren’t supported by Next.js. You need to update their usage as follows:
 
-*   `import.meta.env.MODE` ⇒ `process.env.NODE_ENV`
-*   `import.meta.env.PROD` ⇒ `process.env.NODE_ENV === 'production'`
-*   `import.meta.env.DEV` ⇒ `process.env.NODE_ENV !== 'production'`
-*   `import.meta.env.SSR` ⇒ `typeof window !== 'undefined'`
+-   `import.meta.env.MODE` ⇒ `process.env.NODE_ENV`
+-   `import.meta.env.PROD` ⇒ `process.env.NODE_ENV === 'production'`
+-   `import.meta.env.DEV` ⇒ `process.env.NODE_ENV !== 'production'`
+-   `import.meta.env.SSR` ⇒ `typeof window !== 'undefined'`
 
 Next.js also doesn't provide a built-in `BASE_URL` environment variable. However, you can still configure one, if you need it:
 
@@ -495,40 +495,24 @@ Now run `npm run dev`, and open [`http://localhost:3000`](http://localhost:3000)
 
 You can now clean up your codebase from Vite related artifacts:
 
-*   Delete `main.tsx`
-*   Delete `index.html`
-*   Delete `vite-env.d.ts`
-*   Delete `tsconfig.node.json`
-*   Delete `vite.config.ts`
-*   Uninstall Vite dependencies
+-   Delete `main.tsx`
+-   Delete `index.html`
+-   Delete `vite-env.d.ts`
+-   Delete `tsconfig.node.json`
+-   Delete `vite.config.ts`
+-   Uninstall Vite dependencies
 
 ## Next Steps[](#next-steps)
 
 If everything went according to plan, you now have a functioning Next.js application running as a single-page application. However, you aren't yet taking advantage of most of Next.js' benefits, but you can now start making incremental changes to reap all the benefits. Here's what you might want to do next:
 
-*   Migrate from React Router to the [Next.js App Router](/docs/app) to get:
-    *   Automatic code splitting
-    *   [Streaming Server-Rendering](/docs/app/api-reference/file-conventions/loading)
-    *   [React Server Components](/docs/app/getting-started/server-and-client-components)
-*   [Optimize images with the `<Image>` component](/docs/app/api-reference/components/image)
-*   [Optimize fonts with `next/font`](/docs/app/api-reference/components/font)
-*   [Optimize third-party scripts with the `<Script>` component](/docs/app/guides/scripts)
-*   [Update your ESLint configuration to support Next.js rules](/docs/app/api-reference/config/eslint)
-
-[Previous
-
-Create React App
-
-](/docs/app/guides/migrating/from-create-react-app)
-
-[Next
-
-Migrating to Cache Components
-
-](/docs/app/guides/migrating-to-cache-components)
+-   Migrate from React Router to the [Next.js App Router](/docs/app) to get:
+    -   Automatic code splitting
+    -   [Streaming Server-Rendering](/docs/app/api-reference/file-conventions/loading)
+    -   [React Server Components](/docs/app/getting-started/server-and-client-components)
+-   [Optimize images with the `<Image>` component](/docs/app/api-reference/components/image)
+-   [Optimize fonts with `next/font`](/docs/app/api-reference/components/font)
+-   [Optimize third-party scripts with the `<Script>` component](/docs/app/guides/scripts)
+-   [Update your ESLint configuration to support Next.js rules](/docs/app/api-reference/config/eslint)
 
 Was this helpful?
-
-supported.
-
-Send

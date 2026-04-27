@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/pages/api-reference/config/next-config-j
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:21:44.643Z"
-content_hash: "a2a17609008a1b2fa2fb4e73c34a70d023bc8fa0d565964df6bdb9583b62c813"
+last_crawled_at: "2026-04-27T18:21:07.559Z"
+content_hash: "f112dffbb96497cdbdbcd7a390b85625dcfe481973cf8748107cd550ba3bcd8a"
 menu_path: ["webVitalsAttribution"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/pages/api-reference/config/next-config-js/webpack/index.md", "title": "Custom Webpack Config"}
-nav_next: {"path": "nextjs/docs/pages/api-reference/config/typescript/index.md", "title": "TypeScript"}
+version: "latest"
+content_language: "en"
 ---
+[Configuration](/docs/pages/api-reference/config)[next.config.js Options](/docs/pages/api-reference/config/next-config-js)webVitalsAttribution
 
 # webVitalsAttribution
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 When debugging issues related to Web Vitals, it is often helpful if we can pinpoint the source of the problem. For example, in the case of Cumulative Layout Shift (CLS), we might want to know the first element that shifted when the single largest layout shift occurred. Or, in the case of Largest Contentful Paint (LCP), we might want to identify the element corresponding to the LCP for the page. If the LCP element is an image, knowing the URL of the image resource can help us locate the asset we need to optimize.
 
@@ -36,7 +37,3 @@ module.exports = {
 Valid attribution values are all `web-vitals` metrics specified in the [`NextWebVitalsMetric`](https://github.com/vercel/next.js/blob/442378d21dd56d6e769863eb8c2cb521a463a2e0/packages/next/shared/lib/utils.ts#L43) type.
 
 Was this helpful?
-
-supported.
-
-Send

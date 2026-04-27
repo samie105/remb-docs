@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/app/api-reference/config/next-config-js/
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:08:31.034Z"
-content_hash: "25bc86e4d98456064fe55ccbb92fba81ab9a2617c08811a4b514555dc2e6f88e"
+last_crawled_at: "2026-04-27T18:07:19.789Z"
+content_hash: "d563246b2f3e05c8b1d142d34f9311ed7423680edae1da368d1cea7cd01f2d55"
 menu_path: ["serverActions"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/api-reference/config/next-config-js/sassOptions/index.md", "title": "sassOptions"}
-nav_next: {"path": "nextjs/docs/app/api-reference/config/next-config-js/serverComponentsHmrCache/index.md", "title": "serverComponentsHmrCache"}
+version: "latest"
+content_language: "en"
 ---
+[Configuration](/docs/app/api-reference/config)[next.config.js](/docs/app/api-reference/config/next-config-js)serverActions
 
 # serverActions
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 Options for configuring Server Actions behavior in your Next.js application.
 
@@ -74,20 +75,4 @@ const config = {
 module.exports = config
 ```
 
-[Previous
-
-sassOptions
-
-](/docs/app/api-reference/config/next-config-js/sassOptions)
-
-[Next
-
-serverComponentsHmrCache
-
-](/docs/app/api-reference/config/next-config-js/serverComponentsHmrCache)
-
 Was this helpful?
-
-supported.
-
-Send

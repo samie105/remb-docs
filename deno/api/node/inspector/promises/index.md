@@ -5,10 +5,11 @@ canonical_url: "https://docs.deno.com/api/node/inspector/promises/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:37:42.996Z"
-content_hash: "9012ad1da9ad4a167e736aff7c95f9bb05403765a4a2a6d6aaea2a481bdb48c9"
+last_crawled_at: "2026-04-27T17:08:26.638Z"
+content_hash: "aefd157ac56ec77edb0dc2720100caf456ad3a6d0b0f0852b65024b8f07f7f8a"
 menu_path: ["inspector/promises - Node documentation"]
 section_path: []
+content_language: "en"
 ---
 ### Usage in Deno
 
@@ -18,26 +19,22 @@ import * as mod from "node:inspector/promises";
 
 The `node:inspector/promises` module provides an API for interacting with the V8 inspector.
 
-### Classes [#](#Classes)
-
 c
 
 [Session](../.././inspector/promises/~/Session "Session")
 
 The `inspector.Session` is used for dispatching messages to the V8 inspector back-end and receiving message responses and notifications.
 
-*   [addListener](../.././inspector/promises/~/Session#method_addlistener_0)
-*   [connect](../.././inspector/promises/~/Session#method_connect_0)
-*   [connectToMainThread](../.././inspector/promises/~/Session#method_connecttomainthread_0)
-*   [disconnect](../.././inspector/promises/~/Session#method_disconnect_0)
-*   [emit](../.././inspector/promises/~/Session#method_emit_0)
-*   [on](../.././inspector/promises/~/Session#method_on_0)
-*   [once](../.././inspector/promises/~/Session#method_once_0)
-*   [post](../.././inspector/promises/~/Session#method_post_0)
-*   [prependListener](../.././inspector/promises/~/Session#method_prependlistener_0)
-*   [prependOnceListener](../.././inspector/promises/~/Session#method_prependoncelistener_0)
-
-### Functions [#](#Functions)
+-   [addListener](../.././inspector/promises/~/Session#method_addlistener_0)
+-   [connect](../.././inspector/promises/~/Session#method_connect_0)
+-   [connectToMainThread](../.././inspector/promises/~/Session#method_connecttomainthread_0)
+-   [disconnect](../.././inspector/promises/~/Session#method_disconnect_0)
+-   [emit](../.././inspector/promises/~/Session#method_emit_0)
+-   [on](../.././inspector/promises/~/Session#method_on_0)
+-   [once](../.././inspector/promises/~/Session#method_once_0)
+-   [post](../.././inspector/promises/~/Session#method_post_0)
+-   [prependListener](../.././inspector/promises/~/Session#method_prependlistener_0)
+-   [prependOnceListener](../.././inspector/promises/~/Session#method_prependoncelistener_0)
 
 f
 
@@ -87,20 +84,18 @@ f
 
 Blocks until a client (existing or connected later) has sent `Runtime.runIfWaitingForDebugger` command.
 
-### Interfaces [#](#Interfaces)
-
 I
 
 [Console.ConsoleMessage](../.././inspector/promises/~/Console.ConsoleMessage "Console.ConsoleMessage")
 
 Console message.
 
-*   [column](../.././inspector/promises/~/Console.ConsoleMessage#property_column)
-*   [level](../.././inspector/promises/~/Console.ConsoleMessage#property_level)
-*   [line](../.././inspector/promises/~/Console.ConsoleMessage#property_line)
-*   [source](../.././inspector/promises/~/Console.ConsoleMessage#property_source)
-*   [text](../.././inspector/promises/~/Console.ConsoleMessage#property_text)
-*   [url](../.././inspector/promises/~/Console.ConsoleMessage#property_url)
+-   [column](../.././inspector/promises/~/Console.ConsoleMessage#property_column)
+-   [level](../.././inspector/promises/~/Console.ConsoleMessage#property_level)
+-   [line](../.././inspector/promises/~/Console.ConsoleMessage#property_line)
+-   [source](../.././inspector/promises/~/Console.ConsoleMessage#property_source)
+-   [text](../.././inspector/promises/~/Console.ConsoleMessage#property_text)
+-   [url](../.././inspector/promises/~/Console.ConsoleMessage#property_url)
 
 I
 
@@ -108,7 +103,7 @@ I
 
 No documentation available
 
-*   [message](../.././inspector/promises/~/Console.MessageAddedEventDataType#property_message)
+-   [message](../.././inspector/promises/~/Console.MessageAddedEventDataType#property_message)
 
 I
 
@@ -116,10 +111,10 @@ I
 
 No documentation available
 
-*   [columnNumber](../.././inspector/promises/~/Debugger.BreakLocation#property_columnnumber)
-*   [lineNumber](../.././inspector/promises/~/Debugger.BreakLocation#property_linenumber)
-*   [scriptId](../.././inspector/promises/~/Debugger.BreakLocation#property_scriptid)
-*   [type](../.././inspector/promises/~/Debugger.BreakLocation#property_type)
+-   [columnNumber](../.././inspector/promises/~/Debugger.BreakLocation#property_columnnumber)
+-   [lineNumber](../.././inspector/promises/~/Debugger.BreakLocation#property_linenumber)
+-   [scriptId](../.././inspector/promises/~/Debugger.BreakLocation#property_scriptid)
+-   [type](../.././inspector/promises/~/Debugger.BreakLocation#property_type)
 
 I
 
@@ -127,8 +122,8 @@ I
 
 No documentation available
 
-*   [breakpointId](../.././inspector/promises/~/Debugger.BreakpointResolvedEventDataType#property_breakpointid)
-*   [location](../.././inspector/promises/~/Debugger.BreakpointResolvedEventDataType#property_location)
+-   [breakpointId](../.././inspector/promises/~/Debugger.BreakpointResolvedEventDataType#property_breakpointid)
+-   [location](../.././inspector/promises/~/Debugger.BreakpointResolvedEventDataType#property_location)
 
 I
 
@@ -136,14 +131,14 @@ I
 
 JavaScript call frame. Array of call frames form the call stack.
 
-*   [callFrameId](../.././inspector/promises/~/Debugger.CallFrame#property_callframeid)
-*   [functionLocation](../.././inspector/promises/~/Debugger.CallFrame#property_functionlocation)
-*   [functionName](../.././inspector/promises/~/Debugger.CallFrame#property_functionname)
-*   [location](../.././inspector/promises/~/Debugger.CallFrame#property_location)
-*   [returnValue](../.././inspector/promises/~/Debugger.CallFrame#property_returnvalue)
-*   [scopeChain](../.././inspector/promises/~/Debugger.CallFrame#property_scopechain)
-*   [this](../.././inspector/promises/~/Debugger.CallFrame#property_this)
-*   [url](../.././inspector/promises/~/Debugger.CallFrame#property_url)
+-   [callFrameId](../.././inspector/promises/~/Debugger.CallFrame#property_callframeid)
+-   [functionLocation](../.././inspector/promises/~/Debugger.CallFrame#property_functionlocation)
+-   [functionName](../.././inspector/promises/~/Debugger.CallFrame#property_functionname)
+-   [location](../.././inspector/promises/~/Debugger.CallFrame#property_location)
+-   [returnValue](../.././inspector/promises/~/Debugger.CallFrame#property_returnvalue)
+-   [scopeChain](../.././inspector/promises/~/Debugger.CallFrame#property_scopechain)
+-   [this](../.././inspector/promises/~/Debugger.CallFrame#property_this)
+-   [url](../.././inspector/promises/~/Debugger.CallFrame#property_url)
 
 I
 
@@ -151,8 +146,8 @@ I
 
 No documentation available
 
-*   [location](../.././inspector/promises/~/Debugger.ContinueToLocationParameterType#property_location)
-*   [targetCallFrames](../.././inspector/promises/~/Debugger.ContinueToLocationParameterType#property_targetcallframes)
+-   [location](../.././inspector/promises/~/Debugger.ContinueToLocationParameterType#property_location)
+-   [targetCallFrames](../.././inspector/promises/~/Debugger.ContinueToLocationParameterType#property_targetcallframes)
 
 I
 
@@ -160,7 +155,7 @@ I
 
 No documentation available
 
-*   [debuggerId](../.././inspector/promises/~/Debugger.EnableReturnType#property_debuggerid)
+-   [debuggerId](../.././inspector/promises/~/Debugger.EnableReturnType#property_debuggerid)
 
 I
 
@@ -168,14 +163,14 @@ I
 
 No documentation available
 
-*   [callFrameId](../.././inspector/promises/~/Debugger.EvaluateOnCallFrameParameterType#property_callframeid)
-*   [expression](../.././inspector/promises/~/Debugger.EvaluateOnCallFrameParameterType#property_expression)
-*   [generatePreview](../.././inspector/promises/~/Debugger.EvaluateOnCallFrameParameterType#property_generatepreview)
-*   [includeCommandLineAPI](../.././inspector/promises/~/Debugger.EvaluateOnCallFrameParameterType#property_includecommandlineapi)
-*   [objectGroup](../.././inspector/promises/~/Debugger.EvaluateOnCallFrameParameterType#property_objectgroup)
-*   [returnByValue](../.././inspector/promises/~/Debugger.EvaluateOnCallFrameParameterType#property_returnbyvalue)
-*   [silent](../.././inspector/promises/~/Debugger.EvaluateOnCallFrameParameterType#property_silent)
-*   [throwOnSideEffect](../.././inspector/promises/~/Debugger.EvaluateOnCallFrameParameterType#property_throwonsideeffect)
+-   [callFrameId](../.././inspector/promises/~/Debugger.EvaluateOnCallFrameParameterType#property_callframeid)
+-   [expression](../.././inspector/promises/~/Debugger.EvaluateOnCallFrameParameterType#property_expression)
+-   [generatePreview](../.././inspector/promises/~/Debugger.EvaluateOnCallFrameParameterType#property_generatepreview)
+-   [includeCommandLineAPI](../.././inspector/promises/~/Debugger.EvaluateOnCallFrameParameterType#property_includecommandlineapi)
+-   [objectGroup](../.././inspector/promises/~/Debugger.EvaluateOnCallFrameParameterType#property_objectgroup)
+-   [returnByValue](../.././inspector/promises/~/Debugger.EvaluateOnCallFrameParameterType#property_returnbyvalue)
+-   [silent](../.././inspector/promises/~/Debugger.EvaluateOnCallFrameParameterType#property_silent)
+-   [throwOnSideEffect](../.././inspector/promises/~/Debugger.EvaluateOnCallFrameParameterType#property_throwonsideeffect)
 
 I
 
@@ -183,8 +178,8 @@ I
 
 No documentation available
 
-*   [exceptionDetails](../.././inspector/promises/~/Debugger.EvaluateOnCallFrameReturnType#property_exceptiondetails)
-*   [result](../.././inspector/promises/~/Debugger.EvaluateOnCallFrameReturnType#property_result)
+-   [exceptionDetails](../.././inspector/promises/~/Debugger.EvaluateOnCallFrameReturnType#property_exceptiondetails)
+-   [result](../.././inspector/promises/~/Debugger.EvaluateOnCallFrameReturnType#property_result)
 
 I
 
@@ -192,9 +187,9 @@ I
 
 No documentation available
 
-*   [end](../.././inspector/promises/~/Debugger.GetPossibleBreakpointsParameterType#property_end)
-*   [restrictToFunction](../.././inspector/promises/~/Debugger.GetPossibleBreakpointsParameterType#property_restricttofunction)
-*   [start](../.././inspector/promises/~/Debugger.GetPossibleBreakpointsParameterType#property_start)
+-   [end](../.././inspector/promises/~/Debugger.GetPossibleBreakpointsParameterType#property_end)
+-   [restrictToFunction](../.././inspector/promises/~/Debugger.GetPossibleBreakpointsParameterType#property_restricttofunction)
+-   [start](../.././inspector/promises/~/Debugger.GetPossibleBreakpointsParameterType#property_start)
 
 I
 
@@ -202,7 +197,7 @@ I
 
 No documentation available
 
-*   [locations](../.././inspector/promises/~/Debugger.GetPossibleBreakpointsReturnType#property_locations)
+-   [locations](../.././inspector/promises/~/Debugger.GetPossibleBreakpointsReturnType#property_locations)
 
 I
 
@@ -210,7 +205,7 @@ I
 
 No documentation available
 
-*   [scriptId](../.././inspector/promises/~/Debugger.GetScriptSourceParameterType#property_scriptid)
+-   [scriptId](../.././inspector/promises/~/Debugger.GetScriptSourceParameterType#property_scriptid)
 
 I
 
@@ -218,7 +213,7 @@ I
 
 No documentation available
 
-*   [scriptSource](../.././inspector/promises/~/Debugger.GetScriptSourceReturnType#property_scriptsource)
+-   [scriptSource](../.././inspector/promises/~/Debugger.GetScriptSourceReturnType#property_scriptsource)
 
 I
 
@@ -226,7 +221,7 @@ I
 
 No documentation available
 
-*   [stackTraceId](../.././inspector/promises/~/Debugger.GetStackTraceParameterType#property_stacktraceid)
+-   [stackTraceId](../.././inspector/promises/~/Debugger.GetStackTraceParameterType#property_stacktraceid)
 
 I
 
@@ -234,7 +229,7 @@ I
 
 No documentation available
 
-*   [stackTrace](../.././inspector/promises/~/Debugger.GetStackTraceReturnType#property_stacktrace)
+-   [stackTrace](../.././inspector/promises/~/Debugger.GetStackTraceReturnType#property_stacktrace)
 
 I
 
@@ -242,9 +237,9 @@ I
 
 Location in the source code.
 
-*   [columnNumber](../.././inspector/promises/~/Debugger.Location#property_columnnumber)
-*   [lineNumber](../.././inspector/promises/~/Debugger.Location#property_linenumber)
-*   [scriptId](../.././inspector/promises/~/Debugger.Location#property_scriptid)
+-   [columnNumber](../.././inspector/promises/~/Debugger.Location#property_columnnumber)
+-   [lineNumber](../.././inspector/promises/~/Debugger.Location#property_linenumber)
+-   [scriptId](../.././inspector/promises/~/Debugger.Location#property_scriptid)
 
 I
 
@@ -252,13 +247,13 @@ I
 
 No documentation available
 
-*   [asyncCallStackTraceId](../.././inspector/promises/~/Debugger.PausedEventDataType#property_asynccallstacktraceid)
-*   [asyncStackTrace](../.././inspector/promises/~/Debugger.PausedEventDataType#property_asyncstacktrace)
-*   [asyncStackTraceId](../.././inspector/promises/~/Debugger.PausedEventDataType#property_asyncstacktraceid)
-*   [callFrames](../.././inspector/promises/~/Debugger.PausedEventDataType#property_callframes)
-*   [data](../.././inspector/promises/~/Debugger.PausedEventDataType#property_data)
-*   [hitBreakpoints](../.././inspector/promises/~/Debugger.PausedEventDataType#property_hitbreakpoints)
-*   [reason](../.././inspector/promises/~/Debugger.PausedEventDataType#property_reason)
+-   [asyncCallStackTraceId](../.././inspector/promises/~/Debugger.PausedEventDataType#property_asynccallstacktraceid)
+-   [asyncStackTrace](../.././inspector/promises/~/Debugger.PausedEventDataType#property_asyncstacktrace)
+-   [asyncStackTraceId](../.././inspector/promises/~/Debugger.PausedEventDataType#property_asyncstacktraceid)
+-   [callFrames](../.././inspector/promises/~/Debugger.PausedEventDataType#property_callframes)
+-   [data](../.././inspector/promises/~/Debugger.PausedEventDataType#property_data)
+-   [hitBreakpoints](../.././inspector/promises/~/Debugger.PausedEventDataType#property_hitbreakpoints)
+-   [reason](../.././inspector/promises/~/Debugger.PausedEventDataType#property_reason)
 
 I
 
@@ -266,7 +261,7 @@ I
 
 No documentation available
 
-*   [parentStackTraceId](../.././inspector/promises/~/Debugger.PauseOnAsyncCallParameterType#property_parentstacktraceid)
+-   [parentStackTraceId](../.././inspector/promises/~/Debugger.PauseOnAsyncCallParameterType#property_parentstacktraceid)
 
 I
 
@@ -274,7 +269,7 @@ I
 
 No documentation available
 
-*   [breakpointId](../.././inspector/promises/~/Debugger.RemoveBreakpointParameterType#property_breakpointid)
+-   [breakpointId](../.././inspector/promises/~/Debugger.RemoveBreakpointParameterType#property_breakpointid)
 
 I
 
@@ -282,7 +277,7 @@ I
 
 No documentation available
 
-*   [callFrameId](../.././inspector/promises/~/Debugger.RestartFrameParameterType#property_callframeid)
+-   [callFrameId](../.././inspector/promises/~/Debugger.RestartFrameParameterType#property_callframeid)
 
 I
 
@@ -290,9 +285,9 @@ I
 
 No documentation available
 
-*   [asyncStackTrace](../.././inspector/promises/~/Debugger.RestartFrameReturnType#property_asyncstacktrace)
-*   [asyncStackTraceId](../.././inspector/promises/~/Debugger.RestartFrameReturnType#property_asyncstacktraceid)
-*   [callFrames](../.././inspector/promises/~/Debugger.RestartFrameReturnType#property_callframes)
+-   [asyncStackTrace](../.././inspector/promises/~/Debugger.RestartFrameReturnType#property_asyncstacktrace)
+-   [asyncStackTraceId](../.././inspector/promises/~/Debugger.RestartFrameReturnType#property_asyncstacktraceid)
+-   [callFrames](../.././inspector/promises/~/Debugger.RestartFrameReturnType#property_callframes)
 
 I
 
@@ -300,11 +295,11 @@ I
 
 Scope description.
 
-*   [endLocation](../.././inspector/promises/~/Debugger.Scope#property_endlocation)
-*   [name](../.././inspector/promises/~/Debugger.Scope#property_name)
-*   [object](../.././inspector/promises/~/Debugger.Scope#property_object)
-*   [startLocation](../.././inspector/promises/~/Debugger.Scope#property_startlocation)
-*   [type](../.././inspector/promises/~/Debugger.Scope#property_type)
+-   [endLocation](../.././inspector/promises/~/Debugger.Scope#property_endlocation)
+-   [name](../.././inspector/promises/~/Debugger.Scope#property_name)
+-   [object](../.././inspector/promises/~/Debugger.Scope#property_object)
+-   [startLocation](../.././inspector/promises/~/Debugger.Scope#property_startlocation)
+-   [type](../.././inspector/promises/~/Debugger.Scope#property_type)
 
 I
 
@@ -312,20 +307,20 @@ I
 
 No documentation available
 
-*   [endColumn](../.././inspector/promises/~/Debugger.ScriptFailedToParseEventDataType#property_endcolumn)
-*   [endLine](../.././inspector/promises/~/Debugger.ScriptFailedToParseEventDataType#property_endline)
-*   [executionContextAuxData](../.././inspector/promises/~/Debugger.ScriptFailedToParseEventDataType#property_executioncontextauxdata)
-*   [executionContextId](../.././inspector/promises/~/Debugger.ScriptFailedToParseEventDataType#property_executioncontextid)
-*   [hasSourceURL](../.././inspector/promises/~/Debugger.ScriptFailedToParseEventDataType#property_hassourceurl)
-*   [hash](../.././inspector/promises/~/Debugger.ScriptFailedToParseEventDataType#property_hash)
-*   [isModule](../.././inspector/promises/~/Debugger.ScriptFailedToParseEventDataType#property_ismodule)
-*   [length](../.././inspector/promises/~/Debugger.ScriptFailedToParseEventDataType#property_length)
-*   [scriptId](../.././inspector/promises/~/Debugger.ScriptFailedToParseEventDataType#property_scriptid)
-*   [sourceMapURL](../.././inspector/promises/~/Debugger.ScriptFailedToParseEventDataType#property_sourcemapurl)
-*   [stackTrace](../.././inspector/promises/~/Debugger.ScriptFailedToParseEventDataType#property_stacktrace)
-*   [startColumn](../.././inspector/promises/~/Debugger.ScriptFailedToParseEventDataType#property_startcolumn)
-*   [startLine](../.././inspector/promises/~/Debugger.ScriptFailedToParseEventDataType#property_startline)
-*   [url](../.././inspector/promises/~/Debugger.ScriptFailedToParseEventDataType#property_url)
+-   [endColumn](../.././inspector/promises/~/Debugger.ScriptFailedToParseEventDataType#property_endcolumn)
+-   [endLine](../.././inspector/promises/~/Debugger.ScriptFailedToParseEventDataType#property_endline)
+-   [executionContextAuxData](../.././inspector/promises/~/Debugger.ScriptFailedToParseEventDataType#property_executioncontextauxdata)
+-   [executionContextId](../.././inspector/promises/~/Debugger.ScriptFailedToParseEventDataType#property_executioncontextid)
+-   [hasSourceURL](../.././inspector/promises/~/Debugger.ScriptFailedToParseEventDataType#property_hassourceurl)
+-   [hash](../.././inspector/promises/~/Debugger.ScriptFailedToParseEventDataType#property_hash)
+-   [isModule](../.././inspector/promises/~/Debugger.ScriptFailedToParseEventDataType#property_ismodule)
+-   [length](../.././inspector/promises/~/Debugger.ScriptFailedToParseEventDataType#property_length)
+-   [scriptId](../.././inspector/promises/~/Debugger.ScriptFailedToParseEventDataType#property_scriptid)
+-   [sourceMapURL](../.././inspector/promises/~/Debugger.ScriptFailedToParseEventDataType#property_sourcemapurl)
+-   [stackTrace](../.././inspector/promises/~/Debugger.ScriptFailedToParseEventDataType#property_stacktrace)
+-   [startColumn](../.././inspector/promises/~/Debugger.ScriptFailedToParseEventDataType#property_startcolumn)
+-   [startLine](../.././inspector/promises/~/Debugger.ScriptFailedToParseEventDataType#property_startline)
+-   [url](../.././inspector/promises/~/Debugger.ScriptFailedToParseEventDataType#property_url)
 
 I
 
@@ -333,21 +328,21 @@ I
 
 No documentation available
 
-*   [endColumn](../.././inspector/promises/~/Debugger.ScriptParsedEventDataType#property_endcolumn)
-*   [endLine](../.././inspector/promises/~/Debugger.ScriptParsedEventDataType#property_endline)
-*   [executionContextAuxData](../.././inspector/promises/~/Debugger.ScriptParsedEventDataType#property_executioncontextauxdata)
-*   [executionContextId](../.././inspector/promises/~/Debugger.ScriptParsedEventDataType#property_executioncontextid)
-*   [hasSourceURL](../.././inspector/promises/~/Debugger.ScriptParsedEventDataType#property_hassourceurl)
-*   [hash](../.././inspector/promises/~/Debugger.ScriptParsedEventDataType#property_hash)
-*   [isLiveEdit](../.././inspector/promises/~/Debugger.ScriptParsedEventDataType#property_isliveedit)
-*   [isModule](../.././inspector/promises/~/Debugger.ScriptParsedEventDataType#property_ismodule)
-*   [length](../.././inspector/promises/~/Debugger.ScriptParsedEventDataType#property_length)
-*   [scriptId](../.././inspector/promises/~/Debugger.ScriptParsedEventDataType#property_scriptid)
-*   [sourceMapURL](../.././inspector/promises/~/Debugger.ScriptParsedEventDataType#property_sourcemapurl)
-*   [stackTrace](../.././inspector/promises/~/Debugger.ScriptParsedEventDataType#property_stacktrace)
-*   [startColumn](../.././inspector/promises/~/Debugger.ScriptParsedEventDataType#property_startcolumn)
-*   [startLine](../.././inspector/promises/~/Debugger.ScriptParsedEventDataType#property_startline)
-*   [url](../.././inspector/promises/~/Debugger.ScriptParsedEventDataType#property_url)
+-   [endColumn](../.././inspector/promises/~/Debugger.ScriptParsedEventDataType#property_endcolumn)
+-   [endLine](../.././inspector/promises/~/Debugger.ScriptParsedEventDataType#property_endline)
+-   [executionContextAuxData](../.././inspector/promises/~/Debugger.ScriptParsedEventDataType#property_executioncontextauxdata)
+-   [executionContextId](../.././inspector/promises/~/Debugger.ScriptParsedEventDataType#property_executioncontextid)
+-   [hasSourceURL](../.././inspector/promises/~/Debugger.ScriptParsedEventDataType#property_hassourceurl)
+-   [hash](../.././inspector/promises/~/Debugger.ScriptParsedEventDataType#property_hash)
+-   [isLiveEdit](../.././inspector/promises/~/Debugger.ScriptParsedEventDataType#property_isliveedit)
+-   [isModule](../.././inspector/promises/~/Debugger.ScriptParsedEventDataType#property_ismodule)
+-   [length](../.././inspector/promises/~/Debugger.ScriptParsedEventDataType#property_length)
+-   [scriptId](../.././inspector/promises/~/Debugger.ScriptParsedEventDataType#property_scriptid)
+-   [sourceMapURL](../.././inspector/promises/~/Debugger.ScriptParsedEventDataType#property_sourcemapurl)
+-   [stackTrace](../.././inspector/promises/~/Debugger.ScriptParsedEventDataType#property_stacktrace)
+-   [startColumn](../.././inspector/promises/~/Debugger.ScriptParsedEventDataType#property_startcolumn)
+-   [startLine](../.././inspector/promises/~/Debugger.ScriptParsedEventDataType#property_startline)
+-   [url](../.././inspector/promises/~/Debugger.ScriptParsedEventDataType#property_url)
 
 I
 
@@ -355,8 +350,8 @@ I
 
 Location in the source code.
 
-*   [columnNumber](../.././inspector/promises/~/Debugger.ScriptPosition#property_columnnumber)
-*   [lineNumber](../.././inspector/promises/~/Debugger.ScriptPosition#property_linenumber)
+-   [columnNumber](../.././inspector/promises/~/Debugger.ScriptPosition#property_columnnumber)
+-   [lineNumber](../.././inspector/promises/~/Debugger.ScriptPosition#property_linenumber)
 
 I
 
@@ -364,10 +359,10 @@ I
 
 No documentation available
 
-*   [caseSensitive](../.././inspector/promises/~/Debugger.SearchInContentParameterType#property_casesensitive)
-*   [isRegex](../.././inspector/promises/~/Debugger.SearchInContentParameterType#property_isregex)
-*   [query](../.././inspector/promises/~/Debugger.SearchInContentParameterType#property_query)
-*   [scriptId](../.././inspector/promises/~/Debugger.SearchInContentParameterType#property_scriptid)
+-   [caseSensitive](../.././inspector/promises/~/Debugger.SearchInContentParameterType#property_casesensitive)
+-   [isRegex](../.././inspector/promises/~/Debugger.SearchInContentParameterType#property_isregex)
+-   [query](../.././inspector/promises/~/Debugger.SearchInContentParameterType#property_query)
+-   [scriptId](../.././inspector/promises/~/Debugger.SearchInContentParameterType#property_scriptid)
 
 I
 
@@ -375,7 +370,7 @@ I
 
 No documentation available
 
-*   [result](../.././inspector/promises/~/Debugger.SearchInContentReturnType#property_result)
+-   [result](../.././inspector/promises/~/Debugger.SearchInContentReturnType#property_result)
 
 I
 
@@ -383,8 +378,8 @@ I
 
 Search match for resource.
 
-*   [lineContent](../.././inspector/promises/~/Debugger.SearchMatch#property_linecontent)
-*   [lineNumber](../.././inspector/promises/~/Debugger.SearchMatch#property_linenumber)
+-   [lineContent](../.././inspector/promises/~/Debugger.SearchMatch#property_linecontent)
+-   [lineNumber](../.././inspector/promises/~/Debugger.SearchMatch#property_linenumber)
 
 I
 
@@ -392,7 +387,7 @@ I
 
 No documentation available
 
-*   [maxDepth](../.././inspector/promises/~/Debugger.SetAsyncCallStackDepthParameterType#property_maxdepth)
+-   [maxDepth](../.././inspector/promises/~/Debugger.SetAsyncCallStackDepthParameterType#property_maxdepth)
 
 I
 
@@ -400,8 +395,8 @@ I
 
 No documentation available
 
-*   [positions](../.././inspector/promises/~/Debugger.SetBlackboxedRangesParameterType#property_positions)
-*   [scriptId](../.././inspector/promises/~/Debugger.SetBlackboxedRangesParameterType#property_scriptid)
+-   [positions](../.././inspector/promises/~/Debugger.SetBlackboxedRangesParameterType#property_positions)
+-   [scriptId](../.././inspector/promises/~/Debugger.SetBlackboxedRangesParameterType#property_scriptid)
 
 I
 
@@ -409,7 +404,7 @@ I
 
 No documentation available
 
-*   [patterns](../.././inspector/promises/~/Debugger.SetBlackboxPatternsParameterType#property_patterns)
+-   [patterns](../.././inspector/promises/~/Debugger.SetBlackboxPatternsParameterType#property_patterns)
 
 I
 
@@ -417,12 +412,12 @@ I
 
 No documentation available
 
-*   [columnNumber](../.././inspector/promises/~/Debugger.SetBreakpointByUrlParameterType#property_columnnumber)
-*   [condition](../.././inspector/promises/~/Debugger.SetBreakpointByUrlParameterType#property_condition)
-*   [lineNumber](../.././inspector/promises/~/Debugger.SetBreakpointByUrlParameterType#property_linenumber)
-*   [scriptHash](../.././inspector/promises/~/Debugger.SetBreakpointByUrlParameterType#property_scripthash)
-*   [url](../.././inspector/promises/~/Debugger.SetBreakpointByUrlParameterType#property_url)
-*   [urlRegex](../.././inspector/promises/~/Debugger.SetBreakpointByUrlParameterType#property_urlregex)
+-   [columnNumber](../.././inspector/promises/~/Debugger.SetBreakpointByUrlParameterType#property_columnnumber)
+-   [condition](../.././inspector/promises/~/Debugger.SetBreakpointByUrlParameterType#property_condition)
+-   [lineNumber](../.././inspector/promises/~/Debugger.SetBreakpointByUrlParameterType#property_linenumber)
+-   [scriptHash](../.././inspector/promises/~/Debugger.SetBreakpointByUrlParameterType#property_scripthash)
+-   [url](../.././inspector/promises/~/Debugger.SetBreakpointByUrlParameterType#property_url)
+-   [urlRegex](../.././inspector/promises/~/Debugger.SetBreakpointByUrlParameterType#property_urlregex)
 
 I
 
@@ -430,8 +425,8 @@ I
 
 No documentation available
 
-*   [breakpointId](../.././inspector/promises/~/Debugger.SetBreakpointByUrlReturnType#property_breakpointid)
-*   [locations](../.././inspector/promises/~/Debugger.SetBreakpointByUrlReturnType#property_locations)
+-   [breakpointId](../.././inspector/promises/~/Debugger.SetBreakpointByUrlReturnType#property_breakpointid)
+-   [locations](../.././inspector/promises/~/Debugger.SetBreakpointByUrlReturnType#property_locations)
 
 I
 
@@ -439,8 +434,8 @@ I
 
 No documentation available
 
-*   [condition](../.././inspector/promises/~/Debugger.SetBreakpointParameterType#property_condition)
-*   [location](../.././inspector/promises/~/Debugger.SetBreakpointParameterType#property_location)
+-   [condition](../.././inspector/promises/~/Debugger.SetBreakpointParameterType#property_condition)
+-   [location](../.././inspector/promises/~/Debugger.SetBreakpointParameterType#property_location)
 
 I
 
@@ -448,8 +443,8 @@ I
 
 No documentation available
 
-*   [actualLocation](../.././inspector/promises/~/Debugger.SetBreakpointReturnType#property_actuallocation)
-*   [breakpointId](../.././inspector/promises/~/Debugger.SetBreakpointReturnType#property_breakpointid)
+-   [actualLocation](../.././inspector/promises/~/Debugger.SetBreakpointReturnType#property_actuallocation)
+-   [breakpointId](../.././inspector/promises/~/Debugger.SetBreakpointReturnType#property_breakpointid)
 
 I
 
@@ -457,7 +452,7 @@ I
 
 No documentation available
 
-*   [active](../.././inspector/promises/~/Debugger.SetBreakpointsActiveParameterType#property_active)
+-   [active](../.././inspector/promises/~/Debugger.SetBreakpointsActiveParameterType#property_active)
 
 I
 
@@ -465,7 +460,7 @@ I
 
 No documentation available
 
-*   [state](../.././inspector/promises/~/Debugger.SetPauseOnExceptionsParameterType#property_state)
+-   [state](../.././inspector/promises/~/Debugger.SetPauseOnExceptionsParameterType#property_state)
 
 I
 
@@ -473,7 +468,7 @@ I
 
 No documentation available
 
-*   [newValue](../.././inspector/promises/~/Debugger.SetReturnValueParameterType#property_newvalue)
+-   [newValue](../.././inspector/promises/~/Debugger.SetReturnValueParameterType#property_newvalue)
 
 I
 
@@ -481,9 +476,9 @@ I
 
 No documentation available
 
-*   [dryRun](../.././inspector/promises/~/Debugger.SetScriptSourceParameterType#property_dryrun)
-*   [scriptId](../.././inspector/promises/~/Debugger.SetScriptSourceParameterType#property_scriptid)
-*   [scriptSource](../.././inspector/promises/~/Debugger.SetScriptSourceParameterType#property_scriptsource)
+-   [dryRun](../.././inspector/promises/~/Debugger.SetScriptSourceParameterType#property_dryrun)
+-   [scriptId](../.././inspector/promises/~/Debugger.SetScriptSourceParameterType#property_scriptid)
+-   [scriptSource](../.././inspector/promises/~/Debugger.SetScriptSourceParameterType#property_scriptsource)
 
 I
 
@@ -491,11 +486,11 @@ I
 
 No documentation available
 
-*   [asyncStackTrace](../.././inspector/promises/~/Debugger.SetScriptSourceReturnType#property_asyncstacktrace)
-*   [asyncStackTraceId](../.././inspector/promises/~/Debugger.SetScriptSourceReturnType#property_asyncstacktraceid)
-*   [callFrames](../.././inspector/promises/~/Debugger.SetScriptSourceReturnType#property_callframes)
-*   [exceptionDetails](../.././inspector/promises/~/Debugger.SetScriptSourceReturnType#property_exceptiondetails)
-*   [stackChanged](../.././inspector/promises/~/Debugger.SetScriptSourceReturnType#property_stackchanged)
+-   [asyncStackTrace](../.././inspector/promises/~/Debugger.SetScriptSourceReturnType#property_asyncstacktrace)
+-   [asyncStackTraceId](../.././inspector/promises/~/Debugger.SetScriptSourceReturnType#property_asyncstacktraceid)
+-   [callFrames](../.././inspector/promises/~/Debugger.SetScriptSourceReturnType#property_callframes)
+-   [exceptionDetails](../.././inspector/promises/~/Debugger.SetScriptSourceReturnType#property_exceptiondetails)
+-   [stackChanged](../.././inspector/promises/~/Debugger.SetScriptSourceReturnType#property_stackchanged)
 
 I
 
@@ -503,7 +498,7 @@ I
 
 No documentation available
 
-*   [skip](../.././inspector/promises/~/Debugger.SetSkipAllPausesParameterType#property_skip)
+-   [skip](../.././inspector/promises/~/Debugger.SetSkipAllPausesParameterType#property_skip)
 
 I
 
@@ -511,10 +506,10 @@ I
 
 No documentation available
 
-*   [callFrameId](../.././inspector/promises/~/Debugger.SetVariableValueParameterType#property_callframeid)
-*   [newValue](../.././inspector/promises/~/Debugger.SetVariableValueParameterType#property_newvalue)
-*   [scopeNumber](../.././inspector/promises/~/Debugger.SetVariableValueParameterType#property_scopenumber)
-*   [variableName](../.././inspector/promises/~/Debugger.SetVariableValueParameterType#property_variablename)
+-   [callFrameId](../.././inspector/promises/~/Debugger.SetVariableValueParameterType#property_callframeid)
+-   [newValue](../.././inspector/promises/~/Debugger.SetVariableValueParameterType#property_newvalue)
+-   [scopeNumber](../.././inspector/promises/~/Debugger.SetVariableValueParameterType#property_scopenumber)
+-   [variableName](../.././inspector/promises/~/Debugger.SetVariableValueParameterType#property_variablename)
 
 I
 
@@ -522,7 +517,7 @@ I
 
 No documentation available
 
-*   [breakOnAsyncCall](../.././inspector/promises/~/Debugger.StepIntoParameterType#property_breakonasynccall)
+-   [breakOnAsyncCall](../.././inspector/promises/~/Debugger.StepIntoParameterType#property_breakonasynccall)
 
 I
 
@@ -530,7 +525,7 @@ I
 
 No documentation available
 
-*   [chunk](../.././inspector/promises/~/HeapProfiler.AddHeapSnapshotChunkEventDataType#property_chunk)
+-   [chunk](../.././inspector/promises/~/HeapProfiler.AddHeapSnapshotChunkEventDataType#property_chunk)
 
 I
 
@@ -538,7 +533,7 @@ I
 
 No documentation available
 
-*   [heapObjectId](../.././inspector/promises/~/HeapProfiler.AddInspectedHeapObjectParameterType#property_heapobjectid)
+-   [heapObjectId](../.././inspector/promises/~/HeapProfiler.AddInspectedHeapObjectParameterType#property_heapobjectid)
 
 I
 
@@ -546,7 +541,7 @@ I
 
 No documentation available
 
-*   [objectId](../.././inspector/promises/~/HeapProfiler.GetHeapObjectIdParameterType#property_objectid)
+-   [objectId](../.././inspector/promises/~/HeapProfiler.GetHeapObjectIdParameterType#property_objectid)
 
 I
 
@@ -554,7 +549,7 @@ I
 
 No documentation available
 
-*   [heapSnapshotObjectId](../.././inspector/promises/~/HeapProfiler.GetHeapObjectIdReturnType#property_heapsnapshotobjectid)
+-   [heapSnapshotObjectId](../.././inspector/promises/~/HeapProfiler.GetHeapObjectIdReturnType#property_heapsnapshotobjectid)
 
 I
 
@@ -562,8 +557,8 @@ I
 
 No documentation available
 
-*   [objectGroup](../.././inspector/promises/~/HeapProfiler.GetObjectByHeapObjectIdParameterType#property_objectgroup)
-*   [objectId](../.././inspector/promises/~/HeapProfiler.GetObjectByHeapObjectIdParameterType#property_objectid)
+-   [objectGroup](../.././inspector/promises/~/HeapProfiler.GetObjectByHeapObjectIdParameterType#property_objectgroup)
+-   [objectId](../.././inspector/promises/~/HeapProfiler.GetObjectByHeapObjectIdParameterType#property_objectid)
 
 I
 
@@ -571,7 +566,7 @@ I
 
 No documentation available
 
-*   [result](../.././inspector/promises/~/HeapProfiler.GetObjectByHeapObjectIdReturnType#property_result)
+-   [result](../.././inspector/promises/~/HeapProfiler.GetObjectByHeapObjectIdReturnType#property_result)
 
 I
 
@@ -579,7 +574,7 @@ I
 
 No documentation available
 
-*   [profile](../.././inspector/promises/~/HeapProfiler.GetSamplingProfileReturnType#property_profile)
+-   [profile](../.././inspector/promises/~/HeapProfiler.GetSamplingProfileReturnType#property_profile)
 
 I
 
@@ -587,7 +582,7 @@ I
 
 No documentation available
 
-*   [statsUpdate](../.././inspector/promises/~/HeapProfiler.HeapStatsUpdateEventDataType#property_statsupdate)
+-   [statsUpdate](../.././inspector/promises/~/HeapProfiler.HeapStatsUpdateEventDataType#property_statsupdate)
 
 I
 
@@ -595,8 +590,8 @@ I
 
 No documentation available
 
-*   [lastSeenObjectId](../.././inspector/promises/~/HeapProfiler.LastSeenObjectIdEventDataType#property_lastseenobjectid)
-*   [timestamp](../.././inspector/promises/~/HeapProfiler.LastSeenObjectIdEventDataType#property_timestamp)
+-   [lastSeenObjectId](../.././inspector/promises/~/HeapProfiler.LastSeenObjectIdEventDataType#property_lastseenobjectid)
+-   [timestamp](../.././inspector/promises/~/HeapProfiler.LastSeenObjectIdEventDataType#property_timestamp)
 
 I
 
@@ -604,9 +599,9 @@ I
 
 No documentation available
 
-*   [done](../.././inspector/promises/~/HeapProfiler.ReportHeapSnapshotProgressEventDataType#property_done)
-*   [finished](../.././inspector/promises/~/HeapProfiler.ReportHeapSnapshotProgressEventDataType#property_finished)
-*   [total](../.././inspector/promises/~/HeapProfiler.ReportHeapSnapshotProgressEventDataType#property_total)
+-   [done](../.././inspector/promises/~/HeapProfiler.ReportHeapSnapshotProgressEventDataType#property_done)
+-   [finished](../.././inspector/promises/~/HeapProfiler.ReportHeapSnapshotProgressEventDataType#property_finished)
+-   [total](../.././inspector/promises/~/HeapProfiler.ReportHeapSnapshotProgressEventDataType#property_total)
 
 I
 
@@ -614,7 +609,7 @@ I
 
 Profile.
 
-*   [head](../.././inspector/promises/~/HeapProfiler.SamplingHeapProfile#property_head)
+-   [head](../.././inspector/promises/~/HeapProfiler.SamplingHeapProfile#property_head)
 
 I
 
@@ -622,9 +617,9 @@ I
 
 Sampling Heap Profile node. Holds callsite information, allocation statistics and child nodes.
 
-*   [callFrame](../.././inspector/promises/~/HeapProfiler.SamplingHeapProfileNode#property_callframe)
-*   [children](../.././inspector/promises/~/HeapProfiler.SamplingHeapProfileNode#property_children)
-*   [selfSize](../.././inspector/promises/~/HeapProfiler.SamplingHeapProfileNode#property_selfsize)
+-   [callFrame](../.././inspector/promises/~/HeapProfiler.SamplingHeapProfileNode#property_callframe)
+-   [children](../.././inspector/promises/~/HeapProfiler.SamplingHeapProfileNode#property_children)
+-   [selfSize](../.././inspector/promises/~/HeapProfiler.SamplingHeapProfileNode#property_selfsize)
 
 I
 
@@ -632,7 +627,7 @@ I
 
 No documentation available
 
-*   [samplingInterval](../.././inspector/promises/~/HeapProfiler.StartSamplingParameterType#property_samplinginterval)
+-   [samplingInterval](../.././inspector/promises/~/HeapProfiler.StartSamplingParameterType#property_samplinginterval)
 
 I
 
@@ -640,7 +635,7 @@ I
 
 No documentation available
 
-*   [trackAllocations](../.././inspector/promises/~/HeapProfiler.StartTrackingHeapObjectsParameterType#property_trackallocations)
+-   [trackAllocations](../.././inspector/promises/~/HeapProfiler.StartTrackingHeapObjectsParameterType#property_trackallocations)
 
 I
 
@@ -648,7 +643,7 @@ I
 
 No documentation available
 
-*   [profile](../.././inspector/promises/~/HeapProfiler.StopSamplingReturnType#property_profile)
+-   [profile](../.././inspector/promises/~/HeapProfiler.StopSamplingReturnType#property_profile)
 
 I
 
@@ -656,7 +651,7 @@ I
 
 No documentation available
 
-*   [reportProgress](../.././inspector/promises/~/HeapProfiler.StopTrackingHeapObjectsParameterType#property_reportprogress)
+-   [reportProgress](../.././inspector/promises/~/HeapProfiler.StopTrackingHeapObjectsParameterType#property_reportprogress)
 
 I
 
@@ -664,7 +659,7 @@ I
 
 No documentation available
 
-*   [reportProgress](../.././inspector/promises/~/HeapProfiler.TakeHeapSnapshotParameterType#property_reportprogress)
+-   [reportProgress](../.././inspector/promises/~/HeapProfiler.TakeHeapSnapshotParameterType#property_reportprogress)
 
 I
 
@@ -672,8 +667,8 @@ I
 
 No documentation available
 
-*   [method](../.././inspector/~/InspectorNotification#property_method)
-*   [params](../.././inspector/~/InspectorNotification#property_params)
+-   [method](../.././inspector/~/InspectorNotification#property_method)
+-   [params](../.././inspector/~/InspectorNotification#property_params)
 
 I
 
@@ -687,10 +682,10 @@ I
 
 No documentation available
 
-*   [errorText](../.././inspector/promises/~/Network.LoadingFailedEventDataType#property_errortext)
-*   [requestId](../.././inspector/promises/~/Network.LoadingFailedEventDataType#property_requestid)
-*   [timestamp](../.././inspector/promises/~/Network.LoadingFailedEventDataType#property_timestamp)
-*   [type](../.././inspector/promises/~/Network.LoadingFailedEventDataType#property_type)
+-   [errorText](../.././inspector/promises/~/Network.LoadingFailedEventDataType#property_errortext)
+-   [requestId](../.././inspector/promises/~/Network.LoadingFailedEventDataType#property_requestid)
+-   [timestamp](../.././inspector/promises/~/Network.LoadingFailedEventDataType#property_timestamp)
+-   [type](../.././inspector/promises/~/Network.LoadingFailedEventDataType#property_type)
 
 I
 
@@ -698,8 +693,8 @@ I
 
 No documentation available
 
-*   [requestId](../.././inspector/promises/~/Network.LoadingFinishedEventDataType#property_requestid)
-*   [timestamp](../.././inspector/promises/~/Network.LoadingFinishedEventDataType#property_timestamp)
+-   [requestId](../.././inspector/promises/~/Network.LoadingFinishedEventDataType#property_requestid)
+-   [timestamp](../.././inspector/promises/~/Network.LoadingFinishedEventDataType#property_timestamp)
 
 I
 
@@ -707,9 +702,9 @@ I
 
 HTTP request data.
 
-*   [headers](../.././inspector/promises/~/Network.Request#property_headers)
-*   [method](../.././inspector/promises/~/Network.Request#property_method)
-*   [url](../.././inspector/promises/~/Network.Request#property_url)
+-   [headers](../.././inspector/promises/~/Network.Request#property_headers)
+-   [method](../.././inspector/promises/~/Network.Request#property_method)
+-   [url](../.././inspector/promises/~/Network.Request#property_url)
 
 I
 
@@ -717,10 +712,10 @@ I
 
 No documentation available
 
-*   [request](../.././inspector/promises/~/Network.RequestWillBeSentEventDataType#property_request)
-*   [requestId](../.././inspector/promises/~/Network.RequestWillBeSentEventDataType#property_requestid)
-*   [timestamp](../.././inspector/promises/~/Network.RequestWillBeSentEventDataType#property_timestamp)
-*   [wallTime](../.././inspector/promises/~/Network.RequestWillBeSentEventDataType#property_walltime)
+-   [request](../.././inspector/promises/~/Network.RequestWillBeSentEventDataType#property_request)
+-   [requestId](../.././inspector/promises/~/Network.RequestWillBeSentEventDataType#property_requestid)
+-   [timestamp](../.././inspector/promises/~/Network.RequestWillBeSentEventDataType#property_timestamp)
+-   [wallTime](../.././inspector/promises/~/Network.RequestWillBeSentEventDataType#property_walltime)
 
 I
 
@@ -728,10 +723,10 @@ I
 
 HTTP response data.
 
-*   [headers](../.././inspector/promises/~/Network.Response#property_headers)
-*   [status](../.././inspector/promises/~/Network.Response#property_status)
-*   [statusText](../.././inspector/promises/~/Network.Response#property_statustext)
-*   [url](../.././inspector/promises/~/Network.Response#property_url)
+-   [headers](../.././inspector/promises/~/Network.Response#property_headers)
+-   [status](../.././inspector/promises/~/Network.Response#property_status)
+-   [statusText](../.././inspector/promises/~/Network.Response#property_statustext)
+-   [url](../.././inspector/promises/~/Network.Response#property_url)
 
 I
 
@@ -739,10 +734,10 @@ I
 
 No documentation available
 
-*   [requestId](../.././inspector/promises/~/Network.ResponseReceivedEventDataType#property_requestid)
-*   [response](../.././inspector/promises/~/Network.ResponseReceivedEventDataType#property_response)
-*   [timestamp](../.././inspector/promises/~/Network.ResponseReceivedEventDataType#property_timestamp)
-*   [type](../.././inspector/promises/~/Network.ResponseReceivedEventDataType#property_type)
+-   [requestId](../.././inspector/promises/~/Network.ResponseReceivedEventDataType#property_requestid)
+-   [response](../.././inspector/promises/~/Network.ResponseReceivedEventDataType#property_response)
+-   [timestamp](../.././inspector/promises/~/Network.ResponseReceivedEventDataType#property_timestamp)
+-   [type](../.././inspector/promises/~/Network.ResponseReceivedEventDataType#property_type)
 
 I
 
@@ -750,7 +745,7 @@ I
 
 No documentation available
 
-*   [enabled](../.././inspector/promises/~/NodeRuntime.NotifyWhenWaitingForDisconnectParameterType#property_enabled)
+-   [enabled](../.././inspector/promises/~/NodeRuntime.NotifyWhenWaitingForDisconnectParameterType#property_enabled)
 
 I
 
@@ -758,7 +753,7 @@ I
 
 No documentation available
 
-*   [value](../.././inspector/promises/~/NodeTracing.DataCollectedEventDataType#property_value)
+-   [value](../.././inspector/promises/~/NodeTracing.DataCollectedEventDataType#property_value)
 
 I
 
@@ -766,7 +761,7 @@ I
 
 No documentation available
 
-*   [categories](../.././inspector/promises/~/NodeTracing.GetCategoriesReturnType#property_categories)
+-   [categories](../.././inspector/promises/~/NodeTracing.GetCategoriesReturnType#property_categories)
 
 I
 
@@ -774,7 +769,7 @@ I
 
 No documentation available
 
-*   [traceConfig](../.././inspector/promises/~/NodeTracing.StartParameterType#property_traceconfig)
+-   [traceConfig](../.././inspector/promises/~/NodeTracing.StartParameterType#property_traceconfig)
 
 I
 
@@ -782,8 +777,8 @@ I
 
 No documentation available
 
-*   [includedCategories](../.././inspector/promises/~/NodeTracing.TraceConfig#property_includedcategories)
-*   [recordMode](../.././inspector/promises/~/NodeTracing.TraceConfig#property_recordmode)
+-   [includedCategories](../.././inspector/promises/~/NodeTracing.TraceConfig#property_includedcategories)
+-   [recordMode](../.././inspector/promises/~/NodeTracing.TraceConfig#property_recordmode)
 
 I
 
@@ -791,9 +786,9 @@ I
 
 No documentation available
 
-*   [sessionId](../.././inspector/promises/~/NodeWorker.AttachedToWorkerEventDataType#property_sessionid)
-*   [waitingForDebugger](../.././inspector/promises/~/NodeWorker.AttachedToWorkerEventDataType#property_waitingfordebugger)
-*   [workerInfo](../.././inspector/promises/~/NodeWorker.AttachedToWorkerEventDataType#property_workerinfo)
+-   [sessionId](../.././inspector/promises/~/NodeWorker.AttachedToWorkerEventDataType#property_sessionid)
+-   [waitingForDebugger](../.././inspector/promises/~/NodeWorker.AttachedToWorkerEventDataType#property_waitingfordebugger)
+-   [workerInfo](../.././inspector/promises/~/NodeWorker.AttachedToWorkerEventDataType#property_workerinfo)
 
 I
 
@@ -801,7 +796,7 @@ I
 
 No documentation available
 
-*   [sessionId](../.././inspector/promises/~/NodeWorker.DetachedFromWorkerEventDataType#property_sessionid)
+-   [sessionId](../.././inspector/promises/~/NodeWorker.DetachedFromWorkerEventDataType#property_sessionid)
 
 I
 
@@ -809,7 +804,7 @@ I
 
 No documentation available
 
-*   [sessionId](../.././inspector/promises/~/NodeWorker.DetachParameterType#property_sessionid)
+-   [sessionId](../.././inspector/promises/~/NodeWorker.DetachParameterType#property_sessionid)
 
 I
 
@@ -817,7 +812,7 @@ I
 
 No documentation available
 
-*   [waitForDebuggerOnStart](../.././inspector/promises/~/NodeWorker.EnableParameterType#property_waitfordebuggeronstart)
+-   [waitForDebuggerOnStart](../.././inspector/promises/~/NodeWorker.EnableParameterType#property_waitfordebuggeronstart)
 
 I
 
@@ -825,8 +820,8 @@ I
 
 No documentation available
 
-*   [message](../.././inspector/promises/~/NodeWorker.ReceivedMessageFromWorkerEventDataType#property_message)
-*   [sessionId](../.././inspector/promises/~/NodeWorker.ReceivedMessageFromWorkerEventDataType#property_sessionid)
+-   [message](../.././inspector/promises/~/NodeWorker.ReceivedMessageFromWorkerEventDataType#property_message)
+-   [sessionId](../.././inspector/promises/~/NodeWorker.ReceivedMessageFromWorkerEventDataType#property_sessionid)
 
 I
 
@@ -834,8 +829,8 @@ I
 
 No documentation available
 
-*   [message](../.././inspector/promises/~/NodeWorker.SendMessageToWorkerParameterType#property_message)
-*   [sessionId](../.././inspector/promises/~/NodeWorker.SendMessageToWorkerParameterType#property_sessionid)
+-   [message](../.././inspector/promises/~/NodeWorker.SendMessageToWorkerParameterType#property_message)
+-   [sessionId](../.././inspector/promises/~/NodeWorker.SendMessageToWorkerParameterType#property_sessionid)
 
 I
 
@@ -843,10 +838,10 @@ I
 
 No documentation available
 
-*   [title](../.././inspector/promises/~/NodeWorker.WorkerInfo#property_title)
-*   [type](../.././inspector/promises/~/NodeWorker.WorkerInfo#property_type)
-*   [url](../.././inspector/promises/~/NodeWorker.WorkerInfo#property_url)
-*   [workerId](../.././inspector/promises/~/NodeWorker.WorkerInfo#property_workerid)
+-   [title](../.././inspector/promises/~/NodeWorker.WorkerInfo#property_title)
+-   [type](../.././inspector/promises/~/NodeWorker.WorkerInfo#property_type)
+-   [url](../.././inspector/promises/~/NodeWorker.WorkerInfo#property_url)
+-   [workerId](../.././inspector/promises/~/NodeWorker.WorkerInfo#property_workerid)
 
 I
 
@@ -854,10 +849,10 @@ I
 
 No documentation available
 
-*   [id](../.././inspector/promises/~/Profiler.ConsoleProfileFinishedEventDataType#property_id)
-*   [location](../.././inspector/promises/~/Profiler.ConsoleProfileFinishedEventDataType#property_location)
-*   [profile](../.././inspector/promises/~/Profiler.ConsoleProfileFinishedEventDataType#property_profile)
-*   [title](../.././inspector/promises/~/Profiler.ConsoleProfileFinishedEventDataType#property_title)
+-   [id](../.././inspector/promises/~/Profiler.ConsoleProfileFinishedEventDataType#property_id)
+-   [location](../.././inspector/promises/~/Profiler.ConsoleProfileFinishedEventDataType#property_location)
+-   [profile](../.././inspector/promises/~/Profiler.ConsoleProfileFinishedEventDataType#property_profile)
+-   [title](../.././inspector/promises/~/Profiler.ConsoleProfileFinishedEventDataType#property_title)
 
 I
 
@@ -865,9 +860,9 @@ I
 
 No documentation available
 
-*   [id](../.././inspector/promises/~/Profiler.ConsoleProfileStartedEventDataType#property_id)
-*   [location](../.././inspector/promises/~/Profiler.ConsoleProfileStartedEventDataType#property_location)
-*   [title](../.././inspector/promises/~/Profiler.ConsoleProfileStartedEventDataType#property_title)
+-   [id](../.././inspector/promises/~/Profiler.ConsoleProfileStartedEventDataType#property_id)
+-   [location](../.././inspector/promises/~/Profiler.ConsoleProfileStartedEventDataType#property_location)
+-   [title](../.././inspector/promises/~/Profiler.ConsoleProfileStartedEventDataType#property_title)
 
 I
 
@@ -875,9 +870,9 @@ I
 
 Coverage data for a source range.
 
-*   [count](../.././inspector/promises/~/Profiler.CoverageRange#property_count)
-*   [endOffset](../.././inspector/promises/~/Profiler.CoverageRange#property_endoffset)
-*   [startOffset](../.././inspector/promises/~/Profiler.CoverageRange#property_startoffset)
+-   [count](../.././inspector/promises/~/Profiler.CoverageRange#property_count)
+-   [endOffset](../.././inspector/promises/~/Profiler.CoverageRange#property_endoffset)
+-   [startOffset](../.././inspector/promises/~/Profiler.CoverageRange#property_startoffset)
 
 I
 
@@ -885,9 +880,9 @@ I
 
 Coverage data for a JavaScript function.
 
-*   [functionName](../.././inspector/promises/~/Profiler.FunctionCoverage#property_functionname)
-*   [isBlockCoverage](../.././inspector/promises/~/Profiler.FunctionCoverage#property_isblockcoverage)
-*   [ranges](../.././inspector/promises/~/Profiler.FunctionCoverage#property_ranges)
+-   [functionName](../.././inspector/promises/~/Profiler.FunctionCoverage#property_functionname)
+-   [isBlockCoverage](../.././inspector/promises/~/Profiler.FunctionCoverage#property_isblockcoverage)
+-   [ranges](../.././inspector/promises/~/Profiler.FunctionCoverage#property_ranges)
 
 I
 
@@ -895,7 +890,7 @@ I
 
 No documentation available
 
-*   [result](../.././inspector/promises/~/Profiler.GetBestEffortCoverageReturnType#property_result)
+-   [result](../.././inspector/promises/~/Profiler.GetBestEffortCoverageReturnType#property_result)
 
 I
 
@@ -903,8 +898,8 @@ I
 
 Specifies a number of samples attributed to a certain source position.
 
-*   [line](../.././inspector/promises/~/Profiler.PositionTickInfo#property_line)
-*   [ticks](../.././inspector/promises/~/Profiler.PositionTickInfo#property_ticks)
+-   [line](../.././inspector/promises/~/Profiler.PositionTickInfo#property_line)
+-   [ticks](../.././inspector/promises/~/Profiler.PositionTickInfo#property_ticks)
 
 I
 
@@ -912,11 +907,11 @@ I
 
 Profile.
 
-*   [endTime](../.././inspector/promises/~/Profiler.Profile#property_endtime)
-*   [nodes](../.././inspector/promises/~/Profiler.Profile#property_nodes)
-*   [samples](../.././inspector/promises/~/Profiler.Profile#property_samples)
-*   [startTime](../.././inspector/promises/~/Profiler.Profile#property_starttime)
-*   [timeDeltas](../.././inspector/promises/~/Profiler.Profile#property_timedeltas)
+-   [endTime](../.././inspector/promises/~/Profiler.Profile#property_endtime)
+-   [nodes](../.././inspector/promises/~/Profiler.Profile#property_nodes)
+-   [samples](../.././inspector/promises/~/Profiler.Profile#property_samples)
+-   [startTime](../.././inspector/promises/~/Profiler.Profile#property_starttime)
+-   [timeDeltas](../.././inspector/promises/~/Profiler.Profile#property_timedeltas)
 
 I
 
@@ -924,12 +919,12 @@ I
 
 Profile node. Holds callsite information, execution statistics and child nodes.
 
-*   [callFrame](../.././inspector/promises/~/Profiler.ProfileNode#property_callframe)
-*   [children](../.././inspector/promises/~/Profiler.ProfileNode#property_children)
-*   [deoptReason](../.././inspector/promises/~/Profiler.ProfileNode#property_deoptreason)
-*   [hitCount](../.././inspector/promises/~/Profiler.ProfileNode#property_hitcount)
-*   [id](../.././inspector/promises/~/Profiler.ProfileNode#property_id)
-*   [positionTicks](../.././inspector/promises/~/Profiler.ProfileNode#property_positionticks)
+-   [callFrame](../.././inspector/promises/~/Profiler.ProfileNode#property_callframe)
+-   [children](../.././inspector/promises/~/Profiler.ProfileNode#property_children)
+-   [deoptReason](../.././inspector/promises/~/Profiler.ProfileNode#property_deoptreason)
+-   [hitCount](../.././inspector/promises/~/Profiler.ProfileNode#property_hitcount)
+-   [id](../.././inspector/promises/~/Profiler.ProfileNode#property_id)
+-   [positionTicks](../.././inspector/promises/~/Profiler.ProfileNode#property_positionticks)
 
 I
 
@@ -937,9 +932,9 @@ I
 
 Coverage data for a JavaScript script.
 
-*   [functions](../.././inspector/promises/~/Profiler.ScriptCoverage#property_functions)
-*   [scriptId](../.././inspector/promises/~/Profiler.ScriptCoverage#property_scriptid)
-*   [url](../.././inspector/promises/~/Profiler.ScriptCoverage#property_url)
+-   [functions](../.././inspector/promises/~/Profiler.ScriptCoverage#property_functions)
+-   [scriptId](../.././inspector/promises/~/Profiler.ScriptCoverage#property_scriptid)
+-   [url](../.././inspector/promises/~/Profiler.ScriptCoverage#property_url)
 
 I
 
@@ -947,7 +942,7 @@ I
 
 No documentation available
 
-*   [interval](../.././inspector/promises/~/Profiler.SetSamplingIntervalParameterType#property_interval)
+-   [interval](../.././inspector/promises/~/Profiler.SetSamplingIntervalParameterType#property_interval)
 
 I
 
@@ -955,8 +950,8 @@ I
 
 No documentation available
 
-*   [callCount](../.././inspector/promises/~/Profiler.StartPreciseCoverageParameterType#property_callcount)
-*   [detailed](../.././inspector/promises/~/Profiler.StartPreciseCoverageParameterType#property_detailed)
+-   [callCount](../.././inspector/promises/~/Profiler.StartPreciseCoverageParameterType#property_callcount)
+-   [detailed](../.././inspector/promises/~/Profiler.StartPreciseCoverageParameterType#property_detailed)
 
 I
 
@@ -964,7 +959,7 @@ I
 
 No documentation available
 
-*   [profile](../.././inspector/promises/~/Profiler.StopReturnType#property_profile)
+-   [profile](../.././inspector/promises/~/Profiler.StopReturnType#property_profile)
 
 I
 
@@ -972,7 +967,7 @@ I
 
 No documentation available
 
-*   [result](../.././inspector/promises/~/Profiler.TakePreciseCoverageReturnType#property_result)
+-   [result](../.././inspector/promises/~/Profiler.TakePreciseCoverageReturnType#property_result)
 
 I
 
@@ -980,9 +975,9 @@ I
 
 No documentation available
 
-*   [generatePreview](../.././inspector/promises/~/Runtime.AwaitPromiseParameterType#property_generatepreview)
-*   [promiseObjectId](../.././inspector/promises/~/Runtime.AwaitPromiseParameterType#property_promiseobjectid)
-*   [returnByValue](../.././inspector/promises/~/Runtime.AwaitPromiseParameterType#property_returnbyvalue)
+-   [generatePreview](../.././inspector/promises/~/Runtime.AwaitPromiseParameterType#property_generatepreview)
+-   [promiseObjectId](../.././inspector/promises/~/Runtime.AwaitPromiseParameterType#property_promiseobjectid)
+-   [returnByValue](../.././inspector/promises/~/Runtime.AwaitPromiseParameterType#property_returnbyvalue)
 
 I
 
@@ -990,8 +985,8 @@ I
 
 No documentation available
 
-*   [exceptionDetails](../.././inspector/promises/~/Runtime.AwaitPromiseReturnType#property_exceptiondetails)
-*   [result](../.././inspector/promises/~/Runtime.AwaitPromiseReturnType#property_result)
+-   [exceptionDetails](../.././inspector/promises/~/Runtime.AwaitPromiseReturnType#property_exceptiondetails)
+-   [result](../.././inspector/promises/~/Runtime.AwaitPromiseReturnType#property_result)
 
 I
 
@@ -999,9 +994,9 @@ I
 
 Represents function call argument. Either remote object id `objectId`, primitive `value`, unserializable primitive value or neither of (for undefined) them should be specified.
 
-*   [objectId](../.././inspector/promises/~/Runtime.CallArgument#property_objectid)
-*   [unserializableValue](../.././inspector/promises/~/Runtime.CallArgument#property_unserializablevalue)
-*   [value](../.././inspector/promises/~/Runtime.CallArgument#property_value)
+-   [objectId](../.././inspector/promises/~/Runtime.CallArgument#property_objectid)
+-   [unserializableValue](../.././inspector/promises/~/Runtime.CallArgument#property_unserializablevalue)
+-   [value](../.././inspector/promises/~/Runtime.CallArgument#property_value)
 
 I
 
@@ -1009,11 +1004,11 @@ I
 
 Stack entry for runtime errors and assertions.
 
-*   [columnNumber](../.././inspector/promises/~/Runtime.CallFrame#property_columnnumber)
-*   [functionName](../.././inspector/promises/~/Runtime.CallFrame#property_functionname)
-*   [lineNumber](../.././inspector/promises/~/Runtime.CallFrame#property_linenumber)
-*   [scriptId](../.././inspector/promises/~/Runtime.CallFrame#property_scriptid)
-*   [url](../.././inspector/promises/~/Runtime.CallFrame#property_url)
+-   [columnNumber](../.././inspector/promises/~/Runtime.CallFrame#property_columnnumber)
+-   [functionName](../.././inspector/promises/~/Runtime.CallFrame#property_functionname)
+-   [lineNumber](../.././inspector/promises/~/Runtime.CallFrame#property_linenumber)
+-   [scriptId](../.././inspector/promises/~/Runtime.CallFrame#property_scriptid)
+-   [url](../.././inspector/promises/~/Runtime.CallFrame#property_url)
 
 I
 
@@ -1021,16 +1016,16 @@ I
 
 No documentation available
 
-*   [arguments](../.././inspector/promises/~/Runtime.CallFunctionOnParameterType#property_arguments)
-*   [awaitPromise](../.././inspector/promises/~/Runtime.CallFunctionOnParameterType#property_awaitpromise)
-*   [executionContextId](../.././inspector/promises/~/Runtime.CallFunctionOnParameterType#property_executioncontextid)
-*   [functionDeclaration](../.././inspector/promises/~/Runtime.CallFunctionOnParameterType#property_functiondeclaration)
-*   [generatePreview](../.././inspector/promises/~/Runtime.CallFunctionOnParameterType#property_generatepreview)
-*   [objectGroup](../.././inspector/promises/~/Runtime.CallFunctionOnParameterType#property_objectgroup)
-*   [objectId](../.././inspector/promises/~/Runtime.CallFunctionOnParameterType#property_objectid)
-*   [returnByValue](../.././inspector/promises/~/Runtime.CallFunctionOnParameterType#property_returnbyvalue)
-*   [silent](../.././inspector/promises/~/Runtime.CallFunctionOnParameterType#property_silent)
-*   [userGesture](../.././inspector/promises/~/Runtime.CallFunctionOnParameterType#property_usergesture)
+-   [arguments](../.././inspector/promises/~/Runtime.CallFunctionOnParameterType#property_arguments)
+-   [awaitPromise](../.././inspector/promises/~/Runtime.CallFunctionOnParameterType#property_awaitpromise)
+-   [executionContextId](../.././inspector/promises/~/Runtime.CallFunctionOnParameterType#property_executioncontextid)
+-   [functionDeclaration](../.././inspector/promises/~/Runtime.CallFunctionOnParameterType#property_functiondeclaration)
+-   [generatePreview](../.././inspector/promises/~/Runtime.CallFunctionOnParameterType#property_generatepreview)
+-   [objectGroup](../.././inspector/promises/~/Runtime.CallFunctionOnParameterType#property_objectgroup)
+-   [objectId](../.././inspector/promises/~/Runtime.CallFunctionOnParameterType#property_objectid)
+-   [returnByValue](../.././inspector/promises/~/Runtime.CallFunctionOnParameterType#property_returnbyvalue)
+-   [silent](../.././inspector/promises/~/Runtime.CallFunctionOnParameterType#property_silent)
+-   [userGesture](../.././inspector/promises/~/Runtime.CallFunctionOnParameterType#property_usergesture)
 
 I
 
@@ -1038,8 +1033,8 @@ I
 
 No documentation available
 
-*   [exceptionDetails](../.././inspector/promises/~/Runtime.CallFunctionOnReturnType#property_exceptiondetails)
-*   [result](../.././inspector/promises/~/Runtime.CallFunctionOnReturnType#property_result)
+-   [exceptionDetails](../.././inspector/promises/~/Runtime.CallFunctionOnReturnType#property_exceptiondetails)
+-   [result](../.././inspector/promises/~/Runtime.CallFunctionOnReturnType#property_result)
 
 I
 
@@ -1047,10 +1042,10 @@ I
 
 No documentation available
 
-*   [executionContextId](../.././inspector/promises/~/Runtime.CompileScriptParameterType#property_executioncontextid)
-*   [expression](../.././inspector/promises/~/Runtime.CompileScriptParameterType#property_expression)
-*   [persistScript](../.././inspector/promises/~/Runtime.CompileScriptParameterType#property_persistscript)
-*   [sourceURL](../.././inspector/promises/~/Runtime.CompileScriptParameterType#property_sourceurl)
+-   [executionContextId](../.././inspector/promises/~/Runtime.CompileScriptParameterType#property_executioncontextid)
+-   [expression](../.././inspector/promises/~/Runtime.CompileScriptParameterType#property_expression)
+-   [persistScript](../.././inspector/promises/~/Runtime.CompileScriptParameterType#property_persistscript)
+-   [sourceURL](../.././inspector/promises/~/Runtime.CompileScriptParameterType#property_sourceurl)
 
 I
 
@@ -1058,8 +1053,8 @@ I
 
 No documentation available
 
-*   [exceptionDetails](../.././inspector/promises/~/Runtime.CompileScriptReturnType#property_exceptiondetails)
-*   [scriptId](../.././inspector/promises/~/Runtime.CompileScriptReturnType#property_scriptid)
+-   [exceptionDetails](../.././inspector/promises/~/Runtime.CompileScriptReturnType#property_exceptiondetails)
+-   [scriptId](../.././inspector/promises/~/Runtime.CompileScriptReturnType#property_scriptid)
 
 I
 
@@ -1067,12 +1062,12 @@ I
 
 No documentation available
 
-*   [args](../.././inspector/promises/~/Runtime.ConsoleAPICalledEventDataType#property_args)
-*   [context](../.././inspector/promises/~/Runtime.ConsoleAPICalledEventDataType#property_context)
-*   [executionContextId](../.././inspector/promises/~/Runtime.ConsoleAPICalledEventDataType#property_executioncontextid)
-*   [stackTrace](../.././inspector/promises/~/Runtime.ConsoleAPICalledEventDataType#property_stacktrace)
-*   [timestamp](../.././inspector/promises/~/Runtime.ConsoleAPICalledEventDataType#property_timestamp)
-*   [type](../.././inspector/promises/~/Runtime.ConsoleAPICalledEventDataType#property_type)
+-   [args](../.././inspector/promises/~/Runtime.ConsoleAPICalledEventDataType#property_args)
+-   [context](../.././inspector/promises/~/Runtime.ConsoleAPICalledEventDataType#property_context)
+-   [executionContextId](../.././inspector/promises/~/Runtime.ConsoleAPICalledEventDataType#property_executioncontextid)
+-   [stackTrace](../.././inspector/promises/~/Runtime.ConsoleAPICalledEventDataType#property_stacktrace)
+-   [timestamp](../.././inspector/promises/~/Runtime.ConsoleAPICalledEventDataType#property_timestamp)
+-   [type](../.././inspector/promises/~/Runtime.ConsoleAPICalledEventDataType#property_type)
 
 I
 
@@ -1080,11 +1075,11 @@ I
 
 No documentation available
 
-*   [bindRemoteObjectFunctionId](../.././inspector/promises/~/Runtime.CustomPreview#property_bindremoteobjectfunctionid)
-*   [configObjectId](../.././inspector/promises/~/Runtime.CustomPreview#property_configobjectid)
-*   [formatterObjectId](../.././inspector/promises/~/Runtime.CustomPreview#property_formatterobjectid)
-*   [hasBody](../.././inspector/promises/~/Runtime.CustomPreview#property_hasbody)
-*   [header](../.././inspector/promises/~/Runtime.CustomPreview#property_header)
+-   [bindRemoteObjectFunctionId](../.././inspector/promises/~/Runtime.CustomPreview#property_bindremoteobjectfunctionid)
+-   [configObjectId](../.././inspector/promises/~/Runtime.CustomPreview#property_configobjectid)
+-   [formatterObjectId](../.././inspector/promises/~/Runtime.CustomPreview#property_formatterobjectid)
+-   [hasBody](../.././inspector/promises/~/Runtime.CustomPreview#property_hasbody)
+-   [header](../.././inspector/promises/~/Runtime.CustomPreview#property_header)
 
 I
 
@@ -1092,8 +1087,8 @@ I
 
 No documentation available
 
-*   [key](../.././inspector/promises/~/Runtime.EntryPreview#property_key)
-*   [value](../.././inspector/promises/~/Runtime.EntryPreview#property_value)
+-   [key](../.././inspector/promises/~/Runtime.EntryPreview#property_key)
+-   [value](../.././inspector/promises/~/Runtime.EntryPreview#property_value)
 
 I
 
@@ -1101,15 +1096,15 @@ I
 
 No documentation available
 
-*   [awaitPromise](../.././inspector/promises/~/Runtime.EvaluateParameterType#property_awaitpromise)
-*   [contextId](../.././inspector/promises/~/Runtime.EvaluateParameterType#property_contextid)
-*   [expression](../.././inspector/promises/~/Runtime.EvaluateParameterType#property_expression)
-*   [generatePreview](../.././inspector/promises/~/Runtime.EvaluateParameterType#property_generatepreview)
-*   [includeCommandLineAPI](../.././inspector/promises/~/Runtime.EvaluateParameterType#property_includecommandlineapi)
-*   [objectGroup](../.././inspector/promises/~/Runtime.EvaluateParameterType#property_objectgroup)
-*   [returnByValue](../.././inspector/promises/~/Runtime.EvaluateParameterType#property_returnbyvalue)
-*   [silent](../.././inspector/promises/~/Runtime.EvaluateParameterType#property_silent)
-*   [userGesture](../.././inspector/promises/~/Runtime.EvaluateParameterType#property_usergesture)
+-   [awaitPromise](../.././inspector/promises/~/Runtime.EvaluateParameterType#property_awaitpromise)
+-   [contextId](../.././inspector/promises/~/Runtime.EvaluateParameterType#property_contextid)
+-   [expression](../.././inspector/promises/~/Runtime.EvaluateParameterType#property_expression)
+-   [generatePreview](../.././inspector/promises/~/Runtime.EvaluateParameterType#property_generatepreview)
+-   [includeCommandLineAPI](../.././inspector/promises/~/Runtime.EvaluateParameterType#property_includecommandlineapi)
+-   [objectGroup](../.././inspector/promises/~/Runtime.EvaluateParameterType#property_objectgroup)
+-   [returnByValue](../.././inspector/promises/~/Runtime.EvaluateParameterType#property_returnbyvalue)
+-   [silent](../.././inspector/promises/~/Runtime.EvaluateParameterType#property_silent)
+-   [userGesture](../.././inspector/promises/~/Runtime.EvaluateParameterType#property_usergesture)
 
 I
 
@@ -1117,8 +1112,8 @@ I
 
 No documentation available
 
-*   [exceptionDetails](../.././inspector/promises/~/Runtime.EvaluateReturnType#property_exceptiondetails)
-*   [result](../.././inspector/promises/~/Runtime.EvaluateReturnType#property_result)
+-   [exceptionDetails](../.././inspector/promises/~/Runtime.EvaluateReturnType#property_exceptiondetails)
+-   [result](../.././inspector/promises/~/Runtime.EvaluateReturnType#property_result)
 
 I
 
@@ -1126,15 +1121,15 @@ I
 
 Detailed information about exception (or error) that was thrown during script compilation or execution.
 
-*   [columnNumber](../.././inspector/promises/~/Runtime.ExceptionDetails#property_columnnumber)
-*   [exception](../.././inspector/promises/~/Runtime.ExceptionDetails#property_exception)
-*   [exceptionId](../.././inspector/promises/~/Runtime.ExceptionDetails#property_exceptionid)
-*   [executionContextId](../.././inspector/promises/~/Runtime.ExceptionDetails#property_executioncontextid)
-*   [lineNumber](../.././inspector/promises/~/Runtime.ExceptionDetails#property_linenumber)
-*   [scriptId](../.././inspector/promises/~/Runtime.ExceptionDetails#property_scriptid)
-*   [stackTrace](../.././inspector/promises/~/Runtime.ExceptionDetails#property_stacktrace)
-*   [text](../.././inspector/promises/~/Runtime.ExceptionDetails#property_text)
-*   [url](../.././inspector/promises/~/Runtime.ExceptionDetails#property_url)
+-   [columnNumber](../.././inspector/promises/~/Runtime.ExceptionDetails#property_columnnumber)
+-   [exception](../.././inspector/promises/~/Runtime.ExceptionDetails#property_exception)
+-   [exceptionId](../.././inspector/promises/~/Runtime.ExceptionDetails#property_exceptionid)
+-   [executionContextId](../.././inspector/promises/~/Runtime.ExceptionDetails#property_executioncontextid)
+-   [lineNumber](../.././inspector/promises/~/Runtime.ExceptionDetails#property_linenumber)
+-   [scriptId](../.././inspector/promises/~/Runtime.ExceptionDetails#property_scriptid)
+-   [stackTrace](../.././inspector/promises/~/Runtime.ExceptionDetails#property_stacktrace)
+-   [text](../.././inspector/promises/~/Runtime.ExceptionDetails#property_text)
+-   [url](../.././inspector/promises/~/Runtime.ExceptionDetails#property_url)
 
 I
 
@@ -1142,8 +1137,8 @@ I
 
 No documentation available
 
-*   [exceptionId](../.././inspector/promises/~/Runtime.ExceptionRevokedEventDataType#property_exceptionid)
-*   [reason](../.././inspector/promises/~/Runtime.ExceptionRevokedEventDataType#property_reason)
+-   [exceptionId](../.././inspector/promises/~/Runtime.ExceptionRevokedEventDataType#property_exceptionid)
+-   [reason](../.././inspector/promises/~/Runtime.ExceptionRevokedEventDataType#property_reason)
 
 I
 
@@ -1151,8 +1146,8 @@ I
 
 No documentation available
 
-*   [exceptionDetails](../.././inspector/promises/~/Runtime.ExceptionThrownEventDataType#property_exceptiondetails)
-*   [timestamp](../.././inspector/promises/~/Runtime.ExceptionThrownEventDataType#property_timestamp)
+-   [exceptionDetails](../.././inspector/promises/~/Runtime.ExceptionThrownEventDataType#property_exceptiondetails)
+-   [timestamp](../.././inspector/promises/~/Runtime.ExceptionThrownEventDataType#property_timestamp)
 
 I
 
@@ -1160,7 +1155,7 @@ I
 
 No documentation available
 
-*   [context](../.././inspector/promises/~/Runtime.ExecutionContextCreatedEventDataType#property_context)
+-   [context](../.././inspector/promises/~/Runtime.ExecutionContextCreatedEventDataType#property_context)
 
 I
 
@@ -1168,10 +1163,10 @@ I
 
 Description of an isolated world.
 
-*   [auxData](../.././inspector/promises/~/Runtime.ExecutionContextDescription#property_auxdata)
-*   [id](../.././inspector/promises/~/Runtime.ExecutionContextDescription#property_id)
-*   [name](../.././inspector/promises/~/Runtime.ExecutionContextDescription#property_name)
-*   [origin](../.././inspector/promises/~/Runtime.ExecutionContextDescription#property_origin)
+-   [auxData](../.././inspector/promises/~/Runtime.ExecutionContextDescription#property_auxdata)
+-   [id](../.././inspector/promises/~/Runtime.ExecutionContextDescription#property_id)
+-   [name](../.././inspector/promises/~/Runtime.ExecutionContextDescription#property_name)
+-   [origin](../.././inspector/promises/~/Runtime.ExecutionContextDescription#property_origin)
 
 I
 
@@ -1179,7 +1174,7 @@ I
 
 No documentation available
 
-*   [executionContextId](../.././inspector/promises/~/Runtime.ExecutionContextDestroyedEventDataType#property_executioncontextid)
+-   [executionContextId](../.././inspector/promises/~/Runtime.ExecutionContextDestroyedEventDataType#property_executioncontextid)
 
 I
 
@@ -1187,10 +1182,10 @@ I
 
 No documentation available
 
-*   [accessorPropertiesOnly](../.././inspector/promises/~/Runtime.GetPropertiesParameterType#property_accessorpropertiesonly)
-*   [generatePreview](../.././inspector/promises/~/Runtime.GetPropertiesParameterType#property_generatepreview)
-*   [objectId](../.././inspector/promises/~/Runtime.GetPropertiesParameterType#property_objectid)
-*   [ownProperties](../.././inspector/promises/~/Runtime.GetPropertiesParameterType#property_ownproperties)
+-   [accessorPropertiesOnly](../.././inspector/promises/~/Runtime.GetPropertiesParameterType#property_accessorpropertiesonly)
+-   [generatePreview](../.././inspector/promises/~/Runtime.GetPropertiesParameterType#property_generatepreview)
+-   [objectId](../.././inspector/promises/~/Runtime.GetPropertiesParameterType#property_objectid)
+-   [ownProperties](../.././inspector/promises/~/Runtime.GetPropertiesParameterType#property_ownproperties)
 
 I
 
@@ -1198,9 +1193,9 @@ I
 
 No documentation available
 
-*   [exceptionDetails](../.././inspector/promises/~/Runtime.GetPropertiesReturnType#property_exceptiondetails)
-*   [internalProperties](../.././inspector/promises/~/Runtime.GetPropertiesReturnType#property_internalproperties)
-*   [result](../.././inspector/promises/~/Runtime.GetPropertiesReturnType#property_result)
+-   [exceptionDetails](../.././inspector/promises/~/Runtime.GetPropertiesReturnType#property_exceptiondetails)
+-   [internalProperties](../.././inspector/promises/~/Runtime.GetPropertiesReturnType#property_internalproperties)
+-   [result](../.././inspector/promises/~/Runtime.GetPropertiesReturnType#property_result)
 
 I
 
@@ -1208,7 +1203,7 @@ I
 
 No documentation available
 
-*   [executionContextId](../.././inspector/promises/~/Runtime.GlobalLexicalScopeNamesParameterType#property_executioncontextid)
+-   [executionContextId](../.././inspector/promises/~/Runtime.GlobalLexicalScopeNamesParameterType#property_executioncontextid)
 
 I
 
@@ -1216,7 +1211,7 @@ I
 
 No documentation available
 
-*   [names](../.././inspector/promises/~/Runtime.GlobalLexicalScopeNamesReturnType#property_names)
+-   [names](../.././inspector/promises/~/Runtime.GlobalLexicalScopeNamesReturnType#property_names)
 
 I
 
@@ -1224,8 +1219,8 @@ I
 
 No documentation available
 
-*   [hints](../.././inspector/promises/~/Runtime.InspectRequestedEventDataType#property_hints)
-*   [object](../.././inspector/promises/~/Runtime.InspectRequestedEventDataType#property_object)
+-   [hints](../.././inspector/promises/~/Runtime.InspectRequestedEventDataType#property_hints)
+-   [object](../.././inspector/promises/~/Runtime.InspectRequestedEventDataType#property_object)
 
 I
 
@@ -1233,8 +1228,8 @@ I
 
 Object internal property descriptor. This property isn't normally visible in JavaScript code.
 
-*   [name](../.././inspector/promises/~/Runtime.InternalPropertyDescriptor#property_name)
-*   [value](../.././inspector/promises/~/Runtime.InternalPropertyDescriptor#property_value)
+-   [name](../.././inspector/promises/~/Runtime.InternalPropertyDescriptor#property_name)
+-   [value](../.././inspector/promises/~/Runtime.InternalPropertyDescriptor#property_value)
 
 I
 
@@ -1242,12 +1237,12 @@ I
 
 Object containing abbreviated remote object value.
 
-*   [description](../.././inspector/promises/~/Runtime.ObjectPreview#property_description)
-*   [entries](../.././inspector/promises/~/Runtime.ObjectPreview#property_entries)
-*   [overflow](../.././inspector/promises/~/Runtime.ObjectPreview#property_overflow)
-*   [properties](../.././inspector/promises/~/Runtime.ObjectPreview#property_properties)
-*   [subtype](../.././inspector/promises/~/Runtime.ObjectPreview#property_subtype)
-*   [type](../.././inspector/promises/~/Runtime.ObjectPreview#property_type)
+-   [description](../.././inspector/promises/~/Runtime.ObjectPreview#property_description)
+-   [entries](../.././inspector/promises/~/Runtime.ObjectPreview#property_entries)
+-   [overflow](../.././inspector/promises/~/Runtime.ObjectPreview#property_overflow)
+-   [properties](../.././inspector/promises/~/Runtime.ObjectPreview#property_properties)
+-   [subtype](../.././inspector/promises/~/Runtime.ObjectPreview#property_subtype)
+-   [type](../.././inspector/promises/~/Runtime.ObjectPreview#property_type)
 
 I
 
@@ -1255,16 +1250,16 @@ I
 
 Object property descriptor.
 
-*   [configurable](../.././inspector/promises/~/Runtime.PropertyDescriptor#property_configurable)
-*   [enumerable](../.././inspector/promises/~/Runtime.PropertyDescriptor#property_enumerable)
-*   [get](../.././inspector/promises/~/Runtime.PropertyDescriptor#property_get)
-*   [isOwn](../.././inspector/promises/~/Runtime.PropertyDescriptor#property_isown)
-*   [name](../.././inspector/promises/~/Runtime.PropertyDescriptor#property_name)
-*   [set](../.././inspector/promises/~/Runtime.PropertyDescriptor#property_set)
-*   [symbol](../.././inspector/promises/~/Runtime.PropertyDescriptor#property_symbol)
-*   [value](../.././inspector/promises/~/Runtime.PropertyDescriptor#property_value)
-*   [wasThrown](../.././inspector/promises/~/Runtime.PropertyDescriptor#property_wasthrown)
-*   [writable](../.././inspector/promises/~/Runtime.PropertyDescriptor#property_writable)
+-   [configurable](../.././inspector/promises/~/Runtime.PropertyDescriptor#property_configurable)
+-   [enumerable](../.././inspector/promises/~/Runtime.PropertyDescriptor#property_enumerable)
+-   [get](../.././inspector/promises/~/Runtime.PropertyDescriptor#property_get)
+-   [isOwn](../.././inspector/promises/~/Runtime.PropertyDescriptor#property_isown)
+-   [name](../.././inspector/promises/~/Runtime.PropertyDescriptor#property_name)
+-   [set](../.././inspector/promises/~/Runtime.PropertyDescriptor#property_set)
+-   [symbol](../.././inspector/promises/~/Runtime.PropertyDescriptor#property_symbol)
+-   [value](../.././inspector/promises/~/Runtime.PropertyDescriptor#property_value)
+-   [wasThrown](../.././inspector/promises/~/Runtime.PropertyDescriptor#property_wasthrown)
+-   [writable](../.././inspector/promises/~/Runtime.PropertyDescriptor#property_writable)
 
 I
 
@@ -1272,11 +1267,11 @@ I
 
 No documentation available
 
-*   [name](../.././inspector/promises/~/Runtime.PropertyPreview#property_name)
-*   [subtype](../.././inspector/promises/~/Runtime.PropertyPreview#property_subtype)
-*   [type](../.././inspector/promises/~/Runtime.PropertyPreview#property_type)
-*   [value](../.././inspector/promises/~/Runtime.PropertyPreview#property_value)
-*   [valuePreview](../.././inspector/promises/~/Runtime.PropertyPreview#property_valuepreview)
+-   [name](../.././inspector/promises/~/Runtime.PropertyPreview#property_name)
+-   [subtype](../.././inspector/promises/~/Runtime.PropertyPreview#property_subtype)
+-   [type](../.././inspector/promises/~/Runtime.PropertyPreview#property_type)
+-   [value](../.././inspector/promises/~/Runtime.PropertyPreview#property_value)
+-   [valuePreview](../.././inspector/promises/~/Runtime.PropertyPreview#property_valuepreview)
 
 I
 
@@ -1284,7 +1279,7 @@ I
 
 No documentation available
 
-*   [prototypeObjectId](../.././inspector/promises/~/Runtime.QueryObjectsParameterType#property_prototypeobjectid)
+-   [prototypeObjectId](../.././inspector/promises/~/Runtime.QueryObjectsParameterType#property_prototypeobjectid)
 
 I
 
@@ -1292,7 +1287,7 @@ I
 
 No documentation available
 
-*   [objects](../.././inspector/promises/~/Runtime.QueryObjectsReturnType#property_objects)
+-   [objects](../.././inspector/promises/~/Runtime.QueryObjectsReturnType#property_objects)
 
 I
 
@@ -1300,7 +1295,7 @@ I
 
 No documentation available
 
-*   [objectGroup](../.././inspector/promises/~/Runtime.ReleaseObjectGroupParameterType#property_objectgroup)
+-   [objectGroup](../.././inspector/promises/~/Runtime.ReleaseObjectGroupParameterType#property_objectgroup)
 
 I
 
@@ -1308,7 +1303,7 @@ I
 
 No documentation available
 
-*   [objectId](../.././inspector/promises/~/Runtime.ReleaseObjectParameterType#property_objectid)
+-   [objectId](../.././inspector/promises/~/Runtime.ReleaseObjectParameterType#property_objectid)
 
 I
 
@@ -1316,15 +1311,15 @@ I
 
 Mirror object referencing original JavaScript object.
 
-*   [className](../.././inspector/promises/~/Runtime.RemoteObject#property_classname)
-*   [customPreview](../.././inspector/promises/~/Runtime.RemoteObject#property_custompreview)
-*   [description](../.././inspector/promises/~/Runtime.RemoteObject#property_description)
-*   [objectId](../.././inspector/promises/~/Runtime.RemoteObject#property_objectid)
-*   [preview](../.././inspector/promises/~/Runtime.RemoteObject#property_preview)
-*   [subtype](../.././inspector/promises/~/Runtime.RemoteObject#property_subtype)
-*   [type](../.././inspector/promises/~/Runtime.RemoteObject#property_type)
-*   [unserializableValue](../.././inspector/promises/~/Runtime.RemoteObject#property_unserializablevalue)
-*   [value](../.././inspector/promises/~/Runtime.RemoteObject#property_value)
+-   [className](../.././inspector/promises/~/Runtime.RemoteObject#property_classname)
+-   [customPreview](../.././inspector/promises/~/Runtime.RemoteObject#property_custompreview)
+-   [description](../.././inspector/promises/~/Runtime.RemoteObject#property_description)
+-   [objectId](../.././inspector/promises/~/Runtime.RemoteObject#property_objectid)
+-   [preview](../.././inspector/promises/~/Runtime.RemoteObject#property_preview)
+-   [subtype](../.././inspector/promises/~/Runtime.RemoteObject#property_subtype)
+-   [type](../.././inspector/promises/~/Runtime.RemoteObject#property_type)
+-   [unserializableValue](../.././inspector/promises/~/Runtime.RemoteObject#property_unserializablevalue)
+-   [value](../.././inspector/promises/~/Runtime.RemoteObject#property_value)
 
 I
 
@@ -1332,14 +1327,14 @@ I
 
 No documentation available
 
-*   [awaitPromise](../.././inspector/promises/~/Runtime.RunScriptParameterType#property_awaitpromise)
-*   [executionContextId](../.././inspector/promises/~/Runtime.RunScriptParameterType#property_executioncontextid)
-*   [generatePreview](../.././inspector/promises/~/Runtime.RunScriptParameterType#property_generatepreview)
-*   [includeCommandLineAPI](../.././inspector/promises/~/Runtime.RunScriptParameterType#property_includecommandlineapi)
-*   [objectGroup](../.././inspector/promises/~/Runtime.RunScriptParameterType#property_objectgroup)
-*   [returnByValue](../.././inspector/promises/~/Runtime.RunScriptParameterType#property_returnbyvalue)
-*   [scriptId](../.././inspector/promises/~/Runtime.RunScriptParameterType#property_scriptid)
-*   [silent](../.././inspector/promises/~/Runtime.RunScriptParameterType#property_silent)
+-   [awaitPromise](../.././inspector/promises/~/Runtime.RunScriptParameterType#property_awaitpromise)
+-   [executionContextId](../.././inspector/promises/~/Runtime.RunScriptParameterType#property_executioncontextid)
+-   [generatePreview](../.././inspector/promises/~/Runtime.RunScriptParameterType#property_generatepreview)
+-   [includeCommandLineAPI](../.././inspector/promises/~/Runtime.RunScriptParameterType#property_includecommandlineapi)
+-   [objectGroup](../.././inspector/promises/~/Runtime.RunScriptParameterType#property_objectgroup)
+-   [returnByValue](../.././inspector/promises/~/Runtime.RunScriptParameterType#property_returnbyvalue)
+-   [scriptId](../.././inspector/promises/~/Runtime.RunScriptParameterType#property_scriptid)
+-   [silent](../.././inspector/promises/~/Runtime.RunScriptParameterType#property_silent)
 
 I
 
@@ -1347,8 +1342,8 @@ I
 
 No documentation available
 
-*   [exceptionDetails](../.././inspector/promises/~/Runtime.RunScriptReturnType#property_exceptiondetails)
-*   [result](../.././inspector/promises/~/Runtime.RunScriptReturnType#property_result)
+-   [exceptionDetails](../.././inspector/promises/~/Runtime.RunScriptReturnType#property_exceptiondetails)
+-   [result](../.././inspector/promises/~/Runtime.RunScriptReturnType#property_result)
 
 I
 
@@ -1356,7 +1351,7 @@ I
 
 No documentation available
 
-*   [enabled](../.././inspector/promises/~/Runtime.SetCustomObjectFormatterEnabledParameterType#property_enabled)
+-   [enabled](../.././inspector/promises/~/Runtime.SetCustomObjectFormatterEnabledParameterType#property_enabled)
 
 I
 
@@ -1364,10 +1359,10 @@ I
 
 Call frames for assertions or error messages.
 
-*   [callFrames](../.././inspector/promises/~/Runtime.StackTrace#property_callframes)
-*   [description](../.././inspector/promises/~/Runtime.StackTrace#property_description)
-*   [parent](../.././inspector/promises/~/Runtime.StackTrace#property_parent)
-*   [parentId](../.././inspector/promises/~/Runtime.StackTrace#property_parentid)
+-   [callFrames](../.././inspector/promises/~/Runtime.StackTrace#property_callframes)
+-   [description](../.././inspector/promises/~/Runtime.StackTrace#property_description)
+-   [parent](../.././inspector/promises/~/Runtime.StackTrace#property_parent)
+-   [parentId](../.././inspector/promises/~/Runtime.StackTrace#property_parentid)
 
 I
 
@@ -1375,8 +1370,8 @@ I
 
 If `debuggerId` is set stack trace comes from another debugger and can be resolved there. This allows to track cross-debugger calls. See `Runtime.StackTrace` and `Debugger.paused` for usages.
 
-*   [debuggerId](../.././inspector/promises/~/Runtime.StackTraceId#property_debuggerid)
-*   [id](../.././inspector/promises/~/Runtime.StackTraceId#property_id)
+-   [debuggerId](../.././inspector/promises/~/Runtime.StackTraceId#property_debuggerid)
+-   [id](../.././inspector/promises/~/Runtime.StackTraceId#property_id)
 
 I
 
@@ -1384,8 +1379,8 @@ I
 
 Description of the protocol domain.
 
-*   [name](../.././inspector/promises/~/Schema.Domain#property_name)
-*   [version](../.././inspector/promises/~/Schema.Domain#property_version)
+-   [name](../.././inspector/promises/~/Schema.Domain#property_name)
+-   [version](../.././inspector/promises/~/Schema.Domain#property_version)
 
 I
 
@@ -1393,9 +1388,7 @@ I
 
 No documentation available
 
-*   [domains](../.././inspector/promises/~/Schema.GetDomainsReturnType#property_domains)
-
-### Namespaces [#](#Namespaces)
+-   [domains](../.././inspector/promises/~/Schema.GetDomainsReturnType#property_domains)
 
 N
 
@@ -1456,8 +1449,6 @@ N
 [Schema](../.././inspector/promises/~/Schema "Schema")
 
 No documentation available
-
-### Type Aliases [#](<#Type Aliases>)
 
 T
 
@@ -1548,8 +1539,6 @@ T
 [Runtime.UnserializableValue](../.././inspector/promises/~/Runtime.UnserializableValue "Runtime.UnserializableValue")
 
 Primitive value which cannot be JSON-stringified.
-
-### Variables [#](#Variables)
 
 v
 

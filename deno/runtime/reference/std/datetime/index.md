@@ -5,15 +5,16 @@ canonical_url: "https://docs.deno.com/runtime/reference/std/datetime/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:01:35.546Z"
-content_hash: "11a7f377ab034310d7046d2fed3d9182f70317b6311fafc4e85f6c0a36b7a668"
+last_crawled_at: "2026-04-27T17:41:10.953Z"
+content_hash: "3a5a6823a3b561e757dc0698ffb30b7783329de9e2d4ce73e8ea4572c1f6d1aa"
 menu_path: ["@std/datetime"]
 section_path: []
+content_language: "en"
 ---
-On this page
+**On this page**
 
-*   [Overview](#overview)
-    *   [Add to your project](#add-to-your-project)
+-   [Overview](#overview)
+    -   [Add to your project](#add-to-your-project)
 
 Unstable
 

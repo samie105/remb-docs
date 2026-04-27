@@ -5,28 +5,26 @@ canonical_url: "https://orm.drizzle.team/docs/get-started/turso-database-new"
 docset: "drizzle"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:01:27.667Z"
-content_hash: "5367f0b2a9a553f52a4b33a5a353ad04ce19f0523a7c5dd6e18ed6e856e8d754"
+last_crawled_at: "2026-04-27T18:54:40.158Z"
+content_hash: "61355fd204b0b9adbc7e1fc413968cf750fc6218c732082806ed2d73517debcb"
 menu_path: ["Get Started with Drizzle and Turso Database"]
 section_path: []
-nav_prev: {"path": "drizzle/docs/get-started/turso-database-existing/index.md", "title": "Get Started with Drizzle and Turso Database in existing project"}
-nav_next: {"path": "drizzle/docs/get-started/turso-existing/index.md", "title": "Get Started with Drizzle and Turso Cloud in existing project"}
+content_language: "en"
 ---
-
 ## Get Started with Drizzle and Turso Database
 
 This guide assumes familiarity with:
 
-*   **dotenv** - package for managing environment variables - [read here](https://www.npmjs.com/package/dotenv)
-*   **tsx** - package for running TypeScript files - [read here](https://tsx.is/)
-*   Turso Database - [website](https://docs.turso.tech/introduction)
-*   Turso Database driver - [website](https://docs.turso.tech/connect/javascript) & [GitHub](https://github.com/tursodatabase/turso/tree/main/bindings/javascript)
+-   **dotenv** - package for managing environment variables - [read here](https://www.npmjs.com/package/dotenv)
+-   **tsx** - package for running TypeScript files - [read here](https://tsx.is/)
+-   Turso Database - [website](https://docs.turso.tech/introduction)
+-   Turso Database driver - [website](https://docs.turso.tech/connect/javascript) & [GitHub](https://github.com/tursodatabase/turso/tree/main/bindings/javascript)
 
 #### Basic file structure
 
 This is the basic file structure of the project. In the `src/db` directory, we have table definition in `schema.ts`. In `drizzle` folder there are sql migration file and snapshots.
 
-```
+```plaintext
 📦 <project root>
  ├ 📂 drizzle
  ├ 📂 src
@@ -40,14 +38,6 @@ This is the basic file structure of the project. In the `src/db` directory, we h
 ```
 
 #### Step 1 - Install required package[](#step-1---install-required-package)
-
-npm
-
-yarn
-
-pnpm
-
-bun
 
 ```
 npm i drizzle-orm@beta @tursodatabase/database dotenv
@@ -73,15 +63,11 @@ bun add -D drizzle-kit@beta tsx
 
 Create a `.env` file in the root of your project and add your database connection variable:
 
-```
-DB_FILE_NAME=
-```
-
 important
 
 For example, if you want to create an SQLite database file in the root of your project for testing purposes, you can use this example:
 
-```
+```plaintext
 DB_FILE_NAME=mydb.sqlite
 ```
 
@@ -93,14 +79,14 @@ Turso Database
 
 Turso Database with config
 
-```
+```typescript
 import 'dotenv/config';
 import { drizzle } from 'drizzle-orm/tursodatabase/database';
 
 const db = drizzle(process.env.DB_FILE_NAME!);
 ```
 
-```
+```typescript
 import 'dotenv/config';
 import { drizzle } from 'drizzle-orm/tursodatabase/database';
 
@@ -110,7 +96,7 @@ const db = drizzle({ connection: { path: process.env.DB_FILE_NAME! }});
 
 If you need to provide your existing driver:
 
-```
+```typescript
 import 'dotenv/config';
 import { Database } from '@tursodatabase/database';
 import { drizzle } from 'drizzle-orm/tursodatabase/database';
@@ -123,7 +109,7 @@ const db = drizzle({ client });
 
 Create a `schema.ts` file in the `src/db` directory and declare your table:
 
-```
+```typescript
 import { int, sqliteTable, text } from "drizzle-orm/sqlite-core";
 
 export const usersTable = sqliteTable("users_table", {
@@ -136,11 +122,11 @@ export const usersTable = sqliteTable("users_table", {
 
 #### Step 5 - Setup Drizzle config file[](#step-5---setup-drizzle-config-file)
 
-**Drizzle config** - a configuration file that is used by [Drizzle Kit](drizzle/docs/kit-overview/index.md) and contains all the information about your database connection, migration folder and schema files.
+**Drizzle config** - a configuration file that is used by [Drizzle Kit](https://orm.drizzle.team/docs/kit-overview) and contains all the information about your database connection, migration folder and schema files.
 
 Create a `drizzle.config.ts` file in the root of your project and add the following content:
 
-```
+```typescript
 import 'dotenv/config';
 import { defineConfig } from 'drizzle-kit';
 
@@ -158,11 +144,11 @@ export default defineConfig({
 
 You can directly apply changes to your database using the `drizzle-kit push` command. This is a convenient method for quickly testing new schema designs or modifications in a local development environment, allowing for rapid iterations without the need to manage migration files:
 
-```
+```bash
 npx drizzle-kit push
 ```
 
-Read more about the push command in [documentation](drizzle/docs/drizzle-kit-push/index.md).
+Read more about the push command in [documentation](https://orm.drizzle.team/docs/drizzle-kit-push).
 
 Tips
 
@@ -170,21 +156,21 @@ Alternatively, you can generate migrations using the `drizzle-kit generate` comm
 
 Generate migrations:
 
-```
+```bash
 npx drizzle-kit generate
 ```
 
 Apply migrations:
 
-```
+```bash
 npx drizzle-kit migrate
 ```
 
-Read more about migration process in [documentation](drizzle/docs/kit-overview/index.md).
+Read more about migration process in [documentation](https://orm.drizzle.team/docs/kit-overview).
 
 #### Step 7 - Seed and Query the database[](#step-7---seed-and-query-the-database)
 
-```
+```typescript
 import 'dotenv/config';
 import { eq } from 'drizzle-orm';
 import { drizzle } from 'drizzle-orm/tursodatabase/database';
@@ -236,14 +222,6 @@ You’ve already installed `tsx`, so we can run our queries now
 
 **Run `index.ts` script**
 
-npm
-
-yarn
-
-pnpm
-
-bun
-
 ```
 npx tsx src/index.ts
 ```
@@ -264,7 +242,7 @@ tips
 
 We suggest using `bun` to run TypeScript files. With `bun`, such scripts can be executed without issues or additional settings, regardless of whether your project is configured with CommonJS (CJS), ECMAScript Modules (ESM), or any other module format. To run a script with `bun`, use the following command:
 
-```
+```bash
 bun src/index.ts
 ```
 

@@ -5,13 +5,12 @@ canonical_url: "https://docs.deno.com/api/web/wasm"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:15:14.422Z"
-content_hash: "4538de369291fc7d1e1c101be14fbeb9f722e16e61079a98366f86fc20edbbdf"
+last_crawled_at: "2026-04-27T18:01:22.474Z"
+content_hash: "795366668c5af2f5505c5dc085513ea24bc6142e4fc5eb1b652d4722a0fb7fb3"
 menu_path: ["Wasm - Web documentation"]
 section_path: []
+content_language: "en"
 ---
-### Classes [#](#Classes)
-
 c
 
 [WebAssembly.CompileError](./././~/WebAssembly.CompileError "WebAssembly.CompileError")
@@ -24,8 +23,8 @@ c
 
 A `WebAssembly.Global` object represents a global variable instance, accessible from both JavaScript and importable/exportable across one or more `WebAssembly.Module` instances. This allows dynamic linking of multiple modules.
 
-*   [value](./././~/WebAssembly.Global#property_value)
-*   [valueOf](./././~/WebAssembly.Global#method_valueof_0)
+-   [value](./././~/WebAssembly.Global#property_value)
+-   [valueOf](./././~/WebAssembly.Global#method_valueof_0)
 
 c
 
@@ -33,7 +32,7 @@ c
 
 A `WebAssembly.Instance` object is a stateful, executable instance of a `WebAssembly.Module`. Instance objects contain all the Exported WebAssembly functions that allow calling into WebAssembly code from JavaScript.
 
-*   [exports](./././~/WebAssembly.Instance#property_exports)
+-   [exports](./././~/WebAssembly.Instance#property_exports)
 
 c
 
@@ -47,8 +46,8 @@ c
 
 The `WebAssembly.Memory` object is a resizable `ArrayBuffer` or `SharedArrayBuffer` that holds the raw bytes of memory accessed by a WebAssembly Instance.
 
-*   [buffer](./././~/WebAssembly.Memory#property_buffer)
-*   [grow](./././~/WebAssembly.Memory#method_grow_0)
+-   [buffer](./././~/WebAssembly.Memory#property_buffer)
+-   [grow](./././~/WebAssembly.Memory#method_grow_0)
 
 c
 
@@ -56,9 +55,9 @@ c
 
 A `WebAssembly.Module` object contains stateless WebAssembly code that has already been compiled by the browser — this can be efficiently shared with Workers, and instantiated multiple times.
 
-*   [customSections](./././~/WebAssembly.Module#method_customsections_0)
-*   [exports](./././~/WebAssembly.Module#method_exports_0)
-*   [imports](./././~/WebAssembly.Module#method_imports_0)
+-   [customSections](./././~/WebAssembly.Module#method_customsections_0)
+-   [exports](./././~/WebAssembly.Module#method_exports_0)
+-   [imports](./././~/WebAssembly.Module#method_imports_0)
 
 c
 
@@ -72,12 +71,10 @@ c
 
 The `WebAssembly.Table()` object is a JavaScript wrapper object — an array-like structure representing a WebAssembly Table, which stores function references. A table created by JavaScript or in WebAssembly code will be accessible and mutable from both JavaScript and WebAssembly.
 
-*   [get](./././~/WebAssembly.Table#method_get_0)
-*   [grow](./././~/WebAssembly.Table#method_grow_0)
-*   [length](./././~/WebAssembly.Table#property_length)
-*   [set](./././~/WebAssembly.Table#method_set_0)
-
-### Functions [#](#Functions)
+-   [get](./././~/WebAssembly.Table#method_get_0)
+-   [grow](./././~/WebAssembly.Table#method_grow_0)
+-   [length](./././~/WebAssembly.Table#property_length)
+-   [set](./././~/WebAssembly.Table#method_set_0)
 
 f
 
@@ -109,16 +106,14 @@ f
 
 The `WebAssembly.validate()` function validates a given typed array of WebAssembly binary code, returning whether the bytes form a valid wasm module (`true`) or not (`false`).
 
-### Interfaces [#](#Interfaces)
-
 I
 
 [WebAssembly.GlobalDescriptor](./././~/WebAssembly.GlobalDescriptor "WebAssembly.GlobalDescriptor")
 
 The `GlobalDescriptor` describes the options you can pass to `new WebAssembly.Global()`.
 
-*   [mutable](./././~/WebAssembly.GlobalDescriptor#property_mutable)
-*   [value](./././~/WebAssembly.GlobalDescriptor#property_value)
+-   [mutable](./././~/WebAssembly.GlobalDescriptor#property_mutable)
+-   [value](./././~/WebAssembly.GlobalDescriptor#property_value)
 
 I
 
@@ -126,9 +121,9 @@ I
 
 The `MemoryDescriptor` describes the options you can pass to `new WebAssembly.Memory()`.
 
-*   [initial](./././~/WebAssembly.MemoryDescriptor#property_initial)
-*   [maximum](./././~/WebAssembly.MemoryDescriptor#property_maximum)
-*   [shared](./././~/WebAssembly.MemoryDescriptor#property_shared)
+-   [initial](./././~/WebAssembly.MemoryDescriptor#property_initial)
+-   [maximum](./././~/WebAssembly.MemoryDescriptor#property_maximum)
+-   [shared](./././~/WebAssembly.MemoryDescriptor#property_shared)
 
 I
 
@@ -136,8 +131,8 @@ I
 
 A `ModuleExportDescriptor` is the description of a declared export in a `WebAssembly.Module`.
 
-*   [kind](./././~/WebAssembly.ModuleExportDescriptor#property_kind)
-*   [name](./././~/WebAssembly.ModuleExportDescriptor#property_name)
+-   [kind](./././~/WebAssembly.ModuleExportDescriptor#property_kind)
+-   [name](./././~/WebAssembly.ModuleExportDescriptor#property_name)
 
 I
 
@@ -145,9 +140,9 @@ I
 
 A `ModuleImportDescriptor` is the description of a declared import in a `WebAssembly.Module`.
 
-*   [kind](./././~/WebAssembly.ModuleImportDescriptor#property_kind)
-*   [module](./././~/WebAssembly.ModuleImportDescriptor#property_module)
-*   [name](./././~/WebAssembly.ModuleImportDescriptor#property_name)
+-   [kind](./././~/WebAssembly.ModuleImportDescriptor#property_kind)
+-   [module](./././~/WebAssembly.ModuleImportDescriptor#property_module)
+-   [name](./././~/WebAssembly.ModuleImportDescriptor#property_name)
 
 I
 
@@ -155,9 +150,9 @@ I
 
 The `TableDescriptor` describes the options you can pass to `new WebAssembly.Table()`.
 
-*   [element](./././~/WebAssembly.TableDescriptor#property_element)
-*   [initial](./././~/WebAssembly.TableDescriptor#property_initial)
-*   [maximum](./././~/WebAssembly.TableDescriptor#property_maximum)
+-   [element](./././~/WebAssembly.TableDescriptor#property_element)
+-   [initial](./././~/WebAssembly.TableDescriptor#property_initial)
+-   [maximum](./././~/WebAssembly.TableDescriptor#property_maximum)
 
 I
 
@@ -165,18 +160,14 @@ I
 
 The value returned from `WebAssembly.instantiate`.
 
-*   [instance](./././~/WebAssembly.WebAssemblyInstantiatedSource#property_instance)
-*   [module](./././~/WebAssembly.WebAssemblyInstantiatedSource#property_module)
-
-### Namespaces [#](#Namespaces)
+-   [instance](./././~/WebAssembly.WebAssemblyInstantiatedSource#property_instance)
+-   [module](./././~/WebAssembly.WebAssemblyInstantiatedSource#property_module)
 
 N
 
 [WebAssembly](./././~/WebAssembly "WebAssembly")
 
 No documentation available
-
-### Type Aliases [#](<#Type Aliases>)
 
 T
 

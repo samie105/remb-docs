@@ -5,13 +5,14 @@ canonical_url: "https://nextjs.org/docs/messages/no-unwanted-polyfillio"
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:18:40.850Z"
-content_hash: "f7c728a0d0d8fdc8d92f2fe5099c3726acb80d5009ca5da0bbf45e27757395b8"
+last_crawled_at: "2026-04-27T18:18:04.541Z"
+content_hash: "a426c46c0bb156c1d9e383b1a379e40d534b2b3bb1ec8df8b8b979432e2481e1"
 menu_path: ["No Unwanted Polyfill.io"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/messages/no-title-in-document-head/index.md", "title": "No Title in Document Head"}
-nav_next: {"path": "nextjs/docs/messages/sync-dynamic-apis/index.md", "title": "Dynamic APIs are Asynchronous"}
+version: "latest"
+content_language: "en"
 ---
+[Docs](/docs)[Errors](/docs)No Unwanted Polyfill.io
 
 # No Unwanted Polyfill.io
 
@@ -27,10 +28,6 @@ Remove all duplicate polyfills. If you need to add polyfills but are not sure if
 
 ## Useful Links[](#useful-links)
 
-*   [Supported Browsers and Features](/docs/architecture/supported-browsers)
+-   [Supported Browsers and Features](/docs/architecture/supported-browsers)
 
 Was this helpful?
-
-supported.
-
-Send

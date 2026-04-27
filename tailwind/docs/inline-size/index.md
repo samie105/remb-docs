@@ -5,61 +5,15 @@ canonical_url: "https://tailwindcss.com/docs/inline-size"
 docset: "tailwind"
 kind: "framework"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:52:49.922Z"
-content_hash: "a55502dd93f222113f88e661b4d8137b3262cde2ffbeb0940abcb2ec0df94496"
+last_crawled_at: "2026-04-27T20:05:19.017Z"
+content_hash: "273b8edf185e8e327d52f7b0af85f1191562f31c076a59218de48db8c0124c16"
 menu_path: ["inline-size"]
 section_path: []
-nav_prev: {"path": "tailwind/docs/max-height/index.md", "title": "max-height"}
-nav_next: {"path": "tailwind/docs/min-inline-size/index.md", "title": "min-inline-size"}
+content_language: "en"
 ---
-
 Sizing
 
 Utilities for setting the inline size of an element.
-
-Class
-
-Styles
-
-`inline-<number>`
-
-`inline-size: calc(var(--spacing) * <number>);`
-
-`inline-<fraction>`
-
-`inline-size: calc(<fraction> * 100%);`
-
-`inline-3xs`
-
-`inline-size: var(--container-3xs); /* 16rem (256px) */`
-
-`inline-2xs`
-
-`inline-size: var(--container-2xs); /* 18rem (288px) */`
-
-`inline-xs`
-
-`inline-size: var(--container-xs); /* 20rem (320px) */`
-
-`inline-sm`
-
-`inline-size: var(--container-sm); /* 24rem (384px) */`
-
-`inline-md`
-
-`inline-size: var(--container-md); /* 28rem (448px) */`
-
-`inline-lg`
-
-`inline-size: var(--container-lg); /* 32rem (512px) */`
-
-`inline-xl`
-
-`inline-size: var(--container-xl); /* 36rem (576px) */`
-
-`inline-2xl`
-
-`inline-size: var(--container-2xl); /* 42rem (672px) */`
 
 ## [Examples](#examples)
 
@@ -167,7 +121,7 @@ Prefix an `inline-size` utility with a breakpoint variant like `md:` to only app
 <div class="inline-1/2 md:inline-full ...">  <!-- ... --></div>
 ```
 
-Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).
+Learn more about using variants in the [variants documentation](https://tailwindcss.com/docs/hover-focus-and-other-states).
 
 ## [Customizing your theme](#customizing-your-theme)
 
@@ -177,4 +131,4 @@ The `inline-<number>` utilities are driven by the `--spacing` theme variable, wh
 @theme {  --spacing: 1px; }
 ```
 
-Learn more about customizing the spacing scale in the [theme variable documentation](tailwind/docs/theme/index.md).
+Learn more about customizing the spacing scale in the [theme variable documentation](https://tailwindcss.com/docs/theme).

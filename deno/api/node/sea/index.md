@@ -5,10 +5,11 @@ canonical_url: "https://docs.deno.com/api/node/sea/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:40:17.242Z"
-content_hash: "d2bbfcd7bf1e7c1f6f217f4dfa0bdd78eacda087bcb8dde9ce0543c6e9bc3837"
+last_crawled_at: "2026-04-27T17:11:39.738Z"
+content_hash: "861e43bbb340be5203cb8233d7b6be5c0079cfb8577f65375636a6ab26306ff2"
 menu_path: ["sea - Node documentation"]
 section_path: []
+content_language: "en"
 ---
 ### Usage in Deno
 
@@ -49,13 +50,13 @@ node --experimental-sea-config sea-config.json
 ```
 
 4.  Create a copy of the `node` executable and name it according to your needs:
-    *   On systems other than Windows:
+    -   On systems other than Windows:
 
 ```bash
 cp $(command -v node) hello
 ```
 
-*   On Windows:
+-   On Windows:
 
 ```text
 node -e "require('fs').copyFileSync(process.execPath, 'hello.exe')"
@@ -63,13 +64,13 @@ node -e "require('fs').copyFileSync(process.execPath, 'hello.exe')"
 
 The `.exe` extension is necessary. 5. Remove the signature of the binary (macOS and Windows only):
 
-*   On macOS:
+-   On macOS:
 
 ```bash
 codesign --remove-signature hello
 ```
 
-*   On Windows (optional): [signtool](https://learn.microsoft.com/en-us/windows/win32/seccrypto/signtool) can be used from the installed [Windows SDK](https://developer.microsoft.com/en-us/windows/downloads/windows-sdk/). If this step is skipped, ignore any signature-related warning from postject.
+-   On Windows (optional): [signtool](https://learn.microsoft.com/en-us/windows/win32/seccrypto/signtool) can be used from the installed [Windows SDK](https://developer.microsoft.com/en-us/windows/downloads/windows-sdk/). If this step is skipped, ignore any signature-related warning from postject.
 
 ```powershell
 signtool remove /s hello.exe
@@ -77,33 +78,33 @@ signtool remove /s hello.exe
 
 6.  Inject the blob into the copied binary by running `postject` with the following options:
     
-    *   `hello` / `hello.exe` - The name of the copy of the `node` executable created in step 4.
-    *   `NODE_SEA_BLOB` - The name of the resource / note / section in the binary where the contents of the blob will be stored.
-    *   `sea-prep.blob` - The name of the blob created in step 1.
-    *   `--sentinel-fuse NODE_SEA_FUSE_fce680ab2cc467b6e072b8b5df1996b2` - The [fuse](https://www.electronjs.org/docs/latest/tutorial/fuses) used by the Node.js project to detect if a file has been injected.
-    *   `--macho-segment-name NODE_SEA` (only needed on macOS) - The name of the segment in the binary where the contents of the blob will be stored. To summarize, here is the required command for each platform:
-    *   On Linux:
+    -   `hello` / `hello.exe` - The name of the copy of the `node` executable created in step 4.
+    -   `NODE_SEA_BLOB` - The name of the resource / note / section in the binary where the contents of the blob will be stored.
+    -   `sea-prep.blob` - The name of the blob created in step 1.
+    -   `--sentinel-fuse NODE_SEA_FUSE_fce680ab2cc467b6e072b8b5df1996b2` - The [fuse](https://www.electronjs.org/docs/latest/tutorial/fuses) used by the Node.js project to detect if a file has been injected.
+    -   `--macho-segment-name NODE_SEA` (only needed on macOS) - The name of the segment in the binary where the contents of the blob will be stored. To summarize, here is the required command for each platform:
+    -   On Linux:
     
     ```bash
     npx postject hello NODE_SEA_BLOB sea-prep.blob \
         --sentinel-fuse NODE_SEA_FUSE_fce680ab2cc467b6e072b8b5df1996b2
     ```
     
-    *   On Windows - PowerShell:
+    -   On Windows - PowerShell:
     
     ```powershell
     npx postject hello.exe NODE_SEA_BLOB sea-prep.blob `
         --sentinel-fuse NODE_SEA_FUSE_fce680ab2cc467b6e072b8b5df1996b2
     ```
     
-    *   On Windows - Command Prompt:
+    -   On Windows - Command Prompt:
     
     ```text
     npx postject hello.exe NODE_SEA_BLOB sea-prep.blob ^
         --sentinel-fuse NODE_SEA_FUSE_fce680ab2cc467b6e072b8b5df1996b2
     ```
     
-    *   On macOS:
+    -   On macOS:
     
     ```bash
     npx postject hello NODE_SEA_BLOB sea-prep.blob \
@@ -112,34 +113,32 @@ signtool remove /s hello.exe
     ```
     
 7.  Sign the binary (macOS and Windows only):
-    *   On macOS:
+    -   On macOS:
 
 ```bash
 codesign --sign - hello
 ```
 
-*   On Windows (optional): A certificate needs to be present for this to work. However, the unsigned binary would still be runnable.
+-   On Windows (optional): A certificate needs to be present for this to work. However, the unsigned binary would still be runnable.
 
 ```powershell
 signtool sign /fd SHA256 hello.exe
 ```
 
 8.  Run the binary:
-    *   On systems other than Windows
+    -   On systems other than Windows
 
 ```console
 $ ./hello world
 Hello, world!
 ```
 
-*   On Windows
+-   On Windows
 
 ```console
 $ .\hello.exe world
 Hello, world!
 ```
-
-### Functions [#](#Functions)
 
 f
 
@@ -164,8 +163,6 @@ f
 [isSea](.././sea/~/isSea "isSea")
 
 No documentation available
-
-### Type Aliases [#](<#Type Aliases>)
 
 T
 

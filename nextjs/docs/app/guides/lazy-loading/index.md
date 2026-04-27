@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/app/guides/lazy-loading"
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:14:59.197Z"
-content_hash: "d91316086ee76faa7b1fa6c3c690c0f322b9e13b865d6b7b94bedb0ad0cceb9c"
+last_crawled_at: "2026-04-27T18:13:51.480Z"
+content_hash: "efd79670e5c63e56614023d71f5ae976a5c4b85fee6b4e20dbc764c54b879daa"
 menu_path: ["How to lazy load Client Components and libraries"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/guides/json-ld/index.md", "title": "How to implement JSON-LD in your Next.js application"}
-nav_next: {"path": "nextjs/docs/app/guides/local-development/index.md", "title": "How to optimize your local development environment"}
+version: "latest"
+content_language: "en"
 ---
+[App Router](/docs/app)[Guides](/docs/app/guides)Lazy Loading
 
 # How to lazy load Client Components and libraries
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 [Lazy loading](https://developer.mozilla.org/docs/Web/Performance/Lazy_loading) in Next.js helps improve the initial loading performance of an application by decreasing the amount of JavaScript needed to render a route.
 
@@ -227,26 +228,10 @@ const mod = require(/* turbopackOptional: true */ './optional-module')
 
 This is useful for:
 
-*   Conditional features that may not be installed
-*   Plugin systems where modules are optional
-*   Gradual migrations where some files may not exist yet
+-   Conditional features that may not be installed
+-   Plugin systems where modules are optional
+-   Gradual migrations where some files may not exist yet
 
 > **Good to know:** `webpackOptional` is not supported. Use `turbopackOptional` instead when using Turbopack.
 
-[Previous
-
-JSON-LD
-
-](/docs/app/guides/json-ld)
-
-[Next
-
-Development Environment
-
-](/docs/app/guides/local-development)
-
 Was this helpful?
-
-supported.
-
-Send

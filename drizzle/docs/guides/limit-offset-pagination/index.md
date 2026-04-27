@@ -5,29 +5,17 @@ canonical_url: "https://orm.drizzle.team/docs/guides/limit-offset-pagination"
 docset: "drizzle"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:05:28.526Z"
-content_hash: "842f1215489691d39724d1ed329db213f1defb64fa27a0390aabc914101b356d"
+last_crawled_at: "2026-04-27T19:00:53.947Z"
+content_hash: "04ccfa5ef9614d8036bcb39aa63260b06f6a036e7541cd5847cbdf087a8681a0"
 menu_path: ["Drizzle ORM - SQL Limit/Offset pagination"]
 section_path: []
-nav_prev: {"path": "drizzle/docs/guides/incrementing-a-value/index.md", "title": "Drizzle ORM - SQL Increment value"}
-nav_next: {"path": "drizzle/docs/guides/mysql-local-setup/index.md", "title": "Drizzle ORM - How to setup MySQL locally"}
+content_language: "en"
 ---
-
 Drizzle | SQL Limit/Offset pagination
-
-PostgreSQL
-
-MySQL
-
-SQLite
 
 This guide demonstrates how to implement `limit/offset` pagination in Drizzle:
 
-index.ts
-
-schema.ts
-
-```
+```ts
 import { asc } from 'drizzle-orm';
 import { users } from './schema';
 
@@ -41,11 +29,11 @@ await db
   .offset(4); // the number of rows to skip
 ```
 
-```
+```sql
 select * from users order by id asc limit 4 offset 4;
 ```
 
-```
+```ts
 // 5-8 rows returned
 [
   {
@@ -81,7 +69,7 @@ If you need to order by a non-unique column, you should also append a unique col
 
 This is how you can implement `limit/offset` pagination with 2 columns:
 
-```
+```ts
 const getUsers = async (page = 1, pageSize = 3) => {
   await db
     .select()
@@ -96,7 +84,7 @@ await getUsers();
 
 Drizzle has useful relational queries API, that lets you easily implement `limit/offset` pagination:
 
-```
+```ts
 import * as schema from './db/schema';
 
 const db = drizzle({ schema });
@@ -114,7 +102,7 @@ await getUsers();
 
 Drizzle has simple and flexible API, which lets you easily create custom solutions. This is how you can create custom function for pagination using `.$dynamic()` function:
 
-```
+```ts
 import { SQL, asc } from 'drizzle-orm';
 import { PgColumn, PgSelect } from 'drizzle-orm/pg-core';
 
@@ -139,7 +127,7 @@ You can improve performance of `limit/offset` pagination by using `deferred join
 
 To implement it you can do like this:
 
-```
+```ts
 const getUsers = async (page = 1, pageSize = 10) => {
    const sq = db
     .select({ id: users.id })
@@ -159,7 +147,7 @@ const getUsers = async (page = 1, pageSize = 10) => {
 
 This is how it works:
 
-```
+```ts
 const getUsers = async (page = 1, pageSize = 3) => {
   await db
     .select()
@@ -173,7 +161,7 @@ const getUsers = async (page = 1, pageSize = 3) => {
 await getUsers();
 ```
 
-```
+```ts
 // results for the first page
 [
   {
@@ -197,7 +185,7 @@ await getUsers();
 ]
 ```
 
-```
+```ts
 // while user is browsing the first page, a row with id 2 is deleted
 await db.delete(users).where(eq(users.id, 2));
 
@@ -205,7 +193,7 @@ await db.delete(users).where(eq(users.id, 2));
 await getUsers(2);
 ```
 
-```
+```ts
 // second page, row with id 3 was skipped
 [
   {
@@ -229,6 +217,6 @@ await getUsers(2);
 ]
 ```
 
-So, if your database experiences frequently insert and delete operations in real time or you need high performance to paginate large tables, you should consider using [cursor-based](drizzle/docs/guides/cursor-based-pagination/index.md) pagination instead.
+So, if your database experiences frequently insert and delete operations in real time or you need high performance to paginate large tables, you should consider using [cursor-based](https://orm.drizzle.team/docs/guides/cursor-based-pagination) pagination instead.
 
 To learn more about `deferred join` technique you should follow these guides: [Planetscale Pagination Guide](https://planetscale.com/blog/mysql-pagination) and [Efficient Pagination Guide by Aaron Francis](https://aaronfrancis.com/2022/efficient-pagination-using-deferred-joins).

@@ -5,18 +5,12 @@ canonical_url: "https://www.prisma.io/docs/orm/prisma-schema/data-model/relation
 docset: "prisma"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:55:18.019Z"
-content_hash: "6b201982e5fa9c1321db01aee0196fea446cac73193f1498acfb3ccadf511139"
+last_crawled_at: "2026-04-27T19:44:42.595Z"
+content_hash: "cd1817dc97c8cbd27f0ef8e5c793ca6c6b44dbc0e2f444066e443c1afbee7491"
 menu_path: ["Many-to-many relations"]
 section_path: []
-nav_prev: {"path": "prisma/docs/orm/prisma-schema/data-model/relations/index.md", "title": "Relations"}
-nav_next: {"path": "prisma/docs/orm/prisma-schema/data-model/relations/one-to-many-relations/index.md", "title": "One-to-many relations"}
+content_language: "en"
 ---
-
-Data Model
-
-Relations
-
 How to define and work with many-to-many relations in Prisma.
 
 Many-to-many (m-n) relations connect zero or more records on one side to zero or more on the other. They can be [implicit](#implicit-many-to-many-relations) (Prisma manages the relation table) or [explicit](#explicit-many-to-many-relations) (you define the relation table).
@@ -129,17 +123,17 @@ const posts = await prisma.post.findMany({
 
 #### [Rules for implicit m-n](#rules-for-implicit-m-n)
 
-*   Both models must have a single `@id` (no composite IDs or `@unique`)
-*   No `@relation` attribute needed (unless disambiguating)
-*   Cannot use `fields`, `references`, `onUpdate`, or `onDelete` in `@relation`
+-   Both models must have a single `@id` (no composite IDs or `@unique`)
+-   No `@relation` attribute needed (unless disambiguating)
+-   Cannot use `fields`, `references`, `onUpdate`, or `onDelete` in `@relation`
 
 #### [Relation table conventions](#relation-table-conventions)
 
 For `prisma db pull` to recognize implicit m-n tables:
 
-*   Table name: `_CategoryToPost` (underscore + model names alphabetically + `To`)
-*   Columns: `A` (FK to first model alphabetically) and `B` (FK to second)
-*   Unique index on both columns, non-unique index on `B`
+-   Table name: `_CategoryToPost` (underscore + model names alphabetically + `To`)
+-   Columns: `A` (FK to first model alphabetically) and `B` (FK to second)
+-   Unique index on both columns, non-unique index on `B`
 
 ### [Configuring relation table name](#configuring-relation-table-name)
 
@@ -175,5 +169,3 @@ const posts = await prisma.post.findMany({
   where: { categories: { some: { name: { contains: "Servers" } } } },
 });
 ```
-
-[Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/prisma-schema/data-model/relations/many-to-many-relations.mdx)

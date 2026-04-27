@@ -5,31 +5,32 @@ canonical_url: "https://docs.deno.com/runtime/reference/web_platform_apis/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:08:06.444Z"
-content_hash: "bca42a5c99c8f77bac1da3fb797d977873327054d3246cc635c4b06a53ccfc62"
+last_crawled_at: "2026-04-27T17:50:48.827Z"
+content_hash: "cb6770c524ba26e343452f48381e145071dd896f3116dc1fd5cb371af0e03570"
 menu_path: ["Web Platform APIs"]
 section_path: []
+content_language: "en"
 ---
-On this page
+**On this page**
 
-*   [fetch](#fetch)
-    *   [Spec deviations](#spec-deviations)
-    *   [Fetching local files](#fetching-local-files)
-*   [CustomEvent and EventTarget](#customevent-and-eventtarget)
-    *   [Spec deviations](#spec-deviations-1)
-*   [Typings](#typings)
-*   [Location](#location)
-    *   [Location flag](#location-flag)
-    *   [Extended usage](#extended-usage)
-        *   [Fetch API](#fetch-api)
-        *   [Worker modules](#worker-modules)
-*   [Web Storage](#web-storage)
-*   [Web Workers](#web-workers)
-    *   [Instantiation permissions](#instantiation-permissions)
-    *   [Using Deno in a worker](#using-deno-in-a-worker)
-    *   [Specifying worker permissions](#specifying-worker-permissions)
-*   [Deviations of other APIs from spec](#deviations-of-other-apis-from-spec)
-    *   [Cache API](#cache-api)
+-   [fetch](#fetch)
+    -   [Spec deviations](#spec-deviations)
+    -   [Fetching local files](#fetching-local-files)
+-   [CustomEvent and EventTarget](#customevent-and-eventtarget)
+    -   [Spec deviations](#spec-deviations-1)
+-   [Typings](#typings)
+-   [Location](#location)
+    -   [Location flag](#location-flag)
+    -   [Extended usage](#extended-usage)
+        -   [Fetch API](#fetch-api)
+        -   [Worker modules](#worker-modules)
+-   [Web Storage](#web-storage)
+-   [Web Workers](#web-workers)
+    -   [Instantiation permissions](#instantiation-permissions)
+    -   [Using Deno in a worker](#using-deno-in-a-worker)
+    -   [Specifying worker permissions](#specifying-worker-permissions)
+-   [Deviations of other APIs from spec](#deviations-of-other-apis-from-spec)
+    -   [Cache API](#cache-api)
 
 One way Deno simplifies web and cloud development is by using standard Web Platform APIs (like `fetch`, WebSockets and more) over proprietary APIs. This means if you've ever built for the browser, you're likely already familiar with Deno, and if you're learning Deno, you're also investing in your knowledge of the web.
 
@@ -45,20 +46,20 @@ The [`fetch`](/api/web/~/fetch) API can be used to make HTTP requests. It is imp
 
 ### Spec deviations
 
-*   The Deno user agent does not have a cookie jar. As such, the `set-cookie` header on a response is not processed, or filtered from the visible response headers.
-*   Deno does not follow the same-origin policy, because the Deno user agent currently does not have the concept of origins, and it does not have a cookie jar. This means Deno does not need to protect against leaking authenticated data cross origin. Because of this Deno does not implement the following sections of the WHATWG `fetch` specification:
-    *   Section `3.1. 'Origin' header`.
-    *   Section `3.2. CORS protocol`.
-    *   Section `3.5. CORB`.
-    *   Section `3.6. 'Cross-Origin-Resource-Policy' header`.
-    *   `Atomic HTTP redirect handling`.
-    *   The `opaqueredirect` response type.
-*   A `fetch` with a `redirect` mode of `manual` will return a `basic` response rather than an `opaqueredirect` response.
-*   The specification is vague on how [`file:` URLs are to be handled](https://fetch.spec.whatwg.org/#scheme-fetch). Firefox is the only mainstream browser that implements fetching `file:` URLs, and even then it doesn't work by default. As of Deno 1.16, Deno supports fetching local files. See the next section for details.
-*   The `request` and `response` header guards are implemented, but unlike browsers do not have any constraints on which header names are allowed.
-*   The `referrer`, `referrerPolicy`, `mode`, `credentials`, `cache`, `integrity`, `keepalive`, and `window` properties and their relevant behaviours in `RequestInit` are not implemented. The relevant fields are not present on the [`Request`](/api/web/~/Request) object.
-*   Request body upload streaming is supported (on HTTP/1.1 and HTTP/2). Unlike the current fetch proposal, the implementation supports duplex streaming.
-*   The `set-cookie` header is not concatenated when iterated over in the `headers` iterator. This behaviour is in the [process of being specified](https://github.com/whatwg/fetch/pull/1346).
+-   The Deno user agent does not have a cookie jar. As such, the `set-cookie` header on a response is not processed, or filtered from the visible response headers.
+-   Deno does not follow the same-origin policy, because the Deno user agent currently does not have the concept of origins, and it does not have a cookie jar. This means Deno does not need to protect against leaking authenticated data cross origin. Because of this Deno does not implement the following sections of the WHATWG `fetch` specification:
+    -   Section `3.1. 'Origin' header`.
+    -   Section `3.2. CORS protocol`.
+    -   Section `3.5. CORB`.
+    -   Section `3.6. 'Cross-Origin-Resource-Policy' header`.
+    -   `Atomic HTTP redirect handling`.
+    -   The `opaqueredirect` response type.
+-   A `fetch` with a `redirect` mode of `manual` will return a `basic` response rather than an `opaqueredirect` response.
+-   The specification is vague on how [`file:` URLs are to be handled](https://fetch.spec.whatwg.org/#scheme-fetch). Firefox is the only mainstream browser that implements fetching `file:` URLs, and even then it doesn't work by default. As of Deno 1.16, Deno supports fetching local files. See the next section for details.
+-   The `request` and `response` header guards are implemented, but unlike browsers do not have any constraints on which header names are allowed.
+-   The `referrer`, `referrerPolicy`, `mode`, `credentials`, `cache`, `integrity`, `keepalive`, and `window` properties and their relevant behaviours in `RequestInit` are not implemented. The relevant fields are not present on the [`Request`](/api/web/~/Request) object.
+-   Request body upload streaming is supported (on HTTP/1.1 and HTTP/2). Unlike the current fetch proposal, the implementation supports duplex streaming.
+-   The `set-cookie` header is not concatenated when iterated over in the `headers` iterator. This behaviour is in the [process of being specified](https://github.com/whatwg/fetch/pull/1346).
 
 ### Fetching local files
 
@@ -75,11 +76,11 @@ const config = await response.json();
 
 Notes on fetching local files:
 
-*   Permissions are applied to reading resources, so an appropriate `--allow-read` permission is needed to be able to read a local file.
-*   Fetching locally only supports the `GET` method, and will reject the promise with any other method.
-*   A file that does not exist simply rejects the promise with a vague `TypeError`. This is to avoid the potential of fingerprinting attacks.
-*   No headers are set on the response. Therefore it is up to the consumer to determine things like the content type or content length.
-*   Response bodies are streamed from the Rust side, so large files are available in chunks, and can be cancelled.
+-   Permissions are applied to reading resources, so an appropriate `--allow-read` permission is needed to be able to read a local file.
+-   Fetching locally only supports the `GET` method, and will reject the promise with any other method.
+-   A file that does not exist simply rejects the promise with a vague `TypeError`. This is to avoid the potential of fingerprinting attacks.
+-   No headers are set on the response. Therefore it is up to the consumer to determine things like the content type or content length.
+-   Response bodies are streamed from the Rust side, so large files are available in chunks, and can be cancelled.
 
 ## CustomEvent and EventTarget
 
@@ -87,8 +88,8 @@ The [DOM Event API](/api/web/~/Event) can be used to dispatch and listen to even
 
 ### Spec deviations
 
-*   Events do not bubble, because Deno does not have a DOM hierarchy, so there is no tree for Events to bubble/capture through.
-*   `timeStamp` property is always set to `0`.
+-   Events do not bubble, because Deno does not have a DOM hierarchy, so there is no tree for Events to bubble/capture through.
+-   `timeStamp` property is always set to `0`.
 
 ## Typings
 
@@ -165,9 +166,9 @@ The [Web Storage API](/api/web/storage) provides an API for storing string keys 
 
 In a browser, `localStorage` persists data uniquely per origin (effectively the protocol plus hostname plus port). As of Deno 1.16, Deno has a set of rules to determine what is a unique storage location:
 
-*   When using the `--location` flag, the origin for the location is used to uniquely store the data. That means a location of `http://example.com/a.ts` and `http://example.com/b.ts` and `http://example.com:80/` would all share the same storage, but `https://example.com/` would be different.
-*   If there is no location specifier, but there is a `--config` configuration file specified, the absolute path to that configuration file is used. That means `deno run --config deno.jsonc a.ts` and `deno run --config deno.jsonc b.ts` would share the same storage, but `deno run --config tsconfig.json a.ts` would be different.
-*   If there is no configuration or location specifier, Deno uses the absolute path to the main module to determine what storage is shared. The Deno REPL generates a "synthetic" main module that is based off the current working directory where `deno` is started from. This means that multiple invocations of the REPL from the same path will share the persisted `localStorage` data.
+-   When using the `--location` flag, the origin for the location is used to uniquely store the data. That means a location of `http://example.com/a.ts` and `http://example.com/b.ts` and `http://example.com:80/` would all share the same storage, but `https://example.com/` would be different.
+-   If there is no location specifier, but there is a `--config` configuration file specified, the absolute path to that configuration file is used. That means `deno run --config deno.jsonc a.ts` and `deno run --config deno.jsonc b.ts` would share the same storage, but `deno run --config tsconfig.json a.ts` would be different.
+-   If there is no configuration or location specifier, Deno uses the absolute path to the main module to determine what storage is shared. The Deno REPL generates a "synthetic" main module that is based off the current working directory where `deno` is started from. This means that multiple invocations of the REPL from the same path will share the persisted `localStorage` data.
 
 To set, get and remove items from `localStorage`, you can use the following:
 
@@ -424,12 +425,12 @@ const worker = new Worker(import.meta.resolve("./worker.js"), {
 
 Only the following APIs are implemented:
 
-*   [CacheStorage::open()](https://developer.mozilla.org/en-US/docs/Web/API/CacheStorage/open)
-*   [CacheStorage::has()](https://developer.mozilla.org/en-US/docs/Web/API/CacheStorage/has)
-*   [CacheStorage::delete()](https://developer.mozilla.org/en-US/docs/Web/API/CacheStorage/delete)
-*   [Cache::match()](https://developer.mozilla.org/en-US/docs/Web/API/Cache/match)
-*   [Cache::put()](https://developer.mozilla.org/en-US/docs/Web/API/Cache/put)
-*   [Cache::delete()](https://developer.mozilla.org/en-US/docs/Web/API/Cache/delete)
+-   [CacheStorage::open()](https://developer.mozilla.org/en-US/docs/Web/API/CacheStorage/open)
+-   [CacheStorage::has()](https://developer.mozilla.org/en-US/docs/Web/API/CacheStorage/has)
+-   [CacheStorage::delete()](https://developer.mozilla.org/en-US/docs/Web/API/CacheStorage/delete)
+-   [Cache::match()](https://developer.mozilla.org/en-US/docs/Web/API/Cache/match)
+-   [Cache::put()](https://developer.mozilla.org/en-US/docs/Web/API/Cache/put)
+-   [Cache::delete()](https://developer.mozilla.org/en-US/docs/Web/API/Cache/delete)
 
 A few things that are different compared to browsers:
 

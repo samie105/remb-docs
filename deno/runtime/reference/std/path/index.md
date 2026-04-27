@@ -5,15 +5,16 @@ canonical_url: "https://docs.deno.com/runtime/reference/std/path/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:04:59.142Z"
-content_hash: "fb8e2b5d06e24b6a3fec5585d4dfeefd94fc3b12f2c1e39dddeeea5f78e0fb6d"
+last_crawled_at: "2026-04-27T17:46:18.201Z"
+content_hash: "6cc9e313a1b672eb3437cfb003fb65d63beaeb5760b92d16557336cd4aa8db86"
 menu_path: ["@std/path"]
 section_path: []
+content_language: "en"
 ---
-On this page
+**On this page**
 
-*   [Overview](#overview)
-    *   [Add to your project](#add-to-your-project)
+-   [Overview](#overview)
+    -   [Add to your project](#add-to-your-project)
 
 ## Overview
 

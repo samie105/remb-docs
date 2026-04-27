@@ -5,55 +5,25 @@ canonical_url: "https://www.postgresql.org/docs/current/docguide.html"
 docset: "postgres"
 kind: "database"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:54:29.621Z"
-content_hash: "bab52bdd30599f1957e707853ee5d90eb4e42f09f163e0c892031ee7baeea4b1"
+last_crawled_at: "2026-04-27T20:52:56.042Z"
+content_hash: "375e43f493083ca1dfb8b871038c52baf0bd564cc48b949a680f3e2ed86d8dfa"
 menu_path: ["PostgreSQL: Documentation: 18: Appendix J. Documentation"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/sourcerepo.html/index.md", "title": "PostgreSQL: Documentation: 18: Appendix\u00a0I.\u00a0The Source Code Repository"}
-nav_next: {"path": "postgres/docs/current/acronyms.html/index.md", "title": "PostgreSQL: Documentation: 18: Appendix\u00a0L.\u00a0Acronyms"}
+content_language: "en"
 ---
-
 Development Versions: [devel](https://www.postgresql.org/docs/devel/docguide.html "PostgreSQL devel - Appendix J. Documentation")
-
-Appendix J. Documentation
-
-[Prev](https://www.postgresql.org/docs/current/git.html "I.1. Getting the Source via Git") 
-
-[Up](https://www.postgresql.org/docs/current/appendixes.html "Part VIII. Appendixes")
-
-Part VIII. Appendixes
-
-[Home](https://www.postgresql.org/docs/current/index.html "PostgreSQL 18.3 Documentation")
-
- [Next](https://www.postgresql.org/docs/current/docguide-docbook.html "J.1. DocBook")
-
-* * *
 
 PostgreSQL has four primary documentation formats:
 
-*   Plain text, for pre-installation information
+-   Plain text, for pre-installation information
     
-*   HTML, for on-line browsing and reference
+-   HTML, for on-line browsing and reference
     
-*   PDF, for printing
+-   PDF, for printing
     
-*   man pages, for quick reference.
+-   man pages, for quick reference.
     
 
 Additionally, a number of plain-text `README` files can be found throughout the PostgreSQL source tree, documenting various implementation issues.
 
 HTML documentation and man pages are part of a standard distribution and are installed by default. PDF format documentation is available separately for download.
-
-* * *
-
-[Prev](https://www.postgresql.org/docs/current/git.html "I.1. Getting the Source via Git") 
-
-[Up](https://www.postgresql.org/docs/current/appendixes.html "Part VIII. Appendixes")
-
- [Next](https://www.postgresql.org/docs/current/docguide-docbook.html "J.1. DocBook")
-
-I.1. Getting the Source via Git 
-
-[Home](https://www.postgresql.org/docs/current/index.html "PostgreSQL 18.3 Documentation")
-
- J.1. DocBook

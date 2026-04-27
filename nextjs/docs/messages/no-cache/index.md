@@ -5,13 +5,14 @@ canonical_url: "https://nextjs.org/docs/messages/no-cache"
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:18:11.949Z"
-content_hash: "03ef880a5a37bcef329029971121ac2fb277e691c3c5dce809d7fc1e7da0246e"
+last_crawled_at: "2026-04-27T18:17:38.796Z"
+content_hash: "69017274a09a42a0eb922757eb041bd656acf5172293ae487ae63560bd3845cd"
 menu_path: ["No Cache Detected"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/messages/no-before-interactive-script-outside-document/index.md", "title": "No Before Interactive Script Outside Document"}
-nav_next: {"path": "nextjs/docs/messages/no-css-tags/index.md", "title": "No CSS Tags"}
+version: "latest"
+content_language: "en"
 ---
+[Docs](/docs)[Errors](/docs)No Cache Detected
 
 # No Cache Detected
 
@@ -28,7 +29,3 @@ This results in slower builds and can hurt Next.js' filesystem cache of client-s
 Follow the instructions in [CI Build Caching](/docs/pages/guides/ci-build-caching) to ensure your Next.js cache is persisted between builds.
 
 Was this helpful?
-
-supported.
-
-Send

@@ -5,24 +5,25 @@ canonical_url: "https://nextjs.org/docs/architecture/supported-browsers"
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:17:21.821Z"
-content_hash: "51bdcaf79156991f1d3a2e208b26a865149e70b8f301bc30455a11dd97f61954"
+last_crawled_at: "2026-04-27T18:16:51.444Z"
+content_hash: "c77b3a5d4cb17cf5fd0a393c57c860d8aa305f25af5214bb0f35acb8f33afef5"
 menu_path: ["Supported Browsers"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/architecture/nextjs-compiler/index.md", "title": "Next.js Compiler"}
-nav_next: {"path": "nextjs/docs/community/index.md", "title": "Next.js Community"}
+version: "latest"
+content_language: "en"
 ---
+[Next.js Docs](/docs)[Architecture](/docs/architecture)Supported Browsers
 
 # Supported Browsers
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 Next.js supports **modern browsers** with zero configuration.
 
-*   Chrome 111+
-*   Edge 111+
-*   Firefox 111+
-*   Safari 16.4+
+-   Chrome 111+
+-   Edge 111+
+-   Firefox 111+
+-   Safari 16.4+
 
 ## Browserslist[](#browserslist)
 
@@ -40,9 +41,9 @@ package.json
 
 We inject [widely used polyfills](https://github.com/vercel/next.js/blob/canary/packages/next-polyfill-nomodule/src/index.js), including:
 
-*   [**fetch()**](https://developer.mozilla.org/docs/Web/API/Fetch_API) — Replacing: `whatwg-fetch` and `unfetch`.
-*   [**URL**](https://developer.mozilla.org/docs/Web/API/URL) — Replacing: the [`url` package (Node.js API)](https://nodejs.org/api/url.html).
-*   [**Object.assign()**](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object/assign) — Replacing: `object-assign`, `object.assign`, and `core-js/object/assign`.
+-   [**fetch()**](https://developer.mozilla.org/docs/Web/API/Fetch_API) — Replacing: `whatwg-fetch` and `unfetch`.
+-   [**URL**](https://developer.mozilla.org/docs/Web/API/URL) — Replacing: the [`url` package (Node.js API)](https://nodejs.org/api/url.html).
+-   [**Object.assign()**](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object/assign) — Replacing: `object-assign`, `object.assign`, and `core-js/object/assign`.
 
 If any of your dependencies include these polyfills, they’ll be eliminated automatically from the production build to avoid duplication.
 
@@ -68,8 +69,6 @@ In this case, you should add a top-level import for the **specific polyfill** yo
 
 pages/\_app.tsx
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -87,8 +86,6 @@ export default function MyApp({ Component, pageProps }: AppProps) {
 The best approach is to isolate unsupported features to specific UI sections and conditionally load the polyfill if needed.
 
 hooks/analytics.ts
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -114,13 +111,13 @@ export const useAnalytics = () => {
 
 Next.js allows you to use the latest JavaScript features out of the box. In addition to [ES6 features](https://github.com/lukehoban/es6features), Next.js also supports:
 
-*   [Async/await](https://github.com/tc39/ecmascript-asyncawait) (ES2017)
-*   [Object Rest/Spread Properties](https://github.com/tc39/proposal-object-rest-spread) (ES2018)
-*   [Dynamic `import()`](https://github.com/tc39/proposal-dynamic-import) (ES2020)
-*   [Optional Chaining](https://github.com/tc39/proposal-optional-chaining) (ES2020)
-*   [Nullish Coalescing](https://github.com/tc39/proposal-nullish-coalescing) (ES2020)
-*   [Class Fields](https://github.com/tc39/proposal-class-fields) and [Static Properties](https://github.com/tc39/proposal-static-class-features) (ES2022)
-*   and more!
+-   [Async/await](https://github.com/tc39/ecmascript-asyncawait) (ES2017)
+-   [Object Rest/Spread Properties](https://github.com/tc39/proposal-object-rest-spread) (ES2018)
+-   [Dynamic `import()`](https://github.com/tc39/proposal-dynamic-import) (ES2020)
+-   [Optional Chaining](https://github.com/tc39/proposal-optional-chaining) (ES2020)
+-   [Nullish Coalescing](https://github.com/tc39/proposal-nullish-coalescing) (ES2020)
+-   [Class Fields](https://github.com/tc39/proposal-class-fields) and [Static Properties](https://github.com/tc39/proposal-static-class-features) (ES2022)
+-   and more!
 
 ### TypeScript Features[](#typescript-features)
 
@@ -130,20 +127,4 @@ Next.js has built-in TypeScript support. [Learn more here](/docs/pages/api-refer
 
 You can customize babel configuration. [Learn more here](/docs/pages/guides/babel).
 
-[Previous
-
-Next.js Compiler
-
-](/docs/architecture/nextjs-compiler)
-
-[Next
-
-Community
-
-](/docs/community)
-
 Was this helpful?
-
-supported.
-
-Send

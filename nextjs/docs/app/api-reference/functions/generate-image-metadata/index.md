@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/app/api-reference/functions/generate-ima
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:11:33.003Z"
-content_hash: "a3baa31709655c1b9ef060d38116131ef506cf21d3e5055a6f99ad8cd7aac9dc"
+last_crawled_at: "2026-04-27T18:10:15.814Z"
+content_hash: "9afe0a0b04f6b36dd46f691744882d03670830213c2cbf7eead1e2830b38f8b9"
 menu_path: ["generateImageMetadata"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/api-reference/functions/forbidden/index.md", "title": "forbidden"}
-nav_next: {"path": "nextjs/docs/app/api-reference/functions/generate-metadata/index.md", "title": "generateMetadata"}
+version: "latest"
+content_language: "en"
 ---
+[API Reference](/docs/app/api-reference)[Functions](/docs/app/api-reference/functions)generateImageMetadata
 
 # generateImageMetadata
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 You can use `generateImageMetadata` to generate different versions of one image or return multiple images for one route segment. This is useful for when you want to avoid hard-coding metadata values, such as for icons.
 
@@ -29,8 +30,6 @@ An object containing the [dynamic route parameters](/docs/app/api-reference/file
 
 icon.tsx
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -43,57 +42,24 @@ export function generateImageMetadata({
 }
 ```
 
-Route
-
-URL
-
-`params`
-
-`app/shop/icon.js`
-
-`/shop`
-
-`undefined`
-
-`app/shop/[slug]/icon.js`
-
-`/shop/1`
-
-`{ slug: '1' }`
-
-`app/shop/[tag]/[item]/icon.js`
-
-`/shop/1/2`
-
-`{ tag: '1', item: '2' }`
+| Route | URL | `params` |
+| --- | --- | --- |
+| `app/shop/icon.js` | `/shop` | `undefined` |
+| `app/shop/[slug]/icon.js` | `/shop/1` | `{ slug: '1' }` |
+| `app/shop/[tag]/[item]/icon.js` | `/shop/1/2` | `{ tag: '1', item: '2' }` |
 
 ## Returns[](#returns)
 
 The `generateImageMetadata` function should return an `array` of objects containing the image's metadata such as `alt` and `size`. In addition, each item **must** include an `id` value which will be passed as a promise to the props of the image generating function.
 
-Image Metadata Object
-
-Type
-
-`id`
-
-`string` (required)
-
-`alt`
-
-`string`
-
-`size`
-
-`{ width: number; height: number }`
-
-`contentType`
-
-`string`
+| Image Metadata Object | Type |
+| --- | --- |
+| `id` | `string` (required) |
+| `alt` | `string` |
+| `size` | `{ width: number; height: number }` |
+| `contentType` | `string` |
 
 icon.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -148,8 +114,6 @@ A promise that resolves to the `id` value from one of the items returned by `gen
 
 icon.tsx
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -164,8 +128,6 @@ export default async function Icon({ id }: { id: Promise<string | number> }) {
 A promise that resolves to an object containing the [dynamic route parameters](/docs/app/api-reference/file-conventions/dynamic-routes) from the root segment down to the segment the image is colocated in.
 
 icon.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -187,8 +149,6 @@ export default async function Icon({
 This example uses the `params` object and external data to generate multiple [Open Graph images](/docs/app/api-reference/file-conventions/metadata/opengraph-image) for a route segment.
 
 app/products/\[id\]/opengraph-image.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -240,21 +200,11 @@ export default async function Image({
 
 ## Version History[](#version-history)
 
-Version
-
-Changes
-
-`v16.0.0`
-
-`id` passed to the Image generation function is now a promise that resolves to `string` or `number`
-
-`v16.0.0`
-
-`params` passed to the Image generation function is now a promise that resolves to an object
-
-`v13.3.0`
-
-`generateImageMetadata` introduced.
+| Version | Changes |
+| --- | --- |
+| `v16.0.0` | `id` passed to the Image generation function is now a promise that resolves to `string` or `number` |
+| `v16.0.0` | `params` passed to the Image generation function is now a promise that resolves to an object |
+| `v13.3.0` | `generateImageMetadata` introduced. |
 
 ## Next Steps
 
@@ -268,20 +218,4 @@ API documentation for the metadata file conventions.
 
 ](/docs/app/api-reference/file-conventions/metadata)
 
-[Previous
-
-forbidden
-
-](/docs/app/api-reference/functions/forbidden)
-
-[Next
-
-generateMetadata
-
-](/docs/app/api-reference/functions/generate-metadata)
-
 Was this helpful?
-
-supported.
-
-Send

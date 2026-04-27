@@ -5,33 +5,23 @@ canonical_url: "https://orm.drizzle.team/docs/tutorials/drizzle-nextjs-neon"
 docset: "drizzle"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:22:53.452Z"
-content_hash: "aa3585f11160e03b05bf6bb453edab6bbd80c1a00442649f34536739922db5e6"
+last_crawled_at: "2026-04-27T19:26:25.626Z"
+content_hash: "a6b2865a1a41cb28830705abf44d7ce1255df8d41672a1db96aed14c7b6b4cd9"
 menu_path: ["Todo App with Neon Postgres"]
 section_path: []
-nav_prev: {"path": "drizzle/docs/tutorials/bun-railway-pg/index.md", "title": "Drizzle with Bun and PostgreSQL on Railway"}
-nav_next: {"path": "drizzle/docs/tutorials/drizzle-with-encore/index.md", "title": "Drizzle with Encore"}
+content_language: "en"
 ---
-
 This tutorial demonstrates how to build `Todo app` using **Drizzle ORM** with **Neon database** and **Next.js**.
 
 This guide assumes familiarity with:
 
-*   You should have an existing Next.js project or create a new one using the following command:
+-   You should have an existing Next.js project or create a new one using the following command:
 
-```
+```bash
 npx create-next-app@latest --typescript
 ```
 
-*   You should have installed Drizzle ORM and [Drizzle kit](drizzle/docs/kit-overview/index.md). You can do this by running the following command:
-
-npm
-
-yarn
-
-pnpm
-
-bun
+-   You should have installed Drizzle ORM and [Drizzle kit](https://orm.drizzle.team/docs/kit-overview). You can do this by running the following command:
 
 ```
 npm i drizzle-orm
@@ -53,15 +43,7 @@ bun add drizzle-orm
 bun add -D drizzle-kit
 ```
 
-*   You should have installed the [Neon serverless driver](https://neon.tech/docs/serverless/serverless-driver).
-
-npm
-
-yarn
-
-pnpm
-
-bun
+-   You should have installed the [Neon serverless driver](https://neon.tech/docs/serverless/serverless-driver).
 
 ```
 npm i @neondatabase/serverless
@@ -79,15 +61,7 @@ pnpm add @neondatabase/serverless
 bun add @neondatabase/serverless
 ```
 
-*   You should have installed the `dotenv` package for managing environment variables.
-
-npm
-
-yarn
-
-pnpm
-
-bun
+-   You should have installed the `dotenv` package for managing environment variables.
 
 ```
 npm i dotenv
@@ -123,13 +97,13 @@ Your Neon projects come with a ready-to-use Postgres database named `neondb`. We
 
 Navigate to the **Connection Details** section in the project console to find your database connection string. It should look similar to this:
 
-```
+```bash
 postgres://username:password@ep-cool-darkness-123456.us-east-2.aws.neon.tech/neondb
 ```
 
 Add the `DATABASE_URL` environment variable to your `.env` or `.env.local` file, which you’ll use to connect to the Neon database.
 
-```
+```bash
 DATABASE_URL=NEON_DATABASE_CONNECTION_STRING
 ```
 
@@ -137,7 +111,7 @@ DATABASE_URL=NEON_DATABASE_CONNECTION_STRING
 
 Create a `drizzle.ts` file in your `src/db` folder and set up your database configuration:
 
-```
+```tsx
 import { config } from "dotenv";
 import { drizzle } from 'drizzle-orm/neon-http';
 
@@ -148,7 +122,7 @@ export const db = drizzle(process.env.DATABASE_URL!);
 
 #### Declare todo schema[](#declare-todo-schema)
 
-```
+```tsx
 import { integer, text, boolean, pgTable } from "drizzle-orm/pg-core";
 
 export const todo = pgTable("todo", {
@@ -162,11 +136,11 @@ Here we define the **`todo`** table with fields **`id`**, **`text`**, and **`don
 
 #### Setup Drizzle config file[](#setup-drizzle-config-file)
 
-**Drizzle config** - a configuration file that is used by [Drizzle Kit](drizzle/docs/kit-overview/index.md) and contains all the information about your database connection, migration folder and schema files.
+**Drizzle config** - a configuration file that is used by [Drizzle Kit](https://orm.drizzle.team/docs/kit-overview) and contains all the information about your database connection, migration folder and schema files.
 
 Create a `drizzle.config.ts` file in the root of your project and add the following content:
 
-```
+```typescript
 import { config } from 'dotenv';
 import { defineConfig } from "drizzle-kit";
 
@@ -188,7 +162,7 @@ You can generate migrations using `drizzle-kit generate` command and then run th
 
 Generate migrations:
 
-```
+```bash
 npx drizzle-kit generate
 ```
 
@@ -196,7 +170,7 @@ These migrations are stored in the `drizzle/migrations` directory, as specified 
 
 Example of a generated migration:
 
-```
+```sql
 CREATE TABLE IF NOT EXISTS "todo" (
 	"id" integer PRIMARY KEY NOT NULL,
 	"text" text NOT NULL,
@@ -206,13 +180,13 @@ CREATE TABLE IF NOT EXISTS "todo" (
 
 Run migrations:
 
-```
+```bash
 npx drizzle-kit migrate
 ```
 
-Alternatively, you can push changes directly to the database using [Drizzle kit push command](drizzle/docs/kit-overview/index.md#prototyping-with-db-push):
+Alternatively, you can push changes directly to the database using [Drizzle kit push command](https://orm.drizzle.team/docs/kit-overview#prototyping-with-db-push):
 
-```
+```bash
 npx drizzle-kit push
 ```
 
@@ -225,21 +199,21 @@ Push command is good for situations where you need to quickly test new schema de
 In this step, we establish server-side functions in the **src/actions/todoAction.ts** file to handle crucial operations on todo items:
 
 1.  **`getData`:**
-    *   Fetches all existing todo items from the database.
+    -   Fetches all existing todo items from the database.
 2.  **`addTodo`:**
-    *   Adds a new todo item to the database with the provided text.
-    *   Initiates revalidation of the home page using **`revalidatePath("/")`**.
+    -   Adds a new todo item to the database with the provided text.
+    -   Initiates revalidation of the home page using **`revalidatePath("/")`**.
 3.  **`deleteTodo`:**
-    *   Removes a todo item from the database based on its unique ID.
-    *   Triggers a revalidation of the home page.
+    -   Removes a todo item from the database based on its unique ID.
+    -   Triggers a revalidation of the home page.
 4.  **`toggleTodo`:**
-    *   Toggles the completion status of a todo item, updating the database accordingly.
-    *   Revalidates the home page after the operation.
+    -   Toggles the completion status of a todo item, updating the database accordingly.
+    -   Revalidates the home page after the operation.
 5.  **`editTodo`:**
-    *   Modifies the text of a todo item identified by its ID in the database.
-    *   Initiates a revalidation of the home page.
+    -   Modifies the text of a todo item identified by its ID in the database.
+    -   Initiates a revalidation of the home page.
 
-```
+```tsx
 "use server";
 import { eq, not } from "drizzle-orm";
 import { revalidatePath } from "next/cache";
@@ -295,7 +269,7 @@ Expand
 
 Define a TypeScript type for a todo item in `src/types/todoType.ts` with three properties: **`id`** of type **`number`**, **`text`** of type **`string`**, and **`done`** of type **`boolean`**. This type, named **`todoType`**, represents the structure of a typical todo item within your application.
 
-```
+```ts
 export type todoType = {
   id: number;
   text: string;
@@ -315,7 +289,7 @@ addTodo.tsx
 
 todos.tsx
 
-```
+```tsx
 "use client";
 import { ChangeEvent, FC, useState } from "react";
 import { todoType } from "@/types/todoType";
@@ -439,7 +413,7 @@ export default Todo;
 
 Expand
 
-```
+```tsx
 "use client";
 import { ChangeEvent, FC, useState } from "react";
 
@@ -490,7 +464,7 @@ Expand
 
 Update the `page.tsx` file in the `src/app` folder to fetch the todo items from the database and render the `Todos` component:
 
-```
+```tsx
 import { getData } from "@/actions/todoAction";
 import Todos from "@/components/todos";
 
@@ -504,7 +478,7 @@ export default async function Home() {
 
 This guide uses the following file structure:
 
-```
+```text
 📦 <project root>
  ├ 📂 migrations
  │  ├ 📂 meta

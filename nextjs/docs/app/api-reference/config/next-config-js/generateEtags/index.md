@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/app/api-reference/config/next-config-js/
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:07:34.360Z"
-content_hash: "ec3ab52efc2e72a6de16975ca4f0bd9326de1a8809925fff9d661388372ee0c9"
+last_crawled_at: "2026-04-27T18:06:26.581Z"
+content_hash: "738447fd73678ba33e383c6f3a57e23dcda4c6956b76432261cd5cb2453bd967"
 menu_path: ["generateEtags"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/api-reference/config/next-config-js/generateBuildId/index.md", "title": "generateBuildId"}
-nav_next: {"path": "nextjs/docs/app/api-reference/config/next-config-js/headers/index.md", "title": "headers"}
+version: "latest"
+content_language: "en"
 ---
+[Configuration](/docs/app/api-reference/config)[next.config.js](/docs/app/api-reference/config/next-config-js)generateEtags
 
 # generateEtags
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 Next.js will generate [etags](https://en.wikipedia.org/wiki/HTTP_ETag) for every page by default. You may want to disable etag generation for HTML pages depending on your cache strategy.
 
@@ -29,20 +30,4 @@ module.exports = {
 }
 ```
 
-[Previous
-
-generateBuildId
-
-](/docs/app/api-reference/config/next-config-js/generateBuildId)
-
-[Next
-
-headers
-
-](/docs/app/api-reference/config/next-config-js/headers)
-
 Was this helpful?
-
-supported.
-
-Send

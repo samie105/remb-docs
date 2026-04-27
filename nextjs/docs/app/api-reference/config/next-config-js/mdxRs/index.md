@@ -5,19 +5,20 @@ canonical_url: "https://nextjs.org/docs/app/api-reference/config/next-config-js/
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:07:55.154Z"
-content_hash: "c6bbb435615ebda2071c1187027541dc214681f42d95eb43e28cff0ccf1b4b85"
+last_crawled_at: "2026-04-27T18:06:45.364Z"
+content_hash: "787c6e5855058372ea51356b47f0db7ecc67160a78558d6ff17091e3a6c4e896"
 menu_path: ["mdxRs"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/api-reference/config/next-config-js/logging/index.md", "title": "logging"}
-nav_next: {"path": "nextjs/docs/app/api-reference/config/next-config-js/onDemandEntries/index.md", "title": "onDemandEntries"}
+version: "latest"
+content_language: "en"
 ---
+[Configuration](/docs/app/api-reference/config)[next.config.js](/docs/app/api-reference/config/next-config-js)mdxRs
 
 # mdxRs
 
 This feature is currently experimental and subject to change, it's not recommended for production. Try it out and share your feedback on [GitHub](https://github.com/vercel/next.js/issues).
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 For experimental use with `@next/mdx`. Compiles MDX files using the new Rust compiler.
 
@@ -37,20 +38,4 @@ const nextConfig = {
 module.exports = withMDX(nextConfig)
 ```
 
-[Previous
-
-logging
-
-](/docs/app/api-reference/config/next-config-js/logging)
-
-[Next
-
-onDemandEntries
-
-](/docs/app/api-reference/config/next-config-js/onDemandEntries)
-
 Was this helpful?
-
-supported.
-
-Send

@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/app/api-reference/config/next-config-js/
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:07:31.226Z"
-content_hash: "2f273cb4dcdfca4bafcb019d6978d1f5b2fb0aac66fda9a4a8d02372d3bbced0"
+last_crawled_at: "2026-04-27T18:06:21.997Z"
+content_hash: "27aaf7de8ff8f1e1a4e3fef5890830a5e73d1057a2e6f4c2c96843b6c553b7d2"
 menu_path: ["generateBuildId"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/api-reference/config/next-config-js/exportPathMap/index.md", "title": "exportPathMap"}
-nav_next: {"path": "nextjs/docs/app/api-reference/config/next-config-js/generateEtags/index.md", "title": "generateEtags"}
+version: "latest"
+content_language: "en"
 ---
+[Configuration](/docs/app/api-reference/config)[next.config.js](/docs/app/api-reference/config/next-config-js)generateBuildId
 
 # generateBuildId
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 Next.js generates an ID during `next build` to identify which version of your application is being served. The same build should be used and boot up multiple containers.
 
@@ -32,20 +33,4 @@ module.exports = {
 }
 ```
 
-[Previous
-
-exportPathMap
-
-](/docs/app/api-reference/config/next-config-js/exportPathMap)
-
-[Next
-
-generateEtags
-
-](/docs/app/api-reference/config/next-config-js/generateEtags)
-
 Was this helpful?
-
-supported.
-
-Send

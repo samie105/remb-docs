@@ -5,13 +5,14 @@ canonical_url: "https://nextjs.org/docs/messages/no-async-client-component"
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:18:07.096Z"
-content_hash: "98289b53a9a0e5acfa44f2692a890a0cbf8a07f75cf2da03b676c183964bd215"
+last_crawled_at: "2026-04-27T18:17:34.148Z"
+content_hash: "1f216d548627216969e7303081fb84efe12caa403f4256de6bc55839f95a43ce"
 menu_path: ["No async Client Component"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/messages/no-assign-module-variable/index.md", "title": "No assign module variable"}
-nav_next: {"path": "nextjs/docs/messages/no-before-interactive-script-outside-document/index.md", "title": "No Before Interactive Script Outside Document"}
+version: "latest"
+content_language: "en"
 ---
+[Docs](/docs)[Errors](/docs)No async Client Component
 
 # No async Client Component
 
@@ -169,7 +170,3 @@ export function Posts() {
 ```
 
 Was this helpful?
-
-supported.
-
-Send

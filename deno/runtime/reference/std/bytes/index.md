@@ -5,15 +5,16 @@ canonical_url: "https://docs.deno.com/runtime/reference/std/bytes/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:00:07.115Z"
-content_hash: "fddf1addda49619202f9e2846b80c06624f2eb7467baa0608766627e9ba871ea"
+last_crawled_at: "2026-04-27T17:39:02.977Z"
+content_hash: "cf667625a223ff181adf53528c627cd6787508693abc156ac18b8d141598aa0f"
 menu_path: ["@std/bytes"]
 section_path: []
+content_language: "en"
 ---
-On this page
+**On this page**
 
-*   [Overview](#overview)
-    *   [Add to your project](#add-to-your-project)
+-   [Overview](#overview)
+    -   [Add to your project](#add-to-your-project)
 
 ## Overview
 

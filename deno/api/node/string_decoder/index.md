@@ -5,10 +5,11 @@ canonical_url: "https://docs.deno.com/api/node/string_decoder/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:41:27.154Z"
-content_hash: "60541947b0ba080798e88c7e17a3cdf80f4e55a229bb9f9409b1d7417e759743"
+last_crawled_at: "2026-04-27T17:13:16.685Z"
+content_hash: "6b2aa5b8517fd6c413b3d80dba7d230d46fd86db1af9868336de1a6f85692cef"
 menu_path: ["string_decoder - Node documentation"]
 section_path: []
+content_language: "en"
 ---
 ### Usage in Deno
 
@@ -48,13 +49,11 @@ decoder.write(Buffer.from([0x82]));
 console.log(decoder.end(Buffer.from([0xAC]))); // Prints: €
 ```
 
-### Classes [#](#Classes)
-
 c
 
 [StringDecoder](.././string_decoder/~/StringDecoder "StringDecoder")
 
 The `node:string_decoder` module provides an API for decoding `Buffer` objects into strings in a manner that preserves encoded multi-byte UTF-8 and UTF-16 characters. It can be accessed using:
 
-*   [end](.././string_decoder/~/StringDecoder#method_end_0)
-*   [write](.././string_decoder/~/StringDecoder#method_write_0)
+-   [end](.././string_decoder/~/StringDecoder#method_end_0)
+-   [write](.././string_decoder/~/StringDecoder#method_write_0)

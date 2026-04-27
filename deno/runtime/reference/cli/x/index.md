@@ -5,21 +5,22 @@ canonical_url: "https://docs.deno.com/runtime/reference/cli/x/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:57:16.894Z"
-content_hash: "975cf25255f60ac520835133185c60cfa342f63044ac9cf595b5ce00da419cbb"
+last_crawled_at: "2026-04-27T17:35:11.371Z"
+content_hash: "fb97ccf917608f0253a9901c6e2e4cddc81d3e8d4ba44cb35741505374756f00"
 menu_path: ["deno x"]
 section_path: []
+content_language: "en"
 ---
-On this page
+**On this page**
 
-*   [Installing the dx alias](#installing-the-dx-alias)
-*   [Basic usage](#basic-usage)
-*   [How it works](#how-it-works)
-*   [Permissions](#permissions)
-*   [Type checking options](#type-checking-options)
-*   [Dependency management options](#dependency-management-options)
-*   [Options](#options)
-*   [Debugging options](#debugging-options)
+-   [Installing the dx alias](#installing-the-dx-alias)
+-   [Basic usage](#basic-usage)
+-   [How it works](#how-it-works)
+-   [Permissions](#permissions)
+-   [Type checking options](#type-checking-options)
+-   [Dependency management options](#dependency-management-options)
+-   [Options](#options)
+-   [Debugging options](#debugging-options)
 
 `deno x` executes a package from npm or JSR without installing it permanently. It is similar to `npx` in the npm ecosystem.
 

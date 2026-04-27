@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/pages/api-reference/config/next-config-j
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:20:49.533Z"
-content_hash: "58c405e13191598be064baf8444d360b2d953ae7b62964b62e6c8753e503c11f"
+last_crawled_at: "2026-04-27T18:20:14.199Z"
+content_hash: "94483fb5449e74149c8f63340d55598f0cb8756c1f491ed55a7032cbf85b67f9"
 menu_path: ["headers"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/pages/api-reference/config/next-config-js/generateEtags/index.md", "title": "generateEtags"}
-nav_next: {"path": "nextjs/docs/pages/api-reference/config/next-config-js/httpAgentOptions/index.md", "title": "httpAgentOptions"}
+version: "latest"
+content_language: "en"
 ---
+[Configuration](/docs/pages/api-reference/config)[next.config.js Options](/docs/pages/api-reference/config/next-config-js)headers
 
 # headers
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 Headers allow you to set custom HTTP headers on the response to an incoming request on a given path.
 
@@ -47,12 +48,12 @@ module.exports = {
 
 `headers` is an async function that expects an array to be returned holding objects with `source` and `headers` properties:
 
-*   `source` is the incoming request path pattern.
-*   `headers` is an array of response header objects, with `key` and `value` properties.
-*   `basePath`: `false` or `undefined` - if false the basePath won't be included when matching, can be used for external rewrites only.
-*   `locale`: `false` or `undefined` - whether the locale should not be included when matching.
-*   `has` is an array of [has objects](#header-cookie-and-query-matching) with the `type`, `key` and `value` properties.
-*   `missing` is an array of [missing objects](#header-cookie-and-query-matching) with the `type`, `key` and `value` properties.
+-   `source` is the incoming request path pattern.
+-   `headers` is an array of response header objects, with `key` and `value` properties.
+-   `basePath`: `false` or `undefined` - if false the basePath won't be included when matching, can be used for external rewrites only.
+-   `locale`: `false` or `undefined` - whether the locale should not be included when matching.
+-   `has` is an array of [has objects](#header-cookie-and-query-matching) with the `type`, `key` and `value` properties.
+-   `missing` is an array of [missing objects](#header-cookie-and-query-matching) with the `type`, `key` and `value` properties.
 
 Headers are checked before the filesystem which includes pages and `/public` files.
 
@@ -204,9 +205,9 @@ To only apply a header when header, cookie, or query values also match the `has`
 
 `has` and `missing` items can have the following fields:
 
-*   `type`: `String` - must be either `header`, `cookie`, `host`, or `query`.
-*   `key`: `String` - the key from the selected type to match against.
-*   `value`: `String` or `undefined` - the value to check for, if undefined any value will match. A regex like string can be used to capture a specific part of the value, e.g. if the value `first-(?<paramName>.*)` is used for `first-second` then `second` will be usable in the destination with `:paramName`.
+-   `type`: `String` - must be either `header`, `cookie`, `host`, or `query`.
+-   `key`: `String` - the key from the selected type to match against.
+-   `value`: `String` or `undefined` - the value to check for, if undefined any value will match. A regex like string can be used to capture a specific part of the value, e.g. if the value `first-(?<paramName>.*)` is used for `first-second` then `second` will be usable in the destination with `:paramName`.
 
 next.config.js
 
@@ -424,8 +425,6 @@ To cache the response from an [API Route](/docs/pages/building-your-application/
 
 pages/api/hello.ts
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -447,8 +446,6 @@ export default function handler(
 You can also use caching headers (`Cache-Control`) inside `getServerSideProps` to cache dynamic responses. For example, using [`stale-while-revalidate`](https://web.dev/stale-while-revalidate/).
 
 pages/index.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -580,24 +577,10 @@ Learn more about adding a [Content Security Policy](/docs/app/guides/content-sec
 
 ## Version History[](#version-history)
 
-Version
-
-Changes
-
-`v13.3.0`
-
-`missing` added.
-
-`v10.2.0`
-
-`has` added.
-
-`v9.5.0`
-
-Headers added.
+| Version | Changes |
+| --- | --- |
+| `v13.3.0` | `missing` added. |
+| `v10.2.0` | `has` added. |
+| `v9.5.0` | Headers added. |
 
 Was this helpful?
-
-supported.
-
-Send

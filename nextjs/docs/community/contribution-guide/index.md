@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/community/contribution-guide"
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:17:29.343Z"
-content_hash: "1fdafe765607208b204d99aaac2157f1609372e45dcbcc06b509e8f647e55dce"
+last_crawled_at: "2026-04-27T18:16:58.073Z"
+content_hash: "1a96a8a14ab06f73b0e7714eaa1256fdc98cea5e53778d11cec8f241216a5afe"
 menu_path: ["Docs Contribution Guide"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/community/index.md", "title": "Next.js Community"}
-nav_next: {"path": "nextjs/docs/community/rspack/index.md", "title": "Rspack Integration"}
+version: "latest"
+content_language: "en"
 ---
+[Next.js Docs](/docs)[Community](/docs/community)Contribution Guide
 
 # Docs Contribution Guide
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 Welcome to the Next.js Docs Contribution Guide! We're excited to have you here.
 
@@ -35,7 +36,7 @@ The docs content can be found on the [Next.js repo](https://github.com/vercel/ne
 
 If you're new to GitHub, we recommend reading the [GitHub Open Source Guide](https://opensource.guide/how-to-contribute/#opening-a-pull-request) to learn how to fork a repository, create a branch, and submit a pull request.
 
-> **Good to know**: The underlying docs code lives in a private codebase that is synced to the Next.js public repo. This means that you can't preview the docs locally. However, you'll see your changes on [nextjs.org](nextjs/docs/index.md) after merging a pull request.
+> **Good to know**: The underlying docs code lives in a private codebase that is synced to the Next.js public repo. This means that you can't preview the docs locally. However, you'll see your changes on [nextjs.org](https://nextjs.org/docs) after merging a pull request.
 
 ### Writing MDX[](#writing-mdx)
 
@@ -67,8 +68,8 @@ Next, open the command palette again, and search for `Markdown: Preview File` or
 
 We also recommend the following extensions for VSCode users:
 
-*   [MDX](https://marketplace.visualstudio.com/items?itemName=unifiedjs.vscode-mdx): Intellisense and syntax highlighting for MDX.
-*   [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode): Format MDX files on save.
+-   [MDX](https://marketplace.visualstudio.com/items?itemName=unifiedjs.vscode-mdx): Intellisense and syntax highlighting for MDX.
+-   [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode): Format MDX files on save.
 
 ### Review Process[](#review-process)
 
@@ -118,17 +119,10 @@ Each page has a metadata block at the top of the file separated by three dashes.
 
 The following fields are **required**:
 
-Field
-
-Description
-
-`title`
-
-The page's `<h1>` title, used for SEO and OG Images.
-
-`description`
-
-The page's description, used in the `<meta name="description">` tag for SEO.
+| Field | Description |
+| --- | --- |
+| `title` | The page's `<h1>` title, used for SEO and OG Images. |
+| `description` | The page's description, used in the `<meta name="description">` tag for SEO. |
 
 required-fields.mdx
 
@@ -145,25 +139,12 @@ It's good practice to limit the page title to 2-3 words (e.g. Optimizing Images)
 
 The following fields are **optional**:
 
-Field
-
-Description
-
-`nav_title`
-
-Overrides the page's title in the navigation. This is useful when the page's title is too long to fit. If not provided, the `title` field is used.
-
-`source`
-
-Pulls content into a shared page. See [Shared Pages](#shared-pages).
-
-`related`
-
-A list of related pages at the bottom of the document. These will automatically be turned into cards. See [Related Links](#related-links).
-
-`version`
-
-A stage of development. e.g. `experimental`,`legacy`,`unstable`,`RC`
+| Field | Description |
+| --- | --- |
+| `nav_title` | Overrides the page's title in the navigation. This is useful when the page's title is too long to fit. If not provided, the `title` field is used. |
+| `source` | Pulls content into a shared page. See [Shared Pages](#shared-pages). |
+| `related` | A list of related pages at the bottom of the document. These will automatically be turned into cards. See [Related Links](#related-links). |
+| `version` | A stage of development. e.g. `experimental`,`legacy`,`unstable`,`RC` |
 
 optional-fields.mdx
 
@@ -260,19 +241,19 @@ Code blocks should have a header that includes the language and the `filename`. 
 
 code-example.mdx
 
-````
+```
 ```tsx filename="app/page.tsx"
 export default function Page() {
   return <h1>Hello, Next.js!</h1>
 }
 ```
-````
+```
 
 For CLI commands, use the `package` prop to show the command for each package manager:
 
 code-example.mdx
 
-````
+```
 ```bash package="pnpm"
 pnpm create next-app
 ```
@@ -288,44 +269,23 @@ yarn create next-app
 ```bash package="bun"
 bun create next-app
 ```
-````
+```
 
 Most examples in the docs are written in `tsx` and `jsx`, and a few in `bash`. However, you can use any supported language, here's the [full list](https://github.com/shikijs/shiki/blob/main/docs/languages.md#all-languages).
 
 When writing JavaScript code blocks, we use the following language and extension combinations.
 
-Language
-
-Extension
-
-JavaScript files with JSX code
-
-\`\`\`jsx
-
-.js
-
-JavaScript files without JSX
-
-\`\`\`js
-
-.js
-
-TypeScript files with JSX
-
-\`\`\`tsx
-
-.tsx
-
-TypeScript files without JSX
-
-\`\`\`ts
-
-.ts
+|  | Language | Extension |
+| --- | --- | --- |
+| JavaScript files with JSX code | \`\`\`jsx | .js |
+| JavaScript files without JSX | \`\`\`js | .js |
+| TypeScript files with JSX | \`\`\`tsx | .tsx |
+| TypeScript files without JSX | \`\`\`ts | .ts |
 
 > **Good to know**:
 > 
-> *   Make sure to use **`.js`** extension for JavaScript files with **JSX** code.
-> *   For example, \`\`\`jsx filename="app/layout.js"
+> -   Make sure to use **`.js`** extension for JavaScript files with **JSX** code.
+> -   For example, \`\`\`jsx filename="app/layout.js"
 
 ### TS and JS Switcher[](#ts-and-js-switcher)
 
@@ -335,7 +295,7 @@ Currently, we write TS and JS examples one after the other, and link them with `
 
 code-example.mdx
 
-````
+```
 ```tsx filename="app/page.tsx" switcher
  
 ```
@@ -343,7 +303,7 @@ code-example.mdx
 ```jsx filename="app/page.js" switcher
  
 ```
-````
+```
 
 > **Good to know**: We plan to automatically compile TypeScript snippets to JavaScript in the future. In the meantime, you can use [transform.tools](https://transform.tools/typescript-to-javascript).
 
@@ -423,15 +383,15 @@ notes.mdx
 
 > **Good to know**:
 > 
-> *   We also use this format for multi-line notes.
-> *   There are sometimes multiple items worth knowing or keeping in mind.
+> -   We also use this format for multi-line notes.
+> -   There are sometimes multiple items worth knowing or keeping in mind.
 
 ## Related Links[](#related-links)
 
 Related Links guide the user's learning journey by adding links to logical next steps.
 
-*   Links will be displayed in cards under the main content of the page.
-*   Links will be automatically generated for pages that have child pages.
+-   Links will be displayed in cards under the main content of the page.
+-   Links will be automatically generated for pages that have child pages.
 
 Create related links using the `related` field in the page's metadata.
 
@@ -450,29 +410,11 @@ related:
 
 ### Nested Fields[](#nested-fields)
 
-Field
-
-Required?
-
-Description
-
-`title`
-
-Optional
-
-The title of the card list. Defaults to **Next Steps**.
-
-`description`
-
-Optional
-
-The description of the card list.
-
-`links`
-
-Required
-
-A list of links to other doc pages. Each list item should be a relative URL path (without a leading slash) e.g. `app/api-reference/file-conventions/page`
+| Field | Required? | Description |
+| --- | --- | --- |
+| `title` | Optional | The title of the card list. Defaults to **Next Steps**. |
+| `description` | Optional | The description of the card list. |
+| `links` | Required | A list of links to other doc pages. Each list item should be a relative URL path (without a leading slash) e.g. `app/api-reference/file-conventions/page` |
 
 ## Diagrams[](#diagrams)
 
@@ -494,11 +436,11 @@ This section contains guidelines for writing docs for those who are new to techn
 
 While we don't have a strict template for pages, there are page sections you'll see repeated across the docs:
 
-*   **Overview:** The first paragraph of a page should tell the user what the feature is and what it's used for. Followed by a minimum working example or its API reference.
-*   **Convention:** If the feature has a convention, it should be explained here.
-*   **Examples**: Show how the feature can be used with different use cases.
-*   **API Tables**: API Pages should have an overview table at the of the page with jump-to-section links (when possible).
-*   **Next Steps (Related Links)**: Add links to related pages to guide the user's learning journey.
+-   **Overview:** The first paragraph of a page should tell the user what the feature is and what it's used for. Followed by a minimum working example or its API reference.
+-   **Convention:** If the feature has a convention, it should be explained here.
+-   **Examples**: Show how the feature can be used with different use cases.
+-   **API Tables**: API Pages should have an overview table at the of the page with jump-to-section links (when possible).
+-   **Next Steps (Related Links)**: Add links to related pages to guide the user's learning journey.
 
 Feel free to add these sections as needed.
 
@@ -506,8 +448,8 @@ Feel free to add these sections as needed.
 
 Docs pages are also split into two categories: Conceptual and Reference.
 
-*   **Conceptual** pages are used to explain a concept or feature. They are usually longer and contain more information than reference pages. In the Next.js docs, conceptual pages are found in the **Building Your Application** section.
-*   **Reference** pages are used to explain a specific API. They are usually shorter and more focused. In the Next.js docs, reference pages are found in the **API Reference** section.
+-   **Conceptual** pages are used to explain a concept or feature. They are usually longer and contain more information than reference pages. In the Next.js docs, conceptual pages are found in the **Building Your Application** section.
+-   **Reference** pages are used to explain a specific API. They are usually shorter and more focused. In the Next.js docs, reference pages are found in the **API Reference** section.
 
 > **Good to know**: Depending on the page you're contributing to, you may need to follow a different voice and style. For example, conceptual pages are more instructional and use the word _you_ to address the user. Reference pages are more technical, they use more imperative words like "create, update, accept" and tend to omit the word _you_.
 
@@ -515,19 +457,19 @@ Docs pages are also split into two categories: Conceptual and Reference.
 
 Here are some guidelines to maintain a consistent style and voice across the docs:
 
-*   Write clear, concise sentences. Avoid tangents.
-    *   If you find yourself using a lot of commas, consider breaking the sentence into multiple sentences or use a list.
-    *   Swap out complex words for simpler ones. For example, _use_ instead of _utilize_.
-*   Be mindful with the word _this_. It can be ambiguous and confusing, don't be afraid to repeat the subject of the sentence if unclear.
-    *   For example, _Next.js uses React_ instead of _Next.js uses this_.
-*   Use an active voice instead of passive. An active sentence is easier to read.
-    *   For example, _Next.js uses React_ instead of _React is used by Next.js_. If you find yourself using words like _was_ and _by_ you may be using a passive voice.
-*   Avoid using words like _easy_, _quick_, _simple_, _just_, etc. This is subjective and can be discouraging to users.
-*   Avoid negative words like _don't_, _can't_, _won't_, etc. This can be discouraging to readers.
-    *   For example, _"You can use the `Link` component to create links between pages"_ instead of _"Don't use the `<a>` tag to create links between pages"_.
-*   Write in second person (you/your). This is more personal and engaging.
-*   Use gender-neutral language. Use _developers_, _users_, or _readers_, when referring to the audience.
-*   If adding code examples, ensure they are properly formatted and working.
+-   Write clear, concise sentences. Avoid tangents.
+    -   If you find yourself using a lot of commas, consider breaking the sentence into multiple sentences or use a list.
+    -   Swap out complex words for simpler ones. For example, _use_ instead of _utilize_.
+-   Be mindful with the word _this_. It can be ambiguous and confusing, don't be afraid to repeat the subject of the sentence if unclear.
+    -   For example, _Next.js uses React_ instead of _Next.js uses this_.
+-   Use an active voice instead of passive. An active sentence is easier to read.
+    -   For example, _Next.js uses React_ instead of _React is used by Next.js_. If you find yourself using words like _was_ and _by_ you may be using a passive voice.
+-   Avoid using words like _easy_, _quick_, _simple_, _just_, etc. This is subjective and can be discouraging to users.
+-   Avoid negative words like _don't_, _can't_, _won't_, etc. This can be discouraging to readers.
+    -   For example, _"You can use the `Link` component to create links between pages"_ instead of _"Don't use the `<a>` tag to create links between pages"_.
+-   Write in second person (you/your). This is more personal and engaging.
+-   Use gender-neutral language. Use _developers_, _users_, or _readers_, when referring to the audience.
+-   If adding code examples, ensure they are properly formatted and working.
 
 While these guidelines are not exhaustive, they should help you get started. If you'd like to dive deeper into technical writing, check out the [Google Technical Writing Course](https://developers.google.com/tech-writing/overview).
 
@@ -535,20 +477,4 @@ While these guidelines are not exhaustive, they should help you get started. If 
 
 Thank you for contributing to the docs and being part of the Next.js community!
 
-[Previous
-
-Community
-
-](/docs/community)
-
-[Next
-
-Rspack
-
-](/docs/community/rspack)
-
 Was this helpful?
-
-supported.
-
-Send

@@ -5,37 +5,36 @@ canonical_url: "https://www.prisma.io/docs/orm/prisma-client/observability-and-l
 docset: "prisma"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:46:17.050Z"
-content_hash: "cf0ee18e08915c144bb4d23ab28380abb406bfd81ae020b368c67852a0a49633"
+last_crawled_at: "2026-04-27T19:38:51.395Z"
+content_hash: "e0dada98160a4fb910a48026587ef51f4865b41e427b1b0ca5c6d86d91def206"
 menu_path: ["OpenTelemetry tracing"]
 section_path: []
-nav_prev: {"path": "prisma/docs/orm/prisma-client/observability-and-logging/logging/index.md", "title": "Logging"}
-nav_next: {"path": "prisma/docs/orm/prisma-client/observability-and-logging/sql-comments/index.md", "title": "SQL comments"}
+tab_variants: ["npm","pnpm","yarn","bun","npm","pnpm","yarn","bun"]
+content_language: "en"
 ---
-
 Tracing provides a detailed log of the activity that Prisma Client carries out, at an operation level, including the time taken to execute each query. It helps you analyze your application's performance and identify bottlenecks. Tracing is fully compliant with [OpenTelemetry](https://opentelemetry.io/), so you can use it as part of your end-to-end application tracing system.
 
 When you enable tracing, Prisma Client outputs the following:
 
-*   One trace for each operation (e.g. findMany) that Prisma Client makes.
-*   In each trace, one or more [spans](https://opentelemetry.io/docs/specs/otel/trace/api/#span). Each span represents the length of time that one stage of the operation takes, such as serialization, or a database query. Spans are represented in a tree structure, where child spans indicate that execution is happening within a larger parent span.
+-   One trace for each operation (e.g. findMany) that Prisma Client makes.
+-   In each trace, one or more [spans](https://opentelemetry.io/docs/specs/otel/trace/api/#span). Each span represents the length of time that one stage of the operation takes, such as serialization, or a database query. Spans are represented in a tree structure, where child spans indicate that execution is happening within a larger parent span.
 
 The number and type of spans in a trace depends on the type of operation the trace covers, but an example is as follows:
 
-![Example Prisma Client trace structure showing parent and child spans for a database operation (serialization, query engine, database query).](https://www.prisma.io/docs/img/orm/prisma-client/observability-and-logging/trace-diagram.png?dpl=dpl_2TrAJrUt7dXR3AAWNDvwk5WL6VFX)
+![Example Prisma Client trace structure showing parent and child spans for a database operation (serialization, query engine, database query).](/docs/img/orm/prisma-client/observability-and-logging/trace-diagram.png)
 
 You can [send tracing output to the console](#send-tracing-output-to-the-console), or analyze it in any OpenTelemetry-compatible tracing system, such as [Jaeger](https://www.jaegertracing.io/), [Honeycomb](https://www.honeycomb.io/distributed-tracing) and [Datadog](https://www.datadoghq.com/). On this page, we give an example of how to send tracing output to Jaeger, which you can [run locally](#visualize-traces-with-jaeger).
 
 For each trace, Prisma Client outputs a series of spans. The number and type of these spans depends on the Prisma Client operation. A typical Prisma trace has the following spans:
 
-*   `prisma:client:operation`: Represents the entire Prisma Client operation, from Prisma Client to the database and back. It contains details such as the model and method called by Prisma Client. Depending on the Prisma operation, it contains one or more of the following spans:
-    *   `prisma:client:connect`: Represents how long it takes for Prisma Client to connect to the database.
-    *   `prisma:client:serialize`: Represents how long it takes to validate and transform a Prisma Client operation into a query for the query engine.
-    *   `prisma:engine:query`: Represents how long a query takes in the query engine.
-        *   `prisma:engine:connection`: Represents how long it takes for Prisma Client to get a database connection.
-        *   `prisma:engine:db_query`: Represents the database query that was executed against the database. It includes the query in the tags, and how long the query took to run.
-        *   `prisma:engine:serialize`: Represents how long it takes to transform a raw response from the database into a typed result.
-        *   `prisma:engine:response_json_serialization`: Represents how long it takes to serialize the database query result into a JSON response to the Prisma Client.
+-   `prisma:client:operation`: Represents the entire Prisma Client operation, from Prisma Client to the database and back. It contains details such as the model and method called by Prisma Client. Depending on the Prisma operation, it contains one or more of the following spans:
+    -   `prisma:client:connect`: Represents how long it takes for Prisma Client to connect to the database.
+    -   `prisma:client:serialize`: Represents how long it takes to validate and transform a Prisma Client operation into a query for the query engine.
+    -   `prisma:engine:query`: Represents how long a query takes in the query engine.
+        -   `prisma:engine:connection`: Represents how long it takes for Prisma Client to get a database connection.
+        -   `prisma:engine:db_query`: Represents the database query that was executed against the database. It includes the query in the tags, and how long the query took to run.
+        -   `prisma:engine:serialize`: Represents how long it takes to transform a raw response from the database into a typed result.
+        -   `prisma:engine:response_json_serialization`: Represents how long it takes to serialize the database query result into a JSON response to the Prisma Client.
 
 For example, given the following Prisma Client code:
 
@@ -52,14 +51,14 @@ prisma.user.findMany({
 
 The trace is structured as follows:
 
-*   `prisma:client:operation`
-    *   `prisma:client:serialize`
-    *   `prisma:engine:query`
-        *   `prisma:engine:connection`
-        *   `prisma:engine:db_query`: details of the first SQL query or command...
-        *   `prisma:engine:db_query`: ...details of the next SQL query or command...
-        *   `prisma:engine:serialize`
-        *   `prisma:engine:response_json_serialization`
+-   `prisma:client:operation`
+    -   `prisma:client:serialize`
+    -   `prisma:engine:query`
+        -   `prisma:engine:connection`
+        -   `prisma:engine:db_query`: details of the first SQL query or command...
+        -   `prisma:engine:db_query`: ...details of the next SQL query or command...
+        -   `prisma:engine:serialize`
+        -   `prisma:engine:response_json_serialization`
 
 If your application sends a large number of spans to a [collector](https://opentelemetry.io/docs/collector/), this can have a significant performance impact. For information on how to minimize this impact, see [Reducing performance impact](#reduce-performance-impact).
 
@@ -75,7 +74,7 @@ This section explains how to install and register tracing in your application.
 
 Install the `prisma`, `@prisma/client`, and `@prisma/instrumentation` npm packages. You will also need to install the `@opentelemetry/api` package as it's a peer dependency.
 
-Tracing on previous versions of Prisma ORM
+**Tracing on previous versions of Prisma ORM**
 
 Tracing was added in version `4.2.0` of Prisma ORM as a Preview feature. For versions of Prisma ORM between `4.2.0` and `6.1.0`, you need to enable the `tracing` Preview feature in your Prisma schema file.
 
@@ -181,15 +180,15 @@ process.on("SIGTERM", async () => {
 
 Choose the `NodeSDK` approach if:
 
-*   You are starting with OpenTelemetry and want a simplified setup.
-*   You need to quickly integrate tracing with minimal boilerplate.
-*   You are using an OTLP-compatible tracing backend like Honeycomb, Jaeger, or Datadog.
+-   You are starting with OpenTelemetry and want a simplified setup.
+-   You need to quickly integrate tracing with minimal boilerplate.
+-   You are using an OTLP-compatible tracing backend like Honeycomb, Jaeger, or Datadog.
 
 Choose the `NodeTracerProvider` approach if:
 
-*   You need detailed control over how spans are created, processed, and exported.
-*   You are using custom span processors or exporters.
-*   Your application requires specific instrumentation or sampling strategies.
+-   You need detailed control over how spans are created, processed, and exported.
+-   You are using custom span processors or exporters.
+-   Your application requires specific instrumentation or sampling strategies.
 
 OpenTelemetry is highly configurable. You can customize the resource attributes, what components gets instrumented, how spans are processed, and where spans are sent.
 
@@ -201,7 +200,7 @@ You can find a complete example that includes metrics in [this sample applicatio
 
 The following screenshot shows an example trace visualization:
 
-![Jaeger UI](https://www.prisma.io/docs/img/orm/prisma-client/observability-and-logging/jaeger.png?dpl=dpl_2TrAJrUt7dXR3AAWNDvwk5WL6VFX)
+![Jaeger UI](/docs/img/orm/prisma-client/observability-and-logging/jaeger.png)
 
 To run Jaeger locally, use the following [Docker](https://www.docker.com/) command:
 
@@ -262,9 +261,11 @@ export function otelSetup() {
 
 When you perform an interactive transaction, you'll see the following span in addition to the [standard spans](#trace-output):
 
-*   `prisma:client:transaction`: A [root span](https://opentelemetry.io/docs/concepts/observability-primer/#distributed-traces) that wraps the `prisma` span.
+-   `prisma:client:transaction`: A [root span](https://opentelemetry.io/docs/concepts/observability-primer/#distributed-traces) that wraps the `prisma` span.
 
 As an example, take the following Prisma schema:
+
+schema.prisma
 
 ```
 generator client {
@@ -312,23 +313,23 @@ await prisma.$transaction(async (tx) => {
 
 The trace is structured as follows:
 
-*   `prisma:client:transaction`
-*   `prisma:client:connect`
-*   `prisma:engine:itx_runner`
-    *   `prisma:engine:connection`
-    *   `prisma:engine:db_query`
-    *   `prisma:engine:itx_query_builder`
-        *   `prisma:engine:db_query`
-        *   `prisma:engine:db_query`
-        *   `prisma:engine:serialize`
-    *   `prisma:engine:itx_query_builder`
-        *   `prisma:engine:db_query`
-        *   `prisma:engine:db_query`
-        *   `prisma:engine:serialize`
-*   `prisma:client:operation`
-    *   `prisma:client:serialize`
-*   `prisma:client:operation`
-    *   `prisma:client:serialize`
+-   `prisma:client:transaction`
+-   `prisma:client:connect`
+-   `prisma:engine:itx_runner`
+    -   `prisma:engine:connection`
+    -   `prisma:engine:db_query`
+    -   `prisma:engine:itx_query_builder`
+        -   `prisma:engine:db_query`
+        -   `prisma:engine:db_query`
+        -   `prisma:engine:serialize`
+    -   `prisma:engine:itx_query_builder`
+        -   `prisma:engine:db_query`
+        -   `prisma:engine:db_query`
+        -   `prisma:engine:serialize`
+-   `prisma:client:operation`
+    -   `prisma:client:serialize`
+-   `prisma:client:operation`
+    -   `prisma:client:serialize`
 
 ### [Add more instrumentation](#add-more-instrumentation)
 
@@ -373,8 +374,8 @@ There is an ongoing effort to standardize common resource attributes. Whenever p
 
 If your application sends a large number of spans to a collector, this can have a significant performance impact. You can use the following approaches to reduce this impact:
 
-*   [Use the BatchSpanProcessor](#send-traces-in-batches-using-the-batchspanprocessor)
-*   [Send fewer spans to the collector](#send-fewer-spans-to-the-collector-with-sampling)
+-   [Use the BatchSpanProcessor](#send-traces-in-batches-using-the-batchspanprocessor)
+-   [Send fewer spans to the collector](#send-fewer-spans-to-the-collector-with-sampling)
 
 #### [Send traces in batches using the `BatchSpanProcessor`](#send-traces-in-batches-using-the-batchspanprocessor)
 

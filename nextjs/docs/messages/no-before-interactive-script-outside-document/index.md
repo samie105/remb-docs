@@ -5,13 +5,14 @@ canonical_url: "https://nextjs.org/docs/messages/no-before-interactive-script-ou
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:18:08.534Z"
-content_hash: "ec88af4092cd2a17cc0d850fc9024dc7c7c898abeaacf0f8bc61a10eb1a6c7d2"
+last_crawled_at: "2026-04-27T18:17:33.776Z"
+content_hash: "6b9f6976a6a2e6246e89db8d1c28714f685d689f21318ad196235fbde2d2f8a9"
 menu_path: ["No Before Interactive Script Outside Document"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/messages/no-async-client-component/index.md", "title": "No async Client Component"}
-nav_next: {"path": "nextjs/docs/messages/no-cache/index.md", "title": "No Cache Detected"}
+version: "latest"
+content_language: "en"
 ---
+[Docs](/docs)[Errors](/docs)No Before Interactive Script Outside Document
 
 # No Before Interactive Script Outside Document
 
@@ -74,11 +75,7 @@ export default function Document() {
 
 ## Useful Links[](#useful-links)
 
-*   [App Router Script Optimization](/docs/app/guides/scripts)
-*   [Pages Router Script Optimization](/docs/pages/guides/scripts)
+-   [App Router Script Optimization](/docs/app/guides/scripts)
+-   [Pages Router Script Optimization](/docs/pages/guides/scripts)
 
 Was this helpful?
-
-supported.
-
-Send

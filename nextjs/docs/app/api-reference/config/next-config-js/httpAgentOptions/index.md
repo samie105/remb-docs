@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/app/api-reference/config/next-config-js/
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:07:42.927Z"
-content_hash: "68aa3fdc4630900847005d7f0993682ed9de0a883b6652c64d9a2be889cacc61"
+last_crawled_at: "2026-04-27T18:06:33.414Z"
+content_hash: "18451cf5ea855cea03e69a8934f3f16c5b95c84f175974b69a0135ed970d3719"
 menu_path: ["httpAgentOptions"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/api-reference/config/next-config-js/htmlLimitedBots/index.md", "title": "htmlLimitedBots"}
-nav_next: {"path": "nextjs/docs/app/api-reference/config/next-config-js/images/index.md", "title": "images"}
+version: "latest"
+content_language: "en"
 ---
+[Configuration](/docs/app/api-reference/config)[next.config.js](/docs/app/api-reference/config/next-config-js)httpAgentOptions
 
 # httpAgentOptions
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 In Node.js versions prior to 18, Next.js automatically polyfills `fetch()` with [undici](/docs/architecture/supported-browsers#polyfills) and enables [HTTP Keep-Alive](https://developer.mozilla.org/docs/Web/HTTP/Headers/Keep-Alive) by default.
 
@@ -31,20 +32,4 @@ module.exports = {
 }
 ```
 
-[Previous
-
-htmlLimitedBots
-
-](/docs/app/api-reference/config/next-config-js/htmlLimitedBots)
-
-[Next
-
-images
-
-](/docs/app/api-reference/config/next-config-js/images)
-
 Was this helpful?
-
-supported.
-
-Send

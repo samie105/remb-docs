@@ -5,23 +5,22 @@ canonical_url: "https://nextjs.org/docs/app/api-reference/file-conventions/layou
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:10:04.751Z"
-content_hash: "1fd20e1621a8c1889f456a8dbcaa6edba178a1e5412b8d1afc49d443babdc2e7"
+last_crawled_at: "2026-04-27T18:08:46.549Z"
+content_hash: "692f53ae92be6d021b49affac11e0c2f502b819d48cc02a0dfa3bf001b9514bf"
 menu_path: ["layout.js"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/api-reference/file-conventions/intercepting-routes/index.md", "title": "Intercepting Routes"}
-nav_next: {"path": "nextjs/docs/app/api-reference/file-conventions/loading/index.md", "title": "loading.js"}
+version: "latest"
+content_language: "en"
 ---
+[API Reference](/docs/app/api-reference)[File-system conventions](/docs/app/api-reference/file-conventions)layout.js
 
 # layout.js
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 The `layout` file is used to define a layout in your Next.js application.
 
 app/dashboard/layout.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -40,8 +39,6 @@ In the [component hierarchy](/docs/app/getting-started/project-structure#compone
 A **root layout** is the top-most layout in the root `app` directory. It is used to define the `<html>` and `<body>` tags and other globally shared UI.
 
 app/layout.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -73,8 +70,6 @@ A promise that resolves to an object containing the [dynamic route parameters](/
 
 app/dashboard/\[team\]/layout.tsx
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -89,32 +84,14 @@ export default async function Layout({
 }
 ```
 
-Example Route
+| Example Route | URL | `params` |
+| --- | --- | --- |
+| `app/dashboard/[team]/layout.js` | `/dashboard/1` | `Promise<{ team: '1' }>` |
+| `app/shop/[tag]/[item]/layout.js` | `/shop/1/2` | `Promise<{ tag: '1', item: '2' }>` |
+| `app/blog/[...slug]/layout.js` | `/blog/1/2` | `Promise<{ slug: ['1', '2'] }>` |
 
-URL
-
-`params`
-
-`app/dashboard/[team]/layout.js`
-
-`/dashboard/1`
-
-`Promise<{ team: '1' }>`
-
-`app/shop/[tag]/[item]/layout.js`
-
-`/shop/1/2`
-
-`Promise<{ tag: '1', item: '2' }>`
-
-`app/blog/[...slug]/layout.js`
-
-`/blog/1/2`
-
-`Promise<{ slug: ['1', '2'] }>`
-
-*   Since the `params` prop is a promise. You must use `async/await` or React's [`use`](https://react.dev/reference/react/use) function to access the values.
-    *   In version 14 and earlier, `params` was a synchronous prop. To help with backwards compatibility, you can still access it synchronously in Next.js 15, but this behavior will be deprecated in the future.
+-   Since the `params` prop is a promise. You must use `async/await` or React's [`use`](https://react.dev/reference/react/use) function to access the values.
+    -   In version 14 and earlier, `params` was a synchronous prop. To help with backwards compatibility, you can still access it synchronously in Next.js 15, but this behavior will be deprecated in the future.
 
 ### Layout Props Helper[](#layout-props-helper)
 
@@ -136,16 +113,14 @@ export default function Layout(props: LayoutProps<'/dashboard'>) {
 
 > **Good to know**:
 > 
-> *   Types are generated during `next dev`, `next build` or `next typegen`.
-> *   After type generation, the `LayoutProps` helper is globally available. It doesn't need to be imported.
+> -   Types are generated during `next dev`, `next build` or `next typegen`.
+> -   After type generation, the `LayoutProps` helper is globally available. It doesn't need to be imported.
 
 ### Root Layout[](#root-layout)
 
 The `app` directory **must** include a **root layout**, which is the top-most layout in the root `app` directory. Typically, the root layout is `app/layout.js`.
 
 app/layout.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -163,13 +138,13 @@ export default function RootLayout({
 }
 ```
 
-*   The root layout **must** define `<html>` and `<body>` tags.
-    *   You should **not** manually add `<head>` tags such as `<title>` and `<meta>` to root layouts. Instead, you should use the [Metadata API](/docs/app/getting-started/metadata-and-og-images) which automatically handles advanced requirements such as streaming and de-duplicating `<head>` elements.
-*   You can create **multiple root layouts**. Any layout without a `layout.js` above it is a root layout. Two common approaches:
-    *   Using [route groups](/docs/app/api-reference/file-conventions/route-groups) like `app/(shop)/layout.js` and `app/(marketing)/layout.js`
-    *   Omitting `app/layout.js` so layouts in subdirectories like `app/dashboard/layout.js` and `app/blog/layout.js` each become root layouts for their respective directories.
-    *   Navigating **across multiple root layouts** will cause a **full page load** (as opposed to a client-side navigation).
-*   The root layout can be under a **dynamic segment**, for example when implementing [internationalization](/docs/app/guides/internationalization) with `app/[lang]/layout.js`.
+-   The root layout **must** define `<html>` and `<body>` tags.
+    -   You should **not** manually add `<head>` tags such as `<title>` and `<meta>` to root layouts. Instead, you should use the [Metadata API](/docs/app/getting-started/metadata-and-og-images) which automatically handles advanced requirements such as streaming and de-duplicating `<head>` elements.
+-   You can create **multiple root layouts**. Any layout without a `layout.js` above it is a root layout. Two common approaches:
+    -   Using [route groups](/docs/app/api-reference/file-conventions/route-groups) like `app/(shop)/layout.js` and `app/(marketing)/layout.js`
+    -   Omitting `app/layout.js` so layouts in subdirectories like `app/dashboard/layout.js` and `app/blog/layout.js` each become root layouts for their respective directories.
+    -   Navigating **across multiple root layouts** will cause a **full page load** (as opposed to a client-side navigation).
+-   The root layout can be under a **dynamic segment**, for example when implementing [internationalization](/docs/app/guides/internationalization) with `app/[lang]/layout.js`.
 
 ## Caveats[](#caveats)
 
@@ -182,8 +157,6 @@ Layouts are cached in the client during navigation to avoid unnecessary server r
 To access the request object, you can use [`headers`](/docs/app/api-reference/functions/headers) and [`cookies`](/docs/app/api-reference/functions/cookies) APIs in [Server Components](/docs/app/getting-started/server-and-client-components) and Functions.
 
 app/shop/layout.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -205,8 +178,6 @@ To access updated query parameters, you can use the Page [`searchParams`](/docs/
 
 app/ui/search.tsx
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -224,8 +195,6 @@ export default function Search() {
 ```
 
 app/shop/layout.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -249,8 +218,6 @@ Layouts do not re-render on navigation, so they do not access pathname which wou
 To access the current pathname, you can read it inside a Client Component using the [`usePathname`](/docs/app/api-reference/functions/use-pathname) hook. Since Client Components re-render during navigation, they have access to the latest pathname.
 
 app/ui/breadcrumbs.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -279,8 +246,6 @@ export default function Breadcrumbs() {
 
 app/docs/layout.tsx
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -302,17 +267,15 @@ Because `loading.js` sits below `layout.js` in the [component hierarchy](/docs/a
 
 The behavior depends on whether [Cache Components](/docs/app/getting-started/caching) is enabled:
 
-*   **Without Cache Components:** The navigation will block until the layout finishes rendering, and the `loading.js` fallback will not be shown.
-*   **With Cache Components:** `loading.js` is treated as a regular `<Suspense>` boundary rather than a special prefetch marker. Uncached or runtime data access in the layout must be explicitly wrapped in its own `<Suspense>` boundary, otherwise Next.js guides you with a build-time error. The static shell streams immediately, and the uncached content swaps in as it resolves.
+-   **Without Cache Components:** The navigation will block until the layout finishes rendering, and the `loading.js` fallback will not be shown.
+-   **With Cache Components:** `loading.js` is treated as a regular `<Suspense>` boundary rather than a special prefetch marker. Uncached or runtime data access in the layout must be explicitly wrapped in its own `<Suspense>` boundary, otherwise Next.js guides you with a build-time error. The static shell streams immediately, and the uncached content swaps in as it resolves.
 
 In both cases, to ensure instant navigation, either:
 
-*   Wrap runtime data access in your layout in its own `<Suspense>` boundary with a fallback.
-*   Move uncached data fetching from `layout.js` into `page.js` where `loading.js` can show a fallback.
+-   Wrap runtime data access in your layout in its own `<Suspense>` boundary with a fallback.
+-   Move uncached data fetching from `layout.js` into `page.js` where `loading.js` can show a fallback.
 
 app/dashboard/layout.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -341,8 +304,6 @@ Alternatively, when using [`fetch`](/docs/app/api-reference/functions/fetch)in N
 
 app/lib/data.ts
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -353,8 +314,6 @@ export async function getUser(id: string) {
 ```
 
 app/dashboard/layout.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -379,8 +338,6 @@ export default async function Layout({ children }) {
 
 app/dashboard/page.tsx
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -403,8 +360,6 @@ export default async function Page() {
 Layouts do not have access to the route segments below itself. To access all route segments, you can use [`useSelectedLayoutSegment`](/docs/app/api-reference/functions/use-selected-layout-segment) or [`useSelectedLayoutSegments`](/docs/app/api-reference/functions/use-selected-layout-segments) in a Client Component.
 
 app/ui/nav-link.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -437,8 +392,6 @@ export default function NavLink({
 ```
 
 app/blog/layout.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -473,8 +426,6 @@ You can modify the `<head>` HTML elements such as `title` and `meta` using the [
 
 app/layout.tsx
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -498,8 +449,6 @@ You can use the [`usePathname`](/docs/app/api-reference/functions/use-pathname) 
 Since `usePathname` is a client hook, you need to extract the nav links into a Client Component, which can be imported into your layout:
 
 app/ui/nav-links.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -531,8 +480,6 @@ export function NavLinks() {
 
 app/layout.tsx
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -555,8 +502,6 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 Using [dynamic route segments](/docs/app/api-reference/file-conventions/dynamic-routes), you can display or fetch specific content based on the `params` prop.
 
 app/dashboard/layout.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -587,8 +532,6 @@ To use `params` in a Client Component (which cannot be `async`), you can use Rea
 
 app/page.tsx
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -607,32 +550,9 @@ export default function Page({
 
 ## Version History[](#version-history)
 
-Version
-
-Changes
-
-`v15.0.0-RC`
-
-`params` is now a promise. A [codemod](/docs/app/guides/upgrading/codemods#150) is available.
-
-`v13.0.0`
-
-`layout` introduced.
-
-[Previous
-
-Intercepting Routes
-
-](/docs/app/api-reference/file-conventions/intercepting-routes)
-
-[Next
-
-loading.js
-
-](/docs/app/api-reference/file-conventions/loading)
+| Version | Changes |
+| --- | --- |
+| `v15.0.0-RC` | `params` is now a promise. A [codemod](/docs/app/guides/upgrading/codemods#150) is available. |
+| `v13.0.0` | `layout` introduced. |
 
 Was this helpful?
-
-supported.
-
-Send

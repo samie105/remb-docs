@@ -5,25 +5,24 @@ canonical_url: "https://nextjs.org/docs/pages/building-your-application/data-fet
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:23:01.050Z"
-content_hash: "dfebd6b4c9dd8f566d511c46f9742b4edaa88f696045e332b51e1f77ed42bfb5"
+last_crawled_at: "2026-04-27T18:22:19.938Z"
+content_hash: "ceb9d86f797781bdb8dfc7b31df194b3cd37ca6b0df19faa7c2a84a204714bc5"
 menu_path: ["getStaticPaths"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/pages/building-your-application/data-fetching/get-static-props/index.md", "title": "getStaticProps"}
-nav_next: {"path": "nextjs/docs/pages/building-your-application/data-fetching/get-server-side-props/index.md", "title": "getServerSideProps"}
+version: "latest"
+content_language: "en"
 ---
+[Building Your Application](/docs/pages/building-your-application)[Data Fetching](/docs/pages/building-your-application/data-fetching)getStaticPaths
 
 # getStaticPaths
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 If a page has [Dynamic Routes](/docs/pages/building-your-application/routing/dynamic-routes) and uses `getStaticProps`, it needs to define a list of paths to be statically generated.
 
 When you export a function called `getStaticPaths` (Static Site Generation) from a page that uses dynamic routes, Next.js will statically prerender all the paths specified by `getStaticPaths`.
 
 pages/repo/\[name\].tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -73,11 +72,11 @@ The [`getStaticPaths` API reference](/docs/pages/api-reference/functions/get-sta
 
 You should use `getStaticPaths` if you’re statically prerendering pages that use dynamic routes and:
 
-*   The data comes from a headless CMS
-*   The data comes from a database
-*   The data comes from the filesystem
-*   The data can be publicly cached (not user-specific)
-*   The page must be prerendered (for SEO) and be very fast — `getStaticProps` generates `HTML` and `JSON` files, both of which can be cached by a CDN for performance
+-   The data comes from a headless CMS
+-   The data comes from a database
+-   The data comes from the filesystem
+-   The data can be publicly cached (not user-specific)
+-   The page must be prerendered (for SEO) and be very fast — `getStaticProps` generates `HTML` and `JSON` files, both of which can be cached by a CDN for performance
 
 ## When does getStaticPaths run[](#when-does-getstaticpaths-run)
 
@@ -85,17 +84,17 @@ You should use `getStaticPaths` if you’re statically prerendering pages that u
 
 ### How does getStaticProps run with regards to getStaticPaths[](#how-does-getstaticprops-run-with-regards-to-getstaticpaths)
 
-*   `getStaticProps` runs during `next build` for any `paths` returned during build
-*   `getStaticProps` runs in the background when using `fallback: true`
-*   `getStaticProps` is called before initial render when using `fallback: blocking`
+-   `getStaticProps` runs during `next build` for any `paths` returned during build
+-   `getStaticProps` runs in the background when using `fallback: true`
+-   `getStaticProps` is called before initial render when using `fallback: blocking`
 
 ## Where can I use getStaticPaths[](#where-can-i-use-getstaticpaths)
 
-*   `getStaticPaths` **must** be used with `getStaticProps`
-*   You **cannot** use `getStaticPaths` with [`getServerSideProps`](/docs/pages/building-your-application/data-fetching/get-server-side-props)
-*   You can export `getStaticPaths` from a [Dynamic Route](/docs/pages/building-your-application/routing/dynamic-routes) that also uses `getStaticProps`
-*   You **cannot** export `getStaticPaths` from non-page file (e.g. your `components` folder)
-*   You must export `getStaticPaths` as a standalone function, and not a property of the page component
+-   `getStaticPaths` **must** be used with `getStaticProps`
+-   You **cannot** use `getStaticPaths` with [`getServerSideProps`](/docs/pages/building-your-application/data-fetching/get-server-side-props)
+-   You can export `getStaticPaths` from a [Dynamic Route](/docs/pages/building-your-application/routing/dynamic-routes) that also uses `getStaticProps`
+-   You **cannot** export `getStaticPaths` from non-page file (e.g. your `components` folder)
+-   You must export `getStaticPaths` as a standalone function, and not a property of the page component
 
 ## Runs on every request in development[](#runs-on-every-request-in-development)
 
@@ -138,7 +137,3 @@ export async function getStaticPaths() {
 ```
 
 Was this helpful?
-
-supported.
-
-Send

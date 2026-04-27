@@ -5,19 +5,19 @@ canonical_url: "https://www.prisma.io/docs/orm/more/best-practices"
 docset: "prisma"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:32:53.917Z"
-content_hash: "eb98809dfa9f4bea64ea14b752f08cc2f07562bb66f8d00ab54da935045adbfa"
+last_crawled_at: "2026-04-27T19:34:14.542Z"
+content_hash: "1890e96a094598891c4242f15eb7eb84ab28acd6f44c642b46f6f2a8811ad6e2"
 menu_path: ["Best practices"]
 section_path: []
-nav_prev: {"path": "prisma/docs/orm/reference/preview-features/cli-preview-features/index.md", "title": "Prisma CLI Preview features"}
-nav_next: {"path": "prisma/docs/orm/more/releases/index.md", "title": "ORM releases and maturity levels"}
+content_language: "en"
 ---
-
 Learn production-ready patterns for schema design, query optimization, type safety, security, and deployment with Prisma ORM.
 
 ### [Naming conventions](#naming-conventions)
 
 Use **PascalCase** for model names (singular) and **camelCase** for field names. Map to legacy database naming with `@map` and `@@map`:
+
+prisma/schema.prisma
 
 ```
 model Comment {
@@ -34,6 +34,8 @@ This keeps your Prisma schema readable while supporting any database naming conv
 ### [Model relations explicitly](#model-relations-explicitly)
 
 Always define both sides of a relation to keep your schema clear and maintainable:
+
+prisma/schema.prisma
 
 ```
 model User {
@@ -52,6 +54,8 @@ model Post {
 
 Index fields used in `where`, `orderBy`, and relations. Without indexes, the database can be forced to scan entire tables to find matching rows, which becomes slower as tables grow.
 
+prisma/schema.prisma
+
 ```
 model Comment {
   id      Int    @id @default(autoincrement())
@@ -67,6 +71,8 @@ model Comment {
 ### [Enum vs string fields](#enum-vs-string-fields)
 
 Enums provide type-safe, finite sets of values. You can map enum values to match your database naming:
+
+prisma/schema.prisma
 
 ```
 enum Role {
@@ -103,6 +109,8 @@ The `schema.prisma` file (containing the `generator` block) and `migrations/` di
 
 Create one global `PrismaClient` instance and reuse it throughout your application. Creating multiple instances creates multiple connection pools, which can exhaust your database's connection limit and slow down queries.
 
+lib/prisma.ts
+
 ```
 import { PrismaClient } from '../generated/prisma/client'
 import { PrismaPg } from '@prisma/adapter-pg'
@@ -116,12 +124,14 @@ export const prisma = new PrismaClient({ adapter })
 
 **Serverless environments:**
 
-*   Instantiate `PrismaClient` **outside** the handler function to reuse connections across warm invocations
-*   Consider [Prisma Postgres](https://www.prisma.io/docs/postgres) for built-in connection pooling or external poolers like PgBouncer
+-   Instantiate `PrismaClient` **outside** the handler function to reuse connections across warm invocations
+-   Consider [Prisma Postgres](https://www.prisma.io/docs/postgres) for built-in connection pooling or external poolers like PgBouncer
 
 ### [Preventing N+1 queries](#preventing-n1-queries)
 
 The N+1 problem occurs when you run 1 query to fetch a list, then 1 additional query per item in that list. This creates many unnecessary round-trips to the database instead of a few efficient queries.
+
+n-plus-one.ts
 
 ```
 // ❌ Bad: N+1 queries (1 + N queries)
@@ -148,6 +158,8 @@ const posts = await prisma.post.findMany({
 
 By default, Prisma ORM returns all scalar fields. Use `select` to whitelist specific fields you want returned:
 
+select.ts
+
 ```
 const user = await prisma.user.findFirst({
   select: {
@@ -159,6 +171,8 @@ const user = await prisma.user.findFirst({
 ```
 
 Use `omit` to blacklist fields you want excluded (useful for sensitive data):
+
+omit.ts
 
 ```
 import { PrismaClient } from '../generated/prisma/client'
@@ -180,6 +194,8 @@ You cannot combine `select` and `omit` in the same query.
 
 Use **offset pagination** for small datasets where jumping to arbitrary pages is needed:
 
+offset-pagination.ts
+
 ```
 const posts = await prisma.post.findMany({
   skip: 40,
@@ -189,6 +205,8 @@ const posts = await prisma.post.findMany({
 ```
 
 Use **cursor-based pagination** for large datasets or infinite scroll. Cursor-based pagination scales better because it uses indexed columns to find the starting position instead of traversing skipped rows:
+
+cursor-pagination.ts
 
 ```
 const posts = await prisma.post.findMany({
@@ -207,6 +225,8 @@ const posts = await prisma.post.findMany({
 
 Use bulk methods when operating on multiple records:
 
+batch-operations.ts
+
 ```
 await prisma.user.createMany({
   data: [
@@ -221,11 +241,13 @@ await prisma.post.updateMany({
 })
 ```
 
-Bulk operations (`createMany`, `createManyAndReturn`, `updateMany`, `updateManyAndReturn`, and `deleteMany`) [automatically run as transactions](prisma/docs/orm/prisma-client/queries/transactions/index.md#batch-operations), so all writes either succeed together or are rolled back if something fails.
+Bulk operations (`createMany`, `createManyAndReturn`, `updateMany`, `updateManyAndReturn`, and `deleteMany`) [automatically run as transactions](https://www.prisma.io/docs/orm/prisma-client/queries/transactions#batch-operations), so all writes either succeed together or are rolled back if something fails.
 
 ### [Raw queries](#raw-queries)
 
 Prefer Prisma ORM's query API. Use raw SQL only when you need features not supported by Prisma ORM or heavily optimized queries:
+
+raw-query.ts
 
 ```
 const email = 'user@example.com'
@@ -237,6 +259,8 @@ const users = await prisma.$queryRaw`
 ### [Leverage generated types](#leverage-generated-types)
 
 Use Prisma ORM's generated types instead of duplicating interfaces:
+
+generated-types.ts
 
 ```
 import type { User } from '../generated/prisma/client'
@@ -253,6 +277,8 @@ async function getAdminEmails(): Promise<string[]> {
 ### [Input validation](#input-validation)
 
 Always validate and sanitize user input before database operations:
+
+input-validation.ts
 
 ```
 import { z } from 'zod'
@@ -271,6 +297,8 @@ async function createUser(input: unknown) {
 ### [SQL injection prevention](#sql-injection-prevention)
 
 Prisma ORM's API is safe by default. For raw queries, always use parameterized queries. String concatenation with untrusted input allows attackers to inject arbitrary SQL into your queries.
+
+sql-injection-prevention.ts
 
 ```
 // ✅ Safe: tagged template
@@ -292,6 +320,8 @@ const result = await prisma.$queryRawUnsafe(query)
 ### [Sensitive data handling](#sensitive-data-handling)
 
 Exclude sensitive fields from query results:
+
+sensitive-data.ts
 
 ```
 import { PrismaClient } from '../generated/prisma/client'
@@ -330,6 +360,8 @@ Use a dedicated test database that can be reset freely:
 
 Mock Prisma ORM using `jest-mock-extended`:
 
+unit-test.ts
+
 ```
 import { PrismaClient } from '../generated/prisma/client'
 import { mockDeep } from 'jest-mock-extended'
@@ -354,6 +386,8 @@ test('finds user by email', async () => {
 ### [Integration tests with real database](#integration-tests-with-real-database)
 
 Use a real database with Prisma Migrate:
+
+integration-test.ts
 
 ```
 import { PrismaClient } from '../generated/prisma/client'
@@ -388,17 +422,19 @@ test('creates user', async () => {
 
 **Development:**
 
-*   Use `prisma migrate dev` to create and apply migrations
-*   Use `prisma db push` only for quick prototyping (may reset data)
+-   Use `prisma migrate dev` to create and apply migrations
+-   Use `prisma db push` only for quick prototyping (may reset data)
 
 **Production:**
 
-*   Use **only** `prisma migrate deploy` with committed migrations
-*   Never use `migrate dev` (can prompt to reset DB) or `db push` (can be destructive and locks you into a migrationless workflow)
+-   Use **only** `prisma migrate deploy` with committed migrations
+-   Never use `migrate dev` (can prompt to reset DB) or `db push` (can be destructive and locks you into a migrationless workflow)
 
 `prisma migrate deploy` applies existing migrations in a non-interactive way, uses advisory locking to prevent concurrent runs, and is safe for production data.
 
 Example CI/CD workflow:
+
+.github/workflows/deploy.yml
 
 ```
 - name: Apply migrations
@@ -414,6 +450,8 @@ For AWS Lambda, Vercel, Cloudflare Workers, or similar platforms:
 1.  Instantiate `PrismaClient` **outside** the handler function to reuse connections across warm invocations
 2.  Do **not** call `$disconnect()` at the end of each invocation (the container may be reused)
 3.  Consider external connection poolers (like PgBouncer) for high-concurrency workloads
+
+serverless-handler.ts
 
 ```
 import { PrismaClient } from '../generated/prisma/client'
@@ -436,6 +474,6 @@ export async function handler(event) {
 
 Creating a new client inside the handler on every invocation risks exhausting database connections. Each concurrent function creates its own connection pool, quickly multiplying connection counts.
 
-*   [Query optimization](https://www.prisma.io/docs/query-insights)
-*   [Raw queries](prisma/docs/orm/prisma-client/using-raw-sql/raw-queries/index.md)
-*   [Prisma Migrate workflows](prisma/docs/orm/prisma-migrate/workflows/development-and-production/index.md)
+-   [Query optimization](https://www.prisma.io/docs/query-insights)
+-   [Raw queries](https://www.prisma.io/docs/orm/prisma-client/using-raw-sql/raw-queries)
+-   [Prisma Migrate workflows](https://www.prisma.io/docs/orm/prisma-migrate/workflows/development-and-production)

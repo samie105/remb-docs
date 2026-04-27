@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/app/api-reference/functions/generate-sit
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:11:37.614Z"
-content_hash: "5f281d2b6636f2cf2ea19569283ddae288156fe0a3ab4a6f5a5b039f322edb9e"
+last_crawled_at: "2026-04-27T18:10:21.083Z"
+content_hash: "e14b4402f7047b20af021a265cbe7c32c984b852f90b3895a6d9c939cc6172c8"
 menu_path: ["generateSitemaps"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/api-reference/functions/generate-metadata/index.md", "title": "generateMetadata"}
-nav_next: {"path": "nextjs/docs/app/api-reference/functions/generate-static-params/index.md", "title": "generateStaticParams"}
+version: "latest"
+content_language: "en"
 ---
+[API Reference](/docs/app/api-reference)[Functions](/docs/app/api-reference/functions)generateSitemaps
 
 # generateSitemaps
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 You can use the `generateSitemaps` function to generate multiple sitemaps for your application.
 
@@ -32,8 +33,6 @@ Your generated sitemaps will be available at `/.../sitemap/[id].xml`. For exampl
 For example, to split a sitemap using `generateSitemaps`, return an array of objects with the sitemap `id`. Then, use the `id` to generate the unique sitemaps.
 
 app/product/sitemap.ts
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -65,21 +64,11 @@ export default async function sitemap(props: {
 
 ## Version History[](#version-history)
 
-Version
-
-Changes
-
-`v16.0.0`
-
-The `id` values returned from `generateSitemaps` are now passed as a promise that resolves to a `string` to the sitemap function.
-
-`v15.0.0`
-
-`generateSitemaps` now generates consistent URLs between development and production
-
-`v13.3.2`
-
-`generateSitemaps` introduced. In development, you can view the generated sitemap on `/.../sitemap.xml/[id]`. For example, `/product/sitemap.xml/1`.
+| Version | Changes |
+| --- | --- |
+| `v16.0.0` | The `id` values returned from `generateSitemaps` are now passed as a promise that resolves to a `string` to the sitemap function. |
+| `v15.0.0` | `generateSitemaps` now generates consistent URLs between development and production |
+| `v13.3.2` | `generateSitemaps` introduced. In development, you can view the generated sitemap on `/.../sitemap.xml/[id]`. For example, `/product/sitemap.xml/1`. |
 
 ## Next Steps
 
@@ -93,20 +82,4 @@ API Reference for the sitemap.xml file.
 
 ](/docs/app/api-reference/file-conventions/metadata/sitemap)
 
-[Previous
-
-generateMetadata
-
-](/docs/app/api-reference/functions/generate-metadata)
-
-[Next
-
-generateStaticParams
-
-](/docs/app/api-reference/functions/generate-static-params)
-
 Was this helpful?
-
-supported.
-
-Send

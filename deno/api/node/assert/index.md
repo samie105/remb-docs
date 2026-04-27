@@ -5,10 +5,11 @@ canonical_url: "https://docs.deno.com/api/node/assert/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:32:54.760Z"
-content_hash: "a612aef8f5b5e8706b4df54366f87f4b3892cb3e2a88a9a61856b5c197483137"
+last_crawled_at: "2026-04-27T17:02:55.702Z"
+content_hash: "89121ebc67862717d23edd3d7e1aac902153e0fa1882c912a3451207cbbc764e"
 menu_path: ["assert - Node documentation"]
 section_path: []
+content_language: "en"
 ---
 ### Usage in Deno
 
@@ -18,19 +19,17 @@ import * as mod from "node:assert";
 
 The `node:assert` module provides a set of assertion functions for verifying invariants.
 
-### Classes [#](#Classes)
-
 c
 
 [assert.AssertionError](.././assert/~/assert.AssertionError "assert.AssertionError")
 
 Indicates the failure of an assertion. All errors thrown by the `node:assert` module will be instances of the `AssertionError` class.
 
-*   [actual](.././assert/~/assert.AssertionError#property_actual)
-*   [code](.././assert/~/assert.AssertionError#property_code)
-*   [expected](.././assert/~/assert.AssertionError#property_expected)
-*   [generatedMessage](.././assert/~/assert.AssertionError#property_generatedmessage)
-*   [operator](.././assert/~/assert.AssertionError#property_operator)
+-   [actual](.././assert/~/assert.AssertionError#property_actual)
+-   [code](.././assert/~/assert.AssertionError#property_code)
+-   [expected](.././assert/~/assert.AssertionError#property_expected)
+-   [generatedMessage](.././assert/~/assert.AssertionError#property_generatedmessage)
+-   [operator](.././assert/~/assert.AssertionError#property_operator)
 
 c
 
@@ -38,13 +37,11 @@ c
 
 This feature is deprecated and will be removed in a future version. Please consider using alternatives such as the `mock` helper function.
 
-*   [calls](.././assert/~/assert.CallTracker#method_calls_0)
-*   [getCalls](.././assert/~/assert.CallTracker#method_getcalls_0)
-*   [report](.././assert/~/assert.CallTracker#method_report_0)
-*   [reset](.././assert/~/assert.CallTracker#method_reset_0)
-*   [verify](.././assert/~/assert.CallTracker#method_verify_0)
-
-### Functions [#](#Functions)
+-   [calls](.././assert/~/assert.CallTracker#method_calls_0)
+-   [getCalls](.././assert/~/assert.CallTracker#method_getcalls_0)
+-   [report](.././assert/~/assert.CallTracker#method_report_0)
+-   [reset](.././assert/~/assert.CallTracker#method_reset_0)
+-   [verify](.././assert/~/assert.CallTracker#method_verify_0)
 
 f
 
@@ -162,16 +159,14 @@ f
 
 Expects the function `fn` to throw an error.
 
-### Interfaces [#](#Interfaces)
-
 I
 
 [assert.CallTrackerCall](.././assert/~/assert.CallTrackerCall "assert.CallTrackerCall")
 
 No documentation available
 
-*   [arguments](.././assert/~/assert.CallTrackerCall#property_arguments)
-*   [thisArg](.././assert/~/assert.CallTrackerCall#property_thisarg)
+-   [arguments](.././assert/~/assert.CallTrackerCall#property_arguments)
+-   [thisArg](.././assert/~/assert.CallTrackerCall#property_thisarg)
 
 I
 
@@ -179,13 +174,11 @@ I
 
 No documentation available
 
-*   [actual](.././assert/~/assert.CallTrackerReportInformation#property_actual)
-*   [expected](.././assert/~/assert.CallTrackerReportInformation#property_expected)
-*   [message](.././assert/~/assert.CallTrackerReportInformation#property_message)
-*   [operator](.././assert/~/assert.CallTrackerReportInformation#property_operator)
-*   [stack](.././assert/~/assert.CallTrackerReportInformation#property_stack)
-
-### Namespaces [#](#Namespaces)
+-   [actual](.././assert/~/assert.CallTrackerReportInformation#property_actual)
+-   [expected](.././assert/~/assert.CallTrackerReportInformation#property_expected)
+-   [message](.././assert/~/assert.CallTrackerReportInformation#property_message)
+-   [operator](.././assert/~/assert.CallTrackerReportInformation#property_operator)
+-   [stack](.././assert/~/assert.CallTrackerReportInformation#property_stack)
 
 N
 
@@ -194,8 +187,6 @@ v
 [assert.strict](.././assert/~/assert.strict "assert.strict")
 
 In strict assertion mode, non-strict methods behave like their corresponding strict methods. For example, deepEqual will behave like deepStrictEqual.
-
-### Type Aliases [#](<#Type Aliases>)
 
 T
 

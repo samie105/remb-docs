@@ -5,14 +5,12 @@ canonical_url: "https://orm.drizzle.team/docs/zod"
 docset: "drizzle"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:26:22.647Z"
-content_hash: "71c511078c59270ce67b466f2dbd35ad79b46b193ef2bf1a539b6a4e193b3e8b"
+last_crawled_at: "2026-04-27T19:32:14.144Z"
+content_hash: "34430bd9a647bf39360cc8cc1a9d5a669cbc4e1ef8f5bf3aba5854352130c4a8"
 menu_path: ["zod"]
 section_path: []
-nav_prev: {"path": "drizzle/docs/goodies/index.md", "title": "Drizzle ORM - Goodies"}
-nav_next: {"path": "drizzle/docs/valibot/index.md", "title": "valibot"}
+content_language: "en"
 ---
-
 WARNING
 
 Starting from `drizzle-orm@1.0.0-beta.15`, `drizzle-zod` has been deprecated in favor of first-class schema generation support within Drizzle ORM itself
@@ -20,14 +18,6 @@ Starting from `drizzle-orm@1.0.0-beta.15`, `drizzle-zod` has been deprecated in 
 You can still use `drizzle-zod` package but all new update will be added to Drizzle ORM directly
 
 ### Install the dependencies[](#install-the-dependencies)
-
-npm
-
-yarn
-
-pnpm
-
-bun
 
 ```
 npm i zod
@@ -49,7 +39,7 @@ bun add zod
 
 Defines the shape of data queried from the database - can be used to validate API responses.
 
-```
+```ts
 import { pgTable, text, integer } from 'drizzle-orm/pg-core';
 import { createSelectSchema } from 'drizzle-orm/zod';
 
@@ -70,7 +60,7 @@ const parsed: { id: number; name: string; age: number } = userSelectSchema.parse
 
 Views and enums are also supported.
 
-```
+```ts
 import { pgEnum } from 'drizzle-orm/pg-core';
 import { createSelectSchema } from 'drizzle-orm/zod';
 
@@ -87,7 +77,7 @@ const parsed: { id: number; name: string; age: number } = usersViewSchema.parse(
 
 Defines the shape of data to be inserted into the database - can be used to validate API requests.
 
-```
+```ts
 import { pgTable, text, integer } from 'drizzle-orm/pg-core';
 import { createInsertSchema } from 'drizzle-orm/zod';
 
@@ -111,7 +101,7 @@ await db.insert(users).values(parsed);
 
 Defines the shape of data to be updated in the database - can be used to validate API requests.
 
-```
+```ts
 import { pgTable, text, integer } from 'drizzle-orm/pg-core';
 import { createUpdateSchema } from 'drizzle-orm/zod';
 
@@ -135,7 +125,7 @@ await db.update(users).set(parsed).where(eq(users.name, 'Jane'));
 
 Each create schema function accepts an additional optional parameter that you can used to extend, modify or completely overwite a field’s schema. Defining a callback function will extend or modify while providing a Zod schema will overwrite it.
 
-```
+```ts
 import { pgTable, text, integer, json } from 'drizzle-orm/pg-core';
 import { createSelectSchema } from 'drizzle-orm/zod';
 import { z } from 'zod/v4';
@@ -169,7 +159,7 @@ For more advanced use cases, you can use the `createSchemaFactory` function.
 
 **Use case: Using an extended Zod instance**
 
-```
+```ts
 import { pgTable, text, integer } from 'drizzle-orm/pg-core';
 import { createSchemaFactory } from 'drizzle-orm/zod';
 import { z } from '@hono/zod-openapi'; // Extended Zod instance
@@ -190,7 +180,7 @@ const userInsertSchema = createInsertSchema(users, {
 
 **Use case: Type coercion**
 
-```
+```ts
 import { pgTable, timestamp } from 'drizzle-orm/pg-core';
 import { createSchemaFactory } from 'drizzle-orm/zod';
 import { z } from 'zod/v4';
@@ -217,7 +207,7 @@ const userInsertSchema = z.object({
 
 ### Data type reference[](#data-type-reference)
 
-```
+```ts
 pg.boolean();
 
 mysql.boolean();
@@ -228,7 +218,7 @@ sqlite.integer({ mode: 'boolean' });
 z.boolean();
 ```
 
-```
+```ts
 pg.date({ mode: 'date' });
 pg.timestamp({ mode: 'date' });
 
@@ -243,7 +233,7 @@ sqlite.integer({ mode: 'timestamp_ms' });
 z.date();
 ```
 
-```
+```ts
 pg.date({ mode: 'string' });
 pg.timestamp({ mode: 'string' });
 pg.cidr();
@@ -271,21 +261,21 @@ sqlite.text({ mode: 'text' });
 z.string();
 ```
 
-```
+```ts
 pg.bit({ dimensions: ... });
 
 // Schema
 z.string().regex(/^[01]+$/).max(dimensions);
 ```
 
-```
+```ts
 pg.uuid();
 
 // Schema
 z.string().uuid();
 ```
 
-```
+```ts
 pg.char({ length: ... });
 
 mysql.char({ length: ... });
@@ -294,7 +284,7 @@ mysql.char({ length: ... });
 z.string().length(length);
 ```
 
-```
+```ts
 pg.varchar({ length: ... });
 
 mysql.varchar({ length: ... });
@@ -305,35 +295,35 @@ sqlite.text({ mode: 'text', length: ... });
 z.string().max(length);
 ```
 
-```
+```ts
 mysql.tinytext();
 
 // Schema
 z.string().max(255); // unsigned 8-bit integer limit
 ```
 
-```
+```ts
 mysql.text();
 
 // Schema
 z.string().max(65_535); // unsigned 16-bit integer limit
 ```
 
-```
+```ts
 mysql.mediumtext();
 
 // Schema
 z.string().max(16_777_215); // unsigned 24-bit integer limit
 ```
 
-```
+```ts
 mysql.longtext();
 
 // Schema
 z.string().max(4_294_967_295); // unsigned 32-bit integer limit
 ```
 
-```
+```ts
 pg.text({ enum: ... });
 pg.char({ enum: ... });
 pg.varchar({ enum: ... });
@@ -352,21 +342,21 @@ sqlite.text({ mode: 'text', enum: ... });
 z.enum(enum);
 ```
 
-```
+```ts
 mysql.tinyint();
 
 // Schema
 z.number().min(-128).max(127).int(); // 8-bit integer lower and upper limit
 ```
 
-```
+```ts
 mysql.tinyint({ unsigned: true });
 
 // Schema
 z.number().min(0).max(255).int(); // unsigned 8-bit integer lower and upper limit
 ```
 
-```
+```ts
 pg.smallint();
 pg.smallserial();
 
@@ -376,14 +366,14 @@ mysql.smallint();
 z.number().min(-32_768).max(32_767).int(); // 16-bit integer lower and upper limit
 ```
 
-```
+```ts
 mysql.smallint({ unsigned: true });
 
 // Schema
 z.number().min(0).max(65_535).int(); // unsigned 16-bit integer lower and upper limit
 ```
 
-```
+```ts
 pg.real();
 
 mysql.float();
@@ -392,28 +382,28 @@ mysql.float();
 z.number().min(-8_388_608).max(8_388_607); // 24-bit integer lower and upper limit
 ```
 
-```
+```ts
 mysql.mediumint();
 
 // Schema
 z.number().min(-8_388_608).max(8_388_607).int(); // 24-bit integer lower and upper limit
 ```
 
-```
+```ts
 mysql.float({ unsigned: true });
 
 // Schema
 z.number().min(0).max(16_777_215); // unsigned 24-bit integer lower and upper limit
 ```
 
-```
+```ts
 mysql.mediumint({ unsigned: true });
 
 // Schema
 z.number().min(0).max(16_777_215).int(); // unsigned 24-bit integer lower and upper limit
 ```
 
-```
+```ts
 pg.integer();
 pg.serial();
 
@@ -423,14 +413,14 @@ mysql.int();
 z.number().min(-2_147_483_648).max(2_147_483_647).int(); // 32-bit integer lower and upper limit
 ```
 
-```
+```ts
 mysql.int({ unsigned: true });
 
 // Schema
 z.number().min(0).max(4_294_967_295).int(); // unsgined 32-bit integer lower and upper limit
 ```
 
-```
+```ts
 pg.doublePrecision();
 
 mysql.double();
@@ -442,14 +432,14 @@ sqlite.real();
 z.number().min(-140_737_488_355_328).max(140_737_488_355_327); // 48-bit integer lower and upper limit
 ```
 
-```
+```ts
 mysql.double({ unsigned: true });
 
 // Schema
 z.number().min(0).max(281_474_976_710_655); // unsigned 48-bit integer lower and upper limit
 ```
 
-```
+```ts
 pg.bigint({ mode: 'number' });
 pg.bigserial({ mode: 'number' });
 
@@ -462,14 +452,14 @@ sqlite.integer({ mode: 'number' });
 z.number().min(-9_007_199_254_740_991).max(9_007_199_254_740_991).int(); // Javascript min. and max. safe integers
 ```
 
-```
+```ts
 mysql.serial();
 
 // Schema
 z.number().min(0).max(9_007_199_254_740_991).int(); // Javascript max. safe integer
 ```
 
-```
+```ts
 pg.bigint({ mode: 'bigint' });
 pg.bigserial({ mode: 'bigint' });
 
@@ -481,21 +471,21 @@ sqlite.blob({ mode: 'bigint' });
 z.bigint().min(-9_223_372_036_854_775_808n).max(9_223_372_036_854_775_807n); // 64-bit integer lower and upper limit
 ```
 
-```
+```ts
 mysql.bigint({ mode: 'bigint', unsigned: true });
 
 // Schema
 z.bigint().min(0).max(18_446_744_073_709_551_615n); // unsigned 64-bit integer lower and upper limit
 ```
 
-```
+```ts
 mysql.year();
 
 // Schema
 z.number().min(1_901).max(2_155).int();
 ```
 
-```
+```ts
 pg.geometry({ type: 'point', mode: 'tuple' });
 pg.point({ mode: 'tuple' });
 
@@ -503,7 +493,7 @@ pg.point({ mode: 'tuple' });
 z.tuple([z.number(), z.number()]);
 ```
 
-```
+```ts
 pg.geometry({ type: 'point', mode: 'xy' });
 pg.point({ mode: 'xy' });
 
@@ -511,7 +501,7 @@ pg.point({ mode: 'xy' });
 z.object({ x: z.number(), y: z.number() });
 ```
 
-```
+```ts
 pg.halfvec({ dimensions: ... });
 pg.vector({ dimensions: ... });
 
@@ -519,21 +509,21 @@ pg.vector({ dimensions: ... });
 z.array(z.number()).length(dimensions);
 ```
 
-```
+```ts
 pg.line({ mode: 'abc' });
 
 // Schema
 z.object({ a: z.number(), b: z.number(), c: z.number() });
 ```
 
-```
+```ts
 pg.line({ mode: 'tuple' });
 
 // Schema
 z.tuple([z.number(), z.number(), z.number()]);
 ```
 
-```
+```ts
 pg.json();
 pg.jsonb();
 
@@ -546,14 +536,14 @@ sqlite.text({ mode: 'json' });
 z.union([z.union([z.string(), z.number(), z.boolean(), z.null()]), z.record(z.any()), z.array(z.any())]);
 ```
 
-```
+```ts
 sqlite.blob({ mode: 'buffer' });
 
 // Schema
 z.custom<Buffer>((v) => v instanceof Buffer);
 ```
 
-```
+```ts
 pg.dataType().array(...);
 
 // Schema

@@ -5,13 +5,12 @@ canonical_url: "https://docs.deno.com/api/deno/runtime"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:10:52.240Z"
-content_hash: "2de3425c0cb85613002f850d58cf220154f61ef4901a78887d542169bef95335"
+last_crawled_at: "2026-04-27T17:54:55.031Z"
+content_hash: "12db94997ea58e1f2292e9d29c8e6365e02d13c46bc455812650538827632b3d"
 menu_path: ["Runtime - Deno documentation"]
 section_path: []
+content_language: "en"
 ---
-### Functions [#](#Functions)
-
 f
 
 [Deno.addSignalListener](./././~/Deno.addSignalListener "Deno.addSignalListener")
@@ -108,19 +107,17 @@ f
 
 Make the timer of the given `id` not block the event loop from finishing.
 
-### Interfaces [#](#Interfaces)
-
 I
 
 [Deno.Env](./././~/Deno.Env "Deno.Env")
 
 An interface containing methods to interact with the process environment variables.
 
-*   [delete](./././~/Deno.Env#method_delete_0)
-*   [get](./././~/Deno.Env#method_get_0)
-*   [has](./././~/Deno.Env#method_has_0)
-*   [set](./././~/Deno.Env#method_set_0)
-*   [toObject](./././~/Deno.Env#method_toobject_0)
+-   [delete](./././~/Deno.Env#method_delete_0)
+-   [get](./././~/Deno.Env#method_get_0)
+-   [has](./././~/Deno.Env#method_has_0)
+-   [set](./././~/Deno.Env#method_set_0)
+-   [toObject](./././~/Deno.Env#method_toobject_0)
 
 I
 
@@ -128,10 +125,10 @@ I
 
 No documentation available
 
-*   [external](./././~/Deno.MemoryUsage#property_external)
-*   [heapTotal](./././~/Deno.MemoryUsage#property_heaptotal)
-*   [heapUsed](./././~/Deno.MemoryUsage#property_heapused)
-*   [rss](./././~/Deno.MemoryUsage#property_rss)
+-   [external](./././~/Deno.MemoryUsage#property_external)
+-   [heapTotal](./././~/Deno.MemoryUsage#property_heaptotal)
+-   [heapUsed](./././~/Deno.MemoryUsage#property_heapused)
+-   [rss](./././~/Deno.MemoryUsage#property_rss)
 
 I
 
@@ -139,23 +136,19 @@ I
 
 Information returned from a call to [`Deno.systemMemoryInfo`](./././~/Deno.systemMemoryInfo).
 
-*   [available](./././~/Deno.SystemMemoryInfo#property_available)
-*   [buffers](./././~/Deno.SystemMemoryInfo#property_buffers)
-*   [cached](./././~/Deno.SystemMemoryInfo#property_cached)
-*   [free](./././~/Deno.SystemMemoryInfo#property_free)
-*   [swapFree](./././~/Deno.SystemMemoryInfo#property_swapfree)
-*   [swapTotal](./././~/Deno.SystemMemoryInfo#property_swaptotal)
-*   [total](./././~/Deno.SystemMemoryInfo#property_total)
-
-### Type Aliases [#](<#Type Aliases>)
+-   [available](./././~/Deno.SystemMemoryInfo#property_available)
+-   [buffers](./././~/Deno.SystemMemoryInfo#property_buffers)
+-   [cached](./././~/Deno.SystemMemoryInfo#property_cached)
+-   [free](./././~/Deno.SystemMemoryInfo#property_free)
+-   [swapFree](./././~/Deno.SystemMemoryInfo#property_swapfree)
+-   [swapTotal](./././~/Deno.SystemMemoryInfo#property_swaptotal)
+-   [total](./././~/Deno.SystemMemoryInfo#property_total)
 
 T
 
 [Deno.Signal](./././~/Deno.Signal "Deno.Signal")
 
 Operating signals which can be listened for or sent to sub-processes. What signals and what their standard behaviors are OS dependent.
-
-### Variables [#](#Variables)
 
 v
 
@@ -169,12 +162,12 @@ v
 
 Information related to the build of the current Deno runtime.
 
-*   [arch](./././~/Deno.build#property_arch)
-*   [env](./././~/Deno.build#property_env)
-*   [os](./././~/Deno.build#property_os)
-*   [standalone](./././~/Deno.build#property_standalone)
-*   [target](./././~/Deno.build#property_target)
-*   [vendor](./././~/Deno.build#property_vendor)
+-   [arch](./././~/Deno.build#property_arch)
+-   [env](./././~/Deno.build#property_env)
+-   [os](./././~/Deno.build#property_os)
+-   [standalone](./././~/Deno.build#property_standalone)
+-   [target](./././~/Deno.build#property_target)
+-   [vendor](./././~/Deno.build#property_vendor)
 
 v
 
@@ -218,6 +211,6 @@ v
 
 Version information related to the current Deno CLI runtime environment.
 
-*   [deno](./././~/Deno.version#property_deno)
-*   [typescript](./././~/Deno.version#property_typescript)
-*   [v8](./././~/Deno.version#property_v8)
+-   [deno](./././~/Deno.version#property_deno)
+-   [typescript](./././~/Deno.version#property_typescript)
+-   [v8](./././~/Deno.version#property_v8)

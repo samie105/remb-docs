@@ -5,19 +5,13 @@ canonical_url: "https://www.postgresql.org/docs/current/sql-listen.html"
 docset: "postgres"
 kind: "database"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:53:07.682Z"
-content_hash: "5ccde8c57101ba9ccbac645ccdcb10fa3f3c5fe78780bb3c4dfaead1a8ce89ed"
+last_crawled_at: "2026-04-27T20:51:34.883Z"
+content_hash: "cb47dc840068e33b0680be8d8b01d9355cea5adc18c625cf1f76de3c2f4abaec"
 menu_path: ["PostgreSQL: Documentation: 18: LISTEN"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/sql-expressions.html/index.md", "title": "PostgreSQL: Documentation: 18: 4.2.\u00a0Value Expressions"}
-nav_next: {"path": "postgres/docs/current/sql-lock.html/index.md", "title": "PostgreSQL: Documentation: 18: LOCK"}
+content_language: "en"
 ---
-
 LISTEN — listen for a notification
-
-## Synopsis
-
-LISTEN _`channel`_
 
 ## Description
 

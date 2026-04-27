@@ -5,33 +5,36 @@ canonical_url: "https://tailwindcss.com/docs/font-smoothing"
 docset: "tailwind"
 kind: "framework"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:54:45.992Z"
-content_hash: "d02118b64e1b9337eb1dfcf9a85b9884cec7c2ba30d22c96204c46b469953e39"
+last_crawled_at: "2026-04-27T20:07:39.055Z"
+content_hash: "aea11b28207ed0013df876e6e3653ab0b166a3b75c088f0065f72d66e01c4545"
 menu_path: ["font-smoothing"]
 section_path: []
-nav_prev: {"path": "tailwind/docs/font-size/index.md", "title": "font-size"}
-nav_next: {"path": "tailwind/docs/font-style/index.md", "title": "font-style"}
+content_language: "en"
 ---
+[](/)
+
+[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
+
+1.  Typography
+2.  font-smoothing
+
+Typography
 
 # font-smoothing
 
 Utilities for controlling the font smoothing of an element.
 
-Class
-
-Styles
-
-`antialiased`
-
+| Class | Styles |
+| --- | --- |
+| `antialiased` | 
 `-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;`
 
-`subpixel-antialiased`
+ |
+| `subpixel-antialiased` | 
 
 `-webkit-font-smoothing: auto; -moz-osx-font-smoothing: auto;`
 
-## [Examples](#examples)
-
-### [Grayscale antialiasing](#grayscale-antialiasing)
+ |
 
 Use the `antialiased` utility to render text using grayscale antialiasing:
 
@@ -41,8 +44,6 @@ The quick brown fox jumps over the lazy dog.
 <p class="antialiased ...">The quick brown fox ...</p>
 ```
 
-### [Subpixel antialiasing](#subpixel-antialiasing)
-
 Use the `subpixel-antialiased` utility to render text using subpixel antialiasing:
 
 The quick brown fox jumps over the lazy dog.
@@ -50,8 +51,6 @@ The quick brown fox jumps over the lazy dog.
 ```
 <p class="subpixel-antialiased ...">The quick brown fox ...</p>
 ```
-
-### [Responsive design](#responsive-design)
 
 Prefix `-webkit-font-smoothing` and `-moz-osx-font-smoothing` utilities with a breakpoint variant like `md:` to only apply the utility at medium screen sizes and above:
 
@@ -63,11 +62,11 @@ Learn more about using variants in the [variants documentation](/docs/hover-focu
 
 ### On this page
 
-*   [Quick reference](#quick-reference)
-*   [Examples](#examples)
-    *   [Grayscale antialiasing](#grayscale-antialiasing)
-    *   [Subpixel antialiasing](#subpixel-antialiasing)
-    *   [Responsive design](#responsive-design)
+-   [Quick reference](#quick-reference)
+-   [Examples](#examples)
+    -   [Grayscale antialiasing](#grayscale-antialiasing)
+    -   [Subpixel antialiasing](#subpixel-antialiasing)
+    -   [Responsive design](#responsive-design)
 
 ![Build UIs that don’t suck — 5-day mini-course](/_next/static/media/course-promo.d3d6bc78.jpg)
 

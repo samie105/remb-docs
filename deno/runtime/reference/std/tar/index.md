@@ -5,15 +5,16 @@ canonical_url: "https://docs.deno.com/runtime/reference/std/tar/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:05:53.386Z"
-content_hash: "32bc50b37e3d13f477850b1a2bca5d175dddcdec39991a8dfc3390c87f5f725e"
+last_crawled_at: "2026-04-27T17:47:34.530Z"
+content_hash: "49c7c4a9ee3c8f41e8c65fe81ad9e8b11a8b73efcd8f6df5c5fa786cb3590bf8"
 menu_path: ["@std/tar"]
 section_path: []
+content_language: "en"
 ---
-On this page
+**On this page**
 
-*   [Overview](#overview)
-    *   [Add to your project](#add-to-your-project)
+-   [Overview](#overview)
+    -   [Add to your project](#add-to-your-project)
 
 Unstable
 

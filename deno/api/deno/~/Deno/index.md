@@ -5,16 +5,15 @@ canonical_url: "https://docs.deno.com/api/deno/~/Deno"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:16:44.730Z"
-content_hash: "4c1fc082ba9de34bc865150a5c50c3c9602e322cabca237803947b20c81f95e2"
+last_crawled_at: "2026-04-27T18:04:09.083Z"
+content_hash: "91f5014a979e0115dbc5bb19bb43f1230bbad95ede5a4a046e51b94d762c79f5"
 menu_path: ["namespace Deno"]
 section_path: []
+content_language: "en"
 ---
 # namespace Deno
 
 The global namespace where Deno specific, non-standard APIs are located.
-
-### Classes [#](#Classes)
 
 c
 
@@ -22,15 +21,15 @@ c
 
 An operation on a [`Deno.Kv`](../././~/Deno.Kv) that can be performed atomically. Atomic operations do not auto-commit, and must be committed explicitly by calling the `commit` method.
 
-*   [check](../././~/Deno.AtomicOperation#method_check_0)
-*   [commit](../././~/Deno.AtomicOperation#method_commit_0)
-*   [delete](../././~/Deno.AtomicOperation#method_delete_0)
-*   [enqueue](../././~/Deno.AtomicOperation#method_enqueue_0)
-*   [max](../././~/Deno.AtomicOperation#method_max_0)
-*   [min](../././~/Deno.AtomicOperation#method_min_0)
-*   [mutate](../././~/Deno.AtomicOperation#method_mutate_0)
-*   [set](../././~/Deno.AtomicOperation#method_set_0)
-*   [sum](../././~/Deno.AtomicOperation#method_sum_0)
+-   [check](../././~/Deno.AtomicOperation#method_check_0)
+-   [commit](../././~/Deno.AtomicOperation#method_commit_0)
+-   [delete](../././~/Deno.AtomicOperation#method_delete_0)
+-   [enqueue](../././~/Deno.AtomicOperation#method_enqueue_0)
+-   [max](../././~/Deno.AtomicOperation#method_max_0)
+-   [min](../././~/Deno.AtomicOperation#method_min_0)
+-   [mutate](../././~/Deno.AtomicOperation#method_mutate_0)
+-   [set](../././~/Deno.AtomicOperation#method_set_0)
+-   [sum](../././~/Deno.AtomicOperation#method_sum_0)
 
 c
 
@@ -38,15 +37,15 @@ c
 
 The interface for handling a child process returned from `Deno.Command.spawn`.
 
-*   [kill](../././~/Deno.ChildProcess#method_kill_0)
-*   [output](../././~/Deno.ChildProcess#method_output_0)
-*   [pid](../././~/Deno.ChildProcess#property_pid)
-*   [ref](../././~/Deno.ChildProcess#method_ref_0)
-*   [status](../././~/Deno.ChildProcess#property_status)
-*   [stderr](../././~/Deno.ChildProcess#accessor_stderr)
-*   [stdin](../././~/Deno.ChildProcess#accessor_stdin)
-*   [stdout](../././~/Deno.ChildProcess#accessor_stdout)
-*   [unref](../././~/Deno.ChildProcess#method_unref_0)
+-   [kill](../././~/Deno.ChildProcess#method_kill_0)
+-   [output](../././~/Deno.ChildProcess#method_output_0)
+-   [pid](../././~/Deno.ChildProcess#property_pid)
+-   [ref](../././~/Deno.ChildProcess#method_ref_0)
+-   [status](../././~/Deno.ChildProcess#property_status)
+-   [stderr](../././~/Deno.ChildProcess#accessor_stderr)
+-   [stdin](../././~/Deno.ChildProcess#accessor_stdin)
+-   [stdout](../././~/Deno.ChildProcess#accessor_stdout)
+-   [unref](../././~/Deno.ChildProcess#method_unref_0)
 
 c
 
@@ -54,9 +53,9 @@ c
 
 Create a child process.
 
-*   [output](../././~/Deno.Command#method_output_0)
-*   [outputSync](../././~/Deno.Command#method_outputsync_0)
-*   [spawn](../././~/Deno.Command#method_spawn_0)
+-   [output](../././~/Deno.Command#method_output_0)
+-   [outputSync](../././~/Deno.Command#method_outputsync_0)
+-   [spawn](../././~/Deno.Command#method_spawn_0)
 
 c
 
@@ -64,33 +63,33 @@ c
 
 The Deno abstraction for reading and writing files.
 
-*   [close](../././~/Deno.FsFile#method_close_0)
-*   [isTerminal](../././~/Deno.FsFile#method_isterminal_0)
-*   [lock](../././~/Deno.FsFile#method_lock_0)
-*   [lockSync](../././~/Deno.FsFile#method_locksync_0)
-*   [read](../././~/Deno.FsFile#method_read_0)
-*   [readSync](../././~/Deno.FsFile#method_readsync_0)
-*   [readable](../././~/Deno.FsFile#property_readable)
-*   [seek](../././~/Deno.FsFile#method_seek_0)
-*   [seekSync](../././~/Deno.FsFile#method_seeksync_0)
-*   [setRaw](../././~/Deno.FsFile#method_setraw_0)
-*   [stat](../././~/Deno.FsFile#method_stat_0)
-*   [statSync](../././~/Deno.FsFile#method_statsync_0)
-*   [sync](../././~/Deno.FsFile#method_sync_0)
-*   [syncData](../././~/Deno.FsFile#method_syncdata_0)
-*   [syncDataSync](../././~/Deno.FsFile#method_syncdatasync_0)
-*   [syncSync](../././~/Deno.FsFile#method_syncsync_0)
-*   [truncate](../././~/Deno.FsFile#method_truncate_0)
-*   [truncateSync](../././~/Deno.FsFile#method_truncatesync_0)
-*   [tryLock](../././~/Deno.FsFile#method_trylock_0)
-*   [tryLockSync](../././~/Deno.FsFile#method_trylocksync_0)
-*   [unlock](../././~/Deno.FsFile#method_unlock_0)
-*   [unlockSync](../././~/Deno.FsFile#method_unlocksync_0)
-*   [utime](../././~/Deno.FsFile#method_utime_0)
-*   [utimeSync](../././~/Deno.FsFile#method_utimesync_0)
-*   [writable](../././~/Deno.FsFile#property_writable)
-*   [write](../././~/Deno.FsFile#method_write_0)
-*   [writeSync](../././~/Deno.FsFile#method_writesync_0)
+-   [close](../././~/Deno.FsFile#method_close_0)
+-   [isTerminal](../././~/Deno.FsFile#method_isterminal_0)
+-   [lock](../././~/Deno.FsFile#method_lock_0)
+-   [lockSync](../././~/Deno.FsFile#method_locksync_0)
+-   [read](../././~/Deno.FsFile#method_read_0)
+-   [readSync](../././~/Deno.FsFile#method_readsync_0)
+-   [readable](../././~/Deno.FsFile#property_readable)
+-   [seek](../././~/Deno.FsFile#method_seek_0)
+-   [seekSync](../././~/Deno.FsFile#method_seeksync_0)
+-   [setRaw](../././~/Deno.FsFile#method_setraw_0)
+-   [stat](../././~/Deno.FsFile#method_stat_0)
+-   [statSync](../././~/Deno.FsFile#method_statsync_0)
+-   [sync](../././~/Deno.FsFile#method_sync_0)
+-   [syncData](../././~/Deno.FsFile#method_syncdata_0)
+-   [syncDataSync](../././~/Deno.FsFile#method_syncdatasync_0)
+-   [syncSync](../././~/Deno.FsFile#method_syncsync_0)
+-   [truncate](../././~/Deno.FsFile#method_truncate_0)
+-   [truncateSync](../././~/Deno.FsFile#method_truncatesync_0)
+-   [tryLock](../././~/Deno.FsFile#method_trylock_0)
+-   [tryLockSync](../././~/Deno.FsFile#method_trylocksync_0)
+-   [unlock](../././~/Deno.FsFile#method_unlock_0)
+-   [unlockSync](../././~/Deno.FsFile#method_unlocksync_0)
+-   [utime](../././~/Deno.FsFile#method_utime_0)
+-   [utimeSync](../././~/Deno.FsFile#method_utimesync_0)
+-   [writable](../././~/Deno.FsFile#property_writable)
+-   [write](../././~/Deno.FsFile#method_write_0)
+-   [writeSync](../././~/Deno.FsFile#method_writesync_0)
 
 c
 
@@ -98,7 +97,7 @@ c
 
 A custom `HttpClient` for use with `fetch` function. This is designed to allow custom certificates or proxies to be used with `fetch()`.
 
-*   [close](../././~/Deno.HttpClient#method_close_0)
+-   [close](../././~/Deno.HttpClient#method_close_0)
 
 c
 
@@ -106,17 +105,17 @@ c
 
 A key-value database that can be used to store and retrieve data.
 
-*   [atomic](../././~/Deno.Kv#method_atomic_0)
-*   [close](../././~/Deno.Kv#method_close_0)
-*   [commitVersionstamp](../././~/Deno.Kv#method_commitversionstamp_0)
-*   [delete](../././~/Deno.Kv#method_delete_0)
-*   [enqueue](../././~/Deno.Kv#method_enqueue_0)
-*   [get](../././~/Deno.Kv#method_get_0)
-*   [getMany](../././~/Deno.Kv#method_getmany_0)
-*   [list](../././~/Deno.Kv#method_list_0)
-*   [listenQueue](../././~/Deno.Kv#method_listenqueue_0)
-*   [set](../././~/Deno.Kv#method_set_0)
-*   [watch](../././~/Deno.Kv#method_watch_0)
+-   [atomic](../././~/Deno.Kv#method_atomic_0)
+-   [close](../././~/Deno.Kv#method_close_0)
+-   [commitVersionstamp](../././~/Deno.Kv#method_commitversionstamp_0)
+-   [delete](../././~/Deno.Kv#method_delete_0)
+-   [enqueue](../././~/Deno.Kv#method_enqueue_0)
+-   [get](../././~/Deno.Kv#method_get_0)
+-   [getMany](../././~/Deno.Kv#method_getmany_0)
+-   [list](../././~/Deno.Kv#method_list_0)
+-   [listenQueue](../././~/Deno.Kv#method_listenqueue_0)
+-   [set](../././~/Deno.Kv#method_set_0)
+-   [watch](../././~/Deno.Kv#method_watch_0)
 
 c
 
@@ -124,8 +123,8 @@ c
 
 An iterator over a range of data entries in a [`Deno.Kv`](../././~/Deno.Kv).
 
-*   [cursor](../././~/Deno.KvListIterator#accessor_cursor)
-*   [next](../././~/Deno.KvListIterator#method_next_0)
+-   [cursor](../././~/Deno.KvListIterator#accessor_cursor)
+-   [next](../././~/Deno.KvListIterator#method_next_0)
 
 c
 
@@ -133,7 +132,7 @@ c
 
 Wrapper type for 64-bit unsigned integers for use as values in a [`Deno.Kv`](../././~/Deno.Kv).
 
-*   [value](../././~/Deno.KvU64#property_value)
+-   [value](../././~/Deno.KvU64#property_value)
 
 c
 
@@ -141,12 +140,12 @@ c
 
 Deno's permission management API.
 
-*   [query](../././~/Deno.Permissions#method_query_0)
-*   [querySync](../././~/Deno.Permissions#method_querysync_0)
-*   [request](../././~/Deno.Permissions#method_request_0)
-*   [requestSync](../././~/Deno.Permissions#method_requestsync_0)
-*   [revoke](../././~/Deno.Permissions#method_revoke_0)
-*   [revokeSync](../././~/Deno.Permissions#method_revokesync_0)
+-   [query](../././~/Deno.Permissions#method_query_0)
+-   [querySync](../././~/Deno.Permissions#method_querysync_0)
+-   [request](../././~/Deno.Permissions#method_request_0)
+-   [requestSync](../././~/Deno.Permissions#method_requestsync_0)
+-   [revoke](../././~/Deno.Permissions#method_revoke_0)
+-   [revokeSync](../././~/Deno.Permissions#method_revokesync_0)
 
 c
 
@@ -154,11 +153,11 @@ c
 
 An `EventTarget` returned from the [`Deno.permissions`](../././~/Deno.permissions) API which can provide updates to any state changes of the permission.
 
-*   [addEventListener](../././~/Deno.PermissionStatus#method_addeventlistener_0)
-*   [onchange](../././~/Deno.PermissionStatus#property_onchange)
-*   [partial](../././~/Deno.PermissionStatus#property_partial)
-*   [removeEventListener](../././~/Deno.PermissionStatus#method_removeeventlistener_0)
-*   [state](../././~/Deno.PermissionStatus#property_state)
+-   [addEventListener](../././~/Deno.PermissionStatus#method_addeventlistener_0)
+-   [onchange](../././~/Deno.PermissionStatus#property_onchange)
+-   [partial](../././~/Deno.PermissionStatus#property_partial)
+-   [removeEventListener](../././~/Deno.PermissionStatus#method_removeeventlistener_0)
+-   [state](../././~/Deno.PermissionStatus#property_state)
 
 c
 
@@ -166,9 +165,9 @@ c
 
 No documentation available
 
-*   [addr](../././~/Deno.QuicEndpoint#property_addr)
-*   [close](../././~/Deno.QuicEndpoint#method_close_0)
-*   [listen](../././~/Deno.QuicEndpoint#method_listen_0)
+-   [addr](../././~/Deno.QuicEndpoint#property_addr)
+-   [close](../././~/Deno.QuicEndpoint#method_close_0)
+-   [listen](../././~/Deno.QuicEndpoint#method_listen_0)
 
 c
 
@@ -176,13 +175,13 @@ c
 
 An unsafe function pointer for passing JavaScript functions as C function pointers to foreign function calls.
 
-*   [callback](../././~/Deno.UnsafeCallback#property_callback)
-*   [close](../././~/Deno.UnsafeCallback#method_close_0)
-*   [definition](../././~/Deno.UnsafeCallback#property_definition)
-*   [pointer](../././~/Deno.UnsafeCallback#property_pointer)
-*   [ref](../././~/Deno.UnsafeCallback#method_ref_0)
-*   [threadSafe](../././~/Deno.UnsafeCallback#method_threadsafe_0)
-*   [unref](../././~/Deno.UnsafeCallback#method_unref_0)
+-   [callback](../././~/Deno.UnsafeCallback#property_callback)
+-   [close](../././~/Deno.UnsafeCallback#method_close_0)
+-   [definition](../././~/Deno.UnsafeCallback#property_definition)
+-   [pointer](../././~/Deno.UnsafeCallback#property_pointer)
+-   [ref](../././~/Deno.UnsafeCallback#method_ref_0)
+-   [threadSafe](../././~/Deno.UnsafeCallback#method_threadsafe_0)
+-   [unref](../././~/Deno.UnsafeCallback#method_unref_0)
 
 c
 
@@ -190,9 +189,9 @@ c
 
 An unsafe pointer to a function, for calling functions that are not present as symbols.
 
-*   [call](../././~/Deno.UnsafeFnPointer#property_call)
-*   [definition](../././~/Deno.UnsafeFnPointer#property_definition)
-*   [pointer](../././~/Deno.UnsafeFnPointer#property_pointer)
+-   [call](../././~/Deno.UnsafeFnPointer#property_call)
+-   [definition](../././~/Deno.UnsafeFnPointer#property_definition)
+-   [pointer](../././~/Deno.UnsafeFnPointer#property_pointer)
 
 c
 
@@ -200,11 +199,11 @@ c
 
 A collection of static functions for interacting with pointer objects.
 
-*   [create](../././~/Deno.UnsafePointer#method_create_0)
-*   [equals](../././~/Deno.UnsafePointer#method_equals_0)
-*   [of](../././~/Deno.UnsafePointer#method_of_0)
-*   [offset](../././~/Deno.UnsafePointer#method_offset_0)
-*   [value](../././~/Deno.UnsafePointer#method_value_0)
+-   [create](../././~/Deno.UnsafePointer#method_create_0)
+-   [equals](../././~/Deno.UnsafePointer#method_equals_0)
+-   [of](../././~/Deno.UnsafePointer#method_of_0)
+-   [offset](../././~/Deno.UnsafePointer#method_offset_0)
+-   [value](../././~/Deno.UnsafePointer#method_value_0)
 
 c
 
@@ -212,22 +211,22 @@ c
 
 An unsafe pointer view to a memory location as specified by the `pointer` value. The `UnsafePointerView` API follows the standard built in interface `DataView` for accessing the underlying types at an memory location (numbers, strings and raw bytes).
 
-*   [copyInto](../././~/Deno.UnsafePointerView#method_copyinto_0)
-*   [getArrayBuffer](../././~/Deno.UnsafePointerView#method_getarraybuffer_0)
-*   [getBigInt64](../././~/Deno.UnsafePointerView#method_getbigint64_0)
-*   [getBigUint64](../././~/Deno.UnsafePointerView#method_getbiguint64_0)
-*   [getBool](../././~/Deno.UnsafePointerView#method_getbool_0)
-*   [getCString](../././~/Deno.UnsafePointerView#method_getcstring_0)
-*   [getFloat32](../././~/Deno.UnsafePointerView#method_getfloat32_0)
-*   [getFloat64](../././~/Deno.UnsafePointerView#method_getfloat64_0)
-*   [getInt16](../././~/Deno.UnsafePointerView#method_getint16_0)
-*   [getInt32](../././~/Deno.UnsafePointerView#method_getint32_0)
-*   [getInt8](../././~/Deno.UnsafePointerView#method_getint8_0)
-*   [getPointer](../././~/Deno.UnsafePointerView#method_getpointer_0)
-*   [getUint16](../././~/Deno.UnsafePointerView#method_getuint16_0)
-*   [getUint32](../././~/Deno.UnsafePointerView#method_getuint32_0)
-*   [getUint8](../././~/Deno.UnsafePointerView#method_getuint8_0)
-*   [pointer](../././~/Deno.UnsafePointerView#property_pointer)
+-   [copyInto](../././~/Deno.UnsafePointerView#method_copyinto_0)
+-   [getArrayBuffer](../././~/Deno.UnsafePointerView#method_getarraybuffer_0)
+-   [getBigInt64](../././~/Deno.UnsafePointerView#method_getbigint64_0)
+-   [getBigUint64](../././~/Deno.UnsafePointerView#method_getbiguint64_0)
+-   [getBool](../././~/Deno.UnsafePointerView#method_getbool_0)
+-   [getCString](../././~/Deno.UnsafePointerView#method_getcstring_0)
+-   [getFloat32](../././~/Deno.UnsafePointerView#method_getfloat32_0)
+-   [getFloat64](../././~/Deno.UnsafePointerView#method_getfloat64_0)
+-   [getInt16](../././~/Deno.UnsafePointerView#method_getint16_0)
+-   [getInt32](../././~/Deno.UnsafePointerView#method_getint32_0)
+-   [getInt8](../././~/Deno.UnsafePointerView#method_getint8_0)
+-   [getPointer](../././~/Deno.UnsafePointerView#method_getpointer_0)
+-   [getUint16](../././~/Deno.UnsafePointerView#method_getuint16_0)
+-   [getUint32](../././~/Deno.UnsafePointerView#method_getuint32_0)
+-   [getUint8](../././~/Deno.UnsafePointerView#method_getuint8_0)
+-   [pointer](../././~/Deno.UnsafePointerView#property_pointer)
 
 c
 
@@ -235,19 +234,15 @@ c
 
 Creates a presentable WebGPU surface from given window and display handles.
 
-*   [getContext](../././~/Deno.UnsafeWindowSurface#method_getcontext_0)
-*   [present](../././~/Deno.UnsafeWindowSurface#method_present_0)
-*   [resize](../././~/Deno.UnsafeWindowSurface#method_resize_0)
-
-### Enums [#](#Enums)
+-   [getContext](../././~/Deno.UnsafeWindowSurface#method_getcontext_0)
+-   [present](../././~/Deno.UnsafeWindowSurface#method_present_0)
+-   [resize](../././~/Deno.UnsafeWindowSurface#method_resize_0)
 
 E
 
 [Deno.SeekMode](../././~/Deno.SeekMode "Deno.SeekMode")
 
 A enum which defines the seek mode for IO related APIs that support seeking.
-
-### Functions [#](#Functions)
 
 f
 
@@ -771,16 +766,14 @@ f
 
 Synchronously write string `data` to the given `path`, by default creating a new file if needed, else overwriting.
 
-### Interfaces [#](#Interfaces)
-
 I
 
 [Deno.AtomicCheck](../././~/Deno.AtomicCheck "Deno.AtomicCheck")
 
 A check to perform as part of a [`Deno.AtomicOperation`](../././~/Deno.AtomicOperation). The check will fail if the versionstamp for the key-value pair in the KV store does not match the given versionstamp. A check with a `null` versionstamp checks that the key-value pair does not currently exist in the KV store.
 
-*   [key](../././~/Deno.AtomicCheck#property_key)
-*   [versionstamp](../././~/Deno.AtomicCheck#property_versionstamp)
+-   [key](../././~/Deno.AtomicCheck#property_key)
+-   [versionstamp](../././~/Deno.AtomicCheck#property_versionstamp)
 
 I
 
@@ -788,8 +781,8 @@ I
 
 Basic authentication credentials to be used with a [`Deno.Proxy`](../././~/Deno.Proxy) server when specifying [`Deno.CreateHttpClientOptions`](../././~/Deno.CreateHttpClientOptions).
 
-*   [password](../././~/Deno.BasicAuth#property_password)
-*   [username](../././~/Deno.BasicAuth#property_username)
+-   [password](../././~/Deno.BasicAuth#property_password)
+-   [username](../././~/Deno.BasicAuth#property_username)
 
 I
 
@@ -797,10 +790,10 @@ I
 
 Context that is passed to a benchmarked function. The instance is shared between iterations of the benchmark. Its methods can be used for example to override of the measured portion of the function.
 
-*   [end](../././~/Deno.BenchContext#method_end_0)
-*   [name](../././~/Deno.BenchContext#property_name)
-*   [origin](../././~/Deno.BenchContext#property_origin)
-*   [start](../././~/Deno.BenchContext#method_start_0)
+-   [end](../././~/Deno.BenchContext#method_end_0)
+-   [name](../././~/Deno.BenchContext#property_name)
+-   [origin](../././~/Deno.BenchContext#property_origin)
+-   [start](../././~/Deno.BenchContext#method_start_0)
 
 I
 
@@ -808,16 +801,16 @@ I
 
 The interface for defining a benchmark test using [`Deno.bench`](../././~/Deno.bench).
 
-*   [baseline](../././~/Deno.BenchDefinition#property_baseline)
-*   [fn](../././~/Deno.BenchDefinition#property_fn)
-*   [group](../././~/Deno.BenchDefinition#property_group)
-*   [ignore](../././~/Deno.BenchDefinition#property_ignore)
-*   [n](../././~/Deno.BenchDefinition#property_n)
-*   [name](../././~/Deno.BenchDefinition#property_name)
-*   [only](../././~/Deno.BenchDefinition#property_only)
-*   [permissions](../././~/Deno.BenchDefinition#property_permissions)
-*   [sanitizeExit](../././~/Deno.BenchDefinition#property_sanitizeexit)
-*   [warmup](../././~/Deno.BenchDefinition#property_warmup)
+-   [baseline](../././~/Deno.BenchDefinition#property_baseline)
+-   [fn](../././~/Deno.BenchDefinition#property_fn)
+-   [group](../././~/Deno.BenchDefinition#property_group)
+-   [ignore](../././~/Deno.BenchDefinition#property_ignore)
+-   [n](../././~/Deno.BenchDefinition#property_n)
+-   [name](../././~/Deno.BenchDefinition#property_name)
+-   [only](../././~/Deno.BenchDefinition#property_only)
+-   [permissions](../././~/Deno.BenchDefinition#property_permissions)
+-   [sanitizeExit](../././~/Deno.BenchDefinition#property_sanitizeexit)
+-   [warmup](../././~/Deno.BenchDefinition#property_warmup)
 
 I
 
@@ -825,9 +818,9 @@ I
 
 If [`Deno.resolveDns`](../././~/Deno.resolveDns) is called with `"CAA"` record type specified, it will resolve with an array of objects with this interface.
 
-*   [critical](../././~/Deno.CaaRecord#property_critical)
-*   [tag](../././~/Deno.CaaRecord#property_tag)
-*   [value](../././~/Deno.CaaRecord#property_value)
+-   [critical](../././~/Deno.CaaRecord#property_critical)
+-   [tag](../././~/Deno.CaaRecord#property_tag)
+-   [value](../././~/Deno.CaaRecord#property_value)
 
 I
 
@@ -835,18 +828,18 @@ I
 
 Options which can be set when calling [`Deno.Command`](../././~/Deno.Command).
 
-*   [args](../././~/Deno.CommandOptions#property_args)
-*   [clearEnv](../././~/Deno.CommandOptions#property_clearenv)
-*   [cwd](../././~/Deno.CommandOptions#property_cwd)
-*   [detached](../././~/Deno.CommandOptions#property_detached)
-*   [env](../././~/Deno.CommandOptions#property_env)
-*   [gid](../././~/Deno.CommandOptions#property_gid)
-*   [signal](../././~/Deno.CommandOptions#property_signal)
-*   [stderr](../././~/Deno.CommandOptions#property_stderr)
-*   [stdin](../././~/Deno.CommandOptions#property_stdin)
-*   [stdout](../././~/Deno.CommandOptions#property_stdout)
-*   [uid](../././~/Deno.CommandOptions#property_uid)
-*   [windowsRawArguments](../././~/Deno.CommandOptions#property_windowsrawarguments)
+-   [args](../././~/Deno.CommandOptions#property_args)
+-   [clearEnv](../././~/Deno.CommandOptions#property_clearenv)
+-   [cwd](../././~/Deno.CommandOptions#property_cwd)
+-   [detached](../././~/Deno.CommandOptions#property_detached)
+-   [env](../././~/Deno.CommandOptions#property_env)
+-   [gid](../././~/Deno.CommandOptions#property_gid)
+-   [signal](../././~/Deno.CommandOptions#property_signal)
+-   [stderr](../././~/Deno.CommandOptions#property_stderr)
+-   [stdin](../././~/Deno.CommandOptions#property_stdin)
+-   [stdout](../././~/Deno.CommandOptions#property_stdout)
+-   [uid](../././~/Deno.CommandOptions#property_uid)
+-   [windowsRawArguments](../././~/Deno.CommandOptions#property_windowsrawarguments)
 
 I
 
@@ -854,8 +847,8 @@ I
 
 The interface returned from calling `Deno.Command.output` or `Deno.Command.outputSync` which represents the result of spawning the child process.
 
-*   [stderr](../././~/Deno.CommandOutput#property_stderr)
-*   [stdout](../././~/Deno.CommandOutput#property_stdout)
+-   [stderr](../././~/Deno.CommandOutput#property_stderr)
+-   [stdout](../././~/Deno.CommandOutput#property_stdout)
 
 I
 
@@ -863,9 +856,9 @@ I
 
 No documentation available
 
-*   [code](../././~/Deno.CommandStatus#property_code)
-*   [signal](../././~/Deno.CommandStatus#property_signal)
-*   [success](../././~/Deno.CommandStatus#property_success)
+-   [code](../././~/Deno.CommandStatus#property_code)
+-   [signal](../././~/Deno.CommandStatus#property_signal)
+-   [success](../././~/Deno.CommandStatus#property_success)
 
 I
 
@@ -873,16 +866,16 @@ I
 
 No documentation available
 
-*   [close](../././~/Deno.Conn#method_close_0)
-*   [closeWrite](../././~/Deno.Conn#method_closewrite_0)
-*   [localAddr](../././~/Deno.Conn#property_localaddr)
-*   [read](../././~/Deno.Conn#method_read_0)
-*   [readable](../././~/Deno.Conn#property_readable)
-*   [ref](../././~/Deno.Conn#method_ref_0)
-*   [remoteAddr](../././~/Deno.Conn#property_remoteaddr)
-*   [unref](../././~/Deno.Conn#method_unref_0)
-*   [writable](../././~/Deno.Conn#property_writable)
-*   [write](../././~/Deno.Conn#method_write_0)
+-   [close](../././~/Deno.Conn#method_close_0)
+-   [closeWrite](../././~/Deno.Conn#method_closewrite_0)
+-   [localAddr](../././~/Deno.Conn#property_localaddr)
+-   [read](../././~/Deno.Conn#method_read_0)
+-   [readable](../././~/Deno.Conn#property_readable)
+-   [ref](../././~/Deno.Conn#method_ref_0)
+-   [remoteAddr](../././~/Deno.Conn#property_remoteaddr)
+-   [unref](../././~/Deno.Conn#method_unref_0)
+-   [writable](../././~/Deno.Conn#property_writable)
+-   [write](../././~/Deno.Conn#method_write_0)
 
 I
 
@@ -890,10 +883,10 @@ I
 
 No documentation available
 
-*   [hostname](../././~/Deno.ConnectOptions#property_hostname)
-*   [port](../././~/Deno.ConnectOptions#property_port)
-*   [signal](../././~/Deno.ConnectOptions#property_signal)
-*   [transport](../././~/Deno.ConnectOptions#property_transport)
+-   [hostname](../././~/Deno.ConnectOptions#property_hostname)
+-   [port](../././~/Deno.ConnectOptions#property_port)
+-   [signal](../././~/Deno.ConnectOptions#property_signal)
+-   [transport](../././~/Deno.ConnectOptions#property_transport)
 
 I
 
@@ -901,13 +894,13 @@ I
 
 No documentation available
 
-*   [alpnProtocols](../././~/Deno.ConnectQuicOptions#property_alpnprotocols)
-*   [caCerts](../././~/Deno.ConnectQuicOptions#property_cacerts)
-*   [endpoint](../././~/Deno.ConnectQuicOptions#property_endpoint)
-*   [hostname](../././~/Deno.ConnectQuicOptions#property_hostname)
-*   [port](../././~/Deno.ConnectQuicOptions#property_port)
-*   [serverName](../././~/Deno.ConnectQuicOptions#property_servername)
-*   [zeroRtt](../././~/Deno.ConnectQuicOptions#property_zerortt)
+-   [alpnProtocols](../././~/Deno.ConnectQuicOptions#property_alpnprotocols)
+-   [caCerts](../././~/Deno.ConnectQuicOptions#property_cacerts)
+-   [endpoint](../././~/Deno.ConnectQuicOptions#property_endpoint)
+-   [hostname](../././~/Deno.ConnectQuicOptions#property_hostname)
+-   [port](../././~/Deno.ConnectQuicOptions#property_port)
+-   [serverName](../././~/Deno.ConnectQuicOptions#property_servername)
+-   [zeroRtt](../././~/Deno.ConnectQuicOptions#property_zerortt)
 
 I
 
@@ -915,11 +908,11 @@ I
 
 No documentation available
 
-*   [alpnProtocols](../././~/Deno.ConnectTlsOptions#property_alpnprotocols)
-*   [caCerts](../././~/Deno.ConnectTlsOptions#property_cacerts)
-*   [hostname](../././~/Deno.ConnectTlsOptions#property_hostname)
-*   [port](../././~/Deno.ConnectTlsOptions#property_port)
-*   [unsafelyDisableHostnameVerification](../././~/Deno.ConnectTlsOptions#property_unsafelydisablehostnameverification)
+-   [alpnProtocols](../././~/Deno.ConnectTlsOptions#property_alpnprotocols)
+-   [caCerts](../././~/Deno.ConnectTlsOptions#property_cacerts)
+-   [hostname](../././~/Deno.ConnectTlsOptions#property_hostname)
+-   [port](../././~/Deno.ConnectTlsOptions#property_port)
+-   [unsafelyDisableHostnameVerification](../././~/Deno.ConnectTlsOptions#property_unsafelydisablehostnameverification)
 
 I
 
@@ -927,14 +920,14 @@ I
 
 The options used when creating a [`Deno.HttpClient`](../././~/Deno.HttpClient).
 
-*   [allowHost](../././~/Deno.CreateHttpClientOptions#property_allowhost)
-*   [caCerts](../././~/Deno.CreateHttpClientOptions#property_cacerts)
-*   [http1](../././~/Deno.CreateHttpClientOptions#property_http1)
-*   [http2](../././~/Deno.CreateHttpClientOptions#property_http2)
-*   [localAddress](../././~/Deno.CreateHttpClientOptions#property_localaddress)
-*   [poolIdleTimeout](../././~/Deno.CreateHttpClientOptions#property_poolidletimeout)
-*   [poolMaxIdlePerHost](../././~/Deno.CreateHttpClientOptions#property_poolmaxidleperhost)
-*   [proxy](../././~/Deno.CreateHttpClientOptions#property_proxy)
+-   [allowHost](../././~/Deno.CreateHttpClientOptions#property_allowhost)
+-   [caCerts](../././~/Deno.CreateHttpClientOptions#property_cacerts)
+-   [http1](../././~/Deno.CreateHttpClientOptions#property_http1)
+-   [http2](../././~/Deno.CreateHttpClientOptions#property_http2)
+-   [localAddress](../././~/Deno.CreateHttpClientOptions#property_localaddress)
+-   [poolIdleTimeout](../././~/Deno.CreateHttpClientOptions#property_poolidletimeout)
+-   [poolMaxIdlePerHost](../././~/Deno.CreateHttpClientOptions#property_poolmaxidleperhost)
+-   [proxy](../././~/Deno.CreateHttpClientOptions#property_proxy)
 
 I
 
@@ -942,11 +935,11 @@ I
 
 CronSchedule is the interface used for JSON format cron `schedule`.
 
-*   [dayOfMonth](../././~/Deno.CronSchedule#property_dayofmonth)
-*   [dayOfWeek](../././~/Deno.CronSchedule#property_dayofweek)
-*   [hour](../././~/Deno.CronSchedule#property_hour)
-*   [minute](../././~/Deno.CronSchedule#property_minute)
-*   [month](../././~/Deno.CronSchedule#property_month)
+-   [dayOfMonth](../././~/Deno.CronSchedule#property_dayofmonth)
+-   [dayOfWeek](../././~/Deno.CronSchedule#property_dayofweek)
+-   [hour](../././~/Deno.CronSchedule#property_hour)
+-   [minute](../././~/Deno.CronSchedule#property_minute)
+-   [month](../././~/Deno.CronSchedule#property_month)
 
 I
 
@@ -954,12 +947,12 @@ I
 
 A generic transport listener for message-oriented protocols.
 
-*   [addr](../././~/Deno.DatagramConn#property_addr)
-*   [close](../././~/Deno.DatagramConn#method_close_0)
-*   [joinMulticastV4](../././~/Deno.DatagramConn#method_joinmulticastv4_0)
-*   [joinMulticastV6](../././~/Deno.DatagramConn#method_joinmulticastv6_0)
-*   [receive](../././~/Deno.DatagramConn#method_receive_0)
-*   [send](../././~/Deno.DatagramConn#method_send_0)
+-   [addr](../././~/Deno.DatagramConn#property_addr)
+-   [close](../././~/Deno.DatagramConn#method_close_0)
+-   [joinMulticastV4](../././~/Deno.DatagramConn#method_joinmulticastv4_0)
+-   [joinMulticastV6](../././~/Deno.DatagramConn#method_joinmulticastv6_0)
+-   [receive](../././~/Deno.DatagramConn#method_receive_0)
+-   [send](../././~/Deno.DatagramConn#method_send_0)
 
 I
 
@@ -967,12 +960,12 @@ I
 
 No documentation available
 
-*   [afterAll](../././~/Deno.DenoTest#method_afterall_0)
-*   [afterEach](../././~/Deno.DenoTest#method_aftereach_0)
-*   [beforeAll](../././~/Deno.DenoTest#method_beforeall_0)
-*   [beforeEach](../././~/Deno.DenoTest#method_beforeeach_0)
-*   [ignore](../././~/Deno.DenoTest#method_ignore_0)
-*   [only](../././~/Deno.DenoTest#method_only_0)
+-   [afterAll](../././~/Deno.DenoTest#method_afterall_0)
+-   [afterEach](../././~/Deno.DenoTest#method_aftereach_0)
+-   [beforeAll](../././~/Deno.DenoTest#method_beforeall_0)
+-   [beforeEach](../././~/Deno.DenoTest#method_beforeeach_0)
+-   [ignore](../././~/Deno.DenoTest#method_ignore_0)
+-   [only](../././~/Deno.DenoTest#method_only_0)
 
 I
 
@@ -980,10 +973,10 @@ I
 
 Information about a directory entry returned from [`Deno.readDir`](../././~/Deno.readDir) and [`Deno.readDirSync`](../././~/Deno.readDirSync).
 
-*   [isDirectory](../././~/Deno.DirEntry#property_isdirectory)
-*   [isFile](../././~/Deno.DirEntry#property_isfile)
-*   [isSymlink](../././~/Deno.DirEntry#property_issymlink)
-*   [name](../././~/Deno.DirEntry#property_name)
+-   [isDirectory](../././~/Deno.DirEntry#property_isdirectory)
+-   [isFile](../././~/Deno.DirEntry#property_isfile)
+-   [isSymlink](../././~/Deno.DirEntry#property_issymlink)
+-   [name](../././~/Deno.DirEntry#property_name)
 
 I
 
@@ -991,8 +984,8 @@ I
 
 A dynamic library resource. Use [`Deno.dlopen`](../././~/Deno.dlopen) to load a dynamic library and return this interface.
 
-*   [close](../././~/Deno.DynamicLibrary#method_close_0)
-*   [symbols](../././~/Deno.DynamicLibrary#property_symbols)
+-   [close](../././~/Deno.DynamicLibrary#method_close_0)
+-   [symbols](../././~/Deno.DynamicLibrary#property_symbols)
 
 I
 
@@ -1000,11 +993,11 @@ I
 
 An interface containing methods to interact with the process environment variables.
 
-*   [delete](../././~/Deno.Env#method_delete_0)
-*   [get](../././~/Deno.Env#method_get_0)
-*   [has](../././~/Deno.Env#method_has_0)
-*   [set](../././~/Deno.Env#method_set_0)
-*   [toObject](../././~/Deno.Env#method_toobject_0)
+-   [delete](../././~/Deno.Env#method_delete_0)
+-   [get](../././~/Deno.Env#method_get_0)
+-   [has](../././~/Deno.Env#method_has_0)
+-   [set](../././~/Deno.Env#method_set_0)
+-   [toObject](../././~/Deno.Env#method_toobject_0)
 
 I
 
@@ -1012,8 +1005,8 @@ I
 
 The permission descriptor for the `allow-env` and `deny-env` permissions, which controls access to being able to read and write to the process environment variables as well as access other information about the environment. The option `variable` allows scoping the permission to a specific environment variable.
 
-*   [name](../././~/Deno.EnvPermissionDescriptor#property_name)
-*   [variable](../././~/Deno.EnvPermissionDescriptor#property_variable)
+-   [name](../././~/Deno.EnvPermissionDescriptor#property_name)
+-   [variable](../././~/Deno.EnvPermissionDescriptor#property_variable)
 
 I
 
@@ -1021,8 +1014,8 @@ I
 
 The permission descriptor for the `allow-ffi` and `deny-ffi` permissions, which controls access to loading _foreign_ code and interfacing with it via the [Foreign Function Interface API](https://docs.deno.com/runtime/manual/runtime/ffi_api) available in Deno. The option `path` allows scoping the permission to a specific path on the host.
 
-*   [name](../././~/Deno.FfiPermissionDescriptor#property_name)
-*   [path](../././~/Deno.FfiPermissionDescriptor#property_path)
+-   [name](../././~/Deno.FfiPermissionDescriptor#property_name)
+-   [path](../././~/Deno.FfiPermissionDescriptor#property_path)
 
 I
 
@@ -1030,27 +1023,27 @@ I
 
 Provides information about a file and is returned by [`Deno.stat`](../././~/Deno.stat), [`Deno.lstat`](../././~/Deno.lstat), [`Deno.statSync`](../././~/Deno.statSync), and [`Deno.lstatSync`](../././~/Deno.lstatSync) or from calling `stat()` and `statSync()` on an [`Deno.FsFile`](../././~/Deno.FsFile) instance.
 
-*   [atime](../././~/Deno.FileInfo#property_atime)
-*   [birthtime](../././~/Deno.FileInfo#property_birthtime)
-*   [blksize](../././~/Deno.FileInfo#property_blksize)
-*   [blocks](../././~/Deno.FileInfo#property_blocks)
-*   [ctime](../././~/Deno.FileInfo#property_ctime)
-*   [dev](../././~/Deno.FileInfo#property_dev)
-*   [gid](../././~/Deno.FileInfo#property_gid)
-*   [ino](../././~/Deno.FileInfo#property_ino)
-*   [isBlockDevice](../././~/Deno.FileInfo#property_isblockdevice)
-*   [isCharDevice](../././~/Deno.FileInfo#property_ischardevice)
-*   [isDirectory](../././~/Deno.FileInfo#property_isdirectory)
-*   [isFifo](../././~/Deno.FileInfo#property_isfifo)
-*   [isFile](../././~/Deno.FileInfo#property_isfile)
-*   [isSocket](../././~/Deno.FileInfo#property_issocket)
-*   [isSymlink](../././~/Deno.FileInfo#property_issymlink)
-*   [mode](../././~/Deno.FileInfo#property_mode)
-*   [mtime](../././~/Deno.FileInfo#property_mtime)
-*   [nlink](../././~/Deno.FileInfo#property_nlink)
-*   [rdev](../././~/Deno.FileInfo#property_rdev)
-*   [size](../././~/Deno.FileInfo#property_size)
-*   [uid](../././~/Deno.FileInfo#property_uid)
+-   [atime](../././~/Deno.FileInfo#property_atime)
+-   [birthtime](../././~/Deno.FileInfo#property_birthtime)
+-   [blksize](../././~/Deno.FileInfo#property_blksize)
+-   [blocks](../././~/Deno.FileInfo#property_blocks)
+-   [ctime](../././~/Deno.FileInfo#property_ctime)
+-   [dev](../././~/Deno.FileInfo#property_dev)
+-   [gid](../././~/Deno.FileInfo#property_gid)
+-   [ino](../././~/Deno.FileInfo#property_ino)
+-   [isBlockDevice](../././~/Deno.FileInfo#property_isblockdevice)
+-   [isCharDevice](../././~/Deno.FileInfo#property_ischardevice)
+-   [isDirectory](../././~/Deno.FileInfo#property_isdirectory)
+-   [isFifo](../././~/Deno.FileInfo#property_isfifo)
+-   [isFile](../././~/Deno.FileInfo#property_isfile)
+-   [isSocket](../././~/Deno.FileInfo#property_issocket)
+-   [isSymlink](../././~/Deno.FileInfo#property_issymlink)
+-   [mode](../././~/Deno.FileInfo#property_mode)
+-   [mtime](../././~/Deno.FileInfo#property_mtime)
+-   [nlink](../././~/Deno.FileInfo#property_nlink)
+-   [rdev](../././~/Deno.FileInfo#property_rdev)
+-   [size](../././~/Deno.FileInfo#property_size)
+-   [uid](../././~/Deno.FileInfo#property_uid)
 
 I
 
@@ -1058,11 +1051,11 @@ I
 
 The interface for a foreign function as defined by its parameter and result types.
 
-*   [name](../././~/Deno.ForeignFunction#property_name)
-*   [nonblocking](../././~/Deno.ForeignFunction#property_nonblocking)
-*   [optional](../././~/Deno.ForeignFunction#property_optional)
-*   [parameters](../././~/Deno.ForeignFunction#property_parameters)
-*   [result](../././~/Deno.ForeignFunction#property_result)
+-   [name](../././~/Deno.ForeignFunction#property_name)
+-   [nonblocking](../././~/Deno.ForeignFunction#property_nonblocking)
+-   [optional](../././~/Deno.ForeignFunction#property_optional)
+-   [parameters](../././~/Deno.ForeignFunction#property_parameters)
+-   [result](../././~/Deno.ForeignFunction#property_result)
 
 I
 
@@ -1076,9 +1069,9 @@ I
 
 No documentation available
 
-*   [name](../././~/Deno.ForeignStatic#property_name)
-*   [optional](../././~/Deno.ForeignStatic#property_optional)
-*   [type](../././~/Deno.ForeignStatic#property_type)
+-   [name](../././~/Deno.ForeignStatic#property_name)
+-   [optional](../././~/Deno.ForeignStatic#property_optional)
+-   [type](../././~/Deno.ForeignStatic#property_type)
 
 I
 
@@ -1086,9 +1079,9 @@ I
 
 Represents a unique file system event yielded by a [`Deno.FsWatcher`](../././~/Deno.FsWatcher).
 
-*   [flag](../././~/Deno.FsEvent#property_flag)
-*   [kind](../././~/Deno.FsEvent#property_kind)
-*   [paths](../././~/Deno.FsEvent#property_paths)
+-   [flag](../././~/Deno.FsEvent#property_flag)
+-   [kind](../././~/Deno.FsEvent#property_kind)
+-   [paths](../././~/Deno.FsEvent#property_paths)
 
 I
 
@@ -1096,8 +1089,8 @@ I
 
 Returned by [`Deno.watchFs`](../././~/Deno.watchFs). It is an async iterator yielding up system events. To stop watching the file system by calling `.close()` method.
 
-*   [close](../././~/Deno.FsWatcher#method_close_0)
-*   [return](../././~/Deno.FsWatcher#method_return_0)
+-   [close](../././~/Deno.FsWatcher#method_close_0)
+-   [return](../././~/Deno.FsWatcher#method_return_0)
 
 I
 
@@ -1105,11 +1098,11 @@ I
 
 An instance of the server created using `Deno.serve()` API.
 
-*   [addr](../././~/Deno.HttpServer#property_addr)
-*   [finished](../././~/Deno.HttpServer#property_finished)
-*   [ref](../././~/Deno.HttpServer#method_ref_0)
-*   [shutdown](../././~/Deno.HttpServer#method_shutdown_0)
-*   [unref](../././~/Deno.HttpServer#method_unref_0)
+-   [addr](../././~/Deno.HttpServer#property_addr)
+-   [finished](../././~/Deno.HttpServer#property_finished)
+-   [ref](../././~/Deno.HttpServer#method_ref_0)
+-   [shutdown](../././~/Deno.HttpServer#method_shutdown_0)
+-   [unref](../././~/Deno.HttpServer#method_unref_0)
 
 I
 
@@ -1117,8 +1110,8 @@ I
 
 The permission descriptor for the `allow-import` and `deny-import` permissions, which controls access to importing from remote hosts via the network. The option `host` allows scoping the permission for outbound connection to a specific host and port.
 
-*   [host](../././~/Deno.ImportPermissionDescriptor#property_host)
-*   [name](../././~/Deno.ImportPermissionDescriptor#property_name)
+-   [host](../././~/Deno.ImportPermissionDescriptor#property_host)
+-   [name](../././~/Deno.ImportPermissionDescriptor#property_name)
 
 I
 
@@ -1126,18 +1119,18 @@ I
 
 Option which can be specified when performing [`Deno.inspect`](../././~/Deno.inspect).
 
-*   [breakLength](../././~/Deno.InspectOptions#property_breaklength)
-*   [colors](../././~/Deno.InspectOptions#property_colors)
-*   [compact](../././~/Deno.InspectOptions#property_compact)
-*   [depth](../././~/Deno.InspectOptions#property_depth)
-*   [escapeSequences](../././~/Deno.InspectOptions#property_escapesequences)
-*   [getters](../././~/Deno.InspectOptions#property_getters)
-*   [iterableLimit](../././~/Deno.InspectOptions#property_iterablelimit)
-*   [showHidden](../././~/Deno.InspectOptions#property_showhidden)
-*   [showProxy](../././~/Deno.InspectOptions#property_showproxy)
-*   [sorted](../././~/Deno.InspectOptions#property_sorted)
-*   [strAbbreviateSize](../././~/Deno.InspectOptions#property_strabbreviatesize)
-*   [trailingComma](../././~/Deno.InspectOptions#property_trailingcomma)
+-   [breakLength](../././~/Deno.InspectOptions#property_breaklength)
+-   [colors](../././~/Deno.InspectOptions#property_colors)
+-   [compact](../././~/Deno.InspectOptions#property_compact)
+-   [depth](../././~/Deno.InspectOptions#property_depth)
+-   [escapeSequences](../././~/Deno.InspectOptions#property_escapesequences)
+-   [getters](../././~/Deno.InspectOptions#property_getters)
+-   [iterableLimit](../././~/Deno.InspectOptions#property_iterablelimit)
+-   [showHidden](../././~/Deno.InspectOptions#property_showhidden)
+-   [showProxy](../././~/Deno.InspectOptions#property_showproxy)
+-   [sorted](../././~/Deno.InspectOptions#property_sorted)
+-   [strAbbreviateSize](../././~/Deno.InspectOptions#property_strabbreviatesize)
+-   [trailingComma](../././~/Deno.InspectOptions#property_trailingcomma)
 
 I
 
@@ -1145,7 +1138,7 @@ I
 
 No documentation available
 
-*   [ok](../././~/Deno.KvCommitError#property_ok)
+-   [ok](../././~/Deno.KvCommitError#property_ok)
 
 I
 
@@ -1153,8 +1146,8 @@ I
 
 No documentation available
 
-*   [ok](../././~/Deno.KvCommitResult#property_ok)
-*   [versionstamp](../././~/Deno.KvCommitResult#property_versionstamp)
+-   [ok](../././~/Deno.KvCommitResult#property_ok)
+-   [versionstamp](../././~/Deno.KvCommitResult#property_versionstamp)
 
 I
 
@@ -1162,9 +1155,9 @@ I
 
 A versioned pair of key and value in a [`Deno.Kv`](../././~/Deno.Kv).
 
-*   [key](../././~/Deno.KvEntry#property_key)
-*   [value](../././~/Deno.KvEntry#property_value)
-*   [versionstamp](../././~/Deno.KvEntry#property_versionstamp)
+-   [key](../././~/Deno.KvEntry#property_key)
+-   [value](../././~/Deno.KvEntry#property_value)
+-   [versionstamp](../././~/Deno.KvEntry#property_versionstamp)
 
 I
 
@@ -1172,11 +1165,11 @@ I
 
 Options for listing key-value pairs in a [`Deno.Kv`](../././~/Deno.Kv).
 
-*   [batchSize](../././~/Deno.KvListOptions#property_batchsize)
-*   [consistency](../././~/Deno.KvListOptions#property_consistency)
-*   [cursor](../././~/Deno.KvListOptions#property_cursor)
-*   [limit](../././~/Deno.KvListOptions#property_limit)
-*   [reverse](../././~/Deno.KvListOptions#property_reverse)
+-   [batchSize](../././~/Deno.KvListOptions#property_batchsize)
+-   [consistency](../././~/Deno.KvListOptions#property_consistency)
+-   [cursor](../././~/Deno.KvListOptions#property_cursor)
+-   [limit](../././~/Deno.KvListOptions#property_limit)
+-   [reverse](../././~/Deno.KvListOptions#property_reverse)
 
 I
 
@@ -1184,11 +1177,11 @@ I
 
 A generic network listener for stream-oriented protocols.
 
-*   [accept](../././~/Deno.Listener#method_accept_0)
-*   [addr](../././~/Deno.Listener#property_addr)
-*   [close](../././~/Deno.Listener#method_close_0)
-*   [ref](../././~/Deno.Listener#method_ref_0)
-*   [unref](../././~/Deno.Listener#method_unref_0)
+-   [accept](../././~/Deno.Listener#method_accept_0)
+-   [addr](../././~/Deno.Listener#property_addr)
+-   [close](../././~/Deno.Listener#method_close_0)
+-   [ref](../././~/Deno.Listener#method_ref_0)
+-   [unref](../././~/Deno.Listener#method_unref_0)
 
 I
 
@@ -1196,9 +1189,9 @@ I
 
 No documentation available
 
-*   [hostname](../././~/Deno.ListenOptions#property_hostname)
-*   [port](../././~/Deno.ListenOptions#property_port)
-*   [tcpBacklog](../././~/Deno.ListenOptions#property_tcpbacklog)
+-   [hostname](../././~/Deno.ListenOptions#property_hostname)
+-   [port](../././~/Deno.ListenOptions#property_port)
+-   [tcpBacklog](../././~/Deno.ListenOptions#property_tcpbacklog)
 
 I
 
@@ -1206,8 +1199,8 @@ I
 
 No documentation available
 
-*   [alpnProtocols](../././~/Deno.ListenTlsOptions#property_alpnprotocols)
-*   [transport](../././~/Deno.ListenTlsOptions#property_transport)
+-   [alpnProtocols](../././~/Deno.ListenTlsOptions#property_alpnprotocols)
+-   [transport](../././~/Deno.ListenTlsOptions#property_transport)
 
 I
 
@@ -1215,9 +1208,9 @@ I
 
 Options which can be set when using [`Deno.makeTempDir`](../././~/Deno.makeTempDir), [`Deno.makeTempDirSync`](../././~/Deno.makeTempDirSync), [`Deno.makeTempFile`](../././~/Deno.makeTempFile), and [`Deno.makeTempFileSync`](../././~/Deno.makeTempFileSync).
 
-*   [dir](../././~/Deno.MakeTempOptions#property_dir)
-*   [prefix](../././~/Deno.MakeTempOptions#property_prefix)
-*   [suffix](../././~/Deno.MakeTempOptions#property_suffix)
+-   [dir](../././~/Deno.MakeTempOptions#property_dir)
+-   [prefix](../././~/Deno.MakeTempOptions#property_prefix)
+-   [suffix](../././~/Deno.MakeTempOptions#property_suffix)
 
 I
 
@@ -1225,10 +1218,10 @@ I
 
 No documentation available
 
-*   [external](../././~/Deno.MemoryUsage#property_external)
-*   [heapTotal](../././~/Deno.MemoryUsage#property_heaptotal)
-*   [heapUsed](../././~/Deno.MemoryUsage#property_heapused)
-*   [rss](../././~/Deno.MemoryUsage#property_rss)
+-   [external](../././~/Deno.MemoryUsage#property_external)
+-   [heapTotal](../././~/Deno.MemoryUsage#property_heaptotal)
+-   [heapUsed](../././~/Deno.MemoryUsage#property_heapused)
+-   [rss](../././~/Deno.MemoryUsage#property_rss)
 
 I
 
@@ -1236,8 +1229,8 @@ I
 
 Options which can be set when using [`Deno.mkdir`](../././~/Deno.mkdir) and [`Deno.mkdirSync`](../././~/Deno.mkdirSync).
 
-*   [mode](../././~/Deno.MkdirOptions#property_mode)
-*   [recursive](../././~/Deno.MkdirOptions#property_recursive)
+-   [mode](../././~/Deno.MkdirOptions#property_mode)
+-   [recursive](../././~/Deno.MkdirOptions#property_recursive)
 
 I
 
@@ -1245,9 +1238,9 @@ I
 
 Represents membership of a IPv4 multicast group.
 
-*   [leave](../././~/Deno.MulticastV4Membership#property_leave)
-*   [setLoopback](../././~/Deno.MulticastV4Membership#property_setloopback)
-*   [setTTL](../././~/Deno.MulticastV4Membership#property_setttl)
+-   [leave](../././~/Deno.MulticastV4Membership#property_leave)
+-   [setLoopback](../././~/Deno.MulticastV4Membership#property_setloopback)
+-   [setTTL](../././~/Deno.MulticastV4Membership#property_setttl)
 
 I
 
@@ -1255,8 +1248,8 @@ I
 
 Represents membership of a IPv6 multicast group.
 
-*   [leave](../././~/Deno.MulticastV6Membership#property_leave)
-*   [setLoopback](../././~/Deno.MulticastV6Membership#property_setloopback)
+-   [leave](../././~/Deno.MulticastV6Membership#property_leave)
+-   [setLoopback](../././~/Deno.MulticastV6Membership#property_setloopback)
 
 I
 
@@ -1264,8 +1257,8 @@ I
 
 If [`Deno.resolveDns`](../././~/Deno.resolveDns) is called with `"MX"` record type specified, it will return an array of objects with this interface.
 
-*   [exchange](../././~/Deno.MxRecord#property_exchange)
-*   [preference](../././~/Deno.MxRecord#property_preference)
+-   [exchange](../././~/Deno.MxRecord#property_exchange)
+-   [preference](../././~/Deno.MxRecord#property_preference)
 
 I
 
@@ -1273,12 +1266,12 @@ I
 
 If [`Deno.resolveDns`](../././~/Deno.resolveDns) is called with `"NAPTR"` record type specified, it will return an array of objects with this interface.
 
-*   [flags](../././~/Deno.NaptrRecord#property_flags)
-*   [order](../././~/Deno.NaptrRecord#property_order)
-*   [preference](../././~/Deno.NaptrRecord#property_preference)
-*   [regexp](../././~/Deno.NaptrRecord#property_regexp)
-*   [replacement](../././~/Deno.NaptrRecord#property_replacement)
-*   [services](../././~/Deno.NaptrRecord#property_services)
+-   [flags](../././~/Deno.NaptrRecord#property_flags)
+-   [order](../././~/Deno.NaptrRecord#property_order)
+-   [preference](../././~/Deno.NaptrRecord#property_preference)
+-   [regexp](../././~/Deno.NaptrRecord#property_regexp)
+-   [replacement](../././~/Deno.NaptrRecord#property_replacement)
+-   [services](../././~/Deno.NaptrRecord#property_services)
 
 I
 
@@ -1286,7 +1279,7 @@ I
 
 The native struct type for interfacing with foreign functions.
 
-*   [struct](../././~/Deno.NativeStructType#property_struct)
+-   [struct](../././~/Deno.NativeStructType#property_struct)
 
 I
 
@@ -1294,9 +1287,9 @@ I
 
 No documentation available
 
-*   [hostname](../././~/Deno.NetAddr#property_hostname)
-*   [port](../././~/Deno.NetAddr#property_port)
-*   [transport](../././~/Deno.NetAddr#property_transport)
+-   [hostname](../././~/Deno.NetAddr#property_hostname)
+-   [port](../././~/Deno.NetAddr#property_port)
+-   [transport](../././~/Deno.NetAddr#property_transport)
 
 I
 
@@ -1304,8 +1297,8 @@ I
 
 The permission descriptor for the `allow-net` and `deny-net` permissions, which controls access to opening network ports and connecting to remote hosts via the network. The option `host` allows scoping the permission for outbound connection to a specific host and port.
 
-*   [host](../././~/Deno.NetPermissionDescriptor#property_host)
-*   [name](../././~/Deno.NetPermissionDescriptor#property_name)
+-   [host](../././~/Deno.NetPermissionDescriptor#property_host)
+-   [name](../././~/Deno.NetPermissionDescriptor#property_name)
 
 I
 
@@ -1313,13 +1306,13 @@ I
 
 The information for a network interface returned from a call to [`Deno.networkInterfaces`](../././~/Deno.networkInterfaces).
 
-*   [address](../././~/Deno.NetworkInterfaceInfo#property_address)
-*   [cidr](../././~/Deno.NetworkInterfaceInfo#property_cidr)
-*   [family](../././~/Deno.NetworkInterfaceInfo#property_family)
-*   [mac](../././~/Deno.NetworkInterfaceInfo#property_mac)
-*   [name](../././~/Deno.NetworkInterfaceInfo#property_name)
-*   [netmask](../././~/Deno.NetworkInterfaceInfo#property_netmask)
-*   [scopeid](../././~/Deno.NetworkInterfaceInfo#property_scopeid)
+-   [address](../././~/Deno.NetworkInterfaceInfo#property_address)
+-   [cidr](../././~/Deno.NetworkInterfaceInfo#property_cidr)
+-   [family](../././~/Deno.NetworkInterfaceInfo#property_family)
+-   [mac](../././~/Deno.NetworkInterfaceInfo#property_mac)
+-   [name](../././~/Deno.NetworkInterfaceInfo#property_name)
+-   [netmask](../././~/Deno.NetworkInterfaceInfo#property_netmask)
+-   [scopeid](../././~/Deno.NetworkInterfaceInfo#property_scopeid)
 
 I
 
@@ -1327,13 +1320,13 @@ I
 
 Options which can be set when doing [`Deno.open`](../././~/Deno.open) and [`Deno.openSync`](../././~/Deno.openSync).
 
-*   [append](../././~/Deno.OpenOptions#property_append)
-*   [create](../././~/Deno.OpenOptions#property_create)
-*   [createNew](../././~/Deno.OpenOptions#property_createnew)
-*   [mode](../././~/Deno.OpenOptions#property_mode)
-*   [read](../././~/Deno.OpenOptions#property_read)
-*   [truncate](../././~/Deno.OpenOptions#property_truncate)
-*   [write](../././~/Deno.OpenOptions#property_write)
+-   [append](../././~/Deno.OpenOptions#property_append)
+-   [create](../././~/Deno.OpenOptions#property_create)
+-   [createNew](../././~/Deno.OpenOptions#property_createnew)
+-   [mode](../././~/Deno.OpenOptions#property_mode)
+-   [read](../././~/Deno.OpenOptions#property_read)
+-   [truncate](../././~/Deno.OpenOptions#property_truncate)
+-   [write](../././~/Deno.OpenOptions#property_write)
 
 I
 
@@ -1341,14 +1334,14 @@ I
 
 A set of options which can define the permissions within a test or worker context at a highly specific level.
 
-*   [env](../././~/Deno.PermissionOptionsObject#property_env)
-*   [ffi](../././~/Deno.PermissionOptionsObject#property_ffi)
-*   [import](../././~/Deno.PermissionOptionsObject#property_import)
-*   [net](../././~/Deno.PermissionOptionsObject#property_net)
-*   [read](../././~/Deno.PermissionOptionsObject#property_read)
-*   [run](../././~/Deno.PermissionOptionsObject#property_run)
-*   [sys](../././~/Deno.PermissionOptionsObject#property_sys)
-*   [write](../././~/Deno.PermissionOptionsObject#property_write)
+-   [env](../././~/Deno.PermissionOptionsObject#property_env)
+-   [ffi](../././~/Deno.PermissionOptionsObject#property_ffi)
+-   [import](../././~/Deno.PermissionOptionsObject#property_import)
+-   [net](../././~/Deno.PermissionOptionsObject#property_net)
+-   [read](../././~/Deno.PermissionOptionsObject#property_read)
+-   [run](../././~/Deno.PermissionOptionsObject#property_run)
+-   [sys](../././~/Deno.PermissionOptionsObject#property_sys)
+-   [write](../././~/Deno.PermissionOptionsObject#property_write)
 
 I
 
@@ -1356,7 +1349,7 @@ I
 
 The interface which defines what event types are supported by [`PermissionStatus`](../././~/Deno.PermissionStatus) instances.
 
-*   [change](../././~/Deno.PermissionStatusEventMap#property_change)
+-   [change](../././~/Deno.PermissionStatusEventMap#property_change)
 
 I
 
@@ -1364,7 +1357,7 @@ I
 
 A non-null pointer, represented as an object at runtime. The object's prototype is `null` and cannot be changed. The object cannot be assigned to either and is thus entirely read-only.
 
-*   [brand](../././~/Deno.PointerObject#property_brand)
+-   [brand](../././~/Deno.PointerObject#property_brand)
 
 I
 
@@ -1372,8 +1365,8 @@ I
 
 No documentation available
 
-*   [alpnProtocols](../././~/Deno.QuicAcceptOptions#property_alpnprotocols)
-*   [zeroRtt](../././~/Deno.QuicAcceptOptions#property_zerortt)
+-   [alpnProtocols](../././~/Deno.QuicAcceptOptions#property_alpnprotocols)
+-   [zeroRtt](../././~/Deno.QuicAcceptOptions#property_zerortt)
 
 I
 
@@ -1381,8 +1374,8 @@ I
 
 No documentation available
 
-*   [readable](../././~/Deno.QuicBidirectionalStream#property_readable)
-*   [writable](../././~/Deno.QuicBidirectionalStream#property_writable)
+-   [readable](../././~/Deno.QuicBidirectionalStream#property_readable)
+-   [writable](../././~/Deno.QuicBidirectionalStream#property_writable)
 
 I
 
@@ -1390,8 +1383,8 @@ I
 
 No documentation available
 
-*   [closeCode](../././~/Deno.QuicCloseInfo#property_closecode)
-*   [reason](../././~/Deno.QuicCloseInfo#property_reason)
+-   [closeCode](../././~/Deno.QuicCloseInfo#property_closecode)
+-   [reason](../././~/Deno.QuicCloseInfo#property_reason)
 
 I
 
@@ -1399,20 +1392,20 @@ I
 
 No documentation available
 
-*   [close](../././~/Deno.QuicConn#method_close_0)
-*   [closed](../././~/Deno.QuicConn#property_closed)
-*   [createBidirectionalStream](../././~/Deno.QuicConn#method_createbidirectionalstream_0)
-*   [createUnidirectionalStream](../././~/Deno.QuicConn#method_createunidirectionalstream_0)
-*   [endpoint](../././~/Deno.QuicConn#property_endpoint)
-*   [handshake](../././~/Deno.QuicConn#property_handshake)
-*   [incomingBidirectionalStreams](../././~/Deno.QuicConn#property_incomingbidirectionalstreams)
-*   [incomingUnidirectionalStreams](../././~/Deno.QuicConn#property_incomingunidirectionalstreams)
-*   [maxDatagramSize](../././~/Deno.QuicConn#property_maxdatagramsize)
-*   [protocol](../././~/Deno.QuicConn#property_protocol)
-*   [readDatagram](../././~/Deno.QuicConn#method_readdatagram_0)
-*   [remoteAddr](../././~/Deno.QuicConn#property_remoteaddr)
-*   [sendDatagram](../././~/Deno.QuicConn#method_senddatagram_0)
-*   [serverName](../././~/Deno.QuicConn#property_servername)
+-   [close](../././~/Deno.QuicConn#method_close_0)
+-   [closed](../././~/Deno.QuicConn#property_closed)
+-   [createBidirectionalStream](../././~/Deno.QuicConn#method_createbidirectionalstream_0)
+-   [createUnidirectionalStream](../././~/Deno.QuicConn#method_createunidirectionalstream_0)
+-   [endpoint](../././~/Deno.QuicConn#property_endpoint)
+-   [handshake](../././~/Deno.QuicConn#property_handshake)
+-   [incomingBidirectionalStreams](../././~/Deno.QuicConn#property_incomingbidirectionalstreams)
+-   [incomingUnidirectionalStreams](../././~/Deno.QuicConn#property_incomingunidirectionalstreams)
+-   [maxDatagramSize](../././~/Deno.QuicConn#property_maxdatagramsize)
+-   [protocol](../././~/Deno.QuicConn#property_protocol)
+-   [readDatagram](../././~/Deno.QuicConn#method_readdatagram_0)
+-   [remoteAddr](../././~/Deno.QuicConn#property_remoteaddr)
+-   [sendDatagram](../././~/Deno.QuicConn#method_senddatagram_0)
+-   [serverName](../././~/Deno.QuicConn#property_servername)
 
 I
 
@@ -1420,8 +1413,8 @@ I
 
 No documentation available
 
-*   [hostname](../././~/Deno.QuicEndpointOptions#property_hostname)
-*   [port](../././~/Deno.QuicEndpointOptions#property_port)
+-   [hostname](../././~/Deno.QuicEndpointOptions#property_hostname)
+-   [port](../././~/Deno.QuicEndpointOptions#property_port)
 
 I
 
@@ -1429,12 +1422,12 @@ I
 
 An incoming connection for which the server has not yet begun its part of the handshake.
 
-*   [accept](../././~/Deno.QuicIncoming#method_accept_0)
-*   [ignore](../././~/Deno.QuicIncoming#method_ignore_0)
-*   [localIp](../././~/Deno.QuicIncoming#property_localip)
-*   [refuse](../././~/Deno.QuicIncoming#method_refuse_0)
-*   [remoteAddr](../././~/Deno.QuicIncoming#property_remoteaddr)
-*   [remoteAddressValidated](../././~/Deno.QuicIncoming#property_remoteaddressvalidated)
+-   [accept](../././~/Deno.QuicIncoming#method_accept_0)
+-   [ignore](../././~/Deno.QuicIncoming#method_ignore_0)
+-   [localIp](../././~/Deno.QuicIncoming#property_localip)
+-   [refuse](../././~/Deno.QuicIncoming#method_refuse_0)
+-   [remoteAddr](../././~/Deno.QuicIncoming#property_remoteaddr)
+-   [remoteAddressValidated](../././~/Deno.QuicIncoming#property_remoteaddressvalidated)
 
 I
 
@@ -1442,10 +1435,10 @@ I
 
 Specialized listener that accepts QUIC connections.
 
-*   [accept](../././~/Deno.QuicListener#method_accept_0)
-*   [endpoint](../././~/Deno.QuicListener#property_endpoint)
-*   [incoming](../././~/Deno.QuicListener#method_incoming_0)
-*   [stop](../././~/Deno.QuicListener#method_stop_0)
+-   [accept](../././~/Deno.QuicListener#method_accept_0)
+-   [endpoint](../././~/Deno.QuicListener#property_endpoint)
+-   [incoming](../././~/Deno.QuicListener#method_incoming_0)
+-   [stop](../././~/Deno.QuicListener#method_stop_0)
 
 I
 
@@ -1453,9 +1446,9 @@ I
 
 No documentation available
 
-*   [alpnProtocols](../././~/Deno.QuicListenOptions#property_alpnprotocols)
-*   [cert](../././~/Deno.QuicListenOptions#property_cert)
-*   [key](../././~/Deno.QuicListenOptions#property_key)
+-   [alpnProtocols](../././~/Deno.QuicListenOptions#property_alpnprotocols)
+-   [cert](../././~/Deno.QuicListenOptions#property_cert)
+-   [key](../././~/Deno.QuicListenOptions#property_key)
 
 I
 
@@ -1463,7 +1456,7 @@ I
 
 No documentation available
 
-*   [id](../././~/Deno.QuicReceiveStream#property_id)
+-   [id](../././~/Deno.QuicReceiveStream#property_id)
 
 I
 
@@ -1471,8 +1464,8 @@ I
 
 No documentation available
 
-*   [id](../././~/Deno.QuicSendStream#property_id)
-*   [sendOrder](../././~/Deno.QuicSendStream#property_sendorder)
+-   [id](../././~/Deno.QuicSendStream#property_id)
+-   [sendOrder](../././~/Deno.QuicSendStream#property_sendorder)
 
 I
 
@@ -1480,8 +1473,8 @@ I
 
 No documentation available
 
-*   [sendOrder](../././~/Deno.QuicSendStreamOptions#property_sendorder)
-*   [waitUntilAvailable](../././~/Deno.QuicSendStreamOptions#property_waituntilavailable)
+-   [sendOrder](../././~/Deno.QuicSendStreamOptions#property_sendorder)
+-   [waitUntilAvailable](../././~/Deno.QuicSendStreamOptions#property_waituntilavailable)
 
 I
 
@@ -1489,8 +1482,8 @@ I
 
 No documentation available
 
-*   [preferredAddressV4](../././~/Deno.QuicServerTransportOptions#property_preferredaddressv4)
-*   [preferredAddressV6](../././~/Deno.QuicServerTransportOptions#property_preferredaddressv6)
+-   [preferredAddressV4](../././~/Deno.QuicServerTransportOptions#property_preferredaddressv4)
+-   [preferredAddressV6](../././~/Deno.QuicServerTransportOptions#property_preferredaddressv6)
 
 I
 
@@ -1498,11 +1491,11 @@ I
 
 No documentation available
 
-*   [congestionControl](../././~/Deno.QuicTransportOptions#property_congestioncontrol)
-*   [keepAliveInterval](../././~/Deno.QuicTransportOptions#property_keepaliveinterval)
-*   [maxConcurrentBidirectionalStreams](../././~/Deno.QuicTransportOptions#property_maxconcurrentbidirectionalstreams)
-*   [maxConcurrentUnidirectionalStreams](../././~/Deno.QuicTransportOptions#property_maxconcurrentunidirectionalstreams)
-*   [maxIdleTimeout](../././~/Deno.QuicTransportOptions#property_maxidletimeout)
+-   [congestionControl](../././~/Deno.QuicTransportOptions#property_congestioncontrol)
+-   [keepAliveInterval](../././~/Deno.QuicTransportOptions#property_keepaliveinterval)
+-   [maxConcurrentBidirectionalStreams](../././~/Deno.QuicTransportOptions#property_maxconcurrentbidirectionalstreams)
+-   [maxConcurrentUnidirectionalStreams](../././~/Deno.QuicTransportOptions#property_maxconcurrentunidirectionalstreams)
+-   [maxIdleTimeout](../././~/Deno.QuicTransportOptions#property_maxidletimeout)
 
 I
 
@@ -1510,7 +1503,7 @@ I
 
 Options which can be set when using [`Deno.readFile`](../././~/Deno.readFile) or [`Deno.readFileSync`](../././~/Deno.readFileSync).
 
-*   [signal](../././~/Deno.ReadFileOptions#property_signal)
+-   [signal](../././~/Deno.ReadFileOptions#property_signal)
 
 I
 
@@ -1518,8 +1511,8 @@ I
 
 The permission descriptor for the `allow-read` and `deny-read` permissions, which controls access to reading resources from the local host. The option `path` allows scoping the permission to a specific path (and if the path is a directory any sub paths).
 
-*   [name](../././~/Deno.ReadPermissionDescriptor#property_name)
-*   [path](../././~/Deno.ReadPermissionDescriptor#property_path)
+-   [name](../././~/Deno.ReadPermissionDescriptor#property_name)
+-   [path](../././~/Deno.ReadPermissionDescriptor#property_path)
 
 I
 
@@ -1527,7 +1520,7 @@ I
 
 Options which can be set when using [`Deno.remove`](../././~/Deno.remove) and [`Deno.removeSync`](../././~/Deno.removeSync).
 
-*   [recursive](../././~/Deno.RemoveOptions#property_recursive)
+-   [recursive](../././~/Deno.RemoveOptions#property_recursive)
 
 I
 
@@ -1535,8 +1528,8 @@ I
 
 Options which can be set when using [`Deno.resolveDns`](../././~/Deno.resolveDns).
 
-*   [nameServer](../././~/Deno.ResolveDnsOptions#property_nameserver)
-*   [signal](../././~/Deno.ResolveDnsOptions#property_signal)
+-   [nameServer](../././~/Deno.ResolveDnsOptions#property_nameserver)
+-   [signal](../././~/Deno.ResolveDnsOptions#property_signal)
 
 I
 
@@ -1544,8 +1537,8 @@ I
 
 The permission descriptor for the `allow-run` and `deny-run` permissions, which controls access to what sub-processes can be executed by Deno. The option `command` allows scoping the permission to a specific executable.
 
-*   [command](../././~/Deno.RunPermissionDescriptor#property_command)
-*   [name](../././~/Deno.RunPermissionDescriptor#property_name)
+-   [command](../././~/Deno.RunPermissionDescriptor#property_command)
+-   [name](../././~/Deno.RunPermissionDescriptor#property_name)
 
 I
 
@@ -1553,8 +1546,8 @@ I
 
 Interface that module run with `deno serve` subcommand must conform to.
 
-*   [fetch](../././~/Deno.ServeDefaultExport#property_fetch)
-*   [onListen](../././~/Deno.ServeDefaultExport#property_onlisten)
+-   [fetch](../././~/Deno.ServeDefaultExport#property_fetch)
+-   [onListen](../././~/Deno.ServeDefaultExport#property_onlisten)
 
 I
 
@@ -1562,8 +1555,8 @@ I
 
 Additional information for an HTTP request and its connection.
 
-*   [completed](../././~/Deno.ServeHandlerInfo#property_completed)
-*   [remoteAddr](../././~/Deno.ServeHandlerInfo#property_remoteaddr)
+-   [completed](../././~/Deno.ServeHandlerInfo#property_completed)
+-   [remoteAddr](../././~/Deno.ServeHandlerInfo#property_remoteaddr)
 
 I
 
@@ -1571,7 +1564,7 @@ I
 
 No documentation available
 
-*   [handler](../././~/Deno.ServeInit#property_handler)
+-   [handler](../././~/Deno.ServeInit#property_handler)
 
 I
 
@@ -1579,9 +1572,9 @@ I
 
 Options which can be set when calling [`Deno.serve`](../././~/Deno.serve).
 
-*   [onError](../././~/Deno.ServeOptions#property_onerror)
-*   [onListen](../././~/Deno.ServeOptions#property_onlisten)
-*   [signal](../././~/Deno.ServeOptions#property_signal)
+-   [onError](../././~/Deno.ServeOptions#property_onerror)
+-   [onListen](../././~/Deno.ServeOptions#property_onlisten)
+-   [signal](../././~/Deno.ServeOptions#property_signal)
 
 I
 
@@ -1589,11 +1582,11 @@ I
 
 Options that can be passed to `Deno.serve` to create a server listening on a TCP port.
 
-*   [hostname](../././~/Deno.ServeTcpOptions#property_hostname)
-*   [port](../././~/Deno.ServeTcpOptions#property_port)
-*   [reusePort](../././~/Deno.ServeTcpOptions#property_reuseport)
-*   [tcpBacklog](../././~/Deno.ServeTcpOptions#property_tcpbacklog)
-*   [transport](../././~/Deno.ServeTcpOptions#property_transport)
+-   [hostname](../././~/Deno.ServeTcpOptions#property_hostname)
+-   [port](../././~/Deno.ServeTcpOptions#property_port)
+-   [reusePort](../././~/Deno.ServeTcpOptions#property_reuseport)
+-   [tcpBacklog](../././~/Deno.ServeTcpOptions#property_tcpbacklog)
+-   [transport](../././~/Deno.ServeTcpOptions#property_transport)
 
 I
 
@@ -1601,8 +1594,8 @@ I
 
 Options that can be passed to `Deno.serve` to create a server listening on a Unix domain socket.
 
-*   [path](../././~/Deno.ServeUnixOptions#property_path)
-*   [transport](../././~/Deno.ServeUnixOptions#property_transport)
+-   [path](../././~/Deno.ServeUnixOptions#property_path)
+-   [transport](../././~/Deno.ServeUnixOptions#property_transport)
 
 I
 
@@ -1610,9 +1603,9 @@ I
 
 Options that can be passed to `Deno.serve` to create a server listening on a VSOCK socket.
 
-*   [cid](../././~/Deno.ServeVsockOptions#property_cid)
-*   [port](../././~/Deno.ServeVsockOptions#property_port)
-*   [transport](../././~/Deno.ServeVsockOptions#property_transport)
+-   [cid](../././~/Deno.ServeVsockOptions#property_cid)
+-   [port](../././~/Deno.ServeVsockOptions#property_port)
+-   [transport](../././~/Deno.ServeVsockOptions#property_transport)
 
 I
 
@@ -1620,7 +1613,7 @@ I
 
 No documentation available
 
-*   [cbreak](../././~/Deno.SetRawOptions#property_cbreak)
+-   [cbreak](../././~/Deno.SetRawOptions#property_cbreak)
 
 I
 
@@ -1628,13 +1621,13 @@ I
 
 If [`Deno.resolveDns`](../././~/Deno.resolveDns) is called with `"SOA"` record type specified, it will return an array of objects with this interface.
 
-*   [expire](../././~/Deno.SoaRecord#property_expire)
-*   [minimum](../././~/Deno.SoaRecord#property_minimum)
-*   [mname](../././~/Deno.SoaRecord#property_mname)
-*   [refresh](../././~/Deno.SoaRecord#property_refresh)
-*   [retry](../././~/Deno.SoaRecord#property_retry)
-*   [rname](../././~/Deno.SoaRecord#property_rname)
-*   [serial](../././~/Deno.SoaRecord#property_serial)
+-   [expire](../././~/Deno.SoaRecord#property_expire)
+-   [minimum](../././~/Deno.SoaRecord#property_minimum)
+-   [mname](../././~/Deno.SoaRecord#property_mname)
+-   [refresh](../././~/Deno.SoaRecord#property_refresh)
+-   [retry](../././~/Deno.SoaRecord#property_retry)
+-   [rname](../././~/Deno.SoaRecord#property_rname)
+-   [serial](../././~/Deno.SoaRecord#property_serial)
 
 I
 
@@ -1642,10 +1635,10 @@ I
 
 If [`Deno.resolveDns`](../././~/Deno.resolveDns) is called with `"SRV"` record type specified, it will return an array of objects with this interface.
 
-*   [port](../././~/Deno.SrvRecord#property_port)
-*   [priority](../././~/Deno.SrvRecord#property_priority)
-*   [target](../././~/Deno.SrvRecord#property_target)
-*   [weight](../././~/Deno.SrvRecord#property_weight)
+-   [port](../././~/Deno.SrvRecord#property_port)
+-   [priority](../././~/Deno.SrvRecord#property_priority)
+-   [target](../././~/Deno.SrvRecord#property_target)
+-   [weight](../././~/Deno.SrvRecord#property_weight)
 
 I
 
@@ -1653,10 +1646,10 @@ I
 
 No documentation available
 
-*   [alpnProtocols](../././~/Deno.StartTlsOptions#property_alpnprotocols)
-*   [caCerts](../././~/Deno.StartTlsOptions#property_cacerts)
-*   [hostname](../././~/Deno.StartTlsOptions#property_hostname)
-*   [unsafelyDisableHostnameVerification](../././~/Deno.StartTlsOptions#property_unsafelydisablehostnameverification)
+-   [alpnProtocols](../././~/Deno.StartTlsOptions#property_alpnprotocols)
+-   [caCerts](../././~/Deno.StartTlsOptions#property_cacerts)
+-   [hostname](../././~/Deno.StartTlsOptions#property_hostname)
+-   [unsafelyDisableHostnameVerification](../././~/Deno.StartTlsOptions#property_unsafelydisablehostnameverification)
 
 I
 
@@ -1664,10 +1657,10 @@ I
 
 The interface for stdout and stderr streams for child process returned from `Deno.Command.spawn`.
 
-*   [arrayBuffer](../././~/Deno.SubprocessReadableStream#method_arraybuffer_0)
-*   [bytes](../././~/Deno.SubprocessReadableStream#method_bytes_0)
-*   [json](../././~/Deno.SubprocessReadableStream#method_json_0)
-*   [text](../././~/Deno.SubprocessReadableStream#method_text_0)
+-   [arrayBuffer](../././~/Deno.SubprocessReadableStream#method_arraybuffer_0)
+-   [bytes](../././~/Deno.SubprocessReadableStream#method_bytes_0)
+-   [json](../././~/Deno.SubprocessReadableStream#method_json_0)
+-   [text](../././~/Deno.SubprocessReadableStream#method_text_0)
 
 I
 
@@ -1675,7 +1668,7 @@ I
 
 Options that can be used with [`symlink`](../././~/Deno.symlink) and [`symlinkSync`](../././~/Deno.symlinkSync).
 
-*   [type](../././~/Deno.SymlinkOptions#property_type)
+-   [type](../././~/Deno.SymlinkOptions#property_type)
 
 I
 
@@ -1683,8 +1676,8 @@ I
 
 The permission descriptor for the `allow-sys` and `deny-sys` permissions, which controls access to sensitive host system information, which malicious code might attempt to exploit. The option `kind` allows scoping the permission to a specific piece of information.
 
-*   [kind](../././~/Deno.SysPermissionDescriptor#property_kind)
-*   [name](../././~/Deno.SysPermissionDescriptor#property_name)
+-   [kind](../././~/Deno.SysPermissionDescriptor#property_kind)
+-   [name](../././~/Deno.SysPermissionDescriptor#property_name)
 
 I
 
@@ -1692,13 +1685,13 @@ I
 
 Information returned from a call to [`Deno.systemMemoryInfo`](../././~/Deno.systemMemoryInfo).
 
-*   [available](../././~/Deno.SystemMemoryInfo#property_available)
-*   [buffers](../././~/Deno.SystemMemoryInfo#property_buffers)
-*   [cached](../././~/Deno.SystemMemoryInfo#property_cached)
-*   [free](../././~/Deno.SystemMemoryInfo#property_free)
-*   [swapFree](../././~/Deno.SystemMemoryInfo#property_swapfree)
-*   [swapTotal](../././~/Deno.SystemMemoryInfo#property_swaptotal)
-*   [total](../././~/Deno.SystemMemoryInfo#property_total)
+-   [available](../././~/Deno.SystemMemoryInfo#property_available)
+-   [buffers](../././~/Deno.SystemMemoryInfo#property_buffers)
+-   [cached](../././~/Deno.SystemMemoryInfo#property_cached)
+-   [free](../././~/Deno.SystemMemoryInfo#property_free)
+-   [swapFree](../././~/Deno.SystemMemoryInfo#property_swapfree)
+-   [swapTotal](../././~/Deno.SystemMemoryInfo#property_swaptotal)
+-   [total](../././~/Deno.SystemMemoryInfo#property_total)
 
 I
 
@@ -1706,8 +1699,8 @@ I
 
 No documentation available
 
-*   [setKeepAlive](../././~/Deno.TcpConn#method_setkeepalive_0)
-*   [setNoDelay](../././~/Deno.TcpConn#method_setnodelay_0)
+-   [setKeepAlive](../././~/Deno.TcpConn#method_setkeepalive_0)
+-   [setNoDelay](../././~/Deno.TcpConn#method_setnodelay_0)
 
 I
 
@@ -1715,7 +1708,7 @@ I
 
 No documentation available
 
-*   [reusePort](../././~/Deno.TcpListenOptions#property_reuseport)
+-   [reusePort](../././~/Deno.TcpListenOptions#property_reuseport)
 
 I
 
@@ -1723,10 +1716,10 @@ I
 
 Context that is passed to a testing function, which can be used to either gain information about the current test, or register additional test steps within the current test.
 
-*   [name](../././~/Deno.TestContext#property_name)
-*   [origin](../././~/Deno.TestContext#property_origin)
-*   [parent](../././~/Deno.TestContext#property_parent)
-*   [step](../././~/Deno.TestContext#method_step_0)
+-   [name](../././~/Deno.TestContext#property_name)
+-   [origin](../././~/Deno.TestContext#property_origin)
+-   [parent](../././~/Deno.TestContext#property_parent)
+-   [step](../././~/Deno.TestContext#method_step_0)
 
 I
 
@@ -1734,14 +1727,14 @@ I
 
 No documentation available
 
-*   [fn](../././~/Deno.TestDefinition#property_fn)
-*   [ignore](../././~/Deno.TestDefinition#property_ignore)
-*   [name](../././~/Deno.TestDefinition#property_name)
-*   [only](../././~/Deno.TestDefinition#property_only)
-*   [permissions](../././~/Deno.TestDefinition#property_permissions)
-*   [sanitizeExit](../././~/Deno.TestDefinition#property_sanitizeexit)
-*   [sanitizeOps](../././~/Deno.TestDefinition#property_sanitizeops)
-*   [sanitizeResources](../././~/Deno.TestDefinition#property_sanitizeresources)
+-   [fn](../././~/Deno.TestDefinition#property_fn)
+-   [ignore](../././~/Deno.TestDefinition#property_ignore)
+-   [name](../././~/Deno.TestDefinition#property_name)
+-   [only](../././~/Deno.TestDefinition#property_only)
+-   [permissions](../././~/Deno.TestDefinition#property_permissions)
+-   [sanitizeExit](../././~/Deno.TestDefinition#property_sanitizeexit)
+-   [sanitizeOps](../././~/Deno.TestDefinition#property_sanitizeops)
+-   [sanitizeResources](../././~/Deno.TestDefinition#property_sanitizeresources)
 
 I
 
@@ -1749,12 +1742,12 @@ I
 
 No documentation available
 
-*   [fn](../././~/Deno.TestStepDefinition#property_fn)
-*   [ignore](../././~/Deno.TestStepDefinition#property_ignore)
-*   [name](../././~/Deno.TestStepDefinition#property_name)
-*   [sanitizeExit](../././~/Deno.TestStepDefinition#property_sanitizeexit)
-*   [sanitizeOps](../././~/Deno.TestStepDefinition#property_sanitizeops)
-*   [sanitizeResources](../././~/Deno.TestStepDefinition#property_sanitizeresources)
+-   [fn](../././~/Deno.TestStepDefinition#property_fn)
+-   [ignore](../././~/Deno.TestStepDefinition#property_ignore)
+-   [name](../././~/Deno.TestStepDefinition#property_name)
+-   [sanitizeExit](../././~/Deno.TestStepDefinition#property_sanitizeexit)
+-   [sanitizeOps](../././~/Deno.TestStepDefinition#property_sanitizeops)
+-   [sanitizeResources](../././~/Deno.TestStepDefinition#property_sanitizeresources)
 
 I
 
@@ -1762,9 +1755,9 @@ I
 
 Provides certified key material from strings. The key material is provided in `PEM`\-format (Privacy Enhanced Mail, [https://www.rfc-editor.org/rfc/rfc1422](https://www.rfc-editor.org/rfc/rfc1422)) which can be identified by having `-----BEGIN-----` and `-----END-----` markers at the beginning and end of the strings. This type of key is not compatible with `DER`\-format keys which are binary.
 
-*   [cert](../././~/Deno.TlsCertifiedKeyPem#property_cert)
-*   [key](../././~/Deno.TlsCertifiedKeyPem#property_key)
-*   [keyFormat](../././~/Deno.TlsCertifiedKeyPem#property_keyformat)
+-   [cert](../././~/Deno.TlsCertifiedKeyPem#property_cert)
+-   [key](../././~/Deno.TlsCertifiedKeyPem#property_key)
+-   [keyFormat](../././~/Deno.TlsCertifiedKeyPem#property_keyformat)
 
 I
 
@@ -1772,7 +1765,7 @@ I
 
 No documentation available
 
-*   [handshake](../././~/Deno.TlsConn#method_handshake_0)
+-   [handshake](../././~/Deno.TlsConn#method_handshake_0)
 
 I
 
@@ -1780,7 +1773,7 @@ I
 
 No documentation available
 
-*   [alpnProtocol](../././~/Deno.TlsHandshakeInfo#property_alpnprotocol)
+-   [alpnProtocol](../././~/Deno.TlsHandshakeInfo#property_alpnprotocol)
 
 I
 
@@ -1788,8 +1781,8 @@ I
 
 Unstable options which can be set when opening a datagram listener via [`Deno.listenDatagram`](../././~/Deno.listenDatagram).
 
-*   [loopback](../././~/Deno.UdpListenOptions#property_loopback)
-*   [reuseAddress](../././~/Deno.UdpListenOptions#property_reuseaddress)
+-   [loopback](../././~/Deno.UdpListenOptions#property_loopback)
+-   [reuseAddress](../././~/Deno.UdpListenOptions#property_reuseaddress)
 
 I
 
@@ -1797,8 +1790,8 @@ I
 
 No documentation available
 
-*   [path](../././~/Deno.UnixAddr#property_path)
-*   [transport](../././~/Deno.UnixAddr#property_transport)
+-   [path](../././~/Deno.UnixAddr#property_path)
+-   [transport](../././~/Deno.UnixAddr#property_transport)
 
 I
 
@@ -1812,8 +1805,8 @@ I
 
 No documentation available
 
-*   [path](../././~/Deno.UnixConnectOptions#property_path)
-*   [transport](../././~/Deno.UnixConnectOptions#property_transport)
+-   [path](../././~/Deno.UnixConnectOptions#property_path)
+-   [transport](../././~/Deno.UnixConnectOptions#property_transport)
 
 I
 
@@ -1821,7 +1814,7 @@ I
 
 Options which can be set when opening a Unix listener via [`Deno.listen`](../././~/Deno.listen) or [`Deno.listenDatagram`](../././~/Deno.listenDatagram).
 
-*   [path](../././~/Deno.UnixListenOptions#property_path)
+-   [path](../././~/Deno.UnixListenOptions#property_path)
 
 I
 
@@ -1829,8 +1822,8 @@ I
 
 Definition of a unsafe callback function.
 
-*   [parameters](../././~/Deno.UnsafeCallbackDefinition#property_parameters)
-*   [result](../././~/Deno.UnsafeCallbackDefinition#property_result)
+-   [parameters](../././~/Deno.UnsafeCallbackDefinition#property_parameters)
+-   [result](../././~/Deno.UnsafeCallbackDefinition#property_result)
 
 I
 
@@ -1838,8 +1831,8 @@ I
 
 Options which can be set when performing a [`Deno.upgradeWebSocket`](../././~/Deno.upgradeWebSocket) upgrade of a `Request`
 
-*   [idleTimeout](../././~/Deno.UpgradeWebSocketOptions#property_idletimeout)
-*   [protocol](../././~/Deno.UpgradeWebSocketOptions#property_protocol)
+-   [idleTimeout](../././~/Deno.UpgradeWebSocketOptions#property_idletimeout)
+-   [protocol](../././~/Deno.UpgradeWebSocketOptions#property_protocol)
 
 I
 
@@ -1847,9 +1840,9 @@ I
 
 No documentation available
 
-*   [cid](../././~/Deno.VsockAddr#property_cid)
-*   [port](../././~/Deno.VsockAddr#property_port)
-*   [transport](../././~/Deno.VsockAddr#property_transport)
+-   [cid](../././~/Deno.VsockAddr#property_cid)
+-   [port](../././~/Deno.VsockAddr#property_port)
+-   [transport](../././~/Deno.VsockAddr#property_transport)
 
 I
 
@@ -1863,9 +1856,9 @@ I
 
 No documentation available
 
-*   [cid](../././~/Deno.VsockConnectOptions#property_cid)
-*   [port](../././~/Deno.VsockConnectOptions#property_port)
-*   [transport](../././~/Deno.VsockConnectOptions#property_transport)
+-   [cid](../././~/Deno.VsockConnectOptions#property_cid)
+-   [port](../././~/Deno.VsockConnectOptions#property_port)
+-   [transport](../././~/Deno.VsockConnectOptions#property_transport)
 
 I
 
@@ -1873,8 +1866,8 @@ I
 
 Options which can be set when opening a VSOCK listener via [`Deno.listen`](../././~/Deno.listen).
 
-*   [cid](../././~/Deno.VsockListenOptions#property_cid)
-*   [port](../././~/Deno.VsockListenOptions#property_port)
+-   [cid](../././~/Deno.VsockListenOptions#property_cid)
+-   [port](../././~/Deno.VsockListenOptions#property_port)
 
 I
 
@@ -1882,8 +1875,8 @@ I
 
 The object that is returned from a [`Deno.upgradeWebSocket`](../././~/Deno.upgradeWebSocket) request.
 
-*   [response](../././~/Deno.WebSocketUpgrade#property_response)
-*   [socket](../././~/Deno.WebSocketUpgrade#property_socket)
+-   [response](../././~/Deno.WebSocketUpgrade#property_response)
+-   [socket](../././~/Deno.WebSocketUpgrade#property_socket)
 
 I
 
@@ -1891,11 +1884,11 @@ I
 
 Options for writing to a file.
 
-*   [append](../././~/Deno.WriteFileOptions#property_append)
-*   [create](../././~/Deno.WriteFileOptions#property_create)
-*   [createNew](../././~/Deno.WriteFileOptions#property_createnew)
-*   [mode](../././~/Deno.WriteFileOptions#property_mode)
-*   [signal](../././~/Deno.WriteFileOptions#property_signal)
+-   [append](../././~/Deno.WriteFileOptions#property_append)
+-   [create](../././~/Deno.WriteFileOptions#property_create)
+-   [createNew](../././~/Deno.WriteFileOptions#property_createnew)
+-   [mode](../././~/Deno.WriteFileOptions#property_mode)
+-   [signal](../././~/Deno.WriteFileOptions#property_signal)
 
 I
 
@@ -1903,10 +1896,8 @@ I
 
 The permission descriptor for the `allow-write` and `deny-write` permissions, which controls access to writing to resources from the local host. The option `path` allow scoping the permission to a specific path (and if the path is a directory any sub paths).
 
-*   [name](../././~/Deno.WritePermissionDescriptor#property_name)
-*   [path](../././~/Deno.WritePermissionDescriptor#property_path)
-
-### Namespaces [#](#Namespaces)
+-   [name](../././~/Deno.WritePermissionDescriptor#property_name)
+-   [path](../././~/Deno.WritePermissionDescriptor#property_path)
 
 f
 
@@ -1945,8 +1936,6 @@ N
 [Deno.webgpu](../././~/Deno.webgpu "Deno.webgpu")
 
 The webgpu namespace provides additional APIs that the WebGPU specification does not specify.
-
-### Type Aliases [#](<#Type Aliases>)
 
 T
 
@@ -2254,8 +2243,6 @@ T
 
 Specialized listener that accepts VSOCK connections.
 
-### Variables [#](#Variables)
-
 v
 
 [Deno.args](../././~/Deno.args "Deno.args")
@@ -2274,12 +2261,12 @@ v
 
 Information related to the build of the current Deno runtime.
 
-*   [arch](../././~/Deno.build#property_arch)
-*   [env](../././~/Deno.build#property_env)
-*   [os](../././~/Deno.build#property_os)
-*   [standalone](../././~/Deno.build#property_standalone)
-*   [target](../././~/Deno.build#property_target)
-*   [vendor](../././~/Deno.build#property_vendor)
+-   [arch](../././~/Deno.build#property_arch)
+-   [env](../././~/Deno.build#property_env)
+-   [os](../././~/Deno.build#property_os)
+-   [standalone](../././~/Deno.build#property_standalone)
+-   [target](../././~/Deno.build#property_target)
+-   [vendor](../././~/Deno.build#property_vendor)
 
 v
 
@@ -2329,11 +2316,11 @@ v
 
 A reference to `stderr` which can be used to write directly to `stderr`. It implements the Deno specific [`Writer`](https://jsr.io/@std/io/doc/types/~/Writer), [`WriterSync`](https://jsr.io/@std/io/doc/types/~/WriterSync), and [`Closer`](https://jsr.io/@std/io/doc/types/~/Closer) interfaces as well as provides a `WritableStream` interface.
 
-*   [close](../././~/Deno.stderr#method_close_0)
-*   [isTerminal](../././~/Deno.stderr#method_isterminal_0)
-*   [writable](../././~/Deno.stderr#property_writable)
-*   [write](../././~/Deno.stderr#method_write_0)
-*   [writeSync](../././~/Deno.stderr#method_writesync_0)
+-   [close](../././~/Deno.stderr#method_close_0)
+-   [isTerminal](../././~/Deno.stderr#method_isterminal_0)
+-   [writable](../././~/Deno.stderr#property_writable)
+-   [write](../././~/Deno.stderr#method_write_0)
+-   [writeSync](../././~/Deno.stderr#method_writesync_0)
 
 v
 
@@ -2341,12 +2328,12 @@ v
 
 A reference to `stdin` which can be used to read directly from `stdin`.
 
-*   [close](../././~/Deno.stdin#method_close_0)
-*   [isTerminal](../././~/Deno.stdin#method_isterminal_0)
-*   [read](../././~/Deno.stdin#method_read_0)
-*   [readSync](../././~/Deno.stdin#method_readsync_0)
-*   [readable](../././~/Deno.stdin#property_readable)
-*   [setRaw](../././~/Deno.stdin#method_setraw_0)
+-   [close](../././~/Deno.stdin#method_close_0)
+-   [isTerminal](../././~/Deno.stdin#method_isterminal_0)
+-   [read](../././~/Deno.stdin#method_read_0)
+-   [readSync](../././~/Deno.stdin#method_readsync_0)
+-   [readable](../././~/Deno.stdin#property_readable)
+-   [setRaw](../././~/Deno.stdin#method_setraw_0)
 
 v
 
@@ -2354,11 +2341,11 @@ v
 
 A reference to `stdout` which can be used to write directly to `stdout`. It implements the Deno specific [`Writer`](https://jsr.io/@std/io/doc/types/~/Writer), [`WriterSync`](https://jsr.io/@std/io/doc/types/~/WriterSync), and [`Closer`](https://jsr.io/@std/io/doc/types/~/Closer) interfaces as well as provides a `WritableStream` interface.
 
-*   [close](../././~/Deno.stdout#method_close_0)
-*   [isTerminal](../././~/Deno.stdout#method_isterminal_0)
-*   [writable](../././~/Deno.stdout#property_writable)
-*   [write](../././~/Deno.stdout#method_write_0)
-*   [writeSync](../././~/Deno.stdout#method_writesync_0)
+-   [close](../././~/Deno.stdout#method_close_0)
+-   [isTerminal](../././~/Deno.stdout#method_isterminal_0)
+-   [writable](../././~/Deno.stdout#property_writable)
+-   [write](../././~/Deno.stdout#method_write_0)
+-   [writeSync](../././~/Deno.stdout#method_writesync_0)
 
 v
 
@@ -2372,6 +2359,6 @@ v
 
 Version information related to the current Deno CLI runtime environment.
 
-*   [deno](../././~/Deno.version#property_deno)
-*   [typescript](../././~/Deno.version#property_typescript)
-*   [v8](../././~/Deno.version#property_v8)
+-   [deno](../././~/Deno.version#property_deno)
+-   [typescript](../././~/Deno.version#property_typescript)
+-   [v8](../././~/Deno.version#property_v8)

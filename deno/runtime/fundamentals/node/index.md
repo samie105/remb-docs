@@ -5,51 +5,52 @@ canonical_url: "https://docs.deno.com/runtime/fundamentals/node/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:47:16.077Z"
-content_hash: "5cc3e00ec277a39b3f31ae6c458bce0134de454b814733b8357dc6cb38d7bc1c"
+last_crawled_at: "2026-04-27T17:21:12.703Z"
+content_hash: "b0c165d9f58e1933d4a8d166bdad949395616d7e075241505fc94f8d35075d89"
 menu_path: ["Node and npm Compatibility"]
 section_path: []
+content_language: "en"
 ---
-On this page
+**On this page**
 
-*   [Quick start](#quick-start)
-    *   [Import an npm package](#import-an-npm-package)
-    *   [Execute CommonJS](#execute-commonjs)
-    *   [Use a Node API](#use-a-node-api)
-*   [Using Node's built-in modules](#using-node's-built-in-modules)
-*   [Using npm packages](#using-npm-packages)
-    *   [First-class package.json support](#first-class-package.json-support)
-*   [Node.js global objects](#node.js-global-objects)
-*   [CommonJS support](#commonjs-support)
-    *   [Use .cjs extension](#use-.cjs-extension)
-    *   [package.json type option](#package.json-type-option)
-    *   [Always detecting if a file might be CommonJS](#always-detecting-if-a-file-might-be-commonjs)
-    *   [Create require() manually](#create-require\(\)-manually)
-    *   [require(ESM)](#require\(esm\))
-    *   [Import CommonJS modules](#import-commonjs-modules)
-    *   [Hints and suggestions](#hints-and-suggestions)
-*   [Conditional exports](#conditional-exports)
-*   [Importing types](#importing-types)
-    *   [Module resolution](#module-resolution)
-*   [Including Node types](#including-node-types)
-*   [Run npm binaries](#run-npm-binaries)
-*   [node\_modules](#node_modules)
-    *   [Choosing a node\_modules mode](#choosing-a-node_modules-mode)
-    *   [Default Deno dependencies behavior](#default-deno-dependencies-behavior)
-    *   [Automatic node\_modules creation](#automatic-node_modules-creation)
-    *   [Manual node\_modules creation](#manual-node_modules-creation)
-    *   [node\_modules flag](#node_modules-flag)
-*   [Node-API addons](#node-api-addons)
-*   [Migrating from Node to Deno](#migrating-from-node-to-deno)
-    *   [Running scripts](#running-scripts)
-    *   [Optional improvements](#optional-improvements)
-*   [Private registries](#private-registries)
-    *   [What are private registries?](#what-are-private-registries%3F)
-    *   [How to use private registries with Deno](#how-to-use-private-registries-with-deno)
-*   [Node to Deno Cheatsheet](#node-to-deno-cheatsheet)
+-   [Quick start](#quick-start)
+    -   [Import an npm package](#import-an-npm-package)
+    -   [Execute CommonJS](#execute-commonjs)
+    -   [Use a Node API](#use-a-node-api)
+-   [Using Node's built-in modules](#using-node's-built-in-modules)
+-   [Using npm packages](#using-npm-packages)
+    -   [First-class package.json support](#first-class-package.json-support)
+-   [Node.js global objects](#node.js-global-objects)
+-   [CommonJS support](#commonjs-support)
+    -   [Use .cjs extension](#use-.cjs-extension)
+    -   [package.json type option](#package.json-type-option)
+    -   [Always detecting if a file might be CommonJS](#always-detecting-if-a-file-might-be-commonjs)
+    -   [Create require() manually](#create-require\(\)-manually)
+    -   [require(ESM)](#require\(esm\))
+    -   [Import CommonJS modules](#import-commonjs-modules)
+    -   [Hints and suggestions](#hints-and-suggestions)
+-   [Conditional exports](#conditional-exports)
+-   [Importing types](#importing-types)
+    -   [Module resolution](#module-resolution)
+-   [Including Node types](#including-node-types)
+-   [Run npm binaries](#run-npm-binaries)
+-   [node\_modules](#node_modules)
+    -   [Choosing a node\_modules mode](#choosing-a-node_modules-mode)
+    -   [Default Deno dependencies behavior](#default-deno-dependencies-behavior)
+    -   [Automatic node\_modules creation](#automatic-node_modules-creation)
+    -   [Manual node\_modules creation](#manual-node_modules-creation)
+    -   [node\_modules flag](#node_modules-flag)
+-   [Node-API addons](#node-api-addons)
+-   [Migrating from Node to Deno](#migrating-from-node-to-deno)
+    -   [Running scripts](#running-scripts)
+    -   [Optional improvements](#optional-improvements)
+-   [Private registries](#private-registries)
+    -   [What are private registries?](#what-are-private-registries%3F)
+    -   [How to use private registries with Deno](#how-to-use-private-registries-with-deno)
+-   [Node to Deno Cheatsheet](#node-to-deno-cheatsheet)
 
-*   **Deno is Node-compatible**. Most Node projects will run in Deno with little or no change!
-*   **Deno supports npm packages**. Just use the `npm:` specifier in the import, and Deno takes care of the rest.
+-   **Deno is Node-compatible**. Most Node projects will run in Deno with little or no change!
+-   **Deno supports npm packages**. Just use the `npm:` specifier in the import, and Deno takes care of the rest.
 
 For example, here's how you'd import Hono from npm in a Deno project:
 
@@ -166,9 +167,9 @@ No `npm install` is necessary before the `deno run` command and no `node_modules
 
 Deno understands `package.json` in your project. You can:
 
-*   Declare dependencies there (alongside or instead of inline `npm:` specifiers).
-*   Use scripts from `package.json` via `deno task` (for example, `deno task start`).
-*   Rely on `package.json` fields like `type` when resolving modules (see CommonJS support below).
+-   Declare dependencies there (alongside or instead of inline `npm:` specifiers).
+-   Use scripts from `package.json` via `deno task` (for example, `deno task start`).
+-   Rely on `package.json` fields like `type` when resolving modules (see CommonJS support below).
 
 By default, dependencies are stored in Deno's global cache without creating a local `node_modules` directory. If your tools expect `node_modules`, opt-in using `nodeModulesDir` in `deno.json`.
 
@@ -197,7 +198,7 @@ In Node.js, there are a number of [global objects](https://nodejs.org/api/global
 
 Here are a few globals that you might encounter in the wild and how to use them in Deno:
 
-*   `process` - Deno provides the `process` global, which is by far the most popular global used in popular npm packages. It is available to all code. However, Deno will guide you towards importing it explicitly from `node:process` module by providing lint warnings and quick-fixes:
+-   `process` - Deno provides the `process` global, which is by far the most popular global used in popular npm packages. It is available to all code. However, Deno will guide you towards importing it explicitly from `node:process` module by providing lint warnings and quick-fixes:
 
 process.js
 
@@ -222,9 +223,9 @@ Found 1 problem (1 fixable via --fix)
 Checked 1 file
 ```
 
-*   `require()` - see [CommonJS support](#commonjs-support)
+-   `require()` - see [CommonJS support](#commonjs-support)
     
-*   `Buffer` - to use `Buffer` API it needs to be explicitly imported from the `node:buffer` module:
+-   `Buffer` - to use `Buffer` API it needs to be explicitly imported from the `node:buffer` module:
     
 
 buffer.js
@@ -250,9 +251,9 @@ function writeToBuffer(data: string, encoding: NodeJS.BufferEncoding): Buffer {
 
 Prefer using [`Uint8Array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array) or other [`TypedArray`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray) subclasses instead.
 
-*   `__filename` - use `import.meta.filename` instead.
+-   `__filename` - use `import.meta.filename` instead.
     
-*   `__dirname` - use `import.meta.dirname` instead.
+-   `__dirname` - use `import.meta.dirname` instead.
     
 
 ## CommonJS support
@@ -412,10 +413,10 @@ $ deno run main.js
 
 Deno will guide you when a file looks like CommonJS but isn’t loaded as such. If you see an error about `module` not being defined, fix it by one of the following:
 
-*   Rewrite to ESM
-*   Change the file extension to `.cjs`
-*   Add a nearby `package.json` with `{ "type": "commonjs" }`
-*   Run with `--unstable-detect-cjs`
+-   Rewrite to ESM
+-   Change the file extension to `.cjs`
+-   Add a nearby `package.json` with `{ "type": "commonjs" }`
+-   Run with `--unstable-detect-cjs`
 
 See docs: [CommonJS in Deno](https://docs.deno.com/go/commonjs)
 
@@ -518,33 +519,15 @@ There may however be cases where you need a local `node_modules` directory in yo
 
 ### Choosing a node\_modules mode
 
-*   Use no local node\_modules (default) when your project runs fine with Deno's global cache. No setup required.
-*   Use auto when some tools expect node\_modules or you rely on Node-API addons and want automatic creation.
-*   Use manual when your project has a package.json and you prefer an explicit install step.
+-   Use no local node\_modules (default) when your project runs fine with Deno's global cache. No setup required.
+-   Use auto when some tools expect node\_modules or you rely on Node-API addons and want automatic creation.
+-   Use manual when your project has a package.json and you prefer an explicit install step.
 
-Mode
-
-When to use
-
-How to enable
-
-none
-
-Most Deno projects; keep repo clean
-
-Default; do nothing
-
-auto
-
-Tools/bundlers expect node\_modules; Node-API
-
-`"nodeModulesDir": "auto"` or `--node-modules-dir=auto`
-
-manual
-
-Existing package.json with install step
-
-`"nodeModulesDir": "manual"` + run `deno install`/npm/pnpm
+| Mode | When to use | How to enable |
+| --- | --- | --- |
+| none | Most Deno projects; keep repo clean | Default; do nothing |
+| auto | Tools/bundlers expect node\_modules; Node-API | `"nodeModulesDir": "auto"` or `--node-modules-dir=auto` |
+| manual | Existing package.json with install step | `"nodeModulesDir": "manual"` + run `deno install`/npm/pnpm |
 
 ### Default Deno dependencies behavior
 
@@ -670,10 +653,10 @@ deno task start
 
 Deno ships a unified toolchain (configuration, linter, formatter, test runner) that can simplify your setup when migrating:
 
-*   Configuration: /runtime/fundamentals/configuration/
-*   Linter: /runtime/reference/cli/linter/
-*   Formatter: /runtime/reference/cli/formatter/
-*   Test runner: /runtime/reference/cli/test/
+-   Configuration: /runtime/fundamentals/configuration/
+-   Linter: /runtime/reference/cli/linter/
+-   Formatter: /runtime/reference/cli/formatter/
+-   Test runner: /runtime/reference/cli/test/
 
 ## Private registries
 
@@ -744,84 +727,26 @@ deno run main.ts
 
 ## Node to Deno Cheatsheet
 
-Node.js
-
-Deno
-
-`node file.js`
-
-`deno file.js`
-
-`ts-node file.ts`
-
-`deno file.ts`
-
-`nodemon`
-
-`deno run --watch`
-
-`node -e`
-
-`deno eval`
-
-`npm i` / `npm install`
-
-`deno install`
-
-`npm install -g`
-
-`deno install -g`
-
-`npm run`
-
-`deno task`
-
-`eslint`
-
-`deno lint`
-
-`prettier`
-
-`deno fmt`
-
-`package.json`
-
-`deno.json` or `package.json`
-
-`tsc`
-
-`deno check` ¹
-
-`typedoc`
-
-`deno doc`
-
-`jest` / `ava` / `mocha` / `tap` / etc
-
-`deno test`
-
-`nexe` / `pkg`
-
-`deno compile`
-
-`npm explain`
-
-`deno info`
-
-`nvm` / `n` / `fnm`
-
-`deno upgrade`
-
-`tsserver`
-
-`deno lsp`
-
-`nyc` / `c8` / `istanbul`
-
-`deno coverage`
-
-benchmarks
-
-`deno bench`
+| Node.js | Deno |
+| --- | --- |
+| `node file.js` | `deno file.js` |
+| `ts-node file.ts` | `deno file.ts` |
+| `nodemon` | `deno run --watch` |
+| `node -e` | `deno eval` |
+| `npm i` / `npm install` | `deno install` |
+| `npm install -g` | `deno install -g` |
+| `npm run` | `deno task` |
+| `eslint` | `deno lint` |
+| `prettier` | `deno fmt` |
+| `package.json` | `deno.json` or `package.json` |
+| `tsc` | `deno check` ¹ |
+| `typedoc` | `deno doc` |
+| `jest` / `ava` / `mocha` / `tap` / etc | `deno test` |
+| `nexe` / `pkg` | `deno compile` |
+| `npm explain` | `deno info` |
+| `nvm` / `n` / `fnm` | `deno upgrade` |
+| `tsserver` | `deno lsp` |
+| `nyc` / `c8` / `istanbul` | `deno coverage` |
+| benchmarks | `deno bench` |
 
 ¹ Type checking happens automatically, TypeScript compiler is built into the `deno` binary.

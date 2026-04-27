@@ -5,14 +5,12 @@ canonical_url: "https://www.postgresql.org/docs/current/extend-type-system.html"
 docset: "postgres"
 kind: "database"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:35:23.428Z"
-content_hash: "f23371b17f6f36bd45966f6fd9f93e54022b6ea64ff4b0c1abc0b5868b8c7d4a"
+last_crawled_at: "2026-04-27T20:43:29.462Z"
+content_hash: "9a84e798297f9d36a63ebdd15b60716b3c62bb85b1ea54a88731feda443092ed"
 menu_path: ["PostgreSQL: Documentation: 18: 36.2. The PostgreSQL Type System"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/extend-extensions.html/index.md", "title": "PostgreSQL: Documentation: 18: 36.17.\u00a0Packaging Related Objects into an Extension"}
-nav_next: {"path": "postgres/docs/current/external-admin-tools.html/index.md", "title": "PostgreSQL: Documentation: 18: H.2.\u00a0Administration Tools"}
+content_language: "en"
 ---
-
 PostgreSQL data types can be divided into base types, container types, domains, and pseudo-types.
 
 ### 36.2.1. Base Types [#](#EXTEND-TYPE-SYSTEM-BASE)
@@ -46,78 +44,19 @@ Some pseudo-types of special interest are the _polymorphic types_, which are use
 **Table 36.1. Polymorphic Types**
 
   
-
-Name
-
-Family
-
-Description
-
-`anyelement`
-
-Simple
-
-Indicates that a function accepts any data type
-
-`anyarray`
-
-Simple
-
-Indicates that a function accepts any array data type
-
-`anynonarray`
-
-Simple
-
-Indicates that a function accepts any non-array data type
-
-`anyenum`
-
-Simple
-
-Indicates that a function accepts any enum data type (see [Section 8.7](https://www.postgresql.org/docs/current/datatype-enum.html "8.7. Enumerated Types"))
-
-`anyrange`
-
-Simple
-
-Indicates that a function accepts any range data type (see [Section 8.17](https://www.postgresql.org/docs/current/rangetypes.html "8.17. Range Types"))
-
-`anymultirange`
-
-Simple
-
-Indicates that a function accepts any multirange data type (see [Section 8.17](https://www.postgresql.org/docs/current/rangetypes.html "8.17. Range Types"))
-
-`anycompatible`
-
-Common
-
-Indicates that a function accepts any data type, with automatic promotion of multiple arguments to a common data type
-
-`anycompatiblearray`
-
-Common
-
-Indicates that a function accepts any array data type, with automatic promotion of multiple arguments to a common data type
-
-`anycompatiblenonarray`
-
-Common
-
-Indicates that a function accepts any non-array data type, with automatic promotion of multiple arguments to a common data type
-
-`anycompatiblerange`
-
-Common
-
-Indicates that a function accepts any range data type, with automatic promotion of multiple arguments to a common data type
-
-`anycompatiblemultirange`
-
-Common
-
-Indicates that a function accepts any multirange data type, with automatic promotion of multiple arguments to a common data type
+| Name | Family | Description |
+| --- | --- | --- |
+| `anyelement` | Simple | Indicates that a function accepts any data type |
+| `anyarray` | Simple | Indicates that a function accepts any array data type |
+| `anynonarray` | Simple | Indicates that a function accepts any non-array data type |
+| `anyenum` | Simple | Indicates that a function accepts any enum data type (see [Section 8.7](https://www.postgresql.org/docs/current/datatype-enum.html "8.7. Enumerated Types")) |
+| `anyrange` | Simple | Indicates that a function accepts any range data type (see [Section 8.17](https://www.postgresql.org/docs/current/rangetypes.html "8.17. Range Types")) |
+| `anymultirange` | Simple | Indicates that a function accepts any multirange data type (see [Section 8.17](https://www.postgresql.org/docs/current/rangetypes.html "8.17. Range Types")) |
+| `anycompatible` | Common | Indicates that a function accepts any data type, with automatic promotion of multiple arguments to a common data type |
+| `anycompatiblearray` | Common | Indicates that a function accepts any array data type, with automatic promotion of multiple arguments to a common data type |
+| `anycompatiblenonarray` | Common | Indicates that a function accepts any non-array data type, with automatic promotion of multiple arguments to a common data type |
+| `anycompatiblerange` | Common | Indicates that a function accepts any range data type, with automatic promotion of multiple arguments to a common data type |
+| `anycompatiblemultirange` | Common | Indicates that a function accepts any multirange data type, with automatic promotion of multiple arguments to a common data type |
 
 Polymorphic arguments and results are tied to each other and are resolved to specific data types when a query calling a polymorphic function is parsed. When there is more than one polymorphic argument, the actual data types of the input values must match up as described below. If the function's result type is polymorphic, or it has output parameters of polymorphic types, the types of those results are deduced from the actual types of the polymorphic inputs as described below.
 

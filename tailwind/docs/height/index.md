@@ -5,59 +5,13 @@ canonical_url: "https://tailwindcss.com/docs/height"
 docset: "tailwind"
 kind: "framework"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:52:04.714Z"
-content_hash: "ae9f701f3c0ba95b8b877d08719975d9f65feaec1a78bfbb0a05fcb7cab94ffa"
+last_crawled_at: "2026-04-27T20:04:12.766Z"
+content_hash: "90e7b58874685ceab0f41d9dc44eb33e2b3f81fc4cb66e1bdf13e0279f0c2b54"
 menu_path: ["height"]
 section_path: []
-nav_prev: {"path": "tailwind/docs/max-width/index.md", "title": "max-width"}
-nav_next: {"path": "tailwind/docs/min-height/index.md", "title": "min-height"}
+content_language: "en"
 ---
-
 Utilities for setting the height of an element.
-
-Class
-
-Styles
-
-`h-<number>`
-
-`height: calc(var(--spacing) * <number>);`
-
-`h-<fraction>`
-
-`height: calc(<fraction> * 100%);`
-
-`h-auto`
-
-`height: auto;`
-
-`h-px`
-
-`height: 1px;`
-
-`h-full`
-
-`height: 100%;`
-
-`h-screen`
-
-`height: 100vh;`
-
-`h-dvh`
-
-`height: 100dvh;`
-
-`h-dvw`
-
-`height: 100dvw;`
-
-`h-lvh`
-
-`height: 100lvh;`
-
-`h-lvw`
-
-`height: 100lvw;`
 
 ## [Examples](#examples)
 
@@ -181,7 +135,7 @@ Prefix a `height` utility with a breakpoint variant like `md:` to only apply the
 <div class="h-1/2 md:h-full ...">  <!-- ... --></div>
 ```
 
-Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).
+Learn more about using variants in the [variants documentation](https://tailwindcss.com/docs/hover-focus-and-other-states).
 
 ## [Customizing your theme](#customizing-your-theme)
 
@@ -191,4 +145,4 @@ The `h-<number>` and `size-<number>` utilities are driven by the `--spacing` the
 @theme {  --spacing: 1px; }
 ```
 
-Learn more about customizing the spacing scale in the [theme variable documentation](tailwind/docs/theme/index.md).
+Learn more about customizing the spacing scale in the [theme variable documentation](https://tailwindcss.com/docs/theme).

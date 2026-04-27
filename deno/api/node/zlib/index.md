@@ -5,10 +5,11 @@ canonical_url: "https://docs.deno.com/api/node/zlib/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:44:44.889Z"
-content_hash: "41ea391255273df50053b4e5809ba86c77301c8c91214b53f049ffe80d153457"
+last_crawled_at: "2026-04-27T17:17:19.966Z"
+content_hash: "29bb569e4782b649bd319b6e1cc9bf1b5ac52cd0824e1a87c26c77e525bafc65"
 menu_path: ["zlib - Node documentation"]
 section_path: []
+content_language: "en"
 ---
 ### Usage in Deno
 
@@ -101,8 +102,6 @@ do_unzip(buffer)
     process.exitCode = 1;
   });
 ```
-
-### Functions [#](#Functions)
 
 f
 
@@ -272,8 +271,6 @@ f
 
 Decompress a chunk of data with `Unzip`.
 
-### Interfaces [#](#Interfaces)
-
 I
 
 [BrotliCompress](.././zlib/~/BrotliCompress "BrotliCompress")
@@ -292,11 +289,11 @@ I
 
 No documentation available
 
-*   [chunkSize](.././zlib/~/BrotliOptions#property_chunksize)
-*   [finishFlush](.././zlib/~/BrotliOptions#property_finishflush)
-*   [flush](.././zlib/~/BrotliOptions#property_flush)
-*   [maxOutputLength](.././zlib/~/BrotliOptions#property_maxoutputlength)
-*   [params](.././zlib/~/BrotliOptions#property_params)
+-   [chunkSize](.././zlib/~/BrotliOptions#property_chunksize)
+-   [finishFlush](.././zlib/~/BrotliOptions#property_finishflush)
+-   [flush](.././zlib/~/BrotliOptions#property_flush)
+-   [maxOutputLength](.././zlib/~/BrotliOptions#property_maxoutputlength)
+-   [params](.././zlib/~/BrotliOptions#property_params)
 
 I
 
@@ -346,11 +343,11 @@ I
 
 No documentation available
 
-*   [bytesRead](.././zlib/~/Zlib#property_bytesread)
-*   [bytesWritten](.././zlib/~/Zlib#property_byteswritten)
-*   [close](.././zlib/~/Zlib#method_close_0)
-*   [flush](.././zlib/~/Zlib#method_flush_0)
-*   [shell](.././zlib/~/Zlib#property_shell)
+-   [bytesRead](.././zlib/~/Zlib#property_bytesread)
+-   [bytesWritten](.././zlib/~/Zlib#property_byteswritten)
+-   [close](.././zlib/~/Zlib#method_close_0)
+-   [flush](.././zlib/~/Zlib#method_flush_0)
+-   [shell](.././zlib/~/Zlib#property_shell)
 
 I
 
@@ -358,16 +355,16 @@ I
 
 No documentation available
 
-*   [chunkSize](.././zlib/~/ZlibOptions#property_chunksize)
-*   [dictionary](.././zlib/~/ZlibOptions#property_dictionary)
-*   [finishFlush](.././zlib/~/ZlibOptions#property_finishflush)
-*   [flush](.././zlib/~/ZlibOptions#property_flush)
-*   [info](.././zlib/~/ZlibOptions#property_info)
-*   [level](.././zlib/~/ZlibOptions#property_level)
-*   [maxOutputLength](.././zlib/~/ZlibOptions#property_maxoutputlength)
-*   [memLevel](.././zlib/~/ZlibOptions#property_memlevel)
-*   [strategy](.././zlib/~/ZlibOptions#property_strategy)
-*   [windowBits](.././zlib/~/ZlibOptions#property_windowbits)
+-   [chunkSize](.././zlib/~/ZlibOptions#property_chunksize)
+-   [dictionary](.././zlib/~/ZlibOptions#property_dictionary)
+-   [finishFlush](.././zlib/~/ZlibOptions#property_finishflush)
+-   [flush](.././zlib/~/ZlibOptions#property_flush)
+-   [info](.././zlib/~/ZlibOptions#property_info)
+-   [level](.././zlib/~/ZlibOptions#property_level)
+-   [maxOutputLength](.././zlib/~/ZlibOptions#property_maxoutputlength)
+-   [memLevel](.././zlib/~/ZlibOptions#property_memlevel)
+-   [strategy](.././zlib/~/ZlibOptions#property_strategy)
+-   [windowBits](.././zlib/~/ZlibOptions#property_windowbits)
 
 I
 
@@ -375,7 +372,7 @@ I
 
 No documentation available
 
-*   [params](.././zlib/~/ZlibParams#method_params_0)
+-   [params](.././zlib/~/ZlibParams#method_params_0)
 
 I
 
@@ -383,17 +380,13 @@ I
 
 No documentation available
 
-*   [reset](.././zlib/~/ZlibReset#method_reset_0)
-
-### Namespaces [#](#Namespaces)
+-   [reset](.././zlib/~/ZlibReset#method_reset_0)
 
 N
 
 [constants](.././zlib/~/constants "constants")
 
 No documentation available
-
-### Type Aliases [#](<#Type Aliases>)
 
 T
 
@@ -406,8 +399,6 @@ T
 [InputType](.././zlib/~/InputType "InputType")
 
 No documentation available
-
-### Variables [#](#Variables)
 
 v
 

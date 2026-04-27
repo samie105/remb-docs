@@ -5,41 +5,46 @@ canonical_url: "https://tailwindcss.com/docs/backdrop-filter-grayscale"
 docset: "tailwind"
 kind: "framework"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:09:34.083Z"
-content_hash: "9ba3e26c30eaccf75a2eb3c8a959c72085666f53f0e26f5da38afc25f1e2d75c"
+last_crawled_at: "2026-04-27T20:28:39.243Z"
+content_hash: "0d8b21b699537576e01e39fd7d0493e6a6fc36e32f1ba400c489674f3db4934f"
 menu_path: ["backdrop-filter: grayscale()"]
 section_path: []
-nav_prev: {"path": "tailwind/docs/backdrop-filter-contrast/index.md", "title": "backdrop-filter: contrast()"}
-nav_next: {"path": "tailwind/docs/backdrop-filter-hue-rotate/index.md", "title": "backdrop-filter: hue-rotate()"}
+content_language: "en"
 ---
+[](/)
+
+[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
+
+1.  Filters
+2.  grayscale
+
+Filters
 
 # backdrop-filter: grayscale()
 
 Utilities for applying backdrop grayscale filters to an element.
 
-Class
-
-Styles
-
-`backdrop-grayscale`
-
+| Class | Styles |
+| --- | --- |
+| `backdrop-grayscale` | 
 `backdrop-filter: grayscale(100%);`
 
-`backdrop-grayscale-<number>`
+ |
+| `backdrop-grayscale-<number>` | 
 
 `backdrop-filter: grayscale(<number>%);`
 
-`backdrop-grayscale-(<custom-property>)`
+ |
+| `backdrop-grayscale-(<custom-property>)` | 
 
 `backdrop-filter: grayscale(var(<custom-property>));`
 
-`backdrop-grayscale-[<value>]`
+ |
+| `backdrop-grayscale-[<value>]` | 
 
 `backdrop-filter: grayscale(<value>);`
 
-## [Examples](#examples)
-
-### [Basic example](#basic-example)
+ |
 
 Use utilities like `backdrop-grayscale-50` and `backdrop-grayscale` to control the grayscale effect applied to an element's backdrop:
 
@@ -59,8 +64,6 @@ backdrop-grayscale
 <div class="bg-[url(/img/mountains.jpg)]">  <div class="bg-white/30 backdrop-grayscale-0 ..."></div></div><div class="bg-[url(/img/mountains.jpg)]">  <div class="bg-white/30 backdrop-grayscale-50 ..."></div></div><div class="bg-[url(/img/mountains.jpg)]">  <div class="bg-white/30 backdrop-grayscale-200 ..."></div></div>
 ```
 
-### [Using a custom value](#using-a-custom-value)
-
 Use the `backdrop-grayscale-[<value>]` syntax to set the backdrop grayscale based on a completely custom value:
 
 ```
@@ -75,8 +78,6 @@ For CSS variables, you can also use the `backdrop-grayscale-(<custom-property>)`
 
 This is just a shorthand for `backdrop-grayscale-[var(<custom-property>)]` that adds the `var()` function for you automatically.
 
-### [Responsive design](#responsive-design)
-
 Prefix a `backdrop-filter: grayscale()` utility with a breakpoint variant like `md:` to only apply the utility at medium screen sizes and above:
 
 ```
@@ -87,11 +88,11 @@ Learn more about using variants in the [variants documentation](/docs/hover-focu
 
 ### On this page
 
-*   [Quick reference](#quick-reference)
-*   [Examples](#examples)
-    *   [Basic example](#basic-example)
-    *   [Using a custom value](#using-a-custom-value)
-    *   [Responsive design](#responsive-design)
+-   [Quick reference](#quick-reference)
+-   [Examples](#examples)
+    -   [Basic example](#basic-example)
+    -   [Using a custom value](#using-a-custom-value)
+    -   [Responsive design](#responsive-design)
 
 [
 

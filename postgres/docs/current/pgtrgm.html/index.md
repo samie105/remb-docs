@@ -5,14 +5,12 @@ canonical_url: "https://www.postgresql.org/docs/current/pgtrgm.html"
 docset: "postgres"
 kind: "database"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:32:01.228Z"
-content_hash: "890fd8c017726d6ccec7738d09f36c98f2dac4074fb4369c14ca37ca66e6e3d5"
+last_crawled_at: "2026-04-27T20:42:22.394Z"
+content_hash: "8f2cbc47355da31ffb50b6164682378cc1379be8858acc59faf031579aceaf39"
 menu_path: ["PostgreSQL: Documentation: 18: F.35. pg_trgm — support for similarity of text using trigram matching"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/pgtesttiming.html/index.md", "title": "PostgreSQL: Documentation: 18: pg_test_timing"}
-nav_next: {"path": "postgres/docs/current/plperl-triggers.html/index.md", "title": "PostgreSQL: Documentation: 18: 43.6.\u00a0PL/Perl Triggers"}
+content_language: "en"
 ---
-
 The `pg_trgm` module provides functions and operators for determining the similarity of alphanumeric text based on trigram matching, as well as index operator classes that support fast searching for similar strings.
 
 This module is considered “trusted”, that is, it can be installed by non-superusers who have `CREATE` privilege on the current database.
@@ -31,33 +29,55 @@ The functions provided by the `pg_trgm` module are shown in [Table F.26](https:
 
 **Table F.26. `pg_trgm` Functions**
 
+| 
 Function
 
 Description
+
+ |
+| --- |
+| 
 
 `similarity` ( `text`, `text` ) → `real`
 
 Returns a number that indicates how similar the two arguments are. The range of the result is zero (indicating that the two strings are completely dissimilar) to one (indicating that the two strings are identical).
 
+ |
+| 
+
 `show_trgm` ( `text` ) → `text[]`
 
 Returns an array of all the trigrams in the given string. (In practice this is seldom useful except for debugging.)
+
+ |
+| 
 
 `word_similarity` ( `text`, `text` ) → `real`
 
 Returns a number that indicates the greatest similarity between the set of trigrams in the first string and any continuous extent of an ordered set of trigrams in the second string. For details, see the explanation below.
 
+ |
+| 
+
 `strict_word_similarity` ( `text`, `text` ) → `real`
 
 Same as `word_similarity`, but forces extent boundaries to match word boundaries. Since we don't have cross-word trigrams, this function actually returns greatest similarity between first string and any continuous extent of words of the second string.
+
+ |
+| 
 
 `show_limit` () → `real`
 
 Returns the current similarity threshold used by the `%` operator. This sets the minimum similarity between two words for them to be considered similar enough to be misspellings of each other, for example. (_Deprecated_; instead use `SHOW` `pg_trgm.similarity_threshold`.)
 
+ |
+| 
+
 `set_limit` ( `real` ) → `real`
 
 Sets the current similarity threshold that is used by the `%` operator. The threshold must be between 0 and 1 (default is 0.3). Returns the same value passed in. (_Deprecated_; instead use `SET` `pg_trgm.similarity_threshold`.)
+
+ |
 
 Consider the following example:
 
@@ -83,49 +103,83 @@ Thus, the `strict_word_similarity` function is useful for finding the similarity
 
 **Table F.27. `pg_trgm` Operators**
 
+| 
 Operator
 
 Description
+
+ |
+| --- |
+| 
 
 `text` `%` `text` → `boolean`
 
 Returns `true` if its arguments have a similarity that is greater than the current similarity threshold set by `pg_trgm.similarity_threshold`.
 
+ |
+| 
+
 `text` `<%` `text` → `boolean`
 
 Returns `true` if the similarity between the trigram set in the first argument and a continuous extent of an ordered trigram set in the second argument is greater than the current word similarity threshold set by `pg_trgm.word_similarity_threshold` parameter.
+
+ |
+| 
 
 `text` `%>` `text` → `boolean`
 
 Commutator of the `<%` operator.
 
+ |
+| 
+
 `text` `<<%` `text` → `boolean`
 
 Returns `true` if its second argument has a continuous extent of an ordered trigram set that matches word boundaries, and its similarity to the trigram set of the first argument is greater than the current strict word similarity threshold set by the `pg_trgm.strict_word_similarity_threshold` parameter.
+
+ |
+| 
 
 `text` `%>>` `text` → `boolean`
 
 Commutator of the `<<%` operator.
 
+ |
+| 
+
 `text` `<->` `text` → `real`
 
 Returns the “distance” between the arguments, that is one minus the `similarity()` value.
+
+ |
+| 
 
 `text` `<<->` `text` → `real`
 
 Returns the “distance” between the arguments, that is one minus the `word_similarity()` value.
 
+ |
+| 
+
 `text` `<->>` `text` → `real`
 
 Commutator of the `<<->` operator.
+
+ |
+| 
 
 `text` `<<<->` `text` → `real`
 
 Returns the “distance” between the arguments, that is one minus the `strict_word_similarity()` value.
 
+ |
+| 
+
 `text` `<->>>` `text` → `real`
 
 Commutator of the `<<<->` operator.
+
+ |
 
   
 

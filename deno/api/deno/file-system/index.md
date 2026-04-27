@@ -5,48 +5,45 @@ canonical_url: "https://docs.deno.com/api/deno/file-system"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:09:20.575Z"
-content_hash: "f6b7b4ed650d7ebec257bb6351fe60132f78684a17bfbecc7ff47ad68742249c"
+last_crawled_at: "2026-04-27T17:52:45.999Z"
+content_hash: "29bf6b684cafbe12ff6b147db7ac86c905caeb93433287f2c325908ff951d43a"
 menu_path: ["File System - Deno documentation"]
 section_path: []
+content_language: "en"
 ---
-### Classes [#](#Classes)
-
 c
 
 [Deno.FsFile](./././~/Deno.FsFile "Deno.FsFile")
 
 The Deno abstraction for reading and writing files.
 
-*   [close](./././~/Deno.FsFile#method_close_0)
-*   [isTerminal](./././~/Deno.FsFile#method_isterminal_0)
-*   [lock](./././~/Deno.FsFile#method_lock_0)
-*   [lockSync](./././~/Deno.FsFile#method_locksync_0)
-*   [read](./././~/Deno.FsFile#method_read_0)
-*   [readSync](./././~/Deno.FsFile#method_readsync_0)
-*   [readable](./././~/Deno.FsFile#property_readable)
-*   [seek](./././~/Deno.FsFile#method_seek_0)
-*   [seekSync](./././~/Deno.FsFile#method_seeksync_0)
-*   [setRaw](./././~/Deno.FsFile#method_setraw_0)
-*   [stat](./././~/Deno.FsFile#method_stat_0)
-*   [statSync](./././~/Deno.FsFile#method_statsync_0)
-*   [sync](./././~/Deno.FsFile#method_sync_0)
-*   [syncData](./././~/Deno.FsFile#method_syncdata_0)
-*   [syncDataSync](./././~/Deno.FsFile#method_syncdatasync_0)
-*   [syncSync](./././~/Deno.FsFile#method_syncsync_0)
-*   [truncate](./././~/Deno.FsFile#method_truncate_0)
-*   [truncateSync](./././~/Deno.FsFile#method_truncatesync_0)
-*   [tryLock](./././~/Deno.FsFile#method_trylock_0)
-*   [tryLockSync](./././~/Deno.FsFile#method_trylocksync_0)
-*   [unlock](./././~/Deno.FsFile#method_unlock_0)
-*   [unlockSync](./././~/Deno.FsFile#method_unlocksync_0)
-*   [utime](./././~/Deno.FsFile#method_utime_0)
-*   [utimeSync](./././~/Deno.FsFile#method_utimesync_0)
-*   [writable](./././~/Deno.FsFile#property_writable)
-*   [write](./././~/Deno.FsFile#method_write_0)
-*   [writeSync](./././~/Deno.FsFile#method_writesync_0)
-
-### Functions [#](#Functions)
+-   [close](./././~/Deno.FsFile#method_close_0)
+-   [isTerminal](./././~/Deno.FsFile#method_isterminal_0)
+-   [lock](./././~/Deno.FsFile#method_lock_0)
+-   [lockSync](./././~/Deno.FsFile#method_locksync_0)
+-   [read](./././~/Deno.FsFile#method_read_0)
+-   [readSync](./././~/Deno.FsFile#method_readsync_0)
+-   [readable](./././~/Deno.FsFile#property_readable)
+-   [seek](./././~/Deno.FsFile#method_seek_0)
+-   [seekSync](./././~/Deno.FsFile#method_seeksync_0)
+-   [setRaw](./././~/Deno.FsFile#method_setraw_0)
+-   [stat](./././~/Deno.FsFile#method_stat_0)
+-   [statSync](./././~/Deno.FsFile#method_statsync_0)
+-   [sync](./././~/Deno.FsFile#method_sync_0)
+-   [syncData](./././~/Deno.FsFile#method_syncdata_0)
+-   [syncDataSync](./././~/Deno.FsFile#method_syncdatasync_0)
+-   [syncSync](./././~/Deno.FsFile#method_syncsync_0)
+-   [truncate](./././~/Deno.FsFile#method_truncate_0)
+-   [truncateSync](./././~/Deno.FsFile#method_truncatesync_0)
+-   [tryLock](./././~/Deno.FsFile#method_trylock_0)
+-   [tryLockSync](./././~/Deno.FsFile#method_trylocksync_0)
+-   [unlock](./././~/Deno.FsFile#method_unlock_0)
+-   [unlockSync](./././~/Deno.FsFile#method_unlocksync_0)
+-   [utime](./././~/Deno.FsFile#method_utime_0)
+-   [utimeSync](./././~/Deno.FsFile#method_utimesync_0)
+-   [writable](./././~/Deno.FsFile#property_writable)
+-   [write](./././~/Deno.FsFile#method_write_0)
+-   [writeSync](./././~/Deno.FsFile#method_writesync_0)
 
 f
 
@@ -336,18 +333,16 @@ f
 
 Synchronously write string `data` to the given `path`, by default creating a new file if needed, else overwriting.
 
-### Interfaces [#](#Interfaces)
-
 I
 
 [Deno.DirEntry](./././~/Deno.DirEntry "Deno.DirEntry")
 
 Information about a directory entry returned from [`Deno.readDir`](./././~/Deno.readDir) and [`Deno.readDirSync`](./././~/Deno.readDirSync).
 
-*   [isDirectory](./././~/Deno.DirEntry#property_isdirectory)
-*   [isFile](./././~/Deno.DirEntry#property_isfile)
-*   [isSymlink](./././~/Deno.DirEntry#property_issymlink)
-*   [name](./././~/Deno.DirEntry#property_name)
+-   [isDirectory](./././~/Deno.DirEntry#property_isdirectory)
+-   [isFile](./././~/Deno.DirEntry#property_isfile)
+-   [isSymlink](./././~/Deno.DirEntry#property_issymlink)
+-   [name](./././~/Deno.DirEntry#property_name)
 
 I
 
@@ -355,27 +350,27 @@ I
 
 Provides information about a file and is returned by [`Deno.stat`](./././~/Deno.stat), [`Deno.lstat`](./././~/Deno.lstat), [`Deno.statSync`](./././~/Deno.statSync), and [`Deno.lstatSync`](./././~/Deno.lstatSync) or from calling `stat()` and `statSync()` on an [`Deno.FsFile`](./././~/Deno.FsFile) instance.
 
-*   [atime](./././~/Deno.FileInfo#property_atime)
-*   [birthtime](./././~/Deno.FileInfo#property_birthtime)
-*   [blksize](./././~/Deno.FileInfo#property_blksize)
-*   [blocks](./././~/Deno.FileInfo#property_blocks)
-*   [ctime](./././~/Deno.FileInfo#property_ctime)
-*   [dev](./././~/Deno.FileInfo#property_dev)
-*   [gid](./././~/Deno.FileInfo#property_gid)
-*   [ino](./././~/Deno.FileInfo#property_ino)
-*   [isBlockDevice](./././~/Deno.FileInfo#property_isblockdevice)
-*   [isCharDevice](./././~/Deno.FileInfo#property_ischardevice)
-*   [isDirectory](./././~/Deno.FileInfo#property_isdirectory)
-*   [isFifo](./././~/Deno.FileInfo#property_isfifo)
-*   [isFile](./././~/Deno.FileInfo#property_isfile)
-*   [isSocket](./././~/Deno.FileInfo#property_issocket)
-*   [isSymlink](./././~/Deno.FileInfo#property_issymlink)
-*   [mode](./././~/Deno.FileInfo#property_mode)
-*   [mtime](./././~/Deno.FileInfo#property_mtime)
-*   [nlink](./././~/Deno.FileInfo#property_nlink)
-*   [rdev](./././~/Deno.FileInfo#property_rdev)
-*   [size](./././~/Deno.FileInfo#property_size)
-*   [uid](./././~/Deno.FileInfo#property_uid)
+-   [atime](./././~/Deno.FileInfo#property_atime)
+-   [birthtime](./././~/Deno.FileInfo#property_birthtime)
+-   [blksize](./././~/Deno.FileInfo#property_blksize)
+-   [blocks](./././~/Deno.FileInfo#property_blocks)
+-   [ctime](./././~/Deno.FileInfo#property_ctime)
+-   [dev](./././~/Deno.FileInfo#property_dev)
+-   [gid](./././~/Deno.FileInfo#property_gid)
+-   [ino](./././~/Deno.FileInfo#property_ino)
+-   [isBlockDevice](./././~/Deno.FileInfo#property_isblockdevice)
+-   [isCharDevice](./././~/Deno.FileInfo#property_ischardevice)
+-   [isDirectory](./././~/Deno.FileInfo#property_isdirectory)
+-   [isFifo](./././~/Deno.FileInfo#property_isfifo)
+-   [isFile](./././~/Deno.FileInfo#property_isfile)
+-   [isSocket](./././~/Deno.FileInfo#property_issocket)
+-   [isSymlink](./././~/Deno.FileInfo#property_issymlink)
+-   [mode](./././~/Deno.FileInfo#property_mode)
+-   [mtime](./././~/Deno.FileInfo#property_mtime)
+-   [nlink](./././~/Deno.FileInfo#property_nlink)
+-   [rdev](./././~/Deno.FileInfo#property_rdev)
+-   [size](./././~/Deno.FileInfo#property_size)
+-   [uid](./././~/Deno.FileInfo#property_uid)
 
 I
 
@@ -383,9 +378,9 @@ I
 
 Represents a unique file system event yielded by a [`Deno.FsWatcher`](./././~/Deno.FsWatcher).
 
-*   [flag](./././~/Deno.FsEvent#property_flag)
-*   [kind](./././~/Deno.FsEvent#property_kind)
-*   [paths](./././~/Deno.FsEvent#property_paths)
+-   [flag](./././~/Deno.FsEvent#property_flag)
+-   [kind](./././~/Deno.FsEvent#property_kind)
+-   [paths](./././~/Deno.FsEvent#property_paths)
 
 I
 
@@ -393,8 +388,8 @@ I
 
 Returned by [`Deno.watchFs`](./././~/Deno.watchFs). It is an async iterator yielding up system events. To stop watching the file system by calling `.close()` method.
 
-*   [close](./././~/Deno.FsWatcher#method_close_0)
-*   [return](./././~/Deno.FsWatcher#method_return_0)
+-   [close](./././~/Deno.FsWatcher#method_close_0)
+-   [return](./././~/Deno.FsWatcher#method_return_0)
 
 I
 
@@ -402,9 +397,9 @@ I
 
 Options which can be set when using [`Deno.makeTempDir`](./././~/Deno.makeTempDir), [`Deno.makeTempDirSync`](./././~/Deno.makeTempDirSync), [`Deno.makeTempFile`](./././~/Deno.makeTempFile), and [`Deno.makeTempFileSync`](./././~/Deno.makeTempFileSync).
 
-*   [dir](./././~/Deno.MakeTempOptions#property_dir)
-*   [prefix](./././~/Deno.MakeTempOptions#property_prefix)
-*   [suffix](./././~/Deno.MakeTempOptions#property_suffix)
+-   [dir](./././~/Deno.MakeTempOptions#property_dir)
+-   [prefix](./././~/Deno.MakeTempOptions#property_prefix)
+-   [suffix](./././~/Deno.MakeTempOptions#property_suffix)
 
 I
 
@@ -412,8 +407,8 @@ I
 
 Options which can be set when using [`Deno.mkdir`](./././~/Deno.mkdir) and [`Deno.mkdirSync`](./././~/Deno.mkdirSync).
 
-*   [mode](./././~/Deno.MkdirOptions#property_mode)
-*   [recursive](./././~/Deno.MkdirOptions#property_recursive)
+-   [mode](./././~/Deno.MkdirOptions#property_mode)
+-   [recursive](./././~/Deno.MkdirOptions#property_recursive)
 
 I
 
@@ -421,13 +416,13 @@ I
 
 Options which can be set when doing [`Deno.open`](./././~/Deno.open) and [`Deno.openSync`](./././~/Deno.openSync).
 
-*   [append](./././~/Deno.OpenOptions#property_append)
-*   [create](./././~/Deno.OpenOptions#property_create)
-*   [createNew](./././~/Deno.OpenOptions#property_createnew)
-*   [mode](./././~/Deno.OpenOptions#property_mode)
-*   [read](./././~/Deno.OpenOptions#property_read)
-*   [truncate](./././~/Deno.OpenOptions#property_truncate)
-*   [write](./././~/Deno.OpenOptions#property_write)
+-   [append](./././~/Deno.OpenOptions#property_append)
+-   [create](./././~/Deno.OpenOptions#property_create)
+-   [createNew](./././~/Deno.OpenOptions#property_createnew)
+-   [mode](./././~/Deno.OpenOptions#property_mode)
+-   [read](./././~/Deno.OpenOptions#property_read)
+-   [truncate](./././~/Deno.OpenOptions#property_truncate)
+-   [write](./././~/Deno.OpenOptions#property_write)
 
 I
 
@@ -435,7 +430,7 @@ I
 
 Options which can be set when using [`Deno.readFile`](./././~/Deno.readFile) or [`Deno.readFileSync`](./././~/Deno.readFileSync).
 
-*   [signal](./././~/Deno.ReadFileOptions#property_signal)
+-   [signal](./././~/Deno.ReadFileOptions#property_signal)
 
 I
 
@@ -443,7 +438,7 @@ I
 
 Options which can be set when using [`Deno.remove`](./././~/Deno.remove) and [`Deno.removeSync`](./././~/Deno.removeSync).
 
-*   [recursive](./././~/Deno.RemoveOptions#property_recursive)
+-   [recursive](./././~/Deno.RemoveOptions#property_recursive)
 
 I
 
@@ -451,7 +446,7 @@ I
 
 Options that can be used with `symlink` and `symlinkSync`.
 
-*   [type](./././~/Deno.SymlinkOptions#property_type)
+-   [type](./././~/Deno.SymlinkOptions#property_type)
 
 I
 
@@ -459,13 +454,11 @@ I
 
 Options for writing to a file.
 
-*   [append](./././~/Deno.WriteFileOptions#property_append)
-*   [create](./././~/Deno.WriteFileOptions#property_create)
-*   [createNew](./././~/Deno.WriteFileOptions#property_createnew)
-*   [mode](./././~/Deno.WriteFileOptions#property_mode)
-*   [signal](./././~/Deno.WriteFileOptions#property_signal)
-
-### Type Aliases [#](<#Type Aliases>)
+-   [append](./././~/Deno.WriteFileOptions#property_append)
+-   [create](./././~/Deno.WriteFileOptions#property_create)
+-   [createNew](./././~/Deno.WriteFileOptions#property_createnew)
+-   [mode](./././~/Deno.WriteFileOptions#property_mode)
+-   [signal](./././~/Deno.WriteFileOptions#property_signal)
 
 T
 

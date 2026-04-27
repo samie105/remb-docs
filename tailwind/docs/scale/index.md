@@ -5,59 +5,13 @@ canonical_url: "https://tailwindcss.com/docs/scale"
 docset: "tailwind"
 kind: "framework"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:13:46.054Z"
-content_hash: "bbf76d1adcad393f34850d5b72baab3bcf6e6d9c53f181e990456f3ba5b09fd9"
+last_crawled_at: "2026-04-27T20:34:26.069Z"
+content_hash: "804ae1f8dd4ebc2aa14c227abbe6064259cb832aa5aa27910bcc560b1eedf3b9"
 menu_path: ["scale"]
 section_path: []
-nav_prev: {"path": "tailwind/docs/rotate/index.md", "title": "rotate"}
-nav_next: {"path": "tailwind/docs/skew/index.md", "title": "skew"}
+content_language: "en"
 ---
-
 Utilities for scaling elements.
-
-Class
-
-Styles
-
-`scale-none`
-
-`scale: none;`
-
-`scale-<number>`
-
-`scale: <number>% <number>%;`
-
-`-scale-<number>`
-
-`scale: calc(<number>% * -1) calc(<number>% * -1);`
-
-`scale-(<custom-property>)`
-
-`scale: var(<custom-property>) var(<custom-property>);`
-
-`scale-[<value>]`
-
-`scale: <value>;`
-
-`scale-x-<number>`
-
-`scale: <number>% var(--tw-scale-y);`
-
-`-scale-x-<number>`
-
-`scale: calc(<number>% * -1) var(--tw-scale-y);`
-
-`scale-x-(<custom-property>)`
-
-`scale: var(<custom-property>) var(--tw-scale-y);`
-
-`scale-x-[<value>]`
-
-`scale: <value> var(--tw-scale-y);`
-
-`scale-y-<number>`
-
-`scale: var(--tw-scale-x) <number>%;`
 
 ## [Examples](#examples)
 
@@ -117,4 +71,4 @@ Prefix a `scale` utility with a variant like `hover:*` to only apply the utility
 <img class="scale-95 hover:scale-120 ..." src="/img/mountains.jpg" />
 ```
 
-Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).
+Learn more about using variants in the [variants documentation](https://tailwindcss.com/docs/hover-focus-and-other-states).

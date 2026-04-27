@@ -5,23 +5,22 @@ canonical_url: "https://nextjs.org/docs/pages/api-reference/functions/get-static
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:22:18.898Z"
-content_hash: "2b7b5992d6b0bb01b107b6b352d0329059b0c1dbf3df344348855ddc9ae0d27b"
+last_crawled_at: "2026-04-27T18:21:43.381Z"
+content_hash: "5bcb2eca4e5024852316025ce8f687f065ce10da96055eda81b830a54ba01e77"
 menu_path: ["getStaticProps"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/pages/api-reference/functions/get-static-paths/index.md", "title": "getStaticPaths"}
-nav_next: {"path": "nextjs/docs/pages/api-reference/functions/next-request/index.md", "title": "NextRequest"}
+version: "latest"
+content_language: "en"
 ---
+[API Reference](/docs/pages/api-reference)[Functions](/docs/pages/api-reference/functions)getStaticProps
 
 # getStaticProps
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 Exporting a function called `getStaticProps` will prerender a page at build time using the props returned from the function:
 
 pages/index.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -54,41 +53,16 @@ You can import modules in top-level scope for use in `getStaticProps`. Imports u
 
 The `context` parameter is an object containing the following keys:
 
-Name
-
-Description
-
-`params`
-
-Contains the route parameters for pages using [dynamic routes](/docs/pages/building-your-application/routing/dynamic-routes). For example, if the page name is `[id].js`, then `params` will look like `{ id: ... }`. You should use this together with `getStaticPaths`, which we'll explain later.
-
-`preview`
-
-(Deprecated for `draftMode`) `preview` is `true` if the page is in the [Preview Mode](/docs/pages/guides/preview-mode) and `false` otherwise.
-
-`previewData`
-
-(Deprecated for `draftMode`) The [preview](/docs/pages/guides/preview-mode) data set by `setPreviewData`.
-
-`draftMode`
-
-`draftMode` is `true` if the page is in the [Draft Mode](/docs/pages/guides/draft-mode) and `false` otherwise.
-
-`locale`
-
-Contains the active locale (if enabled).
-
-`locales`
-
-Contains all supported locales (if enabled).
-
-`defaultLocale`
-
-Contains the configured default locale (if enabled).
-
-`revalidateReason`
-
-Provides a reason for why the function was called. Can be one of: "build" (run at build time), "stale" (revalidate period expired, or running in [development mode](/docs/pages/building-your-application/data-fetching/get-static-props#runs-on-every-request-in-development)), "on-demand" (triggered via [on-demand revalidation](/docs/pages/guides/incremental-static-regeneration#on-demand-revalidation-with-revalidatepath))
+| Name | Description |
+| --- | --- |
+| `params` | Contains the route parameters for pages using [dynamic routes](/docs/pages/building-your-application/routing/dynamic-routes). For example, if the page name is `[id].js`, then `params` will look like `{ id: ... }`. You should use this together with `getStaticPaths`, which we'll explain later. |
+| `preview` | (Deprecated for `draftMode`) `preview` is `true` if the page is in the [Preview Mode](/docs/pages/guides/preview-mode) and `false` otherwise. |
+| `previewData` | (Deprecated for `draftMode`) The [preview](/docs/pages/guides/preview-mode) data set by `setPreviewData`. |
+| `draftMode` | `draftMode` is `true` if the page is in the [Draft Mode](/docs/pages/guides/draft-mode) and `false` otherwise. |
+| `locale` | Contains the active locale (if enabled). |
+| `locales` | Contains all supported locales (if enabled). |
+| `defaultLocale` | Contains the configured default locale (if enabled). |
+| `revalidateReason` | Provides a reason for why the function was called. Can be one of: "build" (run at build time), "stale" (revalidate period expired, or running in [development mode](/docs/pages/building-your-application/data-fetching/get-static-props#runs-on-every-request-in-development)), "on-demand" (triggered via [on-demand revalidation](/docs/pages/guides/incremental-static-regeneration#on-demand-revalidation-with-revalidatepath)) |
 
 ## getStaticProps return values[](#getstaticprops-return-values)
 
@@ -134,9 +108,9 @@ Learn more about [Incremental Static Regeneration](/docs/pages/guides/incrementa
 
 The cache status of a page leveraging ISR can be determined by reading the value of the `x-nextjs-cache` response header. The possible values are the following:
 
-*   `MISS` - the path is not in the cache (occurs at most once, on the first visit)
-*   `STALE` - the path is in the cache but exceeded the revalidate time so it will be updated in the background
-*   `HIT` - the path is in the cache and has not exceeded the revalidate time
+-   `MISS` - the path is not in the cache (occurs at most once, on the first visit)
+-   `STALE` - the path is in the cache but exceeded the revalidate time so it will be updated in the background
+-   `HIT` - the path is in the cache and has not exceeded the revalidate time
 
 ### `notFound`[](#notfound)
 
@@ -251,40 +225,14 @@ export default Blog
 
 ## Version History[](#version-history)
 
-Version
-
-Changes
-
-`v13.4.0`
-
-[App Router](/docs/app/getting-started/fetching-data) is now stable with simplified data fetching
-
-`v12.2.0`
-
-[On-Demand Incremental Static Regeneration](/docs/pages/guides/incremental-static-regeneration#on-demand-revalidation-with-revalidatepath) is stable.
-
-`v12.1.0`
-
-[On-Demand Incremental Static Regeneration](/docs/pages/guides/incremental-static-regeneration#on-demand-revalidation-with-revalidatepath) added (beta).
-
-`v10.0.0`
-
-`locale`, `locales`, `defaultLocale`, and `notFound` options added.
-
-`v10.0.0`
-
-`fallback: 'blocking'` return option added.
-
-`v9.5.0`
-
-Stable [Incremental Static Regeneration](/docs/pages/guides/incremental-static-regeneration)
-
-`v9.3.0`
-
-`getStaticProps` introduced.
+| Version | Changes |
+| --- | --- |
+| `v13.4.0` | [App Router](/docs/app/getting-started/fetching-data) is now stable with simplified data fetching |
+| `v12.2.0` | [On-Demand Incremental Static Regeneration](/docs/pages/guides/incremental-static-regeneration#on-demand-revalidation-with-revalidatepath) is stable. |
+| `v12.1.0` | [On-Demand Incremental Static Regeneration](/docs/pages/guides/incremental-static-regeneration#on-demand-revalidation-with-revalidatepath) added (beta). |
+| `v10.0.0` | `locale`, `locales`, `defaultLocale`, and `notFound` options added. |
+| `v10.0.0` | `fallback: 'blocking'` return option added. |
+| `v9.5.0` | Stable [Incremental Static Regeneration](/docs/pages/guides/incremental-static-regeneration) |
+| `v9.3.0` | `getStaticProps` introduced. |
 
 Was this helpful?
-
-supported.
-
-Send

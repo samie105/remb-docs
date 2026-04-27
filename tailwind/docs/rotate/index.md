@@ -5,59 +5,13 @@ canonical_url: "https://tailwindcss.com/docs/rotate"
 docset: "tailwind"
 kind: "framework"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:13:46.784Z"
-content_hash: "11d8ef89c14e1ac06b1e01535d3b0649e4556ab79af6f0469bb664c1c146a772"
+last_crawled_at: "2026-04-27T20:34:25.541Z"
+content_hash: "8e273dbc9cafe36916db1e651d15f959c79b3d1788f30849f6dfc47b35b97dcb"
 menu_path: ["rotate"]
 section_path: []
-nav_prev: {"path": "tailwind/docs/perspective-origin/index.md", "title": "perspective-origin"}
-nav_next: {"path": "tailwind/docs/scale/index.md", "title": "scale"}
+content_language: "en"
 ---
-
 Utilities for rotating elements.
-
-Class
-
-Styles
-
-`rotate-none`
-
-`rotate: none;`
-
-`rotate-<number>`
-
-`rotate: <number>deg;`
-
-`-rotate-<number>`
-
-`rotate: calc(<number>deg * -1);`
-
-`rotate-(<custom-property>)`
-
-`rotate: var(<custom-property>);`
-
-`rotate-[<value>]`
-
-`rotate: <value>;`
-
-`rotate-x-<number>`
-
-`transform: rotateX(<number>deg) var(--tw-rotate-y);`
-
-`-rotate-x-<number>`
-
-`transform: rotateX(-<number>deg) var(--tw-rotate-y);`
-
-`rotate-x-(<custom-property>)`
-
-`transform: rotateX(var(<custom-property>)) var(--tw-rotate-y);`
-
-`rotate-x-[<value>]`
-
-`transform: rotateX(<value>) var(--tw-rotate-y);`
-
-`rotate-y-<number>`
-
-`transform: var(--tw-rotate-x) rotateY(<number>deg);`
 
 ## [Examples](#examples)
 
@@ -109,4 +63,4 @@ Prefix a `rotate` utility with a breakpoint variant like `md:` to only apply the
 <img class="rotate-45 md:rotate-60 ..." src="/img/mountains.jpg" />
 ```
 
-Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).
+Learn more about using variants in the [variants documentation](https://tailwindcss.com/docs/hover-focus-and-other-states).

@@ -5,35 +5,23 @@ canonical_url: "https://www.prisma.io/docs/orm/prisma-client/queries/transaction
 docset: "prisma"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:47:26.552Z"
-content_hash: "36ae2eef89c88664d12a43e6207989bb6b9834f82276a2850bb5c4be80c3db4b"
+last_crawled_at: "2026-04-27T19:39:11.375Z"
+content_hash: "c8bc0e70277f5cce0a9901df39b2c3fe6de69fd4e68307646807ff3985711b01"
 menu_path: ["Transactions and batch queries"]
 section_path: []
-nav_prev: {"path": "prisma/docs/orm/prisma-client/queries/relation-queries/index.md", "title": "CRUD"}
-nav_next: {"path": "prisma/docs/orm/prisma-client/setup-and-configuration/custom-model-and-field-names/index.md", "title": "Custom model and field names"}
+content_language: "en"
 ---
-
 A database transaction is a sequence of read/write operations guaranteed to succeed or fail as a whole (ACID properties: Atomic, Consistent, Isolated, Durable).
 
 Prisma Client supports transactions in several ways:
 
-Scenario
+| Scenario | Technique |
+| --- | --- |
+| Dependent writes | Nested writes |
+| Independent writes | `$transaction([])` API, Batch operations |
+| Read, modify, write | Interactive transactions |
 
-Technique
-
-Dependent writes
-
-Nested writes
-
-Independent writes
-
-`$transaction([])` API, Batch operations
-
-Read, modify, write
-
-Interactive transactions
-
-A [nested write](prisma/docs/orm/prisma-client/queries/relation-queries/index.md#nested-writes) performs multiple operations on related records in a single transaction:
+A [nested write](https://www.prisma.io/docs/orm/prisma-client/queries/relation-queries#nested-writes) performs multiple operations on related records in a single transaction:
 
 ```
 // Create user with posts in a single transaction
@@ -49,9 +37,9 @@ const user = await prisma.user.create({
 
 These bulk operations run as transactions:
 
-*   `createMany()` / `createManyAndReturn()`
-*   `updateMany()` / `updateManyAndReturn()`
-*   `deleteMany()`
+-   `createMany()` / `createManyAndReturn()`
+-   `updateMany()` / `updateManyAndReturn()`
+-   `deleteMany()`
 
 ### [Sequential operations](#sequential-operations)
 
@@ -150,121 +138,41 @@ await prisma.$transaction(
 
 Prisma Client supports the following isolation levels if they are available in the underlying database:
 
-*   `ReadUncommitted`
-*   `ReadCommitted`
-*   `RepeatableRead`
-*   `Snapshot`
-*   `Serializable`
+-   `ReadUncommitted`
+-   `ReadCommitted`
+-   `RepeatableRead`
+-   `Snapshot`
+-   `Serializable`
 
 The isolation levels available for each database connector are as follows:
 
-Database
-
-`ReadUncommitted`
-
-`ReadCommitted`
-
-`RepeatableRead`
-
-`Snapshot`
-
-`Serializable`
-
-PostgreSQL
-
-✔️
-
-✔️
-
-✔️
-
-No
-
-✔️
-
-MySQL
-
-✔️
-
-✔️
-
-✔️
-
-No
-
-✔️
-
-SQL Server
-
-✔️
-
-✔️
-
-✔️
-
-✔️
-
-✔️
-
-CockroachDB
-
-No
-
-No
-
-No
-
-No
-
-✔️
-
-SQLite
-
-No
-
-No
-
-No
-
-No
-
-✔️
+| Database | `ReadUncommitted` | `ReadCommitted` | `RepeatableRead` | `Snapshot` | `Serializable` |
+| --- | --- | --- | --- | --- | --- |
+| PostgreSQL | ✔️ | ✔️ | ✔️ | No | ✔️ |
+| MySQL | ✔️ | ✔️ | ✔️ | No | ✔️ |
+| SQL Server | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ |
+| CockroachDB | No | No | No | No | ✔️ |
+| SQLite | No | No | No | No | ✔️ |
 
 By default, Prisma Client sets the isolation level to the value currently configured in your database.
 
 The isolation levels configured by default in each database are as follows:
 
-Database
-
-Default
-
-PostgreSQL
-
-`ReadCommitted`
-
-MySQL
-
-`RepeatableRead`
-
-SQL Server
-
-`ReadCommitted`
-
-CockroachDB
-
-`Serializable`
-
-SQLite
-
-`Serializable`
+| Database | Default |
+| --- | --- |
+| PostgreSQL | `ReadCommitted` |
+| MySQL | `RepeatableRead` |
+| SQL Server | `ReadCommitted` |
+| CockroachDB | `Serializable` |
+| SQLite | `Serializable` |
 
 #### [Database-specific information on isolation levels](#database-specific-information-on-isolation-levels)
 
 See the following resources:
 
-*   [Transaction isolation levels in PostgreSQL](https://www.postgresql.org/docs/9.3/runtime-config-client.html#GUC-DEFAULT-TRANSACTION-ISOLATION)
-*   [Transaction isolation levels in Microsoft SQL Server](https://learn.microsoft.com/en-us/sql/t-sql/statements/set-transaction-isolation-level-transact-sql?view=sql-server-ver15)
-*   [Transaction isolation levels in MySQL](https://dev.mysql.com/doc/refman/8.0/en/innodb-transaction-isolation-levels.html)
+-   [Transaction isolation levels in PostgreSQL](https://www.postgresql.org/docs/9.3/runtime-config-client.html#GUC-DEFAULT-TRANSACTION-ISOLATION)
+-   [Transaction isolation levels in Microsoft SQL Server](https://learn.microsoft.com/en-us/sql/t-sql/statements/set-transaction-isolation-level-transact-sql?view=sql-server-ver15)
+-   [Transaction isolation levels in MySQL](https://dev.mysql.com/doc/refman/8.0/en/innodb-transaction-isolation-levels.html)
 
 CockroachDB and SQLite only support the `Serializable` isolation level.
 
@@ -283,7 +191,7 @@ To avoid transaction write conflicts and deadlocks on a transaction:
 
 1.  On your transaction, use the `isolationLevel` parameter to `Prisma.TransactionIsolationLevel.Serializable`.
     
-    This ensures that your application commits multiple concurrent or parallel transactions as if they were run serially. When a transaction fails due to a write conflict or deadlock, Prisma Client returns a [P2034 error](prisma/docs/orm/reference/error-reference/index.md#p2034).
+    This ensures that your application commits multiple concurrent or parallel transactions as if they were run serially. When a transaction fails due to a write conflict or deadlock, Prisma Client returns a [P2034 error](https://www.prisma.io/docs/orm/reference/error-reference#p2034).
     
 2.  In your application code, add a retry around your transaction to handle any P2034 errors, as shown in this example:
     
@@ -353,9 +261,9 @@ This may be counterintuitive because `Promise.all()` usually _parallelizes_ the 
 
 The reason for this behaviour is that:
 
-*   One transaction means that all queries inside it have to be run on the same connection.
-*   A database connection can only ever execute one query at a time.
-*   As one query blocks the connection while it is doing its work, putting a transaction into `Promise.all` effectively means that queries should be ran one after another.
+-   One transaction means that all queries inside it have to be run on the same connection.
+-   A database connection can only ever execute one query at a time.
+-   As one query blocks the connection while it is doing its work, putting a transaction into `Promise.all` effectively means that queries should be ran one after another.
 
 Writes are **dependent** when operations rely on the result of a preceding operation (e.g., using a database-generated ID).
 
@@ -378,8 +286,8 @@ If any operation fails, Prisma Client rolls back the entire transaction.
 
 Writes are **independent** if they don't rely on the result of a previous operation. Use these for:
 
-*   Updating the status of multiple orders to "Dispatched"
-*   Marking a list of emails as "Read"
+-   Updating the status of multiple orders to "Dispatched"
+-   Marking a list of emails as "Read"
 
 ### [Bulk operations](#bulk-operations)
 
@@ -407,7 +315,7 @@ If you pre-compute IDs (e.g., using UUIDs), you can use either nested writes or 
 
 Consider bulk operations as a solution if:
 
-*   ✔ You want to update a batch of the _same type_ of record, like a batch of emails
+-   ✔ You want to update a batch of the _same type_ of record, like a batch of emails
 
 #### [Scenario: Marking emails as read](#scenario-marking-emails-as-read)
 
@@ -487,8 +395,8 @@ As Prisma Client evolves, use cases for the `$transaction([])` API will increasi
 
 Consider the `$transaction([])` API if:
 
-*   ✔ You want to update a batch that includes different types of records, such as emails and users. The records do not need to be related in any way.
-*   ✔ You want to batch raw SQL queries (`$executeRaw`) - for example, for features that Prisma Client does not yet support.
+-   ✔ You want to update a batch that includes different types of records, such as emails and users. The records do not need to be related in any way.
+-   ✔ You want to batch raw SQL queries (`$executeRaw`) - for example, for features that Prisma Client does not yet support.
 
 #### [Scenario: Privacy legislation](#scenario-privacy-legislation)
 
@@ -634,27 +542,27 @@ There's no compelling reason to switch to manually generated IDs and the `$trans
 
 In some cases you may need to perform custom logic as part of an atomic operation - also known as the [read-modify-write pattern](https://en.wikipedia.org/wiki/Read%E2%80%93modify%E2%80%93write). The following is an example of the read-modify-write pattern:
 
-*   Read a value from the database
-*   Run some logic to manipulate that value (for example, contacting an external API)
-*   Write the value back to the database
+-   Read a value from the database
+-   Run some logic to manipulate that value (for example, contacting an external API)
+-   Write the value back to the database
 
 All operations should **succeed or fail together** without making unwanted changes to the database, but you do not necessarily need to use an actual database transaction. This section of the guide describes two ways to work with Prisma Client and the read-modify-write pattern:
 
-*   Designing idempotent APIs
-*   Optimistic concurrency control
+-   Designing idempotent APIs
+-   Optimistic concurrency control
 
 ### [Idempotent APIs](#idempotent-apis)
 
 Idempotency is the ability to run the same logic with the same parameters multiple times with the same result: the **effect on the database** is the same whether you run the logic once or one thousand times. For example:
 
-*   **NOT IDEMPOTENT**: Upsert (update-or-insert) a user in the database with email address `"letoya@prisma.io"`. The `User` table **does not** enforce unique email addresses. The effect on the database is different if you run the logic once (one user created) or ten times (ten users created).
-*   **IDEMPOTENT**: Upsert (update-or-insert) a user in the database with the email address `"letoya@prisma.io"`. The `User` table **does** enforce unique email addresses. The effect on the database is the same if you run the logic once (one user created) or ten times (existing user is updated with the same input).
+-   **NOT IDEMPOTENT**: Upsert (update-or-insert) a user in the database with email address `"letoya@prisma.io"`. The `User` table **does not** enforce unique email addresses. The effect on the database is different if you run the logic once (one user created) or ten times (ten users created).
+-   **IDEMPOTENT**: Upsert (update-or-insert) a user in the database with the email address `"letoya@prisma.io"`. The `User` table **does** enforce unique email addresses. The effect on the database is the same if you run the logic once (one user created) or ten times (existing user is updated with the same input).
 
 Idempotency is something you can and should actively design into your application wherever possible.
 
 #### [When to design an idempotent API](#when-to-design-an-idempotent-api)
 
-*   ✔ You need to be able to retry the same logic without creating unwanted side-effects in the databases
+-   ✔ You need to be able to retry the same logic without creating unwanted side-effects in the databases
 
 #### [Scenario: Upgrading a Slack team](#scenario-upgrading-a-slack-team)
 
@@ -715,8 +623,8 @@ This example has a problem: you can only run the logic _once_. Consider the foll
 2.  Updating the team **fails** - the team is not marked as a customer in the Slack database
 3.  The customer is charged by Stripe, but paid features are not unlocked in Slack because the team lacks a valid `customerId`
 4.  Running the same code again either:
-    *   Results in an error because the team (defined by `externalId`) already exists - Stripe never returns a customer ID
-    *   If `externalId` is not subject to a unique constraint, Stripe creates yet another subscription (**not idempotent**)
+    -   Results in an error because the team (defined by `externalId`) already exists - Stripe never returns a customer ID
+    -   If `externalId` is not subject to a unique constraint, Stripe creates yet another subscription (**not idempotent**)
 
 You cannot re-run this code in case of an error and you cannot change to another plan without being charged twice.
 
@@ -773,19 +681,19 @@ Optimistic concurrency control (OCC) is a model for handling concurrent operatio
 
 If a ❌ conflict occurs (someone else has changed the record since you read it), you cancel the transaction. Depending on your scenario, you can then:
 
-*   Re-try the transaction (book another cinema seat)
-*   Throw an error (alert the user that they are about to overwrite changes made by someone else)
+-   Re-try the transaction (book another cinema seat)
+-   Throw an error (alert the user that they are about to overwrite changes made by someone else)
 
 This section describes how to build your own optimistic concurrency control. See also: Plans for [application-level optimistic concurrency control on GitHub](https://github.com/prisma/prisma/issues/4988)
 
 #### [When to use optimistic concurrency control](#when-to-use-optimistic-concurrency-control)
 
-*   ✔ You anticipate a high number of concurrent requests (multiple people booking cinema seats)
-*   ✔ You anticipate that conflicts between those concurrent requests will be rare
+-   ✔ You anticipate a high number of concurrent requests (multiple people booking cinema seats)
+-   ✔ You anticipate that conflicts between those concurrent requests will be rare
 
 Avoiding locks in an application with a high number of concurrent requests makes the application more resilient to load and more scalable overall. Although locking is not inherently bad, locking in a high concurrency environment can lead to unintended consequences - even if you are locking individual rows, and only for a short amount of time. For more information, see:
 
-*   [Why ROWLOCK Hints Can Make Queries Slower and Blocking Worse in SQL Server](https://kendralittle.com/2016/02/04/why-rowlock-hints-can-make-queries-slower-and-blocking-worse-in-sql-server/)
+-   [Why ROWLOCK Hints Can Make Queries Slower and Blocking Worse in SQL Server](https://kendralittle.com/2016/02/04/why-rowlock-hints-can-make-queries-slower-and-blocking-worse-in-sql-server/)
 
 #### [Scenario: Reserving a seat at the cinema](#scenario-reserving-a-seat-at-the-cinema)
 

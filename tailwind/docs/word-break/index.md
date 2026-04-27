@@ -5,31 +5,13 @@ canonical_url: "https://tailwindcss.com/docs/word-break"
 docset: "tailwind"
 kind: "framework"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:59:46.201Z"
-content_hash: "c3a4c447e134dc5930887eb5ebe978708419031b3668dab2c9f172a4c315357f"
+last_crawled_at: "2026-04-27T20:14:34.591Z"
+content_hash: "44792f4fe74068bf312b9e87a31ebaa7585bca008457f7e30168fdcddd9dd30c"
 menu_path: ["word-break"]
 section_path: []
-nav_prev: {"path": "tailwind/docs/white-space/index.md", "title": "white-space"}
-nav_next: {"path": "tailwind/docs/overflow-wrap/index.md", "title": "overflow-wrap"}
+content_language: "en"
 ---
-
 Utilities for controlling word breaks in an element.
-
-Class
-
-Styles
-
-`break-normal`
-
-`word-break: normal;`
-
-`break-all`
-
-`word-break: break-all;`
-
-`break-keep`
-
-`word-break: keep-all;`
 
 ## [Examples](#examples)
 
@@ -73,4 +55,4 @@ Prefix a `word-break` utility with a breakpoint variant like `md:` to only apply
 <p class="break-normal md:break-all ...">  Lorem ipsum dolor sit amet...</p>
 ```
 
-Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).
+Learn more about using variants in the [variants documentation](https://tailwindcss.com/docs/hover-focus-and-other-states).

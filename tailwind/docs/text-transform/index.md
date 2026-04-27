@@ -5,41 +5,46 @@ canonical_url: "https://tailwindcss.com/docs/text-transform"
 docset: "tailwind"
 kind: "framework"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:58:31.336Z"
-content_hash: "75824e73618d7732b10acfb090b4dbfb97d512cad135ae301d0d0c77256348f8"
+last_crawled_at: "2026-04-27T20:12:49.976Z"
+content_hash: "6b3feb9e5eba8b2658b31d13c6f713f93d127e17e174fc3d8254f7e7d76a11c9"
 menu_path: ["text-transform"]
 section_path: []
-nav_prev: {"path": "tailwind/docs/text-underline-offset/index.md", "title": "text-underline-offset"}
-nav_next: {"path": "tailwind/docs/text-overflow/index.md", "title": "text-overflow"}
+content_language: "en"
 ---
+[](/)
+
+[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
+
+1.  Typography
+2.  text-transform
+
+Typography
 
 # text-transform
 
 Utilities for controlling the capitalization of text.
 
-Class
-
-Styles
-
-`uppercase`
-
+| Class | Styles |
+| --- | --- |
+| `uppercase` | 
 `text-transform: uppercase;`
 
-`lowercase`
+ |
+| `lowercase` | 
 
 `text-transform: lowercase;`
 
-`capitalize`
+ |
+| `capitalize` | 
 
 `text-transform: capitalize;`
 
-`normal-case`
+ |
+| `normal-case` | 
 
 `text-transform: none;`
 
-## [Examples](#examples)
-
-### [Uppercasing text](#uppercasing-text)
+ |
 
 Use the `uppercase` utility to uppercase the text of an element:
 
@@ -49,8 +54,6 @@ The quick brown fox jumps over the lazy dog.
 <p class="uppercase">The quick brown fox ...</p>
 ```
 
-### [Lowercasing text](#lowercasing-text)
-
 Use the `lowercase` utility to lowercase the text of an element:
 
 The quick brown fox jumps over the lazy dog.
@@ -58,8 +61,6 @@ The quick brown fox jumps over the lazy dog.
 ```
 <p class="lowercase">The quick brown fox ...</p>
 ```
-
-### [Capitalizing text](#capitalizing-text)
 
 Use the `capitalize` utility to capitalize text of an element:
 
@@ -69,8 +70,6 @@ The quick brown fox jumps over the lazy dog.
 <p class="capitalize">The quick brown fox ...</p>
 ```
 
-### [Resetting text casing](#resetting-text-casing)
-
 Use the `normal-case` utility to preserve the original text casing of an element—typically used to reset capitalization at different breakpoints:
 
 The quick brown fox jumps over the lazy dog.
@@ -78,8 +77,6 @@ The quick brown fox jumps over the lazy dog.
 ```
 <p class="normal-case">The quick brown fox ...</p>
 ```
-
-### [Responsive design](#responsive-design)
 
 Prefix a `text-transform` utility with a breakpoint variant like `md:` to only apply the utility at medium screen sizes and above:
 
@@ -91,13 +88,13 @@ Learn more about using variants in the [variants documentation](/docs/hover-focu
 
 ### On this page
 
-*   [Quick reference](#quick-reference)
-*   [Examples](#examples)
-    *   [Uppercasing text](#uppercasing-text)
-    *   [Lowercasing text](#lowercasing-text)
-    *   [Capitalizing text](#capitalizing-text)
-    *   [Resetting text casing](#resetting-text-casing)
-    *   [Responsive design](#responsive-design)
+-   [Quick reference](#quick-reference)
+-   [Examples](#examples)
+    -   [Uppercasing text](#uppercasing-text)
+    -   [Lowercasing text](#lowercasing-text)
+    -   [Capitalizing text](#capitalizing-text)
+    -   [Resetting text casing](#resetting-text-casing)
+    -   [Responsive design](#responsive-design)
 
 [
 

@@ -5,45 +5,51 @@ canonical_url: "https://tailwindcss.com/docs/background-size"
 docset: "tailwind"
 kind: "framework"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:02:09.019Z"
-content_hash: "659d31aeec98489b8d81291d87c87775d1f077c9eefabf2fa2bf2a06405d8e28"
+last_crawled_at: "2026-04-27T20:18:05.034Z"
+content_hash: "c87d8eb6eeb3b6b88d73c5ccfa47f25963499b98b949b1cc18cff70783ea679f"
 menu_path: ["background-size"]
 section_path: []
-nav_prev: {"path": "tailwind/docs/background-repeat/index.md", "title": "background-repeat"}
-nav_next: {"path": "tailwind/docs/border-radius/index.md", "title": "border-radius"}
+content_language: "en"
 ---
+[](/)
+
+[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
+
+1.  Backgrounds
+2.  background-size
+
+Backgrounds
 
 # background-size
 
 Utilities for controlling the background size of an element's background image.
 
-Class
-
-Styles
-
-`bg-auto`
-
+| Class | Styles |
+| --- | --- |
+| `bg-auto` | 
 `background-size: auto;`
 
-`bg-cover`
+ |
+| `bg-cover` | 
 
 `background-size: cover;`
 
-`bg-contain`
+ |
+| `bg-contain` | 
 
 `background-size: contain;`
 
-`bg-size-(<custom-property>)`
+ |
+| `bg-size-(<custom-property>)` | 
 
 `background-size: var(<custom-property>);`
 
-`bg-size-[<value>]`
+ |
+| `bg-size-[<value>]` | 
 
 `background-size: <value>;`
 
-## [Examples](#examples)
-
-### [Filling the container](#filling-the-container)
+ |
 
 Use the `bg-cover` utility to scale the background image until it fills the background layer, cropping the image if needed:
 
@@ -51,23 +57,17 @@ Use the `bg-cover` utility to scale the background image until it fills the back
 <div class="bg-[url(/img/mountains.jpg)] bg-cover bg-center"></div>
 ```
 
-### [Filling without cropping](#filling-without-cropping)
-
 Use the `bg-contain` utility to scale the background image to the outer edges without cropping or stretching:
 
 ```
 <div class="bg-[url(/img/mountains.jpg)] bg-contain bg-center"></div>
 ```
 
-### [Using the default size](#using-the-default-size)
-
 Use the `bg-auto` utility to display the background image at its default size:
 
 ```
 <div class="bg-[url(/img/mountains.jpg)] bg-auto bg-center bg-no-repeat"></div>
 ```
-
-### [Using a custom value](#using-a-custom-value)
 
 Use the `bg-size-[<value>]` syntax to set the background size based on a completely custom value:
 
@@ -83,8 +83,6 @@ For CSS variables, you can also use the `bg-size-(<custom-property>)` syntax:
 
 This is just a shorthand for `bg-size-[var(<custom-property>)]` that adds the `var()` function for you automatically.
 
-### [Responsive design](#responsive-design)
-
 Prefix a `background-size` utility with a breakpoint variant like `md:` to only apply the utility at medium screen sizes and above:
 
 ```
@@ -95,13 +93,13 @@ Learn more about using variants in the [variants documentation](/docs/hover-focu
 
 ### On this page
 
-*   [Quick reference](#quick-reference)
-*   [Examples](#examples)
-    *   [Filling the container](#filling-the-container)
-    *   [Filling without cropping](#filling-without-cropping)
-    *   [Using the default size](#using-the-default-size)
-    *   [Using a custom value](#using-a-custom-value)
-    *   [Responsive design](#responsive-design)
+-   [Quick reference](#quick-reference)
+-   [Examples](#examples)
+    -   [Filling the container](#filling-the-container)
+    -   [Filling without cropping](#filling-without-cropping)
+    -   [Using the default size](#using-the-default-size)
+    -   [Using a custom value](#using-a-custom-value)
+    -   [Responsive design](#responsive-design)
 
 ![Build UIs that don’t suck — 5-day mini-course](/_next/static/media/course-promo.d3d6bc78.jpg)
 

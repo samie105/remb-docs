@@ -5,24 +5,23 @@ canonical_url: "https://www.prisma.io/docs/orm/prisma-migrate/workflows/squashin
 docset: "prisma"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:51:23.638Z"
-content_hash: "22b39347e7efe2d4152aa889b6e766b56a2cf04192c77fb6a2762c31cd9acf40"
+last_crawled_at: "2026-04-27T19:41:49.301Z"
+content_hash: "ac45eb1a1e82f4de168986f206eff9bba209e2d524dc554151793f42291c75a9"
 menu_path: ["Squashing migrations"]
 section_path: []
-nav_prev: {"path": "prisma/docs/orm/prisma-migrate/workflows/seeding/index.md", "title": "Seeding"}
-nav_next: {"path": "prisma/docs/orm/prisma-migrate/workflows/troubleshooting/index.md", "title": "Troubleshooting"}
+tab_variants: ["npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun"]
+content_language: "en"
 ---
-
 Workflows
 
 How to squash multiple migration files into a single migration
 
 It is sometimes useful to squash either some or all migration files into a single migration. This guide will describe two scenarios where you may want to do this:
 
-*   [Migrating cleanly from a development environment](#migrating-cleanly-from-a-development-environment) by squashing your local migrations into one before merging
-*   [Creating a clean history in a production environment](#creating-a-clean-history-in-a-production-environment) by squashing all migrations into a single file
+-   [Migrating cleanly from a development environment](#migrating-cleanly-from-a-development-environment) by squashing your local migrations into one before merging
+-   [Creating a clean history in a production environment](#creating-a-clean-history-in-a-production-environment) by squashing all migrations into a single file
 
-In both cases, Prisma Migrate provides the tools for doing this, by using the [`migrate diff`](prisma/docs/orm/reference/prisma-cli-reference/index.md#migrate-diff) command to compare two database schemas and output a single SQL file that takes you from one to the other. The rest of this guide gives detailed instructions on how to carry this out in these two scenarios.
+In both cases, Prisma Migrate provides the tools for doing this, by using the [`migrate diff`](https://www.prisma.io/docs/orm/reference/prisma-cli-reference#migrate-diff) command to compare two database schemas and output a single SQL file that takes you from one to the other. The rest of this guide gives detailed instructions on how to carry this out in these two scenarios.
 
 ### [Migrating cleanly from a development environment](#migrating-cleanly-from-a-development-environment)
 
@@ -40,27 +39,27 @@ For detailed steps on how to achieve this using `migrate diff` and `migrate reso
 
 This section provides step-by-step instructions on how to squash migrations in the two scenarios discussed above:
 
-*   [Migrating cleanly from a development environment](#how-to-migrate-cleanly-from-a-development-environment)
-*   [Creating a clean history in a production environment](#how-to-create-a-clean-history-in-a-production-environment)
+-   [Migrating cleanly from a development environment](#how-to-migrate-cleanly-from-a-development-environment)
+-   [Creating a clean history in a production environment](#how-to-create-a-clean-history-in-a-production-environment)
 
 ### [How to migrate cleanly from a development environment](#how-to-migrate-cleanly-from-a-development-environment)
 
 Before squashing your migrations, make sure you have the following starting conditions:
 
-*   The contents of the migrations to be squashed are not yet applied on the production database
-*   All migrations applied to production are part of the local migration history already
-*   There is no custom SQL in any of the new migration files that you have added to your branch
+-   The contents of the migrations to be squashed are not yet applied on the production database
+-   All migrations applied to production are part of the local migration history already
+-   There is no custom SQL in any of the new migration files that you have added to your branch
 
 Then follow these steps:
 
-*   Reset the contents of your local `./prisma/migrations` folder to match the migration history on the `main` branch
-*   Create a new migration:
+-   Reset the contents of your local `./prisma/migrations` folder to match the migration history on the `main` branch
+-   Create a new migration:
 
 This creates a single migration that takes you:
 
-*   from the state of the `main` branch as described in your reset migration history
-*   to the state of your local feature as described in your `./prisma/schema.prisma` file
-*   and outputs this to a new `migration.sql` file in a new directory ending with `squashed_migrations` (specified with the `--name` flag)
+-   from the state of the `main` branch as described in your reset migration history
+-   to the state of your local feature as described in your `./prisma/schema.prisma` file
+-   and outputs this to a new `migration.sql` file in a new directory ending with `squashed_migrations` (specified with the `--name` flag)
 
 This single migration file can now be applied to production using `migrate deploy`.
 
@@ -68,33 +67,31 @@ This single migration file can now be applied to production using `migrate deplo
 
 Before squashing your migrations, make sure you have the following starting conditions:
 
-*   All migrations in the migration history are applied on the production database
-*   The datamodel matches the migration history
-*   The datamodel and the migration history are in sync
+-   All migrations in the migration history are applied on the production database
+-   The datamodel matches the migration history
+-   The datamodel and the migration history are in sync
 
 Then follow these steps, either on your `main` branch or on a newly checked out branch that gets merged back to `main` before anything else changes there:
 
-*   Delete all contents of the `./prisma/migrations` directory
+-   Delete all contents of the `./prisma/migrations` directory
     
-*   Create a new empty directory in the `./prisma/migrations` directory. In this guide this will be called `000000000000_squashed_migrations`. Inside this, add a new empty `migration.sql` file.
+-   Create a new empty directory in the `./prisma/migrations` directory. In this guide this will be called `000000000000_squashed_migrations`. Inside this, add a new empty `migration.sql` file.
     
 
-*   Create a single migration that takes you:
+-   Create a single migration that takes you:
     
-    *   from an empty database
-    *   to the current state of the production database schema as described in your `./prisma/schema.prisma` file
-    *   and outputs this to the `migration.sql` file created above
+    -   from an empty database
+    -   to the current state of the production database schema as described in your `./prisma/schema.prisma` file
+    -   and outputs this to the `migration.sql` file created above
     
     You can do this using the `migrate diff` command. From the root directory of your project, run the following command:
     
 
-*   Mark this migration as having been applied on production, to prevent it from being run there:
+-   Mark this migration as having been applied on production, to prevent it from being run there:
     
-    You can do this using the [`migrate resolve`](prisma/docs/orm/reference/prisma-cli-reference/index.md#migrate-resolve) command to mark the migration in the `000000000000_squashed_migrations` directory as already applied:
+    You can do this using the [`migrate resolve`](https://www.prisma.io/docs/orm/reference/prisma-cli-reference#migrate-resolve) command to mark the migration in the `000000000000_squashed_migrations` directory as already applied:
     
 
 You should now have a single migration file that is marked as having been applied on production. New checkouts only get one single migration taking them to the state of the production database schema.
 
 The production database still contains the history of applied migrations in the migrations table. The history of the migrations folder and data models is also still available in source control.
-
-[Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/prisma-migrate/workflows/squashing-migrations.mdx)

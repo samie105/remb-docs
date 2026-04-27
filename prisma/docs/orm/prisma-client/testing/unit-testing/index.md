@@ -5,23 +5,22 @@ canonical_url: "https://www.prisma.io/docs/orm/prisma-client/testing/unit-testin
 docset: "prisma"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:49:05.651Z"
-content_hash: "e718e18ed6ce9b48af87dc5575c9b890ed9f4df207b9e3c10a1be56e52090aed"
+last_crawled_at: "2026-04-27T19:40:11.826Z"
+content_hash: "dbfd84e85b37cf901e7d9bf25eeea8bf33ad4da8c385a05f40107c74fb9996b7"
 menu_path: ["Unit testing"]
 section_path: []
-nav_prev: {"path": "prisma/docs/orm/prisma-client/testing/integration-testing/index.md", "title": "Integration testing"}
-nav_next: {"path": "prisma/docs/orm/prisma-client/type-safety/index.md", "title": "Type safety Overview"}
+tab_variants: ["npm","pnpm","yarn","bun"]
+content_language: "en"
 ---
-
 Testing
 
 Learn how to setup and run unit tests with Prisma Client
 
 Unit testing aims to isolate a small portion (unit) of code and test it for logically predictable behaviors. It generally involves mocking objects or server responses to simulate real world behaviors. Some benefits to unit testing include:
 
-*   Quickly find and isolate bugs in code.
-*   Provides documentation for each module of code by way of indicating what certain code blocks should be doing.
-*   A helpful gauge that a refactor has gone well. The tests should still pass after code has been refactored.
+-   Quickly find and isolate bugs in code.
+-   Provides documentation for each module of code by way of indicating what certain code blocks should be doing.
+-   A helpful gauge that a refactor has gone well. The tests should still pass after code has been refactored.
 
 In the context of Prisma ORM, this generally means testing a function which makes database calls using Prisma Client.
 
@@ -43,6 +42,8 @@ The following steps guide you through mocking Prisma Client using a singleton pa
 
 1.  Create a file at your projects root called `client.ts` and add the following code. This will instantiate a Prisma Client instance.
     
+    client.ts
+    
     ```
     import "dotenv/config";
     import { PrismaPg } from "@prisma/adapter-pg";
@@ -57,6 +58,8 @@ The following steps guide you through mocking Prisma Client using a singleton pa
     ```
     
 2.  Next create a file named `singleton.ts` at your projects root and add the following:
+    
+    singleton.ts
     
     ```
     import { PrismaClient } from "../generated/prisma/client";
@@ -81,6 +84,8 @@ The singleton file tells Jest to mock a default export (the Prisma Client instan
 
 Next, add the `setupFilesAfterEnv` property to your `jest.config.js` file with the path to your `singleton.ts` file.
 
+jest.config.js
+
 ```
 module.exports = {
   clearMocks: true,
@@ -95,6 +100,8 @@ module.exports = {
 Another popular pattern that can be used is dependency injection.
 
 1.  Create a `context.ts` file and add the following:
+    
+    context.ts
     
     ```
     import { PrismaClient } from "../generated/prisma/client";
@@ -137,6 +144,8 @@ A real world use case for unit testing Prisma ORM might be a signup form. Your u
 
 All of the examples that follow use the following schema model:
 
+schema.prisma
+
 ```
 model User {
   id                       Int     @id @default(autoincrement())
@@ -148,11 +157,13 @@ model User {
 
 The following unit tests will mock the process of
 
-*   Creating a new user
-*   Updating a users name
-*   Failing to create a user if terms are not accepted
+-   Creating a new user
+-   Updating a users name
+-   Failing to create a user if terms are not accepted
 
 The functions that use the dependency injection pattern will have the context injected (passed in as a parameter) into them, whereas the functions that use the singleton pattern will use the singleton instance of Prisma Client.
+
+functions-with-context.ts
 
 ```
 import { Context } from "./context";
@@ -186,6 +197,8 @@ export async function updateUsername(user: UpdateUser, ctx: Context) {
   });
 }
 ```
+
+functions-without-context.ts
 
 ```
 import prisma from "./client";
@@ -225,6 +238,8 @@ The tests for each methodology are fairly similar, the difference is how the moc
 The **_dependency injection_** example passes the context through to the function that is being tested as well as using it to call the mock implementation.
 
 The **_singleton_** example uses the singleton client instance to call the mock implementation.
+
+\_\_tests\_\_/with-singleton.ts
 
 ```
 import { createUser, updateUsername } from "../functions-without-context";
@@ -279,6 +294,8 @@ test("should fail if user does not accept terms", async () => {
   await expect(createUser(user)).resolves.toEqual(new Error("User must accept terms!"));
 });
 ```
+
+\_\_tests\_\_/with-dependency-injection.ts
 
 ```
 import { MockContext, Context, createMockContext } from "../context";
@@ -339,5 +356,3 @@ test("should fail if user does not accept terms", async () => {
   await expect(createUser(user, ctx)).resolves.toEqual(new Error("User must accept terms!"));
 });
 ```
-
-[Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/prisma-client/testing/unit-testing.mdx)

@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/app/guides/upgrading"
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:16:49.280Z"
-content_hash: "8aff2c2cc49bc789883b93e7a5f40532893cb1947358a92b16f390867f538b25"
+last_crawled_at: "2026-04-27T18:16:11.061Z"
+content_hash: "7bf4223ffc0a303ffd4a1613a4fbf8b1d84b08654272a19912d16cfe66a3a9d8"
 menu_path: ["Upgrade Guides"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/guides/third-party-libraries/index.md", "title": "How to optimize third-party libraries"}
-nav_next: {"path": "nextjs/docs/app/guides/upgrading/codemods/index.md", "title": "Codemods"}
+version: "latest"
+content_language: "en"
 ---
+[App Router](/docs/app)[Guides](/docs/app/guides)Upgrading
 
 # Upgrade Guides
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 Learn how to upgrade to the latest versions of Next.js following the versions-specific guides:
 
@@ -45,20 +46,4 @@ Upgrade your Next.js Application from Version 15 to 16.
 
 ](/docs/app/guides/upgrading/version-16)
 
-[Previous
-
-Third Party Libraries
-
-](/docs/app/guides/third-party-libraries)
-
-[Next
-
-Codemods
-
-](/docs/app/guides/upgrading/codemods)
-
 Was this helpful?
-
-supported.
-
-Send

@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/pages/building-your-application/routing"
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:23:15.652Z"
-content_hash: "778028f28013de27742489a4eb6ad2b6167190ae6574a04853342ff8aae4aab7"
+last_crawled_at: "2026-04-27T18:22:33.533Z"
+content_hash: "d3786eb8fbb67b490a1d975087d3b98e96f5060892f59562494f7f34e155de11"
 menu_path: ["Routing"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/pages/building-your-application/index.md", "title": "Building Your Application"}
-nav_next: {"path": "nextjs/docs/pages/building-your-application/routing/pages-and-layouts/index.md", "title": "Pages and Layouts"}
+version: "latest"
+content_language: "en"
 ---
+[Pages Router](/docs/pages)[Building Your Application](/docs/pages/building-your-application)Routing
 
 # Routing
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 The Pages Router has a file-system based router built on concepts of pages. When a file is added to the `pages` directory it's automatically available as a route. Learn more about routing in the Pages Router:
 
@@ -64,7 +65,3 @@ Override and extend the built-in Error page to handle custom errors.
 ](/docs/pages/building-your-application/routing/custom-error)
 
 Was this helpful?
-
-supported.
-
-Send

@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/app/api-reference/adapters/routing-with-
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:05:55.590Z"
-content_hash: "ba2f799540d64a6048619ecf61a40aefe992bf0e0d95070ae23b7d62493e6b54"
+last_crawled_at: "2026-04-27T18:04:46.607Z"
+content_hash: "1aed98c1d0de1e4af1e2ef462aea39aeb8c71f86c6e7ceb2cc4b27140affbd13"
 menu_path: ["Routing with @next/routing"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/api-reference/adapters/testing-adapters/index.md", "title": "Testing Adapters"}
-nav_next: {"path": "nextjs/docs/app/api-reference/adapters/implementing-ppr-in-an-adapter/index.md", "title": "Implementing PPR in an Adapter"}
+version: "latest"
+content_language: "en"
 ---
+[API Reference](/docs/app/api-reference)[Adapters](/docs/app/api-reference/adapters)Routing with @next/routing
 
 # Routing with @next/routing
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 You can use [`@next/routing`](https://www.npmjs.com/package/@next/routing) to reproduce Next.js route matching behavior with data from `onBuildComplete`.
 
@@ -56,32 +57,16 @@ if (result.resolvedPathname) {
 
 `resolveRoutes()` returns:
 
-*   `middlewareResponded`: `true` when middleware already sent a response (the adapter should not invoke an entrypoint).
-*   `externalRewrite`: A `URL` when routing resolved to an external rewrite destination.
-*   `redirect`: An object with `url` (`URL`) and `status` when the request should be redirected.
-*   `resolvedPathname`: The route pathname selected by Next.js routing. For dynamic routes, this is the matched route template such as `/blog/[slug]`.
-*   `resolvedQuery`: The final query after rewrites or middleware have added or replaced search params.
-*   `invocationTarget`: The concrete pathname and query to invoke for the matched route.
-*   `resolvedHeaders`: A `Headers` object containing any headers added or modified during routing.
-*   `status`: An HTTP status code set by routing (for example from a redirect or rewrite rule).
-*   `routeMatches`: A record of named matches extracted from dynamic route segments.
+-   `middlewareResponded`: `true` when middleware already sent a response (the adapter should not invoke an entrypoint).
+-   `externalRewrite`: A `URL` when routing resolved to an external rewrite destination.
+-   `redirect`: An object with `url` (`URL`) and `status` when the request should be redirected.
+-   `resolvedPathname`: The route pathname selected by Next.js routing. For dynamic routes, this is the matched route template such as `/blog/[slug]`.
+-   `resolvedQuery`: The final query after rewrites or middleware have added or replaced search params.
+-   `invocationTarget`: The concrete pathname and query to invoke for the matched route.
+-   `resolvedHeaders`: A `Headers` object containing any headers added or modified during routing.
+-   `status`: An HTTP status code set by routing (for example from a redirect or rewrite rule).
+-   `routeMatches`: A record of named matches extracted from dynamic route segments.
 
 For example, if `/blog/post-1?draft=1` matches `/blog/[slug]?slug=post-1`, `resolvedPathname` is `/blog/[slug]` while `invocationTarget.pathname` is `/blog/post-1`.
 
-[Previous
-
-Testing Adapters
-
-](/docs/app/api-reference/adapters/testing-adapters)
-
-[Next
-
-Implementing PPR in an Adapter
-
-](/docs/app/api-reference/adapters/implementing-ppr-in-an-adapter)
-
 Was this helpful?
-
-supported.
-
-Send

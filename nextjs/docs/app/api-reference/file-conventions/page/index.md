@@ -5,23 +5,22 @@ canonical_url: "https://nextjs.org/docs/app/api-reference/file-conventions/page"
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:10:31.548Z"
-content_hash: "9ceb93b8879386b7ef433ccb426dfdfef48753c577664bbe021c9a4d89176485"
+last_crawled_at: "2026-04-27T18:09:12.122Z"
+content_hash: "51148bcbf0b8ba4e8212a45c930efd722048e26e9cc50832e6990440185a655d"
 menu_path: ["page.js"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/api-reference/file-conventions/not-found/index.md", "title": "not-found.js"}
-nav_next: {"path": "nextjs/docs/app/api-reference/file-conventions/parallel-routes/index.md", "title": "Parallel Routes"}
+version: "latest"
+content_language: "en"
 ---
+[API Reference](/docs/app/api-reference)[File-system conventions](/docs/app/api-reference/file-conventions)page.js
 
 # page.js
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 The `page` file allows you to define UI that is **unique** to a route. You can create a page by default exporting a component from the file:
 
 app/blog/\[slug\]/page.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -39,11 +38,11 @@ export default function Page({
 
 ## Good to know[](#good-to-know)
 
-*   The `.js`, `.jsx`, or `.tsx` file extensions can be used for `page`.
-*   A `page` is always the **leaf** of the route subtree.
-*   A `page` file is required to make a route segment **publicly accessible**.
-*   Pages are [Server Components](https://react.dev/reference/rsc/server-components) by default, but can be set to a [Client Component](https://react.dev/reference/rsc/use-client).
-*   In the [component hierarchy](/docs/app/getting-started/project-structure#component-hierarchy), `page.js` is the innermost file convention. It is wrapped by `loading.js` (Suspense boundary), `error.js` (error boundary), `template.js`, and `layout.js` in the same segment.
+-   The `.js`, `.jsx`, or `.tsx` file extensions can be used for `page`.
+-   A `page` is always the **leaf** of the route subtree.
+-   A `page` file is required to make a route segment **publicly accessible**.
+-   Pages are [Server Components](https://react.dev/reference/rsc/server-components) by default, but can be set to a [Client Component](https://react.dev/reference/rsc/use-client).
+-   In the [component hierarchy](/docs/app/getting-started/project-structure#component-hierarchy), `page.js` is the innermost file convention. It is wrapped by `loading.js` (Suspense boundary), `error.js` (error boundary), `template.js`, and `layout.js` in the same segment.
 
 ## Reference[](#reference)
 
@@ -54,8 +53,6 @@ export default function Page({
 A promise that resolves to an object containing the [dynamic route parameters](/docs/app/api-reference/file-conventions/dynamic-routes) from the root segment down to that page.
 
 app/shop/\[slug\]/page.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -69,40 +66,20 @@ export default async function Page({
 }
 ```
 
-Example Route
+| Example Route | URL | `params` |
+| --- | --- | --- |
+| `app/shop/[slug]/page.js` | `/shop/1` | `Promise<{ slug: '1' }>` |
+| `app/shop/[category]/[item]/page.js` | `/shop/1/2` | `Promise<{ category: '1', item: '2' }>` |
+| `app/shop/[...slug]/page.js` | `/shop/1/2` | `Promise<{ slug: ['1', '2'] }>` |
 
-URL
-
-`params`
-
-`app/shop/[slug]/page.js`
-
-`/shop/1`
-
-`Promise<{ slug: '1' }>`
-
-`app/shop/[category]/[item]/page.js`
-
-`/shop/1/2`
-
-`Promise<{ category: '1', item: '2' }>`
-
-`app/shop/[...slug]/page.js`
-
-`/shop/1/2`
-
-`Promise<{ slug: ['1', '2'] }>`
-
-*   Since the `params` prop is a promise, you must use `async/await` or React's [`use`](https://react.dev/reference/react/use) function to access the values.
-    *   In version 14 and earlier, `params` was a synchronous prop. To help with backwards compatibility, you can still access it synchronously in Next.js 15, but this behavior will be deprecated in the future.
+-   Since the `params` prop is a promise, you must use `async/await` or React's [`use`](https://react.dev/reference/react/use) function to access the values.
+    -   In version 14 and earlier, `params` was a synchronous prop. To help with backwards compatibility, you can still access it synchronously in Next.js 15, but this behavior will be deprecated in the future.
 
 #### `searchParams` (optional)[](#searchparams-optional)
 
 A promise that resolves to an object containing the [search parameters](https://developer.mozilla.org/docs/Learn/Common_questions/What_is_a_URL#parameters) of the current URL. For example:
 
 app/shop/page.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -120,8 +97,6 @@ Client Component **pages** can also access `searchParams` using React’s [`use`
 
 app/shop/page.tsx
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -137,26 +112,16 @@ export default function Page({
 }
 ```
 
-Example URL
+| Example URL | `searchParams` |
+| --- | --- |
+| `/shop?a=1` | `Promise<{ a: '1' }>` |
+| `/shop?a=1&b=2` | `Promise<{ a: '1', b: '2' }>` |
+| `/shop?a=1&a=2` | `Promise<{ a: ['1', '2'] }>` |
 
-`searchParams`
-
-`/shop?a=1`
-
-`Promise<{ a: '1' }>`
-
-`/shop?a=1&b=2`
-
-`Promise<{ a: '1', b: '2' }>`
-
-`/shop?a=1&a=2`
-
-`Promise<{ a: ['1', '2'] }>`
-
-*   Since the `searchParams` prop is a promise. You must use `async/await` or React's [`use`](https://react.dev/reference/react/use) function to access the values.
-    *   In version 14 and earlier, `searchParams` was a synchronous prop. To help with backwards compatibility, you can still access it synchronously in Next.js 15, but this behavior will be deprecated in the future.
-*   `searchParams` is a **[Request-time API](/docs/app/glossary#request-time-apis)** whose values cannot be known ahead of time. Using it will opt the page into **[dynamic rendering](/docs/app/glossary#dynamic-rendering)** at request time.
-*   `searchParams` is a plain JavaScript object, not a `URLSearchParams` instance.
+-   Since the `searchParams` prop is a promise. You must use `async/await` or React's [`use`](https://react.dev/reference/react/use) function to access the values.
+    -   In version 14 and earlier, `searchParams` was a synchronous prop. To help with backwards compatibility, you can still access it synchronously in Next.js 15, but this behavior will be deprecated in the future.
+-   `searchParams` is a **[Request-time API](/docs/app/glossary#request-time-apis)** whose values cannot be known ahead of time. Using it will opt the page into **[dynamic rendering](/docs/app/glossary#dynamic-rendering)** at request time.
+-   `searchParams` is a plain JavaScript object, not a `URLSearchParams` instance.
 
 ### Page Props Helper[](#page-props-helper)
 
@@ -174,10 +139,10 @@ export default async function Page(props: PageProps<'/blog/[slug]'>) {
 
 > **Good to know**
 > 
-> *   Using a literal route (e.g. `'/blog/[slug]'`) enables autocomplete and strict keys for `params`.
-> *   Static routes resolve `params` to `{}`.
-> *   Types are generated during `next dev`, `next build`, or with `next typegen`.
-> *   After type generation, the `PageProps` helper is globally available. It doesn't need to be imported.
+> -   Using a literal route (e.g. `'/blog/[slug]'`) enables autocomplete and strict keys for `params`.
+> -   Static routes resolve `params` to `{}`.
+> -   Types are generated during `next dev`, `next build`, or with `next typegen`.
+> -   After type generation, the `PageProps` helper is globally available. It doesn't need to be imported.
 
 ## Examples[](#examples)
 
@@ -186,8 +151,6 @@ export default async function Page(props: PageProps<'/blog/[slug]'>) {
 Using [dynamic route segments](/docs/app/api-reference/file-conventions/dynamic-routes), you can display or fetch specific content for the page based on the `params` prop.
 
 app/blog/\[slug\]/page.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -207,8 +170,6 @@ export default async function Page({
 You can use the `searchParams` prop to handle filtering, pagination, or sorting based on the query string of the URL.
 
 app/shop/page.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -237,8 +198,6 @@ To use `searchParams` and `params` in a Client Component (which cannot be `async
 
 app/page.tsx
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -260,32 +219,9 @@ export default function Page({
 
 ## Version History[](#version-history)
 
-Version
-
-Changes
-
-`v15.0.0-RC`
-
-`params` and `searchParams` are now promises. A [codemod](/docs/app/guides/upgrading/codemods#150) is available.
-
-`v13.0.0`
-
-`page` introduced.
-
-[Previous
-
-not-found.js
-
-](/docs/app/api-reference/file-conventions/not-found)
-
-[Next
-
-Parallel Routes
-
-](/docs/app/api-reference/file-conventions/parallel-routes)
+| Version | Changes |
+| --- | --- |
+| `v15.0.0-RC` | `params` and `searchParams` are now promises. A [codemod](/docs/app/guides/upgrading/codemods#150) is available. |
+| `v13.0.0` | `page` introduced. |
 
 Was this helpful?
-
-supported.
-
-Send

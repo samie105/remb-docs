@@ -5,14 +5,12 @@ canonical_url: "https://orm.drizzle.team/docs/latest-releases/drizzle-orm-v0280"
 docset: "drizzle"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:10:41.361Z"
-content_hash: "314ef140f29dbba7efc55ffe4da126736c75198344109a30e969ddb58bec57b1"
+last_crawled_at: "2026-04-27T19:08:48.317Z"
+content_hash: "163c1b7475cef98a19712bf9e1982447c55666bcb3fdfdf129b4059e916780dd"
 menu_path: ["Drizzle ORM - DrizzleORM v0.28.0 release"]
 section_path: []
-nav_prev: {"path": "drizzle/docs/latest-releases/drizzle-orm-v0272/index.md", "title": "Drizzle ORM - DrizzleORM v0.27.2 release"}
-nav_next: {"path": "drizzle/docs/latest-releases/drizzle-orm-v0281/index.md", "title": "Drizzle ORM - DrizzleORM v0.28.1 release"}
+content_language: "en"
 ---
-
 DrizzleORM v0.28.0 release
 
 Aug 6, 2023
@@ -23,7 +21,7 @@ Aug 6, 2023
 
 Current example won’t work in `0.28.0`:
 
-```
+```ts
 const usersWithPosts = await db.query.users.findMany({
   where: (table, { sql }) => (sql`json_array_length(${table.posts}) > 0`),
   with: {
@@ -47,7 +45,7 @@ Drizzle relational queries use lateral joins of subqueries under the hood and fo
 
 When using `mysql2` driver with regular MySQL database - you should specify mode: “default”. When using `mysql2` driver with PlanetScale - you need to specify mode: “planetscale”.
 
-```
+```ts
 import { drizzle } from 'drizzle-orm/mysql2';
 import mysql from 'mysql2/promise';
 import * as schema from './schema';
@@ -80,7 +78,7 @@ As a summary we’ve made current set of changes in query generation startegy:
 
 For this drizzle query
 
-```
+```ts
 const items = await db.query.comments.findMany({
   limit,
   orderBy: comments.id,
@@ -100,7 +98,7 @@ const items = await db.query.comments.findMany({
 });
 ```
 
-```
+```sql
 -- Query generated now
 select "comments"."id",
        "comments"."user_id",
@@ -129,7 +127,7 @@ order by "comments"."id"
 limit 1
 ```
 
-```
+```sql
 -- Query generated before
 SELECT "id",
        "user_id",
@@ -178,13 +176,13 @@ FROM
 LIMIT 1
 ```
 
-Read more about [Relational Queries](drizzle/docs/rqb/index.md) in the documentation.
+Read more about [Relational Queries](https://orm.drizzle.team/docs/rqb) in the documentation.
 
 ## Possibility to insert rows with default values for all columns
 
 You can now provide an empty object or an array of empty objects, and Drizzle will insert all defaults into the database.
 
-```
+```ts
 // Insert 1 row with all defaults
 await db.insert(usersTable).values({});
 

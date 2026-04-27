@@ -5,13 +5,14 @@ canonical_url: "https://nextjs.org/docs/messages/no-styled-jsx-in-document"
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:18:35.047Z"
-content_hash: "97c6ab3d9287b820e32b8e63d16d23739b8894527988f06c70b97e6db9794507"
+last_crawled_at: "2026-04-27T18:17:58.480Z"
+content_hash: "1c3f0d1f69fc5ecb1e2f7be4ee2f14c1bc3bcd7a4733be53fe5b9e7d828d48ed"
 menu_path: ["No `styled-jsx` in `_document`"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/messages/no-script-component-in-head/index.md", "title": "No Script Component in Head"}
-nav_next: {"path": "nextjs/docs/messages/no-sync-scripts/index.md", "title": "No Sync Scripts"}
+version: "latest"
+content_language: "en"
 ---
+[Docs](/docs)[Errors](/docs)No \`styled-jsx\` in \`\_document\`
 
 # No \`styled-jsx\` in \`\_document\`
 
@@ -57,13 +58,9 @@ These styles (`styles.css`) will apply to all pages and components in your appli
 
 ## Useful Links[](#useful-links)
 
-*   [Custom Document Caveats](/docs/pages/building-your-application/routing/custom-document#caveats)
-*   [Layouts](/docs/pages/building-your-application/routing/pages-and-layouts#layout-pattern)
-*   [Built in CSS Support](/docs/app/getting-started/css)
-*   [Custom `App`](/docs/pages/building-your-application/routing/custom-app)
+-   [Custom Document Caveats](/docs/pages/building-your-application/routing/custom-document#caveats)
+-   [Layouts](/docs/pages/building-your-application/routing/pages-and-layouts#layout-pattern)
+-   [Built in CSS Support](/docs/app/getting-started/css)
+-   [Custom `App`](/docs/pages/building-your-application/routing/custom-app)
 
 Was this helpful?
-
-supported.
-
-Send

@@ -5,45 +5,51 @@ canonical_url: "https://tailwindcss.com/docs/text-decoration-style"
 docset: "tailwind"
 kind: "framework"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:57:50.852Z"
-content_hash: "adc057b684788c962f49ea7ad3cbe403e46a7b29ad8fa5874eb00a775502bfdf"
+last_crawled_at: "2026-04-27T20:12:14.865Z"
+content_hash: "0a41f22ac593526bfcf5605dff2428bce94344349afb799ad05ec5203e26d38c"
 menu_path: ["text-decoration-style"]
 section_path: []
-nav_prev: {"path": "tailwind/docs/text-decoration-color/index.md", "title": "text-decoration-color"}
-nav_next: {"path": "tailwind/docs/text-decoration-thickness/index.md", "title": "text-decoration-thickness"}
+content_language: "en"
 ---
+[](/)
+
+[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
+
+1.  Typography
+2.  text-decoration-style
+
+Typography
 
 # text-decoration-style
 
 Utilities for controlling the style of text decorations.
 
-Class
-
-Styles
-
-`decoration-solid`
-
+| Class | Styles |
+| --- | --- |
+| `decoration-solid` | 
 `text-decoration-style: solid;`
 
-`decoration-double`
+ |
+| `decoration-double` | 
 
 `text-decoration-style: double;`
 
-`decoration-dotted`
+ |
+| `decoration-dotted` | 
 
 `text-decoration-style: dotted;`
 
-`decoration-dashed`
+ |
+| `decoration-dashed` | 
 
 `text-decoration-style: dashed;`
 
-`decoration-wavy`
+ |
+| `decoration-wavy` | 
 
 `text-decoration-style: wavy;`
 
-## [Examples](#examples)
-
-### [Basic example](#basic-example)
+ |
 
 Use utilities like `decoration-dotted` and `decoration-dashed` to change the [text decoration](/docs/text-decoration-line) style of an element:
 
@@ -71,8 +77,6 @@ The quick brown fox jumps over the lazy dog.
 <p class="underline decoration-solid">The quick brown fox...</p><p class="underline decoration-double">The quick brown fox...</p><p class="underline decoration-dotted">The quick brown fox...</p><p class="underline decoration-dashed">The quick brown fox...</p><p class="underline decoration-wavy">The quick brown fox...</p>
 ```
 
-### [Responsive design](#responsive-design)
-
 Prefix a `text-decoration-style` utility with a breakpoint variant like `md:` to only apply the utility at medium screen sizes and above:
 
 ```
@@ -83,10 +87,10 @@ Learn more about using variants in the [variants documentation](/docs/hover-focu
 
 ### On this page
 
-*   [Quick reference](#quick-reference)
-*   [Examples](#examples)
-    *   [Basic example](#basic-example)
-    *   [Responsive design](#responsive-design)
+-   [Quick reference](#quick-reference)
+-   [Examples](#examples)
+    -   [Basic example](#basic-example)
+    -   [Responsive design](#responsive-design)
 
 [
 

@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/pages/api-reference/config/next-config-j
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:21:36.238Z"
-content_hash: "9d12665f5e4f82bef8966a131ab2760b0aece495bfc86b4695ac0d69b9c86dba"
+last_crawled_at: "2026-04-27T18:21:00.652Z"
+content_hash: "6159b6354c9bdaa3cad925e30a9260b903c4ca0c43659f283a09c1b43bcfa5ec"
 menu_path: ["typescript"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/pages/api-reference/config/next-config-js/turbopack/index.md", "title": "turbopack"}
-nav_next: {"path": "nextjs/docs/pages/api-reference/config/next-config-js/urlImports/index.md", "title": "urlImports"}
+version: "latest"
+content_language: "en"
 ---
+[Configuration](/docs/pages/api-reference/config)[next.config.js Options](/docs/pages/api-reference/config/next-config-js)typescript
 
 # typescript
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 Configure TypeScript behavior with the `typescript` option in `next.config.js`:
 
@@ -32,29 +33,10 @@ module.exports = {
 
 ## Options[](#options)
 
-Option
-
-Type
-
-Default
-
-Description
-
-`ignoreBuildErrors`
-
-`boolean`
-
-`false`
-
-Allow production builds to complete even with TypeScript errors.
-
-`tsconfigPath`
-
-`string`
-
-`'tsconfig.json'`
-
-Path to a custom `tsconfig.json` file.
+| Option | Type | Default | Description |
+| --- | --- | --- | --- |
+| `ignoreBuildErrors` | `boolean` | `false` | Allow production builds to complete even with TypeScript errors. |
+| `tsconfigPath` | `string` | `'tsconfig.json'` | Path to a custom `tsconfig.json` file. |
 
 ## `ignoreBuildErrors`[](#ignorebuilderrors)
 
@@ -97,7 +79,3 @@ module.exports = {
 See the [TypeScript configuration](/docs/app/api-reference/config/typescript#custom-tsconfig-path) page for more details.
 
 Was this helpful?
-
-supported.
-
-Send

@@ -5,14 +5,12 @@ canonical_url: "https://www.postgresql.org/docs/current/xindex.html"
 docset: "postgres"
 kind: "database"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:47:13.839Z"
-content_hash: "5590be089c223d0bbf34c499552348de4c73564d48864ea5449b725e9ac1ac11"
+last_crawled_at: "2026-04-27T20:47:57.464Z"
+content_hash: "5021e2c5f2e52faf2407d54e52b7f34a447ba2c5bc353b212b2ef44f4c9b9f3d"
 menu_path: ["PostgreSQL: Documentation: 18: 36.16. Interfacing Extensions to Indexes"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/xfunc.html/index.md", "title": "PostgreSQL: Documentation: 18: 36.3.\u00a0User-Defined Functions"}
-nav_next: {"path": "postgres/docs/current/xoper-optimization.html/index.md", "title": "PostgreSQL: Documentation: 18: 36.15.\u00a0Operator Optimization Information"}
+content_language: "en"
 ---
-
 The procedures described thus far let you define new types, new functions, and new operators. However, we cannot yet define an index on a column of a new data type. To do this, we must define an _operator class_ for the new data type. Later in this section, we will illustrate this concept in an example: a new operator class for the B-tree index method that stores and sorts complex numbers in ascending absolute value order.
 
 Operator classes can be grouped into _operator families_ to show the relationships between semantically compatible classes. When only a single data type is involved, an operator class is sufficient, so we'll focus on that case first and then return to operator families.
@@ -36,192 +34,81 @@ The B-tree index method defines five strategies, shown in [Table 36.3](https://
 **Table 36.3. B-Tree Strategies**
 
  
-
-Operation
-
-Strategy Number
-
-less than
-
-1
-
-less than or equal
-
-2
-
-equal
-
-3
-
-greater than or equal
-
-4
-
-greater than
-
-5
+| Operation | Strategy Number |
+| --- | --- |
+| less than | 1 |
+| less than or equal | 2 |
+| equal | 3 |
+| greater than or equal | 4 |
+| greater than | 5 |
 
 Hash indexes support only equality comparisons, and so they use only one strategy, shown in [Table 36.4](https://www.postgresql.org/docs/current/xindex.html#XINDEX-HASH-STRAT-TABLE "Table 36.4. Hash Strategies").
 
 **Table 36.4. Hash Strategies**
 
  
-
-Operation
-
-Strategy Number
-
-equal
-
-1
+| Operation | Strategy Number |
+| --- | --- |
+| equal | 1 |
 
 GiST indexes are more flexible: they do not have a fixed set of strategies at all. Instead, the “consistency” support routine of each particular GiST operator class interprets the strategy numbers however it likes. As an example, several of the built-in GiST index operator classes index two-dimensional geometric objects, providing the “R-tree” strategies shown in [Table 36.5](https://www.postgresql.org/docs/current/xindex.html#XINDEX-RTREE-STRAT-TABLE "Table 36.5. GiST Two-Dimensional “R-tree” Strategies"). Four of these are true two-dimensional tests (overlaps, same, contains, contained by); four of them consider only the X direction; and the other four provide the same tests in the Y direction.
 
 **Table 36.5. GiST Two-Dimensional “R-tree” Strategies**
 
  
-
-Operation
-
-Strategy Number
-
-strictly left of
-
-1
-
-does not extend to right of
-
-2
-
-overlaps
-
-3
-
-does not extend to left of
-
-4
-
-strictly right of
-
-5
-
-same
-
-6
-
-contains
-
-7
-
-contained by
-
-8
-
-does not extend above
-
-9
-
-strictly below
-
-10
-
-strictly above
-
-11
-
-does not extend below
-
-12
+| Operation | Strategy Number |
+| --- | --- |
+| strictly left of | 1 |
+| does not extend to right of | 2 |
+| overlaps | 3 |
+| does not extend to left of | 4 |
+| strictly right of | 5 |
+| same | 6 |
+| contains | 7 |
+| contained by | 8 |
+| does not extend above | 9 |
+| strictly below | 10 |
+| strictly above | 11 |
+| does not extend below | 12 |
 
 SP-GiST indexes are similar to GiST indexes in flexibility: they don't have a fixed set of strategies. Instead the support routines of each operator class interpret the strategy numbers according to the operator class's definition. As an example, the strategy numbers used by the built-in operator classes for points are shown in [Table 36.6](https://www.postgresql.org/docs/current/xindex.html#XINDEX-SPGIST-POINT-STRAT-TABLE "Table 36.6. SP-GiST Point Strategies").
 
 **Table 36.6. SP-GiST Point Strategies**
 
  
-
-Operation
-
-Strategy Number
-
-strictly left of
-
-1
-
-strictly right of
-
-5
-
-same
-
-6
-
-contained by
-
-8
-
-strictly below
-
-10
-
-strictly above
-
-11
+| Operation | Strategy Number |
+| --- | --- |
+| strictly left of | 1 |
+| strictly right of | 5 |
+| same | 6 |
+| contained by | 8 |
+| strictly below | 10 |
+| strictly above | 11 |
 
 GIN indexes are similar to GiST and SP-GiST indexes, in that they don't have a fixed set of strategies either. Instead the support routines of each operator class interpret the strategy numbers according to the operator class's definition. As an example, the strategy numbers used by the built-in operator class for arrays are shown in [Table 36.7](https://www.postgresql.org/docs/current/xindex.html#XINDEX-GIN-ARRAY-STRAT-TABLE "Table 36.7. GIN Array Strategies").
 
 **Table 36.7. GIN Array Strategies**
 
  
-
-Operation
-
-Strategy Number
-
-overlap
-
-1
-
-contains
-
-2
-
-is contained by
-
-3
-
-equal
-
-4
+| Operation | Strategy Number |
+| --- | --- |
+| overlap | 1 |
+| contains | 2 |
+| is contained by | 3 |
+| equal | 4 |
 
 BRIN indexes are similar to GiST, SP-GiST and GIN indexes in that they don't have a fixed set of strategies either. Instead the support routines of each operator class interpret the strategy numbers according to the operator class's definition. As an example, the strategy numbers used by the built-in `Minmax` operator classes are shown in [Table 36.8](https://www.postgresql.org/docs/current/xindex.html#XINDEX-BRIN-MINMAX-STRAT-TABLE "Table 36.8. BRIN Minmax Strategies").
 
 **Table 36.8. BRIN Minmax Strategies**
 
  
-
-Operation
-
-Strategy Number
-
-less than
-
-1
-
-less than or equal
-
-2
-
-equal
-
-3
-
-greater than or equal
-
-4
-
-greater than
-
-5
+| Operation | Strategy Number |
+| --- | --- |
+| less than | 1 |
+| less than or equal | 2 |
+| equal | 3 |
+| greater than or equal | 4 |
+| greater than | 5 |
 
 Notice that all the operators listed above return Boolean values. In practice, all operators defined as index method search operators must return type `boolean`, since they must appear at the top level of a `WHERE` clause to be used with an index. (Some index access methods also support _ordering operators_, which typically don't return Boolean values; that feature is discussed in [Section 36.16.7](https://www.postgresql.org/docs/current/xindex.html#XINDEX-ORDERING-OPS "36.16.7. Ordering Operators").)
 
@@ -238,284 +125,87 @@ B-trees require a comparison support function, and allow four additional support
 **Table 36.9. B-Tree Support Functions**
 
  
-
-Function
-
-Support Number
-
-Compare two keys and return an integer less than zero, zero, or greater than zero, indicating whether the first key is less than, equal to, or greater than the second
-
-1
-
-Return the addresses of C-callable sort support function(s) (optional)
-
-2
-
-Compare a test value to a base value plus/minus an offset, and return true or false according to the comparison result (optional)
-
-3
-
-Determine if it is safe for indexes that use the operator class to apply the btree deduplication optimization (optional)
-
-4
-
-Define options that are specific to this operator class (optional)
-
-5
-
-Return the addresses of C-callable skip support function(s) (optional)
-
-6
+| Function | Support Number |
+| --- | --- |
+| Compare two keys and return an integer less than zero, zero, or greater than zero, indicating whether the first key is less than, equal to, or greater than the second | 1 |
+| Return the addresses of C-callable sort support function(s) (optional) | 2 |
+| Compare a test value to a base value plus/minus an offset, and return true or false according to the comparison result (optional) | 3 |
+| Determine if it is safe for indexes that use the operator class to apply the btree deduplication optimization (optional) | 4 |
+| Define options that are specific to this operator class (optional) | 5 |
+| Return the addresses of C-callable skip support function(s) (optional) | 6 |
 
 Hash indexes require one support function, and allow two additional ones to be supplied at the operator class author's option, as shown in [Table 36.10](https://www.postgresql.org/docs/current/xindex.html#XINDEX-HASH-SUPPORT-TABLE "Table 36.10. Hash Support Functions").
 
 **Table 36.10. Hash Support Functions**
 
  
-
-Function
-
-Support Number
-
-Compute the 32-bit hash value for a key
-
-1
-
-Compute the 64-bit hash value for a key given a 64-bit salt; if the salt is 0, the low 32 bits of the result must match the value that would have been computed by function 1 (optional)
-
-2
-
-Define options that are specific to this operator class (optional)
-
-3
+| Function | Support Number |
+| --- | --- |
+| Compute the 32-bit hash value for a key | 1 |
+| Compute the 64-bit hash value for a key given a 64-bit salt; if the salt is 0, the low 32 bits of the result must match the value that would have been computed by function 1 (optional) | 2 |
+| Define options that are specific to this operator class (optional) | 3 |
 
 GiST indexes have twelve support functions, seven of which are optional, as shown in [Table 36.11](https://www.postgresql.org/docs/current/xindex.html#XINDEX-GIST-SUPPORT-TABLE "Table 36.11. GiST Support Functions"). (For more information see [Section 65.2](https://www.postgresql.org/docs/current/gist.html "65.2. GiST Indexes").)
 
 **Table 36.11. GiST Support Functions**
 
   
-
-Function
-
-Description
-
-Support Number
-
-`consistent`
-
-determine whether key satisfies the query qualifier
-
-1
-
-`union`
-
-compute union of a set of keys
-
-2
-
-`compress`
-
-compute a compressed representation of a key or value to be indexed (optional)
-
-3
-
-`decompress`
-
-compute a decompressed representation of a compressed key (optional)
-
-4
-
-`penalty`
-
-compute penalty for inserting new key into subtree with given subtree's key
-
-5
-
-`picksplit`
-
-determine which entries of a page are to be moved to the new page and compute the union keys for resulting pages
-
-6
-
-`same`
-
-compare two keys and return true if they are equal
-
-7
-
-`distance`
-
-determine distance from key to query value (optional)
-
-8
-
-`fetch`
-
-compute original representation of a compressed key for index-only scans (optional)
-
-9
-
-`options`
-
-define options that are specific to this operator class (optional)
-
-10
-
-`sortsupport`
-
-provide a sort comparator to be used in fast index builds (optional)
-
-11
-
-`translate_cmptype`
-
-translate compare types to strategy numbers used by the operator class (optional)
-
-12
+| Function | Description | Support Number |
+| --- | --- | --- |
+| `consistent` | determine whether key satisfies the query qualifier | 1 |
+| `union` | compute union of a set of keys | 2 |
+| `compress` | compute a compressed representation of a key or value to be indexed (optional) | 3 |
+| `decompress` | compute a decompressed representation of a compressed key (optional) | 4 |
+| `penalty` | compute penalty for inserting new key into subtree with given subtree's key | 5 |
+| `picksplit` | determine which entries of a page are to be moved to the new page and compute the union keys for resulting pages | 6 |
+| `same` | compare two keys and return true if they are equal | 7 |
+| `distance` | determine distance from key to query value (optional) | 8 |
+| `fetch` | compute original representation of a compressed key for index-only scans (optional) | 9 |
+| `options` | define options that are specific to this operator class (optional) | 10 |
+| `sortsupport` | provide a sort comparator to be used in fast index builds (optional) | 11 |
+| `translate_cmptype` | translate compare types to strategy numbers used by the operator class (optional) | 12 |
 
 SP-GiST indexes have six support functions, one of which is optional, as shown in [Table 36.12](https://www.postgresql.org/docs/current/xindex.html#XINDEX-SPGIST-SUPPORT-TABLE "Table 36.12. SP-GiST Support Functions"). (For more information see [Section 65.3](https://www.postgresql.org/docs/current/spgist.html "65.3. SP-GiST Indexes").)
 
 **Table 36.12. SP-GiST Support Functions**
 
   
-
-Function
-
-Description
-
-Support Number
-
-`config`
-
-provide basic information about the operator class
-
-1
-
-`choose`
-
-determine how to insert a new value into an inner tuple
-
-2
-
-`picksplit`
-
-determine how to partition a set of values
-
-3
-
-`inner_consistent`
-
-determine which sub-partitions need to be searched for a query
-
-4
-
-`leaf_consistent`
-
-determine whether key satisfies the query qualifier
-
-5
-
-`options`
-
-define options that are specific to this operator class (optional)
-
-6
+| Function | Description | Support Number |
+| --- | --- | --- |
+| `config` | provide basic information about the operator class | 1 |
+| `choose` | determine how to insert a new value into an inner tuple | 2 |
+| `picksplit` | determine how to partition a set of values | 3 |
+| `inner_consistent` | determine which sub-partitions need to be searched for a query | 4 |
+| `leaf_consistent` | determine whether key satisfies the query qualifier | 5 |
+| `options` | define options that are specific to this operator class (optional) | 6 |
 
 GIN indexes have seven support functions, four of which are optional, as shown in [Table 36.13](https://www.postgresql.org/docs/current/xindex.html#XINDEX-GIN-SUPPORT-TABLE "Table 36.13. GIN Support Functions"). (For more information see [Section 65.4](https://www.postgresql.org/docs/current/gin.html "65.4. GIN Indexes").)
 
 **Table 36.13. GIN Support Functions**
 
   
-
-Function
-
-Description
-
-Support Number
-
-`compare`
-
-compare two keys and return an integer less than zero, zero, or greater than zero, indicating whether the first key is less than, equal to, or greater than the second
-
-1
-
-`extractValue`
-
-extract keys from a value to be indexed
-
-2
-
-`extractQuery`
-
-extract keys from a query condition
-
-3
-
-`consistent`
-
-determine whether value matches query condition (Boolean variant) (optional if support function 6 is present)
-
-4
-
-`comparePartial`
-
-compare partial key from query and key from index, and return an integer less than zero, zero, or greater than zero, indicating whether GIN should ignore this index entry, treat the entry as a match, or stop the index scan (optional)
-
-5
-
-`triConsistent`
-
-determine whether value matches query condition (ternary variant) (optional if support function 4 is present)
-
-6
-
-`options`
-
-define options that are specific to this operator class (optional)
-
-7
+| Function | Description | Support Number |
+| --- | --- | --- |
+| `compare` | compare two keys and return an integer less than zero, zero, or greater than zero, indicating whether the first key is less than, equal to, or greater than the second | 1 |
+| `extractValue` | extract keys from a value to be indexed | 2 |
+| `extractQuery` | extract keys from a query condition | 3 |
+| `consistent` | determine whether value matches query condition (Boolean variant) (optional if support function 6 is present) | 4 |
+| `comparePartial` | compare partial key from query and key from index, and return an integer less than zero, zero, or greater than zero, indicating whether GIN should ignore this index entry, treat the entry as a match, or stop the index scan (optional) | 5 |
+| `triConsistent` | determine whether value matches query condition (ternary variant) (optional if support function 4 is present) | 6 |
+| `options` | define options that are specific to this operator class (optional) | 7 |
 
 BRIN indexes have five basic support functions, one of which is optional, as shown in [Table 36.14](https://www.postgresql.org/docs/current/xindex.html#XINDEX-BRIN-SUPPORT-TABLE "Table 36.14. BRIN Support Functions"). Some versions of the basic functions require additional support functions to be provided. (For more information see [Section 65.5.3](https://www.postgresql.org/docs/current/brin.html#BRIN-EXTENSIBILITY "65.5.3. Extensibility").)
 
 **Table 36.14. BRIN Support Functions**
 
   
-
-Function
-
-Description
-
-Support Number
-
-`opcInfo`
-
-return internal information describing the indexed columns' summary data
-
-1
-
-`add_value`
-
-add a new value to an existing summary index tuple
-
-2
-
-`consistent`
-
-determine whether value matches query condition
-
-3
-
-`union`
-
-compute union of two summary tuples
-
-4
-
-`options`
-
-define options that are specific to this operator class (optional)
-
-5
+| Function | Description | Support Number |
+| --- | --- | --- |
+| `opcInfo` | return internal information describing the indexed columns' summary data | 1 |
+| `add_value` | add a new value to an existing summary index tuple | 2 |
+| `consistent` | determine whether value matches query condition | 3 |
+| `union` | compute union of two summary tuples | 4 |
+| `options` | define options that are specific to this operator class (optional) | 5 |
 
 Unlike search operators, support functions return whichever data type the particular index method expects; for example in the case of the comparison function for B-trees, a signed integer. The number and types of the arguments to each support function are likewise dependent on the index method. For B-tree and hash the comparison and hashing support functions take the same input data types as do the operators included in the operator class, but this is not the case for most GiST, SP-GiST, GIN, and BRIN support functions.
 
@@ -523,11 +213,11 @@ Unlike search operators, support functions return whichever data type the partic
 
 Now that we have seen the ideas, here is the promised example of creating a new operator class. (You can find a working copy of this example in `src/tutorial/complex.c` and `src/tutorial/complex.sql` in the source distribution.) The operator class encapsulates operators that sort complex numbers in absolute value order, so we choose the name `complex_abs_ops`. First, we need a set of operators. The procedure for defining operators was discussed in [Section 36.14](https://www.postgresql.org/docs/current/xoper.html "36.14. User-Defined Operators"). For an operator class on B-trees, the operators we require are:
 
-*   absolute-value less-than (strategy 1)
-*   absolute-value less-than-or-equal (strategy 2)
-*   absolute-value equal (strategy 3)
-*   absolute-value greater-than-or-equal (strategy 4)
-*   absolute-value greater-than (strategy 5)
+-   absolute-value less-than (strategy 1)
+-   absolute-value less-than-or-equal (strategy 2)
+-   absolute-value equal (strategy 3)
+-   absolute-value greater-than-or-equal (strategy 4)
+-   absolute-value greater-than (strategy 5)
 
 The least error-prone way to define a related set of comparison operators is to write the B-tree comparison support function first, and then write the other functions as one-line wrappers around the support function. This reduces the odds of getting inconsistent results for corner cases. Following this approach, we first write:
 
@@ -577,11 +267,11 @@ It is important to specify the correct commutator and negator operators, as well
 
 Other things worth noting are happening here:
 
-*   There can only be one operator named, say, `=` and taking type `complex` for both operands. In this case we don't have any other operator `=` for `complex`, but if we were building a practical data type we'd probably want `=` to be the ordinary equality operation for complex numbers (and not the equality of the absolute values). In that case, we'd need to use some other operator name for `complex_abs_eq`.
+-   There can only be one operator named, say, `=` and taking type `complex` for both operands. In this case we don't have any other operator `=` for `complex`, but if we were building a practical data type we'd probably want `=` to be the ordinary equality operation for complex numbers (and not the equality of the absolute values). In that case, we'd need to use some other operator name for `complex_abs_eq`.
     
-*   Although PostgreSQL can cope with functions having the same SQL name as long as they have different argument data types, C can only cope with one global function having a given name. So we shouldn't name the C function something simple like `abs_eq`. Usually it's a good practice to include the data type name in the C function name, so as not to conflict with functions for other data types.
+-   Although PostgreSQL can cope with functions having the same SQL name as long as they have different argument data types, C can only cope with one global function having a given name. So we shouldn't name the C function something simple like `abs_eq`. Usually it's a good practice to include the data type name in the C function name, so as not to conflict with functions for other data types.
     
-*   We could have made the SQL name of the function `abs_eq`, relying on PostgreSQL to distinguish it by argument data types from any other SQL function of the same name. To keep the example simple, we make the function have the same names at the C level and SQL level.
+-   We could have made the SQL name of the function `abs_eq`, relying on PostgreSQL to distinguish it by argument data types from any other SQL function of the same name. To keep the example simple, we make the function have the same names at the C level and SQL level.
     
 
 The next step is the registration of the support routine required by B-trees. The example C code that implements this is in the same file that contains the operator functions. This is how we declare the function:

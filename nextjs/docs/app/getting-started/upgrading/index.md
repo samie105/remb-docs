@@ -5,23 +5,39 @@ canonical_url: "https://nextjs.org/docs/app/getting-started/upgrading"
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:13:47.675Z"
-content_hash: "a5e6d741088f14389534ede37290cbb489bdaf3ba790eed6c7b376c0f48abdae"
+last_crawled_at: "2026-04-27T18:12:32.924Z"
+content_hash: "16e125e025f1084e0c7f0238b791ec64fc22246795cb4decd9a41c936dcd545b"
 menu_path: ["Upgrading"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/getting-started/deploying/index.md", "title": "Deploying"}
-nav_next: {"path": "nextjs/docs/app/guides/index.md", "title": "Guides"}
+version: "latest"
+tab_variants: ["pnpm","npm","yarn","bun","pnpm","npm","yarn","bun","pnpm","npm","yarn","bun"]
+content_language: "en"
 ---
+[App Router](/docs/app)[Getting Started](/docs/app/getting-started)Upgrading
 
 # Upgrading
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 ## Latest version[](#latest-version)
 
 To update to the latest version of Next.js, you can use the `upgrade` command:
 
-pnpmnpmyarnbun
+#### pnpm
+
+pnpm
+
+#### npm
+
+npm
+
+#### yarn
+
+yarn
+
+#### bun
+
+bun
 
 Terminal
 
@@ -39,7 +55,21 @@ npx @next/codemod@canary upgrade latest
 
 If you prefer to upgrade manually, install the latest Next.js and React versions:
 
-pnpmnpmyarnbun
+#### pnpm
+
+pnpm
+
+#### npm
+
+npm
+
+#### yarn
+
+yarn
+
+#### bun
+
+bun
 
 Terminal
 
@@ -51,7 +81,21 @@ pnpm i next@latest react@latest react-dom@latest eslint-config-next@latest
 
 To update to the latest canary, make sure you're on the latest version of Next.js and everything is working as expected. Then, run the following command:
 
-pnpmnpmyarnbun
+#### pnpm
+
+pnpm
+
+#### npm
+
+npm
+
+#### yarn
+
+yarn
+
+#### bun
+
+bun
 
 Terminal
 
@@ -65,11 +109,11 @@ The following features are currently available in canary:
 
 **Authentication**:
 
-*   [`forbidden`](/docs/app/api-reference/functions/forbidden)
-*   [`unauthorized`](/docs/app/api-reference/functions/unauthorized)
-*   [`forbidden.js`](/docs/app/api-reference/file-conventions/forbidden)
-*   [`unauthorized.js`](/docs/app/api-reference/file-conventions/unauthorized)
-*   [`authInterrupts`](/docs/app/api-reference/config/next-config-js/authInterrupts)
+-   [`forbidden`](/docs/app/api-reference/functions/forbidden)
+-   [`unauthorized`](/docs/app/api-reference/functions/unauthorized)
+-   [`forbidden.js`](/docs/app/api-reference/file-conventions/forbidden)
+-   [`unauthorized.js`](/docs/app/api-reference/file-conventions/unauthorized)
+-   [`authInterrupts`](/docs/app/api-reference/config/next-config-js/authInterrupts)
 
 ## Version guides
 
@@ -95,20 +139,4 @@ Upgrade your Next.js Application from Version 13 to 14.
 
 ](/docs/app/guides/upgrading/version-14)
 
-[Previous
-
-Deploying
-
-](/docs/app/getting-started/deploying)
-
-[Next
-
-Guides
-
-](/docs/app/guides)
-
 Was this helpful?
-
-supported.
-
-Send

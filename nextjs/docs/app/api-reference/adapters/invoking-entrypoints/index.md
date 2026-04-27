@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/app/api-reference/adapters/invoking-entr
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:05:49.752Z"
-content_hash: "e9452308e192105b40d8b83b1189c87b0661e6e8d68996e82644a1e96eba8c2e"
+last_crawled_at: "2026-04-27T18:04:40.498Z"
+content_hash: "daf0019923b137ef09f2f58162035ed4f6bb81e42f91af0eb6ac4190da984357"
 menu_path: ["Invoking Entrypoints"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/api-reference/adapters/runtime-integration/index.md", "title": "Runtime Integration"}
-nav_next: {"path": "nextjs/docs/app/api-reference/adapters/output-types/index.md", "title": "Output Types"}
+version: "latest"
+content_language: "en"
 ---
+[API Reference](/docs/app/api-reference)[Adapters](/docs/app/api-reference/adapters)Invoking Entrypoints
 
 # Invoking Entrypoints
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 Build output entrypoints use a `handler(..., ctx)` interface, with runtime-specific request/response types.
 
@@ -57,9 +58,9 @@ await handler(req, res, {
 
 Relevant files in the Next.js core:
 
-*   [`packages/next/src/build/templates/app-page.ts`](https://github.com/vercel/next.js/blob/canary/packages/next/src/build/templates/app-page.ts)
-*   [`packages/next/src/build/templates/app-route.ts`](https://github.com/vercel/next.js/blob/canary/packages/next/src/build/templates/app-route.ts)
-*   and [`packages/next/src/build/templates/pages-api.ts`](https://github.com/vercel/next.js/blob/canary/packages/next/src/build/templates/pages-api.ts)
+-   [`packages/next/src/build/templates/app-page.ts`](https://github.com/vercel/next.js/blob/canary/packages/next/src/build/templates/app-page.ts)
+-   [`packages/next/src/build/templates/app-route.ts`](https://github.com/vercel/next.js/blob/canary/packages/next/src/build/templates/app-route.ts)
+-   and [`packages/next/src/build/templates/pages-api.ts`](https://github.com/vercel/next.js/blob/canary/packages/next/src/build/templates/pages-api.ts)
 
 ## Edge runtime (`runtime: 'edge'`)[](#edge-runtime-runtime-edge)
 
@@ -100,25 +101,9 @@ Use `edgeRuntime` instead of deriving registry keys or handler names from filena
 
 Relevant files in the Next.js core:
 
-*   [`packages/next/src/build/templates/edge-ssr.ts`](https://github.com/vercel/next.js/blob/canary/packages/next/src/build/templates/edge-ssr.ts)
-*   [`packages/next/src/build/templates/edge-app-route.ts`](https://github.com/vercel/next.js/blob/canary/packages/next/src/build/templates/edge-app-route.ts)
-*   [`packages/next/src/build/templates/pages-edge-api.ts`](https://github.com/vercel/next.js/blob/canary/packages/next/src/build/templates/pages-edge-api.ts)
-*   and [`packages/next/src/build/templates/middleware.ts`](https://github.com/vercel/next.js/blob/canary/packages/next/src/build/templates/middleware.ts)
-
-[Previous
-
-Runtime Integration
-
-](/docs/app/api-reference/adapters/runtime-integration)
-
-[Next
-
-Output Types
-
-](/docs/app/api-reference/adapters/output-types)
+-   [`packages/next/src/build/templates/edge-ssr.ts`](https://github.com/vercel/next.js/blob/canary/packages/next/src/build/templates/edge-ssr.ts)
+-   [`packages/next/src/build/templates/edge-app-route.ts`](https://github.com/vercel/next.js/blob/canary/packages/next/src/build/templates/edge-app-route.ts)
+-   [`packages/next/src/build/templates/pages-edge-api.ts`](https://github.com/vercel/next.js/blob/canary/packages/next/src/build/templates/pages-edge-api.ts)
+-   and [`packages/next/src/build/templates/middleware.ts`](https://github.com/vercel/next.js/blob/canary/packages/next/src/build/templates/middleware.ts)
 
 Was this helpful?
-
-supported.
-
-Send

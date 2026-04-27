@@ -5,14 +5,12 @@ canonical_url: "https://www.postgresql.org/docs/current/locale.html"
 docset: "postgres"
 kind: "database"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:52:45.985Z"
-content_hash: "143889e3a51dc6d20bc5bd628b6e3c3d345db95d3cd9a264f87b2273423eccdd"
+last_crawled_at: "2026-04-27T20:51:24.246Z"
+content_hash: "5b245195ca30ae319d4b9dee787e085950c557c31cc77126fe0d84a7509e8834"
 menu_path: ["PostgreSQL: Documentation: 18: 23.1. Locale Support"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/lo.html/index.md", "title": "PostgreSQL: Documentation: 18: F.21.\u00a0lo \u2014 manage large objects"}
-nav_next: {"path": "postgres/docs/current/locking-indexes.html/index.md", "title": "PostgreSQL: Documentation: 18: 13.7.\u00a0Locking and Indexes"}
+content_language: "en"
 ---
-
 _Locale_ support refers to an application respecting cultural preferences regarding alphabets, sorting, number formatting, etc. PostgreSQL uses the standard ISO C and POSIX locale facilities provided by the server operating system. For additional information refer to the documentation of your system.
 
 ### 23.1.1. Overview [#](#LOCALE-OVERVIEW)
@@ -27,31 +25,7 @@ What locales are available on your system under what names depends on what was p
 
 Occasionally it is useful to mix rules from several locales, e.g., use English collation rules but Spanish messages. To support that, a set of locale subcategories exist that control only certain aspects of the localization rules:
 
- 
-
-`LC_COLLATE`
-
-String sort order
-
-`LC_CTYPE`
-
-Character classification (What is a letter? Its upper-case equivalent?)
-
-`LC_MESSAGES`
-
-Language of messages
-
-`LC_MONETARY`
-
-Formatting of currency amounts
-
-`LC_NUMERIC`
-
-Formatting of numbers
-
-`LC_TIME`
-
-Formatting of dates and times
+<table><colgroup><col> <col></colgroup><tbody><tr><td><code>LC_COLLATE</code></td><td>String sort order</td></tr><tr><td><code>LC_CTYPE</code></td><td>Character classification (What is a letter? Its upper-case equivalent?)</td></tr><tr><td><code>LC_MESSAGES</code></td><td>Language of messages</td></tr><tr><td><code>LC_MONETARY</code></td><td>Formatting of currency amounts</td></tr><tr><td><code>LC_NUMERIC</code></td><td>Formatting of numbers</td></tr><tr><td><code>LC_TIME</code></td><td>Formatting of dates and times</td></tr></tbody></table>
 
 The category names translate into names of `initdb` options to override the locale choice for a specific category. For instance, to set the locale to French Canadian, but use U.S. rules for formatting currency, use `initdb --locale=fr_CA --lc-monetary=en_US`.
 
@@ -75,15 +49,15 @@ To enable messages to be translated to the user's preferred language, NLS must h
 
 The locale settings influence the following SQL features:
 
-*   Sort order in queries using `ORDER BY` or the standard comparison operators on textual data
+-   Sort order in queries using `ORDER BY` or the standard comparison operators on textual data
     
-*   The `upper`, `lower`, and `initcap` functions
+-   The `upper`, `lower`, and `initcap` functions
     
-*   Pattern matching operators (`LIKE`, `SIMILAR TO`, and POSIX-style regular expressions); locales affect both case insensitive matching and the classification of characters by character-class regular expressions
+-   Pattern matching operators (`LIKE`, `SIMILAR TO`, and POSIX-style regular expressions); locales affect both case insensitive matching and the classification of characters by character-class regular expressions
     
-*   The `to_char` family of functions
+-   The `to_char` family of functions
     
-*   The ability to use indexes with `LIKE` clauses
+-   The ability to use indexes with `LIKE` clauses
     
 
 The drawback of using locales other than `C` or `POSIX` in PostgreSQL is its performance impact. It slows character handling and prevents ordinary indexes from being used by `LIKE`. For this reason use locales only if you actually need them.
@@ -115,7 +89,7 @@ initdb --locale-provider=icu --icu-locale=en
 
 See the description of the respective commands and programs for details. Note that you can mix locale providers at different granularities, for example use `libc` by default for the cluster but have one database that uses the `icu` provider, and then have collation objects using either provider within those databases.
 
-Regardless of the locale provider, the operating system is still used to provide some locale-aware behavior, such as messages (see [lc\_messages](postgres/docs/current/runtime-config-client.html/index.md#GUC-LC-MESSAGES)).
+Regardless of the locale provider, the operating system is still used to provide some locale-aware behavior, such as messages (see [lc\_messages](https://www.postgresql.org/docs/current/runtime-config-client.html#GUC-LC-MESSAGES)).
 
 The available locale providers are listed below:
 
@@ -178,7 +152,7 @@ WARNING:  ICU locale "nonsense" has unknown language "nonsense"
 HINT:  To disable ICU locale validation, set parameter icu\_validation\_level to DISABLED.
 CREATE COLLATION
 
-[icu\_validation\_level](postgres/docs/current/runtime-config-client.html/index.md#GUC-ICU-VALIDATION-LEVEL) controls how the message is reported. Unless set to `ERROR`, the collation will still be created, but the behavior may not be what the user intended.
+[icu\_validation\_level](https://www.postgresql.org/docs/current/runtime-config-client.html#GUC-ICU-VALIDATION-LEVEL) controls how the message is reported. Unless set to `ERROR`, the collation will still be created, but the behavior may not be what the user intended.
 
 #### 23.1.5.3. Language Tag [#](#ICU-LANGUAGE-TAG)
 

@@ -5,18 +5,17 @@ canonical_url: "https://docs.deno.com/api/node/stream/web/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:41:00.578Z"
-content_hash: "8324303d62ea3e0e8f6555e1a93f779aa2c3f00739b09d27333983d2c1798368"
+last_crawled_at: "2026-04-27T17:12:55.159Z"
+content_hash: "4ecb7f837c2a0cb6a0beb8213995db1bd525bb4be0e27c23f3f187015b6f8dd0"
 menu_path: ["stream/web - Node documentation"]
 section_path: []
+content_language: "en"
 ---
 ### Usage in Deno
 
 ```typescript
 import * as mod from "node:stream/web";
 ```
-
-### Interfaces [#](#Interfaces)
 
 I
 
@@ -26,9 +25,9 @@ v
 
 This Streams API interface provides a built-in byte length queuing strategy that can be used when constructing streams.
 
-*   [highWaterMark](../.././stream/web/~/ByteLengthQueuingStrategy#property_highwatermark)
-*   [prototype](../.././stream/web/~/ByteLengthQueuingStrategy#property_prototype)
-*   [size](../.././stream/web/~/ByteLengthQueuingStrategy#property_size)
+-   [highWaterMark](../.././stream/web/~/ByteLengthQueuingStrategy#property_highwatermark)
+-   [prototype](../.././stream/web/~/ByteLengthQueuingStrategy#property_prototype)
+-   [size](../.././stream/web/~/ByteLengthQueuingStrategy#property_size)
 
 I
 
@@ -38,9 +37,9 @@ v
 
 No documentation available
 
-*   [prototype](../.././stream/web/~/CompressionStream#property_prototype)
-*   [readable](../.././stream/web/~/CompressionStream#property_readable)
-*   [writable](../.././stream/web/~/CompressionStream#property_writable)
+-   [prototype](../.././stream/web/~/CompressionStream#property_prototype)
+-   [readable](../.././stream/web/~/CompressionStream#property_readable)
+-   [writable](../.././stream/web/~/CompressionStream#property_writable)
 
 I
 
@@ -50,9 +49,9 @@ v
 
 This Streams API interface provides a built-in byte length queuing strategy that can be used when constructing streams.
 
-*   [highWaterMark](../.././stream/web/~/CountQueuingStrategy#property_highwatermark)
-*   [prototype](../.././stream/web/~/CountQueuingStrategy#property_prototype)
-*   [size](../.././stream/web/~/CountQueuingStrategy#property_size)
+-   [highWaterMark](../.././stream/web/~/CountQueuingStrategy#property_highwatermark)
+-   [prototype](../.././stream/web/~/CountQueuingStrategy#property_prototype)
+-   [size](../.././stream/web/~/CountQueuingStrategy#property_size)
 
 I
 
@@ -62,9 +61,9 @@ v
 
 No documentation available
 
-*   [prototype](../.././stream/web/~/DecompressionStream#property_prototype)
-*   [readable](../.././stream/web/~/DecompressionStream#property_readable)
-*   [writable](../.././stream/web/~/DecompressionStream#property_writable)
+-   [prototype](../.././stream/web/~/DecompressionStream#property_prototype)
+-   [readable](../.././stream/web/~/DecompressionStream#property_readable)
+-   [writable](../.././stream/web/~/DecompressionStream#property_writable)
 
 I
 
@@ -72,8 +71,8 @@ I
 
 No documentation available
 
-*   [highWaterMark](../.././stream/web/~/QueuingStrategy#property_highwatermark)
-*   [size](../.././stream/web/~/QueuingStrategy#property_size)
+-   [highWaterMark](../.././stream/web/~/QueuingStrategy#property_highwatermark)
+-   [size](../.././stream/web/~/QueuingStrategy#property_size)
 
 I
 
@@ -81,7 +80,7 @@ I
 
 No documentation available
 
-*   [highWaterMark](../.././stream/web/~/QueuingStrategyInit#property_highwatermark)
+-   [highWaterMark](../.././stream/web/~/QueuingStrategyInit#property_highwatermark)
 
 I
 
@@ -97,12 +96,12 @@ v
 
 No documentation available
 
-*   [byobRequest](../.././stream/web/~/ReadableByteStreamController#property_byobrequest)
-*   [close](../.././stream/web/~/ReadableByteStreamController#method_close_0)
-*   [desiredSize](../.././stream/web/~/ReadableByteStreamController#property_desiredsize)
-*   [enqueue](../.././stream/web/~/ReadableByteStreamController#method_enqueue_0)
-*   [error](../.././stream/web/~/ReadableByteStreamController#method_error_0)
-*   [prototype](../.././stream/web/~/ReadableByteStreamController#property_prototype)
+-   [byobRequest](../.././stream/web/~/ReadableByteStreamController#property_byobrequest)
+-   [close](../.././stream/web/~/ReadableByteStreamController#method_close_0)
+-   [desiredSize](../.././stream/web/~/ReadableByteStreamController#property_desiredsize)
+-   [enqueue](../.././stream/web/~/ReadableByteStreamController#method_enqueue_0)
+-   [error](../.././stream/web/~/ReadableByteStreamController#method_error_0)
+-   [prototype](../.././stream/web/~/ReadableByteStreamController#property_prototype)
 
 I
 
@@ -118,15 +117,15 @@ v
 
 This Streams API interface represents a readable stream of byte data.
 
-*   [cancel](../.././stream/web/~/ReadableStream#method_cancel_0)
-*   [from](../.././stream/web/~/ReadableStream#method_from_0)
-*   [getReader](../.././stream/web/~/ReadableStream#method_getreader_0)
-*   [locked](../.././stream/web/~/ReadableStream#property_locked)
-*   [pipeThrough](../.././stream/web/~/ReadableStream#method_pipethrough_0)
-*   [pipeTo](../.././stream/web/~/ReadableStream#method_pipeto_0)
-*   [prototype](../.././stream/web/~/ReadableStream#property_prototype)
-*   [tee](../.././stream/web/~/ReadableStream#method_tee_0)
-*   [values](../.././stream/web/~/ReadableStream#method_values_0)
+-   [cancel](../.././stream/web/~/ReadableStream#method_cancel_0)
+-   [from](../.././stream/web/~/ReadableStream#method_from_0)
+-   [getReader](../.././stream/web/~/ReadableStream#method_getreader_0)
+-   [locked](../.././stream/web/~/ReadableStream#property_locked)
+-   [pipeThrough](../.././stream/web/~/ReadableStream#method_pipethrough_0)
+-   [pipeTo](../.././stream/web/~/ReadableStream#method_pipeto_0)
+-   [prototype](../.././stream/web/~/ReadableStream#property_prototype)
+-   [tee](../.././stream/web/~/ReadableStream#method_tee_0)
+-   [values](../.././stream/web/~/ReadableStream#method_values_0)
 
 I
 
@@ -142,9 +141,9 @@ v
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/ReadableStreamBYOBReader)
 
-*   [prototype](../.././stream/web/~/ReadableStreamBYOBReader#property_prototype)
-*   [read](../.././stream/web/~/ReadableStreamBYOBReader#method_read_0)
-*   [releaseLock](../.././stream/web/~/ReadableStreamBYOBReader#method_releaselock_0)
+-   [prototype](../.././stream/web/~/ReadableStreamBYOBReader#property_prototype)
+-   [read](../.././stream/web/~/ReadableStreamBYOBReader#method_read_0)
+-   [releaseLock](../.././stream/web/~/ReadableStreamBYOBReader#method_releaselock_0)
 
 I
 
@@ -154,10 +153,10 @@ v
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/ReadableStreamBYOBRequest)
 
-*   [prototype](../.././stream/web/~/ReadableStreamBYOBRequest#property_prototype)
-*   [respond](../.././stream/web/~/ReadableStreamBYOBRequest#method_respond_0)
-*   [respondWithNewView](../.././stream/web/~/ReadableStreamBYOBRequest#method_respondwithnewview_0)
-*   [view](../.././stream/web/~/ReadableStreamBYOBRequest#property_view)
+-   [prototype](../.././stream/web/~/ReadableStreamBYOBRequest#property_prototype)
+-   [respond](../.././stream/web/~/ReadableStreamBYOBRequest#method_respond_0)
+-   [respondWithNewView](../.././stream/web/~/ReadableStreamBYOBRequest#method_respondwithnewview_0)
+-   [view](../.././stream/web/~/ReadableStreamBYOBRequest#property_view)
 
 I
 
@@ -167,11 +166,11 @@ v
 
 No documentation available
 
-*   [close](../.././stream/web/~/ReadableStreamDefaultController#method_close_0)
-*   [desiredSize](../.././stream/web/~/ReadableStreamDefaultController#property_desiredsize)
-*   [enqueue](../.././stream/web/~/ReadableStreamDefaultController#method_enqueue_0)
-*   [error](../.././stream/web/~/ReadableStreamDefaultController#method_error_0)
-*   [prototype](../.././stream/web/~/ReadableStreamDefaultController#property_prototype)
+-   [close](../.././stream/web/~/ReadableStreamDefaultController#method_close_0)
+-   [desiredSize](../.././stream/web/~/ReadableStreamDefaultController#property_desiredsize)
+-   [enqueue](../.././stream/web/~/ReadableStreamDefaultController#method_enqueue_0)
+-   [error](../.././stream/web/~/ReadableStreamDefaultController#method_error_0)
+-   [prototype](../.././stream/web/~/ReadableStreamDefaultController#property_prototype)
 
 I
 
@@ -181,9 +180,9 @@ v
 
 No documentation available
 
-*   [prototype](../.././stream/web/~/ReadableStreamDefaultReader#property_prototype)
-*   [read](../.././stream/web/~/ReadableStreamDefaultReader#method_read_0)
-*   [releaseLock](../.././stream/web/~/ReadableStreamDefaultReader#method_releaselock_0)
+-   [prototype](../.././stream/web/~/ReadableStreamDefaultReader#property_prototype)
+-   [read](../.././stream/web/~/ReadableStreamDefaultReader#method_read_0)
+-   [releaseLock](../.././stream/web/~/ReadableStreamDefaultReader#method_releaselock_0)
 
 I
 
@@ -197,8 +196,8 @@ I
 
 No documentation available
 
-*   [cancel](../.././stream/web/~/ReadableStreamGenericReader#method_cancel_0)
-*   [closed](../.././stream/web/~/ReadableStreamGenericReader#property_closed)
+-   [cancel](../.././stream/web/~/ReadableStreamGenericReader#method_cancel_0)
+-   [closed](../.././stream/web/~/ReadableStreamGenericReader#property_closed)
 
 I
 
@@ -206,7 +205,7 @@ I
 
 No documentation available
 
-*   [mode](../.././stream/web/~/ReadableStreamGetReaderOptions#property_mode)
+-   [mode](../.././stream/web/~/ReadableStreamGetReaderOptions#property_mode)
 
 I
 
@@ -214,8 +213,8 @@ I
 
 No documentation available
 
-*   [done](../.././stream/web/~/ReadableStreamReadDoneResult#property_done)
-*   [value](../.././stream/web/~/ReadableStreamReadDoneResult#property_value)
+-   [done](../.././stream/web/~/ReadableStreamReadDoneResult#property_done)
+-   [value](../.././stream/web/~/ReadableStreamReadDoneResult#property_value)
 
 I
 
@@ -223,8 +222,8 @@ I
 
 No documentation available
 
-*   [done](../.././stream/web/~/ReadableStreamReadValueResult#property_done)
-*   [value](../.././stream/web/~/ReadableStreamReadValueResult#property_value)
+-   [done](../.././stream/web/~/ReadableStreamReadValueResult#property_done)
+-   [value](../.././stream/web/~/ReadableStreamReadValueResult#property_value)
 
 I
 
@@ -232,8 +231,8 @@ I
 
 No documentation available
 
-*   [readable](../.././stream/web/~/ReadableWritablePair#property_readable)
-*   [writable](../.././stream/web/~/ReadableWritablePair#property_writable)
+-   [readable](../.././stream/web/~/ReadableWritablePair#property_readable)
+-   [writable](../.././stream/web/~/ReadableWritablePair#property_writable)
 
 I
 
@@ -241,10 +240,10 @@ I
 
 No documentation available
 
-*   [preventAbort](../.././stream/web/~/StreamPipeOptions#property_preventabort)
-*   [preventCancel](../.././stream/web/~/StreamPipeOptions#property_preventcancel)
-*   [preventClose](../.././stream/web/~/StreamPipeOptions#property_preventclose)
-*   [signal](../.././stream/web/~/StreamPipeOptions#property_signal)
+-   [preventAbort](../.././stream/web/~/StreamPipeOptions#property_preventabort)
+-   [preventCancel](../.././stream/web/~/StreamPipeOptions#property_preventcancel)
+-   [preventClose](../.././stream/web/~/StreamPipeOptions#property_preventclose)
+-   [signal](../.././stream/web/~/StreamPipeOptions#property_signal)
 
 I
 
@@ -252,8 +251,8 @@ I
 
 No documentation available
 
-*   [fatal](../.././stream/web/~/TextDecoderOptions#property_fatal)
-*   [ignoreBOM](../.././stream/web/~/TextDecoderOptions#property_ignorebom)
+-   [fatal](../.././stream/web/~/TextDecoderOptions#property_fatal)
+-   [ignoreBOM](../.././stream/web/~/TextDecoderOptions#property_ignorebom)
 
 I
 
@@ -263,12 +262,12 @@ v
 
 No documentation available
 
-*   [encoding](../.././stream/web/~/TextDecoderStream#property_encoding)
-*   [fatal](../.././stream/web/~/TextDecoderStream#property_fatal)
-*   [ignoreBOM](../.././stream/web/~/TextDecoderStream#property_ignorebom)
-*   [prototype](../.././stream/web/~/TextDecoderStream#property_prototype)
-*   [readable](../.././stream/web/~/TextDecoderStream#property_readable)
-*   [writable](../.././stream/web/~/TextDecoderStream#property_writable)
+-   [encoding](../.././stream/web/~/TextDecoderStream#property_encoding)
+-   [fatal](../.././stream/web/~/TextDecoderStream#property_fatal)
+-   [ignoreBOM](../.././stream/web/~/TextDecoderStream#property_ignorebom)
+-   [prototype](../.././stream/web/~/TextDecoderStream#property_prototype)
+-   [readable](../.././stream/web/~/TextDecoderStream#property_readable)
+-   [writable](../.././stream/web/~/TextDecoderStream#property_writable)
 
 I
 
@@ -278,10 +277,10 @@ v
 
 No documentation available
 
-*   [encoding](../.././stream/web/~/TextEncoderStream#property_encoding)
-*   [prototype](../.././stream/web/~/TextEncoderStream#property_prototype)
-*   [readable](../.././stream/web/~/TextEncoderStream#property_readable)
-*   [writable](../.././stream/web/~/TextEncoderStream#property_writable)
+-   [encoding](../.././stream/web/~/TextEncoderStream#property_encoding)
+-   [prototype](../.././stream/web/~/TextEncoderStream#property_prototype)
+-   [readable](../.././stream/web/~/TextEncoderStream#property_readable)
+-   [writable](../.././stream/web/~/TextEncoderStream#property_writable)
 
 I
 
@@ -289,11 +288,11 @@ I
 
 No documentation available
 
-*   [flush](../.././stream/web/~/Transformer#property_flush)
-*   [readableType](../.././stream/web/~/Transformer#property_readabletype)
-*   [start](../.././stream/web/~/Transformer#property_start)
-*   [transform](../.././stream/web/~/Transformer#property_transform)
-*   [writableType](../.././stream/web/~/Transformer#property_writabletype)
+-   [flush](../.././stream/web/~/Transformer#property_flush)
+-   [readableType](../.././stream/web/~/Transformer#property_readabletype)
+-   [start](../.././stream/web/~/Transformer#property_start)
+-   [transform](../.././stream/web/~/Transformer#property_transform)
+-   [writableType](../.././stream/web/~/Transformer#property_writabletype)
 
 I
 
@@ -321,9 +320,9 @@ v
 
 No documentation available
 
-*   [prototype](../.././stream/web/~/TransformStream#property_prototype)
-*   [readable](../.././stream/web/~/TransformStream#property_readable)
-*   [writable](../.././stream/web/~/TransformStream#property_writable)
+-   [prototype](../.././stream/web/~/TransformStream#property_prototype)
+-   [readable](../.././stream/web/~/TransformStream#property_readable)
+-   [writable](../.././stream/web/~/TransformStream#property_writable)
 
 I
 
@@ -333,11 +332,11 @@ v
 
 No documentation available
 
-*   [desiredSize](../.././stream/web/~/TransformStreamDefaultController#property_desiredsize)
-*   [enqueue](../.././stream/web/~/TransformStreamDefaultController#method_enqueue_0)
-*   [error](../.././stream/web/~/TransformStreamDefaultController#method_error_0)
-*   [prototype](../.././stream/web/~/TransformStreamDefaultController#property_prototype)
-*   [terminate](../.././stream/web/~/TransformStreamDefaultController#method_terminate_0)
+-   [desiredSize](../.././stream/web/~/TransformStreamDefaultController#property_desiredsize)
+-   [enqueue](../.././stream/web/~/TransformStreamDefaultController#method_enqueue_0)
+-   [error](../.././stream/web/~/TransformStreamDefaultController#method_error_0)
+-   [prototype](../.././stream/web/~/TransformStreamDefaultController#property_prototype)
+-   [terminate](../.././stream/web/~/TransformStreamDefaultController#method_terminate_0)
 
 I
 
@@ -345,11 +344,11 @@ I
 
 No documentation available
 
-*   [autoAllocateChunkSize](../.././stream/web/~/UnderlyingByteSource#property_autoallocatechunksize)
-*   [cancel](../.././stream/web/~/UnderlyingByteSource#property_cancel)
-*   [pull](../.././stream/web/~/UnderlyingByteSource#property_pull)
-*   [start](../.././stream/web/~/UnderlyingByteSource#property_start)
-*   [type](../.././stream/web/~/UnderlyingByteSource#property_type)
+-   [autoAllocateChunkSize](../.././stream/web/~/UnderlyingByteSource#property_autoallocatechunksize)
+-   [cancel](../.././stream/web/~/UnderlyingByteSource#property_cancel)
+-   [pull](../.././stream/web/~/UnderlyingByteSource#property_pull)
+-   [start](../.././stream/web/~/UnderlyingByteSource#property_start)
+-   [type](../.././stream/web/~/UnderlyingByteSource#property_type)
 
 I
 
@@ -357,11 +356,11 @@ I
 
 No documentation available
 
-*   [abort](../.././stream/web/~/UnderlyingSink#property_abort)
-*   [close](../.././stream/web/~/UnderlyingSink#property_close)
-*   [start](../.././stream/web/~/UnderlyingSink#property_start)
-*   [type](../.././stream/web/~/UnderlyingSink#property_type)
-*   [write](../.././stream/web/~/UnderlyingSink#property_write)
+-   [abort](../.././stream/web/~/UnderlyingSink#property_abort)
+-   [close](../.././stream/web/~/UnderlyingSink#property_close)
+-   [start](../.././stream/web/~/UnderlyingSink#property_start)
+-   [type](../.././stream/web/~/UnderlyingSink#property_type)
+-   [write](../.././stream/web/~/UnderlyingSink#property_write)
 
 I
 
@@ -393,10 +392,10 @@ I
 
 No documentation available
 
-*   [cancel](../.././stream/web/~/UnderlyingSource#property_cancel)
-*   [pull](../.././stream/web/~/UnderlyingSource#property_pull)
-*   [start](../.././stream/web/~/UnderlyingSource#property_start)
-*   [type](../.././stream/web/~/UnderlyingSource#property_type)
+-   [cancel](../.././stream/web/~/UnderlyingSource#property_cancel)
+-   [pull](../.././stream/web/~/UnderlyingSource#property_pull)
+-   [start](../.././stream/web/~/UnderlyingSource#property_start)
+-   [type](../.././stream/web/~/UnderlyingSource#property_type)
 
 I
 
@@ -424,11 +423,11 @@ v
 
 This Streams API interface provides a standard abstraction for writing streaming data to a destination, known as a sink. This object comes with built-in back pressure and queuing.
 
-*   [abort](../.././stream/web/~/WritableStream#method_abort_0)
-*   [close](../.././stream/web/~/WritableStream#method_close_0)
-*   [getWriter](../.././stream/web/~/WritableStream#method_getwriter_0)
-*   [locked](../.././stream/web/~/WritableStream#property_locked)
-*   [prototype](../.././stream/web/~/WritableStream#property_prototype)
+-   [abort](../.././stream/web/~/WritableStream#method_abort_0)
+-   [close](../.././stream/web/~/WritableStream#method_close_0)
+-   [getWriter](../.././stream/web/~/WritableStream#method_getwriter_0)
+-   [locked](../.././stream/web/~/WritableStream#property_locked)
+-   [prototype](../.././stream/web/~/WritableStream#property_prototype)
 
 I
 
@@ -438,8 +437,8 @@ v
 
 This Streams API interface represents a controller allowing control of a WritableStream's state. When constructing a WritableStream, the underlying sink is given a corresponding WritableStreamDefaultController instance to manipulate.
 
-*   [error](../.././stream/web/~/WritableStreamDefaultController#method_error_0)
-*   [prototype](../.././stream/web/~/WritableStreamDefaultController#property_prototype)
+-   [error](../.././stream/web/~/WritableStreamDefaultController#method_error_0)
+-   [prototype](../.././stream/web/~/WritableStreamDefaultController#property_prototype)
 
 I
 
@@ -449,16 +448,14 @@ v
 
 This Streams API interface is the object returned by WritableStream.getWriter() and once created locks the < writer to the WritableStream ensuring that no other streams can write to the underlying sink.
 
-*   [abort](../.././stream/web/~/WritableStreamDefaultWriter#method_abort_0)
-*   [close](../.././stream/web/~/WritableStreamDefaultWriter#method_close_0)
-*   [closed](../.././stream/web/~/WritableStreamDefaultWriter#property_closed)
-*   [desiredSize](../.././stream/web/~/WritableStreamDefaultWriter#property_desiredsize)
-*   [prototype](../.././stream/web/~/WritableStreamDefaultWriter#property_prototype)
-*   [ready](../.././stream/web/~/WritableStreamDefaultWriter#property_ready)
-*   [releaseLock](../.././stream/web/~/WritableStreamDefaultWriter#method_releaselock_0)
-*   [write](../.././stream/web/~/WritableStreamDefaultWriter#method_write_0)
-
-### Type Aliases [#](<#Type Aliases>)
+-   [abort](../.././stream/web/~/WritableStreamDefaultWriter#method_abort_0)
+-   [close](../.././stream/web/~/WritableStreamDefaultWriter#method_close_0)
+-   [closed](../.././stream/web/~/WritableStreamDefaultWriter#property_closed)
+-   [desiredSize](../.././stream/web/~/WritableStreamDefaultWriter#property_desiredsize)
+-   [prototype](../.././stream/web/~/WritableStreamDefaultWriter#property_prototype)
+-   [ready](../.././stream/web/~/WritableStreamDefaultWriter#property_ready)
+-   [releaseLock](../.././stream/web/~/WritableStreamDefaultWriter#method_releaselock_0)
+-   [write](../.././stream/web/~/WritableStreamDefaultWriter#method_write_0)
 
 T
 

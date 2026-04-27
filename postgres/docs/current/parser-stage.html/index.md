@@ -5,21 +5,19 @@ canonical_url: "https://www.postgresql.org/docs/current/parser-stage.html"
 docset: "postgres"
 kind: "database"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:51:53.933Z"
-content_hash: "628371c11f8b1fd7fd867c62bddc09a5106272f81a7405da2a815de7d6c19777"
+last_crawled_at: "2026-04-27T20:50:51.438Z"
+content_hash: "b9582cde3c0f75cc915a58749f4706c339456fb7daed26a39831ae008aa540d6"
 menu_path: ["PostgreSQL: Documentation: 18: 51.3. The Parser Stage"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/parallel-safety.html/index.md", "title": "PostgreSQL: Documentation: 18: 15.4.\u00a0Parallel Safety"}
-nav_next: {"path": "postgres/docs/current/passwordcheck.html/index.md", "title": "PostgreSQL: Documentation: 18: F.24.\u00a0passwordcheck \u2014 verify password strength"}
+content_language: "en"
 ---
-
 Development Versions: [devel](https://www.postgresql.org/docs/devel/parser-stage.html "PostgreSQL devel - 51.3. The Parser Stage")
 
 The _parser stage_ consists of two parts:
 
-*   The _parser_ defined in `gram.y` and `scan.l` is built using the Unix tools bison and flex.
+-   The _parser_ defined in `gram.y` and `scan.l` is built using the Unix tools bison and flex.
     
-*   The _transformation process_ does modifications and augmentations to the data structures returned by the parser.
+-   The _transformation process_ does modifications and augmentations to the data structures returned by the parser.
     
 
 ### 51.3.1. Parser [#](#PARSER-STAGE-PARSER)

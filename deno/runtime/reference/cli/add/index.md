@@ -5,17 +5,18 @@ canonical_url: "https://docs.deno.com/runtime/reference/cli/add/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:50:14.994Z"
-content_hash: "73dd9f41f09dbfbe965eba2e1f0db2c1dd5943cb0dcf473abdd347431e4280b9"
+last_crawled_at: "2026-04-27T17:25:23.085Z"
+content_hash: "a8c85369d0a1bc20d9d99ad1f9ab58e238cd539e8b2c7b0c9170608a2e057362"
 menu_path: ["deno add"]
 section_path: []
+content_language: "en"
 ---
-On this page
+**On this page**
 
-*   [Examples](#examples)
-*   [Where dependencies are stored](#where-dependencies-are-stored)
-*   [Options](#options)
-*   [Dependency management options](#dependency-management-options)
+-   [Examples](#examples)
+-   [Where dependencies are stored](#where-dependencies-are-stored)
+-   [Options](#options)
+-   [Dependency management options](#dependency-management-options)
 
 The `deno add` command adds dependencies to your project's configuration file. It is an alias for [`deno install [PACKAGES]`](/runtime/reference/cli/install/#deno-install-packages). For more on how Deno handles dependencies, see [Modules and dependencies](/runtime/fundamentals/modules/).
 

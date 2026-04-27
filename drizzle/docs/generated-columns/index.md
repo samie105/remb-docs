@@ -5,33 +5,31 @@ canonical_url: "https://orm.drizzle.team/docs/generated-columns"
 docset: "drizzle"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:49:29.146Z"
-content_hash: "70fc94402bb7faafd0c554a9e7421f375f96ac3a2d38931e0de7d3a802b4b9a2"
+last_crawled_at: "2026-04-27T18:39:14.764Z"
+content_hash: "0f60104a461796722f70acb5c6ab03255df5bc84fe1ae2ece16e91a9e0e5705c"
 menu_path: ["Generated Columns"]
 section_path: []
-nav_prev: {"path": "drizzle/docs/set-operations/index.md", "title": "Set Operations"}
-nav_next: {"path": "drizzle/docs/transactions/index.md", "title": "Transactions"}
+content_language: "en"
 ---
-
 #### Database side[](#database-side)
 
 **Types**: `STORED` only
 
 **How It Works**
 
-*   Automatically computes values based on other columns during insert or update.
+-   Automatically computes values based on other columns during insert or update.
 
 **Capabilities**
 
-*   Simplifies data access by precomputing complex expressions.
-*   Enhances query performance with index support on generated columns.
+-   Simplifies data access by precomputing complex expressions.
+-   Enhances query performance with index support on generated columns.
 
 **Limitations**
 
-*   Cannot specify default values.
-*   Expressions cannot reference other generated columns or include subqueries.
-*   Schema changes required to modify generated column expressions.
-*   Cannot directly use in primary keys, foreign keys, or unique constraints
+-   Cannot specify default values.
+-   Expressions cannot reference other generated columns or include subqueries.
+-   Schema changes required to modify generated column expressions.
+-   Cannot directly use in primary keys, foreign keys, or unique constraints
 
 For more info, please check [PostgreSQL](https://www.postgresql.org/docs/current/ddl-generated-columns.html) docs
 
@@ -51,13 +49,13 @@ In previous versions, `.generatedAlwaysAs()` also accepted literals as expressio
 
 **`string`**
 
-```
+```ts
 export const test = pgTable("test", {
     generatedName: text("gen_name").generatedAlwaysAs(`'hello world!'`),
 });
 ```
 
-```
+```sql
 CREATE TABLE "test" (
     "gen_name" text GENERATED ALWAYS AS ('hello world!') STORED
 );
@@ -65,13 +63,13 @@ CREATE TABLE "test" (
 
 **`sql`** tag - if you want drizzle to escape some values for you
 
-```
+```ts
 export const test = pgTable("test", {
     generatedName: text("gen_name").generatedAlwaysAs(sql`'hello "world"!'`),
 });
 ```
 
-```
+```sql
 CREATE TABLE "test" (
     "gen_name" text GENERATED ALWAYS AS ('hello "world"!') STORED
 );
@@ -79,7 +77,7 @@ CREATE TABLE "test" (
 
 **`callback`** - if you need to reference columns from a table
 
-```
+```ts
 export const test = pgTable("test", {
     name: text("first_name"),
     generatedName: text("gen_name").generatedAlwaysAs(
@@ -88,7 +86,7 @@ export const test = pgTable("test", {
 });
 ```
 
-```
+```sql
 CREATE TABLE "test" (
     "first_name" text,
     "gen_name" text GENERATED ALWAYS AS ('hi, ' || "test"."first_name" || '!') STORED
@@ -97,9 +95,7 @@ CREATE TABLE "test" (
 
 **Example** generated columns with full-text search
 
-schema.ts
-
-```
+```typescript
 import { SQL, sql } from "drizzle-orm";
 import { customType, index, integer, pgTable, text } from "drizzle-orm/pg-core";
 
@@ -126,7 +122,7 @@ export const test = pgTable(
 );
 ```
 
-```
+```sql
 CREATE TABLE "test" (
 	"id" integer PRIMARY KEY GENERATED ALWAYS AS IDENTITY (sequence name "test_id_seq" INCREMENT BY 1 MINVALUE 1 MAXVALUE 2147483647 START WITH 1 CACHE 1),
 	"content" text,
@@ -142,19 +138,19 @@ CREATE INDEX "idx_content_search" ON "test" USING gin ("content_search");
 
 **How It Works**
 
-*   Defined with an expression in the table schema.
-*   Virtual columns are computed during read operations.
-*   Stored columns are computed during write operations and stored.
+-   Defined with an expression in the table schema.
+-   Virtual columns are computed during read operations.
+-   Stored columns are computed during write operations and stored.
 
 **Capabilities**
 
-*   Used in SELECT, INSERT, UPDATE, and DELETE statements.
-*   Can be indexed, both virtual and stored.
-*   Can specify NOT NULL and other constraints.
+-   Used in SELECT, INSERT, UPDATE, and DELETE statements.
+-   Can be indexed, both virtual and stored.
+-   Can specify NOT NULL and other constraints.
 
 **Limitations**
 
-*   Cannot directly insert or update values in a generated column
+-   Cannot directly insert or update values in a generated column
 
 For more info, please check [MySQL Alter Generated](https://dev.mysql.com/doc/refman/8.4/en/alter-table-generated-columns.html) docs and [MySQL create generated](https://dev.mysql.com/doc/refman/8.4/en/create-table-generated-columns.html) docs
 
@@ -174,13 +170,13 @@ In previous versions, `.generatedAlwaysAs()` also accepted literals as expressio
 
 **`string`**
 
-```
+```ts
 export const test = mysqlTable("test", {
     generatedName: text("gen_name").generatedAlwaysAs(`'hello world!'`),
 });
 ```
 
-```
+```sql
 CREATE TABLE "test" (
     "gen_name" text GENERATED ALWAYS AS ('hello world!') VIRTUAL
 );
@@ -188,13 +184,13 @@ CREATE TABLE "test" (
 
 **`sql`** tag - if you want drizzle to escape some values for you
 
-```
+```ts
 export const test = mysqlTable("test", {
     generatedName: text("gen_name").generatedAlwaysAs(sql`'hello "world"!'`),
 });
 ```
 
-```
+```sql
 CREATE TABLE `test` (
     `gen_name` text GENERATED ALWAYS AS ('hello "world"!') VIRTUAL
 );
@@ -202,7 +198,7 @@ CREATE TABLE `test` (
 
 **`callback`** - if you need to reference columns from a table
 
-```
+```ts
 export const test = mysqlTable("test", {
     name: text("first_name"),
     generatedName: text("gen_name").generatedAlwaysAs(
@@ -211,7 +207,7 @@ export const test = mysqlTable("test", {
 });
 ```
 
-```
+```sql
 CREATE TABLE `test` (
   `first_name` text,
   `gen_name` text GENERATED ALWAYS AS ('hi, ' || `test`.`first_name` || '!') VIRTUAL
@@ -225,9 +221,7 @@ Drizzle Kit will also have limitations for `push` command:
 1.  You can’t change the generated constraint expression and type using `push`. Drizzle-kit will ignore this change. To make it work, you would need to `drop the column`, `push`, and then `add a column with a new expression`. This was done due to the complex mapping from the database side, where the schema expression will be modified on the database side and, on introspection, we will get a different string. We can’t be sure if you changed this expression or if it was changed and formatted by the database. As long as these are generated columns and `push` is mostly used for prototyping on a local database, it should be fast to `drop` and `create` generated columns. Since these columns are `generated`, all the data will be restored
 2.  `generate` should have no limitations
 
-schema.ts
-
-```
+```typescript
 export const users = mysqlTable("users", {
     id: int("id"),
     id2: int("id2"),
@@ -243,7 +237,7 @@ export const users = mysqlTable("users", {
 });
 ```
 
-```
+```sql
 CREATE TABLE `users` (
   `id` int,
   `id2` int,
@@ -259,19 +253,19 @@ CREATE TABLE `users` (
 
 **How It Works**
 
-*   Defined with an expression in the table schema.
-*   Virtual columns are computed during read operations.
-*   Stored columns are computed during write operations and stored.
+-   Defined with an expression in the table schema.
+-   Virtual columns are computed during read operations.
+-   Stored columns are computed during write operations and stored.
 
 **Capabilities**
 
-*   Used in SELECT, INSERT, UPDATE, and DELETE statements.
-*   Can be indexed, both virtual and stored.
-*   Can specify NOT NULL and other constraints.
+-   Used in SELECT, INSERT, UPDATE, and DELETE statements.
+-   Can be indexed, both virtual and stored.
+-   Can specify NOT NULL and other constraints.
 
 **Limitations**
 
-*   Cannot directly insert or update values in a generated column
+-   Cannot directly insert or update values in a generated column
 
 For more info, please check [SQLite](https://www.sqlite.org/gencol.html) docs
 
@@ -291,14 +285,14 @@ In versions before 1.0.0-beta.12, `.generatedAlwaysAs()` also accepted literals 
 
 **`string`**
 
-```
+```ts
 export const test = sqliteTable("test", {
     id: int("id").primaryKey(),
     generatedName: text("gen_name").generatedAlwaysAs(`'hello world!'`),
 });
 ```
 
-```
+```sql
 CREATE TABLE `test` (
     `id` integer PRIMARY KEY,
     `gen_name` text GENERATED ALWAYS AS ('hello world!') VIRTUAL
@@ -307,14 +301,14 @@ CREATE TABLE `test` (
 
 **`sql`** tag - if you want drizzle to escape some values for you
 
-```
+```ts
 export const test = sqliteTable("test", {
     id: int("id").primaryKey(),
     generatedName: text("gen_name").generatedAlwaysAs(sql`'hello "world"!'`),
 });
 ```
 
-```
+```sql
 CREATE TABLE `test` (
   `id` integer PRIMARY KEY,
   `gen_name` text GENERATED ALWAYS AS ('hello "world"!') VIRTUAL
@@ -323,7 +317,7 @@ CREATE TABLE `test` (
 
 **`callback`** - if you need to reference columns from a table
 
-```
+```ts
 export const test = sqliteTable("test", {
     name: text("first_name"),
     generatedName: text("gen_name").generatedAlwaysAs(
@@ -332,7 +326,7 @@ export const test = sqliteTable("test", {
 });
 ```
 
-```
+```sql
 CREATE TABLE `test` (
   `first_name` text,
   `gen_name` text GENERATED ALWAYS AS ('hi,' || "first_name" || '!') VIRTUAL
@@ -348,9 +342,7 @@ Drizzle Kit will also have limitations for `push` and `generate` command:
 3.  You can’t change a `stored` generated expression in an existing column for the same reason as above. However, you can change a `virtual` expression.
 4.  You can’t change the generated constraint type from `virtual` to `stored` for the same reason as above. However, you can change from `stored` to `virtual`.
 
-schema.ts
-
-```
+```typescript
 export const users = sqliteTable("users", {
   id: int("id"),
   name: text("name"),
@@ -365,7 +357,7 @@ export const users = sqliteTable("users", {
 });
 ```
 
-```
+```sql
 CREATE TABLE `users` (
     `id` integer,
     `name` text,
@@ -382,9 +374,9 @@ Work in Progress
 
 **How It Works**
 
-*   Defined with an expression in the table schema.
-*   Virtual columns are computed during read operations.
-*   Persisted columns are computed during write operations and stored.
+-   Defined with an expression in the table schema.
+-   Virtual columns are computed during read operations.
+-   Persisted columns are computed during write operations and stored.
 
 For more info, please check [MSSQL](https://learn.microsoft.com/en-us/sql/relational-databases/tables/specify-computed-columns-in-a-table?view=sql-server-ver17) docs
 
@@ -404,13 +396,13 @@ In previous versions, `.generatedAlwaysAs()` also accepted literals as expressio
 
 **`string`**
 
-```
+```ts
 export const test = mssqlTable("test", {
     generatedName: text("gen_name").generatedAlwaysAs(`'hello world!'`),
 });
 ```
 
-```
+```sql
 CREATE TABLE [test] (
     [gen_name] AS ('hello world!')
 );
@@ -418,14 +410,14 @@ CREATE TABLE [test] (
 
 **`sql`** tag - if you want drizzle to escape some values for you
 
-```
+```ts
 export const test = mssqlTable("test", {
     id: int("id"),
     generatedName: text("gen_name").generatedAlwaysAs(sql`hello "world"!`),
 });
 ```
 
-```
+```sql
 CREATE TABLE [test] (
     [id] int,
     [gen_name] AS ('hello "world"!') 
@@ -434,7 +426,7 @@ CREATE TABLE [test] (
 
 **`callback`** - if you need to reference columns from a table
 
-```
+```ts
 export const test = mssqlTable("test", {
     name: text("first_name"),
     generatedName: text("gen_name").generatedAlwaysAs(
@@ -443,7 +435,7 @@ export const test = mssqlTable("test", {
 });
 ```
 
-```
+```sql
 CREATE TABLE [test] (
 	[first_name] text,
 	[gen_name] AS (concat('hi,', ' ', [test].[first_name], '!')) 
@@ -464,13 +456,13 @@ In previous versions, `.generatedAlwaysAs()` also accepted literals as expressio
 
 **`string`**
 
-```
+```ts
 export const test = cockroachTable("test", {
     generatedName: text("gen_name").generatedAlwaysAs(`'hello world!'`),
 });
 ```
 
-```
+```sql
 CREATE TABLE "test" (
 	"gen_name" string GENERATED ALWAYS AS ('hello world!') STORED
 );
@@ -478,13 +470,13 @@ CREATE TABLE "test" (
 
 **`sql`** tag - if you want drizzle to escape some values for you
 
-```
+```ts
 export const test = cockroachTable("test", {
     generatedName: text("gen_name").generatedAlwaysAs(sql`'hello "world"!'`),
 });
 ```
 
-```
+```sql
 CREATE TABLE "test" (
     "gen_name" string GENERATED ALWAYS AS ('hello "world"!') STORED
 );
@@ -492,7 +484,7 @@ CREATE TABLE "test" (
 
 **`callback`** - if you need to reference columns from a table
 
-```
+```ts
 export const test = cockroachTable("test", {
     name: text("first_name"),
     generatedName: text("gen_name").generatedAlwaysAs(
@@ -501,7 +493,7 @@ export const test = cockroachTable("test", {
 });
 ```
 
-```
+```sql
 CREATE TABLE "test" (
 	"first_name" string,
 	"gen_name" string GENERATED ALWAYS AS ('hi, ' || "test"."first_name" || '!') STORED
@@ -510,9 +502,7 @@ CREATE TABLE "test" (
 
 **Example** generated columns with full-text search
 
-schema.ts
-
-```
+```typescript
 import { SQL, sql } from "drizzle-orm";
 import { customType, index, int4, cockroachTable, text } from "drizzle-orm/cockroach-core";
 
@@ -539,7 +529,7 @@ export const test = cockroachTable(
 );
 ```
 
-```
+```sql
 CREATE TABLE "test" (
 	"id" int4 PRIMARY KEY GENERATED ALWAYS AS IDENTITY (INCREMENT BY 1 MINVALUE 1 MAXVALUE 2147483647 START WITH 1 CACHE 1),
 	"content" string,

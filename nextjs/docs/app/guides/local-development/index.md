@@ -5,17 +5,19 @@ canonical_url: "https://nextjs.org/docs/app/guides/local-development"
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:15:02.843Z"
-content_hash: "85c07e071bd08216c280052b1f93a8619d279b235d0245ee34b2ae2ed1b6c207"
+last_crawled_at: "2026-04-27T18:13:59.416Z"
+content_hash: "a2081c6d76d59a098e7b297665d1a9c0c113fb17e04adf81291a67f1adeddac6"
 menu_path: ["How to optimize your local development environment"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/guides/lazy-loading/index.md", "title": "How to lazy load Client Components and libraries"}
-nav_next: {"path": "nextjs/docs/app/guides/mcp/index.md", "title": "Enabling Next.js MCP Server for Coding Agents"}
+version: "latest"
+tab_variants: ["pnpm","npm","yarn","bun","pnpm","npm","yarn","bun","pnpm","npm","yarn","bun"]
+content_language: "en"
 ---
+[App Router](/docs/app)[Guides](/docs/app/guides)Development Environment
 
 # How to optimize your local development environment
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 Next.js is designed to provide a great developer experience. As your application grows, you might notice slower compilation times during local development. This guide will help you identify and fix common compile-time performance issues.
 
@@ -43,9 +45,9 @@ On macOS, you can disable [Gatekeeper](https://support.apple.com/guide/security/
 3.  Ensure your terminal is listed and enabled. If you're using a third-party terminal like iTerm or Ghostty, add that to the list.
 4.  Restart your terminal.
 
-![Screenshot of macOS System Settings showing the Privacy & Security pane](/_next/image?url=https%3A%2F%2Fh8DxKfmAPhn8O0p3.public.blob.vercel-storage.com%2Fdocs%2Flight%2Fmacos-gatekeeper-privacy-and-security.png&w=1920&q=75)![Screenshot of macOS System Settings showing the Privacy & Security pane](/_next/image?url=https%3A%2F%2Fh8DxKfmAPhn8O0p3.public.blob.vercel-storage.com%2Fdocs%2Fdark%2Fmacos-gatekeeper-privacy-and-security.png&w=1920&q=75)
+![Screenshot of macOS System Settings showing the Privacy & Security pane](https://h8DxKfmAPhn8O0p3.public.blob.vercel-storage.com/docs/light/macos-gatekeeper-privacy-and-security.png)
 
-![Screenshot of macOS System Settings showing the Developer Tools options](/_next/image?url=https%3A%2F%2Fh8DxKfmAPhn8O0p3.public.blob.vercel-storage.com%2Fdocs%2Flight%2Fmacos-gatekeeper-developer-tools.png&w=1920&q=75)![Screenshot of macOS System Settings showing the Developer Tools options](/_next/image?url=https%3A%2F%2Fh8DxKfmAPhn8O0p3.public.blob.vercel-storage.com%2Fdocs%2Fdark%2Fmacos-gatekeeper-developer-tools.png&w=1920&q=75)
+![Screenshot of macOS System Settings showing the Developer Tools options](https://h8DxKfmAPhn8O0p3.public.blob.vercel-storage.com/docs/light/macos-gatekeeper-developer-tools.png)
 
 If you or your employer have configured any other Antivirus solutions on your system, you should inspect the relevant settings for those products.
 
@@ -55,7 +57,21 @@ Make sure you're using the latest version of Next.js. Each new version often inc
 
 Turbopack is now the default bundler for Next.js development and provides significant performance improvements over webpack.
 
-pnpmnpmyarnbun
+#### pnpm
+
+pnpm
+
+#### npm
+
+npm
+
+#### yarn
+
+yarn
+
+#### bun
+
+bun
 
 Terminal
 
@@ -66,7 +82,21 @@ pnpm dev  # Turbopack is used by default
 
 If you need to use Webpack instead of Turbopack, you can opt-in:
 
-pnpmnpmyarnbun
+#### pnpm
+
+pnpm
+
+#### npm
+
+npm
+
+#### yarn
+
+yarn
+
+#### bun
+
+bun
 
 Terminal
 
@@ -98,10 +128,10 @@ Libraries like `react-icons` includes many different icon sets. Choose one set a
 
 For example, if your application uses `react-icons` and imports all of these:
 
-*   `pi` (Phosphor Icons)
-*   `md` (Material Design Icons)
-*   `tb` (tabler-icons)
-*   `cg` (cssgg)
+-   `pi` (Phosphor Icons)
+-   `md` (Material Design Icons)
+-   `tb` (tabler-icons)
+-   `cg` (cssgg)
 
 Combined they will be tens of thousands of modules that the compiler has to handle, even if you only use a single import from each.
 
@@ -186,9 +216,9 @@ Docker's filesystem access on Mac and Windows can cause Hot Module Replacement (
 
 This performance difference is due to how Docker handles filesystem operations outside of Linux environments. For the best development experience:
 
-*   Use local development (`npm run dev` or `pnpm dev`) instead of Docker during development
-*   Reserve Docker for production deployments and testing production builds
-*   If you must use Docker for development, consider using Docker on a Linux machine or VM
+-   Use local development (`npm run dev` or `pnpm dev`) instead of Docker during development
+-   Reserve Docker for production deployments and testing production builds
+-   If you must use Docker for development, consider using Docker on a Linux machine or VM
 
 [Learn more about Docker deployment](/docs/app/getting-started/deploying#docker) for production use.
 
@@ -218,7 +248,21 @@ Turbopack tracing is a tool that helps you understand the performance of your ap
     
 2.  Generate a Turbopack trace file:
     
-    pnpmnpmyarnbun
+    #### pnpm
+    
+    pnpm
+    
+    #### npm
+    
+    npm
+    
+    #### yarn
+    
+    yarn
+    
+    #### bun
+    
+    bun
     
     Terminal
     
@@ -255,20 +299,4 @@ Turbopack tracing is a tool that helps you understand the performance of your ap
 
 Share the trace file generated in the [Turbopack Tracing](#turbopack-tracing) section and share it on [GitHub Discussions](https://github.com/vercel/next.js/discussions) or [Discord](https://nextjs.org/discord).
 
-[Previous
-
-Lazy Loading
-
-](/docs/app/guides/lazy-loading)
-
-[Next
-
-Next.js MCP Server
-
-](/docs/app/guides/mcp)
-
 Was this helpful?
-
-supported.
-
-Send

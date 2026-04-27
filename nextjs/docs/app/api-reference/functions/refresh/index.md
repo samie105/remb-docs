@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/app/api-reference/functions/refresh"
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:12:06.113Z"
-content_hash: "a515483e9a50586f475c9a3db19a5f4e383d91d7d5ed9a3c26b012486d246107"
+last_crawled_at: "2026-04-27T18:10:48.405Z"
+content_hash: "deb610654796ba45ce9ca268757ac56aa5d34cb3e50d1d7b4c5eff2fc79e2299"
 menu_path: ["refresh"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/api-reference/functions/redirect/index.md", "title": "redirect"}
-nav_next: {"path": "nextjs/docs/app/api-reference/functions/revalidatePath/index.md", "title": "revalidatePath"}
+version: "latest"
+content_language: "en"
 ---
+[API Reference](/docs/app/api-reference)[Functions](/docs/app/api-reference/functions)refresh
 
 # refresh
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 `refresh` allows you to refresh the client router from within a [Server Action](/docs/app/getting-started/mutating-data).
 
@@ -36,8 +37,6 @@ refresh(): void;
 ## Examples[](#examples)
 
 app/actions.ts
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -63,8 +62,6 @@ export async function createPost(formData: FormData) {
 
 app/api/posts/route.ts
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -76,20 +73,4 @@ export async function POST() {
 }
 ```
 
-[Previous
-
-redirect
-
-](/docs/app/api-reference/functions/redirect)
-
-[Next
-
-revalidatePath
-
-](/docs/app/api-reference/functions/revalidatePath)
-
 Was this helpful?
-
-supported.
-
-Send

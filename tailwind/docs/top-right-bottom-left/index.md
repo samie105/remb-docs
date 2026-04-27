@@ -5,65 +5,19 @@ canonical_url: "https://tailwindcss.com/docs/top-right-bottom-left"
 docset: "tailwind"
 kind: "framework"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:45:00.458Z"
-content_hash: "1a58f7955fcf31947c7d7d2cdcba6982902b18d1f6cbe2389e75193eb0b4eac1"
+last_crawled_at: "2026-04-27T19:55:05.013Z"
+content_hash: "8f06bba2baff60018e97f321ce72a5b4917f2b861b5324967a83ed6592f998cc"
 menu_path: ["top / right / bottom / left"]
 section_path: []
-nav_prev: {"path": "tailwind/docs/position/index.md", "title": "position"}
-nav_next: {"path": "tailwind/docs/visibility/index.md", "title": "visibility"}
+content_language: "en"
 ---
-
 Utilities for controlling the placement of positioned elements.
-
-Class
-
-Styles
-
-`inset-<number>`
-
-`inset: calc(var(--spacing) * <number>);`
-
-`-inset-<number>`
-
-`inset: calc(var(--spacing) * -<number>);`
-
-`inset-<fraction>`
-
-`inset: calc(<fraction> * 100%);`
-
-`-inset-<fraction>`
-
-`inset: calc(<fraction> * -100%);`
-
-`inset-px`
-
-`inset: 1px;`
-
-`-inset-px`
-
-`inset: -1px;`
-
-`inset-full`
-
-`inset: 100%;`
-
-`-inset-full`
-
-`inset: -100%;`
-
-`inset-auto`
-
-`inset: auto;`
-
-`inset-(<custom-property>)`
-
-`inset: var(<custom-property>);`
 
 ## [Examples](#examples)
 
 ### [Basic example](#basic-example)
 
-Use `top-<number>`, `right-<number>`, `bottom-<number>`, `left-<number>`, and `inset-<number>` utilities like `top-0` and `bottom-4` to set the horizontal or vertical position of a [positioned element](tailwind/docs/position/index.md):
+Use `top-<number>`, `right-<number>`, `bottom-<number>`, `left-<number>`, and `inset-<number>` utilities like `top-0` and `bottom-4` to set the horizontal or vertical position of a [positioned element](https://tailwindcss.com/docs/position):
 
 01
 
@@ -107,7 +61,7 @@ Right-to-left
 <div dir="ltr">  <div class="relative size-32 ...">    <div class="absolute inset-s-0 top-0 size-14 ..."></div>  </div>  <div>    <div dir="rtl">      <div class="relative size-32 ...">        <div class="absolute inset-s-0 top-0 size-14 ..."></div>      </div>      <div></div>    </div>  </div></div>
 ```
 
-For more control, you can also use the [LTR and RTL modifiers](tailwind/docs/hover-focus-and-other-states/index.md#rtl-support) to conditionally apply specific styles depending on the current text direction.
+For more control, you can also use the [LTR and RTL modifiers](https://tailwindcss.com/docs/hover-focus-and-other-states#rtl-support) to conditionally apply specific styles depending on the current text direction.
 
 ### [Using a custom value](#using-a-custom-value)
 
@@ -133,7 +87,7 @@ Prefix `inset`,`inset-x`,`inset-y`,`inset-s`,`inset-e`,`inset-bs`,`inset-be`,`to
 <div class="top-4 md:top-6 ...">  <!-- ... --></div>
 ```
 
-Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).
+Learn more about using variants in the [variants documentation](https://tailwindcss.com/docs/hover-focus-and-other-states).
 
 ## [Customizing your theme](#customizing-your-theme)
 
@@ -143,4 +97,4 @@ The `inset-<number>`,`inset-x-<number>`,`inset-y-<number>`,`inset-s-<number>`,`i
 @theme {  --spacing: 1px; }
 ```
 
-Learn more about customizing the spacing scale in the [theme variable documentation](tailwind/docs/theme/index.md).
+Learn more about customizing the spacing scale in the [theme variable documentation](https://tailwindcss.com/docs/theme).

@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/pages/api-reference/functions/next-respo
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:22:24.304Z"
-content_hash: "fd7199f81dab4fc0fb1706eca312d7f14c5bffc3ceccaa31548e8249b232a36c"
+last_crawled_at: "2026-04-27T18:21:48.993Z"
+content_hash: "48f4b35bf521d3522447a54dc07cdef0cad82adb7055b81e845aaa90569c9b2f"
 menu_path: ["NextResponse"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/pages/api-reference/functions/next-request/index.md", "title": "NextRequest"}
-nav_next: {"path": "nextjs/docs/pages/api-reference/functions/use-params/index.md", "title": "useParams"}
+version: "latest"
+content_language: "en"
 ---
+[API Reference](/docs/pages/api-reference)[Functions](/docs/pages/api-reference/functions)NextResponse
 
 # NextResponse
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 NextResponse extends the [Web Response API](https://developer.mozilla.org/docs/Web/API/Response) with additional convenience methods.
 
@@ -90,8 +91,6 @@ response.cookies.delete('experiments')
 Produce a response with the given JSON body.
 
 app/api/route.ts
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -213,7 +212,3 @@ function proxy(request: NextRequest) {
 ```
 
 Was this helpful?
-
-supported.
-
-Send

@@ -5,37 +5,41 @@ canonical_url: "https://tailwindcss.com/docs/opacity"
 docset: "tailwind"
 kind: "framework"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:04:43.263Z"
-content_hash: "be6e297d89567d2130151926b9a37b98d3146dbd17640355ed670b8055fc20d7"
+last_crawled_at: "2026-04-27T20:21:05.065Z"
+content_hash: "b70481cf461d07bbba614713bada98d6ab24069fee0d753daf9a4b6d5d6f35a9"
 menu_path: ["opacity"]
 section_path: []
-nav_prev: {"path": "tailwind/docs/text-shadow/index.md", "title": "text-shadow"}
-nav_next: {"path": "tailwind/docs/mix-blend-mode/index.md", "title": "mix-blend-mode"}
+content_language: "en"
 ---
+[](/)
+
+[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
+
+1.  Effects
+2.  opacity
+
+Effects
 
 # opacity
 
 Utilities for controlling the opacity of an element.
 
-Class
-
-Styles
-
-`opacity-<number>`
-
+| Class | Styles |
+| --- | --- |
+| `opacity-<number>` | 
 `opacity: <number>%;`
 
-`opacity-(<custom-property>)`
+ |
+| `opacity-(<custom-property>)` | 
 
 `opacity: var(<custom-property>);`
 
-`opacity-[<value>]`
+ |
+| `opacity-[<value>]` | 
 
 `opacity: <value>;`
 
-## [Examples](#examples)
-
-### [Basic example](#basic-example)
+ |
 
 Use `opacity-<number>` utilities like `opacity-25` and `opacity-100` to set the opacity of an element:
 
@@ -51,8 +55,6 @@ opacity-25
 <button class="bg-indigo-500 opacity-100 ..."></button><button class="bg-indigo-500 opacity-75 ..."></button><button class="bg-indigo-500 opacity-50 ..."></button><button class="bg-indigo-500 opacity-25 ..."></button>
 ```
 
-### [Applying conditionally](#applying-conditionally)
-
 Prefix an `opacity` utility with a variant like `disabled:*` to only apply the utility in that state:
 
 ```
@@ -60,8 +62,6 @@ Prefix an `opacity` utility with a variant like `disabled:*` to only apply the u
 ```
 
 Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
-
-### [Using a custom value](#using-a-custom-value)
 
 Use the `opacity-[<value>]` syntax to set the opacity based on a completely custom value:
 
@@ -77,8 +77,6 @@ For CSS variables, you can also use the `opacity-(<custom-property>)` syntax:
 
 This is just a shorthand for `opacity-[var(<custom-property>)]` that adds the `var()` function for you automatically.
 
-### [Responsive design](#responsive-design)
-
 Prefix an `opacity` utility with a breakpoint variant like `md:` to only apply the utility at medium screen sizes and above:
 
 ```
@@ -89,21 +87,25 @@ Learn more about using variants in the [variants documentation](/docs/hover-focu
 
 ### On this page
 
-*   [Quick reference](#quick-reference)
-*   [Examples](#examples)
-    *   [Basic example](#basic-example)
-    *   [Applying conditionally](#applying-conditionally)
-    *   [Using a custom value](#using-a-custom-value)
-    *   [Responsive design](#responsive-design)
+-   [Quick reference](#quick-reference)
+-   [Examples](#examples)
+    -   [Basic example](#basic-example)
+    -   [Applying conditionally](#applying-conditionally)
+    -   [Using a custom value](#using-a-custom-value)
+    -   [Responsive design](#responsive-design)
 
-![Build UIs that don’t suck — 5-day mini-course](/_next/static/media/course-promo.d3d6bc78.jpg)
+[
 
-5-day mini-course
+![Refactoring UI](/_next/static/media/book-promo.3012c0f6.png)
 
-Build UIs that don’t suck.
+From the creators of Tailwind CSS
 
-Short, tactical video lessons from the creator of Tailwind CSS, delivered directly to your inbox every day for a week.
+Make your ideas look awesome, without relying on a designer.
 
-[Get the free course](/build-uis-that-dont-suck)
+> “This is the survival kit I wish I had when I started building apps.”
+> 
+> Derrick Reimer, SavvyCal
+
+](https://www.refactoringui.com/?ref=sidebar)
 
 Copyright © 2026 Tailwind Labs Inc.·[Trademark Policy](/brand)

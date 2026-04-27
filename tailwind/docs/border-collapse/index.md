@@ -5,47 +5,23 @@ canonical_url: "https://tailwindcss.com/docs/border-collapse"
 docset: "tailwind"
 kind: "framework"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:10:45.619Z"
-content_hash: "1011162dfe8e8eb8f2db1e70c59c59c8fa4a99d4c40c4666a3456efd1a6c8f39"
+last_crawled_at: "2026-04-27T20:30:22.712Z"
+content_hash: "a955dc1b229c4558ca450495f505116086b482e228f9047838b15b065dc92c65"
 menu_path: ["border-collapse"]
 section_path: []
-nav_prev: {"path": "tailwind/docs/backdrop-filter-sepia/index.md", "title": "backdrop-filter: sepia()"}
-nav_next: {"path": "tailwind/docs/border-spacing/index.md", "title": "border-spacing"}
+content_language: "en"
 ---
-
-Class
-
-Styles
-
-`border-collapse`
-
-`border-collapse: collapse;`
-
-`border-separate`
-
-`border-collapse: separate;`
-
 ## [Examples](#examples)
 
 ### [Collapsing table borders](#collapsing-table-borders)
 
 Use the `border-collapse` utility to combine adjacent cell borders into a single border when possible:
 
-State
-
-City
-
-Indiana
-
-Indianapolis
-
-Ohio
-
-Columbus
-
-Michigan
-
-Detroit
+| State | City |
+| --- | --- |
+| Indiana | Indianapolis |
+| Ohio | Columbus |
+| Michigan | Detroit |
 
 ```
 <table class="border-collapse border border-gray-400 ...">  <thead>    <tr>      <th class="border border-gray-300 ...">State</th>      <th class="border border-gray-300 ...">City</th>    </tr>  </thead>  <tbody>    <tr>      <td class="border border-gray-300 ...">Indiana</td>      <td class="border border-gray-300 ...">Indianapolis</td>    </tr>    <tr>      <td class="border border-gray-300 ...">Ohio</td>      <td class="border border-gray-300 ...">Columbus</td>    </tr>    <tr>      <td class="border border-gray-300 ...">Michigan</td>      <td class="border border-gray-300 ...">Detroit</td>    </tr>  </tbody></table>
@@ -57,21 +33,11 @@ Note that this includes collapsing borders on the top-level `<table>` tag.
 
 Use the `border-separate` utility to force each cell to display its own separate borders:
 
-State
-
-City
-
-Indiana
-
-Indianapolis
-
-Ohio
-
-Columbus
-
-Michigan
-
-Detroit
+| State | City |
+| --- | --- |
+| Indiana | Indianapolis |
+| Ohio | Columbus |
+| Michigan | Detroit |
 
 ```
 <table class="border-separate border border-gray-400 ...">  <thead>    <tr>      <th class="border border-gray-300 ...">State</th>      <th class="border border-gray-300 ...">City</th>    </tr>  </thead>  <tbody>    <tr>      <td class="border border-gray-300 ...">Indiana</td>      <td class="border border-gray-300 ...">Indianapolis</td>    </tr>    <tr>      <td class="border border-gray-300 ...">Ohio</td>      <td class="border border-gray-300 ...">Columbus</td>    </tr>    <tr>      <td class="border border-gray-300 ...">Michigan</td>      <td class="border border-gray-300 ...">Detroit</td>    </tr>  </tbody></table>
@@ -85,4 +51,4 @@ Prefix a `border-collapse` utility with a breakpoint variant like `md:` to only 
 <table class="border-collapse md:border-separate ...">  <!-- ... --></table>
 ```
 
-Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).
+Learn more about using variants in the [variants documentation](https://tailwindcss.com/docs/hover-focus-and-other-states).

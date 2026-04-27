@@ -5,49 +5,50 @@ canonical_url: "https://docs.deno.com/runtime/getting_started/setup_your_environ
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:49:40.930Z"
-content_hash: "a7fc1a440ced9d1bd9c8810a6435981e6ae0d619587b7fc77fa2ab885590db1f"
+last_crawled_at: "2026-04-27T17:24:18.140Z"
+content_hash: "78289ca573400f9c191dc6bdbe32af05bd006027eb6bd135aee66cef40e4a3f1"
 menu_path: ["Set up your environment"]
 section_path: []
+content_language: "en"
 ---
-On this page
+**On this page**
 
-*   [Setting up your editor/IDE](#setting-up-your-editor%2Fide)
-    *   [Visual Studio Code](#visual-studio-code)
-    *   [Skills for AI assistants](#skills-for-ai-assistants)
-    *   [JetBrains IDEs](#jetbrains-ides)
-    *   [Vim/Neovim via plugins](#vim%2Fneovim-via-plugins)
-    *   [Neovim 0.6+ using the built-in language server](#neovim-0.6%2B-using-the-built-in-language-server)
-        *   [Kickstart.nvim and Mason LSP](#kickstart.nvim-and-mason-lsp)
-        *   [coc.nvim](#coc.nvim)
-        *   [ALE](#ale)
-        *   [Vim-EasyComplete](#vim-easycomplete)
-        *   [Vim-Lsp](#vim-lsp)
-    *   [Emacs](#emacs)
-        *   [lsp-mode](#lsp-mode)
-        *   [eglot](#eglot)
-    *   [Pulsar](#pulsar)
-    *   [Sublime Text](#sublime-text)
-    *   [Nova](#nova)
-    *   [GitHub Codespaces](#github-codespaces)
-    *   [Kakoune](#kakoune)
-    *   [Helix](#helix)
-    *   [Zed](#zed)
-*   [Shell completions](#shell-completions)
-    *   [bash example](#bash-example)
-    *   [PowerShell example](#powershell-example)
-    *   [zsh example](#zsh-example)
-    *   [zsh example with ohmyzsh and antigen](#zsh-example-with-ohmyzsh-and-antigen)
-    *   [fish example](#fish-example)
-*   [Other tools](#other-tools)
+-   [Setting up your editor/IDE](#setting-up-your-editor%2Fide)
+    -   [Visual Studio Code](#visual-studio-code)
+    -   [Skills for AI assistants](#skills-for-ai-assistants)
+    -   [JetBrains IDEs](#jetbrains-ides)
+    -   [Vim/Neovim via plugins](#vim%2Fneovim-via-plugins)
+    -   [Neovim 0.6+ using the built-in language server](#neovim-0.6%2B-using-the-built-in-language-server)
+        -   [Kickstart.nvim and Mason LSP](#kickstart.nvim-and-mason-lsp)
+        -   [coc.nvim](#coc.nvim)
+        -   [ALE](#ale)
+        -   [Vim-EasyComplete](#vim-easycomplete)
+        -   [Vim-Lsp](#vim-lsp)
+    -   [Emacs](#emacs)
+        -   [lsp-mode](#lsp-mode)
+        -   [eglot](#eglot)
+    -   [Pulsar](#pulsar)
+    -   [Sublime Text](#sublime-text)
+    -   [Nova](#nova)
+    -   [GitHub Codespaces](#github-codespaces)
+    -   [Kakoune](#kakoune)
+    -   [Helix](#helix)
+    -   [Zed](#zed)
+-   [Shell completions](#shell-completions)
+    -   [bash example](#bash-example)
+    -   [PowerShell example](#powershell-example)
+    -   [zsh example](#zsh-example)
+    -   [zsh example with ohmyzsh and antigen](#zsh-example-with-ohmyzsh-and-antigen)
+    -   [fish example](#fish-example)
+-   [Other tools](#other-tools)
 
 Deno comes with many of the tools that are commonly needed for developing applications, including a full [language server (LSP)](/runtime/reference/cli/lsp/) to help power your IDE of choice. This page will help you set up your environment to get the most out of Deno while you are developing.
 
 We'll cover:
 
-*   How to use Deno with your favorite editor/IDE
-*   How to use Deno with AI coding assistants
-*   How to generate shell completions
+-   How to use Deno with your favorite editor/IDE
+-   How to use Deno with AI coding assistants
+-   How to generate shell completions
 
 ## Setting up your editor/IDE
 
@@ -59,7 +60,7 @@ In the Extensions tab, search for "Deno" and install the [extension by Denoland]
 
 Next, open the Command Palette by pressing `Ctrl+Shift+P` and type `Deno: Initialize Workspace Configuration`. Select this option to configure Deno for your workspace.
 
-![The VSCode command palette with the Deno: Initialize Workspace Configuration option selected.](/runtime/getting_started/images/vscode-setup.png)
+![The VSCode command palette with the Deno: Initialize Workspace Configuration option selected.](https://docs.deno.com/runtime/getting_started/images/vscode-setup.png)
 
 A file called `.vscode/settings.json` will be created in your workspace with the following configuration:
 
@@ -81,17 +82,17 @@ Skills are available at [github.com/denoland/skills](https://github.com/denoland
 
 Available skills include:
 
-*   **deno-guidance** — foundational Deno knowledge: module imports, `deno.json`, CLI commands, and package selection
-*   **deno-deploy** — deploying to Deno Deploy, KV, environment variables, and the `deno deploy` CLI
-*   **deno-frontend** — building web UIs with the Fresh framework and Preact
-*   **deno-expert** — advanced Deno patterns for code review and debugging
-*   **deno-sandbox** — executing untrusted code safely with `@deno/sandbox`
+-   **deno-guidance** — foundational Deno knowledge: module imports, `deno.json`, CLI commands, and package selection
+-   **deno-deploy** — deploying to Deno Deploy, KV, environment variables, and the `deno deploy` CLI
+-   **deno-frontend** — building web UIs with the Fresh framework and Preact
+-   **deno-expert** — advanced Deno patterns for code review and debugging
+-   **deno-sandbox** — executing untrusted code safely with `@deno/sandbox`
 
 ### JetBrains IDEs
 
 To install the Deno Plugin, open your IDE and go to **File** > **Settings**. Navigate to **Plugins** and search for `Deno`. Install the official Deno plugin.
 
-![The WebStorm plugins settings](/runtime/getting_started/images/webstorm_setup.png)
+![The WebStorm plugins settings](https://docs.deno.com/runtime/getting_started/images/webstorm_setup.png)
 
 To configure the Plugin, go to **File** > **Settings** again. Navigate to **Languages & Frameworks** > **JavaScript Runtime**. Switch **Preferred Runtime** to **Deno**. Under **Deno**, specify the path to the Deno executable (if it has not been auto-detected).
 
@@ -351,11 +352,11 @@ The [Zed editor](https://zed.dev) can integrate the Deno language server via the
 
 Built into the Deno CLI is support to generate shell completion information for the CLI itself. By using `deno completions <shell>`, the Deno CLI will output to stdout the completions. Current shells that are supported:
 
-*   bash
-*   elvish
-*   fish
-*   powershell
-*   zsh
+-   bash
+-   elvish
+-   fish
+-   powershell
+-   zsh
 
 ### bash example
 

@@ -5,27 +5,25 @@ canonical_url: "https://tailwindcss.com/docs/appearance"
 docset: "tailwind"
 kind: "framework"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:14:59.030Z"
-content_hash: "13171eca81b5337cd75041d7e57f383d56b86554d38aa9a9f5ff4d16d201206f"
+last_crawled_at: "2026-04-27T20:36:47.221Z"
+content_hash: "d0bfb203bb6befafad9de0efa6587505e2359cfbffe4baf49816d9a2c13cab3d"
 menu_path: ["appearance"]
 section_path: []
-nav_prev: {"path": "tailwind/docs/accent-color/index.md", "title": "accent-color"}
-nav_next: {"path": "tailwind/docs/caret-color/index.md", "title": "caret-color"}
+content_language: "en"
 ---
-
 Utilities for suppressing native form control styling.
 
-Class
-
-Styles
-
-`appearance-none`
-
+| Class | Styles |
+| --- | --- |
+| `appearance-none` | 
 `appearance: none;`
 
-`appearance-auto`
+ |
+| `appearance-auto` | 
 
 `appearance: auto;`
+
+ |
 
 ## [Examples](#examples)
 
@@ -67,4 +65,4 @@ Prefix an `appearance` utility with a breakpoint variant like `md:` to only appl
 <select class="appearance-auto md:appearance-none ...">  <!-- ... --></select>
 ```
 
-Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).
+Learn more about using variants in the [variants documentation](https://tailwindcss.com/docs/hover-focus-and-other-states).

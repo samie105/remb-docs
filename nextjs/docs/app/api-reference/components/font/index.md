@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/app/api-reference/components/font"
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:06:21.379Z"
-content_hash: "451ac014bb79c15df66486672cc620af772acda5a8452641ea805ac55ca666ae"
+last_crawled_at: "2026-04-27T18:05:15.982Z"
+content_hash: "e7cdc4195bbcfa53dde4416c820fee4328c3f7ef7bd51859b3c002bec1d7149f"
 menu_path: ["Font Module"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/api-reference/components/index.md", "title": "Components"}
-nav_next: {"path": "nextjs/docs/app/api-reference/components/form/index.md", "title": "Form Component"}
+version: "latest"
+content_language: "en"
 ---
+[API Reference](/docs/app/api-reference)[Components](/docs/app/api-reference/components)Font
 
 # Font Module
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 [`next/font`](/docs/app/api-reference/components/font) automatically optimizes your fonts (including custom fonts) and removes external network requests for improved privacy and performance.
 
@@ -24,8 +25,6 @@ It includes **built-in automatic self-hosting** for any font file. This means yo
 You can also conveniently use all [Google Fonts](https://fonts.google.com/). CSS and font files are downloaded at build time and self-hosted with the rest of your static assets. **No requests are sent to Google by the browser.**
 
 app/layout.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -55,81 +54,19 @@ export default function RootLayout({
 
 ## Reference[](#reference)
 
-Key
-
-`font/google`
-
-`font/local`
-
-Type
-
-Required
-
-[`src`](#src)
-
-String or Array of Objects
-
-Yes
-
-[`weight`](#weight)
-
-String or Array
-
-Required/Optional
-
-[`style`](#style)
-
-String or Array
-
-\-
-
-[`subsets`](#subsets)
-
-Array of Strings
-
-\-
-
-[`axes`](#axes)
-
-Array of Strings
-
-\-
-
-[`display`](#display)
-
-String
-
-\-
-
-[`preload`](#preload)
-
-Boolean
-
-\-
-
-[`fallback`](#fallback)
-
-Array of Strings
-
-\-
-
-[`adjustFontFallback`](#adjustfontfallback)
-
-Boolean or String
-
-\-
-
-[`variable`](#variable)
-
-String
-
-\-
-
-[`declarations`](#declarations)
-
-Array of Objects
-
-\-
+| Key | `font/google` | `font/local` | Type | Required |
+| --- | --- | --- | --- | --- |
+| [`src`](#src) |  |  | String or Array of Objects | Yes |
+| [`weight`](#weight) |  |  | String or Array | Required/Optional |
+| [`style`](#style) |  |  | String or Array | \- |
+| [`subsets`](#subsets) |  |  | Array of Strings | \- |
+| [`axes`](#axes) |  |  | Array of Strings | \- |
+| [`display`](#display) |  |  | String | \- |
+| [`preload`](#preload) |  |  | Boolean | \- |
+| [`fallback`](#fallback) |  |  | Array of Strings | \- |
+| [`adjustFontFallback`](#adjustfontfallback) |  |  | Boolean or String | \- |
+| [`variable`](#variable) |  |  | String | \- |
+| [`declarations`](#declarations) |  |  | Array of Objects | \- |
 
 ### `src`[](#src)
 
@@ -137,47 +74,47 @@ The path of the font file as a string or an array of objects (with type `Array<{
 
 Used in `next/font/local`
 
-*   Required
+-   Required
 
 Examples:
 
-*   `src:'./fonts/my-font.woff2'` where `my-font.woff2` is placed in a directory named `fonts` inside the `app` directory
-*   `src:[{path: './inter/Inter-Thin.ttf', weight: '100',},{path: './inter/Inter-Regular.ttf',weight: '400',},{path: './inter/Inter-Bold-Italic.ttf', weight: '700',style: 'italic',},]`
-*   if the font loader function is called in `app/page.tsx` using `src:'../styles/fonts/my-font.ttf'`, then `my-font.ttf` is placed in `styles/fonts` at the root of the project
+-   `src:'./fonts/my-font.woff2'` where `my-font.woff2` is placed in a directory named `fonts` inside the `app` directory
+-   `src:[{path: './inter/Inter-Thin.ttf', weight: '100',},{path: './inter/Inter-Regular.ttf',weight: '400',},{path: './inter/Inter-Bold-Italic.ttf', weight: '700',style: 'italic',},]`
+-   if the font loader function is called in `app/page.tsx` using `src:'../styles/fonts/my-font.ttf'`, then `my-font.ttf` is placed in `styles/fonts` at the root of the project
 
 ### `weight`[](#weight)
 
 The font [`weight`](https://fonts.google.com/knowledge/glossary/weight) with the following possibilities:
 
-*   A string with possible values of the weights available for the specific font or a range of values if it's a [variable](https://fonts.google.com/variablefonts) font
-*   An array of weight values if the font is not a [variable google font](https://fonts.google.com/variablefonts). It applies to `next/font/google` only.
+-   A string with possible values of the weights available for the specific font or a range of values if it's a [variable](https://fonts.google.com/variablefonts) font
+-   An array of weight values if the font is not a [variable google font](https://fonts.google.com/variablefonts). It applies to `next/font/google` only.
 
 Used in `next/font/google` and `next/font/local`
 
-*   Required if the font being used is **not** [variable](https://fonts.google.com/variablefonts)
+-   Required if the font being used is **not** [variable](https://fonts.google.com/variablefonts)
 
 Examples:
 
-*   `weight: '400'`: A string for a single weight value - for the font [`Inter`](https://fonts.google.com/specimen/Inter?query=inter), the possible values are `'100'`, `'200'`, `'300'`, `'400'`, `'500'`, `'600'`, `'700'`, `'800'`, `'900'` or `'variable'` where `'variable'` is the default)
-*   `weight: '100 900'`: A string for the range between `100` and `900` for a variable font
-*   `weight: ['100','400','900']`: An array of 3 possible values for a non variable font
+-   `weight: '400'`: A string for a single weight value - for the font [`Inter`](https://fonts.google.com/specimen/Inter?query=inter), the possible values are `'100'`, `'200'`, `'300'`, `'400'`, `'500'`, `'600'`, `'700'`, `'800'`, `'900'` or `'variable'` where `'variable'` is the default)
+-   `weight: '100 900'`: A string for the range between `100` and `900` for a variable font
+-   `weight: ['100','400','900']`: An array of 3 possible values for a non variable font
 
 ### `style`[](#style)
 
 The font [`style`](https://developer.mozilla.org/docs/Web/CSS/font-style) with the following possibilities:
 
-*   A string [value](https://developer.mozilla.org/docs/Web/CSS/font-style#values) with default value of `'normal'`
-*   An array of style values if the font is not a [variable google font](https://fonts.google.com/variablefonts). It applies to `next/font/google` only.
+-   A string [value](https://developer.mozilla.org/docs/Web/CSS/font-style#values) with default value of `'normal'`
+-   An array of style values if the font is not a [variable google font](https://fonts.google.com/variablefonts). It applies to `next/font/google` only.
 
 Used in `next/font/google` and `next/font/local`
 
-*   Optional
+-   Optional
 
 Examples:
 
-*   `style: 'italic'`: A string - it can be `normal` or `italic` for `next/font/google`
-*   `style: 'oblique'`: A string - it can take any value for `next/font/local` but is expected to come from [standard font styles](https://developer.mozilla.org/docs/Web/CSS/font-style)
-*   `style: ['italic','normal']`: An array of 2 values for `next/font/google` - the values are from `normal` and `italic`
+-   `style: 'italic'`: A string - it can be `normal` or `italic` for `next/font/google`
+-   `style: 'oblique'`: A string - it can take any value for `next/font/local` but is expected to come from [standard font styles](https://developer.mozilla.org/docs/Web/CSS/font-style)
+-   `style: ['italic','normal']`: An array of 2 values for `next/font/google` - the values are from `normal` and `italic`
 
 ### `subsets`[](#subsets)
 
@@ -185,11 +122,11 @@ The font [`subsets`](https://fonts.google.com/knowledge/glossary/subsetting) def
 
 Used in `next/font/google`
 
-*   Optional
+-   Optional
 
 Examples:
 
-*   `subsets: ['latin']`: An array with the subset `latin`
+-   `subsets: ['latin']`: An array with the subset `latin`
 
 You can find a list of all subsets on the Google Fonts page for your font.
 
@@ -199,11 +136,11 @@ Some variable fonts have extra `axes` that can be included. By default, only the
 
 Used in `next/font/google`
 
-*   Optional
+-   Optional
 
 Examples:
 
-*   `axes: ['slnt']`: An array with value `slnt` for the `Inter` variable font which has `slnt` as additional `axes` as shown [here](https://fonts.google.com/variablefonts?vfquery=inter#font-families). You can find the possible `axes` values for your font by using the filter on the [Google variable fonts page](https://fonts.google.com/variablefonts#font-families) and looking for axes other than `wght`
+-   `axes: ['slnt']`: An array with value `slnt` for the `Inter` variable font which has `slnt` as additional `axes` as shown [here](https://fonts.google.com/variablefonts?vfquery=inter#font-families). You can find the possible `axes` values for your font by using the filter on the [Google variable fonts page](https://fonts.google.com/variablefonts#font-families) and looking for axes other than `wght`
 
 ### `display`[](#display)
 
@@ -211,11 +148,11 @@ The font [`display`](https://developer.mozilla.org/docs/Web/CSS/@font-face/font-
 
 Used in `next/font/google` and `next/font/local`
 
-*   Optional
+-   Optional
 
 Examples:
 
-*   `display: 'optional'`: A string assigned to the `optional` value
+-   `display: 'optional'`: A string assigned to the `optional` value
 
 ### `preload`[](#preload)
 
@@ -223,37 +160,37 @@ A boolean value that specifies whether the font should be [preloaded](/docs/app/
 
 Used in `next/font/google` and `next/font/local`
 
-*   Optional
+-   Optional
 
 Examples:
 
-*   `preload: false`
+-   `preload: false`
 
 ### `fallback`[](#fallback)
 
 The fallback font to use if the font cannot be loaded. An array of strings of fallback fonts with no default.
 
-*   Optional
+-   Optional
 
 Used in `next/font/google` and `next/font/local`
 
 Examples:
 
-*   `fallback: ['system-ui', 'arial']`: An array setting the fallback fonts to `system-ui` or `arial`
+-   `fallback: ['system-ui', 'arial']`: An array setting the fallback fonts to `system-ui` or `arial`
 
 ### `adjustFontFallback`[](#adjustfontfallback)
 
-*   For `next/font/google`: A boolean value that sets whether an automatic fallback font should be used to reduce [Cumulative Layout Shift](https://web.dev/cls/). The default is `true`.
-*   For `next/font/local`: A string or boolean `false` value that sets whether an automatic fallback font should be used to reduce [Cumulative Layout Shift](https://web.dev/cls/). The possible values are `'Arial'`, `'Times New Roman'` or `false`. The default is `'Arial'`.
+-   For `next/font/google`: A boolean value that sets whether an automatic fallback font should be used to reduce [Cumulative Layout Shift](https://web.dev/cls/). The default is `true`.
+-   For `next/font/local`: A string or boolean `false` value that sets whether an automatic fallback font should be used to reduce [Cumulative Layout Shift](https://web.dev/cls/). The possible values are `'Arial'`, `'Times New Roman'` or `false`. The default is `'Arial'`.
 
 Used in `next/font/google` and `next/font/local`
 
-*   Optional
+-   Optional
 
 Examples:
 
-*   `adjustFontFallback: false`: for `next/font/google`
-*   `adjustFontFallback: 'Times New Roman'`: for `next/font/local`
+-   `adjustFontFallback: false`: for `next/font/google`
+-   `adjustFontFallback: 'Times New Roman'`: for `next/font/local`
 
 ### `variable`[](#variable)
 
@@ -261,11 +198,11 @@ A string value to define the CSS variable name to be used if the style is applie
 
 Used in `next/font/google` and `next/font/local`
 
-*   Optional
+-   Optional
 
 Examples:
 
-*   `variable: '--my-font'`: The CSS variable `--my-font` is declared
+-   `variable: '--my-font'`: The CSS variable `--my-font` is declared
 
 ### `declarations`[](#declarations)
 
@@ -273,11 +210,11 @@ An array of font face [descriptor](https://developer.mozilla.org/docs/Web/CSS/@f
 
 Used in `next/font/local`
 
-*   Optional
+-   Optional
 
 Examples:
 
-*   `declarations: [{ prop: 'ascent-override', value: '90%' }]`
+-   `declarations: [{ prop: 'ascent-override', value: '90%' }]`
 
 ## Examples[](#examples)
 
@@ -286,8 +223,6 @@ Examples:
 To use a Google font, import it from `next/font/google` as a function. We recommend using [variable fonts](https://fonts.google.com/variablefonts) for the best performance and flexibility.
 
 app/layout.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -316,8 +251,6 @@ export default function RootLayout({
 If you can't use a variable font, you will **need to specify a weight**:
 
 app/layout.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -366,8 +299,6 @@ This can be done by adding it to the function call:
 
 app/layout.tsx
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -383,8 +314,6 @@ You can import and use multiple fonts in your application. There are two approac
 The first approach is to create a utility function that exports a font, imports it, and applies its `className` where needed. This ensures the font is preloaded only when it's rendered:
 
 app/fonts.ts
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -404,8 +333,6 @@ export const roboto_mono = Roboto_Mono({
 
 app/layout.tsx
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -423,8 +350,6 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 ```
 
 app/page.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -445,8 +370,6 @@ In the example above, `Inter` will be applied globally, and `Roboto Mono` can be
 Alternatively, you can create a [CSS variable](/docs/app/api-reference/components/font#variable) and use it with your preferred CSS solution:
 
 app/layout.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -503,8 +426,6 @@ In the example above, `Inter` will be applied globally, and any `<h1>` tags will
 Import `next/font/local` and specify the `src` of your local font file. We recommend using [variable fonts](https://fonts.google.com/variablefonts) for the best performance and flexibility.
 
 app/layout.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -570,8 +491,6 @@ In the example below, we use the `Inter` and `Roboto_Mono` fonts from `next/font
 > **Good to know**: You can add these variables to the `<html>` or `<body>` tag, depending on your preference, styling needs or project requirements.
 
 app/layout.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -654,9 +573,9 @@ You can now use the `font-sans` and `font-mono` utility classes to apply the fon
 
 You can apply the font styles in three ways:
 
-*   [`className`](#classname)
-*   [`style`](#style-1)
-*   [CSS Variables](#css-variables)
+-   [`className`](#classname)
+-   [`style`](#style-1)
+-   [CSS Variables](#css-variables)
 
 #### `className`[](#classname)
 
@@ -682,8 +601,6 @@ In addition to importing the font, also import the CSS file where the CSS variab
 
 app/page.tsx
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -698,8 +615,6 @@ const inter = Inter({
 To use the font, set the `className` of the parent container of the text you would like to style to the font loader's `variable` value and the `className` of the text to the `styles` property from the external CSS file.
 
 app/page.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -733,8 +648,6 @@ Then, specify your font definitions as follows:
 
 styles/fonts.ts
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -756,8 +669,6 @@ export { inter, lora, sourceCodePro400, sourceCodePro700, greatVibes }
 You can now use these definitions in your code as follows:
 
 app/page.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -796,8 +707,6 @@ You can now import any font definition as follows:
 
 app/about/page.tsx
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -808,38 +717,15 @@ import { greatVibes, sourceCodePro400 } from '@/fonts'
 
 When a font function is called on a page of your site, it is not globally available and preloaded on all routes. Rather, the font is only preloaded on the related routes based on the type of file where it is used:
 
-*   If it's a [unique page](/docs/app/api-reference/file-conventions/page), it is preloaded on the unique route for that page.
-*   If it's a [layout](/docs/app/api-reference/file-conventions/layout), it is preloaded on all the routes wrapped by the layout.
-*   If it's the [root layout](/docs/app/api-reference/file-conventions/layout#root-layout), it is preloaded on all routes.
+-   If it's a [unique page](/docs/app/api-reference/file-conventions/page), it is preloaded on the unique route for that page.
+-   If it's a [layout](/docs/app/api-reference/file-conventions/layout), it is preloaded on all the routes wrapped by the layout.
+-   If it's the [root layout](/docs/app/api-reference/file-conventions/layout#root-layout), it is preloaded on all routes.
 
 ## Version Changes[](#version-changes)
 
-Version
-
-Changes
-
-`v13.2.0`
-
-`@next/font` renamed to `next/font`. Installation no longer required.
-
-`v13.0.0`
-
-`@next/font` was added.
-
-[Previous
-
-Components
-
-](/docs/app/api-reference/components)
-
-[Next
-
-Form Component
-
-](/docs/app/api-reference/components/form)
+| Version | Changes |
+| --- | --- |
+| `v13.2.0` | `@next/font` renamed to `next/font`. Installation no longer required. |
+| `v13.0.0` | `@next/font` was added. |
 
 Was this helpful?
-
-supported.
-
-Send

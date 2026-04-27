@@ -5,69 +5,81 @@ canonical_url: "https://tailwindcss.com/docs/transform-origin"
 docset: "tailwind"
 kind: "framework"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:14:22.095Z"
-content_hash: "27d5932e48f4f8df63e1bd51af59056960a44b890e37ad39f0f41268722f7cbb"
+last_crawled_at: "2026-04-27T20:35:35.796Z"
+content_hash: "31984e1822d12fb4b9f03beef4fcad981fcbd0cd8aa7a671185f8d489cd81a4f"
 menu_path: ["transform-origin"]
 section_path: []
-nav_prev: {"path": "tailwind/docs/transform/index.md", "title": "transform"}
-nav_next: {"path": "tailwind/docs/transform-style/index.md", "title": "transform-style"}
+content_language: "en"
 ---
+[](/)
+
+[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
+
+1.  Transforms
+2.  transform-origin
+
+Transforms
 
 # transform-origin
 
 Utilities for specifying the origin for an element's transformations.
 
-Class
-
-Styles
-
-`origin-center`
-
+| Class | Styles |
+| --- | --- |
+| `origin-center` | 
 `transform-origin: center;`
 
-`origin-top`
+ |
+| `origin-top` | 
 
 `transform-origin: top;`
 
-`origin-top-right`
+ |
+| `origin-top-right` | 
 
 `transform-origin: top right;`
 
-`origin-right`
+ |
+| `origin-right` | 
 
 `transform-origin: right;`
 
-`origin-bottom-right`
+ |
+| `origin-bottom-right` | 
 
 `transform-origin: bottom right;`
 
-`origin-bottom`
+ |
+| `origin-bottom` | 
 
 `transform-origin: bottom;`
 
-`origin-bottom-left`
+ |
+| `origin-bottom-left` | 
 
 `transform-origin: bottom left;`
 
-`origin-left`
+ |
+| `origin-left` | 
 
 `transform-origin: left;`
 
-`origin-top-left`
+ |
+| `origin-top-left` | 
 
 `transform-origin: top left;`
 
-`origin-(<custom-property>)`
+ |
+| `origin-(<custom-property>)` | 
 
 `transform-origin: var(<custom-property>);`
 
-`origin-[<value>]`
+ |
+| `origin-[<value>]` | 
 
 `transform-origin: <value>;`
 
-## [Examples](#examples)
-
-### [Basic example](#basic-example)
+ |
 
 Use utilities like `origin-top` and `origin-bottom-left` to set an element's transform origin:
 
@@ -87,8 +99,6 @@ origin-bottom
 <img class="origin-center rotate-45 ..." src="/img/mountains.jpg" /><img class="origin-top-left rotate-12 ..." src="/img/mountains.jpg" /><img class="origin-bottom -rotate-12 ..." src="/img/mountains.jpg" />
 ```
 
-### [Using a custom value](#using-a-custom-value)
-
 Use the `origin-[<value>]` syntax to set the transform origin based on a completely custom value:
 
 ```
@@ -103,8 +113,6 @@ For CSS variables, you can also use the `origin-(<custom-property>)` syntax:
 
 This is just a shorthand for `origin-[var(<custom-property>)]` that adds the `var()` function for you automatically.
 
-### [Responsive design](#responsive-design)
-
 Prefix a `transform-origin` utility with a breakpoint variant like `md:` to only apply the utility at medium screen sizes and above:
 
 ```
@@ -115,24 +123,20 @@ Learn more about using variants in the [variants documentation](/docs/hover-focu
 
 ### On this page
 
-*   [Quick reference](#quick-reference)
-*   [Examples](#examples)
-    *   [Basic example](#basic-example)
-    *   [Using a custom value](#using-a-custom-value)
-    *   [Responsive design](#responsive-design)
+-   [Quick reference](#quick-reference)
+-   [Examples](#examples)
+    -   [Basic example](#basic-example)
+    -   [Using a custom value](#using-a-custom-value)
+    -   [Responsive design](#responsive-design)
 
-[
+![Build UIs that don’t suck — 5-day mini-course](/_next/static/media/course-promo.d3d6bc78.jpg)
 
-![Refactoring UI](/_next/static/media/book-promo.3012c0f6.png)
+5-day mini-course
 
-From the creators of Tailwind CSS
+Build UIs that don’t suck.
 
-Make your ideas look awesome, without relying on a designer.
+Short, tactical video lessons from the creator of Tailwind CSS, delivered directly to your inbox every day for a week.
 
-> “This is the survival kit I wish I had when I started building apps.”
-> 
-> Derrick Reimer, SavvyCal
-
-](https://www.refactoringui.com/?ref=sidebar)
+[Get the free course](/build-uis-that-dont-suck)
 
 Copyright © 2026 Tailwind Labs Inc.·[Trademark Policy](/brand)

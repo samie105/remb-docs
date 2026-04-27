@@ -5,15 +5,16 @@ canonical_url: "https://docs.deno.com/runtime/reference/std/random/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:05:05.427Z"
-content_hash: "d847969e40eafa0d2af6ceae141a3100b671690e5eb63e28eb8c5aafebdf3d2f"
+last_crawled_at: "2026-04-27T17:46:29.809Z"
+content_hash: "fe0b39f985c3b53a4ca60d76b0867624a43cc31a2fa372cfcc0473f43cfdc7ab"
 menu_path: ["@std/random"]
 section_path: []
+content_language: "en"
 ---
-On this page
+**On this page**
 
-*   [Overview](#overview)
-    *   [Add to your project](#add-to-your-project)
+-   [Overview](#overview)
+    -   [Add to your project](#add-to-your-project)
 
 Unstable
 

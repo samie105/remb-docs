@@ -5,61 +5,15 @@ canonical_url: "https://tailwindcss.com/docs/translate"
 docset: "tailwind"
 kind: "framework"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:15:00.335Z"
-content_hash: "7e794caa622904fdc74e201b4aa6b452273efd0bc21209d3aef6eb4b310f83bc"
+last_crawled_at: "2026-04-27T20:36:10.830Z"
+content_hash: "bac735aefea3688e666efa8deccdaa92cd464814a8090d5496f9cb3c72e8061e"
 menu_path: ["translate"]
 section_path: []
-nav_prev: {"path": "tailwind/docs/transform-style/index.md", "title": "transform-style"}
-nav_next: {"path": "tailwind/docs/accent-color/index.md", "title": "accent-color"}
+content_language: "en"
 ---
-
 Transforms
 
 Utilities for translating elements.
-
-Class
-
-Styles
-
-`translate-<number>`
-
-`translate: calc(var(--spacing) * <number>) calc(var(--spacing) * <number>);`
-
-`-translate-<number>`
-
-`translate: calc(var(--spacing) * -<number>) calc(var(--spacing) * -<number>);`
-
-`translate-<fraction>`
-
-`translate: calc(<fraction> * 100%) calc(<fraction> * 100%);`
-
-`-translate-<fraction>`
-
-`translate: calc(<fraction> * -100%) calc(<fraction> * -100%);`
-
-`translate-full`
-
-`translate: 100% 100%;`
-
-`-translate-full`
-
-`translate: -100% -100%;`
-
-`translate-px`
-
-`translate: 1px 1px;`
-
-`-translate-px`
-
-`translate: -1px -1px;`
-
-`translate-(<custom-property>)`
-
-`translate: var(<custom-property>) var(<custom-property>);`
-
-`translate-[<value>]`
-
-`translate: <value> <value>;`
 
 ## [Examples](#examples)
 
@@ -129,4 +83,4 @@ Prefix a `translate` utility with a breakpoint variant like `md:` to only apply 
 <img class="translate-45 md:translate-60 ..." src="/img/mountains.jpg" />
 ```
 
-Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).
+Learn more about using variants in the [variants documentation](https://tailwindcss.com/docs/hover-focus-and-other-states).

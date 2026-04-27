@@ -5,15 +5,16 @@ canonical_url: "https://docs.deno.com/runtime/reference/std/net/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:04:49.142Z"
-content_hash: "bf984db02f0996bc69f2d0bd3ad9aefae8d994196d3d044cf0d7737ae473c28d"
+last_crawled_at: "2026-04-27T17:45:57.941Z"
+content_hash: "81997969c36db69a0a363eef524e29ebee38256a61a561d4b529f36e0bdb3bf5"
 menu_path: ["@std/net"]
 section_path: []
+content_language: "en"
 ---
-On this page
+**On this page**
 
-*   [Overview](#overview)
-    *   [Add to your project](#add-to-your-project)
+-   [Overview](#overview)
+    -   [Add to your project](#add-to-your-project)
 
 ## Overview
 

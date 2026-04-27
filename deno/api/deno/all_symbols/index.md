@@ -5,10 +5,11 @@ canonical_url: "https://docs.deno.com/api/deno/all_symbols"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:11:46.360Z"
-content_hash: "5280b9f51fef5c92dee66e340f9e0b8fb153a1bc93c32e90c960de8822d9a525"
+last_crawled_at: "2026-04-27T17:56:26.054Z"
+content_hash: "efb61e1cec2f124c9a37ea526f1892895d2a1928430fe2559bdb1c8db3e61766"
 menu_path: ["All Symbols - Deno documentation"]
 section_path: []
+content_language: "en"
 ---
 N
 
@@ -40,8 +41,8 @@ I
 
 A check to perform as part of a [`Deno.AtomicOperation`](./././~/Deno.AtomicOperation). The check will fail if the versionstamp for the key-value pair in the KV store does not match the given versionstamp. A check with a `null` versionstamp checks that the key-value pair does not currently exist in the KV store.
 
-*   [key](./././~/Deno.AtomicCheck#property_key)
-*   [versionstamp](./././~/Deno.AtomicCheck#property_versionstamp)
+-   [key](./././~/Deno.AtomicCheck#property_key)
+-   [versionstamp](./././~/Deno.AtomicCheck#property_versionstamp)
 
 c
 
@@ -49,15 +50,15 @@ c
 
 An operation on a [`Deno.Kv`](./././~/Deno.Kv) that can be performed atomically. Atomic operations do not auto-commit, and must be committed explicitly by calling the `commit` method.
 
-*   [check](./././~/Deno.AtomicOperation#method_check_0)
-*   [commit](./././~/Deno.AtomicOperation#method_commit_0)
-*   [delete](./././~/Deno.AtomicOperation#method_delete_0)
-*   [enqueue](./././~/Deno.AtomicOperation#method_enqueue_0)
-*   [max](./././~/Deno.AtomicOperation#method_max_0)
-*   [min](./././~/Deno.AtomicOperation#method_min_0)
-*   [mutate](./././~/Deno.AtomicOperation#method_mutate_0)
-*   [set](./././~/Deno.AtomicOperation#method_set_0)
-*   [sum](./././~/Deno.AtomicOperation#method_sum_0)
+-   [check](./././~/Deno.AtomicOperation#method_check_0)
+-   [commit](./././~/Deno.AtomicOperation#method_commit_0)
+-   [delete](./././~/Deno.AtomicOperation#method_delete_0)
+-   [enqueue](./././~/Deno.AtomicOperation#method_enqueue_0)
+-   [max](./././~/Deno.AtomicOperation#method_max_0)
+-   [min](./././~/Deno.AtomicOperation#method_min_0)
+-   [mutate](./././~/Deno.AtomicOperation#method_mutate_0)
+-   [set](./././~/Deno.AtomicOperation#method_set_0)
+-   [sum](./././~/Deno.AtomicOperation#method_sum_0)
 
 I
 
@@ -65,8 +66,8 @@ I
 
 Basic authentication credentials to be used with a [`Deno.Proxy`](./././~/Deno.Proxy) server when specifying [`Deno.CreateHttpClientOptions`](./././~/Deno.CreateHttpClientOptions).
 
-*   [password](./././~/Deno.BasicAuth#property_password)
-*   [username](./././~/Deno.BasicAuth#property_username)
+-   [password](./././~/Deno.BasicAuth#property_password)
+-   [username](./././~/Deno.BasicAuth#property_username)
 
 f
 
@@ -80,10 +81,10 @@ I
 
 Context that is passed to a benchmarked function. The instance is shared between iterations of the benchmark. Its methods can be used for example to override of the measured portion of the function.
 
-*   [end](./././~/Deno.BenchContext#method_end_0)
-*   [name](./././~/Deno.BenchContext#property_name)
-*   [origin](./././~/Deno.BenchContext#property_origin)
-*   [start](./././~/Deno.BenchContext#method_start_0)
+-   [end](./././~/Deno.BenchContext#method_end_0)
+-   [name](./././~/Deno.BenchContext#property_name)
+-   [origin](./././~/Deno.BenchContext#property_origin)
+-   [start](./././~/Deno.BenchContext#method_start_0)
 
 I
 
@@ -91,16 +92,16 @@ I
 
 The interface for defining a benchmark test using [`Deno.bench`](./././~/Deno.bench).
 
-*   [baseline](./././~/Deno.BenchDefinition#property_baseline)
-*   [fn](./././~/Deno.BenchDefinition#property_fn)
-*   [group](./././~/Deno.BenchDefinition#property_group)
-*   [ignore](./././~/Deno.BenchDefinition#property_ignore)
-*   [n](./././~/Deno.BenchDefinition#property_n)
-*   [name](./././~/Deno.BenchDefinition#property_name)
-*   [only](./././~/Deno.BenchDefinition#property_only)
-*   [permissions](./././~/Deno.BenchDefinition#property_permissions)
-*   [sanitizeExit](./././~/Deno.BenchDefinition#property_sanitizeexit)
-*   [warmup](./././~/Deno.BenchDefinition#property_warmup)
+-   [baseline](./././~/Deno.BenchDefinition#property_baseline)
+-   [fn](./././~/Deno.BenchDefinition#property_fn)
+-   [group](./././~/Deno.BenchDefinition#property_group)
+-   [ignore](./././~/Deno.BenchDefinition#property_ignore)
+-   [n](./././~/Deno.BenchDefinition#property_n)
+-   [name](./././~/Deno.BenchDefinition#property_name)
+-   [only](./././~/Deno.BenchDefinition#property_only)
+-   [permissions](./././~/Deno.BenchDefinition#property_permissions)
+-   [sanitizeExit](./././~/Deno.BenchDefinition#property_sanitizeexit)
+-   [warmup](./././~/Deno.BenchDefinition#property_warmup)
 
 v
 
@@ -114,12 +115,12 @@ v
 
 Information related to the build of the current Deno runtime.
 
-*   [arch](./././~/Deno.build#property_arch)
-*   [env](./././~/Deno.build#property_env)
-*   [os](./././~/Deno.build#property_os)
-*   [standalone](./././~/Deno.build#property_standalone)
-*   [target](./././~/Deno.build#property_target)
-*   [vendor](./././~/Deno.build#property_vendor)
+-   [arch](./././~/Deno.build#property_arch)
+-   [env](./././~/Deno.build#property_env)
+-   [os](./././~/Deno.build#property_os)
+-   [standalone](./././~/Deno.build#property_standalone)
+-   [target](./././~/Deno.build#property_target)
+-   [vendor](./././~/Deno.build#property_vendor)
 
 f
 
@@ -141,9 +142,9 @@ I
 
 A message emitted from the bundler.
 
-*   [location](./././~/Deno.bundle.Message#property_location)
-*   [notes](./././~/Deno.bundle.Message#property_notes)
-*   [text](./././~/Deno.bundle.Message#property_text)
+-   [location](./././~/Deno.bundle.Message#property_location)
+-   [notes](./././~/Deno.bundle.Message#property_notes)
+-   [text](./././~/Deno.bundle.Message#property_text)
 
 I
 
@@ -151,12 +152,12 @@ I
 
 The location of a message.
 
-*   [column](./././~/Deno.bundle.MessageLocation#property_column)
-*   [file](./././~/Deno.bundle.MessageLocation#property_file)
-*   [length](./././~/Deno.bundle.MessageLocation#property_length)
-*   [line](./././~/Deno.bundle.MessageLocation#property_line)
-*   [namespace](./././~/Deno.bundle.MessageLocation#property_namespace)
-*   [suggestion](./././~/Deno.bundle.MessageLocation#property_suggestion)
+-   [column](./././~/Deno.bundle.MessageLocation#property_column)
+-   [file](./././~/Deno.bundle.MessageLocation#property_file)
+-   [length](./././~/Deno.bundle.MessageLocation#property_length)
+-   [line](./././~/Deno.bundle.MessageLocation#property_line)
+-   [namespace](./././~/Deno.bundle.MessageLocation#property_namespace)
+-   [suggestion](./././~/Deno.bundle.MessageLocation#property_suggestion)
 
 I
 
@@ -164,8 +165,8 @@ I
 
 A note about a message.
 
-*   [location](./././~/Deno.bundle.MessageNote#property_location)
-*   [text](./././~/Deno.bundle.MessageNote#property_text)
+-   [location](./././~/Deno.bundle.MessageNote#property_location)
+-   [text](./././~/Deno.bundle.MessageNote#property_text)
 
 I
 
@@ -173,19 +174,19 @@ I
 
 Options for the bundle.
 
-*   [codeSplitting](./././~/Deno.bundle.Options#property_codesplitting)
-*   [entrypoints](./././~/Deno.bundle.Options#property_entrypoints)
-*   [external](./././~/Deno.bundle.Options#property_external)
-*   [format](./././~/Deno.bundle.Options#property_format)
-*   [inlineImports](./././~/Deno.bundle.Options#property_inlineimports)
-*   [keepNames](./././~/Deno.bundle.Options#property_keepnames)
-*   [minify](./././~/Deno.bundle.Options#property_minify)
-*   [outputDir](./././~/Deno.bundle.Options#property_outputdir)
-*   [outputPath](./././~/Deno.bundle.Options#property_outputpath)
-*   [packages](./././~/Deno.bundle.Options#property_packages)
-*   [platform](./././~/Deno.bundle.Options#property_platform)
-*   [sourcemap](./././~/Deno.bundle.Options#property_sourcemap)
-*   [write](./././~/Deno.bundle.Options#property_write)
+-   [codeSplitting](./././~/Deno.bundle.Options#property_codesplitting)
+-   [entrypoints](./././~/Deno.bundle.Options#property_entrypoints)
+-   [external](./././~/Deno.bundle.Options#property_external)
+-   [format](./././~/Deno.bundle.Options#property_format)
+-   [inlineImports](./././~/Deno.bundle.Options#property_inlineimports)
+-   [keepNames](./././~/Deno.bundle.Options#property_keepnames)
+-   [minify](./././~/Deno.bundle.Options#property_minify)
+-   [outputDir](./././~/Deno.bundle.Options#property_outputdir)
+-   [outputPath](./././~/Deno.bundle.Options#property_outputpath)
+-   [packages](./././~/Deno.bundle.Options#property_packages)
+-   [platform](./././~/Deno.bundle.Options#property_platform)
+-   [sourcemap](./././~/Deno.bundle.Options#property_sourcemap)
+-   [write](./././~/Deno.bundle.Options#property_write)
 
 I
 
@@ -193,10 +194,10 @@ I
 
 An output file in the bundle.
 
-*   [contents](./././~/Deno.bundle.OutputFile#property_contents)
-*   [hash](./././~/Deno.bundle.OutputFile#property_hash)
-*   [path](./././~/Deno.bundle.OutputFile#property_path)
-*   [text](./././~/Deno.bundle.OutputFile#method_text_0)
+-   [contents](./././~/Deno.bundle.OutputFile#property_contents)
+-   [hash](./././~/Deno.bundle.OutputFile#property_hash)
+-   [path](./././~/Deno.bundle.OutputFile#property_path)
+-   [text](./././~/Deno.bundle.OutputFile#method_text_0)
 
 T
 
@@ -216,10 +217,10 @@ I
 
 The result of bundling.
 
-*   [errors](./././~/Deno.bundle.Result#property_errors)
-*   [outputFiles](./././~/Deno.bundle.Result#property_outputfiles)
-*   [success](./././~/Deno.bundle.Result#property_success)
-*   [warnings](./././~/Deno.bundle.Result#property_warnings)
+-   [errors](./././~/Deno.bundle.Result#property_errors)
+-   [outputFiles](./././~/Deno.bundle.Result#property_outputfiles)
+-   [success](./././~/Deno.bundle.Result#property_success)
+-   [warnings](./././~/Deno.bundle.Result#property_warnings)
 
 T
 
@@ -233,9 +234,9 @@ I
 
 If [`Deno.resolveDns`](./././~/Deno.resolveDns) is called with `"CAA"` record type specified, it will resolve with an array of objects with this interface.
 
-*   [critical](./././~/Deno.CaaRecord#property_critical)
-*   [tag](./././~/Deno.CaaRecord#property_tag)
-*   [value](./././~/Deno.CaaRecord#property_value)
+-   [critical](./././~/Deno.CaaRecord#property_critical)
+-   [tag](./././~/Deno.CaaRecord#property_tag)
+-   [value](./././~/Deno.CaaRecord#property_value)
 
 f
 
@@ -249,15 +250,15 @@ c
 
 The interface for handling a child process returned from `Deno.Command.spawn`.
 
-*   [kill](./././~/Deno.ChildProcess#method_kill_0)
-*   [output](./././~/Deno.ChildProcess#method_output_0)
-*   [pid](./././~/Deno.ChildProcess#property_pid)
-*   [ref](./././~/Deno.ChildProcess#method_ref_0)
-*   [status](./././~/Deno.ChildProcess#property_status)
-*   [stderr](./././~/Deno.ChildProcess#accessor_stderr)
-*   [stdin](./././~/Deno.ChildProcess#accessor_stdin)
-*   [stdout](./././~/Deno.ChildProcess#accessor_stdout)
-*   [unref](./././~/Deno.ChildProcess#method_unref_0)
+-   [kill](./././~/Deno.ChildProcess#method_kill_0)
+-   [output](./././~/Deno.ChildProcess#method_output_0)
+-   [pid](./././~/Deno.ChildProcess#property_pid)
+-   [ref](./././~/Deno.ChildProcess#method_ref_0)
+-   [status](./././~/Deno.ChildProcess#property_status)
+-   [stderr](./././~/Deno.ChildProcess#accessor_stderr)
+-   [stdin](./././~/Deno.ChildProcess#accessor_stdin)
+-   [stdout](./././~/Deno.ChildProcess#accessor_stdout)
+-   [unref](./././~/Deno.ChildProcess#method_unref_0)
 
 f
 
@@ -289,9 +290,9 @@ c
 
 Create a child process.
 
-*   [output](./././~/Deno.Command#method_output_0)
-*   [outputSync](./././~/Deno.Command#method_outputsync_0)
-*   [spawn](./././~/Deno.Command#method_spawn_0)
+-   [output](./././~/Deno.Command#method_output_0)
+-   [outputSync](./././~/Deno.Command#method_outputsync_0)
+-   [spawn](./././~/Deno.Command#method_spawn_0)
 
 I
 
@@ -299,18 +300,18 @@ I
 
 Options which can be set when calling [`Deno.Command`](./././~/Deno.Command).
 
-*   [args](./././~/Deno.CommandOptions#property_args)
-*   [clearEnv](./././~/Deno.CommandOptions#property_clearenv)
-*   [cwd](./././~/Deno.CommandOptions#property_cwd)
-*   [detached](./././~/Deno.CommandOptions#property_detached)
-*   [env](./././~/Deno.CommandOptions#property_env)
-*   [gid](./././~/Deno.CommandOptions#property_gid)
-*   [signal](./././~/Deno.CommandOptions#property_signal)
-*   [stderr](./././~/Deno.CommandOptions#property_stderr)
-*   [stdin](./././~/Deno.CommandOptions#property_stdin)
-*   [stdout](./././~/Deno.CommandOptions#property_stdout)
-*   [uid](./././~/Deno.CommandOptions#property_uid)
-*   [windowsRawArguments](./././~/Deno.CommandOptions#property_windowsrawarguments)
+-   [args](./././~/Deno.CommandOptions#property_args)
+-   [clearEnv](./././~/Deno.CommandOptions#property_clearenv)
+-   [cwd](./././~/Deno.CommandOptions#property_cwd)
+-   [detached](./././~/Deno.CommandOptions#property_detached)
+-   [env](./././~/Deno.CommandOptions#property_env)
+-   [gid](./././~/Deno.CommandOptions#property_gid)
+-   [signal](./././~/Deno.CommandOptions#property_signal)
+-   [stderr](./././~/Deno.CommandOptions#property_stderr)
+-   [stdin](./././~/Deno.CommandOptions#property_stdin)
+-   [stdout](./././~/Deno.CommandOptions#property_stdout)
+-   [uid](./././~/Deno.CommandOptions#property_uid)
+-   [windowsRawArguments](./././~/Deno.CommandOptions#property_windowsrawarguments)
 
 I
 
@@ -318,8 +319,8 @@ I
 
 The interface returned from calling `Deno.Command.output` or `Deno.Command.outputSync` which represents the result of spawning the child process.
 
-*   [stderr](./././~/Deno.CommandOutput#property_stderr)
-*   [stdout](./././~/Deno.CommandOutput#property_stdout)
+-   [stderr](./././~/Deno.CommandOutput#property_stderr)
+-   [stdout](./././~/Deno.CommandOutput#property_stdout)
 
 I
 
@@ -327,9 +328,9 @@ I
 
 No documentation available
 
-*   [code](./././~/Deno.CommandStatus#property_code)
-*   [signal](./././~/Deno.CommandStatus#property_signal)
-*   [success](./././~/Deno.CommandStatus#property_success)
+-   [code](./././~/Deno.CommandStatus#property_code)
+-   [signal](./././~/Deno.CommandStatus#property_signal)
+-   [success](./././~/Deno.CommandStatus#property_success)
 
 T
 
@@ -343,16 +344,16 @@ I
 
 No documentation available
 
-*   [close](./././~/Deno.Conn#method_close_0)
-*   [closeWrite](./././~/Deno.Conn#method_closewrite_0)
-*   [localAddr](./././~/Deno.Conn#property_localaddr)
-*   [read](./././~/Deno.Conn#method_read_0)
-*   [readable](./././~/Deno.Conn#property_readable)
-*   [ref](./././~/Deno.Conn#method_ref_0)
-*   [remoteAddr](./././~/Deno.Conn#property_remoteaddr)
-*   [unref](./././~/Deno.Conn#method_unref_0)
-*   [writable](./././~/Deno.Conn#property_writable)
-*   [write](./././~/Deno.Conn#method_write_0)
+-   [close](./././~/Deno.Conn#method_close_0)
+-   [closeWrite](./././~/Deno.Conn#method_closewrite_0)
+-   [localAddr](./././~/Deno.Conn#property_localaddr)
+-   [read](./././~/Deno.Conn#method_read_0)
+-   [readable](./././~/Deno.Conn#property_readable)
+-   [ref](./././~/Deno.Conn#method_ref_0)
+-   [remoteAddr](./././~/Deno.Conn#property_remoteaddr)
+-   [unref](./././~/Deno.Conn#method_unref_0)
+-   [writable](./././~/Deno.Conn#property_writable)
+-   [write](./././~/Deno.Conn#method_write_0)
 
 f
 
@@ -366,10 +367,10 @@ I
 
 No documentation available
 
-*   [hostname](./././~/Deno.ConnectOptions#property_hostname)
-*   [port](./././~/Deno.ConnectOptions#property_port)
-*   [signal](./././~/Deno.ConnectOptions#property_signal)
-*   [transport](./././~/Deno.ConnectOptions#property_transport)
+-   [hostname](./././~/Deno.ConnectOptions#property_hostname)
+-   [port](./././~/Deno.ConnectOptions#property_port)
+-   [signal](./././~/Deno.ConnectOptions#property_signal)
+-   [transport](./././~/Deno.ConnectOptions#property_transport)
 
 f
 
@@ -383,13 +384,13 @@ I
 
 No documentation available
 
-*   [alpnProtocols](./././~/Deno.ConnectQuicOptions#property_alpnprotocols)
-*   [caCerts](./././~/Deno.ConnectQuicOptions#property_cacerts)
-*   [endpoint](./././~/Deno.ConnectQuicOptions#property_endpoint)
-*   [hostname](./././~/Deno.ConnectQuicOptions#property_hostname)
-*   [port](./././~/Deno.ConnectQuicOptions#property_port)
-*   [serverName](./././~/Deno.ConnectQuicOptions#property_servername)
-*   [zeroRtt](./././~/Deno.ConnectQuicOptions#property_zerortt)
+-   [alpnProtocols](./././~/Deno.ConnectQuicOptions#property_alpnprotocols)
+-   [caCerts](./././~/Deno.ConnectQuicOptions#property_cacerts)
+-   [endpoint](./././~/Deno.ConnectQuicOptions#property_endpoint)
+-   [hostname](./././~/Deno.ConnectQuicOptions#property_hostname)
+-   [port](./././~/Deno.ConnectQuicOptions#property_port)
+-   [serverName](./././~/Deno.ConnectQuicOptions#property_servername)
+-   [zeroRtt](./././~/Deno.ConnectQuicOptions#property_zerortt)
 
 f
 
@@ -403,11 +404,11 @@ I
 
 No documentation available
 
-*   [alpnProtocols](./././~/Deno.ConnectTlsOptions#property_alpnprotocols)
-*   [caCerts](./././~/Deno.ConnectTlsOptions#property_cacerts)
-*   [hostname](./././~/Deno.ConnectTlsOptions#property_hostname)
-*   [port](./././~/Deno.ConnectTlsOptions#property_port)
-*   [unsafelyDisableHostnameVerification](./././~/Deno.ConnectTlsOptions#property_unsafelydisablehostnameverification)
+-   [alpnProtocols](./././~/Deno.ConnectTlsOptions#property_alpnprotocols)
+-   [caCerts](./././~/Deno.ConnectTlsOptions#property_cacerts)
+-   [hostname](./././~/Deno.ConnectTlsOptions#property_hostname)
+-   [port](./././~/Deno.ConnectTlsOptions#property_port)
+-   [unsafelyDisableHostnameVerification](./././~/Deno.ConnectTlsOptions#property_unsafelydisablehostnameverification)
 
 f
 
@@ -445,14 +446,14 @@ I
 
 The options used when creating a [`Deno.HttpClient`](./././~/Deno.HttpClient).
 
-*   [allowHost](./././~/Deno.CreateHttpClientOptions#property_allowhost)
-*   [caCerts](./././~/Deno.CreateHttpClientOptions#property_cacerts)
-*   [http1](./././~/Deno.CreateHttpClientOptions#property_http1)
-*   [http2](./././~/Deno.CreateHttpClientOptions#property_http2)
-*   [localAddress](./././~/Deno.CreateHttpClientOptions#property_localaddress)
-*   [poolIdleTimeout](./././~/Deno.CreateHttpClientOptions#property_poolidletimeout)
-*   [poolMaxIdlePerHost](./././~/Deno.CreateHttpClientOptions#property_poolmaxidleperhost)
-*   [proxy](./././~/Deno.CreateHttpClientOptions#property_proxy)
+-   [allowHost](./././~/Deno.CreateHttpClientOptions#property_allowhost)
+-   [caCerts](./././~/Deno.CreateHttpClientOptions#property_cacerts)
+-   [http1](./././~/Deno.CreateHttpClientOptions#property_http1)
+-   [http2](./././~/Deno.CreateHttpClientOptions#property_http2)
+-   [localAddress](./././~/Deno.CreateHttpClientOptions#property_localaddress)
+-   [poolIdleTimeout](./././~/Deno.CreateHttpClientOptions#property_poolidletimeout)
+-   [poolMaxIdlePerHost](./././~/Deno.CreateHttpClientOptions#property_poolmaxidleperhost)
+-   [proxy](./././~/Deno.CreateHttpClientOptions#property_proxy)
 
 f
 
@@ -472,11 +473,11 @@ I
 
 CronSchedule is the interface used for JSON format cron `schedule`.
 
-*   [dayOfMonth](./././~/Deno.CronSchedule#property_dayofmonth)
-*   [dayOfWeek](./././~/Deno.CronSchedule#property_dayofweek)
-*   [hour](./././~/Deno.CronSchedule#property_hour)
-*   [minute](./././~/Deno.CronSchedule#property_minute)
-*   [month](./././~/Deno.CronSchedule#property_month)
+-   [dayOfMonth](./././~/Deno.CronSchedule#property_dayofmonth)
+-   [dayOfWeek](./././~/Deno.CronSchedule#property_dayofweek)
+-   [hour](./././~/Deno.CronSchedule#property_hour)
+-   [minute](./././~/Deno.CronSchedule#property_minute)
+-   [month](./././~/Deno.CronSchedule#property_month)
 
 T
 
@@ -496,12 +497,12 @@ I
 
 A generic transport listener for message-oriented protocols.
 
-*   [addr](./././~/Deno.DatagramConn#property_addr)
-*   [close](./././~/Deno.DatagramConn#method_close_0)
-*   [joinMulticastV4](./././~/Deno.DatagramConn#method_joinmulticastv4_0)
-*   [joinMulticastV6](./././~/Deno.DatagramConn#method_joinmulticastv6_0)
-*   [receive](./././~/Deno.DatagramConn#method_receive_0)
-*   [send](./././~/Deno.DatagramConn#method_send_0)
+-   [addr](./././~/Deno.DatagramConn#property_addr)
+-   [close](./././~/Deno.DatagramConn#method_close_0)
+-   [joinMulticastV4](./././~/Deno.DatagramConn#method_joinmulticastv4_0)
+-   [joinMulticastV6](./././~/Deno.DatagramConn#method_joinmulticastv6_0)
+-   [receive](./././~/Deno.DatagramConn#method_receive_0)
+-   [send](./././~/Deno.DatagramConn#method_send_0)
 
 I
 
@@ -509,12 +510,12 @@ I
 
 No documentation available
 
-*   [afterAll](./././~/Deno.DenoTest#method_afterall_0)
-*   [afterEach](./././~/Deno.DenoTest#method_aftereach_0)
-*   [beforeAll](./././~/Deno.DenoTest#method_beforeall_0)
-*   [beforeEach](./././~/Deno.DenoTest#method_beforeeach_0)
-*   [ignore](./././~/Deno.DenoTest#method_ignore_0)
-*   [only](./././~/Deno.DenoTest#method_only_0)
+-   [afterAll](./././~/Deno.DenoTest#method_afterall_0)
+-   [afterEach](./././~/Deno.DenoTest#method_aftereach_0)
+-   [beforeAll](./././~/Deno.DenoTest#method_beforeall_0)
+-   [beforeEach](./././~/Deno.DenoTest#method_beforeeach_0)
+-   [ignore](./././~/Deno.DenoTest#method_ignore_0)
+-   [only](./././~/Deno.DenoTest#method_only_0)
 
 I
 
@@ -522,10 +523,10 @@ I
 
 Information about a directory entry returned from [`Deno.readDir`](./././~/Deno.readDir) and [`Deno.readDirSync`](./././~/Deno.readDirSync).
 
-*   [isDirectory](./././~/Deno.DirEntry#property_isdirectory)
-*   [isFile](./././~/Deno.DirEntry#property_isfile)
-*   [isSymlink](./././~/Deno.DirEntry#property_issymlink)
-*   [name](./././~/Deno.DirEntry#property_name)
+-   [isDirectory](./././~/Deno.DirEntry#property_isdirectory)
+-   [isFile](./././~/Deno.DirEntry#property_isfile)
+-   [isSymlink](./././~/Deno.DirEntry#property_issymlink)
+-   [name](./././~/Deno.DirEntry#property_name)
 
 f
 
@@ -539,8 +540,8 @@ I
 
 A dynamic library resource. Use [`Deno.dlopen`](./././~/Deno.dlopen) to load a dynamic library and return this interface.
 
-*   [close](./././~/Deno.DynamicLibrary#method_close_0)
-*   [symbols](./././~/Deno.DynamicLibrary#property_symbols)
+-   [close](./././~/Deno.DynamicLibrary#method_close_0)
+-   [symbols](./././~/Deno.DynamicLibrary#property_symbols)
 
 I
 
@@ -548,11 +549,11 @@ I
 
 An interface containing methods to interact with the process environment variables.
 
-*   [delete](./././~/Deno.Env#method_delete_0)
-*   [get](./././~/Deno.Env#method_get_0)
-*   [has](./././~/Deno.Env#method_has_0)
-*   [set](./././~/Deno.Env#method_set_0)
-*   [toObject](./././~/Deno.Env#method_toobject_0)
+-   [delete](./././~/Deno.Env#method_delete_0)
+-   [get](./././~/Deno.Env#method_get_0)
+-   [has](./././~/Deno.Env#method_has_0)
+-   [set](./././~/Deno.Env#method_set_0)
+-   [toObject](./././~/Deno.Env#method_toobject_0)
 
 v
 
@@ -566,8 +567,8 @@ I
 
 The permission descriptor for the `allow-env` and `deny-env` permissions, which controls access to being able to read and write to the process environment variables as well as access other information about the environment. The option `variable` allows scoping the permission to a specific environment variable.
 
-*   [name](./././~/Deno.EnvPermissionDescriptor#property_name)
-*   [variable](./././~/Deno.EnvPermissionDescriptor#property_variable)
+-   [name](./././~/Deno.EnvPermissionDescriptor#property_name)
+-   [variable](./././~/Deno.EnvPermissionDescriptor#property_variable)
 
 N
 
@@ -749,8 +750,8 @@ I
 
 The permission descriptor for the `allow-ffi` and `deny-ffi` permissions, which controls access to loading _foreign_ code and interfacing with it via the [Foreign Function Interface API](https://docs.deno.com/runtime/manual/runtime/ffi_api) available in Deno. The option `path` allows scoping the permission to a specific path on the host.
 
-*   [name](./././~/Deno.FfiPermissionDescriptor#property_name)
-*   [path](./././~/Deno.FfiPermissionDescriptor#property_path)
+-   [name](./././~/Deno.FfiPermissionDescriptor#property_name)
+-   [path](./././~/Deno.FfiPermissionDescriptor#property_path)
 
 I
 
@@ -758,27 +759,27 @@ I
 
 Provides information about a file and is returned by [`Deno.stat`](./././~/Deno.stat), [`Deno.lstat`](./././~/Deno.lstat), [`Deno.statSync`](./././~/Deno.statSync), and [`Deno.lstatSync`](./././~/Deno.lstatSync) or from calling `stat()` and `statSync()` on an [`Deno.FsFile`](./././~/Deno.FsFile) instance.
 
-*   [atime](./././~/Deno.FileInfo#property_atime)
-*   [birthtime](./././~/Deno.FileInfo#property_birthtime)
-*   [blksize](./././~/Deno.FileInfo#property_blksize)
-*   [blocks](./././~/Deno.FileInfo#property_blocks)
-*   [ctime](./././~/Deno.FileInfo#property_ctime)
-*   [dev](./././~/Deno.FileInfo#property_dev)
-*   [gid](./././~/Deno.FileInfo#property_gid)
-*   [ino](./././~/Deno.FileInfo#property_ino)
-*   [isBlockDevice](./././~/Deno.FileInfo#property_isblockdevice)
-*   [isCharDevice](./././~/Deno.FileInfo#property_ischardevice)
-*   [isDirectory](./././~/Deno.FileInfo#property_isdirectory)
-*   [isFifo](./././~/Deno.FileInfo#property_isfifo)
-*   [isFile](./././~/Deno.FileInfo#property_isfile)
-*   [isSocket](./././~/Deno.FileInfo#property_issocket)
-*   [isSymlink](./././~/Deno.FileInfo#property_issymlink)
-*   [mode](./././~/Deno.FileInfo#property_mode)
-*   [mtime](./././~/Deno.FileInfo#property_mtime)
-*   [nlink](./././~/Deno.FileInfo#property_nlink)
-*   [rdev](./././~/Deno.FileInfo#property_rdev)
-*   [size](./././~/Deno.FileInfo#property_size)
-*   [uid](./././~/Deno.FileInfo#property_uid)
+-   [atime](./././~/Deno.FileInfo#property_atime)
+-   [birthtime](./././~/Deno.FileInfo#property_birthtime)
+-   [blksize](./././~/Deno.FileInfo#property_blksize)
+-   [blocks](./././~/Deno.FileInfo#property_blocks)
+-   [ctime](./././~/Deno.FileInfo#property_ctime)
+-   [dev](./././~/Deno.FileInfo#property_dev)
+-   [gid](./././~/Deno.FileInfo#property_gid)
+-   [ino](./././~/Deno.FileInfo#property_ino)
+-   [isBlockDevice](./././~/Deno.FileInfo#property_isblockdevice)
+-   [isCharDevice](./././~/Deno.FileInfo#property_ischardevice)
+-   [isDirectory](./././~/Deno.FileInfo#property_isdirectory)
+-   [isFifo](./././~/Deno.FileInfo#property_isfifo)
+-   [isFile](./././~/Deno.FileInfo#property_isfile)
+-   [isSocket](./././~/Deno.FileInfo#property_issocket)
+-   [isSymlink](./././~/Deno.FileInfo#property_issymlink)
+-   [mode](./././~/Deno.FileInfo#property_mode)
+-   [mtime](./././~/Deno.FileInfo#property_mtime)
+-   [nlink](./././~/Deno.FileInfo#property_nlink)
+-   [rdev](./././~/Deno.FileInfo#property_rdev)
+-   [size](./././~/Deno.FileInfo#property_size)
+-   [uid](./././~/Deno.FileInfo#property_uid)
 
 I
 
@@ -786,11 +787,11 @@ I
 
 The interface for a foreign function as defined by its parameter and result types.
 
-*   [name](./././~/Deno.ForeignFunction#property_name)
-*   [nonblocking](./././~/Deno.ForeignFunction#property_nonblocking)
-*   [optional](./././~/Deno.ForeignFunction#property_optional)
-*   [parameters](./././~/Deno.ForeignFunction#property_parameters)
-*   [result](./././~/Deno.ForeignFunction#property_result)
+-   [name](./././~/Deno.ForeignFunction#property_name)
+-   [nonblocking](./././~/Deno.ForeignFunction#property_nonblocking)
+-   [optional](./././~/Deno.ForeignFunction#property_optional)
+-   [parameters](./././~/Deno.ForeignFunction#property_parameters)
+-   [result](./././~/Deno.ForeignFunction#property_result)
 
 I
 
@@ -804,9 +805,9 @@ I
 
 No documentation available
 
-*   [name](./././~/Deno.ForeignStatic#property_name)
-*   [optional](./././~/Deno.ForeignStatic#property_optional)
-*   [type](./././~/Deno.ForeignStatic#property_type)
+-   [name](./././~/Deno.ForeignStatic#property_name)
+-   [optional](./././~/Deno.ForeignStatic#property_optional)
+-   [type](./././~/Deno.ForeignStatic#property_type)
 
 T
 
@@ -838,9 +839,9 @@ I
 
 Represents a unique file system event yielded by a [`Deno.FsWatcher`](./././~/Deno.FsWatcher).
 
-*   [flag](./././~/Deno.FsEvent#property_flag)
-*   [kind](./././~/Deno.FsEvent#property_kind)
-*   [paths](./././~/Deno.FsEvent#property_paths)
+-   [flag](./././~/Deno.FsEvent#property_flag)
+-   [kind](./././~/Deno.FsEvent#property_kind)
+-   [paths](./././~/Deno.FsEvent#property_paths)
 
 T
 
@@ -854,33 +855,33 @@ c
 
 The Deno abstraction for reading and writing files.
 
-*   [close](./././~/Deno.FsFile#method_close_0)
-*   [isTerminal](./././~/Deno.FsFile#method_isterminal_0)
-*   [lock](./././~/Deno.FsFile#method_lock_0)
-*   [lockSync](./././~/Deno.FsFile#method_locksync_0)
-*   [read](./././~/Deno.FsFile#method_read_0)
-*   [readSync](./././~/Deno.FsFile#method_readsync_0)
-*   [readable](./././~/Deno.FsFile#property_readable)
-*   [seek](./././~/Deno.FsFile#method_seek_0)
-*   [seekSync](./././~/Deno.FsFile#method_seeksync_0)
-*   [setRaw](./././~/Deno.FsFile#method_setraw_0)
-*   [stat](./././~/Deno.FsFile#method_stat_0)
-*   [statSync](./././~/Deno.FsFile#method_statsync_0)
-*   [sync](./././~/Deno.FsFile#method_sync_0)
-*   [syncData](./././~/Deno.FsFile#method_syncdata_0)
-*   [syncDataSync](./././~/Deno.FsFile#method_syncdatasync_0)
-*   [syncSync](./././~/Deno.FsFile#method_syncsync_0)
-*   [truncate](./././~/Deno.FsFile#method_truncate_0)
-*   [truncateSync](./././~/Deno.FsFile#method_truncatesync_0)
-*   [tryLock](./././~/Deno.FsFile#method_trylock_0)
-*   [tryLockSync](./././~/Deno.FsFile#method_trylocksync_0)
-*   [unlock](./././~/Deno.FsFile#method_unlock_0)
-*   [unlockSync](./././~/Deno.FsFile#method_unlocksync_0)
-*   [utime](./././~/Deno.FsFile#method_utime_0)
-*   [utimeSync](./././~/Deno.FsFile#method_utimesync_0)
-*   [writable](./././~/Deno.FsFile#property_writable)
-*   [write](./././~/Deno.FsFile#method_write_0)
-*   [writeSync](./././~/Deno.FsFile#method_writesync_0)
+-   [close](./././~/Deno.FsFile#method_close_0)
+-   [isTerminal](./././~/Deno.FsFile#method_isterminal_0)
+-   [lock](./././~/Deno.FsFile#method_lock_0)
+-   [lockSync](./././~/Deno.FsFile#method_locksync_0)
+-   [read](./././~/Deno.FsFile#method_read_0)
+-   [readSync](./././~/Deno.FsFile#method_readsync_0)
+-   [readable](./././~/Deno.FsFile#property_readable)
+-   [seek](./././~/Deno.FsFile#method_seek_0)
+-   [seekSync](./././~/Deno.FsFile#method_seeksync_0)
+-   [setRaw](./././~/Deno.FsFile#method_setraw_0)
+-   [stat](./././~/Deno.FsFile#method_stat_0)
+-   [statSync](./././~/Deno.FsFile#method_statsync_0)
+-   [sync](./././~/Deno.FsFile#method_sync_0)
+-   [syncData](./././~/Deno.FsFile#method_syncdata_0)
+-   [syncDataSync](./././~/Deno.FsFile#method_syncdatasync_0)
+-   [syncSync](./././~/Deno.FsFile#method_syncsync_0)
+-   [truncate](./././~/Deno.FsFile#method_truncate_0)
+-   [truncateSync](./././~/Deno.FsFile#method_truncatesync_0)
+-   [tryLock](./././~/Deno.FsFile#method_trylock_0)
+-   [tryLockSync](./././~/Deno.FsFile#method_trylocksync_0)
+-   [unlock](./././~/Deno.FsFile#method_unlock_0)
+-   [unlockSync](./././~/Deno.FsFile#method_unlocksync_0)
+-   [utime](./././~/Deno.FsFile#method_utime_0)
+-   [utimeSync](./././~/Deno.FsFile#method_utimesync_0)
+-   [writable](./././~/Deno.FsFile#property_writable)
+-   [write](./././~/Deno.FsFile#method_write_0)
+-   [writeSync](./././~/Deno.FsFile#method_writesync_0)
 
 I
 
@@ -888,8 +889,8 @@ I
 
 Returned by [`Deno.watchFs`](./././~/Deno.watchFs). It is an async iterator yielding up system events. To stop watching the file system by calling `.close()` method.
 
-*   [close](./././~/Deno.FsWatcher#method_close_0)
-*   [return](./././~/Deno.FsWatcher#method_return_0)
+-   [close](./././~/Deno.FsWatcher#method_close_0)
+-   [return](./././~/Deno.FsWatcher#method_return_0)
 
 f
 
@@ -909,7 +910,7 @@ c
 
 A custom `HttpClient` for use with `fetch` function. This is designed to allow custom certificates or proxies to be used with `fetch()`.
 
-*   [close](./././~/Deno.HttpClient#method_close_0)
+-   [close](./././~/Deno.HttpClient#method_close_0)
 
 I
 
@@ -917,11 +918,11 @@ I
 
 An instance of the server created using `Deno.serve()` API.
 
-*   [addr](./././~/Deno.HttpServer#property_addr)
-*   [finished](./././~/Deno.HttpServer#property_finished)
-*   [ref](./././~/Deno.HttpServer#method_ref_0)
-*   [shutdown](./././~/Deno.HttpServer#method_shutdown_0)
-*   [unref](./././~/Deno.HttpServer#method_unref_0)
+-   [addr](./././~/Deno.HttpServer#property_addr)
+-   [finished](./././~/Deno.HttpServer#property_finished)
+-   [ref](./././~/Deno.HttpServer#method_ref_0)
+-   [shutdown](./././~/Deno.HttpServer#method_shutdown_0)
+-   [unref](./././~/Deno.HttpServer#method_unref_0)
 
 I
 
@@ -929,8 +930,8 @@ I
 
 The permission descriptor for the `allow-import` and `deny-import` permissions, which controls access to importing from remote hosts via the network. The option `host` allows scoping the permission for outbound connection to a specific host and port.
 
-*   [host](./././~/Deno.ImportPermissionDescriptor#property_host)
-*   [name](./././~/Deno.ImportPermissionDescriptor#property_name)
+-   [host](./././~/Deno.ImportPermissionDescriptor#property_host)
+-   [name](./././~/Deno.ImportPermissionDescriptor#property_name)
 
 f
 
@@ -944,18 +945,18 @@ I
 
 Option which can be specified when performing [`Deno.inspect`](./././~/Deno.inspect).
 
-*   [breakLength](./././~/Deno.InspectOptions#property_breaklength)
-*   [colors](./././~/Deno.InspectOptions#property_colors)
-*   [compact](./././~/Deno.InspectOptions#property_compact)
-*   [depth](./././~/Deno.InspectOptions#property_depth)
-*   [escapeSequences](./././~/Deno.InspectOptions#property_escapesequences)
-*   [getters](./././~/Deno.InspectOptions#property_getters)
-*   [iterableLimit](./././~/Deno.InspectOptions#property_iterablelimit)
-*   [showHidden](./././~/Deno.InspectOptions#property_showhidden)
-*   [showProxy](./././~/Deno.InspectOptions#property_showproxy)
-*   [sorted](./././~/Deno.InspectOptions#property_sorted)
-*   [strAbbreviateSize](./././~/Deno.InspectOptions#property_strabbreviatesize)
-*   [trailingComma](./././~/Deno.InspectOptions#property_trailingcomma)
+-   [breakLength](./././~/Deno.InspectOptions#property_breaklength)
+-   [colors](./././~/Deno.InspectOptions#property_colors)
+-   [compact](./././~/Deno.InspectOptions#property_compact)
+-   [depth](./././~/Deno.InspectOptions#property_depth)
+-   [escapeSequences](./././~/Deno.InspectOptions#property_escapesequences)
+-   [getters](./././~/Deno.InspectOptions#property_getters)
+-   [iterableLimit](./././~/Deno.InspectOptions#property_iterablelimit)
+-   [showHidden](./././~/Deno.InspectOptions#property_showhidden)
+-   [showProxy](./././~/Deno.InspectOptions#property_showproxy)
+-   [sorted](./././~/Deno.InspectOptions#property_sorted)
+-   [strAbbreviateSize](./././~/Deno.InspectOptions#property_strabbreviatesize)
+-   [trailingComma](./././~/Deno.InspectOptions#property_trailingcomma)
 
 N
 
@@ -987,7 +988,7 @@ I
 
 No documentation available
 
-*   [$display](./././~/Deno.jupyter.Displayable#property_$display)
+-   [$display](./././~/Deno.jupyter.Displayable#property_$display)
 
 I
 
@@ -995,9 +996,9 @@ I
 
 No documentation available
 
-*   [display\_id](./././~/Deno.jupyter.DisplayOptions#property_display_id)
-*   [raw](./././~/Deno.jupyter.DisplayOptions#property_raw)
-*   [update](./././~/Deno.jupyter.DisplayOptions#property_update)
+-   [display\_id](./././~/Deno.jupyter.DisplayOptions#property_display_id)
+-   [raw](./././~/Deno.jupyter.DisplayOptions#property_raw)
+-   [update](./././~/Deno.jupyter.DisplayOptions#property_update)
 
 f
 
@@ -1029,22 +1030,22 @@ I
 
 A collection of supported media types and data for Jupyter frontends.
 
-*   [application/geo+json](./././~/Deno.jupyter.MediaBundle#property_application/geo+json)
-*   [application/javascript](./././~/Deno.jupyter.MediaBundle#property_application/javascript)
-*   [application/json](./././~/Deno.jupyter.MediaBundle#property_application/json)
-*   [application/pdf](./././~/Deno.jupyter.MediaBundle#property_application/pdf)
-*   [application/vdom.v1+json](./././~/Deno.jupyter.MediaBundle#property_application/vdom_v1+json)
-*   [application/vnd.plotly.v1+json](./././~/Deno.jupyter.MediaBundle#property_application/vnd_plotly_v1+json)
-*   [application/vnd.vega.v5+json](./././~/Deno.jupyter.MediaBundle#property_application/vnd_vega_v5+json)
-*   [application/vnd.vegalite.v4+json](./././~/Deno.jupyter.MediaBundle#property_application/vnd_vegalite_v4+json)
-*   [application/vnd.vegalite.v5+json](./././~/Deno.jupyter.MediaBundle#property_application/vnd_vegalite_v5+json)
-*   [image/gif](./././~/Deno.jupyter.MediaBundle#property_image/gif)
-*   [image/jpeg](./././~/Deno.jupyter.MediaBundle#property_image/jpeg)
-*   [image/png](./././~/Deno.jupyter.MediaBundle#property_image/png)
-*   [image/svg+xml](./././~/Deno.jupyter.MediaBundle#property_image/svg+xml)
-*   [text/html](./././~/Deno.jupyter.MediaBundle#property_text/html)
-*   [text/markdown](./././~/Deno.jupyter.MediaBundle#property_text/markdown)
-*   [text/plain](./././~/Deno.jupyter.MediaBundle#property_text/plain)
+-   [application/geo+json](./././~/Deno.jupyter.MediaBundle#property_application/geo+json)
+-   [application/javascript](./././~/Deno.jupyter.MediaBundle#property_application/javascript)
+-   [application/json](./././~/Deno.jupyter.MediaBundle#property_application/json)
+-   [application/pdf](./././~/Deno.jupyter.MediaBundle#property_application/pdf)
+-   [application/vdom.v1+json](./././~/Deno.jupyter.MediaBundle#property_application/vdom_v1+json)
+-   [application/vnd.plotly.v1+json](./././~/Deno.jupyter.MediaBundle#property_application/vnd_plotly_v1+json)
+-   [application/vnd.vega.v5+json](./././~/Deno.jupyter.MediaBundle#property_application/vnd_vega_v5+json)
+-   [application/vnd.vegalite.v4+json](./././~/Deno.jupyter.MediaBundle#property_application/vnd_vegalite_v4+json)
+-   [application/vnd.vegalite.v5+json](./././~/Deno.jupyter.MediaBundle#property_application/vnd_vegalite_v5+json)
+-   [image/gif](./././~/Deno.jupyter.MediaBundle#property_image/gif)
+-   [image/jpeg](./././~/Deno.jupyter.MediaBundle#property_image/jpeg)
+-   [image/png](./././~/Deno.jupyter.MediaBundle#property_image/png)
+-   [image/svg+xml](./././~/Deno.jupyter.MediaBundle#property_image/svg+xml)
+-   [text/html](./././~/Deno.jupyter.MediaBundle#property_text/html)
+-   [text/markdown](./././~/Deno.jupyter.MediaBundle#property_text/markdown)
+-   [text/plain](./././~/Deno.jupyter.MediaBundle#property_text/plain)
 
 f
 
@@ -1058,7 +1059,7 @@ I
 
 No documentation available
 
-*   [$schema](./././~/Deno.jupyter.VegaObject#property_$schema)
+-   [$schema](./././~/Deno.jupyter.VegaObject#property_$schema)
 
 f
 
@@ -1072,17 +1073,17 @@ c
 
 A key-value database that can be used to store and retrieve data.
 
-*   [atomic](./././~/Deno.Kv#method_atomic_0)
-*   [close](./././~/Deno.Kv#method_close_0)
-*   [commitVersionstamp](./././~/Deno.Kv#method_commitversionstamp_0)
-*   [delete](./././~/Deno.Kv#method_delete_0)
-*   [enqueue](./././~/Deno.Kv#method_enqueue_0)
-*   [get](./././~/Deno.Kv#method_get_0)
-*   [getMany](./././~/Deno.Kv#method_getmany_0)
-*   [list](./././~/Deno.Kv#method_list_0)
-*   [listenQueue](./././~/Deno.Kv#method_listenqueue_0)
-*   [set](./././~/Deno.Kv#method_set_0)
-*   [watch](./././~/Deno.Kv#method_watch_0)
+-   [atomic](./././~/Deno.Kv#method_atomic_0)
+-   [close](./././~/Deno.Kv#method_close_0)
+-   [commitVersionstamp](./././~/Deno.Kv#method_commitversionstamp_0)
+-   [delete](./././~/Deno.Kv#method_delete_0)
+-   [enqueue](./././~/Deno.Kv#method_enqueue_0)
+-   [get](./././~/Deno.Kv#method_get_0)
+-   [getMany](./././~/Deno.Kv#method_getmany_0)
+-   [list](./././~/Deno.Kv#method_list_0)
+-   [listenQueue](./././~/Deno.Kv#method_listenqueue_0)
+-   [set](./././~/Deno.Kv#method_set_0)
+-   [watch](./././~/Deno.Kv#method_watch_0)
 
 I
 
@@ -1090,7 +1091,7 @@ I
 
 No documentation available
 
-*   [ok](./././~/Deno.KvCommitError#property_ok)
+-   [ok](./././~/Deno.KvCommitError#property_ok)
 
 I
 
@@ -1098,8 +1099,8 @@ I
 
 No documentation available
 
-*   [ok](./././~/Deno.KvCommitResult#property_ok)
-*   [versionstamp](./././~/Deno.KvCommitResult#property_versionstamp)
+-   [ok](./././~/Deno.KvCommitResult#property_ok)
+-   [versionstamp](./././~/Deno.KvCommitResult#property_versionstamp)
 
 T
 
@@ -1113,9 +1114,9 @@ I
 
 A versioned pair of key and value in a [`Deno.Kv`](./././~/Deno.Kv).
 
-*   [key](./././~/Deno.KvEntry#property_key)
-*   [value](./././~/Deno.KvEntry#property_value)
-*   [versionstamp](./././~/Deno.KvEntry#property_versionstamp)
+-   [key](./././~/Deno.KvEntry#property_key)
+-   [value](./././~/Deno.KvEntry#property_value)
+-   [versionstamp](./././~/Deno.KvEntry#property_versionstamp)
 
 T
 
@@ -1141,8 +1142,8 @@ c
 
 An iterator over a range of data entries in a [`Deno.Kv`](./././~/Deno.Kv).
 
-*   [cursor](./././~/Deno.KvListIterator#accessor_cursor)
-*   [next](./././~/Deno.KvListIterator#method_next_0)
+-   [cursor](./././~/Deno.KvListIterator#accessor_cursor)
+-   [next](./././~/Deno.KvListIterator#method_next_0)
 
 I
 
@@ -1150,11 +1151,11 @@ I
 
 Options for listing key-value pairs in a [`Deno.Kv`](./././~/Deno.Kv).
 
-*   [batchSize](./././~/Deno.KvListOptions#property_batchsize)
-*   [consistency](./././~/Deno.KvListOptions#property_consistency)
-*   [cursor](./././~/Deno.KvListOptions#property_cursor)
-*   [limit](./././~/Deno.KvListOptions#property_limit)
-*   [reverse](./././~/Deno.KvListOptions#property_reverse)
+-   [batchSize](./././~/Deno.KvListOptions#property_batchsize)
+-   [consistency](./././~/Deno.KvListOptions#property_consistency)
+-   [cursor](./././~/Deno.KvListOptions#property_cursor)
+-   [limit](./././~/Deno.KvListOptions#property_limit)
+-   [reverse](./././~/Deno.KvListOptions#property_reverse)
 
 T
 
@@ -1174,7 +1175,7 @@ c
 
 Wrapper type for 64-bit unsigned integers for use as values in a [`Deno.Kv`](./././~/Deno.Kv).
 
-*   [value](./././~/Deno.KvU64#property_value)
+-   [value](./././~/Deno.KvU64#property_value)
 
 f
 
@@ -1206,19 +1207,19 @@ I
 
 No documentation available
 
-*   [accessibility](./././~/Deno.lint.AccessorProperty#property_accessibility)
-*   [computed](./././~/Deno.lint.AccessorProperty#property_computed)
-*   [declare](./././~/Deno.lint.AccessorProperty#property_declare)
-*   [decorators](./././~/Deno.lint.AccessorProperty#property_decorators)
-*   [key](./././~/Deno.lint.AccessorProperty#property_key)
-*   [optional](./././~/Deno.lint.AccessorProperty#property_optional)
-*   [override](./././~/Deno.lint.AccessorProperty#property_override)
-*   [parent](./././~/Deno.lint.AccessorProperty#property_parent)
-*   [range](./././~/Deno.lint.AccessorProperty#property_range)
-*   [readonly](./././~/Deno.lint.AccessorProperty#property_readonly)
-*   [static](./././~/Deno.lint.AccessorProperty#property_static)
-*   [type](./././~/Deno.lint.AccessorProperty#property_type)
-*   [value](./././~/Deno.lint.AccessorProperty#property_value)
+-   [accessibility](./././~/Deno.lint.AccessorProperty#property_accessibility)
+-   [computed](./././~/Deno.lint.AccessorProperty#property_computed)
+-   [declare](./././~/Deno.lint.AccessorProperty#property_declare)
+-   [decorators](./././~/Deno.lint.AccessorProperty#property_decorators)
+-   [key](./././~/Deno.lint.AccessorProperty#property_key)
+-   [optional](./././~/Deno.lint.AccessorProperty#property_optional)
+-   [override](./././~/Deno.lint.AccessorProperty#property_override)
+-   [parent](./././~/Deno.lint.AccessorProperty#property_parent)
+-   [range](./././~/Deno.lint.AccessorProperty#property_range)
+-   [readonly](./././~/Deno.lint.AccessorProperty#property_readonly)
+-   [static](./././~/Deno.lint.AccessorProperty#property_static)
+-   [type](./././~/Deno.lint.AccessorProperty#property_type)
+-   [value](./././~/Deno.lint.AccessorProperty#property_value)
 
 I
 
@@ -1226,10 +1227,10 @@ I
 
 An array literal
 
-*   [elements](./././~/Deno.lint.ArrayExpression#property_elements)
-*   [parent](./././~/Deno.lint.ArrayExpression#property_parent)
-*   [range](./././~/Deno.lint.ArrayExpression#property_range)
-*   [type](./././~/Deno.lint.ArrayExpression#property_type)
+-   [elements](./././~/Deno.lint.ArrayExpression#property_elements)
+-   [parent](./././~/Deno.lint.ArrayExpression#property_parent)
+-   [range](./././~/Deno.lint.ArrayExpression#property_range)
+-   [type](./././~/Deno.lint.ArrayExpression#property_type)
 
 I
 
@@ -1237,12 +1238,12 @@ I
 
 Destructure an array.
 
-*   [elements](./././~/Deno.lint.ArrayPattern#property_elements)
-*   [optional](./././~/Deno.lint.ArrayPattern#property_optional)
-*   [parent](./././~/Deno.lint.ArrayPattern#property_parent)
-*   [range](./././~/Deno.lint.ArrayPattern#property_range)
-*   [type](./././~/Deno.lint.ArrayPattern#property_type)
-*   [typeAnnotation](./././~/Deno.lint.ArrayPattern#property_typeannotation)
+-   [elements](./././~/Deno.lint.ArrayPattern#property_elements)
+-   [optional](./././~/Deno.lint.ArrayPattern#property_optional)
+-   [parent](./././~/Deno.lint.ArrayPattern#property_parent)
+-   [range](./././~/Deno.lint.ArrayPattern#property_range)
+-   [type](./././~/Deno.lint.ArrayPattern#property_type)
+-   [typeAnnotation](./././~/Deno.lint.ArrayPattern#property_typeannotation)
 
 I
 
@@ -1250,16 +1251,16 @@ I
 
 Arrow function expression
 
-*   [async](./././~/Deno.lint.ArrowFunctionExpression#property_async)
-*   [body](./././~/Deno.lint.ArrowFunctionExpression#property_body)
-*   [generator](./././~/Deno.lint.ArrowFunctionExpression#property_generator)
-*   [id](./././~/Deno.lint.ArrowFunctionExpression#property_id)
-*   [params](./././~/Deno.lint.ArrowFunctionExpression#property_params)
-*   [parent](./././~/Deno.lint.ArrowFunctionExpression#property_parent)
-*   [range](./././~/Deno.lint.ArrowFunctionExpression#property_range)
-*   [returnType](./././~/Deno.lint.ArrowFunctionExpression#property_returntype)
-*   [type](./././~/Deno.lint.ArrowFunctionExpression#property_type)
-*   [typeParameters](./././~/Deno.lint.ArrowFunctionExpression#property_typeparameters)
+-   [async](./././~/Deno.lint.ArrowFunctionExpression#property_async)
+-   [body](./././~/Deno.lint.ArrowFunctionExpression#property_body)
+-   [generator](./././~/Deno.lint.ArrowFunctionExpression#property_generator)
+-   [id](./././~/Deno.lint.ArrowFunctionExpression#property_id)
+-   [params](./././~/Deno.lint.ArrowFunctionExpression#property_params)
+-   [parent](./././~/Deno.lint.ArrowFunctionExpression#property_parent)
+-   [range](./././~/Deno.lint.ArrowFunctionExpression#property_range)
+-   [returnType](./././~/Deno.lint.ArrowFunctionExpression#property_returntype)
+-   [type](./././~/Deno.lint.ArrowFunctionExpression#property_type)
+-   [typeParameters](./././~/Deno.lint.ArrowFunctionExpression#property_typeparameters)
 
 I
 
@@ -1267,12 +1268,12 @@ I
 
 Updaate a variable or property.
 
-*   [left](./././~/Deno.lint.AssignmentExpression#property_left)
-*   [operator](./././~/Deno.lint.AssignmentExpression#property_operator)
-*   [parent](./././~/Deno.lint.AssignmentExpression#property_parent)
-*   [range](./././~/Deno.lint.AssignmentExpression#property_range)
-*   [right](./././~/Deno.lint.AssignmentExpression#property_right)
-*   [type](./././~/Deno.lint.AssignmentExpression#property_type)
+-   [left](./././~/Deno.lint.AssignmentExpression#property_left)
+-   [operator](./././~/Deno.lint.AssignmentExpression#property_operator)
+-   [parent](./././~/Deno.lint.AssignmentExpression#property_parent)
+-   [range](./././~/Deno.lint.AssignmentExpression#property_range)
+-   [right](./././~/Deno.lint.AssignmentExpression#property_right)
+-   [type](./././~/Deno.lint.AssignmentExpression#property_type)
 
 I
 
@@ -1280,11 +1281,11 @@ I
 
 Assign default values in parameters.
 
-*   [left](./././~/Deno.lint.AssignmentPattern#property_left)
-*   [parent](./././~/Deno.lint.AssignmentPattern#property_parent)
-*   [range](./././~/Deno.lint.AssignmentPattern#property_range)
-*   [right](./././~/Deno.lint.AssignmentPattern#property_right)
-*   [type](./././~/Deno.lint.AssignmentPattern#property_type)
+-   [left](./././~/Deno.lint.AssignmentPattern#property_left)
+-   [parent](./././~/Deno.lint.AssignmentPattern#property_parent)
+-   [range](./././~/Deno.lint.AssignmentPattern#property_range)
+-   [right](./././~/Deno.lint.AssignmentPattern#property_right)
+-   [type](./././~/Deno.lint.AssignmentPattern#property_type)
 
 I
 
@@ -1292,10 +1293,10 @@ I
 
 Await a `Promise` and get its fulfilled value.
 
-*   [argument](./././~/Deno.lint.AwaitExpression#property_argument)
-*   [parent](./././~/Deno.lint.AwaitExpression#property_parent)
-*   [range](./././~/Deno.lint.AwaitExpression#property_range)
-*   [type](./././~/Deno.lint.AwaitExpression#property_type)
+-   [argument](./././~/Deno.lint.AwaitExpression#property_argument)
+-   [parent](./././~/Deno.lint.AwaitExpression#property_parent)
+-   [range](./././~/Deno.lint.AwaitExpression#property_range)
+-   [type](./././~/Deno.lint.AwaitExpression#property_type)
 
 I
 
@@ -1303,12 +1304,12 @@ I
 
 Represents numbers that are too high or too low to be represented by the `number` type.
 
-*   [bigint](./././~/Deno.lint.BigIntLiteral#property_bigint)
-*   [parent](./././~/Deno.lint.BigIntLiteral#property_parent)
-*   [range](./././~/Deno.lint.BigIntLiteral#property_range)
-*   [raw](./././~/Deno.lint.BigIntLiteral#property_raw)
-*   [type](./././~/Deno.lint.BigIntLiteral#property_type)
-*   [value](./././~/Deno.lint.BigIntLiteral#property_value)
+-   [bigint](./././~/Deno.lint.BigIntLiteral#property_bigint)
+-   [parent](./././~/Deno.lint.BigIntLiteral#property_parent)
+-   [range](./././~/Deno.lint.BigIntLiteral#property_range)
+-   [raw](./././~/Deno.lint.BigIntLiteral#property_raw)
+-   [type](./././~/Deno.lint.BigIntLiteral#property_type)
+-   [value](./././~/Deno.lint.BigIntLiteral#property_value)
 
 I
 
@@ -1316,12 +1317,12 @@ I
 
 Compare left and right value with the specifier operator.
 
-*   [left](./././~/Deno.lint.BinaryExpression#property_left)
-*   [operator](./././~/Deno.lint.BinaryExpression#property_operator)
-*   [parent](./././~/Deno.lint.BinaryExpression#property_parent)
-*   [range](./././~/Deno.lint.BinaryExpression#property_range)
-*   [right](./././~/Deno.lint.BinaryExpression#property_right)
-*   [type](./././~/Deno.lint.BinaryExpression#property_type)
+-   [left](./././~/Deno.lint.BinaryExpression#property_left)
+-   [operator](./././~/Deno.lint.BinaryExpression#property_operator)
+-   [parent](./././~/Deno.lint.BinaryExpression#property_parent)
+-   [range](./././~/Deno.lint.BinaryExpression#property_range)
+-   [right](./././~/Deno.lint.BinaryExpression#property_right)
+-   [type](./././~/Deno.lint.BinaryExpression#property_type)
 
 I
 
@@ -1329,9 +1330,9 @@ I
 
 A potentially multi-line block comment
 
-*   [range](./././~/Deno.lint.BlockComment#property_range)
-*   [type](./././~/Deno.lint.BlockComment#property_type)
-*   [value](./././~/Deno.lint.BlockComment#property_value)
+-   [range](./././~/Deno.lint.BlockComment#property_range)
+-   [type](./././~/Deno.lint.BlockComment#property_type)
+-   [value](./././~/Deno.lint.BlockComment#property_value)
 
 I
 
@@ -1339,10 +1340,10 @@ I
 
 No documentation available
 
-*   [body](./././~/Deno.lint.BlockStatement#property_body)
-*   [parent](./././~/Deno.lint.BlockStatement#property_parent)
-*   [range](./././~/Deno.lint.BlockStatement#property_range)
-*   [type](./././~/Deno.lint.BlockStatement#property_type)
+-   [body](./././~/Deno.lint.BlockStatement#property_body)
+-   [parent](./././~/Deno.lint.BlockStatement#property_parent)
+-   [range](./././~/Deno.lint.BlockStatement#property_range)
+-   [type](./././~/Deno.lint.BlockStatement#property_type)
 
 I
 
@@ -1350,11 +1351,11 @@ I
 
 Either `true` or `false`
 
-*   [parent](./././~/Deno.lint.BooleanLiteral#property_parent)
-*   [range](./././~/Deno.lint.BooleanLiteral#property_range)
-*   [raw](./././~/Deno.lint.BooleanLiteral#property_raw)
-*   [type](./././~/Deno.lint.BooleanLiteral#property_type)
-*   [value](./././~/Deno.lint.BooleanLiteral#property_value)
+-   [parent](./././~/Deno.lint.BooleanLiteral#property_parent)
+-   [range](./././~/Deno.lint.BooleanLiteral#property_range)
+-   [raw](./././~/Deno.lint.BooleanLiteral#property_raw)
+-   [type](./././~/Deno.lint.BooleanLiteral#property_type)
+-   [value](./././~/Deno.lint.BooleanLiteral#property_value)
 
 I
 
@@ -1362,10 +1363,10 @@ I
 
 Break any loop or labeled statement, example:
 
-*   [label](./././~/Deno.lint.BreakStatement#property_label)
-*   [parent](./././~/Deno.lint.BreakStatement#property_parent)
-*   [range](./././~/Deno.lint.BreakStatement#property_range)
-*   [type](./././~/Deno.lint.BreakStatement#property_type)
+-   [label](./././~/Deno.lint.BreakStatement#property_label)
+-   [parent](./././~/Deno.lint.BreakStatement#property_parent)
+-   [range](./././~/Deno.lint.BreakStatement#property_range)
+-   [type](./././~/Deno.lint.BreakStatement#property_type)
 
 I
 
@@ -1373,13 +1374,13 @@ I
 
 A function call.
 
-*   [arguments](./././~/Deno.lint.CallExpression#property_arguments)
-*   [callee](./././~/Deno.lint.CallExpression#property_callee)
-*   [optional](./././~/Deno.lint.CallExpression#property_optional)
-*   [parent](./././~/Deno.lint.CallExpression#property_parent)
-*   [range](./././~/Deno.lint.CallExpression#property_range)
-*   [type](./././~/Deno.lint.CallExpression#property_type)
-*   [typeArguments](./././~/Deno.lint.CallExpression#property_typearguments)
+-   [arguments](./././~/Deno.lint.CallExpression#property_arguments)
+-   [callee](./././~/Deno.lint.CallExpression#property_callee)
+-   [optional](./././~/Deno.lint.CallExpression#property_optional)
+-   [parent](./././~/Deno.lint.CallExpression#property_parent)
+-   [range](./././~/Deno.lint.CallExpression#property_range)
+-   [type](./././~/Deno.lint.CallExpression#property_type)
+-   [typeArguments](./././~/Deno.lint.CallExpression#property_typearguments)
 
 I
 
@@ -1387,11 +1388,11 @@ I
 
 The catch clause of a try/catch statement
 
-*   [body](./././~/Deno.lint.CatchClause#property_body)
-*   [param](./././~/Deno.lint.CatchClause#property_param)
-*   [parent](./././~/Deno.lint.CatchClause#property_parent)
-*   [range](./././~/Deno.lint.CatchClause#property_range)
-*   [type](./././~/Deno.lint.CatchClause#property_type)
+-   [body](./././~/Deno.lint.CatchClause#property_body)
+-   [param](./././~/Deno.lint.CatchClause#property_param)
+-   [parent](./././~/Deno.lint.CatchClause#property_parent)
+-   [range](./././~/Deno.lint.CatchClause#property_range)
+-   [type](./././~/Deno.lint.CatchClause#property_type)
 
 I
 
@@ -1399,10 +1400,10 @@ I
 
 ChainExpression
 
-*   [expression](./././~/Deno.lint.ChainExpression#property_expression)
-*   [parent](./././~/Deno.lint.ChainExpression#property_parent)
-*   [range](./././~/Deno.lint.ChainExpression#property_range)
-*   [type](./././~/Deno.lint.ChainExpression#property_type)
+-   [expression](./././~/Deno.lint.ChainExpression#property_expression)
+-   [parent](./././~/Deno.lint.ChainExpression#property_parent)
+-   [range](./././~/Deno.lint.ChainExpression#property_range)
+-   [type](./././~/Deno.lint.ChainExpression#property_type)
 
 I
 
@@ -1410,10 +1411,10 @@ I
 
 Represents the body of a class and contains all members
 
-*   [body](./././~/Deno.lint.ClassBody#property_body)
-*   [parent](./././~/Deno.lint.ClassBody#property_parent)
-*   [range](./././~/Deno.lint.ClassBody#property_range)
-*   [type](./././~/Deno.lint.ClassBody#property_type)
+-   [body](./././~/Deno.lint.ClassBody#property_body)
+-   [parent](./././~/Deno.lint.ClassBody#property_parent)
+-   [range](./././~/Deno.lint.ClassBody#property_range)
+-   [type](./././~/Deno.lint.ClassBody#property_type)
 
 I
 
@@ -1421,15 +1422,15 @@ I
 
 Declares a class in the current scope
 
-*   [abstract](./././~/Deno.lint.ClassDeclaration#property_abstract)
-*   [body](./././~/Deno.lint.ClassDeclaration#property_body)
-*   [declare](./././~/Deno.lint.ClassDeclaration#property_declare)
-*   [id](./././~/Deno.lint.ClassDeclaration#property_id)
-*   [implements](./././~/Deno.lint.ClassDeclaration#property_implements)
-*   [parent](./././~/Deno.lint.ClassDeclaration#property_parent)
-*   [range](./././~/Deno.lint.ClassDeclaration#property_range)
-*   [superClass](./././~/Deno.lint.ClassDeclaration#property_superclass)
-*   [type](./././~/Deno.lint.ClassDeclaration#property_type)
+-   [abstract](./././~/Deno.lint.ClassDeclaration#property_abstract)
+-   [body](./././~/Deno.lint.ClassDeclaration#property_body)
+-   [declare](./././~/Deno.lint.ClassDeclaration#property_declare)
+-   [id](./././~/Deno.lint.ClassDeclaration#property_id)
+-   [implements](./././~/Deno.lint.ClassDeclaration#property_implements)
+-   [parent](./././~/Deno.lint.ClassDeclaration#property_parent)
+-   [range](./././~/Deno.lint.ClassDeclaration#property_range)
+-   [superClass](./././~/Deno.lint.ClassDeclaration#property_superclass)
+-   [type](./././~/Deno.lint.ClassDeclaration#property_type)
 
 I
 
@@ -1437,17 +1438,17 @@ I
 
 Similar to ClassDeclaration but for declaring a class as an expression. The main difference is that the class name(=id) can be omitted.
 
-*   [abstract](./././~/Deno.lint.ClassExpression#property_abstract)
-*   [body](./././~/Deno.lint.ClassExpression#property_body)
-*   [declare](./././~/Deno.lint.ClassExpression#property_declare)
-*   [id](./././~/Deno.lint.ClassExpression#property_id)
-*   [implements](./././~/Deno.lint.ClassExpression#property_implements)
-*   [parent](./././~/Deno.lint.ClassExpression#property_parent)
-*   [range](./././~/Deno.lint.ClassExpression#property_range)
-*   [superClass](./././~/Deno.lint.ClassExpression#property_superclass)
-*   [superTypeArguments](./././~/Deno.lint.ClassExpression#property_supertypearguments)
-*   [type](./././~/Deno.lint.ClassExpression#property_type)
-*   [typeParameters](./././~/Deno.lint.ClassExpression#property_typeparameters)
+-   [abstract](./././~/Deno.lint.ClassExpression#property_abstract)
+-   [body](./././~/Deno.lint.ClassExpression#property_body)
+-   [declare](./././~/Deno.lint.ClassExpression#property_declare)
+-   [id](./././~/Deno.lint.ClassExpression#property_id)
+-   [implements](./././~/Deno.lint.ClassExpression#property_implements)
+-   [parent](./././~/Deno.lint.ClassExpression#property_parent)
+-   [range](./././~/Deno.lint.ClassExpression#property_range)
+-   [superClass](./././~/Deno.lint.ClassExpression#property_superclass)
+-   [superTypeArguments](./././~/Deno.lint.ClassExpression#property_supertypearguments)
+-   [type](./././~/Deno.lint.ClassExpression#property_type)
+-   [typeParameters](./././~/Deno.lint.ClassExpression#property_typeparameters)
 
 I
 
@@ -1455,12 +1456,12 @@ I
 
 Inline if-statement.
 
-*   [alternate](./././~/Deno.lint.ConditionalExpression#property_alternate)
-*   [consequent](./././~/Deno.lint.ConditionalExpression#property_consequent)
-*   [parent](./././~/Deno.lint.ConditionalExpression#property_parent)
-*   [range](./././~/Deno.lint.ConditionalExpression#property_range)
-*   [test](./././~/Deno.lint.ConditionalExpression#property_test)
-*   [type](./././~/Deno.lint.ConditionalExpression#property_type)
+-   [alternate](./././~/Deno.lint.ConditionalExpression#property_alternate)
+-   [consequent](./././~/Deno.lint.ConditionalExpression#property_consequent)
+-   [parent](./././~/Deno.lint.ConditionalExpression#property_parent)
+-   [range](./././~/Deno.lint.ConditionalExpression#property_range)
+-   [test](./././~/Deno.lint.ConditionalExpression#property_test)
+-   [type](./././~/Deno.lint.ConditionalExpression#property_type)
 
 I
 
@@ -1468,10 +1469,10 @@ I
 
 Terminates the current loop and continues with the next iteration.
 
-*   [label](./././~/Deno.lint.ContinueStatement#property_label)
-*   [parent](./././~/Deno.lint.ContinueStatement#property_parent)
-*   [range](./././~/Deno.lint.ContinueStatement#property_range)
-*   [type](./././~/Deno.lint.ContinueStatement#property_type)
+-   [label](./././~/Deno.lint.ContinueStatement#property_label)
+-   [parent](./././~/Deno.lint.ContinueStatement#property_parent)
+-   [range](./././~/Deno.lint.ContinueStatement#property_range)
+-   [type](./././~/Deno.lint.ContinueStatement#property_type)
 
 I
 
@@ -1479,9 +1480,9 @@ I
 
 The `debugger;` statement.
 
-*   [parent](./././~/Deno.lint.DebuggerStatement#property_parent)
-*   [range](./././~/Deno.lint.DebuggerStatement#property_range)
-*   [type](./././~/Deno.lint.DebuggerStatement#property_type)
+-   [parent](./././~/Deno.lint.DebuggerStatement#property_parent)
+-   [range](./././~/Deno.lint.DebuggerStatement#property_range)
+-   [type](./././~/Deno.lint.DebuggerStatement#property_type)
 
 I
 
@@ -1489,10 +1490,10 @@ I
 
 Experimental: Decorators
 
-*   [expression](./././~/Deno.lint.Decorator#property_expression)
-*   [parent](./././~/Deno.lint.Decorator#property_parent)
-*   [range](./././~/Deno.lint.Decorator#property_range)
-*   [type](./././~/Deno.lint.Decorator#property_type)
+-   [expression](./././~/Deno.lint.Decorator#property_expression)
+-   [parent](./././~/Deno.lint.Decorator#property_parent)
+-   [range](./././~/Deno.lint.Decorator#property_range)
+-   [type](./././~/Deno.lint.Decorator#property_type)
 
 I
 
@@ -1500,11 +1501,11 @@ I
 
 No documentation available
 
-*   [fix](./././~/Deno.lint.Diagnostic#property_fix)
-*   [hint](./././~/Deno.lint.Diagnostic#property_hint)
-*   [id](./././~/Deno.lint.Diagnostic#property_id)
-*   [message](./././~/Deno.lint.Diagnostic#property_message)
-*   [range](./././~/Deno.lint.Diagnostic#property_range)
+-   [fix](./././~/Deno.lint.Diagnostic#property_fix)
+-   [hint](./././~/Deno.lint.Diagnostic#property_hint)
+-   [id](./././~/Deno.lint.Diagnostic#property_id)
+-   [message](./././~/Deno.lint.Diagnostic#property_message)
+-   [range](./././~/Deno.lint.Diagnostic#property_range)
 
 I
 
@@ -1512,11 +1513,11 @@ I
 
 Re-run loop for as long as test expression is truthy.
 
-*   [body](./././~/Deno.lint.DoWhileStatement#property_body)
-*   [parent](./././~/Deno.lint.DoWhileStatement#property_parent)
-*   [range](./././~/Deno.lint.DoWhileStatement#property_range)
-*   [test](./././~/Deno.lint.DoWhileStatement#property_test)
-*   [type](./././~/Deno.lint.DoWhileStatement#property_type)
+-   [body](./././~/Deno.lint.DoWhileStatement#property_body)
+-   [parent](./././~/Deno.lint.DoWhileStatement#property_parent)
+-   [range](./././~/Deno.lint.DoWhileStatement#property_range)
+-   [test](./././~/Deno.lint.DoWhileStatement#property_test)
+-   [type](./././~/Deno.lint.DoWhileStatement#property_type)
 
 I
 
@@ -1524,13 +1525,13 @@ I
 
 No documentation available
 
-*   [attributes](./././~/Deno.lint.ExportAllDeclaration#property_attributes)
-*   [exportKind](./././~/Deno.lint.ExportAllDeclaration#property_exportkind)
-*   [exported](./././~/Deno.lint.ExportAllDeclaration#property_exported)
-*   [parent](./././~/Deno.lint.ExportAllDeclaration#property_parent)
-*   [range](./././~/Deno.lint.ExportAllDeclaration#property_range)
-*   [source](./././~/Deno.lint.ExportAllDeclaration#property_source)
-*   [type](./././~/Deno.lint.ExportAllDeclaration#property_type)
+-   [attributes](./././~/Deno.lint.ExportAllDeclaration#property_attributes)
+-   [exportKind](./././~/Deno.lint.ExportAllDeclaration#property_exportkind)
+-   [exported](./././~/Deno.lint.ExportAllDeclaration#property_exported)
+-   [parent](./././~/Deno.lint.ExportAllDeclaration#property_parent)
+-   [range](./././~/Deno.lint.ExportAllDeclaration#property_range)
+-   [source](./././~/Deno.lint.ExportAllDeclaration#property_source)
+-   [type](./././~/Deno.lint.ExportAllDeclaration#property_type)
 
 I
 
@@ -1538,11 +1539,11 @@ I
 
 No documentation available
 
-*   [declaration](./././~/Deno.lint.ExportDefaultDeclaration#property_declaration)
-*   [exportKind](./././~/Deno.lint.ExportDefaultDeclaration#property_exportkind)
-*   [parent](./././~/Deno.lint.ExportDefaultDeclaration#property_parent)
-*   [range](./././~/Deno.lint.ExportDefaultDeclaration#property_range)
-*   [type](./././~/Deno.lint.ExportDefaultDeclaration#property_type)
+-   [declaration](./././~/Deno.lint.ExportDefaultDeclaration#property_declaration)
+-   [exportKind](./././~/Deno.lint.ExportDefaultDeclaration#property_exportkind)
+-   [parent](./././~/Deno.lint.ExportDefaultDeclaration#property_parent)
+-   [range](./././~/Deno.lint.ExportDefaultDeclaration#property_range)
+-   [type](./././~/Deno.lint.ExportDefaultDeclaration#property_type)
 
 I
 
@@ -1550,14 +1551,14 @@ I
 
 No documentation available
 
-*   [attributes](./././~/Deno.lint.ExportNamedDeclaration#property_attributes)
-*   [declaration](./././~/Deno.lint.ExportNamedDeclaration#property_declaration)
-*   [exportKind](./././~/Deno.lint.ExportNamedDeclaration#property_exportkind)
-*   [parent](./././~/Deno.lint.ExportNamedDeclaration#property_parent)
-*   [range](./././~/Deno.lint.ExportNamedDeclaration#property_range)
-*   [source](./././~/Deno.lint.ExportNamedDeclaration#property_source)
-*   [specifiers](./././~/Deno.lint.ExportNamedDeclaration#property_specifiers)
-*   [type](./././~/Deno.lint.ExportNamedDeclaration#property_type)
+-   [attributes](./././~/Deno.lint.ExportNamedDeclaration#property_attributes)
+-   [declaration](./././~/Deno.lint.ExportNamedDeclaration#property_declaration)
+-   [exportKind](./././~/Deno.lint.ExportNamedDeclaration#property_exportkind)
+-   [parent](./././~/Deno.lint.ExportNamedDeclaration#property_parent)
+-   [range](./././~/Deno.lint.ExportNamedDeclaration#property_range)
+-   [source](./././~/Deno.lint.ExportNamedDeclaration#property_source)
+-   [specifiers](./././~/Deno.lint.ExportNamedDeclaration#property_specifiers)
+-   [type](./././~/Deno.lint.ExportNamedDeclaration#property_type)
 
 I
 
@@ -1565,12 +1566,12 @@ I
 
 No documentation available
 
-*   [exportKind](./././~/Deno.lint.ExportSpecifier#property_exportkind)
-*   [exported](./././~/Deno.lint.ExportSpecifier#property_exported)
-*   [local](./././~/Deno.lint.ExportSpecifier#property_local)
-*   [parent](./././~/Deno.lint.ExportSpecifier#property_parent)
-*   [range](./././~/Deno.lint.ExportSpecifier#property_range)
-*   [type](./././~/Deno.lint.ExportSpecifier#property_type)
+-   [exportKind](./././~/Deno.lint.ExportSpecifier#property_exportkind)
+-   [exported](./././~/Deno.lint.ExportSpecifier#property_exported)
+-   [local](./././~/Deno.lint.ExportSpecifier#property_local)
+-   [parent](./././~/Deno.lint.ExportSpecifier#property_parent)
+-   [range](./././~/Deno.lint.ExportSpecifier#property_range)
+-   [type](./././~/Deno.lint.ExportSpecifier#property_type)
 
 T
 
@@ -1584,10 +1585,10 @@ I
 
 Statement that holds an expression.
 
-*   [expression](./././~/Deno.lint.ExpressionStatement#property_expression)
-*   [parent](./././~/Deno.lint.ExpressionStatement#property_parent)
-*   [range](./././~/Deno.lint.ExpressionStatement#property_range)
-*   [type](./././~/Deno.lint.ExpressionStatement#property_type)
+-   [expression](./././~/Deno.lint.ExpressionStatement#property_expression)
+-   [parent](./././~/Deno.lint.ExpressionStatement#property_parent)
+-   [range](./././~/Deno.lint.ExpressionStatement#property_range)
+-   [type](./././~/Deno.lint.ExpressionStatement#property_type)
 
 I
 
@@ -1595,8 +1596,8 @@ I
 
 No documentation available
 
-*   [range](./././~/Deno.lint.Fix#property_range)
-*   [text](./././~/Deno.lint.Fix#property_text)
+-   [range](./././~/Deno.lint.Fix#property_range)
+-   [text](./././~/Deno.lint.Fix#property_text)
 
 I
 
@@ -1604,14 +1605,14 @@ I
 
 No documentation available
 
-*   [insertTextAfter](./././~/Deno.lint.Fixer#method_inserttextafter_0)
-*   [insertTextAfterRange](./././~/Deno.lint.Fixer#method_inserttextafterrange_0)
-*   [insertTextBefore](./././~/Deno.lint.Fixer#method_inserttextbefore_0)
-*   [insertTextBeforeRange](./././~/Deno.lint.Fixer#method_inserttextbeforerange_0)
-*   [remove](./././~/Deno.lint.Fixer#method_remove_0)
-*   [removeRange](./././~/Deno.lint.Fixer#method_removerange_0)
-*   [replaceText](./././~/Deno.lint.Fixer#method_replacetext_0)
-*   [replaceTextRange](./././~/Deno.lint.Fixer#method_replacetextrange_0)
+-   [insertTextAfter](./././~/Deno.lint.Fixer#method_inserttextafter_0)
+-   [insertTextAfterRange](./././~/Deno.lint.Fixer#method_inserttextafterrange_0)
+-   [insertTextBefore](./././~/Deno.lint.Fixer#method_inserttextbefore_0)
+-   [insertTextBeforeRange](./././~/Deno.lint.Fixer#method_inserttextbeforerange_0)
+-   [remove](./././~/Deno.lint.Fixer#method_remove_0)
+-   [removeRange](./././~/Deno.lint.Fixer#method_removerange_0)
+-   [replaceText](./././~/Deno.lint.Fixer#method_replacetext_0)
+-   [replaceTextRange](./././~/Deno.lint.Fixer#method_replacetextrange_0)
 
 I
 
@@ -1619,12 +1620,12 @@ I
 
 Enumerate over all enumerable string properties of an object.
 
-*   [body](./././~/Deno.lint.ForInStatement#property_body)
-*   [left](./././~/Deno.lint.ForInStatement#property_left)
-*   [parent](./././~/Deno.lint.ForInStatement#property_parent)
-*   [range](./././~/Deno.lint.ForInStatement#property_range)
-*   [right](./././~/Deno.lint.ForInStatement#property_right)
-*   [type](./././~/Deno.lint.ForInStatement#property_type)
+-   [body](./././~/Deno.lint.ForInStatement#property_body)
+-   [left](./././~/Deno.lint.ForInStatement#property_left)
+-   [parent](./././~/Deno.lint.ForInStatement#property_parent)
+-   [range](./././~/Deno.lint.ForInStatement#property_range)
+-   [right](./././~/Deno.lint.ForInStatement#property_right)
+-   [type](./././~/Deno.lint.ForInStatement#property_type)
 
 I
 
@@ -1632,13 +1633,13 @@ I
 
 Iterate over sequence of values from an iterator.
 
-*   [await](./././~/Deno.lint.ForOfStatement#property_await)
-*   [body](./././~/Deno.lint.ForOfStatement#property_body)
-*   [left](./././~/Deno.lint.ForOfStatement#property_left)
-*   [parent](./././~/Deno.lint.ForOfStatement#property_parent)
-*   [range](./././~/Deno.lint.ForOfStatement#property_range)
-*   [right](./././~/Deno.lint.ForOfStatement#property_right)
-*   [type](./././~/Deno.lint.ForOfStatement#property_type)
+-   [await](./././~/Deno.lint.ForOfStatement#property_await)
+-   [body](./././~/Deno.lint.ForOfStatement#property_body)
+-   [left](./././~/Deno.lint.ForOfStatement#property_left)
+-   [parent](./././~/Deno.lint.ForOfStatement#property_parent)
+-   [range](./././~/Deno.lint.ForOfStatement#property_range)
+-   [right](./././~/Deno.lint.ForOfStatement#property_right)
+-   [type](./././~/Deno.lint.ForOfStatement#property_type)
 
 I
 
@@ -1646,13 +1647,13 @@ I
 
 Classic for-loop.
 
-*   [body](./././~/Deno.lint.ForStatement#property_body)
-*   [init](./././~/Deno.lint.ForStatement#property_init)
-*   [parent](./././~/Deno.lint.ForStatement#property_parent)
-*   [range](./././~/Deno.lint.ForStatement#property_range)
-*   [test](./././~/Deno.lint.ForStatement#property_test)
-*   [type](./././~/Deno.lint.ForStatement#property_type)
-*   [update](./././~/Deno.lint.ForStatement#property_update)
+-   [body](./././~/Deno.lint.ForStatement#property_body)
+-   [init](./././~/Deno.lint.ForStatement#property_init)
+-   [parent](./././~/Deno.lint.ForStatement#property_parent)
+-   [range](./././~/Deno.lint.ForStatement#property_range)
+-   [test](./././~/Deno.lint.ForStatement#property_test)
+-   [type](./././~/Deno.lint.ForStatement#property_type)
+-   [update](./././~/Deno.lint.ForStatement#property_update)
 
 I
 
@@ -1660,17 +1661,17 @@ I
 
 Declares a function in the current scope
 
-*   [async](./././~/Deno.lint.FunctionDeclaration#property_async)
-*   [body](./././~/Deno.lint.FunctionDeclaration#property_body)
-*   [declare](./././~/Deno.lint.FunctionDeclaration#property_declare)
-*   [generator](./././~/Deno.lint.FunctionDeclaration#property_generator)
-*   [id](./././~/Deno.lint.FunctionDeclaration#property_id)
-*   [params](./././~/Deno.lint.FunctionDeclaration#property_params)
-*   [parent](./././~/Deno.lint.FunctionDeclaration#property_parent)
-*   [range](./././~/Deno.lint.FunctionDeclaration#property_range)
-*   [returnType](./././~/Deno.lint.FunctionDeclaration#property_returntype)
-*   [type](./././~/Deno.lint.FunctionDeclaration#property_type)
-*   [typeParameters](./././~/Deno.lint.FunctionDeclaration#property_typeparameters)
+-   [async](./././~/Deno.lint.FunctionDeclaration#property_async)
+-   [body](./././~/Deno.lint.FunctionDeclaration#property_body)
+-   [declare](./././~/Deno.lint.FunctionDeclaration#property_declare)
+-   [generator](./././~/Deno.lint.FunctionDeclaration#property_generator)
+-   [id](./././~/Deno.lint.FunctionDeclaration#property_id)
+-   [params](./././~/Deno.lint.FunctionDeclaration#property_params)
+-   [parent](./././~/Deno.lint.FunctionDeclaration#property_parent)
+-   [range](./././~/Deno.lint.FunctionDeclaration#property_range)
+-   [returnType](./././~/Deno.lint.FunctionDeclaration#property_returntype)
+-   [type](./././~/Deno.lint.FunctionDeclaration#property_type)
+-   [typeParameters](./././~/Deno.lint.FunctionDeclaration#property_typeparameters)
 
 I
 
@@ -1678,16 +1679,16 @@ I
 
 Declare a function as an expression. Similar to `FunctionDeclaration`, with an optional name (=id).
 
-*   [async](./././~/Deno.lint.FunctionExpression#property_async)
-*   [body](./././~/Deno.lint.FunctionExpression#property_body)
-*   [generator](./././~/Deno.lint.FunctionExpression#property_generator)
-*   [id](./././~/Deno.lint.FunctionExpression#property_id)
-*   [params](./././~/Deno.lint.FunctionExpression#property_params)
-*   [parent](./././~/Deno.lint.FunctionExpression#property_parent)
-*   [range](./././~/Deno.lint.FunctionExpression#property_range)
-*   [returnType](./././~/Deno.lint.FunctionExpression#property_returntype)
-*   [type](./././~/Deno.lint.FunctionExpression#property_type)
-*   [typeParameters](./././~/Deno.lint.FunctionExpression#property_typeparameters)
+-   [async](./././~/Deno.lint.FunctionExpression#property_async)
+-   [body](./././~/Deno.lint.FunctionExpression#property_body)
+-   [generator](./././~/Deno.lint.FunctionExpression#property_generator)
+-   [id](./././~/Deno.lint.FunctionExpression#property_id)
+-   [params](./././~/Deno.lint.FunctionExpression#property_params)
+-   [parent](./././~/Deno.lint.FunctionExpression#property_parent)
+-   [range](./././~/Deno.lint.FunctionExpression#property_range)
+-   [returnType](./././~/Deno.lint.FunctionExpression#property_returntype)
+-   [type](./././~/Deno.lint.FunctionExpression#property_type)
+-   [typeParameters](./././~/Deno.lint.FunctionExpression#property_typeparameters)
 
 I
 
@@ -1695,12 +1696,12 @@ I
 
 Custom named node by the developer. Can be a variable name, a function name, parameter, etc.
 
-*   [name](./././~/Deno.lint.Identifier#property_name)
-*   [optional](./././~/Deno.lint.Identifier#property_optional)
-*   [parent](./././~/Deno.lint.Identifier#property_parent)
-*   [range](./././~/Deno.lint.Identifier#property_range)
-*   [type](./././~/Deno.lint.Identifier#property_type)
-*   [typeAnnotation](./././~/Deno.lint.Identifier#property_typeannotation)
+-   [name](./././~/Deno.lint.Identifier#property_name)
+-   [optional](./././~/Deno.lint.Identifier#property_optional)
+-   [parent](./././~/Deno.lint.Identifier#property_parent)
+-   [range](./././~/Deno.lint.Identifier#property_range)
+-   [type](./././~/Deno.lint.Identifier#property_type)
+-   [typeAnnotation](./././~/Deno.lint.Identifier#property_typeannotation)
 
 I
 
@@ -1708,12 +1709,12 @@ I
 
 Execute a statement the test passes, otherwise the alternate statement, if it was defined.
 
-*   [alternate](./././~/Deno.lint.IfStatement#property_alternate)
-*   [consequent](./././~/Deno.lint.IfStatement#property_consequent)
-*   [parent](./././~/Deno.lint.IfStatement#property_parent)
-*   [range](./././~/Deno.lint.IfStatement#property_range)
-*   [test](./././~/Deno.lint.IfStatement#property_test)
-*   [type](./././~/Deno.lint.IfStatement#property_type)
+-   [alternate](./././~/Deno.lint.IfStatement#property_alternate)
+-   [consequent](./././~/Deno.lint.IfStatement#property_consequent)
+-   [parent](./././~/Deno.lint.IfStatement#property_parent)
+-   [range](./././~/Deno.lint.IfStatement#property_range)
+-   [test](./././~/Deno.lint.IfStatement#property_test)
+-   [type](./././~/Deno.lint.IfStatement#property_type)
 
 I
 
@@ -1721,11 +1722,11 @@ I
 
 No documentation available
 
-*   [key](./././~/Deno.lint.ImportAttribute#property_key)
-*   [parent](./././~/Deno.lint.ImportAttribute#property_parent)
-*   [range](./././~/Deno.lint.ImportAttribute#property_range)
-*   [type](./././~/Deno.lint.ImportAttribute#property_type)
-*   [value](./././~/Deno.lint.ImportAttribute#property_value)
+-   [key](./././~/Deno.lint.ImportAttribute#property_key)
+-   [parent](./././~/Deno.lint.ImportAttribute#property_parent)
+-   [range](./././~/Deno.lint.ImportAttribute#property_range)
+-   [type](./././~/Deno.lint.ImportAttribute#property_type)
+-   [value](./././~/Deno.lint.ImportAttribute#property_value)
 
 I
 
@@ -1733,13 +1734,13 @@ I
 
 An import declaration, examples:
 
-*   [attributes](./././~/Deno.lint.ImportDeclaration#property_attributes)
-*   [importKind](./././~/Deno.lint.ImportDeclaration#property_importkind)
-*   [parent](./././~/Deno.lint.ImportDeclaration#property_parent)
-*   [range](./././~/Deno.lint.ImportDeclaration#property_range)
-*   [source](./././~/Deno.lint.ImportDeclaration#property_source)
-*   [specifiers](./././~/Deno.lint.ImportDeclaration#property_specifiers)
-*   [type](./././~/Deno.lint.ImportDeclaration#property_type)
+-   [attributes](./././~/Deno.lint.ImportDeclaration#property_attributes)
+-   [importKind](./././~/Deno.lint.ImportDeclaration#property_importkind)
+-   [parent](./././~/Deno.lint.ImportDeclaration#property_parent)
+-   [range](./././~/Deno.lint.ImportDeclaration#property_range)
+-   [source](./././~/Deno.lint.ImportDeclaration#property_source)
+-   [specifiers](./././~/Deno.lint.ImportDeclaration#property_specifiers)
+-   [type](./././~/Deno.lint.ImportDeclaration#property_type)
 
 I
 
@@ -1747,10 +1748,10 @@ I
 
 No documentation available
 
-*   [local](./././~/Deno.lint.ImportDefaultSpecifier#property_local)
-*   [parent](./././~/Deno.lint.ImportDefaultSpecifier#property_parent)
-*   [range](./././~/Deno.lint.ImportDefaultSpecifier#property_range)
-*   [type](./././~/Deno.lint.ImportDefaultSpecifier#property_type)
+-   [local](./././~/Deno.lint.ImportDefaultSpecifier#property_local)
+-   [parent](./././~/Deno.lint.ImportDefaultSpecifier#property_parent)
+-   [range](./././~/Deno.lint.ImportDefaultSpecifier#property_range)
+-   [type](./././~/Deno.lint.ImportDefaultSpecifier#property_type)
 
 I
 
@@ -1758,11 +1759,11 @@ I
 
 Dynamically import a module.
 
-*   [options](./././~/Deno.lint.ImportExpression#property_options)
-*   [parent](./././~/Deno.lint.ImportExpression#property_parent)
-*   [range](./././~/Deno.lint.ImportExpression#property_range)
-*   [source](./././~/Deno.lint.ImportExpression#property_source)
-*   [type](./././~/Deno.lint.ImportExpression#property_type)
+-   [options](./././~/Deno.lint.ImportExpression#property_options)
+-   [parent](./././~/Deno.lint.ImportExpression#property_parent)
+-   [range](./././~/Deno.lint.ImportExpression#property_range)
+-   [source](./././~/Deno.lint.ImportExpression#property_source)
+-   [type](./././~/Deno.lint.ImportExpression#property_type)
 
 I
 
@@ -1770,10 +1771,10 @@ I
 
 No documentation available
 
-*   [local](./././~/Deno.lint.ImportNamespaceSpecifier#property_local)
-*   [parent](./././~/Deno.lint.ImportNamespaceSpecifier#property_parent)
-*   [range](./././~/Deno.lint.ImportNamespaceSpecifier#property_range)
-*   [type](./././~/Deno.lint.ImportNamespaceSpecifier#property_type)
+-   [local](./././~/Deno.lint.ImportNamespaceSpecifier#property_local)
+-   [parent](./././~/Deno.lint.ImportNamespaceSpecifier#property_parent)
+-   [range](./././~/Deno.lint.ImportNamespaceSpecifier#property_range)
+-   [type](./././~/Deno.lint.ImportNamespaceSpecifier#property_type)
 
 I
 
@@ -1781,12 +1782,12 @@ I
 
 No documentation available
 
-*   [importKind](./././~/Deno.lint.ImportSpecifier#property_importkind)
-*   [imported](./././~/Deno.lint.ImportSpecifier#property_imported)
-*   [local](./././~/Deno.lint.ImportSpecifier#property_local)
-*   [parent](./././~/Deno.lint.ImportSpecifier#property_parent)
-*   [range](./././~/Deno.lint.ImportSpecifier#property_range)
-*   [type](./././~/Deno.lint.ImportSpecifier#property_type)
+-   [importKind](./././~/Deno.lint.ImportSpecifier#property_importkind)
+-   [imported](./././~/Deno.lint.ImportSpecifier#property_imported)
+-   [local](./././~/Deno.lint.ImportSpecifier#property_local)
+-   [parent](./././~/Deno.lint.ImportSpecifier#property_parent)
+-   [range](./././~/Deno.lint.ImportSpecifier#property_range)
+-   [type](./././~/Deno.lint.ImportSpecifier#property_type)
 
 I
 
@@ -1794,11 +1795,11 @@ I
 
 A JSX attribute
 
-*   [name](./././~/Deno.lint.JSXAttribute#property_name)
-*   [parent](./././~/Deno.lint.JSXAttribute#property_parent)
-*   [range](./././~/Deno.lint.JSXAttribute#property_range)
-*   [type](./././~/Deno.lint.JSXAttribute#property_type)
-*   [value](./././~/Deno.lint.JSXAttribute#property_value)
+-   [name](./././~/Deno.lint.JSXAttribute#property_name)
+-   [parent](./././~/Deno.lint.JSXAttribute#property_parent)
+-   [range](./././~/Deno.lint.JSXAttribute#property_range)
+-   [type](./././~/Deno.lint.JSXAttribute#property_type)
+-   [value](./././~/Deno.lint.JSXAttribute#property_value)
 
 T
 
@@ -1812,10 +1813,10 @@ I
 
 The closing tag of a JSXElement. Only used when the element is not self-closing.
 
-*   [name](./././~/Deno.lint.JSXClosingElement#property_name)
-*   [parent](./././~/Deno.lint.JSXClosingElement#property_parent)
-*   [range](./././~/Deno.lint.JSXClosingElement#property_range)
-*   [type](./././~/Deno.lint.JSXClosingElement#property_type)
+-   [name](./././~/Deno.lint.JSXClosingElement#property_name)
+-   [parent](./././~/Deno.lint.JSXClosingElement#property_parent)
+-   [range](./././~/Deno.lint.JSXClosingElement#property_range)
+-   [type](./././~/Deno.lint.JSXClosingElement#property_type)
 
 I
 
@@ -1823,9 +1824,9 @@ I
 
 The closing tag of a JSXFragment.
 
-*   [parent](./././~/Deno.lint.JSXClosingFragment#property_parent)
-*   [range](./././~/Deno.lint.JSXClosingFragment#property_range)
-*   [type](./././~/Deno.lint.JSXClosingFragment#property_type)
+-   [parent](./././~/Deno.lint.JSXClosingFragment#property_parent)
+-   [range](./././~/Deno.lint.JSXClosingFragment#property_range)
+-   [type](./././~/Deno.lint.JSXClosingFragment#property_type)
 
 I
 
@@ -1833,12 +1834,12 @@ I
 
 A JSX element.
 
-*   [children](./././~/Deno.lint.JSXElement#property_children)
-*   [closingElement](./././~/Deno.lint.JSXElement#property_closingelement)
-*   [openingElement](./././~/Deno.lint.JSXElement#property_openingelement)
-*   [parent](./././~/Deno.lint.JSXElement#property_parent)
-*   [range](./././~/Deno.lint.JSXElement#property_range)
-*   [type](./././~/Deno.lint.JSXElement#property_type)
+-   [children](./././~/Deno.lint.JSXElement#property_children)
+-   [closingElement](./././~/Deno.lint.JSXElement#property_closingelement)
+-   [openingElement](./././~/Deno.lint.JSXElement#property_openingelement)
+-   [parent](./././~/Deno.lint.JSXElement#property_parent)
+-   [range](./././~/Deno.lint.JSXElement#property_range)
+-   [type](./././~/Deno.lint.JSXElement#property_type)
 
 I
 
@@ -1846,9 +1847,9 @@ I
 
 Empty JSX expression.
 
-*   [parent](./././~/Deno.lint.JSXEmptyExpression#property_parent)
-*   [range](./././~/Deno.lint.JSXEmptyExpression#property_range)
-*   [type](./././~/Deno.lint.JSXEmptyExpression#property_type)
+-   [parent](./././~/Deno.lint.JSXEmptyExpression#property_parent)
+-   [range](./././~/Deno.lint.JSXEmptyExpression#property_range)
+-   [type](./././~/Deno.lint.JSXEmptyExpression#property_type)
 
 I
 
@@ -1856,10 +1857,10 @@ I
 
 Inserts a normal JS expression into JSX.
 
-*   [expression](./././~/Deno.lint.JSXExpressionContainer#property_expression)
-*   [parent](./././~/Deno.lint.JSXExpressionContainer#property_parent)
-*   [range](./././~/Deno.lint.JSXExpressionContainer#property_range)
-*   [type](./././~/Deno.lint.JSXExpressionContainer#property_type)
+-   [expression](./././~/Deno.lint.JSXExpressionContainer#property_expression)
+-   [parent](./././~/Deno.lint.JSXExpressionContainer#property_parent)
+-   [range](./././~/Deno.lint.JSXExpressionContainer#property_range)
+-   [type](./././~/Deno.lint.JSXExpressionContainer#property_type)
 
 I
 
@@ -1867,12 +1868,12 @@ I
 
 Usually a passthrough node to pass multiple sibling elements as the JSX syntax requires one root element.
 
-*   [children](./././~/Deno.lint.JSXFragment#property_children)
-*   [closingFragment](./././~/Deno.lint.JSXFragment#property_closingfragment)
-*   [openingFragment](./././~/Deno.lint.JSXFragment#property_openingfragment)
-*   [parent](./././~/Deno.lint.JSXFragment#property_parent)
-*   [range](./././~/Deno.lint.JSXFragment#property_range)
-*   [type](./././~/Deno.lint.JSXFragment#property_type)
+-   [children](./././~/Deno.lint.JSXFragment#property_children)
+-   [closingFragment](./././~/Deno.lint.JSXFragment#property_closingfragment)
+-   [openingFragment](./././~/Deno.lint.JSXFragment#property_openingfragment)
+-   [parent](./././~/Deno.lint.JSXFragment#property_parent)
+-   [range](./././~/Deno.lint.JSXFragment#property_range)
+-   [type](./././~/Deno.lint.JSXFragment#property_type)
 
 I
 
@@ -1880,10 +1881,10 @@ I
 
 User named identifier inside JSX.
 
-*   [name](./././~/Deno.lint.JSXIdentifier#property_name)
-*   [parent](./././~/Deno.lint.JSXIdentifier#property_parent)
-*   [range](./././~/Deno.lint.JSXIdentifier#property_range)
-*   [type](./././~/Deno.lint.JSXIdentifier#property_type)
+-   [name](./././~/Deno.lint.JSXIdentifier#property_name)
+-   [parent](./././~/Deno.lint.JSXIdentifier#property_parent)
+-   [range](./././~/Deno.lint.JSXIdentifier#property_range)
+-   [type](./././~/Deno.lint.JSXIdentifier#property_type)
 
 I
 
@@ -1891,11 +1892,11 @@ I
 
 JSX member expression.
 
-*   [object](./././~/Deno.lint.JSXMemberExpression#property_object)
-*   [parent](./././~/Deno.lint.JSXMemberExpression#property_parent)
-*   [property](./././~/Deno.lint.JSXMemberExpression#property_property)
-*   [range](./././~/Deno.lint.JSXMemberExpression#property_range)
-*   [type](./././~/Deno.lint.JSXMemberExpression#property_type)
+-   [object](./././~/Deno.lint.JSXMemberExpression#property_object)
+-   [parent](./././~/Deno.lint.JSXMemberExpression#property_parent)
+-   [property](./././~/Deno.lint.JSXMemberExpression#property_property)
+-   [range](./././~/Deno.lint.JSXMemberExpression#property_range)
+-   [type](./././~/Deno.lint.JSXMemberExpression#property_type)
 
 I
 
@@ -1903,11 +1904,11 @@ I
 
 Namespaced name in JSX
 
-*   [name](./././~/Deno.lint.JSXNamespacedName#property_name)
-*   [namespace](./././~/Deno.lint.JSXNamespacedName#property_namespace)
-*   [parent](./././~/Deno.lint.JSXNamespacedName#property_parent)
-*   [range](./././~/Deno.lint.JSXNamespacedName#property_range)
-*   [type](./././~/Deno.lint.JSXNamespacedName#property_type)
+-   [name](./././~/Deno.lint.JSXNamespacedName#property_name)
+-   [namespace](./././~/Deno.lint.JSXNamespacedName#property_namespace)
+-   [parent](./././~/Deno.lint.JSXNamespacedName#property_parent)
+-   [range](./././~/Deno.lint.JSXNamespacedName#property_range)
+-   [type](./././~/Deno.lint.JSXNamespacedName#property_type)
 
 I
 
@@ -1915,13 +1916,13 @@ I
 
 The opening tag of a JSXElement
 
-*   [attributes](./././~/Deno.lint.JSXOpeningElement#property_attributes)
-*   [name](./././~/Deno.lint.JSXOpeningElement#property_name)
-*   [parent](./././~/Deno.lint.JSXOpeningElement#property_parent)
-*   [range](./././~/Deno.lint.JSXOpeningElement#property_range)
-*   [selfClosing](./././~/Deno.lint.JSXOpeningElement#property_selfclosing)
-*   [type](./././~/Deno.lint.JSXOpeningElement#property_type)
-*   [typeArguments](./././~/Deno.lint.JSXOpeningElement#property_typearguments)
+-   [attributes](./././~/Deno.lint.JSXOpeningElement#property_attributes)
+-   [name](./././~/Deno.lint.JSXOpeningElement#property_name)
+-   [parent](./././~/Deno.lint.JSXOpeningElement#property_parent)
+-   [range](./././~/Deno.lint.JSXOpeningElement#property_range)
+-   [selfClosing](./././~/Deno.lint.JSXOpeningElement#property_selfclosing)
+-   [type](./././~/Deno.lint.JSXOpeningElement#property_type)
+-   [typeArguments](./././~/Deno.lint.JSXOpeningElement#property_typearguments)
 
 I
 
@@ -1929,9 +1930,9 @@ I
 
 The opening tag of a JSXFragment.
 
-*   [parent](./././~/Deno.lint.JSXOpeningFragment#property_parent)
-*   [range](./././~/Deno.lint.JSXOpeningFragment#property_range)
-*   [type](./././~/Deno.lint.JSXOpeningFragment#property_type)
+-   [parent](./././~/Deno.lint.JSXOpeningFragment#property_parent)
+-   [range](./././~/Deno.lint.JSXOpeningFragment#property_range)
+-   [type](./././~/Deno.lint.JSXOpeningFragment#property_type)
 
 I
 
@@ -1939,10 +1940,10 @@ I
 
 Spreads an object as JSX attributes.
 
-*   [argument](./././~/Deno.lint.JSXSpreadAttribute#property_argument)
-*   [parent](./././~/Deno.lint.JSXSpreadAttribute#property_parent)
-*   [range](./././~/Deno.lint.JSXSpreadAttribute#property_range)
-*   [type](./././~/Deno.lint.JSXSpreadAttribute#property_type)
+-   [argument](./././~/Deno.lint.JSXSpreadAttribute#property_argument)
+-   [parent](./././~/Deno.lint.JSXSpreadAttribute#property_parent)
+-   [range](./././~/Deno.lint.JSXSpreadAttribute#property_range)
+-   [type](./././~/Deno.lint.JSXSpreadAttribute#property_type)
 
 I
 
@@ -1950,11 +1951,11 @@ I
 
 Plain text in JSX.
 
-*   [parent](./././~/Deno.lint.JSXText#property_parent)
-*   [range](./././~/Deno.lint.JSXText#property_range)
-*   [raw](./././~/Deno.lint.JSXText#property_raw)
-*   [type](./././~/Deno.lint.JSXText#property_type)
-*   [value](./././~/Deno.lint.JSXText#property_value)
+-   [parent](./././~/Deno.lint.JSXText#property_parent)
+-   [range](./././~/Deno.lint.JSXText#property_range)
+-   [raw](./././~/Deno.lint.JSXText#property_raw)
+-   [type](./././~/Deno.lint.JSXText#property_type)
+-   [value](./././~/Deno.lint.JSXText#property_value)
 
 I
 
@@ -1962,11 +1963,11 @@ I
 
 Custom control flow based on labels.
 
-*   [body](./././~/Deno.lint.LabeledStatement#property_body)
-*   [label](./././~/Deno.lint.LabeledStatement#property_label)
-*   [parent](./././~/Deno.lint.LabeledStatement#property_parent)
-*   [range](./././~/Deno.lint.LabeledStatement#property_range)
-*   [type](./././~/Deno.lint.LabeledStatement#property_type)
+-   [body](./././~/Deno.lint.LabeledStatement#property_body)
+-   [label](./././~/Deno.lint.LabeledStatement#property_label)
+-   [parent](./././~/Deno.lint.LabeledStatement#property_parent)
+-   [range](./././~/Deno.lint.LabeledStatement#property_range)
+-   [type](./././~/Deno.lint.LabeledStatement#property_type)
 
 I
 
@@ -1974,9 +1975,9 @@ I
 
 A single line comment
 
-*   [range](./././~/Deno.lint.LineComment#property_range)
-*   [type](./././~/Deno.lint.LineComment#property_type)
-*   [value](./././~/Deno.lint.LineComment#property_value)
+-   [range](./././~/Deno.lint.LineComment#property_range)
+-   [type](./././~/Deno.lint.LineComment#property_type)
+-   [value](./././~/Deno.lint.LineComment#property_value)
 
 T
 
@@ -1996,12 +1997,12 @@ I
 
 Chain expressions based on the operator specified
 
-*   [left](./././~/Deno.lint.LogicalExpression#property_left)
-*   [operator](./././~/Deno.lint.LogicalExpression#property_operator)
-*   [parent](./././~/Deno.lint.LogicalExpression#property_parent)
-*   [range](./././~/Deno.lint.LogicalExpression#property_range)
-*   [right](./././~/Deno.lint.LogicalExpression#property_right)
-*   [type](./././~/Deno.lint.LogicalExpression#property_type)
+-   [left](./././~/Deno.lint.LogicalExpression#property_left)
+-   [operator](./././~/Deno.lint.LogicalExpression#property_operator)
+-   [parent](./././~/Deno.lint.LogicalExpression#property_parent)
+-   [range](./././~/Deno.lint.LogicalExpression#property_range)
+-   [right](./././~/Deno.lint.LogicalExpression#property_right)
+-   [type](./././~/Deno.lint.LogicalExpression#property_type)
 
 I
 
@@ -2009,13 +2010,13 @@ I
 
 MemberExpression
 
-*   [computed](./././~/Deno.lint.MemberExpression#property_computed)
-*   [object](./././~/Deno.lint.MemberExpression#property_object)
-*   [optional](./././~/Deno.lint.MemberExpression#property_optional)
-*   [parent](./././~/Deno.lint.MemberExpression#property_parent)
-*   [property](./././~/Deno.lint.MemberExpression#property_property)
-*   [range](./././~/Deno.lint.MemberExpression#property_range)
-*   [type](./././~/Deno.lint.MemberExpression#property_type)
+-   [computed](./././~/Deno.lint.MemberExpression#property_computed)
+-   [object](./././~/Deno.lint.MemberExpression#property_object)
+-   [optional](./././~/Deno.lint.MemberExpression#property_optional)
+-   [parent](./././~/Deno.lint.MemberExpression#property_parent)
+-   [property](./././~/Deno.lint.MemberExpression#property_property)
+-   [range](./././~/Deno.lint.MemberExpression#property_range)
+-   [type](./././~/Deno.lint.MemberExpression#property_type)
 
 I
 
@@ -2023,11 +2024,11 @@ I
 
 Can either be `import.meta` or `new.target`.
 
-*   [meta](./././~/Deno.lint.MetaProperty#property_meta)
-*   [parent](./././~/Deno.lint.MetaProperty#property_parent)
-*   [property](./././~/Deno.lint.MetaProperty#property_property)
-*   [range](./././~/Deno.lint.MetaProperty#property_range)
-*   [type](./././~/Deno.lint.MetaProperty#property_type)
+-   [meta](./././~/Deno.lint.MetaProperty#property_meta)
+-   [parent](./././~/Deno.lint.MetaProperty#property_parent)
+-   [property](./././~/Deno.lint.MetaProperty#property_property)
+-   [range](./././~/Deno.lint.MetaProperty#property_range)
+-   [type](./././~/Deno.lint.MetaProperty#property_type)
 
 I
 
@@ -2035,20 +2036,20 @@ I
 
 No documentation available
 
-*   [accessibility](./././~/Deno.lint.MethodDefinition#property_accessibility)
-*   [computed](./././~/Deno.lint.MethodDefinition#property_computed)
-*   [declare](./././~/Deno.lint.MethodDefinition#property_declare)
-*   [decorators](./././~/Deno.lint.MethodDefinition#property_decorators)
-*   [key](./././~/Deno.lint.MethodDefinition#property_key)
-*   [kind](./././~/Deno.lint.MethodDefinition#property_kind)
-*   [optional](./././~/Deno.lint.MethodDefinition#property_optional)
-*   [override](./././~/Deno.lint.MethodDefinition#property_override)
-*   [parent](./././~/Deno.lint.MethodDefinition#property_parent)
-*   [range](./././~/Deno.lint.MethodDefinition#property_range)
-*   [readonly](./././~/Deno.lint.MethodDefinition#property_readonly)
-*   [static](./././~/Deno.lint.MethodDefinition#property_static)
-*   [type](./././~/Deno.lint.MethodDefinition#property_type)
-*   [value](./././~/Deno.lint.MethodDefinition#property_value)
+-   [accessibility](./././~/Deno.lint.MethodDefinition#property_accessibility)
+-   [computed](./././~/Deno.lint.MethodDefinition#property_computed)
+-   [declare](./././~/Deno.lint.MethodDefinition#property_declare)
+-   [decorators](./././~/Deno.lint.MethodDefinition#property_decorators)
+-   [key](./././~/Deno.lint.MethodDefinition#property_key)
+-   [kind](./././~/Deno.lint.MethodDefinition#property_kind)
+-   [optional](./././~/Deno.lint.MethodDefinition#property_optional)
+-   [override](./././~/Deno.lint.MethodDefinition#property_override)
+-   [parent](./././~/Deno.lint.MethodDefinition#property_parent)
+-   [range](./././~/Deno.lint.MethodDefinition#property_range)
+-   [readonly](./././~/Deno.lint.MethodDefinition#property_readonly)
+-   [static](./././~/Deno.lint.MethodDefinition#property_static)
+-   [type](./././~/Deno.lint.MethodDefinition#property_type)
+-   [value](./././~/Deno.lint.MethodDefinition#property_value)
 
 I
 
@@ -2056,12 +2057,12 @@ I
 
 Create a new instance of a class.
 
-*   [arguments](./././~/Deno.lint.NewExpression#property_arguments)
-*   [callee](./././~/Deno.lint.NewExpression#property_callee)
-*   [parent](./././~/Deno.lint.NewExpression#property_parent)
-*   [range](./././~/Deno.lint.NewExpression#property_range)
-*   [type](./././~/Deno.lint.NewExpression#property_type)
-*   [typeArguments](./././~/Deno.lint.NewExpression#property_typearguments)
+-   [arguments](./././~/Deno.lint.NewExpression#property_arguments)
+-   [callee](./././~/Deno.lint.NewExpression#property_callee)
+-   [parent](./././~/Deno.lint.NewExpression#property_parent)
+-   [range](./././~/Deno.lint.NewExpression#property_range)
+-   [type](./././~/Deno.lint.NewExpression#property_type)
+-   [typeArguments](./././~/Deno.lint.NewExpression#property_typearguments)
 
 T
 
@@ -2075,11 +2076,11 @@ I
 
 The `null` literal
 
-*   [parent](./././~/Deno.lint.NullLiteral#property_parent)
-*   [range](./././~/Deno.lint.NullLiteral#property_range)
-*   [raw](./././~/Deno.lint.NullLiteral#property_raw)
-*   [type](./././~/Deno.lint.NullLiteral#property_type)
-*   [value](./././~/Deno.lint.NullLiteral#property_value)
+-   [parent](./././~/Deno.lint.NullLiteral#property_parent)
+-   [range](./././~/Deno.lint.NullLiteral#property_range)
+-   [raw](./././~/Deno.lint.NullLiteral#property_raw)
+-   [type](./././~/Deno.lint.NullLiteral#property_type)
+-   [value](./././~/Deno.lint.NullLiteral#property_value)
 
 I
 
@@ -2087,11 +2088,11 @@ I
 
 A number literal
 
-*   [parent](./././~/Deno.lint.NumberLiteral#property_parent)
-*   [range](./././~/Deno.lint.NumberLiteral#property_range)
-*   [raw](./././~/Deno.lint.NumberLiteral#property_raw)
-*   [type](./././~/Deno.lint.NumberLiteral#property_type)
-*   [value](./././~/Deno.lint.NumberLiteral#property_value)
+-   [parent](./././~/Deno.lint.NumberLiteral#property_parent)
+-   [range](./././~/Deno.lint.NumberLiteral#property_range)
+-   [raw](./././~/Deno.lint.NumberLiteral#property_raw)
+-   [type](./././~/Deno.lint.NumberLiteral#property_type)
+-   [value](./././~/Deno.lint.NumberLiteral#property_value)
 
 I
 
@@ -2099,10 +2100,10 @@ I
 
 An object literal.
 
-*   [parent](./././~/Deno.lint.ObjectExpression#property_parent)
-*   [properties](./././~/Deno.lint.ObjectExpression#property_properties)
-*   [range](./././~/Deno.lint.ObjectExpression#property_range)
-*   [type](./././~/Deno.lint.ObjectExpression#property_type)
+-   [parent](./././~/Deno.lint.ObjectExpression#property_parent)
+-   [properties](./././~/Deno.lint.ObjectExpression#property_properties)
+-   [range](./././~/Deno.lint.ObjectExpression#property_range)
+-   [type](./././~/Deno.lint.ObjectExpression#property_type)
 
 I
 
@@ -2110,12 +2111,12 @@ I
 
 Destructure an object.
 
-*   [optional](./././~/Deno.lint.ObjectPattern#property_optional)
-*   [parent](./././~/Deno.lint.ObjectPattern#property_parent)
-*   [properties](./././~/Deno.lint.ObjectPattern#property_properties)
-*   [range](./././~/Deno.lint.ObjectPattern#property_range)
-*   [type](./././~/Deno.lint.ObjectPattern#property_type)
-*   [typeAnnotation](./././~/Deno.lint.ObjectPattern#property_typeannotation)
+-   [optional](./././~/Deno.lint.ObjectPattern#property_optional)
+-   [parent](./././~/Deno.lint.ObjectPattern#property_parent)
+-   [properties](./././~/Deno.lint.ObjectPattern#property_properties)
+-   [range](./././~/Deno.lint.ObjectPattern#property_range)
+-   [type](./././~/Deno.lint.ObjectPattern#property_type)
+-   [typeAnnotation](./././~/Deno.lint.ObjectPattern#property_typeannotation)
 
 T
 
@@ -2129,8 +2130,8 @@ I
 
 In your plugins file do something like
 
-*   [name](./././~/Deno.lint.Plugin#property_name)
-*   [rules](./././~/Deno.lint.Plugin#property_rules)
+-   [name](./././~/Deno.lint.Plugin#property_name)
+-   [rules](./././~/Deno.lint.Plugin#property_rules)
 
 I
 
@@ -2138,10 +2139,10 @@ I
 
 Private members inside of classes, must start with `#`.
 
-*   [name](./././~/Deno.lint.PrivateIdentifier#property_name)
-*   [parent](./././~/Deno.lint.PrivateIdentifier#property_parent)
-*   [range](./././~/Deno.lint.PrivateIdentifier#property_range)
-*   [type](./././~/Deno.lint.PrivateIdentifier#property_type)
+-   [name](./././~/Deno.lint.PrivateIdentifier#property_name)
+-   [parent](./././~/Deno.lint.PrivateIdentifier#property_parent)
+-   [range](./././~/Deno.lint.PrivateIdentifier#property_range)
+-   [type](./././~/Deno.lint.PrivateIdentifier#property_type)
 
 I
 
@@ -2149,11 +2150,11 @@ I
 
 No documentation available
 
-*   [body](./././~/Deno.lint.Program#property_body)
-*   [comments](./././~/Deno.lint.Program#property_comments)
-*   [range](./././~/Deno.lint.Program#property_range)
-*   [sourceType](./././~/Deno.lint.Program#property_sourcetype)
-*   [type](./././~/Deno.lint.Program#property_type)
+-   [body](./././~/Deno.lint.Program#property_body)
+-   [comments](./././~/Deno.lint.Program#property_comments)
+-   [range](./././~/Deno.lint.Program#property_range)
+-   [sourceType](./././~/Deno.lint.Program#property_sourcetype)
+-   [type](./././~/Deno.lint.Program#property_type)
 
 I
 
@@ -2161,15 +2162,15 @@ I
 
 No documentation available
 
-*   [computed](./././~/Deno.lint.Property#property_computed)
-*   [key](./././~/Deno.lint.Property#property_key)
-*   [kind](./././~/Deno.lint.Property#property_kind)
-*   [method](./././~/Deno.lint.Property#property_method)
-*   [parent](./././~/Deno.lint.Property#property_parent)
-*   [range](./././~/Deno.lint.Property#property_range)
-*   [shorthand](./././~/Deno.lint.Property#property_shorthand)
-*   [type](./././~/Deno.lint.Property#property_type)
-*   [value](./././~/Deno.lint.Property#property_value)
+-   [computed](./././~/Deno.lint.Property#property_computed)
+-   [key](./././~/Deno.lint.Property#property_key)
+-   [kind](./././~/Deno.lint.Property#property_kind)
+-   [method](./././~/Deno.lint.Property#property_method)
+-   [parent](./././~/Deno.lint.Property#property_parent)
+-   [range](./././~/Deno.lint.Property#property_range)
+-   [shorthand](./././~/Deno.lint.Property#property_shorthand)
+-   [type](./././~/Deno.lint.Property#property_type)
+-   [value](./././~/Deno.lint.Property#property_value)
 
 I
 
@@ -2177,20 +2178,20 @@ I
 
 No documentation available
 
-*   [accessibility](./././~/Deno.lint.PropertyDefinition#property_accessibility)
-*   [computed](./././~/Deno.lint.PropertyDefinition#property_computed)
-*   [declare](./././~/Deno.lint.PropertyDefinition#property_declare)
-*   [decorators](./././~/Deno.lint.PropertyDefinition#property_decorators)
-*   [key](./././~/Deno.lint.PropertyDefinition#property_key)
-*   [optional](./././~/Deno.lint.PropertyDefinition#property_optional)
-*   [override](./././~/Deno.lint.PropertyDefinition#property_override)
-*   [parent](./././~/Deno.lint.PropertyDefinition#property_parent)
-*   [range](./././~/Deno.lint.PropertyDefinition#property_range)
-*   [readonly](./././~/Deno.lint.PropertyDefinition#property_readonly)
-*   [static](./././~/Deno.lint.PropertyDefinition#property_static)
-*   [type](./././~/Deno.lint.PropertyDefinition#property_type)
-*   [typeAnnotation](./././~/Deno.lint.PropertyDefinition#property_typeannotation)
-*   [value](./././~/Deno.lint.PropertyDefinition#property_value)
+-   [accessibility](./././~/Deno.lint.PropertyDefinition#property_accessibility)
+-   [computed](./././~/Deno.lint.PropertyDefinition#property_computed)
+-   [declare](./././~/Deno.lint.PropertyDefinition#property_declare)
+-   [decorators](./././~/Deno.lint.PropertyDefinition#property_decorators)
+-   [key](./././~/Deno.lint.PropertyDefinition#property_key)
+-   [optional](./././~/Deno.lint.PropertyDefinition#property_optional)
+-   [override](./././~/Deno.lint.PropertyDefinition#property_override)
+-   [parent](./././~/Deno.lint.PropertyDefinition#property_parent)
+-   [range](./././~/Deno.lint.PropertyDefinition#property_range)
+-   [readonly](./././~/Deno.lint.PropertyDefinition#property_readonly)
+-   [static](./././~/Deno.lint.PropertyDefinition#property_static)
+-   [type](./././~/Deno.lint.PropertyDefinition#property_type)
+-   [typeAnnotation](./././~/Deno.lint.PropertyDefinition#property_typeannotation)
+-   [value](./././~/Deno.lint.PropertyDefinition#property_value)
 
 T
 
@@ -2204,12 +2205,12 @@ I
 
 A regex literal:
 
-*   [parent](./././~/Deno.lint.RegExpLiteral#property_parent)
-*   [range](./././~/Deno.lint.RegExpLiteral#property_range)
-*   [raw](./././~/Deno.lint.RegExpLiteral#property_raw)
-*   [regex](./././~/Deno.lint.RegExpLiteral#property_regex)
-*   [type](./././~/Deno.lint.RegExpLiteral#property_type)
-*   [value](./././~/Deno.lint.RegExpLiteral#property_value)
+-   [parent](./././~/Deno.lint.RegExpLiteral#property_parent)
+-   [range](./././~/Deno.lint.RegExpLiteral#property_range)
+-   [raw](./././~/Deno.lint.RegExpLiteral#property_raw)
+-   [regex](./././~/Deno.lint.RegExpLiteral#property_regex)
+-   [type](./././~/Deno.lint.RegExpLiteral#property_type)
+-   [value](./././~/Deno.lint.RegExpLiteral#property_value)
 
 I
 
@@ -2217,11 +2218,11 @@ I
 
 No documentation available
 
-*   [fix](./././~/Deno.lint.ReportData#method_fix_0)
-*   [hint](./././~/Deno.lint.ReportData#property_hint)
-*   [message](./././~/Deno.lint.ReportData#property_message)
-*   [node](./././~/Deno.lint.ReportData#property_node)
-*   [range](./././~/Deno.lint.ReportData#property_range)
+-   [fix](./././~/Deno.lint.ReportData#method_fix_0)
+-   [hint](./././~/Deno.lint.ReportData#property_hint)
+-   [message](./././~/Deno.lint.ReportData#property_message)
+-   [node](./././~/Deno.lint.ReportData#property_node)
+-   [range](./././~/Deno.lint.ReportData#property_range)
 
 I
 
@@ -2229,11 +2230,11 @@ I
 
 The rest of function parameters.
 
-*   [argument](./././~/Deno.lint.RestElement#property_argument)
-*   [parent](./././~/Deno.lint.RestElement#property_parent)
-*   [range](./././~/Deno.lint.RestElement#property_range)
-*   [type](./././~/Deno.lint.RestElement#property_type)
-*   [typeAnnotation](./././~/Deno.lint.RestElement#property_typeannotation)
+-   [argument](./././~/Deno.lint.RestElement#property_argument)
+-   [parent](./././~/Deno.lint.RestElement#property_parent)
+-   [range](./././~/Deno.lint.RestElement#property_range)
+-   [type](./././~/Deno.lint.RestElement#property_type)
+-   [typeAnnotation](./././~/Deno.lint.RestElement#property_typeannotation)
 
 I
 
@@ -2241,10 +2242,10 @@ I
 
 Returns a value from a function.
 
-*   [argument](./././~/Deno.lint.ReturnStatement#property_argument)
-*   [parent](./././~/Deno.lint.ReturnStatement#property_parent)
-*   [range](./././~/Deno.lint.ReturnStatement#property_range)
-*   [type](./././~/Deno.lint.ReturnStatement#property_type)
+-   [argument](./././~/Deno.lint.ReturnStatement#property_argument)
+-   [parent](./././~/Deno.lint.ReturnStatement#property_parent)
+-   [range](./././~/Deno.lint.ReturnStatement#property_range)
+-   [type](./././~/Deno.lint.ReturnStatement#property_type)
 
 I
 
@@ -2252,8 +2253,8 @@ I
 
 No documentation available
 
-*   [create](./././~/Deno.lint.Rule#method_create_0)
-*   [destroy](./././~/Deno.lint.Rule#method_destroy_0)
+-   [create](./././~/Deno.lint.Rule#method_create_0)
+-   [destroy](./././~/Deno.lint.Rule#method_destroy_0)
 
 I
 
@@ -2261,12 +2262,12 @@ I
 
 No documentation available
 
-*   [filename](./././~/Deno.lint.RuleContext#property_filename)
-*   [getFilename](./././~/Deno.lint.RuleContext#method_getfilename_0)
-*   [getSourceCode](./././~/Deno.lint.RuleContext#method_getsourcecode_0)
-*   [id](./././~/Deno.lint.RuleContext#property_id)
-*   [report](./././~/Deno.lint.RuleContext#method_report_0)
-*   [sourceCode](./././~/Deno.lint.RuleContext#property_sourcecode)
+-   [filename](./././~/Deno.lint.RuleContext#property_filename)
+-   [getFilename](./././~/Deno.lint.RuleContext#method_getfilename_0)
+-   [getSourceCode](./././~/Deno.lint.RuleContext#method_getsourcecode_0)
+-   [id](./././~/Deno.lint.RuleContext#property_id)
+-   [report](./././~/Deno.lint.RuleContext#method_report_0)
+-   [sourceCode](./././~/Deno.lint.RuleContext#property_sourcecode)
 
 f
 
@@ -2280,10 +2281,10 @@ I
 
 Execute multiple expressions in sequence.
 
-*   [expressions](./././~/Deno.lint.SequenceExpression#property_expressions)
-*   [parent](./././~/Deno.lint.SequenceExpression#property_parent)
-*   [range](./././~/Deno.lint.SequenceExpression#property_range)
-*   [type](./././~/Deno.lint.SequenceExpression#property_type)
+-   [expressions](./././~/Deno.lint.SequenceExpression#property_expressions)
+-   [parent](./././~/Deno.lint.SequenceExpression#property_parent)
+-   [range](./././~/Deno.lint.SequenceExpression#property_range)
+-   [type](./././~/Deno.lint.SequenceExpression#property_type)
 
 I
 
@@ -2291,14 +2292,14 @@ I
 
 No documentation available
 
-*   [ast](./././~/Deno.lint.SourceCode#property_ast)
-*   [getAllComments](./././~/Deno.lint.SourceCode#method_getallcomments_0)
-*   [getAncestors](./././~/Deno.lint.SourceCode#method_getancestors_0)
-*   [getCommentsAfter](./././~/Deno.lint.SourceCode#method_getcommentsafter_0)
-*   [getCommentsBefore](./././~/Deno.lint.SourceCode#method_getcommentsbefore_0)
-*   [getCommentsInside](./././~/Deno.lint.SourceCode#method_getcommentsinside_0)
-*   [getText](./././~/Deno.lint.SourceCode#method_gettext_0)
-*   [text](./././~/Deno.lint.SourceCode#property_text)
+-   [ast](./././~/Deno.lint.SourceCode#property_ast)
+-   [getAllComments](./././~/Deno.lint.SourceCode#method_getallcomments_0)
+-   [getAncestors](./././~/Deno.lint.SourceCode#method_getancestors_0)
+-   [getCommentsAfter](./././~/Deno.lint.SourceCode#method_getcommentsafter_0)
+-   [getCommentsBefore](./././~/Deno.lint.SourceCode#method_getcommentsbefore_0)
+-   [getCommentsInside](./././~/Deno.lint.SourceCode#method_getcommentsinside_0)
+-   [getText](./././~/Deno.lint.SourceCode#method_gettext_0)
+-   [text](./././~/Deno.lint.SourceCode#property_text)
 
 I
 
@@ -2306,10 +2307,10 @@ I
 
 No documentation available
 
-*   [argument](./././~/Deno.lint.SpreadElement#property_argument)
-*   [parent](./././~/Deno.lint.SpreadElement#property_parent)
-*   [range](./././~/Deno.lint.SpreadElement#property_range)
-*   [type](./././~/Deno.lint.SpreadElement#property_type)
+-   [argument](./././~/Deno.lint.SpreadElement#property_argument)
+-   [parent](./././~/Deno.lint.SpreadElement#property_parent)
+-   [range](./././~/Deno.lint.SpreadElement#property_range)
+-   [type](./././~/Deno.lint.SpreadElement#property_type)
 
 T
 
@@ -2323,10 +2324,10 @@ I
 
 Static class initializiation block.
 
-*   [body](./././~/Deno.lint.StaticBlock#property_body)
-*   [parent](./././~/Deno.lint.StaticBlock#property_parent)
-*   [range](./././~/Deno.lint.StaticBlock#property_range)
-*   [type](./././~/Deno.lint.StaticBlock#property_type)
+-   [body](./././~/Deno.lint.StaticBlock#property_body)
+-   [parent](./././~/Deno.lint.StaticBlock#property_parent)
+-   [range](./././~/Deno.lint.StaticBlock#property_range)
+-   [type](./././~/Deno.lint.StaticBlock#property_type)
 
 I
 
@@ -2334,11 +2335,11 @@ I
 
 A string literal
 
-*   [parent](./././~/Deno.lint.StringLiteral#property_parent)
-*   [range](./././~/Deno.lint.StringLiteral#property_range)
-*   [raw](./././~/Deno.lint.StringLiteral#property_raw)
-*   [type](./././~/Deno.lint.StringLiteral#property_type)
-*   [value](./././~/Deno.lint.StringLiteral#property_value)
+-   [parent](./././~/Deno.lint.StringLiteral#property_parent)
+-   [range](./././~/Deno.lint.StringLiteral#property_range)
+-   [raw](./././~/Deno.lint.StringLiteral#property_raw)
+-   [type](./././~/Deno.lint.StringLiteral#property_type)
+-   [value](./././~/Deno.lint.StringLiteral#property_value)
 
 I
 
@@ -2346,9 +2347,9 @@ I
 
 The `super` keyword used in classes.
 
-*   [parent](./././~/Deno.lint.Super#property_parent)
-*   [range](./././~/Deno.lint.Super#property_range)
-*   [type](./././~/Deno.lint.Super#property_type)
+-   [parent](./././~/Deno.lint.Super#property_parent)
+-   [range](./././~/Deno.lint.Super#property_range)
+-   [type](./././~/Deno.lint.Super#property_type)
 
 I
 
@@ -2356,11 +2357,11 @@ I
 
 A single case of a SwitchStatement.
 
-*   [consequent](./././~/Deno.lint.SwitchCase#property_consequent)
-*   [parent](./././~/Deno.lint.SwitchCase#property_parent)
-*   [range](./././~/Deno.lint.SwitchCase#property_range)
-*   [test](./././~/Deno.lint.SwitchCase#property_test)
-*   [type](./././~/Deno.lint.SwitchCase#property_type)
+-   [consequent](./././~/Deno.lint.SwitchCase#property_consequent)
+-   [parent](./././~/Deno.lint.SwitchCase#property_parent)
+-   [range](./././~/Deno.lint.SwitchCase#property_range)
+-   [test](./././~/Deno.lint.SwitchCase#property_test)
+-   [type](./././~/Deno.lint.SwitchCase#property_type)
 
 I
 
@@ -2368,11 +2369,11 @@ I
 
 Match an expression against a series of cases.
 
-*   [cases](./././~/Deno.lint.SwitchStatement#property_cases)
-*   [discriminant](./././~/Deno.lint.SwitchStatement#property_discriminant)
-*   [parent](./././~/Deno.lint.SwitchStatement#property_parent)
-*   [range](./././~/Deno.lint.SwitchStatement#property_range)
-*   [type](./././~/Deno.lint.SwitchStatement#property_type)
+-   [cases](./././~/Deno.lint.SwitchStatement#property_cases)
+-   [discriminant](./././~/Deno.lint.SwitchStatement#property_discriminant)
+-   [parent](./././~/Deno.lint.SwitchStatement#property_parent)
+-   [range](./././~/Deno.lint.SwitchStatement#property_range)
+-   [type](./././~/Deno.lint.SwitchStatement#property_type)
 
 I
 
@@ -2380,12 +2381,12 @@ I
 
 Tagged template expression.
 
-*   [parent](./././~/Deno.lint.TaggedTemplateExpression#property_parent)
-*   [quasi](./././~/Deno.lint.TaggedTemplateExpression#property_quasi)
-*   [range](./././~/Deno.lint.TaggedTemplateExpression#property_range)
-*   [tag](./././~/Deno.lint.TaggedTemplateExpression#property_tag)
-*   [type](./././~/Deno.lint.TaggedTemplateExpression#property_type)
-*   [typeArguments](./././~/Deno.lint.TaggedTemplateExpression#property_typearguments)
+-   [parent](./././~/Deno.lint.TaggedTemplateExpression#property_parent)
+-   [quasi](./././~/Deno.lint.TaggedTemplateExpression#property_quasi)
+-   [range](./././~/Deno.lint.TaggedTemplateExpression#property_range)
+-   [tag](./././~/Deno.lint.TaggedTemplateExpression#property_tag)
+-   [type](./././~/Deno.lint.TaggedTemplateExpression#property_type)
+-   [typeArguments](./././~/Deno.lint.TaggedTemplateExpression#property_typearguments)
 
 I
 
@@ -2393,12 +2394,12 @@ I
 
 The static portion of a template literal.
 
-*   [cooked](./././~/Deno.lint.TemplateElement#property_cooked)
-*   [parent](./././~/Deno.lint.TemplateElement#property_parent)
-*   [range](./././~/Deno.lint.TemplateElement#property_range)
-*   [raw](./././~/Deno.lint.TemplateElement#property_raw)
-*   [tail](./././~/Deno.lint.TemplateElement#property_tail)
-*   [type](./././~/Deno.lint.TemplateElement#property_type)
+-   [cooked](./././~/Deno.lint.TemplateElement#property_cooked)
+-   [parent](./././~/Deno.lint.TemplateElement#property_parent)
+-   [range](./././~/Deno.lint.TemplateElement#property_range)
+-   [raw](./././~/Deno.lint.TemplateElement#property_raw)
+-   [tail](./././~/Deno.lint.TemplateElement#property_tail)
+-   [type](./././~/Deno.lint.TemplateElement#property_type)
 
 I
 
@@ -2406,11 +2407,11 @@ I
 
 A template literal string.
 
-*   [expressions](./././~/Deno.lint.TemplateLiteral#property_expressions)
-*   [parent](./././~/Deno.lint.TemplateLiteral#property_parent)
-*   [quasis](./././~/Deno.lint.TemplateLiteral#property_quasis)
-*   [range](./././~/Deno.lint.TemplateLiteral#property_range)
-*   [type](./././~/Deno.lint.TemplateLiteral#property_type)
+-   [expressions](./././~/Deno.lint.TemplateLiteral#property_expressions)
+-   [parent](./././~/Deno.lint.TemplateLiteral#property_parent)
+-   [quasis](./././~/Deno.lint.TemplateLiteral#property_quasis)
+-   [range](./././~/Deno.lint.TemplateLiteral#property_range)
+-   [type](./././~/Deno.lint.TemplateLiteral#property_type)
 
 I
 
@@ -2418,9 +2419,9 @@ I
 
 The `this` keyword used in classes.
 
-*   [parent](./././~/Deno.lint.ThisExpression#property_parent)
-*   [range](./././~/Deno.lint.ThisExpression#property_range)
-*   [type](./././~/Deno.lint.ThisExpression#property_type)
+-   [parent](./././~/Deno.lint.ThisExpression#property_parent)
+-   [range](./././~/Deno.lint.ThisExpression#property_range)
+-   [type](./././~/Deno.lint.ThisExpression#property_type)
 
 I
 
@@ -2428,10 +2429,10 @@ I
 
 Throw a user defined exception. Stops execution of the current function.
 
-*   [argument](./././~/Deno.lint.ThrowStatement#property_argument)
-*   [parent](./././~/Deno.lint.ThrowStatement#property_parent)
-*   [range](./././~/Deno.lint.ThrowStatement#property_range)
-*   [type](./././~/Deno.lint.ThrowStatement#property_type)
+-   [argument](./././~/Deno.lint.ThrowStatement#property_argument)
+-   [parent](./././~/Deno.lint.ThrowStatement#property_parent)
+-   [range](./././~/Deno.lint.ThrowStatement#property_range)
+-   [type](./././~/Deno.lint.ThrowStatement#property_type)
 
 I
 
@@ -2439,12 +2440,12 @@ I
 
 Try/catch statement
 
-*   [block](./././~/Deno.lint.TryStatement#property_block)
-*   [finalizer](./././~/Deno.lint.TryStatement#property_finalizer)
-*   [handler](./././~/Deno.lint.TryStatement#property_handler)
-*   [parent](./././~/Deno.lint.TryStatement#property_parent)
-*   [range](./././~/Deno.lint.TryStatement#property_range)
-*   [type](./././~/Deno.lint.TryStatement#property_type)
+-   [block](./././~/Deno.lint.TryStatement#property_block)
+-   [finalizer](./././~/Deno.lint.TryStatement#property_finalizer)
+-   [handler](./././~/Deno.lint.TryStatement#property_handler)
+-   [parent](./././~/Deno.lint.TryStatement#property_parent)
+-   [range](./././~/Deno.lint.TryStatement#property_range)
+-   [type](./././~/Deno.lint.TryStatement#property_type)
 
 I
 
@@ -2452,17 +2453,17 @@ I
 
 No documentation available
 
-*   [accessibility](./././~/Deno.lint.TSAbstractMethodDefinition#property_accessibility)
-*   [computed](./././~/Deno.lint.TSAbstractMethodDefinition#property_computed)
-*   [key](./././~/Deno.lint.TSAbstractMethodDefinition#property_key)
-*   [kind](./././~/Deno.lint.TSAbstractMethodDefinition#property_kind)
-*   [optional](./././~/Deno.lint.TSAbstractMethodDefinition#property_optional)
-*   [override](./././~/Deno.lint.TSAbstractMethodDefinition#property_override)
-*   [parent](./././~/Deno.lint.TSAbstractMethodDefinition#property_parent)
-*   [range](./././~/Deno.lint.TSAbstractMethodDefinition#property_range)
-*   [static](./././~/Deno.lint.TSAbstractMethodDefinition#property_static)
-*   [type](./././~/Deno.lint.TSAbstractMethodDefinition#property_type)
-*   [value](./././~/Deno.lint.TSAbstractMethodDefinition#property_value)
+-   [accessibility](./././~/Deno.lint.TSAbstractMethodDefinition#property_accessibility)
+-   [computed](./././~/Deno.lint.TSAbstractMethodDefinition#property_computed)
+-   [key](./././~/Deno.lint.TSAbstractMethodDefinition#property_key)
+-   [kind](./././~/Deno.lint.TSAbstractMethodDefinition#property_kind)
+-   [optional](./././~/Deno.lint.TSAbstractMethodDefinition#property_optional)
+-   [override](./././~/Deno.lint.TSAbstractMethodDefinition#property_override)
+-   [parent](./././~/Deno.lint.TSAbstractMethodDefinition#property_parent)
+-   [range](./././~/Deno.lint.TSAbstractMethodDefinition#property_range)
+-   [static](./././~/Deno.lint.TSAbstractMethodDefinition#property_static)
+-   [type](./././~/Deno.lint.TSAbstractMethodDefinition#property_type)
+-   [value](./././~/Deno.lint.TSAbstractMethodDefinition#property_value)
 
 I
 
@@ -2470,21 +2471,21 @@ I
 
 No documentation available
 
-*   [accessibility](./././~/Deno.lint.TSAbstractPropertyDefinition#property_accessibility)
-*   [computed](./././~/Deno.lint.TSAbstractPropertyDefinition#property_computed)
-*   [declare](./././~/Deno.lint.TSAbstractPropertyDefinition#property_declare)
-*   [decorators](./././~/Deno.lint.TSAbstractPropertyDefinition#property_decorators)
-*   [definite](./././~/Deno.lint.TSAbstractPropertyDefinition#property_definite)
-*   [key](./././~/Deno.lint.TSAbstractPropertyDefinition#property_key)
-*   [optional](./././~/Deno.lint.TSAbstractPropertyDefinition#property_optional)
-*   [override](./././~/Deno.lint.TSAbstractPropertyDefinition#property_override)
-*   [parent](./././~/Deno.lint.TSAbstractPropertyDefinition#property_parent)
-*   [range](./././~/Deno.lint.TSAbstractPropertyDefinition#property_range)
-*   [readonly](./././~/Deno.lint.TSAbstractPropertyDefinition#property_readonly)
-*   [static](./././~/Deno.lint.TSAbstractPropertyDefinition#property_static)
-*   [type](./././~/Deno.lint.TSAbstractPropertyDefinition#property_type)
-*   [typeAnnotation](./././~/Deno.lint.TSAbstractPropertyDefinition#property_typeannotation)
-*   [value](./././~/Deno.lint.TSAbstractPropertyDefinition#property_value)
+-   [accessibility](./././~/Deno.lint.TSAbstractPropertyDefinition#property_accessibility)
+-   [computed](./././~/Deno.lint.TSAbstractPropertyDefinition#property_computed)
+-   [declare](./././~/Deno.lint.TSAbstractPropertyDefinition#property_declare)
+-   [decorators](./././~/Deno.lint.TSAbstractPropertyDefinition#property_decorators)
+-   [definite](./././~/Deno.lint.TSAbstractPropertyDefinition#property_definite)
+-   [key](./././~/Deno.lint.TSAbstractPropertyDefinition#property_key)
+-   [optional](./././~/Deno.lint.TSAbstractPropertyDefinition#property_optional)
+-   [override](./././~/Deno.lint.TSAbstractPropertyDefinition#property_override)
+-   [parent](./././~/Deno.lint.TSAbstractPropertyDefinition#property_parent)
+-   [range](./././~/Deno.lint.TSAbstractPropertyDefinition#property_range)
+-   [readonly](./././~/Deno.lint.TSAbstractPropertyDefinition#property_readonly)
+-   [static](./././~/Deno.lint.TSAbstractPropertyDefinition#property_static)
+-   [type](./././~/Deno.lint.TSAbstractPropertyDefinition#property_type)
+-   [typeAnnotation](./././~/Deno.lint.TSAbstractPropertyDefinition#property_typeannotation)
+-   [value](./././~/Deno.lint.TSAbstractPropertyDefinition#property_value)
 
 I
 
@@ -2492,9 +2493,9 @@ I
 
 No documentation available
 
-*   [parent](./././~/Deno.lint.TSAnyKeyword#property_parent)
-*   [range](./././~/Deno.lint.TSAnyKeyword#property_range)
-*   [type](./././~/Deno.lint.TSAnyKeyword#property_type)
+-   [parent](./././~/Deno.lint.TSAnyKeyword#property_parent)
+-   [range](./././~/Deno.lint.TSAnyKeyword#property_range)
+-   [type](./././~/Deno.lint.TSAnyKeyword#property_type)
 
 I
 
@@ -2502,10 +2503,10 @@ I
 
 No documentation available
 
-*   [elementType](./././~/Deno.lint.TSArrayType#property_elementtype)
-*   [parent](./././~/Deno.lint.TSArrayType#property_parent)
-*   [range](./././~/Deno.lint.TSArrayType#property_range)
-*   [type](./././~/Deno.lint.TSArrayType#property_type)
+-   [elementType](./././~/Deno.lint.TSArrayType#property_elementtype)
+-   [parent](./././~/Deno.lint.TSArrayType#property_parent)
+-   [range](./././~/Deno.lint.TSArrayType#property_range)
+-   [type](./././~/Deno.lint.TSArrayType#property_type)
 
 I
 
@@ -2513,11 +2514,11 @@ I
 
 No documentation available
 
-*   [expression](./././~/Deno.lint.TSAsExpression#property_expression)
-*   [parent](./././~/Deno.lint.TSAsExpression#property_parent)
-*   [range](./././~/Deno.lint.TSAsExpression#property_range)
-*   [type](./././~/Deno.lint.TSAsExpression#property_type)
-*   [typeAnnotation](./././~/Deno.lint.TSAsExpression#property_typeannotation)
+-   [expression](./././~/Deno.lint.TSAsExpression#property_expression)
+-   [parent](./././~/Deno.lint.TSAsExpression#property_parent)
+-   [range](./././~/Deno.lint.TSAsExpression#property_range)
+-   [type](./././~/Deno.lint.TSAsExpression#property_type)
+-   [typeAnnotation](./././~/Deno.lint.TSAsExpression#property_typeannotation)
 
 I
 
@@ -2525,9 +2526,9 @@ I
 
 No documentation available
 
-*   [parent](./././~/Deno.lint.TSBigIntKeyword#property_parent)
-*   [range](./././~/Deno.lint.TSBigIntKeyword#property_range)
-*   [type](./././~/Deno.lint.TSBigIntKeyword#property_type)
+-   [parent](./././~/Deno.lint.TSBigIntKeyword#property_parent)
+-   [range](./././~/Deno.lint.TSBigIntKeyword#property_range)
+-   [type](./././~/Deno.lint.TSBigIntKeyword#property_type)
 
 I
 
@@ -2535,9 +2536,9 @@ I
 
 No documentation available
 
-*   [parent](./././~/Deno.lint.TSBooleanKeyword#property_parent)
-*   [range](./././~/Deno.lint.TSBooleanKeyword#property_range)
-*   [type](./././~/Deno.lint.TSBooleanKeyword#property_type)
+-   [parent](./././~/Deno.lint.TSBooleanKeyword#property_parent)
+-   [range](./././~/Deno.lint.TSBooleanKeyword#property_range)
+-   [type](./././~/Deno.lint.TSBooleanKeyword#property_type)
 
 I
 
@@ -2545,12 +2546,12 @@ I
 
 No documentation available
 
-*   [params](./././~/Deno.lint.TSCallSignatureDeclaration#property_params)
-*   [parent](./././~/Deno.lint.TSCallSignatureDeclaration#property_parent)
-*   [range](./././~/Deno.lint.TSCallSignatureDeclaration#property_range)
-*   [returnType](./././~/Deno.lint.TSCallSignatureDeclaration#property_returntype)
-*   [type](./././~/Deno.lint.TSCallSignatureDeclaration#property_type)
-*   [typeParameters](./././~/Deno.lint.TSCallSignatureDeclaration#property_typeparameters)
+-   [params](./././~/Deno.lint.TSCallSignatureDeclaration#property_params)
+-   [parent](./././~/Deno.lint.TSCallSignatureDeclaration#property_parent)
+-   [range](./././~/Deno.lint.TSCallSignatureDeclaration#property_range)
+-   [returnType](./././~/Deno.lint.TSCallSignatureDeclaration#property_returntype)
+-   [type](./././~/Deno.lint.TSCallSignatureDeclaration#property_type)
+-   [typeParameters](./././~/Deno.lint.TSCallSignatureDeclaration#property_typeparameters)
 
 I
 
@@ -2558,11 +2559,11 @@ I
 
 No documentation available
 
-*   [expression](./././~/Deno.lint.TSClassImplements#property_expression)
-*   [parent](./././~/Deno.lint.TSClassImplements#property_parent)
-*   [range](./././~/Deno.lint.TSClassImplements#property_range)
-*   [type](./././~/Deno.lint.TSClassImplements#property_type)
-*   [typeArguments](./././~/Deno.lint.TSClassImplements#property_typearguments)
+-   [expression](./././~/Deno.lint.TSClassImplements#property_expression)
+-   [parent](./././~/Deno.lint.TSClassImplements#property_parent)
+-   [range](./././~/Deno.lint.TSClassImplements#property_range)
+-   [type](./././~/Deno.lint.TSClassImplements#property_type)
+-   [typeArguments](./././~/Deno.lint.TSClassImplements#property_typearguments)
 
 I
 
@@ -2570,13 +2571,13 @@ I
 
 No documentation available
 
-*   [checkType](./././~/Deno.lint.TSConditionalType#property_checktype)
-*   [extendsType](./././~/Deno.lint.TSConditionalType#property_extendstype)
-*   [falseType](./././~/Deno.lint.TSConditionalType#property_falsetype)
-*   [parent](./././~/Deno.lint.TSConditionalType#property_parent)
-*   [range](./././~/Deno.lint.TSConditionalType#property_range)
-*   [trueType](./././~/Deno.lint.TSConditionalType#property_truetype)
-*   [type](./././~/Deno.lint.TSConditionalType#property_type)
+-   [checkType](./././~/Deno.lint.TSConditionalType#property_checktype)
+-   [extendsType](./././~/Deno.lint.TSConditionalType#property_extendstype)
+-   [falseType](./././~/Deno.lint.TSConditionalType#property_falsetype)
+-   [parent](./././~/Deno.lint.TSConditionalType#property_parent)
+-   [range](./././~/Deno.lint.TSConditionalType#property_range)
+-   [trueType](./././~/Deno.lint.TSConditionalType#property_truetype)
+-   [type](./././~/Deno.lint.TSConditionalType#property_type)
 
 I
 
@@ -2584,12 +2585,12 @@ I
 
 No documentation available
 
-*   [params](./././~/Deno.lint.TSConstructSignatureDeclaration#property_params)
-*   [parent](./././~/Deno.lint.TSConstructSignatureDeclaration#property_parent)
-*   [range](./././~/Deno.lint.TSConstructSignatureDeclaration#property_range)
-*   [returnType](./././~/Deno.lint.TSConstructSignatureDeclaration#property_returntype)
-*   [type](./././~/Deno.lint.TSConstructSignatureDeclaration#property_type)
-*   [typeParameters](./././~/Deno.lint.TSConstructSignatureDeclaration#property_typeparameters)
+-   [params](./././~/Deno.lint.TSConstructSignatureDeclaration#property_params)
+-   [parent](./././~/Deno.lint.TSConstructSignatureDeclaration#property_parent)
+-   [range](./././~/Deno.lint.TSConstructSignatureDeclaration#property_range)
+-   [returnType](./././~/Deno.lint.TSConstructSignatureDeclaration#property_returntype)
+-   [type](./././~/Deno.lint.TSConstructSignatureDeclaration#property_type)
+-   [typeParameters](./././~/Deno.lint.TSConstructSignatureDeclaration#property_typeparameters)
 
 I
 
@@ -2597,17 +2598,17 @@ I
 
 No documentation available
 
-*   [async](./././~/Deno.lint.TSDeclareFunction#property_async)
-*   [body](./././~/Deno.lint.TSDeclareFunction#property_body)
-*   [declare](./././~/Deno.lint.TSDeclareFunction#property_declare)
-*   [generator](./././~/Deno.lint.TSDeclareFunction#property_generator)
-*   [id](./././~/Deno.lint.TSDeclareFunction#property_id)
-*   [params](./././~/Deno.lint.TSDeclareFunction#property_params)
-*   [parent](./././~/Deno.lint.TSDeclareFunction#property_parent)
-*   [range](./././~/Deno.lint.TSDeclareFunction#property_range)
-*   [returnType](./././~/Deno.lint.TSDeclareFunction#property_returntype)
-*   [type](./././~/Deno.lint.TSDeclareFunction#property_type)
-*   [typeParameters](./././~/Deno.lint.TSDeclareFunction#property_typeparameters)
+-   [async](./././~/Deno.lint.TSDeclareFunction#property_async)
+-   [body](./././~/Deno.lint.TSDeclareFunction#property_body)
+-   [declare](./././~/Deno.lint.TSDeclareFunction#property_declare)
+-   [generator](./././~/Deno.lint.TSDeclareFunction#property_generator)
+-   [id](./././~/Deno.lint.TSDeclareFunction#property_id)
+-   [params](./././~/Deno.lint.TSDeclareFunction#property_params)
+-   [parent](./././~/Deno.lint.TSDeclareFunction#property_parent)
+-   [range](./././~/Deno.lint.TSDeclareFunction#property_range)
+-   [returnType](./././~/Deno.lint.TSDeclareFunction#property_returntype)
+-   [type](./././~/Deno.lint.TSDeclareFunction#property_type)
+-   [typeParameters](./././~/Deno.lint.TSDeclareFunction#property_typeparameters)
 
 I
 
@@ -2615,18 +2616,18 @@ I
 
 No documentation available
 
-*   [async](./././~/Deno.lint.TSEmptyBodyFunctionExpression#property_async)
-*   [body](./././~/Deno.lint.TSEmptyBodyFunctionExpression#property_body)
-*   [declare](./././~/Deno.lint.TSEmptyBodyFunctionExpression#property_declare)
-*   [expression](./././~/Deno.lint.TSEmptyBodyFunctionExpression#property_expression)
-*   [generator](./././~/Deno.lint.TSEmptyBodyFunctionExpression#property_generator)
-*   [id](./././~/Deno.lint.TSEmptyBodyFunctionExpression#property_id)
-*   [params](./././~/Deno.lint.TSEmptyBodyFunctionExpression#property_params)
-*   [parent](./././~/Deno.lint.TSEmptyBodyFunctionExpression#property_parent)
-*   [range](./././~/Deno.lint.TSEmptyBodyFunctionExpression#property_range)
-*   [returnType](./././~/Deno.lint.TSEmptyBodyFunctionExpression#property_returntype)
-*   [type](./././~/Deno.lint.TSEmptyBodyFunctionExpression#property_type)
-*   [typeParameters](./././~/Deno.lint.TSEmptyBodyFunctionExpression#property_typeparameters)
+-   [async](./././~/Deno.lint.TSEmptyBodyFunctionExpression#property_async)
+-   [body](./././~/Deno.lint.TSEmptyBodyFunctionExpression#property_body)
+-   [declare](./././~/Deno.lint.TSEmptyBodyFunctionExpression#property_declare)
+-   [expression](./././~/Deno.lint.TSEmptyBodyFunctionExpression#property_expression)
+-   [generator](./././~/Deno.lint.TSEmptyBodyFunctionExpression#property_generator)
+-   [id](./././~/Deno.lint.TSEmptyBodyFunctionExpression#property_id)
+-   [params](./././~/Deno.lint.TSEmptyBodyFunctionExpression#property_params)
+-   [parent](./././~/Deno.lint.TSEmptyBodyFunctionExpression#property_parent)
+-   [range](./././~/Deno.lint.TSEmptyBodyFunctionExpression#property_range)
+-   [returnType](./././~/Deno.lint.TSEmptyBodyFunctionExpression#property_returntype)
+-   [type](./././~/Deno.lint.TSEmptyBodyFunctionExpression#property_type)
+-   [typeParameters](./././~/Deno.lint.TSEmptyBodyFunctionExpression#property_typeparameters)
 
 I
 
@@ -2634,10 +2635,10 @@ I
 
 The body of a `TSEnumDeclaration`
 
-*   [members](./././~/Deno.lint.TSEnumBody#property_members)
-*   [parent](./././~/Deno.lint.TSEnumBody#property_parent)
-*   [range](./././~/Deno.lint.TSEnumBody#property_range)
-*   [type](./././~/Deno.lint.TSEnumBody#property_type)
+-   [members](./././~/Deno.lint.TSEnumBody#property_members)
+-   [parent](./././~/Deno.lint.TSEnumBody#property_parent)
+-   [range](./././~/Deno.lint.TSEnumBody#property_range)
+-   [type](./././~/Deno.lint.TSEnumBody#property_type)
 
 I
 
@@ -2645,13 +2646,13 @@ I
 
 No documentation available
 
-*   [body](./././~/Deno.lint.TSEnumDeclaration#property_body)
-*   [const](./././~/Deno.lint.TSEnumDeclaration#property_const)
-*   [declare](./././~/Deno.lint.TSEnumDeclaration#property_declare)
-*   [id](./././~/Deno.lint.TSEnumDeclaration#property_id)
-*   [parent](./././~/Deno.lint.TSEnumDeclaration#property_parent)
-*   [range](./././~/Deno.lint.TSEnumDeclaration#property_range)
-*   [type](./././~/Deno.lint.TSEnumDeclaration#property_type)
+-   [body](./././~/Deno.lint.TSEnumDeclaration#property_body)
+-   [const](./././~/Deno.lint.TSEnumDeclaration#property_const)
+-   [declare](./././~/Deno.lint.TSEnumDeclaration#property_declare)
+-   [id](./././~/Deno.lint.TSEnumDeclaration#property_id)
+-   [parent](./././~/Deno.lint.TSEnumDeclaration#property_parent)
+-   [range](./././~/Deno.lint.TSEnumDeclaration#property_range)
+-   [type](./././~/Deno.lint.TSEnumDeclaration#property_type)
 
 I
 
@@ -2659,11 +2660,11 @@ I
 
 A member of a `TSEnumDeclaration`
 
-*   [id](./././~/Deno.lint.TSEnumMember#property_id)
-*   [initializer](./././~/Deno.lint.TSEnumMember#property_initializer)
-*   [parent](./././~/Deno.lint.TSEnumMember#property_parent)
-*   [range](./././~/Deno.lint.TSEnumMember#property_range)
-*   [type](./././~/Deno.lint.TSEnumMember#property_type)
+-   [id](./././~/Deno.lint.TSEnumMember#property_id)
+-   [initializer](./././~/Deno.lint.TSEnumMember#property_initializer)
+-   [parent](./././~/Deno.lint.TSEnumMember#property_parent)
+-   [range](./././~/Deno.lint.TSEnumMember#property_range)
+-   [type](./././~/Deno.lint.TSEnumMember#property_type)
 
 I
 
@@ -2671,10 +2672,10 @@ I
 
 No documentation available
 
-*   [expression](./././~/Deno.lint.TSExportAssignment#property_expression)
-*   [parent](./././~/Deno.lint.TSExportAssignment#property_parent)
-*   [range](./././~/Deno.lint.TSExportAssignment#property_range)
-*   [type](./././~/Deno.lint.TSExportAssignment#property_type)
+-   [expression](./././~/Deno.lint.TSExportAssignment#property_expression)
+-   [parent](./././~/Deno.lint.TSExportAssignment#property_parent)
+-   [range](./././~/Deno.lint.TSExportAssignment#property_range)
+-   [type](./././~/Deno.lint.TSExportAssignment#property_type)
 
 I
 
@@ -2682,10 +2683,10 @@ I
 
 No documentation available
 
-*   [expression](./././~/Deno.lint.TSExternalModuleReference#property_expression)
-*   [parent](./././~/Deno.lint.TSExternalModuleReference#property_parent)
-*   [range](./././~/Deno.lint.TSExternalModuleReference#property_range)
-*   [type](./././~/Deno.lint.TSExternalModuleReference#property_type)
+-   [expression](./././~/Deno.lint.TSExternalModuleReference#property_expression)
+-   [parent](./././~/Deno.lint.TSExternalModuleReference#property_parent)
+-   [range](./././~/Deno.lint.TSExternalModuleReference#property_range)
+-   [type](./././~/Deno.lint.TSExternalModuleReference#property_type)
 
 I
 
@@ -2693,12 +2694,12 @@ I
 
 No documentation available
 
-*   [params](./././~/Deno.lint.TSFunctionType#property_params)
-*   [parent](./././~/Deno.lint.TSFunctionType#property_parent)
-*   [range](./././~/Deno.lint.TSFunctionType#property_range)
-*   [returnType](./././~/Deno.lint.TSFunctionType#property_returntype)
-*   [type](./././~/Deno.lint.TSFunctionType#property_type)
-*   [typeParameters](./././~/Deno.lint.TSFunctionType#property_typeparameters)
+-   [params](./././~/Deno.lint.TSFunctionType#property_params)
+-   [parent](./././~/Deno.lint.TSFunctionType#property_parent)
+-   [range](./././~/Deno.lint.TSFunctionType#property_range)
+-   [returnType](./././~/Deno.lint.TSFunctionType#property_returntype)
+-   [type](./././~/Deno.lint.TSFunctionType#property_type)
+-   [typeParameters](./././~/Deno.lint.TSFunctionType#property_typeparameters)
 
 I
 
@@ -2706,12 +2707,12 @@ I
 
 No documentation available
 
-*   [id](./././~/Deno.lint.TSImportEqualsDeclaration#property_id)
-*   [importKind](./././~/Deno.lint.TSImportEqualsDeclaration#property_importkind)
-*   [moduleReference](./././~/Deno.lint.TSImportEqualsDeclaration#property_modulereference)
-*   [parent](./././~/Deno.lint.TSImportEqualsDeclaration#property_parent)
-*   [range](./././~/Deno.lint.TSImportEqualsDeclaration#property_range)
-*   [type](./././~/Deno.lint.TSImportEqualsDeclaration#property_type)
+-   [id](./././~/Deno.lint.TSImportEqualsDeclaration#property_id)
+-   [importKind](./././~/Deno.lint.TSImportEqualsDeclaration#property_importkind)
+-   [moduleReference](./././~/Deno.lint.TSImportEqualsDeclaration#property_modulereference)
+-   [parent](./././~/Deno.lint.TSImportEqualsDeclaration#property_parent)
+-   [range](./././~/Deno.lint.TSImportEqualsDeclaration#property_range)
+-   [type](./././~/Deno.lint.TSImportEqualsDeclaration#property_type)
 
 I
 
@@ -2719,12 +2720,12 @@ I
 
 No documentation available
 
-*   [argument](./././~/Deno.lint.TSImportType#property_argument)
-*   [parent](./././~/Deno.lint.TSImportType#property_parent)
-*   [qualifier](./././~/Deno.lint.TSImportType#property_qualifier)
-*   [range](./././~/Deno.lint.TSImportType#property_range)
-*   [type](./././~/Deno.lint.TSImportType#property_type)
-*   [typeArguments](./././~/Deno.lint.TSImportType#property_typearguments)
+-   [argument](./././~/Deno.lint.TSImportType#property_argument)
+-   [parent](./././~/Deno.lint.TSImportType#property_parent)
+-   [qualifier](./././~/Deno.lint.TSImportType#property_qualifier)
+-   [range](./././~/Deno.lint.TSImportType#property_range)
+-   [type](./././~/Deno.lint.TSImportType#property_type)
+-   [typeArguments](./././~/Deno.lint.TSImportType#property_typearguments)
 
 I
 
@@ -2732,11 +2733,11 @@ I
 
 No documentation available
 
-*   [indexType](./././~/Deno.lint.TSIndexedAccessType#property_indextype)
-*   [objectType](./././~/Deno.lint.TSIndexedAccessType#property_objecttype)
-*   [parent](./././~/Deno.lint.TSIndexedAccessType#property_parent)
-*   [range](./././~/Deno.lint.TSIndexedAccessType#property_range)
-*   [type](./././~/Deno.lint.TSIndexedAccessType#property_type)
+-   [indexType](./././~/Deno.lint.TSIndexedAccessType#property_indextype)
+-   [objectType](./././~/Deno.lint.TSIndexedAccessType#property_objecttype)
+-   [parent](./././~/Deno.lint.TSIndexedAccessType#property_parent)
+-   [range](./././~/Deno.lint.TSIndexedAccessType#property_range)
+-   [type](./././~/Deno.lint.TSIndexedAccessType#property_type)
 
 I
 
@@ -2744,13 +2745,13 @@ I
 
 No documentation available
 
-*   [parameters](./././~/Deno.lint.TSIndexSignature#property_parameters)
-*   [parent](./././~/Deno.lint.TSIndexSignature#property_parent)
-*   [range](./././~/Deno.lint.TSIndexSignature#property_range)
-*   [readonly](./././~/Deno.lint.TSIndexSignature#property_readonly)
-*   [static](./././~/Deno.lint.TSIndexSignature#property_static)
-*   [type](./././~/Deno.lint.TSIndexSignature#property_type)
-*   [typeAnnotation](./././~/Deno.lint.TSIndexSignature#property_typeannotation)
+-   [parameters](./././~/Deno.lint.TSIndexSignature#property_parameters)
+-   [parent](./././~/Deno.lint.TSIndexSignature#property_parent)
+-   [range](./././~/Deno.lint.TSIndexSignature#property_range)
+-   [readonly](./././~/Deno.lint.TSIndexSignature#property_readonly)
+-   [static](./././~/Deno.lint.TSIndexSignature#property_static)
+-   [type](./././~/Deno.lint.TSIndexSignature#property_type)
+-   [typeAnnotation](./././~/Deno.lint.TSIndexSignature#property_typeannotation)
 
 I
 
@@ -2758,10 +2759,10 @@ I
 
 No documentation available
 
-*   [parent](./././~/Deno.lint.TSInferType#property_parent)
-*   [range](./././~/Deno.lint.TSInferType#property_range)
-*   [type](./././~/Deno.lint.TSInferType#property_type)
-*   [typeParameter](./././~/Deno.lint.TSInferType#property_typeparameter)
+-   [parent](./././~/Deno.lint.TSInferType#property_parent)
+-   [range](./././~/Deno.lint.TSInferType#property_range)
+-   [type](./././~/Deno.lint.TSInferType#property_type)
+-   [typeParameter](./././~/Deno.lint.TSInferType#property_typeparameter)
 
 I
 
@@ -2769,11 +2770,11 @@ I
 
 No documentation available
 
-*   [expression](./././~/Deno.lint.TSInstantiationExpression#property_expression)
-*   [parent](./././~/Deno.lint.TSInstantiationExpression#property_parent)
-*   [range](./././~/Deno.lint.TSInstantiationExpression#property_range)
-*   [type](./././~/Deno.lint.TSInstantiationExpression#property_type)
-*   [typeArguments](./././~/Deno.lint.TSInstantiationExpression#property_typearguments)
+-   [expression](./././~/Deno.lint.TSInstantiationExpression#property_expression)
+-   [parent](./././~/Deno.lint.TSInstantiationExpression#property_parent)
+-   [range](./././~/Deno.lint.TSInstantiationExpression#property_range)
+-   [type](./././~/Deno.lint.TSInstantiationExpression#property_type)
+-   [typeArguments](./././~/Deno.lint.TSInstantiationExpression#property_typearguments)
 
 I
 
@@ -2781,10 +2782,10 @@ I
 
 No documentation available
 
-*   [body](./././~/Deno.lint.TSInterfaceBody#property_body)
-*   [parent](./././~/Deno.lint.TSInterfaceBody#property_parent)
-*   [range](./././~/Deno.lint.TSInterfaceBody#property_range)
-*   [type](./././~/Deno.lint.TSInterfaceBody#property_type)
+-   [body](./././~/Deno.lint.TSInterfaceBody#property_body)
+-   [parent](./././~/Deno.lint.TSInterfaceBody#property_parent)
+-   [range](./././~/Deno.lint.TSInterfaceBody#property_range)
+-   [type](./././~/Deno.lint.TSInterfaceBody#property_type)
 
 I
 
@@ -2792,14 +2793,14 @@ I
 
 No documentation available
 
-*   [body](./././~/Deno.lint.TSInterfaceDeclaration#property_body)
-*   [declare](./././~/Deno.lint.TSInterfaceDeclaration#property_declare)
-*   [extends](./././~/Deno.lint.TSInterfaceDeclaration#property_extends)
-*   [id](./././~/Deno.lint.TSInterfaceDeclaration#property_id)
-*   [parent](./././~/Deno.lint.TSInterfaceDeclaration#property_parent)
-*   [range](./././~/Deno.lint.TSInterfaceDeclaration#property_range)
-*   [type](./././~/Deno.lint.TSInterfaceDeclaration#property_type)
-*   [typeParameters](./././~/Deno.lint.TSInterfaceDeclaration#property_typeparameters)
+-   [body](./././~/Deno.lint.TSInterfaceDeclaration#property_body)
+-   [declare](./././~/Deno.lint.TSInterfaceDeclaration#property_declare)
+-   [extends](./././~/Deno.lint.TSInterfaceDeclaration#property_extends)
+-   [id](./././~/Deno.lint.TSInterfaceDeclaration#property_id)
+-   [parent](./././~/Deno.lint.TSInterfaceDeclaration#property_parent)
+-   [range](./././~/Deno.lint.TSInterfaceDeclaration#property_range)
+-   [type](./././~/Deno.lint.TSInterfaceDeclaration#property_type)
+-   [typeParameters](./././~/Deno.lint.TSInterfaceDeclaration#property_typeparameters)
 
 I
 
@@ -2807,11 +2808,11 @@ I
 
 No documentation available
 
-*   [expression](./././~/Deno.lint.TSInterfaceHeritage#property_expression)
-*   [parent](./././~/Deno.lint.TSInterfaceHeritage#property_parent)
-*   [range](./././~/Deno.lint.TSInterfaceHeritage#property_range)
-*   [type](./././~/Deno.lint.TSInterfaceHeritage#property_type)
-*   [typeArguments](./././~/Deno.lint.TSInterfaceHeritage#property_typearguments)
+-   [expression](./././~/Deno.lint.TSInterfaceHeritage#property_expression)
+-   [parent](./././~/Deno.lint.TSInterfaceHeritage#property_parent)
+-   [range](./././~/Deno.lint.TSInterfaceHeritage#property_range)
+-   [type](./././~/Deno.lint.TSInterfaceHeritage#property_type)
+-   [typeArguments](./././~/Deno.lint.TSInterfaceHeritage#property_typearguments)
 
 I
 
@@ -2819,10 +2820,10 @@ I
 
 No documentation available
 
-*   [parent](./././~/Deno.lint.TSIntersectionType#property_parent)
-*   [range](./././~/Deno.lint.TSIntersectionType#property_range)
-*   [type](./././~/Deno.lint.TSIntersectionType#property_type)
-*   [types](./././~/Deno.lint.TSIntersectionType#property_types)
+-   [parent](./././~/Deno.lint.TSIntersectionType#property_parent)
+-   [range](./././~/Deno.lint.TSIntersectionType#property_range)
+-   [type](./././~/Deno.lint.TSIntersectionType#property_type)
+-   [types](./././~/Deno.lint.TSIntersectionType#property_types)
 
 I
 
@@ -2830,9 +2831,9 @@ I
 
 No documentation available
 
-*   [parent](./././~/Deno.lint.TSIntrinsicKeyword#property_parent)
-*   [range](./././~/Deno.lint.TSIntrinsicKeyword#property_range)
-*   [type](./././~/Deno.lint.TSIntrinsicKeyword#property_type)
+-   [parent](./././~/Deno.lint.TSIntrinsicKeyword#property_parent)
+-   [range](./././~/Deno.lint.TSIntrinsicKeyword#property_range)
+-   [type](./././~/Deno.lint.TSIntrinsicKeyword#property_type)
 
 I
 
@@ -2840,10 +2841,10 @@ I
 
 No documentation available
 
-*   [literal](./././~/Deno.lint.TSLiteralType#property_literal)
-*   [parent](./././~/Deno.lint.TSLiteralType#property_parent)
-*   [range](./././~/Deno.lint.TSLiteralType#property_range)
-*   [type](./././~/Deno.lint.TSLiteralType#property_type)
+-   [literal](./././~/Deno.lint.TSLiteralType#property_literal)
+-   [parent](./././~/Deno.lint.TSLiteralType#property_parent)
+-   [range](./././~/Deno.lint.TSLiteralType#property_range)
+-   [type](./././~/Deno.lint.TSLiteralType#property_type)
 
 I
 
@@ -2851,15 +2852,15 @@ I
 
 No documentation available
 
-*   [constraint](./././~/Deno.lint.TSMappedType#property_constraint)
-*   [key](./././~/Deno.lint.TSMappedType#property_key)
-*   [nameType](./././~/Deno.lint.TSMappedType#property_nametype)
-*   [optional](./././~/Deno.lint.TSMappedType#property_optional)
-*   [parent](./././~/Deno.lint.TSMappedType#property_parent)
-*   [range](./././~/Deno.lint.TSMappedType#property_range)
-*   [readonly](./././~/Deno.lint.TSMappedType#property_readonly)
-*   [type](./././~/Deno.lint.TSMappedType#property_type)
-*   [typeAnnotation](./././~/Deno.lint.TSMappedType#property_typeannotation)
+-   [constraint](./././~/Deno.lint.TSMappedType#property_constraint)
+-   [key](./././~/Deno.lint.TSMappedType#property_key)
+-   [nameType](./././~/Deno.lint.TSMappedType#property_nametype)
+-   [optional](./././~/Deno.lint.TSMappedType#property_optional)
+-   [parent](./././~/Deno.lint.TSMappedType#property_parent)
+-   [range](./././~/Deno.lint.TSMappedType#property_range)
+-   [readonly](./././~/Deno.lint.TSMappedType#property_readonly)
+-   [type](./././~/Deno.lint.TSMappedType#property_type)
+-   [typeAnnotation](./././~/Deno.lint.TSMappedType#property_typeannotation)
 
 I
 
@@ -2867,18 +2868,18 @@ I
 
 No documentation available
 
-*   [computed](./././~/Deno.lint.TSMethodSignature#property_computed)
-*   [key](./././~/Deno.lint.TSMethodSignature#property_key)
-*   [kind](./././~/Deno.lint.TSMethodSignature#property_kind)
-*   [optional](./././~/Deno.lint.TSMethodSignature#property_optional)
-*   [params](./././~/Deno.lint.TSMethodSignature#property_params)
-*   [parent](./././~/Deno.lint.TSMethodSignature#property_parent)
-*   [range](./././~/Deno.lint.TSMethodSignature#property_range)
-*   [readonly](./././~/Deno.lint.TSMethodSignature#property_readonly)
-*   [returnType](./././~/Deno.lint.TSMethodSignature#property_returntype)
-*   [static](./././~/Deno.lint.TSMethodSignature#property_static)
-*   [type](./././~/Deno.lint.TSMethodSignature#property_type)
-*   [typeParameters](./././~/Deno.lint.TSMethodSignature#property_typeparameters)
+-   [computed](./././~/Deno.lint.TSMethodSignature#property_computed)
+-   [key](./././~/Deno.lint.TSMethodSignature#property_key)
+-   [kind](./././~/Deno.lint.TSMethodSignature#property_kind)
+-   [optional](./././~/Deno.lint.TSMethodSignature#property_optional)
+-   [params](./././~/Deno.lint.TSMethodSignature#property_params)
+-   [parent](./././~/Deno.lint.TSMethodSignature#property_parent)
+-   [range](./././~/Deno.lint.TSMethodSignature#property_range)
+-   [readonly](./././~/Deno.lint.TSMethodSignature#property_readonly)
+-   [returnType](./././~/Deno.lint.TSMethodSignature#property_returntype)
+-   [static](./././~/Deno.lint.TSMethodSignature#property_static)
+-   [type](./././~/Deno.lint.TSMethodSignature#property_type)
+-   [typeParameters](./././~/Deno.lint.TSMethodSignature#property_typeparameters)
 
 I
 
@@ -2886,10 +2887,10 @@ I
 
 Body of a `TSModuleDeclaration`
 
-*   [body](./././~/Deno.lint.TSModuleBlock#property_body)
-*   [parent](./././~/Deno.lint.TSModuleBlock#property_parent)
-*   [range](./././~/Deno.lint.TSModuleBlock#property_range)
-*   [type](./././~/Deno.lint.TSModuleBlock#property_type)
+-   [body](./././~/Deno.lint.TSModuleBlock#property_body)
+-   [parent](./././~/Deno.lint.TSModuleBlock#property_parent)
+-   [range](./././~/Deno.lint.TSModuleBlock#property_range)
+-   [type](./././~/Deno.lint.TSModuleBlock#property_type)
 
 I
 
@@ -2897,13 +2898,13 @@ I
 
 No documentation available
 
-*   [body](./././~/Deno.lint.TSModuleDeclaration#property_body)
-*   [declare](./././~/Deno.lint.TSModuleDeclaration#property_declare)
-*   [id](./././~/Deno.lint.TSModuleDeclaration#property_id)
-*   [kind](./././~/Deno.lint.TSModuleDeclaration#property_kind)
-*   [parent](./././~/Deno.lint.TSModuleDeclaration#property_parent)
-*   [range](./././~/Deno.lint.TSModuleDeclaration#property_range)
-*   [type](./././~/Deno.lint.TSModuleDeclaration#property_type)
+-   [body](./././~/Deno.lint.TSModuleDeclaration#property_body)
+-   [declare](./././~/Deno.lint.TSModuleDeclaration#property_declare)
+-   [id](./././~/Deno.lint.TSModuleDeclaration#property_id)
+-   [kind](./././~/Deno.lint.TSModuleDeclaration#property_kind)
+-   [parent](./././~/Deno.lint.TSModuleDeclaration#property_parent)
+-   [range](./././~/Deno.lint.TSModuleDeclaration#property_range)
+-   [type](./././~/Deno.lint.TSModuleDeclaration#property_type)
 
 I
 
@@ -2911,12 +2912,12 @@ I
 
 No documentation available
 
-*   [elementType](./././~/Deno.lint.TSNamedTupleMember#property_elementtype)
-*   [label](./././~/Deno.lint.TSNamedTupleMember#property_label)
-*   [optional](./././~/Deno.lint.TSNamedTupleMember#property_optional)
-*   [parent](./././~/Deno.lint.TSNamedTupleMember#property_parent)
-*   [range](./././~/Deno.lint.TSNamedTupleMember#property_range)
-*   [type](./././~/Deno.lint.TSNamedTupleMember#property_type)
+-   [elementType](./././~/Deno.lint.TSNamedTupleMember#property_elementtype)
+-   [label](./././~/Deno.lint.TSNamedTupleMember#property_label)
+-   [optional](./././~/Deno.lint.TSNamedTupleMember#property_optional)
+-   [parent](./././~/Deno.lint.TSNamedTupleMember#property_parent)
+-   [range](./././~/Deno.lint.TSNamedTupleMember#property_range)
+-   [type](./././~/Deno.lint.TSNamedTupleMember#property_type)
 
 I
 
@@ -2924,10 +2925,10 @@ I
 
 No documentation available
 
-*   [id](./././~/Deno.lint.TSNamespaceExportDeclaration#property_id)
-*   [parent](./././~/Deno.lint.TSNamespaceExportDeclaration#property_parent)
-*   [range](./././~/Deno.lint.TSNamespaceExportDeclaration#property_range)
-*   [type](./././~/Deno.lint.TSNamespaceExportDeclaration#property_type)
+-   [id](./././~/Deno.lint.TSNamespaceExportDeclaration#property_id)
+-   [parent](./././~/Deno.lint.TSNamespaceExportDeclaration#property_parent)
+-   [range](./././~/Deno.lint.TSNamespaceExportDeclaration#property_range)
+-   [type](./././~/Deno.lint.TSNamespaceExportDeclaration#property_type)
 
 I
 
@@ -2935,9 +2936,9 @@ I
 
 No documentation available
 
-*   [parent](./././~/Deno.lint.TSNeverKeyword#property_parent)
-*   [range](./././~/Deno.lint.TSNeverKeyword#property_range)
-*   [type](./././~/Deno.lint.TSNeverKeyword#property_type)
+-   [parent](./././~/Deno.lint.TSNeverKeyword#property_parent)
+-   [range](./././~/Deno.lint.TSNeverKeyword#property_range)
+-   [type](./././~/Deno.lint.TSNeverKeyword#property_type)
 
 I
 
@@ -2945,10 +2946,10 @@ I
 
 No documentation available
 
-*   [expression](./././~/Deno.lint.TSNonNullExpression#property_expression)
-*   [parent](./././~/Deno.lint.TSNonNullExpression#property_parent)
-*   [range](./././~/Deno.lint.TSNonNullExpression#property_range)
-*   [type](./././~/Deno.lint.TSNonNullExpression#property_type)
+-   [expression](./././~/Deno.lint.TSNonNullExpression#property_expression)
+-   [parent](./././~/Deno.lint.TSNonNullExpression#property_parent)
+-   [range](./././~/Deno.lint.TSNonNullExpression#property_range)
+-   [type](./././~/Deno.lint.TSNonNullExpression#property_type)
 
 I
 
@@ -2956,9 +2957,9 @@ I
 
 No documentation available
 
-*   [parent](./././~/Deno.lint.TSNullKeyword#property_parent)
-*   [range](./././~/Deno.lint.TSNullKeyword#property_range)
-*   [type](./././~/Deno.lint.TSNullKeyword#property_type)
+-   [parent](./././~/Deno.lint.TSNullKeyword#property_parent)
+-   [range](./././~/Deno.lint.TSNullKeyword#property_range)
+-   [type](./././~/Deno.lint.TSNullKeyword#property_type)
 
 I
 
@@ -2966,9 +2967,9 @@ I
 
 No documentation available
 
-*   [parent](./././~/Deno.lint.TSNumberKeyword#property_parent)
-*   [range](./././~/Deno.lint.TSNumberKeyword#property_range)
-*   [type](./././~/Deno.lint.TSNumberKeyword#property_type)
+-   [parent](./././~/Deno.lint.TSNumberKeyword#property_parent)
+-   [range](./././~/Deno.lint.TSNumberKeyword#property_range)
+-   [type](./././~/Deno.lint.TSNumberKeyword#property_type)
 
 I
 
@@ -2976,9 +2977,9 @@ I
 
 No documentation available
 
-*   [parent](./././~/Deno.lint.TSObjectKeyword#property_parent)
-*   [range](./././~/Deno.lint.TSObjectKeyword#property_range)
-*   [type](./././~/Deno.lint.TSObjectKeyword#property_type)
+-   [parent](./././~/Deno.lint.TSObjectKeyword#property_parent)
+-   [range](./././~/Deno.lint.TSObjectKeyword#property_range)
+-   [type](./././~/Deno.lint.TSObjectKeyword#property_type)
 
 I
 
@@ -2986,10 +2987,10 @@ I
 
 No documentation available
 
-*   [parent](./././~/Deno.lint.TSOptionalType#property_parent)
-*   [range](./././~/Deno.lint.TSOptionalType#property_range)
-*   [type](./././~/Deno.lint.TSOptionalType#property_type)
-*   [typeAnnotation](./././~/Deno.lint.TSOptionalType#property_typeannotation)
+-   [parent](./././~/Deno.lint.TSOptionalType#property_parent)
+-   [range](./././~/Deno.lint.TSOptionalType#property_range)
+-   [type](./././~/Deno.lint.TSOptionalType#property_type)
+-   [typeAnnotation](./././~/Deno.lint.TSOptionalType#property_typeannotation)
 
 I
 
@@ -2997,15 +2998,15 @@ I
 
 No documentation available
 
-*   [accessibility](./././~/Deno.lint.TSParameterProperty#property_accessibility)
-*   [decorators](./././~/Deno.lint.TSParameterProperty#property_decorators)
-*   [override](./././~/Deno.lint.TSParameterProperty#property_override)
-*   [parameter](./././~/Deno.lint.TSParameterProperty#property_parameter)
-*   [parent](./././~/Deno.lint.TSParameterProperty#property_parent)
-*   [range](./././~/Deno.lint.TSParameterProperty#property_range)
-*   [readonly](./././~/Deno.lint.TSParameterProperty#property_readonly)
-*   [static](./././~/Deno.lint.TSParameterProperty#property_static)
-*   [type](./././~/Deno.lint.TSParameterProperty#property_type)
+-   [accessibility](./././~/Deno.lint.TSParameterProperty#property_accessibility)
+-   [decorators](./././~/Deno.lint.TSParameterProperty#property_decorators)
+-   [override](./././~/Deno.lint.TSParameterProperty#property_override)
+-   [parameter](./././~/Deno.lint.TSParameterProperty#property_parameter)
+-   [parent](./././~/Deno.lint.TSParameterProperty#property_parent)
+-   [range](./././~/Deno.lint.TSParameterProperty#property_range)
+-   [readonly](./././~/Deno.lint.TSParameterProperty#property_readonly)
+-   [static](./././~/Deno.lint.TSParameterProperty#property_static)
+-   [type](./././~/Deno.lint.TSParameterProperty#property_type)
 
 I
 
@@ -3013,15 +3014,15 @@ I
 
 No documentation available
 
-*   [computed](./././~/Deno.lint.TSPropertySignature#property_computed)
-*   [key](./././~/Deno.lint.TSPropertySignature#property_key)
-*   [optional](./././~/Deno.lint.TSPropertySignature#property_optional)
-*   [parent](./././~/Deno.lint.TSPropertySignature#property_parent)
-*   [range](./././~/Deno.lint.TSPropertySignature#property_range)
-*   [readonly](./././~/Deno.lint.TSPropertySignature#property_readonly)
-*   [static](./././~/Deno.lint.TSPropertySignature#property_static)
-*   [type](./././~/Deno.lint.TSPropertySignature#property_type)
-*   [typeAnnotation](./././~/Deno.lint.TSPropertySignature#property_typeannotation)
+-   [computed](./././~/Deno.lint.TSPropertySignature#property_computed)
+-   [key](./././~/Deno.lint.TSPropertySignature#property_key)
+-   [optional](./././~/Deno.lint.TSPropertySignature#property_optional)
+-   [parent](./././~/Deno.lint.TSPropertySignature#property_parent)
+-   [range](./././~/Deno.lint.TSPropertySignature#property_range)
+-   [readonly](./././~/Deno.lint.TSPropertySignature#property_readonly)
+-   [static](./././~/Deno.lint.TSPropertySignature#property_static)
+-   [type](./././~/Deno.lint.TSPropertySignature#property_type)
+-   [typeAnnotation](./././~/Deno.lint.TSPropertySignature#property_typeannotation)
 
 I
 
@@ -3029,11 +3030,11 @@ I
 
 No documentation available
 
-*   [left](./././~/Deno.lint.TSQualifiedName#property_left)
-*   [parent](./././~/Deno.lint.TSQualifiedName#property_parent)
-*   [range](./././~/Deno.lint.TSQualifiedName#property_range)
-*   [right](./././~/Deno.lint.TSQualifiedName#property_right)
-*   [type](./././~/Deno.lint.TSQualifiedName#property_type)
+-   [left](./././~/Deno.lint.TSQualifiedName#property_left)
+-   [parent](./././~/Deno.lint.TSQualifiedName#property_parent)
+-   [range](./././~/Deno.lint.TSQualifiedName#property_range)
+-   [right](./././~/Deno.lint.TSQualifiedName#property_right)
+-   [type](./././~/Deno.lint.TSQualifiedName#property_type)
 
 I
 
@@ -3041,10 +3042,10 @@ I
 
 No documentation available
 
-*   [parent](./././~/Deno.lint.TSRestType#property_parent)
-*   [range](./././~/Deno.lint.TSRestType#property_range)
-*   [type](./././~/Deno.lint.TSRestType#property_type)
-*   [typeAnnotation](./././~/Deno.lint.TSRestType#property_typeannotation)
+-   [parent](./././~/Deno.lint.TSRestType#property_parent)
+-   [range](./././~/Deno.lint.TSRestType#property_range)
+-   [type](./././~/Deno.lint.TSRestType#property_type)
+-   [typeAnnotation](./././~/Deno.lint.TSRestType#property_typeannotation)
 
 I
 
@@ -3052,11 +3053,11 @@ I
 
 No documentation available
 
-*   [expression](./././~/Deno.lint.TSSatisfiesExpression#property_expression)
-*   [parent](./././~/Deno.lint.TSSatisfiesExpression#property_parent)
-*   [range](./././~/Deno.lint.TSSatisfiesExpression#property_range)
-*   [type](./././~/Deno.lint.TSSatisfiesExpression#property_type)
-*   [typeAnnotation](./././~/Deno.lint.TSSatisfiesExpression#property_typeannotation)
+-   [expression](./././~/Deno.lint.TSSatisfiesExpression#property_expression)
+-   [parent](./././~/Deno.lint.TSSatisfiesExpression#property_parent)
+-   [range](./././~/Deno.lint.TSSatisfiesExpression#property_range)
+-   [type](./././~/Deno.lint.TSSatisfiesExpression#property_type)
+-   [typeAnnotation](./././~/Deno.lint.TSSatisfiesExpression#property_typeannotation)
 
 I
 
@@ -3064,9 +3065,9 @@ I
 
 No documentation available
 
-*   [parent](./././~/Deno.lint.TSStringKeyword#property_parent)
-*   [range](./././~/Deno.lint.TSStringKeyword#property_range)
-*   [type](./././~/Deno.lint.TSStringKeyword#property_type)
+-   [parent](./././~/Deno.lint.TSStringKeyword#property_parent)
+-   [range](./././~/Deno.lint.TSStringKeyword#property_range)
+-   [type](./././~/Deno.lint.TSStringKeyword#property_type)
 
 I
 
@@ -3074,9 +3075,9 @@ I
 
 No documentation available
 
-*   [parent](./././~/Deno.lint.TSSymbolKeyword#property_parent)
-*   [range](./././~/Deno.lint.TSSymbolKeyword#property_range)
-*   [type](./././~/Deno.lint.TSSymbolKeyword#property_type)
+-   [parent](./././~/Deno.lint.TSSymbolKeyword#property_parent)
+-   [range](./././~/Deno.lint.TSSymbolKeyword#property_range)
+-   [type](./././~/Deno.lint.TSSymbolKeyword#property_type)
 
 I
 
@@ -3084,11 +3085,11 @@ I
 
 No documentation available
 
-*   [parent](./././~/Deno.lint.TSTemplateLiteralType#property_parent)
-*   [quasis](./././~/Deno.lint.TSTemplateLiteralType#property_quasis)
-*   [range](./././~/Deno.lint.TSTemplateLiteralType#property_range)
-*   [type](./././~/Deno.lint.TSTemplateLiteralType#property_type)
-*   [types](./././~/Deno.lint.TSTemplateLiteralType#property_types)
+-   [parent](./././~/Deno.lint.TSTemplateLiteralType#property_parent)
+-   [quasis](./././~/Deno.lint.TSTemplateLiteralType#property_quasis)
+-   [range](./././~/Deno.lint.TSTemplateLiteralType#property_range)
+-   [type](./././~/Deno.lint.TSTemplateLiteralType#property_type)
+-   [types](./././~/Deno.lint.TSTemplateLiteralType#property_types)
 
 I
 
@@ -3096,9 +3097,9 @@ I
 
 No documentation available
 
-*   [parent](./././~/Deno.lint.TSThisType#property_parent)
-*   [range](./././~/Deno.lint.TSThisType#property_range)
-*   [type](./././~/Deno.lint.TSThisType#property_type)
+-   [parent](./././~/Deno.lint.TSThisType#property_parent)
+-   [range](./././~/Deno.lint.TSThisType#property_range)
+-   [type](./././~/Deno.lint.TSThisType#property_type)
 
 I
 
@@ -3106,10 +3107,10 @@ I
 
 No documentation available
 
-*   [elementTypes](./././~/Deno.lint.TSTupleType#property_elementtypes)
-*   [parent](./././~/Deno.lint.TSTupleType#property_parent)
-*   [range](./././~/Deno.lint.TSTupleType#property_range)
-*   [type](./././~/Deno.lint.TSTupleType#property_type)
+-   [elementTypes](./././~/Deno.lint.TSTupleType#property_elementtypes)
+-   [parent](./././~/Deno.lint.TSTupleType#property_parent)
+-   [range](./././~/Deno.lint.TSTupleType#property_range)
+-   [type](./././~/Deno.lint.TSTupleType#property_type)
 
 I
 
@@ -3117,13 +3118,13 @@ I
 
 No documentation available
 
-*   [declare](./././~/Deno.lint.TSTypeAliasDeclaration#property_declare)
-*   [id](./././~/Deno.lint.TSTypeAliasDeclaration#property_id)
-*   [parent](./././~/Deno.lint.TSTypeAliasDeclaration#property_parent)
-*   [range](./././~/Deno.lint.TSTypeAliasDeclaration#property_range)
-*   [type](./././~/Deno.lint.TSTypeAliasDeclaration#property_type)
-*   [typeAnnotation](./././~/Deno.lint.TSTypeAliasDeclaration#property_typeannotation)
-*   [typeParameters](./././~/Deno.lint.TSTypeAliasDeclaration#property_typeparameters)
+-   [declare](./././~/Deno.lint.TSTypeAliasDeclaration#property_declare)
+-   [id](./././~/Deno.lint.TSTypeAliasDeclaration#property_id)
+-   [parent](./././~/Deno.lint.TSTypeAliasDeclaration#property_parent)
+-   [range](./././~/Deno.lint.TSTypeAliasDeclaration#property_range)
+-   [type](./././~/Deno.lint.TSTypeAliasDeclaration#property_type)
+-   [typeAnnotation](./././~/Deno.lint.TSTypeAliasDeclaration#property_typeannotation)
+-   [typeParameters](./././~/Deno.lint.TSTypeAliasDeclaration#property_typeparameters)
 
 I
 
@@ -3131,10 +3132,10 @@ I
 
 No documentation available
 
-*   [parent](./././~/Deno.lint.TSTypeAnnotation#property_parent)
-*   [range](./././~/Deno.lint.TSTypeAnnotation#property_range)
-*   [type](./././~/Deno.lint.TSTypeAnnotation#property_type)
-*   [typeAnnotation](./././~/Deno.lint.TSTypeAnnotation#property_typeannotation)
+-   [parent](./././~/Deno.lint.TSTypeAnnotation#property_parent)
+-   [range](./././~/Deno.lint.TSTypeAnnotation#property_range)
+-   [type](./././~/Deno.lint.TSTypeAnnotation#property_type)
+-   [typeAnnotation](./././~/Deno.lint.TSTypeAnnotation#property_typeannotation)
 
 I
 
@@ -3142,11 +3143,11 @@ I
 
 No documentation available
 
-*   [expression](./././~/Deno.lint.TSTypeAssertion#property_expression)
-*   [parent](./././~/Deno.lint.TSTypeAssertion#property_parent)
-*   [range](./././~/Deno.lint.TSTypeAssertion#property_range)
-*   [type](./././~/Deno.lint.TSTypeAssertion#property_type)
-*   [typeAnnotation](./././~/Deno.lint.TSTypeAssertion#property_typeannotation)
+-   [expression](./././~/Deno.lint.TSTypeAssertion#property_expression)
+-   [parent](./././~/Deno.lint.TSTypeAssertion#property_parent)
+-   [range](./././~/Deno.lint.TSTypeAssertion#property_range)
+-   [type](./././~/Deno.lint.TSTypeAssertion#property_type)
+-   [typeAnnotation](./././~/Deno.lint.TSTypeAssertion#property_typeannotation)
 
 I
 
@@ -3154,10 +3155,10 @@ I
 
 No documentation available
 
-*   [members](./././~/Deno.lint.TSTypeLiteral#property_members)
-*   [parent](./././~/Deno.lint.TSTypeLiteral#property_parent)
-*   [range](./././~/Deno.lint.TSTypeLiteral#property_range)
-*   [type](./././~/Deno.lint.TSTypeLiteral#property_type)
+-   [members](./././~/Deno.lint.TSTypeLiteral#property_members)
+-   [parent](./././~/Deno.lint.TSTypeLiteral#property_parent)
+-   [range](./././~/Deno.lint.TSTypeLiteral#property_range)
+-   [type](./././~/Deno.lint.TSTypeLiteral#property_type)
 
 I
 
@@ -3165,11 +3166,11 @@ I
 
 No documentation available
 
-*   [operator](./././~/Deno.lint.TSTypeOperator#property_operator)
-*   [parent](./././~/Deno.lint.TSTypeOperator#property_parent)
-*   [range](./././~/Deno.lint.TSTypeOperator#property_range)
-*   [type](./././~/Deno.lint.TSTypeOperator#property_type)
-*   [typeAnnotation](./././~/Deno.lint.TSTypeOperator#property_typeannotation)
+-   [operator](./././~/Deno.lint.TSTypeOperator#property_operator)
+-   [parent](./././~/Deno.lint.TSTypeOperator#property_parent)
+-   [range](./././~/Deno.lint.TSTypeOperator#property_range)
+-   [type](./././~/Deno.lint.TSTypeOperator#property_type)
+-   [typeAnnotation](./././~/Deno.lint.TSTypeOperator#property_typeannotation)
 
 I
 
@@ -3177,15 +3178,15 @@ I
 
 No documentation available
 
-*   [const](./././~/Deno.lint.TSTypeParameter#property_const)
-*   [constraint](./././~/Deno.lint.TSTypeParameter#property_constraint)
-*   [default](./././~/Deno.lint.TSTypeParameter#property_default)
-*   [in](./././~/Deno.lint.TSTypeParameter#property_in)
-*   [name](./././~/Deno.lint.TSTypeParameter#property_name)
-*   [out](./././~/Deno.lint.TSTypeParameter#property_out)
-*   [parent](./././~/Deno.lint.TSTypeParameter#property_parent)
-*   [range](./././~/Deno.lint.TSTypeParameter#property_range)
-*   [type](./././~/Deno.lint.TSTypeParameter#property_type)
+-   [const](./././~/Deno.lint.TSTypeParameter#property_const)
+-   [constraint](./././~/Deno.lint.TSTypeParameter#property_constraint)
+-   [default](./././~/Deno.lint.TSTypeParameter#property_default)
+-   [in](./././~/Deno.lint.TSTypeParameter#property_in)
+-   [name](./././~/Deno.lint.TSTypeParameter#property_name)
+-   [out](./././~/Deno.lint.TSTypeParameter#property_out)
+-   [parent](./././~/Deno.lint.TSTypeParameter#property_parent)
+-   [range](./././~/Deno.lint.TSTypeParameter#property_range)
+-   [type](./././~/Deno.lint.TSTypeParameter#property_type)
 
 I
 
@@ -3193,10 +3194,10 @@ I
 
 No documentation available
 
-*   [params](./././~/Deno.lint.TSTypeParameterDeclaration#property_params)
-*   [parent](./././~/Deno.lint.TSTypeParameterDeclaration#property_parent)
-*   [range](./././~/Deno.lint.TSTypeParameterDeclaration#property_range)
-*   [type](./././~/Deno.lint.TSTypeParameterDeclaration#property_type)
+-   [params](./././~/Deno.lint.TSTypeParameterDeclaration#property_params)
+-   [parent](./././~/Deno.lint.TSTypeParameterDeclaration#property_parent)
+-   [range](./././~/Deno.lint.TSTypeParameterDeclaration#property_range)
+-   [type](./././~/Deno.lint.TSTypeParameterDeclaration#property_type)
 
 I
 
@@ -3204,10 +3205,10 @@ I
 
 No documentation available
 
-*   [params](./././~/Deno.lint.TSTypeParameterInstantiation#property_params)
-*   [parent](./././~/Deno.lint.TSTypeParameterInstantiation#property_parent)
-*   [range](./././~/Deno.lint.TSTypeParameterInstantiation#property_range)
-*   [type](./././~/Deno.lint.TSTypeParameterInstantiation#property_type)
+-   [params](./././~/Deno.lint.TSTypeParameterInstantiation#property_params)
+-   [parent](./././~/Deno.lint.TSTypeParameterInstantiation#property_parent)
+-   [range](./././~/Deno.lint.TSTypeParameterInstantiation#property_range)
+-   [type](./././~/Deno.lint.TSTypeParameterInstantiation#property_type)
 
 I
 
@@ -3215,12 +3216,12 @@ I
 
 No documentation available
 
-*   [asserts](./././~/Deno.lint.TSTypePredicate#property_asserts)
-*   [parameterName](./././~/Deno.lint.TSTypePredicate#property_parametername)
-*   [parent](./././~/Deno.lint.TSTypePredicate#property_parent)
-*   [range](./././~/Deno.lint.TSTypePredicate#property_range)
-*   [type](./././~/Deno.lint.TSTypePredicate#property_type)
-*   [typeAnnotation](./././~/Deno.lint.TSTypePredicate#property_typeannotation)
+-   [asserts](./././~/Deno.lint.TSTypePredicate#property_asserts)
+-   [parameterName](./././~/Deno.lint.TSTypePredicate#property_parametername)
+-   [parent](./././~/Deno.lint.TSTypePredicate#property_parent)
+-   [range](./././~/Deno.lint.TSTypePredicate#property_range)
+-   [type](./././~/Deno.lint.TSTypePredicate#property_type)
+-   [typeAnnotation](./././~/Deno.lint.TSTypePredicate#property_typeannotation)
 
 I
 
@@ -3228,11 +3229,11 @@ I
 
 No documentation available
 
-*   [exprName](./././~/Deno.lint.TSTypeQuery#property_exprname)
-*   [parent](./././~/Deno.lint.TSTypeQuery#property_parent)
-*   [range](./././~/Deno.lint.TSTypeQuery#property_range)
-*   [type](./././~/Deno.lint.TSTypeQuery#property_type)
-*   [typeArguments](./././~/Deno.lint.TSTypeQuery#property_typearguments)
+-   [exprName](./././~/Deno.lint.TSTypeQuery#property_exprname)
+-   [parent](./././~/Deno.lint.TSTypeQuery#property_parent)
+-   [range](./././~/Deno.lint.TSTypeQuery#property_range)
+-   [type](./././~/Deno.lint.TSTypeQuery#property_type)
+-   [typeArguments](./././~/Deno.lint.TSTypeQuery#property_typearguments)
 
 I
 
@@ -3240,11 +3241,11 @@ I
 
 No documentation available
 
-*   [parent](./././~/Deno.lint.TSTypeReference#property_parent)
-*   [range](./././~/Deno.lint.TSTypeReference#property_range)
-*   [type](./././~/Deno.lint.TSTypeReference#property_type)
-*   [typeArguments](./././~/Deno.lint.TSTypeReference#property_typearguments)
-*   [typeName](./././~/Deno.lint.TSTypeReference#property_typename)
+-   [parent](./././~/Deno.lint.TSTypeReference#property_parent)
+-   [range](./././~/Deno.lint.TSTypeReference#property_range)
+-   [type](./././~/Deno.lint.TSTypeReference#property_type)
+-   [typeArguments](./././~/Deno.lint.TSTypeReference#property_typearguments)
+-   [typeName](./././~/Deno.lint.TSTypeReference#property_typename)
 
 I
 
@@ -3252,9 +3253,9 @@ I
 
 No documentation available
 
-*   [parent](./././~/Deno.lint.TSUndefinedKeyword#property_parent)
-*   [range](./././~/Deno.lint.TSUndefinedKeyword#property_range)
-*   [type](./././~/Deno.lint.TSUndefinedKeyword#property_type)
+-   [parent](./././~/Deno.lint.TSUndefinedKeyword#property_parent)
+-   [range](./././~/Deno.lint.TSUndefinedKeyword#property_range)
+-   [type](./././~/Deno.lint.TSUndefinedKeyword#property_type)
 
 I
 
@@ -3262,10 +3263,10 @@ I
 
 No documentation available
 
-*   [parent](./././~/Deno.lint.TSUnionType#property_parent)
-*   [range](./././~/Deno.lint.TSUnionType#property_range)
-*   [type](./././~/Deno.lint.TSUnionType#property_type)
-*   [types](./././~/Deno.lint.TSUnionType#property_types)
+-   [parent](./././~/Deno.lint.TSUnionType#property_parent)
+-   [range](./././~/Deno.lint.TSUnionType#property_range)
+-   [type](./././~/Deno.lint.TSUnionType#property_type)
+-   [types](./././~/Deno.lint.TSUnionType#property_types)
 
 I
 
@@ -3273,9 +3274,9 @@ I
 
 No documentation available
 
-*   [parent](./././~/Deno.lint.TSUnknownKeyword#property_parent)
-*   [range](./././~/Deno.lint.TSUnknownKeyword#property_range)
-*   [type](./././~/Deno.lint.TSUnknownKeyword#property_type)
+-   [parent](./././~/Deno.lint.TSUnknownKeyword#property_parent)
+-   [range](./././~/Deno.lint.TSUnknownKeyword#property_range)
+-   [type](./././~/Deno.lint.TSUnknownKeyword#property_type)
 
 I
 
@@ -3283,9 +3284,9 @@ I
 
 No documentation available
 
-*   [parent](./././~/Deno.lint.TSVoidKeyword#property_parent)
-*   [range](./././~/Deno.lint.TSVoidKeyword#property_range)
-*   [type](./././~/Deno.lint.TSVoidKeyword#property_type)
+-   [parent](./././~/Deno.lint.TSVoidKeyword#property_parent)
+-   [range](./././~/Deno.lint.TSVoidKeyword#property_range)
+-   [type](./././~/Deno.lint.TSVoidKeyword#property_type)
 
 T
 
@@ -3299,11 +3300,11 @@ I
 
 Apply operand on value based on the specified operator.
 
-*   [argument](./././~/Deno.lint.UnaryExpression#property_argument)
-*   [operator](./././~/Deno.lint.UnaryExpression#property_operator)
-*   [parent](./././~/Deno.lint.UnaryExpression#property_parent)
-*   [range](./././~/Deno.lint.UnaryExpression#property_range)
-*   [type](./././~/Deno.lint.UnaryExpression#property_type)
+-   [argument](./././~/Deno.lint.UnaryExpression#property_argument)
+-   [operator](./././~/Deno.lint.UnaryExpression#property_operator)
+-   [parent](./././~/Deno.lint.UnaryExpression#property_parent)
+-   [range](./././~/Deno.lint.UnaryExpression#property_range)
+-   [type](./././~/Deno.lint.UnaryExpression#property_type)
 
 I
 
@@ -3311,12 +3312,12 @@ I
 
 Syntactic sugar to increment or decrement a value.
 
-*   [argument](./././~/Deno.lint.UpdateExpression#property_argument)
-*   [operator](./././~/Deno.lint.UpdateExpression#property_operator)
-*   [parent](./././~/Deno.lint.UpdateExpression#property_parent)
-*   [prefix](./././~/Deno.lint.UpdateExpression#property_prefix)
-*   [range](./././~/Deno.lint.UpdateExpression#property_range)
-*   [type](./././~/Deno.lint.UpdateExpression#property_type)
+-   [argument](./././~/Deno.lint.UpdateExpression#property_argument)
+-   [operator](./././~/Deno.lint.UpdateExpression#property_operator)
+-   [parent](./././~/Deno.lint.UpdateExpression#property_parent)
+-   [prefix](./././~/Deno.lint.UpdateExpression#property_prefix)
+-   [range](./././~/Deno.lint.UpdateExpression#property_range)
+-   [type](./././~/Deno.lint.UpdateExpression#property_type)
 
 I
 
@@ -3324,12 +3325,12 @@ I
 
 Variable declaration.
 
-*   [declarations](./././~/Deno.lint.VariableDeclaration#property_declarations)
-*   [declare](./././~/Deno.lint.VariableDeclaration#property_declare)
-*   [kind](./././~/Deno.lint.VariableDeclaration#property_kind)
-*   [parent](./././~/Deno.lint.VariableDeclaration#property_parent)
-*   [range](./././~/Deno.lint.VariableDeclaration#property_range)
-*   [type](./././~/Deno.lint.VariableDeclaration#property_type)
+-   [declarations](./././~/Deno.lint.VariableDeclaration#property_declarations)
+-   [declare](./././~/Deno.lint.VariableDeclaration#property_declare)
+-   [kind](./././~/Deno.lint.VariableDeclaration#property_kind)
+-   [parent](./././~/Deno.lint.VariableDeclaration#property_parent)
+-   [range](./././~/Deno.lint.VariableDeclaration#property_range)
+-   [type](./././~/Deno.lint.VariableDeclaration#property_type)
 
 I
 
@@ -3337,12 +3338,12 @@ I
 
 A VariableDeclaration can declare multiple variables. This node represents a single declaration out of that.
 
-*   [definite](./././~/Deno.lint.VariableDeclarator#property_definite)
-*   [id](./././~/Deno.lint.VariableDeclarator#property_id)
-*   [init](./././~/Deno.lint.VariableDeclarator#property_init)
-*   [parent](./././~/Deno.lint.VariableDeclarator#property_parent)
-*   [range](./././~/Deno.lint.VariableDeclarator#property_range)
-*   [type](./././~/Deno.lint.VariableDeclarator#property_type)
+-   [definite](./././~/Deno.lint.VariableDeclarator#property_definite)
+-   [id](./././~/Deno.lint.VariableDeclarator#property_id)
+-   [init](./././~/Deno.lint.VariableDeclarator#property_init)
+-   [parent](./././~/Deno.lint.VariableDeclarator#property_parent)
+-   [range](./././~/Deno.lint.VariableDeclarator#property_range)
+-   [type](./././~/Deno.lint.VariableDeclarator#property_type)
 
 I
 
@@ -3350,11 +3351,11 @@ I
 
 Run a loop while the test expression is truthy.
 
-*   [body](./././~/Deno.lint.WhileStatement#property_body)
-*   [parent](./././~/Deno.lint.WhileStatement#property_parent)
-*   [range](./././~/Deno.lint.WhileStatement#property_range)
-*   [test](./././~/Deno.lint.WhileStatement#property_test)
-*   [type](./././~/Deno.lint.WhileStatement#property_type)
+-   [body](./././~/Deno.lint.WhileStatement#property_body)
+-   [parent](./././~/Deno.lint.WhileStatement#property_parent)
+-   [range](./././~/Deno.lint.WhileStatement#property_range)
+-   [test](./././~/Deno.lint.WhileStatement#property_test)
+-   [type](./././~/Deno.lint.WhileStatement#property_type)
 
 I
 
@@ -3362,11 +3363,11 @@ I
 
 Pause or resume a generator function.
 
-*   [argument](./././~/Deno.lint.YieldExpression#property_argument)
-*   [delegate](./././~/Deno.lint.YieldExpression#property_delegate)
-*   [parent](./././~/Deno.lint.YieldExpression#property_parent)
-*   [range](./././~/Deno.lint.YieldExpression#property_range)
-*   [type](./././~/Deno.lint.YieldExpression#property_type)
+-   [argument](./././~/Deno.lint.YieldExpression#property_argument)
+-   [delegate](./././~/Deno.lint.YieldExpression#property_delegate)
+-   [parent](./././~/Deno.lint.YieldExpression#property_parent)
+-   [range](./././~/Deno.lint.YieldExpression#property_range)
+-   [type](./././~/Deno.lint.YieldExpression#property_type)
 
 f
 
@@ -3386,11 +3387,11 @@ I
 
 A generic network listener for stream-oriented protocols.
 
-*   [accept](./././~/Deno.Listener#method_accept_0)
-*   [addr](./././~/Deno.Listener#property_addr)
-*   [close](./././~/Deno.Listener#method_close_0)
-*   [ref](./././~/Deno.Listener#method_ref_0)
-*   [unref](./././~/Deno.Listener#method_unref_0)
+-   [accept](./././~/Deno.Listener#method_accept_0)
+-   [addr](./././~/Deno.Listener#property_addr)
+-   [close](./././~/Deno.Listener#method_close_0)
+-   [ref](./././~/Deno.Listener#method_ref_0)
+-   [unref](./././~/Deno.Listener#method_unref_0)
 
 I
 
@@ -3398,9 +3399,9 @@ I
 
 No documentation available
 
-*   [hostname](./././~/Deno.ListenOptions#property_hostname)
-*   [port](./././~/Deno.ListenOptions#property_port)
-*   [tcpBacklog](./././~/Deno.ListenOptions#property_tcpbacklog)
+-   [hostname](./././~/Deno.ListenOptions#property_hostname)
+-   [port](./././~/Deno.ListenOptions#property_port)
+-   [tcpBacklog](./././~/Deno.ListenOptions#property_tcpbacklog)
 
 f
 
@@ -3414,8 +3415,8 @@ I
 
 No documentation available
 
-*   [alpnProtocols](./././~/Deno.ListenTlsOptions#property_alpnprotocols)
-*   [transport](./././~/Deno.ListenTlsOptions#property_transport)
+-   [alpnProtocols](./././~/Deno.ListenTlsOptions#property_alpnprotocols)
+-   [transport](./././~/Deno.ListenTlsOptions#property_transport)
 
 f
 
@@ -3471,9 +3472,9 @@ I
 
 Options which can be set when using [`Deno.makeTempDir`](./././~/Deno.makeTempDir), [`Deno.makeTempDirSync`](./././~/Deno.makeTempDirSync), [`Deno.makeTempFile`](./././~/Deno.makeTempFile), and [`Deno.makeTempFileSync`](./././~/Deno.makeTempFileSync).
 
-*   [dir](./././~/Deno.MakeTempOptions#property_dir)
-*   [prefix](./././~/Deno.MakeTempOptions#property_prefix)
-*   [suffix](./././~/Deno.MakeTempOptions#property_suffix)
+-   [dir](./././~/Deno.MakeTempOptions#property_dir)
+-   [prefix](./././~/Deno.MakeTempOptions#property_prefix)
+-   [suffix](./././~/Deno.MakeTempOptions#property_suffix)
 
 I
 
@@ -3481,10 +3482,10 @@ I
 
 No documentation available
 
-*   [external](./././~/Deno.MemoryUsage#property_external)
-*   [heapTotal](./././~/Deno.MemoryUsage#property_heaptotal)
-*   [heapUsed](./././~/Deno.MemoryUsage#property_heapused)
-*   [rss](./././~/Deno.MemoryUsage#property_rss)
+-   [external](./././~/Deno.MemoryUsage#property_external)
+-   [heapTotal](./././~/Deno.MemoryUsage#property_heaptotal)
+-   [heapUsed](./././~/Deno.MemoryUsage#property_heapused)
+-   [rss](./././~/Deno.MemoryUsage#property_rss)
 
 f
 
@@ -3504,8 +3505,8 @@ I
 
 Options which can be set when using [`Deno.mkdir`](./././~/Deno.mkdir) and [`Deno.mkdirSync`](./././~/Deno.mkdirSync).
 
-*   [mode](./././~/Deno.MkdirOptions#property_mode)
-*   [recursive](./././~/Deno.MkdirOptions#property_recursive)
+-   [mode](./././~/Deno.MkdirOptions#property_mode)
+-   [recursive](./././~/Deno.MkdirOptions#property_recursive)
 
 f
 
@@ -3519,9 +3520,9 @@ I
 
 Represents membership of a IPv4 multicast group.
 
-*   [leave](./././~/Deno.MulticastV4Membership#property_leave)
-*   [setLoopback](./././~/Deno.MulticastV4Membership#property_setloopback)
-*   [setTTL](./././~/Deno.MulticastV4Membership#property_setttl)
+-   [leave](./././~/Deno.MulticastV4Membership#property_leave)
+-   [setLoopback](./././~/Deno.MulticastV4Membership#property_setloopback)
+-   [setTTL](./././~/Deno.MulticastV4Membership#property_setttl)
 
 I
 
@@ -3529,8 +3530,8 @@ I
 
 Represents membership of a IPv6 multicast group.
 
-*   [leave](./././~/Deno.MulticastV6Membership#property_leave)
-*   [setLoopback](./././~/Deno.MulticastV6Membership#property_setloopback)
+-   [leave](./././~/Deno.MulticastV6Membership#property_leave)
+-   [setLoopback](./././~/Deno.MulticastV6Membership#property_setloopback)
 
 I
 
@@ -3538,8 +3539,8 @@ I
 
 If [`Deno.resolveDns`](./././~/Deno.resolveDns) is called with `"MX"` record type specified, it will return an array of objects with this interface.
 
-*   [exchange](./././~/Deno.MxRecord#property_exchange)
-*   [preference](./././~/Deno.MxRecord#property_preference)
+-   [exchange](./././~/Deno.MxRecord#property_exchange)
+-   [preference](./././~/Deno.MxRecord#property_preference)
 
 I
 
@@ -3547,12 +3548,12 @@ I
 
 If [`Deno.resolveDns`](./././~/Deno.resolveDns) is called with `"NAPTR"` record type specified, it will return an array of objects with this interface.
 
-*   [flags](./././~/Deno.NaptrRecord#property_flags)
-*   [order](./././~/Deno.NaptrRecord#property_order)
-*   [preference](./././~/Deno.NaptrRecord#property_preference)
-*   [regexp](./././~/Deno.NaptrRecord#property_regexp)
-*   [replacement](./././~/Deno.NaptrRecord#property_replacement)
-*   [services](./././~/Deno.NaptrRecord#property_services)
+-   [flags](./././~/Deno.NaptrRecord#property_flags)
+-   [order](./././~/Deno.NaptrRecord#property_order)
+-   [preference](./././~/Deno.NaptrRecord#property_preference)
+-   [regexp](./././~/Deno.NaptrRecord#property_regexp)
+-   [replacement](./././~/Deno.NaptrRecord#property_replacement)
+-   [services](./././~/Deno.NaptrRecord#property_services)
 
 T
 
@@ -3620,7 +3621,7 @@ I
 
 The native struct type for interfacing with foreign functions.
 
-*   [struct](./././~/Deno.NativeStructType#property_struct)
+-   [struct](./././~/Deno.NativeStructType#property_struct)
 
 T
 
@@ -3670,9 +3671,9 @@ I
 
 No documentation available
 
-*   [hostname](./././~/Deno.NetAddr#property_hostname)
-*   [port](./././~/Deno.NetAddr#property_port)
-*   [transport](./././~/Deno.NetAddr#property_transport)
+-   [hostname](./././~/Deno.NetAddr#property_hostname)
+-   [port](./././~/Deno.NetAddr#property_port)
+-   [transport](./././~/Deno.NetAddr#property_transport)
 
 I
 
@@ -3680,8 +3681,8 @@ I
 
 The permission descriptor for the `allow-net` and `deny-net` permissions, which controls access to opening network ports and connecting to remote hosts via the network. The option `host` allows scoping the permission for outbound connection to a specific host and port.
 
-*   [host](./././~/Deno.NetPermissionDescriptor#property_host)
-*   [name](./././~/Deno.NetPermissionDescriptor#property_name)
+-   [host](./././~/Deno.NetPermissionDescriptor#property_host)
+-   [name](./././~/Deno.NetPermissionDescriptor#property_name)
 
 I
 
@@ -3689,13 +3690,13 @@ I
 
 The information for a network interface returned from a call to [`Deno.networkInterfaces`](./././~/Deno.networkInterfaces).
 
-*   [address](./././~/Deno.NetworkInterfaceInfo#property_address)
-*   [cidr](./././~/Deno.NetworkInterfaceInfo#property_cidr)
-*   [family](./././~/Deno.NetworkInterfaceInfo#property_family)
-*   [mac](./././~/Deno.NetworkInterfaceInfo#property_mac)
-*   [name](./././~/Deno.NetworkInterfaceInfo#property_name)
-*   [netmask](./././~/Deno.NetworkInterfaceInfo#property_netmask)
-*   [scopeid](./././~/Deno.NetworkInterfaceInfo#property_scopeid)
+-   [address](./././~/Deno.NetworkInterfaceInfo#property_address)
+-   [cidr](./././~/Deno.NetworkInterfaceInfo#property_cidr)
+-   [family](./././~/Deno.NetworkInterfaceInfo#property_family)
+-   [mac](./././~/Deno.NetworkInterfaceInfo#property_mac)
+-   [name](./././~/Deno.NetworkInterfaceInfo#property_name)
+-   [netmask](./././~/Deno.NetworkInterfaceInfo#property_netmask)
+-   [scopeid](./././~/Deno.NetworkInterfaceInfo#property_scopeid)
 
 f
 
@@ -3727,13 +3728,13 @@ I
 
 Options which can be set when doing [`Deno.open`](./././~/Deno.open) and [`Deno.openSync`](./././~/Deno.openSync).
 
-*   [append](./././~/Deno.OpenOptions#property_append)
-*   [create](./././~/Deno.OpenOptions#property_create)
-*   [createNew](./././~/Deno.OpenOptions#property_createnew)
-*   [mode](./././~/Deno.OpenOptions#property_mode)
-*   [read](./././~/Deno.OpenOptions#property_read)
-*   [truncate](./././~/Deno.OpenOptions#property_truncate)
-*   [write](./././~/Deno.OpenOptions#property_write)
+-   [append](./././~/Deno.OpenOptions#property_append)
+-   [create](./././~/Deno.OpenOptions#property_create)
+-   [createNew](./././~/Deno.OpenOptions#property_createnew)
+-   [mode](./././~/Deno.OpenOptions#property_mode)
+-   [read](./././~/Deno.OpenOptions#property_read)
+-   [truncate](./././~/Deno.OpenOptions#property_truncate)
+-   [write](./././~/Deno.OpenOptions#property_write)
 
 f
 
@@ -3777,14 +3778,14 @@ I
 
 A set of options which can define the permissions within a test or worker context at a highly specific level.
 
-*   [env](./././~/Deno.PermissionOptionsObject#property_env)
-*   [ffi](./././~/Deno.PermissionOptionsObject#property_ffi)
-*   [import](./././~/Deno.PermissionOptionsObject#property_import)
-*   [net](./././~/Deno.PermissionOptionsObject#property_net)
-*   [read](./././~/Deno.PermissionOptionsObject#property_read)
-*   [run](./././~/Deno.PermissionOptionsObject#property_run)
-*   [sys](./././~/Deno.PermissionOptionsObject#property_sys)
-*   [write](./././~/Deno.PermissionOptionsObject#property_write)
+-   [env](./././~/Deno.PermissionOptionsObject#property_env)
+-   [ffi](./././~/Deno.PermissionOptionsObject#property_ffi)
+-   [import](./././~/Deno.PermissionOptionsObject#property_import)
+-   [net](./././~/Deno.PermissionOptionsObject#property_net)
+-   [read](./././~/Deno.PermissionOptionsObject#property_read)
+-   [run](./././~/Deno.PermissionOptionsObject#property_run)
+-   [sys](./././~/Deno.PermissionOptionsObject#property_sys)
+-   [write](./././~/Deno.PermissionOptionsObject#property_write)
 
 c
 
@@ -3792,12 +3793,12 @@ c
 
 Deno's permission management API.
 
-*   [query](./././~/Deno.Permissions#method_query_0)
-*   [querySync](./././~/Deno.Permissions#method_querysync_0)
-*   [request](./././~/Deno.Permissions#method_request_0)
-*   [requestSync](./././~/Deno.Permissions#method_requestsync_0)
-*   [revoke](./././~/Deno.Permissions#method_revoke_0)
-*   [revokeSync](./././~/Deno.Permissions#method_revokesync_0)
+-   [query](./././~/Deno.Permissions#method_query_0)
+-   [querySync](./././~/Deno.Permissions#method_querysync_0)
+-   [request](./././~/Deno.Permissions#method_request_0)
+-   [requestSync](./././~/Deno.Permissions#method_requestsync_0)
+-   [revoke](./././~/Deno.Permissions#method_revoke_0)
+-   [revokeSync](./././~/Deno.Permissions#method_revokesync_0)
 
 v
 
@@ -3817,11 +3818,11 @@ c
 
 An `EventTarget` returned from the [`Deno.permissions`](./././~/Deno.permissions) API which can provide updates to any state changes of the permission.
 
-*   [addEventListener](./././~/Deno.PermissionStatus#method_addeventlistener_0)
-*   [onchange](./././~/Deno.PermissionStatus#property_onchange)
-*   [partial](./././~/Deno.PermissionStatus#property_partial)
-*   [removeEventListener](./././~/Deno.PermissionStatus#method_removeeventlistener_0)
-*   [state](./././~/Deno.PermissionStatus#property_state)
+-   [addEventListener](./././~/Deno.PermissionStatus#method_addeventlistener_0)
+-   [onchange](./././~/Deno.PermissionStatus#property_onchange)
+-   [partial](./././~/Deno.PermissionStatus#property_partial)
+-   [removeEventListener](./././~/Deno.PermissionStatus#method_removeeventlistener_0)
+-   [state](./././~/Deno.PermissionStatus#property_state)
 
 I
 
@@ -3829,7 +3830,7 @@ I
 
 The interface which defines what event types are supported by `PermissionStatus` instances.
 
-*   [change](./././~/Deno.PermissionStatusEventMap#property_change)
+-   [change](./././~/Deno.PermissionStatusEventMap#property_change)
 
 v
 
@@ -3843,7 +3844,7 @@ I
 
 A non-null pointer, represented as an object at runtime. The object's prototype is `null` and cannot be changed. The object cannot be assigned to either and is thus entirely read-only.
 
-*   [brand](./././~/Deno.PointerObject#property_brand)
+-   [brand](./././~/Deno.PointerObject#property_brand)
 
 T
 
@@ -3869,8 +3870,8 @@ I
 
 No documentation available
 
-*   [alpnProtocols](./././~/Deno.QuicAcceptOptions#property_alpnprotocols)
-*   [zeroRtt](./././~/Deno.QuicAcceptOptions#property_zerortt)
+-   [alpnProtocols](./././~/Deno.QuicAcceptOptions#property_alpnprotocols)
+-   [zeroRtt](./././~/Deno.QuicAcceptOptions#property_zerortt)
 
 I
 
@@ -3878,8 +3879,8 @@ I
 
 No documentation available
 
-*   [readable](./././~/Deno.QuicBidirectionalStream#property_readable)
-*   [writable](./././~/Deno.QuicBidirectionalStream#property_writable)
+-   [readable](./././~/Deno.QuicBidirectionalStream#property_readable)
+-   [writable](./././~/Deno.QuicBidirectionalStream#property_writable)
 
 I
 
@@ -3887,8 +3888,8 @@ I
 
 No documentation available
 
-*   [closeCode](./././~/Deno.QuicCloseInfo#property_closecode)
-*   [reason](./././~/Deno.QuicCloseInfo#property_reason)
+-   [closeCode](./././~/Deno.QuicCloseInfo#property_closecode)
+-   [reason](./././~/Deno.QuicCloseInfo#property_reason)
 
 I
 
@@ -3896,20 +3897,20 @@ I
 
 No documentation available
 
-*   [close](./././~/Deno.QuicConn#method_close_0)
-*   [closed](./././~/Deno.QuicConn#property_closed)
-*   [createBidirectionalStream](./././~/Deno.QuicConn#method_createbidirectionalstream_0)
-*   [createUnidirectionalStream](./././~/Deno.QuicConn#method_createunidirectionalstream_0)
-*   [endpoint](./././~/Deno.QuicConn#property_endpoint)
-*   [handshake](./././~/Deno.QuicConn#property_handshake)
-*   [incomingBidirectionalStreams](./././~/Deno.QuicConn#property_incomingbidirectionalstreams)
-*   [incomingUnidirectionalStreams](./././~/Deno.QuicConn#property_incomingunidirectionalstreams)
-*   [maxDatagramSize](./././~/Deno.QuicConn#property_maxdatagramsize)
-*   [protocol](./././~/Deno.QuicConn#property_protocol)
-*   [readDatagram](./././~/Deno.QuicConn#method_readdatagram_0)
-*   [remoteAddr](./././~/Deno.QuicConn#property_remoteaddr)
-*   [sendDatagram](./././~/Deno.QuicConn#method_senddatagram_0)
-*   [serverName](./././~/Deno.QuicConn#property_servername)
+-   [close](./././~/Deno.QuicConn#method_close_0)
+-   [closed](./././~/Deno.QuicConn#property_closed)
+-   [createBidirectionalStream](./././~/Deno.QuicConn#method_createbidirectionalstream_0)
+-   [createUnidirectionalStream](./././~/Deno.QuicConn#method_createunidirectionalstream_0)
+-   [endpoint](./././~/Deno.QuicConn#property_endpoint)
+-   [handshake](./././~/Deno.QuicConn#property_handshake)
+-   [incomingBidirectionalStreams](./././~/Deno.QuicConn#property_incomingbidirectionalstreams)
+-   [incomingUnidirectionalStreams](./././~/Deno.QuicConn#property_incomingunidirectionalstreams)
+-   [maxDatagramSize](./././~/Deno.QuicConn#property_maxdatagramsize)
+-   [protocol](./././~/Deno.QuicConn#property_protocol)
+-   [readDatagram](./././~/Deno.QuicConn#method_readdatagram_0)
+-   [remoteAddr](./././~/Deno.QuicConn#property_remoteaddr)
+-   [sendDatagram](./././~/Deno.QuicConn#method_senddatagram_0)
+-   [serverName](./././~/Deno.QuicConn#property_servername)
 
 c
 
@@ -3917,9 +3918,9 @@ c
 
 No documentation available
 
-*   [addr](./././~/Deno.QuicEndpoint#property_addr)
-*   [close](./././~/Deno.QuicEndpoint#method_close_0)
-*   [listen](./././~/Deno.QuicEndpoint#method_listen_0)
+-   [addr](./././~/Deno.QuicEndpoint#property_addr)
+-   [close](./././~/Deno.QuicEndpoint#method_close_0)
+-   [listen](./././~/Deno.QuicEndpoint#method_listen_0)
 
 I
 
@@ -3927,8 +3928,8 @@ I
 
 No documentation available
 
-*   [hostname](./././~/Deno.QuicEndpointOptions#property_hostname)
-*   [port](./././~/Deno.QuicEndpointOptions#property_port)
+-   [hostname](./././~/Deno.QuicEndpointOptions#property_hostname)
+-   [port](./././~/Deno.QuicEndpointOptions#property_port)
 
 I
 
@@ -3936,12 +3937,12 @@ I
 
 An incoming connection for which the server has not yet begun its part of the handshake.
 
-*   [accept](./././~/Deno.QuicIncoming#method_accept_0)
-*   [ignore](./././~/Deno.QuicIncoming#method_ignore_0)
-*   [localIp](./././~/Deno.QuicIncoming#property_localip)
-*   [refuse](./././~/Deno.QuicIncoming#method_refuse_0)
-*   [remoteAddr](./././~/Deno.QuicIncoming#property_remoteaddr)
-*   [remoteAddressValidated](./././~/Deno.QuicIncoming#property_remoteaddressvalidated)
+-   [accept](./././~/Deno.QuicIncoming#method_accept_0)
+-   [ignore](./././~/Deno.QuicIncoming#method_ignore_0)
+-   [localIp](./././~/Deno.QuicIncoming#property_localip)
+-   [refuse](./././~/Deno.QuicIncoming#method_refuse_0)
+-   [remoteAddr](./././~/Deno.QuicIncoming#property_remoteaddr)
+-   [remoteAddressValidated](./././~/Deno.QuicIncoming#property_remoteaddressvalidated)
 
 I
 
@@ -3949,10 +3950,10 @@ I
 
 Specialized listener that accepts QUIC connections.
 
-*   [accept](./././~/Deno.QuicListener#method_accept_0)
-*   [endpoint](./././~/Deno.QuicListener#property_endpoint)
-*   [incoming](./././~/Deno.QuicListener#method_incoming_0)
-*   [stop](./././~/Deno.QuicListener#method_stop_0)
+-   [accept](./././~/Deno.QuicListener#method_accept_0)
+-   [endpoint](./././~/Deno.QuicListener#property_endpoint)
+-   [incoming](./././~/Deno.QuicListener#method_incoming_0)
+-   [stop](./././~/Deno.QuicListener#method_stop_0)
 
 I
 
@@ -3960,9 +3961,9 @@ I
 
 No documentation available
 
-*   [alpnProtocols](./././~/Deno.QuicListenOptions#property_alpnprotocols)
-*   [cert](./././~/Deno.QuicListenOptions#property_cert)
-*   [key](./././~/Deno.QuicListenOptions#property_key)
+-   [alpnProtocols](./././~/Deno.QuicListenOptions#property_alpnprotocols)
+-   [cert](./././~/Deno.QuicListenOptions#property_cert)
+-   [key](./././~/Deno.QuicListenOptions#property_key)
 
 I
 
@@ -3970,7 +3971,7 @@ I
 
 No documentation available
 
-*   [id](./././~/Deno.QuicReceiveStream#property_id)
+-   [id](./././~/Deno.QuicReceiveStream#property_id)
 
 I
 
@@ -3978,8 +3979,8 @@ I
 
 No documentation available
 
-*   [id](./././~/Deno.QuicSendStream#property_id)
-*   [sendOrder](./././~/Deno.QuicSendStream#property_sendorder)
+-   [id](./././~/Deno.QuicSendStream#property_id)
+-   [sendOrder](./././~/Deno.QuicSendStream#property_sendorder)
 
 I
 
@@ -3987,8 +3988,8 @@ I
 
 No documentation available
 
-*   [sendOrder](./././~/Deno.QuicSendStreamOptions#property_sendorder)
-*   [waitUntilAvailable](./././~/Deno.QuicSendStreamOptions#property_waituntilavailable)
+-   [sendOrder](./././~/Deno.QuicSendStreamOptions#property_sendorder)
+-   [waitUntilAvailable](./././~/Deno.QuicSendStreamOptions#property_waituntilavailable)
 
 I
 
@@ -3996,8 +3997,8 @@ I
 
 No documentation available
 
-*   [preferredAddressV4](./././~/Deno.QuicServerTransportOptions#property_preferredaddressv4)
-*   [preferredAddressV6](./././~/Deno.QuicServerTransportOptions#property_preferredaddressv6)
+-   [preferredAddressV4](./././~/Deno.QuicServerTransportOptions#property_preferredaddressv4)
+-   [preferredAddressV6](./././~/Deno.QuicServerTransportOptions#property_preferredaddressv6)
 
 I
 
@@ -4005,11 +4006,11 @@ I
 
 No documentation available
 
-*   [congestionControl](./././~/Deno.QuicTransportOptions#property_congestioncontrol)
-*   [keepAliveInterval](./././~/Deno.QuicTransportOptions#property_keepaliveinterval)
-*   [maxConcurrentBidirectionalStreams](./././~/Deno.QuicTransportOptions#property_maxconcurrentbidirectionalstreams)
-*   [maxConcurrentUnidirectionalStreams](./././~/Deno.QuicTransportOptions#property_maxconcurrentunidirectionalstreams)
-*   [maxIdleTimeout](./././~/Deno.QuicTransportOptions#property_maxidletimeout)
+-   [congestionControl](./././~/Deno.QuicTransportOptions#property_congestioncontrol)
+-   [keepAliveInterval](./././~/Deno.QuicTransportOptions#property_keepaliveinterval)
+-   [maxConcurrentBidirectionalStreams](./././~/Deno.QuicTransportOptions#property_maxconcurrentbidirectionalstreams)
+-   [maxConcurrentUnidirectionalStreams](./././~/Deno.QuicTransportOptions#property_maxconcurrentunidirectionalstreams)
+-   [maxIdleTimeout](./././~/Deno.QuicTransportOptions#property_maxidletimeout)
 
 f
 
@@ -4035,7 +4036,7 @@ I
 
 Options which can be set when using [`Deno.readFile`](./././~/Deno.readFile) or [`Deno.readFileSync`](./././~/Deno.readFileSync).
 
-*   [signal](./././~/Deno.ReadFileOptions#property_signal)
+-   [signal](./././~/Deno.ReadFileOptions#property_signal)
 
 f
 
@@ -4061,8 +4062,8 @@ I
 
 The permission descriptor for the `allow-read` and `deny-read` permissions, which controls access to reading resources from the local host. The option `path` allows scoping the permission to a specific path (and if the path is a directory any sub paths).
 
-*   [name](./././~/Deno.ReadPermissionDescriptor#property_name)
-*   [path](./././~/Deno.ReadPermissionDescriptor#property_path)
+-   [name](./././~/Deno.ReadPermissionDescriptor#property_name)
+-   [path](./././~/Deno.ReadPermissionDescriptor#property_path)
 
 f
 
@@ -4112,7 +4113,7 @@ I
 
 Options which can be set when using [`Deno.remove`](./././~/Deno.remove) and [`Deno.removeSync`](./././~/Deno.removeSync).
 
-*   [recursive](./././~/Deno.RemoveOptions#property_recursive)
+-   [recursive](./././~/Deno.RemoveOptions#property_recursive)
 
 f
 
@@ -4150,8 +4151,8 @@ I
 
 Options which can be set when using [`Deno.resolveDns`](./././~/Deno.resolveDns).
 
-*   [nameServer](./././~/Deno.ResolveDnsOptions#property_nameserver)
-*   [signal](./././~/Deno.ResolveDnsOptions#property_signal)
+-   [nameServer](./././~/Deno.ResolveDnsOptions#property_nameserver)
+-   [signal](./././~/Deno.ResolveDnsOptions#property_signal)
 
 I
 
@@ -4159,8 +4160,8 @@ I
 
 The permission descriptor for the `allow-run` and `deny-run` permissions, which controls access to what sub-processes can be executed by Deno. The option `command` allows scoping the permission to a specific executable.
 
-*   [command](./././~/Deno.RunPermissionDescriptor#property_command)
-*   [name](./././~/Deno.RunPermissionDescriptor#property_name)
+-   [command](./././~/Deno.RunPermissionDescriptor#property_command)
+-   [name](./././~/Deno.RunPermissionDescriptor#property_name)
 
 E
 
@@ -4180,8 +4181,8 @@ I
 
 Interface that module run with `deno serve` subcommand must conform to.
 
-*   [fetch](./././~/Deno.ServeDefaultExport#property_fetch)
-*   [onListen](./././~/Deno.ServeDefaultExport#property_onlisten)
+-   [fetch](./././~/Deno.ServeDefaultExport#property_fetch)
+-   [onListen](./././~/Deno.ServeDefaultExport#property_onlisten)
 
 T
 
@@ -4195,8 +4196,8 @@ I
 
 Additional information for an HTTP request and its connection.
 
-*   [completed](./././~/Deno.ServeHandlerInfo#property_completed)
-*   [remoteAddr](./././~/Deno.ServeHandlerInfo#property_remoteaddr)
+-   [completed](./././~/Deno.ServeHandlerInfo#property_completed)
+-   [remoteAddr](./././~/Deno.ServeHandlerInfo#property_remoteaddr)
 
 I
 
@@ -4204,7 +4205,7 @@ I
 
 No documentation available
 
-*   [handler](./././~/Deno.ServeInit#property_handler)
+-   [handler](./././~/Deno.ServeInit#property_handler)
 
 I
 
@@ -4212,9 +4213,9 @@ I
 
 Options which can be set when calling [`Deno.serve`](./././~/Deno.serve).
 
-*   [onError](./././~/Deno.ServeOptions#property_onerror)
-*   [onListen](./././~/Deno.ServeOptions#property_onlisten)
-*   [signal](./././~/Deno.ServeOptions#property_signal)
+-   [onError](./././~/Deno.ServeOptions#property_onerror)
+-   [onListen](./././~/Deno.ServeOptions#property_onlisten)
+-   [signal](./././~/Deno.ServeOptions#property_signal)
 
 I
 
@@ -4222,11 +4223,11 @@ I
 
 Options that can be passed to `Deno.serve` to create a server listening on a TCP port.
 
-*   [hostname](./././~/Deno.ServeTcpOptions#property_hostname)
-*   [port](./././~/Deno.ServeTcpOptions#property_port)
-*   [reusePort](./././~/Deno.ServeTcpOptions#property_reuseport)
-*   [tcpBacklog](./././~/Deno.ServeTcpOptions#property_tcpbacklog)
-*   [transport](./././~/Deno.ServeTcpOptions#property_transport)
+-   [hostname](./././~/Deno.ServeTcpOptions#property_hostname)
+-   [port](./././~/Deno.ServeTcpOptions#property_port)
+-   [reusePort](./././~/Deno.ServeTcpOptions#property_reuseport)
+-   [tcpBacklog](./././~/Deno.ServeTcpOptions#property_tcpbacklog)
+-   [transport](./././~/Deno.ServeTcpOptions#property_transport)
 
 I
 
@@ -4234,8 +4235,8 @@ I
 
 Options that can be passed to `Deno.serve` to create a server listening on a Unix domain socket.
 
-*   [path](./././~/Deno.ServeUnixOptions#property_path)
-*   [transport](./././~/Deno.ServeUnixOptions#property_transport)
+-   [path](./././~/Deno.ServeUnixOptions#property_path)
+-   [transport](./././~/Deno.ServeUnixOptions#property_transport)
 
 I
 
@@ -4243,9 +4244,9 @@ I
 
 Options that can be passed to `Deno.serve` to create a server listening on a VSOCK socket.
 
-*   [cid](./././~/Deno.ServeVsockOptions#property_cid)
-*   [port](./././~/Deno.ServeVsockOptions#property_port)
-*   [transport](./././~/Deno.ServeVsockOptions#property_transport)
+-   [cid](./././~/Deno.ServeVsockOptions#property_cid)
+-   [port](./././~/Deno.ServeVsockOptions#property_port)
+-   [transport](./././~/Deno.ServeVsockOptions#property_transport)
 
 I
 
@@ -4253,7 +4254,7 @@ I
 
 No documentation available
 
-*   [cbreak](./././~/Deno.SetRawOptions#property_cbreak)
+-   [cbreak](./././~/Deno.SetRawOptions#property_cbreak)
 
 T
 
@@ -4267,13 +4268,13 @@ I
 
 If [`Deno.resolveDns`](./././~/Deno.resolveDns) is called with `"SOA"` record type specified, it will return an array of objects with this interface.
 
-*   [expire](./././~/Deno.SoaRecord#property_expire)
-*   [minimum](./././~/Deno.SoaRecord#property_minimum)
-*   [mname](./././~/Deno.SoaRecord#property_mname)
-*   [refresh](./././~/Deno.SoaRecord#property_refresh)
-*   [retry](./././~/Deno.SoaRecord#property_retry)
-*   [rname](./././~/Deno.SoaRecord#property_rname)
-*   [serial](./././~/Deno.SoaRecord#property_serial)
+-   [expire](./././~/Deno.SoaRecord#property_expire)
+-   [minimum](./././~/Deno.SoaRecord#property_minimum)
+-   [mname](./././~/Deno.SoaRecord#property_mname)
+-   [refresh](./././~/Deno.SoaRecord#property_refresh)
+-   [retry](./././~/Deno.SoaRecord#property_retry)
+-   [rname](./././~/Deno.SoaRecord#property_rname)
+-   [serial](./././~/Deno.SoaRecord#property_serial)
 
 f
 
@@ -4299,10 +4300,10 @@ I
 
 If [`Deno.resolveDns`](./././~/Deno.resolveDns) is called with `"SRV"` record type specified, it will return an array of objects with this interface.
 
-*   [port](./././~/Deno.SrvRecord#property_port)
-*   [priority](./././~/Deno.SrvRecord#property_priority)
-*   [target](./././~/Deno.SrvRecord#property_target)
-*   [weight](./././~/Deno.SrvRecord#property_weight)
+-   [port](./././~/Deno.SrvRecord#property_port)
+-   [priority](./././~/Deno.SrvRecord#property_priority)
+-   [target](./././~/Deno.SrvRecord#property_target)
+-   [weight](./././~/Deno.SrvRecord#property_weight)
 
 f
 
@@ -4316,10 +4317,10 @@ I
 
 No documentation available
 
-*   [alpnProtocols](./././~/Deno.StartTlsOptions#property_alpnprotocols)
-*   [caCerts](./././~/Deno.StartTlsOptions#property_cacerts)
-*   [hostname](./././~/Deno.StartTlsOptions#property_hostname)
-*   [unsafelyDisableHostnameVerification](./././~/Deno.StartTlsOptions#property_unsafelydisablehostnameverification)
+-   [alpnProtocols](./././~/Deno.StartTlsOptions#property_alpnprotocols)
+-   [caCerts](./././~/Deno.StartTlsOptions#property_cacerts)
+-   [hostname](./././~/Deno.StartTlsOptions#property_hostname)
+-   [unsafelyDisableHostnameVerification](./././~/Deno.StartTlsOptions#property_unsafelydisablehostnameverification)
 
 f
 
@@ -4357,11 +4358,11 @@ v
 
 A reference to `stderr` which can be used to write directly to `stderr`. It implements the Deno specific [`Writer`](https://jsr.io/@std/io/doc/types/~/Writer), [`WriterSync`](https://jsr.io/@std/io/doc/types/~/WriterSync), and [`Closer`](https://jsr.io/@std/io/doc/types/~/Closer) interfaces as well as provides a `WritableStream` interface.
 
-*   [close](./././~/Deno.stderr#method_close_0)
-*   [isTerminal](./././~/Deno.stderr#method_isterminal_0)
-*   [writable](./././~/Deno.stderr#property_writable)
-*   [write](./././~/Deno.stderr#method_write_0)
-*   [writeSync](./././~/Deno.stderr#method_writesync_0)
+-   [close](./././~/Deno.stderr#method_close_0)
+-   [isTerminal](./././~/Deno.stderr#method_isterminal_0)
+-   [writable](./././~/Deno.stderr#property_writable)
+-   [write](./././~/Deno.stderr#method_write_0)
+-   [writeSync](./././~/Deno.stderr#method_writesync_0)
 
 v
 
@@ -4369,12 +4370,12 @@ v
 
 A reference to `stdin` which can be used to read directly from `stdin`.
 
-*   [close](./././~/Deno.stdin#method_close_0)
-*   [isTerminal](./././~/Deno.stdin#method_isterminal_0)
-*   [read](./././~/Deno.stdin#method_read_0)
-*   [readSync](./././~/Deno.stdin#method_readsync_0)
-*   [readable](./././~/Deno.stdin#property_readable)
-*   [setRaw](./././~/Deno.stdin#method_setraw_0)
+-   [close](./././~/Deno.stdin#method_close_0)
+-   [isTerminal](./././~/Deno.stdin#method_isterminal_0)
+-   [read](./././~/Deno.stdin#method_read_0)
+-   [readSync](./././~/Deno.stdin#method_readsync_0)
+-   [readable](./././~/Deno.stdin#property_readable)
+-   [setRaw](./././~/Deno.stdin#method_setraw_0)
 
 v
 
@@ -4382,11 +4383,11 @@ v
 
 A reference to `stdout` which can be used to write directly to `stdout`. It implements the Deno specific [`Writer`](https://jsr.io/@std/io/doc/types/~/Writer), [`WriterSync`](https://jsr.io/@std/io/doc/types/~/WriterSync), and [`Closer`](https://jsr.io/@std/io/doc/types/~/Closer) interfaces as well as provides a `WritableStream` interface.
 
-*   [close](./././~/Deno.stdout#method_close_0)
-*   [isTerminal](./././~/Deno.stdout#method_isterminal_0)
-*   [writable](./././~/Deno.stdout#property_writable)
-*   [write](./././~/Deno.stdout#method_write_0)
-*   [writeSync](./././~/Deno.stdout#method_writesync_0)
+-   [close](./././~/Deno.stdout#method_close_0)
+-   [isTerminal](./././~/Deno.stdout#method_isterminal_0)
+-   [writable](./././~/Deno.stdout#property_writable)
+-   [write](./././~/Deno.stdout#method_write_0)
+-   [writeSync](./././~/Deno.stdout#method_writesync_0)
 
 I
 
@@ -4394,10 +4395,10 @@ I
 
 The interface for stdout and stderr streams for child process returned from `Deno.Command.spawn`.
 
-*   [arrayBuffer](./././~/Deno.SubprocessReadableStream#method_arraybuffer_0)
-*   [bytes](./././~/Deno.SubprocessReadableStream#method_bytes_0)
-*   [json](./././~/Deno.SubprocessReadableStream#method_json_0)
-*   [text](./././~/Deno.SubprocessReadableStream#method_text_0)
+-   [arrayBuffer](./././~/Deno.SubprocessReadableStream#method_arraybuffer_0)
+-   [bytes](./././~/Deno.SubprocessReadableStream#method_bytes_0)
+-   [json](./././~/Deno.SubprocessReadableStream#method_json_0)
+-   [text](./././~/Deno.SubprocessReadableStream#method_text_0)
 
 f
 
@@ -4411,7 +4412,7 @@ I
 
 Options that can be used with `symlink` and `symlinkSync`.
 
-*   [type](./././~/Deno.SymlinkOptions#property_type)
+-   [type](./././~/Deno.SymlinkOptions#property_type)
 
 f
 
@@ -4425,8 +4426,8 @@ I
 
 The permission descriptor for the `allow-sys` and `deny-sys` permissions, which controls access to sensitive host system information, which malicious code might attempt to exploit. The option `kind` allows scoping the permission to a specific piece of information.
 
-*   [kind](./././~/Deno.SysPermissionDescriptor#property_kind)
-*   [name](./././~/Deno.SysPermissionDescriptor#property_name)
+-   [kind](./././~/Deno.SysPermissionDescriptor#property_kind)
+-   [name](./././~/Deno.SysPermissionDescriptor#property_name)
 
 I
 
@@ -4434,13 +4435,13 @@ I
 
 Information returned from a call to [`Deno.systemMemoryInfo`](./././~/Deno.systemMemoryInfo).
 
-*   [available](./././~/Deno.SystemMemoryInfo#property_available)
-*   [buffers](./././~/Deno.SystemMemoryInfo#property_buffers)
-*   [cached](./././~/Deno.SystemMemoryInfo#property_cached)
-*   [free](./././~/Deno.SystemMemoryInfo#property_free)
-*   [swapFree](./././~/Deno.SystemMemoryInfo#property_swapfree)
-*   [swapTotal](./././~/Deno.SystemMemoryInfo#property_swaptotal)
-*   [total](./././~/Deno.SystemMemoryInfo#property_total)
+-   [available](./././~/Deno.SystemMemoryInfo#property_available)
+-   [buffers](./././~/Deno.SystemMemoryInfo#property_buffers)
+-   [cached](./././~/Deno.SystemMemoryInfo#property_cached)
+-   [free](./././~/Deno.SystemMemoryInfo#property_free)
+-   [swapFree](./././~/Deno.SystemMemoryInfo#property_swapfree)
+-   [swapTotal](./././~/Deno.SystemMemoryInfo#property_swaptotal)
+-   [total](./././~/Deno.SystemMemoryInfo#property_total)
 
 f
 
@@ -4454,8 +4455,8 @@ I
 
 No documentation available
 
-*   [setKeepAlive](./././~/Deno.TcpConn#method_setkeepalive_0)
-*   [setNoDelay](./././~/Deno.TcpConn#method_setnodelay_0)
+-   [setKeepAlive](./././~/Deno.TcpConn#method_setkeepalive_0)
+-   [setNoDelay](./././~/Deno.TcpConn#method_setnodelay_0)
 
 T
 
@@ -4469,7 +4470,7 @@ I
 
 No documentation available
 
-*   [reusePort](./././~/Deno.TcpListenOptions#property_reuseport)
+-   [reusePort](./././~/Deno.TcpListenOptions#property_reuseport)
 
 N
 
@@ -4507,10 +4508,10 @@ I
 
 Context that is passed to a testing function, which can be used to either gain information about the current test, or register additional test steps within the current test.
 
-*   [name](./././~/Deno.TestContext#property_name)
-*   [origin](./././~/Deno.TestContext#property_origin)
-*   [parent](./././~/Deno.TestContext#property_parent)
-*   [step](./././~/Deno.TestContext#method_step_0)
+-   [name](./././~/Deno.TestContext#property_name)
+-   [origin](./././~/Deno.TestContext#property_origin)
+-   [parent](./././~/Deno.TestContext#property_parent)
+-   [step](./././~/Deno.TestContext#method_step_0)
 
 I
 
@@ -4518,14 +4519,14 @@ I
 
 No documentation available
 
-*   [fn](./././~/Deno.TestDefinition#property_fn)
-*   [ignore](./././~/Deno.TestDefinition#property_ignore)
-*   [name](./././~/Deno.TestDefinition#property_name)
-*   [only](./././~/Deno.TestDefinition#property_only)
-*   [permissions](./././~/Deno.TestDefinition#property_permissions)
-*   [sanitizeExit](./././~/Deno.TestDefinition#property_sanitizeexit)
-*   [sanitizeOps](./././~/Deno.TestDefinition#property_sanitizeops)
-*   [sanitizeResources](./././~/Deno.TestDefinition#property_sanitizeresources)
+-   [fn](./././~/Deno.TestDefinition#property_fn)
+-   [ignore](./././~/Deno.TestDefinition#property_ignore)
+-   [name](./././~/Deno.TestDefinition#property_name)
+-   [only](./././~/Deno.TestDefinition#property_only)
+-   [permissions](./././~/Deno.TestDefinition#property_permissions)
+-   [sanitizeExit](./././~/Deno.TestDefinition#property_sanitizeexit)
+-   [sanitizeOps](./././~/Deno.TestDefinition#property_sanitizeops)
+-   [sanitizeResources](./././~/Deno.TestDefinition#property_sanitizeresources)
 
 I
 
@@ -4533,12 +4534,12 @@ I
 
 No documentation available
 
-*   [fn](./././~/Deno.TestStepDefinition#property_fn)
-*   [ignore](./././~/Deno.TestStepDefinition#property_ignore)
-*   [name](./././~/Deno.TestStepDefinition#property_name)
-*   [sanitizeExit](./././~/Deno.TestStepDefinition#property_sanitizeexit)
-*   [sanitizeOps](./././~/Deno.TestStepDefinition#property_sanitizeops)
-*   [sanitizeResources](./././~/Deno.TestStepDefinition#property_sanitizeresources)
+-   [fn](./././~/Deno.TestStepDefinition#property_fn)
+-   [ignore](./././~/Deno.TestStepDefinition#property_ignore)
+-   [name](./././~/Deno.TestStepDefinition#property_name)
+-   [sanitizeExit](./././~/Deno.TestStepDefinition#property_sanitizeexit)
+-   [sanitizeOps](./././~/Deno.TestStepDefinition#property_sanitizeops)
+-   [sanitizeResources](./././~/Deno.TestStepDefinition#property_sanitizeresources)
 
 I
 
@@ -4546,9 +4547,9 @@ I
 
 Provides certified key material from strings. The key material is provided in `PEM`\-format (Privacy Enhanced Mail, [https://www.rfc-editor.org/rfc/rfc1422](https://www.rfc-editor.org/rfc/rfc1422)) which can be identified by having `-----BEGIN-----` and `-----END-----` markers at the beginning and end of the strings. This type of key is not compatible with `DER`\-format keys which are binary.
 
-*   [cert](./././~/Deno.TlsCertifiedKeyPem#property_cert)
-*   [key](./././~/Deno.TlsCertifiedKeyPem#property_key)
-*   [keyFormat](./././~/Deno.TlsCertifiedKeyPem#property_keyformat)
+-   [cert](./././~/Deno.TlsCertifiedKeyPem#property_cert)
+-   [key](./././~/Deno.TlsCertifiedKeyPem#property_key)
+-   [keyFormat](./././~/Deno.TlsCertifiedKeyPem#property_keyformat)
 
 I
 
@@ -4556,7 +4557,7 @@ I
 
 No documentation available
 
-*   [handshake](./././~/Deno.TlsConn#method_handshake_0)
+-   [handshake](./././~/Deno.TlsConn#method_handshake_0)
 
 I
 
@@ -4564,7 +4565,7 @@ I
 
 No documentation available
 
-*   [alpnProtocol](./././~/Deno.TlsHandshakeInfo#property_alpnprotocol)
+-   [alpnProtocol](./././~/Deno.TlsHandshakeInfo#property_alpnprotocol)
 
 T
 
@@ -4608,8 +4609,8 @@ I
 
 Unstable options which can be set when opening a datagram listener via [`Deno.listenDatagram`](./././~/Deno.listenDatagram).
 
-*   [loopback](./././~/Deno.UdpListenOptions#property_loopback)
-*   [reuseAddress](./././~/Deno.UdpListenOptions#property_reuseaddress)
+-   [loopback](./././~/Deno.UdpListenOptions#property_loopback)
+-   [reuseAddress](./././~/Deno.UdpListenOptions#property_reuseaddress)
 
 f
 
@@ -4629,8 +4630,8 @@ I
 
 No documentation available
 
-*   [path](./././~/Deno.UnixAddr#property_path)
-*   [transport](./././~/Deno.UnixAddr#property_transport)
+-   [path](./././~/Deno.UnixAddr#property_path)
+-   [transport](./././~/Deno.UnixAddr#property_transport)
 
 I
 
@@ -4644,8 +4645,8 @@ I
 
 No documentation available
 
-*   [path](./././~/Deno.UnixConnectOptions#property_path)
-*   [transport](./././~/Deno.UnixConnectOptions#property_transport)
+-   [path](./././~/Deno.UnixConnectOptions#property_path)
+-   [transport](./././~/Deno.UnixConnectOptions#property_transport)
 
 T
 
@@ -4659,7 +4660,7 @@ I
 
 Options which can be set when opening a Unix listener via [`Deno.listen`](./././~/Deno.listen) or [`Deno.listenDatagram`](./././~/Deno.listenDatagram).
 
-*   [path](./././~/Deno.UnixListenOptions#property_path)
+-   [path](./././~/Deno.UnixListenOptions#property_path)
 
 f
 
@@ -4673,13 +4674,13 @@ c
 
 An unsafe function pointer for passing JavaScript functions as C function pointers to foreign function calls.
 
-*   [callback](./././~/Deno.UnsafeCallback#property_callback)
-*   [close](./././~/Deno.UnsafeCallback#method_close_0)
-*   [definition](./././~/Deno.UnsafeCallback#property_definition)
-*   [pointer](./././~/Deno.UnsafeCallback#property_pointer)
-*   [ref](./././~/Deno.UnsafeCallback#method_ref_0)
-*   [threadSafe](./././~/Deno.UnsafeCallback#method_threadsafe_0)
-*   [unref](./././~/Deno.UnsafeCallback#method_unref_0)
+-   [callback](./././~/Deno.UnsafeCallback#property_callback)
+-   [close](./././~/Deno.UnsafeCallback#method_close_0)
+-   [definition](./././~/Deno.UnsafeCallback#property_definition)
+-   [pointer](./././~/Deno.UnsafeCallback#property_pointer)
+-   [ref](./././~/Deno.UnsafeCallback#method_ref_0)
+-   [threadSafe](./././~/Deno.UnsafeCallback#method_threadsafe_0)
+-   [unref](./././~/Deno.UnsafeCallback#method_unref_0)
 
 I
 
@@ -4687,8 +4688,8 @@ I
 
 Definition of a unsafe callback function.
 
-*   [parameters](./././~/Deno.UnsafeCallbackDefinition#property_parameters)
-*   [result](./././~/Deno.UnsafeCallbackDefinition#property_result)
+-   [parameters](./././~/Deno.UnsafeCallbackDefinition#property_parameters)
+-   [result](./././~/Deno.UnsafeCallbackDefinition#property_result)
 
 T
 
@@ -4702,9 +4703,9 @@ c
 
 An unsafe pointer to a function, for calling functions that are not present as symbols.
 
-*   [call](./././~/Deno.UnsafeFnPointer#property_call)
-*   [definition](./././~/Deno.UnsafeFnPointer#property_definition)
-*   [pointer](./././~/Deno.UnsafeFnPointer#property_pointer)
+-   [call](./././~/Deno.UnsafeFnPointer#property_call)
+-   [definition](./././~/Deno.UnsafeFnPointer#property_definition)
+-   [pointer](./././~/Deno.UnsafeFnPointer#property_pointer)
 
 c
 
@@ -4712,11 +4713,11 @@ c
 
 A collection of static functions for interacting with pointer objects.
 
-*   [create](./././~/Deno.UnsafePointer#method_create_0)
-*   [equals](./././~/Deno.UnsafePointer#method_equals_0)
-*   [of](./././~/Deno.UnsafePointer#method_of_0)
-*   [offset](./././~/Deno.UnsafePointer#method_offset_0)
-*   [value](./././~/Deno.UnsafePointer#method_value_0)
+-   [create](./././~/Deno.UnsafePointer#method_create_0)
+-   [equals](./././~/Deno.UnsafePointer#method_equals_0)
+-   [of](./././~/Deno.UnsafePointer#method_of_0)
+-   [offset](./././~/Deno.UnsafePointer#method_offset_0)
+-   [value](./././~/Deno.UnsafePointer#method_value_0)
 
 c
 
@@ -4724,22 +4725,22 @@ c
 
 An unsafe pointer view to a memory location as specified by the `pointer` value. The `UnsafePointerView` API follows the standard built in interface `DataView` for accessing the underlying types at an memory location (numbers, strings and raw bytes).
 
-*   [copyInto](./././~/Deno.UnsafePointerView#method_copyinto_0)
-*   [getArrayBuffer](./././~/Deno.UnsafePointerView#method_getarraybuffer_0)
-*   [getBigInt64](./././~/Deno.UnsafePointerView#method_getbigint64_0)
-*   [getBigUint64](./././~/Deno.UnsafePointerView#method_getbiguint64_0)
-*   [getBool](./././~/Deno.UnsafePointerView#method_getbool_0)
-*   [getCString](./././~/Deno.UnsafePointerView#method_getcstring_0)
-*   [getFloat32](./././~/Deno.UnsafePointerView#method_getfloat32_0)
-*   [getFloat64](./././~/Deno.UnsafePointerView#method_getfloat64_0)
-*   [getInt16](./././~/Deno.UnsafePointerView#method_getint16_0)
-*   [getInt32](./././~/Deno.UnsafePointerView#method_getint32_0)
-*   [getInt8](./././~/Deno.UnsafePointerView#method_getint8_0)
-*   [getPointer](./././~/Deno.UnsafePointerView#method_getpointer_0)
-*   [getUint16](./././~/Deno.UnsafePointerView#method_getuint16_0)
-*   [getUint32](./././~/Deno.UnsafePointerView#method_getuint32_0)
-*   [getUint8](./././~/Deno.UnsafePointerView#method_getuint8_0)
-*   [pointer](./././~/Deno.UnsafePointerView#property_pointer)
+-   [copyInto](./././~/Deno.UnsafePointerView#method_copyinto_0)
+-   [getArrayBuffer](./././~/Deno.UnsafePointerView#method_getarraybuffer_0)
+-   [getBigInt64](./././~/Deno.UnsafePointerView#method_getbigint64_0)
+-   [getBigUint64](./././~/Deno.UnsafePointerView#method_getbiguint64_0)
+-   [getBool](./././~/Deno.UnsafePointerView#method_getbool_0)
+-   [getCString](./././~/Deno.UnsafePointerView#method_getcstring_0)
+-   [getFloat32](./././~/Deno.UnsafePointerView#method_getfloat32_0)
+-   [getFloat64](./././~/Deno.UnsafePointerView#method_getfloat64_0)
+-   [getInt16](./././~/Deno.UnsafePointerView#method_getint16_0)
+-   [getInt32](./././~/Deno.UnsafePointerView#method_getint32_0)
+-   [getInt8](./././~/Deno.UnsafePointerView#method_getint8_0)
+-   [getPointer](./././~/Deno.UnsafePointerView#method_getpointer_0)
+-   [getUint16](./././~/Deno.UnsafePointerView#method_getuint16_0)
+-   [getUint32](./././~/Deno.UnsafePointerView#method_getuint32_0)
+-   [getUint8](./././~/Deno.UnsafePointerView#method_getuint8_0)
+-   [pointer](./././~/Deno.UnsafePointerView#property_pointer)
 
 c
 
@@ -4747,9 +4748,9 @@ c
 
 Creates a presentable WebGPU surface from given window and display handles.
 
-*   [getContext](./././~/Deno.UnsafeWindowSurface#method_getcontext_0)
-*   [present](./././~/Deno.UnsafeWindowSurface#method_present_0)
-*   [resize](./././~/Deno.UnsafeWindowSurface#method_resize_0)
+-   [getContext](./././~/Deno.UnsafeWindowSurface#method_getcontext_0)
+-   [present](./././~/Deno.UnsafeWindowSurface#method_present_0)
+-   [resize](./././~/Deno.UnsafeWindowSurface#method_resize_0)
 
 f
 
@@ -4763,8 +4764,8 @@ I
 
 Options which can be set when performing a [`Deno.upgradeWebSocket`](./././~/Deno.upgradeWebSocket) upgrade of a `Request`
 
-*   [idleTimeout](./././~/Deno.UpgradeWebSocketOptions#property_idletimeout)
-*   [protocol](./././~/Deno.UpgradeWebSocketOptions#property_protocol)
+-   [idleTimeout](./././~/Deno.UpgradeWebSocketOptions#property_idletimeout)
+-   [protocol](./././~/Deno.UpgradeWebSocketOptions#property_protocol)
 
 f
 
@@ -4790,9 +4791,9 @@ v
 
 Version information related to the current Deno CLI runtime environment.
 
-*   [deno](./././~/Deno.version#property_deno)
-*   [typescript](./././~/Deno.version#property_typescript)
-*   [v8](./././~/Deno.version#property_v8)
+-   [deno](./././~/Deno.version#property_deno)
+-   [typescript](./././~/Deno.version#property_typescript)
+-   [v8](./././~/Deno.version#property_v8)
 
 I
 
@@ -4800,9 +4801,9 @@ I
 
 No documentation available
 
-*   [cid](./././~/Deno.VsockAddr#property_cid)
-*   [port](./././~/Deno.VsockAddr#property_port)
-*   [transport](./././~/Deno.VsockAddr#property_transport)
+-   [cid](./././~/Deno.VsockAddr#property_cid)
+-   [port](./././~/Deno.VsockAddr#property_port)
+-   [transport](./././~/Deno.VsockAddr#property_transport)
 
 I
 
@@ -4816,9 +4817,9 @@ I
 
 No documentation available
 
-*   [cid](./././~/Deno.VsockConnectOptions#property_cid)
-*   [port](./././~/Deno.VsockConnectOptions#property_port)
-*   [transport](./././~/Deno.VsockConnectOptions#property_transport)
+-   [cid](./././~/Deno.VsockConnectOptions#property_cid)
+-   [port](./././~/Deno.VsockConnectOptions#property_port)
+-   [transport](./././~/Deno.VsockConnectOptions#property_transport)
 
 T
 
@@ -4832,8 +4833,8 @@ I
 
 Options which can be set when opening a VSOCK listener via [`Deno.listen`](./././~/Deno.listen).
 
-*   [cid](./././~/Deno.VsockListenOptions#property_cid)
-*   [port](./././~/Deno.VsockListenOptions#property_port)
+-   [cid](./././~/Deno.VsockListenOptions#property_cid)
+-   [port](./././~/Deno.VsockListenOptions#property_port)
 
 f
 
@@ -4865,8 +4866,8 @@ I
 
 The object that is returned from a [`Deno.upgradeWebSocket`](./././~/Deno.upgradeWebSocket) request.
 
-*   [response](./././~/Deno.WebSocketUpgrade#property_response)
-*   [socket](./././~/Deno.WebSocketUpgrade#property_socket)
+-   [response](./././~/Deno.WebSocketUpgrade#property_response)
+-   [socket](./././~/Deno.WebSocketUpgrade#property_socket)
 
 f
 
@@ -4880,11 +4881,11 @@ I
 
 Options for writing to a file.
 
-*   [append](./././~/Deno.WriteFileOptions#property_append)
-*   [create](./././~/Deno.WriteFileOptions#property_create)
-*   [createNew](./././~/Deno.WriteFileOptions#property_createnew)
-*   [mode](./././~/Deno.WriteFileOptions#property_mode)
-*   [signal](./././~/Deno.WriteFileOptions#property_signal)
+-   [append](./././~/Deno.WriteFileOptions#property_append)
+-   [create](./././~/Deno.WriteFileOptions#property_create)
+-   [createNew](./././~/Deno.WriteFileOptions#property_createnew)
+-   [mode](./././~/Deno.WriteFileOptions#property_mode)
+-   [signal](./././~/Deno.WriteFileOptions#property_signal)
 
 f
 
@@ -4898,8 +4899,8 @@ I
 
 The permission descriptor for the `allow-write` and `deny-write` permissions, which controls access to writing to resources from the local host. The option `path` allow scoping the permission to a specific path (and if the path is a directory any sub paths).
 
-*   [name](./././~/Deno.WritePermissionDescriptor#property_name)
-*   [path](./././~/Deno.WritePermissionDescriptor#property_path)
+-   [name](./././~/Deno.WritePermissionDescriptor#property_name)
+-   [path](./././~/Deno.WritePermissionDescriptor#property_path)
 
 f
 
@@ -4919,8 +4920,8 @@ I
 
 Legacy JavaScript feature, that's discouraged from being used today.
 
-*   [body](./././~/Deno.lint.WithStatement#property_body)
-*   [object](./././~/Deno.lint.WithStatement#property_object)
-*   [parent](./././~/Deno.lint.WithStatement#property_parent)
-*   [range](./././~/Deno.lint.WithStatement#property_range)
-*   [type](./././~/Deno.lint.WithStatement#property_type)
+-   [body](./././~/Deno.lint.WithStatement#property_body)
+-   [object](./././~/Deno.lint.WithStatement#property_object)
+-   [parent](./././~/Deno.lint.WithStatement#property_parent)
+-   [range](./././~/Deno.lint.WithStatement#property_range)
+-   [type](./././~/Deno.lint.WithStatement#property_type)

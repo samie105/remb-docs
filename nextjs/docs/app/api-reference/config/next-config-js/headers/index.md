@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/app/api-reference/config/next-config-js/
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:07:38.279Z"
-content_hash: "5bd28b3b4bd33cc09868e3343921bc2507e20bda57ec4b531779b43d5628e4f2"
+last_crawled_at: "2026-04-27T18:06:29.048Z"
+content_hash: "a83482883180f9ff8b3f8916e4dec3b0c56cb57cecba18a6e6c003aabc066b2c"
 menu_path: ["headers"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/api-reference/config/next-config-js/generateEtags/index.md", "title": "generateEtags"}
-nav_next: {"path": "nextjs/docs/app/api-reference/config/next-config-js/htmlLimitedBots/index.md", "title": "htmlLimitedBots"}
+version: "latest"
+content_language: "en"
 ---
+[Configuration](/docs/app/api-reference/config)[next.config.js](/docs/app/api-reference/config/next-config-js)headers
 
 # headers
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 Headers allow you to set custom HTTP headers on the response to an incoming request on a given path.
 
@@ -47,12 +48,12 @@ module.exports = {
 
 `headers` is an async function that expects an array to be returned holding objects with `source` and `headers` properties:
 
-*   `source` is the incoming request path pattern.
-*   `headers` is an array of response header objects, with `key` and `value` properties.
-*   `basePath`: `false` or `undefined` - if false the basePath won't be included when matching, can be used for external rewrites only.
-*   `locale`: `false` or `undefined` - whether the locale should not be included when matching.
-*   `has` is an array of [has objects](#header-cookie-and-query-matching) with the `type`, `key` and `value` properties.
-*   `missing` is an array of [missing objects](#header-cookie-and-query-matching) with the `type`, `key` and `value` properties.
+-   `source` is the incoming request path pattern.
+-   `headers` is an array of response header objects, with `key` and `value` properties.
+-   `basePath`: `false` or `undefined` - if false the basePath won't be included when matching, can be used for external rewrites only.
+-   `locale`: `false` or `undefined` - whether the locale should not be included when matching.
+-   `has` is an array of [has objects](#header-cookie-and-query-matching) with the `type`, `key` and `value` properties.
+-   `missing` is an array of [missing objects](#header-cookie-and-query-matching) with the `type`, `key` and `value` properties.
 
 Headers are checked before the filesystem which includes pages and `/public` files.
 
@@ -204,9 +205,9 @@ To only apply a header when header, cookie, or query values also match the `has`
 
 `has` and `missing` items can have the following fields:
 
-*   `type`: `String` - must be either `header`, `cookie`, `host`, or `query`.
-*   `key`: `String` - the key from the selected type to match against.
-*   `value`: `String` or `undefined` - the value to check for, if undefined any value will match. A regex like string can be used to capture a specific part of the value, e.g. if the value `first-(?<paramName>.*)` is used for `first-second` then `second` will be usable in the destination with `:paramName`.
+-   `type`: `String` - must be either `header`, `cookie`, `host`, or `query`.
+-   `key`: `String` - the key from the selected type to match against.
+-   `value`: `String` or `undefined` - the value to check for, if undefined any value will match. A regex like string can be used to capture a specific part of the value, e.g. if the value `first-(?<paramName>.*)` is used for `first-second` then `second` will be usable in the destination with `:paramName`.
 
 next.config.js
 
@@ -526,36 +527,10 @@ Learn more about adding a [Content Security Policy](/docs/app/guides/content-sec
 
 ## Version History[](#version-history)
 
-Version
-
-Changes
-
-`v13.3.0`
-
-`missing` added.
-
-`v10.2.0`
-
-`has` added.
-
-`v9.5.0`
-
-Headers added.
-
-[Previous
-
-generateEtags
-
-](/docs/app/api-reference/config/next-config-js/generateEtags)
-
-[Next
-
-htmlLimitedBots
-
-](/docs/app/api-reference/config/next-config-js/htmlLimitedBots)
+| Version | Changes |
+| --- | --- |
+| `v13.3.0` | `missing` added. |
+| `v10.2.0` | `has` added. |
+| `v9.5.0` | Headers added. |
 
 Was this helpful?
-
-supported.
-
-Send

@@ -5,10 +5,11 @@ canonical_url: "https://docs.deno.com/api/node/stream/consumers/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:40:52.600Z"
-content_hash: "6d75370891dd01844504c3bf991c1f274c3f56ed4324527f810252579d89c6ec"
+last_crawled_at: "2026-04-27T17:12:22.523Z"
+content_hash: "e4a9e7e0cf84aa7dfd1ee6347d07f875d503c27dcfc79666df50d0a9ac036914"
 menu_path: ["stream/consumers - Node documentation"]
 section_path: []
+content_language: "en"
 ---
 ### Usage in Deno
 
@@ -17,8 +18,6 @@ import * as mod from "node:stream/consumers";
 ```
 
 The utility consumer functions provide common options for consuming streams.
-
-### Functions [#](#Functions)
 
 f
 

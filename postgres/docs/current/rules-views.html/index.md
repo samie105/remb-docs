@@ -5,14 +5,12 @@ canonical_url: "https://www.postgresql.org/docs/current/rules-views.html"
 docset: "postgres"
 kind: "database"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:46:24.499Z"
-content_hash: "294a1e67ff6383f118bff8a9c068a6db5947d31171ad61d2b2f2765bb30956ef"
+last_crawled_at: "2026-04-27T20:47:29.250Z"
+content_hash: "166b1ba5bfffbe9b59a01e0954151a19da072397058ff353957078eac212750d"
 menu_path: ["PostgreSQL: Documentation: 18: 39.2. Views and the Rule System"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/rules-update.html/index.md", "title": "PostgreSQL: Documentation: 18: 39.4.\u00a0Rules on INSERT, UPDATE, and DELETE"}
-nav_next: {"path": "postgres/docs/current/runtime-config-client.html/index.md", "title": "PostgreSQL: Documentation: 18: 19.11.\u00a0Client Connection Defaults"}
+content_language: "en"
 ---
-
 Views in PostgreSQL are implemented using the rule system. A view is basically an empty table (having no actual storage) with an `ON SELECT DO INSTEAD` rule. Conventionally, that rule is named `_RETURN`. So a view like
 
 although you can't actually write that, because tables are not allowed to have `ON SELECT` rules.
@@ -243,13 +241,13 @@ UPDATE t1 SET b = t2.b FROM t2 WHERE t1.a = t2.a;
 
 are nearly identical. In particular:
 
-*   The range tables contain entries for the tables `t1` and `t2`.
+-   The range tables contain entries for the tables `t1` and `t2`.
     
-*   The target lists contain one variable that points to column `b` of the range table entry for table `t2`.
+-   The target lists contain one variable that points to column `b` of the range table entry for table `t2`.
     
-*   The qualification expressions compare the columns `a` of both range-table entries for equality.
+-   The qualification expressions compare the columns `a` of both range-table entries for equality.
     
-*   The join trees show a simple join between `t1` and `t2`.
+-   The join trees show a simple join between `t1` and `t2`.
     
 
 The consequence is, that both query trees result in similar execution plans: They are both joins over the two tables. For the `UPDATE` the missing columns from `t1` are added to the target list by the planner and the final query tree will read as:

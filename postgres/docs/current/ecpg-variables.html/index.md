@@ -5,14 +5,12 @@ canonical_url: "https://www.postgresql.org/docs/current/ecpg-variables.html"
 docset: "postgres"
 kind: "database"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:47:57.822Z"
-content_hash: "1add6fbd3d1b0e8dca1e57cc004aba7031858d7b4e10831702544da0161b6a13"
+last_crawled_at: "2026-04-27T20:48:25.884Z"
+content_hash: "4edaacf50068b0319bb62d27f00bf0e5387146fa90d64fac9c2fda9de7bad99d"
 menu_path: ["PostgreSQL: Documentation: 18: 34.4. Using Host Variables"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/ecpg-sql-whenever.html/index.md", "title": "PostgreSQL: Documentation: 18: WHENEVER"}
-nav_next: {"path": "postgres/docs/current/error-message-reporting.html/index.md", "title": "PostgreSQL: Documentation: 18: 55.2.\u00a0Reporting Errors Within the Server"}
+content_language: "en"
 ---
-
 In [Section 34.3](https://www.postgresql.org/docs/current/ecpg-commands.html "34.3. Running SQL Commands") you saw how you can execute SQL statements from an embedded SQL program. Some of those statements only used fixed values and did not provide a way to insert user-supplied values into statements or have the program process the values returned by the query. Those kinds of statements are not really useful in real applications. This section explains in detail how you can pass data between your C program and the embedded SQL statements using a simple mechanism called _host variables_. In an embedded SQL program we consider the SQL statements to be _guests_ in the C program code which is the _host language_. Therefore the variables of the C program are called _host variables_.
 
 Another way to exchange values between PostgreSQL backends and ECPG applications is the use of SQL descriptors, described in [Section 34.7](https://www.postgresql.org/docs/current/ecpg-descriptors.html "34.7. Using Descriptor Areas").
@@ -109,86 +107,32 @@ In this respect, there are two kinds of data types: Some simple PostgreSQL data 
 **Table 34.1. Mapping Between PostgreSQL Data Types and C Variable Types**
 
  
-
-PostgreSQL data type
-
-Host variable type
-
-`smallint`
-
-`short`
-
-`integer`
-
-`int`
-
-`bigint`
-
-`long long int`
-
-`decimal`
-
-`decimal`[\[a\]](#ftn.ECPG-DATATYPE-TABLE-FN)
-
-`numeric`
-
-`numeric`[\[a\]](https://www.postgresql.org/docs/current/ecpg-variables.html#ftn.ECPG-DATATYPE-TABLE-FN)
-
-`real`
-
-`float`
-
-`double precision`
-
-`double`
-
-`smallserial`
-
-`short`
-
-`serial`
-
-`int`
-
-`bigserial`
-
-`long long int`
-
-`oid`
-
-`unsigned int`
-
-``character(_`n`_)``, ``varchar(_`n`_)``, `text`
-
-``char[_`n`_+1]``, ``VARCHAR[_`n`_+1]``
-
-`name`
-
-`char[NAMEDATALEN]`
-
-`timestamp`
-
-`timestamp`[\[a\]](https://www.postgresql.org/docs/current/ecpg-variables.html#ftn.ECPG-DATATYPE-TABLE-FN)
-
-`interval`
-
-`interval`[\[a\]](https://www.postgresql.org/docs/current/ecpg-variables.html#ftn.ECPG-DATATYPE-TABLE-FN)
-
-`date`
-
-`date`[\[a\]](https://www.postgresql.org/docs/current/ecpg-variables.html#ftn.ECPG-DATATYPE-TABLE-FN)
-
-`boolean`
-
-`bool`[\[b\]](#ftn.id-1.7.5.10.7.5.2.2.17.2.2)
-
-`bytea`
-
-`char *`, ``bytea[_`n`_]``
-
+| PostgreSQL data type | Host variable type |
+| --- | --- |
+| `smallint` | `short` |
+| `integer` | `int` |
+| `bigint` | `long long int` |
+| `decimal` | `decimal`[\[a\]](#ftn.ECPG-DATATYPE-TABLE-FN) |
+| `numeric` | `numeric`[\[a\]](https://www.postgresql.org/docs/current/ecpg-variables.html#ftn.ECPG-DATATYPE-TABLE-FN) |
+| `real` | `float` |
+| `double precision` | `double` |
+| `smallserial` | `short` |
+| `serial` | `int` |
+| `bigserial` | `long long int` |
+| `oid` | `unsigned int` |
+| ``character(_`n`_)``, ``varchar(_`n`_)``, `text` | ``char[_`n`_+1]``, ``VARCHAR[_`n`_+1]`` |
+| `name` | `char[NAMEDATALEN]` |
+| `timestamp` | `timestamp`[\[a\]](https://www.postgresql.org/docs/current/ecpg-variables.html#ftn.ECPG-DATATYPE-TABLE-FN) |
+| `interval` | `interval`[\[a\]](https://www.postgresql.org/docs/current/ecpg-variables.html#ftn.ECPG-DATATYPE-TABLE-FN) |
+| `date` | `date`[\[a\]](https://www.postgresql.org/docs/current/ecpg-variables.html#ftn.ECPG-DATATYPE-TABLE-FN) |
+| `boolean` | `bool`[\[b\]](#ftn.id-1.7.5.10.7.5.2.2.17.2.2) |
+| `bytea` | `char *`, ``bytea[_`n`_]`` |
+| 
 [\[a\]](#ECPG-DATATYPE-TABLE-FN) This type can only be accessed through special library functions; see [Section 34.4.4.2](https://www.postgresql.org/docs/current/ecpg-variables.html#ECPG-SPECIAL-TYPES "34.4.4.2. Accessing Special Data Types").
 
 [\[b\]](#id-1.7.5.10.7.5.2.2.17.2.2) declared in `ecpglib.h` if not native
+
+ |
 
   
 
@@ -346,7 +290,7 @@ The member `arr` hosts binary format data. It can also handle `'\0'` as part of 
 
 ### Note
 
-`bytea` variable can be used only when [bytea\_output](postgres/docs/current/runtime-config-client.html/index.md#GUC-BYTEA-OUTPUT) is set to `hex`.
+`bytea` variable can be used only when [bytea\_output](https://www.postgresql.org/docs/current/runtime-config-client.html#GUC-BYTEA-OUTPUT) is set to `hex`.
 
 #### 34.4.4.3. Host Variables with Nonprimitive Types [#](#ECPG-VARIABLES-NONPRIMITIVE-C)
 

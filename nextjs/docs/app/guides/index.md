@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/app/guides"
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:13:54.670Z"
-content_hash: "a7114e559c2d1b009188e33f69331bcdb115bf1bacee0bce10fb001b4b480fba"
+last_crawled_at: "2026-04-27T18:12:37.877Z"
+content_hash: "69c4671ef6c7b4ad9ab468629feba7be5f4c3429f0f22e8f459487f6b02f077c"
 menu_path: ["Guides"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/getting-started/upgrading/index.md", "title": "Upgrading"}
-nav_next: {"path": "nextjs/docs/app/guides/ai-agents/index.md", "title": "How to set up your Next.js project for AI coding agents"}
+version: "latest"
+content_language: "en"
 ---
+[Next.js Docs](/docs)[App Router](/docs/app)Guides
 
 # Guides
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 [
 
@@ -331,20 +332,4 @@ Learn how to use view transitions to communicate meaning during navigation, load
 
 ](/docs/app/guides/view-transitions)
 
-[Previous
-
-Upgrading
-
-](/docs/app/getting-started/upgrading)
-
-[Next
-
-AI Coding Agents
-
-](/docs/app/guides/ai-agents)
-
 Was this helpful?
-
-supported.
-
-Send

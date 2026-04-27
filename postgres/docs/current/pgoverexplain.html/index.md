@@ -5,14 +5,12 @@ canonical_url: "https://www.postgresql.org/docs/current/pgoverexplain.html"
 docset: "postgres"
 kind: "database"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:45:38.876Z"
-content_hash: "1d82b5a4689cef985627c507390b0cf6c19b6e7015c5b88aa1149e2293ff685a"
+last_crawled_at: "2026-04-27T20:47:05.431Z"
+content_hash: "2b3e0c5d1e0401d5a24419e6a588b6258edf06013e79d9c49000a09bd4d06296"
 menu_path: ["PostgreSQL: Documentation: 18: F.29. pg_overexplain — allow EXPLAIN to dump even more details"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/pglogicalinspect.html/index.md", "title": "PostgreSQL: Documentation: 18: F.28.\u00a0pg_logicalinspect \u2014 logical decoding components inspection"}
-nav_next: {"path": "postgres/docs/current/pgprewarm.html/index.md", "title": "PostgreSQL: Documentation: 18: F.30.\u00a0pg_prewarm \u2014 preload relation data into buffer caches"}
+content_language: "en"
 ---
-
 Development Versions: [devel](https://www.postgresql.org/docs/devel/pgoverexplain.html "PostgreSQL devel - F.29. pg_overexplain — allow EXPLAIN to dump even more details")
 
 The `pg_overexplain` module extends `EXPLAIN` with new options that provide additional output. It is mostly intended to assist with debugging of and development of the planner, rather than for general use. Since this module displays internal details of planner data structures, it may be necessary to refer to the source code to make sense of the output. Furthermore, the output is likely to change whenever (and as often as) those data structures change.
@@ -21,34 +19,34 @@ To use it, simply load it into the server. You can load it into an individual se
 
 LOAD 'pg\_overexplain';
 
-You can also preload it into some or all sessions by including `pg_overexplain` in [session\_preload\_libraries](postgres/docs/current/runtime-config-client.html/index.md#GUC-SESSION-PRELOAD-LIBRARIES) or [shared\_preload\_libraries](postgres/docs/current/runtime-config-client.html/index.md#GUC-SHARED-PRELOAD-LIBRARIES) in `postgresql.conf`.
+You can also preload it into some or all sessions by including `pg_overexplain` in [session\_preload\_libraries](https://www.postgresql.org/docs/current/runtime-config-client.html#GUC-SESSION-PRELOAD-LIBRARIES) or [shared\_preload\_libraries](https://www.postgresql.org/docs/current/runtime-config-client.html#GUC-SHARED-PRELOAD-LIBRARIES) in `postgresql.conf`.
 
 ### F.29.1. EXPLAIN (DEBUG) [#](#PGOVEREXPLAIN-DEBUG)
 
 The `DEBUG` option displays miscellaneous information from the plan tree that is not normally shown because it is not expected to be of general interest. For each individual plan node, it will display the following fields. See `Plan` in `nodes/plannodes.h` for additional documentation of these fields.
 
-*   `Disabled Nodes`. Normal `EXPLAIN` determines whether a node is disabled by checking whether the node's count of disabled nodes is larger than the sum of the counts for the underlying nodes. This option shows the raw counter value.
+-   `Disabled Nodes`. Normal `EXPLAIN` determines whether a node is disabled by checking whether the node's count of disabled nodes is larger than the sum of the counts for the underlying nodes. This option shows the raw counter value.
     
-*   `Parallel Safe`. Indicates whether it would be safe for a plan tree node to appear beneath a `Gather` or `Gather Merge` node, regardless of whether it is actually below such a node.
+-   `Parallel Safe`. Indicates whether it would be safe for a plan tree node to appear beneath a `Gather` or `Gather Merge` node, regardless of whether it is actually below such a node.
     
-*   `Plan Node ID`. An internal ID number that should be unique for every node in the plan tree. It is used to coordinate parallel query activity.
+-   `Plan Node ID`. An internal ID number that should be unique for every node in the plan tree. It is used to coordinate parallel query activity.
     
-*   `extParam` and `allParam`. Information about which numbered parameters affect this plan node or its children. In text mode, these fields are only displayed if they are non-empty sets.
+-   `extParam` and `allParam`. Information about which numbered parameters affect this plan node or its children. In text mode, these fields are only displayed if they are non-empty sets.
     
 
 Once per query, the `DEBUG` option will display the following fields. See `PlannedStmt` in `nodes/plannodes.h` for additional detail.
 
-*   `Command Type`. For example, `select` or `update`.
+-   `Command Type`. For example, `select` or `update`.
     
-*   `Flags`. A comma-separated list of Boolean structure member names from the `PlannedStmt` that are set to `true`. It covers the following structure members: `hasReturning`, `hasModifyingCTE`, `canSetTag`, `transientPlan`, `dependsOnRole`, `parallelModeNeeded`.
+-   `Flags`. A comma-separated list of Boolean structure member names from the `PlannedStmt` that are set to `true`. It covers the following structure members: `hasReturning`, `hasModifyingCTE`, `canSetTag`, `transientPlan`, `dependsOnRole`, `parallelModeNeeded`.
     
-*   `Subplans Needing Rewind`. Integer IDs of subplans that may need to be rewound by the executor.
+-   `Subplans Needing Rewind`. Integer IDs of subplans that may need to be rewound by the executor.
     
-*   `Relation OIDs`. OIDs of relations upon which this plan depends.
+-   `Relation OIDs`. OIDs of relations upon which this plan depends.
     
-*   `Executor Parameter Types`. Type OID for each executor parameter (e.g. when a nested loop is chosen and a parameter is used to pass a value down to an inner index scan). Does not include parameters supplied to a prepared statement by the user.
+-   `Executor Parameter Types`. Type OID for each executor parameter (e.g. when a nested loop is chosen and a parameter is used to pass a value down to an inner index scan). Does not include parameters supplied to a prepared statement by the user.
     
-*   `Parse Location`. Location within the query string supplied to the planner where this query's text can be found. May be `Unknown` in some contexts. Otherwise, may be `NNN to end` for some integer `NNN` or `NNN for MMM bytes` for some integers `NNN` and `MMM`.
+-   `Parse Location`. Location within the query string supplied to the planner where this query's text can be found. May be `Unknown` in some contexts. Otherwise, may be `NNN to end` for some integer `NNN` or `NNN for MMM bytes` for some integers `NNN` and `MMM`.
     
 
 ### F.29.2. EXPLAIN (RANGE\_TABLE) [#](#PGOVEREXPLAIN-RANGE-TABLE)

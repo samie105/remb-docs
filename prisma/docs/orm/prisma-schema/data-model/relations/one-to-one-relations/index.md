@@ -5,18 +5,12 @@ canonical_url: "https://www.prisma.io/docs/orm/prisma-schema/data-model/relation
 docset: "prisma"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:55:27.239Z"
-content_hash: "dd38fd60672bdad49128ab45e2340a9ac60ae9df2cc9e79e4fafcd2ab8b316cd"
+last_crawled_at: "2026-04-27T19:44:48.107Z"
+content_hash: "d4dbbf774be883ee7c3b7912e17559c82f032fdaf444e1ebf7f007e39d8fb398"
 menu_path: ["One-to-one relations"]
 section_path: []
-nav_prev: {"path": "prisma/docs/orm/prisma-schema/data-model/relations/one-to-many-relations/index.md", "title": "One-to-many relations"}
-nav_next: {"path": "prisma/docs/orm/prisma-schema/data-model/relations/referential-actions/index.md", "title": "Referential actions"}
+content_language: "en"
 ---
-
-Data Model
-
-Relations
-
 How to define and work with one-to-one relations in Prisma.
 
 One-to-one (1-1) relations connect at most **one** record on each side. In this example, `User` and `Profile` have a 1-1 relation:
@@ -36,8 +30,8 @@ model Profile {
 
 This expresses:
 
-*   A user can have zero or one profile
-*   A profile must always be connected to exactly one user
+-   A user can have zero or one profile
+-   A profile must always be connected to exactly one user
 
 You can also reference a non-ID field with `@unique`:
 
@@ -139,5 +133,3 @@ model Profile {
   user User?
 }
 ```
-
-[Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/prisma-schema/data-model/relations/one-to-one-relations.mdx)

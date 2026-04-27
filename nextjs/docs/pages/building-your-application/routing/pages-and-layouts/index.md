@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/pages/building-your-application/routing/
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:23:34.742Z"
-content_hash: "c741898f804e1c7e3532da8928591df466e4c52a85c36a5403fd8956564a2c8e"
+last_crawled_at: "2026-04-27T18:22:51.870Z"
+content_hash: "8fcb8e19ae2ce111913402632e35fd49c21067a5bd85218809e893844f3dfd81"
 menu_path: ["Pages and Layouts"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/pages/building-your-application/routing/index.md", "title": "Routing"}
-nav_next: {"path": "nextjs/docs/pages/building-your-application/routing/dynamic-routes/index.md", "title": "Dynamic Routes"}
+version: "latest"
+content_language: "en"
 ---
+[Building Your Application](/docs/pages/building-your-application)[Routing](/docs/pages/building-your-application/routing)Pages and Layouts
 
 # Pages and Layouts
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 The Pages Router has a file-system based router built on the concept of pages.
 
@@ -35,15 +36,15 @@ export default function About() {
 
 The router will automatically route files named `index` to the root of the directory.
 
-*   `pages/index.js` → `/`
-*   `pages/blog/index.js` → `/blog`
+-   `pages/index.js` → `/`
+-   `pages/blog/index.js` → `/blog`
 
 ## Nested routes[](#nested-routes)
 
 The router supports nested files. If you create a nested folder structure, files will automatically be routed in the same way still.
 
-*   `pages/blog/first-post.js` → `/blog/first-post`
-*   `pages/dashboard/settings/username.js` → `/dashboard/settings/username`
+-   `pages/blog/first-post.js` → `/blog/first-post`
+-   `pages/dashboard/settings/username.js` → `/dashboard/settings/username`
 
 ## Pages with Dynamic Routes[](#pages-with-dynamic-routes)
 
@@ -141,8 +142,6 @@ When using TypeScript, you must first create a new type for your pages which inc
 
 pages/index.tsx
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -167,8 +166,6 @@ export default Page
 ```
 
 pages/\_app.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -221,7 +218,3 @@ export default function Layout({ children }) {
 ```
 
 Was this helpful?
-
-supported.
-
-Send

@@ -5,47 +5,45 @@ canonical_url: "https://www.postgresql.org/docs/current/sql-expressions.html"
 docset: "postgres"
 kind: "database"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:52:39.235Z"
-content_hash: "363ef7cb8b78c6832d115f98e848276c8d95dcfca358f4674f985428e650cdf5"
+last_crawled_at: "2026-04-27T20:51:19.275Z"
+content_hash: "61cf356343f14711147180e19a0b522f952149f3b687402f3f05fddea622252b"
 menu_path: ["PostgreSQL: Documentation: 18: 4.2. Value Expressions"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/sql-explain.html/index.md", "title": "PostgreSQL: Documentation: 18: EXPLAIN"}
-nav_next: {"path": "postgres/docs/current/sql-listen.html/index.md", "title": "PostgreSQL: Documentation: 18: LISTEN"}
+content_language: "en"
 ---
-
 Value expressions are used in a variety of contexts, such as in the target list of the `SELECT` command, as new column values in `INSERT` or `UPDATE`, or in search conditions in a number of commands. The result of a value expression is sometimes called a _scalar_, to distinguish it from the result of a table expression (which is a table). Value expressions are therefore also called _scalar expressions_ (or even simply _expressions_). The expression syntax allows the calculation of values from primitive parts using arithmetic, logical, set, and other operations.
 
 A value expression is one of the following:
 
-*   A constant or literal value
+-   A constant or literal value
     
-*   A column reference
+-   A column reference
     
-*   A positional parameter reference, in the body of a function definition or prepared statement
+-   A positional parameter reference, in the body of a function definition or prepared statement
     
-*   A subscripted expression
+-   A subscripted expression
     
-*   A field selection expression
+-   A field selection expression
     
-*   An operator invocation
+-   An operator invocation
     
-*   A function call
+-   A function call
     
-*   An aggregate expression
+-   An aggregate expression
     
-*   A window function call
+-   A window function call
     
-*   A type cast
+-   A type cast
     
-*   A collation expression
+-   A collation expression
     
-*   A scalar subquery
+-   A scalar subquery
     
-*   An array constructor
+-   An array constructor
     
-*   A row constructor
+-   A row constructor
     
-*   Another value expression in parentheses (used to group subexpressions and override precedence)
+-   Another value expression in parentheses (used to group subexpressions and override precedence)
     
 
 In addition to this list, there are a number of constructs that can be classified as an expression but do not follow any general syntax rules. These generally have the semantics of a function or operator and are explained in the appropriate location in [Chapter 9](https://www.postgresql.org/docs/current/functions.html "Chapter 9. Functions and Operators"). An example is the `IS NULL` clause.
@@ -124,9 +122,7 @@ This notation behaves differently depending on context; see [Section 8.16.5](ht
 
 There are two possible syntaxes for an operator invocation:
 
-_`expression`_ _`operator`_ _`expression`_ (binary infix operator)
-
-_`operator`_ _`expression`_ (unary prefix operator)
+<table summary="Simple list"><tbody><tr><td><em><code>expression</code></em> <em><code>operator</code></em> <em><code>expression</code></em> (binary infix operator)</td></tr><tr><td><em><code>operator</code></em> <em><code>expression</code></em> (unary prefix operator)</td></tr></tbody></table>
 
 where the _`operator`_ token follows the syntax rules of [Section 4.1.3](https://www.postgresql.org/docs/current/sql-syntax-lexical.html#SQL-SYNTAX-OPERATORS "4.1.3. Operators"), or is one of the key words `AND`, `OR`, and `NOT`, or is a qualified operator name in the form:
 
@@ -286,11 +282,11 @@ In `RANGE` or `GROUPS` mode, a _`frame_start`_ of `CURRENT ROW` means the frame 
 
 In the _`offset`_ `PRECEDING` and _`offset`_ `FOLLOWING` frame options, the _`offset`_ must be an expression not containing any variables, aggregate functions, or window functions. The meaning of the _`offset`_ depends on the frame mode:
 
-*   In `ROWS` mode, the _`offset`_ must yield a non-null, non-negative integer, and the option means that the frame starts or ends the specified number of rows before or after the current row.
+-   In `ROWS` mode, the _`offset`_ must yield a non-null, non-negative integer, and the option means that the frame starts or ends the specified number of rows before or after the current row.
     
-*   In `GROUPS` mode, the _`offset`_ again must yield a non-null, non-negative integer, and the option means that the frame starts or ends the specified number of _peer groups_ before or after the current row's peer group, where a peer group is a set of rows that are equivalent in the `ORDER BY` ordering. (There must be an `ORDER BY` clause in the window definition to use `GROUPS` mode.)
+-   In `GROUPS` mode, the _`offset`_ again must yield a non-null, non-negative integer, and the option means that the frame starts or ends the specified number of _peer groups_ before or after the current row's peer group, where a peer group is a set of rows that are equivalent in the `ORDER BY` ordering. (There must be an `ORDER BY` clause in the window definition to use `GROUPS` mode.)
     
-*   In `RANGE` mode, these options require that the `ORDER BY` clause specify exactly one column. The _`offset`_ specifies the maximum difference between the value of that column in the current row and its value in preceding or following rows of the frame. The data type of the _`offset`_ expression varies depending on the data type of the ordering column. For numeric ordering columns it is typically of the same type as the ordering column, but for datetime ordering columns it is an `interval`. For example, if the ordering column is of type `date` or `timestamp`, one could write `RANGE BETWEEN '1 day' PRECEDING AND '10 days' FOLLOWING`. The _`offset`_ is still required to be non-null and non-negative, though the meaning of “non-negative” depends on its data type.
+-   In `RANGE` mode, these options require that the `ORDER BY` clause specify exactly one column. The _`offset`_ specifies the maximum difference between the value of that column in the current row and its value in preceding or following rows of the frame. The data type of the _`offset`_ expression varies depending on the data type of the ordering column. For numeric ordering columns it is typically of the same type as the ordering column, but for datetime ordering columns it is an `interval`. For example, if the ordering column is of type `date` or `timestamp`, one could write `RANGE BETWEEN '1 day' PRECEDING AND '10 days' FOLLOWING`. The _`offset`_ is still required to be non-null and non-negative, though the meaning of “non-negative” depends on its data type.
     
 
 In any case, the distance to the end of the frame is limited by the distance to the end of the partition, so that for rows near the partition ends the frame might contain fewer rows than elsewhere.

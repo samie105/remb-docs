@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/pages/api-reference/config/next-config-j
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:21:05.130Z"
-content_hash: "ff303c43335bbffa6b844a821ef10e9ce2475e02fb9a09eb87a3607778ff16bd"
+last_crawled_at: "2026-04-27T18:20:30.312Z"
+content_hash: "32a9e3c1b94a4a8666f477489edb67a16428179e845e0a791ebf8d19a3930c4d"
 menu_path: ["pageExtensions"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/pages/api-reference/config/next-config-js/output/index.md", "title": "output"}
-nav_next: {"path": "nextjs/docs/pages/api-reference/config/next-config-js/poweredByHeader/index.md", "title": "poweredByHeader"}
+version: "latest"
+content_language: "en"
 ---
+[Configuration](/docs/pages/api-reference/config)[next.config.js Options](/docs/pages/api-reference/config/next-config-js)pageExtensions
 
 # pageExtensions
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 You can extend the default Page extensions (`.tsx`, `.ts`, `.jsx`, `.js`) used by Next.js. Inside `next.config.js`, add the `pageExtensions` config:
 
@@ -29,11 +30,11 @@ module.exports = {
 
 Changing these values affects _all_ Next.js pages, including the following:
 
-*   [`proxy.js`](/docs/pages/api-reference/file-conventions/proxy)
-*   [`instrumentation.js`](/docs/pages/guides/instrumentation)
-*   `pages/_document.js`
-*   `pages/_app.js`
-*   `pages/api/`
+-   [`proxy.js`](/docs/pages/api-reference/file-conventions/proxy)
+-   [`instrumentation.js`](/docs/pages/guides/instrumentation)
+-   `pages/_document.js`
+-   `pages/_app.js`
+-   `pages/api/`
 
 For example, if you reconfigure `.ts` page extensions to `.page.ts`, you would need to rename pages like `proxy.page.ts`, `instrumentation.page.ts`, `_app.page.ts`.
 
@@ -52,7 +53,3 @@ module.exports = {
 Then, rename your pages to have a file extension that includes `.page` (e.g. rename `MyPage.tsx` to `MyPage.page.tsx`). Ensure you rename _all_ Next.js pages, including the files mentioned above.
 
 Was this helpful?
-
-supported.
-
-Send

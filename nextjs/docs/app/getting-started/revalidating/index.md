@@ -5,24 +5,25 @@ canonical_url: "https://nextjs.org/docs/app/getting-started/revalidating"
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:13:42.127Z"
-content_hash: "3b49ca6ef93b9e0e9d3f810fb4bb87eecd6c479a97e7a3f158f2550d1bfce3f0"
+last_crawled_at: "2026-04-27T18:12:22.638Z"
+content_hash: "c48b80520d2a81577a8cbb2a6382b1de1ac64b824f6003b29aeec6ca8cce9618"
 menu_path: ["Revalidating"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/getting-started/caching/index.md", "title": "Caching"}
-nav_next: {"path": "nextjs/docs/app/getting-started/error-handling/index.md", "title": "Error Handling"}
+version: "latest"
+content_language: "en"
 ---
+[App Router](/docs/app)[Getting Started](/docs/app/getting-started)Revalidating
 
 # Revalidating
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 > This page covers revalidation with [Cache Components](/docs/app/api-reference/config/next-config-js/cacheComponents), enabled by setting [`cacheComponents: true`](/docs/app/api-reference/config/next-config-js/cacheComponents) in your `next.config.ts` file. If you're not using Cache Components, see the [Caching and Revalidating (Previous Model)](/docs/app/guides/caching-without-cache-components) guide.
 
 Revalidation is the process of updating cached data. It lets you keep serving fast, cached responses while ensuring content stays fresh. There are two strategies:
 
-*   **Time-based revalidation**: Automatically refresh cached data after a set duration using [`cacheLife`](#cachelife).
-*   **On-demand revalidation**: Manually invalidate cached data after a mutation using [`revalidateTag`](#revalidatetag), [`updateTag`](#updatetag), or [`revalidatePath`](#revalidatepath).
+-   **Time-based revalidation**: Automatically refresh cached data after a set duration using [`cacheLife`](#cachelife).
+-   **On-demand revalidation**: Manually invalidate cached data after a mutation using [`revalidateTag`](#revalidatetag), [`updateTag`](#updatetag), or [`revalidatePath`](#revalidatepath).
 
 ## `cacheLife`[](#cachelife)
 
@@ -42,61 +43,14 @@ export async function getProducts() {
 
 `cacheLife` accepts a profile name or a custom configuration object:
 
-Profile
-
-`stale`
-
-`revalidate`
-
-`expire`
-
-`seconds`
-
-0
-
-1s
-
-60s
-
-`minutes`
-
-5m
-
-1m
-
-1h
-
-`hours`
-
-5m
-
-1h
-
-1d
-
-`days`
-
-5m
-
-1d
-
-1w
-
-`weeks`
-
-5m
-
-1w
-
-30d
-
-`max`
-
-5m
-
-30d
-
-~indefinite
+| Profile | `stale` | `revalidate` | `expire` |
+| --- | --- | --- | --- |
+| `seconds` | 0 | 1s | 60s |
+| `minutes` | 5m | 1m | 1h |
+| `hours` | 5m | 1h | 1d |
+| `days` | 5m | 1d | 1w |
+| `weeks` | 5m | 1w | 30d |
+| `max` | 5m | 30d | ~indefinite |
 
 For fine-grained control, pass an object:
 
@@ -119,8 +73,6 @@ See the [`cacheLife` API reference](/docs/app/api-reference/functions/cacheLife)
 
 app/lib/data.ts
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -142,8 +94,6 @@ See the [`cacheTag` API reference](/docs/app/api-reference/functions/cacheTag) t
 `revalidateTag` invalidates cache entries by tag using stale-while-revalidate semantics — stale content is served immediately while fresh content loads in the background. This is ideal for content where a slight delay in updates is acceptable, like blog posts or product catalogs.
 
 app/lib/actions.ts
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -168,8 +118,6 @@ See the [`revalidateTag` API reference](/docs/app/api-reference/functions/revali
 
 app/lib/actions.ts
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -189,27 +137,11 @@ export async function createPost(formData: FormData) {
 }
 ```
 
-`updateTag`
-
-`revalidateTag`
-
-**Where**
-
-Server Actions only
-
-Server Actions and Route Handlers
-
-**Behavior**
-
-Immediately expires cache
-
-Stale-while-revalidate
-
-**Use case**
-
-Read-your-own-writes (user sees their change)
-
-Background refresh (slight delay OK)
+|  | `updateTag` | `revalidateTag` |
+| --- | --- | --- |
+| **Where** | Server Actions only | Server Actions and Route Handlers |
+| **Behavior** | Immediately expires cache | Stale-while-revalidate |
+| **Use case** | Read-your-own-writes (user sees their change) | Background refresh (slight delay OK) |
 
 See the [`updateTag` API reference](/docs/app/api-reference/functions/updateTag) to learn more.
 
@@ -218,8 +150,6 @@ See the [`updateTag` API reference](/docs/app/api-reference/functions/updateTag)
 `revalidatePath` invalidates all cached data for a specific route path. Use it when you want to revalidate a route without knowing which tags are associated with it.
 
 app/lib/actions.ts
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -278,20 +208,4 @@ API Reference for the revalidatePath function.
 
 ](/docs/app/api-reference/functions/revalidatePath)
 
-[Previous
-
-Caching
-
-](/docs/app/getting-started/caching)
-
-[Next
-
-Error Handling
-
-](/docs/app/getting-started/error-handling)
-
 Was this helpful?
-
-supported.
-
-Send

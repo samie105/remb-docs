@@ -5,49 +5,56 @@ canonical_url: "https://tailwindcss.com/docs/color-scheme"
 docset: "tailwind"
 kind: "framework"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:15:33.424Z"
-content_hash: "4a9ec441ef9725cf04e2d5ef292927c8a783b13f7021c9fa52ba355c4a1cff12"
+last_crawled_at: "2026-04-27T20:37:22.267Z"
+content_hash: "56fc47b083f38a53e0623a4645914b8bc0c861aaa0bafbfcdcdfb76c5a68e281"
 menu_path: ["color-scheme"]
 section_path: []
-nav_prev: {"path": "tailwind/docs/caret-color/index.md", "title": "caret-color"}
-nav_next: {"path": "tailwind/docs/cursor/index.md", "title": "cursor"}
+content_language: "en"
 ---
+[](/)
+
+[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
+
+1.  Interactivity
+2.  color-scheme
+
+Interactivity
 
 # color-scheme
 
 Utilities for controlling the color scheme of an element.
 
-Class
-
-Styles
-
-`scheme-normal`
-
+| Class | Styles |
+| --- | --- |
+| `scheme-normal` | 
 `color-scheme: normal;`
 
-`scheme-dark`
+ |
+| `scheme-dark` | 
 
 `color-scheme: dark;`
 
-`scheme-light`
+ |
+| `scheme-light` | 
 
 `color-scheme: light;`
 
-`scheme-light-dark`
+ |
+| `scheme-light-dark` | 
 
 `color-scheme: light dark;`
 
-`scheme-only-dark`
+ |
+| `scheme-only-dark` | 
 
 `color-scheme: only dark;`
 
-`scheme-only-light`
+ |
+| `scheme-only-light` | 
 
 `color-scheme: only light;`
 
-## [Examples](#examples)
-
-### [Basic example](#basic-example)
+ |
 
 Use utilities like `scheme-light` and `scheme-light-dark` to control how element should be rendered:
 
@@ -63,8 +70,6 @@ scheme-light-dark
 <div class="scheme-light ...">  <input type="date" /></div><div class="scheme-dark ...">  <input type="date" /></div><div class="scheme-light-dark ...">  <input type="date" /></div>
 ```
 
-### [Applying in dark mode](#applying-in-dark-mode)
-
 Prefix a `color-scheme` utility with a variant like `dark:*` to only apply the utility in that state:
 
 ```
@@ -75,10 +80,10 @@ Learn more about using variants in the [variants documentation](/docs/hover-focu
 
 ### On this page
 
-*   [Quick reference](#quick-reference)
-*   [Examples](#examples)
-    *   [Basic example](#basic-example)
-    *   [Applying in dark mode](#applying-in-dark-mode)
+-   [Quick reference](#quick-reference)
+-   [Examples](#examples)
+    -   [Basic example](#basic-example)
+    -   [Applying in dark mode](#applying-in-dark-mode)
 
 [
 

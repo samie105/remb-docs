@@ -5,25 +5,15 @@ canonical_url: "https://orm.drizzle.team/docs/column-types/cockroach"
 docset: "drizzle"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:34:20.282Z"
-content_hash: "1e148204d47a33ddb5a0c3e5f918815c8c7d2728bf4b8013e55ee866bdb20221"
+last_crawled_at: "2026-04-27T18:25:07.033Z"
+content_hash: "d8d7c392b1189692295773a0bcfb413b51ba19bff64d11b14999a565cf057389"
 menu_path: ["CockroachDB column types"]
 section_path: []
-nav_prev: {"path": "drizzle/docs/graphql/index.md", "title": "drizzle-graphql"}
-nav_next: {"path": "drizzle/docs/column-types/mssql/index.md", "title": "MSSQL column types"}
+content_language: "en"
 ---
-
 WARNING
 
 This page explains concepts available on drizzle versions `1.0.0-beta.2` and higher.
-
-npm
-
-yarn
-
-pnpm
-
-bun
 
 ```
 npm i drizzle-orm@beta
@@ -45,7 +35,7 @@ bun add drizzle-orm@beta
 bun add drizzle-kit@beta -D
 ```
 
-We have native support for all of them, yet if that’s not enough for you, feel free to create **[custom types](drizzle/docs/custom-types/index.md)**.
+We have native support for all of them, yet if that’s not enough for you, feel free to create **[custom types](https://orm.drizzle.team/docs/custom-types)**.
 
 important
 
@@ -53,7 +43,7 @@ All examples in this part of the documentation do not use database column name a
 
 You can use database aliases in column names if you want, and you can also use the `casing` parameter to define a mapping strategy for Drizzle.
 
-You can read more about it [here](drizzle/docs/sql-schema-declaration/index.md#shape-your-data-schema)
+You can read more about it [here](https://orm.drizzle.team/docs/sql-schema-declaration#shape-your-data-schema)
 
 ### bigint[](#bigint)
 
@@ -63,7 +53,7 @@ Signed 8-byte integer
 
 If you’re expecting values above 2^31 but below 2^53, you can utilize `mode: 'number'` and deal with javascript number as opposed to bigint.
 
-```
+```typescript
 import { bigint, cockroachTable } from "drizzle-orm/cockroach-core";
 
 export const table = cockroachTable('table', {
@@ -77,13 +67,13 @@ bigint: bigint({ mode: 'number' })
 bigint: bigint({ mode: 'bigint' })
 ```
 
-```
+```sql
 CREATE TABLE "table" (
 	"bigint" bigint
 );
 ```
 
-```
+```typescript
 import { sql } from "drizzle-orm";
 import { bigint, cockroachTable } from "drizzle-orm/cockroach-core";
 
@@ -93,7 +83,7 @@ export const table = cockroachTable('table', {
 });
 ```
 
-```
+```sql
 CREATE TABLE "table" (
 	"bigint1" bigint DEFAULT 10,
 	"bigint2" bigint DEFAULT '10'::bigint
@@ -105,7 +95,7 @@ CREATE TABLE "table" (
 `smallint` `int2`  
 Small-range signed 2-byte integer
 
-```
+```typescript
 import { smallint, cockroachTable } from "drizzle-orm/cockroach-core";
 
 export const table = cockroachTable('table', {
@@ -113,13 +103,13 @@ export const table = cockroachTable('table', {
 });
 ```
 
-```
+```sql
 CREATE TABLE "table" (
 	"smallint" smallint
 );
 ```
 
-```
+```typescript
 import { sql } from "drizzle-orm";
 import { smallint, cockroachTable } from "drizzle-orm/cockroach-core";
 
@@ -129,7 +119,7 @@ export const table = cockroachTable('table', {
 });
 ```
 
-```
+```sql
 CREATE TABLE "table" (
 	"smallint1" smallint DEFAULT 10,
 	"smallint2" smallint DEFAULT '10'::smallint
@@ -140,7 +130,7 @@ CREATE TABLE "table" (
 
 Signed 4-byte integer
 
-```
+```typescript
 import { int4, cockroachTable } from "drizzle-orm/cockroach-core";
 
 export const table = cockroachTable('table', {
@@ -148,13 +138,13 @@ export const table = cockroachTable('table', {
 });
 ```
 
-```
+```sql
 CREATE TABLE "table" (
 	"int4" int4
 );
 ```
 
-```
+```typescript
 import { sql } from "drizzle-orm";
 import { int4, cockroachTable } from "drizzle-orm/cockroach-core";
 
@@ -164,7 +154,7 @@ export const table = cockroachTable('table', {
 });
 ```
 
-```
+```sql
 CREATE TABLE "table" (
 	"int1" int4 DEFAULT 10,
 	"int2" int4 DEFAULT '10'::int4
@@ -187,7 +177,7 @@ Cockroach provides the standard SQL type bool.
 
 For more info please refer to the official Cockroach **[docs.](https://www.cockroachlabs.com/docs/stable/bool)**
 
-```
+```typescript
 import { bool, cockroachTable } from "drizzle-orm/cockroach-core";
 
 export const table = cockroachTable('table', {
@@ -195,7 +185,7 @@ export const table = cockroachTable('table', {
 });
 ```
 
-```
+```sql
 CREATE TABLE "table" (
 	"boolean" bool
 );
@@ -215,7 +205,7 @@ For more info please refer to the official CockroachDB **[docs.](https://www.coc
 
 You can define `{ enum: ["value1", "value2"] }` config to infer `insert` and `select` types, it **won’t** check runtime values.
 
-```
+```typescript
 import { string, cockroachTable } from "drizzle-orm/cockroach-core";
 
 export const table = cockroachTable('table', {
@@ -227,7 +217,7 @@ export const table = cockroachTable('table', {
 stringColumn: string({ enum: ["value1", "value2"] })
 ```
 
-```
+```sql
 CREATE TABLE "table" (
 	"stringColumn" string,
     "stringColumn1" string(256),
@@ -242,7 +232,7 @@ For more info please refer to the official CockroachDB **[docs.](https://www.coc
 
 You can define `{ enum: ["value1", "value2"] }` config to infer `insert` and `select` types, it **won’t** check runtime values.
 
-```
+```typescript
 import { text, cockroachTable } from "drizzle-orm/cockroach-core";
 
 export const table = cockroachTable('table', {
@@ -253,7 +243,7 @@ export const table = cockroachTable('table', {
 text: text({ enum: ["value1", "value2"] })
 ```
 
-```
+```sql
 CREATE TABLE "table" (
 	"text" text
 );
@@ -271,7 +261,7 @@ You can define `{ enum: ["value1", "value2"] }` config to infer `insert` and `se
 
 The `length` parameter is optional according to PostgreSQL docs.
 
-```
+```typescript
 import { varchar, cockroachTable } from "drizzle-orm/cockroach-core";
 
 export const table = cockroachTable('table', {
@@ -283,7 +273,7 @@ export const table = cockroachTable('table', {
 varchar: varchar({ enum: ["value1", "value2"] }),
 ```
 
-```
+```sql
 CREATE TABLE "table" (
 	"varchar1" varchar,
 	"varchar2" varchar(256)
@@ -302,7 +292,7 @@ You can define `{ enum: ["value1", "value2"] }` config to infer `insert` and `se
 
 The `length` parameter is optional according to PostgreSQL docs.
 
-```
+```typescript
 import { char, cockroachTable } from "drizzle-orm/cockroach-core";
 
 export const table = cockroachTable('table', {
@@ -314,7 +304,7 @@ export const table = cockroachTable('table', {
 char: char({ enum: ["value1", "value2"] }),
 ```
 
-```
+```sql
 CREATE TABLE "table" (
 	"char1" char,
 	"char2" char(256)
@@ -329,7 +319,7 @@ CREATE TABLE "table" (
 
 For more info please refer to the official CockroachDB **[docs.](https://www.cockroachlabs.com/docs/stable/decimal)**
 
-```
+```typescript
 import { decimal, cockroachTable } from "drizzle-orm/cockroach-core";
 
 export const table = cockroachTable('table', {
@@ -341,7 +331,7 @@ export const table = cockroachTable('table', {
 });
 ```
 
-```
+```sql
 CREATE TABLE "table" (
 	"decimal1" decimal,
 	"decimal2" decimal(100),
@@ -361,7 +351,7 @@ An alias of **[decimal.](#decimal)**
 
 For more info please refer to the official CockroachDB **[docs.](https://www.cockroachlabs.com/docs/stable/float)**
 
-```
+```typescript
 import { sql } from "drizzle-orm";
 import { float, cockroachTable } from "drizzle-orm/cockroach-core";  
 
@@ -372,7 +362,7 @@ const table = cockroachTable('table', {
 });
 ```
 
-```
+```sql
 CREATE TABLE "table" (
 	"float1" float,
 	"float2" float default 10.10,
@@ -387,7 +377,7 @@ Single precision floating-point number (4 bytes)
 
 For more info please refer to the official CockroachDB **[docs.](https://www.cockroachlabs.com/docs/stable/float)**
 
-```
+```typescript
 import { sql } from "drizzle-orm";
 import { real, cockroachTable } from "drizzle-orm/cockroach-core";  
 
@@ -398,7 +388,7 @@ const table = cockroachTable('table', {
 });
 ```
 
-```
+```sql
 CREATE TABLE "table" (
 	"real1" real,
 	"real2" real default 10.10,
@@ -418,7 +408,7 @@ The JSONB data type stores JSON (JavaScript Object Notation) data as a binary re
 
 For more info please refer to the official CockroachDB **[docs.](https://www.cockroachlabs.com/docs/stable/jsonb)**
 
-```
+```typescript
 import { jsonb, cockroachTable } from "drizzle-orm/cockroach-core";
 
 const table = cockroachTable('table', {
@@ -428,7 +418,7 @@ const table = cockroachTable('table', {
 });
 ```
 
-```
+```sql
 CREATE TABLE "table" (
 	"jsonb1" jsonb,
 	"jsonb2" jsonb default '{"foo": "bar"}'::jsonb,
@@ -438,7 +428,7 @@ CREATE TABLE "table" (
 
 You can specify `.$type<..>()` for json object inference, it **won’t** check runtime values. It provides compile time protection for default values, insert and select schemas.
 
-```
+```typescript
 // will be inferred as { foo: string }
 jsonb: jsonb().$type<{ foo: string }>();
 
@@ -459,21 +449,14 @@ The BIT data types store bit arrays. With BIT, the length is fixed.
 
 The number of bits in a BIT value is determined as follows:
 
-Type declaration
-
-Logical size
-
-BIT
-
-1 bit
-
-BIT(N)
-
-N bits
+| Type declaration | Logical size |
+| --- | --- |
+| BIT | 1 bit |
+| BIT(N) | N bits |
 
 For more info please refer to the official CockroachDB **[docs.](https://www.cockroachlabs.com/docs/stable/bit)**
 
-```
+```typescript
 import { sql } from "drizzle-orm";
 import { cockroachTable, bit } from "drizzle-orm/cockroach-core";
 
@@ -485,7 +468,7 @@ export const table = cockroachTable('table', {
 });
 ```
 
-```
+```sql
 CREATE TABLE "table" (
 	"bit1" bit,
 	"bit2" bit(15),
@@ -504,21 +487,14 @@ The VARBIT data types store bit arrays. With VARBIT, the length can be variable.
 
 The number of bits in a VARBIT value is determined as follows:
 
-Type declaration
-
-Logical size
-
-VARBIT
-
-variable with no maximum
-
-VARBIT(N)
-
-variable with a maximum of N bits
+| Type declaration | Logical size |
+| --- | --- |
+| VARBIT | variable with no maximum |
+| VARBIT(N) | variable with a maximum of N bits |
 
 For more info please refer to the official CockroachDB **[docs.](https://www.cockroachlabs.com/docs/stable/bit)**
 
-```
+```typescript
 import { sql } from "drizzle-orm";
 import { cockroachTable, bit } from "drizzle-orm/cockroach-core";
 
@@ -530,7 +506,7 @@ export const table = cockroachTable('table', {
 });
 ```
 
-```
+```sql
 CREATE TABLE "table" (
 	"varbit1" varbit,
 	"varbit2" varbit(15),
@@ -547,7 +523,7 @@ The UUID (Universally Unique Identifier) data type stores a 128-bit value that i
 
 For more info please refer to the official CockroachDB **[docs.](https://www.cockroachlabs.com/docs/stable/uuid)**
 
-```
+```ts
 import { uuid, cockroachTable } from "drizzle-orm/cockroach-core";
 
 const table = cockroachTable('table', {
@@ -557,7 +533,7 @@ const table = cockroachTable('table', {
 });
 ```
 
-```
+```sql
 CREATE TABLE "table" (
 	"uuid1" uuid,
 	"uuid2" uuid default gen_random_uuid(),
@@ -573,7 +549,7 @@ The `TIME` data type stores the time of day in UTC. The `TIMETZ` data type store
 
 For more info please refer to the official CockroachDB **[docs.](https://www.cockroachlabs.com/docs/stable/time)**
 
-```
+```typescript
 import { time, cockroachTable } from "drizzle-orm/cockroach-core";
 
 const table = cockroachTable('table', {
@@ -584,7 +560,7 @@ const table = cockroachTable('table', {
 });
 ```
 
-```
+```sql
 CREATE TABLE "table" (
 	"time1" time,
 	"time2" time with timezone,
@@ -601,7 +577,7 @@ The TIMESTAMP and TIMESTAMPTZ data types store a date and time pair in UTC.
 
 For more info please refer to the official CockroachDB **[docs.](https://www.cockroachlabs.com/docs/stable/timestamp)**
 
-```
+```typescript
 import { sql } from "drizzle-orm";
 import { timestamp, cockroachTable } from "drizzle-orm/cockroach-core";
 
@@ -613,7 +589,7 @@ const table = cockroachTable('table', {
 });
 ```
 
-```
+```sql
 CREATE TABLE "table" (
 	"timestamp1" timestamp,
 	"timestamp2" timestamp (6) with time zone,
@@ -624,7 +600,7 @@ CREATE TABLE "table" (
 
 You can specify either `date` or `string` infer modes:
 
-```
+```typescript
 // will infer as date
 timestamp: timestamp({ mode: "date" }),
 
@@ -644,7 +620,7 @@ The DATE data type stores a year, month, and day.
 
 For more info please refer to the official CockroachDB **[docs.](https://www.cockroachlabs.com/docs/stable/date)**
 
-```
+```typescript
 import { date, cockroachTable } from "drizzle-orm/cockroach-core";
 
 const table = cockroachTable('table', {
@@ -652,7 +628,7 @@ const table = cockroachTable('table', {
 });
 ```
 
-```
+```sql
 CREATE TABLE "table" (
 	"date" date
 );
@@ -660,7 +636,7 @@ CREATE TABLE "table" (
 
 You can specify either `date` or `string` infer modes:
 
-```
+```typescript
 // will infer as date
 date: date({ mode: "date" }),
 
@@ -676,7 +652,7 @@ Stores a value that represents a span of time.
 
 For more info please refer to the official CockroachDB **[docs.](https://www.cockroachlabs.com/docs/stable/interval)**
 
-```
+```typescript
 import { interval, cockroachTable } from "drizzle-orm/cockroach-core";
 
 const table = cockroachTable('table', {
@@ -686,7 +662,7 @@ const table = cockroachTable('table', {
 });
 ```
 
-```
+```sql
 CREATE TABLE "table" (
 	"interval1" interval,
 	"interval2" interval day,
@@ -701,7 +677,7 @@ Enumerated (enum) types are data types that comprise a static, ordered set of va
 
 For more info please refer to the official CockroachDB **[docs.](https://www.cockroachlabs.com/docs/stable/enum)**
 
-```
+```typescript
 import { cockroachEnum, cockroachTable } from "drizzle-orm/cockroach-core";
 
 export const moodEnum = cockroachEnum('mood', ['sad', 'ok', 'happy']);
@@ -711,7 +687,7 @@ export const table = cockroachTable('table', {
 });
 ```
 
-```
+```sql
 CREATE TYPE mood AS ENUM ('sad', 'ok', 'happy');
 
 CREATE TABLE "table" (
@@ -725,7 +701,7 @@ Every column builder has a `.$type()` method, which allows you to customize the 
 
 This is useful, for example, with unknown or branded types:
 
-```
+```ts
 type UserId = number & { __brand: 'user_id' };
 type Data = {
 	foo: string;
@@ -746,12 +722,12 @@ PostgreSQL and CockroachDB supports identity columns as a way to automatically g
 
 **Types of Identity Columns**
 
-*   `GENERATED ALWAYS AS IDENTITY`: The database always generates a value for the column. Manual insertion or updates to this column are not allowed unless the OVERRIDING SYSTEM VALUE clause is used.
-*   `GENERATED BY DEFAULT AS IDENTITY`: The database generates a value by default, but manual values can also be inserted or updated. If a manual value is provided, it will be used instead of the system-generated value.
+-   `GENERATED ALWAYS AS IDENTITY`: The database always generates a value for the column. Manual insertion or updates to this column are not allowed unless the OVERRIDING SYSTEM VALUE clause is used.
+-   `GENERATED BY DEFAULT AS IDENTITY`: The database generates a value by default, but manual values can also be inserted or updated. If a manual value is provided, it will be used instead of the system-generated value.
 
 **Usage example**
 
-```
+```ts
 import { pgTable, integer, text } from 'drizzle-orm/pg-core' 
 
 export const ingredients = pgTable("ingredients", {
@@ -771,7 +747,7 @@ The `DEFAULT` clause specifies a default value to use for the column if no value
 
 An explicit `DEFAULT` clause may specify that the default value is `NULL`, a string constant, a blob constant, a signed-number, or any constant expression enclosed in parentheses.
 
-```
+```typescript
 import { sql } from "drizzle-orm";
 import { integer, pgTable, uuid } from "drizzle-orm/pg-core";
 
@@ -783,7 +759,7 @@ const table = pgTable('table', {
 });
 ```
 
-```
+```sql
 CREATE TABLE IF NOT EXISTS "table" (
 	"integer1" integer DEFAULT 42,
 	"integer2" integer DEFAULT '42'::integer,
@@ -798,7 +774,7 @@ These functions can assist you in utilizing various implementations such as `uui
 
 Note: This value does not affect the `drizzle-kit` behavior, it is only used at runtime in `drizzle-orm`
 
-```
+```ts
 import { text, pgTable } from "drizzle-orm/pg-core";
 import { createId } from '@paralleldrive/cuid2';
 
@@ -813,7 +789,7 @@ Adds a dynamic update value to the column. The function will be called when the 
 
 Note: This value does not affect the `drizzle-kit` behavior, it is only used at runtime in `drizzle-orm`
 
-```
+```ts
 import { integer, timestamp, text, pgTable } from "drizzle-orm/pg-core";
 
 const table = pgTable('table', {
@@ -827,7 +803,7 @@ const table = pgTable('table', {
 
 `NOT NULL` constraint dictates that the associated column may not contain a `NULL` value.
 
-```
+```typescript
 import { integer, pgTable } from "drizzle-orm/pg-core";
 
 const table = pgTable('table', {
@@ -835,7 +811,7 @@ const table = pgTable('table', {
 });
 ```
 
-```
+```sql
 CREATE TABLE IF NOT EXISTS "table" (
 	"integer" integer NOT NULL
 );
@@ -845,7 +821,7 @@ CREATE TABLE IF NOT EXISTS "table" (
 
 A primary key constraint indicates that a column, or group of columns, can be used as a unique identifier for rows in the table. This requires that the values be both unique and not null.
 
-```
+```typescript
 import { serial, pgTable } from "drizzle-orm/pg-core";
 
 const table = pgTable('table', {
@@ -853,7 +829,7 @@ const table = pgTable('table', {
 });
 ```
 
-```
+```sql
 CREATE TABLE IF NOT EXISTS "table" (
 	"id" serial PRIMARY KEY NOT NULL
 );

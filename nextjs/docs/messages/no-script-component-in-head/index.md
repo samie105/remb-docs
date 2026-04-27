@@ -5,13 +5,14 @@ canonical_url: "https://nextjs.org/docs/messages/no-script-component-in-head"
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:18:31.537Z"
-content_hash: "7c98d276b41268273313ba889857ffd4fe0d50e1a95b232ba31cc7234bbddcec"
+last_crawled_at: "2026-04-27T18:17:56.225Z"
+content_hash: "468093623428e535d7deb5d39fedc058aff2cfbe988826dc1723d15f304a571d"
 menu_path: ["No Script Component in Head"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/messages/no-page-custom-font/index.md", "title": "No Page Custom Font"}
-nav_next: {"path": "nextjs/docs/messages/no-styled-jsx-in-document/index.md", "title": "No `styled-jsx` in `_document`"}
+version: "latest"
+content_language: "en"
 ---
+[Docs](/docs)[Errors](/docs)No Script Component in Head
 
 # No Script Component in Head
 
@@ -65,11 +66,7 @@ export default function Index() {
 
 ## Useful Links[](#useful-links)
 
-*   [next/head](/docs/pages/api-reference/components/head)
-*   [next/script](/docs/pages/guides/scripts)
+-   [next/head](/docs/pages/api-reference/components/head)
+-   [next/script](/docs/pages/guides/scripts)
 
 Was this helpful?
-
-supported.
-
-Send

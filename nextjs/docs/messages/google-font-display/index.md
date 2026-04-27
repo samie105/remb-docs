@@ -5,13 +5,14 @@ canonical_url: "https://nextjs.org/docs/messages/google-font-display"
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:17:44.968Z"
-content_hash: "5fe574743aaa75a144a253be2dda6199621050a68e2c1b343e51f789e01f1c31"
+last_crawled_at: "2026-04-27T18:17:11.912Z"
+content_hash: "603fa46fe789e7e594f623aaa5191a6ed12da3e61de4bdc6ea3ff53d5d399606"
 menu_path: ["Google Font Display"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/messages/empty-generate-static-params/index.md", "title": "Empty generateStaticParams with Cache Components"}
-nav_next: {"path": "nextjs/docs/messages/google-font-preconnect/index.md", "title": "Google Font Preconnect"}
+version: "latest"
+content_language: "en"
 ---
+[Docs](/docs)[Errors](/docs)Google Font Display
 
 # Google Font Display
 
@@ -52,12 +53,8 @@ If you want to specifically display a font using an `auto`, `block`, or `fallbac
 
 ## Useful Links[](#useful-links)
 
-*   [Controlling Font Performance with font-display](https://developer.chrome.com/blog/font-display/)
-*   [Google Fonts API Docs](https://developers.google.com/fonts/docs/css2#use_font-display)
-*   [CSS `font-display` property](https://www.w3.org/TR/css-fonts-4/#font-display-desc)
+-   [Controlling Font Performance with font-display](https://developer.chrome.com/blog/font-display/)
+-   [Google Fonts API Docs](https://developers.google.com/fonts/docs/css2#use_font-display)
+-   [CSS `font-display` property](https://www.w3.org/TR/css-fonts-4/#font-display-desc)
 
 Was this helpful?
-
-supported.
-
-Send

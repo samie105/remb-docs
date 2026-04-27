@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/app/api-reference/file-conventions/publi
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:10:37.432Z"
-content_hash: "0e16801a7b586d5eecfc3b331320c78576b0c162d701226dd769bdb9729291b0"
+last_crawled_at: "2026-04-27T18:09:20.235Z"
+content_hash: "6fe16c289963ef20c2685b97a1b07edf213e3d41daa5d2a93c378e341a1a7583"
 menu_path: ["public Folder"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/api-reference/file-conventions/proxy/index.md", "title": "proxy.js"}
-nav_next: {"path": "nextjs/docs/app/api-reference/file-conventions/route/index.md", "title": "route.js"}
+version: "latest"
+content_language: "en"
 ---
+[API Reference](/docs/app/api-reference)[File-system conventions](/docs/app/api-reference/file-conventions)public
 
 # public Folder
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 Next.js can serve static files, like images, under a folder called `public` in the root directory. Files inside `public` can then be referenced by your code starting from the base URL (`/`).
 
@@ -47,20 +48,4 @@ Cache-Control: public, max-age=0
 
 For static metadata files, such as `robots.txt`, `favicon.ico`, etc, you should use [special metadata files](/docs/app/api-reference/file-conventions/metadata) inside the `app` folder.
 
-[Previous
-
-proxy.js
-
-](/docs/app/api-reference/file-conventions/proxy)
-
-[Next
-
-route.js
-
-](/docs/app/api-reference/file-conventions/route)
-
 Was this helpful?
-
-supported.
-
-Send

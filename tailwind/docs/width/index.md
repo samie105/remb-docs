@@ -5,59 +5,13 @@ canonical_url: "https://tailwindcss.com/docs/width"
 docset: "tailwind"
 kind: "framework"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:51:11.278Z"
-content_hash: "3055879e18cb4c1d080dab550275a5aac9f2c6cb923ba20e268770f0060cdc9b"
+last_crawled_at: "2026-04-27T20:03:34.825Z"
+content_hash: "bd5b1b4ed9626792331074ff816aa369a0c1a7cd14e14ee6a2f75d74c15bea97"
 menu_path: ["width"]
 section_path: []
-nav_prev: {"path": "tailwind/docs/margin/index.md", "title": "margin"}
-nav_next: {"path": "tailwind/docs/min-width/index.md", "title": "min-width"}
+content_language: "en"
 ---
-
 Utilities for setting the width of an element.
-
-Class
-
-Styles
-
-`w-<number>`
-
-`width: calc(var(--spacing) * <number>);`
-
-`w-<fraction>`
-
-`width: calc(<fraction> * 100%);`
-
-`w-3xs`
-
-`width: var(--container-3xs); /* 16rem (256px) */`
-
-`w-2xs`
-
-`width: var(--container-2xs); /* 18rem (288px) */`
-
-`w-xs`
-
-`width: var(--container-xs); /* 20rem (320px) */`
-
-`w-sm`
-
-`width: var(--container-sm); /* 24rem (384px) */`
-
-`w-md`
-
-`width: var(--container-md); /* 28rem (448px) */`
-
-`w-lg`
-
-`width: var(--container-lg); /* 32rem (512px) */`
-
-`w-xl`
-
-`width: var(--container-xl); /* 36rem (576px) */`
-
-`w-2xl`
-
-`width: var(--container-2xl); /* 42rem (672px) */`
 
 ## [Examples](#examples)
 
@@ -187,7 +141,7 @@ Prefix a `width` utility with a breakpoint variant like `md:` to only apply the 
 <div class="w-1/2 md:w-full ...">  <!-- ... --></div>
 ```
 
-Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).
+Learn more about using variants in the [variants documentation](https://tailwindcss.com/docs/hover-focus-and-other-states).
 
 ## [Customizing your theme](#customizing-your-theme)
 
@@ -197,4 +151,4 @@ The `w-<number>` and `size-<number>` utilities are driven by the `--spacing` the
 @theme {  --spacing: 1px; }
 ```
 
-Learn more about customizing the spacing scale in the [theme variable documentation](tailwind/docs/theme/index.md).
+Learn more about customizing the spacing scale in the [theme variable documentation](https://tailwindcss.com/docs/theme).

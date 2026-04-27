@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/pages/api-reference/config/next-config-j
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:20:59.463Z"
-content_hash: "23f98f2342026cd82472cd49329fe8b3888565457535fefa37f12178ff94f69a"
+last_crawled_at: "2026-04-27T18:20:24.390Z"
+content_hash: "a5e10cfde39f155cee59b3205b9efac187df96b5ff2489775ccc55c539982810"
 menu_path: ["onDemandEntries"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/pages/api-reference/config/next-config-js/logging/index.md", "title": "logging"}
-nav_next: {"path": "nextjs/docs/pages/api-reference/config/next-config-js/optimizePackageImports/index.md", "title": "optimizePackageImports"}
+version: "latest"
+content_language: "en"
 ---
+[Configuration](/docs/pages/api-reference/config)[next.config.js Options](/docs/pages/api-reference/config/next-config-js)onDemandEntries
 
 # onDemandEntries
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 Next.js exposes some options that give you some control over how the server will dispose or keep in memory built pages in development.
 
@@ -35,7 +36,3 @@ module.exports = {
 ```
 
 Was this helpful?
-
-supported.
-
-Send

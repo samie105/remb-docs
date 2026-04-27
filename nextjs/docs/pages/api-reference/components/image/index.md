@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/pages/api-reference/components/image"
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:19:53.411Z"
-content_hash: "bc2f2eef346eff0c9f674082c007249cd77c84ab2f252f16a98e6c50eb6ba4aa"
+last_crawled_at: "2026-04-27T18:19:17.523Z"
+content_hash: "2d49d1a7235438cce8586c4f5cc53a9f17d08f5d7d975c2e6819b7a545609106"
 menu_path: ["Image"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/pages/api-reference/components/head/index.md", "title": "Head"}
-nav_next: {"path": "nextjs/docs/pages/api-reference/components/image-legacy/index.md", "title": "Image (Legacy)"}
+version: "latest"
+content_language: "en"
 ---
+[API Reference](/docs/pages/api-reference)[Components](/docs/pages/api-reference/components)Image
 
 # Image
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 The Next.js Image component extends the HTML `<img>` element for automatic image optimization.
 
@@ -44,165 +45,27 @@ export default function Page() {
 
 The following props are available:
 
-Prop
-
-Example
-
-Type
-
-Status
-
-[`src`](#src)
-
-`src="/profile.png"`
-
-String
-
-Required
-
-[`alt`](#alt)
-
-`alt="Picture of the author"`
-
-String
-
-Required
-
-[`width`](#width-and-height)
-
-`width={500}`
-
-Integer (px)
-
-\-
-
-[`height`](#width-and-height)
-
-`height={500}`
-
-Integer (px)
-
-\-
-
-[`fill`](#fill)
-
-`fill={true}`
-
-Boolean
-
-\-
-
-[`loader`](#loader)
-
-`loader={imageLoader}`
-
-Function
-
-\-
-
-[`sizes`](#sizes)
-
-`sizes="(max-width: 768px) 100vw, 33vw"`
-
-String
-
-\-
-
-[`quality`](#quality)
-
-`quality={80}`
-
-Integer (1-100)
-
-\-
-
-[`preload`](#preload)
-
-`preload={true}`
-
-Boolean
-
-\-
-
-[`placeholder`](#placeholder)
-
-`placeholder="blur"`
-
-String
-
-\-
-
-[`style`](#style)
-
-`style={{objectFit: "contain"}}`
-
-Object
-
-\-
-
-[`onLoadingComplete`](#onloadingcomplete)
-
-`onLoadingComplete={img => done())}`
-
-Function
-
-Deprecated
-
-[`onLoad`](#onload)
-
-`onLoad={event => done())}`
-
-Function
-
-\-
-
-[`onError`](#onerror)
-
-`onError(event => fail()}`
-
-Function
-
-\-
-
-[`loading`](#loading)
-
-`loading="lazy"`
-
-String
-
-\-
-
-[`blurDataURL`](#blurdataurl)
-
-`blurDataURL="data:image/jpeg..."`
-
-String
-
-\-
-
-[`unoptimized`](#unoptimized)
-
-`unoptimized={true}`
-
-Boolean
-
-\-
-
-[`overrideSrc`](#overridesrc)
-
-`overrideSrc="/seo.png"`
-
-String
-
-\-
-
-[`decoding`](#decoding)
-
-`decoding="async"`
-
-String
-
-\-
+| Prop | Example | Type | Status |
+| --- | --- | --- | --- |
+| [`src`](#src) | `src="/profile.png"` | String | Required |
+| [`alt`](#alt) | `alt="Picture of the author"` | String | Required |
+| [`width`](#width-and-height) | `width={500}` | Integer (px) | \- |
+| [`height`](#width-and-height) | `height={500}` | Integer (px) | \- |
+| [`fill`](#fill) | `fill={true}` | Boolean | \- |
+| [`loader`](#loader) | `loader={imageLoader}` | Function | \- |
+| [`sizes`](#sizes) | `sizes="(max-width: 768px) 100vw, 33vw"` | String | \- |
+| [`quality`](#quality) | `quality={80}` | Integer (1-100) | \- |
+| [`preload`](#preload) | `preload={true}` | Boolean | \- |
+| [`placeholder`](#placeholder) | `placeholder="blur"` | String | \- |
+| [`style`](#style) | `style={{objectFit: "contain"}}` | Object | \- |
+| [`onLoadingComplete`](#onloadingcomplete) | `onLoadingComplete={img => done())}` | Function | Deprecated |
+| [`onLoad`](#onload) | `onLoad={event => done())}` | Function | \- |
+| [`onError`](#onerror) | `onError(event => fail()}` | Function | \- |
+| [`loading`](#loading) | `loading="lazy"` | String | \- |
+| [`blurDataURL`](#blurdataurl) | `blurDataURL="data:image/jpeg..."` | String | \- |
+| [`unoptimized`](#unoptimized) | `unoptimized={true}` | Boolean | \- |
+| [`overrideSrc`](#overridesrc) | `overrideSrc="/seo.png"` | String | \- |
+| [`decoding`](#decoding) | `decoding="async"` | String | \- |
 
 #### `src`[](#src)
 
@@ -252,8 +115,8 @@ The `width` and `height` properties represent the [intrinsic](https://developer.
 
 You **must** set both `width` and `height` properties unless:
 
-*   The image is statically imported.
-*   The image has the [`fill` property](#fill)
+-   The image is statically imported.
+-   The image has the [`fill` property](#fill)
 
 If the height and width are unknown, we recommend using the [`fill` property](#fill).
 
@@ -267,15 +130,15 @@ A boolean that causes the image to expand to the size of the parent element.
 
 **Positioning**:
 
-*   The parent element **must** assign `position: "relative"`, `"fixed"`, `"absolute"`.
-*   By default, the `<img>` element uses `position: "absolute"`.
+-   The parent element **must** assign `position: "relative"`, `"fixed"`, `"absolute"`.
+-   By default, the `<img>` element uses `position: "absolute"`.
 
 **Object Fit**:
 
 If no styles are applied to the image, the image will stretch to fit the container. You can use `objectFit` to control cropping and scaling.
 
-*   `"contain"`: The image will be scaled down to fit the container and preserve aspect ratio.
-*   `"cover"`: The image will fill the container and be cropped.
+-   `"contain"`: The image will be scaled down to fit the container and preserve aspect ratio.
+-   `"cover"`: The image will fill the container and be cropped.
 
 > Learn more about [`position`](https://developer.mozilla.org/en-US/docs/Web/CSS/position) and [`object-fit`](https://developer.mozilla.org/docs/Web/CSS/object-fit).
 
@@ -283,9 +146,9 @@ If no styles are applied to the image, the image will stretch to fit the contain
 
 A custom function used to generate the image URL. The function receives the following parameters, and returns a URL string for the image:
 
-*   [`src`](#src)
-*   [`width`](#width-and-height)
-*   [`quality`](#quality)
+-   [`src`](#src)
+-   [`width`](#width-and-height)
+-   [`quality`](#quality)
 
 ```
 import Image from 'next/image'
@@ -331,15 +194,15 @@ export default function Page() {
 
 `sizes` should be used when:
 
-*   The image is using the [`fill`](#fill) prop
-*   CSS is used to make the image responsive
+-   The image is using the [`fill`](#fill) prop
+-   CSS is used to make the image responsive
 
 If `sizes` is missing, the browser assumes the image will be as wide as the viewport (`100vw`). This can cause unnecessarily large images to be downloaded.
 
 In addition, `sizes` affects how `srcset` is generated:
 
-*   Without `sizes`: Next.js generates a limited `srcset` (e.g. 1x, 2x), suitable for fixed-size images.
-*   With `sizes`: Next.js generates a full `srcset` (e.g. 640w, 750w, etc.), optimized for responsive layouts.
+-   Without `sizes`: Next.js generates a limited `srcset` (e.g. 1x, 2x), suitable for fixed-size images.
+-   With `sizes`: Next.js generates a full `srcset` (e.g. 640w, 750w, etc.), optimized for responsive layouts.
 
 > Learn more about `srcset` and `sizes` on [web.dev](https://web.dev/learn/design/responsive-images/#sizes) and [mdn](https://developer.mozilla.org/docs/Web/HTML/Element/img#sizes).
 
@@ -384,20 +247,20 @@ A boolean that indicates if the image should be preloaded.
 <Image preload={false} />
 ```
 
-*   `true`: [Preloads](https://web.dev/preload-responsive-images/) the image by inserting a `<link>` in the `<head>`.
-*   `false`: Does not preload the image.
+-   `true`: [Preloads](https://web.dev/preload-responsive-images/) the image by inserting a `<link>` in the `<head>`.
+-   `false`: Does not preload the image.
 
 **When to use it:**
 
-*   The image is the [Largest Contentful Paint (LCP)](https://nextjs.org/learn/seo/web-performance/lcp) element.
-*   The image is above the fold, typically the hero image.
-*   You want to begin loading the image in the `<head>`, before its discovered later in the `<body>`.
+-   The image is the [Largest Contentful Paint (LCP)](https://nextjs.org/learn/seo/web-performance/lcp) element.
+-   The image is above the fold, typically the hero image.
+-   You want to begin loading the image in the `<head>`, before its discovered later in the `<body>`.
 
 **When not to use it:**
 
-*   When you have multiple images that could be considered the [Largest Contentful Paint (LCP)](https://nextjs.org/learn/seo/web-performance/lcp) element depending on the viewport.
-*   When the `loading` property is used.
-*   When the `fetchPriority` property is used.
+-   When you have multiple images that could be considered the [Largest Contentful Paint (LCP)](https://nextjs.org/learn/seo/web-performance/lcp) element depending on the viewport.
+-   When the `loading` property is used.
+-   When the `fetchPriority` property is used.
 
 In most cases, you should use `loading="eager"` or `fetchPriority="high"` instead of `preload`.
 
@@ -414,8 +277,8 @@ Controls when the image should start loading.
 <Image loading="lazy" />
 ```
 
-*   `lazy`: Defer loading the image until it reaches a calculated distance from the viewport.
-*   `eager`: Load the image immediately, regardless of its position in the page.
+-   `lazy`: Defer loading the image until it reaches a calculated distance from the viewport.
+-   `eager`: Load the image immediately, regardless of its position in the page.
 
 Use `eager` only when you want to ensure the image is loaded immediately.
 
@@ -430,15 +293,15 @@ Specifies a placeholder to use while the image is loading, improving the perceiv
 <Image placeholder="empty" />
 ```
 
-*   `empty`: No placeholder while the image is loading.
-*   `blur`: Use a blurred version of the image as a placeholder. Must be used with the [`blurDataURL`](#blurdataurl) property.
-*   `data:image/...`: Uses the [Data URL](https://developer.mozilla.org/docs/Web/HTTP/Basics_of_HTTP/Data_URIs) as the placeholder.
+-   `empty`: No placeholder while the image is loading.
+-   `blur`: Use a blurred version of the image as a placeholder. Must be used with the [`blurDataURL`](#blurdataurl) property.
+-   `data:image/...`: Uses the [Data URL](https://developer.mozilla.org/docs/Web/HTTP/Basics_of_HTTP/Data_URIs) as the placeholder.
 
 **Examples:**
 
-*   [`blur` placeholder](https://image-component.nextjs.gallery/placeholder)
-*   [Shimmer effect with data URL `placeholder` prop](https://image-component.nextjs.gallery/shimmer)
-*   [Color effect with `blurDataURL` prop](https://image-component.nextjs.gallery/color)
+-   [`blur` placeholder](https://image-component.nextjs.gallery/placeholder)
+-   [Shimmer effect with data URL `placeholder` prop](https://image-component.nextjs.gallery/shimmer)
+-   [Color effect with `blurDataURL` prop](https://image-component.nextjs.gallery/color)
 
 > Learn more about the [`placeholder` attribute](https://developer.mozilla.org/docs/Web/HTML/Element/img#placeholder).
 
@@ -460,15 +323,15 @@ If `src` is a static import of a `jpg`, `png`, `webp`, or `avif` file, `blurData
 
 If the image is dynamic or remote, you must provide `blurDataURL` yourself. To generate one, you can use:
 
-*   [A online tool like png-pixel.com](https://png-pixel.com)
-*   [A library like Plaiceholder](https://github.com/joe-bell/plaiceholder)
+-   [A online tool like png-pixel.com](https://png-pixel.com)
+-   [A library like Plaiceholder](https://github.com/joe-bell/plaiceholder)
 
 A large blurDataURL may hurt performance. Keep it small and simple.
 
 **Examples:**
 
-*   [Default `blurDataURL` prop](https://image-component.nextjs.gallery/placeholder)
-*   [Color effect with `blurDataURL` prop](https://image-component.nextjs.gallery/color)
+-   [Default `blurDataURL` prop](https://image-component.nextjs.gallery/placeholder)
+-   [Color effect with `blurDataURL` prop](https://image-component.nextjs.gallery/color)
 
 #### `onLoad`[](#onload)
 
@@ -501,8 +364,8 @@ const UnoptimizedImage = (props) => {
 }
 ```
 
-*   `true`: The source image will be served as-is from the `src` instead of changing quality, size, or format.
-*   `false`: The source image will be optimized.
+-   `true`: The source image will be served as-is from the `src` instead of changing quality, size, or format.
+-   `false`: The source image will be optimized.
 
 Since Next.js 12.3.0, this prop can be assigned to all images by updating `next.config.js` with the following configuration:
 
@@ -569,9 +432,9 @@ A hint to the browser indicating if it should wait for the image to be decoded b
 <Image decoding="async" />
 ```
 
-*   `async`: Asynchronously decode the image and allow other content to be rendered before it completes.
-*   `sync`: Synchronously decode the image for atomic presentation with other content.
-*   `auto`: No preference. The browser chooses the best approach.
+-   `async`: Asynchronously decode the image and allow other content to be rendered before it completes.
+-   `sync`: Synchronously decode the image for atomic presentation with other content.
+-   `auto`: No preference. The browser chooses the best approach.
 
 > Learn more about the [`decoding` attribute](https://developer.mozilla.org/docs/Web/HTML/Element/img#decoding).
 
@@ -579,7 +442,7 @@ A hint to the browser indicating if it should wait for the image to be decoded b
 
 Other properties on the `<Image />` component will be passed to the underlying `img` element with the exception of the following:
 
-*   `srcSet`: Use [Device Sizes](#devicesizes) instead.
+-   `srcSet`: Use [Device Sizes](#devicesizes) instead.
 
 ### Deprecated props[](#deprecated-props)
 
@@ -662,8 +525,8 @@ The example above will ensure the `src` property of `next/image` must start with
 
 Wildcard patterns can be used for both `pathname` and `hostname` and have the following syntax:
 
-*   `*` match a single path segment or subdomain
-*   `**` match any number of path segments at the end or subdomains at the beginning. This syntax does not work in the middle of the pattern.
+-   `*` match a single path segment or subdomain
+-   `**` match any number of path segments at the end or subdomains at the beginning. This syntax does not work in the middle of the pattern.
 
 next.config.js
 
@@ -737,7 +600,7 @@ export default function myImageLoader({ src, width, quality }) {
 
 **Example:**
 
-*   [Custom Image Loader Configuration](/docs/app/api-reference/config/next-config-js/images#example-loader-configuration)
+-   [Custom Image Loader Configuration](/docs/app/api-reference/config/next-config-js/images#example-loader-configuration)
 
 > Alternatively, you can use the [`loader` prop](#loader) to configure each instance of `next/image`.
 
@@ -870,10 +733,10 @@ module.exports = {
 
 > **Good to know**:
 > 
-> *   We still recommend using WebP for most use cases.
-> *   AVIF generally takes 50% longer to encode but it compresses 20% smaller compared to WebP. This means that the first time an image is requested, it will typically be slower, but subsequent requests that are cached will be faster.
-> *   When using multiple formats, Next.js will cache each format separately. This means increased storage requirements compared to using a single format, as both AVIF and WebP versions of images will be stored for different browser support.
-> *   If you self-host with a Proxy/CDN in front of Next.js, you must configure the Proxy to forward the `Accept` header.
+> -   We still recommend using WebP for most use cases.
+> -   AVIF generally takes 50% longer to encode but it compresses 20% smaller compared to WebP. This means that the first time an image is requested, it will typically be slower, but subsequent requests that are cached will be faster.
+> -   When using multiple formats, Next.js will cache each format separately. This means increased storage requirements compared to using a single format, as both AVIF and WebP versions of images will be stored for different browser support.
+> -   If you self-host with a Proxy/CDN in front of Next.js, you must configure the Proxy to forward the `Accept` header.
 
 #### `minimumCacheTTL`[](#minimumcachettl)
 
@@ -1059,8 +922,8 @@ module.exports = {
 
 By default, Next.js does not optimize SVG images for a few reasons:
 
-*   SVG is a vector format meaning it can be resized losslessly.
-*   SVG has many of the same features as HTML/CSS, which can lead to vulnerabilities without proper [Content Security Policy (CSP) headers](/docs/app/api-reference/config/next-config-js/headers#content-security-policy).
+-   SVG is a vector format meaning it can be resized losslessly.
+-   SVG has many of the same features as HTML/CSS, which can lead to vulnerabilities without proper [Content Security Policy (CSP) headers](/docs/app/api-reference/config/next-config-js/headers#content-security-policy).
 
 We recommend using the [`unoptimized`](#unoptimized) prop when the [`src`](#src) prop is known to be SVG. This happens automatically when `src` ends with `".svg"`.
 
@@ -1170,12 +1033,12 @@ This also avoid calling React `useState()` so it can lead to better performance,
 
 This `next/image` component uses browser native [lazy loading](https://caniuse.com/loading-lazy-attr), which may fallback to eager loading for older browsers before Safari 15.4. When using the blur-up placeholder, older browsers before Safari 12 will fallback to empty placeholder. When using styles with `width`/`height` of `auto`, it is possible to cause [Layout Shift](https://web.dev/cls/) on older browsers before Safari 15 that don't [preserve the aspect ratio](https://caniuse.com/mdn-html_elements_img_aspect_ratio_computed_from_attributes). For more details, see [this MDN video](https://www.youtube.com/watch?v=4-d_SoCHeWE).
 
-*   [Safari 15 - 16.3](https://bugs.webkit.org/show_bug.cgi?id=243601) display a gray border while loading. Safari 16.4 [fixed this issue](https://webkit.org/blog/13966/webkit-features-in-safari-16-4/#:~:text=Now%20in%20Safari%2016.4%2C%20a%20gray%20line%20no%20longer%20appears%20to%20mark%20the%20space%20where%20a%20lazy%2Dloaded%20image%20will%20appear%20once%20it%E2%80%99s%20been%20loaded.). Possible solutions:
-    *   Use CSS `@supports (font: -apple-system-body) and (-webkit-appearance: none) { img[loading="lazy"] { clip-path: inset(0.6px) } }`
-    *   Use [`loading="eager"`](#loading) if the image is above the fold
-*   [Firefox 67+](https://bugzilla.mozilla.org/show_bug.cgi?id=1556156) displays a white background while loading. Possible solutions:
-    *   Enable [AVIF `formats`](#formats)
-    *   Use [`placeholder`](#placeholder)
+-   [Safari 15 - 16.3](https://bugs.webkit.org/show_bug.cgi?id=243601) display a gray border while loading. Safari 16.4 [fixed this issue](https://webkit.org/blog/13966/webkit-features-in-safari-16-4/#:~:text=Now%20in%20Safari%2016.4%2C%20a%20gray%20line%20no%20longer%20appears%20to%20mark%20the%20space%20where%20a%20lazy%2Dloaded%20image%20will%20appear%20once%20it%E2%80%99s%20been%20loaded.). Possible solutions:
+    -   Use CSS `@supports (font: -apple-system-body) and (-webkit-appearance: none) { img[loading="lazy"] { clip-path: inset(0.6px) } }`
+    -   Use [`loading="eager"`](#loading) if the image is above the fold
+-   [Firefox 67+](https://bugzilla.mozilla.org/show_bug.cgi?id=1556156) displays a white background while loading. Possible solutions:
+    -   Enable [AVIF `formats`](#formats)
+    -   Use [`placeholder`](#placeholder)
 
 ## Examples[](#examples)
 
@@ -1217,7 +1080,7 @@ You cannot use [styled-jsx](/docs/app/guides/css-in-js) because it's scoped to t
 
 When you import a static image, Next.js automatically sets its width and height based on the file. You can make the image responsive by setting the style:
 
-![Responsive image filling the width and height of its parent container](/_next/image?url=https%3A%2F%2Fh8DxKfmAPhn8O0p3.public.blob.vercel-storage.com%2Fdocs%2Flight%2Fresponsive-image.png&w=3840&q=75)![Responsive image filling the width and height of its parent container](/_next/image?url=https%3A%2F%2Fh8DxKfmAPhn8O0p3.public.blob.vercel-storage.com%2Fdocs%2Fdark%2Fresponsive-image.png&w=3840&q=75)
+![Responsive image filling the width and height of its parent container](https://h8DxKfmAPhn8O0p3.public.blob.vercel-storage.com/docs/light/responsive-image.png)
 
 ```
 import Image from 'next/image'
@@ -1272,13 +1135,13 @@ export default function Page({ photoUrl }) {
 
 Try it out:
 
-*   [Demo the image responsive to viewport](https://image-component.nextjs.gallery/responsive)
+-   [Demo the image responsive to viewport](https://image-component.nextjs.gallery/responsive)
 
 ### Responsive image with `fill`[](#responsive-image-with-fill)
 
 If you don't know the aspect ratio of the image, you can add the [`fill` prop](#fill) with the `objectFit` prop set to `cover`. This will make the image fill the full width of its parent container.
 
-![Grid of images filling parent container width](/_next/image?url=https%3A%2F%2Fh8DxKfmAPhn8O0p3.public.blob.vercel-storage.com%2Fdocs%2Flight%2Ffill-container.png&w=3840&q=75)![Grid of images filling parent container width](/_next/image?url=https%3A%2F%2Fh8DxKfmAPhn8O0p3.public.blob.vercel-storage.com%2Fdocs%2Fdark%2Ffill-container.png&w=3840&q=75)
+![Grid of images filling parent container width](https://h8DxKfmAPhn8O0p3.public.blob.vercel-storage.com/docs/light/fill-container.png)
 
 ```
 import Image from 'next/image'
@@ -1314,7 +1177,7 @@ export default function Fill() {
 
 Use the `fill` prop to make the image cover the entire screen area:
 
-![Background image taking full width and height of page](/_next/image?url=https%3A%2F%2Fh8DxKfmAPhn8O0p3.public.blob.vercel-storage.com%2Fdocs%2Flight%2Fbackground-image.png&w=3840&q=75)![Background image taking full width and height of page](/_next/image?url=https%3A%2F%2Fh8DxKfmAPhn8O0p3.public.blob.vercel-storage.com%2Fdocs%2Fdark%2Fbackground-image.png&w=3840&q=75)
+![Background image taking full width and height of page](https://h8DxKfmAPhn8O0p3.public.blob.vercel-storage.com/docs/light/background-image.png)
 
 ```
 import Image from 'next/image'
@@ -1407,8 +1270,6 @@ components/theme-image.module.css
 
 components/theme-image.tsx
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -1436,7 +1297,7 @@ const ThemeImage = (props: Props) => {
 
 Try it out:
 
-*   [Demo light/dark mode theme detection](https://image-component.nextjs.gallery/theme)
+-   [Demo light/dark mode theme detection](https://image-component.nextjs.gallery/theme)
 
 ### Art direction[](#art-direction)
 
@@ -1515,120 +1376,37 @@ export default function Home() {
 
 ## Version History[](#version-history)
 
-Version
-
-Changes
-
-`v16.1.7`
-
-`maximumDiskCacheSize` configuration added.
-
-`v16.1.2`
-
-`maximumResponseBody` configuration added.
-
-`v16.0.0`
-
-`qualities` default configuration changed to `[75]`, `preload` prop added, `priority` prop deprecated, `dangerouslyAllowLocalIP` config added, `maximumRedirects` config added.
-
-`v15.3.0`
-
-`remotePatterns` added support for array of `URL` objects.
-
-`v15.0.0`
-
-`contentDispositionType` configuration default changed to `attachment`.
-
-`v14.2.23`
-
-`qualities` configuration added.
-
-`v14.2.15`
-
-`decoding` prop added and `localPatterns` configuration added.
-
-`v14.2.14`
-
-`remotePatterns.search` prop added.
-
-`v14.2.0`
-
-`overrideSrc` prop added.
-
-`v14.1.0`
-
-`getImageProps()` is stable.
-
-`v14.0.0`
-
-`onLoadingComplete` prop and `domains` config deprecated.
-
-`v13.4.14`
-
-`placeholder` prop support for `data:/image...`
-
-`v13.2.0`
-
-`contentDispositionType` configuration added.
-
-`v13.0.6`
-
-`ref` prop added.
-
-`v13.0.0`
-
-The `next/image` import was renamed to `next/legacy/image`. The `next/future/image` import was renamed to `next/image`. A [codemod is available](/docs/app/guides/upgrading/codemods#next-image-to-legacy-image) to safely and automatically rename your imports. `<span>` wrapper removed. `layout`, `objectFit`, `objectPosition`, `lazyBoundary`, `lazyRoot` props removed. `alt` is required. `onLoadingComplete` receives reference to `img` element. Built-in loader config removed.
-
-`v12.3.0`
-
-`remotePatterns` and `unoptimized` configuration is stable.
-
-`v12.2.0`
-
-Experimental `remotePatterns` and experimental `unoptimized` configuration added. `layout="raw"` removed.
-
-`v12.1.1`
-
-`style` prop added. Experimental support for `layout="raw"` added.
-
-`v12.1.0`
-
-`dangerouslyAllowSVG` and `contentSecurityPolicy` configuration added.
-
-`v12.0.9`
-
-`lazyRoot` prop added.
-
-`v12.0.0`
-
-`formats` configuration added.  
+| Version | Changes |
+| --- | --- |
+| `v16.1.7` | `maximumDiskCacheSize` configuration added. |
+| `v16.1.2` | `maximumResponseBody` configuration added. |
+| `v16.0.0` | `qualities` default configuration changed to `[75]`, `preload` prop added, `priority` prop deprecated, `dangerouslyAllowLocalIP` config added, `maximumRedirects` config added. |
+| `v15.3.0` | `remotePatterns` added support for array of `URL` objects. |
+| `v15.0.0` | `contentDispositionType` configuration default changed to `attachment`. |
+| `v14.2.23` | `qualities` configuration added. |
+| `v14.2.15` | `decoding` prop added and `localPatterns` configuration added. |
+| `v14.2.14` | `remotePatterns.search` prop added. |
+| `v14.2.0` | `overrideSrc` prop added. |
+| `v14.1.0` | `getImageProps()` is stable. |
+| `v14.0.0` | `onLoadingComplete` prop and `domains` config deprecated. |
+| `v13.4.14` | `placeholder` prop support for `data:/image...` |
+| `v13.2.0` | `contentDispositionType` configuration added. |
+| `v13.0.6` | `ref` prop added. |
+| `v13.0.0` | The `next/image` import was renamed to `next/legacy/image`. The `next/future/image` import was renamed to `next/image`. A [codemod is available](/docs/app/guides/upgrading/codemods#next-image-to-legacy-image) to safely and automatically rename your imports. `<span>` wrapper removed. `layout`, `objectFit`, `objectPosition`, `lazyBoundary`, `lazyRoot` props removed. `alt` is required. `onLoadingComplete` receives reference to `img` element. Built-in loader config removed. |
+| `v12.3.0` | `remotePatterns` and `unoptimized` configuration is stable. |
+| `v12.2.0` | Experimental `remotePatterns` and experimental `unoptimized` configuration added. `layout="raw"` removed. |
+| `v12.1.1` | `style` prop added. Experimental support for `layout="raw"` added. |
+| `v12.1.0` | `dangerouslyAllowSVG` and `contentSecurityPolicy` configuration added. |
+| `v12.0.9` | `lazyRoot` prop added. |
+| `v12.0.0` | `formats` configuration added.  
 AVIF support added.  
-Wrapper `<div>` changed to `<span>`.
-
-`v11.1.0`
-
-`onLoadingComplete` and `lazyBoundary` props added.
-
-`v11.0.0`
-
-`src` prop support for static import.  
+Wrapper `<div>` changed to `<span>`. |
+| `v11.1.0` | `onLoadingComplete` and `lazyBoundary` props added. |
+| `v11.0.0` | `src` prop support for static import.  
 `placeholder` prop added.  
-`blurDataURL` prop added.
-
-`v10.0.5`
-
-`loader` prop added.
-
-`v10.0.1`
-
-`layout` prop added.
-
-`v10.0.0`
-
-`next/image` introduced.
+`blurDataURL` prop added. |
+| `v10.0.5` | `loader` prop added. |
+| `v10.0.1` | `layout` prop added. |
+| `v10.0.0` | `next/image` introduced. |
 
 Was this helpful?
-
-supported.
-
-Send

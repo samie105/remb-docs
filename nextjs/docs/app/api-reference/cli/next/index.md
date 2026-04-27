@@ -5,23 +5,39 @@ canonical_url: "https://nextjs.org/docs/app/api-reference/cli/next"
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:06:13.226Z"
-content_hash: "ed8df6470834c8d8f1051f8913336462b3da6f4f0948db41d1fe100c184246b4"
+last_crawled_at: "2026-04-27T18:05:08.421Z"
+content_hash: "7020db25a8a8168f61c30a79ae8b1baa95f0aee5becff3f57fc371dff5260f5f"
 menu_path: ["next CLI"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/api-reference/cli/create-next-app/index.md", "title": "create-next-app"}
-nav_next: {"path": "nextjs/docs/app/api-reference/adapters/index.md", "title": "Adapters"}
+version: "latest"
+tab_variants: ["pnpm","npm","yarn","bun","pnpm","npm","yarn","bun"]
+content_language: "en"
 ---
+[API Reference](/docs/app/api-reference)[CLI](/docs/app/api-reference/cli)next CLI
 
 # next CLI
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 The Next.js CLI allows you to develop, build, start your application, and more.
 
 Basic usage:
 
-pnpmnpmyarnbun
+#### pnpm
+
+pnpm
+
+#### npm
+
+npm
+
+#### yarn
+
+yarn
+
+#### bun
+
+bun
 
 Terminal
 
@@ -35,57 +51,25 @@ pnpm next [command] [options]
 
 The following options are available:
 
-Options
-
-Description
-
-`-h` or `--help`
-
-Shows all available options
-
-`-v` or `--version`
-
-Outputs the Next.js version number
+| Options | Description |
+| --- | --- |
+| `-h` or `--help` | Shows all available options |
+| `-v` or `--version` | Outputs the Next.js version number |
 
 ### Commands[](#commands)
 
 The following commands are available:
 
-Command
-
-Description
-
-[`dev`](#next-dev-options)
-
-Starts Next.js in development mode with Hot Module Reloading, error reporting, and more.
-
-[`build`](#next-build-options)
-
-Creates an optimized production build of your application. Displaying information about each route.
-
-[`start`](#next-start-options)
-
-Starts Next.js in production mode. The application should be compiled with `next build` first.
-
-[`info`](#next-info-options)
-
-Prints relevant details about the current system which can be used to report Next.js bugs.
-
-[`telemetry`](#next-telemetry-options)
-
-Allows you to enable or disable Next.js' completely anonymous telemetry collection.
-
-[`typegen`](#next-typegen-options)
-
-Generates TypeScript definitions for routes, pages, layouts, and route handlers without running a full build.
-
-[`upgrade`](#next-upgrade-options)
-
-Upgrades your Next.js application to the latest version.
-
-[`experimental-analyze`](#next-experimental-analyze-options)
-
-Analyzes bundle output using Turbopack. Does not produce build artifacts.
+| Command | Description |
+| --- | --- |
+| [`dev`](#next-dev-options) | Starts Next.js in development mode with Hot Module Reloading, error reporting, and more. |
+| [`build`](#next-build-options) | Creates an optimized production build of your application. Displaying information about each route. |
+| [`start`](#next-start-options) | Starts Next.js in production mode. The application should be compiled with `next build` first. |
+| [`info`](#next-info-options) | Prints relevant details about the current system which can be used to report Next.js bugs. |
+| [`telemetry`](#next-telemetry-options) | Allows you to enable or disable Next.js' completely anonymous telemetry collection. |
+| [`typegen`](#next-typegen-options) | Generates TypeScript definitions for routes, pages, layouts, and route handlers without running a full build. |
+| [`upgrade`](#next-upgrade-options) | Upgrades your Next.js application to the latest version. |
+| [`experimental-analyze`](#next-experimental-analyze-options) | Analyzes bundle output using Turbopack. Does not produce build artifacts. |
 
 > **Good to know**: Running `next` without a command is an alias for `next dev`.
 
@@ -97,57 +81,20 @@ Analyzes bundle output using Turbopack. Does not produce build artifacts.
 
 The following options are available when running `next dev`:
 
-Option
-
-Description
-
-`-h, --help`
-
-Show all available options.
-
-`[directory]`
-
-A directory in which to build the application. If not provided, current directory is used.
-
-`--turbopack`
-
-Force enable [Turbopack](/docs/app/api-reference/turbopack) (enabled by default). Also available as `--turbo`.
-
-`--webpack`
-
-Use Webpack instead of the default [Turbopack](/docs/app/api-reference/turbopack) bundler for development.
-
-`-p` or `--port <port>`
-
-Specify a port number on which to start the application. Default: 3000, env: PORT
-
-`-H`or `--hostname <hostname>`
-
-Specify a hostname on which to start the application. Useful for making the application available for other devices on the network. Default: 0.0.0.0
-
-`--experimental-https`
-
-Starts the server with HTTPS and generates a self-signed certificate.
-
-`--experimental-https-key <path>`
-
-Path to a HTTPS key file.
-
-`--experimental-https-cert <path>`
-
-Path to a HTTPS certificate file.
-
-`--experimental-https-ca <path>`
-
-Path to a HTTPS certificate authority file.
-
-`--experimental-upload-trace <traceUrl>`
-
-Reports a subset of the debugging trace to a remote HTTP URL.
-
-`--experimental-cpu-prof`
-
-Enables CPU profiling using V8's inspector. Profiles are saved to `.next/cpu-profiles/` on exit.
+| Option | Description |
+| --- | --- |
+| `-h, --help` | Show all available options. |
+| `[directory]` | A directory in which to build the application. If not provided, current directory is used. |
+| `--turbopack` | Force enable [Turbopack](/docs/app/api-reference/turbopack) (enabled by default). Also available as `--turbo`. |
+| `--webpack` | Use Webpack instead of the default [Turbopack](/docs/app/api-reference/turbopack) bundler for development. |
+| `-p` or `--port <port>` | Specify a port number on which to start the application. Default: 3000, env: PORT |
+| `-H`or `--hostname <hostname>` | Specify a hostname on which to start the application. Useful for making the application available for other devices on the network. Default: 0.0.0.0 |
+| `--experimental-https` | Starts the server with HTTPS and generates a self-signed certificate. |
+| `--experimental-https-key <path>` | Path to a HTTPS key file. |
+| `--experimental-https-cert <path>` | Path to a HTTPS certificate file. |
+| `--experimental-https-ca <path>` | Path to a HTTPS certificate authority file. |
+| `--experimental-upload-trace <traceUrl>` | Reports a subset of the debugging trace to a remote HTTP URL. |
+| `--experimental-cpu-prof` | Enables CPU profiling using V8's inspector. Profiles are saved to `.next/cpu-profiles/` on exit. |
 
 ### `next build` options[](#next-build-options)
 
@@ -166,61 +113,22 @@ Route (app)
 
 The following options are available for the `next build` command:
 
-Option
-
-Description
-
-`-h, --help`
-
-Show all available options.
-
-`[directory]`
-
-A directory on which to build the application. If not provided, the current directory will be used.
-
-`--turbopack`
-
-Force enable [Turbopack](/docs/app/api-reference/turbopack) (enabled by default). Also available as `--turbo`.
-
-`--webpack`
-
-Build using Webpack.
-
-`-d` or `--debug`
-
-Enables a more verbose build output. With this flag enabled additional build output like rewrites, redirects, and headers will be shown.
-
-`--profile`
-
-Enables production [profiling for React](https://react.dev/reference/react/Profiler).
-
-`--no-lint`
-
-Disables linting. _Note: linting will be removed from `next build` in Next 16. If you're using Next 15.5+ with a linter other than `eslint`, linting during build will not occur._
-
-`--no-mangling`
-
-Disables [mangling](https://en.wikipedia.org/wiki/Name_mangling). This may affect performance and should only be used for debugging purposes.
-
-`--experimental-app-only`
-
-Builds only App Router routes.
-
-`--experimental-build-mode [mode]`
-
-Uses an experimental build mode. (choices: "compile", "generate", default: "default")
-
-`--debug-prerender`
-
-Debug prerender errors in development.
-
-`--debug-build-paths=<patterns>`
-
-Build only specific routes for debugging.
-
-`--experimental-cpu-prof`
-
-Enables CPU profiling using V8's inspector. Profiles are saved to `.next/cpu-profiles/` on exit.
+| Option | Description |
+| --- | --- |
+| `-h, --help` | Show all available options. |
+| `[directory]` | A directory on which to build the application. If not provided, the current directory will be used. |
+| `--turbopack` | Force enable [Turbopack](/docs/app/api-reference/turbopack) (enabled by default). Also available as `--turbo`. |
+| `--webpack` | Build using Webpack. |
+| `-d` or `--debug` | Enables a more verbose build output. With this flag enabled additional build output like rewrites, redirects, and headers will be shown. |
+|  |  |
+| `--profile` | Enables production [profiling for React](https://react.dev/reference/react/Profiler). |
+| `--no-lint` | Disables linting. _Note: linting will be removed from `next build` in Next 16. If you're using Next 15.5+ with a linter other than `eslint`, linting during build will not occur._ |
+| `--no-mangling` | Disables [mangling](https://en.wikipedia.org/wiki/Name_mangling). This may affect performance and should only be used for debugging purposes. |
+| `--experimental-app-only` | Builds only App Router routes. |
+| `--experimental-build-mode [mode]` | Uses an experimental build mode. (choices: "compile", "generate", default: "default") |
+| `--debug-prerender` | Debug prerender errors in development. |
+| `--debug-build-paths=<patterns>` | Build only specific routes for debugging. |
+| `--experimental-cpu-prof` | Enables CPU profiling using V8's inspector. Profiles are saved to `.next/cpu-profiles/` on exit. |
 
 ### `next start` options[](#next-start-options)
 
@@ -228,33 +136,14 @@ Enables CPU profiling using V8's inspector. Profiles are saved to `.next/cpu-pro
 
 The following options are available for the `next start` command:
 
-Option
-
-Description
-
-`-h` or `--help`
-
-Show all available options.
-
-`[directory]`
-
-A directory on which to start the application. If no directory is provided, the current directory will be used.
-
-`-p` or `--port <port>`
-
-Specify a port number on which to start the application. (default: 3000, env: PORT)
-
-`-H` or `--hostname <hostname>`
-
-Specify a hostname on which to start the application (default: 0.0.0.0).
-
-`--keepAliveTimeout <keepAliveTimeout>`
-
-Specify the maximum amount of milliseconds to wait before closing the inactive connections.
-
-`--experimental-cpu-prof`
-
-Enables CPU profiling using V8's inspector. Profiles are saved to `.next/cpu-profiles/` on exit.
+| Option | Description |
+| --- | --- |
+| `-h` or `--help` | Show all available options. |
+| `[directory]` | A directory on which to start the application. If no directory is provided, the current directory will be used. |
+| `-p` or `--port <port>` | Specify a port number on which to start the application. (default: 3000, env: PORT) |
+| `-H` or `--hostname <hostname>` | Specify a hostname on which to start the application (default: 0.0.0.0). |
+| `--keepAliveTimeout <keepAliveTimeout>` | Specify the maximum amount of milliseconds to wait before closing the inactive connections. |
+| `--experimental-cpu-prof` | Enables CPU profiling using V8's inspector. Profiles are saved to `.next/cpu-profiles/` on exit. |
 
 ### `next info` options[](#next-info-options)
 
@@ -288,17 +177,10 @@ Next.js Config:
 
 The following options are available for the `next info` command:
 
-Option
-
-Description
-
-`-h` or `--help`
-
-Show all available options
-
-`--verbose`
-
-Collects additional information for debugging.
+| Option | Description |
+| --- | --- |
+| `-h` or `--help` | Show all available options |
+| `--verbose` | Collects additional information for debugging. |
 
 ### `next telemetry` options[](#next-telemetry-options)
 
@@ -306,21 +188,11 @@ Next.js collects **completely anonymous** telemetry data about general usage. Pa
 
 The following options are available for the `next telemetry` command:
 
-Option
-
-Description
-
-`-h, --help`
-
-Show all available options.
-
-`--enable`
-
-Enables Next.js' telemetry collection.
-
-`--disable`
-
-Disables Next.js' telemetry collection.
+| Option | Description |
+| --- | --- |
+| `-h, --help` | Show all available options. |
+| `--enable` | Enables Next.js' telemetry collection. |
+| `--disable` | Disables Next.js' telemetry collection. |
 
 Learn more about [Telemetry](/telemetry).
 
@@ -342,17 +214,10 @@ next typegen && npm run type-check
 
 The following options are available for the `next typegen` command:
 
-Option
-
-Description
-
-`-h, --help`
-
-Show all available options.
-
-`[directory]`
-
-A directory on which to generate types. If not provided, the current directory will be used.
+| Option | Description |
+| --- | --- |
+| `-h, --help` | Show all available options. |
+| `[directory]` | A directory on which to generate types. If not provided, the current directory will be used. |
 
 Output files are written to `<distDir>/types` (typically: `.next/dev/types` in development or `.next/types` in production):
 
@@ -378,31 +243,32 @@ To ensure `next-env.d.ts` is present before type-checking run `next typegen`. Th
 
 The following options are available for the `next upgrade` command:
 
-Option
-
-Description
-
-`-h, --help`
-
-Show all available options.
-
-`[directory]`
-
-A directory with the Next.js application to upgrade. If not provided, the current directory will be used.
-
-`--revision <revision>`
-
-Specify a Next.js version or tag to upgrade to (e.g., `latest`, `canary`, `15.0.0`). Defaults to the release channel you have currently installed.
-
-`--verbose`
-
-Show verbose output during the upgrade process.
+| Option | Description |
+| --- | --- |
+| `-h, --help` | Show all available options. |
+| `[directory]` | A directory with the Next.js application to upgrade. If not provided, the current directory will be used. |
+| `--revision <revision>` | Specify a Next.js version or tag to upgrade to (e.g., `latest`, `canary`, `15.0.0`). Defaults to the release channel you have currently installed. |
+| `--verbose` | Show verbose output during the upgrade process. |
 
 ### `next experimental-analyze` options[](#next-experimental-analyze-options)
 
 `next experimental-analyze` analyzes your application's bundle output using [Turbopack](/docs/app/api-reference/turbopack). This command helps you understand the size and composition of your bundles, including JavaScript, CSS, and other assets. This command doesn't produce an application build.
 
-pnpmnpmyarnbun
+#### pnpm
+
+pnpm
+
+#### npm
+
+npm
+
+#### yarn
+
+yarn
+
+#### bun
+
+bun
 
 Terminal
 
@@ -412,9 +278,9 @@ pnpm next experimental-analyze
 
 By default, the command starts a local server after analysis completes, allowing you to explore your bundle composition in the browser. The analyzer lets you:
 
-*   Filter bundles by route and switch between client and server views
-*   View the full import chain showing why a module is included
-*   Trace imports across server-to-client component boundaries and dynamic imports
+-   Filter bundles by route and switch between client and server views
+-   View the full import chain showing why a module is included
+-   Trace imports across server-to-client component boundaries and dynamic imports
 
 See [Package Bundling](/docs/app/guides/package-bundling#optimizing-large-bundles) for optimization strategies.
 
@@ -432,33 +298,14 @@ cp -r .next/diagnostics/analyze ./analyze-before-refactor
 
 The following options are available for the `next experimental-analyze` command:
 
-Option
-
-Description
-
-`-h, --help`
-
-Show all available options.
-
-`[directory]`
-
-A directory on which to analyze the application. If not provided, the current directory will be used.
-
-`--no-mangling`
-
-Disables [mangling](https://en.wikipedia.org/wiki/Name_mangling). This may affect performance and should only be used for debugging purposes.
-
-`--profile`
-
-Enables production [profiling for React](https://react.dev/reference/react/Profiler). This may affect performance.
-
-`-o, --output`
-
-Write analysis files to disk without starting the server. Output is written to `.next/diagnostics/analyze`.
-
-`--port <port>`
-
-Specify a port number to serve the analyzer on. (default: 4000, env: PORT)
+| Option | Description |
+| --- | --- |
+| `-h, --help` | Show all available options. |
+| `[directory]` | A directory on which to analyze the application. If not provided, the current directory will be used. |
+| `--no-mangling` | Disables [mangling](https://en.wikipedia.org/wiki/Name_mangling). This may affect performance and should only be used for debugging purposes. |
+| `--profile` | Enables production [profiling for React](https://react.dev/reference/react/Profiler). This may affect performance. |
+| `-o, --output` | Write analysis files to disk without starting the server. Output is written to `.next/diagnostics/analyze`. |
+| `--port <port>` | Specify a port number to serve the analyzer on. (default: 4000, env: PORT) |
 
 ## Examples[](#examples)
 
@@ -474,15 +321,15 @@ next build --debug-prerender
 
 This enables several experimental options to make debugging easier:
 
-*   Disables server code minification:
-    *   `experimental.serverMinification = false`
-    *   `experimental.turbopackMinify = false`
-*   Generates source maps for server bundles:
-    *   `experimental.serverSourceMaps = true`
-*   Enables source map consumption in child processes used for prerendering:
-    *   `enablePrerenderSourceMaps = true`
-*   Continues building even after the first prerender error, so you can see all issues at once:
-    *   `experimental.prerenderEarlyExit = false`
+-   Disables server code minification:
+    -   `experimental.serverMinification = false`
+    -   `experimental.turbopackMinify = false`
+-   Generates source maps for server bundles:
+    -   `experimental.serverSourceMaps = true`
+-   Enables source map consumption in child processes used for prerendering:
+    -   `enablePrerenderSourceMaps = true`
+-   Continues building even after the first prerender error, so you can see all issues at once:
+    -   `experimental.prerenderEarlyExit = false`
 
 This helps surface more readable stack traces and code frames in the build output.
 
@@ -595,63 +442,31 @@ The generated `.cpuprofile` files can be opened in Chrome DevTools (Performance 
 > 
 > **`next dev`:**
 > 
-> *   `dev-main-*` - Parent process (dev server orchestration)
-> *   `dev-server-*` - Child server process (request handling and rendering) - this is typically what you want to analyze
+> -   `dev-main-*` - Parent process (dev server orchestration)
+> -   `dev-server-*` - Child server process (request handling and rendering) - this is typically what you want to analyze
 > 
 > **`next build` (Turbopack):**
 > 
-> *   `build-main-*` - Main build orchestration process
-> *   `build-turbopack-*` - Turbopack compilation worker
+> -   `build-main-*` - Main build orchestration process
+> -   `build-turbopack-*` - Turbopack compilation worker
 > 
 > **`next build` (Webpack):**
 > 
-> *   `build-main-*` - Main build orchestration process
-> *   `build-webpack-client-*` - Client bundle compilation worker
-> *   `build-webpack-server-*` - Server bundle compilation worker
-> *   `build-webpack-edge-server-*` - Edge runtime compilation worker
+> -   `build-main-*` - Main build orchestration process
+> -   `build-webpack-client-*` - Client bundle compilation worker
+> -   `build-webpack-server-*` - Server bundle compilation worker
+> -   `build-webpack-edge-server-*` - Edge runtime compilation worker
 > 
 > **`next start`:**
 > 
-> *   `start-main-*` - Production server process
+> -   `start-main-*` - Production server process
 
-Version
-
-Changes
-
-`v16.1.0`
-
-Add the `next upgrade` command
-
-`v16.1.0`
-
-Add the `next experimental-analyze` command
-
-`v16.0.0`
-
-The JS bundle size metrics have been removed from `next build`
-
-`v15.5.0`
-
-Add the `next typegen` command
-
-`v15.4.0`
-
-Add `--debug-prerender` option for `next build` to help debug prerender errors.
-
-[Previous
-
-create-next-app
-
-](/docs/app/api-reference/cli/create-next-app)
-
-[Next
-
-Adapters
-
-](/docs/app/api-reference/adapters)
+| Version | Changes |
+| --- | --- |
+| `v16.1.0` | Add the `next upgrade` command |
+| `v16.1.0` | Add the `next experimental-analyze` command |
+| `v16.0.0` | The JS bundle size metrics have been removed from `next build` |
+| `v15.5.0` | Add the `next typegen` command |
+| `v15.4.0` | Add `--debug-prerender` option for `next build` to help debug prerender errors. |
 
 Was this helpful?
-
-supported.
-
-Send

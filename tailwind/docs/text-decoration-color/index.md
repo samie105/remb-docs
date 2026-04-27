@@ -5,65 +5,19 @@ canonical_url: "https://tailwindcss.com/docs/text-decoration-color"
 docset: "tailwind"
 kind: "framework"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:57:50.108Z"
-content_hash: "c9f5b43df9dc686565e60dabaa51cb805ac978b212fa3208f320d98f34e8d89b"
+last_crawled_at: "2026-04-27T20:11:41.307Z"
+content_hash: "370bcced80db52b844987936ff3bc26b8c799df15538d1522215aaf4b01eb86f"
 menu_path: ["text-decoration-color"]
 section_path: []
-nav_prev: {"path": "tailwind/docs/text-decoration-line/index.md", "title": "text-decoration-line"}
-nav_next: {"path": "tailwind/docs/text-decoration-style/index.md", "title": "text-decoration-style"}
+content_language: "en"
 ---
-
 Utilities for controlling the color of text decorations.
-
-Class
-
-Styles
-
-`decoration-inherit`
-
-`text-decoration-color: inherit;`
-
-`decoration-current`
-
-`text-decoration-color: currentColor;`
-
-`decoration-transparent`
-
-`text-decoration-color: transparent;`
-
-`decoration-black`
-
-`text-decoration-color: var(--color-black); /* #000 */`
-
-`decoration-white`
-
-`text-decoration-color: var(--color-white); /* #fff */`
-
-`decoration-red-50`
-
-`text-decoration-color: var(--color-red-50); /* oklch(97.1% 0.013 17.38) */`
-
-`decoration-red-100`
-
-`text-decoration-color: var(--color-red-100); /* oklch(93.6% 0.032 17.717) */`
-
-`decoration-red-200`
-
-`text-decoration-color: var(--color-red-200); /* oklch(88.5% 0.062 18.334) */`
-
-`decoration-red-300`
-
-`text-decoration-color: var(--color-red-300); /* oklch(80.8% 0.114 19.571) */`
-
-`decoration-red-400`
-
-`text-decoration-color: var(--color-red-400); /* oklch(70.4% 0.191 22.216) */`
 
 ## [Examples](#examples)
 
 ### [Basic example](#basic-example)
 
-Use utilities like `decoration-sky-500` and `decoration-pink-500` to change the [text decoration](tailwind/docs/text-decoration-line/index.md) color of an element:
+Use utilities like `decoration-sky-500` and `decoration-pink-500` to change the [text decoration](https://tailwindcss.com/docs/text-decoration-line) color of an element:
 
 ```
 <p>  I’m Derek, an astro-engineer based in Tattooine. I like to build X-Wings  at <a class="underline decoration-sky-500">My Company, Inc</a>. Outside  of work, I like to <a class="underline decoration-pink-500">watch pod-racing</a>  and have <a class="underline decoration-indigo-500">light-saber</a> fights.</p>
@@ -103,7 +57,7 @@ Hover over the text to see the expected behavior
 <p>The <a href="..." class="underline hover:decoration-pink-500 ...">quick brown fox</a> jumps over the lazy dog.</p>
 ```
 
-Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).
+Learn more about using variants in the [variants documentation](https://tailwindcss.com/docs/hover-focus-and-other-states).
 
 ### [Responsive design](#responsive-design)
 
@@ -113,7 +67,7 @@ Prefix a `text-decoration-color` utility with a breakpoint variant like `md:` to
 <p class="underline decoration-sky-600 md:decoration-blue-400 ...">  Lorem ipsum dolor sit amet...</p>
 ```
 
-Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).
+Learn more about using variants in the [variants documentation](https://tailwindcss.com/docs/hover-focus-and-other-states).
 
 ## [Customizing your theme](#customizing-your-theme)
 
@@ -129,4 +83,4 @@ Now the `decoration-regal-blue` utility can be used in your markup:
 <p class="decoration-regal-blue">  Lorem ipsum dolor sit amet...</p>
 ```
 
-Learn more about customizing your theme in the [theme documentation](tailwind/docs/theme/index.md#customizing-your-theme).
+Learn more about customizing your theme in the [theme documentation](https://tailwindcss.com/docs/theme#customizing-your-theme).

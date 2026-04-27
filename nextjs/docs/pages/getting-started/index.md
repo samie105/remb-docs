@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/pages/getting-started"
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:23:36.399Z"
-content_hash: "2efb3d08c7b87cc05d86761295bfd670482230ab1a738c208b5720dd03192dda"
+last_crawled_at: "2026-04-27T18:22:54.010Z"
+content_hash: "c64844a7c9b207c36a4134ef70cd75a259eafb7745512dd385388c15f776551a"
 menu_path: ["Getting Started - Pages Router"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/glossary/index.md", "title": "Next.js Glossary"}
-nav_next: {"path": "nextjs/docs/pages/getting-started/installation/index.md", "title": "Create a new Next.js application"}
+version: "latest"
+content_language: "en"
 ---
+[Next.js Docs](/docs)[Pages Router](/docs/pages)Getting Started
 
 # Getting Started - Pages Router
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 [
 
@@ -56,7 +57,3 @@ Learn how to deploy your Next.js application.
 ](/docs/pages/getting-started/deploying)
 
 Was this helpful?
-
-supported.
-
-Send

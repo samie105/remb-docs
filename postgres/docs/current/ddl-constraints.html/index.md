@@ -5,14 +5,12 @@ canonical_url: "https://www.postgresql.org/docs/current/ddl-constraints.html"
 docset: "postgres"
 kind: "database"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:46:33.424Z"
-content_hash: "17edcbfcdab595d52909f897a0f224824d4424fb7d8295e94ead39671d1a6ff1"
+last_crawled_at: "2026-04-27T20:47:33.581Z"
+content_hash: "59db3fbe3c32ab2345864d14c460c48ad7a88adbc3e7cb0a2391e3dbb6ff03ef"
 menu_path: ["PostgreSQL: Documentation: 18: 5.5. Constraints"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/ddl-basics.html/index.md", "title": "PostgreSQL: Documentation: 18: 5.1.\u00a0Table Basics"}
-nav_next: {"path": "postgres/docs/current/ddl-default.html/index.md", "title": "PostgreSQL: Documentation: 18: 5.2.\u00a0Default Values"}
+content_language: "en"
 ---
-
 Data types are a way to limit the kind of data that can be stored in a table. For many applications, however, the constraint they provide is too coarse. For example, a column containing a product price should probably only accept positive values. But there is no standard data type that accepts only positive numbers. Another issue is that you might want to constrain column data with respect to other columns or rows. For example, in a table containing product information, there should be only one row for each product number.
 
 To that end, SQL allows you to define constraints on columns and tables. Constraints give you as much control over the data in your tables as you wish. If a user attempts to store data in a column that would violate a constraint, an error is raised. This applies even if the value came from the default value definition.
@@ -334,11 +332,11 @@ Notice that the primary key overlaps with the foreign keys in the last table.
 
 We know that the foreign keys disallow creation of orders that do not relate to any products. But what if a product is removed after an order is created that references it? SQL allows you to handle that as well. Intuitively, we have a few options:
 
-*   Disallow deleting a referenced product
+-   Disallow deleting a referenced product
     
-*   Delete the orders as well
+-   Delete the orders as well
     
-*   Something else?
+-   Something else?
     
 
 To illustrate this, let's implement the following policy on the many-to-many relationship example above: when someone wants to remove a product that is still referenced by an order (via `order_items`), we disallow it. If someone removes an order, the order items are removed as well:

@@ -5,15 +5,16 @@ canonical_url: "https://docs.deno.com/runtime/reference/std/assert/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:59:39.073Z"
-content_hash: "d8f44ae68d773bacd895884ac6720c1ac65972c5b874a8a91c2258cbcb7aa7c0"
+last_crawled_at: "2026-04-27T17:38:31.246Z"
+content_hash: "043438b063c6ae2731d89352be39e874b2e9c41e231aa1fa995b4de95ba90e84"
 menu_path: ["Standard Assertions (@std/assert)"]
 section_path: []
+content_language: "en"
 ---
-On this page
+**On this page**
 
-*   [Overview](#overview)
-    *   [Add to your project](#add-to-your-project)
+-   [Overview](#overview)
+    -   [Add to your project](#add-to-your-project)
 
 ## Overview
 

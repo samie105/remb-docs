@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/app/api-reference/functions/updateTag"
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:12:25.610Z"
-content_hash: "7e3f13c04fd2f5c1de388bcf968eb64bd2af70868795b81544b1658a4caaa054"
+last_crawled_at: "2026-04-27T18:11:08.650Z"
+content_hash: "c2e5c5bd2b9ecd8e858a0221bd5a850be49a26b4c3de502fef3fa7110db77655"
 menu_path: ["updateTag"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/api-reference/functions/unstable_rethrow/index.md", "title": "unstable_rethrow"}
-nav_next: {"path": "nextjs/docs/app/api-reference/functions/use-link-status/index.md", "title": "useLinkStatus"}
+version: "latest"
+content_language: "en"
 ---
+[API Reference](/docs/app/api-reference)[Functions](/docs/app/api-reference/functions)updateTag
 
 # updateTag
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 `updateTag` allows you to update cached data on-demand for a specific cache tag from within [Server Actions](/docs/app/getting-started/mutating-data).
 
@@ -35,17 +36,17 @@ If you need to invalidate cache tags in Route Handlers or other contexts, use [`
 updateTag(tag: string): void;
 ```
 
-*   `tag`: A string representing the cache tag associated with the data you want to update. Must not exceed 256 characters. This value is case-sensitive.
+-   `tag`: A string representing the cache tag associated with the data you want to update. Must not exceed 256 characters. This value is case-sensitive.
 
 Tags must first be assigned to cached data. You can do this in two ways:
 
-*   Using the [`next.tags`](/docs/app/api-reference/functions/fetch) option with `fetch` for caching external API requests:
+-   Using the [`next.tags`](/docs/app/api-reference/functions/fetch) option with `fetch` for caching external API requests:
 
 ```
 fetch(url, { next: { tags: ['posts'] } })
 ```
 
-*   Using [`cacheTag`](/docs/app/api-reference/functions/cacheTag) inside cached functions or components with the `'use cache'` directive:
+-   Using [`cacheTag`](/docs/app/api-reference/functions/cacheTag) inside cached functions or components with the `'use cache'` directive:
 
 ```
 import { cacheTag } from 'next/cache'
@@ -65,25 +66,23 @@ async function getData() {
 
 While both `updateTag` and `revalidateTag` invalidate cached data, they serve different purposes:
 
-*   **`updateTag`**:
+-   **`updateTag`**:
     
-    *   Can only be used in Server Actions
-    *   Next request waits for fresh data (no stale content served)
-    *   Designed for read-your-own-writes scenarios
-*   **`revalidateTag`**:
+    -   Can only be used in Server Actions
+    -   Next request waits for fresh data (no stale content served)
+    -   Designed for read-your-own-writes scenarios
+-   **`revalidateTag`**:
     
-    *   Can be used in Server Actions and Route Handlers
-    *   With `profile="max"` (recommended): Serves cached data while fetching fresh data in the background (stale-while-revalidate)
-    *   With custom profile: Can be configured to any cache life profile for advanced usage
-    *   Without profile: legacy behavior which is equivalent to `updateTag`
+    -   Can be used in Server Actions and Route Handlers
+    -   With `profile="max"` (recommended): Serves cached data while fetching fresh data in the background (stale-while-revalidate)
+    -   With custom profile: Can be configured to any cache life profile for advanced usage
+    -   Without profile: legacy behavior which is equivalent to `updateTag`
 
 ## Examples[](#examples)
 
 ### Server Action with Read-Your-Own-Writes[](#server-action-with-read-your-own-writes)
 
 app/actions.ts
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -117,8 +116,6 @@ export async function createPost(formData: FormData) {
 
 app/api/posts/route.ts
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -138,35 +135,19 @@ export async function POST() {
 
 Use `updateTag` when:
 
-*   You're in a Server Action
-*   You need immediate cache invalidation for read-your-own-writes
-*   You want to ensure the next request sees updated data
+-   You're in a Server Action
+-   You need immediate cache invalidation for read-your-own-writes
+-   You want to ensure the next request sees updated data
 
 Use `revalidateTag` instead when:
 
-*   You're in a Route Handler or other non-action context
-*   You want stale-while-revalidate semantics
-*   You're building a webhook or API endpoint for cache invalidation
+-   You're in a Route Handler or other non-action context
+-   You want stale-while-revalidate semantics
+-   You're building a webhook or API endpoint for cache invalidation
 
 ## Related[](#related)
 
-*   [`revalidateTag`](/docs/app/api-reference/functions/revalidateTag) - For invalidating tags in Route Handlers
-*   [`revalidatePath`](/docs/app/api-reference/functions/revalidatePath) - For invalidating specific paths
-
-[Previous
-
-unstable\_rethrow
-
-](/docs/app/api-reference/functions/unstable_rethrow)
-
-[Next
-
-useLinkStatus
-
-](/docs/app/api-reference/functions/use-link-status)
+-   [`revalidateTag`](/docs/app/api-reference/functions/revalidateTag) - For invalidating tags in Route Handlers
+-   [`revalidatePath`](/docs/app/api-reference/functions/revalidatePath) - For invalidating specific paths
 
 Was this helpful?
-
-supported.
-
-Send

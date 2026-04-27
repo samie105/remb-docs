@@ -5,29 +5,17 @@ canonical_url: "https://orm.drizzle.team/docs/guides/include-or-exclude-columns"
 docset: "drizzle"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:04:55.866Z"
-content_hash: "74fc5697057dfd4c92aa60a8d07e8a0d5b7db577b52b969cb1c490d06df54c4f"
+last_crawled_at: "2026-04-27T19:00:19.979Z"
+content_hash: "c42ee4b71b9123694b71d872990f2bd5cc859094f970face5416e70d02ddbf56"
 menu_path: ["Drizzle ORM - Include or Exclude Columns in Query"]
 section_path: []
-nav_prev: {"path": "drizzle/docs/guides/gel-ext-auth/index.md", "title": "Drizzle ORM - Gel auth extension"}
-nav_next: {"path": "drizzle/docs/guides/incrementing-a-value/index.md", "title": "Drizzle ORM - SQL Increment value"}
+content_language: "en"
 ---
-
 Drizzle | Include or Exclude Columns in Query
-
-PostgreSQL
-
-MySQL
-
-SQLite
 
 Drizzle has flexible API for including or excluding columns in queries. To include all columns you can use `.select()` method like this:
 
-index.ts
-
-schema.ts
-
-```
+```ts
 import { posts } from './schema';
 
 const db = drizzle(...);
@@ -35,7 +23,7 @@ const db = drizzle(...);
 await db.select().from(posts);
 ```
 
-```
+```ts
 // result type
 type Result = {
   id: number;
@@ -45,7 +33,7 @@ type Result = {
 }[];
 ```
 
-```
+```ts
 import { integer, pgTable, serial, text } from 'drizzle-orm/pg-core';
 
 export const posts = pgTable('posts', {
@@ -58,11 +46,11 @@ export const posts = pgTable('posts', {
 
 To include specific columns you can use `.select()` method like this:
 
-```
+```ts
 await db.select({ title: posts.title }).from(posts);
 ```
 
-```
+```ts
 // result type
 type Result = {
   title: string;
@@ -73,11 +61,11 @@ To include all columns with extra columns you can use `getColumns()` utility fun
 
 IMPORTANT
 
-`getColumns` available starting from `drizzle-orm@1.0.0-beta.2`(read more [here](drizzle/docs/upgrade-v1/index.md))
+`getColumns` available starting from `drizzle-orm@1.0.0-beta.2`(read more [here](https://orm.drizzle.team/docs/upgrade-v1))
 
 If you are on pre-1 version(like `0.45.1`) then use `getTableColumns`
 
-```
+```ts
 import { getColumns, sql } from 'drizzle-orm';
 
 await db
@@ -88,7 +76,7 @@ await db
   .from(posts);
 ```
 
-```
+```ts
 // result type
 type Result = {
   id: number;
@@ -103,11 +91,11 @@ To exclude columns you can use `getColumns()` utility function like this:
 
 IMPORTANT
 
-`getColumns` available starting from `drizzle-orm@1.0.0-beta.2`(read more [here](drizzle/docs/upgrade-v1/index.md))
+`getColumns` available starting from `drizzle-orm@1.0.0-beta.2`(read more [here](https://orm.drizzle.team/docs/upgrade-v1))
 
 If you are on pre-1 version(like `0.45.1`) then use `getTableColumns`
 
-```
+```ts
 import { getColumns } from 'drizzle-orm';
 
 const { content, ...rest } = getColumns(posts); // exclude "content" column
@@ -115,7 +103,7 @@ const { content, ...rest } = getColumns(posts); // exclude "content" column
 await db.select({ ...rest }).from(posts); // select all other columns
 ```
 
-```
+```ts
 // result type
 type Result = {
   id: number;
@@ -126,11 +114,7 @@ type Result = {
 
 This is how you can include or exclude columns with joins:
 
-index.ts
-
-schema.ts
-
-```
+```ts
 import { eq, getColumns } from 'drizzle-orm';
 import { comments, posts, users } from './db/schema';
 
@@ -148,7 +132,7 @@ await db
   .leftJoin(users, eq(users.id, posts.userId));
 ```
 
-```
+```ts
 // result type
 type Result = {
   postId: number;
@@ -165,7 +149,7 @@ type Result = {
 }[];
 ```
 
-```
+```ts
 import { integer, pgTable, serial, text, timestamp } from 'drizzle-orm/pg-core';
 
 export const users = pgTable('users', {
@@ -193,11 +177,7 @@ export const comments = pgTable('comments', {
 
 Drizzle has useful relational queries API, that lets you easily include or exclude columns in queries. This is how you can include all columns:
 
-index.ts
-
-schema.ts
-
-```
+```ts
 import * as schema from './schema';
 
 const db = drizzle(..., { schema });
@@ -205,7 +185,7 @@ const db = drizzle(..., { schema });
 await db.query.posts.findMany();
 ```
 
-```
+```ts
 // result type
 type Result = {
   id: number;
@@ -215,7 +195,7 @@ type Result = {
 }[]
 ```
 
-```
+```ts
 import { integer, pgTable, serial, text } from 'drizzle-orm/pg-core';
 
 export const posts = pgTable('posts', {
@@ -228,7 +208,7 @@ export const posts = pgTable('posts', {
 
 This is how you can include specific columns using relational queries:
 
-```
+```ts
 await db.query.posts.findMany({
   columns: {
     title: true,
@@ -236,7 +216,7 @@ await db.query.posts.findMany({
 });
 ```
 
-```
+```ts
 // result type
 type Result = {
   title: string;
@@ -245,7 +225,7 @@ type Result = {
 
 This is how you can include all columns with extra columns using relational queries:
 
-```
+```ts
 import { sql } from 'drizzle-orm';
 
 await db.query.posts.findMany({
@@ -255,7 +235,7 @@ await db.query.posts.findMany({
 });
 ```
 
-```
+```ts
 // result type
 type Result = {
   id: number;
@@ -268,7 +248,7 @@ type Result = {
 
 This is how you can exclude columns using relational queries:
 
-```
+```ts
 await db.query.posts.findMany({
   columns: {
     content: false,
@@ -276,7 +256,7 @@ await db.query.posts.findMany({
 });
 ```
 
-```
+```ts
 // result type
 type Result = {
   id: number;
@@ -287,11 +267,7 @@ type Result = {
 
 This is how you can include or exclude columns with relations using relational queries:
 
-index.ts
-
-schema.ts
-
-```
+```ts
 import * as schema from './schema';
 
 const db = drizzle(..., { schema });
@@ -312,7 +288,7 @@ await db.query.posts.findMany({
 });
 ```
 
-```
+```ts
 // result type
 type Result = {
   id: number;
@@ -329,7 +305,7 @@ type Result = {
 }[]
 ```
 
-```
+```ts
 import { relations } from 'drizzle-orm';
 import { integer, pgTable, serial, text, timestamp } from 'drizzle-orm/pg-core';
 
@@ -373,11 +349,7 @@ export const commentsRelations = relations(comments, ({ one }) => ({
 
 This is how you can create custom solution for conditional select:
 
-index.ts
-
-schema.ts
-
-```
+```ts
 import { posts } from './schema';
 
 const searchPosts = async (withTitle = false) => {
@@ -393,7 +365,7 @@ await searchPosts();
 await searchPosts(true);
 ```
 
-```
+```ts
 // result type
 type Result = {
   id: number;
@@ -401,7 +373,7 @@ type Result = {
 }[];
 ```
 
-```
+```ts
 import { integer, pgTable, serial, text } from 'drizzle-orm/pg-core';
 
 export const posts = pgTable('posts', {

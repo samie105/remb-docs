@@ -5,37 +5,41 @@ canonical_url: "https://tailwindcss.com/docs/content"
 docset: "tailwind"
 kind: "framework"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:00:22.202Z"
-content_hash: "5a2a14a5e5c17b8e5c189f3f60b35e382d305422332baf0dafa4b4eea9936daf"
+last_crawled_at: "2026-04-27T20:15:44.711Z"
+content_hash: "345605381e8fb61ef3f357e7fa2526ec8189765ef69510b2b77d3d0113d5f759"
 menu_path: ["content"]
 section_path: []
-nav_prev: {"path": "tailwind/docs/hyphens/index.md", "title": "hyphens"}
-nav_next: {"path": "tailwind/docs/background-attachment/index.md", "title": "background-attachment"}
+content_language: "en"
 ---
+[](/)
+
+[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
+
+1.  Typography
+2.  content
+
+Typography
 
 # content
 
 Utilities for controlling the content of the before and after pseudo-elements.
 
-Class
-
-Styles
-
-`content-[<value>]`
-
+| Class | Styles |
+| --- | --- |
+| `content-[<value>]` | 
 `content: <value>;`
 
-`content-(<custom-property>)`
+ |
+| `content-(<custom-property>)` | 
 
 `content: var(<custom-property>);`
 
-`content-none`
+ |
+| `content-none` | 
 
 `content: none;`
 
-## [Examples](#examples)
-
-### [Basic example](#basic-example)
+ |
 
 Use the `content-[<value>]` syntax, along with the `before` and `after` variants, to set the contents of the `::before` and `::after` pseudo-elements:
 
@@ -45,15 +49,11 @@ Higher resolution means more than just a better-quality image. With a Retina 6K 
 <p>Higher resolution means more than just a better-quality image. With aRetina 6K display, <a class="text-blue-600 after:content-['_↗']" href="...">Pro Display XDR</a> gives you nearly 40 percent more screen real estate thana 5K display.</p>
 ```
 
-### [Referencing an attribute value](#referencing-an-attribute-value)
-
 Use the `content-[attr(<name>)]` syntax to reference a value stored in an attribute using the `attr()` CSS function:
 
 ```
 <p before="Hello World" class="before:content-[attr(before)] ...">  <!-- ... --></p>
 ```
-
-### [Using spaces and underscores](#using-spaces-and-underscores)
 
 Since whitespace denotes the end of a class in HTML, replace any spaces in an arbitrary value with an underscore:
 
@@ -67,8 +67,6 @@ If you need to include an actual underscore, you can do this by escaping it with
 <p class="before:content-['Hello\_World']"></p>
 ```
 
-### [Using a CSS variable](#using-a-css-variable)
-
 Use the `content-(<custom-property>)` syntax to control the contents of the `::before` and `::after` pseudo-elements using a CSS variable:
 
 ```
@@ -76,8 +74,6 @@ Use the `content-(<custom-property>)` syntax to control the contents of the `::b
 ```
 
 This is just a shorthand for `content-[var(<custom-property>)]` that adds the `var()` function for you automatically.
-
-### [Responsive design](#responsive-design)
 
 Prefix a `content` utility with a breakpoint variant like `md:` to only apply the utility at medium screen sizes and above:
 
@@ -89,22 +85,26 @@ Learn more about using variants in the [variants documentation](/docs/hover-focu
 
 ### On this page
 
-*   [Quick reference](#quick-reference)
-*   [Examples](#examples)
-    *   [Basic example](#basic-example)
-    *   [Referencing an attribute value](#referencing-an-attribute-value)
-    *   [Using spaces and underscores](#using-spaces-and-underscores)
-    *   [Using a CSS variable](#using-a-css-variable)
-    *   [Responsive design](#responsive-design)
+-   [Quick reference](#quick-reference)
+-   [Examples](#examples)
+    -   [Basic example](#basic-example)
+    -   [Referencing an attribute value](#referencing-an-attribute-value)
+    -   [Using spaces and underscores](#using-spaces-and-underscores)
+    -   [Using a CSS variable](#using-a-css-variable)
+    -   [Responsive design](#responsive-design)
 
-![Build UIs that don’t suck — 5-day mini-course](/_next/static/media/course-promo.d3d6bc78.jpg)
+[
 
-5-day mini-course
+![Refactoring UI](/_next/static/media/book-promo.3012c0f6.png)
 
-Build UIs that don’t suck.
+From the creators of Tailwind CSS
 
-Short, tactical video lessons from the creator of Tailwind CSS, delivered directly to your inbox every day for a week.
+Make your ideas look awesome, without relying on a designer.
 
-[Get the free course](/build-uis-that-dont-suck)
+> “This is the survival kit I wish I had when I started building apps.”
+> 
+> Derrick Reimer, SavvyCal
+
+](https://www.refactoringui.com/?ref=sidebar)
 
 Copyright © 2026 Tailwind Labs Inc.·[Trademark Policy](/brand)

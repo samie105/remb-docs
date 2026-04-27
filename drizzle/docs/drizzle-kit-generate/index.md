@@ -5,14 +5,12 @@ canonical_url: "https://orm.drizzle.team/docs/drizzle-kit-generate"
 docset: "drizzle"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:46:22.054Z"
-content_hash: "d8f79fe08cc24396faf1515e7dcfc39913252bbd5b3265a76721eba8f607b6e9"
+last_crawled_at: "2026-04-27T18:35:52.789Z"
+content_hash: "5fa91665cb2af8dad12b7bad175621611136e124462d071cfddd407ce43f10dc"
 menu_path: ["drizzle-kit generate"]
 section_path: []
-nav_prev: {"path": "drizzle/docs/kit-overview/index.md", "title": "Migrations with Drizzle Kit"}
-nav_next: {"path": "drizzle/docs/drizzle-kit-migrate/index.md", "title": "drizzle-kit migrate"}
+content_language: "en"
 ---
-
 `drizzle-kit generate` lets you generate SQL migrations based on your Drizzle schema upon declaration or on subsequent schema changes.
 
 How it works under the hood?
@@ -24,7 +22,7 @@ Drizzle Kit `generate` command triggers a sequence of events:
 3.  Based on json differences it will generate SQL migrations
 4.  Save `migration.sql` and `snapshot.json` in migration folder under current timestamp
 
-```
+```typescript
 import * as p from "./drizzle-orm/pg-core";
 
 export const users = p.pgTable("users", {
@@ -34,7 +32,7 @@ export const users = p.pgTable("users", {
 };
 ```
 
-```
+```plaintext
 ┌────────────────────────┐                  
 │ $ drizzle-kit generate │                  
 └─┬──────────────────────┘                  
@@ -51,7 +49,7 @@ export const users = p.pgTable("users", {
   v
 ```
 
-```
+```sql
 -- drizzle/20242409125510_premium_mister_fear/migration.sql
 
 CREATE TABLE "users" (
@@ -61,15 +59,15 @@ CREATE TABLE "users" (
 );
 ```
 
-It’s designed to cover [code first](drizzle/docs/migrations/index.md) approach of managing Drizzle migrations. You can apply generated migrations using [`drizzle-kit migrate`](drizzle/docs/drizzle-kit-migrate/index.md), using drizzle-orm’s `migrate()`, using external migration tools like [bytebase](https://www.bytebase.com/) or running migrations yourself directly on the database.
+It’s designed to cover [code first](https://orm.drizzle.team/docs/migrations) approach of managing Drizzle migrations. You can apply generated migrations using [`drizzle-kit migrate`](https://orm.drizzle.team/docs/drizzle-kit-migrate), using drizzle-orm’s `migrate()`, using external migration tools like [bytebase](https://www.bytebase.com/) or running migrations yourself directly on the database.
 
-`drizzle-kit generate` command requires you to provide both `dialect` and `schema` path options, you can set them either via [drizzle.config.ts](drizzle/docs/drizzle-config-file/index.md) config file or via CLI options
+`drizzle-kit generate` command requires you to provide both `dialect` and `schema` path options, you can set them either via [drizzle.config.ts](https://orm.drizzle.team/docs/drizzle-config-file) config file or via CLI options
 
 With config file
 
 As CLI options
 
-```
+```ts
 // drizzle.config.ts
 import { defineConfig } from "drizzle-kit";
 
@@ -79,11 +77,11 @@ export default defineConfig({
 });
 ```
 
-```
+```shell
 npx drizzle-kit generate
 ```
 
-```
+```shell
 npx drizzle-kit generate --dialect=postgresql --schema=./src/schema.ts
 ```
 
@@ -99,7 +97,7 @@ Example 3
 
 Example 4
 
-```
+```plaintext
 📦 <project root>
  ├ ...
  ├ 📂 drizzle
@@ -111,7 +109,7 @@ Example 4
  └ 📜 package.json
 ```
 
-```
+```ts
 import { defineConfig } from "drizzle-kit";
 
 export default defineConfig({
@@ -123,11 +121,11 @@ export default defineConfig({
 
 You can set custom migration file names by providing `--name` CLI option
 
-```
+```shell
 npx drizzle-kit generate --name=init
 ```
 
-```
+```plaintext
 📦 <project root>
  ├ 📂 drizzle
  │ └ 📂 20242409125510_init
@@ -140,14 +138,6 @@ npx drizzle-kit generate --name=init
 ### Multiple configuration files in one project[](#multiple-configuration-files-in-one-project)
 
 You can have multiple config files in the project, it’s very useful when you have multiple database stages or multiple databases or different databases on the same project:
-
-npm
-
-yarn
-
-pnpm
-
-bun
 
 ```
 npx drizzle-kit generate --config=drizzle-dev.config.ts
@@ -169,7 +159,7 @@ bunx drizzle-kit generate --config=drizzle-dev.config.ts
 bunx drizzle-kit generate --config=drizzle-prod.config.ts
 ```
 
-```
+```plaintext
 📦 <project root>
  ├ 📂 drizzle
  ├ 📂 src
@@ -182,13 +172,13 @@ bunx drizzle-kit generate --config=drizzle-prod.config.ts
 
 ### Custom migrations[](#custom-migrations)
 
-You can generate empty migration files to write your own custom SQL migrations for DDL alternations currently not supported by Drizzle Kit or data seeding. Extended docs on custom migrations - [see here](drizzle/docs/kit-custom-migrations/index.md)
+You can generate empty migration files to write your own custom SQL migrations for DDL alternations currently not supported by Drizzle Kit or data seeding. Extended docs on custom migrations - [see here](https://orm.drizzle.team/docs/kit-custom-migrations)
 
-```
+```shell
 drizzle-kit generate --custom --name=seed-users
 ```
 
-```
+```plaintext
 📦 <project root>
  ├ 📂 drizzle
  │ ├ 📂 20242409125510_init
@@ -197,7 +187,7 @@ drizzle-kit generate --custom --name=seed-users
  └ …
 ```
 
-```
+```sql
 -- ./drizzle/20242409125510_seed/migration.sql
 
 INSERT INTO "users" ("name") VALUES('Dan');
@@ -213,7 +203,7 @@ IMPORTANT
 
 In case you need `generate` command to skip commutativity checks and bypass it, you can use `--ignore-conflicts`. If there is a situation you want to use it, then there is a big chance that `drizzle-kit` didn’t check migrations right and it’s a bug. Please report us your case, so we can fix it
 
-```
+```shell
 drizzle-kit generate --ignore-conflicts
 ```
 
@@ -221,21 +211,10 @@ drizzle-kit generate --ignore-conflicts
 
 `drizzle-kit generate` has a list of cli-only options
 
-`custom`
-
-generate empty SQL for custom migration
-
-`name`
-
-generate migration with custom name
-
-npm
-
-yarn
-
-pnpm
-
-bun
+|  |  |
+| --- | --- |
+| `custom` | generate empty SQL for custom migration |
+| `name` | generate migration with custom name |
 
 ```
 npx drizzle-kit generate --name=init
@@ -261,31 +240,15 @@ bunx drizzle-kit generate --name=seed_users --custom
 
 * * *
 
-We recommend configuring `drizzle-kit` through [drizzle.config.ts](drizzle/docs/drizzle-config-file/index.md) file, yet you can provide all configuration options through CLI if necessary, e.g. in CI/CD pipelines, etc.
+We recommend configuring `drizzle-kit` through [drizzle.config.ts](https://orm.drizzle.team/docs/drizzle-config-file) file, yet you can provide all configuration options through CLI if necessary, e.g. in CI/CD pipelines, etc.
 
-`dialect`
-
-`required`
-
-Database dialect, one of `postgresql` `mysql` `sqlite` `turso` `singlestore` `mssql` `cockroachdb`
-
-`schema`
-
-`required`
-
-Path to typescript schema file(s) or folder(s) with multiple schema files
-
-`out`
-
-Migrations output folder, default is `./drizzle`
-
-`config`
-
-Configuration file path, default is `drizzle.config.ts`
-
-`breakpoints`
-
-SQL statements breakpoints, default is `true`
+|  |  |  |
+| --- | --- | --- |
+| `dialect` | `required` | Database dialect, one of `postgresql` `mysql` `sqlite` `turso` `singlestore` `mssql` `cockroachdb` |
+| `schema` | `required` | Path to typescript schema file(s) or folder(s) with multiple schema files |
+| `out` |  | Migrations output folder, default is `./drizzle` |
+| `config` |  | Configuration file path, default is `drizzle.config.ts` |
+| `breakpoints` |  | SQL statements breakpoints, default is `true` |
 
 ### Extended example[](#extended-example)
 
@@ -295,7 +258,7 @@ We will also place drizzle config file in the `configs` folder.
 
 Let’s create config file:
 
-```
+```plaintext
 📦 <project root>
  ├ 📂 migrations
  ├ 📂 configs
@@ -304,7 +267,7 @@ Let’s create config file:
  └ …
 ```
 
-```
+```ts
 import { defineConfig } from "drizzle-kit";
 
 export default defineConfig({
@@ -316,13 +279,13 @@ export default defineConfig({
 
 Now let’s run
 
-```
+```shell
 npx drizzle-kit generate --config=./configs/drizzle.config.ts --name=seed-users --custom
 ```
 
 And it will successfully generate
 
-```
+```plaintext
 📦 <project root>
  ├ …
  ├ 📂 migrations
@@ -331,7 +294,7 @@ And it will successfully generate
  └ …
 ```
 
-```
+```sql
 -- ./drizzle/20242409125510_seed-users/migration.sql
 
 INSERT INTO "users" ("name") VALUES('Dan');

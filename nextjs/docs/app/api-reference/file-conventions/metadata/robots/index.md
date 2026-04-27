@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/app/api-reference/file-conventions/metad
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:10:20.440Z"
-content_hash: "da3cbc052e1f2ef283f801860b0ef5f8dd106e79cc75c675995a9638b15efaf1"
+last_crawled_at: "2026-04-27T18:09:02.131Z"
+content_hash: "bf7ae2c9b992828a2fc073f2a524423cbbcc771a67f1749aeb742942c7a8fbc8"
 menu_path: ["robots.txt"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/api-reference/file-conventions/metadata/opengraph-image/index.md", "title": "opengraph-image and twitter-image"}
-nav_next: {"path": "nextjs/docs/app/api-reference/file-conventions/metadata/sitemap/index.md", "title": "sitemap.xml"}
+version: "latest"
+content_language: "en"
 ---
+[File-system conventions](/docs/app/api-reference/file-conventions)[Metadata Files](/docs/app/api-reference/file-conventions/metadata)robots.txt
 
 # robots.txt
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 Add or generate a `robots.txt` file that matches the [Robots Exclusion Standard](https://en.wikipedia.org/wiki/Robots.txt#Standard) in the **root** of `app` directory to tell search engine crawlers which URLs they can access on your site.
 
@@ -38,8 +39,6 @@ Add a `robots.js` or `robots.ts` file that returns a [`Robots` object](#robots-o
 > **Good to know**: `robots.js` is a special Route Handler that is cached by default unless it uses a [Request-time API](/docs/app/glossary#request-time-apis) or [dynamic config](/docs/app/guides/caching-without-cache-components#dynamic) option.
 
 app/robots.ts
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -73,8 +72,6 @@ Sitemap: https://acme.com/sitemap.xml
 You can customize how individual search engine bots crawl your site by passing an array of user agents to the `rules` property. For example:
 
 app/robots.ts
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -139,28 +136,8 @@ type Robots = {
 
 ## Version History[](#version-history)
 
-Version
-
-Changes
-
-`v13.3.0`
-
-`robots` introduced.
-
-[Previous
-
-opengraph-image and twitter-image
-
-](/docs/app/api-reference/file-conventions/metadata/opengraph-image)
-
-[Next
-
-sitemap.xml
-
-](/docs/app/api-reference/file-conventions/metadata/sitemap)
+| Version | Changes |
+| --- | --- |
+| `v13.3.0` | `robots` introduced. |
 
 Was this helpful?
-
-supported.
-
-Send

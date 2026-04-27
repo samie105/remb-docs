@@ -5,41 +5,46 @@ canonical_url: "https://tailwindcss.com/docs/filter-sepia"
 docset: "tailwind"
 kind: "framework"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:08:56.202Z"
-content_hash: "a7ed12c7b1e5f247533e32f31d89ccdc7d9b96dbbe5178c6ab42ad635b9f6b1c"
+last_crawled_at: "2026-04-27T20:27:27.932Z"
+content_hash: "99943ae44c554b6374e3ed1e89edd79dcb3864c6103e20446910f70f13f98317"
 menu_path: ["filter: sepia()"]
 section_path: []
-nav_prev: {"path": "tailwind/docs/filter-saturate/index.md", "title": "filter: saturate()"}
-nav_next: {"path": "tailwind/docs/backdrop-filter/index.md", "title": "backdrop-filter"}
+content_language: "en"
 ---
+[](/)
+
+[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
+
+1.  Filters
+2.  sepia
+
+Filters
 
 # filter: sepia()
 
 Utilities for applying sepia filters to an element.
 
-Class
-
-Styles
-
-`sepia`
-
+| Class | Styles |
+| --- | --- |
+| `sepia` | 
 `filter: sepia(100%);`
 
-`sepia-<number>`
+ |
+| `sepia-<number>` | 
 
 `filter: sepia(<number>%);`
 
-`sepia-(<custom-property>)`
+ |
+| `sepia-(<custom-property>)` | 
 
 `filter: sepia(var(<custom-property>));`
 
-`sepia-[<value>]`
+ |
+| `sepia-[<value>]` | 
 
 `filter: sepia(<value>);`
 
-## [Examples](#examples)
-
-### [Basic example](#basic-example)
+ |
 
 Use utilities like `sepia` and `sepia-50` to control the sepia effect applied to an element:
 
@@ -59,8 +64,6 @@ sepia
 <img class="sepia-0" src="/img/mountains.jpg" /><img class="sepia-50" src="/img/mountains.jpg" /><img class="sepia" src="/img/mountains.jpg" />
 ```
 
-### [Using a custom value](#using-a-custom-value)
-
 Use the `sepia-[<value>]` syntax to set the sepia amount based on a completely custom value:
 
 ```
@@ -75,8 +78,6 @@ For CSS variables, you can also use the `sepia-(<custom-property>)` syntax:
 
 This is just a shorthand for `sepia-[var(<custom-property>)]` that adds the `var()` function for you automatically.
 
-### [Responsive design](#responsive-design)
-
 Prefix a `filter: sepia()` utility with a breakpoint variant like `md:` to only apply the utility at medium screen sizes and above:
 
 ```
@@ -87,11 +88,11 @@ Learn more about using variants in the [variants documentation](/docs/hover-focu
 
 ### On this page
 
-*   [Quick reference](#quick-reference)
-*   [Examples](#examples)
-    *   [Basic example](#basic-example)
-    *   [Using a custom value](#using-a-custom-value)
-    *   [Responsive design](#responsive-design)
+-   [Quick reference](#quick-reference)
+-   [Examples](#examples)
+    -   [Basic example](#basic-example)
+    -   [Using a custom value](#using-a-custom-value)
+    -   [Responsive design](#responsive-design)
 
 [
 

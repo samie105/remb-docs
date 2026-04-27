@@ -5,19 +5,17 @@ canonical_url: "https://www.postgresql.org/docs/current/logical-replication-row-
 docset: "postgres"
 kind: "database"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:32:13.380Z"
-content_hash: "7af8a2bd1a66224528550ea882cb678921300e7cfa36e52000e9af8b02964a72"
+last_crawled_at: "2026-04-27T20:42:28.554Z"
+content_hash: "1e93a364c5c4272365ce4ccd889b81a73f746ebc95fec637904872729d049c6d"
 menu_path: ["PostgreSQL: Documentation: 18: 29.4. Row Filters"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/logical-replication-restrictions.html/index.md", "title": "PostgreSQL: Documentation: 18: 29.8.\u00a0Restrictions"}
-nav_next: {"path": "postgres/docs/current/logical-replication-subscription.html/index.md", "title": "PostgreSQL: Documentation: 18: 29.2.\u00a0Subscription"}
+content_language: "en"
 ---
-
 By default, all data from all published tables will be replicated to the appropriate subscribers. The replicated data can be reduced by using a _row filter_. A user might choose to use row filters for behavioral, security or performance reasons. If a published table sets a row filter, a row is replicated only if its data satisfies the row filter expression. This allows a set of tables to be partially replicated. The row filter is defined per table. Use a `WHERE` clause after the table name for each published table that requires data to be filtered out. The `WHERE` clause must be enclosed by parentheses. See [CREATE PUBLICATION](https://www.postgresql.org/docs/current/sql-createpublication.html "CREATE PUBLICATION") for details.
 
 ### 29.4.1. Row Filter Rules [#](#LOGICAL-REPLICATION-ROW-FILTER-RULES)
 
-Row filters are applied _before_ publishing the changes. If the row filter evaluates to `false` or `NULL` then the row is not replicated. The `WHERE` clause expression is evaluated with the same role used for the replication connection (i.e. the role specified in the [`CONNECTION`](postgres/docs/current/sql-createsubscription.html/index.md#SQL-CREATESUBSCRIPTION-PARAMS-CONNECTION) clause of the [CREATE SUBSCRIPTION](https://www.postgresql.org/docs/current/sql-createsubscription.html "CREATE SUBSCRIPTION")). Row filters have no effect for `TRUNCATE` command.
+Row filters are applied _before_ publishing the changes. If the row filter evaluates to `false` or `NULL` then the row is not replicated. The `WHERE` clause expression is evaluated with the same role used for the replication connection (i.e. the role specified in the [`CONNECTION`](https://www.postgresql.org/docs/current/sql-createsubscription.html#SQL-CREATESUBSCRIPTION-PARAMS-CONNECTION) clause of the [CREATE SUBSCRIPTION](https://www.postgresql.org/docs/current/sql-createsubscription.html "CREATE SUBSCRIPTION")). Row filters have no effect for `TRUNCATE` command.
 
 ### 29.4.2. Expression Restrictions [#](#LOGICAL-REPLICATION-ROW-FILTER-RESTRICTIONS)
 
@@ -38,42 +36,18 @@ If the old row doesn't satisfy the row filter expression (it wasn't sent to the 
 **Table 29.1. `UPDATE` Transformation Summary**
 
   
-
-Old row
-
-New row
-
-Transformation
-
-no match
-
-no match
-
-don't replicate
-
-no match
-
-match
-
-`INSERT`
-
-match
-
-no match
-
-`DELETE`
-
-match
-
-match
-
-`UPDATE`
+| Old row | New row | Transformation |
+| --- | --- | --- |
+| no match | no match | don't replicate |
+| no match | match | `INSERT` |
+| match | no match | `DELETE` |
+| match | match | `UPDATE` |
 
   
 
 ### 29.4.4. Partitioned Tables [#](#LOGICAL-REPLICATION-ROW-FILTER-PARTITIONED-TABLE)
 
-If the publication contains a partitioned table, the publication parameter [`publish_via_partition_root`](postgres/docs/current/sql-createpublication.html/index.md#SQL-CREATEPUBLICATION-PARAMS-WITH-PUBLISH-VIA-PARTITION-ROOT) determines which row filter is used. If `publish_via_partition_root` is `true`, the _root partitioned table's_ row filter is used. Otherwise, if `publish_via_partition_root` is `false` (default), each _partition's_ row filter is used.
+If the publication contains a partitioned table, the publication parameter [`publish_via_partition_root`](https://www.postgresql.org/docs/current/sql-createpublication.html#SQL-CREATEPUBLICATION-PARAMS-WITH-PUBLISH-VIA-PARTITION-ROOT) determines which row filter is used. If `publish_via_partition_root` is `true`, the _root partitioned table's_ row filter is used. Otherwise, if `publish_via_partition_root` is `false` (default), each _partition's_ row filter is used.
 
 ### 29.4.5. Initial Data Synchronization [#](#LOGICAL-REPLICATION-ROW-FILTER-INITIAL-DATA-SYNC)
 
@@ -83,7 +57,7 @@ If the subscription has several publications in which a table has been published
 
 ### Warning
 
-Because initial data synchronization does not take into account the [`publish`](postgres/docs/current/sql-createpublication.html/index.md#SQL-CREATEPUBLICATION-PARAMS-WITH-PUBLISH) parameter when copying existing table data, some rows may be copied that would not be replicated using DML. Refer to [Section 29.9.1](https://www.postgresql.org/docs/current/logical-replication-architecture.html#LOGICAL-REPLICATION-SNAPSHOT "29.9.1. Initial Snapshot"), and see [Section 29.2.2](https://www.postgresql.org/docs/current/logical-replication-subscription.html#LOGICAL-REPLICATION-SUBSCRIPTION-EXAMPLES "29.2.2. Examples: Set Up Logical Replication") for examples.
+Because initial data synchronization does not take into account the [`publish`](https://www.postgresql.org/docs/current/sql-createpublication.html#SQL-CREATEPUBLICATION-PARAMS-WITH-PUBLISH) parameter when copying existing table data, some rows may be copied that would not be replicated using DML. Refer to [Section 29.9.1](https://www.postgresql.org/docs/current/logical-replication-architecture.html#LOGICAL-REPLICATION-SNAPSHOT "29.9.1. Initial Snapshot"), and see [Section 29.2.2](https://www.postgresql.org/docs/current/logical-replication-subscription.html#LOGICAL-REPLICATION-SUBSCRIPTION-EXAMPLES "29.2.2. Examples: Set Up Logical Replication") for examples.
 
 ### Note
 
@@ -91,13 +65,13 @@ If the subscriber is in a release prior to 15, copy pre-existing data doesn't us
 
 ### 29.4.6. Combining Multiple Row Filters [#](#LOGICAL-REPLICATION-ROW-FILTER-COMBINING)
 
-If the subscription has several publications in which the same table has been published with different row filters (for the same [`publish`](postgres/docs/current/sql-createpublication.html/index.md#SQL-CREATEPUBLICATION-PARAMS-WITH-PUBLISH) operation), those expressions get ORed together, so that rows satisfying _any_ of the expressions will be replicated. This means all the other row filters for the same table become redundant if:
+If the subscription has several publications in which the same table has been published with different row filters (for the same [`publish`](https://www.postgresql.org/docs/current/sql-createpublication.html#SQL-CREATEPUBLICATION-PARAMS-WITH-PUBLISH) operation), those expressions get ORed together, so that rows satisfying _any_ of the expressions will be replicated. This means all the other row filters for the same table become redundant if:
 
-*   One of the publications has no row filter.
+-   One of the publications has no row filter.
     
-*   One of the publications was created using [`FOR ALL TABLES`](postgres/docs/current/sql-createpublication.html/index.md#SQL-CREATEPUBLICATION-PARAMS-FOR-ALL-TABLES). This clause does not allow row filters.
+-   One of the publications was created using [`FOR ALL TABLES`](https://www.postgresql.org/docs/current/sql-createpublication.html#SQL-CREATEPUBLICATION-PARAMS-FOR-ALL-TABLES). This clause does not allow row filters.
     
-*   One of the publications was created using [`FOR TABLES IN SCHEMA`](postgres/docs/current/sql-createpublication.html/index.md#SQL-CREATEPUBLICATION-PARAMS-FOR-TABLES-IN-SCHEMA) and the table belongs to the referred schema. This clause does not allow row filters.
+-   One of the publications was created using [`FOR TABLES IN SCHEMA`](https://www.postgresql.org/docs/current/sql-createpublication.html#SQL-CREATEPUBLICATION-PARAMS-FOR-TABLES-IN-SCHEMA) and the table belongs to the referred schema. This clause does not allow row filters.
     
 
 ### 29.4.7. Examples [#](#LOGICAL-REPLICATION-ROW-FILTER-EXAMPLES)
@@ -291,7 +265,7 @@ Update some data, where the old row values satisfied the `t1 WHERE` clause of pu
  555 | 102 | NSW
 (2 rows)
 
-The following examples show how the publication parameter [`publish_via_partition_root`](postgres/docs/current/sql-createpublication.html/index.md#SQL-CREATEPUBLICATION-PARAMS-WITH-PUBLISH-VIA-PARTITION-ROOT) determines whether the row filter of the parent or child table will be used in the case of partitioned tables.
+The following examples show how the publication parameter [`publish_via_partition_root`](https://www.postgresql.org/docs/current/sql-createpublication.html#SQL-CREATEPUBLICATION-PARAMS-WITH-PUBLISH-VIA-PARTITION-ROOT) determines whether the row filter of the parent or child table will be used in the case of partitioned tables.
 
 Create a partitioned table on the publisher.
 

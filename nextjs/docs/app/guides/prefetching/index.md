@@ -5,27 +5,28 @@ canonical_url: "https://nextjs.org/docs/app/guides/prefetching"
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:15:45.653Z"
-content_hash: "d89591ad473965358b373e5efa0913e97421913e64f476b0b1fdbdeee6b17b57"
+last_crawled_at: "2026-04-27T18:14:58.122Z"
+content_hash: "4d8fe4c8fb1c986a57be7bc4a0484c92179dd207b95491a4ddfa5d0cc1b3e1ca"
 menu_path: ["Prefetching"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/guides/ppr-platform-guide/index.md", "title": "Implementing Partial Prerendering on your platform"}
-nav_next: {"path": "nextjs/docs/app/guides/preserving-ui-state/index.md", "title": "Preserving UI state across navigations"}
+version: "latest"
+content_language: "en"
 ---
+[App Router](/docs/app)[Guides](/docs/app/guides)Prefetching
 
 # Prefetching
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 Prefetching makes navigating between different routes in your application feel instant. Next.js tries to intelligently prefetch by default, based on the links used in your application code.
 
 This guide will explain how prefetching works and show common implementation patterns:
 
-*   [Automatic prefetch](#automatic-prefetch)
-*   [Manual prefetch](#manual-prefetch)
-*   [Hover-triggered prefetch](#hover-triggered-prefetch)
-*   [Extending or ejecting link](#extending-or-ejecting-link)
-*   [Disabled prefetch](#disabled-prefetch)
+-   [Automatic prefetch](#automatic-prefetch)
+-   [Manual prefetch](#manual-prefetch)
+-   [Hover-triggered prefetch](#hover-triggered-prefetch)
+-   [Extending or ejecting link](#extending-or-ejecting-link)
+-   [Disabled prefetch](#disabled-prefetch)
 
 ## How does prefetching work?[](#how-does-prefetching-work)
 
@@ -37,35 +38,17 @@ When navigating to the new page, there's no full page reload or browser loading 
 
 ## Prefetching static vs. dynamic routes[](#prefetching-static-vs-dynamic-routes)
 
-**Static page**
-
-**Dynamic page**
-
-**Prefetched**
-
-Yes, full route
-
-No, unless [`loading.js`](/docs/app/api-reference/file-conventions/loading)
-
-[**Client Cache TTL**](/docs/app/glossary#client-cache)
-
-5 min (default)
-
-Off, unless [enabled](/docs/app/api-reference/config/next-config-js/staleTimes)
-
-**Server roundtrip on click**
-
-No
-
-Yes, streamed after [shell](/docs/app/getting-started/caching)
+|  | **Static page** | **Dynamic page** |
+| --- | --- | --- |
+| **Prefetched** | Yes, full route | No, unless [`loading.js`](/docs/app/api-reference/file-conventions/loading) |
+| [**Client Cache TTL**](/docs/app/glossary#client-cache) | 5 min (default) | Off, unless [enabled](/docs/app/api-reference/config/next-config-js/staleTimes) |
+| **Server roundtrip on click** | No | Yes, streamed after [shell](/docs/app/getting-started/caching) |
 
 > **Good to know:** During the initial navigation, the browser fetches the HTML, JavaScript, and React Server Components (RSC) Payload. For subsequent navigations, the browser will fetch the RSC Payload for Server Components and JS bundle for Client Components.
 
 ## Automatic prefetch[](#automatic-prefetch)
 
 app/ui/nav-link.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -77,23 +60,10 @@ export default function NavLink() {
 }
 ```
 
-**Context**
-
-**Prefetched payload**
-
-**Client Cache TTL**
-
-No `loading.js`
-
-Entire page
-
-Until app reload
-
-With `loading.js`
-
-Layout to first loading boundary
-
-30s ([configurable](/docs/app/api-reference/config/next-config-js/staleTimes))
+| **Context** | **Prefetched payload** | **Client Cache TTL** |
+| --- | --- | --- |
+| No `loading.js` | Entire page | Until app reload |
+| With `loading.js` | Layout to first loading boundary | 30s ([configurable](/docs/app/api-reference/config/next-config-js/staleTimes)) |
 
 Automatic prefetching runs only in production. Disable with `prefetch={false}` or use the wrapper in [Disabled Prefetch](#disabled-prefetch).
 
@@ -248,9 +218,9 @@ The scheduler prioritizes likely navigations while minimizing unused downloads.
 
 When PPR is enabled, a page is divided into a [static shell](/docs/app/guides/streaming#the-static-shell) and a streamed dynamic section:
 
-*   The shell, which can be prefetched, streams immediately
-*   Uncached data streams when ready
-*   Data invalidations (`revalidateTag`, `revalidatePath`) silently refresh associated prefetches
+-   The shell, which can be prefetched, streams immediately
+-   Uncached data streams when ready
+-   Data invalidations (`revalidateTag`, `revalidatePath`) silently refresh associated prefetches
 
 ## Troubleshooting[](#troubleshooting)
 
@@ -263,8 +233,6 @@ To avoid this, you should move side-effects to a `useEffect` hook or a Server Ac
 **Before**:
 
 app/dashboard/layout.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -282,8 +250,6 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 **After**:
 
 app/ui/analytics-tracker.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -303,8 +269,6 @@ export function AnalyticsTracker() {
 ```
 
 app/dashboard/layout.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -331,8 +295,6 @@ You can disable prefetching by setting the `prefetch` prop of the `<Link>` compo
 
 app/ui/no-prefetch-link.tsx
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -346,8 +308,6 @@ However, this means static routes will only be fetched on click, and dynamic rou
 To reduce resource usage without disabling prefetch entirely, you can defer prefetching until the user hovers over a link. This targets only links the user is likely to visit.
 
 app/ui/hover-prefetch-link.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -378,20 +338,4 @@ export function HoverPrefetchLink({
 }
 ```
 
-[Previous
-
-PPR Platform Guide
-
-](/docs/app/guides/ppr-platform-guide)
-
-[Next
-
-Preserving UI state
-
-](/docs/app/guides/preserving-ui-state)
-
 Was this helpful?
-
-supported.
-
-Send

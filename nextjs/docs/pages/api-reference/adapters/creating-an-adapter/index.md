@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/pages/api-reference/adapters/creating-an
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:19:06.691Z"
-content_hash: "24aacb15b4f3b3a47bf861425b61a3f915b87f7d2630a776b19091a3031c7d34"
+last_crawled_at: "2026-04-27T18:18:25.963Z"
+content_hash: "65081b8781a66b571d194195f33af703d6600c6fcc62110f54e1e5980c3bc28f"
 menu_path: ["Creating an Adapter"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/pages/api-reference/adapters/configuration/index.md", "title": "Configuration"}
-nav_next: {"path": "nextjs/docs/pages/api-reference/adapters/api-reference/index.md", "title": "API Reference"}
+version: "latest"
+content_language: "en"
 ---
+[API Reference](/docs/pages/api-reference)[Adapters](/docs/pages/api-reference/adapters)Creating an Adapter
 
 # Creating an Adapter
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 An adapter is a module that exports an object implementing the `NextAdapter` interface.
 
@@ -140,7 +141,3 @@ module.exports = adapter
 ```
 
 Was this helpful?
-
-supported.
-
-Send

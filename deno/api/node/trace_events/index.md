@@ -5,10 +5,11 @@ canonical_url: "https://docs.deno.com/api/node/trace_events/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:42:43.120Z"
-content_hash: "959ef45133449b1d8c202cd5bf70159b7b5dd59dabb796a15261d1fa1830830d"
+last_crawled_at: "2026-04-27T17:14:52.842Z"
+content_hash: "7a33d3421e429b64639e67e5a68ded270eb38420c77f26bb9d46875db09ae188"
 menu_path: ["trace_events - Node documentation"]
 section_path: []
+content_language: "en"
 ---
 ### Usage in Deno
 
@@ -26,26 +27,26 @@ Tracing can be enabled with the `--trace-event-categories` command-line flag or 
 
 The available categories are:
 
-*   `node`: An empty placeholder.
-*   `node.async_hooks`: Enables capture of detailed [`async_hooks`](https://nodejs.org/docs/latest-v22.x/api/async_hooks.html) trace data. The [`async_hooks`](https://nodejs.org/docs/latest-v22.x/api/async_hooks.html) events have a unique `asyncId` and a special `triggerId` `triggerAsyncId` property.
-*   `node.bootstrap`: Enables capture of Node.js bootstrap milestones.
-*   `node.console`: Enables capture of `console.time()` and `console.count()` output.
-*   `node.threadpoolwork.sync`: Enables capture of trace data for threadpool synchronous operations, such as `blob`, `zlib`, `crypto` and `node_api`.
-*   `node.threadpoolwork.async`: Enables capture of trace data for threadpool asynchronous operations, such as `blob`, `zlib`, `crypto` and `node_api`.
-*   `node.dns.native`: Enables capture of trace data for DNS queries.
-*   `node.net.native`: Enables capture of trace data for network.
-*   `node.environment`: Enables capture of Node.js Environment milestones.
-*   `node.fs.sync`: Enables capture of trace data for file system sync methods.
-*   `node.fs_dir.sync`: Enables capture of trace data for file system sync directory methods.
-*   `node.fs.async`: Enables capture of trace data for file system async methods.
-*   `node.fs_dir.async`: Enables capture of trace data for file system async directory methods.
-*   `node.perf`: Enables capture of [Performance API](https://nodejs.org/docs/latest-v22.x/api/perf_hooks.html) measurements.
-    *   `node.perf.usertiming`: Enables capture of only Performance API User Timing measures and marks.
-    *   `node.perf.timerify`: Enables capture of only Performance API timerify measurements.
-*   `node.promises.rejections`: Enables capture of trace data tracking the number of unhandled Promise rejections and handled-after-rejections.
-*   `node.vm.script`: Enables capture of trace data for the `node:vm` module's `runInNewContext()`, `runInContext()`, and `runInThisContext()` methods.
-*   `v8`: The [V8](https://nodejs.org/docs/latest-v22.x/api/v8.html) events are GC, compiling, and execution related.
-*   `node.http`: Enables capture of trace data for http request / response.
+-   `node`: An empty placeholder.
+-   `node.async_hooks`: Enables capture of detailed [`async_hooks`](https://nodejs.org/docs/latest-v22.x/api/async_hooks.html) trace data. The [`async_hooks`](https://nodejs.org/docs/latest-v22.x/api/async_hooks.html) events have a unique `asyncId` and a special `triggerId` `triggerAsyncId` property.
+-   `node.bootstrap`: Enables capture of Node.js bootstrap milestones.
+-   `node.console`: Enables capture of `console.time()` and `console.count()` output.
+-   `node.threadpoolwork.sync`: Enables capture of trace data for threadpool synchronous operations, such as `blob`, `zlib`, `crypto` and `node_api`.
+-   `node.threadpoolwork.async`: Enables capture of trace data for threadpool asynchronous operations, such as `blob`, `zlib`, `crypto` and `node_api`.
+-   `node.dns.native`: Enables capture of trace data for DNS queries.
+-   `node.net.native`: Enables capture of trace data for network.
+-   `node.environment`: Enables capture of Node.js Environment milestones.
+-   `node.fs.sync`: Enables capture of trace data for file system sync methods.
+-   `node.fs_dir.sync`: Enables capture of trace data for file system sync directory methods.
+-   `node.fs.async`: Enables capture of trace data for file system async methods.
+-   `node.fs_dir.async`: Enables capture of trace data for file system async directory methods.
+-   `node.perf`: Enables capture of [Performance API](https://nodejs.org/docs/latest-v22.x/api/perf_hooks.html) measurements.
+    -   `node.perf.usertiming`: Enables capture of only Performance API User Timing measures and marks.
+    -   `node.perf.timerify`: Enables capture of only Performance API timerify measurements.
+-   `node.promises.rejections`: Enables capture of trace data tracking the number of unhandled Promise rejections and handled-after-rejections.
+-   `node.vm.script`: Enables capture of trace data for the `node:vm` module's `runInNewContext()`, `runInContext()`, and `runInThisContext()` methods.
+-   `v8`: The [V8](https://nodejs.org/docs/latest-v22.x/api/v8.html) events are GC, compiling, and execution related.
+-   `node.http`: Enables capture of trace data for http request / response.
 
 By default the `node`, `node.async_hooks`, and `v8` categories are enabled.
 
@@ -94,8 +95,6 @@ The tracing system uses the same time source as the one used by `process.hrtime(
 
 The features from this module are not available in [`Worker`](https://nodejs.org/docs/latest-v22.x/api/worker_threads.html#class-worker) threads.
 
-### Functions [#](#Functions)
-
 f
 
 [createTracing](.././trace_events/~/createTracing "createTracing")
@@ -108,15 +107,13 @@ f
 
 No documentation available
 
-### Interfaces [#](#Interfaces)
-
 I
 
 [CreateTracingOptions](.././trace_events/~/CreateTracingOptions "CreateTracingOptions")
 
 No documentation available
 
-*   [categories](.././trace_events/~/CreateTracingOptions#property_categories)
+-   [categories](.././trace_events/~/CreateTracingOptions#property_categories)
 
 I
 
@@ -124,7 +121,7 @@ I
 
 No documentation available
 
-*   [categories](.././trace_events/~/Tracing#property_categories)
-*   [disable](.././trace_events/~/Tracing#method_disable_0)
-*   [enable](.././trace_events/~/Tracing#method_enable_0)
-*   [enabled](.././trace_events/~/Tracing#property_enabled)
+-   [categories](.././trace_events/~/Tracing#property_categories)
+-   [disable](.././trace_events/~/Tracing#method_disable_0)
+-   [enable](.././trace_events/~/Tracing#method_enable_0)
+-   [enabled](.././trace_events/~/Tracing#property_enabled)

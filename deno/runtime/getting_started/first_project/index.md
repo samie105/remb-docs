@@ -5,16 +5,17 @@ canonical_url: "https://docs.deno.com/runtime/getting_started/first_project/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:49:04.763Z"
-content_hash: "0ed91aa0c78a7823c31586fbca9e83e081a8cf53df17367fcd15db3006e2d4b1"
+last_crawled_at: "2026-04-27T17:23:44.499Z"
+content_hash: "abf40ba77eb39ebd1f098a43ee6ab7f6aab71ab56ca68d9afac85213fcd803e1"
 menu_path: ["Making a Deno project"]
 section_path: []
+content_language: "en"
 ---
-On this page
+**On this page**
 
-*   [Initialize a new project](#initialize-a-new-project)
-*   [Run your project](#run-your-project)
-*   [Run your tests](#run-your-tests)
+-   [Initialize a new project](#initialize-a-new-project)
+-   [Run your project](#run-your-project)
+-   [Run your tests](#run-your-tests)
 
 Deno has many [built in tools](/runtime/reference/cli/) to make your development experience as smooth as possible. One of these tools is the [project initializer](/runtime/reference/cli/init), which creates a new Deno project with a basic file structure and configuration.
 

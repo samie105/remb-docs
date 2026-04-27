@@ -5,14 +5,12 @@ canonical_url: "https://orm.drizzle.team/docs/latest-releases/drizzle-orm-v0294"
 docset: "drizzle"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:12:56.837Z"
-content_hash: "a3820e5c0b4d67c276600f1b99dddf6e5241b48e6c4702cf22dbf571c918f7a5"
+last_crawled_at: "2026-04-27T19:11:35.124Z"
+content_hash: "589688237cad4daac972c4019791f1a627658c881409fdc22c545e0c96e71c8a"
 menu_path: ["Drizzle ORM - DrizzleORM v0.29.4 release"]
 section_path: []
-nav_prev: {"path": "drizzle/docs/latest-releases/drizzle-orm-v0293/index.md", "title": "Drizzle ORM - DrizzleORM v0.29.3 release"}
-nav_next: {"path": "drizzle/docs/latest-releases/drizzle-orm-v0295/index.md", "title": "Drizzle ORM - DrizzleORM v0.29.5 release"}
+content_language: "en"
 ---
-
 DrizzleORM v0.29.4 release
 
 Feb 22, 2024
@@ -21,9 +19,9 @@ Feb 22, 2024
 
 ### 🎉 Neon HTTP Batch
 
-For more info you can check [Neon docs](https://neon.tech/docs/serverless/serverless-driver#issue-multiple-queries-with-the-transaction-function) and [Get started with Neon and Drizzle](drizzle/docs/get-started-postgresql/index.md#neon).
+For more info you can check [Neon docs](https://neon.tech/docs/serverless/serverless-driver#issue-multiple-queries-with-the-transaction-function) and [Get started with Neon and Drizzle](https://orm.drizzle.team/docs/get-started-postgresql#neon).
 
-```
+```ts
 import { neon } from '@neondatabase/serverless';
 import { drizzle } from 'drizzle-orm/neon-http';
 import { usersTable } from './schema';
@@ -41,7 +39,7 @@ const batchResponse: BatchType = await db.batch([
 ]);
 ```
 
-```
+```ts
 type BatchType = [
 	{
 		id: number;
@@ -68,7 +66,7 @@ Thanks to the `database-js` and `PlanetScale` teams, we have updated the default
 
 As suggested by the `database-js` core team, you should use the `Client` instance instead of `connect()`:
 
-```
+```ts
 import { Client } from '@planetscale/database';
 import { drizzle } from 'drizzle-orm/planetscale-serverless';
 
@@ -90,7 +88,7 @@ Previously our docs stated to use `connect()` and only this function was can be 
 
 **Warning text**
 
-```
+```mdx
 Warning: You need to pass an instance of Client:
 
 import { Client } from "@planetscale/database";

@@ -5,14 +5,12 @@ canonical_url: "https://orm.drizzle.team/docs/get-started-mysql"
 docset: "drizzle"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:50:43.807Z"
-content_hash: "e2f82e345cdf2b9853aab8e2df5ed355818cd87fbe516aea96ad853a3d00da0d"
+last_crawled_at: "2026-04-27T18:40:52.991Z"
+content_hash: "9a6dded7491593e3960f60515f26d10a94bbf3a5178bb9347c2041d34e77773c"
 menu_path: ["Drizzle <> MySQL"]
 section_path: []
-nav_prev: {"path": "drizzle/docs/get-started-gel/index.md", "title": "Drizzle <> Gel"}
-nav_next: {"path": "drizzle/docs/get-started-sqlite/index.md", "title": "Drizzle <> SQLite"}
+content_language: "en"
 ---
-
 To use Drizzle with a MySQL database, you should use the `mysql2` driver
 
 According to the **[official website](https://github.com/sidorares/node-mysql2)**, `mysql2` is a MySQL client for Node.js with focus on performance.
@@ -20,14 +18,6 @@ According to the **[official website](https://github.com/sidorares/node-mysql2)*
 Drizzle ORM natively supports `mysql2` with `drizzle-orm/mysql2` package.
 
 #### Step 1 - Install packages[](#step-1---install-packages)
-
-npm
-
-yarn
-
-pnpm
-
-bun
 
 ```
 npm i drizzle-orm mysql2
@@ -51,11 +41,7 @@ bun add -D drizzle-kit
 
 #### Step 2 - Initialize the driver and make a query[](#step-2---initialize-the-driver-and-make-a-query)
 
-mysql2
-
-mysql with config
-
-```
+```typescript
 import { drizzle } from "drizzle-orm/mysql2";
 
 const db = drizzle(process.env.DATABASE_URL);
@@ -63,7 +49,7 @@ const db = drizzle(process.env.DATABASE_URL);
 const response = await db.select().from(...)
 ```
 
-```
+```typescript
 import { drizzle } from "drizzle-orm/mysql2";
 
 // You can specify any property from the mysql2 connection options
@@ -78,7 +64,7 @@ Client connection
 
 Pool connection
 
-```
+```typescript
 import { drizzle } from "drizzle-orm/mysql2";
 import mysql from "mysql2/promise";
 
@@ -92,7 +78,7 @@ const connection = await mysql.createConnection({
 const db = drizzle({ client: connection });
 ```
 
-```
+```typescript
 import { drizzle } from "drizzle-orm/mysql2";
 import mysql from "mysql2/promise";
 

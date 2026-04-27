@@ -5,59 +5,13 @@ canonical_url: "https://tailwindcss.com/docs/mix-blend-mode"
 docset: "tailwind"
 kind: "framework"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:04:42.860Z"
-content_hash: "a74dbf13a957303960d9a4815fd9a2eb4768f45a44dccde5ad6612ad190ed863"
+last_crawled_at: "2026-04-27T20:21:38.620Z"
+content_hash: "bd981f0c13cc36904969c2bc22327a2b4582bd469c387b065692ef107d0aaf3a"
 menu_path: ["mix-blend-mode"]
 section_path: []
-nav_prev: {"path": "tailwind/docs/opacity/index.md", "title": "opacity"}
-nav_next: {"path": "tailwind/docs/background-blend-mode/index.md", "title": "background-blend-mode"}
+content_language: "en"
 ---
-
 Utilities for controlling how an element should blend with the background.
-
-Class
-
-Styles
-
-`mix-blend-normal`
-
-`mix-blend-mode: normal;`
-
-`mix-blend-multiply`
-
-`mix-blend-mode: multiply;`
-
-`mix-blend-screen`
-
-`mix-blend-mode: screen;`
-
-`mix-blend-overlay`
-
-`mix-blend-mode: overlay;`
-
-`mix-blend-darken`
-
-`mix-blend-mode: darken;`
-
-`mix-blend-lighten`
-
-`mix-blend-mode: lighten;`
-
-`mix-blend-color-dodge`
-
-`mix-blend-mode: color-dodge;`
-
-`mix-blend-color-burn`
-
-`mix-blend-mode: color-burn;`
-
-`mix-blend-hard-light`
-
-`mix-blend-mode: hard-light;`
-
-`mix-blend-soft-light`
-
-`mix-blend-mode: soft-light;`
 
 ## [Examples](#examples)
 
@@ -85,4 +39,4 @@ Prefix a `mix-blend-mode` utility with a breakpoint variant like `md:` to only a
 <div class="mix-blend-multiply md:mix-blend-overlay ...">  <!-- ... --></div>
 ```
 
-Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).
+Learn more about using variants in the [variants documentation](https://tailwindcss.com/docs/hover-focus-and-other-states).

@@ -5,25 +5,24 @@ canonical_url: "https://nextjs.org/docs/app/api-reference/config/next-config-js/
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:08:39.627Z"
-content_hash: "555e2fbc07844bb68486071c9d3e4e34e0516f5a34ce127ae3df860ab0653d4b"
+last_crawled_at: "2026-04-27T18:07:29.369Z"
+content_hash: "5d57883990283c50f89866859cc3633218417686bf615fa0e57d2daccc446d49"
 menu_path: ["staticGeneration*"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/api-reference/config/next-config-js/staleTimes/index.md", "title": "staleTimes"}
-nav_next: {"path": "nextjs/docs/app/api-reference/config/next-config-js/taint/index.md", "title": "taint"}
+version: "latest"
+content_language: "en"
 ---
+[Configuration](/docs/app/api-reference/config)[next.config.js](/docs/app/api-reference/config/next-config-js)staticGeneration\*
 
 # staticGeneration\*
 
 This feature is currently experimental and subject to change, it's not recommended for production. Try it out and share your feedback on [GitHub](https://github.com/vercel/next.js/issues).
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 The `staticGeneration*` options allow you to configure the Static Generation process for advanced use cases.
 
 next.config.ts
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -45,24 +44,8 @@ export default nextConfig
 
 The following options are available:
 
-*   `staticGenerationRetryCount`: The number of times to retry a failed page generation before failing the build.
-*   `staticGenerationMaxConcurrency`: The maximum number of pages to be processed per worker.
-*   `staticGenerationMinPagesPerWorker`: The minimum number of pages to be processed before starting a new worker.
-
-[Previous
-
-staleTimes
-
-](/docs/app/api-reference/config/next-config-js/staleTimes)
-
-[Next
-
-taint
-
-](/docs/app/api-reference/config/next-config-js/taint)
+-   `staticGenerationRetryCount`: The number of times to retry a failed page generation before failing the build.
+-   `staticGenerationMaxConcurrency`: The maximum number of pages to be processed per worker.
+-   `staticGenerationMinPagesPerWorker`: The minimum number of pages to be processed before starting a new worker.
 
 Was this helpful?
-
-supported.
-
-Send

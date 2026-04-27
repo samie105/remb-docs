@@ -5,17 +5,15 @@ canonical_url: "https://www.postgresql.org/docs/current/logical-replication-upgr
 docset: "postgres"
 kind: "database"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:50:54.061Z"
-content_hash: "87774f66f4f2ac390311b667b186d28c44398fa60b93295157fb1d621d1ca89c"
+last_crawled_at: "2026-04-27T20:50:12.533Z"
+content_hash: "0a0b3ba7ced2d490694de575db602d4f40ef6dbd62bd5034cad4b901114d30e4"
 menu_path: ["PostgreSQL: Documentation: 18: 29.13. Upgrade"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/logical-replication-subscription.html/index.md", "title": "PostgreSQL: Documentation: 18: 29.2.\u00a0Subscription"}
-nav_next: {"path": "postgres/docs/current/logicaldecoding-catalogs.html/index.md", "title": "PostgreSQL: Documentation: 18: 47.5.\u00a0System Catalogs Related to Logical Decoding"}
+content_language: "en"
 ---
-
 Development Versions: [devel](https://www.postgresql.org/docs/devel/logical-replication-upgrade.html "PostgreSQL devel - 29.13. Upgrade")
 
-Migration of [](postgres/docs/current/glossary.html/index.md#GLOSSARY-LOGICAL-REPLICATION-CLUSTER)[logical replication clusters](https://www.postgresql.org/docs/current/glossary.html#GLOSSARY-LOGICAL-REPLICATION-CLUSTER "Logical replication cluster") is possible only when all the members of the old logical replication clusters are version 17.0 or later.
+Migration of [](https://www.postgresql.org/docs/current/glossary.html#GLOSSARY-LOGICAL-REPLICATION-CLUSTER)[logical replication clusters](https://www.postgresql.org/docs/current/glossary.html#GLOSSARY-LOGICAL-REPLICATION-CLUSTER "Logical replication cluster") is possible only when all the members of the old logical replication clusters are version 17.0 or later.
 
 ### 29.13.1. Prepare for Publisher Upgrades [#](#PREPARE-PUBLISHER-UPGRADES)
 
@@ -25,17 +23,17 @@ Before you start upgrading the publisher cluster, ensure that the subscription i
 
 There are some prerequisites for pg\_upgrade to be able to upgrade the logical slots. If these are not met an error will be reported.
 
-*   The new cluster must have [`wal_level`](postgres/docs/current/runtime-config-wal.html/index.md#GUC-WAL-LEVEL) as `logical`.
+-   The new cluster must have [`wal_level`](https://www.postgresql.org/docs/current/runtime-config-wal.html#GUC-WAL-LEVEL) as `logical`.
     
-*   The new cluster must have [`max_replication_slots`](postgres/docs/current/runtime-config-replication.html/index.md#GUC-MAX-REPLICATION-SLOTS) configured to a value greater than or equal to the number of slots present in the old cluster.
+-   The new cluster must have [`max_replication_slots`](https://www.postgresql.org/docs/current/runtime-config-replication.html#GUC-MAX-REPLICATION-SLOTS) configured to a value greater than or equal to the number of slots present in the old cluster.
     
-*   The output plugins referenced by the slots on the old cluster must be installed in the new PostgreSQL executable directory.
+-   The output plugins referenced by the slots on the old cluster must be installed in the new PostgreSQL executable directory.
     
-*   The old cluster has replicated all the transactions and logical decoding messages to subscribers.
+-   The old cluster has replicated all the transactions and logical decoding messages to subscribers.
     
-*   All slots on the old cluster must be usable, i.e., there are no slots whose [pg\_replication\_slots](https://www.postgresql.org/docs/current/view-pg-replication-slots.html "53.20. pg_replication_slots").`conflicting` is not `true`.
+-   All slots on the old cluster must be usable, i.e., there are no slots whose [pg\_replication\_slots](https://www.postgresql.org/docs/current/view-pg-replication-slots.html "53.20. pg_replication_slots").`conflicting` is not `true`.
     
-*   The new cluster must not have permanent logical slots, i.e., there must be no slots where [pg\_replication\_slots](https://www.postgresql.org/docs/current/view-pg-replication-slots.html "53.20. pg_replication_slots").`temporary` is `false`.
+-   The new cluster must not have permanent logical slots, i.e., there must be no slots where [pg\_replication\_slots](https://www.postgresql.org/docs/current/view-pg-replication-slots.html "53.20. pg_replication_slots").`temporary` is `false`.
     
 
 ### 29.13.2. Prepare for Subscriber Upgrades [#](#PREPARE-SUBSCRIBER-UPGRADES)
@@ -44,11 +42,11 @@ Setup the [subscriber configurations](https://www.postgresql.org/docs/current/lo
 
 There are some prerequisites for pg\_upgrade to be able to upgrade the subscriptions. If these are not met an error will be reported.
 
-*   All the subscription tables in the old subscriber should be in state `i` (initialize) or `r` (ready). This can be verified by checking [pg\_subscription\_rel](https://www.postgresql.org/docs/current/catalog-pg-subscription-rel.html "52.55. pg_subscription_rel").`srsubstate`.
+-   All the subscription tables in the old subscriber should be in state `i` (initialize) or `r` (ready). This can be verified by checking [pg\_subscription\_rel](https://www.postgresql.org/docs/current/catalog-pg-subscription-rel.html "52.55. pg_subscription_rel").`srsubstate`.
     
-*   The replication origin entry corresponding to each of the subscriptions should exist in the old cluster. This can be found by checking [pg\_subscription](https://www.postgresql.org/docs/current/catalog-pg-subscription.html "52.54. pg_subscription") and [pg\_replication\_origin](https://www.postgresql.org/docs/current/catalog-pg-replication-origin.html "52.44. pg_replication_origin") system tables.
+-   The replication origin entry corresponding to each of the subscriptions should exist in the old cluster. This can be found by checking [pg\_subscription](https://www.postgresql.org/docs/current/catalog-pg-subscription.html "52.54. pg_subscription") and [pg\_replication\_origin](https://www.postgresql.org/docs/current/catalog-pg-replication-origin.html "52.44. pg_replication_origin") system tables.
     
-*   The new cluster must have [`max_active_replication_origins`](postgres/docs/current/runtime-config-replication.html/index.md#GUC-MAX-ACTIVE-REPLICATION-ORIGINS) configured to a value greater than or equal to the number of subscriptions present in the old cluster.
+-   The new cluster must have [`max_active_replication_origins`](https://www.postgresql.org/docs/current/runtime-config-replication.html#GUC-MAX-ACTIVE-REPLICATION-ORIGINS) configured to a value greater than or equal to the number of subscriptions present in the old cluster.
     
 
 ### 29.13.3. Upgrading Logical Replication Clusters [#](#UPGRADING-LOGICAL-REPLICATION-CLUSTERS)
@@ -69,11 +67,11 @@ Upgrading logical replication cluster requires multiple steps to be performed on
 
 The steps to upgrade the following logical replication clusters are detailed below:
 
-*   Follow the steps specified in [Section 29.13.3.1](https://www.postgresql.org/docs/current/logical-replication-upgrade.html#STEPS-TWO-NODE-LOGICAL-REPLICATION-CLUSTER "29.13.3.1. Steps to Upgrade a Two-node Logical Replication Cluster") to upgrade a two-node logical replication cluster.
+-   Follow the steps specified in [Section 29.13.3.1](https://www.postgresql.org/docs/current/logical-replication-upgrade.html#STEPS-TWO-NODE-LOGICAL-REPLICATION-CLUSTER "29.13.3.1. Steps to Upgrade a Two-node Logical Replication Cluster") to upgrade a two-node logical replication cluster.
     
-*   Follow the steps specified in [Section 29.13.3.2](https://www.postgresql.org/docs/current/logical-replication-upgrade.html#STEPS-CASCADED-LOGICAL-REPLICATION-CLUSTER "29.13.3.2. Steps to Upgrade a Cascaded Logical Replication Cluster") to upgrade a cascaded logical replication cluster.
+-   Follow the steps specified in [Section 29.13.3.2](https://www.postgresql.org/docs/current/logical-replication-upgrade.html#STEPS-CASCADED-LOGICAL-REPLICATION-CLUSTER "29.13.3.2. Steps to Upgrade a Cascaded Logical Replication Cluster") to upgrade a cascaded logical replication cluster.
     
-*   Follow the steps specified in [Section 29.13.3.3](https://www.postgresql.org/docs/current/logical-replication-upgrade.html#STEPS-TWO-NODE-CIRCULAR-LOGICAL-REPLICATION-CLUSTER "29.13.3.3. Steps to Upgrade a Two-node Circular Logical Replication Cluster") to upgrade a two-node circular logical replication cluster.
+-   Follow the steps specified in [Section 29.13.3.3](https://www.postgresql.org/docs/current/logical-replication-upgrade.html#STEPS-TWO-NODE-CIRCULAR-LOGICAL-REPLICATION-CLUSTER "29.13.3.3. Steps to Upgrade a Two-node Circular Logical Replication Cluster") to upgrade a two-node circular logical replication cluster.
     
 
 #### 29.13.3.1. Steps to Upgrade a Two-node Logical Replication Cluster [#](#STEPS-TWO-NODE-LOGICAL-REPLICATION-CLUSTER)

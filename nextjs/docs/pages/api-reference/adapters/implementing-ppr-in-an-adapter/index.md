@@ -5,22 +5,23 @@ canonical_url: "https://nextjs.org/docs/pages/api-reference/adapters/implementin
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:19:07.292Z"
-content_hash: "8c586ea6f1d382767636bdd0fd5008f70e690d915d4aaf423b49a4d34bf9e66d"
+last_crawled_at: "2026-04-27T18:18:28.447Z"
+content_hash: "0e3f2630b3ac41795147a729a98e39ded7b60379ce791ca1388cec029a1a152c"
 menu_path: ["Implementing PPR in an Adapter"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/pages/api-reference/adapters/routing-with-next-routing/index.md", "title": "Routing with @next/routing"}
-nav_next: {"path": "nextjs/docs/pages/api-reference/adapters/runtime-integration/index.md", "title": "Runtime Integration"}
+version: "latest"
+content_language: "en"
 ---
+[API Reference](/docs/pages/api-reference)[Adapters](/docs/pages/api-reference/adapters)Implementing PPR in an Adapter
 
 # Implementing PPR in an Adapter
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 For partially prerendered app routes, `onBuildComplete` gives you the data needed to seed and resume PPR:
 
-*   `outputs.prerenders[].fallback.filePath`: path to the generated fallback shell (for example HTML)
-*   `outputs.prerenders[].fallback.postponedState`: serialized postponed state used to resume rendering
+-   `outputs.prerenders[].fallback.filePath`: path to the generated fallback shell (for example HTML)
+-   `outputs.prerenders[].fallback.postponedState`: serialized postponed state used to resume rendering
 
 ## 1\. Seed shell + postponed state at build time[](#1-seed-shell--postponed-state-at-build-time)
 
@@ -81,9 +82,9 @@ Adapter Router
 
 `requestMeta.onCacheEntryV2` is called when a response cache entry is looked up or generated. Use it to persist updated shell/postponed data.
 
-*   `requestMeta.onCacheEntry` still works, but is deprecated.
-*   Prefer `requestMeta.onCacheEntryV2`.
-*   If your adapter uses an internal `onCacheCallback` abstraction, wire it to `requestMeta.onCacheEntryV2`.
+-   `requestMeta.onCacheEntry` still works, but is deprecated.
+-   Prefer `requestMeta.onCacheEntryV2`.
+-   If your adapter uses an internal `onCacheCallback` abstraction, wire it to `requestMeta.onCacheEntryV2`.
 
 my-adapter.ts
 
@@ -129,7 +130,3 @@ requestMeta.onCacheEntryV2 callback
 ```
 
 Was this helpful?
-
-supported.
-
-Send

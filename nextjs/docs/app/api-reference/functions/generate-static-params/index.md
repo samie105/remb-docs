@@ -5,29 +5,28 @@ canonical_url: "https://nextjs.org/docs/app/api-reference/functions/generate-sta
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:11:44.429Z"
-content_hash: "8a4333bda750eeb080f53dfcfff8a7bb7801ef99304f206d90962321f143f318"
+last_crawled_at: "2026-04-27T18:10:27.469Z"
+content_hash: "b4f31b64afd95e2ca7da9c24d281e3150b0f36bb29e256f8357ccb3d7c28833e"
 menu_path: ["generateStaticParams"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/api-reference/functions/generate-sitemaps/index.md", "title": "generateSitemaps"}
-nav_next: {"path": "nextjs/docs/app/api-reference/functions/generate-viewport/index.md", "title": "generateViewport"}
+version: "latest"
+content_language: "en"
 ---
+[API Reference](/docs/app/api-reference)[Functions](/docs/app/api-reference/functions)generateStaticParams
 
 # generateStaticParams
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 The `generateStaticParams` function can be used in combination with [dynamic route segments](/docs/app/api-reference/file-conventions/dynamic-routes) to [**statically generate**](/docs/app/glossary#prerendering) routes at build time instead of on-demand at request time.
 
 `generateStaticParams` can be used with:
 
-*   [Pages](/docs/app/api-reference/file-conventions/page) (`page.tsx`/`page.js`)
-*   [Layouts](/docs/app/api-reference/file-conventions/layout) (`layout.tsx`/`layout.js`)
-*   [Route Handlers](/docs/app/api-reference/file-conventions/route) (`route.ts`/`route.js`)
+-   [Pages](/docs/app/api-reference/file-conventions/page) (`page.tsx`/`page.js`)
+-   [Layouts](/docs/app/api-reference/file-conventions/layout) (`layout.tsx`/`layout.js`)
+-   [Route Handlers](/docs/app/api-reference/file-conventions/route) (`route.ts`/`route.js`)
 
 app/blog/\[slug\]/page.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -55,12 +54,12 @@ export default async function Page({
 
 > **Good to know**:
 > 
-> *   You can use the [`dynamicParams`](/docs/app/api-reference/file-conventions/route-segment-config/dynamicParams) segment config option to control what happens when a dynamic segment is visited that was not generated with `generateStaticParams`.
-> *   You must return [an empty array from `generateStaticParams`](#all-paths-at-build-time) or utilize [`export const dynamic = 'force-static'`](/docs/app/guides/caching-without-cache-components#dynamic) in order to revalidate (ISR) [paths at runtime](#all-paths-at-runtime).
-> *   During `next dev`, `generateStaticParams` will be called when you navigate to a route.
-> *   During `next build`, `generateStaticParams` runs before the corresponding Layouts or Pages are generated.
-> *   During revalidation (ISR), `generateStaticParams` will not be called again.
-> *   `generateStaticParams` replaces the [`getStaticPaths`](/docs/pages/api-reference/functions/get-static-paths) function in the Pages Router.
+> -   You can use the [`dynamicParams`](/docs/app/api-reference/file-conventions/route-segment-config/dynamicParams) segment config option to control what happens when a dynamic segment is visited that was not generated with `generateStaticParams`.
+> -   You must return [an empty array from `generateStaticParams`](#all-paths-at-build-time) or utilize [`export const dynamic = 'force-static'`](/docs/app/guides/caching-without-cache-components#dynamic) in order to revalidate (ISR) [paths at runtime](#all-paths-at-runtime).
+> -   During `next dev`, `generateStaticParams` will be called when you navigate to a route.
+> -   During `next build`, `generateStaticParams` runs before the corresponding Layouts or Pages are generated.
+> -   During revalidation (ISR), `generateStaticParams` will not be called again.
+> -   `generateStaticParams` replaces the [`getStaticPaths`](/docs/pages/api-reference/functions/get-static-paths) function in the Pages Router.
 
 ## Parameters[](#parameters)
 
@@ -74,30 +73,18 @@ The `params` object contains the populated `params` from the parent `generateSta
 
 `generateStaticParams` should return an array of objects where each object represents the populated dynamic segments of a single route.
 
-*   Each property in the object is a dynamic segment to be filled in for the route.
-*   The properties name is the segment's name, and the properties value is what that segment should be filled in with.
+-   Each property in the object is a dynamic segment to be filled in for the route.
+-   The properties name is the segment's name, and the properties value is what that segment should be filled in with.
 
-Example Route
-
-`generateStaticParams` Return Type
-
-`/product/[id]`
-
-`{ id: string }[]`
-
-`/products/[category]/[product]`
-
-`{ category: string, product: string }[]`
-
-`/products/[...slug]`
-
-`{ slug: string[] }[]`
+| Example Route | `generateStaticParams` Return Type |
+| --- | --- |
+| `/product/[id]` | `{ id: string }[]` |
+| `/products/[category]/[product]` | `{ category: string, product: string }[]` |
+| `/products/[...slug]` | `{ slug: string[] }[]` |
 
 ## Single Dynamic Segment[](#single-dynamic-segment)
 
 app/product/\[id\]/page.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -124,8 +111,6 @@ export default async function Page({
 ## Multiple Dynamic Segments[](#multiple-dynamic-segments)
 
 app/products/\[category\]/\[product\]/page.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -156,8 +141,6 @@ export default async function Page({
 ## Catch-all Dynamic Segment[](#catch-all-dynamic-segment)
 
 app/product/\[...slug\]/page.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -191,8 +174,6 @@ To statically render all paths at build time, supply the full list of paths to `
 
 app/blog/\[slug\]/page.tsx
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -211,8 +192,6 @@ To statically render a subset of paths at build time, and the rest the first tim
 
 app/blog/\[slug\]/page.tsx
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -229,8 +208,6 @@ export async function generateStaticParams() {
 Then, by using the [`dynamicParams`](/docs/app/api-reference/file-conventions/route-segment-config/dynamicParams) segment config option, you can control what happens when a dynamic segment is visited that was not generated with `generateStaticParams`.
 
 app/blog/\[slug\]/page.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -262,7 +239,7 @@ export async function generateStaticParams() {
 
 > **Good to know:**
 > 
-> *   You must always return an array from `generateStaticParams`, even if it's empty. Otherwise, the route will be dynamically rendered.
+> -   You must always return an array from `generateStaticParams`, even if it's empty. Otherwise, the route will be dynamically rendered.
 
 app/changelog/\[slug\]/page.js
 
@@ -283,8 +260,6 @@ See the [dynamic routes section](/docs/app/api-reference/file-conventions/dynami
 You can use `generateStaticParams` with [Route Handlers](/docs/app/api-reference/file-conventions/route) to statically generate API responses at build time:
 
 app/api/posts/\[id\]/route.ts
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -340,8 +315,8 @@ To prevent unspecified paths from being prerendered at runtime, add the `export 
 
 You can generate params for dynamic segments above the current layout or page, but **not below**. For example, given the `app/products/[category]/[product]` route:
 
-*   `app/products/[category]/[product]/page.js` can generate params for **both** `[category]` and `[product]`.
-*   `app/products/[category]/layout.js` can **only** generate params for `[category]`.
+-   `app/products/[category]/[product]/page.js` can generate params for **both** `[category]` and `[product]`.
+-   `app/products/[category]/layout.js` can **only** generate params for `[category]`.
 
 There are two approaches to generating params for a route with multiple dynamic segments:
 
@@ -350,8 +325,6 @@ There are two approaches to generating params for a route with multiple dynamic 
 Generate multiple dynamic segments from the child route segment.
 
 app/products/\[category\]/\[product\]/page.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -381,8 +354,6 @@ Generate the parent segments first and use the result to generate the child segm
 
 app/products/\[category\]/layout.tsx
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -409,8 +380,6 @@ A child route segment's `generateStaticParams` function is executed once for eac
 The child `generateStaticParams` function can use the `params` returned from the parent `generateStaticParams` function to dynamically generate its own segments.
 
 app/products/\[category\]/\[product\]/page.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -446,8 +415,6 @@ For type completion, you can make use of the TypeScript `Awaited` helper in comb
 
 app/products/\[category\]/\[product\]/page.tsx
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -470,28 +437,8 @@ export async function generateStaticParams({
 
 ## Version History[](#version-history)
 
-Version
-
-Changes
-
-`v13.0.0`
-
-`generateStaticParams` introduced.
-
-[Previous
-
-generateSitemaps
-
-](/docs/app/api-reference/functions/generate-sitemaps)
-
-[Next
-
-generateViewport
-
-](/docs/app/api-reference/functions/generate-viewport)
+| Version | Changes |
+| --- | --- |
+| `v13.0.0` | `generateStaticParams` introduced. |
 
 Was this helpful?
-
-supported.
-
-Send

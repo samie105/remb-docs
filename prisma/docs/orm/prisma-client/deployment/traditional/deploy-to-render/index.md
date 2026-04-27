@@ -5,37 +5,31 @@ canonical_url: "https://www.prisma.io/docs/orm/prisma-client/deployment/traditio
 docset: "prisma"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:54:39.352Z"
-content_hash: "4b078ff20ad338346fe49b41c281c46983416ff8c95fe1d1a7dcb4b99e56aca3"
+last_crawled_at: "2026-04-27T19:44:16.142Z"
+content_hash: "d498522804e368b55d4198c5340ac64dd1dfb6b281cf3aa2d7ae060ead499e70"
 menu_path: ["Deploy to Render"]
 section_path: []
-nav_prev: {"path": "prisma/docs/orm/prisma-client/deployment/traditional/deploy-to-railway/index.md", "title": "Deploy to Railway"}
-nav_next: {"path": "prisma/docs/orm/prisma-client/deployment/traditional/deploy-to-sevalla/index.md", "title": "Deploy to Sevalla"}
+content_language: "en"
 ---
-
-Deployment
-
-Traditional
-
 Learn how to deploy a Node.js server that uses Prisma ORM to Render
 
 This guide explains how to deploy a Node.js server that uses Prisma ORM and PostgreSQL to Render.
 
-Questions answered in this page
+**Questions answered in this page**
 
-*   How to deploy Prisma apps on Render?
-*   How to run migrations before start?
-*   What Render settings are recommended?
+-   How to deploy Prisma apps on Render?
+-   How to run migrations before start?
+-   What Render settings are recommended?
 
 The [Prisma Render deployment example](https://github.com/prisma/prisma-examples/tree/latest/deployment-platforms/render) contains an Express.js application with REST endpoints and a simple frontend. This app uses Prisma Client to fetch, create, and delete records from its database.
 
 [Render](https://render.com/) is a cloud application platform that lets developers easily deploy and scale full-stack applications. For this example, it's helpful to know:
 
-*   Render lets you deploy long-running, "serverful" full-stack applications. You can configure Render services to [autoscale](https://docs.render.com/scaling) based on CPU and/or memory usage. This is one of several [deployment paradigms](prisma/docs/orm/prisma-client/deployment/deploy-prisma/index.md) you can choose from.
-*   Render natively supports [common runtimes](https://docs.render.com/language-support), including Node.js and Bun. In this guide, we'll use the Node.js runtime.
-*   Render [integrates with Git repos](https://docs.render.com/github) for automatic deployments upon commits. You can deploy to Render from GitHub, GitLab, or Bitbucket. In this guide, we'll deploy from a Git repository.
+-   Render lets you deploy long-running, "serverful" full-stack applications. You can configure Render services to [autoscale](https://docs.render.com/scaling) based on CPU and/or memory usage. This is one of several [deployment paradigms](https://www.prisma.io/docs/orm/prisma-client/deployment/deploy-prisma) you can choose from.
+-   Render natively supports [common runtimes](https://docs.render.com/language-support), including Node.js and Bun. In this guide, we'll use the Node.js runtime.
+-   Render [integrates with Git repos](https://docs.render.com/github) for automatic deployments upon commits. You can deploy to Render from GitHub, GitLab, or Bitbucket. In this guide, we'll deploy from a Git repository.
 
-*   Sign up for a [Render](https://render.com/) account
+-   Sign up for a [Render](https://render.com/) account
 
 Download the [example code](https://github.com/prisma/prisma-examples/tree/latest/deployment-platforms/render) to your local machine.
 
@@ -50,15 +44,15 @@ Before we deploy the app, let's take a look at the example code.
 
 The logic for the Express app is in two files:
 
-*   `src/index.js`: The API. The endpoints use Prisma Client to fetch, create, and delete data from the database.
-*   `public/index.html`: The web frontend. The frontend calls a few of the API endpoints.
+-   `src/index.js`: The API. The endpoints use Prisma Client to fetch, create, and delete data from the database.
+-   `public/index.html`: The web frontend. The frontend calls a few of the API endpoints.
 
 ### [Prisma schema and migrations](#prisma-schema-and-migrations)
 
 The Prisma components of this app are in two files:
 
-*   `prisma/schema.prisma`: The data model of this app. This example defines two models, `User` and `Post`. The format of this file follows the [Prisma schema](prisma/docs/orm/prisma-schema/overview/index.md).
-*   `prisma/migrations/<migration name>/migration.sql`: The SQL commands that construct this schema in a PostgreSQL database. You can auto-generate migration files like this one by running [`prisma migrate dev`](prisma/docs/orm/prisma-migrate/understanding-prisma-migrate/mental-model/index.md#what-is-prisma-migrate).
+-   `prisma/schema.prisma`: The data model of this app. This example defines two models, `User` and `Post`. The format of this file follows the [Prisma schema](https://www.prisma.io/docs/orm/prisma-schema/overview).
+-   `prisma/migrations/<migration name>/migration.sql`: The SQL commands that construct this schema in a PostgreSQL database. You can auto-generate migration files like this one by running [`prisma migrate dev`](https://www.prisma.io/docs/orm/prisma-migrate/understanding-prisma-migrate/mental-model#what-is-prisma-migrate).
 
 ### [Render Blueprint](#render-blueprint)
 
@@ -66,8 +60,8 @@ The `render.yaml` file is a [Render blueprint](https://docs.render.com/infrastru
 
 A `render.yaml` defines the services that will be spun up on Render by a Blueprint. In this `render.yaml`, we see:
 
-*   **A web service that uses a Node runtime**: This is the Express app.
-*   **A PostgreSQL database**: This is the database that the Express app uses.
+-   **A web service that uses a Node runtime**: This is the Express app.
+-   **A PostgreSQL database**: This is the database that the Express app uses.
 
 The format of this file follows the [Blueprint specification](https://docs.render.com/blueprint-spec).
 
@@ -81,21 +75,11 @@ For more details about the Pre-Deploy Command, see [Render's deploy guide](https
 
 In our example code, the `render.yaml` shows the web service's build command, pre-deploy command, and start command. Notably, `npx prisma migrate deploy` (the pre-deploy command) will run before `npm run start` (the start command).
 
-**Command**
-
-**Value**
-
-Build Command
-
-`npm install --production=false`
-
-Pre-Deploy Command
-
-`npx prisma migrate deploy`
-
-Start Command
-
-`npm run start`
+| **Command** | **Value** |
+| --- | --- |
+| Build Command | `npm install --production=false` |
+| Pre-Deploy Command | `npx prisma migrate deploy` |
+| Start Command | `npm run start` |
 
 ### [1\. Initialize your Git repository](#1-initialize-your-git-repository)
 
@@ -110,29 +94,13 @@ Start Command
 3.  In the Render Dashboard, click **New** > **Web Service** and connect the Git repository that contains the example code.
 4.  Provide the following values during service creation:
 
-**Setting**
-
-**Value**
-
-Language
-
-`Node`
-
-Build Command
-
-`npm install --production=false`
-
-Pre-Deploy Command (Note: this may be in the "Advanced" tab)
-
-`npx prisma migrate deploy`
-
-Start Command
-
-`npm run start`
-
-Environment Variables
-
-Set `DATABASE_URL` to the internal URL of the database
+| **Setting** | **Value** |
+| --- | --- |
+| Language | `Node` |
+| Build Command | `npm install --production=false` |
+| Pre-Deploy Command (Note: this may be in the "Advanced" tab) | `npx prisma migrate deploy` |
+| Start Command | `npm run start` |
+| Environment Variables | Set `DATABASE_URL` to the internal URL of the database |
 
 That’s it. Your web service will be live at its `onrender.com` URL as soon as the build finishes.
 
@@ -140,7 +108,7 @@ That’s it. Your web service will be live at its `onrender.com` URL as soon as 
 
 You can also deploy the example using the Render Blueprint. Follow Render's \[Blueprint setup guide\] and use the `render.yaml` in the example.
 
-Prisma ORM includes a framework for [seeding the database](prisma/docs/orm/prisma-migrate/workflows/seeding/index.md) with starter data. In our example, `prisma/seed.js` defines some test users and posts.
+Prisma ORM includes a framework for [seeding the database](https://www.prisma.io/docs/orm/prisma-migrate/workflows/seeding) with starter data. In our example, `prisma/seed.js` defines some test users and posts.
 
 To add these users to the database, we can either:
 
@@ -166,5 +134,3 @@ Render allows you to SSH into your web service.
 
 1.  Follow [Render's SSH guide](https://docs.render.com/ssh) to connect to your server.
 2.  In the shell, run: `npx prisma db seed`
-
-[Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/prisma-client/deployment/traditional/deploy-to-render.mdx)

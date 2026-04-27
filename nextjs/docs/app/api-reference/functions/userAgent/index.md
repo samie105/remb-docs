@@ -5,23 +5,22 @@ canonical_url: "https://nextjs.org/docs/app/api-reference/functions/userAgent"
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:12:47.515Z"
-content_hash: "6e104bc338e4dd522ec28d56405581b6dfd6cef4d3822ef6368d0efa5096ad37"
+last_crawled_at: "2026-04-27T18:11:29.003Z"
+content_hash: "ac57004c5e587fba7b936e778c825cbbf4a39fd42033810e39084a2ab9beb578"
 menu_path: ["userAgent"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/api-reference/functions/use-selected-layout-segments/index.md", "title": "useSelectedLayoutSegments"}
-nav_next: {"path": "nextjs/docs/app/api-reference/config/index.md", "title": "Configuration"}
+version: "latest"
+content_language: "en"
 ---
+[API Reference](/docs/app/api-reference)[Functions](/docs/app/api-reference/functions)userAgent
 
 # userAgent
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 The `userAgent` helper extends the [Web Request API](https://developer.mozilla.org/docs/Web/API/Request) with additional properties and methods to interact with the user agent object from the request.
 
 proxy.ts
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -49,51 +48,35 @@ A boolean indicating whether the request comes from a known bot.
 
 An object containing information about the browser used in the request.
 
-*   `name`: A string representing the browser's name, or `undefined` if not identifiable.
-*   `version`: A string representing the browser's version, or `undefined`.
+-   `name`: A string representing the browser's name, or `undefined` if not identifiable.
+-   `version`: A string representing the browser's version, or `undefined`.
 
 ## `device`[](#device)
 
 An object containing information about the device used in the request.
 
-*   `model`: A string representing the model of the device, or `undefined`.
-*   `type`: A string representing the type of the device, such as `console`, `mobile`, `tablet`, `smarttv`, `wearable`, `embedded`, or `undefined`.
-*   `vendor`: A string representing the vendor of the device, or `undefined`.
+-   `model`: A string representing the model of the device, or `undefined`.
+-   `type`: A string representing the type of the device, such as `console`, `mobile`, `tablet`, `smarttv`, `wearable`, `embedded`, or `undefined`.
+-   `vendor`: A string representing the vendor of the device, or `undefined`.
 
 ## `engine`[](#engine)
 
 An object containing information about the browser's engine.
 
-*   `name`: A string representing the engine's name. Possible values include: `Amaya`, `Blink`, `EdgeHTML`, `Flow`, `Gecko`, `Goanna`, `iCab`, `KHTML`, `Links`, `Lynx`, `NetFront`, `NetSurf`, `Presto`, `Tasman`, `Trident`, `w3m`, `WebKit` or `undefined`.
-*   `version`: A string representing the engine's version, or `undefined`.
+-   `name`: A string representing the engine's name. Possible values include: `Amaya`, `Blink`, `EdgeHTML`, `Flow`, `Gecko`, `Goanna`, `iCab`, `KHTML`, `Links`, `Lynx`, `NetFront`, `NetSurf`, `Presto`, `Tasman`, `Trident`, `w3m`, `WebKit` or `undefined`.
+-   `version`: A string representing the engine's version, or `undefined`.
 
 ## `os`[](#os)
 
 An object containing information about the operating system.
 
-*   `name`: A string representing the name of the OS, or `undefined`.
-*   `version`: A string representing the version of the OS, or `undefined`.
+-   `name`: A string representing the name of the OS, or `undefined`.
+-   `version`: A string representing the version of the OS, or `undefined`.
 
 ## `cpu`[](#cpu)
 
 An object containing information about the CPU architecture.
 
-*   `architecture`: A string representing the architecture of the CPU. Possible values include: `68k`, `amd64`, `arm`, `arm64`, `armhf`, `avr`, `ia32`, `ia64`, `irix`, `irix64`, `mips`, `mips64`, `pa-risc`, `ppc`, `sparc`, `sparc64` or `undefined`
-
-[Previous
-
-useSelectedLayoutSegments
-
-](/docs/app/api-reference/functions/use-selected-layout-segments)
-
-[Next
-
-Configuration
-
-](/docs/app/api-reference/config)
+-   `architecture`: A string representing the architecture of the CPU. Possible values include: `68k`, `amd64`, `arm`, `arm64`, `armhf`, `avr`, `ia32`, `ia64`, `irix`, `irix64`, `mips`, `mips64`, `pa-risc`, `ppc`, `sparc`, `sparc64` or `undefined`
 
 Was this helpful?
-
-supported.
-
-Send

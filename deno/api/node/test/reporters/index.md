@@ -5,10 +5,11 @@ canonical_url: "https://docs.deno.com/api/node/test/reporters/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:41:38.999Z"
-content_hash: "d744fbc0b156b4c05b94ac208533b9a0e3ead2133b420c399d2d72b2ec2f5a1e"
+last_crawled_at: "2026-04-27T17:13:48.698Z"
+content_hash: "77821fa5e14ebc08f264f78ed44870bb59460adf3d31230f6df48d414c47e3a8"
 menu_path: ["test/reporters - Node documentation"]
 section_path: []
+content_language: "en"
 ---
 ### Usage in Deno
 
@@ -28,8 +29,6 @@ This module is only available under the `node:` scheme. The following will not w
 import test from 'node:test/reporters';
 ```
 
-### Classes [#](#Classes)
-
 c
 
 [LcovReporter](../.././test/reporters/~/LcovReporter "LcovReporter")
@@ -41,8 +40,6 @@ c
 [SpecReporter](../.././test/reporters/~/SpecReporter "SpecReporter")
 
 No documentation available
-
-### Functions [#](#Functions)
 
 f
 
@@ -62,15 +59,11 @@ f
 
 The `tap` reporter outputs the test results in the [TAP](https://testanything.org/) format.
 
-### Interfaces [#](#Interfaces)
-
 I
 
 [ReporterConstructorWrapper](../.././test/reporters/~/ReporterConstructorWrapper "ReporterConstructorWrapper")
 
 No documentation available
-
-### Type Aliases [#](<#Type Aliases>)
 
 T
 
@@ -83,8 +76,6 @@ T
 [TestEventGenerator](../.././test/reporters/~/TestEventGenerator "TestEventGenerator")
 
 No documentation available
-
-### Variables [#](#Variables)
 
 v
 

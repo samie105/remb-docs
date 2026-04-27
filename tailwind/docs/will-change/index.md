@@ -5,43 +5,13 @@ canonical_url: "https://tailwindcss.com/docs/will-change"
 docset: "tailwind"
 kind: "framework"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:17:57.182Z"
-content_hash: "de0d020880779f43d8bd496df5be09ec869f76c3afd3ad1b7d26e120a48e0eb8"
+last_crawled_at: "2026-04-27T20:40:53.037Z"
+content_hash: "09cd06654a55ebe305a57cde86227c4d40ebf3a5b92d760f33698a400e59852c"
 menu_path: ["will-change"]
 section_path: []
-nav_prev: {"path": "tailwind/docs/user-select/index.md", "title": "user-select"}
-nav_next: {"path": "tailwind/docs/fill/index.md", "title": "fill"}
+content_language: "en"
 ---
-
 Utilities for optimizing upcoming animations of elements that are expected to change.
-
-Class
-
-Styles
-
-`will-change-auto`
-
-`will-change: auto;`
-
-`will-change-scroll`
-
-`will-change: scroll-position;`
-
-`will-change-contents`
-
-`will-change: contents;`
-
-`will-change-transform`
-
-`will-change: transform;`
-
-`will-change-<custom-property>`
-
-`will-change: var(<custom-property>);`
-
-`will-change-[<value>]`
-
-`will-change: <value>;`
 
 ## [Examples](#examples)
 

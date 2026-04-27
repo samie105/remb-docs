@@ -5,25 +5,24 @@ canonical_url: "https://nextjs.org/docs/app/api-reference/file-conventions/loadi
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:10:03.188Z"
-content_hash: "a2817717ac7b8a3c1ffe41bc6a1e29557779ba5d11865aa1fdf4f793b40ba5f5"
+last_crawled_at: "2026-04-27T18:08:47.611Z"
+content_hash: "6c76fe6d4dd42c832a8fecf1b636d88497123224b582e34aebbaf1ded9401546"
 menu_path: ["loading.js"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/api-reference/file-conventions/layout/index.md", "title": "layout.js"}
-nav_next: {"path": "nextjs/docs/app/api-reference/file-conventions/mdx-components/index.md", "title": "mdx-components.js"}
+version: "latest"
+content_language: "en"
 ---
+[API Reference](/docs/app/api-reference)[File-system conventions](/docs/app/api-reference/file-conventions)loading.js
 
 # loading.js
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 The special file `loading.js` helps you create meaningful Loading UI with [React Suspense](https://react.dev/reference/react/Suspense). With this convention, you can show an [instant loading state](#instant-loading-states) from the server while the content of a route segment streams in. The new content is automatically swapped in once complete.
 
-![Loading UI](/_next/image?url=https%3A%2F%2Fh8DxKfmAPhn8O0p3.public.blob.vercel-storage.com%2Fdocs%2Flight%2Floading-ui.png&w=3840&q=75)![Loading UI](/_next/image?url=https%3A%2F%2Fh8DxKfmAPhn8O0p3.public.blob.vercel-storage.com%2Fdocs%2Fdark%2Floading-ui.png&w=3840&q=75)
+![Loading UI](https://h8DxKfmAPhn8O0p3.public.blob.vercel-storage.com/docs/light/loading-ui.png)
 
 app/feed/loading.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -46,11 +45,9 @@ Loading UI components do not accept any parameters.
 
 ## Behavior[](#behavior)
 
-### Navigation[](#navigation)
-
-*   The Fallback UI is [prefetched](/docs/app/getting-started/linking-and-navigating#prefetching), making navigation immediate unless prefetching hasn't completed.
-*   Navigation is interruptible, meaning changing routes does not need to wait for the content of the route to fully load before navigating to another route.
-*   Shared layouts remain interactive while new route segments load.
+-   The Fallback UI is [prefetched](/docs/app/getting-started/linking-and-navigating#prefetching), making navigation immediate unless prefetching hasn't completed.
+-   Navigation is interruptible, meaning changing routes does not need to wait for the content of the route to fully load before navigating to another route.
+-   Shared layouts remain interactive while new route segments load.
 
 ### Instant Loading States[](#instant-loading-states)
 
@@ -58,11 +55,9 @@ An instant loading state is fallback UI that is shown immediately upon navigatio
 
 Create a loading state by adding a `loading.js` file inside a folder.
 
-![loading.js special file](/_next/image?url=https%3A%2F%2Fh8DxKfmAPhn8O0p3.public.blob.vercel-storage.com%2Fdocs%2Flight%2Floading-special-file.png&w=3840&q=75)![loading.js special file](/_next/image?url=https%3A%2F%2Fh8DxKfmAPhn8O0p3.public.blob.vercel-storage.com%2Fdocs%2Fdark%2Floading-special-file.png&w=3840&q=75)
+![loading.js special file](https://h8DxKfmAPhn8O0p3.public.blob.vercel-storage.com/docs/light/loading-special-file.png)
 
 app/dashboard/loading.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -75,22 +70,22 @@ export default function Loading() {
 
 In the same folder, `loading.js` will be nested inside `layout.js`. It will automatically wrap the `page.js` file and any children below in a `<Suspense>` boundary.
 
-![loading.js overview](/_next/image?url=https%3A%2F%2Fh8DxKfmAPhn8O0p3.public.blob.vercel-storage.com%2Fdocs%2Flight%2Floading-overview.png&w=3840&q=75)![loading.js overview](/_next/image?url=https%3A%2F%2Fh8DxKfmAPhn8O0p3.public.blob.vercel-storage.com%2Fdocs%2Fdark%2Floading-overview.png&w=3840&q=75)
+![loading.js overview](https://h8DxKfmAPhn8O0p3.public.blob.vercel-storage.com/docs/light/loading-overview.png)
 
 In the [component hierarchy](/docs/app/getting-started/project-structure#component-hierarchy), `loading.js` wraps `not-found.js`, `page.js`, and nested `layout.js` files in a `<Suspense>` boundary. It does **not** wrap the `layout.js`, `template.js`, or `error.js` in the same segment.
 
 > **Good to know**: If the layout accesses uncached or runtime data (e.g. `cookies()`, `headers()`, or uncached fetches), `loading.js` will not show a fallback for it.
 > 
-> *   **Without [Cache Components](/docs/app/getting-started/caching):** Navigation blocks until the layout finishes rendering.
-> *   **With [Cache Components](/docs/app/getting-started/caching):** Uncached or runtime data access in the layout must be explicitly wrapped in `<Suspense>`, otherwise Next.js guides you with a build-time error. The static shell streams first, and the uncached content fills in.
+> -   **Without [Cache Components](/docs/app/getting-started/caching):** Navigation blocks until the layout finishes rendering.
+> -   **With [Cache Components](/docs/app/getting-started/caching):** Uncached or runtime data access in the layout must be explicitly wrapped in `<Suspense>`, otherwise Next.js guides you with a build-time error. The static shell streams first, and the uncached content fills in.
 > 
 > To ensure instant navigation, move uncached data fetching from `layout.js` into `page.js`, or wrap the runtime data access in your layout in its own `<Suspense>` boundary. See [layout.js Caveats](/docs/app/api-reference/file-conventions/layout#interaction-with-loadingjs) for details and examples.
 
 ### SEO[](#seo)
 
-*   For bots that only scrape static HTML, and cannot execute JavaScript like a full browser, such as Twitterbot, Next.js resolves [`generateMetadata`](/docs/app/api-reference/functions/generate-metadata) before streaming UI, and metadata is placed in the `<head>` of the initial HTML.
-*   Otherwise, [streaming metadata](/docs/app/api-reference/functions/generate-metadata#streaming-metadata) may be used. Next.js automatically detects user agents to choose between blocking and streaming behavior.
-*   Since streaming is server-rendered, it does not impact SEO. You can use the [Rich Results Test](https://search.google.com/test/rich-results) tool from Google to see how your page appears to Google's web crawlers and view the serialized HTML ([source](https://web.dev/rendering-on-the-web/#seo-considerations)).
+-   For bots that only scrape static HTML, and cannot execute JavaScript like a full browser, such as Twitterbot, Next.js resolves [`generateMetadata`](/docs/app/api-reference/functions/generate-metadata) before streaming UI, and metadata is placed in the `<head>` of the initial HTML.
+-   Otherwise, [streaming metadata](/docs/app/api-reference/functions/generate-metadata#streaming-metadata) may be used. Next.js automatically detects user agents to choose between blocking and streaming behavior.
+-   Since streaming is server-rendered, it does not impact SEO. You can use the [Rich Results Test](https://search.google.com/test/rich-results) tool from Google to see how your page appears to Google's web crawlers and view the serialized HTML ([source](https://web.dev/rendering-on-the-web/#seo-considerations)).
 
 ### Status Codes[](#status-codes)
 
@@ -106,7 +101,7 @@ If you need a 404 status, for compliance or analytics, ensure the resource exist
 
 You can run this check in [`proxy`](/docs/app/api-reference/file-conventions/proxy) to rewrite missing slugs to a not-found route, or [produce a 404 response](/docs/app/api-reference/file-conventions/proxy#producing-a-response). Keep proxy checks fast, and avoid fetching full content there.
 
-When is the response body streamed?
+**When is the response body streamed?**
 
 The response body starts streaming when a Suspense fallback renders (for example, a `loading.tsx`) or when a Server Component suspends under a `Suspense` boundary. Place `notFound()` before those boundaries and before any `await` that may suspend.
 
@@ -118,25 +113,12 @@ To start streaming, the response headers must be set. This is why it is not poss
 
 ## Platform Support[](#platform-support)
 
-Deployment Option
-
-Supported
-
-[Node.js server](/docs/app/getting-started/deploying#nodejs-server)
-
-Yes
-
-[Docker container](/docs/app/getting-started/deploying#docker)
-
-Yes
-
-[Static export](/docs/app/getting-started/deploying#static-export)
-
-No
-
-[Adapters](/docs/app/getting-started/deploying#adapters)
-
-Platform-specific
+| Deployment Option | Supported |
+| --- | --- |
+| [Node.js server](/docs/app/getting-started/deploying#nodejs-server) | Yes |
+| [Docker container](/docs/app/getting-started/deploying#docker) | Yes |
+| [Static export](/docs/app/getting-started/deploying#static-export) | No |
+| [Adapters](/docs/app/getting-started/deploying#adapters) | Platform-specific |
 
 Learn how to [configure streaming](/docs/app/guides/self-hosting#streaming-and-suspense) when self-hosting Next.js.
 
@@ -149,8 +131,6 @@ In addition to `loading.js`, you can also manually create Suspense Boundaries fo
 `<Suspense>` works by wrapping a component that performs an asynchronous action (e.g. fetch data), showing fallback UI (e.g. skeleton, spinner) while it's happening, and then swapping in your component once the action completes.
 
 app/dashboard/page.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -181,28 +161,8 @@ For more Suspense examples and use cases, please see the [React Documentation](h
 
 ## Version History[](#version-history)
 
-Version
-
-Changes
-
-`v13.0.0`
-
-`loading` introduced.
-
-[Previous
-
-layout.js
-
-](/docs/app/api-reference/file-conventions/layout)
-
-[Next
-
-mdx-components.js
-
-](/docs/app/api-reference/file-conventions/mdx-components)
+| Version | Changes |
+| --- | --- |
+| `v13.0.0` | `loading` introduced. |
 
 Was this helpful?
-
-supported.
-
-Send

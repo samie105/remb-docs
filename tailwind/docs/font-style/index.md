@@ -5,33 +5,36 @@ canonical_url: "https://tailwindcss.com/docs/font-style"
 docset: "tailwind"
 kind: "framework"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:54:47.381Z"
-content_hash: "d33acc804fbd57fcf5906baff01d302a66a8894f4291b45352fc903e1cc9faf8"
+last_crawled_at: "2026-04-27T20:07:40.817Z"
+content_hash: "0505f6130d4de83e93d017dc8ec100612c0d5e0db976e9277c8c167b838344bf"
 menu_path: ["font-style"]
 section_path: []
-nav_prev: {"path": "tailwind/docs/font-smoothing/index.md", "title": "font-smoothing"}
-nav_next: {"path": "tailwind/docs/font-weight/index.md", "title": "font-weight"}
+content_language: "en"
 ---
+[](/)
+
+[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
+
+1.  Typography
+2.  font-style
+
+Typography
 
 # font-style
 
 Utilities for controlling the style of text.
 
-Class
-
-Styles
-
-`italic`
-
+| Class | Styles |
+| --- | --- |
+| `italic` | 
 `font-style: italic;`
 
-`not-italic`
+ |
+| `not-italic` | 
 
 `font-style: normal;`
 
-## [Examples](#examples)
-
-### [Italicizing text](#italicizing-text)
+ |
 
 Use the `italic` utility to make text italic:
 
@@ -41,8 +44,6 @@ The quick brown fox jumps over the lazy dog.
 <p class="italic ...">The quick brown fox ...</p>
 ```
 
-### [Displaying text normally](#displaying-text-normally)
-
 Use the `not-italic` utility to display text normally:
 
 The quick brown fox jumps over the lazy dog.
@@ -50,8 +51,6 @@ The quick brown fox jumps over the lazy dog.
 ```
 <p class="not-italic ...">The quick brown fox ...</p>
 ```
-
-### [Responsive design](#responsive-design)
 
 Prefix a `font-style` utility with a breakpoint variant like `md:` to only apply the utility at medium screen sizes and above:
 
@@ -63,11 +62,11 @@ Learn more about using variants in the [variants documentation](/docs/hover-focu
 
 ### On this page
 
-*   [Quick reference](#quick-reference)
-*   [Examples](#examples)
-    *   [Italicizing text](#italicizing-text)
-    *   [Displaying text normally](#displaying-text-normally)
-    *   [Responsive design](#responsive-design)
+-   [Quick reference](#quick-reference)
+-   [Examples](#examples)
+    -   [Italicizing text](#italicizing-text)
+    -   [Displaying text normally](#displaying-text-normally)
+    -   [Responsive design](#responsive-design)
 
 ![Build UIs that don’t suck — 5-day mini-course](/_next/static/media/course-promo.d3d6bc78.jpg)
 

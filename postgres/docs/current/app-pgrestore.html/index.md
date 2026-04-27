@@ -5,14 +5,12 @@ canonical_url: "https://www.postgresql.org/docs/current/app-pgrestore.html"
 docset: "postgres"
 kind: "database"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:42:54.281Z"
-content_hash: "036cdbf1f579ffcd17c790a3e9d4a5af99dd8fb4a3bfab52ccab641777d6883b"
+last_crawled_at: "2026-04-27T20:45:57.364Z"
+content_hash: "5463d057949c38edbc0827ce003d4e7d217bf792f5b8af8f877f7911e558e947"
 menu_path: ["PostgreSQL: Documentation: 18: pg_restore"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/app-pgresetxlog.html/index.md", "title": "PostgreSQL: Documentation: 18: O.4.\u00a0pg_resetxlog renamed to pg_resetwal"}
-nav_next: {"path": "postgres/docs/current/app-pgrewind.html/index.md", "title": "PostgreSQL: Documentation: 18: pg_rewind"}
+content_language: "en"
 ---
-
 pg\_restore accepts the following command line arguments.
 
 _`filename`_
@@ -195,7 +193,7 @@ Presently, the commands emitted for `--disable-triggers` must be done as superus
 
 `--enable-row-security`
 
-This option is relevant only when restoring the contents of a table which has row security. By default, pg\_restore will set [row\_security](postgres/docs/current/runtime-config-client.html/index.md#GUC-ROW-SECURITY) to off, to ensure that all data is restored in to the table. If the user does not have sufficient privileges to bypass row security, then an error is thrown. This parameter instructs pg\_restore to set [row\_security](postgres/docs/current/runtime-config-client.html/index.md#GUC-ROW-SECURITY) to on instead, allowing the user to attempt to restore the contents of the table with row security enabled. This might still fail if the user does not have the right to insert the rows from the dump into the table.
+This option is relevant only when restoring the contents of a table which has row security. By default, pg\_restore will set [row\_security](https://www.postgresql.org/docs/current/runtime-config-client.html#GUC-ROW-SECURITY) to off, to ensure that all data is restored in to the table. If the user does not have sufficient privileges to bypass row security, then an error is thrown. This parameter instructs pg\_restore to set [row\_security](https://www.postgresql.org/docs/current/runtime-config-client.html#GUC-ROW-SECURITY) to on instead, allowing the user to attempt to restore the contents of the table with row security enabled. This might still fail if the user does not have the right to insert the rows from the dump into the table.
 
 Note that this option currently also requires the dump be in `INSERT` format, as `COPY FROM` does not support row security.
 
@@ -209,15 +207,15 @@ The file lists one database pattern per row, with the following format:
 
 The first keyword specifies whether the objects matched by the pattern are to be included or excluded. The second keyword specifies the type of object to be filtered using the pattern:
 
-*   `function`: functions, works like the `-P`/`--function` option. This keyword can only be used with the `include` keyword.
+-   `function`: functions, works like the `-P`/`--function` option. This keyword can only be used with the `include` keyword.
     
-*   `index`: indexes, works like the `-I`/`--indexes` option. This keyword can only be used with the `include` keyword.
+-   `index`: indexes, works like the `-I`/`--indexes` option. This keyword can only be used with the `include` keyword.
     
-*   `schema`: schemas, works like the `-n`/`--schema` and `-N`/`--exclude-schema` options.
+-   `schema`: schemas, works like the `-n`/`--schema` and `-N`/`--exclude-schema` options.
     
-*   `table`: tables, works like the `-t`/`--table` option. This keyword can only be used with the `include` keyword.
+-   `table`: tables, works like the `-t`/`--table` option. This keyword can only be used with the `include` keyword.
     
-*   `trigger`: triggers, works like the `-T`/`--trigger` option. This keyword can only be used with the `include` keyword.
+-   `trigger`: triggers, works like the `-T`/`--trigger` option. This keyword can only be used with the `include` keyword.
     
 
 Lines starting with `#` are considered comments and ignored. Comments can be placed after an object pattern row as well. Blank lines are also ignored. See [Patterns](https://www.postgresql.org/docs/current/app-psql.html#APP-PSQL-PATTERNS "Patterns") for how to perform quoting in patterns.

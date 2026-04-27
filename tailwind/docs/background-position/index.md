@@ -5,69 +5,81 @@ canonical_url: "https://tailwindcss.com/docs/background-position"
 docset: "tailwind"
 kind: "framework"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:01:32.923Z"
-content_hash: "48d62a9cd5656044e9b1265fd209976f24d754c42d55b0be3af55630ef5518bc"
+last_crawled_at: "2026-04-27T20:17:30.219Z"
+content_hash: "2bc972b6d0ae7865c6d01d78b6da1366275a96e38e74feb7824887144edb6080"
 menu_path: ["background-position"]
 section_path: []
-nav_prev: {"path": "tailwind/docs/background-origin/index.md", "title": "background-origin"}
-nav_next: {"path": "tailwind/docs/background-repeat/index.md", "title": "background-repeat"}
+content_language: "en"
 ---
+[](/)
+
+[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
+
+1.  Backgrounds
+2.  background-position
+
+Backgrounds
 
 # background-position
 
 Utilities for controlling the position of an element's background image.
 
-Class
-
-Styles
-
-`bg-top-left`
-
+| Class | Styles |
+| --- | --- |
+| `bg-top-left` | 
 `background-position: top left;`
 
-`bg-top`
+ |
+| `bg-top` | 
 
 `background-position: top;`
 
-`bg-top-right`
+ |
+| `bg-top-right` | 
 
 `background-position: top right;`
 
-`bg-left`
+ |
+| `bg-left` | 
 
 `background-position: left;`
 
-`bg-center`
+ |
+| `bg-center` | 
 
 `background-position: center;`
 
-`bg-right`
+ |
+| `bg-right` | 
 
 `background-position: right;`
 
-`bg-bottom-left`
+ |
+| `bg-bottom-left` | 
 
 `background-position: bottom left;`
 
-`bg-bottom`
+ |
+| `bg-bottom` | 
 
 `background-position: bottom;`
 
-`bg-bottom-right`
+ |
+| `bg-bottom-right` | 
 
 `background-position: bottom right;`
 
-`bg-position-(<custom-property>)`
+ |
+| `bg-position-(<custom-property>)` | 
 
 `background-position: var(<custom-property>);`
 
-`bg-position-[<value>]`
+ |
+| `bg-position-[<value>]` | 
 
 `background-position: <value>;`
 
-## [Examples](#examples)
-
-### [Basic example](#basic-example)
+ |
 
 Use utilities like `bg-center`, `bg-right`, and `bg-top-left` to control the position of an element's background image:
 
@@ -113,8 +125,6 @@ bg-bottom-right
 <div class="bg-[url(/img/mountains.jpg)] bg-top-left"></div><div class="bg-[url(/img/mountains.jpg)] bg-top"></div><div class="bg-[url(/img/mountains.jpg)] bg-top-right"></div><div class="bg-[url(/img/mountains.jpg)] bg-left"></div><div class="bg-[url(/img/mountains.jpg)] bg-center"></div><div class="bg-[url(/img/mountains.jpg)] bg-right"></div><div class="bg-[url(/img/mountains.jpg)] bg-bottom-left"></div><div class="bg-[url(/img/mountains.jpg)] bg-bottom"></div><div class="bg-[url(/img/mountains.jpg)] bg-bottom-right"></div>
 ```
 
-### [Using a custom value](#using-a-custom-value)
-
 Use the `bg-position-[<value>]` syntax to set the background position based on a completely custom value:
 
 ```
@@ -129,8 +139,6 @@ For CSS variables, you can also use the `bg-position-(<custom-property>)` syntax
 
 This is just a shorthand for `bg-position-[var(<custom-property>)]` that adds the `var()` function for you automatically.
 
-### [Responsive design](#responsive-design)
-
 Prefix a `background-position` utility with a breakpoint variant like `md:` to only apply the utility at medium screen sizes and above:
 
 ```
@@ -141,11 +149,11 @@ Learn more about using variants in the [variants documentation](/docs/hover-focu
 
 ### On this page
 
-*   [Quick reference](#quick-reference)
-*   [Examples](#examples)
-    *   [Basic example](#basic-example)
-    *   [Using a custom value](#using-a-custom-value)
-    *   [Responsive design](#responsive-design)
+-   [Quick reference](#quick-reference)
+-   [Examples](#examples)
+    -   [Basic example](#basic-example)
+    -   [Using a custom value](#using-a-custom-value)
+    -   [Responsive design](#responsive-design)
 
 ![Build UIs that don’t suck — 5-day mini-course](/_next/static/media/course-promo.d3d6bc78.jpg)
 

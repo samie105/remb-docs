@@ -5,13 +5,12 @@ canonical_url: "https://docs.deno.com/api/deno/errors"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:08:47.355Z"
-content_hash: "b922f15f7c405a94e82a102f9bd611248b2d4ea27f3448014e83530a591191db"
+last_crawled_at: "2026-04-27T17:51:56.545Z"
+content_hash: "5824f42ed65f2090b9a6aac6d5b9a442388428f1a314af75415be2d5abc9a664"
 menu_path: ["Errors - Deno documentation"]
 section_path: []
+content_language: "en"
 ---
-### Classes [#](#Classes)
-
 c
 
 [Deno.errors.AddrInUse](./././~/Deno.errors.AddrInUse "Deno.errors.AddrInUse")
@@ -161,8 +160,6 @@ c
 [Deno.errors.WriteZero](./././~/Deno.errors.WriteZero "Deno.errors.WriteZero")
 
 Raised when expecting to write to a IO buffer resulted in zero bytes being written.
-
-### Namespaces [#](#Namespaces)
 
 N
 

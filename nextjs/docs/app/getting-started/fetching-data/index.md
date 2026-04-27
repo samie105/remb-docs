@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/app/getting-started/fetching-data"
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:13:12.530Z"
-content_hash: "628fbe4450cc91a6d1574f3680b9762cf807fd9c99d2e7a1747bcbc969fafb34"
+last_crawled_at: "2026-04-27T18:11:52.965Z"
+content_hash: "34a39a320f4dc1482ffa105bec48f2e37fa5d12abeb8294f972d278daf31dc37"
 menu_path: ["Fetching Data"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/getting-started/server-and-client-components/index.md", "title": "Server and Client Components"}
-nav_next: {"path": "nextjs/docs/app/getting-started/mutating-data/index.md", "title": "Mutating Data"}
+version: "latest"
+content_language: "en"
 ---
+[App Router](/docs/app)[Getting Started](/docs/app/getting-started)Fetching Data
 
 # Fetching Data
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 This page will walk you through how you can fetch data in [Server](#server-components) and [Client](#client-components) Components, and how to [stream](#streaming) components that depend on uncached data.
 
@@ -33,8 +34,6 @@ You can fetch data in Server Components using any asynchronous I/O, such as:
 To fetch data with the `fetch` API, turn your component into an asynchronous function, and await the `fetch` call. For example:
 
 app/blog/page.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -54,17 +53,15 @@ export default async function Page() {
 
 > **Good to know:**
 > 
-> *   Identical `fetch` requests in a React component tree are [memoized](/docs/app/glossary#memoization) by default, so you can fetch data in the component that needs it instead of drilling props.
-> *   `fetch` requests are not cached by default and will block the page from rendering until the request is complete. Use the [`use cache`](/docs/app/api-reference/directives/use-cache) directive to cache results, or wrap the fetching component in [`<Suspense>`](/docs/app/getting-started/caching#streaming-uncached-data) to stream fresh data at request time. See [caching](/docs/app/getting-started/caching) for details.
-> *   During development, you can log `fetch` calls for better visibility and debugging. See the [`logging` API reference](/docs/app/api-reference/config/next-config-js/logging).
+> -   Identical `fetch` requests in a React component tree are [memoized](/docs/app/glossary#memoization) by default, so you can fetch data in the component that needs it instead of drilling props.
+> -   `fetch` requests are not cached by default and will block the page from rendering until the request is complete. Use the [`use cache`](/docs/app/api-reference/directives/use-cache) directive to cache results, or wrap the fetching component in [`<Suspense>`](/docs/app/getting-started/caching#streaming-uncached-data) to stream fresh data at request time. See [caching](/docs/app/getting-started/caching) for details.
+> -   During development, you can log `fetch` calls for better visibility and debugging. See the [`logging` API reference](/docs/app/api-reference/config/next-config-js/logging).
 
 #### With an ORM or database[](#with-an-orm-or-database)
 
 Since Server Components are rendered on the server, credentials and query logic will not be included in the client bundle so you can safely make database queries using an ORM or database client.
 
 app/blog/page.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -91,7 +88,7 @@ When you fetch data in Server Components, the data is fetched and rendered on th
 
 To improve the initial load time and user experience, you can break the page into smaller _chunks_ and progressively send those chunks from the server to the client. This is called streaming. See the [Streaming guide](/docs/app/guides/streaming) for a deeper look at how streaming works, including the HTTP contract, infrastructure considerations, and performance trade-offs.
 
-![How Server Rendering with Streaming Works](/_next/image?url=https%3A%2F%2Fh8DxKfmAPhn8O0p3.public.blob.vercel-storage.com%2Fdocs%2Flight%2Fserver-rendering-with-streaming.png&w=3840&q=75)![How Server Rendering with Streaming Works](/_next/image?url=https%3A%2F%2Fh8DxKfmAPhn8O0p3.public.blob.vercel-storage.com%2Fdocs%2Fdark%2Fserver-rendering-with-streaming.png&w=3840&q=75)
+![How Server Rendering with Streaming Works](https://h8DxKfmAPhn8O0p3.public.blob.vercel-storage.com/docs/light/server-rendering-with-streaming.png)
 
 There are two ways you can use streaming in your application:
 
@@ -102,11 +99,9 @@ There are two ways you can use streaming in your application:
 
 You can create a `loading.js` file in the same folder as your page to stream the **entire page** while the data is being fetched. For example, to stream `app/blog/page.js`, add the file inside the `app/blog` folder.
 
-![Blog folder structure with loading.js file](/_next/image?url=https%3A%2F%2Fh8DxKfmAPhn8O0p3.public.blob.vercel-storage.com%2Fdocs%2Flight%2Floading-file.png&w=3840&q=75)![Blog folder structure with loading.js file](/_next/image?url=https%3A%2F%2Fh8DxKfmAPhn8O0p3.public.blob.vercel-storage.com%2Fdocs%2Fdark%2Floading-file.png&w=3840&q=75)
+![Blog folder structure with loading.js file](https://h8DxKfmAPhn8O0p3.public.blob.vercel-storage.com/docs/light/loading-file.png)
 
 app/blog/loading.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -119,11 +114,11 @@ export default function Loading() {
 
 On navigation, the user will immediately see the layout and a [loading state](#creating-meaningful-loading-states) while the page is being rendered. The new content will then be automatically swapped in once rendering is complete.
 
-![Loading UI](/_next/image?url=https%3A%2F%2Fh8DxKfmAPhn8O0p3.public.blob.vercel-storage.com%2Fdocs%2Flight%2Floading-ui.png&w=3840&q=75)![Loading UI](/_next/image?url=https%3A%2F%2Fh8DxKfmAPhn8O0p3.public.blob.vercel-storage.com%2Fdocs%2Fdark%2Floading-ui.png&w=3840&q=75)
+![Loading UI](https://h8DxKfmAPhn8O0p3.public.blob.vercel-storage.com/docs/light/loading-ui.png)
 
 Behind the scenes, `loading.js` will be [nested inside `layout.js`](/docs/app/getting-started/project-structure#component-hierarchy), and will automatically wrap the `page.js` file and any children below in a `<Suspense>` boundary.
 
-![loading.js overview](/_next/image?url=https%3A%2F%2Fh8DxKfmAPhn8O0p3.public.blob.vercel-storage.com%2Fdocs%2Flight%2Floading-overview.png&w=3840&q=75)![loading.js overview](/_next/image?url=https%3A%2F%2Fh8DxKfmAPhn8O0p3.public.blob.vercel-storage.com%2Fdocs%2Fdark%2Floading-overview.png&w=3840&q=75)
+![loading.js overview](https://h8DxKfmAPhn8O0p3.public.blob.vercel-storage.com/docs/light/loading-overview.png)
 
 Because of this, a layout that accesses uncached or runtime data (e.g. `cookies()`, `headers()`, or uncached fetches) does not fall back to a same route segment `loading.js`. Instead, it blocks navigation until the layout finishes rendering. [Cache Components](/docs/app/getting-started/caching) prevents this by guiding you with a build-time error.
 
@@ -136,8 +131,6 @@ This is why, while `loading.js` works well for streaming route segments, using `
 `<Suspense>` allows you to be more granular about what parts of the page to stream. For example, you can immediately show any page content that falls outside of the `<Suspense>` boundary, and stream in the list of blog posts inside the boundary.
 
 app/blog/page.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -184,8 +177,6 @@ You can use React's [`use` API](https://react.dev/reference/react/use) to [strea
 
 app/blog/page.tsx
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -207,8 +198,6 @@ export default function Page() {
 Then, in your Client Component, use the `use` API to read the promise:
 
 app/ui/posts.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -240,8 +229,6 @@ In the example above, the `<Posts>` component is wrapped in a [`<Suspense>` boun
 You can use a community library like [SWR](https://swr.vercel.app/) or [React Query](https://tanstack.com/query/latest) to fetch data in Client Components. These libraries have their own semantics for caching, streaming, and other features. For example, with SWR:
 
 app/blog/page.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -279,8 +266,6 @@ Sequential data fetching happens when one request depends on data from another.
 For example, `<Playlists>` can only fetch data after `<Artist>` completes because it needs the `artistID`:
 
 app/artist/\[username\]/page.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -334,8 +319,6 @@ However, within _any_ component, multiple `async`/`await` requests can still be 
 
 app/artist/\[username\]/page.tsx
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -353,8 +336,6 @@ export default async function Page({ params }) {
 Start multiple requests by calling `fetch`, then await them with [`Promise.all`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/all). Requests begin as soon as `fetch` is called.
 
 app/artist/\[username\]/page.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -403,8 +384,6 @@ Create a cached function that fetches data:
 
 app/lib/user.ts
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -419,8 +398,6 @@ export const getUser = cache(async () => {
 Create a context provider that stores the promise:
 
 app/user-provider.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -451,8 +428,6 @@ In a layout, pass the promise to the provider without awaiting:
 
 app/layout.tsx
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -480,8 +455,6 @@ Client Components use [`use()`](https://react.dev/reference/react/use) to resolv
 
 app/ui/profile.tsx
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -502,8 +475,6 @@ export function Profile() {
 
 app/page.tsx
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -522,8 +493,6 @@ export default function Page() {
 Server Components can also call `getUser()` directly:
 
 app/dashboard/page.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -576,20 +545,4 @@ Enable tainting Objects and Values.
 
 ](/docs/app/api-reference/config/next-config-js/taint)
 
-[Previous
-
-Server and Client Components
-
-](/docs/app/getting-started/server-and-client-components)
-
-[Next
-
-Mutating Data
-
-](/docs/app/getting-started/mutating-data)
-
 Was this helpful?
-
-supported.
-
-Send

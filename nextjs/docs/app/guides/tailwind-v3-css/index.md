@@ -5,17 +5,19 @@ canonical_url: "https://nextjs.org/docs/app/guides/tailwind-v3-css"
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:16:29.133Z"
-content_hash: "3daa6fd65b0927b60d51c4cd402b3d6d71921afcc0fda7047d4011254df4c2a8"
+last_crawled_at: "2026-04-27T18:15:44.825Z"
+content_hash: "06f32e8a1bdf8595bbe2641e073db16d825884b32f565daad00c79690a53f294"
 menu_path: ["How to install Tailwind CSS v3 in your Next.js application"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/guides/streaming/index.md", "title": "Streaming"}
-nav_next: {"path": "nextjs/docs/app/guides/testing/index.md", "title": "Testing"}
+version: "latest"
+tab_variants: ["pnpm","npm","yarn","bun"]
+content_language: "en"
 ---
+[App Router](/docs/app)[Guides](/docs/app/guides)Tailwind CSS v3
 
 # How to install Tailwind CSS v3 in your Next.js application
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 This guide will walk you through how to install [Tailwind CSS v3](https://v3.tailwindcss.com/) in your Next.js application.
 
@@ -25,7 +27,21 @@ This guide will walk you through how to install [Tailwind CSS v3](https://v3.tai
 
 Install Tailwind CSS and its peer dependencies, then run the `init` command to generate both `tailwind.config.js` and `postcss.config.js` files:
 
-pnpmnpmyarnbun
+#### pnpm
+
+pnpm
+
+#### npm
+
+npm
+
+#### yarn
+
+yarn
+
+#### bun
+
+bun
 
 Terminal
 
@@ -69,8 +85,6 @@ Import the CSS file in your root layout:
 
 app/layout.tsx
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -95,8 +109,6 @@ After installing Tailwind CSS and adding the global styles, you can use Tailwind
 
 app/page.tsx
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -109,20 +121,4 @@ export default function Page() {
 
 As of Next.js 13.1, Tailwind CSS and PostCSS are supported with [Turbopack](https://turbo.build/pack/docs/features/css#tailwind-css).
 
-[Previous
-
-Streaming
-
-](/docs/app/guides/streaming)
-
-[Next
-
-Testing
-
-](/docs/app/guides/testing)
-
 Was this helpful?
-
-supported.
-
-Send

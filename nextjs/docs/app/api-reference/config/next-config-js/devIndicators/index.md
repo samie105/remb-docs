@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/app/api-reference/config/next-config-js/
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:07:19.936Z"
-content_hash: "8195499ce6096b321b6e72b95b7ac8c38556de65250018ed04a3b7c01bd9158b"
+last_crawled_at: "2026-04-27T18:06:12.574Z"
+content_hash: "08c431f2b865f4b18fa1ad5fd5a50a0ffd8b37b12341c7acfb9b42989ea21e76"
 menu_path: ["devIndicators"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/api-reference/config/next-config-js/deploymentId/index.md", "title": "deploymentId"}
-nav_next: {"path": "nextjs/docs/app/api-reference/config/next-config-js/distDir/index.md", "title": "distDir"}
+version: "latest"
+content_language: "en"
 ---
+[Configuration](/docs/app/api-reference/config)[next.config.js](/docs/app/api-reference/config/next-config-js)devIndicators
 
 # devIndicators
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 `devIndicators` allows you to configure the on-screen indicator that gives context about the current route you're viewing during development.
 
@@ -53,43 +54,17 @@ Route (app)
 
 There are two reasons a route might opt out of prerendering:
 
-*   The presence of [Request-time APIs](/docs/app/glossary#request-time-apis) which rely on request information.
-*   An [uncached data request](/docs/app/getting-started/fetching-data), like a call to an ORM or database driver.
+-   The presence of [Request-time APIs](/docs/app/glossary#request-time-apis) which rely on request information.
+-   An [uncached data request](/docs/app/getting-started/fetching-data), like a call to an ORM or database driver.
 
 Check your route for any of these conditions, and if you are not able to statically render the route, then consider using [`loading.js`](/docs/app/api-reference/file-conventions/loading) or [`<Suspense />`](https://react.dev/reference/react/Suspense) to leverage [streaming](/docs/app/getting-started/linking-and-navigating#streaming).
 
 ## Version History[](#version-history)
 
-Version
-
-Changes
-
-`v16.0.0`
-
-`appIsrStatus`, `buildActivity`, and `buildActivityPosition` options have been removed.
-
-`v15.2.0`
-
-Improved on-screen indicator with new `position` option. `appIsrStatus`, `buildActivity`, and `buildActivityPosition` options have been deprecated.
-
-`v15.0.0`
-
-Static on-screen indicator added with `appIsrStatus` option.
-
-[Previous
-
-deploymentId
-
-](/docs/app/api-reference/config/next-config-js/deploymentId)
-
-[Next
-
-distDir
-
-](/docs/app/api-reference/config/next-config-js/distDir)
+| Version | Changes |
+| --- | --- |
+| `v16.0.0` | `appIsrStatus`, `buildActivity`, and `buildActivityPosition` options have been removed. |
+| `v15.2.0` | Improved on-screen indicator with new `position` option. `appIsrStatus`, `buildActivity`, and `buildActivityPosition` options have been deprecated. |
+| `v15.0.0` | Static on-screen indicator added with `appIsrStatus` option. |
 
 Was this helpful?
-
-supported.
-
-Send

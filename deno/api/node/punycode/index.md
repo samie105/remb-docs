@@ -5,10 +5,11 @@ canonical_url: "https://docs.deno.com/api/node/punycode/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:39:02.008Z"
-content_hash: "24cbc4d5e906238c83ea84d87cef4afb345bb04d4787193244e811904b9a0d51"
+last_crawled_at: "2026-04-27T17:10:14.068Z"
+content_hash: "d2ef56f7ce6445af2e3575d30c106d0f86e2225e4a751df9994d921bfcf285f8"
 menu_path: ["punycode - Node documentation"]
 section_path: []
+content_language: "en"
 ---
 ### Usage in Deno
 
@@ -31,8 +32,6 @@ import punycode from 'node:punycode';
 The `punycode` module provides a simple implementation of the Punycode standard.
 
 The `punycode` module is a third-party dependency used by Node.js and made available to developers as a convenience. Fixes or other modifications to the module must be directed to the [Punycode.js](https://github.com/bestiejs/punycode.js) project.
-
-### Functions [#](#Functions)
 
 f
 
@@ -58,8 +57,6 @@ f
 
 The `punycode.toUnicode()` method converts a string representing a domain name containing [Punycode](https://tools.ietf.org/html/rfc3492) encoded characters into Unicode. Only the [Punycode](https://tools.ietf.org/html/rfc3492) encoded parts of the domain name are be converted.
 
-### Variables [#](#Variables)
-
 I
 
 v
@@ -68,8 +65,8 @@ v
 
 No documentation available
 
-*   [decode](.././punycode/~/ucs2#method_decode_0)
-*   [encode](.././punycode/~/ucs2#method_encode_0)
+-   [decode](.././punycode/~/ucs2#method_decode_0)
+-   [encode](.././punycode/~/ucs2#method_encode_0)
 
 v
 

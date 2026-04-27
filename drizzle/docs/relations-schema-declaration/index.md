@@ -5,14 +5,12 @@ canonical_url: "https://orm.drizzle.team/docs/relations-schema-declaration"
 docset: "drizzle"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:19:10.476Z"
-content_hash: "96e4fa7a685902425a3432338c3f544ed4819c7b52043283803e38b5c42d5d52"
+last_crawled_at: "2026-04-27T19:21:05.316Z"
+content_hash: "f2ae6a0c31c38bec5721356944d5a23fc7a53fc9b249a1217618e02849e9b16b"
 menu_path: ["Drizzle Relations Fundamentals"]
 section_path: []
-nav_prev: {"path": "drizzle/docs/sql-schema-declaration/index.md", "title": "Drizzle schema"}
-nav_next: {"path": "drizzle/docs/connect-overview/index.md", "title": "Database connection with Drizzle"}
+content_language: "en"
 ---
-
 ## Drizzle Relations Fundamentals
 
 In the world of databases, especially relational databases, the concept of relations is absolutely fundamental. Think of “relations” as the connections and links between different pieces of data. Just like in real life, where people have relationships with each other, or objects are related to categories, databases use relations to model how different types of information are connected and work together.
@@ -23,13 +21,13 @@ Normalization is the process of organizing data in your database to reduce redun
 
 Why is Normalization Important?
 
-*   **Reduces Data Redundancy**: Imagine storing a customer’s address every time they place an order. If the address changes, you’d have to update it in multiple places! Normalization helps you store information in one place and refer to it from other places, minimizing repetition.
-*   **Improves Data Integrity**: Less redundancy means less chance of inconsistencies. If you update an address in one place, it’s updated everywhere it’s needed.
-*   **Prevents Anomalies**: Normalization helps prevent issues like:
+-   **Reduces Data Redundancy**: Imagine storing a customer’s address every time they place an order. If the address changes, you’d have to update it in multiple places! Normalization helps you store information in one place and refer to it from other places, minimizing repetition.
+-   **Improves Data Integrity**: Less redundancy means less chance of inconsistencies. If you update an address in one place, it’s updated everywhere it’s needed.
+-   **Prevents Anomalies**: Normalization helps prevent issues like:
     1.  **Insertion Anomalies**: Difficulty adding new data because you’re missing related information.
     2.  **Update Anomalies**: Having to update the same information in multiple rows.
     3.  **Deletion Anomalies**: Accidentally losing valuable information when you delete something seemingly unrelated.
-*   **Easier to Understand and Maintain**: A normalized database is generally more logically structured and easier to understand, query, and modify.
+-   **Easier to Understand and Maintain**: A normalized database is generally more logically structured and easier to understand, query, and modify.
 
 Normalization is often described in terms of “normal forms” (1NF, 2NF, 3NF, and beyond). While the details can get quite technical, the core ideas are straightforward:
 
@@ -39,7 +37,7 @@ Normalization is often described in terms of “normal forms” (1NF, 2NF, 3NF, 
 
 **Example**: Instead of having a single `address` column that stores `123 Main St, City, USA`, you’d break it down into separate columns: `street_address`, `city`, `state`, `zip_code`.
 
-```
+```sql
 -- Unnormalized (violates 1NF)
 CREATE TABLE Customers_Unnormalized (
     customer_id INT PRIMARY KEY,
@@ -66,7 +64,7 @@ Imagine we have a table called `order_items`. This table tracks items within ord
 
 Expand for visual example
 
-```
+```sql
 CREATE TABLE OrderItems_Unnormalized (
     order_id INT,
     product_id VARCHAR(10),
@@ -84,7 +82,7 @@ INSERT INTO OrderItems_Unnormalized (order_id, product_id, product_name, product
 (103, 'C789', 'Keyboard', 75.00, 1, '2023-10-29');
 ```
 
-```
+```plaintext
 +------------------------------------------------------------------------------------+
 | OrderItems_Unnormalized                                                            |
 +------------------------------------------------------------------------------------+
@@ -103,7 +101,7 @@ To achieve 2NF, we need to remove the partially dependent attributes (`product_n
 
 Normalization to 2NF: Visual explanation
 
-```
+```plaintext
 +-------------------+     1:M     +---------------------------+
 | Products          | <---------- | OrderItems_2NF            |
 +-------------------+             +---------------------------+
@@ -114,7 +112,7 @@ Normalization to 2NF: Visual explanation
                                   +---------------------------+
 ```
 
-```
+```sql
 CREATE TABLE Products (
     product_id VARCHAR(10) PRIMARY KEY,
     product_name VARCHAR(100),
@@ -150,7 +148,7 @@ INSERT INTO OrderItems_2NF (order_id, product_id, quantity, order_date) VALUES
 
 **Problem**: Let’s say we have a `suppliers` table. We store supplier information, including their `zip_code`, `city`, and `state`. `supplier_id` is the primary key.
 
-```
+```sql
 CREATE TABLE suppliers (
     supplier_id VARCHAR(10) PRIMARY KEY,
     supplier_name VARCHAR(255),
@@ -165,7 +163,7 @@ INSERT INTO suppliers (supplier_id, supplier_name, zip_code, city, state) VALUES
 ('S3', 'Gamma Ltd', '12345', 'Anytown', 'NY');
 ```
 
-```
+```plaintext
 +---------------------------------------------------------------+
 | suppliers                                                     |
 +---------------------------------------------------------------+
@@ -181,7 +179,7 @@ INSERT INTO suppliers (supplier_id, supplier_name, zip_code, city, state) VALUES
 
 Normalization to 3NF: Visual explanation
 
-```
+```plaintext
 +-------------------+     1:M     +--------------------+
 | zip_codes         | <---------- | suppliers          |
 +-------------------+             +--------------------+
@@ -191,7 +189,7 @@ Normalization to 3NF: Visual explanation
 +-------------------+             +--------------------+
 ```
 
-```
+```sql
 CREATE TABLE zip_codes (
     zip_code VARCHAR(10) PRIMARY KEY,
     city VARCHAR(100),
@@ -227,13 +225,11 @@ There are additional normal forms, such as `4NF`, `5NF`, `6NF`, `EKNF`, `ETNF`, 
 
 In a one-to-one relationship, each record in `table A` is related to at most one record in `table B`, and each record in `table B` is related to at most one record in `table A`. It’s a very direct, exclusive pairing.
 
-Use Cases & Examples
-
 1.  **User Profiles and User Account Details**: Think of a website. Each user account (in a Users table) might have exactly one user profile (in a UserProfiles table) containing more detailed information.
 2.  **Employees and Parking Spaces**: An Employees table and a ParkingSpaces table. Each employee might be assigned at most one parking space, and each parking space is assigned to at most one employee.
 3.  **Splitting Tables for Organization**: Sometimes, you might split a very wide table into two for better organization or security reasons, maintaining a 1-1 relationship between them.
 
-```
+```plaintext
 Table A (One Side)      Table B (One Side)
 +---------+             +---------+
 | PK (A)  | <---------> | FK (A)  | (Foreign Key referencing Table A)
@@ -245,13 +241,11 @@ Table A (One Side)      Table B (One Side)
 
 In a one-to-many relationship, one record in `table A` can be related to many records in `table B`, but each record in `table B` is related to at most one record in `table A`. Think of it as a “parent-child” relationship.
 
-Use Cases & Examples
-
 1.  **Customers and Orders**: One customer can place many orders, but each order belongs to only one customer.
 2.  **Authors and Books**: One author can write many books, but (let’s simplify for now and say) each book is written by one primary author.
 3.  **Departments and Employees**: One department can have many employees, but each employee belongs to only one department.
 
-```
+```plaintext
 Table A (One Side)      Table B (Many Side)
 +---------+             +---------+
 | PK (A)  | ----------> | FK (A)  | (Foreign Key referencing Table A)
@@ -264,13 +258,11 @@ Table A (One Side)      Table B (Many Side)
 
 In a many-to-many relationship, one record in `table A` can be related to many records in `table B`, and one record in `table B` can be related to many records in `table A`. It’s a more complex, bidirectional relationship.
 
-Use Cases & Examples
-
 1.  **Students and Courses**: One student can enroll in many courses, and one course can have many students enrolled.
 2.  **Products and Categories**: One product can belong to multiple categories (e.g., a “T-shirt” can be in “Clothing” and “Summer Wear” categories), and one category can contain many products.
 3.  **Authors and Books**: A book can be written by multiple authors, and an author can write multiple books.
 
-```
+```plaintext
 Table A (Many Side)    Junction Table      Table B (Many Side)
 +---------+          +-------------+     +---------+
 | PK (A)  | -------->| FK (A)      | <----| FK (B)  |
@@ -281,7 +273,7 @@ Table A (Many Side)    Junction Table      Table B (Many Side)
 
 Many-to-many relationships are not directly implemented with foreign keys between the two main tables. Instead, you need a `junction` table (also called an associative table or bridging table). This table acts as an intermediary to link records from both tables.
 
-```
+```sql
 -- Table for Students (Many side)
 CREATE TABLE students (
     iid INT PRIMARY KEY,
@@ -324,13 +316,13 @@ It’s not just a suggestion; it’s a constraint the database actively enforces
 
 2\. Maintaining Referential Integrity
 
-*   This is the core of “data integrity” in the context of relationships. Referential integrity means that relationships between tables remain consistent and valid over time.
-*   Foreign keys prevent orphaned records. What’s an orphaned record? In our Customer-Order example, an order that exists in the Orders table but doesn’t have a corresponding customer in the Customers table would be an orphan. Foreign keys prevent this from happening (or control what happens if you try to delete a customer with orders - via CASCADE, SET NULL, etc.).
-*   Why is preventing orphans important? Orphaned records break the logical structure of your data. If you have an order without a customer, you lose crucial context. Queries become unreliable, reports become inaccurate, and your application’s logic can break down.
+-   This is the core of “data integrity” in the context of relationships. Referential integrity means that relationships between tables remain consistent and valid over time.
+-   Foreign keys prevent orphaned records. What’s an orphaned record? In our Customer-Order example, an order that exists in the Orders table but doesn’t have a corresponding customer in the Customers table would be an orphan. Foreign keys prevent this from happening (or control what happens if you try to delete a customer with orders - via CASCADE, SET NULL, etc.).
+-   Why is preventing orphans important? Orphaned records break the logical structure of your data. If you have an order without a customer, you lose crucial context. Queries become unreliable, reports become inaccurate, and your application’s logic can break down.
 
 **Example**:
 
-```
+```plaintext
 Without a foreign key, you could accidentally delete a customer from the Customers 
 table while their orders still exist in the Orders table. Suddenly, you have orders that point to 
 a customer that no longer exists! A foreign key constraint prevents this data inconsistency.
@@ -338,9 +330,9 @@ a customer that no longer exists! A foreign key constraint prevents this data in
 
 3\. Facilitating Database Design and Understanding
 
-*   Foreign keys are not just about technical enforcement; they are also a crucial part of database design documentation.
-*   When you see a foreign key in a database schema, it immediately tells you: `Table 'X' is related to Table 'Y' in this way.` It’s a clear visual and structural indicator of relationships.
-*   This makes databases easier to understand, maintain, and evolve over time. New developers can quickly grasp how different parts of the database are connected.
+-   Foreign keys are not just about technical enforcement; they are also a crucial part of database design documentation.
+-   When you see a foreign key in a database schema, it immediately tells you: `Table 'X' is related to Table 'Y' in this way.` It’s a clear visual and structural indicator of relationships.
+-   This makes databases easier to understand, maintain, and evolve over time. New developers can quickly grasp how different parts of the database are connected.
 
 In essence, foreign key constraints are not just about checking values; they are about:
 
@@ -355,18 +347,18 @@ While highly beneficial, there are some scenarios where you might reconsider or 
 
 1\. Performance Overhead in Very High-Write Environments
 
-*   **Scenario**: Extremely high-volume transactional systems (e.g., real-time logging, very high-frequency trading platforms, massive IoT data ingestion).
-*   **Explanation**: Every time you insert or update data in a table with a foreign key, the database system needs to perform checks to ensure referential integrity. In extremely high-write scenarios, these checks can introduce a small but potentially noticeable performance overhead.
+-   **Scenario**: Extremely high-volume transactional systems (e.g., real-time logging, very high-frequency trading platforms, massive IoT data ingestion).
+-   **Explanation**: Every time you insert or update data in a table with a foreign key, the database system needs to perform checks to ensure referential integrity. In extremely high-write scenarios, these checks can introduce a small but potentially noticeable performance overhead.
 
 2\. Distributed Database Systems and Cross-Node Foreign Keys:
 
-*   **Scenario**: Systems where data is distributed across multiple database nodes or clusters (common in sharded databases, cloud environments, and microservices).
-*   **Explanation**: Cross-node foreign keys can introduce significant complexity and performance overhead. Validating referential integrity requires communication between nodes, leading to increased latency. Distributed transactions needed to maintain consistency are also more complex and can be less performant than local transactions. In such architectures, application-level data integrity checks or eventual consistency models might be considered alternatives.
+-   **Scenario**: Systems where data is distributed across multiple database nodes or clusters (common in sharded databases, cloud environments, and microservices).
+-   **Explanation**: Cross-node foreign keys can introduce significant complexity and performance overhead. Validating referential integrity requires communication between nodes, leading to increased latency. Distributed transactions needed to maintain consistency are also more complex and can be less performant than local transactions. In such architectures, application-level data integrity checks or eventual consistency models might be considered alternatives.
 
 3\. Legacy Systems and Data Integration with Non-Relational Data:
 
-*   **Scenario**: Integrating a relational database with older legacy systems or non-relational data stores (e.g., NoSQL, flat files, external APIs).
-*   **Explanation**: Legacy systems or non-relational data might not consistently adhere to the referential integrity rules enforced by foreign keys. Imposing foreign keys in such scenarios can lead to data import issues, data inconsistencies, and might necessitate complex data transformation or application-level integrity management instead. You might need to carefully evaluate the data quality and consistency of the external sources and potentially rely on application logic or ETL processes to ensure data integrity instead of strictly enforcing foreign keys at the database level.
+-   **Scenario**: Integrating a relational database with older legacy systems or non-relational data stores (e.g., NoSQL, flat files, external APIs).
+-   **Explanation**: Legacy systems or non-relational data might not consistently adhere to the referential integrity rules enforced by foreign keys. Imposing foreign keys in such scenarios can lead to data import issues, data inconsistencies, and might necessitate complex data transformation or application-level integrity management instead. You might need to carefully evaluate the data quality and consistency of the external sources and potentially rely on application logic or ETL processes to ensure data integrity instead of strictly enforcing foreign keys at the database level.
 
 You can also check out some great explanations from the PlanetScale team in their [article](https://planetscale.com/docs/learn/operating-without-foreign-key-constraints#why-does-planetscale-not-recommend-constraints)
 
@@ -378,9 +370,9 @@ Imagine you have an `activities` log. An activity could be a `comment` a `like` 
 
 Common Scenarios & Examples
 
-*   **Comments/Reviews**: A “Comment” might be related to different types of content: articles, products, videos, etc. Instead of having separate article\_id, product\_id, video\_id columns in a Comments table, you can use a polymorphic relationship.
+-   **Comments/Reviews**: A “Comment” might be related to different types of content: articles, products, videos, etc. Instead of having separate article\_id, product\_id, video\_id columns in a Comments table, you can use a polymorphic relationship.
 
-```
+```plaintext
 +---------------------+
 | **Comments**        |
 +---------------------+
@@ -401,9 +393,9 @@ Common Scenarios & Examples
 +---------------------+    +---------------------+    +---------------------+
 ```
 
-*   **Notifications:** A notification could be related to a user, an order, a system event, etc.
+-   **Notifications:** A notification could be related to a user, an order, a system event, etc.
 
-```
+```plaintext
 +----------------------+
 | **Notifications**    |
 +----------------------+

@@ -5,24 +5,25 @@ canonical_url: "https://www.prisma.io/docs/orm/prisma-schema/data-model/multi-sc
 docset: "prisma"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:52:11.594Z"
-content_hash: "8cadc2488b1122eaa2c5b3545b80bfa73e646bda6c638819de7cc516267dcc3b"
+last_crawled_at: "2026-04-27T19:42:20.294Z"
+content_hash: "4b2def29ecf000bc8a25b723c1b4dd0d50529257f19241533ee20d0396830fc6"
 menu_path: ["Multi-schema"]
 section_path: []
-nav_prev: {"path": "prisma/docs/orm/prisma-schema/data-model/models/index.md", "title": "Models"}
-nav_next: {"path": "prisma/docs/orm/prisma-schema/data-model/relations/index.md", "title": "Relations"}
+tab_variants: ["npm","pnpm","yarn","bun","npm","pnpm","yarn","bun"]
+content_language: "en"
 ---
-
 PostgreSQL, CockroachDB, and SQL Server allow you to organize database tables into named groups. These groups are known as _schemas_ and act as a _namespace_ for logically grouping tables (e.g. to avoid name collisions or to have clearer domain separation) and let you define foreign key constraints across them. To avoid ambiguity, this page will refer to these namespaces as _database schemas_.
 
 This page explains how to:
 
-*   include multiple database schemas in your Prisma schema
-*   apply your schema changes to your database with Prisma Migrate
-*   introspect an existing database with multiple database schemas
-*   query across multiple database schemas with Prisma Client
+-   include multiple database schemas in your Prisma schema
+-   apply your schema changes to your database with Prisma Migrate
+-   introspect an existing database with multiple database schemas
+-   query across multiple database schemas with Prisma Client
 
 To use multiple database schemas in your Prisma schema file, add the names of your database schemas to an array in the `schemas` field, in the `datasource` block. The following example adds a `"base"` and a `"shop"` schema:
+
+schema.prisma
 
 ```
 generator client {
@@ -39,6 +40,8 @@ datasource db {
 You do not need to change your connection string. The `schema` value of your connection string is the default database schema that Prisma Client connects to and uses for raw queries. All other Prisma Client queries use the schema of the model or enum that you are querying.
 
 To designate that a model or enum belongs to a specific database schema, add the `@@schema` attribute with the name of the database schema as a parameter. In the following example, the `User` model is part of the `"base"` schema, and the `Order` model and `Size` enum are part of the `"shop"` schema:
+
+schema.prisma
 
 ```
 model User {
@@ -71,6 +74,8 @@ If you have tables with the same name in different database schemas, you will ne
 
 For example, consider a situation where the `Config` table in the `base` database schema has the same name as the `Config` table in the `users` database schema. To avoid name conflicts, give the models in your Prisma schema unique names (`BaseConfig` and `UserConfig`) and use the `@@map` attribute to map each model to the corresponding table name:
 
+schema.prisma
+
 ```
 model BaseConfig {
   id Int @id
@@ -90,6 +95,8 @@ model UserConfig {
 You can use Prisma Migrate (or `prisma db push`) to apply changes to a Prisma schema with multiple database schemas.
 
 As an example, add a `Profile` model to the `base` schema above:
+
+schema.prisma
 
 ```
 model User {
@@ -150,4 +157,4 @@ const orders = await prisma.order.findMany({
 
 ### [Externally managed tables](#externally-managed-tables)
 
-Sometimes, you might not want Prisma ORM to manage specific tables, such as ones handled by another team or service (e.g., Auth0 or Clerk tables). In such cases, you can mark these as **externally managed tables** using the `tables.external` configuration option in your [Prisma Config file](prisma/docs/orm/reference/prisma-config-reference/index.md#tablesexternal-and-enumsexternal). Learn more about [externally managed tables](prisma/docs/orm/prisma-schema/data-model/externally-managed-tables/index.md).
+Sometimes, you might not want Prisma ORM to manage specific tables, such as ones handled by another team or service (e.g., Auth0 or Clerk tables). In such cases, you can mark these as **externally managed tables** using the `tables.external` configuration option in your [Prisma Config file](https://www.prisma.io/docs/orm/reference/prisma-config-reference#tablesexternal-and-enumsexternal). Learn more about [externally managed tables](https://www.prisma.io/docs/orm/prisma-schema/data-model/externally-managed-tables).

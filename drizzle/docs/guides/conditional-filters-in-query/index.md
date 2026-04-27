@@ -5,25 +5,17 @@ canonical_url: "https://orm.drizzle.team/docs/guides/conditional-filters-in-quer
 docset: "drizzle"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:03:35.527Z"
-content_hash: "af8b440342f7a11e04d83cdaff6b88540f1b73e0dfa895d9e520d2111e5a5857"
+last_crawled_at: "2026-04-27T18:58:05.308Z"
+content_hash: "1d929d931b04416a9b8e9b49808ddbf0581d3100b2ef8bb36eaf90ca94fceebc"
 menu_path: ["Drizzle ORM - Conditional filters in query"]
 section_path: []
-nav_prev: {"path": "drizzle/docs/get-started/xata-new/index.md", "title": "Get Started with Drizzle and Xata"}
-nav_next: {"path": "drizzle/docs/guides/count-rows/index.md", "title": "Drizzle ORM - Count rows"}
+content_language: "en"
 ---
-
 Drizzle | Conditional filters in query
-
-PostgreSQL
-
-MySQL
-
-SQLite
 
 To pass a conditional filter in query you can use `.where()` method and logical operator like below:
 
-```
+```ts
 import { ilike } from 'drizzle-orm';
 
 const db = drizzle(...)
@@ -39,14 +31,14 @@ await searchPosts();
 await searchPosts('AI');
 ```
 
-```
+```sql
 select * from posts;
 select * from posts where title ilike 'AI';
 ```
 
 To combine conditional filters you can use `and()` or `or()` operators like below:
 
-```
+```ts
 import { and, gt, ilike, inArray } from 'drizzle-orm';
 
 const searchPosts = async (term?: string, categories: string[] = [], views = 0) => {
@@ -66,7 +58,7 @@ await searchPosts();
 await searchPosts('AI', ['Tech', 'Art', 'Science'], 200);
 ```
 
-```
+```sql
 select * from posts;
 select * from posts
   where (
@@ -78,7 +70,7 @@ select * from posts
 
 If you need to combine conditional filters in different part of the project you can create a variable, push filters and then use it in `.where()` method with `and()` or `or()` operators like below:
 
-```
+```ts
 import { SQL, ... } from 'drizzle-orm';
 
 const searchPosts = async (filters: SQL[]) => {
@@ -98,7 +90,7 @@ await searchPosts(filters);
 
 Drizzle has useful and flexible API, which lets you create your custom solutions. This is how you can create a custom filter operator:
 
-```
+```ts
 import { AnyColumn, ... } from 'drizzle-orm';
 
 // length less than
@@ -122,14 +114,14 @@ await searchPosts(8);
 await searchPosts(8, 200);
 ```
 
-```
+```sql
 select * from posts where length(title) < 8;
 select * from posts where (length(title) < 8 and views > 200);
 ```
 
 Drizzle filter operators are just SQL expressions under the hood. This is example of how `lt` operator is implemented in Drizzle:
 
-```
+```js
 const lt = (left, right) => {
   return sql`${left} < ${bindIfParam(right, left)}`; // bindIfParam is internal magic function
 };

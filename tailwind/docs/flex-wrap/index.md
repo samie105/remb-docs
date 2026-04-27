@@ -5,37 +5,41 @@ canonical_url: "https://tailwindcss.com/docs/flex-wrap"
 docset: "tailwind"
 kind: "framework"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:45:50.187Z"
-content_hash: "778d1f736ff074a024a3a286ff793676ec48ac630c695b3dedc093e4d5131f02"
+last_crawled_at: "2026-04-27T19:56:38.784Z"
+content_hash: "5e15ee99a0c12bb041ea476ca627e658e4c6e5c4fabe3215bd8e2dbe794e4deb"
 menu_path: ["flex-wrap"]
 section_path: []
-nav_prev: {"path": "tailwind/docs/flex-direction/index.md", "title": "flex-direction"}
-nav_next: {"path": "tailwind/docs/flex/index.md", "title": "flex"}
+content_language: "en"
 ---
+[](/)
+
+[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
+
+1.  Flexbox & Grid
+2.  flex-wrap
+
+Flexbox & Grid
 
 # flex-wrap
 
 Utilities for controlling how flex items wrap.
 
-Class
-
-Styles
-
-`flex-nowrap`
-
+| Class | Styles |
+| --- | --- |
+| `flex-nowrap` | 
 `flex-wrap: nowrap;`
 
-`flex-wrap`
+ |
+| `flex-wrap` | 
 
 `flex-wrap: wrap;`
 
-`flex-wrap-reverse`
+ |
+| `flex-wrap-reverse` | 
 
 `flex-wrap: wrap-reverse;`
 
-## [Examples](#examples)
-
-### [Don't wrap](#dont-wrap)
+ |
 
 Use `flex-nowrap` to prevent flex items from wrapping, causing inflexible items to overflow the container if necessary:
 
@@ -49,8 +53,6 @@ Use `flex-nowrap` to prevent flex items from wrapping, causing inflexible items 
 <div class="flex flex-nowrap">  <div>01</div>  <div>02</div>  <div>03</div></div>
 ```
 
-### [Wrap normally](#wrap-normally)
-
 Use `flex-wrap` to allow flex items to wrap:
 
 01
@@ -62,8 +64,6 @@ Use `flex-wrap` to allow flex items to wrap:
 ```
 <div class="flex flex-wrap">  <div>01</div>  <div>02</div>  <div>03</div></div>
 ```
-
-### [Wrap reversed](#wrap-reversed)
 
 Use `flex-wrap-reverse` to wrap flex items in the reverse direction:
 
@@ -77,8 +77,6 @@ Use `flex-wrap-reverse` to wrap flex items in the reverse direction:
 <div class="flex flex-wrap-reverse">  <div>01</div>  <div>02</div>  <div>03</div></div>
 ```
 
-### [Responsive design](#responsive-design)
-
 Prefix a `flex-wrap` utility with a breakpoint variant like `md:` to only apply the utility at medium screen sizes and above:
 
 ```
@@ -89,12 +87,12 @@ Learn more about using variants in the [variants documentation](/docs/hover-focu
 
 ### On this page
 
-*   [Quick reference](#quick-reference)
-*   [Examples](#examples)
-    *   [Don't wrap](#dont-wrap)
-    *   [Wrap normally](#wrap-normally)
-    *   [Wrap reversed](#wrap-reversed)
-    *   [Responsive design](#responsive-design)
+-   [Quick reference](#quick-reference)
+-   [Examples](#examples)
+    -   [Don't wrap](#dont-wrap)
+    -   [Wrap normally](#wrap-normally)
+    -   [Wrap reversed](#wrap-reversed)
+    -   [Responsive design](#responsive-design)
 
 [
 

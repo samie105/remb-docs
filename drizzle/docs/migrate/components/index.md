@@ -5,23 +5,13 @@ canonical_url: "https://orm.drizzle.team/docs/migrate/components"
 docset: "drizzle"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:16:51.069Z"
-content_hash: "3baa598ba8d6ea1be5db4db2a29519e470f3fe88651989a03008c2bf1532fc94"
+last_crawled_at: "2026-04-27T19:17:39.727Z"
+content_hash: "5ae601ead351f2e59941ff5caf160c4024027c2a8474b747dd45101c6e784d81"
 menu_path: ["Drizzle ORM - undefined"]
 section_path: []
-nav_prev: {"path": "drizzle/docs/latest-releases/drizzle-orm-v1beta2/index.md", "title": "New Features"}
-nav_next: {"path": "drizzle/docs/migrate/migrate-from-prisma/index.md", "title": "Migrate from Prisma to Drizzle"}
+content_language: "en"
 ---
-
 ## Npm[](#npm)
-
-npm
-
-yarn
-
-pnpm
-
-bun
 
 ```
 npm i drizzle-orm
@@ -38,14 +28,6 @@ pnpm add drizzle-orm
 ```
 bun add drizzle-orm
 ```
-
-npm
-
-yarn
-
-pnpm
-
-bun
 
 ```
 npm i drizzle-orm -D drizzle-kit
@@ -67,27 +49,13 @@ bun add drizzle-orm -D drizzle-kit
 
 ## Callout[](#callout)
 
-Callout example
-
-Callout example
-
-Callout example
-
 IMPORTANT
-
-Callout example
 
 WARNING
 
-Callout example
-
 ## CodeTabs with CodeTab[](#codetabs-with-codetab)
 
-index.ts
-
-schema.ts
-
-```
+```typescript
 import * as schema from './schema';
 import { drizzle } from 'drizzle-orm/...';
 
@@ -100,7 +68,7 @@ const result = await db.query.users.findMany({
 });
 ```
 
-```
+```ts
 [{
 	id: 10,
 	name: "Dan",
@@ -119,7 +87,7 @@ const result = await db.query.users.findMany({
 }]
 ```
 
-```
+```typescript
 import { integer, serial, text, pgTable } from 'drizzle-orm/pg-core';
 import { relations } from 'drizzle-orm';
 
@@ -145,17 +113,11 @@ export const postsRelations = relations(posts, ({ one }) => ({
 
 ## IsSupportedChipGroup[](#issupportedchipgroup)
 
-PostgreSQL
-
-SQLite
-
-MySQL
-
 ## Section[](#section)
 
 For codeblocks connection
 
-```
+```typescript
 import { sql } from "drizzle-orm";
 import { integer, sqliteTable } from "drizzle-orm/sqlite-core";
 
@@ -165,7 +127,7 @@ int2: integer('int2').default(sql`(abs(42))`)
 });
 ```
 
-```
+```sql
 CREATE TABLE `table` (
   `int1` integer DEFAULT 42,
   `int2` integer DEFAULT (abs(42))
@@ -174,13 +136,7 @@ CREATE TABLE `table` (
 
 ## Tabs with Tab and Section[](#tabs-with-tab-and-section)
 
-PostgreSQL
-
-MySQL
-
-SQLite
-
-```
+```typescript
 import { sql } from "drizzle-orm";
 import { integer, uuid, pgTable } from "drizzle-orm/pg-core";
 
@@ -192,7 +148,7 @@ const table = pgTable('table', {
 });
 ```
 
-```
+```sql
 CREATE TABLE IF NOT EXISTS "table" (
   "integer1" integer DEFAULT 42,
   "integer2" integer DEFAULT '42'::integer,
@@ -201,7 +157,7 @@ CREATE TABLE IF NOT EXISTS "table" (
 );
 ```
 
-```
+```typescript
 import { sql } from "drizzle-orm";
 import { int, time, mysqlTable } from "drizzle-orm/mysql-core";
 
@@ -211,14 +167,14 @@ const table = mysqlTable("table", {
 });
 ```
 
-```
+```sql
 CREATE TABLE `table` (
   `int` int DEFAULT 42,
   `time` time DEFAULT cast("14:06:10" AS TIME)
 );
 ```
 
-```
+```typescript
 import { sql } from "drizzle-orm";
 import { integer, sqliteTable } from "drizzle-orm/sqlite-core";
 
@@ -228,7 +184,7 @@ const table = sqliteTable('table', {
 });
 ```
 
-```
+```sql
 CREATE TABLE `table` (
   `int1` integer DEFAULT 42,
   `int2` integer DEFAULT (abs(42))
@@ -245,7 +201,7 @@ With h4 headers
 
 It’s necessary to bundle SQL migration files as string directly to your bundle.
 
-```
+```shell
 npm install babel-plugin-inline-import
 ```
 
@@ -253,7 +209,7 @@ npm install babel-plugin-inline-import
 
 You will need to update `babel.config.js`, `metro.config.js` and `drizzle.config.ts` files
 
-```
+```js
 module.exports = function (api) {
   api.cache(true);
 
@@ -268,7 +224,7 @@ module.exports = function (api) {
 
 ## Collapsable code block[](#collapsable-code-block)
 
-```
+```prisma
 generator client {
   provider = "prisma-client-js"
 }

@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/pages/api-reference/config/next-config-j
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:20:21.676Z"
-content_hash: "b1af599123adcca9102a8b5d8fda5e32c8a8eda319a7b5dff4d1e7515c765eb5"
+last_crawled_at: "2026-04-27T18:19:47.873Z"
+content_hash: "ec728391d9b2b7a923873fae80428148584c139654ad6518de758e620f96963e"
 menu_path: ["bundlePagesRouterDependencies"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/pages/api-reference/config/next-config-js/basePath/index.md", "title": "basePath"}
-nav_next: {"path": "nextjs/docs/pages/api-reference/config/next-config-js/compress/index.md", "title": "compress"}
+version: "latest"
+content_language: "en"
 ---
+[Configuration](/docs/pages/api-reference/config)[next.config.js Options](/docs/pages/api-reference/config/next-config-js)bundlePagesRouterDependencies
 
 # bundlePagesRouterDependencies
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 Enable automatic server-side dependency bundling for Pages Router applications. Matches the automatic dependency bundling in App Router.
 
@@ -34,16 +35,8 @@ Explicitly opt-out certain packages from being bundled using the [`serverExterna
 
 ## Version History[](#version-history)
 
-Version
-
-Changes
-
-`v15.0.0`
-
-Moved from experimental to stable. Renamed from `bundlePagesExternals` to `bundlePagesRouterDependencies`
+| Version | Changes |
+| --- | --- |
+| `v15.0.0` | Moved from experimental to stable. Renamed from `bundlePagesExternals` to `bundlePagesRouterDependencies` |
 
 Was this helpful?
-
-supported.
-
-Send

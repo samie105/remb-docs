@@ -5,14 +5,12 @@ canonical_url: "https://www.postgresql.org/docs/current/catalog-pg-shdepend.html
 docset: "postgres"
 kind: "database"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:34:13.335Z"
-content_hash: "1d303e28f4110ee8091359fbe6cdca4a1ed9a417dc05d60a2b8e0351f78db899"
+last_crawled_at: "2026-04-27T20:43:06.251Z"
+content_hash: "cc228ccca2b156b780534fb6983de8500ce786e761310d59c64472ddf5c39dc9"
 menu_path: ["PostgreSQL: Documentation: 18: 52.48. pg_shdepend"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/catalog-pg-publication.html/index.md", "title": "PostgreSQL: Documentation: 18: 52.40.\u00a0pg_publication"}
-nav_next: {"path": "postgres/docs/current/catalog-pg-shdescription.html/index.md", "title": "PostgreSQL: Documentation: 18: 52.49.\u00a0pg_shdescription"}
+content_language: "en"
 ---
-
 Development Versions: [devel](https://www.postgresql.org/docs/devel/catalog-pg-shdepend.html "PostgreSQL devel - 52.48. pg_shdepend")
 
 The catalog `pg_shdepend` records the dependency relationships between database objects and shared objects, such as roles. This information allows PostgreSQL to ensure that those objects are unreferenced before attempting to delete them.
@@ -23,37 +21,62 @@ Unlike most system catalogs, `pg_shdepend` is shared across all databases of a c
 
 **Table 52.48. `pg_shdepend` Columns**
 
+| 
 Column Type
 
 Description
+
+ |
+| --- |
+| 
 
 `dbid` `oid` (references [`pg_database`](https://www.postgresql.org/docs/current/catalog-pg-database.html "52.15. pg_database").`oid`)
 
 The OID of the database the dependent object is in, or zero for a shared object
 
+ |
+| 
+
 `classid` `oid` (references [`pg_class`](https://www.postgresql.org/docs/current/catalog-pg-class.html "52.11. pg_class").`oid`)
 
 The OID of the system catalog the dependent object is in
+
+ |
+| 
 
 `objid` `oid` (references any OID column)
 
 The OID of the specific dependent object
 
+ |
+| 
+
 `objsubid` `int4`
 
 For a table column, this is the column number (the `objid` and `classid` refer to the table itself). For all other object types, this column is zero.
+
+ |
+| 
 
 `refclassid` `oid` (references [`pg_class`](https://www.postgresql.org/docs/current/catalog-pg-class.html "52.11. pg_class").`oid`)
 
 The OID of the system catalog the referenced object is in (must be a shared catalog)
 
+ |
+| 
+
 `refobjid` `oid` (references any OID column)
 
 The OID of the specific referenced object
 
+ |
+| 
+
 `deptype` `char`
 
 A code defining the specific semantics of this dependency relationship; see text
+
+ |
 
 In all cases, a `pg_shdepend` entry indicates that the referenced object cannot be dropped without also dropping the dependent object. However, there are several subflavors identified by `deptype`:
 

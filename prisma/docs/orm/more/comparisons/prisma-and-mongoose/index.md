@@ -5,14 +5,13 @@ canonical_url: "https://www.prisma.io/docs/orm/more/comparisons/prisma-and-mongo
 docset: "prisma"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:42:01.972Z"
-content_hash: "43ee432bf03d141a564e7c787d29d2ba5ae6ecf2ede17cde23fe6cccbd37bb9f"
+last_crawled_at: "2026-04-27T19:37:09.230Z"
+content_hash: "1755f11a9e0ad92b3ef7ec81f56b0f434edac3c7c2b06e5d7369394863ec0c9b"
 menu_path: ["Mongoose"]
 section_path: []
-nav_prev: {"path": "prisma/docs/orm/more/comparisons/prisma-and-drizzle/index.md", "title": "Drizzle"}
-nav_next: {"path": "prisma/docs/orm/more/comparisons/prisma-and-sequelize/index.md", "title": "Sequelize"}
+tab_variants: ["Using include","Fluent API","Using create","Using save","Using findOneAndUpdate","Using save"]
+content_language: "en"
 ---
-
 Comparisons
 
 Learn how Prisma ORM compares to Mongoose
@@ -206,5 +205,3 @@ const users = await prisma.user.deleteMany({
 ```
 await User.deleteMany({ id: { $in: [1, 2, 6, 6, 22, 21, 25] } });
 ```
-
-[Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/more/comparisons/prisma-and-mongoose.mdx)

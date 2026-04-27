@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/pages/building-your-application/renderin
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:23:10.660Z"
-content_hash: "c1d6e0eec60fcae6233331d3b2546ea0c7bb94d197c1c33fbb1e4d3de5d5da7a"
+last_crawled_at: "2026-04-27T18:22:28.823Z"
+content_hash: "3d1f0e677c67f533d94d4827b18716da47d8fac98063136ba4778c1d2ec9c013"
 menu_path: ["Server-side Rendering (SSR)"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/pages/building-your-application/routing/custom-error/index.md", "title": "Custom Errors"}
-nav_next: {"path": "nextjs/docs/pages/building-your-application/rendering/static-site-generation/index.md", "title": "Static Site Generation (SSG)"}
+version: "latest"
+content_language: "en"
 ---
+[Building Your Application](/docs/pages/building-your-application)[Rendering](/docs/pages/building-your-application/rendering)Server-side Rendering (SSR)
 
 # Server-side Rendering (SSR)
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 > Also referred to as "SSR" or "Dynamic Rendering".
 
@@ -46,7 +47,3 @@ As you can see, `getServerSideProps` is similar to `getStaticProps`, but the dif
 To learn more about how `getServerSideProps` works, check out our [Data Fetching documentation](/docs/pages/building-your-application/data-fetching/get-server-side-props).
 
 Was this helpful?
-
-supported.
-
-Send

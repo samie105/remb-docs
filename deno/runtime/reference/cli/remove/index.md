@@ -5,17 +5,18 @@ canonical_url: "https://docs.deno.com/runtime/reference/cli/remove/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:54:55.408Z"
-content_hash: "01d1dc0b8090631b7a9274cccb61e911a31bcffc7819e930a50274735d883893"
+last_crawled_at: "2026-04-27T17:31:53.802Z"
+content_hash: "2381346d5b24fe1ca909b8181e19dcd54e33cd7f1588ece4a3e16c90c949909a"
 menu_path: ["deno remove"]
 section_path: []
+content_language: "en"
 ---
-On this page
+**On this page**
 
-*   [Basic usage](#basic-usage)
-*   [Where dependencies are removed from](#where-dependencies-are-removed-from)
-*   [Dependency management options](#dependency-management-options)
-*   [Options](#options)
+-   [Basic usage](#basic-usage)
+-   [Where dependencies are removed from](#where-dependencies-are-removed-from)
+-   [Dependency management options](#dependency-management-options)
+-   [Options](#options)
 
 `deno remove` removes dependencies from your project's configuration file. It is the inverse of [`deno add`](/runtime/reference/cli/add/).
 

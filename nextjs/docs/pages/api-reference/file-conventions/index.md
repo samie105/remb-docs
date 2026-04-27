@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/pages/api-reference/file-conventions"
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:21:55.874Z"
-content_hash: "585088c89423c2c94c6cc105b5239f3d80bd9be24f358bae777f81774af4f01f"
+last_crawled_at: "2026-04-27T18:21:19.330Z"
+content_hash: "232ccb60fdbb56e33b923e4112fcd03d68f426ba5b50a91c0247e14ea17bbdc5"
 menu_path: ["File-system conventions"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/pages/api-reference/components/script/index.md", "title": "Script"}
-nav_next: {"path": "nextjs/docs/pages/api-reference/file-conventions/instrumentation/index.md", "title": "instrumentation.js"}
+version: "latest"
+content_language: "en"
 ---
+[Pages Router](/docs/pages)[API Reference](/docs/pages/api-reference)File-system conventions
 
 # File-system conventions
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 [
 
@@ -44,7 +45,3 @@ Save pages under the \`src\` folder as an alternative to the root \`pages\` dire
 ](/docs/pages/api-reference/file-conventions/src-folder)
 
 Was this helpful?
-
-supported.
-
-Send

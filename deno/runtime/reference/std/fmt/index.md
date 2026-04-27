@@ -5,24 +5,25 @@ canonical_url: "https://docs.deno.com/runtime/reference/std/fmt/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:02:17.788Z"
-content_hash: "7a6316709cdca05fd6ed9ca53eeeeeb8a06d6cc9a073a5f0f83fcfb5b317277a"
+last_crawled_at: "2026-04-27T17:42:14.927Z"
+content_hash: "d64ddaec0fc7d2023b22b415e1958e8e943af64f35feb53b9d0354bef6fb5406"
 menu_path: ["@std/fmt"]
 section_path: []
+content_language: "en"
 ---
-On this page
+**On this page**
 
-*   [Overview](#overview)
-    *   [Add to your project](#add-to-your-project)
+-   [Overview](#overview)
+    -   [Add to your project](#add-to-your-project)
 
 ## Overview
 
 Provides utilities for formatting text of different types:
 
-*   [Human-readable bytes](https://jsr.io/@std/fmt/doc/bytes/~)
-*   [Styles for the CLI](https://jsr.io/@std/fmt/doc/colors/~)
-*   [Time duration](https://jsr.io/@std/fmt/doc/duration/~)
-*   [Printing formatted strings to stdout](https://jsr.io/@std/fmt/doc/printf/~)
+-   [Human-readable bytes](https://jsr.io/@std/fmt/doc/bytes/~)
+-   [Styles for the CLI](https://jsr.io/@std/fmt/doc/colors/~)
+-   [Time duration](https://jsr.io/@std/fmt/doc/duration/~)
+-   [Printing formatted strings to stdout](https://jsr.io/@std/fmt/doc/printf/~)
 
 ```js
 import { format } from "@std/fmt/bytes";

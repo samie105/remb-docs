@@ -5,41 +5,46 @@ canonical_url: "https://tailwindcss.com/docs/text-decoration-line"
 docset: "tailwind"
 kind: "framework"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:57:53.277Z"
-content_hash: "254d3fd2edb33db6f1203a591b2a007fff69b39f341f5a61aee289c25a547bef"
+last_crawled_at: "2026-04-27T20:11:40.237Z"
+content_hash: "90ad3d4da9d2265481d3e2c5ea1cf879613740594fc766f94af17da6f1e9b963"
 menu_path: ["text-decoration-line"]
 section_path: []
-nav_prev: {"path": "tailwind/docs/color/index.md", "title": "color"}
-nav_next: {"path": "tailwind/docs/text-decoration-color/index.md", "title": "text-decoration-color"}
+content_language: "en"
 ---
+[](/)
+
+[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
+
+1.  Typography
+2.  text-decoration-line
+
+Typography
 
 # text-decoration-line
 
 Utilities for controlling the decoration of text.
 
-Class
-
-Styles
-
-`underline`
-
+| Class | Styles |
+| --- | --- |
+| `underline` | 
 `text-decoration-line: underline;`
 
-`overline`
+ |
+| `overline` | 
 
 `text-decoration-line: overline;`
 
-`line-through`
+ |
+| `line-through` | 
 
 `text-decoration-line: line-through;`
 
-`no-underline`
+ |
+| `no-underline` | 
 
 `text-decoration-line: none;`
 
-## [Examples](#examples)
-
-### [Underling text](#underling-text)
+ |
 
 Use the `underline` utility to add an underline to the text of an element:
 
@@ -49,8 +54,6 @@ The quick brown fox jumps over the lazy dog.
 <p class="underline">The quick brown fox...</p>
 ```
 
-### [Adding an overline to text](#adding-an-overline-to-text)
-
 Use the `overline` utility to add an overline to the text of an element:
 
 The quick brown fox jumps over the lazy dog.
@@ -58,8 +61,6 @@ The quick brown fox jumps over the lazy dog.
 ```
 <p class="overline">The quick brown fox...</p>
 ```
-
-### [Adding a line through text](#adding-a-line-through-text)
 
 Use the `line-through` utility to add a line through the text of an element:
 
@@ -69,8 +70,6 @@ The quick brown fox jumps over the lazy dog.
 <p class="line-through">The quick brown fox...</p>
 ```
 
-### [Removing a line from text](#removing-a-line-from-text)
-
 Use the `no-underline` utility to remove a line from the text of an element:
 
 The quick brown fox jumps over the lazy dog.
@@ -78,8 +77,6 @@ The quick brown fox jumps over the lazy dog.
 ```
 <p class="no-underline">The quick brown fox...</p>
 ```
-
-### [Applying on hover](#applying-on-hover)
 
 Prefix a `text-decoration-line` utility with a variant like `hover:*` to only apply the utility in that state:
 
@@ -93,8 +90,6 @@ The [quick brown fox](https://en.wikipedia.org/wiki/The_quick_brown_fox_jumps_ov
 
 Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
 
-### [Responsive design](#responsive-design)
-
 Prefix a `text-decoration-line` utility with a breakpoint variant like `md:` to only apply the utility at medium screen sizes and above:
 
 ```
@@ -105,14 +100,14 @@ Learn more about using variants in the [variants documentation](/docs/hover-focu
 
 ### On this page
 
-*   [Quick reference](#quick-reference)
-*   [Examples](#examples)
-    *   [Underling text](#underling-text)
-    *   [Adding an overline to text](#adding-an-overline-to-text)
-    *   [Adding a line through text](#adding-a-line-through-text)
-    *   [Removing a line from text](#removing-a-line-from-text)
-    *   [Applying on hover](#applying-on-hover)
-    *   [Responsive design](#responsive-design)
+-   [Quick reference](#quick-reference)
+-   [Examples](#examples)
+    -   [Underling text](#underling-text)
+    -   [Adding an overline to text](#adding-an-overline-to-text)
+    -   [Adding a line through text](#adding-a-line-through-text)
+    -   [Removing a line from text](#removing-a-line-from-text)
+    -   [Applying on hover](#applying-on-hover)
+    -   [Responsive design](#responsive-design)
 
 ![Build UIs that don’t suck — 5-day mini-course](/_next/static/media/course-promo.d3d6bc78.jpg)
 

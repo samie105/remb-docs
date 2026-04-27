@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/pages/api-reference/config/typescript"
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:21:50.633Z"
-content_hash: "179be31eb931930d15f8ff32fa0a6e7af325bba6b4407bf126c533d39eef839c"
+last_crawled_at: "2026-04-27T18:21:14.494Z"
+content_hash: "dfdb64aa9da6dae968ec89761618c23dad80c4d004d7025c19ba1956f486dfe3"
 menu_path: ["TypeScript"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/pages/api-reference/config/next-config-js/webVitalsAttribution/index.md", "title": "webVitalsAttribution"}
-nav_next: {"path": "nextjs/docs/pages/api-reference/config/eslint/index.md", "title": "ESLint"}
+version: "latest"
+content_language: "en"
 ---
+[API Reference](/docs/pages/api-reference)[Configuration](/docs/pages/api-reference/config)TypeScript
 
 # TypeScript
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 Next.js comes with built-in TypeScript, automatically installing the necessary packages and configuring the proper settings when you create a new project with `create-next-app`.
 
@@ -31,8 +32,8 @@ Running `next dev`, `next build`, or [`next typegen`](/docs/app/api-reference/cl
 
 > **Good to know**:
 > 
-> *   We recommend adding `next-env.d.ts` to your `.gitignore` file.
-> *   The file must be in your `tsconfig.json` `include` array (`create-next-app` does this automatically).
+> -   We recommend adding `next-env.d.ts` to your `.gitignore` file.
+> -   The file must be in your `tsconfig.json` `include` array (`create-next-app` does this automatically).
 
 ## Examples[](#examples)
 
@@ -407,7 +408,7 @@ const nextConfig: NextConfig = {
 export default nextConfig
 ```
 
-Why you might use a separate `tsconfig` for builds
+**Why you might use a separate tsconfig for builds**
 
 You might need to relax checks in scenarios like monorepos, where the build also validates shared dependencies that don't match your project's standards, or when loosening checks in CI to continue delivering while migrating locally to stricter TypeScript settings (and still wanting your IDE to highlight misuse).
 
@@ -428,9 +429,9 @@ This keeps your editor strict via `tsconfig.json` while allowing the production 
 
 > **Good to know**:
 > 
-> *   IDEs typically read `tsconfig.json` for diagnostics and IntelliSense, so you can still see IDE warnings while production builds use the alternate config. Mirror critical options if you want parity in the editor.
-> *   In development, only `tsconfig.json` is watched for changes. If you edit a different file name via `typescript.tsconfigPath`, restart the dev server to apply changes.
-> *   The configured file is used in `next dev`, `next build`, and `next typegen`.
+> -   IDEs typically read `tsconfig.json` for diagnostics and IntelliSense, so you can still see IDE warnings while production builds use the alternate config. Mirror critical options if you want parity in the editor.
+> -   In development, only `tsconfig.json` is watched for changes. If you edit a different file name via `typescript.tsconfigPath`, restart the dev server to apply changes.
+> -   The configured file is used in `next dev`, `next build`, and `next typegen`.
 
 ### Disabling TypeScript errors in production[](#disabling-typescript-errors-in-production)
 
@@ -487,28 +488,11 @@ tsconfig.json
 
 ## Version Changes[](#version-changes)
 
-Version
-
-Changes
-
-`v15.0.0`
-
-[`next.config.ts`](#type-checking-nextjs-configuration-files) support added for TypeScript projects.
-
-`v13.2.0`
-
-Statically typed links are available in beta.
-
-`v12.0.0`
-
-[SWC](/docs/architecture/nextjs-compiler) is now used by default to compile TypeScript and TSX for faster builds.
-
-`v10.2.1`
-
-[Incremental type checking](https://www.typescriptlang.org/tsconfig#incremental) support added when enabled in your `tsconfig.json`.
+| Version | Changes |
+| --- | --- |
+| `v15.0.0` | [`next.config.ts`](#type-checking-nextjs-configuration-files) support added for TypeScript projects. |
+| `v13.2.0` | Statically typed links are available in beta. |
+| `v12.0.0` | [SWC](/docs/architecture/nextjs-compiler) is now used by default to compile TypeScript and TSX for faster builds. |
+| `v10.2.1` | [Incremental type checking](https://www.typescriptlang.org/tsconfig#incremental) support added when enabled in your `tsconfig.json`. |
 
 Was this helpful?
-
-supported.
-
-Send

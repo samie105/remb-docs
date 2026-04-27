@@ -5,81 +5,15 @@ canonical_url: "https://tailwindcss.com/docs/font-size"
 docset: "tailwind"
 kind: "framework"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:54:49.741Z"
-content_hash: "41d125d8cc1fc2864ee96f76e7284f782097223e6e212dc9466f62c21e0cdcfc"
+last_crawled_at: "2026-04-27T20:07:07.019Z"
+content_hash: "b315f446df4564791d7d7306c38625048bf8a5d8f9736c931fbdda46d29a88c7"
 menu_path: ["font-size"]
 section_path: []
-nav_prev: {"path": "tailwind/docs/font-family/index.md", "title": "font-family"}
-nav_next: {"path": "tailwind/docs/font-smoothing/index.md", "title": "font-smoothing"}
+content_language: "en"
 ---
-
 Typography
 
 Utilities for controlling the font size of an element.
-
-Class
-
-Styles
-
-`text-xs`
-
-`font-size: var(--text-xs); /* 0.75rem (12px) */ line-height: var(--text-xs--line-height); /* calc(1 / 0.75) */`
-
-`text-sm`
-
-`font-size: var(--text-sm); /* 0.875rem (14px) */ line-height: var(--text-sm--line-height); /* calc(1.25 / 0.875) */`
-
-`text-base`
-
-`font-size: var(--text-base); /* 1rem (16px) */ line-height: var(--text-base--line-height); /* calc(1.5 / 1) */`
-
-`text-lg`
-
-`font-size: var(--text-lg); /* 1.125rem (18px) */ line-height: var(--text-lg--line-height); /* calc(1.75 / 1.125) */`
-
-`text-xl`
-
-`font-size: var(--text-xl); /* 1.25rem (20px) */ line-height: var(--text-xl--line-height); /* calc(1.75 / 1.25) */`
-
-`text-2xl`
-
-`font-size: var(--text-2xl); /* 1.5rem (24px) */ line-height: var(--text-2xl--line-height); /* calc(2 / 1.5) */`
-
-`text-3xl`
-
-`font-size: var(--text-3xl); /* 1.875rem (30px) */ line-height: var(--text-3xl--line-height); /* calc(2.25 / 1.875) */`
-
-`text-4xl`
-
-`font-size: var(--text-4xl); /* 2.25rem (36px) */ line-height: var(--text-4xl--line-height); /* calc(2.5 / 2.25) */`
-
-`text-5xl`
-
-`font-size: var(--text-5xl); /* 3rem (48px) */ line-height: var(--text-5xl--line-height); /* 1 */`
-
-`text-6xl`
-
-`font-size: var(--text-6xl); /* 3.75rem (60px) */ line-height: var(--text-6xl--line-height); /* 1 */`
-
-`text-7xl`
-
-`font-size: var(--text-7xl); /* 4.5rem (72px) */ line-height: var(--text-7xl--line-height); /* 1 */`
-
-`text-8xl`
-
-`font-size: var(--text-8xl); /* 6rem (96px) */ line-height: var(--text-8xl--line-height); /* 1 */`
-
-`text-9xl`
-
-`font-size: var(--text-9xl); /* 8rem (128px) */ line-height: var(--text-9xl--line-height); /* 1 */`
-
-`text-(length:<custom-property>)`
-
-`font-size: var(<custom-property>);`
-
-`text-[<value>]`
-
-`font-size: <value>;`
 
 ## [Examples](#examples)
 
@@ -155,7 +89,7 @@ Prefix a `font-size` utility with a breakpoint variant like `md:` to only apply 
 <p class="text-sm md:text-base ...">  Lorem ipsum dolor sit amet...</p>
 ```
 
-Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).
+Learn more about using variants in the [variants documentation](https://tailwindcss.com/docs/hover-focus-and-other-states).
 
 ## [Customizing your theme](#customizing-your-theme)
 
@@ -177,4 +111,4 @@ You can also provide default `line-height`, `letter-spacing`, and `font-weight` 
 @theme {  --text-tiny: 0.625rem;  --text-tiny--line-height: 1.5rem;   --text-tiny--letter-spacing: 0.125rem;   --text-tiny--font-weight: 500; }
 ```
 
-Learn more about customizing your theme in the [theme documentation](tailwind/docs/theme/index.md#customizing-your-theme).
+Learn more about customizing your theme in the [theme documentation](https://tailwindcss.com/docs/theme#customizing-your-theme).

@@ -5,13 +5,12 @@ canonical_url: "https://docs.deno.com/api/deno/jupyter"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:10:00.350Z"
-content_hash: "540b786a589fe3fe3ad45815cf66cf7447af62d274548c9d05ef58010613266e"
+last_crawled_at: "2026-04-27T17:53:49.867Z"
+content_hash: "8d34ade1b84fe591e1bea75b18ffc3b7867d3efd2ce8dcb533d2d4ae9dd68e0a"
 menu_path: ["Jupyter - Deno documentation"]
 section_path: []
+content_language: "en"
 ---
-### Functions [#](#Functions)
-
 f
 
 [Deno.jupyter.broadcast](./././~/Deno.jupyter.broadcast "Deno.jupyter.broadcast")
@@ -54,15 +53,13 @@ f
 
 SVG Tagged Template Function.
 
-### Interfaces [#](#Interfaces)
-
 I
 
 [Deno.jupyter.Displayable](./././~/Deno.jupyter.Displayable "Deno.jupyter.Displayable")
 
 No documentation available
 
-*   [$display](./././~/Deno.jupyter.Displayable#property_$display)
+-   [$display](./././~/Deno.jupyter.Displayable#property_$display)
 
 I
 
@@ -70,9 +67,9 @@ I
 
 No documentation available
 
-*   [display\_id](./././~/Deno.jupyter.DisplayOptions#property_display_id)
-*   [raw](./././~/Deno.jupyter.DisplayOptions#property_raw)
-*   [update](./././~/Deno.jupyter.DisplayOptions#property_update)
+-   [display\_id](./././~/Deno.jupyter.DisplayOptions#property_display_id)
+-   [raw](./././~/Deno.jupyter.DisplayOptions#property_raw)
+-   [update](./././~/Deno.jupyter.DisplayOptions#property_update)
 
 I
 
@@ -80,22 +77,22 @@ I
 
 A collection of supported media types and data for Jupyter frontends.
 
-*   [application/geo+json](./././~/Deno.jupyter.MediaBundle#property_application/geo+json)
-*   [application/javascript](./././~/Deno.jupyter.MediaBundle#property_application/javascript)
-*   [application/json](./././~/Deno.jupyter.MediaBundle#property_application/json)
-*   [application/pdf](./././~/Deno.jupyter.MediaBundle#property_application/pdf)
-*   [application/vdom.v1+json](./././~/Deno.jupyter.MediaBundle#property_application/vdom_v1+json)
-*   [application/vnd.plotly.v1+json](./././~/Deno.jupyter.MediaBundle#property_application/vnd_plotly_v1+json)
-*   [application/vnd.vega.v5+json](./././~/Deno.jupyter.MediaBundle#property_application/vnd_vega_v5+json)
-*   [application/vnd.vegalite.v4+json](./././~/Deno.jupyter.MediaBundle#property_application/vnd_vegalite_v4+json)
-*   [application/vnd.vegalite.v5+json](./././~/Deno.jupyter.MediaBundle#property_application/vnd_vegalite_v5+json)
-*   [image/gif](./././~/Deno.jupyter.MediaBundle#property_image/gif)
-*   [image/jpeg](./././~/Deno.jupyter.MediaBundle#property_image/jpeg)
-*   [image/png](./././~/Deno.jupyter.MediaBundle#property_image/png)
-*   [image/svg+xml](./././~/Deno.jupyter.MediaBundle#property_image/svg+xml)
-*   [text/html](./././~/Deno.jupyter.MediaBundle#property_text/html)
-*   [text/markdown](./././~/Deno.jupyter.MediaBundle#property_text/markdown)
-*   [text/plain](./././~/Deno.jupyter.MediaBundle#property_text/plain)
+-   [application/geo+json](./././~/Deno.jupyter.MediaBundle#property_application/geo+json)
+-   [application/javascript](./././~/Deno.jupyter.MediaBundle#property_application/javascript)
+-   [application/json](./././~/Deno.jupyter.MediaBundle#property_application/json)
+-   [application/pdf](./././~/Deno.jupyter.MediaBundle#property_application/pdf)
+-   [application/vdom.v1+json](./././~/Deno.jupyter.MediaBundle#property_application/vdom_v1+json)
+-   [application/vnd.plotly.v1+json](./././~/Deno.jupyter.MediaBundle#property_application/vnd_plotly_v1+json)
+-   [application/vnd.vega.v5+json](./././~/Deno.jupyter.MediaBundle#property_application/vnd_vega_v5+json)
+-   [application/vnd.vegalite.v4+json](./././~/Deno.jupyter.MediaBundle#property_application/vnd_vegalite_v4+json)
+-   [application/vnd.vegalite.v5+json](./././~/Deno.jupyter.MediaBundle#property_application/vnd_vegalite_v5+json)
+-   [image/gif](./././~/Deno.jupyter.MediaBundle#property_image/gif)
+-   [image/jpeg](./././~/Deno.jupyter.MediaBundle#property_image/jpeg)
+-   [image/png](./././~/Deno.jupyter.MediaBundle#property_image/png)
+-   [image/svg+xml](./././~/Deno.jupyter.MediaBundle#property_image/svg+xml)
+-   [text/html](./././~/Deno.jupyter.MediaBundle#property_text/html)
+-   [text/markdown](./././~/Deno.jupyter.MediaBundle#property_text/markdown)
+-   [text/plain](./././~/Deno.jupyter.MediaBundle#property_text/plain)
 
 I
 
@@ -103,17 +100,13 @@ I
 
 No documentation available
 
-*   [$schema](./././~/Deno.jupyter.VegaObject#property_$schema)
-
-### Namespaces [#](#Namespaces)
+-   [$schema](./././~/Deno.jupyter.VegaObject#property_$schema)
 
 N
 
 [Deno.jupyter](./././~/Deno.jupyter "Deno.jupyter")
 
 A namespace containing runtime APIs available in Jupyter notebooks.
-
-### Variables [#](#Variables)
 
 v
 

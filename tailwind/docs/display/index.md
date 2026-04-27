@@ -5,59 +5,13 @@ canonical_url: "https://tailwindcss.com/docs/display"
 docset: "tailwind"
 kind: "framework"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:42:23.846Z"
-content_hash: "f42d96954b5bff24f43b2c83e638e345540fd44ca0ae53b4e9b5c41794c4cdbe"
+last_crawled_at: "2026-04-27T19:52:36.793Z"
+content_hash: "b8af814192628a81b773ee2591421c955291d8b2a06599740850d872230334cf"
 menu_path: ["display"]
 section_path: []
-nav_prev: {"path": "tailwind/docs/box-sizing/index.md", "title": "box-sizing"}
-nav_next: {"path": "tailwind/docs/float/index.md", "title": "float"}
+content_language: "en"
 ---
-
 Utilities for controlling the display box type of an element.
-
-Class
-
-Styles
-
-`inline`
-
-`display: inline;`
-
-`block`
-
-`display: block;`
-
-`inline-block`
-
-`display: inline-block;`
-
-`flow-root`
-
-`display: flow-root;`
-
-`flex`
-
-`display: flex;`
-
-`inline-flex`
-
-`display: inline-flex;`
-
-`grid`
-
-`display: grid;`
-
-`inline-grid`
-
-`display: inline-grid;`
-
-`contents`
-
-`display: contents;`
-
-`table`
-
-`display: table;`
 
 ## [Examples](#examples)
 
@@ -217,7 +171,7 @@ Use the `hidden` utility to remove an element from the document:
 <div class="flex ...">  <div class="hidden ...">01</div>  <div>02</div>  <div>03</div></div>
 ```
 
-To visually hide an element but keep it in the document, use the [visibility](tailwind/docs/visibility/index.md#making-elements-invisible) property instead.
+To visually hide an element but keep it in the document, use the [visibility](https://tailwindcss.com/docs/visibility#making-elements-invisible) property instead.
 
 ### [Screen-reader only](#screen-reader-only)
 
@@ -243,4 +197,4 @@ Prefix a `display` utility with a breakpoint variant like `md:` to only apply th
 <div class="flex md:inline-flex ...">  <!-- ... --></div>
 ```
 
-Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).
+Learn more about using variants in the [variants documentation](https://tailwindcss.com/docs/hover-focus-and-other-states).

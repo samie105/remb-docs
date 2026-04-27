@@ -5,23 +5,39 @@ canonical_url: "https://nextjs.org/docs/app/api-reference/cli/create-next-app"
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:06:08.503Z"
-content_hash: "0210960083517b6d9e394486eac7325b095f3052d50a235bae9fdcf6c4250c5f"
+last_crawled_at: "2026-04-27T18:05:02.726Z"
+content_hash: "d9b5c8a00caa3495494480e1a439c11704ee6c5b1354287f167f0fac6d03da59"
 menu_path: ["create-next-app"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/api-reference/cli/index.md", "title": "CLI"}
-nav_next: {"path": "nextjs/docs/app/api-reference/cli/next/index.md", "title": "next CLI"}
+version: "latest"
+tab_variants: ["pnpm","npm","yarn","bun","pnpm","npm","yarn","bun","pnpm","npm","yarn","bun","pnpm","npm","yarn","bun"]
+content_language: "en"
 ---
+[API Reference](/docs/app/api-reference)[CLI](/docs/app/api-reference/cli)create-next-app
 
 # create-next-app
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 The `create-next-app` CLI allow you to create a new Next.js application using the default template or an [example](https://github.com/vercel/next.js/tree/canary/examples) from a public GitHub repository. It is the easiest way to get started with Next.js.
 
 Basic usage:
 
-pnpmnpmyarnbun
+#### pnpm
+
+pnpm
+
+#### npm
+
+npm
+
+#### yarn
+
+yarn
+
+#### bun
+
+bun
 
 Terminal
 
@@ -33,121 +49,36 @@ pnpm create next-app [project-name] [options]
 
 The following options are available:
 
-Options
-
-Description
-
-`-h` or `--help`
-
-Show all available options
-
-`-v` or `--version`
-
-Output the version number
-
-`--no-*`
-
-Negate default options. E.g. `--no-ts`
-
-`--ts` or `--typescript`
-
-Initialize as a TypeScript project (default)
-
-`--js` or `--javascript`
-
-Initialize as a JavaScript project
-
-`--tailwind`
-
-Initialize with Tailwind CSS config (default)
-
-`--react-compiler`
-
-Initialize with React Compiler enabled
-
-`--eslint`
-
-Initialize with ESLint config
-
-`--biome`
-
-Initialize with Biome config
-
-`--no-linter`
-
-Skip linter configuration
-
-`--app`
-
-Initialize as an App Router project
-
-`--api`
-
-Initialize a project with only route handlers
-
-`--src-dir`
-
-Initialize inside a `src/` directory
-
-`--turbopack`
-
-Force enable Turbopack in generated package.json (enabled by default)
-
-`--webpack`
-
-Force enable Webpack in generated package.json
-
-`--import-alias <alias-to-configure>`
-
-Specify import alias to use (default "@/\*")
-
-`--empty`
-
-Initialize an empty project
-
-`--use-npm`
-
-Explicitly tell the CLI to bootstrap the application using npm
-
-`--use-pnpm`
-
-Explicitly tell the CLI to bootstrap the application using pnpm
-
-`--use-yarn`
-
-Explicitly tell the CLI to bootstrap the application using Yarn
-
-`--use-bun`
-
-Explicitly tell the CLI to bootstrap the application using Bun
-
-`-e` or `--example [name] [github-url]`
-
-An example to bootstrap the app with
-
-`--example-path <path-to-example>`
-
-Specify the path to the example separately
-
-`--reset-preferences`
-
-Explicitly tell the CLI to reset any stored preferences
-
-`--skip-install`
-
-Explicitly tell the CLI to skip installing packages
-
-`--disable-git`
-
-Explicitly tell the CLI to disable git initialization
-
-`--agents-md`
-
-Include `AGENTS.md` and `CLAUDE.md` to guide coding agents (default)
-
-`--yes`
-
-Use previous preferences or defaults for all options
+| Options | Description |
+| --- | --- |
+| `-h` or `--help` | Show all available options |
+| `-v` or `--version` | Output the version number |
+| `--no-*` | Negate default options. E.g. `--no-ts` |
+| `--ts` or `--typescript` | Initialize as a TypeScript project (default) |
+| `--js` or `--javascript` | Initialize as a JavaScript project |
+| `--tailwind` | Initialize with Tailwind CSS config (default) |
+| `--react-compiler` | Initialize with React Compiler enabled |
+| `--eslint` | Initialize with ESLint config |
+| `--biome` | Initialize with Biome config |
+| `--no-linter` | Skip linter configuration |
+| `--app` | Initialize as an App Router project |
+| `--api` | Initialize a project with only route handlers |
+| `--src-dir` | Initialize inside a `src/` directory |
+| `--turbopack` | Force enable Turbopack in generated package.json (enabled by default) |
+| `--webpack` | Force enable Webpack in generated package.json |
+| `--import-alias <alias-to-configure>` | Specify import alias to use (default "@/\*") |
+| `--empty` | Initialize an empty project |
+| `--use-npm` | Explicitly tell the CLI to bootstrap the application using npm |
+| `--use-pnpm` | Explicitly tell the CLI to bootstrap the application using pnpm |
+| `--use-yarn` | Explicitly tell the CLI to bootstrap the application using Yarn |
+| `--use-bun` | Explicitly tell the CLI to bootstrap the application using Bun |
+| `-e` or `--example [name] [github-url]` | An example to bootstrap the app with |
+| `--example-path <path-to-example>` | Specify the path to the example separately |
+| `--reset-preferences` | Explicitly tell the CLI to reset any stored preferences |
+| `--skip-install` | Explicitly tell the CLI to skip installing packages |
+| `--disable-git` | Explicitly tell the CLI to disable git initialization |
+| `--agents-md` | Include `AGENTS.md` and `CLAUDE.md` to guide coding agents (default) |
+| `--yes` | Use previous preferences or defaults for all options |
 
 ## Examples[](#examples)
 
@@ -155,7 +86,21 @@ Use previous preferences or defaults for all options
 
 To create a new app using the default template, run the following command in your terminal:
 
-pnpmnpmyarnbun
+#### pnpm
+
+pnpm
+
+#### npm
+
+npm
+
+#### yarn
+
+yarn
+
+#### bun
+
+bun
 
 Terminal
 
@@ -207,7 +152,21 @@ Once you've answered the prompts, a new project will be created with your chosen
 
 To create a new app using an official Next.js example, use the `--example` flag. For example:
 
-pnpmnpmyarnbun
+#### pnpm
+
+pnpm
+
+#### npm
+
+npm
+
+#### yarn
+
+yarn
+
+#### bun
+
+bun
 
 Terminal
 
@@ -221,7 +180,21 @@ You can view a list of all available examples along with setup instructions in t
 
 To create a new app using any public GitHub example, use the `--example` option with the GitHub repo's URL. For example:
 
-pnpmnpmyarnbun
+#### pnpm
+
+pnpm
+
+#### npm
+
+npm
+
+#### yarn
+
+yarn
+
+#### bun
+
+bun
 
 Terminal
 
@@ -229,20 +202,4 @@ Terminal
 pnpm create next-app --example "https://github.com/.../" [your-project-name]
 ```
 
-[Previous
-
-CLI
-
-](/docs/app/api-reference/cli)
-
-[Next
-
-next CLI
-
-](/docs/app/api-reference/cli/next)
-
 Was this helpful?
-
-supported.
-
-Send

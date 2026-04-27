@@ -5,31 +5,29 @@ canonical_url: "https://orm.drizzle.team/docs/insert"
 docset: "drizzle"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:08:23.306Z"
-content_hash: "75462ee607fdd0dc519c92eaa1b860dc20a4f379aee34bcf4ef2bd4ce15aa353"
+last_crawled_at: "2026-04-27T19:05:25.169Z"
+content_hash: "bf317b7163cb32d1db98e3b98e58a0f5f4870ebf2f75434511a0bcc85459ef38"
 menu_path: ["SQL Insert"]
 section_path: []
-nav_prev: {"path": "drizzle/docs/select/index.md", "title": "SQL Select"}
-nav_next: {"path": "drizzle/docs/update/index.md", "title": "SQL Update"}
+content_language: "en"
 ---
-
 ## SQL Insert
 
 Drizzle ORM provides you the most SQL-like way to insert rows into the database tables.
 
 Inserting data with Drizzle is extremely straightforward and sql-like. See for yourself:
 
-```
+```typescript
 await db.insert(users).values({ name: 'Andrew' });
 ```
 
-```
+```sql
 insert into "users" ("name") values ("Andrew");
 ```
 
 If you need insert type for a particular table you can use `typeof usersTable.$inferInsert` syntax.
 
-```
+```typescript
 type NewUser = typeof users.$inferInsert;
 
 const insertUser = async (user: NewUser) => {
@@ -42,21 +40,9 @@ await insertUser(newUser);
 
 ## returning[](#returning)
 
-PostgreSQL
-
-SQLite
-
-MySQL
-
-SingleStore
-
-MSSQL
-
-CockroachDB
-
 You can insert a row and get it back in PostgreSQL and SQLite like such:
 
-```
+```typescript
 await db.insert(users).values({ name: "Dan" }).returning();
 
 // partial return
@@ -65,21 +51,9 @@ await db.insert(users).values({ name: "Partial Dan" }).returning({ insertedId: u
 
 ## $returningId[](#returningid)
 
-PostgreSQL
-
-SQLite
-
-MySQL
-
-SingleStore
-
-MSSQL
-
-CockroachDB
-
 MySQL itself doesn’t have native support for `RETURNING` after using `INSERT`. There is only one way to do it for `primary keys` with `autoincrement` (or `serial`) types, where you can access `insertId` and `affectedRows` fields. We’ve prepared an automatic way for you to handle such cases with Drizzle and automatically receive all inserted IDs as separate objects
 
-```
+```ts
 import { boolean, int, text, mysqlTable } from 'drizzle-orm/mysql-core';
 
 const usersTable = mysqlTable('users', {
@@ -94,7 +68,7 @@ const result = await db.insert(usersTable).values([{ name: 'John' }, { name: 'Jo
 
 Also with Drizzle, you can specify a `primary key` with `$default` function that will generate custom primary keys at runtime. We will also return those generated keys for you in the `$returningId()` call
 
-```
+```ts
 import { varchar, text, mysqlTable } from 'drizzle-orm/mysql-core';
 import { createId } from '@paralleldrive/cuid2';
 
@@ -111,11 +85,9 @@ const result = await db.insert(usersTableDefFn).values([{ name: 'John' }, { name
 
 ## output[](#output)
 
-MSSQL
-
 You can insert a row and get it back in PostgreSQL and SQLite like such:
 
-```
+```typescript
 await db.insert(users).values({ name: "Dan" }).output();
 
 // partial return
@@ -124,7 +96,7 @@ await db.insert(users).values({ name: "Partial Dan" }).output({ insertedId: user
 
 ## Insert multiple rows[](#insert-multiple-rows)
 
-```
+```typescript
 await db.insert(users).values([{ name: 'Andrew' }, { name: 'Dan' }]);
 ```
 
@@ -134,19 +106,9 @@ Drizzle ORM provides simple interfaces for handling upserts and conflicts.
 
 ### On conflict do nothing[](#on-conflict-do-nothing)
 
-PostgreSQL
-
-SQLite
-
-MySQL
-
-SingleStore
-
-CockroachDB
-
 `onConflictDoNothing` will cancel the insert if there’s a conflict:
 
-```
+```typescript
 await db.insert(users)
   .values({ id: 1, name: 'John' })
   .onConflictDoNothing();
@@ -159,15 +121,9 @@ await db.insert(users)
 
 ### On conflict do update[](#on-conflict-do-update)
 
-PostgreSQL
-
-SQLite
-
-MySQL
-
 `onConflictDoUpdate` will update the row if there’s a conflict:
 
-```
+```typescript
 await db.insert(users)
   .values({ id: 1, name: 'Dan' })
   .onConflictDoUpdate({ target: users.id, set: { name: 'John' } });
@@ -177,7 +133,7 @@ await db.insert(users)
 
 `on conflict do update` can have a `where` clause in two different places - as part of the conflict target (i.e. for partial indexes) or as part of the `update` clause:
 
-```
+```sql
 insert into employees (employee_id, name)
 values (123, 'John Doe')
 on conflict (employee_id) where name <> 'John Doe'
@@ -191,7 +147,7 @@ where name <> 'John Doe';
 
 To specify these conditions in Drizzle, you can use `setWhere` and `targetWhere` clauses:
 
-```
+```typescript
 await db.insert(employees)
   .values({ employeeId: 123, name: 'John Doe' })
   .onConflictDoUpdate({
@@ -213,7 +169,7 @@ await db.insert(employees)
 
 Upsert with composite indexes, or composite primary keys for `onConflictDoUpdate`:
 
-```
+```typescript
 await db.insert(users)
   .values({ firstName: 'John', lastName: 'Doe' })
   .onConflictDoUpdate({
@@ -224,21 +180,11 @@ await db.insert(users)
 
 ### On duplicate key update[](#on-duplicate-key-update)
 
-PostgreSQL
-
-SQLite
-
-MySQL
-
-SingleStore
-
-CockroachDB
-
 MySQL supports [`ON DUPLICATE KEY UPDATE`](https://dev.mysql.com/doc/refman/8.0/en/insert-on-duplicate.html) instead of `ON CONFLICT` clauses. MySQL will automatically determine the conflict target based on the primary key and unique indexes, and will update the row if _any_ unique index conflicts.
 
 Drizzle supports this through the `onDuplicateKeyUpdate` method:
 
-```
+```typescript
 // Note that MySQL automatically determines targets based on the primary key and unique indexes
 await db.insert(users)
   .values({ id: 1, name: 'John' })
@@ -247,7 +193,7 @@ await db.insert(users)
 
 While MySQL does not directly support doing nothing on conflict, you can perform a no-op by setting any column’s value to itself and achieve the same effect:
 
-```
+```typescript
 import { sql } from 'drizzle-orm';
 
 await db.insert(users)
@@ -259,7 +205,7 @@ await db.insert(users)
 
 Using the `with` clause can help you simplify complex queries by splitting them into smaller subqueries called common table expressions (CTEs):
 
-```
+```typescript
 const userCount = db.$with('user_count').as(
 	db.select({ value: sql`count(*)`.as('value') }).from(users)
 );
@@ -274,7 +220,7 @@ const result = await db.with(userCount)
 	});
 ```
 
-```
+```sql
 with "user_count" as (select count(*) as "value" from "users") 
 insert into "users" ("username", "admin") 
 values ($1, ((select * from "user_count") = 0)) 
@@ -301,9 +247,9 @@ With INSERT … SELECT, you can quickly insert many rows into a table from the r
 
 Drizzle supports the current syntax for all dialects, and all of them share the same syntax. Let’s review some common scenarios and API usage. There are several ways to use select inside insert statements, allowing you to choose your preferred approach:
 
-*   You can pass a query builder inside the select function.
-*   You can use a query builder inside a callback.
-*   You can pass an SQL template tag with any custom select query you want to use
+-   You can pass a query builder inside the select function.
+-   You can use a query builder inside a callback.
+-   You can pass an SQL template tag with any custom select query you want to use
 
 Query Builder
 
@@ -311,7 +257,7 @@ Callback
 
 SQL template tag
 
-```
+```ts
 const insertedEmployees = await db
   .insert(employees)
   .select(
@@ -323,32 +269,32 @@ const insertedEmployees = await db
   });
 ```
 
-```
+```ts
 const qb = new QueryBuilder();
 await db.insert(employees).select(
     qb.select({ name: users.name }).from(users).where(eq(users.role, 'employee'))
 );
 ```
 
-```
+```ts
 await db.insert(employees).select(
     () => db.select({ name: users.name }).from(users).where(eq(users.role, 'employee'))
 );
 ```
 
-```
+```ts
 await db.insert(employees).select(
     (qb) => qb.select({ name: users.name }).from(users).where(eq(users.role, 'employee'))
 );
 ```
 
-```
+```ts
 await db.insert(employees).select(
     sql`select "users"."name" as "name" from "users" where "users"."role" = 'employee'`
 );
 ```
 
-```
+```ts
 await db.insert(employees).select(
     () => sql`select "users"."name" as "name" from "users" where "users"."role" = 'employee'`
 );

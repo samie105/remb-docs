@@ -5,10 +5,11 @@ canonical_url: "https://docs.deno.com/api/node/v8/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:43:26.749Z"
-content_hash: "6d3523317e92d49e6877c06c186ce30904e3a2aa2ac7bc4ba907bc7227ecce38"
+last_crawled_at: "2026-04-27T17:16:12.823Z"
+content_hash: "4927cf6e568f9d8280593b5408e882a28ffa543f7d8e9883db7dac54ba56ea4d"
 menu_path: ["v8 - Node documentation"]
 section_path: []
+content_language: "en"
 ---
 ### Usage in Deno
 
@@ -25,8 +26,6 @@ The `node:v8` module exposes APIs that are specific to the version of [V8](https
 ```js
 import v8 from 'node:v8';
 ```
-
-### Classes [#](#Classes)
 
 c
 
@@ -46,14 +45,14 @@ c
 
 No documentation available
 
-*   [getWireFormatVersion](.././v8/~/Deserializer#method_getwireformatversion_0)
-*   [readDouble](.././v8/~/Deserializer#method_readdouble_0)
-*   [readHeader](.././v8/~/Deserializer#method_readheader_0)
-*   [readRawBytes](.././v8/~/Deserializer#method_readrawbytes_0)
-*   [readUint32](.././v8/~/Deserializer#method_readuint32_0)
-*   [readUint64](.././v8/~/Deserializer#method_readuint64_0)
-*   [readValue](.././v8/~/Deserializer#method_readvalue_0)
-*   [transferArrayBuffer](.././v8/~/Deserializer#method_transferarraybuffer_0)
+-   [getWireFormatVersion](.././v8/~/Deserializer#method_getwireformatversion_0)
+-   [readDouble](.././v8/~/Deserializer#method_readdouble_0)
+-   [readHeader](.././v8/~/Deserializer#method_readheader_0)
+-   [readRawBytes](.././v8/~/Deserializer#method_readrawbytes_0)
+-   [readUint32](.././v8/~/Deserializer#method_readuint32_0)
+-   [readUint64](.././v8/~/Deserializer#method_readuint64_0)
+-   [readValue](.././v8/~/Deserializer#method_readvalue_0)
+-   [transferArrayBuffer](.././v8/~/Deserializer#method_transferarraybuffer_0)
 
 c
 
@@ -61,8 +60,8 @@ c
 
 This API collects GC data in current thread.
 
-*   [start](.././v8/~/GCProfiler#method_start_0)
-*   [stop](.././v8/~/GCProfiler#method_stop_0)
+-   [start](.././v8/~/GCProfiler#method_start_0)
+-   [stop](.././v8/~/GCProfiler#method_stop_0)
 
 c
 
@@ -70,16 +69,14 @@ c
 
 No documentation available
 
-*   [releaseBuffer](.././v8/~/Serializer#method_releasebuffer_0)
-*   [transferArrayBuffer](.././v8/~/Serializer#method_transferarraybuffer_0)
-*   [writeDouble](.././v8/~/Serializer#method_writedouble_0)
-*   [writeHeader](.././v8/~/Serializer#method_writeheader_0)
-*   [writeRawBytes](.././v8/~/Serializer#method_writerawbytes_0)
-*   [writeUint32](.././v8/~/Serializer#method_writeuint32_0)
-*   [writeUint64](.././v8/~/Serializer#method_writeuint64_0)
-*   [writeValue](.././v8/~/Serializer#method_writevalue_0)
-
-### Functions [#](#Functions)
+-   [releaseBuffer](.././v8/~/Serializer#method_releasebuffer_0)
+-   [transferArrayBuffer](.././v8/~/Serializer#method_transferarraybuffer_0)
+-   [writeDouble](.././v8/~/Serializer#method_writedouble_0)
+-   [writeHeader](.././v8/~/Serializer#method_writeheader_0)
+-   [writeRawBytes](.././v8/~/Serializer#method_writerawbytes_0)
+-   [writeUint32](.././v8/~/Serializer#method_writeuint32_0)
+-   [writeUint64](.././v8/~/Serializer#method_writeuint64_0)
+-   [writeValue](.././v8/~/Serializer#method_writevalue_0)
 
 f
 
@@ -159,8 +156,6 @@ f
 
 Generates a snapshot of the current V8 heap and writes it to a JSON file. This file is intended to be used with tools such as Chrome DevTools. The JSON schema is undocumented and specific to the V8 engine, and may change from one version of V8 to the next.
 
-### Interfaces [#](#Interfaces)
-
 I
 
 [After](.././v8/~/After "After")
@@ -179,10 +174,10 @@ I
 
 No documentation available
 
-*   [endTime](.././v8/~/GCProfilerResult#property_endtime)
-*   [startTime](.././v8/~/GCProfilerResult#property_starttime)
-*   [statistics](.././v8/~/GCProfilerResult#property_statistics)
-*   [version](.././v8/~/GCProfilerResult#property_version)
+-   [endTime](.././v8/~/GCProfilerResult#property_endtime)
+-   [startTime](.././v8/~/GCProfilerResult#property_starttime)
+-   [statistics](.././v8/~/GCProfilerResult#property_statistics)
+-   [version](.././v8/~/GCProfilerResult#property_version)
 
 I
 
@@ -190,9 +185,9 @@ I
 
 No documentation available
 
-*   [bytecode\_and\_metadata\_size](.././v8/~/HeapCodeStatistics#property_bytecode_and_metadata_size)
-*   [code\_and\_metadata\_size](.././v8/~/HeapCodeStatistics#property_code_and_metadata_size)
-*   [external\_script\_source\_size](.././v8/~/HeapCodeStatistics#property_external_script_source_size)
+-   [bytecode\_and\_metadata\_size](.././v8/~/HeapCodeStatistics#property_bytecode_and_metadata_size)
+-   [code\_and\_metadata\_size](.././v8/~/HeapCodeStatistics#property_code_and_metadata_size)
+-   [external\_script\_source\_size](.././v8/~/HeapCodeStatistics#property_external_script_source_size)
 
 I
 
@@ -200,20 +195,20 @@ I
 
 No documentation available
 
-*   [does\_zap\_garbage](.././v8/~/HeapInfo#property_does_zap_garbage)
-*   [external\_memory](.././v8/~/HeapInfo#property_external_memory)
-*   [heap\_size\_limit](.././v8/~/HeapInfo#property_heap_size_limit)
-*   [malloced\_memory](.././v8/~/HeapInfo#property_malloced_memory)
-*   [number\_of\_detached\_contexts](.././v8/~/HeapInfo#property_number_of_detached_contexts)
-*   [number\_of\_native\_contexts](.././v8/~/HeapInfo#property_number_of_native_contexts)
-*   [peak\_malloced\_memory](.././v8/~/HeapInfo#property_peak_malloced_memory)
-*   [total\_available\_size](.././v8/~/HeapInfo#property_total_available_size)
-*   [total\_global\_handles\_size](.././v8/~/HeapInfo#property_total_global_handles_size)
-*   [total\_heap\_size](.././v8/~/HeapInfo#property_total_heap_size)
-*   [total\_heap\_size\_executable](.././v8/~/HeapInfo#property_total_heap_size_executable)
-*   [total\_physical\_size](.././v8/~/HeapInfo#property_total_physical_size)
-*   [used\_global\_handles\_size](.././v8/~/HeapInfo#property_used_global_handles_size)
-*   [used\_heap\_size](.././v8/~/HeapInfo#property_used_heap_size)
+-   [does\_zap\_garbage](.././v8/~/HeapInfo#property_does_zap_garbage)
+-   [external\_memory](.././v8/~/HeapInfo#property_external_memory)
+-   [heap\_size\_limit](.././v8/~/HeapInfo#property_heap_size_limit)
+-   [malloced\_memory](.././v8/~/HeapInfo#property_malloced_memory)
+-   [number\_of\_detached\_contexts](.././v8/~/HeapInfo#property_number_of_detached_contexts)
+-   [number\_of\_native\_contexts](.././v8/~/HeapInfo#property_number_of_native_contexts)
+-   [peak\_malloced\_memory](.././v8/~/HeapInfo#property_peak_malloced_memory)
+-   [total\_available\_size](.././v8/~/HeapInfo#property_total_available_size)
+-   [total\_global\_handles\_size](.././v8/~/HeapInfo#property_total_global_handles_size)
+-   [total\_heap\_size](.././v8/~/HeapInfo#property_total_heap_size)
+-   [total\_heap\_size\_executable](.././v8/~/HeapInfo#property_total_heap_size_executable)
+-   [total\_physical\_size](.././v8/~/HeapInfo#property_total_physical_size)
+-   [used\_global\_handles\_size](.././v8/~/HeapInfo#property_used_global_handles_size)
+-   [used\_heap\_size](.././v8/~/HeapInfo#property_used_heap_size)
 
 I
 
@@ -221,8 +216,8 @@ I
 
 No documentation available
 
-*   [exposeInternals](.././v8/~/HeapSnapshotOptions#property_exposeinternals)
-*   [exposeNumericValues](.././v8/~/HeapSnapshotOptions#property_exposenumericvalues)
+-   [exposeInternals](.././v8/~/HeapSnapshotOptions#property_exposeinternals)
+-   [exposeNumericValues](.././v8/~/HeapSnapshotOptions#property_exposenumericvalues)
 
 I
 
@@ -230,11 +225,11 @@ I
 
 No documentation available
 
-*   [physical\_space\_size](.././v8/~/HeapSpaceInfo#property_physical_space_size)
-*   [space\_available\_size](.././v8/~/HeapSpaceInfo#property_space_available_size)
-*   [space\_name](.././v8/~/HeapSpaceInfo#property_space_name)
-*   [space\_size](.././v8/~/HeapSpaceInfo#property_space_size)
-*   [space\_used\_size](.././v8/~/HeapSpaceInfo#property_space_used_size)
+-   [physical\_space\_size](.././v8/~/HeapSpaceInfo#property_physical_space_size)
+-   [space\_available\_size](.././v8/~/HeapSpaceInfo#property_space_available_size)
+-   [space\_name](.././v8/~/HeapSpaceInfo#property_space_name)
+-   [space\_size](.././v8/~/HeapSpaceInfo#property_space_size)
+-   [space\_used\_size](.././v8/~/HeapSpaceInfo#property_space_used_size)
 
 I
 
@@ -242,11 +237,11 @@ I
 
 No documentation available
 
-*   [physicalSpaceSize](.././v8/~/HeapSpaceStatistics#property_physicalspacesize)
-*   [spaceAvailableSize](.././v8/~/HeapSpaceStatistics#property_spaceavailablesize)
-*   [spaceName](.././v8/~/HeapSpaceStatistics#property_spacename)
-*   [spaceSize](.././v8/~/HeapSpaceStatistics#property_spacesize)
-*   [spaceUsedSize](.././v8/~/HeapSpaceStatistics#property_spaceusedsize)
+-   [physicalSpaceSize](.././v8/~/HeapSpaceStatistics#property_physicalspacesize)
+-   [spaceAvailableSize](.././v8/~/HeapSpaceStatistics#property_spaceavailablesize)
+-   [spaceName](.././v8/~/HeapSpaceStatistics#property_spacename)
+-   [spaceSize](.././v8/~/HeapSpaceStatistics#property_spacesize)
+-   [spaceUsedSize](.././v8/~/HeapSpaceStatistics#property_spaceusedsize)
 
 I
 
@@ -254,17 +249,17 @@ I
 
 No documentation available
 
-*   [externalMemory](.././v8/~/HeapStatistics#property_externalmemory)
-*   [heapSizeLimit](.././v8/~/HeapStatistics#property_heapsizelimit)
-*   [mallocedMemory](.././v8/~/HeapStatistics#property_mallocedmemory)
-*   [peakMallocedMemory](.././v8/~/HeapStatistics#property_peakmallocedmemory)
-*   [totalAvailableSize](.././v8/~/HeapStatistics#property_totalavailablesize)
-*   [totalGlobalHandlesSize](.././v8/~/HeapStatistics#property_totalglobalhandlessize)
-*   [totalHeapSize](.././v8/~/HeapStatistics#property_totalheapsize)
-*   [totalHeapSizeExecutable](.././v8/~/HeapStatistics#property_totalheapsizeexecutable)
-*   [totalPhysicalSize](.././v8/~/HeapStatistics#property_totalphysicalsize)
-*   [usedGlobalHandlesSize](.././v8/~/HeapStatistics#property_usedglobalhandlessize)
-*   [usedHeapSize](.././v8/~/HeapStatistics#property_usedheapsize)
+-   [externalMemory](.././v8/~/HeapStatistics#property_externalmemory)
+-   [heapSizeLimit](.././v8/~/HeapStatistics#property_heapsizelimit)
+-   [mallocedMemory](.././v8/~/HeapStatistics#property_mallocedmemory)
+-   [peakMallocedMemory](.././v8/~/HeapStatistics#property_peakmallocedmemory)
+-   [totalAvailableSize](.././v8/~/HeapStatistics#property_totalavailablesize)
+-   [totalGlobalHandlesSize](.././v8/~/HeapStatistics#property_totalglobalhandlessize)
+-   [totalHeapSize](.././v8/~/HeapStatistics#property_totalheapsize)
+-   [totalHeapSizeExecutable](.././v8/~/HeapStatistics#property_totalheapsizeexecutable)
+-   [totalPhysicalSize](.././v8/~/HeapStatistics#property_totalphysicalsize)
+-   [usedGlobalHandlesSize](.././v8/~/HeapStatistics#property_usedglobalhandlessize)
+-   [usedHeapSize](.././v8/~/HeapStatistics#property_usedheapsize)
 
 I
 
@@ -272,10 +267,10 @@ I
 
 Key events in the lifetime of a promise have been categorized into four areas: creation of a promise, before/after a continuation handler is called or around an await, and when the promise resolves or rejects.
 
-*   [after](.././v8/~/HookCallbacks#property_after)
-*   [before](.././v8/~/HookCallbacks#property_before)
-*   [init](.././v8/~/HookCallbacks#property_init)
-*   [settled](.././v8/~/HookCallbacks#property_settled)
+-   [after](.././v8/~/HookCallbacks#property_after)
+-   [before](.././v8/~/HookCallbacks#property_before)
+-   [init](.././v8/~/HookCallbacks#property_init)
+-   [settled](.././v8/~/HookCallbacks#property_settled)
 
 I
 
@@ -289,11 +284,11 @@ I
 
 No documentation available
 
-*   [createHook](.././v8/~/PromiseHooks#property_createhook)
-*   [onAfter](.././v8/~/PromiseHooks#property_onafter)
-*   [onBefore](.././v8/~/PromiseHooks#property_onbefore)
-*   [onInit](.././v8/~/PromiseHooks#property_oninit)
-*   [onSettled](.././v8/~/PromiseHooks#property_onsettled)
+-   [createHook](.././v8/~/PromiseHooks#property_createhook)
+-   [onAfter](.././v8/~/PromiseHooks#property_onafter)
+-   [onBefore](.././v8/~/PromiseHooks#property_onbefore)
+-   [onInit](.././v8/~/PromiseHooks#property_oninit)
+-   [onSettled](.././v8/~/PromiseHooks#property_onsettled)
 
 I
 
@@ -307,12 +302,10 @@ I
 
 No documentation available
 
-*   [addDeserializeCallback](.././v8/~/StartupSnapshot#method_adddeserializecallback_0)
-*   [addSerializeCallback](.././v8/~/StartupSnapshot#method_addserializecallback_0)
-*   [isBuildingSnapshot](.././v8/~/StartupSnapshot#method_isbuildingsnapshot_0)
-*   [setDeserializeMainFunction](.././v8/~/StartupSnapshot#method_setdeserializemainfunction_0)
-
-### Type Aliases [#](<#Type Aliases>)
+-   [addDeserializeCallback](.././v8/~/StartupSnapshot#method_adddeserializecallback_0)
+-   [addSerializeCallback](.././v8/~/StartupSnapshot#method_addserializecallback_0)
+-   [isBuildingSnapshot](.././v8/~/StartupSnapshot#method_isbuildingsnapshot_0)
+-   [setDeserializeMainFunction](.././v8/~/StartupSnapshot#method_setdeserializemainfunction_0)
 
 T
 
@@ -325,8 +318,6 @@ T
 [StartupSnapshotCallbackFn](.././v8/~/StartupSnapshotCallbackFn "StartupSnapshotCallbackFn")
 
 No documentation available
-
-### Variables [#](#Variables)
 
 v
 

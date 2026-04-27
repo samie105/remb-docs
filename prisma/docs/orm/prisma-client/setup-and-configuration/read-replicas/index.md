@@ -5,14 +5,13 @@ canonical_url: "https://www.prisma.io/docs/orm/prisma-client/setup-and-configura
 docset: "prisma"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:47:41.824Z"
-content_hash: "8a085ff23774153e99cc1befc953de407fd86c62e74d3a4813ea94bfda74263d"
+last_crawled_at: "2026-04-27T19:39:30.441Z"
+content_hash: "3ba1897e5139b08cdb1ab68bb55dccf0ffa831f61c7d5388f1cec3a33532d9ae"
 menu_path: ["Read replicas"]
 section_path: []
-nav_prev: {"path": "prisma/docs/orm/prisma-client/setup-and-configuration/introduction/index.md", "title": "Introduction to Prisma Client"}
-nav_next: {"path": "prisma/docs/orm/prisma-client/special-fields-and-types/index.md", "title": "Fields & types"}
+tab_variants: ["npm","pnpm","yarn","bun"]
+content_language: "en"
 ---
-
 Setup and Configuration
 
 Learn how to set up and use read replicas with Prisma Client
@@ -105,5 +104,3 @@ You can use the `$replica()` method to explicitly execute your query against a r
 ```
 const result = await prisma.$replica().user.findFirst(...)
 ```
-
-[Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/prisma-client/setup-and-configuration/read-replicas.mdx)

@@ -5,14 +5,12 @@ canonical_url: "https://orm.drizzle.team/docs/valibot"
 docset: "drizzle"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:26:11.416Z"
-content_hash: "90815e1b5859f631aa41f4084e6fdf300643edb524d4d93a57dc10e137fe0b66"
+last_crawled_at: "2026-04-27T19:31:37.667Z"
+content_hash: "961898c12ce479ae713af37093bd1f388dd90b5e3c229d0a73fe321cc9f0d980"
 menu_path: ["valibot"]
 section_path: []
-nav_prev: {"path": "drizzle/docs/zod/index.md", "title": "zod"}
-nav_next: {"path": "drizzle/docs/typebox/index.md", "title": "typebox"}
+content_language: "en"
 ---
-
 WARNING
 
 Starting from `drizzle-orm@1.0.0-beta.15`, `drizzle-valibot` has been deprecated in favor of first-class schema generation support within Drizzle ORM itself
@@ -20,14 +18,6 @@ Starting from `drizzle-orm@1.0.0-beta.15`, `drizzle-valibot` has been deprecated
 You can still use `drizzle-valibot` package but all new update will be added to Drizzle ORM directly
 
 ### Install the dependencies[](#install-the-dependencies)
-
-npm
-
-yarn
-
-pnpm
-
-bun
 
 ```
 npm i valibot
@@ -49,7 +39,7 @@ bun add valibot
 
 Defines the shape of data queried from the database - can be used to validate API responses.
 
-```
+```ts
 import { pgTable, text, integer } from 'drizzle-orm/pg-core';
 import { createSelectSchema } from 'drizzle-orm/valibot';
 import { parse } from 'valibot';
@@ -71,7 +61,7 @@ const parsed: { id: number; name: string; age: number } = parse(userSelectSchema
 
 Views and enums are also supported.
 
-```
+```ts
 import { pgEnum } from 'drizzle-orm/pg-core';
 import { createSelectSchema } from 'drizzle-orm/valibot';
 import { parse } from 'valibot';
@@ -89,7 +79,7 @@ const parsed: { id: number; name: string; age: number } = parse(usersViewSchema,
 
 Defines the shape of data to be inserted into the database - can be used to validate API requests.
 
-```
+```ts
 import { pgTable, text, integer } from 'drizzle-orm/pg-core';
 import { createInsertSchema } from 'drizzle-orm/valibot';
 import { parse } from 'valibot';
@@ -114,7 +104,7 @@ await db.insert(users).values(parsed);
 
 Defines the shape of data to be updated in the database - can be used to validate API requests.
 
-```
+```ts
 import { pgTable, text, integer } from 'drizzle-orm/pg-core';
 import { createUpdateSchema } from 'drizzle-orm/valibot';
 import { parse } from 'valibot';
@@ -139,7 +129,7 @@ await db.update(users).set(parsed).where(eq(users.name, 'Jane'));
 
 Each create schema function accepts an additional optional parameter that you can used to extend, modify or completely overwite a field’s schema. Defining a callback function will extend or modify while providing a Valibot schema will overwrite it.
 
-```
+```ts
 import { pgTable, text, integer, json } from 'drizzle-orm/pg-core';
 import { createSelectSchema } from 'drizzle-orm/valibot';
 import { parse, pipe, maxLength, object, string } from 'valibot';
@@ -169,7 +159,7 @@ const parsed: {
 
 ### Data type reference[](#data-type-reference)
 
-```
+```ts
 pg.boolean();
 
 mysql.boolean();
@@ -180,7 +170,7 @@ sqlite.integer({ mode: 'boolean' });
 boolean();
 ```
 
-```
+```ts
 pg.date({ mode: 'date' });
 pg.timestamp({ mode: 'date' });
 
@@ -195,7 +185,7 @@ sqlite.integer({ mode: 'timestamp_ms' });
 date();
 ```
 
-```
+```ts
 pg.date({ mode: 'string' });
 pg.timestamp({ mode: 'string' });
 pg.cidr();
@@ -223,21 +213,21 @@ sqlite.text({ mode: 'text' });
 string();
 ```
 
-```
+```ts
 pg.bit({ dimensions: ... });
 
 // Schema
 pipe(string(), regex(/^[01]+$/), maxLength(dimensions));
 ```
 
-```
+```ts
 pg.uuid();
 
 // Schema
 pipe(string(), uuid());
 ```
 
-```
+```ts
 pg.char({ length: ... });
 
 mysql.char({ length: ... });
@@ -246,7 +236,7 @@ mysql.char({ length: ... });
 pipe(string(), length(length));
 ```
 
-```
+```ts
 pg.varchar({ length: ... });
 
 mysql.varchar({ length: ... });
@@ -257,35 +247,35 @@ sqlite.text({ mode: 'text', length: ... });
 pipe(string(), maxLength(length));
 ```
 
-```
+```ts
 mysql.tinytext();
 
 // Schema
 pipe(string(), maxLength(255)); // unsigned 8-bit integer limit
 ```
 
-```
+```ts
 mysql.text();
 
 // Schema
 pipe(string(), maxLength(65_535)); // unsigned 16-bit integer limit
 ```
 
-```
+```ts
 mysql.mediumtext();
 
 // Schema
 pipe(string(), maxLength(16_777_215)); // unsigned 24-bit integer limit
 ```
 
-```
+```ts
 mysql.longtext();
 
 // Schema
 pipe(string(), maxLength(4_294_967_295)); // unsigned 32-bit integer limit
 ```
 
-```
+```ts
 pg.text({ enum: ... });
 pg.char({ enum: ... });
 pg.varchar({ enum: ... });
@@ -304,21 +294,21 @@ sqlite.text({ mode: 'text', enum: ... });
 enum(enum);
 ```
 
-```
+```ts
 mysql.tinyint();
 
 // Schema
 pipe(number(), minValue(-128), maxValue(127), integer()); // 8-bit integer lower and upper limit
 ```
 
-```
+```ts
 mysql.tinyint({ unsigned: true });
 
 // Schema
 pipe(number(), minValue(0), maxValue(255), integer()); // unsigned 8-bit integer lower and upper limit
 ```
 
-```
+```ts
 pg.smallint();
 pg.smallserial();
 
@@ -328,14 +318,14 @@ mysql.smallint();
 pipe(number(), minValue(-32_768), maxValue(32_767), integer()); // 16-bit integer lower and upper limit
 ```
 
-```
+```ts
 mysql.smallint({ unsigned: true });
 
 // Schema
 pipe(number(), minValue(0), maxValue(65_535), integer()); // unsigned 16-bit integer lower and upper limit
 ```
 
-```
+```ts
 pg.real();
 
 mysql.float();
@@ -344,28 +334,28 @@ mysql.float();
 pipe(number(), minValue(-8_388_608), maxValue(8_388_607)); // 24-bit integer lower and upper limit
 ```
 
-```
+```ts
 mysql.mediumint();
 
 // Schema
 pipe(number(), minValue(-8_388_608), maxValue(8_388_607), integer()); // 24-bit integer lower and upper limit
 ```
 
-```
+```ts
 mysql.float({ unsigned: true });
 
 // Schema
 pipe(number(), minValue(0), maxValue(16_777_215)); // unsigned 24-bit integer lower and upper limit
 ```
 
-```
+```ts
 mysql.mediumint({ unsigned: true });
 
 // Schema
 pipe(number(), minValue(0), maxValue(16_777_215), integer()); // unsigned 24-bit integer lower and upper limit
 ```
 
-```
+```ts
 pg.integer();
 pg.serial();
 
@@ -375,14 +365,14 @@ mysql.int();
 pipe(number(), minValue(-2_147_483_648), maxValue(2_147_483_647), integer()); // 32-bit integer lower and upper limit
 ```
 
-```
+```ts
 mysql.int({ unsigned: true });
 
 // Schema
 pipe(number(), minValue(0), maxValue(4_294_967_295), integer()); // unsgined 32-bit integer lower and upper limit
 ```
 
-```
+```ts
 pg.doublePrecision();
 
 mysql.double();
@@ -394,14 +384,14 @@ sqlite.real();
 pipe(number(), minValue(-140_737_488_355_328), maxValue(140_737_488_355_327)); // 48-bit integer lower and upper limit
 ```
 
-```
+```ts
 mysql.double({ unsigned: true });
 
 // Schema
 pipe(number(), minValue(0), maxValue(281_474_976_710_655)); // unsigned 48-bit integer lower and upper limit
 ```
 
-```
+```ts
 pg.bigint({ mode: 'number' });
 pg.bigserial({ mode: 'number' });
 
@@ -414,14 +404,14 @@ sqlite.integer({ mode: 'number' });
 pipe(number(), minValue(-9_007_199_254_740_991), maxValue(9_007_199_254_740_991), integer()); // Javascript min. and max. safe integers
 ```
 
-```
+```ts
 mysql.serial();
 
 // Schema
 pipe(number(), minValue(0), maxValue(9_007_199_254_740_991), integer()); // Javascript max. safe integer
 ```
 
-```
+```ts
 pg.bigint({ mode: 'bigint' });
 pg.bigserial({ mode: 'bigint' });
 
@@ -433,21 +423,21 @@ sqlite.blob({ mode: 'bigint' });
 pipe(bigint(), minValue(-9_223_372_036_854_775_808n), maxValue(9_223_372_036_854_775_807n)); // 64-bit integer lower and upper limit
 ```
 
-```
+```ts
 mysql.bigint({ mode: 'bigint', unsigned: true });
 
 // Schema
 pipe(bigint(), minValue(0n), maxValue(18_446_744_073_709_551_615n)); // unsigned 64-bit integer lower and upper limit
 ```
 
-```
+```ts
 mysql.year();
 
 // Schema
 pipe(number(), minValue(1_901), maxValue(2_155), integer());
 ```
 
-```
+```ts
 pg.geometry({ type: 'point', mode: 'tuple' });
 pg.point({ mode: 'tuple' });
 
@@ -455,7 +445,7 @@ pg.point({ mode: 'tuple' });
 tuple([number(), number()]);
 ```
 
-```
+```ts
 pg.geometry({ type: 'point', mode: 'xy' });
 pg.point({ mode: 'xy' });
 
@@ -463,7 +453,7 @@ pg.point({ mode: 'xy' });
 object({ x: number(), y: number() });
 ```
 
-```
+```ts
 pg.halfvec({ dimensions: ... });
 pg.vector({ dimensions: ... });
 
@@ -471,21 +461,21 @@ pg.vector({ dimensions: ... });
 pipe(array(number()), length(dimensions));
 ```
 
-```
+```ts
 pg.line({ mode: 'abc' });
 
 // Schema
 object({ a: number(), b: number(), c: number() });
 ```
 
-```
+```ts
 pg.line({ mode: 'tuple' });
 
 // Schema
 tuple([number(), number(), number()]);
 ```
 
-```
+```ts
 pg.json();
 pg.jsonb();
 
@@ -498,14 +488,14 @@ sqlite.text({ mode: 'json' });
 union([union([string(), number(), boolean(), null_()]), array(any()), record(string(), any())]);
 ```
 
-```
+```ts
 sqlite.blob({ mode: 'buffer' });
 
 // Schema
 custom<Buffer>((v) => v instanceof Buffer);
 ```
 
-```
+```ts
 pg.dataType().array(...);
 
 // Schema

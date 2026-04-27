@@ -5,41 +5,46 @@ canonical_url: "https://tailwindcss.com/docs/outline-width"
 docset: "tailwind"
 kind: "framework"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:03:26.386Z"
-content_hash: "a32f03b6bd854e0a0defaf81bab60d80a4b2e8f0f55c925d11049f19917157f3"
+last_crawled_at: "2026-04-27T20:19:18.416Z"
+content_hash: "fe824e165aac2251f4bda46bb9a0f6b3b15bfbd4a2b020011b1782b9d0fce24e"
 menu_path: ["outline-width"]
 section_path: []
-nav_prev: {"path": "tailwind/docs/border-style/index.md", "title": "border-style"}
-nav_next: {"path": "tailwind/docs/outline-color/index.md", "title": "outline-color"}
+content_language: "en"
 ---
+[](/)
+
+[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
+
+1.  Borders
+2.  outline-width
+
+Borders
 
 # outline-width
 
 Utilities for controlling the width of an element's outline.
 
-Class
-
-Styles
-
-`outline`
-
+| Class | Styles |
+| --- | --- |
+| `outline` | 
 `outline-width: 1px;`
 
-`outline-<number>`
+ |
+| `outline-<number>` | 
 
 `outline-width: <number>px;`
 
-`outline-(length:<custom-property>)`
+ |
+| `outline-(length:<custom-property>)` | 
 
 `outline-width: var(<custom-property>);`
 
-`outline-[<value>]`
+ |
+| `outline-[<value>]` | 
 
 `outline-width: <value>;`
 
-## [Examples](#examples)
-
-### [Basic example](#basic-example)
+ |
 
 Use `outline` or `outline-<number>` utilities like `outline-2` and `outline-4` to set the width of an element's outline:
 
@@ -53,8 +58,6 @@ outline-4
 <button class="outline outline-offset-2 ...">Button A</button><button class="outline-2 outline-offset-2 ...">Button B</button><button class="outline-4 outline-offset-2 ...">Button C</button>
 ```
 
-### [Applying on focus](#applying-on-focus)
-
 Prefix an `outline-width` utility with a variant like `focus:*` to only apply the utility in that state:
 
 Focus the button to see the outline added
@@ -64,8 +67,6 @@ Focus the button to see the outline added
 ```
 
 Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
-
-### [Using a custom value](#using-a-custom-value)
 
 Use the `outline-[<value>]` syntax to set the outline width based on a completely custom value:
 
@@ -81,8 +82,6 @@ For CSS variables, you can also use the `outline-(length:<custom-property>)` syn
 
 This is just a shorthand for `outline-[length:var(<custom-property>)]` that adds the `var()` function for you automatically.
 
-### [Responsive design](#responsive-design)
-
 Prefix an `outline-width` utility with a breakpoint variant like `md:` to only apply the utility at medium screen sizes and above:
 
 ```
@@ -93,25 +92,21 @@ Learn more about using variants in the [variants documentation](/docs/hover-focu
 
 ### On this page
 
-*   [Quick reference](#quick-reference)
-*   [Examples](#examples)
-    *   [Basic example](#basic-example)
-    *   [Applying on focus](#applying-on-focus)
-    *   [Using a custom value](#using-a-custom-value)
-    *   [Responsive design](#responsive-design)
+-   [Quick reference](#quick-reference)
+-   [Examples](#examples)
+    -   [Basic example](#basic-example)
+    -   [Applying on focus](#applying-on-focus)
+    -   [Using a custom value](#using-a-custom-value)
+    -   [Responsive design](#responsive-design)
 
-[
+![Build UIs that don’t suck — 5-day mini-course](/_next/static/media/course-promo.d3d6bc78.jpg)
 
-![Refactoring UI](/_next/static/media/book-promo.3012c0f6.png)
+5-day mini-course
 
-From the creators of Tailwind CSS
+Build UIs that don’t suck.
 
-Make your ideas look awesome, without relying on a designer.
+Short, tactical video lessons from the creator of Tailwind CSS, delivered directly to your inbox every day for a week.
 
-> “This is the survival kit I wish I had when I started building apps.”
-> 
-> Derrick Reimer, SavvyCal
-
-](https://www.refactoringui.com/?ref=sidebar)
+[Get the free course](/build-uis-that-dont-suck)
 
 Copyright © 2026 Tailwind Labs Inc.·[Trademark Policy](/brand)

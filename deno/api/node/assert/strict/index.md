@@ -5,10 +5,11 @@ canonical_url: "https://docs.deno.com/api/node/assert/strict/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:16:06.946Z"
-content_hash: "a334f45bee005d969c12ae8d809c8ffba6e0c0fcd4005a59d7bd4ba6124f1d19"
+last_crawled_at: "2026-04-27T18:02:56.270Z"
+content_hash: "b3c4a8d61e82665e95a43e4c00d62fd2326c983b769fa6ca7ac4319984f55bf8"
 menu_path: ["namespace assert.strict"]
 section_path: []
+content_language: "en"
 ---
 # namespace assert.strict
 
@@ -46,8 +47,6 @@ assert.deepEqual([[[1, 2, 3]], 4, 5], [[[1, 2, '3']], 4, 5]);
 
 To deactivate the colors, use the `NO_COLOR` or `NODE_DISABLE_COLORS` environment variables. This will also deactivate the colors in the REPL. For more on color support in terminal environments, read the tty `getColorDepth()` documentation.
 
-### Type Aliases [#](<#Type Aliases>)
-
 T
 
 [assert.strict.AssertionError](../.././assert/~/assert.strict.AssertionError "assert.strict.AssertionError")
@@ -73,5 +72,3 @@ T
 No documentation available
 
 # variable assert.strict
-
-### Type [#](#type)

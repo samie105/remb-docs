@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/app/guides/single-page-applications"
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:16:19.914Z"
-content_hash: "0b0eec81cdd998e3ee60034b6ee776d9ae56acb59ea6cab51ade6dcd35e1aa69"
+last_crawled_at: "2026-04-27T18:15:34.090Z"
+content_hash: "a58ca26f3dc1235ef4d7100952d7071e2e29d7d1fb12bb7b4f08d972fb8e123b"
 menu_path: ["How to build single-page applications with Next.js"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/guides/self-hosting/index.md", "title": "How to self-host your Next.js application"}
-nav_next: {"path": "nextjs/docs/app/guides/static-exports/index.md", "title": "How to create a static export of your Next.js application"}
+version: "latest"
+content_language: "en"
 ---
+[App Router](/docs/app)[Guides](/docs/app/guides)SPAs
 
 # How to build single-page applications with Next.js
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 Next.js fully supports building Single-Page Applications (SPAs).
 
@@ -27,8 +28,8 @@ If you have an existing SPA, you can migrate to Next.js without large changes to
 
 The definition of a SPA varies. We’ll define a “strict SPA” as:
 
-*   **Client-side rendering (CSR)**: The app is served by one HTML file (e.g. `index.html`). Every route, page transition, and data fetch is handled by JavaScript in the browser.
-*   **No full-page reloads**: Rather than requesting a new document for each route, client-side JavaScript manipulates the current page’s DOM and fetches data as needed.
+-   **Client-side rendering (CSR)**: The app is served by one HTML file (e.g. `index.html`). Every route, page transition, and data fetch is handled by JavaScript in the browser.
+-   **No full-page reloads**: Rather than requesting a new document for each route, client-side JavaScript manipulates the current page’s DOM and fetches data as needed.
 
 Strict SPAs often require large amounts of JavaScript to load before the page can be interactive. Further, client data waterfalls can be challenging to manage. Building SPAs with Next.js can address these issues.
 
@@ -55,8 +56,6 @@ By “hoisting” your data fetching to the root layout, Next.js starts the spec
 For example, update your root layout to call the Promise, but do _not_ await it.
 
 app/layout.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -86,8 +85,6 @@ While you can [defer and pass a single Promise](/docs/app/getting-started/fetchi
 You can forward a Promise to the React context provider:
 
 app/user-provider.ts
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -130,8 +127,6 @@ Finally, you can call the `useUser()` custom hook in any Client Component and un
 
 app/profile.tsx
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -156,15 +151,13 @@ The component that consumes the Promise (e.g. `Profile` above) will be suspended
 
 With SWR 2.3.0 (and React 19+), you can gradually adopt server features alongside your existing SWR-based client data fetching code. This is an abstraction of the above `use()` pattern. This means you can move data fetching between the client and server-side, or use both:
 
-*   **Client-only:** `useSWR(key, fetcher)`
-*   **Server-only:** `useSWR(key)` + RSC-provided data
-*   **Mixed:** `useSWR(key, fetcher)` + RSC-provided data
+-   **Client-only:** `useSWR(key, fetcher)`
+-   **Server-only:** `useSWR(key)` + RSC-provided data
+-   **Mixed:** `useSWR(key, fetcher)` + RSC-provided data
 
 For example, wrap your application with `<SWRConfig>` and a `fallback`:
 
 app/layout.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -197,8 +190,6 @@ Because this is a Server Component, `getUser()` can securely read cookies, heade
 
 app/profile.tsx
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -219,19 +210,12 @@ The `fallback` data can be prerendered and included in the initial HTML response
 
 Since the initial `fallback` data is automatically handled by Next.js, you can now delete any conditional logic previously needed to check if `data` was `undefined`. When the data is loading, the closest `<Suspense>` boundary will be suspended.
 
-SWR
-
-RSC
-
-RSC + SWR
-
-SSR data
-
-Streaming while SSR
-
-Deduplicate requests
-
-Client-side features
+|  | SWR | RSC | RSC + SWR |
+| --- | --- | --- | --- |
+| SSR data |  |  |  |
+| Streaming while SSR |  |  |  |
+| Deduplicate requests |  |  |  |
+| Client-side features |  |  |  |
 
 ### SPAs with React Query[](#spas-with-react-query)
 
@@ -294,8 +278,6 @@ For example, create your first Server Action:
 
 app/actions.ts
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -307,8 +289,6 @@ export async function create() {}
 You can import and use a Server Action from the client, similar to calling a JavaScript function. You do not need to create an API endpoint manually:
 
 app/button.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -328,8 +308,8 @@ Learn more about [mutating data with Server Actions](/docs/app/getting-started/m
 
 Next.js also supports generating a fully [static site](/docs/app/guides/static-exports). This has some advantages over strict SPAs:
 
-*   **Automatic code-splitting**: Instead of shipping a single `index.html`, Next.js will generate an HTML file per route, so your visitors get the content faster without waiting for the client JavaScript bundle.
-*   **Improved user experience:** Instead of a minimal skeleton for all routes, you get fully rendered pages for each route. When users navigate client side, transitions remain instant and SPA-like.
+-   **Automatic code-splitting**: Instead of shipping a single `index.html`, Next.js will generate an HTML file per route, so your visitors get the content faster without waiting for the client JavaScript bundle.
+-   **Improved user experience:** Instead of a minimal skeleton for all routes, you get fully rendered pages for each route. When users navigate client side, transitions remain instant and SPA-like.
 
 To enable a static export, update your configuration:
 
@@ -353,25 +333,9 @@ After running `next build`, Next.js will create an `out` folder with the HTML/CS
 
 You can incrementally migrate to Next.js by following our guides:
 
-*   [Migrating from Create React App](/docs/app/guides/migrating/from-create-react-app)
-*   [Migrating from Vite](/docs/app/guides/migrating/from-vite)
+-   [Migrating from Create React App](/docs/app/guides/migrating/from-create-react-app)
+-   [Migrating from Vite](/docs/app/guides/migrating/from-vite)
 
 If you are already using a SPA with the Pages Router, you can learn how to [incrementally adopt the App Router](/docs/app/guides/migrating/app-router-migration).
 
-[Previous
-
-Self-Hosting
-
-](/docs/app/guides/self-hosting)
-
-[Next
-
-Static Exports
-
-](/docs/app/guides/static-exports)
-
 Was this helpful?
-
-supported.
-
-Send

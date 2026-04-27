@@ -5,15 +5,16 @@ canonical_url: "https://docs.deno.com/runtime/reference/std/cbor/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:00:30.288Z"
-content_hash: "fd7f2cdfaf5014fd3068a2394b05991085fd59cd670b66616072f1af208cbff8"
+last_crawled_at: "2026-04-27T17:39:34.796Z"
+content_hash: "d4dd0356ad33ae792606d672587db947385a529f6e8462f470e0f45bb1b75e4f"
 menu_path: ["@std/cbor"]
 section_path: []
+content_language: "en"
 ---
-On this page
+**On this page**
 
-*   [Overview](#overview)
-    *   [Add to your project](#add-to-your-project)
+-   [Overview](#overview)
+    -   [Add to your project](#add-to-your-project)
 
 Unstable
 
@@ -25,9 +26,9 @@ Concise Binary Object Representation (CBOR) is a binary data serialization forma
 
 ### Limitations
 
-*   This implementation only supports the encoding and decoding of "Text String" keys.
-*   This implementation encodes decimal numbers with 64 bits. It takes no effort to figure out if the decimal can be encoded with 32 or 16 bits.
-*   When decoding, integers with a value below 2 \*\* 32 will be of type [number](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number), with all larger integers being of type [bigint](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/BigInt).
+-   This implementation only supports the encoding and decoding of "Text String" keys.
+-   This implementation encodes decimal numbers with 64 bits. It takes no effort to figure out if the decimal can be encoded with 32 or 16 bits.
+-   When decoding, integers with a value below 2 \*\* 32 will be of type [number](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number), with all larger integers being of type [bigint](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/BigInt).
 
 Functions and classes may have more specific limitations listed.
 

@@ -5,17 +5,19 @@ canonical_url: "https://nextjs.org/docs/app/guides/debugging"
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:14:29.830Z"
-content_hash: "ea69e8457b63482d0505bd8cb585af1a8f9abb445e9a132fb0a1fa144aa40864"
+last_crawled_at: "2026-04-27T18:13:23.808Z"
+content_hash: "24461196f063079ef040297f904a70612e015b41a15eb40067dda0c384e727d3"
 menu_path: ["How to use debugging tools with Next.js"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/guides/data-security/index.md", "title": "How to think about data security in Next.js"}
-nav_next: {"path": "nextjs/docs/app/guides/deploying-to-platforms/index.md", "title": "Deploying Next.js to different platforms"}
+version: "latest"
+tab_variants: ["pnpm","npm","yarn","bun"]
+content_language: "en"
 ---
+[App Router](/docs/app)[Guides](/docs/app/guides)Debugging
 
 # How to use debugging tools with Next.js
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 This documentation explains how you can debug your Next.js frontend and backend code with full source maps support using the [VS Code debugger](https://code.visualstudio.com/docs/editor/debugging), [Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools), or [Firefox DevTools](https://firefox-source-docs.mozilla.org/devtools-user/).
 
@@ -99,18 +101,18 @@ Start your development server as usual by running `next dev`, `npm run dev`, or 
 
 For Chrome:
 
-*   Open Chrome's Developer Tools (`Ctrl+Shift+J` on Windows/Linux, `⌥+⌘+I` on macOS)
-*   Go to the **Sources** tab
+-   Open Chrome's Developer Tools (`Ctrl+Shift+J` on Windows/Linux, `⌥+⌘+I` on macOS)
+-   Go to the **Sources** tab
 
 For Firefox:
 
-*   Open Firefox's Developer Tools (`Ctrl+Shift+I` on Windows/Linux, `⌥+⌘+I` on macOS)
-*   Go to the **Debugger** tab
+-   Open Firefox's Developer Tools (`Ctrl+Shift+I` on Windows/Linux, `⌥+⌘+I` on macOS)
+-   Go to the **Debugger** tab
 
 In either browser, any time your client-side code reaches a [`debugger`](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/debugger) statement, code execution will pause and that file will appear in the debug area. You can also search for files to set breakpoints manually:
 
-*   In Chrome: Press `Ctrl+P` on Windows/Linux or `⌘+P` on macOS
-*   In Firefox: Press `Ctrl+P` on Windows/Linux or `⌘+P` on macOS, or use the file tree in the left panel
+-   In Chrome: Press `Ctrl+P` on Windows/Linux or `⌘+P` on macOS
+-   In Firefox: Press `Ctrl+P` on Windows/Linux or `⌘+P` on macOS, or use the file tree in the left panel
 
 Note that when searching, your source files will have paths starting with `webpack://_N_E/./`.
 
@@ -118,15 +120,29 @@ Note that when searching, your source files will have paths starting with `webpa
 
 For React-specific debugging, install the [React Developer Tools](https://react.dev/learn/react-developer-tools) browser extension. This essential tool helps you:
 
-*   Inspect React components
-*   Edit props and state
-*   Identify performance problems
+-   Inspect React components
+-   Edit props and state
+-   Identify performance problems
 
 ### Server-side code[](#server-side-code)
 
 To debug server-side Next.js code with browser DevTools, you need to pass the `--inspect` flag:
 
-pnpmnpmyarnbun
+#### pnpm
+
+pnpm
+
+#### npm
+
+npm
+
+#### yarn
+
+yarn
+
+#### bun
+
+bun
 
 Terminal
 
@@ -181,24 +197,8 @@ Ensure Windows Defender is disabled on your machine. This external service will 
 
 To learn more about how to use a JavaScript debugger, take a look at the following documentation:
 
-*   [Node.js debugging in VS Code: Breakpoints](https://code.visualstudio.com/docs/nodejs/nodejs-debugging#_breakpoints)
-*   [Chrome DevTools: Debug JavaScript](https://developers.google.com/web/tools/chrome-devtools/javascript)
-*   [Firefox DevTools: Debugger](https://firefox-source-docs.mozilla.org/devtools-user/debugger/)
-
-[Previous
-
-Data Security
-
-](/docs/app/guides/data-security)
-
-[Next
-
-Deploying to Platforms
-
-](/docs/app/guides/deploying-to-platforms)
+-   [Node.js debugging in VS Code: Breakpoints](https://code.visualstudio.com/docs/nodejs/nodejs-debugging#_breakpoints)
+-   [Chrome DevTools: Debug JavaScript](https://developers.google.com/web/tools/chrome-devtools/javascript)
+-   [Firefox DevTools: Debugger](https://firefox-source-docs.mozilla.org/devtools-user/debugger/)
 
 Was this helpful?
-
-supported.
-
-Send

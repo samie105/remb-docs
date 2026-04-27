@@ -5,10 +5,11 @@ canonical_url: "https://docs.deno.com/api/node/test/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:41:34.224Z"
-content_hash: "f30b68c81e12c804b64f466d31132aa5dea0c7b12850eea081f7465def0b5110"
+last_crawled_at: "2026-04-27T17:13:29.316Z"
+content_hash: "e45bc4cc7c9fc6c8d84e4b0dfdcad1e9356f781a73d0efcda9bcf5361b35aeea"
 menu_path: ["test - Node documentation"]
 section_path: []
+content_language: "en"
 ---
 ### Usage in Deno
 
@@ -85,20 +86,18 @@ test('callback failing test', (t, done) => {
 
 If any tests fail, the process exit code is set to `1`.
 
-### Classes [#](#Classes)
-
 c
 
 [MockFunctionContext](.././test/~/MockFunctionContext "MockFunctionContext")
 
 The `MockFunctionContext` class is used to inspect or manipulate the behavior of mocks created via the `MockTracker` APIs.
 
-*   [callCount](.././test/~/MockFunctionContext#method_callcount_0)
-*   [calls](.././test/~/MockFunctionContext#property_calls)
-*   [mockImplementation](.././test/~/MockFunctionContext#method_mockimplementation_0)
-*   [mockImplementationOnce](.././test/~/MockFunctionContext#method_mockimplementationonce_0)
-*   [resetCalls](.././test/~/MockFunctionContext#method_resetcalls_0)
-*   [restore](.././test/~/MockFunctionContext#method_restore_0)
+-   [callCount](.././test/~/MockFunctionContext#method_callcount_0)
+-   [calls](.././test/~/MockFunctionContext#property_calls)
+-   [mockImplementation](.././test/~/MockFunctionContext#method_mockimplementation_0)
+-   [mockImplementationOnce](.././test/~/MockFunctionContext#method_mockimplementationonce_0)
+-   [resetCalls](.././test/~/MockFunctionContext#method_resetcalls_0)
+-   [restore](.././test/~/MockFunctionContext#method_restore_0)
 
 c
 
@@ -106,7 +105,7 @@ c
 
 No documentation available
 
-*   [restore](.././test/~/MockModuleContext#method_restore_0)
+-   [restore](.././test/~/MockModuleContext#method_restore_0)
 
 c
 
@@ -114,11 +113,11 @@ c
 
 Mocking timers is a technique commonly used in software testing to simulate and control the behavior of timers, such as `setInterval` and `setTimeout`, without actually waiting for the specified time intervals.
 
-*   [enable](.././test/~/MockTimers#method_enable_0)
-*   [reset](.././test/~/MockTimers#method_reset_0)
-*   [runAll](.././test/~/MockTimers#method_runall_0)
-*   [setTime](.././test/~/MockTimers#method_settime_0)
-*   [tick](.././test/~/MockTimers#method_tick_0)
+-   [enable](.././test/~/MockTimers#method_enable_0)
+-   [reset](.././test/~/MockTimers#method_reset_0)
+-   [runAll](.././test/~/MockTimers#method_runall_0)
+-   [setTime](.././test/~/MockTimers#method_settime_0)
+-   [tick](.././test/~/MockTimers#method_tick_0)
 
 c
 
@@ -126,14 +125,14 @@ c
 
 The `MockTracker` class is used to manage mocking functionality. The test runner module provides a top level `mock` export which is a `MockTracker` instance. Each test also provides its own `MockTracker` instance via the test context's `mock` property.
 
-*   [fn](.././test/~/MockTracker#method_fn_0)
-*   [getter](.././test/~/MockTracker#method_getter_0)
-*   [method](.././test/~/MockTracker#method_method_0)
-*   [module](.././test/~/MockTracker#method_module_0)
-*   [reset](.././test/~/MockTracker#method_reset_0)
-*   [restoreAll](.././test/~/MockTracker#method_restoreall_0)
-*   [setter](.././test/~/MockTracker#method_setter_0)
-*   [timers](.././test/~/MockTracker#property_timers)
+-   [fn](.././test/~/MockTracker#method_fn_0)
+-   [getter](.././test/~/MockTracker#method_getter_0)
+-   [method](.././test/~/MockTracker#method_method_0)
+-   [module](.././test/~/MockTracker#method_module_0)
+-   [reset](.././test/~/MockTracker#method_reset_0)
+-   [restoreAll](.././test/~/MockTracker#method_restoreall_0)
+-   [setter](.././test/~/MockTracker#method_setter_0)
+-   [timers](.././test/~/MockTracker#property_timers)
 
 c
 
@@ -141,9 +140,9 @@ c
 
 An instance of `SuiteContext` is passed to each suite function in order to interact with the test runner. However, the `SuiteContext` constructor is not exposed as part of the API.
 
-*   [filePath](.././test/~/SuiteContext#property_filepath)
-*   [name](.././test/~/SuiteContext#property_name)
-*   [signal](.././test/~/SuiteContext#property_signal)
+-   [filePath](.././test/~/SuiteContext#property_filepath)
+-   [name](.././test/~/SuiteContext#property_name)
+-   [signal](.././test/~/SuiteContext#property_signal)
 
 c
 
@@ -151,23 +150,23 @@ c
 
 An instance of `TestContext` is passed to each test function in order to interact with the test runner. However, the `TestContext` constructor is not exposed as part of the API.
 
-*   [after](.././test/~/TestContext#method_after_0)
-*   [afterEach](.././test/~/TestContext#method_aftereach_0)
-*   [assert](.././test/~/TestContext#property_assert)
-*   [before](.././test/~/TestContext#method_before_0)
-*   [beforeEach](.././test/~/TestContext#method_beforeeach_0)
-*   [diagnostic](.././test/~/TestContext#method_diagnostic_0)
-*   [filePath](.././test/~/TestContext#property_filepath)
-*   [fullName](.././test/~/TestContext#property_fullname)
-*   [mock](.././test/~/TestContext#property_mock)
-*   [name](.././test/~/TestContext#property_name)
-*   [plan](.././test/~/TestContext#method_plan_0)
-*   [runOnly](.././test/~/TestContext#method_runonly_0)
-*   [signal](.././test/~/TestContext#property_signal)
-*   [skip](.././test/~/TestContext#method_skip_0)
-*   [test](.././test/~/TestContext#property_test)
-*   [todo](.././test/~/TestContext#method_todo_0)
-*   [waitFor](.././test/~/TestContext#method_waitfor_0)
+-   [after](.././test/~/TestContext#method_after_0)
+-   [afterEach](.././test/~/TestContext#method_aftereach_0)
+-   [assert](.././test/~/TestContext#property_assert)
+-   [before](.././test/~/TestContext#method_before_0)
+-   [beforeEach](.././test/~/TestContext#method_beforeeach_0)
+-   [diagnostic](.././test/~/TestContext#method_diagnostic_0)
+-   [filePath](.././test/~/TestContext#property_filepath)
+-   [fullName](.././test/~/TestContext#property_fullname)
+-   [mock](.././test/~/TestContext#property_mock)
+-   [name](.././test/~/TestContext#property_name)
+-   [plan](.././test/~/TestContext#method_plan_0)
+-   [runOnly](.././test/~/TestContext#method_runonly_0)
+-   [signal](.././test/~/TestContext#property_signal)
+-   [skip](.././test/~/TestContext#method_skip_0)
+-   [test](.././test/~/TestContext#property_test)
+-   [todo](.././test/~/TestContext#method_todo_0)
+-   [waitFor](.././test/~/TestContext#method_waitfor_0)
 
 c
 
@@ -175,14 +174,12 @@ c
 
 A successful call to `run()` will return a new `TestsStream` object, streaming a series of events representing the execution of the tests.
 
-*   [addListener](.././test/~/TestsStream#method_addlistener_0)
-*   [emit](.././test/~/TestsStream#method_emit_0)
-*   [on](.././test/~/TestsStream#method_on_0)
-*   [once](.././test/~/TestsStream#method_once_0)
-*   [prependListener](.././test/~/TestsStream#method_prependlistener_0)
-*   [prependOnceListener](.././test/~/TestsStream#method_prependoncelistener_0)
-
-### Functions [#](#Functions)
+-   [addListener](.././test/~/TestsStream#method_addlistener_0)
+-   [emit](.././test/~/TestsStream#method_emit_0)
+-   [on](.././test/~/TestsStream#method_on_0)
+-   [once](.././test/~/TestsStream#method_once_0)
+-   [prependListener](.././test/~/TestsStream#method_prependlistener_0)
+-   [prependOnceListener](.././test/~/TestsStream#method_prependoncelistener_0)
 
 f
 
@@ -632,15 +629,13 @@ f
 
 Shorthand for marking a test as `TODO`. This is the same as calling [test](.././test/~/test) with `options.todo` set to `true`.
 
-### Interfaces [#](#Interfaces)
-
 I
 
 [AssertSnapshotOptions](.././test/~/AssertSnapshotOptions "AssertSnapshotOptions")
 
 No documentation available
 
-*   [serializers](.././test/~/AssertSnapshotOptions#property_serializers)
+-   [serializers](.././test/~/AssertSnapshotOptions#property_serializers)
 
 I
 
@@ -648,8 +643,8 @@ I
 
 Configuration options for hooks.
 
-*   [signal](.././test/~/HookOptions#property_signal)
-*   [timeout](.././test/~/HookOptions#property_timeout)
+-   [signal](.././test/~/HookOptions#property_signal)
+-   [timeout](.././test/~/HookOptions#property_timeout)
 
 I
 
@@ -657,12 +652,12 @@ I
 
 No documentation available
 
-*   [arguments](.././test/~/MockFunctionCall#property_arguments)
-*   [error](.././test/~/MockFunctionCall#property_error)
-*   [result](.././test/~/MockFunctionCall#property_result)
-*   [stack](.././test/~/MockFunctionCall#property_stack)
-*   [target](.././test/~/MockFunctionCall#property_target)
-*   [this](.././test/~/MockFunctionCall#property_this)
+-   [arguments](.././test/~/MockFunctionCall#property_arguments)
+-   [error](.././test/~/MockFunctionCall#property_error)
+-   [result](.././test/~/MockFunctionCall#property_result)
+-   [stack](.././test/~/MockFunctionCall#property_stack)
+-   [target](.././test/~/MockFunctionCall#property_target)
+-   [this](.././test/~/MockFunctionCall#property_this)
 
 I
 
@@ -670,7 +665,7 @@ I
 
 No documentation available
 
-*   [times](.././test/~/MockFunctionOptions#property_times)
+-   [times](.././test/~/MockFunctionOptions#property_times)
 
 I
 
@@ -678,8 +673,8 @@ I
 
 No documentation available
 
-*   [getter](.././test/~/MockMethodOptions#property_getter)
-*   [setter](.././test/~/MockMethodOptions#property_setter)
+-   [getter](.././test/~/MockMethodOptions#property_getter)
+-   [setter](.././test/~/MockMethodOptions#property_setter)
 
 I
 
@@ -687,9 +682,9 @@ I
 
 No documentation available
 
-*   [cache](.././test/~/MockModuleOptions#property_cache)
-*   [defaultExport](.././test/~/MockModuleOptions#property_defaultexport)
-*   [namedExports](.././test/~/MockModuleOptions#property_namedexports)
+-   [cache](.././test/~/MockModuleOptions#property_cache)
+-   [defaultExport](.././test/~/MockModuleOptions#property_defaultexport)
+-   [namedExports](.././test/~/MockModuleOptions#property_namedexports)
 
 I
 
@@ -697,8 +692,8 @@ I
 
 No documentation available
 
-*   [apis](.././test/~/MockTimersOptions#property_apis)
-*   [now](.././test/~/MockTimersOptions#property_now)
+-   [apis](.././test/~/MockTimersOptions#property_apis)
+-   [now](.././test/~/MockTimersOptions#property_now)
 
 I
 
@@ -706,28 +701,28 @@ I
 
 No documentation available
 
-*   [argv](.././test/~/RunOptions#property_argv)
-*   [branchCoverage](.././test/~/RunOptions#property_branchcoverage)
-*   [concurrency](.././test/~/RunOptions#property_concurrency)
-*   [coverage](.././test/~/RunOptions#property_coverage)
-*   [coverageExcludeGlobs](.././test/~/RunOptions#property_coverageexcludeglobs)
-*   [coverageIncludeGlobs](.././test/~/RunOptions#property_coverageincludeglobs)
-*   [execArgv](.././test/~/RunOptions#property_execargv)
-*   [files](.././test/~/RunOptions#property_files)
-*   [forceExit](.././test/~/RunOptions#property_forceexit)
-*   [functionCoverage](.././test/~/RunOptions#property_functioncoverage)
-*   [globPatterns](.././test/~/RunOptions#property_globpatterns)
-*   [inspectPort](.././test/~/RunOptions#property_inspectport)
-*   [isolation](.././test/~/RunOptions#property_isolation)
-*   [lineCoverage](.././test/~/RunOptions#property_linecoverage)
-*   [only](.././test/~/RunOptions#property_only)
-*   [setup](.././test/~/RunOptions#property_setup)
-*   [shard](.././test/~/RunOptions#property_shard)
-*   [signal](.././test/~/RunOptions#property_signal)
-*   [testNamePatterns](.././test/~/RunOptions#property_testnamepatterns)
-*   [testSkipPatterns](.././test/~/RunOptions#property_testskippatterns)
-*   [timeout](.././test/~/RunOptions#property_timeout)
-*   [watch](.././test/~/RunOptions#property_watch)
+-   [argv](.././test/~/RunOptions#property_argv)
+-   [branchCoverage](.././test/~/RunOptions#property_branchcoverage)
+-   [concurrency](.././test/~/RunOptions#property_concurrency)
+-   [coverage](.././test/~/RunOptions#property_coverage)
+-   [coverageExcludeGlobs](.././test/~/RunOptions#property_coverageexcludeglobs)
+-   [coverageIncludeGlobs](.././test/~/RunOptions#property_coverageincludeglobs)
+-   [execArgv](.././test/~/RunOptions#property_execargv)
+-   [files](.././test/~/RunOptions#property_files)
+-   [forceExit](.././test/~/RunOptions#property_forceexit)
+-   [functionCoverage](.././test/~/RunOptions#property_functioncoverage)
+-   [globPatterns](.././test/~/RunOptions#property_globpatterns)
+-   [inspectPort](.././test/~/RunOptions#property_inspectport)
+-   [isolation](.././test/~/RunOptions#property_isolation)
+-   [lineCoverage](.././test/~/RunOptions#property_linecoverage)
+-   [only](.././test/~/RunOptions#property_only)
+-   [setup](.././test/~/RunOptions#property_setup)
+-   [shard](.././test/~/RunOptions#property_shard)
+-   [signal](.././test/~/RunOptions#property_signal)
+-   [testNamePatterns](.././test/~/RunOptions#property_testnamepatterns)
+-   [testSkipPatterns](.././test/~/RunOptions#property_testskippatterns)
+-   [timeout](.././test/~/RunOptions#property_timeout)
+-   [watch](.././test/~/RunOptions#property_watch)
 
 I
 
@@ -735,8 +730,8 @@ I
 
 No documentation available
 
-*   [fileSnapshot](.././test/~/TestContextAssert#method_filesnapshot_0)
-*   [snapshot](.././test/~/TestContextAssert#method_snapshot_0)
+-   [fileSnapshot](.././test/~/TestContextAssert#method_filesnapshot_0)
+-   [snapshot](.././test/~/TestContextAssert#method_snapshot_0)
 
 I
 
@@ -744,8 +739,8 @@ I
 
 No documentation available
 
-*   [interval](.././test/~/TestContextWaitForOptions#property_interval)
-*   [timeout](.././test/~/TestContextWaitForOptions#property_timeout)
+-   [interval](.././test/~/TestContextWaitForOptions#property_interval)
+-   [timeout](.././test/~/TestContextWaitForOptions#property_timeout)
 
 I
 
@@ -753,13 +748,13 @@ I
 
 No documentation available
 
-*   [concurrency](.././test/~/TestOptions#property_concurrency)
-*   [only](.././test/~/TestOptions#property_only)
-*   [plan](.././test/~/TestOptions#property_plan)
-*   [signal](.././test/~/TestOptions#property_signal)
-*   [skip](.././test/~/TestOptions#property_skip)
-*   [timeout](.././test/~/TestOptions#property_timeout)
-*   [todo](.././test/~/TestOptions#property_todo)
+-   [concurrency](.././test/~/TestOptions#property_concurrency)
+-   [only](.././test/~/TestOptions#property_only)
+-   [plan](.././test/~/TestOptions#property_plan)
+-   [signal](.././test/~/TestOptions#property_signal)
+-   [skip](.././test/~/TestOptions#property_skip)
+-   [timeout](.././test/~/TestOptions#property_timeout)
+-   [todo](.././test/~/TestOptions#property_todo)
 
 I
 
@@ -767,10 +762,8 @@ I
 
 No documentation available
 
-*   [index](.././test/~/TestShard#property_index)
-*   [total](.././test/~/TestShard#property_total)
-
-### Namespaces [#](#Namespaces)
+-   [index](.././test/~/TestShard#property_index)
+-   [total](.././test/~/TestShard#property_total)
 
 N
 
@@ -807,8 +800,6 @@ N
 [test.snapshot](.././test/~/test.snapshot "test.snapshot")
 
 No documentation available
-
-### Type Aliases [#](<#Type Aliases>)
 
 T
 
@@ -857,8 +848,6 @@ T
 [Timer](.././test/~/Timer "Timer")
 
 No documentation available
-
-### Variables [#](#Variables)
 
 v
 

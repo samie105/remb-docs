@@ -5,10 +5,11 @@ canonical_url: "https://docs.deno.com/api/node/perf_hooks/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:38:27.236Z"
-content_hash: "79112191e7d5fdfdfc0d30eece7fbd639035e3b15e8293ef056c6b832f408864"
+last_crawled_at: "2026-04-27T17:09:42.081Z"
+content_hash: "cf9dcbac2734147caa94add8c60f2b6d6f22602555e98264f3f2044a55f5193e"
 menu_path: ["perf_hooks - Node documentation"]
 section_path: []
+content_language: "en"
 ---
 ### Usage in Deno
 
@@ -20,10 +21,10 @@ This module provides an implementation of a subset of the W3C [Web Performance A
 
 Node.js supports the following [Web Performance APIs](https://w3c.github.io/perf-timing-primer/):
 
-*   [High Resolution Time](https://www.w3.org/TR/hr-time-2)
-*   [Performance Timeline](https://w3c.github.io/performance-timeline/)
-*   [User Timing](https://www.w3.org/TR/user-timing/)
-*   [Resource Timing](https://www.w3.org/TR/resource-timing-2/)
+-   [High Resolution Time](https://www.w3.org/TR/hr-time-2)
+-   [Performance Timeline](https://w3c.github.io/performance-timeline/)
+-   [User Timing](https://www.w3.org/TR/user-timing/)
+-   [Resource Timing](https://www.w3.org/TR/resource-timing-2/)
 
 ```js
 import { PerformanceObserver, performance } from 'node:perf_hooks';
@@ -44,8 +45,6 @@ doSomeLongRunningProcess(() => {
 });
 ```
 
-### Classes [#](#Classes)
-
 c
 
 v
@@ -54,12 +53,12 @@ v
 
 The constructor of this class is not exposed to users directly.
 
-*   [detail](.././perf_hooks/~/PerformanceEntry#property_detail)
-*   [duration](.././perf_hooks/~/PerformanceEntry#property_duration)
-*   [entryType](.././perf_hooks/~/PerformanceEntry#property_entrytype)
-*   [name](.././perf_hooks/~/PerformanceEntry#property_name)
-*   [startTime](.././perf_hooks/~/PerformanceEntry#property_starttime)
-*   [toJSON](.././perf_hooks/~/PerformanceEntry#method_tojson_0)
+-   [detail](.././perf_hooks/~/PerformanceEntry#property_detail)
+-   [duration](.././perf_hooks/~/PerformanceEntry#property_duration)
+-   [entryType](.././perf_hooks/~/PerformanceEntry#property_entrytype)
+-   [name](.././perf_hooks/~/PerformanceEntry#property_name)
+-   [startTime](.././perf_hooks/~/PerformanceEntry#property_starttime)
+-   [toJSON](.././perf_hooks/~/PerformanceEntry#method_tojson_0)
 
 c
 
@@ -69,8 +68,8 @@ v
 
 Exposes marks created via the `Performance.mark()` method.
 
-*   [duration](.././perf_hooks/~/PerformanceMark#property_duration)
-*   [entryType](.././perf_hooks/~/PerformanceMark#property_entrytype)
+-   [duration](.././perf_hooks/~/PerformanceMark#property_duration)
+-   [entryType](.././perf_hooks/~/PerformanceMark#property_entrytype)
 
 c
 
@@ -80,7 +79,7 @@ v
 
 Exposes measures created via the `Performance.measure()` method.
 
-*   [entryType](.././perf_hooks/~/PerformanceMeasure#property_entrytype)
+-   [entryType](.././perf_hooks/~/PerformanceMeasure#property_entrytype)
 
 c
 
@@ -88,15 +87,15 @@ c
 
 _This property is an extension by Node.js. It is not available in Web browsers._
 
-*   [bootstrapComplete](.././perf_hooks/~/PerformanceNodeTiming#property_bootstrapcomplete)
-*   [entryType](.././perf_hooks/~/PerformanceNodeTiming#property_entrytype)
-*   [environment](.././perf_hooks/~/PerformanceNodeTiming#property_environment)
-*   [idleTime](.././perf_hooks/~/PerformanceNodeTiming#property_idletime)
-*   [loopExit](.././perf_hooks/~/PerformanceNodeTiming#property_loopexit)
-*   [loopStart](.././perf_hooks/~/PerformanceNodeTiming#property_loopstart)
-*   [nodeStart](.././perf_hooks/~/PerformanceNodeTiming#property_nodestart)
-*   [uvMetricsInfo](.././perf_hooks/~/PerformanceNodeTiming#property_uvmetricsinfo)
-*   [v8Start](.././perf_hooks/~/PerformanceNodeTiming#property_v8start)
+-   [bootstrapComplete](.././perf_hooks/~/PerformanceNodeTiming#property_bootstrapcomplete)
+-   [entryType](.././perf_hooks/~/PerformanceNodeTiming#property_entrytype)
+-   [environment](.././perf_hooks/~/PerformanceNodeTiming#property_environment)
+-   [idleTime](.././perf_hooks/~/PerformanceNodeTiming#property_idletime)
+-   [loopExit](.././perf_hooks/~/PerformanceNodeTiming#property_loopexit)
+-   [loopStart](.././perf_hooks/~/PerformanceNodeTiming#property_loopstart)
+-   [nodeStart](.././perf_hooks/~/PerformanceNodeTiming#property_nodestart)
+-   [uvMetricsInfo](.././perf_hooks/~/PerformanceNodeTiming#property_uvmetricsinfo)
+-   [v8Start](.././perf_hooks/~/PerformanceNodeTiming#property_v8start)
 
 c
 
@@ -106,9 +105,9 @@ v
 
 No documentation available
 
-*   [disconnect](.././perf_hooks/~/PerformanceObserver#method_disconnect_0)
-*   [observe](.././perf_hooks/~/PerformanceObserver#method_observe_0)
-*   [takeRecords](.././perf_hooks/~/PerformanceObserver#method_takerecords_0)
+-   [disconnect](.././perf_hooks/~/PerformanceObserver#method_disconnect_0)
+-   [observe](.././perf_hooks/~/PerformanceObserver#method_observe_0)
+-   [takeRecords](.././perf_hooks/~/PerformanceObserver#method_takerecords_0)
 
 c
 
@@ -118,9 +117,9 @@ v
 
 No documentation available
 
-*   [getEntries](.././perf_hooks/~/PerformanceObserverEntryList#method_getentries_0)
-*   [getEntriesByName](.././perf_hooks/~/PerformanceObserverEntryList#method_getentriesbyname_0)
-*   [getEntriesByType](.././perf_hooks/~/PerformanceObserverEntryList#method_getentriesbytype_0)
+-   [getEntries](.././perf_hooks/~/PerformanceObserverEntryList#method_getentries_0)
+-   [getEntriesByName](.././perf_hooks/~/PerformanceObserverEntryList#method_getentriesbyname_0)
+-   [getEntriesByType](.././perf_hooks/~/PerformanceObserverEntryList#method_getentriesbytype_0)
 
 c
 
@@ -130,24 +129,22 @@ v
 
 Provides detailed network timing data regarding the loading of an application's resources.
 
-*   [connectEnd](.././perf_hooks/~/PerformanceResourceTiming#property_connectend)
-*   [connectStart](.././perf_hooks/~/PerformanceResourceTiming#property_connectstart)
-*   [decodedBodySize](.././perf_hooks/~/PerformanceResourceTiming#property_decodedbodysize)
-*   [domainLookupEnd](.././perf_hooks/~/PerformanceResourceTiming#property_domainlookupend)
-*   [domainLookupStart](.././perf_hooks/~/PerformanceResourceTiming#property_domainlookupstart)
-*   [encodedBodySize](.././perf_hooks/~/PerformanceResourceTiming#property_encodedbodysize)
-*   [entryType](.././perf_hooks/~/PerformanceResourceTiming#property_entrytype)
-*   [fetchStart](.././perf_hooks/~/PerformanceResourceTiming#property_fetchstart)
-*   [redirectEnd](.././perf_hooks/~/PerformanceResourceTiming#property_redirectend)
-*   [redirectStart](.././perf_hooks/~/PerformanceResourceTiming#property_redirectstart)
-*   [requestStart](.././perf_hooks/~/PerformanceResourceTiming#property_requeststart)
-*   [responseEnd](.././perf_hooks/~/PerformanceResourceTiming#property_responseend)
-*   [secureConnectionStart](.././perf_hooks/~/PerformanceResourceTiming#property_secureconnectionstart)
-*   [toJSON](.././perf_hooks/~/PerformanceResourceTiming#method_tojson_0)
-*   [transferSize](.././perf_hooks/~/PerformanceResourceTiming#property_transfersize)
-*   [workerStart](.././perf_hooks/~/PerformanceResourceTiming#property_workerstart)
-
-### Functions [#](#Functions)
+-   [connectEnd](.././perf_hooks/~/PerformanceResourceTiming#property_connectend)
+-   [connectStart](.././perf_hooks/~/PerformanceResourceTiming#property_connectstart)
+-   [decodedBodySize](.././perf_hooks/~/PerformanceResourceTiming#property_decodedbodysize)
+-   [domainLookupEnd](.././perf_hooks/~/PerformanceResourceTiming#property_domainlookupend)
+-   [domainLookupStart](.././perf_hooks/~/PerformanceResourceTiming#property_domainlookupstart)
+-   [encodedBodySize](.././perf_hooks/~/PerformanceResourceTiming#property_encodedbodysize)
+-   [entryType](.././perf_hooks/~/PerformanceResourceTiming#property_entrytype)
+-   [fetchStart](.././perf_hooks/~/PerformanceResourceTiming#property_fetchstart)
+-   [redirectEnd](.././perf_hooks/~/PerformanceResourceTiming#property_redirectend)
+-   [redirectStart](.././perf_hooks/~/PerformanceResourceTiming#property_redirectstart)
+-   [requestStart](.././perf_hooks/~/PerformanceResourceTiming#property_requeststart)
+-   [responseEnd](.././perf_hooks/~/PerformanceResourceTiming#property_responseend)
+-   [secureConnectionStart](.././perf_hooks/~/PerformanceResourceTiming#property_secureconnectionstart)
+-   [toJSON](.././perf_hooks/~/PerformanceResourceTiming#method_tojson_0)
+-   [transferSize](.././perf_hooks/~/PerformanceResourceTiming#property_transfersize)
+-   [workerStart](.././perf_hooks/~/PerformanceResourceTiming#property_workerstart)
 
 f
 
@@ -161,17 +158,15 @@ f
 
 No documentation available
 
-### Interfaces [#](#Interfaces)
-
 I
 
 [CreateHistogramOptions](.././perf_hooks/~/CreateHistogramOptions "CreateHistogramOptions")
 
 No documentation available
 
-*   [figures](.././perf_hooks/~/CreateHistogramOptions#property_figures)
-*   [max](.././perf_hooks/~/CreateHistogramOptions#property_max)
-*   [min](.././perf_hooks/~/CreateHistogramOptions#property_min)
+-   [figures](.././perf_hooks/~/CreateHistogramOptions#property_figures)
+-   [max](.././perf_hooks/~/CreateHistogramOptions#property_max)
+-   [min](.././perf_hooks/~/CreateHistogramOptions#property_min)
 
 I
 
@@ -179,7 +174,7 @@ I
 
 No documentation available
 
-*   [resolution](.././perf_hooks/~/EventLoopMonitorOptions#property_resolution)
+-   [resolution](.././perf_hooks/~/EventLoopMonitorOptions#property_resolution)
 
 I
 
@@ -187,9 +182,9 @@ I
 
 No documentation available
 
-*   [active](.././perf_hooks/~/EventLoopUtilization#property_active)
-*   [idle](.././perf_hooks/~/EventLoopUtilization#property_idle)
-*   [utilization](.././perf_hooks/~/EventLoopUtilization#property_utilization)
+-   [active](.././perf_hooks/~/EventLoopUtilization#property_active)
+-   [idle](.././perf_hooks/~/EventLoopUtilization#property_idle)
+-   [utilization](.././perf_hooks/~/EventLoopUtilization#property_utilization)
 
 I
 
@@ -197,21 +192,21 @@ I
 
 No documentation available
 
-*   [count](.././perf_hooks/~/Histogram#property_count)
-*   [countBigInt](.././perf_hooks/~/Histogram#property_countbigint)
-*   [exceeds](.././perf_hooks/~/Histogram#property_exceeds)
-*   [exceedsBigInt](.././perf_hooks/~/Histogram#property_exceedsbigint)
-*   [max](.././perf_hooks/~/Histogram#property_max)
-*   [maxBigInt](.././perf_hooks/~/Histogram#property_maxbigint)
-*   [mean](.././perf_hooks/~/Histogram#property_mean)
-*   [min](.././perf_hooks/~/Histogram#property_min)
-*   [minBigInt](.././perf_hooks/~/Histogram#property_minbigint)
-*   [percentile](.././perf_hooks/~/Histogram#method_percentile_0)
-*   [percentileBigInt](.././perf_hooks/~/Histogram#method_percentilebigint_0)
-*   [percentiles](.././perf_hooks/~/Histogram#property_percentiles)
-*   [percentilesBigInt](.././perf_hooks/~/Histogram#property_percentilesbigint)
-*   [reset](.././perf_hooks/~/Histogram#method_reset_0)
-*   [stddev](.././perf_hooks/~/Histogram#property_stddev)
+-   [count](.././perf_hooks/~/Histogram#property_count)
+-   [countBigInt](.././perf_hooks/~/Histogram#property_countbigint)
+-   [exceeds](.././perf_hooks/~/Histogram#property_exceeds)
+-   [exceedsBigInt](.././perf_hooks/~/Histogram#property_exceedsbigint)
+-   [max](.././perf_hooks/~/Histogram#property_max)
+-   [maxBigInt](.././perf_hooks/~/Histogram#property_maxbigint)
+-   [mean](.././perf_hooks/~/Histogram#property_mean)
+-   [min](.././perf_hooks/~/Histogram#property_min)
+-   [minBigInt](.././perf_hooks/~/Histogram#property_minbigint)
+-   [percentile](.././perf_hooks/~/Histogram#method_percentile_0)
+-   [percentileBigInt](.././perf_hooks/~/Histogram#method_percentilebigint_0)
+-   [percentiles](.././perf_hooks/~/Histogram#property_percentiles)
+-   [percentilesBigInt](.././perf_hooks/~/Histogram#property_percentilesbigint)
+-   [reset](.././perf_hooks/~/Histogram#method_reset_0)
+-   [stddev](.././perf_hooks/~/Histogram#property_stddev)
 
 I
 
@@ -219,8 +214,8 @@ I
 
 No documentation available
 
-*   [disable](.././perf_hooks/~/IntervalHistogram#method_disable_0)
-*   [enable](.././perf_hooks/~/IntervalHistogram#method_enable_0)
+-   [disable](.././perf_hooks/~/IntervalHistogram#method_disable_0)
+-   [enable](.././perf_hooks/~/IntervalHistogram#method_enable_0)
 
 I
 
@@ -228,8 +223,8 @@ I
 
 No documentation available
 
-*   [detail](.././perf_hooks/~/MarkOptions#property_detail)
-*   [startTime](.././perf_hooks/~/MarkOptions#property_starttime)
+-   [detail](.././perf_hooks/~/MarkOptions#property_detail)
+-   [startTime](.././perf_hooks/~/MarkOptions#property_starttime)
 
 I
 
@@ -237,10 +232,10 @@ I
 
 No documentation available
 
-*   [detail](.././perf_hooks/~/MeasureOptions#property_detail)
-*   [duration](.././perf_hooks/~/MeasureOptions#property_duration)
-*   [end](.././perf_hooks/~/MeasureOptions#property_end)
-*   [start](.././perf_hooks/~/MeasureOptions#property_start)
+-   [detail](.././perf_hooks/~/MeasureOptions#property_detail)
+-   [duration](.././perf_hooks/~/MeasureOptions#property_duration)
+-   [end](.././perf_hooks/~/MeasureOptions#property_end)
+-   [start](.././perf_hooks/~/MeasureOptions#property_start)
 
 I
 
@@ -248,8 +243,8 @@ I
 
 No documentation available
 
-*   [flags](.././perf_hooks/~/NodeGCPerformanceDetail#property_flags)
-*   [kind](.././perf_hooks/~/NodeGCPerformanceDetail#property_kind)
+-   [flags](.././perf_hooks/~/NodeGCPerformanceDetail#property_flags)
+-   [kind](.././perf_hooks/~/NodeGCPerformanceDetail#property_kind)
 
 I
 
@@ -257,22 +252,22 @@ I
 
 No documentation available
 
-*   [clearMarks](.././perf_hooks/~/Performance#method_clearmarks_0)
-*   [clearMeasures](.././perf_hooks/~/Performance#method_clearmeasures_0)
-*   [clearResourceTimings](.././perf_hooks/~/Performance#method_clearresourcetimings_0)
-*   [eventLoopUtilization](.././perf_hooks/~/Performance#property_eventlooputilization)
-*   [getEntries](.././perf_hooks/~/Performance#method_getentries_0)
-*   [getEntriesByName](.././perf_hooks/~/Performance#method_getentriesbyname_0)
-*   [getEntriesByType](.././perf_hooks/~/Performance#method_getentriesbytype_0)
-*   [mark](.././perf_hooks/~/Performance#method_mark_0)
-*   [markResourceTiming](.././perf_hooks/~/Performance#method_markresourcetiming_0)
-*   [measure](.././perf_hooks/~/Performance#method_measure_0)
-*   [nodeTiming](.././perf_hooks/~/Performance#property_nodetiming)
-*   [now](.././perf_hooks/~/Performance#method_now_0)
-*   [setResourceTimingBufferSize](.././perf_hooks/~/Performance#method_setresourcetimingbuffersize_0)
-*   [timeOrigin](.././perf_hooks/~/Performance#property_timeorigin)
-*   [timerify](.././perf_hooks/~/Performance#method_timerify_0)
-*   [toJSON](.././perf_hooks/~/Performance#method_tojson_0)
+-   [clearMarks](.././perf_hooks/~/Performance#method_clearmarks_0)
+-   [clearMeasures](.././perf_hooks/~/Performance#method_clearmeasures_0)
+-   [clearResourceTimings](.././perf_hooks/~/Performance#method_clearresourcetimings_0)
+-   [eventLoopUtilization](.././perf_hooks/~/Performance#property_eventlooputilization)
+-   [getEntries](.././perf_hooks/~/Performance#method_getentries_0)
+-   [getEntriesByName](.././perf_hooks/~/Performance#method_getentriesbyname_0)
+-   [getEntriesByType](.././perf_hooks/~/Performance#method_getentriesbytype_0)
+-   [mark](.././perf_hooks/~/Performance#method_mark_0)
+-   [markResourceTiming](.././perf_hooks/~/Performance#method_markresourcetiming_0)
+-   [measure](.././perf_hooks/~/Performance#method_measure_0)
+-   [nodeTiming](.././perf_hooks/~/Performance#property_nodetiming)
+-   [now](.././perf_hooks/~/Performance#method_now_0)
+-   [setResourceTimingBufferSize](.././perf_hooks/~/Performance#method_setresourcetimingbuffersize_0)
+-   [timeOrigin](.././perf_hooks/~/Performance#property_timeorigin)
+-   [timerify](.././perf_hooks/~/Performance#method_timerify_0)
+-   [toJSON](.././perf_hooks/~/Performance#method_tojson_0)
 
 I
 
@@ -280,9 +275,9 @@ I
 
 No documentation available
 
-*   [add](.././perf_hooks/~/RecordableHistogram#method_add_0)
-*   [record](.././perf_hooks/~/RecordableHistogram#method_record_0)
-*   [recordDelta](.././perf_hooks/~/RecordableHistogram#method_recorddelta_0)
+-   [add](.././perf_hooks/~/RecordableHistogram#method_add_0)
+-   [record](.././perf_hooks/~/RecordableHistogram#method_record_0)
+-   [recordDelta](.././perf_hooks/~/RecordableHistogram#method_recorddelta_0)
 
 I
 
@@ -290,7 +285,7 @@ I
 
 No documentation available
 
-*   [histogram](.././perf_hooks/~/TimerifyOptions#property_histogram)
+-   [histogram](.././perf_hooks/~/TimerifyOptions#property_histogram)
 
 I
 
@@ -298,19 +293,15 @@ I
 
 No documentation available
 
-*   [events](.././perf_hooks/~/UVMetrics#property_events)
-*   [eventsWaiting](.././perf_hooks/~/UVMetrics#property_eventswaiting)
-*   [loopCount](.././perf_hooks/~/UVMetrics#property_loopcount)
-
-### Namespaces [#](#Namespaces)
+-   [events](.././perf_hooks/~/UVMetrics#property_events)
+-   [eventsWaiting](.././perf_hooks/~/UVMetrics#property_eventswaiting)
+-   [loopCount](.././perf_hooks/~/UVMetrics#property_loopcount)
 
 N
 
 [constants](.././perf_hooks/~/constants "constants")
 
 No documentation available
-
-### Type Aliases [#](<#Type Aliases>)
 
 T
 
@@ -329,8 +320,6 @@ T
 [PerformanceObserverCallback](.././perf_hooks/~/PerformanceObserverCallback "PerformanceObserverCallback")
 
 No documentation available
-
-### Variables [#](#Variables)
 
 v
 

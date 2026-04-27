@@ -5,35 +5,36 @@ canonical_url: "https://docs.deno.com/runtime/reference/vscode/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:07:42.332Z"
-content_hash: "c96cf7641268caa21eebb3227df50ff55b53ded1ee14e05569dc4fb10e8efce8"
+last_crawled_at: "2026-04-27T17:50:15.022Z"
+content_hash: "003bfae6c7f73cfdd9c7d91d955ed44e51d23602c8ca3990e913f5498c9b8cc4"
 menu_path: ["Deno & Visual Studio Code"]
 section_path: []
+content_language: "en"
 ---
-On this page
+**On this page**
 
-*   [Installation](#installation)
-*   [Enabling Deno in a VS Code workspace](#enabling-deno-in-a-vs-code-workspace)
-    *   [Workspace folder settings](#workspace-folder-settings)
-*   [Partially enabling Deno in a VS Code workspace](#partially-enabling-deno-in-a-vs-code-workspace)
-*   [Mixed-Deno projects](#mixed-deno-projects)
-*   [Linting](#linting)
-*   [Using a configuration file](#using-a-configuration-file)
-*   [Formatting](#formatting)
-*   [Setting a path to the Deno CLI](#setting-a-path-to-the-deno-cli)
-*   [Import suggestions](#import-suggestions)
-*   [Caching remote modules](#caching-remote-modules)
-*   [Code lenses](#code-lenses)
-    *   [Deno > Code Lens: Implementations](#deno-%3E-code-lens%3A-implementations)
-    *   [Deno > Code Lens: References](#deno-%3E-code-lens%3A-references)
-    *   [Deno > Code Lens: References All Functions](#deno-%3E-code-lens%3A-references-all-functions)
-    *   [Testing code lens](#testing-code-lens)
-    *   [Test Configuration](#test-configuration)
-*   [Using the debugger](#using-the-debugger)
-*   [Tasks](#tasks)
-*   [Using a development container](#using-a-development-container)
-*   [Troubleshooting](#troubleshooting)
-    *   [Errors/diagnostics](#errors%2Fdiagnostics)
+-   [Installation](#installation)
+-   [Enabling Deno in a VS Code workspace](#enabling-deno-in-a-vs-code-workspace)
+    -   [Workspace folder settings](#workspace-folder-settings)
+-   [Partially enabling Deno in a VS Code workspace](#partially-enabling-deno-in-a-vs-code-workspace)
+-   [Mixed-Deno projects](#mixed-deno-projects)
+-   [Linting](#linting)
+-   [Using a configuration file](#using-a-configuration-file)
+-   [Formatting](#formatting)
+-   [Setting a path to the Deno CLI](#setting-a-path-to-the-deno-cli)
+-   [Import suggestions](#import-suggestions)
+-   [Caching remote modules](#caching-remote-modules)
+-   [Code lenses](#code-lenses)
+    -   [Deno > Code Lens: Implementations](#deno-%3E-code-lens%3A-implementations)
+    -   [Deno > Code Lens: References](#deno-%3E-code-lens%3A-references)
+    -   [Deno > Code Lens: References All Functions](#deno-%3E-code-lens%3A-references-all-functions)
+    -   [Testing code lens](#testing-code-lens)
+    -   [Test Configuration](#test-configuration)
+-   [Using the debugger](#using-the-debugger)
+-   [Tasks](#tasks)
+-   [Using a development container](#using-a-development-container)
+-   [Troubleshooting](#troubleshooting)
+    -   [Errors/diagnostics](#errors%2Fdiagnostics)
 
 This page covers developing Deno applications using [Visual Studio Code](https://code.visualstudio.com/) and the official [vscode\_deno](https://marketplace.visualstudio.com/items?itemName=denoland.vscode-deno) extension.
 
@@ -51,11 +52,11 @@ We realize that not every project you might work on in VS Code is a Deno project
 
 In order to have support for Deno APIs, as well as the ability to resolve modules as the Deno CLI does, you need to enable Deno for the workspace. The most direct way to do this is to use the **Deno: Initialize Workspace Configuration** from the VS Code [command palette](https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette).
 
-![screenshot of the command palette with Deno: Initialize Workspace Configuration](/runtime/reference/images/command_palette.png)
+![screenshot of the command palette with Deno: Initialize Workspace Configuration](https://docs.deno.com/runtime/reference/images/command_palette.png)
 
 This command will add `"deno.enable": true` to the workspace configuration (your workspace root `.vscode/settings.json`). Once the command is finished, you will get a notification that Deno workspace is initialized.
 
-![screenshot of the notification 'Deno workspace initialized'](/runtime/reference/images/vscode_workspace_initialized.png)
+![screenshot of the notification 'Deno workspace initialized'](https://docs.deno.com/runtime/reference/images/vscode_workspace_initialized.png)
 
 These settings (and other settings) are available via the VS Code [settings](https://code.visualstudio.com/docs/getstarted/userinterface#_settings) panel. In the panel the setting is **Deno: Enable**.
 
@@ -67,10 +68,10 @@ VS Code has user and workspace settings. You probably don't want to enable Deno 
 
 These are the settings that can be set on a workspace folder. The rest of the settings currently only apply to the workspace:
 
-*   `deno.enable` - Controls if the Deno Language Server is enabled. When enabled, the extension will disable the built-in VS Code JavaScript and TypeScript language services, and will use the Deno language server instead. _boolean, default `false`_
-*   `deno.enablePaths` - Controls if the Deno Language Server is enabled for only specific paths of the workspace folder. Defaults to an empty list.
-*   `deno.codeLens.test` - Controls if the test code lens is enabled. _boolean, default `true`_
-*   `deno.codeLens.testArgs` - The list of arguments that are passed to `deno test` when activating a test code lens. _string array, default `["--allow-all"]`_
+-   `deno.enable` - Controls if the Deno Language Server is enabled. When enabled, the extension will disable the built-in VS Code JavaScript and TypeScript language services, and will use the Deno language server instead. _boolean, default `false`_
+-   `deno.enablePaths` - Controls if the Deno Language Server is enabled for only specific paths of the workspace folder. Defaults to an empty list.
+-   `deno.codeLens.test` - Controls if the test code lens is enabled. _boolean, default `true`_
+-   `deno.codeLens.testArgs` - The list of arguments that are passed to `deno test` when activating a test code lens. _string array, default `["--allow-all"]`_
 
 When a project is enabled, the extension will get information directly from the installed Deno CLI. The extension will also mute the built-in TypeScript/JavaScript extension.
 

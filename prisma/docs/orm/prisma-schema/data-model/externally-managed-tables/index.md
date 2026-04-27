@@ -5,15 +5,16 @@ canonical_url: "https://www.prisma.io/docs/orm/prisma-schema/data-model/external
 docset: "prisma"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:51:52.194Z"
-content_hash: "57b2b32466fd90a89f23d5663a57bafff4ec01c5dcc1f3d9113a615b792089be"
+last_crawled_at: "2026-04-27T19:42:09.696Z"
+content_hash: "16db8936e63e561d788208819ba2a41fa453f586d2e0b8dfda286b0f45c05d5d"
 menu_path: ["External tables"]
 section_path: []
-nav_prev: {"path": "prisma/docs/orm/prisma-schema/data-model/database-mapping/index.md", "title": "Database mapping"}
-nav_next: {"path": "prisma/docs/orm/prisma-schema/data-model/indexes/index.md", "title": "Indexes"}
+tab_variants: ["npm","pnpm","yarn","bun","npm","pnpm","yarn","bun"]
+content_language: "en"
 ---
-
 Data Model
+
+## External tables
 
 How to declare and use externally managed tables in Prisma ORM
 
@@ -23,15 +24,15 @@ Sometimes, you might not want Prisma ORM to manage specific tables—such as one
 
 Some concrete use cases for this are:
 
-*   auth services like Clerk or Auth0 that manage specific tables with user and session data
-*   storage services like Supabase Storage with tables for storing metadata about buckets and objects
-*   a microservice-based organization where specific teams own specific tables in the database
+-   auth services like Clerk or Auth0 that manage specific tables with user and session data
+-   storage services like Supabase Storage with tables for storing metadata about buckets and objects
+-   a microservice-based organization where specific teams own specific tables in the database
 
 There may be many other scenarios based on custom organizational constraints or preferences where you may not want Prisma ORM to manage specific tables.
 
 If you want to use external tables, here's the main workflow:
 
-1.  Declare the name of the external tables in your [Prisma Config file](prisma/docs/orm/reference/prisma-config-reference/index.md)
+1.  Declare the name of the external tables in your [Prisma Config file](https://www.prisma.io/docs/orm/reference/prisma-config-reference)
 2.  Update your Prisma schema (e.g. via `npx prisma db pull`)
 3.  Re-generate Prisma Client with `npx prisma generate`
 4.  You can now query the external table using Prisma Client but it will be ignored by Prisma Migrate
@@ -39,7 +40,9 @@ If you want to use external tables, here's the main workflow:
     1.  Re-introspect your database using `npx prisma db pull` or manually update the models in your prisma file
     2.  Re-generate Prisma Client with `npx prisma generate`
 
-You can specify externally managed tables in your [Prisma Config](prisma/docs/orm/reference/prisma-config-reference/index.md) file via the `tables.external` property:
+You can specify externally managed tables in your [Prisma Config](https://www.prisma.io/docs/orm/reference/prisma-config-reference) file via the `tables.external` property:
+
+prisma.config.ts
 
 ```
 import "dotenv/config";
@@ -67,17 +70,19 @@ export default defineConfig({
 });
 ```
 
-*   Analogous to tables, you can also have externally managed _enums_.
-*   On PostgreSQL and SQL Server you have to specify the fully qualified table/enum name including the schema name. For example: `public.products` or `auth.users`.
-*   On MySQL and SQLite, you only have to specify the table name.
+-   Analogous to tables, you can also have externally managed _enums_.
+-   On PostgreSQL and SQL Server you have to specify the fully qualified table/enum name including the schema name. For example: `public.products` or `auth.users`.
+-   On MySQL and SQLite, you only have to specify the table name.
 
 Prisma can create and update relationships from tables it manages to externally managed tables.
 
-However, for this Prisma needs to be aware of the structure of those externally managed tables during migration creation. You can provide a SQL script that Prisma will run on its [shadow database](prisma/docs/orm/prisma-migrate/understanding-prisma-migrate/shadow-database/index.md) ahead of all migrations to emulate the external tables and enums during migration creation.
+However, for this Prisma needs to be aware of the structure of those externally managed tables during migration creation. You can provide a SQL script that Prisma will run on its [shadow database](https://www.prisma.io/docs/orm/prisma-migrate/understanding-prisma-migrate/shadow-database) ahead of all migrations to emulate the external tables and enums during migration creation.
 
 The created placeholder table does not need to have the full structure of the actual table but primary keys need to be present.
 
 If the external table is not referenced by any managed table—that is no managed table contains a foreign key constraint on the external table—you do NOT need to provide any SQL for it in `migrations.initShadowDb`.
+
+prisma.config.ts
 
 ```
 import "dotenv/config";
@@ -160,6 +165,8 @@ CREATE TABLE posts (
 
 Enable use of externally managed tables via the `tables.external` property:
 
+prisma.config.ts
+
 ```
 import "dotenv/config";
 import { defineConfig, env } from "prisma/config";
@@ -189,8 +196,8 @@ export default defineConfig({
 
 Next, you need to update your Prisma schema. You can do this either:
 
-*   by manually creating the models
-*   or by using [introspection](prisma/docs/orm/prisma-schema/introspection/index.md):
+-   by manually creating the models
+-   or by using [introspection](https://www.prisma.io/docs/orm/prisma-schema/introspection):
 
 The `users` table is now in your Prisma schema:
 
@@ -263,6 +270,8 @@ enum role {
 
 Then add a `migrations.initShadowDb` script so Prisma knows about the `users` table during migrations.
 
+prisma.config.ts
+
 ```
 import "dotenv/config";
 import { defineConfig, env } from "prisma/config";
@@ -289,5 +298,3 @@ export default defineConfig({
 ```
 
 Now you can run `prisma migrate dev` command.
-
-[Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/prisma-schema/data-model/externally-managed-tables.mdx)

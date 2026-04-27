@@ -5,13 +5,14 @@ canonical_url: "https://nextjs.org/docs/messages/no-head-element"
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:18:21.144Z"
-content_hash: "eb115d7f5dde0a93ee2bf2ddeec5cc0d48b6b4b4a50e561d6ee6a500d3a64d3e"
+last_crawled_at: "2026-04-27T18:17:46.316Z"
+content_hash: "6a264d69b2e8ca03398b739a43635a50e7cb51722ad03096d9a1c6ede380e135"
 menu_path: ["No Head Element"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/messages/no-duplicate-head/index.md", "title": "No Duplicate Head"}
-nav_next: {"path": "nextjs/docs/messages/no-head-import-in-document/index.md", "title": "No Head Import in Document"}
+version: "latest"
+content_language: "en"
 ---
+[Docs](/docs)[Errors](/docs)No Head Element
 
 # No Head Element
 
@@ -46,10 +47,6 @@ export default Index
 
 ## Useful Links[](#useful-links)
 
-*   [next/head](/docs/pages/api-reference/components/head)
+-   [next/head](/docs/pages/api-reference/components/head)
 
 Was this helpful?
-
-supported.
-
-Send

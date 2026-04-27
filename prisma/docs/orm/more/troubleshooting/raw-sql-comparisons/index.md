@@ -5,15 +5,15 @@ canonical_url: "https://www.prisma.io/docs/orm/more/troubleshooting/raw-sql-comp
 docset: "prisma"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:44:20.495Z"
-content_hash: "1e06dc46f79bc785357930d103e48b61636acc82420b914e603e05ba0a606906"
+last_crawled_at: "2026-04-27T19:37:53.835Z"
+content_hash: "8b32e028cfc9d98904509b73538b77b517fa42e23225f6712a3d9f742ae7b52b"
 menu_path: ["Raw SQL comparisons"]
 section_path: []
-nav_prev: {"path": "prisma/docs/orm/more/troubleshooting/nuxt/index.md", "title": "Nuxt"}
-nav_next: {"path": "prisma/docs/orm/more/troubleshooting/typescript-performance/index.md", "title": "TypeScript performance"}
+content_language: "en"
 ---
-
 Troubleshooting
+
+## Raw SQL comparisons
 
 Compare columns of the same table with raw queries in Prisma ORM
 
@@ -91,5 +91,3 @@ const response =
 const response =
   await prisma.$queryRaw`SELECT * FROM "Project" WHERE "completedDate" > "dueDate";`;
 ```
-
-[Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/more/troubleshooting/raw-sql-comparisons.mdx)

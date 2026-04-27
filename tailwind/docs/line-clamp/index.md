@@ -5,14 +5,12 @@ canonical_url: "https://tailwindcss.com/docs/line-clamp"
 docset: "tailwind"
 kind: "framework"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:56:02.711Z"
+last_crawled_at: "2026-04-27T20:09:23.468Z"
 content_hash: "72696ceb5cfb069738cd686b56b2c721a6541f768321d5e17cf088c39c004873"
 menu_path: ["line-clamp"]
 section_path: []
-nav_prev: {"path": "tailwind/docs/letter-spacing/index.md", "title": "letter-spacing"}
-nav_next: {"path": "tailwind/docs/line-height/index.md", "title": "line-height"}
+content_language: "en"
 ---
-
 Mar 10, 2020
 
 Boost your conversion rate

@@ -5,10 +5,11 @@ canonical_url: "https://docs.deno.com/api/node/dns/promises/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:35:31.862Z"
-content_hash: "f0a4b0ab58d9020b33faafca7586fd986fc3c63df1b8765623810f2e8b1699ad"
+last_crawled_at: "2026-04-27T17:05:45.969Z"
+content_hash: "fb1d608e67f69944050f9cc19ae41967c4ea9b9e7518860498faa88fdea3ad60"
 menu_path: ["dns/promises - Node documentation"]
 section_path: []
+content_language: "en"
 ---
 ### Usage in Deno
 
@@ -18,34 +19,30 @@ import * as mod from "node:dns/promises";
 
 The `dns.promises` API provides an alternative set of asynchronous DNS methods that return `Promise` objects rather than using callbacks. The API is accessible via `import { promises as dnsPromises } from 'node:dns'` or `import dnsPromises from 'node:dns/promises'`.
 
-### Classes [#](#Classes)
-
 c
 
 [Resolver](../.././dns/promises/~/Resolver "Resolver")
 
 An independent resolver for DNS requests.
 
-*   [cancel](../.././dns/promises/~/Resolver#method_cancel_0)
-*   [getServers](../.././dns/promises/~/Resolver#property_getservers)
-*   [resolve](../.././dns/promises/~/Resolver#property_resolve)
-*   [resolve4](../.././dns/promises/~/Resolver#property_resolve4)
-*   [resolve6](../.././dns/promises/~/Resolver#property_resolve6)
-*   [resolveAny](../.././dns/promises/~/Resolver#property_resolveany)
-*   [resolveCaa](../.././dns/promises/~/Resolver#property_resolvecaa)
-*   [resolveCname](../.././dns/promises/~/Resolver#property_resolvecname)
-*   [resolveMx](../.././dns/promises/~/Resolver#property_resolvemx)
-*   [resolveNaptr](../.././dns/promises/~/Resolver#property_resolvenaptr)
-*   [resolveNs](../.././dns/promises/~/Resolver#property_resolvens)
-*   [resolvePtr](../.././dns/promises/~/Resolver#property_resolveptr)
-*   [resolveSoa](../.././dns/promises/~/Resolver#property_resolvesoa)
-*   [resolveSrv](../.././dns/promises/~/Resolver#property_resolvesrv)
-*   [resolveTxt](../.././dns/promises/~/Resolver#property_resolvetxt)
-*   [reverse](../.././dns/promises/~/Resolver#property_reverse)
-*   [setLocalAddress](../.././dns/promises/~/Resolver#method_setlocaladdress_0)
-*   [setServers](../.././dns/promises/~/Resolver#property_setservers)
-
-### Functions [#](#Functions)
+-   [cancel](../.././dns/promises/~/Resolver#method_cancel_0)
+-   [getServers](../.././dns/promises/~/Resolver#property_getservers)
+-   [resolve](../.././dns/promises/~/Resolver#property_resolve)
+-   [resolve4](../.././dns/promises/~/Resolver#property_resolve4)
+-   [resolve6](../.././dns/promises/~/Resolver#property_resolve6)
+-   [resolveAny](../.././dns/promises/~/Resolver#property_resolveany)
+-   [resolveCaa](../.././dns/promises/~/Resolver#property_resolvecaa)
+-   [resolveCname](../.././dns/promises/~/Resolver#property_resolvecname)
+-   [resolveMx](../.././dns/promises/~/Resolver#property_resolvemx)
+-   [resolveNaptr](../.././dns/promises/~/Resolver#property_resolvenaptr)
+-   [resolveNs](../.././dns/promises/~/Resolver#property_resolvens)
+-   [resolvePtr](../.././dns/promises/~/Resolver#property_resolveptr)
+-   [resolveSoa](../.././dns/promises/~/Resolver#property_resolvesoa)
+-   [resolveSrv](../.././dns/promises/~/Resolver#property_resolvesrv)
+-   [resolveTxt](../.././dns/promises/~/Resolver#property_resolvetxt)
+-   [reverse](../.././dns/promises/~/Resolver#property_reverse)
+-   [setLocalAddress](../.././dns/promises/~/Resolver#method_setlocaladdress_0)
+-   [setServers](../.././dns/promises/~/Resolver#property_setservers)
 
 f
 
@@ -166,8 +163,6 @@ f
 [setServers](../.././dns/promises/~/setServers "setServers")
 
 Sets the IP address and port of servers to be used when performing DNS resolution. The `servers` argument is an array of [RFC 5952](https://tools.ietf.org/html/rfc5952#section-6) formatted addresses. If the port is the IANA default DNS port (53) it can be omitted.
-
-### Variables [#](#Variables)
 
 v
 

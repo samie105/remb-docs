@@ -5,37 +5,41 @@ canonical_url: "https://tailwindcss.com/docs/filter"
 docset: "tailwind"
 kind: "framework"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:07:08.381Z"
-content_hash: "7f28012efd57c0a033839493c80d4747f32504e803ad3bda3972cc8f3bf9e43d"
+last_crawled_at: "2026-04-27T20:24:36.416Z"
+content_hash: "71f88212b74635631f01ea0eef6bbf35bc98a3baf89fcf6c50af327645c7b710"
 menu_path: ["filter"]
 section_path: []
-nav_prev: {"path": "tailwind/docs/mask-type/index.md", "title": "mask-type"}
-nav_next: {"path": "tailwind/docs/filter-blur/index.md", "title": "filter: blur()"}
+content_language: "en"
 ---
+[](/)
+
+[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
+
+1.  Filters
+2.  filter
+
+Filters
 
 # filter
 
 Utilities for applying filters to an element.
 
-Class
-
-Styles
-
-`filter-none`
-
+| Class | Styles |
+| --- | --- |
+| `filter-none` | 
 `filter: none;`
 
-`filter-(<custom-property>)`
+ |
+| `filter-(<custom-property>)` | 
 
 `filter: var(<custom-property>);`
 
-`filter-[<value>]`
+ |
+| `filter-[<value>]` | 
 
 `filter: <value>;`
 
-## [Examples](#examples)
-
-### [Basic example](#basic-example)
+ |
 
 Use utilities like `blur-xs` and `grayscale` to apply filters to an element:
 
@@ -57,15 +61,11 @@ combined
 
 You can combine the following filter utilities: [blur](/docs/filter-blur), [brightness](/docs/filter-brightness), [contrast](/docs/filter-contrast), [drop-shadow](/docs/filter-drop-shadow), [grayscale](/docs/filter-grayscale), [hue-rotate](/docs/filter-hue-rotate), [invert](/docs/filter-invert), [saturate](/docs/filter-saturate), and [sepia](/docs/filter-sepia).
 
-### [Removing filters](#removing-filters)
-
 Use the `filter-none` utility to remove all of the filters applied to an element:
 
 ```
 <img class="blur-md brightness-150 invert md:filter-none" src="/img/mountains.jpg" />
 ```
-
-### [Using a custom value](#using-a-custom-value)
 
 Use the `filter-[<value>]` syntax to set the filter based on a completely custom value:
 
@@ -81,8 +81,6 @@ For CSS variables, you can also use the `filter-(<custom-property>)` syntax:
 
 This is just a shorthand for `filter-[var(<custom-property>)]` that adds the `var()` function for you automatically.
 
-### [Applying on hover](#applying-on-hover)
-
 Prefix a `filter` utility with a variant like `hover:*` to only apply the utility in that state:
 
 ```
@@ -90,8 +88,6 @@ Prefix a `filter` utility with a variant like `hover:*` to only apply the utilit
 ```
 
 Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
-
-### [Responsive design](#responsive-design)
 
 Prefix a `filter` utility with a breakpoint variant like `md:` to only apply the utility at medium screen sizes and above:
 
@@ -103,13 +99,13 @@ Learn more about using variants in the [variants documentation](/docs/hover-focu
 
 ### On this page
 
-*   [Quick reference](#quick-reference)
-*   [Examples](#examples)
-    *   [Basic example](#basic-example)
-    *   [Removing filters](#removing-filters)
-    *   [Using a custom value](#using-a-custom-value)
-    *   [Applying on hover](#applying-on-hover)
-    *   [Responsive design](#responsive-design)
+-   [Quick reference](#quick-reference)
+-   [Examples](#examples)
+    -   [Basic example](#basic-example)
+    -   [Removing filters](#removing-filters)
+    -   [Using a custom value](#using-a-custom-value)
+    -   [Applying on hover](#applying-on-hover)
+    -   [Responsive design](#responsive-design)
 
 ![Build UIs that don’t suck — 5-day mini-course](/_next/static/media/course-promo.d3d6bc78.jpg)
 

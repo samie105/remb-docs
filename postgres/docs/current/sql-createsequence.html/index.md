@@ -5,14 +5,12 @@ canonical_url: "https://www.postgresql.org/docs/current/sql-createsequence.html"
 docset: "postgres"
 kind: "database"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:41:39.736Z"
-content_hash: "4561305c97d1eae5b2808fe9a2649f148fab34bf86b63db08d4127be7ea15a44"
+last_crawled_at: "2026-04-27T20:45:28.233Z"
+content_hash: "727cc9913c759f269e4f0d859dc4de1d84e90b009ad581551c1caad3b59a5500"
 menu_path: ["PostgreSQL: Documentation: 18: CREATE SEQUENCE"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/sql-createschema.html/index.md", "title": "PostgreSQL: Documentation: 18: CREATE SCHEMA"}
-nav_next: {"path": "postgres/docs/current/sql-createserver.html/index.md", "title": "PostgreSQL: Documentation: 18: CREATE SERVER"}
+content_language: "en"
 ---
-
 CREATE SEQUENCE — define a new sequence generator
 
 ## Synopsis
@@ -149,6 +147,6 @@ END;
 
 `CREATE SEQUENCE` conforms to the SQL standard, with the following exceptions:
 
-*   Obtaining the next value is done using the `nextval()` function instead of the standard's `NEXT VALUE FOR` expression.
+-   Obtaining the next value is done using the `nextval()` function instead of the standard's `NEXT VALUE FOR` expression.
     
-*   The `OWNED BY` clause is a PostgreSQL extension.
+-   The `OWNED BY` clause is a PostgreSQL extension.

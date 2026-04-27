@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/app/api-reference/config/next-config-js/
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:08:56.704Z"
-content_hash: "a4f46dbec14ad5e794765c86fe0872eb09bd3158ade7a878e35ac4644f544a5a"
+last_crawled_at: "2026-04-27T18:07:43.817Z"
+content_hash: "577e4137f532d1ffe90bda8c2a50d9bb1490a1cfdbb47015324aa5d1663290ec"
 menu_path: ["turbopack.ignoreIssue"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/api-reference/config/next-config-js/turbopackFileSystemCache/index.md", "title": "Turbopack FileSystem Caching"}
-nav_next: {"path": "nextjs/docs/app/api-reference/config/next-config-js/typedRoutes/index.md", "title": "typedRoutes"}
+version: "latest"
+content_language: "en"
 ---
+[Configuration](/docs/app/api-reference/config)[next.config.js](/docs/app/api-reference/config/next-config-js)turbopack.ignoreIssue
 
 # turbopack.ignoreIssue
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 The `turbopack.ignoreIssue` option allows you to filter out specific [Turbopack](/docs/app/api-reference/turbopack) errors and warnings so they do not appear in the CLI output or the error overlay. This is useful for suppressing known warnings that do not affect your application, such as intentionally unresolved optional dependencies.
 
@@ -24,8 +25,6 @@ This option is only available when using Turbopack (`next dev --turbopack`).
 ## Usage[](#usage)
 
 next.config.ts
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -49,37 +48,11 @@ export default nextConfig
 
 Each rule in the `ignoreIssue` array is an object with the following fields:
 
-Field
-
-Type
-
-Required
-
-Description
-
-[`path`](#path)
-
-`string | RegExp`
-
-Yes
-
-Matches against the file path of the issue
-
-[`title`](#title)
-
-`string | RegExp`
-
-No
-
-Matches against the issue title
-
-[`description`](#description)
-
-`string | RegExp`
-
-No
-
-Matches against the issue description
+| Field | Type | Required | Description |
+| --- | --- | --- | --- |
+| [`path`](#path) | `string | RegExp` | Yes | Matches against the file path of the issue |
+| [`title`](#title) | `string | RegExp` | No | Matches against the issue title |
+| [`description`](#description) | `string | RegExp` | No | Matches against the issue description |
 
 An issue is suppressed when it matches the `path` **and** all other specified fields in a rule. If only `path` is provided, any issue from a matching file is suppressed.
 
@@ -150,8 +123,6 @@ If your code uses `try/catch` around an optional `require()` call, Turbopack may
 
 next.config.ts
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -191,13 +162,9 @@ module.exports = {
 
 ## Version History[](#version-history)
 
-Version
-
-Changes
-
-`v16.2.0`
-
-`turbopack.ignoreIssue` introduced.
+| Version | Changes |
+| --- | --- |
+| `v16.2.0` | `turbopack.ignoreIssue` introduced. |
 
 ## Next Steps
 
@@ -217,20 +184,4 @@ Turbopack is an incremental bundler optimized for JavaScript and TypeScript, wri
 
 ](/docs/app/api-reference/turbopack)
 
-[Previous
-
-turbopackFileSystemCache
-
-](/docs/app/api-reference/config/next-config-js/turbopackFileSystemCache)
-
-[Next
-
-typedRoutes
-
-](/docs/app/api-reference/config/next-config-js/typedRoutes)
-
 Was this helpful?
-
-supported.
-
-Send

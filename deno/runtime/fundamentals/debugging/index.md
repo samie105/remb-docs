@@ -5,36 +5,37 @@ canonical_url: "https://docs.deno.com/runtime/fundamentals/debugging/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:46:30.838Z"
-content_hash: "0bd2faf721b0452aa941be468a1206a02f1d2ecb5e252e968b5a9cd679f66ec0"
+last_crawled_at: "2026-04-27T17:19:48.726Z"
+content_hash: "7ba6fa3c50565a0beb2b30d582ee3f625befd0d4d6ace4f8fe355a8be3a5d83f"
 menu_path: ["Debugging"]
 section_path: []
+content_language: "en"
 ---
-On this page
+**On this page**
 
-*   [\--inspect](#--inspect)
-*   [\--inspect-wait](#--inspect-wait)
-*   [\--inspect-brk](#--inspect-brk)
-*   [Example with Chrome DevTools](#example-with-chrome-devtools)
-*   [VSCode](#vscode)
-*   [JetBrains IDEs](#jetbrains-ides)
-*   [\--log-level=debug](#--log-level%3Ddebug)
-*   [\--strace-ops](#--strace-ops)
-*   [CPU Profiling](#cpu-profiling)
-    *   [CPU profiling flags](#cpu-profiling-flags)
-    *   [Analyzing profiles in Chrome DevTools](#analyzing-profiles-in-chrome-devtools)
-    *   [Example: Markdown report](#example%3A-markdown-report)
-    *   [Example: Interactive flamegraph](#example%3A-interactive-flamegraph)
-*   [OpenTelemetry integration](#opentelemetry-integration)
-*   [TLS session debugging](#tls-session-debugging)
+-   [\--inspect](#--inspect)
+-   [\--inspect-wait](#--inspect-wait)
+-   [\--inspect-brk](#--inspect-brk)
+-   [Example with Chrome DevTools](#example-with-chrome-devtools)
+-   [VSCode](#vscode)
+-   [JetBrains IDEs](#jetbrains-ides)
+-   [\--log-level=debug](#--log-level%3Ddebug)
+-   [\--strace-ops](#--strace-ops)
+-   [CPU Profiling](#cpu-profiling)
+    -   [CPU profiling flags](#cpu-profiling-flags)
+    -   [Analyzing profiles in Chrome DevTools](#analyzing-profiles-in-chrome-devtools)
+    -   [Example: Markdown report](#example%3A-markdown-report)
+    -   [Example: Interactive flamegraph](#example%3A-interactive-flamegraph)
+-   [OpenTelemetry integration](#opentelemetry-integration)
+-   [TLS session debugging](#tls-session-debugging)
 
 Deno supports the [V8 Inspector Protocol](https://v8.dev/docs/inspector) used by Chrome, Edge and Node.js. This makes it possible to debug Deno programs using Chrome DevTools or other clients that support the protocol (for example VSCode).
 
 To activate debugging capabilities run Deno with one of the following flags:
 
-*   `--inspect`
-*   `--inspect-wait`
-*   `--inspect-brk`
+-   `--inspect`
+-   `--inspect-wait`
+-   `--inspect-brk`
 
 ## \--inspect
 
@@ -92,23 +93,23 @@ Debugger listening on ws://127.0.0.1:9229/ws/1e82c406-85a9-44ab-86b6-7341583480b
 
 In a Chromium derived browser such as Google Chrome or Microsoft Edge, open `chrome://inspect` and click `Inspect` next to target:
 
-![chrome://inspect](/runtime/fundamentals/images/debugger1.png)
+![chrome://inspect](https://docs.deno.com/runtime/fundamentals/images/debugger1.png)
 
 It might take a few seconds after opening the DevTools to load all modules.
 
-![DevTools opened](/runtime/fundamentals/images/debugger2.jpg)
+![DevTools opened](https://docs.deno.com/runtime/fundamentals/images/debugger2.jpg)
 
 You might notice that DevTools pauses execution on the first line of `_constants.ts` instead of `file_server.ts`. This is expected behavior caused by the way ES modules are evaluated in JavaScript (`_constants.ts` is left-most, bottom-most dependency of `file_server.ts` so it is evaluated first).
 
 At this point all source code is available in the DevTools, so let's open up `file_server.ts` and add a breakpoint there; go to "Sources" pane and expand the tree:
 
-![Open file\_server.ts](/runtime/fundamentals/images/debugger3.jpg)
+![Open file\_server.ts](https://docs.deno.com/runtime/fundamentals/images/debugger3.jpg)
 
 _Looking closely you'll find duplicate entries for each file; one written regularly and one in italics. The former is compiled source file (so in the case of `.ts` files it will be emitted JavaScript source), while the latter is a source map for the file._
 
 Next, add a breakpoint in the `listenAndServe` method:
 
-![Break in file\_server.ts](/runtime/fundamentals/images/debugger4.jpg)
+![Break in file\_server.ts](https://docs.deno.com/runtime/fundamentals/images/debugger4.jpg)
 
 As soon as we've added the breakpoint, DevTools automatically opens up the source map file, which allows us step through the actual source code that includes types.
 
@@ -122,7 +123,7 @@ Once our script is running, try send a request and inspect it in Devtools:
 curl http://0.0.0.0:4507/
 ```
 
-![Break in request handling](/runtime/fundamentals/images/debugger5.jpg)
+![Break in request handling](https://docs.deno.com/runtime/fundamentals/images/debugger5.jpg)
 
 At this point we can introspect the contents of the request and go step-by-step to debug the code.
 
@@ -136,7 +137,7 @@ _**Note**: make sure you have [this Deno plugin](https://plugins.jetbrains.com/p
 
 You can debug Deno using your JetBrains IDE by right-clicking the file you want to debug and selecting the `Debug 'Deno: <file name>'` option.
 
-![Debug file](/runtime/fundamentals/images/jb-ide-debug.png)
+![Debug file](https://docs.deno.com/runtime/fundamentals/images/jb-ide-debug.png)
 
 This will create a run/debug configuration with no permission flags set. If you want to configure them, open your run/debug configuration and add the required flags to the `Command` field.
 
@@ -178,33 +179,14 @@ When your program exits, Deno will write a `.cpuprofile` file to the current dir
 
 ### CPU profiling flags
 
-Flag
-
-Description
-
-`--cpu-prof`
-
-Enable CPU profiling. Profile is written to disk on exit.
-
-`--cpu-prof-dir=<DIR>`
-
-Directory where the CPU profile will be written. Defaults to current directory. Implicitly enables `--cpu-prof`.
-
-`--cpu-prof-name=<NAME>`
-
-Filename for the CPU profile. Defaults to `CPU.<timestamp>.<pid>.cpuprofile`.
-
-`--cpu-prof-interval=<MICROSECONDS>`
-
-Sampling interval in microseconds. Default is `1000` (1ms). Lower values give more detail but larger files.
-
-`--cpu-prof-md`
-
-Generate a human-readable Markdown report alongside the `.cpuprofile` file.
-
-`--cpu-prof-flamegraph`
-
-Generate an interactive SVG flamegraph alongside the `.cpuprofile` file.
+| Flag | Description |
+| --- | --- |
+| `--cpu-prof` | Enable CPU profiling. Profile is written to disk on exit. |
+| `--cpu-prof-dir=<DIR>` | Directory where the CPU profile will be written. Defaults to current directory. Implicitly enables `--cpu-prof`. |
+| `--cpu-prof-name=<NAME>` | Filename for the CPU profile. Defaults to `CPU.<timestamp>.<pid>.cpuprofile`. |
+| `--cpu-prof-interval=<MICROSECONDS>` | Sampling interval in microseconds. Default is `1000` (1ms). Lower values give more detail but larger files. |
+| `--cpu-prof-md` | Generate a human-readable Markdown report alongside the `.cpuprofile` file. |
+| `--cpu-prof-flamegraph` | Generate an interactive SVG flamegraph alongside the `.cpuprofile` file. |
 
 Note
 
@@ -269,11 +251,11 @@ This creates both a `.cpuprofile` file and a `.md` file with a report like:
 
 The report includes:
 
-*   **Summary**: Total duration, sample count, sampling interval, and function count
-*   **Top 10**: Quick overview of the most expensive functions
-*   **Hot Functions**: Functions sorted by self time (time spent in the function itself, excluding callees)
-*   **Call Tree**: Hierarchical view showing the call stack and time distribution
-*   **Function Details**: Per-function breakdown with sample counts
+-   **Summary**: Total duration, sample count, sampling interval, and function count
+-   **Top 10**: Quick overview of the most expensive functions
+-   **Hot Functions**: Functions sorted by self time (time spent in the function itself, excluding callees)
+-   **Call Tree**: Hierarchical view showing the call stack and time distribution
+-   **Function Details**: Per-function breakdown with sample counts
 
 ### Example: Interactive flamegraph
 
@@ -287,11 +269,11 @@ deno run --cpu-prof --cpu-prof-flamegraph your_script.ts
 
 This creates both a `.cpuprofile` file and an `.svg` file. Open the SVG in any browser to explore the profile interactively:
 
-*   **Click** any frame to zoom into that subtree
-*   **Reset Zoom** button to restore the full view
-*   **Ctrl+F** or the **Search** button for regex-based function search with highlighting and matched percentage
-*   **Invert** checkbox to flip into an icicle graph (root at top)
-*   **Hover** any frame to see the function name and sample count
+-   **Click** any frame to zoom into that subtree
+-   **Reset Zoom** button to restore the full view
+-   **Ctrl+F** or the **Search** button for regex-based function search with highlighting and matched percentage
+-   **Invert** checkbox to flip into an icicle graph (root at top)
+-   **Hover** any frame to see the function name and sample count
 
 The flamegraph also works with `deno eval`:
 
@@ -305,10 +287,10 @@ deno eval --cpu-prof --cpu-prof-flamegraph "for (let i = 0; i < 1e8; i++) {}"
 
 For production applications or complex systems, OpenTelemetry provides a more comprehensive approach to observability and debugging. Deno includes built-in support for OpenTelemetry, allowing you to:
 
-*   Trace requests through your application
-*   Monitor application performance metrics
-*   Collect structured logs
-*   Export telemetry data to monitoring systems
+-   Trace requests through your application
+-   Monitor application performance metrics
+-   Collect structured logs
+-   Export telemetry data to monitoring systems
 
 \>\_
 
@@ -318,9 +300,9 @@ OTEL_DENO=true deno run your_script.ts
 
 This will automatically collect and export runtime observability data, including:
 
-*   HTTP request traces
-*   Runtime metrics
-*   Console logs and errors
+-   HTTP request traces
+-   Runtime metrics
+-   Console logs and errors
 
 For full details on Deno's OpenTelemetry integration, including custom metrics, traces, and configuration options, see the [OpenTelemetry documentation](/runtime/fundamentals/open_telemetry).
 

@@ -5,15 +5,13 @@ canonical_url: "https://orm.drizzle.team/docs/effect-schema"
 docset: "drizzle"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:47:57.165Z"
-content_hash: "4d726e9f39e9b7f2effaff8433e7e304fc467cb290bd5cf563ba3a8af8f3284c"
+last_crawled_at: "2026-04-27T18:37:33.882Z"
+content_hash: "befcc7ca48517a60c52da292d973596049edec37973a6143dbfe8cd26dab2d5f"
 menu_path: ["effect-schema"]
 section_path: []
-nav_prev: {"path": "drizzle/docs/typebox-legacy/index.md", "title": "typebox-legacy"}
-nav_next: {"path": "drizzle/docs/prisma/index.md", "title": "Drizzle extension for Prisma"}
+content_language: "en"
 ---
-
-```
+```ts
 import { pgEnum, pgTable, serial, text, timestamp } from 'drizzle-orm/pg-core';
 import { createInsertSchema, createSelectSchema, createUpdateSchema } from 'drizzle-orm/effect-schema';
 import { Schema } from 'effect';

@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/pages/building-your-application/renderin
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:23:06.481Z"
-content_hash: "04456336b42c2a5c9119ac4c36fb57dc18bea8c54afae1e90b9e081b780bbbad"
+last_crawled_at: "2026-04-27T18:22:27.710Z"
+content_hash: "bd833ffd21e83a3bb9d92013d46e3702d379723a2b54c8b82db9af3fe9d3fc5c"
 menu_path: ["Client-side Rendering (CSR)"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/pages/building-your-application/rendering/automatic-static-optimization/index.md", "title": "Automatic Static Optimization"}
-nav_next: {"path": "nextjs/docs/pages/building-your-application/data-fetching/index.md", "title": "Data Fetching"}
+version: "latest"
+content_language: "en"
 ---
+[Building Your Application](/docs/pages/building-your-application)[Rendering](/docs/pages/building-your-application/rendering)Client-side Rendering (CSR)
 
 # Client-side Rendering (CSR)
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 In Client-Side Rendering (CSR) with React, the browser downloads a minimal HTML page and the JavaScript needed for the page. The JavaScript is then used to update the DOM and render the page. When the application is first loaded, the user may notice a slight delay before they can see the full page, this is because the page isn't fully rendered until all the JavaScript is downloaded, parsed, and executed.
 
@@ -105,7 +106,3 @@ Learn how to create or update static pages at runtime with Incremental Static Re
 ](/docs/pages/guides/incremental-static-regeneration)
 
 Was this helpful?
-
-supported.
-
-Send

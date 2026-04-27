@@ -5,18 +5,19 @@ canonical_url: "https://docs.deno.com/runtime/reference/continuous_integration/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:57:44.154Z"
-content_hash: "480b4fa457e1f6bacca2cc22ab6def68bfc04e3b337c9da746addcde1e7e365b"
+last_crawled_at: "2026-04-27T17:35:31.697Z"
+content_hash: "495da559325840ebfaa1120ff2e16cfe32c31c31c5ee783dbecc362bbe5e0329"
 menu_path: ["Continuous integration"]
 section_path: []
+content_language: "en"
 ---
-On this page
+**On this page**
 
-*   [Setting up a basic pipeline](#setting-up-a-basic-pipeline)
-*   [Cross-platform workflows](#cross-platform-workflows)
-*   [Speeding up Deno pipelines](#speeding-up-deno-pipelines)
-    *   [Reducing repetition](#reducing-repetition)
-    *   [Caching dependencies](#caching-dependencies)
+-   [Setting up a basic pipeline](#setting-up-a-basic-pipeline)
+-   [Cross-platform workflows](#cross-platform-workflows)
+-   [Speeding up Deno pipelines](#speeding-up-deno-pipelines)
+    -   [Reducing repetition](#reducing-repetition)
+    -   [Caching dependencies](#caching-dependencies)
 
 Deno's built-in tools make it easy to set up Continuous Integration (CI) pipelines for your projects. [Testing](/runtime/fundamentals/testing), [linting and formatting](/runtime/fundamentals/linting_and_formatting/) your code can all be done with the corresponding commands `deno test`, `deno lint` and `deno fmt`. In addition, you can generate code coverage reports from test results with `deno coverage` in pipelines.
 
@@ -169,9 +170,9 @@ You should see changes in the lockfile's contents after running this. When this 
 
 By default, the cache is automatically keyed by:
 
-*   the github [job\_id](https://docs.github.com/en/actions/writing-workflows/workflow-syntax-for-github-actions#jobsjob_id)
-*   the runner os and architecture
-*   a hash of the `deno.lock` files in the project
+-   the github [job\_id](https://docs.github.com/en/actions/writing-workflows/workflow-syntax-for-github-actions#jobsjob_id)
+-   the runner os and architecture
+-   a hash of the `deno.lock` files in the project
 
 It is possible to customize the default hash (`${{ hashFiles('**/deno.lock') }}`) used as part of the cache key via the `cache-hash` input.
 

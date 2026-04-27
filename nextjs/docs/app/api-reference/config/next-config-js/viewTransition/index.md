@@ -5,19 +5,20 @@ canonical_url: "https://nextjs.org/docs/app/api-reference/config/next-config-js/
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:09:06.895Z"
-content_hash: "c719aa34879c4ff27ef654fd94a73580b474a801c2d972b5e402f1bed82991f1"
+last_crawled_at: "2026-04-27T18:07:54.239Z"
+content_hash: "8073bf1cefe3723e23da62f6012bac86b980599be9c6cf8553b3543b7d351dec"
 menu_path: ["viewTransition"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/api-reference/config/next-config-js/useLightningcss/index.md", "title": "useLightningcss"}
-nav_next: {"path": "nextjs/docs/app/api-reference/config/next-config-js/webpack/index.md", "title": "Custom Webpack Config"}
+version: "latest"
+content_language: "en"
 ---
+[Configuration](/docs/app/api-reference/config)[next.config.js](/docs/app/api-reference/config/next-config-js)viewTransition
 
 # viewTransition
 
 This feature is currently experimental and subject to change, it's not recommended for production. Try it out and share your feedback on [GitHub](https://github.com/vercel/next.js/issues).
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 `viewTransition` enables React's [View Transitions API](https://developer.mozilla.org/en-US/docs/Web/API/View_Transition_API) integration in Next.js. This lets you animate navigations, loading states, and content changes using the native browser View Transitions API.
 
@@ -52,20 +53,4 @@ Check out the [View Transitions Demo](https://react-view-transitions-demo.labs.v
 
 The View Transitions API is a baseline web standard, and browser support continues to expand. As React's [`<ViewTransition>`](https://react.dev/reference/react/ViewTransition) component evolves, more transition patterns and use cases will become available.
 
-[Previous
-
-useLightningcss
-
-](/docs/app/api-reference/config/next-config-js/useLightningcss)
-
-[Next
-
-webpack
-
-](/docs/app/api-reference/config/next-config-js/webpack)
-
 Was this helpful?
-
-supported.
-
-Send

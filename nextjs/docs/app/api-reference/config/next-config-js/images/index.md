@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/app/api-reference/config/next-config-js/
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:07:45.190Z"
-content_hash: "bf70ae6c97dbb9fe20be4de46c4f82624fa3b255786fa14553e802dc6a189d25"
+last_crawled_at: "2026-04-27T18:06:36.956Z"
+content_hash: "f8d6264569bcc10afc1974b99959942d04a1c285f5736b0f6096a22bbd343d95"
 menu_path: ["images"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/api-reference/config/next-config-js/httpAgentOptions/index.md", "title": "httpAgentOptions"}
-nav_next: {"path": "nextjs/docs/app/api-reference/config/next-config-js/incrementalCacheHandlerPath/index.md", "title": "Custom Next.js Cache Handler"}
+version: "latest"
+content_language: "en"
 ---
+[Configuration](/docs/app/api-reference/config)[next.config.js](/docs/app/api-reference/config/next-config-js)images
 
 # images
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 If you want to use a cloud provider to optimize images instead of using the Next.js built-in Image Optimization API, you can configure `next.config.js` with the following:
 
@@ -50,22 +51,22 @@ To learn more about configuring the behavior of the built-in [Image Optimization
 
 ## Example Loader Configuration[](#example-loader-configuration)
 
-*   [Akamai](#akamai)
-*   [AWS CloudFront](#aws-cloudfront)
-*   [Cloudinary](#cloudinary)
-*   [Cloudflare](#cloudflare)
-*   [Contentful](#contentful)
-*   [Fastly](#fastly)
-*   [Gumlet](#gumlet)
-*   [ImageEngine](#imageengine)
-*   [Imgix](#imgix)
-*   [PixelBin](#pixelbin)
-*   [Sanity](#sanity)
-*   [Sirv](#sirv)
-*   [Supabase](#supabase)
-*   [Thumbor](#thumbor)
-*   [Imagekit](#imagekitio)
-*   [Nitrogen AIO](#nitrogen-aio)
+-   [Akamai](#akamai)
+-   [AWS CloudFront](#aws-cloudfront)
+-   [Cloudinary](#cloudinary)
+-   [Cloudflare](#cloudflare)
+-   [Contentful](#contentful)
+-   [Fastly](#fastly)
+-   [Gumlet](#gumlet)
+-   [ImageEngine](#imageengine)
+-   [Imgix](#imgix)
+-   [PixelBin](#pixelbin)
+-   [Sanity](#sanity)
+-   [Sirv](#sirv)
+-   [Supabase](#supabase)
+-   [Thumbor](#thumbor)
+-   [Imagekit](#imagekitio)
+-   [Nitrogen AIO](#nitrogen-aio)
 
 ### Akamai[](#akamai)
 
@@ -268,20 +269,4 @@ export default function aioLoader({ src, width, quality }) {
 }
 ```
 
-[Previous
-
-httpAgentOptions
-
-](/docs/app/api-reference/config/next-config-js/httpAgentOptions)
-
-[Next
-
-cacheHandler
-
-](/docs/app/api-reference/config/next-config-js/incrementalCacheHandlerPath)
-
 Was this helpful?
-
-supported.
-
-Send

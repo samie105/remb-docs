@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/app/api-reference/file-conventions/metad
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:10:19.947Z"
-content_hash: "ebd616cbf1958ec054fcb5e20154f7cfc5cb8ce0e381fc35fc9262c9beefb7e3"
+last_crawled_at: "2026-04-27T18:09:03.564Z"
+content_hash: "c18afac7092a3ea551257077ecadc244ca2fe200f130a88820a5b58693a0e5d0"
 menu_path: ["opengraph-image and twitter-image"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/api-reference/file-conventions/metadata/manifest/index.md", "title": "manifest.json"}
-nav_next: {"path": "nextjs/docs/app/api-reference/file-conventions/metadata/robots/index.md", "title": "robots.txt"}
+version: "latest"
+content_language: "en"
 ---
+[File-system conventions](/docs/app/api-reference/file-conventions)[Metadata Files](/docs/app/api-reference/file-conventions/metadata)opengraph-image and twitter-image
 
 # opengraph-image and twitter-image
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 The `opengraph-image` and `twitter-image` file conventions allow you to set Open Graph and Twitter images for a route segment.
 
@@ -23,8 +24,8 @@ They are useful for setting the images that appear on social networks and messag
 
 There are two ways to set Open Graph and Twitter images:
 
-*   [Using image files (.jpg, .png, .gif)](#image-files-jpg-png-gif)
-*   [Using code to generate images (.js, .ts, .tsx)](#generate-images-using-code-js-ts-tsx)
+-   [Using image files (.jpg, .png, .gif)](#image-files-jpg-png-gif)
+-   [Using code to generate images (.js, .ts, .tsx)](#generate-images-using-code-js-ts-tsx)
 
 ## Image files (.jpg, .png, .gif)[](#image-files-jpg-png-gif)
 
@@ -32,25 +33,12 @@ Use an image file to set a route segment's shared image by placing an `opengraph
 
 Next.js will evaluate the file and automatically add the appropriate tags to your app's `<head>` element.
 
-File convention
-
-Supported file types
-
-[`opengraph-image`](#opengraph-image)
-
-`.jpg`, `.jpeg`, `.png`, `.gif`
-
-[`twitter-image`](#twitter-image)
-
-`.jpg`, `.jpeg`, `.png`, `.gif`
-
-[`opengraph-image.alt`](#opengraph-imagealttxt)
-
-`.txt`
-
-[`twitter-image.alt`](#twitter-imagealttxt)
-
-`.txt`
+| File convention | Supported file types |
+| --- | --- |
+| [`opengraph-image`](#opengraph-image) | `.jpg`, `.jpeg`, `.png`, `.gif` |
+| [`twitter-image`](#twitter-image) | `.jpg`, `.jpeg`, `.png`, `.gif` |
+| [`opengraph-image.alt`](#opengraph-imagealttxt) | `.txt` |
+| [`twitter-image.alt`](#twitter-imagealttxt) | `.txt` |
 
 > **Good to know**:
 > 
@@ -120,29 +108,20 @@ In addition to using [literal image files](#image-files-jpg-png-gif), you can pr
 
 Generate a route segment's shared image by creating an `opengraph-image` or `twitter-image` route that default exports a function.
 
-File convention
-
-Supported file types
-
-`opengraph-image`
-
-`.js`, `.ts`, `.tsx`
-
-`twitter-image`
-
-`.js`, `.ts`, `.tsx`
+| File convention | Supported file types |
+| --- | --- |
+| `opengraph-image` | `.js`, `.ts`, `.tsx` |
+| `twitter-image` | `.js`, `.ts`, `.tsx` |
 
 > **Good to know**:
 > 
-> *   By default, generated images are [**statically optimized**](/docs/app/glossary#prerendering) (generated at build time and cached) unless they use [Request-time APIs](/docs/app/glossary#request-time-apis) or uncached data.
-> *   You can generate multiple Images in the same file using [`generateImageMetadata`](/docs/app/api-reference/functions/generate-image-metadata).
-> *   `opengraph-image.js` and `twitter-image.js` are special Route Handlers that is cached by default unless it uses a [Request-time API](/docs/app/glossary#request-time-apis) or [dynamic config](/docs/app/guides/caching-without-cache-components#dynamic) option.
+> -   By default, generated images are [**statically optimized**](/docs/app/glossary#prerendering) (generated at build time and cached) unless they use [Request-time APIs](/docs/app/glossary#request-time-apis) or uncached data.
+> -   You can generate multiple Images in the same file using [`generateImageMetadata`](/docs/app/api-reference/functions/generate-image-metadata).
+> -   `opengraph-image.js` and `twitter-image.js` are special Route Handlers that is cached by default unless it uses a [Request-time API](/docs/app/glossary#request-time-apis) or [dynamic config](/docs/app/guides/caching-without-cache-components#dynamic) option.
 
 The easiest way to generate an image is to use the [ImageResponse](/docs/app/api-reference/functions/image-response) API from `next/og`.
 
 app/about/opengraph-image.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -224,8 +203,6 @@ A promise that resolves to an object containing the [dynamic route parameters](/
 
 app/shop/\[slug\]/opengraph-image.tsx
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -239,29 +216,11 @@ export default async function Image({
 }
 ```
 
-Route
-
-URL
-
-`params`
-
-`app/shop/opengraph-image.js`
-
-`/shop`
-
-`undefined`
-
-`app/shop/[slug]/opengraph-image.js`
-
-`/shop/1`
-
-`Promise<{ slug: '1' }>`
-
-`app/shop/[tag]/[item]/opengraph-image.js`
-
-`/shop/1/2`
-
-`Promise<{ tag: '1', item: '2' }>`
+| Route | URL | `params` |
+| --- | --- | --- |
+| `app/shop/opengraph-image.js` | `/shop` | `undefined` |
+| `app/shop/[slug]/opengraph-image.js` | `/shop/1` | `Promise<{ slug: '1' }>` |
+| `app/shop/[tag]/[item]/opengraph-image.js` | `/shop/1/2` | `Promise<{ tag: '1', item: '2' }>` |
 
 ### Returns[](#returns)
 
@@ -273,27 +232,15 @@ The default export function should return a `Blob` | `ArrayBuffer` | `TypedArray
 
 You can optionally configure the image's metadata by exporting `alt`, `size`, and `contentType` variables from `opengraph-image` or `twitter-image` route.
 
-Option
-
-Type
-
-[`alt`](#alt)
-
-`string`
-
-[`size`](#size)
-
-`{ width: number; height: number }`
-
-[`contentType`](#contenttype)
-
-`string` - [image MIME type](https://developer.mozilla.org/docs/Web/HTTP/Basics_of_HTTP/MIME_types#image_types)
+| Option | Type |
+| --- | --- |
+| [`alt`](#alt) | `string` |
+| [`size`](#size) | `{ width: number; height: number }` |
+| [`contentType`](#contenttype) | `string` - [image MIME type](https://developer.mozilla.org/docs/Web/HTTP/Basics_of_HTTP/MIME_types#image_types) |
 
 #### `alt`[](#alt)
 
 opengraph-image.tsx | twitter-image.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -313,8 +260,6 @@ export default function Image() {}
 
 opengraph-image.tsx | twitter-image.tsx
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -333,8 +278,6 @@ export default function Image() {}
 #### `contentType`[](#contenttype)
 
 opengraph-image.tsx | twitter-image.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -363,8 +306,6 @@ This example uses the `params` object and external data to generate the image.
 > **Good to know**: By default, this generated image will be statically optimized. You can configure the individual `fetch` [`options`](/docs/app/api-reference/functions/fetch) or route segments [options](/docs/app/guides/caching-without-cache-components#route-segment-config-revalidate) to change this behavior.
 
 app/posts/\[slug\]/opengraph-image.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -417,8 +358,6 @@ These examples use the Node.js runtime to fetch a local image from the file syst
 
 app/opengraph-image.tsx
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -450,8 +389,6 @@ Passing an `ArrayBuffer` to the `src` attribute of an `<img>` element is not par
 
 app/opengraph-image.tsx
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -482,32 +419,9 @@ export default async function Image() {
 
 ## Version History[](#version-history)
 
-Version
-
-Changes
-
-`v16.0.0`
-
-`params` is now a promise that resolves to an object
-
-`v13.3.0`
-
-`opengraph-image` and `twitter-image` introduced.
-
-[Previous
-
-manifest.json
-
-](/docs/app/api-reference/file-conventions/metadata/manifest)
-
-[Next
-
-robots.txt
-
-](/docs/app/api-reference/file-conventions/metadata/robots)
+| Version | Changes |
+| --- | --- |
+| `v16.0.0` | `params` is now a promise that resolves to an object |
+| `v13.3.0` | `opengraph-image` and `twitter-image` introduced. |
 
 Was this helpful?
-
-supported.
-
-Send

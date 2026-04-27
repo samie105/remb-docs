@@ -5,19 +5,20 @@ canonical_url: "https://docs.deno.com/runtime/reference/cli/init/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:53:47.077Z"
-content_hash: "34bc56435cab953dd953fbfa8b589674e5a47e401bfbe5f97065db84701b559e"
+last_crawled_at: "2026-04-27T17:30:02.606Z"
+content_hash: "2eb4bde59d0a2a6660efc09311909ad6426421be4f3890ceebaf27744bf6aec0"
 menu_path: ["deno init"]
 section_path: []
+content_language: "en"
 ---
-On this page
+**On this page**
 
-*   [Examples](#examples)
-*   [Init a JSR package](#init-a-jsr-package)
-*   [Initialize a web server](#initialize-a-web-server)
-*   [Initialize an empty project](#initialize-an-empty-project)
-*   [Generate a library project](#generate-a-library-project)
-*   [Options](#options)
+-   [Examples](#examples)
+-   [Init a JSR package](#init-a-jsr-package)
+-   [Initialize a web server](#initialize-a-web-server)
+-   [Initialize an empty project](#initialize-an-empty-project)
+-   [Generate a library project](#generate-a-library-project)
+-   [Options](#options)
 
 ## Examples
 

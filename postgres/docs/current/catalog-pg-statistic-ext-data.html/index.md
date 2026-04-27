@@ -5,14 +5,12 @@ canonical_url: "https://www.postgresql.org/docs/current/catalog-pg-statistic-ext
 docset: "postgres"
 kind: "database"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:43:59.744Z"
-content_hash: "92e270322034b9b0d9032d78cb059c287d40aef7ef3f0fbcf84fb164811c99a8"
+last_crawled_at: "2026-04-27T20:46:22.714Z"
+content_hash: "bcc004ab9e0233a52e1cd4ca00847b93b666908fb130b2e2eff26c06c47e6677"
 menu_path: ["PostgreSQL: Documentation: 18: 52.53. pg_statistic_ext_data"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/catalog-pg-shseclabel.html/index.md", "title": "PostgreSQL: Documentation: 18: 52.50.\u00a0pg_shseclabel"}
-nav_next: {"path": "postgres/docs/current/catalog-pg-statistic-ext.html/index.md", "title": "PostgreSQL: Documentation: 18: 52.52.\u00a0pg_statistic_ext"}
+content_language: "en"
 ---
-
 Development Versions: [devel](https://www.postgresql.org/docs/devel/catalog-pg-statistic-ext-data.html "PostgreSQL devel - 52.53. pg_statistic_ext_data")
 
 Unsupported versions: [13](https://www.postgresql.org/docs/13/catalog-pg-statistic-ext-data.html "PostgreSQL 13 - 52.53. pg_statistic_ext_data") / [12](https://www.postgresql.org/docs/12/catalog-pg-statistic-ext-data.html "PostgreSQL 12 - 52.53. pg_statistic_ext_data")
@@ -25,30 +23,52 @@ Like [`pg_statistic`](https://www.postgresql.org/docs/current/catalog-pg-statist
 
 **Table 52.53. `pg_statistic_ext_data` Columns**
 
+| 
 Column Type
 
 Description
+
+ |
+| --- |
+| 
 
 `stxoid` `oid` (references [`pg_statistic_ext`](https://www.postgresql.org/docs/current/catalog-pg-statistic-ext.html "52.52. pg_statistic_ext").`oid`)
 
 Extended statistics object containing the definition for this data
 
+ |
+| 
+
 `stxdinherit` `bool`
 
 If true, the stats include values from child tables, not just the values in the specified relation
+
+ |
+| 
 
 `stxdndistinct` `pg_ndistinct`
 
 N-distinct counts, serialized as `pg_ndistinct` type
 
+ |
+| 
+
 `stxddependencies` `pg_dependencies`
 
 Functional dependency statistics, serialized as `pg_dependencies` type
+
+ |
+| 
 
 `stxdmcv` `pg_mcv_list`
 
 MCV (most-common values) list statistics, serialized as `pg_mcv_list` type
 
+ |
+| 
+
 `stxdexpr` `pg_statistic[]`
 
 Per-expression statistics, serialized as an array of `pg_statistic` type
+
+ |

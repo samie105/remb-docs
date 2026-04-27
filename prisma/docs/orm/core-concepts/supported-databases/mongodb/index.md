@@ -5,14 +5,13 @@ canonical_url: "https://www.prisma.io/docs/orm/core-concepts/supported-databases
 docset: "prisma"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:41:16.522Z"
-content_hash: "be65159826ef2266994bc302eb363465d5d055cc076b7a6d9256b4d4228871ee"
+last_crawled_at: "2026-04-27T19:36:42.157Z"
+content_hash: "ab0b25eb686eca92607c721f1950f438d1658f93f1a9c4f098291fe830d81001"
 menu_path: ["MongoDB"]
 section_path: []
-nav_prev: {"path": "prisma/docs/orm/core-concepts/supported-databases/database-drivers/index.md", "title": "Database drivers"}
-nav_next: {"path": "prisma/docs/orm/core-concepts/supported-databases/mysql/index.md", "title": "MySQL"}
+tab_variants: ["npm","pnpm","yarn","bun"]
+content_language: "en"
 ---
-
 This guide discusses the concepts behind using Prisma ORM and MongoDB, explains the commonalities and differences between MongoDB and other database providers, and leads you through the process for configuring your application to integrate with MongoDB using Prisma ORM.
 
 [MongoDB](https://www.mongodb.com/) is a NoSQL database that stores data in [BSON](https://bsonspec.org/) format, a JSON-like document format designed for storing data in key-value pairs. It is commonly used in JavaScript application development because the document model maps easily to objects in application code, and there is built in support for high availability and horizontal scaling.
@@ -21,23 +20,23 @@ MongoDB stores data in collections that do not need a schema to be defined in ad
 
 Some aspects of using Prisma ORM with MongoDB are the same as when using Prisma ORM with a relational database. You can still:
 
-*   model your database with the [Prisma Schema Language](prisma/docs/orm/prisma-schema/overview/index.md)
-*   connect to your database, using the [`mongodb` database connector](https://www.prisma.io/docs/orm/core-concepts/supported-databases)
-*   use [Introspection](prisma/docs/orm/prisma-schema/introspection/index.md) for existing projects if you already have a MongoDB database
-*   use [`db push`](prisma/docs/orm/prisma-migrate/workflows/prototyping-your-schema/index.md) to push changes in your schema to the database
-*   use [Prisma Client](prisma/docs/orm/prisma-client/setup-and-configuration/introduction/index.md) in your application to query your database in a type safe way based on your Prisma Schema
+-   model your database with the [Prisma Schema Language](https://www.prisma.io/docs/orm/prisma-schema/overview)
+-   connect to your database, using the [`mongodb` database connector](https://www.prisma.io/docs/orm/core-concepts/supported-databases)
+-   use [Introspection](https://www.prisma.io/docs/orm/prisma-schema/introspection) for existing projects if you already have a MongoDB database
+-   use [`db push`](https://www.prisma.io/docs/orm/prisma-migrate/workflows/prototyping-your-schema) to push changes in your schema to the database
+-   use [Prisma Client](https://www.prisma.io/docs/orm/prisma-client/setup-and-configuration/introduction) in your application to query your database in a type safe way based on your Prisma Schema
 
 MongoDB's document-based structure and flexible schema means that using Prisma ORM with MongoDB differs from using it with a relational database in a number of ways. These are some areas where there are differences that you need to be aware of:
 
-*   **Defining IDs**: MongoDB documents have an `_id` field (that often contains an [ObjectID](https://www.mongodb.com/docs/manual/reference/bson-types/#std-label-objectid)). Prisma ORM does not support fields starting with `_`, so this needs to be mapped to a Prisma ORM field using the `@map` attribute. For more information, see [Defining IDs in MongoDB](prisma/docs/orm/prisma-schema/data-model/models/index.md#defining-ids-in-mongodb).
+-   **Defining IDs**: MongoDB documents have an `_id` field (that often contains an [ObjectID](https://www.mongodb.com/docs/manual/reference/bson-types/#std-label-objectid)). Prisma ORM does not support fields starting with `_`, so this needs to be mapped to a Prisma ORM field using the `@map` attribute. For more information, see [Defining IDs in MongoDB](https://www.prisma.io/docs/orm/prisma-schema/data-model/models#defining-ids-in-mongodb).
     
-*   **Migrating existing data to match your Prisma schema**: In relational databases, all your data must match your schema. If you change the type of a particular field in your schema when you migrate, all the data must also be updated to match. In contrast, MongoDB does not enforce any particular schema, so you need to take care when migrating. For more information, see [How to migrate old data to new schemas](#how-to-migrate-existing-data-to-match-your-prisma-schema).
+-   **Migrating existing data to match your Prisma schema**: In relational databases, all your data must match your schema. If you change the type of a particular field in your schema when you migrate, all the data must also be updated to match. In contrast, MongoDB does not enforce any particular schema, so you need to take care when migrating. For more information, see [How to migrate old data to new schemas](#how-to-migrate-existing-data-to-match-your-prisma-schema).
     
-*   **Introspection and Prisma ORM relations**: When you introspect an existing MongoDB database, you will get a schema with no relations and will need to add the missing relations in manually. For more information, see [How to add in missing relations after Introspection](#how-to-add-in-missing-relations-after-introspection).
+-   **Introspection and Prisma ORM relations**: When you introspect an existing MongoDB database, you will get a schema with no relations and will need to add the missing relations in manually. For more information, see [How to add in missing relations after Introspection](#how-to-add-in-missing-relations-after-introspection).
     
-*   **Filtering for `null` and missing fields**: MongoDB makes a distinction between setting a field to `null` and not setting it at all, which is not present in relational databases. Prisma ORM currently does not express this distinction, which means that you need to be careful when filtering for `null` and missing fields. For more information, see [How to filter for `null` and missing fields](#how-to-filter-for-null-and-missing-fields)
+-   **Filtering for `null` and missing fields**: MongoDB makes a distinction between setting a field to `null` and not setting it at all, which is not present in relational databases. Prisma ORM currently does not express this distinction, which means that you need to be careful when filtering for `null` and missing fields. For more information, see [How to filter for `null` and missing fields](#how-to-filter-for-null-and-missing-fields)
     
-*   **Enabling replication**: Prisma ORM uses [MongoDB transactions](https://www.mongodb.com/docs/manual/core/transactions/) internally to avoid partial writes on nested queries. When using transactions, MongoDB requires replication of your data set to be enabled. To do this, you will need to configure a [replica set](https://www.mongodb.com/docs/manual/replication/) — this is a group of MongoDB processes that maintain the same data set. Note that it is still possible to use a single database, by creating a replica set with only one node in it. If you use MongoDB's [Atlas](https://www.mongodb.com/atlas/database) hosting service, the replica set is configured for you, but if you are running MongoDB locally you will need to set up a replica set yourself. For more information, see MongoDB's [guide to deploying a replica set](https://www.mongodb.com/docs/manual/tutorial/deploy-replica-set/).
+-   **Enabling replication**: Prisma ORM uses [MongoDB transactions](https://www.mongodb.com/docs/manual/core/transactions/) internally to avoid partial writes on nested queries. When using transactions, MongoDB requires replication of your data set to be enabled. To do this, you will need to configure a [replica set](https://www.mongodb.com/docs/manual/replication/) — this is a group of MongoDB processes that maintain the same data set. Note that it is still possible to use a single database, by creating a replica set with only one node in it. If you use MongoDB's [Atlas](https://www.mongodb.com/atlas/database) hosting service, the replica set is configured for you, but if you are running MongoDB locally you will need to set up a replica set yourself. For more information, see MongoDB's [guide to deploying a replica set](https://www.mongodb.com/docs/manual/tutorial/deploy-replica-set/).
     
 
 ### [Performance considerations for large collections](#performance-considerations-for-large-collections)
@@ -65,6 +64,8 @@ These iterative tasks of updating the schema and the database can result in inco
 
 **Scenario**: you need to include a phone number for users, as well as an email. You currently have the following `User` model in your `schema.prisma` file:
 
+prisma/schema.prisma
+
 ```
 model User {
   id    String @id @default(auto()) @map("_id") @db.ObjectId
@@ -74,9 +75,11 @@ model User {
 
 There are a number of strategies you could use for migrating this schema:
 
-*   **"On-demand" updates**: with this strategy, you and your team have agreed that updates can be made to the schema as needed. However, in order to avoid migration failures due to inconsistencies between the data and schema, there is agreement in the team that any new fields added are explicitly defined as optional.
+-   **"On-demand" updates**: with this strategy, you and your team have agreed that updates can be made to the schema as needed. However, in order to avoid migration failures due to inconsistencies between the data and schema, there is agreement in the team that any new fields added are explicitly defined as optional.
     
     In our scenario above, you can add an optional `phoneNumber` field to the `User` model in your Prisma schema:
+    
+    prisma/schema.prisma
     
     ```
     model User {
@@ -94,6 +97,8 @@ There are a number of strategies you could use for migrating this schema:
     
     Another option is to add a default value on a required field, for example:
     
+    prisma/schema.prisma
+    
     ```
     model User {
       id          String @id @default(auto()) @map("_id") @db.ObjectId
@@ -104,9 +109,9 @@ There are a number of strategies you could use for migrating this schema:
     
     Then when you encounter a missing `phoneNumber`, the value will be coerced into `000-000-0000`.
     
-*   **"No breaking changes" updates**: this strategy builds on the first one, with further consensus amongst your team that you don't rename or delete fields, only add new fields, and always define the new fields as optional. This policy can be reinforced by adding checks in the CI/CD process to verify that there are no backwards-incompatible changes to the schema.
+-   **"No breaking changes" updates**: this strategy builds on the first one, with further consensus amongst your team that you don't rename or delete fields, only add new fields, and always define the new fields as optional. This policy can be reinforced by adding checks in the CI/CD process to verify that there are no backwards-incompatible changes to the schema.
     
-*   **"All-at-once" updates**: this strategy is similar to traditional migrations in relational databases, where all data is updated to reflect the new schema. In the scenario above, you would create a script to add a value for the phone number field to all existing users in your database. You can then make the field a required field in the application because the schema and the data are consistent.
+-   **"All-at-once" updates**: this strategy is similar to traditional migrations in relational databases, where all data is updated to reflect the new schema. In the scenario above, you would create a script to add a value for the phone number field to all existing users in your database. You can then make the field a required field in the application because the schema and the data are consistent.
     
 
 ### [How to add in missing relations after Introspection](#how-to-add-in-missing-relations-after-introspection)
@@ -117,16 +122,18 @@ As an example, take a MongoDB database with two collections, `User` and `Post`. 
 
 `User` collection:
 
-*   `_id` field with a type of `objectId`
-*   `email` field with a type of `string`
+-   `_id` field with a type of `objectId`
+-   `email` field with a type of `string`
 
 `Post` collection:
 
-*   `_id` field with a type of `objectId`
-*   `title` field with a type of `string`
-*   `userId` with a type of `objectID`
+-   `_id` field with a type of `objectId`
+-   `title` field with a type of `string`
+-   `userId` with a type of `objectID`
 
 On introspection with `db pull`, this is pulled in to the Prisma Schema as follows:
+
+prisma/schema.prisma
 
 ```
 model Post {
@@ -143,6 +150,8 @@ model User {
 
 This is missing the relation between the `User` and `Post` models. To fix this, manually add a `user` field to the `Post` model with a `@relation` attribute using `userId` as the `fields` value, linking it to the `User` model, and a `posts` field to the `User` model as the back relation:
 
+prisma/schema.prisma
+
 ```
 model Post {
   id     String @id @default(auto()) @map("_id") @db.ObjectId
@@ -158,7 +167,7 @@ model User {
 }
 ```
 
-For more information on how to use relations in Prisma ORM, see [our documentation](prisma/docs/orm/prisma-schema/data-model/relations/index.md).
+For more information on how to use relations in Prisma ORM, see [our documentation](https://www.prisma.io/docs/orm/prisma-schema/data-model/relations).
 
 ### [How to filter for `null` and missing fields](#how-to-filter-for-null-and-missing-fields)
 
@@ -255,7 +264,7 @@ console.log(findNulls);
 
 This is because `name: null` is checking for equality, and a non-existing field isn't equal to `null`.
 
-To include missing fields as well, use the [`isSet` filter](prisma/docs/orm/reference/prisma-client-reference/index.md#isset) to explicitly search for fields which are either `null` or not set. This will return both records:
+To include missing fields as well, use the [`isSet` filter](https://www.prisma.io/docs/orm/reference/prisma-client-reference#isset) to explicitly search for fields which are either `null` or not set. This will return both records:
 
 ```
 const findNullOrMissing = await prisma.user.findMany({
@@ -292,16 +301,18 @@ console.log(findNullOrMissing);
 
 The fastest way to start using MongoDB with Prisma ORM is to refer to our Getting Started documentation:
 
-*   [Start from scratch](https://www.prisma.io/docs/prisma-orm/quickstart/mongodb)
-*   [Add to existing project](https://www.prisma.io/docs/prisma-orm/add-to-existing-project/mongodb)
+-   [Start from scratch](https://www.prisma.io/docs/prisma-orm/quickstart/mongodb)
+-   [Add to existing project](https://www.prisma.io/docs/prisma-orm/add-to-existing-project/mongodb)
 
 These tutorials will take you through the process of connecting to MongoDB, pushing schema changes, and using Prisma Client.
 
-Further reference information is available in the [MongoDB connector documentation](prisma/docs/orm/core-concepts/supported-databases/mongodb/index.md).
+Further reference information is available in the [MongoDB connector documentation](https://www.prisma.io/docs/orm/core-concepts/supported-databases/mongodb).
 
 For more information on how to set up and manage a MongoDB database, see the [Prisma Data Guide](https://www.prisma.io/dataguide#mongodb).
 
-To connect to a MongoDB server, configure the [`datasource`](prisma/docs/orm/prisma-schema/overview/data-sources/index.md) block in your [Prisma Schema](prisma/docs/orm/prisma-schema/overview/index.md):
+To connect to a MongoDB server, configure the [`datasource`](https://www.prisma.io/docs/orm/prisma-schema/overview/data-sources) block in your [Prisma Schema](https://www.prisma.io/docs/orm/prisma-schema/overview):
+
+schema.prisma
 
 ```
 datasource db {
@@ -312,14 +323,14 @@ datasource db {
 
 The fields passed to the `datasource` block are:
 
-*   `provider`: Specifies the `mongodb` data source connector.
-*   `url`: Specifies the [connection URL](#connection-url) for the MongoDB server. In this case, an [environment variable is used](prisma/docs/orm/more/dev-environment/environment-variables/index.md) to provide the connection URL.
+-   `provider`: Specifies the `mongodb` data source connector.
+-   `url`: Specifies the [connection URL](#connection-url) for the MongoDB server. In this case, an [environment variable is used](https://www.prisma.io/docs/orm/more/dev-environment/environment-variables) to provide the connection URL.
 
 ### [Connection URL](#connection-url)
 
 The MongoDB connection URL can be configured in different ways depending on how you are hosting your database. The standard configuration is made up of the following components:
 
-![Structure of the MongoDB connection URL](https://www.prisma.io/docs/img/orm/core-concepts/databases/mongodb.png?dpl=dpl_2TrAJrUt7dXR3AAWNDvwk5WL6VFX)
+![Structure of the MongoDB connection URL](/docs/img/orm/core-concepts/databases/mongodb.png)
 
 #### [Base URL and path](#base-url-and-path)
 
@@ -331,49 +342,21 @@ mongodb://USERNAME:PASSWORD@HOST/DATABASE
 
 The following components make up the _base URL_ of your database:
 
-Name
-
-Placeholder
-
-Description
-
-User
-
-`USERNAME`
-
-Name of your database user, e.g. `janedoe`
-
-Password
-
-`PASSWORD`
-
-Password for your database user
-
-Host
-
-`HOST`
-
-The host where a [`mongod`](https://www.mongodb.com/docs/manual/reference/program/mongod/#mongodb-binary-bin.mongod) instance is running. If you are running a sharded cluster this will a [`mongos`](https://www.mongodb.com/docs/manual/reference/program/mongos/#mongodb-binary-bin.mongos) instance. This can be a hostname, IP address or UNIX domain socket.
-
-Port
-
-`PORT`
-
-Port on which your database server is running, e.g. `1234`. If none is provided the default `27017` is used.
-
-Database
-
-`DATABASE`
-
-Name of the database to use. If none is specified but the `authSource` option is set then the `authSource` database name is used. If neither the database in the connection string nor the `authSource` option is specified then it defaults to `admin`
+| Name | Placeholder | Description |
+| --- | --- | --- |
+| User | `USERNAME` | Name of your database user, e.g. `janedoe` |
+| Password | `PASSWORD` | Password for your database user |
+| Host | `HOST` | The host where a [`mongod`](https://www.mongodb.com/docs/manual/reference/program/mongod/#mongodb-binary-bin.mongod) instance is running. If you are running a sharded cluster this will a [`mongos`](https://www.mongodb.com/docs/manual/reference/program/mongos/#mongodb-binary-bin.mongos) instance. This can be a hostname, IP address or UNIX domain socket. |
+| Port | `PORT` | Port on which your database server is running, e.g. `1234`. If none is provided the default `27017` is used. |
+| Database | `DATABASE` | Name of the database to use. If none is specified but the `authSource` option is set then the `authSource` database name is used. If neither the database in the connection string nor the `authSource` option is specified then it defaults to `admin` |
 
 #### [Arguments](#arguments)
 
 A connection URL can also take arguments. The following example sets three arguments:
 
-*   An `ssl` connection
-*   A `connectTimeoutMS`
-*   And the `maxPoolSize`
+-   An `ssl` connection
+-   A `connectTimeoutMS`
+-   And the `maxPoolSize`
 
 ```
 mongodb://USERNAME:PASSWORD@HOST/DATABASE?ssl=true&connectTimeoutMS=5000&maxPoolSize=50
@@ -395,9 +378,9 @@ It is common practice for the `_id` field of a MongoDB document to contain an [O
 
 Any field (most commonly IDs and relation scalar fields) that maps to an `ObjectId` in the underlying database:
 
-*   Must be of type `String` or `Bytes`
-*   Must include the `@db.ObjectId` attribute
-*   Can optionally use `@default(auto())` to auto-generate a valid `ObjectId` on document creation
+-   Must be of type `String` or `Bytes`
+-   Must include the `@db.ObjectId` attribute
+-   Can optionally use `@default(auto())` to auto-generate a valid `ObjectId` on document creation
 
 Here is an example that uses `String`:
 
@@ -417,7 +400,7 @@ model User {
 }
 ```
 
-See also: [Defining ID fields in MongoDB](prisma/docs/orm/prisma-schema/data-model/models/index.md#defining-ids-in-mongodb)
+See also: [Defining ID fields in MongoDB](https://www.prisma.io/docs/orm/prisma-schema/data-model/models#defining-ids-in-mongodb)
 
 ### [Generating `ObjectId`](#generating-objectid)
 
@@ -433,19 +416,19 @@ This section covers ways in which the MongoDB connector differs from Prisma ORM 
 
 ### [No support for Prisma Migrate](#no-support-for-prisma-migrate)
 
-Currently, there are no plans to add support for [Prisma Migrate](prisma/docs/orm/prisma-migrate/index.md) as MongoDB projects do not rely on internal schemas where changes need to be managed with an extra tool. Management of `@unique` indexes is realized through `db push`.
+Currently, there are no plans to add support for [Prisma Migrate](https://www.prisma.io/docs/orm/prisma-migrate) as MongoDB projects do not rely on internal schemas where changes need to be managed with an extra tool. Management of `@unique` indexes is realized through `db push`.
 
 ### [No support for `@@id` and `autoincrement()`](#no-support-for-id-and-autoincrement)
 
-The [`@@id`](prisma/docs/orm/reference/prisma-schema-reference/index.md) attribute (an ID for multiple fields) is not supported because primary keys in MongoDB are always on the `_id` field of a model.
+The [`@@id`](https://www.prisma.io/docs/orm/reference/prisma-schema-reference) attribute (an ID for multiple fields) is not supported because primary keys in MongoDB are always on the `_id` field of a model.
 
-The [`autoincrement()`](prisma/docs/orm/reference/prisma-schema-reference/index.md#generate-autoincrementing-integers-as-ids-relational-databases-only) function (which creates incrementing `@id` values) is not supported because `autoincrement()` does not work with the `ObjectID` type that the `_id` field has in MongoDB.
+The [`autoincrement()`](https://www.prisma.io/docs/orm/reference/prisma-schema-reference#generate-autoincrementing-integers-as-ids-relational-databases-only) function (which creates incrementing `@id` values) is not supported because `autoincrement()` does not work with the `ObjectID` type that the `_id` field has in MongoDB.
 
 ### [Cyclic references and referential actions](#cyclic-references-and-referential-actions)
 
-If you have cyclic references in your models, either from self-relations or a cycle of relations between models, and you use [referential actions](prisma/docs/orm/prisma-schema/data-model/relations/referential-actions/index.md), you must set a referential action of `NoAction` to prevent an infinite loop of actions.
+If you have cyclic references in your models, either from self-relations or a cycle of relations between models, and you use [referential actions](https://www.prisma.io/docs/orm/prisma-schema/data-model/relations/referential-actions), you must set a referential action of `NoAction` to prevent an infinite loop of actions.
 
-See [Special rules for referential actions](prisma/docs/orm/prisma-schema/data-model/relations/referential-actions/index.md#special-rules-for-sql-server-and-mongodb) for more details.
+See [Special rules for referential actions](https://www.prisma.io/docs/orm/prisma-schema/data-model/relations/referential-actions#special-rules-for-sql-server-and-mongodb) for more details.
 
 ### [Replica set configuration](#replica-set-configuration)
 
@@ -475,87 +458,49 @@ One simple way for this is to use [MongoDB Atlas](https://www.mongodb.com/cloud/
 
 There's also an option to run the replica set locally with this guide: [https://www.mongodb.com/docs/manual/tutorial/convert-standalone-to-replica-set](https://www.mongodb.com/docs/manual/tutorial/convert-standalone-to-replica-set)
 
-The MongoDB connector maps the [scalar types](prisma/docs/orm/prisma-schema/data-model/models/index.md#scalar-fields) from the Prisma ORM [data model](prisma/docs/orm/prisma-schema/data-model/models/index.md) to MongoDB's native column types as follows:
+The MongoDB connector maps the [scalar types](https://www.prisma.io/docs/orm/prisma-schema/data-model/models#scalar-fields) from the Prisma ORM [data model](https://www.prisma.io/docs/orm/prisma-schema/data-model/models) to MongoDB's native column types as follows:
 
-> Alternatively, see [Prisma schema reference](prisma/docs/orm/reference/prisma-schema-reference/index.md#model-field-scalar-types) for type mappings organized by Prisma type.
+> Alternatively, see [Prisma schema reference](https://www.prisma.io/docs/orm/reference/prisma-schema-reference#model-field-scalar-types) for type mappings organized by Prisma type.
 
 ### [Native type mapping from Prisma ORM to MongoDB](#native-type-mapping-from-prisma-orm-to-mongodb)
 
-Prisma ORM
-
-MongoDB
-
-`String`
-
-`string`
-
-`Boolean`
-
-`bool`
-
-`Int`
-
-`int`
-
-`BigInt`
-
-`long`
-
-`Float`
-
-`double`
-
-`Decimal`
-
-[Currently unsupported](https://github.com/prisma/prisma/issues/12637)
-
-`DateTime`
-
-`timestamp`
-
-`Bytes`
-
-`binData`
-
-`Json`
+| Prisma ORM | MongoDB |
+| --- | --- |
+| `String` | `string` |
+| `Boolean` | `bool` |
+| `Int` | `int` |
+| `BigInt` | `long` |
+| `Float` | `double` |
+| `Decimal` | [Currently unsupported](https://github.com/prisma/prisma/issues/12637) |
+| `DateTime` | `timestamp` |
+| `Bytes` | `binData` |
+| `Json` |  |
 
 MongoDB types that are currently unsupported:
 
-*   `Decimal128`
-*   `Undefined`
-*   `DBPointer`
-*   `Null`
-*   `Symbol`
-*   `MinKey`
-*   `MaxKey`
-*   `Object`
-*   `Javascript`
-*   `JavascriptWithScope`
-*   `Regex`
+-   `Decimal128`
+-   `Undefined`
+-   `DBPointer`
+-   `Null`
+-   `Symbol`
+-   `MinKey`
+-   `MaxKey`
+-   `Object`
+-   `Javascript`
+-   `JavascriptWithScope`
+-   `Regex`
 
 ### [Mapping from MongoDB to Prisma ORM types on Introspection](#mapping-from-mongodb-to-prisma-orm-types-on-introspection)
 
-When introspecting a MongoDB database, Prisma ORM uses the relevant [scalar types](prisma/docs/orm/prisma-schema/data-model/models/index.md#scalar-fields). Some special types also get additional native type annotations:
+When introspecting a MongoDB database, Prisma ORM uses the relevant [scalar types](https://www.prisma.io/docs/orm/prisma-schema/data-model/models#scalar-fields). Some special types also get additional native type annotations:
 
-MongoDB (Type | Aliases)
+| MongoDB (Type | Aliases) | Prisma ORM | Supported | Native database type attribute | Notes |
+| --- | --- | --- | --- | --- |
+| `objectId` | `String` | ✔️ | `@db.ObjectId` |  |
 
-Prisma ORM
+[Introspection](https://www.prisma.io/docs/orm/prisma-schema/introspection) adds native database types that are **not yet supported** as [`Unsupported`](https://www.prisma.io/docs/orm/reference/prisma-schema-reference#unsupported) fields:
 
-Supported
-
-Native database type attribute
-
-Notes
-
-`objectId`
-
-`String`
-
-✔️
-
-`@db.ObjectId`
-
-[Introspection](prisma/docs/orm/prisma-schema/introspection/index.md) adds native database types that are **not yet supported** as [`Unsupported`](prisma/docs/orm/reference/prisma-schema-reference/index.md#unsupported) fields:
+schema.prisma
 
 ```
 model Example {

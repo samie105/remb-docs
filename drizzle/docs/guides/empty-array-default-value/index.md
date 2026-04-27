@@ -5,21 +5,19 @@ canonical_url: "https://orm.drizzle.team/docs/guides/empty-array-default-value"
 docset: "drizzle"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:04:21.003Z"
-content_hash: "715f20ae0f743807a67d2c7347910d8e3cd7f015ad73e31160541ebb1fab20d9"
+last_crawled_at: "2026-04-27T18:59:12.744Z"
+content_hash: "43d7ac3b9f0e2793a856db9c0ff4bd4493381614181c378788c873d1f6eaf71f"
 menu_path: ["Drizzle ORM - Empty array as a default value"]
 section_path: []
-nav_prev: {"path": "drizzle/docs/guides/decrementing-a-value/index.md", "title": "Drizzle ORM - SQL Decrement value"}
-nav_next: {"path": "drizzle/docs/guides/full-text-search-with-generated-columns/index.md", "title": "Drizzle ORM - Full-text search with Generated Columns"}
+content_language: "en"
 ---
-
 Drizzle | Empty array as a default value
 
 ### PostgreSQL[](#postgresql)
 
 To set an empty array as a default value in PostgreSQL, you can use `sql` operator with `'{}'` or `ARRAY[]` syntax:
 
-```
+```ts
 import { sql } from 'drizzle-orm';
 import { pgTable, serial, text } from 'drizzle-orm/pg-core';
 
@@ -37,7 +35,7 @@ export const users = pgTable('users', {
 });
 ```
 
-```
+```sql
 CREATE TABLE IF NOT EXISTS "users" (
 	"id" serial PRIMARY KEY NOT NULL,
 	"name" text NOT NULL,
@@ -50,7 +48,7 @@ CREATE TABLE IF NOT EXISTS "users" (
 
 MySQL doesn’t have an array data type, but you can use `json` data type for the same purpose. To set an empty array as a default value in MySQL, you can use `JSON_ARRAY()` function or `sql` operator with `('[]')` syntax:
 
-```
+```ts
 import { sql } from 'drizzle-orm';
 import { json, mysqlTable, serial, varchar } from 'drizzle-orm/mysql-core';
 
@@ -69,7 +67,7 @@ export const users = mysqlTable('users', {
 });
 ```
 
-```
+```sql
 CREATE TABLE `users` (
 	`id` serial AUTO_INCREMENT NOT NULL,
 	`name` varchar(255) NOT NULL,
@@ -88,7 +86,7 @@ You can specify `.$type<..>()` for json object inference, it will not check runt
 
 SQLite doesn’t have an array data type, but you can use `text` data type for the same purpose. To set an empty array as a default value in SQLite, you can use `json_array()` function or `sql` operator with `'[]'` syntax:
 
-```
+```ts
 import { sql } from 'drizzle-orm';
 import { integer, sqliteTable, text } from 'drizzle-orm/sqlite-core';
 
@@ -105,7 +103,7 @@ export const users = sqliteTable('users', {
 });
 ```
 
-```
+```sql
 CREATE TABLE `users` (
 	`id` integer PRIMARY KEY NOT NULL,
 	`tags1` text DEFAULT (json_array()) NOT NULL,

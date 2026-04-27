@@ -5,25 +5,26 @@ canonical_url: "https://nextjs.org/docs/architecture/fast-refresh"
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:17:16.709Z"
-content_hash: "3f481e00cfe7b557ae0665c97b32b40e58401cff8da48da8b26987fdf3c14368"
+last_crawled_at: "2026-04-27T18:16:46.835Z"
+content_hash: "bef50d62c386696c71af914176d372a042466cc2debd1e6a735af56b25b387f5"
 menu_path: ["Fast Refresh"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/architecture/accessibility/index.md", "title": "Accessibility"}
-nav_next: {"path": "nextjs/docs/architecture/nextjs-compiler/index.md", "title": "Next.js Compiler"}
+version: "latest"
+content_language: "en"
 ---
+[Next.js Docs](/docs)[Architecture](/docs/architecture)Fast Refresh
 
 # Fast Refresh
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 Fast refresh is a React feature integrated into Next.js that allows you to live reload the browser page while maintaining temporary client-side state when you save changes to a file. It's enabled by default in all Next.js applications on **9.4 or newer**. With Fast Refresh enabled, most edits should be visible within a second.
 
 ## How It Works[](#how-it-works)
 
-*   If you edit a file that **only exports React component(s)**, Fast Refresh will update the code only for that file, and re-render your component. You can edit anything in that file, including styles, rendering logic, event handlers, or effects.
-*   If you edit a file with exports that _aren't_ React components, Fast Refresh will re-run both that file, and the other files importing it. So if both `Button.js` and `Modal.js` import `theme.js`, editing `theme.js` will update both components.
-*   Finally, if you **edit a file** that's **imported by files outside of the React tree**, Fast Refresh **will fall back to doing a full reload**. You might have a file which renders a React component but also exports a value that is imported by a **non-React component**. For example, maybe your component also exports a constant, and a non-React utility file imports it. In that case, consider migrating the constant to a separate file and importing it into both files. This will re-enable Fast Refresh to work. Other cases can usually be solved in a similar way.
+-   If you edit a file that **only exports React component(s)**, Fast Refresh will update the code only for that file, and re-render your component. You can edit anything in that file, including styles, rendering logic, event handlers, or effects.
+-   If you edit a file with exports that _aren't_ React components, Fast Refresh will re-run both that file, and the other files importing it. So if both `Button.js` and `Modal.js` import `theme.js`, editing `theme.js` will update both components.
+-   Finally, if you **edit a file** that's **imported by files outside of the React tree**, Fast Refresh **will fall back to doing a full reload**. You might have a file which renders a React component but also exports a value that is imported by a **non-React component**. For example, maybe your component also exports a constant, and a non-React utility file imports it. In that case, consider migrating the constant to a separate file and importing it into both files. This will re-enable Fast Refresh to work. Other cases can usually be solved in a similar way.
 
 ## Error Resilience[](#error-resilience)
 
@@ -43,19 +44,19 @@ If you have [error boundaries](https://react.dev/reference/react/Component#catch
 
 Fast Refresh tries to preserve local React state in the component you're editing, but only if it's safe to do so. Here's a few reasons why you might see local state being reset on every edit to a file:
 
-*   Local state is not preserved for class components (only function components and Hooks preserve state).
-*   The file you're editing might have _other_ exports in addition to a React component.
-*   Sometimes, a file would export the result of calling a higher-order component like `HOC(WrappedComponent)`. If the returned component is a class, its state will be reset.
-*   Anonymous arrow functions like `export default () => <div />;` cause Fast Refresh to not preserve local component state. For large codebases you can use our [`name-default-component` codemod](/docs/pages/guides/upgrading/codemods#name-default-component).
+-   Local state is not preserved for class components (only function components and Hooks preserve state).
+-   The file you're editing might have _other_ exports in addition to a React component.
+-   Sometimes, a file would export the result of calling a higher-order component like `HOC(WrappedComponent)`. If the returned component is a class, its state will be reset.
+-   Anonymous arrow functions like `export default () => <div />;` cause Fast Refresh to not preserve local component state. For large codebases you can use our [`name-default-component` codemod](/docs/pages/guides/upgrading/codemods#name-default-component).
 
 As more of your codebase moves to function components and Hooks, you can expect state to be preserved in more cases.
 
 ## Tips[](#tips)
 
-*   Fast Refresh preserves React local state in function components (and Hooks) by default.
-*   Sometimes you might want to _force_ the state to be reset, and a component to be remounted. For example, this can be handy if you're tweaking an animation that only happens on mount. To do this, you can add `// @refresh reset` anywhere in the file you're editing. This directive is local to the file, and instructs Fast Refresh to remount components defined in that file on every edit.
-*   You can put `console.log` or `debugger;` into the components you edit during development.
-*   Remember that imports are case sensitive. Both fast and full refresh can fail, when your import doesn't match the actual filename. For example, `'./header'` vs `'./Header'`.
+-   Fast Refresh preserves React local state in function components (and Hooks) by default.
+-   Sometimes you might want to _force_ the state to be reset, and a component to be remounted. For example, this can be handy if you're tweaking an animation that only happens on mount. To do this, you can add `// @refresh reset` anywhere in the file you're editing. This directive is local to the file, and instructs Fast Refresh to remount components defined in that file on every edit.
+-   You can put `console.log` or `debugger;` into the components you edit during development.
+-   Remember that imports are case sensitive. Both fast and full refresh can fail, when your import doesn't match the actual filename. For example, `'./header'` vs `'./Header'`.
 
 ## Fast Refresh and Hooks[](#fast-refresh-and-hooks)
 
@@ -69,20 +70,4 @@ Sometimes, this can lead to unexpected results. For example, even a `useEffect` 
 
 However, writing code resilient to occasional re-running of `useEffect` is a good practice even without Fast Refresh. It will make it easier for you to introduce new dependencies to it later on and it's enforced by [React Strict Mode](/docs/pages/api-reference/config/next-config-js/reactStrictMode), which we highly recommend enabling.
 
-[Previous
-
-Accessibility
-
-](/docs/architecture/accessibility)
-
-[Next
-
-Next.js Compiler
-
-](/docs/architecture/nextjs-compiler)
-
 Was this helpful?
-
-supported.
-
-Send

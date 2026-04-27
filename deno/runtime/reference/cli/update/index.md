@@ -5,19 +5,20 @@ canonical_url: "https://docs.deno.com/runtime/reference/cli/update/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:57:10.870Z"
-content_hash: "ccb436b0c8d858f5905583e1ef98cddc279778e0a74cc35b4090fc91f059150c"
+last_crawled_at: "2026-04-27T17:34:38.731Z"
+content_hash: "dbc576d5bdf6f5c50a3ac639fe3bef610006cc15a86f04fda59a0ef6b117029c"
 menu_path: ["deno update"]
 section_path: []
+content_language: "en"
 ---
-On this page
+**On this page**
 
-*   [Updating dependencies](#updating-dependencies)
-*   [Selecting packages](#selecting-packages)
-    *   [Updating to specific versions](#updating-to-specific-versions)
-*   [Workspaces](#workspaces)
-*   [Options](#options)
-*   [Dependency management options](#dependency-management-options)
+-   [Updating dependencies](#updating-dependencies)
+-   [Selecting packages](#selecting-packages)
+    -   [Updating to specific versions](#updating-to-specific-versions)
+-   [Workspaces](#workspaces)
+-   [Options](#options)
+-   [Dependency management options](#dependency-management-options)
 
 `deno update` updates dependencies in your [`deno.json`](/runtime/fundamentals/configuration/) or `package.json`. See [Modules](/runtime/fundamentals/modules/) for more about managing dependencies.
 

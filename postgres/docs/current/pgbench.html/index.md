@@ -5,14 +5,12 @@ canonical_url: "https://www.postgresql.org/docs/current/pgbench.html"
 docset: "postgres"
 kind: "database"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:48:19.924Z"
-content_hash: "216f61370032ec073bdf7c81a86fa1470b58c11192ebdc02a6b24d58552be8dc"
+last_crawled_at: "2026-04-27T20:48:37.610Z"
+content_hash: "58c7a2f510fb3c0727cbccbc116b8d6d2a497b0ce1d45db84110d825c2b45cf4"
 menu_path: ["PostgreSQL: Documentation: 18: pgbench"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/pgarchivecleanup.html/index.md", "title": "PostgreSQL: Documentation: 18: pg_archivecleanup"}
-nav_next: {"path": "postgres/docs/current/pgbuffercache.html/index.md", "title": "PostgreSQL: Documentation: 18: F.25.\u00a0pg_buffercache \u2014 inspect PostgreSQL buffer cache state"}
+content_language: "en"
 ---
-
 ## Description
 
 pgbench is a simple program for running benchmark tests on PostgreSQL. It runs the same sequence of SQL commands over and over, possibly in multiple concurrent database sessions, and then calculates the average transaction rate (transactions per second). By default, pgbench tests a scenario that is loosely based on TPC-B, involving five `SELECT`, `UPDATE`, and `INSERT` commands per transaction. However, it is easy to test other cases by writing your own transaction script files.
@@ -218,11 +216,11 @@ When the `--max-tries` option is used, a transaction which fails due to a serial
 
 Protocol to use for submitting queries to the server:
 
-*   `simple`: use simple query protocol.
+-   `simple`: use simple query protocol.
     
-*   `extended`: use extended query protocol.
+-   `extended`: use extended query protocol.
     
-*   `prepared`: use extended query protocol with prepared statements.
+-   `prepared`: use extended query protocol with prepared statements.
     
 
 In the `prepared` mode, pgbench reuses the parse analysis result starting from the second query iteration, so pgbench runs faster than in other modes.
@@ -301,9 +299,9 @@ Note that serialization failures or deadlock failures do not abort the client, s
 
 Report failures in per-transaction and aggregation logs, as well as in the main and per-script reports, grouped by the following types:
 
-*   serialization failures;
+-   serialization failures;
     
-*   deadlock failures;
+-   deadlock failures;
     
 
 See [Failures and Serialization/Deadlock Retries](https://www.postgresql.org/docs/current/pgbench.html#FAILURES-AND-RETRIES "Failures and Serialization/Deadlock Retries") for more information.
@@ -434,26 +432,12 @@ There is a simple variable-substitution facility for script files. Variable name
 **Table 301. pgbench Automatic Variables**
 
  
-
-Variable
-
-Description
-
-`client_id`
-
-unique number identifying the client session (starts from zero)
-
-`default_seed`
-
-seed used in hash and pseudorandom permutation functions by default
-
-`random_seed`
-
-random generator seed (unless overwritten with `-D`)
-
-`scale`
-
-current scale factor
+| Variable | Description |
+| --- | --- |
+| `client_id` | unique number identifying the client session (starts from zero) |
+| `default_seed` | seed used in hash and pseudorandom permutation functions by default |
+| `random_seed` | random generator seed (unless overwritten with `-D`) |
+| `scale` | current scale factor |
 
 Script file meta commands begin with a backslash (`\`) and normally extend to the end of the line, although they can be continued to additional lines by writing backslash-return. Arguments to a meta command are separated by white space. These meta commands are supported:
 
@@ -483,7 +467,7 @@ SELECT 4 AS four \\; SELECT 5 AS five \\aset
 `\else`  
 `\endif` [#](#PGBENCH-METACOMMAND-IF-ELSE)
 
-This group of commands implements nestable conditional blocks, similarly to `psql`'s [`\if` _`expression`_](postgres/docs/current/app-psql.html/index.md#PSQL-METACOMMAND-IF). Conditional expressions are identical to those with `\set`, with non-zero values interpreted as true.
+This group of commands implements nestable conditional blocks, similarly to `psql`'s [`\if` _`expression`_](https://www.postgresql.org/docs/current/app-psql.html#PSQL-METACOMMAND-IF). Conditional expressions are identical to those with `\set`, with non-zero values interpreted as true.
 
 ``\set _`varname`_ _`expression`_`` [#](#PGBENCH-METACOMMAND-SET)
 
@@ -538,15 +522,20 @@ This group of commands implements pipelining of SQL statements. A pipeline must 
 
 ### Built-in Operators
 
-The arithmetic, bitwise, comparison and logical operators listed in [Table 302](https://www.postgresql.org/docs/current/pgbench.html#PGBENCH-OPERATORS "Table 302. pgbench Operators") are built into pgbench and may be used in expressions appearing in [`\set`](postgres/docs/current/pgbench.html/index.md#PGBENCH-METACOMMAND-SET). The operators are listed in increasing precedence order. Except as noted, operators taking two numeric inputs will produce a double value if either input is double, otherwise they produce an integer result.
+The arithmetic, bitwise, comparison and logical operators listed in [Table 302](https://www.postgresql.org/docs/current/pgbench.html#PGBENCH-OPERATORS "Table 302. pgbench Operators") are built into pgbench and may be used in expressions appearing in [`\set`](https://www.postgresql.org/docs/current/pgbench.html#PGBENCH-METACOMMAND-SET). The operators are listed in increasing precedence order. Except as noted, operators taking two numeric inputs will produce a double value if either input is double, otherwise they produce an integer result.
 
 **Table 302. pgbench Operators**
 
+| 
 Operator
 
 Description
 
 Example(s)
+
+ |
+| --- |
+| 
 
 _`boolean`_ `OR` _`boolean`_ → ``_`boolean`_``
 
@@ -554,11 +543,17 @@ Logical OR
 
 `5 or 0` → `TRUE`
 
+ |
+| 
+
 _`boolean`_ `AND` _`boolean`_ → ``_`boolean`_``
 
 Logical AND
 
 `3 and 0` → `FALSE`
+
+ |
+| 
 
 `NOT` _`boolean`_ → ``_`boolean`_``
 
@@ -566,11 +561,17 @@ Logical NOT
 
 `not false` → `TRUE`
 
+ |
+| 
+
 _`boolean`_ `IS [NOT] (NULL|TRUE|FALSE)` → ``_`boolean`_``
 
 Boolean value tests
 
 `1 is null` → `FALSE`
+
+ |
+| 
 
 _`value`_ `ISNULL|NOTNULL` → ``_`boolean`_``
 
@@ -578,11 +579,17 @@ Nullness tests
 
 `1 notnull` → `TRUE`
 
+ |
+| 
+
 _`number`_ `=` _`number`_ → ``_`boolean`_``
 
 Equal
 
 `5 = 4` → `FALSE`
+
+ |
+| 
 
 _`number`_ `<>` _`number`_ → ``_`boolean`_``
 
@@ -590,11 +597,17 @@ Not equal
 
 `5 <> 4` → `TRUE`
 
+ |
+| 
+
 _`number`_ `!=` _`number`_ → ``_`boolean`_``
 
 Not equal
 
 `5 != 5` → `FALSE`
+
+ |
+| 
 
 _`number`_ `<` _`number`_ → ``_`boolean`_``
 
@@ -602,11 +615,17 @@ Less than
 
 `5 < 4` → `FALSE`
 
+ |
+| 
+
 _`number`_ `<=` _`number`_ → ``_`boolean`_``
 
 Less than or equal to
 
 `5 <= 4` → `FALSE`
+
+ |
+| 
 
 _`number`_ `>` _`number`_ → ``_`boolean`_``
 
@@ -614,11 +633,17 @@ Greater than
 
 `5 > 4` → `TRUE`
 
+ |
+| 
+
 _`number`_ `>=` _`number`_ → ``_`boolean`_``
 
 Greater than or equal to
 
 `5 >= 4` → `TRUE`
+
+ |
+| 
 
 _`integer`_ `|` _`integer`_ → ``_`integer`_``
 
@@ -626,11 +651,17 @@ Bitwise OR
 
 `1 | 2` → `3`
 
+ |
+| 
+
 _`integer`_ `#` _`integer`_ → ``_`integer`_``
 
 Bitwise XOR
 
 `1 # 3` → `2`
+
+ |
+| 
 
 _`integer`_ `&` _`integer`_ → ``_`integer`_``
 
@@ -638,11 +669,17 @@ Bitwise AND
 
 `1 & 3` → `1`
 
+ |
+| 
+
 `~` _`integer`_ → ``_`integer`_``
 
 Bitwise NOT
 
 `~ 1` → `-2`
+
+ |
+| 
 
 _`integer`_ `<<` _`integer`_ → ``_`integer`_``
 
@@ -650,11 +687,17 @@ Bitwise shift left
 
 `1 << 2` → `4`
 
+ |
+| 
+
 _`integer`_ `>>` _`integer`_ → ``_`integer`_``
 
 Bitwise shift right
 
 `8 >> 2` → `2`
+
+ |
+| 
 
 _`number`_ `+` _`number`_ → ``_`number`_``
 
@@ -662,11 +705,17 @@ Addition
 
 `5 + 4` → `9`
 
+ |
+| 
+
 _`number`_ `-` _`number`_ → ``_`number`_``
 
 Subtraction
 
 `3 - 2.0` → `1.0`
+
+ |
+| 
 
 _`number`_ `*` _`number`_ → ``_`number`_``
 
@@ -674,11 +723,17 @@ Multiplication
 
 `5 * 4` → `20`
 
+ |
+| 
+
 _`number`_ `/` _`number`_ → ``_`number`_``
 
 Division (truncates the result towards zero if both inputs are integers)
 
 `5 / 3` → `1`
+
+ |
+| 
 
 _`integer`_ `%` _`integer`_ → ``_`integer`_``
 
@@ -686,25 +741,35 @@ Modulo (remainder)
 
 `3 % 2` → `1`
 
+ |
+| 
+
 `-` _`number`_ → ``_`number`_``
 
 Negation
 
 `- 2.0` → `-2.0`
 
+ |
+
   
 
 ### Built-In Functions
 
-The functions listed in [Table 303](https://www.postgresql.org/docs/current/pgbench.html#PGBENCH-FUNCTIONS "Table 303. pgbench Functions") are built into pgbench and may be used in expressions appearing in [`\set`](postgres/docs/current/pgbench.html/index.md#PGBENCH-METACOMMAND-SET).
+The functions listed in [Table 303](https://www.postgresql.org/docs/current/pgbench.html#PGBENCH-FUNCTIONS "Table 303. pgbench Functions") are built into pgbench and may be used in expressions appearing in [`\set`](https://www.postgresql.org/docs/current/pgbench.html#PGBENCH-METACOMMAND-SET).
 
 **Table 303. pgbench Functions**
 
+| 
 Function
 
 Description
 
 Example(s)
+
+ |
+| --- |
+| 
 
 `abs` ( _`number`_ ) → same type as input
 
@@ -712,11 +777,17 @@ Absolute value
 
 `abs(-17)` → `17`
 
+ |
+| 
+
 `debug` ( _`number`_ ) → same type as input
 
 Prints the argument to stderr, and returns the argument.
 
 `debug(5432.1)` → `5432.1`
+
+ |
+| 
 
 `double` ( _`number`_ ) → `double`
 
@@ -724,11 +795,17 @@ Casts to double.
 
 `double(5432)` → `5432.0`
 
+ |
+| 
+
 `exp` ( _`number`_ ) → `double`
 
 Exponential (`e` raised to the given power)
 
 `exp(1.0)` → `2.718281828459045`
+
+ |
+| 
 
 `greatest` ( _`number`_ \[, `...` \] ) → `double` if any argument is double, else `integer`
 
@@ -736,11 +813,17 @@ Selects the largest value among the arguments.
 
 `greatest(5, 4, 3, 2)` → `5`
 
+ |
+| 
+
 `hash` ( _`value`_ \[, _`seed`_ \] ) → `integer`
 
 This is an alias for `hash_murmur2`.
 
 `hash(10, 5432)` → `-5817877081768721676`
+
+ |
+| 
 
 `hash_fnv1a` ( _`value`_ \[, _`seed`_ \] ) → `integer`
 
@@ -748,11 +831,17 @@ Computes [FNV-1a hash](https://en.wikipedia.org/wiki/Fowler%E2%80%93Noll%E2%80%9
 
 `hash_fnv1a(10, 5432)` → `-7793829335365542153`
 
+ |
+| 
+
 `hash_murmur2` ( _`value`_ \[, _`seed`_ \] ) → `integer`
 
 Computes [MurmurHash2 hash](https://en.wikipedia.org/wiki/MurmurHash).
 
 `hash_murmur2(10, 5432)` → `-5817877081768721676`
+
+ |
+| 
 
 `int` ( _`number`_ ) → `integer`
 
@@ -760,11 +849,17 @@ Casts to integer.
 
 `int(5.4 + 3.8)` → `9`
 
+ |
+| 
+
 `least` ( _`number`_ \[, `...` \] ) → `double` if any argument is double, else `integer`
 
 Selects the smallest value among the arguments.
 
 `least(5, 4, 3, 2.1)` → `2.1`
+
+ |
+| 
 
 `ln` ( _`number`_ ) → `double`
 
@@ -772,11 +867,17 @@ Natural logarithm
 
 `ln(2.718281828459045)` → `1.0`
 
+ |
+| 
+
 `mod` ( _`integer`_, _`integer`_ ) → `integer`
 
 Modulo (remainder)
 
 `mod(54, 32)` → `22`
+
+ |
+| 
 
 `permute` ( _`i`_, _`size`_ \[, _`seed`_ \] ) → `integer`
 
@@ -784,11 +885,17 @@ Permuted value of _`i`_, in the range `[0, size)`. This is the new position of _
 
 `permute(0, 4)` → `an integer between 0 and 3`
 
+ |
+| 
+
 `pi` () → `double`
 
 Approximate value of π
 
 `pi()` → `3.14159265358979323846`
+
+ |
+| 
 
 `pow` ( _`x`_, _`y`_ ) → `double`
 
@@ -798,11 +905,17 @@ _`x`_ raised to the power of _`y`_
 
 `pow(2.0, 10)` → `1024.0`
 
+ |
+| 
+
 `random` ( _`lb`_, _`ub`_ ) → `integer`
 
 Computes a uniformly-distributed random integer in `[lb, ub]`.
 
 `random(1, 10)` → `an integer between 1 and 10`
+
+ |
+| 
 
 `random_exponential` ( _`lb`_, _`ub`_, _`parameter`_ ) → `integer`
 
@@ -810,11 +923,17 @@ Computes an exponentially-distributed random integer in `[lb, ub]`, see below.
 
 `random_exponential(1, 10, 3.0)` → `an integer between 1 and 10`
 
+ |
+| 
+
 `random_gaussian` ( _`lb`_, _`ub`_, _`parameter`_ ) → `integer`
 
 Computes a Gaussian-distributed random integer in `[lb, ub]`, see below.
 
 `random_gaussian(1, 10, 2.5)` → `an integer between 1 and 10`
+
+ |
+| 
 
 `random_zipfian` ( _`lb`_, _`ub`_, _`parameter`_ ) → `integer`
 
@@ -822,15 +941,20 @@ Computes a Zipfian-distributed random integer in `[lb, ub]`, see below.
 
 `random_zipfian(1, 10, 1.5)` → `an integer between 1 and 10`
 
+ |
+| 
+
 `sqrt` ( _`number`_ ) → `double`
 
 Square root
 
 `sqrt(2.0)` → `1.414213562`
 
+ |
+
 The `random` function generates values using a uniform distribution, that is all the values are drawn within the specified range with equal probability. The `random_exponential`, `random_gaussian` and `random_zipfian` functions require an additional double parameter which determines the precise shape of the distribution.
 
-*   For an exponential distribution, _`parameter`_ controls the distribution by truncating a quickly-decreasing exponential distribution at _`parameter`_, and then projecting onto integers between the bounds. To be precise, with
+-   For an exponential distribution, _`parameter`_ controls the distribution by truncating a quickly-decreasing exponential distribution at _`parameter`_, and then projecting onto integers between the bounds. To be precise, with
     
       
     f(x) = exp(-parameter \* (x - min) / (max - min + 1)) / (1 - exp(-parameter))  
@@ -839,7 +963,7 @@ The `random` function generates values using a uniform distribution, that is all
     
     Intuitively, the larger the _`parameter`_, the more frequently values close to _`min`_ are accessed, and the less frequently values close to _`max`_ are accessed. The closer to 0 _`parameter`_ is, the flatter (more uniform) the access distribution. A crude approximation of the distribution is that the most frequent 1% values in the range, close to _`min`_, are drawn _`parameter`_% of the time. The _`parameter`_ value must be strictly positive.
     
-*   For a Gaussian distribution, the interval is mapped onto a standard normal distribution (the classical bell-shaped Gaussian curve) truncated at `-parameter` on the left and `+parameter` on the right. Values in the middle of the interval are more likely to be drawn. To be precise, if `PHI(x)` is the cumulative distribution function of the standard normal distribution, with mean `mu` defined as `(max + min) / 2.0`, with
+-   For a Gaussian distribution, the interval is mapped onto a standard normal distribution (the classical bell-shaped Gaussian curve) truncated at `-parameter` on the left and `+parameter` on the right. Values in the middle of the interval are more likely to be drawn. To be precise, if `PHI(x)` is the cumulative distribution function of the standard normal distribution, with mean `mu` defined as `(max + min) / 2.0`, with
     
       
     f(x) = PHI(2.0 \* parameter \* (x - mu) / (max - min + 1)) /  
@@ -847,7 +971,7 @@ The `random` function generates values using a uniform distribution, that is all
     
     then value _`i`_ between _`min`_ and _`max`_ inclusive is drawn with probability: `f(i + 0.5) - f(i - 0.5)`. Intuitively, the larger the _`parameter`_, the more frequently values close to the middle of the interval are drawn, and the less frequently values close to the _`min`_ and _`max`_ bounds. About 67% of values are drawn from the middle `1.0 / parameter`, that is a relative `0.5 / parameter` around the mean, and 95% in the middle `2.0 / parameter`, that is a relative `1.0 / parameter` around the mean; for instance, if _`parameter`_ is 4.0, 67% of values are drawn from the middle quarter (1.0 / 4.0) of the interval (i.e., from `3.0 / 8.0` to `5.0 / 8.0`) and 95% from the middle half (`2.0 / 4.0`) of the interval (second and third quartiles). The minimum allowed _`parameter`_ value is 2.0.
     
-*   `random_zipfian` generates a bounded Zipfian distribution. _`parameter`_ defines how skewed the distribution is. The larger the _`parameter`_, the more frequently values closer to the beginning of the interval are drawn. The distribution is such that, assuming the range starts from 1, the ratio of the probability of drawing _`k`_ versus drawing _`k+1`_ is ``((_`k`_+1)/_`k`_)**_`parameter`_``. For example, `random_zipfian(1, ..., 2.5)` produces the value `1` about `(2/1)**2.5 = 5.66` times more frequently than `2`, which itself is produced `(3/2)**2.5 = 2.76` times more frequently than `3`, and so on.
+-   `random_zipfian` generates a bounded Zipfian distribution. _`parameter`_ defines how skewed the distribution is. The larger the _`parameter`_, the more frequently values closer to the beginning of the interval are drawn. The distribution is such that, assuming the range starts from 1, the ratio of the probability of drawing _`k`_ versus drawing _`k+1`_ is ``((_`k`_+1)/_`k`_)**_`parameter`_``. For example, `random_zipfian(1, ..., 2.5)` produces the value `1` about `(2/1)**2.5 = 5.66` times more frequently than `2`, which itself is produced `(3/2)**2.5 = 2.76` times more frequently than `3`, and so on.
     
     pgbench's implementation is based on "Non-Uniform Random Variate Generation", Luc Devroye, p. 550-551, Springer 1986. Due to limitations of that algorithm, the _`parameter`_ value is restricted to the range \[1.001, 1000\].
     
@@ -1059,11 +1183,11 @@ Notice that while the plain (unaggregated) log format shows which script was use
 
 With the `-r` option, pgbench collects the following statistics for each statement:
 
-*   `latency` — elapsed transaction time for each statement. pgbench reports an average value of all successful runs of the statement.
+-   `latency` — elapsed transaction time for each statement. pgbench reports an average value of all successful runs of the statement.
     
-*   The number of failures in this statement. See [Failures and Serialization/Deadlock Retries](https://www.postgresql.org/docs/current/pgbench.html#FAILURES-AND-RETRIES "Failures and Serialization/Deadlock Retries") for more information.
+-   The number of failures in this statement. See [Failures and Serialization/Deadlock Retries](https://www.postgresql.org/docs/current/pgbench.html#FAILURES-AND-RETRIES "Failures and Serialization/Deadlock Retries") for more information.
     
-*   The number of retries after a serialization or a deadlock error in this statement. See [Failures and Serialization/Deadlock Retries](https://www.postgresql.org/docs/current/pgbench.html#FAILURES-AND-RETRIES "Failures and Serialization/Deadlock Retries") for more information.
+-   The number of retries after a serialization or a deadlock error in this statement. See [Failures and Serialization/Deadlock Retries](https://www.postgresql.org/docs/current/pgbench.html#FAILURES-AND-RETRIES "Failures and Serialization/Deadlock Retries") for more information.
     
 
 The report displays retry statistics only if the `--max-tries` option is not equal to 1.
@@ -1140,20 +1264,20 @@ Note that collecting the additional timing information needed for per-statement 
 
 When executing pgbench, there are three main types of errors:
 
-*   Errors of the main program. They are the most serious and always result in an immediate exit from pgbench with the corresponding error message. They include:
+-   Errors of the main program. They are the most serious and always result in an immediate exit from pgbench with the corresponding error message. They include:
     
-    *   errors at the beginning of pgbench (e.g. an invalid option value);
+    -   errors at the beginning of pgbench (e.g. an invalid option value);
         
-    *   errors in the initialization mode (e.g. the query to create tables for built-in scripts fails);
+    -   errors in the initialization mode (e.g. the query to create tables for built-in scripts fails);
         
-    *   errors before starting threads (e.g. could not connect to the database server, syntax error in the meta command, thread creation failure);
+    -   errors before starting threads (e.g. could not connect to the database server, syntax error in the meta command, thread creation failure);
         
-    *   internal pgbench errors (which are supposed to never occur...).
+    -   internal pgbench errors (which are supposed to never occur...).
         
     
-*   Errors when the thread manages its clients (e.g. the client could not start a connection to the database server / the socket for connecting the client to the database server has become invalid). In such cases all clients of this thread stop while other threads continue to work. However, `--exit-on-abort` is specified, all of the threads stop immediately in this case.
+-   Errors when the thread manages its clients (e.g. the client could not start a connection to the database server / the socket for connecting the client to the database server has become invalid). In such cases all clients of this thread stop while other threads continue to work. However, `--exit-on-abort` is specified, all of the threads stop immediately in this case.
     
-*   Direct client errors. They lead to immediate exit from pgbench with the corresponding error message in the case of an internal pgbench error (which are supposed to never occur...) or when `--exit-on-abort` is specified. Otherwise in the worst case they only lead to the abortion of the failed client while other clients continue their run (but some client errors are handled without an abortion of the client and reported separately, see below). Later in this section it is assumed that the discussed errors are only the direct client errors and they are not internal pgbench errors.
+-   Direct client errors. They lead to immediate exit from pgbench with the corresponding error message in the case of an internal pgbench error (which are supposed to never occur...) or when `--exit-on-abort` is specified. Otherwise in the worst case they only lead to the abortion of the failed client while other clients continue their run (but some client errors are handled without an abortion of the client and reported separately, see below). Later in this section it is assumed that the discussed errors are only the direct client errors and they are not internal pgbench errors.
     
 
 A client's run is aborted in case of a serious error; for example, the connection with the database server was lost or the end of script was reached without completing the last transaction. In addition, if execution of an SQL or meta command fails for reasons other than serialization or deadlock errors, the client is aborted. Otherwise, if an SQL command fails with serialization or deadlock errors, the client is not aborted. In such cases, the current transaction is rolled back, which also includes setting the client variables as they were before the run of this transaction (it is assumed that one transaction script contains only one transaction; see [What Is the "Transaction" Actually Performed in pgbench?](https://www.postgresql.org/docs/current/pgbench.html#TRANSACTIONS-AND-SCRIPTS "What Is the “Transaction” Actually Performed in pgbench?") for more information). Transactions with serialization or deadlock errors are repeated after rollbacks until they complete successfully or reach the maximum number of tries (specified by the `--max-tries` option) / the maximum time of retries (specified by the `--latency-limit` option) / the end of benchmark (specified by the `--time` option). If the last trial run fails, this transaction will be reported as failed but the client is not aborted and continues to work.

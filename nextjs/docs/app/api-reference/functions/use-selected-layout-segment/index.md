@@ -5,25 +5,24 @@ canonical_url: "https://nextjs.org/docs/app/api-reference/functions/use-selected
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:12:42.610Z"
-content_hash: "1c357d300786be1af9a22b6675de808777ba672e0ed455052f8f14d17a9cb8e0"
+last_crawled_at: "2026-04-27T18:11:24.435Z"
+content_hash: "0bc1cb98e576889e2e6be95cb6a37e7553106e376305d23b9df0a2bf1befbf48"
 menu_path: ["useSelectedLayoutSegment"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/api-reference/functions/use-search-params/index.md", "title": "useSearchParams"}
-nav_next: {"path": "nextjs/docs/app/api-reference/functions/use-selected-layout-segments/index.md", "title": "useSelectedLayoutSegments"}
+version: "latest"
+content_language: "en"
 ---
+[API Reference](/docs/app/api-reference)[Functions](/docs/app/api-reference/functions)useSelectedLayoutSegment
 
 # useSelectedLayoutSegment
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 `useSelectedLayoutSegment` is a **Client Component** hook that lets you read the active route segment **one level below** the Layout it is called from.
 
 It is useful for navigation UI, such as tabs inside a parent layout that change style depending on the active child segment.
 
 app/example-client-component.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -41,9 +40,9 @@ export default function ExampleClientComponent() {
 
 > **Good to know**:
 > 
-> *   Since `useSelectedLayoutSegment` is a [Client Component](/docs/app/getting-started/server-and-client-components) hook, and Layouts are [Server Components](/docs/app/getting-started/server-and-client-components) by default, `useSelectedLayoutSegment` is usually called via a Client Component that is imported into a Layout.
-> *   `useSelectedLayoutSegment` only returns the segment one level down. To return all active segments, see [`useSelectedLayoutSegments`](/docs/app/api-reference/functions/use-selected-layout-segments)
-> *   For [catch-all](/docs/app/api-reference/file-conventions/dynamic-routes#catch-all-segments) routes, the matched segments are returned as a single joined string. For example, given `app/blog/[...slug]/page.js`, calling from `app/blog/layout.js` when visiting `/blog/a/b/c` returns `'a/b/c'`.
+> -   Since `useSelectedLayoutSegment` is a [Client Component](/docs/app/getting-started/server-and-client-components) hook, and Layouts are [Server Components](/docs/app/getting-started/server-and-client-components) by default, `useSelectedLayoutSegment` is usually called via a Client Component that is imported into a Layout.
+> -   `useSelectedLayoutSegment` only returns the segment one level down. To return all active segments, see [`useSelectedLayoutSegments`](/docs/app/api-reference/functions/use-selected-layout-segments)
+> -   For [catch-all](/docs/app/api-reference/file-conventions/dynamic-routes#catch-all-segments) routes, the matched segments are returned as a single joined string. For example, given `app/blog/[...slug]/page.js`, calling from `app/blog/layout.js` when visiting `/blog/a/b/c` returns `'a/b/c'`.
 
 ## Parameters[](#parameters)
 
@@ -59,61 +58,20 @@ const segment = useSelectedLayoutSegment(parallelRoutesKey?: string)
 
 For example, given the Layouts and URLs below, the returned segment would be:
 
-Layout
-
-Visited URL
-
-Returned Segment
-
-`app/layout.js`
-
-`/`
-
-`null`
-
-`app/layout.js`
-
-`/dashboard`
-
-`'dashboard'`
-
-`app/dashboard/layout.js`
-
-`/dashboard`
-
-`null`
-
-`app/dashboard/layout.js`
-
-`/dashboard/settings`
-
-`'settings'`
-
-`app/dashboard/layout.js`
-
-`/dashboard/analytics`
-
-`'analytics'`
-
-`app/dashboard/layout.js`
-
-`/dashboard/analytics/monthly`
-
-`'analytics'`
+| Layout | Visited URL | Returned Segment |
+| --- | --- | --- |
+| `app/layout.js` | `/` | `null` |
+| `app/layout.js` | `/dashboard` | `'dashboard'` |
+| `app/dashboard/layout.js` | `/dashboard` | `null` |
+| `app/dashboard/layout.js` | `/dashboard/settings` | `'settings'` |
+| `app/dashboard/layout.js` | `/dashboard/analytics` | `'analytics'` |
+| `app/dashboard/layout.js` | `/dashboard/analytics/monthly` | `'analytics'` |
 
 For catch-all routes (`[...slug]`), the returned segment contains all matched path segments joined as a single string:
 
-Layout
-
-Visited URL
-
-Returned Segment
-
-`app/blog/layout.js`
-
-`/blog/a/b/c`
-
-`'a/b/c'`
+| Layout | Visited URL | Returned Segment |
+| --- | --- | --- |
+| `app/blog/layout.js` | `/blog/a/b/c` | `'a/b/c'` |
 
 ## Examples[](#examples)
 
@@ -122,8 +80,6 @@ Returned Segment
 You can use `useSelectedLayoutSegment` to create an active link component that changes style depending on the active segment. For example, a featured posts list in the sidebar of a blog:
 
 app/blog/blog-nav-link.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -160,8 +116,6 @@ export default function BlogNavLink({
 
 app/blog/layout.tsx
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -190,28 +144,8 @@ export default async function Layout({
 
 ## Version History[](#version-history)
 
-Version
-
-Changes
-
-`v13.0.0`
-
-`useSelectedLayoutSegment` introduced.
-
-[Previous
-
-useSearchParams
-
-](/docs/app/api-reference/functions/use-search-params)
-
-[Next
-
-useSelectedLayoutSegments
-
-](/docs/app/api-reference/functions/use-selected-layout-segments)
+| Version | Changes |
+| --- | --- |
+| `v13.0.0` | `useSelectedLayoutSegment` introduced. |
 
 Was this helpful?
-
-supported.
-
-Send

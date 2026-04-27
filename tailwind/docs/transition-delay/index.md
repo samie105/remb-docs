@@ -5,37 +5,41 @@ canonical_url: "https://tailwindcss.com/docs/transition-delay"
 docset: "tailwind"
 kind: "framework"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:12:32.937Z"
-content_hash: "b3d83d0673c06faea2a23cfc304318181f7fbbeff69b86cd184b3fc03ec698db"
+last_crawled_at: "2026-04-27T20:32:41.079Z"
+content_hash: "edce5e82828e9dfbaa9e0501c05dd91e5642198577b3af9b35fe6a9cad763e02"
 menu_path: ["transition-delay"]
 section_path: []
-nav_prev: {"path": "tailwind/docs/transition-timing-function/index.md", "title": "transition-timing-function"}
-nav_next: {"path": "tailwind/docs/animation/index.md", "title": "animation"}
+content_language: "en"
 ---
+[](/)
+
+[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
+
+1.  Transitions & Animation
+2.  transition-delay
+
+Transitions & Animation
 
 # transition-delay
 
 Utilities for controlling the delay of CSS transitions.
 
-Class
-
-Styles
-
-`delay-<number>`
-
+| Class | Styles |
+| --- | --- |
+| `delay-<number>` | 
 `transition-delay: <number>ms;`
 
-`delay-(<custom-property>)`
+ |
+| `delay-(<custom-property>)` | 
 
 `transition-delay: var(<custom-property>);`
 
-`delay-[<value>]`
+ |
+| `delay-[<value>]` | 
 
 `transition-delay: <value>;`
 
-## [Examples](#examples)
-
-### [Basic example](#basic-example)
+ |
 
 Use utilities like `delay-150` and `delay-700` to set the transition delay of an element in milliseconds:
 
@@ -51,15 +55,11 @@ delay-700
 <button class="transition delay-150 duration-300 ease-in-out ...">Button A</button><button class="transition delay-300 duration-300 ease-in-out ...">Button B</button><button class="transition delay-700 duration-300 ease-in-out ...">Button C</button>
 ```
 
-### [Supporting reduced motion](#supporting-reduced-motion)
-
 For situations where the user has specified that they prefer reduced motion, you can conditionally apply animations and transitions using the `motion-safe` and `motion-reduce` variants:
 
 ```
 <button type="button" class="delay-300 motion-reduce:delay-0 ...">  <!-- ... --></button>
 ```
-
-### [Using a custom value](#using-a-custom-value)
 
 Use the `delay-[<value>]` syntax to set the transition delay based on a completely custom value:
 
@@ -75,8 +75,6 @@ For CSS variables, you can also use the `delay-(<custom-property>)` syntax:
 
 This is just a shorthand for `delay-[var(<custom-property>)]` that adds the `var()` function for you automatically.
 
-### [Responsive design](#responsive-design)
-
 Prefix a `transition-delay` utility with a breakpoint variant like `md:` to only apply the utility at medium screen sizes and above:
 
 ```
@@ -87,12 +85,12 @@ Learn more about using variants in the [variants documentation](/docs/hover-focu
 
 ### On this page
 
-*   [Quick reference](#quick-reference)
-*   [Examples](#examples)
-    *   [Basic example](#basic-example)
-    *   [Supporting reduced motion](#supporting-reduced-motion)
-    *   [Using a custom value](#using-a-custom-value)
-    *   [Responsive design](#responsive-design)
+-   [Quick reference](#quick-reference)
+-   [Examples](#examples)
+    -   [Basic example](#basic-example)
+    -   [Supporting reduced motion](#supporting-reduced-motion)
+    -   [Using a custom value](#using-a-custom-value)
+    -   [Responsive design](#responsive-design)
 
 [
 

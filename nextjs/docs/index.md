@@ -5,13 +5,13 @@ canonical_url: "https://nextjs.org/docs"
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:05:28.843Z"
-content_hash: "b3d39070945e258db7c1c50f75b8296a0084db4a85df5e013ba6f18371c72245"
+last_crawled_at: "2026-04-27T18:04:21.687Z"
+content_hash: "61e76e8e5fce335e9db807167dcccdb66edf1c077f78576a9d03fbfe4eb15eca"
 menu_path: ["Next.js Docs"]
 section_path: []
-nav_next: {"path": "nextjs/docs/app/getting-started/index.md", "title": "Getting Started"}
+version: "latest"
+content_language: "en"
 ---
-
 # Next.js Docs
 
 Welcome to the Next.js documentation!
@@ -28,9 +28,9 @@ Whether you're an individual developer or part of a larger team, Next.js can hel
 
 The docs are organized into 3 sections:
 
-*   [Getting Started](/docs/app/getting-started): Step-by-step tutorials to help you create a new application and learn the core Next.js features.
-*   [Guides](/docs/app/guides): Tutorials on specific use cases, choose what's relevant to you.
-*   [API Reference](/docs/app/api-reference): Detailed technical reference for every feature.
+-   [Getting Started](/docs/app/getting-started): Step-by-step tutorials to help you create a new application and learn the core Next.js features.
+-   [Guides](/docs/app/guides): Tutorials on specific use cases, choose what's relevant to you.
+-   [API Reference](/docs/app/api-reference): Detailed technical reference for every feature.
 
 Use the sidebar to navigate through the sections, or search (`Ctrl+K` or `Cmd+K`) to quickly find a page.
 
@@ -38,8 +38,8 @@ Use the sidebar to navigate through the sections, or search (`Ctrl+K` or `Cmd+K`
 
 Next.js has two different routers:
 
-*   **App Router**: The newer router that supports new React features like Server Components.
-*   **Pages Router**: The original router, still supported and being improved.
+-   **App Router**: The newer router that supports new React features like Server Components.
+-   **Pages Router**: The original router, still supported and being improved.
 
 At the top of the sidebar, you'll notice a dropdown menu that allows you to switch between the [App Router](/docs/app) and the [Pages Router](/docs/pages) docs.
 
@@ -47,9 +47,9 @@ At the top of the sidebar, you'll notice a dropdown menu that allows you to swit
 
 The App Router and Pages Router handle React versions differently:
 
-*   **App Router**: Uses [React canary releases](https://react.dev/blog/2023/05/03/react-canaries) built-in, which include all the stable React 19 changes, as well as newer features being validated in frameworks, prior to a new React release.
+-   **App Router**: Uses [React canary releases](https://react.dev/blog/2023/05/03/react-canaries) built-in, which include all the stable React 19 changes, as well as newer features being validated in frameworks, prior to a new React release.
     
-*   **Pages Router**: Uses the React version installed in your project's `package.json`.
+-   **Pages Router**: Uses the React version installed in your project's `package.json`.
     
 
 This approach ensures new React features work reliably in the App Router while maintaining backwards compatibility for existing Pages Router applications.
@@ -58,10 +58,10 @@ This approach ensures new React features work reliably in the App Router while m
 
 Our documentation assumes some familiarity with web development. Before getting started, it'll help if you're comfortable with:
 
-*   HTML
-*   CSS
-*   JavaScript
-*   React
+-   HTML
+-   CSS
+-   JavaScript
+-   React
 
 If you're new to React or need a refresher, we recommend starting with our [React Foundations course](/learn/react-foundations), and the [Next.js Foundations course](/learn/dashboard-app) that has you building an application as you learn.
 
@@ -85,20 +85,4 @@ Learn how to create full-stack web applications with the Next.js App Router.
 
 ](/docs/app/getting-started)
 
-[Previous
-
-Rspack
-
-](/docs/community/rspack)
-
-[Next
-
-App Router
-
-](/docs/app)
-
 Was this helpful?
-
-supported.
-
-Send

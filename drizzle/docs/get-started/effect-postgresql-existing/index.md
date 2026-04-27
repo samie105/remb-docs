@@ -5,14 +5,12 @@ canonical_url: "https://orm.drizzle.team/docs/get-started/effect-postgresql-exis
 docset: "drizzle"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:53:54.795Z"
-content_hash: "19b1474d916f81b12ae422db7c63303f9908765f9f8175486bb8850fac41d444"
+last_crawled_at: "2026-04-27T18:44:54.564Z"
+content_hash: "798954ecbe1453b6e64a468236ea3314a99cae27b032c7d4ed52c5307a6c5251"
 menu_path: ["Get Started with Drizzle and Effect PostgreSQL in existing project"]
 section_path: []
-nav_prev: {"path": "drizzle/docs/get-started/do-new/index.md", "title": "Get Started with Drizzle and SQLite Durable Objects"}
-nav_next: {"path": "drizzle/docs/get-started/effect-postgresql-new/index.md", "title": "Get Started with Drizzle and Effect PostgreSQL"}
+content_language: "en"
 ---
-
 ## Get Started with Drizzle and Effect PostgreSQL in existing project
 
 WARNING
@@ -21,20 +19,20 @@ This page explains concepts available on drizzle versions `1.0.0-beta.13` and hi
 
 Effect is only available for PostgreSQL right now and soon be implemented for all other dialects
 
-On how to upgrade (read more [here](drizzle/docs/upgrade-v1/index.md))
+On how to upgrade (read more [here](https://orm.drizzle.team/docs/upgrade-v1))
 
 This guide assumes familiarity with:
 
-*   **Effect** - Effect is a powerful TS library designed to help developers easily create complex, synchronous, and asynchronous programs. - [read more](https://effect.website/docs)
-*   **dotenv** - package for managing environment variables - [read here](https://www.npmjs.com/package/dotenv)
-*   **tsx** - package for running TypeScript files - [read here](https://tsx.is/)
-*   **@effect/sql-pg** - A PostgreSQL toolkit for Effect - [read here](https://effect-ts.github.io/effect/docs/sql-pg)
+-   **Effect** - Effect is a powerful TS library designed to help developers easily create complex, synchronous, and asynchronous programs. - [read more](https://effect.website/docs)
+-   **dotenv** - package for managing environment variables - [read here](https://www.npmjs.com/package/dotenv)
+-   **tsx** - package for running TypeScript files - [read here](https://tsx.is/)
+-   **@effect/sql-pg** - A PostgreSQL toolkit for Effect - [read here](https://effect-ts.github.io/effect/docs/sql-pg)
 
 #### Basic file structure
 
 This is the basic file structure of the project. In the `src/db` directory, we have table definition in `schema.ts`. In `drizzle` folder there are sql migration file and snapshots.
 
-```
+```plaintext
 📦 <project root>
  ├ 📂 drizzle
  ├ 📂 src
@@ -48,14 +46,6 @@ This is the basic file structure of the project. In the `src/db` directory, we h
 ```
 
 #### Step 1 - Install required packages[](#step-1---install-required-packages)
-
-npm
-
-yarn
-
-pnpm
-
-bun
 
 ```
 npm i drizzle-orm effect @effect/sql-pg pg dotenv
@@ -81,23 +71,19 @@ bun add -D drizzle-kit tsx @types/pg
 
 Create a `.env` file in the root of your project and add your database connection variable:
 
-```
-DATABASE_URL=
-```
-
 tips
 
 If you don’t have a PostgreSQL database yet and want to create one for testing, you can use our guide on how to set up PostgreSQL in Docker.
 
-The PostgreSQL in Docker guide is available [here](drizzle/docs/guides/postgresql-local-setup/index.md). Go set it up, generate a database URL (explained in the guide), and come back for the next steps
+The PostgreSQL in Docker guide is available [here](https://orm.drizzle.team/docs/guides/postgresql-local-setup). Go set it up, generate a database URL (explained in the guide), and come back for the next steps
 
 #### Step 3 - Setup Drizzle config file[](#step-3---setup-drizzle-config-file)
 
-**Drizzle config** - a configuration file that is used by [Drizzle Kit](drizzle/docs/kit-overview/index.md) and contains all the information about your database connection, migration folder and schema files.
+**Drizzle config** - a configuration file that is used by [Drizzle Kit](https://orm.drizzle.team/docs/kit-overview) and contains all the information about your database connection, migration folder and schema files.
 
 Create a `drizzle.config.ts` file in the root of your project and add the following content:
 
-```
+```typescript
 import 'dotenv/config';
 import { defineConfig } from 'drizzle-kit';
 
@@ -117,7 +103,7 @@ Drizzle Kit provides a CLI command to introspect your database and generate a sc
 
 For example, you have such table in your database:
 
-```
+```sql
 CREATE TABLE IF NOT EXISTS "users" (
 	"id" integer PRIMARY KEY GENERATED ALWAYS AS IDENTITY (sequence name "users_id_seq" INCREMENT BY 1 MINVALUE 1 MAXVALUE 2147483647 START WITH 1 CACHE 1),
 	"name" varchar(255) NOT NULL,
@@ -129,15 +115,15 @@ CREATE TABLE IF NOT EXISTS "users" (
 
 Pull your database schema:
 
-```
+```bash
 npx drizzle-kit pull --init
 ```
 
-The result of introspection will be a `schema.ts` file, `meta` folder with snapshots of your database schema, sql file with the migration and `relations.ts` file for [relational queries](drizzle/docs/rqb/index.md).
+The result of introspection will be a `schema.ts` file, `meta` folder with snapshots of your database schema, sql file with the migration and `relations.ts` file for [relational queries](https://orm.drizzle.team/docs/rqb).
 
 Here is an example of the generated `schema.ts` file:
 
-```
+```typescript
 // table schema generated by introspection
 import { pgTable, unique, integer, varchar } from "drizzle-orm/pg-core"
 import { sql } from "drizzle-orm"
@@ -152,13 +138,13 @@ export const users = pgTable("users", {
 ]);
 ```
 
-Learn more about introspection in the [documentation](drizzle/docs/drizzle-kit-pull/index.md).
+Learn more about introspection in the [documentation](https://orm.drizzle.team/docs/drizzle-kit-pull).
 
 #### Step 5 - Transfer code to your actual schema file[](#step-5---transfer-code-to-your-actual-schema-file)
 
 We recommend transferring the generated code from `drizzle/schema.ts` and `drizzle/relations.ts` to the actual schema file. In this guide we transferred code to `src/db/schema.ts`. Generated files for schema and relations can be deleted. This way you can manage your schema in a more structured way.
 
-```
+```plaintext
  ├ 📂 drizzle
  │ ├ 📂 20242409125510_premium_mister_fear
  │ │ ├ 📜 snapshot.json
@@ -177,7 +163,7 @@ We recommend transferring the generated code from `drizzle/schema.ts` and `drizz
 
 Create a `index.ts` file in the `src` directory and initialize the connection:
 
-```
+```typescript
 import 'dotenv/config';
 import * as PgDrizzle from 'drizzle-orm/effect-postgres';
 import { PgClient } from '@effect/sql-pg';
@@ -212,7 +198,7 @@ Effect.runPromise(program.pipe(Effect.provide(PgClientLive)));
 
 #### Step 7 - Query the database[](#step-7---query-the-database)
 
-```
+```ts
 import 'dotenv/config';
 import * as PgDrizzle from 'drizzle-orm/effect-postgres';
 import { PgClient } from '@effect/sql-pg';
@@ -280,14 +266,6 @@ You’ve already installed `tsx`, so we can run our queries now
 
 **Run `index.ts` script**
 
-npm
-
-yarn
-
-pnpm
-
-bun
-
 ```
 npx tsx src/index.ts
 ```
@@ -308,7 +286,7 @@ tips
 
 We suggest using `bun` to run TypeScript files. With `bun`, such scripts can be executed without issues or additional settings, regardless of whether your project is configured with CommonJS (CJS), ECMAScript Modules (ESM), or any other module format. To run a script with `bun`, use the following command:
 
-```
+```bash
 bun src/index.ts
 ```
 
@@ -318,7 +296,7 @@ If you don’t have bun installed, check the [Bun installation docs](https://bun
 
 If you want to update your table schema, you can do it in the `schema.ts` file. For example, let’s add a new column `phone` to the `users_table`:
 
-```
+```typescript
 import { pgTable, unique, integer, varchar } from "drizzle-orm/pg-core"
 import { sql } from "drizzle-orm"
 
@@ -337,11 +315,11 @@ export const users = pgTable("users", {
 
 You can directly apply changes to your database using the `drizzle-kit push` command. This is a convenient method for quickly testing new schema designs or modifications in a local development environment, allowing for rapid iterations without the need to manage migration files:
 
-```
+```bash
 npx drizzle-kit push
 ```
 
-Read more about the push command in [documentation](drizzle/docs/drizzle-kit-push/index.md).
+Read more about the push command in [documentation](https://orm.drizzle.team/docs/drizzle-kit-push).
 
 Tips
 
@@ -349,21 +327,21 @@ Alternatively, you can generate migrations using the `drizzle-kit generate` comm
 
 Generate migrations:
 
-```
+```bash
 npx drizzle-kit generate
 ```
 
 Apply migrations:
 
-```
+```bash
 npx drizzle-kit migrate
 ```
 
-Read more about migration process in [documentation](drizzle/docs/kit-overview/index.md).
+Read more about migration process in [documentation](https://orm.drizzle.team/docs/kit-overview).
 
 #### Step 11 - Query the database with a new field (optional)[](#step-11---query-the-database-with-a-new-field-optional)
 
-```
+```ts
 import 'dotenv/config';
 import * as PgDrizzle from 'drizzle-orm/effect-postgres';
 import { PgClient } from '@effect/sql-pg';

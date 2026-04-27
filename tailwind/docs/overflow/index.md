@@ -5,85 +5,101 @@ canonical_url: "https://tailwindcss.com/docs/overflow"
 docset: "tailwind"
 kind: "framework"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:44:16.012Z"
-content_hash: "64e419cd766a04e84993a7e58796c75b0055d592b0e25facdd89a9c0c41cbece"
+last_crawled_at: "2026-04-27T19:54:19.907Z"
+content_hash: "b4f000111f10863bf8de0f11236fa423c9dae1a2a7578951fe6ba46f8e9361c0"
 menu_path: ["overflow"]
 section_path: []
-nav_prev: {"path": "tailwind/docs/object-position/index.md", "title": "object-position"}
-nav_next: {"path": "tailwind/docs/overscroll-behavior/index.md", "title": "overscroll-behavior"}
+content_language: "en"
 ---
+[](/)
+
+[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
+
+1.  Layout
+2.  overflow
+
+Layout
 
 # overflow
 
 Utilities for controlling how an element handles content that is too large for the container.
 
-Class
-
-Styles
-
-`overflow-auto`
-
+| Class | Styles |
+| --- | --- |
+| `overflow-auto` | 
 `overflow: auto;`
 
-`overflow-hidden`
+ |
+| `overflow-hidden` | 
 
 `overflow: hidden;`
 
-`overflow-clip`
+ |
+| `overflow-clip` | 
 
 `overflow: clip;`
 
-`overflow-visible`
+ |
+| `overflow-visible` | 
 
 `overflow: visible;`
 
-`overflow-scroll`
+ |
+| `overflow-scroll` | 
 
 `overflow: scroll;`
 
-`overflow-x-auto`
+ |
+| `overflow-x-auto` | 
 
 `overflow-x: auto;`
 
-`overflow-y-auto`
+ |
+| `overflow-y-auto` | 
 
 `overflow-y: auto;`
 
-`overflow-x-hidden`
+ |
+| `overflow-x-hidden` | 
 
 `overflow-x: hidden;`
 
-`overflow-y-hidden`
+ |
+| `overflow-y-hidden` | 
 
 `overflow-y: hidden;`
 
-`overflow-x-clip`
+ |
+| `overflow-x-clip` | 
 
 `overflow-x: clip;`
 
-`overflow-y-clip`
+ |
+| `overflow-y-clip` | 
 
 `overflow-y: clip;`
 
-`overflow-x-visible`
+ |
+| `overflow-x-visible` | 
 
 `overflow-x: visible;`
 
-`overflow-y-visible`
+ |
+| `overflow-y-visible` | 
 
 `overflow-y: visible;`
 
-`overflow-x-scroll`
+ |
+| `overflow-x-scroll` | 
 
 `overflow-x: scroll;`
 
-`overflow-y-scroll`
+ |
+| `overflow-y-scroll` | 
 
 `overflow-y: scroll;`
 
-## [Examples](#examples)
-
-### [Showing content that overflows](#showing-content-that-overflows)
+ |
 
 Use the `overflow-visible` utility to prevent content within an element from being clipped:
 
@@ -97,8 +113,6 @@ Use the `overflow-visible` utility to prevent content within an element from bei
 
 Note that any content that overflows the bounds of the element will then be visible.
 
-### [Hiding content that overflows](#hiding-content-that-overflows)
-
 Use the `overflow-hidden` utility to clip any content within an element that overflows the bounds of that element:
 
 ![](https://images.unsplash.com/photo-1501196354995-cbb51c65aaea?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=4&w=256&h=256&q=80)
@@ -108,8 +122,6 @@ Use the `overflow-hidden` utility to clip any content within an element that ove
 ```
 <div class="overflow-hidden ...">  <!-- ... --></div>
 ```
-
-### [Scrolling if needed](#scrolling-if-needed)
 
 Use the `overflow-auto` utility to add scrollbars to an element in the event that its content overflows the bounds of that element:
 
@@ -137,8 +149,6 @@ Scroll vertically
 
 Unlike `overflow-scroll`, which always shows scrollbars, this utility will only show them if scrolling is necessary.
 
-### [Scrolling horizontally if needed](#scrolling-horizontally-if-needed)
-
 Use the `overflow-x-auto` utility to allow horizontal scrolling if needed:
 
 Scroll horizontally
@@ -158,8 +168,6 @@ Scroll horizontally
 ```
 <div class="overflow-x-auto ...">  <!-- ... --></div>
 ```
-
-### [Scrolling vertically if needed](#scrolling-vertically-if-needed)
 
 Use the `overflow-y-auto` utility to allow vertical scrolling if needed:
 
@@ -185,8 +193,6 @@ Scroll vertically
 <div class="h-32 overflow-y-auto ...">  <!-- ... --></div>
 ```
 
-### [Scrolling horizontally always](#scrolling-horizontally-always)
-
 Use the `overflow-x-scroll` utility to allow horizontal scrolling and always show scrollbars unless always-visible scrollbars are disabled by the operating system:
 
 Scroll horizontally
@@ -206,8 +212,6 @@ Scroll horizontally
 ```
 <div class="overflow-x-scroll ...">  <!-- ... --></div>
 ```
-
-### [Scrolling vertically always](#scrolling-vertically-always)
 
 Use the `overflow-y-scroll` utility to allow vertical scrolling and always show scrollbars unless always-visible scrollbars are disabled by the operating system:
 
@@ -232,8 +236,6 @@ Scroll vertically
 ```
 <div class="overflow-y-scroll ...">  <!-- ... --></div>
 ```
-
-### [Scrolling in all directions](#scrolling-in-all-directions)
 
 Use the `overflow-scroll` utility to add scrollbars to an element:
 
@@ -297,8 +299,6 @@ Sat
 
 Unlike `overflow-auto`, which only shows scrollbars if they are necessary, this utility always shows them. Note that some operating systems (like macOS) hide unnecessary scrollbars regardless of this setting.
 
-### [Responsive design](#responsive-design)
-
 Prefix an `overflow` utility with a breakpoint variant like `md:` to only apply the utility at medium screen sizes and above:
 
 ```
@@ -309,17 +309,17 @@ Learn more about using variants in the [variants documentation](/docs/hover-focu
 
 ### On this page
 
-*   [Quick reference](#quick-reference)
-*   [Examples](#examples)
-    *   [Showing content that overflows](#showing-content-that-overflows)
-    *   [Hiding content that overflows](#hiding-content-that-overflows)
-    *   [Scrolling if needed](#scrolling-if-needed)
-    *   [Scrolling horizontally if needed](#scrolling-horizontally-if-needed)
-    *   [Scrolling vertically if needed](#scrolling-vertically-if-needed)
-    *   [Scrolling horizontally always](#scrolling-horizontally-always)
-    *   [Scrolling vertically always](#scrolling-vertically-always)
-    *   [Scrolling in all directions](#scrolling-in-all-directions)
-    *   [Responsive design](#responsive-design)
+-   [Quick reference](#quick-reference)
+-   [Examples](#examples)
+    -   [Showing content that overflows](#showing-content-that-overflows)
+    -   [Hiding content that overflows](#hiding-content-that-overflows)
+    -   [Scrolling if needed](#scrolling-if-needed)
+    -   [Scrolling horizontally if needed](#scrolling-horizontally-if-needed)
+    -   [Scrolling vertically if needed](#scrolling-vertically-if-needed)
+    -   [Scrolling horizontally always](#scrolling-horizontally-always)
+    -   [Scrolling vertically always](#scrolling-vertically-always)
+    -   [Scrolling in all directions](#scrolling-in-all-directions)
+    -   [Responsive design](#responsive-design)
 
 ![Build UIs that don’t suck — 5-day mini-course](/_next/static/media/course-promo.d3d6bc78.jpg)
 

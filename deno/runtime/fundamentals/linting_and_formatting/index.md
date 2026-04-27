@@ -5,46 +5,47 @@ canonical_url: "https://docs.deno.com/runtime/fundamentals/linting_and_formattin
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:47:08.961Z"
-content_hash: "6c4c7492d49cbafebfb6d42328e663fd06f4c2f2961b75efdeac5ec07bfc79b3"
+last_crawled_at: "2026-04-27T17:20:37.294Z"
+content_hash: "82e5528a68c0c28f88c9449cd04ccfcaaef370d28be00b86028fd191feee09cf"
 menu_path: ["Linting and formatting"]
 section_path: []
+content_language: "en"
 ---
-On this page
+**On this page**
 
-*   [Linting](#linting)
-    *   [Linting rules](#linting-rules)
-*   [Formatting](#formatting)
-    *   [Checking your formatting](#checking-your-formatting)
-    *   [Integration in CI](#integration-in-ci)
-    *   [Integration in VS Code](#integration-in-vs-code)
-    *   [Available options](#available-options)
-        *   [bracePosition](#braceposition)
-        *   [jsx.bracketPosition](#jsx.bracketposition)
-        *   [jsx.forceNewLinesSurroundingContent](#jsx.forcenewlinessurroundingcontent)
-        *   [jsx.multiLineParens](#jsx.multilineparens)
-        *   [indentWidth](#indentwidth)
-        *   [lineWidth](#linewidth)
-        *   [newLineKind](#newlinekind)
-        *   [nextControlFlowPosition](#nextcontrolflowposition)
-        *   [semiColons](#semicolons)
-        *   [operatorPosition](#operatorposition)
-        *   [proseWrap](#prosewrap)
-        *   [quoteProps](#quoteprops)
-        *   [singleBodyPosition](#singlebodyposition)
-        *   [singleQuote](#singlequote)
-        *   [spaceAround](#spacearound)
-        *   [spaceSurroundingProperties](#spacesurroundingproperties)
-        *   [trailingCommas](#trailingcommas)
-        *   [typeLiteral.separatorKind](#typeliteral.separatorkind)
-        *   [unstable-component](#unstable-component)
-        *   [unstable-sql](#unstable-sql)
-        *   [useTabs](#usetabs)
-        *   [useBraces](#usebraces)
-    *   [Configuration](#configuration)
-*   [Deno support for other linters and formatters](#deno-support-for-other-linters-and-formatters)
-    *   [ESLint](#eslint)
-    *   [Prettier](#prettier)
+-   [Linting](#linting)
+    -   [Linting rules](#linting-rules)
+-   [Formatting](#formatting)
+    -   [Checking your formatting](#checking-your-formatting)
+    -   [Integration in CI](#integration-in-ci)
+    -   [Integration in VS Code](#integration-in-vs-code)
+    -   [Available options](#available-options)
+        -   [bracePosition](#braceposition)
+        -   [jsx.bracketPosition](#jsx.bracketposition)
+        -   [jsx.forceNewLinesSurroundingContent](#jsx.forcenewlinessurroundingcontent)
+        -   [jsx.multiLineParens](#jsx.multilineparens)
+        -   [indentWidth](#indentwidth)
+        -   [lineWidth](#linewidth)
+        -   [newLineKind](#newlinekind)
+        -   [nextControlFlowPosition](#nextcontrolflowposition)
+        -   [semiColons](#semicolons)
+        -   [operatorPosition](#operatorposition)
+        -   [proseWrap](#prosewrap)
+        -   [quoteProps](#quoteprops)
+        -   [singleBodyPosition](#singlebodyposition)
+        -   [singleQuote](#singlequote)
+        -   [spaceAround](#spacearound)
+        -   [spaceSurroundingProperties](#spacesurroundingproperties)
+        -   [trailingCommas](#trailingcommas)
+        -   [typeLiteral.separatorKind](#typeliteral.separatorkind)
+        -   [unstable-component](#unstable-component)
+        -   [unstable-sql](#unstable-sql)
+        -   [useTabs](#usetabs)
+        -   [useBraces](#usebraces)
+    -   [Configuration](#configuration)
+-   [Deno support for other linters and formatters](#deno-support-for-other-linters-and-formatters)
+    -   [ESLint](#eslint)
+    -   [Prettier](#prettier)
 
 In an ideal world, your code is always clean, consistent, and free of pesky errors. That's the promise of Deno's built-in linting and formatting tools. By integrating these features directly into the runtime, Deno eliminates the need for external dependencies and complex configurations in your projects. These inbuilt tools are fast and performant, not only saving time but also ensuring that every line of code adheres to best practices.
 
@@ -144,127 +145,127 @@ If your `deno.json(c)` file is located in a subdirectory of your project, provid
 
 Define brace position for blocks
 
-*   **Default:** `sameLine`
-*   **Possible values:** `maintain`, `sameLine`, `nextLine`, `sameLineUnlessHanging`
+-   **Default:** `sameLine`
+-   **Possible values:** `maintain`, `sameLine`, `nextLine`, `sameLineUnlessHanging`
 
 #### `jsx.bracketPosition`
 
 Define bracket position for JSX
 
-*   **Default:** `nextLine`
-*   **Possible values:** `maintain`, `sameLine`, `nextLine`
+-   **Default:** `nextLine`
+-   **Possible values:** `maintain`, `sameLine`, `nextLine`
 
 #### `jsx.forceNewLinesSurroundingContent`
 
 Forces newlines surrounding the content of JSX elements
 
-*   **Default:** `false`
-*   **Possible values:** `true`, `false`
+-   **Default:** `false`
+-   **Possible values:** `true`, `false`
 
 #### `jsx.multiLineParens`
 
 Surrounds the top-most JSX element or fragment in parentheses when it spans multiple lines
 
-*   **Default:** `prefer`
-*   **Possible values:** `never`, `prefer`, `always`
+-   **Default:** `prefer`
+-   **Possible values:** `never`, `prefer`, `always`
 
 #### `indentWidth`
 
 Define indentation width
 
-*   **Default:** `2`
-*   **Possible values:** `number`
+-   **Default:** `2`
+-   **Possible values:** `number`
 
 #### `lineWidth`
 
 Define maximum line width
 
-*   **Default:** `80`
-*   **Possible values:** `number`
+-   **Default:** `80`
+-   **Possible values:** `number`
 
 #### `newLineKind`
 
 The newline character to use
 
-*   **Default:** `lf`
-*   **Possible values:** `auto`, `crlf`, `lf`, `system`
+-   **Default:** `lf`
+-   **Possible values:** `auto`, `crlf`, `lf`, `system`
 
 #### `nextControlFlowPosition`
 
 Define position of next control flow
 
-*   **Default:** `sameLine`
-*   **Possible values:** `sameLine`, `nextLine`, `maintain`
+-   **Default:** `sameLine`
+-   **Possible values:** `sameLine`, `nextLine`, `maintain`
 
 #### `semiColons`
 
 Whether to prefer using semicolons.
 
-*   **Default:** `true`
-*   **Possible values:** `true`, `false`
+-   **Default:** `true`
+-   **Possible values:** `true`, `false`
 
 #### `operatorPosition`
 
 Where to place the operator for expressions that span multiple lines
 
-*   **Default:** `sameLine`
-*   **Possible values:** `sameLine`, `nextLine`, `maintain`
+-   **Default:** `sameLine`
+-   **Possible values:** `sameLine`, `nextLine`, `maintain`
 
 #### `proseWrap`
 
 Define how prose should be wrapped
 
-*   **Default:** `always`
-*   **Possible values:** `always`, `never`, `preserve`
+-   **Default:** `always`
+-   **Possible values:** `always`, `never`, `preserve`
 
 #### `quoteProps`
 
 Control quoting of object properties
 
-*   **Default:** `asNeeded`
-*   **Possible values:** `asNeeded`, `consistent`, `preserve`
+-   **Default:** `asNeeded`
+-   **Possible values:** `asNeeded`, `consistent`, `preserve`
 
 #### `singleBodyPosition`
 
 The position of the body in single body blocks
 
-*   **Default:** `sameLineUnlessHanging`
-*   **Possible values:** `sameLine`, `nextLine`, `maintain`, `sameLineUnlessHanging`
+-   **Default:** `sameLineUnlessHanging`
+-   **Possible values:** `sameLine`, `nextLine`, `maintain`, `sameLineUnlessHanging`
 
 #### `singleQuote`
 
 Use single quotes
 
-*   **Default:** `false`
-*   **Possible values:** `true`, `false`
+-   **Default:** `false`
+-   **Possible values:** `true`, `false`
 
 #### `spaceAround`
 
 Control spacing around enclosed expressions
 
-*   **Default:** `false`
-*   **Possible values:** `true`, `false`
+-   **Default:** `false`
+-   **Possible values:** `true`, `false`
 
 #### `spaceSurroundingProperties`
 
 Control spacing surrounding single line object-like nodes
 
-*   **Default:** `true`
-*   **Possible values:** `true`, `false`
+-   **Default:** `true`
+-   **Possible values:** `true`, `false`
 
 #### `trailingCommas`
 
 Control trailing commas in multi-line arrays/objects
 
-*   **Default:** `always`
-*   **Possible values:** `always`, `never`
+-   **Default:** `always`
+-   **Possible values:** `always`, `never`
 
 #### `typeLiteral.separatorKind`
 
 Define separator kind for type literals
 
-*   **Default:** `semiColon`
-*   **Possible values:** `comma`, `semiColon`
+-   **Default:** `semiColon`
+-   **Possible values:** `comma`, `semiColon`
 
 #### `unstable-component`
 
@@ -278,15 +279,15 @@ Enable formatting SQL files
 
 Use tabs instead of spaces for indentation
 
-*   **Default:** `false`
-*   **Possible values:** `true`, `false`
+-   **Default:** `false`
+-   **Possible values:** `true`, `false`
 
 #### `useBraces`
 
 Whether to use braces for if statements, for statements, and while statements
 
-*   **Default:** `whenNotSingleLine`
-*   **Possible values:** `maintain`, `whenNotSingleLine`, `always`, `preferNone`
+-   **Default:** `whenNotSingleLine`
+-   **Possible values:** `maintain`, `whenNotSingleLine`, `always`, `preferNone`
 
 ### Configuration
 

@@ -5,13 +5,14 @@ canonical_url: "https://nextjs.org/docs/messages/no-assign-module-variable"
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:18:04.031Z"
-content_hash: "e3badf5fbe59fe8b917060287ed767d1ba3ad3188979aed133d00ef7046fe1a8"
+last_crawled_at: "2026-04-27T18:17:28.938Z"
+content_hash: "609d77b9ee259ac294a59cad7766cd6ef35eed3f98d5c610aaa57c7cf69e031f"
 menu_path: ["No assign module variable"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/messages/next-script-for-ga/index.md", "title": "Using Google Analytics with Next.js (through `@next/third-parties/google`)"}
-nav_next: {"path": "nextjs/docs/messages/no-async-client-component/index.md", "title": "No async Client Component"}
+version: "latest"
+content_language: "en"
 ---
+[Docs](/docs)[Errors](/docs)No assign module variable
 
 # No assign module variable
 
@@ -32,7 +33,3 @@ let myModule = {...}
 ```
 
 Was this helpful?
-
-supported.
-
-Send

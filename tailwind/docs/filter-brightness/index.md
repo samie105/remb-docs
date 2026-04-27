@@ -5,37 +5,41 @@ canonical_url: "https://tailwindcss.com/docs/filter-brightness"
 docset: "tailwind"
 kind: "framework"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:07:09.287Z"
-content_hash: "2c8a85b88f0e41ade37a22aa555fb1ce5d6d81c05493070aa8f8f6183b5f342b"
+last_crawled_at: "2026-04-27T20:25:11.197Z"
+content_hash: "90a3a27b36bcc89ad82eb45eb381b1120e2125af632fb92e88fbc3b97a732fbf"
 menu_path: ["filter: brightness()"]
 section_path: []
-nav_prev: {"path": "tailwind/docs/filter-blur/index.md", "title": "filter: blur()"}
-nav_next: {"path": "tailwind/docs/filter-contrast/index.md", "title": "filter: contrast()"}
+content_language: "en"
 ---
+[](/)
+
+[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
+
+1.  Filters
+2.  brightness
+
+Filters
 
 # filter: brightness()
 
 Utilities for applying brightness filters to an element.
 
-Class
-
-Styles
-
-`brightness-<number>`
-
+| Class | Styles |
+| --- | --- |
+| `brightness-<number>` | 
 `filter: brightness(<number>%);`
 
-`brightness-(<custom-property>)`
+ |
+| `brightness-(<custom-property>)` | 
 
 `filter: brightness(var(<custom-property>));`
 
-`brightness-[<value>]`
+ |
+| `brightness-[<value>]` | 
 
 `filter: brightness(<value>);`
 
-## [Examples](#examples)
-
-### [Basic example](#basic-example)
+ |
 
 Use utilities like `brightness-50` and `brightness-100` to control an element's brightness:
 
@@ -59,8 +63,6 @@ brightness-200
 <img class="brightness-50 ..." src="/img/mountains.jpg" /><img class="brightness-100 ..." src="/img/mountains.jpg" /><img class="brightness-125 ..." src="/img/mountains.jpg" /><img class="brightness-200 ..." src="/img/mountains.jpg" />
 ```
 
-### [Using a custom value](#using-a-custom-value)
-
 Use the `brightness-[<value>]` syntax to set the brightness based on a completely custom value:
 
 ```
@@ -75,8 +77,6 @@ For CSS variables, you can also use the `brightness-(<custom-property>)` syntax:
 
 This is just a shorthand for `brightness-[var(<custom-property>)]` that adds the `var()` function for you automatically.
 
-### [Responsive design](#responsive-design)
-
 Prefix a `filter: brightness()` utility with a breakpoint variant like `md:` to only apply the utility at medium screen sizes and above:
 
 ```
@@ -87,24 +87,20 @@ Learn more about using variants in the [variants documentation](/docs/hover-focu
 
 ### On this page
 
-*   [Quick reference](#quick-reference)
-*   [Examples](#examples)
-    *   [Basic example](#basic-example)
-    *   [Using a custom value](#using-a-custom-value)
-    *   [Responsive design](#responsive-design)
+-   [Quick reference](#quick-reference)
+-   [Examples](#examples)
+    -   [Basic example](#basic-example)
+    -   [Using a custom value](#using-a-custom-value)
+    -   [Responsive design](#responsive-design)
 
-[
+![Build UIs that don’t suck — 5-day mini-course](/_next/static/media/course-promo.d3d6bc78.jpg)
 
-![Refactoring UI](/_next/static/media/book-promo.3012c0f6.png)
+5-day mini-course
 
-From the creators of Tailwind CSS
+Build UIs that don’t suck.
 
-Make your ideas look awesome, without relying on a designer.
+Short, tactical video lessons from the creator of Tailwind CSS, delivered directly to your inbox every day for a week.
 
-> “This is the survival kit I wish I had when I started building apps.”
-> 
-> Derrick Reimer, SavvyCal
-
-](https://www.refactoringui.com/?ref=sidebar)
+[Get the free course](/build-uis-that-dont-suck)
 
 Copyright © 2026 Tailwind Labs Inc.·[Trademark Policy](/brand)

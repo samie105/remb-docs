@@ -5,18 +5,19 @@ canonical_url: "https://docs.deno.com/runtime/reference/cli/coverage/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:52:01.092Z"
-content_hash: "764908b31b850bfb1130d15f59de939ae82b81ce381d4866f5465148de0cffd3"
+last_crawled_at: "2026-04-27T17:27:49.233Z"
+content_hash: "48bb32ad30f7915502d5fbeb03912e3535f180a57aa1288aa8683bb21fa4e6df"
 menu_path: ["deno coverage"]
 section_path: []
+content_language: "en"
 ---
-On this page
+**On this page**
 
-*   [Inclusions and Exclusions](#inclusions-and-exclusions)
-*   [Ignoring Code](#ignoring-code)
-*   [Output Formats](#output-formats)
-*   [Examples](#examples)
-*   [Options](#options)
+-   [Inclusions and Exclusions](#inclusions-and-exclusions)
+-   [Ignoring Code](#ignoring-code)
+-   [Output Formats](#output-formats)
+-   [Examples](#examples)
+-   [Options](#options)
 
 `deno coverage` generates coverage reports from data collected by [`deno test --coverage`](/runtime/reference/cli/test/#code-coverage).
 

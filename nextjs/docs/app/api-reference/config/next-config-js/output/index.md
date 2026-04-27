@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/app/api-reference/config/next-config-js/
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:08:04.439Z"
-content_hash: "66049d00a794b5ffec0edb786e8acbb255a0b16227a4251275884cabdce2ca39"
+last_crawled_at: "2026-04-27T18:06:52.347Z"
+content_hash: "0ee140a7333a6669b8a8a8f730c28be0932248c05addad9970f3f16cb7a3273a"
 menu_path: ["output"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/api-reference/config/next-config-js/optimizePackageImports/index.md", "title": "optimizePackageImports"}
-nav_next: {"path": "nextjs/docs/app/api-reference/config/next-config-js/pageExtensions/index.md", "title": "pageExtensions"}
+version: "latest"
+content_language: "en"
 ---
+[Configuration](/docs/app/api-reference/config)[next.config.js](/docs/app/api-reference/config/next-config-js)output
 
 # output
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 During a build, Next.js will automatically trace each page and its dependencies to determine all of the files that are needed for deploying a production version of your application.
 
@@ -67,11 +68,11 @@ node .next/standalone/server.js
 
 > **Good to know**:
 > 
-> *   If your project needs to listen to a specific port or hostname, you can define `PORT` or `HOSTNAME` environment variables before running `server.js`. For example, run `PORT=8080 HOSTNAME=0.0.0.0 node server.js` to start the server on `http://0.0.0.0:8080`.
+> -   If your project needs to listen to a specific port or hostname, you can define `PORT` or `HOSTNAME` environment variables before running `server.js`. For example, run `PORT=8080 HOSTNAME=0.0.0.0 node server.js` to start the server on `http://0.0.0.0:8080`.
 
 ## Caveats[](#caveats)
 
-*   While tracing in monorepo setups, the project directory is used for tracing by default. For `next build packages/web-app`, `packages/web-app` would be the tracing root and any files outside of that folder will not be included. To include files outside of this folder you can set `outputFileTracingRoot` in your `next.config.js`.
+-   While tracing in monorepo setups, the project directory is used for tracing by default. For `next build packages/web-app`, `packages/web-app` would be the tracing root and any files outside of that folder will not be included. To include files outside of this folder you can set `outputFileTracingRoot` in your `next.config.js`.
 
 packages/web-app/next.config.js
 
@@ -84,7 +85,7 @@ module.exports = {
 }
 ```
 
-*   There are some cases in which Next.js might fail to include required files, or might incorrectly include unused files. In those cases, you can leverage `outputFileTracingExcludes` and `outputFileTracingIncludes` respectively in `next.config.js`. Each option accepts an object whose keys are **route globs** (matched with [picomatch](https://www.npmjs.com/package/picomatch#basic-globbing) against the route path, e.g. `/api/hello`) and whose values are **glob patterns resolved from the project root** that specify files to include or exclude in the trace.
+-   There are some cases in which Next.js might fail to include required files, or might incorrectly include unused files. In those cases, you can leverage `outputFileTracingExcludes` and `outputFileTracingIncludes` respectively in `next.config.js`. Each option accepts an object whose keys are **route globs** (matched with [picomatch](https://www.npmjs.com/package/picomatch#basic-globbing) against the route path, e.g. `/api/hello`) and whose values are **glob patterns resolved from the project root** that specify files to include or exclude in the trace.
 
 > **Good to know**: In a monorepo, `project root` refers to the Next.js project root (the folder containing next.config.js, e.g., packages/web-app), not necessarily the monorepo root.
 
@@ -106,8 +107,8 @@ module.exports = {
 
 Using a `src/` directory does not change how you write these options:
 
-*   **Keys** still match the route path (`'/api/hello'`, `'/products/[id]'`, etc.).
-*   **Values** can reference paths under `src/` since they are resolved relative to the project root.
+-   **Keys** still match the route path (`'/api/hello'`, `'/products/[id]'`, etc.).
+-   **Values** can reference paths under `src/` since they are resolved relative to the project root.
 
 next.config.js
 
@@ -137,8 +138,8 @@ module.exports = {
 
 These options are applied to server traces and do not affect routes that do not produce a server trace file:
 
-*   Edge Runtime routes are not affected.
-*   Fully static pages are not affected.
+-   Edge Runtime routes are not affected.
+-   Fully static pages are not affected.
 
 In monorepos or when you need to include files outside the app folder, combine `outputFileTracingRoot` with includes:
 
@@ -158,8 +159,8 @@ module.exports = {
 
 > **Good to know**:
 > 
-> *   Prefer forward slashes (`/`) in patterns for cross-platform compatibility.
-> *   Keep patterns as narrow as possible to avoid oversized traces (avoid `**/*` at the repo root).
+> -   Prefer forward slashes (`/`) in patterns for cross-platform compatibility.
+> -   Keep patterns as narrow as possible to avoid oversized traces (avoid `**/*` at the repo root).
 
 Common include patterns for native/runtime assets:
 
@@ -173,20 +174,4 @@ module.exports = {
 }
 ```
 
-[Previous
-
-optimizePackageImports
-
-](/docs/app/api-reference/config/next-config-js/optimizePackageImports)
-
-[Next
-
-pageExtensions
-
-](/docs/app/api-reference/config/next-config-js/pageExtensions)
-
 Was this helpful?
-
-supported.
-
-Send

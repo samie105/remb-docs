@@ -5,18 +5,19 @@ canonical_url: "https://docs.deno.com/runtime/getting_started/installation/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:49:40.193Z"
-content_hash: "99045da1793d5ed81c41016bdb7c2553818e63a11ffdce738bb9657784796b3a"
+last_crawled_at: "2026-04-27T17:23:59.841Z"
+content_hash: "996d08feddc9c43e794f103e4373712a0601e6c77ddc92a5af6e78584fadba0e"
 menu_path: ["Installation"]
 section_path: []
+content_language: "en"
 ---
-On this page
+**On this page**
 
-*   [Download and install](#download-and-install)
-*   [Docker](#docker)
-*   [Testing your installation](#testing-your-installation)
-*   [Updating](#updating)
-*   [Building from source](#building-from-source)
+-   [Download and install](#download-and-install)
+-   [Docker](#docker)
+-   [Testing your installation](#testing-your-installation)
+-   [Updating](#updating)
+-   [Building from source](#building-from-source)
 
 Deno works on macOS, Linux, and Windows. Deno is a single binary executable. It has no external dependencies. On macOS, both M1 (arm64) and Intel (x64) executables are provided. On Windows, both ARM64 and x64 are supported. On Linux, only x64 is supported.
 

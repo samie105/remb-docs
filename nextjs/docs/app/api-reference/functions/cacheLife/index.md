@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/app/api-reference/functions/cacheLife"
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:11:12.503Z"
-content_hash: "c68be0f1600156497638a76f4e5e765fcda1a4138c54a870035cb1cae3f99e92"
+last_crawled_at: "2026-04-27T18:09:54.324Z"
+content_hash: "85ad0cdd1c2757aab481a2c480343b96431ec179f02387f695b426fbaa5b024e"
 menu_path: ["cacheLife"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/api-reference/functions/after/index.md", "title": "after"}
-nav_next: {"path": "nextjs/docs/app/api-reference/functions/cacheTag/index.md", "title": "cacheTag"}
+version: "latest"
+content_language: "en"
 ---
+[API Reference](/docs/app/api-reference)[Functions](/docs/app/api-reference/functions)cacheLife
 
 # cacheLife
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 The `cacheLife` function is used to set the cache lifetime of a function or component. It should be used alongside the [`use cache`](/docs/app/api-reference/directives/use-cache) directive, and within the scope of the function or component.
 
@@ -26,8 +27,6 @@ The `cacheLife` function is used to set the cache lifetime of a function or comp
 To use `cacheLife`, first enable the [`cacheComponents` flag](/docs/app/api-reference/config/next-config-js/cacheComponents) in your `next.config.js` file:
 
 next.config.ts
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -45,25 +44,25 @@ export default nextConfig
 
 > **Good to know**:
 > 
-> *   If used, `cacheLife` should be placed within the function whose output is being cached, even when the `use cache` directive is at file level
-> *   Only one `cacheLife` call should execute per function invocation. You can call `cacheLife` in different control flow branches, but ensure only one executes per run. See the [conditional cache lifetimes](#conditional-cache-lifetimes) example
+> -   If used, `cacheLife` should be placed within the function whose output is being cached, even when the `use cache` directive is at file level
+> -   Only one `cacheLife` call should execute per function invocation. You can call `cacheLife` in different control flow branches, but ensure only one executes per run. See the [conditional cache lifetimes](#conditional-cache-lifetimes) example
 
 ### Using preset profiles[](#using-preset-profiles)
 
 Next.js provides preset cache profiles that cover common caching needs. Each profile balances three factors:
 
-*   How long users see cached content without checking for updates (client-side)
-*   How often fresh content is generated on the server
-*   When old content expires completely
+-   How long users see cached content without checking for updates (client-side)
+-   How often fresh content is generated on the server
+-   When old content expires completely
 
 Choose a profile based on how frequently your content changes:
 
-*   **`seconds`** - Real-time data (stock prices, live scores)
-*   **`minutes`** - Frequently updated (social feeds, news)
-*   **`hours`** - Multiple daily updates (product inventory, weather)
-*   **`days`** - Daily updates (blog posts, articles)
-*   **`weeks`** - Weekly updates (podcasts, newsletters)
-*   **`max`** - Rarely changes (legal pages, archived content)
+-   **`seconds`** - Real-time data (stock prices, live scores)
+-   **`minutes`** - Frequently updated (social feeds, news)
+-   **`hours`** - Multiple daily updates (product inventory, weather)
+-   **`days`** - Daily updates (blog posts, articles)
+-   **`weeks`** - Weekly updates (podcasts, newsletters)
+-   **`max`** - Rarely changes (legal pages, archived content)
 
 Import `cacheLife` and pass a profile name:
 
@@ -89,9 +88,9 @@ The profile name tells Next.js how to cache the entire function's output. If you
 
 Cache profiles control caching behavior through three timing properties:
 
-*   **[`stale`](#stale)**: How long the client can use cached data without checking the server
-*   **[`revalidate`](#revalidate)**: After this time, the next request will trigger a background refresh
-*   **[`expire`](#expire)**: After this time with no requests, the next one waits for fresh content
+-   **[`stale`](#stale)**: How long the client can use cached data without checking the server
+-   **[`revalidate`](#revalidate)**: After this time, the next request will trigger a background refresh
+-   **[`expire`](#expire)**: After this time with no requests, the next one waits for fresh content
 
 #### `stale`[](#stale)
 
@@ -99,7 +98,7 @@ Cache profiles control caching behavior through three timing properties:
 
 During this time, the client-side router displays cached content immediately without any network request. After this period expires, the router must check with the server on the next navigation or request. This provides instant page loads from the client cache, but data may be outdated.
 
-*   If omitted, defaults to the `default` profile's `stale` value (5 minutes, see [`staleTimes`](/docs/app/api-reference/config/next-config-js/staleTimes))
+-   If omitted, defaults to the `default` profile's `stale` value (5 minutes, see [`staleTimes`](/docs/app/api-reference/config/next-config-js/staleTimes))
 
 ```
 cacheLife({ stale: 300 }) // 5 minutes
@@ -109,12 +108,12 @@ cacheLife({ stale: 300 }) // 5 minutes
 
 How often the server regenerates cached content in the background.
 
-*   When a request arrives after this period, the server:
+-   When a request arrives after this period, the server:
     1.  Serves the cached version immediately (if available)
     2.  Regenerates content in the background
     3.  Updates the cache with fresh content
-*   Similar to [Incremental Static Regeneration (ISR)](/docs/app/guides/incremental-static-regeneration)
-*   If omitted, defaults to the `default` profile's `revalidate` value (15 minutes)
+-   Similar to [Incremental Static Regeneration (ISR)](/docs/app/guides/incremental-static-regeneration)
+-   If omitted, defaults to the `default` profile's `revalidate` value (15 minutes)
 
 ```
 cacheLife({ revalidate: 900 }) // 15 minutes
@@ -124,9 +123,9 @@ cacheLife({ revalidate: 900 }) // 15 minutes
 
 Maximum time before the server must regenerate cached content.
 
-*   After this period with no traffic, the server regenerates content synchronously on the next request
-*   When you set both `revalidate` and `expire`, `expire` must be longer than `revalidate`. Next.js validates this and raises an error for invalid configurations.
-*   If omitted, defaults to the `default` profile's `expire` value (never expires)
+-   After this period with no traffic, the server regenerates content synchronously on the next request
+-   When you set both `revalidate` and `expire`, `expire` must be longer than `revalidate`. Next.js validates this and raises an error for invalid configurations.
+-   If omitted, defaults to the `default` profile's `expire` value (never expires)
 
 ```
 cacheLife({ expire: 3600 }) // 1 hour
@@ -136,85 +135,15 @@ cacheLife({ expire: 3600 }) // 1 hour
 
 If you don't specify a profile, Next.js uses the `default` profile. We recommend explicitly setting a profile to make caching behavior clear.
 
-**Profile**
-
-**Use Case**
-
-`stale`
-
-`revalidate`
-
-`expire`
-
-`default`
-
-Standard content
-
-5 minutes
-
-15 minutes
-
-never
-
-`seconds`
-
-Real-time data
-
-30 seconds
-
-1 second
-
-1 minute
-
-`minutes`
-
-Frequently updated content
-
-5 minutes
-
-1 minute
-
-1 hour
-
-`hours`
-
-Content updated multiple times per day
-
-5 minutes
-
-1 hour
-
-1 day
-
-`days`
-
-Content updated daily
-
-5 minutes
-
-1 day
-
-1 week
-
-`weeks`
-
-Content updated weekly
-
-5 minutes
-
-1 week
-
-30 days
-
-`max`
-
-Stable content that rarely changes
-
-5 minutes
-
-30 days
-
-1 year
+| **Profile** | **Use Case** | `stale` | `revalidate` | `expire` |
+| --- | --- | --- | --- | --- |
+| `default` | Standard content | 5 minutes | 15 minutes | never |
+| `seconds` | Real-time data | 30 seconds | 1 second | 1 minute |
+| `minutes` | Frequently updated content | 5 minutes | 1 minute | 1 hour |
+| `hours` | Content updated multiple times per day | 5 minutes | 1 hour | 1 day |
+| `days` | Content updated daily | 5 minutes | 1 day | 1 week |
+| `weeks` | Content updated weekly | 5 minutes | 1 week | 30 days |
+| `max` | Stable content that rarely changes | 5 minutes | 30 days | 1 year |
 
 ### Custom cache profiles[](#custom-cache-profiles)
 
@@ -310,9 +239,9 @@ Using `cacheLife({})` with an empty object applies the `default` profile values.
 
 The `stale` property controls the [Client Cache](/docs/app/glossary#client-cache), not the `Cache-Control` header:
 
-*   The server sends the stale time via the `x-nextjs-stale-time` response header
-*   The client router uses this value to determine when to revalidate
-*   **Minimum of 30 seconds is enforced** to ensure prefetched links remain usable
+-   The server sends the stale time via the `x-nextjs-stale-time` response header
+-   The client router uses this value to determine when to revalidate
+-   **Minimum of 30 seconds is enforced** to ensure prefetched links remain usable
 
 This 30-second minimum prevents prefetched data from expiring before users can click on links. It only applies to time-based expiration.
 
@@ -712,20 +641,4 @@ Learn how to use the cacheTag function to manage cache invalidation in your Next
 
 ](/docs/app/api-reference/functions/cacheTag)
 
-[Previous
-
-after
-
-](/docs/app/api-reference/functions/after)
-
-[Next
-
-cacheTag
-
-](/docs/app/api-reference/functions/cacheTag)
-
 Was this helpful?
-
-supported.
-
-Send

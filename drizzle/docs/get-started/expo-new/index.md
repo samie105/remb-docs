@@ -5,29 +5,19 @@ canonical_url: "https://orm.drizzle.team/docs/get-started/expo-new"
 docset: "drizzle"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:54:34.302Z"
-content_hash: "5236e116f66e7ce6730419d924b7c0f1362994505f648ac0c4a586b41a87d227"
+last_crawled_at: "2026-04-27T18:45:28.638Z"
+content_hash: "ddf63cfd09a9545dba79e7086468506883ca78526b1ca78c08e327d82ce61ac3"
 menu_path: ["Get Started with Drizzle and Expo"]
 section_path: []
-nav_prev: {"path": "drizzle/docs/get-started/expo-existing/index.md", "title": "Get Started with Drizzle and Expo in existing project"}
-nav_next: {"path": "drizzle/docs/get-started/gel-existing/index.md", "title": "Get Started with Drizzle and Gel in existing project"}
+content_language: "en"
 ---
-
 ## Get Started with Drizzle and Expo
 
 This guide assumes familiarity with:
 
-*   **Expo SQLite** - A library that provides access to a database that can be queried through a SQLite API - [read here](https://docs.expo.dev/versions/latest/sdk/sqlite/)
+-   **Expo SQLite** - A library that provides access to a database that can be queried through a SQLite API - [read here](https://docs.expo.dev/versions/latest/sdk/sqlite/)
 
 #### Step 1 - Setup a project from Expo Template[](#step-1---setup-a-project-from-expo-template)
-
-npm
-
-yarn
-
-pnpm
-
-bun
 
 ```
 npx create expo-app --template blank-typescript
@@ -51,7 +41,7 @@ You can read more about this template [here](https://docs.expo.dev/more/create-e
 
 After installing the template and adding the `db` folder, you’ll find the following content: In the `db/schema.ts` file with drizzle table definitions. The `drizzle` folder contains SQL migration files and snapshots
 
-```
+```plaintext
 📦 <project root>
  ├ 📂 assets
  ├ 📂 drizzle
@@ -68,14 +58,6 @@ After installing the template and adding the `db` folder, you’ll find the foll
 ```
 
 #### Step 2 - Install expo-sqlite package[](#step-2---install-expo-sqlite-package)
-
-npm
-
-yarn
-
-pnpm
-
-bun
 
 ```
 npx expo install expo-sqlite
@@ -94,14 +76,6 @@ bunx expo install expo-sqlite
 ```
 
 #### Step 3 - Install required packages[](#step-3---install-required-packages)
-
-npm
-
-yarn
-
-pnpm
-
-bun
 
 ```
 npm i drizzle-orm
@@ -127,7 +101,7 @@ bun add -D drizzle-kit
 
 Create a `App.tsx` file in the root directory and initialize the connection:
 
-```
+```ts
 import * as SQLite from 'expo-sqlite';
 import { drizzle } from 'drizzle-orm/expo-sqlite';
 
@@ -140,7 +114,7 @@ const db = drizzle(expo);
 
 Create a `schema.ts` file in the `db` directory and declare your table:
 
-```
+```typescript
 import { int, sqliteTable, text } from "drizzle-orm/sqlite-core";
 
 export const usersTable = sqliteTable("users_table", {
@@ -153,11 +127,11 @@ export const usersTable = sqliteTable("users_table", {
 
 #### Step 5 - Setup Drizzle config file[](#step-5---setup-drizzle-config-file)
 
-**Drizzle config** - a configuration file that is used by [Drizzle Kit](drizzle/docs/kit-overview/index.md) and contains all the information about your database connection, migration folder and schema files.
+**Drizzle config** - a configuration file that is used by [Drizzle Kit](https://orm.drizzle.team/docs/kit-overview) and contains all the information about your database connection, migration folder and schema files.
 
 Create a `drizzle.config.ts` file in the root of your project and add the following content:
 
-```
+```ts
 import { defineConfig } from 'drizzle-kit';
 
 export default defineConfig({
@@ -172,7 +146,7 @@ export default defineConfig({
 
 Create a file `metro.config.js` in root folder and add this code inside:
 
-```
+```js
 const { getDefaultConfig } = require('expo/metro-config');
 /** @type {import('expo/metro-config').MetroConfig} */
 const config = getDefaultConfig(__dirname);
@@ -182,7 +156,7 @@ module.exports = config;
 
 #### Step 7 - Update `babel` config[](#step-7---update-babel-config)
 
-```
+```js
 module.exports = function(api) {
   api.cache(true);
   return {
@@ -198,7 +172,7 @@ With Expo, you would need to generate migrations using the `drizzle-kit generate
 
 Generate migrations:
 
-```
+```bash
 npx drizzle-kit generate
 ```
 
@@ -206,7 +180,7 @@ npx drizzle-kit generate
 
 Let’s **App.tsx** file with migrations and queries to create, read, update, and delete users
 
-```
+```ts
 import { Text, View } from 'react-native';
 import * as SQLite from 'expo-sqlite';
 import { useEffect, useState } from 'react';
@@ -287,26 +261,18 @@ export default function App() {
 
 #### Step 10 - Prebuild and run expo app[](#step-10---prebuild-and-run-expo-app)
 
-npm
-
-yarn
-
-pnpm
-
-bun
-
-```
+```bash
 npx expo run:ios
 ```
 
-```
+```bash
 yarn expo run:ios
 ```
 
-```
+```bash
 pnpm expo run:ios
 ```
 
-```
+```bash
 bun expo run:ios
 ```

@@ -5,65 +5,76 @@ canonical_url: "https://tailwindcss.com/docs/border-radius"
 docset: "tailwind"
 kind: "framework"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:02:10.300Z"
-content_hash: "14937982c5d702f2269221dec5a1288c7d37bfbe44c1e1a2db66ededd6b20c28"
+last_crawled_at: "2026-04-27T20:18:05.644Z"
+content_hash: "210706cfa6481d8c655bb0a702f69e5e5c5e95129c0b437c31ab6cb3b04c6d5d"
 menu_path: ["border-radius"]
 section_path: []
-nav_prev: {"path": "tailwind/docs/background-size/index.md", "title": "background-size"}
-nav_next: {"path": "tailwind/docs/border-width/index.md", "title": "border-width"}
+content_language: "en"
 ---
+[](/)
+
+[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
+
+1.  Borders
+2.  border-radius
+
+Borders
 
 # border-radius
 
 Utilities for controlling the border radius of an element.
 
-Class
-
-Styles
-
-`rounded-xs`
-
+| Class | Styles |
+| --- | --- |
+| `rounded-xs` | 
 `border-radius: var(--radius-xs); /* 0.125rem (2px) */`
 
-`rounded-sm`
+ |
+| `rounded-sm` | 
 
 `border-radius: var(--radius-sm); /* 0.25rem (4px) */`
 
-`rounded-md`
+ |
+| `rounded-md` | 
 
 `border-radius: var(--radius-md); /* 0.375rem (6px) */`
 
-`rounded-lg`
+ |
+| `rounded-lg` | 
 
 `border-radius: var(--radius-lg); /* 0.5rem (8px) */`
 
-`rounded-xl`
+ |
+| `rounded-xl` | 
 
 `border-radius: var(--radius-xl); /* 0.75rem (12px) */`
 
-`rounded-2xl`
+ |
+| `rounded-2xl` | 
 
 `border-radius: var(--radius-2xl); /* 1rem (16px) */`
 
-`rounded-3xl`
+ |
+| `rounded-3xl` | 
 
 `border-radius: var(--radius-3xl); /* 1.5rem (24px) */`
 
-`rounded-4xl`
+ |
+| `rounded-4xl` | 
 
 `border-radius: var(--radius-4xl); /* 2rem (32px) */`
 
-`rounded-none`
+ |
+| `rounded-none` | 
 
 `border-radius: 0;`
 
-`rounded-full`
+ |
+| `rounded-full` | 
 
 `border-radius: calc(infinity * 1px);`
 
-## [Examples](#examples)
-
-### [Basic example](#basic-example)
+ |
 
 Use utilities like `rounded-sm` and `rounded-md` to apply different border radius sizes to an element:
 
@@ -79,8 +90,6 @@ rounded-xl
 <div class="rounded-sm ..."></div><div class="rounded-md ..."></div><div class="rounded-lg ..."></div><div class="rounded-xl ..."></div>
 ```
 
-### [Rounding sides separately](#rounding-sides-separately)
-
 Use utilities like `rounded-t-md` and `rounded-r-lg` to only round one side of an element:
 
 rounded-t-lg
@@ -94,8 +103,6 @@ rounded-l-lg
 ```
 <div class="rounded-t-lg ..."></div><div class="rounded-r-lg ..."></div><div class="rounded-b-lg ..."></div><div class="rounded-l-lg ..."></div>
 ```
-
-### [Rounding corners separately](#rounding-corners-separately)
 
 Use utilities like `rounded-tr-md` and `rounded-tl-lg` utilities to only round one corner of an element:
 
@@ -111,8 +118,6 @@ rounded-bl-lg
 <div class="rounded-tl-lg ..."></div><div class="rounded-tr-lg ..."></div><div class="rounded-br-lg ..."></div><div class="rounded-bl-lg ..."></div>
 ```
 
-### [Using logical properties](#using-logical-properties)
-
 Use utilities like `rounded-s-md` and `rounded-se-xl` to set the border radius using [logical properties](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Logical_Properties/Basic_concepts), which map to the appropriate corners based on the text direction:
 
 Left-to-right
@@ -125,51 +130,16 @@ Right-to-left
 
 Here are all the available border radius logical property utilities and their physical property equivalents in both LTR and RTL modes.
 
-Class
-
-Left-to-right
-
-Right-to-left
-
-`rounded-s-*`
-
-`rounded-l-*`
-
-`rounded-r-*`
-
-`rounded-e-*`
-
-`rounded-r-*`
-
-`rounded-l-*`
-
-`rounded-ss-*`
-
-`rounded-tl-*`
-
-`rounded-tr-*`
-
-`rounded-se-*`
-
-`rounded-tr-*`
-
-`rounded-tl-*`
-
-`rounded-es-*`
-
-`rounded-bl-*`
-
-`rounded-br-*`
-
-`rounded-ee-*`
-
-`rounded-br-*`
-
-`rounded-bl-*`
+| Class | Left-to-right | Right-to-left |
+| --- | --- | --- |
+| `rounded-s-*` | `rounded-l-*` | `rounded-r-*` |
+| `rounded-e-*` | `rounded-r-*` | `rounded-l-*` |
+| `rounded-ss-*` | `rounded-tl-*` | `rounded-tr-*` |
+| `rounded-se-*` | `rounded-tr-*` | `rounded-tl-*` |
+| `rounded-es-*` | `rounded-bl-*` | `rounded-br-*` |
+| `rounded-ee-*` | `rounded-br-*` | `rounded-bl-*` |
 
 For more control, you can also use the [LTR and RTL modifiers](/docs/hover-focus-and-other-states#rtl-support) to conditionally apply specific styles depending on the current text direction.
-
-### [Creating pill buttons](#creating-pill-buttons)
 
 Use the `rounded-full` utility to create pill buttons:
 
@@ -179,8 +149,6 @@ rounded-full
 <button class="rounded-full ...">Save Changes</button>
 ```
 
-### [Removing the border radius](#removing-the-border-radius)
-
 Use the `rounded-none` utility to remove an existing border radius from an element:
 
 rounded-none
@@ -188,8 +156,6 @@ rounded-none
 ```
 <button class="rounded-none ...">Save Changes</button>
 ```
-
-### [Using a custom value](#using-a-custom-value)
 
 Use the `rounded-[<value>]` syntax to set the border radius based on a completely custom value:
 
@@ -205,8 +171,6 @@ For CSS variables, you can also use the `rounded-(<custom-property>)` syntax:
 
 This is just a shorthand for `rounded-[var(<custom-property>)]` that adds the `var()` function for you automatically.
 
-### [Responsive design](#responsive-design)
-
 Prefix a `border-radius` utility with a breakpoint variant like `md:` to only apply the utility at medium screen sizes and above:
 
 ```
@@ -214,8 +178,6 @@ Prefix a `border-radius` utility with a breakpoint variant like `md:` to only ap
 ```
 
 Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
-
-## [Customizing your theme](#customizing-your-theme)
 
 Use the `--radius-*` theme variables to customize the border radius utilities in your project:
 
@@ -233,17 +195,17 @@ Learn more about customizing your theme in the [theme documentation](/docs/theme
 
 ### On this page
 
-*   [Quick reference](#quick-reference)
-*   [Examples](#examples)
-    *   [Basic example](#basic-example)
-    *   [Rounding sides separately](#rounding-sides-separately)
-    *   [Rounding corners separately](#rounding-corners-separately)
-    *   [Using logical properties](#using-logical-properties)
-    *   [Creating pill buttons](#creating-pill-buttons)
-    *   [Removing the border radius](#removing-the-border-radius)
-    *   [Using a custom value](#using-a-custom-value)
-    *   [Responsive design](#responsive-design)
-*   [Customizing your theme](#customizing-your-theme)
+-   [Quick reference](#quick-reference)
+-   [Examples](#examples)
+    -   [Basic example](#basic-example)
+    -   [Rounding sides separately](#rounding-sides-separately)
+    -   [Rounding corners separately](#rounding-corners-separately)
+    -   [Using logical properties](#using-logical-properties)
+    -   [Creating pill buttons](#creating-pill-buttons)
+    -   [Removing the border radius](#removing-the-border-radius)
+    -   [Using a custom value](#using-a-custom-value)
+    -   [Responsive design](#responsive-design)
+-   [Customizing your theme](#customizing-your-theme)
 
 ![Build UIs that don’t suck — 5-day mini-course](/_next/static/media/course-promo.d3d6bc78.jpg)
 

@@ -5,23 +5,21 @@ canonical_url: "https://orm.drizzle.team/docs/perf-queries"
 docset: "drizzle"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:18:02.368Z"
-content_hash: "3487e356829e68c954bb4f1372895c1d0b83173193cd856424f2ff29304f56c2"
+last_crawled_at: "2026-04-27T19:19:24.803Z"
+content_hash: "4bc1b97fa8a880896799cbf33286dee6c55e73fb4844037056bb27373209bdfb"
 menu_path: ["Query performance"]
 section_path: []
-nav_prev: {"path": "drizzle/docs/rqb/index.md", "title": "Drizzle Queries"}
-nav_next: {"path": "drizzle/docs/perf-serverless/index.md", "title": "Drizzle Serverless performance"}
+content_language: "en"
 ---
-
 ## Query performance
 
 When it comes to **Drizzle** — we’re a thin TypeScript layer on top of SQL with almost 0 overhead and to make it actual 0, you can utilise our prepared statements API.
 
 **When you run a query on the database, there are several things that happen:**
 
-*   all the configurations of the query builder got concatenated to the SQL string
-*   that string and params are sent to the database driver
-*   driver compiles SQL query to the binary SQL executable format and sends it to the database
+-   all the configurations of the query builder got concatenated to the SQL string
+-   that string and params are sent to the database driver
+-   driver compiles SQL query to the binary SQL executable format and sends it to the database
 
 With prepared statements you do SQL concatenation once on the Drizzle ORM side and then database driver is able to reuse precompiled binary SQL instead of parsing query all the time. It has extreme performance benefits on large SQL queries.
 
@@ -37,7 +35,7 @@ SQLite
 
 SingleStore
 
-```
+```typescript
 const db = drizzle(...);
 
 const prepared = db.select().from(customers).prepare("statement_name");
@@ -47,7 +45,7 @@ const res2 = await prepared.execute();
 const res3 = await prepared.execute();
 ```
 
-```
+```typescript
 const db = drizzle(...);
 
 const prepared = db.select().from(customers).prepare();
@@ -57,7 +55,7 @@ const res2 = await prepared.execute();
 const res3 = await prepared.execute();
 ```
 
-```
+```typescript
 const db = drizzle(...);
 
 const prepared = db.select().from(customers).prepare();
@@ -67,7 +65,7 @@ const res2 = prepared.all();
 const res3 = prepared.all();
 ```
 
-```
+```typescript
 const db = drizzle(...);
 
 const prepared = db.select().from(customers).prepare();
@@ -89,7 +87,7 @@ SQLite
 
 SingleStore
 
-```
+```ts
 import { sql } from "drizzle-orm";
 
 const p1 = db
@@ -110,7 +108,7 @@ const p2 = db
 await p2.execute({ name: '%an%' }) // SELECT * FROM customers WHERE name ilike '%an%'
 ```
 
-```
+```ts
 import { sql } from "drizzle-orm";
 
 const p1 = db
@@ -131,7 +129,7 @@ const p2 = db
 await p2.execute({ name: '%an%' }) // SELECT * FROM customers WHERE name ilike '%an%'
 ```
 
-```
+```ts
 import { sql } from "drizzle-orm";
 
 const p1 = db
@@ -152,7 +150,7 @@ const p2 = db
 p2.all({ name: '%an%' }) // SELECT * FROM customers WHERE name ilike '%an%'
 ```
 
-```
+```ts
 import { sql } from "drizzle-orm";
 
 const p1 = db

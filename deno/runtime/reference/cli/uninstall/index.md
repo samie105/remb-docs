@@ -5,17 +5,18 @@ canonical_url: "https://docs.deno.com/runtime/reference/cli/uninstall/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:56:40.658Z"
-content_hash: "7f56671d370507eb37ee7d124593a8ef8d4a55cdc61c41d1b3bc6209739e98c1"
+last_crawled_at: "2026-04-27T17:34:06.167Z"
+content_hash: "049aef7a844e34afb700af391cd0d671a81f73d062d168fe654e03034df36693"
 menu_path: ["deno uninstall"]
 section_path: []
+content_language: "en"
 ---
-On this page
+**On this page**
 
-*   [deno uninstall \[PACKAGES\]](#deno-uninstall-%5Bpackages%5D)
-*   [deno uninstall --global \[SCRIPT\_NAME\]](#deno-uninstall---global-%5Bscript_name%5D)
-*   [Options](#options)
-*   [Dependency management options](#dependency-management-options)
+-   [deno uninstall \[PACKAGES\]](#deno-uninstall-%5Bpackages%5D)
+-   [deno uninstall --global \[SCRIPT\_NAME\]](#deno-uninstall---global-%5Bscript_name%5D)
+-   [Options](#options)
+-   [Dependency management options](#dependency-management-options)
 
 ## `deno uninstall [PACKAGES]`
 
@@ -149,9 +150,9 @@ deno uninstall --global --root /usr/local serve
 
 The installation root is determined, in order of precedence:
 
-*   `--root` option
-*   `DENO_INSTALL_ROOT` environment variable
-*   `$HOME/.deno`
+-   `--root` option
+-   `DENO_INSTALL_ROOT` environment variable
+-   `$HOME/.deno`
 
 ## Options
 

@@ -5,27 +5,26 @@ canonical_url: "https://nextjs.org/docs/app/api-reference/functions/unauthorized
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:12:15.154Z"
-content_hash: "744413499acb6521bc25c544db88a51c8e578c3f39db39b91b3586653ba10fb7"
+last_crawled_at: "2026-04-27T18:10:59.063Z"
+content_hash: "3dee4dc850b9ec06901582387c25d342e190994d4ab38a41af5a91034d6e9627"
 menu_path: ["unauthorized"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/api-reference/functions/revalidateTag/index.md", "title": "revalidateTag"}
-nav_next: {"path": "nextjs/docs/app/api-reference/functions/unstable_cache/index.md", "title": "unstable_cache"}
+version: "latest"
+content_language: "en"
 ---
+[API Reference](/docs/app/api-reference)[Functions](/docs/app/api-reference/functions)unauthorized
 
 # unauthorized
 
 This feature is currently experimental and subject to change, it's not recommended for production. Try it out and share your feedback on [GitHub](https://github.com/vercel/next.js/issues).
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 The `unauthorized` function throws an error that renders a Next.js 401 error page. It's useful for handling authorization errors in your application. You can customize the UI using the [`unauthorized.js` file](/docs/app/api-reference/file-conventions/unauthorized).
 
 To start using `unauthorized`, enable the experimental [`authInterrupts`](/docs/app/api-reference/config/next-config-js/authInterrupts) configuration option in your `next.config.js` file:
 
 next.config.ts
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -44,8 +43,6 @@ export default nextConfig
 `unauthorized` can be invoked in [Server Components](/docs/app/getting-started/server-and-client-components), [Server Functions](/docs/app/getting-started/mutating-data), and [Route Handlers](/docs/app/api-reference/file-conventions/route).
 
 app/dashboard/page.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -72,7 +69,7 @@ export default async function DashboardPage() {
 
 ## Good to know[](#good-to-know)
 
-*   The `unauthorized` function cannot be called in the [root layout](/docs/app/api-reference/file-conventions/layout#root-layout).
+-   The `unauthorized` function cannot be called in the [root layout](/docs/app/api-reference/file-conventions/layout#root-layout).
 
 ## Examples[](#examples)
 
@@ -81,8 +78,6 @@ export default async function DashboardPage() {
 You can use `unauthorized` function to display the `unauthorized.js` file with a login UI.
 
 app/dashboard/page.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -102,8 +97,6 @@ export default async function DashboardPage() {
 ```
 
 app/unauthorized.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -126,8 +119,6 @@ export default function UnauthorizedPage() {
 You can invoke `unauthorized` in Server Actions to ensure only authenticated users can perform specific mutations.
 
 app/actions/update-profile.ts
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -157,8 +148,6 @@ You can use `unauthorized` in Route Handlers to ensure only authenticated users 
 
 app/api/profile/route.ts
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -182,13 +171,9 @@ export async function GET(req: NextRequest): Promise<NextResponse> {
 
 ## Version History[](#version-history)
 
-Version
-
-Changes
-
-`v15.1.0`
-
-`unauthorized` introduced.
+| Version | Changes |
+| --- | --- |
+| `v15.1.0` | `unauthorized` introduced. |
 
 [
 
@@ -198,20 +183,4 @@ API reference for the unauthorized.js special file.
 
 ](/docs/app/api-reference/file-conventions/unauthorized)
 
-[Previous
-
-revalidateTag
-
-](/docs/app/api-reference/functions/revalidateTag)
-
-[Next
-
-unstable\_cache
-
-](/docs/app/api-reference/functions/unstable_cache)
-
 Was this helpful?
-
-supported.
-
-Send

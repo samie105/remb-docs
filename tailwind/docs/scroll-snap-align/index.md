@@ -5,35 +5,13 @@ canonical_url: "https://tailwindcss.com/docs/scroll-snap-align"
 docset: "tailwind"
 kind: "framework"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:17:20.455Z"
-content_hash: "d160e3b0b18e58a6216be82bca5bf08ddcb135ca1e7f6b7c5eee72500bd4769d"
+last_crawled_at: "2026-04-27T20:39:43.328Z"
+content_hash: "ca457b8fd2e94c02de9022661e8ddce8c23d3af4120c4a7e8f5eba9d2fe80617"
 menu_path: ["scroll-snap-align"]
 section_path: []
-nav_prev: {"path": "tailwind/docs/scroll-padding/index.md", "title": "scroll-padding"}
-nav_next: {"path": "tailwind/docs/scroll-snap-stop/index.md", "title": "scroll-snap-stop"}
+content_language: "en"
 ---
-
 Utilities for controlling the scroll snap alignment of an element.
-
-Class
-
-Styles
-
-`snap-start`
-
-`scroll-snap-align: start;`
-
-`snap-end`
-
-`scroll-snap-align: end;`
-
-`snap-center`
-
-`scroll-snap-align: center;`
-
-`snap-align-none`
-
-`scroll-snap-align: none;`
 
 ## [Examples](#examples)
 
@@ -115,4 +93,4 @@ Prefix a `scroll-snap-align` utility with a breakpoint variant like `md:` to onl
 <div class="snap-center md:snap-start ...">  <!-- ... --></div>
 ```
 
-Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).
+Learn more about using variants in the [variants documentation](https://tailwindcss.com/docs/hover-focus-and-other-states).

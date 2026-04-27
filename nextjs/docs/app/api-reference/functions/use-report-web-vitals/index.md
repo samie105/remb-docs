@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/app/api-reference/functions/use-report-w
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:12:36.169Z"
-content_hash: "667d5513ada9490c359a01208f1f88499e56a194e714f07c790ea58d3f97c03c"
+last_crawled_at: "2026-04-27T18:11:18.544Z"
+content_hash: "3f3b333bdd47ea3db2e62b41f677a2b04dd090e70db2ba0d4801c41cf9d98ff5"
 menu_path: ["useReportWebVitals"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/api-reference/functions/use-pathname/index.md", "title": "usePathname"}
-nav_next: {"path": "nextjs/docs/app/api-reference/functions/use-router/index.md", "title": "useRouter"}
+version: "latest"
+content_language: "en"
 ---
+[API Reference](/docs/app/api-reference)[Functions](/docs/app/api-reference/functions)useReportWebVitals
 
 # useReportWebVitals
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 The `useReportWebVitals` hook allows you to report [Core Web Vitals](https://web.dev/vitals/), and can be used in combination with your analytics service.
 
@@ -62,30 +63,28 @@ export default function Layout({ children }) {
 
 The `metric` object passed as the hook's argument consists of a number of properties:
 
-*   `id`: Unique identifier for the metric in the context of the current page load
-*   `name`: The name of the performance metric. Possible values include names of [Web Vitals](#web-vitals) metrics (TTFB, FCP, LCP, FID, CLS) specific to a web application.
-*   `delta`: The difference between the current value and the previous value of the metric. The value is typically in milliseconds and represents the change in the metric's value over time.
-*   `entries`: An array of [Performance Entries](https://developer.mozilla.org/docs/Web/API/PerformanceEntry) associated with the metric. These entries provide detailed information about the performance events related to the metric.
-*   `navigationType`: Indicates the navigation type that triggered metric collection. Values are derived from [PerformanceNavigationTiming.type](https://developer.mozilla.org/docs/Web/API/PerformanceNavigationTiming/type) and may include `"navigate"`, `"reload"`, `"prerender"`, `"back-forward"` (normalized from `"back_forward"`), `"back-forward-cache"` (BFCache restore), and `"restore"` (page restored after discard).
-*   `rating`: A qualitative rating of the metric value, providing an assessment of the performance. Possible values are `"good"`, `"needs-improvement"`, and `"poor"`. The rating is typically determined by comparing the metric value against predefined thresholds that indicate acceptable or suboptimal performance.
-*   `value`: The actual value or duration of the performance entry, typically in milliseconds. The value provides a quantitative measure of the performance aspect being tracked by the metric. The source of the value depends on the specific metric being measured and can come from various [Performance API](https://developer.mozilla.org/docs/Web/API/Performance_API)s.
+-   `id`: Unique identifier for the metric in the context of the current page load
+-   `name`: The name of the performance metric. Possible values include names of [Web Vitals](#web-vitals) metrics (TTFB, FCP, LCP, FID, CLS) specific to a web application.
+-   `delta`: The difference between the current value and the previous value of the metric. The value is typically in milliseconds and represents the change in the metric's value over time.
+-   `entries`: An array of [Performance Entries](https://developer.mozilla.org/docs/Web/API/PerformanceEntry) associated with the metric. These entries provide detailed information about the performance events related to the metric.
+-   `navigationType`: Indicates the navigation type that triggered metric collection. Values are derived from [PerformanceNavigationTiming.type](https://developer.mozilla.org/docs/Web/API/PerformanceNavigationTiming/type) and may include `"navigate"`, `"reload"`, `"prerender"`, `"back-forward"` (normalized from `"back_forward"`), `"back-forward-cache"` (BFCache restore), and `"restore"` (page restored after discard).
+-   `rating`: A qualitative rating of the metric value, providing an assessment of the performance. Possible values are `"good"`, `"needs-improvement"`, and `"poor"`. The rating is typically determined by comparing the metric value against predefined thresholds that indicate acceptable or suboptimal performance.
+-   `value`: The actual value or duration of the performance entry, typically in milliseconds. The value provides a quantitative measure of the performance aspect being tracked by the metric. The source of the value depends on the specific metric being measured and can come from various [Performance API](https://developer.mozilla.org/docs/Web/API/Performance_API)s.
 
 ## Web Vitals[](#web-vitals)
 
 [Web Vitals](https://web.dev/vitals/) are a set of useful metrics that aim to capture the user experience of a web page. The following web vitals are all included:
 
-*   [Time to First Byte](https://developer.mozilla.org/docs/Glossary/Time_to_first_byte) (TTFB)
-*   [First Contentful Paint](https://developer.mozilla.org/docs/Glossary/First_contentful_paint) (FCP)
-*   [Largest Contentful Paint](https://web.dev/lcp/) (LCP)
-*   [First Input Delay](https://web.dev/fid/) (FID)
-*   [Cumulative Layout Shift](https://web.dev/cls/) (CLS)
-*   [Interaction to Next Paint](https://web.dev/inp/) (INP)
+-   [Time to First Byte](https://developer.mozilla.org/docs/Glossary/Time_to_first_byte) (TTFB)
+-   [First Contentful Paint](https://developer.mozilla.org/docs/Glossary/First_contentful_paint) (FCP)
+-   [Largest Contentful Paint](https://web.dev/lcp/) (LCP)
+-   [First Input Delay](https://web.dev/fid/) (FID)
+-   [Cumulative Layout Shift](https://web.dev/cls/) (CLS)
+-   [Interaction to Next Paint](https://web.dev/inp/) (INP)
 
 You can handle all the results of these metrics using the `name` property.
 
 app/components/web-vitals.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -149,20 +148,4 @@ useReportWebVitals(postWebVitals)
 > 
 > Read more about [sending results to Google Analytics](https://github.com/GoogleChrome/web-vitals#send-the-results-to-google-analytics).
 
-[Previous
-
-usePathname
-
-](/docs/app/api-reference/functions/use-pathname)
-
-[Next
-
-useRouter
-
-](/docs/app/api-reference/functions/use-router)
-
 Was this helpful?
-
-supported.
-
-Send

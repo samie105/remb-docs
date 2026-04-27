@@ -5,49 +5,56 @@ canonical_url: "https://tailwindcss.com/docs/aspect-ratio"
 docset: "tailwind"
 kind: "framework"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:39:51.121Z"
-content_hash: "ea346d141179e18920c9a9008942f15f2faed7e68bfd82be01e497d723baed81"
+last_crawled_at: "2026-04-27T19:50:32.011Z"
+content_hash: "7e501b09ce3b10f2792b05a74cb60a9a75001990861d003e2c26b63b94bd4bfd"
 menu_path: ["aspect-ratio"]
 section_path: []
-nav_prev: {"path": "tailwind/docs/preflight/index.md", "title": "Preflight"}
-nav_next: {"path": "tailwind/docs/columns/index.md", "title": "columns"}
+content_language: "en"
 ---
+[](/)
+
+[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
+
+1.  Layout
+2.  aspect-ratio
+
+Layout
 
 # aspect-ratio
 
 Utilities for controlling the aspect ratio of an element.
 
-Class
-
-Styles
-
-`aspect-<ratio>`
-
+| Class | Styles |
+| --- | --- |
+| `aspect-<ratio>` | 
 `aspect-ratio: <ratio>;`
 
-`aspect-square`
+ |
+| `aspect-square` | 
 
 `aspect-ratio: 1 / 1;`
 
-`aspect-video`
+ |
+| `aspect-video` | 
 
 `aspect-ratio: var(--aspect-video); /* 16 / 9 */`
 
-`aspect-auto`
+ |
+| `aspect-auto` | 
 
 `aspect-ratio: auto;`
 
-`aspect-(<custom-property>)`
+ |
+| `aspect-(<custom-property>)` | 
 
 `aspect-ratio: var(<custom-property>);`
 
-`aspect-[<value>]`
+ |
+| `aspect-[<value>]` | 
 
 `aspect-ratio: <value>;`
 
-## [Examples](#examples)
-
-### [Basic example](#basic-example)
+ |
 
 Use `aspect-<ratio>` utilities like `aspect-3/2` to give an element a specific aspect ratio:
 
@@ -59,8 +66,6 @@ Resize the example to see the expected behavior
 <img class="aspect-3/2 object-cover ..." src="/img/villas.jpg" />
 ```
 
-### [Using a video aspect ratio](#using-a-video-aspect-ratio)
-
 Use the `aspect-video` utility to give a video element a 16 / 9 aspect ratio:
 
 Resize the example to see the expected behavior
@@ -68,8 +73,6 @@ Resize the example to see the expected behavior
 ```
 <iframe class="aspect-video ..." src="https://www.youtube.com/embed/dQw4w9WgXcQ"></iframe>
 ```
-
-### [Using a custom value](#using-a-custom-value)
 
 Use the `aspect-[<value>]` syntax to set the aspect ratio based on a completely custom value:
 
@@ -85,8 +88,6 @@ For CSS variables, you can also use the `aspect-(<custom-property>)` syntax:
 
 This is just a shorthand for `aspect-[var(<custom-property>)]` that adds the `var()` function for you automatically.
 
-### [Responsive design](#responsive-design)
-
 Prefix an `aspect-ratio` utility with a breakpoint variant like `md:` to only apply the utility at medium screen sizes and above:
 
 ```
@@ -94,8 +95,6 @@ Prefix an `aspect-ratio` utility with a breakpoint variant like `md:` to only ap
 ```
 
 Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
-
-## [Customizing your theme](#customizing-your-theme)
 
 Use the `--aspect-*` theme variables to customize the aspect ratio utilities in your project:
 
@@ -113,26 +112,22 @@ Learn more about customizing your theme in the [theme documentation](/docs/theme
 
 ### On this page
 
-*   [Quick reference](#quick-reference)
-*   [Examples](#examples)
-    *   [Basic example](#basic-example)
-    *   [Using a video aspect ratio](#using-a-video-aspect-ratio)
-    *   [Using a custom value](#using-a-custom-value)
-    *   [Responsive design](#responsive-design)
-*   [Customizing your theme](#customizing-your-theme)
+-   [Quick reference](#quick-reference)
+-   [Examples](#examples)
+    -   [Basic example](#basic-example)
+    -   [Using a video aspect ratio](#using-a-video-aspect-ratio)
+    -   [Using a custom value](#using-a-custom-value)
+    -   [Responsive design](#responsive-design)
+-   [Customizing your theme](#customizing-your-theme)
 
-[
+![Build UIs that don’t suck — 5-day mini-course](/_next/static/media/course-promo.d3d6bc78.jpg)
 
-![Refactoring UI](/_next/static/media/book-promo.3012c0f6.png)
+5-day mini-course
 
-From the creators of Tailwind CSS
+Build UIs that don’t suck.
 
-Make your ideas look awesome, without relying on a designer.
+Short, tactical video lessons from the creator of Tailwind CSS, delivered directly to your inbox every day for a week.
 
-> “This is the survival kit I wish I had when I started building apps.”
-> 
-> Derrick Reimer, SavvyCal
-
-](https://www.refactoringui.com/?ref=sidebar)
+[Get the free course](/build-uis-that-dont-suck)
 
 Copyright © 2026 Tailwind Labs Inc.·[Trademark Policy](/brand)

@@ -5,10 +5,11 @@ canonical_url: "https://docs.deno.com/api/node/fs/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:36:18.813Z"
-content_hash: "a97a96909fbf4ccb8fa8bf7fbe07a0ae67c95dd733ae7d5c21a4ccf84ec564eb"
+last_crawled_at: "2026-04-27T17:06:46.692Z"
+content_hash: "fb7ccbf0036a53f6db3b8153684ed5e012ae8a7ad39c801159db847d5cb2dbf7"
 menu_path: ["fs - Node documentation"]
 section_path: []
+content_language: "en"
 ---
 ### Usage in Deno
 
@@ -32,19 +33,17 @@ import * as fs from 'node:fs';
 
 All file system operations have synchronous, callback, and promise-based forms, and are accessible using both CommonJS syntax and ES6 Modules (ESM).
 
-### Classes [#](#Classes)
-
 c
 
 [Dir](.././fs/~/Dir "Dir")
 
 A class representing a directory stream.
 
-*   [close](.././fs/~/Dir#method_close_0)
-*   [closeSync](.././fs/~/Dir#method_closesync_0)
-*   [path](.././fs/~/Dir#property_path)
-*   [read](.././fs/~/Dir#method_read_0)
-*   [readSync](.././fs/~/Dir#method_readsync_0)
+-   [close](.././fs/~/Dir#method_close_0)
+-   [closeSync](.././fs/~/Dir#method_closesync_0)
+-   [path](.././fs/~/Dir#property_path)
+-   [read](.././fs/~/Dir#method_read_0)
+-   [readSync](.././fs/~/Dir#method_readsync_0)
 
 c
 
@@ -52,16 +51,16 @@ c
 
 A representation of a directory entry, which can be a file or a subdirectory within the directory, as returned by reading from an `fs.Dir`. The directory entry is a combination of the file name and file type pairs.
 
-*   [isBlockDevice](.././fs/~/Dirent#method_isblockdevice_0)
-*   [isCharacterDevice](.././fs/~/Dirent#method_ischaracterdevice_0)
-*   [isDirectory](.././fs/~/Dirent#method_isdirectory_0)
-*   [isFIFO](.././fs/~/Dirent#method_isfifo_0)
-*   [isFile](.././fs/~/Dirent#method_isfile_0)
-*   [isSocket](.././fs/~/Dirent#method_issocket_0)
-*   [isSymbolicLink](.././fs/~/Dirent#method_issymboliclink_0)
-*   [name](.././fs/~/Dirent#property_name)
-*   [parentPath](.././fs/~/Dirent#property_parentpath)
-*   [path](.././fs/~/Dirent#property_path)
+-   [isBlockDevice](.././fs/~/Dirent#method_isblockdevice_0)
+-   [isCharacterDevice](.././fs/~/Dirent#method_ischaracterdevice_0)
+-   [isDirectory](.././fs/~/Dirent#method_isdirectory_0)
+-   [isFIFO](.././fs/~/Dirent#method_isfifo_0)
+-   [isFile](.././fs/~/Dirent#method_isfile_0)
+-   [isSocket](.././fs/~/Dirent#method_issocket_0)
+-   [isSymbolicLink](.././fs/~/Dirent#method_issymboliclink_0)
+-   [name](.././fs/~/Dirent#property_name)
+-   [parentPath](.././fs/~/Dirent#property_parentpath)
+-   [path](.././fs/~/Dirent#property_path)
 
 c
 
@@ -69,33 +68,31 @@ c
 
 Instances of `fs.ReadStream` are created and returned using the [createReadStream](.././fs/~/createReadStream) function.
 
-*   [addListener](.././fs/~/ReadStream#method_addlistener_0)
-*   [bytesRead](.././fs/~/ReadStream#property_bytesread)
-*   [close](.././fs/~/ReadStream#method_close_0)
-*   [on](.././fs/~/ReadStream#method_on_0)
-*   [once](.././fs/~/ReadStream#method_once_0)
-*   [path](.././fs/~/ReadStream#property_path)
-*   [pending](.././fs/~/ReadStream#property_pending)
-*   [prependListener](.././fs/~/ReadStream#method_prependlistener_0)
-*   [prependOnceListener](.././fs/~/ReadStream#method_prependoncelistener_0)
+-   [addListener](.././fs/~/ReadStream#method_addlistener_0)
+-   [bytesRead](.././fs/~/ReadStream#property_bytesread)
+-   [close](.././fs/~/ReadStream#method_close_0)
+-   [on](.././fs/~/ReadStream#method_on_0)
+-   [once](.././fs/~/ReadStream#method_once_0)
+-   [path](.././fs/~/ReadStream#property_path)
+-   [pending](.././fs/~/ReadStream#property_pending)
+-   [prependListener](.././fs/~/ReadStream#method_prependlistener_0)
+-   [prependOnceListener](.././fs/~/ReadStream#method_prependoncelistener_0)
 
 c
 
 [WriteStream](.././fs/~/WriteStream "WriteStream")
 
-*   Extends `stream.Writable`
+-   Extends `stream.Writable`
 
-*   [addListener](.././fs/~/WriteStream#method_addlistener_0)
-*   [bytesWritten](.././fs/~/WriteStream#property_byteswritten)
-*   [close](.././fs/~/WriteStream#method_close_0)
-*   [on](.././fs/~/WriteStream#method_on_0)
-*   [once](.././fs/~/WriteStream#method_once_0)
-*   [path](.././fs/~/WriteStream#property_path)
-*   [pending](.././fs/~/WriteStream#property_pending)
-*   [prependListener](.././fs/~/WriteStream#method_prependlistener_0)
-*   [prependOnceListener](.././fs/~/WriteStream#method_prependoncelistener_0)
-
-### Functions [#](#Functions)
+-   [addListener](.././fs/~/WriteStream#method_addlistener_0)
+-   [bytesWritten](.././fs/~/WriteStream#property_byteswritten)
+-   [close](.././fs/~/WriteStream#method_close_0)
+-   [on](.././fs/~/WriteStream#method_on_0)
+-   [once](.././fs/~/WriteStream#method_once_0)
+-   [path](.././fs/~/WriteStream#property_path)
+-   [pending](.././fs/~/WriteStream#property_pending)
+-   [prependListener](.././fs/~/WriteStream#method_prependlistener_0)
+-   [prependOnceListener](.././fs/~/WriteStream#method_prependoncelistener_0)
 
 f
 
@@ -841,17 +838,15 @@ f
 
 No documentation available
 
-### Interfaces [#](#Interfaces)
-
 I
 
 [\_GlobOptions](.././fs/~/_GlobOptions "_GlobOptions")
 
 No documentation available
 
-*   [cwd](.././fs/~/_GlobOptions#property_cwd)
-*   [exclude](.././fs/~/_GlobOptions#property_exclude)
-*   [withFileTypes](.././fs/~/_GlobOptions#property_withfiletypes)
+-   [cwd](.././fs/~/_GlobOptions#property_cwd)
+-   [exclude](.././fs/~/_GlobOptions#property_exclude)
+-   [withFileTypes](.././fs/~/_GlobOptions#property_withfiletypes)
 
 I
 
@@ -859,7 +854,7 @@ I
 
 No documentation available
 
-*   [bigint](.././fs/~/BigIntOptions#property_bigint)
+-   [bigint](.././fs/~/BigIntOptions#property_bigint)
 
 I
 
@@ -867,10 +862,10 @@ I
 
 No documentation available
 
-*   [atimeNs](.././fs/~/BigIntStats#property_atimens)
-*   [birthtimeNs](.././fs/~/BigIntStats#property_birthtimens)
-*   [ctimeNs](.././fs/~/BigIntStats#property_ctimens)
-*   [mtimeNs](.././fs/~/BigIntStats#property_mtimens)
+-   [atimeNs](.././fs/~/BigIntStats#property_atimens)
+-   [birthtimeNs](.././fs/~/BigIntStats#property_birthtimens)
+-   [ctimeNs](.././fs/~/BigIntStats#property_ctimens)
+-   [mtimeNs](.././fs/~/BigIntStats#property_mtimens)
 
 I
 
@@ -884,7 +879,7 @@ I
 
 No documentation available
 
-*   [filter](.././fs/~/CopyOptions#method_filter_0)
+-   [filter](.././fs/~/CopyOptions#method_filter_0)
 
 I
 
@@ -892,13 +887,13 @@ I
 
 No documentation available
 
-*   [dereference](.././fs/~/CopyOptionsBase#property_dereference)
-*   [errorOnExist](.././fs/~/CopyOptionsBase#property_erroronexist)
-*   [force](.././fs/~/CopyOptionsBase#property_force)
-*   [mode](.././fs/~/CopyOptionsBase#property_mode)
-*   [preserveTimestamps](.././fs/~/CopyOptionsBase#property_preservetimestamps)
-*   [recursive](.././fs/~/CopyOptionsBase#property_recursive)
-*   [verbatimSymlinks](.././fs/~/CopyOptionsBase#property_verbatimsymlinks)
+-   [dereference](.././fs/~/CopyOptionsBase#property_dereference)
+-   [errorOnExist](.././fs/~/CopyOptionsBase#property_erroronexist)
+-   [force](.././fs/~/CopyOptionsBase#property_force)
+-   [mode](.././fs/~/CopyOptionsBase#property_mode)
+-   [preserveTimestamps](.././fs/~/CopyOptionsBase#property_preservetimestamps)
+-   [recursive](.././fs/~/CopyOptionsBase#property_recursive)
+-   [verbatimSymlinks](.././fs/~/CopyOptionsBase#property_verbatimsymlinks)
 
 I
 
@@ -906,7 +901,7 @@ I
 
 No documentation available
 
-*   [filter](.././fs/~/CopySyncOptions#method_filter_0)
+-   [filter](.././fs/~/CopySyncOptions#method_filter_0)
 
 I
 
@@ -914,7 +909,7 @@ I
 
 No documentation available
 
-*   [read](.././fs/~/CreateReadStreamFSImplementation#property_read)
+-   [read](.././fs/~/CreateReadStreamFSImplementation#property_read)
 
 I
 
@@ -922,8 +917,8 @@ I
 
 No documentation available
 
-*   [write](.././fs/~/CreateWriteStreamFSImplementation#property_write)
-*   [writev](.././fs/~/CreateWriteStreamFSImplementation#property_writev)
+-   [write](.././fs/~/CreateWriteStreamFSImplementation#property_write)
+-   [writev](.././fs/~/CreateWriteStreamFSImplementation#property_writev)
 
 I
 
@@ -931,8 +926,8 @@ I
 
 No documentation available
 
-*   [close](.././fs/~/FSImplementation#property_close)
-*   [open](.././fs/~/FSImplementation#property_open)
+-   [close](.././fs/~/FSImplementation#property_close)
+-   [open](.././fs/~/FSImplementation#property_open)
 
 I
 
@@ -940,14 +935,14 @@ I
 
 No documentation available
 
-*   [addListener](.././fs/~/FSWatcher#method_addlistener_0)
-*   [close](.././fs/~/FSWatcher#method_close_0)
-*   [on](.././fs/~/FSWatcher#method_on_0)
-*   [once](.././fs/~/FSWatcher#method_once_0)
-*   [prependListener](.././fs/~/FSWatcher#method_prependlistener_0)
-*   [prependOnceListener](.././fs/~/FSWatcher#method_prependoncelistener_0)
-*   [ref](.././fs/~/FSWatcher#method_ref_0)
-*   [unref](.././fs/~/FSWatcher#method_unref_0)
+-   [addListener](.././fs/~/FSWatcher#method_addlistener_0)
+-   [close](.././fs/~/FSWatcher#method_close_0)
+-   [on](.././fs/~/FSWatcher#method_on_0)
+-   [once](.././fs/~/FSWatcher#method_once_0)
+-   [prependListener](.././fs/~/FSWatcher#method_prependlistener_0)
+-   [prependOnceListener](.././fs/~/FSWatcher#method_prependoncelistener_0)
+-   [ref](.././fs/~/FSWatcher#method_ref_0)
+-   [unref](.././fs/~/FSWatcher#method_unref_0)
 
 I
 
@@ -961,7 +956,7 @@ I
 
 No documentation available
 
-*   [withFileTypes](.././fs/~/GlobOptionsWithFileTypes#property_withfiletypes)
+-   [withFileTypes](.././fs/~/GlobOptionsWithFileTypes#property_withfiletypes)
 
 I
 
@@ -969,7 +964,7 @@ I
 
 No documentation available
 
-*   [withFileTypes](.././fs/~/GlobOptionsWithoutFileTypes#property_withfiletypes)
+-   [withFileTypes](.././fs/~/GlobOptionsWithoutFileTypes#property_withfiletypes)
 
 I
 
@@ -977,8 +972,8 @@ I
 
 No documentation available
 
-*   [mode](.././fs/~/MakeDirectoryOptions#property_mode)
-*   [recursive](.././fs/~/MakeDirectoryOptions#property_recursive)
+-   [mode](.././fs/~/MakeDirectoryOptions#property_mode)
+-   [recursive](.././fs/~/MakeDirectoryOptions#property_recursive)
 
 I
 
@@ -986,7 +981,7 @@ I
 
 No documentation available
 
-*   [encoding](.././fs/~/ObjectEncodingOptions#property_encoding)
+-   [encoding](.././fs/~/ObjectEncodingOptions#property_encoding)
 
 I
 
@@ -994,7 +989,7 @@ I
 
 No documentation available
 
-*   [type](.././fs/~/OpenAsBlobOptions#property_type)
+-   [type](.././fs/~/OpenAsBlobOptions#property_type)
 
 I
 
@@ -1002,9 +997,9 @@ I
 
 No documentation available
 
-*   [bufferSize](.././fs/~/OpenDirOptions#property_buffersize)
-*   [encoding](.././fs/~/OpenDirOptions#property_encoding)
-*   [recursive](.././fs/~/OpenDirOptions#property_recursive)
+-   [bufferSize](.././fs/~/OpenDirOptions#property_buffersize)
+-   [encoding](.././fs/~/OpenDirOptions#property_encoding)
+-   [recursive](.././fs/~/OpenDirOptions#property_recursive)
 
 I
 
@@ -1012,12 +1007,12 @@ I
 
 No documentation available
 
-*   [autoClose](.././fs/promises/~/promises.CreateReadStreamOptions#property_autoclose)
-*   [emitClose](.././fs/promises/~/promises.CreateReadStreamOptions#property_emitclose)
-*   [encoding](.././fs/promises/~/promises.CreateReadStreamOptions#property_encoding)
-*   [end](.././fs/promises/~/promises.CreateReadStreamOptions#property_end)
-*   [highWaterMark](.././fs/promises/~/promises.CreateReadStreamOptions#property_highwatermark)
-*   [start](.././fs/promises/~/promises.CreateReadStreamOptions#property_start)
+-   [autoClose](.././fs/promises/~/promises.CreateReadStreamOptions#property_autoclose)
+-   [emitClose](.././fs/promises/~/promises.CreateReadStreamOptions#property_emitclose)
+-   [encoding](.././fs/promises/~/promises.CreateReadStreamOptions#property_encoding)
+-   [end](.././fs/promises/~/promises.CreateReadStreamOptions#property_end)
+-   [highWaterMark](.././fs/promises/~/promises.CreateReadStreamOptions#property_highwatermark)
+-   [start](.././fs/promises/~/promises.CreateReadStreamOptions#property_start)
 
 I
 
@@ -1025,12 +1020,12 @@ I
 
 No documentation available
 
-*   [autoClose](.././fs/promises/~/promises.CreateWriteStreamOptions#property_autoclose)
-*   [emitClose](.././fs/promises/~/promises.CreateWriteStreamOptions#property_emitclose)
-*   [encoding](.././fs/promises/~/promises.CreateWriteStreamOptions#property_encoding)
-*   [flush](.././fs/promises/~/promises.CreateWriteStreamOptions#property_flush)
-*   [highWaterMark](.././fs/promises/~/promises.CreateWriteStreamOptions#property_highwatermark)
-*   [start](.././fs/promises/~/promises.CreateWriteStreamOptions#property_start)
+-   [autoClose](.././fs/promises/~/promises.CreateWriteStreamOptions#property_autoclose)
+-   [emitClose](.././fs/promises/~/promises.CreateWriteStreamOptions#property_emitclose)
+-   [encoding](.././fs/promises/~/promises.CreateWriteStreamOptions#property_encoding)
+-   [flush](.././fs/promises/~/promises.CreateWriteStreamOptions#property_flush)
+-   [highWaterMark](.././fs/promises/~/promises.CreateWriteStreamOptions#property_highwatermark)
+-   [start](.././fs/promises/~/promises.CreateWriteStreamOptions#property_start)
 
 I
 
@@ -1038,8 +1033,8 @@ I
 
 No documentation available
 
-*   [eventType](.././fs/promises/~/promises.FileChangeInfo#property_eventtype)
-*   [filename](.././fs/promises/~/promises.FileChangeInfo#property_filename)
+-   [eventType](.././fs/promises/~/promises.FileChangeInfo#property_eventtype)
+-   [filename](.././fs/promises/~/promises.FileChangeInfo#property_filename)
 
 I
 
@@ -1047,26 +1042,26 @@ I
 
 No documentation available
 
-*   [appendFile](.././fs/promises/~/promises.FileHandle#method_appendfile_0)
-*   [chmod](.././fs/promises/~/promises.FileHandle#method_chmod_0)
-*   [chown](.././fs/promises/~/promises.FileHandle#method_chown_0)
-*   [close](.././fs/promises/~/promises.FileHandle#method_close_0)
-*   [createReadStream](.././fs/promises/~/promises.FileHandle#method_createreadstream_0)
-*   [createWriteStream](.././fs/promises/~/promises.FileHandle#method_createwritestream_0)
-*   [datasync](.././fs/promises/~/promises.FileHandle#method_datasync_0)
-*   [fd](.././fs/promises/~/promises.FileHandle#property_fd)
-*   [read](.././fs/promises/~/promises.FileHandle#method_read_0)
-*   [readFile](.././fs/promises/~/promises.FileHandle#method_readfile_0)
-*   [readLines](.././fs/promises/~/promises.FileHandle#method_readlines_0)
-*   [readableWebStream](.././fs/promises/~/promises.FileHandle#method_readablewebstream_0)
-*   [readv](.././fs/promises/~/promises.FileHandle#method_readv_0)
-*   [stat](.././fs/promises/~/promises.FileHandle#method_stat_0)
-*   [sync](.././fs/promises/~/promises.FileHandle#method_sync_0)
-*   [truncate](.././fs/promises/~/promises.FileHandle#method_truncate_0)
-*   [utimes](.././fs/promises/~/promises.FileHandle#method_utimes_0)
-*   [write](.././fs/promises/~/promises.FileHandle#method_write_0)
-*   [writeFile](.././fs/promises/~/promises.FileHandle#method_writefile_0)
-*   [writev](.././fs/promises/~/promises.FileHandle#method_writev_0)
+-   [appendFile](.././fs/promises/~/promises.FileHandle#method_appendfile_0)
+-   [chmod](.././fs/promises/~/promises.FileHandle#method_chmod_0)
+-   [chown](.././fs/promises/~/promises.FileHandle#method_chown_0)
+-   [close](.././fs/promises/~/promises.FileHandle#method_close_0)
+-   [createReadStream](.././fs/promises/~/promises.FileHandle#method_createreadstream_0)
+-   [createWriteStream](.././fs/promises/~/promises.FileHandle#method_createwritestream_0)
+-   [datasync](.././fs/promises/~/promises.FileHandle#method_datasync_0)
+-   [fd](.././fs/promises/~/promises.FileHandle#property_fd)
+-   [read](.././fs/promises/~/promises.FileHandle#method_read_0)
+-   [readFile](.././fs/promises/~/promises.FileHandle#method_readfile_0)
+-   [readLines](.././fs/promises/~/promises.FileHandle#method_readlines_0)
+-   [readableWebStream](.././fs/promises/~/promises.FileHandle#method_readablewebstream_0)
+-   [readv](.././fs/promises/~/promises.FileHandle#method_readv_0)
+-   [stat](.././fs/promises/~/promises.FileHandle#method_stat_0)
+-   [sync](.././fs/promises/~/promises.FileHandle#method_sync_0)
+-   [truncate](.././fs/promises/~/promises.FileHandle#method_truncate_0)
+-   [utimes](.././fs/promises/~/promises.FileHandle#method_utimes_0)
+-   [write](.././fs/promises/~/promises.FileHandle#method_write_0)
+-   [writeFile](.././fs/promises/~/promises.FileHandle#method_writefile_0)
+-   [writev](.././fs/promises/~/promises.FileHandle#method_writev_0)
 
 I
 
@@ -1074,10 +1069,10 @@ I
 
 No documentation available
 
-*   [buffer](.././fs/promises/~/promises.FileReadOptions#property_buffer)
-*   [length](.././fs/promises/~/promises.FileReadOptions#property_length)
-*   [offset](.././fs/promises/~/promises.FileReadOptions#property_offset)
-*   [position](.././fs/promises/~/promises.FileReadOptions#property_position)
+-   [buffer](.././fs/promises/~/promises.FileReadOptions#property_buffer)
+-   [length](.././fs/promises/~/promises.FileReadOptions#property_length)
+-   [offset](.././fs/promises/~/promises.FileReadOptions#property_offset)
+-   [position](.././fs/promises/~/promises.FileReadOptions#property_position)
 
 I
 
@@ -1085,8 +1080,8 @@ I
 
 No documentation available
 
-*   [buffer](.././fs/promises/~/promises.FileReadResult#property_buffer)
-*   [bytesRead](.././fs/promises/~/promises.FileReadResult#property_bytesread)
+-   [buffer](.././fs/promises/~/promises.FileReadResult#property_buffer)
+-   [bytesRead](.././fs/promises/~/promises.FileReadResult#property_bytesread)
 
 I
 
@@ -1094,8 +1089,8 @@ I
 
 No documentation available
 
-*   [flag](.././fs/promises/~/promises.FlagAndOpenMode#property_flag)
-*   [mode](.././fs/promises/~/promises.FlagAndOpenMode#property_mode)
+-   [flag](.././fs/promises/~/promises.FlagAndOpenMode#property_flag)
+-   [mode](.././fs/promises/~/promises.FlagAndOpenMode#property_mode)
 
 I
 
@@ -1103,7 +1098,7 @@ I
 
 No documentation available
 
-*   [type](.././fs/promises/~/promises.ReadableWebStreamOptions#property_type)
+-   [type](.././fs/promises/~/promises.ReadableWebStreamOptions#property_type)
 
 I
 
@@ -1111,7 +1106,7 @@ I
 
 No documentation available
 
-*   [buffer](.././fs/~/ReadAsyncOptions#property_buffer)
+-   [buffer](.././fs/~/ReadAsyncOptions#property_buffer)
 
 I
 
@@ -1119,8 +1114,8 @@ I
 
 No documentation available
 
-*   [end](.././fs/~/ReadStreamOptions#property_end)
-*   [fs](.././fs/~/ReadStreamOptions#property_fs)
+-   [end](.././fs/~/ReadStreamOptions#property_end)
+-   [fs](.././fs/~/ReadStreamOptions#property_fs)
 
 I
 
@@ -1128,9 +1123,9 @@ I
 
 No documentation available
 
-*   [length](.././fs/~/ReadSyncOptions#property_length)
-*   [offset](.././fs/~/ReadSyncOptions#property_offset)
-*   [position](.././fs/~/ReadSyncOptions#property_position)
+-   [length](.././fs/~/ReadSyncOptions#property_length)
+-   [offset](.././fs/~/ReadSyncOptions#property_offset)
+-   [position](.././fs/~/ReadSyncOptions#property_position)
 
 I
 
@@ -1138,8 +1133,8 @@ I
 
 No documentation available
 
-*   [buffers](.././fs/~/ReadVResult#property_buffers)
-*   [bytesRead](.././fs/~/ReadVResult#property_bytesread)
+-   [buffers](.././fs/~/ReadVResult#property_buffers)
+-   [bytesRead](.././fs/~/ReadVResult#property_bytesread)
 
 I
 
@@ -1147,9 +1142,9 @@ I
 
 No documentation available
 
-*   [maxRetries](.././fs/~/RmDirOptions#property_maxretries)
-*   [recursive](.././fs/~/RmDirOptions#property_recursive)
-*   [retryDelay](.././fs/~/RmDirOptions#property_retrydelay)
+-   [maxRetries](.././fs/~/RmDirOptions#property_maxretries)
+-   [recursive](.././fs/~/RmDirOptions#property_recursive)
+-   [retryDelay](.././fs/~/RmDirOptions#property_retrydelay)
 
 I
 
@@ -1157,10 +1152,10 @@ I
 
 No documentation available
 
-*   [force](.././fs/~/RmOptions#property_force)
-*   [maxRetries](.././fs/~/RmOptions#property_maxretries)
-*   [recursive](.././fs/~/RmOptions#property_recursive)
-*   [retryDelay](.././fs/~/RmOptions#property_retrydelay)
+-   [force](.././fs/~/RmOptions#property_force)
+-   [maxRetries](.././fs/~/RmOptions#property_maxretries)
+-   [recursive](.././fs/~/RmOptions#property_recursive)
+-   [retryDelay](.././fs/~/RmOptions#property_retrydelay)
 
 I
 
@@ -1168,7 +1163,7 @@ I
 
 No documentation available
 
-*   [bigint](.././fs/~/StatFsOptions#property_bigint)
+-   [bigint](.././fs/~/StatFsOptions#property_bigint)
 
 I
 
@@ -1176,7 +1171,7 @@ I
 
 No documentation available
 
-*   [bigint](.././fs/~/StatOptions#property_bigint)
+-   [bigint](.././fs/~/StatOptions#property_bigint)
 
 c
 
@@ -1192,31 +1187,31 @@ I
 
 No documentation available
 
-*   [atime](.././fs/~/StatsBase#property_atime)
-*   [atimeMs](.././fs/~/StatsBase#property_atimems)
-*   [birthtime](.././fs/~/StatsBase#property_birthtime)
-*   [birthtimeMs](.././fs/~/StatsBase#property_birthtimems)
-*   [blksize](.././fs/~/StatsBase#property_blksize)
-*   [blocks](.././fs/~/StatsBase#property_blocks)
-*   [ctime](.././fs/~/StatsBase#property_ctime)
-*   [ctimeMs](.././fs/~/StatsBase#property_ctimems)
-*   [dev](.././fs/~/StatsBase#property_dev)
-*   [gid](.././fs/~/StatsBase#property_gid)
-*   [ino](.././fs/~/StatsBase#property_ino)
-*   [isBlockDevice](.././fs/~/StatsBase#method_isblockdevice_0)
-*   [isCharacterDevice](.././fs/~/StatsBase#method_ischaracterdevice_0)
-*   [isDirectory](.././fs/~/StatsBase#method_isdirectory_0)
-*   [isFIFO](.././fs/~/StatsBase#method_isfifo_0)
-*   [isFile](.././fs/~/StatsBase#method_isfile_0)
-*   [isSocket](.././fs/~/StatsBase#method_issocket_0)
-*   [isSymbolicLink](.././fs/~/StatsBase#method_issymboliclink_0)
-*   [mode](.././fs/~/StatsBase#property_mode)
-*   [mtime](.././fs/~/StatsBase#property_mtime)
-*   [mtimeMs](.././fs/~/StatsBase#property_mtimems)
-*   [nlink](.././fs/~/StatsBase#property_nlink)
-*   [rdev](.././fs/~/StatsBase#property_rdev)
-*   [size](.././fs/~/StatsBase#property_size)
-*   [uid](.././fs/~/StatsBase#property_uid)
+-   [atime](.././fs/~/StatsBase#property_atime)
+-   [atimeMs](.././fs/~/StatsBase#property_atimems)
+-   [birthtime](.././fs/~/StatsBase#property_birthtime)
+-   [birthtimeMs](.././fs/~/StatsBase#property_birthtimems)
+-   [blksize](.././fs/~/StatsBase#property_blksize)
+-   [blocks](.././fs/~/StatsBase#property_blocks)
+-   [ctime](.././fs/~/StatsBase#property_ctime)
+-   [ctimeMs](.././fs/~/StatsBase#property_ctimems)
+-   [dev](.././fs/~/StatsBase#property_dev)
+-   [gid](.././fs/~/StatsBase#property_gid)
+-   [ino](.././fs/~/StatsBase#property_ino)
+-   [isBlockDevice](.././fs/~/StatsBase#method_isblockdevice_0)
+-   [isCharacterDevice](.././fs/~/StatsBase#method_ischaracterdevice_0)
+-   [isDirectory](.././fs/~/StatsBase#method_isdirectory_0)
+-   [isFIFO](.././fs/~/StatsBase#method_isfifo_0)
+-   [isFile](.././fs/~/StatsBase#method_isfile_0)
+-   [isSocket](.././fs/~/StatsBase#method_issocket_0)
+-   [isSymbolicLink](.././fs/~/StatsBase#method_issymboliclink_0)
+-   [mode](.././fs/~/StatsBase#property_mode)
+-   [mtime](.././fs/~/StatsBase#property_mtime)
+-   [mtimeMs](.././fs/~/StatsBase#property_mtimems)
+-   [nlink](.././fs/~/StatsBase#property_nlink)
+-   [rdev](.././fs/~/StatsBase#property_rdev)
+-   [size](.././fs/~/StatsBase#property_size)
+-   [uid](.././fs/~/StatsBase#property_uid)
 
 c
 
@@ -1232,13 +1227,13 @@ I
 
 No documentation available
 
-*   [bavail](.././fs/~/StatsFsBase#property_bavail)
-*   [bfree](.././fs/~/StatsFsBase#property_bfree)
-*   [blocks](.././fs/~/StatsFsBase#property_blocks)
-*   [bsize](.././fs/~/StatsFsBase#property_bsize)
-*   [ffree](.././fs/~/StatsFsBase#property_ffree)
-*   [files](.././fs/~/StatsFsBase#property_files)
-*   [type](.././fs/~/StatsFsBase#property_type)
+-   [bavail](.././fs/~/StatsFsBase#property_bavail)
+-   [bfree](.././fs/~/StatsFsBase#property_bfree)
+-   [blocks](.././fs/~/StatsFsBase#property_blocks)
+-   [bsize](.././fs/~/StatsFsBase#property_bsize)
+-   [ffree](.././fs/~/StatsFsBase#property_ffree)
+-   [files](.././fs/~/StatsFsBase#property_files)
+-   [type](.././fs/~/StatsFsBase#property_type)
 
 I
 
@@ -1252,7 +1247,7 @@ I
 
 No documentation available
 
-*   [throwIfNoEntry](.././fs/~/StatSyncOptions#property_throwifnoentry)
+-   [throwIfNoEntry](.././fs/~/StatSyncOptions#property_throwifnoentry)
 
 I
 
@@ -1260,8 +1255,8 @@ I
 
 Class: fs.StatWatcher
 
-*   [ref](.././fs/~/StatWatcher#method_ref_0)
-*   [unref](.././fs/~/StatWatcher#method_unref_0)
+-   [ref](.././fs/~/StatWatcher#method_ref_0)
+-   [unref](.././fs/~/StatWatcher#method_unref_0)
 
 I
 
@@ -1269,15 +1264,15 @@ I
 
 No documentation available
 
-*   [autoClose](.././fs/~/StreamOptions#property_autoclose)
-*   [emitClose](.././fs/~/StreamOptions#property_emitclose)
-*   [encoding](.././fs/~/StreamOptions#property_encoding)
-*   [fd](.././fs/~/StreamOptions#property_fd)
-*   [flags](.././fs/~/StreamOptions#property_flags)
-*   [highWaterMark](.././fs/~/StreamOptions#property_highwatermark)
-*   [mode](.././fs/~/StreamOptions#property_mode)
-*   [signal](.././fs/~/StreamOptions#property_signal)
-*   [start](.././fs/~/StreamOptions#property_start)
+-   [autoClose](.././fs/~/StreamOptions#property_autoclose)
+-   [emitClose](.././fs/~/StreamOptions#property_emitclose)
+-   [encoding](.././fs/~/StreamOptions#property_encoding)
+-   [fd](.././fs/~/StreamOptions#property_fd)
+-   [flags](.././fs/~/StreamOptions#property_flags)
+-   [highWaterMark](.././fs/~/StreamOptions#property_highwatermark)
+-   [mode](.././fs/~/StreamOptions#property_mode)
+-   [signal](.././fs/~/StreamOptions#property_signal)
+-   [start](.././fs/~/StreamOptions#property_start)
 
 I
 
@@ -1285,9 +1280,9 @@ I
 
 Watch for changes on `filename`. The callback `listener` will be called each time the file is accessed.
 
-*   [bigint](.././fs/~/WatchFileOptions#property_bigint)
-*   [interval](.././fs/~/WatchFileOptions#property_interval)
-*   [persistent](.././fs/~/WatchFileOptions#property_persistent)
+-   [bigint](.././fs/~/WatchFileOptions#property_bigint)
+-   [interval](.././fs/~/WatchFileOptions#property_interval)
+-   [persistent](.././fs/~/WatchFileOptions#property_persistent)
 
 I
 
@@ -1295,9 +1290,9 @@ I
 
 No documentation available
 
-*   [encoding](.././fs/~/WatchOptions#property_encoding)
-*   [persistent](.././fs/~/WatchOptions#property_persistent)
-*   [recursive](.././fs/~/WatchOptions#property_recursive)
+-   [encoding](.././fs/~/WatchOptions#property_encoding)
+-   [persistent](.././fs/~/WatchOptions#property_persistent)
+-   [recursive](.././fs/~/WatchOptions#property_recursive)
 
 I
 
@@ -1305,8 +1300,8 @@ I
 
 No documentation available
 
-*   [flush](.././fs/~/WriteStreamOptions#property_flush)
-*   [fs](.././fs/~/WriteStreamOptions#property_fs)
+-   [flush](.././fs/~/WriteStreamOptions#property_flush)
+-   [fs](.././fs/~/WriteStreamOptions#property_fs)
 
 I
 
@@ -1314,10 +1309,8 @@ I
 
 No documentation available
 
-*   [buffers](.././fs/~/WriteVResult#property_buffers)
-*   [bytesWritten](.././fs/~/WriteVResult#property_byteswritten)
-
-### Namespaces [#](#Namespaces)
+-   [buffers](.././fs/~/WriteVResult#property_buffers)
+-   [bytesWritten](.././fs/~/WriteVResult#property_byteswritten)
 
 N
 
@@ -1330,8 +1323,6 @@ N
 [promises](.././fs/~/promises "promises")
 
 The `fs/promises` API provides asynchronous file system methods that return promises.
-
-### Type Aliases [#](<#Type Aliases>)
 
 T
 
@@ -1440,8 +1431,6 @@ T
 [WriteStreamEvents](.././fs/~/WriteStreamEvents "WriteStreamEvents")
 
 The Keys are events of the WriteStream and the values are the functions that are called when the event is emitted.
-
-### Variables [#](#Variables)
 
 v
 

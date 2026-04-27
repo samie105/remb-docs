@@ -5,33 +5,23 @@ canonical_url: "https://orm.drizzle.team/docs/connect-effect-postgres"
 docset: "drizzle"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:38:41.095Z"
-content_hash: "d122230831f62526b9d3dfc7d8867bfe155f07f4e756f182e153cf083cdf69ae"
+last_crawled_at: "2026-04-27T18:28:35.098Z"
+content_hash: "4aaf0ef9d92729282d2bf5cbcfb7b58fd85f793ce4af0dca48e6b365525a6dcc"
 menu_path: ["Drizzle <> Effect Postgres"]
 section_path: []
-nav_prev: {"path": "drizzle/docs/connect-bun-sql/index.md", "title": "Drizzle <> Bun SQL"}
-nav_next: {"path": "drizzle/docs/connect-planetscale/index.md", "title": "Drizzle <> PlanetScale MySQL"}
+content_language: "en"
 ---
-
 WARNING
 
 This page explains concepts available on drizzle versions `1.0.0-beta.9` and higher.
 
 Effect is only available for PostgreSQL right now and soon be implemented for all other dialects
 
-On how to upgrade (read more [here](drizzle/docs/upgrade-v1/index.md))
+On how to upgrade (read more [here](https://orm.drizzle.team/docs/upgrade-v1))
 
 Drizzle has native support for Effect PostgreSQL connections with the `@effect/sql-pg` driver.
 
 #### Step 1 - Install packages[](#step-1---install-packages)
-
-npm
-
-yarn
-
-pnpm
-
-bun
 
 ```
 npm i drizzle-orm effect @effect/sql-pg pg
@@ -57,7 +47,7 @@ bun add -D drizzle-kit @types/pg
 
 Drizzle provides an Effect-native API that integrates with Effect’s service pattern. Use `PgDrizzle.makeWithDefaults()` to quickly create a Drizzle database instance with sensible defaults (no logging, no caching).
 
-```
+```typescript
 import 'dotenv/config';
 import * as PgDrizzle from 'drizzle-orm/effect-postgres';
 import { PgClient } from '@effect/sql-pg';
@@ -97,7 +87,7 @@ Effect.runPromise(program.pipe(Effect.provide(PgClientLive)));
 
 For larger applications, create a reusable DB layer that can be composed with other services. This follows Effect’s recommended pattern for dependency injection:
 
-```
+```typescript
 import * as PgDrizzle from 'drizzle-orm/effect-postgres';
 import { PgClient } from '@effect/sql-pg';
 import * as Context from 'effect/Context';
@@ -158,7 +148,7 @@ For more control over logging and caching, use `PgDrizzle.make()` directly and p
 
 By default, `makeWithDefaults()` uses a no-op logger (no logging). You can enable logging by providing a different `EffectLogger` implementation:
 
-```
+```typescript
 import * as PgDrizzle from 'drizzle-orm/effect-postgres';
 import { EffectLogger } from 'drizzle-orm/effect-postgres';
 import * as Effect from 'effect/Effect';
@@ -178,16 +168,16 @@ const program = Effect.gen(function*() {
 
 **Available logger options:**
 
-*   `EffectLogger.Default` - No-op logger (no logging occurs) - this is the default
-*   `EffectLogger.layer` - Logs queries using Effect’s `Effect.log()` with annotations for query SQL and parameters. Integrates with Effect’s logging infrastructure.
-*   `EffectLogger.fromDrizzle(logger)` - Wraps a Drizzle `Logger` instance for use with Effect
-*   `EffectLogger.layerFromDrizzle(logger)` - Creates an Effect Layer from a Drizzle logger
+-   `EffectLogger.Default` - No-op logger (no logging occurs) - this is the default
+-   `EffectLogger.layer` - Logs queries using Effect’s `Effect.log()` with annotations for query SQL and parameters. Integrates with Effect’s logging infrastructure.
+-   `EffectLogger.fromDrizzle(logger)` - Wraps a Drizzle `Logger` instance for use with Effect
+-   `EffectLogger.layerFromDrizzle(logger)` - Creates an Effect Layer from a Drizzle logger
 
 When using `EffectLogger.layer`, queries are logged via Effect’s logging system. You can configure the output format by providing a different Effect logger layer (e.g., `Logger.pretty` for development, `Logger.json` for production).
 
 **Using a Drizzle logger:**
 
-```
+```typescript
 import * as PgDrizzle from 'drizzle-orm/effect-postgres';
 import { EffectLogger } from 'drizzle-orm/effect-postgres';
 import * as Effect from 'effect/Effect';
@@ -210,7 +200,7 @@ const program = Effect.gen(function*() {
 
 Similarly, you can provide a custom cache implementation:
 
-```
+```typescript
 import * as PgDrizzle from 'drizzle-orm/effect-postgres';
 import { EffectLogger } from 'drizzle-orm/effect-postgres';
 import { EffectCache } from 'drizzle-orm/cache/core/cache-effect';
@@ -232,8 +222,8 @@ const program = Effect.gen(function*() {
 
 **Available cache options:**
 
-*   `EffectCache.Default` - No-op cache (no caching occurs) - this is the default
-*   `EffectCache.fromDrizzle(cache)` - Wraps a Drizzle `Cache` instance for use with Effect
-*   `EffectCache.layerFromDrizzle(cache)` - Creates an Effect Layer from a Drizzle cache (useful for composing with other layers)
+-   `EffectCache.Default` - No-op cache (no caching occurs) - this is the default
+-   `EffectCache.fromDrizzle(cache)` - Wraps a Drizzle `Cache` instance for use with Effect
+-   `EffectCache.layerFromDrizzle(cache)` - Creates an Effect Layer from a Drizzle cache (useful for composing with other layers)
 
 #### What’s next?[](#whats-next)

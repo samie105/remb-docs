@@ -5,19 +5,17 @@ canonical_url: "https://orm.drizzle.team/docs/guides/point-datatype-psql"
 docset: "drizzle"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:05:49.343Z"
-content_hash: "6444d59251786d452eea0b8cc75a12ccf3766e6bc454c215bcab85d5d3f6564b"
+last_crawled_at: "2026-04-27T19:01:27.179Z"
+content_hash: "1d373c5644db973a705fe6e24b5f4683f04a9e583fefda5f503c71b8be622f4c"
 menu_path: ["Drizzle ORM - Point datatype in PostgreSQL"]
 section_path: []
-nav_prev: {"path": "drizzle/docs/guides/mysql-local-setup/index.md", "title": "Drizzle ORM - How to setup MySQL locally"}
-nav_next: {"path": "drizzle/docs/guides/postgis-geometry-point/index.md", "title": "Drizzle ORM - PostGIS geometry point"}
+content_language: "en"
 ---
-
 Drizzle | Point datatype in PostgreSQL
 
 PostgreSQL has a special datatype to store geometric data called `point`. It is used to represent a point in a two-dimensional space. The point datatype is represented as a pair of `(x, y)` coordinates. The point expects to receive longitude first, followed by latitude.
 
-```
+```ts
 import { sql } from 'drizzle-orm';
 
 const db = drizzle(...);
@@ -27,7 +25,7 @@ await db.execute(
 );
 ```
 
-```
+```json
 [ 
   { 
     point: '(-90.9,18.7)' 
@@ -37,7 +35,7 @@ await db.execute(
 
 This is how you can create table with `point` datatype in Drizzle:
 
-```
+```ts
 import { pgTable, point, serial, text } from 'drizzle-orm/pg-core';
 
 export const stores = pgTable('stores', {
@@ -49,7 +47,7 @@ export const stores = pgTable('stores', {
 
 This is how you can insert point data into the table in Drizzle:
 
-```
+```ts
 // mode: 'xy'
 await db.insert(stores).values({
   name: 'Test',
@@ -73,11 +71,11 @@ To compute the distance between the objects you can use `<->` operator. This is 
 
 IMPORTANT
 
-`getColumns` available starting from `drizzle-orm@1.0.0-beta.2`(read more [here](drizzle/docs/upgrade-v1/index.md))
+`getColumns` available starting from `drizzle-orm@1.0.0-beta.2`(read more [here](https://orm.drizzle.team/docs/upgrade-v1))
 
 If you are on pre-1 version(like `0.45.1`) then use `getTableColumns`
 
-```
+```ts
 import { getColumns, sql } from 'drizzle-orm';
 import { stores } from './schema';
 
@@ -98,7 +96,7 @@ await db
   .limit(1);
 ```
 
-```
+```sql
 select *, round((location <-> point(-73.935242, 40.73061))::numeric, 2)
 from stores order by location <-> point(-73.935242, 40.73061)
 limit 1;
@@ -106,7 +104,7 @@ limit 1;
 
 To filter rows to include only those where a `point` type `location` falls within a specified rectangular boundary defined by two diagonal points you can user `<@` operator. It checks if the first object is contained in or on the second object:
 
-```
+```ts
 const point = {
   x1: -88,
   x2: -73,
@@ -122,6 +120,6 @@ await db
   );
 ```
 
-```
+```sql
 select * from stores where location <@ box(point(-88, 40), point(-73, 43));
 ```

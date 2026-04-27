@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/app/api-reference/functions/permanentRed
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:12:00.798Z"
-content_hash: "55c4778b3f9c5217e42b949ddf9ba1284bc6e368eef185cfb07b87e4102c8bb8"
+last_crawled_at: "2026-04-27T18:10:43.583Z"
+content_hash: "d0e9e939e033801bd113ad3968a17dc13da895c9c9f216fd5cd3fac443a28c26"
 menu_path: ["permanentRedirect"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/api-reference/functions/not-found/index.md", "title": "notFound"}
-nav_next: {"path": "nextjs/docs/app/api-reference/functions/redirect/index.md", "title": "redirect"}
+version: "latest"
+content_language: "en"
 ---
+[API Reference](/docs/app/api-reference)[Functions](/docs/app/api-reference/functions)permanentRedirect
 
 # permanentRedirect
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 The `permanentRedirect` function allows you to redirect the user to another URL. `permanentRedirect` can be used in Server Components, Client Components, [Route Handlers](/docs/app/api-reference/file-conventions/route), and [Server Functions](/docs/app/getting-started/mutating-data).
 
@@ -33,23 +34,10 @@ The `permanentRedirect` function accepts two arguments:
 permanentRedirect(path, type)
 ```
 
-Parameter
-
-Type
-
-Description
-
-`path`
-
-`string`
-
-The URL to redirect to. Can be a relative or absolute path.
-
-`type`
-
-`'replace'` (default) or `'push'` (default in Server Actions)
-
-The type of redirect to perform.
+| Parameter | Type | Description |
+| --- | --- | --- |
+| `path` | `string` | The URL to redirect to. Can be a relative or absolute path. |
+| `type` | `'replace'` (default) or `'push'` (default in Server Actions) | The type of redirect to perform. |
 
 By default, `permanentRedirect` will use `push` (adding a new entry to the browser history stack) in [Server Actions](/docs/app/getting-started/mutating-data) and `replace` (replacing the current URL in the browser history stack) everywhere else. You can override this behavior by specifying the `type` parameter.
 
@@ -105,20 +93,4 @@ API Reference for the redirect function.
 
 ](/docs/app/api-reference/functions/redirect)
 
-[Previous
-
-notFound
-
-](/docs/app/api-reference/functions/not-found)
-
-[Next
-
-redirect
-
-](/docs/app/api-reference/functions/redirect)
-
 Was this helpful?
-
-supported.
-
-Send

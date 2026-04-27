@@ -5,56 +5,29 @@ canonical_url: "https://www.prisma.io/docs/orm/more/troubleshooting/typescript-p
 docset: "prisma"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:44:17.351Z"
-content_hash: "9a6ae3cbc2239f1cc634e284c41227581703a2e2809e382d2693a96301810ca7"
+last_crawled_at: "2026-04-27T19:37:55.808Z"
+content_hash: "e78bd01f96cf7c41410799dd058de1c2feece3a2e7a76d56374e1d9b3b44150e"
 menu_path: ["TypeScript performance"]
 section_path: []
-nav_prev: {"path": "prisma/docs/orm/more/troubleshooting/raw-sql-comparisons/index.md", "title": "Raw SQL comparisons"}
-nav_next: {"path": "prisma/docs/orm/prisma-client/client-extensions/index.md", "title": "What are Client Extensions"}
+content_language: "en"
 ---
-
 Troubleshooting
 
 Optimize TypeScript compilation performance when working with large Prisma schemas
 
 When working with large database schemas, a simple change in type definition strategy can deliver massive performance improvements:
 
-Approach
-
-Types
-
-Instantiations
-
-Memory
-
-Compile Time
-
-**Direct Reference**
-
-269,597
-
-2,772,929
-
-395MB
-
-1.86s
-
-**typeof technique**
-
-222 (**99.9% reduction**)
-
-152 (**99.9% reduction**)
-
-147MB (**62% reduction**)
-
-0.41s (**78% reduction**)
+| Approach | Types | Instantiations | Memory | Compile Time |
+| --- | --- | --- | --- | --- |
+| **Direct Reference** | 269,597 | 2,772,929 | 395MB | 1.86s |
+| **typeof technique** | 222 (**99.9% reduction**) | 152 (**99.9% reduction**) | 147MB (**62% reduction**) | 0.41s (**78% reduction**) |
 
 In enterprise applications with extensive database schemas, Prisma's generated types can become enormous. A schema with 50+ tables and deep relationships can lead to:
 
-*   Compilation times exceeding several minutes
-*   High memory usage during type checking
-*   IDE responsiveness degrading significantly
-*   CI/CD pipelines timing out on type checks
+-   Compilation times exceeding several minutes
+-   High memory usage during type checking
+-   IDE responsiveness degrading significantly
+-   CI/CD pipelines timing out on type checks
 
 Use TypeScript's `typeof` operator instead of direct type references when defining function parameters that accept PrismaClient instances.
 
@@ -93,5 +66,3 @@ The `typeof` operator creates a more efficient type resolution path:
 When working with large Prisma schemas, the choice between direct type references and type queries becomes crucial for maintaining development velocity. The 78% compilation time reduction demonstrated here scales exponentially with schema complexity.
 
 The complete benchmark code is available at: [https://github.com/ToyB0x/ts-bench/pull/211](https://github.com/ToyB0x/ts-bench/pull/211)
-
-[Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/more/troubleshooting/typescript-performance.mdx)

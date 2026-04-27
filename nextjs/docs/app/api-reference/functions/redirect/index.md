@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/app/api-reference/functions/redirect"
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:12:03.788Z"
-content_hash: "cf14fdb0d4ae326c9c28e0776df223154209fc2e081de6cd33c1e58191c75b1b"
+last_crawled_at: "2026-04-27T18:10:48.048Z"
+content_hash: "3566b2e3c8b346066b1006136e23295bb4e942fbae61597a081f111f6bcb68fa"
 menu_path: ["redirect"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/api-reference/functions/permanentRedirect/index.md", "title": "permanentRedirect"}
-nav_next: {"path": "nextjs/docs/app/api-reference/functions/refresh/index.md", "title": "refresh"}
+version: "latest"
+content_language: "en"
 ---
+[API Reference](/docs/app/api-reference)[Functions](/docs/app/api-reference/functions)redirect
 
 # redirect
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 The `redirect` function allows you to redirect the user to another URL. `redirect` can be used while rendering in [Server and Client Components](/docs/app/getting-started/server-and-client-components), [Route Handlers](/docs/app/api-reference/file-conventions/route), and [Server Functions](/docs/app/getting-started/mutating-data).
 
@@ -33,23 +34,10 @@ The `redirect` function accepts two arguments:
 redirect(path, type)
 ```
 
-Parameter
-
-Type
-
-Description
-
-`path`
-
-`string`
-
-The URL to redirect to. Can be a relative or absolute path.
-
-`type`
-
-`'replace'` (default) or `'push'` (default in Server Actions)
-
-The type of redirect to perform.
+| Parameter | Type | Description |
+| --- | --- | --- |
+| `path` | `string` | The URL to redirect to. Can be a relative or absolute path. |
+| `type` | `'replace'` (default) or `'push'` (default in Server Actions) | The type of redirect to perform. |
 
 By default, `redirect` will use `push` (adding a new entry to the browser history stack) in [Server Actions](/docs/app/getting-started/mutating-data) and `replace` (replacing the current URL in the browser history stack) everywhere else. You can override this behavior by specifying the `type` parameter.
 
@@ -71,12 +59,12 @@ The `type` parameter has no effect when used in Server Components.
 
 ## Behavior[](#behavior)
 
-*   In Server Actions and Route Handlers, redirect should be called **outside** the `try` block when using `try/catch` statements.
-*   If you prefer to return a 308 (Permanent) HTTP redirect instead of 307 (Temporary), you can use the [`permanentRedirect` function](/docs/app/api-reference/functions/permanentRedirect) instead.
-*   `redirect` throws an error so it should be called **outside** the `try` block when using `try/catch` statements.
-*   `redirect` can be called in Client Components during the rendering process but not in event handlers. You can use the [`useRouter` hook](/docs/app/api-reference/functions/use-router) instead.
-*   `redirect` also accepts absolute URLs and can be used to redirect to external links.
-*   If you'd like to redirect before the render process, use [`next.config.js`](/docs/app/guides/redirecting#redirects-in-nextconfigjs) or [Proxy](/docs/app/guides/redirecting#nextresponseredirect-in-proxy).
+-   In Server Actions and Route Handlers, redirect should be called **outside** the `try` block when using `try/catch` statements.
+-   If you prefer to return a 308 (Permanent) HTTP redirect instead of 307 (Temporary), you can use the [`permanentRedirect` function](/docs/app/api-reference/functions/permanentRedirect) instead.
+-   `redirect` throws an error so it should be called **outside** the `try` block when using `try/catch` statements.
+-   `redirect` can be called in Client Components during the rendering process but not in event handlers. You can use the [`useRouter` hook](/docs/app/api-reference/functions/use-router) instead.
+-   `redirect` also accepts absolute URLs and can be used to redirect to external links.
+-   If you'd like to redirect before the render process, use [`next.config.js`](/docs/app/guides/redirecting#redirects-in-nextconfigjs) or [Proxy](/docs/app/guides/redirecting#nextresponseredirect-in-proxy).
 
 ## Example[](#example)
 
@@ -85,8 +73,6 @@ The `type` parameter has no effect when used in Server Components.
 Invoking the `redirect()` function throws a `NEXT_REDIRECT` error and terminates rendering of the route segment in which it was thrown.
 
 app/team/\[id\]/page.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -123,8 +109,6 @@ export default async function Profile({
 
 components/client-redirect.tsx
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -149,8 +133,6 @@ export function ClientRedirect() {
 
 app/client-redirect.tsx
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -169,8 +151,6 @@ export function ClientRedirect() {
 ```
 
 app/actions.ts
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -194,8 +174,8 @@ Taking the following example of a redirect from `/users` to `/people`, if you ma
 
 The introduction of the `307` status code means that the request method is preserved as `POST`.
 
-*   `302` - Temporary redirect, will change the request method from `POST` to `GET`
-*   `307` - Temporary redirect, will preserve the request method as `POST`
+-   `302` - Temporary redirect, will change the request method from `POST` to `GET`
+-   `307` - Temporary redirect, will preserve the request method as `POST`
 
 The `redirect()` method uses a `307` by default, instead of a `302` temporary redirect, meaning your requests will _always_ be preserved as `POST` requests.
 
@@ -203,13 +183,9 @@ The `redirect()` method uses a `307` by default, instead of a `302` temporary re
 
 ## Version History[](#version-history)
 
-Version
-
-Changes
-
-`v13.0.0`
-
-`redirect` introduced.
+| Version | Changes |
+| --- | --- |
+| `v13.0.0` | `redirect` introduced. |
 
 [
 
@@ -219,20 +195,4 @@ API Reference for the permanentRedirect function.
 
 ](/docs/app/api-reference/functions/permanentRedirect)
 
-[Previous
-
-permanentRedirect
-
-](/docs/app/api-reference/functions/permanentRedirect)
-
-[Next
-
-refresh
-
-](/docs/app/api-reference/functions/refresh)
-
 Was this helpful?
-
-supported.
-
-Send

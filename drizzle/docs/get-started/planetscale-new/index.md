@@ -5,34 +5,32 @@ canonical_url: "https://orm.drizzle.team/docs/get-started/planetscale-new"
 docset: "drizzle"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:58:17.130Z"
-content_hash: "62a39d022bbc8ed3f92e525f29a8608a8c89f4397fbb8488cab8effe5adb1d24"
+last_crawled_at: "2026-04-27T18:50:02.866Z"
+content_hash: "4e0ccbd46bdf62449f99abf41ae93ba1347eb7c85d18d77dafb34d02d7b8092e"
 menu_path: ["Get Started with Drizzle and PlanetScale"]
 section_path: []
-nav_prev: {"path": "drizzle/docs/get-started/planetscale-existing/index.md", "title": "Get Started with Drizzle and PlanetScale in existing project"}
-nav_next: {"path": "drizzle/docs/get-started/planetscale-postgres-existing/index.md", "title": "Get Started with Drizzle and PlanetScale Postgres in existing project"}
+content_language: "en"
 ---
-
 ## Get Started with Drizzle and PlanetScale
 
 This guide assumes familiarity with:
 
-*   **dotenv** - package for managing environment variables - [read here](https://www.npmjs.com/package/dotenv)
-*   **tsx** - package for running TypeScript files - [read here](https://tsx.is/)
-*   **PlanetScale** - MySQL database platform - [read here](https://planetscale.com/)
-*   **database-js** - PlanetScale serverless driver - [read here](https://github.com/planetscale/database-js)
+-   **dotenv** - package for managing environment variables - [read here](https://www.npmjs.com/package/dotenv)
+-   **tsx** - package for running TypeScript files - [read here](https://tsx.is/)
+-   **PlanetScale** - MySQL database platform - [read here](https://planetscale.com/)
+-   **database-js** - PlanetScale serverless driver - [read here](https://github.com/planetscale/database-js)
 
 PlanetScale also offers Postgres
 
 important
 
-For this tutorial, we will use the `database-js` driver to make **HTTP** calls to the PlanetScale database. If you need to connect to PlanetScale through TCP, you can refer to our [MySQL Get Started](drizzle/docs/get-started/mysql-new/index.md) page
+For this tutorial, we will use the `database-js` driver to make **HTTP** calls to the PlanetScale database. If you need to connect to PlanetScale through TCP, you can refer to our [MySQL Get Started](https://orm.drizzle.team/docs/get-started/mysql-new) page
 
 #### Basic file structure
 
 This is the basic file structure of the project. In the `src/db` directory, we have table definition in `schema.ts`. In `drizzle` folder there are sql migration file and snapshots.
 
-```
+```plaintext
 📦 <project root>
  ├ 📂 drizzle
  ├ 📂 src
@@ -46,14 +44,6 @@ This is the basic file structure of the project. In the `src/db` directory, we h
 ```
 
 #### Step 1 - Install **@planetscale/database** package[](#step-1---install-planetscaledatabase-package)
-
-npm
-
-yarn
-
-pnpm
-
-bun
 
 ```
 npm i drizzle-orm @planetscale/database dotenv
@@ -79,7 +69,7 @@ bun add -D drizzle-kit tsx
 
 Create a `.env` file in the root of your project and add your database connection variable:
 
-```
+```plaintext
 DATABASE_HOST=
 DATABASE_USERNAME=
 DATABASE_PASSWORD=
@@ -93,7 +83,7 @@ To get all the necessary environment variables to connect through the `database-
 
 Create a `index.ts` file in the `src/db` directory and initialize the connection:
 
-```
+```typescript
 import { drizzle } from "drizzle-orm/planetscale-serverless";
 
 const db = drizzle({ connection: {
@@ -105,7 +95,7 @@ const db = drizzle({ connection: {
 
 If you need to provide your existing driver
 
-```
+```typescript
 import { drizzle } from "drizzle-orm/planetscale-serverless";
 import { Client } from "@planetscale/database";
 
@@ -122,7 +112,7 @@ const db = drizzle({ client: client });
 
 Create a `schema.ts` file in the `src/db` directory and declare your table:
 
-```
+```typescript
 import { int, mysqlTable, serial, varchar } from 'drizzle-orm/mysql-core';
 
 export const usersTable = mysqlTable('users_table', {
@@ -135,11 +125,11 @@ export const usersTable = mysqlTable('users_table', {
 
 #### Step 5 - Setup Drizzle config file[](#step-5---setup-drizzle-config-file)
 
-**Drizzle config** - a configuration file that is used by [Drizzle Kit](drizzle/docs/kit-overview/index.md) and contains all the information about your database connection, migration folder and schema files.
+**Drizzle config** - a configuration file that is used by [Drizzle Kit](https://orm.drizzle.team/docs/kit-overview) and contains all the information about your database connection, migration folder and schema files.
 
 Create a `drizzle.config.ts` file in the root of your project and add the following content:
 
-```
+```typescript
 import 'dotenv/config';
 import { defineConfig } from 'drizzle-kit';
 
@@ -157,11 +147,11 @@ export default defineConfig({
 
 You can directly apply changes to your database using the `drizzle-kit push` command. This is a convenient method for quickly testing new schema designs or modifications in a local development environment, allowing for rapid iterations without the need to manage migration files:
 
-```
+```bash
 npx drizzle-kit push
 ```
 
-Read more about the push command in [documentation](drizzle/docs/drizzle-kit-push/index.md).
+Read more about the push command in [documentation](https://orm.drizzle.team/docs/drizzle-kit-push).
 
 Tips
 
@@ -169,23 +159,23 @@ Alternatively, you can generate migrations using the `drizzle-kit generate` comm
 
 Generate migrations:
 
-```
+```bash
 npx drizzle-kit generate
 ```
 
 Apply migrations:
 
-```
+```bash
 npx drizzle-kit migrate
 ```
 
-Read more about migration process in [documentation](drizzle/docs/kit-overview/index.md).
+Read more about migration process in [documentation](https://orm.drizzle.team/docs/kit-overview).
 
 #### Step 7 - Seed and Query the database[](#step-7---seed-and-query-the-database)
 
 Let’s **update** the `src/index.ts` file with queries to create, read, update, and delete users
 
-```
+```typescript
 import 'dotenv/config';
 import { eq } from 'drizzle-orm';
 import { drizzle } from 'drizzle-orm/planetscale-serverless';
@@ -241,14 +231,6 @@ You’ve already installed `tsx`, so we can run our queries now
 
 **Run `index.ts` script**
 
-npm
-
-yarn
-
-pnpm
-
-bun
-
 ```
 npx tsx src/index.ts
 ```
@@ -269,7 +251,7 @@ tips
 
 We suggest using `bun` to run TypeScript files. With `bun`, such scripts can be executed without issues or additional settings, regardless of whether your project is configured with CommonJS (CJS), ECMAScript Modules (ESM), or any other module format. To run a script with `bun`, use the following command:
 
-```
+```bash
 bun src/index.ts
 ```
 

@@ -5,25 +5,26 @@ canonical_url: "https://docs.deno.com/runtime/fundamentals/http_server/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:46:37.381Z"
-content_hash: "35af05319c634f0d3ce1b07cdbc16b3e8629a47d4e1c2e0d1f89281ce496c52b"
+last_crawled_at: "2026-04-27T17:20:21.656Z"
+content_hash: "0d1643913aec259656028afffbebf911e397b91ad040333ab54f0a6a45f93918"
 menu_path: ["Writing an HTTP Server"]
 section_path: []
+content_language: "en"
 ---
-On this page
+**On this page**
 
-*   [Deno's built-in HTTP server](#deno's-built-in-http-server)
-    *   [A "Hello World" server](#a-%22hello-world%22-server)
-    *   [Listening on a specific port](#listening-on-a-specific-port)
-    *   [Inspecting the incoming request](#inspecting-the-incoming-request)
-    *   [Responding with real data](#responding-with-real-data)
-    *   [Responding with a stream](#responding-with-a-stream)
-    *   [HTTPS support](#https-support)
-    *   [HTTP/2 support](#http%2F2-support)
-    *   [Automatic body compression](#automatic-body-compression)
-    *   [Serving WebSockets](#serving-websockets)
-*   [Default fetch export](#default-fetch-export)
-*   [Building on these examples](#building-on-these-examples)
+-   [Deno's built-in HTTP server](#deno's-built-in-http-server)
+    -   [A "Hello World" server](#a-%22hello-world%22-server)
+    -   [Listening on a specific port](#listening-on-a-specific-port)
+    -   [Inspecting the incoming request](#inspecting-the-incoming-request)
+    -   [Responding with real data](#responding-with-real-data)
+    -   [Responding with a stream](#responding-with-a-stream)
+    -   [HTTPS support](#https-support)
+    -   [HTTP/2 support](#http%2F2-support)
+    -   [Automatic body compression](#automatic-body-compression)
+    -   [Serving WebSockets](#serving-websockets)
+-   [Default fetch export](#default-fetch-export)
+-   [Building on these examples](#building-on-these-examples)
 
 HTTP servers are the backbone of the web, allowing you to access websites, download files, and interact with web services. They listen for incoming requests from clients (like web browsers) and send back responses.
 
@@ -183,17 +184,17 @@ The HTTP server has built in automatic compression of response bodies. When a re
 
 Currently Deno supports gzip and brotli compression. A body is automatically compressed if the following conditions are true:
 
-*   The request has an [`Accept-Encoding`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Accept-Encoding) header which indicates the requester supports `br` for Brotli or `gzip`. Deno will respect the preference of the [quality value](https://developer.mozilla.org/en-US/docs/Glossary/Quality_values) in the header.
-*   The response includes a [`Content-Type`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Type) which is considered compressible. (The list is derived from [`jshttp/mime-db`](https://github.com/jshttp/mime-db/blob/master/db.json) with the actual list [in the code](https://github.com/denoland/deno/blob/v1.21.0/ext/http/compressible.rs).)
-*   The response body is greater than 64 bytes.
+-   The request has an [`Accept-Encoding`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Accept-Encoding) header which indicates the requester supports `br` for Brotli or `gzip`. Deno will respect the preference of the [quality value](https://developer.mozilla.org/en-US/docs/Glossary/Quality_values) in the header.
+-   The response includes a [`Content-Type`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Type) which is considered compressible. (The list is derived from [`jshttp/mime-db`](https://github.com/jshttp/mime-db/blob/master/db.json) with the actual list [in the code](https://github.com/denoland/deno/blob/v1.21.0/ext/http/compressible.rs).)
+-   The response body is greater than 64 bytes.
 
 When the response body is compressed, Deno will set the `Content-Encoding` header to reflect the encoding, as well as ensure the `Vary` header is adjusted or added to indicate which request headers affected the response.
 
 In addition to the logic above, there are a few reasons why a response **won’t** be compressed automatically:
 
-*   The response contains a `Content-Encoding` header. This indicates your server has done some form of encoding already.
-*   The response contains a [`Content-Range`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Range) header. This indicates that your server is responding to a range request, where the bytes and ranges are negotiated outside of the control of the internals to Deno.
-*   The response has a [`Cache-Control`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control) header which contains a [`no-transform`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control#other) value. This indicates that your server doesn’t want Deno or any downstream proxies to modify the response.
+-   The response contains a `Content-Encoding` header. This indicates your server has done some form of encoding already.
+-   The response contains a [`Content-Range`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Range) header. This indicates that your server is responding to a range request, where the bytes and ranges are negotiated outside of the control of the internals to Deno.
+-   The response has a [`Cache-Control`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control) header which contains a [`no-transform`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control#other) value. This indicates that your server doesn’t want Deno or any downstream proxies to modify the response.
 
 ### Serving WebSockets
 

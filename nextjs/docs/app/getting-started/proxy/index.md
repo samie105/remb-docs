@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/app/getting-started/proxy"
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:13:36.194Z"
-content_hash: "56b940bf220525eb27fe61f78fa16c09a1b623d126d306486b58057cf3be905a"
+last_crawled_at: "2026-04-27T18:12:19.406Z"
+content_hash: "a733934da172a9332f2a6c3dd5e38d0024c9ddc10b87547ac0f97faa5b487724"
 menu_path: ["Proxy"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/getting-started/route-handlers/index.md", "title": "Route Handlers"}
-nav_next: {"path": "nextjs/docs/app/getting-started/deploying/index.md", "title": "Deploying"}
+version: "latest"
+content_language: "en"
 ---
+[App Router](/docs/app)[Getting Started](/docs/app/getting-started)Proxy
 
 # Proxy
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 ## Proxy[](#proxy)
 
@@ -27,9 +28,9 @@ Proxy allows you to run code before a request is completed. Then, based on the i
 
 Some common scenarios where Proxy is effective include:
 
-*   Modifying headers for all pages or a subset of pages
-*   Rewriting to different pages based on A/B tests or experiments
-*   Programmatic redirects based on incoming request properties
+-   Modifying headers for all pages or a subset of pages
+-   Rewriting to different pages based on A/B tests or experiments
+-   Programmatic redirects based on incoming request properties
 
 For simple redirects, consider using the [`redirects`](/docs/app/api-reference/config/next-config-js/redirects) configuration in `next.config.ts` first. Proxy should be used when you need access to request data or more complex logic.
 
@@ -48,8 +49,6 @@ Create a `proxy.ts` (or `.js`) file in the project root, or inside `src` if appl
 You can export your proxy function as either a default export or a named `proxy` export:
 
 proxy.ts
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -92,20 +91,4 @@ Learn how to use Next.js as a backend framework
 
 ](/docs/app/guides/backend-for-frontend)
 
-[Previous
-
-Route Handlers
-
-](/docs/app/getting-started/route-handlers)
-
-[Next
-
-Deploying
-
-](/docs/app/getting-started/deploying)
-
 Was this helpful?
-
-supported.
-
-Send

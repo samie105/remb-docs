@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/app/guides/migrating"
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:15:12.431Z"
-content_hash: "6e68df9f1bd0c56d7cdc796568a8dedbbd5bcb2c344f659f057948979a0aec7c"
+last_crawled_at: "2026-04-27T18:14:08.993Z"
+content_hash: "58cf481956ac39218feb88df5e5efe795a3cb522ac720e56ff82aa7b5b5f80a0"
 menu_path: ["Migrating"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/guides/memory-usage/index.md", "title": "How to optimize memory usage"}
-nav_next: {"path": "nextjs/docs/app/guides/migrating/app-router-migration/index.md", "title": "How to migrate from Pages to the App Router"}
+version: "latest"
+content_language: "en"
 ---
+[App Router](/docs/app)[Guides](/docs/app/guides)Migrating
 
 # Migrating
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 [
 
@@ -37,20 +38,4 @@ Learn how to migrate your existing React application from Vite to Next.js.
 
 ](/docs/app/guides/migrating/from-vite)
 
-[Previous
-
-Memory Usage
-
-](/docs/app/guides/memory-usage)
-
-[Next
-
-App Router
-
-](/docs/app/guides/migrating/app-router-migration)
-
 Was this helpful?
-
-supported.
-
-Send

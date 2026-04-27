@@ -5,14 +5,12 @@ canonical_url: "https://www.postgresql.org/docs/current/seg.html"
 docset: "postgres"
 kind: "database"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:40:43.600Z"
-content_hash: "c786985b3b106fa01adb72b7834a08eb982b5911a1bcb4b8671ba63d6982c3cc"
+last_crawled_at: "2026-04-27T20:45:06.029Z"
+content_hash: "b563479402e3e1d96288822f61ab26fade55c43a107ce901fe64ed86daba0cf8"
 menu_path: ["PostgreSQL: Documentation: 18: F.39. seg — a datatype for line segments or floating point intervals"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/sasl-authentication.html/index.md", "title": "PostgreSQL: Documentation: 18: 54.3.\u00a0SASL Authentication"}
-nav_next: {"path": "postgres/docs/current/sepgsql.html/index.md", "title": "PostgreSQL: Documentation: 18: F.40.\u00a0sepgsql \u2014 SELinux-, label-based mandatory access control (MAC) security module"}
+content_language: "en"
 ---
-
 This module implements a data type `seg` for representing line segments, or floating point intervals. `seg` can represent uncertainty in the interval endpoints, making it especially useful for representing laboratory measurements.
 
 This module is considered “trusted”, that is, it can be installed by non-superusers who have `CREATE` privilege on the current database.
@@ -51,69 +49,13 @@ In [Table F.29](https://www.postgresql.org/docs/current/seg.html#SEG-REPR-TABLE
 
 **Table F.29. `seg` External Representations**
 
- 
-
-``_`x`_``
-
-Single value (zero-length interval)
-
-``_`x`_ .. _`y`_``
-
-Interval from _`x`_ to _`y`_
-
-``_`x`_ (+-) _`delta`_``
-
-Interval from _`x`_ - _`delta`_ to _`x`_ + _`delta`_
-
-``_`x`_ ..``
-
-Open interval with lower bound _`x`_
-
-``.. _`x`_``
-
-Open interval with upper bound _`x`_
+<table summary="seg External Representations"><colgroup><col> <col></colgroup><tbody><tr><td><code><em><code>x</code></em></code></td><td>Single value (zero-length interval)</td></tr><tr><td><code><em><code>x</code></em> .. <em><code>y</code></em></code></td><td>Interval from <em><code>x</code></em> to <em><code>y</code></em></td></tr><tr><td><code><em><code>x</code></em> (+-) <em><code>delta</code></em></code></td><td>Interval from <em><code>x</code></em> - <em><code>delta</code></em> to <em><code>x</code></em> + <em><code>delta</code></em></td></tr><tr><td><code><em><code>x</code></em> ..</code></td><td>Open interval with lower bound <em><code>x</code></em></td></tr><tr><td><code>.. <em><code>x</code></em></code></td><td>Open interval with upper bound <em><code>x</code></em></td></tr></tbody></table>
 
   
 
 **Table F.30. Examples of Valid `seg` Input**
 
- 
-
-`5.0`
-
-Creates a zero-length segment (a point, if you will)
-
-`~5.0`
-
-Creates a zero-length segment and records `~` in the data. `~` is ignored by `seg` operations, but is preserved as a comment.
-
-`<5.0`
-
-Creates a point at 5.0. `<` is ignored but is preserved as a comment.
-
-`>5.0`
-
-Creates a point at 5.0. `>` is ignored but is preserved as a comment.
-
-`5(+-)0.3`
-
-Creates an interval `4.7 .. 5.3`. Note that the `(+-)` notation isn't preserved.
-
-`50 ..`
-
-Everything that is greater than or equal to 50
-
-`.. 0`
-
-Everything that is less than or equal to 0
-
-`1.5e-2 .. 2E-2`
-
-Creates an interval `0.015 .. 0.02`
-
-`1 ... 2`
-
-The same as `1...2`, or `1 .. 2`, or `1..2` (spaces around the range operator are ignored)
+<table summary="Examples of Valid seg Input"><colgroup><col> <col></colgroup><tbody><tr><td><code>5.0</code></td><td>Creates a zero-length segment (a point, if you will)</td></tr><tr><td><code>~5.0</code></td><td>Creates a zero-length segment and records <code>~</code> in the data. <code>~</code> is ignored by <code>seg</code> operations, but is preserved as a comment.</td></tr><tr><td><code>&lt;5.0</code></td><td>Creates a point at 5.0. <code>&lt;</code> is ignored but is preserved as a comment.</td></tr><tr><td><code>&gt;5.0</code></td><td>Creates a point at 5.0. <code>&gt;</code> is ignored but is preserved as a comment.</td></tr><tr><td><code>5(+-)0.3</code></td><td>Creates an interval <code>4.7 .. 5.3</code>. Note that the <code>(+-)</code> notation isn't preserved.</td></tr><tr><td><code>50 ..</code></td><td>Everything that is greater than or equal to 50</td></tr><tr><td><code>.. 0</code></td><td>Everything that is less than or equal to 0</td></tr><tr><td><code>1.5e-2 .. 2E-2</code></td><td>Creates an interval <code>0.015 .. 0.02</code></td></tr><tr><td><code>1 ... 2</code></td><td>The same as <code>1...2</code>, or <code>1 .. 2</code>, or <code>1..2</code> (spaces around the range operator are ignored)</td></tr></tbody></table>
 
 Because the `...` operator is widely used in data sources, it is allowed as an alternative spelling of the `..` operator. Unfortunately, this creates a parsing ambiguity: it is not clear whether the upper bound in `0...23` is meant to be `23` or `0.23`. This is resolved by requiring at least one digit before the decimal point in all numbers in `seg` input.
 
@@ -131,41 +73,69 @@ The `seg` module includes a GiST index operator class for `seg` values. The oper
 
 **Table F.31. Seg GiST Operators**
 
+| 
 Operator
 
 Description
+
+ |
+| --- |
+| 
 
 `seg` `<<` `seg` → `boolean`
 
 Is the first `seg` entirely to the left of the second? \[a, b\] << \[c, d\] is true if b < c.
 
+ |
+| 
+
 `seg` `>>` `seg` → `boolean`
 
 Is the first `seg` entirely to the right of the second? \[a, b\] >> \[c, d\] is true if a > d.
+
+ |
+| 
 
 `seg` `&<` `seg` → `boolean`
 
 Does the first `seg` not extend to the right of the second? \[a, b\] &< \[c, d\] is true if b <= d.
 
+ |
+| 
+
 `seg` `&>` `seg` → `boolean`
 
 Does the first `seg` not extend to the left of the second? \[a, b\] &> \[c, d\] is true if a >= c.
+
+ |
+| 
 
 `seg` `=` `seg` → `boolean`
 
 Are the two `seg`s equal?
 
+ |
+| 
+
 `seg` `&&` `seg` → `boolean`
 
 Do the two `seg`s overlap?
+
+ |
+| 
 
 `seg` `@>` `seg` → `boolean`
 
 Does the first `seg` contain the second?
 
+ |
+| 
+
 `seg` `<@` `seg` → `boolean`
 
 Is the first `seg` contained in the second?
+
+ |
 
 In addition to the above operators, the usual comparison operators shown in [Table 9.1](https://www.postgresql.org/docs/current/functions-comparison.html#FUNCTIONS-COMPARISON-OP-TABLE "Table 9.1. Comparison Operators") are available for type `seg`. These operators first compare (a) to (c), and if these are equal, compare (b) to (d). That results in reasonably good sorting in most cases, which is useful if you want to use ORDER BY with this type.
 

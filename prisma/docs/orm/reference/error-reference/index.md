@@ -5,15 +5,13 @@ canonical_url: "https://www.prisma.io/docs/orm/reference/error-reference"
 docset: "prisma"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:35:10.819Z"
-content_hash: "ce2e1742567303981e02a7ab4665eccb3d2c1058c54f3e4965e5ea395e8b360a"
+last_crawled_at: "2026-04-27T19:34:51.672Z"
+content_hash: "0070b03596fd6a6ce854aa8d9651048238980492969e2783be7634cb25452f98"
 menu_path: ["Error Reference"]
 section_path: []
-nav_prev: {"path": "prisma/docs/orm/reference/system-requirements/index.md", "title": "System requirements"}
-nav_next: {"path": "prisma/docs/orm/reference/errors/index.md", "title": "Prisma Error Reference"}
+content_language: "en"
 ---
-
-For more information about how to work with exceptions and error codes, see [Handling exceptions and errors](prisma/docs/orm/prisma-client/debugging-and-troubleshooting/handling-exceptions-and-errors/index.md).
+For more information about how to work with exceptions and error codes, see [Handling exceptions and errors](https://www.prisma.io/docs/orm/prisma-client/debugging-and-troubleshooting/handling-exceptions-and-errors).
 
 Prisma Client throws different kinds of errors. The following lists the exception types, and their documented data fields:
 
@@ -21,107 +19,63 @@ Prisma Client throws different kinds of errors. The following lists the exceptio
 
 Prisma Client throws a `PrismaClientKnownRequestError` exception if the query engine returns a known error related to the request - for example, a unique constraint violation.
 
-**Property**
-
-**Description**
-
-`code`
-
-A Prisma-specific [error code](#error-codes).
-
-`meta`
-
-Additional information about the error - for example, the field that caused the error: `{ target: [ 'email' ] }`
-
-`message`
-
-Error message associated with [error code](#error-codes).
-
-`clientVersion`
-
-Version of Prisma Client (for example, `2.19.0`)
+| **Property** | **Description** |
+| --- | --- |
+| `code` | A Prisma-specific [error code](#error-codes). |
+| `meta` | Additional information about the error - for example, the field that caused the error: `{ target: [ 'email' ] }` |
+| `message` | Error message associated with [error code](#error-codes). |
+| `clientVersion` | Version of Prisma Client (for example, `2.19.0`) |
 
 ### [`PrismaClientUnknownRequestError`](#prismaclientunknownrequesterror)
 
 Prisma Client throws a `PrismaClientUnknownRequestError` exception if the query engine returns an error related to a request that does not have an error code.
 
-**Property**
-
-**Description**
-
-`message`
-
-Error message associated with [error code](#error-codes).
-
-`clientVersion`
-
-Version of Prisma Client (for example, `2.19.0`)
+| **Property** | **Description** |
+| --- | --- |
+| `message` | Error message associated with [error code](#error-codes). |
+| `clientVersion` | Version of Prisma Client (for example, `2.19.0`) |
 
 ### [`PrismaClientRustPanicError`](#prismaclientrustpanicerror)
 
 Prisma Client throws a `PrismaClientRustPanicError` exception if the underlying engine crashes and exits with a non-zero exit code. In this case, Prisma Client or the whole Node process must be restarted.
 
-**Property**
-
-**Description**
-
-`message`
-
-Error message associated with [error code](#error-codes).
-
-`clientVersion`
-
-Version of Prisma Client (for example, `2.19.0`)
+| **Property** | **Description** |
+| --- | --- |
+| `message` | Error message associated with [error code](#error-codes). |
+| `clientVersion` | Version of Prisma Client (for example, `2.19.0`) |
 
 ### [`PrismaClientInitializationError`](#prismaclientinitializationerror)
 
 Prisma Client throws a `PrismaClientInitializationError` exception if something goes wrong when the query engine is started and the connection to the database is created. This happens either:
 
-*   When `prisma.$connect()` is called OR
-*   When the first query is executed
+-   When `prisma.$connect()` is called OR
+-   When the first query is executed
 
 Errors that can occur include:
 
-*   The provided credentials for the database are invalid
-*   There is no database server running under the provided hostname and port
-*   The port that the query engine HTTP server wants to bind to is already taken
-*   A missing or inaccessible environment variable
-*   The query engine binary for the current platform could not be found (`generator` block)
+-   The provided credentials for the database are invalid
+-   There is no database server running under the provided hostname and port
+-   The port that the query engine HTTP server wants to bind to is already taken
+-   A missing or inaccessible environment variable
+-   The query engine binary for the current platform could not be found (`generator` block)
 
-**Property**
-
-**Description**
-
-`errorCode`
-
-A Prisma-specific error code.
-
-`message`
-
-Error message associated with [error code](#error-codes).
-
-`clientVersion`
-
-Version of Prisma Client (for example, `2.19.0`)
+| **Property** | **Description** |
+| --- | --- |
+| `errorCode` | A Prisma-specific error code. |
+| `message` | Error message associated with [error code](#error-codes). |
+| `clientVersion` | Version of Prisma Client (for example, `2.19.0`) |
 
 ### [`PrismaClientValidationError`](#prismaclientvalidationerror)
 
 Prisma Client throws a `PrismaClientValidationError` exception if validation fails - for example:
 
-*   Missing field - for example, an empty `data: {}` property when creating a new record
-*   Incorrect field type provided (for example, setting a `Boolean` field to `"Hello, I like cheese and gold!"`)
+-   Missing field - for example, an empty `data: {}` property when creating a new record
+-   Incorrect field type provided (for example, setting a `Boolean` field to `"Hello, I like cheese and gold!"`)
 
-**Property**
-
-**Description**
-
-`message`
-
-Error message.
-
-`clientVersion`
-
-Version of Prisma Client (for example, `2.19.0`)
+| **Property** | **Description** |
+| --- | --- |
+| `message` | Error message. |
+| `clientVersion` | Version of Prisma Client (for example, `2.19.0`) |
 
 ### [Common](#common)
 
@@ -167,41 +121,41 @@ Version of Prisma Client (for example, `2.19.0`)
 
 Possible P1012 error messages:
 
-*   "Argument `{}` is missing."
-*   "Function `{}` takes arguments, but received ."
-*   "Argument `{}` is missing in attribute `@{}`."
-*   "Argument `{}` is missing in data source block `{}`."
-*   "Argument `{}` is missing in generator block `{}`."
-*   "Error parsing attribute `@{}`: "
-*   "Attribute `@{}` is defined twice."
-*   "The model with database name `{}` could not be defined because another model with this name exists: `{}`"
-*   "`{}` is a reserved scalar type name and can not be used."
-*   "The `{}` cannot be defined because a with that name already exists."
-*   "Key `{}` is already defined in ."
-*   "Argument `{}` is already specified as unnamed argument."
-*   "Argument `{}` is already specified."
-*   "No such argument.""
-*   "Field `{}` is already defined on model `{}`."
-*   "Field `{}` in model `{}` can't be a list. The current connector does not support lists of primitive types."
-*   "The index name `{}` is declared multiple times. With the current connector index names have to be globally unique."
-*   "Value `{}` is already defined on enum `{}`."
-*   "Attribute not known: `@{}`."
-*   "Function not known: `{}`."
-*   "Datasource provider not known: `{}`."
-*   "shadowDatabaseUrl is the same as url for datasource `{}`. Please specify a different database as shadow database."
-*   "The preview feature `{}` is not known. Expected one of: "
-*   "`{}` is not a valid value for ."
-*   "Type `{}` is neither a built-in type, nor refers to another model, custom type, or enum."
-*   "Type `{}` is not a built-in type."
-*   "Unexpected token. Expected one of: "
-*   "Environment variable not found: ."
-*   "Expected a value, but received value `{}`."
-*   "Expected a value, but failed while parsing `{}`: ."
-*   "Error validating model `{}`: "
-*   "Error validating field `{}` in model `{}`: "
-*   "Error validating datasource `{datasource}`: {message}"
-*   "Error validating enum `{}`: "
-*   "Error validating: "
+-   "Argument `{}` is missing."
+-   "Function `{}` takes arguments, but received ."
+-   "Argument `{}` is missing in attribute `@{}`."
+-   "Argument `{}` is missing in data source block `{}`."
+-   "Argument `{}` is missing in generator block `{}`."
+-   "Error parsing attribute `@{}`: "
+-   "Attribute `@{}` is defined twice."
+-   "The model with database name `{}` could not be defined because another model with this name exists: `{}`"
+-   "`{}` is a reserved scalar type name and can not be used."
+-   "The `{}` cannot be defined because a with that name already exists."
+-   "Key `{}` is already defined in ."
+-   "Argument `{}` is already specified as unnamed argument."
+-   "Argument `{}` is already specified."
+-   "No such argument.""
+-   "Field `{}` is already defined on model `{}`."
+-   "Field `{}` in model `{}` can't be a list. The current connector does not support lists of primitive types."
+-   "The index name `{}` is declared multiple times. With the current connector index names have to be globally unique."
+-   "Value `{}` is already defined on enum `{}`."
+-   "Attribute not known: `@{}`."
+-   "Function not known: `{}`."
+-   "Datasource provider not known: `{}`."
+-   "shadowDatabaseUrl is the same as url for datasource `{}`. Please specify a different database as shadow database."
+-   "The preview feature `{}` is not known. Expected one of: "
+-   "`{}` is not a valid value for ."
+-   "Type `{}` is neither a built-in type, nor refers to another model, custom type, or enum."
+-   "Type `{}` is not a built-in type."
+-   "Unexpected token. Expected one of: "
+-   "Environment variable not found: ."
+-   "Expected a value, but received value `{}`."
+-   "Expected a value, but failed while parsing `{}`: ."
+-   "Error validating model `{}`: "
+-   "Error validating field `{}` in model `{}`: "
+-   "Error validating datasource `{datasource}`: {message}"
+-   "Error validating enum `{}`: "
+-   "Error validating: "
 
 #### [`P1013`](#p1013)
 
@@ -326,9 +280,9 @@ Errors:
 
 #### [`P2024`](#p2024)
 
-"Timed out fetching a new connection from the connection pool. (More info: [http://pris.ly/d/connection-pool](prisma/docs/orm/prisma-client/setup-and-configuration/databases-connections/connection-pool/index.md) (Current connection pool timeout: {timeout}, connection limit: {connection\_limit})"
+"Timed out fetching a new connection from the connection pool. (More info: [http://pris.ly/d/connection-pool](https://www.prisma.io/docs/orm/prisma-client/setup-and-configuration/databases-connections/connection-pool) (Current connection pool timeout: {timeout}, connection limit: {connection\_limit})"
 
-In Prisma ORM v7, pool size and timeout are configured per [driver adapter](prisma/docs/orm/prisma-client/setup-and-configuration/databases-connections/connection-pool/index.md)—see the connection pool reference for your adapter.
+In Prisma ORM v7, pool size and timeout are configured per [driver adapter](https://www.prisma.io/docs/orm/prisma-client/setup-and-configuration/databases-connections/connection-pool)—see the connection pool reference for your adapter.
 
 #### [`P2025`](#p2025)
 
@@ -356,7 +310,7 @@ In Prisma ORM v7, pool size and timeout are configured per [driver adapter](pris
 
 #### [`P2031`](#p2031)
 
-"Prisma needs to perform transactions, which requires your MongoDB server to be run as a replica set. See details: [https://pris.ly/d/mongodb-replica-set](prisma/docs/orm/core-concepts/supported-databases/mongodb/index.md#replica-set-configuration)"
+"Prisma needs to perform transactions, which requires your MongoDB server to be run as a replica set. See details: [https://pris.ly/d/mongodb-replica-set](https://www.prisma.io/docs/orm/core-concepts/supported-databases/mongodb#replica-set-configuration)"
 
 #### [`P2033`](#p2033)
 
@@ -394,7 +348,7 @@ In Prisma ORM v7, pool size and timeout are configured per [driver adapter](pris
 
 #### [`P3003`](#p3003)
 
-"The format of migrations changed, the saved migrations are no longer valid. To solve this problem, please follow the steps at: [https://pris.ly/d/migrate](prisma/docs/orm/prisma-migrate/index.md)"
+"The format of migrations changed, the saved migrations are no longer valid. To solve this problem, please follow the steps at: [https://pris.ly/d/migrate](https://www.prisma.io/docs/orm/prisma-migrate)"
 
 #### [`P3004`](#p3004)
 
@@ -402,7 +356,7 @@ In Prisma ORM v7, pool size and timeout are configured per [driver adapter](pris
 
 #### [`P3005`](#p3005)
 
-"The database schema is not empty. Read more about how to baseline an existing production database: [https://pris.ly/d/migrate-baseline](prisma/docs/orm/prisma-migrate/workflows/baselining/index.md)"
+"The database schema is not empty. Read more about how to baseline an existing production database: [https://pris.ly/d/migrate-baseline](https://www.prisma.io/docs/orm/prisma-migrate/workflows/baselining)"
 
 #### [`P3006`](#p3006)
 
@@ -420,7 +374,7 @@ In Prisma ORM v7, pool size and timeout are configured per [driver adapter](pris
 
 #### [`P3009`](#p3009)
 
-"migrate found failed migrations in the target database, new migrations will not be applied. Read more about how to resolve migration issues in a production database: [https://pris.ly/d/migrate-resolve](prisma/docs/orm/prisma-migrate/workflows/troubleshooting/index.md)  
+"migrate found failed migrations in the target database, new migrations will not be applied. Read more about how to resolve migration issues in a production database: [https://pris.ly/d/migrate-resolve](https://www.prisma.io/docs/orm/prisma-migrate/workflows/troubleshooting)  
 {details}"
 
 #### [`P3010`](#p3010)
@@ -441,7 +395,7 @@ In Prisma ORM v7, pool size and timeout are configured per [driver adapter](pris
 
 #### [`P3014`](#p3014)
 
-"Prisma Migrate could not create the shadow database. Please make sure the database user has permission to create databases. Read more about the shadow database (and workarounds) at [https://pris.ly/d/migrate-shadow](prisma/docs/orm/prisma-migrate/understanding-prisma-migrate/shadow-database/index.md).
+"Prisma Migrate could not create the shadow database. Please make sure the database user has permission to create databases. Read more about the shadow database (and workarounds) at [https://pris.ly/d/migrate-shadow](https://www.prisma.io/docs/orm/prisma-migrate/understanding-prisma-migrate/shadow-database).
 
 Original error: {error\_code}  
 {inner\_error}"
@@ -461,7 +415,7 @@ Original error: {error\_code}
 
 #### [`P3018`](#p3018)
 
-"A migration failed to apply. New migrations cannot be applied before the error is recovered from. Read more about how to resolve migration issues in a production database: [https://pris.ly/d/migrate-resolve](prisma/docs/orm/prisma-migrate/workflows/troubleshooting/index.md)"
+"A migration failed to apply. New migrations cannot be applied before the error is recovered from. Read more about how to resolve migration issues in a production database: [https://pris.ly/d/migrate-resolve](https://www.prisma.io/docs/orm/prisma-migrate/workflows/troubleshooting)"
 
 Migration name: {migration\_name}
 
@@ -472,20 +426,20 @@ Database error:
 
 #### [`P3019`](#p3019)
 
-"The datasource provider `{provider}` specified in your schema does not match the one specified in the migration\_lock.toml, `{expected_provider}`. Please remove your current migration directory and start a new migration history with prisma migrate dev. Read more: [https://pris.ly/d/migrate-provider-switch](prisma/docs/orm/prisma-migrate/workflows/troubleshooting/index.md)"
+"The datasource provider `{provider}` specified in your schema does not match the one specified in the migration\_lock.toml, `{expected_provider}`. Please remove your current migration directory and start a new migration history with prisma migrate dev. Read more: [https://pris.ly/d/migrate-provider-switch](https://www.prisma.io/docs/orm/prisma-migrate/workflows/troubleshooting)"
 
 #### [`P3020`](#p3020)
 
 "The automatic creation of shadow databases is disabled on Azure SQL. Please set up a shadow database using the `shadowDatabaseUrl` datasource attribute.  
-Read the docs page for more details: [https://pris.ly/d/migrate-shadow](prisma/docs/orm/prisma-migrate/understanding-prisma-migrate/shadow-database/index.md)"
+Read the docs page for more details: [https://pris.ly/d/migrate-shadow](https://www.prisma.io/docs/orm/prisma-migrate/understanding-prisma-migrate/shadow-database)"
 
 #### [`P3021`](#p3021)
 
-"Foreign keys cannot be created on this database. Learn more how to handle this: [https://pris.ly/d/migrate-no-foreign-keys](prisma/docs/orm/core-concepts/supported-databases/mysql/index.md#planetscale)"
+"Foreign keys cannot be created on this database. Learn more how to handle this: [https://pris.ly/d/migrate-no-foreign-keys](https://www.prisma.io/docs/orm/core-concepts/supported-databases/mysql#planetscale)"
 
 #### [`P3022`](#p3022)
 
-"Direct execution of DDL (Data Definition Language) SQL statements is disabled on this database. Please read more here about how to handle this: [https://pris.ly/d/migrate-no-direct-ddl](prisma/docs/orm/core-concepts/supported-databases/mysql/index.md#planetscale)"
+"Direct execution of DDL (Data Definition Language) SQL statements is disabled on this database. Please read more here about how to handle this: [https://pris.ly/d/migrate-no-direct-ddl](https://www.prisma.io/docs/orm/core-concepts/supported-databases/mysql#planetscale)"
 
 #### [`P3023`](#p3023)
 
@@ -511,7 +465,7 @@ Read the docs page for more details: [https://pris.ly/d/migrate-shadow](prisma/d
 
 ### [Prisma Accelerate](#prisma-accelerate)
 
-Prisma Accelerate-related errors start with `P6xxx` except for [`P5011`](prisma/docs/orm/reference/error-reference/index.md#p5011-too-many-requests).
+Prisma Accelerate-related errors start with `P6xxx` except for [`P5011`](https://www.prisma.io/docs/orm/reference/error-reference#p5011-too-many-requests).
 
 #### [`P6000` (`ServerError`)](#p6000-servererror)
 
@@ -520,8 +474,6 @@ Generic error to catch all other errors.
 #### [`P6001` (`InvalidDataSource`)](#p6001-invaliddatasource)
 
 The URL is malformed; for instance, it does not use the `prisma://` protocol.
-
-#### [`P6002` (`Unauthorized`)](#p6002-unauthorized)
 
 The API Key in the connection string is invalid.
 

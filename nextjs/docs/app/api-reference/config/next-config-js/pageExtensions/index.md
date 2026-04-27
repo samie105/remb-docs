@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/app/api-reference/config/next-config-js/
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:08:04.908Z"
-content_hash: "1ff2a4246c5c319dbfa8f6d085b9921305c890852bdedb6aebffecf0619d92d3"
+last_crawled_at: "2026-04-27T18:06:53.948Z"
+content_hash: "78757cad08c89d6ac43928b5255bfea724300a59967e4eb88154190e3566a5c4"
 menu_path: ["pageExtensions"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/api-reference/config/next-config-js/output/index.md", "title": "output"}
-nav_next: {"path": "nextjs/docs/app/api-reference/config/next-config-js/poweredByHeader/index.md", "title": "poweredByHeader"}
+version: "latest"
+content_language: "en"
 ---
+[Configuration](/docs/app/api-reference/config)[next.config.js](/docs/app/api-reference/config/next-config-js)pageExtensions
 
 # pageExtensions
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 By default, Next.js accepts files with the following extensions: `.tsx`, `.ts`, `.jsx`, `.js`. This can be modified to allow other extensions like markdown (`.md`, `.mdx`).
 
@@ -32,20 +33,4 @@ const nextConfig = {
 module.exports = withMDX(nextConfig)
 ```
 
-[Previous
-
-output
-
-](/docs/app/api-reference/config/next-config-js/output)
-
-[Next
-
-poweredByHeader
-
-](/docs/app/api-reference/config/next-config-js/poweredByHeader)
-
 Was this helpful?
-
-supported.
-
-Send

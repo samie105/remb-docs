@@ -5,43 +5,13 @@ canonical_url: "https://tailwindcss.com/docs/white-space"
 docset: "tailwind"
 kind: "framework"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:59:43.829Z"
-content_hash: "7ec837ba0b65b8a493623c7aa5bf890809338c4b57328170dd572a63d1c2d60e"
+last_crawled_at: "2026-04-27T20:14:35.067Z"
+content_hash: "dbe4f8af84ea4d0bfb4e03af30065463890752736404d458bb240ca958895498"
 menu_path: ["white-space"]
 section_path: []
-nav_prev: {"path": "tailwind/docs/vertical-align/index.md", "title": "vertical-align"}
-nav_next: {"path": "tailwind/docs/word-break/index.md", "title": "word-break"}
+content_language: "en"
 ---
-
 Utilities for controlling an element's white-space property.
-
-Class
-
-Styles
-
-`whitespace-normal`
-
-`white-space: normal;`
-
-`whitespace-nowrap`
-
-`white-space: nowrap;`
-
-`whitespace-pre`
-
-`white-space: pre;`
-
-`whitespace-pre-line`
-
-`white-space: pre-line;`
-
-`whitespace-pre-wrap`
-
-`white-space: pre-wrap;`
-
-`whitespace-break-spaces`
-
-`white-space: break-spaces;`
 
 ## [Examples](#examples)
 
@@ -113,4 +83,4 @@ Prefix a `white-space` utility with a breakpoint variant like `md:` to only appl
 <p class="whitespace-pre md:whitespace-normal ...">  Lorem ipsum dolor sit amet...</p>
 ```
 
-Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).
+Learn more about using variants in the [variants documentation](https://tailwindcss.com/docs/hover-focus-and-other-states).

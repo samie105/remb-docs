@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/app/api-reference/config"
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:06:36.351Z"
-content_hash: "f775951c0232de81a00c819c72c4cd019144baefed1299c019c4b73a68f593d7"
+last_crawled_at: "2026-04-27T18:05:29.606Z"
+content_hash: "56dc1d48f1a009ef89414d59b3fb4946313c505db41358f167bb13843397e030"
 menu_path: ["Configuration"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/api-reference/functions/userAgent/index.md", "title": "userAgent"}
-nav_next: {"path": "nextjs/docs/app/api-reference/config/next-config-js/index.md", "title": "next.config.js"}
+version: "latest"
+content_language: "en"
 ---
+[App Router](/docs/app)[API Reference](/docs/app/api-reference)Configuration
 
 # Configuration
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 [
 
@@ -37,20 +38,4 @@ Learn how to use and configure the ESLint plugin to catch common issues and prob
 
 ](/docs/app/api-reference/config/eslint)
 
-[Previous
-
-userAgent
-
-](/docs/app/api-reference/functions/userAgent)
-
-[Next
-
-next.config.js
-
-](/docs/app/api-reference/config/next-config-js)
-
 Was this helpful?
-
-supported.
-
-Send

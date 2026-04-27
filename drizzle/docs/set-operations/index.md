@@ -5,14 +5,12 @@ canonical_url: "https://orm.drizzle.team/docs/set-operations"
 docset: "drizzle"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:21:32.585Z"
-content_hash: "af64799bf1251124e8f93e0d5e1e7b18433f2fac4472ec9061453ad7b560e5e9"
+last_crawled_at: "2026-04-27T19:24:41.142Z"
+content_hash: "4cdfbfc293151712a35ea43ac4dc937a9c646b094e6ea4df4fe43f4b12067daf"
 menu_path: ["Set Operations"]
 section_path: []
-nav_prev: {"path": "drizzle/docs/perf-serverless/index.md", "title": "Drizzle Serverless performance"}
-nav_next: {"path": "drizzle/docs/generated-columns/index.md", "title": "Generated Columns"}
+content_language: "en"
 ---
-
 SQL set operations combine the results of multiple query blocks into a single result. The SQL standard defines the following three set operations: `UNION`, `INTERSECT`, `EXCEPT`, `UNION ALL`, `INTERSECT ALL`, `EXCEPT ALL`.
 
 ### Union[](#union)
@@ -39,7 +37,7 @@ builder-pattern
 
 schema.ts
 
-```
+```typescript
 import { union } from 'drizzle-orm/pg-core'
 import { users, customers } from './schema'
 
@@ -51,7 +49,7 @@ const result = await union(
 ).limit(10);
 ```
 
-```
+```sql
 (select "name" from "sellers")
 union
 (select "name" from "customers")
@@ -64,7 +62,7 @@ builder-pattern
 
 schema.ts
 
-```
+```typescript
 import { union } from 'drizzle-orm/mysql-core'
 import { users, customers } from './schema'
 
@@ -76,7 +74,7 @@ const result = await union(
 ).limit(10);
 ```
 
-```
+```sql
 (select `name` from `sellers`)
 union
 (select `name` from `customers`)
@@ -89,7 +87,7 @@ builder-pattern
 
 schema.ts
 
-```
+```typescript
 import { union } from 'drizzle-orm/sqlite-core'
 import { users, customers } from './schema'
 
@@ -101,7 +99,7 @@ const result = await union(
 ).limit(10);
 ```
 
-```
+```sql
 (select "name" from "sellers")
 union 
 (select "name" from "customers")
@@ -114,7 +112,7 @@ builder-pattern
 
 schema.ts
 
-```
+```typescript
 import { union } from 'drizzle-orm/singlestore-core'
 import { users, customers } from './schema'
 
@@ -126,7 +124,7 @@ const result = await union(
 ).limit(10);
 ```
 
-```
+```sql
 (select `name` from `sellers`)
 union
 (select `name` from `customers`)
@@ -139,7 +137,7 @@ builder-pattern
 
 schema.ts
 
-```
+```typescript
 import { union } from 'drizzle-orm/mssql-core'
 import { users, customers } from './schema'
 
@@ -151,7 +149,7 @@ const result = await union(
 ).limit(10);
 ```
 
-```
+```sql
 (select [name] from [sellers])
 union
 (select [name] from [customers])
@@ -164,7 +162,7 @@ builder-pattern
 
 schema.ts
 
-```
+```typescript
 import { union } from 'drizzle-orm/cockroach-core'
 import { users, customers } from './schema'
 
@@ -176,7 +174,7 @@ const result = await union(
 ).limit(10);
 ```
 
-```
+```sql
 (select "name" from "sellers")
 union
 (select "name" from "customers")
@@ -207,7 +205,7 @@ builder-pattern
 
 schema.ts
 
-```
+```typescript
 import { unionAll } from 'drizzle-orm/pg-core'
 import { onlineSales, inStoreSales } from './schema'
 
@@ -217,7 +215,7 @@ const inStoreTransactions = db.select({ transaction: inStoreSales.transactionId 
 const result = await unionAll(onlineTransactions, inStoreTransactions);
 ```
 
-```
+```sql
 select "transaction_id" from "online_sales"
 union all
 select "transaction_id" from "in_store_sales"
@@ -229,7 +227,7 @@ builder-pattern
 
 schema.ts
 
-```
+```typescript
 import { unionAll } from 'drizzle-orm/mysql-core'
 import { onlineSales, inStoreSales } from './schema'
 
@@ -239,7 +237,7 @@ const inStoreTransactions = db.select({ transaction: inStoreSales.transactionId 
 const result = await unionAll(onlineTransactions, inStoreTransactions);
 ```
 
-```
+```sql
 select `transaction_id` from `online_sales`
 union all
 select `transaction_id` from `in_store_sales`
@@ -251,7 +249,7 @@ builder-pattern
 
 schema.ts
 
-```
+```typescript
 import { unionAll } from 'drizzle-orm/sqlite-core'
 import { onlineSales, inStoreSales } from './schema'
 
@@ -261,7 +259,7 @@ const inStoreTransactions = db.select({ transaction: inStoreSales.transactionId 
 const result = await unionAll(onlineTransactions, inStoreTransactions);
 ```
 
-```
+```sql
 select "transaction_id" from "online_sales" 
 union all 
 select "transaction_id" from "in_store_sales"
@@ -277,7 +275,7 @@ builder-pattern
 
 schema.ts
 
-```
+```typescript
 import { unionAll } from 'drizzle-orm/singlestore-core'
 import { onlineSales, inStoreSales } from './schema'
 
@@ -287,7 +285,7 @@ const inStoreTransactions = db.select({ transaction: inStoreSales.transactionId 
 const result = await unionAll(onlineTransactions, inStoreTransactions);
 ```
 
-```
+```sql
 select `transaction_id` from `online_sales`
 union all
 select `transaction_id` from `in_store_sales`
@@ -299,7 +297,7 @@ builder-pattern
 
 schema.ts
 
-```
+```typescript
 import { unionAll } from 'drizzle-orm/mssql-core'
 import { onlineSales, inStoreSales } from './schema'
 
@@ -309,7 +307,7 @@ const inStoreTransactions = db.select({ transaction: inStoreSales.transactionId 
 const result = await unionAll(onlineTransactions, inStoreTransactions);
 ```
 
-```
+```sql
 (select [transaction_id] from [online_sales])
 union all
 (select [transaction_id] from [in_store_sales])
@@ -321,7 +319,7 @@ builder-pattern
 
 schema.ts
 
-```
+```typescript
 import { unionAll } from 'drizzle-orm/cockroach-core'
 import { onlineSales, inStoreSales } from './schema'
 
@@ -331,7 +329,7 @@ const inStoreTransactions = db.select({ transaction: inStoreSales.transactionId 
 const result = await unionAll(onlineTransactions, inStoreTransactions);
 ```
 
-```
+```sql
 select "transaction_id" from "online_sales"
 union all
 select "transaction_id" from "in_store_sales"
@@ -363,7 +361,7 @@ builder-pattern
 
 schema.ts
 
-```
+```typescript
 import { intersect } from 'drizzle-orm/pg-core'
 import { depA, depB } from './schema'
 
@@ -373,7 +371,7 @@ const departmentBCourses = db.select({ courseName: depB.courseName }).from(depB)
 const result = await intersect(departmentACourses, departmentBCourses);
 ```
 
-```
+```sql
 select "course_name" from "department_a_courses"
 intersect
 select "course_name" from "department_b_courses"
@@ -385,7 +383,7 @@ builder-pattern
 
 schema.ts
 
-```
+```typescript
 import { intersect } from 'drizzle-orm/mysql-core'
 import { depA, depB } from './schema'
 
@@ -395,7 +393,7 @@ const departmentBCourses = db.select({ courseName: depB.courseName }).from(depB)
 const result = await intersect(departmentACourses, departmentBCourses);
 ```
 
-```
+```sql
 select `projects_name` from `department_a_projects`
 intersect
 select `projects_name` from `department_b_projects`
@@ -407,7 +405,7 @@ builder-pattern
 
 schema.ts
 
-```
+```typescript
 import { intersect } from 'drizzle-orm/sqlite-core'
 import { depA, depB } from './schema'
 
@@ -417,7 +415,7 @@ const departmentBCourses = db.select({ courseName: depB.courseName }).from(depB)
 const result = await intersect(departmentACourses, departmentBCourses);
 ```
 
-```
+```sql
 select "course_name" from "department_a_courses"
 intersect
 select "course_name" from "department_b_courses"
@@ -429,7 +427,7 @@ builder-pattern
 
 schema.ts
 
-```
+```typescript
 import { intersect } from 'drizzle-orm/singlestore-core'
 import { depA, depB } from './schema'
 
@@ -439,7 +437,7 @@ const departmentBCourses = db.select({ courseName: depB.courseName }).from(depB)
 const result = await intersect(departmentACourses, departmentBCourses);
 ```
 
-```
+```sql
 select `projects_name` from `department_a_projects`
 intersect
 select `projects_name` from `department_b_projects`
@@ -451,7 +449,7 @@ builder-pattern
 
 schema.ts
 
-```
+```typescript
 import { intersect } from 'drizzle-orm/mssql-core'
 import { depA, depB } from './schema'
 
@@ -461,7 +459,7 @@ const departmentBCourses = db.select({ courseName: depB.courseName }).from(depB)
 const result = await intersect(departmentACourses, departmentBCourses);
 ```
 
-```
+```sql
 (select `projects_name` from `department_a_projects`)
 intersect
 (select `projects_name` from `department_b_projects`)
@@ -473,7 +471,7 @@ builder-pattern
 
 schema.ts
 
-```
+```typescript
 import { intersect } from 'drizzle-orm/cockroach-core'
 import { depA, depB } from './schema'
 
@@ -483,7 +481,7 @@ const departmentBCourses = db.select({ courseName: depB.courseName }).from(depB)
 const result = await intersect(departmentACourses, departmentBCourses);
 ```
 
-```
+```sql
 select "course_name" from "department_a_courses"
 intersect
 select "course_name" from "department_b_courses"
@@ -515,7 +513,7 @@ builder-pattern
 
 schema.ts
 
-```
+```typescript
 import { intersectAll } from 'drizzle-orm/pg-core'
 import { regularCustomerOrders, vipCustomerOrders } from './schema'
 
@@ -532,13 +530,13 @@ const vipOrders = db.select({
 const result = await intersectAll(regularOrders, vipOrders);
 ```
 
-```
+```sql
 select "product_id", "quantity_ordered" from "regular_customer_orders"
 intersect all
 select "product_id", "quantity_ordered" from "vip_customer_orders"
 ```
 
-```
+```ts
 import { regularCustomerOrders, vipCustomerOrders } from './schema'
 
 const result = await db
@@ -557,7 +555,7 @@ const result = await db
     );
 ```
 
-```
+```sql
 select "product_id", "quantity_ordered" from "regular_customer_orders"
 intersect all
 select "product_id", "quantity_ordered" from "vip_customer_orders"
@@ -569,7 +567,7 @@ builder-pattern
 
 schema.ts
 
-```
+```typescript
 import { intersectAll } from 'drizzle-orm/mysql-core'
 import { regularCustomerOrders, vipCustomerOrders } from './schema'
 
@@ -586,7 +584,7 @@ const vipOrders = db.select({
 const result = await intersectAll(regularOrders, vipOrders);
 ```
 
-```
+```sql
 select `product_id`, `quantity_ordered` from `regular_customer_orders`
 intersect all
 select `product_id`, `quantity_ordered` from `vip_customer_orders`
@@ -604,7 +602,7 @@ builder-pattern
 
 schema.ts
 
-```
+```typescript
 import { intersectAll } from 'drizzle-orm/cockroach-core'
 import { regularCustomerOrders, vipCustomerOrders } from './schema'
 
@@ -621,13 +619,13 @@ const vipOrders = db.select({
 const result = await intersectAll(regularOrders, vipOrders);
 ```
 
-```
+```sql
 select "product_id", "quantity_ordered" from "regular_customer_orders"
 intersect all
 select "product_id", "quantity_ordered" from "vip_customer_orders"
 ```
 
-```
+```ts
 import { regularCustomerOrders, vipCustomerOrders } from './schema'
 
 const result = await db
@@ -646,7 +644,7 @@ const result = await db
     );
 ```
 
-```
+```sql
 select "product_id", "quantity_ordered" from "regular_customer_orders"
 intersect all
 select "product_id", "quantity_ordered" from "vip_customer_orders"
@@ -678,7 +676,7 @@ builder-pattern
 
 schema.ts
 
-```
+```typescript
 import { except } from 'drizzle-orm/pg-core'
 import { depA, depB } from './schema'
 
@@ -688,7 +686,7 @@ const departmentBCourses = db.select({ courseName: depB.projectsName }).from(dep
 const result = await except(departmentACourses, departmentBCourses);
 ```
 
-```
+```sql
 select "projects_name" from "department_a_projects"
 except
 select "projects_name" from "department_b_projects"
@@ -700,7 +698,7 @@ builder-pattern
 
 schema.ts
 
-```
+```typescript
 import { except } from 'drizzle-orm/mysql-core'
 import { depA, depB } from './schema'
 
@@ -710,7 +708,7 @@ const departmentBCourses = db.select({ courseName: depB.projectsName }).from(dep
 const result = await except(departmentACourses, departmentBCourses);
 ```
 
-```
+```sql
 select `projects_name` from `department_a_projects`
 except
 select `projects_name` from `department_b_projects`
@@ -722,7 +720,7 @@ builder-pattern
 
 schema.ts
 
-```
+```typescript
 import { except } from 'drizzle-orm/sqlite-core'
 import { depA, depB } from './schema'
 
@@ -732,7 +730,7 @@ const departmentBCourses = db.select({ courseName: depB.projectsName }).from(dep
 const result = await except(departmentACourses, departmentBCourses);
 ```
 
-```
+```sql
 select "projects_name" from "department_a_projects" 
 except 
 select "projects_name" from "department_b_projects"
@@ -744,7 +742,7 @@ builder-pattern
 
 schema.ts
 
-```
+```typescript
 import { except } from 'drizzle-orm/singlestore-core'
 import { depA, depB } from './schema'
 
@@ -754,7 +752,7 @@ const departmentBCourses = db.select({ courseName: depB.projectsName }).from(dep
 const result = await except(departmentACourses, departmentBCourses);
 ```
 
-```
+```sql
 select `projects_name` from `department_a_projects`
 except
 select `projects_name` from `department_b_projects`
@@ -766,7 +764,7 @@ builder-pattern
 
 schema.ts
 
-```
+```typescript
 import { except } from 'drizzle-orm/mssql-core'
 import { depA, depB } from './schema'
 
@@ -776,7 +774,7 @@ const departmentBCourses = db.select({ courseName: depB.projectsName }).from(dep
 const result = await except(departmentACourses, departmentBCourses);
 ```
 
-```
+```sql
 (select `projects_name` from `department_a_projects`)
 except
 (select `projects_name` from `department_b_projects`)
@@ -788,7 +786,7 @@ builder-pattern
 
 schema.ts
 
-```
+```typescript
 import { except } from 'drizzle-orm/cockroach-core'
 import { depA, depB } from './schema'
 
@@ -798,7 +796,7 @@ const departmentBCourses = db.select({ courseName: depB.projectsName }).from(dep
 const result = await except(departmentACourses, departmentBCourses);
 ```
 
-```
+```sql
 select "projects_name" from "department_a_projects"
 except
 select "projects_name" from "department_b_projects"
@@ -830,7 +828,7 @@ builder-pattern
 
 schema.ts
 
-```
+```typescript
 import { exceptAll } from 'drizzle-orm/pg-core'
 import { regularCustomerOrders, vipCustomerOrders } from './schema'
 
@@ -847,7 +845,7 @@ const vipOrders = db.select({
 const result = await exceptAll(regularOrders, vipOrders);
 ```
 
-```
+```sql
 select "product_id", "quantity_ordered" from "regular_customer_orders"
 except all
 select "product_id", "quantity_ordered" from "vip_customer_orders"
@@ -859,7 +857,7 @@ builder-pattern
 
 schema.ts
 
-```
+```typescript
 import { exceptAll } from 'drizzle-orm/mysql-core'
 import { regularCustomerOrders, vipCustomerOrders } from './schema'
 
@@ -876,7 +874,7 @@ const vipOrders = db.select({
 const result = await exceptAll(regularOrders, vipOrders);
 ```
 
-```
+```sql
 select `product_id`, `quantity_ordered` from `regular_customer_orders`
 except all
 select `product_id`, `quantity_ordered` from `vip_customer_orders`
@@ -894,7 +892,7 @@ builder-pattern
 
 schema.ts
 
-```
+```typescript
 import { exceptAll } from 'drizzle-orm/cockroach-core'
 import { regularCustomerOrders, vipCustomerOrders } from './schema'
 
@@ -911,7 +909,7 @@ const vipOrders = db.select({
 const result = await exceptAll(regularOrders, vipOrders);
 ```
 
-```
+```sql
 select "product_id", "quantity_ordered" from "regular_customer_orders"
 except all
 select "product_id", "quantity_ordered" from "vip_customer_orders"

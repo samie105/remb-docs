@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/app/guides/static-exports"
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:16:23.729Z"
-content_hash: "8ed568b9aed3c9fd22d5c8d5ffd1ece93c9765f24d1622a6bf6684f7b2748a4a"
+last_crawled_at: "2026-04-27T18:15:37.951Z"
+content_hash: "41f6e22f66fc813fbfe48e0a784fff4354b0088e2c7d60c3912668491b74d370"
 menu_path: ["How to create a static export of your Next.js application"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/guides/single-page-applications/index.md", "title": "How to build single-page applications with Next.js"}
-nav_next: {"path": "nextjs/docs/app/guides/streaming/index.md", "title": "Streaming"}
+version: "latest"
+content_language: "en"
 ---
+[App Router](/docs/app)[Guides](/docs/app/guides)Static Exports
 
 # How to create a static export of your Next.js application
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 Next.js enables starting as a static site or Single-Page Application (SPA), then later optionally upgrading to use features that require a server.
 
@@ -63,8 +64,6 @@ The resulting component will be rendered into static HTML for the initial page l
 
 app/page.tsx
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -82,8 +81,6 @@ export default async function Page() {
 If you want to perform data fetching on the client, you can use a Client Component with [SWR](https://github.com/vercel/swr) to memoize requests.
 
 app/other/page.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -109,8 +106,6 @@ export default function Page() {
 Since route transitions happen client-side, this behaves like a traditional SPA. For example, the following index route allows you to navigate to different posts on the client:
 
 app/page.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -158,8 +153,6 @@ This custom loader will define how to fetch images from a remote source. For exa
 
 my-loader.ts
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -183,8 +176,6 @@ You can then use `next/image` in your application, defining relative paths to th
 
 app/page.tsx
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -200,8 +191,6 @@ export default function Page() {
 Route Handlers will render a static response when running `next build`. Only the `GET` HTTP verb is supported. This can be used to generate static HTML, JSON, TXT, or other files from cached or uncached data. For example:
 
 app/data.json/route.ts
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -238,19 +227,19 @@ export default function ClientComponent() {
 
 Features that require a Node.js server, or dynamic logic that cannot be computed during the build process, are **not** supported:
 
-*   [Dynamic Routes](/docs/app/api-reference/file-conventions/dynamic-routes) with `dynamicParams: true`
-*   [Dynamic Routes](/docs/app/api-reference/file-conventions/dynamic-routes) without `generateStaticParams()`
-*   [Route Handlers](/docs/app/api-reference/file-conventions/route) that rely on Request
-*   [Cookies](/docs/app/api-reference/functions/cookies)
-*   [Rewrites](/docs/app/api-reference/config/next-config-js/rewrites)
-*   [Redirects](/docs/app/api-reference/config/next-config-js/redirects)
-*   [Headers](/docs/app/api-reference/config/next-config-js/headers)
-*   [Proxy](/docs/app/api-reference/file-conventions/proxy)
-*   [Incremental Static Regeneration](/docs/app/guides/incremental-static-regeneration)
-*   [Image Optimization](/docs/app/api-reference/components/image) with the default `loader`
-*   [Draft Mode](/docs/app/guides/draft-mode)
-*   [Server Actions](/docs/app/getting-started/mutating-data)
-*   [Intercepting Routes](/docs/app/api-reference/file-conventions/intercepting-routes)
+-   [Dynamic Routes](/docs/app/api-reference/file-conventions/dynamic-routes) with `dynamicParams: true`
+-   [Dynamic Routes](/docs/app/api-reference/file-conventions/dynamic-routes) without `generateStaticParams()`
+-   [Route Handlers](/docs/app/api-reference/file-conventions/route) that rely on Request
+-   [Cookies](/docs/app/api-reference/functions/cookies)
+-   [Rewrites](/docs/app/api-reference/config/next-config-js/rewrites)
+-   [Redirects](/docs/app/api-reference/config/next-config-js/redirects)
+-   [Headers](/docs/app/api-reference/config/next-config-js/headers)
+-   [Proxy](/docs/app/api-reference/file-conventions/proxy)
+-   [Incremental Static Regeneration](/docs/app/guides/incremental-static-regeneration)
+-   [Image Optimization](/docs/app/api-reference/components/image) with the default `loader`
+-   [Draft Mode](/docs/app/guides/draft-mode)
+-   [Server Actions](/docs/app/getting-started/mutating-data)
+-   [Intercepting Routes](/docs/app/api-reference/file-conventions/intercepting-routes)
 
 Attempting to use any of these features with `next dev` will result in an error, similar to setting the [`dynamic`](/docs/app/guides/caching-without-cache-components#dynamic) option to `error` in the root layout.
 
@@ -264,15 +253,15 @@ With a static export, Next.js can be deployed and hosted on any web server that 
 
 When running `next build`, Next.js generates the static export into the `out` folder. For example, let's say you have the following routes:
 
-*   `/`
-*   `/blog/[id]`
+-   `/`
+-   `/blog/[id]`
 
 After running `next build`, Next.js will generate the following files:
 
-*   `/out/index.html`
-*   `/out/404.html`
-*   `/out/blog/post-1.html`
-*   `/out/blog/post-2.html`
+-   `/out/index.html`
+-   `/out/404.html`
+-   `/out/blog/post-1.html`
+-   `/out/blog/post-2.html`
 
 If you are using a static host like Nginx, you can configure rewrites from incoming requests to the correct files:
 
@@ -304,36 +293,10 @@ server {
 
 ## Version History[](#version-history)
 
-Version
-
-Changes
-
-`v14.0.0`
-
-`next export` has been removed in favor of `"output": "export"`
-
-`v13.4.0`
-
-App Router (Stable) adds enhanced static export support, including using React Server Components and Route Handlers.
-
-`v13.3.0`
-
-`next export` is deprecated and replaced with `"output": "export"`
-
-[Previous
-
-SPAs
-
-](/docs/app/guides/single-page-applications)
-
-[Next
-
-Streaming
-
-](/docs/app/guides/streaming)
+| Version | Changes |
+| --- | --- |
+| `v14.0.0` | `next export` has been removed in favor of `"output": "export"` |
+| `v13.4.0` | App Router (Stable) adds enhanced static export support, including using React Server Components and Route Handlers. |
+| `v13.3.0` | `next export` is deprecated and replaced with `"output": "export"` |
 
 Was this helpful?
-
-supported.
-
-Send

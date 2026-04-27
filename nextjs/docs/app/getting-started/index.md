@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/app/getting-started"
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:12:53.170Z"
-content_hash: "c3bb09528b05cf0ff84badcb1860976c5c9ebda852d8814eeb7c90381f40b4a4"
+last_crawled_at: "2026-04-27T18:11:34.467Z"
+content_hash: "215f5de5f98e7e6c7d4971fa133ad949fa0636e6c5bb8dbee7453d6e43de06be"
 menu_path: ["Getting Started"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/index.md", "title": "Next.js Docs"}
-nav_next: {"path": "nextjs/docs/app/getting-started/installation/index.md", "title": "Installation"}
+version: "latest"
+content_language: "en"
 ---
+[Next.js Docs](/docs)[App Router](/docs/app)Getting Started
 
 # Getting Started
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 Welcome to the Next.js documentation!
 
@@ -25,10 +26,10 @@ This **Getting Started** section will help you create your first Next.js app and
 
 Our documentation assumes some familiarity with web development. Before getting started, it'll help if you're comfortable with:
 
-*   HTML
-*   CSS
-*   JavaScript
-*   React
+-   HTML
+-   CSS
+-   JavaScript
+-   React
 
 If you're new to React or need a refresher, we recommend starting with our [React Foundations course](/learn/react-foundations), and the [Next.js Foundations course](/learn/dashboard-app) that has you building an application as you learn.
 
@@ -144,20 +145,4 @@ Learn how to upgrade your Next.js application to the latest version or canary.
 
 ](/docs/app/getting-started/upgrading)
 
-[Previous
-
-App Router
-
-](/docs/app)
-
-[Next
-
-Installation
-
-](/docs/app/getting-started/installation)
-
 Was this helpful?
-
-supported.
-
-Send

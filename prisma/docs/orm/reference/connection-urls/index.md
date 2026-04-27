@@ -5,42 +5,40 @@ canonical_url: "https://www.prisma.io/docs/orm/reference/connection-urls"
 docset: "prisma"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:34:21.127Z"
-content_hash: "160454ed59b21e7ea34817d0bf55c18182700a6d5314048ebbc31460ecf6b0e7"
+last_crawled_at: "2026-04-27T19:34:40.201Z"
+content_hash: "ece94b96037e7913b0a300194b028848c5abb5c188741163585b917cd251223f"
 menu_path: ["Connection URLs"]
 section_path: []
-nav_prev: {"path": "prisma/docs/orm/reference/prisma-config-reference/index.md", "title": "Config API"}
-nav_next: {"path": "prisma/docs/orm/reference/environment-variables-reference/index.md", "title": "Environment Variables"}
+content_language: "en"
 ---
-
 Learn about the format and syntax Prisma ORM uses for defining database connection URLs for PostgreSQL, MySQL and SQLite
 
-Prisma ORM needs a connection URL to be able to connect to your database, e.g. when sending queries with [Prisma Client](prisma/docs/orm/prisma-client/setup-and-configuration/introduction/index.md) or when changing the database schema with [Prisma Migrate](prisma/docs/orm/prisma-migrate/index.md).
+Prisma ORM needs a connection URL to be able to connect to your database, e.g. when sending queries with [Prisma Client](https://www.prisma.io/docs/orm/prisma-client/setup-and-configuration/introduction) or when changing the database schema with [Prisma Migrate](https://www.prisma.io/docs/orm/prisma-migrate).
 
 The connection URL is provided via the `url` field of a `datasource` block in your Prisma config (or Prisma schema if on version 6). It usually consists of the following components (except for SQLite and [Prisma Postgres](https://www.prisma.io/docs/postgres)):
 
-*   **User**: The name of your database user
-*   **Password**: The password for your database user
-*   **Host**: The IP or domain name of the machine where your database server is running
-*   **Port**: The port on which your database server is running
-*   **Database name**: The name of the database you want to use
+-   **User**: The name of your database user
+-   **Password**: The password for your database user
+-   **Host**: The IP or domain name of the machine where your database server is running
+-   **Port**: The port on which your database server is running
+-   **Database name**: The name of the database you want to use
 
 Make sure you have this information at hand when getting started with Prisma ORM. If you don't have a database server running yet, you can either use a local SQLite database file (see the [Quickstart](https://www.prisma.io/docs/prisma-orm/quickstart/sqlite)) or [setup a free PostgreSQL database with Prisma Postgres](https://www.prisma.io/docs/postgres).
 
 The format of the connection URL depends on the _database connector_ you're using. Prisma ORM generally supports the standard formats for each database. You can find out more about the connection URL of your database on the dedicated docs page:
 
-*   [PostgreSQL](prisma/docs/orm/core-concepts/supported-databases/postgresql/index.md)
-*   [MySQL](prisma/docs/orm/core-concepts/supported-databases/mysql/index.md)
-*   [SQLite](prisma/docs/orm/core-concepts/supported-databases/sqlite/index.md)
-*   [MongoDB](prisma/docs/orm/core-concepts/supported-databases/mongodb/index.md)
-*   [Microsoft SQL Server](prisma/docs/orm/core-concepts/supported-databases/sql-server/index.md)
-*   [CockroachDB](prisma/docs/orm/core-concepts/supported-databases/postgresql/index.md#cockroachdb)
+-   [PostgreSQL](https://www.prisma.io/docs/orm/core-concepts/supported-databases/postgresql)
+-   [MySQL](https://www.prisma.io/docs/orm/core-concepts/supported-databases/mysql)
+-   [SQLite](https://www.prisma.io/docs/orm/core-concepts/supported-databases/sqlite)
+-   [MongoDB](https://www.prisma.io/docs/orm/core-concepts/supported-databases/mongodb)
+-   [Microsoft SQL Server](https://www.prisma.io/docs/orm/core-concepts/supported-databases/sql-server)
+-   [CockroachDB](https://www.prisma.io/docs/orm/core-concepts/supported-databases/postgresql#cockroachdb)
 
 ### [Special characters](#special-characters)
 
 For MySQL, PostgreSQL and CockroachDB you must [percentage-encode special characters](https://developer.mozilla.org/en-US/docs/Glossary/Percent-encoding) in any part of your connection URL - including passwords. For example, `p@$$w0rd` becomes `p%40%24%24w0rd`.
 
-For Microsoft SQL Server, you must [escape special characters](prisma/docs/orm/core-concepts/supported-databases/sql-server/index.md#connection-details) in any part of your connection string.
+For Microsoft SQL Server, you must [escape special characters](https://www.prisma.io/docs/orm/core-concepts/supported-databases/sql-server#connection-details) in any part of your connection string.
 
 Here are examples for the connection URLs of the databases Prisma ORM supports:
 
@@ -48,10 +46,10 @@ Here are examples for the connection URLs of the databases Prisma ORM supports:
 
 [Prisma Postgres](https://www.prisma.io/docs/postgres) is a managed PostgreSQL service running on unikernels. There are several ways to connect to Prisma Postgres:
 
-*   via direct TCP connections (lets you connect via any ORM or database tool)
-*   via pooled TCP connections (recommended for serverless and high-concurrency workloads)
-*   via [Prisma Accelerate](https://www.prisma.io/docs/accelerate) (only supported with Prisma ORM)
-*   locally
+-   via direct TCP connections (lets you connect via any ORM or database tool)
+-   via pooled TCP connections (recommended for serverless and high-concurrency workloads)
+-   via [Prisma Accelerate](https://www.prisma.io/docs/accelerate) (only supported with Prisma ORM)
+-   locally
 
 The connection string formats of these are covered below.
 
@@ -83,6 +81,8 @@ Use a pooled TCP connection string for serverless, bursty, or high-concurrency w
 
 When connecting via Prisma Accelerate, the connection string doesn't require a user/password like a conventional connection string does. Instead, authentication works via an API key:
 
+prisma.config.ts
+
 ```
 export default defineConfig({
   datasource: {
@@ -92,6 +92,8 @@ export default defineConfig({
 ```
 
 In this snippet, `API_KEY` is a placeholder for the API key you are receiving when setting up a new Prismas Postgres instance via the [Prisma Console](https://console.prisma.io/?utm_source=docs&utm_medium=content&utm_content=orm). Here is an example for what a real connection URL to Prisma Postgres may look like:
+
+prisma.config.ts
 
 ```
 export default defineConfig({
@@ -105,6 +107,8 @@ export default defineConfig({
 
 The connection string for connecting to a [local Prisma Postgres](https://www.prisma.io/docs/postgres/database/local-development) instance mirrors the structure of a remote instance via Accelerate:
 
+prisma.config.ts
+
 ```
 export default defineConfig({
   datasource: {
@@ -113,9 +117,11 @@ export default defineConfig({
 });
 ```
 
-However, in this case the `API_KEY` doesn't provide authentication details. Instead, it encodes information about the local Prisma Postgres instance. You can obtain a local connection string via the [`prisma dev`](prisma/docs/orm/reference/prisma-cli-reference/index.md#dev) command.
+However, in this case the `API_KEY` doesn't provide authentication details. Instead, it encodes information about the local Prisma Postgres instance. You can obtain a local connection string via the [`prisma dev`](https://www.prisma.io/docs/orm/reference/prisma-cli-reference#dev) command.
 
 ### [PostgreSQL](#postgresql)
+
+prisma.config.ts
 
 ```
 export default defineConfig({
@@ -127,6 +133,8 @@ export default defineConfig({
 
 ### [MySQL](#mysql)
 
+prisma.config.ts
+
 ```
 export default defineConfig({
   datasource: {
@@ -136,6 +144,8 @@ export default defineConfig({
 ```
 
 ### [Microsoft SQL Server](#microsoft-sql-server)
+
+prisma.config.ts
 
 ```
 export default defineConfig({
@@ -147,6 +157,8 @@ export default defineConfig({
 
 ### [SQLite](#sqlite)
 
+prisma.config.ts
+
 ```
 export default defineConfig({
   datasource: {
@@ -156,6 +168,8 @@ export default defineConfig({
 ```
 
 ### [CockroachDB](#cockroachdb)
+
+prisma.config.ts
 
 ```
 export default defineConfig({
@@ -171,6 +185,8 @@ _Support for MongoDB is limited to [Prisma 6](https://www.prisma.io/docs/v6/orm/
 
 You can also provide the connection URL as an environment variable:
 
+schema.prisma
+
 ```
 datasource db {
   provider = "postgresql"
@@ -181,11 +197,9 @@ You can then either set the environment variable in your terminal or by providin
 
 Prisma ORM reads the connection URL from the dotenv file in the following situations:
 
-*   When it updates the schema during build time
-*   When it connects to the database during run time
+-   When it updates the schema during build time
+-   When it connects to the database during run time
 
 ```
 DATABASE_URL=postgresql://janedoe:mypassword@localhost:5432/mydb
 ```
-
-[Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/reference/connection-urls.mdx)

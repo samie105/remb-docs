@@ -5,14 +5,12 @@ canonical_url: "https://www.prisma.io/docs/orm/prisma-client/special-fields-and-
 docset: "prisma"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:48:06.401Z"
-content_hash: "56f8dfbc50b36b9e0f97e1b9c16bb23e2bf2d9408c9dc4376516614f6b2ea4c6"
+last_crawled_at: "2026-04-27T19:39:43.684Z"
+content_hash: "18c1d6c41b259de6bf2164a679344d1c830242f3b44638704bb585a30d952027"
 menu_path: ["Null and undefined"]
 section_path: []
-nav_prev: {"path": "prisma/docs/orm/prisma-client/special-fields-and-types/composite-types/index.md", "title": "Composite types"}
-nav_next: {"path": "prisma/docs/orm/prisma-client/special-fields-and-types/working-with-composite-ids-and-constraints/index.md", "title": "Working with compound IDs and unique constraints"}
+content_language: "en"
 ---
-
 The `strictUndefinedChecks` preview feature changes how Prisma Client handles `undefined` values, offering better protection against accidental data loss or unintended query behavior.
 
 ### [Enabling strict undefined checks](#enabling-strict-undefined-checks)
@@ -115,40 +113,10 @@ As always, we welcome your feedback on this feature. Please share your thoughts 
 
 Prisma Client differentiates between `null` and `undefined`:
 
-*   `null` is a **value**
-*   `undefined` means **do nothing**
+-   `null` is a **value**
+-   `undefined` means **do nothing**
 
 The data below represents a `User` table. This set of data will be used in all of the examples below:
-
-id
-
-name
-
-email
-
-1
-
-Nikolas
-
-[nikolas@gmail.com](mailto:nikolas@gmail.com)
-
-2
-
-Martin
-
-[martin@gmail.com](mailto:martin@gmail.com)
-
-3
-
-_empty_
-
-[sabin@gmail.com](mailto:sabin@gmail.com)
-
-4
-
-Tyler
-
-[tyler@gmail.com](mailto:tyler@gmail.com)
 
 ### [`null` and `undefined` in queries that affect _many_ records](#null-and-undefined-in-queries-that-affect-many-records)
 
@@ -314,8 +282,8 @@ type Mutation {
 
 However, if you pass `null` values for `authorEmail` or `authorName` on to Prisma Client, the following will happen:
 
-*   If `args.authorEmail` is `null`, the query will **fail**. `email` does not accept `null`.
-*   If `args.authorName` is `null`, Prisma Client changes the value of `name` to `null`. This is probably not how you want an update to work.
+-   If `args.authorEmail` is `null`, the query will **fail**. `email` does not accept `null`.
+-   If `args.authorName` is `null`, Prisma Client changes the value of `name` to `null`. This is probably not how you want an update to work.
 
 ```
 updateUser: (parent, args, ctx: Context) => {
@@ -349,39 +317,13 @@ There are some caveats to filtering with conditionals which might produce unexpe
 
 The following table provides a high-level overview of how the different operators handle 0, 1 and `n` filters.
 
-Operator
+| Operator | 0 filters | 1 filter | n filters |
+| --- | --- | --- | --- |
+| `OR` | return empty list | validate single filter | validate all filters |
+| `AND` | return all items | validate single filter | validate all filters |
+| `NOT` | return all items | validate single filter | validate all filters |
 
-0 filters
-
-1 filter
-
-n filters
-
-`OR`
-
-return empty list
-
-validate single filter
-
-validate all filters
-
-`AND`
-
-return all items
-
-validate single filter
-
-validate all filters
-
-`NOT`
-
-return all items
-
-validate single filter
-
-validate all filters
-
-This example shows how an `undefined` parameter impacts the results returned by a query that uses the [`OR`](prisma/docs/orm/reference/prisma-client-reference/index.md#or) operator.
+This example shows how an `undefined` parameter impacts the results returned by a query that uses the [`OR`](https://www.prisma.io/docs/orm/reference/prisma-client-reference#or) operator.
 
 ```
 interface FormData {
@@ -410,7 +352,7 @@ const users = await prisma.user.findMany({
 
 The query receives filters from a formData object, which includes an optional email property. In this instance, the value of the email property is `undefined`. When this query is run no data is returned.
 
-This is in contrast to the [`AND`](prisma/docs/orm/reference/prisma-client-reference/index.md#and) and [`NOT`](prisma/docs/orm/reference/prisma-client-reference/index.md) operators, which will both return all the users if you pass in an `undefined` value.
+This is in contrast to the [`AND`](https://www.prisma.io/docs/orm/reference/prisma-client-reference#and) and [`NOT`](https://www.prisma.io/docs/orm/reference/prisma-client-reference) operators, which will both return all the users if you pass in an `undefined` value.
 
 > This is because passing an `undefined` value to an `AND` or `NOT` operator is the same as passing nothing at all, meaning the `findMany` query in the example will run without any filters and return all the users.
 

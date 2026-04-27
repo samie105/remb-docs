@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/app/getting-started/caching"
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:13:00.104Z"
-content_hash: "a54790f8c26d342532aaf5870e93b907ca7c661cb4ac010cd896181838e3edd3"
+last_crawled_at: "2026-04-27T18:11:40.895Z"
+content_hash: "67eac6b40d5f118caeb385d90ac8e780eabb831dc0ec0ed3dc5ac9da7dd0e457"
 menu_path: ["Caching"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/getting-started/mutating-data/index.md", "title": "Mutating Data"}
-nav_next: {"path": "nextjs/docs/app/getting-started/revalidating/index.md", "title": "Revalidating"}
+version: "latest"
+content_language: "en"
 ---
+[App Router](/docs/app)[Getting Started](/docs/app/getting-started)Caching
 
 # Caching
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 > This page covers caching with [Cache Components](/docs/app/api-reference/config/next-config-js/cacheComponents), enabled by setting [`cacheComponents: true`](/docs/app/api-reference/config/next-config-js/cacheComponents) in your `next.config.ts` file. If you're not using Cache Components, see the [Caching and Revalidating (Previous Model)](/docs/app/guides/caching-without-cache-components) guide.
 
@@ -26,8 +27,6 @@ Caching is a technique for storing the result of data fetching and other computa
 You can enable Cache Components by adding the [`cacheComponents`](/docs/app/api-reference/config/next-config-js/cacheComponents) option to your Next config file:
 
 next.config.ts
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -47,8 +46,8 @@ export default nextConfig
 
 The [`use cache`](/docs/app/api-reference/directives/use-cache) directive caches the return value of async functions and components. You can apply it at two levels:
 
-*   **Data-level**: Cache a function that fetches or computes data (e.g., `getProducts()`, `getUser(id)`)
-*   **UI-level**: Cache an entire component or page (e.g., `async function BlogPosts()`)
+-   **Data-level**: Cache a function that fetches or computes data (e.g., `getProducts()`, `getUser(id)`)
+-   **UI-level**: Cache an entire component or page (e.g., `async function BlogPosts()`)
 
 > Arguments and any closed-over values from parent scopes automatically become part of the [cache key](/docs/app/api-reference/directives/use-cache#cache-keys), which means different inputs will produce separate cache entries. This enables personalized or parameterized cached content. See [serialization requirements and constraints](/docs/app/api-reference/directives/use-cache#constraints) for details on what can be cached and how arguments work.
 
@@ -138,10 +137,10 @@ The fallback (`<p>Loading posts...</p>`) is included in the static shell, while 
 
 Request-time APIs require information that is only available when a user makes a request. These include:
 
-*   [`cookies`](/docs/app/api-reference/functions/cookies) - User's cookie data
-*   [`headers`](/docs/app/api-reference/functions/headers) - Request headers
-*   [`searchParams`](/docs/app/api-reference/file-conventions/page#searchparams-optional) - URL query parameters
-*   [`params`](/docs/app/api-reference/file-conventions/page#params-optional) - Dynamic route parameters (unless at least one sample is provided via [`generateStaticParams`](/docs/app/api-reference/functions/generate-static-params)).
+-   [`cookies`](/docs/app/api-reference/functions/cookies) - User's cookie data
+-   [`headers`](/docs/app/api-reference/functions/headers) - Request headers
+-   [`searchParams`](/docs/app/api-reference/file-conventions/page#searchparams-optional) - URL query parameters
+-   [`params`](/docs/app/api-reference/file-conventions/page#params-optional) - Dynamic route parameters (unless at least one sample is provided via [`generateStaticParams`](/docs/app/api-reference/functions/generate-static-params)).
 
 Components that access runtime APIs should be wrapped in `<Suspense>`:
 
@@ -274,21 +273,21 @@ export default async function Page() {
 
 At build time, Next.js renders your route's component tree. How each component is handled depends on the APIs it uses:
 
-*   [`use cache`](#usage): the result is cached and included in the static shell
-*   [`<Suspense>`](#streaming-uncached-data): fallback UI is included in the static shell while the content streams at request time
-*   [Deterministic operations](#working-with-deterministic-operations): like pure computations and module imports are automatically included in the static shell
+-   [`use cache`](#usage): the result is cached and included in the static shell
+-   [`<Suspense>`](#streaming-uncached-data): fallback UI is included in the static shell while the content streams at request time
+-   [Deterministic operations](#working-with-deterministic-operations): like pure computations and module imports are automatically included in the static shell
 
 This generates a static shell consisting of HTML for initial page loads and a serialized [RSC Payload](/docs/app/getting-started/server-and-client-components#on-the-server) for client-side navigation, ensuring the browser receives fully rendered content instantly whether users navigate directly to the URL or transition from another page.
 
-![Partially re-rendered Product Page showing static nav and product information, and dynamic cart and recommended products](/_next/image?url=https%3A%2F%2Fh8DxKfmAPhn8O0p3.public.blob.vercel-storage.com%2Flearn%2Flight%2Fthinking-in-ppr.png&w=3840&q=75)![Partially re-rendered Product Page showing static nav and product information, and dynamic cart and recommended products](/_next/image?url=https%3A%2F%2Fh8DxKfmAPhn8O0p3.public.blob.vercel-storage.com%2Flearn%2Fdark%2Fthinking-in-ppr.png&w=3840&q=75)
+![Partially re-rendered Product Page showing static nav and product information, and dynamic cart and recommended products](https://h8DxKfmAPhn8O0p3.public.blob.vercel-storage.com/learn/light/thinking-in-ppr.png)
 
 This rendering approach is called **Partial Prerendering (PPR)**, and it's the default behavior with Cache Components.
 
 > You can verify that a route was fully prerendered by checking the [build output summary](/docs/app/api-reference/cli/next#next-build-options). Alternatively, see what content was added to the static shell of any page by viewing the page source in your browser.
 
-![Diagram showing partially rendered page on the client, with loading UI for chunks that are being streamed.](/_next/image?url=https%3A%2F%2Fh8DxKfmAPhn8O0p3.public.blob.vercel-storage.com%2Fdocs%2Flight%2Fserver-rendering-with-streaming.png&w=3840&q=75)![Diagram showing partially rendered page on the client, with loading UI for chunks that are being streamed.](/_next/image?url=https%3A%2F%2Fh8DxKfmAPhn8O0p3.public.blob.vercel-storage.com%2Fdocs%2Fdark%2Fserver-rendering-with-streaming.png&w=3840&q=75)
+![Diagram showing partially rendered page on the client, with loading UI for chunks that are being streamed.](https://h8DxKfmAPhn8O0p3.public.blob.vercel-storage.com/docs/light/server-rendering-with-streaming.png)
 
-Next.js requires you to explicitly handle components that can't complete during prerendering. If they aren't wrapped in `<Suspense>` or marked with `use cache`, you'll see an [`Uncached data was accessed outside of <Suspense>`](nextjs/docs/messages/blocking-route/index.md) error during development and build time.
+Next.js requires you to explicitly handle components that can't complete during prerendering. If they aren't wrapped in `<Suspense>` or marked with `use cache`, you'll see an [`Uncached data was accessed outside of <Suspense>`](https://nextjs.org/docs/messages/blocking-route) error during development and build time.
 
 > **🎥 Watch:** Why Partial Prerendering and how it works → [YouTube (10 minutes)](https://www.youtube.com/watch?v=MTcPrTIBkpA).
 
@@ -444,20 +443,4 @@ Learn how to enable the cacheComponents flag in Next.js.
 
 ](/docs/app/api-reference/config/next-config-js/cacheComponents)
 
-[Previous
-
-Mutating Data
-
-](/docs/app/getting-started/mutating-data)
-
-[Next
-
-Revalidating
-
-](/docs/app/getting-started/revalidating)
-
 Was this helpful?
-
-supported.
-
-Send

@@ -5,13 +5,12 @@ canonical_url: "https://docs.deno.com/api/web/events"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:12:50.880Z"
-content_hash: "15bd097157f6ab42852c2537fdc8e2e911fdf9d9aaf379fa339060e3aa38f20e"
+last_crawled_at: "2026-04-27T17:58:02.340Z"
+content_hash: "e5c0ea997fe4d6b30f0f3023314eb3165cefce22d067ff0960395d99766302c9"
 menu_path: ["Events - Web documentation"]
 section_path: []
+content_language: "en"
 ---
-### Functions [#](#Functions)
-
 f
 
 [addEventListener](./././~/addEventListener "addEventListener")
@@ -30,17 +29,15 @@ f
 
 Remove a previously registered event listener from the global scope
 
-### Interfaces [#](#Interfaces)
-
 I
 
 [AddEventListenerOptions](./././~/AddEventListenerOptions "AddEventListenerOptions")
 
 Options for configuring an event listener via `addEventListener`.
 
-*   [once](./././~/AddEventListenerOptions#property_once)
-*   [passive](./././~/AddEventListenerOptions#property_passive)
-*   [signal](./././~/AddEventListenerOptions#property_signal)
+-   [once](./././~/AddEventListenerOptions#property_once)
+-   [passive](./././~/AddEventListenerOptions#property_passive)
+-   [signal](./././~/AddEventListenerOptions#property_signal)
 
 I
 
@@ -50,8 +47,8 @@ v
 
 No documentation available
 
-*   [detail](./././~/CustomEvent#property_detail)
-*   [prototype](./././~/CustomEvent#property_prototype)
+-   [detail](./././~/CustomEvent#property_detail)
+-   [prototype](./././~/CustomEvent#property_prototype)
 
 I
 
@@ -59,7 +56,7 @@ I
 
 No documentation available
 
-*   [detail](./././~/CustomEventInit#property_detail)
+-   [detail](./././~/CustomEventInit#property_detail)
 
 I
 
@@ -69,12 +66,12 @@ v
 
 No documentation available
 
-*   [colno](./././~/ErrorEvent#property_colno)
-*   [error](./././~/ErrorEvent#property_error)
-*   [filename](./././~/ErrorEvent#property_filename)
-*   [lineno](./././~/ErrorEvent#property_lineno)
-*   [message](./././~/ErrorEvent#property_message)
-*   [prototype](./././~/ErrorEvent#property_prototype)
+-   [colno](./././~/ErrorEvent#property_colno)
+-   [error](./././~/ErrorEvent#property_error)
+-   [filename](./././~/ErrorEvent#property_filename)
+-   [lineno](./././~/ErrorEvent#property_lineno)
+-   [message](./././~/ErrorEvent#property_message)
+-   [prototype](./././~/ErrorEvent#property_prototype)
 
 I
 
@@ -82,11 +79,11 @@ I
 
 No documentation available
 
-*   [colno](./././~/ErrorEventInit#property_colno)
-*   [error](./././~/ErrorEventInit#property_error)
-*   [filename](./././~/ErrorEventInit#property_filename)
-*   [lineno](./././~/ErrorEventInit#property_lineno)
-*   [message](./././~/ErrorEventInit#property_message)
+-   [colno](./././~/ErrorEventInit#property_colno)
+-   [error](./././~/ErrorEventInit#property_error)
+-   [filename](./././~/ErrorEventInit#property_filename)
+-   [lineno](./././~/ErrorEventInit#property_lineno)
+-   [message](./././~/ErrorEventInit#property_message)
 
 I
 
@@ -96,29 +93,29 @@ v
 
 An event which takes place in the DOM.
 
-*   [AT\_TARGET](./././~/Event#property_at_target)
-*   [BUBBLING\_PHASE](./././~/Event#property_bubbling_phase)
-*   [CAPTURING\_PHASE](./././~/Event#property_capturing_phase)
-*   [NONE](./././~/Event#property_none)
-*   [bubbles](./././~/Event#property_bubbles)
-*   [cancelBubble](./././~/Event#property_cancelbubble)
-*   [cancelable](./././~/Event#property_cancelable)
-*   [composed](./././~/Event#property_composed)
-*   [composedPath](./././~/Event#method_composedpath_0)
-*   [currentTarget](./././~/Event#property_currenttarget)
-*   [defaultPrevented](./././~/Event#property_defaultprevented)
-*   [eventPhase](./././~/Event#property_eventphase)
-*   [initEvent](./././~/Event#method_initevent_0)
-*   [isTrusted](./././~/Event#property_istrusted)
-*   [preventDefault](./././~/Event#method_preventdefault_0)
-*   [prototype](./././~/Event#property_prototype)
-*   [returnValue](./././~/Event#property_returnvalue)
-*   [srcElement](./././~/Event#property_srcelement)
-*   [stopImmediatePropagation](./././~/Event#method_stopimmediatepropagation_0)
-*   [stopPropagation](./././~/Event#method_stoppropagation_0)
-*   [target](./././~/Event#property_target)
-*   [timeStamp](./././~/Event#property_timestamp)
-*   [type](./././~/Event#property_type)
+-   [AT\_TARGET](./././~/Event#property_at_target)
+-   [BUBBLING\_PHASE](./././~/Event#property_bubbling_phase)
+-   [CAPTURING\_PHASE](./././~/Event#property_capturing_phase)
+-   [NONE](./././~/Event#property_none)
+-   [bubbles](./././~/Event#property_bubbles)
+-   [cancelBubble](./././~/Event#property_cancelbubble)
+-   [cancelable](./././~/Event#property_cancelable)
+-   [composed](./././~/Event#property_composed)
+-   [composedPath](./././~/Event#method_composedpath_0)
+-   [currentTarget](./././~/Event#property_currenttarget)
+-   [defaultPrevented](./././~/Event#property_defaultprevented)
+-   [eventPhase](./././~/Event#property_eventphase)
+-   [initEvent](./././~/Event#method_initevent_0)
+-   [isTrusted](./././~/Event#property_istrusted)
+-   [preventDefault](./././~/Event#method_preventdefault_0)
+-   [prototype](./././~/Event#property_prototype)
+-   [returnValue](./././~/Event#property_returnvalue)
+-   [srcElement](./././~/Event#property_srcelement)
+-   [stopImmediatePropagation](./././~/Event#method_stopimmediatepropagation_0)
+-   [stopPropagation](./././~/Event#method_stoppropagation_0)
+-   [target](./././~/Event#property_target)
+-   [timeStamp](./././~/Event#property_timestamp)
+-   [type](./././~/Event#property_type)
 
 I
 
@@ -126,9 +123,9 @@ I
 
 No documentation available
 
-*   [bubbles](./././~/EventInit#property_bubbles)
-*   [cancelable](./././~/EventInit#property_cancelable)
-*   [composed](./././~/EventInit#property_composed)
+-   [bubbles](./././~/EventInit#property_bubbles)
+-   [cancelable](./././~/EventInit#property_cancelable)
+-   [composed](./././~/EventInit#property_composed)
 
 I
 
@@ -142,7 +139,7 @@ I
 
 The `EventListenerObject` interface represents an object that can handle events dispatched by an `EventTarget` object.
 
-*   [handleEvent](./././~/EventListenerObject#method_handleevent_0)
+-   [handleEvent](./././~/EventListenerObject#method_handleevent_0)
 
 I
 
@@ -150,7 +147,7 @@ I
 
 No documentation available
 
-*   [capture](./././~/EventListenerOptions#property_capture)
+-   [capture](./././~/EventListenerOptions#property_capture)
 
 I
 
@@ -160,10 +157,10 @@ v
 
 EventTarget is a DOM interface implemented by objects that can receive events and may have listeners for them.
 
-*   [addEventListener](./././~/EventTarget#method_addeventlistener_0)
-*   [dispatchEvent](./././~/EventTarget#method_dispatchevent_0)
-*   [prototype](./././~/EventTarget#property_prototype)
-*   [removeEventListener](./././~/EventTarget#method_removeeventlistener_0)
+-   [addEventListener](./././~/EventTarget#method_addeventlistener_0)
+-   [dispatchEvent](./././~/EventTarget#method_dispatchevent_0)
+-   [prototype](./././~/EventTarget#property_prototype)
+-   [removeEventListener](./././~/EventTarget#method_removeeventlistener_0)
 
 I
 
@@ -173,13 +170,13 @@ v
 
 No documentation available
 
-*   [data](./././~/MessageEvent#property_data)
-*   [initMessageEvent](./././~/MessageEvent#method_initmessageevent_0)
-*   [lastEventId](./././~/MessageEvent#property_lasteventid)
-*   [origin](./././~/MessageEvent#property_origin)
-*   [ports](./././~/MessageEvent#property_ports)
-*   [prototype](./././~/MessageEvent#property_prototype)
-*   [source](./././~/MessageEvent#property_source)
+-   [data](./././~/MessageEvent#property_data)
+-   [initMessageEvent](./././~/MessageEvent#method_initmessageevent_0)
+-   [lastEventId](./././~/MessageEvent#property_lasteventid)
+-   [origin](./././~/MessageEvent#property_origin)
+-   [ports](./././~/MessageEvent#property_ports)
+-   [prototype](./././~/MessageEvent#property_prototype)
+-   [source](./././~/MessageEvent#property_source)
 
 I
 
@@ -187,11 +184,11 @@ I
 
 No documentation available
 
-*   [data](./././~/MessageEventInit#property_data)
-*   [lastEventId](./././~/MessageEventInit#property_lasteventid)
-*   [origin](./././~/MessageEventInit#property_origin)
-*   [ports](./././~/MessageEventInit#property_ports)
-*   [source](./././~/MessageEventInit#property_source)
+-   [data](./././~/MessageEventInit#property_data)
+-   [lastEventId](./././~/MessageEventInit#property_lasteventid)
+-   [origin](./././~/MessageEventInit#property_origin)
+-   [ports](./././~/MessageEventInit#property_ports)
+-   [source](./././~/MessageEventInit#property_source)
 
 I
 

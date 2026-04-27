@@ -5,19 +5,20 @@ canonical_url: "https://nextjs.org/docs/app/api-reference/config/next-config-js/
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:07:24.636Z"
-content_hash: "958c73c1e92f642d1cfc56deaa476dc50a9d3e94e0f9817821c7d67205d9f959"
+last_crawled_at: "2026-04-27T18:06:17.670Z"
+content_hash: "24d817d41355fdd815be6fe16b5ff622cc55a2c9e233b90dcc2bed90b3ac016a"
 menu_path: ["env"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/api-reference/config/next-config-js/distDir/index.md", "title": "distDir"}
-nav_next: {"path": "nextjs/docs/app/api-reference/config/next-config-js/expireTime/index.md", "title": "expireTime"}
+version: "latest"
+content_language: "en"
 ---
+[Configuration](/docs/app/api-reference/config)[next.config.js](/docs/app/api-reference/config/next-config-js)env
 
 # env
 
 This is a legacy API and no longer recommended. It's still supported for backward compatibility.
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 > Since the release of [Next.js 9.4](https://nextjs.org/blog/next-9-4) we now have a more intuitive and ergonomic experience for [adding environment variables](/docs/app/guides/environment-variables). Give it a try!
 
@@ -59,20 +60,4 @@ Will end up being:
 return <h1>The value of customKey is: {'my-value'}</h1>
 ```
 
-[Previous
-
-distDir
-
-](/docs/app/api-reference/config/next-config-js/distDir)
-
-[Next
-
-expireTime
-
-](/docs/app/api-reference/config/next-config-js/expireTime)
-
 Was this helpful?
-
-supported.
-
-Send

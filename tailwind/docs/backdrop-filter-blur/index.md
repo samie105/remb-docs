@@ -5,65 +5,76 @@ canonical_url: "https://tailwindcss.com/docs/backdrop-filter-blur"
 docset: "tailwind"
 kind: "framework"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:08:58.910Z"
-content_hash: "9dc3f5cc2f815236d1e4e39432a291b3f2beadf0ef08647db3c6040b498ee144"
+last_crawled_at: "2026-04-27T20:28:02.219Z"
+content_hash: "82ab80afb4731bc7857e670afa301e95339a3d6a685a21e4b4bdd54c6cec0659"
 menu_path: ["backdrop-filter: blur()"]
 section_path: []
-nav_prev: {"path": "tailwind/docs/backdrop-filter/index.md", "title": "backdrop-filter"}
-nav_next: {"path": "tailwind/docs/backdrop-filter-brightness/index.md", "title": "backdrop-filter: brightness()"}
+content_language: "en"
 ---
+[](/)
+
+[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
+
+1.  Filters
+2.  blur
+
+Filters
 
 # backdrop-filter: blur()
 
 Utilities for applying backdrop blur filters to an element.
 
-Class
-
-Styles
-
-`backdrop-blur-xs`
-
+| Class | Styles |
+| --- | --- |
+| `backdrop-blur-xs` | 
 `backdrop-filter: blur(var(--blur-xs)); /* 4px */`
 
-`backdrop-blur-sm`
+ |
+| `backdrop-blur-sm` | 
 
 `backdrop-filter: blur(var(--blur-sm)); /* 8px */`
 
-`backdrop-blur-md`
+ |
+| `backdrop-blur-md` | 
 
 `backdrop-filter: blur(var(--blur-md)); /* 12px */`
 
-`backdrop-blur-lg`
+ |
+| `backdrop-blur-lg` | 
 
 `backdrop-filter: blur(var(--blur-lg)); /* 16px */`
 
-`backdrop-blur-xl`
+ |
+| `backdrop-blur-xl` | 
 
 `backdrop-filter: blur(var(--blur-xl)); /* 24px */`
 
-`backdrop-blur-2xl`
+ |
+| `backdrop-blur-2xl` | 
 
 `backdrop-filter: blur(var(--blur-2xl)); /* 40px */`
 
-`backdrop-blur-3xl`
+ |
+| `backdrop-blur-3xl` | 
 
 `backdrop-filter: blur(var(--blur-3xl)); /* 64px */`
 
-`backdrop-blur-none`
+ |
+| `backdrop-blur-none` | 
 
 `backdrop-filter: ;`
 
-`backdrop-blur-(<custom-property>)`
+ |
+| `backdrop-blur-(<custom-property>)` | 
 
 `backdrop-filter: blur(var(<custom-property>));`
 
-`backdrop-blur-[<value>]`
+ |
+| `backdrop-blur-[<value>]` | 
 
 `backdrop-filter: blur(<value>);`
 
-## [Examples](#examples)
-
-### [Basic example](#basic-example)
+ |
 
 Use utilities like `backdrop-blur-sm` and `backdrop-blur-lg` to control an element’s backdrop blur:
 
@@ -83,8 +94,6 @@ backdrop-blur-md
 <div class="bg-[url(/img/mountains.jpg)]">  <div class="bg-white/30 backdrop-blur-none ..."></div></div><div class="bg-[url(/img/mountains.jpg)]">  <div class="bg-white/30 backdrop-blur-sm ..."></div></div><div class="bg-[url(/img/mountains.jpg)]">  <div class="bg-white/30 backdrop-blur-md ..."></div></div>
 ```
 
-### [Using a custom value](#using-a-custom-value)
-
 Use the `backdrop-blur-[<value>]` syntax to set the backdrop blur based on a completely custom value:
 
 ```
@@ -99,8 +108,6 @@ For CSS variables, you can also use the `backdrop-blur-(<custom-property>)` synt
 
 This is just a shorthand for `backdrop-blur-[var(<custom-property>)]` that adds the `var()` function for you automatically.
 
-### [Responsive design](#responsive-design)
-
 Prefix a `backdrop-filter: blur()` utility with a breakpoint variant like `md:` to only apply the utility at medium screen sizes and above:
 
 ```
@@ -108,8 +115,6 @@ Prefix a `backdrop-filter: blur()` utility with a breakpoint variant like `md:` 
 ```
 
 Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
-
-## [Customizing your theme](#customizing-your-theme)
 
 Use the `--blur-*` theme variables to customize the backdrop blur utilities in your project:
 
@@ -127,12 +132,12 @@ Learn more about customizing your theme in the [theme documentation](/docs/theme
 
 ### On this page
 
-*   [Quick reference](#quick-reference)
-*   [Examples](#examples)
-    *   [Basic example](#basic-example)
-    *   [Using a custom value](#using-a-custom-value)
-    *   [Responsive design](#responsive-design)
-*   [Customizing your theme](#customizing-your-theme)
+-   [Quick reference](#quick-reference)
+-   [Examples](#examples)
+    -   [Basic example](#basic-example)
+    -   [Using a custom value](#using-a-custom-value)
+    -   [Responsive design](#responsive-design)
+-   [Customizing your theme](#customizing-your-theme)
 
 [
 

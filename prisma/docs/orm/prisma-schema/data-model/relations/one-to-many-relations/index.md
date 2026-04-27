@@ -5,18 +5,12 @@ canonical_url: "https://www.prisma.io/docs/orm/prisma-schema/data-model/relation
 docset: "prisma"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:55:22.914Z"
-content_hash: "ac17925afb4a25849c343292c8e320b106bbe05799b7ab14a37aef0db7279984"
+last_crawled_at: "2026-04-27T19:44:47.260Z"
+content_hash: "da87fa2b0c5e95f3108d298b2d5e36069682f8fad08e652fca9013b98e3a8f25"
 menu_path: ["One-to-many relations"]
 section_path: []
-nav_prev: {"path": "prisma/docs/orm/prisma-schema/data-model/relations/many-to-many-relations/index.md", "title": "Many-to-many relations"}
-nav_next: {"path": "prisma/docs/orm/prisma-schema/data-model/relations/one-to-one-relations/index.md", "title": "One-to-one relations"}
+content_language: "en"
 ---
-
-Data Model
-
-Relations
-
 How to define and work with one-to-many relations in Prisma.
 
 One-to-many (1-n) relations connect one record on one side to zero or more records on the other side:
@@ -36,8 +30,8 @@ model Post {
 
 This expresses:
 
-*   A user can have zero or more posts
-*   A post must always have an author
+-   A user can have zero or more posts
+-   A post must always have an author
 
 You can also reference a non-ID field with `@unique`:
 
@@ -98,5 +92,3 @@ model Post {
   authorId Int
 }
 ```
-
-[Edit on GitHub](https://github.com/prisma/docs/edit/main/apps/docs/content/docs/orm/prisma-schema/data-model/relations/one-to-many-relations.mdx)

@@ -5,17 +5,84 @@ canonical_url: "https://www.prisma.io/docs/orm/more/dev-environment/environment-
 docset: "prisma"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:42:59.741Z"
-content_hash: "295c6e8ab7fbf59168a39c923f738e726cd2e3e7c37692f6767655c37dd29003"
+last_crawled_at: "2026-04-27T19:37:32.048Z"
+content_hash: "2367755ce77a040e3d7ccd1fa606d6f06886eff2288a8fd858c018b6ec509821"
 menu_path: ["Environment variables"]
 section_path: []
-nav_prev: {"path": "prisma/docs/orm/more/dev-environment/editor-setup/index.md", "title": "Editor setup"}
-nav_next: {"path": "prisma/docs/orm/more/troubleshooting/bundler-issues/index.md", "title": "Bundler issues"}
+tab_variants: ["Command Prompt","PowerShell","Command Prompt","PowerShell"]
+content_language: "en"
 ---
+An environment variable is a key value pair of string data that is stored on your machine's local environment. Refer to our [Environment variables reference documentation](https://www.prisma.io/docs/orm/reference/environment-variables-reference) for specific details.
 
+Typically the name of the variable is uppercase, this is then followed by an equals sign then the value of the variable:
+
+```
+MY_VALUE=prisma
+```
+
+The environment variable belongs to the environment where a process is running. Any program can read and create these environment variables. They are a cheap and effective way to store simple information.
+
+Prisma ORM always reads environment variables from the system's environment.
+
+When you initialize Prisma ORM in your project with `prisma init`, it creates a convenience `.env` file for you to set your [`connection url`](https://www.prisma.io/docs/orm/reference/connection-urls) as an environment variable. When you use Prisma CLI or Prisma Client, the `.env` file content and the variables defined in it are added to the [`process.env` object](https://nodejs.org/api/process.html#processenv), where Prisma ORM can read it and use it.
+
+### [Using an `.env` file](#using-an-env-file)
+
+The Prisma CLI looks for `.env` files, in order, in the following locations:
+
+1.  In the root folder of your project (`./.env`)
+2.  From the same folder as the schema specified by the `--schema` argument
+3.  From the same folder as the schema taken from `"prisma": {"schema": "/path/to/schema.prisma"}` in `package.json`
+4.  From the `./prisma` folder
+
+If a `.env` file is located in step 1., but additional, clashing `.env` variables are located in steps 2. - 4., the CLI will throw an error. For example, if you specify a `DATABASE_URL` variable in two different `.env` files, you will get the following error:
+
+```
+Error: There is a conflict between env vars in .env and prisma/.env
+Conflicting env vars:
+  DATABASE_URL
+
+We suggest to move the contents of prisma/.env to .env to consolidate your env vars.
+```
+
+The following table describes where the Prisma CLI looks for the `.env` file:
+
+| **Command** | **schema location** | **`.env` file locations checked, in order** |
+| --- | --- | --- |
+| `prisma [command]` | `./prisma/schema.prisma` | `./.env`  
+`./prisma/.env` |
+| `prisma [command] --schema=./a/b/schema.prisma` | `./a/b/schema.prisma` | `./.env`  
+`./a/b/.env`  
+`./prisma/.env` |
+| `prisma [command]` | `"prisma": {"schema": "/path/to/schema.prisma"}` | `.env`  
+`./path/to/schema/.env`  
+`./prisma/.env` |
+| `prisma [command]` | No schema (for example, when running `prisma db pull` in an empty directory) | `./.env`  
+`./prisma/.env` |
+
+Any environment variables defined in that `.env` file will automatically be loaded when running a Prisma CLI command.
+
+Refer to the `dotenv` documentation for information about [what happens if an environment variable is defined in two places](https://www.npmjs.com/package/dotenv#what-happens-to-environment-variables-that-were-already-set).
+
+#### [Expanding variables with `.env` files](#expanding-variables-with-env-files)
+
+Variables stored in `.env` files can be expanded using the format specified by [dotenv-expand](https://github.com/motdotla/dotenv-expand).
+
+.env
+
+```
+DATABASE_URL=postgresql://test:test@localhost:5432/test
+DATABASE_URL_WITH_SCHEMA=${DATABASE_URL}?schema=public
+```
+
+Additionally, you can use environment variables in the expansion that are set _outside_ of the `.env` file. For example a database URL that is set on a PaaS like Heroku or similar:
+
+```
 # environment variable already set in the environment of the system
 export DATABASE_URL=postgresql://test:test@localhost:5432/test
 ```
+
+.env
 
 ```
 DATABASE_URL_WITH_SCHEMA=${DATABASE_URL}?schema=foo
@@ -98,18 +165,22 @@ There is a risk that your production database could be deleted if you store diff
 
 One solution is to have multiple `.env` files which each represent different environments. In practice, this means you create a file for each of your environments:
 
-*   `.env.development`
-*   `.env.sample`
+-   `.env.development`
+-   `.env.sample`
 
 Then using a package like [`dotenv-cli`](https://www.npmjs.com/package/dotenv-cli), you can load the correct connection URL for the environment you are working in.
 
 1.  Rename your `.env` file to `.env.development`
+
+.env.development
 
 ```
 DATABASE_URL="postgresql://prisma:prisma@localhost:5433/dev"
 ```
 
 2.  Create a new `.env.sample` file and change the database name to `sample` (or your preferred name)
+
+.env.sample
 
 ```
 DATABASE_URL="postgresql://prisma:prisma@localhost:5433/sample"
@@ -127,6 +198,8 @@ The below script uses `dotenv-cli` to pass the `.env.sample` environment file (w
 
 #### [Migration script](#migration-script)
 
+package.json
+
 ```
   "scripts": {
     "migrate:postgres": "dotenv -e .env.sample -- npx prisma migrate deploy",
@@ -135,13 +208,15 @@ The below script uses `dotenv-cli` to pass the `.env.sample` environment file (w
 
 #### [Running tests on different environments](#running-tests-on-different-environments)
 
-When running tests, we advise you to [mock Prisma Client](prisma/docs/orm/prisma-client/testing/unit-testing/index.md#mocking-prisma-client). In doing so, you need to tell Jest which environment it should use when running its tests.
+When running tests, we advise you to [mock Prisma Client](https://www.prisma.io/docs/orm/prisma-client/testing/unit-testing#mocking-prisma-client). In doing so, you need to tell Jest which environment it should use when running its tests.
 
 By default, Prisma Client will use the environment specified in the default `.env` file located at the project's root.
 
 If you have created a separate `.env.sample` file to specify your testing database, then this environment will need to be passed to Jest.
 
 The below script uses `dotenv-cli` to pass the `.env.sample` environment file (which holds a `DATABASE_URL` connection string) to Jest.
+
+package.json
 
 ```
   "scripts": {

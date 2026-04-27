@@ -5,14 +5,12 @@ canonical_url: "https://orm.drizzle.team/docs/connect-cloudflare-d1"
 docset: "drizzle"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:37:56.332Z"
-content_hash: "5af2dae5ef5550187c5b3c79ca0fe80196906dc6e8903c104bf9726b3019229f"
+last_crawled_at: "2026-04-27T18:28:00.555Z"
+content_hash: "abccaa4b7cba617c050123bdd04aeb3d3b351dc345171407adb5f984f05e9b86"
 menu_path: ["Drizzle <> Cloudflare D1"]
 section_path: []
-nav_prev: {"path": "drizzle/docs/connect-sqlite-cloud/index.md", "title": "Drizzle <> SQLite Cloud"}
-nav_next: {"path": "drizzle/docs/connect-bun-sqlite/index.md", "title": "Drizzle <> Bun SQLite"}
+content_language: "en"
 ---
-
 According to the **[official website](https://developers.cloudflare.com/d1/)**, D1 is Cloudflare’s first queryable relational database.
 
 Drizzle ORM fully supports the Cloudflare D1 database and Cloudflare Workers environment. We embrace SQL dialects and dialect specific drivers and syntax and mirror most popular SQLite-like `all`, `get`, `values` and `run` query methods syntax.
@@ -20,14 +18,6 @@ Drizzle ORM fully supports the Cloudflare D1 database and Cloudflare Workers env
 To setup project for your Cloudflare D1 please refer to **[official docs.](https://developers.cloudflare.com/d1/)**
 
 #### Step 1 - Install packages[](#step-1---install-packages)
-
-npm
-
-yarn
-
-pnpm
-
-bun
 
 ```
 npm i drizzle-orm
@@ -57,7 +47,7 @@ wrangler.json
 
 wrangler.toml
 
-```
+```json
 {
     "name": "YOUR_PROJECT_NAME",
     "main": "src/index.ts",
@@ -76,7 +66,7 @@ wrangler.toml
 }
 ```
 
-```
+```toml
 name = "YOUR_PROJECT_NAME"
 main = "src/index.ts"
 compatibility_date = "2022-11-07"
@@ -91,7 +81,7 @@ migrations_dir = "drizzle/migrations"
 
 Make your first D1 query:
 
-```
+```typescript
 import { drizzle } from 'drizzle-orm/d1';
 
 export interface Env {

@@ -5,13 +5,14 @@ canonical_url: "https://nextjs.org/docs/messages/no-sync-scripts"
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:18:36.036Z"
-content_hash: "ba131c508d04522c36de7b0e1cd4ecb0e500d5e0fe5daafe8a2726164f771601"
+last_crawled_at: "2026-04-27T18:18:00.196Z"
+content_hash: "20943e8fd62c1fc97f3d6bf83518c79d344678f6b8b9d33ffd080bd3ff27861c"
 menu_path: ["No Sync Scripts"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/messages/no-styled-jsx-in-document/index.md", "title": "No `styled-jsx` in `_document`"}
-nav_next: {"path": "nextjs/docs/messages/no-title-in-document-head/index.md", "title": "No Title in Document Head"}
+version: "latest"
+content_language: "en"
 ---
+[Docs](/docs)[Errors](/docs)No Sync Scripts
 
 # No Sync Scripts
 
@@ -51,10 +52,6 @@ export default Home
 
 ## Useful Links[](#useful-links)
 
-*   [Efficiently load third-party JavaScript](https://web.dev/efficiently-load-third-party-javascript/)
+-   [Efficiently load third-party JavaScript](https://web.dev/efficiently-load-third-party-javascript/)
 
 Was this helpful?
-
-supported.
-
-Send

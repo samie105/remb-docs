@@ -5,17 +5,19 @@ canonical_url: "https://nextjs.org/docs/app/getting-started/installation"
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:13:18.874Z"
-content_hash: "0f1a23d3728a37b63655c77e38e8a10442b698c4d88a8adafa873c421cf85c87"
+last_crawled_at: "2026-04-27T18:12:04.627Z"
+content_hash: "38fc9fd01b448ac52bf0c9849d7cbefbbc985b6e2f79d4e99a1825e608b09a27"
 menu_path: ["Installation"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/getting-started/index.md", "title": "Getting Started"}
-nav_next: {"path": "nextjs/docs/app/getting-started/project-structure/index.md", "title": "Project structure and organization"}
+version: "latest"
+tab_variants: ["pnpm","npm","yarn","bun","pnpm","npm","yarn","bun","pnpm","npm","yarn","bun"]
+content_language: "en"
 ---
+[App Router](/docs/app)[Getting Started](/docs/app/getting-started)Installation
 
 # Installation
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 Create a new Next.js app and run it locally.
 
@@ -25,7 +27,21 @@ Create a new Next.js app and run it locally.
 2.  `cd my-app` and start the dev server.
 3.  Visit `http://localhost:3000`.
 
-pnpmnpmyarnbun
+#### pnpm
+
+pnpm
+
+#### npm
+
+npm
+
+#### yarn
+
+yarn
+
+#### bun
+
+bun
 
 Terminal
 
@@ -35,23 +51,23 @@ cd my-app
 pnpm dev
 ```
 
-*   `--yes` skips prompts using saved preferences or defaults. The default setup enables TypeScript, Tailwind CSS, ESLint, App Router, and Turbopack, with import alias `@/*`, and includes `AGENTS.md` (with a `CLAUDE.md` that references it) to guide coding agents to write up-to-date Next.js code.
+-   `--yes` skips prompts using saved preferences or defaults. The default setup enables TypeScript, Tailwind CSS, ESLint, App Router, and Turbopack, with import alias `@/*`, and includes `AGENTS.md` (with a `CLAUDE.md` that references it) to guide coding agents to write up-to-date Next.js code.
 
 ## System requirements[](#system-requirements)
 
 Before you begin, make sure your development environment meets the following requirements:
 
-*   Minimum Node.js version: [20.9](https://nodejs.org/)
-*   Operating systems: macOS, Windows (including WSL), and Linux.
+-   Minimum Node.js version: [20.9](https://nodejs.org/)
+-   Operating systems: macOS, Windows (including WSL), and Linux.
 
 ## Supported browsers[](#supported-browsers)
 
 Next.js supports modern browsers with zero configuration.
 
-*   Chrome 111+
-*   Edge 111+
-*   Firefox 111+
-*   Safari 16.4+
+-   Chrome 111+
+-   Edge 111+
+-   Firefox 111+
+-   Safari 16.4+
 
 Learn more about [browser support](/docs/architecture/supported-browsers), including how to configure polyfills and target specific browsers.
 
@@ -59,7 +75,21 @@ Learn more about [browser support](/docs/architecture/supported-browsers), inclu
 
 The quickest way to create a new Next.js app is using [`create-next-app`](/docs/app/api-reference/cli/create-next-app), which sets up everything automatically for you. To create a project, run:
 
-pnpmnpmyarnbun
+#### pnpm
+
+pnpm
+
+#### npm
+
+npm
+
+#### yarn
+
+yarn
+
+#### bun
+
+bun
 
 Terminal
 
@@ -101,7 +131,21 @@ After the prompts, [`create-next-app`](/docs/app/api-reference/cli/create-next-a
 
 To manually create a new Next.js app, install the required packages:
 
-pnpmnpmyarnbun
+#### pnpm
+
+pnpm
+
+#### npm
+
+npm
+
+#### yarn
+
+yarn
+
+#### bun
+
+bun
 
 Terminal
 
@@ -111,8 +155,8 @@ pnpm i next@latest react@latest react-dom@latest
 
 > **Good to know**:
 > 
-> *   The `App Router` uses [React canary releases](https://react.dev/blog/2023/05/03/react-canaries) built-in, which include all the stable React 19 changes, as well as newer features being validated in frameworks, but you should still declare react and react-dom in package.json for tooling and ecosystem compatibility.
-> *   The `Pages Router` uses the React version from your `package.json`.
+> -   The `App Router` uses [React canary releases](https://react.dev/blog/2023/05/03/react-canaries) built-in, which include all the stable React 19 changes, as well as newer features being validated in frameworks, but you should still declare react and react-dom in package.json for tooling and ecosystem compatibility.
+> -   The `Pages Router` uses the React version from your `package.json`.
 
 Then, add the following scripts to your `package.json` file:
 
@@ -132,10 +176,10 @@ package.json
 
 These scripts refer to the different stages of developing an application:
 
-*   `next dev`: Starts the development server using Turbopack (default bundler).
-*   `next build`: Builds the application for production.
-*   `next start`: Starts the production server.
-*   `eslint`: Runs ESLint.
+-   `next dev`: Starts the development server using Turbopack (default bundler).
+-   `next build`: Builds the application for production.
+-   `next start`: Starts the production server.
+-   `eslint`: Runs ESLint.
 
 Turbopack is now the default bundler. To use Webpack run `next dev --webpack` or `next build --webpack`. See the [Turbopack docs](/docs/app/api-reference/turbopack) for configuration details.
 
@@ -146,8 +190,6 @@ Next.js uses file-system routing, which means the routes in your application are
 Create an `app` folder. Then, inside `app`, create a `layout.tsx` file. This file is the [root layout](/docs/app/api-reference/file-conventions/layout#root-layout). It's required and must contain the `<html>` and `<body>` tags.
 
 app/layout.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -169,8 +211,6 @@ Create a home page `app/page.tsx` with some initial content:
 
 app/page.tsx
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -181,12 +221,12 @@ export default function Page() {
 
 Both `layout.tsx` and `page.tsx` will be rendered when the user visits the root of your application (`/`).
 
-![App Folder Structure](/_next/image?url=https%3A%2F%2Fh8DxKfmAPhn8O0p3.public.blob.vercel-storage.com%2Fdocs%2Flight%2Fapp-getting-started.png&w=3840&q=75)![App Folder Structure](/_next/image?url=https%3A%2F%2Fh8DxKfmAPhn8O0p3.public.blob.vercel-storage.com%2Fdocs%2Fdark%2Fapp-getting-started.png&w=3840&q=75)
+![App Folder Structure](https://h8DxKfmAPhn8O0p3.public.blob.vercel-storage.com/docs/light/app-getting-started.png)
 
 > **Good to know**:
 > 
-> *   If you forget to create the root layout, Next.js will automatically create this file when running the development server with `next dev`.
-> *   You can optionally use a [`src` folder](/docs/app/api-reference/file-conventions/src-folder) in the root of your project to separate your application's code from configuration files.
+> -   If you forget to create the root layout, Next.js will automatically create this file when running the development server with `next dev`.
+> -   You can optionally use a [`src` folder](/docs/app/api-reference/file-conventions/src-folder) in the root of your project to separate your application's code from configuration files.
 
 ### Create the `public` folder (optional)[](#create-the-public-folder-optional)
 
@@ -195,8 +235,6 @@ Create a [`public` folder](/docs/app/api-reference/file-conventions/public-folde
 You can then reference these assets using the root path (`/`). For example, `public/profile.png` can be referenced as `/profile.png`:
 
 app/page.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -230,7 +268,7 @@ You can enable the plugin in VS Code by:
 2.  Searching for "TypeScript: Select TypeScript Version"
 3.  Selecting "Use Workspace Version"
 
-![TypeScript Command Palette](/_next/image?url=https%3A%2F%2Fh8DxKfmAPhn8O0p3.public.blob.vercel-storage.com%2Fdocs%2Flight%2Ftypescript-command-palette.png&w=3840&q=75)![TypeScript Command Palette](/_next/image?url=https%3A%2F%2Fh8DxKfmAPhn8O0p3.public.blob.vercel-storage.com%2Fdocs%2Fdark%2Ftypescript-command-palette.png&w=3840&q=75)
+![TypeScript Command Palette](https://h8DxKfmAPhn8O0p3.public.blob.vercel-storage.com/docs/light/typescript-command-palette.png)
 
 See the [TypeScript reference](/docs/app/api-reference/config/typescript) page for more information.
 
@@ -238,7 +276,7 @@ See the [TypeScript reference](/docs/app/api-reference/config/typescript) page f
 
 Next.js supports linting with either ESLint or Biome. Choose a linter and run it directly via `package.json` scripts.
 
-*   Use **ESLint** (comprehensive rules):
+-   Use **ESLint** (comprehensive rules):
 
 package.json
 
@@ -251,7 +289,7 @@ package.json
 }
 ```
 
-*   Or use **Biome** (fast linter + formatter):
+-   Or use **Biome** (fast linter + formatter):
 
 package.json
 
@@ -324,20 +362,4 @@ tsconfig.json or jsconfig.json
 
 Each of the `"paths"` are relative to the `baseUrl` location.
 
-[Previous
-
-Getting Started
-
-](/docs/app/getting-started)
-
-[Next
-
-Project Structure
-
-](/docs/app/getting-started/project-structure)
-
 Was this helpful?
-
-supported.
-
-Send

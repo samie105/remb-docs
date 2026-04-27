@@ -5,23 +5,22 @@ canonical_url: "https://nextjs.org/docs/pages/api-reference/functions/get-static
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:22:17.826Z"
-content_hash: "ef304d58147ef2a9e4d63a3e979784bcee1085093237ccaedfb57e27d67dc661"
+last_crawled_at: "2026-04-27T18:21:40.684Z"
+content_hash: "520ca7d06c19f60434a3015b8c233a27b6c8777633ffbd9f0f6e5c8ecb3ef9b0"
 menu_path: ["getStaticPaths"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/pages/api-reference/functions/get-server-side-props/index.md", "title": "getServerSideProps"}
-nav_next: {"path": "nextjs/docs/pages/api-reference/functions/get-static-props/index.md", "title": "getStaticProps"}
+version: "latest"
+content_language: "en"
 ---
+[API Reference](/docs/pages/api-reference)[Functions](/docs/pages/api-reference/functions)getStaticPaths
 
 # getStaticPaths
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 When exporting a function called `getStaticPaths` from a page that uses [Dynamic Routes](/docs/pages/building-your-application/routing/dynamic-routes), Next.js will statically prerender all the paths specified by `getStaticPaths`.
 
 pages/repo/\[name\].tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -91,9 +90,9 @@ Then, Next.js will statically generate `/posts/1` and `/posts/2` during `next bu
 
 The value for each `params` object must match the parameters used in the page name:
 
-*   If the page name is `pages/posts/[postId]/[commentId]`, then `params` should contain `postId` and `commentId`.
-*   If the page name uses [catch-all routes](/docs/pages/building-your-application/routing/dynamic-routes#catch-all-segments) like `pages/[...slug]`, then `params` should contain `slug` (which is an array). If this array is `['hello', 'world']`, then Next.js will statically generate the page at `/hello/world`.
-*   If the page uses an [optional catch-all route](/docs/pages/building-your-application/routing/dynamic-routes#optional-catch-all-segments), use `null`, `[]`, `undefined` or `false` to render the root-most route. For example, if you supply `slug: false` for `pages/[[...slug]]`, Next.js will statically generate the page `/`.
+-   If the page name is `pages/posts/[postId]/[commentId]`, then `params` should contain `postId` and `commentId`.
+-   If the page name uses [catch-all routes](/docs/pages/building-your-application/routing/dynamic-routes#catch-all-segments) like `pages/[...slug]`, then `params` should contain `slug` (which is an array). If this array is `['hello', 'world']`, then Next.js will statically generate the page at `/hello/world`.
+-   If the page uses an [optional catch-all route](/docs/pages/building-your-application/routing/dynamic-routes#optional-catch-all-segments), use `null`, `[]`, `undefined` or `false` to render the root-most route. For example, if you supply `slug: false` for `pages/[[...slug]]`, Next.js will statically generate the page `/`.
 
 The `params` strings are **case-sensitive** and ideally should be normalized to ensure the paths are generated correctly. For example, if `WoRLD` is returned for a param it will only match if `WoRLD` is the actual path visited, not `world` or `World`.
 
@@ -146,18 +145,18 @@ export default Post
 
 ### `fallback: true`[](#fallback-true)
 
-Examples
+**Examples**
 
-*   [Static generation of a large number of pages](https://react-tweet.vercel.app/)
+-   [Static generation of a large number of pages](https://react-tweet.vercel.app/)
 
 If `fallback` is `true`, then the behavior of `getStaticProps` changes in the following ways:
 
-*   The paths returned from `getStaticPaths` will be rendered to `HTML` at build time by `getStaticProps`.
-*   The paths that have not been generated at build time will **not** result in a 404 page. Instead, Next.js will serve a [“fallback”](#fallback-pages) version of the page on the first request to such a path. Web crawlers, such as Google, won't be served a fallback and instead the path will behave as in [`fallback: 'blocking'`](#fallback-blocking).
-*   When a page with `fallback: true` is navigated to through `next/link` or `next/router` (client-side) Next.js will _not_ serve a fallback and instead the page will behave as [`fallback: 'blocking'`](#fallback-blocking).
-*   In the background, Next.js will statically generate the requested path `HTML` and `JSON`. This includes running `getStaticProps`.
-*   When complete, the browser receives the `JSON` for the generated path. This will be used to automatically render the page with the required props. From the user’s perspective, the page will be swapped from the fallback page to the full page.
-*   At the same time, Next.js adds this path to the list of prerendered pages. Subsequent requests to the same path will serve the generated page, like other pages prerendered at build time.
+-   The paths returned from `getStaticPaths` will be rendered to `HTML` at build time by `getStaticProps`.
+-   The paths that have not been generated at build time will **not** result in a 404 page. Instead, Next.js will serve a [“fallback”](#fallback-pages) version of the page on the first request to such a path. Web crawlers, such as Google, won't be served a fallback and instead the path will behave as in [`fallback: 'blocking'`](#fallback-blocking).
+-   When a page with `fallback: true` is navigated to through `next/link` or `next/router` (client-side) Next.js will _not_ serve a fallback and instead the page will behave as [`fallback: 'blocking'`](#fallback-blocking).
+-   In the background, Next.js will statically generate the requested path `HTML` and `JSON`. This includes running `getStaticProps`.
+-   When complete, the browser receives the `JSON` for the generated path. This will be used to automatically render the page with the required props. From the user’s perspective, the page will be swapped from the fallback page to the full page.
+-   At the same time, Next.js adds this path to the list of prerendered pages. Subsequent requests to the same path will serve the generated page, like other pages prerendered at build time.
 
 > **Good to know**: `fallback: true` is not supported when using [`output: 'export'`](/docs/pages/guides/static-exports).
 
@@ -179,10 +178,10 @@ If `fallback` is `'blocking'`, new paths not returned by `getStaticPaths` will w
 
 `getStaticProps` will behave as follows:
 
-*   The paths returned from `getStaticPaths` will be rendered to `HTML` at build time by `getStaticProps`.
-*   The paths that have not been generated at build time will **not** result in a 404 page. Instead, Next.js will SSR on the first request and return the generated `HTML`.
-*   When complete, the browser receives the `HTML` for the generated path. From the user’s perspective, it will transition from "the browser is requesting the page" to "the full page is loaded". There is no flash of loading/fallback state.
-*   At the same time, Next.js adds this path to the list of prerendered pages. Subsequent requests to the same path will serve the generated page, like other pages prerendered at build time.
+-   The paths returned from `getStaticPaths` will be rendered to `HTML` at build time by `getStaticProps`.
+-   The paths that have not been generated at build time will **not** result in a 404 page. Instead, Next.js will SSR on the first request and return the generated `HTML`.
+-   When complete, the browser receives the `HTML` for the generated path. From the user’s perspective, it will transition from "the browser is requesting the page" to "the full page is loaded". There is no flash of loading/fallback state.
+-   At the same time, Next.js adds this path to the list of prerendered pages. Subsequent requests to the same path will serve the generated page, like other pages prerendered at build time.
 
 `fallback: 'blocking'` will not _update_ generated pages by default. To update generated pages, use [Incremental Static Regeneration](/docs/pages/guides/incremental-static-regeneration) in conjunction with `fallback: 'blocking'`.
 
@@ -192,8 +191,8 @@ If `fallback` is `'blocking'`, new paths not returned by `getStaticPaths` will w
 
 In the “fallback” version of a page:
 
-*   The page’s props will be empty.
-*   Using the [router](/docs/pages/api-reference/functions/use-router), you can detect if the fallback is being rendered, `router.isFallback` will be `true`.
+-   The page’s props will be empty.
+-   Using the [router](/docs/pages/api-reference/functions/use-router), you can detect if the fallback is being rendered, `router.isFallback` will be `true`.
 
 The following example showcases using `isFallback`:
 
@@ -246,32 +245,12 @@ export default Post
 
 ## Version History[](#version-history)
 
-Version
-
-Changes
-
-`v13.4.0`
-
-[App Router](/docs/app/getting-started/fetching-data) is now stable with simplified data fetching, including [`generateStaticParams()`](/docs/app/api-reference/functions/generate-static-params)
-
-`v12.2.0`
-
-[On-Demand Incremental Static Regeneration](/docs/pages/guides/incremental-static-regeneration#on-demand-revalidation-with-revalidatepath) is stable.
-
-`v12.1.0`
-
-[On-Demand Incremental Static Regeneration](/docs/pages/guides/incremental-static-regeneration#on-demand-revalidation-with-revalidatepath) added (beta).
-
-`v9.5.0`
-
-Stable [Incremental Static Regeneration](/docs/pages/guides/incremental-static-regeneration)
-
-`v9.3.0`
-
-`getStaticPaths` introduced.
+| Version | Changes |
+| --- | --- |
+| `v13.4.0` | [App Router](/docs/app/getting-started/fetching-data) is now stable with simplified data fetching, including [`generateStaticParams()`](/docs/app/api-reference/functions/generate-static-params) |
+| `v12.2.0` | [On-Demand Incremental Static Regeneration](/docs/pages/guides/incremental-static-regeneration#on-demand-revalidation-with-revalidatepath) is stable. |
+| `v12.1.0` | [On-Demand Incremental Static Regeneration](/docs/pages/guides/incremental-static-regeneration#on-demand-revalidation-with-revalidatepath) added (beta). |
+| `v9.5.0` | Stable [Incremental Static Regeneration](/docs/pages/guides/incremental-static-regeneration) |
+| `v9.3.0` | `getStaticPaths` introduced. |
 
 Was this helpful?
-
-supported.
-
-Send

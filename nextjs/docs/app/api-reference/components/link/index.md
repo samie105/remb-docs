@@ -5,25 +5,24 @@ canonical_url: "https://nextjs.org/docs/app/api-reference/components/link"
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:06:28.716Z"
-content_hash: "04298bb583a317737951e7c681c5d3115f686798badc83251e1c472ada5917e1"
+last_crawled_at: "2026-04-27T18:05:23.249Z"
+content_hash: "a8aa5dc7ac561bcf4ca2a74a216115b68fcad2693ac80c1fa8ae159745a07dd3"
 menu_path: ["Link Component"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/api-reference/components/image/index.md", "title": "Image Component"}
-nav_next: {"path": "nextjs/docs/app/api-reference/components/script/index.md", "title": "Script Component"}
+version: "latest"
+content_language: "en"
 ---
+[API Reference](/docs/app/api-reference)[Components](/docs/app/api-reference/components)Link Component
 
 # Link Component
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 `<Link>` is a React component that extends the HTML `<a>` element to provide [prefetching](/docs/app/getting-started/linking-and-navigating#prefetching) and client-side navigation between routes. It is the primary way to navigate between routes in Next.js.
 
 Basic usage:
 
 app/page.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -39,61 +38,14 @@ export default function Page() {
 
 The following props can be passed to the `<Link>` component:
 
-Prop
-
-Example
-
-Type
-
-Required
-
-[`href`](#href-required)
-
-`href="/dashboard"`
-
-String or Object
-
-Yes
-
-[`replace`](#replace)
-
-`replace={false}`
-
-Boolean
-
-\-
-
-[`scroll`](#scroll)
-
-`scroll={false}`
-
-Boolean
-
-\-
-
-[`prefetch`](#prefetch)
-
-`prefetch={false}`
-
-Boolean or null
-
-\-
-
-[`onNavigate`](#onnavigate)
-
-`onNavigate={(e) => {}}`
-
-Function
-
-\-
-
-[`transitionTypes`](#transitiontypes)
-
-`transitionTypes={['slide-in']}`
-
-`string[]`
-
-\-
+| Prop | Example | Type | Required |
+| --- | --- | --- | --- |
+| [`href`](#href-required) | `href="/dashboard"` | String or Object | Yes |
+| [`replace`](#replace) | `replace={false}` | Boolean | \- |
+| [`scroll`](#scroll) | `scroll={false}` | Boolean | \- |
+| [`prefetch`](#prefetch) | `prefetch={false}` | Boolean or null | \- |
+| [`onNavigate`](#onnavigate) | `onNavigate={(e) => {}}` | Function | \- |
+| [`transitionTypes`](#transitiontypes) | `transitionTypes={['slide-in']}` | `string[]` | \- |
 
 > **Good to know**: `<a>` tag attributes such as `className` or `target="_blank"` can be added to `<Link>` as props and will be passed to the underlying `<a>` element.
 
@@ -102,8 +54,6 @@ Function
 The path or URL to navigate to.
 
 app/page.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -131,8 +81,6 @@ export default function Page() {
 
 app/page.tsx
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -157,8 +105,6 @@ When `scroll = {false}`, Next.js will not attempt to scroll to the first Page el
 
 app/page.tsx
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -179,13 +125,11 @@ Prefetching happens when a `<Link />` component enters the user's viewport (init
 
 The following values can be passed to the `prefetch` prop:
 
-*   **`"auto"` or `null` (default)**: Prefetch behavior depends on whether the route is static or dynamic. For static routes, the full route will be prefetched (including all its data). For dynamic routes, the partial route down to the nearest segment with a [`loading.js`](/docs/app/api-reference/file-conventions/loading#instant-loading-states) boundary will be prefetched.
-*   `true`: The full route will be prefetched for both static and dynamic routes.
-*   `false`: Prefetching will never happen both on entering the viewport and on hover.
+-   **`"auto"` or `null` (default)**: Prefetch behavior depends on whether the route is static or dynamic. For static routes, the full route will be prefetched (including all its data). For dynamic routes, the partial route down to the nearest segment with a [`loading.js`](/docs/app/api-reference/file-conventions/loading#instant-loading-states) boundary will be prefetched.
+-   `true`: The full route will be prefetched for both static and dynamic routes.
+-   `false`: Prefetching will never happen both on entering the viewport and on hover.
 
 app/page.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -206,8 +150,6 @@ export default function Page() {
 An event handler called during client-side navigation. The handler receives an event object that includes a `preventDefault()` method, allowing you to cancel the navigation if needed.
 
 app/page.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -234,17 +176,15 @@ export default function Page() {
 
 > **Good to know**: While `onClick` and `onNavigate` may seem similar, they serve different purposes. `onClick` executes for all click events, while `onNavigate` only runs during client-side navigation. Some key differences:
 > 
-> *   When using modifier keys (`Ctrl`/`Cmd` + Click), `onClick` executes but `onNavigate` doesn't since Next.js prevents default navigation for new tabs.
-> *   External URLs won't trigger `onNavigate` since it's only for client-side and same-origin navigations.
-> *   Links with the `download` attribute will work with `onClick` but not `onNavigate` since the browser will treat the linked URL as a download.
+> -   When using modifier keys (`Ctrl`/`Cmd` + Click), `onClick` executes but `onNavigate` doesn't since Next.js prevents default navigation for new tabs.
+> -   External URLs won't trigger `onNavigate` since it's only for client-side and same-origin navigations.
+> -   Links with the `download` attribute will work with `onClick` but not `onNavigate` since the browser will treat the linked URL as a download.
 
 ### `transitionTypes`[](#transitiontypes)
 
 A list of transition types to apply to the navigation. These types are passed to [`React.addTransitionType`](https://react.dev/reference/react/addTransitionType) inside the navigation transition, enabling [`<ViewTransition>`](https://react.dev/reference/react/ViewTransition) components to apply different animations based on the type of navigation.
 
 app/page.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -269,8 +209,6 @@ The following examples demonstrate how to use the `<Link>` component in differen
 When linking to [dynamic segments](/docs/app/api-reference/file-conventions/dynamic-routes), you can use [template literals and interpolation](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Template_literals) to generate a list of links. For example, to generate a list of blog posts:
 
 app/blog/post-list.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -301,8 +239,6 @@ export default function PostList({ posts }: { posts: Post[] }) {
 You can use [`usePathname()`](/docs/app/api-reference/functions/use-pathname) to determine if a link is active. For example, to add a class to the active link, you can check if the current `pathname` matches the `href` of the link:
 
 app/ui/nav-links.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -345,15 +281,13 @@ If you'd like to scroll to a specific `id` on navigation, you can append your UR
 
 > **Good to know**:
 > 
-> *   Next.js will scroll to the [Page](/docs/app/api-reference/file-conventions/page) if it is not visible in the viewport upon navigation.
+> -   Next.js will scroll to the [Page](/docs/app/api-reference/file-conventions/page) if it is not visible in the viewport upon navigation.
 
 ### Replace the URL instead of push[](#replace-the-url-instead-of-push)
 
 The default behavior of the `Link` component is to `push` a new URL into the `history` stack. You can use the `replace` prop to prevent adding a new entry, as in the following example:
 
 app/page.js
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -376,8 +310,6 @@ The default scrolling behavior of `<Link>` in Next.js **is to maintain scroll po
 However, if the Page is not visible in the viewport, Next.js will scroll to the top of the first Page element. If you'd like to disable this behavior, you can pass `scroll={false}` to the `<Link>` component, or `scroll: false` to `router.push()` or `router.replace()`.
 
 app/page.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -409,8 +341,6 @@ router.push('/dashboard', { scroll: false })
 Because Next.js skips sticky and fixed positioned elements when finding the scroll target, content may end up behind a sticky header after navigation. For example, if your layout has a sticky header:
 
 app/layout.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -455,8 +385,6 @@ For example, if you want to serve a `/dashboard` route that has authenticated an
 
 proxy.ts
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -478,8 +406,6 @@ In this case, you would want to use the following code in your `<Link />` compon
 
 app/page.tsx
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -499,13 +425,9 @@ export default function Page() {
 }
 ```
 
-### Blocking navigation[](#blocking-navigation)
-
 You can use the `onNavigate` prop to block navigation when certain conditions are met, such as when a form has unsaved changes. When you need to block navigation across multiple components in your app (like preventing navigation from any link while a form is being edited), React Context provides a clean way to share this blocking state. First, create a context to track the navigation blocking state:
 
 app/contexts/navigation-blocker.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -548,8 +470,6 @@ Create a form component that uses the context:
 
 app/components/form.tsx
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -578,8 +498,6 @@ export default function Form() {
 Create a custom Link component that blocks navigation:
 
 app/components/custom-link.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -618,8 +536,6 @@ Create a navigation component:
 
 app/components/nav.tsx
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -640,8 +556,6 @@ export default function Nav() {
 Finally, wrap your app with the `NavigationBlockerProvider` in the root layout and use the components in your page:
 
 app/layout.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -667,8 +581,6 @@ Then, use the `Nav` and `Form` components in your page:
 
 app/page.tsx
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -692,48 +604,13 @@ When a user tries to navigate away using `CustomLink` while the form has unsaved
 
 ## Version history[](#version-history)
 
-Version
-
-Changes
-
-`v15.4.0`
-
-Add `auto` as an alias to the default `prefetch` behavior.
-
-`v15.3.0`
-
-Add `onNavigate` API
-
-`v13.0.0`
-
-No longer requires a child `<a>` tag. A [codemod](/docs/app/guides/upgrading/codemods#remove-a-tags-from-link-components) is provided to automatically update your codebase.
-
-`v10.0.0`
-
-`href` props pointing to a dynamic route are automatically resolved and no longer require an `as` prop.
-
-`v8.0.0`
-
-Improved prefetching performance.
-
-`v1.0.0`
-
-`next/link` introduced.
-
-[Previous
-
-Image Component
-
-](/docs/app/api-reference/components/image)
-
-[Next
-
-Script Component
-
-](/docs/app/api-reference/components/script)
+| Version | Changes |
+| --- | --- |
+| `v15.4.0` | Add `auto` as an alias to the default `prefetch` behavior. |
+| `v15.3.0` | Add `onNavigate` API |
+| `v13.0.0` | No longer requires a child `<a>` tag. A [codemod](/docs/app/guides/upgrading/codemods#remove-a-tags-from-link-components) is provided to automatically update your codebase. |
+| `v10.0.0` | `href` props pointing to a dynamic route are automatically resolved and no longer require an `as` prop. |
+| `v8.0.0` | Improved prefetching performance. |
+| `v1.0.0` | `next/link` introduced. |
 
 Was this helpful?
-
-supported.
-
-Send

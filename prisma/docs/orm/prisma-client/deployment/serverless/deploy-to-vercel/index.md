@@ -5,14 +5,13 @@ canonical_url: "https://www.prisma.io/docs/orm/prisma-client/deployment/serverle
 docset: "prisma"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:54:18.965Z"
-content_hash: "674e23eb3d4024b634927a34bacadbb4a4a2208dca4e91deb8601d78439ef2aa"
+last_crawled_at: "2026-04-27T19:43:59.328Z"
+content_hash: "491482e834e4a9f8856601c672be1fea07bee6442d1825ca1aed247bffae9a82"
 menu_path: ["Deploy to Vercel"]
 section_path: []
-nav_prev: {"path": "prisma/docs/orm/prisma-client/deployment/serverless/deploy-to-netlify/index.md", "title": "Deploy to Netlify"}
-nav_next: {"path": "prisma/docs/orm/prisma-client/deployment/traditional/deploy-to-flyio/index.md", "title": "Deploy to Fly.io"}
+tab_variants: ["npm","pnpm","yarn","bun"]
+content_language: "en"
 ---
-
 This guide takes you through the steps to set up and deploy a serverless application that uses Prisma to [Vercel](https://vercel.com/).
 
 Vercel is a cloud platform that hosts static sites, serverless, and edge functions. You can integrate a Vercel project with a GitHub repository to allow you to deploy automatically when you make new commits.
@@ -24,6 +23,8 @@ While our examples use Next.js, you can deploy other applications to Vercel. See
 ### [Updating Prisma Client during Vercel builds](#updating-prisma-client-during-vercel-builds)
 
 Vercel will automatically cache dependencies on deployment. For most applications, this will not cause any issues. However, for Prisma ORM, it may result in an outdated version of Prisma Client on a change in your Prisma schema. To avoid this issue, add `prisma generate` to the `postinstall` script of your application:
+
+package.json
 
 ```
 {
@@ -39,9 +40,11 @@ This will re-generate Prisma Client at build time so that your deployment always
 
 ### [CI/CD workflows](#cicd-workflows)
 
-In a more sophisticated CI/CD environment, you may additionally want to update the database schema with any migrations you have performed during local development. You can do this using the [`prisma migrate deploy`](prisma/docs/orm/reference/prisma-cli-reference/index.md#migrate-deploy) command.
+In a more sophisticated CI/CD environment, you may additionally want to update the database schema with any migrations you have performed during local development. You can do this using the [`prisma migrate deploy`](https://www.prisma.io/docs/orm/reference/prisma-cli-reference#migrate-deploy) command.
 
 In that case, you could create a custom build command in your `package.json` (e.g. called `vercel-build`) that looks as follows:
+
+package.json
 
 ```
 {
@@ -67,7 +70,7 @@ To prevent this, use a _second_ hosted database to handle preview deployments. O
     
 3.  Add an environment variable with a key of `DATABASE_URL` and select only the **Preview** environment option:
     
-    ![Add an environment variable for the preview environment](https://www.prisma.io/docs/img/orm/prisma-client/deployment/serverless/images/300-60-deploy-to-vercel-preview-environment-variable.png?dpl=dpl_2TrAJrUt7dXR3AAWNDvwk5WL6VFX)
+    ![Add an environment variable for the preview environment](/docs/img/orm/prisma-client/deployment/serverless/images/300-60-deploy-to-vercel-preview-environment-variable.png)
     
 4.  Set the value to the connection string of your second database:
     
@@ -82,11 +85,11 @@ When you use a Function-as-a-Service provider, like Vercel Serverless functions,
 
 You can use [Prisma Postgres](https://www.prisma.io/docs/postgres), which has built-in connection pooling, to reduce your Prisma Client bundle size, and to avoid cold starts.
 
-For more information on connection management for serverless environments, refer to our [connection management guide](prisma/docs/orm/prisma-client/setup-and-configuration/databases-connections/index.md#serverless-environments-faas).
+For more information on connection management for serverless environments, refer to our [connection management guide](https://www.prisma.io/docs/orm/prisma-client/setup-and-configuration/databases-connections#serverless-environments-faas).
 
 [Fluid compute](https://vercel.com/fluid) is a compute model from Vercel that combines the flexibility of serverless with the stability of servers, making it ideal for dynamic workloads such as streaming data and AI APIs. Vercel's Fluid compute [supports both edge and Node.js runtimes](https://vercel.com/docs/fluid-compute#available-runtime-support). A common challenge in traditional serverless platforms is leaked database connections when functions are suspended and pools can't close idle connections. Fluid provides [`attachDatabasePool`](https://vercel.com/blog/the-real-serverless-compute-to-database-connection-problem-solved) to ensure idle connections are released before a function is suspended.
 
-Use `attachDatabasePool` together with [Prisma's driver adapters](prisma/docs/orm/core-concepts/supported-databases/database-drivers/index.md) to safely manage connections in Fluid:
+Use `attachDatabasePool` together with [Prisma's driver adapters](https://www.prisma.io/docs/orm/core-concepts/supported-databases/database-drivers) to safely manage connections in Fluid:
 
 ```
 import { Pool } from "pg";

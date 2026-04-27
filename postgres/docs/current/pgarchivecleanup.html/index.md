@@ -5,14 +5,12 @@ canonical_url: "https://www.postgresql.org/docs/current/pgarchivecleanup.html"
 docset: "postgres"
 kind: "database"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:48:52.611Z"
-content_hash: "d0a156ea735e2d3da377bab5a52f5cbf4347678d00c91ba27e42ce06afa65bf2"
+last_crawled_at: "2026-04-27T20:48:58.235Z"
+content_hash: "0279255ab6451061f5c9b01bb872ee1f7af56eebc263009aa56e43d8766eec76"
 menu_path: ["PostgreSQL: Documentation: 18: pg_archivecleanup"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/perm-functions.html/index.md", "title": "PostgreSQL: Documentation: 18: 21.6.\u00a0Function Security"}
-nav_next: {"path": "postgres/docs/current/pgbench.html/index.md", "title": "PostgreSQL: Documentation: 18: pgbench"}
+content_language: "en"
 ---
-
 pg\_archivecleanup — clean up PostgreSQL WAL archive files
 
 ## Synopsis
@@ -29,7 +27,7 @@ archive\_cleanup\_command = 'pg\_archivecleanup _`archivelocation`_ %r'
 
 where _`archivelocation`_ is the directory from which WAL segment files should be removed.
 
-When used within [archive\_cleanup\_command](postgres/docs/current/runtime-config-wal.html/index.md#GUC-ARCHIVE-CLEANUP-COMMAND), all WAL files logically preceding the value of the `%r` argument will be removed from _`archivelocation`_. This minimizes the number of files that need to be retained, while preserving crash-restart capability. Use of this parameter is appropriate if the _`archivelocation`_ is a transient staging area for this particular standby server, but _not_ when the _`archivelocation`_ is intended as a long-term WAL archive area, or when multiple standby servers are recovering from the same archive location.
+When used within [archive\_cleanup\_command](https://www.postgresql.org/docs/current/runtime-config-wal.html#GUC-ARCHIVE-CLEANUP-COMMAND), all WAL files logically preceding the value of the `%r` argument will be removed from _`archivelocation`_. This minimizes the number of files that need to be retained, while preserving crash-restart capability. Use of this parameter is appropriate if the _`archivelocation`_ is a transient staging area for this particular standby server, but _not_ when the _`archivelocation`_ is intended as a long-term WAL archive area, or when multiple standby servers are recovering from the same archive location.
 
 When used as a standalone program all WAL files logically preceding the _`oldestkeptwalfile`_ will be removed from _`archivelocation`_. In this mode, if you specify a `.partial` or `.backup` file name, then only the file prefix will be used as the _`oldestkeptwalfile`_. This treatment of `.backup` file name allows you to remove all WAL files archived prior to a specific base backup without error. For example, the following example will remove all files older than WAL file name `000000010000003700000010`:
 
@@ -93,6 +91,6 @@ archive\_cleanup\_command = 'pg\_archivecleanup -d /mnt/standby/archive %r 2>>cl
 
 where the archive directory is physically located on the standby server, so that the `archive_command` is accessing it across NFS, but the files are local to the standby. This will:
 
-*   produce debugging output in `cleanup.log`
+-   produce debugging output in `cleanup.log`
     
-*   remove no-longer-needed files from the archive directory
+-   remove no-longer-needed files from the archive directory

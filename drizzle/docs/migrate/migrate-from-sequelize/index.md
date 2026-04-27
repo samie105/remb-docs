@@ -5,14 +5,12 @@ canonical_url: "https://orm.drizzle.team/docs/migrate/migrate-from-sequelize"
 docset: "drizzle"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:17:01.364Z"
-content_hash: "287f4ade703651cfa1af93fabfba4290198954e29c0336e9db147ceb58c05adf"
+last_crawled_at: "2026-04-27T19:18:17.288Z"
+content_hash: "74142e070e93e174af4fd2faab2a89054a6bd4c0ef4cc2aaaf0b669a08a61183"
 menu_path: ["Migrate from Sequelize to Drizzle"]
 section_path: []
-nav_prev: {"path": "drizzle/docs/migrate/migrate-from-prisma/index.md", "title": "Migrate from Prisma to Drizzle"}
-nav_next: {"path": "drizzle/docs/migrate/migrate-from-typeorm/index.md", "title": "Migrate from TypeORM to Drizzle"}
+content_language: "en"
 ---
-
 This guide provides a straightforward approach to migrating a basic **Sequelize** project to **Drizzle ORM**. Although the example focuses on `PostgreSQL`, the process is similar for other supported databases.
 
 Regardless of your application type or API layer, the steps to transition from **Sequelize** to **Drizzle ORM** remain consistent:
@@ -21,7 +19,7 @@ These steps are applicable whether you’re developing a REST API (for example, 
 
 For this guide, we’ll use a REST API built with `Express` as a sample project to migrate to **Drizzle ORM**. It has four entities:
 
-```
+```typescript
 import { DataTypes, Model } from 'sequelize';
 import { sequelize } from '../db';
 import { Order } from './order';
@@ -82,13 +80,11 @@ Product.belongsToMany(Order, {
 });
 ```
 
-Expand
-
 For `many-to-many` relation we will create a join table `order_details`, so `Order` and `Product` entities will have `one-to-many` relations with `OrderDetail` entity.
 
 The corresponding tables have been created using Sequelize migration. Sequelize doesn’t support auto generation of migrations, so you have to write them manually.
 
-```
+```javascript
 'use strict';
 
 module.exports = {
@@ -208,19 +204,9 @@ module.exports = {
 };
 ```
 
-Expand
-
 #### Install Drizzle ORM & Drizzle Kit[](#install-drizzle-orm--drizzle-kit)
 
-The first step is to install **Drizzle ORM** and `pg` package which we will use as a driver. The second step is to install **Drizzle Kit** and types for `pg`. [Drizzle Kit](drizzle/docs/kit-overview/index.md) - CLI companion for automatic SQL migrations generation and rapid prototyping.
-
-npm
-
-yarn
-
-pnpm
-
-bun
+The first step is to install **Drizzle ORM** and `pg` package which we will use as a driver. The second step is to install **Drizzle Kit** and types for `pg`. [Drizzle Kit](https://orm.drizzle.team/docs/kit-overview) - CLI companion for automatic SQL migrations generation and rapid prototyping.
 
 ```
 npm i drizzle-orm pg
@@ -248,7 +234,7 @@ bun add -D drizzle-kit @types/pg
 
 Create a `drizzle.config.ts` file in the root of your project and add the following content:
 
-```
+```typescript
 import 'dotenv/config'; // make sure to install dotenv package
 import { defineConfig } from 'drizzle-kit';
 
@@ -274,13 +260,13 @@ export default defineConfig({
 
 **Drizzle Kit** provides a CLI command to introspect your database and generate a schema file. The schema file contains all the information about your database tables, columns, relations, and indices.
 
-```
+```bash
 npx drizzle-kit introspect
 ```
 
 This command will generate a schema.ts file, along with snapshots and migrations in the src/drizzle folder.
 
-```
+```typescript
 import {
   pgTable,
   varchar,
@@ -343,7 +329,7 @@ export const orderDetails = pgTable(
 
 Expand
 
-```
+```sql
 -- Current sql file was generated after introspecting the database
 
 CREATE TABLE IF NOT EXISTS "SequelizeMeta" (
@@ -404,7 +390,7 @@ Expand
 
 Also, if you want to use relational queries, you have to update your schema file with relational tables:
 
-```
+```typescript
 // ...other imports
 import { relations } from 'drizzle-orm';
 
@@ -430,7 +416,7 @@ export const orderDetailsRelations = relations(orderDetails, ({ one }) => ({
 
 Now we have the following file structure:
 
-```
+```text
 📦 <project root>
  ├ 📂 src
  │  ├ 📂 drizzle
@@ -458,7 +444,7 @@ Now we have the following file structure:
 
 Create a `db.ts` file in the `src/drizzle` folder and set up your database configuration:
 
-```
+```typescript
 import { drizzle } from 'drizzle-orm/node-postgres';
 import { Client } from 'pg';
 import * as schema from './schema';
@@ -475,7 +461,7 @@ export const client = new Client({
 export const db = drizzle({ client, schema });
 ```
 
-```
+```typescript
 import 'dotenv/config';
 import { client, db } from './drizzle/db';
 import { resolve } from 'node:path';
@@ -501,7 +487,7 @@ We will show how to insert new rows into `suppliers` and `products` tables.
 
 1.  `POST /suppliers`
 
-```
+```typescript
 import { Supplier } from '../db/models/supplier';
 
 const suppliers = await Supplier.bulkCreate([
@@ -520,7 +506,7 @@ const suppliers = await Supplier.bulkCreate([
 
 With **Drizzle ORM**, the query is implemented as follows:
 
-```
+```typescript
 import { db } from '../drizzle/db';
 import { suppliers } from '../drizzle/schema';
 
@@ -540,7 +526,7 @@ await db.insert(suppliers).values([
 
 2.  `POST /products`
 
-```
+```typescript
 import { Product } from '../db/models/product';
 
 const products = await Product.bulkCreate([
@@ -575,7 +561,7 @@ With **Drizzle ORM**, the query is implemented as follows:
 
 Be careful with the `unitPrice` field. In **Sequelize** it’s a `number` type, but in **Drizzle ORM** it’s a `string` type, which can handle more than 16383 digits after the decimal point, unlike the `number` type.
 
-```
+```typescript
 await db.insert(products).values([
   {
     name: 'TestProductName1',
@@ -612,7 +598,7 @@ In this section we will show how to select one row, multiple rows, count rows, f
 
 In **Sequelize**, the response type is not strictly typed. For example, if you choose to include a relation or select only a few fields instead of all, these modifications will not be reflected in the response type.
 
-```
+```typescript
 import { Product } from '../db/models/product';
 import { Supplier } from '../db/models/supplier';
 
@@ -625,7 +611,7 @@ const response = await Product.findByPk(id, {
 
 In **Drizzle ORM**, the query is implemented as follows:
 
-```
+```typescript
 import { eq } from 'drizzle-orm';
 import { db } from '../drizzle/db';
 import { products, suppliers } from '../drizzle/schema';
@@ -652,7 +638,7 @@ const response = await db.query.products.findFirst({
 
 In **Drizzle ORM**, the response type will match precisely what is specified in the select object, so including the `supplier` relation is fully type-safe.
 
-```
+```typescript
 // response type
 const response: {
   product: {
@@ -675,7 +661,7 @@ const response: {
 
 In **Sequelize**, the result is not type-safe as it doesn’t specify the fields you want to select.
 
-```
+```typescript
 import { Product } from '../db/models/product';
 import { Op } from 'sequelize';
 
@@ -693,7 +679,7 @@ const { rows, count } = await Product.findAndCountAll({
 
 In **Drizzle ORM**, the query is implemented as follows:
 
-```
+```typescript
 import { ilike, sql } from 'drizzle-orm';
 import { db } from '../drizzle/db';
 import { products } from '../drizzle/schema';
@@ -744,7 +730,7 @@ Expand
 
 In **Drizzle ORM**, the result is strictly type-safe, meaning the fields you select are explicitly defined.
 
-```
+```typescript
 // response type
 const response: {
   id: number;
@@ -760,7 +746,7 @@ In **Sequelize** you can’t implement complicated queries with methods like `fi
 
 We want to select `id`, `orderDate` and `shipCountry` fields from `orders` table and by using `aggregation functions` sum `totalPrice` of order, `totalQuantity` of products in the order and count `totalProducts` in the order.
 
-```
+```typescript
 import { sequelize } from '../db/db';
 import { QueryTypes } from 'sequelize';
 
@@ -790,7 +776,7 @@ GROUP BY orders.id
 
 In **Drizzle ORM**, the query is implemented as follows:
 
-```
+```typescript
 import { eq, sql } from 'drizzle-orm';
 import { db } from '../drizzle/db';
 import { orders, orderDetails, products } from '../drizzle/schema';
@@ -815,7 +801,7 @@ const response = await db
 
 In **Drizzle ORM**, the result will be type-safe with aggregations too.
 
-```
+```typescript
 // response type
 const response: {
   id: number;
@@ -835,7 +821,7 @@ In this section, we will show you how to update multiple rows.
 
 1.  `PATCH /suppliers/:id`
 
-```
+```typescript
 import { Supplier } from '../db/models/supplier';
 
 const { id } = req.params;
@@ -855,7 +841,7 @@ await supplier.save();
 
 In **Drizzle ORM**, the query is implemented as follows:
 
-```
+```typescript
 import { eq } from 'drizzle-orm';
 import { db } from '../drizzle/db';
 import { suppliers } from '../drizzle/schema';
@@ -877,7 +863,7 @@ In this section, we will show you how to delete a single row and multiple rows u
 
 1.  `DELETE /orders/:id`
 
-```
+```typescript
 import { Order } from '../db/models/order';
 import { OrderDetail } from '../db/models/order-detail';
 import { sequelize } from '../db/db';
@@ -907,7 +893,7 @@ try {
 
 In **Drizzle ORM**, the query is implemented as follows:
 
-```
+```typescript
 import { eq } from 'drizzle-orm';
 import { db } from '../drizzle/db';
 import { orderDetails, orders } from '../drizzle/schema';

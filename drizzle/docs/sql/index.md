@@ -5,14 +5,12 @@ canonical_url: "https://orm.drizzle.team/docs/sql"
 docset: "drizzle"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:21:45.002Z"
-content_hash: "83db24c8d2e7189a989df3df2b896d159a836a135a64c103f6a9915058859302"
+last_crawled_at: "2026-04-27T19:24:41.786Z"
+content_hash: "917d315d5b991dff085282f061e14e9e760a8d5a9c3aabbd2b3796391426486b"
 menu_path: ["Magical sql operator 🪄"]
 section_path: []
-nav_prev: {"path": "drizzle/docs/joins/index.md", "title": "Joins [SQL]"}
-nav_next: {"path": "drizzle/docs/rqb/index.md", "title": "Drizzle Queries"}
+content_language: "en"
 ---
-
 ## Magical `sql` operator 🪄
 
 When working with an ORM library, there may be cases where you find it challenging to write a specific query using the provided ORM syntax. In such situations, you can resort to using raw queries, which involve constructing a query as a raw string. However, raw queries often lack the benefits of type safety and query parameterization.
@@ -27,7 +25,7 @@ By leveraging the capabilities of the sql template in Drizzle, you can maintain 
 
 One of the most common usages you may encounter in other ORMs as well is the ability to use `sql` queries as-is for raw queries.
 
-```
+```typescript
 import { sql } from 'drizzle-orm' 
 
 const id = 69;
@@ -36,7 +34,7 @@ await db.execute(sql`select * from ${usersTable} where ${usersTable.id} = ${id}`
 
 It will generate the current query
 
-```
+```sql
 select * from "users" where "users"."id" = $1; --> [69]
 ```
 
@@ -52,7 +50,7 @@ You can define a custom type in Drizzle to be used in places where fields requir
 
 This feature is particularly useful in partial select queries, ensuring consistent typing for selected fields:
 
-```
+```typescript
 // without sql<T> type defined
 const response: { lowerName: unknown }[] = await db.select({
     lowerName: sql`lower(${usersTable.id})`
@@ -72,7 +70,7 @@ This function accepts different values, that will map response in runtime.
 
 You can replicate a specific column mapping strategy as long as the interface inside mapWith is the same interface that is implemented by Column.
 
-```
+```typescript
 const usersTable = pgTable('users', {
     id: serial('id').primaryKey(),
     name: text('name').notNull(),
@@ -84,7 +82,7 @@ sql`...`.mapWith(usersTable.name);
 
 You can also pass your own implementation for the `DriverValueDecoder` interface:
 
-```
+```ts
 sql``.mapWith({
 	mapFromDriverValue: (value: any) => {
 		const mappedValue = value;
@@ -103,11 +101,11 @@ In different cases, it can sometimes be challenging to determine how to name a c
 
 To address these scenarios, we have introduced a helpful `.as('alias_name')` helper, which allows you to define an alias explicitly. By utilizing this feature, you can provide a clear and meaningful name for the field, making your queries more intuitive and readable.
 
-```
+```typescript
 sql`lower(usersTable.name)`.as('lower_name')
 ```
 
-```
+```sql
 ... "usersTable"."name" as lower_name ...
 ```
 
@@ -117,13 +115,13 @@ There are cases where you may not need to create parameterized values from input
 
 The `sql.raw()` function allows you to include raw SQL statements within your queries without any additional processing or escaping. This can be useful when you have pre-constructed SQL statements or when you need to incorporate complex or dynamic SQL code directly into your queries.
 
-```
+```typescript
 sql.raw(`select * from users where id = ${12}`);
 // vs
 sql`select * from users where id = ${12}`;
 ```
 
-```
+```sql
 select * from users where id = 12;
 --> vs
 select * from users where id = $1; --> [12]
@@ -133,13 +131,13 @@ You can also utilize `sql.raw()` within the sql function, enabling you to includ
 
 By using `sql.raw()` inside the `sql` function, you can incorporate unescaped raw strings directly into your queries. This can be particularly useful when you have specific SQL code or expressions that should remain untouched by the template function’s automatic escaping or modification.
 
-```
+```typescript
 sql`select * from ${usersTable} where id = ${12}`;
 // vs
 sql`select * from ${usersTable} where id = ${sql.raw(12)}`;
 ```
 
-```
+```sql
 select * from "users" where id = $1; --> [12]
 --> vs
 select * from "users" where id = 12;
@@ -153,7 +151,7 @@ In certain scenarios, you may need to aggregate these chunks into an array using
 
 The fromList function allows you to combine multiple SQL chunks into a single SQL statement. You can use it to aggregate and concatenate the individual SQL parts according to your specific requirements and then obtain a unified SQL query that can be executed.
 
-```
+```typescript
 const sqlChunks: SQL[] = [];
 
 sqlChunks.push(sql`select * from users`);
@@ -174,7 +172,7 @@ for (let i = 0; i < 5; i++) {
 const finalSql: SQL = sql.fromList(sqlChunks)
 ```
 
-```
+```sql
 select * from users where id = $1 or id = $2 or id = $3 or id = $4 or id = $5; --> [0, 1, 2, 3, 4]
 ```
 
@@ -186,7 +184,7 @@ With `sql.join`, you can concatenate SQL chunks together using a specified separ
 
 This is particularly useful when you have specific requirements for formatting or delimiting the SQL chunks. By specifying a custom separator, you can achieve the desired structure and formatting in the final SQL query.
 
-```
+```typescript
 const sqlChunks: SQL[] = [];
 
 sqlChunks.push(sql`select * from users`);
@@ -207,7 +205,7 @@ if (i === 4) continue;
 const finalSql: SQL = sql.join(sqlChunks, sql.raw(' '));
 ```
 
-```
+```sql
 select * from users where id = $1 or id = $2 or id = $3 or id = $4 or id = $5; --> [0, 1, 2, 3, 4]
 ```
 
@@ -217,7 +215,7 @@ If you have already generated SQL using the `sql` template, you can achieve the 
 
 By using the append function, you can dynamically add additional SQL chunks to the existing SQL string, effectively concatenating them together. This allows you to incorporate custom logic or business rules for aggregating the chunks into the final SQL query.
 
-```
+```typescript
 const finalSql = sql`select * from users`;
 
 // some logic
@@ -234,7 +232,7 @@ for (let i = 0; i < 5; i++) {
 }
 ```
 
-```
+```sql
 select * from users where id = $1 or id = $2 or id = $3 or id = $4 or id = $5; --> [0, 1, 2, 3, 4]
 ```
 
@@ -244,7 +242,7 @@ By using sql.empty(), you can start with a blank SQL object and then dynamically
 
 Once you have initialized the SQL object using sql.empty(), you can take advantage of the full range of sql template features such as parameterization, composition, and escaping. This empowers you to construct the SQL query in a flexible and controlled manner, adapting it to your specific requirements.
 
-```
+```typescript
 const finalSql = sql.empty();
 
 // some logic
@@ -265,7 +263,7 @@ for (let i = 0; i < 5; i++) {
 }
 ```
 
-```
+```sql
 select * from users where id = $1 or id = $2 or id = $3 or id = $4 or id = $5; --> [0, 1, 2, 3, 4]
 ```
 
@@ -277,20 +275,14 @@ If you need to obtain the query string and corresponding parameters generated fr
 
 Once you have chosen the dialect, you can utilize the corresponding implementation’s functionality to convert the SQL template into the desired query string and parameter format. This ensures compatibility with the specific database system you are working with.
 
-PostgreSQL
-
-MySQL
-
-SQLite
-
-```
+```typescript
 import { PgDialect } from 'drizzle-orm/pg-core';
 
 const pgDialect = new PgDialect();
 pgDialect.sqlToQuery(sql`select * from ${usersTable} where ${usersTable.id} = ${12}`);
 ```
 
-```
+```sql
 select * from "users" where "users"."id" = $1; --> [ 12 ]
 ```
 
@@ -298,13 +290,13 @@ select * from "users" where "users"."id" = $1; --> [ 12 ]
 
 You can use the sql functionality in partial select queries as well. Partial select queries allow you to retrieve specific fields or columns from a table rather than fetching the entire row.
 
-For more detailed information about partial select queries, you can refer to the Core API documentation available at **[Core API docs](drizzle/docs/select/index.md#basic-and-partial-select)**.
+For more detailed information about partial select queries, you can refer to the Core API documentation available at **[Core API docs](https://orm.drizzle.team/docs/select#basic-and-partial-select)**.
 
 **Select different custom fields from table**
 
-Here you can see a usage for **[`sql<T>`](drizzle/docs/sql/index.md#sqlt)**, **[`sql``.mapWith()`](drizzle/docs/sql/index.md#sqlmapwith)**, **[`sql``.as<T>()`](drizzle/docs/sql/index.md#sqlast)**.
+Here you can see a usage for **[`sql<T>`](https://orm.drizzle.team/docs/sql#sqlt)**, **[`sql``.mapWith()`](https://orm.drizzle.team/docs/sql#sqlmapwith)**, **[`sql``.as<T>()`](https://orm.drizzle.team/docs/sql#sqlast)**.
 
-```
+```typescript
 import { sql } from 'drizzle-orm'
 import { usersTable } from 'schema'
 
@@ -316,7 +308,7 @@ await db.select({
 }).from(usersTable)
 ```
 
-```
+```sql
 select `id`, lower(`name`), lower(`name`) as `aliased_column`, count(*) from `users`;
 ```
 
@@ -330,7 +322,7 @@ By using the sql template, you are not restricted to only the predefined express
 
 **Filtering by `id` but with sql**
 
-```
+```typescript
 import { sql } from 'drizzle-orm'
 import { usersTable } from 'schema'
 
@@ -341,13 +333,13 @@ await db.select()
         .where(sql`${usersTable.id} = ${id}`)
 ```
 
-```
+```sql
 select * from "users" where "users"."id" = $1; --> [ 77 ]
 ```
 
 **Advanced fulltext search where statement**
 
-```
+```typescript
 import { sql } from 'drizzle-orm'
 import { usersTable } from 'schema'
 
@@ -358,7 +350,7 @@ await db.select()
         .where(sql`to_tsvector('simple', ${usersTable.name}) @@ to_tsquery('simple', ${searchParam})`)
 ```
 
-```
+```sql
 select * from "users" where to_tsvector('simple', "users"."name") @@ to_tsquery('simple', '$1'); --> [ "Ale" ]
 ```
 
@@ -366,14 +358,14 @@ select * from "users" where to_tsvector('simple', "users"."name") @@ to_tsquery(
 
 The `sql` template can indeed be used in the ORDER BY clause when you need specific functionality for ordering that is not available in Drizzle, but you prefer not to resort to raw SQL.
 
-```
+```typescript
 import { sql } from 'drizzle-orm'
 import { usersTable } from 'schema'
 
 await db.select().from(usersTable).orderBy(sql`${usersTable.id} desc nulls first`)
 ```
 
-```
+```sql
 select * from "users" order by "users"."id" desc nulls first;
 ```
 
@@ -381,7 +373,7 @@ select * from "users" order by "users"."id" desc nulls first;
 
 The `sql` template can indeed be used in the HAVING and GROUP BY clauses when you need specific functionality for ordering that is not available in Drizzle, but you prefer not to resort to raw SQL.
 
-```
+```typescript
 import { sql } from 'drizzle-orm'
 import { usersTable } from 'schema'
 
@@ -393,6 +385,6 @@ await db.select({
     .having(sql`count(${usersTable.id}) > 300`)
 ```
 
-```
+```sql
 select "project_id", count("users"."id") from users group by "users"."project_id" having count("users"."id") > 300; 
 ```

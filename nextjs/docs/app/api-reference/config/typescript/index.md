@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/app/api-reference/config/typescript"
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:09:18.848Z"
-content_hash: "60ffcd5b5ad154b7d5bd1b13110333dfb257cf98a9cfd3a86166008cdfdf05ee"
+last_crawled_at: "2026-04-27T18:08:05.042Z"
+content_hash: "755f3000b2dd272acab1509d7fec58af61ae846b661bdff0dcec953af0fbfd4f"
 menu_path: ["TypeScript"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/api-reference/config/next-config-js/webVitalsAttribution/index.md", "title": "webVitalsAttribution"}
-nav_next: {"path": "nextjs/docs/app/api-reference/config/eslint/index.md", "title": "ESLint Plugin"}
+version: "latest"
+content_language: "en"
 ---
+[API Reference](/docs/app/api-reference)[Configuration](/docs/app/api-reference/config)TypeScript
 
 # TypeScript
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 Next.js comes with built-in TypeScript, automatically installing the necessary packages and configuring the proper settings when you create a new project with `create-next-app`.
 
@@ -33,16 +34,16 @@ You can enable the plugin in VS Code by:
 2.  Searching for "TypeScript: Select TypeScript Version"
 3.  Selecting "Use Workspace Version"
 
-![TypeScript Command Palette](/_next/image?url=https%3A%2F%2Fh8DxKfmAPhn8O0p3.public.blob.vercel-storage.com%2Fdocs%2Flight%2Ftypescript-command-palette.png&w=3840&q=75)![TypeScript Command Palette](/_next/image?url=https%3A%2F%2Fh8DxKfmAPhn8O0p3.public.blob.vercel-storage.com%2Fdocs%2Fdark%2Ftypescript-command-palette.png&w=3840&q=75)
+![TypeScript Command Palette](https://h8DxKfmAPhn8O0p3.public.blob.vercel-storage.com/docs/light/typescript-command-palette.png)
 
 Now, when editing files, the custom plugin will be enabled. When running `next build`, the custom type checker will be used.
 
 The TypeScript plugin can help with:
 
-*   Warning if invalid values for [segment config options](/docs/app/api-reference/file-conventions/route-segment-config) are passed.
-*   Showing available options and in-context documentation.
-*   Ensuring the `'use client'` directive is used correctly.
-*   Ensuring client hooks (like `useState`) are only used in Client Components.
+-   Warning if invalid values for [segment config options](/docs/app/api-reference/file-conventions/route-segment-config) are passed.
+-   Showing available options and in-context documentation.
+-   Ensuring the `'use client'` directive is used correctly.
+-   Ensuring client hooks (like `useState`) are only used in Client Components.
 
 > **🎥 Watch:** Learn about the built-in TypeScript plugin → [YouTube (3 minutes)](https://www.youtube.com/watch?v=pqMqn9fKEf8)
 
@@ -58,8 +59,6 @@ The Next.js App Router has **enhanced type safety**. This includes:
 We're able to type the response data as you would expect with normal TypeScript. For example:
 
 app/page.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -84,9 +83,9 @@ For _complete_ end-to-end type safety, this also requires your database or conte
 
 Next.js generates global helpers for App Router route types. These are available without imports and are generated during `next dev`, `next build`, or via [`next typegen`](/docs/app/api-reference/cli/next#next-typegen-options):
 
-*   [`PageProps`](/docs/app/api-reference/file-conventions/page#page-props-helper)
-*   [`LayoutProps`](/docs/app/api-reference/file-conventions/layout#layout-props-helper)
-*   [`RouteContext`](/docs/app/api-reference/file-conventions/route#route-context-helper)
+-   [`PageProps`](/docs/app/api-reference/file-conventions/page#page-props-helper)
+-   [`LayoutProps`](/docs/app/api-reference/file-conventions/layout#layout-props-helper)
+-   [`RouteContext`](/docs/app/api-reference/file-conventions/route#route-context-helper)
 
 ## `next-env.d.ts`[](#next-envdts)
 
@@ -96,8 +95,8 @@ Running `next dev`, `next build`, or [`next typegen`](/docs/app/api-reference/cl
 
 > **Good to know**:
 > 
-> *   We recommend adding `next-env.d.ts` to your `.gitignore` file.
-> *   The file must be in your `tsconfig.json` `include` array (`create-next-app` does this automatically).
+> -   We recommend adding `next-env.d.ts` to your `.gitignore` file.
+> -   The file must be in your `tsconfig.json` `include` array (`create-next-app` does this automatically).
 
 ## Examples[](#examples)
 
@@ -409,7 +408,7 @@ const nextConfig: NextConfig = {
 export default nextConfig
 ```
 
-Why you might use a separate `tsconfig` for builds
+**Why you might use a separate tsconfig for builds**
 
 You might need to relax checks in scenarios like monorepos, where the build also validates shared dependencies that don't match your project's standards, or when loosening checks in CI to continue delivering while migrating locally to stricter TypeScript settings (and still wanting your IDE to highlight misuse).
 
@@ -430,9 +429,9 @@ This keeps your editor strict via `tsconfig.json` while allowing the production 
 
 > **Good to know**:
 > 
-> *   IDEs typically read `tsconfig.json` for diagnostics and IntelliSense, so you can still see IDE warnings while production builds use the alternate config. Mirror critical options if you want parity in the editor.
-> *   In development, only `tsconfig.json` is watched for changes. If you edit a different file name via `typescript.tsconfigPath`, restart the dev server to apply changes.
-> *   The configured file is used in `next dev`, `next build`, and `next typegen`.
+> -   IDEs typically read `tsconfig.json` for diagnostics and IntelliSense, so you can still see IDE warnings while production builds use the alternate config. Mirror critical options if you want parity in the editor.
+> -   In development, only `tsconfig.json` is watched for changes. If you edit a different file name via `typescript.tsconfigPath`, restart the dev server to apply changes.
+> -   The configured file is used in `next dev`, `next build`, and `next typegen`.
 
 ### Disabling TypeScript errors in production[](#disabling-typescript-errors-in-production)
 
@@ -489,40 +488,11 @@ tsconfig.json
 
 ## Version Changes[](#version-changes)
 
-Version
-
-Changes
-
-`v15.0.0`
-
-[`next.config.ts`](#type-checking-nextjs-configuration-files) support added for TypeScript projects.
-
-`v13.2.0`
-
-Statically typed links are available in beta.
-
-`v12.0.0`
-
-[SWC](/docs/architecture/nextjs-compiler) is now used by default to compile TypeScript and TSX for faster builds.
-
-`v10.2.1`
-
-[Incremental type checking](https://www.typescriptlang.org/tsconfig#incremental) support added when enabled in your `tsconfig.json`.
-
-[Previous
-
-webVitalsAttribution
-
-](/docs/app/api-reference/config/next-config-js/webVitalsAttribution)
-
-[Next
-
-ESLint
-
-](/docs/app/api-reference/config/eslint)
+| Version | Changes |
+| --- | --- |
+| `v15.0.0` | [`next.config.ts`](#type-checking-nextjs-configuration-files) support added for TypeScript projects. |
+| `v13.2.0` | Statically typed links are available in beta. |
+| `v12.0.0` | [SWC](/docs/architecture/nextjs-compiler) is now used by default to compile TypeScript and TSX for faster builds. |
+| `v10.2.1` | [Incremental type checking](https://www.typescriptlang.org/tsconfig#incremental) support added when enabled in your `tsconfig.json`. |
 
 Was this helpful?
-
-supported.
-
-Send

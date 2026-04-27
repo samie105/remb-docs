@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/app/api-reference/functions/next-request
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:11:52.928Z"
-content_hash: "06df2d05e543938847e3a0190bfc570f8fe64d78d0a9e9be9500d9c2c6d90afe"
+last_crawled_at: "2026-04-27T18:10:37.696Z"
+content_hash: "1781dbc67ec829d555912ed4066e72711e75b179b8154b61f9529bc74578a453"
 menu_path: ["NextRequest"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/api-reference/functions/image-response/index.md", "title": "ImageResponse"}
-nav_next: {"path": "nextjs/docs/app/api-reference/functions/next-response/index.md", "title": "NextResponse"}
+version: "latest"
+content_language: "en"
 ---
+[API Reference](/docs/app/api-reference)[Functions](/docs/app/api-reference/functions)NextRequest
 
 # NextRequest
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 NextRequest extends the [Web Request API](https://developer.mozilla.org/docs/Web/API/Request) with additional convenience methods.
 
@@ -98,62 +99,19 @@ request.nextUrl.searchParams
 
 The following options are available:
 
-Property
-
-Type
-
-Description
-
-`basePath`
-
-`string`
-
-The [base path](/docs/app/api-reference/config/next-config-js/basePath) of the URL.
-
-`buildId`
-
-`string` | `undefined`
-
-The build identifier of the Next.js application. Can be [customized](/docs/app/api-reference/config/next-config-js/generateBuildId).
-
-`pathname`
-
-`string`
-
-The pathname of the URL.
-
-`searchParams`
-
-`Object`
-
-The search parameters of the URL.
+| Property | Type | Description |
+| --- | --- | --- |
+| `basePath` | `string` | The [base path](/docs/app/api-reference/config/next-config-js/basePath) of the URL. |
+| `buildId` | `string` | `undefined` | The build identifier of the Next.js application. Can be [customized](/docs/app/api-reference/config/next-config-js/generateBuildId). |
+| `pathname` | `string` | The pathname of the URL. |
+| `searchParams` | `Object` | The search parameters of the URL. |
 
 > **Note:** The internationalization properties from the Pages Router are not available for usage in the App Router. Learn more about [internationalization with the App Router](/docs/app/guides/internationalization).
 
 ## Version History[](#version-history)
 
-Version
-
-Changes
-
-`v15.0.0`
-
-`ip` and `geo` removed.
-
-[Previous
-
-ImageResponse
-
-](/docs/app/api-reference/functions/image-response)
-
-[Next
-
-NextResponse
-
-](/docs/app/api-reference/functions/next-response)
+| Version | Changes |
+| --- | --- |
+| `v15.0.0` | `ip` and `geo` removed. |
 
 Was this helpful?
-
-supported.
-
-Send

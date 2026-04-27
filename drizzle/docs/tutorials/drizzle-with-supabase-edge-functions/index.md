@@ -5,21 +5,19 @@ canonical_url: "https://orm.drizzle.team/docs/tutorials/drizzle-with-supabase-ed
 docset: "drizzle"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:24:02.432Z"
-content_hash: "54cbfbc3a564f5a2ce51eec6862e2fa090ae0b21e4f9d354320b1a3b7d1e2c8b"
+last_crawled_at: "2026-04-27T19:28:43.996Z"
+content_hash: "5c30b7eae9e8e8952781d6409836b15e403815984a0ae2eaeea269510956adf8"
 menu_path: ["Drizzle with Supabase Edge Functions"]
 section_path: []
-nav_prev: {"path": "drizzle/docs/tutorials/drizzle-with-supabase/index.md", "title": "Drizzle with Supabase Database"}
-nav_next: {"path": "drizzle/docs/tutorials/drizzle-with-turso/index.md", "title": "Drizzle with Turso"}
+content_language: "en"
 ---
-
 To learn how to create a basic Edge Function on your local machine and then deploy it, see the [Edge Functions Quickstart](https://supabase.com/docs/guides/functions/quickstart).
 
 #### Create a table[](#create-a-table)
 
 Create a `schema.ts` file in your `src` directory and declare a table schema:
 
-```
+```typescript
 import { pgTable, serial, text, integer } from "drizzle-orm/pg-core";
 
 export const usersTable = pgTable('users_table', {
@@ -37,7 +35,7 @@ This file will be used to generate migrations for your database.
 
 Create a `drizzle.config.ts` file in the root of your project and add the following content:
 
-```
+```typescript
 import { defineConfig } from "drizzle-kit";
 
 export default defineConfig({
@@ -53,13 +51,13 @@ In this tutorial we will use Drizzle kit to generate migrations for our schema.
 
 Create a new Supabase project in a folder on your local machine:
 
-```
+```bash
 supabase init
 ```
 
 It will create `supabase` folder with `config.toml` file:
 
-```
+```text
 └── supabase
     └── config.toml
 ```
@@ -70,7 +68,7 @@ If you are using Visual Studio Code, follow the [Supabase documentation](https:/
 
 Run the `drizzle-kit generate` command to generate migrations:
 
-```
+```bash
 npx drizzle-kit generate
 ```
 
@@ -80,13 +78,13 @@ It will create a new migration file in the `supabase/migrations` directory:
 
 To start the Supabase local development stack, run the following command:
 
-```
+```bash
 supabase start
 ```
 
 To apply migrations, run the following command:
 
-```
+```bash
 supabase migration up
 ```
 
@@ -96,19 +94,19 @@ IMPORTANT
 
 Don’t forget to run Docker
 
-Alternatively, you can apply migrations using the `drizzle-kit migrate` command. Learn more about this migration process in the [documentation](drizzle/docs/migrations/index.md).
+Alternatively, you can apply migrations using the `drizzle-kit migrate` command. Learn more about this migration process in the [documentation](https://orm.drizzle.team/docs/migrations).
 
 #### Create a new Edge Function[](#create-a-new-edge-function)
 
 Run the `supabase functions new [FUNCTION_NAME]` command to create a new Edge Function:
 
-```
+```bash
 supabase functions new drizzle-tutorial
 ```
 
 It will create a new folder with the function name in the `supabase/functions` directory:
 
-```
+```text
 └── supabase
     └── functions
     │   └── drizzle-tutorial
@@ -123,7 +121,7 @@ When you create a new Edge Function, it will use TypeScript by default. However,
 
 Add the following imports to the `deno.json` file in the `supabase/functions/drizzle-tutorial` directory:
 
-```
+```json
 {
   "imports": {
     "drizzle-orm/": "npm:/drizzle-orm/",
@@ -138,7 +136,7 @@ You can read more about managing dependencies [here](https://supabase.com/docs/g
 
 Copy the code that you will use in your edge function from `src/schema.ts` file to the `supabase/functions/drizzle-tutorial/index.ts` file:
 
-```
+```typescript
 // Setup type definitions for built-in Supabase Runtime APIs
 import "jsr:@supabase/functions-js/edge-runtime.d.ts"
 import { pgTable, serial, text, integer } from "drizzle-orm/pg-core";
@@ -170,7 +168,7 @@ In the Deno ecosystem, each function should be treated as an independent project
 
 Update your edge function code with your database configuration:
 
-```
+```typescript
 // Setup type definitions for built-in Supabase Runtime APIs
 import { integer, pgTable, serial, text } from "drizzle-orm/pg-core";
 import { drizzle } from "drizzle-orm/postgres-js";
@@ -208,13 +206,13 @@ Deno.serve(async () => {
 
 Run the following command to test your function locally:
 
-```
+```bash
 supabase functions serve --no-verify-jwt
 ```
 
 Navigate to the route `(e.g. /drizzle-tutorial)` in your browser:
 
-```
+```plaintext
 [
   {
     "id": 1,
@@ -230,13 +228,13 @@ You can create new Supabase project in the [dashboard](https://supabase.com/dash
 
 Copy the `Reference ID` from project settings and use it to link your local development project to a hosted Supabase project by running the following command:
 
-```
+```bash
 supabase link --project-ref=<REFERENCE_ID>
 ```
 
 Push your schema changes to the hosted Supabase project by running the following command:
 
-```
+```bash
 supabase db push
 ```
 
@@ -248,7 +246,7 @@ Read more about Connection Pooler in the [documentation](https://supabase.com/do
 
 Update your edge function code to use the `DATABASE_URL` environment variable instead of `SUPABASE_DB_URL`:
 
-```
+```typescript
 // imports
 
 // const connectionString = Deno.env.get("SUPABASE_DB_URL")!;
@@ -259,7 +257,7 @@ const connectionString = Deno.env.get("DATABASE_URL")!;
 
 Run the following command to set the environment variable:
 
-```
+```bash
 supabase secrets set DATABASE_URL=<CONNECTION_STRING>
 ```
 
@@ -269,7 +267,7 @@ Learn more about managing environment variables in Supabase Edge Functions in th
 
 Deploy your function by running the following command:
 
-```
+```bash
 supabase functions deploy drizzle-tutorial --no-verify-jwt
 ```
 

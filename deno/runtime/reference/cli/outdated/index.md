@@ -5,20 +5,21 @@ canonical_url: "https://docs.deno.com/runtime/reference/cli/outdated/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:54:55.663Z"
-content_hash: "f288ed0354a46d82fb42503082d0fab1257c5334648e67b2bdc2b485df6ccd04"
+last_crawled_at: "2026-04-27T17:31:21.836Z"
+content_hash: "b1f4c47a1d7cf7ca9234b531797fc6fb2590a29023cb44502d429443fdc5f451"
 menu_path: ["deno outdated"]
 section_path: []
+content_language: "en"
 ---
-On this page
+**On this page**
 
-*   [Checking for outdated dependencies](#checking-for-outdated-dependencies)
-*   [Updating dependencies](#updating-dependencies)
-*   [Selecting packages](#selecting-packages)
-    *   [Updating to specific versions](#updating-to-specific-versions)
-*   [Workspaces](#workspaces)
-*   [Options](#options)
-*   [Dependency management options](#dependency-management-options)
+-   [Checking for outdated dependencies](#checking-for-outdated-dependencies)
+-   [Updating dependencies](#updating-dependencies)
+-   [Selecting packages](#selecting-packages)
+    -   [Updating to specific versions](#updating-to-specific-versions)
+-   [Workspaces](#workspaces)
+-   [Options](#options)
+-   [Dependency management options](#dependency-management-options)
 
 ## Checking for outdated dependencies
 

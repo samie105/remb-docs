@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/app/api-reference/config/next-config-js/
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:06:47.863Z"
-content_hash: "db880b51ce476d121a11cc41de2053a695c4b77c54bf11fe963147d922431d53"
+last_crawled_at: "2026-04-27T18:05:44.048Z"
+content_hash: "0026449986d763e6659700ba5e67fd910a822082356b9067c138892cac80954e"
 menu_path: ["allowedDevOrigins"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/api-reference/config/next-config-js/adapterPath/index.md", "title": "adapterPath"}
-nav_next: {"path": "nextjs/docs/app/api-reference/config/next-config-js/appDir/index.md", "title": "appDir"}
+version: "latest"
+content_language: "en"
 ---
+[Configuration](/docs/app/api-reference/config)[next.config.js](/docs/app/api-reference/config/next-config-js)allowedDevOrigins
 
 # allowedDevOrigins
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 Next.js blocks cross-origin requests to dev-only assets and endpoints during development by default to prevent unauthorized access.
 
@@ -31,20 +32,4 @@ module.exports = {
 }
 ```
 
-[Previous
-
-adapterPath
-
-](/docs/app/api-reference/config/next-config-js/adapterPath)
-
-[Next
-
-appDir
-
-](/docs/app/api-reference/config/next-config-js/appDir)
-
 Was this helpful?
-
-supported.
-
-Send

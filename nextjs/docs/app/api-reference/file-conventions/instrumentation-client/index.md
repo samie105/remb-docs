@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/app/api-reference/file-conventions/instr
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:09:56.718Z"
-content_hash: "a8f5ea1b002c560632b43c4320ffade77dabde3ed9df86d07a7b0fbf93f8aec5"
+last_crawled_at: "2026-04-27T18:08:41.107Z"
+content_hash: "38d52f3ed87f561f7ae58aef69ebfcf0b24ca4b41219765fc7ae24762d2caac2"
 menu_path: ["instrumentation-client.js"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/api-reference/file-conventions/instrumentation/index.md", "title": "instrumentation.js"}
-nav_next: {"path": "nextjs/docs/app/api-reference/file-conventions/intercepting-routes/index.md", "title": "Intercepting Routes"}
+version: "latest"
+content_language: "en"
 ---
+[API Reference](/docs/app/api-reference)[File-system conventions](/docs/app/api-reference/file-conventions)instrumentation-client.js
 
 # instrumentation-client.js
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 The `instrumentation-client.js|ts` file allows you to add monitoring, analytics code, and other side-effects that run before your application becomes interactive. This is useful for setting up performance tracking, error monitoring, polyfills, or any other client-side observability tools.
 
@@ -26,8 +27,6 @@ To use it, place the file in the **root** of your application or inside a `src` 
 Unlike [server-side instrumentation](/docs/app/guides/instrumentation), you do not need to export any specific functions. You can write your monitoring code directly in the file:
 
 instrumentation-client.ts
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -47,13 +46,9 @@ window.addEventListener('error', (event) => {
 
 **Error handling:** Implement try-catch blocks around your instrumentation code to ensure robust monitoring. This prevents individual tracking failures from affecting other instrumentation features.
 
-## Router navigation tracking[](#router-navigation-tracking)
-
 You can export an `onRouterTransitionStart` function to receive notifications when navigation begins:
 
 instrumentation-client.ts
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -71,8 +66,8 @@ export function onRouterTransitionStart(
 
 The `onRouterTransitionStart` function receives two parameters:
 
-*   `url: string` - The URL being navigated to
-*   `navigationType: 'push' | 'replace' | 'traverse'` - The type of navigation
+-   `url: string` - The URL being navigated to
+-   `navigationType: 'push' | 'replace' | 'traverse'` - The type of navigation
 
 ## Performance considerations[](#performance-considerations)
 
@@ -98,8 +93,6 @@ Initialize error tracking before React starts and add navigation breadcrumbs for
 
 instrumentation-client.ts
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -120,8 +113,6 @@ export function onRouterTransitionStart(url: string) {
 Initialize analytics and track navigation events with detailed metadata for user behavior analysis.
 
 instrumentation-client.ts
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -144,8 +135,6 @@ export function onRouterTransitionStart(url: string, navigationType: string) {
 Track Time to Interactive and navigation performance using the Performance Observer API and performance marks.
 
 instrumentation-client.ts
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -175,8 +164,6 @@ Load polyfills before application code runs. Use static imports for immediate lo
 
 instrumentation-client.ts
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -191,28 +178,8 @@ if (!window.ResizeObserver) {
 
 ## Version history[](#version-history)
 
-Version
-
-Changes
-
-`v15.3`
-
-`instrumentation-client` introduced
-
-[Previous
-
-instrumentation.js
-
-](/docs/app/api-reference/file-conventions/instrumentation)
-
-[Next
-
-Intercepting Routes
-
-](/docs/app/api-reference/file-conventions/intercepting-routes)
+| Version | Changes |
+| --- | --- |
+| `v15.3` | `instrumentation-client` introduced |
 
 Was this helpful?
-
-supported.
-
-Send

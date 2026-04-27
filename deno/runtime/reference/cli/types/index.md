@@ -5,15 +5,16 @@ canonical_url: "https://docs.deno.com/runtime/reference/cli/types/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:56:37.605Z"
-content_hash: "08d4a60bd6457d51b3ccfbf39a9fd549761a3d6225b227c95c174f6729efeaa7"
+last_crawled_at: "2026-04-27T17:33:53.946Z"
+content_hash: "63a1fda240fef3723927d78823c0a8c6a7e2ba0090e292da4f7df3c7f1510d36"
 menu_path: ["deno types"]
 section_path: []
+content_language: "en"
 ---
-On this page
+**On this page**
 
-*   [Basic usage](#basic-usage)
-*   [When to use this](#when-to-use-this)
+-   [Basic usage](#basic-usage)
+-   [When to use this](#when-to-use-this)
 
 `deno types` prints the TypeScript type declarations for all Deno-specific APIs. This is useful for editors and tools that need Deno's type information.
 
@@ -39,9 +40,9 @@ deno types > deno.d.ts
 
 Most editors with the [Deno extension](/runtime/reference/vscode/) handle types automatically. You may need `deno types` if you are:
 
-*   Using an editor without Deno LSP support
-*   Generating type declarations for a build pipeline
-*   Inspecting which APIs are available at your current Deno version
+-   Using an editor without Deno LSP support
+-   Generating type declarations for a build pipeline
+-   Inspecting which APIs are available at your current Deno version
 
 Command line usage:
 

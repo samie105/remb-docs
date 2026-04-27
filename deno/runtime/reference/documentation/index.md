@@ -5,10 +5,11 @@ canonical_url: "https://docs.deno.com/runtime/reference/documentation/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:58:16.917Z"
-content_hash: "cc93e9ebf9c724a1e847ab65c07403fb6631a3029ba95e2365796a51bca2a73f"
+last_crawled_at: "2026-04-27T17:36:18.818Z"
+content_hash: "182d79029a627b402796eea406e06de4b676643e92bfb635509e5a6935a48fed"
 menu_path: ["Documentation Tests"]
 section_path: []
+content_language: "en"
 ---
 Deno supports both type-checking evaluating your documentation examples.
 
@@ -28,16 +29,16 @@ The basic idea is this:
 
 The triple backticks mark the start and end of code blocks, the language is determined by the language identifier attribute which may be any of the following:
 
-*   `js`
-*   `javascript`
-*   `mjs`
-*   `cjs`
-*   `jsx`
-*   `ts`
-*   `typescript`
-*   `mts`
-*   `cts`
-*   `tsx`
+-   `js`
+-   `javascript`
+-   `mjs`
+-   `cjs`
+-   `jsx`
+-   `ts`
+-   `typescript`
+-   `mts`
+-   `cts`
+-   `tsx`
 
 If no language identifier is specified then the language is inferred from media type of the source document that the code block is extracted from.
 
@@ -72,6 +73,6 @@ export function foo(): string {
 
 For more guides on testing in Deno, check out:
 
-*   [Basic testing tutorial](/examples/testing_tutorial/)
-*   [Mocking data in tests tutorial](/examples/mocking_tutorial/)
-*   [Testing web applications tutorial](/examples/web_testing_tutorial/)
+-   [Basic testing tutorial](/examples/testing_tutorial/)
+-   [Mocking data in tests tutorial](/examples/mocking_tutorial/)
+-   [Testing web applications tutorial](/examples/web_testing_tutorial/)

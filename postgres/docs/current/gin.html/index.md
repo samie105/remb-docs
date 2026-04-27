@@ -5,14 +5,12 @@ canonical_url: "https://www.postgresql.org/docs/current/gin.html"
 docset: "postgres"
 kind: "database"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:51:24.124Z"
-content_hash: "9b290cb8c9a661b68c8c645312fb3ae1a7c18376281f2e3d2a4ddba9bf90e80d"
+last_crawled_at: "2026-04-27T20:50:32.970Z"
+content_hash: "80af20235ec64bf578d5ec21b5c4a41ee9f2f3e0dbdbedbeec2a42aa63c53f3e"
 menu_path: ["PostgreSQL: Documentation: 18: 65.4. GIN Indexes"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/geqo-intro.html/index.md", "title": "PostgreSQL: Documentation: 18: 61.1.\u00a0Query Handling as a Complex Optimization Problem"}
-nav_next: {"path": "postgres/docs/current/gist.html/index.md", "title": "PostgreSQL: Documentation: 18: 65.2.\u00a0GiST Indexes"}
+content_language: "en"
 ---
-
 ### 65.4.1. Introduction [#](#GIN-INTRO)
 
 GIN stands for Generalized Inverted Index. GIN is designed for handling cases where the items to be indexed are composite values, and the queries to be handled by the index need to search for element values that appear within the composite items. For example, the items could be documents, and the queries could be searches for documents containing specific words.
@@ -34,46 +32,22 @@ The core PostgreSQL distribution includes the GIN operator classes shown in [Tab
 **Table 65.3. Built-in GIN Operator Classes**
 
  
-
-Name
-
-Indexable Operators
-
-`array_ops`
-
-`&& (anyarray,anyarray)`
-
-`@> (anyarray,anyarray)`
-
-`<@ (anyarray,anyarray)`
-
-`= (anyarray,anyarray)`
-
-`jsonb_ops`
-
-`@> (jsonb,jsonb)`
-
-`@? (jsonb,jsonpath)`
-
-`@@ (jsonb,jsonpath)`
-
-`? (jsonb,text)`
-
-`?| (jsonb,text[])`
-
-`?& (jsonb,text[])`
-
-`jsonb_path_ops`
-
-`@> (jsonb,jsonb)`
-
-`@? (jsonb,jsonpath)`
-
-`@@ (jsonb,jsonpath)`
-
-`tsvector_ops`
-
-`@@ (tsvector,tsquery)`
+| Name | Indexable Operators |
+| --- | --- |
+| `array_ops` | `&& (anyarray,anyarray)` |
+| `@> (anyarray,anyarray)` |
+| `<@ (anyarray,anyarray)` |
+| `= (anyarray,anyarray)` |
+| `jsonb_ops` | `@> (jsonb,jsonb)` |
+| `@? (jsonb,jsonpath)` |
+| `@@ (jsonb,jsonpath)` |
+| `? (jsonb,text)` |
+| `?| (jsonb,text[])` |
+| `?& (jsonb,text[])` |
+| `jsonb_path_ops` | `@> (jsonb,jsonb)` |
+| `@? (jsonb,jsonpath)` |
+| `@@ (jsonb,jsonpath)` |
+| `tsvector_ops` | `@@ (tsvector,tsquery)` |
 
 Of the two operator classes for type `jsonb`, `jsonb_ops` is the default. `jsonb_path_ops` supports fewer operators but offers better performance for those operators. See [Section 8.14.4](https://www.postgresql.org/docs/current/datatype-json.html#JSON-INDEXING "8.14.4. jsonb Indexing") for details.
 
@@ -155,7 +129,7 @@ Multicolumn GIN indexes are implemented by building a single B-tree over composi
 
 #### 65.4.4.1. GIN Fast Update Technique [#](#GIN-FAST-UPDATE)
 
-Updating a GIN index tends to be slow because of the intrinsic nature of inverted indexes: inserting or updating one heap row can cause many inserts into the index (one for each key extracted from the indexed item). GIN is capable of postponing much of this work by inserting new tuples into a temporary, unsorted list of pending entries. When the table is vacuumed or autoanalyzed, or when `gin_clean_pending_list` function is called, or if the pending list becomes larger than [gin\_pending\_list\_limit](postgres/docs/current/runtime-config-client.html/index.md#GUC-GIN-PENDING-LIST-LIMIT), the entries are moved to the main GIN data structure using the same bulk insert techniques used during initial index creation. This greatly improves GIN index update speed, even counting the additional vacuum overhead. Moreover the overhead work can be done by a background process instead of in foreground query processing.
+Updating a GIN index tends to be slow because of the intrinsic nature of inverted indexes: inserting or updating one heap row can cause many inserts into the index (one for each key extracted from the indexed item). GIN is capable of postponing much of this work by inserting new tuples into a temporary, unsorted list of pending entries. When the table is vacuumed or autoanalyzed, or when `gin_clean_pending_list` function is called, or if the pending list becomes larger than [gin\_pending\_list\_limit](https://www.postgresql.org/docs/current/runtime-config-client.html#GUC-GIN-PENDING-LIST-LIMIT), the entries are moved to the main GIN data structure using the same bulk insert techniques used during initial index creation. This greatly improves GIN index update speed, even counting the additional vacuum overhead. Moreover the overhead work can be done by a background process instead of in foreground query processing.
 
 The main disadvantage of this approach is that searches must scan the list of pending entries in addition to searching the regular index, and so a large list of pending entries will slow searches significantly. Another disadvantage is that, while most updates are fast, an update that causes the pending list to become “too large” will incur an immediate cleanup cycle and thus be much slower than other updates. Proper use of autovacuum can minimize both of these problems.
 
@@ -173,17 +147,17 @@ Insertion into a GIN index can be slow due to the likelihood of many keys being 
 
 When `fastupdate` is enabled for GIN (see [Section 65.4.4.1](https://www.postgresql.org/docs/current/gin.html#GIN-FAST-UPDATE "65.4.4.1. GIN Fast Update Technique") for details), the penalty is less than when it is not. But for very large updates it may still be best to drop and recreate the index.
 
-[maintenance\_work\_mem](postgres/docs/current/runtime-config-resource.html/index.md#GUC-MAINTENANCE-WORK-MEM)
+[maintenance\_work\_mem](https://www.postgresql.org/docs/current/runtime-config-resource.html#GUC-MAINTENANCE-WORK-MEM)
 
 Build time for a GIN index is very sensitive to the `maintenance_work_mem` setting; it doesn't pay to skimp on work memory during index creation.
 
-[gin\_pending\_list\_limit](postgres/docs/current/runtime-config-client.html/index.md#GUC-GIN-PENDING-LIST-LIMIT)
+[gin\_pending\_list\_limit](https://www.postgresql.org/docs/current/runtime-config-client.html#GUC-GIN-PENDING-LIST-LIMIT)
 
 During a series of insertions into an existing GIN index that has `fastupdate` enabled, the system will clean up the pending-entry list whenever the list grows larger than `gin_pending_list_limit`. To avoid fluctuations in observed response time, it's desirable to have pending-list cleanup occur in the background (i.e., via autovacuum). Foreground cleanup operations can be avoided by increasing `gin_pending_list_limit` or making autovacuum more aggressive. However, enlarging the threshold of the cleanup operation means that if a foreground cleanup does occur, it will take even longer.
 
 `gin_pending_list_limit` can be overridden for individual GIN indexes by changing storage parameters, which allows each GIN index to have its own cleanup threshold. For example, it's possible to increase the threshold only for the GIN index which can be updated heavily, and decrease it otherwise.
 
-[gin\_fuzzy\_search\_limit](postgres/docs/current/runtime-config-client.html/index.md#GUC-GIN-FUZZY-SEARCH-LIMIT)
+[gin\_fuzzy\_search\_limit](https://www.postgresql.org/docs/current/runtime-config-client.html#GUC-GIN-FUZZY-SEARCH-LIMIT)
 
 The primary goal of developing GIN indexes was to create support for highly scalable full-text search in PostgreSQL, and there are often situations when a full-text search returns a very large set of results. Moreover, this often happens when the query contains very frequent words, so that the large result set is not even useful. Since reading many tuples from the disk and sorting them could take a lot of time, this is unacceptable for production. (Note that the index search itself is very fast.)
 

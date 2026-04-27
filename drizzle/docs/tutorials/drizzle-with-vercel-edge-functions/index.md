@@ -5,27 +5,17 @@ canonical_url: "https://orm.drizzle.team/docs/tutorials/drizzle-with-vercel-edge
 docset: "drizzle"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:24:39.664Z"
-content_hash: "074d5704f61620ac6d7694aac2be4179ab251a9d6b259dbd067ea3c8b5642096"
+last_crawled_at: "2026-04-27T19:29:21.029Z"
+content_hash: "a174b9844fdd4c3f2f88aba042f09d47dfdd4fe79431defc9fe90eb31a5762b4"
 menu_path: ["Drizzle with Vercel Edge Functions"]
 section_path: []
-nav_prev: {"path": "drizzle/docs/tutorials/drizzle-with-vercel/index.md", "title": "Drizzle with Vercel Postgres"}
-nav_next: {"path": "drizzle/docs/tutorials/drizzle-with-xata/index.md", "title": "Drizzle with Xata"}
+content_language: "en"
 ---
-
 This tutorial demonstrates how to use Drizzle ORM with [Vercel Functions](https://vercel.com/docs/functions) in [Edge runtime](https://vercel.com/docs/functions/runtimes/edge-runtime).
 
 This guide assumes familiarity with:
 
-*   You should have the latest version of [Vercel CLI](https://vercel.com/docs/cli#) installed.
-
-npm
-
-yarn
-
-pnpm
-
-bun
+-   You should have the latest version of [Vercel CLI](https://vercel.com/docs/cli#) installed.
 
 ```
 npm i -g vercel
@@ -43,21 +33,13 @@ pnpm add -g vercel
 bun add -g vercel
 ```
 
-*   You should have an existing Next.js project or create a new one using the following command:
+-   You should have an existing Next.js project or create a new one using the following command:
 
-```
+```bash
 npx create-next-app@latest --typescript
 ```
 
-*   You should have installed Drizzle ORM and [Drizzle kit](drizzle/docs/kit-overview/index.md). You can do this by running the following command:
-
-npm
-
-yarn
-
-pnpm
-
-bun
+-   You should have installed Drizzle ORM and [Drizzle kit](https://orm.drizzle.team/docs/kit-overview). You can do this by running the following command:
 
 ```
 npm i drizzle-orm
@@ -91,29 +73,21 @@ When using Drizzle ORM with Vercel Edge functions you have to use edge-compatibl
 
 You can choose one of these drivers according to your database dialect:
 
-*   [Neon serverless driver](drizzle/docs/get-started-postgresql/index.md#neon) allows you to query your Neon Postgres databases from serverless and edge environments over HTTP or WebSockets in place of TCP. We recommend using this driver for connecting to `Neon Postgres`.
-*   [Vercel Postgres driver](drizzle/docs/get-started-postgresql/index.md#vercel-postgres) is built on top of the `Neon serverless driver`. We recommend using this driver for connecting to `Vercel Postgres`.
-*   [PlanetScale serverless driver](drizzle/docs/get-started-mysql/index.md#planetscale) allows you access any `MySQL` client and execute queries over an HTTP connection, which is generally not blocked by cloud providers.
-*   [libSQL client](drizzle/docs/get-started-sqlite/index.md#turso) allows you to access [Turso](https://docs.turso.tech/introduction) database.
+-   [Neon serverless driver](https://orm.drizzle.team/docs/get-started-postgresql#neon) allows you to query your Neon Postgres databases from serverless and edge environments over HTTP or WebSockets in place of TCP. We recommend using this driver for connecting to `Neon Postgres`.
+-   [Vercel Postgres driver](https://orm.drizzle.team/docs/get-started-postgresql#vercel-postgres) is built on top of the `Neon serverless driver`. We recommend using this driver for connecting to `Vercel Postgres`.
+-   [PlanetScale serverless driver](https://orm.drizzle.team/docs/get-started-mysql#planetscale) allows you access any `MySQL` client and execute queries over an HTTP connection, which is generally not blocked by cloud providers.
+-   [libSQL client](https://orm.drizzle.team/docs/get-started-sqlite#turso) allows you to access [Turso](https://docs.turso.tech/introduction) database.
 
-*   Navigate directly to the [Neon Postgres](drizzle/docs/tutorials/drizzle-with-vercel-edge-functions/index.md#neon-postgres) section.
-*   Navigate directly to the [Vercel Postgres](drizzle/docs/tutorials/drizzle-with-vercel-edge-functions/index.md#vercel-postgres) section.
-*   Navigate directly to the [PlanetScale](drizzle/docs/tutorials/drizzle-with-vercel-edge-functions/index.md#planetscale) section.
-*   Navigate directly to the [Turso](drizzle/docs/tutorials/drizzle-with-vercel-edge-functions/index.md#turso) section.
+-   Navigate directly to the [Neon Postgres](https://orm.drizzle.team/docs/tutorials/drizzle-with-vercel-edge-functions#neon-postgres) section.
+-   Navigate directly to the [Vercel Postgres](https://orm.drizzle.team/docs/tutorials/drizzle-with-vercel-edge-functions#vercel-postgres) section.
+-   Navigate directly to the [PlanetScale](https://orm.drizzle.team/docs/tutorials/drizzle-with-vercel-edge-functions#planetscale) section.
+-   Navigate directly to the [Turso](https://orm.drizzle.team/docs/tutorials/drizzle-with-vercel-edge-functions#turso) section.
 
 ### Neon Postgres[](#neon-postgres)
 
 #### Install the `@neondatabase/serverless` driver[](#install-the-neondatabaseserverless-driver)
 
 Install the `@neondatabase/serverless` driver:
-
-npm
-
-yarn
-
-pnpm
-
-bun
 
 ```
 npm i @neondatabase/serverless
@@ -135,7 +109,7 @@ bun add @neondatabase/serverless
 
 Create a `schema.ts` file in the `src/db` directory and declare a table schema:
 
-```
+```typescript
 import { pgTable, serial, text } from "drizzle-orm/pg-core";
 
 export const usersTable = pgTable('users_table', {
@@ -148,11 +122,11 @@ export const usersTable = pgTable('users_table', {
 
 #### Setup Drizzle config file[](#setup-drizzle-config-file)
 
-**Drizzle config** - a configuration file that is used by [Drizzle Kit](drizzle/docs/kit-overview/index.md) and contains all the information about your database connection, migration folder and schema files.
+**Drizzle config** - a configuration file that is used by [Drizzle Kit](https://orm.drizzle.team/docs/kit-overview) and contains all the information about your database connection, migration folder and schema files.
 
 Create a `drizzle.config.ts` file in the root of your project and add the following content:
 
-```
+```typescript
 import { defineConfig } from "drizzle-kit";
 
 export default defineConfig({
@@ -166,7 +140,7 @@ export default defineConfig({
 
 Configure your database connection string in the `.env` file:
 
-```
+```plaintext
 POSTGRES_URL="postgres://[user]:[password]@[host]-[region].aws.neon.tech:5432/[db-name]?sslmode=[ssl-mode]"
 ```
 
@@ -176,7 +150,7 @@ You can generate migrations using `drizzle-kit generate` command and then run th
 
 Generate migrations:
 
-```
+```bash
 npx drizzle-kit generate
 ```
 
@@ -184,7 +158,7 @@ These migrations are stored in the `drizzle` directory, as specified in your `dr
 
 Example of a generated migration:
 
-```
+```sql
 CREATE TABLE IF NOT EXISTS "users_table" (
 	"id" serial PRIMARY KEY NOT NULL,
 	"name" text NOT NULL,
@@ -196,13 +170,13 @@ CREATE TABLE IF NOT EXISTS "users_table" (
 
 Run migrations:
 
-```
+```bash
 npx drizzle-kit migrate
 ```
 
-Alternatively, you can push changes directly to the database using [Drizzle kit push command](drizzle/docs/kit-overview/index.md#prototyping-with-db-push):
+Alternatively, you can push changes directly to the database using [Drizzle kit push command](https://orm.drizzle.team/docs/kit-overview#prototyping-with-db-push):
 
-```
+```bash
 npx drizzle-kit push
 ```
 
@@ -214,7 +188,7 @@ Push command is good for situations where you need to quickly test new schema de
 
 Create a `index.ts` file in the `src/db` directory and set up your database configuration:
 
-```
+```typescript
 import { drizzle } from 'drizzle-orm/neon-serverless';
 
 export const db = drizzle(process.env.POSTGRES_URL!)
@@ -224,7 +198,7 @@ export const db = drizzle(process.env.POSTGRES_URL!)
 
 Create `route.ts` file in `src/app/api/hello` directory. To learn more about how to write a function, see the [Functions API Reference](https://vercel.com/docs/functions/functions-api-reference) and [Vercel Functions Quickstart](https://vercel.com/docs/functions/quickstart).
 
-```
+```ts
 import { db } from "@/db";
 import { usersTable } from "@/db/schema";
 import { NextResponse } from "next/server";
@@ -243,13 +217,13 @@ export async function GET(request: Request) {
 
 Run the `next dev` command to start your local development server:
 
-```
+```bash
 npx next dev
 ```
 
 Navigate to the route you created `(e.g. /api/hello)` in your browser:
 
-```
+```plaintext
 {
   "users": [],
   "message": "success"
@@ -260,19 +234,19 @@ Navigate to the route you created `(e.g. /api/hello)` in your browser:
 
 Create a new project in the [dashboard](https://vercel.com/new) or run the `vercel` command to deploy your project:
 
-```
+```bash
 vercel
 ```
 
 Add `POSTGRES_URL` environment variable:
 
-```
+```bash
 vercel env add POSTGRES_URL
 ```
 
 Redeploy your project to update your environment variables:
 
-```
+```bash
 vercel
 ```
 
@@ -280,19 +254,11 @@ Finally, you can use URL of the deployed project and navigate to the route you c
 
 ### Vercel Postgres[](#vercel-postgres)
 
-You can check quickstart guide for Drizzle with Vercel Postgres client in the [documentation](drizzle/docs/get-started-postgresql/index.md#vercel-postgres).
+You can check quickstart guide for Drizzle with Vercel Postgres client in the [documentation](https://orm.drizzle.team/docs/get-started-postgresql#vercel-postgres).
 
 #### Install the `@vercel/postgres` driver[](#install-the-vercelpostgres-driver)
 
 Install the `@vercel/postgres` driver:
-
-npm
-
-yarn
-
-pnpm
-
-bun
 
 ```
 npm i @vercel/postgres
@@ -314,7 +280,7 @@ bun add @vercel/postgres
 
 Create a `schema.ts` file in the `src/db` directory and declare a table schema:
 
-```
+```typescript
 import { pgTable, serial, text } from "drizzle-orm/pg-core";
 
 export const usersTable = pgTable('users_table', {
@@ -327,11 +293,11 @@ export const usersTable = pgTable('users_table', {
 
 #### Setup Drizzle config file[](#setup-drizzle-config-file-1)
 
-**Drizzle config** - a configuration file that is used by [Drizzle Kit](drizzle/docs/kit-overview/index.md) and contains all the information about your database connection, migration folder and schema files.
+**Drizzle config** - a configuration file that is used by [Drizzle Kit](https://orm.drizzle.team/docs/kit-overview) and contains all the information about your database connection, migration folder and schema files.
 
 Create a `drizzle.config.ts` file in the root of your project and add the following content:
 
-```
+```typescript
 import { defineConfig } from "drizzle-kit";
 
 export default defineConfig({
@@ -345,7 +311,7 @@ export default defineConfig({
 
 Configure your database connection string in the `.env` file:
 
-```
+```plaintext
 POSTGRES_URL="postgres://[user]:[password]@[host]-[region].aws.neon.tech:5432/[db-name]?sslmode=[ssl-mode]"
 ```
 
@@ -355,7 +321,7 @@ You can generate migrations using `drizzle-kit generate` command and then run th
 
 Generate migrations:
 
-```
+```bash
 npx drizzle-kit generate
 ```
 
@@ -363,7 +329,7 @@ These migrations are stored in the `drizzle` directory, as specified in your `dr
 
 Example of a generated migration:
 
-```
+```sql
 CREATE TABLE IF NOT EXISTS "users_table" (
 	"id" serial PRIMARY KEY NOT NULL,
 	"name" text NOT NULL,
@@ -375,13 +341,13 @@ CREATE TABLE IF NOT EXISTS "users_table" (
 
 Run migrations:
 
-```
+```bash
 npx drizzle-kit migrate
 ```
 
-Alternatively, you can push changes directly to the database using [Drizzle kit push command](drizzle/docs/kit-overview/index.md#prototyping-with-db-push):
+Alternatively, you can push changes directly to the database using [Drizzle kit push command](https://orm.drizzle.team/docs/kit-overview#prototyping-with-db-push):
 
-```
+```bash
 npx drizzle-kit push
 ```
 
@@ -393,7 +359,7 @@ Push command is good for situations where you need to quickly test new schema de
 
 Create a `index.ts` file in the `src/db` directory and set up your database configuration:
 
-```
+```typescript
 import { drizzle } from 'drizzle-orm/vercel-postgres';
 
 export const db = drizzle()
@@ -403,7 +369,7 @@ export const db = drizzle()
 
 Create `route.ts` in `src/app/api/hello` directory. To learn more about how to write a function, see the [Functions API Reference](https://vercel.com/docs/functions/functions-api-reference) and [Vercel Functions Quickstart](https://vercel.com/docs/functions/quickstart).
 
-```
+```ts
 
 import { db } from "@/db";
 import { usersTable } from "@/db/schema";
@@ -423,13 +389,13 @@ export async function GET(request: Request) {
 
 Run the `next dev` command to start your local development server:
 
-```
+```bash
 npx next dev
 ```
 
 Navigate to the route you created `(e.g. /api/hello)` in your browser:
 
-```
+```plaintext
 {
   "users": [],
   "message": "success"
@@ -440,19 +406,19 @@ Navigate to the route you created `(e.g. /api/hello)` in your browser:
 
 Create a new project in the [dashboard](https://vercel.com/new) or run the `vercel` command to deploy your project:
 
-```
+```bash
 vercel
 ```
 
 Add `POSTGRES_URL` environment variable:
 
-```
+```bash
 vercel env add POSTGRES_URL
 ```
 
 Redeploy your project to update your environment variables:
 
-```
+```bash
 vercel
 ```
 
@@ -465,14 +431,6 @@ In this tutorial we use [PlanetScale MySQL](https://planetscale.com/).
 #### Install the `@planetscale/database` driver[](#install-the-planetscaledatabase-driver)
 
 Install the `@planetscale/database` driver:
-
-npm
-
-yarn
-
-pnpm
-
-bun
 
 ```
 npm i @planetscale/database
@@ -494,7 +452,7 @@ bun add @planetscale/database
 
 Create a `schema.ts` file in the `src/db` directory and declare a table schema:
 
-```
+```typescript
 import { mysqlTable, serial, text } from "drizzle-orm/mysql-core";
 
 export const usersTable = mysqlTable('users_table', {
@@ -507,11 +465,11 @@ export const usersTable = mysqlTable('users_table', {
 
 #### Setup Drizzle config file[](#setup-drizzle-config-file-2)
 
-**Drizzle config** - a configuration file that is used by [Drizzle Kit](drizzle/docs/kit-overview/index.md) and contains all the information about your database connection, migration folder and schema files.
+**Drizzle config** - a configuration file that is used by [Drizzle Kit](https://orm.drizzle.team/docs/kit-overview) and contains all the information about your database connection, migration folder and schema files.
 
 Create a `drizzle.config.ts` file in the root of your project and add the following content:
 
-```
+```typescript
 import { defineConfig } from "drizzle-kit";
 
 export default defineConfig({
@@ -525,7 +483,7 @@ export default defineConfig({
 
 Configure your database connection string in the `.env` file:
 
-```
+```plaintext
 MYSQL_URL="mysql://[user]:[password]@[host].[region].psdb.cloud/[db-name]?ssl={'rejectUnauthorized':[ssl-rejectUnauthorized]}"
 ```
 
@@ -535,7 +493,7 @@ You can generate migrations using `drizzle-kit generate` command and then run th
 
 Generate migrations:
 
-```
+```bash
 npx drizzle-kit generate
 ```
 
@@ -543,7 +501,7 @@ These migrations are stored in the `drizzle` directory, as specified in your `dr
 
 Example of a generated migration:
 
-```
+```sql
 CREATE TABLE `users_table` (
 	`id` serial AUTO_INCREMENT NOT NULL,
 	`name` text NOT NULL,
@@ -556,13 +514,13 @@ CREATE TABLE `users_table` (
 
 Run migrations:
 
-```
+```bash
 npx drizzle-kit migrate
 ```
 
-Alternatively, you can push changes directly to the database using [Drizzle kit push command](drizzle/docs/kit-overview/index.md#prototyping-with-db-push):
+Alternatively, you can push changes directly to the database using [Drizzle kit push command](https://orm.drizzle.team/docs/kit-overview#prototyping-with-db-push):
 
-```
+```bash
 npx drizzle-kit push
 ```
 
@@ -574,7 +532,7 @@ Push command is good for situations where you need to quickly test new schema de
 
 Create a `index.ts` file in the `src/db` directory and set up your database configuration:
 
-```
+```typescript
 import { drizzle } from "drizzle-orm/planetscale-serverless";
 
 export const db = drizzle(process.env.MYSQL_URL!)
@@ -584,7 +542,7 @@ export const db = drizzle(process.env.MYSQL_URL!)
 
 Create `route.ts` in `src/app/api/hello` directory. To learn more about how to write a function, see the [Functions API Reference](https://vercel.com/docs/functions/functions-api-reference) and [Vercel Functions Quickstart](https://vercel.com/docs/functions/quickstart).
 
-```
+```ts
 import { db } from "@/app/db/db";
 import { usersTable } from "@/app/db/schema";
 import { NextResponse } from "next/server";
@@ -603,13 +561,13 @@ export async function GET(request: Request) {
 
 Run the `next dev` command to start your local development server:
 
-```
+```bash
 npx next dev
 ```
 
 Navigate to the route you created `(e.g. /api/hello)` in your browser:
 
-```
+```plaintext
 {
   "users": [],
   "message": "success"
@@ -620,19 +578,19 @@ Navigate to the route you created `(e.g. /api/hello)` in your browser:
 
 Create a new project in the [dashboard](https://vercel.com/new) or run the `vercel` command to deploy your project:
 
-```
+```bash
 vercel
 ```
 
 Add `MYSQL_URL` environment variable:
 
-```
+```bash
 vercel env add MYSQL_URL
 ```
 
 Redeploy your project to update your environment variables:
 
-```
+```bash
 vercel
 ```
 
@@ -640,19 +598,11 @@ Finally, you can use URL of the deployed project and navigate to the route you c
 
 ### Turso[](#turso)
 
-You can check [quickstart guide](drizzle/docs/get-started-sqlite/index.md#turso) or [tutorial](drizzle/docs/tutorials/drizzle-with-turso/index.md) for Drizzle with Turso in the documentation.
+You can check [quickstart guide](https://orm.drizzle.team/docs/get-started-sqlite#turso) or [tutorial](https://orm.drizzle.team/docs/tutorials/drizzle-with-turso) for Drizzle with Turso in the documentation.
 
 #### Install the `@libsql/client` driver[](#install-the-libsqlclient-driver)
 
 Install the `@libsql/client` driver:
-
-npm
-
-yarn
-
-pnpm
-
-bun
 
 ```
 npm i @libsql/client
@@ -674,7 +624,7 @@ bun add @libsql/client
 
 Create a `schema.ts` file in the `src/db` directory and declare a table schema:
 
-```
+```typescript
 import { integer, sqliteTable, text } from "drizzle-orm/sqlite-core";
 
 export const usersTable = sqliteTable('users_table', {
@@ -687,11 +637,11 @@ export const usersTable = sqliteTable('users_table', {
 
 #### Setup Drizzle config file[](#setup-drizzle-config-file-3)
 
-**Drizzle config** - a configuration file that is used by [Drizzle Kit](drizzle/docs/kit-overview/index.md) and contains all the information about your database connection, migration folder and schema files.
+**Drizzle config** - a configuration file that is used by [Drizzle Kit](https://orm.drizzle.team/docs/kit-overview) and contains all the information about your database connection, migration folder and schema files.
 
 Create a `drizzle.config.ts` file in the root of your project and add the following content:
 
-```
+```typescript
 import { defineConfig } from "drizzle-kit";
 
 export default defineConfig({
@@ -706,7 +656,7 @@ export default defineConfig({
 
 Configure your database connection string and auth token in the `.env` file:
 
-```
+```plaintext
 TURSO_CONNECTION_URL="libsql://[db-name].turso.io"
 TURSO_AUTH_TOKEN="[auth-token]"
 ```
@@ -717,7 +667,7 @@ You can generate migrations using `drizzle-kit generate` command and then run th
 
 Generate migrations:
 
-```
+```bash
 npx drizzle-kit generate
 ```
 
@@ -725,7 +675,7 @@ These migrations are stored in the `drizzle` directory, as specified in your `dr
 
 Example of a generated migration:
 
-```
+```sql
 CREATE TABLE `users_table` (
 	`id` integer PRIMARY KEY NOT NULL,
 	`name` text NOT NULL,
@@ -738,13 +688,13 @@ CREATE UNIQUE INDEX `users_table_email_unique` ON `users_table` (`email`);
 
 Run migrations:
 
-```
+```bash
 npx drizzle-kit migrate
 ```
 
-Alternatively, you can push changes directly to the database using [Drizzle kit push command](drizzle/docs/kit-overview/index.md#prototyping-with-db-push):
+Alternatively, you can push changes directly to the database using [Drizzle kit push command](https://orm.drizzle.team/docs/kit-overview#prototyping-with-db-push):
 
-```
+```bash
 npx drizzle-kit push
 ```
 
@@ -756,7 +706,7 @@ Push command is good for situations where you need to quickly test new schema de
 
 Create a `index.ts` file in the `src/db` directory and set up your database configuration:
 
-```
+```typescript
 import { drizzle } from 'drizzle-orm/libsql';
 
 export const db = drizzle({ connection: {
@@ -769,7 +719,7 @@ export const db = drizzle({ connection: {
 
 Create `route.ts` in `src/app/api/hello` directory. To learn more about how to write a function, see the [Functions API Reference](https://vercel.com/docs/functions/functions-api-reference) and [Vercel Functions Quickstart](https://vercel.com/docs/functions/quickstart).
 
-```
+```ts
 import { db } from "@/app/db/db";
 import { usersTable } from "@/app/db/schema";
 import { NextResponse } from "next/server";
@@ -788,13 +738,13 @@ export async function GET(request: Request) {
 
 Run the `next dev` command to start your local development server:
 
-```
+```bash
 npx next dev
 ```
 
 Navigate to the route you created `(e.g. /api/hello)` in your browser:
 
-```
+```plaintext
 {
   "users": [],
   "message": "success"
@@ -805,25 +755,25 @@ Navigate to the route you created `(e.g. /api/hello)` in your browser:
 
 Create a new project in the [dashboard](https://vercel.com/new) or run the `vercel` command to deploy your project:
 
-```
+```bash
 vercel
 ```
 
 Add `TURSO_CONNECTION_URL` environment variable:
 
-```
+```bash
 vercel env add TURSO_CONNECTION_URL
 ```
 
 Add `TURSO_AUTH_TOKEN` environment variable:
 
-```
+```bash
 vercel env add TURSO_AUTH_TOKEN
 ```
 
 Redeploy your project to update your environment variables:
 
-```
+```bash
 vercel
 ```
 

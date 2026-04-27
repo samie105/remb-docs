@@ -5,29 +5,13 @@ canonical_url: "https://www.postgresql.org/docs/current/spi-spi-getnspname.html"
 docset: "postgres"
 kind: "database"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:50:00.750Z"
-content_hash: "9bacc6fd175664c917d9590d0336d55d85c813bc8d8894e2dd19555a786bdcf5"
+last_crawled_at: "2026-04-27T20:49:37.757Z"
+content_hash: "c73ff1563b4ea86f64f4283cf5043bd4fd42360f1b308c7192eeb7c57a05d81d"
 menu_path: ["PostgreSQL: Documentation: 18: SPI_getnspname"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/spi-spi-getbinval.html/index.md", "title": "PostgreSQL: Documentation: 18: SPI_getbinval"}
-nav_next: {"path": "postgres/docs/current/spi-spi-getrelname.html/index.md", "title": "PostgreSQL: Documentation: 18: SPI_getrelname"}
+content_language: "en"
 ---
-
 Development Versions: [devel](https://www.postgresql.org/docs/devel/spi-spi-getnspname.html "PostgreSQL devel - SPI_getnspname")
-
-SPI\_getnspname
-
-[Prev](https://www.postgresql.org/docs/current/spi-spi-getrelname.html "SPI_getrelname") 
-
-[Up](https://www.postgresql.org/docs/current/spi-interface-support.html "45.2. Interface Support Functions")
-
-45.2. Interface Support Functions
-
-[Home](https://www.postgresql.org/docs/current/index.html "PostgreSQL 18.3 Documentation")
-
- [Next](https://www.postgresql.org/docs/current/spi-spi-result-code-string.html "SPI_result_code_string")
-
-* * *
 
 SPI\_getnspname — return the namespace of the specified relation
 
@@ -49,16 +33,6 @@ input relation
 
 The name of the specified relation's namespace.
 
-* * *
+## Submit correction
 
-[Prev](https://www.postgresql.org/docs/current/spi-spi-getrelname.html "SPI_getrelname") 
-
-[Up](https://www.postgresql.org/docs/current/spi-interface-support.html "45.2. Interface Support Functions")
-
- [Next](https://www.postgresql.org/docs/current/spi-spi-result-code-string.html "SPI_result_code_string")
-
-SPI\_getrelname 
-
-[Home](https://www.postgresql.org/docs/current/index.html "PostgreSQL 18.3 Documentation")
-
- SPI\_result\_code\_string
+If you see anything in the documentation that is not correct, does not match your experience with the particular feature or requires further clarification, please use [this form](https://www.postgresql.org/account/comments/new/18/spi-spi-getnspname.html/) to report a documentation issue.

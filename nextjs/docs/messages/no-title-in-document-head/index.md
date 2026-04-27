@@ -5,13 +5,14 @@ canonical_url: "https://nextjs.org/docs/messages/no-title-in-document-head"
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:18:39.869Z"
-content_hash: "429e301cd7cc8dec43a2b0892a88f7ac146f0188c75f27073938ba2fc832fc4e"
+last_crawled_at: "2026-04-27T18:18:02.404Z"
+content_hash: "480fc57cd073aed0528f56b2a95f1c5b54da8eee75db25236efc43b45ae9fc53"
 menu_path: ["No Title in Document Head"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/messages/no-sync-scripts/index.md", "title": "No Sync Scripts"}
-nav_next: {"path": "nextjs/docs/messages/no-unwanted-polyfillio/index.md", "title": "No Unwanted Polyfill.io"}
+version: "latest"
+content_language: "en"
 ---
+[Docs](/docs)[Errors](/docs)No Title in Document Head
 
 # No Title in Document Head
 
@@ -43,11 +44,7 @@ export function Home() {
 
 ## Useful Links[](#useful-links)
 
-*   [next/head](/docs/pages/api-reference/components/head)
-*   [Custom Document](/docs/pages/building-your-application/routing/custom-document)
+-   [next/head](/docs/pages/api-reference/components/head)
+-   [Custom Document](/docs/pages/building-your-application/routing/custom-document)
 
 Was this helpful?
-
-supported.
-
-Send

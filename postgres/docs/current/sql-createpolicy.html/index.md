@@ -5,14 +5,12 @@ canonical_url: "https://www.postgresql.org/docs/current/sql-createpolicy.html"
 docset: "postgres"
 kind: "database"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:51:41.267Z"
-content_hash: "d3ab36d5e9f576aa87bbfdc756072fb73614923c471a872f87f1dc2562e3f821"
+last_crawled_at: "2026-04-27T20:50:45.784Z"
+content_hash: "7701851414e656252d9429d9498259aee2eb0760e69305ba18e2722d8c3492ac"
 menu_path: ["PostgreSQL: Documentation: 18: CREATE POLICY"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/sql-createopfamily.html/index.md", "title": "PostgreSQL: Documentation: 18: CREATE OPERATOR FAMILY"}
-nav_next: {"path": "postgres/docs/current/sql-createprocedure.html/index.md", "title": "PostgreSQL: Documentation: 18: CREATE PROCEDURE"}
+content_language: "en"
 ---
-
 CREATE POLICY — define a new row-level security policy for a table
 
 ## Synopsis
@@ -123,159 +121,22 @@ A `DELETE` policy cannot have a `WITH CHECK` expression, as it only applies in c
 **Table 300. Policies Applied by Command Type**
 
      
-
-Command
-
-`SELECT/ALL policy`
-
-`INSERT/ALL policy`
-
-`UPDATE/ALL policy`
-
-`DELETE/ALL policy`
-
-`USING expression`
-
-`WITH CHECK expression`
-
-`USING expression`
-
-`WITH CHECK expression`
-
-`USING expression`
-
-`SELECT` / `COPY ... TO`
-
-Filter existing row
-
-—
-
-—
-
-—
-
-—
-
-`SELECT FOR UPDATE/SHARE`
-
-Filter existing row
-
-—
-
-Filter existing row
-
-—
-
-—
-
-`INSERT`
-
-Check new row [\[a\]](#ftn.RLS-SELECT-PRIV)
-
-Check new row
-
-—
-
-—
-
-—
-
-`UPDATE`
-
-Filter existing row [\[a\]](https://www.postgresql.org/docs/current/sql-createpolicy.html#ftn.RLS-SELECT-PRIV) & check new row [\[a\]](https://www.postgresql.org/docs/current/sql-createpolicy.html#ftn.RLS-SELECT-PRIV)
-
-—
-
-Filter existing row
-
-Check new row
-
-—
-
-`DELETE`
-
-Filter existing row [\[a\]](https://www.postgresql.org/docs/current/sql-createpolicy.html#ftn.RLS-SELECT-PRIV)
-
-—
-
-—
-
-—
-
-Filter existing row
-
-`INSERT ... ON CONFLICT`
-
-Check new row [\[b\]](#ftn.id-1.9.3.75.6.3.4.2.5.6.2.1)[\[c\]](#ftn.RLS-ON-CONFLICT-PRIV)
-
-Check new row [\[c\]](https://www.postgresql.org/docs/current/sql-createpolicy.html#ftn.RLS-ON-CONFLICT-PRIV)
-
-—
-
-—
-
-—
-
-`ON CONFLICT DO UPDATE`
-
-Check existing & new rows [\[d\]](#ftn.RLS-ON-CONFLICT-UPDATE-PRIV)
-
-—
-
-Check existing row
-
-Check new row [\[d\]](https://www.postgresql.org/docs/current/sql-createpolicy.html#ftn.RLS-ON-CONFLICT-UPDATE-PRIV)
-
-—
-
-`MERGE`
-
-Filter source & target rows
-
-—
-
-—
-
-—
-
-—
-
-`MERGE ... THEN INSERT`
-
-Check new row [\[a\]](https://www.postgresql.org/docs/current/sql-createpolicy.html#ftn.RLS-SELECT-PRIV)
-
-Check new row
-
-—
-
-—
-
-—
-
-`MERGE ... THEN UPDATE`
-
-Check new row
-
-—
-
-Check existing row
-
-Check new row
-
-—
-
-`MERGE ... THEN DELETE`
-
-—
-
-—
-
-—
-
-—
-
-Check existing row
-
+| Command | `SELECT/ALL policy` | `INSERT/ALL policy` | `UPDATE/ALL policy` | `DELETE/ALL policy` |
+| --- | --- | --- | --- | --- |
+| `USING expression` | `WITH CHECK expression` | `USING expression` | `WITH CHECK expression` | `USING expression` |
+| --- | --- | --- | --- | --- |
+| `SELECT` / `COPY ... TO` | Filter existing row | — | — | — | — |
+| `SELECT FOR UPDATE/SHARE` | Filter existing row | — | Filter existing row | — | — |
+| `INSERT` | Check new row [\[a\]](#ftn.RLS-SELECT-PRIV) | Check new row | — | — | — |
+| `UPDATE` | Filter existing row [\[a\]](https://www.postgresql.org/docs/current/sql-createpolicy.html#ftn.RLS-SELECT-PRIV) & check new row [\[a\]](https://www.postgresql.org/docs/current/sql-createpolicy.html#ftn.RLS-SELECT-PRIV) | — | Filter existing row | Check new row | — |
+| `DELETE` | Filter existing row [\[a\]](https://www.postgresql.org/docs/current/sql-createpolicy.html#ftn.RLS-SELECT-PRIV) | — | — | — | Filter existing row |
+| `INSERT ... ON CONFLICT` | Check new row [\[b\]](#ftn.id-1.9.3.75.6.3.4.2.5.6.2.1)[\[c\]](#ftn.RLS-ON-CONFLICT-PRIV) | Check new row [\[c\]](https://www.postgresql.org/docs/current/sql-createpolicy.html#ftn.RLS-ON-CONFLICT-PRIV) | — | — | — |
+| `ON CONFLICT DO UPDATE` | Check existing & new rows [\[d\]](#ftn.RLS-ON-CONFLICT-UPDATE-PRIV) | — | Check existing row | Check new row [\[d\]](https://www.postgresql.org/docs/current/sql-createpolicy.html#ftn.RLS-ON-CONFLICT-UPDATE-PRIV) | — |
+| `MERGE` | Filter source & target rows | — | — | — | — |
+| `MERGE ... THEN INSERT` | Check new row [\[a\]](https://www.postgresql.org/docs/current/sql-createpolicy.html#ftn.RLS-SELECT-PRIV) | Check new row | — | — | — |
+| `MERGE ... THEN UPDATE` | Check new row | — | Check existing row | Check new row | — |
+| `MERGE ... THEN DELETE` | — | — | — | — | Check existing row |
+| 
 [\[a\]](#RLS-SELECT-PRIV) If read access is required to either the existing or new row (for example, a `WHERE` or `RETURNING` clause that refers to columns from the relation).
 
 [\[b\]](#id-1.9.3.75.6.3.4.2.5.6.2.1) If an arbiter index or constraint is specified.
@@ -283,6 +144,8 @@ Check existing row
 [\[c\]](#RLS-ON-CONFLICT-PRIV) Row proposed for insertion is checked regardless of whether or not a conflict occurs.
 
 [\[d\]](#RLS-ON-CONFLICT-UPDATE-PRIV) New row of the auxiliary `UPDATE` command, which might be different from the new row of the original `INSERT` command.
+
+ |
 
   
 

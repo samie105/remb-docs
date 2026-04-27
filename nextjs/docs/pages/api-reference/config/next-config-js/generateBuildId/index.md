@@ -5,17 +5,18 @@ canonical_url: "https://nextjs.org/docs/pages/api-reference/config/next-config-j
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:20:41.651Z"
-content_hash: "4c58a8c748c35d5f5ff5f7fd3037a020ca66e4b69b7e2f574e8c9a086bbaafef"
+last_crawled_at: "2026-04-27T18:20:07.023Z"
+content_hash: "632dea523bf560fe954dfa2fbe5645b4637423b1df1ca99811e3de4835946450"
 menu_path: ["generateBuildId"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/pages/api-reference/config/next-config-js/exportPathMap/index.md", "title": "exportPathMap"}
-nav_next: {"path": "nextjs/docs/pages/api-reference/config/next-config-js/generateEtags/index.md", "title": "generateEtags"}
+version: "latest"
+content_language: "en"
 ---
+[Configuration](/docs/pages/api-reference/config)[next.config.js Options](/docs/pages/api-reference/config/next-config-js)generateBuildId
 
 # generateBuildId
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 Next.js generates an ID during `next build` to identify which version of your application is being served. The same build should be used and boot up multiple containers.
 
@@ -33,7 +34,3 @@ module.exports = {
 ```
 
 Was this helpful?
-
-supported.
-
-Send

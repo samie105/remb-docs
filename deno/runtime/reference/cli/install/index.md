@@ -5,26 +5,27 @@ canonical_url: "https://docs.deno.com/runtime/reference/cli/install/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:53:48.093Z"
-content_hash: "adcbe722ae0af16f7146d877b0cba12df280dc91569709336c26082ffdb1967c"
+last_crawled_at: "2026-04-27T17:30:15.790Z"
+content_hash: "3bef85b5a645ad7f0a489311f6a1f5835be18eb2421c00b0aeb3fa6027c87ee1"
 menu_path: ["deno install"]
 section_path: []
+content_language: "en"
 ---
-On this page
+**On this page**
 
-*   [Examples](#examples)
-    *   [deno install](#deno-install)
-    *   [deno install \[PACKAGES\]](#deno-install-%5Bpackages%5D)
-    *   [deno install --entrypoint \[FILES\]](#deno-install---entrypoint-%5Bfiles%5D)
-    *   [deno install --global \[PACKAGE\_OR\_URL\]](#deno-install---global-%5Bpackage_or_url%5D)
-    *   [deno install --global --compile \[PACKAGE\_OR\_URL\]](#deno-install---global---compile-%5Bpackage_or_url%5D)
-*   [Native Node.js addons](#native-node.js-addons)
-*   [\--quiet flag](#--quiet-flag)
-*   [Uninstall](#uninstall)
-*   [Type checking options](#type-checking-options)
-*   [Dependency management options](#dependency-management-options)
-*   [Options](#options)
-*   [Debugging options](#debugging-options)
+-   [Examples](#examples)
+    -   [deno install](#deno-install)
+    -   [deno install \[PACKAGES\]](#deno-install-%5Bpackages%5D)
+    -   [deno install --entrypoint \[FILES\]](#deno-install---entrypoint-%5Bfiles%5D)
+    -   [deno install --global \[PACKAGE\_OR\_URL\]](#deno-install---global-%5Bpackage_or_url%5D)
+    -   [deno install --global --compile \[PACKAGE\_OR\_URL\]](#deno-install---global---compile-%5Bpackage_or_url%5D)
+-   [Native Node.js addons](#native-node.js-addons)
+-   [\--quiet flag](#--quiet-flag)
+-   [Uninstall](#uninstall)
+-   [Type checking options](#type-checking-options)
+-   [Dependency management options](#dependency-management-options)
+-   [Options](#options)
+-   [Debugging options](#debugging-options)
 
 `deno install` installs dependencies and caches them for your project. For more on how Deno handles modules, see [Modules and dependencies](/runtime/fundamentals/modules/).
 
@@ -107,9 +108,9 @@ deno install -g -N -R -n serve jsr:@std/http/file-server
 
 The executable name is inferred by default:
 
-*   Attempt to take the file stem of the URL path. The above example would become 'file-server'.
-*   If the file stem is something generic like 'main', 'mod', 'index' or 'cli', and the path has no parent, take the file name of the parent path. Otherwise settle with the generic name.
-*   If the resulting name has an '@...' suffix, strip it.
+-   Attempt to take the file stem of the URL path. The above example would become 'file-server'.
+-   If the file stem is something generic like 'main', 'mod', 'index' or 'cli', and the path has no parent, take the file name of the parent path. Otherwise settle with the generic name.
+-   If the resulting name has an '@...' suffix, strip it.
 
 To change the installation root, use `--root`:
 
@@ -121,9 +122,9 @@ deno install -g -N -R --root /usr/local/bin jsr:@std/http/file-server
 
 The installation root is determined, in order of precedence:
 
-*   `--root` option
-*   `DENO_INSTALL_ROOT` environment variable
-*   `$HOME/.deno/bin`
+-   `--root` option
+-   `DENO_INSTALL_ROOT` environment variable
+-   `$HOME/.deno/bin`
 
 These must be added to the path manually if required.
 
@@ -277,9 +278,9 @@ deno install -g --allow-net --allow-read -n serve jsr:@std/http/file-server
 
 The executable name is inferred by default:
 
-*   Attempt to take the file stem of the URL path. The above example would become `file_server`.
-*   If the file stem is something generic like `main`, `mod`, `index` or `cli`, and the path has no parent, take the file name of the parent path. Otherwise settle with the generic name.
-*   If the resulting name has an `@...` suffix, strip it.
+-   Attempt to take the file stem of the URL path. The above example would become `file_server`.
+-   If the file stem is something generic like `main`, `mod`, `index` or `cli`, and the path has no parent, take the file name of the parent path. Otherwise settle with the generic name.
+-   If the resulting name has an `@...` suffix, strip it.
 
 To change the installation root, use `--root`:
 
@@ -289,9 +290,9 @@ deno install -g --allow-net --allow-read --root /usr/local jsr:@std/http/file-se
 
 The installation root is determined, in order of precedence:
 
-*   `--root` option
-*   `DENO_INSTALL_ROOT` environment variable
-*   `$HOME/.deno`
+-   `--root` option
+-   `DENO_INSTALL_ROOT` environment variable
+-   `$HOME/.deno`
 
 These must be added to the path manually if required.
 

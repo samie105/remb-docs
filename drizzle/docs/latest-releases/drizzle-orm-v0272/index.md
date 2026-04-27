@@ -5,14 +5,12 @@ canonical_url: "https://orm.drizzle.team/docs/latest-releases/drizzle-orm-v0272"
 docset: "drizzle"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:10:40.795Z"
-content_hash: "19bacdf4a9036c5ac687e3d989a95600328efab7b27b716047d4b1771ca5e6f4"
+last_crawled_at: "2026-04-27T19:08:14.244Z"
+content_hash: "d69cfb98bae44b9535ca566b8930393b3958c45d01114469d2855e122e2f5f39"
 menu_path: ["Drizzle ORM - DrizzleORM v0.27.2 release"]
 section_path: []
-nav_prev: {"path": "drizzle/docs/latest-releases/drizzle-orm-v0162/index.md", "title": "Drizzle ORM - DrizzleORM v0.16.2 release"}
-nav_next: {"path": "drizzle/docs/latest-releases/drizzle-orm-v0280/index.md", "title": "Drizzle ORM - DrizzleORM v0.28.0 release"}
+content_language: "en"
 ---
-
 DrizzleORM v0.27.2 release
 
 Jul 12, 2023
@@ -23,7 +21,7 @@ For PostgreSQL, unique constraints can be defined at the column level for single
 
 Examples that just shows a different `unique` usage. Please don’t search a real usage for those tables
 
-```
+```ts
 // single column
 const table = pgTable('table', {
   id: serial('id').primaryKey(),
@@ -46,7 +44,7 @@ For MySQL, everything will be the same except for the `NULLS NOT DISTINCT` optio
 
 Examples that just shows a different `unique` usage. Please don’t search a real usage for those tables
 
-```
+```ts
 // single column
 const table = mysqlTable('table', {
     id: serial('id').primaryKey(),
@@ -67,7 +65,7 @@ const table = mysqlTable('cities1', {
 
 In SQLite unique constraints are the same as unique indexes. As long as you can specify a name for the unique index in SQLite - we will treat all unique constraints as unique indexes in internal implementation
 
-```
+```ts
 // single column
 const table = sqliteTable('table', {
     id: int('id').primaryKey(),

@@ -5,19 +5,17 @@ canonical_url: "https://orm.drizzle.team/docs/drizzle-kit-studio"
 docset: "drizzle"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:47:11.235Z"
-content_hash: "3698404c76435318dfc509578412d7715e78d99a0c8169bc4d1e61efdc8a634a"
+last_crawled_at: "2026-04-27T18:36:59.986Z"
+content_hash: "b4fbb849ebfaeb18d409fed6f6020c98e7943aded076fa7d9d3c8d2916961f3f"
 menu_path: ["drizzle-kit studio"]
 section_path: []
-nav_prev: {"path": "drizzle/docs/drizzle-kit-up/index.md", "title": "drizzle-kit up"}
-nav_next: {"path": "drizzle/docs/kit-custom-migrations/index.md", "title": "Migrations with Drizzle Kit"}
+content_language: "en"
 ---
-
-`drizzle-kit studio` command spins up a server for [Drizzle Studio](https://orm.drizzle.team/drizzle-studio/overview) hosted on [local.drizzle.studio](https://local.drizzle.studio/). It requires you to specify database connection credentials via [drizzle.config.ts](drizzle/docs/drizzle-config-file/index.md) config file.
+`drizzle-kit studio` command spins up a server for [Drizzle Studio](https://orm.drizzle.team/drizzle-studio/overview) hosted on [local.drizzle.studio](https://local.drizzle.studio/). It requires you to specify database connection credentials via [drizzle.config.ts](https://orm.drizzle.team/docs/drizzle-config-file) config file.
 
 By default it will start a Drizzle Studio server on `127.0.0.1:4983`
 
-```
+```ts
 // drizzle.config.ts
 import { defineConfig } from "drizzle-kit";
 
@@ -29,21 +27,13 @@ export default defineConfig({
 });
 ```
 
-```
+```shell
 npx drizzle-kit migrate
 ```
 
 ### Configuring `host` and `port`[](#configuring-host-and-port)
 
 By default Drizzle Studio server starts on `127.0.0.1:4983`, you can config `host` and `port` via CLI options
-
-npm
-
-yarn
-
-pnpm
-
-bun
 
 ```
 npx drizzle-kit studio --port=3000
@@ -72,14 +62,6 @@ bunx drizzle-kit studio --host=0.0.0.0 --port=3000
 ### Logging[](#logging)
 
 You can enable logging of every SQL statement by providing `verbose` flag
-
-npm
-
-yarn
-
-pnpm
-
-bun
 
 ```
 npx drizzle-kit studio --verbose
@@ -115,14 +97,14 @@ That is an extremely powerful UI element that can elevate your offering if you p
 
 Database platforms using Drizzle Studio:
 
-*   [Turso](https://turso.tech/), our first customers since Oct 2023!
-*   [Neon](https://neon.tech/), [launch post](https://neon.tech/docs/changelog/2024-05-24)
-*   [Hydra](https://www.hydra.so/)
+-   [Turso](https://turso.tech/), our first customers since Oct 2023!
+-   [Neon](https://neon.tech/), [launch post](https://neon.tech/docs/changelog/2024-05-24)
+-   [Hydra](https://www.hydra.so/)
 
 Data centric platforms using Drizzle Studio:
 
-*   [Nuxt Hub](https://hub.nuxt.com/), Sébastien Chopin’s [launch post](https://x.com/Atinux/status/1768663789832929520)
-*   [Deco.cx](https://deco.cx/)
+-   [Nuxt Hub](https://hub.nuxt.com/), Sébastien Chopin’s [launch post](https://x.com/Atinux/status/1768663789832929520)
+-   [Deco.cx](https://deco.cx/)
 
 You can read a detailed overview [here](https://www.npmjs.com/package/@drizzle-team/studio) and if you’re interested - hit us in DMs on [Twitter](https://x.com/drizzleorm) or in [Discord #drizzle-studio](https://driz.link/discord) channel.
 

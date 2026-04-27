@@ -5,27 +5,25 @@ canonical_url: "https://orm.drizzle.team/docs/get-started/nile-new"
 docset: "drizzle"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:57:03.812Z"
-content_hash: "e1d733fedbba32d160603f81d77f6bf13db4317a2dfad302797e90594347394e"
+last_crawled_at: "2026-04-27T18:48:20.266Z"
+content_hash: "658f5093a55cf63beb3602c9f9ad4519bb1a96048607e8f8d7c0056ece1c5583"
 menu_path: ["Get Started with Drizzle and Nile"]
 section_path: []
-nav_prev: {"path": "drizzle/docs/get-started/nile-existing/index.md", "title": "Get Started with Drizzle and Nile in existing project"}
-nav_next: {"path": "drizzle/docs/get-started/op-sqlite-existing/index.md", "title": "Get Started with Drizzle and OP-SQLite in existing project"}
+content_language: "en"
 ---
-
 ## Get Started with Drizzle and Nile
 
 This guide assumes familiarity with:
 
-*   **dotenv** - package for managing environment variables - [read here](https://www.npmjs.com/package/dotenv)
-*   **tsx** - package for running TypeScript files - [read here](https://tsx.is/)
-*   **Nile** - PostgreSQL re-engineered for multi-tenant apps - [read here](https://thenile.dev/)
+-   **dotenv** - package for managing environment variables - [read here](https://www.npmjs.com/package/dotenv)
+-   **tsx** - package for running TypeScript files - [read here](https://tsx.is/)
+-   **Nile** - PostgreSQL re-engineered for multi-tenant apps - [read here](https://thenile.dev/)
 
 #### Basic file structure
 
 This is the basic file structure of the project. In the `src/db` directory, we have table definition in `schema.ts`. In `drizzle` folder there are sql migration file and snapshots.
 
-```
+```plaintext
 📦 <project root>
  ├ 📂 drizzle
  ├ 📂 src
@@ -39,14 +37,6 @@ This is the basic file structure of the project. In the `src/db` directory, we h
 ```
 
 #### Step 1 - Install **postgres** package[](#step-1---install-postgres-package)
-
-npm
-
-yarn
-
-pnpm
-
-bun
 
 ```
 npm i drizzle-orm pg dotenv
@@ -72,10 +62,6 @@ bun add -D drizzle-kit tsx @types/pg
 
 Create a `.env` file in the root of your project and add your database connection variable:
 
-```
-NILEDB_URL=
-```
-
 #### Step 3 - Connect Drizzle ORM to the database[](#step-3---connect-drizzle-orm-to-the-database)
 
 Create a `index.ts` file in the `src` directory and initialize the connection:
@@ -86,14 +72,14 @@ node-postgres with config
 
 your node-postgres driver
 
-```
+```typescript
 import 'dotenv/config';
 import { drizzle } from 'drizzle-orm/node-postgres';
 
 const db = drizzle(process.env.NILEDB_URL!);
 ```
 
-```
+```typescript
 import 'dotenv/config';
 import { drizzle } from 'drizzle-orm/node-postgres';
 
@@ -106,7 +92,7 @@ const db = drizzle({
 });
 ```
 
-```
+```typescript
 import 'dotenv/config';
 import { drizzle } from "drizzle-orm/node-postgres";
 import { Pool } from "pg";
@@ -125,7 +111,7 @@ Nile provides **virtual tenant databases**. When you query Nile, you can set the
 
 Create a `schema.ts` file in the `src/db` directory and declare your tables. Since Nile is Postgres for multi-tenant apps, our schema includes a table for tenants and a todos table with a `tenant_id` column (we refer to those as tenant-aware tables):
 
-```
+```typescript
 import { pgTable, uuid, text, timestamp, varchar, vector, boolean } from "drizzle-orm/pg-core"
 import { sql } from "drizzle-orm"
 
@@ -149,11 +135,11 @@ export const todos = pgTable("todos", {
 
 #### Step 5 - Setup Drizzle config file[](#step-5---setup-drizzle-config-file)
 
-**Drizzle config** - a configuration file that is used by [Drizzle Kit](drizzle/docs/kit-overview/index.md) and contains all the information about your database connection, migration folder and schema files.
+**Drizzle config** - a configuration file that is used by [Drizzle Kit](https://orm.drizzle.team/docs/kit-overview) and contains all the information about your database connection, migration folder and schema files.
 
 Create a `drizzle.config.ts` file in the root of your project and add the following content:
 
-```
+```typescript
 import 'dotenv/config';
 import { defineConfig } from 'drizzle-kit';
 
@@ -171,11 +157,11 @@ export default defineConfig({
 
 You can directly apply changes to your database using the `drizzle-kit push` command. This is a convenient method for quickly testing new schema designs or modifications in a local development environment, allowing for rapid iterations without the need to manage migration files:
 
-```
+```bash
 npx drizzle-kit push
 ```
 
-Read more about the push command in [documentation](drizzle/docs/drizzle-kit-push/index.md).
+Read more about the push command in [documentation](https://orm.drizzle.team/docs/drizzle-kit-push).
 
 Tips
 
@@ -183,23 +169,23 @@ Alternatively, you can generate migrations using the `drizzle-kit generate` comm
 
 Generate migrations:
 
-```
+```bash
 npx drizzle-kit generate
 ```
 
 Apply migrations:
 
-```
+```bash
 npx drizzle-kit migrate
 ```
 
-Read more about migration process in [documentation](drizzle/docs/kit-overview/index.md).
+Read more about migration process in [documentation](https://orm.drizzle.team/docs/kit-overview).
 
 #### Step 7 - Seed and Query the database[](#step-7---seed-and-query-the-database)
 
 Let’s **update** the `src/index.ts` file with queries to create, read, update, and delete tenants and todos.
 
-```
+```typescript
 import 'dotenv/config';
 import { drizzle } from 'drizzle-orm/node-postgres';
 import { eq, sql } from 'drizzle-orm';
@@ -259,14 +245,6 @@ You’ve already installed `tsx`, so we can run our queries now
 
 **Run `index.ts` script**
 
-npm
-
-yarn
-
-pnpm
-
-bun
-
 ```
 npx tsx src/index.ts
 ```
@@ -287,7 +265,7 @@ tips
 
 We suggest using `bun` to run TypeScript files. With `bun`, such scripts can be executed without issues or additional settings, regardless of whether your project is configured with CommonJS (CJS), ECMAScript Modules (ESM), or any other module format. To run a script with `bun`, use the following command:
 
-```
+```bash
 bun src/index.ts
 ```
 

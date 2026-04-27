@@ -5,37 +5,41 @@ canonical_url: "https://tailwindcss.com/docs/backdrop-filter-saturate"
 docset: "tailwind"
 kind: "framework"
 adapter: "generic"
-last_crawled_at: "2026-04-18T17:10:45.006Z"
-content_hash: "b958f02928620283a8abea241d405ec3e68c00c71e81ccff15aed07b037b1350"
+last_crawled_at: "2026-04-27T20:29:48.372Z"
+content_hash: "f17f4fc6dfbc321b46287988c59474b90393c78eb0fd25b444bfd583ef4841b3"
 menu_path: ["backdrop-filter: saturate()"]
 section_path: []
-nav_prev: {"path": "tailwind/docs/backdrop-filter-opacity/index.md", "title": "backdrop-filter: opacity()"}
-nav_next: {"path": "tailwind/docs/backdrop-filter-sepia/index.md", "title": "backdrop-filter: sepia()"}
+content_language: "en"
 ---
+[](/)
+
+[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
+
+1.  Filters
+2.  saturate
+
+Filters
 
 # backdrop-filter: saturate()
 
 Utilities for applying backdrop saturation filters to an element.
 
-Class
-
-Styles
-
-`backdrop-saturate-<number>`
-
+| Class | Styles |
+| --- | --- |
+| `backdrop-saturate-<number>` | 
 `backdrop-filter: saturate(<number>%);`
 
-`backdrop-saturate-(<custom-property>)`
+ |
+| `backdrop-saturate-(<custom-property>)` | 
 
 `backdrop-filter: saturate(var(<custom-property>));`
 
-`backdrop-saturate-[<value>]`
+ |
+| `backdrop-saturate-[<value>]` | 
 
 `backdrop-filter: saturate(<value>);`
 
-## [Examples](#examples)
-
-### [Basic example](#basic-example)
+ |
 
 Use utilities like `backdrop-saturate-50` and `backdrop-saturate-100` utilities to control the saturation of an element's backdrop:
 
@@ -55,8 +59,6 @@ backdrop-saturate-200
 <div class="bg-[url(/img/mountains.jpg)]">  <div class="bg-white/30 backdrop-saturate-50 ..."></div></div><div class="bg-[url(/img/mountains.jpg)]">  <div class="bg-white/30 backdrop-saturate-125 ..."></div></div><div class="bg-[url(/img/mountains.jpg)]">  <div class="bg-white/30 backdrop-saturate-200 ..."></div></div>
 ```
 
-### [Using a custom value](#using-a-custom-value)
-
 Use the `backdrop-saturate-[<value>]` syntax to set the backdrop saturation based on a completely custom value:
 
 ```
@@ -71,8 +73,6 @@ For CSS variables, you can also use the `backdrop-saturate-(<custom-property>)` 
 
 This is just a shorthand for `backdrop-saturate-[var(<custom-property>)]` that adds the `var()` function for you automatically.
 
-### [Responsive design](#responsive-design)
-
 Prefix a `backdrop-filter: saturate()` utility with a breakpoint variant like `md:` to only apply the utility at medium screen sizes and above:
 
 ```
@@ -83,24 +83,20 @@ Learn more about using variants in the [variants documentation](/docs/hover-focu
 
 ### On this page
 
-*   [Quick reference](#quick-reference)
-*   [Examples](#examples)
-    *   [Basic example](#basic-example)
-    *   [Using a custom value](#using-a-custom-value)
-    *   [Responsive design](#responsive-design)
+-   [Quick reference](#quick-reference)
+-   [Examples](#examples)
+    -   [Basic example](#basic-example)
+    -   [Using a custom value](#using-a-custom-value)
+    -   [Responsive design](#responsive-design)
 
-[
+![Build UIs that don’t suck — 5-day mini-course](/_next/static/media/course-promo.d3d6bc78.jpg)
 
-![Refactoring UI](/_next/static/media/book-promo.3012c0f6.png)
+5-day mini-course
 
-From the creators of Tailwind CSS
+Build UIs that don’t suck.
 
-Make your ideas look awesome, without relying on a designer.
+Short, tactical video lessons from the creator of Tailwind CSS, delivered directly to your inbox every day for a week.
 
-> “This is the survival kit I wish I had when I started building apps.”
-> 
-> Derrick Reimer, SavvyCal
-
-](https://www.refactoringui.com/?ref=sidebar)
+[Get the free course](/build-uis-that-dont-suck)
 
 Copyright © 2026 Tailwind Labs Inc.·[Trademark Policy](/brand)

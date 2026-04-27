@@ -5,13 +5,14 @@ canonical_url: "https://nextjs.org/docs/messages/no-head-import-in-document"
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:18:21.605Z"
-content_hash: "4933e2a09254b05bea04f05bfb21f35fe21b72f32a25417a45a00e54629c7b3c"
+last_crawled_at: "2026-04-27T18:17:47.349Z"
+content_hash: "9a3f618e64f0a6414ef756d82b7455f1bda5b42c63e6e4bbd8fc0199a57ec6fc"
 menu_path: ["No Head Import in Document"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/messages/no-head-element/index.md", "title": "No Head Element"}
-nav_next: {"path": "nextjs/docs/messages/no-html-link-for-pages/index.md", "title": "No HTML link for pages"}
+version: "latest"
+content_language: "en"
 ---
+[Docs](/docs)[Errors](/docs)No Head Import in Document
 
 # No Head Import in Document
 
@@ -49,10 +50,6 @@ export default MyDocument
 
 ## Useful Links[](#useful-links)
 
-*   [Custom Document](/docs/pages/building-your-application/routing/custom-document)
+-   [Custom Document](/docs/pages/building-your-application/routing/custom-document)
 
 Was this helpful?
-
-supported.
-
-Send

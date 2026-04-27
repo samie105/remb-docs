@@ -5,27 +5,28 @@ canonical_url: "https://docs.deno.com/runtime/reference/cli/lint/"
 docset: "deno"
 kind: "language"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:54:22.233Z"
-content_hash: "42ef2b378d03d0c0e6669fdea8066426f9e088080e5066a77990531452d5e5e4"
+last_crawled_at: "2026-04-27T17:30:48.993Z"
+content_hash: "c8021e7345668825d10b63f80584a050d9082f2ccd9141d11ea7af60194551f0"
 menu_path: ["deno lint"]
 section_path: []
+content_language: "en"
 ---
-On this page
+**On this page**
 
-*   [Basic usage](#basic-usage)
-*   [Watch mode](#watch-mode)
-*   [Using in CI](#using-in-ci)
-*   [Available rules](#available-rules)
-*   [Configuring rules in deno.json](#configuring-rules-in-deno.json)
-*   [Including and excluding files](#including-and-excluding-files)
-*   [Lint plugins](#lint-plugins)
-*   [Ignore directives](#ignore-directives)
-    *   [File level](#file-level)
-    *   [Line level](#line-level)
-*   [Ignore ban-unused-ignore itself](#ignore-ban-unused-ignore-itself)
-*   [Linting options](#linting-options)
-*   [Options](#options)
-*   [File watching options](#file-watching-options)
+-   [Basic usage](#basic-usage)
+-   [Watch mode](#watch-mode)
+-   [Using in CI](#using-in-ci)
+-   [Available rules](#available-rules)
+-   [Configuring rules in deno.json](#configuring-rules-in-deno.json)
+-   [Including and excluding files](#including-and-excluding-files)
+-   [Lint plugins](#lint-plugins)
+-   [Ignore directives](#ignore-directives)
+    -   [File level](#file-level)
+    -   [Line level](#line-level)
+-   [Ignore ban-unused-ignore itself](#ignore-ban-unused-ignore-itself)
+-   [Linting options](#linting-options)
+-   [Options](#options)
+-   [File watching options](#file-watching-options)
 
 Deno ships with a built-in linter that analyzes your code for potential errors, bugs, and stylistic issues. For a broader overview, see [Linting and Formatting](/runtime/fundamentals/linting_and_formatting/).
 
@@ -99,9 +100,9 @@ deno.json
 }
 ```
 
-*   **`tags`** — rule sets to enable. Available tags: `recommended`, `fresh`
-*   **`include`** — additional individual rules to enable
-*   **`exclude`** — rules to disable even if included by a tag
+-   **`tags`** — rule sets to enable. Available tags: `recommended`, `fresh`
+-   **`include`** — additional individual rules to enable
+-   **`exclude`** — rules to disable even if included by a tag
 
 See the [Configuration](/runtime/fundamentals/configuration/#linting) page for all available options.
 

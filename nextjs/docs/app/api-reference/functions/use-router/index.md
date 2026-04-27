@@ -5,25 +5,24 @@ canonical_url: "https://nextjs.org/docs/app/api-reference/functions/use-router"
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:12:37.250Z"
-content_hash: "2c14e0874611d5a1f98583824ff2b5d820f2041c7fc95485cbb209db13323ecb"
+last_crawled_at: "2026-04-27T18:11:19.555Z"
+content_hash: "c6cb276ca4fca4721ad9e95748139d4543b5f3de3eff705f59eff65d54fe2aca"
 menu_path: ["useRouter"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/api-reference/functions/use-report-web-vitals/index.md", "title": "useReportWebVitals"}
-nav_next: {"path": "nextjs/docs/app/api-reference/functions/use-search-params/index.md", "title": "useSearchParams"}
+version: "latest"
+content_language: "en"
 ---
+[API Reference](/docs/app/api-reference)[Functions](/docs/app/api-reference/functions)useRouter
 
 # useRouter
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
 The `useRouter` hook allows you to programmatically change routes inside [Client Components](/docs/app/getting-started/server-and-client-components).
 
 > **Recommendation:** Use the [`<Link>` component](/docs/app/api-reference/components/link) for navigation unless you have a specific requirement for using `useRouter`.
 
 app/example-client-component.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -45,26 +44,26 @@ export default function Page() {
 
 ## `useRouter()`[](#userouter)
 
-*   `router.push(href: string, { scroll: boolean, transitionTypes: string[] })`: Perform a client-side navigation to the provided route. Adds a new entry into the [browser's history stack](https://developer.mozilla.org/docs/Web/API/History_API). The optional `transitionTypes` are passed to [`React.addTransitionType`](https://react.dev/reference/react/addTransitionType) inside the navigation Transition.
-*   `router.replace(href: string, { scroll: boolean, transitionTypes: string[] })`: Perform a client-side navigation to the provided route without adding a new entry into the browser’s history stack. The optional `transitionTypes` are passed to [`React.addTransitionType`](https://react.dev/reference/react/addTransitionType) inside the navigation Transition.
-*   `router.refresh()`: Refresh the current route. Making a new request to the server, re-fetching data requests, and re-rendering Server Components. The client will merge the updated React Server Component payload without losing unaffected client-side React (e.g. `useState`) or browser state (e.g. scroll position). This clears the [Client Cache](/docs/app/glossary#client-cache) for the current route, but does **not** invalidate the server-side cache. Use [`revalidatePath`](/docs/app/api-reference/functions/revalidatePath) or [`revalidateTag`](/docs/app/api-reference/functions/revalidateTag) to invalidate server-side cached data.
-*   `router.prefetch(href: string, options?: { onInvalidate?: () => void })`: [Prefetch](/docs/app/getting-started/linking-and-navigating#prefetching) the provided route for faster client-side transitions. The optional `onInvalidate` callback is called when the [prefetched data becomes stale](/docs/app/guides/prefetching#extending-or-ejecting-link).
-*   `router.back()`: Navigate back to the previous route in the browser’s history stack.
-*   `router.forward()`: Navigate forwards to the next page in the browser’s history stack.
+-   `router.push(href: string, { scroll: boolean, transitionTypes: string[] })`: Perform a client-side navigation to the provided route. Adds a new entry into the [browser's history stack](https://developer.mozilla.org/docs/Web/API/History_API). The optional `transitionTypes` are passed to [`React.addTransitionType`](https://react.dev/reference/react/addTransitionType) inside the navigation Transition.
+-   `router.replace(href: string, { scroll: boolean, transitionTypes: string[] })`: Perform a client-side navigation to the provided route without adding a new entry into the browser’s history stack. The optional `transitionTypes` are passed to [`React.addTransitionType`](https://react.dev/reference/react/addTransitionType) inside the navigation Transition.
+-   `router.refresh()`: Refresh the current route. Making a new request to the server, re-fetching data requests, and re-rendering Server Components. The client will merge the updated React Server Component payload without losing unaffected client-side React (e.g. `useState`) or browser state (e.g. scroll position). This clears the [Client Cache](/docs/app/glossary#client-cache) for the current route, but does **not** invalidate the server-side cache. Use [`revalidatePath`](/docs/app/api-reference/functions/revalidatePath) or [`revalidateTag`](/docs/app/api-reference/functions/revalidateTag) to invalidate server-side cached data.
+-   `router.prefetch(href: string, options?: { onInvalidate?: () => void })`: [Prefetch](/docs/app/getting-started/linking-and-navigating#prefetching) the provided route for faster client-side transitions. The optional `onInvalidate` callback is called when the [prefetched data becomes stale](/docs/app/guides/prefetching#extending-or-ejecting-link).
+-   `router.back()`: Navigate back to the previous route in the browser’s history stack.
+-   `router.forward()`: Navigate forwards to the next page in the browser’s history stack.
 
 > **Good to know**:
 > 
-> *   You must not send untrusted or unsanitized URLs to `router.push` or `router.replace`, as this can open your site to cross-site scripting (XSS) vulnerabilities. For example, `javascript:` URLs sent to `router.push` or `router.replace` will be executed in the context of your page.
-> *   The `<Link>` component automatically prefetch routes as they become visible in the viewport.
-> *   `refresh()` could re-produce the same result if fetch requests are cached. Other Request-time APIs like `cookies` and `headers` could also change the response.
-> *   The `onInvalidate` callback is called at most once per prefetch request. It signals when you may want to trigger a new prefetch for updated route data.
+> -   You must not send untrusted or unsanitized URLs to `router.push` or `router.replace`, as this can open your site to cross-site scripting (XSS) vulnerabilities. For example, `javascript:` URLs sent to `router.push` or `router.replace` will be executed in the context of your page.
+> -   The `<Link>` component automatically prefetch routes as they become visible in the viewport.
+> -   `refresh()` could re-produce the same result if fetch requests are cached. Other Request-time APIs like `cookies` and `headers` could also change the response.
+> -   The `onInvalidate` callback is called at most once per prefetch request. It signals when you may want to trigger a new prefetch for updated route data.
 
 ### Migrating from `next/router`[](#migrating-from-nextrouter)
 
-*   The `useRouter` hook should be imported from `next/navigation` and not `next/router` when using the App Router
-*   The `pathname` string has been removed and is replaced by [`usePathname()`](/docs/app/api-reference/functions/use-pathname)
-*   The `query` object has been removed and is replaced by [`useSearchParams()`](/docs/app/api-reference/functions/use-search-params)
-*   `router.events` has been replaced. [See below.](#router-events)
+-   The `useRouter` hook should be imported from `next/navigation` and not `next/router` when using the App Router
+-   The `pathname` string has been removed and is replaced by [`usePathname()`](/docs/app/api-reference/functions/use-pathname)
+-   The `query` object has been removed and is replaced by [`useSearchParams()`](/docs/app/api-reference/functions/use-search-params)
+-   `router.events` has been replaced. [See below.](#router-events)
 
 [View the full migration guide](/docs/app/guides/migrating/app-router-migration).
 
@@ -128,8 +127,6 @@ By default, Next.js will scroll to the top of the page when navigating to a new 
 
 app/example-client-component.tsx
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -153,32 +150,9 @@ export default function Page() {
 
 ## Version History[](#version-history)
 
-Version
-
-Changes
-
-`v15.4.0`
-
-Optional `onInvalidate` callback for `router.prefetch` introduced
-
-`v13.0.0`
-
-`useRouter` from `next/navigation` introduced.
-
-[Previous
-
-useReportWebVitals
-
-](/docs/app/api-reference/functions/use-report-web-vitals)
-
-[Next
-
-useSearchParams
-
-](/docs/app/api-reference/functions/use-search-params)
+| Version | Changes |
+| --- | --- |
+| `v15.4.0` | Optional `onInvalidate` callback for `router.prefetch` introduced |
+| `v13.0.0` | `useRouter` from `next/navigation` introduced. |
 
 Was this helpful?
-
-supported.
-
-Send

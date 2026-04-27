@@ -5,53 +5,61 @@ canonical_url: "https://tailwindcss.com/docs/justify-self"
 docset: "tailwind"
 kind: "framework"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:49:11.292Z"
-content_hash: "4cfe8b2755ac941696a85b064b03f9524b575071c2010325ea655549899c5373"
+last_crawled_at: "2026-04-27T20:00:45.235Z"
+content_hash: "36890254984114a67bba135a3878130e7869e7002aabc818a37f507b0658e500"
 menu_path: ["justify-self"]
 section_path: []
-nav_prev: {"path": "tailwind/docs/justify-items/index.md", "title": "justify-items"}
-nav_next: {"path": "tailwind/docs/align-content/index.md", "title": "align-content"}
+content_language: "en"
 ---
+[](/)
+
+[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
+
+1.  Flexbox & Grid
+2.  justify-self
+
+Flexbox & Grid
 
 # justify-self
 
 Utilities for controlling how an individual grid item is aligned along its inline axis.
 
-Class
-
-Styles
-
-`justify-self-auto`
-
+| Class | Styles |
+| --- | --- |
+| `justify-self-auto` | 
 `justify-self: auto;`
 
-`justify-self-start`
+ |
+| `justify-self-start` | 
 
 `justify-self: start;`
 
-`justify-self-center`
+ |
+| `justify-self-center` | 
 
 `justify-self: center;`
 
-`justify-self-center-safe`
+ |
+| `justify-self-center-safe` | 
 
 `justify-self: safe center;`
 
-`justify-self-end`
+ |
+| `justify-self-end` | 
 
 `justify-self: end;`
 
-`justify-self-end-safe`
+ |
+| `justify-self-end-safe` | 
 
 `justify-self: safe end;`
 
-`justify-self-stretch`
+ |
+| `justify-self-stretch` | 
 
 `justify-self: stretch;`
 
-## [Examples](#examples)
-
-### [Auto](#auto)
+ |
 
 Use the `justify-self-auto` utility to align an item based on the value of the grid's `justify-items` property:
 
@@ -71,8 +79,6 @@ Use the `justify-self-auto` utility to align an item based on the value of the g
 <div class="grid justify-items-stretch ...">  <!-- ... -->  <div class="justify-self-auto ...">02</div>  <!-- ... --></div>
 ```
 
-### [Start](#start)
-
 Use the `justify-self-start` utility to align a grid item to the start of its inline axis:
 
 01
@@ -90,8 +96,6 @@ Use the `justify-self-start` utility to align a grid item to the start of its in
 ```
 <div class="grid justify-items-stretch ...">  <!-- ... -->  <div class="justify-self-start ...">02</div>  <!-- ... --></div>
 ```
-
-### [Center](#center)
 
 Use the `justify-self-center` or `justify-self-center-safe` utilities to align a grid item along the center of its inline axis:
 
@@ -127,8 +131,6 @@ justify-self-center-safe
 
 When there is not enough space available, the `justify-self-center-safe` utility will align the item to the start of the container instead of the end.
 
-### [End](#end)
-
 Use the `justify-self-end` or `justify-self-end-safe` utilities to align a grid item to the end of its inline axis:
 
 Resize the container to see the alignment behavior
@@ -163,8 +165,6 @@ justify-self-end-safe
 
 When there is not enough space available, the `justify-self-end-safe` utility will align the item to the start of the container instead of the end.
 
-### [Stretch](#stretch)
-
 Use the `justify-self-stretch` utility to stretch a grid item to fill the grid area on its inline axis:
 
 01
@@ -183,8 +183,6 @@ Use the `justify-self-stretch` utility to stretch a grid item to fill the grid a
 <div class="grid justify-items-start ...">  <!-- ... -->  <div class="justify-self-stretch ...">02</div>  <!-- ... --></div>
 ```
 
-### [Responsive design](#responsive-design)
-
 Prefix a `justify-self` utility with a breakpoint variant like `md:` to only apply the utility at medium screen sizes and above:
 
 ```
@@ -195,23 +193,27 @@ Learn more about using variants in the [variants documentation](/docs/hover-focu
 
 ### On this page
 
-*   [Quick reference](#quick-reference)
-*   [Examples](#examples)
-    *   [Auto](#auto)
-    *   [Start](#start)
-    *   [Center](#center)
-    *   [End](#end)
-    *   [Stretch](#stretch)
-    *   [Responsive design](#responsive-design)
+-   [Quick reference](#quick-reference)
+-   [Examples](#examples)
+    -   [Auto](#auto)
+    -   [Start](#start)
+    -   [Center](#center)
+    -   [End](#end)
+    -   [Stretch](#stretch)
+    -   [Responsive design](#responsive-design)
 
-![Build UIs that don’t suck — 5-day mini-course](/_next/static/media/course-promo.d3d6bc78.jpg)
+[
 
-5-day mini-course
+![Refactoring UI](/_next/static/media/book-promo.3012c0f6.png)
 
-Build UIs that don’t suck.
+From the creators of Tailwind CSS
 
-Short, tactical video lessons from the creator of Tailwind CSS, delivered directly to your inbox every day for a week.
+Make your ideas look awesome, without relying on a designer.
 
-[Get the free course](/build-uis-that-dont-suck)
+> “This is the survival kit I wish I had when I started building apps.”
+> 
+> Derrick Reimer, SavvyCal
+
+](https://www.refactoringui.com/?ref=sidebar)
 
 Copyright © 2026 Tailwind Labs Inc.·[Trademark Policy](/brand)

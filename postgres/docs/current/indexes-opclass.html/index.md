@@ -5,14 +5,12 @@ canonical_url: "https://www.postgresql.org/docs/current/indexes-opclass.html"
 docset: "postgres"
 kind: "database"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:41:06.228Z"
-content_hash: "5e7752cde8ff8fb711b15e2cadf8d56876152f1657e6065441b056d15b59e2f6"
+last_crawled_at: "2026-04-27T20:45:14.608Z"
+content_hash: "5f15d734d3409dc27f880b0115a0f9ae182cbda75dab2b7506b44374b642c2e1"
 menu_path: ["PostgreSQL: Documentation: 18: 11.10. Operator Classes and Operator Families"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/indexes-multicolumn.html/index.md", "title": "PostgreSQL: Documentation: 18: 11.3.\u00a0Multicolumn Indexes"}
-nav_next: {"path": "postgres/docs/current/indexes-ordering.html/index.md", "title": "PostgreSQL: Documentation: 18: 11.4.\u00a0Indexes and ORDER BY"}
+content_language: "en"
 ---
-
 An index definition can specify an _operator class_ for each column of an index.
 
 CREATE INDEX _`name`_ ON _`table`_ (_`column`_ _`opclass`_ \[ ( _`opclass_options`_ ) \] \[_`sort options`_\] \[, ...\]);
@@ -21,7 +19,7 @@ The operator class identifies the operators to be used by the index for that col
 
 There are also some built-in operator classes besides the default ones:
 
-*   The operator classes `text_pattern_ops`, `varchar_pattern_ops`, and `bpchar_pattern_ops` support B-tree indexes on the types `text`, `varchar`, and `char` respectively. The difference from the default operator classes is that the values are compared strictly character by character rather than according to the locale-specific collation rules. This makes these operator classes suitable for use by queries involving pattern matching expressions (`LIKE` or POSIX regular expressions) when the database does not use the standard “C” locale. As an example, you might index a `varchar` column like this:
+-   The operator classes `text_pattern_ops`, `varchar_pattern_ops`, and `bpchar_pattern_ops` support B-tree indexes on the types `text`, `varchar`, and `char` respectively. The difference from the default operator classes is that the values are compared strictly character by character rather than according to the locale-specific collation rules. This makes these operator classes suitable for use by queries involving pattern matching expressions (`LIKE` or POSIX regular expressions) when the database does not use the standard “C” locale. As an example, you might index a `varchar` column like this:
     
     CREATE INDEX test\_index ON test\_table (col varchar\_pattern\_ops);
     

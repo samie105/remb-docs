@@ -5,14 +5,12 @@ canonical_url: "https://www.postgresql.org/docs/current/ddl-priv.html"
 docset: "postgres"
 kind: "database"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:37:57.995Z"
-content_hash: "23f6337d39702f02cddaec4e0e620068f3f315a8e1dae7d4caa375f13d24cdcf"
+last_crawled_at: "2026-04-27T20:44:11.090Z"
+content_hash: "39943e834f923d06a03bebc3e85116c5f3691656ee432e4ce1eee32ae7520dac"
 menu_path: ["PostgreSQL: Documentation: 18: 5.8. Privileges"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/ddl-partitioning.html/index.md", "title": "PostgreSQL: Documentation: 18: 5.12.\u00a0Table Partitioning"}
-nav_next: {"path": "postgres/docs/current/ddl-rowsecurity.html/index.md", "title": "PostgreSQL: Documentation: 18: 5.9.\u00a0Row Security Policies"}
+content_language: "en"
 ---
-
 When an object is created, it is assigned an owner. The owner is normally the role that executed the creation statement. For most kinds of objects, the initial state is that only the owner (or a superuser) can do anything with the object. To allow other roles to use it, _privileges_ must be granted.
 
 There are different kinds of privileges: `SELECT`, `INSERT`, `UPDATE`, `DELETE`, `TRUNCATE`, `REFERENCES`, `TRIGGER`, `CREATE`, `CONNECT`, `TEMPORARY`, `EXECUTE`, `USAGE`, `SET`, `ALTER SYSTEM`, and `MAINTAIN`. The privileges applicable to a particular object vary depending on the object's type (table, function, etc.). More detail about the meanings of these privileges appears below. The following sections and chapters will also show you how these privileges are used.
@@ -128,228 +126,45 @@ PostgreSQL grants privileges on some types of objects to `PUBLIC` by default whe
 **Table 5.1. ACL Privilege Abbreviations**
 
   
-
-Privilege
-
-Abbreviation
-
-Applicable Object Types
-
-`SELECT`
-
-`r` (“read”)
-
-`LARGE OBJECT`, `SEQUENCE`, `TABLE` (and table-like objects), table column
-
-`INSERT`
-
-`a` (“append”)
-
-`TABLE`, table column
-
-`UPDATE`
-
-`w` (“write”)
-
-`LARGE OBJECT`, `SEQUENCE`, `TABLE`, table column
-
-`DELETE`
-
-`d`
-
-`TABLE`
-
-`TRUNCATE`
-
-`D`
-
-`TABLE`
-
-`REFERENCES`
-
-`x`
-
-`TABLE`, table column
-
-`TRIGGER`
-
-`t`
-
-`TABLE`
-
-`CREATE`
-
-`C`
-
-`DATABASE`, `SCHEMA`, `TABLESPACE`
-
-`CONNECT`
-
-`c`
-
-`DATABASE`
-
-`TEMPORARY`
-
-`T`
-
-`DATABASE`
-
-`EXECUTE`
-
-`X`
-
-`FUNCTION`, `PROCEDURE`
-
-`USAGE`
-
-`U`
-
-`DOMAIN`, `FOREIGN DATA WRAPPER`, `FOREIGN SERVER`, `LANGUAGE`, `SCHEMA`, `SEQUENCE`, `TYPE`
-
-`SET`
-
-`s`
-
-`PARAMETER`
-
-`ALTER SYSTEM`
-
-`A`
-
-`PARAMETER`
-
-`MAINTAIN`
-
-`m`
-
-`TABLE`
+| Privilege | Abbreviation | Applicable Object Types |
+| --- | --- | --- |
+| `SELECT` | `r` (“read”) | `LARGE OBJECT`, `SEQUENCE`, `TABLE` (and table-like objects), table column |
+| `INSERT` | `a` (“append”) | `TABLE`, table column |
+| `UPDATE` | `w` (“write”) | `LARGE OBJECT`, `SEQUENCE`, `TABLE`, table column |
+| `DELETE` | `d` | `TABLE` |
+| `TRUNCATE` | `D` | `TABLE` |
+| `REFERENCES` | `x` | `TABLE`, table column |
+| `TRIGGER` | `t` | `TABLE` |
+| `CREATE` | `C` | `DATABASE`, `SCHEMA`, `TABLESPACE` |
+| `CONNECT` | `c` | `DATABASE` |
+| `TEMPORARY` | `T` | `DATABASE` |
+| `EXECUTE` | `X` | `FUNCTION`, `PROCEDURE` |
+| `USAGE` | `U` | `DOMAIN`, `FOREIGN DATA WRAPPER`, `FOREIGN SERVER`, `LANGUAGE`, `SCHEMA`, `SEQUENCE`, `TYPE` |
+| `SET` | `s` | `PARAMETER` |
+| `ALTER SYSTEM` | `A` | `PARAMETER` |
+| `MAINTAIN` | `m` | `TABLE` |
 
 [Table 5.2](https://www.postgresql.org/docs/current/ddl-priv.html#PRIVILEGES-SUMMARY-TABLE "Table 5.2. Summary of Access Privileges") summarizes the privileges available for each type of SQL object, using the abbreviations shown above. It also shows the psql command that can be used to examine privilege settings for each object type.
 
 **Table 5.2. Summary of Access Privileges**
 
    
-
-Object Type
-
-All Privileges
-
-Default `PUBLIC` Privileges
-
-psql Command
-
-`DATABASE`
-
-`CTc`
-
-`Tc`
-
-`\l`
-
-`DOMAIN`
-
-`U`
-
-`U`
-
-`\dD+`
-
-`FUNCTION` or `PROCEDURE`
-
-`X`
-
-`X`
-
-`\df+`
-
-`FOREIGN DATA WRAPPER`
-
-`U`
-
-none
-
-`\dew+`
-
-`FOREIGN SERVER`
-
-`U`
-
-none
-
-`\des+`
-
-`LANGUAGE`
-
-`U`
-
-`U`
-
-`\dL+`
-
-`LARGE OBJECT`
-
-`rw`
-
-none
-
-`\dl+`
-
-`PARAMETER`
-
-`sA`
-
-none
-
-`\dconfig+`
-
-`SCHEMA`
-
-`UC`
-
-none
-
-`\dn+`
-
-`SEQUENCE`
-
-`rwU`
-
-none
-
-`\dp`
-
-`TABLE` (and table-like objects)
-
-`arwdDxtm`
-
-none
-
-`\dp`
-
-Table column
-
-`arwx`
-
-none
-
-`\dp`
-
-`TABLESPACE`
-
-`C`
-
-none
-
-`\db+`
-
-`TYPE`
-
-`U`
-
-`U`
-
-`\dT+`
+| Object Type | All Privileges | Default `PUBLIC` Privileges | psql Command |
+| --- | --- | --- | --- |
+| `DATABASE` | `CTc` | `Tc` | `\l` |
+| `DOMAIN` | `U` | `U` | `\dD+` |
+| `FUNCTION` or `PROCEDURE` | `X` | `X` | `\df+` |
+| `FOREIGN DATA WRAPPER` | `U` | none | `\dew+` |
+| `FOREIGN SERVER` | `U` | none | `\des+` |
+| `LANGUAGE` | `U` | `U` | `\dL+` |
+| `LARGE OBJECT` | `rw` | none | `\dl+` |
+| `PARAMETER` | `sA` | none | `\dconfig+` |
+| `SCHEMA` | `UC` | none | `\dn+` |
+| `SEQUENCE` | `rwU` | none | `\dp` |
+| `TABLE` (and table-like objects) | `arwdDxtm` | none | `\dp` |
+| Table column | `arwx` | none | `\dp` |
+| `TABLESPACE` | `C` | none | `\db+` |
+| `TYPE` | `U` | `U` | `\dT+` |
 
 The privileges that have been granted for a particular object are displayed as a list of `aclitem` entries, each having the format:
 

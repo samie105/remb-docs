@@ -5,36 +5,35 @@ canonical_url: "https://nextjs.org/docs/app/guides/incremental-static-regenerati
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:14:48.370Z"
-content_hash: "df96ddb9ac2ae50ad70e84f033169856ca8156c75b226f97f7334875a1af4bc2"
+last_crawled_at: "2026-04-27T18:13:40.760Z"
+content_hash: "c4b9218571689b19ffb04ee1ce7d22ff0f55e6255d744e3f0072ae660fbf91ed"
 menu_path: ["How to implement Incremental Static Regeneration (ISR)"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/app/guides/how-revalidation-works/index.md", "title": "How revalidation works in Next.js"}
-nav_next: {"path": "nextjs/docs/app/guides/instrumentation/index.md", "title": "How to set up instrumentation"}
+version: "latest"
+content_language: "en"
 ---
+[App Router](/docs/app)[Guides](/docs/app/guides)ISR
 
 # How to implement Incremental Static Regeneration (ISR)
 
-Last updated April 15, 2026
+Last updated April 23, 2026
 
-Examples
+**Examples**
 
-*   [Next.js Commerce](https://vercel.com/templates/next.js/nextjs-commerce)
-*   [On-Demand ISR](https://on-demand-isr.vercel.app)
-*   [Next.js Forms](https://github.com/vercel/next.js/tree/canary/examples/next-forms)
+-   [Next.js Commerce](https://vercel.com/templates/next.js/nextjs-commerce)
+-   [On-Demand ISR](https://on-demand-isr.vercel.app)
+-   [Next.js Forms](https://github.com/vercel/next.js/tree/canary/examples/next-forms)
 
 Incremental Static Regeneration (ISR) enables you to:
 
-*   Update static content without rebuilding the entire site
-*   Reduce server load by serving prerendered, static pages for most requests
-*   Ensure proper `cache-control` headers are automatically added to pages
-*   Handle large amounts of content pages without long `next build` times
+-   Update static content without rebuilding the entire site
+-   Reduce server load by serving prerendered, static pages for most requests
+-   Ensure proper `cache-control` headers are automatically added to pages
+-   Handle large amounts of content pages without long `next build` times
 
 Here's a minimal example:
 
 app/blog/\[id\]/page.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -89,13 +88,13 @@ Here's how this example works:
 
 ### Route segment config[](#route-segment-config)
 
-*   [`revalidate`](/docs/app/guides/caching-without-cache-components#route-segment-config-revalidate)
-*   [`dynamicParams`](/docs/app/api-reference/file-conventions/route-segment-config/dynamicParams)
+-   [`revalidate`](/docs/app/guides/caching-without-cache-components#route-segment-config-revalidate)
+-   [`dynamicParams`](/docs/app/api-reference/file-conventions/route-segment-config/dynamicParams)
 
 ### Functions[](#functions)
 
-*   [`revalidatePath`](/docs/app/api-reference/functions/revalidatePath)
-*   [`revalidateTag`](/docs/app/api-reference/functions/revalidateTag)
+-   [`revalidatePath`](/docs/app/api-reference/functions/revalidatePath)
+-   [`revalidateTag`](/docs/app/api-reference/functions/revalidateTag)
 
 ## Examples[](#examples)
 
@@ -104,8 +103,6 @@ Here's how this example works:
 This fetches and displays a list of blog posts on /blog. After an hour has passed, the next visitor will still receive the cached (stale) version of the page immediately for a fast response. Simultaneously, Next.js triggers regeneration of a fresh version in the background. Once the new version is successfully generated, it replaces the cached version, and subsequent visitors will receive the updated content.
 
 app/blog/page.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -146,8 +143,6 @@ For example, this Server Action would get called after adding a new post. Regard
 
 app/actions.ts
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -169,8 +164,6 @@ For most use cases, prefer revalidating entire paths. If you need more granular 
 
 app/blog/page.tsx
 
-TypeScript
-
 JavaScriptTypeScript
 
 ```
@@ -186,8 +179,6 @@ export default async function Page() {
 If you are using an ORM or connecting to a database, you can use `unstable_cache`:
 
 app/blog/page.tsx
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -212,8 +203,6 @@ export default async function Page() {
 You can then use `revalidateTag` in a [Server Actions](/docs/app/getting-started/mutating-data) or [Route Handler](/docs/app/api-reference/file-conventions/route):
 
 app/actions.ts
-
-TypeScript
 
 JavaScriptTypeScript
 
@@ -270,79 +259,34 @@ This will make the Next.js server console log ISR cache hits and misses. You can
 
 ## Caveats[](#caveats)
 
-*   ISR is only supported when using the Node.js runtime (default).
-*   ISR is not supported when creating a [Static Export](/docs/app/guides/static-exports).
-*   If you have multiple `fetch` requests in a prerendered route, and each has a different `revalidate` frequency, the lowest time will be used for ISR. However, those revalidate frequencies will still be respected by the [cache](/docs/app/getting-started/caching).
-*   If any of the `fetch` requests used on a route have a `revalidate` time of `0`, or an explicit `no-store`, the route will be dynamically rendered.
-*   Proxy won't be executed for on-demand ISR requests, meaning any path rewrites or logic in Proxy will not be applied. Ensure you are revalidating the exact path. For example, `/post/1` instead of a rewritten `/post-1`.
-*   When running multiple instances, the default file-system cache is per-instance. On-demand revalidation only invalidates the instance that receives the call. Use a shared [custom cache handler](/docs/app/api-reference/config/next-config-js/incrementalCacheHandlerPath) to coordinate across instances. See [How Revalidation Works](/docs/app/guides/how-revalidation-works) for the full architecture.
-*   Background regeneration (stale-while-revalidate) runs on the instance that receives the triggering request. On platforms with per-request billing, this background work counts as additional compute.
-*   You can use the `x-nextjs-cache` response header to observe cache behavior. Values are `HIT` (served from cache), `STALE` (served from cache, revalidating in background), `MISS` (not in cache, rendered fresh), or `REVALIDATED` (regenerated via on-demand revalidation).
+-   ISR is only supported when using the Node.js runtime (default).
+-   ISR is not supported when creating a [Static Export](/docs/app/guides/static-exports).
+-   If you have multiple `fetch` requests in a prerendered route, and each has a different `revalidate` frequency, the lowest time will be used for ISR. However, those revalidate frequencies will still be respected by the [cache](/docs/app/getting-started/caching).
+-   If any of the `fetch` requests used on a route have a `revalidate` time of `0`, or an explicit `no-store`, the route will be dynamically rendered.
+-   Proxy won't be executed for on-demand ISR requests, meaning any path rewrites or logic in Proxy will not be applied. Ensure you are revalidating the exact path. For example, `/post/1` instead of a rewritten `/post-1`.
+-   When running multiple instances, the default file-system cache is per-instance. On-demand revalidation only invalidates the instance that receives the call. Use a shared [custom cache handler](/docs/app/api-reference/config/next-config-js/incrementalCacheHandlerPath) to coordinate across instances. See [How Revalidation Works](/docs/app/guides/how-revalidation-works) for the full architecture.
+-   Background regeneration (stale-while-revalidate) runs on the instance that receives the triggering request. On platforms with per-request billing, this background work counts as additional compute.
+-   You can use the `x-nextjs-cache` response header to observe cache behavior. Values are `HIT` (served from cache), `STALE` (served from cache, revalidating in background), `MISS` (not in cache, rendered fresh), or `REVALIDATED` (regenerated via on-demand revalidation).
 
 ## Platform Support[](#platform-support)
 
-Deployment Option
-
-Supported
-
-[Node.js server](/docs/app/getting-started/deploying#nodejs-server)
-
-Yes
-
-[Docker container](/docs/app/getting-started/deploying#docker)
-
-Yes
-
-[Static export](/docs/app/getting-started/deploying#static-export)
-
-No
-
-[Adapters](/docs/app/getting-started/deploying#adapters)
-
-Platform-specific
+| Deployment Option | Supported |
+| --- | --- |
+| [Node.js server](/docs/app/getting-started/deploying#nodejs-server) | Yes |
+| [Docker container](/docs/app/getting-started/deploying#docker) | Yes |
+| [Static export](/docs/app/getting-started/deploying#static-export) | No |
+| [Adapters](/docs/app/getting-started/deploying#adapters) | Platform-specific |
 
 Learn how to [configure ISR](/docs/app/guides/self-hosting#caching-and-isr) when self-hosting Next.js.
 
 ## Version history[](#version-history)
 
-Version
-
-Changes
-
-`v14.1.0`
-
-Custom `cacheHandler` is stable.
-
-`v13.0.0`
-
-App Router is introduced.
-
-`v12.2.0`
-
-Pages Router: On-Demand ISR is stable
-
-`v12.0.0`
-
-Pages Router: [Bot-aware ISR fallback](/blog/next-12#bot-aware-isr-fallback) added.
-
-`v9.5.0`
-
-Pages Router: [Stable ISR introduced](/blog/next-9-5).
-
-[Previous
-
-How Revalidation Works
-
-](/docs/app/guides/how-revalidation-works)
-
-[Next
-
-Instrumentation
-
-](/docs/app/guides/instrumentation)
+| Version | Changes |
+| --- | --- |
+| `v14.1.0` | Custom `cacheHandler` is stable. |
+| `v13.0.0` | App Router is introduced. |
+| `v12.2.0` | Pages Router: On-Demand ISR is stable |
+| `v12.0.0` | Pages Router: [Bot-aware ISR fallback](/blog/next-12#bot-aware-isr-fallback) added. |
+| `v9.5.0` | Pages Router: [Stable ISR introduced](/blog/next-9-5). |
 
 Was this helpful?
-
-supported.
-
-Send

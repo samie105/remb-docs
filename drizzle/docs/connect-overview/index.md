@@ -5,21 +5,15 @@ canonical_url: "https://orm.drizzle.team/docs/connect-overview"
 docset: "drizzle"
 kind: "library"
 adapter: "generic"
-last_crawled_at: "2026-04-18T16:40:34.188Z"
-content_hash: "bb4624bf38695477bd74cbc74b4666e351f885b08398fbe692770866c91e3c0c"
+last_crawled_at: "2026-04-27T18:30:16.395Z"
+content_hash: "61437c8a342a3b2b41ef462101947a035ae7b5719ec0d1dadf1b4ac93863a311"
 menu_path: ["Database connection with Drizzle"]
 section_path: []
-nav_prev: {"path": "drizzle/docs/relations-schema-declaration/index.md", "title": "Drizzle Relations Fundamentals"}
-nav_next: {"path": "drizzle/docs/data-querying/index.md", "title": "Drizzle Queries + CRUD"}
+content_language: "en"
 ---
-
 Drizzle ORM runs SQL queries on your database via **database drivers**.
 
-index.ts
-
-schema.ts
-
-```
+```ts
 import { drizzle } from "drizzle-orm/node-postgres"
 import { users } from "./schema"
 
@@ -27,7 +21,7 @@ const db = drizzle(process.env.DATABASE_URL);
 const usersCount = await db.$count(users);
 ```
 
-```
+```plaintext
                         ┌──────────────────────┐
                         │   db.$count(users)   │ <--- drizzle query
                         └──────────────────────┘     
@@ -47,7 +41,7 @@ select count(*) from users -│               │
                          └────────────────────┘
 ```
 
-```
+```ts
 import { pgTable, integer, text } from "drizzle-orm";
 
 export const users = pgTable("users", {
@@ -58,14 +52,14 @@ export const users = pgTable("users", {
 
 Under the hood Drizzle will create a **node-postgres** driver instance which you can access via `db.$client` if necessary
 
-```
+```ts
 import { drizzle } from "drizzle-orm/node-postgres"
 
 const db = drizzle(process.env.DATABASE_URL);
 const pool = db.$client;
 ```
 
-```
+```ts
 // above is equivalent to
 import { drizzle } from "drizzle-orm/node-postgres";
 import { Pool } from "pg";
@@ -88,46 +82,46 @@ PlanetScale HTTP
 
 Cloudflare d1
 
-```
+```ts
 import { drizzle } from "drizzle-orm/neon-http";
 
 const db = drizzle(process.env.DATABASE_URL);
 ```
 
-```
+```ts
 import { drizzle } from "drizzle-orm/neon-serverless";
 
 const db = drizzle(process.env.DATABASE_URL);
 ```
 
-```
+```ts
 import { drizzle } from "drizzle-orm/vercel-postgres";
 
 const db = drizzle();
 ```
 
-```
+```ts
 import { drizzle } from "drizzle-orm/planetscale";
 
 const db = drizzle(process.env.DATABASE_URL);
 ```
 
-```
+```ts
 import { drizzle } from "drizzle-orm/d1";
 
 const db = drizzle({ connection: env.DB });
 ```
 
-And yes, we do support runtime specific drivers like [Bun SQLite](drizzle/docs/connect-bun-sqlite/index.md) or [Expo SQLite](drizzle/docs/connect-expo-sqlite/index.md):
+And yes, we do support runtime specific drivers like [Bun SQLite](https://orm.drizzle.team/docs/connect-bun-sqlite) or [Expo SQLite](https://orm.drizzle.team/docs/connect-expo-sqlite):
 
-```
+```ts
 import { drizzle } from "drizzle-orm/bun-sqlite"
 
 const db = drizzle(); // <--- will create an in-memory db
 const db = drizzle("./sqlite.db");
 ```
 
-```
+```ts
 import { drizzle } from "drizzle-orm/expo-sqlite";
 import { openDatabaseSync } from "expo-sqlite";
 
@@ -139,7 +133,7 @@ const db = drizzle(expo);
 
 Just in case if you’re not familiar with database connection URL concept
 
-```
+```plaintext
 postgresql://alex:AbC123dEf@ep-cool-darkness-123456.us-east-2.aws.neon.tech/dbname
              └──┘ └───────┘ └─────────────────────────────────────────────┘ └────┘
               ʌ    ʌ          ʌ                                              ʌ

@@ -5,13 +5,14 @@ canonical_url: "https://nextjs.org/docs/messages/inline-script-id"
 docset: "nextjs"
 kind: "framework"
 adapter: "nextjs"
-last_crawled_at: "2026-04-18T13:17:49.532Z"
-content_hash: "fbcc3d7e4fc72304687e994248d0a4a107995c776fa0f76fa10694727a145edd"
+last_crawled_at: "2026-04-27T18:17:15.868Z"
+content_hash: "ad649d096010a49169117c482f7ea8514aa1e094fce4cd04e01690674e33e53b"
 menu_path: ["Inline script id"]
 section_path: []
-nav_prev: {"path": "nextjs/docs/messages/google-font-preconnect/index.md", "title": "Google Font Preconnect"}
-nav_next: {"path": "nextjs/docs/messages/middleware-upgrade-guide/index.md", "title": "Middleware Upgrade Guide"}
+version: "latest"
+content_language: "en"
 ---
+[Docs](/docs)[Errors](/docs)Inline script id
 
 # Inline script id
 
@@ -42,10 +43,6 @@ export default function App({ Component, pageProps }) {
 
 ## Useful links[](#useful-links)
 
-*   [Docs for Next.js Script component](/docs/pages/guides/scripts)
+-   [Docs for Next.js Script component](/docs/pages/guides/scripts)
 
 Was this helpful?
-
-supported.
-
-Send
