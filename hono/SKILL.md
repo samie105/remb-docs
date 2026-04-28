@@ -1,89 +1,82 @@
-# Hono Developer Documentation Skill Guide
-
 ## Overview
-Hono is a lightweight, high-performance web framework for JavaScript and TypeScript, designed to run seamlessly across modern runtimes (like Cloudflare Workers, Deno, Node.js, and more). It emphasizes speed, web standards (Fetch-based API), portability, and an excellent developer experience for building APIs and web apps.
 
----
+Hono is a lightweight, edge-ready web framework built on Web Standards for runtimes including Cloudflare Workers, Deno, Bun, and Node.js. It offers an Express-like API with modern primitives such as JSX, middleware, and pluggable routers. An agent needs to know Hono to build fast, portable HTTP services and APIs that run anywhere JavaScript executes.
 
-## Key Concepts
+## Mental Model
 
-- **Router**: Hono's core is its router, supporting fast and flexible route matching for handling HTTP requests ([Routers](hono/docs/concepts/routers/index.md)).
-- **Middleware**: Composable units for request/response transformation, authentication, error handling, etc. ([Middleware](hono/docs/concepts/middleware/index.md)).
-- **Web Standard APIs**: Near-native web APIs (`Request`, `Response`, etc.), making Hono code portable and familiar ([Web Standard](hono/docs/concepts/web-standard/index.md)).
-- **Context (`c`)**: Passed to handlers, providing access to request/response, params, and helpers ([Context](hono/docs/api/context/index.md)).
-- **Platform Adaptability**: Hono runs the same codebase on many cloud/serverless providers and runtimes ([Getting Started](hono/docs/getting-started/basic/index.md)).
-- **RPC & Stacks**: Build full-stack or RPC-based apps while benefiting from Hono’s minimalism ([Hono Stacks](hono/docs/concepts/stacks/index.md)).
-- **Built-in & Helper Modules**: Helpers for testing, cookies, JWT, CSS-in-JS, streaming, etc. ([Helpers](hono/docs/helpers/accepts/index.md), [Middleware Built-ins](hono/docs/middleware/builtin/cors/index.md)).
+Hono is built around a Web Standards `Request`/`Response` core where an `App` (`hono/docs/api/hono/index.md`) orchestrates a pipeline of middleware and handlers through a pluggable router layer (`hono/docs/api/routing/index.md`). Each incoming request instantiates a `Context` (`hono/docs/api/context/index.md`) that wraps the native request and provides response helpers, while the framework abstracts runtime differences via router implementations (`hono/docs/concepts/routers/index.md`).
 
----
+## Learning Paths
 
-## Docs Navigation Guide
+**Getting Started**
+1. `hono/docs/index.md` — Quick start and features.
+2. `hono/docs/getting-started/basic/index.md` — Hello World and JSON responses.
+3. `hono/docs/api/routing/index.md` — Basic routing patterns.
+4. `hono/docs/api/context/index.md` — Request/response context.
 
-**Finding What You Need:**
-- **Project Philosophy/Intent:** [Motivation](hono/docs/concepts/motivation/index.md)
-- **Core Concepts/Internal Design:** [Concepts](hono/docs/concepts/routers/index.md), [Middleware](hono/docs/concepts/middleware/index.md)
-- **Environment/Deployment-Specific Guides:** [Getting Started](hono/docs/getting-started/basic/index.md) and runtime-specific subpages
-- **API Reference:** [API Directory](hono/docs/api/hono/index.md) and related pages
-- **Usage Patterns/Recipes:** [Guides](hono/docs/guides/create-hono/index.md) (middleware, testing, validation, etc.)
-- **Helpers and Middleware:** [Helpers Index](hono/docs/helpers/accepts/index.md), [Middleware Built-in](hono/docs/middleware/builtin/cors/index.md)
-- **Troubleshooting/Common Issues:** [FAQs](hono/docs/guides/faq/index.md)
+**Production Ready**
+1. `hono/docs/guides/validation/index.md` — Input validation patterns.
+2. `hono/docs/middleware/builtin/basic-auth/index.md` — Authentication.
+3. `hono/docs/middleware/builtin/secure-headers/index.md` — Security headers.
+4. `hono/docs/api/exception/index.md` — Error handling.
 
-**Sections Explained:**
-- `concepts/`: Philosophy, routing, standards; start here for theory or internals.
-- `getting-started/`: Environment/platform setup and demos for many runtimes.
-- `api/`: Reference for all core interfaces (routing, context, requests).
-- `guides/`: How-to topics, best practices, and advanced patterns.
-- `helpers/`: Utility modules and common helpers.
-- `middleware/`: Built-in and third-party middleware docs.
+**Reference Deep-Dive**
+1. `hono/docs/concepts/routers/index.md` — Router internals.
+2. `hono/docs/concepts/benchmarks/index.md` — Performance benchmarks.
+3. `hono/docs/api/hono/index.md` — App API methods.
+4. `hono/docs/api/request/index.md` — Request parsing helpers.
 
----
+## Concept Map
 
-## Top Pages & One-Line Summaries
+- Getting Started
+  - Landing & Quick Start: `hono/docs/index.md`
+  - Basics & Hello World: `hono/docs/getting-started/basic/index.md`
+- Application Core
+  - App & Lifecycle: `hono/docs/api/hono/index.md`
+  - Context & Response Helpers: `hono/docs/api/context/index.md`
+  - Error Handling: `hono/docs/api/exception/index.md`
+  - Presets: `hono/docs/api/presets/index.md`
+- Routing & Requests
+  - Routing Patterns: `hono/docs/api/routing/index.md`
+  - Request Parsing: `hono/docs/api/request/index.md`
+- Middleware
+  - Basic Auth: `hono/docs/middleware/builtin/basic-auth/index.md`
+  - Secure Headers: `hono/docs/middleware/builtin/secure-headers/index.md`
+- Guides & Helpers
+  - JSX: `hono/docs/guides/jsx/index.md`
+  - Validation: `hono/docs/guides/validation/index.md`
+  - HTML Helper: `hono/docs/helpers/html/index.md`
+  - CSS Helper: `hono/docs/helpers/css/index.md`
+  - Route Helper: `hono/docs/helpers/route/index.md`
+- Concepts
+  - Routers: `hono/docs/concepts/routers/index.md`
+  - Benchmarks: `hono/docs/concepts/benchmarks/index.md`
 
-- [Motivation](hono/docs/concepts/motivation/index.md)  
-  Why Hono exists; what problems it aims to solve.
-- [Routers](hono/docs/concepts/routers/index.md)  
-  Hono’s router design, fast RegExpRouter, and routing internals.
-- [Web Standard](hono/docs/concepts/web-standard/index.md)  
-  How Hono leverages modern web standards (Fetch API, etc.).
-- [Middleware](hono/docs/concepts/middleware/index.md)  
-  Middleware fundamentals, composition, and lifecycle overview.
-- [Basic Getting Started](hono/docs/getting-started/basic/index.md)  
-  First steps with Hono in any environment.
-- [Cloudflare Workers Setup](hono/docs/getting-started/cloudflare-workers/index.md)  
-  Starting a Hono app on Cloudflare Workers.
-- [Deno Setup](hono/docs/getting-started/deno/index.md)  
-  Using Hono with Deno and Deno Deploy.
-- [AWS Lambda Setup](hono/docs/getting-started/aws-lambda/index.md)  
-  Deploying Hono to AWS Lambda (Node.js 18+).
-- [Service Worker Support](hono/docs/getting-started/service-worker/index.md)  
-  Running Hono as a service worker for PWA/edge cases.
-- [App API](hono/docs/api/hono/index.md)  
-  Core Hono application API (main entry point class).
-- [Routing API](hono/docs/api/routing/index.md)  
-  Route definition and matching details.
-- [Context API](hono/docs/api/context/index.md)  
-  Handler context object: request, response, params, etc.
-- [HonoRequest API](hono/docs/api/request/index.md)  
-  Request wrapper: params, headers, form data, etc.
-- [Middleware – Built-in Directory](hono/docs/middleware/builtin/cors/index.md)  
-  Core middlewares, e.g. CORS, auth, compression (see directory for all).
-- [Helpers Index (e.g. Cookie, JWT, Route)](hono/docs/helpers/cookie/index.md)  
-  Utility/helper modules for common needs.
-- [Testing Guide](hono/docs/guides/testing/index.md)  
-  Patterns and helpers for testing Hono apps.
-- [FAQ](hono/docs/guides/faq/index.md)  
-  Common problems, usage questions, and troubleshooting.
+## If You Need To...
 
----
+| If you need to... | Read |
+|---|---|
+| Bootstrap a project or write Hello World | `hono/docs/getting-started/basic/index.md` |
+| Understand the app lifecycle and methods | `hono/docs/api/hono/index.md` |
+| Define routes with params or patterns | `hono/docs/api/routing/index.md` |
+| Access request data (params, query, body) | `hono/docs/api/request/index.md` |
+| Set status, headers, or body on a response | `hono/docs/api/context/index.md` |
+| Throw or catch HTTP errors | `hono/docs/api/exception/index.md` |
+| Validate incoming data | `hono/docs/guides/validation/index.md` |
+| Render JSX or HTML | `hono/docs/guides/jsx/index.md` |
+| Add basic authentication | `hono/docs/middleware/builtin/basic-auth/index.md` |
+| Configure security headers | `hono/docs/middleware/builtin/secure-headers/index.md` |
+| Compare router internals or performance | `hono/docs/concepts/routers/index.md`, `hono/docs/concepts/benchmarks/index.md` |
 
-## Gotchas & Structure Quirks
+## Top Must-Know Pages
 
-- Many environment/platform guides live under `getting-started/` as _peers_, not subpages—scan the full section to find your target (e.g., Deno, AWS Lambda, Cloudflare Workers, Netlify, etc.).
-- Middleware is covered both conceptually ([Concepts/Middleware](hono/docs/concepts/middleware/index.md)) and practically ([middleware/builtin/](hono/docs/middleware/builtin/cors/index.md)).
-- Helper modules (cookies, JWT, CSS, SSG, etc.) are *not* listed in the main guides—see `helpers/` for these utilities.
-- Some doc pages are minimal or stub-like; check the *Guides* or *API* sections if a page doesn't answer your question in depth.
-- There is extensive overlap between the Concepts and API sections for topics like Context & Routing—use both as needed.
-- For reference on third-party middleware, see [3rd-party Middleware](hono/docs/middleware/third-party/index.md).
-
----
+1. `hono/docs/index.md` — Landing page with quick start, features, and use-cases.
+2. `hono/docs/getting-started/basic/index.md` — Starter guide covering Hello World and JSON responses.
+3. `hono/docs/api/hono/index.md` — Core App API for methods, error handling, and fetch/fire lifecycle.
+4. `hono/docs/api/routing/index.md` — Routing reference for path parameters, optional params, and regexp.
+5. `hono/docs/api/context/index.md` — Context object reference for `req`, `status`, `header`, `body`, and `text`.
+6. `hono/docs/api/request/index.md` — HonoRequest helpers for `param`, `query`, `header`, and `parseBody`.
+7. `hono/docs/api/exception/index.md` — Throwing and handling HTTPExceptions with custom responses.
+8. `hono/docs/guides/validation/index.md` — Validation patterns including Zod and Standard Schema middleware.
+9. `hono/docs/concepts/routers/index.md` — Architecture of RegExp, Trie, Smart, Linear, and Pattern routers.
+10. `hono/docs/guides/jsx/index.md` — JSX configuration, fragments, and raw HTML insertion.

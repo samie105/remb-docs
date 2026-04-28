@@ -1,80 +1,96 @@
-# SKILL.md — Supabase Documentation Navigation & Key Concepts
+## 1. Overview
 
-## Overview
+Supabase is an open-source Firebase alternative built around PostgreSQL, offering integrated authentication, real-time subscriptions, storage, and edge functions. An agent needs to know it because application development on Supabase requires understanding its database-centric architecture, where extensions like `pgvector` and services like Auth and Realtime extend a unified Postgres core.
 
-Supabase is an open-source backend-as-a-service platform built on PostgreSQL, providing developers with instant APIs, authentication, real-time subscriptions, storage, serverless functions, and built-in support for AI vector search. The documentation is structured by feature area and guides developers from getting started to advanced integrations, examples, and operational considerations.
+## 2. Mental Model
 
----
+Treat Supabase as PostgreSQL with integrated superpowers: all persistent state—user identities, vector embeddings, and relational data—lives in the database, while Auth, Realtime, and Storage are tightly coupled services that leverage it. Edge Functions provide serverless compute for external APIs and heavy processing, and database extensions such as `pgvector`, `pgmq`, and `pg_net` enable AI, queuing, and networking without external infrastructure. Canonical pages include the AI concepts overview (`supabase/docs/guides/ai/concepts/index.md`), session architecture (`supabase/docs/guides/auth/sessions/index.md`), and connection pooling (`supabase/docs/guides/database/connection-management/index.md`).
 
-## Key Concepts
+## 3. Learning Paths
 
-- **PostgreSQL Foundation**: Supabase projects are standardized PostgreSQL databases, extended with tools for modern app development.
-- **Authentication**: Supports email/password, OAuth, social logins, and custom token hooks for flexible auth flows.
-- **Realtime & Subscriptions**: Enables listening to database changes for live, interactive app experiences.
-- **Edge Functions**: Serverless function support for custom backend logic, including integrations with external APIs.
-- **Storage**: File/object storage with access control and seamless integration into app workflows.
-- **AI & Vector Search**: Embedding storage and search, generative Q&A, multimodal examples, and compute add-ons for AI use cases.
-- **Observability**: Built-in logging, metrics, and support for monitoring (e.g., Sentry).
-- **Migration & Platform**: Guides for migrating from other Postgres platforms and working with cloud marketplaces.
+**Getting Started**
+1. `supabase/docs/guides/getting-started/create-a-project/index.md`
+2. `supabase/docs/guides/auth/sessions/index.md`
+3. `supabase/docs/guides/database/connection-management/index.md`
 
----
+**Production Ready**
+1. `supabase/docs/guides/auth/auth-mfa/index.md`
+2. `supabase/docs/guides/auth/auth-smtp/index.md`
+3. `supabase/docs/guides/ai/engineering-for-scale/index.md`
+4. `supabase/docs/guides/realtime/error_codes/index.md`
 
-## Navigation Guide
+**AI & Vector Deep-Dive**
+1. `supabase/docs/guides/ai/concepts/index.md`
+2. `supabase/docs/guides/ai/automatic-embeddings/index.md`
+3. `supabase/docs/guides/ai/examples/headless-vector-search/index.md`
+4. `supabase/docs/guides/ai/choosing-compute-addon/index.md`
 
-- **Getting Started & Quickstarts**: For setup across frameworks and platforms ([supabase/docs/guides/getting-started/index.md]).
-- **Feature Guides**: Each main area—Auth, Database, Edge Functions, Storage, AI & Vectors—has a section with core concepts and practical guides.
-- **Examples**: Code samples per language/framework for rapid ramp-up; AI, Edge Functions, Auth, and Database examples are in respective sections.
-- **Platform & Migration**: For deployment, marketplace integration, and migration support.
-- **Resources**: Central entry point for examples and glossary ([supabase/docs/guides/resources/index.md]).
-- **Telemetry**: Logging, metrics, reports, and monitoring ([supabase/docs/guides/telemetry/logs/index.md], etc.).
+## 4. Concept Map
 
-**Common Task Finding**
-- Want an overview/concepts? Look for "Concepts" pages inside each feature guide (e.g., [supabase/docs/guides/ai/concepts/index.md]).
-- Need auth flows or OAuth? Start in Auth guides.
-- Looking for cloud functions or integrations? See Edge Functions.
-- Searching for AI/vector functionality or examples? Use AI & Vectors guides and examples.
-- Want to check observability or logging? See Telemetry guides.
+- **AI & Vector Search**
+  - Core Concepts
+    - `supabase/docs/guides/ai/concepts/index.md`
+    - `supabase/docs/guides/ai/automatic-embeddings/index.md`
+  - Scaling & Performance
+    - `supabase/docs/guides/ai/choosing-compute-addon/index.md`
+    - `supabase/docs/guides/ai/engineering-for-scale/index.md`
+  - Examples & Integrations
+    - `supabase/docs/guides/ai/examples/building-chatgpt-plugins/index.md`
+    - `supabase/docs/guides/ai/examples/headless-vector-search/index.md`
+    - `supabase/docs/guides/ai/examples/huggingface-image-captioning/index.md`
+    - `supabase/docs/guides/ai/examples/image-search-openai-clip/index.md`
+- **Authentication & Security**
+  - Sessions & Flows
+    - `supabase/docs/guides/auth/sessions/index.md`
+  - Multi-Factor Authentication
+    - `supabase/docs/guides/auth/auth-mfa/index.md`
+  - Enterprise SSO
+    - `supabase/docs/guides/auth/enterprise-sso/auth-sso-saml/index.md`
+  - Email & Reputation
+    - `supabase/docs/guides/auth/auth-smtp/index.md`
+  - Debugging
+    - `supabase/docs/guides/auth/debugging/error-codes/index.md`
+- **Database & Realtime Operations**
+  - Connection Management
+    - `supabase/docs/guides/database/connection-management/index.md`
+  - Operational Errors
+    - `supabase/docs/guides/realtime/error_codes/index.md`
+- **Project Lifecycle & Billing**
+  - Setup
+    - `supabase/docs/guides/getting-started/create-a-project/index.md`
+    - `supabase/docs/guides/getting-started/project-setup/index.md`
+  - Pricing & Usage
+    - `supabase/docs/guides/platform/pricing/index.md`
+    - `supabase/docs/guides/platform/what-you-are-charged-for/index.md`
+    - `supabase/docs/guides/platform/how-charges-are-calculated/index.md`
+    - `supabase/docs/guides/platform/usage-on-your-invoice/index.md`
 
----
+## 5. If You Need To...
 
-## Top Pages & Local Links
+| If you need to... | Read this page |
+|---|---|
+| Create a new Supabase project | `supabase/docs/guides/getting-started/create-a-project/index.md` |
+| Understand vector embeddings and similarity | `supabase/docs/guides/ai/concepts/index.md` |
+| Build automatic embeddings with queues | `supabase/docs/guides/ai/automatic-embeddings/index.md` |
+| Add MFA to your application | `supabase/docs/guides/auth/auth-mfa/index.md` |
+| Set up enterprise SAML 2.0 sign-on | `supabase/docs/guides/auth/enterprise-sso/auth-sso-saml/index.md` |
+| Configure a custom SMTP server for auth emails | `supabase/docs/guides/auth/auth-smtp/index.md` |
+| Debug authentication errors and codes | `supabase/docs/guides/auth/debugging/error-codes/index.md` |
+| Manage database connections and Supavisor pooling | `supabase/docs/guides/database/connection-management/index.md` |
+| Diagnose realtime operational issues | `supabase/docs/guides/realtime/error_codes/index.md` |
+| Scale vector workloads for production | `supabase/docs/guides/ai/engineering-for-scale/index.md` |
+| Choose the right compute add-on for AI | `supabase/docs/guides/ai/choosing-compute-addon/index.md` |
+| Understand billing and invoice charges | `supabase/docs/guides/platform/pricing/index.md` |
 
-1. [supabase/docs/index.md] — Main documentation entry point.
-2. [supabase/docs/guides/getting-started/index.md] — General getting started guide.
-3. [supabase/docs/guides/getting-started/quickstarts/kotlin/index.md] — Example quickstart: Android/Kotlin integration.
-4. [supabase/docs/guides/ai/concepts/index.md] — Concepts for AI and vector search functionalities.
-5. [supabase/docs/guides/ai/automatic-embeddings/index.md] — Guide to automatic embeddings (core for vector search).
-6. [supabase/docs/guides/ai/choosing-compute-addon/index.md] — How to select the right compute add-on for AI workloads.
-7. [supabase/docs/guides/ai/engineering-for-scale/index.md] — Best practices for scaling AI/vector workloads.
-8. [supabase/docs/guides/ai/examples/building-chatgpt-plugins/index.md] — Example: Building ChatGPT plugins (Python).
-9. [supabase/docs/guides/ai/examples/headless-vector-search/index.md] — Example: Adding generative Q&A to docs (JavaScript).
-10. [supabase/docs/guides/ai/examples/huggingface-image-captioning/index.md] — Example: Image captioning via Hugging Face (JavaScript).
-11. [supabase/docs/guides/ai/examples/image-search-openai-clip/index.md] — Example: Image search using OpenAI CLIP (Python).
-12. [supabase/docs/guides/ai/examples/mixpeek-video-search/index.md] — Example: Video search with multimodal embeddings.
-13. [supabase/docs/guides/ai/examples/nextjs-vector-search/index.md] — Example: Generative Q&A on Next.js sites.
-14. [supabase/docs/guides/ai/examples/openai/index.md] — Example: Edge Functions generating OpenAI completions.
-15. [supabase/docs/guides/auth/auth-hooks/custom-access-token-hook/index.md] — Custom access token hook for authentication.
-16. [supabase/docs/guides/auth/social-login/auth-azure/index.md] — Social login setup: Azure/Microsoft.
-17. [supabase/docs/guides/database/extensions/pg_partman/index.md] — Overview of PostgreSQL extensions.
-18. [supabase/docs/guides/database/prisma/index.md] — Connecting with Prisma ORM.
-19. [supabase/docs/guides/functions/examples/discord-bot/index.md] — Building a Discord bot using Edge Functions.
-20. [supabase/docs/guides/platform/migrating-to-supabase/postgres/index.md] — Migration from Postgres to Supabase.
-21. [supabase/docs/guides/resources/index.md] — Resources page (examples, glossary, etc.).
-22. [supabase/docs/guides/telemetry/logs/index.md] — Logging and observability overview.
-23. [supabase/docs/guides/telemetry/metrics/index.md] — Metrics API guide.
-24. [supabase/docs/guides/telemetry/reports/index.md] — Observability: Reports.
-25. [supabase/docs/guides/platform/aws-marketplace/getting-started/index.md] — Getting started with Supabase via AWS Marketplace.
+## 6. Top Must-Know Pages
 
----
-
-## Notable Gotchas & Structural Quirks
-
-- **Feature Naming**: Major features sometimes appear under multiple headings (e.g., "Auth" in "More > Auth Hooks" and "Social Login"). Some advanced options may be deep in nested "More" menus.
-- **Examples**: Language/framework/examples are scattered under their respective feature guides rather than in a single central "Examples" folder. Use "Resources" for aggregates.
-- **AI, Vectors**: Many AI and vector search guides and examples live under "AI & Vectors", split between "Concepts", "Learn", and multiple "Examples" (Python, JS, third-party).
-- **Observability**: "Telemetry" covers logs, metrics, reports, and third-party monitoring (like Sentry); don't miss "Logging & observability" for operational features.
-- **Platform/Migration**: Migration guides may appear under "More > Migrating to Supabase" in "Platform".
-
----
-
-Use this SKILL.md to rapidly map Supabase docs and answer developer questions by locating the right guides, concept pages, or practical examples via their local repo paths.
+1. `supabase/docs/guides/ai/concepts/index.md` — Learn what embeddings are and how vector similarity works inside Postgres.
+2. `supabase/docs/guides/ai/automatic-embeddings/index.md` — Understand the architecture for generating embeddings using background workers and queues.
+3. `supabase/docs/guides/ai/engineering-for-scale/index.md` — Explore patterns for enterprise-grade vector architectures and read replicas.
+4. `supabase/docs/guides/auth/sessions/index.md` — Master session lifecycles, JWT claims, and the difference between PKCE and implicit flows.
+5. `supabase/docs/guides/auth/auth-mfa/index.md` — Implement multi-factor authentication using TOTP or phone verification.
+6. `supabase/docs/guides/auth/enterprise-sso/auth-sso-saml/index.md` — Configure SAML 2.0 single sign-on for project-level identity provider integration.
+7. `supabase/docs/guides/auth/debugging/error-codes/index.md` — Resolve auth issues quickly using the error code reference and HTTP status mappings.
+8. `supabase/docs/guides/database/connection-management/index.md` — Configure pool sizes, monitor Supavisor, and manage your connection resources.
+9. `supabase/docs/guides/ai/examples/headless-vector-search/index.md` — Build a ChatGPT-style documentation search using the headless vector search toolkit.
+10. `supabase/docs/guides/realtime/error_codes/index.md` — Interpret operational error codes to understand deployment and usage health.

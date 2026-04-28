@@ -1,89 +1,87 @@
-# Vite Documentation SKILL.md
-
 ## Overview
 
-Vite is a modern front-end build tool that significantly improves web development workflow by offering lightning-fast development server start, hot module replacement (HMR), and optimized production builds. It leverages native ES modules and a plugin-extendable architecture to deliver a lean, high-performance developer experience.
+Vite is a modern frontend build tool that provides an extremely fast ESM-based development server and optimized production builds powered by Rollup. It offers a lean, extensible core designed to push modern web standards while remaining framework-agnostic. An agent needs to know Vite to scaffold projects, configure builds, manage assets, and extend functionality through its plugin and environment APIs.
 
----
+## Mental Model
 
-## Key Concepts
+Vite separates development and production concerns while unifying them through a plugin-driven Environment API. Development leverages native ES modules with dependency pre-bundling and Hot Module Replacement; production uses aggressively optimized Rollup chunking. The architecture is intentionally lean, pushing framework-specific logic into plugins and custom environment instances. Canonical pages: `vite/guide/philosophy/index.md`, `vite/guide/why/index.md`, `vite/guide/api-environment/index.md`, `vite/guide/api-plugin/index.md`.
 
-- **Development Server:** Vite serves your source files over native ES modules, enabling instant server start and almost instant hot updates.
-- **Pre-Bundling:** Dependencies are pre-bundled using esbuild to enable faster page loads and efficient import resolution.
-- **Plugins:** Vite's plugin system is Rollup-compatible with extra Vite-specific capabilities, allowing powerful customizations.
-- **Production Build:** Uses Rollup for highly optimized output and supports a range of advanced features out-of-the-box.
-- **Asset Handling:** Handles static assets, CSS preprocessors, and patterns familiar from modern tooling.
-- **Environment Variables:** Exposes `import.meta.env` for environment- and mode-specific variables.
-- **SSR & Integration:** Supports server-side rendering and integration with backends.
-- **Configuration:** Extensive configuration via `vite.config.js/ts` or direct API interfaces.
+## Learning Paths
 
----
+### Getting Started
+1. `vite/guide/why/index.md`
+2. `vite/guide/features/index.md`
+3. `vite/config/shared-options/index.md`
+4. `vite/guide/using-plugins/index.md`
 
-## Navigation Guide
+### Production Ready
+1. `vite/guide/build/index.md`
+2. `vite/config/build-options/index.md`
+3. `vite/guide/assets/index.md`
+4. `vite/guide/dep-pre-bundling/index.md`
+5. `vite/config/dep-optimization-options/index.md`
 
-**For Common Tasks:**
+### Reference Deep-Dive
+1. `vite/config/index.md`
+2. `vite/guide/api-environment/index.md`
+3. `vite/guide/api-plugin/index.md`
+4. `vite/guide/api-hmr/index.md`
+5. `vite/guide/api-environment-plugins/index.md`
 
-- **Getting Started & Philosophy:** Start with [Getting Started](vite/guide/index.md), [Philosophy](vite/guide/philosophy/index.md), and [Why Vite](vite/guide/why/index.md) for project context.
-- **Features & CLI:** See [Features](vite/guide/features/index.md) for supported capabilities, [CLI](vite/guide/cli/index.md) for command usage.
-- **Plugins:** For extending Vite, use [Using Plugins](vite/guide/using-plugins/index.md) and [Plugin API](vite/guide/api-plugin/index.md).
-- **Assets & Build:** [Static Asset Handling](vite/guide/assets/index.md) and [Building for Production](vite/guide/build/index.md) for static resources and production deployment.
-- **Environment & Modes:** Use [Env Variables and Modes](vite/guide/env-and-mode/index.md) for config differences across environments.
-- **Advanced APIs:** Find [JavaScript API](vite/guide/api-javascript/index.md), [HMR API](vite/guide/api-hmr/index.md), and [Config Reference](vite/config/index.md) for programmatic/custom usage.
-- **SSR & Backend:** [Server-Side Rendering (SSR)](vite/guide/ssr/index.md) and [Backend Integration](vite/guide/backend-integration/index.md) for full-stack and non-SPA cases.
-- **Troubleshooting & Performance:** [Troubleshooting](vite/guide/troubleshooting/index.md) and [Performance](vite/guide/performance/index.md) for optimization and issue resolution.
-- **Migration:** [Migration from v7](vite/guide/migration/index.md) for upgrade help.
-- **Environment API:** [Environment API](vite/guide/api-environment/index.md) and related pages under `api-environment-*` for advanced/experimental uses.
+## Concept Map
 
----
+- Philosophy & Motivation
+  - Why Vite: `vite/guide/why/index.md`
+  - Project Philosophy: `vite/guide/philosophy/index.md`
+- Configuration
+  - Configuring Vite: `vite/config/index.md`
+  - Shared Options: `vite/config/shared-options/index.md`
+  - Server Options: `vite/config/server-options/index.md`
+  - Preview Options: `vite/config/preview-options/index.md`
+  - Build Options: `vite/config/build-options/index.md`
+  - Dep Optimization Options: `vite/config/dep-optimization-options/index.md`
+- Development
+  - Features: `vite/guide/features/index.md`
+  - HMR API: `vite/guide/api-hmr/index.md`
+  - Dependency Pre-Bundling: `vite/guide/dep-pre-bundling/index.md`
+- Production & Assets
+  - Building for Production: `vite/guide/build/index.md`
+  - Static Asset Handling: `vite/guide/assets/index.md`
+- Extending Vite
+  - Using Plugins: `vite/guide/using-plugins/index.md`
+  - Plugin API: `vite/guide/api-plugin/index.md`
+  - Environment API for Plugins: `vite/guide/api-environment-plugins/index.md`
+- Advanced Environments
+  - Environment API: `vite/guide/api-environment/index.md`
+  - SSR: `vite/guide/ssr/index.md`
+  - Env Variables and Modes: `vite/guide/env-and-mode/index.md`
+  - Backend Integration: `vite/guide/backend-integration/index.md`
 
-## Most Important Pages
+## If You Need To...
 
-1. [Getting Started](vite/guide/index.md)  
-   Quick setup and project bootstrap.
-2. [Philosophy](vite/guide/philosophy/index.md)  
-   Background on Vite's design and goals.
-3. [Why Vite](vite/guide/why/index.md)  
-   Problems Vite solves over previous generation tools.
-4. [Features](vite/guide/features/index.md)  
-   Highlights of what Vite supports out of the box.
-5. [Command Line Interface](vite/guide/cli/index.md)  
-   CLI commands and options.
-6. [Using Plugins](vite/guide/using-plugins/index.md)  
-   How to add and configure plugins.
-7. [Dependency Pre-Bundling](vite/guide/dep-pre-bundling/index.md)  
-   How Vite optimizes dependencies.
-8. [Static Asset Handling](vite/guide/assets/index.md)  
-   Working with images, fonts, CSS, and more.
-9. [Building for Production](vite/guide/build/index.md)  
-   How to create optimized production builds.
-10. [Deploying a Static Site](vite/guide/static-deploy/index.md)  
-    Steps for deploying Vite-built apps.
-11. [Env Variables and Modes](vite/guide/env-and-mode/index.md)  
-    Using environment variables and different modes.
-12. [Server-Side Rendering (SSR)](vite/guide/ssr/index.md)  
-    Guide to SSR setup in Vite-powered projects.
-13. [Backend Integration](vite/guide/backend-integration/index.md)  
-    Using Vite alongside, or integrated with, backend servers.
-14. [Configuring Vite](vite/config/index.md)  
-    Complete config file reference and structure.
-15. [Plugin API](vite/guide/api-plugin/index.md)  
-    Authoring plugins for Vite (dev and build phases).
-16. [Performance](vite/guide/performance/index.md)  
-    Diagnose and fix performance bottlenecks.
-17. [Troubleshooting](vite/guide/troubleshooting/index.md)  
-    Common issues and solutions.
+| If you need to... | Read |
+|---|---|
+| Configure the dev server | `vite/config/server-options/index.md` |
+| Configure build output | `vite/config/build-options/index.md` |
+| Optimize dependencies | `vite/config/dep-optimization-options/index.md` |
+| Handle static assets | `vite/guide/assets/index.md` |
+| Set up a production build | `vite/guide/build/index.md` |
+| Add or author plugins | `vite/guide/using-plugins/index.md`, `vite/guide/api-plugin/index.md` |
+| Use environment variables | `vite/guide/env-and-mode/index.md` |
+| Implement SSR | `vite/guide/ssr/index.md` |
+| Understand the Environment API | `vite/guide/api-environment/index.md` |
+| Set up HMR in custom code | `vite/guide/api-hmr/index.md` |
+| Integrate with a backend | `vite/guide/backend-integration/index.md` |
 
----
+## Top Must-Know Pages
 
-## Notable Gotchas & Doc Structure Notes
-
-- **Plugin Development:** Vite plugins should start with the [Plugin API](vite/guide/api-plugin/index.md) but may need Rollup API references as Vite's system extends Rollup.
-- **Config Reference:** The main configuration details live under [Configuring Vite](vite/config/index.md). Some assets/static options are only referenced from feature guides ([Static Asset Handling](vite/guide/assets/index.md)), not directly in the config docs.
-- **Environment API:** Advanced environment manipulation exists under `vite/guide/api-environment*`. These are in release-candidate phase and may be less stable.
-- **Migration:** If updating from v7 or earlier, consult the [Migration from v7](vite/guide/migration/index.md) as core internals and defaults may have changed.
-- **Backend Integration:** For non-SPA or traditional server projects, see [Backend Integration](vite/guide/backend-integration/index.md) early—Vite has patterns that differ from classic build tools.
-- **Performance:** If you encounter slowness, [Performance](vite/guide/performance/index.md) offers targeted advice tailored for Vite (not generic JS optimizations).
-
----
-
-Use these guides and references to answer developer questions, troubleshoot issues, and suggest best-practices for Vite-based web applications. For tasks outside the above shortlist, refer to the next-closest section according to the navigation guide.
+1. `vite/config/index.md` — Entry point for configuration patterns including intellisense, conditional config, and async config.
+2. `vite/config/shared-options/index.md` — Defines root, base, mode, define, and plugins used across all projects.
+3. `vite/config/build-options/index.md` — Controls production output via build.target, build.outDir, build.assetsDir, and module preloading.
+4. `vite/config/server-options/index.md` — Configures the development server host, port, HTTPS, and strictPort behavior.
+5. `vite/guide/build/index.md` — Explains browser compatibility, public base paths, chunking strategy, and production customization.
+6. `vite/guide/api-plugin/index.md` — Core reference for plugin conventions, hooks, transforming custom files, and virtual modules.
+7. `vite/guide/api-environment/index.md` — Formalizes environments and unifies dev/build behavior through the Environment API.
+8. `vite/guide/dep-pre-bundling/index.md` — Describes why and how Vite pre-bundles dependencies for fast ESM development.
+9. `vite/guide/assets/index.md` — Covers importing assets as URLs, strings, workers, and explicit inline handling.
+10. `vite/guide/features/index.md` — Surveys supported features like CSS preprocessors, Lightning CSS, and client types.

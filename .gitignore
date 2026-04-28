@@ -11,3 +11,4 @@ output/
 *.swp
 .env
 .env.*
+scripts/__pycache__/

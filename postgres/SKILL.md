@@ -1,94 +1,91 @@
-# SKILL.md — PostgreSQL Developer Documentation
-
 ## Overview
 
-PostgreSQL is an advanced, open-source relational database system emphasizing extensibility, reliability, and standards compliance. It solves problems related to structured data storage, complex querying, concurrency, and data integrity for applications ranging from small prototypes to enterprise-scale systems.
+PostgreSQL is an open-source object-relational database management system that emphasizes extensibility, standards compliance, and durability through its process-per-connection architecture and Write-Ahead Log (WAL). An agent needs fluency in Postgres to run queries, automate backups, tune replication and connection behavior, and troubleshoot corruption or performance issues using its CLI tools and configuration hierarchy.
 
----
+## Mental Model
 
-## Key Concepts
+Postgres separates client utilities from the server process: each connection gets its own backend process, while shared memory and WAL coordinate durability and recovery. The configuration layer (`runtime-config-*`) controls everything from connection limits to replication semantics, and the client application suite (`app-*`) provides discrete tools for backup, maintenance, and benchmarking. Start with the WAL and connection runtime pages to understand durability and access, then use the client reference index to map the toolset to operational tasks.
 
-- **SQL Language Support:** PostgreSQL implements most of the SQL standard, including advanced querying, data definition, manipulation, and transaction semantics.
-- **Extensibility:** Rich support for user-defined functions, data types, operators, languages, and extensions.
-- **Concurrency & Reliability:** MVCC (Multi-Version Concurrency Control), robust transaction processing, Write-Ahead Logging (WAL), and high availability features.
-- **Server Programming:** Support for procedural languages (PL/pgSQL, PL/Python, etc.), triggers, event triggers, and background workers.
-- **Performance & Indexing:** Deep indexing options, full-text search, parallel query processing, and advanced optimizer techniques.
-- **Client & Server Interfaces:** Libpq C API, client tools, frontend/backend protocol details.
-- **Administration:** Installation, configuration, authentication, roles, monitoring, backup/restore, replication, and routine maintenance.
+## Learning Paths
 
----
+**Getting Started**
+1. `postgres/docs/current/app-psql.html/index.md` — Query and administer via the interactive terminal.
+2. `postgres/docs/current/acronyms.html/index.md` — Decode terminology used across the documentation.
+3. `postgres/docs/current/reference-client.html/index.md` — Orient yourself to the full client application suite.
 
-## Navigation Guide
+**Production Operations**
+1. `postgres/docs/current/app-pg-ctl.html/index.md` — Manage server startup, shutdown, and signaling.
+2. `postgres/docs/current/app-pgbasebackup.html/index.md` — Take physical base backups for PITR.
+3. `postgres/docs/current/app-pgverifybackup.html/index.md` — Confirm backup integrity before relying on it.
+4. `postgres/docs/current/app-pgchecksums.html/index.md` — Enable and verify data-page checksums.
+5. `postgres/docs/current/amcheck.html/index.md` — Detect table and index corruption early.
 
-- **Getting Started / Tutorials:** Introductory material and step-by-step guides under the Tutorial section.
-- **SQL Reference:** For syntax and command details, see the SQL Language section, including Data Definition, Data Manipulation, Queries, Functions, and Operators.
-- **Performance & Indexing:** Performance tips, indexing strategies, and parallel query under SQL Language and Performance Tips sections.
-- **Server Admin:** Installation, configuration, authentication, roles, backup, replication, and monitoring are in Server Administration.
-- **Programming & Extensions:** Procedures, triggers, procedural languages, background workers, and extensibility live in Server Programming.
-- **Client APIs & Tools:** Reference information for client libraries and utilities in Client Interfaces and Reference.
-- **Internals:** Architecture, physical storage, catalogs, protocol, and extension interfaces are under Internals.
+**Migration, Replication & Benchmarking**
+1. `postgres/docs/current/app-pg-dumpall.html/index.md` — Export all databases and global objects.
+2. `postgres/docs/current/app-pgrestore.html/index.md` — Restore selected objects from archives.
+3. `postgres/docs/current/app-pgreceivewal.html/index.md` — Stream WAL for archiving or standby setup.
+4. `postgres/docs/current/app-pgrecvlogical.html/index.md` — Consume logical replication streams.
+5. `postgres/docs/current/pgbench.html/index.md` — Benchmark throughput and locking behavior.
 
-### Common Task Mapping:
-- **Define tables/users/config:** Data Definition, Database Roles, Server Setup & Configuration
-- **Query/write data:** SQL Syntax, Functions and Operators, Queries, Data Manipulation
-- **Optimize/scale:** Performance Tips, Indexes, Parallel Query, High Availability
-- **Integrate/extend:** Server Programming, Procedural Languages, Event Triggers, Background Workers
+## Concept Map
 
----
+- **Interactive Access & Terminology**
+  - SQL shell and scripting: `postgres/docs/current/app-psql.html/index.md`
+  - Glossary of acronyms: `postgres/docs/current/acronyms.html/index.md`
+  - Client application index: `postgres/docs/current/reference-client.html/index.md`
 
-## Top Important Pages
+- **Server Control & Configuration**
+  - Server lifecycle management: `postgres/docs/current/app-pg-ctl.html/index.md`
+  - WAL and durability settings: `postgres/docs/current/runtime-config-wal.html/index.md`
+  - Connection and authentication limits: `postgres/docs/current/runtime-config-connection.html/index.md`
+  - Replication configuration: `postgres/docs/current/runtime-config-replication.html/index.md`
 
-1. [PostgreSQL 18.3 Documentation](postgres/docs/current/index.html/index.md)  
-   Entry point with overview and structure.
-2. [Legal Notice](postgres/docs/current/legalnotice.html/index.md)  
-   Licensing and legal considerations.
-3. [Further Information](postgres/docs/current/resources.html/index.md)  
-   Where to find more on PostgreSQL.
-4. [Bug Reporting Guidelines](postgres/docs/current/bug-reporting.html/index.md)  
-   How to report issues or get help.
-5. [Advanced Features (Tutorial)](postgres/docs/current/tutorial-advanced.html/index.md)  
-   Introduction to advanced PostgreSQL capabilities.
-6. [SQL Syntax](postgres/docs/current/sql-syntax.html/index.md)  
-   In-depth syntax reference for writing SQL in PostgreSQL.
-7. [Data Definition](postgres/docs/current/ddl.html/index.md)  
-   Table and schema creation/modification.
-8. [Functions and Operators](postgres/docs/current/functions.html/index.md)  
-   Built-in and custom functions/operators documentation.
-9. [Full Text Search](postgres/docs/current/textsearch.html/index.md)  
-   Guidance on implementing and using PostgreSQL's full-text search.
-10. [Performance Tips](postgres/docs/current/performance-tips.html/index.md)  
-    Practical optimization strategies for queries and schema.
-11. [Parallel Query](postgres/docs/current/parallel-query.html/index.md)  
-    Parallel execution and scaling query workloads.
-12. [Database Roles](postgres/docs/current/user-manag.html/index.md)  
-    User/role management and permissions.
-13. [Write-Ahead Log](postgres/docs/current/wal.html/index.md)  
-    Reliability and crash recovery mechanisms.
-14. [Just-in-Time Compilation (JIT)](postgres/docs/current/jit.html/index.md)  
-    Speeding up query execution through JIT compilation.
-15. [ECPG — Embedded SQL in C](postgres/docs/current/ecpg.html/index.md)  
-    Guide to using embedded SQL in C programs.
-16. [Event Triggers](postgres/docs/current/event-triggers.html/index.md)  
-    Triggering actions on schema changes.
-17. [PL/Perl — Perl Procedural Language](postgres/docs/current/plperl.html/index.md)  
-    Perl as a server-side programming language.
-18. [Background Worker Processes](postgres/docs/current/bgworker.html/index.md)  
-    Extending PostgreSQL with custom background tasks.
-19. [PostgreSQL Client Applications](postgres/docs/current/reference-client.html/index.md)  
-    Reference for command-line client tools.
-20. [Frontend/Backend Protocol](postgres/docs/current/protocol.html/index.md)  
-    Internal protocol details for advanced integrations.
+- **Backup, Restore & Verification**
+  - Physical base backup: `postgres/docs/current/app-pgbasebackup.html/index.md`
+  - Backup integrity check: `postgres/docs/current/app-pgverifybackup.html/index.md`
+  - Cluster-wide logical export: `postgres/docs/current/app-pg-dumpall.html/index.md`
+  - Selective archive restore: `postgres/docs/current/app-pgrestore.html/index.md`
 
----
+- **Replication & Archiving**
+  - WAL streaming client: `postgres/docs/current/app-pgreceivewal.html/index.md`
+  - Logical decoding client: `postgres/docs/current/app-pgrecvlogical.html/index.md`
 
-## Notable Gotchas & Doc Structure Quirks
+- **Maintenance, Integrity & Performance**
+  - Data-page checksums: `postgres/docs/current/app-pgchecksums.html/index.md`
+  - Table and index consistency: `postgres/docs/current/amcheck.html/index.md`
+  - Index rebuilding: `postgres/docs/current/app-reindexdb.html/index.md`
+  - Database removal: `postgres/docs/current/app-dropdb.html/index.md`
+  - Load testing: `postgres/docs/current/pgbench.html/index.md`
 
-- **Chapters vs. Parts vs. Appendixes:** Some key features are under "Chapters" within Parts, but interfaces and advanced programming topics may be in separate Parts (e.g., VI. Reference, VII. Internals).
-- **API/Command Reference Separation:** Client applications and server commands are referenced separately in the Reference section, rather than grouped under tutorials.
-- **Procedural Languages:** Each PL (e.g., PL/pgSQL, PL/Perl, PL/Python) has a dedicated chapter; general server programming concepts are under "Server Programming."
-- **Internals:** Deep technical material (catalogs, optimizer, protocol, extension interfaces) are in the Internals section—crucial for extension writers and performance tuning.
-- **Advanced Features:** While introductory tutorials exist, some advanced usage patterns (text search, parallel queries, JIT, worker processes) reside in specific chapters, not in the main tutorial path.
+## If You Need To...
 
----
+| If you need to... | Read |
+|---|---|
+| Run ad-hoc SQL or admin scripts | `postgres/docs/current/app-psql.html/index.md` |
+| Start, stop, or reload the server | `postgres/docs/current/app-pg-ctl.html/index.md` |
+| Back up the entire data directory | `postgres/docs/current/app-pgbasebackup.html/index.md` |
+| Verify a backup before a restore | `postgres/docs/current/app-pgverifybackup.html/index.md` |
+| Export all databases and globals | `postgres/docs/current/app-pg-dumpall.html/index.md` |
+| Restore objects from a custom archive | `postgres/docs/current/app-pgrestore.html/index.md` |
+| Stream WAL for a standby or archive | `postgres/docs/current/app-pgreceivewal.html/index.md` |
+| Read logical change streams | `postgres/docs/current/app-pgrecvlogical.html/index.md` |
+| Check for table or index corruption | `postgres/docs/current/amcheck.html/index.md` |
+| Rebuild indexes after bloat or errors | `postgres/docs/current/app-reindexdb.html/index.md` |
+| Remove a database | `postgres/docs/current/app-dropdb.html/index.md` |
+| Benchmark throughput and latency | `postgres/docs/current/pgbench.html/index.md` |
+| Tune WAL or replication behavior | `postgres/docs/current/runtime-config-wal.html/index.md` |
+| Tune connections and authentication | `postgres/docs/current/runtime-config-connection.html/index.md` |
+| Decode Postgres acronyms | `postgres/docs/current/acronyms.html/index.md` |
 
-**For all developer queries, cross-check the task type with the navigation guide above, use the local file path links for page lookups, and note structural quirks for rapid, accurate answers.**
+## Top Must-Know Pages
+
+1. `postgres/docs/current/app-psql.html/index.md` — The interactive terminal for daily queries, scripting, and administration.
+2. `postgres/docs/current/app-pgbasebackup.html/index.md` — The standard tool for physical backups and PITR foundations.
+3. `postgres/docs/current/app-pg-ctl.html/index.md` — Controls server initialization, startup, shutdown, and restarts.
+4. `postgres/docs/current/runtime-config-wal.html/index.md` — Governs durability, archiving, and replication through WAL parameters.
+5. `postgres/docs/current/app-pgreceivewal.html/index.md` — Streams WAL segments in real time to archives or standbys.
+6. `postgres/docs/current/app-pg-dumpall.html/index.md` — Exports cluster-wide data and global objects for migrations.
+7. `postgres/docs/current/app-reindexdb.html/index.md` — Rebuilds indexes across databases after corruption or bloat.
+8. `postgres/docs/current/amcheck.html/index.md` — Verifies logical and physical consistency of tables and indexes.
+9. `postgres/docs/current/app-pgverifybackup.html/index.md` — Validates that a base backup is complete and restorable.
+10. `postgres/docs/current/reference-client.html/index.md` — The canonical index of every official client application.

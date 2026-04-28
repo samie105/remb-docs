@@ -1,88 +1,93 @@
-# SKILL.md
-
 ## Overview
 
-tRPC is a library for building end-to-end typesafe APIs in TypeScript. It enables seamless communication between client and server by allowing direct invocation of backend functions—typed and validated at compile time, without needing to manually define API schemas or routes. This radically simplifies development and minimizes boilerplate, solving common pains around maintaining consistency, safety, and productivity in API development.
+tRPC is a TypeScript toolkit for building end-to-end typesafe APIs without schemas or code generation. It lets you define procedures on the server and call them directly from the client with full autocompletion and type inference. An agent needs to know it to navigate its router-based server architecture, link-based client configuration, and framework-specific setup patterns.
 
----
+## Mental Model
 
-## Key Concepts
+tRPC splits concerns into a type-safe backend built from routers and procedures, and a flexible client that composes behavior through links. The server exposes functions; the client consumes them via HTTP, WebSockets, or batching links, with context flowing through every request. Start with `trpc/docs/quickstart/index.md` for the server, then `trpc/docs/client/index.md` for the vanilla client, and `trpc/docs/client/links/index.md` to understand how requests travel.
 
-- **End-to-End Type Safety:** Ensures type correctness across client and server in real time, preventing runtime errors due to type mismatches.
-- **RPC (Remote Procedure Call) Model:** Treats API endpoints as callable functions rather than traditional REST routes; you just call functions remotely.
-- **Procedure Composition:** Procedures (queries, mutations, subscriptions) are grouped together in routers for modularity and clarity.
-- **Minimal Boilerplate:** No need for separate schema definitions or route declarations—types and API are inferred directly from code.
-- **AI Agent Skills Integration:** Out-of-the-box support for connecting with AI coding agents for smarter automation and contextual help.
+## Learning Paths
 
----
+**Getting Started**
+1. `trpc/docs/quickstart/index.md`
+2. `trpc/docs/server/routers/index.md`
+3. `trpc/docs/server/context/index.md`
+4. `trpc/docs/client/index.md`
 
-## Navigation Guide
+**Production Ready**
+1. `trpc/docs/server/adapters/index.md`
+2. `trpc/docs/server/middlewares/index.md`
+3. `trpc/docs/server/validators/index.md`
+4. `trpc/docs/server/data-transformers/index.md`
+5. `trpc/docs/client/headers/index.md`
 
-- **Intro/Getting Started:**  
-  Use [trpc/docs/index.md] and [trpc/docs/quickstart/index.md] for fundamental details, installation, and setup.
-- **Conceptual Reference:**  
-  [trpc/docs/concepts/index.md] explains the RPC paradigm, procedural architecture, and tRPC’s mindset.
-- **AI Agent & Automation:**  
-  [trpc/docs/skills/index.md] outlines agent skill mappings for automated developer workflows.
-- **Examples & Practical Usage:**  
-  [trpc/docs/example-apps/index.md] showcases real app implementations for hands-on learning.
-- **API Reference / Advanced Guides:**  
-  Look toward section paths and menu paths for deeper configuration and advanced use patterns.
+**Reference Deep-Dive**
+1. `trpc/docs/server/error-handling/index.md`
+2. `trpc/docs/server/error-formatting/index.md`
+3. `trpc/docs/server/metadata/index.md`
+4. `trpc/docs/typedoc/client/index/type-aliases/TRPCLink/index.md`
+5. `trpc/docs/client/links/index.md`
 
----
+## Concept Map
 
-## Top Pages & Task Links
+- **Server Foundation**
+  - Routers: `trpc/docs/server/routers/index.md`
+  - Procedures: `trpc/docs/server/procedures/index.md`
+  - Context: `trpc/docs/server/context/index.md`
+  - Middlewares: `trpc/docs/server/middlewares/index.md`
+  - Validators: `trpc/docs/server/validators/index.md`
+- **Client Transport**
+  - Links Overview: `trpc/docs/client/links/index.md`
+  - HTTP Link: `trpc/docs/client/links/httpLink/index.md`
+  - Batch Link: `trpc/docs/client/links/httpBatchLink/index.md`
+  - Batch Stream Link: `trpc/docs/client/links/httpBatchStreamLink/index.md`
+  - Subscription Link: `trpc/docs/client/links/httpSubscriptionLink/index.md`
+  - WebSocket Link: `trpc/docs/client/links/wsLink/index.md`
+- **Framework Setup**
+  - Next.js App Router: `trpc/docs/client/nextjs/app-router-setup/index.md`
+  - Next.js Pages Router SSR: `trpc/docs/client/nextjs/pages-router/ssr/index.md`
+  - Next.js Pages Router SSG: `trpc/docs/client/nextjs/pages-router/ssg/index.md`
+  - TanStack Query: `trpc/docs/client/tanstack-react-query/setup/index.md`
+- **Deployment & Adapters**
+  - Adapters Overview: `trpc/docs/server/adapters/index.md`
+  - Standalone: `trpc/docs/server/adapters/standalone/index.md`
+  - Fetch / Edge: `trpc/docs/server/adapters/fetch/index.md`
+  - Express: `trpc/docs/server/adapters/express/index.md`
+- **Advanced Topics**
+  - Data Transformers: `trpc/docs/server/data-transformers/index.md`
+  - Error Handling: `trpc/docs/server/error-handling/index.md`
+  - Error Formatting: `trpc/docs/server/error-formatting/index.md`
+  - CORS: `trpc/docs/client/cors/index.md`
+  - Headers: `trpc/docs/client/headers/index.md`
+  - Server-Side Calls: `trpc/docs/server/server-side-calls/index.md`
 
-1. [Introduction](trpc/docs/index.md)  
-   — Library overview, goals, and core value proposition.
+## If You Need To...
 
-2. [Quickstart](trpc/docs/quickstart/index.md)  
-   — How to quickly get up and running, basic installation and setup.
+| If you need to... | Read |
+|---|---|
+| Bootstrap a new project | `trpc/docs/quickstart/index.md` |
+| Set up Next.js App Router | `trpc/docs/client/nextjs/app-router-setup/index.md` |
+| Choose or configure a server adapter | `trpc/docs/server/adapters/index.md` |
+| Add request context (auth, headers) | `trpc/docs/server/context/index.md` |
+| Validate procedure inputs | `trpc/docs/server/validators/index.md` |
+| Compose client transport logic | `trpc/docs/client/links/index.md` |
+| Send cookies cross-origin | `trpc/docs/client/cors/index.md` |
+| Handle custom headers | `trpc/docs/client/headers/index.md` |
+| Stream or batch requests | `trpc/docs/client/links/httpBatchStreamLink/index.md` |
+| Use WebSocket subscriptions | `trpc/docs/client/links/httpSubscriptionLink/index.md` |
+| Transform data over the wire | `trpc/docs/server/data-transformers/index.md` |
+| Merge multiple routers | `trpc/docs/server/merging-routers/index.md` |
+| Call procedures server-to-server | `trpc/docs/server/server-side-calls/index.md` |
 
-3. [Agent Skills](trpc/docs/skills/index.md)  
-   — Skills for AI agents integrating with tRPC, automation tips.
+## Top Must-Know Pages
 
-4. [Concepts](trpc/docs/concepts/index.md)  
-   — RPC explained, procedural architecture, mental model.
-
-5. [Example Apps](trpc/docs/example-apps/index.md)  
-   — Links to real-world projects and demos using tRPC, with source references.
-
----
-
-## Notable Gotchas & Structure Quirks
-
-- **Doc Section Gaps:**  
-  The sample includes only high-level documentation. API references, advanced guides, and deeper how-tos are likely in other section paths not shown here. For detailed type, router, or middleware examples, explore beyond menu_path roots as needed.
-
-- **Agent Skills Integration:**  
-  tRPC documentation assumes potential use with AI coding agents and references TanStack Intent. When automating tasks, be sure to check [trpc/docs/skills/index.md] for skill mappings and setup requirements.
-
-- **RPC Mindset:**  
-  tRPC expects developers to think in terms of functions rather than RESTful endpoints—procedures are called directly, and type safety flows automatically. Reviewing [trpc/docs/concepts/index.md] will help avoid classic API design pitfalls and align your approach.
-
----
-
-## Additional Navigation & Troubleshooting
-
-- **Common Tasks:**  
-  - "How do I create a procedure?": See [trpc/docs/concepts/index.md].
-  - "How do I run an example app?": See [trpc/docs/example-apps/index.md].
-  - "How do I link an AI agent to tRPC?": See [trpc/docs/skills/index.md].
-  - "How do I set up my project?": Start with [trpc/docs/quickstart/index.md].
-- **Missing Details?**  
-  If a page seems missing, check section paths and menu paths for hidden subsections or advanced documentation.
-
----
-
-## For Fast Reference
-
-- General intro: [trpc/docs/index.md]
-- Setup and installation: [trpc/docs/quickstart/index.md]
-- AI agent skills: [trpc/docs/skills/index.md]
-- Concepts and mindset: [trpc/docs/concepts/index.md]
-- Example projects: [trpc/docs/example-apps/index.md]
-
----
-
-# End
+1. `trpc/docs/quickstart/index.md` — Covers installation and your first router, query, and input parser.
+2. `trpc/docs/server/routers/index.md` — Defines router initialization, sub-routers, and runtime configuration.
+3. `trpc/docs/server/context/index.md` — Explains how to create inner and outer context for requests.
+4. `trpc/docs/client/index.md` — Describes when to use the vanilla client and its limitations.
+5. `trpc/docs/client/links/index.md` — The canonical reference for terminating links and custom link chains.
+6. `trpc/docs/client/nextjs/app-router-setup/index.md` — Step-by-step deps, router, and handler setup for Next.js App Router.
+7. `trpc/docs/server/adapters/fetch/index.md` — Reference for deploying tRPC on edge runtimes using Web APIs.
+8. `trpc/docs/server/validators/index.md` — How to parse and validate procedure inputs before execution.
+9. `trpc/docs/server/data-transformers/index.md` — Configuring superjson, devalue, or asymmetric upload/download transformers.
+10. `trpc/docs/server/error-handling/index.md` — Patterns for catching, formatting, and returning backend errors.
